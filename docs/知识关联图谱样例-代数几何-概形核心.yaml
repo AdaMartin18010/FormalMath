@@ -1,0 +1,50 @@
+nodes:
+  - id: concept_scheme
+    type: Concept
+    title: 概形
+    aliases: [Scheme]
+    area: 代数几何
+  - id: def_affine_scheme
+    type: Definition
+    title: 仿射概形
+    area: 代数几何
+  - id: def_projective_scheme
+    type: Definition
+    title: 射影概形
+    area: 代数几何
+  - id: thm_serre_duality
+    type: Theorem
+    title: Serre 对偶
+    area: 代数几何
+  - id: lemma_cech
+    type: Lemma
+    title: Čech 上同调计算引理
+    area: 同调代数
+  - id: example_p1
+    type: Example
+    title: P^1 上的配对与维数
+    area: 代数几何
+  - id: ref_hartshorne
+    type: Reference
+    title: Hartshorne, Algebraic Geometry
+    area: 参考
+
+edges:
+  - source: def_affine_scheme
+    target: concept_scheme
+    type: instantiates
+  - source: def_projective_scheme
+    target: concept_scheme
+    type: instantiates
+  - source: thm_serre_duality
+    target: concept_scheme
+    type: applies_to
+  - source: lemma_cech
+    target: thm_serre_duality
+    type: proves
+  - source: example_p1
+    target: thm_serre_duality
+    type: illustrates
+  - source: thm_serre_duality
+    target: ref_hartshorne
+    type: cites 
