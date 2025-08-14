@@ -1,0 +1,55 @@
+nodes:
+  - id: rep_group
+    type: Concept
+    title: 群表示
+    area: 表示论
+  - id: character
+    type: Definition
+    title: 特征标
+    area: 表示论
+  - id: orthogonality
+    type: Theorem
+    title: 特征标正交关系
+    area: 表示论
+  - id: induced
+    type: Construction
+    title: 诱导表示
+    area: 表示论
+  - id: restriction
+    type: Construction
+    title: 限制表示
+    area: 表示论
+  - id: frobenius
+    type: Theorem
+    title: Frobenius 互反性
+    area: 表示论
+  - id: example_S3
+    type: Example
+    title: S3 的表示与特征标表
+    area: 表示论
+
+edges:
+  - source: character
+    target: rep_group
+    type: defined_on
+  - source: orthogonality
+    target: character
+    type: constrains
+  - source: induced
+    target: rep_group
+    type: constructs
+  - source: restriction
+    target: rep_group
+    type: constructs
+  - source: frobenius
+    target: induced
+    type: relates
+  - source: frobenius
+    target: restriction
+    type: relates
+  - source: example_S3
+    target: orthogonality
+    type: verifies
+  - source: example_S3
+    target: frobenius
+    type: applies 

@@ -1,0 +1,56 @@
+nodes:
+  - id: manifold
+    type: Concept
+    title: 光滑流形
+    area: 微分几何
+  - id: tangent_bundle
+    type: Definition
+    title: 切丛
+    area: 微分几何
+  - id: connection
+    type: Definition
+    title: 联络
+    area: 微分几何
+  - id: curvature
+    type: Definition
+    title: 曲率
+    area: 微分几何
+  - id: riemannian
+    type: Concept
+    title: 黎曼流形
+    area: 微分几何
+  - id: de_rham
+    type: Theorem
+    title: de Rham 定理（陈述）
+    area: 微分几何
+  - id: index_AS
+    type: Theorem
+    title: Atiyah–Singer 指标定理（陈述）
+    area: 微分几何
+  - id: example_sphere
+    type: Example
+    title: 球面的联络与曲率
+    area: 微分几何
+
+edges:
+  - source: tangent_bundle
+    target: manifold
+    type: defined_on
+  - source: connection
+    target: tangent_bundle
+    type: acts_on
+  - source: curvature
+    target: connection
+    type: derived_from
+  - source: riemannian
+    target: manifold
+    type: structure_on
+  - source: de_rham
+    target: riemannian
+    type: relates
+  - source: index_AS
+    target: riemannian
+    type: applies_to
+  - source: example_sphere
+    target: curvature
+    type: computes 

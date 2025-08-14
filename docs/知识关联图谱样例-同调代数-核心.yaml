@@ -1,0 +1,59 @@
+nodes:
+  - id: cat_abelian
+    type: Concept
+    title: 阿贝尔范畴
+    area: 同调代数
+  - id: chain_complex
+    type: Definition
+    title: 链复形
+    area: 同调代数
+  - id: homology
+    type: Definition
+    title: 同调群 H_n
+    area: 同调代数
+  - id: snake_lemma
+    type: Lemma
+    title: 蛇引理
+    area: 同调代数
+  - id: long_exact_seq
+    type: Theorem
+    title: 长正合序列定理
+    area: 同调代数
+  - id: ext_functor
+    type: Functor
+    title: Ext 导出函子
+    area: 同调代数
+  - id: tor_functor
+    type: Functor
+    title: Tor 导出函子
+    area: 同调代数
+  - id: example_short_exact
+    type: Example
+    title: 短正合序列诱导的长正合序列
+    area: 同调代数
+
+edges:
+  - source: chain_complex
+    target: cat_abelian
+    type: lives_in
+  - source: homology
+    target: chain_complex
+    type: computed_from
+  - source: snake_lemma
+    target: cat_abelian
+    type: holds_in
+  - source: long_exact_seq
+    target: snake_lemma
+    type: derived_via
+  - source: long_exact_seq
+    target: homology
+    type: applies_to
+  - source: ext_functor
+    target: homology
+    type: relates_to
+  - source: tor_functor
+    target: homology
+    type: relates_to
+  - source: example_short_exact
+    target: long_exact_seq
+    type: illustrates 
