@@ -46,6 +46,7 @@ $$\forall x \forall y [\forall z(z \in x \leftrightarrow z \in y) \rightarrow x 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 两个集合相等当且仅当它们包含相同的元素 / Two sets are equal if and only if they contain the same elements / Deux ensembles sont égaux si et seulement s'ils contiennent les mêmes éléments / Zwei Mengen sind gleich genau dann, wenn sie dieselben Elemente enthalten.
 
 **国际标准参考** / **International standard reference** / **Référence standard internationale** / **Internationale Standardreferenz**:
+
 - **Wikipedia**: "Axiom of extensionality"
 - **MIT 18.100A**: Real Analysis
 - **Cambridge Part IA**: Numbers and Sets
@@ -146,18 +147,22 @@ $$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \
 ### 与著名大学教程的对照 / Comparison with Famous University Courses / Comparaison avec les cours d'universités célèbres / Vergleich mit berühmten Universitätskursen
 
 #### MIT 18.100A Real Analysis
+
 - **课程内容** / **Course content** / **Contenu du cours** / **Kursinhalt**: 实数构造、集合论基础 / Real number construction, set theory foundation / Construction des nombres réels, fondements de la théorie des ensembles / Konstruktion der reellen Zahlen, Grundlagen der Mengenlehre
 - **对应章节** / **Corresponding chapters** / **Chapitres correspondants** / **Entsprechende Kapitel**: 第1-3章 / Chapters 1-3 / Chapitres 1-3 / Kapitel 1-3
 
 #### Cambridge Part IA Numbers and Sets
+
 - **课程内容** / **Course content** / **Contenu du cours** / **Kursinhalt**: 自然数、整数、有理数、实数 / Natural numbers, integers, rational numbers, real numbers / Nombres naturels, entiers, rationnels, réels / Natürliche Zahlen, ganze Zahlen, rationale Zahlen, reelle Zahlen
 - **对应章节** / **Corresponding chapters** / **Chapitres correspondants** / **Entsprechende Kapitel**: 第1-4章 / Chapters 1-4 / Chapitres 1-4 / Kapitel 1-4
 
 #### ENS Paris Logique et théorie des ensembles
+
 - **课程内容** / **Course content** / **Contenu du cours** / **Kursinhalt**: 逻辑学、集合论、公理化方法 / Logic, set theory, axiomatic method / Logique, théorie des ensembles, méthode axiomatique / Logik, Mengenlehre, axiomatische Methode
 - **对应章节** / **Corresponding chapters** / **Chapitres correspondants** / **Entsprechende Kapitel**: 第1-5章 / Chapters 1-5 / Chapitres 1-5 / Kapitel 1-5
 
 #### Göttingen Grundlagen der Mathematik
+
 - **课程内容** / **Course content** / **Contenu du cours** / **Kursinhalt**: 数学基础、形式化证明 / Mathematical foundations, formal proofs / Fondements mathématiques, preuves formelles / Mathematische Grundlagen, formale Beweise
 - **对应章节** / **Corresponding chapters** / **Chapitres correspondants** / **Entsprechende Kapitel**: 第1-6章 / Chapters 1-6 / Chapitres 1-6 / Kapitel 1-6
 
@@ -204,4 +209,4 @@ Dieses Dokument kombiniert internationale mathematische Standards und berühmte 
 
 **文档状态** / **Document status** / **Statut du document** / **Dokumentstatus**: 国际标准对照版完成 / International standard comparison version completed / Version de comparaison des standards internationaux terminée / Internationale Standardvergleichsversion abgeschlossen  
 **形式化程度** / **Formalization degree** / **Degré de formalisation** / **Formalisierungsgrad**: 100% 形式化 / 100% formalized / 100% formalisé / 100% formalisiert  
-**语言覆盖** / **Language coverage** / **Couverture linguistique** / **Sprachabdeckung**: 中英法德四语言 / Chinese, English, French, German / Chinois, anglais, français, allemand / Chinesisch, Englisch, Französisch, Deutsch 
+**语言覆盖** / **Language coverage** / **Couverture linguistique** / **Sprachabdeckung**: 中英法德四语言 / Chinese, English, French, German / Chinois, anglais, français, allemand / Chinesisch, Englisch, Französisch, Deutsch

@@ -2,7 +2,8 @@
 
 ## 📚 概述 / Overview / Aperçu / Übersicht
 
-本文档展示如何从ZFC公理体系严格构造抽象代数结构，包括群、环、域等基本代数结构。这是从集合论到数论的重要桥梁，为现代数学提供了代数基础。
+本文档展示如何从ZFC公理体系严格构造抽象代数结构，包括群、环、域等基本代数结构。
+这是从集合论到数论的重要桥梁，为现代数学提供了代数基础。
 
 This document demonstrates how to strictly construct abstract algebraic structures from the ZFC axiom system, including basic algebraic structures such as groups, rings, and fields. This is an important bridge from set theory to number theory, providing the algebraic foundation for modern mathematics.
 
