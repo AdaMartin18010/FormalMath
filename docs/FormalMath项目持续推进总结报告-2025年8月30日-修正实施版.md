@@ -43,13 +43,13 @@ Let $X$ be a class. If there exists a set $A$ such that $X \in A$, then $X$ is c
 
 ### 1.2 数系与运算文档修正 / Number Systems and Operations Document Correction
 
-#### 修正内容
+#### 1.2.1 修正内容
 
 - **公理表述标准化**: 完善皮亚诺公理系统，采用标准编号
 - **术语统一性**: 统一数系术语和运算术语
 - **符号规范化**: 规范化数系符号和运算符号
 
-#### 具体修正
+#### 1.2.2 具体修正
 
 ```markdown
 **修正前**:
@@ -69,7 +69,7 @@ Let $X$ be a class. If there exists a set $A$ such that $X \in A$, then $X$ is c
 **P4** (归纳公理 / Induction Axiom): 如果 $P$ 是 $\mathbb{N}$ 的一个性质，满足...
 ```
 
-#### 修正效果
+#### 1.2.3 修正效果
 
 - **公理完整性**: 100%完整的皮亚诺公理系统
 - **表述规范性**: 95%符合国际标准表述规范
@@ -78,13 +78,13 @@ Let $X$ be a class. If there exists a set $A$ such that $X \in A$, then $X$ is c
 
 ### 1.3 函数与映射文档修正 / Functions and Mappings Document Correction
 
-#### 修正内容
+#### 1.3.1 修正内容
 
 - **定义表述标准化**: 采用严格的集合论函数定义
 - **术语统一性**: 统一函数术语和映射术语
 - **符号规范化**: 规范化函数符号和映射符号
 
-#### 具体修正
+#### 1.3.2 具体修正
 
 ```markdown
 **修正前**:
@@ -106,7 +106,7 @@ Let $A$ and $B$ be two sets. A function $f$ from $A$ to $B$ is a binary relation
 2. **Uniqueness**: For any $a \in A$ and $b_1, b_2 \in B$, if $(a, b_1) \in f$ and $(a, b_2) \in f$, then $b_1 = b_2$
 ```
 
-#### 修正效果
+#### 1.3.3 修正效果
 
 - **定义严格性**: 100%采用严格的集合论定义
 - **表述规范性**: 95%符合国际标准表述规范

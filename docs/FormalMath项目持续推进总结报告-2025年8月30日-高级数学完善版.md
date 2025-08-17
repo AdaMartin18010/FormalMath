@@ -253,19 +253,19 @@ $$V(I) = \{(a_1, \ldots, a_n) \in k^n : f(a_1, \ldots, a_n) = 0 \text{ for all }
 
 ### 3.2 表示论知识关联 / Representation Theory Knowledge Connections
 
-#### 基础数学关联
+#### 3.2.1 基础数学关联
 
 - **线性代数**: 表示论的基础是向量空间
 - **群论**: 表示论研究的对象是群
 - **环论**: 群代数、模、代数
 
-#### 高级数学关联
+#### 3.2.2 高级数学关联
 
 - **代数**: 李代数、李群、代数群
 - **几何**: 代数几何、微分几何、拓扑
 - **分析**: 调和分析、泛函分析、偏微分方程
 
-#### 应用领域关联
+#### 3.2.3 应用领域关联
 
 - **物理学**: 量子力学、粒子物理、相对论、统计物理
 - **化学**: 分子对称性、光谱学、晶体学
@@ -273,19 +273,19 @@ $$V(I) = \{(a_1, \ldots, a_n) \in k^n : f(a_1, \ldots, a_n) = 0 \text{ for all }
 
 ### 3.3 代数几何知识关联 / Algebraic Geometry Knowledge Connections
 
-#### 基础数学关联
+#### 3.3.1 基础数学关联
 
 - **代数**: 多项式、理想、环论
 - **几何**: 解析几何、射影几何、微分几何
 - **拓扑**: 代数拓扑、同调论、上同调
 
-#### 高级数学关联
+#### 3.3.2 高级数学关联
 
 - **代数**: 交换代数、同调代数、表示论
 - **几何**: 代数几何、算术几何、几何朗兰兹
 - **分析**: 复分析、调和分析、偏微分方程
 
-#### 应用领域关联
+#### 3.3.3 应用领域关联
 
 - **数论**: 算术几何、椭圆曲线、朗兰兹纲领
 - **物理学**: 弦理论、量子场论、数学物理
@@ -297,85 +297,85 @@ $$V(I) = \{(a_1, \ldots, a_n) \in k^n : f(a_1, \ldots, a_n) = 0 \text{ for all }
 
 #### 经典教材
 
-1. **Mac Lane, S.** (1998). *Categories for the Working Mathematician*. Springer-Verlag.
-2. **Awodey, S.** (2010). *Category Theory*. Oxford University Press.
-3. **Leinster, T.** (2014). *Basic Category Theory*. Cambridge University Press.
+  1. **Mac Lane, S.** (1998). *Categories for the Working Mathematician*. Springer-Verlag.
+  2. **Awodey, S.** (2010). *Category Theory*. Oxford University Press.
+  3. **Leinster, T.** (2014). *Basic Category Theory*. Cambridge University Press.
 
 #### 同调代数教材
 
-4. **Borceux, F.** (1994). *Handbook of Categorical Algebra*. Cambridge University Press.
-5. **Adámek, J., Herrlich, H., & Strecker, G. E.** (1990). *Abstract and Concrete Categories*. Wiley.
-6. **Riehl, E.** (2017). *Category Theory in Context*. Dover Publications.
+  1. **Borceux, F.** (1994). *Handbook of Categorical Algebra*. Cambridge University Press.
+  2. **Adámek, J., Herrlich, H., & Strecker, G. E.** (1990). *Abstract and Concrete Categories*. Wiley.
+  3. **Riehl, E.** (2017). *Category Theory in Context*. Dover Publications.
 
 #### 高级同调代数教材
 
-7. **Lurie, J.** (2009). *Higher Topos Theory*. Princeton University Press.
-8. **Joyal, A., & Street, R.** (1991). *The geometry of tensor calculus*. Advances in Mathematics.
-9. **Kelly, G. M.** (1982). *Basic Concepts of Enriched Category Theory*. Cambridge University Press.
+  1. **Lurie, J.** (2009). *Higher Topos Theory*. Princeton University Press.
+  2. **Joyal, A., & Street, R.** (1991). *The geometry of tensor calculus*. Advances in Mathematics.
+  3. **Kelly, G. M.** (1982). *Basic Concepts of Enriched Category Theory*. Cambridge University Press.
 
 #### 历史文献
 
-10. **Eilenberg, S., & Mac Lane, S.** (1945). *General theory of natural equivalences*. Transactions of the American Mathematical Society.
-11. **Grothendieck, A.** (1957). *Sur quelques points d'algèbre homologique*. Tohoku Mathematical Journal.
-12. **Lawvere, F. W.** (1963). *Functorial semantics of algebraic theories*. Proceedings of the National Academy of Sciences.
-13. **Kan, D. M.** (1958). *Adjoint functors*. Transactions of the American Mathematical Society.
-14. **Yoneda, N.** (1954). *On the homology theory of modules*. Journal of the Faculty of Science, University of Tokyo.
+  1. **Eilenberg, S., & Mac Lane, S.** (1945). *General theory of natural equivalences*. Transactions of the American Mathematical Society.
+  2. **Grothendieck, A.** (1957). *Sur quelques points d'algèbre homologique*. Tohoku Mathematical Journal.
+  3. **Lawvere, F. W.** (1963). *Functorial semantics of algebraic theories*. Proceedings of the National Academy of Sciences.
+  4. **Kan, D. M.** (1958). *Adjoint functors*. Transactions of the American Mathematical Society.
+  5. **Yoneda, N.** (1954). *On the homology theory of modules*. Journal of the Faculty of Science, University of Tokyo.
 
 ### 4.2 表示论参考文献 / Representation Theory References
 
-#### 经典教材
+#### 4.2.1 经典教材
 
-1. **Serre, J.-P.** (1977). *Linear Representations of Finite Groups*. Springer-Verlag.
-2. **Fulton, W., & Harris, J.** (1991). *Representation Theory: A First Course*. Springer-Verlag.
-3. **Humphreys, J. E.** (1972). *Introduction to Lie Algebras and Representation Theory*. Springer-Verlag.
+  1. **Serre, J.-P.** (1977). *Linear Representations of Finite Groups*. Springer-Verlag.
+  2. **Fulton, W., & Harris, J.** (1991). *Representation Theory: A First Course*. Springer-Verlag.
+  3. **Humphreys, J. E.** (1972). *Introduction to Lie Algebras and Representation Theory*. Springer-Verlag.
 
 #### 表示论教材
 
-4. **Curtis, C. W., & Reiner, I.** (1981). *Methods of Representation Theory*. Wiley.
-5. **Alperin, J. L.** (1986). *Local Representation Theory*. Cambridge University Press.
-6. **Isaacs, I. M.** (1994). *Character Theory of Finite Groups*. Dover Publications.
+  1. **Curtis, C. W., & Reiner, I.** (1981). *Methods of Representation Theory*. Wiley.
+  2. **Alperin, J. L.** (1986). *Local Representation Theory*. Cambridge University Press.
+  3. **Isaacs, I. M.** (1994). *Character Theory of Finite Groups*. Dover Publications.
 
 #### 高级表示论教材
 
-7. **Digne, F., & Michel, J.** (1991). *Representations of Finite Groups of Lie Type*. Cambridge University Press.
-8. **Carter, R. W.** (1985). *Finite Groups of Lie Type: Conjugacy Classes and Complex Characters*. Wiley.
-9. **Knapp, A. W.** (2002). *Lie Groups Beyond an Introduction*. Birkhäuser.
+  1. **Digne, F., & Michel, J.** (1991). *Representations of Finite Groups of Lie Type*. Cambridge University Press.
+  2. **Carter, R. W.** (1985). *Finite Groups of Lie Type: Conjugacy Classes and Complex Characters*. Wiley.
+  3. **Knapp, A. W.** (2002). *Lie Groups Beyond an Introduction*. Birkhäuser.
 
-#### 历史文献
+#### 4.2.4 历史文献
 
-10. **Frobenius, F. G.** (1896). *Über Gruppencharaktere*. Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften.
-11. **Schur, I.** (1905). *Neue Begründung der Theorie der Gruppencharaktere*. Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften.
-12. **Weyl, H.** (1925). *Theorie der Darstellung kontinuierlicher halbeinfacher Gruppen durch lineare Transformationen*. Mathematische Zeitschrift.
-13. **Cartan, É.** (1938). *Sur les représentations linéaires des groupes de Lie clos*. Commentarii Mathematici Helvetici.
-14. **Brauer, R.** (1941). *On the representations of groups of finite order*. Proceedings of the National Academy of Sciences.
+  1. **Frobenius, F. G.** (1896). *Über Gruppencharaktere*. Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften.
+  2. **Schur, I.** (1905). *Neue Begründung der Theorie der Gruppencharaktere*. Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften.
+  3. **Weyl, H.** (1925). *Theorie der Darstellung kontinuierlicher halbeinfacher Gruppen durch lineare Transformationen*. Mathematische Zeitschrift.
+  4. **Cartan, É.** (1938). *Sur les représentations linéaires des groupes de Lie clos*. Commentarii Mathematici Helvetici.
+  5. **Brauer, R.** (1941). *On the representations of groups of finite order*. Proceedings of the National Academy of Sciences.
 
 ### 4.3 代数几何参考文献 / Algebraic Geometry References
 
-#### 经典教材
+#### 4.3.1 经典教材
 
-1. **Hartshorne, R.** (1977). *Algebraic Geometry*. Springer-Verlag.
-2. **Shafarevich, I. R.** (1994). *Basic Algebraic Geometry*. Springer-Verlag.
-3. **Mumford, D.** (1999). *The Red Book of Varieties and Schemes*. Springer-Verlag.
+  1. **Hartshorne, R.** (1977). *Algebraic Geometry*. Springer-Verlag.
+  2. **Shafarevich, I. R.** (1994). *Basic Algebraic Geometry*. Springer-Verlag.
+  3. **Mumford, D.** (1999). *The Red Book of Varieties and Schemes*. Springer-Verlag.
 
 #### 代数几何教材
 
-4. **Eisenbud, D.** (1995). *Commutative Algebra with a View Toward Algebraic Geometry*. Springer-Verlag.
-5. **Liu, Q.** (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press.
-6. **Vakil, R.** (2017). *The Rising Sea: Foundations of Algebraic Geometry*. Available online.
+  1. **Eisenbud, D.** (1995). *Commutative Algebra with a View Toward Algebraic Geometry*. Springer-Verlag.
+  2. **Liu, Q.** (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press.
+  3. **Vakil, R.** (2017). *The Rising Sea: Foundations of Algebraic Geometry*. Available online.
 
 #### 高级代数几何教材
 
-7. **Grothendieck, A.** (1960). *Éléments de géométrie algébrique*. Publications Mathématiques de l'IHÉS.
-8. **Deligne, P.** (1974). *La conjecture de Weil I*. Publications Mathématiques de l'IHÉS.
-9. **Faltings, G.** (1983). *Endlichkeitssätze für abelsche Varietäten über Zahlkörpern*. Inventiones Mathematicae.
+  1. **Grothendieck, A.** (1960). *Éléments de géométrie algébrique*. Publications Mathématiques de l'IHÉS.
+  2. **Deligne, P.** (1974). *La conjecture de Weil I*. Publications Mathématiques de l'IHÉS.
+  3. **Faltings, G.** (1983). *Endlichkeitssätze für abelsche Varietäten über Zahlkörpern*. Inventiones Mathematicae.
 
-#### 历史文献
+#### 4.3.4 历史文献
 
-10. **Riemann, B.** (1851). *Grundlagen für eine allgemeine Theorie der Functionen einer veränderlichen complexen Grösse*. Göttingen.
-11. **Klein, F.** (1872). *Vergleichende Betrachtungen über neuere geometrische Forschungen*. Erlangen.
-12. **Zariski, O.** (1935). *Algebraic Surfaces*. Ergebnisse der Mathematik.
-13. **Weil, A.** (1946). *Foundations of Algebraic Geometry*. American Mathematical Society.
-14. **Grothendieck, A.** (1960). *Éléments de géométrie algébrique*. Publications Mathématiques de l'IHÉS.
+  1. **Riemann, B.** (1851). *Grundlagen für eine allgemeine Theorie der Functionen einer veränderlichen complexen Grösse*. Göttingen.
+  2. **Klein, F.** (1872). *Vergleichende Betrachtungen über neuere geometrische Forschungen*. Erlangen.
+  3. **Zariski, O.** (1935). *Algebraic Surfaces*. Ergebnisse der Mathematik.
+  4. **Weil, A.** (1946). *Foundations of Algebraic Geometry*. American Mathematical Society.
+  5. **Grothendieck, A.** (1960). *Éléments de géométrie algébrique*. Publications Mathématiques de l'IHÉS.
 
 ## 第五部分：质量评估 / Quality Assessment
 

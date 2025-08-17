@@ -115,41 +115,41 @@ Let $[a, b]$ be a closed interval on the real line, and $\mathbb{R}^n$ be the $n
 
 #### 经典教材
 
-1. **do Carmo, M. P.** (1976). *Differential Geometry of Curves and Surfaces*. Prentice-Hall.
-2. **Spivak, M.** (1979). *A Comprehensive Introduction to Differential Geometry*. Publish or Perish.
-3. **Kobayashi, S., & Nomizu, K.** (1963). *Foundations of Differential Geometry*. Wiley.
+  1. **do Carmo, M. P.** (1976). *Differential Geometry of Curves and Surfaces*. Prentice-Hall.
+  2. **Spivak, M.** (1979). *A Comprehensive Introduction to Differential Geometry*. Publish or Perish.
+  3. **Kobayashi, S., & Nomizu, K.** (1963). *Foundations of Differential Geometry*. Wiley.
 
 #### 微分几何教材
 
-4. **O'Neill, B.** (2006). *Elementary Differential Geometry*. Academic Press.
-5. **Morgan, F.** (1998). *Riemannian Geometry: A Beginner's Guide*. A K Peters.
-6. **Petersen, P.** (2006). *Riemannian Geometry*. Springer-Verlag.
+  1. **O'Neill, B.** (2006). *Elementary Differential Geometry*. Academic Press.
+  2. **Morgan, F.** (1998). *Riemannian Geometry: A Beginner's Guide*. A K Peters.
+  3. **Petersen, P.** (2006). *Riemannian Geometry*. Springer-Verlag.
 
 #### 高级微分几何教材
 
-7. **Jost, J.** (2017). *Riemannian Geometry and Geometric Analysis*. Springer-Verlag.
-8. **Gallot, S., Hulin, D., & Lafontaine, J.** (2004). *Riemannian Geometry*. Springer-Verlag.
-9. **Berger, M.** (2003). *A Panoramic View of Riemannian Geometry*. Springer-Verlag.
+  1. **Jost, J.** (2017). *Riemannian Geometry and Geometric Analysis*. Springer-Verlag.
+  2. **Gallot, S., Hulin, D., & Lafontaine, J.** (2004). *Riemannian Geometry*. Springer-Verlag.
+  3. **Berger, M.** (2003). *A Panoramic View of Riemannian Geometry*. Springer-Verlag.
 
 #### 历史文献
 
-10. **Euler, L.** (1748). *Introductio in analysin infinitorum*. Lausanne.
-11. **Gauss, C. F.** (1827). *Disquisitiones generales circa superficies curvas*. Göttingen.
-12. **Riemann, B.** (1854). *Über die Hypothesen, welche der Geometrie zu Grunde liegen*. Göttingen.
-13. **Klein, F.** (1872). *Vergleichende Betrachtungen über neuere geometrische Forschungen*. Erlangen.
-14. **Cartan, É.** (1923). *Sur les variétés à connexion affine et la théorie de la relativité généralisée*. Annales scientifiques de l'École Normale Supérieure.
+  1. **Euler, L.** (1748). *Introductio in analysin infinitorum*. Lausanne.
+  2. **Gauss, C. F.** (1827). *Disquisitiones generales circa superficies curvas*. Göttingen.
+  3. **Riemann, B.** (1854). *Über die Hypothesen, welche der Geometrie zu Grunde liegen*. Göttingen.
+  4. **Klein, F.** (1872). *Vergleichende Betrachtungen über neuere geometrische Forschungen*. Erlangen.
+  5. **Cartan, É.** (1923). *Sur les variétés à connexion affine et la théorie de la relativité généralisée*. Annales scientifiques de l'École Normale Supérieure.
 
 #### 中文教材
 
-15. **陈省身** (1983). *微分几何讲义*. 北京大学出版社.
-16. **伍鸿熙** (1989). *黎曼几何初步*. 北京大学出版社.
-17. **梅向明** (1988). *微分几何*. 高等教育出版社.
+  1. **陈省身** (1983). *微分几何讲义*. 北京大学出版社.
+  2. **伍鸿熙** (1989). *黎曼几何初步*. 北京大学出版社.
+  3. **梅向明** (1988). *微分几何*. 高等教育出版社.
 
 #### 现代发展文献
 
-18. **Atiyah, M. F., & Singer, I. M.** (1963). *The index of elliptic operators on compact manifolds*. Bulletin of the American Mathematical Society.
-19. **Perelman, G.** (2003). *The entropy formula for the Ricci flow and its geometric applications*. arXiv.
-20. **Thurston, W. P.** (1982). *Three-dimensional manifolds, Kleinian groups and hyperbolic geometry*. Bulletin of the American Mathematical Society.
+  1. **Atiyah, M. F., & Singer, I. M.** (1963). *The index of elliptic operators on compact manifolds*. Bulletin of the American Mathematical Society.
+  2. **Perelman, G.** (2003). *The entropy formula for the Ricci flow and its geometric applications*. arXiv.
+  3. **Thurston, W. P.** (1982). *Three-dimensional manifolds, Kleinian groups and hyperbolic geometry*. Bulletin of the American Mathematical Society.
 
 ## 第五部分：质量评估 / Quality Assessment
 
