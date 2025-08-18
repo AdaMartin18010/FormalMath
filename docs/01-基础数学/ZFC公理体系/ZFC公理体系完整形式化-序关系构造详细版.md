@@ -131,7 +131,7 @@ $$[a]_R = \{b \in A : a R b\}$$
 $$\leq \text{ 是偏序关系} \leftrightarrow \forall a \in A(a \leq a) \land \forall a, b \in A(a \leq b \land b \leq a \rightarrow a = b) \land \forall a, b, c \in A(a \leq b \land b \leq c \rightarrow a \leq c)$$
 
 **定义 3.2** (严格偏序关系)
-集合 $A$ 上的关系 $<$ 是严格偏序关系，如果 $<$ 是反自反和传递的。
+集合 $A$ 上的关系 $<$ 是严格偏序关系，如果 $<$ 是非自反和传递的。
 
 **形式化表述**：
 $$< \text{ 是严格偏序关系} \leftrightarrow \forall a \in A(\neg(a < a)) \land \forall a, b, c \in A(a < b \land b < c \rightarrow a < c)$$
@@ -143,7 +143,7 @@ $$< \text{ 是严格偏序关系} \leftrightarrow \forall a \in A(\neg(a < a)) \
 
 ```text
 证明：
-(1) 反自反性：如果 a < a，则 a ≤ a 且 a ≠ a，矛盾
+(1) 非自反性：如果 a < a，则 a ≤ a 且 a ≠ a，矛盾
 (2) 传递性：如果 a < b 和 b < c，则 a ≤ b 且 a ≠ b，b ≤ c 且 b ≠ c
    由 ≤ 的传递性，a ≤ c
    如果 a = c，则 a ≤ b ≤ a，由反对称性 a = b，矛盾
