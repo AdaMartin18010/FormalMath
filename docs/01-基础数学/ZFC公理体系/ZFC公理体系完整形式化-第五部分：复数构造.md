@@ -404,3 +404,21 @@ $$\cos z = \frac{e^{iz} + e^{-iz}}{2}, \quad \sin z = \frac{e^{iz} - e^{-iz}}{2i
 **文档状态**: 复数构造完成  
 **下一部分**: 高级数学结构构造  
 **形式化程度**: 完整形式化证明
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 有序对 | Ordered pair |
+| 复数加法/乘法 | Complex addition/multiplication |
+| 共轭 | Conjugation |
+| 模 | Modulus |
+| 辐角 | Argument |
+| 极坐标形式 | Polar form |
+| 代数闭包 | Algebraic closure |
+
+## 参考文献 / References
+
+- Stein, E., & Shakarchi, R. Complex Analysis. Princeton.
+- Ahlfors, L. Complex Analysis. McGraw-Hill.
+- Wikipedia: Complex number; Polar coordinate system; Algebraic closure.

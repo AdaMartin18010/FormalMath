@@ -210,3 +210,26 @@ Dieses Dokument kombiniert internationale mathematische Standards und berühmte 
 **文档状态** / **Document status** / **Statut du document** / **Dokumentstatus**: 国际标准对照版完成 / International standard comparison version completed / Version de comparaison des standards internationaux terminée / Internationale Standardvergleichsversion abgeschlossen  
 **形式化程度** / **Formalization degree** / **Degré de formalisation** / **Formalisierungsgrad**: 100% 形式化 / 100% formalized / 100% formalisé / 100% formalisiert  
 **语言覆盖** / **Language coverage** / **Couverture linguistique** / **Sprachabdeckung**: 中英法德四语言 / Chinese, English, French, German / Chinois, anglais, français, allemand / Chinesisch, Englisch, Französisch, Deutsch
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 外延公理 | Axiom of extensionality |
+| 空集公理 | Axiom of empty set |
+| 配对公理 | Axiom of pairing |
+| 并集公理 | Axiom of union |
+| 幂集公理 | Axiom of power set |
+| 无穷公理 | Axiom of infinity |
+| 分离公理模式 | Axiom schema of separation |
+| 替换公理模式 | Axiom schema of replacement |
+| 正则公理 | Axiom of regularity |
+| 选择公理 | Axiom of choice |
+
+## 参考文献 / References
+
+- Jech, T. Set Theory. Springer.
+- Kunen, K. Set Theory. College Publications.
+- Enderton, H. B. Elements of Set Theory. Academic Press.
+- Halmos, P. R. Naive Set Theory. Springer.
+- Wikipedia: Zermelo–Fraenkel set theory (ZFC); Axiom of choice.

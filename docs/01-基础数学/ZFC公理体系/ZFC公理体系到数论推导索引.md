@@ -205,6 +205,18 @@
 - **编码理论**: 纠错码理论的完善
 - **算法设计**: 数论算法的优化
 
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 推导路径 | Derivation path |
+| 公理化 | Axiomatization |
+| 构造性 | Constructive |
+| 形式化 | Formalization |
+| 证明助理 | Proof assistant |
+| 导航索引 | Navigation index |
+| 参考链接 | Reference links |
+
 ---
 
 **索引状态**: 完整导航索引  

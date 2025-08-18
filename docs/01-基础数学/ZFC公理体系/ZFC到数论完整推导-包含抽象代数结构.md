@@ -286,3 +286,15 @@ ZFC公理体系
 **覆盖范围**: ZFC公理体系到数论基础  
 **形式化程度**: 100% 形式化证明  
 **应用价值**: 为现代数学提供基础工具
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| ZFC | ZFC (Zermelo–Fraenkel with Choice) |
+| 冯·诺伊曼序数 | Von Neumann ordinals |
+| 等价类 | Equivalence class |
+| 戴德金分割 | Dedekind cut |
+| 柯西序列 | Cauchy sequence |
+| 群/环/域/模 | Group/Ring/Field/Module |
+| 同余/整除 | Congruence/Divisibility |

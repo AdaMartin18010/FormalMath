@@ -343,3 +343,22 @@ $$a \equiv b \pmod{m} \leftrightarrow m \mid (a - b)$$
 **文档状态**: 整数构造完成  
 **下一部分**: 有理数构造  
 **形式化程度**: 完整形式化证明
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 等价关系 | Equivalence relation |
+| 等价类 | Equivalence class |
+| 整数对 | Integer pair |
+| 交换/结合/分配律 | Commutative/Associative/Distributive laws |
+| 序关系 | Order relation |
+| 整除 | Divisibility |
+| 同余 | Congruence |
+
+## 参考文献 / References
+
+- Landau, E. Foundations of Analysis. Chelsea.
+- Rudin, W. Principles of Mathematical Analysis. McGraw-Hill.
+- Enderton, H. B. Elements of Set Theory. Academic Press.
+- Wikipedia: Integer; Equivalence relation; Congruence (number theory).

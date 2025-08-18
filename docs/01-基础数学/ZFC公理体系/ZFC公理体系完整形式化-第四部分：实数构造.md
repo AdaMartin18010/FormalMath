@@ -372,3 +372,21 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 **文档状态**: 实数构造完成  
 **下一部分**: 复数构造  
 **形式化程度**: 完整形式化证明
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 戴德金分割 | Dedekind cut |
+| 柯西序列 | Cauchy sequence |
+| 完备性 | Completeness |
+| 上确界/下确界 | Supremum/Infimum |
+| 阿基米德性 | Archimedean property |
+| 度量/拓扑 | Metric/Topology |
+
+## 参考文献 / References
+
+- Rudin, W. Principles of Mathematical Analysis. McGraw-Hill.
+- Apostol, T. M. Mathematical Analysis. Addison-Wesley.
+- Tao, T. Analysis I (and blog notes on real analysis).
+- Wikipedia: Real number; Dedekind cut; Cauchy sequence.

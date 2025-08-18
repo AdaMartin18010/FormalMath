@@ -359,3 +359,27 @@ ZFC公理体系为数学提供了严格的逻辑基础。
 **文档状态**: ZFC公理体系基础部分完成  
 **下一部分**: 整数和有理数的构造  
 **形式化程度**: 完整形式化证明
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 外延公理 | Axiom of extensionality |
+| 空集 | Empty set |
+| 配对 | Pairing |
+| 并集 | Union |
+| 幂集 | Power set |
+| 归纳集合 | Inductive set |
+| 无穷公理 | Axiom of infinity |
+| 分离公理模式 | Axiom schema of separation |
+| 替换公理模式 | Axiom schema of replacement |
+| 正则公理 | Axiom of regularity |
+| 选择公理 | Axiom of choice |
+
+## 参考文献 / References
+
+- Jech, T. Set Theory. Springer.
+- Kunen, K. Set Theory. College Publications.
+- Enderton, H. B. Elements of Set Theory. Academic Press.
+- Halmos, P. R. Naive Set Theory. Springer.
+- Wikipedia: Zermelo–Fraenkel set theory; Axiom of choice.

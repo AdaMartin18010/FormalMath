@@ -830,3 +830,14 @@ end
 **最后更新** / **Last Updated**: 2024年8月  
 **维护者** / **Maintainer**: FormalMath项目组  
 **许可证** / **License**: MIT License
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| ZFC/选择公理 | ZFC/Axiom of choice |
+| 冯·诺伊曼序数 | Von Neumann ordinals |
+| 群/环/域/模 | Group/Ring/Field/Module |
+| 交换/结合/分配律 | Commutativity/Associativity/Distributivity |
+| 理想/素理想/极大理想 | Ideal/Prime/Maximal ideal |
+| 张量积/导函子 | Tensor product/Derived functor |

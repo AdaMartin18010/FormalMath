@@ -379,3 +379,22 @@ $\phi$ 是单射，且保持运算和序关系。
 **文档状态**: 有理数构造完成  
 **下一部分**: 实数构造  
 **形式化程度**: 完整形式化证明
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 等价关系 | Equivalence relation |
+| 等价类 | Equivalence class |
+| 有理数对 | Rational pair |
+| 约分/既约 | Reduction/Reduced form |
+| 稠密性 | Density |
+| 序关系 | Order relation |
+| 域公理 | Field axioms |
+
+## 参考文献 / References
+
+- Landau, E. Foundations of Analysis. Chelsea.
+- Rudin, W. Principles of Mathematical Analysis. McGraw-Hill.
+- Apostol, T. M. Mathematical Analysis. Addison-Wesley.
+- Wikipedia: Rational number; Field (mathematics).

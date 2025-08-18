@@ -361,3 +361,20 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
 **文档状态**: 自然数构造详细版完成  
 **形式化程度**: 100% 形式化证明  
 **应用价值**: 为数学提供基础工具
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 冯·诺伊曼序数 | Von Neumann ordinals |
+| 皮亚诺公理 | Peano axioms |
+| 后继函数 | Successor function |
+| 归纳原理 | Principle of induction |
+| 递归定理 | Recursion theorem |
+
+## 参考文献 / References
+
+- Enderton, H. B. Elements of Set Theory. Academic Press.
+- Jech, T. Set Theory. Springer.
+- Peano, G. Arithmetices principia, nova methodo exposita (1889).
+- Wikipedia: Natural number; Peano axioms; Von Neumann ordinal.

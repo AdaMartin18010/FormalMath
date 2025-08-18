@@ -647,3 +647,13 @@ $\text{Tor}_n^R(M, N)$ 是 $M$ 和 $N$ 的张量积的导出函子。
 **形式化程度**: 100% 形式化证明  
 **应用价值**: 为现代数学和科学提供基础工具  
 **理论深度**: 从基础到前沿的完整体系
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 群/环/域/模 | Group/Ring/Field/Module |
+| 范畴/函子/自然变换 | Category/Functor/Natural transformation |
+| 极限/余极限 | Limit/Colimit |
+| 同调/上同调 | Homology/Cohomology |
+| 张量/导函子 | Tensor/Derived functor |

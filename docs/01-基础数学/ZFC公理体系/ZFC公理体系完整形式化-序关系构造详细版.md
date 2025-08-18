@@ -397,6 +397,25 @@ $$(a_1, b_1) < (a_2, b_2) \leftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 
 
 序关系理论不仅具有重要的理论价值，在实际应用中也有广泛的应用，如计算机科学中的排序算法、数据库中的索引结构等。
 
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 偏序 | Partial order |
+| 全序/线序 | Total/Linear order |
+| 良序 | Well-order |
+| 上界/下界 | Upper/Lower bound |
+| 上确界/下确界 | Supremum/Infimum |
+| 初段 | Initial segment |
+| 序同构 | Order isomorphism |
+| 序型 | Order type |
+
+## 参考文献 / References
+
+- Bourbaki, N. Elements of Mathematics: Set Theory. Hermann.
+- Davey, B. A., & Priestley, H. A. Introduction to Lattices and Order. Cambridge University Press.
+- Wikipedia: Partial order; Total order; Well-order.
+
 ---
 
 **文档状态**: 序关系构造详细版完成  
