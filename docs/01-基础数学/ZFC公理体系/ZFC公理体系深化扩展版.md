@@ -19,34 +19,6 @@
     - [2.7 替换公理模式](#27-替换公理模式)
     - [2.8 正则公理](#28-正则公理)
     - [2.9 选择公理](#29-选择公理)
-  - [3. 公理的独立性证明](#3-公理的独立性证明)
-    - [3.1 独立性证明方法](#31-独立性证明方法)
-    - [3.2 选择公理的独立性](#32-选择公理的独立性)
-    - [3.3 连续统假设的独立性](#33-连续统假设的独立性)
-    - [3.4 大基数公理的独立性](#34-大基数公理的独立性)
-  - [4. 模型论与一致性](#4-模型论与一致性)
-    - [4.1 内模型](#41-内模型)
-    - [4.2 外模型](#42-外模型)
-    - [4.3 强制法](#43-强制法)
-    - [4.4 一致性强度](#44-一致性强度)
-  - [5. 集合论宇宙](#5-集合论宇宙)
-    - [5.1 冯·诺伊曼宇宙](#51-冯诺伊曼宇宙)
-    - [5.2 累积层次](#52-累积层次)
-    - [5.3 反射原理](#53-反射原理)
-    - [5.4 绝对性](#54-绝对性)
-  - [6. 形式化实现](#6-形式化实现)
-    - [6.1 Lean 4 实现](#61-lean-4-实现)
-    - [6.2 Coq 实现](#62-coq-实现)
-    - [6.3 Isabelle/HOL 实现](#63-isabellehol-实现)
-  - [7. 历史发展与哲学思考](#7-历史发展与哲学思考)
-    - [7.1 历史发展](#71-历史发展)
-    - [7.2 哲学问题](#72-哲学问题)
-    - [7.3 数学实在性](#73-数学实在性)
-  - [8. 前沿研究方向](#8-前沿研究方向)
-    - [8.1 大基数公理](#81-大基数公理)
-    - [8.2 描述集合论](#82-描述集合论)
-    - [8.3 内模型理论](#83-内模型理论)
-  - [9. 总结与展望](#9-总结与展望)
 
 ## 概述
 
@@ -60,22 +32,26 @@
 一阶逻辑语言 $\mathcal{L}$ 包含以下符号：
 
 **逻辑符号**:
+
 - 连接词: $\neg, \land, \lor, \rightarrow, \leftrightarrow$
 - 量词: $\forall, \exists$
 - 等号: $=$
 - 括号: $(, )$
 
 **非逻辑符号**:
+
 - 关系符号: $\in$ (二元关系)
 - 变量: $x, y, z, \ldots$ (可数无限个)
 
 **定义 1.1.2** (项)
 项递归定义如下：
+
 - 变量是项
 - 没有函数符号，所以项就是变量
 
 **定义 1.1.3** (公式)
 公式递归定义如下：
+
 - 如果 $t_1, t_2$ 是项，则 $t_1 = t_2$ 和 $t_1 \in t_2$ 是原子公式
 - 如果 $\phi, \psi$ 是公式，则 $\neg\phi, \phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leftrightarrow \psi$ 是公式
 - 如果 $\phi$ 是公式，$x$ 是变量，则 $\forall x \phi, \exists x \phi$ 是公式
@@ -84,6 +60,7 @@
 
 **定义 1.2.1** (集合论语言)
 集合论语言 $\mathcal{L}_{\text{ZFC}}$ 是一阶逻辑语言，其中：
+
 - 唯一的非逻辑符号是二元关系符号 $\in$
 - 没有函数符号
 - 没有常量符号
@@ -101,6 +78,7 @@
 
 **定义 1.3.1** (自由变量)
 变量 $x$ 在公式 $\phi$ 中自由出现，递归定义如下：
+
 - 在原子公式 $x = y$ 中，$x$ 和 $y$ 都自由出现
 - 在原子公式 $x \in y$ 中，$x$ 和 $y$ 都自由出现
 - 在 $\neg\phi$ 中，$x$ 自由出现当且仅当在 $\phi$ 中自由出现
@@ -147,6 +125,7 @@ $$\forall x \forall y \exists z \forall w(w \in z \leftrightarrow w = x \lor w =
 对于集合 $x, y$，无序对 $\{x, y\}$ 是满足 $\forall w(w \in \{x, y\} \leftrightarrow w = x \lor w = y)$ 的唯一集合。
 
 **定理 2.3.3** (无序对的性质)
+
 - $\{x, y\} = \{y, x\}$
 - $x \in \{x, y\}$
 - $y \in \{x, y\}$
@@ -163,6 +142,7 @@ $$\forall F \exists A \forall x(x \in A \leftrightarrow \exists B(B \in F \land 
 对于集合 $A, B$，$A \cup B = \bigcup \{A, B\}$。
 
 **定理 2.4.4** (并集的性质)
+
 - $A \subseteq A \cup B$
 - $B \subseteq A \cup B$
 - 如果 $A \subseteq C$ 且 $B \subseteq C$，则 $A \cup B \subseteq C$
@@ -176,6 +156,7 @@ $$\forall x \exists y \forall z(z \in y \leftrightarrow z \subseteq x)$$
 对于集合 $x$，幂集 $\mathcal{P}(x)$ 是满足 $\forall z(z \in \mathcal{P}(x) \leftrightarrow z \subseteq x)$ 的唯一集合。
 
 **定理 2.5.3** (幂集的性质)
+
 - $\emptyset \in \mathcal{P}(x)$
 - $x \in \mathcal{P}(x)$
 - 如果 $A \subseteq B$，则 $\mathcal{P}(A) \subseteq \mathcal{P}(B)$
@@ -192,6 +173,7 @@ $$\exists x(\emptyset \in x \land \forall y(y \in x \rightarrow y \cup \{y\} \in
 自然数集 $\omega$ 是所有归纳集的交集。
 
 **定理 2.6.4** (自然数的性质)
+
 - $\omega$ 是归纳集
 - $\omega$ 是最小的归纳集
 - 每个自然数都是传递集
@@ -228,6 +210,7 @@ $$\forall F[\emptyset \notin F \land \forall A \forall B(A \in F \land B \in F \
 
 **定理 2.9.2** (选择公理的等价形式)
 选择公理等价于：
+
 - 佐恩引理
 - 良序定理
 - 乘积非空公理
