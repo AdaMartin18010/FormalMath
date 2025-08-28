@@ -1,5 +1,37 @@
 # 集合论基础 - Lean4形式化实现 / Set Theory Foundation - Lean4 Formal Implementation
 
+## 目录
+
+- [集合论基础 - Lean4形式化实现 / Set Theory Foundation - Lean4 Formal Implementation](#集合论基础---lean4形式化实现--set-theory-foundation---lean4-formal-implementation)
+  - [目录](#目录)
+  - [📚 概述 / Overview](#-概述--overview)
+  - [🏗️ 1. 基础定义 / Basic Definitions](#️-1-基础定义--basic-definitions)
+    - [1.1 集合类型定义 / Set Type Definition](#11-集合类型定义--set-type-definition)
+    - [1.2 基本集合定义 / Basic Set Definitions](#12-基本集合定义--basic-set-definitions)
+  - [🔗 2. 集合运算 / Set Operations](#-2-集合运算--set-operations)
+    - [2.1 基本运算 / Basic Operations](#21-基本运算--basic-operations)
+    - [2.2 高级运算 / Advanced Operations](#22-高级运算--advanced-operations)
+  - [🔗 3. 集合关系 / Set Relations](#-3-集合关系--set-relations)
+    - [3.1 包含关系 / Inclusion Relations](#31-包含关系--inclusion-relations)
+    - [3.2 相等关系 / Equality Relations](#32-相等关系--equality-relations)
+  - [📐 4. 集合公理 / Set Axioms](#-4-集合公理--set-axioms)
+    - [4.1 ZFC公理实现 / ZFC Axiom Implementation](#41-zfc公理实现--zfc-axiom-implementation)
+    - [4.2 分离公理模式 / Axiom Schema of Separation](#42-分离公理模式--axiom-schema-of-separation)
+  - [🎯 5. 重要定理 / Important Theorems](#-5-重要定理--important-theorems)
+    - [5.1 德摩根律 / De Morgan's Laws](#51-德摩根律--de-morgans-laws)
+    - [5.2 分配律 / Distributive Laws](#52-分配律--distributive-laws)
+    - [5.3 吸收律 / Absorption Laws](#53-吸收律--absorption-laws)
+  - [🔄 6. 验证测试 / Verification Tests](#-6-验证测试--verification-tests)
+    - [6.1 编译测试 / Compilation Tests](#61-编译测试--compilation-tests)
+    - [6.2 证明验证 / Proof Verification](#62-证明验证--proof-verification)
+  - [📊 7. 性能测试 / Performance Tests](#-7-性能测试--performance-tests)
+    - [7.1 计算性能 / Computational Performance](#71-计算性能--computational-performance)
+  - [📚 8. 应用实例 / Application Examples](#-8-应用实例--application-examples)
+    - [8.1 实际问题解决 / Real Problem Solving](#81-实际问题解决--real-problem-solving)
+  - [📋 9. 总结 / Summary](#-9-总结--summary)
+    - [9.1 实现成果 / Implementation Achievements](#91-实现成果--implementation-achievements)
+    - [9.2 质量保证 / Quality Assurance](#92-质量保证--quality-assurance)
+
 ## 📚 概述 / Overview
 
 本文档提供了集合论基础的完整Lean4形式化实现，包括集合的基本概念、运算、关系和公理系统的机器可验证证明。
