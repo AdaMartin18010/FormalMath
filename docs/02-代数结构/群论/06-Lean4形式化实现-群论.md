@@ -2,28 +2,58 @@
 
 ## 目录 / Table of Contents
 
-- [Lean4形式化实现-群论](#lean4形式化实现-群论)
-  - [目录](#目录)
+- [Lean4形式化实现-群论 / Lean4 Formalization of Group Theory](#lean4形式化实现-群论--lean4-formalization-of-group-theory)
+  - [目录 / Table of Contents](#目录--table-of-contents)
   - [概述](#概述)
+    - [核心目标](#核心目标)
+    - [技术特色](#技术特色)
+    - [主要内容](#主要内容)
   - [6.1 群论基础形式化](#61-群论基础形式化)
     - [6.1.1 群的定义](#611-群的定义)
+      - [群的基本定义](#群的基本定义)
+      - [群元素的幂](#群元素的幂)
     - [6.1.2 子群与陪集](#612-子群与陪集)
+      - [子群定义](#子群定义)
+      - [陪集定义](#陪集定义)
     - [6.1.3 同态与同构](#613-同态与同构)
+      - [群同态](#群同态)
+      - [群同构](#群同构)
   - [6.2 群论定理证明](#62-群论定理证明)
     - [6.2.1 拉格朗日定理](#621-拉格朗日定理)
+      - [拉格朗日定理](#拉格朗日定理)
     - [6.2.2 同态基本定理](#622-同态基本定理)
+      - [同态基本定理](#同态基本定理)
     - [6.2.3 西罗定理](#623-西罗定理)
+      - [西罗定理](#西罗定理)
   - [6.3 群论算法实现](#63-群论算法实现)
     - [6.3.1 群元素生成](#631-群元素生成)
+      - [群元素生成算法](#群元素生成算法)
     - [6.3.2 子群判定](#632-子群判定)
+      - [子群判定算法](#子群判定算法)
     - [6.3.3 群同构判定](#633-群同构判定)
+      - [群同构判定算法](#群同构判定算法)
   - [6.4 高级群论](#64-高级群论)
     - [6.4.1 表示论](#641-表示论)
+      - [群表示](#群表示)
     - [6.4.2 特征标理论](#642-特征标理论)
+      - [特征标](#特征标)
     - [6.4.3 有限群分类](#643-有限群分类)
+      - [有限群分类](#有限群分类)
   - [6.5 应用案例](#65-应用案例)
+    - [案例1：对称群的形式化](#案例1对称群的形式化)
+    - [案例2：循环群的形式化](#案例2循环群的形式化)
+    - [案例3：四元数群的形式化](#案例3四元数群的形式化)
   - [6.6 总结与展望](#66-总结与展望)
+    - [主要成就](#主要成就)
+    - [技术特色1](#技术特色1)
+    - [前沿发展](#前沿发展)
+    - [未来方向](#未来方向)
   - [参考文献](#参考文献)
+    - [Lean4相关](#lean4相关)
+    - [群论教材](#群论教材)
+    - [形式化数学](#形式化数学)
+    - [中文教材](#中文教材)
+    - [现代发展](#现代发展)
 
 ## 概述
 
@@ -699,7 +729,7 @@ theorem quaternion_group_non_abelian :
 3. **算法实现**: 实现了群论中的关键算法
 4. **验证正确性**: 确保了所有实现的正确性
 
-### 技术特色
+### 技术特色1
 
 1. **形式化验证**: 严格的数学证明
 2. **类型安全**: Lean4的类型系统保证安全性
@@ -725,21 +755,26 @@ theorem quaternion_group_non_abelian :
 ## 参考文献
 
 ### Lean4相关
-1. The Lean 4 Theorem Prover. https://leanprover.github.io/
-2. Mathematics in Lean. https://leanprover-community.github.io/mathematics_in_lean/
+
+1. The Lean 4 Theorem Prover. <https://leanprover.github.io/>
+2. Mathematics in Lean. <https://leanprover-community.github.io/mathematics_in_lean/>
 
 ### 群论教材
+
 1. Dummit, D. S., & Foote, R. M. (2004). Abstract Algebra. Wiley.
 2. Rotman, J. J. (1995). An Introduction to the Theory of Groups. Springer.
 
 ### 形式化数学
+
 1. Avigad, J., et al. (2015). The Lean Theorem Prover. CADE.
 2. de Moura, L., & Kong, S. (2019). The Lean 4 Theorem Prover. CADE.
 
 ### 中文教材
+
 1. 张禾瑞. (2007). 近世代数基础. 高等教育出版社.
 2. 丘维声. (2003). 抽象代数基础. 高等教育出版社.
 
 ### 现代发展
+
 1. Gonthier, G., et al. (2013). A Machine-Checked Proof of the Odd Order Theorem. ITP.
 2. Hales, T., et al. (2017). A Formal Proof of the Kepler Conjecture. Forum of Mathematics.
