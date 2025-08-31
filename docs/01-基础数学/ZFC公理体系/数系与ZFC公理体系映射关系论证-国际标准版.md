@@ -1,5 +1,44 @@
 # 数系与ZFC公理体系映射关系论证 - 国际标准版
 
+## 目录
+
+- [数系与ZFC公理体系映射关系论证 - 国际标准版](#数系与zfc公理体系映射关系论证---国际标准版)
+  - [目录](#目录)
+  - [Number Systems and ZFC Axiom System Mapping Relationship Argumentation - International Standard Version](#number-systems-and-zfc-axiom-system-mapping-relationship-argumentation---international-standard-version)
+  - [📚 概述 / Overview](#-概述--overview)
+  - [🏗️ 1. ZFC公理体系基础 / ZFC Axiom System Foundation](#️-1-zfc公理体系基础--zfc-axiom-system-foundation)
+    - [1.1 ZFC公理系统 / ZFC Axiom System](#11-zfc公理系统--zfc-axiom-system)
+    - [1.2 集合论基本概念 / Basic Set Theory Concepts](#12-集合论基本概念--basic-set-theory-concepts)
+  - [🎯 2. 自然数系统构造 / Natural Number System Construction](#-2-自然数系统构造--natural-number-system-construction)
+    - [2.1 冯·诺伊曼序数构造 / Von Neumann Ordinal Construction](#21-冯诺伊曼序数构造--von-neumann-ordinal-construction)
+    - [2.2 皮亚诺公理验证 / Peano Axioms Verification](#22-皮亚诺公理验证--peano-axioms-verification)
+  - [🔗 3. 整数系统构造 / Integer System Construction](#-3-整数系统构造--integer-system-construction)
+    - [3.1 整数作为等价类 / Integers as Equivalence Classes](#31-整数作为等价类--integers-as-equivalence-classes)
+    - [3.2 整数运算定义 / Integer Operation Definitions](#32-整数运算定义--integer-operation-definitions)
+  - [📊 4. 有理数系统构造 / Rational Number System Construction](#-4-有理数系统构造--rational-number-system-construction)
+    - [4.1 有理数作为等价类 / Rational Numbers as Equivalence Classes](#41-有理数作为等价类--rational-numbers-as-equivalence-classes)
+    - [4.2 有理数运算定义 / Rational Number Operation Definitions](#42-有理数运算定义--rational-number-operation-definitions)
+  - [🔬 5. 实数系统构造 / Real Number System Construction](#-5-实数系统构造--real-number-system-construction)
+    - [5.1 戴德金分割构造 / Dedekind Cut Construction](#51-戴德金分割构造--dedekind-cut-construction)
+    - [5.2 实数运算定义 / Real Number Operation Definitions](#52-实数运算定义--real-number-operation-definitions)
+  - [🎯 6. 复数系统构造 / Complex Number System Construction](#-6-复数系统构造--complex-number-system-construction)
+    - [6.1 复数作为有序对 / Complex Numbers as Ordered Pairs](#61-复数作为有序对--complex-numbers-as-ordered-pairs)
+    - [6.2 复数运算定义 / Complex Number Operation Definitions](#62-复数运算定义--complex-number-operation-definitions)
+  - [🔬 7. 国际标准对比分析 / International Standard Comparison Analysis](#-7-国际标准对比分析--international-standard-comparison-analysis)
+    - [7.1 与Wikipedia 2024标准对比 / Comparison with Wikipedia 2024 Standards](#71-与wikipedia-2024标准对比--comparison-with-wikipedia-2024-standards)
+    - [7.2 与国际大学标准对比 / Comparison with International University Standards](#72-与国际大学标准对比--comparison-with-international-university-standards)
+    - [7.3 形式化证明对比 / Formal Proof Comparison](#73-形式化证明对比--formal-proof-comparison)
+  - [📊 8. 映射关系总结 / Mapping Relationship Summary](#-8-映射关系总结--mapping-relationship-summary)
+    - [8.1 构造层次关系 / Construction Hierarchy](#81-构造层次关系--construction-hierarchy)
+    - [8.2 公理依赖关系 / Axiom Dependency Relationship](#82-公理依赖关系--axiom-dependency-relationship)
+    - [8.3 代数结构关系 / Algebraic Structure Relationship](#83-代数结构关系--algebraic-structure-relationship)
+  - [📚 参考文献 / References](#-参考文献--references)
+    - [8.1 国际标准文献 / International Standard Literature](#81-国际标准文献--international-standard-literature)
+    - [8.2 国际大学标准 / International University Standards](#82-国际大学标准--international-university-standards)
+    - [8.3 经典数学文献 / Classical Mathematical Literature](#83-经典数学文献--classical-mathematical-literature)
+    - [8.4 形式化数学文献 / Formal Mathematics Literature](#84-形式化数学文献--formal-mathematics-literature)
+  - [🔗 相关链接 / Related Links](#-相关链接--related-links)
+
 ## Number Systems and ZFC Axiom System Mapping Relationship Argumentation - International Standard Version
 
 ## 📚 概述 / Overview
