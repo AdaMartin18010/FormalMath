@@ -154,8 +154,8 @@ def von_neumann_successor (n : Set) : Set :=
 -- 自然数集合
 -- Set of natural numbers
 def natural_numbers : Set :=
-  {n : Set | ∃ f : ℕ → Set, 
-   f 0 = von_neumann_zero ∧ 
+  {n : Set | ∃ f : ℕ → Set,
+   f 0 = von_neumann_zero ∧
    (∀ k : ℕ, f (k + 1) = von_neumann_successor (f k)) ∧
    n ∈ range f}
 
@@ -192,11 +192,11 @@ theorem peano_axioms_von_neumann :
   von_neumann_zero ∈ natural_numbers ∧
   -- P2: 后继函数
   -- P2: Successor function
-  (∀ n : Set, n ∈ natural_numbers → 
+  (∀ n : Set, n ∈ natural_numbers →
    von_neumann_successor n ∈ natural_numbers) ∧
   -- P3: 0 不是后继
   -- P3: 0 is not a successor
-  (∀ n : Set, n ∈ natural_numbers → 
+  (∀ n : Set, n ∈ natural_numbers →
    von_neumann_successor n ≠ von_neumann_zero) ∧
   -- P4: 后继函数是单射
   -- P4: Successor function is injective
@@ -204,8 +204,8 @@ theorem peano_axioms_von_neumann :
    von_neumann_successor m = von_neumann_successor n → m = n) ∧
   -- P5: 数学归纳原理
   -- P5: Mathematical induction principle
-  (∀ P : Set → Prop, 
-   P von_neumann_zero → 
+  (∀ P : Set → Prop,
+   P von_neumann_zero →
    (∀ n : Set, n ∈ natural_numbers → P n → P (von_neumann_successor n)) →
    ∀ n : Set, n ∈ natural_numbers → P n) :=
 begin
@@ -279,7 +279,7 @@ $(a,b) \sim (c,d) \leftrightarrow a + d = b + c$
 -- 整数等价关系
 -- Integer equivalence relation
 def integer_equivalence : Relation (Set × Set) :=
-  {x : (Set × Set) × (Set × Set) | 
+  {x : (Set × Set) × (Set × Set) |
    x.1.1 ∈ natural_numbers ∧ x.1.2 ∈ natural_numbers ∧
    x.2.1 ∈ natural_numbers ∧ x.2.2 ∈ natural_numbers ∧
    natural_addition x.1.1 x.2.2 = natural_addition x.1.2 x.2.1}
@@ -340,20 +340,20 @@ $[(a,b)] \cdot [(c,d)] = [(ac+bd, ad+bc)]$
 -- 整数加法
 -- Integer addition
 def integer_addition : integers → integers → integers :=
-  λ x y, quotient.lift_on₂ x y 
-    (λ a b, quotient.mk (ordered_pair 
-      (natural_addition a.1 b.1) 
+  λ x y, quotient.lift_on₂ x y
+    (λ a b, quotient.mk (ordered_pair
+      (natural_addition a.1 b.1)
       (natural_addition a.2 b.2)))
     (λ a1 a2 b1 b2 ha hb, _)
 
 -- 整数乘法
 -- Integer multiplication
 def integer_multiplication : integers → integers → integers :=
-  λ x y, quotient.lift_on₂ x y 
-    (λ a b, quotient.mk (ordered_pair 
-      (natural_addition (natural_multiplication a.1 b.1) 
+  λ x y, quotient.lift_on₂ x y
+    (λ a b, quotient.mk (ordered_pair
+      (natural_addition (natural_multiplication a.1 b.1)
                        (natural_multiplication a.2 b.2))
-      (natural_addition (natural_multiplication a.1 b.2) 
+      (natural_addition (natural_multiplication a.1 b.2)
                        (natural_multiplication a.2 b.1))))
     (λ a1 a2 b1 b2 ha hb, _)
 ```
@@ -379,7 +379,7 @@ $(a,b) \sim (c,d) \leftrightarrow a \cdot d = b \cdot c$
 -- 有理数等价关系
 -- Rational number equivalence relation
 def rational_equivalence : Relation (Set × Set) :=
-  {x : (Set × Set) × (Set × Set) | 
+  {x : (Set × Set) × (Set × Set) |
    x.1.1 ∈ integers ∧ x.1.2 ∈ integers ∧ x.1.2 ≠ integer_zero ∧
    x.2.1 ∈ integers ∧ x.2.2 ∈ integers ∧ x.2.2 ≠ integer_zero ∧
    integer_multiplication x.1.1 x.2.2 = integer_multiplication x.1.2 x.2.1}
@@ -440,9 +440,9 @@ $[(a,b)] \cdot [(c,d)] = [(ac, bd)]$
 -- 有理数加法
 -- Rational number addition
 def rational_addition : rational_numbers → rational_numbers → rational_numbers :=
-  λ x y, quotient.lift_on₂ x y 
-    (λ a b, quotient.mk (ordered_pair 
-      (integer_addition (integer_multiplication a.1 b.2) 
+  λ x y, quotient.lift_on₂ x y
+    (λ a b, quotient.mk (ordered_pair
+      (integer_addition (integer_multiplication a.1 b.2)
                        (integer_multiplication a.2 b.1))
       (integer_multiplication a.2 b.2)))
     (λ a1 a2 b1 b2 ha hb, _)
@@ -450,8 +450,8 @@ def rational_addition : rational_numbers → rational_numbers → rational_numbe
 -- 有理数乘法
 -- Rational number multiplication
 def rational_multiplication : rational_numbers → rational_numbers → rational_numbers :=
-  λ x y, quotient.lift_on₂ x y 
-    (λ a b, quotient.mk (ordered_pair 
+  λ x y, quotient.lift_on₂ x y
+    (λ a b, quotient.mk (ordered_pair
       (integer_multiplication a.1 b.1)
       (integer_multiplication a.2 b.2)))
     (λ a1 a2 b1 b2 ha hb, _)
@@ -569,13 +569,13 @@ $\mathbb{C} = \mathbb{R} \times \mathbb{R}$
 -- 复数集合
 -- Set of complex numbers
 def complex_numbers : Set :=
-  {x : Set | ∃ a b, a ∈ real_numbers ∧ b ∈ real_numbers ∧ 
+  {x : Set | ∃ a b, a ∈ real_numbers ∧ b ∈ real_numbers ∧
    x = ordered_pair a b}
 
 -- 复数的基本性质
 -- Basic properties of complex numbers
 theorem complex_numbers_well_defined :
-  ∀ x : Set, x ∈ complex_numbers ↔ 
+  ∀ x : Set, x ∈ complex_numbers ↔
   ∃ a b, a ∈ real_numbers ∧ b ∈ real_numbers ∧ x = ordered_pair a b :=
 begin
   intro x,
@@ -609,14 +609,14 @@ $(a,b) \cdot (c,d) = (ac-bd, ad+bc)$
 -- 复数加法
 -- Complex number addition
 def complex_addition : complex_numbers → complex_numbers → complex_numbers :=
-  λ x y, ordered_pair 
+  λ x y, ordered_pair
     (real_addition (ordered_pair_first x) (ordered_pair_first y))
     (real_addition (ordered_pair_second x) (ordered_pair_second y))
 
 -- 复数乘法
 -- Complex number multiplication
 def complex_multiplication : complex_numbers → complex_numbers → complex_numbers :=
-  λ x y, ordered_pair 
+  λ x y, ordered_pair
     (real_subtraction (real_multiplication (ordered_pair_first x) (ordered_pair_first y))
                      (real_multiplication (ordered_pair_second x) (ordered_pair_second y)))
     (real_addition (real_multiplication (ordered_pair_first x) (ordered_pair_second y))
@@ -793,7 +793,7 @@ ZFC公理体系
 
 ---
 
-**文档版本** / **Document Version**: 1.0  
-**最后更新** / **Last Updated**: 2024年8月  
-**维护者** / **Maintainer**: FormalMath项目组  
+**文档版本** / **Document Version**: 1.0
+**最后更新** / **Last Updated**: 2024年8月
+**维护者** / **Maintainer**: FormalMath项目组
 **许可证** / **License**: MIT License

@@ -404,6 +404,6 @@ Dieses Dokument kombiniert internationale mathematische Standards und berühmte 
 
 ---
 
-**文档状态** / **Document status** / **Statut du document** / **Dokumentstatus**: 抽象代数结构构造完成 / Abstract algebraic structure construction completed / Construction des structures algébriques abstraites terminée / Abstrakte algebraische Strukturkonsruktion abgeschlossen  
-**形式化程度** / **Formalization degree** / **Degré de formalisation** / **Formalisierungsgrad**: 100% 形式化 / 100% formalized / 100% formalisé / 100% formalisiert  
+**文档状态** / **Document status** / **Statut du document** / **Dokumentstatus**: 抽象代数结构构造完成 / Abstract algebraic structure construction completed / Construction des structures algébriques abstraites terminée / Abstrakte algebraische Strukturkonsruktion abgeschlossen
+**形式化程度** / **Formalization degree** / **Degré de formalisation** / **Formalisierungsgrad**: 100% 形式化 / 100% formalized / 100% formalisé / 100% formalisiert
 **语言覆盖** / **Language coverage** / **Couverture linguistique** / **Sprachabdeckung**: 中英法德四语言 / Chinese, English, French, German / Chinois, anglais, français, allemand / Chinesisch, Englisch, Französisch, Deutsch

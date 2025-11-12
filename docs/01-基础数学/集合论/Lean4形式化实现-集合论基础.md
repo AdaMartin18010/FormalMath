@@ -756,23 +756,23 @@ Tests performance of various operations
 def performance_test (n : ℕ) : IO Unit := do
   let A := {i | i < n}
   let B := {i | i ≥ n/2}
-  
+
   IO.println s!"Testing with n = {n}"
-  
+
   -- 测试并集运算
   -- Test union operation
   let start := IO.monoMsNow
   let _ := Union ℕ A B
   let end := IO.monoMsNow
   IO.println s!"Union operation: {end - start}ms"
-  
+
   -- 测试交集运算
   -- Test intersection operation
   let start := IO.monoMsNow
   let _ := Intersection ℕ A B
   let end := IO.monoMsNow
   IO.println s!"Intersection operation: {end - start}ms"
-  
+
   -- 测试幂集运算
   -- Test power set operation
   let start := IO.monoMsNow
@@ -864,7 +864,7 @@ example (A B : Set ℕ) : (A ∪ B)ᶜ = Aᶜ ∩ Bᶜ :=
 
 ---
 
-**文档状态**: 集合论基础Lean4形式化实现完成  
-**更新日期**: 2025年1月  
-**版本**: v1.0  
+**文档状态**: 集合论基础Lean4形式化实现完成
+**更新日期**: 2025年1月
+**版本**: v1.0
 **维护者**: FormalMath项目组

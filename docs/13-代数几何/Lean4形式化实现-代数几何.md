@@ -59,7 +59,7 @@ def dimension (V : AffineVariety k n) : ℕ :=
 -- 代数簇的不可约性
 -- Irreducibility of algebraic variety
 class IrreducibleVariety (V : AffineVariety k n) where
-  irreducible : ∀ (U₁ U₂ : Set (AffineVariety k n)), 
+  irreducible : ∀ (U₁ U₂ : Set (AffineVariety k n)),
     V.points = U₁ ∪ U₂ → U₁ = V.points ∨ U₂ = V.points
 ```
 
@@ -127,7 +127,7 @@ structure SchemeMorphism (X Y : Scheme) where
   continuous_map : X.underlying_space → Y.underlying_space
   sheaf_morphism : SheafMorphism Y.structure_sheaf X.structure_sheaf
   compatibility : ∀ U : OpenSet Y.underlying_space,
-    sheaf_morphism U ∘ Y.structure_sheaf.restriction U = 
+    sheaf_morphism U ∘ Y.structure_sheaf.restriction U =
     X.structure_sheaf.restriction (continuous_map ⁻¹' U) ∘ sheaf_morphism U
 ```
 
@@ -179,14 +179,14 @@ def SheafCohomology (X : TopologicalSpace) (ℱ : Sheaf X (Module R)) (i : ℕ) 
 
 -- Čech上同调
 -- Čech cohomology
-def CechCohomology (X : TopologicalSpace) (ℱ : Sheaf X (Module R)) 
+def CechCohomology (X : TopologicalSpace) (ℱ : Sheaf X (Module R))
   (𝒰 : OpenCover X) (i : ℕ) : Type :=
   homology (CechComplex 𝒰 ℱ) i
 
 -- 凝聚层
 -- Coherent sheaf
 class CoherentSheaf (X : Scheme) (ℱ : Sheaf X (Module R)) where
-  finite_type : ∀ U : OpenSet X.underlying_space, 
+  finite_type : ∀ U : OpenSet X.underlying_space,
     FiniteType (ℱ.sections U)
   finite_presentation : ∀ U : OpenSet X.underlying_space,
     ∃ (n m : ℕ) (φ : ModuleHom R (FreeModule R n) (FreeModule R m)),
@@ -203,7 +203,7 @@ def H^i (X : Scheme) (ℱ : Sheaf X (Module R)) (i : ℕ) : Type :=
 
 -- Serre对偶
 -- Serre duality
-theorem serre_duality (X : ProjectiveScheme) (ℱ : Sheaf X (Module R)) 
+theorem serre_duality (X : ProjectiveScheme) (ℱ : Sheaf X (Module R))
   [CoherentSheaf X ℱ] (n : ℕ) :
   H^n(X, ℱ) ≅ H^(dim X - n)(X, ℱ^∨ ⊗ ω_X)^∨ := sorry
 
@@ -259,7 +259,7 @@ def self_intersection (X : Scheme) (D : Divisor X) : ℤ :=
 -- 相交数的双线性性
 -- Bilinearity of intersection numbers
 theorem intersection_bilinearity (X : Scheme) (D₁ D₂ D₃ : Divisor X) :
-  intersection_number X (D₁ + D₂) D₃ = 
+  intersection_number X (D₁ + D₂) D₃ =
   intersection_number X D₁ D₃ + intersection_number X D₂ D₃ := sorry
 
 -- 相交数的对称性
@@ -270,7 +270,7 @@ theorem intersection_symmetry (X : Scheme) (D₁ D₂ : Divisor X) :
 -- 贝祖定理
 -- Bézout's theorem
 theorem bezout_theorem (C₁ C₂ : AlgebraicCurve k) :
-  intersection_number C₁.variety C₂.variety = 
+  intersection_number C₁.variety C₂.variety =
   degree C₁ * degree C₂ := sorry
 ```
 

@@ -222,7 +222,7 @@ theorem ordinal_add_assoc (α β γ : Ordinal) :
   (α.add β).add γ = α.add (β.add γ) := by
   induction γ with
   | zero => simp [Ordinal.add]
-  | succ γ ih => 
+  | succ γ ih =>
     simp [Ordinal.add]
     rw [ih]
   | limit f ih =>
@@ -290,7 +290,7 @@ theorem cardinal_pow_property (κ : Cardinal) (h : κ.le (finiteCardinal 2)) :
 axiom continuum_hypothesis : continuum = aleph0.pow (finiteCardinal 1)
 
 -- 广义连续统假设
-axiom generalized_continuum_hypothesis : 
+axiom generalized_continuum_hypothesis :
   ∀ κ : Cardinal, κ.pow (finiteCardinal 2) = κ.succ
 ```
 
@@ -302,7 +302,7 @@ theorem ordinal_well_ordered (α : Ordinal) :
   WellFounded (λ x y : α => x.lt y) := by
   -- 通过结构归纳证明
   induction α with
-  | zero => 
+  | zero =>
     constructor
     intro x
     cases x
@@ -324,7 +324,7 @@ theorem ordinal_well_ordered (α : Ordinal) :
 theorem ordinal_add_assoc_complete (α β γ : Ordinal) :
   (α.add β).add γ = α.add (β.add γ) := by
   induction γ with
-  | zero => 
+  | zero =>
     simp [Ordinal.add]
   | succ γ ih =>
     simp [Ordinal.add]
@@ -399,8 +399,8 @@ def isInaccessible (κ : Cardinal) : Prop :=
 
 -- 马洛基数
 def isMahlo (κ : Cardinal) : Prop :=
-  isInaccessible κ ∧ 
-  ∀ C : Set Cardinal, IsClosedUnbounded C κ → 
+  isInaccessible κ ∧
+  ∀ C : Set Cardinal, IsClosedUnbounded C κ →
   ∃ λ ∈ C, isInaccessible λ
 
 -- 弱紧致基数
@@ -414,8 +414,8 @@ theorem inaccessible_properties (κ : Cardinal) (h : isInaccessible κ) :
   exact h
 
 theorem mahlo_properties (κ : Cardinal) (h : isMahlo κ) :
-  isInaccessible κ ∧ 
-  ∀ C : Set Cardinal, IsClosedUnbounded C κ → 
+  isInaccessible κ ∧
+  ∀ C : Set Cardinal, IsClosedUnbounded C κ →
   ∃ λ ∈ C, isInaccessible λ := by
   exact h
 
@@ -470,13 +470,13 @@ def recursiveComplexity (α : Ordinal) : Ordinal :=
 
 -- 程序终止性
 theorem program_termination (state : ProgramState) :
-  state.depth = 0 ∨ 
-  ∃ state' : ProgramState, 
-    state'.depth < state.depth ∧ 
+  state.depth = 0 ∨
+  ∃ state' : ProgramState,
+    state'.depth < state.depth ∧
     state'.complexity.lt state.complexity := by
   cases state.depth with
   | zero => left; rfl
-  | succ n => 
+  | succ n =>
     right
     exists ⟨n, recursiveComplexity state.complexity⟩
     constructor
@@ -498,13 +498,13 @@ def modelCardinality {α : Type u} (M : Model α) : Cardinal :=
 
 -- 模型乘积
 def modelProduct {α β : Type u} (M : Model α) (N : Model β) : Model (α × β) :=
-  ⟨M.universe ×ˢ N.universe, 
+  ⟨M.universe ×ˢ N.universe,
    M.relations.map (λ (r, s) => (r, s.map (λ l => l.map Prod.fst))) ++
    N.relations.map (λ (r, s) => (r, s.map (λ l => l.map Prod.snd)))⟩
 
 -- 模型基数定理
 theorem model_cardinality_product {α β : Type u} (M : Model α) (N : Model β) :
-  modelCardinality (modelProduct M N) = 
+  modelCardinality (modelProduct M N) =
   (modelCardinality M).mul (modelCardinality N) := by
   simp [modelCardinality, modelProduct, Cardinal.mul]
   apply Cardinal.eq.mpr

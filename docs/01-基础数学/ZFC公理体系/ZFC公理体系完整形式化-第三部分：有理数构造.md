@@ -431,8 +431,8 @@ $\phi$ 是单射，且保持运算和序关系。
 
 ---
 
-**文档状态**: 有理数构造完成（已添加Lean4形式化实现）  
-**下一部分**: 实数构造  
+**文档状态**: 有理数构造完成（已添加Lean4形式化实现）
+**下一部分**: 实数构造
 **形式化程度**: 完整形式化证明 + Lean4代码实现
 
 ## 💻 Lean4形式化实现 / Lean4 Formal Implementation
@@ -528,7 +528,7 @@ namespace Rational
 -- 加法运算
 -- Addition operation
 def add : Rational → Rational → Rational :=
-  Quotient.lift₂ (λ (a, b) (c, d) => Rational.mk (a * d + c * b) (b * d) (by simp [ne_zero])) 
+  Quotient.lift₂ (λ (a, b) (c, d) => Rational.mk (a * d + c * b) (b * d) (by simp [ne_zero]))
     (by
       intros a b c d h1 h2,
       apply Quotient.sound,

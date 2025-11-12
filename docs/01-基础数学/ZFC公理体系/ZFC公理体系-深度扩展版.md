@@ -94,7 +94,7 @@ structure ForcingPartialOrder where
   carrier : Type
   order : carrier → carrier → Prop
   -- 满足反链条件
-  antichain_condition : ∀ (A : Set carrier), 
+  antichain_condition : ∀ (A : Set carrier),
     IsAntichain A → A.Countable
 ```
 
@@ -214,51 +214,51 @@ Defines all axioms of ZFC
 
 -- 外延公理
 -- Axiom of Extensionality
-axiom extensionality : 
+axiom extensionality :
   ∀ (x y : Set α), (∀ z, z ∈ x ↔ z ∈ y) → x = y
 
 -- 空集公理
 -- Axiom of Empty Set
-axiom empty_set : 
+axiom empty_set :
   ∃ x : Set α, ∀ y, y ∉ x
 
 -- 配对公理
 -- Axiom of Pairing
-axiom pairing : 
+axiom pairing :
   ∀ (x y : Set α), ∃ z, ∀ w, w ∈ z ↔ w = x ∨ w = y
 
 -- 并集公理
 -- Axiom of Union
-axiom union : 
+axiom union :
   ∀ (F : Set (Set α)), ∃ A, ∀ x, x ∈ A ↔ ∃ B ∈ F, x ∈ B
 
 -- 幂集公理
 -- Axiom of Power Set
-axiom power_set : 
+axiom power_set :
   ∀ (x : Set α), ∃ y, ∀ z, z ∈ y ↔ z ⊆ x
 
 -- 无穷公理
 -- Axiom of Infinity
-axiom infinity : 
+axiom infinity :
   ∃ x, ∅ ∈ x ∧ ∀ y, y ∈ x → y ∪ {y} ∈ x
 
 -- 替换公理模式
 -- Axiom Schema of Replacement
 axiom replacement {φ : α → α → Prop} :
-  ∀ A, (∀ x ∈ A, ∃! y, φ x y) → 
+  ∀ A, (∀ x ∈ A, ∃! y, φ x y) →
        ∃ B, ∀ y, y ∈ B ↔ ∃ x ∈ A, φ x y
 
 -- 正则公理
 -- Axiom of Regularity
-axiom regularity : 
+axiom regularity :
   ∀ x, x ≠ ∅ → ∃ y ∈ x, y ∩ x = ∅
 
 -- 选择公理
 -- Axiom of Choice
-axiom choice : 
-  ∀ (F : Set (Set α)), 
-    (∀ A B ∈ F, A ≠ B → A ∩ B = ∅) → 
-    (∅ ∉ F) → 
+axiom choice :
+  ∀ (F : Set (Set α)),
+    (∀ A B ∈ F, A ≠ B → A ∩ B = ∅) →
+    (∅ ∉ F) →
     ∃ C, ∀ A ∈ F, |A ∩ C| = 1
 ```
 
@@ -271,7 +271,7 @@ axiom choice :
 -- 不可达基数
 -- Inaccessible cardinal
 def Inaccessible (κ : Cardinal) : Prop :=
-  κ.Regular ∧ 
+  κ.Regular ∧
   (∀ λ < κ, 2^λ < κ) ∧
   κ > ℵ₀
 
@@ -279,25 +279,25 @@ def Inaccessible (κ : Cardinal) : Prop :=
 -- Mahlo cardinal
 def Mahlo (κ : Cardinal) : Prop :=
   κ.Regular ∧
-  (∀ C ⊆ κ, C.Unbounded ∧ C.Closed → 
+  (∀ C ⊆ κ, C.Unbounded ∧ C.Closed →
    ∃ λ ∈ C, Inaccessible λ)
 
 -- 弱紧致基数
 -- Weakly compact cardinal
 def WeaklyCompact (κ : Cardinal) : Prop :=
   κ.Regular ∧
-  (∀ B : BooleanAlgebra, B.κ_complete → 
+  (∀ B : BooleanAlgebra, B.κ_complete →
    ∃ U : Ultrafilter B, U.κ_complete)
 
 -- 大基数公理
 -- Large cardinal axioms
-axiom inaccessible_cardinal : 
+axiom inaccessible_cardinal :
   ∃ κ, Inaccessible κ
 
-axiom mahlo_cardinal : 
+axiom mahlo_cardinal :
   ∃ κ, Mahlo κ
 
-axiom weakly_compact_cardinal : 
+axiom weakly_compact_cardinal :
   ∃ κ, WeaklyCompact κ
 ```
 
@@ -313,7 +313,7 @@ structure ForcingPartialOrder where
   carrier : Type
   order : carrier → carrier → Prop
   bottom : carrier
-  antichain_condition : 
+  antichain_condition :
     ∀ (A : Set carrier), IsAntichain A → A.Countable
 
 -- 泛型滤子
@@ -344,7 +344,7 @@ def ForcingExtension (M : Model) (P : ForcingPartialOrder) : Model :=
 
 ```haskell
 -- 类型基数计算
-data TypeCardinal = 
+data TypeCardinal =
   UnitCardinal |
   BoolCardinal |
   NatCardinal |
@@ -372,14 +372,14 @@ typeCardinal (FunctionCardinal t1 t2) = powCardinal (typeCardinal t2) (typeCardi
 
 ```haskell
 -- 序数终止度量
-data TerminationMeasure = 
+data TerminationMeasure =
   Zero |
   Successor TerminationMeasure |
   Limit (TerminationMeasure -> TerminationMeasure)
 
 -- 程序复杂度分析
 analyzeComplexity :: Program -> TerminationMeasure
-analyzeComplexity (Loop body) = 
+analyzeComplexity (Loop body) =
   case analyzeComplexity body of
     Zero -> Successor Zero
     Successor n -> Successor (Successor n)
@@ -398,14 +398,14 @@ analyzeComplexity (Loop body) =
 
 ```haskell
 -- 模型基数分析
-data ModelCardinal = 
+data ModelCardinal =
   FiniteModel Int |
   CountableModel |
   UncountableModel Cardinal
 
 -- 模型大小分析
 modelSize :: Model -> ModelCardinal
-modelSize model = 
+modelSize model =
   case cardinality (universe model) of
     Finite n -> FiniteModel n
     Aleph 0 -> CountableModel
@@ -422,7 +422,7 @@ modelSize model =
 
 ```haskell
 -- 证明复杂度度量
-data ProofComplexity = 
+data ProofComplexity =
   AxiomComplexity |
   RuleComplexity ProofComplexity ProofComplexity |
   CutComplexity ProofComplexity Ordinal
@@ -430,9 +430,9 @@ data ProofComplexity =
 -- 证明复杂度分析
 analyzeProofComplexity :: Proof -> ProofComplexity
 analyzeProofComplexity (Axiom _) = AxiomComplexity
-analyzeProofComplexity (Rule p1 p2) = 
+analyzeProofComplexity (Rule p1 p2) =
   RuleComplexity (analyzeProofComplexity p1) (analyzeProofComplexity p2)
-analyzeProofComplexity (Cut p1 p2) = 
+analyzeProofComplexity (Cut p1 p2) =
   CutComplexity (analyzeProofComplexity p1) (ordinal p2)
 ```
 
@@ -448,14 +448,14 @@ analyzeProofComplexity (Cut p1 p2) =
 
 ```haskell
 -- 无限类型分析
-data InfinityType = 
+data InfinityType =
   PotentialInfinity |  -- 潜无限
   ActualInfinity Cardinal |  -- 实无限
   AbsoluteInfinity  -- 绝对无限
 
 -- 无限性分析
 analyzeInfinity :: MathematicalObject -> InfinityType
-analyzeInfinity obj = 
+analyzeInfinity obj =
   case cardinality obj of
     Finite _ -> error "Not infinite"
     Aleph 0 -> PotentialInfinity
@@ -472,7 +472,7 @@ analyzeInfinity obj =
 
 ```haskell
 -- 真值层次结构
-data TruthLevel = 
+data TruthLevel =
   GroundTruth |
   ReflectiveTruth Ordinal |
   AbsoluteTruth
@@ -496,14 +496,14 @@ analyzeTruthLevel (Absolute p) = AbsoluteTruth
 
 ```haskell
 -- 选择集基数分析
-data ChoiceSetCardinal = 
+data ChoiceSetCardinal =
   FiniteChoice Int |
   CountableChoice |
   UncountableChoice Cardinal
 
 -- 选择复杂度分析
 analyzeChoiceComplexity :: ChoiceSet -> ChoiceSetCardinal
-analyzeChoiceComplexity choices = 
+analyzeChoiceComplexity choices =
   case cardinality choices of
     Finite n -> FiniteChoice n
     Aleph 0 -> CountableChoice
@@ -520,7 +520,7 @@ analyzeChoiceComplexity choices =
 
 ```haskell
 -- 博弈复杂度度量
-data GameComplexity = 
+data GameComplexity =
   SimpleGame |
   ComplexGame Ordinal |
   InfiniteGame
@@ -544,14 +544,14 @@ analyzeGameComplexity (Infinite g) = InfiniteGame
 
 ```haskell
 -- 量子态空间基数分析
-data QuantumStateCardinal = 
+data QuantumStateCardinal =
   FiniteDimensional Int |
   CountableDimensional |
   UncountableDimensional Cardinal
 
 -- 量子系统分析
 analyzeQuantumSystem :: QuantumSystem -> QuantumStateCardinal
-analyzeQuantumSystem system = 
+analyzeQuantumSystem system =
   case dimension (stateSpace system) of
     Finite n -> FiniteDimensional n
     Aleph 0 -> CountableDimensional
@@ -568,14 +568,14 @@ analyzeQuantumSystem system =
 
 ```haskell
 -- 时空序数结构
-data SpacetimeOrdinal = 
+data SpacetimeOrdinal =
   CausalOrdinal Ordinal |
   TemporalOrdinal Ordinal |
   SpatialOrdinal Ordinal
 
 -- 时空结构分析
 analyzeSpacetimeStructure :: Spacetime -> SpacetimeOrdinal
-analyzeSpacetimeStructure spacetime = 
+analyzeSpacetimeStructure spacetime =
   CausalOrdinal (causalOrder spacetime)
 ```
 

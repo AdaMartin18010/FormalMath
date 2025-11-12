@@ -240,8 +240,8 @@ Dieses Dokument kombiniert internationale mathematische Standards und berühmte 
 
 ---
 
-**文档状态** / **Document status** / **Statut du document** / **Dokumentstatus**: 国际标准对照版完成 / International standard comparison version completed / Version de comparaison des standards internationaux terminée / Internationale Standardvergleichsversion abgeschlossen  
-**形式化程度** / **Formalization degree** / **Degré de formalisation** / **Formalisierungsgrad**: 100% 形式化 / 100% formalized / 100% formalisé / 100% formalisiert  
+**文档状态** / **Document status** / **Statut du document** / **Dokumentstatus**: 国际标准对照版完成 / International standard comparison version completed / Version de comparaison des standards internationaux terminée / Internationale Standardvergleichsversion abgeschlossen
+**形式化程度** / **Formalization degree** / **Degré de formalisation** / **Formalisierungsgrad**: 100% 形式化 / 100% formalized / 100% formalisé / 100% formalisiert
 **语言覆盖** / **Language coverage** / **Couverture linguistique** / **Sprachabdeckung**: 中英法德四语言 / Chinese, English, French, German / Chinois, anglais, français, allemand / Chinesisch, Englisch, Französisch, Deutsch
 
 ## 术语对照表 / Terminology Table

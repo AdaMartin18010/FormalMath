@@ -427,7 +427,7 @@ This is an important milestone, marking our significant achievements in the fiel
 
 ---
 
-**文档状态**: FormalMath项目100%完成最终确认报告完成  
-**更新日期**: 2025年1月  
-**版本**: v1.0  
+**文档状态**: FormalMath项目100%完成最终确认报告完成
+**更新日期**: 2025年1月
+**版本**: v1.0
 **维护者**: FormalMath项目组全体成员

@@ -527,7 +527,11 @@ structure InductiveSet where
 def NaturalNumbers : Set (Set α) :=
   -- 所有归纳集合的交集
   -- Intersection of all inductive sets
-  sorry
+  -- 由无穷公理，存在至少一个归纳集合
+  -- By infinity axiom, there exists at least one inductive set
+  -- 自然数集合是所有归纳集合的交集
+  -- Natural number set is the intersection of all inductive sets
+  {x : Set α | ∀ I : InductiveSet, x ∈ I.carrier}
 
 -- 分离公理模式
 -- Axiom Schema of Separation
@@ -720,9 +724,61 @@ begin
       simp [OrderedPair] at h8,
       cases h8 with h9 h10,
       { -- {a, b} = {c}
-        -- 这不可能，因为 {a, b} 有两个元素（如果 a ≠ b）
-        -- This is impossible if a ≠ b
-        sorry -- 需要处理 a = b 的情况
+        -- 如果 {a, b} = {c}，则 {a, b} 只有一个元素
+        -- If {a, b} = {c}, then {a, b} has only one element
+        -- 这意味着 a = b，所以 {a, b} = {a} = {c}
+        -- This means a = b, so {a, b} = {a} = {c}
+        -- 因此 a = c，且由于 a = b，我们有 b = c = a
+        -- Therefore a = c, and since a = b, we have b = c = a
+        -- 现在需要证明 d = a = b = c
+        -- Now need to prove d = a = b = c
+        -- 由于 OrderedPair a b = {{a}} 且 OrderedPair c d = {{c}, {c, d}}
+        -- Since OrderedPair a b = {{a}} and OrderedPair c d = {{c}, {c, d}}
+        -- 如果它们相等，则 {{c}, {c, d}} = {{a}} = {{c}}
+        -- If they are equal, then {{c}, {c, d}} = {{a}} = {{c}}
+        -- 这意味着 {c, d} = {c}，所以 d = c = a = b
+        -- This means {c, d} = {c}, so d = c = a = b
+        have h11 : a = b := by
+          -- 如果 {a, b} = {c}，则 a ∈ {c} 且 b ∈ {c}
+          -- If {a, b} = {c}, then a ∈ {c} and b ∈ {c}
+          have h12 : a ∈ {c} := by rw [← h9]; simp,
+          have h13 : b ∈ {c} := by rw [← h9]; simp,
+          simp at h12 h13,
+          rw [h12, h13]
+        -- 现在 a = b = c，需要证明 d = a
+        -- Now a = b = c, need to prove d = a
+        have h14 : OrderedPair a b = {{a}} := by
+          rw [h11],
+          simp [OrderedPair]
+        have h15 : OrderedPair c d = {{c}, {c, d}} := by simp [OrderedPair],
+        have h16 : {{a}} = {{c}, {c, d}} := by rw [← h14, ← h, h15],
+        -- 由于 {c} ∈ {{c}, {c, d}} 且 {{c}, {c, d}} = {{a}}
+        -- Since {c} ∈ {{c}, {c, d}} and {{c}, {c, d}} = {{a}}
+        have h17 : {c} ∈ {{a}} := by rw [← h16]; simp [OrderedPair],
+        simp at h17,
+        have h18 : {c} = {a} := h17,
+        -- 因此 c = a
+        -- Therefore c = a
+        have h19 : c = a := by
+          have h20 : c ∈ {a} := by rw [← h18]; simp,
+          simp at h20,
+          exact h20
+        -- 现在需要证明 {c, d} = {c}，即 d = c
+        -- Now need to prove {c, d} = {c}, i.e., d = c
+        have h21 : {c, d} ∈ {{a}} := by
+          rw [← h16],
+          simp [OrderedPair]
+        simp at h21,
+        have h22 : {c, d} = {a} := h21,
+        -- 因此 d ∈ {a}，所以 d = a
+        -- Therefore d ∈ {a}, so d = a
+        have h23 : d ∈ {a} := by rw [← h22]; simp,
+        simp at h23,
+        have h24 : d = a := h23,
+        -- 现在 a = b = c = d
+        -- Now a = b = c = d
+        rw [h19, h24] at h11,
+        exact ⟨h19, h24⟩
       },
       { -- {a, b} = {c, d}
         -- 由于 a = c，我们有 {c, b} = {c, d}
@@ -738,13 +794,34 @@ begin
           have h13 : a = b := by rw [h6, h11],
           -- 那么 {a, b} = {a} = {c}
           -- Then {a, b} = {a} = {c}
-          -- 但 OrderedPair a b = {{a}, {a}} = {{a}}
-          -- But OrderedPair a b = {{a}, {a}} = {{a}}
-          -- 而 OrderedPair c d = {{c}, {c, d}} = {{c}, {c, d}}
-          -- And OrderedPair c d = {{c}, {c, d}} = {{c}, {c, d}}
-          -- 如果它们相等，则 {c, d} = {c}，所以 d = c = a = b
-          -- If they are equal, then {c, d} = {c}, so d = c = a = b
-          sorry -- 需要更仔细的分析
+          -- 因此 OrderedPair a b = {{a}, {a}} = {{a}}
+          -- Therefore OrderedPair a b = {{a}, {a}} = {{a}}
+          have h14 : OrderedPair a b = {{a}} := by
+            rw [h13],
+            simp [OrderedPair]
+          -- 而 OrderedPair c d = {{c}, {c, d}} = {{a}, {a, d}}
+          -- And OrderedPair c d = {{c}, {c, d}} = {{a}, {a, d}}
+          have h15 : OrderedPair c d = {{a}, {a, d}} := by
+            rw [h6],
+            simp [OrderedPair]
+          -- 如果它们相等，则 {{a}} = {{a}, {a, d}}
+          -- If they are equal, then {{a}} = {{a}, {a, d}}
+          have h16 : {{a}} = {{a}, {a, d}} := by rw [← h14, ← h, h15],
+          -- 这意味着 {a, d} ∈ {{a}}，所以 {a, d} = {a}
+          -- This means {a, d} ∈ {{a}}, so {a, d} = {a}
+          have h17 : {a, d} ∈ {{a}} := by
+            rw [← h16],
+            simp
+          simp at h17,
+          have h18 : {a, d} = {a} := h17,
+          -- 因此 d ∈ {a}，所以 d = a
+          -- Therefore d ∈ {a}, so d = a
+          have h19 : d ∈ {a} := by rw [← h18]; simp,
+          simp at h19,
+          have h20 : d = a := h19,
+          -- 现在 a = b = c = d
+          -- Now a = b = c = d
+          exact ⟨h6, h20⟩
         },
         { -- b = d
           exact ⟨h6, h12⟩
@@ -755,7 +832,38 @@ begin
       -- Case 2: {a} = {c, d}
       -- 这意味着 {c, d} 只有一个元素，所以 c = d = a
       -- This means {c, d} has only one element, so c = d = a
-      sorry -- 需要处理这种情况
+      have h5 : c ∈ {a} := by rw [← h4]; simp,
+      have h6 : d ∈ {a} := by rw [← h4]; simp,
+      simp at h5 h6,
+      have h7 : c = a := h5,
+      have h8 : d = a := h6,
+      -- 因此 c = d = a
+      -- Therefore c = d = a
+      -- 现在需要证明 b = d = a
+      -- Now need to prove b = d = a
+      -- 由于 OrderedPair a b = {{a}, {a, b}} 且 OrderedPair c d = {{a}, {a}}
+      -- Since OrderedPair a b = {{a}, {a, b}} and OrderedPair c d = {{a}, {a}}
+      have h9 : OrderedPair c d = {{a}} := by
+        rw [h7, h8],
+        simp [OrderedPair]
+      have h10 : OrderedPair a b = {{a}, {a, b}} := by simp [OrderedPair],
+      have h11 : {{a}, {a, b}} = {{a}} := by rw [← h10, ← h, h9],
+      -- 这意味着 {a, b} ∈ {{a}}，所以 {a, b} = {a}
+      -- This means {a, b} ∈ {{a}}, so {a, b} = {a}
+      have h12 : {a, b} ∈ {{a}} := by
+        rw [← h11],
+        simp
+      simp at h12,
+      have h13 : {a, b} = {a} := h12,
+      -- 因此 b ∈ {a}，所以 b = a
+      -- Therefore b ∈ {a}, so b = a
+      have h14 : b ∈ {a} := by rw [← h13]; simp,
+      simp at h14,
+      have h15 : b = a := h14,
+      -- 现在 a = b = c = d
+      -- Now a = b = c = d
+      rw [h15] at h8,
+      exact ⟨h7, h8⟩
     }
   },
   { -- 从右到左：如果元素相等，则序对相等

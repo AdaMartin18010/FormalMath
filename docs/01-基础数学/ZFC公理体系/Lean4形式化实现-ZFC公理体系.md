@@ -129,7 +129,7 @@ Defines all axioms of ZFC
 
 -- 外延公理
 -- Axiom of Extensionality
-axiom extensionality : 
+axiom extensionality :
   ∀ (x y : Set α), (∀ z, z ∈ x ↔ z ∈ y) → x = y
 
 -- 外延公理的形式化证明
@@ -145,7 +145,7 @@ end
 
 -- 空集公理
 -- Axiom of Empty Set
-axiom empty_set : 
+axiom empty_set :
   ∃ x : Set α, ∀ y, y ∉ x
 
 -- 空集定义
@@ -164,7 +164,7 @@ end
 
 -- 配对公理
 -- Axiom of Pairing
-axiom pairing : 
+axiom pairing :
   ∀ (x y : Set α), ∃ z, ∀ w, w ∈ z ↔ w = x ∨ w = y
 
 -- 无序对定义
@@ -183,7 +183,7 @@ end
 
 -- 并集公理
 -- Axiom of Union
-axiom union : 
+axiom union :
   ∀ (F : Set (Set α)), ∃ A, ∀ x, x ∈ A ↔ ∃ B ∈ F, x ∈ B
 
 -- 并集定义
@@ -201,7 +201,7 @@ end
 
 -- 幂集公理
 -- Axiom of Power Set
-axiom power_set : 
+axiom power_set :
   ∀ (x : Set α), ∃ y, ∀ z, z ∈ y ↔ z ⊆ x
 
 -- 幂集定义
@@ -219,7 +219,7 @@ end
 
 -- 无穷公理
 -- Axiom of Infinity
-axiom infinity : 
+axiom infinity :
   ∃ x, ∅ ∈ x ∧ ∀ y, y ∈ x → y ∪ {y} ∈ x
 
 -- 归纳集定义
@@ -249,13 +249,13 @@ end
 -- 替换公理模式
 -- Axiom Schema of Replacement
 axiom replacement {φ : α → α → Prop} :
-  ∀ A, (∀ x ∈ A, ∃! y, φ x y) → 
+  ∀ A, (∀ x ∈ A, ∃! y, φ x y) →
        ∃ B, ∀ y, y ∈ B ↔ ∃ x ∈ A, φ x y
 
 -- 替换公理的应用
 -- Application of replacement axiom
 theorem replacement_application {φ : α → α → Prop} (A : Set α) :
-  (∀ x ∈ A, ∃! y, φ x y) → 
+  (∀ x ∈ A, ∃! y, φ x y) →
   ∃ B, ∀ y, y ∈ B ↔ ∃ x ∈ A, φ x y :=
 begin
   exact replacement
@@ -263,7 +263,7 @@ end
 
 -- 正则公理
 -- Axiom of Regularity
-axiom regularity : 
+axiom regularity :
   ∀ x, x ≠ ∅ → ∃ y ∈ x, y ∩ x = ∅
 
 -- 正则公理的等价形式
@@ -295,18 +295,18 @@ end
 
 -- 选择公理
 -- Axiom of Choice
-axiom choice : 
-  ∀ (F : Set (Set α)), 
-    (∀ A B ∈ F, A ≠ B → A ∩ B = ∅) → 
-    (∅ ∉ F) → 
+axiom choice :
+  ∀ (F : Set (Set α)),
+    (∀ A B ∈ F, A ≠ B → A ∩ B = ∅) →
+    (∅ ∉ F) →
     ∃ C, ∀ A ∈ F, |A ∩ C| = 1
 
 -- 选择公理的等价形式
 -- Equivalent forms of choice axiom
 theorem choice_equivalent :
-  (∀ (F : Set (Set α)), 
-     (∀ A B ∈ F, A ≠ B → A ∩ B = ∅) → 
-     (∅ ∉ F) → 
+  (∀ (F : Set (Set α)),
+     (∀ A B ∈ F, A ≠ B → A ∩ B = ∅) →
+     (∅ ∉ F) →
      ∃ C, ∀ A ∈ F, |A ∩ C| = 1) ↔
   (∀ (X : Set α), ∃ f : X → X, ∀ x, f x ∈ x) :=
 begin
@@ -372,7 +372,7 @@ end
 -- Mahlo cardinal
 def Mahlo (κ : Cardinal) : Prop :=
   Regular κ ∧
-  (∀ C ⊆ κ, C.Unbounded ∧ C.Closed → 
+  (∀ C ⊆ κ, C.Unbounded ∧ C.Closed →
    ∃ λ ∈ C, Inaccessible λ)
 
 -- 马洛基数性质证明
@@ -387,7 +387,7 @@ end
 -- Weakly compact cardinal
 def WeaklyCompact (κ : Cardinal) : Prop :=
   Regular κ ∧
-  (∀ B : BooleanAlgebra, B.κ_complete → 
+  (∀ B : BooleanAlgebra, B.κ_complete →
    ∃ U : Ultrafilter B, U.κ_complete)
 
 -- 弱紧致基数性质证明
@@ -414,17 +414,17 @@ Defines existence axioms for large cardinals
 
 -- 不可达基数公理
 -- Inaccessible cardinal axiom
-axiom inaccessible_cardinal : 
+axiom inaccessible_cardinal :
   ∃ κ, Inaccessible κ
 
 -- 马洛基数公理
 -- Mahlo cardinal axiom
-axiom mahlo_cardinal : 
+axiom mahlo_cardinal :
   ∃ κ, Mahlo κ
 
 -- 弱紧致基数公理
 -- Weakly compact cardinal axiom
-axiom weakly_compact_cardinal : 
+axiom weakly_compact_cardinal :
   ∃ κ, WeaklyCompact κ
 
 -- 大基数的一致性强度
@@ -584,7 +584,7 @@ def DefinableSubset (M : Model) (φ : Formula) : Set M.universe :=
 -- Constructible hierarchy
 def ConstructibleHierarchy : Ordinal → Set α
   | 0 => ∅
-  | succ α => {x | x ⊆ ConstructibleHierarchy α ∧ 
+  | succ α => {x | x ⊆ ConstructibleHierarchy α ∧
                    ∃ φ, x = DefinableSubset (ConstructibleHierarchy α) φ}
   | limit λ => ⋃₀ {ConstructibleHierarchy α | α < λ}
 
@@ -807,7 +807,7 @@ def ProgramComplexity : Type → Ordinal
 -- 程序复杂度性质
 -- Program complexity properties
 theorem program_complexity_properties (α β : Type) :
-  ProgramComplexity (α × β) = 
+  ProgramComplexity (α × β) =
   ProgramComplexity α + ProgramComplexity β :=
 begin
   simp [ProgramComplexity]

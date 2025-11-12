@@ -100,9 +100,9 @@ ZFC公理体系 - 集合论基础
 -- ZFC自然数构造
 -- ZFC Natural Number Construction
 def ZFC_Natural : Type :=
-  {n : Set | ∃ f : ℕ → Set, 
-   f 0 = ∅ ∧ 
-   (∀ k : ℕ, f (k + 1) = f k ∪ {f k}) ∧ 
+  {n : Set | ∃ f : ℕ → Set,
+   f 0 = ∅ ∧
+   (∀ k : ℕ, f (k + 1) = f k ∪ {f k}) ∧
    n ∈ range f}
 
 -- 自然数序关系
@@ -123,8 +123,8 @@ theorem peano_axioms_zfc :
   (∀ n : ZFC_Natural, SuccessorZFC n ≠ ZeroZFC) ∧
   -- P5: 数学归纳
   (∀ P : ZFC_Natural → Prop,
-   P ZeroZFC → 
-   (∀ n : ZFC_Natural, P n → P (SuccessorZFC n)) → 
+   P ZeroZFC →
+   (∀ n : ZFC_Natural, P n → P (SuccessorZFC n)) →
    ∀ n : ZFC_Natural, P n) :=
 begin
   split,
@@ -172,7 +172,7 @@ $\mathbb{Z} = (\mathbb{N} \times \mathbb{N}) / \sim$
 -- 整数等价关系
 -- Integer equivalence relation
 def IntegerEquivalence : Relation (ZFC_Natural × ZFC_Natural) :=
-  {x : (ZFC_Natural × ZFC_Natural) × (ZFC_Natural × ZFC_Natural) | 
+  {x : (ZFC_Natural × ZFC_Natural) × (ZFC_Natural × ZFC_Natural) |
    x.1.1 + x.2.2 = x.1.2 + x.2.1}
 
 -- 整数构造
@@ -183,7 +183,7 @@ def ZFC_Integer : Type :=
 -- 整数运算
 -- Integer operations
 def IntegerAddition : ZFC_Integer → ZFC_Integer → ZFC_Integer :=
-  λ a b, Quotient.lift₂ (λ x y, ⟦(x.1 + y.1, x.2 + y.2)⟧) 
+  λ a b, Quotient.lift₂ (λ x y, ⟦(x.1 + y.1, x.2 + y.2)⟧)
     (λ a1 a2 b1 b2 ha hb, _) a b
 
 -- 整数环公理的ZFC证明
@@ -217,7 +217,7 @@ $\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$
 -- 有理数等价关系
 -- Rational number equivalence relation
 def RationalEquivalence : Relation (ZFC_Integer × ZFC_Integer) :=
-  {x : (ZFC_Integer × ZFC_Integer) × (ZFC_Integer × ZFC_Integer) | 
+  {x : (ZFC_Integer × ZFC_Integer) × (ZFC_Integer × ZFC_Integer) |
    x.1.1 * x.2.2 = x.1.2 * x.2.1 ∧ x.1.2 ≠ 0 ∧ x.2.2 ≠ 0}
 
 -- 有理数构造
@@ -361,7 +361,7 @@ structure SigmaAlgebra (X : Type) where
   sets : Set (Set X)
   contains_universe : X ∈ sets
   closed_under_complement : ∀ A ∈ sets, Aᶜ ∈ sets
-  closed_under_countable_union : ∀ {A : ℕ → Set X}, 
+  closed_under_countable_union : ∀ {A : ℕ → Set X},
     (∀ n : ℕ, A n ∈ sets) → (⋃ n, A n) ∈ sets
 
 -- 测度
@@ -369,7 +369,7 @@ structure SigmaAlgebra (X : Type) where
 structure Measure (X : Type) (𝒜 : SigmaAlgebra X) where
   μ : 𝒜.sets → ℝ≥0∞
   empty_measure : μ ∅ = 0
-  countable_additivity : ∀ {A : ℕ → 𝒜.sets}, 
+  countable_additivity : ∀ {A : ℕ → 𝒜.sets},
     PairwiseDisjoint A → μ (⋃ n, A n) = ∑ n, μ (A n)
 ```
 
@@ -432,11 +432,11 @@ def LebesgueMeasure : Measure ZFC_Real (BorelAlgebra ZFC_Real) :=
 theorem lebesgue_measure_properties :
   -- 平移不变性
   -- Translation invariance
-  (∀ A : BorelSet ZFC_Real, ∀ x : ZFC_Real, 
+  (∀ A : BorelSet ZFC_Real, ∀ x : ZFC_Real,
    μ (A + x) = μ A) ∧
   -- 缩放性质
   -- Scaling property
-  (∀ A : BorelSet ZFC_Real, ∀ c : ZFC_Real, c > 0 → 
+  (∀ A : BorelSet ZFC_Real, ∀ c : ZFC_Real, c > 0 →
    μ (c • A) = |c| * μ A) :=
 begin
   split,
@@ -578,7 +578,7 @@ structure MeasureSpace (α : Type) where
   σ_algebra : Set (Set α)
   measure : σ_algebra → ℝ≥0∞
   empty_measure : measure ∅ = 0
-  countable_additivity : ∀ {A : ℕ → σ_algebra}, 
+  countable_additivity : ∀ {A : ℕ → σ_algebra},
     PairwiseDisjoint A → measure (⋃ n, A n) = ∑ n, measure (A n)
 
 -- 勒贝格测度
@@ -601,7 +601,7 @@ end NumberSystems
 ```lean
 -- 皮亚诺公理证明
 -- Proof of Peano axioms
-theorem peano_axioms : 
+theorem peano_axioms :
   -- P1: 0 ∈ ℕ
   Natural.zero ∈ Natural ∧
   -- P2: 后继函数
@@ -612,8 +612,8 @@ theorem peano_axioms :
   (∀ n : Natural, Natural.succ n ≠ Natural.zero) ∧
   -- P5: 归纳原理
   (∀ P : Natural → Prop,
-   P Natural.zero → 
-   (∀ n : Natural, P n → P (Natural.succ n)) → 
+   P Natural.zero →
+   (∀ n : Natural, P n → P (Natural.succ n)) →
    ∀ n : Natural, P n) :=
 begin
   split,
@@ -656,11 +656,11 @@ end
 theorem lebesgue_measure_properties :
   -- 平移不变性
   -- Translation invariance
-  (∀ A : BorelSet Real, ∀ x : Real, 
+  (∀ A : BorelSet Real, ∀ x : Real,
    μ (A + x) = μ A) ∧
   -- 缩放性质
   -- Scaling property
-  (∀ A : BorelSet Real, ∀ c : Real, c > 0 → 
+  (∀ A : BorelSet Real, ∀ c : Real, c > 0 →
    μ (c • A) = |c| * μ A) :=
 begin
   split,
@@ -790,8 +790,8 @@ def CognitiveLoad : NumberSystem → ℝ :=
 
 ---
 
-**文档版本** / **Document Version**: 1.0  
-**最后更新** / **Last Updated**: 2024年8月  
-**维护者** / **Maintainer**: FormalMath项目组  
-**许可证** / **License**: MIT License  
+**文档版本** / **Document Version**: 1.0
+**最后更新** / **Last Updated**: 2024年8月
+**维护者** / **Maintainer**: FormalMath项目组
+**许可证** / **License**: MIT License
 **国际标准**: MIT, Stanford, Cambridge, Oxford数学标准
