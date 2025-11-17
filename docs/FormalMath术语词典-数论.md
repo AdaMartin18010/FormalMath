@@ -16,7 +16,7 @@
 - [符号对照表](#-符号对照表--symbol-reference-table)
 - [常见错误与注意事项](#️-常见错误与注意事项--common-errors-and-notes)
 - [应用场景](#-应用场景--application-scenarios)
-- [学习路径建议](#-学习路径建议--learning-path-recommendations)
+- [学习路径建议](#️-学习路径建议--learning-path-recommendations)
 - [参考文献](#-参考文献--references)
 - [术语使用规范](#-术语使用规范)
 

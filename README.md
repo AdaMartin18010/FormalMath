@@ -91,8 +91,10 @@ FormalMath 是一个对标国际标准的高质量数学知识库与学习体系
 
 欢迎通过 Issue/PR 提交问题与建议。对于术语、符号标准与跨文档链接等全局性议题，请在提交前参考：
 
-- `docs/FormalMath项目索引与主题概念对比分析-2025年1月.md`
+- **术语词典总索引**：`docs/FormalMath术语词典总索引.md` ⭐ 快速导航所有术语词典
 - `docs/FormalMath术语标准化推进报告-2025年1月.md`
+- `docs/FormalMath术语标准化完成报告-2025年1月.md`
+- `docs/FormalMath项目索引与主题概念对比分析-2025年1月.md`
 - `docs/FormalMath符号标准化推进报告-2025年1月.md`
 
 共同维护一个高一致性、高可用性的数学知识库。
