@@ -38,6 +38,10 @@
     - [应用案例：ZFC公理体系在类型理论中的应用](#应用案例zfc公理体系在类型理论中的应用)
   - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
   - [参考文献 / References](#参考文献--references)
+    - [经典教材 / Classic Textbooks](#经典教材--classic-textbooks)
+    - [现代教材 / Modern Textbooks](#现代教材--modern-textbooks)
+    - [前沿文献 / Frontier Literature](#前沿文献--frontier-literature)
+    - [在线资源 / Online Resources](#在线资源--online-resources)
 
 ## 📚 概述
 
@@ -932,8 +936,24 @@ def DependentType (A : Set α) (B : α → Set α) : Set (Set (Set α)) :=
 
 ## 参考文献 / References
 
-- Jech, T. Set Theory. Springer.
-- Kunen, K. Set Theory. College Publications.
-- Enderton, H. B. Elements of Set Theory. Academic Press.
-- Halmos, P. R. Naive Set Theory. Springer.
-- Wikipedia: Zermelo–Fraenkel set theory; Axiom of choice.
+### 经典教材 / Classic Textbooks
+
+- Jech, T. Set Theory[M]. 3rd Millennium Edition. Berlin: Springer, 2003.
+- Kunen, K. Set Theory: An Introduction to Independence Proofs[M]. Amsterdam: North-Holland, 1980.
+- Enderton, H. B. Elements of Set Theory[M]. New York: Academic Press, 1977.
+- Halmos, P. R. Naive Set Theory[M]. New York: Springer-Verlag, 1974.
+
+### 现代教材 / Modern Textbooks
+
+- Hrbacek, K., Jech, T. Introduction to Set Theory[M]. 3rd Edition. New York: Marcel Dekker, 1999.
+- Moschovakis, Y. Notes on Set Theory[M]. 2nd Edition. New York: Springer, 2006.
+
+### 前沿文献 / Frontier Literature
+
+- Kanamori, A. The Higher Infinite: Large Cardinals in Set Theory[M]. 2nd Edition. Berlin: Springer, 2009.
+
+### 在线资源 / Online Resources
+
+- Wikipedia: [Zermelo–Fraenkel set theory](https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory)
+- Wikipedia: [Axiom of choice](https://en.wikipedia.org/wiki/Axiom_of_choice)
+- MIT OpenCourseWare: [18.701 Algebra I](https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/)
