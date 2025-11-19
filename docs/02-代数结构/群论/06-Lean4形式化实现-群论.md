@@ -92,7 +92,7 @@ class Group (G : Type*) where
   mul : G → G → G
   one : G
   inv : G → G
-  
+
   -- 群公理
   mul_assoc : ∀ (a b c : G), mul (mul a b) c = mul a (mul b c)
   one_mul : ∀ (a : G), mul one a = a
@@ -506,7 +506,7 @@ def IrreducibleRepresentation {G : Type*} [Group G] {V : Type*} [AddCommGroup V]
   sorry
 
 -- 表示的直和
-def DirectSumRepresentation {G : Type*} [Group G] {V₁ V₂ : Type*} 
+def DirectSumRepresentation {G : Type*} [Group G] {V₁ V₂ : Type*}
   [AddCommGroup V₁] [AddCommGroup V₂] [Module ℂ V₁] [Module ℂ V₂]
   (ρ₁ : GroupRepresentation G V₁) (ρ₂ : GroupRepresentation G V₂) :
   GroupRepresentation G (V₁ × V₂) where
@@ -515,7 +515,7 @@ def DirectSumRepresentation {G : Type*} [Group G] {V₁ V₂ : Type*}
   ρ_mul := sorry
 
 -- 表示的张量积
-def TensorProductRepresentation {G : Type*} [Group G] {V₁ V₂ : Type*} 
+def TensorProductRepresentation {G : Type*} [Group G] {V₁ V₂ : Type*}
   [AddCommGroup V₁] [AddCommGroup V₂] [Module ℂ V₁] [Module ℂ V₂]
   (ρ₁ : GroupRepresentation G V₁) (ρ₂ : GroupRepresentation G V₂) :
   GroupRepresentation G (V₁ ⊗[ℂ] V₂) where
@@ -535,13 +535,13 @@ def Character {G : Type*} [Group G] {V : Type*} [AddCommGroup V] [Module ℂ V]
   fun g => LinearMap.trace ℂ V (ρ.ρ g)
 
 -- 特征标的性质
-theorem character_constant_on_conjugacy_classes {G : Type*} [Group G] {V : Type*} 
+theorem character_constant_on_conjugacy_classes {G : Type*} [Group G] {V : Type*}
   [AddCommGroup V] [Module ℂ V] (ρ : GroupRepresentation G V) (g h : G) :
   h * g * h⁻¹ = g → Character ρ g = Character ρ (h * g * h⁻¹) := by
   sorry
 
 -- 特征标的正交关系
-theorem character_orthogonality {G : Type*} [Group G] [Fintype G] {V₁ V₂ : Type*} 
+theorem character_orthogonality {G : Type*} [Group G] [Fintype G] {V₁ V₂ : Type*}
   [AddCommGroup V₁] [AddCommGroup V₂] [Module ℂ V₁] [Module ℂ V₂]
   (ρ₁ : IrreducibleRepresentation G V₁) (ρ₂ : IrreducibleRepresentation G V₂) :
   (∑ g, Character ρ₁ g * Character ρ₂ g⁻¹) = if ρ₁ = ρ₂ then Fintype.card G else 0 := by
