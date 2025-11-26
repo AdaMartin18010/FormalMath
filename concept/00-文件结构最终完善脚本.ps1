@@ -1,0 +1,136 @@
+# 文件结构最终完善脚本
+# 确保所有文件的目录完整，所有章节都有正确编号
+
+$conceptFiles = Get-ChildItem "g:\_src\FormalMath\concept\核心概念\*.md" -Exclude "*三视角版*","*索引*","*关系*" | Sort-Object Name
+
+foreach ($file in $conceptFiles) {
+    Write-Host "完善文件: $($file.Name)"
+    
+    $content = Get-Content $file.FullName -Raw -Encoding UTF8
+    $modified = $false
+    
+    # 检查并修复目录中的其他部分链接
+    if ($content -match '9\. \[其他部分\]\(#9-其他部分\)' -and $content -notmatch '9\.1 \[思维导图\]') {
+        $content = $content -replace '9\. \[其他部分\]\(#9-其他部分\)', "9. [其他部分](#9-其他部分)`n   - 9.1 [思维导图](#91-思维导图)（如果有）`n   - 9.2 [知识多维关系矩阵](#92-知识多维关系矩阵)（如果有）`n   - 9.3 [形象化解释与论证](#93-形象化解释与论证)（如果有）`n   - 9.4 [学习路径](#94-学习路径)（如果有）`n   - 9.5 [习题库](#95-习题库)（如果有）`n   - 9.6 [认知维度表征](#96-认知维度表征)（如果有）`n   - 9.7 [理性维度表征](#97-理性维度表征)（如果有）`n   - 9.8 [综合整合表征](#98-综合整合表征)（如果有）"
+        $modified = $true
+    }
+    
+    # 确保所有其他部分都有编号
+    if ($content -match '## 🗺️ 思维导图' -and $content -notmatch '## 9\.1 🗺️') {
+        $content = $content -replace '## 🗺️ 思维导图', '## 9.1 🗺️ 思维导图'
+        $modified = $true
+    }
+    if ($content -match '## 📊 知识多维关系矩阵' -and $content -notmatch '## 9\.2 📊') {
+        $content = $content -replace '## 📊 知识多维关系矩阵', '## 9.2 📊 知识多维关系矩阵'
+        $modified = $true
+    }
+    if ($content -match '## 💭 形象化解释与论证' -and $content -notmatch '## 9\.3 💭') {
+        $content = $content -replace '## 💭 形象化解释与论证', '## 9.3 💭 形象化解释与论证'
+        $modified = $true
+    }
+    if ($content -match '## 🎓 学习路径' -and $content -notmatch '## 9\.4 🎓') {
+        $content = $content -replace '## 🎓 学习路径', '## 9.4 🎓 学习路径'
+        $modified = $true
+    }
+    if ($content -match '## 📚 习题库' -and $content -notmatch '## 9\.5 📚') {
+        $content = $content -replace '## 📚 习题库', '## 9.5 📚 习题库'
+        $modified = $true
+    }
+    if ($content -match '## 🧠 认知维度表征' -and $content -notmatch '## 9\.6 🧠') {
+        $content = $content -replace '## 🧠 认知维度表征', '## 9.6 🧠 认知维度表征'
+        $modified = $true
+    }
+    if ($content -match '## 🧩 理性维度表征' -and $content -notmatch '## 9\.7 🧩') {
+        $content = $content -replace '## 🧩 理性维度表征', '## 9.7 🧩 理性维度表征'
+        $modified = $true
+    }
+    if ($content -match '## 🧬 综合整合表征' -and $content -notmatch '## 9\.8 🧬') {
+        $content = $content -replace '## 🧬 综合整合表征', '## 9.8 🧬 综合整合表征'
+        $modified = $true
+    }
+    if ($content -match '## 👨‍🏫 专家观点与论证' -and $content -notmatch '## 9\.') {
+        $content = $content -replace '## 👨‍🏫 专家观点与论证', '## 9.9 👨‍🏫 专家观点与论证'
+        $modified = $true
+    }
+    
+    # 确保所有主要章节都有编号
+    if ($content -match '## 📋 概述' -and $content -notmatch '## 1\. 📋') {
+        $content = $content -replace '## 📋 概述', '## 1. 📋 概述'
+        $modified = $true
+    }
+    if ($content -match '## 🎯 严格定义' -and $content -notmatch '## 2\. 🎯') {
+        $content = $content -replace '## 🎯 严格定义', '## 2. 🎯 严格定义'
+        $modified = $true
+    }
+    if ($content -match '## 📚 历史背景' -and $content -notmatch '## 3\. 📚') {
+        $content = $content -replace '## 📚 历史背景', '## 3. 📚 历史背景'
+        $modified = $true
+    }
+    if ($content -match '## 🔍 性质与定理' -and $content -notmatch '## 4\. 🔍') {
+        $content = $content -replace '## 🔍 性质与定理', '## 4. 🔍 性质与定理'
+        $modified = $true
+    }
+    if ($content -match '## 🔬 形式化证明' -and $content -notmatch '## 5\. 🔬') {
+        $content = $content -replace '## 🔬 形式化证明', '## 5. 🔬 形式化证明'
+        $modified = $true
+    }
+    if ($content -match '## 💡 应用实例' -and $content -notmatch '## 6\. 💡') {
+        $content = $content -replace '## 💡 应用实例', '## 6. 💡 应用实例'
+        $modified = $true
+    }
+    if ($content -match '## 🔗 关联概念' -and $content -notmatch '## 7\. 🔗') {
+        $content = $content -replace '## 🔗 关联概念', '## 7. 🔗 关联概念'
+        $modified = $true
+    }
+    if ($content -match '## 📖 参考文献' -and $content -notmatch '## 8\. 📖') {
+        $content = $content -replace '## 📖 参考文献', '## 8. 📖 参考文献'
+        $modified = $true
+    }
+    
+    # 确保所有子章节都有编号
+    if ($content -match '### 基础定义 \(L0\)' -and $content -notmatch '### 2\.1 基础定义') {
+        $content = $content -replace '### 基础定义 \(L0\)', '### 2.1 基础定义 (L0)'
+        $modified = $true
+    }
+    if ($content -match '### 形式化定义 \(L1\)' -and $content -notmatch '### 2\.2 形式化定义') {
+        $content = $content -replace '### 形式化定义 \(L1\)', '### 2.2 形式化定义 (L1)'
+        $modified = $true
+    }
+    if ($content -match '### 发展脉络' -and $content -notmatch '### 3\.1 发展脉络') {
+        $content = $content -replace '### 发展脉络', '### 3.1 发展脉络'
+        $modified = $true
+    }
+    if ($content -match '### 关键人物' -and $content -notmatch '### 3\.2 关键人物') {
+        $content = $content -replace '### 关键人物', '### 3.2 关键人物'
+        $modified = $true
+    }
+    if ($content -match '### 重要事件' -and $content -notmatch '### 3\.3 重要事件') {
+        $content = $content -replace '### 重要事件', '### 3.3 重要事件'
+        $modified = $true
+    }
+    if ($content -match '### 基本性质 \(L1\)' -and $content -notmatch '### 4\.1 基本性质') {
+        $content = $content -replace '### 基本性质 \(L1\)', '### 4.1 基本性质 (L1)'
+        $modified = $true
+    }
+    if ($content -match '### 重要定理 \(L2\)' -and $content -notmatch '### 4\.2 重要定理') {
+        $content = $content -replace '### 重要定理 \(L2\)', '### 4.2 重要定理 (L2)'
+        $modified = $true
+    }
+    if ($content -match '### 理论应用' -and $content -notmatch '### 6\.1 理论应用') {
+        $content = $content -replace '### 理论应用', '### 6.1 理论应用'
+        $modified = $true
+    }
+    if ($content -match '### 实际应用' -and $content -notmatch '### 6\.2 实际应用') {
+        $content = $content -replace '### 实际应用', '### 6.2 实际应用'
+        $modified = $true
+    }
+    
+    if ($modified) {
+        Set-Content -Path $file.FullName -Value $content -Encoding UTF8 -NoNewline
+        Write-Host "已更新: $($file.Name)"
+    } else {
+        Write-Host "无需更新: $($file.Name)"
+    }
+}
+
+Write-Host "`n所有文件检查完成！"
