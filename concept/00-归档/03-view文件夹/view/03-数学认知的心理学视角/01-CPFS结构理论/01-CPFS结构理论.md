@@ -676,34 +676,34 @@ mindmap
 
 ### **相关理论研究**
 
-5. **Ausubel, D. P. (1968). *Educational Psychology: A Cognitive View***
+1. **Ausubel, D. P. (1968). *Educational Psychology: A Cognitive View***
    - 有意义学习理论
    - 强调概念之间的关联
    - 为CPFS结构理论提供认知心理学基础
 
-6. **Skemp, R. R. (1976). Relational understanding and instrumental understanding**
+2. **Skemp, R. R. (1976). Relational understanding and instrumental understanding**
    - 数学理解的两个层次
    - 工具性理解vs关系性理解
    - 与CPFS结构理论的关系
 
-7. **Hiebert, J., & Carpenter, T. P. (1992). Learning and teaching with understanding**
+3. **Hiebert, J., & Carpenter, T. P. (1992). Learning and teaching with understanding**
    - 数学知识的网络表征
    - 概念之间的连接
    - 与CPFS结构理论的联系
 
-8. **Sfard, A. (1991). On the dual nature of mathematical conceptions: Reflections on processes and objects as different sides of the same coin**
+4. **Sfard, A. (1991). On the dual nature of mathematical conceptions: Reflections on processes and objects as different sides of the same coin**
    - 数学概念的双重性
    - 过程-对象转换
    - 与CPFS结构理论的关系
 
 ### **CPFS结构测量研究**
 
-9. **喻平（2008）。CPFS结构的测量方法研究**
+1. **喻平（2008）。CPFS结构的测量方法研究**
    - 建立CPFS结构的测量工具
    - 验证测量工具的信度和效度
    - 应用测量工具评估学生CPFS结构
 
-10. **喻平（2010）。CPFS结构与数学问题解决能力的关系研究**
+2. **喻平（2010）。CPFS结构与数学问题解决能力的关系研究**
     - 研究CPFS结构与问题解决能力的关系
     - 发现CPFS结构完整性影响问题解决能力
     - 提出基于CPFS结构的问题解决训练方法
@@ -824,23 +824,23 @@ CPFS结构理论与三层结构理论的关系：
 
 ### **6.2 相关理论研究**
 
-7. Ausubel, D. P. (1968). *Educational Psychology: A Cognitive View*. Holt, Rinehart and Winston.
+1. Ausubel, D. P. (1968). *Educational Psychology: A Cognitive View*. Holt, Rinehart and Winston.
 
-8. Skemp, R. R. (1976). Relational understanding and instrumental understanding. *Mathematics Teaching*, 77, 20-26.
+2. Skemp, R. R. (1976). Relational understanding and instrumental understanding. *Mathematics Teaching*, 77, 20-26.
 
-9. Hiebert, J., & Carpenter, T. P. (1992). Learning and teaching with understanding. In D. A. Grouws (Ed.), *Handbook of Research on Mathematics Teaching and Learning* (pp. 65-97). Macmillan.
+3. Hiebert, J., & Carpenter, T. P. (1992). Learning and teaching with understanding. In D. A. Grouws (Ed.), *Handbook of Research on Mathematics Teaching and Learning* (pp. 65-97). Macmillan.
 
-10. Sfard, A. (1991). On the dual nature of mathematical conceptions: Reflections on processes and objects as different sides of the same coin. *Educational Studies in Mathematics*, 22(1), 1-36. [DOI](https://doi.org/10.1007/BF00302715)
+4. Sfard, A. (1991). On the dual nature of mathematical conceptions: Reflections on processes and objects as different sides of the same coin. *Educational Studies in Mathematics*, 22(1), 1-36. [DOI](https://doi.org/10.1007/BF00302715)
 
-11. Piaget, J. (1970). *Genetic Epistemology*. Columbia University Press.
+5. Piaget, J. (1970). *Genetic Epistemology*. Columbia University Press.
 
-12. Vygotsky, L. S. (1978). *Mind in Society: The Development of Higher Psychological Processes*. Harvard University Press.
+6. Vygotsky, L. S. (1978). *Mind in Society: The Development of Higher Psychological Processes*. Harvard University Press.
 
 ### **6.3 CPFS结构测量研究**
 
-13. 喻平（2008）。CPFS结构的测量方法研究。*数学教育学报*，17(2)，1-5。
+1. 喻平（2008）。CPFS结构的测量方法研究。*数学教育学报*，17(2)，1-5。
 
-14. 喻平（2010）。CPFS结构与数学问题解决能力的关系研究。*数学教育学报*，19(3)，1-5。
+2. 喻平（2010）。CPFS结构与数学问题解决能力的关系研究。*数学教育学报*，19(3)，1-5。
 
 ### **6.4 相关文档**
 
