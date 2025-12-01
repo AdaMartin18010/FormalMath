@@ -1,0 +1,249 @@
+# function.yaml - 函数概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "function"
+  name:
+    zh: "函数"
+    en: "Function"
+  msc_codes: ["03E20", "26A-XX"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【集合论定义】
+      设 A, B 是集合。函数 f: A → B 是满足以下条件的关系 f ⊆ A × B：
+      
+      1. 定义性：∀a ∈ A, ∃b ∈ B, (a,b) ∈ f
+      2. 唯一性：若 (a,b) ∈ f 且 (a,c) ∈ f，则 b = c
+      
+      记 f(a) = b 当 (a,b) ∈ f。
+      
+      【类型论定义】
+      f : A → B 是一个规则，对每个 a : A 给出 f(a) : B。
+      
+    informal: |
+      函数是"输入-输出"机器。
+      
+      给定一个输入（来自定义域A），
+      函数给出唯一确定的输出（在值域B中）。
+      
+      函数 = "从每个输入到恰好一个输出的规则"
+      
+    lean: |
+      -- Lean中函数是原始概念
+      -- f : A → B 表示从A到B的函数
+      
+      -- 函数的性质
+      def Function.Injective (f : A → B) : Prop :=
+        ∀ a₁ a₂, f a₁ = f a₂ → a₁ = a₂
+        
+      def Function.Surjective (f : A → B) : Prop :=
+        ∀ b, ∃ a, f a = b
+        
+      def Function.Bijective (f : A → B) : Prop :=
+        Injective f ∧ Surjective f
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】映射/变换
+      - 函数将一个空间"映射"到另一个空间
+      - 图像：集合A中的点被"推"到B中的点
+      - 垂直线测试：图像中每个x对应最多一个y
+      
+    algebraic: |
+      【代数直觉】运算/操作
+      - f(x) = x² 是"平方"操作
+      - 函数可以复合：(g ∘ f)(x) = g(f(x))
+      - 同构 = 可逆函数
+      
+    physical: |
+      【物理直觉】过程/演化
+      - 时间演化：状态(t) → 状态(t+dt)
+      - 测量：物理系统 → 测量值
+      - 因果关系：原因 → 结果
+      
+    categorical: |
+      【范畴直觉】态射
+      - 范畴中的态射推广了函数
+      - 函数是Set范畴的态射
+      - 函数的复合是态射的复合
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "箭头图"
+      content: |
+        函数的映射关系：
+        
+        A        f        B
+        ┌───┐   ───→   ┌───┐
+        │ a │─────────→│ b │
+        │ a'│─────────→│ b'│
+        │ a"│─────────→│ b │
+        └───┘          └───┘
+        
+        每个a恰好对应一个b
+        
+    - type: "图像表示"
+      content: |
+        函数图像 Graph(f) = {(x, f(x)) : x ∈ A}
+        
+         y
+         │    ╱
+         │   ╱
+         │  ╱   图像
+         │ ╱
+         └──────────→ x
+         
+    - type: "表格/列表"
+      content: |
+        有限函数的表格表示：
+        
+        x  │ f(x)
+        ───┼─────
+        1  │  2
+        2  │  4
+        3  │  6
+        
+    - type: "λ表达式"
+      content: |
+        函数的λ演算表示：
+        
+        f = λx. x²
+        g = λx. λy. x + y
+        
+        这是编程语言和类型论的基础
+        
+  # ===== 例子层 =====
+  examples:
+    basic:
+      - name: "恒等函数 id"
+        definition: "id(x) = x"
+        properties: ["双射", "自同构"]
+        
+      - name: "常值函数"
+        definition: "f(x) = c 对所有x"
+        properties: ["非单射（除非定义域单点）"]
+        
+      - name: "包含映射 ι: A → B"
+        definition: "子集到全集的嵌入"
+        properties: ["单射"]
+        
+    number_functions:
+      - name: "多项式函数"
+        example: "f(x) = x² + 2x + 1"
+        properties: ["连续", "光滑", "代数"]
+        
+      - name: "指数函数 exp"
+        definition: "exp(x) = eˣ"
+        properties: ["连续", "光滑", "双射到ℝ⁺"]
+        
+      - name: "三角函数 sin, cos"
+        properties: ["周期", "有界", "连续"]
+        
+    special:
+      - name: "特征函数 χ_A"
+        definition: "χ_A(x) = 1 if x∈A, 0 otherwise"
+        properties: ["集合的代数表示"]
+        
+      - name: "Dirichlet函数"
+        definition: "D(x) = 1 if x∈ℚ, 0 if x∉ℚ"
+        properties: ["处处不连续"]
+        
+    morphisms:
+      - name: "群同态"
+        definition: "f(xy) = f(x)f(y)"
+        properties: ["保结构"]
+        
+      - name: "线性映射"
+        definition: "f(ax+by) = af(x)+bf(y)"
+        properties: ["保向量空间结构"]
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "set"
+        description: "定义域和值域"
+      - id: "relation"
+        description: "函数是特殊关系"
+        
+    generalizes: []
+        
+    specialized_by:
+      - id: "injection"
+        description: "单射"
+      - id: "surjection"
+        description: "满射"
+      - id: "bijection"
+        description: "双射"
+      - id: "continuous-function"
+        description: "连续函数"
+      - id: "homomorphism"
+        description: "同态（保结构）"
+        
+    related_to:
+      - id: "composition"
+        description: "函数复合"
+      - id: "inverse"
+        description: "逆函数"
+      - id: "image"
+        description: "函数的像"
+      - id: "preimage"
+        description: "函数的原像"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "composition-associative"
+      statement: "(h ∘ g) ∘ f = h ∘ (g ∘ f)"
+      importance: 3
+      
+    - id: "bijection-inverse"
+      statement: "f双射 ⟺ f有双侧逆"
+      importance: 4
+      
+    - id: "schroeder-bernstein"
+      statement: "若存在单射 A→B 和 B→A，则存在双射"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 1
+    importance: 5
+    
+    prerequisites:
+      - "set"
+      
+    leads_to:
+      - "continuity"
+      - "differentiability"
+      - "homomorphism"
+      - "category-theory"
+      
+    history:
+      first_appearance: 1673
+      context: "Leibniz引入'functio'"
+      development: "Euler, Dirichlet的推广"
+      modern_definition: "Dirichlet (1837)"
+      
+    key_figures:
+      - id: "leibniz"
+        contribution: "术语'函数'"
+      - id: "euler"
+        contribution: "函数记号 f(x)"
+      - id: "dirichlet"
+        contribution: "现代定义"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Core"
+    name: "Function"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Init/Core.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "Function.Injective"
+      - "Function.Surjective"
+      - "Function.Bijective"
+      - "Equiv"

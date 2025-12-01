@@ -1,0 +1,96 @@
+# riemannian-metric.yaml - Riemann度量概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "riemannian-metric"
+  name:
+    zh: "Riemann度量"
+    en: "Riemannian Metric"
+  msc_codes: ["53C20"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 M 是光滑流形。Riemann度量是切丛上的光滑截面：
+      g ∈ Γ(T*M ⊗ T*M)
+      
+      在每点 p ∈ M，gₚ: TₚM × TₚM → ℝ 是：
+      1. 双线性
+      2. 对称：g(X, Y) = g(Y, X)
+      3. 正定：g(X, X) ≥ 0，等号当且仅当 X = 0
+      
+      局部坐标：g = gᵢⱼ dxⁱ ⊗ dxʲ
+      
+    informal: |
+      Riemann度量告诉我们如何在曲面上测量：
+      - 长度
+      - 角度
+      - 面积
+      
+      地球表面是Riemann流形：
+      - 直线变成测地线
+      - 距离沿着曲面测量
+      
+    lean: |
+      -- Riemann度量
+      class RiemannianManifold (M : Type*) [TopologicalSpace M] 
+          [ChartedSpace (EuclideanSpace ℝ n) M] [SmoothManifoldWithCorners 𝓡n M] where
+        metric : ∀ x : M, BilinearForm ℝ (TangentSpace x)
+        metric_symm : ∀ x, (metric x).IsSymm
+        metric_posdef : ∀ x, (metric x).PositiveDefinite
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】内在测量
+      - 不需要嵌入到更高维空间
+      - "蚂蚁在曲面上测量"
+      - 可以定义弯曲但没有方向
+      
+    physical: |
+      【物理直觉】时空几何
+      - 广义相对论中时空是4维Riemann流形
+      - 度量张量描述引力场
+      - 测地线是自由落体轨迹
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "欧氏空间 ℝⁿ"
+      metric: "g = dx₁² + ... + dxₙ²"
+      curvature: "平坦（曲率为0）"
+      
+    - name: "球面 S²"
+      metric: "g = dθ² + sin²θ dφ²"
+      curvature: "常正曲率"
+      
+    - name: "双曲平面 H²"
+      metric: "g = (dx² + dy²)/y² (上半平面模型)"
+      curvature: "常负曲率"
+      
+    - name: "环面 T²"
+      metric: "g = dθ₁² + dθ₂²（平坦环面）"
+      curvature: "平坦"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "manifold"
+        description: "底流形"
+      - id: "tangent-bundle"
+        description: "切丛"
+        
+    leads_to:
+      - id: "curvature"
+        description: "曲率张量"
+      - id: "geodesic"
+        description: "测地线"
+      - id: "connection"
+        description: "Levi-Civita联络"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    prerequisites: ["manifold", "tangent-bundle"]
+    leads_to: ["curvature", "geodesic", "general-relativity"]

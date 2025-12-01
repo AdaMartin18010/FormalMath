@@ -1,0 +1,92 @@
+# quadratic-reciprocity.yaml - 二次互反律知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "quadratic-reciprocity"
+  name:
+    zh: "二次互反律"
+    en: "Quadratic Reciprocity"
+  msc_codes: ["11A15"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 p, q 是不同的奇素数。定义Legendre符号：
+      (a/p) = { 1,  若a是模p的二次剩余
+              {-1,  若a是模p的二次非剩余
+              { 0,  若p|a
+              
+      则：(p/q)(q/p) = (-1)^{(p-1)(q-1)/4}
+      
+      补充定律：
+      - (-1/p) = (-1)^{(p-1)/2}
+      - (2/p) = (-1)^{(p²-1)/8}
+      
+    informal: |
+      判断一个素数是否是另一个素数的"平方根"，
+      这两个问题是相互关联的！
+      
+      例：5是模11的二次剩余（因为5≡4²）
+      那11模5呢？11≡1 (mod 5)，1=1²，是！
+      
+    lean: |
+      -- 二次互反律
+      theorem quadratic_reciprocity {p q : ℕ} 
+        (hp : p.Prime) (hq : q.Prime) (hpq : p ≠ q)
+        (hp2 : p % 2 = 1) (hq2 : q % 2 = 1) :
+        legendreSym p q * legendreSym q p = 
+          (-1 : ℤ) ^ ((p - 1) / 2 * ((q - 1) / 2))
+          
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "多种证明方法"
+    
+    approaches:
+      - name: "Gauss引理"
+      - name: "Gauss和"
+      - name: "Eisenstein证明（几何）"
+      - name: "类域论（概念性最强）"
+      
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      (p/q)(q/p) = (-1)^{(p-1)(q-1)/4}
+      
+      等价形式：
+      - p ≡ q ≡ 1 (mod 4) ⟹ (p/q) = (q/p)
+      - p ≡ q ≡ 3 (mod 4) ⟹ (p/q) = -(q/p)
+      
+    intuitive: |
+      【直觉表征】
+      
+      二次剩余的"对称性"：
+      p是q的二次剩余 ⟺ q是p的二次剩余
+      （除非p≡q≡3 (mod 4)时翻转）
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "判断二次剩余"
+    - description: "因数分解算法"
+    - description: "密码学应用"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "prime-number"
+      - id: "modular-arithmetic"
+        
+    related_to:
+      - id: "class-field-theory"
+        description: "高次互反律"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    history:
+      discoverer: "Gauss"
+      year: 1796
+      note: "Gauss称之为'黄金定理'"

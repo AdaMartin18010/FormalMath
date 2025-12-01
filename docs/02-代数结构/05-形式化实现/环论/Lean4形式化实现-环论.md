@@ -156,7 +156,7 @@ structure RingHomomorphism (R S : Ring α) where
 -- 环同构
 -- Ring isomorphism
 def RingIsomorphism (R S : Ring α) : Prop :=
-  ∃ f : RingHomomorphism R S, 
+  ∃ f : RingHomomorphism R S,
     ∃ g : RingHomomorphism S R,
       (∀ a, g.map (f.map a) = a) ∧ (∀ a, f.map (g.map a) = a)
 ```
@@ -189,7 +189,7 @@ def IdealSum (R : Ring α) (I J : Ideal R) : Ideal R :=
     zero_mem := sorry }
 
 def IdealProduct (R : Ring α) (I J : Ideal R) : Ideal R :=
-  { carrier := {x : α | ∃ n : ℕ, ∃ a₁ ... aₙ ∈ I.carrier, ∃ b₁ ... bₙ ∈ J.carrier, 
+  { carrier := {x : α | ∃ n : ℕ, ∃ a₁ ... aₙ ∈ I.carrier, ∃ b₁ ... bₙ ∈ J.carrier,
                 x = R.add (R.mul a₁ b₁) (R.add ... (R.mul aₙ bₙ))}
     add_closed := sorry
     mul_closed := sorry
@@ -204,13 +204,13 @@ def IdealIntersection (R : Ring α) (I J : Ideal R) : Ideal R :=
 -- 素理想
 -- Prime ideal
 def PrimeIdeal (R : Ring α) (I : Ideal R) : Prop :=
-  I.carrier ≠ Set.univ ∧ 
+  I.carrier ≠ Set.univ ∧
   ∀ a b : α, R.mul a b ∈ I.carrier → a ∈ I.carrier ∨ b ∈ I.carrier
 
 -- 极大理想
 -- Maximal ideal
 def MaximalIdeal (R : Ring α) (I : Ideal R) : Prop :=
-  I.carrier ≠ Set.univ ∧ 
+  I.carrier ≠ Set.univ ∧
   ∀ J : Ideal R, I.carrier ⊆ J.carrier → J.carrier = I.carrier ∨ J.carrier = Set.univ
 ```
 
@@ -255,14 +255,14 @@ theorem first_isomorphism_theorem (R S : Ring α) (f : RingHomomorphism R S) :
 -- 诺特环
 -- Noetherian ring
 def NoetherianRing (R : Ring α) : Prop :=
-  ∀ (I : Ideal R), ∃ (S : Finset α), 
-    ∀ x ∈ I.carrier, ∃ (f : α → α), 
+  ∀ (I : Ideal R), ∃ (S : Finset α),
+    ∀ x ∈ I.carrier, ∃ (f : α → α),
       x = Finset.sum S (λ a => R.mul (f a) a)
 
 -- 诺特环的性质
 -- Properties of Noetherian rings
 theorem noetherian_ring_properties (R : Ring α) (h : NoetherianRing R) :
-  ∀ (I₁ ⊆ I₂ ⊆ ... ⊆ Iₙ ⊆ ... : Ideal R), 
+  ∀ (I₁ ⊆ I₂ ⊆ ... ⊆ Iₙ ⊆ ... : Ideal R),
     ∃ n : ℕ, ∀ m ≥ n, Iₘ.carrier = Iₙ.carrier :=
   sorry
 

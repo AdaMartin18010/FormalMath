@@ -1,0 +1,209 @@
+# chinese-remainder.yaml - 中国剩余定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "chinese-remainder-theorem"
+  name:
+    zh: "中国剩余定理"
+    en: "Chinese Remainder Theorem"
+  msc_codes: ["11A07", "13A05"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      【整数版本】
+      设 n₁, n₂, ..., nₖ 两两互素（gcd(nᵢ, nⱼ) = 1 当 i ≠ j）。
+      则对任意 a₁, a₂, ..., aₖ ∈ ℤ，同余方程组
+      
+      x ≡ a₁ (mod n₁)
+      x ≡ a₂ (mod n₂)
+      ...
+      x ≡ aₖ (mod nₖ)
+      
+      有唯一解 x (mod n₁n₂...nₖ)。
+      
+      【环论版本】
+      若 I₁, ..., Iₖ 是环R的两两互素理想（Iᵢ + Iⱼ = R），则：
+      R/(I₁ ∩ ... ∩ Iₖ) ≅ R/I₁ × ... × R/Iₖ
+      
+    informal: |
+      如果知道一个数除以几个互素数的余数，
+      就可以唯一确定它除以这些数乘积的余数。
+      
+      《孙子算经》问题：
+      "物不知其数，三三数之剩二，五五数之剩三，七七数之剩二，问物几何？"
+      答案：x ≡ 23 (mod 105)
+      
+    lean: |
+      -- Mathlib形式化
+      theorem ZMod.chineseRemainder {m n : ℕ} (h : Nat.Coprime m n) :
+        ZMod (m * n) ≃+* ZMod m × ZMod n
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "构造性证明 + 唯一性论证"
+    
+    key_ideas:
+      - "构造每个方程的部分解"
+      - "线性组合得到总解"
+      - "互素性保证可逆性"
+      
+    steps:
+      - step: 1
+        content: "设 N = n₁n₂...nₖ，Nᵢ = N/nᵢ"
+        
+      - step: 2
+        content: "由gcd(Nᵢ, nᵢ) = 1，存在 Mᵢ 使 NᵢMᵢ ≡ 1 (mod nᵢ)"
+        
+      - step: 3
+        content: "构造解 x = Σ aᵢNᵢMᵢ"
+        
+      - step: 4
+        content: "验证：x ≡ aᵢ (mod nᵢ) 对所有i"
+        detail: "NⱼMⱼ ≡ 0 (mod nᵢ) 当j≠i"
+        
+      - step: 5
+        content: "唯一性：若 x, y 都是解，则 N | (x - y)"
+        
+    proof_tree: |
+      中国剩余定理
+          │
+          ├── 存在性
+          │   ├── 构造部分解
+          │   │   └── eᵢ ≡ δᵢⱼ (mod nⱼ)
+          │   └── 线性组合
+          │       └── x = Σ aᵢeᵢ
+          │
+          └── 唯一性
+              ├── 若x,y都是解
+              ├── 则 nᵢ | (x-y) 对所有i
+              └── 由互素性 N | (x-y)
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      同构形式：
+      ℤ/mnℤ ≅ ℤ/mℤ × ℤ/nℤ  （当 gcd(m,n) = 1）
+      
+      映射：
+      φ: x mod mn ↦ (x mod m, x mod n)
+      
+      逆映射构造：
+      x = a·n·(n⁻¹ mod m) + b·m·(m⁻¹ mod n)
+      
+    geometric: |
+      【几何表征】
+      
+      格点视图（m=3, n=5）：
+      
+        n=5  0 1 2 3 4
+      m=3 ┌─┬─┬─┬─┬─┐
+        0 │0│·│·│·│·│
+          ├─┼─┼─┼─┼─┤
+        1 │·│·│·│·│·│
+          ├─┼─┼─┼─┼─┤
+        2 │·│·│·│·│·│
+          └─┴─┴─┴─┴─┘
+          
+      0到14的数与3×5格点一一对应
+      
+    intuitive: |
+      【直觉表征】
+      
+      钟表类比：
+      - 时钟：12小时制
+      - 分钟：60分钟
+      - 知道时针和分针位置 → 确定精确时间
+      
+      坐标系统：
+      - m 和 n 是两个"维度"
+      - (mod m, mod n) 确定格点
+      - 总共 m×n 个格点
+      
+    computational: |
+      【计算表征】
+      
+      例：x ≡ 2 (mod 3), x ≡ 3 (mod 5)
+      
+      计算步骤：
+      N = 15, N₁ = 5, N₂ = 3
+      M₁: 5M₁ ≡ 1 (mod 3) → M₁ = 2
+      M₂: 3M₂ ≡ 1 (mod 5) → M₂ = 2
+      
+      x = 2×5×2 + 3×3×2 = 20 + 18 = 38 ≡ 8 (mod 15)
+      
+      验证：8 ≡ 2 (mod 3) ✓, 8 ≡ 3 (mod 5) ✓
+      
+    categorical: |
+      【范畴表征】
+      
+      环论视角：
+      - 互素理想 I + J = R
+      - 环同构 R/(I∩J) ≅ R/I × R/J
+      - 推广到任意交换环
+      
+      范畴论视角：
+      - CRT是积分解（product decomposition）
+      - 反映了模结构的分解
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "密码学"
+      description: "RSA加密的效率优化"
+      detail: "用CRT加速模幂运算"
+      
+    - domain: "计算机科学"
+      description: "大整数运算"
+      detail: "分解为多个小模数计算"
+      
+    - domain: "代数"
+      description: "环的分解"
+      detail: "ℤ/nℤ的结构"
+      
+    - domain: "历史"
+      description: "《孙子算经》问题"
+      detail: "公元前3-5世纪中国数学"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "modular-arithmetic"
+        role: "基本框架"
+      - id: "gcd"
+        role: "互素条件"
+      - id: "ideal"
+        role: "环论推广"
+        
+    uses_theorems:
+      - id: "bezout-identity"
+        role: "构造逆元"
+        
+    implies:
+      - id: "euler-phi-multiplicativity"
+        description: "φ(mn) = φ(m)φ(n) 当gcd(m,n)=1"
+        
+    related_to:
+      - id: "ring-isomorphism"
+        description: "环同构形式"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      concepts: ["modular-arithmetic", "gcd"]
+      
+    history:
+      first_appearance: "3-5世纪"
+      origin: "中国《孙子算经》"
+      western_formulation: "Gauss《算术研究》"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Data.ZMod.Basic"
+    main_theorem: "ZMod.chineseRemainder"
+    coverage: "complete"

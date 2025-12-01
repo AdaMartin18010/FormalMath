@@ -1,0 +1,254 @@
+# yoneda-lemma.yaml - 米田引理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "yoneda-lemma"
+  name:
+    zh: "米田引理"
+    en: "Yoneda Lemma"
+  msc_codes: ["18A-XX"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 C 是局部小范畴，A 是 C 的对象，F: C → Set 是函子。
+      则存在自然双射：
+      
+      Nat(Hom(A, -), F) ≅ F(A)
+      
+      即：从可表函子 Hom(A,-) 到 F 的自然变换
+      与 F(A) 的元素一一对应。
+      
+      对应关系：α ↦ α_A(id_A)
+      
+    informal: |
+      一个对象完全由它如何被其他对象"看到"决定。
+      
+      类比：一个人完全由他与所有人的关系决定。
+      如果两个人与所有人的关系完全相同，
+      那么他们是"同一个人"（同构）。
+      
+      米田引理说：研究对象A ⟺ 研究Hom(A,-)
+      
+    lean: |
+      -- Mathlib形式化
+      def yoneda : C ⥤ (Cᵒᵖ ⥤ Type v) where
+        obj := yonedaObj
+        map := yonedaMap
+        
+      theorem yoneda_lemma {C : Type u} [Category.{v} C] 
+        (A : C) (F : Cᵒᵖ ⥤ Type v) :
+        (yoneda.obj A ⟶ F) ≃ F.obj (op A)
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "构造双射并验证自然性"
+    
+    key_ideas:
+      - "自然变换由一个元素完全确定"
+      - "自然性条件强制所有分量一致"
+      - "id_A 是"万有元素""
+      
+    steps:
+      - step: 1
+        content: "构造映射 Φ: Nat(Hom(A,-), F) → F(A)"
+        detail: "Φ(α) = α_A(id_A)"
+        
+      - step: 2
+        content: "构造逆映射 Ψ: F(A) → Nat(Hom(A,-), F)"
+        detail: "对 x ∈ F(A)，定义 Ψ(x)_B(f) = F(f)(x)"
+        
+      - step: 3
+        content: "验证 Ψ(x) 是自然变换"
+        detail: "自然性方块交换"
+        
+      - step: 4
+        content: "验证 Φ ∘ Ψ = id"
+        detail: "Φ(Ψ(x)) = Ψ(x)_A(id_A) = F(id_A)(x) = x"
+        
+      - step: 5
+        content: "验证 Ψ ∘ Φ = id"
+        detail: "用自然性：α_B(f) = F(f)(α_A(id_A))"
+        
+    proof_tree: |
+      米田引理
+          │
+          ├── 构造Φ: Nat(Hom(A,-),F) → F(A)
+          │   └── α ↦ α_A(id_A)
+          │
+          ├── 构造Ψ: F(A) → Nat(Hom(A,-),F)
+          │   ├── 定义 Ψ(x)_B: Hom(A,B) → F(B)
+          │   │   └── f ↦ F(f)(x)
+          │   └── 验证自然性
+          │       └── 自然性方块交换
+          │
+          └── 互逆性
+              ├── Φ∘Ψ = id
+              │   └── F(id_A) = id_{F(A)}
+              └── Ψ∘Φ = id
+                  └── 自然性强制一致性
+                  
+    techniques:
+      - "函子性"
+      - "自然性"
+      - "万有性质"
+      
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      Nat(よ(A), F) ≅ F(A)
+      
+      其中 よ: C → [Cᵒᵖ, Set] 是Yoneda嵌入
+      よ(A) = Hom(-, A)
+      
+      推论（Yoneda嵌入）：
+      Hom(よ(A), よ(B)) ≅ Hom(A, B)
+      よ 是全忠实函子
+      
+    geometric: |
+      【几何表征】
+      
+      自然变换完全由一点决定：
+      
+         A ──id_A──→ A
+         │           │
+       α_A│           │α_B
+         ↓    F(f)   ↓
+       F(A) ──────→ F(B)
+       
+       x = α_A(id_A) 确定整个 α
+       因为 α_B(f) = F(f)(x) 由自然性强制
+       
+    intuitive: |
+      【直觉表征】
+      
+      身份证类比：
+      - 对象A像一个人
+      - Hom(A,B)是"A看B"的方式
+      - Hom(-,A)是"所有人看A"的方式
+      - 米田引理：一个人完全由"别人怎么看他"确定
+      
+      探测类比：
+      - F(A)是"用F探测A的结果"
+      - Nat(Hom(A,-),F)是"从A的视角理解F"
+      - 这两种理解等价！
+      
+    computational: |
+      【计算表征】
+      
+      在Haskell中：
+      
+      -- Yoneda引理的编程体现
+      newtype Yoneda f a = Yoneda (forall b. (a -> b) -> f b)
+      
+      -- 同构
+      toYoneda :: Functor f => f a -> Yoneda f a
+      toYoneda fa = Yoneda (\f -> fmap f fa)
+      
+      fromYoneda :: Yoneda f a -> f a
+      fromYoneda (Yoneda y) = y id
+      
+      -- 这正是：Nat(Hom(a,-), f) ≅ f a
+      
+    categorical: |
+      【范畴表征】
+      
+      Yoneda嵌入：
+      
+      C ──よ──→ [Cᵒᵖ, Set]
+      A ↦ Hom(-, A)
+      f ↦ f ∘ -
+      
+      性质：
+      1. よ 全忠实（保持并反映态射）
+      2. よ(A) ≅ よ(B) ⟹ A ≅ B
+      3. C 嵌入到函子范畴
+      
+      这说明：每个范畴可以"无损"嵌入到Set-值函子范畴
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "范畴论"
+      description: "可表函子的研究"
+      detail: "F可表 ⟺ F ≅ Hom(A,-) 对某A"
+      
+    - domain: "代数几何"
+      description: "函子的点（Functor of Points）"
+      detail: "概形由其函子完全确定"
+      
+    - domain: "同伦论"
+      description: "Brown可表性定理"
+      
+    - domain: "计算机科学"
+      description: "Continuation-passing style"
+      detail: "Yoneda变换优化数据结构"
+      
+    - domain: "逻辑"
+      description: "Kripke语义"
+      detail: "可能世界与Yoneda嵌入"
+      
+  # ===== 推广与特化 =====
+  generalizations:
+    - id: "enriched-yoneda"
+      statement: "丰化范畴中的米田引理"
+      description: "V-范畴版本"
+      
+    - id: "higher-yoneda"
+      statement: "高阶范畴中的米田引理"
+      description: "∞-范畴版本"
+      
+  special_cases:
+    - id: "yoneda-embedding"
+      statement: "Hom(よA, よB) ≅ Hom(A,B)"
+      description: "Yoneda嵌入是全忠实的"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "category"
+        role: "定理背景"
+      - id: "functor"
+        role: "核心概念"
+      - id: "natural-transformation"
+        role: "核心概念"
+      - id: "hom-functor"
+        role: "可表函子"
+        
+    uses_theorems: []
+    
+    implies:
+      - id: "yoneda-embedding-full-faithful"
+        description: "Yoneda嵌入全忠实"
+      - id: "representable-uniqueness"
+        description: "可表函子的表示对象唯一"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      concepts: ["category", "functor", "natural-transformation"]
+      theorems: []
+      
+    year_proved: 1954
+    provers: ["yoneda"]
+    
+    historical_note: |
+      米田信夫在1954年的论文中提出此引理。
+      Mac Lane称之为"范畴论中最重要的结果"。
+      虽然证明不难，但其哲学含义深远。
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.CategoryTheory.Yoneda"
+    main_theorem: "yonedaEquiv"
+    coverage: "complete"
+    
+    related_definitions:
+      - "yoneda"
+      - "coyoneda"
+      - "yonedaEquiv"

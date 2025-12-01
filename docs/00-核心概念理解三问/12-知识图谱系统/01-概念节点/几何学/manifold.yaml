@@ -1,0 +1,253 @@
+# manifold.yaml - 流形概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "manifold"
+  name:
+    zh: "流形"
+    en: "Manifold"
+  msc_codes: ["57-XX", "53-XX"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【拓扑流形】
+      n维拓扑流形是Hausdorff、第二可数的拓扑空间M，
+      使得每点x∈M有邻域U同胚于ℝⁿ的开子集。
+      
+      【光滑流形】
+      光滑流形是配备极大光滑图册的拓扑流形。
+      图册 {(Uα, φα)} 满足：
+      - ⋃Uα = M
+      - 转移函数 φβ∘φα⁻¹ 是光滑的
+      
+    informal: |
+      流形是"局部像欧氏空间"的空间。
+      
+      想象地球表面：整体是弯曲的球面，
+      但在任意小区域内，它看起来像平面（地图）。
+      每张地图覆盖一个小区域，多张地图拼成地图册。
+      
+      流形 = "可以用坐标卡覆盖的空间"
+      
+    lean: |
+      -- Mathlib定义
+      class TopologicalManifold (n : ℕ) (M : Type*) [TopologicalSpace M] 
+        extends ChartedSpace (EuclideanSpace ℝ (Fin n)) M where
+        compatible : ∀ e e' : LocalHomeomorph M (EuclideanSpace ℝ (Fin n)),
+          e ∈ atlas → e' ∈ atlas → e.symm ≫ₕ e' ∈ contDiffGroupoid ∞
+          
+      class SmoothManifoldWithCorners (n : ℕ) (M : Type*) [TopologicalSpace M]
+        extends ChartedSpace (EuclideanHalfSpace n) M
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】弯曲但局部平坦的空间
+      - 球面S²：局部像平面
+      - 圆环T²：甜甜圈表面
+      - Klein瓶：不可定向曲面
+      
+      流形是几何学的"舞台"
+      
+    algebraic: |
+      【代数直觉】坐标变换的相容性
+      - 不同坐标系给出相同的几何
+      - 转移函数是"坐标变换"
+      - 张量在坐标变换下的不变性
+      
+    physical: |
+      【物理直觉】时空与相空间
+      - 广义相对论：时空是4维流形
+      - 经典力学：相空间是辛流形
+      - 规范场论：主丛结构
+      
+    categorical: |
+      【范畴直觉】
+      - Man：流形与光滑映射的范畴
+      - 函子：流形 → 代数不变量
+      - 配边理论：流形的态射
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "坐标卡图示"
+      content: |
+        流形的坐标卡覆盖：
+        
+            M（流形）
+        ┌───────────────────┐
+        │   ╭───╮  ╭───╮    │
+        │   │U₁ │╲╱│U₂ │    │
+        │   ╰───╯  ╰───╯    │
+        └───────────────────┘
+             φ₁↓     ↓φ₂
+        ┌───────┐ ┌───────┐
+        │  ℝⁿ   │ │  ℝⁿ   │
+        └───────┘ └───────┘
+        
+        转移函数：φ₂∘φ₁⁻¹ 在重叠区域光滑
+        
+    - type: "切空间可视化"
+      content: |
+        流形上的切空间：
+        
+              TₚM（切空间）
+               ↗
+        ──────•──────  M
+              p
+              
+        每点p处有切空间TₚM ≅ ℝⁿ
+        切丛TM是所有切空间的并
+        
+    - type: "典型例子"
+      content: |
+        常见流形：
+        - S¹: 圆（1维）
+        - S²: 球面（2维）
+        - T²: 环面（2维）
+        - ℝPⁿ: 实射影空间
+        - Gr(k,n): Grassmann流形
+        
+  # ===== 例子层 =====
+  examples:
+    basic:
+      - name: "欧氏空间 ℝⁿ"
+        description: "最简单的流形，单坐标卡覆盖"
+        dimension: "n"
+        properties: ["可缩", "可定向", "非紧"]
+        
+      - name: "球面 Sⁿ"
+        description: "ℝⁿ⁺¹中单位球面"
+        dimension: "n"
+        properties: ["紧致", "可定向", "单连通(n≥2)"]
+        
+      - name: "环面 Tⁿ"
+        description: "n个圆的乘积"
+        dimension: "n"
+        properties: ["紧致", "可定向", "非单连通"]
+        
+    lie_groups:
+      - name: "一般线性群 GL(n,ℝ)"
+        description: "可逆矩阵构成的李群"
+        dimension: "n²"
+        properties: ["李群", "非紧", "非连通"]
+        
+      - name: "正交群 O(n)"
+        description: "正交矩阵"
+        dimension: "n(n-1)/2"
+        properties: ["李群", "紧致"]
+        
+      - name: "酉群 U(n)"
+        description: "酉矩阵"
+        dimension: "n²"
+        properties: ["李群", "紧致", "连通"]
+        
+    special:
+      - name: "实射影空间 ℝPⁿ"
+        description: "Sⁿ模对径点"
+        dimension: "n"
+        properties: ["紧致", "不可定向(n偶)"]
+        
+      - name: "Klein瓶 K"
+        description: "不可定向2维流形"
+        dimension: "2"
+        properties: ["紧致", "不可定向", "不可嵌入ℝ³"]
+        
+    with_structure:
+      - name: "黎曼流形"
+        description: "配备黎曼度量的光滑流形"
+        additional: "度量张量 g"
+        
+      - name: "辛流形"
+        description: "配备辛形式的流形"
+        additional: "非退化闭2-形式 ω"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "topological-space"
+        description: "流形是特殊拓扑空间"
+      - id: "euclidean-space"
+        description: "局部模型"
+      - id: "homeomorphism"
+        description: "坐标卡是同胚"
+        
+    generalizes:
+      - id: "euclidean-space"
+        description: "ℝⁿ是最简单的流形"
+        
+    specialized_by:
+      - id: "smooth-manifold"
+        description: "光滑流形"
+      - id: "riemannian-manifold"
+        description: "黎曼流形"
+      - id: "symplectic-manifold"
+        description: "辛流形"
+      - id: "complex-manifold"
+        description: "复流形"
+      - id: "lie-group"
+        description: "李群是流形+群"
+        
+    related_to:
+      - id: "tangent-bundle"
+        description: "切丛"
+      - id: "vector-bundle"
+        description: "向量丛"
+      - id: "differential-form"
+        description: "微分形式"
+      - id: "connection"
+        description: "联络"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "whitney-embedding"
+      statement: "n维流形可嵌入ℝ²ⁿ"
+      importance: 5
+      
+    - id: "nash-embedding"
+      statement: "黎曼流形可等距嵌入欧氏空间"
+      importance: 5
+      
+    - id: "gauss-bonnet"
+      statement: "曲率与拓扑的关系"
+      importance: 5
+      
+    - id: "poincare-conjecture"
+      statement: "单连通闭3-流形是S³"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      - "topological-space"
+      - "continuity"
+      - "differentiability"
+      
+    leads_to:
+      - "differential-geometry"
+      - "algebraic-topology"
+      - "general-relativity"
+      - "gauge-theory"
+      
+    history:
+      first_appearance: 1854
+      context: "Riemann的Habilitationsschrift"
+      development: "从曲面到高维，从拓扑到微分"
+      
+    key_figures:
+      - id: "riemann"
+        contribution: "流形概念、黎曼几何"
+      - id: "whitney"
+        contribution: "嵌入定理"
+      - id: "milnor"
+        contribution: "怪球、微分拓扑"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Geometry.Manifold.SmoothManifoldWithCorners"
+    name: "SmoothManifoldWithCorners"
+    coverage: "substantial"

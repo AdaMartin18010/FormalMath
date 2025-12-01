@@ -1,0 +1,205 @@
+# brouwer-fixed-point.yaml - Brouwer不动点定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "brouwer-fixed-point-theorem"
+  name:
+    zh: "Brouwer不动点定理"
+    en: "Brouwer Fixed-Point Theorem"
+  msc_codes: ["54H25", "55M20"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 Dⁿ = {x ∈ ℝⁿ : ‖x‖ ≤ 1} 是n维闭单位球。
+      若 f: Dⁿ → Dⁿ 是连续映射，则存在 x ∈ Dⁿ 使得：
+      f(x) = x
+      
+      即：连续自映射必有不动点。
+      
+    informal: |
+      如果你搅拌一杯咖啡（不溅出杯子），
+      搅拌完至少有一点回到原位。
+      
+      如果你揉一张纸（不撕破），
+      揉完至少有一点还在原位置。
+      
+    lean: |
+      -- Brouwer不动点定理
+      theorem brouwer_fixed_point {n : ℕ} (f : (closedBall 0 1 : Set (EuclideanSpace ℝ (Fin n))) → 
+        closedBall 0 1) (hf : Continuous f) :
+        ∃ x, f x = x
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "代数拓扑方法（同调论或基本群）"
+    
+    key_ideas:
+      - "反证法：假设无不动点"
+      - "构造收缩映射 r: Dⁿ → Sⁿ⁻¹"
+      - "导出矛盾（同调群或基本群）"
+      
+    steps:
+      - step: 1
+        content: "假设 f 无不动点"
+        detail: "∀x: f(x) ≠ x"
+        
+      - step: 2
+        content: "构造收缩映射 r: Dⁿ → Sⁿ⁻¹"
+        detail: "r(x) = 从f(x)到x的射线与Sⁿ⁻¹的交点"
+        
+      - step: 3
+        content: "r 是连续的"
+        detail: "因为f(x) ≠ x，射线方向连续"
+        
+      - step: 4
+        content: "r|_{Sⁿ⁻¹} = id"
+        detail: "边界上的点映到自身"
+        
+      - step: 5
+        content: "矛盾：Dⁿ到Sⁿ⁻¹没有满足r|_{Sⁿ⁻¹}=id的收缩"
+        detail: "使用同调论或基本群论证"
+        
+    proof_tree: |
+      Brouwer不动点定理
+          │
+          ├── 假设 f 无不动点
+          │
+          ├── 构造收缩 r: Dⁿ → Sⁿ⁻¹
+          │   └── r(x) = 射线 f(x)→x 与球面的交点
+          │
+          ├── 验证 r 是连续的
+          │
+          ├── 验证 r|_{Sⁿ⁻¹} = id
+          │
+          └── 矛盾
+              ├── n=1: Dⁿ连通，Sⁿ⁻¹={±1}不连通
+              ├── n=2: π₁(S¹)=ℤ, π₁(D²)=0
+              └── 一般n: Hₙ₋₁(Sⁿ⁻¹)≠0, Hₙ₋₁(Dⁿ)=0
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      f: Dⁿ → Dⁿ 连续 ⟹ ∃x: f(x) = x
+      
+      等价形式：
+      - f: B → B 连续，B紧致凸 ⟹ ∃不动点
+      - 不存在收缩 r: Dⁿ → Sⁿ⁻¹ 使 r|_{Sⁿ⁻¹} = id
+      
+    geometric: |
+      【几何表征】
+      
+      n=2情况（圆盘）：
+      
+        ╭──────╮
+       ╱   •→•  ╲   f把点移动
+      │    ↓     │   但总有一个不动点
+      │    •     │   
+       ╲        ╱
+        ╰──────╯
+        
+      无论怎么连续变形，总有一点不动
+      
+    intuitive: |
+      【直觉表征】
+      
+      咖啡搅拌类比：
+      - 咖啡 = 圆盘
+      - 搅拌 = 连续映射
+      - 结论：至少一滴咖啡回到原位
+      
+      地图类比：
+      - 在地图上放一张相同地图（按比例缩小）
+      - 两张地图上同一地点重合的位置存在
+      
+    computational: |
+      【计算表征】
+      
+      数值验证：迭代法寻找不动点
+      
+      def find_fixed_point(f, x0, tol=1e-6):
+          x = x0
+          for _ in range(1000):
+              x_new = f(x)
+              if norm(x_new - x) < tol:
+                  return x
+              x = x_new
+          return x  # 应该收敛
+          
+    categorical: |
+      【范畴表征】
+      
+      同调视角：
+      - H*(Dⁿ) = H*(pt)（圆盘同调平凡）
+      - H*(Sⁿ⁻¹) 非平凡
+      - 收缩映射诱导同调同构，矛盾
+      
+      基本群视角（n=2）：
+      - π₁(D²) = 0
+      - π₁(S¹) = ℤ
+      - 收缩 ⟹ ℤ嵌入0，矛盾
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "博弈论"
+      description: "Nash均衡存在性"
+      detail: "最优反应映射的不动点"
+      
+    - domain: "经济学"
+      description: "一般均衡存在性"
+      detail: "Kakutani不动点定理（推广）"
+      
+    - domain: "微分方程"
+      description: "解的存在性"
+      detail: "Peano存在定理的一种证明"
+      
+    - domain: "数值分析"
+      description: "迭代法收敛性"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "continuity"
+        role: "映射条件"
+      - id: "compactness"
+        role: "空间条件"
+      - id: "convexity"
+        role: "空间条件"
+        
+    uses_theorems:
+      - id: "non-retraction-theorem"
+        role: "等价形式"
+        
+    implies:
+      - id: "intermediate-value-theorem-1d"
+        description: "一维情况"
+      - id: "hairy-ball-theorem"
+        description: "相关结果"
+        
+    generalized_by:
+      - id: "schauder-fixed-point"
+        description: "无穷维版本"
+      - id: "kakutani-fixed-point"
+        description: "多值映射版本"
+      - id: "lefschetz-fixed-point"
+        description: "拓扑版本"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      concepts: ["continuity", "compactness", "homology"]
+      
+    year_proved: 1911
+    provers: ["brouwer"]
+    
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Topology.MetricSpace.Baire"
+    main_theorem: "Not fully formalized yet"
+    coverage: "partial"

@@ -1,0 +1,125 @@
+# cauchy-integral-formula.yaml - Cauchy积分公式知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "cauchy-integral-formula"
+  name:
+    zh: "Cauchy积分公式"
+    en: "Cauchy Integral Formula"
+  msc_codes: ["30C35"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 f 在简单闭曲线 γ 内部及边界上解析。
+      对于 γ 内部的任意点 z₀：
+      
+      f(z₀) = (1/2πi) ∮_γ f(z)/(z - z₀) dz
+      
+      更一般地，导数公式：
+      f⁽ⁿ⁾(z₀) = (n!/2πi) ∮_γ f(z)/(z - z₀)^{n+1} dz
+      
+    informal: |
+      解析函数在内部的值完全由边界上的值决定！
+      
+      这是复分析最重要的结果之一：
+      - 知道边界上f的值
+      - 就能求出内部任何点的值
+      - 甚至能求出所有阶导数
+      
+    lean: |
+      theorem cauchy_integral_formula {f : ℂ → ℂ} {z₀ : ℂ} {r : ℝ}
+        (hr : 0 < r) (hf : DifferentiableOn ℂ f (closedBall z₀ r))
+        (hz : z ∈ ball z₀ r) :
+        f z = (1 / (2 * Real.pi * Complex.I)) * 
+              ∮ ζ in C(z₀, r), f ζ / (ζ - z)
+              
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "同伦变形 + 围道收缩"
+    
+    proof_tree: |
+      Cauchy积分公式
+          │
+          ├── Cauchy积分定理
+          │   └── 解析区域内积分为0
+          │
+          ├── 围道变形
+          │   ├── 大圆 → 小圆（绕z₀）
+          │   └── 保持积分值
+          │
+          └── 计算极限
+              └── 当半径→0，得到f(z₀)
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      基本形式：f(z₀) = (1/2πi) ∮ f(z)/(z-z₀) dz
+      
+      导数形式：f⁽ⁿ⁾(z₀) = (n!/2πi) ∮ f(z)/(z-z₀)^{n+1} dz
+      
+      Cauchy不等式：|f⁽ⁿ⁾(z₀)| ≤ n! M/rⁿ
+      
+    geometric: |
+      【几何表征】
+      
+           γ (围道)
+          ╱ ╲
+         ╱   ╲
+        │  •  │  z₀ 在内部
+        │     │
+         ╲   ╱
+          ╲ ╱
+          
+      边界信息 → 内部信息
+      
+    intuitive: |
+      【直觉表征】
+      
+      平均值性质：
+      圆心处的值 = 圆周上的平均值
+      
+      f(z₀) = (1/2π) ∫₀^{2π} f(z₀ + re^{iθ}) dθ
+      
+    computational: |
+      【计算表征】
+      
+      import numpy as np
+      
+      def cauchy_integral(f, z0, radius, n_points=1000):
+          theta = np.linspace(0, 2*np.pi, n_points)
+          z = z0 + radius * np.exp(1j * theta)
+          dz = 1j * radius * np.exp(1j * theta)
+          integrand = f(z) / (z - z0) * dz
+          return np.trapz(integrand, theta) / (2j * np.pi)
+          
+  # ===== 应用层 =====
+  applications:
+    - description: "证明解析函数无穷可微"
+    - description: "Liouville定理（有界整函数是常数）"
+    - description: "代数基本定理"
+    - description: "留数计算"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "analytic-function"
+        role: "适用对象"
+      - id: "contour-integral"
+        role: "定义方式"
+        
+    implies:
+      - id: "liouville-theorem"
+      - id: "cauchy-inequality"
+      - id: "taylor-series"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    history:
+      discoverer: "Augustin-Louis Cauchy"
+      year: 1831

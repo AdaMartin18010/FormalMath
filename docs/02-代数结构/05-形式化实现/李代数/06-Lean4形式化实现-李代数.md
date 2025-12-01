@@ -20,18 +20,18 @@
 -- 李代数的基本定义
 class LieAlgebra (𝔤 : Type*) [Ring 𝔤] where
   bracket : 𝔤 → 𝔤 → 𝔤
-  
+
   -- 双线性性
   bracket_bilinear : ∀ a b c : 𝔤, bracket (a + b) c = bracket a c + bracket b c
   bracket_bilinear_right : ∀ a b c : 𝔤, bracket a (b + c) = bracket a b + bracket a c
   bracket_scalar : ∀ a b : 𝔤, ∀ r : ℝ, bracket (r • a) b = r • bracket a b
   bracket_scalar_right : ∀ a b : 𝔤, ∀ r : ℝ, bracket a (r • b) = r • bracket a b
-  
+
   -- 反对称性
   bracket_antisymmetric : ∀ a b : 𝔤, bracket a b = -bracket b a
-  
+
   -- 雅可比恒等式
-  jacobi_identity : ∀ a b c : 𝔤, 
+  jacobi_identity : ∀ a b c : 𝔤,
     bracket a (bracket b c) + bracket b (bracket c a) + bracket c (bracket a b) = 0
 
 -- 李代数同态
@@ -122,17 +122,17 @@ theorem nilpotent_properties {𝔤 : Type*} [LieAlgebra 𝔤] (h : NilpotentLieA
 -- 李代数表示
 class LieAlgebraRepresentation {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V] where
   representation_map : 𝔤 → Endomorphism V
-  
+
   -- 线性性
   representation_linear : ∀ a b : 𝔤, representation_map (a + b) = representation_map a + representation_map b
   representation_scalar : ∀ a : 𝔤, ∀ r : ℝ, representation_map (r • a) = r • representation_map a
-  
+
   -- 保持李括号
-  representation_bracket : ∀ a b : 𝔤, 
+  representation_bracket : ∀ a b : 𝔤,
     representation_map (bracket a b) = [representation_map a, representation_map b]
 
 -- 表示同态
-class RepresentationHomomorphism {𝔤 V₁ V₂ : Type*} 
+class RepresentationHomomorphism {𝔤 V₁ V₂ : Type*}
   [LieAlgebra 𝔤] [VectorSpace V₁] [VectorSpace V₂]
   [LieAlgebraRepresentation 𝔤 V₁] [LieAlgebraRepresentation 𝔤 V₂] (T : V₁ → V₂) where
   linear : ∀ v w : V₁, T (v + w) = T v + T w
@@ -140,12 +140,12 @@ class RepresentationHomomorphism {𝔤 V₁ V₂ : Type*}
   intertwining : ∀ a : 𝔤, ∀ v : V₁, T (representation_map a v) = representation_map a (T v)
 
 -- 不可约表示
-def IrreducibleRepresentation {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V] 
+def IrreducibleRepresentation {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V]
   [LieAlgebraRepresentation 𝔤 V] : Prop :=
   ∀ W : Subspace V, InvariantSubspace W → W = ⊥ ∨ W = ⊤
 
 -- 不变子空间
-def InvariantSubspace {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V] 
+def InvariantSubspace {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V]
   [LieAlgebraRepresentation 𝔤 V] (W : Subspace V) : Prop :=
   ∀ a : 𝔤, ∀ w : W, representation_map a w ∈ W
 ```
@@ -174,7 +174,7 @@ theorem schur_corollary {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V]
 
 ```lean
 -- 特征标
-def Character {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V] 
+def Character {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V]
   [LieAlgebraRepresentation 𝔤 V] : 𝔤 → ℝ :=
   λ a => trace (representation_map a)
 
@@ -254,21 +254,21 @@ theorem weyl_group_properties {𝔤 : Type*} [LieAlgebra 𝔤] (𝔥 : CartanSub
 def Weight {𝔤 : Type*} [LieAlgebra 𝔤] (𝔥 : CartanSubalgebra 𝔤) : Type* := 𝔥*
 
 -- 最高权
-def HighestWeight {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V] 
+def HighestWeight {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V]
   [LieAlgebraRepresentation 𝔤 V] (𝔥 : CartanSubalgebra 𝔤) (λ : Weight 𝔥) : Prop :=
-  ∃ v : V, v ≠ 0 ∧ 
+  ∃ v : V, v ≠ 0 ∧
   (∀ h : 𝔥, representation_map h v = λ h • v) ∧
   (∀ α : RootSystem 𝔥, ∀ x : RootSpace 𝔥 α, representation_map x v = 0)
 
 -- 最高权表示
-def HighestWeightRepresentation {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V] 
+def HighestWeightRepresentation {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V]
   [LieAlgebraRepresentation 𝔤 V] (𝔥 : CartanSubalgebra 𝔤) (λ : Weight 𝔥) : Prop :=
   IrreducibleRepresentation 𝔤 V ∧ HighestWeight 𝔥 λ
 
 -- Weyl特征标公式
 theorem weyl_character_formula {𝔤 V : Type*} [SemisimpleLieAlgebra 𝔤] [VectorSpace V]
   [HighestWeightRepresentation 𝔤 V] (𝔥 : CartanSubalgebra 𝔤) (λ : Weight 𝔥) :
-  Character V = (∑ w : WeylGroup 𝔥, sign w • exp (w • (λ + ρ) - ρ)) / 
+  Character V = (∑ w : WeylGroup 𝔥, sign w • exp (w • (λ + ρ) - ρ)) /
                 (∏ α : PositiveRoot 𝔥, (1 - exp (-α))) := by
   -- Weyl特征标公式的证明
   sorry
@@ -420,7 +420,7 @@ theorem sp_properties (n : ℕ) :
 
 ```lean
 -- 伴随表示
-def AdjointRepresentation {𝔤 : Type*} [LieAlgebra 𝔤] : 
+def AdjointRepresentation {𝔤 : Type*} [LieAlgebra 𝔤] :
   LieAlgebraRepresentation 𝔤 𝔤 where
   representation_map := λ a => λ x => bracket a x
   representation_linear := by sorry
@@ -440,7 +440,7 @@ theorem adjoint_properties {𝔤 : Type*} [LieAlgebra 𝔤] :
 
 ```lean
 -- 张量积表示
-def TensorProductRepresentation {𝔤 V₁ V₂ : Type*} [LieAlgebra 𝔤] 
+def TensorProductRepresentation {𝔤 V₁ V₂ : Type*} [LieAlgebra 𝔤]
   [VectorSpace V₁] [VectorSpace V₂]
   [LieAlgebraRepresentation 𝔤 V₁] [LieAlgebraRepresentation 𝔤 V₂] :
   LieAlgebraRepresentation 𝔤 (V₁ ⊗ V₂) where
@@ -480,19 +480,19 @@ theorem dual_character {𝔤 V : Type*} [LieAlgebra 𝔤] [VectorSpace V]
 
 ```lean
 -- 计算根系
-def ComputeRootSystem {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (𝔥 : CartanSubalgebra 𝔤) : 
+def ComputeRootSystem {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (𝔥 : CartanSubalgebra 𝔤) :
   List (RootSystem 𝔥) :=
   -- 通过Cartan子代数的特征值计算根系
   sorry
 
 -- 正根
-def PositiveRoots {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (𝔥 : CartanSubalgebra 𝔤) : 
+def PositiveRoots {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (𝔥 : CartanSubalgebra 𝔤) :
   Set (RootSystem 𝔥) :=
   -- 根据某种顺序确定正根
   sorry
 
 -- 单根
-def SimpleRoots {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (𝔥 : CartanSubalgebra 𝔤) : 
+def SimpleRoots {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (𝔥 : CartanSubalgebra 𝔤) :
   List (RootSystem 𝔥) :=
   -- 寻找不可分解的正根
   sorry
@@ -510,7 +510,7 @@ theorem root_system_verification {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (�
 
 ```lean
 -- 计算Weyl群
-def ComputeWeylGroup {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (𝔥 : CartanSubalgebra 𝔤) : 
+def ComputeWeylGroup {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (𝔥 : CartanSubalgebra 𝔤) :
   Group (WeylGroup 𝔥) :=
   -- 通过单根反射生成Weyl群
   sorry
@@ -534,20 +534,20 @@ theorem weyl_group_verification {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] (𝔥
 
 ```lean
 -- 计算最高权表示
-def ComputeHighestWeightRepresentation {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] 
-  (𝔥 : CartanSubalgebra 𝔤) (λ : Weight 𝔥) : 
+def ComputeHighestWeightRepresentation {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤]
+  (𝔥 : CartanSubalgebra 𝔤) (λ : Weight 𝔥) :
   HighestWeightRepresentation 𝔤 (HighestWeightModule 𝔥 λ) :=
   -- 构造最高权模
   sorry
 
 -- 最高权模的维数
-def HighestWeightModuleDimension {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] 
+def HighestWeightModuleDimension {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤]
   (𝔥 : CartanSubalgebra 𝔤) (λ : Weight 𝔥) : ℕ :=
   -- Weyl维数公式
   sorry
 
 -- 最高权表示的性质验证
-theorem highest_weight_verification {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤] 
+theorem highest_weight_verification {𝔤 : Type*} [SemisimpleLieAlgebra 𝔤]
   (𝔥 : CartanSubalgebra 𝔤) (λ : Weight 𝔥) :
   -- 最高权表示是有限的
   FiniteDimensional (HighestWeightModule 𝔥 λ) →
@@ -606,7 +606,7 @@ theorem su3_root_system :
 
 -- su(3)的表示
 theorem su3_representations (λ₁ λ₂ : ℕ) :
-  ∃ V : Type*, HighestWeightRepresentation SU3LieAlgebra V ∧ 
+  ∃ V : Type*, HighestWeightRepresentation SU3LieAlgebra V ∧
   dim V = (λ₁ + 1) * (λ₂ + 1) * (λ₁ + λ₂ + 2) / 2 := by
   sorry
 ```

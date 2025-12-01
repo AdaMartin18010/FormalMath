@@ -1,0 +1,229 @@
+# dominated-convergence.yaml - 控制收敛定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "dominated-convergence-theorem"
+  name:
+    zh: "控制收敛定理"
+    en: "Dominated Convergence Theorem (DCT)"
+  msc_codes: ["28A20", "28A25"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 (X, Σ, μ) 是测度空间，{fₙ} 是可测函数列。若：
+      1. fₙ → f 几乎处处（a.e.）
+      2. 存在可积函数 g 使 |fₙ| ≤ g a.e. 对所有 n
+      
+      则：
+      - f 可积
+      - ∫ fₙ dμ → ∫ f dμ
+      - 等价地：lim ∫ fₙ = ∫ lim fₙ
+      
+    informal: |
+      如果一列函数：
+      1. 逐点收敛到某函数
+      2. 被一个可积函数"控制"（压住）
+      
+      那么积分和极限可以交换顺序。
+      
+      控制函数g像一个"帽子"，把所有fₙ压在下面，
+      保证积分不会跑到无穷。
+      
+    lean: |
+      -- Mathlib形式化
+      theorem tendsto_integral_of_dominated_convergence {α : Type*}
+        [MeasurableSpace α] {μ : Measure α}
+        {F : ℕ → α → ℝ} {f : α → ℝ} {bound : α → ℝ}
+        (bound_integrable : Integrable bound μ)
+        (h_meas : ∀ n, AEStronglyMeasurable (F n) μ)
+        (h_bound : ∀ n, ∀ᵐ x ∂μ, ‖F n x‖ ≤ bound x)
+        (h_lim : ∀ᵐ x ∂μ, Tendsto (fun n => F n x) atTop (𝓝 (f x))) :
+        Tendsto (fun n => ∫ x, F n x ∂μ) atTop (𝓝 (∫ x, f x ∂μ))
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "Fatou引理 + 上下界估计"
+    
+    key_ideas:
+      - "用Fatou引理处理极限下界"
+      - "利用控制条件得到上界"
+      - "夹逼得到结论"
+      
+    steps:
+      - step: 1
+        content: "证明f可测"
+        detail: "可测函数的极限可测"
+        
+      - step: 2
+        content: "|f| ≤ g a.e.，所以f可积"
+        
+      - step: 3
+        content: "下界：应用Fatou引理于 g + fₙ ≥ 0"
+        formula: "∫f ≤ liminf ∫fₙ"
+        
+      - step: 4
+        content: "上界：应用Fatou引理于 g - fₙ ≥ 0"
+        formula: "limsup ∫fₙ ≤ ∫f"
+        
+      - step: 5
+        content: "结合上下界得到 lim ∫fₙ = ∫f"
+        
+    proof_tree: |
+      控制收敛定理
+          │
+          ├── f可积
+          │   ├── f可测（可测函数的a.e.极限）
+          │   └── |f| ≤ g（控制条件的极限）
+          │
+          ├── 下界估计
+          │   ├── g + fₙ ≥ 0
+          │   ├── Fatou引理
+          │   │   └── ∫(g+f) ≤ liminf ∫(g+fₙ)
+          │   └── ∫f ≤ liminf ∫fₙ
+          │
+          └── 上界估计
+              ├── g - fₙ ≥ 0
+              ├── Fatou引理
+              │   └── ∫(g-f) ≤ liminf ∫(g-fₙ)
+              └── limsup ∫fₙ ≤ ∫f
+              
+    techniques:
+      - "Fatou引理"
+      - "夹逼定理"
+      - "控制函数技巧"
+      
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      条件：fₙ →^{a.e.} f, |fₙ| ≤ g ∈ L¹
+      结论：lim_{n→∞} ∫ fₙ dμ = ∫ f dμ
+      
+      证明框架：
+      Fatou(g+fₙ): ∫(g+f) ≤ liminf ∫(g+fₙ)
+      Fatou(g-fₙ): ∫(g-f) ≤ liminf ∫(g-fₙ)
+      ⟹ ∫f = lim ∫fₙ
+      
+    geometric: |
+      【几何表征】
+      
+      控制函数的"帽子"作用：
+      
+           │    g(x)
+           │   ╱‾‾‾‾‾╲      控制函数
+           │  ╱ f₁f₂f₃╲
+           │ ╱  ∿∿∿∿∿  ╲    被控制的函数列
+           │╱           ╲
+           └─────────────────→ x
+           
+      所有fₙ都在g的"帽子"下
+      积分面积被∫g控制
+      
+    intuitive: |
+      【直觉表征】
+      
+      赛跑类比：
+      - fₙ是不同选手的速度曲线
+      - g是"最大可能速度"
+      - 只要所有选手速度不超过g
+      - 总路程的极限 = 极限选手的总路程
+      
+      为什么需要控制？
+      - 没有控制：每个fₙ可能在不同位置有尖峰
+      - 尖峰面积可能不收敛
+      - 控制函数限制了"尖峰"的可能性
+      
+    computational: |
+      【计算表征】
+      
+      数值验证：
+      
+      import numpy as np
+      from scipy import integrate
+      
+      def verify_dct():
+          # f_n(x) = n * x^n * (1-x) 在 [0,1] 上
+          # f_n → 0 a.e. (除了 x=1)
+          # 控制函数 g(x) = 1
+          
+          def f_n(x, n):
+              return n * (x**n) * (1-x)
+          
+          integrals = []
+          for n in range(1, 50):
+              val, _ = integrate.quad(lambda x: f_n(x, n), 0, 1)
+              integrals.append(val)
+          
+          # 积分收敛到 ∫0 dx = 0
+          print(f"积分趋于: {integrals[-1]:.6f}")  # → 0
+          
+    categorical: |
+      【范畴表征】
+      
+      从泛函分析观点：
+      - L¹(μ) 是Banach空间
+      - DCT给出了序列收敛的条件
+      - 这是"弱收敛"和"范数收敛"的桥梁
+      
+      态射层面：
+      - 积分是从L¹到ℝ的连续线性泛函
+      - DCT说明在什么条件下极限与积分交换
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "概率论"
+      description: "期望的收敛"
+      detail: "E[Xₙ] → E[X] 当 Xₙ → X 且有可积控制"
+      
+    - domain: "Fourier分析"
+      description: "Fourier级数收敛"
+      
+    - domain: "微分方程"
+      description: "参数积分的可微性"
+      detail: "证明∫f(x,t)dt对t可微"
+      
+    - domain: "数值分析"
+      description: "数值积分的收敛性证明"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "lebesgue-integral"
+        role: "积分概念"
+      - id: "measure"
+        role: "测度概念"
+      - id: "measurable-function"
+        role: "被积函数"
+        
+    uses_theorems:
+      - id: "fatou-lemma"
+        role: "证明工具"
+        
+    implies:
+      - id: "bounded-convergence"
+        description: "有界收敛定理（特例）"
+        
+    related_to:
+      - id: "monotone-convergence"
+        description: "单调收敛定理（另一种交换条件）"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+    prerequisites:
+      concepts: ["lebesgue-integral", "measure", "almost-everywhere"]
+      theorems: ["fatou-lemma"]
+      
+    year_proved: 1908
+    provers: ["lebesgue"]
+    
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.MeasureTheory.Integral.Lebesgue"
+    main_theorem: "tendsto_integral_of_dominated_convergence"
+    coverage: "complete"

@@ -1,0 +1,244 @@
+# field.yaml - 域概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "field"
+  name:
+    zh: "域"
+    en: "Field"
+  msc_codes: ["12-XX"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 F 是非空集合，+和·是F上的二元运算。
+      (F, +, ·) 是域，当且仅当满足：
+      
+      (F1) (F, +) 是阿贝尔群，单位元记为0
+      (F2) (F*, ·) 是阿贝尔群（F* = F \ {0}），单位元记为1
+      (F3) 分配律：a·(b+c) = a·b + a·c
+      (F4) 0 ≠ 1
+      
+      等价地：域是交换除环。
+      
+    informal: |
+      域是可以做"加减乘除"的数系。
+      - 有理数ℚ：分数的世界
+      - 实数ℝ：连续的数轴
+      - 复数ℂ：代数完备的世界
+      
+      域 = "像有理数一样的东西"
+      
+    lean: |
+      -- Mathlib定义
+      class Field (K : Type*) extends CommRing K, Inv K where
+        mul_inv_cancel : ∀ {a : K}, a ≠ 0 → a * a⁻¹ = 1
+        inv_zero : (0 : K)⁻¹ = 0
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】坐标域
+      - 向量空间需要"标量"来自域
+      - 几何构造需要域运算（尺规作图 ↔ ℚ的二次扩张）
+      - 代数几何：域 = 点的"坐标值"
+      
+    algebraic: |
+      【代数直觉】"最好的"代数结构
+      - 四则运算完全封闭
+      - 线性代数在域上"最干净"
+      - 域是最简单的"能做除法"的环
+      
+    physical: |
+      【物理直觉】
+      - 经典力学：实数域ℝ
+      - 量子力学：复数域ℂ（本征值）
+      - 有限域：编码理论、密码学
+      
+    categorical: |
+      【范畴直觉】
+      - 域是"单纯"的环：无非平凡理想
+      - 域扩张形成范畴
+      - Galois理论：域扩张 ↔ 群
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "特征与阶"
+      content: |
+        域的特征 char(F) = min{n∈ℕ : n·1 = 0}（若存在），否则为0
+        
+        有限域：|F| = p^n（p素数）
+        记作 𝔽_{p^n} 或 GF(p^n)
+        
+    - type: "域扩张塔"
+      content: |
+        ℚ ⊂ ℚ(√2) ⊂ ℚ(√2, √3) ⊂ ... ⊂ ℝ ⊂ ℂ
+        
+        扩张度 [L:K] = dim_K(L)
+        
+    - type: "Galois对应"
+      content: |
+        域扩张 L/K 的Galois理论：
+        
+        中间域 ←→ Gal(L/K)的子群
+        
+        这是代数的核心联系之一！
+        
+  # ===== 例子层 =====
+  examples:
+    characteristic_zero:
+      - name: "有理数域 ℚ"
+        description: "最小的特征0域"
+        properties: ["素域", "可数", "不完备"]
+        
+      - name: "实数域 ℝ"
+        description: "完备有序域"
+        properties: ["不可数", "完备", "有序"]
+        
+      - name: "复数域 ℂ"
+        description: "代数封闭域"
+        properties: ["代数封闭", "不可数", "不可序"]
+        
+      - name: "代数数域 Q̄"
+        description: "ℂ中的代数数"
+        properties: ["代数封闭", "可数"]
+        
+    finite_fields:
+      - name: "有限域 𝔽_p = Z/pZ"
+        description: "p个元素的素域"
+        properties: ["素域", "循环乘法群"]
+        
+      - name: "有限域 𝔽_{p^n}"
+        description: "p^n个元素的域"
+        properties: ["唯一（同构意义下）", "循环乘法群"]
+        
+    function_fields:
+      - name: "有理函数域 K(x)"
+        description: "K上的有理函数"
+        properties: ["超越扩张", "一维函数域"]
+        
+      - name: "亚纯函数域 M(X)"
+        description: "Riemann面X上的亚纯函数"
+        properties: ["代数函数域"]
+        
+    number_fields:
+      - name: "数域 K"
+        description: "ℚ的有限扩张"
+        properties: ["代数扩张", "[K:ℚ] < ∞"]
+        
+      - name: "分圆域 ℚ(ζ_n)"
+        description: "n次单位根生成的域"
+        properties: ["阿贝尔扩张", "Galois群 ≅ (Z/nZ)*"]
+        
+  counterexamples:
+    - name: "整数环 ℤ"
+      description: "非零元不一定有乘法逆"
+      note: "ℤ是整环但不是域"
+      
+    - name: "四元数 ℍ"
+      description: "乘法不交换"
+      note: "ℍ是除环但不是域"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "ring"
+        description: "域是特殊的环"
+      - id: "abelian-group"
+        description: "两个阿贝尔群结构"
+        
+    generalizes: []
+        
+    is_a:
+      - id: "integral-domain"
+        description: "域是整环"
+      - id: "commutative-ring"
+        description: "域是交换环"
+        
+    specialized_by:
+      - id: "algebraically-closed-field"
+        description: "代数封闭域"
+      - id: "real-closed-field"
+        description: "实封闭域"
+      - id: "finite-field"
+        description: "有限域"
+      - id: "number-field"
+        description: "数域"
+      - id: "local-field"
+        description: "局部域"
+        
+    related_to:
+      - id: "vector-space"
+        description: "向量空间的标量域"
+      - id: "galois-group"
+        description: "Galois理论"
+      - id: "valuation"
+        description: "赋值论"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "finite-field-classification"
+      statement: "有限域同构于𝔽_{p^n}"
+      importance: 5
+      
+    - id: "fundamental-theorem-galois-theory"
+      statement: "中间域与子群的Galois对应"
+      importance: 5
+      
+    - id: "fundamental-theorem-algebra"
+      statement: "ℂ是代数封闭的"
+      importance: 5
+      
+    - id: "artin-schreier-theory"
+      statement: "特征p的代数封闭"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+    prerequisites:
+      - "ring"
+      - "integral-domain"
+      - "group"
+      
+    corequisites:
+      - "field-extension"
+      - "algebraic-closure"
+      - "galois-theory"
+      
+    leads_to:
+      - "vector-space"
+      - "galois-theory"
+      - "algebraic-number-theory"
+      - "algebraic-geometry"
+      
+    history:
+      first_appearance: 1893
+      context: "Weber的抽象定义"
+      earlier_work: "Dedekind的数域研究"
+      
+    key_figures:
+      - id: "galois"
+        contribution: "有限域，Galois理论"
+      - id: "dedekind"
+        contribution: "数域"
+      - id: "steinitz"
+        contribution: "域论公理化，代数闭包"
+      - id: "artin"
+        contribution: "Galois理论现代形式"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Algebra.Field.Basic"
+    name: "Field"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Field/Basic.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "DivisionRing"
+      - "IsField"
+      - "FieldExtension"
+      - "GaloisGroup"

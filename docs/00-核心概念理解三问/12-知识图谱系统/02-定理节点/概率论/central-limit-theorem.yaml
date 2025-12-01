@@ -1,0 +1,130 @@
+# central-limit-theorem.yaml - 中心极限定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "central-limit-theorem"
+  name:
+    zh: "中心极限定理"
+    en: "Central Limit Theorem"
+  msc_codes: ["60F05"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 X₁, X₂, ... 是i.i.d.随机变量，E[Xᵢ] = μ, Var(Xᵢ) = σ² < ∞。
+      设 Sₙ = X₁ + ... + Xₙ。则：
+      
+      (Sₙ - nμ)/(σ√n) →^d N(0,1)
+      
+      即：lim P((Sₙ - nμ)/(σ√n) ≤ x) = Φ(x)
+      
+      其中 Φ(x) = (2π)^{-1/2} ∫_{-∞}^x e^{-t²/2} dt
+      
+    informal: |
+      大量独立随机变量的和趋近于正态分布！
+      
+      无论原始分布是什么：
+      - 掷骰子
+      - 抛硬币
+      - 任何有限方差的分布
+      
+      和的分布都趋于钟形曲线。
+      
+    lean: |
+      -- 中心极限定理
+      theorem central_limit_theorem 
+        {Ω : Type*} [MeasureSpace Ω] {X : ℕ → Ω → ℝ}
+        (hX_iid : ∀ n, IdentDistrib (X n) (X 0))
+        (hX_indep : Pairwise fun i j => IndepFun (X i) (X j))
+        (hμ : E[X 0] = μ) (hσ : Var(X 0) = σ²) :
+        TendstoInDistribution 
+          (fun ω => (∑ i < n, X i ω - n * μ) / (σ * Real.sqrt n))
+          (normalDistribution 0 1)
+          
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "特征函数方法"
+    
+    proof_tree: |
+      中心极限定理
+          │
+          ├── 标准化和 Zₙ = (Sₙ - nμ)/(σ√n)
+          │
+          ├── 特征函数 φ_{Zₙ}(t)
+          │   ├── φ_{Zₙ}(t) = [φ_X(t/(σ√n))]ⁿ · e^{-iμnt/(σ√n)}
+          │   ├── Taylor展开 φ_X
+          │   └── 极限 = e^{-t²/2}
+          │
+          └── Lévy连续性定理
+              └── 特征函数收敛 ⟹ 分布收敛
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      (Sₙ - nμ)/(σ√n) →^d N(0,1)
+      
+      等价：√n(S̄ₙ - μ)/σ →^d N(0,1)
+      
+    geometric: |
+      【几何表征】
+      
+      分布的演化：
+      
+      n小 ─────→ n大
+      
+      ╱╲          ┌╮
+     ╱  ╲    →   │ │  正态钟形
+                 └─╯
+                 
+    intuitive: |
+      【直觉表征】
+      
+      为什么正态分布无处不在？
+      - 身高、测量误差、考试成绩...
+      - 都是很多小因素的叠加
+      - 叠加的结果趋于正态
+      
+    computational: |
+      【计算表征】
+      
+      import numpy as np
+      import matplotlib.pyplot as plt
+      
+      # 模拟中心极限定理
+      n_samples = 10000
+      for n in [1, 5, 30]:
+          samples = np.random.uniform(0, 1, (n_samples, n))
+          means = samples.mean(axis=1)
+          standardized = (means - 0.5) / (1/np.sqrt(12*n))
+          plt.hist(standardized, bins=50, density=True)
+      # n越大，分布越接近标准正态
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "统计推断中的置信区间"
+    - description: "假设检验"
+    - description: "质量控制"
+    - description: "金融风险管理"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "random-variable"
+      - id: "probability-space"
+        
+    related_to:
+      - id: "law-of-large-numbers"
+        description: "CLT给出收敛速度"
+      - id: "normal-distribution"
+        description: "极限分布"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    history:
+      de_moivre_laplace: 1733
+      lindeberg_levy: 1922

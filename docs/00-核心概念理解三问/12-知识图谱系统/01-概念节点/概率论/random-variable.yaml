@@ -1,0 +1,164 @@
+# random-variable.yaml - 随机变量概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "random-variable"
+  name:
+    zh: "随机变量"
+    en: "Random Variable"
+  msc_codes: ["60A05", "60E05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 (Ω, ℱ, P) 是概率空间，(E, ℰ) 是可测空间。
+      随机变量是可测函数 X: Ω → E，即：
+      ∀B ∈ ℰ: X⁻¹(B) ∈ ℱ
+      
+      特别地，实值随机变量 X: Ω → ℝ 满足：
+      ∀a ∈ ℝ: {ω : X(ω) ≤ a} ∈ ℱ
+      
+    informal: |
+      随机变量是"随机实验结果的数值"。
+      
+      掷骰子：
+      - X = 点数 是随机变量
+      - X 可以是1,2,3,4,5,6
+      - P(X = k) = 1/6
+      
+      随机变量把"结果"变成"数字"。
+      
+    lean: |
+      -- Mathlib定义
+      def Measurable (f : α → β) [MeasurableSpace α] [MeasurableSpace β] : Prop :=
+        ∀ s, MeasurableSet s → MeasurableSet (f ⁻¹' s)
+        
+      -- 随机变量就是可测函数
+      abbrev RandomVariable (Ω : Type*) [MeasurableSpace Ω] (E : Type*) [MeasurableSpace E] :=
+        { f : Ω → E // Measurable f }
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】坐标投影
+      - 随机变量是Ω到数轴的"投影"
+      - 把复杂结果映到简单数值
+      - 分布函数描述"投影的密度"
+      
+    algebraic: |
+      【代数直觉】可测映射
+      - X保持可测结构
+      - 原像保持σ-代数
+      - 可以做算术运算（+, ×, ...）
+      
+    physical: |
+      【物理直觉】可观测量
+      - 随机变量 = 可以测量的物理量
+      - 每次测量得到一个值
+      - 分布描述测量结果的统计
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "分布函数"
+      content: |
+        累积分布函数 F_X(x) = P(X ≤ x)：
+        
+        F(x)│
+          1 ┼─────────────────╮
+            │            ╱    │
+            │         ╱       │
+            │      ╱          │
+          0 ┼───╱─────────────┴──→ x
+            
+    - type: "概率质量/密度"
+      content: |
+        离散：P(X = k) = p_k
+        连续：P(a ≤ X ≤ b) = ∫_a^b f(x)dx
+        
+  # ===== 例子层 =====
+  examples:
+    discrete:
+      - name: "伯努利随机变量"
+        distribution: "Bernoulli(p)"
+        pmf: "P(X=1)=p, P(X=0)=1-p"
+        expectation: "p"
+        variance: "p(1-p)"
+        
+      - name: "泊松随机变量"
+        distribution: "Poisson(λ)"
+        pmf: "P(X=k) = e^{-λ}λ^k/k!"
+        expectation: "λ"
+        variance: "λ"
+        
+    continuous:
+      - name: "均匀随机变量"
+        distribution: "Uniform(a,b)"
+        pdf: "f(x) = 1/(b-a) 在 [a,b] 上"
+        expectation: "(a+b)/2"
+        variance: "(b-a)²/12"
+        
+      - name: "正态随机变量"
+        distribution: "N(μ, σ²)"
+        pdf: "f(x) = (2πσ²)^{-1/2} exp(-(x-μ)²/2σ²)"
+        expectation: "μ"
+        variance: "σ²"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "probability-space"
+        description: "定义在概率空间上"
+      - id: "measurable-function"
+        description: "是可测函数"
+        
+    generalizes: []
+        
+    specialized_by:
+      - id: "discrete-rv"
+        description: "离散随机变量"
+      - id: "continuous-rv"
+        description: "连续随机变量"
+      - id: "random-vector"
+        description: "随机向量"
+        
+    related_to:
+      - id: "expectation"
+        description: "期望E[X]"
+      - id: "variance"
+        description: "方差Var(X)"
+      - id: "distribution"
+        description: "分布"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "monotone-class-lemma"
+      statement: "随机变量的运算保持可测性"
+      importance: 4
+      
+    - id: "change-of-variables"
+      statement: "E[g(X)] = ∫g(x)dF_X(x)"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "probability-space"
+      - "measurable-function"
+      
+    leads_to:
+      - "expectation"
+      - "conditional-expectation"
+      - "stochastic-process"
+      
+    history:
+      first_appearance: "20世纪初"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.MeasureTheory.Function.AEMeasurable"
+    name: "Measurable"
+    coverage: "complete"

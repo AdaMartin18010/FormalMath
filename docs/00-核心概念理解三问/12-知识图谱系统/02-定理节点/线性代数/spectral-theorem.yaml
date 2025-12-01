@@ -1,0 +1,187 @@
+# spectral-theorem.yaml - 谱定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "spectral-theorem"
+  name:
+    zh: "谱定理"
+    en: "Spectral Theorem"
+  msc_codes: ["15A18", "47A10"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      【有限维实对称矩阵】
+      设 A ∈ M_n(ℝ) 是实对称矩阵（A = Aᵀ）。
+      则存在正交矩阵 Q 和对角矩阵 D 使得：
+      A = QDQᵀ
+      
+      等价地，存在标准正交基 {v₁, ..., vₙ} 使得
+      Avᵢ = λᵢvᵢ，其中 λᵢ ∈ ℝ。
+      
+      【Hilbert空间自伴算子】
+      设 T 是 Hilbert 空间 H 上的有界自伴算子。
+      则存在谱测度 E 使得：
+      T = ∫ λ dE(λ)
+      
+    informal: |
+      对称矩阵可以"对角化"——
+      存在特殊的坐标系使矩阵变成对角形式。
+      
+      物理意义：
+      - 对称矩阵描述能量等物理量
+      - 特征向量是"主轴方向"
+      - 特征值是"主轴上的尺度"
+      
+    lean: |
+      -- 谱定理（有限维）
+      theorem Matrix.spectral_theorem {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ)
+        (hA : A.IsSymm) :
+        ∃ (Q : Matrix (Fin n) (Fin n) ℝ) (D : Matrix (Fin n) (Fin n) ℝ),
+          Q.Orthogonal ∧ D.IsDiagonal ∧ A = Q * D * Q.transpose
+          
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "归纳法 + 特征值存在性"
+    
+    key_ideas:
+      - "实对称矩阵特征值是实数"
+      - "不同特征值的特征向量正交"
+      - "归纳降维"
+      
+    proof_tree: |
+      谱定理
+          │
+          ├── 特征值是实数
+          │   ├── Aᵀ = A
+          │   └── λ = λ̄（共轭相等）
+          │
+          ├── 特征向量正交性
+          │   ├── λ₁ ≠ λ₂
+          │   └── ⟨v₁, v₂⟩ = 0
+          │
+          ├── 存在特征向量
+          │   └── 特征多项式有实根
+          │
+          └── 归纳构造
+              ├── 找到一个特征向量v₁
+              ├── 考虑v₁的正交补
+              └── 在正交补上归纳
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      矩阵形式：A = QDQᵀ
+      
+      展开形式：A = Σᵢ λᵢ vᵢvᵢᵀ
+      
+      其中：
+      - λᵢ 是特征值
+      - vᵢ 是单位特征向量
+      - vᵢvᵢᵀ 是投影矩阵
+      
+    geometric: |
+      【几何表征】
+      
+      二次型的主轴：
+      
+        y│    ╱
+         │   ╱  第一主轴 (λ₁)
+         │  ╱
+         │ ╱╲
+         │╱  ╲ 第二主轴 (λ₂)
+         └──────→ x
+         
+      椭圆 xᵀAx = 1 的主轴
+      
+    intuitive: |
+      【直觉表征】
+      
+      振动分析类比：
+      - A描述多自由度振动系统
+      - 特征向量 = 固有振型
+      - 特征值 = 固有频率²
+      - 每个振型独立振动
+      
+    computational: |
+      【计算表征】
+      
+      数值对角化：
+      
+      import numpy as np
+      
+      A = np.array([[4, 2], [2, 1]])  # 对称矩阵
+      eigenvalues, eigenvectors = np.linalg.eigh(A)
+      
+      # 验证: A = Q D Q^T
+      Q = eigenvectors
+      D = np.diag(eigenvalues)
+      reconstructed = Q @ D @ Q.T
+      # reconstructed ≈ A
+      
+    categorical: |
+      【范畴表征】
+      
+      函子视角：
+      - 对角化是自然同构
+      - 特征空间分解 = 半单性
+      - 谱 = 素理想集
+      
+      C*-代数视角：
+      - 自伴元素对应实函数
+      - 谱定理 = Gelfand-Naimark
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "量子力学"
+      description: "可观测量的测量值是特征值"
+      
+    - domain: "主成分分析"
+      description: "协方差矩阵的特征分解"
+      
+    - domain: "图论"
+      description: "图的谱分析（邻接矩阵）"
+      
+    - domain: "振动分析"
+      description: "结构的固有频率和振型"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "linear-map"
+        role: "对称/自伴条件"
+      - id: "eigenvalue"
+        role: "核心概念"
+      - id: "inner-product"
+        role: "正交性"
+        
+    uses_theorems:
+      - id: "fundamental-theorem-algebra"
+        role: "特征值存在"
+        
+    implies:
+      - id: "positive-definite-characterization"
+        description: "正定 ⟺ 所有特征值 > 0"
+      - id: "singular-value-decomposition"
+        description: "SVD的基础"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+    prerequisites:
+      concepts: ["linear-map", "eigenvalue", "inner-product"]
+      
+    history:
+      finite_dim: "Cauchy, Jacobi (19世纪)"
+      hilbert_space: "Hilbert, von Neumann (20世纪)"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.LinearAlgebra.Eigenspace.Basic"
+    main_theorem: "Module.End.eigenspace_diag"
+    coverage: "substantial"

@@ -1,0 +1,137 @@
+# hahn-banach.yaml - Hahn-Banach定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "hahn-banach"
+  name:
+    zh: "Hahn-Banach定理"
+    en: "Hahn-Banach Theorem"
+  msc_codes: ["46A22"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      【解析形式】
+      设 X 是实向量空间，p: X → ℝ 是次线性泛函。
+      设 Y ⊆ X 是子空间，f: Y → ℝ 是线性泛函，满足 f(y) ≤ p(y)。
+      则存在线性延拓 F: X → ℝ 使得：
+      - F|_Y = f
+      - F(x) ≤ p(x), ∀x ∈ X
+      
+      【赋范空间形式】
+      设 X 是赋范空间，Y ⊆ X 是子空间，f ∈ Y*。
+      则存在 F ∈ X* 使得 F|_Y = f 且 ‖F‖ = ‖f‖。
+      
+    informal: |
+      子空间上的线性泛函可以延拓到全空间，
+      并且保持范数不变。
+      
+      这说明对偶空间"足够大"：
+      任何非零向量都有非零的线性泛函取值。
+      
+    lean: |
+      -- Hahn-Banach定理
+      theorem exists_extension_norm_eq {𝕜 : Type*} [NontriviallyNormedField 𝕜]
+        {E : Type*} [NormedAddCommGroup E] [NormedSpace 𝕜 E]
+        (p : Subspace 𝕜 E) (f : p →L[𝕜] 𝕜) :
+        ∃ F : E →L[𝕜] 𝕜, (∀ x : p, F x = f x) ∧ ‖F‖ = ‖f‖
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "Zorn引理 + 一维延拓"
+    
+    proof_tree: |
+      Hahn-Banach定理
+          │
+          ├── 一维延拓引理
+          │   ├── 设 Y ⊂ X，dim(X/Y) = 1
+          │   ├── 取 x₀ ∉ Y，X = Y + ℝx₀
+          │   └── 选择适当的 F(x₀) 使得 F ≤ p
+          │
+          └── Zorn引理
+              ├── 偏序集：所有满足条件的延拓
+              ├── 链有上界：取并
+              └── 存在极大元 = 全空间延拓
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      f: Y → ℝ, f ≤ p|_Y
+            ↓ 延拓
+      F: X → ℝ, F|_Y = f, F ≤ p
+      
+      赋范空间：‖F‖_{X*} = ‖f‖_{Y*}
+      
+    geometric: |
+      【几何表征】
+      
+      分离超平面：
+      
+          X
+        ╱   ╲
+       ╱  •  ╲  x₀
+      ╱   |   ╲
+     ╱ ───┼─── ╲ 超平面 {F = c}
+      ╲   |   ╱
+       ╲  C  ╱   凸集
+        ╲   ╱
+      
+    intuitive: |
+      【直觉表征】
+      
+      "延拓不增加范数"
+      
+      想象测量工具：
+      - 子空间上的测量（f）
+      - 可以延拓到全空间（F）
+      - 延拓不会让测量变得更"敏感"
+      
+    categorical: |
+      【范畴表征】
+      
+      对偶函子：
+      X ↦ X* = Hom(X, 𝕜)
+      
+      Hahn-Banach保证：
+      X* ≠ 0（当X ≠ 0时）
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "证明对偶空间非平凡"
+    - description: "分离凸集（几何形式）"
+    - description: "证明X嵌入X**"
+    - description: "泛函分析基础定理的证明"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "normed-space"
+        role: "适用空间"
+      - id: "linear-functional"
+        role: "被延拓对象"
+        
+    implies:
+      - id: "separation-theorem"
+        description: "凸集分离定理"
+      - id: "dual-embedding"
+        description: "X嵌入X**"
+        
+    related_to:
+      - id: "banach-steinhaus"
+        description: "泛函分析另一大定理"
+      - id: "open-mapping"
+        description: "开映射定理"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    history:
+      discoverers: "Hans Hahn, Stefan Banach"
+      year: "1927-1929"
+      
+  mathlib:
+    path: "Mathlib.Analysis.NormedSpace.HahnBanach"

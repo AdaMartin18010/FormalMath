@@ -1,0 +1,98 @@
+# subgroup.yaml - 子群概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "subgroup"
+  name:
+    zh: "子群"
+    en: "Subgroup"
+  msc_codes: ["20A05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 (G, ·) 是群。非空子集 H ⊆ G 是子群，若：
+      1. 封闭性：∀a, b ∈ H: a·b ∈ H
+      2. 单位元：e ∈ H
+      3. 逆元：∀a ∈ H: a⁻¹ ∈ H
+      
+      等价条件（一步判别法）：
+      H ≤ G ⟺ ∀a, b ∈ H: a·b⁻¹ ∈ H
+      
+    informal: |
+      子群是"群中的群"——
+      大群里面一部分元素自己也构成群。
+      
+      例子：
+      - 偶数是整数的子群（加法）
+      - 旋转群是等距群的子群
+      
+    lean: |
+      -- Mathlib定义
+      structure Subgroup (G : Type*) [Group G] where
+        carrier : Set G
+        one_mem' : (1 : G) ∈ carrier
+        mul_mem' : ∀ {a b}, a ∈ carrier → b ∈ carrier → a * b ∈ carrier
+        inv_mem' : ∀ {x}, x ∈ carrier → x⁻¹ ∈ carrier
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】对称性的子集
+      - 正方形的对称群 D₄ 有8个元素
+      - 旋转子群 {e, r, r², r³} 有4个元素
+      - 对角线反射子群 {e, d} 有2个元素
+      
+    algebraic: |
+      【代数直觉】结构保持
+      - 子群继承群运算
+      - 运算表的"子表"
+      - 保持所有群公理
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "平凡子群"
+      description: "{e} 和 G 本身"
+      
+    - name: "nℤ ≤ ℤ"
+      description: "n的倍数是整数的子群"
+      
+    - name: "SL(n) ≤ GL(n)"
+      description: "特殊线性群（行列式为1）"
+      
+    - name: "中心 Z(G)"
+      description: "与所有元素交换的元素"
+      formula: "Z(G) = {z : ∀g, zg = gz}"
+      
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "lagrange"
+      statement: "|H| 整除 |G|"
+      
+    - id: "subgroup-criterion"
+      statement: "a·b⁻¹ ∈ H ⟺ H是子群"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "group"
+        description: "子群是群的子结构"
+        
+    leads_to:
+      - id: "coset"
+        description: "陪集概念"
+      - id: "normal-subgroup"
+        description: "正规子群"
+      - id: "quotient-group"
+        description: "商群"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    prerequisites: ["group"]
+    
+  mathlib:
+    path: "Mathlib.GroupTheory.Subgroup.Basic"
+    name: "Subgroup"

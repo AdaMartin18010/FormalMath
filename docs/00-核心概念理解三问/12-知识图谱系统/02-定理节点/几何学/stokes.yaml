@@ -1,0 +1,133 @@
+# stokes.yaml - Stokes定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "stokes"
+  name:
+    zh: "Stokes定理"
+    en: "Stokes' Theorem"
+  msc_codes: ["58A10"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 M 是带边界的定向光滑流形，ω 是 M 上的 (n-1)-形式。
+      则：
+      ∫_M dω = ∫_{∂M} ω
+      
+      其中：
+      - dω 是 ω 的外微分
+      - ∂M 是 M 的边界（继承定向）
+      
+    informal: |
+      微分形式在区域上的积分 = 边界上的积分
+      
+      统一了多个经典定理：
+      - 微积分基本定理：∫ₐᵇ f' = f(b) - f(a)
+      - Green定理：∫∫(∂Q/∂x - ∂P/∂y) = ∮(Pdx + Qdy)
+      - 散度定理：∫∫∫ div F = ∯ F·n
+      - 旋度定理：∫∫ curl F·n = ∮ F·dr
+      
+    lean: |
+      -- Stokes定理（在Mathlib中）
+      theorem integral_exterior_derivative_eq_integral_boundary
+        {M : Type*} [SmoothManifoldWithCorners I M] [Oriented M]
+        (ω : Ω^(n-1)⟮M⟯) (hω : Compactly_supported ω) :
+        ∫ x in M, (dω) x = ∫ x in ∂M, ω x
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "局部化 + 分部积分"
+    
+    proof_tree: |
+      Stokes定理
+          │
+          ├── 欧氏空间的情形
+          │   └── 直接计算（分部积分）
+          │
+          ├── 半空间 ℝⁿ₊
+          │   └── 边界项的贡献
+          │
+          ├── 局部坐标卡
+          │   └── 流形上任一点
+          │
+          └── 单位分解
+              └── 粘合局部结果
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      ∫_M dω = ∫_{∂M} ω
+      
+      特例：
+      - 0-形式（函数）：∫df = f|_{∂M}
+      - 1-形式：Green/旋度定理
+      - 2-形式：散度定理
+      
+    geometric: |
+      【几何表征】
+      
+      2D情形（Green定理）：
+      
+        ∂D (边界)
+       ╱ ╲
+      │ D │ ← 区域
+       ╲ ╱
+      
+      区域内的"旋度"= 边界上的"环流"
+      
+    intuitive: |
+      【直觉表征】
+      
+      流体类比：
+      - 区域内的"源"总量 = 边界上的"流出"总量
+      - 微分 = 局部产生
+      - 积分 = 全局累积
+      
+    categorical: |
+      【范畴表征】
+      
+      de Rham复形：
+      Ω⁰ →^d Ω¹ →^d Ω² →^d ...
+      
+      Stokes定理 = d 和 ∫ 的对偶
+      ⟨dω, M⟩ = ⟨ω, ∂M⟩
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "电磁学中的Maxwell方程"
+    - description: "流体力学的守恒律"
+    - description: "de Rham上同调"
+    - description: "示性类的计算"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "differential-form"
+        role: "被积对象"
+      - id: "manifold"
+        role: "积分区域"
+      - id: "exterior-derivative"
+        role: "核心算子"
+        
+    specializes_to:
+      - id: "fundamental-theorem-calculus"
+        description: "一维情形"
+      - id: "green-theorem"
+        description: "二维情形"
+      - id: "divergence-theorem"
+        description: "三维散度"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    history:
+      discoverer: "George Gabriel Stokes"
+      generalization: "Élie Cartan"
+      
+  mathlib:
+    path: "Mathlib.Geometry.Manifold.DifferentialForm.Stokes"

@@ -1,0 +1,139 @@
+# fubini.yaml - Fubini定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "fubini"
+  name:
+    zh: "Fubini定理"
+    en: "Fubini's Theorem"
+  msc_codes: ["28A35"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      【Fubini定理】
+      设 (X, 𝒜, μ) 和 (Y, ℬ, ν) 是σ-有限测度空间。
+      设 f: X × Y → ℝ 是可积函数（∫∫|f| d(μ×ν) < ∞）。
+      则：
+      
+      ∫_{X×Y} f d(μ×ν) = ∫_X (∫_Y f(x,y) dν(y)) dμ(x)
+                       = ∫_Y (∫_X f(x,y) dμ(x)) dν(y)
+      
+      【Tonelli定理（非负版本）】
+      若 f ≥ 0 可测，上述等式仍成立（可能为∞）。
+      
+    informal: |
+      重积分可以化为累次积分，且积分顺序可交换。
+      
+      关键条件：f可积（或非负）
+      
+      例：∫∫ f(x,y) dxdy = ∫(∫f dy)dx = ∫(∫f dx)dy
+      
+    lean: |
+      -- Fubini定理
+      theorem MeasureTheory.integral_prod {f : α × β → E}
+        (hf : Integrable f (μ.prod ν)) :
+        ∫ z, f z ∂(μ.prod ν) = ∫ x, ∫ y, f (x, y) ∂ν ∂μ
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "从特征函数到一般可积函数"
+    
+    proof_tree: |
+      Fubini定理
+          │
+          ├── 可测矩形的情形
+          │   └── χ_{A×B} 显然成立
+          │
+          ├── σ-代数生成的集合
+          │   └── 单调类引理
+          │
+          ├── 简单函数
+          │   └── 线性组合
+          │
+          ├── 非负可测函数（Tonelli）
+          │   └── 单调收敛定理
+          │
+          └── 一般可积函数（Fubini）
+              └── f = f⁺ - f⁻
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      ∫∫ f d(μ×ν) = ∫(∫f dν)dμ = ∫(∫f dμ)dν
+      
+      积分符号可以"穿过"
+      
+    geometric: |
+      【几何表征】
+      
+      切片积分：
+      
+        y│ ┌────┐
+         │ │    │ ← 先对y积分（切片）
+         │ │    │
+         │ └────┘
+         └────────→ x
+              ↑
+           再对x积分
+           
+    intuitive: |
+      【直觉表征】
+      
+      计算体积的两种方式：
+      1. 先横切成薄片，再加起来
+      2. 先纵切成薄片，再加起来
+      
+      结果应该相同！（需要可积条件）
+      
+    computational: |
+      【计算表征】
+      
+      import scipy.integrate as integrate
+      
+      def f(x, y):
+          return x * y
+          
+      # 方式1：先y后x
+      result1 = integrate.dblquad(f, 0, 1, 0, 1)[0]
+      
+      # 方式2：先x后y
+      result2 = integrate.dblquad(lambda y,x: f(x,y), 0, 1, 0, 1)[0]
+      
+      # result1 ≈ result2 ≈ 0.25
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "计算多重积分"
+    - description: "交换积分和求和顺序"
+    - description: "卷积的计算"
+    - description: "概率论中的期望计算"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "measure"
+        role: "测度论基础"
+      - id: "product-measure"
+        role: "乘积测度"
+        
+    related_to:
+      - id: "tonelli"
+        description: "非负情形"
+      - id: "dominated-convergence"
+        description: "都是积分交换定理"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    history:
+      discoverer: "Guido Fubini"
+      year: 1907
+      
+  mathlib:
+    path: "Mathlib.MeasureTheory.Constructions.Prod.Integral"
+    name: "MeasureTheory.integral_prod"

@@ -1,0 +1,275 @@
+# ring.yaml - 环概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "ring"
+  name:
+    zh: "环"
+    en: "Ring"
+  msc_codes: ["16-XX", "13-XX"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 R 是非空集合，+和·是R上的二元运算。
+      (R, +, ·) 是环，当且仅当满足：
+      
+      (R1) (R, +) 是阿贝尔群
+      (R2) (R, ·) 是半群（结合律）
+      (R3) 分配律：
+           a·(b+c) = a·b + a·c（左分配）
+           (a+b)·c = a·c + b·c（右分配）
+           
+      有单位元的环（幺环）还满足：
+      (R4) ∃1 ∈ R, ∀a ∈ R, 1·a = a·1 = a
+      
+    informal: |
+      环是可以做"加减乘"但不一定能做"除"的数系。
+      想象整数ℤ：可以加、减、乘任意两个整数，
+      结果还是整数。但除法不总是可行（如3÷2不是整数）。
+      
+      环 = "像整数一样的东西"
+      
+    lean: |
+      -- Mathlib定义
+      class Ring (R : Type*) extends AddCommGroup R, Monoid R where
+        left_distrib : ∀ a b c : R, a * (b + c) = a * b + a * c
+        right_distrib : ∀ a b c : R, (a + b) * c = a * c + b * c
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】函数环/坐标环
+      - 空间X上的函数在逐点加法和乘法下成环
+      - 环的理想 ↔ 空间的子集
+      - 代数几何：环 ≈ 空间的代数描述
+      
+    algebraic: |
+      【代数直觉】两个兼容运算的结构
+      - 加法：可逆，交换（阿贝尔群）
+      - 乘法：结合（半群或幺半群）
+      - 分配律：乘法"分配"到加法上
+      
+      环是"最简单的能同时做加减乘的结构"
+      
+    physical: |
+      【物理直觉】算子环
+      - 量子力学中的可观测量形成环
+      - 不可交换：位置×动量 ≠ 动量×位置
+      - C*-代数：有界算子环
+      
+    categorical: |
+      【范畴直觉】Ab-丰富范畴中的幺半群
+      - 环 = 阿贝尔群范畴Ab中的幺半群对象
+      - 环同态 = Ab中的幺半群同态
+      - 模 = 环在Ab上的作用
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "加法表+乘法表"
+      content: |
+        有限环可用两个运算表描述：
+        
+        Z₄的乘法表：
+        ┌───┬───┬───┬───┬───┐
+        │ × │ 0 │ 1 │ 2 │ 3 │
+        ├───┼───┼───┼───┼───┤
+        │ 0 │ 0 │ 0 │ 0 │ 0 │
+        │ 1 │ 0 │ 1 │ 2 │ 3 │
+        │ 2 │ 0 │ 2 │ 0 │ 2 │
+        │ 3 │ 0 │ 3 │ 2 │ 1 │
+        └───┴───┴───┴───┴───┘
+        
+    - type: "生成元与关系"
+      content: |
+        环可由生成元和关系定义：
+        
+        例：多项式环 R[x] = R自由生成，模多项式关系
+        例：Z[i] = Z[x]/(x² + 1)
+        
+    - type: "矩阵表示"
+      content: |
+        环嵌入矩阵环：
+        
+        复数 C ↪ M₂(ℝ)：
+        a + bi ↦ [[a, -b], [b, a]]
+        
+        四元数 H ↪ M₂(C)：
+        a + bi + cj + dk ↦ [[a+bi, c+di], [-c+di, a-bi]]
+        
+    - type: "谱表示（交换环）"
+      content: |
+        交换环R的谱 Spec(R) = 素理想集合
+        
+        - 点 = 素理想
+        - 开集 = D(f) = {p : f ∉ p}
+        - 结构层 = 局部化
+        
+        这是代数几何的基础！
+        
+  # ===== 例子层 =====
+  examples:
+    fundamental:
+      - name: "整数环 ℤ"
+        description: "环论的原型，唯一分解整环"
+        properties: ["交换", "整环", "主理想整环", "Noether"]
+        
+      - name: "多项式环 R[x]"
+        description: "R上的一元多项式"
+        properties: ["交换（若R交换）", "整环（若R整环）"]
+        
+      - name: "矩阵环 Mₙ(R)"
+        description: "R上的n×n矩阵"
+        properties: ["非交换（n≥2）"]
+        
+    number_rings:
+      - name: "高斯整数 Z[i]"
+        description: "形如 a+bi 的复数（a,b∈Z）"
+        properties: ["交换", "整环", "唯一分解"]
+        
+      - name: "Eisenstein整数 Z[ω]"
+        description: "ω = e^{2πi/3}"
+        properties: ["交换", "整环", "唯一分解"]
+        
+      - name: "代数整数环 𝒪_K"
+        description: "数域K中的代数整数"
+        properties: ["Dedekind整环"]
+        
+    function_rings:
+      - name: "连续函数环 C(X)"
+        description: "X上的连续实值函数"
+        properties: ["交换"]
+        
+      - name: "光滑函数环 C^∞(M)"
+        description: "流形M上的光滑函数"
+        properties: ["交换"]
+        
+      - name: "全纯函数环 𝒪(U)"
+        description: "区域U上的全纯函数"
+        properties: ["交换", "整环"]
+        
+    special:
+      - name: "零环 {0}"
+        description: "只有零元的环"
+        properties: ["平凡"]
+        
+      - name: "布尔环"
+        description: "满足 x² = x 的环"
+        properties: ["交换", "特征2"]
+        
+      - name: "四元数 H"
+        description: "实数上的除法代数"
+        properties: ["非交换", "除环"]
+        
+  counterexamples:
+    - name: "自然数 (ℕ, +, ×)"
+      description: "加法没有逆元"
+      missing: "加法群结构"
+      
+    - name: "偶数 (2ℤ, +, ×)"
+      description: "乘法没有单位元"
+      note: "这是无单位元环（rng）"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "abelian-group"
+        description: "加法结构"
+      - id: "semigroup"
+        description: "乘法结构"
+        
+    generalizes:
+      - id: "abelian-group"
+        description: "忘掉乘法"
+        
+    is_a: []
+        
+    specialized_by:
+      - id: "commutative-ring"
+        description: "交换环 = 环 + 乘法交换"
+      - id: "integral-domain"
+        description: "整环 = 交换环 + 无零因子"
+      - id: "field"
+        description: "域 = 交换除环"
+      - id: "division-ring"
+        description: "除环 = 非零元有乘法逆"
+      - id: "local-ring"
+        description: "局部环 = 唯一极大理想"
+      - id: "noetherian-ring"
+        description: "Noether环 = ACC条件"
+        
+    related_to:
+      - id: "ideal"
+        description: "环的理想（核心概念）"
+      - id: "module"
+        description: "模是环上的"向量空间""
+      - id: "algebra"
+        description: "代数 = 环 + 域/环作用"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "first-isomorphism-theorem-rings"
+      statement: "R/ker(f) ≅ im(f)"
+      importance: 5
+      
+    - id: "chinese-remainder-theorem"
+      statement: "互素理想的商环直积分解"
+      importance: 4
+      
+    - id: "hilbert-basis-theorem"
+      statement: "R Noether ⟹ R[x] Noether"
+      importance: 5
+      
+    - id: "nullstellensatz"
+      statement: "代数封闭域上多项式零点定理"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+    prerequisites:
+      - "group"
+      - "abelian-group"
+      - "binary-operation"
+      
+    corequisites:
+      - "ideal"
+      - "ring-homomorphism"
+      - "quotient-ring"
+      
+    leads_to:
+      - "module"
+      - "field"
+      - "commutative-algebra"
+      - "algebraic-geometry"
+      
+    history:
+      first_appearance: 1871
+      context: "Dedekind研究代数数论"
+      named_by: "Hilbert (Zahlring)"
+      
+    key_figures:
+      - id: "dedekind"
+        contribution: "理想论，代数整数环"
+      - id: "hilbert"
+        contribution: "Nullstellensatz，基定理"
+      - id: "noether"
+        contribution: "抽象环论，Noether环"
+      - id: "krull"
+        contribution: "局部化，维数论"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Algebra.Ring.Defs"
+    name: "Ring"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Ring/Defs.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "CommRing"
+      - "Semiring"
+      - "Ideal"
+      - "RingHom"

@@ -1,0 +1,246 @@
+# topological-space.yaml - 拓扑空间概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "topological-space"
+  name:
+    zh: "拓扑空间"
+    en: "Topological Space"
+  msc_codes: ["54A05", "54-XX"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      拓扑空间是二元组 (X, τ)，其中：
+      - X 是集合
+      - τ ⊆ 𝒫(X) 是 X 的子集族（称为拓扑）
+      
+      满足公理：
+      (T1) ∅, X ∈ τ
+      (T2) 任意并封闭：若 {Uα}α∈I ⊆ τ，则 ⋃α Uα ∈ τ
+      (T3) 有限交封闭：若 U, V ∈ τ，则 U ∩ V ∈ τ
+      
+      τ中的元素称为开集。
+      
+    informal: |
+      拓扑空间是"只关心邻近关系"的空间。
+      
+      想象一张可以任意拉伸、弯曲但不能撕裂的橡皮膜。
+      拓扑学研究"不撕裂、不粘合"情况下不变的性质。
+      
+      拓扑 = 定义什么是"靠近"的结构
+      
+    lean: |
+      -- Mathlib定义
+      class TopologicalSpace (α : Type*) where
+        IsOpen : Set α → Prop
+        isOpen_univ : IsOpen univ
+        isOpen_inter : ∀ s t, IsOpen s → IsOpen t → IsOpen (s ∩ t)
+        isOpen_sUnion : ∀ s, (∀ t ∈ s, IsOpen t) → IsOpen (⋃₀ s)
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】"近"的公理化
+      - 开集 = 不含边界的"区域"
+      - 开集告诉我们什么点"靠近"
+      - 忘掉距离，只保留邻近性
+      
+    algebraic: |
+      【代数直觉】格结构
+      - 开集族τ在并和有限交下封闭
+      - τ形成完备格
+      - 连续映射 ↔ 格同态（逆序）
+      
+    physical: |
+      【物理直觉】相空间
+      - 物理状态空间的拓扑
+      - 动力系统的相空间
+      - "邻近状态"的概念化
+      
+    categorical: |
+      【范畴直觉】Top范畴
+      - 对象：拓扑空间
+      - 态射：连续映射
+      - 同构：同胚
+      
+      Top是完备余完备范畴
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "开集公理可视化"
+      content: |
+        开集的性质：
+        
+        ┌─────────────────┐
+        │    ╭───╮        │ 空集和全集是开集
+        │    │ U │        │
+        │    ╰───╯ ╭───╮  │ 开集的任意并是开集
+        │          │ V │  │
+        │    ╭─────┴───╯  │ 开集的有限交是开集
+        │    │ U∩V        │
+        └─────────────────┘
+        
+    - type: "邻域基"
+      content: |
+        用邻域基定义拓扑：
+        
+        对每个点x，给定邻域基B(x)，满足：
+        - x ∈ B 对所有 B ∈ B(x)
+        - 任意两个邻域的交包含一个邻域
+        
+        这等价于指定拓扑
+        
+    - type: "闭集对偶"
+      content: |
+        等价定义用闭集：
+        - 空集和全集是闭集
+        - 闭集的任意交是闭集
+        - 闭集的有限并是闭集
+        
+        闭集 = 开集的补集
+        
+  # ===== 例子层 =====
+  examples:
+    fundamental:
+      - name: "欧氏空间 ℝⁿ"
+        description: "度量拓扑：开球生成"
+        properties: ["度量化", "Hausdorff", "第二可数"]
+        
+      - name: "离散拓扑"
+        description: "每个子集都是开集"
+        topology: "τ = 𝒫(X)"
+        properties: ["最精细", "离散"]
+        
+      - name: "密着拓扑（trivial）"
+        description: "只有空集和全集是开集"
+        topology: "τ = {∅, X}"
+        properties: ["最粗糙"]
+        
+    metric_spaces:
+      - name: "度量空间诱导拓扑"
+        description: "开球生成的拓扑"
+        properties: ["可度量化"]
+        
+      - name: "ℓ^p 空间"
+        description: "序列空间"
+        properties: ["Banach空间", "无限维"]
+        
+    special:
+      - name: "余有限拓扑"
+        description: "开集 = 补集有限的集合"
+        properties: ["紧致", "非Hausdorff"]
+        
+      - name: "Zariski拓扑"
+        description: "代数几何中的拓扑"
+        properties: ["非Hausdorff", "准紧"]
+        
+      - name: "序拓扑"
+        description: "全序集上的开区间拓扑"
+        properties: ["有序"]
+        
+    pathological:
+      - name: "Sierpiński空间"
+        description: "两点空间{0,1}，开集={∅,{1},{0,1}}"
+        properties: ["非Hausdorff", "分类空间"]
+        
+      - name: "长线"
+        description: "比ℝ更长的一维流形"
+        properties: ["非可度量化", "非紧"]
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "set"
+        description: "底集"
+      - id: "power-set"
+        description: "子集族"
+        
+    generalizes:
+      - id: "metric-space"
+        description: "度量空间诱导拓扑"
+      - id: "normed-space"
+        description: "赋范空间诱导拓扑"
+        
+    specialized_by:
+      - id: "hausdorff-space"
+        description: "T₂分离公理"
+      - id: "compact-space"
+        description: "紧致空间"
+      - id: "connected-space"
+        description: "连通空间"
+      - id: "manifold"
+        description: "流形是特殊拓扑空间"
+        
+    related_to:
+      - id: "continuity"
+        description: "连续映射定义"
+      - id: "open-set"
+        description: "开集是基本概念"
+      - id: "closed-set"
+        description: "闭集是补集"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "tychonoff-theorem"
+      statement: "紧空间的乘积是紧空间"
+      importance: 5
+      
+    - id: "urysohn-lemma"
+      statement: "正规空间中闭集可用连续函数分离"
+      importance: 4
+      
+    - id: "urysohn-metrization"
+      statement: "正规第二可数空间可度量化"
+      importance: 4
+      
+    - id: "baire-category"
+      statement: "完备度量空间是Baire空间"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+    prerequisites:
+      - "set"
+      - "function"
+      - "metric-space"
+      
+    corequisites:
+      - "open-set"
+      - "closed-set"
+      - "continuity"
+      
+    leads_to:
+      - "algebraic-topology"
+      - "differential-topology"
+      - "functional-analysis"
+      
+    history:
+      first_appearance: 1906
+      context: "Fréchet的抽象空间"
+      axiomatic_form: "Hausdorff 1914"
+      
+    key_figures:
+      - id: "frechet"
+        contribution: "抽象空间概念"
+      - id: "hausdorff"
+        contribution: "拓扑空间公理化"
+      - id: "kuratowski"
+        contribution: "闭包公理"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Topology.Basic"
+    name: "TopologicalSpace"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Basic.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "IsOpen"
+      - "IsClosed"
+      - "Continuous"
+      - "Homeomorph"

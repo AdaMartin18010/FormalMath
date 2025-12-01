@@ -1,0 +1,187 @@
+# integral.yaml - 积分概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "integral"
+  name:
+    zh: "积分"
+    en: "Integral"
+  msc_codes: ["26A42", "28A25"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【Riemann积分】
+      设 f: [a,b] → ℝ 有界。
+      Riemann和：S(f, P, ξ) = Σᵢ f(ξᵢ)Δxᵢ
+      
+      ∫ₐᵇ f(x)dx = lim_{‖P‖→0} S(f, P, ξ)
+      若极限存在且与划分和取点无关。
+      
+      【Lebesgue积分】
+      对简单函数 φ = Σ aᵢ χ_{Eᵢ}:
+      ∫ φ dμ = Σ aᵢ μ(Eᵢ)
+      
+      对非负可测函数 f:
+      ∫ f dμ = sup{∫ φ dμ : 0 ≤ φ ≤ f, φ简单}
+      
+    informal: |
+      积分是"累加"或"求面积"。
+      
+      ∫ₐᵇ f(x)dx = 曲线 y = f(x) 与 x 轴之间的面积
+      （正负号考虑在内）
+      
+      想象：把区间切成小段，每段高度×宽度，全部加起来。
+      
+    lean: |
+      -- Mathlib Riemann积分
+      def integralInterval (f : ℝ → ℝ) (a b : ℝ) : ℝ :=
+        ∫ x in a..b, f x
+        
+      -- Mathlib Lebesgue积分
+      def MeasureTheory.integral (μ : Measure α) (f : α → ℝ) : ℝ :=
+        ∫ x, f x ∂μ
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】面积
+      - 定积分 = 曲线下的面积
+      - 正函数：正面积
+      - 负函数：负面积
+      - 可以是高维的体积
+      
+    algebraic: |
+      【代数直觉】累加
+      - 离散求和的连续版本
+      - Σ → ∫
+      - 求和变成积分
+      
+    physical: |
+      【物理直觉】累积量
+      - 速度 → 位移
+      - 功率 → 功
+      - 密度 → 质量
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "面积图示"
+      content: |
+        定积分的几何意义：
+        
+           y│
+            │   ╱‾‾╲
+            │  ╱    ╲
+            │ ╱ ████ ╲   面积 = ∫ₐᵇ f(x)dx
+            │╱ ██████ ╲
+            └─────────────→ x
+             a        b
+             
+    - type: "Riemann和"
+      content: |
+        Riemann和逼近：
+        
+           y│   ┌─┐
+            │ ┌─┤ ├─┐
+            │ │ │ │ ├─┐
+            │─┴─┴─┴─┴─┴─→ x
+              a       b
+              
+        矩形面积之和 → 积分
+        
+  # ===== 例子层 =====
+  examples:
+    basic:
+      - function: "∫ xⁿ dx"
+        result: "xⁿ⁺¹/(n+1) + C (n ≠ -1)"
+        
+      - function: "∫ eˣ dx"
+        result: "eˣ + C"
+        
+      - function: "∫ 1/x dx"
+        result: "ln|x| + C"
+        
+      - function: "∫₀^π sin(x) dx"
+        result: "2"
+        
+    techniques:
+      - name: "换元法"
+        example: "∫ 2x·eˣ² dx = eˣ² + C"
+        
+      - name: "分部积分"
+        formula: "∫ u dv = uv - ∫ v du"
+        
+      - name: "部分分式"
+        example: "分解有理函数"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "limit"
+        description: "积分用极限定义"
+      - id: "measure"
+        description: "Lebesgue积分需要测度论"
+        
+    generalizes:
+      - id: "sum"
+        description: "积分是求和的连续版"
+        
+    specialized_by:
+      - id: "riemann-integral"
+        description: "Riemann积分"
+      - id: "lebesgue-integral"
+        description: "Lebesgue积分"
+      - id: "line-integral"
+        description: "线积分"
+      - id: "surface-integral"
+        description: "面积分"
+        
+    related_to:
+      - id: "derivative"
+        description: "微积分基本定理"
+      - id: "differential-form"
+        description: "微分形式上的积分"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "fundamental-theorem-calculus"
+      statement: "∫ₐᵇ f'(x)dx = f(b) - f(a)"
+      importance: 5
+      
+    - id: "substitution-rule"
+      statement: "∫ f(g(x))g'(x)dx = ∫ f(u)du"
+      importance: 4
+      
+    - id: "integration-by-parts"
+      statement: "∫ u dv = uv - ∫ v du"
+      importance: 4
+      
+    - id: "fubini-theorem"
+      statement: "∫∫ f dxdy = ∫(∫ f dx)dy"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "limit"
+      - "derivative"
+      
+    leads_to:
+      - "measure-theory"
+      - "differential-equation"
+      - "functional-analysis"
+      
+    history:
+      first_appearance: 1684
+      context: "Newton-Leibniz微积分"
+      development: "Riemann→Lebesgue"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.MeasureTheory.Integral.Lebesgue"
+    name: "MeasureTheory.integral"
+    coverage: "complete"

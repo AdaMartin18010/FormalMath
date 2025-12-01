@@ -1,0 +1,184 @@
+# proposition.yaml - 命题概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "proposition"
+  name:
+    zh: "命题"
+    en: "Proposition"
+  msc_codes: ["03B05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【命题】
+      命题是可以判断真假的陈述。
+      
+      【命题逻辑】
+      命题变量：p, q, r, ...
+      命题联结词：
+      - ¬p（非）
+      - p ∧ q（与）
+      - p ∨ q（或）
+      - p → q（蕴含）
+      - p ↔ q（等价）
+      
+      【一阶命题】
+      含量词的命题：
+      - ∀x P(x)（全称）
+      - ∃x P(x)（存在）
+      
+    informal: |
+      命题是"能说真假"的句子。
+      
+      命题的例子：
+      - "2 + 2 = 4"（真）
+      - "所有素数都是奇数"（假）
+      
+      非命题的例子：
+      - "x > 3"（真值取决于x）
+      - "请关门"（命令，非陈述）
+      
+    lean: |
+      -- 在Lean中，命题是Type
+      #check Prop  -- 命题的类型
+      
+      -- 命题例子
+      def p : Prop := 2 + 2 = 4
+      def q : Prop := ∀ n : ℕ, n ≥ 0
+      
+      -- 证明是命题的居民（项）
+      theorem proof_p : p := rfl
+      
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】真值空间
+      - 命题对应真值空间中的点
+      - 真命题 = 1，假命题 = 0
+      - 联结词是布尔运算
+      
+    algebraic: |
+      【代数直觉】布尔代数
+      - 命题形成布尔代数
+      - ∧ 对应 min（交）
+      - ∨ 对应 max（并）
+      - ¬ 对应补
+      
+    categorical: |
+      【范畴直觉】命题即类型
+      - 命题 ↔ 类型（Curry-Howard）
+      - 证明 ↔ 项
+      - 蕴含 ↔ 函数类型
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "真值表"
+      content: |
+        基本联结词真值表：
+        
+        p | q | ¬p | p∧q | p∨q | p→q | p↔q
+        ──┼───┼────┼─────┼─────┼─────┼────
+        T | T |  F |  T  |  T  |  T  |  T
+        T | F |  F |  F  |  T  |  F  |  F
+        F | T |  T |  F  |  T  |  T  |  F
+        F | F |  T |  F  |  F  |  T  |  T
+        
+    - type: "Venn图"
+      content: |
+        p ∧ q 和 p ∨ q 的Venn图：
+        
+        p ∧ q:           p ∨ q:
+        ┌─────────┐     ┌─────────┐
+        │  ╭─────╮│     │██╭─────╮│
+        │  │ ███ ││     │██│█████││
+        │  ╰─────╯│     │██╰─────╯│
+        └─────────┘     └─────────┘
+        
+  # ===== 例子层 =====
+  examples:
+    atomic:
+      - statement: "2 + 2 = 4"
+        truth_value: true
+        type: "算术命题"
+        
+      - statement: "π是有理数"
+        truth_value: false
+        type: "数论命题"
+        
+    compound:
+      - statement: "若n > 2，则n² > 4"
+        form: "p → q"
+        truth_value: true
+        
+      - statement: "x = 0 当且仅当 x² = 0"
+        form: "p ↔ q"
+        truth_value: true
+        
+    quantified:
+      - statement: "∀n ∈ ℕ, n + 0 = n"
+        type: "全称命题"
+        truth_value: true
+        
+      - statement: "∃x ∈ ℝ, x² = 2"
+        type: "存在命题"
+        truth_value: true
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "truth-value"
+        description: "命题有真值"
+        
+    generalizes: []
+        
+    specialized_by:
+      - id: "theorem"
+        description: "可证明的真命题"
+      - id: "axiom"
+        description: "不证自明的命题"
+      - id: "conjecture"
+        description: "待证命题"
+        
+    related_to:
+      - id: "proof"
+        description: "证明建立命题的真"
+      - id: "predicate"
+        description: "含变量的命题模板"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "law-of-excluded-middle"
+      statement: "p ∨ ¬p"
+      importance: 5
+      
+    - id: "modus-ponens"
+      statement: "p, p→q ⊢ q"
+      importance: 5
+      
+    - id: "deduction-theorem"
+      statement: "Γ, p ⊢ q ⟺ Γ ⊢ p → q"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 1
+    importance: 5
+    
+    prerequisites: []
+      
+    leads_to:
+      - "proof"
+      - "formal-logic"
+      - "type-theory"
+      
+    history:
+      first_appearance: "古希腊"
+      context: "Aristotle逻辑学"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Logic.Basic"
+    name: "Prop"
+    coverage: "complete"

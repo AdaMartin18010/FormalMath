@@ -1,0 +1,184 @@
+# law-of-large-numbers.yaml - 大数定律知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "law-of-large-numbers"
+  name:
+    zh: "大数定律"
+    en: "Law of Large Numbers"
+  msc_codes: ["60F05"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      【弱大数定律】
+      设 X₁, X₂, ... 是独立同分布(i.i.d.)随机变量，E[Xᵢ] = μ。
+      设 S̄ₙ = (X₁ + ... + Xₙ)/n。则：
+      ∀ε > 0: lim_{n→∞} P(|S̄ₙ - μ| > ε) = 0
+      
+      【强大数定律】
+      P(lim_{n→∞} S̄ₙ = μ) = 1
+      即 S̄ₙ →^{a.s.} μ（几乎必然收敛）
+      
+    informal: |
+      大量独立实验的平均结果会接近理论期望。
+      
+      掷硬币：
+      - 掷100次，正面比例约50%
+      - 掷10000次，更接近50%
+      - 掷无穷多次，比例趋于50%
+      
+    lean: |
+      -- 强大数定律
+      theorem strong_law_of_large_numbers 
+        {Ω : Type*} [MeasureSpace Ω] {X : ℕ → Ω → ℝ}
+        (hX_iid : ∀ n, IdentDistrib (X n) (X 0))
+        (hX_indep : Pairwise fun i j => IndepFun (X i) (X j))
+        (hX_integrable : Integrable (X 0)) :
+        ∀ᵐ ω, Tendsto (fun n => (∑ i in range n, X i ω) / n) atTop (𝓝 (∫ ω, X 0 ω))
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "截断 + Borel-Cantelli + 鞅方法"
+    
+    key_ideas:
+      - "控制尾部概率"
+      - "使用独立性估计方差"
+      - "Borel-Cantelli引理"
+      
+    proof_tree: |
+      大数定律
+          │
+          ├── 弱大数定律
+          │   ├── Chebyshev不等式
+          │   │   └── P(|X-μ|>ε) ≤ Var(X)/ε²
+          │   └── 应用于S̄ₙ
+          │       └── Var(S̄ₙ) = σ²/n → 0
+          │
+          └── 强大数定律
+              ├── 截断技术
+              │   └── 分离大值和小值
+              ├── 四阶矩估计
+              │   └── 控制偏差
+              └── Borel-Cantelli
+                  └── 从概率和到几乎必然
+                  
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      弱大数定律：S̄ₙ →^P μ
+      强大数定律：S̄ₙ →^{a.s.} μ
+      
+      收敛模式：
+      - 依概率：∀ε: P(|S̄ₙ - μ| > ε) → 0
+      - 几乎必然：P(S̄ₙ → μ) = 1
+      
+    geometric: |
+      【几何表征】
+      
+      样本均值的收敛：
+      
+        S̄ₙ│
+           │   ∿∿∿
+           │  ∿   ∿∿
+        μ ─│─────∿──∿──∿─────→ n
+           │ ∿∿
+           │∿
+           └────────────────→
+           
+      随n增大，S̄ₙ越来越接近μ
+      
+    intuitive: |
+      【直觉表征】
+      
+      赌场类比：
+      - 每局独立，赌场赢率略高
+      - 短期：玩家可能赢
+      - 长期：赌场必然赢（大数定律）
+      
+      保险类比：
+      - 个别理赔随机
+      - 大量保单平均下来接近期望
+      
+    computational: |
+      【计算表征】
+      
+      模拟验证：
+      
+      import numpy as np
+      
+      n_trials = 10000
+      results = []
+      for n in range(1, 1001):
+          X = np.random.binomial(1, 0.5, n)
+          results.append(X.mean())
+      
+      # results → 0.5 as n → ∞
+      
+    categorical: |
+      【范畴表征】
+      
+      从遍历论视角：
+      - i.i.d.序列是平稳遍历过程
+      - 大数定律 = 遍历定理的特例
+      - 时间平均 = 空间平均
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "统计推断"
+      description: "样本均值估计总体均值"
+      
+    - domain: "蒙特卡洛方法"
+      description: "随机采样估计积分"
+      
+    - domain: "保险精算"
+      description: "大量保单的风险管理"
+      
+    - domain: "质量控制"
+      description: "抽样检验的理论基础"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "random-variable"
+        role: "基本概念"
+      - id: "expectation"
+        role: "收敛目标"
+      - id: "independence"
+        role: "关键假设"
+        
+    uses_theorems:
+      - id: "chebyshev-inequality"
+        role: "弱大数律证明"
+      - id: "borel-cantelli"
+        role: "强大数律证明"
+        
+    implies:
+      - id: "monte-carlo-convergence"
+        description: "蒙特卡洛方法的收敛性"
+        
+    related_to:
+      - id: "central-limit-theorem"
+        description: "进一步描述收敛速度"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+    prerequisites:
+      concepts: ["random-variable", "expectation", "independence"]
+      theorems: ["chebyshev-inequality"]
+      
+    history:
+      weak_lln: "Bernoulli (1713), Chebyshev"
+      strong_lln: "Borel (1909), Kolmogorov (1933)"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Probability.StrongLaw"
+    main_theorem: "strong_law_of_large_numbers"
+    coverage: "complete"

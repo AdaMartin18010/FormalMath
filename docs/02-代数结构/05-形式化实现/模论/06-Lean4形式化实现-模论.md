@@ -51,9 +51,9 @@ class RightModule (R : Type) [Ring R] (M : Type) [AddCommGroup M] where
 
 -- 双模
 -- Bimodule
-class Bimodule (R S : Type) [Ring R] [Ring S] (M : Type) [AddCommGroup M] 
+class Bimodule (R S : Type) [Ring R] [Ring S] (M : Type) [AddCommGroup M]
   [Module R M] [RightModule S M] where
-  associativity : ∀ (r : R) (x : M) (s : S), 
+  associativity : ∀ (r : R) (x : M) (s : S),
     smul r (smul x s) = smul (smul r x) s
 
 -- 子模
@@ -66,13 +66,13 @@ structure Submodule (R : Type) [Ring R] (M : Type) [AddCommGroup M] [Module R M]
 
 -- 商模
 -- Quotient module
-def QuotientModule (R : Type) [Ring R] (M : Type) [AddCommGroup M] [Module R M] 
+def QuotientModule (R : Type) [Ring R] (M : Type) [AddCommGroup M] [Module R M]
   (N : Submodule R M) : Type :=
   Quotient (Submodule.setoid N)
 
 -- 模同态
 -- Module homomorphism
-structure ModuleHom (R : Type) [Ring R] (M N : Type) 
+structure ModuleHom (R : Type) [Ring R] (M N : Type)
   [AddCommGroup M] [AddCommGroup N] [Module R M] [Module R N] where
   toFun : M → N
   map_add : ∀ x y, toFun (x + y) = toFun x + toFun y
@@ -80,7 +80,7 @@ structure ModuleHom (R : Type) [Ring R] (M N : Type)
 
 -- 模同构
 -- Module isomorphism
-structure ModuleIso (R : Type) [Ring R] (M N : Type) 
+structure ModuleIso (R : Type) [Ring R] (M N : Type)
   [AddCommGroup M] [AddCommGroup N] [Module R M] [Module R N] where
   toHom : ModuleHom R M N
   inv : ModuleHom R N M
@@ -95,10 +95,10 @@ structure ModuleIso (R : Type) [Ring R] (M N : Type)
 -- Free module
 class FreeModule (R : Type) [Ring R] (M : Type) [AddCommGroup M] [Module R M] where
   basis : Set M
-  linear_independent : ∀ (f : M → R), 
-    (∀ x, x ∉ basis → f x = 0) → 
+  linear_independent : ∀ (f : M → R),
+    (∀ x, x ∉ basis → f x = 0) →
     (∑ x in basis, smul (f x) x = 0 → ∀ x, f x = 0)
-  spanning : ∀ (x : M), ∃ (f : M → R), 
+  spanning : ∀ (x : M), ∃ (f : M → R),
     (∀ y, y ∉ basis → f y = 0) ∧ x = ∑ y in basis, smul (f y) y
 
 -- 投射模
@@ -119,7 +119,7 @@ class InjectiveModule (R : Type) [Ring R] (I : Type) [AddCommGroup I] [Module R 
 -- Flat module
 class FlatModule (R : Type) [Ring R] (M : Type) [AddCommGroup M] [Module R M] where
   tensor_injective : ∀ {A B : Type} [AddCommGroup A] [AddCommGroup B] [Module R A] [Module R B],
-    ∀ (f : ModuleHom R A B), Injective f.toFun → 
+    ∀ (f : ModuleHom R A B), Injective f.toFun →
     Injective (tensor_product_hom f (id_hom M))
 ```
 
@@ -128,27 +128,27 @@ class FlatModule (R : Type) [Ring R] (M : Type) [AddCommGroup M] [Module R M] wh
 ```lean
 -- 张量积
 -- Tensor product
-def TensorProduct (R : Type) [Ring R] (M N : Type) 
+def TensorProduct (R : Type) [Ring R] (M N : Type)
   [AddCommGroup M] [AddCommGroup N] [Module R M] [RightModule R N] : Type :=
   Quotient (TensorProduct.setoid R M N)
 
 -- 张量积的泛性质
 -- Universal property of tensor product
 theorem tensor_universal_property (R : Type) [Ring R] (M N P : Type)
-  [AddCommGroup M] [AddCommGroup N] [AddCommGroup P] 
+  [AddCommGroup M] [AddCommGroup N] [AddCommGroup P]
   [Module R M] [RightModule R N] [AddCommGroup P] :
   ∀ (f : M × N → P) (bilinear : IsBilinear f),
-  ∃! (g : TensorProduct R M N → P), 
+  ∃! (g : TensorProduct R M N → P),
   ∀ (m : M) (n : N), g (m ⊗ n) = f (m, n) := sorry
 
 -- 张量积的基本性质
 -- Basic properties of tensor product
 theorem tensor_product_properties (R : Type) [Ring R] (M N P : Type)
-  [AddCommGroup M] [AddCommGroup N] [AddCommGroup P] 
+  [AddCommGroup M] [AddCommGroup N] [AddCommGroup P]
   [Module R M] [RightModule R N] [Module R P] :
   -- M ⊗ R ≅ M
   TensorProduct R M R ≅ M ∧
-  -- R ⊗ N ≅ N  
+  -- R ⊗ N ≅ N
   TensorProduct R R N ≅ N ∧
   -- (M ⊗ N) ⊗ P ≅ M ⊗ (N ⊗ P)
   TensorProduct R (TensorProduct R M N) P ≅ TensorProduct R M (TensorProduct R N P) ∧
@@ -183,7 +183,7 @@ structure ChainMap (R : Type) [Ring R] (C D : ChainComplex R) where
 
 -- 同调函子
 -- Homology functor
-def homology_functor (R : Type) [Ring R] (n : ℤ) : 
+def homology_functor (R : Type) [Ring R] (n : ℤ) :
   ChainComplex R → Type := λ C, homology C n
 ```
 
@@ -192,7 +192,7 @@ def homology_functor (R : Type) [Ring R] (n : ℤ) :
 ```lean
 -- 投射分解
 -- Projective resolution
-structure ProjectiveResolution (R : Type) [Ring R] (M : Type) 
+structure ProjectiveResolution (R : Type) [Ring R] (M : Type)
   [AddCommGroup M] [Module R M] where
   complex : ChainComplex R
   augmentation : ModuleHom R (complex.modules 0) M
@@ -201,7 +201,7 @@ structure ProjectiveResolution (R : Type) [Ring R] (M : Type)
 
 -- 内射分解
 -- Injective resolution
-structure InjectiveResolution (R : Type) [Ring R] (M : Type) 
+structure InjectiveResolution (R : Type) [Ring R] (M : Type)
   [AddCommGroup M] [Module R M] where
   complex : ChainComplex R
   coaugmentation : ModuleHom R M (complex.modules 0)
@@ -210,14 +210,14 @@ structure InjectiveResolution (R : Type) [Ring R] (M : Type)
 
 -- Ext函子
 -- Ext functor
-def Ext (R : Type) [Ring R] (n : ℕ) (M N : Type) 
+def Ext (R : Type) [Ring R] (n : ℕ) (M N : Type)
   [AddCommGroup M] [AddCommGroup N] [Module R M] [Module R N] : Type :=
   let P := ProjectiveResolution R M
   homology (HomComplex P.complex N) n
 
 -- Tor函子
 -- Tor functor
-def Tor (R : Type) [Ring R] (n : ℕ) (M N : Type) 
+def Tor (R : Type) [Ring R] (n : ℕ) (M N : Type)
   [AddCommGroup M] [AddCommGroup N] [Module R M] [Module R N] : Type :=
   let P := ProjectiveResolution R M
   homology (TensorComplex P.complex N) n
@@ -238,11 +238,11 @@ structure SpectralSequence (R : Type) [Ring R] where
 
 -- Leray-Serre谱序列
 -- Leray-Serre spectral sequence
-theorem leray_serre_spectral_sequence (R : Type) [Ring R] 
+theorem leray_serre_spectral_sequence (R : Type) [Ring R]
   (F E B : Type) [TopologicalSpace F] [TopologicalSpace E] [TopologicalSpace B] :
   -- 假设 F → E → B 是纤维丛
   -- 则存在谱序列 E_2^{p,q} = H^p(B, H^q(F)) ⇒ H^{p+q}(E)
-  ∃ (E : SpectralSequence R), 
+  ∃ (E : SpectralSequence R),
   E.pages 2 = DirectSum (λ p q, H^p B (H^q F)) := sorry
 ```
 
@@ -253,7 +253,7 @@ theorem leray_serre_spectral_sequence (R : Type) [Ring R]
 ```lean
 -- 群表示
 -- Group representation
-structure GroupRepresentation (G : Type) [Group G] (V : Type) 
+structure GroupRepresentation (G : Type) [Group G] (V : Type)
   [AddCommGroup V] [Module ℂ V] where
   action : G → ModuleHom ℂ V V
   identity : action 1 = id_hom V
@@ -261,14 +261,14 @@ structure GroupRepresentation (G : Type) [Group G] (V : Type)
 
 -- 不可约表示
 -- Irreducible representation
-class IrreducibleRepresentation (G : Type) [Group G] (V : Type) 
+class IrreducibleRepresentation (G : Type) [Group G] (V : Type)
   [AddCommGroup V] [Module ℂ V] [GroupRepresentation G V] where
-  no_invariant_subspaces : ∀ (W : Submodule ℂ V), 
+  no_invariant_subspaces : ∀ (W : Submodule ℂ V),
     W ≠ ⊥ ∧ W ≠ ⊤ → ¬IsInvariantSubspace W
 
 -- Schur引理
 -- Schur's lemma
-theorem schur_lemma (G : Type) [Group G] (V₁ V₂ : Type) 
+theorem schur_lemma (G : Type) [Group G] (V₁ V₂ : Type)
   [AddCommGroup V₁] [AddCommGroup V₂] [Module ℂ V₁] [Module ℂ V₂]
   [GroupRepresentation G V₁] [GroupRepresentation G V₂]
   [IrreducibleRepresentation G V₁] [IrreducibleRepresentation G V₂] :
@@ -290,7 +290,7 @@ theorem maschke_theorem (G : Type) [Group G] [Fintype G] :
 ```lean
 -- 李代数表示
 -- Lie algebra representation
-structure LieAlgebraRepresentation (𝔤 : Type) [LieAlgebra 𝔤] (V : Type) 
+structure LieAlgebraRepresentation (𝔤 : Type) [LieAlgebra 𝔤] (V : Type)
   [AddCommGroup V] [Module ℂ V] where
   action : 𝔤 → ModuleHom ℂ V V
   linearity : ∀ x y, action (x + y) = action x + action y
@@ -298,14 +298,14 @@ structure LieAlgebraRepresentation (𝔤 : Type) [LieAlgebra 𝔤] (V : Type)
 
 -- Weyl定理
 -- Weyl's theorem
-theorem weyl_theorem (𝔤 : Type) [SemisimpleLieAlgebra 𝔤] (V : Type) 
+theorem weyl_theorem (𝔤 : Type) [SemisimpleLieAlgebra 𝔤] (V : Type)
   [AddCommGroup V] [Module ℂ V] [LieAlgebraRepresentation 𝔤 V] [FiniteDimensional V] :
-  V = DirectSum (λ i, V_i) ∧ 
+  V = DirectSum (λ i, V_i) ∧
   ∀ i, IrreducibleLieRepresentation 𝔤 V_i := sorry
 
 -- 最高权模
 -- Highest weight module
-class HighestWeightModule (𝔤 : Type) [SemisimpleLieAlgebra 𝔤] (V : Type) 
+class HighestWeightModule (𝔤 : Type) [SemisimpleLieAlgebra 𝔤] (V : Type)
   [AddCommGroup V] [Module ℂ V] [LieAlgebraRepresentation 𝔤 V] where
   highest_weight_vector : V
   weight : Weight 𝔤
@@ -318,7 +318,7 @@ class HighestWeightModule (𝔤 : Type) [SemisimpleLieAlgebra 𝔤] (V : Type)
 ```lean
 -- 代数表示
 -- Algebraic representation
-structure AlgebraicRepresentation (A : Type) [Algebra A] (V : Type) 
+structure AlgebraicRepresentation (A : Type) [Algebra A] (V : Type)
   [AddCommGroup V] [Module ℂ V] where
   action : A → ModuleHom ℂ V V
   algebra_homomorphism : ∀ a b, action (a * b) = action a ∘ action b
@@ -331,9 +331,9 @@ theorem artin_wedderburn (A : Type) [SemisimpleAlgebra A] [FiniteDimensional A] 
 
 -- 不可约模
 -- Irreducible modules
-class IrreducibleModule (A : Type) [Algebra A] (V : Type) 
+class IrreducibleModule (A : Type) [Algebra A] (V : Type)
   [AddCommGroup V] [Module ℂ V] [AlgebraicRepresentation A V] where
-  no_invariant_submodules : ∀ (W : Submodule ℂ V), 
+  no_invariant_submodules : ∀ (W : Submodule ℂ V),
     W ≠ ⊥ ∧ W ≠ ⊤ → ¬IsInvariantSubmodule W
 ```
 
@@ -359,7 +359,7 @@ structure Sheaf (X : TopologicalSpace) (C : Type) [Category C] where
 -- 凝聚层
 -- Coherent sheaf
 class CoherentSheaf (X : Scheme) (ℱ : Sheaf X (Module R)) where
-  finite_type : ∀ U : OpenSet X.underlying_space, 
+  finite_type : ∀ U : OpenSet X.underlying_space,
     FiniteType (ℱ.sections U)
   finite_presentation : ∀ U : OpenSet X.underlying_space,
     ∃ (n m : ℕ) (φ : ModuleHom R (FreeModule R n) (FreeModule R m)),
@@ -371,7 +371,7 @@ theorem coherent_sheaf_properties (X : Scheme) (ℱ 𝒢 : Sheaf X (Module R))
   [CoherentSheaf X ℱ] [CoherentSheaf X 𝒢] :
   CoherentSheaf X (ℱ ⊕ 𝒢) ∧
   CoherentSheaf X (ℱ ⊗ 𝒢) ∧
-  ∀ (φ : SheafHom X ℱ 𝒢), 
+  ∀ (φ : SheafHom X ℱ 𝒢),
     CoherentSheaf X (kernel φ) ∧
     CoherentSheaf X (cokernel φ) ∧
     CoherentSheaf X (image φ) := sorry
@@ -416,13 +416,13 @@ def SheafCohomology (X : TopologicalSpace) (ℱ : Sheaf X (Module R)) (i : ℕ) 
 
 -- Čech上同调
 -- Čech cohomology
-def CechCohomology (X : TopologicalSpace) (ℱ : Sheaf X (Module R)) 
+def CechCohomology (X : TopologicalSpace) (ℱ : Sheaf X (Module R))
   (𝒰 : OpenCover X) (i : ℕ) : Type :=
   homology (CechComplex 𝒰 ℱ) i
 
 -- Serre对偶
 -- Serre duality
-theorem serre_duality (X : ProjectiveScheme) (ℱ : Sheaf X (Module R)) 
+theorem serre_duality (X : ProjectiveScheme) (ℱ : Sheaf X (Module R))
   [CoherentSheaf X ℱ] (n : ℕ) :
   H^n(X, ℱ) ≅ H^(dim X - n)(X, ℱ^∨ ⊗ ω_X)^∨ := sorry
 
@@ -470,7 +470,7 @@ def forward (M : NeuralModule n m) (input : Vector ℝ n) : Vector ℝ m :=
 -- Module homomorphism: network transformation
 structure NetworkHomomorphism (M N : NeuralModule) where
   transformation : Matrix ℝ M.output_dim N.input_dim
-  commutes : ∀ input, forward N (transformation * forward M input) = 
+  commutes : ∀ input, forward N (transformation * forward M input) =
     transformation * forward M input
 ```
 
@@ -530,7 +530,7 @@ structure StrategyModule (num_strategies : ℕ) where
 
 -- 支付函数
 -- Payoff function
-def expected_payoff (player : StrategyModule n) (opponent : StrategyModule n) 
+def expected_payoff (player : StrategyModule n) (opponent : StrategyModule n)
   (payoff_matrix : Matrix ℝ n n) : ℝ :=
   player.strategy_vector.transpose * payoff_matrix * opponent.strategy_vector
 
@@ -589,14 +589,14 @@ def normalize_expression (M : GeneExpressionModule n m) : GeneExpressionModule n
 
 -- 主成分分析
 -- Principal component analysis
-def principal_components (M : GeneExpressionModule n m) (k : ℕ) : 
+def principal_components (M : GeneExpressionModule n m) (k : ℕ) :
   Matrix ℝ m k × Matrix ℝ n k :=
   -- 实现PCA算法
   sorry
 
 -- 基因聚类
 -- Gene clustering
-def gene_clustering (M : GeneExpressionModule n m) (num_clusters : ℕ) : 
+def gene_clustering (M : GeneExpressionModule n m) (num_clusters : ℕ) :
   List (List String) :=
   -- 实现聚类算法
   sorry
@@ -616,7 +616,7 @@ def regulatory_strength (network : RegulatoryNetwork n) (regulator target : Stri
 
 -- 调控路径
 -- Regulatory paths
-def regulatory_paths (network : RegulatoryNetwork n) (source target : String) 
+def regulatory_paths (network : RegulatoryNetwork n) (source target : String)
   (max_length : ℕ) : List (List String) :=
   -- 实现路径查找算法
   sorry

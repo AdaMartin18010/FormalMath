@@ -1,0 +1,129 @@
+# first-isomorphism.yaml - 第一同构定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "first-isomorphism"
+  name:
+    zh: "第一同构定理"
+    en: "First Isomorphism Theorem"
+  msc_codes: ["20A05"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 φ: G → H 是群同态。则：
+      
+      1. ker(φ) ⊴ G（核是正规子群）
+      2. im(φ) ≤ H（像是子群）
+      3. G/ker(φ) ≅ im(φ)（商群同构于像）
+      
+      同构由 gN ↦ φ(g) 给出。
+      
+    informal: |
+      同态的本质是"商"：
+      把核"压缩"到零后，剩下的与像同构。
+      
+      例子：
+      - det: GL(n) → ℝ*
+      - ker = SL(n)（行列式为1）
+      - GL(n)/SL(n) ≅ ℝ*
+      
+    lean: |
+      -- 第一同构定理
+      theorem QuotientGroup.quotientKerEquivRange (f : G →* H) :
+        G ⧸ f.ker ≃* f.range
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "构造同构并验证"
+    
+    proof_tree: |
+      第一同构定理
+          │
+          ├── ker(φ) 是正规子群
+          │   └── gkg⁻¹ ∈ ker(φ)（因为φ(gkg⁻¹) = φ(g)φ(k)φ(g)⁻¹ = e）
+          │
+          ├── 定义 ψ: G/ker(φ) → im(φ)
+          │   └── ψ(gN) = φ(g)（良定义：若gN = g'N则φ(g) = φ(g')）
+          │
+          ├── ψ 是同态
+          │   └── ψ(gN · hN) = ψ((gh)N) = φ(gh) = φ(g)φ(h)
+          │
+          ├── ψ 是单射
+          │   └── ψ(gN) = e ⟹ g ∈ ker(φ) ⟹ gN = N
+          │
+          └── ψ 是满射
+              └── im(ψ) = im(φ)（显然）
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      交换图：
+      
+          G ──φ──→ H
+          │       ↗
+          ↓ π   ψ
+        G/ker(φ) ≅ im(φ)
+        
+    geometric: |
+      【几何表征】
+      
+      "压缩"直觉：
+      
+      G:     ●─●─●─●─●
+              ╲│╱     （ker压缩成一点）
+      G/ker:   ●───●───●
+                 ≅
+      im(φ):   ○───○───○
+      
+    intuitive: |
+      【直觉表征】
+      
+      商群 = 忽略核中的差异
+      
+      例：整数模3
+      - φ: ℤ → ℤ₃, φ(n) = n mod 3
+      - ker = 3ℤ
+      - ℤ/3ℤ ≅ ℤ₃
+      
+    categorical: |
+      【范畴表征】
+      
+      正合列：
+      1 → ker(φ) → G → im(φ) → 1
+      
+      coker(ker→G) ≅ im(G→H)
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "计算商群结构"
+    - description: "证明群同构"
+    - description: "群分类的基础"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "group-homomorphism"
+        role: "核心概念"
+      - id: "normal-subgroup"
+        role: "核是正规子群"
+      - id: "quotient-group"
+        role: "构造商群"
+        
+    related_to:
+      - id: "second-isomorphism"
+        description: "(HN)/N ≅ H/(H∩N)"
+      - id: "third-isomorphism"
+        description: "(G/N)/(M/N) ≅ G/M"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+  mathlib:
+    path: "Mathlib.GroupTheory.QuotientGroup"
+    name: "QuotientGroup.quotientKerEquivRange"

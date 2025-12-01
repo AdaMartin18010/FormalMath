@@ -1,0 +1,131 @@
+# stone-weierstrass.yaml - Stone-Weierstrass定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "stone-weierstrass"
+  name:
+    zh: "Stone-Weierstrass定理"
+    en: "Stone-Weierstrass Theorem"
+  msc_codes: ["46E15"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      【实版本】
+      设 X 是紧Hausdorff空间，A ⊆ C(X, ℝ) 是子代数。
+      若：
+      1. A 分离点：∀x ≠ y, ∃f ∈ A: f(x) ≠ f(y)
+      2. A 处处非零：∀x, ∃f ∈ A: f(x) ≠ 0
+      则 A 在 C(X, ℝ) 中稠密（关于sup范数）。
+      
+      【复版本】
+      还需要：A 对复共轭封闭（f ∈ A ⟹ f̄ ∈ A）
+      
+    informal: |
+      足够丰富的函数代数可以逼近任何连续函数。
+      
+      经典特例（Weierstrass逼近定理）：
+      多项式在[a,b]上稠密于C([a,b])
+      
+      推广：三角多项式稠密于周期连续函数
+      
+    lean: |
+      -- Stone-Weierstrass定理
+      theorem Subalgebra.topologicalClosure_eq_top_of_separatesPoints
+        {X : Type*} [TopologicalSpace X] [CompactSpace X] [T2Space X]
+        (A : Subalgebra ℝ C(X, ℝ)) (hA : A.SeparatesPoints) (hA' : A.NonTrivial) :
+        A.topologicalClosure = ⊤
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "格子方法"
+    
+    proof_tree: |
+      Stone-Weierstrass定理
+          │
+          ├── 引理：|f|可被A逼近
+          │   └── √x可被多项式逼近
+          │
+          ├── 引理：max(f,g), min(f,g)可被逼近
+          │   └── max(f,g) = (f+g+|f-g|)/2
+          │
+          ├── 构造逼近
+          │   ├── 对每对点(x,y)构造f_{xy}
+          │   ├── f_{xy}(x) = h(x), f_{xy}(y) = h(y)
+          │   └── 用紧致性选有限覆盖
+          │
+          └── 结合格子运算得到逼近
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      A 分离点 + 处处非零 
+          ⟹ 
+      cl(A) = C(X)
+      
+      特例：P[a,b] ⊆ C[a,b] 稠密
+      
+    geometric: |
+      【几何表征】
+      
+      函数图像的逼近：
+      
+        │    目标函数f
+        │   ╱╲  ╱╲
+        │  ╱  ╲╱  ╲
+        │ ╱ 逼近函数  ╲
+        └──────────────→
+        
+    intuitive: |
+      【直觉表征】
+      
+      "足够多的积木可以搭建任何形状"
+      - 多项式是"基础积木"
+      - 能分辨任意两点
+      - 就能逼近任意形状
+      
+    computational: |
+      【计算表征】
+      
+      Weierstrass逼近的Bernstein多项式：
+      
+      Bₙ(f)(x) = Σₖ f(k/n) C(n,k) xᵏ(1-x)^{n-k}
+      
+      Bₙ(f) → f 一致收敛
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "多项式逼近连续函数"
+    - description: "Fourier级数的收敛性"
+    - description: "泛函分析中的稠密性论证"
+    - description: "神经网络的万能逼近定理"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "compactness"
+        role: "空间条件"
+      - id: "algebra"
+        role: "函数代数"
+        
+    specializes_to:
+      - id: "weierstrass-approximation"
+        description: "多项式情形"
+        
+    related_to:
+      - id: "gelfand-representation"
+        description: "C*-代数理论"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    history:
+      weierstrass: 1885
+      stone_generalization: 1937
+      
+  mathlib:
+    path: "Mathlib.Topology.ContinuousFunction.StoneWeierstrass"

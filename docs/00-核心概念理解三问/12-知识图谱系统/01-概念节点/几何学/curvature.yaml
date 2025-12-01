@@ -1,0 +1,238 @@
+# curvature.yaml - 曲率概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "curvature"
+  name:
+    zh: "曲率"
+    en: "Curvature"
+  msc_codes: ["53B20", "53A04"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【曲线曲率】
+      平面曲线 γ(s)（弧长参数化）的曲率：
+      κ = |dT/ds| = |γ''(s)|
+      其中 T = γ'(s) 是单位切向量。
+      
+      【黎曼曲率张量】
+      R(X,Y)Z = ∇_X∇_Y Z - ∇_Y∇_X Z - ∇_{[X,Y]} Z
+      
+      分量形式：
+      R^ρ_{σμν} = ∂_μΓ^ρ_{νσ} - ∂_νΓ^ρ_{μσ} + Γ^ρ_{μλ}Γ^λ_{νσ} - Γ^ρ_{νλ}Γ^λ_{μσ}
+      
+      【高斯曲率】
+      曲面的高斯曲率 K = κ₁·κ₂（主曲率之积）
+      
+    informal: |
+      曲率度量"空间弯曲的程度"。
+      
+      曲线曲率：圆的曲率是1/半径，直线曲率是0。
+      曲率越大，弯曲越剧烈。
+      
+      曲面曲率：球面正曲率（向外凸），
+      马鞍面负曲率（双向弯曲相反）。
+      
+    lean: |
+      -- Mathlib定义（黎曼曲率）
+      def riemannCurvatureTensor {M : Type*} [SmoothManifold I M]
+        (g : RiemannianMetric M) : 
+        TensorProduct (TangentBundle M) (TangentBundle M) → 
+        TangentBundle M → TangentBundle M
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】弯曲程度
+      - 曲线：偏离直线的程度
+      - 曲面：偏离平面的程度
+      - 高维：平行移动后向量的变化
+      
+    algebraic: |
+      【代数直觉】联络的不可交换性
+      - 平坦空间：协变导数可交换
+      - 曲率：R(X,Y) = ∇_X∇_Y - ∇_Y∇_X - ∇_{[X,Y]}
+      - 曲率测量"绕圈后的变化"
+      
+    physical: |
+      【物理直觉】引力场
+      - 广义相对论：曲率 = 引力
+      - Einstein方程：R_{μν} - ½Rg_{μν} = 8πT_{μν}
+      - 物质弯曲时空
+      
+    categorical: |
+      【范畴直觉】
+      - 曲率是主丛上联络的特征类
+      - 陈类、Pontryagin类
+      - Atiyah-Singer指标定理
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "曲线曲率可视化"
+      content: |
+        曲率与密切圆：
+        
+              ╭─────╮
+             ╱       ╲  密切圆
+            │    •    │  半径R
+             ╲   │   ╱
+              ╲  │  ╱
+               ╲ │ ╱
+                ╲│╱
+                 •  ← 曲线上的点
+                 
+        曲率 κ = 1/R
+        
+    - type: "高斯曲率类型"
+      content: |
+        曲面的高斯曲率：
+        
+        K > 0（球形）    K = 0（柱面）    K < 0（马鞍）
+           ╭───╮          │   │           ╲   ╱
+          ╱     ╲         │   │            ╲ ╱
+         │       │        │   │             ╳
+          ╲     ╱         │   │            ╱ ╲
+           ╰───╯          │   │           ╱   ╲
+           
+    - type: "平行移动"
+      content: |
+        曲率与平行移动：
+        
+        在球面上沿三角形移动向量：
+        
+             北极
+              │↑
+              │ ↑
+             ╱│  ↑
+            ╱ │   ↑
+           ↓──┴────→
+           赤道
+           
+        向量转了90°！这就是曲率的效果
+        
+  # ===== 例子层 =====
+  examples:
+    curves:
+      - name: "直线"
+        curvature: "κ = 0"
+        description: "零曲率"
+        
+      - name: "半径R的圆"
+        curvature: "κ = 1/R"
+        description: "常曲率"
+        
+      - name: "抛物线 y = x²"
+        curvature: "κ = 2/(1+4x²)^{3/2}"
+        description: "变曲率，顶点处最大"
+        
+    surfaces:
+      - name: "平面"
+        gaussian: "K = 0"
+        mean: "H = 0"
+        type: "平坦"
+        
+      - name: "半径R的球面"
+        gaussian: "K = 1/R²"
+        mean: "H = 1/R"
+        type: "正曲率"
+        
+      - name: "双曲抛物面 z = xy"
+        gaussian: "K = -1/(1+x²+y²)²"
+        type: "负曲率"
+        
+      - name: "圆柱面"
+        gaussian: "K = 0"
+        mean: "H = 1/(2R)"
+        type: "内蕴平坦"
+        
+    spaces:
+      - name: "欧氏空间 ℝⁿ"
+        riemann: "R = 0"
+        description: "平坦"
+        
+      - name: "球面 Sⁿ"
+        sectional: "K = 1"
+        description: "常正曲率"
+        
+      - name: "双曲空间 ℍⁿ"
+        sectional: "K = -1"
+        description: "常负曲率"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "manifold"
+        description: "曲率定义在流形上"
+      - id: "connection"
+        description: "需要联络计算曲率"
+      - id: "tangent-bundle"
+        description: "向量的平行移动"
+        
+    generalizes: []
+        
+    specialized_by:
+      - id: "gaussian-curvature"
+        description: "高斯曲率（曲面）"
+      - id: "ricci-curvature"
+        description: "Ricci曲率（迹）"
+      - id: "scalar-curvature"
+        description: "标量曲率（全迹）"
+      - id: "sectional-curvature"
+        description: "截面曲率"
+        
+    related_to:
+      - id: "geodesic"
+        description: "测地线偏离"
+      - id: "parallel-transport"
+        description: "平行移动"
+      - id: "topology"
+        description: "Gauss-Bonnet"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "gauss-bonnet"
+      statement: "∫∫K dA = 2π·χ(M)"
+      importance: 5
+      
+    - id: "theorema-egregium"
+      statement: "高斯曲率是内蕴不变量"
+      importance: 5
+      
+    - id: "cartan-hadamard"
+      statement: "完备单连通非正曲率流形微分同胚于ℝⁿ"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      - "manifold"
+      - "connection"
+      - "derivative"
+      
+    leads_to:
+      - "general-relativity"
+      - "comparison-geometry"
+      - "geometric-analysis"
+      
+    history:
+      first_appearance: 1827
+      context: "Gauss的曲面论"
+      
+    key_figures:
+      - id: "gauss"
+        contribution: "高斯曲率、绝妙定理"
+      - id: "riemann"
+        contribution: "黎曼曲率张量"
+      - id: "ricci"
+        contribution: "Ricci曲率"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Geometry.Manifold.Riemannian"
+    name: "riemannCurvature"
+    coverage: "partial"

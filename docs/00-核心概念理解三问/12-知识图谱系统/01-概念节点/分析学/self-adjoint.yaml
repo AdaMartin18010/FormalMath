@@ -1,0 +1,92 @@
+# self-adjoint.yaml - 自伴算子概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "self-adjoint"
+  name:
+    zh: "自伴算子"
+    en: "Self-Adjoint Operator"
+  msc_codes: ["47A10"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 H 是Hilbert空间，T: D(T) → H 是稠定线性算子。
+      
+      伴随算子 T*：⟨Tx, y⟩ = ⟨x, T*y⟩
+      
+      T 是自伴的，若：
+      - D(T) = D(T*)
+      - T = T*
+      
+      有界情形：⟨Tx, y⟩ = ⟨x, Ty⟩, ∀x,y
+      
+    informal: |
+      自伴算子是"对称矩阵"的无穷维推广。
+      
+      关键性质：
+      - 特征值都是实数
+      - 可以"对角化"（谱定理）
+      - 是量子力学中可观测量的数学模型
+      
+    lean: |
+      -- 自伴算子（有界情形）
+      def IsSelfAdjoint (T : E →L[𝕜] E) : Prop :=
+        ∀ x y, ⟪T x, y⟫ = ⟪x, T y⟫
+        
+  # ===== 直觉层 =====
+  intuition:
+    algebraic: |
+      【代数直觉】对称性
+      - 矩阵版本：A = Aᵀ（实）或 A = A*（复）
+      - 内积的对称性：⟨Tx,y⟩ = ⟨x,Ty⟩
+      
+    physical: |
+      【物理直觉】可观测量
+      - 量子力学：可观测量 ↔ 自伴算子
+      - 测量值 = 特征值（实数）
+      - 概率 = 投影分解
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "实对称矩阵"
+      condition: "A = Aᵀ"
+      
+    - name: "位置算子"
+      formula: "(Xψ)(x) = xψ(x)"
+      domain: "L²(ℝ)"
+      
+    - name: "动量算子"
+      formula: "(Pψ)(x) = -iℏ dψ/dx"
+      
+    - name: "Laplace算子"
+      formula: "Δ = Σ ∂²/∂xᵢ²"
+      property: "负定"
+      
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "spectral-theorem"
+      statement: "自伴算子有谱分解"
+      
+    - id: "real-spectrum"
+      statement: "σ(T) ⊆ ℝ"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "hilbert-space"
+      - id: "linear-map"
+        
+    related_to:
+      - id: "spectral-theorem"
+      - id: "compact-operator"
+      - id: "quantum-mechanics"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+  mathlib:
+    path: "Mathlib.Analysis.InnerProductSpace.Adjoint"

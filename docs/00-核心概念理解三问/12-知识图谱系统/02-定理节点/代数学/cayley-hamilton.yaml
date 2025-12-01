@@ -1,0 +1,123 @@
+# cayley-hamilton.yaml - Cayley-Hamilton定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "cayley-hamilton"
+  name:
+    zh: "Cayley-Hamilton定理"
+    en: "Cayley-Hamilton Theorem"
+  msc_codes: ["15A18"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 A 是 n×n 矩阵（域 F 上），
+      p(λ) = det(λI - A) 是其特征多项式。
+      则：
+      p(A) = 0
+      
+      即矩阵满足自己的特征多项式。
+      
+      等价表述：
+      Aⁿ = c_{n-1}A^{n-1} + ... + c₁A + c₀I
+      其中 cᵢ 是特征多项式的系数。
+      
+    informal: |
+      每个矩阵都"满足自己的方程"。
+      
+      例如 2×2 矩阵 A：
+      - 特征多项式 p(λ) = λ² - tr(A)λ + det(A)
+      - 则 A² - tr(A)A + det(A)I = 0
+      
+      矩阵的高次幂可以用低次幂表示！
+      
+    lean: |
+      theorem Matrix.aeval_self_charpoly {n : Type*} [Fintype n] [DecidableEq n]
+        (A : Matrix n n R) [CommRing R] :
+        (Matrix.charpoly A).aeval A = 0
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "伴随矩阵方法"
+    
+    alternative_methods:
+      - "稠密性论证（代数闭域上可对角化矩阵稠密）"
+      - "最小多项式整除特征多项式"
+      
+    proof_tree: |
+      Cayley-Hamilton定理
+          │
+          ├── 伴随矩阵方法
+          │   ├── adj(λI - A) · (λI - A) = p(λ)I
+          │   ├── 展开 adj(λI - A) = Σ Bₖλᵏ
+          │   └── 代入 λ = A 并展开
+          │
+          └── 稠密性方法
+              ├── 可对角化矩阵显然成立
+              └── 一般矩阵是可对角化矩阵的极限
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      p(λ) = det(λI - A) = λⁿ + a_{n-1}λ^{n-1} + ... + a₀
+      
+      p(A) = Aⁿ + a_{n-1}A^{n-1} + ... + a₀I = 0
+      
+    geometric: |
+      【几何表征】
+      
+      特征多项式的根是特征值：
+      - 如果 A 可对角化：A = PDP⁻¹
+      - p(A) = P·p(D)·P⁻¹ = P·0·P⁻¹ = 0
+      
+    intuitive: |
+      【直觉表征】
+      
+      矩阵作用于向量空间，
+      产生有限维的"轨道"。
+      
+      n维空间中：
+      {v, Av, A²v, ..., Aⁿv} 线性相关
+      → 存在多项式关系
+      
+    computational: |
+      【计算表征】
+      
+      import numpy as np
+      
+      A = np.array([[1, 2], [3, 4]])
+      # 特征多项式: λ² - 5λ - 2
+      result = A @ A - 5 * A + (-2) * np.eye(2)
+      # result ≈ 0 (数值误差内)
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "计算矩阵的高次幂"
+    - description: "求解矩阵方程"
+    - description: "证明最小多项式的存在"
+    - description: "控制论中的可控性分析"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "eigenvalue"
+        role: "特征多项式"
+      - id: "determinant"
+        role: "定义"
+        
+    related_to:
+      - id: "minimal-polynomial"
+        description: "最小多项式整除特征多项式"
+      - id: "jordan-form"
+        description: "结构分解"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 4
+    history:
+      discoverers: "Arthur Cayley, William Rowan Hamilton"
+      year: 1858

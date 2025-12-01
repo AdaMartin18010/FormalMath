@@ -1,0 +1,96 @@
+# normal-subgroup.yaml - 正规子群概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "normal-subgroup"
+  name:
+    zh: "正规子群"
+    en: "Normal Subgroup"
+  msc_codes: ["20A05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 H ≤ G 是子群。H 是正规子群（记为 H ⊴ G），若：
+      ∀g ∈ G: gH = Hg
+      
+      等价条件：
+      1. ∀g ∈ G, h ∈ H: ghg⁻¹ ∈ H
+      2. ∀g ∈ G: gHg⁻¹ = H
+      3. H 是某个群同态的核
+      
+    informal: |
+      正规子群是"与所有元素都能换位"的子群。
+      
+      为什么重要？
+      - 只有正规子群才能做商群
+      - 它是群同态的核
+      
+    lean: |
+      -- 正规子群
+      class Subgroup.Normal (H : Subgroup G) : Prop where
+        conj_mem : ∀ n, n ∈ H → ∀ g : G, g * n * g⁻¹ ∈ H
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】共轭不变
+      - 正规子群在所有共轭下不变
+      - 所有左陪集 = 所有右陪集
+      - 陪集可以定义乘法
+      
+    algebraic: |
+      【代数直觉】商群的前提
+      - 只有正规子群才能让G/H成为群
+      - ker(φ) 总是正规子群
+      - 第一同构定理：G/ker(φ) ≅ im(φ)
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "阿贝尔群的任何子群"
+      description: "因为 gH = Hg 自动成立"
+      
+    - name: "中心 Z(G)"
+      description: "总是正规子群"
+      
+    - name: "交换子群 [G,G]"
+      description: "生成自所有 aba⁻¹b⁻¹"
+      property: "G/[G,G] 是阿贝尔化"
+      
+    - name: "ker(φ)"
+      description: "同态的核"
+      
+    - name: "Aₙ ⊴ Sₙ"
+      description: "交错群是对称群的正规子群"
+      
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "first-isomorphism"
+      statement: "G/ker(φ) ≅ im(φ)"
+      
+    - id: "correspondence"
+      statement: "G的包含N的子群 ↔ G/N的子群"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "subgroup"
+        description: "正规子群首先是子群"
+      - id: "coset"
+        description: "左右陪集相等"
+        
+    leads_to:
+      - id: "quotient-group"
+        description: "可以构造商群"
+      - id: "simple-group"
+        description: "只有平凡正规子群的群"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+  mathlib:
+    path: "Mathlib.GroupTheory.Subgroup.Basic"
+    name: "Subgroup.Normal"

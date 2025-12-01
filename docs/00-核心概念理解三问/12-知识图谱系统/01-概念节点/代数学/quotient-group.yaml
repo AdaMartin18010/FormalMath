@@ -1,0 +1,101 @@
+# quotient-group.yaml - 商群概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "quotient-group"
+  name:
+    zh: "商群"
+    en: "Quotient Group"
+  msc_codes: ["20A05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 N ⊴ G 是正规子群。商群 G/N 定义为：
+      
+      底集：G/N = {gN : g ∈ G}（所有陪集）
+      运算：(g₁N)(g₂N) = (g₁g₂)N
+      单位元：N = eN
+      逆元：(gN)⁻¹ = g⁻¹N
+      
+      商群的阶：|G/N| = |G|/|N|（Lagrange定理）
+      
+    informal: |
+      商群是"把相似元素视为相同"后得到的群。
+      
+      整数模n：ℤ/nℤ
+      - 余数相同的整数视为相同
+      - [a] + [b] = [a + b]
+      - 得到n个元素的循环群
+      
+    lean: |
+      -- 商群
+      instance QuotientGroup.instGroup (N : Subgroup G) [N.Normal] : 
+        Group (G ⧸ N) where
+        mul := Quotient.map₂ (· * ·) (fun _ _ h₁ _ _ h₂ => ...)
+        one := ⟦1⟧
+        inv := Quotient.map (·⁻¹) (fun _ _ h => ...)
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】折叠/粘合
+      - 把空间按照等价关系"折叠"
+      - 陪集是"被粘在一起"的点
+      - 商群是折叠后的结构
+      
+    algebraic: |
+      【代数直觉】简化结构
+      - 忽略某些细节（N中的差异）
+      - 保留本质结构
+      - 阿贝尔化：G/[G,G]
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "ℤ/nℤ"
+      description: "整数模n，n阶循环群"
+      generator: "[1]"
+      
+    - name: "ℝ/ℤ"
+      description: "圆群，同构于S¹"
+      
+    - name: "GL(n)/SL(n)"
+      description: "同构于ℝ*（非零实数乘法群）"
+      
+    - name: "Sₙ/Aₙ"
+      description: "同构于ℤ/2ℤ"
+      
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "first-isomorphism"
+      statement: "G/ker(φ) ≅ im(φ)"
+      
+    - id: "lagrange"
+      statement: "|G/N| = |G|/|N|"
+      
+    - id: "correspondence"
+      statement: "子群一一对应"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "normal-subgroup"
+        description: "需要正规子群"
+      - id: "coset"
+        description: "元素是陪集"
+        
+    related_to:
+      - id: "first-isomorphism-theorem"
+        description: "基本同构定理"
+      - id: "simple-group"
+        description: "没有非平凡商群"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+  mathlib:
+    path: "Mathlib.GroupTheory.QuotientGroup"
+    name: "QuotientGroup"

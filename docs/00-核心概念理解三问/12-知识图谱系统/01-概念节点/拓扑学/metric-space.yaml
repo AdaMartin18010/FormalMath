@@ -1,0 +1,96 @@
+# metric-space.yaml - 度量空间概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "metric-space"
+  name:
+    zh: "度量空间"
+    en: "Metric Space"
+  msc_codes: ["54E35"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      度量空间是二元组 (X, d)，其中 d: X × X → [0,∞) 满足：
+      
+      1. d(x, y) = 0 ⟺ x = y（同一性）
+      2. d(x, y) = d(y, x)（对称性）
+      3. d(x, z) ≤ d(x, y) + d(y, z)（三角不等式）
+      
+    informal: |
+      度量空间是有"距离"概念的空间。
+      
+      距离满足直觉：
+      - 自己到自己距离为0
+      - 距离是对称的
+      - 不绕路更短（三角不等式）
+      
+    lean: |
+      -- 度量空间
+      class MetricSpace (α : Type*) extends Dist α where
+        dist_self : ∀ x, dist x x = 0
+        eq_of_dist_eq_zero : ∀ {x y}, dist x y = 0 → x = y
+        dist_comm : ∀ x y, dist x y = dist y x
+        dist_triangle : ∀ x y z, dist x z ≤ dist x y + dist y z
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】距离测量
+      - 可以测量任意两点间的距离
+      - 可以定义开球、闭球
+      - 可以讨论收敛和连续
+      
+    topological: |
+      【拓扑直觉】诱导拓扑
+      - 开球生成拓扑
+      - 度量空间是Hausdorff的
+      - 度量空间是第一可数的
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "欧氏空间 ℝⁿ"
+      metric: "d(x,y) = √Σ(xᵢ-yᵢ)²"
+      
+    - name: "离散度量"
+      metric: "d(x,y) = 0 if x=y, 1 otherwise"
+      property: "所有子集开"
+      
+    - name: "Lᵖ度量"
+      metric: "d(f,g) = (∫|f-g|ᵖ)^{1/p}"
+      
+    - name: "sup度量"
+      metric: "d(f,g) = sup|f(x)-g(x)|"
+      
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "baire-category"
+      statement: "完备度量空间是Baire空间"
+      
+    - id: "metrization"
+      statement: "正则+第二可数 ⟹ 可度量化"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "set"
+        
+    leads_to:
+      - id: "topological-space"
+        description: "诱导拓扑"
+      - id: "completeness"
+        description: "完备度量空间"
+        
+    specializes_to:
+      - id: "normed-space"
+        description: "范数诱导度量"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+  mathlib:
+    path: "Mathlib.Topology.MetricSpace.Basic"
+    name: "MetricSpace"

@@ -40,18 +40,18 @@ class Ring (R : Type*) where
   zero : R
   one : R
   neg : R → R
-  
+
   -- 加法群公理
   add_assoc : ∀ a b c, add (add a b) c = add a (add b c)
   add_comm : ∀ a b, add a b = add b a
   add_zero : ∀ a, add a zero = a
   add_neg : ∀ a, add a (neg a) = zero
-  
+
   -- 乘法半群公理
   mul_assoc : ∀ a b c, mul (mul a b) c = mul a (mul b c)
   mul_one : ∀ a, mul a one = a
   one_mul : ∀ a, mul one a = a
-  
+
   -- 分配律
   left_distrib : ∀ a b c, mul a (add b c) = add (mul a b) (mul a c)
   right_distrib : ∀ a b c, mul (add a b) c = add (mul a c) (mul b c)
@@ -503,7 +503,7 @@ def Prime {R : Type*} [Ring R] (a : R) : Prop :=
 
 -- 唯一分解环的定义
 class UniqueFactorizationRing (R : Type*) extends Ring R where
-  factorization : ∀ (a : R), a ≠ zero → ∃ (factors : List R), 
+  factorization : ∀ (a : R), a ≠ zero → ∃ (factors : List R),
     (∀ f ∈ factors, Irreducible f) ∧ a = List.prod factors
   uniqueness : ∀ (a : R) (factors1 factors2 : List R),
     (∀ f ∈ factors1, Irreducible f) → (∀ f ∈ factors2, Irreducible f) →

@@ -29,28 +29,28 @@ class Field (F : Type*) where
   add : F → F → F
   zero : F
   neg : F → F
-  
+
   -- 乘法群结构（排除零元素）
   mul : F → F → F
   one : F
   inv : F → F
-  
+
   -- 加法公理
   add_assoc : ∀ a b c, add (add a b) c = add a (add b c)
   add_comm : ∀ a b, add a b = add b a
   add_zero : ∀ a, add a zero = a
   add_neg : ∀ a, add a (neg a) = zero
-  
+
   -- 乘法公理
   mul_assoc : ∀ a b c, mul (mul a b) c = mul a (mul b c)
   mul_comm : ∀ a b, mul a b = mul b a
   mul_one : ∀ a, mul a one = a
   mul_inv : ∀ a, a ≠ zero → mul a (inv a) = one
-  
+
   -- 分配律
   left_distrib : ∀ a b c, mul a (add b c) = add (mul a b) (mul a c)
   right_distrib : ∀ a b c, mul (add a b) c = add (mul a c) (mul b c)
-  
+
   -- 零元素性质
   zero_ne_one : zero ≠ one
   mul_zero : ∀ a, mul a zero = zero
@@ -164,16 +164,16 @@ def SimpleExtension (F K : Type*) [Field F] [Field K] (ext : FieldExtension F K)
   ∀ β : K, ∃ f : Polynomial F, β = f.eval (ext.embedding α)
 
 -- 代数单扩张
-theorem algebraic_simple_extension (F K : Type*) [Field F] [Field K] 
+theorem algebraic_simple_extension (F K : Type*) [Field F] [Field K]
   (ext : FieldExtension F K) (α : K) :
   let min_poly := minimal_polynomial α ext
-  SimpleExtension ext α ∧ min_poly ≠ 0 → 
+  SimpleExtension ext α ∧ min_poly ≠ 0 →
   FieldExtension.degree ext = min_poly.natDegree := by
   -- 实现代数单扩张的证明
   sorry
 
 -- 超越单扩张
-theorem transcendental_simple_extension (F K : Type*) [Field F] [Field K] 
+theorem transcendental_simple_extension (F K : Type*) [Field F] [Field K]
   (ext : FieldExtension F K) (α : K) :
   (∀ f : Polynomial F, f ≠ 0 → f.eval (ext.embedding α) ≠ 0) →
   SimpleExtension ext α ∧ FieldExtension.degree ext = 0 := by
@@ -200,7 +200,7 @@ def GaloisGroup (F K : Type*) [Field F] [Field K] (ext : FieldExtension F K) : T
   { σ : FieldAutomorphism K // ∀ a : F, σ.map (ext.embedding a) = ext.embedding a }
 
 -- 伽罗瓦群是群
-instance (F K : Type*) [Field F] [Field K] (ext : FieldExtension F K) : 
+instance (F K : Type*) [Field F] [Field K] (ext : FieldExtension F K) :
   Group (GaloisGroup F K ext) where
   mul := fun σ τ => ⟨τ.val.comp σ.val, by simp⟩
   one := ⟨FieldAutomorphism.id, by simp⟩
@@ -217,7 +217,7 @@ class GaloisExtension (F K : Type*) [Field F] [Field K] (ext : FieldExtension F 
   is_separable : Separable F K ext
 
 -- 伽罗瓦理论基本定理
-theorem galois_fundamental_theorem (F K : Type*) [Field F] [Field K] 
+theorem galois_fundamental_theorem (F K : Type*) [Field F] [Field K]
   (ext : FieldExtension F K) [GaloisExtension F K ext] :
   let G := GaloisGroup F K ext
   ∃ (L : IntermediateField F K ext) (H : Subgroup G),
@@ -307,9 +307,9 @@ theorem finite_field_existence (p : ℕ) (hp : Prime p) (n : ℕ) :
   sorry
 
 -- 有限域的唯一性
-theorem finite_field_uniqueness (F₁ F₂ : Type*) [Field F₁] [Field F₂] 
+theorem finite_field_uniqueness (F₁ F₂ : Type*) [Field F₁] [Field F₂]
   [FiniteField F₁] [FiniteField F₂] :
-  FiniteField.order F₁ = FiniteField.order F₂ → 
+  FiniteField.order F₁ = FiniteField.order F₂ →
   Nonempty (F₁ ≃+* F₂) := by
   -- 实现有限域唯一性的证明
   sorry
