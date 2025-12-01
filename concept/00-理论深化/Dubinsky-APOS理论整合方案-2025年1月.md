@@ -10,7 +10,7 @@
 ## 📑 目录 / Table of Contents
 
 - [Dubinsky APOS理论整合方案](#dubinsky-apos理论整合方案)
-  - [� 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
   - [📋 执行摘要](#-执行摘要)
   - [🎯 一、整合框架 (编号: C.THEORY.02.INTEGRATION.01)](#-一整合框架-编号-ctheory02integration01)
     - [1.1 分析框架](#11-分析框架)
