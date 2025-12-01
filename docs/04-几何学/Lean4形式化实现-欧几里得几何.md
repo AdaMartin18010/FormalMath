@@ -306,7 +306,7 @@ def in_circumcircle (triangle : Triangle 2) (point : Point 2) : Bool :=
   let b := triangle.vertex2
   let c := triangle.vertex3
   let d := point
-  let det := Matrix.det (Matrix.of (fun i j => 
+  let det := Matrix.det (Matrix.of (fun i j =>
     [a[0], a[1], a[0]^2 + a[1]^2, 1,
      b[0], b[1], b[0]^2 + b[1]^2, 1,
      c[0], c[1], c[0]^2 + c[1]^2, 1,
@@ -349,14 +349,14 @@ def search_nearest (tree : KDTree n) (query : Point n) (best : Point n) (best_di
   let current_dist := distance query tree.point
   let new_best := if current_dist < best_dist then tree.point else best
   let new_best_dist := min current_dist best_dist
-  
+
   let query_coord := query[tree.axis]
   let tree_coord := tree.point[tree.axis]
-  
+
   if query_coord < tree_coord then
     match tree.left with
     | none => new_best
-    | some left_tree => 
+    | some left_tree =>
       let left_result := search_nearest left_tree query new_best new_best_dist
       if abs (query_coord - tree_coord) < new_best_dist then
         match tree.right with
@@ -386,7 +386,7 @@ def is_convex_set (S : Set (Point n)) : Prop :=
 
 -- 凸函数
 def is_convex_function (f : Point n → ℝ) (S : Set (Point n)) : Prop :=
-  ∀ x y ∈ S, ∀ λ ∈ [0, 1], 
+  ∀ x y ∈ S, ∀ λ ∈ [0, 1],
     f (λ • x + (1 - λ) • y) ≤ λ * f x + (1 - λ) * f y
 
 -- 凸优化问题
@@ -398,7 +398,7 @@ structure ConvexOptimization (n : ℕ) where
   constraints_convex : ∀ c ∈ constraints, is_convex_function c domain
 
 -- 梯度下降
-def gradient_descent (f : Point n → ℝ) (grad_f : Point n → Vector n) 
+def gradient_descent (f : Point n → ℝ) (grad_f : Point n → Vector n)
   (initial_point : Point n) (learning_rate : ℝ) (iterations : ℕ) : Point n :=
   iterate (λ x => x - learning_rate • grad_f x) initial_point iterations
 ```
@@ -415,7 +415,7 @@ structure GeometricProgramming (n : ℕ) where
 -- 转换为凸规划
 def to_convex_program (gp : GeometricProgramming n) : ConvexOptimization n :=
   let log_objective := λ x => log (sum (map (λ (c, a) => c * exp (inner a x)) gp.objective_terms))
-  let log_constraints := map (λ terms => 
+  let log_constraints := map (λ terms =>
     λ x => log (sum (map (λ (c, a) => c * exp (inner a x)) terms))) gp.constraint_terms
   {
     objective := log_objective
@@ -434,7 +434,7 @@ def Functional (n : ℕ) := (ℝ → Point n) → ℝ
 
 -- 欧拉-拉格朗日方程
 def euler_lagrange_equation (L : ℝ → Point n → Vector n → ℝ) (y : ℝ → Point n) : ℝ → Vector n :=
-  λ t => 
+  λ t =>
     let y_t := y t
     let y'_t := deriv y t
     let y''_t := deriv y' t
@@ -458,14 +458,14 @@ def isoperimetric_functional : Functional 2 :=
 def transformation_matrix_3d (translation : Vector 3) (rotation : Rotation 3) (scaling : Scaling 3) : Matrix ℝ 4 4 :=
   let scale_matrix := Matrix.diagonal [scaling.factor, scaling.factor, scaling.factor, 1]
   let rotation_matrix := extend_to_4d rotation.matrix
-  let translation_matrix := Matrix.of (fun i j => 
+  let translation_matrix := Matrix.of (fun i j =>
     if i = j then 1 else if i = 3 ∧ j < 3 then translation[j] else 0)
   translation_matrix * rotation_matrix * scale_matrix
 
 -- 透视投影
 def perspective_projection (fov : ℝ) (aspect : ℝ) (near : ℝ) (far : ℝ) : Matrix ℝ 4 4 :=
   let f := 1 / tan (fov / 2)
-  Matrix.of (fun i j => 
+  Matrix.of (fun i j =>
     if i = 0 ∧ j = 0 then f / aspect
     else if i = 1 ∧ j = 1 then f
     else if i = 2 ∧ j = 2 then (far + near) / (near - far)
@@ -485,7 +485,7 @@ def forward_kinematics (joint_angles : List ℝ) (link_lengths : List ℝ) : Poi
 
 -- DH参数变换
 def dh_transform (θ : ℝ) (d : ℝ) (a : ℝ) (α : ℝ) : Matrix ℝ 4 4 :=
-  Matrix.of (fun i j => 
+  Matrix.of (fun i j =>
     if i = 0 ∧ j = 0 then cos θ
     else if i = 0 ∧ j = 1 then -sin θ * cos α
     else if i = 0 ∧ j = 2 then sin θ * sin α
@@ -506,7 +506,7 @@ def dh_transform (θ : ℝ) (d : ℝ) (a : ℝ) (α : ℝ) : Matrix ℝ 4 4 :=
 ```lean
 -- 相机内参矩阵
 def camera_intrinsic_matrix (fx fy : ℝ) (cx cy : ℝ) : Matrix ℝ 3 3 :=
-  Matrix.of (fun i j => 
+  Matrix.of (fun i j =>
     if i = 0 ∧ j = 0 then fx
     else if i = 0 ∧ j = 2 then cx
     else if i = 1 ∧ j = 1 then fy
@@ -518,7 +518,7 @@ def camera_intrinsic_matrix (fx fy : ℝ) (cx cy : ℝ) : Matrix ℝ 3 3 :=
 def camera_extrinsic_matrix (rotation : Rotation 3) (translation : Vector 3) : Matrix ℝ 3 4 :=
   let rotation_part := rotation.matrix
   let translation_part := translation
-  Matrix.of (fun i j => 
+  Matrix.of (fun i j =>
     if j < 3 then rotation_part[i, j]
     else translation_part[i])
 

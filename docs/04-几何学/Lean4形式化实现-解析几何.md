@@ -206,8 +206,8 @@ structure Plane3D where
 -- 平面方程
 -- Plane Equations
 def plane_equation (p : Plane3D) : ℝ → ℝ → ℝ → ℝ :=
-  fun x y z => (p.normal.dx * (x - p.point.x) + 
-                p.normal.dy * (y - p.point.y) + 
+  fun x y z => (p.normal.dx * (x - p.point.x) +
+                p.normal.dy * (y - p.point.y) +
                 p.normal.dz * (z - p.point.z))
 
 -- 平面的一般方程
@@ -228,7 +228,7 @@ def plane_general_3d (p : Plane3D) : GeneralPlane3D :=
 -- 点到平面距离
 -- Distance from Point to Plane
 def point_to_plane_distance (p : Point3D) (plane : GeneralPlane3D) : ℝ :=
-  abs (plane.a * p.x + plane.b * p.y + plane.c * p.z + plane.d) / 
+  abs (plane.a * p.x + plane.b * p.y + plane.c * p.z + plane.d) /
        Real.sqrt (plane.a^2 + plane.b^2 + plane.c^2)
 
 -- 直线与平面交点
@@ -276,7 +276,7 @@ structure GeneralCircle2D where
   deriving Repr
 
 def circle_general_2d (c : Circle2D) : GeneralCircle2D :=
-  { a := 1, b := 0, c := 1, d := -2 * c.center.x, e := -2 * c.center.y, 
+  { a := 1, b := 0, c := 1, d := -2 * c.center.x, e := -2 * c.center.y,
     f := c.center.x^2 + c.center.y^2 - c.radius^2 }
 
 -- 点与圆的位置关系
@@ -356,7 +356,7 @@ structure Parabola2D where
 -- Parabola Equations
 def parabola_equation (p : Parabola2D) (point : Point2D) : Prop :=
   let dist_to_focus := distance_2d point p.focus
-  let dist_to_directrix := abs (p.axis_direction.dx * (point.x - p.vertex.x) + 
+  let dist_to_directrix := abs (p.axis_direction.dx * (point.x - p.vertex.x) +
                                 p.axis_direction.dy * (point.y - p.vertex.y))
   dist_to_focus = dist_to_directrix
 
@@ -508,11 +508,11 @@ def polygon_area_2d (points : List Point2D) : ℝ :=
   match points with
   | [] => 0
   | [p] => 0
-  | p1 :: p2 :: rest => 
+  | p1 :: p2 :: rest =>
     let rec area_aux (prev : Point2D) (current : Point2D) (remaining : List Point2D) : ℝ :=
       match remaining with
       | [] => abs ((current.x - prev.x) * (p1.y - prev.y) - (p1.x - prev.x) * (current.y - prev.y)) / 2
-      | next :: rest => 
+      | next :: rest =>
         let current_area := abs ((current.x - prev.x) * (next.y - prev.y) - (next.x - prev.x) * (current.y - prev.y)) / 2
         current_area + area_aux current next rest
     area_aux p1 p2 rest
@@ -562,7 +562,7 @@ def graham_scan (points : List Point2D) : List Point2D :=
     -- 找到最底部的点
     let bottom_point := points.minimumBy (fun p1 p2 => if p1.y < p2.y then .lt else .gt)
     -- 按极角排序
-    let sorted_points := points.sortBy (fun p1 p2 => 
+    let sorted_points := points.sortBy (fun p1 p2 =>
       let angle1 := Real.atan2 (p1.y - bottom_point.y) (p1.x - bottom_point.x)
       let angle2 := Real.atan2 (p2.y - bottom_point.y) (p2.x - bottom_point.x)
       if angle1 < angle2 then .lt else .gt)
@@ -601,7 +601,7 @@ def delaunay_triangulation (points : List Point2D) : List Triangle2D :=
   | [p1] => []
   | [p1, p2] => []
   | [p1, p2, p3] => [Triangle2D.mk p1 p2 p3]
-  | _ => 
+  | _ =>
     -- 对于更多点，需要实现完整的Delaunay三角剖分
     []
 

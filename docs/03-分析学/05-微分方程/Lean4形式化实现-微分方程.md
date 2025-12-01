@@ -45,12 +45,12 @@ def ContinuousFunctions (α β : Type) [TopologicalSpace α] [TopologicalSpace �
   {f : α → β // Continuous f}
 
 -- 可微函数空间
-def DifferentiableFunctions (α β : Type) [NormedAddCommGroup α] [NormedSpace ℝ α] 
+def DifferentiableFunctions (α β : Type) [NormedAddCommGroup α] [NormedSpace ℝ α]
   [NormedAddCommGroup β] [NormedSpace ℝ β] : Type :=
   {f : α → β // Differentiable ℝ f}
 
 -- 光滑函数空间
-def SmoothFunctions (α β : Type) [NormedAddCommGroup α] [NormedSpace ℝ α] 
+def SmoothFunctions (α β : Type) [NormedAddCommGroup α] [NormedSpace ℝ α]
   [NormedAddCommGroup β] [NormedSpace ℝ β] : Type :=
   {f : α → β // ContDiff ℝ ⊤ f}
 ```
@@ -300,7 +300,7 @@ structure StochasticProcess (T : Type) where
 -- 布朗运动
 structure BrownianMotion where
   process : ℝ → sample_space → ℝ
-  properties : 
+  properties :
     (process 0 = 0) ∧
     (∀ s t, s < t → process t - process s ∼ N(0, t-s)) ∧
     (∀ s < t < u, process t - process s ⊥ process u - process t)
@@ -319,7 +319,7 @@ def ito_integral (f : ℝ → ℝ) (B : BrownianMotion) (t : ℝ) : ℝ :=
 
 -- 伊藤公式
 theorem ito_formula (f : ℝ → ℝ) (B : BrownianMotion) (t : ℝ) :
-  f(B.process t) = f(0) + ∫₀ᵗ f'(B.process s) dB.process s + 
+  f(B.process t) = f(0) + ∫₀ᵗ f'(B.process s) dB.process s +
                     (1/2) * ∫₀ᵗ f''(B.process s) ds :=
   sorry
 ```
@@ -343,7 +343,7 @@ theorem sde_existence_uniqueness (sde : StochasticDifferentialEquation) :
 
 -- Fokker-Planck方程
 def fokker_planck_equation (sde : StochasticDifferentialEquation) : LinearPDE :=
-  ⟨λ p, ∂p/∂t + ∂/∂x(sde.drift * p) - (1/2) * ∂²/∂x²(sde.diffusion² * p), 
+  ⟨λ p, ∂p/∂t + ∂/∂x(sde.drift * p) - (1/2) * ∂²/∂x²(sde.diffusion² * p),
    λ x, 0, Set.univ⟩
 ```
 

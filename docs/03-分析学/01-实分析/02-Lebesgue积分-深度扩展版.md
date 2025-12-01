@@ -364,7 +364,7 @@ lim∫=∫lim    ∫liminf≤    lim∫=∫lim
 
 ### 5.3 Lebesgue可积但非Riemann可积
 
-**经典例子：Dirichlet函数**
+**经典例子：Dirichlet函数**：
 
 ```text
 f(x) = χ_ℚ(x) = { 1, x∈ℚ

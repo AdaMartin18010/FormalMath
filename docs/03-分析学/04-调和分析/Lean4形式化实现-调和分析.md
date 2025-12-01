@@ -76,13 +76,13 @@ def dirichlet_kernel (n : ℕ) (x : ℝ) : ℂ :=
 -- 狄利克雷收敛定理
 theorem dirichlet_convergence (f : ℝ → ℂ) (x₀ : ℝ) :
   ContinuousAt f x₀ →
-  Tendsto (λ n, (1 / (2 * π)) * ∫ x in -π..π, f x * dirichlet_kernel n (x - x₀)) 
+  Tendsto (λ n, (1 / (2 * π)) * ∫ x in -π..π, f x * dirichlet_kernel n (x - x₀))
          atTop (𝓝 (f x₀)) :=
   sorry
 
 -- 帕塞瓦尔定理
 theorem parseval_theorem (f : ℝ → ℂ) :
-  (1 / π) * ∫ x in -π..π, ‖f x‖^2 = 
+  (1 / π) * ∫ x in -π..π, ‖f x‖^2 =
   ‖fourier_coefficient f 0‖^2 + 2 * ∑' n : ℕ, ‖fourier_coefficient f n‖^2 :=
   sorry
 ```
@@ -239,7 +239,7 @@ def green_function (Ω : Set ℝⁿ) (x y : ℝⁿ) : ℝ :=
 -- 格林表示公式
 theorem green_representation (u : ℝⁿ → ℝ) (Ω : Set ℝⁿ) (x : Ω) :
   is_harmonic u →
-  u x = ∫ y in frontier Ω, 
+  u x = ∫ y in frontier Ω,
         (u y * ∂green_function Ω x y/∂ν - green_function Ω x y * ∂u y/∂ν) :=
   sorry
 ```
@@ -282,7 +282,7 @@ theorem hilbert_transform_square (f : ℝ → ℂ) :
 
 -- 希尔伯特变换的傅里叶变换
 theorem hilbert_transform_fourier (f : ℝ → ℂ) :
-  fourier_transform (hilbert_transform f) = 
+  fourier_transform (hilbert_transform f) =
   λ ξ, -I * sgn ξ * fourier_transform f ξ :=
   sorry
 ```
@@ -328,15 +328,15 @@ theorem weighted_boundedness (T : (ℝ → ℂ) → (ℝ → ℂ)) (p : ℝ) (w 
 
 ```lean
 -- 多线性奇异积分算子
-def multilinear_singular_integral 
-  (K : ℝⁿ → ℝ^(m*n) → ℝ) 
-  (f₁ f₂ : ℝⁿ → ℂ) 
+def multilinear_singular_integral
+  (K : ℝⁿ → ℝ^(m*n) → ℝ)
+  (f₁ f₂ : ℝⁿ → ℂ)
   (x : ℝⁿ) : ℂ :=
   ∫ y₁ y₂, K x (y₁, y₂) * f₁ y₁ * f₂ y₂
 
 -- 多线性有界性
-theorem multilinear_boundedness 
-  (T : (ℝⁿ → ℂ) → (ℝⁿ → ℂ) → (ℝⁿ → ℂ)) 
+theorem multilinear_boundedness
+  (T : (ℝⁿ → ℂ) → (ℝⁿ → ℂ) → (ℝⁿ → ℂ))
   (p₁ p₂ p : ℝ) :
   1/p₁ + 1/p₂ = 1/p →
   T : LpSpace p₁ → LpSpace p₂ → LpSpace p :=
