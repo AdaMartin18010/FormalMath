@@ -1,0 +1,185 @@
+# invariant-ring.yaml - 不变量环概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-07
+
+concept:
+  id: "invariant-ring"
+  name:
+    zh: "不变量环"
+    en: "Invariant Ring"
+  msc_codes: ["13A50", "14L24"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设k是域，V = kⁿ是向量空间，G ⊆ GL(n,k)是线性群。
+      
+      不变量环k[V]^G定义为：
+      k[V]^G = {f∈k[V] | f是G-不变量}
+      
+      其中f是G-不变量，若：
+      ∀g∈G, ∀v∈V: f(g·v) = f(v)
+      
+      等价地：
+      g·f = f，对所有g∈G
+      
+    informal: |
+      不变量环是"在群作用下保持不变的多项式"构成的环。
+      
+      直观理解：
+      - 给定群G作用在空间V上
+      - 不变量环收集所有"G-不变"的多项式
+      - 这些多项式在G作用下保持不变
+      
+      类比：对称多项式构成对称群的不变量环
+      
+    lean: |
+      -- 不变量环的形式化（简化）
+      def InvariantRing (G : Type*) [Group G] (V : Type*) [AddCommGroup V] 
+        (action : G → V → V) (k : Type*) [CommRing k] : Type* :=
+        {f : V → k | ∀ g : G, ∀ v : V, f (action g v) = f v}
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】对称性
+      - 不变量环对应"对称的"函数
+      - 在G作用下保持不变
+      - 对应模空间的函数环
+      
+    algebraic: |
+      【代数直觉】子环
+      - 不变量环是多项式环的子环
+      - 是k-代数
+      - 有限生成（Hilbert-Noether）
+      
+    physical: |
+      【物理直觉】守恒量
+      - 不变量对应物理守恒量
+      - 在对称变换下不变
+      - Noether定理：对称性 ⟷ 守恒量
+      
+    categorical: |
+      【范畴直觉】固定点
+      - 不变量环是G-作用的"固定点"
+      - 是函子(-)^G的像
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "生成元表示"
+      content: |
+        k[V]^G = k[f₁,...,fₘ]
+        有限生成（Hilbert-Noether定理）
+        
+    - type: "几何表示"
+      content: |
+        Spec(k[V]^G) = V/G
+        不变量环的谱对应轨道空间
+        
+  # ===== 例子层 =====
+  examples:
+    symmetric:
+      - name: "对称多项式"
+        description: "k[x₁,...,xₙ]^Sₙ"
+        generators: "初等对称多项式σ₁,...,σₙ"
+        
+      - name: "二元二次型"
+        description: "k[a,b,c]^SL(2)"
+        generators: "判别式I = b² - ac"
+        
+    finite_group:
+      - name: "有限群的不变量"
+        description: "若G是有限群，k[V]^G有限生成"
+        bound: "Noether上界：度数≤|G|"
+        
+    counterexamples:
+      - name: "不可约群"
+        description: "某些不可约群，k[V]^G可能不是有限生成"
+        example: "Nagata反例（1959）"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "polynomial-ring"
+        description: "定义在多项式环上"
+      - id: "group-action"
+        description: "需要群作用"
+      - id: "noether-ring"
+        description: "不变量环是Noether环（在适当条件下）"
+        
+    generalizes:
+      - id: "symmetric-polynomial"
+        description: "对称多项式是不变量环的特例"
+        
+    specialized_by:
+      - id: "geometric-invariant-theory"
+        description: "几何不变量理论（GIT）"
+      - id: "moduli-space"
+        description: "模空间理论"
+        
+    related_to:
+      - id: "hilbert-noether-theorem"
+        description: "Hilbert-Noether定理保证有限生成"
+      - id: "reynolds-operator"
+        description: "Reynolds算子用于构造不变量"
+      - id: "representation-theory"
+        description: "表示论中的应用"
+      - id: "algebraic-geometry"
+        description: "代数几何中的应用"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "hilbert-noether-theorem"
+      statement: "若G是可约代数群，则k[V]^G是有限生成k-代数"
+      importance: 5
+      
+    - id: "noether-bound"
+      statement: "若G是有限群，|G| = n，则k[V]^G可由度数≤n的齐次不变量生成"
+      importance: 4
+      
+    - id: "reynolds-operator"
+      statement: "Reynolds算子R: k[V] → k[V]^G是投影"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      - "polynomial-ring"
+      - "group-action"
+      - "noether-ring"
+      
+    corequisites:
+      - "hilbert-noether-theorem"
+      - "geometric-invariant-theory"
+      
+    leads_to:
+      - "moduli-space"
+      - "geometric-invariant-theory"
+      - "representation-theory"
+      
+    history:
+      first_appearance: 1888
+      context: "Hilbert基底定理"
+      key_developments:
+        - "Hilbert (1888): 基底定理"
+        - "Noether (1916): 有限群的上界"
+        - "Mumford (1960s): 几何不变量理论"
+        
+    key_figures:
+      - id: "hilbert"
+        contribution: "基底定理，不变量环有限生成"
+      - id: "noether"
+        contribution: "有限群的上界，Reynolds算子"
+      - id: "mumford"
+        contribution: "几何不变量理论（GIT）"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.InvariantTheory"
+    name: "InvariantRing"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/InvariantTheory.html"
+    coverage: "partial"
+    note: "Mathlib中有不变量理论的基础内容"

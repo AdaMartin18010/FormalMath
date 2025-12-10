@@ -71,6 +71,31 @@ requires_relations:
     strength: 0.7
     description: "模推广了向量空间"
     
+  - source: "noether-ring"
+    target: "ring"
+    strength: 1.0
+    description: "Noether环是特殊的环"
+    
+  - source: "noether-ring"
+    target: "ideal"
+    strength: 1.0
+    description: "Noether环涉及理想的性质"
+    
+  - source: "invariant-ring"
+    target: "polynomial-ring"
+    strength: 1.0
+    description: "不变量环是多项式环的子环"
+    
+  - source: "invariant-ring"
+    target: "noether-ring"
+    strength: 0.9
+    description: "不变量环是Noether环（在适当条件下）"
+    
+  - source: "invariant-ring"
+    target: "group-action"
+    strength: 1.0
+    description: "不变量环需要群作用"
+    
   - source: "algebra"
     target: "ring"
     strength: 1.0
@@ -614,13 +639,13 @@ analogies:
 # ═══════════════════════════════════════════════════════════════
 
 statistics:
-  total_requires: 45
-  total_generalizes: 15
-  total_related: 12
+  total_requires: 51
+  total_generalizes: 17
+  total_related: 15
   total_analogies: 4
   
   coverage:
-    algebra: 15
+    algebra: 18
     analysis: 12
     topology: 10
     geometry: 8
