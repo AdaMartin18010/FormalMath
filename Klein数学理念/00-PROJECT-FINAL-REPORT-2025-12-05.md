@@ -40,7 +40,7 @@
 | **Interdisciplinary Applications** | **100%** | 3 | 2,200 | ⭐⭐⭐⭐⭐ |
 | **TOTAL** | **100%** | **60** | **50,200** | **⭐⭐⭐⭐⭐** |
 
-**Core modules represent 78% of documents and 77% of content**
+**Core modules represent 78% of documents and 77% of content**-
 
 ---
 

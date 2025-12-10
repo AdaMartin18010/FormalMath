@@ -1,0 +1,185 @@
+# lax-milgram-lemma.yaml - Lax-Milgram引理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-06
+
+theorem:
+  id: "lax-milgram-lemma"
+  name:
+    zh: "Lax-Milgram引理"
+    en: "Lax-Milgram Lemma"
+  msc_codes: ["47A07", "35J25"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      【Lax-Milgram引理】
+      设 H 是实Hilbert空间，a: H × H → ℝ 是双线性形式，满足：
+      
+      (1) 连续性：∃M > 0, |a(u,v)| ≤ M||u|| ||v||, ∀u,v ∈ H
+      (2) 强制性：∃α > 0, a(u,u) ≥ α||u||², ∀u ∈ H
+      
+      则对任意 f ∈ H*（H的对偶空间），存在唯一 u ∈ H 使得：
+      
+      a(u, v) = ⟨f, v⟩,  ∀v ∈ H
+      
+      且 ||u|| ≤ (1/α)||f||_{H*}
+      
+    informal: |
+      Lax-Milgram引理说：如果双线性形式"足够好"（连续且强制），
+      那么变分方程一定有唯一解。
+      
+      直观理解：
+      - 连续性：形式不会"爆炸"
+      - 强制性：形式"足够强"，能控制范数
+      - 结论：方程一定有解，且解唯一
+      
+      这是椭圆型PDE弱解存在性的基础。
+      
+    lean: |
+      -- Mathlib中的Lax-Milgram引理
+      import Mathlib.Analysis.NormedSpace.Banach
+      
+      theorem lax_milgram {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H] 
+        [CompleteSpace H] (a : H → H → ℝ) (f : H →L[ℝ] ℝ) :
+        (∃ M > 0, ∀ u v, |a u v| ≤ M * ‖u‖ * ‖v‖) →
+        (∃ α > 0, ∀ u, a u u ≥ α * ‖u‖^2) →
+        ∃! u, ∀ v, a u v = f v := by
+        sorry
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: |
+      【证明思路】
+      1. 由Riesz表示定理，f 对应唯一的 w ∈ H
+      2. 由强制性，a 诱导有界线性算子 A: H → H
+      3. 证明 A 是双射（单射+满射）
+      4. 解为 u = A⁻¹w
+      
+    key_steps:
+      - step: "1. 构造算子A"
+        description: "定义 Au 使得 a(u,v) = (Au, v)"
+        
+      - step: "2. 证明A有界"
+        description: "由连续性，A是连续线性算子"
+        
+      - step: "3. 证明A单射"
+        description: "由强制性，||Au|| ≥ α||u||，故A单射"
+        
+      - step: "4. 证明A满射"
+        description: "由强制性，A(H)是闭子空间；由单射，A(H) = H"
+        
+      - step: "5. 应用Banach逆算子定理"
+        description: "A是双射，故A⁻¹存在且有界"
+        
+    techniques:
+      - "Riesz表示定理"
+      - "Banach逆算子定理"
+      - "强制性估计"
+      - "闭图像定理"
+      
+    alternatives:
+      - name: "Galerkin方法"
+        description: "通过有限维逼近构造解"
+        
+      - name: "变分方法"
+        description: "通过能量最小化得到解"
+        
+  # ===== 应用层 =====
+  applications:
+    - domain: "椭圆型PDE"
+      description: |
+        椭圆型PDE的弱解存在性：
+        
+        -Δu = f  in Ω
+        u = 0   on ∂Ω
+        
+        变分形式：∫ ∇u · ∇v dx = ∫ fv dx
+        
+        双线性形式 a(u,v) = ∫ ∇u · ∇v dx 满足Lax-Milgram条件
+        故存在唯一弱解 u ∈ H₀¹(Ω)
+        
+    - domain: "Stokes方程"
+      description: "不可压缩流体的Stokes问题"
+      
+    - domain: "弹性力学"
+      description: "线性弹性问题的变分形式"
+      
+    - domain: "电磁学"
+      description: "Maxwell方程的变分形式"
+      
+  # ===== 推广层 =====
+  generalizations:
+    - name: "Babuska-Lax-Milgram"
+      statement: "混合问题的推广"
+      description: "处理混合边界条件"
+      
+    - name: "非线性推广"
+      statement: "单调算子理论"
+      description: "处理非线性PDE"
+      
+  special_cases:
+    - name: "Riesz表示定理"
+      statement: "当 a(u,v) = (u,v) 时"
+      description: "Lax-Milgram退化为Riesz表示定理"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "hilbert-space"
+        description: "在Hilbert空间中"
+      - id: "bilinear-form"
+        description: "双线性形式"
+      - id: "dual-space"
+        description: "对偶空间"
+        
+    uses_theorems:
+      - id: "riesz-representation"
+        description: "Riesz表示定理"
+      - id: "banach-inverse"
+        description: "Banach逆算子定理"
+      - id: "closed-graph"
+        description: "闭图像定理"
+        
+    implies:
+      - id: "elliptic-existence"
+        description: "椭圆型PDE弱解存在性"
+      - id: "variational-solution"
+        description: "变分问题的解存在性"
+        
+    equivalent_to:
+      - id: "coercive-bilinear"
+        description: "强制双线性形式的可解性"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    year_proved: 1954
+    provers:
+      - id: "lax"
+        contribution: "与Milgram共同证明"
+      - id: "milgram"
+        contribution: "与Lax共同证明"
+        
+    prerequisites:
+      - "hilbert-space"
+      - "functional-analysis"
+      - "banach-space"
+      
+    leads_to:
+      - "pde-weak-solution"
+      - "finite-element-method"
+      - "variational-method"
+      
+    history:
+      context: "为椭圆型PDE弱解理论奠定基础"
+      significance: "现代PDE理论的基石"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Analysis.NormedSpace.Banach"
+    name: "LaxMilgram"
+    url: "https://leanprover-community.github.io/mathlib4_docs/"
+    coverage: "partial"
+    note: "Mathlib中可能有相关结果，但可能不完整"

@@ -6,7 +6,7 @@
 
 **Riemann-Roch（曲线）**：
 
-```
+```text
 曲线C
 除子D
 
@@ -17,19 +17,21 @@
 - deg D：度
 - g：亏格
 ```
+
 ---
 
 ### 1.2 意义
 
 **经典定理的意义**：
 
-```
+```text
 意义：
 - 分类工具
 - 存在性定理
 - 几何应用
 - 历史重要性
 ```
+
 ---
 
 ## 二、Hirzebruch-Riemann-Roch
@@ -38,7 +40,7 @@
 
 **HRR定理**：
 
-```
+```text
 射影概形X
 向量丛E
 
@@ -48,18 +50,20 @@
 - ch：Chern特征
 - td：Todd类
 ```
+
 ---
 
 ### 2.2 意义
 
 **HRR的意义**：
 
-```
+```text
 意义：
 - 高维推广
 - 拓扑方法
 - 应用广泛
 ```
+
 ---
 
 ## 三、Grothendieck-Riemann-Roch
@@ -68,7 +72,7 @@
 
 **GRR定理**：
 
-```
+```text
 概形态射f: X → Y
 向量丛E在X上
 
@@ -79,19 +83,21 @@ ch(R f_* E) · td(Y) = f_*(ch(E) · td(X))
 - 函子性
 - 统一框架
 ```
+
 ---
 
 ### 3.2 应用
 
 **应用**：
 
-```
+```text
 应用：
 - 相对上同调
 - 几何不变量
 - 分类问题
 - 现代研究
 ```
+
 ---
 
 ## 四、在SGA 6中
@@ -100,7 +106,7 @@ ch(R f_* E) · td(Y) = f_*(ch(E) · td(X))
 
 **SGA 6（1966-1968）**：
 
-```
+```text
 Séminaire de géométrie algébrique
 Théorie des intersections et théorème de Riemann-Roch
 
@@ -113,19 +119,21 @@ Théorie des intersections et théorème de Riemann-Roch
 - Grothendieck
 - 多人合作
 ```
+
 ---
 
 ### 4.2 主要结果
 
 **SGA 6的主要结果**：
 
-```
+```text
 结果：
 - Grothendieck-Riemann-Roch
 - 相交理论
 - 应用
 - 现代基础
 ```
+
 ---
 
 ## 五、相交理论
@@ -134,7 +142,7 @@ Théorie des intersections et théorème de Riemann-Roch
 
 **相交积**：
 
-```
+```text
 概形X
 闭子概形V, W
 
@@ -146,19 +154,21 @@ V · W ∈ A^*(X)
 - 几何不变量
 - 应用
 ```
+
 ---
 
 ### 5.2 应用
 
 **应用**：
 
-```
+```text
 应用：
 - Bezout定理
 - 几何不变量
 - 分类问题
 - 现代研究
 ```
+
 ---
 
 ## 六、K理论
@@ -167,7 +177,7 @@ V · W ∈ A^*(X)
 
 **Grothendieck群K_0(X)**：
 
-```
+```text
 概形X
 
 K_0(X) = 向量丛的Grothendieck群
@@ -177,13 +187,14 @@ K_0(X) = 向量丛的Grothendieck群
 - 几何应用
 - 应用广泛
 ```
+
 ---
 
 ### 6.2 高K理论
 
 **高K理论**：
 
-```
+```text
 K_i(X)（i > 0）
 
 性质：
@@ -191,6 +202,7 @@ K_i(X)（i > 0）
 - 应用广泛
 - 现代研究
 ```
+
 ---
 
 ## 七、现代发展
@@ -199,7 +211,7 @@ K_i(X)（i > 0）
 
 **导出Riemann-Roch**：
 
-```
+```text
 经典Riemann-Roch
     ↓
 导出Riemann-Roch
@@ -208,18 +220,20 @@ K_i(X)（i > 0）
     ↓
 高阶结构
 ```
+
 ---
 
 ### 7.2 应用
 
 **现代应用**：
 
-```
+```text
 应用：
 - 导出代数几何
 - ∞-范畴
 - 现代研究
 ```
+
 ---
 
 ## 八、总结
