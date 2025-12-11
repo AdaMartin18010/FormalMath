@@ -10,7 +10,7 @@
 
 #### 学术资源
 
-**核心文献在线版本**
+**核心文献在线版本**:
 
 - 📚 **Grundlagen der Geometrie (1899)**
   - Archive.org: <https://archive.org/details/grundlagendergeo00hilb>
@@ -24,27 +24,27 @@
 - 📚 **Grundlagen der Mathematik I & II (1934, 1939)**
   - Springer官方版：<https://www.springer.com/gp/book/9783642867668>
 
-**学术数据库**
+**学术数据库**:
 
 - MathSciNet检索: "Hilbert, David"
   - <https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=215744>
 - zbMATH: <https://zbmath.org/?q=au:Hilbert+David>
 - Google Scholar: <https://scholar.google.com/scholar?q=David+Hilbert>
 
-**权威传记与研究**
+**权威传记与研究**:
 
 - Constance Reid传记: *Hilbert* (1970)
   - 部分章节: <https://www.maa.org/press/maa-reviews/hilbert>
 - MacTutor传记: <http://mathshistory.st-andrews.ac.uk/Biographies/Hilbert.html>
 - 斯坦福哲学百科: <https://plato.stanford.edu/entries/hilbert-program/>
 
-**现代研究与评论**
+**现代研究与评论**:
 
 - arXiv搜索: "Hilbert program" OR "formalism mathematics"
   - <https://arxiv.org/search/?query=hilbert+program&searchtype=all>
 - nLab (范畴论视角): <https://ncatlab.org/nlab/show/Hilbert%27s+program>
 
-**教育视频与讲座**
+**教育视频与讲座**:
 
 - YouTube搜索: "Hilbert Formalism" / "Hilbert's Problems"
   - Numberphile频道：希尔伯特23问题
@@ -63,7 +63,7 @@
 
 #### 学术资源
 
-**核心文献在线版本**
+**核心文献在线版本**:
 
 - 📚 **Über die Hypothesen, welche der Geometrie zu Grunde liegen (1854)**
   - 德文原版: <https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Geom/>
@@ -78,26 +78,26 @@
   - 黎曼假设原始论文: <https://www.claymath.org/millennium-problems/riemann-hypothesis>
   - 英文翻译+注释: Edwards *Riemann's Zeta Function* (1974)
 
-**学术数据库**
+**学术数据库**:
 
 - MacTutor黎曼专页: <http://mathshistory.st-andrews.ac.uk/Biographies/Riemann.html>
 - MathSciNet: 搜索"Riemann surfaces" / "Riemann hypothesis"
 - arXiv: "Riemann geometry" / "Riemann zeta"
 
-**权威研究著作**
+**权威研究著作**:
 
 - Bottazzini & Gray: *Hidden Harmony - Geometric Fantasies* (2013)
   - SpringerLink: <https://link.springer.com/book/10.1007/978-1-4614-5725-1>
 - Laugwitz: *Bernhard Riemann 1826-1866: Turning Points in the Conception of Mathematics* (1999)
 
-**现代应用**
+**现代应用**:
 
 - Clay数学研究所：黎曼假设千禧年大奖问题
   - <https://www.claymath.org/millennium-problems/riemann-hypothesis>
 - 广义相对论数学基础：Einstein 1915论文
   - <https://einsteinpapers.press.princeton.edu/>
 
-**教育资源**
+**教育资源**:
 
 - 3Blue1Brown: "Visualizing the Riemann zeta function"
   - <https://www.youtube.com/watch?v=sD0NjbwqlYw>
@@ -116,7 +116,7 @@
 
 #### 学术资源
 
-**核心文献在线版本**
+**核心文献在线版本**:
 
 - 📚 **Analysis Situs (1895)**
   - 法文原版: <http://www.numdam.org/> (法国数字数学文库)
@@ -131,27 +131,27 @@
   - Acta Mathematica原版: <https://projecteuclid.org/journals/acta-mathematica>
   - 现代解读: Diacu & Holmes *Celestial Encounters* (1996)
 
-**学术数据库**
+**学术数据库**:
 
 - MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Poincare.html>
 - MathSciNet: 搜索"Poincaré conjecture" / "chaos theory"
 - zbMATH: "Poincare" (5000+结果)
 
-**权威研究**
+**权威研究**:
 
 - Gray: *Henri Poincaré: A Scientific Biography* (2013)
   - Princeton U Press: <https://press.princeton.edu/books/hardcover/9780691151007/henri-poincare>
 - 斯坦福哲学百科: "Poincaré's Philosophy of Mathematics"
   - <https://plato.stanford.edu/entries/poincare/>
 
-**现代验证**
+**现代验证**:
 
 - 佩雷尔曼证明庞加莱猜想 (2003)
   - arXiv: <https://arxiv.org/abs/math/0211159>
   - Clay官方确认: <https://www.claymath.org/poincare-conjecture>
 - 混沌理论文献: Strogatz *Nonlinear Dynamics and Chaos* (2015)
 
-**教育资源**
+**教育资源**:
 
 - Numberphile: "The Poincaré Conjecture"
 - Veritasium: "The Beautiful Chaos of Poincaré"
@@ -169,7 +169,7 @@
 
 #### 学术资源
 
-**核心文献在线版本**
+**核心文献在线版本**:
 
 - 📚 **Éléments de géométrie algébrique (EGA) I-IV (1960-1967)**
   - Numdam免费版: <http://www.numdam.org/numdam-bin/recherche?au=Grothendieck>
@@ -186,19 +186,19 @@
 - 📚 **Pursuing Stacks (1983)**
   - 完整打字稿: <https://thescrivener.github.io/PursuingStacks/>
 
-**学术数据库**
+**学术数据库**:
 
 - MathSciNet: "Grothendieck, Alexander" (8000+引用)
 - arXiv: "Grothendieck topos" / "motivic cohomology"
 - nLab核心资源: <https://ncatlab.org/nlab/show/Alexander+Grothendieck>
 
-**权威研究**
+**权威研究**:
 
 - Scharlau: *Who is Alexander Grothendieck?* (3卷)
   - 免费下载: <https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/>
 - Cartier等: *The Grothendieck Festschrift* (3卷, Birkhäuser)
 
-**现代实现**
+**现代实现**:
 
 - Lurie: *Higher Topos Theory* (2009)
   - 免费版: <https://www.math.ias.edu/~lurie/papers/HTT.pdf>
@@ -206,7 +206,7 @@
   - arXiv: <https://arxiv.org/abs/1909.06791>
 - Lean形式化项目: <https://leanprover-community.github.io/>
 
-**教育资源**
+**教育资源**:
 
 - YouTube: "The Map of Mathematics" (Domain of Science)
 - nLab研讨: "What is...a Grothendieck topos?"
@@ -331,14 +331,14 @@
 
 ### 🟡 11-12. 现代数学家
 
-**Jacob Lurie (1977-)**
+**Jacob Lurie (1977-)**:
 
 - 主页: <https://www.math.ias.edu/~lurie/>
 - *Higher Topos Theory*免费PDF
 - *Higher Algebra*免费PDF
 - YouTube讲座: IAS视频
 
-**Peter Scholze (1987-)**
+**Peter Scholze (1987-)**:
 
 - Bonn大学主页: <https://www.math.uni-bonn.de/people/scholze/>
 - *Condensed Mathematics*: arXiv:1909.06791
@@ -351,23 +351,23 @@
 
 ### 物理学应用
 
-**广义相对论（黎曼几何应用）**
+**广义相对论（黎曼几何应用）**:
 
 - Einstein Papers Project: <https://einsteinpapers.press.princeton.edu/>
 - Living Reviews in Relativity: <https://link.springer.com/journal/41114>
 - LIGO科学合作组织: <https://www.ligo.caltech.edu/>
 
-**规范场论（克莱因对称性）**
+**规范场论（克莱因对称性）**:
 
 - Yang-Mills理论: CERN文档
 - 标准模型: Particle Data Group <https://pdg.lbl.gov/>
 
-**量子力学（希尔伯特空间）**
+**量子力学（希尔伯特空间）**:
 
 - Dirac: *The Principles of Quantum Mechanics*
 - von Neumann: *Mathematical Foundations of Quantum Mechanics*
 
-**弦论（黎曼面、格洛腾迪克）**
+**弦论（黎曼面、格洛腾迪克）**:
 
 - Polchinski: *String Theory* (Cambridge, 1998)
 - Witten在IAS的讲座: <https://www.ias.edu/video>
@@ -376,18 +376,18 @@
 
 ### 计算机科学应用
 
-**形式化验证（希尔伯特遗产）**
+**形式化验证（希尔伯特遗产）**:
 
 - Lean Community: <https://leanprover-community.github.io/>
 - Coq官方: <https://coq.inria.fr/>
 - Isabelle/HOL: <https://isabelle.in.tum.de/>
 
-**类型论（格洛腾迪克范畴论）**
+**类型论（格洛腾迪克范畴论）**:
 
 - HoTT Book免费版: <https://homotopytypetheory.org/book/>
 - nLab: <https://ncatlab.org/nlab/show/homotopy+type+theory>
 
-**算法复杂性（庞加莱不可判定性）**
+**算法复杂性（庞加莱不可判定性）**:
 
 - Complexity Zoo: <https://complexityzoo.net/>
 - SODA/STOC会议论文: <https://dl.acm.org/>
@@ -396,19 +396,19 @@
 
 ### 数学教育资源
 
-**开放课程**
+**开放课程**:
 
 - MIT OpenCourseWare: <https://ocw.mit.edu/courses/mathematics/>
 - Coursera数学专项课程
 - edX: "Introduction to Mathematical Thinking"
 
-**可视化工具**
+**可视化工具**:
 
 - GeoGebra: <https://www.geogebra.org/>
 - Desmos: <https://www.desmos.com/>
 - Mathematica Demonstrations: <https://demonstrations.wolfram.com/>
 
-**互动学习**
+**互动学习**:
 
 - Khan Academy高等数学
 - 3Blue1Brown系列: "Essence of Linear Algebra", "Essence of Calculus"

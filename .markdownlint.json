@@ -1,0 +1,38 @@
+{
+  "default": true,
+  "MD033": false,
+  "MD024": {
+    "siblings_only": true
+  },
+  "MD013": false,
+  "MD012": false,
+  "MD041": false,
+  "MD025": false,
+  "MD001": true,
+  "MD003": {
+    "style": "atx"
+  },
+  "MD007": {
+    "indent": 2
+  },
+  "MD009": {
+    "br_spaces": 2
+  },
+  "MD010": {
+    "spaces_per_tab": 2
+  },
+  "MD022": true,
+  "MD026": false,
+  "MD029": {
+    "style": "ordered"
+  },
+  "MD030": true,
+  "MD031": true,
+  "MD032": true,
+  "MD034": false,
+  "MD036": false,
+  "MD040": false,
+  "MD046": {
+    "style": "fenced"
+  }
+}

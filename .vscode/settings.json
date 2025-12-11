@@ -12,14 +12,33 @@
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
 
+  // 编辑器默认格式化工具
+  "editor.defaultFormatter": null,
+
   // Markdown 文件设置
   "[markdown]": {
-    "files.trimTrailingWhitespace": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
     "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
       "other": "off"
+    },
+    // Markdown 格式化选项
+    "markdownlint.config": {
+      "default": true,
+      "MD033": false,
+      "MD024": {
+        "siblings_only": true
+      },
+      "MD013": false,
+      "MD012": false,
+      "MD041": false
     }
   }
 }
