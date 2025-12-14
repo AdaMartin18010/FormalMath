@@ -273,7 +273,7 @@
 |---------|------|------|
 | **思维导图** | `06-思维表征方式/01-概念映射思维导图.md` | 整体知识结构 |
 | **概念矩阵** | `06-思维表征方式/02-概念映射多维矩阵.md` | 多维度对比分析 |
-| **决策树** | `06-思维表征方式/03-概念映射应用决策树.md` | 应用决策流程 |
+| **决策树** | `06-思维表征方式/03-概念映射应用决策树.md` | 应用决策流程（9个决策树） |
 | **证明树** | `06-思维表征方式/04-概念映射有效性证明树.md` | 理论论证结构 |
 
 ---
@@ -312,6 +312,8 @@
 - Guiding application decisions for concept mapping
 - 帮助教师选择合适的应用策略
 - Helping teachers choose appropriate application strategies
+- 9个决策树覆盖从总体决策到具体应用的各个方面
+- 9 decision trees covering all aspects from overall decisions to specific applications
 
 **文档位置 / Document Location**:
 `06-思维表征方式/03-概念映射应用决策树.md`
