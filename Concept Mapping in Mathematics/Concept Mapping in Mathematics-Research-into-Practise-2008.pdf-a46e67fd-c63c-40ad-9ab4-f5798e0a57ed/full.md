@@ -62,58 +62,58 @@ Joseph D. Novak
 
 # Part II Primary Mathematics Teaching and Learning
 
-2 Analysing the "Measurement" Strand Using Concept Maps and Vee Diagrams 19  
-Karoline Afamasaga-Fuata'i  
-3 Concept Mapping as a Means to Develop and Assess Conceptual Understanding in Primary Mathematics Teacher Education 47 Jean Schmittau and James J. Vagliardo  
-4 Using Concept Maps and Vee Diagrams to Analyse the "Fractions" Strand in Primary Mathematics 59 Karoline Afamasaga-Fuata'i  
-5 Concept Maps as Innovative Learning and Assessment Tools in Primary Schools 87  
+2 Analysing the "Measurement" Strand Using Concept Maps and Vee Diagrams 19
+Karoline Afamasaga-Fuata'i
+3 Concept Mapping as a Means to Develop and Assess Conceptual Understanding in Primary Mathematics Teacher Education 47 Jean Schmittau and James J. Vagliardo
+4 Using Concept Maps and Vee Diagrams to Analyse the "Fractions" Strand in Primary Mathematics 59 Karoline Afamasaga-Fuata'i
+5 Concept Maps as Innovative Learning and Assessment Tools in Primary Schools 87
 Karoline Afamasaga-Fuata'i and Greg McPhan
 
 # Part III Secondary Mathematics Teaching and Learning
 
 6 Evidence of Meaningful Learning in the Topic of 'Proportionality' in Second Grade Secondary Education 117 Edurne Pozueta and Fermín M. González
 
-7 Concept Mapping as a Means to Develop and Assess Conceptual Understanding in Secondary Mathematics Teacher Education 137 Jean Schmittau  
-8 Concept Mapping a Teaching Sequence and Lesson Plan for “Derivatives” 149  
-Karoline Afamasaga-Fuata'i  
-9 Curricular Implications of Concept Mapping in Secondary Mathematics Education 171  
-James J. Vagliardo  
-10 Using Concept Maps and Gowin's Vee to Understand Mathematical Models of Physical Phenomena 189  
-Maria S. Ramírez De Mantilla, Mario Aspée, Irma Sanabria, and Neyra Tellez  
-11 Applying Concept Mapping to Algebra I 217  
+7 Concept Mapping as a Means to Develop and Assess Conceptual Understanding in Secondary Mathematics Teacher Education 137 Jean Schmittau
+8 Concept Mapping a Teaching Sequence and Lesson Plan for “Derivatives” 149
+Karoline Afamasaga-Fuata'i
+9 Curricular Implications of Concept Mapping in Secondary Mathematics Education 171
+James J. Vagliardo
+10 Using Concept Maps and Gowin's Vee to Understand Mathematical Models of Physical Phenomena 189
+Maria S. Ramírez De Mantilla, Mario Aspée, Irma Sanabria, and Neyra Tellez
+11 Applying Concept Mapping to Algebra I 217
 William Caldwell
 
 # Part IV University Mathematics Teaching and Learning
 
-12 Enhancing Undergraduate Mathematics Learning Using Concept Maps and Vee Diagrams 237  
-Karoline Afamasaga-Fuata'i  
-13 Concept Mapping: An Important Guide for the Mathematics Teaching Process 259  
-Rafael Pérez Flores  
-14 Concept Mapping and Vee Diagramming "Differential Equations" 279 Karoline Afamasaga-Fuata'i  
-15 Using Concept Maps to Mediate Meaning in Undergraduate Mathematics 299  
+12 Enhancing Undergraduate Mathematics Learning Using Concept Maps and Vee Diagrams 237
+Karoline Afamasaga-Fuata'i
+13 Concept Mapping: An Important Guide for the Mathematics Teaching Process 259
+Rafael Pérez Flores
+14 Concept Mapping and Vee Diagramming "Differential Equations" 279 Karoline Afamasaga-Fuata'i
+15 Using Concept Maps to Mediate Meaning in Undergraduate Mathematics 299
 Karoline Afamasaga-Fuata'i
 
 # Part V Future Directions
 
-16 Implications and Future Research Directions 329  
-Karoline Afamasaga-Fuata'i  
+16 Implications and Future Research Directions 329
+Karoline Afamasaga-Fuata'i
 Index 335
 
 # Contributors
 
-Karoline Afamasaga-Fuata'i School of Education, University of New England, Armidale, Australia, kafamasa@une.edu.au  
-Mario Aspée Universidad, Nacional Experimental Del Tachira, San Cristóbal, Estado Tachira, Venezuela, maspee@unet.edu.ve  
-William Caldwell University of North Florida, Jacksonville, FL, USA, wcaldwel@unf.edu  
-Alberto J. Canas Florida Institute for Human & Machine Cognition, Pensacola, FL, USA, acanas@ihmc.us  
-Fermín M. González Public University of Navarra, Pamplona, Spain, fermin@unavarra.es  
-Greg McPhan SiMERR National Centre, University of New England, Armidale, Australia, gmcphan2@une.edu.au  
-Joseph D. Novak Cornell University, Ithaca, NY, USA; Florida Institute for Human & Machine Cognition, Pensacola, FL, USA, jnovak@ihmc.us  
-Rafael Pérez Flores Universidad Autónoma Metropolitana, Mexico City, México, pfr@correo.azc.uam.mx  
-Edurne Pozueta Public University of Navarra, Pamplona, Spain, epozueta@unavarra.es  
-Maria S. Ramirez De Mantilla Universidad, Nacional Experimental Del Tachira, San Cristóbal, Estado Táchira, Venezuela, marimant@unet.edu.ve  
-Irma Sanabria Universidad, Nacional Experimental Del Tachira, San Cristóbal, Estado Táchira, Venezuela, irmasa66@hotmail.com  
-Jean Schmittau State University of New York, Binghamton, Vestal, NY, USA, jschmitt@binghamton.edu  
-Neyra Tellez Universidad, Nacional Experimental Del Tachira, San Cristóbal, Estado Táchira, Venezuela, ntellez@unet.edu.ve  
+Karoline Afamasaga-Fuata'i School of Education, University of New England, Armidale, Australia, kafamasa@une.edu.au
+Mario Aspée Universidad, Nacional Experimental Del Tachira, San Cristóbal, Estado Tachira, Venezuela, maspee@unet.edu.ve
+William Caldwell University of North Florida, Jacksonville, FL, USA, wcaldwel@unf.edu
+Alberto J. Canas Florida Institute for Human & Machine Cognition, Pensacola, FL, USA, acanas@ihmc.us
+Fermín M. González Public University of Navarra, Pamplona, Spain, fermin@unavarra.es
+Greg McPhan SiMERR National Centre, University of New England, Armidale, Australia, gmcphan2@une.edu.au
+Joseph D. Novak Cornell University, Ithaca, NY, USA; Florida Institute for Human & Machine Cognition, Pensacola, FL, USA, jnovak@ihmc.us
+Rafael Pérez Flores Universidad Autónoma Metropolitana, Mexico City, México, pfr@correo.azc.uam.mx
+Edurne Pozueta Public University of Navarra, Pamplona, Spain, epozueta@unavarra.es
+Maria S. Ramirez De Mantilla Universidad, Nacional Experimental Del Tachira, San Cristóbal, Estado Táchira, Venezuela, marimant@unet.edu.ve
+Irma Sanabria Universidad, Nacional Experimental Del Tachira, San Cristóbal, Estado Táchira, Venezuela, irmasa66@hotmail.com
+Jean Schmittau State University of New York, Binghamton, Vestal, NY, USA, jschmitt@binghamton.edu
+Neyra Tellez Universidad, Nacional Experimental Del Tachira, San Cristóbal, Estado Táchira, Venezuela, ntellez@unet.edu.ve
 James J. Vagliardo State University of New York at Binghamton, Vestal, NY, USA, jjvags@gmail.com
 
 # Introduction
@@ -204,7 +204,7 @@ Also occurring in the 1960s was a philosophical movement away from positivism wh
 
 Working with elementary school children, we sought to design new instruction in such a way that meaningful learning would be enhanced, and to demonstrate that such learning could facilitate future learning and problem solving. To do this we found that we needed an assessment method that could monitor the evolving knowledge frameworks of our learners. Moreover, we were interested in demonstrating that young children (ages 6-8) could acquire significant science concepts and that this learning would facilitate later learning. The advances in learning theory and
 
-![](images/e869298638b0822a221d006f3c58b5ccdc2174eab682616f64e568d043cc5697.jpg)  
+![](images/e869298638b0822a221d006f3c58b5ccdc2174eab682616f64e568d043cc5697.jpg)
 Fig. 1.1 An audio-tutorial carrel unit showing a 7 year old student learning about energy transformations
 
 epistemology permitted Novak to construct a theory of education, first presented in 1977 (Novak, 1977) and modified and elaborated in 1998 (Novak, 1998). This theory has been guiding our work for some three decades.
@@ -219,7 +219,7 @@ This child was obviously a meaningful learner and not only were some misconcepti
 
 ![](images/977fe7143f2124b541c9c831b498b1a6d05d074d14f5f475949135e78d8fdf08.jpg)
 
-![](images/3b123a5448fc15c9b383a863ad4c77541c211e1f66b99d1cc0dd7ed405c72757.jpg)  
+![](images/3b123a5448fc15c9b383a863ad4c77541c211e1f66b99d1cc0dd7ed405c72757.jpg)
 Fig. 1.2 Two concept maps drawn from interviews with children in grade 2, (top) and grade 12 (bottom). These show the enormous growth in conceptual understanding for this child over 10 years of schooling
 
 things: concept maps could be a powerful knowledge representation and assessment tool; young children can acquire significant understanding of basic science concepts (widely disputed in the 1960s and 70s); technology can be used to deliver meaningful instruction to students; early meaningful learning of science concepts highly influenced learning in later science studies (Novak & Musonda, 1991).
@@ -234,7 +234,7 @@ Our early work using concept maps in mathematics was focused on demonstrating ho
 
 CmapTools goes beyond facilitating the construction of concept maps through an easy-to-use map editor, leveraging on the power of technology and particularly the Internet and WWW to enable students to collaborate locally or remotely in the construction of their maps, search for information that is relevant to their maps, link all types of resources to their maps, and publish their concept maps,
 
-![](images/066ed5a5e3e8dbacaaef718a74c878a6d422acb5763750b7e0523576c68ad183.jpg)  
+![](images/066ed5a5e3e8dbacaaef718a74c878a6d422acb5763750b7e0523576c68ad183.jpg)
 Fig. 1.3 A concept map made by a Western Samoan student in a study by Fuata'i (1998, p. 65)
 
 (Cañas et al., 2004) $^{1}$ . CmapTools facilitates the linking of digital resources (e.g. images, videos, text, Web pages, or other digital concept maps) to further explain concepts through a simple drag-and-drop operation. The linked resources are depicted by an icon under the concept that represents the type of resource linked. By storing the concept maps and linked resources on a CmapServer (Cañas, Hill, Granados, C. Pérez, & J. D. Pérez, 2003), the concept maps are converted to Web pages and can be browsed through a Web browser. The search feature in CmapTools takes advantage of the context provided by a concept map to perform Web searches related to the map, producing more relevant results that may include Web pages and resources, or concept maps stored in the CmapTools network (Carvalho, Hewett, & Cañas, 2001). Thus, a small initial map can be used to search for relevant information which the student can investigate, which leads to an improved map, to another search, and so on. The student can link relevant resources found to the map, create other related maps, and organize these into what we call a knowledge model (Cañas, Hill, & Lott, 2003). Figure 1.4 illustrates a concept map made with CmapTools and the insets show some of the resources attached to this map that can be opened by clicking on the icon for the resource. Other examples will be given in subsequent chapters of this book.
@@ -243,14 +243,14 @@ Fig. 1.3 A concept map made by a Western Samoan student in a study by Fuata'i (1
 
 Given the new technological capabilities available now, and combined with new ideas for applying the latest thinking about teaching and learning, it is possible to propose a New Model for Education (Novak & Cañas, 2004; Cañas & Novak, 2005). The New Model involves these activities that will be further elaborated:
 
-![](images/b7b0696bb603f39b0a08398f3eeabedafdfc93a9a11f0b4f8710d51b50370475.jpg)  
+![](images/b7b0696bb603f39b0a08398f3eeabedafdfc93a9a11f0b4f8710d51b50370475.jpg)
 Fig. 1.4 A concept map about numbers showing some resources that have been opened by clicking on the various icons under the concepts
 
-1. Use of "expert skeleton concept maps" to scaffold learning.  
-2. Use of CmapTools to build upon and expand the expert skeleton concept maps by drawing on resources available on the CmapServers, on the Web, plus texts, image, videos and other resources.  
-3. Collaboration among students to build "knowledge models".  
-4. Explorations with real world problems providing data and other information to add to developing knowledge models.  
-5. Written, oral, and video reports and developing knowledge models.  
+1. Use of "expert skeleton concept maps" to scaffold learning.
+2. Use of CmapTools to build upon and expand the expert skeleton concept maps by drawing on resources available on the CmapServers, on the Web, plus texts, image, videos and other resources.
+3. Collaboration among students to build "knowledge models".
+4. Explorations with real world problems providing data and other information to add to developing knowledge models.
+5. Written, oral, and video reports and developing knowledge models.
 6. Sharing and assessing team knowledge models.
 
 # Expert Skeleton Concept Maps
@@ -261,7 +261,7 @@ The idea behind the use of expert skeleton concept maps is that for most student
 
 It is well known today that meaningful learning requires that the learner chooses to interact with the learning materials in an active way and that he/she seeks to integrate new knowledge into her/his existing knowledge frameworks (Novak, 1998; Bransford et al., 1999). Through the drag-and-drop feature of CmapTools that allows for linking supplemental resources to a concept map by simply dragging and dropping the icon for an URL, an image, video, another concept map or any other digital resource on a concept, a learner can build an increasingly complex knowledge model for any domain of knowledge, which can serve as a starting point for later related learning. Moreover, CmapTools provide for easy collaboration between learners either locally or remotely, and either synchronously or asynchronously. When the recorder option of CmapTools is turned on, it will record step-by-step the history of the creation of a concept map, indicating the sequence of building steps and who did what at each step.
 
-![](images/d0f999b7e12cbfab3fd4a00c19ebefaacbcb1d3157cdffb6b2fc1e6ca64b305d.jpg)  
+![](images/d0f999b7e12cbfab3fd4a00c19ebefaacbcb1d3157cdffb6b2fc1e6ca64b305d.jpg)
 Fig. 1.5 An example of an "expert skeleton concept map" that can serve as a starting point for building a knowledge portfolio about number ideas. Figure 1.4 above shows an example of how this skeleton map could be elaborated using CmapTools and resources drawn from the Web. In general, the number of concepts expected to be added by the student is proportional to (e.g. two or three times) the number of concepts originally in the skeleton map
 
 Obviously this also provides a new tool for cognitive learning studies, but such work is just beginning. For example, Miller, Canas, & Novak (2008) using the Recorder tool has shown that in the process of learning how to construct concept maps, patterns in map changes for teachers in Proyecto Conectate al Conocimiento in Panama (Tarté, 2006) were similar for teachers who had no previous experience using computers when compared with those who reported previous experience.
@@ -286,7 +286,7 @@ While we will continue to see an increase in the use of electronic communication
 
 The full range of capabilities for organizing knowledge available using Cmap-Tools is too recent to have an empirical research base to document the value of the possibilities created, including what we call A New Model for Education. Hopefully,
 
-![](images/fd4c6c11c964fae0c673ea011a23fac47135c08940552103785df24a59ee4730.jpg)  
+![](images/fd4c6c11c964fae0c673ea011a23fac47135c08940552103785df24a59ee4730.jpg)
 Fig. 1.6 Concept maps drawn by Panamanian teachers illustrating "Who am I?" concept maps posted on Web sites and serving to provide motivation and recognition, as well as a basis for collaborations
 
 after the publication of this book, many empirical studies will be done to assess the value of CmapTools not only for improving instruction in mathematics, but also in improving students' ability to communicate their mathematics ideas and a new excitement for learning mathematics.
@@ -301,38 +301,38 @@ Our objective in this chapter was to provide a brief history of the development 
 
 # References
 
-Ausubel, D. P. (1963). The psychology of meaningful verbal learning. New York: Grune and Stratton.  
+Ausubel, D. P. (1963). The psychology of meaningful verbal learning. New York: Grune and Stratton.
 Ben-Amar Baranga, C. (1990). Meaningful learning of creative writing in fourth grade with a word processing program integrated in the whole language curriculum. Unpublished M.S. thesis, Cornell University.
 
-Berk, L. E., & Winsler, A. (1995). Scaffolding children's learning: Vygotsky and early childhood education. Washington, DC: National Assn. for Education for the Education of Young Children.  
-Bransford, J., Brown, A. L., & Cocking, R. R. (Eds.). (1999). How people learn: Brain, mind, experience, and school. Washington, DC: National Academy Press.  
-Cardemone, P. F. (1975). Concept maps: A technique of analyzing a discipline and its use in the curriculum and instruction in a portion of a college level mathematics skills course. Unpublished M.S. thesis, Cornell University.  
-Cañas, A. J., Hill, G., & Lott, J. (2003). Support for constructing knowledge models in CmapTools (Technical Report No. IHMC CmapTools 2003-02). Pensacola, FL: Institute for Human and Machine Cognition.  
-Cañas, A. J., Hill, G., Granados, A., Pérez, C., & Pérez, J. D. (2003). The network architecture of CmapTools (Technical Report IHMC CmapTools 2003-01). Pensacola, FL: Institute for Human and Machine Cognition.  
-Cañas, A. J., Hill, G., Carff, R., Suri, N., Lott, J., Eskridge, T., et al. (2004). CmapTools: A knowledge modelling and sharing environment. In A. J. Cañas, J. D. Novak, & F. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping (Vol. I, pp. 125-133). Pamplona, Spain: Universidad Pública de Navarra.  
-Cañas, A. J., Novak, J. D., & González, F. (Eds.) (2004). Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping. Pamplona, Spain: Universidad Publica de Navarra.  
-Cañas, A. J., & Novak, J. D. (2005). A concept map-centered learning environment. Symposium at the 11th Biennial Conference of the European Association for Research in Learning and Instruction (EARLI), Cyprus.  
-Cañas, A. J., & Novak, J. D. (2006). Re-examining the foundations for effective use of concept maps. In A. Canas & J. D. Novak (Eds.), Concept maps: theory, methodology, technology. Proceedings of the second international conference on concept mapping (Vol. 1, pp. 494-502). San Jose, Costa Rica: Universidad de Costa Rica.  
-Cañas, A. J., Reiska, P., Åhlberg, M. K., & Novak, J. D. (2008). Concept mapping: Connecting educators. Third international conference on concept mapping. Tallinn, Estonia: Tallinn University.  
-Carvalho, M., Hewett, R. R., & Canas, A. J. (2001). Enhancing web searches from concept map-based knowledge models. In N. Callaos, F. G. Tinetti, J. M. Champarnaud, & J. K. Lee (Eds.), Proceedings of SCI 2001: Fifth multiconference on systems, cybernetics and informatics (pp. 69-73). Orlando, FL: International Institute of Informatics and Systemics.  
-Coffey, J. W., Carnot, M. J., Feltovich, P. J., Hoffman, R. R., Canas, A. J., & Novak, J. D. (2003). A summary of literature pertaining to the use of concept mapping techniques and technologies for education and performance support. Technical Report submitted to the US Navy Chief of Naval Education and Training, Institute for Human and Machine Cognition, Pensacola, FL.  
-Fuata'i, K. A. (1985). The use of Gowin's Vee and concept maps in the learning of form five mathematics in Samoa College, Western Samoa. Unpublished M.S Thesis, Cornell University.  
-Fuata'i, K. A. (1998). Learning to solve mathematics problems through concept mapping and Vee mapping. Apia, Samoa: National University of Samoa.  
-Johnson, D. W., Johnson, R. T., & Holubec, E. J. (1988). Cooperation in the classroom, revised. Edina, MN: Interaction Book Co.  
-Kuhn, T. S. (1962). The structure of scientific revolutions. Chicago, IL: University of Chicago Press.  
+Berk, L. E., & Winsler, A. (1995). Scaffolding children's learning: Vygotsky and early childhood education. Washington, DC: National Assn. for Education for the Education of Young Children.
+Bransford, J., Brown, A. L., & Cocking, R. R. (Eds.). (1999). How people learn: Brain, mind, experience, and school. Washington, DC: National Academy Press.
+Cardemone, P. F. (1975). Concept maps: A technique of analyzing a discipline and its use in the curriculum and instruction in a portion of a college level mathematics skills course. Unpublished M.S. thesis, Cornell University.
+Cañas, A. J., Hill, G., & Lott, J. (2003). Support for constructing knowledge models in CmapTools (Technical Report No. IHMC CmapTools 2003-02). Pensacola, FL: Institute for Human and Machine Cognition.
+Cañas, A. J., Hill, G., Granados, A., Pérez, C., & Pérez, J. D. (2003). The network architecture of CmapTools (Technical Report IHMC CmapTools 2003-01). Pensacola, FL: Institute for Human and Machine Cognition.
+Cañas, A. J., Hill, G., Carff, R., Suri, N., Lott, J., Eskridge, T., et al. (2004). CmapTools: A knowledge modelling and sharing environment. In A. J. Cañas, J. D. Novak, & F. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping (Vol. I, pp. 125-133). Pamplona, Spain: Universidad Pública de Navarra.
+Cañas, A. J., Novak, J. D., & González, F. (Eds.) (2004). Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping. Pamplona, Spain: Universidad Publica de Navarra.
+Cañas, A. J., & Novak, J. D. (2005). A concept map-centered learning environment. Symposium at the 11th Biennial Conference of the European Association for Research in Learning and Instruction (EARLI), Cyprus.
+Cañas, A. J., & Novak, J. D. (2006). Re-examining the foundations for effective use of concept maps. In A. Canas & J. D. Novak (Eds.), Concept maps: theory, methodology, technology. Proceedings of the second international conference on concept mapping (Vol. 1, pp. 494-502). San Jose, Costa Rica: Universidad de Costa Rica.
+Cañas, A. J., Reiska, P., Åhlberg, M. K., & Novak, J. D. (2008). Concept mapping: Connecting educators. Third international conference on concept mapping. Tallinn, Estonia: Tallinn University.
+Carvalho, M., Hewett, R. R., & Canas, A. J. (2001). Enhancing web searches from concept map-based knowledge models. In N. Callaos, F. G. Tinetti, J. M. Champarnaud, & J. K. Lee (Eds.), Proceedings of SCI 2001: Fifth multiconference on systems, cybernetics and informatics (pp. 69-73). Orlando, FL: International Institute of Informatics and Systemics.
+Coffey, J. W., Carnot, M. J., Feltovich, P. J., Hoffman, R. R., Canas, A. J., & Novak, J. D. (2003). A summary of literature pertaining to the use of concept mapping techniques and technologies for education and performance support. Technical Report submitted to the US Navy Chief of Naval Education and Training, Institute for Human and Machine Cognition, Pensacola, FL.
+Fuata'i, K. A. (1985). The use of Gowin's Vee and concept maps in the learning of form five mathematics in Samoa College, Western Samoa. Unpublished M.S Thesis, Cornell University.
+Fuata'i, K. A. (1998). Learning to solve mathematics problems through concept mapping and Vee mapping. Apia, Samoa: National University of Samoa.
+Johnson, D. W., Johnson, R. T., & Holubec, E. J. (1988). Cooperation in the classroom, revised. Edina, MN: Interaction Book Co.
+Kuhn, T. S. (1962). The structure of scientific revolutions. Chicago, IL: University of Chicago Press.
 Miller, N. L., Canas, A. J., & Novak, J. D. (2008). Use of the CmapTools recorder to explore acquisition of skill in concept mapping. In A. J. Canas, P. Reiska, M. Åhlberg & J. D. Novak (Eds.), Concept mapping: Connecting educators. Proceedings of the third international conference on concept mapping (Vol. 2, pp. 674-681). Tallinn, Estonia: Tallinn University.
 
-Minemier, L. (1983). Concept Mapping and educational tool and its use in a college level mathematics skills course. Unpublished M.S. thesis, Cornell University.  
-Novak, J. D. (1977). A theory of education. Ithaca, NY: Cornell University Press.  
-Novak, J. D. (1986). The importance of emerging constructivist epistemology for mathematics education. Journal of Mathematical Behavior, 5, 181-184.  
-Novak, J. D. (1990). Concept maps and Vee diagrams: Two metacognitive tools for science and mathematics education. Instructional Science, 19, 29-52.  
-Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Lawrence Erlbaum Associates.  
-Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (liphs) leading to empowerment of learners. Science Education, 86(4), 548-571.  
-Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. New York, NY: Cambridge University Press.  
-Novak, J. D., & Canas, A. J. (2004). Building on new constructivist ideas and the CmapTools to create a new model for education. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping. Pamplona, Spain: Universidad Publica de Navarra.  
-Novak, J. D., & Musonda, D. (1991). A twelve-year longitudinal study of science concept learning. American Educational Research Journal, 28(1), 117-153.  
-Sánchez, E., Bennett, C., Vergara, C., Garrido, R., & Canas, A. J. (2008). Who am I? Building a sense of pride and belonging in a collaborative network. In A. J. Canas, P. Reiska, M. Åhlberg, & J. D. Novak (Eds.), *Concept mapping: Connecting educators*. Proceedings of the third international conference on concept mapping. Tallinn, Estonia & Helsinki, Finland: University of Tallinn.  
-Tarte, G. (2006). Conéctate al Conocimiento: Una Estrategia Nacional de Panamá basada en Mapas Conceptuales. In A. J. Canás & J. D. Novak (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the second international conference on concept mapping (Vol. 1, pp. 144-152). San José, Costa Rica: Universidad de Costa Rica.  
+Minemier, L. (1983). Concept Mapping and educational tool and its use in a college level mathematics skills course. Unpublished M.S. thesis, Cornell University.
+Novak, J. D. (1977). A theory of education. Ithaca, NY: Cornell University Press.
+Novak, J. D. (1986). The importance of emerging constructivist epistemology for mathematics education. Journal of Mathematical Behavior, 5, 181-184.
+Novak, J. D. (1990). Concept maps and Vee diagrams: Two metacognitive tools for science and mathematics education. Instructional Science, 19, 29-52.
+Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Lawrence Erlbaum Associates.
+Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (liphs) leading to empowerment of learners. Science Education, 86(4), 548-571.
+Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. New York, NY: Cambridge University Press.
+Novak, J. D., & Canas, A. J. (2004). Building on new constructivist ideas and the CmapTools to create a new model for education. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping. Pamplona, Spain: Universidad Publica de Navarra.
+Novak, J. D., & Musonda, D. (1991). A twelve-year longitudinal study of science concept learning. American Educational Research Journal, 28(1), 117-153.
+Sánchez, E., Bennett, C., Vergara, C., Garrido, R., & Canas, A. J. (2008). Who am I? Building a sense of pride and belonging in a collaborative network. In A. J. Canas, P. Reiska, M. Åhlberg, & J. D. Novak (Eds.), *Concept mapping: Connecting educators*. Proceedings of the third international conference on concept mapping. Tallinn, Estonia & Helsinki, Finland: University of Tallinn.
+Tarte, G. (2006). Conéctate al Conocimiento: Una Estrategia Nacional de Panamá basada en Mapas Conceptuales. In A. J. Canás & J. D. Novak (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the second international conference on concept mapping (Vol. 1, pp. 144-152). San José, Costa Rica: Universidad de Costa Rica.
 Vygotsky, L. S. (1934/1986). Thought and language. In Alex Kozulin (Ed. & Trans.). Cambridge, MA: The MIT Press.
 
 Part II
@@ -342,6 +342,7 @@ Part II
 # and Learning
 
 # Chapter 2
+
 Analysing the “Measurement” Strand Using Concept Maps and Vee Diagrams
 
 Karoline Afamasaga-Fuata'i
@@ -384,7 +385,7 @@ The particular propositions for Early Stage 1 are: (P3) "Length" is measured usi
 
 Progressive differentiation from the latter node resulted in a number of propositions such as: (P5) "One to one correspondence" when comparing two objects in the same position is called "Equal Length"; (P6) "One to one comparison" can be "Recorded" informally by "Drawing", "Cutting Pasting" and "Tracing"; (P7) "Drawing", "Cutting Pasting" and "Tracing" these visual representations of the attribute of length can be used to make repeating "Patterns", for example, (as shown pictorially); (P8) "One to one correspondence" when describing this, students use everyday language such as "Long, Short, High, Tall, Low, The Same", for example, "the door is tall"; (P9) "One to one correspondence" students can also describe the comparison of two objects using "Comparative Language" such as "Longer,
 
-![](images/a29c32b73a52b3f8bbb9bd3d61e32f3cc9c81799f836e8eadf259a8ce846b809.jpg)  
+![](images/a29c32b73a52b3f8bbb9bd3d61e32f3cc9c81799f836e8eadf259a8ce846b809.jpg)
 Fig. 2.1 Early Stage 1 and Stage 1 Length substrate
 
 Higher, Taller than, Lower than, Same as", for example, "the car is longer than the desk"; and (P10) "One to one correspondence" when students identify that objects are the same length although positions are altered they are "Conserving Length". A cross link (indicated by a thicker, directional link) between two systems of concepts within this branch resulted in the integrative proposition (P11) "Patterns" that
@@ -397,7 +398,7 @@ Progressively differentiating from the "Tape Measure" node are the propositions 
 
 For Stage 2, the super inclusive proposition is (Fig. 2.2) (P25) "Measurement" has a strand "Length" concentrates on, in "Stage 2", (P25a) measures "Length" using units that are "Formal", and (P25b) measures "Distance" using units that are "Formal". The rest of the propositions inclusive under the left sub-branch of the "Formal" node included (P26) "Formal" measurement requires "Units" which are used to estimate, measure and compare lengths and distances using specifically
 
-![](images/af915558745ba19a9a732b76e1ccbad4d9a811a14eea7f56c71206c9bbadab98.jpg)  
+![](images/af915558745ba19a9a732b76e1ccbad4d9a811a14eea7f56c71206c9bbadab98.jpg)
 Fig. 2.2 Stages 2 and 3 of the Length substring
 
 “Metre”; (P27) “Metre” when measuring you need more 100th of it is a “Centimetre”; (P28) “Centimetre” recognises the need for a smaller unit and uses it and its abbreviation (mm) “Millimetre”; (P29) “Millimetre” (for example)  $10\mathrm{mm}$  equals (10th) “Centimetre”; (P30) “Metre” students can convert between “Centimetre”; (P31) “Centimetre” students can convert between “Metre”; (P32) “Centimetre” students can convert between “Millilitre”; (P33) “Millilitre” students can convert between “Centimetre”; (P34) “Millimetre” and other units are used to measure “2D shapes”; (P35) “2D shapes can be measured and estimated around the entire shape – this is called the “Perimeter”; (P36) “2D shapes”, horizontal long sides are their “Length”; (P37) “2D shapes”, short, vertical sides are “Breadth”; (P38) “2D shapes”, when made 3D “Height”; (P39) “Perimeter” students can have different answers when using different units and “Decimal Notation”; (P40) “Length”, “Breadth”, and “Height” these are recognised as features associated with length and can be recorded in “Decimal Notation”; and (P41) “Decimal Notation” into two decimals, for example “ $0.46782\mathrm{m} \approx 0.47\mathrm{m}$ ”.
@@ -414,7 +415,7 @@ Overall, the overview concept map (Figs. 2.1 and 2.2) delineated the incremental
 
 Provided in Figs. 2.3 to 7 are the results of Susan's conceptual analyses of the Volume syllabus outcomes for Early Stage 1 to Stage 4. For the Early Stage 1 sub-strand (Fig. 2.3), the super inclusive propositions are: (P1) "Early Stage 1" explores the outcome "MES1.3"; (P2) "MES1.3" determines that the amount of space an object or substance occupies is "Volume"; and (P3) "MES1.3" determines that the amount a container can hold is called "Capacity". Inclusive under the "Volume" node, from left to right, are the propositions (P4) "Volume" found by "comparing two piles of materials" (P4a) by "filling two identical containers", and (P4b) by directly "observing the space each object occupies" for example "car vs truck" this is recorded using "drawings, numerals and words"; (P5) "drawings, numerals and words", (P5a) for example "the trucks takes more space than the car. (words)", (P5b) for example
 
-![](images/39f90fc82b4d5947285a0df32ea773f7d46eb9d343fabba8130cb21f7989d8ec.jpg)  
+![](images/39f90fc82b4d5947285a0df32ea773f7d46eb9d343fabba8130cb21f7989d8ec.jpg)
 Fig. 2.3 Early Stage 1 of the Volumestrand
 
 (show pictorially with two cylinders to demonstrate "more" and "less"), and (P5c) for example, (shown pictorially with two sets of blocks to demonstrate "12 blocks" compared to "15 blocks").
@@ -429,14 +430,14 @@ For subsequent concept maps, ideas that are revisited again (i.e., prior knowled
 
 For the Stage 1 sub-strand (Fig. 2.4), the corresponding extended proposition, from left to right, is: (P1) "Stage 1" has the outcome "MS1.3" estimates with "Informal Units" such as the number and type of "discrete objects used" for example "Blocks" leads to use of formal units such as "cubed metres and centimetres"; propositions (P2) "Informal Units" which are used to measure "Volume"; (P3) "Volume" through trial and error strategies can be "compared and ordered"; (P4) "compared and ordered" two or more containers by counting the "number of blocks in each container"; (P5) "compared and ordered" two or more containers by noting the "change in water level when submerged" also known as "Displacement" which can be linked to "Fractions"; (P6) "Volume" through trial and error strategies can be "estimated and measured" including "piles of materials"; and (P7) "Informal Units" when they are small it means that "more units are needed". A reconcilative proposition integrating the "Volume" and "Capacity" systems of concepts inclusive under the respective nodes is (P8) "Volume", "Capacity" different shapes can have the same "Displacement" which can be linked to "Fractions". With the "Capacity" branch, its more inclusive proposition is (P9) "Informal Units" which are used to measure "Capacity" while the inclusive propositions are (P10) "Capacity" can be "compared and ordered", (P10a) by "filling and pouring into a third container and marking level", and (P10b) by "filling and pouring into each other"; (P11) "Capacity" can be found by "filling with informal units and counting", (P11a) for example "cubic units into rectangular containers with no gaps" and (P11b) for example, "such as using a calibrated large container using informal units", for example, "mark water level"; and (P12) "Capacity" can be found by "counting times the smaller container can fill the bigger". To the right of the "Capacity" branch is the extended proposition (P13) "Informal Units" such as the number and type of "continuous materials",
 
-![](images/a8e177c0849f9e397fd6ab964d4d96ddf372d81ec5695a985a1ca19412ea4dd3.jpg)  
+![](images/a8e177c0849f9e397fd6ab964d4d96ddf372d81ec5695a985a1ca19412ea4dd3.jpg)
 Fig. 2.4 Stage 1 of the Volume substrate
 
 (P13a) for example, "water that is used" this leads to the use of formal units such as "millilitres and litres", and (P13b) are liquids.
 
 Occurrences of progressive differentiation and integrative reconciliation with descriptions of illustrative examples demonstrated the interconnectedness of Susan's interpretation and understanding of Stage 1 syllabus outcomes. Overall, the concept map displayed the focus of this stage on the development of a conceptual understanding of informal units of measure in terms of number and type through the use of discrete objects (e.g., blocks) and continuous materials (e.g., water). Displacement is introduced as well as formal units of millilitre and litre. Through comparison activities, the importance of appropriate units for volume and capacity is further developed such as cubic metres and cubic centimetres. Prior knowledge from the previous Stage is indicated by ovals with bold outlines (e.g., "blocks", "informal units", "capacity" etc) while a reference to the "Fractions" strand is indicated by a broken-outlined oval.
 
-![](images/1120bbdac050f96388d67b7204c1793dd146bd4d61647376d59cff6c793165a1.jpg)  
+![](images/1120bbdac050f96388d67b7204c1793dd146bd4d61647376d59cff6c793165a1.jpg)
 Fig. 2.5 Stage 2 of the Volumestrand
 
 For the Stage 2 sub-strand (Fig. 2.5), the super inclusive propositions are (P1) "Stage 2" has the outcome "MS2.3"; (P2) "MS2.3" has a Unit 1 that looks at "Formal Units"; and (P3) "MS2.3" which has a second section called "Unit 2". Again, prior knowledge is indicated with bold-outlined ovals (e.g., "Displacement") while references or connections to other content strands are indicated by broken-outlined ovals such as with "3D objects".
@@ -451,7 +452,7 @@ For Stage 3 (Fig. 2.6), the super inclusive propositions are (P1) "Stage 3" has 
 
 The propositions inclusive under the "Volume" branch, from left to right, are (P5) "Volume" is demonstrated using cubes of side lengths  $100\mathrm{cm}$  which "will displace  $1\mathrm{L}$ " thus " $1,000\mathrm{cm}^3 = 1\mathrm{L}$ ; (P6) "Volume" can be found using displacement when measuring "irregular solids", for example, (as pictorially shown); (P7) "Volume" of rectangular prisms is found through "repeated addition" which can lead to the use of "layers", for example, (as pictorially shown by a block with 3 layers of 15 blocks); (P8) "Volume" can be the same if "the shape is different" this can be seen through "construction", for example, (as pictorially shown for a block of  $2\times 4\times 5$  and a block of  $2\times 10\times 2$  each with a volume of "40 units $^3$ ); (P9) "Volume" is found by counting cubic centimetre blocks used to construct "rectangular prisms"; (P10) "Volume" is demonstrated using medicine cups and a cubic centimetre "which displaces  $1\mathrm{mL}$  of water" thus " $1\mathrm{cm}^3 = 1\mathrm{mL}$ ; and (P11) "Volume" demonstrates a relationship between "length, breadth, height of rectangular prisms"
 
-![](images/ab66c1d6b5f91f26e92d3186cb78d8e1e1cde93a57ff62969960028101198c4a.jpg)  
+![](images/ab66c1d6b5f91f26e92d3186cb78d8e1e1cde93a57ff62969960028101198c4a.jpg)
 Fig. 2.6 Stage 3 of the Volumestrand
 
 and uses this to "calculate", for example "  $(1\mathrm{x}b)\mathrm{x}h = \mathrm{volume}$  . Those propositions inclusive within the "units" branch are (P12) "units" needed to be larger than the cubic cm for example "metre cubed", (P12a) abbreviated to  $^{\prime \prime}\mathfrak{m}^{3}$  , and (P12b) uses this to estimate the size of  $\frac{1}{2}\mathrm{m}^3$ $2\mathrm{m}^{3}$  ; (P13) "units" are recorded using "decimal notation to 3 decimal places", for example, "0.2631052  $\approx 0.263$  ; and (P14) "units" identifies the advantages of the "cube". The rightmost branch shows the single proposition (P15) "Capacity" can be found by being "estimated and measured" by packing cubed centimetre blocks into "rectangular containers", for example, (as shown pictorially).
@@ -462,7 +463,7 @@ For Stage 4 (Fig. 2.7), the super inclusive proposition is (P1) "Stage 4" has th
 
 The leftmost propositions inclusive within the "Surface Area" branch are (P4) "Surface Area" looks at "Prisms' areas"; (P5) "Prisms' areas" are calculated by identifying Surface Area and edge length of "Rectangular Prisms" by applying practical means such as "nets"; and (P6) "Prisms' areas" are calculated by identifying Surface Area and edge length of "Triangular Prisms" by applying practical means such as "nets" for example, (as pictorially shown); and (P7) "nets" which are "the blueprints of a 3D object". The adjacent "Prisms" branch to the right included
 
-![](images/00992d858a6eea022bcb90b2e8872bff7ecf83afb48cfa8ae6d2b0b3da20e66b.jpg)  
+![](images/00992d858a6eea022bcb90b2e8872bff7ecf83afb48cfa8ae6d2b0b3da20e66b.jpg)
 Fig. 2.7 Stage 4 of the Volume substrand
 
 the proposition (P8) "Prisms" volumes are calculated using conversions such as  $1\mathrm{cm}^3 = 1,000\mathrm{mm}^3$ ,  $1\mathrm{L} = 1,000\mathrm{mL} = 1,000\mathrm{cm}^3$ ,  $1\mathrm{m}^3 = 1,000\mathrm{L} = 1\mathrm{kL}$ " which is linked to "multiplication, division, powers, factors" which can be expanded to include "higher powers", for example, a; (P9) "Prisms" which have cross sections that are composite are calculated by "dissecting into regular 2D shapes"; (P10) "Prisms" are "constructed and identified" by drawing "cross section of the prism", for example, "triangular prism"; (P11) "triangular prism" has links to "Space and Geometry Strands" as students look and draw "different orientations", for example, (as pictorially shown, a side view, top view and bottom view of a triangular prism); (P12) "triangular prism" and its cross section (as shown pictorially) students use cross section diagrams to "construct and draw prisms"; and (P13) "construct and draw prisms" is the base area, when it is multiplied by height assists to "calculate volume".
@@ -485,13 +486,13 @@ It can be applied to situations that are relevant to our normal everyday life.
 
 # What do I know already?
 
-i) Millimetres are one of the smallest units of length. Millimetres are abbreviated to mm.  $10\mathrm{mm} = 1\mathrm{cm}$ .  $1000\mathrm{mm} = 1\mathrm{m}$  
-ii) Centimetres are the most common forms of measurement. The abbreviated form is cm.  $100\mathrm{cm} = 1\mathrm{m}$  
-iii) Metres are used when measuring large objects. The abbreviated form is m.  $1000\mathrm{m} = 1\mathrm{km}$  
-iv) Formal units are set units that are constant, uniform and are part of the metric system such as mm, cm, m, km, ha.  
-v) Length is the measure of an object from end to end.  
-vi) Addition is the combining of two or more numbers to form one number.  
-vii) Subtraction is the numerical difference between two or more numbers.  
+i) Millimetres are one of the smallest units of length. Millimetres are abbreviated to mm.  $10\mathrm{mm} = 1\mathrm{cm}$ .  $1000\mathrm{mm} = 1\mathrm{m}$
+ii) Centimetres are the most common forms of measurement. The abbreviated form is cm.  $100\mathrm{cm} = 1\mathrm{m}$
+iii) Metres are used when measuring large objects. The abbreviated form is m.  $1000\mathrm{m} = 1\mathrm{km}$
+iv) Formal units are set units that are constant, uniform and are part of the metric system such as mm, cm, m, km, ha.
+v) Length is the measure of an object from end to end.
+vi) Addition is the combining of two or more numbers to form one number.
+vii) Subtraction is the numerical difference between two or more numbers.
 viii) Total length is the addition of all lengths given.
 
 # What are the important ideas?
@@ -538,7 +539,7 @@ Need 3 metres.
 
 Method 2
 
-![](images/9762c77633913b58eb148b590ffac56e9aafe264176c00c85a28101bf0d4a866.jpg)  
+![](images/9762c77633913b58eb148b590ffac56e9aafe264176c00c85a28101bf0d4a866.jpg)
 Fig. 2.8a A Length mathematics problem
 
 $$
@@ -557,13 +558,13 @@ For the "What are my answers to the question?" sections of the 4 vee diagrams, e
 
 The entries for Why I like mathematics? revealed Susan's perceptions of why mathematics is important given the contexts of the problems while on the opposite
 
-![](images/067f129843a212e8f3aec1d9a4a18d59360f42ff06ebdb9a87b81d0cdf72b08f.jpg)  
+![](images/067f129843a212e8f3aec1d9a4a18d59360f42ff06ebdb9a87b81d0cdf72b08f.jpg)
 Fig. 2.8b A Length mathematics problem
 
-![](images/51d52ef72d025d95508660cbb50875ccf68d0877943ecff56614bb940eddb229.jpg)  
+![](images/51d52ef72d025d95508660cbb50875ccf68d0877943ecff56614bb940eddb229.jpg)
 Fig. 2.9 A Capacity mathematics problem
 
-![](images/d576f8b14237b59b7db74061da03d45253562d3388e634bf4aa6971fa5a4db81.jpg)  
+![](images/d576f8b14237b59b7db74061da03d45253562d3388e634bf4aa6971fa5a4db81.jpg)
 Fig. 2.10 A Volume mathematics problem
 
 side on the right under What are the most useful things I learnt? are Susan's suggestions for subsequent learning activities (Figs. 2.8a and 2.8b), affirmation of capacities as related to containers only (Fig. 2.9) and general pedagogical belief for discovering volume at any Stage (Fig. 2.10).
@@ -616,26 +617,26 @@ As the data demonstrates, constructing concept maps engenders a deep understandi
 
 # References
 
-Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping & Vee mapping. National University of Samoa.  
-Afamasaga-Fuata'i, K. (2004, September 14-17). Concept maps and vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & F. Gonázales (Eds.), *Concept maps: Theory, methodology, technology.* Proceedings of the first international conference on concept mapping (pp. 13-20). Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.  
-Afamasaga-Fuata'i, K. (2005, January 17-21). Students' conceptual understanding and critical thinking? A case for concept maps and vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer, (Eds.), Making mathematics vital. Proceedings of the twentieth biennial conference of the Australian Association of Mathematics Teachers (AAMT) (pp. 43-52). Sydney, Australia: University of Technology.  
-Afamasaga-Fuata'i, K. (2006). Innovatively developing a teaching sequence using concept maps. In A. Canas & J. Novak (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the second international conference on concept mapping (Vol. 1, pp. 272-279). San Jose, Costa Rica: Universidad de Costa Rica.  
-Afamasaga-Fuata'i, K. (2007a). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th annual conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania. Australia, MERGA. Also available from http://www.merga.net.au/documents/RP12007.pdf  
-Afamasaga-Fuata'i, K. (2007b). Using concept maps and vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia, AAMT.  
-Afamasaga-Fuata'i, K., & Reading, C. (2007). Using concept maps to assess preservice teachers' understanding of connections between statistical concepts. Published on IASE site, http://www.swinburne.edu.au/lss/statistics/IASE/CD`Assessment/papers/IASE`SAT`07` Afamasaga`Reading.pdf  
-Australian Association of Mathematics Teachers (AAMT). (2006). Standard for excellence in teaching mathematics in Australian schools. Retrieved February 12, 2006, from http://www.aamt.edu.au/standards/standxtm.pdf  
-Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht; Boston: Kluwer Academic Publishers.  
-Brahier, D. J. (2005). Teaching secondary and middle school mathematics (2nd ed.). New York: Pearson Education, Inc.  
-Brown, D. S. (2000). The effect of individual and group concept mapping on students' conceptual understanding of photosynthesis and cellular respiration in three different levels of biology classes. Dissertation Abstracts International AADAA-19970734, University of Missouri, Kansas City.  
-Chang, T. (1994). Taiwanese students' epistemological commitments and research knowledge construction (Chinese). Dissertation Abstracts International AAD94-16683, Cornell University, New York.  
-Hannson, O. (2005). Preservice teachers' views on  $y = x + 5$  and  $y = \pi x^2$  expressed through the utilization of concept maps: A study of the concept of function. Retrieved March 3, 2008, from http://www.emis.de/proceedings/PME29/PME29RRPapers/PME29Vol3Hansson.pdf  
+Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping & Vee mapping. National University of Samoa.
+Afamasaga-Fuata'i, K. (2004, September 14-17). Concept maps and vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & F. Gonázales (Eds.), *Concept maps: Theory, methodology, technology.* Proceedings of the first international conference on concept mapping (pp. 13-20). Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.
+Afamasaga-Fuata'i, K. (2005, January 17-21). Students' conceptual understanding and critical thinking? A case for concept maps and vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer, (Eds.), Making mathematics vital. Proceedings of the twentieth biennial conference of the Australian Association of Mathematics Teachers (AAMT) (pp. 43-52). Sydney, Australia: University of Technology.
+Afamasaga-Fuata'i, K. (2006). Innovatively developing a teaching sequence using concept maps. In A. Canas & J. Novak (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the second international conference on concept mapping (Vol. 1, pp. 272-279). San Jose, Costa Rica: Universidad de Costa Rica.
+Afamasaga-Fuata'i, K. (2007a). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th annual conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania. Australia, MERGA. Also available from http://www.merga.net.au/documents/RP12007.pdf
+Afamasaga-Fuata'i, K. (2007b). Using concept maps and vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia, AAMT.
+Afamasaga-Fuata'i, K., & Reading, C. (2007). Using concept maps to assess preservice teachers' understanding of connections between statistical concepts. Published on IASE site, http://www.swinburne.edu.au/lss/statistics/IASE/CD`Assessment/papers/IASE`SAT`07` Afamasaga`Reading.pdf
+Australian Association of Mathematics Teachers (AAMT). (2006). Standard for excellence in teaching mathematics in Australian schools. Retrieved February 12, 2006, from http://www.aamt.edu.au/standards/standxtm.pdf
+Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht; Boston: Kluwer Academic Publishers.
+Brahier, D. J. (2005). Teaching secondary and middle school mathematics (2nd ed.). New York: Pearson Education, Inc.
+Brown, D. S. (2000). The effect of individual and group concept mapping on students' conceptual understanding of photosynthesis and cellular respiration in three different levels of biology classes. Dissertation Abstracts International AADAA-19970734, University of Missouri, Kansas City.
+Chang, T. (1994). Taiwanese students' epistemological commitments and research knowledge construction (Chinese). Dissertation Abstracts International AAD94-16683, Cornell University, New York.
+Hannson, O. (2005). Preservice teachers' views on  $y = x + 5$  and  $y = \pi x^2$  expressed through the utilization of concept maps: A study of the concept of function. Retrieved March 3, 2008, from http://www.emis.de/proceedings/PME29/PME29RRPapers/PME29Vol3Hansson.pdf
 Liyanage, S., & Thomas, M. (2002, July 7-10). Characterising secondary school mathematics lessons using teachers' pedagogical concept maps. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25) (pp. 425-432). New Zealand: University of Auckland.
 
-Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.) (2000). Assessing science understanding: a human constructivist view. San Diego, California, London: Academic.  
-New South Wales Board of Studies (NSWBOS). (2002). K-6 mathematics syllabus. Sydney, Australia: NSWBOS.  
-Novak, J. D., & Canas, A. J. (2004). Building on new constructivist ideas and the CmapTools to create a new model for education. In A. J. Canas, J. D. Novak, & F.M. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping. Pamplona, Spain: Universidad Publica de Navarra.  
-Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them (Technical Report IHMC CmapTools 2006-01). Florida Institute for Human and Machine Cognition, 2006. Available at http://cmap.ihmc.us/publications/ ResearchPapers/TheoryUnderlyingConceptMaps.pdf  
-Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.  
+Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.) (2000). Assessing science understanding: a human constructivist view. San Diego, California, London: Academic.
+New South Wales Board of Studies (NSWBOS). (2002). K-6 mathematics syllabus. Sydney, Australia: NSWBOS.
+Novak, J. D., & Canas, A. J. (2004). Building on new constructivist ideas and the CmapTools to create a new model for education. In A. J. Canas, J. D. Novak, & F.M. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping. Pamplona, Spain: Universidad Publica de Navarra.
+Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them (Technical Report IHMC CmapTools 2006-01). Florida Institute for Human and Machine Cognition, 2006. Available at http://cmap.ihmc.us/publications/ ResearchPapers/TheoryUnderlyingConceptMaps.pdf
+Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.
 Williams, C. G. (1998). Using concept maps to assess conceptual knowledge of function. Journal for Research in Mathematics Education, 29 (4), 414-421.
 
 # Chapter 3 Concept Mapping as a Means to Develop and Assess Conceptual Understanding in Primary Mathematics Teacher Education
@@ -662,7 +663,7 @@ While the case for teaching multiple bases has been well documented in the psych
 
 The concept map shown in Fig. 3.1 was made by a pre-service teacher (pseudonym Maryanne) in response to such an assignment. When the concept of positionality was addressed in her elementary mathematics methods course, concept mapping was also introduced, and students were asked to begin to draw a map centered on the role of positionality in school mathematics.
 
-![](images/7b0344af97c66a76d0eb02d636e381d95513070b5699a81c90461358e25404c3.jpg)  
+![](images/7b0344af97c66a76d0eb02d636e381d95513070b5699a81c90461358e25404c3.jpg)
 Fig. 3.1 Maryanne's concept map
 
 As additional mathematics concepts were explored, students were encouraged to continue adding to their maps, so that the construction of the concept map became a project that continued to develop over the semester. The assignment revealed to students the multiple connections the concept of positional system has with mathematics concepts that children will study in the later elementary and middle school years and even beyond. These include such concepts as decimals, exponentials, area, volume, and polynomials and their operations.
@@ -671,7 +672,7 @@ As additional mathematics concepts were explored, students were encouraged to co
 
 Figure 3.1 presents a view of Maryanne's concept map in its entirety. Figure 3.2 focuses on the extreme left section of the map, which reveals her understanding of the need to establish the concept of positional system on the foundation of multiple
 
-![](images/3bffb59f859ee67b1b9e8259562d852a6e975423e17bb706943f5dd544094e72.jpg)  
+![](images/3bffb59f859ee67b1b9e8259562d852a6e975423e17bb706943f5dd544094e72.jpg)
 Fig. 3.2 Left side of Maryanne's concept map showing "Symbols" and "Many Bases" as subsumed concepts
 
 bases. Under the designation "Symbols" we see that she understands that for any base  $\mathbf{b}$ , numerals from 0 through 1, 2, 3, ..., b-1 are necessary to designate the numbers in the system. Base 4 is provided as an example, with 0, 1, 2, and 3 as numerical symbols, and counting in base 4 is illustrated.
@@ -686,17 +687,17 @@ Chip trading in base 4 is treated in Burris' (2005) text for elementary teachers
 
 # Mother Goose Rhyme (Base 7):
 
-As I was going to St. Ives,  
-I met a man with seven wives;  
-Every wife had seven sacks,  
-Every sack had seven cats,  
-Every cat had seven kits;  
-Kits, cats, sacks, and wives,  
+As I was going to St. Ives,
+I met a man with seven wives;
+Every wife had seven sacks,
+Every sack had seven cats,
+Every cat had seven kits;
+Kits, cats, sacks, and wives,
 How many were there going to St. Ives?
 
 A Candy Factory Packaging in Sixes (Base 6)
 
-![](images/464109e10d7be9351e73fd566fe5d0ea268898e64497a4c03e938d3edce0af82.jpg)  
+![](images/464109e10d7be9351e73fd566fe5d0ea268898e64497a4c03e938d3edce0af82.jpg)
 Fig. 3.3 Classroom applications involving bases
 
 Chip Trading in "the Land of Fours" (Base 4 or other)
@@ -713,10 +714,10 @@ It is noteworthy that the conceptual and the algorithmic are connected without a
 
 In the depiction of multiplication using chip trading, Maryanne solves the problem  $135 \times 3 = 405$  by tripling the 5 "ones" chips and trading ten of the resulting 15 chips for a "ten" chip, then tripling the 3 "tens" chips and trading the resulting  $9 + 1$  "tens" chips for a single "hundred" chip. Tripling the original "hundred" chip and adding this additional "hundred" chip results in the solution of 4 "hundreds", no "tens" and 5 "ones" chips. She then shows how in multiplying  $15 \times 12$ , the 12
 
-![](images/2d0a19279ea2536c915a0a1f751950b3d22b687501090364a069652fdc81bdb3.jpg)  
+![](images/2d0a19279ea2536c915a0a1f751950b3d22b687501090364a069652fdc81bdb3.jpg)
 Fig. 3.4 Center of Maryanne's concept map showing "Exponents" as a related concept
 
-![](images/58fcaba8fa9ae2030df505dafd772881aa0db8ac13517f74950eb228bad4d79c.jpg)  
+![](images/58fcaba8fa9ae2030df505dafd772881aa0db8ac13517f74950eb228bad4d79c.jpg)
 Fig. 3.5 Right side of Maryanne's concept map showing "Operations" and "Place Value" as subsumed concepts
 
 is first split into  $10 + 2$ , then each addend separately multiplies 15, and finally the resulting partial products are added to obtain 180. The distributive property is the underlying conceptual mechanism here, and this is emphasized in the area model for multiplication of  $13 \times 11$ .
@@ -725,7 +726,7 @@ Finally, Maryanne illustrates the use of chip trading in the division of 124 by 
 
 The power of chip trading is that it requires the child to employ the same cognitive processes that are required for computing efficiently with multi-digit numbers in our base ten positional system. As these processes are employed, the conceptual
 
-![](images/5e2f1ff14b16c791c89d3b225c97b9045519ca8f62fd8067217a0b867c441452.jpg)  
+![](images/5e2f1ff14b16c791c89d3b225c97b9045519ca8f62fd8067217a0b867c441452.jpg)
 Fig. 3.6 Maryanne's pedagogical approach connecting the algorithmic with the conceptual
 
 content of the algorithms is continually reinforced; they are not arbitrary "rules" to be memorized and executed by rote, but meaningful processes that rely for their power on the concept of positional system and the properties of actions such as the distributive property of multiplication over addition. Eventually, children have no need for the chips and simply invoke the representation of the trades. Finally, they are able to perform the requisite mathematical actions on the numbers alone, and to see that the algorithms are merely the symbolic trace of the meaningful mathematical actions they formerly performed on objects. When they attain this level of competence and understanding they will not find actions on large numbers (which would be too cumbersome to be easily performed with objects) to be daunting, nor will they need a calculator to perform them.
@@ -752,16 +753,16 @@ Acknowledgement Our special thanks to the pre-service student who graciously pro
 
 # References
 
-Burris, A. (2005). Understanding the math you teach. Upper Saddle River, NJ: Prentice Hall.  
-Davidson, P. S., Galton, G. K., & Fair, A. W. (1975). *Chip trading activities*. Fort Collins, CO: Scott Resources.  
-Lesar, T. S. (2003). Tenfold medication dose prescribing errors. The American Journal for Nurse Practitioners, 7(2), 31-32, 34-38, 43.  
-National Council of Teachers of Mathematics. (1989). Curriculum and evaluation standards for school mathematics. Reston, VA: Author.  
-National Council of Teachers of Mathematics. (1998). The teaching and learning of algorithms in school mathematics. Reston, VA: Author.  
-National Council of Teachers of Mathematics. (2000). Principles and standards for school mathematics. Reston, VA: Author.  
-Pirie, S. (1987). Nurses and mathematics: Deficiencies in basic mathematical skills among nurses. London: Royal College of Nursing.  
-Prairie Rainbow Blocks. Oakland, CA: Prairie Rainbow Company.  
-Przybycien, P. (2005). Safe meds: An interactive guide to safe medication practice. St. Louis: Elsevier Mosby.  
-Skemp, R. (1987). The psychology of learning mathematics. Mahwah, NJ: Lawrence Erlbaum.  
+Burris, A. (2005). Understanding the math you teach. Upper Saddle River, NJ: Prentice Hall.
+Davidson, P. S., Galton, G. K., & Fair, A. W. (1975). *Chip trading activities*. Fort Collins, CO: Scott Resources.
+Lesar, T. S. (2003). Tenfold medication dose prescribing errors. The American Journal for Nurse Practitioners, 7(2), 31-32, 34-38, 43.
+National Council of Teachers of Mathematics. (1989). Curriculum and evaluation standards for school mathematics. Reston, VA: Author.
+National Council of Teachers of Mathematics. (1998). The teaching and learning of algorithms in school mathematics. Reston, VA: Author.
+National Council of Teachers of Mathematics. (2000). Principles and standards for school mathematics. Reston, VA: Author.
+Pirie, S. (1987). Nurses and mathematics: Deficiencies in basic mathematical skills among nurses. London: Royal College of Nursing.
+Prairie Rainbow Blocks. Oakland, CA: Prairie Rainbow Company.
+Przybycien, P. (2005). Safe meds: An interactive guide to safe medication practice. St. Louis: Elsevier Mosby.
+Skemp, R. (1987). The psychology of learning mathematics. Mahwah, NJ: Lawrence Erlbaum.
 Vygotsky, L. S. (1962). Thought and language. Cambridge, MA: MIT Press.
 
 # Chapter 4 Using Concept Maps and Vee Diagrams to Analyse the "Fractions" Strand in Primary Mathematics
@@ -812,10 +813,10 @@ The following sections present Ken's concept map and vee diagram data as require
 
 Ken's analysis of Early Stage 1 (Kindergarten) syllabus outcomes in Fig. 4.1 shows that "half" or "halves" are introduced concretely from everyday context by the
 
-![](images/47bc1aff2e0a9693201d76e8c64852450a6757d01936226afbd028338b7ae811.jpg)  
+![](images/47bc1aff2e0a9693201d76e8c64852450a6757d01936226afbd028338b7ae811.jpg)
 Fig. 4.1 Early Stage 1 Fractions concept map
 
-![](images/eb9dd48394ac1131845617f21ad1c658c99688e6d58a939a865296373e907a84.jpg)  
+![](images/eb9dd48394ac1131845617f21ad1c658c99688e6d58a939a865296373e907a84.jpg)
 Fig. 4.2 Stage 1 Fractions concept map
 
 sharing of an object and by dividing it into "two equal parts". The emphasis at this stage is that the two parts are equal to ensure fairness.
@@ -828,7 +829,7 @@ collection of objects". Fractions also expand to include "quarters". Modelling a
 
 Figure 4.3 shows that, at Stage 2 (Years 3-4), fractions are described in different ways such as "equal parts of a whole" and "equal parts of collection of objects" and students' repertoire of fractions increase to include those with denominators 8, 5, 10
 
-![](images/89038c6645e75152fd0e755d1b555a7c1b8ad929fcfdd32413dc6ef4714a68af.jpg)  
+![](images/89038c6645e75152fd0e755d1b555a7c1b8ad929fcfdd32413dc6ef4714a68af.jpg)
 Fig. 4.3 Stage 2 Fractions concept map
 
 and 100. Students learn about "modelling", "naming", and "comparing/ordering" fractions with "denominators 2, 4 & 8".
@@ -843,7 +844,7 @@ Omitted also from the concept map is the notion of "numerator" although "denomin
 
 Ken's analysis of Stage 3 (Years 5-6) syllabus outcomes as concept mapped in Fig. 4.4 shows that the new fractions introduced are the thirds and sixths to supplement the halves, quarters, eighths, fifths, tenths and hundredths from previous stages. The "mixed numerals" branch illustrated fractions may be expressed with "mixed numerals" as "improper fractions" through the use of diagrams and number lines leading to a mental strategy. Adjacent to the right of this branch, are interconnections indicating that the "modelling" of thirds, sixths and eighths are to be done with "whole/collection of objects" and by "placing" them on a "number line between 0 and 1" to "develop equivalence" as illustrated by the 3 number lines provided in the middle of the map. The rightmost branch of the map (Fig. 4.4), which is
 
-![](images/cb2ed256e47fc9bd373f8636530b9e54f4aaa1f48aa14b3de02818365ac97976.jpg)  
+![](images/cb2ed256e47fc9bd373f8636530b9e54f4aaa1f48aa14b3de02818365ac97976.jpg)
 Fig. 4.4 Stage 3 Fractions concept map
 
 inclusive under the node "operations" are two concept hierarchies (or sub-branches). Whereas the left hierarchy displayed "addition/subtraction" of fractions with the "same denominator" (e.g.,  $\frac{5}{6} + \frac{3}{6} / \frac{5}{6} - \frac{3}{6}$ ) and with "(denominators) as a multiple of the other" (e.g.,  $\frac{2}{3} + \frac{1}{6} / \frac{2}{3} - \frac{1}{6}$ ), the right hierarchy illustrated "multiplication" of "fractions by whole numbers" using "repeated addition" (as shown by the illustrative example) which led to a "rule" as shown by the last node.
@@ -860,7 +861,7 @@ Ken's analysis of the Stage 4 (Years 6-7) fraction outcomes in Fig. 4.5 shows a 
 
 The Stage 4 outcomes about decimals, percentages, ratios and rates are omitted from the concept map at this early stage of his mapping experiences. Instead, Ken focussed on the development of fractions of the form  $\frac{a}{b}$ , equivalent fractions and operations with fractions  $\frac{a}{b}$  where the denominators are 2, 3, 4, 5, 6, 8, 10, 12 and 100 (defined in the syllabus as "simple fractions") most relevant to the focus of his pilot study.
 
-![](images/2380f04d22d7dd52ae08893753501d8a604c472d10f5ac640e766c13ea02b7cf.jpg)  
+![](images/2380f04d22d7dd52ae08893753501d8a604c472d10f5ac640e766c13ea02b7cf.jpg)
 Fig. 4.5 Stage 4 Fractions concept map
 
 Overall, Ken's five concept maps traced the introduction, development, and consolidation of (a) the views of simple fractions as "part of a whole", "part of a collection of objects" and a "number" on the number line; (b) equivalence between, and ordering of, simple fractions; and (c) operations with fractions and mixed numerals using concrete materials, illustratively with diagrams and the  $\frac{a}{b}$  notation.
@@ -877,16 +878,16 @@ Interconnections between the middle (Fig. 4.8) and bottom sections (Fig. 4.9) ar
 
 Top Section - Inclusive under the "Fractions" node (Fig. 4.7) are 8 branches subsumed under 8 Level 2 nodes, which, collectively, represented different ways of describing or using fractions. While the 2-leftmost branches was the focus of Task 1, Fig. 4.7 displays the full range of forms and applications of fractions based on Ken's critical analysis of the relevant syllabus outcomes. An inspection of the interconnections within each branch revealed Ken's attempts at elaborating, representing and communicating his understanding of the meaning and/or application of each of the Level 2 nodes. For example, the "part of a whole" branch included the extended proposition (P1): "Fractions" represent "part of a whole" which can be represented by "area models" such as "squares", "rectangles" and "circles". Further linear linking from each of the last 3 three nodes (i.e., "squares", "rectangles" and "circles"), showed illustrative examples descriptively and diagrammatically.
 
-![](images/14c5fbf381ec4e454386f1700a63bb56d828c093d3733225a403ab6b34d7fcb3.jpg)  
+![](images/14c5fbf381ec4e454386f1700a63bb56d828c093d3733225a403ab6b34d7fcb3.jpg)
 Fig. 4.6 Ken's overview Fractions concept map
 
-![](images/d0015843196ebd4daea61f1afccdfca810ddcc0f1d7dbe103970f414146c4f26.jpg)  
+![](images/d0015843196ebd4daea61f1afccdfca810ddcc0f1d7dbe103970f414146c4f26.jpg)
 Fig. 4.7 Top section - Ken's overview Fractions concept map
 
-![](images/5ffca4fa44148d368eec00d1b82f690a8d7c2c82064e3325235554495c6f06e5.jpg)  
+![](images/5ffca4fa44148d368eec00d1b82f690a8d7c2c82064e3325235554495c6f06e5.jpg)
 Fig. 4.8 Middle section - Ken's overview Fractions concept map
 
-![](images/ef842fe33b5b264c7145d4edbb5c9bde49a54e6f307f635d62395a889efa9565.jpg)  
+![](images/ef842fe33b5b264c7145d4edbb5c9bde49a54e6f307f635d62395a889efa9565.jpg)
 Fig. 4.9 Bottom section - Ken's overview Fractions concept map
 
 For the next branch to the right, the extended proposition (P2) is: “Fractions” represent “part of collection of objects” which can be represented as “discrete methods” such as “counters” and “sets”. Using counters, an illustrative example is (P2a): “2 out of (a) collection of 5 marbles” represented as (diagrammatically shown) representing “ $\frac{2}{5}$ ". The illustrative example for “sets” is: (P2b): “fourths of the same unit in a set” represented as (diagrammatically shown) representing “ $\frac{1}{4}$  of a whole”.
@@ -925,12 +926,12 @@ In subsequent workshops, Ken considered a second fraction problem, namely, "If  
 
 Reading from left-to-right (Fig. 4.11), the leftmost branch displayed the proposition (P6): "Fractions" should be understood as "part of the whole" visualised as (shown diagrammatically) and where the "whole" implies "1" which is evidently a
 
-![](images/1e8aa4074ab5638ae5182bc789c5da8a071a242b9a00bbdba52d21dcd3b134aa.jpg)  
+![](images/1e8aa4074ab5638ae5182bc789c5da8a071a242b9a00bbdba52d21dcd3b134aa.jpg)
 Fig. 4.10 Ken's draft concept map of the rope problem
 
 better and expanded revision of proposition P1 of the previous map (Fig. 4.10) with the inclusion of a diagram to illustrate the relationship between “part” and “whole”. A cross-link from this branch at node “1” connected to the adjacent “word problems” branch. The next proposition (P7) is: “Fractions” are used in “word problems” involving “quantities”, for example, “ $\frac{3}{4}$  of $40”. Some of the extended propositions,
 
-![](images/c7aea052af2a2eb2716111b85ce5e4b3c50067b308ac3bd4a79ae9eda83b4d97.jpg)  
+![](images/c7aea052af2a2eb2716111b85ce5e4b3c50067b308ac3bd4a79ae9eda83b4d97.jpg)
 Fig. 4.11 Ken's revised concept map of the two problems
 
 displayed in the middle, emanate from the multi-branching node “word problems”. For example, (P8): “Fractions” are used in “word problems” which involves “problem solving” with “operations” like “addition”, “subtraction”, “multiplication”, and “division” with each of the operation node linking to an illustrative example as shown; (P9): “Fractions” are used in “word problems” which may involve “operations”; (P10): “Fractions” are used in “word problems”, for example, (problem 1); (P11): “Fractions” are used in “word problems” which may involve “fractions & numerals” with cross-links to the illustrative examples of proposition P8; (P12): “Fractions” are used in “word problems” which may involve “fractions & numerals” with “operations” like “addition”, “subtraction”, “multiplication”, and “division”.
@@ -951,8 +952,8 @@ Philosophy
 
 Outcomes
 
-(1) Use algebraic symbol system to simplify and factorise simple expressions.  
-(2) Express the problem in diagrammatic form.  
+(1) Use algebraic symbol system to simplify and factorise simple expressions.
+(2) Express the problem in diagrammatic form.
 (3) Convert word problems into equations.
 
 Prior Knowledge (Principles)
@@ -1005,12 +1006,12 @@ $$
 
 Total length of post is  $200\mathrm{cm}$
 
-![](images/41b1e037e85b87302bd5c30584d67f72f4cfec3150c788a0f8bbd10b345800f5.jpg)  
+![](images/41b1e037e85b87302bd5c30584d67f72f4cfec3150c788a0f8bbd10b345800f5.jpg)
 Fig. 4.12 Ken's first vee diagram of the post problem
 
 If  $\frac{1}{4}$  of a post is below ground level and  $150\mathrm{cm}$  Remains above the ground then find the total length of the post.
 
-![](images/ac0e3eba231f27f0beca9bacc17bef27b7570f36bb5af975d4704072ec6cc9a1.jpg)  
+![](images/ac0e3eba231f27f0beca9bacc17bef27b7570f36bb5af975d4704072ec6cc9a1.jpg)
 Fig. 4.13 Ken's revised vee diagram of the post problem
 
 "Interpretations (Transformations)" with the answer to the focus question under "Knowledge Claims". Ken left the sections "Philosophy" and "Value Claims" blank.
@@ -1047,22 +1048,22 @@ Findings from this case study contributes empirical data to the literature on th
 
 # References
 
-Australian Association of Mathematics Teachers (AAMT). (2007). AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved October 6, 2007, from http://www.aamt.edu.au/standards  
-Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht, Boston: Kluwer Academic Publishers.  
-Baroody, A. J., Feil, Y., & Johnson, A. R. (2007). Research commentary: An alternative reconceptualization of procedural and conceptual knowledge. Journal for Research in Mathematics Education, 38(2), 115-131.  
-Blanton, M., & Kaput, J. (2000, October). Generalizing and progressively formalizing in a third-grade mathematics classroom: Conversations about even and odd numbers. In M. L. Fernandez (Ed.), Proceedings of the 22nd annual meeting of the North American chapter of the International Group for Psychology of Mathematics Education (Vol. 1, pp. 115-119). Columbus, OH: The ERIC Clearinghouse for Science, Mathematics, and Environmental Education.  
-Bruner, J. (1990). Acts of meaning. Cambridge, MA: Harvard University Press.  
-Ellis, A. B. (2007). Connections between generalizing and justifying: Students' reasoning with linear relationships. Journal for Research in Mathematics Education, 38(3), 194-229.  
-Feldman, A. (1996). Enhancing the practice of physics teachers: Mechanisms for the generation and sharing of knowledge. Retrieved October 2, 2007 from http://www.unix.oit.umass.edu/~afeldman/ActionResearchPapers/Feldman1996.PDF  
-Hiebert, J., & Lefevre, P. (1986). Conceptual and procedural knowledge in mathematics: An introductory analysis. In J. Hiebert (Ed.), Conceptual and procedural knowledge: The case of mathematics (pp. 1-27). Hillsdale, NJ: Lawrence Erlbaum Associates.  
-Hierbert, J., & Wearne, D. (1986). Procedures over concepts: The acquisition of decimal number knowledge. In J. Hierbert (Ed.), Conceptual and procedural knowledge: The case of mathematics (pp. 199-223). Hillsdale, NJ: Erlbaum.  
-Jiygel, K., & Afamasaga-Fuata'i, K. (2007). Students' conceptions of models of fractions and equivalence. The Australian Mathematics Teacher, 63(4), 17-25.  
-National Council of Teachers of Mathematics (NCTM). (2007). Executive summary. Principles and standards for school mathematics. Retrieved October 4, 2007 from http://standards.nctm.org/document/chapter3/index.htm  
+Australian Association of Mathematics Teachers (AAMT). (2007). AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved October 6, 2007, from http://www.aamt.edu.au/standards
+Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht, Boston: Kluwer Academic Publishers.
+Baroody, A. J., Feil, Y., & Johnson, A. R. (2007). Research commentary: An alternative reconceptualization of procedural and conceptual knowledge. Journal for Research in Mathematics Education, 38(2), 115-131.
+Blanton, M., & Kaput, J. (2000, October). Generalizing and progressively formalizing in a third-grade mathematics classroom: Conversations about even and odd numbers. In M. L. Fernandez (Ed.), Proceedings of the 22nd annual meeting of the North American chapter of the International Group for Psychology of Mathematics Education (Vol. 1, pp. 115-119). Columbus, OH: The ERIC Clearinghouse for Science, Mathematics, and Environmental Education.
+Bruner, J. (1990). Acts of meaning. Cambridge, MA: Harvard University Press.
+Ellis, A. B. (2007). Connections between generalizing and justifying: Students' reasoning with linear relationships. Journal for Research in Mathematics Education, 38(3), 194-229.
+Feldman, A. (1996). Enhancing the practice of physics teachers: Mechanisms for the generation and sharing of knowledge. Retrieved October 2, 2007 from http://www.unix.oit.umass.edu/~afeldman/ActionResearchPapers/Feldman1996.PDF
+Hiebert, J., & Lefevre, P. (1986). Conceptual and procedural knowledge in mathematics: An introductory analysis. In J. Hiebert (Ed.), Conceptual and procedural knowledge: The case of mathematics (pp. 1-27). Hillsdale, NJ: Lawrence Erlbaum Associates.
+Hierbert, J., & Wearne, D. (1986). Procedures over concepts: The acquisition of decimal number knowledge. In J. Hierbert (Ed.), Conceptual and procedural knowledge: The case of mathematics (pp. 199-223). Hillsdale, NJ: Erlbaum.
+Jiygel, K., & Afamasaga-Fuata'i, K. (2007). Students' conceptions of models of fractions and equivalence. The Australian Mathematics Teacher, 63(4), 17-25.
+National Council of Teachers of Mathematics (NCTM). (2007). Executive summary. Principles and standards for school mathematics. Retrieved October 4, 2007 from http://standards.nctm.org/document/chapter3/index.htm
 New South Wales Board of Studies (NSWBOS). (2002). K-10 Mathematics syllabus. Sydney, Australia: NSWBOS.
 
-Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.  
-Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them (Technical Report IHMC Cmap Tools 2006-01). Florida Institute for Human and Machine Cognition, 2006, available at http://cmap.ihmc.us/publications/ResearchPapers/ TheoryUnderlyingConceptMaps.pdf  
-Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.  
+Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.
+Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them (Technical Report IHMC Cmap Tools 2006-01). Florida Institute for Human and Machine Cognition, 2006, available at http://cmap.ihmc.us/publications/ResearchPapers/ TheoryUnderlyingConceptMaps.pdf
+Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.
 Shulman, L. S. (1986). Those who understand: Knowledge growth in teaching. Educational Researcher, 15(2 February), 4-14.
 
 # Chapter 5 Concept Maps as Innovative Learning and Assessment Tools in Primary Schools
@@ -1135,7 +1136,7 @@ To provide additional professional support to the MPS teachers, a portfolio of c
 
 The main objective of the portfolio was to scaffold the teachers' and students' learning trajectories with semi-structured maps (i.e., Fill-in-the-Map type instead of Construct-a-Map (no concepts, linking words or structure provided type)) until both teachers and students were sufficiently confident in using concept maps. Ultimately, the goal was for each individual (teacher and/or student) to create their own hierarchical structures of interconnecting concepts to reflect their idiosyncratic, existing understanding of a topic and as an alternative means of prompting the teachers to be
 
-![](images/065f62e9f7506099332aaf2c801ff07d506103ec623f3a99e450aff766775aa4.jpg)  
+![](images/065f62e9f7506099332aaf2c801ff07d506103ec623f3a99e450aff766775aa4.jpg)
 Fig. 5.1 One of the concept maps constructed by the researcher based on an observation of the mathematical language used by the Year 5/6 teacher in a lesson on Addition of Decimals
 
 more creative and flexible in their conceptualisation of a classroom application of concept mapping.
@@ -1144,14 +1145,14 @@ more creative and flexible in their conceptualisation of a classroom application
 
 Site meetings with the K-Year 1 teacher (pseudonym Carrie, who had returned from leave) and Sue (Year 5/6 teacher), enabled further collaborative discussions around the portfolio of maps including those based on the Year 5/6 observation visit from the previous term. In addition, the computer software  $\text{Inspiration}^{TM}$  was purchased
 
-![](images/d18ff24cfab47b89a9996bd18021a5531a4acef692e5754c788847e5f12af039.jpg)  
+![](images/d18ff24cfab47b89a9996bd18021a5531a4acef692e5754c788847e5f12af039.jpg)
 Fig. 5.2 A brainstorming concept map co-constructed by the Year 5/6 class and teacher to introduce the science topic Adapting for Life
 
 to assist with the classroom preparation of concept maps. The software provided another tool and resource to address the concern that constructing concept maps was messy and took too long. It had a tremendous impact on re-energising both teachers to attempt concept mapping more readily and more frequently making them feel less apprehensive about concept mapping.
 
 Since the two teachers still appeared reluctant to create opportunities for students to begin concept mapping claiming that it would be too difficult for their students, the researcher offered to provide them with some pre-prepared semi-structured concept maps on whatever topic they were currently teaching, which they can further modify/revise as they see fit to start their students off. Accordingly, the K-Year 1 teacher advised she was working with students on describing relative Positions of objects by taking the whole class for a walk around the school grounds followed by further review of student understanding by using a wall-size picture of the school grounds. The Year 5/6 teacher, in comparison, had been teaching Watery Environment in the previous two weeks and had already started to brainstorm ideas with her students using a concept map (see Fig. 5.2). Outcomes of this consultative meeting were that (1) the researcher would drop off samples of maps the following week and (2) classroom visits would be scheduled soon after.
 
-![](images/bdcee5afb2cb4aa913b63f61a11c217e7fa498a17cae228be4231185e063077c.jpg)  
+![](images/bdcee5afb2cb4aa913b63f61a11c217e7fa498a17cae228be4231185e063077c.jpg)
 Fig. 5.3 A Fill-in-Nodes concept map - Lines
 
 # Concept Mapping Activities
@@ -1162,14 +1163,14 @@ K-Year 1 Class - Activity 1 - Fruits' Position I
 
 The K-Year 1 teacher began with a class demonstration using a white-board version of the Fruits' Position map shown in Fig. 5.6. By working through each link on the map and by posing questions, Carrie invited students to suggest how the links should be described. The class demonstration was followed with individual work in which students were asked to write in "descriptions of positions" on the blank links. Assisting students individually and in small groups were two parent-teacher aides, the teacher associate and Carrie. Shown in Fig. 5.6 is an example of a student-completed concept map from this first activity. In her written assessment of the activity, Carrie wrote: "I was pleasantly surprised to see how well the children coped with this activity and were able to use the language of position". For further improvement, she recommended that, for subsequent activities, "As this class is Early Stage 1, most children had some difficulty writing the words onto the lines. I recommend labels be used".
 
-![](images/708e18a4edbb5f6b7fee027cbeacaf87441b2aceabcea0f74f97eb5807d42fd6.jpg)  
+![](images/708e18a4edbb5f6b7fee027cbeacaf87441b2aceabcea0f74f97eb5807d42fd6.jpg)
 Fig. 5.4 A Fill-in-Nodes concept map - Shapes
 
 # Year 5/6 Class - Activity 1 - Adaptive Features of a Fish
 
 A week before this mapping activity, the Year 5/6 class had already completed a brainstorming concept map as a class (i.e., Fig. 5.2) and had completed a diagram in which students labeled the different parts of a fish using a given list of words. Hence this mapping task included the same fish diagram on one side (i.e., prior knowledge), which the students were asked to complete again to refresh their memories before completing a Fill-in-Nodes concept map, based on the textbook summary of Adaptive Features of a Fish the teacher had used in her teaching. From the given list of "concept names and phrases", students were to complete the blank nodes by selecting the appropriate words/phrases from the list. Figure 5.7 shows an example of a student-completed concept map. The teacher and teacher associate provided
 
-![](images/c31fa21bd96e35874dafee6d93ac80ebb70f6f064aa300c338c1d88e40530800.jpg)  
+![](images/c31fa21bd96e35874dafee6d93ac80ebb70f6f064aa300c338c1d88e40530800.jpg)
 Fig. 5.5 A Fill-in-Nodes concept map - Geometry
 
 assistance to the students by answering their queries, facilitating, and guiding them in completing their maps.
@@ -1178,19 +1179,19 @@ assistance to the students by answering their queries, facilitating, and guiding
 
 The second mapping activities for both classes involved the application of concept maps that were structurally different from those of the first activity.
 
-![](images/efb0aa2d281fbd432c0abf7675091ff080474062c82c455a334aef2331115b4b.jpg)  
-Fig. 5.6 A Fill-in-Lines concept map - Fruits' Position - K-Year 1 activity 1  
+![](images/efb0aa2d281fbd432c0abf7675091ff080474062c82c455a334aef2331115b4b.jpg)
+Fig. 5.6 A Fill-in-Lines concept map - Fruits' Position - K-Year 1 activity 1
 Picture of Fruits and Vegetables
 
-![](images/00ab930aa336344b5a82ea5459494a55ec4c07ce8484fbeb9aa39e8d8b98e816.jpg)  
+![](images/00ab930aa336344b5a82ea5459494a55ec4c07ce8484fbeb9aa39e8d8b98e816.jpg)
 Use the Picture above to describe the position of fruits and vegetables on connecting lines.
 
-![](images/253054470574cb66e95ec47ac7f3556ffc6adb9ff7bef380b17cbd88b6fb624e.jpg)  
+![](images/253054470574cb66e95ec47ac7f3556ffc6adb9ff7bef380b17cbd88b6fb624e.jpg)
 Fig. 5.7 A Fill-in-Nodes concept map -Adaptive Features of a Fish - Year 5/6 activity 1
 
 ![](images/0523a3cb6a3575de581d812395a4d15ee8ce82e5b1e488def4a5e4d2daf99392.jpg)
 
-![](images/eb0ab18f2bd32015f782430d786df57b9e0548dad8152d26cd26e198677a6475.jpg)  
+![](images/eb0ab18f2bd32015f782430d786df57b9e0548dad8152d26cd26e198677a6475.jpg)
 Fig. 5.8 Fill-in-Lines concept maps - Position - K-Year 1 activities 2 & 3
 
 ![](images/78ff422a2c3b933e05645055d62275afbd8719e1f32b653e6a450739b1feb68a.jpg)
@@ -1205,7 +1206,7 @@ Unlike their previous mapping activity, the Year 5/6 students were given cardboa
 
 Strategies that assisted in progressing to this benchmark of completing two mapping tasks included working closely with the teachers, hearing their concerns and providing support where necessary as the teachers came to terms with a different way of thinking whilst at the same maintaining sight of the aims of the research project, namely, to introduce innovative teaching and learning strategies in the hope of making a difference with students' engagement with learning. The comments from the project's critical friend reflected the spirit and importance of achieving this milestone: "The participation in this project is quite demanding of teachers because they have to get their heads around to a different way of thinking, as well
 
-![](images/3835b873677f11460c33a51b7dbcf46524816f08338b9dcefd7b0438912a59e7.jpg)  
+![](images/3835b873677f11460c33a51b7dbcf46524816f08338b9dcefd7b0438912a59e7.jpg)
 Fig. 5.9 A Construct-a-Map (Concepts provided) concept map - Fish - Year 5/6 activity 2
 
 as encouraging their students to do so. This is, however, very worthwhile" (Project Milestone Reporting Tool).
@@ -1224,10 +1225,10 @@ Year 5/6 class had been working on Fractions since the second visit so the teach
 
 With both activities, students individually completed their own maps with the teacher, teacher associate and parent-teacher aide moving around interacting with, facilitating and helping students with their queries. Over three visits, this class had evidently progressed through a series of semi-structured concept maps and one open-structured concept map in both science and mathematics. A positive
 
-![](images/accd2ae499a3f0b368bee66057b62f116abf92f85402e90d86e2563da95758f1.jpg)  
+![](images/accd2ae499a3f0b368bee66057b62f116abf92f85402e90d86e2563da95758f1.jpg)
 Fig. 5.10 A Fill-in-Map concept map - Fractions - Year 5/6 activity 3
 
-![](images/47018f7811b9a51c56b111489bd90f9748d6094167d11972e047f5c68d4b0d33.jpg)  
+![](images/47018f7811b9a51c56b111489bd90f9748d6094167d11972e047f5c68d4b0d33.jpg)
 Fig. 5.11 A Fill-in-Map concept map - Fractions - Year 5/6 activity 4
 
 consequence of this evolving engagement was the emerging confidence exhibited by Sue – who was beginning to critically formulate her own ideas of how she would construct concept maps to align more with her style of teaching and consistent with the type of language practiced in her classroom. This change marked a major step forward and a positive indicator of things to come.
@@ -1244,32 +1245,32 @@ Continuing to meet with the MPS teachers as they progressed their self-designed 
 
 On-going professional support and regular face-to-face meetings with the participating teachers became necessary to manage risks that threatened the successful completion of the teacher-initiated mapping activities (i.e., final projects), and to provide on-going support as the teachers made the professional transition from receptors of ideas to implementers of innovative ideas. Healthy progress and positive achievements were noted with the MPS teachers' final projects. Comments from the critical friend stated: "This was an interesting meeting – not least because of the diagrams made by students – and the teachers' comments on the outcome and the process. It seems as if teachers are learning alongside their pupils" (Project Milestone Reporting Tool). Furthermore reflection sessions provided continuous support to the MPS teachers as they progressed the implementation of their final projects with their students. For example, the K-Year 1 teacher and her students were constructing hierarchical concept maps by revising and extending their class-constructed mind map
 
-![](images/8d76dcf709faea9ac9925954a0dea27ccbf49ed39132df5cd008733d6ff37db9.jpg)  
+![](images/8d76dcf709faea9ac9925954a0dea27ccbf49ed39132df5cd008733d6ff37db9.jpg)
 Fig. 5.12 A brainstorming concept map - Space - Year 5/6 activity 5
 
-![](images/85315c98943a46f9e4a986c8a486c9d47543038d69575b6ec90d84fb6afeae59.jpg)  
+![](images/85315c98943a46f9e4a986c8a486c9d47543038d69575b6ec90d84fb6afeae59.jpg)
 Fig. 5.13 A brainstorming mind map - Animals - K-Year 1 activity 4
 
 on Animals (Fig. 5.13). To facilitate the construction of concept maps, the two primary teachers instigated the coming together of the two classes to enable peer tutoring of K-Year 1 students by the Year 5/6 students in learning how to use the software InspirationTM. The Year 5/6 teacher, on the other hand, facilitated her students' work in constructing Space concept maps using InspirationTM. This individual
 
-![](images/79e51af7e00d461a49e63ebb551fb2d1ac65f798754a79fee8aa64e407cfa316.jpg)  
+![](images/79e51af7e00d461a49e63ebb551fb2d1ac65f798754a79fee8aa64e407cfa316.jpg)
 (a)
 
-![](images/3a251e8259b5bed81f58ac9928c22392d72daf590e435793a01517423b8a5933.jpg)  
+![](images/3a251e8259b5bed81f58ac9928c22392d72daf590e435793a01517423b8a5933.jpg)
 (b)
 
-![](images/c433f58bf3b277a5e5f99e6e63d313da645394a1ff2fa1960b271e6c0225c9fe.jpg)  
-(c)  
+![](images/c433f58bf3b277a5e5f99e6e63d313da645394a1ff2fa1960b271e6c0225c9fe.jpg)
+(c)
 Fig. 5.14 Students' concept maps - Animals - K-Year 1 Activity 5
 
-![](images/091221eae835f951e19965795327505e59d71e8cadae0ac03fa8c19a4e7df45f.jpg)  
+![](images/091221eae835f951e19965795327505e59d71e8cadae0ac03fa8c19a4e7df45f.jpg)
 (a)
 
-![](images/43660296b3117742cf304b821edac0c24dee13f5b58fb5c15e86901a24d117aa.jpg)  
+![](images/43660296b3117742cf304b821edac0c24dee13f5b58fb5c15e86901a24d117aa.jpg)
 (b)
 
-![](images/4058330257cb33b320c14a65ec05768831e0cf1b35ec2546d4165ec6989182be.jpg)  
-(c)  
+![](images/4058330257cb33b320c14a65ec05768831e0cf1b35ec2546d4165ec6989182be.jpg)
+(c)
 Fig. 5.15 A student's concept map - Space - Year 5/6 activity 6
 
 construction of maps followed after their class-constructed concept map in Fig. 5.12. Some examples of K-Year 1 concept maps constructed using  $\mathbf{Inspiration}^{TM}$  are shown in Fig. 5.14a, b and c whilst some student-constructed concept maps from Year 5/6 are shown in Fig. 5.15a, b and c.
@@ -1340,18 +1341,18 @@ Acknowledgment This project was funded by a grant from the Australian School Inn
 
 # References
 
-Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping & vee mapping. Samoa: National University of Samoa.  
-Afamasaga-Fuata'i, K. (2004). Concept maps and vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), *Concept maps: Theory, methodology, technology.* Proceedings of the first international conference on concept mapping, (Vol. 1, pp. 13-20). Navarra, Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.  
-Afamasaga-Fuata'i, K. (2005). Students' conceptual understanding and critical thinking? A case for concept maps and vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer (Eds.), Making mathematics vital. Proceedings of the twentieth biennial conference of the Australian Association of Mathematics Teachers (AAMT) (Vol. 1, pp. 43-52). Sydney, Australia: University of Technology.  
-Afamasaga-Fuata'i, K., & McPhan, G. (2007). Vee diagrams as a tool for teacher professional development: Learning, reflecting and planning. Proceedings of the New Zealand Association for Research in Education (NZARE). National Conference. CD-ROM.  
-Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht, Boston: Kluwer Academic Publishers.  
-Grimbeek, P., & Nisbet, S. (2006). Surveying primary teachers about compulsory numeracy testing: Combining factor analysis with Rasch analysis. Mathematics Education Research Journal, 18(2), 27-39.  
-Guskey, T. (1985). Staff development and teacher change. Educational Leadership, 42, 57-60.  
-Loughran, J., & Gunstone, R. (1997). Professional development in residence: Developing reflection on science teaching and learning. Journal of Education for Teaching, 23(2), 159-178.  
+Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping & vee mapping. Samoa: National University of Samoa.
+Afamasaga-Fuata'i, K. (2004). Concept maps and vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), *Concept maps: Theory, methodology, technology.* Proceedings of the first international conference on concept mapping, (Vol. 1, pp. 13-20). Navarra, Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.
+Afamasaga-Fuata'i, K. (2005). Students' conceptual understanding and critical thinking? A case for concept maps and vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer (Eds.), Making mathematics vital. Proceedings of the twentieth biennial conference of the Australian Association of Mathematics Teachers (AAMT) (Vol. 1, pp. 43-52). Sydney, Australia: University of Technology.
+Afamasaga-Fuata'i, K., & McPhan, G. (2007). Vee diagrams as a tool for teacher professional development: Learning, reflecting and planning. Proceedings of the New Zealand Association for Research in Education (NZARE). National Conference. CD-ROM.
+Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht, Boston: Kluwer Academic Publishers.
+Grimbeek, P., & Nisbet, S. (2006). Surveying primary teachers about compulsory numeracy testing: Combining factor analysis with Rasch analysis. Mathematics Education Research Journal, 18(2), 27-39.
+Guskey, T. (1985). Staff development and teacher change. Educational Leadership, 42, 57-60.
+Loughran, J., & Gunstone, R. (1997). Professional development in residence: Developing reflection on science teaching and learning. Journal of Education for Teaching, 23(2), 159-178.
 New South Wales Board of Studies (NSWBOS). (2002). K-6 Mathematics syllabus. Sydney, Australia: NSWBOS.
 
-Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.  
-Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.  
+Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.
+Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.
 Ruiz-Primo, M. (2004, September 14–17). Examining concept maps as an assessment tool. In A. J. Canas, J. D. Novak, & Gonázales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the first international conference on concept mapping (pp. 555–562). Dirección de Publicaciones de la Universidad Pública de Navarra, Spain.
 
 Part III
@@ -1426,7 +1427,7 @@ Concept maps provide students with a learning tool to help them cover all the co
 
 They can be used to evaluate students' prior knowledge of this topic and monitor their learning progress. We will therefore base our study on the comparative analysis
 
-![](images/38b3bac2cb33c907feb835a24360a0302f5ac1f689cad5c99d74c918a65c2f83.jpg)  
+![](images/38b3bac2cb33c907feb835a24360a0302f5ac1f689cad5c99d74c918a65c2f83.jpg)
 Fig. 6.1 Reference map (Pozueta, 2003)
 
 of the children's maps before and after instruction, following the model presented by Guruceaga and González (2004). This will allow us to focus on various features of concept maps (see Table 6.1). Thus, our pupils' concept maps will become the means by which we will be able to detect the level of meaningful learning they have attained, and will also serve to alert us if the process has involved rote or mechanical learning rather than meaningful learning. The following table (Table 6.1) shows the indicators that were checked. After analysis, the pupils' maps can be classified into groups showing similar characteristics and tendencies.
@@ -1437,7 +1438,7 @@ The fieldwork took place throughout the 2002-2003 academic years, in the state-a
 
 The first was to create the above-mentioned reference map (see Fig. 6.1), which was geared to the teaching of second-grade secondary students (13 to 14 year olds). Twenty five (25) concepts were selected and the main relationships between them were identified, taking into account the didactic aims to be covered in the instructional module.
 
-Table 6.1 Learning indicators  
+Table 6.1 Learning indicators
 
 <table><tr><td>Indicators of rote/mechanical learning</td><td>Indicators of meaningful learning</td></tr><tr><td>·No clear differentiation between concepts and linking phrases; direction of the relationships between concepts not shown
 ·A minor number of concepts are used
@@ -1487,7 +1488,7 @@ With regard to the share of erroneous or inaccurate propositions relative to the
 
 It is worth mentioning the case of three pupils, numbers 3, 16 and 27, who, out of the total number of propositions in their post-instruction maps, (totals of 26, 29 and 39, respectively) had no incorrect propositions whatever.
 
-Table 6.2 Use of concepts relating to proportionality  
+Table 6.2 Use of concepts relating to proportionality
 
 <table><tr><td>Pupil</td><td>Number of concepts used (out of 25) in first map</td><td>Percentage of total number of concepts used in first map</td><td>Number of concepts used (out of 25) in second map</td><td>Percentage of total number of concepts used in second map</td></tr><tr><td>1</td><td>17</td><td>68</td><td>23</td><td>92</td></tr><tr><td>2</td><td>22</td><td>88</td><td>22</td><td>88</td></tr><tr><td>3</td><td>13</td><td>52</td><td>21</td><td>84</td></tr><tr><td>4</td><td>13</td><td>52</td><td>21</td><td>84</td></tr><tr><td>5</td><td>17</td><td>68</td><td>25</td><td>100</td></tr><tr><td>6</td><td>10</td><td>40</td><td>20</td><td>80</td></tr><tr><td>7</td><td>13</td><td>52</td><td>25</td><td>100</td></tr><tr><td>8</td><td>10</td><td>40</td><td>17</td><td>68</td></tr><tr><td>9</td><td>22</td><td>88</td><td>25</td><td>100</td></tr><tr><td>10</td><td>25</td><td>100</td><td>24</td><td>96</td></tr><tr><td>11</td><td>12</td><td>48</td><td>23</td><td>92</td></tr><tr><td>12</td><td>16</td><td>64</td><td>22</td><td>88</td></tr><tr><td>13</td><td>15</td><td>60</td><td>25</td><td>100</td></tr><tr><td>14</td><td>16</td><td>64</td><td>24</td><td>96</td></tr><tr><td>15</td><td>18</td><td>72</td><td>23</td><td>92</td></tr><tr><td>16</td><td>14</td><td>56</td><td>25</td><td>100</td></tr><tr><td>17</td><td>18</td><td>72</td><td>24</td><td>96</td></tr><tr><td>18</td><td>17</td><td>68</td><td>25</td><td>100</td></tr><tr><td>19</td><td>25</td><td>100</td><td>24</td><td>96</td></tr><tr><td>20</td><td>12</td><td>48</td><td>23</td><td>92</td></tr><tr><td>21</td><td>9</td><td>36</td><td>21</td><td>84</td></tr><tr><td>22</td><td>15</td><td>60</td><td>18</td><td>72</td></tr><tr><td>23</td><td>15</td><td>60</td><td>18</td><td>72</td></tr><tr><td>24</td><td>18</td><td>72</td><td>19</td><td>76</td></tr><tr><td>25</td><td>8</td><td>32</td><td>10</td><td>40</td></tr><tr><td>26</td><td>14</td><td>56</td><td>14</td><td>56</td></tr><tr><td>27</td><td>19</td><td>76</td><td>25</td><td>100</td></tr><tr><td>28</td><td>11</td><td>44</td><td>25</td><td>100</td></tr><tr><td>29</td><td>18</td><td>72</td><td>25</td><td>100</td></tr><tr><td>30</td><td>15</td><td>60</td><td>18</td><td>72</td></tr><tr><td>31</td><td>17</td><td>68</td><td>25</td><td>100</td></tr><tr><td>32</td><td>16</td><td>64</td><td>25</td><td>100</td></tr></table>
 
@@ -1495,7 +1496,7 @@ Specifically,  $28\%$  failed to introduce one of the three examples; treble the
 
 In terms of the percentage of erroneous or inaccurate propositions in the totals, 15 of the 32 pupils made up to  $50\%$  inaccurate propositions in the first map, while in the subsequent map only two made more than  $50\%$  and 16 made  $10\%$  or less.
 
-Table 6.3 Propositions in relation to proportionality  
+Table 6.3 Propositions in relation to proportionality
 
 <table><tr><td>Pupil</td><td>In first map: Erroneous propositions out of total</td><td>Percentage in first map</td><td>In second map: Erroneous propositions out of total</td><td>Percentage in second map</td></tr><tr><td>1</td><td>8/20</td><td>40</td><td>2/32</td><td>9.4</td></tr><tr><td>2</td><td>20/24</td><td>83.3</td><td>14/24</td><td>58.3</td></tr><tr><td>3</td><td>10/13</td><td>76.9</td><td>0/26</td><td>0</td></tr><tr><td>4</td><td>8/14</td><td>57.1</td><td>4/24</td><td>16.7</td></tr><tr><td>5</td><td>10/17</td><td>58.8</td><td>4/30</td><td>13.3</td></tr><tr><td>6</td><td>4/9</td><td>44.4</td><td>5/27</td><td>18.5</td></tr><tr><td>7</td><td>5/12</td><td>41.6</td><td>2/26</td><td>7.7</td></tr><tr><td>8</td><td>2/11</td><td>18.2</td><td>4/11</td><td>36.7</td></tr><tr><td>9</td><td>5/23</td><td>21.7</td><td>1/32</td><td>3.1</td></tr><tr><td>10</td><td>19/36</td><td>52.8</td><td>4/28</td><td>14.3</td></tr><tr><td>11</td><td>2/13</td><td>15.4</td><td>2/26</td><td>7.7</td></tr><tr><td>12</td><td>9/17</td><td>52.9</td><td>8/26</td><td>30.8</td></tr><tr><td>13</td><td>6/14</td><td>42.8</td><td>2/29</td><td>6.9</td></tr><tr><td>14</td><td>5/15</td><td>33.3</td><td>6/27</td><td>22.2</td></tr><tr><td>15</td><td>4/17</td><td>23.5</td><td>1/22</td><td>4.5</td></tr><tr><td>16</td><td>3/13</td><td>23.1</td><td>0/29</td><td>0</td></tr><tr><td>17</td><td>10/18</td><td>55.5</td><td>1/26</td><td>3.8</td></tr><tr><td>18</td><td>8/16</td><td>50</td><td>5/28</td><td>17.8</td></tr><tr><td>19</td><td>8/25</td><td>32</td><td>7/26</td><td>27</td></tr><tr><td>20</td><td>5/11</td><td>45.5</td><td>2/27</td><td>7.4</td></tr><tr><td>21</td><td>5/8</td><td>62.5</td><td>10/19</td><td>52.6</td></tr><tr><td>22</td><td>8/14</td><td>57.1</td><td>6/18</td><td>33.3</td></tr><tr><td>23</td><td>4/18</td><td>22.2</td><td>2/21</td><td>9.5</td></tr><tr><td>24</td><td>5/8</td><td>62.5</td><td>5/24</td><td>20.8</td></tr><tr><td>25</td><td>4/7</td><td>57.1</td><td>1/11</td><td>9.1</td></tr><tr><td>26</td><td>7/13</td><td>53.8</td><td>1/14</td><td>7.1</td></tr><tr><td>27</td><td>11/18</td><td>61.1</td><td>1/27</td><td>3.7</td></tr><tr><td>28</td><td>3/12</td><td>25</td><td>0/39</td><td>0</td></tr><tr><td>29</td><td>9/17</td><td>52.9</td><td>5/30</td><td>16.7</td></tr><tr><td>30</td><td>8/14</td><td>57.1</td><td>6/21</td><td>28.6</td></tr><tr><td>31</td><td>11/15</td><td>73.3</td><td>6/24</td><td>25</td></tr><tr><td>32</td><td>9/15</td><td>60</td><td>3/30</td><td>10</td></tr></table>
 
@@ -1529,10 +1530,10 @@ As we discuss this, it is interesting to note that there were three clear tenden
 
 This particular pupil used 14 concepts in the first map, but increased this to 25 in the final map. It is interesting to observe how the concept of ratio is incorporated with its full meaning, shown in its linkage with proportion and proportional relationship. The concept of proportional relationship is assigned the correct hierarchical level, while the four forms of expression, that is, text, table, formula and graph, for both types of proportionality presented and handled in the instructional module are perfectly defined on a lower level. The crossed links between these types of expression are also shown. Furthermore, the three mathematical contexts treated
 
-![](images/ab6513829b053b9540aae8f9a02e070ec9234f721e1f95809b68d596859ec3ae.jpg)  
+![](images/ab6513829b053b9540aae8f9a02e070ec9234f721e1f95809b68d596859ec3ae.jpg)
 Fig. 6.2 I.I.'s first map
 
-![](images/285784fe0bba3f96072f46d1a7eb147160c130312360c1ed5ba9680f2a59ecf7.jpg)  
+![](images/285784fe0bba3f96072f46d1a7eb147160c130312360c1ed5ba9680f2a59ecf7.jpg)
 Fig. 6.3 I.I.'s final map
 
 in the module as examples of direct proportionality are shown on another hierarchical level.
@@ -1541,17 +1542,17 @@ Another tendency can be observed on the second maps made by a group of 19 pupils
 
 Note that the 19 concepts used in the first map increased to 25 in the second. There are also clear signs that this pupil has begun to give a new meaning to the concepts of ratio and proportion. However, despite having clearly differentiated the concept of proportional relationship and correctly placed all the subordinate concepts, the link between the concepts of proportion and proportional relationship has not been identified, revealing this pupil's inability to reconcile these two concepts. Crossed links between the different forms of expression of the two types of proportionality were also missing in this map. Finally, we can report on a third group of
 
-![](images/e523b2b7935607bbc1e141d51fd13faab21251a51ac7bf9c513ae87b4a3ad0b7.jpg)  
+![](images/e523b2b7935607bbc1e141d51fd13faab21251a51ac7bf9c513ae87b4a3ad0b7.jpg)
 Fig. 6.4 I.M.'s first map
 
-![](images/b50ed5aaa4199ec665985999d7171945e27414631fd076f901e5c5bf1b67ca67.jpg)  
+![](images/b50ed5aaa4199ec665985999d7171945e27414631fd076f901e5c5bf1b67ca67.jpg)
 Fig. 6.5 I.M.'s final map
 
 10 pupils, whose final maps showed many features that were more characteristic of rote learning than meaningful learning, given the total absence of differentiations and the very few examples of reconciliation.
 
 The frequency of erroneous links is generally higher and there is barely any evidence of adherence to the logic of the discipline. Some of these maps feature some
 
-![](images/90c858302c36a0f2d89acc298a8dca1b039a8fba970afc6757da2d63bf739524.jpg)  
+![](images/90c858302c36a0f2d89acc298a8dca1b039a8fba970afc6757da2d63bf739524.jpg)
 Fig. 6.6 H.Z.'s first map
 
 rather confused nodes. If we take the maps drawn by pupil, H.Z., (see Figs. 6.6 and 6.7) we are able to observe that although all 25 concepts are present in the second concept map, 6 of the 24 links are incorrect. What is more, the concepts are not placed on the appropriate level in the hierarchy, nor does the structure of the map reveal a progression from the more inclusive to the more specific.
@@ -1564,7 +1565,7 @@ The above results give us reason to believe that the implementation of the innov
 
 We base this judgment on the criteria used to identify indicators of meaningful learning in the concept maps created by our pupils. The indicators include a considerable increase in the number of concepts used in the post-instruction maps, a significant reduction in errors or inaccurate propositions, increased clarity in the levels of hierarchy and coherence with the inclusivity of the concepts, a decrease in the number of linear chains and confused nodes between concepts and an increase in the progressive differentiations reconciled integratively, all of which clearly reveal the pupils' greater ability to achieve meaningful learning.
 
-![](images/86c6b709837ce0c2623b51a5ea1a052372d25d7d3c56b4ca92eb6867e08b1e65.jpg)  
+![](images/86c6b709837ce0c2623b51a5ea1a052372d25d7d3c56b4ca92eb6867e08b1e65.jpg)
 Fig. 6.7 H.Z's final map
 
 The research also revealed problems in terms of the pupils' lack of ability to reconcile ratio or proportion with that of proportional relationship. They clearly had serious difficulty in identifying the most important inclusive concepts, and this obviously hindered their capacity to establish richer and more reconciled progressive differentiations. In our view, however, it is important to note that the implementation of a theoretically grounded instructional module in a standard classroom setting gave a group of pupils the opportunity to learn about the topic of proportionality in a more meaningful manner.
@@ -1579,30 +1580,30 @@ Acknowledgements The above research, which was carried out within the framework 
 
 # References
 
-Afamasaga-Fuata'i, K. (2004). Concept maps and vee diagrams as tools for learning new mathematics topics. *Concept maps: Theory, methodology, technology*, CMC 2004 (pp. 13-20). Pamplona, Spain.  
-Ausubel, D. P., Novak, J. D., & Hanesian, H. (1976). Psicología educativa. Un punto de vista.  
-Azcarate, C., & Deulofeu, J. (1990). Funciones y gramicas. Madrid: Editorial Sintesis.  
-Ben-Chaim, D., Fey, J. T., Fitzgerald, W. M., Benedetto, C., & Miller, J. (1998). Proportional reasoning among 7th grade students with different curricular experiences. Educational Studies in Mathematics, 36, 247-273.  
-Caldwell, W.H., Al-Rubae, F., Lipkin, L., Caldwell, D. F., & Campese, M. (2006). Developing a concept mapping approach to mathematics achievement in middle school. In A. J. Canas & J. D. Novak (Eds.), Concept maps: Theory, methodology, technology, CMC 2006 (pp. 170-176). San José, Costa Rica: Universidad de Costa Rica.  
-Esteban, P. V., Vasco, E. D., & Bedoya, J. A. (2006). Los Mapas Conceptuales en las Fases de Aprendizaje del Modelo Educativo de Van Hiele. In A. J. Canas & J. D. Novak (Eds.), *Concept maps: Theory, methodology, technology*, CMC 2006 (pp. 383-390). San José, Costa Rica: Universidad de Costa Rica.  
-Fiol, M. L., & Fortune, J. M. (1990). Proportionalidad directa. La forma y el número. Madrid: Editorial Sintesis.  
-Freudenthal, H. (1983). Didactical phenomenology of mathematical structures. Dordrecht: Reidel Publishing Company.  
-González, F. M. (1997). Evidence of rote learning of science by Spanish university students. School Science and Mathematics, 97(8), 419-428.  
-González, F. M., & Canas, A. (2003). GONCA Project: Meaningful learning using CMapTools. Advances in technology-based education: Toward a knowledge-based society (pp. 747-750). Badajoz, Spain.  
-Guruceaga, A., & González, F. M. (2004). Aprendizaje significativo y Educación Ambiental: análisis de los resultados de una practica fundamental de teorificamente. Enseñanza de las Ciencias, 22(1), 115-136.  
-Guzmán, M., & Gil, D. (1993). Enseñanza de las Ciencias y la Matematica. Madrid: Editorial Popular S.A.  
-Huerta, M. P. (2006). La evaluación de Mapas Conceptuales Multidimensionales de Matemáticas: Aspectos Metodólicos. In A. J. Canas & J. D. Novak (Eds.), *Concept maps: Theory, methodology, technology*, CMC 2006 (pp. 319–326). San José, Costa Rica: Universidad de Costa Rica.  
+Afamasaga-Fuata'i, K. (2004). Concept maps and vee diagrams as tools for learning new mathematics topics. *Concept maps: Theory, methodology, technology*, CMC 2004 (pp. 13-20). Pamplona, Spain.
+Ausubel, D. P., Novak, J. D., & Hanesian, H. (1976). Psicología educativa. Un punto de vista.
+Azcarate, C., & Deulofeu, J. (1990). Funciones y gramicas. Madrid: Editorial Sintesis.
+Ben-Chaim, D., Fey, J. T., Fitzgerald, W. M., Benedetto, C., & Miller, J. (1998). Proportional reasoning among 7th grade students with different curricular experiences. Educational Studies in Mathematics, 36, 247-273.
+Caldwell, W.H., Al-Rubae, F., Lipkin, L., Caldwell, D. F., & Campese, M. (2006). Developing a concept mapping approach to mathematics achievement in middle school. In A. J. Canas & J. D. Novak (Eds.), Concept maps: Theory, methodology, technology, CMC 2006 (pp. 170-176). San José, Costa Rica: Universidad de Costa Rica.
+Esteban, P. V., Vasco, E. D., & Bedoya, J. A. (2006). Los Mapas Conceptuales en las Fases de Aprendizaje del Modelo Educativo de Van Hiele. In A. J. Canas & J. D. Novak (Eds.), *Concept maps: Theory, methodology, technology*, CMC 2006 (pp. 383-390). San José, Costa Rica: Universidad de Costa Rica.
+Fiol, M. L., & Fortune, J. M. (1990). Proportionalidad directa. La forma y el número. Madrid: Editorial Sintesis.
+Freudenthal, H. (1983). Didactical phenomenology of mathematical structures. Dordrecht: Reidel Publishing Company.
+González, F. M. (1997). Evidence of rote learning of science by Spanish university students. School Science and Mathematics, 97(8), 419-428.
+González, F. M., & Canas, A. (2003). GONCA Project: Meaningful learning using CMapTools. Advances in technology-based education: Toward a knowledge-based society (pp. 747-750). Badajoz, Spain.
+Guruceaga, A., & González, F. M. (2004). Aprendizaje significativo y Educación Ambiental: análisis de los resultados de una practica fundamental de teorificamente. Enseñanza de las Ciencias, 22(1), 115-136.
+Guzmán, M., & Gil, D. (1993). Enseñanza de las Ciencias y la Matematica. Madrid: Editorial Popular S.A.
+Huerta, M. P. (2006). La evaluación de Mapas Conceptuales Multidimensionales de Matemáticas: Aspectos Metodólicos. In A. J. Canas & J. D. Novak (Eds.), *Concept maps: Theory, methodology, technology*, CMC 2006 (pp. 319–326). San José, Costa Rica: Universidad de Costa Rica.
 Lesh, R., Post, T., & Behr, M. (1988). Proportional reasoning. Numbers concepts and operations in the middle grades (pp. 93-118). NCTM. Reston, VA: Erlbaum.
 
-Nesher, P., & Sukenik, M. (1989). Intuitive and formal learning of ratio concepts. Proceedings of the 13th annual conference of the international group for the psychology of mathematics education (pp. 33-40). Paris, France.  
-Novak, J. D. (1982). Teoria y practica de la educación. Madrid: Alianza Editorial S.A.  
-Novak, J. D. (1988). Constructivismo humano: un consenso emergente. Enseñanza de las Ciencias, 6(3), 213-223.  
-Novak, J. D. (1998). Conocimiento y aprendizaje. Madrid: Alianza Editorial S.A.  
-Perez, R. (2006). Mapas conceptuales y Aprendizaje de Matemáticas. Concept maps: Theory, methodology, technology, CMC 2006 (pp. 407-414). San José, Costa Rica: Universidad de Costa Rica.  
-Piaget, I., & Inhelder, B. (1972). De la lógica del niño a la lógica del adolescente. Buenos Aires: Paidós.  
-Rapetti, M. V. (2003, Noviembre). Proporcionalidad. Razones internas y razones externas. Suma, 44, 65-70.  
-Rico, L. (2005). Competencias matematicas e instrumentos de evaluacion en el estudio PISA 2003. PISA 2003. Madrid: INECSE. Ministerio de Educacion y Ciencia.  
-Schmittau, J., & Vagliardo, J. J. (2006). Using concept mapping in the development of the concept of positional system. *Concept maps: Theory, methodology, technology*, CMC 2006 (pp. 590-597). San José, Costa Rica: Universidad de Costa Rica.  
+Nesher, P., & Sukenik, M. (1989). Intuitive and formal learning of ratio concepts. Proceedings of the 13th annual conference of the international group for the psychology of mathematics education (pp. 33-40). Paris, France.
+Novak, J. D. (1982). Teoria y practica de la educación. Madrid: Alianza Editorial S.A.
+Novak, J. D. (1988). Constructivismo humano: un consenso emergente. Enseñanza de las Ciencias, 6(3), 213-223.
+Novak, J. D. (1998). Conocimiento y aprendizaje. Madrid: Alianza Editorial S.A.
+Perez, R. (2006). Mapas conceptuales y Aprendizaje de Matemáticas. Concept maps: Theory, methodology, technology, CMC 2006 (pp. 407-414). San José, Costa Rica: Universidad de Costa Rica.
+Piaget, I., & Inhelder, B. (1972). De la lógica del niño a la lógica del adolescente. Buenos Aires: Paidós.
+Rapetti, M. V. (2003, Noviembre). Proporcionalidad. Razones internas y razones externas. Suma, 44, 65-70.
+Rico, L. (2005). Competencias matematicas e instrumentos de evaluacion en el estudio PISA 2003. PISA 2003. Madrid: INECSE. Ministerio de Educacion y Ciencia.
+Schmittau, J., & Vagliardo, J. J. (2006). Using concept mapping in the development of the concept of positional system. *Concept maps: Theory, methodology, technology*, CMC 2006 (pp. 590-597). San José, Costa Rica: Universidad de Costa Rica.
 Serrado, A., Cardenoso, J. M., & Azcárate, P. (2004). Los mapas conceptuales y el desarrollo profesional del docente. Concept maps: Theory, methodology, technology, CMC 2004 (pp. 595-602). San José, Costa Rica: Universidad de Costa Rica.
 
 # Chapter 7 Concept Mapping as a Means to Develop and Assess Conceptual Understanding in Secondary Mathematics Teacher Education
@@ -1637,15 +1638,15 @@ In Fig. 7.2, a portion of Janet's map reflects the centrality of the concept of 
 
 In the case of rectangular area, the unit changes from a unit square to a row of such squares, which can then be counted to obtain the area in square units. Janet
 
-![](images/dcd603919702eddad769b6c7cfa875a40b2a4286fdf3123f060b13eb7175db5d.jpg)  
+![](images/dcd603919702eddad769b6c7cfa875a40b2a4286fdf3123f060b13eb7175db5d.jpg)
 (B)
 
-![](images/0dd62a6589076bfbd5d659186a84039d5a96f827e5cc5617cf624246c91d2359.jpg)  
+![](images/0dd62a6589076bfbd5d659186a84039d5a96f827e5cc5617cf624246c91d2359.jpg)
 Fig. 7.1 Janet's (A) and Stephen's (B) maps of the concept of multiplication
 
 also presents area models for the conversion of a sum of terms (polynomial) to a product (factoring) following the methods of Al-Khowarizmi (Karpinski, 1915). Such area models are the conceptual foundation for the completion of the square. The upper model for the solution of the quadratic equation “ $x^2 + 10x = 39$ ” shows Al-Khowarizmi’s method, while the lower model displays the solution using algebra tiles. In his development of algebra 1,000 years ago, Al-Khowarizmi solved this equation by first drawing a square (having dimensions  $x$  by  $x$ ), then dividing 10 by 4, and using the result to add a rectangle of dimensions “ $x$ ” by 2.5 to each side of the
 
-![](images/9c92d0554a8132d8b7da490dd84f51b5b7afd204de3dc5efe035871ba38ce1b9.jpg)  
+![](images/9c92d0554a8132d8b7da490dd84f51b5b7afd204de3dc5efe035871ba38ce1b9.jpg)
 Fig. 7.2 Janet's map showing the historic role of the concept of area in the development of algebra and the factoring of polynomials, and the concept of area underlying the algorithm for the multiplication of fractions
 
 square. There were as yet no algebraic symbols, but since it is cumbersome to use word labels for variables, in my presentation to Janet and Stephen's class, I labeled the length of these four rectangles "x". Al-Khowarizmi then literally completed the square (the new larger square) by adding the four small squares in each corner. Each of these had an area of  $2.5 \times 2.5 = 6.25$ , and since there were four of them, their total area was 25 square units. Now the original equation (again we are using symbols that Al-Khowarizmi lacked) becomes  $x^2 + 10x + 25 = 39 + 25 = 64$ . Since the length of a side of the square is  $x + 5$  and the area of the square is 64, the square has dimensions 8 by 8, and  $x + 5 = 8$ . Hence,  $x$  is 3. (Al-Khowarizmi's geometric method did not permit negative solutions.)
@@ -1664,7 +1665,7 @@ Stephen (Fig. 7.3) states simply that "integer fractions" ... "have the multipli
 
 Finally, the current reform movement in mathematics often advocates that teaching go no further than the use of manipulatives, and then allow students to "construct" their own algorithms (Morrow & Kenney, 1998). There is, however, no certainty that such student constructed algorithms will be correct. It is essential, therefore, that the powerful culturally and historically constructed algorithms be connected with their conceptual content and these understandings be mediated to learners. Abandoning the teaching of such general methods in favor of dealing only with "concepts" relegates procedural knowledge further to the rote end of the
 
-![](images/95cbec883ca73340da640123b7335cb42b60faa1220757f1ee3b26c17b870e30.jpg)  
+![](images/95cbec883ca73340da640123b7335cb42b60faa1220757f1ee3b26c17b870e30.jpg)
 Fig. 7.3 Stephen's map showing a formalistic understanding of fraction multiplication
 
 meaningful-rote learning continuum (Novak & Gowin, 1984), reducing it to little more than a memorized sequence of calculator keys. Janet's map, however, reveals that she is aware of the conceptual and procedural development of multiplication in the historical progression of mathematical knowledge, and furthermore, possesses the pedagogical content knowledge necessary to teach it effectively to students.
@@ -1675,7 +1676,7 @@ In the model showing containers of charged particles, Janet first shows  $+2(-3)
 
 ![](images/c7941addd073850936176d89b7d4ba428169b87a26ef11a33b1b60014ac1b4d6.jpg)
 
-![](images/ed8b0de684b435fc73093faff33dbebac4b1d64ba002455d01545060c95ff99f.jpg)  
+![](images/ed8b0de684b435fc73093faff33dbebac4b1d64ba002455d01545060c95ff99f.jpg)
 Fig. 7.4 Janet's (A) and Stephen's (B) differing understandings of the multiplication of two negatives
 
 Accordingly, Janet's map shows a real understanding of the conceptual connections I presented to her class, linking the product of two negatives to the complex number system. Her map displays a linkage from negative numbers to the product “ $(-1)(-1) = 1$ ” which is linked to multiplication of “complex numbers” and “represented by a rotation” shown in the complex plane. This is the actual inception of
@@ -1698,19 +1699,19 @@ Acknowledgements My thanks to James J. Vagliardo for his expert assistance in di
 
 # References
 
-Davydov, V. V. (1990). Types of generalization in instruction: Logical and psychological problems in the structuring of school curricula. Reston, VA: National Council of Teachers of Mathematics.  
-Davydov, V. V. (1992). The psychological analysis of multiplication procedures. *Focus on Learning Problems in Mathematics*, 14(1), 3-67.  
+Davydov, V. V. (1990). Types of generalization in instruction: Logical and psychological problems in the structuring of school curricula. Reston, VA: National Council of Teachers of Mathematics.
+Davydov, V. V. (1992). The psychological analysis of multiplication procedures. *Focus on Learning Problems in Mathematics*, 14(1), 3-67.
 Karpinski, L. C. (1915). Robert of Chester's Latin translation of the algebra of Al-Khowarizmi. New York: Macmillan.
 
-Morrow, L. J. (1998). Whither algorithms? Mathematics educators express their views. In L. J. Morrow & M. J. Kenney (Eds.), The teaching and learning of algorithms in school mathematics (pp. 1-6). Reston, VA: National Council of Teachers of Mathematics.  
-Morrow, L. J., & Kenney, M. J. (Eds.) (1998). The teaching and learning of algorithms in school mathematics. Reston, VA: National Council of Teachers of Mathematics.  
-National Council of Teachers of Mathematics. (1989). Curriculum and evaluation standards for school mathematics. Reston, VA: Author.  
-National Council of Teachers of Mathematics. (2000). Principles and standards for school mathematics. Reston, VA: Author.  
-Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. New York: Cambridge University Press.  
-Schmidt, W., Houang, R., & Cogan, L. (2002). A coherent curriculum: The case of mathematics. The American Educator, 26(2), 10-26.  
-Schmittau, J. (2003). Cultural-historical theory and mathematics education. In A. Kozulin, B. Gindis, S. Miller, & V. Ageyev (Eds.), Vygotsky's educational theory in cultural context (pp. 225-245). New York: Cambridge University Press.  
-Schmittau, J. (2004). Vygotskian theory and mathematics education: Resolving the conceptual-procedural dichotomy. European Journal of Psychology of Education XIX(1), 19-43.  
-Vygotsky, L. S. (1986). Thought and language. Cambridge, MA: MIT Press.  
+Morrow, L. J. (1998). Whither algorithms? Mathematics educators express their views. In L. J. Morrow & M. J. Kenney (Eds.), The teaching and learning of algorithms in school mathematics (pp. 1-6). Reston, VA: National Council of Teachers of Mathematics.
+Morrow, L. J., & Kenney, M. J. (Eds.) (1998). The teaching and learning of algorithms in school mathematics. Reston, VA: National Council of Teachers of Mathematics.
+National Council of Teachers of Mathematics. (1989). Curriculum and evaluation standards for school mathematics. Reston, VA: Author.
+National Council of Teachers of Mathematics. (2000). Principles and standards for school mathematics. Reston, VA: Author.
+Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. New York: Cambridge University Press.
+Schmidt, W., Houang, R., & Cogan, L. (2002). A coherent curriculum: The case of mathematics. The American Educator, 26(2), 10-26.
+Schmittau, J. (2003). Cultural-historical theory and mathematics education. In A. Kozulin, B. Gindis, S. Miller, & V. Ageyev (Eds.), Vygotsky's educational theory in cultural context (pp. 225-245). New York: Cambridge University Press.
+Schmittau, J. (2004). Vygotskian theory and mathematics education: Resolving the conceptual-procedural dichotomy. European Journal of Psychology of Education XIX(1), 19-43.
+Vygotsky, L. S. (1986). Thought and language. Cambridge, MA: MIT Press.
 Wu, H. (1999). Basic skills versus conceptual understanding: A bogus dichotomy in mathematics education. American Educator, Fall Issue, 1-7.
 
 # Chapter 8 Concept Mapping a Teaching Sequence and Lesson Plan for "Derivatives"
@@ -1759,11 +1760,11 @@ It seems that whilst learning to concept map, Bobby realized for himself that "t
 
 Elaborating further, Bobby proposed yet another dimension namely the "focus" of the map. He wrote: "By this term I mean the 'qualitative nature' of the map - Is it concrete in nature so that it's usefulness lies in teaching a student to solve a particular mathematics problem; or is it descriptive in nature providing an abstract summary of a topic?" However, sharing and discussing these reflections later on in class clarified further for Bobby the need to explicate the intended purpose and specific focus of a map, often a common point of confusion when learning to concept map for the first time. That is, explicating the purpose and focus of map first ensures the appropriate selection of concepts, hierarchical organization and suitable linking of relevant nodes to enhance the map's overall cohesiveness and
 
-Table 8.1 Student's perceptions of "dimensions" of a concept map  
+Table 8.1 Student's perceptions of "dimensions" of a concept map
 
 <table><tr><td>Knowledge construction</td><td>Prior-knowledge construct mapa</td><td>Best description mapb</td></tr><tr><td>Verb-type</td><td>(1) Represented by pseudo-algorithm to draw concept map – such as choosing key concepts and possible links.</td><td>(2) Represented by a plan to re-arrange the prior-knowledge construct map to best solve current problem.</td></tr><tr><td>Noun-type</td><td>(2) Final copy of concept map that accurately represents “what is in mapper’s head”.</td><td>(3) Final copy of concept map, which may represent a solution to a mathematics problem or a teacher’s unit/lesson plan.</td></tr></table>
 
-${}^{a}$  Already existing and may be primitive or erudite but exists and must be discovered.  
+${}^{a}$  Already existing and may be primitive or erudite but exists and must be discovered.
 <sup>b</sup>Varies depending on the nature of the problem; i.e. is it a mathematics problem to be solved; or a content summary of a topic of study by a teacher?
 
 meaningfulness. For example, a concept map of a mathematics problem (Type 1) illustrates the conceptual structure embodied by the problem and underpinning its solution whilst a topic concept map (Type 2) illustrates the conceptual and epistemological structure of the key ideas (i.e. mathematics concepts and principles) relevant to the topic. As a consequence of such qualitative distinctions, Type 1 map would be more contextualised and situated in contrast to the more general overview and abstract Type 2 ones.
@@ -1780,10 +1781,10 @@ Instead of designing a teaching sequence directly from syllabus notes, Bobby fir
 
 Shown in Figs. 8.1 and 8.2 are Bobby's first two overview concept maps illustrating some of his organisational hierarchies to depict differentiating levels of generality (i.e. Level #) from the most general concepts to progressively more specific concepts towards the bottom of map.
 
-![](images/ee0b3868d2538fd5ac8c7a59e00f4453da8815f23431a21e9019ecfc90b2f89a.jpg)  
+![](images/ee0b3868d2538fd5ac8c7a59e00f4453da8815f23431a21e9019ecfc90b2f89a.jpg)
 Fig. 8.1 Year 11 overview concept map
 
-![](images/afeeff7c2ef0e3f4963c54b7335ae936fee03076c491bd649a9a5de7032a4cd3.jpg)  
+![](images/afeeff7c2ef0e3f4963c54b7335ae936fee03076c491bd649a9a5de7032a4cd3.jpg)
 Fig. 8.2 Year 12 overview concept map
 
 For example, Fig. 8.1 is an overview of Year 11 Mathematics (at Level 1) that is subsumed under 3 main concepts namely “(A) Building Blocks of Functions”, “(B) Real Functions”, and “(C) Examples of Functions” at Level 2, with the order A, B, and C indicating a preferred teaching sequence. Relevant to the topic “Derivatives” is the middle branch subsumed under the Level 2 node: “(B) Real Functions” with a triple-branching link connecting to 3 less general concepts (at Level 3) namely “I. Foundations”, “II. The Slope Problem” and “III. Introduction: Product, Quotient and Chain Rule”. Again, the ordering I, II, and III suggests that (I) is the required prior knowledge to the topic “Derivatives” embodied by the middle “II. The Slope Problem” sub-branch (marked *). Similarly, the adjacent “(A) Building Blocks of Functions” branch on the left and the adjacent “(C) Examples of Functions” branch to the right, could be likewise read from top to bottom.
@@ -1794,7 +1795,7 @@ comprises 3 sub-strandsI. Coordinate Geometry, II. Calculus and III. Transcenden
 
 From the "II. Calculus" node is a progressive differentiation double-link to connect to the two terminal nodes "1. Geometric Applications of Differentiation" and "2. Integration" but with no linking words. Situated within the other calculus-related sub-branch (marked **) subsumed under the node: "HSC (3 Unit) Mathematics Extension I topics/units" is the proposition (P2): "1. Applications of Calculus to the Physical World comprises 5 units: (1) Related Rates, (2) Growth and Decay, (3) Rectilinear Motion, (4) Simple Harmonic Motion, and (5) Motion of Projectiles". In fact, Fig. 8.2 clearly depicts the nested structure of HSC 2 Unit Mathematics topics within HSC 3 Unit Mathematics and showing that HSC 3 Unit extends topics initially encountered in HSC 2 Unit Mathematics. This inter-relationship is schematically shown by the left-to-right order of the Level 6 concept hierarchies in Fig. 8.2.
 
-Collectively reading from the two maps, Fig. 8.1's middle branch, from left-to-right illustrates the syllabus' expectation and Bobby's plan that the topic "Derivatives" would be introduced via "II. The Slope Problem" (marked *) through secants, tangents, limits and differentials (marked *).
+Collectively reading from the two maps, Fig. 8.1's middle branch, from left-to-right illustrates the syllabus' expectation and Bobby's plan that the topic "Derivatives" would be introduced via "II. The Slope Problem" (marked *) through secants, tangents, limits and differentials (marked*).
 
 In comparison, Fig. 8.2 provides a more general overview of this sequencing of topics but situated within Year 12 HSC 2 Unit Mathematics (i.e. "1. Coordinate Geometry" to be covered prior to "II. Calculus") and including clear distinctions of topics covered as applications of calculus to the physical world within HSC (3 Unit) Mathematics (marked **). Following on from this general overview of Years 11-12 Mathematics courses, Bobby developed a detailed concept map to illustrate a more developmental approach to "Derivatives" which explicitly builds upon students' prior knowledge of gradients of linear graphs by elaborating further the meaning of the terminal node: "Secants, Limits, Tangents and Derivatives" of Fig. 8.1 (marked #). This process is briefly described next.
 
@@ -1818,7 +1819,7 @@ These sub-topics (Fig. 8.3) eventually formed the basis of Bobby's topic concept
 
 Specifically, the leftmost branch indicates the prior knowledge ("(1) The 2-Point Method" branch) described in the syllabus students require before being introduced to the derivative concept. Emanating from the "(1) The 2-Point Method" node is
 
-![](images/a13bf50f20a9edbe85c51e10d883940a4be63390146a0eda7ebd39b2914ab002.jpg)  
+![](images/a13bf50f20a9edbe85c51e10d883940a4be63390146a0eda7ebd39b2914ab002.jpg)
 Fig. 8.4 Topic "formal definition of derivatives" concept map
 
 a split-link that generates propositions: (P3): “(1) The 2-Point Method for finding the gradient of: (a) straight lines” and (P4): “The 2-Point Method for finding the gradient of: (b) Secants (8.3)” where 8.3 is a reference to syllabus notes, Section 8.3 (NSW BOS, 2002, p. 50) and the first of the 5 sub-topics listed in Fig. 8.3.
@@ -1845,7 +1846,7 @@ The "OPENING" part of the lesson-concept-map (Fig. 8.5) progressively differenti
 
 Subsumed under the "Introduction" node is the same titular node ("Secants, limits, tangents and derivatives", marked **), seen before in the teaching-sequence-concept-map (Fig. 8.4), which signifies the focus of the lessons. Overall, the
 
-![](images/12db00f2cc1ade959ccbbdcce3cbea6cb556f7bd3083836914e8f31d7989980d.jpg)  
+![](images/12db00f2cc1ade959ccbbdcce3cbea6cb556f7bd3083836914e8f31d7989980d.jpg)
 Fig. 8.5 Partial lesson 1 concept map (OPENING)
 
 "OPENING" branch illustrates Bobby's pedagogical intention for the first part of Lesson 1, which begins with short questions followed by homework checking before the introduction. As for the "BODY" branch to the right, the double link indicates "Part 1: 2 Point Method" and "Part 2: The Limiting Process" nodes. Again, the sequence from left-to-right echoes that displayed on the teaching-sequence-concept map (Fig. 8.4), in terms of the intended instructional order. Further details of the two sub-branches are in Figs. 8.6 and 8.7.
@@ -1854,19 +1855,19 @@ Fig. 8.6 details "Part 1: '2-Point Method' for straight lines" of the "BODY" bra
 
 A comparison between the 2-Point Method branches of Figs. 8.4 and 8.6 shows that the latter, unlike the more macro view of Fig. 8.4, is more contextualised, as expected, with actual examples at the lesson level. For example, displayed in Fig. 8.6 are examples of points, functions and gradients and a description of Bobby's expectations of students' written record. These represent example questions Bobby planned to utilise to consolidate students' understanding of gradients of straight lines and the transfer of this understanding to a secant of a curve. Overall, this
 
-![](images/a6b5a01210313790fa9189609f90c3f0136d0e22aaab07023ba97f20f17b3301.jpg)  
+![](images/a6b5a01210313790fa9189609f90c3f0136d0e22aaab07023ba97f20f17b3301.jpg)
 Fig. 8.6 Partial lesson 1 concept map (BODY Part 1)
 
 sub-branch focussed on the development and establishment of students' understanding of the gradients of secants of curves.
 
 Elaborated further in Fig. 8.7 is the "Part 2: The Limiting Process" branch, which in addition to providing the two views (geometric and algebraic) similar to that displayed in the topic-sequence-concept-map (Fig. 8.4), it also includes the same component-sequence and various examples (similar to Fig. 8.6) and details of an investigative activity on finding the numerical limit of the gradient of a secant. Overall, the "geometric" sub-branch expanded the concept of a single secant to include a parade of them to illustrate geometrically the two cases of:  $\mathrm{Q} \rightarrow \mathrm{P}$  and  $\mathrm{Q} \rightarrow \mathrm{R}$ .
 
-![](images/a76fbb67116df68205a4ee1b16a5c006f1d6bc4ddd6c72b1c7cc9c098d5976e9.jpg)  
+![](images/a76fbb67116df68205a4ee1b16a5c006f1d6bc4ddd6c72b1c7cc9c098d5976e9.jpg)
 Fig. 8.7 Partial lesson plan 1 concept map (BODY Part 2)
 
 The adjacent "algebraic" sub-branch, in contrast, displays Bobby's intention to develop the concept of the numerical limit of a secant gradient as the secant moves to its limiting position (i.e. as  $\mathrm{Q} \to \mathrm{P}$ ) as well as introduce the concept of a differential coefficient at  $x = c$ . The adjacent lesson-components: "Worked Example" and
 
-![](images/59f39607a3599b631235445f36455e11b256c7f129bfd6a3ee74836f89e636ee.jpg)  
+![](images/59f39607a3599b631235445f36455e11b256c7f129bfd6a3ee74836f89e636ee.jpg)
 Fig. 8.8 Partial Lesson 1 concept map (CLOSING)
 
 "Written Record" provide the opportunity for students to engage with a worked example and then record their own understanding of the "limit process" before engaging with the investigative activity shown in Fig. 8.7.
@@ -1883,7 +1884,7 @@ Whilst the concept map for Lesson 2 is not shown here, that for Bobby's plan to 
 
 The map illustrates both the objectives and outcomes and his general plan for assessment. The "Objectives" branch illustrates that students should feel confident about the underlying concepts of the formal definition of derivatives and Bobby's plan to have students construct a concept map to demonstrate their understanding of the key and subsidiary concepts as briefly described in the terminal node of the branch. The "Outcomes" branch to the right, on the other hand, shows four nodes at Level 3, which briefly describe the four key ideas, covered in the two lessons from left-to-right. Whereas the first two nodes display the key ideas developed in Lesson 1 (Figs. 8.5, 8.6, 8.7 and 8.8), the last two nodes represent the focus of Lesson 2 (not shown). Subsequent links to Level 4 connect to the nodes: "2 Point method", "The limiting process" and "The identity  $\mathrm{u} = \mathrm{x} + \Delta \mathrm{x}$  and the three corresponding substitutions" before cross-linking to the Level 5 node: "Half-hour test", which indicates the second means of assessing students' understanding of derivatives.
 
-![](images/eba8fba8303ea610e988ef422fcd228f127c4267abc0672bd98055ced5f394ec.jpg)  
+![](images/eba8fba8303ea610e988ef422fcd228f127c4267abc0672bd98055ced5f394ec.jpg)
 Fig. 8.9 Lesson assessment concept map
 
 # Discussion
@@ -1930,16 +1931,16 @@ Acknowledgments This research study was made possible by a research grant from t
 
 # References
 
-Afamasaga-Fuata'i, K. (2004a). Concept maps and vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & Gonázales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the First International Conference on Concept Mapping September 14-17, 2004 (pp. 13-20). Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.  
-Afamasaga-Fuata'i, K. (2004b). An undergraduate's understanding of differential equations through concept maps and vee diagrams. In A. J. Canas, J. D. Novak & Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the First International Conference on Concept Mapping September 14-17, 2004 (pp. 21-29). Dirección de Publicaciones de la Universidad Pública de Navarra, Spain.  
-Afamasaga-Fuata'i, K. (2005). Students' conceptual understanding and critical thinking? A case for concept maps and vee diagrams in mathematics problem solving. In M. Coupland, J., Anderson, & T. Spencer (Eds.), Making Mathematics Vital. Proceedings of the Twentieth Biennial Conference of the Australian Association of Mathematics Teachers (AAMT) (pp. 43-52). January 17-21, 2005. University of Technology, Sydney, Australia: AAMT.  
-Afamasaga-Fuata'i, K. (2006). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping and vee diagrams. FOCUS on Learning Problems in Mathematics, 28(3 and 4), 58-89.  
-Afamasaga-Fuata'i, K. (2007). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson & K. Beswick, (Eds.), Mathematics: Essential Research, Essential Practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania, Australia: MERGA.  
+Afamasaga-Fuata'i, K. (2004a). Concept maps and vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & Gonázales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the First International Conference on Concept Mapping September 14-17, 2004 (pp. 13-20). Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.
+Afamasaga-Fuata'i, K. (2004b). An undergraduate's understanding of differential equations through concept maps and vee diagrams. In A. J. Canas, J. D. Novak & Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the First International Conference on Concept Mapping September 14-17, 2004 (pp. 21-29). Dirección de Publicaciones de la Universidad Pública de Navarra, Spain.
+Afamasaga-Fuata'i, K. (2005). Students' conceptual understanding and critical thinking? A case for concept maps and vee diagrams in mathematics problem solving. In M. Coupland, J., Anderson, & T. Spencer (Eds.), Making Mathematics Vital. Proceedings of the Twentieth Biennial Conference of the Australian Association of Mathematics Teachers (AAMT) (pp. 43-52). January 17-21, 2005. University of Technology, Sydney, Australia: AAMT.
+Afamasaga-Fuata'i, K. (2006). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping and vee diagrams. FOCUS on Learning Problems in Mathematics, 28(3 and 4), 58-89.
+Afamasaga-Fuata'i, K. (2007). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson & K. Beswick, (Eds.), Mathematics: Essential Research, Essential Practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania, Australia: MERGA.
 Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht; Boston: Kluwer Academic Publishers.
 
-Bobis, J., Mulligan, J., & Lowrie, T. (2004). Mathematics for children. Challenging children to think mathematically. Australia: Pearson Prentice Hill.  
-Cobb, P., Confrey, J., diSessa, A., Lehrer, R., & Schauble, L. (2003). Design experiments in educational research. Educational Researcher, 32(1), 9-13.  
-New South Wales Board of Studies (NSW BOS) (2002). Mathematics K-6 Syllabus 2002.  
+Bobis, J., Mulligan, J., & Lowrie, T. (2004). Mathematics for children. Challenging children to think mathematically. Australia: Pearson Prentice Hill.
+Cobb, P., Confrey, J., diSessa, A., Lehrer, R., & Schauble, L. (2003). Design experiments in educational research. Educational Researcher, 32(1), 9-13.
+New South Wales Board of Studies (NSW BOS) (2002). Mathematics K-6 Syllabus 2002.
 Novak, J. D. (2004). A science education research program that led to the development of the concept mapping tool and new model for education. In A. J. Canas, J. D. Novak, & Gonázales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the First International Conference on Concept Mapping September 14–17, 2004 (pp. 457–467). Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.
 
 # Chapter 9 Curricular Implications of Concept Mapping in Secondary Mathematics Education
@@ -1984,10 +1985,10 @@ The account of the mathematical consideration Napier used in defining a logarith
 
 This historical sampling of mathematical thought reveals the setting, motivation, and approach that made the discovery of logarithms possible. The intent of historical reference is to have a sense of what John Napier knew at the time of his discovery.
 
-![](images/c2481a057ab5533a1651cf57afff03841ff71ce4ee4b1e7a77b2ed63827a8629.jpg)  
+![](images/c2481a057ab5533a1651cf57afff03841ff71ce4ee4b1e7a77b2ed63827a8629.jpg)
 Fig. 9.1 John Napier's development of the logarithm concept
 
-![](images/dfe686636f61b8f0700e8ee2913d24c0bbd8049074007eac72136194b166370d.jpg)  
+![](images/dfe686636f61b8f0700e8ee2913d24c0bbd8049074007eac72136194b166370d.jpg)
 Fig. 9.2 The view of mathematics attributed to Pythagoras
 
 Access to his understandings sharpens the focus of our own as we consider the true nature of what he revealed to the scientific world. The cultural historical approach to the appropriation of knowledge is dependent on such considerations. Significant is the realization that it is only through this historical lens that the true essence of the scientific thought can be understood. In the case of the logarithm, evidence serves to inform us that, motivated by computational efficiency, Napier provided a theoretical link between the worlds of geometry and arithmetic. This novel generalization provided fertile territory for new development, practical and theoretical.
@@ -2000,7 +2001,7 @@ Based on historical reference, a logarithm is a mapping between number sequences
 
 As is often the case, theoretical development leads to new technology. The new technology is applied to practical matters and simultaneously enables related theoretical development. The logarithm gave scientists a new conceptualization that proved immensely valuable in their effort to describe properties of the physical world using the language of mathematics. It should be noted here that the theoretical explanation found in the Mirifici, though completely consistent with calculus, was written prior to the existence of calculus. Points P and Q, moving along at different rates in Fig. 9.1,
 
-![](images/e5a467396354b83cf0a510c2c3b5446456aff7a45a31ebcba77a90e3e393b856.jpg)  
+![](images/e5a467396354b83cf0a510c2c3b5446456aff7a45a31ebcba77a90e3e393b856.jpg)
 Fig. 9.3 Concept map of logarithm showing the historical conceptual crosslink, genesis of a new mathematical idea
 
 PB decreasing in geometric progression while CQ increases in arithmetic progression, would necessarily fall in the jurisdiction of the mathematics of change, namely calculus. Napier's geometric representation defined logarithms in kinetic terms and foreshadowed their significance in the development of calculus. Therefore it is not surprising that we find logarithms along side other transcendental functions in every modern calculus text. What you do not find in the Mirifici is any mention of logarithms as exponents. Bernoulli and others recognized this connection toward the end of the 17th century. "One of the anomalies in the history of mathematics is that logarithms were discovered before exponents were in use." (Eves, 1969).
@@ -2009,7 +2010,7 @@ In a sense, Fig. 9.3 represents all that was known about logarithms in 1619. Con
 
 Figure 9.4 incorporates the cultural historical perspective as the central structure of a more detailed map of the logarithm concept. Generally, concepts arranged on
 
-![](images/5a77f43550d66c22b9bc4500165c5cec67e8a232d309deec4e9e84ca363f5941.jpg)  
+![](images/5a77f43550d66c22b9bc4500165c5cec67e8a232d309deec4e9e84ca363f5941.jpg)
 Fig. 9.4 A concept map of logarithm with a cultural historical perspective as its central structure
 
 the left are more strongly associated with the arithmetic notions and those on the right more geometric in nature. Practical uses appear on the left and theoretical connections on the right. It is interesting to note that the exponent emerges with such prominence in the map even though the concept was unknown when the logarithm relationship was first recognized. The same is true for the calculus related content. It too is well represented in the map though it had not yet been developed. This suggests the importance of cultural historical considerations in curriculum development. The concept exists without reference to these later developments.
@@ -2026,7 +2027,7 @@ For students in this study, the ability to reason mathematically and problem sol
 
 Teachers (Fig. 9.5) variously describe a logarithm as: “a number,” “a symbol,” “a type of notation,” “a function,” “a different language,” and “an exponent.” This metonymy makes no mention of the essential characteristic, the mapping between
 
-![](images/d05e4fc05b9a21e756f9c54cf08ae4666a34fc91426745ed2975257227274e9d.jpg)  
+![](images/d05e4fc05b9a21e756f9c54cf08ae4666a34fc91426745ed2975257227274e9d.jpg)
 Fig. 9.5 Composite concept map of teachers' characterizations of a logarithm
 
 geometric and arithmetic sequences. The primary understanding of teachers in this study is that a logarithm is an exponent. This is a central theme in their efforts to teach students this concept. The awkward and somewhat nebulous statement that "a logarithm is an exponent that you raise the base to to get a number" is often abbreviated to "a logarithm is an exponent." The statement is highlighted, underlined, and made the key idea in logarithm chapters of each of the twelve textbooks investigated as part of this study. The statement doubly masks the essence of a logarithm and fails to provide the conceptual connection that would make sense of both practical and theoretical applications.
@@ -2041,7 +2042,7 @@ The map in Fig. 9.6 was created from the map in Fig. 9.4 by removing anything no
 
 Note that the critical core, the essence of a logarithm, is missing. The laws of logarithms and their use in solving exponential equations remain. Of the scientific applications seen in Fig. 9.4, only pH and natural decay are cited. The student map reveals the limited nature of understanding and accounts for the inadequacy of
 
-![](images/cee999f03128d9b755aef5c49bbef86ddf4b04d0567c3f510d2e7306b11b726a.jpg)  
+![](images/cee999f03128d9b755aef5c49bbef86ddf4b04d0567c3f510d2e7306b11b726a.jpg)
 Fig. 9.6 Concept map of logarithm from students' perspective
 
 mathematical reasoning expressed in interviews. How are students to understand the significance of reports of seismographic activity, for example? Will comparisons of 1.1 and 2.2 on the Richter scale be incorrectly interpreted as an earthquake of double intensity, when in fact the increase is tenfold due to the logarithmic nature of the scale? What sense will students make of Mandelbrot's (1977) work on fractals when the formula to determine fractal dimensions depends on logarithms? How will students read with wonder, Bronowsky's (1973) eloquent description of Ludwig Boltzmann's formula  $S = K \log W$ , entropy is in direct proportion to the logarithm of  $W$ , the probability of a given state. It was this formula that settled the theoretical debate over the existence of atoms and made possible current advancements in physics and biology.
@@ -2066,7 +2067,7 @@ Figure 9.7 displays points moving along two lines, points which left their start
 
 The diagram is similar to Napier's original, differing only in that the points on line 1 are accelerating (Napier's decelerated) and that the points have been carefully constructed so that the constant movement of a point along line 2 is accompanied by a point on line 1 that is doubling its distance from starting position. Students do not need to know this since it is the intent of the lesson to work with the concept
 
-![](images/58a9827b175453d38652dd4cf21aa7464bfa63df51d4c0e73d1cca2a45c0c074.jpg)  
+![](images/58a9827b175453d38652dd4cf21aa7464bfa63df51d4c0e73d1cca2a45c0c074.jpg)
 Fig. 9.7 Points moving along two lines
 
 of logarithm in the abstract. The doubling metric will allow students to later ascend from this abstraction to the concrete where any acceleration rate will be easy to understand since they will be simple instantiations of the correct abstraction. The base 2 logarithms used will also allow an easy bridge to the computational lesson that follows. The lesson should proceed with students considering the differences they recognize in points along line 1 versus those along line 2. It should become apparent that the distances are growing rapidly along line 1 and steadily along line 2. Connections to previous student understanding of arithmetic and geometric sequences, can be accented. The discussion should lead to defining the logarithm of the distance a point has moved along line 1, as the distance that the corresponding point has moved along line 2. That is to say, the logarithm of distance PQ is distance  $\mathrm{P}^{\prime}\mathrm{Q}^{\prime}$  in Fig. 9.1. This is not quite the same definition Napier gave us, but similarly captures the essence of a logarithm and may more clearly introduce students to the concept in a substantive and mindful way. For those students who ask "So what?" the argument can be made at this stage that the points along line 1 will soon accelerate out of sight but their corresponding points will still be visible along line 2 enabling us to keep track of where they are along line 1 as a result of this logarithmic relationship. Lesson 4 addresses the "So what" question more directly.
@@ -2075,10 +2076,10 @@ of logarithm in the abstract. The doubling metric will allow students to later a
 
 To gain a better understanding of the nature of a mathematical relationship it is useful to view the relationship as a graph, in this case a graph of the related values between geometric and arithmetic sequences. By simply rotating line 2 counterclockwise 90 degrees in Fig. 9.1 and joining the starting point to that of line 2 the logarithmic relationship is revealed graphically. By means of this lesson activity students can generate a partial graph of the log function and discuss the related growth rates along the axes. Discussion can explore hypotheses about what happens to the graph between plotted points and later, when metrics are incorporated, what this means about other logarithmic values. Metrification will also allow discussion about bases of logs, the
 
-![](images/e5b9eb48da1230036cef468a1c36fbb7f4d19e233317cd792c9ca73f60b031a7.jpg)  
+![](images/e5b9eb48da1230036cef468a1c36fbb7f4d19e233317cd792c9ca73f60b031a7.jpg)
 Fig. 9.8 Point plot of the logarithmic relationship
 
-Table 9.1 Distances from the starting points in Lesson 1  
+Table 9.1 Distances from the starting points in Lesson 1
 
 <table><tr><td>Distance from the start on line 1</td><td>Corresponding distance on line 2</td></tr><tr><td>2</td><td>1</td></tr><tr><td>4</td><td>2</td></tr><tr><td>8</td><td>3</td></tr><tr><td>16</td><td>4</td></tr></table>
 
@@ -2096,7 +2097,7 @@ For the student who utters "Logarithms, so what?" Table 9.2 has the answer.
 
 Inherent in logarithmic relationship is the ability to multiply a number in the millions by a number in the billions by simply adding 20 and 30 and reading the answer from the table. Ease of computation is what Napier provided the scientific community in 1619. Even with a modern calculator in hand, it may still be faster and more accurate to use this table than to type in all those digits. The computation in question is recorded below. Compared to the standard multiplication algorithm, this calculation would require more than 150 operations to complete, with the chance for error very likely. With a previously established conceptual understanding of sequences students can develop the laws that govern the computational use of logarithms as a concrete consequence. Notational expressions of these laws should be simple to grasp for the conceptual foundation of the relationship has been well established.
 
-Table 9.2 Using logarithmic values to ease calculations  
+Table 9.2 Using logarithmic values to ease calculations
 
 <table><tr><td>Number</td><td>Logarithm</td><td>Calculation</td></tr><tr><td>2</td><td>1</td><td>N = 1048,576 × 1,073,741,824</td></tr><tr><td>4</td><td>2</td><td>log N = log 1048576 + log 1,073,741,824</td></tr><tr><td>8</td><td>3</td><td>log N = 20 + 30</td></tr><tr><td>16</td><td>4</td><td>log N = 50</td></tr><tr><td>32</td><td>5</td><td>therefore, from the table</td></tr><tr><td>64</td><td>6</td><td>N = 1,125,899,906,842,620</td></tr><tr><td colspan="3">(values intentionally missing)</td></tr><tr><td>1,048,576</td><td>20</td><td></td></tr><tr><td>1,073,741,824</td><td>30</td><td></td></tr><tr><td colspan="3">(values intentionally missing)</td></tr><tr><td>1,125,899,906,842,624</td><td>50</td><td></td></tr></table>
 
@@ -2108,12 +2109,12 @@ These scales allow us to investigate the nature of a mathematical relationship t
 
 These same logarithmic scales can be used to produce semi log and log log graph paper. This graph paper can be in turn be used to investigate the dimension of fractals, brightness of stars, and a host of other scientific applications. The physics department of the University of Guelph, Ontario, Canada has a well developed lesson on their web site showing that "if a graph of  $\log y$  vs.  $\log x$  for a set of data
 
-![](images/907a86e1fe99d9746c0af9487e84b95e4d798c254455d838c546d00cf25d1271.jpg)  
+![](images/907a86e1fe99d9746c0af9487e84b95e4d798c254455d838c546d00cf25d1271.jpg)
 Fig. 9.9 A logarithmic scale
 
 is a straight line then the data does indeed follow the relation  $y = a x^b$ . This is but a sample of the activities that can be used to demonstrate scientific use of this powerful mathematical concept. The table below (Table 9.3) is offered to teachers who are looking for other scientific applications to share with their students.
 
-Table 9.3 Teachers' list of logarithm related science  
+Table 9.3 Teachers' list of logarithm related science
 
 <table><tr><td>*Seismographic studies and the Richter scale (R = log(i/o0))</td></tr><tr><td>*Cancer research and the growth rate of cancer cells</td></tr><tr><td>*Radioactive half-life and nuclear decay</td></tr><tr><td>*Population growth</td></tr><tr><td>*Loudness of sound</td></tr><tr><td>*Oceanographic studies of sunlight intensity at a given depth</td></tr><tr><td>*Brightness of stars</td></tr><tr><td>*Fixing the age of moon rocks</td></tr><tr><td>*Radiocarbon dating</td></tr><tr><td>*Compound interest</td></tr><tr><td>*Position of a piano key and the pitch it produces (n = 12 log2 (p / 440))</td></tr><tr><td>*Photographers f-stop setting (n = log2 (1/p))</td></tr><tr><td>*Maximum velocity of a rocket given the ratio of its mass with and without fuel (v = -0.0098 t + c ln R)</td></tr><tr><td>*Expiration time of a natural resource (coal, crude oil, etc.)</td></tr><tr><td>*Calculation of pH</td></tr><tr><td>*Kepler&#x27;s third law of planetary motion</td></tr><tr><td>*Gauss&#x27; formula for the number of primes less than A, for very large A. (A/log A)</td></tr><tr><td>*Area between a hyperbola and its asymptote. (say y = 1/x-1)</td></tr><tr><td>*Development of security key cryptosystems</td></tr><tr><td>*Mercator series</td></tr><tr><td>*Fractal dimensions, zoom factor, and Chaos theory</td></tr><tr><td>*Stirling&#x27;s formula for approximating factorials, for large n</td></tr><tr><td>*Euler&#x27;s constant (0.5772156649...)</td></tr><tr><td>*Power series x-x2/2 + x3/3-x4/4 + -</td></tr><tr><td>*Statistical inference and correlation coefficients</td></tr><tr><td>*The Boltzmann constant</td></tr></table>
 
@@ -2145,16 +2146,16 @@ mathematics educators to identify the essence of concepts to be taught, reflecti
 
 # References
 
-Bronowsky, J. (1973). The ascent of man. Boston, MA: Little, Brown.  
-Davydov, V. (1990). Types of generalization in instruction: Logical and psychological problems in the structuring of school curricula. Soviet studies in mathematics education (Vol. 2). Reston, VA: National Council of Teachers of Mathematics.  
-Eves, H. (1969). An introduction to the history of mathematics (3rd ed.). New York: Holt, Rinehart and Winston.  
-Lakoff, G., & Johnson, M. (1980). Metaphors we live by. Chicago, IL: University of Chicago Press.  
-Langer, E. (1989). Mindfulness. Reading, MA: Addison-Wesley.  
-Mandelbrot, B. (1977). The fractal geometry of nature. New York: W. H. Freeman.  
-Novak, J. D., & Gowin, D. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.  
-Schmittau, J. (1993). Vygotskian scientific concepts: Implications for mathematics education. *Focus on Learning Problems in Mathematics*, 15(2 and 3), 29-39.  
-Schmittau, J. (2003). Cultural-historical theory and mathematics education. In A. Kozulin & others (Eds.), Vygotsky's educational theory in cultural context (pp. 225-245). Cambridge, UK: Cambridge University Press.  
-Turnbull, H. W. (1969). The great mathematicians. New York: New York University Press.  
+Bronowsky, J. (1973). The ascent of man. Boston, MA: Little, Brown.
+Davydov, V. (1990). Types of generalization in instruction: Logical and psychological problems in the structuring of school curricula. Soviet studies in mathematics education (Vol. 2). Reston, VA: National Council of Teachers of Mathematics.
+Eves, H. (1969). An introduction to the history of mathematics (3rd ed.). New York: Holt, Rinehart and Winston.
+Lakoff, G., & Johnson, M. (1980). Metaphors we live by. Chicago, IL: University of Chicago Press.
+Langer, E. (1989). Mindfulness. Reading, MA: Addison-Wesley.
+Mandelbrot, B. (1977). The fractal geometry of nature. New York: W. H. Freeman.
+Novak, J. D., & Gowin, D. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.
+Schmittau, J. (1993). Vygotskian scientific concepts: Implications for mathematics education. *Focus on Learning Problems in Mathematics*, 15(2 and 3), 29-39.
+Schmittau, J. (2003). Cultural-historical theory and mathematics education. In A. Kozulin & others (Eds.), Vygotsky's educational theory in cultural context (pp. 225-245). Cambridge, UK: Cambridge University Press.
+Turnbull, H. W. (1969). The great mathematicians. New York: New York University Press.
 Vygotsky, L. (1978). In M. Cole, V. John-Steiner, S. Scribner, & E. Souberman (Eds.), Mind in society: The development of higher psychological processes. Cambridge, MA: Harvard University Press.
 
 # Chapter 10 Using Concept Maps and Gowin's Veeto Understand Mathematical Models of Physical Phenomena
@@ -2179,7 +2180,7 @@ In order to overcome this undesirable situation, our research team at the Univer
 
 This chapter is organized to explain, from our perspective, what concept maps and Gowin's Vee are, the strategy we used in the introductory physics laboratory course, the phases involved in the implementation of the strategy, and, finally to provide some results from each phase. The following concept map (in Fig. 10.1) summarizes the structure of this chapter.
 
-![](images/109655e3c0483848fe1f361f7a5382272fb1f097347c9636e6913ff285a16ebc.jpg)  
+![](images/109655e3c0483848fe1f361f7a5382272fb1f097347c9636e6913ff285a16ebc.jpg)
 Fig. 10.1 Concept map of the strategy for the teaching & learning process of modelling of physical phenomena
 
 # Theoretical background: Concept Maps and Gowin's Vee
@@ -2198,14 +2199,14 @@ In a similar way, our attempts to introduce the heuristic tool known as Gowin's 
 
 The first difficulty a student faces when attempting to comprehend a text is to understand what it is all about. That is, to grasp the global sense of the communication, understand its elements and the relationships between them. Imagine a physics student, seeking for information about frame of reference, finds the information in the following two different ways, see Fig. 10.2. Probably it is easier for many students to grasp the whole sense of the concept frame of reference when faced with a
 
-![](images/47992361f51ca60b5745848441a5f4051a690270b1fd5cb4247b96516a11fe46.jpg)  
+![](images/47992361f51ca60b5745848441a5f4051a690270b1fd5cb4247b96516a11fe46.jpg)
 Fig. 10.2 Cartesian frame of reference
 
 graph like the one illustrated above. This is due to the powerful visual effect that a graph has to facilitate understanding of a concept or a conceptual structure.
 
 This graph is essentially a concept map. It is a map-like illustration that shows meaningful relationships between concepts (events, objects). Observe that this is a knowledge representation about a particular main idea (in this case, frame of reference), in the form of a graph comprising boxes connected with labeled lines. Words or phrases that denote concepts (events, objects) are placed inside the boxes, and relationships between different concepts are specified on each line. Propositions (node - link - node triads) are a unique feature of concept maps, compared to other graphs. Propositions consist of two or more concept labels connected by a linking relationship that forms a semantic unit (Novak & Gowin, 1988). And the reader, if not familiar with concept maps, may know some of the concepts mentioned before as separate entities but have no clear sense of the relationships between some of them. Obviously, this makes it difficult to understand the whole conceptual structure concept map. Let us then discuss some of the concepts involved in this definition: object, event, concept, proposition and meaningful relationships, to be able to understand what a concept map is.
 
-![](images/94dc73f977da3b1c63dd9312761a40445f0c9897f0f6e45969c2ca11c70fd88a.jpg)  
+![](images/94dc73f977da3b1c63dd9312761a40445f0c9897f0f6e45969c2ca11c70fd88a.jpg)
 Fig. 10.3 Event
 
 According to Novak, the construction of new knowledge begins with the understanding of the terms event and object (Novak & Gowin, 1988). Event may be represented (see Fig. 10.3) in this manner. And also, according to Novak's definition, object may be explained as provided in Fig. 10.4.
@@ -2214,14 +2215,14 @@ Now that we understand what objects and events are, we can define concepts as pe
 
 But concepts are not isolated in a concept map; they are connected by labeled lines or arrows called links, which consist of words, phrases or verbs that explain meaningful relationships between concepts by words or signs/symbols. Arrows, if used, designate the directionality of the relationship. Otherwise, the concepts must be arranged in a hierarchical way, from the most abstract and inclusive concepts on the top of the graph to the most concrete and specific and it is assumed that the direction of the relationship is downward. This facilitates the reading of concepts and the links among them as whole sentences.
 
-![](images/d4f471a9693bec629113e2e930e5ec8b984faa2ec419a07a244db3fc3631a91d.jpg)  
+![](images/d4f471a9693bec629113e2e930e5ec8b984faa2ec419a07a244db3fc3631a91d.jpg)
 Fig. 10.4 Object
 
 Relationships among concepts are diverse. Some examples are presented in Fig. 10.5. Canas, Safayeni, and Derbentseva (2004) classify them as static or dynamics relationships. Static relationships between concepts help to define, describe and organize knowledge for a given domain. Classifications and hierarchies are usually captured in relationships that indicate belongingness, composition, and categorization.
 
 These relationships comprise: inclusion (a concept is part of another one), common membership (two concepts are part of another) and intersection (a concept is the meaning generated by crossing other two concepts). This intersection may be
 
-![](images/01ffcdb7b337a096e763c773ab2c5ce675a2c8330a63ef48d057404946fc26b4.jpg)  
+![](images/01ffcdb7b337a096e763c773ab2c5ce675a2c8330a63ef48d057404946fc26b4.jpg)
 Fig. 10.5 Different types of relationships between concepts
 
 probabilistic (e.g. *Polygons* may be regular), or based on similarity between two concepts. Dynamic relationships between two concepts show how changes of one concept cause change of the other concept in a proposition (e.g. *Concept A* leads to concept B). Dynamic relationships are those based on causality (e.g. *Volume* is an inverse function of the density for a given mass), or those based on correlation/probability (e.g. *Concept maps* may help students to achieve meaningful learning). Scientific knowledge is based on both static and dynamic relationships between concepts. The teacher who is learning about concept maps for the first time must know that there are different types of relationships, and should take them into consideration when he or she attempts concept mapping. Finally, a link may be simple (showing the connection between two concepts) or a crosslink (showing the relationships between ideas in different branches of the map).
@@ -2234,10 +2235,10 @@ Novak (Novak & Gowin, 1988) argues that a map is always built as an answer to a 
 
 The Proceedings of the International Congresses on Concept Mapping, CMC, held in Pamplona (2004) and Costa Rica (2006) are valuable sources of information about concept maps. There is also a special issue of *Focus on Learning Problems in Mathematics* devoted entirely to concept maps with an article by the authors
 
-![](images/1b864608255f27980abd9524d471891e41545777ce0967ed0e95c2c17d921b03.jpg)  
+![](images/1b864608255f27980abd9524d471891e41545777ce0967ed0e95c2c17d921b03.jpg)
 Fig. 10.6 Concept map "polygons"
 
-![](images/1f9536b508362453035d3816426c3da31307896c4011bdabb90a0b7f0afa2fe9.jpg)  
+![](images/1f9536b508362453035d3816426c3da31307896c4011bdabb90a0b7f0afa2fe9.jpg)
 Fig. 10.7 Concept map of a "concept map"
 
 (Ramírez, Aspée, & Sanabria, 2006) to answer these questions: What are concept maps? How are they constructed? What is the theory that supports concept maps? What are they used for? And finally you will find an explanation of how concept maps were used with large groups of university students to facilitate the teaching-learning process (see also Ramírez de M. & Sanabria, 2004).
@@ -2252,14 +2253,14 @@ The Vee diagram separates the conceptual side, which is written on the left, fro
 
 Table 10.1 describes the main concepts involved in a Gowin's Vee Diagram as Gowin defines them (Novak & Gowin, 1988). Students' use Gowin's Vee to understand what they are going to do in the lab; what question they must answer; what machines, objects or lab equipment students could work with; and finally, which events are going to be investigated. This will help them to organise themselves in order to plan, carry out the experiment, collect raw data, transform and graph data, and finally analyze the results obtained. The construction of the conceptual side begins with a student studying the regularities about the events or object being investigated, which will lead him or her to concepts, hypothesis models and theories. On the other side, students will be making decisions about the methodological procedure they will follow in order to study a particular phenomenon. Gowin's Vee is a useful device to establish relationships between the conceptual and practical sides of a laboratory activity and it also helps to structure the discussions that precede and follow the practical activity.
 
-![](images/f40d621c793b03735e738cb07528f8de363a393c63764194b165f8a327a2f533.jpg)  
+![](images/f40d621c793b03735e738cb07528f8de363a393c63764194b165f8a327a2f533.jpg)
 Fig. 10.8 Concept map of Gowin's Vee
 
 # Phases of the Implementation of the Strategy
 
 This section explains the strategy used for the teaching and learning process for the topic "Mathematical Modeling of Physical Phenomena". This was a constructivist teaching/learning approach designed to improve first year physics students' confidence in, and attitude to, modeling of physical phenomena. This strategy was based on the use of the heuristic tools concept maps and Gowin's Vee to help students in their self-construction of knowledge. The program encouraged students' use of concept mapping in order to explore basic mathematical function concepts, as well as the concept of models in physics during the first part of the laboratory
 
-Table 10.1 Gowin's Vee some definitions  
+Table 10.1 Gowin's Vee some definitions
 
 <table><tr><td>Focus question</td><td>Initiate activities between the two domains and are embedded in or generated by theory; FQ&#x27;s focus attention on events and objects</td></tr><tr><td>Events &amp; objects</td><td>Phenomena of interest apprehend through concepts and record-marking: occurrences, objects</td></tr><tr><td colspan="2">Methodological domain</td></tr><tr><td>Value claims</td><td>The worth, either in field or out of field, of the claims produced in an enquiry</td></tr><tr><td>Knowledge claims</td><td>New generalizations in answer to the telling questions, produced in the context of inquiry according to appropriate and explicit criteria of excellence.</td></tr><tr><td>Interpretations, explanations &amp; generalizations</td><td>Product of methodology and prior knowledge used for warrant of claims</td></tr><tr><td>Results</td><td>Representation of the data in tables charts and graphs.</td></tr><tr><td>Transformations</td><td>Ordered facts governed by theory of measurements and classification</td></tr><tr><td>Facts</td><td>The judgment, based on trust in method, that records of events are valid</td></tr><tr><td>Records</td><td>Records of event or objects</td></tr><tr><td colspan="2">Conceptual domain</td></tr><tr><td>Concepts</td><td>Signs or symbols signifying regularities in events and shared socially</td></tr><tr><td>Conceptual Structures</td><td>Subsets of theory directly used in the inquiry</td></tr><tr><td>Constructs</td><td>Ideas which support reliable theory, but without direct referents in events or objects</td></tr><tr><td>Principles</td><td>Conceptual rules governing the linking of patterns in events; propositional in form; derived from prior knowledge claims</td></tr><tr><td>Theories</td><td>Logically related sets of concepts permitting patterns of reasoning leading to explanations</td></tr><tr><td>Philosophies</td><td>(E.g. Human understanding by Toulmin)</td></tr><tr><td>World views</td><td>(E.g. nature is orderly and knowable.)</td></tr></table>
 
@@ -2311,7 +2312,7 @@ Assignment - Students were asked to express their understanding of the three fun
 
 Discussion and Results - The concept maps produced by students were compared with "expert maps" previously prepared. These maps were grouped into two categories:
 
-(a) Satisfactory: Those maps which clearly show the main idea, subordinate concepts and relationships among them for a given mathematical function (65%).  
+(a) Satisfactory: Those maps which clearly show the main idea, subordinate concepts and relationships among them for a given mathematical function (65%).
 (b) Insufficient  $(35\%)$ : In this category, the distinction was made between maps exhibiting conceptual mistakes in mathematical prior knowledge  $(12\%)$ , and maps showing an incorrect application of the concept map heuristic tool  $(23\%)$ .
 
 In the examples that follow, the reader needs to take into account that this research was conducted in Spanish. Concept maps have been translated into English to illustrate students' work. Samples of students' concept maps classified as satisfactory are presented in Figs. 10.9, 10.10 and 10.11.
@@ -2336,7 +2337,7 @@ Assignment - Students were asked to explain how it is possible to deduce from a 
 
 Discussion and Results - From the results,  $58\%$  of the students provided satisfactory maps. Some students  $(20\%)$  confused the log and semi-logarithmic papers and arrived at wrong conclusions. The other students made maps, which did not show a clear conceptual structure about transformations of non-linear functions. From previous studies, it has been observed that it is not easy for students to express in a map what they have learnt in class from the teacher's presentation. Figure 10.12 shows a map classified as "satisfactory" produced by a student.
 
-![](images/0938e2b51b10a12ed216a9169a5bee9cafdf181005750341e35377eae2f4e4d8.jpg)  
+![](images/0938e2b51b10a12ed216a9169a5bee9cafdf181005750341e35377eae2f4e4d8.jpg)
 Fig. 10.9 Concept map of the power function made by a student
 
 # Phase III: Acquisition of the Concept "Model" in Physics
@@ -2347,7 +2348,7 @@ This phase focused on three aspects: (1) the concept of model in physics science
 
 Teaching activities - Based on the epistemological conceptions of model, presented by Hertz (1900), Feynman (1970), and Bunge (1997), a short text was designed with standard definitions of model as well as qualitative and quantitative models, as they are understood in physics.
 
-![](images/b72141458125c9ee2213e208e20de096eeb844d37ea31e8775ec50468b319e16.jpg)  
+![](images/b72141458125c9ee2213e208e20de096eeb844d37ea31e8775ec50468b319e16.jpg)
 Fig. 10.10 Concept map of the linear function designed by a student
 
 Assignment - Students were asked to work in small groups, read the text and generate a concept map for the concept "Model in physical science".
@@ -2358,10 +2359,10 @@ Qualitative Models and Gowin's Vee for Constructing an Explanation
 
 Teaching activities - Students were presented with a phenomenon, which could be explained with a qualitative model. It is related to a physical system called the black box tunnel. In physics, a black box is a system whose internal structure is unknown, or need not be considered for a particular purpose.
 
-![](images/894cbd9c9a184d889e73190f4883a3c051566b6bf862bc2ddf34eec58708704e.jpg)  
+![](images/894cbd9c9a184d889e73190f4883a3c051566b6bf862bc2ddf34eec58708704e.jpg)
 Fig. 10.11 Concept map of the exponential function made by a student
 
-![](images/dcf97a05dd8b2121e85f629126b45dba9b2d724f0e93d1ffde13657223264247.jpg)  
+![](images/dcf97a05dd8b2121e85f629126b45dba9b2d724f0e93d1ffde13657223264247.jpg)
 Fig. 10.12 Map of linear and non-linear functions made by a student
 
 The following procedure was followed:
@@ -2370,19 +2371,19 @@ The following procedure was followed:
 
 ![](images/4d87d524bf86c09f58a90b62e5c9d691610a1e343abbde396f764830357cfaee.jpg)
 
-![](images/74ceb12dee1ef04e84ebb16f53dce617dcefe82e8d21ca51695bbab85d1089f9.jpg)  
+![](images/74ceb12dee1ef04e84ebb16f53dce617dcefe82e8d21ca51695bbab85d1089f9.jpg)
 Fig. 10.13 Concept map about model
 
 There is a tunnel with open ends in both sides. Some experiments made with small toys cars allow us to state the following facts:
 
-- If a car enters the tunnel in point B at a low speed, the car comes back to point B.  
-- If the same car enters the tunnel in point B with a higher speed, then it goes across the tunnel and emerges in point A.  
-- If the same car enters the tunnel in point A moving slowly, the car returns to point A.  
+- If a car enters the tunnel in point B at a low speed, the car comes back to point B.
+- If the same car enters the tunnel in point B with a higher speed, then it goes across the tunnel and emerges in point A.
+- If the same car enters the tunnel in point A moving slowly, the car returns to point A.
 - If the same car enters the tunnel in point A with a higher speed, then it does not go across the tunnel or return to point A, rather on disappears inside the tunnel.
 
 Create a qualitative model that could explain this phenomenon and might be used to make predictions about the way the tunnel works.
 
-![](images/56aff86589feb75deb303170a16396da8ba4ff7e5b74f5f6241530748dc4283f.jpg)  
+![](images/56aff86589feb75deb303170a16396da8ba4ff7e5b74f5f6241530748dc4283f.jpg)
 Fig. 10.14 Concept map about model in science
 
 (b) Students were given a written guide explaining how they could proceed in order to make a qualitative model.
@@ -2395,7 +2396,7 @@ Assignment – Working in small groups, students were asked to build a qualitati
 
 Discussion and Results - Fifteen groups out of the twenty-five groups (of four students each) managed to produce acceptable tentative models for the phenomenon observed. Six groups had an idea of what was going on, but could not use the
 
-![](images/fc48344338a0a8dd5ad2f4ca78bb7364b06e5a453e5a2d9bd61b41a226c1daa1.jpg)  
+![](images/fc48344338a0a8dd5ad2f4ca78bb7364b06e5a453e5a2d9bd61b41a226c1daa1.jpg)
 Fig. 10.15 Gowin's Vee for the construction of qualitative models
 
 Gowin's Vee provided (Fig. 10.15) as a tool to orientate the process of reasoning. They simply produced a written report explaining what they thought was going on. Two groups produced wrong qualitative models that did not account for the events explained.
@@ -2408,13 +2409,13 @@ Figure 10.17 illustrates the Vee diagram the same students made for the second p
 
 Teaching activities - A teacher worked alongside students to develop an experiment about a pendulum that swings through a small angle (in the range where the function  $\sin \theta$  can be approximated as  $\theta$ ) in order to answer the focus question: What are the
 
-![](images/d3dfe03849b182ed9fe4055b25a5393e71d1a2b82443f58eec92b420008f2315.jpg)  
+![](images/d3dfe03849b182ed9fe4055b25a5393e71d1a2b82443f58eec92b420008f2315.jpg)
 Fig. 10.16 Qualitative model for a car entering the tunnel in point B
 
-![](images/2b33d5b563c31085235600569d08afa4a3ab317aee91223346ec26fbfad1e421.jpg)  
+![](images/2b33d5b563c31085235600569d08afa4a3ab317aee91223346ec26fbfad1e421.jpg)
 Fig. 10.17 Qualitative model for the car entering in point A and general explanation
 
-![](images/e185bd36eb79c821cf4d8440d7f657ad94c75e25c50101001bf8ebad1048d941.jpg)  
+![](images/e185bd36eb79c821cf4d8440d7f657ad94c75e25c50101001bf8ebad1048d941.jpg)
 Fig. 10.18 Adaptation of Gowin's Vee for quantitative models
 
 relationships between the mass of bob, the length of pendulum, the displacement of the pendulum (amplitude) and the period of a pendulum?.
@@ -2431,7 +2432,7 @@ The others did not understand why it was necessary to change the  $y$ -value for
 
 It needs to be restated that all work was done in Spanish and there may have been some changes in the real meaning of some expressions when translating some vees of students' work. In general terms, it was found that students' use of Gowin's Vee
 
-![](images/de8c43cb81f5593471f89f63817b5179608234d18c05bbe518bce6d5bcd3f722.jpg)  
+![](images/de8c43cb81f5593471f89f63817b5179608234d18c05bbe518bce6d5bcd3f722.jpg)
 Fig. 10.19 Translation of the Vee diagram for the experiment of a pendulum made by a student
 
 to help them construct a quantitative model proved to be more effective than the use of the same tool to make qualitative models. Further research is needed to find a more effective way of using Gowin's Vee as an aid to develop qualitative models.
@@ -2452,24 +2453,24 @@ Discussion and Results - By the end of the course, students showed signs of an a
 
 In the last two decades, this research team has tried different teaching and learning strategies to introduce physics concepts to our students. Statistical analysis of the strategies used in previous years for the topic Mathematical Modeling of Physical Phenomena gave a mean passing rate of  $65\%$  for students taking regular courses. On the other hand, a qualitative analysis of results allowed us to propose that the main problems faced by students failing the physics course were mainly dueto:
 
-- Lack of motivation to study this topic.  
-- Insufficient prior knowledge of the linear, power, exponential and functions.  
-- Students' difficulties in explaining the process followed in order to generate their models.  
+- Lack of motivation to study this topic.
+- Insufficient prior knowledge of the linear, power, exponential and functions.
+- Students' difficulties in explaining the process followed in order to generate their models.
 - Students' difficulties in communicating the results of their experiments.
 
 The strategy described in this chapter was designed to overcome these difficulties, based on the use of the heuristic tools concept map and Gowin's Vee. This strategy uses concept maps to improve understanding of concepts and basic conceptual structures involved in the mathematical modeling process of physical phenomena, and Gowin's Vee as an adapted tool that facilitates the process of building student's own knowledge of a mathematical model for a particular experiment.
 
 The results after the application of the strategy showed  $81\%$  of students passed the course. A qualitative analysis of process and results allows us to propose that improvement in overall performance along the lab course may be due to:
 
-- An increase in student's motivation to develop the experiments with the aid of the heuristic tools concept maps and Gowin's Vee.  
-- Consciousness of the need to improve knowledge about mathematical functions and the plotting of curves in order to find adequate models to explain physical phenomena.  
+- An increase in student's motivation to develop the experiments with the aid of the heuristic tools concept maps and Gowin's Vee.
+- Consciousness of the need to improve knowledge about mathematical functions and the plotting of curves in order to find adequate models to explain physical phenomena.
 - An improvement in students' ability to communicate results and to interpret their findings while studying physical phenomena.
 
 Beyond the rather broad measures of "passing" or "success", evidence from a variety of assessments suggests that the quality of learning was high relative to that for students in previous courses. Students finished with significantly higher levels of confidence in their abilities to understand, plan, carry out and analyze an experiment. There were also many benefits reported by students including ownership of knowledge, the development of skills to build concept maps and the use of Vee diagrams to plan and develop ideas and basic experiments in order to model physical phenomena.
 
 Even though the results demonstrated the benefits obtained from applying this strategy, it is worth noting that in order to obtain satisfactory results it is necessary to take into consideration two facts:
 
-1. A considerable amount of time must be devoted to train teachers in the application of the strategy and to train students in the use of concept maps and Gowin's Vee; and  
+1. A considerable amount of time must be devoted to train teachers in the application of the strategy and to train students in the use of concept maps and Gowin's Vee; and
 2. Initially, there will be an increased workload for the teacher in order to develop an instructional sequence for the learning experiences.
 
 This research group has continued to use and improve the strategy described in this chapter throughout successive trials with satisfactory results. By the end of each semester students get more familiarity with the use of Gowin's Vee and concept
@@ -2482,17 +2483,17 @@ Novak's and Gowin's heuristic tools have been applied for more than twenty years
 
 # References
 
-Afamasaga-Fuata'i, K. (2006). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping and Vee diagrams. *Focus on Learning Problems in Mathematics*, Summer, 28(3 & 4), 58-89.  
-Bunge, M. (1997) Teoria y Realidad. Barcelona: Ariel.  
-Cañas, A. J., Safayeni, F., & Derbentseva, N. (2004). Concept maps: A theoretical note on concepts and the need for cyclic concept maps. Retrieved December 10, 2004, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmap.ihmc.us/Publications/ResearchPapers/Cyclic%20Concept%20Maps.pdf  
-Feynman, R. (1970). Lectures on physics. Massachusetts: Adison-Wesley.  
-First International Congress on Concept Mapping (CMC) (2004) Proceedings of the CMC. Retrieved January 09, 2005, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/CMC2004Programa.html  
-Hertz, H. (1900) The principles of mechanics presented in a new form. USA: Dover.  
-Novak, J. D., & Gowin, D. B. (1988). Aprendiendo a(APrender. Barcelona: Martínez Roca.  
-Ramírez de M. M. (2005). El Mapa Conceptual como Herramienta Heurística para facilitar el Aprendizaje. San Cristóbal: Unet Fondo Editorial.  
-Ramírez de M. M., Aspeé, M., & Sanabria, I. (2006). Concept maps: An essential tool for teaching and learning to learn science. *Focus on Learning Problems in Mathematics*, Summer, 28 (3 & 4), 32-57.  
-Ramírez de M. M., & Sanabria I. (2004). *El Mapa Conceptual como Elemento Fundamental en el Proceso de Enseñanza-Aprendizaje de la Física a Nivel Universitario*. Retrieved December 03, 2004, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/papers/cmc2004-086.pdf  
-Sanabria, I., & Ramírez de M. M. (2006). Una estrategia instruccional para el laboratorio de española I usingla "V de Gowin". Revista Mexicana de Física S, 52(3), 22-25.  
+Afamasaga-Fuata'i, K. (2006). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping and Vee diagrams. *Focus on Learning Problems in Mathematics*, Summer, 28(3 & 4), 58-89.
+Bunge, M. (1997) Teoria y Realidad. Barcelona: Ariel.
+Cañas, A. J., Safayeni, F., & Derbentseva, N. (2004). Concept maps: A theoretical note on concepts and the need for cyclic concept maps. Retrieved December 10, 2004, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmap.ihmc.us/Publications/ResearchPapers/Cyclic%20Concept%20Maps.pdf
+Feynman, R. (1970). Lectures on physics. Massachusetts: Adison-Wesley.
+First International Congress on Concept Mapping (CMC) (2004) Proceedings of the CMC. Retrieved January 09, 2005, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/CMC2004Programa.html
+Hertz, H. (1900) The principles of mechanics presented in a new form. USA: Dover.
+Novak, J. D., & Gowin, D. B. (1988). Aprendiendo a(APrender. Barcelona: Martínez Roca.
+Ramírez de M. M. (2005). El Mapa Conceptual como Herramienta Heurística para facilitar el Aprendizaje. San Cristóbal: Unet Fondo Editorial.
+Ramírez de M. M., Aspeé, M., & Sanabria, I. (2006). Concept maps: An essential tool for teaching and learning to learn science. *Focus on Learning Problems in Mathematics*, Summer, 28 (3 & 4), 32-57.
+Ramírez de M. M., & Sanabria I. (2004). *El Mapa Conceptual como Elemento Fundamental en el Proceso de Enseñanza-Aprendizaje de la Física a Nivel Universitario*. Retrieved December 03, 2004, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/papers/cmc2004-086.pdf
+Sanabria, I., & Ramírez de M. M. (2006). Una estrategia instruccional para el laboratorio de española I usingla "V de Gowin". Revista Mexicana de Física S, 52(3), 22-25.
 Second International Congress on Concept Mapping (CMC) (2006). Proceedings of the CMC. Retrieved February 02, 2008, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/CMC2004Programa.html
 
 # Chapter 11 Applying Concept Mapping to Algebra I
@@ -2615,10 +2616,10 @@ At this point, the teacher could develop a concept map describing the relationsh
 
 Once this map has been determined, the teacher will clarify the role that monomials will play in the development of polynomials. First, the (binary) algebraic operations of addition and multiplication of monomials must be defined. Since multiplication of two monomials always results in a monomial. This process is addressed first, and then the meanings of the quotient, sum, and difference of two monomials are addressed. The quotient of two monomials results in either a monomial or in the reciprocal of a monomial, which is a type of rational expression; and the sum or difference of two monomials is either a monomial, or is a polynomial with two terms. Once the results of all four of these processes are determined, a composite process map is developed. Figure 11.2 represents such a map. Notice that in this map we have cases where the result of performing an operation on two monomials does not result in a monomial.
 
-![](images/c7658a17662d0e96fb8022b4fa4fab2d03daceafea3a2db2b78e0ace0c2e1c05.jpg)  
+![](images/c7658a17662d0e96fb8022b4fa4fab2d03daceafea3a2db2b78e0ace0c2e1c05.jpg)
 Fig. 11.1 Definition and characteristics of a monomial
 
-![](images/218a822b504bcc994e8e372ea2f12dec2118d78e5fb28a2aba864a32671fb091.jpg)  
+![](images/218a822b504bcc994e8e372ea2f12dec2118d78e5fb28a2aba864a32671fb091.jpg)
 Fig. 11.2 Algebraic operations on monomials
 
 This places us at the point of defining polynomials and continuing the development of this basic concept in our Algebra I course.
@@ -2635,7 +2636,7 @@ A concept map describing the definition of polynomial in terms of monomials is g
 
 The word "added" when applied to polynomials must be discussed by the teacher, since before they take algebra, students think of addition as being related only to numbers, not to symbols.
 
-![](images/32b9311f0df6b4c409b5f46e7ebea93a142c49812570e3fde9f57ed04839ebd3.jpg)  
+![](images/32b9311f0df6b4c409b5f46e7ebea93a142c49812570e3fde9f57ed04839ebd3.jpg)
 Fig. 11.3 Definition of a polynomial
 
 The map provided in Fig. 11.2 discussed addition of monomials; this idea can be generalized to addition of polynomials since polynomials are defined in terms of monomials. The map in Fig. 11.3 may serve as a guide to the teacher in preparing a discussion of the definition of polynomial, and to a lesser degree a tool for students to organize the concept of polynomial in their minds.
@@ -2664,7 +2665,7 @@ Notice that the concept map in Fig. 11.3 shows that the sum of two monomials is 
 
 ![](images/693bfe47a5fc889882c6efaae330f0e3885c05bce720ca5876f316f2a70692a3.jpg)
 
-![](images/2f761aaa11efa88db19196aba72f14de16bc6d5bd253e88a3a523eb3d351a393.jpg)  
+![](images/2f761aaa11efa88db19196aba72f14de16bc6d5bd253e88a3a523eb3d351a393.jpg)
 Fig. 11.4 The product of polynomials
 
 First we address addition. From Fig. 11.3 we can conclude that any finite sum of monomials is a polynomial, and that when we add any two polynomials we get a polynomial. It is easy then to rewrite any sum of polynomials into a standard-form polynomial using the properties of addition of monomials given in the map in Fig. 11.2, and assuming that the associative and commutative properties for addition are satisfied. Multiplication of polynomials is described in Fig. 11.4. Note that this definition usually will not give a polynomial in standard form, so that the simplification process - changing the resulting polynomial into standard form - will be discussed again by the teacher when this is presented.
@@ -2691,7 +2692,7 @@ Particular attention is given to polynomial equations of the form  $\mathfrak{p}
 
 ![](images/a03d66b4b8a4eec5479285412c2618018d066261ed0818c5486eec13fbf81adb.jpg)
 
-![](images/e965231bf1cb13b6f0a67b4c21b53350df9d5111998a8e42ad7590c3c933e529.jpg)  
+![](images/e965231bf1cb13b6f0a67b4c21b53350df9d5111998a8e42ad7590c3c933e529.jpg)
 Fig. 11.5 Evaluating a polynomial at a fixed real number
 
 # Quadratic Polynomials
@@ -2726,13 +2727,13 @@ We have looked at the development of only a very small portion of the master map
 
 To complete the Algebra I course development using a concept mapping approach will require the careful analysis of each of the remaining topical segments, and the development of the necessary concept maps related to the nodes within those segments. That process will require the teacher to think carefully through each of the
 
-![](images/5a3c06af60cc24fab6d87fd256c0f4cec947fa2747d2cd3ace3f626089381f9b.jpg)  
+![](images/5a3c06af60cc24fab6d87fd256c0f4cec947fa2747d2cd3ace3f626089381f9b.jpg)
 Fig. 11.6 Quadratic polynomials and their solutions
 
-![](images/c2bf02872d94d9fcd65b8db52eb4b13f160f01d51738072f6821fd243b32201d.jpg)  
+![](images/c2bf02872d94d9fcd65b8db52eb4b13f160f01d51738072f6821fd243b32201d.jpg)
 Fig. 11.7 Definition of factoring a polynomial
 
-![](images/b0d31cbd5c7edca8b1a0aa70ac5508452f5bd4d5fc60128f7e2d16566e0cb436.jpg)  
+![](images/b0d31cbd5c7edca8b1a0aa70ac5508452f5bd4d5fc60128f7e2d16566e0cb436.jpg)
 Fig. 11.8 A possible master concept map for Algebra I
 
 individual concepts and their meanings, and then to explore the many connections that exist among the concepts and sub-concepts identified. The maps produced may differ from teacher to teacher, but all who go through the process will gain a greater understanding of the topics in the course, and will recognize any existing areas in the course where their own understanding needs strengthening.
@@ -2767,21 +2768,21 @@ Domain
 
 Range
 
-![](images/f0d4227ee667f995c438ad296027d88c29aa8ec5f68c66422247ae5899ef04f8.jpg)  
+![](images/f0d4227ee667f995c438ad296027d88c29aa8ec5f68c66422247ae5899ef04f8.jpg)
 Fig. 11.9 Parsing of a mathematics text unit based upon its concept organization
 
-![](images/efd885852fb4271f4675ffecb045882a87b98f66a4117dc24c992d47e0b4d8b8.jpg)  
+![](images/efd885852fb4271f4675ffecb045882a87b98f66a4117dc24c992d47e0b4d8b8.jpg)
 Fig. 11.10 Function and its underlying concepts
 
 The teacher then could ask the students to produce a concept map describing the relationships and connections they see among these concepts. Using the clear-correct-complete assessment model, the teacher would evaluate the maps and determine the level of understanding each student has of the connections among the
 
-![](images/c745b7482295571e18745e09941fb9bdca3b2cc2aeed441dca6ea8af340fc7f3.jpg)  
+![](images/c745b7482295571e18745e09941fb9bdca3b2cc2aeed441dca6ea8af340fc7f3.jpg)
 Fig. 11.11 A formal concept map definition of scientific notation
 
-![](images/97c5a860a6b3d8cf070c764455b3e291fe85b74b04177a58d7161ce8ff864662.jpg)  
+![](images/97c5a860a6b3d8cf070c764455b3e291fe85b74b04177a58d7161ce8ff864662.jpg)
 Fig. 11.12 A concept map of relationships among sets of numbers encountered in Algebra I
 
-![](images/aa1096b9f2a0e2baf90ac9482b89eb2fb6bd2c9be284eb833a3574a0a169576f.jpg)  
+![](images/aa1096b9f2a0e2baf90ac9482b89eb2fb6bd2c9be284eb833a3574a0a169576f.jpg)
 Fig. 11.13 The value of using concept maps in mathematics courses
 
 ideas. This will allow the teacher to determine what kind of assistance is needed to help the student fill critical gaps in knowledge and understanding.
@@ -2836,7 +2837,7 @@ Gowin's Vee was subsequently adapted to guide the process of solving a mathemati
 
 The reasoning process may continue onto the identification of relevant Concepts and Principles that potentially suggest, or can guide the development of appropriate
 
-![](images/3e88cef428815e563279b6bc8b5128c1e65be39d8552ac632c82e9452fb9e24e.jpg)  
+![](images/3e88cef428815e563279b6bc8b5128c1e65be39d8552ac632c82e9452fb9e24e.jpg)
 Fig. 12.1 The mathematics problem solving Vee diagram (Afamasaga-Fuata'i, 1998)
 
 methods and procedures (Transformations) to generate an answer (Knowledge Claims) to the focus questions. Alternatively, if methods are easily obtainable (i.e., for familiar problems), then students are challenged to identify the relevant principles and concepts underpinning the methods. The arrow indicates that there is a continuous interplay between the two sides, as students reason through the various sections of the Vee. This (continuous interplay) is a necessary process to ensure that the conceptual and theoretical underpinnings are abstracted and displayed on the left while the given information, interpretations and subsequent transformations to find answers are displayed on the right side.
@@ -2883,11 +2884,11 @@ From his research, Art selected a few concepts for his first map to provide a de
 
 Overall, Art's final concept map had become more integrated and complex as his understanding expanded and became more enriched as a result of critiques, revisions and individual research. For example, he wrote: "with concept maps, its uses that I have experienced from the semester is that they broaden my understanding of my
 
-Table 12.1 Concept maps' contents and valid propositions criteria  
+Table 12.1 Concept maps' contents and valid propositions criteria
 
 <table><tr><td>Referente Student Map</td><td>Art 1 4</td><td>Art 2 1</td><td>Ada 4</td><td>Ada 4</td><td>Lou 1</td><td>Lou 4</td><td>Asi 1</td><td>Asi 4</td><td>Afa 1</td><td>Afa 4</td><td>Les 1</td><td>Les 4</td></tr><tr><td>Concepts</td><td>14</td><td>24</td><td>8</td><td>19</td><td>13</td><td>43</td><td>12</td><td>51</td><td>13</td><td>43</td><td>36</td><td>84</td></tr><tr><td>Examples</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2</td><td>2</td><td>2</td><td>4</td></tr><tr><td>Definitional</td><td>0</td><td>2</td><td>2</td><td>6</td><td>0</td><td>0</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Inappropriate</td><td>3</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>2</td><td>17</td></tr><tr><td>Total</td><td>17</td><td>26</td><td>14</td><td>27</td><td>13</td><td>43</td><td>17</td><td>51</td><td>15</td><td>46</td><td>40</td><td>105</td></tr><tr><td>Concepts</td><td>82%</td><td>92%</td><td>57%</td><td>70%</td><td>100%</td><td>100%</td><td>71%</td><td>100%</td><td>87%</td><td>93%</td><td>90%</td><td>80%</td></tr><tr><td>Examples</td><td>0%</td><td>0%</td><td>14%</td><td>0%</td><td>0%</td><td>0%</td><td>6%</td><td>0%</td><td>13%</td><td>4%</td><td>5%</td><td>4%</td></tr><tr><td>Definitional</td><td>0%</td><td>8%</td><td>14%</td><td>22%</td><td>0%</td><td>0%</td><td>18%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td></tr><tr><td>Inappropriate</td><td>18%</td><td>0%</td><td>14%</td><td>7%</td><td>0%</td><td>0%</td><td>6%</td><td>0%</td><td>0%</td><td>2%</td><td>5%</td><td>16%</td></tr><tr><td>Valid prop</td><td>6</td><td>18</td><td>6</td><td>17</td><td>12</td><td>41</td><td>6</td><td>42</td><td>14</td><td>47</td><td>40</td><td>87</td></tr><tr><td>Invalid prop</td><td>11</td><td>5</td><td>8</td><td>14</td><td>0</td><td>1</td><td>10</td><td>17</td><td>2</td><td>2</td><td>5</td><td>28</td></tr><tr><td>% Valid</td><td>35%</td><td>78%</td><td>43%</td><td>55%</td><td>100%</td><td>98%</td><td>38%</td><td>71%</td><td>88%</td><td>96%</td><td>89%</td><td>76%</td></tr></table>
 
-Table 12.2 Concept maps' structural criteria  
+Table 12.2 Concept maps' structural criteria
 
 <table><tr><td>Referent</td><td>Art</td><td>Art</td><td>Ada</td><td>Ada</td><td>Lou</td><td>Lou</td><td>Asi</td><td>Asi</td><td>Afa</td><td>Afa</td><td>Les</td><td>Les</td></tr><tr><td>Student</td><td colspan="2">1</td><td colspan="2">2</td><td></td><td>3</td><td colspan="2">4</td><td colspan="2">5</td><td colspan="2">6</td></tr><tr><td>Map</td><td>1</td><td>4</td><td>1</td><td>4</td><td>1</td><td>4</td><td>1</td><td>4</td><td>1</td><td>4</td><td>1</td><td>4</td></tr><tr><td>Sub-branches</td><td>6</td><td>10</td><td>4</td><td>8</td><td>3</td><td>15</td><td>6</td><td>20</td><td>4</td><td>19</td><td>14</td><td>32</td></tr><tr><td>Hierarchical levels</td><td>4</td><td>6</td><td>4</td><td>7</td><td>8</td><td>8</td><td>4</td><td>7</td><td>4</td><td>9</td><td>10</td><td>15</td></tr><tr><td>Main branches</td><td>3</td><td>4</td><td>2</td><td>3</td><td>1</td><td>6</td><td>3</td><td>4</td><td>3</td><td>5</td><td>4</td><td>5</td></tr><tr><td>Integrative Cross-links</td><td>1</td><td>1</td><td>0</td><td>0</td><td>4</td><td>6</td><td>0</td><td>4</td><td>0</td><td>4</td><td>7</td><td>18</td></tr><tr><td colspan="13">Multiple Branching nodes at:</td></tr><tr><td>Level 1</td><td>2</td><td>2</td><td></td><td></td><td></td><td>2</td><td>2</td><td>2</td><td>2</td><td></td><td></td><td></td></tr><tr><td>Level 2</td><td>2</td><td>3,2</td><td>2</td><td></td><td></td><td>3</td><td></td><td>3,2</td><td></td><td></td><td></td><td></td></tr><tr><td>Level 3</td><td>2,2</td><td>2,2</td><td></td><td>2</td><td></td><td>2,2</td><td>2,3</td><td>2,6</td><td></td><td>4</td><td>2</td><td>2</td></tr><tr><td>Level 4</td><td></td><td>2</td><td>2</td><td>5</td><td>2</td><td>2</td><td></td><td>3,2,3</td><td>2</td><td>2,4,2</td><td></td><td></td></tr><tr><td>Level 5</td><td></td><td></td><td>2</td><td></td><td></td><td>2,2,2,3</td><td>2</td><td>3</td><td></td><td>2</td><td>2</td><td>2</td></tr><tr><td>Level 6</td><td></td><td>2</td><td></td><td></td><td>2</td><td>2,2</td><td></td><td></td><td></td><td>2</td><td>2,2</td><td>2</td></tr><tr><td>Level 7</td><td></td><td>2</td><td></td><td></td><td></td><td>2,3</td><td></td><td>2,2,2</td><td>2</td><td>2</td><td>2,2</td><td>2</td></tr><tr><td>Level 8</td><td></td><td></td><td></td><td></td><td></td><td>2</td><td></td><td>3</td><td></td><td>2</td><td>3,2</td><td></td></tr><tr><td>Level 9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td></td><td>2,3</td></tr><tr><td>Level 10</td><td></td><td></td><td></td><td>2</td><td></td><td></td><td></td><td></td><td></td><td>2</td><td></td><td>2,2</td></tr><tr><td>Level 11</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>2</td><td>2</td></tr><tr><td>Level 12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2,2</td><td>2</td><td>3,2,3,2</td></tr><tr><td>Level 13</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td></td><td>2</td></tr><tr><td>Level 14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td></td><td>2,2</td></tr><tr><td>Total # multiple Branching nodes</td><td>4</td><td>8</td><td>3</td><td>3</td><td>2</td><td>14</td><td>4</td><td>13</td><td>3</td><td>15</td><td>10</td><td>16</td></tr></table>
 
@@ -2915,14 +2916,14 @@ With more critiques and revisions, Lou's final concept turned out to be a "a muc
 
 In summing up her experiences in the study, she wrote: "I have now seen an evolvement from a very basic map to a more complicated one. The surprising fact discovered is that the basic map (i.e., first map) was more confusing than the resulting one (i.e., final map)." This is quite a revealing statement about the value of her final map as a more meaningful, comprehensive and informative piece of work. Part of Lou's final map is shown in the right map in Fig. 12.3 for comparison to her first attempt.
 
-![](images/02a98bc08d2283ffbbdd24eb67e4f02ac12d3045c1c5e3eebc2ef6c8b05eab54.jpg)  
+![](images/02a98bc08d2283ffbbdd24eb67e4f02ac12d3045c1c5e3eebc2ef6c8b05eab54.jpg)
 Fig. 12.2 Lou's first concept map
 
 # Student 4's Topic - Multivariable Functions
 
 Asi's first concept map had 12 valid nodes with 4 invalid nodes due to a definitional phrase and inappropriate entries. The invalid propositions (10 out of 16) were due to missing linking words or inappropriate nodes (see Tables 12.1 and 12.2). In spite of Asi's efforts, the group found her first concept map presentation confusing due
 
-![](images/f00061d2cd8d0643cbea7d8288f68b1515da18b4f3aae6640733ce2ecedcc153.jpg)  
+![](images/f00061d2cd8d0643cbea7d8288f68b1515da18b4f3aae6640733ce2ecedcc153.jpg)
 Fig. 12.3 Partial view of Lou's final concept map
 
 to vague and inappropriate linking words. Asi then revised and reorganized her concept hierarchy to make the map more meaningful. Subsequent one-on-one and group critiques over the semester eventually resulted in a final map which was more differentiated with increased multiple branching nodes (from 4 to 13), and sub-branches (from 6 to 20) with a higher average hierarchical levels per sub-branch (from 4 to 7). In response to critical comments, Asi reorganized the concept hierarchy, revised linking words to make them more descriptive of interconnections, created more subbranches, and provided meaningful integrative cross-links to improve the clarity and organization of information. Overall, the final map had significantly more valid nodes (from 12 to 51) and valid propositions (from 6 to 42). Asi wrote in her final report: "To me, using concept maps has given me a chance to learn more of my research topic."
@@ -2931,7 +2932,7 @@ to vague and inappropriate linking words. Asi then revised and reorganized her c
 
 Afa's first concept map had 15 valid nodes of which 2 were examples, 3 multiple branching nodes, and 4 sub-branches with average hierarchical levels of 4 per
 
-![](images/1628da2ff6c8c2d42c141b10c710c709f35f257e6b3ce34fce2b13c38609a10c.jpg)  
+![](images/1628da2ff6c8c2d42c141b10c710c709f35f257e6b3ce34fce2b13c38609a10c.jpg)
 Fig. 12.4 Student 5's final concept map
 
 sub-branch. Through critiques and subsequent revisions, his final map evolved into one that was more differentiated and enriching with substantial increases in sub-branches (from 4 to 19), average hierarchical levels per sub-branch (from 4 to 9), main branches (from 3 to 5), integrative cross-links (from 0 to 4), and multiple branching nodes (from 3 to 15). Overall, valid propositions increased from 14 to 47. Figure 12.4 shows Afa's final concept map. It was also the map with the highest proportion of valid propositions  $(96\%)$ .
@@ -2952,7 +2953,7 @@ Vee diagrams are assessed qualitatively in terms of one overall criteria and a m
 
 The overall criteria assess whether students had satisfactory entries for the sections Theories, Concept, and Records as these are basically extracted and inferred from the problem statements in accordance with the guiding questions (Fig. 12.1). Also because they were free to select their problems, obtaining the correct answers (Knowledge Claims) was not problematic. However, what caused a lot of critical comments and numerous revisions were the inappropriate entries for the sections,
 
-![](images/68ca4cce39e3a5fb1e927362c21f4b17473e94b8f96d5736e6aab795a79cc6f3.jpg)  
+![](images/68ca4cce39e3a5fb1e927362c21f4b17473e94b8f96d5736e6aab795a79cc6f3.jpg)
 Fig. 12.5 Student 6's partial final concept map
 
 # Vee-Map 2:  $2^{\mathrm{nd}}$  attempt
@@ -2989,11 +2990,11 @@ $$
 \frac {\partial s}{\partial a _ {0}} = - 2 \sum_ {i = 0} ^ {N} \left(Y _ {i} - a _ {0} x ^ {2} - a _ {1} x - a _ {2}\right) = 0 \tag {3}
 $$
 
-(1)  $\rightarrow a_0\sum x_i^4 +a_1\sum x_i^3 +a_2\sum x_i^2 = \sum x_i^2 y_i$  
-(2)  $\rightarrow a_0\sum x_i^3 +a_1\sum x_i^2 +a_2 = \sum x_iy_i$  
+(1)  $\rightarrow a_0\sum x_i^4 +a_1\sum x_i^3 +a_2\sum x_i^2 = \sum x_i^2 y_i$
+(2)  $\rightarrow a_0\sum x_i^3 +a_1\sum x_i^2 +a_2 = \sum x_iy_i$
 (3)  $\begin{array}{r}\vdots \rightarrow a_0\sum x_i^2 +a_1\sum x_i + a_2 = \sum y_i \end{array}$
 
-(4) The introduction of  $S_{k} = \sum_{i=0}^{N} x_{i}^{k}$  and  $t_{k} = \sum_{i=0}^{N} y_{i} x_{i}^{k}, \rightarrow S_{4} = \sum_{i} x_{i}^{4}$ ,  $S_{3} = \sum x_{i}^{3}, t_{2} = \sum x_{i}^{2} y_{i}$  allows for simple notation.  
+(4) The introduction of  $S_{k} = \sum_{i=0}^{N} x_{i}^{k}$  and  $t_{k} = \sum_{i=0}^{N} y_{i} x_{i}^{k}, \rightarrow S_{4} = \sum_{i} x_{i}^{4}$ ,  $S_{3} = \sum x_{i}^{3}, t_{2} = \sum x_{i}^{2} y_{i}$  allows for simple notation.
 (5) Plots are a useful means of exhibiting the relationship between the given function  $Y_{i}$  and the approximating function  $P(x)$
 
 Concepts
@@ -3014,7 +3015,7 @@ $$
 
 # Interpretations (Transformations)
 
-1. By Principle 4,  $S_{3} = 2025$ .  $S_{4} = 15.333$ ,  $t_{2} = 1292.9$  
+1. By Principle 4,  $S_{3} = 2025$ .  $S_{4} = 15.333$ ,  $t_{2} = 1292.9$
 2. We know from Vee-Map 1 that:  $S_0 = 10, S_1 = 45$ ,  $S_2 = 285$ ,  $t_0 = 41.5$ ,  $t_1 = 194.1$ , thus by Principle 3, the normal equations are:
 
 $$
@@ -3031,19 +3032,19 @@ $$
 
 3. After some labour:  $a_2 = 3.73$ ,  $a_1 = 0.11$ ,  $a_0 = -0.0023$ .
 
-4. By Principle 2,  $P(x) = -0.0023x^{2} + 0.11x + 3.73$ .  
+4. By Principle 2,  $P(x) = -0.0023x^{2} + 0.11x + 3.73$ .
 5. By Principle 5,
 
-$x$ $P(x)$  
-0 3.73  
-1 3.84  
-2 3.94  
-3 4.04  
-4 4.3  
-5 4.22  
-6 4.31  
-7 4.39  
-8 4.46  
+$x$ $P(x)$
+0 3.73
+1 3.84
+2 3.94
+3 4.04
+4 4.3
+5 4.22
+6 4.31
+7 4.39
+8 4.46
 9 4.53
 
 # Records
@@ -3090,40 +3091,40 @@ There are still problematic areas that need attention mainly due to the newness 
 
 # References
 
-Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping and Vee mapping. Samoa: National University of Samoa.  
+Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping and Vee mapping. Samoa: National University of Samoa.
 Afamasaga-Fuata'i, K. (2002). A Samoan perspective on Pacific mathematics education. Keynote Address. In B. Barton, K. C. Irwin, M. Pfannkuch, & M. O. J. Thomas (Eds.), Mathematics education in the South Pacific. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 1–13). University of Auckland: New Zealand.
 
-Afamasaga-Fuata'i, K. (2005a). Mathematics education in Samoa: From past and current situations to future directions. Journal of Samoan Studies, 1, 125-140. Institute of Samoan Studies, National University of Samoa.  
-Afamasaga-Fuata'i, K. (2005b). Students' conceptual understanding and critical thinking? A case for concept maps and Vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer (Eds.), Making mathematics vital. Proceedings of the Twentieth Biennial Conference of the Australian Association of Mathematics Teachers (AAMT), January 17-21, 2005 (pp. 43-52). University of Technology, Sydney, Australia: AAMT.  
-Afamasaga-Fuata'i, K. (2006). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping. *Focus on Learning Problems in Mathematics*, 28(3 & 4), 58-89.  
-Afamasaga-Fuata'i, K. (2007). Using concept maps and Vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia: AAMT.  
-Afamasaga-Fuata'i, K., Meyer, P., & Falo, N. (2007). Primary students' diagnosed mathematical competence in semester one of their studies. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 83-92). University of Tasmania, Australia: MERGA.  
-Afamasaga-Fuata'i, K., Meyer, P., Falo, N., & Sufia, P. (2007). Future teachers' developing numeracy and mathematical competence as assessed by two diagnostic tests. Published on AARE's website: http://www.aare.edu.au/06pap/afa06011.pdf  
-Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht: Kluwer Academic.  
-Ball, D. (1993). With an eye on the mathematical horizon: Dilemmas of teaching elementary school mathematics. The Elementary School Journal, 93(4), 373-397.  
-Balacheff, N. (November, 1990). Beyond a psychological approach: The psychology of mathematics education. For the Learning of Mathematics, 10(3), 2-8.  
-Barton, B. (2001). How healthy is mathematics? Mathematics Education Research Journal, 13(3), 163-164.  
-Ernest, P. (1999). Forms of knowledge in mathematics and mathematics education: Philosophical and rhetorical perspectives. Educational Studies in Mathematics, 38, 67-83.  
-Gowin, D. B. (1981). Educating. Ithaca, NY: Cornell University Press.  
-Knuth, E., & Peressini, D. (2001). A theoretical framework for examining discourse in mathematics classrooms. *Focus on Learning Problems in Mathematics*, 23(2 & 3), 5-22.  
-Lesh, R. (2000). Beyond constructivism: identifying mathematical abilities that are most needed for success beyond school in an age of information. Mathematics Education Research Journal, 12(3), 177-195.  
-National Council of Teachers of Mathematics (NCTM) (2007). 2000 principles and standards. Retrieved on July 28, 2007 from http://my.nctm.org/standards/document/index.htm  
-New South Wales Board of Studies (NSW BOS) (2002). K-10 Mathematics Syllabus. Sydney, Australia: NSW BOS  
-Novak, J. D. (1985). Metalearning and metaknowledge strategies to help students learn how to learn. In L. H. West & A. L. Pines (Eds.), Cognitive structure and conceptual change (pp. 189-209). Orlando, FL: Academic Press.  
-Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Academic Press.  
+Afamasaga-Fuata'i, K. (2005a). Mathematics education in Samoa: From past and current situations to future directions. Journal of Samoan Studies, 1, 125-140. Institute of Samoan Studies, National University of Samoa.
+Afamasaga-Fuata'i, K. (2005b). Students' conceptual understanding and critical thinking? A case for concept maps and Vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer (Eds.), Making mathematics vital. Proceedings of the Twentieth Biennial Conference of the Australian Association of Mathematics Teachers (AAMT), January 17-21, 2005 (pp. 43-52). University of Technology, Sydney, Australia: AAMT.
+Afamasaga-Fuata'i, K. (2006). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping. *Focus on Learning Problems in Mathematics*, 28(3 & 4), 58-89.
+Afamasaga-Fuata'i, K. (2007). Using concept maps and Vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia: AAMT.
+Afamasaga-Fuata'i, K., Meyer, P., & Falo, N. (2007). Primary students' diagnosed mathematical competence in semester one of their studies. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 83-92). University of Tasmania, Australia: MERGA.
+Afamasaga-Fuata'i, K., Meyer, P., Falo, N., & Sufia, P. (2007). Future teachers' developing numeracy and mathematical competence as assessed by two diagnostic tests. Published on AARE's website: http://www.aare.edu.au/06pap/afa06011.pdf
+Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht: Kluwer Academic.
+Ball, D. (1993). With an eye on the mathematical horizon: Dilemmas of teaching elementary school mathematics. The Elementary School Journal, 93(4), 373-397.
+Balacheff, N. (November, 1990). Beyond a psychological approach: The psychology of mathematics education. For the Learning of Mathematics, 10(3), 2-8.
+Barton, B. (2001). How healthy is mathematics? Mathematics Education Research Journal, 13(3), 163-164.
+Ernest, P. (1999). Forms of knowledge in mathematics and mathematics education: Philosophical and rhetorical perspectives. Educational Studies in Mathematics, 38, 67-83.
+Gowin, D. B. (1981). Educating. Ithaca, NY: Cornell University Press.
+Knuth, E., & Peressini, D. (2001). A theoretical framework for examining discourse in mathematics classrooms. *Focus on Learning Problems in Mathematics*, 23(2 & 3), 5-22.
+Lesh, R. (2000). Beyond constructivism: identifying mathematical abilities that are most needed for success beyond school in an age of information. Mathematics Education Research Journal, 12(3), 177-195.
+National Council of Teachers of Mathematics (NCTM) (2007). 2000 principles and standards. Retrieved on July 28, 2007 from http://my.nctm.org/standards/document/index.htm
+New South Wales Board of Studies (NSW BOS) (2002). K-10 Mathematics Syllabus. Sydney, Australia: NSW BOS
+Novak, J. D. (1985). Metalearning and metaknowledge strategies to help students learn how to learn. In L. H. West & A. L. Pines (Eds.), Cognitive structure and conceptual change (pp. 189-209). Orlando, FL: Academic Press.
+Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Academic Press.
 Novak, J. (2002). Meaningful learning: the essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.
 
-Novak, J. D. (2004). A science education research program that led to the development of the concept mapping tool and new model for education. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the First International Conference on Concept Mapping September 14–17, 2004 (pp. 457–467). Dirección de Publicaciones de la Universidad Pública de Navarra: Spain.  
-Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them. Technical Report IHMC Cmap Tools 2006-01, Florida Institute for Human and Machine Cognition, 2006, available at: http://cmap.ihmc.us/publications/ResearchPapers/TheoryUnderlyingConceptMaps.pdf  
-Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge: Cambridge University Press.  
-Pfannkuch, M. (2001). Assessment of school mathematics: Teachers' perceptions and practices. Mathematics Education Research Journal, 13(3), 185-203.  
-Richards, J. (1991). Mathematical discussions. In E. von Glaserfeld (Ed.), Radical constructivism in mathematics education (pp. 13-51). London: Kluwer Academic Publishers.  
-Schell, V. (2001). Introduction: Language issues in the learning of mathematics. *Focus on Learning Problems in Mathematics*, 23(2 & 3), 1-4.  
-Thompson, A. G. (1984). The relationship of teachers' conceptions of mathematics and mathematics teaching to instructional practice. Educational Studies in Mathematics, 15:105-127.  
-Schoenfeld, A. H. (1996). In fostering communities of inquiry, must it matter that the teacher knows "the answer". For the Learning of Mathematics, 16(3), 569-600.  
-Steffe, L. P., & D'Ambrosio, B. S. (1996). Using teaching experiments to enhance understanding of students' mathematics. In D. F. Treagust, R. Duit, & B. F. Fraser (Eds.), Improving teaching and learning in science and mathematics (pp. 65-76). New York: Teachers College Press, Columbia University.  
-The Australian Association of Mathematics Teachers (AAMT) (2007). The AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved from http://www.aamt.edu.au/standards, on July 18, 2007.  
-Schoenfeld, A. H. (1991). What's all the fuss about problem solving? Zentralblatt Für Didaktik der Mathematik, 91(1), 4-8.  
+Novak, J. D. (2004). A science education research program that led to the development of the concept mapping tool and new model for education. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the First International Conference on Concept Mapping September 14–17, 2004 (pp. 457–467). Dirección de Publicaciones de la Universidad Pública de Navarra: Spain.
+Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them. Technical Report IHMC Cmap Tools 2006-01, Florida Institute for Human and Machine Cognition, 2006, available at: http://cmap.ihmc.us/publications/ResearchPapers/TheoryUnderlyingConceptMaps.pdf
+Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge: Cambridge University Press.
+Pfannkuch, M. (2001). Assessment of school mathematics: Teachers' perceptions and practices. Mathematics Education Research Journal, 13(3), 185-203.
+Richards, J. (1991). Mathematical discussions. In E. von Glaserfeld (Ed.), Radical constructivism in mathematics education (pp. 13-51). London: Kluwer Academic Publishers.
+Schell, V. (2001). Introduction: Language issues in the learning of mathematics. *Focus on Learning Problems in Mathematics*, 23(2 & 3), 1-4.
+Thompson, A. G. (1984). The relationship of teachers' conceptions of mathematics and mathematics teaching to instructional practice. Educational Studies in Mathematics, 15:105-127.
+Schoenfeld, A. H. (1996). In fostering communities of inquiry, must it matter that the teacher knows "the answer". For the Learning of Mathematics, 16(3), 569-600.
+Steffe, L. P., & D'Ambrosio, B. S. (1996). Using teaching experiments to enhance understanding of students' mathematics. In D. F. Treagust, R. Duit, & B. F. Fraser (Eds.), Improving teaching and learning in science and mathematics (pp. 65-76). New York: Teachers College Press, Columbia University.
+The Australian Association of Mathematics Teachers (AAMT) (2007). The AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved from http://www.aamt.edu.au/standards, on July 18, 2007.
+Schoenfeld, A. H. (1991). What's all the fuss about problem solving? Zentralblatt Für Didaktik der Mathematik, 91(1), 4-8.
 Wood, T. (1999). Creating a context for argument in mathematics class. Journal for Research in Mathematics Education, 30(2), 171-191.
 
 # Chapter 13 Concept Mapping: An Important Guide for the Mathematics Teaching Process
@@ -3170,17 +3171,17 @@ As can be seen in Fig. 13.2, a concept map combines particularities in a general
 
 The teacher interested in finding different teaching methods can construct his own concept maps once he has carried out a profound analysis of the structure of knowledge he wishes to teach. These maps represent for the teacher a guide, letting him know how to act in the classroom to achieve adequate learning. The maps show him what information he can present in order to respect the stages present in
 
-![](images/2467b31a32a1465c1ac637b874346f6b913ef2422cf2f1fb578be84ae0ac470e.jpg)  
+![](images/2467b31a32a1465c1ac637b874346f6b913ef2422cf2f1fb578be84ae0ac470e.jpg)
 Fig. 13.1 Structure of knowledge and concept maps
 
-![](images/9a5aaf271682fd766284b74fabe95605eddc7a8a64cf2809998084acb350afc2.jpg)  
+![](images/9a5aaf271682fd766284b74fabe95605eddc7a8a64cf2809998084acb350afc2.jpg)
 Fig. 13.2 Levels of generality
 
 the learning process (e.g., perception, representation and conceptualization) by contemplating the different levels of generalities and promoting the starting up of basic operations of thought (such as induction and deduction) favoring the development of competences in the student (i.e., cognitive development).
 
 The stages present in the process of conformation or learning of knowledge: perception, representation and conceptualization are, according to Roman and Díez (1998), stages or basic levels of learning. The authors consider that learning therefore implies articulating in the classroom adequately these three basic levels of learning. For them learning supposes the initiation of a cyclical process which first must be inductive (from perception to conceptualization) and later deductive (from concepts to facts). For the authors this learning is considered a Cyclical Process of Scientific Learning, (see Fig. 13.3). They recommend that teaching professionals must be respectful of this cyclical learning process, since in this way the students will make sense of what they are learning. Added to this is the idea that the student constructs knowledge by induction (from the particular to the general) and deduction (from the general to the particular).
 
-![](images/e21383a37d315dc4b2aadbc4cc5d2ffd2509cd84f7bcc0bff4c4d0172b1e0360.jpg)  
+![](images/e21383a37d315dc4b2aadbc4cc5d2ffd2509cd84f7bcc0bff4c4d0172b1e0360.jpg)
 Fig. 13.3 Cyclical process of scientific learning
 
 The following are a series of ideas through which Roman and Díez (1998) described the three basic levels of learning.
@@ -3203,7 +3204,7 @@ It is very common to find in the everyday teaching world methods that mainly fol
 
 To sum up, (see Fig. 13.4), it is suggested that concept maps are to be found in the structure of knowledge of mathematics. The concept maps are a guide to teaching that respects the basic levels of learning and that develop competence. In this sense, as the title of this chapter states, concept maps are an important guide for the teacher, for the process of teaching mathematics.
 
-![](images/b476f41206ec84c37b32ebadb32e18e7f50555c5ac9dff705dfd7caf11173d2f.jpg)  
+![](images/b476f41206ec84c37b32ebadb32e18e7f50555c5ac9dff705dfd7caf11173d2f.jpg)
 Fig. 13.4 Concept map: "A guide for the process of teaching"
 
 # Concept Mapping for Mathematics Teaching Process: Some Examples
@@ -3216,7 +3217,7 @@ If one reads down from top to bottom the concept map entitled "Critical point of
 
 These images that can be shown to the student represent a support leading to comprehension and the learning of concepts at a low level of generality. In this concept map the concepts extreme point or non-extreme point can be considered as
 
-![](images/be664a4abf02e4fc23eb7bc8818f6fbf39a857c07101d72e5e802f44bab44464.jpg)  
+![](images/be664a4abf02e4fc23eb7bc8818f6fbf39a857c07101d72e5e802f44bab44464.jpg)
 Fig. 13.5 Concept map: "Critical point of a function"
 
 concepts at a medium level of generality. The concept critical point of a function is at the highest level of generality in the map. As Ausubel explains, the inductive and deductive thought processes allow the disposition of information respecting conceptual hierarchies, achieving subordinate and supra-ordered learning, moving from the particular to the general and vice versa (Ausubel, 1976).
@@ -3235,7 +3236,7 @@ To further examine the topic of critical points, another map can be made showing
 
 Through the visual supports common aspects can be determined in order to arrive at the concept of the more generalized map: an extreme point (Fig. 13.6). The mathematics teacher must realize he can construct many concept maps according to the different contents of his course. Some will be more specific than others but they will always represent an important tool for his work and for stimulating the thought processes.
 
-![](images/6b3088a451c990cb51149c6a32d9e734c2c46d5e13347a6bd397b846385fe2a9.jpg)  
+![](images/6b3088a451c990cb51149c6a32d9e734c2c46d5e13347a6bd397b846385fe2a9.jpg)
 Fig. 13.6 Concept map: "Extreme point"
 
 # "Real Numbers" Concept Map
@@ -3244,7 +3245,7 @@ Figure 13.7 gives a useful map entitled "Real numbers". In the lower part there 
 
 From the point of view of Bruner and the theory of learning by discovery, starting from an enactive system (facts, examples and experiences) up to a symbolic system (concepts) passing through an iconic system (images) learning by discovery happens permitting the development of inductive processes (Bruner, 1988). The question of real numbers is important for the study of calculus. The concept map the student can create on this topic, after hearing the presentation and explanations of the teacher, in addition to setting in motion thought processes, represents an image that can be stored easily by the student to which he can return when necessary during his studies for the solution of problems.
 
-![](images/49610b3a10c1eb7c4cb7f210e80cdf3aac17150ef1d278164386eeaf4df3cd4e.jpg)  
+![](images/49610b3a10c1eb7c4cb7f210e80cdf3aac17150ef1d278164386eeaf4df3cd4e.jpg)
 Fig. 13.7 Concept map: "Real numbers" - Taken from http://canek.azc.uam.mx
 
 # "Displacement of Functions" Concept Map
@@ -3255,7 +3256,7 @@ On occasions, presentations or university courses begin from generalities. An ex
 
 But in mathematics there are not only concepts. The exercises and problems that naturally imply the handling of concepts are a part of the mathematical content too. Following the ideas and characteristics of concept maps, structures and networks can be constructed that contain information on the procedures to resolve exercises or part of them, where generalities or concepts appear as previously explained and learnt (see Figs. 13.9 and 13.10). It is common that at times one should wish to
 
-![](images/6980f27c3f9bd144e1ea6960e875ab4ad44dd03846ac8cb18e9bb4b33312e0f7.jpg)  
+![](images/6980f27c3f9bd144e1ea6960e875ab4ad44dd03846ac8cb18e9bb4b33312e0f7.jpg)
 Fig. 13.8 Concept map: “Displacements of functions” – graphs taken from http://canek.azc.uam.mx
 
 proceed in the lecture hall in one way or another, emphasizing certain aspects, in regard to the experiences and particular difficulties appreciated during the resolution of problems and exercises.
@@ -3272,12 +3273,12 @@ Simple concept maps like these, when prepared by the students, represent images 
 
 The concept map presented in Fig. 13.10 gives elements of a function and how to obtain them. This map shows applications of the concept of the derivate. The
 
-![](images/1ec36c6de507e66495a3d8548dd17ad9e5e2f17c4cf222dc9337cb7dcf48e60a.jpg)  
+![](images/1ec36c6de507e66495a3d8548dd17ad9e5e2f17c4cf222dc9337cb7dcf48e60a.jpg)
 Fig. 13.9 Concept map: "Solution of certain inequalities"
 
 ![](images/526c3f87bf536e22a5c4981bc12cc236e8d46ec16f31635cd8b7913acce6a2d3.jpg)
 
-![](images/aab61fdddb23c9ad1c79c77d4f3e4e58b0e43d909dc84bd4c89bdf01e987cfac.jpg)  
+![](images/aab61fdddb23c9ad1c79c77d4f3e4e58b0e43d909dc84bd4c89bdf01e987cfac.jpg)
 Fig. 13.10 Concept map: "Elements of a function"
 
 structure presents a series of graphs showing critical points, intervals of growth and decrease, points of inflection and intervals of concavity and convexity. Obtaining all this information about a function in particular is necessary to be able to obtain a graph with a certain precision for the said function. A map such as this suggests the information to be presented for the student to reach conclusions and to carry out processes of abstraction. A series of functions can be given to show that by resolving  $f'(x) = 0$ ,  $f'(x) > 0$ ,  $f'(x) < 0$ ,  $f''(x) = 0$ ,  $f''(x) > 0$  and/or  $f''(x) < 0$  a series of characteristics are obtained about  $f(x)$ . After this handling of particular information a formal mathematical explanation must be given about the application of the derivate. One must always remember that previous work with particular information permits a satisfactory assimilation of the later explanation about mathematical generalities.
@@ -3326,26 +3327,26 @@ The university domain needs new research that contemplates the learning and teac
 
 # References
 
-Ausubel, D. (1976). Psicologia educativa. Un punto de vista cognoscitivo. México: Trillas.  
-Bruner, J. (1988). Desarrollo cognitivo y educación. Madrid: Morata.  
-Casassus, J. (2003). La escuela y la (des)igualdad. Santiago de Chile: LOM Ediciones.  
-De Guzmán, M. (1996). El rincón de la pizarra. Madrid: Piramide.  
-De Guzmán, M. (1999). Para pensar mejor. Madrid: Piramide.  
-De Miguel Diaz, M. (coord), Alfaro Rocher, I. J., Apodaca Urquijo, P. M., Arias Blanco, J. M., García Jiménez, E., Lobato Fraile, C., et al. (2006). *Metodología de Ensenanza y Aprendizaje para el Desarrollo de Competencias*. Madrid: Alianza.  
-Hernández, P., Martínez, C., Da Fonseca, R., & Rubio, E. (2005). Aprendizaje, Competencias y Rendimiento en Educación Superior. Madrid: La Muralla.  
+Ausubel, D. (1976). Psicologia educativa. Un punto de vista cognoscitivo. México: Trillas.
+Bruner, J. (1988). Desarrollo cognitivo y educación. Madrid: Morata.
+Casassus, J. (2003). La escuela y la (des)igualdad. Santiago de Chile: LOM Ediciones.
+De Guzmán, M. (1996). El rincón de la pizarra. Madrid: Piramide.
+De Guzmán, M. (1999). Para pensar mejor. Madrid: Piramide.
+De Miguel Diaz, M. (coord), Alfaro Rocher, I. J., Apodaca Urquijo, P. M., Arias Blanco, J. M., García Jiménez, E., Lobato Fraile, C., et al. (2006). *Metodología de Ensenanza y Aprendizaje para el Desarrollo de Competencias*. Madrid: Alianza.
+Hernández, P., Martínez, C., Da Fonseca, R., & Rubio, E. (2005). Aprendizaje, Competencias y Rendimiento en Educación Superior. Madrid: La Muralla.
 González, J., & Díez, B. (2004). Las didácticas espécíficas: Consideraciones sobre原則 yactividades. Revista Complutense de Educación, 15(1), 253-286.
 
-Marton, & Saljo. (1976a). On qualitative differences in learning I – outcomes and processes. *British Journal of Educational Psychology*, 46, 4–11.  
-Marton, & Saljo. (1976b). On qualitative differences in learning II – Outcome as a function of the learner's conception of the task. *British Journal of Educational Psychology*, 46, 115–127.  
-Novak, J. D. (1998). Conocimiento y aprendizaje. Madrid: Alianza.  
-Novak, J. D., & Gowin, D. B. (1988). Aprender a(APRENDER). Barcelona: Martínez Roca.  
-Piaget, J. (1979). Tratado de Lógica y conocimiento scientífico. Epistemología de la matematica. Buenos Aires: Paidos.  
-Polya, G. (1981). Como plantar y resolver problemas. México: Ed. Trillas.  
-Román, M. (2005). Sociedad del conocimiento y refundación de la escuela desde el aula. Madrid: EOS.  
-Román, M., & Díez, E. (1998). Aprendizaje y-curriculum. Disenños curriculares aplicados. Santiago de Chile: FIDE.  
-Román, M., & Díez, E. (1999). Curiculum y evaluación: Disenós curriculares aplicados. Madrid: Complutense.  
-Sanz, A. P. (n.d.) In memoriam Miguel de Guzmán. Elultimate pitagórico. Retrieved on November 29, 2007 from http://platea.pntic.mec.es/aperez4/miguel/Miguel%20de%20Guzm%E1n.htm  
-Usabiaga, C., Fernandez, J., & Cerezuela, M. (1984). Aproximacióndidáctica al métodocientífico. Madrid: Narcea  
+Marton, & Saljo. (1976a). On qualitative differences in learning I – outcomes and processes. *British Journal of Educational Psychology*, 46, 4–11.
+Marton, & Saljo. (1976b). On qualitative differences in learning II – Outcome as a function of the learner's conception of the task. *British Journal of Educational Psychology*, 46, 115–127.
+Novak, J. D. (1998). Conocimiento y aprendizaje. Madrid: Alianza.
+Novak, J. D., & Gowin, D. B. (1988). Aprender a(APRENDER). Barcelona: Martínez Roca.
+Piaget, J. (1979). Tratado de Lógica y conocimiento scientífico. Epistemología de la matematica. Buenos Aires: Paidos.
+Polya, G. (1981). Como plantar y resolver problemas. México: Ed. Trillas.
+Román, M. (2005). Sociedad del conocimiento y refundación de la escuela desde el aula. Madrid: EOS.
+Román, M., & Díez, E. (1998). Aprendizaje y-curriculum. Disenños curriculares aplicados. Santiago de Chile: FIDE.
+Román, M., & Díez, E. (1999). Curiculum y evaluación: Disenós curriculares aplicados. Madrid: Complutense.
+Sanz, A. P. (n.d.) In memoriam Miguel de Guzmán. Elultimate pitagórico. Retrieved on November 29, 2007 from http://platea.pntic.mec.es/aperez4/miguel/Miguel%20de%20Guzm%E1n.htm
+Usabiaga, C., Fernandez, J., & Cerezuela, M. (1984). Aproximacióndidáctica al métodocientífico. Madrid: Narcea
 Vygotsky, L. S. (1979). El descarrollo de los procesos psicológicos superiores. Barcelona: Crítica.
 
 # Chapter 14 Concept Mapping and Vee Diagramming "Differential Equations"
@@ -3378,7 +3379,7 @@ The data that is presented in this chapter is that of a student (Nat) who chose 
 
 To explain the processes of knowledge construction and development of conceptual understanding, Ausubel-Novak's theory of meaningful learning was used as a guiding theoretical framework. In particular, its principles of assimilation and integration of new and old knowledge into existing knowledge structures assisted in making sense of the processes of meaningful learning. It is argued that when learning new knowledge, students may begin by trying to decide which established ideas within their cognitive structures (or patterns of meanings) are most relevant to it. The deliberate linking of concepts to relevant existing concepts may take place by progressive differentiation and/or integrative reconciliation (Ausubel, Hanesian, & Novak, 1998; Ausubel, 2000). To illustrate these processes, one of Nat's concept maps is used. Figure 14.1 shows a partial view (left vertical segment) of Nat's first concept map in which the concept “ $a_0 dy/dx + a_1 y = Q(x)$ ” is progressively differentiated into two links to connect to concepts “ $Q(x) = 0$ ” and “ $Q(x) \neq 0$ .” In
 
-![](images/5a3a45125a02df2f91be9dcd66d61d047d22dfbd4d45d58515a73a6f1b93d146.jpg)  
+![](images/5a3a45125a02df2f91be9dcd66d61d047d22dfbd4d45d58515a73a6f1b93d146.jpg)
 Fig. 14.1 Left vertical segment - Nat's first concept map
 
 contrast, the two concepts "Function  $(x,y)$ " and "Integrating Factor" are integratively reconciled with the less general concept "General Solution."
@@ -3411,7 +3412,7 @@ Data collected included Nat's progressive concept maps (4 versions) and progress
 
 A review of the literature shows different ways of assessing and scoring concept maps (Novak & Gowin, 1984; Ruiz-Primo & Shavelson, 1996; Liyanage & Thomas, 2002) however for this case study, a qualitative approach is adopted using only counts of occurrences of each criterion. Nat's concept maps are assessed mainly in terms of the complexity of the network structure (structure) of concepts, nature of the contents (contents) within concept boxes and valid propositions (propositions). The structure criteria indicate the depth of differentiation and extent of integration between concepts, whilst the contents criteria reflect the nature of Nat's perceptions of what constitutes mathematical knowledge. Tables 14.1 and 14.2 list the relevant breakdown within each category (conceptual elements, inappropriate entries, and
 
-Table 14.1 Contents and propositions criteria of Nat's concept maps  
+Table 14.1 Contents and propositions criteria of Nat's concept maps
 
 <table><tr><td></td><td>First map Count</td><td>Final map Count</td><td>% Increase</td></tr><tr><td colspan="4">Criteria: Contents</td></tr><tr><td colspan="4">A: Conceptual contents</td></tr><tr><td>Concept names/labels</td><td>31</td><td>27</td><td>-13</td></tr><tr><td>Concept symbols/expressions</td><td>4</td><td>13</td><td>225</td></tr><tr><td>Symbols</td><td>0</td><td>4</td><td></td></tr><tr><td>Mathematical statements/expressions</td><td>8</td><td>13</td><td>63</td></tr><tr><td>Names of methods</td><td>2</td><td>6</td><td>200</td></tr><tr><td>General formulas/expressions</td><td>0</td><td>8</td><td>800</td></tr><tr><td>Formula concepts</td><td>0</td><td>1</td><td>100</td></tr><tr><td>Total A - Conceptual contents</td><td>45 (86.5%)</td><td>72 (88.9%)</td><td>2.4</td></tr><tr><td colspan="4">B: Inappropriate entries</td></tr><tr><td>Procedures</td><td>0</td><td>1</td><td></td></tr><tr><td>Linking words used in concept boxes</td><td>0</td><td>2</td><td></td></tr><tr><td>Redundant entries</td><td>7</td><td>2</td><td></td></tr><tr><td>Total B - Inappropriate entries</td><td>7 (13.5%)</td><td>5 (6.2%)</td><td>-7.3</td></tr><tr><td colspan="4">C: Definitional entries</td></tr><tr><td>Parts of definitions</td><td>0</td><td>3</td><td></td></tr><tr><td>TOTAL C - definitional entries</td><td>0</td><td>3</td><td></td></tr><tr><td colspan="4">D: Examples</td></tr><tr><td>Examples</td><td>0</td><td>1</td><td></td></tr><tr><td>Total D - Examples</td><td>0</td><td>1</td><td></td></tr><tr><td>Totals A+B+C+D</td><td>52</td><td>81</td><td>55.8</td></tr><tr><td colspan="4">Criteria: Propositions</td></tr><tr><td>Valid propositions</td><td>33</td><td>54</td><td>63.6</td></tr><tr><td>Invalid propositions</td><td>16</td><td>19</td><td>18.8</td></tr></table>
 
@@ -3421,7 +3422,7 @@ Valid propositions are mathematically meaningful statements formed by connecting
 
 The occurrences of lengthy definitional phrases (definitional entries) although conceptual indicate students have not completely analyzed them to identify major concepts. Other types of entries are generally categorized as inappropriate entries since they require further modifications and revisions from their existing forms to make them more suitable. For example, procedural entries include those that specifically describe a procedural step, which are more appropriate on Vee diagrams. Redundant entries indicate students' tendency to learn information verbatim, and/or in isolation instead of seeking out meaningful integrative cross-links with the first occurrence of the concept elsewhere in the map. Inappropriate linking word entries are those that contain words more suitable as linking words; these indicate students' difficulties to distinguish between mathematical concepts and descriptive phrases.
 
-Table 14.2 Structural criteria of Nat's concept maps  
+Table 14.2 Structural criteria of Nat's concept maps
 
 <table><tr><td></td><td>First map Count</td><td>Final map Count</td><td>% Increase</td></tr><tr><td colspan="4">Criteria: Structure</td></tr><tr><td>Main branches</td><td>8</td><td>8</td><td>0</td></tr><tr><td>Sub-branches</td><td>13</td><td>17</td><td>31</td></tr><tr><td>Average hierarchical levels per sub-branch</td><td>7</td><td>11</td><td>57</td></tr><tr><td colspan="4">Integrative cross-links</td></tr><tr><td>Between (sub-)branches at same level</td><td>2</td><td>2</td><td></td></tr><tr><td>Between (sub-)branches at different levels</td><td>1</td><td>12</td><td></td></tr><tr><td>Total – Cross-links</td><td>3</td><td>14</td><td>366</td></tr><tr><td colspan="4">Multiple branching nodes</td></tr><tr><td colspan="4">Progressive differentiation links from nodes at:</td></tr><tr><td>Level 2</td><td>5</td><td>2</td><td></td></tr><tr><td>Level 3</td><td>2</td><td>3</td><td></td></tr><tr><td>Level 4</td><td>2,2,2</td><td>3</td><td></td></tr><tr><td>Level 5</td><td></td><td>5,2,2</td><td></td></tr><tr><td>Level 6</td><td>2,2</td><td>2,2</td><td></td></tr><tr><td>Level 7</td><td>2,2</td><td>7</td><td></td></tr><tr><td>Level 8</td><td></td><td>2</td><td></td></tr><tr><td>Level 9</td><td></td><td>2</td><td></td></tr><tr><td>Level 10</td><td></td><td>2,3</td><td></td></tr><tr><td>14</td><td></td><td>2</td><td></td></tr><tr><td>TOTAL Multiple branching nodes</td><td>9</td><td>14</td><td>56</td></tr></table>
 
@@ -3433,21 +3434,21 @@ Specific significant increases were noted with the sub-criteria: concept symbols
 
 Figure 14.1 shows the left vertical segments of Nat's first map that attracted various critical comments during the first group presentation. His peers felt it was not illustrating sufficient information to guide the solution of a differential equation problem. One of the comments referred to the inappropriate use of important concepts such as "differential form" and "derivative form" as linking words
 
-![](images/81cd5556fdccfa39791c7abfc748ad42f67d1447910d0ad4920fd10eb9c71a0c.jpg)  
+![](images/81cd5556fdccfa39791c7abfc748ad42f67d1447910d0ad4920fd10eb9c71a0c.jpg)
 Fig. 14.2 Left vertical segments - Nat's final concept map
 
 in the propositions: "First Order Linear Differential Equation" differential form "  $M(x,y)dx + N(x,y)dy = 0$  " and "First Order Linear Differential Equation" derivative form "  $a_0dy/dx + a_1y = Q(x)$ .
 
 Over the semester, as a consequence of critiques and feedback from his peers and researcher, these segments (Fig. 14.1) evolved to its final form shown in Fig. 14.2 in
 
-![](images/19ea3788cd5338e5355019dae2fda3824e38818a8528fc4e0c225c13d5bf3602.jpg)  
+![](images/19ea3788cd5338e5355019dae2fda3824e38818a8528fc4e0c225c13d5bf3602.jpg)
 Fig. 14.3 Middle & right vertical segments - Nat's first concept map
 
 which the above propositions were subsequently revised to read: "First Order Linear Differential Equations" may be expressed in "Derivative Form  $\frac{dy}{dx} + P(x, y)y = Q(x)$ " and "First Order Linear Differential Equations" may be expressed in "Differential Form:  $M(x, y)dx + N(x, y)dy = 0$ " Fig. 14.2 also shows a more integrated and differentiated network structure that included 9 more new nodes, much higher average number of hierarchical levels and twice as many multiple branching nodes. In terms of the structure criteria, data and partial views in Figs. 14.2 and 14.4 illustrate that the structural complexity of Nat's final map had changed significantly compared to the first one.
 
 In spite of the unchanged number of main branches, the final map was significantly more complex. For example, there was a substantial increase (366%) in the number of integrative cross-links, predominantly more progressive differentiation of nodes at various levels of the hierarchy (Levels 2-10 and Level 14, Table 14.2), a 56% increase in multiple branching nodes, a 31% increase in the number of subbranches and a 57% increase in the average number of hierarchical levels. Table 14.1 shows that the number of valid propositions also increased significantly (63.6%) by the final map. Some of the changes (compare Figs. 14.3 and 14.4) were deletions of nodes (e.g. independent variable, dependent variable), and merging of two branches (second order linear differential equation, nth order linear differential equation) to give a more enriched, differentiated and integrated concept hierarchy as partially shown in Fig. 14.4.
 
-![](images/04386085e75bbee83ec7dac8ec61bba3d42ed7fee6b69e6106e009625e2b5682.jpg)  
+![](images/04386085e75bbee83ec7dac8ec61bba3d42ed7fee6b69e6106e009625e2b5682.jpg)
 Fig. 14.4 Middle & right vertical segments - Nat's final concept map
 
 # Vee Diagram Data Analysis
@@ -3466,7 +3467,7 @@ Differential Equations First Order Linear Differential Equations
 
 \*\*
 
-(1) where  $\mathrm{P}(\mathbf{x})$  and  $\mathrm{Q}(\mathbf{x})$  are functions of  $\mathbf{x}$ .  
+(1) where  $\mathrm{P}(\mathbf{x})$  and  $\mathrm{Q}(\mathbf{x})$  are functions of  $\mathbf{x}$ .
 2. Expressing (1) in the form:  $\mathrm{M}(\mathbf{x},\mathbf{y})\mathrm{dx} + \mathrm{N}(\mathbf{x},\mathbf{y})\mathrm{dy} = 0$
 
 $\left[\mathrm{P}(\mathrm{x})\mathrm{y} - (\mathrm{x})\right]\mathrm{dx} + 1\mathrm{dy} = 0$  where  $\mathbf{M}(\mathbf{x},\mathbf{y}) = \mathbf{P}(\mathbf{x},\mathbf{y})\mathbf{y} - (\mathbf{x})$  &  $\mathrm{N(x,y) = 1}$  Equation (1) is an exact (3) If not exact, an integrating factor  $(x)$  ,is used to transform it into an "EXACT" D.E.:
@@ -3547,7 +3548,7 @@ consider not only the methods of solving the problem but including as well the a
 
 As Gowin (1981) explains: "The structure of knowledge may be characterized (in any field ...) by its telling questions, key concepts and conceptual systems; by its reliable methods and techniques of work ..." (pp. 87-88). Therefore, a Vee diagram is a potentially useful tool for not only assessing students' proficiency in solving a problem but it can assess the depth and extent of students' conceptual understanding of mathematical principles and concepts underpinning the methods. A completed Vee diagram, consequently, provides a record of both the conceptual and methodological information involved in solving a problem.
 
-Table 14.3 Guiding questions for Vee diagrams of mathematics problems  
+Table 14.3 Guiding questions for Vee diagrams of mathematics problems
 
 <table><tr><td>Sections</td><td>Guiding Questions</td></tr><tr><td>Theory</td><td>What theory(ies), major principles govern the methods?</td></tr><tr><td>Principles</td><td>How are the concepts related? What general rule, principle, formula do we need to use?</td></tr><tr><td>Concepts</td><td>What are the concepts used in the problem statement? Relevant concepts required to solve problem?</td></tr><tr><td>Event/Object</td><td>What is the problem statement?</td></tr><tr><td>Records</td><td>What are the “givens” (information) in the problem?</td></tr><tr><td>Transformations</td><td>How can we make use of the theories/principles/concepts/records to determine a method?</td></tr><tr><td>Knowledge claims</td><td>What is the answer to the focus question given the event?</td></tr><tr><td>Focus question</td><td>What is the problem asking about?</td></tr></table>
 
@@ -3561,7 +3562,7 @@ For the sections, Event/Object, Focus Questions, and Records all entries were ap
 
 # CONCEPTUAL SIDE
 
-![](images/51a9818c427beb37997089663cf91612dd68a4ed1595d234f74284462d97c141.jpg)  
+![](images/51a9818c427beb37997089663cf91612dd68a4ed1595d234f74284462d97c141.jpg)
 Fig. 14.6 Nat's Vee diagram - Problem 3 (P3)
 
 However, entries for Principles required some reflection and consideration. For the first problem, his initial diagram only included 3 of the listed principles. A fourth one was added in the final version when he realized that none of the 3 listed principles justified part (v) under Transformations. This was a positive self-realization indicative of a growing confidence in his skills to complete the Vee diagram. However, he did not pick up the missing principle underlying the normalization step in part (i) of the transformations.
@@ -3598,37 +3599,37 @@ The results of the case study suggest that active organization of one's knowledg
 
 # References
 
-Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping and Vee mapping. Samoa: National University of Samoa.  
-Afamasaga-Fuata'i, K. (1999). Teaching mathematics and science using the strategies of concept mapping and Vee mapping. *Problems, Research, and Issues in Science, Mathematics, Computing and Statistics*, 2(1), 1-53. Journal of the Science Faculty at the National University of Samoa.  
-Afamasaga-Fuata'i, K. (2001). Enhancing students' understanding of mathematics using concept maps & Vee diagrams. Paper presented at the International Conference on Mathematics Education (ICME), Northeast Normal University of China, Changchun, China, August 16-22, 2001.  
-Afamasaga-Fuata'i, K. (2002). A Samoan perspective on Pacific mathematics education. Keynote Address. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 1–13). New Zealand: University of Auckland.  
+Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping and Vee mapping. Samoa: National University of Samoa.
+Afamasaga-Fuata'i, K. (1999). Teaching mathematics and science using the strategies of concept mapping and Vee mapping. *Problems, Research, and Issues in Science, Mathematics, Computing and Statistics*, 2(1), 1-53. Journal of the Science Faculty at the National University of Samoa.
+Afamasaga-Fuata'i, K. (2001). Enhancing students' understanding of mathematics using concept maps & Vee diagrams. Paper presented at the International Conference on Mathematics Education (ICME), Northeast Normal University of China, Changchun, China, August 16-22, 2001.
+Afamasaga-Fuata'i, K. (2002). A Samoan perspective on Pacific mathematics education. Keynote Address. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 1–13). New Zealand: University of Auckland.
 Afamasaga-Fuata'i, K. (2004). Concept maps and Vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the First International Conference on Concept Mapping (Vol. 1, pp. 13-20). Navarra, Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.
 
-Afamasaga-Fuata'i, K. (2005). Students' conceptual understanding and critical thinking? A case for concept maps and Vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer (Eds.), Making mathematics vital. Proceedings of the Twentieth Biennial Conference of the Australian Association of Mathematics Teachers (AAMT) (Vol. 1, pp. 43-52). Sydney, Australia: University of Technology.  
-Afamasaga-Fuata'i, K. (2006a). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping. *Focus on Learning Problems in Mathematics*, 28(3 & 4), 58-89.  
-Afamasaga-Fuata'i, K. (2006b). Innovatively developing a teaching sequence using concept maps. In A. Canas & J. Novak (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the Second International Conference on Concept Mapping (Vol. 1, pp. 272-279). San Jose, Costa Rica: Universidad de Costa Rica.  
-Afamasaga-Fuata'i, K. (2007a). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson, & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania, Australia: MERGA.  
-Afamasaga-Fuata'i, K. (2007b). Using concept maps and Vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia: AAMT.  
-Afamasaga-Fuata'i, K., & Cambridge, L. (2007). Concept maps and Vee diagrams as tools to understand better the "division" concept in primary mathematics. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 112-120). University of Tasmania, Australia: AAMT.  
-Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht: Kluwer Academic.  
-Ausubel, D. P., Novak, J. D., & Hanesian, H. (1978). Educational psychology: A cognitive view. New York: Holt, Rhinehart and Winston. Reprinted 1986, New York: Werbel and Peck.  
-Brahier, D. J. (2005). Teaching secondary and middle school mathematics (2nd ed.). New York: Pearson Education, Inc.  
-Bransford, J., Brown, A., & Cocking, R. (2000). How people learn: Brain, mind, experience, and school. Washington, DC: National Academy Press.  
-Ernest, P. (1999). Forms of knowledge in mathematics and mathematics education: Philosophical and rhetorical perspectives. Educational Studies in Mathematics, 38, 67-83.  
-Gowin, D. B. (1981). Educating. Ithaca, NY: Cornell University Press.  
-Hansson, O. (2005). Preservice teachers' view on  $y = x + 5$  and  $y = \pi r^2$  expressed through the utilization of concept maps: A study of the concept of function. In H. Chick & J. L. Vincent (Eds.), Proceedings of the 29th conference of the international group for the psychology of mathematics education (Vol. 3, pp. 97-104). Melbourne: PME.  
-Knuth, E., & Peressini, D. (2001). A theoretical framework for examining discourse in mathematics classrooms. *Focus on Learning Problems in Mathematics*, 23(2 & 3), 5-22.  
-Liyanage, S., & Thomas, M. (2002). Characterising secondary school mathematics lessons using teachers' pedagogical concept maps. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 425–432). New Zealand: University of Auckland.  
-Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.). (1998). Teaching science for understanding. A human constructivistic view. San Diego, CA, London: Academic Press.  
+Afamasaga-Fuata'i, K. (2005). Students' conceptual understanding and critical thinking? A case for concept maps and Vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer (Eds.), Making mathematics vital. Proceedings of the Twentieth Biennial Conference of the Australian Association of Mathematics Teachers (AAMT) (Vol. 1, pp. 43-52). Sydney, Australia: University of Technology.
+Afamasaga-Fuata'i, K. (2006a). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping. *Focus on Learning Problems in Mathematics*, 28(3 & 4), 58-89.
+Afamasaga-Fuata'i, K. (2006b). Innovatively developing a teaching sequence using concept maps. In A. Canas & J. Novak (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the Second International Conference on Concept Mapping (Vol. 1, pp. 272-279). San Jose, Costa Rica: Universidad de Costa Rica.
+Afamasaga-Fuata'i, K. (2007a). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson, & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania, Australia: MERGA.
+Afamasaga-Fuata'i, K. (2007b). Using concept maps and Vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia: AAMT.
+Afamasaga-Fuata'i, K., & Cambridge, L. (2007). Concept maps and Vee diagrams as tools to understand better the "division" concept in primary mathematics. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 112-120). University of Tasmania, Australia: AAMT.
+Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht: Kluwer Academic.
+Ausubel, D. P., Novak, J. D., & Hanesian, H. (1978). Educational psychology: A cognitive view. New York: Holt, Rhinehart and Winston. Reprinted 1986, New York: Werbel and Peck.
+Brahier, D. J. (2005). Teaching secondary and middle school mathematics (2nd ed.). New York: Pearson Education, Inc.
+Bransford, J., Brown, A., & Cocking, R. (2000). How people learn: Brain, mind, experience, and school. Washington, DC: National Academy Press.
+Ernest, P. (1999). Forms of knowledge in mathematics and mathematics education: Philosophical and rhetorical perspectives. Educational Studies in Mathematics, 38, 67-83.
+Gowin, D. B. (1981). Educating. Ithaca, NY: Cornell University Press.
+Hansson, O. (2005). Preservice teachers' view on  $y = x + 5$  and  $y = \pi r^2$  expressed through the utilization of concept maps: A study of the concept of function. In H. Chick & J. L. Vincent (Eds.), Proceedings of the 29th conference of the international group for the psychology of mathematics education (Vol. 3, pp. 97-104). Melbourne: PME.
+Knuth, E., & Peressini, D. (2001). A theoretical framework for examining discourse in mathematics classrooms. *Focus on Learning Problems in Mathematics*, 23(2 & 3), 5-22.
+Liyanage, S., & Thomas, M. (2002). Characterising secondary school mathematics lessons using teachers' pedagogical concept maps. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 425–432). New Zealand: University of Auckland.
+Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.). (1998). Teaching science for understanding. A human constructivistic view. San Diego, CA, London: Academic Press.
 Moschkovitch, J. (2004). Using two languages when learning mathematics. Retrieved on February 20, 2008 from http://math.arizona.edu/~cemela/spanish/content/workingpapers/UsingTwoLanguages.pdf
 
-Novak, J. D. (1985). Metalearning and metaknowledge strategies to help students learn how to learn. In L. H. West & A. L. Pines (Eds.), Cognitive structure and conceptual change (pp. 189-209). Orlando, FL: Academic Press.  
-Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Academic Press.  
-Novak, J. (2002). Meaningful learning: the essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.  
-Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge: Cambridge University Press.  
-Richards, J. (1991). Mathematical discussions. In E. von Glaserfeld (Ed.), Radical constructivism in mathematics education (pp. 13-51). London: Kluwer Academic Publishers.  
-Ruiz-Primo, M. A., & Shavelson, R. J. (1996). Problems and issues in concept maps in science assessment. Journal of Research in Science Teaching, 33(6), 569-600.  
-Steffe, L. P., & D'Ambrosio, B. S. (1996). Using teaching experiments to enhance understanding of students' mathematics. In D. F. Treagust, R. Duit, & B. F. Fraser (Eds.), Improving teaching and learning in science and mathematics (pp. 65-76). New York: Teachers College Press, Columbia University.  
+Novak, J. D. (1985). Metalearning and metaknowledge strategies to help students learn how to learn. In L. H. West & A. L. Pines (Eds.), Cognitive structure and conceptual change (pp. 189-209). Orlando, FL: Academic Press.
+Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Academic Press.
+Novak, J. (2002). Meaningful learning: the essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.
+Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge: Cambridge University Press.
+Richards, J. (1991). Mathematical discussions. In E. von Glaserfeld (Ed.), Radical constructivism in mathematics education (pp. 13-51). London: Kluwer Academic Publishers.
+Ruiz-Primo, M. A., & Shavelson, R. J. (1996). Problems and issues in concept maps in science assessment. Journal of Research in Science Teaching, 33(6), 569-600.
+Steffe, L. P., & D'Ambrosio, B. S. (1996). Using teaching experiments to enhance understanding of students' mathematics. In D. F. Treagust, R. Duit, & B. F. Fraser (Eds.), Improving teaching and learning in science and mathematics (pp. 65-76). New York: Teachers College Press, Columbia University.
 Williams, C. G. (1998). Using concept maps to access conceptual knowledge of function. Journal for Research in Mathematics Education, 29(4), 414-421.
 
 # Chapter 15 Using Concept Maps to Mediate Meaning in Undergraduate Mathematics
@@ -3705,13 +3706,13 @@ Within the overall rating framework, a rating of 1 signifies a map that is conce
 
 The good maps (top-3) indicate high proportions of valid propositions (rating 1) with 4 increased structural sub-criteria out of 5 (rating 2) while the bottom map (rating of 4) had a high proportion of invalid propositions and only 3 increased structural sub-criteria. The below-average maps (rating of 3.5) were mainly due to few (1 or 2) increased structural sub-criteria with less than  $70\%$  valid propositions.
 
-Table 15.1 Concept map data for students 1-3  
+Table 15.1 Concept map data for students 1-3
 
 <table><tr><td>Student Cmap Criteria</td><td>1 First</td><td>1 Final</td><td>2 First</td><td>2 Final</td><td>3 First</td><td>3 Final</td><td>4 First</td><td>4 Final</td><td>5 First</td><td>5 Final</td></tr><tr><td colspan="11">1. Contents</td></tr><tr><td colspan="11">Valid nodes</td></tr><tr><td>- Concepts</td><td>35 (67)</td><td>30 (65)</td><td>17 (44)</td><td>32 (56)</td><td>73 (99)</td><td>83 (83)</td><td>40 (59)</td><td>66 (99)</td><td>44 (86)</td><td>50 (74)</td></tr><tr><td>- Examples</td><td>5 (10)</td><td>1 (2)</td><td>19 (49)</td><td>16 (28)</td><td>0 (0)</td><td>6 (6)</td><td>10 (15)</td><td>0 (0)</td><td>0 (0)</td><td>0 (0)</td></tr><tr><td colspan="11">Invalid nodes</td></tr><tr><td>- Definitional</td><td>4 (8)</td><td>14 (30)</td><td>1 (3)</td><td>8 (14)</td><td>1 (1)</td><td>8 (8)</td><td>12 (18)</td><td>1 (1)</td><td>1 (2)</td><td>15 (22)</td></tr><tr><td>- Inappropriate</td><td>8 (15)</td><td>1 (2)</td><td>2 (5)</td><td>1 (2)</td><td>0 (0)</td><td>3 (3)</td><td>6 (9)</td><td>0 (0)</td><td>6 (12)</td><td>3 (4)</td></tr><tr><td>Total nodes</td><td>52</td><td>46</td><td>39</td><td>57</td><td>74</td><td>100</td><td>68</td><td>67</td><td>51</td><td>68</td></tr><tr><td colspan="11">2. Propositions</td></tr><tr><td>Valid propositions</td><td>27 (52)</td><td>26 (44↓)</td><td>25 (69)</td><td>29 (49↓)</td><td>77 (96)</td><td>106 (88↓)</td><td>32 (51)</td><td>85 (97↑)</td><td>35 (66)</td><td>54 (67↑)</td></tr><tr><td>Invalid propositions</td><td>25 (48)</td><td>33 (56)</td><td>11 (31)</td><td>30 (51)</td><td>3 (4)</td><td>14 (12)</td><td>31 (49)</td><td>3 (3)</td><td>18 (34)</td><td>27 (33)</td></tr><tr><td>Total propositions</td><td>52</td><td>59</td><td>36</td><td>59</td><td>80</td><td>120</td><td>63</td><td>88</td><td>53</td><td>81</td></tr><tr><td colspan="11">3. Structural</td></tr><tr><td>Cross-links</td><td>3</td><td>10 (↑)</td><td>0</td><td>6 (↑)</td><td>9</td><td>10 (↑)</td><td>4</td><td>17 (↑)</td><td>6</td><td>22 (↑)</td></tr><tr><td>Sub-branches</td><td>17</td><td>14 (↓)</td><td>9</td><td>19 (↑)</td><td>26</td><td>33 (↑)</td><td>22</td><td>19 (↓)</td><td>9</td><td>32 (↑)</td></tr><tr><td>Average H/levels per sub-branch</td><td>6</td><td>8 (↑)</td><td>6</td><td>8 (↑)</td><td>10</td><td>9 (↓)</td><td>7</td><td>8 (↑)</td><td>8</td><td>7 (↓)</td></tr><tr><td>Main branches</td><td>6</td><td>6 (↔)</td><td>5</td><td>7 (↑)</td><td>5</td><td>8 (↑)</td><td>4</td><td>5 (↑)</td><td>6</td><td>9 (↑)</td></tr><tr><td>M/B nodes</td><td>8</td><td>10 (↑)</td><td>5</td><td>8 (↑)</td><td>18</td><td>19 (↑)</td><td>9</td><td>18 (↑)</td><td>9</td><td>19 (↑)</td></tr></table>
 
 Key: H/levels, Hierarchical levels; M/B, Multiple branching; Count, (% of total number); ↓, Decrease; ↑, Increase; ↔, No change.
 
-Table 15.2 Concept map data for students 4-6  
+Table 15.2 Concept map data for students 4-6
 
 <table><tr><td>Student
 Map criteria</td><td>6
@@ -3728,7 +3729,7 @@ Final</td></tr><tr><td colspan="11">1. Contents</td></tr><tr><td colspan="11">Va
 
 Key: H/levels, Hierarchical levels; M/B, Multiple branching; Count, (% of total number); ↓, Decrease; ↑, Increase; ↔, No change.
 
-Table 15.3 Summary of overall ratings for the final concept maps  
+Table 15.3 Summary of overall ratings for the final concept maps
 
 <table><tr><td rowspan="2">Student # – Name</td><td colspan="2">Criteria</td><td colspan="2">Final concept map</td></tr><tr><td>Valid Propositions</td><td>Structural Complexity</td><td>Overall Rating</td><td>Type of concept map</td></tr><tr><td>3 – Fia</td><td>1</td><td>2</td><td>1.5</td><td>Good</td></tr><tr><td>4 – Vae</td><td>1</td><td>2</td><td>1.5</td><td>Good</td></tr><tr><td>9 – Toa</td><td>1</td><td>2</td><td>1.5</td><td>Good</td></tr><tr><td>5 – Heku</td><td>3</td><td>2</td><td>2.5</td><td>Above average</td></tr><tr><td>2 – Loke</td><td>5</td><td>1</td><td>3</td><td>Average</td></tr><tr><td>7 – Fili</td><td>3</td><td>3</td><td>3</td><td>Average</td></tr><tr><td>8 – Pasi</td><td>3</td><td>4</td><td>3.5</td><td>Below average</td></tr><tr><td>6 – Santo</td><td>2</td><td>5</td><td>3.5</td><td>Below average</td></tr><tr><td>10 – Salo</td><td>2</td><td>5</td><td>3.5</td><td>Below average</td></tr><tr><td>1 – Pene</td><td>5</td><td>3</td><td>4</td><td>Poor</td></tr></table>
 
@@ -3748,7 +3749,7 @@ Figures 15.1 and 15.2 show sections of the final map, which depict general and m
 
 An example of a linking-word-type of inappropriate entry (Fig. 15.1) is "used as a measure of accuracy" while those exemplifying definitional-type are "Rounding up of numbers due to the given decimal place" and "When a number is automatically
 
-![](images/0b92f36b9b1c0c36af27b1b7f15031255cae9458f50af2be580ce2c8814473f2.jpg)  
+![](images/0b92f36b9b1c0c36af27b1b7f15031255cae9458f50af2be580ce2c8814473f2.jpg)
 Fig. 15.1 Partial view of student 3's final concept map
 
 chopped or cut-off due to not enough string place". The last two entries require further analysis to provide more precise concept labels. Figure 15.2 displays more examples of progressive differentiation and clear hierarchical arrangements of nodes.
@@ -3757,15 +3758,15 @@ chopped or cut-off due to not enough string place". The last two entries require
 
 Vae's first map showed inclusion of complete formal definitions as concept labels (see partial view, Fig. 15.3), which the first peer critique highlighted as problematic.
 
-![](images/a7a9db6f4a38156b81372065ea93b5e46f53417597879ed66143309b6911af16.jpg)  
+![](images/a7a9db6f4a38156b81372065ea93b5e46f53417597879ed66143309b6911af16.jpg)
 Fig. 15.2 Partial view of student 3's final concept map
 
 As a result of revisions, and critiques, Vae's map progressively evolved into a more conceptual one (increased valid nodes from 74 to  $99\%$ ) with substantially increased valid propositions (from 51 to  $97\%$ ), structurally expanded (main branches increased from 4 to 5), more integrated (cross-links increased from 4 to
 
-![](images/f2cc42012c486701c1b938cc71e28cccd88e57618669a0977b7c51277e1cbfd2.jpg)  
+![](images/f2cc42012c486701c1b938cc71e28cccd88e57618669a0977b7c51277e1cbfd2.jpg)
 Fig. 15.3 Partial view of student 4's first concept map
 
-![](images/053aeed87fd4f67ba9699e5a8e1d48c522caeb20a827bf04ab978a9caf88751c.jpg)  
+![](images/053aeed87fd4f67ba9699e5a8e1d48c522caeb20a827bf04ab978a9caf88751c.jpg)
 Fig. 15.4 Partial view of student 4's final concept map
 
 17), more differentiated (increased multiple branching from 9 to 18 and increased average hierarchical levels per sub-branch from 7 to 8), and more compact (reduced sub-branches from 22 to 19) (Fig. 15.4).
@@ -3778,10 +3779,10 @@ Evidently, continuous revisions enhanced the hierarchical interconnections such 
 
 Toa felt challenged to construct a map that included ND, Poisson distributions (PD) and binomial distributions (BD). He wrote: (it was) hard to think of a concept to start the map and then link the others right down to the end when it introduces (BD, PD and ND). The first peer critique commented the map had "too many useful concepts ... missing", and the "concepts used were paragraphs", see Fig. 15.5.
 
-![](images/2d9dbeaaddcc8467851c9815ec0e0929af24aacf082ea05d12f4d7facbc5a563.jpg)  
+![](images/2d9dbeaaddcc8467851c9815ec0e0929af24aacf082ea05d12f4d7facbc5a563.jpg)
 Fig. 15.5 Partial view of student 9's initial concept map
 
-![](images/fbb43d29f28ee17692d544b276718c7d0eac4fabcba17175ab088834f3beb013.jpg)  
+![](images/fbb43d29f28ee17692d544b276718c7d0eac4fabcba17175ab088834f3beb013.jpg)
 Fig. 15.6 Partial view of student 9's final concept map
 
 In subsequent revisions, he "tried to break down those paragraphs into one or two concept names" and "re-organized concept hierarchies" eventually resulting in a final map that was more conceptual (increased valid nodes from 76 to  $79\%$ ) with increased valid propositions (from 56 to  $81\%$ ). Structurally, the final map (partial view in Fig. 15.6) became more expanded (increased main branches from 3 to 10), more integrated (increased cross-links from 13 to 21), more differentiated (substantial increases with multiple branching nodes from 9 to 17 and sub-branches from 10 to 24) and more compact within sub-branches (reduced average hierarchical levels from 11 to 9). Shown in Fig. 15.5 is a partial view of Toa's first map, with paragraphs as nodal entries. The corresponding revisions in the final map (Fig. 15.6) include more precise concept labels and examples of integrative cross-links between two branches (propositions "Binomial Distribution" can be converted using Binomial Distribution  $\rightarrow$  Poisson Distribution" and "Poisson Distribution" can be converted using Binomial Distribution  $\rightarrow$  Poisson Distribution"), multiple branching nodes (Binomial Distribution, Poisson Distribution, and parameters) and integrative reconciliation of a number of nodes merging into a single node (nodes  $x, n - x$ ,  $p, n, q = 1 - p$  with merging links to Probability Function).
@@ -3802,10 +3803,10 @@ Loke's first map had relatively more illustrative examples (49%) than conceptual
 
 A partial view of the final map (Fig. 15.10) shows some examples of definitional phrases are "finding the limit of the difference quotient", "gradient of secant at point  $PQ$ " and "secant, join by point  $PQ$ ", which could be either analysed further to extract relevant concepts from linking works or revised to represent more precise concept names. Examples of cross-links and progressive differentiation are also shown. Overall, the final map was structurally more differentiated and more integrated with the quality of the revised nodes more conceptual than the first map.
 
-![](images/adb5fa88b4a81380de2c23d1fc8c591a10d08c60501b91ace91d3d4bbbf43323.jpg)  
+![](images/adb5fa88b4a81380de2c23d1fc8c591a10d08c60501b91ace91d3d4bbbf43323.jpg)
 Fig. 15.7 Partial view of student 5's first concept map
 
-![](images/6563b101702cffc27c607f0083f1e95feb430e4e9fba75af80e766264f016f57.jpg)  
+![](images/6563b101702cffc27c607f0083f1e95feb430e4e9fba75af80e766264f016f57.jpg)
 Fig. 15.8 Partial view of student 5's final concept map
 
 # Example of a "Below Average" Final Concept Map
@@ -3816,7 +3817,7 @@ Pasi's first concept map was at first glance, well organized and structured with
 
 As a consequence of the cyclic process of presenting  $\rightarrow$  critiquing  $\rightarrow$  revising  $\rightarrow$  presenting, Pasi's final map evolved into a substantially more conceptual one (increased valid nodes from 54 to  $87\%$ ) with increased valid propositions (from 40 to  $67\%$ ) and a conspicuous absence of illustrative examples (of procedural steps) Fig. 15.12).
 
-![](images/beb273fc4a826565a4867d4399675f2817dd76cd36c1425cab859a0f187cc28a.jpg)  
+![](images/beb273fc4a826565a4867d4399675f2817dd76cd36c1425cab859a0f187cc28a.jpg)
 Fig. 15.9 Partial view of student 2's first concept map
 
 Structurally, the map was more compact (reduced multiple-branching nodes (from 13 to 11), reduced sub-branches (from 19 to 16), reduced main branches (from 12 to 6), and reduced average hierarchical levels per sub-branch (from 12 to 9)). Overall, the final map was predominantly more conceptual with its concept labels and more valid propositions with a more parsimonious, compact final structure. That its structural criteria was rated 4 (resulting in an overall rating of 3.5), was caused mainly by the reduction of excessive procedural steps (and hence hierarchical levels) while the quality of propositions was relatively better than the initial map.
@@ -3829,12 +3830,12 @@ A partial view of Pasi's final concept map (Fig. 15.12) shows the more conceptua
 
 Despite encountering "indeterminate forms" in first year mathematics, Pene struggled to begin a map. The segment of his first map (see Fig. 15.13) shows, radiating
 
-![](images/6ea833d85d0dafd28fad23e338f98e0c1945ef130af2abde333601fde18187d0.jpg)  
+![](images/6ea833d85d0dafd28fad23e338f98e0c1945ef130af2abde333601fde18187d0.jpg)
 Fig. 15.10 Partial view of student 2's final concept map
 
 from node: Limit, are linear, sequential relations (or strings of triads), each expressing a mathematical statement or fact with little integrative linking to adjacent concepts or other concept hierarchies. As a result of critiques, revisions and independent research, Pene's final map became structurally more integrated (increased cross-links from 3 to 10), more differentiated (increased multiple-branching nodes from 8 to 10 and increased average hierarchical levels per sub-branch from 6 to 8) and more compact (decreased sub-branches from 17 to 14) with main branches remaining unchanged (Table 15.1). However, the percentage of valid nodes (from 77 to  $67\%$ ) and valid propositions (from 52 to  $44\%$ ) decreased due to increased definitional-phrase invalid nodes (from 8 to  $30\%$ ) and vague/incorrect linking words. Some examples of definitional phrases in Fig. 15.14 are "Ratio of two functions as  $x \to a$  ", "Quotient of the two functions", and "Differentiable in an open interval  $a < x < b$  and  $f(x) \neq 0$ ". Despite this, the final map was conceptually richer in its choice of concept labels but linking words were still of poor quality and inaccurate, with a structurally parsimonious, network of linked nodes.
 
-![](images/759f4fc6563e271e8cbbbdf4d73e7f497c7abd89e7aad10d89b94c6bb57f72e7.jpg)  
+![](images/759f4fc6563e271e8cbbbdf4d73e7f497c7abd89e7aad10d89b94c6bb57f72e7.jpg)
 Fig. 15.11 Partial view of student 8's first concept map
 
 # Discussion
@@ -3843,21 +3844,21 @@ Findings suggested that students' progressive maps became integrated and differe
 
 Social interactions evidently influenced students to structurally reorganize concept hierarchies and further analyse nodal entries to be more precise, less
 
-![](images/c2a825716ae278b76206f9cc01fe6bec35ffad0753de398b89f36747d332d65d.jpg)  
+![](images/c2a825716ae278b76206f9cc01fe6bec35ffad0753de398b89f36747d332d65d.jpg)
 Fig. 15.12 Partial view of student 8's final concept map
 
 definitional and non-procedural. In terms of Sternberg and William's view of problem solving, these structural and conceptual changes with the maps indicated that students were not only thinking and reasoning out the conceptual structure of their topics (analytical), but that they also attempted (a) to think creatively by going beyond the analysed information to hierarchically organize the concepts into networks of connected concepts, and (b) to think practically and flexibly in order to fit all of the above meaningfully on a map in preparation for social critiques.
 
 Consequently, the re-definition of socio-mathematical norms appeared to substantively affect the quality of students' mathematical thinking and reasoning as
 
-![](images/cfdf7afe3d77d017402fe9799c8ddc2aa507b39bd6633e687bbe4d5e4c661267.jpg)  
+![](images/cfdf7afe3d77d017402fe9799c8ddc2aa507b39bd6633e687bbe4d5e4c661267.jpg)
 Fig. 15.13 Partial view of student 1's first concept map
 
 reflected in the evolving quality of their progressive maps, particularly given that students were additionally required to publicly justify their displayed connections, negotiate meanings with their peers and reach a consensus to revise or not. The effects of the dialectic processes of social interactions and individual thinking and reasoning materialised as conceptual and structural changes on the maps. For example, the majority of students showed increases in valid propositions with half the students showing increased structural complexity by the final map. It appeared that the public presentation of the maps prompted the students to strive for effective communication of their ideas as manifested through improved hierarchical organization, precise nodal entries and more meaningful linking words albeit to different extents as indicated by the final maps' overall ratings.
 
 For the students in the study, they were challenged to develop a deeper understanding of their topic, in order to address concerns raised in social critiques, through further revisions and independent research, as they internalised the meanings of concepts and being transformed by them as they communicated these internalised meanings (as their understanding) during presentations and visually through their individually constructed maps. Consequently, students constructed their own
 
-![](images/d61deefe7652c298f44617a4aa9d9b896c80278b0cb822fbf7f65c6b9fcf6b10.jpg)  
+![](images/d61deefe7652c298f44617a4aa9d9b896c80278b0cb822fbf7f65c6b9fcf6b10.jpg)
 Fig. 15.14 Partial view of student 1's final concept map
 
 knowledge and understanding (on maps) and developed mathematical meanings (as propositions) as they learnt to publicly explain and justify their thinking to others.
@@ -3882,47 +3883,47 @@ Findings from the study imply that the concurrent use of concept mapping and soc
 
 # References
 
-Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping & Vee mapping. Samoa: National University of Samoa.  
-Afamasaga-Fuata'i, K. (1999). Teaching mathematics and science using the strategies of concept mapping and Vee mapping. *Problems*, Research, and Issues in Science, Mathematics, Computing and Statistics, 2(1), 1-53. Journal of the Science Faculty at the National University of Samoa.  
-Afamasaga-Fuata'i, K. (2001). New challenges to mathematics education in Samoa. *Measina A Samoa* 2000, 1, 90-97. Institute of Samoan Studies, National University of Samoa.  
+Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through concept mapping & Vee mapping. Samoa: National University of Samoa.
+Afamasaga-Fuata'i, K. (1999). Teaching mathematics and science using the strategies of concept mapping and Vee mapping. *Problems*, Research, and Issues in Science, Mathematics, Computing and Statistics, 2(1), 1-53. Journal of the Science Faculty at the National University of Samoa.
+Afamasaga-Fuata'i, K. (2001). New challenges to mathematics education in Samoa. *Measina A Samoa* 2000, 1, 90-97. Institute of Samoan Studies, National University of Samoa.
 Afamasaga-Fuata'i, K. (2002). A Samoan perspective on Pacific mathematics education. In B. Barton, K. C. Irwin, M. Pfannkuch, & M. O. J. Thomas (Eds.), Mathematics education in the South Pacific. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25) (Vol. 1, pp. 1-13). Auckland, New Zealand: University of Auckland.
 
-Afamasaga-Fuata'i, K. (2004). Concept maps and Vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the First International Conference on Concept Mapping (Vol. 1, pp. 13-20). Navarra, Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.  
-Afamasaga-Fuata'i, K. (2005a). Mathematics education in Samoa: From past and current situations to future directions. Journal of Samoan Studies, 1, 125-140.  
-Afamasaga-Fuata'i, K. (2005b). Students' conceptual understanding and critical thinking? A case for concept maps and Vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer (Eds.), Making mathematics vital. Proceedings of the Twentieth Biennial Conference of the Australian Association of Mathematics Teachers (AAMT) (Vol. 1, pp. 43-52). Sydney, Australia: University of Technology.  
-Afamasaga-Fuata'i, K. (2006a). Innovatively developing a teaching sequence using concept maps. In A. Canas & J. Novak (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the Second International Conference on Concept Mapping (Vol. 1, pp. 272-279). San Jose, Costa Rica: Universidad de Costa Rica.  
-Afamasaga-Fuata'i, K. (2006b). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping. *Focus on Learning Problems in Mathematics*, 28(3 & 4), 58-89.  
-Afamasaga-Fuata'i, K. (2007). Communicating Students' Understanding of undergraduate mathematics using concept maps. In J. Watson, & K. Beswick, (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th annual conference of the Mathematics Education Research Group of Australasia, (Vol. 1, pp. 73-82). University of Tasmania, Australia, MERGA.  
-Afamasaga-Fuata'i, K. (2007a). Using concept maps and Vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia: AAMT.  
-Afamasaga-Fuata'i, K. (2007b). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania, Australia: MERGA.  
-Afamasaga-Fuata'i, K., Meyer, P., & Falo, N. (2007). Primary students' diagnosed mathematical competence in semester one of their studies. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 83-92). University of Tasmania, Australia: MERGA.  
-Afamasaga-Fuata'i, K., Meyer, P., Falo, N., & Sufia, P. (2007). Future teachers' developing numeracy and mathematical competence as assessed by two diagnostic tests. Published on AARE's website. http://www.aare.edu.au/06pap/afa06011.pdf  
-Australian Association of Mathematics Teachers (AAMT) (2007). The AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved from http://www.aamt.edu.au/standards, on July 18, 2007.  
-Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht, Boston: Kluwer Academic Publishers.  
-Baroody, A. J., & Bartel, B. H. (2000). Using concept maps to link mathematical ideas. Mathematics Teaching in Middle Schools, 5(9), 604-609.  
-Baroody, A. J., Feil, Y., & Johnson, A. R. (2007). An alternative reconceptualization of procedural and conceptual knowledge. Journal of Research in Mathematics Education, 38(2), 115-131.  
-Brahier, D. J. (2005). Teaching secondary and middle school mathematics (2nd ed.). New York: Pearson Education, Inc.  
+Afamasaga-Fuata'i, K. (2004). Concept maps and Vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the First International Conference on Concept Mapping (Vol. 1, pp. 13-20). Navarra, Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.
+Afamasaga-Fuata'i, K. (2005a). Mathematics education in Samoa: From past and current situations to future directions. Journal of Samoan Studies, 1, 125-140.
+Afamasaga-Fuata'i, K. (2005b). Students' conceptual understanding and critical thinking? A case for concept maps and Vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer (Eds.), Making mathematics vital. Proceedings of the Twentieth Biennial Conference of the Australian Association of Mathematics Teachers (AAMT) (Vol. 1, pp. 43-52). Sydney, Australia: University of Technology.
+Afamasaga-Fuata'i, K. (2006a). Innovatively developing a teaching sequence using concept maps. In A. Canas & J. Novak (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the Second International Conference on Concept Mapping (Vol. 1, pp. 272-279). San Jose, Costa Rica: Universidad de Costa Rica.
+Afamasaga-Fuata'i, K. (2006b). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping. *Focus on Learning Problems in Mathematics*, 28(3 & 4), 58-89.
+Afamasaga-Fuata'i, K. (2007). Communicating Students' Understanding of undergraduate mathematics using concept maps. In J. Watson, & K. Beswick, (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th annual conference of the Mathematics Education Research Group of Australasia, (Vol. 1, pp. 73-82). University of Tasmania, Australia, MERGA.
+Afamasaga-Fuata'i, K. (2007a). Using concept maps and Vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia: AAMT.
+Afamasaga-Fuata'i, K. (2007b). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania, Australia: MERGA.
+Afamasaga-Fuata'i, K., Meyer, P., & Falo, N. (2007). Primary students' diagnosed mathematical competence in semester one of their studies. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 83-92). University of Tasmania, Australia: MERGA.
+Afamasaga-Fuata'i, K., Meyer, P., Falo, N., & Sufia, P. (2007). Future teachers' developing numeracy and mathematical competence as assessed by two diagnostic tests. Published on AARE's website. http://www.aare.edu.au/06pap/afa06011.pdf
+Australian Association of Mathematics Teachers (AAMT) (2007). The AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved from http://www.aamt.edu.au/standards, on July 18, 2007.
+Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht, Boston: Kluwer Academic Publishers.
+Baroody, A. J., & Bartel, B. H. (2000). Using concept maps to link mathematical ideas. Mathematics Teaching in Middle Schools, 5(9), 604-609.
+Baroody, A. J., Feil, Y., & Johnson, A. R. (2007). An alternative reconceptualization of procedural and conceptual knowledge. Journal of Research in Mathematics Education, 38(2), 115-131.
+Brahier, D. J. (2005). Teaching secondary and middle school mathematics (2nd ed.). New York: Pearson Education, Inc.
 Hansson, O. (2005). Preservice teachers' view on  $y = x + 5$  and  $y = \pi r^2$  expressed through the utilization of concept maps: A study of the concept of function. In H. Chick & J. L. Vincent
 
-(Eds.), Proceedings of the 29th conference of the international group for the pscychology of mathematics education (Vol. 3, pp. 97-104). Melbourne: PME.  
-Hatano, G. (2003). Foreword. In A. J. Baroody & A. Dowker (Eds.), The development of arithmetic concepts and skills: Constructing adaptive expertise (pp. 11-13). Mahwah, NJ: Erlbaum.  
-Hiebert, J., & Carpenter, T. P. (1992). Learning and teaching with understanding. In D. G Grouws (Ed.), Handbook of research in mathematics teaching and learning (pp. 65-97). New York: Macmillan.  
-Liyanage, S., & Thomas, M. (2002). Characterising secondary school mathematics lessons using teachers' pedagogical concept maps. In B. Barton, K. C. Irwin, M. Pfannkuch, & M. O. J. Thomas (Eds.), Mathematics education in the South Pacific: Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 425–432). New Zealand: University of Auckland.  
-Marsh, G. E., & Ketterer, J. K. (2005). Situating the zone of proximal development. Online Journal of Distance Learning Administration, Volume VIII, Number II Summer, 2005, University of West Georgia, Distance Education Center. Retrieved on August 20, 2007 from http://www.westga.edu/~distance/objda/summer82/marsh82.htm  
-Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.). (2000). Assessing science understanding: A human constructivist view. San Diego, CA, London: Academic.  
-National Council of Teachers of Mathematics (NCTM) (2007). 2000 Principles and Standards. Retrieved on July 28, 2007 from http://my.nctm.org/standards/document/index.htm  
-Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.  
-Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them. Technical Report IHMC Map Tools 2006-01, Florida Institute for Human and Machine Cognition, 2006, available at: http://cmap.ihmc.us/publications/ResearchPapers/ TheoryUnderlyingConceptMaps.pdf  
-Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge: Cambridge University Press.  
-Piaget, J. (1969). Science of education and the psychology of the child. New York: Grossman Publishers.  
-Pratt, N., & Kelly, P. (2005). Mapping mathematical communities: Classrooms, research communities and master classes. Retrieved on August 20, 2007 from http://orgs.man.ac.uk/projects/include/experiment/communities.htm  
-Richards, J. (1991). Mathematical discussions. In E. von Glaserfeld (Ed.), Radical constructivism in mathematics education (pp. 13-51). London: Kluwer Academic Publishers.  
-Ruiz-Primo, M. (2004). Examining concept maps as an assessment tool. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the First International Conference on Concept Mapping September 14–17, 2004 (pp. 555–562). Navarra: Dirección de Publicaciones de la Universidad Pública de Navarra, Spain.  
-Schoenfeld, A. H. (1996). In fostering communities of inquiry, must it matter that the teacher knows "the answer." For the Learning of Mathematics, 16(3), 569-600.  
-Steffe, L. P., & D'Ambrosio, B. S. (1996). Using teaching experiments to enhance understanding of students' mathematics. In D. F. Treagust, R. Duit, & B. F. Fraser (Eds.), Improving teaching and learning in science and mathematics (pp. 65-76). New York: Teachers College Press, Columbia University.  
-Sternberg, R. J., & Williams, W. (Eds.). (1998). Intelligence, instruction, and assessment theory into practice. Mahwah, NJ, London: LEA Lawrence Erlbaum Associates.  
-Swarthout, M. B. (2001). The impact of the instructional use of concept maps on the mathematical achievement, confidence levels, beliefs, and attitudes of preservice elementary teachers. Dissertation Abstracts International, AADAA-I3039531, The Ohio State University, Ohio.  
-Vygotsky, L. S. (1978). Mind in society. Cambridge, MA: Harvard University Press.  
+(Eds.), Proceedings of the 29th conference of the international group for the pscychology of mathematics education (Vol. 3, pp. 97-104). Melbourne: PME.
+Hatano, G. (2003). Foreword. In A. J. Baroody & A. Dowker (Eds.), The development of arithmetic concepts and skills: Constructing adaptive expertise (pp. 11-13). Mahwah, NJ: Erlbaum.
+Hiebert, J., & Carpenter, T. P. (1992). Learning and teaching with understanding. In D. G Grouws (Ed.), Handbook of research in mathematics teaching and learning (pp. 65-97). New York: Macmillan.
+Liyanage, S., & Thomas, M. (2002). Characterising secondary school mathematics lessons using teachers' pedagogical concept maps. In B. Barton, K. C. Irwin, M. Pfannkuch, & M. O. J. Thomas (Eds.), Mathematics education in the South Pacific: Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 425–432). New Zealand: University of Auckland.
+Marsh, G. E., & Ketterer, J. K. (2005). Situating the zone of proximal development. Online Journal of Distance Learning Administration, Volume VIII, Number II Summer, 2005, University of West Georgia, Distance Education Center. Retrieved on August 20, 2007 from http://www.westga.edu/~distance/objda/summer82/marsh82.htm
+Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.). (2000). Assessing science understanding: A human constructivist view. San Diego, CA, London: Academic.
+National Council of Teachers of Mathematics (NCTM) (2007). 2000 Principles and Standards. Retrieved on July 28, 2007 from http://my.nctm.org/standards/document/index.htm
+Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.
+Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them. Technical Report IHMC Map Tools 2006-01, Florida Institute for Human and Machine Cognition, 2006, available at: http://cmap.ihmc.us/publications/ResearchPapers/ TheoryUnderlyingConceptMaps.pdf
+Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge: Cambridge University Press.
+Piaget, J. (1969). Science of education and the psychology of the child. New York: Grossman Publishers.
+Pratt, N., & Kelly, P. (2005). Mapping mathematical communities: Classrooms, research communities and master classes. Retrieved on August 20, 2007 from http://orgs.man.ac.uk/projects/include/experiment/communities.htm
+Richards, J. (1991). Mathematical discussions. In E. von Glaserfeld (Ed.), Radical constructivism in mathematics education (pp. 13-51). London: Kluwer Academic Publishers.
+Ruiz-Primo, M. (2004). Examining concept maps as an assessment tool. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the First International Conference on Concept Mapping September 14–17, 2004 (pp. 555–562). Navarra: Dirección de Publicaciones de la Universidad Pública de Navarra, Spain.
+Schoenfeld, A. H. (1996). In fostering communities of inquiry, must it matter that the teacher knows "the answer." For the Learning of Mathematics, 16(3), 569-600.
+Steffe, L. P., & D'Ambrosio, B. S. (1996). Using teaching experiments to enhance understanding of students' mathematics. In D. F. Treagust, R. Duit, & B. F. Fraser (Eds.), Improving teaching and learning in science and mathematics (pp. 65-76). New York: Teachers College Press, Columbia University.
+Sternberg, R. J., & Williams, W. (Eds.). (1998). Intelligence, instruction, and assessment theory into practice. Mahwah, NJ, London: LEA Lawrence Erlbaum Associates.
+Swarthout, M. B. (2001). The impact of the instructional use of concept maps on the mathematical achievement, confidence levels, beliefs, and attitudes of preservice elementary teachers. Dissertation Abstracts International, AADAA-I3039531, The Ohio State University, Ohio.
+Vygotsky, L. S. (1978). Mind in society. Cambridge, MA: Harvard University Press.
 Williams, C. G. (1998). Using concept maps to access conceptual knowledge of function. Journal for Research in Mathematics Education, 29(4), 414-421.
 
 # Part V
@@ -3981,8 +3982,8 @@ Whilst the chapters in this book reported on research of a minute part of the pl
 
 # References
 
-Ellis, A. B. (2007). Connections between generalizing and justifying: Students' reasoning with linear relationships. Journal for Research in Mathematics Education, 38(3), 194-229.  
-Guskey, T. (1985). Staff development and teacher change. Educational Leadership, 42, 57-60.  
+Ellis, A. B. (2007). Connections between generalizing and justifying: Students' reasoning with linear relationships. Journal for Research in Mathematics Education, 38(3), 194-229.
+Guskey, T. (1985). Staff development and teacher change. Educational Leadership, 42, 57-60.
 Pratt, N., & Kelly, (2005). Mapping mathematical communities: Classrooms, research communities and master classes. Retrieved on August 20, 2007 from http://orgs.man.ac.uk/projects/include/experiment/communities.htm.
 
 # A
