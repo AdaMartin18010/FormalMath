@@ -14,12 +14,24 @@ Part II: Primary Mathematics Teaching and Learning - Overview
 ## 📑 目录 / Table of Contents
 
 - [Part II: 初等数学教学与学习 - 总览](#part-ii-初等数学教学与学习---总览)
+  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
   - [📋 一、概述 / Overview](#-一概述--overview)
+    - [1.1 Part II 目标 / Part II Objectives](#11-part-ii-目标--part-ii-objectives)
+    - [1.2 研究范围 / Research Scope](#12-研究范围--research-scope)
   - [📚 二、章节结构 / Chapter Structure](#-二章节结构--chapter-structure)
+    - [2.1 章节列表 / Chapter List](#21-章节列表--chapter-list)
+    - [2.2 章节关系 / Chapter Relationships](#22-章节关系--chapter-relationships)
   - [🎯 三、核心主题 / Core Themes](#-三核心主题--core-themes)
+    - [3.1 主题分类 / Theme Classification](#31-主题分类--theme-classification)
   - [📊 四、研究方法 / Research Methods](#-四研究方法--research-methods)
+    - [4.1 研究方法类型 / Research Method Types](#41-研究方法类型--research-method-types)
+    - [4.2 数据收集方法 / Data Collection Methods](#42-数据收集方法--data-collection-methods)
   - [🔗 五、章节链接 / Chapter Links](#-五章节链接--chapter-links)
+    - [5.1 详细章节文档 / Detailed Chapter Documents](#51-详细章节文档--detailed-chapter-documents)
   - [📈 六、主要发现 / Key Findings](#-六主要发现--key-findings)
+    - [6.1 学习效果发现 / Learning Effectiveness Findings](#61-学习效果发现--learning-effectiveness-findings)
+    - [6.2 教学应用发现 / Teaching Application Findings](#62-教学应用发现--teaching-application-findings)
+    - [6.3 教师教育发现 / Teacher Education Findings](#63-教师教育发现--teacher-education-findings)
 
 ---
 
