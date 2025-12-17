@@ -44,9 +44,6 @@ Using Concept Maps and Gowin's Vee to Understand Mathematical Models of Physical
       - [3.5.1 匀加速运动模型 / Uniformly Accelerated Motion Model](#351-匀加速运动模型--uniformly-accelerated-motion-model)
       - [3.5.2 简谐运动模型 / Simple Harmonic Motion Model](#352-简谐运动模型--simple-harmonic-motion-model)
       - [3.5.3 指数衰减模型 / Exponential Decay Model](#353-指数衰减模型--exponential-decay-model)
-    - [3.6 跨主题关联小结 / Cross-Topic Association Summary](#36-跨主题关联小结--cross-topic-association-summary)
-      - [3.6.1 数学函数在物理建模中的统一应用 / Unified Application of Mathematical Functions in Physical Modeling](#361-数学函数在物理建模中的统一应用--unified-application-of-mathematical-functions-in-physical-modeling)
-      - [3.6.2 微积分在物理建模中的核心作用 / Core Role of Calculus in Physical Modeling](#362-微积分在物理建模中的核心作用--core-role-of-calculus-in-physical-modeling)
   - [📚 四、概念映射应用 / Concept Map Application](#-四概念映射应用--concept-map-application)
     - [3.1 概念映射构建指南 / Concept Map Construction Guidelines](#31-概念映射构建指南--concept-map-construction-guidelines)
     - [3.2 物理现象概念映射示例 / Physical Phenomena Concept Map Examples](#32-物理现象概念映射示例--physical-phenomena-concept-map-examples)
@@ -55,10 +52,17 @@ Using Concept Maps and Gowin's Vee to Understand Mathematical Models of Physical
     - [4.1 Vee图构建指南 / Vee Diagram Construction Guidelines](#41-vee图构建指南--vee-diagram-construction-guidelines)
     - [4.2 物理现象Vee图示例 / Physical Phenomena Vee Diagram Examples](#42-物理现象vee图示例--physical-phenomena-vee-diagram-examples)
     - [4.3 数学建模Vee图 / Mathematical Modeling Vee Diagrams](#43-数学建模vee图--mathematical-modeling-vee-diagrams)
+    - [4.4 Vee图具体应用案例与建模过程 / Specific Vee Diagram Application Cases and Modeling Process](#44-vee图具体应用案例与建模过程--specific-vee-diagram-application-cases-and-modeling-process)
+      - [4.4.1 案例1：匀加速直线运动的Vee图建模 / Case 1: Vee Diagram Modeling of Uniformly Accelerated Linear Motion](#441-案例1匀加速直线运动的vee图建模--case-1-vee-diagram-modeling-of-uniformly-accelerated-linear-motion)
+      - [4.4.2 案例2：简谐运动的Vee图建模 / Case 2: Vee Diagram Modeling of Simple Harmonic Motion](#442-案例2简谐运动的vee图建模--case-2-vee-diagram-modeling-of-simple-harmonic-motion)
+      - [4.4.3 学生建模活动的具体描述 / Specific Description of Student Modeling Activities](#443-学生建模活动的具体描述--specific-description-of-student-modeling-activities)
   - [💡 五、跨学科理解 / Cross-Disciplinary Understanding](#-五跨学科理解--cross-disciplinary-understanding)
     - [5.1 数学-物理连接 / Mathematics-Physics Connections](#51-数学-物理连接--mathematics-physics-connections)
     - [5.2 概念映射的作用 / Role of Concept Mapping](#52-概念映射的作用--role-of-concept-mapping)
     - [5.3 Vee图的作用 / Role of Vee Diagrams](#53-vee图的作用--role-of-vee-diagrams)
+    - [5.4 概念映射在建模中的应用 / Application of Concept Mapping in Modeling](#54-概念映射在建模中的应用--application-of-concept-mapping-in-modeling)
+      - [5.4.1 概念映射与Vee图的互补关系 / Complementary Relationship Between Concept Maps and Vee Diagrams](#541-概念映射与vee图的互补关系--complementary-relationship-between-concept-maps-and-vee-diagrams)
+      - [5.4.2 概念映射在建模各阶段的应用 / Application of Concept Maps in Various Modeling Stages](#542-概念映射在建模各阶段的应用--application-of-concept-maps-in-various-modeling-stages)
   - [📈 六、思维表征方式 / Representation Methods](#-六思维表征方式--representation-methods)
     - [6.1 物理模型思维导图 / Physical Model Mind Map](#61-物理模型思维导图--physical-model-mind-map)
     - [6.2 建模过程决策树 / Modeling Process Decision Tree](#62-建模过程决策树--modeling-process-decision-tree)
@@ -526,6 +530,300 @@ $$T_{1/2} = \frac{\ln 2}{0.05} = \frac{0.693}{0.05} \approx 13.86 \text{ years}$
 - 方法侧：建模方法、求解方法
   Methodological Side: Modeling methods, solution methods
 
+### 4.4 Vee图具体应用案例与建模过程 / Specific Vee Diagram Application Cases and Modeling Process
+
+本节提供详细的Vee图应用案例，展示如何将Vee图应用于物理现象的数学建模，包括完整的建模过程和学生的具体活动。
+
+#### 4.4.1 案例1：匀加速直线运动的Vee图建模 / Case 1: Vee Diagram Modeling of Uniformly Accelerated Linear Motion
+
+**问题情境 / Problem Situation**:
+
+一辆汽车从静止开始，以 $2 \text{ m/s}^2$ 的加速度行驶。求：
+
+- 5秒后的速度
+- 5秒内的位移
+- 速度达到20 m/s所需的时间
+
+**Vee图构建过程 / Vee Diagram Construction Process**:
+
+**步骤1：识别焦点问题 / Step 1: Identify Focus Question**
+
+焦点问题：如何描述和预测匀加速直线运动的位移和速度？
+
+**步骤2：构建思考侧（概念侧）/ Step 2: Construct Thinking Side (Conceptual Side)**
+
+**概念 / Concepts**:
+
+- 位移（Displacement）
+- 速度（Velocity）
+- 加速度（Acceleration）
+- 时间（Time）
+- 初始速度（Initial Velocity）
+- 初始位置（Initial Position）
+
+**原理 / Principles**:
+
+- 牛顿第二定律：$F = ma$
+- 匀加速运动公式：
+  - 速度公式：$v = v_0 + at$
+  - 位移公式：$s = v_0 t + \frac{1}{2}at^2$
+  - 速度-位移关系：$v^2 = v_0^2 + 2as$
+
+**理论 / Theory**:
+
+- 运动学理论（Kinematics Theory）
+- 微积分基础：速度是位移的导数，加速度是速度的导数
+
+**步骤3：构建操作侧（方法侧）/ Step 3: Construct Doing Side (Methodological Side)**
+
+**给定信息 / Given Information**:
+
+- 初始速度：$v_0 = 0 \text{ m/s}$
+- 加速度：$a = 2 \text{ m/s}^2$
+- 时间：$t = 5 \text{ s}$（问题1和2）
+- 目标速度：$v = 20 \text{ m/s}$（问题3）
+
+**方法 / Methods**:
+
+- 问题1：使用速度公式 $v = v_0 + at$
+- 问题2：使用位移公式 $s = v_0 t + \frac{1}{2}at^2$
+- 问题3：从速度公式求解时间 $t = \frac{v - v_0}{a}$
+
+**计算 / Calculations**:
+
+**问题1：5秒后的速度 / Problem 1: Velocity After 5 Seconds**
+
+$$v = v_0 + at = 0 + 2 \times 5 = 10 \text{ m/s}$$
+
+**问题2：5秒内的位移 / Problem 2: Displacement in 5 Seconds**
+
+$$s = v_0 t + \frac{1}{2}at^2 = 0 \times 5 + \frac{1}{2} \times 2 \times 5^2 = 25 \text{ m}$$
+
+**问题3：速度达到20 m/s所需的时间 / Problem 3: Time to Reach 20 m/s**
+
+$$t = \frac{v - v_0}{a} = \frac{20 - 0}{2} = 10 \text{ s}$$
+
+**答案 / Answers**:
+
+1. 5秒后的速度：$10 \text{ m/s}$
+2. 5秒内的位移：$25 \text{ m}$
+3. 速度达到20 m/s所需的时间：$10 \text{ s}$
+
+**步骤4：知识声明 / Step 4: Knowledge Claims**
+
+- 匀加速运动的速度随时间线性增加
+- Uniformly accelerated motion velocity increases linearly with time
+- 匀加速运动的位移随时间二次增加
+- Uniformly accelerated motion displacement increases quadratically with time
+- 加速度决定了速度变化的快慢
+- Acceleration determines how fast velocity changes
+
+**Vee图的教学价值 / Pedagogical Value of Vee Diagram**:
+
+- **理论-实践连接**: Vee图清晰地展示了物理原理（思考侧）与具体计算（操作侧）之间的连接
+- **Theory-Practice Connection**: Vee diagram clearly shows the connection between physical principles (thinking side) and specific calculations (doing side)
+- **建模过程显化**: 通过Vee图，学生可以清楚地看到从问题识别到答案获得的完整建模过程
+- **Modeling Process Visualization**: Through Vee diagram, students can clearly see the complete modeling process from problem identification to answer acquisition
+
+#### 4.4.2 案例2：简谐运动的Vee图建模 / Case 2: Vee Diagram Modeling of Simple Harmonic Motion
+
+**问题情境 / Problem Situation**:
+
+一个弹簧振子做简谐运动，振幅为 $A = 0.1 \text{ m}$，角频率为 $\omega = 5 \text{ rad/s}$，初始相位为 $\phi = 0$。求：
+
+- 位移方程
+- 5秒后的位移
+- 速度的最大值
+
+**Vee图构建过程 / Vee Diagram Construction Process**:
+
+**步骤1：识别焦点问题 / Step 1: Identify Focus Question**
+
+焦点问题：如何用数学函数描述简谐运动？
+
+**步骤2：构建思考侧（概念侧）/ Step 2: Construct Thinking Side (Conceptual Side)**
+
+**概念 / Concepts**:
+
+- 简谐运动（Simple Harmonic Motion）
+- 振幅（Amplitude）
+- 角频率（Angular Frequency）
+- 相位（Phase）
+- 周期（Period）
+- 频率（Frequency）
+
+**原理 / Principles**:
+
+- 胡克定律：$F = -kx$（恢复力与位移成正比）
+- 简谐运动方程：
+  - 位移：$x(t) = A \cos(\omega t + \phi)$
+  - 速度：$v(t) = -A\omega \sin(\omega t + \phi)$
+  - 加速度：$a(t) = -A\omega^2 \cos(\omega t + \phi)$
+
+**理论 / Theory**:
+
+- 振动理论（Vibration Theory）
+- 三角函数在周期运动中的应用
+- 微积分：速度是位移的导数，加速度是速度的导数
+
+**步骤3：构建操作侧（方法侧）/ Step 3: Construct Doing Side (Methodological Side)**
+
+**给定信息 / Given Information**:
+
+- 振幅：$A = 0.1 \text{ m}$
+- 角频率：$\omega = 5 \text{ rad/s}$
+- 初始相位：$\phi = 0$
+- 时间：$t = 5 \text{ s}$（问题2）
+
+**方法 / Methods**:
+
+- 问题1：直接写出位移方程 $x(t) = A \cos(\omega t + \phi)$
+- 问题2：将 $t = 5$ 代入位移方程
+- 问题3：速度的最大值出现在 $\sin(\omega t + \phi) = \pm 1$ 时
+
+**计算 / Calculations**:
+
+**问题1：位移方程 / Problem 1: Displacement Equation**
+
+$$x(t) = A \cos(\omega t + \phi) = 0.1 \cos(5t)$$
+
+**问题2：5秒后的位移 / Problem 2: Displacement After 5 Seconds**
+
+$$x(5) = 0.1 \cos(5 \times 5) = 0.1 \cos(25) \approx 0.1 \times 0.9912 \approx 0.099 \text{ m}$$
+
+**问题3：速度的最大值 / Problem 3: Maximum Velocity**
+
+$$v_{\max} = A\omega = 0.1 \times 5 = 0.5 \text{ m/s}$$
+
+**答案 / Answers**:
+
+1. 位移方程：$x(t) = 0.1 \cos(5t)$
+2. 5秒后的位移：约 $0.099 \text{ m}$
+3. 速度的最大值：$0.5 \text{ m/s}$
+
+**步骤4：知识声明 / Step 4: Knowledge Claims**
+
+- 简谐运动可以用三角函数（余弦或正弦）描述
+- Simple harmonic motion can be described using trigonometric functions (cosine or sine)
+- 简谐运动是周期运动，周期为 $T = \frac{2\pi}{\omega}$
+- Simple harmonic motion is periodic with period $T = \frac{2\pi}{\omega}$
+- 速度的最大值与振幅和角频率成正比
+- Maximum velocity is proportional to amplitude and angular frequency
+
+**Vee图的教学价值 / Pedagogical Value of Vee Diagram**:
+
+- **数学-物理连接**: Vee图显化了三角函数（数学）与简谐运动（物理）之间的连接
+- **Mathematics-Physics Connection**: Vee diagram makes explicit the connection between trigonometric functions (mathematics) and simple harmonic motion (physics)
+- **概念理解**: 通过Vee图，学生可以理解为什么简谐运动用三角函数描述（思考侧的理论）以及如何应用（操作侧的方法）
+- **Conceptual Understanding**: Through Vee diagram, students can understand why simple harmonic motion is described by trigonometric functions (theory on thinking side) and how to apply it (methods on doing side)
+
+#### 4.4.3 学生建模活动的具体描述 / Specific Description of Student Modeling Activities
+
+**活动设计：使用Vee图建模物理现象 / Activity Design: Using Vee Diagrams to Model Physical Phenomena**
+
+**活动目标 / Activity Objectives**:
+
+- 学生能够使用Vee图分析物理现象
+- Students can use Vee diagrams to analyze physical phenomena
+- 学生能够建立物理现象的数学模型
+- Students can establish mathematical models of physical phenomena
+- 学生能够理解数学函数在物理中的应用
+- Students can understand the application of mathematical functions in physics
+
+**活动步骤 / Activity Steps**:
+
+**阶段1：问题识别与概念映射（30分钟）/ Phase 1: Problem Identification and Concept Mapping (30 minutes)**
+
+1. **问题呈现**: 教师呈现一个物理现象（如自由落体、弹簧振动、放射性衰变）
+2. **Problem Presentation**: Teacher presents a physical phenomenon (e.g., free fall, spring vibration, radioactive decay)
+3. **概念识别**: 学生小组讨论，识别与现象相关的关键概念
+4. **Concept Identification**: Student groups discuss and identify key concepts related to the phenomenon
+5. **概念映射构建**: 学生构建概念映射，展示概念之间的关系
+6. **Concept Map Construction**: Students construct concept maps showing relationships between concepts
+
+**阶段2：Vee图构建（40分钟）/ Phase 2: Vee Diagram Construction (40 minutes)**
+
+1. **焦点问题确定**: 学生小组确定要解决的焦点问题
+2. **Focus Question Determination**: Student groups determine the focus question to solve
+3. **思考侧构建**: 学生填写Vee图的思考侧（概念、原理、理论）
+4. **Thinking Side Construction**: Students fill in the thinking side of Vee diagram (concepts, principles, theory)
+5. **操作侧构建**: 学生填写Vee图的操作侧（给定信息、方法、计算、答案）
+6. **Doing Side Construction**: Students fill in the doing side of Vee diagram (given information, methods, calculations, answers)
+
+**阶段3：模型应用与验证（30分钟）/ Phase 3: Model Application and Validation (30 minutes)**
+
+1. **模型应用**: 学生使用建立的模型解决具体问题
+2. **Model Application**: Students use the established model to solve specific problems
+3. **结果验证**: 学生验证结果的合理性（单位检查、数量级检查、物理意义检查）
+4. **Result Validation**: Students verify the reasonableness of results (unit check, order of magnitude check, physical meaning check)
+4. **反思总结**: 学生反思建模过程，总结经验和教训
+5. **Reflection and Summary**: Students reflect on the modeling process and summarize experiences and lessons
+
+**学生活动示例：自由落体运动建模 / Student Activity Example: Free Fall Motion Modeling**
+
+**学生小组活动记录 / Student Group Activity Record**:
+
+**概念映射（初始阶段）/ Concept Map (Initial Phase)**:
+
+```
+自由落体运动 (Free Fall Motion)
+├─ 物理概念 (Physical Concepts)
+│  ├─ 重力 (Gravity)
+│  ├─ 加速度 (Acceleration)
+│  ├─ 速度 (Velocity)
+│  └─ 位移 (Displacement)
+├─ 数学函数 (Mathematical Functions)
+│  ├─ 二次函数 (Quadratic Function)
+│  └─ 线性函数 (Linear Function)
+└─ 物理公式 (Physical Formulas)
+   ├─ v = gt
+   └─ s = (1/2)gt²
+```
+
+**Vee图（完成阶段）/ Vee Diagram (Completion Phase)**:
+
+**思考侧 / Thinking Side**:
+
+- **概念**: 自由落体、重力加速度、位移、速度、时间
+- **Concepts**: Free fall, gravitational acceleration, displacement, velocity, time
+- **原理**: 重力加速度恒定（$g = 9.8 \text{ m/s}^2$），忽略空气阻力
+- **Principles**: Gravitational acceleration is constant ($g = 9.8 \text{ m/s}^2$), air resistance is neglected
+- **理论**: 匀加速运动理论，位移与时间的平方成正比
+- **Theory**: Uniformly accelerated motion theory, displacement is proportional to square of time
+
+**操作侧 / Doing Side**:
+
+- **给定信息**: 物体从高度 $h = 100 \text{ m}$ 自由落下，$g = 9.8 \text{ m/s}^2$
+- **Given Information**: Object falls freely from height $h = 100 \text{ m}$, $g = 9.8 \text{ m/s}^2$
+- **方法**: 使用位移公式 $s = \frac{1}{2}gt^2$ 和速度公式 $v = gt$
+- **Methods**: Use displacement formula $s = \frac{1}{2}gt^2$ and velocity formula $v = gt$
+- **计算**:
+  - 落地时间：$t = \sqrt{\frac{2h}{g}} = \sqrt{\frac{2 \times 100}{9.8}} \approx 4.52 \text{ s}$
+  - 落地速度：$v = gt = 9.8 \times 4.52 \approx 44.3 \text{ m/s}$
+- **Calculations**:
+  - Landing time: $t = \sqrt{\frac{2h}{g}} = \sqrt{\frac{2 \times 100}{9.8}} \approx 4.52 \text{ s}$
+  - Landing velocity: $v = gt = 9.8 \times 4.52 \approx 44.3 \text{ m/s}$
+- **答案**: 物体约在4.52秒后落地，落地速度约为44.3 m/s
+- **Answers**: Object lands after approximately 4.52 seconds with landing velocity of approximately 44.3 m/s
+
+**知识声明 / Knowledge Claims**:
+
+- 自由落体运动是匀加速运动的一个特例
+- Free fall motion is a special case of uniformly accelerated motion
+- 位移与时间的平方成正比，速度与时间成正比
+- Displacement is proportional to square of time, velocity is proportional to time
+- 重力加速度是恒定的，与物体质量无关
+- Gravitational acceleration is constant and independent of object mass
+
+**活动效果评估 / Activity Effectiveness Assessment**:
+
+- **概念理解**: 通过概念映射，学生能够识别自由落体运动的关键概念及其关系
+- **Conceptual Understanding**: Through concept mapping, students can identify key concepts of free fall motion and their relationships
+- **建模能力**: 通过Vee图，学生能够建立自由落体运动的数学模型并应用
+- **Modeling Ability**: Through Vee diagram, students can establish mathematical model of free fall motion and apply it
+- **跨学科理解**: 学生能够理解数学函数（二次函数、线性函数）在物理现象中的应用
+- **Cross-Disciplinary Understanding**: Students can understand the application of mathematical functions (quadratic functions, linear functions) in physical phenomena
+
 ---
 
 ## 💡 五、跨学科理解 / Cross-Disciplinary Understanding
@@ -562,6 +860,69 @@ $$T_{1/2} = \frac{\ln 2}{0.05} = \frac{0.693}{0.05} \approx 13.86 \text{ years}$
   Shows modeling process
 - 支持问题解决
   Supports problem solving
+
+### 5.4 概念映射在建模中的应用 / Application of Concept Mapping in Modeling
+
+概念映射和Vee图在物理现象数学建模中可以互补使用，形成完整的建模工具链。
+
+#### 5.4.1 概念映射与Vee图的互补关系 / Complementary Relationship Between Concept Maps and Vee Diagrams
+
+**概念映射的作用 / Role of Concept Maps**:
+
+- **概念结构显化**: 概念映射显化物理现象和数学函数的概念结构
+- **Concept Structure Visualization**: Concept maps visualize the conceptual structure of physical phenomena and mathematical functions
+- **概念关联建立**: 概念映射建立数学概念与物理概念之间的关联
+- **Concept Association Establishment**: Concept maps establish associations between mathematical concepts and physical concepts
+- **知识网络构建**: 概念映射构建完整的知识网络，支持理解
+- **Knowledge Network Construction**: Concept maps construct complete knowledge networks supporting understanding
+
+**Vee图的作用 / Role of Vee Diagrams**:
+
+- **建模过程指导**: Vee图指导从问题到答案的完整建模过程
+- **Modeling Process Guidance**: Vee diagrams guide the complete modeling process from problem to answer
+- **理论-实践连接**: Vee图连接理论（思考侧）与实践（操作侧）
+- **Theory-Practice Connection**: Vee diagrams connect theory (thinking side) with practice (doing side)
+- **问题解决支持**: Vee图支持具体问题的解决
+- **Problem Solving Support**: Vee diagrams support solving specific problems
+
+**互补使用策略 / Complementary Usage Strategy**:
+
+1. **先概念映射，后Vee图**: 先用概念映射理解概念结构，再用Vee图解决具体问题
+2. **Concept Map First, Then Vee Diagram**: First use concept map to understand conceptual structure, then use Vee diagram to solve specific problems
+3. **概念映射用于理解，Vee图用于应用**: 概念映射用于概念理解，Vee图用于问题解决
+4. **Concept Maps for Understanding, Vee Diagrams for Application**: Concept maps for conceptual understanding, Vee diagrams for problem solving
+5. **循环使用**: 在建模过程中，可以循环使用概念映射和Vee图，不断深化理解
+6. **Cyclical Usage**: In the modeling process, concept maps and Vee diagrams can be used cyclically to continuously deepen understanding
+
+#### 5.4.2 概念映射在建模各阶段的应用 / Application of Concept Maps in Various Modeling Stages
+
+**阶段1：问题理解阶段 / Stage 1: Problem Understanding Phase**
+
+- **应用**: 构建物理现象的概念映射，识别关键概念
+- **Application**: Construct concept map of physical phenomenon, identify key concepts
+- **作用**: 帮助学生理解物理现象的本质和关键特征
+- **Role**: Help students understand the essence and key characteristics of physical phenomena
+
+**阶段2：模型选择阶段 / Stage 2: Model Selection Phase**
+
+- **应用**: 在概念映射中添加数学函数节点，建立物理概念与数学函数的关联
+- **Application**: Add mathematical function nodes to concept map, establish associations between physical concepts and mathematical functions
+- **作用**: 帮助学生选择合适的数学函数来建模物理现象
+- **Role**: Help students select appropriate mathematical functions to model physical phenomena
+
+**阶段3：模型建立阶段 / Stage 3: Model Construction Phase**
+
+- **应用**: 使用Vee图建立具体的数学模型，同时参考概念映射中的概念关联
+- **Application**: Use Vee diagram to establish specific mathematical model while referencing concept associations in concept map
+- **作用**: 确保模型建立在正确的概念理解基础上
+- **Role**: Ensure model is built on correct conceptual understanding
+
+**阶段4：模型验证阶段 / Stage 4: Model Validation Phase**
+
+- **应用**: 使用概念映射检查模型是否涵盖了所有关键概念
+- **Application**: Use concept map to check whether model covers all key concepts
+- **作用**: 验证模型的完整性和正确性
+- **Role**: Verify completeness and correctness of model
 
 ---
 
