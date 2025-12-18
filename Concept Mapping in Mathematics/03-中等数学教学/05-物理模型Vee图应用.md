@@ -455,6 +455,68 @@ $$T_{1/2} = \frac{\ln 2}{0.05} = \frac{0.693}{0.05} \approx 13.86 \text{ years}$
 - **跨学科数学应用**: 这个模型在物理学（放射性衰变）、化学（化学反应速率）、生物学（种群衰减）等多个领域都有应用，体现了数学模型的通用性和跨学科价值。
 - **Interdisciplinary Mathematical Applications**: This model has applications in physics (radioactive decay), chemistry (chemical reaction rates), biology (population decline), and many other fields, demonstrating the universality and interdisciplinary value of mathematical models.
 
+### 3.6 跨主题关联小结 / Cross-Topic Association Summary
+
+#### 3.6.1 物理模型与微积分的关联 / Association Between Physical Models and Calculus
+
+**核心关联 / Core Association**:
+
+物理现象的数学模型（如运动、变化率、累积量）与微积分（导数、积分）有着深刻的联系。导数描述瞬时变化率，积分描述累积效应，这体现了微积分在物理建模中的核心作用。
+
+**数学结构分析 / Mathematical Structure Analysis**:
+
+- **导数与瞬时变化率**: 物理量对时间的导数表示瞬时变化率，如速度是位移的导数 $v = \frac{ds}{dt}$，加速度是速度的导数 $a = \frac{dv}{dt}$。这体现了导数作为"变化率"的本质。
+- **Derivative and Instantaneous Rate of Change**: The derivative of a physical quantity with respect to time represents the instantaneous rate of change, e.g., velocity is the derivative of displacement $v = \frac{ds}{dt}$, acceleration is the derivative of velocity $a = \frac{dv}{dt}$. This demonstrates the essence of derivative as "rate of change".
+- **积分与累积效应**: 物理量的积分表示累积效应，如位移是速度的积分 $s = \int v dt$，功是力的积分 $W = \int F ds$。这体现了积分作为"累积"的本质。
+- **Integral and Cumulative Effect**: The integral of a physical quantity represents cumulative effects, e.g., displacement is the integral of velocity $s = \int v dt$, work is the integral of force $W = \int F ds$. This demonstrates the essence of integral as "accumulation".
+- **微积分基本定理的物理意义**: 微积分基本定理 $\int_a^b f'(x)dx = f(b) - f(a)$ 在物理上表示：变化率的累积等于总量的变化，这体现了微积分基本定理的物理直观。
+- **Physical Meaning of Fundamental Theorem of Calculus**: The fundamental theorem of calculus $\int_a^b f'(x)dx = f(b) - f(a)$ physically means: the accumulation of rate of change equals the change in total quantity, demonstrating the physical intuition of the fundamental theorem of calculus.
+
+**应用扩展 / Application Extensions**:
+
+- **微分方程与物理定律**: 许多物理定律可以表示为微分方程，如牛顿第二定律 $F = ma = m\frac{d^2s}{dt^2}$，这体现了微分方程在物理建模中的重要作用。
+- **Differential Equations and Physical Laws**: Many physical laws can be expressed as differential equations, e.g., Newton's second law $F = ma = m\frac{d^2s}{dt^2}$, demonstrating the important role of differential equations in physical modeling.
+
+**数学意义 / Mathematical Meaning**:
+
+- **微积分作为物理建模工具**: 微积分不仅是数学工具，更是描述物理现象的语言。通过微积分，我们可以精确描述物理量的变化规律和累积效应。
+- **Calculus as Physical Modeling Tool**: Calculus is not only a mathematical tool but also the language for describing physical phenomena. Through calculus, we can precisely describe the change laws and cumulative effects of physical quantities.
+
+- **理论深度**: 物理模型与微积分的关联不仅提供了计算工具，更重要的是建立了数学结构与物理现象之间的对应关系，为理解自然规律提供了数学框架。
+- **Theoretical Depth**: The association between physical models and calculus not only provides computational tools but more importantly establishes correspondences between mathematical structures and physical phenomena, providing a mathematical framework for understanding natural laws.
+
+#### 3.6.2 物理模型与函数类型的关联 / Association Between Physical Models and Function Types
+
+**核心关联 / Core Association**:
+
+不同类型的物理现象对应不同类型的数学函数，这种对应关系体现了数学函数在物理建模中的系统性和规律性。
+
+**函数类型与物理现象对应 / Correspondence Between Function Types and Physical Phenomena**:
+
+- **线性函数与匀速运动**: 匀速直线运动 $s = vt$ 对应线性函数，体现了线性关系在描述匀速过程中的作用。
+- **Linear Functions and Uniform Motion**: Uniform linear motion $s = vt$ corresponds to linear functions, demonstrating the role of linear relationships in describing uniform processes.
+- **二次函数与匀加速运动**: 匀加速运动 $s = v_0t + \frac{1}{2}at^2$ 对应二次函数，体现了二次关系在描述加速过程中的作用。
+- **Quadratic Functions and Uniformly Accelerated Motion**: Uniformly accelerated motion $s = v_0t + \frac{1}{2}at^2$ corresponds to quadratic functions, demonstrating the role of quadratic relationships in describing accelerated processes.
+- **指数函数与增长/衰减过程**: 指数增长 $N(t) = N_0 e^{rt}$ 和指数衰减 $N(t) = N_0 e^{-\lambda t}$ 对应指数函数，体现了指数关系在描述增长/衰减过程中的作用。
+- **Exponential Functions and Growth/Decay Processes**: Exponential growth $N(t) = N_0 e^{rt}$ and exponential decay $N(t) = N_0 e^{-\lambda t}$ correspond to exponential functions, demonstrating the role of exponential relationships in describing growth/decay processes.
+- **三角函数与周期运动**: 简谐运动 $x(t) = A\sin(\omega t + \phi)$ 对应三角函数，体现了周期函数在描述周期运动中的作用。
+- **Trigonometric Functions and Periodic Motion**: Simple harmonic motion $x(t) = A\sin(\omega t + \phi)$ corresponds to trigonometric functions, demonstrating the role of periodic functions in describing periodic motion.
+
+**数学结构分析 / Mathematical Structure Analysis**:
+
+- **函数类型的选择依据**: 物理现象的函数类型选择取决于现象的数学特征：线性关系对应恒定变化率，二次关系对应恒定加速度，指数关系对应比例变化率，周期关系对应周期性。
+- **Basis for Function Type Selection**: The selection of function types for physical phenomena depends on mathematical characteristics: linear relationships correspond to constant rates of change, quadratic relationships correspond to constant acceleration, exponential relationships correspond to proportional rates of change, periodic relationships correspond to periodicity.
+- **函数参数与物理量**: 函数参数对应物理量，如指数函数中的指数对应增长率或衰减率，三角函数中的角频率对应振动频率，这体现了函数参数与物理量的对应关系。
+- **Function Parameters and Physical Quantities**: Function parameters correspond to physical quantities, e.g., the exponent in exponential functions corresponds to growth or decay rates, angular frequency in trigonometric functions corresponds to vibration frequency, demonstrating the correspondence between function parameters and physical quantities.
+
+**数学意义 / Mathematical Meaning**:
+
+- **数学模型的系统性**: 不同类型的物理现象对应不同类型的数学函数，这体现了数学模型的系统性和规律性。理解这种对应关系有助于选择合适的数学模型。
+- **Systematic Nature of Mathematical Models**: Different types of physical phenomena correspond to different types of mathematical functions, demonstrating the systematic and regular nature of mathematical models. Understanding this correspondence helps select appropriate mathematical models.
+
+- **应用价值**: 通过函数类型与物理现象的对应关系，可以快速识别物理现象的数学特征，选择合适的数学模型，这体现了数学在物理建模中的指导作用。
+- **Application Value**: Through the correspondence between function types and physical phenomena, we can quickly identify mathematical characteristics of physical phenomena and select appropriate mathematical models, demonstrating the guiding role of mathematics in physical modeling.
+
 ---
 
 ## 📚 四、概念映射应用 / Concept Map Application
