@@ -251,8 +251,15 @@ $$\Lambda_K(s) = \Lambda_K(1-s)$$
 - **L函数**：从zeta函数推广到L函数，研究Galois表示与自守表示
   - 对于Galois表示 $\rho: \text{Gal}(\bar{K}/K) \to \text{GL}_n(\mathbb{C})$，定义L函数：
     $$L(s, \rho) = \prod_{\mathfrak{p}} \det(1 - \rho(\text{Frob}_{\mathfrak{p}}) N(\mathfrak{p})^{-s})^{-1}$$
+    其中 $\text{Frob}_{\mathfrak{p}}$ 是Frobenius元素，$N(\mathfrak{p})$ 是理想范数。
   - 对于自守表示 $\pi$，定义L函数 $L(s, \pi)$
+    - 自守表示 $\pi$ 的L函数通过局部L函数定义
+    - 局部L函数在局部Langlands对应中起关键作用
+    - 为现代数论提供基础
   - Langlands对应：$L(s, \rho) = L(s, \pi)$
+    - Langlands对应连接Galois表示与自守表示
+    - L函数在对应中起关键作用
+    - 这是Langlands纲领的核心
 - **Langlands对应**：L函数在Langlands对应中起关键作用
   - Langlands对应连接Galois表示与自守表示
   - L函数在对应中起关键作用

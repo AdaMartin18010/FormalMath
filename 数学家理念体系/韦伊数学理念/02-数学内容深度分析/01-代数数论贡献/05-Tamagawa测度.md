@@ -260,6 +260,21 @@ $$\text{vol}(f) = \int_{\mathbb{A}_K/K^*} f(x) d\mu_{\text{Tam}}(x)$$
 
 其中 $\mu_{\text{Tam}}$ 是Tamagawa测度。
 
+**在Langlands纲领中的应用**：
+
+- **自守表示的定义**：Tamagawa测度用于定义自守表示
+  - 自守表示是 $\text{GL}_n(\mathbb{A}_K)$ 的表示
+  - Tamagawa测度用于定义自守表示
+  - 在Langlands对应中起关键作用
+- **体积公式**：Tamagawa测度用于计算自守形式的体积
+  - 自守形式的体积可以通过Tamagawa测度计算
+  - 体积公式在Langlands纲领中起关键作用
+  - 为现代数论提供基础
+- **L函数**：Tamagawa测度与L函数的关系
+  - L函数在Langlands对应中起关键作用
+  - Tamagawa测度与L函数密切相关
+  - 为现代数论提供基础
+
 ### 4.2 2024-2025最新进展
 
 **凝聚数学**：
