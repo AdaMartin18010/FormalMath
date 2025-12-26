@@ -18,9 +18,9 @@ Teachers can run the Mathematica or SageMath notebooks in the classroom in order
 
 The third edition is meant to be used in an undergraduate, single-semester course, reducing the breadth of coverage, size, and cost of the previous editions. Additional changes include:
 
-- Binary operators are now in an independent section.  
-- The extended Euclidean algorithm is included.  
-- Many more homework problems are added to some sections.  
+- Binary operators are now in an independent section.
+- The extended Euclidean algorithm is included.
+- Many more homework problems are added to some sections.
 - Mathematical induction is moved to Section 1.2.
 
 Despite the emphasis on additional software, the text is not short on rigor. All of the classical proofs are included, although some of the harder proofs can be shortened by using technology.
@@ -183,76 +183,76 @@ Installing the Notebooks xxiii
 
 1 Preliminaries 1
 
-1.1IntegerFactorization 1  
-1.2 Functions 12  
-1.3 Binary Operators 21  
-1.4 Modular Arithmetic 27  
+1.1IntegerFactorization 1
+1.2 Functions 12
+1.3 Binary Operators 21
+1.4 Modular Arithmetic 27
 1.5 Rational and Real Numbers 34
 
 2 Understanding the Group Concept 43
 
-2.1 Introduction to Groups 43  
-2.2 Modular Congruence 49  
+2.1 Introduction to Groups 43
+2.2 Modular Congruence 49
 2.3 The Definition of a Group 59
 
 3 The Structure within a Group 68
 
-3.1 Generators of Groups 68  
-3.2 Defining Finite Groups in SageMath 75  
+3.1 Generators of Groups 68
+3.2 Defining Finite Groups in SageMath 75
 3.3 Subgroups 83
 
 4 Patterns within the Cosets of Groups 96
 
-4.1 Left and Right Cosets 96  
-4.2 Writing Secret Messages 105  
-4.3 Normal Subgroups 116  
+4.1 Left and Right Cosets 96
+4.2 Writing Secret Messages 105
+4.3 Normal Subgroups 116
 4.4 Quotient Groups 122
 
 # 5 Mappings between Groups 127
 
-5.1 Isomorphisms 127  
-5.2 Homomorphisms 136  
+5.1 Isomorphisms 127
+5.2 Homomorphisms 136
 5.3 The Three Isomorphism Theorems 145
 
 # 6 Permutation Groups 157
 
-6.1 Symmetric Groups 157  
-6.2 Cycles 164  
-6.3 Cayley's Theorem 173  
+6.1 Symmetric Groups 157
+6.2 Cycles 164
+6.3 Cayley's Theorem 173
 6.4 Numbering the Permutations 184
 
 # 7 Building Larger Groups from Smaller Groups 190
 
-7.1 The Direct Product 190  
-7.2 The Fundamental Theorem of Finite Abelian Groups 198  
-7.3 Automorphisms 210  
+7.1 The Direct Product 190
+7.2 The Fundamental Theorem of Finite Abelian Groups 198
+7.3 Automorphisms 210
 7.4 Semi-Direct Products 222
 
 # 8 The Search for Normal Subgroups 233
 
-8.1 The Center of a Group 233  
-8.2 The Normalizer and Normal Closure Subgroups 239  
-8.3 Conjugacy Classes and Simple Groups 243  
-8.4 Subnormal Series and the Jordan-Hölder Theorem 255  
+8.1 The Center of a Group 233
+8.2 The Normalizer and Normal Closure Subgroups 239
+8.3 Conjugacy Classes and Simple Groups 243
+8.4 Subnormal Series and the Jordan-Hölder Theorem 255
 8.5 Solving the PyraminxTM 264
 
 # 9 Introduction to Rings 274
 
-9.1 The Definition of a Ring 274  
-9.2 Entering Finite Rings into SageMath 283  
+9.1 The Definition of a Ring 274
+9.2 Entering Finite Rings into SageMath 283
 9.3 Some Properties of Rings 293
 
 # 10 The Structure within Rings 300
 
-10.1 Subrings 300  
-10.2 Quotient Rings and Ideals 306  
-10.3 Ring Isomorphisms 316  
+10.1 Subrings 300
+10.2 Quotient Rings and Ideals 306
+10.3 Ring Isomorphisms 316
 10.4 Homomorphisms and Kernels 326
 
 # 11 Integral Domains and Fields 336
 
-11.1 Polynomial Rings 336  
-11.2 The Field of Quotients 346  
+11.1 Polynomial Rings 336
+11.2 The Field of Quotients 346
 11.3 Complex Numbers 355
 
 # Answers to Odd-Numbered Problems 371
@@ -263,95 +263,95 @@ Installing the Notebooks xxiii
 
 # List of Figures
 
-1.1 Plot depicting the rational numbers 35  
+1.1 Plot depicting the rational numbers 35
 1.2 Sample path going through every rational 36
 
-2.1 Terry's animated dance steps 44  
-2.2 Circle graphs for modulo 10 operations 54  
-3.1 Circle graph of adding 3 mod 10 69  
-3.2 Visualizing arrangements of three books 78  
-3.3 Rotations of the octahedron 80  
-3.4 PyraminxTM puzzle 92  
-4.1 Circle graph of adding 4 mod 10 97  
-4.2 Circle graphs revealing cosets of Terry's group 97  
-4.3 Circle graph for squaring in  $Z_{33}^{*}$  105  
-4.4 Circle graph for cubing in  $Z_{33}^{*}$  106  
-4.5 Circle graph for cubing modulo 33 107  
-4.6 Cayley table for the quotient group 125  
-5.1 Diagram of a typical homomorphism 140  
-5.2 Commuting diagram for first isomorphism theorem 147  
-5.3 Commuting diagram for second isomorphism theorem 151  
-5.4 Commuting diagram for third isomorphism theorem 155  
-6.1 Circle graph for a typical permutations 162  
-6.2 Circle graph of a typical cycle 165  
-6.3 Circle graphs for multiplying elements of  $Q$  by  $i$ . 174  
-6.4 Multiplying cosets of  $D_4$  by elements 178  
-7.1 Circle graph for  $x\to x^3$  in  $Z_{8}$  211  
-7.2 Proof without words that  $\operatorname{Aut}(Q) \approx S_4$ . 217  
-8.1 Example of two subnormal series of different lengths 258  
-8.2 Diagram showing the strategy of the refinement theorem 259  
-8.3 PyraminxTM without corners 266  
-8.4 PyraminxTM with numbered faces 268  
-8.5 Sam Loyd's 14-15 puzzle 271  
+2.1 Terry's animated dance steps 44
+2.2 Circle graphs for modulo 10 operations 54
+3.1 Circle graph of adding 3 mod 10 69
+3.2 Visualizing arrangements of three books 78
+3.3 Rotations of the octahedron 80
+3.4 PyraminxTM puzzle 92
+4.1 Circle graph of adding 4 mod 10 97
+4.2 Circle graphs revealing cosets of Terry's group 97
+4.3 Circle graph for squaring in  $Z_{33}^{*}$  105
+4.4 Circle graph for cubing in  $Z_{33}^{*}$  106
+4.5 Circle graph for cubing modulo 33 107
+4.6 Cayley table for the quotient group 125
+5.1 Diagram of a typical homomorphism 140
+5.2 Commuting diagram for first isomorphism theorem 147
+5.3 Commuting diagram for second isomorphism theorem 151
+5.4 Commuting diagram for third isomorphism theorem 155
+6.1 Circle graph for a typical permutations 162
+6.2 Circle graph of a typical cycle 165
+6.3 Circle graphs for multiplying elements of  $Q$  by  $i$ . 174
+6.4 Multiplying cosets of  $D_4$  by elements 178
+7.1 Circle graph for  $x\to x^3$  in  $Z_{8}$  211
+7.2 Proof without words that  $\operatorname{Aut}(Q) \approx S_4$ . 217
+8.1 Example of two subnormal series of different lengths 258
+8.2 Diagram showing the strategy of the refinement theorem 259
+8.3 PyraminxTM without corners 266
+8.4 PyraminxTM with numbered faces 268
+8.5 Sam Loyd's 14-15 puzzle 271
 8.6 Track puzzle with surprising group 272
 
-8.7 Simple puzzle with two wheels 273  
-10.1 Commuting diagram for first ring isomorphism theorem 332  
-11.1 Polar coordinates for a complex number 361  
-11.2 The eight roots of unity 364  
+8.7 Simple puzzle with two wheels 273
+10.1 Commuting diagram for first ring isomorphism theorem 332
+11.1 Polar coordinates for a complex number 361
+11.2 The eight roots of unity 364
 11.3 Imaginary portion of complex logarithm 367
 
 # List of Tables
 
-1.1 Extended Euclidean algorithm 7  
+1.1 Extended Euclidean algorithm 7
 1.2 A non-commutative but associative binary operation 23
 
-2.1 Terry the triangle's dance steps 44  
-2.2 Cayley table for Terry's dance steps 45  
-2.3Addition modulo 10 53  
-2.4 Multiplication modulo 7 55  
-2.5 Multiplication modulo 10 56  
-2.6 Multiplication modulo 15 56  
-3.1 Euler's totient function 71  
-3.2 Cayley table of  $Z_{5}$  76  
-3.3 Cayley table for  $S_{3}$  79  
-4.1 Standard alpha-numeric code 109  
-4.2 Another Cayley table for  $S_{3}$  125  
-5.1 Multiplication table for  $Z_{24}^{*}$  131  
-5.2 Multiplication table for  $D_4$  132  
-5.3 Multiplication table for  $Q$  133  
-5.4 Number of groups of order  $n$  for composite  $n$  134  
-5.5 Multiplication table for  $D_{5}$  135  
-6.1 Table of factorials 160  
-6.2 Two ways to assign permutations to the elements of  $Q$  175  
-6.3 Multiplication table for  $Q$  using integer representation 186  
-7.1 Cayley table of  $Z_4 \times Z_2$  191  
-7.2 Table of partitions 207  
-7.3 Cayley table of  $Z_{3}\rtimes_{\phi}Z_{2}$  224  
-7.4 Multiplication table for  $Z_{5}\rtimes Z_{2}\approx D_{5}$  228  
-8.1 SageMath's Cayley table for  $D_4$  233  
-8.2 Orders of the elements for the group  $E$  268  
-8.3 Moves for solving the PyraminxTM 270  
-9.1 Multiplication table for the ring  $Z_{6}$  275  
+2.1 Terry the triangle's dance steps 44
+2.2 Cayley table for Terry's dance steps 45
+2.3Addition modulo 10 53
+2.4 Multiplication modulo 7 55
+2.5 Multiplication modulo 10 56
+2.6 Multiplication modulo 15 56
+3.1 Euler's totient function 71
+3.2 Cayley table of  $Z_{5}$  76
+3.3 Cayley table for  $S_{3}$  79
+4.1 Standard alpha-numeric code 109
+4.2 Another Cayley table for  $S_{3}$  125
+5.1 Multiplication table for  $Z_{24}^{*}$  131
+5.2 Multiplication table for  $D_4$  132
+5.3 Multiplication table for  $Q$  133
+5.4 Number of groups of order  $n$  for composite  $n$  134
+5.5 Multiplication table for  $D_{5}$  135
+6.1 Table of factorials 160
+6.2 Two ways to assign permutations to the elements of  $Q$  175
+6.3 Multiplication table for  $Q$  using integer representation 186
+7.1 Cayley table of  $Z_4 \times Z_2$  191
+7.2 Table of partitions 207
+7.3 Cayley table of  $Z_{3}\rtimes_{\phi}Z_{2}$  224
+7.4 Multiplication table for  $Z_{5}\rtimes Z_{2}\approx D_{5}$  228
+8.1 SageMath's Cayley table for  $D_4$  233
+8.2 Orders of the elements for the group  $E$  268
+8.3 Moves for solving the PyraminxTM 270
+9.1 Multiplication table for the ring  $Z_{6}$  275
 9.2 Checklist to show which rings have which properties 277
 
-9.3Addition table for a particular ring  $R$  286  
-9.4 Multiplication table for a particular ring  $R$  288  
-9.5 Multiplication for a non-commutative unity ring 291  
-9.6  $T_{4}$  , one of the smallest non-commutative rings 296  
-9.7  $T_{8}$  , the smallest non-commutative unity ring 297  
+9.3Addition table for a particular ring  $R$  286
+9.4 Multiplication table for a particular ring  $R$  288
+9.5 Multiplication for a non-commutative unity ring 291
+9.6  $T_{4}$  , one of the smallest non-commutative rings 296
+9.7  $T_{8}$  , the smallest non-commutative unity ring 297
 9.8 Examples for each of the 11 possible types of ring 297
 
-10.1 Addition and multiplication tables for a particular subring .. 302  
-10.2Addition table for cosets of the subring 307  
-10.3 Multiplication table for the cosets of the subring 308  
-10.4 Tables for a ring of order 10 318  
-10.5 Similar ring of order 10 318  
-10.6 Multiplication for the ring  $2Z_{20}$  319  
-10.7 Number of rings of order  $n$  for  $n <   32$  323  
+10.1 Addition and multiplication tables for a particular subring .. 302
+10.2Addition table for cosets of the subring 307
+10.3 Multiplication table for the cosets of the subring 308
+10.4 Tables for a ring of order 10 318
+10.5 Similar ring of order 10 318
+10.6 Multiplication for the ring  $2Z_{20}$  319
+10.7 Number of rings of order  $n$  for  $n <   32$  323
 10.8 Ring number 51 of order 8 324
 
-11.1Addition table for "complex numbers modulo 3" 343  
+11.1Addition table for "complex numbers modulo 3" 343
 11.2 Multiplication table for "complex numbers modulo 3" 344
 
 # Preface for Students
@@ -432,8 +432,8 @@ http://taylorandfrancis.com
 
 William Paulsen is a professor of mathematics at Arkansas State University. He has taught abstract algebra at both the undergraduate and graduate levels since 1997. He earned his BS (summa cum laude), MS, and PhD in mathematics at Washington University in St. Louis. He was on the winning team for the 45th William Lowell Putnam Mathematical Competition.
 
-Dr. Paulsen has authored over 25 papers in abstract algebra and applied mathematics. Most of these papers make use of Mathematica $^{\text{®}}$ , including one which solves the tetration problem, that is, finds a unique complex function satisfying natural conditions for which  $f(z + 1) = b^{f(z)}$ . He has also authored an applied mathematics textbook, Asymptotic Analysis and Perturbation Theory, also published by CRC press.  
-Dr. Paulsen has also programmed several new games and puzzles in Javascript and C++. One of these puzzles, Duelling Dimensions, has been syndicated through Knight Features. Other puzzles and games are available on the Internet.  
+Dr. Paulsen has authored over 25 papers in abstract algebra and applied mathematics. Most of these papers make use of Mathematica $^{\text{®}}$ , including one which solves the tetration problem, that is, finds a unique complex function satisfying natural conditions for which  $f(z + 1) = b^{f(z)}$ . He has also authored an applied mathematics textbook, Asymptotic Analysis and Perturbation Theory, also published by CRC press.
+Dr. Paulsen has also programmed several new games and puzzles in Javascript and C++. One of these puzzles, Duelling Dimensions, has been syndicated through Knight Features. Other puzzles and games are available on the Internet.
 Dr. Paulsen lives in Harrisburg, Arkansas with his wife Cynthia, and their three dogs.
 
 ![](images/2de201359e12fdde9f28ded3df7ded0d758fe1570d4893e41091fb9912a462de.jpg)
@@ -686,8 +686,8 @@ Because of the similarities of the two systems, this book only shows the input a
 
 Although SageMath is a totally free program, it takes some effort to install. This is because it runs on Linux, not Windows. As a result, one has three options.
 
-1. Enable Windows Subsystem for Linux (WSL), which allows one to run Linux as a program running inside of Windows. Then install a Linux operating system, such as Ubuntu, into the subsystem. You will then be able to start Ubuntu from the Windows start menu.  
-2. Create a hard drive partition that can boot to a Linux operating system, such as Ubuntu. The computer will then be able to boot to either Windows or Linux. This is actually the preferred method and is easier than it might first appear. However, it uses up more of your hard drive space.  
+1. Enable Windows Subsystem for Linux (WSL), which allows one to run Linux as a program running inside of Windows. Then install a Linux operating system, such as Ubuntu, into the subsystem. You will then be able to start Ubuntu from the Windows start menu.
+2. Create a hard drive partition that can boot to a Linux operating system, such as Ubuntu. The computer will then be able to boot to either Windows or Linux. This is actually the preferred method and is easier than it might first appear. However, it uses up more of your hard drive space.
 3. SageMath is available on macOS, even though it is not available for Windows. The signed and notarized app will work for macOS 10.12 and newer.
 
 Each of the three options requires some instructions to set up. The details are also available at
@@ -814,7 +814,7 @@ There are also a database file to be installed, that allows GAP to perform advan
 
 In order to view animations in SageMath, you will also have to install either ImageMagick or FFmpeg. The following installs ImageMagick, along with other recommended programs.
 
-# sudo apt-get install gfortran  
+# sudo apt-get install gfortran
 sudo apt-get install imagemagick texlive dvipng
 
 You will have to manually copy the SageMath notebooks to a directory named jupyter in your home directory. You can now exit the terminal window with exit. It is important at this point to run the Software Update on the computer. This final step links the SageMath and ImageMagick programs, so they can interact.
@@ -865,8 +865,8 @@ will assign the variable a 144 digit number, but will not display this number. A
 
 a
 
-1368914790585883759913260273820883159664636956253374364\  
-7148019007836899717749907659380020615568894138825048444\  
+1368914790585883759913260273820883159664636956253374364\
+7148019007836899717749907659380020615568894138825048444\
 0597994042813512732765695774566001
 
 Note that both SageMath and Mathematica use the backslash to show that the number is continued on the next line.
@@ -1181,7 +1181,7 @@ Thus, we have  $u = -9$  and  $v = 13$ .
 
 There is also a tabular way of computing  $u$  and  $v$ , called the extended Euclidean algorithm. Table 1.1 shows the computations of  $u$  and  $v$  from Example 1.4. At the top of the table, we always put the two rows  $(1,0)$  and  $(0,1)$ . Then, to the left, we write the negatives of the divisors  $q$  from the standard Euclidean algorithm. However, we do not include the last quotient that leads to a remainder of 0.
 
-TABLE 1.1: Extended Euclidean algorithm  
+TABLE 1.1: Extended Euclidean algorithm
 
 <table><tr><td rowspan="2"></td><td>1</td><td>0</td><td rowspan="2">always
 the same</td></tr><tr><td>0</td><td>1</td></tr><tr><td>Negative of the q</td><td>-1</td><td>-1</td><td rowspan="4">Take the number at the far
@@ -1324,13 +1324,13 @@ In book X Euclid worked with irrational numbers, or incommensurables proving tha
 
 Euclid would have been aware of the three great construction problems of antiquity: trisecting an angle, duplicating the cube, and squaring the circle. The first problem is to divide any angle into 3 equal parts. The duplication of the cube involved constructing a line segment  $\sqrt[3]{2}$  times another line segment. Finally, squaring the circle required constructing a square with the same area as a given circle. Euclid's Elements laid down the ground rules for a valid straight edge and compass constructions. Previous "solutions" done over a century earlier violated these rules. Although these seem like geometry problems, they were only proven to be impossible using algebraic methods in the 19th century. The first two were proven to be impossible using Galois theory. The last construction was proven impossible by Ferdinand von Lindemann in 1882 when he proved  $\pi$  is transcendental.
 
-11 Use Definition 1.1 to prove that if  $a|b$  and  $b|c$ , then  $a|c$ .  
-12 Use Definition 1.1 to prove that if  $a|b$  and  $a|c$ , then  $a|(b + c)$ .  
-13 Use Definition 1.1 to prove that if  $a|b$  and  $a|c$ , then  $a|(b - c)$ .  
-14 Use Definition 1.1 to prove that if  $a|b$  and  $a|c$ , and  $n$  and  $m$  are integers, then  $a|(nb + mc)$ .  
-15 Use Definition 1.1 to prove that if  $a \mid b$  and  $b \mid a$ , then either  $a = b$ , or  $a = -b$ .  
-16 Use Problem 14 to prove that if  $a \mid b$  and  $a \mid c$ , then  $a \mid \gcd(b, c)$ .  
-17 Show that if  $a|bc$  and  $\gcd(a, b) = 1$ , then  $a|c$ . Hint: Use the trick from Euclid's Lemma (1.4).  
+11 Use Definition 1.1 to prove that if  $a|b$  and  $b|c$ , then  $a|c$ .
+12 Use Definition 1.1 to prove that if  $a|b$  and  $a|c$ , then  $a|(b + c)$ .
+13 Use Definition 1.1 to prove that if  $a|b$  and  $a|c$ , then  $a|(b - c)$ .
+14 Use Definition 1.1 to prove that if  $a|b$  and  $a|c$ , and  $n$  and  $m$  are integers, then  $a|(nb + mc)$ .
+15 Use Definition 1.1 to prove that if  $a \mid b$  and  $b \mid a$ , then either  $a = b$ , or  $a = -b$ .
+16 Use Problem 14 to prove that if  $a \mid b$  and  $a \mid c$ , then  $a \mid \gcd(b, c)$ .
+17 Show that if  $a|bc$  and  $\gcd(a, b) = 1$ , then  $a|c$ . Hint: Use the trick from Euclid's Lemma (1.4).
 18 Prove that there are an infinite number of primes. This is known as Euclid's prime number theorem. Hint: Suppose the positive primes are finite:  $2, 3, 5, 7, \ldots, p_n$ . Apply Lemma 1.1 to
 
 $$
@@ -1359,9 +1359,9 @@ For Problems 19 through 27: Find integers  $u$  and  $v$  that satisfy  $ux + vy
 
 27  $x = 0$  ，  $y = 9$
 
-28 Show that if  $d$  is a positive integer, then  $\gcd (da,db) = d\cdot \gcd (a,b)$  
-29 Define the least common multiple of two positive integers  $x$  and  $y$ , denoted by  $\operatorname{lcm}(x, y)$ , to be the smallest positive integer which is a multiple of both  $x$  and  $y$ . Prove that the least common multiple will exist, and that  $\operatorname{lcm}(x, y)|x \cdot y$  
-30 Prove that  $\operatorname{lcm}(x,y) = (x\cdot y) / \gcd (x,y)$ . See Problem 29.  
+28 Show that if  $d$  is a positive integer, then  $\gcd (da,db) = d\cdot \gcd (a,b)$
+29 Define the least common multiple of two positive integers  $x$  and  $y$ , denoted by  $\operatorname{lcm}(x, y)$ , to be the smallest positive integer which is a multiple of both  $x$  and  $y$ . Prove that the least common multiple will exist, and that  $\operatorname{lcm}(x, y)|x \cdot y$
+30 Prove that  $\operatorname{lcm}(x,y) = (x\cdot y) / \gcd (x,y)$ . See Problem 29.
 31 Show that if  $\gcd(x, y, z) = 1$ , then there exist integers  $u, v$ , and  $w$  such that  $ux + vy + wz = 1$ .
 
 Hint: Use the fact that  $\gcd (x,y,z) = \gcd (\gcd (x,y),z)$ .
@@ -1518,8 +1518,8 @@ PROOF: Suppose that there was some  $n$  greater than or equal to  $a$  for whic
 
 Here are the steps for proving a statement using mathematical induction:
 
-1. The base case: Prove the statement for the starting value  $a$ , usually  $a = 1$ .  
-2. Assume the statement is true for the previous case, by replacing every  $n$  with  $n - 1$ .  
+1. The base case: Prove the statement for the starting value  $a$ , usually  $a = 1$ .
+2. Assume the statement is true for the previous case, by replacing every  $n$  with  $n - 1$ .
 3. Use this assumption to prove the statement for the case  $n$ .
 
 We can see an example of mathematical induction in the following lemma.
@@ -1626,7 +1626,7 @@ $$
 
 # Problems for §1.2
 
-1. Let  $\phi$  be the mapping that sends every number from 0 to 99 to the last letter of the English word for that number. What would be the range of  $\phi$ ?  
+1. Let  $\phi$  be the mapping that sends every number from 0 to 99 to the last letter of the English word for that number. What would be the range of  $\phi$ ?
 2 Show that the function  $f: \mathbb{Q} \to \mathbb{Q}$  given by  $f(a / b) = ab / (a^2 + b^2)$  is well-defined.
 
 For Problems 3 through 8: Part a) For the given  $f: \mathbb{R} \to \mathbb{R}$ , determine if the function is one-to-one. Part b) Determine if the function is onto. In both cases, prove your answer is correct.
@@ -1661,12 +1661,12 @@ For Problems 9 through 14: Part a) For the given  $f: \mathbb{Z} \to \mathbb{Z}$
 
 16 Use mathematical induction to show that  $1 + n < n^2$  for all integers  $n \geq 2$ .
 
-17 Use mathematical induction to show that  $2^n < n!$  for all integers  $n \geq 4$ . (Recall that  $n! = 1 \cdot 2 \cdot 3 \cdots n$ .)  
-18 Use mathematical induction to show that  $n^2 + 3n + 4$  is a multiple of 2 for all  $n \geq 1$ .  
-19 Use mathematical induction to show that  $n^3 + 2n$  is a multiple of 3 for all  $n \geq 1$ .  
-20 Use mathematical induction to show that  $4^n - 1$  is a multiple of 3 for all  $n \geq 1$ .  
-21 Use mathematical induction to show that  $6^n + 4$  is a multiple of 20 for all  $n \geq 2$ .  
-22 Use mathematical induction to show that  $x$  is a positive real number, then  $(1 + x)^n \geq 1 + xn$  for all positive integers  $n$ .  
+17 Use mathematical induction to show that  $2^n < n!$  for all integers  $n \geq 4$ . (Recall that  $n! = 1 \cdot 2 \cdot 3 \cdots n$ .)
+18 Use mathematical induction to show that  $n^2 + 3n + 4$  is a multiple of 2 for all  $n \geq 1$ .
+19 Use mathematical induction to show that  $n^3 + 2n$  is a multiple of 3 for all  $n \geq 1$ .
+20 Use mathematical induction to show that  $4^n - 1$  is a multiple of 3 for all  $n \geq 1$ .
+21 Use mathematical induction to show that  $6^n + 4$  is a multiple of 20 for all  $n \geq 2$ .
+22 Use mathematical induction to show that  $x$  is a positive real number, then  $(1 + x)^n \geq 1 + xn$  for all positive integers  $n$ .
 23 Use mathematical induction to prove that for all positive integers  $n$ ,
 
 $$
@@ -1705,25 +1705,25 @@ $$
 
 29 Let  $f: A \to B$  be a function from a finite set  $A$  to a finite set  $B$ . If  $|B| < |A|$ , use Lemma 1.6 to show that  $f$  cannot be one-to-one.
 
-30 Let  $f: A \to B$  be a function from a finite set  $A$  to a finite set  $B$ . If  $|B| > |A|$ , show that  $f$  cannot be onto.  
-31 Let  $f: A \to B$  be a function from a finite set  $A$  to a finite set  $B$ . If  $|B| = |A|$ , and  $f$  is onto, use Problem 30 to show that  $f$  is also one-to-one. Note that Problems 29 through 31 are three alternative ways to state the pigeonhole principle.  
+30 Let  $f: A \to B$  be a function from a finite set  $A$  to a finite set  $B$ . If  $|B| > |A|$ , show that  $f$  cannot be onto.
+31 Let  $f: A \to B$  be a function from a finite set  $A$  to a finite set  $B$ . If  $|B| = |A|$ , and  $f$  is onto, use Problem 30 to show that  $f$  is also one-to-one. Note that Problems 29 through 31 are three alternative ways to state the pigeonhole principle.
 32 Use Problem 29 to show that there are two people in London with exactly the same number of hairs on their head. (Since the average number of hairs is about 150,000, assume no one can have more than 1,000,000 hairs.)
 
 For Problems 33 through 38: For the given  $f: \mathbb{Z} \to \mathbb{Z}$  and  $g: \mathbb{Z} \to \mathbb{Z}$ , determine  $(f \circ g)(x)$ .
 
-33  $f(x) = x^{2} - 1$  
-34  $f(x) = x^{2}$  
+33  $f(x) = x^{2} - 1$
+34  $f(x) = x^{2}$
 35  $f(x) = x^{3} + 2x^{2}$
 
-36  $f(x) = \left\{ \begin{array}{ll}2x + 5 & \text{if } x \text{ is even,}\\ x + 2 & \text{if } x \text{ is odd.} \end{array} \right.$ $g(x) = \left\{ \begin{array}{ll}2x + 1 & \text{if } x \text{ is even,}\\ x - 1 & \text{if } x \text{ is odd.} \end{array} \right.$  
-37  $f(x) = \left\{ \begin{array}{ll} 3x + 2 & \text{if } x \text{ is even,} \\ x + |x| & \text{if } x \text{ is odd.} \end{array} \right.$ $g(x) = \left\{ \begin{array}{ll} x + 4 & \text{if } x \text{ is even,} \\ 2x & \text{if } x \text{ is odd.} \end{array} \right.$  
+36  $f(x) = \left\{ \begin{array}{ll}2x + 5 & \text{if } x \text{ is even,}\\ x + 2 & \text{if } x \text{ is odd.} \end{array} \right.$ $g(x) = \left\{ \begin{array}{ll}2x + 1 & \text{if } x \text{ is even,}\\ x - 1 & \text{if } x \text{ is odd.} \end{array} \right.$
+37  $f(x) = \left\{ \begin{array}{ll} 3x + 2 & \text{if } x \text{ is even,} \\ x + |x| & \text{if } x \text{ is odd.} \end{array} \right.$ $g(x) = \left\{ \begin{array}{ll} x + 4 & \text{if } x \text{ is even,} \\ 2x & \text{if } x \text{ is odd.} \end{array} \right.$
 38  $f(x) = \left\{ \begin{array}{ll}x + 3 & \mathrm{if~}x\mathrm{~is~even},\\ (x - 1) / 2 & \mathrm{if~}x\mathrm{~is~odd.} \end{array} \right.$ $g(x) = \left\{ \begin{array}{ll}2x - 1 & \mathrm{if~}x\mathrm{~is~even},\\ x + 4 & \mathrm{if~}x\mathrm{~is~odd.} \end{array} \right.$
 
-39 Let  $f: B \to C$  and  $g: A \to B$  be both one-to-one functions. Show that  $f \circ g: A \to C$  is one-to-one.  
-40 Let  $f: B \to C$  and  $g: A \to B$  be both onto functions. Show that  $f \circ g: A \to C$  is onto.  
-41 Let  $f: B \to C$  and  $g: A \to B$  be functions, and suppose that  $f$  is not onto. Show that  $f \circ g: A \to C$  is not onto.  
-42 Let  $f: B \to C$  and  $g: A \to B$  be functions, and suppose that  $g$  is not one-to-one. Show that  $f \circ g: A \to C$  is not one-to-one.  
-43 Show that the function  $f: \mathbb{Z} \to \mathbb{Z}$ ,  $f(x) = \begin{cases} x + 5 & \text{if } x \text{ is even,} \\ x - 3 & \text{if } x \text{ is odd.} \end{cases}$  is a bijection, and find  $f^{-1}(x)$ .  
+39 Let  $f: B \to C$  and  $g: A \to B$  be both one-to-one functions. Show that  $f \circ g: A \to C$  is one-to-one.
+40 Let  $f: B \to C$  and  $g: A \to B$  be both onto functions. Show that  $f \circ g: A \to C$  is onto.
+41 Let  $f: B \to C$  and  $g: A \to B$  be functions, and suppose that  $f$  is not onto. Show that  $f \circ g: A \to C$  is not onto.
+42 Let  $f: B \to C$  and  $g: A \to B$  be functions, and suppose that  $g$  is not one-to-one. Show that  $f \circ g: A \to C$  is not one-to-one.
+43 Show that the function  $f: \mathbb{Z} \to \mathbb{Z}$ ,  $f(x) = \begin{cases} x + 5 & \text{if } x \text{ is even,} \\ x - 3 & \text{if } x \text{ is odd.} \end{cases}$  is a bijection, and find  $f^{-1}(x)$ .
 44 Show that the function  $f: \mathbb{R} \to \mathbb{R}$ ,  $f(x) = \begin{cases} x^2 & \text{if } x \geq 0, \\ x & \text{if } x < 0. \end{cases}$  is a bijection, and find  $f^{-1}(x)$ .
 
 # Interactive Problems
@@ -1810,7 +1810,7 @@ $$
 
 where  $\min (x,y)$  denotes the smaller of  $x$  or  $y$ . Show that this binary operation is both commutative and associative.
 
-TABLE 1.2: Binary operator for Example 1.16  
+TABLE 1.2: Binary operator for Example 1.16
 
 <table><tr><td>*</td><td>a</td><td>b</td><td>c</td><td>d</td></tr><tr><td>a</td><td>a</td><td>a</td><td>a</td><td>a</td></tr><tr><td>b</td><td>a</td><td>b</td><td>b</td><td>a</td></tr><tr><td>c</td><td>a</td><td>c</td><td>c</td><td>a</td></tr><tr><td>d</td><td>a</td><td>d</td><td>d</td><td>a</td></tr></table>
 
@@ -1908,30 +1908,30 @@ Is this binary operator associative?
 
 For Problems 12 through 16: Form the Cayley table for the binary operator defined on the set  $A$ .
 
-12  $A = \{0,1,2,3,4,5\}$ $x*y = |x - y|$  
-13  $A = \{0,1,2,3,4\}$ $x*y = y$  
-14  $A = \{1,2,3,4,5\}$ $x*y = \min (x,y).$  
-15  $A = \{1,2,3,4,5\}$ $x*y = \max (x,y).$  
-16  $A = \{0,1,2,3,4\}$ $x*y = \min (x + y,4).$  
-17  $A = \{1,2,3,4,5,6\}$ $x*y = \gcd (x,y).$  
-18  $A = \{1,2,4,8,16,32\}$ $x*y = \gcd (x,y).$  
+12  $A = \{0,1,2,3,4,5\}$ $x*y = |x - y|$
+13  $A = \{0,1,2,3,4\}$ $x*y = y$
+14  $A = \{1,2,3,4,5\}$ $x*y = \min (x,y).$
+15  $A = \{1,2,3,4,5\}$ $x*y = \max (x,y).$
+16  $A = \{0,1,2,3,4\}$ $x*y = \min (x + y,4).$
+17  $A = \{1,2,3,4,5,6\}$ $x*y = \gcd (x,y).$
+18  $A = \{1,2,4,8,16,32\}$ $x*y = \gcd (x,y).$
 19  $A = \{0,1,2,3,4,5\}$ $x*y = \max (x - y,0).$
 
-20 Let  $n > 0$  be an integer, and let  $A = \{0,1,2,\ldots,n\}$ . Show that the binary operator  $x*y = \min(x+y,n)$  is associative.  
-21 Let  $A$  be the set of all functions from  $\mathbb{R}$  to  $\mathbb{R}$ , and for two functions  $f(x)$  and  $g(x)$ , define  $f * g = f \circ g$ , the function composition. Show that this binary operator is associative.  
-22 Given a binary operation on a set  $A$ , an element  $l$  is called a left identity if  $l * x = x$  for all  $x$  in  $A$ . Likewise,  $r$  is called a right identity if  $x * r = x$  for all  $x$  in  $A$ . Show that the binary operation of Example 1.16 has two right identities, but no left identity.  
-23 Show that if a binary operation on a set  $A$  has both a left identity and a right identity, then these are the same. See Problem 22.  
-24 Given a binary operation on a set  $A$ , an element  $e$  is called a two-sided identity if it is both a left identity and a right identity. That is,  $x * e = e * x = x$  for all  $x$  in  $A$ . Find a two-sided identity for the binary operation of Example 1.13.  
+20 Let  $n > 0$  be an integer, and let  $A = \{0,1,2,\ldots,n\}$ . Show that the binary operator  $x*y = \min(x+y,n)$  is associative.
+21 Let  $A$  be the set of all functions from  $\mathbb{R}$  to  $\mathbb{R}$ , and for two functions  $f(x)$  and  $g(x)$ , define  $f * g = f \circ g$ , the function composition. Show that this binary operator is associative.
+22 Given a binary operation on a set  $A$ , an element  $l$  is called a left identity if  $l * x = x$  for all  $x$  in  $A$ . Likewise,  $r$  is called a right identity if  $x * r = x$  for all  $x$  in  $A$ . Show that the binary operation of Example 1.16 has two right identities, but no left identity.
+23 Show that if a binary operation on a set  $A$  has both a left identity and a right identity, then these are the same. See Problem 22.
+24 Given a binary operation on a set  $A$ , an element  $e$  is called a two-sided identity if it is both a left identity and a right identity. That is,  $x * e = e * x = x$  for all  $x$  in  $A$ . Find a two-sided identity for the binary operation of Example 1.13.
 25 Show that the binary operation of Example 1.15 does not have a two-sided identity. See Problem 24.
 
 For Problems 26 through 31: Determine if the subset  $S$  is closed with respect to the binary operation.
 
-26  $x*y = x - y$  （20  $S =$  set of even integers.  
-27  $x*y = x - y$  （20  $S =$  set of odd integers.  
-28  $x*y = xy$  （20  $S =$  set of even integers.  
-29  $x*y = xy$  （20  $S =$  set of odd integers.  
-30  $f*g = f\circ g$  （20  $S =$  set of all polynomial functions.  
-31  $x*y = x / y$  （20  $S =$  non-zerointegers.  
+26  $x*y = x - y$  （20  $S =$  set of even integers.
+27  $x*y = x - y$  （20  $S =$  set of odd integers.
+28  $x*y = xy$  （20  $S =$  set of even integers.
+29  $x*y = xy$  （20  $S =$  set of odd integers.
+30  $f*g = f\circ g$  （20  $S =$  set of all polynomial functions.
+31  $x*y = x / y$  （20  $S =$  non-zerointegers.
 32  $x*y = x / y$  （20  $S =$  non-zero rational numbers.
 
 # Interactive Problems
@@ -1962,18 +1962,18 @@ Try computing  $(x*y)*z$  and  $x*(y*z)$  for different integers  $x, y,$  and  
 
 35 SageMath can work with tables of numbers, called matrices. For example, a  $2 \times 2$  matrix can be entered by
 
-var("a11 a12 a21 a22")  
-A = matrix([[a11, a12], [a21, a22]]); A  
-[a11 a12]  
+var("a11 a12 a21 a22")
+A = matrix([[a11, a12], [a21, a22]]); A
+[a11 a12]
 [a21 a22]
 
 The first command defines a set of variables for us to use. If we define two such matrices, we can use  $\star$  to multiply them together.
 
 ```txt
-var("b11 b12 b21 b22")  
-B = matrix([[b11, b12], [b21, b22]])  
-A*B  
-[a11*b11 + a12*b21 a11*b12 + a12*b22]  
+var("b11 b12 b21 b22")
+B = matrix([[b11, b12], [b21, b22]])
+A*B
+[a11*b11 + a12*b21 a11*b12 + a12*b22]
 [a21*b11 + a22*b21 a21*b12 + a22*b22]
 ```
 
@@ -1982,7 +1982,7 @@ The result is another  $2 \times 2$  matrix, showing that  $\star$  is a binary 
 36 Extend Problem 35 by defining a third  $2 \times 2$  matrix.
 
 ```javascript
-var("c11 c12 c21 c22")  
+var("c11 c12 c21 c22")
 C = matrix([[c11, c12], [c21, c22]]); C
 ```
 
@@ -2260,10 +2260,10 @@ For Problems 1 through 12: Evaluate the following modular arithmetic problems.
 
 For Problems 14 through 25: Use the Chinese remainder theorem to find the smallest non-negative number that satisfies the system of modular equations.
 
-14  $\left\{ \begin{array}{l}k\bmod 13 = 5,\\ k\bmod 12 = 7. \end{array} \right.$  18  $\left\{ \begin{array}{l}k\bmod 21 = 7,\\ k\bmod 16 = 10. \end{array} \right.$  22  $\left\{ \begin{array}{l}k\bmod 79 = 48,\\ k\bmod 83 = 65. \end{array} \right.$  
-15  $\left\{ \begin{array}{l}k\bmod 17 = 5,\\ k\bmod 11 = 8. \end{array} \right.$  19  $\left\{ \begin{array}{l}k\bmod 34 = 19,\\ k\bmod 27 = 10. \end{array} \right.$  23  $\left\{ \begin{array}{l}k\bmod 103 = 78,\\ k\bmod 97 = 49. \end{array} \right.$  
-16  $\left\{ \begin{array}{l}k\bmod 18 = 7,\\ k\bmod 13 = 3. \end{array} \right.$  20  $\left\{ \begin{array}{l}k\bmod 51 = 17,\\ k\bmod 49 = 26. \end{array} \right.$  24  $\left\{ \begin{array}{l}k\bmod 107 = 43,\\ k\bmod 128 = 35. \end{array} \right.$  
-17  $\left\{ \begin{array}{l}k\bmod 23 = 3,\\ k\bmod 12 = 7. \end{array} \right.$  21  $\left\{ \begin{array}{l}k\bmod 61 = 47,\\ k\bmod 73 = 58. \end{array} \right.$  25  $\left\{ \begin{array}{l}k\bmod 142 = 47,\\ k\bmod 113 = 74. \end{array} \right.$  
+14  $\left\{ \begin{array}{l}k\bmod 13 = 5,\\ k\bmod 12 = 7. \end{array} \right.$  18  $\left\{ \begin{array}{l}k\bmod 21 = 7,\\ k\bmod 16 = 10. \end{array} \right.$  22  $\left\{ \begin{array}{l}k\bmod 79 = 48,\\ k\bmod 83 = 65. \end{array} \right.$
+15  $\left\{ \begin{array}{l}k\bmod 17 = 5,\\ k\bmod 11 = 8. \end{array} \right.$  19  $\left\{ \begin{array}{l}k\bmod 34 = 19,\\ k\bmod 27 = 10. \end{array} \right.$  23  $\left\{ \begin{array}{l}k\bmod 103 = 78,\\ k\bmod 97 = 49. \end{array} \right.$
+16  $\left\{ \begin{array}{l}k\bmod 18 = 7,\\ k\bmod 13 = 3. \end{array} \right.$  20  $\left\{ \begin{array}{l}k\bmod 51 = 17,\\ k\bmod 49 = 26. \end{array} \right.$  24  $\left\{ \begin{array}{l}k\bmod 107 = 43,\\ k\bmod 128 = 35. \end{array} \right.$
+17  $\left\{ \begin{array}{l}k\bmod 23 = 3,\\ k\bmod 12 = 7. \end{array} \right.$  21  $\left\{ \begin{array}{l}k\bmod 61 = 47,\\ k\bmod 73 = 58. \end{array} \right.$  25  $\left\{ \begin{array}{l}k\bmod 142 = 47,\\ k\bmod 113 = 74. \end{array} \right.$
 26 Let  $u, v$ , and  $w$  be three positive integers that are mutually coprime. That is, each is coprime to the other two. Given any  $x, y$ , and  $z$  in  $\mathbb{Z}$ , prove that there is a unique number  $k$  such that
 
 $$
@@ -2288,9 +2288,9 @@ Hint: Use the Chinese remainder theorem (1.5) twice.
 
 For Problems 27 through 38: Solve the following linear congruence equations.
 
-27  $8x\bmod 11 = 9$  31  $7x\bmod 31 = 19$  35  $32x + 19\bmod 51 = 17$  
-28  $6x\bmod 13 = 9$  32  $12x\bmod 37 = 17$  36  $16x + 35\bmod 61 = 29$  
-29  $7x\bmod 18 = 13$  33  $18x\bmod 41 = 7$  37  $17x + 71\bmod 83 = 48$  
+27  $8x\bmod 11 = 9$  31  $7x\bmod 31 = 19$  35  $32x + 19\bmod 51 = 17$
+28  $6x\bmod 13 = 9$  32  $12x\bmod 37 = 17$  36  $16x + 35\bmod 61 = 29$
+29  $7x\bmod 18 = 13$  33  $18x\bmod 41 = 7$  37  $17x + 71\bmod 83 = 48$
 30  $9x\bmod 23 = 11$  34  $27x\bmod 43 = 8$  38  $23x + 47\bmod 91 = 37$
 
 Interactive Problems
@@ -2333,7 +2333,7 @@ Although the set of rationals  $\mathbb{Q}$  is easy to define, it is often hard
 
 which draws Figure 1.1. This figure helps to visualize the rational numbers from  $-5$  to  $5$  using a sequence of rows. The  $n^{\text{th}}$  row represents the rational numbers with denominator  $n$  when expressed in simplest form. In principle
 
-![](images/25efe1c06a58372c88edae1449d27ff350aeeeb5f15bec018062b49dc12370dc.jpg)  
+![](images/25efe1c06a58372c88edae1449d27ff350aeeeb5f15bec018062b49dc12370dc.jpg)
 FIGURE 1.1: Plot depicting the rational numbers
 
 there would be an infinite number of rows, getting closer and closer to each other as they get close to the axis.
@@ -2350,7 +2350,7 @@ From this proposition, we can keep dividing the interval up into smaller and sma
 
 DEFINITION 1.13 A set  $S$  is called countable if there is an infinite sequence of elements from the set that includes every member of the set.
 
-![](images/fe6d878458aedc2d5aba53cbded4e815164ee2fbaea703405549bab8c314dd65.jpg)  
+![](images/fe6d878458aedc2d5aba53cbded4e815164ee2fbaea703405549bab8c314dd65.jpg)
 FIGURE 1.2: Beginning of a path that will hit every rational number
 
 What do sequences have to do with comparing the sizes of two sets? A sequence can be considered as a function between the set of positive integers and the set  $S$ . If a sequence manages to include every member of the set  $S$ , then it stands to reason that there are at least as "many" positive integers as there are elements of  $S$ . The shocking fact is that even though it would first appear that there must be infinitely many more rational numbers than integers, in fact the two sets have the same size.
@@ -2451,7 +2451,7 @@ In 1884, Cantor suffered his first bout with depression, and spent some time in 
 
 In 1899, Cantor returned to the sanatorium. Soon afterwards, Cantor's youngest son died suddenly. Cantor's passion for mathematics was completely drained, and he suffered from chronic depression for the rest of his life, going in and out of sanatoriums. Although he still made mathematical lectures, he retired in 1913, and died in poverty on January 6, 1918 in a sanatorium.
 
-2 Show that in the sequence defined by Problem 1, the numerator of  $a_{n+1}$  is the denominator of  $a_n$ , when the fractions are expressed in lowest terms. (Assume integers have a denominator of 1.)  
+2 Show that in the sequence defined by Problem 1, the numerator of  $a_{n+1}$  is the denominator of  $a_n$ , when the fractions are expressed in lowest terms. (Assume integers have a denominator of 1.)
 3 Define the integer sequence  $b_{n}$  to be the numerator of  $a_{n}$  in Problem 1. Show that this sequence satisfies
 
 $$
@@ -2532,13 +2532,13 @@ For Problems 12 through 19: Prove that the following numbers are irrational.
 
 19  $\sqrt[3]{4}$
 
-20 Prove that if  $a$  is irrational, then  $1 / a$  is irrational.  
-21 Prove that if  $a$  is rational and  $b$  is irrational, then  $a + b$  is irrational.  
+20 Prove that if  $a$  is irrational, then  $1 / a$  is irrational.
+21 Prove that if  $a$  is rational and  $b$  is irrational, then  $a + b$  is irrational.
 22 Prove that between any two distinct real numbers, there is an irrational number.
 
 Hint: Use Problem 21 along with Proposition 1.3.
 
-23 Prove that if  $a$  is rational and nonzero, and  $b$  is irrational, then  $a \cdot b$  is irrational.  
+23 Prove that if  $a$  is rational and nonzero, and  $b$  is irrational, then  $a \cdot b$  is irrational.
 24 Prove that  $y = \sqrt{2} +\sqrt{3}$  is irrational.
 
 Hint: First show that  $y^2$  is irrational.
@@ -2564,7 +2564,7 @@ Hint: If  $e = p / q$ , put an upper bound on the sum of the non-integral terms 
 28 If we begin the sequence in Problem 1 with an irrational number, all terms of the sequence will be irrational. Explore what happens if we consider the same formula, but start with  $a_0 = \sqrt{2}$ .
 
 ```txt
-a  $=$  sqrt(2); a sqrt(2)   
+a  $=$  sqrt(2); a sqrt(2)
 a  $=$  Together  $(1 / (1 + 2\star \text{floor} (\mathbf{a}) - \mathbf{a}))$  ; a 1/7\*sqrt(2)+3/7
 ```
 
@@ -2586,27 +2586,27 @@ To help introduce us to the concept of groups, let us meet a triangle whose danc
 
 ![](images/360391bbd6bf3f012498c89e1d538c0b9a6f779c99368794e1b72efcf7d7a67f.jpg)
 
-TABLE 2.1: Terry's dance steps  
+TABLE 2.1: Terry's dance steps
 
 <table><tr><td>RotRt</td><td>rotate clockwise 120 degrees.</td></tr><tr><td>RotLft</td><td>rotate counterclockwise 120 degrees.</td></tr><tr><td>Spin</td><td>spins in three dimensions, keeping the top fixed.</td></tr><tr><td>FlipRt</td><td>flips over the right shoulder, keeping the left point fixed.</td></tr><tr><td>FlipLft</td><td>flips over the left shoulder, keeping the right point fixed.</td></tr><tr><td>Stay</td><td>does nothing.</td></tr></table>
 
-![](images/edbeb458690d77c69b828be50d7b046c60cd132da76682474df0ffa9724ace33.jpg)  
+![](images/edbeb458690d77c69b828be50d7b046c60cd132da76682474df0ffa9724ace33.jpg)
 RotRt
 
-![](images/6df4ab9a939c4d0cb325f7a0568552a7109f51a1805b60298a2d290cc6f3e144.jpg)  
+![](images/6df4ab9a939c4d0cb325f7a0568552a7109f51a1805b60298a2d290cc6f3e144.jpg)
 RotLft
 
-![](images/1cf3a36db5855e0d7528c7a391522a970c0827820f822dd447c11d36f0b75e2e.jpg)  
+![](images/1cf3a36db5855e0d7528c7a391522a970c0827820f822dd447c11d36f0b75e2e.jpg)
 Spin
 
-![](images/b91a903ef229d2ace75614812b372a6c38965acabac6090081dafea01201fd8a.jpg)  
+![](images/b91a903ef229d2ace75614812b372a6c38965acabac6090081dafea01201fd8a.jpg)
 FlipRt
 
-![](images/7d19af4f823a9752d39148e069e4852dc37c56cc0f2af693e3f1c46dbdcc8943.jpg)  
-FlipLft  
+![](images/7d19af4f823a9752d39148e069e4852dc37c56cc0f2af693e3f1c46dbdcc8943.jpg)
+FlipLft
 FIGURE 2.1: Scenes from Terry's animated dance steps
 
-![](images/7d8250a906cabcee84956e9307ff0b82ad0e9f37bc22171c7dade80b23447e65.jpg)  
+![](images/7d8250a906cabcee84956e9307ff0b82ad0e9f37bc22171c7dade80b23447e65.jpg)
 Stay
 
 Terry can perform the dance steps listed in Table 2.1. Although SageMath animates these dance steps, one can understand the six steps without SageMath by observing scenes in Figure 2.1, taken from the animation close to the completion of each step.
@@ -2625,7 +2625,7 @@ RotLft
 
 That is, a flip over the left shoulder followed by a spin puts the triangle in the same orientation as a counter-clockwise rotation.
 
-TABLE 2.2: Cayley table for Terry's dance steps  
+TABLE 2.2: Cayley table for Terry's dance steps
 
 <table><tr><td>*</td><td>Stay</td><td>FlipRt</td><td>RotRt</td><td>FlipLft</td><td>RotLft</td><td>Spin</td></tr><tr><td>Stay</td><td>Stay</td><td>FlipRt</td><td>RotRt</td><td>FlipLft</td><td>RotLft</td><td>Spin</td></tr><tr><td>FlipRt</td><td>FlipRt</td><td>Stay</td><td>FlipLft</td><td>RotRt</td><td>Spin</td><td>RotLft</td></tr><tr><td>RotRt</td><td>RotRt</td><td>Spin</td><td>RotLft</td><td>FlipRt</td><td>Stay</td><td>FlipLft</td></tr><tr><td>FlipLft</td><td>FlipLft</td><td>RotLft</td><td>Spin</td><td>Stay</td><td>FlipRt</td><td>RotRt</td></tr><tr><td>RotLft</td><td>RotLft</td><td>FlipLft</td><td>Stay</td><td>Spin</td><td>RotRt</td><td>FlipRt</td></tr><tr><td>Spin</td><td>Spin</td><td>RotRt</td><td>FlipRt</td><td>RotLft</td><td>FlipLft</td><td>Stay</td></tr></table>
 
@@ -2639,8 +2639,8 @@ To read this table, the first of the dance steps is located on the left side of 
 
 We can notice several things from the Cayley table of the dance steps:
 
-1. The combination of any two dance steps is equivalent to one of the six dance steps. In other words, there are no "holes" in Table 2.2.  
-2. The order in which the dance steps are performed are important. For example, Spin * FlipRt ≠ FlipRt * Spin.  
+1. The combination of any two dance steps is equivalent to one of the six dance steps. In other words, there are no "holes" in Table 2.2.
+2. The order in which the dance steps are performed are important. For example, Spin * FlipRt ≠ FlipRt * Spin.
 3. The order in which a dance routine is simplified does not matter. That is,
 
 $$
@@ -2649,16 +2649,16 @@ $$
 
 where  $x, y$ , and  $z$  represent three dance steps.
 
-4. Any dance step combined with Stay yields the same dance step. This is apparent by looking at the row and column corresponding to Stay in Table 2.2.  
+4. Any dance step combined with Stay yields the same dance step. This is apparent by looking at the row and column corresponding to Stay in Table 2.2.
 5. Every dance step has another dance step that "undoes" it. That is, for every  $x$  there is a  $y$  such that  $x * y = \text{Stay}$ . For example, the step that undoes RotRt is RotLft.
 
 We will introduce the following mathematical terminology to express each of these properties:
 
 1. The dance steps are closed under the operation  $*$ . Another way of saying this is that  $*$  is a binary operator.
 
-2. The dance steps are not commutative.  
-3. The dance steps are associative.  
-4. There is an identity dance step.  
+2. The dance steps are not commutative.
+3. The dance steps are associative.
+4. There is an identity dance step.
 5. Every dance step has an inverse.
 
 With just these properties, we are able to prove the following.
@@ -2684,7 +2684,7 @@ DEFINITION 2.1 We use the notation  $x^{-1}$  for the unique inverse of the elem
 Proposition 2.1 can now be expressed simply as  $(x^{-1})^{-1} = x$ . This raises the question as to whether other familiar exponential properties hold. For example, does  $(x*y)^{-1}$  always equal  $x^{-1}*y^{-1}$ ?
 
 ```txt
-(Spin  $\star$  RotRt) ^{-1} FlipRt  
+(Spin  $\star$  RotRt) ^{-1} FlipRt
 Spin^{\wedge}-1  $\star$  RotRt^{\wedge}-1 FlipLft
 ```
 
@@ -2760,11 +2760,11 @@ Even though there are very few of Terry's dance steps, we already can see some o
 
 # Problems for §2.1
 
-1 Suppose that Terry the Triangle has a friend who is a square. (Most of us have had such a friend from time to time.) How many dance steps would the square have? Construct a Cayley table of all of the square's dance steps. This group is referred to as  $D_4$ .  
-2 Suppose that Terry has a friend who is a regular tetrahedron. (A tetrahedron is a triangular pyramid.) How many dance steps would this tetrahedron have?  
-3 Using only the four basic properties of Terry's dance steps, prove that there can be only one identity element. That is, there cannot be two elements  $e$  and  $e'$  for which  $x * e = e * x = x$  and  $x * e' = e' * x = x$  for all  $x \in G$ .  
-4 Using only the four basic properties of Terry's dance steps, prove that an element cannot have two different inverses. That is, show that there cannot be two elements  $y$  and  $y'$  such that both  $x*y = e$  and  $x*y' = e$ .  
-5 Prove the cancellation law holds for Terry's dance steps. That is, if  $a * b = a * c$  for dance steps  $a$ ,  $b$ , and  $c$ , then  $b = c$ .  
+1 Suppose that Terry the Triangle has a friend who is a square. (Most of us have had such a friend from time to time.) How many dance steps would the square have? Construct a Cayley table of all of the square's dance steps. This group is referred to as  $D_4$ .
+2 Suppose that Terry has a friend who is a regular tetrahedron. (A tetrahedron is a triangular pyramid.) How many dance steps would this tetrahedron have?
+3 Using only the four basic properties of Terry's dance steps, prove that there can be only one identity element. That is, there cannot be two elements  $e$  and  $e'$  for which  $x * e = e * x = x$  and  $x * e' = e' * x = x$  for all  $x \in G$ .
+4 Using only the four basic properties of Terry's dance steps, prove that an element cannot have two different inverses. That is, show that there cannot be two elements  $y$  and  $y'$  such that both  $x*y = e$  and  $x*y' = e$ .
+5 Prove the cancellation law holds for Terry's dance steps. That is, if  $a * b = a * c$  for dance steps  $a$ ,  $b$ , and  $c$ , then  $b = c$ .
 6 Prove that if  $a$  and  $b$  are two of Terry's dance steps, then there is a unique dance step  $x$  such that
 
 $$
@@ -2779,9 +2779,9 @@ Hint: There are 36 ways of choosing two dance steps. Count the number of combina
 
 8 Three of Terry's dance steps are types of flips, FlipRt, FlipLft, and Spin. Is the product of two different flips always produce a rotation? Explain why this is so.
 
-9 Is the product of a flip and a rotation always a flip? Explain why this is so. See Problem 8.  
-10 Find three of Terry's dance steps  $a$ ,  $b$ , and  $c$  such that  $a * b = b * c$ , but  $a \neq c$ .  
-11 Find two of Terry's dance steps  $a$  and  $b$  such that  $(a * b)^{-1} \neq a^{-1} * b^{-1}$ .  
+9 Is the product of a flip and a rotation always a flip? Explain why this is so. See Problem 8.
+10 Find three of Terry's dance steps  $a$ ,  $b$ , and  $c$  such that  $a * b = b * c$ , but  $a \neq c$ .
+11 Find two of Terry's dance steps  $a$  and  $b$  such that  $(a * b)^{-1} \neq a^{-1} * b^{-1}$ .
 12 Find two of Terry's dance steps  $a$  and  $b$  such that  $(a * b)^2 \neq a^2 * b^2$ .
 
 # Interactive Problems
@@ -2792,7 +2792,7 @@ Hint: There are 36 ways of choosing two dance steps. Count the number of combina
 
 reloads Terry's group.
 
-14 Repeat Problem 13, only allow Terry to do only the steps RotRt and RotLft.  
+14 Repeat Problem 13, only allow Terry to do only the steps RotRt and RotLft.
 15 Can you find a dance routine which includes each of Terry's 6 dance steps once, and only once, that puts Terry back into the initial position?
 
 # 2.2 Modular Congruence
@@ -2823,8 +2823,8 @@ Note the slight difference in notation between the operator mod (expressed in bo
 
 The new notation also satisfies three very important properties for equivalence (mod  $n$ ).
 
-1. (Reflexive) Every integer  $x$  is equivalent to itself.  
-2. (Symmetric) If  $x$  is equivalent to  $y$ , then  $y$  is equivalent to  $x$ .  
+1. (Reflexive) Every integer  $x$  is equivalent to itself.
+2. (Symmetric) If  $x$  is equivalent to  $y$ , then  $y$  is equivalent to  $x$ .
 3. (Transitive) If  $x$  is equivalent to  $y$ , and  $y$  in turn is equivalent to  $z$ , then  $x$  is equivalent to  $z$ .
 
 DEFINITION 2.3 Any relation that satisfies these three properties is called an equivalence relation. We will use the notation  $x \sim y$  to say that  $x$  is equivalent to  $y$  for a generic equivalence relation.
@@ -2931,7 +2931,7 @@ $$
 \begin{array}{l} Z = \text {A d d M o d} (1 0); Z \\ \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \} \\ \end{array}
 $$
 
-TABLE 2.3: Addition (mod 10)  
+TABLE 2.3: Addition (mod 10)
 
 <table><tr><td></td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>0</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>1</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr><tr><td>2</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td><td>1</td></tr><tr><td>3</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td><td>1</td><td>2</td></tr><tr><td>4</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><td>5</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>6</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>7</td><td>7</td><td>8</td><td>9</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>8</td><td>8</td><td>9</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>9</td><td>9</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr></table>
 
@@ -2957,22 +2957,22 @@ By looking at the table for addition modulo 10, we are able to establish the fol
 
 1. For any two numbers  $x$  and  $y$  in  $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ ,  $x * y$  is in the set. (Recall that we are using the star to indicate the operation, regardless of what that operation is. In this example, the operation is addition modulo 10.)
 
-2.  $(x*y)*z = x*(y*z)$  for any  $x, y,$  and  $z$  
-3.  $x * 0 = x$  and  $0 * x = x$  for all  $x$ .  
-4. For any  $x$ , there is a  $y$  such that  $x*y = 0$ .  
+2.  $(x*y)*z = x*(y*z)$  for any  $x, y,$  and  $z$
+3.  $x * 0 = x$  and  $0 * x = x$  for all  $x$ .
+4. For any  $x$ , there is a  $y$  such that  $x*y = 0$ .
 5. For any  $x$  and  $y$ ,  $x * y = y * x$ .
 
 This operation can also be pictured by means of circular graphs. The SageMath command
 
 CircleGraph(Z, Add(1))
 
-![](images/b462dd3f581a54367133343dea2cb44b90dab4b52ab27f4a5e39c0c93e35557d.jpg)  
+![](images/b462dd3f581a54367133343dea2cb44b90dab4b52ab27f4a5e39c0c93e35557d.jpg)
 CircleGraph(Z, Add(1))
 
-![](images/ff517ffc8668e74d7b2bed83103140e712481ed4c381dd22670de1a98c12ca40.jpg)  
+![](images/ff517ffc8668e74d7b2bed83103140e712481ed4c381dd22670de1a98c12ca40.jpg)
 CircleGraph(Z，Add(4))
 
-![](images/14ca4465b8d1dd8b68688a6b31ed9087e9d7c7d7b076c2c9e4db4f86d072a18f.jpg)  
+![](images/14ca4465b8d1dd8b68688a6b31ed9087e9d7c7d7b076c2c9e4db4f86d072a18f.jpg)
 CircleGraph(Z, Add(3))
 
 ![](images/06c6176bdfbdc4616711c68192809bf33345e497759620702e8407b7a26c81c0.jpg)
@@ -2981,13 +2981,13 @@ CircleGraph(Z, Add(3))
 
 ![](images/9eae627ff5e7bd1c249bf5e7488a553219bd019f965669514fba779dd15d7b72.jpg)
 
-![](images/16f04eac1c11a9545bad8a5efbf3e9d809bf325038c6f479daddf4f0daf4497b.jpg)  
-CircleGraph(Z, Inv)  
+![](images/16f04eac1c11a9545bad8a5efbf3e9d809bf325038c6f479daddf4f0daf4497b.jpg)
+CircleGraph(Z, Inv)
 FIGURE 2.2: Circle graphs for (mod 10) arithmetic
 
 gives us the first picture in Figure 2.2, which draws an arrow from each point to the point given by "adding 1 modulo 10." Figure 2.2 also shows what happens if we replace the 1 with 3 or 4. We get different looking graphs, but all with the same amount of symmetry. The SageMath command
 
-TABLE 2.4:  $x * y = xy \mod 7$  
+TABLE 2.4:  $x * y = xy \mod 7$
 
 <table><tr><td></td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>2</td><td>0</td><td>2</td><td>4</td><td>6</td><td>1</td><td>3</td><td>5</td></tr><tr><td>3</td><td>0</td><td>3</td><td>6</td><td>2</td><td>5</td><td>1</td><td>4</td></tr><tr><td>4</td><td>0</td><td>4</td><td>1</td><td>5</td><td>2</td><td>6</td><td>3</td></tr><tr><td>5</td><td>0</td><td>5</td><td>3</td><td>1</td><td>6</td><td>4</td><td>2</td></tr><tr><td>6</td><td>0</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td></tr></table>
 
@@ -3017,7 +3017,7 @@ $$
 
 to produce a table similar to Table 2.5. We find several rows that do not contain any 1's. These rows indicate the numbers without inverses modulo 10. Only 1, 3, 7, and 9 have inverses. If we try this using 15 instead of 10, we find only 1, 2, 4, 7, 8, 11, 13, and 14 have inverses.
 
-TABLE 2.5: Multiplication (mod 10)  
+TABLE 2.5: Multiplication (mod 10)
 
 <table><tr><td></td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>2</td><td>0</td><td>2</td><td>4</td><td>6</td><td>8</td><td>0</td><td>2</td><td>4</td><td>6</td><td>8</td></tr><tr><td>3</td><td>0</td><td>3</td><td>6</td><td>9</td><td>2</td><td>5</td><td>8</td><td>1</td><td>4</td><td>7</td></tr><tr><td>4</td><td>0</td><td>4</td><td>8</td><td>2</td><td>6</td><td>0</td><td>4</td><td>8</td><td>2</td><td>6</td></tr><tr><td>5</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>5</td></tr><tr><td>6</td><td>0</td><td>6</td><td>2</td><td>8</td><td>4</td><td>0</td><td>6</td><td>2</td><td>8</td><td>4</td></tr><tr><td>7</td><td>0</td><td>7</td><td>4</td><td>1</td><td>8</td><td>5</td><td>2</td><td>9</td><td>6</td><td>3</td></tr><tr><td>8</td><td>0</td><td>8</td><td>6</td><td>4</td><td>2</td><td>0</td><td>8</td><td>6</td><td>4</td><td>2</td></tr><tr><td>9</td><td>0</td><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td></tr></table>
 
@@ -3031,17 +3031,17 @@ $$
 
 to produce Table 2.6. Once again, many of the same patterns are found that
 
-TABLE 2.6: Invertible elements (mod 15)  
+TABLE 2.6: Invertible elements (mod 15)
 
 <table><tr><td></td><td>1</td><td>2</td><td>4</td><td>7</td><td>8</td><td>11</td><td>13</td><td>14</td></tr><tr><td>1</td><td>1</td><td>2</td><td>4</td><td>7</td><td>8</td><td>11</td><td>13</td><td>14</td></tr><tr><td>2</td><td>2</td><td>4</td><td>8</td><td>14</td><td>1</td><td>7</td><td>11</td><td>13</td></tr><tr><td>4</td><td>4</td><td>8</td><td>1</td><td>13</td><td>2</td><td>14</td><td>7</td><td>11</td></tr><tr><td>7</td><td>7</td><td>14</td><td>13</td><td>4</td><td>11</td><td>2</td><td>1</td><td>8</td></tr><tr><td>8</td><td>8</td><td>1</td><td>2</td><td>11</td><td>4</td><td>13</td><td>14</td><td>7</td></tr><tr><td>11</td><td>11</td><td>7</td><td>14</td><td>2</td><td>13</td><td>1</td><td>8</td><td>4</td></tr><tr><td>13</td><td>13</td><td>11</td><td>7</td><td>1</td><td>14</td><td>8</td><td>4</td><td>2</td></tr><tr><td>14</td><td>14</td><td>13</td><td>11</td><td>8</td><td>7</td><td>4</td><td>2</td><td>1</td></tr></table>
 
 were in for Terry's multiplication, namely:
 
-1. For any two numbers  $x$  and  $y$  in  $\{1, 2, 4, 7, 8, 11, 13, 14\}$ ,  $x * y$  is in that set.  
+1. For any two numbers  $x$  and  $y$  in  $\{1, 2, 4, 7, 8, 11, 13, 14\}$ ,  $x * y$  is in that set.
 2.  $(x*y)*z = x*(y*z)$  for any  $x, y,$  and  $z$
 
-3.  $x * 1 = x$  and  $1 * x = x$  for all  $x$ .  
-4. For any  $x$ , there is a  $y$  such that  $x * y = 1$ .  
+3.  $x * 1 = x$  and  $1 * x = x$  for all  $x$ .
+4. For any  $x$ , there is a  $y$  such that  $x * y = 1$ .
 5. For any  $x$  and  $y$ ,  $x*y = y*x$ .
 
 We can generalize these patterns to multiplication modulo  $n$  for any  $n$ .
@@ -3050,10 +3050,10 @@ We can generalize these patterns to multiplication modulo  $n$  for any  $n$ .
 
 For  $n$  an integer greater than 1, let  $G$  be the set of all positive numbers less than  $n$  that have multiplicative inverses modulo  $n$ . Let the operation  $(*)$  denote multiplication modulo  $n$ . Then the set  $G$  has the following properties:
 
-1. For any two numbers  $x$  and  $y$  in  $G$ ,  $x*y$  is in  $G$ .  
-2.  $(x*y)*z = x*(y*z)$  for any  $x, y, \text{and} z$ .  
-3.  $x*1 = 1*x = x$  for all  $x$ .  
-4. For any  $x$  that is in  $G$ , there is a  $y$  in  $G$  such that  $x * y = 1$ .  
+1. For any two numbers  $x$  and  $y$  in  $G$ ,  $x*y$  is in  $G$ .
+2.  $(x*y)*z = x*(y*z)$  for any  $x, y, \text{and} z$ .
+3.  $x*1 = 1*x = x$  for all  $x$ .
+4. For any  $x$  that is in  $G$ , there is a  $y$  in  $G$  such that  $x * y = 1$ .
 5. For any  $x$  and  $y$ ,  $x*y = y*x$ .
 
 Proof: Properties 2, 3, and 5 come from the properties of standard multiplication.
@@ -3188,9 +3188,9 @@ In this chapter, we have seen several different ways of combining numbers or dan
 
 DEFINITION 2.5 A group is a set  $G$  together with a binary operation (represented by either a star *, or more commonly, a dot  $\cdot$ ) such that the following four properties hold:
 
-1. (closure) For any  $x$  and  $y$  in  $G$ ,  $x \cdot y$  is in  $G$ .  
-2. (identity) There exists a member denoted by  $e$  in  $G$  which has the property that, for all  $x$  in  $G$ ,  $e \cdot x = x \cdot e = x$ .  
-3. (inverse) For every  $x$  in  $G$ , there exists a  $y$  in  $G$ , called the inverse of  $x$ , such that  $x \cdot y = e$ .  
+1. (closure) For any  $x$  and  $y$  in  $G$ ,  $x \cdot y$  is in  $G$ .
+2. (identity) There exists a member denoted by  $e$  in  $G$  which has the property that, for all  $x$  in  $G$ ,  $e \cdot x = x \cdot e = x$ .
+3. (inverse) For every  $x$  in  $G$ , there exists a  $y$  in  $G$ , called the inverse of  $x$ , such that  $x \cdot y = e$ .
 4. (associative law) For any  $x, y$ , and  $z$  in  $G$ , then  $(x \cdot y) \cdot z = x \cdot (y \cdot z)$ .
 
 Terry's dance steps give us the first example of a group, more commonly referred to as the group of symmetries of a triangle,  $D_{3}$ .
@@ -3433,24 +3433,24 @@ Notice that this multiplication table satisfies the "Latin square" property, hen
 
 For Problems 3 through 14: Decide whether each set forms a group using the given binary operation. If it is not a group, state which part of Definition 2.5 fails to hold.
 
-3  $G =$  rational numbers,  $x*y = x + y.$  
-4  $G =$  irrational numbers,  $x*y = x + y.$  
-5  $G =$  non-negative real numbers,  $x*y = xy$  
-6  $G =$  positive rational numbers,  $x*y = xy$  
-7  $G =$  positive irrational numbers,  $x*y = xy$  
-8  $G =$  non-negative integers,  $x*y = x + y.$  
-9  $G =$  even integers,  $x*y = x + y.$  
-10  $G =$  odd integers,  $x*y = x + y.$  
-11  $G =$  odd integers,  $x*y = xy.$  
-12  $G =$  all integers,  $x*y = xy.$  
-13  $G = \{1, - 1\}$ $x*y = xy$  
+3  $G =$  rational numbers,  $x*y = x + y.$
+4  $G =$  irrational numbers,  $x*y = x + y.$
+5  $G =$  non-negative real numbers,  $x*y = xy$
+6  $G =$  positive rational numbers,  $x*y = xy$
+7  $G =$  positive irrational numbers,  $x*y = xy$
+8  $G =$  non-negative integers,  $x*y = x + y.$
+9  $G =$  even integers,  $x*y = x + y.$
+10  $G =$  odd integers,  $x*y = x + y.$
+11  $G =$  odd integers,  $x*y = xy.$
+12  $G =$  all integers,  $x*y = xy.$
+13  $G = \{1, - 1\}$ $x*y = xy$
 14  $G =$  all integers,  $x*y = x + y + 3.$
 
-15 Note that in Definition 2.5, we only required the inverse of  $x$  to have the property that  $x \cdot y = e$ . Show that this element will also satisfy  $y \cdot x = e$ .  
-16 Show that a group can have at most one identity element.  
-17 Show that the inverse of an element must be unique.  
-18 Show that in any group,  $(x\cdot y)^{-1} = y^{-1}\cdot x^{-1}$  
-19 Show that if  $a \cdot x = a \cdot y$  in a group, then  $x = y$ .  
+15 Note that in Definition 2.5, we only required the inverse of  $x$  to have the property that  $x \cdot y = e$ . Show that this element will also satisfy  $y \cdot x = e$ .
+16 Show that a group can have at most one identity element.
+17 Show that the inverse of an element must be unique.
+18 Show that in any group,  $(x\cdot y)^{-1} = y^{-1}\cdot x^{-1}$
+19 Show that if  $a \cdot x = a \cdot y$  in a group, then  $x = y$ .
 20 Suppose that  $S$  is a finite set (not necessarily a group) which is closed under the operator  $(\cdot)$ . Suppose also that the equation
 
 $$
@@ -3461,8 +3461,8 @@ holds if, and only if,  $x = y$ . Prove Proposition 2.3 holds for the set  $S$ ,
 
 Hint: Use the pigeonhole principle.
 
-21 Let  $G$  be a group. Show that  $G$  is abelian if, and only if,  $(a \cdot b)^2 = a^2 \cdot b^2$  for all  $a$  and  $b$  in  $G$ .  
-22 If  $G$  is a group such that  $x^{2} = e$  for all elements  $x$  in  $G$ , prove that  $G$  is abelian.  
+21 Let  $G$  be a group. Show that  $G$  is abelian if, and only if,  $(a \cdot b)^2 = a^2 \cdot b^2$  for all  $a$  and  $b$  in  $G$ .
+22 If  $G$  is a group such that  $x^{2} = e$  for all elements  $x$  in  $G$ , prove that  $G$  is abelian.
 23 If  $G$  is a group and  $a$  and  $b$  are two elements of  $G$ , use mathematical induction to show that for all positive  $n$ ,
 
 $$
@@ -3489,26 +3489,26 @@ For Problems 28 through 31: Fill in the remaining spaces in this Cayley table so
 
 Hint: Determine what the identity element must be. Once the row and column of the identity element are filled in, the remaining table can be finished using only the Latin square property.
 
-Problem 28  
+Problem 28
 
 <table><tr><td>·</td><td>a</td><td>b</td><td>c</td><td>d</td></tr><tr><td>a</td><td>b</td><td></td><td></td><td></td></tr><tr><td>b</td><td></td><td></td><td></td><td></td></tr><tr><td>c</td><td colspan="4">b</td></tr><tr><td>d</td><td></td><td></td><td></td><td></td></tr></table>
 
-Problem 29  
+Problem 29
 
 <table><tr><td>·</td><td>a</td><td>b</td><td>c</td><td>d</td></tr><tr><td>a</td><td></td><td></td><td></td><td></td></tr><tr><td>b</td><td></td><td></td><td></td><td></td></tr><tr><td>c</td><td>d</td><td></td><td></td><td></td></tr><tr><td>d</td><td></td><td></td><td>b</td><td></td></tr></table>
 
-Problem 30  
+Problem 30
 
 <table><tr><td>·</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td></tr><tr><td>u</td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr><tr><td>v</td><td>w</td><td></td><td></td><td></td><td>x</td><td></td></tr><tr><td>w</td><td></td><td>u</td><td></td><td></td><td></td><td>y</td></tr><tr><td>x</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>y</td><td>z</td><td></td><td></td><td></td><td></td><td>w</td></tr><tr><td>z</td><td></td><td></td><td>v</td><td></td><td></td><td></td></tr></table>
 
-Problem 31  
+Problem 31
 
 <table><tr><td>.</td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td></tr><tr><td>a</td><td>b</td><td></td><td>d</td><td></td><td></td><td></td><td></td><td>c</td></tr><tr><td>b</td><td>g</td><td>e</td><td></td><td>h</td><td></td><td></td><td></td><td></td></tr><tr><td>c</td><td></td><td></td><td></td><td></td><td></td><td>e</td><td>d</td><td>g</td></tr><tr><td>d</td><td></td><td>h</td><td></td><td>b</td><td></td><td></td><td>f</td><td></td></tr><tr><td>e</td><td></td><td></td><td>c</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>f</td><td></td><td></td><td>e</td><td></td><td></td><td>b</td><td></td><td>a</td></tr><tr><td>g</td><td>e</td><td>a</td><td></td><td></td><td>g</td><td></td><td>b</td><td></td></tr><tr><td>h</td><td></td><td></td><td>a</td><td></td><td></td><td></td><td>c</td><td></td></tr></table>
 
 # Interactive Problems
 
-32 Use SageMath's ZStar command to find the size of  $Z_{n}^{*}$  for  $n = 9, 27, 81, 243, 5, 25, 125$ . Make a conjecture about the size of  $Z_{n}^{*}$  when  $n$  is a power of an odd prime  $p$ . Note use can use the len() command to have SageMath count the elements for you.  
-33 Use SageMath's ZStar command to find the size of  $Z_{n}^{*}$  for  $n = 18, 54, 162, 486, 50, 250, 98, 686$ . Make a conjecture about the size of  $Z_{n}^{*}$  when  $n$  is twice the power of an odd prime  $p$ .  
+32 Use SageMath's ZStar command to find the size of  $Z_{n}^{*}$  for  $n = 9, 27, 81, 243, 5, 25, 125$ . Make a conjecture about the size of  $Z_{n}^{*}$  when  $n$  is a power of an odd prime  $p$ . Note use can use the len() command to have SageMath count the elements for you.
+33 Use SageMath's ZStar command to find the size of  $Z_{n}^{*}$  for  $n = 18, 54, 162, 486, 50, 250, 98, 686$ . Make a conjecture about the size of  $Z_{n}^{*}$  when  $n$  is twice the power of an odd prime  $p$ .
 34 Use SageMath's ZStar command to make a conjecture about the size of  $Z_{mn}^{*}$ , where  $m$  and  $n$  are coprime, in terms of the sizes of  $Z_{m}^{*}$  and  $Z_{n}^{*}$ .
 
 # The Structure within a Group
@@ -3529,7 +3529,7 @@ We begin by studying finite groups, that is, groups with a finite number of elem
 
 Study the powers of the elements 3 and 4 in the group  $Z_{10}$ .
 
-![](images/4376c75fa654b11fb7911d1569e001a546b01c6a9227793e1bcca93be36fe810.jpg)  
+![](images/4376c75fa654b11fb7911d1569e001a546b01c6a9227793e1bcca93be36fe810.jpg)
 FIGURE 3.1: Circle graph of Add (3)
 
 This group is loaded into SageMath with the command
@@ -3584,8 +3584,8 @@ DEFINITION 3.2 Let  $x$  be an element of a group  $G$  with identity  $e$ . We 
 
 In Example 3.2, we see that the element 1 has order 1, element 6 has order 2, elements 2 and 4 have order 3, and the generators 3 and 5 have order 6. We can make the following observations about the order of an element:
 
-- The order of the identity element is always 1.  
-- If the group is finite, then its generators are the elements whose order is the size of the group.  
+- The order of the identity element is always 1.
+- If the group is finite, then its generators are the elements whose order is the size of the group.
 - The order can be infinite if the size of the group is infinite. For example, in the group  $\mathbb{Z}$ , the element 2 has infinite order, since  $2^n$  is never 0 for  $n \geq 1$ .
 
 The only way to find the generators in a  $Z_{n}^{*}$  group is by trial and error, as was done in Example 3.2. However, there is a shortcut for finding the generators for the group  $Z_{n}$ .
@@ -3618,7 +3618,7 @@ So 1 can be expressed as a power of  $g$ . But 1 is a generator of  $Z_{n}$ , an
 
 The count of positive numbers less than  $n$  that are coprime to  $n$  is called the Euler totient function of  $n$  and is denoted  $\phi(n)$ . Thus, the number of generators of  $Z_{n}$  is precisely  $\phi(n)$ . A small table of this function up to  $n = 36$  is given in Table 3.1.
 
-TABLE 3.1: Table of  $\phi (n)$  
+TABLE 3.1: Table of  $\phi (n)$
 
 <table><tr><td>n</td><td>φ(n)</td><td>n</td><td>φ(n)</td><td>n</td><td>φ(n)</td><td>n</td><td>φ(n)</td></tr><tr><td>1</td><td>1</td><td>10</td><td>4</td><td>19</td><td>18</td><td>28</td><td>12</td></tr><tr><td>2</td><td>1</td><td>11</td><td>10</td><td>20</td><td>8</td><td>29</td><td>28</td></tr><tr><td>3</td><td>2</td><td>12</td><td>4</td><td>21</td><td>12</td><td>30</td><td>8</td></tr><tr><td>4</td><td>2</td><td>13</td><td>12</td><td>22</td><td>10</td><td>31</td><td>30</td></tr><tr><td>5</td><td>4</td><td>14</td><td>6</td><td>23</td><td>22</td><td>32</td><td>16</td></tr><tr><td>6</td><td>2</td><td>15</td><td>8</td><td>24</td><td>8</td><td>33</td><td>20</td></tr><tr><td>7</td><td>6</td><td>16</td><td>8</td><td>25</td><td>20</td><td>34</td><td>16</td></tr><tr><td>8</td><td>4</td><td>17</td><td>16</td><td>26</td><td>12</td><td>35</td><td>24</td></tr><tr><td>9</td><td>6</td><td>18</td><td>6</td><td>27</td><td>18</td><td>36</td><td>12</td></tr></table>
 
@@ -3738,40 +3738,40 @@ One of the keys for entering a group into SageMath is finding one or two element
 
 For Problems 1 through 12: Find all of the generators of the following groups. How many generators are there? (Note some groups will not have generators.)
 
-1  $Z_{12}$  
-2  $Z_{14}$  
+1  $Z_{12}$
+2  $Z_{14}$
 3  $Z_{16}$
 
-4  $Z_{24}$  
-5  $Z_{9}^{*}$  
+4  $Z_{24}$
+5  $Z_{9}^{*}$
 6  $Z_{11}^{*}$
 
-7  $Z_{12}^{*}$  
-8  $Z_{14}^{*}$  
+7  $Z_{12}^{*}$
+8  $Z_{14}^{*}$
 9  $Z_{15}^{*}$
 
-10  $Z_{16}^{*}$  
-11  $Z_{18}^{*}$  
+10  $Z_{16}^{*}$
+11  $Z_{18}^{*}$
 12  $Z_{20}^{*}$
 
 For Problems 13 through 20: Use the totient function theorem (3.1) to find the size of the following groups:
 
-13  $Z_{120}^{*}$  
+13  $Z_{120}^{*}$
 14  $Z_{300}^{*}$
 
-15  $Z_{525}^{*}$  
+15  $Z_{525}^{*}$
 16  $Z_{1500}^{*}$
 
-17  $Z_{1155}^{*}$  
+17  $Z_{1155}^{*}$
 18  $Z_{2401}^{*}$
 
-19  $Z_{2695}^{*}$  
+19  $Z_{2695}^{*}$
 20  $Z_{7350}^{*}$
 
-21 Prove that  $\phi (n)$  is even for  $n > 2$  
-22 Using the totient function theorem (3.1), prove that there is no value of  $n$  for which  $\phi(n) = 14$ .  
-23 Show that any cyclic group must be abelian.  
-24 Show that if  $G$  is a group, and  $a \in G$ , then  $a$  and  $a^{-1}$  have the same order.  
+21 Prove that  $\phi (n)$  is even for  $n > 2$
+22 Using the totient function theorem (3.1), prove that there is no value of  $n$  for which  $\phi(n) = 14$ .
+23 Show that any cyclic group must be abelian.
+24 Show that if  $G$  is a group, and  $a \in G$ , then  $a$  and  $a^{-1}$  have the same order.
 25 Let  $G$  be an arbitrary group, with  $a$  and  $b$  two elements of  $G$ . Show that  $a \cdot b$  and  $b \cdot a$  have the same order.
 
 Hint: You can use the result of Problem 24 from §2.3.
@@ -3784,10 +3784,10 @@ Hint: You can use the result of Problem 25 from §2.3.
 
 # Interactive Problems
 
-28 Use SageMath's circle graph to find all of the generators of the group  $Z_{21}$ .  
-29 Use SageMath's circle graph to see if there an element of  $Z_{25}^{*}$  that generates  $Z_{25}^{*}$ . If so, how many such elements are there?  
-30 By using SageMath's Generators() command, determine whether  $Z_{n}^{*}$  is cyclic for  $n = 9,27,81,243,5,25,125$ . Make a conjecture about when  $Z_{n}^{*}$  is cyclic if  $n$  is a power of an odd prime.  
-31 By using SageMath's Generators() command, determine whether  $Z_{n}^{*}$  is cyclic for  $n = 18, 54, 162, 486, 50, 250, 98, 686$ . Make a conjecture about when  $Z_{n}^{*}$  is cyclic if  $n$  is twice the power of an odd prime.  
+28 Use SageMath's circle graph to find all of the generators of the group  $Z_{21}$ .
+29 Use SageMath's circle graph to see if there an element of  $Z_{25}^{*}$  that generates  $Z_{25}^{*}$ . If so, how many such elements are there?
+30 By using SageMath's Generators() command, determine whether  $Z_{n}^{*}$  is cyclic for  $n = 9,27,81,243,5,25,125$ . Make a conjecture about when  $Z_{n}^{*}$  is cyclic if  $n$  is a power of an odd prime.
+31 By using SageMath's Generators() command, determine whether  $Z_{n}^{*}$  is cyclic for  $n = 18, 54, 162, 486, 50, 250, 98, 686$ . Make a conjecture about when  $Z_{n}^{*}$  is cyclic if  $n$  is twice the power of an odd prime.
 32 By using SageMath's Generators() command, see if you can find an  $n$  for which  $Z_{n}^{*}$  is cyclic, and  $n$  doesn't fit into the categories of Problems 30 or 31.
 
 # 3.2 Defining Finite Groups in SageMath
@@ -3824,7 +3824,7 @@ must mention every element of  $Z_{n}$  exactly once. This gives us a way to lab
 
 Define the group  $Z_{5}$  in SageMath.
 
-TABLE 3.2: Table of  ${Z}_{5}$  
+TABLE 3.2: Table of  ${Z}_{5}$
 
 <table><tr><td>·</td><td>e</td><td>x</td><td>x^2</td><td>x^3</td><td>x^4</td></tr><tr><td>e</td><td>e</td><td>x</td><td>x^2</td><td>x^3</td><td>x^4</td></tr><tr><td>x</td><td>x</td><td>x^2</td><td>x^3</td><td>x^4</td><td>e</td></tr><tr><td>x^2</td><td>x^2</td><td>x^3</td><td>x^4</td><td>e</td><td>x</td></tr><tr><td>x^3</td><td>x^3</td><td>x^4</td><td>e</td><td>x</td><td>x^2</td></tr><tr><td>x^4</td><td>x^4</td><td>e</td><td>x</td><td>x^2</td><td>x^3</td></tr></table>
 
@@ -3910,7 +3910,7 @@ which begins by showing three differently colored books, as in Figure 3.2. Two w
 
 # MoveBooks(Left)
 
-![](images/2493a2eef2d4bb58895bb1fc384179cca269c2cfe2174077c16ebeda99e7f40f.jpg)  
+![](images/2493a2eef2d4bb58895bb1fc384179cca269c2cfe2174077c16ebeda99e7f40f.jpg)
 FIGURE 3.2: Three books that can be rearranged
 
 By letting  $e$  be the identity element,  $a$  be the rearrangement swapping the first two books, and  $b$  be the rearrangement moving the books to the left, we find that all possible permutations of the books are generated by  $a$  and  $b$ . We will begin by noting the order of these two elements. Since we clearly have  $a^2 = e$  and  $b^3 = e$ , we can use this to help define the group. As in  $Z_8^*$ , the plan is to express  $b \cdot a$  in terms of a combination of elements in alphabetical order. Since and the combination  $b \cdot a$  essentially switches the first and last books, we see that  $(b \cdot a)^2 = e$ , or
@@ -3922,10 +3922,10 @@ $$
 Thus, we can define this group by
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^2, e)  
-Define(b^3, e)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^2, e)
+Define(b^3, e)
 Define(b*a, a*b^2)
 ```
 
@@ -3945,7 +3945,7 @@ is shown in Table 3.3.
 
 Is this really a group? We can tell from the Cayley table that  $G$  is closed with respect to multiplication, and that there is an identity element,  $e$ . We also recognize the familiar Latin square property that we have seen in all of the other Cayley tables. Since every row and every column contains exactly one  $e$ , every element has a unique inverse. The only property that we cannot check directly using the Cayley table is the associativity property. SageMath can check this with the command
 
-TABLE 3.3: Cayley table for  $S_{3}$  
+TABLE 3.3: Cayley table for  $S_{3}$
 
 <table><tr><td>·</td><td>e</td><td>a</td><td>b</td><td>a*b</td><td>b^2</td><td>a*b^2</td></tr><tr><td>e</td><td>e</td><td>a</td><td>b</td><td>a*b</td><td>b^2</td><td>a*b^2</td></tr><tr><td>a</td><td>a</td><td>e</td><td>a*b</td><td>b</td><td>a*b^2</td><td>b^2</td></tr><tr><td>b</td><td>b</td><td>a*b^2</td><td>b^2</td><td>a</td><td>e</td><td>a*b</td></tr><tr><td>a*b</td><td>a*b</td><td>b^2</td><td>a*b^2</td><td>e</td><td>a</td><td>b</td></tr><tr><td>b^2</td><td>b^2</td><td>a*b</td><td>e</td><td>a*b^2</td><td>b</td><td>a</td></tr><tr><td>a*b^2</td><td>a*b^2</td><td>b</td><td>a</td><td>b^2</td><td>a*b</td><td>e</td></tr></table>
 
@@ -3977,12 +3977,12 @@ Consider the group of rotations on the octahedron, and enter this group into Sag
 
 There are eight triangles forming this solid. Three ways of rotating this figure are given by
 
-![](images/8451caa3927124525510c44ccc318d6e1677aa926422213a10164b833846e857.jpg)  
+![](images/8451caa3927124525510c44ccc318d6e1677aa926422213a10164b833846e857.jpg)
 FIGURE 3.3: Octahedron with eight equilateral triangles
 
 ```txt
-RotateOctahedron(a)  
-RotateOctahedron(b)  
+RotateOctahedron(a)
+RotateOctahedron(b)
 RotateOctahedron(c)
 ```
 
@@ -4009,12 +4009,12 @@ $$
 This allows us to define the three products out of alphabetical order,  $b \cdot a$ ,  $c \cdot a$ , and  $c \cdot b$ , in terms of a product of elements that are in alphabetical order. Although this is not mandatory, it is a good strategy to ensure each element will have a natural representation.
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b", "c")  
-Define(a^2, e)  
-Define(b^3, e)  
-Define(c^4, e)  
-Define(b*a, a*b^2)  
+InitGroup("e")
+AddGroupVar("a", "b", "c")
+Define(a^2, e)
+Define(b^3, e)
+Define(c^4, e)
+Define(b*a, a*b^2)
 Define(c*a, a*b*c)
 ```
 
@@ -4050,8 +4050,8 @@ With SageMath, we are able to create new groups to study. These examples help us
 
 1 Show that if  $a^2 = b^2 = e$ , then saying that  $b \cdot a = a \cdot b$  is equivalent to saying that  $a \cdot b \cdot a \cdot b = e$ .
 
-2 In defining  $S_3$ , we used three facts about the group:  $a^2 = e$ ,  $b^3 = e$  and  $b \cdot a = a \cdot b^2$ . Using just these facts without SageMath, prove that  $b^2 \cdot a = a \cdot b$ .  
-3 The group defined in Problem 18 has elements  $a$  and  $b$  such that  $a^5 = e$ ,  $b^4 = e$ , and  $b \cdot a = a^2 \cdot b$ . Using just these facts without SageMath, prove that  $b^3 \cdot a = a^3 \cdot b^3$ .  
+2 In defining  $S_3$ , we used three facts about the group:  $a^2 = e$ ,  $b^3 = e$  and  $b \cdot a = a \cdot b^2$ . Using just these facts without SageMath, prove that  $b^2 \cdot a = a \cdot b$ .
+3 The group defined in Problem 18 has elements  $a$  and  $b$  such that  $a^5 = e$ ,  $b^4 = e$ , and  $b \cdot a = a^2 \cdot b$ . Using just these facts without SageMath, prove that  $b^3 \cdot a = a^3 \cdot b^3$ .
 4 Use geometry to figure out how many elements of the octahedral group are of order 4 (Rotations by 90 degrees). How many elements are of order 3? Of order 2? Check these figures by adding up these numbers, and adding one for the identity element, and show that this gives 24. Hint: The octahedron has 8 faces, 6 corners, and 12 edges.
 
 For Problems 5 through 16: Recall the octahedral group was defined with 3 generators such that  $a^2 = b^3 = c^4 = e$ ,  $b \cdot a = a \cdot b^2$ ,  $c \cdot a = a \cdot b \cdot c$ , and  $c \cdot b = a \cdot c^2$ . Using just these facts without SageMath, simplify the following expressions into a product that is in the form  $a^i \cdot b^j \cdot c^k$ , with  $0 \leq i < 2$ ,  $0 \leq j < 3$ , and  $0 \leq k < 4$ .
@@ -4084,8 +4084,8 @@ For Problems 5 through 16: Recall the octahedral group was defined with 3 genera
 
 # Interactive Problems
 
-18 Use SageMath to define a group that has two elements,  $a$  and  $b$ , such that  $a^5 = b^4 = e$ , and  $b \cdot a = a^2 \cdot b$ . How many elements does this group have?  
-19 Consider the rotations of a regular tetrahedron (triangular pyramid) oriented with its base in the  $xy$ -plane, and another face towards the front. If  $a$  represents flipping the left slanted edge, and  $b$  represents flipping the right slanted edge, then  $a \cdot b$  and  $b \cdot a$  both end up flipping the back edge. (Try it!) Let  $c$  be a  $120^\circ$  rotation of the base clockwise when viewed from the top. Then  $c \cdot a \cdot c^{-1} = b$ , since  $c$  turns the right edge to the left edge. Likewise,  $c \cdot b \cdot c^{-1} = a \cdot b$ , since the back edge is turned to the right edge. From this information, enter the rotation group into SageMath. You will need to find expressions for  $c \cdot a$  and  $c \cdot b$  that are in alphabetical order.  
+18 Use SageMath to define a group that has two elements,  $a$  and  $b$ , such that  $a^5 = b^4 = e$ , and  $b \cdot a = a^2 \cdot b$ . How many elements does this group have?
+19 Consider the rotations of a regular tetrahedron (triangular pyramid) oriented with its base in the  $xy$ -plane, and another face towards the front. If  $a$  represents flipping the left slanted edge, and  $b$  represents flipping the right slanted edge, then  $a \cdot b$  and  $b \cdot a$  both end up flipping the back edge. (Try it!) Let  $c$  be a  $120^\circ$  rotation of the base clockwise when viewed from the top. Then  $c \cdot a \cdot c^{-1} = b$ , since  $c$  turns the right edge to the left edge. Likewise,  $c \cdot b \cdot c^{-1} = a \cdot b$ , since the back edge is turned to the right edge. From this information, enter the rotation group into SageMath. You will need to find expressions for  $c \cdot a$  and  $c \cdot b$  that are in alphabetical order.
 20 Consider extending the octahedral group by adding another generator  $d$ , which of order 5, such that  $d \cdot a = a \cdot b \cdot d$ ,  $d \cdot b = a \cdot c \cdot d$ , and  $d \cdot c = a \cdot d^2$ . Enter this larger group into SageMath. How many elements does it have? (Do not try to do a CheckGroup on this group.)
 
 # 3.3 Subgroups
@@ -4098,8 +4098,8 @@ It should be noted that all non-trivial groups have at least two subgroups. One 
 
 To see if a subset  $H$  is a group, we must test all four of the group properties. But the associative property of  $H$  is guaranteed because the original group  $G$  is associative. The remaining three properties,
 
-1.  $H$  is closed under multiplication. That is,  $x \cdot y \in H$  whenever  $x$  and  $y \in H$ .  
-2. The identity element of  $G$  is in  $H$ .  
+1.  $H$  is closed under multiplication. That is,  $x \cdot y \in H$  whenever  $x$  and  $y \in H$ .
+2. The identity element of  $G$  is in  $H$ .
 3. Every element of  $H$  has its inverse in  $H$ . That is,  $x^{-1} \in H$  whenever  $x \in H$ .
 
 can be combined into one simple test.
@@ -4127,12 +4127,12 @@ Finally, if  $x$  and  $y$  are in  $H$ , then  $y^{-1}$  is in  $H$ , and so  $
 Let us find a subgroup of  $S_3$ , defined in SageMath by the commands:
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^2, e)  
-Define(b^3, e)  
-Define(b*a, a*b^2)  
-G = Group(); G  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^2, e)
+Define(b^3, e)
+Define(b*a, a*b^2)
+G = Group(); G
 {e, a, b, a*b, b^2, a*b^2}
 ```
 
@@ -4147,8 +4147,8 @@ It is easy to see that if  $x$  and  $y$  are in  $H$ , then  $x \cdot y^{-1}$  
 One of the main tools we will use to find subgroups of a group is the intersection. Given two subsets  $H$  and  $K$  of  $G$ , the SageMath command Intersection finds the set of elements that are in both subsets, denoted  $H \cap K$ .
 
 ```latex
-$\mathbf{H} = [\mathbf{e}, \mathbf{b}, \mathbf{b}^{\wedge}2]$ $\mathbf{K} = [\mathbf{e}, \mathbf{a}]$   
-Intersection(H, K)  
+$\mathbf{H} = [\mathbf{e}, \mathbf{b}, \mathbf{b}^{\wedge}2]$ $\mathbf{K} = [\mathbf{e}, \mathbf{a}]$
+Intersection(H, K)
 [e]
 ```
 
@@ -4371,20 +4371,20 @@ Find all of the subgroups of the group  $S_{3}$
 SOLUTION: We found all of the cyclic subgroups in Example 3.10:  $\{e\}, \{e, a\}, \{e, b, b^2\}, \{e, a \cdot b\}$ , and  $\{e, a \cdot b^2\}$ . Note that any subgroup containing  $b$  must also contain  $b^2$ , and vice-versa. Also all subgroups will contain  $e$ . So to find subgroups that require two elements, we have 6 combinations to try:
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^2, e)  
-Define(b^3, e)  
-Define(b*a, a*b^2)  
-Group(a, b)  
-{e, a, b, a*b, b^2, a*b^2}  
-Group(a, a*b)  
-{e, a, b, a*b, b^2, a*b^2}  
-Group(a, a*b^2)  
-{e, a, b, a*b, b^2, a*b^2}  
-Group(b, a*b)  
-{e, a, b, a*b, b^2, a*b^2}  
-Group(b, a*b^2)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^2, e)
+Define(b^3, e)
+Define(b*a, a*b^2)
+Group(a, b)
+{e, a, b, a*b, b^2, a*b^2}
+Group(a, a*b)
+{e, a, b, a*b, b^2, a*b^2}
+Group(a, a*b^2)
+{e, a, b, a*b, b^2, a*b^2}
+Group(b, a*b)
+{e, a, b, a*b, b^2, a*b^2}
+Group(b, a*b^2)
 {e, a, b, a*b, b^2, a*b^2}
 ```
 
@@ -4486,7 +4486,7 @@ $$
 
 Each such value of  $y$  between 0 and  $n - 1$  produces a different solution  $x = g^{y}$ , so there are exactly  $\gcd(n, k)$  solutions.
 
-![](images/396559dd045a617bd4238b851a85b30dd39b63102271470435150c0d72c42cd2.jpg)  
+![](images/396559dd045a617bd4238b851a85b30dd39b63102271470435150c0d72c42cd2.jpg)
 FIGURE 3.4: The Pyraminx™ puzzle without tips
 
 Finding the number of solutions to the equation  $x^{k} = e$  in a group will become important as we classify the different groups. We will give a notation to this count.
@@ -4521,9 +4521,9 @@ shows a simplified puzzle with the four tips chopped off, as in Figure 3.4. In f
 
 colors on the back side of the puzzle through the hole created. Now the four corners of this puzzle can rotate clockwise, using the commands
 
-RotatePuzzle(f)  
-RotatePuzzle(b)  
-RotatePuzzle(l)  
+RotatePuzzle(f)
+RotatePuzzle(b)
+RotatePuzzle(l)
 RotatePuzzle(r)
 
 We can always put the puzzle back into its original form with the command
@@ -4606,14 +4606,14 @@ forms a subgroup of  $G$  of order  $(p - 1)/2$ . Note this is a special case of
 
 Hint: Use the result of Problem 18 to show that every element of  $H$  is derived from exactly two elements of  $Z_{p}^{*}$ .
 
-20 Find the quadratic residues of 17. See Problem 19.  
-21 Find the quadratic residues of 23. See Problem 19.  
+20 Find the quadratic residues of 17. See Problem 19.
+21 Find the quadratic residues of 23. See Problem 19.
 22 Let  $G$  be a group with an even number of elements. Prove that  $R_{2}(G)$  is even. See the hint for Problem 26 in §2.3.
 
 # Interactive Problems
 
-23 Use Problem 18 from §3.2 to find the subgroup generated by the set  $\{a, b^2\}$ . How many elements does this subgroup have?  
-24 Use SageMath to find the order of the elements  $b \cdot f$ ,  $b \cdot f \cdot r \cdot f \cdot f$ , and  $f \cdot b \cdot r$  in the Pyraminx™ group.  
+23 Use Problem 18 from §3.2 to find the subgroup generated by the set  $\{a, b^2\}$ . How many elements does this subgroup have?
+24 Use SageMath to find the order of the elements  $b \cdot f$ ,  $b \cdot f \cdot r \cdot f \cdot f$ , and  $f \cdot b \cdot r$  in the Pyraminx™ group.
 25 Can you use SageMath to find an element of the Pyraminx™ group that has order 30?
 
 Hint: Exactly five of the six edges must be moved out of place. The sixth edge must flip as well.
@@ -4644,13 +4644,13 @@ The solid arrows connect the points  $\{0,2,4,6,8\}$ , while the dotted arrows c
 
 One of the two sets is actually a subgroup of  $Z_{10}$ , the subgroup generated by the element 4. The other set is obtained by adding 1 to each element of
 
-![](images/844db9367832ca9cff974df2ae89306259fe46269a1c0047c61704d7f8305fbc.jpg)  
+![](images/844db9367832ca9cff974df2ae89306259fe46269a1c0047c61704d7f8305fbc.jpg)
 FIGURE 4.1: Circle graph of Add (4)
 
 the subgroup. Similar patterns arise when we use different elements of  $Z_{10}$  instead of 4.
 
-FIGURE 4.2: Circle graphs showing the cosets of  $\{\mathrm{Stay},\mathrm{Spin}\}$  
-![](images/c04a1be47fc2c31e00b6d371d22f3e0707aad1b276f17a65c253ca72a2930f06.jpg)  
+FIGURE 4.2: Circle graphs showing the cosets of  $\{\mathrm{Stay},\mathrm{Spin}\}$
+![](images/c04a1be47fc2c31e00b6d371d22f3e0707aad1b276f17a65c253ca72a2930f06.jpg)
 CircleGraph(G, LeftMult(Spin)) CircleGraph(G, RightMult(Spin))
 
 ![](images/8784e45ae67f37e2ced10db25fff784e5aeb0c82ca0a0106438451a4b53e34a9.jpg)
@@ -4953,19 +4953,19 @@ This note, discovered 30 years after Fermat's death by his son, claims that ther
 
 Image source: Wikimedia Commons
 
-25 Show that if an element  $y$  of a group  $G$  is in the right coset  $Hx$ , where  $H$  is a subgroup of  $G$ , then  $Hy = Hx$ .  
+25 Show that if an element  $y$  of a group  $G$  is in the right coset  $Hx$ , where  $H$  is a subgroup of  $G$ , then  $Hy = Hx$ .
 26 Let  $|G| = 33$ . What are the possible orders for the elements of  $G$ ? Show that  $G$  must have an element of order 3.
 
 Hint: Each subgroup of order 11 would contain 10 elements of order 11, along with the identity.
 
-27 Suppose  $G$  is a group of order  $pq$ , where  $p$  and  $q$  are prime. Show that every non-trivial subgroup is cyclic.  
-28 Suppose  $G$  is a group of order  $pq$ , where  $p$  and  $q$  are prime, with  $p \neq q$ . Suppose there is only one subgroup of order  $p$ , and one subgroup of order  $q$ . Prove that  $G$  is cyclic.  
+27 Suppose  $G$  is a group of order  $pq$ , where  $p$  and  $q$  are prime. Show that every non-trivial subgroup is cyclic.
+28 Suppose  $G$  is a group of order  $pq$ , where  $p$  and  $q$  are prime, with  $p \neq q$ . Suppose there is only one subgroup of order  $p$ , and one subgroup of order  $q$ . Prove that  $G$  is cyclic.
 29 Find all subgroups of the group  $Z_{15}^{*}$ .
 
 Hint: What does Lagrange's theorem say about a non-trivial, non-cyclic subgroup?
 
-30 Find all subgroups of the group  $Z_{16}^{*}$ . See the hint for Problem 29.  
-31 Find all subgroups of the group  $Z_{20}^{*}$ . See the hint for Problem 29.  
+30 Find all subgroups of the group  $Z_{16}^{*}$ . See the hint for Problem 29.
+31 Find all subgroups of the group  $Z_{20}^{*}$ . See the hint for Problem 29.
 32 If  $G$  is a group, and  $p$  is prime, show that the number of elements of  $G$  of order  $p$  is a multiple of  $p - 1$ .
 
 # Interactive Problems
@@ -4973,9 +4973,9 @@ Hint: What does Lagrange's theorem say about a non-trivial, non-cyclic subgroup?
 33 Find the left and right cosets of the subgroup  $\{e, c, c^2, c^3\}$  of the octahedral group, given by:
 
 ```txt
-InitGroup("e"); AddGroupVar("a", "b", "c")  
-Define(a^2, e); Define(b^3, e); Define(c^4, e)  
-Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)  
+InitGroup("e"); AddGroupVar("a", "b", "c")
+Define(a^2, e); Define(b^3, e); Define(c^4, e)
+Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)
 G = Group()
 ```
 
@@ -4984,9 +4984,9 @@ Are the left and right cosets the same?
 34 Find the left and right cosets of the subgroup  $\{e, c^2, a \cdot b^2 \cdot c, a \cdot b^2 \cdot c^3\}$  of the octahedral group, given by:
 
 ```txt
-InitGroup("e"); AddGroupVar("a", "b", "c")  
-Define(a^2, e); Define(b^3, e); Define(c^4, e)  
-Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)  
+InitGroup("e"); AddGroupVar("a", "b", "c")
+Define(a^2, e); Define(b^3, e); Define(c^4, e)
+Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)
 G = Group()
 ```
 
@@ -5016,10 +5016,10 @@ $$
 
 which produces Figure 4.3.
 
-![](images/ed424c149e900224ebbab272e67b9dbeeb411264ec61186de729c1b4ec6dcc0a.jpg)  
+![](images/ed424c149e900224ebbab272e67b9dbeeb411264ec61186de729c1b4ec6dcc0a.jpg)
 FIGURE 4.3: Circle graph for squaring in  $Z_{33}^{*}$
 
-![](images/7db96c064d7ce79a12d93d6ea91259fb29c9ffd3f0973880162e3beb1c59eccb.jpg)  
+![](images/7db96c064d7ce79a12d93d6ea91259fb29c9ffd3f0973880162e3beb1c59eccb.jpg)
 FIGURE 4.4: Circle graph for cubing in  $Z_{33}^{*}$
 
 This graph is rather perplexing. The squares of 2, 13, 20, and 31 are all 4. The elements having "square roots" have four of them, while the majority of the elements do not have square roots.
@@ -5064,7 +5064,7 @@ Let us now consider the cubes of all numbers from 0 to 32. This will no longer b
 
 The reason is given in the next proposition.
 
-![](images/c2965d9a996fc8bad1ed22cc4d1c51d6675c2cb177547457853b510e203ab397.jpg)  
+![](images/c2965d9a996fc8bad1ed22cc4d1c51d6675c2cb177547457853b510e203ab397.jpg)
 FIGURE 4.5: Circle graph for cubing modulo 33
 
 # PROPOSITION 4.2
@@ -5125,7 +5125,7 @@ To decipher this, one would take the seventh power of each number in the sequenc
 
 The main drawback with this code is that, for longer messages, the letter E which encodes to 26 would appear most frequently in the encoded string.
 
-TABLE 4.1: Standard code sending letters to numbers  
+TABLE 4.1: Standard code sending letters to numbers
 
 <table><tr><td>A = 1</td><td>J = 10</td><td>S = 19</td></tr><tr><td>B = 2</td><td>K = 11</td><td>T = 20</td></tr><tr><td>C = 3</td><td>L = 12</td><td>U = 21</td></tr><tr><td>D = 4</td><td>M = 13</td><td>V = 22</td></tr><tr><td>E = 5</td><td>N = 14</td><td>W = 23</td></tr><tr><td>F = 6</td><td>O = 15</td><td>X = 24</td></tr><tr><td>G = 7</td><td>P = 16</td><td>Y = 25</td></tr><tr><td>H = 8</td><td>Q = 17</td><td>Z = 26</td></tr><tr><td>I = 9</td><td>R = 18</td><td>Space = 0.</td></tr></table>
 
@@ -5228,8 +5228,8 @@ Deciphering a message is very similar, only we will use the secret number  $s$  
 Suppose a friend, knowing the above values of  $n$  and  $r$ , gives the message
 
 ```latex
-$\mathbf{y} = 6955740514702440687061142665742560438277560654407470$   
-32387700788446830783525388331288538827113160595765080505  
+$\mathbf{y} = 6955740514702440687061142665742560438277560654407470$
+32387700788446830783525388331288538827113160595765080505
 966693143199918635215093570816224139063616551830794
 ```
 
@@ -5304,24 +5304,24 @@ For Problems 1 through 4: Use the code in Example 4.4 to encrypt the following m
 
 For Problems 5 through 8: Use the code in Example 4.4 to decipher the following messages.
 
-5 14, 17, 3, 28, 0, 3, 28, 26, 1, 20, 16.  
-6 1, 12, 12, 0, 28, 16, 28, 14, 26, 19, 28, 0, 13, 9  
-7 19, 1, 11, 26, 0, 3, 14, 0, 28, 9  
-8 24, 26, 22, 26, 24, 28, 26, 0, 4, 9, 12, 1, 24, 3, 14, 16  
-9 Show that Proposition 4.2 is still true if  $n$  is the product of three distinct primes. In fact, many applications of the RSA code use three large primes instead of two.  
+5 14, 17, 3, 28, 0, 3, 28, 26, 1, 20, 16.
+6 1, 12, 12, 0, 28, 16, 28, 14, 26, 19, 28, 0, 13, 9
+7 19, 1, 11, 26, 0, 3, 14, 0, 28, 9
+8 24, 26, 22, 26, 24, 28, 26, 0, 4, 9, 12, 1, 24, 3, 14, 16
+9 Show that Proposition 4.2 is still true if  $n$  is the product of three distinct primes. In fact, many applications of the RSA code use three large primes instead of two.
 10 Show that Proposition 4.2 is no longer true if we let  $n = p^2$  for some prime  $p$ .
 
 For Problems 11 through 18: Find the inverse of the following functions. Note that some of these require the result of Problem 9.
 
-11  $f(x) = x^{3}\mod 51$  
-15  $f(x) = x^{11}$  mod 217  
-12  $f(x) = x^{7}$  mod 55.  
-16  $f(x) = x^{13}$  mod 323  
-13  $f(x) = x^{5}$  mod 91.  
-17  $f(x) = x^{7}\mod 1001$  
-14  $f(x) = x^{7}$  mod 143  
-18  $f(x) = x^{11}\mod 2717$  
-19 Use the public key  $n = 2773$  and  $r = 17$  to encrypt "PASCAL" two letters at a time, using Table 4.1. How would you decipher this message?  
+11  $f(x) = x^{3}\mod 51$
+15  $f(x) = x^{11}$  mod 217
+12  $f(x) = x^{7}$  mod 55.
+16  $f(x) = x^{13}$  mod 323
+13  $f(x) = x^{5}$  mod 91.
+17  $f(x) = x^{7}\mod 1001$
+14  $f(x) = x^{7}$  mod 143
+18  $f(x) = x^{11}\mod 2717$
+19 Use the public key  $n = 2773$  and  $r = 17$  to encrypt "PASCAL" two letters at a time, using Table 4.1. How would you decipher this message?
 20 Figure 4.3 shows that whenever an element of  $Z_{33}^{*}$  has a square root, it has 4 of them. Generalize this to any abelian group. If  $R_{k}(G) = n$  for an abelian group  $G$ , and  $y^{k} = b$  for some element  $b$ , then there are precisely  $n$  solutions to the equation  $x^{k} = b$ .
 
 # Interactive Problems
@@ -5334,7 +5334,7 @@ RSA routines loaded.
 
 Now using SageMath's NextPrime command, find two large prime numbers  $p$  and  $q$ , at least 80 digits each. This is done by the two commands
 
-p = NextPrime(large number goes here); p  
+p = NextPrime(large number goes here); p
 q = NextPrime( another large number goes here ); q
 
 We will use the value  $r = 10007$ . Verify that this number is coprime to  $p - 1$  and  $q - 1$  by executing the following:
@@ -5372,25 +5372,25 @@ y = MessageToNumber("Check ... ")
 Then you must "sign" the check using your secret  $s$  number.
 
 ```txt
-$\mathbf{x} =$  PowerMod(y, s, n)  
+$\mathbf{x} =$  PowerMod(y, s, n)
 print("x = ", x)
 ```
 
 Then copy and paste the output  $x$  into the body of an e-mail message.
 
-23 After doing Problem 21, your instructor will send you a response with a value of  $y$ . Copy and paste this number into an input cell of SageMath along with your values of  $n$  and  $s$  from Problem 21, and evaluate them. Using Example 4.6 as your guide, decode the message  $y$  and hand in (on paper) what it says.  
+23 After doing Problem 21, your instructor will send you a response with a value of  $y$ . Copy and paste this number into an input cell of SageMath along with your values of  $n$  and  $s$  from Problem 21, and evaluate them. Using Example 4.6 as your guide, decode the message  $y$  and hand in (on paper) what it says.
 24 B. L. User tried creating his encryption number with the two primes
 
 ```txt
-$\mathbf{p} =$  NextPrime(715870273457197548734156715678567821637415  
+$\mathbf{p} =$  NextPrime(715870273457197548734156715678567821637415
 61519737155752525673649286739584756092);  $\mathfrak{p}$ $\mathbf{q} =$  NextPrime  $(\mathfrak{p} + 1)$ ;  $\mathbf{q}$
 ```
 
 When he publicized the product  $n = pq$ , along with the value  $r = 6367$ , he received a message from a friend:
 
 ```txt
-$\mathbf{y} = 30927225219930643335403878476414515883199432204869058$   
-0059761407250735465231068482494915312824566404543856784  
+$\mathbf{y} = 30927225219930643335403878476414515883199432204869058$
+0059761407250735465231068482494915312824566404543856784
 72107616521242043590910817888839981759972041752306977
 ```
 
@@ -5399,15 +5399,15 @@ What did this message say?
 25 B. L. User tried again, this time with the two primes
 
 ```javascript
-$\mathbf{p} =$  NextPrime(5555555555555555555555555555555555555555555555 5555555555555555555555555555555);  $\mathbb{P}$    
+$\mathbf{p} =$  NextPrime(5555555555555555555555555555555555555555555555 5555555555555555555555555555555);  $\mathbb{P}$
 q  $=$  NextPrime(6666666666666666666666666666666666666 66666666666666666666666666666); q
 ```
 
 When he publicized the product  $n = pq$ , along with the value  $r = 6367$ , he received the message:
 
 ```c
-y = 1558672247570529436516848227697561797460920154529049  
-9722240308097127979631683649688737724267018012366968253  
+y = 1558672247570529436516848227697561797460920154529049
+9722240308097127979631683649688737724267018012366968253
 789095615381333414455768854608714790690628382743232001
 ```
 
@@ -5442,22 +5442,22 @@ This raises some interesting questions. If  $X$  and  $Y$  are subgroups of  $G$
 We will use the octahedral group of order 24 to experiment. In SageMath, this can be reloaded with the commands
 
 ```autohotkey
-InitGroup("e")  
-AddGroupVar("a", "b", "c")  
-Define(a^2, e)  
-Define(b^3, e)  
-Define(c^4, e)  
-Define(b*a, a*b^2)  
-Define(c*a, a*b*c)  
-Define(c*b, a*c^2)  
-G = Group(); G  
+InitGroup("e")
+AddGroupVar("a", "b", "c")
+Define(a^2, e)
+Define(b^3, e)
+Define(c^4, e)
+Define(b*a, a*b^2)
+Define(c*a, a*b*c)
+Define(c*b, a*c^2)
+G = Group(); G
 {e, a, b, a*b, b^2, a*b^2, c, a*c, b*c, a*b*c, b^2*c, a*b^2*c, c^2, a*c^2, b*c^2, a*b*c^2, b^2*c^2, a*b^2*c^2, c^3, a*c^3, b*c^3, a*b*c^3, b^2*c^3, a*b^2*c^3}
 ```
 
 Two sample subgroups of order 4 are given by
 
 ```txt
-H = Group(c); H {e, c^2, c, c^3}  
+H = Group(c); H {e, c^2, c, c^3}
 K = Group(b*c); K {e, b*c, a*b*c^2, a*b^2*c^3}
 ```
 
@@ -5482,21 +5482,21 @@ Let us try again using the cosets of a subgroup instead of two subgroups.
 The right cosets of  $H$  are given by
 
 ```txt
-RtCoset (G, H)  
+RtCoset (G, H)
 {e, c, c^2, c^3}, {a, a*b*c, b*c^2, b^2*c^3}, {b, b^2*c, a*c^2, a*b*c^3}, {a*b, b*c, b^2*c^2, a*c^3}, {b^2, a*c, a*b*c^2, b*c^3}, {a*b^2, a*b^2*c, a*b^2*c^2, a*b^2*c^3}
 ```
 
 Let us try multiplying two right cosets of  $H$ , say the third and the fifth.
 
 ```latex
-$\mathbf{X} = \mathbf{H}\star \mathbf{b};\mathbf{X}$ $\{\mathrm{b},\mathrm{b}^{\wedge}2\mathrm{*c},\mathrm{a*c}^{\wedge}2,\mathrm{a*b*c}^{\wedge}3\}$ $\mathbf{Y} = \mathbf{H}\star \mathbf{b}^{\wedge}2;\mathbf{Y}$ $\{\mathrm{b}^{\wedge}2,\mathrm{a*c},\mathrm{a*b*c}^{\wedge}2,\mathrm{b*c}^{\wedge}3\}$    
+$\mathbf{X} = \mathbf{H}\star \mathbf{b};\mathbf{X}$ $\{\mathrm{b},\mathrm{b}^{\wedge}2\mathrm{*c},\mathrm{a*c}^{\wedge}2,\mathrm{a*b*c}^{\wedge}3\}$ $\mathbf{Y} = \mathbf{H}\star \mathbf{b}^{\wedge}2;\mathbf{Y}$ $\{\mathrm{b}^{\wedge}2,\mathrm{a*c},\mathrm{a*b*c}^{\wedge}2,\mathrm{b*c}^{\wedge}3\}$
 X  $\star$  Y  $\{\mathrm{e},\mathrm{a},\mathrm{b},\mathrm{a*b}^{\wedge}2,\mathrm{c},\mathrm{a*b*c},\mathrm{b^{\wedge}2*c},\mathrm{a*b^{\wedge}2*c},\mathrm{c^{\wedge}2},\mathrm{a*c^{\wedge}2},$ $\mathtt{b*c^{\wedge}2}$  , a*b^2*c^2,c^3,a*b*c^3,b^2*c^3,a*b^2*c^3
 ```
 
 This also produces something with 16 elements, so this cannot be a subgroup. However, a left coset multiplied by a right coset produces a glimmer of hope:
 
 ```latex
-$\mathbf{W} = \mathbf{b}\star \mathbf{H};\mathbf{W}$ $\{\mathrm{b},\mathrm{b*c^{\wedge}2},\mathrm{b*c},\mathrm{b*c^{\wedge}3}\}$    
+$\mathbf{W} = \mathbf{b}\star \mathbf{H};\mathbf{W}$ $\{\mathrm{b},\mathrm{b*c^{\wedge}2},\mathrm{b*c},\mathrm{b*c^{\wedge}3}\}$
 W  $\star \mathbf{Y}$ $\{\mathrm{e},\mathrm{a*b^{\wedge}2*c},\mathrm{a*c^{\wedge}2},\mathrm{b^{\wedge}2*c^{\wedge}3}\}$
 ```
 
@@ -5644,13 +5644,13 @@ When we have a normal subgroup, the set of cosets will possess more properties t
 
 # Problems for §4.3
 
-1 Show that if  $H$  is a subgroup of a group  $G$ , then  $H \cdot H = H$ , where the product of two sets is defined in Definition 4.3.  
-2 Find all of the normal subgroups of  $D_3$ . (This is Terry's group.)  
-3 Let  $H$  be a subgroup of  $G$  such that every left coset  $a \cdot H$  is also a right coset  $H \cdot b$ . Prove that  $H$  is a normal subgroup of  $G$ .  
-4 Prove that the intersection of two normal subgroups of  $G$  is a normal subgroup of  $G$ .  
-5 Let  $N$  be a normal subgroup of  $G$ , and let  $H$  be a subgroup of  $G$  which contains the subgroup  $N$ . Prove that  $N$  is a normal subgroup of  $H$ .  
-6 Show that if  $G$  is an abelian group, and  $X$  and  $Y$  are two subgroups of  $G$ , then  $X \cdot Y$  is a subgroup of  $G$ .  
-7 We saw in Example 4.10 that  $M$  was a normal subgroup of the octahedral group. Find a normal subgroup of  $M$  which is not a normal subgroup of the octahedral group.  
+1 Show that if  $H$  is a subgroup of a group  $G$ , then  $H \cdot H = H$ , where the product of two sets is defined in Definition 4.3.
+2 Find all of the normal subgroups of  $D_3$ . (This is Terry's group.)
+3 Let  $H$  be a subgroup of  $G$  such that every left coset  $a \cdot H$  is also a right coset  $H \cdot b$ . Prove that  $H$  is a normal subgroup of  $G$ .
+4 Prove that the intersection of two normal subgroups of  $G$  is a normal subgroup of  $G$ .
+5 Let  $N$  be a normal subgroup of  $G$ , and let  $H$  be a subgroup of  $G$  which contains the subgroup  $N$ . Prove that  $N$  is a normal subgroup of  $H$ .
+6 Show that if  $G$  is an abelian group, and  $X$  and  $Y$  are two subgroups of  $G$ , then  $X \cdot Y$  is a subgroup of  $G$ .
+7 We saw in Example 4.10 that  $M$  was a normal subgroup of the octahedral group. Find a normal subgroup of  $M$  which is not a normal subgroup of the octahedral group.
 8 Let  $G$  be a group, and let  $Z$  be the set of elements in  $G$  which commute with all the elements of  $G$ . That is,
 
 $$
@@ -5702,11 +5702,11 @@ $$
 This can be entered into SageMath with the command
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^4, e)  
-Define(b^2, a^2)  
-Define(b*a, a^3*b)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^4, e)
+Define(b^2, a^2)
+Define(b*a, a^3*b)
 Q = Group(a, b); Q
 ```
 
@@ -5715,10 +5715,10 @@ Find all subgroups of this group, and show that all subgroups are normal, even t
 20 Use SageMath, along with a bit of trial and error, to find a subgroup of order 12 of the octahedral group. Show that this subgroup is a normal subgroup. The following reloads the octahedral group:
 
 ```txt
-InitGroup("e"); AddGroupVar("a", "b", "c")  
-Define(a^2, e); Define(b^3, e); Define(c^4, e)  
-Define(b*a, a*b^2); Define(c*a, a*b*c);  
-Define(c*b, a*c^2)  
+InitGroup("e"); AddGroupVar("a", "b", "c")
+Define(a^2, e); Define(b^3, e); Define(c^4, e)
+Define(b*a, a*b^2); Define(c*a, a*b*c);
+Define(c*b, a*c^2)
 G = Group()
 ```
 
@@ -5794,7 +5794,7 @@ $$
 
 In §2.2, we defined a equivalence relation as a relation satisfying the three properties
 
-1. (Reflexive) Every element  $x$  is equivalent to itself.  
+1. (Reflexive) Every element  $x$  is equivalent to itself.
 2. (Symmetric) If  $x$  is equivalent to  $y$ , then  $y$  is equivalent to  $x$ .
 
 3. (Transitive) If  $x$  is equivalent to  $y$ , and  $y$  in turn is equivalent to  $z$ , then  $x$  is equivalent to  $z$ .
@@ -5855,10 +5855,10 @@ $$
 \left\{a ^ {*} b \wedge 2, c, a ^ {*} b \wedge 2 ^ {*} c \wedge 2, c ^ {\wedge} 3 \right\}
 $$
 
-![](images/7587ebb9f0485c25976bca78dfdb4ac796a960630c29dd87d5664096c615a45d.jpg)  
+![](images/7587ebb9f0485c25976bca78dfdb4ac796a960630c29dd87d5664096c615a45d.jpg)
 FIGURE 4.6: Cayley table for the quotient group
 
-TABLE 4.2: Another Cayley table for  $S_{3}$  
+TABLE 4.2: Another Cayley table for  $S_{3}$
 
 <table><tr><td>·</td><td>e</td><td>a*b^2</td><td>b</td><td>a</td><td>b^2</td><td>a*b</td></tr><tr><td>e</td><td>e</td><td>a*b^2</td><td>b</td><td>a</td><td>b^2</td><td>a*b</td></tr><tr><td>a*b^2</td><td>a*b^2</td><td>e</td><td>a</td><td>b</td><td>a*b</td><td>b^2</td></tr><tr><td>b</td><td>b</td><td>a*b</td><td>b^2</td><td>a*b^2</td><td>e</td><td>a</td></tr><tr><td>a</td><td>a</td><td>b^2</td><td>a*b</td><td>e</td><td>a*b^2</td><td>b</td></tr><tr><td>b^2</td><td>b^2</td><td>a</td><td>e</td><td>a*b</td><td>b</td><td>a*b^2</td></tr><tr><td>a*b</td><td>a*b</td><td>b</td><td>a*b^2</td><td>b^2</td><td>a</td><td>e</td></tr></table>
 
@@ -5888,12 +5888,12 @@ For Problems 1 through 9, write the Cayley table for the following quotient grou
 
 11 Write the Cayley table for the quotient group created by the subgroup  $\{e, b, b^2\}$  of  $S_3$ .
 
-12 Let  $\mathbb{Q}$  be the additive group of rational numbers. Show that the group of integers  $\mathbb{Z}$  is a normal subgroup of  $\mathbb{Q}$ . Show that  $\mathbb{Q} / \mathbb{Z}$  is an infinite group in which every element has finite order.  
-13 Describe the quotient group  $G / N$  of Problem 12 of §4.3.  
-14 Prove that the quotient group of an abelian group is abelian.  
-15 Prove that the quotient group of a cyclic group is cyclic.  
-16 Let  $G$  be a finite group, and  $H$  a normal subgroup of  $G$ . Prove that the order of the element  $gH$  in the group  $G / H$  divides the order of  $g$  in the group  $G$ .  
-17 Let  $N$  and  $H$  be two normal subgroups of  $G$ , with  $N$  contained inside of  $H$ . Prove that  $H / N$  is a subgroup of  $G / N$ . See Problem 5 of §4.3.  
+12 Let  $\mathbb{Q}$  be the additive group of rational numbers. Show that the group of integers  $\mathbb{Z}$  is a normal subgroup of  $\mathbb{Q}$ . Show that  $\mathbb{Q} / \mathbb{Z}$  is an infinite group in which every element has finite order.
+13 Describe the quotient group  $G / N$  of Problem 12 of §4.3.
+14 Prove that the quotient group of an abelian group is abelian.
+15 Prove that the quotient group of a cyclic group is cyclic.
+16 Let  $G$  be a finite group, and  $H$  a normal subgroup of  $G$ . Prove that the order of the element  $gH$  in the group  $G / H$  divides the order of  $g$  in the group  $G$ .
+17 Let  $N$  and  $H$  be two normal subgroups of  $G$ , with  $N$  contained inside of  $H$ . Prove that  $H / N$  is a subgroup of  $G / N$ . See Problem 5 of §4.3.
 18 Let  $N$  and  $H$  be two normal subgroups of  $G$ , with  $N$  contained inside of  $H$ . Show that  $H / N$  is a normal subgroup of  $G / N$ . See Problem 17.
 
 # Interactive Problems
@@ -5907,9 +5907,9 @@ By looking at the circle graph, determine the cosets of  $G$  with respect to  $
 20 Here is a group of order 20 from Problem 18 of §3.2:
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^5, e); Define(b^4, e); Define(b*a, a^2*b)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^5, e); Define(b^4, e); Define(b*a, a^2*b)
 G = Group()
 ```
 
@@ -6055,7 +6055,7 @@ $$
 \{\{e, a, a ^ {2} \}, \{b, a \cdot b, a ^ {2} \cdot b \}.
 $$
 
-TABLE 5.1: Multiplication table for  ${Z}_{24}^{ * }$  
+TABLE 5.1: Multiplication table for  ${Z}_{24}^{ * }$
 
 <table><tr><td>.</td><td>1</td><td>5</td><td>7</td><td>11</td><td>13</td><td>17</td><td>19</td><td>23</td></tr><tr><td>1</td><td>1</td><td>5</td><td>7</td><td>11</td><td>13</td><td>17</td><td>19</td><td>23</td></tr><tr><td>5</td><td>5</td><td>1</td><td>11</td><td>7</td><td>17</td><td>13</td><td>23</td><td>19</td></tr><tr><td>7</td><td>7</td><td>11</td><td>1</td><td>5</td><td>19</td><td>23</td><td>13</td><td>17</td></tr><tr><td>11</td><td>11</td><td>7</td><td>5</td><td>1</td><td>23</td><td>19</td><td>17</td><td>13</td></tr><tr><td>13</td><td>13</td><td>17</td><td>19</td><td>23</td><td>1</td><td>5</td><td>7</td><td>11</td></tr><tr><td>17</td><td>17</td><td>13</td><td>23</td><td>19</td><td>5</td><td>1</td><td>11</td><td>7</td></tr><tr><td>19</td><td>19</td><td>23</td><td>13</td><td>17</td><td>7</td><td>11</td><td>1</td><td>5</td></tr><tr><td>23</td><td>23</td><td>19</td><td>17</td><td>13</td><td>11</td><td>7</td><td>5</td><td>1</td></tr></table>
 
@@ -6066,15 +6066,15 @@ The rest of the group can be determined by finding  $b \cdot a$ , which again by
 A similar exhaustive search can be used to find all groups of order 8. If such a group has all non-identity elements of order 2, then by Lemma 5.1 there is a subgroup  $\{e, a, b, a \cdot b\}$ . By Problem 22 of §2.3, the group is commutative, so if we pick  $c$  to be any other element, then  $c^2 = e$ ,  $c \cdot a = a \cdot c$ , and  $c \cdot b = b \cdot c$ .
 
 ```lua
-InitGroup("e")  
-AddGroupVar("a", "b", "c")  
-Define(a^2, e)  
-Define(b^2, e)  
-Define(c^2, e)  
-Define(b*a, a*b)  
-Define(c*a, a*c)  
-Define(c*b, b*c)  
-G = Group(); G  
+InitGroup("e")
+AddGroupVar("a", "b", "c")
+Define(a^2, e)
+Define(b^2, e)
+Define(c^2, e)
+Define(b*a, a*b)
+Define(c*a, a*c)
+Define(c*b, b*c)
+G = Group(); G
 {e, a, b, a*b, c, a*c, b*c, a*b*c}
 ```
 
@@ -6087,11 +6087,11 @@ but  $b \cdot a \neq b$ , since this would force  $a = e$ . So  $b^2$  is either
 If  $b \cdot a = a \cdot b$ , and  $b^2$  is either  $e$  or  $a^2$ , the group becomes isomorphic to  $Z_{15}^{*}$  which we have seen before. Also, both combinations for which  $b \cdot a = a^2 \cdot b$  fail to produce a group. If  $b \cdot a = a^3 \cdot b$  and  $b^2 = e$ , we get the group
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^4, e)  
-Define(b^2, e)  
-Define(b*a, a^3*b)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^4, e)
+Define(b^2, e)
+Define(b*a, a^3*b)
 G = Group(); G
 ```
 
@@ -6101,19 +6101,19 @@ G = Group(); G
 
 This gives rise to the group  $D_4$ , the symmetry group of the square studied in Problem 1 of §2.1. The Cayley table shown in Table 5.2.
 
-TABLE 5.2: Multiplication table for  ${D}_{4}$  
+TABLE 5.2: Multiplication table for  ${D}_{4}$
 
 <table><tr><td>·</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td></tr><tr><td>e</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td></tr><tr><td>a</td><td>a</td><td>a2</td><td>a3</td><td>e</td><td>a·b</td><td>a2·b</td><td>a3·b</td><td>b</td></tr><tr><td>a2</td><td>a2</td><td>a3</td><td>e</td><td>a</td><td>a2·b</td><td>a3·b</td><td>b</td><td>a·b</td></tr><tr><td>a3</td><td>a3</td><td>e</td><td>a</td><td>a2</td><td>a3·b</td><td>b</td><td>a·b</td><td>a2·b</td></tr><tr><td>b</td><td>b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>e</td><td>a3</td><td>a2</td><td>a</td></tr><tr><td>a·b</td><td>a·b</td><td>b</td><td>a3·b</td><td>a2·b</td><td>a</td><td>e</td><td>a3</td><td>a2</td></tr><tr><td>a2·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a3·b</td><td>a2</td><td>a</td><td>e</td><td>a3</td></tr><tr><td>a3·b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a3</td><td>a2</td><td>a</td><td>e</td></tr></table>
 
 The final possibility is that  $b \cdot a = a^3 \cdot b$ , and  $b^2 = a^2$ . This produces a new group called the quaternion group  $Q$ , described by the following:
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^4, e)  
-Define(b^2, a^2)  
-Define(b*a, a^3*b)  
-Q = Group(); Q  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^4, e)
+Define(b^2, a^2)
+Define(b*a, a^3*b)
+Q = Group(); Q
 {e, a, a^2, a^3, b, a*b, a^2*b, a^3*b}
 ```
 
@@ -6129,26 +6129,26 @@ $$
 i ^ {2} = - 1, \qquad j ^ {2} = - 1, \qquad k ^ {2} = - 1.
 $$
 
-TABLE 5.3: Multiplication table for  $Q$  
+TABLE 5.3: Multiplication table for  $Q$
 
 <table><tr><td>·</td><td>1</td><td>i</td><td>j</td><td>k</td><td>-1</td><td>- i</td><td>-j</td><td>-k</td></tr><tr><td>1</td><td>1</td><td>i</td><td>j</td><td>k</td><td>-1</td><td>- i</td><td>-j</td><td>-k</td></tr><tr><td>i</td><td>i</td><td>-1</td><td>k</td><td>-j</td><td>-i</td><td>1</td><td>-k</td><td>j</td></tr><tr><td>j</td><td>j</td><td>-k</td><td>-1</td><td>i</td><td>-j</td><td>k</td><td>1</td><td>-i</td></tr><tr><td>k</td><td>k</td><td>j</td><td>-i</td><td>-1</td><td>-k</td><td>-j</td><td>i</td><td>1</td></tr><tr><td>-1</td><td>-1</td><td>-i</td><td>-j</td><td>-k</td><td>1</td><td>i</td><td>j</td><td>k</td></tr><tr><td>-i</td><td>-i</td><td>1</td><td>-k</td><td>j</td><td>i</td><td>-1</td><td>k</td><td>-j</td></tr><tr><td>-j</td><td>-j</td><td>k</td><td>1</td><td>-i</td><td>j</td><td>-k</td><td>-1</td><td>i</td></tr><tr><td>-k</td><td>-k</td><td>-j</td><td>i</td><td>1</td><td>k</td><td>j</td><td>-i</td><td>-1</td></tr></table>
 
 In summary, we have the following groups up to order 8:
 
-$n = 1$  : The one element must be the identity, so we have just the trivial group,  $\{e\}$  
-$n = 2$ : Since 2 is prime, the only non-isomorphic group is  $Z_{2}$ .  
-$n = 3$ : Since 3 is prime, the only non-isomorphic group is  $Z_{3}$ .  
-$n = 4$ : By Lemma 5.1, there are two non-isomorphic groups:  $Z_{4}$  and  $Z_{8}^{*}$ .  
-$n = 5$ : Since 5 is prime, the only non-isomorphic group is  $Z_{5}$ .  
-$n = 6$ : There are two non-isomorphic groups:  $Z_{6}$  and the non-abelian group  $S_{3}$ .  
-$n = 7$ : Since 7 is prime, the only non-isomorphic group is  $Z_{7}$ .  
+$n = 1$  : The one element must be the identity, so we have just the trivial group,  $\{e\}$
+$n = 2$ : Since 2 is prime, the only non-isomorphic group is  $Z_{2}$ .
+$n = 3$ : Since 3 is prime, the only non-isomorphic group is  $Z_{3}$ .
+$n = 4$ : By Lemma 5.1, there are two non-isomorphic groups:  $Z_{4}$  and  $Z_{8}^{*}$ .
+$n = 5$ : Since 5 is prime, the only non-isomorphic group is  $Z_{5}$ .
+$n = 6$ : There are two non-isomorphic groups:  $Z_{6}$  and the non-abelian group  $S_{3}$ .
+$n = 7$ : Since 7 is prime, the only non-isomorphic group is  $Z_{7}$ .
 $n = 8$ : There are three abelian groups,  $Z_{8}$ ,  $Z_{15}^{*}$ , and  $Z_{24}^{*}$  and two non-abelian groups,  $D_{4}$  and  $Q$ .
 
 Table 5.4 gives of the number of non-isomorphic groups of order  $n$ , when  $n$  is not prime.
 
 The symmetry group of the square,  $D_4$ , can be generalized to produce the symmetry group of the  $n$ -gon, for  $n \geq 3$ , denoted by  $D_n$ . This will be a non-abelian group of order  $2n$ . We can let  $a$  denote the clockwise rotation by
 
-TABLE 5.4: Groups of order  $n$  
+TABLE 5.4: Groups of order  $n$
 
 <table><tr><td>n</td><td>groups</td><td>n</td><td>groups</td><td>n</td><td>groups</td><td>n</td><td>groups</td><td>n</td><td>groups</td></tr><tr><td>4</td><td>2</td><td>26</td><td>2</td><td>46</td><td>2</td><td>65</td><td>1</td><td>85</td><td>1</td></tr><tr><td>6</td><td>2</td><td>27</td><td>5</td><td>48</td><td>52</td><td>66</td><td>4</td><td>86</td><td>2</td></tr><tr><td>8</td><td>5</td><td>28</td><td>4</td><td>49</td><td>2</td><td>68</td><td>5</td><td>87</td><td>1</td></tr><tr><td>9</td><td>2</td><td>30</td><td>4</td><td>50</td><td>5</td><td>69</td><td>1</td><td>88</td><td>12</td></tr><tr><td>10</td><td>2</td><td>32</td><td>51</td><td>51</td><td>1</td><td>70</td><td>4</td><td>90</td><td>10</td></tr><tr><td>12</td><td>5</td><td>33</td><td>1</td><td>52</td><td>5</td><td>72</td><td>50</td><td>91</td><td>1</td></tr><tr><td>14</td><td>2</td><td>34</td><td>2</td><td>54</td><td>15</td><td>74</td><td>2</td><td>92</td><td>4</td></tr><tr><td>15</td><td>1</td><td>35</td><td>1</td><td>55</td><td>2</td><td>75</td><td>3</td><td>93</td><td>2</td></tr><tr><td>16</td><td>14</td><td>36</td><td>14</td><td>56</td><td>13</td><td>76</td><td>4</td><td>94</td><td>2</td></tr><tr><td>18</td><td>5</td><td>38</td><td>2</td><td>57</td><td>2</td><td>77</td><td>1</td><td>95</td><td>1</td></tr><tr><td>20</td><td>5</td><td>39</td><td>2</td><td>58</td><td>2</td><td>78</td><td>6</td><td>96</td><td>230</td></tr><tr><td>21</td><td>2</td><td>40</td><td>14</td><td>60</td><td>13</td><td>80</td><td>52</td><td>98</td><td>5</td></tr><tr><td>22</td><td>2</td><td>42</td><td>6</td><td>62</td><td>2</td><td>81</td><td>15</td><td>99</td><td>2</td></tr><tr><td>24</td><td>15</td><td>44</td><td>4</td><td>63</td><td>4</td><td>82</td><td>2</td><td>100</td><td>16</td></tr><tr><td>25</td><td>2</td><td>45</td><td>2</td><td>64</td><td>267</td><td>84</td><td>15</td><td>102</td><td>4</td></tr></table>
 
@@ -6157,37 +6157,37 @@ $360 / n$  degrees, so that  $a^n = e$ . We can then let  $b$  denote a reflecti
 The commands
 
 ```julia
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^n, e)  
-Define(b^2, e)  
-Define(b*a, a^-1*b)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^n, e)
+Define(b^2, e)
+Define(b*a, a^-1*b)
 Dn = Group(a, b)
 ```
 
 define the group  $D_{n}$ . The symbol  $n$  must be replaced with an integer before executing these commands. When  $n = 3$ , we get a non-abelian group of order 6, so  $D_{3} \approx S_{3}$ . We have just introduced  $D_{4}$ , and when  $n = 5$ , we get a non-abelian group of order 10, given by the following commands.
 
 ```julia
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^5, e)  
-Define(b^2, e)  
-Define(b*a, a^-1*b)  
-D5 = Group(a, b)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^5, e)
+Define(b^2, e)
+Define(b*a, a^-1*b)
+D5 = Group(a, b)
 CayleyTable(D5)
 ```
 
 The resulting table is shown in Table 5.5.
 
-TABLE 5.5: Multiplication table for  ${D}_{5}$  
+TABLE 5.5: Multiplication table for  ${D}_{5}$
 
 <table><tr><td>·</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>a4</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td><td>a4·b</td></tr><tr><td>e</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>a4</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td><td>a4·b</td></tr><tr><td>a</td><td>a</td><td>a2</td><td>a3</td><td>a4</td><td>e</td><td>a·b</td><td>a2·b</td><td>a3·b</td><td>a4·b</td><td>b</td></tr><tr><td>a2</td><td>a2</td><td>a3</td><td>a4</td><td>e</td><td>a</td><td>a2·b</td><td>a3·b</td><td>a4·b</td><td>b</td><td>a·b</td></tr><tr><td>a3</td><td>a3</td><td>a4</td><td>e</td><td>a</td><td>a2</td><td>a3·b</td><td>a4·b</td><td>b</td><td>a·b</td><td>a2·b</td></tr><tr><td>a4</td><td>a4</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>a4·b</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td></tr><tr><td>b</td><td>b</td><td>a4·b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>e</td><td>a4</td><td>a3</td><td>a2</td><td>a</td></tr><tr><td>a·b</td><td>a·b</td><td>b</td><td>a4·b</td><td>a3·b</td><td>a2·b</td><td>a</td><td>e</td><td>a4</td><td>a3</td><td>a2</td></tr><tr><td>a2·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a4·b</td><td>a3·b</td><td>a2</td><td>a</td><td>e</td><td>a4</td><td>a3</td></tr><tr><td>a3·b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a4·b</td><td>a3</td><td>a2</td><td>a</td><td>e</td><td>a4</td></tr><tr><td>a4·b</td><td>a4·b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a4</td><td>a3</td><td>a2</td><td>a</td><td>e</td></tr></table>
 
 # Problems for §5.1
 
-1 Prove that if  $f$  is a surjective isomorphism from a group  $G$  to a group  $M$ , then  $f^{-1}$  is a surjective isomorphism from  $M$  to  $G$ .  
-2 If  $G_{1}$ ,  $G_{2}$ , and  $G_{3}$  are three groups, and  $f$  is an isomorphism from  $G_{1}$  to  $G_{2}$ , and  $\phi$  is an isomorphism from  $G_{2}$  to  $G_{3}$ , prove that  $\phi(f(x))$  is an isomorphism from  $G_{1}$  to  $G_{3}$ .  
-3 Find an isomorphism between  $D_{3}$  (Terry's group) and  $S_{3}$ .  
+1 Prove that if  $f$  is a surjective isomorphism from a group  $G$  to a group  $M$ , then  $f^{-1}$  is a surjective isomorphism from  $M$  to  $G$ .
+2 If  $G_{1}$ ,  $G_{2}$ , and  $G_{3}$  are three groups, and  $f$  is an isomorphism from  $G_{1}$  to  $G_{2}$ , and  $\phi$  is an isomorphism from  $G_{2}$  to  $G_{3}$ , prove that  $\phi(f(x))$  is an isomorphism from  $G_{1}$  to  $G_{3}$ .
+3 Find an isomorphism between  $D_{3}$  (Terry's group) and  $S_{3}$ .
 4 Find an isomorphism between the group consisting of the four complex numbers
 
 $$
@@ -6340,11 +6340,11 @@ Let us create a homomorphism from the octahedral group to the quaternion group.
 
 We first load the octahedral group with the following commands:
 
-InitGroup("e")  
-AddGroupVar("a", "b", "c")  
-Define(a^2, e); Define(b^3, e); Define(c^2, e)  
-Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)  
-Oct = Group(); Oct  
+InitGroup("e")
+AddGroupVar("a", "b", "c")
+Define(a^2, e); Define(b^3, e); Define(c^2, e)
+Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)
+Oct = Group(); Oct
 {e, a, b, a*b, b^2, a*b^2, c, a*c, b*c, a*b*c, b^2*c, a*b^2*c, c^2, a*c^2, b*c^2, a*b*c^2, b^2*c^2, a*b^2*c^2, c^3, a*c^3, b*c^3, a*b*c^3, b^2*c^3, a*b^2*c^3}
 
 Next let us define the quaternion group  $Q$  from the last section. The easiest way to load this group is with the command
@@ -6399,7 +6399,7 @@ Image(F, [1, i, -1, -i])
 
 {e，c^2}
 
-![](images/7021e525b951dba164adb49e4c52bf54bf4bf8eb3e14bd8fcf1a9b45124a9253.jpg)  
+![](images/7021e525b951dba164adb49e4c52bf54bf4bf8eb3e14bd8fcf1a9b45124a9253.jpg)
 FIGURE 5.1: Diagram of the homomorphism  $F$
 
 The last example, we see the image of a subgroup of  $Q$  being a subgroup of the octahedral group. It is not hard to prove that this will be the case in general.
@@ -6550,26 +6550,26 @@ We are now in a position to show how homomorphisms can be used to reveal relatio
 
 # Problems for §5.2
 
-1 If  $\phi$  is a homomorphism from a abelian group  $G$  to a group  $M$ , show that  $\operatorname{Im}(\phi)$  is abelian.  
-2 If  $\phi$  is a homomorphism from a cyclic group  $G$  to a group  $M$ , show that  $\operatorname{Im}(\phi)$  is a cyclic group.  
-3 Let  $\mathbb{Z}$  be the group of integers using addition. Show that the function  $\phi(x) = 2x$  is a homomorphism from  $\mathbb{Z}$  to itself. What is the image of this homomorphism? What is the kernel?  
-4 Let  $\mathbb{Z}$  be the group of integers using addition. Show that the function  $\phi(x) = -x$  is a homomorphism from  $\mathbb{Z}$  to itself. Show that this mapping is in fact one-to-one and onto.  
-5 Let  $\mathbb{Z}$  be the group of integers using addition. Show that the function  $\phi(x) = x + 3$  is not a homomorphism from  $\mathbb{Z}$  to itself.  
-6 Let  $\mathbb{R}^*$  denote the group of nonzero real numbers, using multiplication as the operation. Let  $\phi(x) = x^6$ . Show that  $\phi$  is a homomorphism from  $\mathbb{R}^*$  to  $\mathbb{R}^*$ . What is the kernel of this homomorphism? What is the image of the homomorphism?  
-7 Let  $\mathbb{R}^*$  denote the group of nonzero real numbers, using multiplication as the operation. Let  $\phi(x) = 2x$ . Show that  $\phi$  is not a homomorphism from  $\mathbb{R}^*$  to  $\mathbb{R}^*$ .  
+1 If  $\phi$  is a homomorphism from a abelian group  $G$  to a group  $M$ , show that  $\operatorname{Im}(\phi)$  is abelian.
+2 If  $\phi$  is a homomorphism from a cyclic group  $G$  to a group  $M$ , show that  $\operatorname{Im}(\phi)$  is a cyclic group.
+3 Let  $\mathbb{Z}$  be the group of integers using addition. Show that the function  $\phi(x) = 2x$  is a homomorphism from  $\mathbb{Z}$  to itself. What is the image of this homomorphism? What is the kernel?
+4 Let  $\mathbb{Z}$  be the group of integers using addition. Show that the function  $\phi(x) = -x$  is a homomorphism from  $\mathbb{Z}$  to itself. Show that this mapping is in fact one-to-one and onto.
+5 Let  $\mathbb{Z}$  be the group of integers using addition. Show that the function  $\phi(x) = x + 3$  is not a homomorphism from  $\mathbb{Z}$  to itself.
+6 Let  $\mathbb{R}^*$  denote the group of nonzero real numbers, using multiplication as the operation. Let  $\phi(x) = x^6$ . Show that  $\phi$  is a homomorphism from  $\mathbb{R}^*$  to  $\mathbb{R}^*$ . What is the kernel of this homomorphism? What is the image of the homomorphism?
+7 Let  $\mathbb{R}^*$  denote the group of nonzero real numbers, using multiplication as the operation. Let  $\phi(x) = 2x$ . Show that  $\phi$  is not a homomorphism from  $\mathbb{R}^*$  to  $\mathbb{R}^*$ .
 8 Let  $\mathbb{R}^*$  denote the group of nonzero real numbers, using multiplication as the operation. Recall that  $\mathbb{R}$  is the group of real numbers using addition
 
 for the operation. Let  $\phi(x) = \ln |x|$ . Show that  $\phi$  is a homomorphism from  $\mathbb{R}^*$  to  $\mathbb{R}$ . What is the kernel of this homomorphism?
 
-9 Let  $\mathbb{R}^*$  denote the group of nonzero real numbers, using multiplication as the operation. Recall that  $\mathbb{R}$  is the group of real numbers using addition for the operation. Let  $\phi(x) = e^x$ . Show that  $\phi$  is a homomorphism from  $\mathbb{R}$  to  $\mathbb{R}^*$ . What is the image of this homomorphism?  
-10 Let  $\mathbb{R}[t]$  denote the group of all polynomials in  $t$  with real coefficients under addition, and let  $\phi$  denote the mapping  $\phi(f) = f'$ , which sends each polynomial to its derivative. Show that  $\phi$  is a homomorphism from  $\mathbb{R}[t]$  to  $\mathbb{R}[t]$ . What is the kernel of  $\phi$ ?  
-11 Let  $\mathbb{R}[t]$  denote the group of all polynomials in  $t$  with real coefficients under addition. Prove that the mapping from  $\mathbb{R}[t]$  into  $\mathbb{R}$  given by  $f(t)\rightarrow f(3)$  is a homomorphism. Give a description of the kernel of this homomorphism.  
-12 Find a homomorphism  $\phi$  from  $Z_{15}^{*}$  to  $Z_{15}^{*}$  with kernel  $\{1,11\}$  and with  $\phi(2) = 7$ .  
-13 Find a homomorphism  $\phi$  from  $Z_{30}^{*}$  to  $Z_{30}^{*}$  with kernel  $\{1,11\}$  and with  $\phi(7) = 13$ .  
-14 Find a homomorphism  $\phi$  from  $Z_{32}^{*}$  to  $Z_{32}^{*}$  with  $\phi(7) = 1$  and  $\phi(11) = 9$ .  
-15 Find a homomorphism from the quaternion group  $Q$  onto  $Z_{8}^{*}$ . Hint: The kernel must be a normal subgroup of order 2. See Table 5.3 for a Cayley table of  $Q$ .  
-16 Let  $k$  be a divisor of  $n$ . Show that the mapping  $\phi(x) = x \bmod k$  is a homomorphism from  $Z_{n}^{*}$  to  $Z_{k}^{*}$ . Find a formula for the number of elements in the kernel.  
-17 Let  $f: G \to M$  be a homomorphism from a finite group  $G$  onto  $M$ , and  $H$  be a subgroup of  $M$ . Let  $f^{-1}(H)$  be the subgroup from Corollary 5.2. Show that the size of this subgroup is  $|H| \cdot |\mathrm{Ker}f|$ .  
+9 Let  $\mathbb{R}^*$  denote the group of nonzero real numbers, using multiplication as the operation. Recall that  $\mathbb{R}$  is the group of real numbers using addition for the operation. Let  $\phi(x) = e^x$ . Show that  $\phi$  is a homomorphism from  $\mathbb{R}$  to  $\mathbb{R}^*$ . What is the image of this homomorphism?
+10 Let  $\mathbb{R}[t]$  denote the group of all polynomials in  $t$  with real coefficients under addition, and let  $\phi$  denote the mapping  $\phi(f) = f'$ , which sends each polynomial to its derivative. Show that  $\phi$  is a homomorphism from  $\mathbb{R}[t]$  to  $\mathbb{R}[t]$ . What is the kernel of  $\phi$ ?
+11 Let  $\mathbb{R}[t]$  denote the group of all polynomials in  $t$  with real coefficients under addition. Prove that the mapping from  $\mathbb{R}[t]$  into  $\mathbb{R}$  given by  $f(t)\rightarrow f(3)$  is a homomorphism. Give a description of the kernel of this homomorphism.
+12 Find a homomorphism  $\phi$  from  $Z_{15}^{*}$  to  $Z_{15}^{*}$  with kernel  $\{1,11\}$  and with  $\phi(2) = 7$ .
+13 Find a homomorphism  $\phi$  from  $Z_{30}^{*}$  to  $Z_{30}^{*}$  with kernel  $\{1,11\}$  and with  $\phi(7) = 13$ .
+14 Find a homomorphism  $\phi$  from  $Z_{32}^{*}$  to  $Z_{32}^{*}$  with  $\phi(7) = 1$  and  $\phi(11) = 9$ .
+15 Find a homomorphism from the quaternion group  $Q$  onto  $Z_{8}^{*}$ . Hint: The kernel must be a normal subgroup of order 2. See Table 5.3 for a Cayley table of  $Q$ .
+16 Let  $k$  be a divisor of  $n$ . Show that the mapping  $\phi(x) = x \bmod k$  is a homomorphism from  $Z_{n}^{*}$  to  $Z_{k}^{*}$ . Find a formula for the number of elements in the kernel.
+17 Let  $f: G \to M$  be a homomorphism from a finite group  $G$  onto  $M$ , and  $H$  be a subgroup of  $M$ . Let  $f^{-1}(H)$  be the subgroup from Corollary 5.2. Show that the size of this subgroup is  $|H| \cdot |\mathrm{Ker}f|$ .
 18 Let  $f: G \to M$  be a homomorphism from  $G$  onto  $M$ , and let  $H$  be a normal subgroup of  $G$ . Prove that  $f(H)$  is a normal subgroup of  $M$ .
 
 # Interactive Problems
@@ -6583,10 +6583,10 @@ $$
 and then define the group  $S_3$ , using **Stay** as the identity element. (Otherwise, InitGroup would clear Terry's group.)
 
 ```txt
-AddGroupVar("a", "b")  
-Define(a^2, Stay)  
-Define(b^3, Stay)  
-Define(b*a, a*b^2)  
+AddGroupVar("a", "b")
+Define(a^2, Stay)
+Define(b^3, Stay)
+Define(b*a, a*b^2)
 S3 = Group()
 ```
 
@@ -6595,11 +6595,11 @@ Now define an isomorphism  $F$  from  $S_{3}$  to Terry's group. Use SageMath's 
 20 Use SageMath to find all of the homomorphisms from  $S_{3}$  to itself. Label these homomorphisms  $F1, F2, F3$ , etc. How many of these are isomorphisms? The following reloads  $S_{3}$  into SageMath:
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^2, e)  
-Define(b^3, e)  
-Define(b*a, a*b^2)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^2, e)
+Define(b^3, e)
+Define(b*a, a*b^2)
 S3 = Group()
 ```
 
@@ -6675,7 +6675,7 @@ $$
 
 given by  $i_N(a) = a \cdot N$ . This homomorphism is surjective, and  $\operatorname{Ker}(i_N) = N$ .
 
-![](images/abe7697aaa567aaed45c30177709965629acf7271da4df7263a1f08cd81bd0a2.jpg)  
+![](images/abe7697aaa567aaed45c30177709965629acf7271da4df7263a1f08cd81bd0a2.jpg)
 FIGURE 5.2: Commuting diagram for first isomorphism theorem
 
 Proof: To show that  $i_N$  is a homomorphism, we note that if  $a$  and  $b$  are elements of  $G$ , then
@@ -6705,16 +6705,16 @@ We observed in §4.3 that the product of two subgroups  $H$  and  $K$  was not n
 Explore the product of two subgroups of order 4, one of which is normal, of the octahedral group.
 
 ```autohotkey
-InitGroup("e")  
-AddGroupVar("a", "b", "c")  
-Define(a^2, e); Define(b^3, e); Define(c^2, e)  
-Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)  
-G = Group()  
-M = Group(a*b^2*c, c^2)  
-{e, a*b^2*c, c^2, a*b^2*c^3}  
-H = Group(c); H  
-{e, c^2, c, c^3}  
-H * M  
+InitGroup("e")
+AddGroupVar("a", "b", "c")
+Define(a^2, e); Define(b^3, e); Define(c^2, e)
+Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)
+G = Group()
+M = Group(a*b^2*c, c^2)
+{e, a*b^2*c, c^2, a*b^2*c^3}
+H = Group(c); H
+{e, c^2, c, c^3}
+H * M
 {e, a*b^2, c, a*b^2*c, c^2, a*b^2*c^2, c^3, a*b^2*c^3}
 ```
 
@@ -6770,8 +6770,8 @@ By a similar argument  $N \cdot H \subseteq H \cdot N$ , so  $H \cdot N = N \cdo
 
 Since we have found a new subgroup of  $G$  which contains the normal subgroup  $M$ , the natural question is whether it is a normal subgroup. We can try to find the left and right cosets of  $H \cdot M$  from the example.
 
-LftCoset(G,H  $\star$  M)  
-RtCoset(G,H  $\star$  M)  
+LftCoset(G,H  $\star$  M)
+RtCoset(G,H  $\star$  M)
 ```txt
 $\{\{e,a*b^{\wedge}2,c,a*b^{\wedge}2*c,c^{\wedge}2,a*b^{\wedge}2*c^{\wedge}2,c^{\wedge}3,a*b^{\wedge}2*c^{\wedge}3\}$ $\{a,b^{\wedge}2,a*c,b^{\wedge}2*c,a*c^{\wedge}2,b^{\wedge}2*c^{\wedge}2,a*c^{\wedge}3,b^{\wedge}2*c^{\wedge}3\}$ $\{b,a*b,b*c,a*b*c,b*c^{\wedge}2,a*b*c^{\wedge}2,b*c^{\wedge}3,a*b*c^{\wedge}3\}\}$
 ```
@@ -6784,7 +6784,7 @@ We see that these are not the same, so in general,  $H \cdot N$  is not a normal
 
 But would  $M$  be a normal subgroup of  $H\cdot M?$
 
-LftCoset  $(\mathbf{H}\star \mathbf{M},\mathbf{M})$  
+LftCoset  $(\mathbf{H}\star \mathbf{M},\mathbf{M})$
 ```txt
 $\{\{e,a*b^{\wedge}2*c,c^{\wedge}2,a*b^{\wedge}2*c^{\wedge}3\}$  ，  $\{a*b^{\wedge}2,c,a*b^{\wedge}2*c^{\wedge}2,c^{\wedge}3\}\}$  RtCoset  $(H\star M,M)$ $\{\{e,a*b^{\wedge}2*c,c^{\wedge}2,a*b^{\wedge}2*c^{\wedge}3\}$  ，  $\{a*b^{\wedge}2,c,a*b^{\wedge}2*c^{\wedge}2,c^{\wedge}3\}\}$
 ```
@@ -6857,7 +6857,7 @@ $$
 H / (H \cap N) \approx (H \cdot N) / N.
 $$
 
-![](images/b27f2c59f3ce5104fab9e7ac03c944a9b75de5c71760327288394b6cf9a9587e.jpg)  
+![](images/b27f2c59f3ce5104fab9e7ac03c944a9b75de5c71760327288394b6cf9a9587e.jpg)
 FIGURE 5.3: Commuting diagram for second isomorphism theorem
 
 PROOF: By Lemma 5.3,  $H \cdot N$  is a subgroup, and by Lemma 5.4,  $N$  is a normal subgroup of  $H \cdot N$ . Also, by Lemma 5.5,  $H \cap N$  is a normal subgroup of  $H$ , and so both of the quotient groups are defined.
@@ -6947,10 +6947,10 @@ On the other hand, if  $h_1 \cdot (H \cap K) = h_2 \cdot (H \cap K)$ , then  $h_
 If we consider a group with two normal subgroups, one of which is a subgroup of the other, we begin to see more patterns. Let us reload the octahedral group, and look at two normal subgroups.
 
 ```autohotkey
-InitGroup("e")  
-AddGroupVar("a", "b", "c")  
-Define(a^2, e); Define(b^3, e); Define(c^2, e)  
-Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)  
+InitGroup("e")
+AddGroupVar("a", "b", "c")
+Define(a^2, e); Define(b^3, e); Define(c^2, e)
+Define(b*a, a*b^2); Define(c*a, a*b*c); Define(c*b, a*c^2)
 G = Group()
 ```
 
@@ -7058,7 +7058,7 @@ $$
 
 ![](images/be93f80d23dd38a02dce53e223630f4816a8aa4f5aa23fce76104f69b7c16481.jpg)
 
-![](images/49ca6aa0678f3708accb8e0a73595c7f3254329e8e26387a0671b2717874ff7c.jpg)  
+![](images/49ca6aa0678f3708accb8e0a73595c7f3254329e8e26387a0671b2717874ff7c.jpg)
 FIGURE 5.4: Commuting diagram for third isomorphism theorem
 
 We can describe the third isomorphism theorem visually by the diagram in Figure 5.4. Since  $H$  is the kernel of the composition homomorphism
@@ -7093,15 +7093,15 @@ For Problems 1 through 8: Find, up to isomorphism, the possible homomorphic imag
 
 9 Prove that the homomorphic image of a cyclic group is cyclic.
 
-10 Find all of the homomorphisms from  $Z_{4}$  to  $Z_{8}^{*}$ .  
-11 Find all of the homomorphisms from  $Z_8^*$  to  $S_{3}$ .  
-12 Prove that there can be no nontrivial homomorphisms from  $S_{3}$  to  $Z_{3}$ . Hint: What are the normal subgroups of  $S_{3}$ ?  
-13 Suppose that there is a homomorphism from a finite group  $G$  onto  $Z_6$ . Prove that there are normal subgroups of  $G$  with index 2 and 3.  
-14 Let  $X, Y$ , and  $Z$  be three subgroups of a finite group  $G$ , with  $Y$  normal. Use Proposition 5.9 to find a formula for the number of elements in  $X \cdot Y \cdot Z$ .  
-15 Suppose that  $H$  and  $K$  are distinct subgroups of  $G$  of index 2. Prove that  $H \cap K$  is a normal subgroup of  $G$  of index 4 and that  $G / (H \cap K) \approx Z_8^*$ . Hint: Use the second isomorphism theorem.  
-16 Demonstrate the second isomorphism theorem using the subgroups  $H = \{1, 2, 4, 8\}$  and  $N = \{1, 4, 7, 13\}$  of  $Z_{15}^{*}$ .  
-17 Demonstrate the third isomorphism theorem using the subgroups  $\{e, a^2\}$  and  $\{e, a, a^2, a^3\}$  from  $D_4$ .  
-18 Demonstrate the third isomorphism theorem using the subgroups  $\{1,4\}$  and  $\{1,2,4,8\}$  from  $Z_{15}^{*}$ .  
+10 Find all of the homomorphisms from  $Z_{4}$  to  $Z_{8}^{*}$ .
+11 Find all of the homomorphisms from  $Z_8^*$  to  $S_{3}$ .
+12 Prove that there can be no nontrivial homomorphisms from  $S_{3}$  to  $Z_{3}$ . Hint: What are the normal subgroups of  $S_{3}$ ?
+13 Suppose that there is a homomorphism from a finite group  $G$  onto  $Z_6$ . Prove that there are normal subgroups of  $G$  with index 2 and 3.
+14 Let  $X, Y$ , and  $Z$  be three subgroups of a finite group  $G$ , with  $Y$  normal. Use Proposition 5.9 to find a formula for the number of elements in  $X \cdot Y \cdot Z$ .
+15 Suppose that  $H$  and  $K$  are distinct subgroups of  $G$  of index 2. Prove that  $H \cap K$  is a normal subgroup of  $G$  of index 4 and that  $G / (H \cap K) \approx Z_8^*$ . Hint: Use the second isomorphism theorem.
+16 Demonstrate the second isomorphism theorem using the subgroups  $H = \{1, 2, 4, 8\}$  and  $N = \{1, 4, 7, 13\}$  of  $Z_{15}^{*}$ .
+17 Demonstrate the third isomorphism theorem using the subgroups  $\{e, a^2\}$  and  $\{e, a, a^2, a^3\}$  from  $D_4$ .
+18 Demonstrate the third isomorphism theorem using the subgroups  $\{1,4\}$  and  $\{1,2,4,8\}$  from  $Z_{15}^{*}$ .
 19 Prove or disprove: If  $H$  and  $N$  are two normal subgroups of  $G$ , with  $N$  a subgroup of  $H$ , then
 
 $$
@@ -7253,8 +7253,8 @@ This product is denoted by  $n!$ , read as "  $n$  factorial." Table 6.1 gives a
 Both  $S_4$  and the octahedral group have 24 elements, so we could ask if these two groups are isomorphic. The octahedral group can be reloaded by the commands
 
 ```autoit
-InitGroup("e")  
-AddGroupVar("a", "b", "c")  
+InitGroup("e")
+AddGroupVar("a", "b", "c")
 Define(a^2, e); Define(b^3, e); Define(c^2, e)
 ```
 
@@ -7265,9 +7265,9 @@ Define  $(\mathtt{b}*\mathtt{a},\mathtt{a}*\mathtt{b}^{\wedge}2)$  ; Define  $(c
 Let us begin by defining a homomorphism from the subgroup generated by  $a$  and  $b$  to  $S_{3}$ , since we know that this is an isomorphism.
 
 ```txt
-$\mathbf{F} =$  Homomorph (Oct, S4)  
-HomoDef(F, a, P(2,1))  
-HomoDef(F, b, P(2,3,1))  
+$\mathbf{F} =$  Homomorph (Oct, S4)
+HomoDef(F, a, P(2,1))
+HomoDef(F, b, P(2,3,1))
 FinishHomo(F)
 ```
 
@@ -7276,7 +7276,7 @@ FinishHomo(F)
 This shows that so far, the homomorphism is consistent. To finish this homomorphism we only need to define  $F(c)$ . Since  $c$  must map to an element of order 4, there are six possibilities. (See Problem 10.) A little trial and error finds the right combination.
 
 ```txt
-HomoDef(F, c, P(2,3,4,1))  
+HomoDef(F, c, P(2,3,4,1))
 FinishHomo(F)
 ```
 
@@ -7306,7 +7306,7 @@ CircleGraph([1,2,3,4,5], P(5,4,1,2,3), P(4,3,5,1,2))
 
 produces the circle graph on the right of Figure 6.1. Here, the solid arrows represent the permutation  $P(5,4,1,2,3)$ , while the dotted arrows represent  $P(4,3,5,1,2)$ . If one imagines a permutation formed by traveling first through a dotted arrow, and then through a solid arrow, one obtains the permutation
 
-![](images/8ccf525514a26228340004ef3e2622e99000674c4e019a34ed34c712273daeb0.jpg)  
+![](images/8ccf525514a26228340004ef3e2622e99000674c4e019a34ed34c712273daeb0.jpg)
 FIGURE 6.1: Circle graphs of permutations
 
 ![](images/1a11f00a16669013bb77edd7e85cf2615cc02a3c82f004a77a3ce88bde59ccfd.jpg)
@@ -7337,14 +7337,14 @@ showing that  $f(2) = 4$ . In spite of the simplicity of the notations for a per
 
 For Problems 1 through 8: Compute the following permutation products
 
-1  $\left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 3 & 5 & 1 & 4 & 2 \end{array} \right)\cdot \left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 2 & 5 & 4 & 1 & 3 \end{array} \right).$  
-2  $\left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 2 & 5 & 4 & 3 & 1 \end{array} \right)\cdot \left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 3 & 4 & 1 & 5 & 2 \end{array} \right).$  
-3  $\left( \begin{array}{ccccccc}1 & 2 & 3 & 4 & 5 & 6\\ 3 & 2 & 4 & 6 & 1 & 5 \end{array} \right)\cdot \left( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 6 & 2 & 5 & 3 & 4 & 1 \end{array} \right).$  
-4  $\left( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 2 & 1 & 6 & 3 & 5 & 4 \end{array} \right)\cdot \left( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 6 & 4 & 1 & 3 & 2 & 5 \end{array} \right).$  
-5  $\left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 3 & 6 & 2 & 7 & 1 & 4 & 5 \end{array} \right)\cdot \left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 6 & 3 & 7 & 2 & 1 & 4 & 5 \end{array} \right).$  
-6  $\left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 6 & 5 & 7 & 2 & 3 & 1 & 4 \end{array} \right)\cdot \left( \begin{array}{ccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 3 & 6 & 2 & 7 & 4 & 1 & 5 \end{array} \right).$  
-7  $\left( \begin{array}{ccccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 6 & 3 & 8 & 2 & 4 & 7 & 5 & 1 \end{array} \right)\cdot \left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 2 & 7 & 5 & 3 & 8 & 1 & 4 & 6 \end{array} \right).$  
-8  $\left( \begin{array}{ccccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 4 & 7 & 3 & 1 & 8 & 2 & 5 & 6 \end{array} \right)\cdot \left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 8 & 3 & 7 & 4 & 1 & 6 & 5 & 2 \end{array} \right).$  
+1  $\left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 3 & 5 & 1 & 4 & 2 \end{array} \right)\cdot \left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 2 & 5 & 4 & 1 & 3 \end{array} \right).$
+2  $\left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 2 & 5 & 4 & 3 & 1 \end{array} \right)\cdot \left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 3 & 4 & 1 & 5 & 2 \end{array} \right).$
+3  $\left( \begin{array}{ccccccc}1 & 2 & 3 & 4 & 5 & 6\\ 3 & 2 & 4 & 6 & 1 & 5 \end{array} \right)\cdot \left( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 6 & 2 & 5 & 3 & 4 & 1 \end{array} \right).$
+4  $\left( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 2 & 1 & 6 & 3 & 5 & 4 \end{array} \right)\cdot \left( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 6 & 4 & 1 & 3 & 2 & 5 \end{array} \right).$
+5  $\left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 3 & 6 & 2 & 7 & 1 & 4 & 5 \end{array} \right)\cdot \left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 6 & 3 & 7 & 2 & 1 & 4 & 5 \end{array} \right).$
+6  $\left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 6 & 5 & 7 & 2 & 3 & 1 & 4 \end{array} \right)\cdot \left( \begin{array}{ccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 3 & 6 & 2 & 7 & 4 & 1 & 5 \end{array} \right).$
+7  $\left( \begin{array}{ccccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 6 & 3 & 8 & 2 & 4 & 7 & 5 & 1 \end{array} \right)\cdot \left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 2 & 7 & 5 & 3 & 8 & 1 & 4 & 6 \end{array} \right).$
+8  $\left( \begin{array}{ccccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 4 & 7 & 3 & 1 & 8 & 2 & 5 & 6 \end{array} \right)\cdot \left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 8 & 3 & 7 & 4 & 1 & 6 & 5 & 2 \end{array} \right).$
 9 Form a Cayley table of  $S_{3}$  using the permutation notation for the elements. That is, use the elements
 
 $$
@@ -7355,9 +7355,9 @@ $$
 
 Hint: All four of the numbers must move.
 
-11 Find the eight elements of  $S_4$  that are of order 3.  
-Hint: One number must map to itself.  
-12 Find the nine elements of  $S_4$  that are of order 2.  
+11 Find the eight elements of  $S_4$  that are of order 3.
+Hint: One number must map to itself.
+12 Find the nine elements of  $S_4$  that are of order 2.
 13 Find a nontrivial element of  $S_{5}$  that commutes with the permutation
 
 $$
@@ -7418,7 +7418,7 @@ $$
 1 \rightarrow 2 \rightarrow 4 \rightarrow 6 \rightarrow 3 \rightarrow 1,
 $$
 
-![](images/2e366c6bc681aa17d1d210bbadf317687caed8f5b5433375ba0745aede531d24.jpg)  
+![](images/2e366c6bc681aa17d1d210bbadf317687caed8f5b5433375ba0745aede531d24.jpg)
 FIGURE 6.2: Circle graph of a cycle
 
 if we stipulate that all numbers that are not mentioned in the chain map to themselves.
@@ -7618,9 +7618,9 @@ being an odd number. But then we would have three sets of transpositions, totali
 We can compute the signature function on both permutations and products of cycles, using the Signature command.
 
 ```matlab
-Signature(P(4,3,5,1,2))  
--1  
-Signature(C(1,4,2,7)*C(6,7,3))  
+Signature(P(4,3,5,1,2))
+-1
+Signature(C(1,4,2,7)*C(6,7,3))
 -1
 ```
 
@@ -7708,7 +7708,7 @@ $$
 (1 2 5) (3 4) \quad \text {a n d} \quad (1 2 5) (3 4 6 7).
 $$
 
-7 Prove that the order of a permutation written in disjoint cycles is the least common multiple of the orders of the cycles.  
+7 Prove that the order of a permutation written in disjoint cycles is the least common multiple of the orders of the cycles.
 8 Find an element of  $A_8$  that has order 15.
 
 Hint: See Problem 7.
@@ -7727,7 +7727,7 @@ even permutation or exactly half of them are even.
 
 Hint: Consider the second isomorphism theorem (5.2).
 
-12 How many elements of order 5 are there in  $S_6$ ?  
+12 How many elements of order 5 are there in  $S_6$ ?
 13 Find an element  $g$  in  $S_{5}$  such that  $g^{2} = (13425)$ .
 
 Hint: What order must  $g$  have? What power must we raise  $g^2$  to in order to reconstruct  $g$ ?
@@ -7768,7 +7768,7 @@ $$
 
 Predict the cycle structure of  $a^2$ ,  $a^3$ ,  $b^2$ ,  $b^3$ , and  $b^6$ . Check your answers with SageMath.
 
-20 Calculate  $a \cdot b$  from Problem 19. Predict the cycle structure of  $(a \cdot b)^2$ ,  $(a \cdot b)^3$ , and  $(a \cdot b)^4$ , and verify your predictions with SageMath.  
+20 Calculate  $a \cdot b$  from Problem 19. Predict the cycle structure of  $(a \cdot b)^2$ ,  $(a \cdot b)^3$ , and  $(a \cdot b)^4$ , and verify your predictions with SageMath.
 21 Calculate  $a \cdot b \cdot a^{-1}$  from Problem 19. Notice that it has the same cycle structure as  $b$ . Try this with other random permutations. Does  $a \cdot b \cdot a^{-1}$  always have the same cycle structure as  $b$ ? How do Problems 16 and 17 explain what is happening?
 
 # 6.3 Cayley's Theorem
@@ -7791,11 +7791,11 @@ which produce the two circle graphs in Figure 6.3.
 
 If we number the elements of  $Q$  from 1 to 8, starting with 1 and going clockwise around the circles of Figure 6.3, we find that the left circle graph mimics the permutation  $P(2,5,8,3,6,1,4,7) = (1256)(3874)$ , while the second graph is similar to the permutation  $P(2,5,4,7,6,1,8,3) = (1256)(3478)$ . If
 
-![](images/3481cd1b65a76c1fcda7eab4de9b499b71fcdd5e3f81e411190d2190983b3cd7.jpg)  
-CircleGraph(Q, LeftMult(i))  
+![](images/3481cd1b65a76c1fcda7eab4de9b499b71fcdd5e3f81e411190d2190983b3cd7.jpg)
+CircleGraph(Q, LeftMult(i))
 FIGURE 6.3: Circle graphs for multiplying by  $i$
 
-![](images/0c53eddd6420c2aeba14728d184871315973f06450e508b3e2d8fc453e5877b3.jpg)  
+![](images/0c53eddd6420c2aeba14728d184871315973f06450e508b3e2d8fc453e5877b3.jpg)
 CircleGraph(Q, RightMult(i))
 
 we used different elements of  $Q$  in place of the  $i$ , we would have a different set of permutations. Thus, we can define two functions,  $f(x)$  and  $\phi(x)$ , which map elements of  $Q$  to  $S_8$ . Table 6.2 shows both of these two functions.
@@ -7814,10 +7814,10 @@ $$
 \begin{array}{l} \mathbf {F} = \text {H o m o m o r p h} (\mathbf {Q}, \mathbf {T}) \\ \operatorname {H o m o D e f} (\mathbf {F}, \mathrm {i}, \mathrm {C} (1, 2, 5, 6) * \mathrm {C} (3, 8, 7, 4)) \\ \operatorname {H o m o D e f} (\mathbf {F}, \mathrm {j}, \mathrm {C} (1, 3, 5, 7) * \mathrm {C} (2, 4, 6, 8)) \\ \operatorname {H o m o D e f} (\mathbf {F}, \mathbf {k}, \mathbf {C} (1, 4, 5, 8) * \mathbf {C} (2, 7, 6, 3)) \\ F i n i s h H o m o (F) \\ \end{array}
 $$
 
-TABLE 6.2: Permutations for  $Q$  
+TABLE 6.2: Permutations for  $Q$
 
-<table><tr><td>x</td><td>f(x) 
-LeftMult(x)</td><td>φ(x) 
+<table><tr><td>x</td><td>f(x)
+LeftMult(x)</td><td>φ(x)
 RightMult(x)</td></tr><tr><td>1</td><td>()</td><td>()</td></tr><tr><td>i</td><td>(1256)(3874)</td><td>(1256)(3478)</td></tr><tr><td>j</td><td>(1357)(2468)</td><td>(1357)(2864)</td></tr><tr><td>k</td><td>(1458)(2763)</td><td>(1458)(2367)</td></tr><tr><td>-1</td><td>(15)(26)(37)(48)</td><td>(15)(26)(37)(48)</td></tr><tr><td>-i</td><td>(1652)(3478)</td><td>(1652)(3874)</td></tr><tr><td>-j</td><td>(1753)(2864)</td><td>(1753)(2468)</td></tr><tr><td>-k</td><td>(1854)(2367)</td><td>(1854)(2763)</td></tr></table>
 
 ```javascript
@@ -7827,12 +7827,12 @@ RightMult(x)</td></tr><tr><td>1</td><td>()</td><td>()</td></tr><tr><td>i</td><td
 So  $f$  must not be a homomorphism. Let us try seeing if  $\phi$  is a homomorphism.
 
 ```latex
-$\mathbf{T} = \mathrm{Group}(\mathbf{C}(1,2,5,6)*\mathbf{C}(3,4,7,8),\mathbf{C}(1,3,5,7)*\mathbf{C}(2,8,6,4))$    
-T  $\left\{\left( \begin{array}{lll}() & (1,6,5,2)(3,8,7,4) & (1,3,5,7)(2,8,6,4) \end{array} \right.\right.$ $(1,8,5,4)(2,7,6,3),(1,5)(2,6)(3,7)(4,8)$ $(1,2,5,6)(3,4,7,8),(1,7,5,3)(2,4,6,8)$ $(1,4,5,8)(2,3,6,7)\}$    
-phi  $=$  Homomorph(Q,T)   
-HomoDef(phi,i,C(1,2,5,6)*C(3,8,7,4))   
-HomoDef(phi,j,C(1,3,5,7)*C(2,4,6,8))   
-HomoDef(phi,k,C(1,4,5,8)*C(2,7,6,3))   
+$\mathbf{T} = \mathrm{Group}(\mathbf{C}(1,2,5,6)*\mathbf{C}(3,4,7,8),\mathbf{C}(1,3,5,7)*\mathbf{C}(2,8,6,4))$
+T  $\left\{\left( \begin{array}{lll}() & (1,6,5,2)(3,8,7,4) & (1,3,5,7)(2,8,6,4) \end{array} \right.\right.$ $(1,8,5,4)(2,7,6,3),(1,5)(2,6)(3,7)(4,8)$ $(1,2,5,6)(3,4,7,8),(1,7,5,3)(2,4,6,8)$ $(1,4,5,8)(2,3,6,7)\}$
+phi  $=$  Homomorph(Q,T)
+HomoDef(phi,i,C(1,2,5,6)*C(3,8,7,4))
+HomoDef(phi,j,C(1,3,5,7)*C(2,4,6,8))
+HomoDef(phi,k,C(1,4,5,8)*C(2,7,6,3))
 FinishHomo(phi) 'Homomorphism defined'
 ```
 
@@ -7907,12 +7907,12 @@ Although Cayley's theorem (6.2) shows that any finite group  $G$  is a subgroup 
 Consider the group  $D_4$ , whose Cayley table is given in Table 5.2.
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^4, e)  
-Define(b^2, e)  
-Define(b*a, a^3*b)  
-D4 = ListGroup(); D4  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^4, e)
+Define(b^2, e)
+Define(b*a, a^3*b)
+D4 = ListGroup(); D4
 {e, a, a^2, a^3, b, a*b, a^2*b, a^3*b}
 ```
 
@@ -7936,11 +7936,11 @@ L = LftCoset(D4, H); L
 
 If we multiply each coset to the right of a fixed element of the group, say  $a$  or  $a \cdot b$ , we get the circle graphs in Figure 6.4.
 
-![](images/a8f6cd8b83e86c338bac7430f303c4a734a93576f06e3e6190380fca951b2334.jpg)  
+![](images/a8f6cd8b83e86c338bac7430f303c4a734a93576f06e3e6190380fca951b2334.jpg)
 CircleGraph(L, RightMult(a))
 
-![](images/ed0563ae02609241624f384cf76845b58100d24fdb2974254f974992ebb3a920.jpg)  
-CircleGraph(L, RightMult(a\*b))  
+![](images/ed0563ae02609241624f384cf76845b58100d24fdb2974254f974992ebb3a920.jpg)
+CircleGraph(L, RightMult(a\*b))
 FIGURE 6.4: Circle graphs for multiplying cosets of  $D_4$
 
 We see that each coset is mapped to another coset, so once again we can treat each circle graph as a permutation. By numbering the cosets in the order that they appear in  $\mathbf{L}$ , we see that RightMult(a) acts as the permutation  $\mathbf{P}(2,3,4,1) = (1234)$ , whereas RightMult(b) acts as the permutation  $\mathbf{P}(1,4,3,2) = (24)$ . SageMath can check that this extends to a homomorphism.
@@ -8053,7 +8053,7 @@ In 1863, a new position was established at Cambridge University, the Sadleirian.
 
 ![](images/53fd0df7cde9c9467e9a6501f1dcd152074a8c3935d313e23f56d3c9aa9b1272.jpg)
 
-Cayley was elected to this position, and remained there the rest of his life.  
+Cayley was elected to this position, and remained there the rest of his life.
 Cayley played a major role to allow women to be admitted to Cambridge.
 
 Although matrices have been around since antiquity, Cayley is considered as the creator of matrix algebra, since he is the first to define the product of matrices. He showed that a square matrix satisfied its own characteristic equation, and made other huge developments in linear algebra.
@@ -8080,44 +8080,44 @@ $$
 
 A function with this property is called an anti-homomorphism.
 
-9 Show that if  $G$  is a group of order 35, and  $H$  is a subgroup of order 7, then  $H$  is normal.  
-Hint: Use Corollary 6.2.  
-10 Show that if  $G$  is a group of order 36, and  $H$  is a subgroup of order 9, then either  $H$  is normal, or  $H$  contains a subgroup of order 3 which is normal in  $G$ .  
-11 Show that if  $G$  is a group of order 200, and  $H$  is a subgroup of order 25, then either  $H$  is normal, or  $H$  contains a subgroup of order 5 which is normal in  $G$ .  
-12 Show that if  $G$  is a group of order 60, and  $H$  is a subgroup of order 15, then either  $H$  is normal, or  $H$  contains a subgroup of order 5 which is normal in  $G$ .  
-13 Show that if  $G$  is a group of order 189, and  $H$  is a subgroup of order 27, then either  $H$  is normal, or  $H$  contains a subgroup of order 3 or 9 which is normal in  $G$ .  
-14 Use Corollary 6.2 to show that if  $G$  is a group of order  $p \cdot m$ , where  $p$  is prime and  $p > m$ , then any subgroup of order  $p$  is normal.  
+9 Show that if  $G$  is a group of order 35, and  $H$  is a subgroup of order 7, then  $H$  is normal.
+Hint: Use Corollary 6.2.
+10 Show that if  $G$  is a group of order 36, and  $H$  is a subgroup of order 9, then either  $H$  is normal, or  $H$  contains a subgroup of order 3 which is normal in  $G$ .
+11 Show that if  $G$  is a group of order 200, and  $H$  is a subgroup of order 25, then either  $H$  is normal, or  $H$  contains a subgroup of order 5 which is normal in  $G$ .
+12 Show that if  $G$  is a group of order 60, and  $H$  is a subgroup of order 15, then either  $H$  is normal, or  $H$  contains a subgroup of order 5 which is normal in  $G$ .
+13 Show that if  $G$  is a group of order 189, and  $H$  is a subgroup of order 27, then either  $H$  is normal, or  $H$  contains a subgroup of order 3 or 9 which is normal in  $G$ .
+14 Use Corollary 6.2 to show that if  $G$  is a group of order  $p \cdot m$ , where  $p$  is prime and  $p > m$ , then any subgroup of order  $p$  is normal.
 15 Let  $G$  be a group, and  $H$  be a subgroup containing exactly  $1/3$  of the elements of  $G$ . Use Corollary 6.2 to show that either  $H$  is normal, or exactly half the elements of  $H$  form a normal subgroup of  $G$ .
 
-16 Suppose  $G$  is a finite group, and let  $p$  be the smallest prime that divides  $|G|$ . Show that a subgroup  $H$  with order  $|G| / p$  must be normal.  
-17 Suppose  $G$  has order  $p^2$ , where  $p$  is prime. Show that all subgroups are normal.  
-18 Show that in Cayley's theorem, the subgroup of  $S_{n}$  created is transitive in  $S_{n}$ . See Problem 15 from §6.2 for the definition of transitive.  
+16 Suppose  $G$  is a finite group, and let  $p$  be the smallest prime that divides  $|G|$ . Show that a subgroup  $H$  with order  $|G| / p$  must be normal.
+17 Suppose  $G$  has order  $p^2$ , where  $p$  is prime. Show that all subgroups are normal.
+18 Show that in Cayley's theorem, the subgroup of  $S_{n}$  created is transitive in  $S_{n}$ . See Problem 15 from §6.2 for the definition of transitive.
 19 Show that Cayley's definition of a finite group agrees with the current definition. (See Historical Diversion on page 181.) That is, show that if the cancellation laws hold for a finite set,  $a \cdot b = a \cdot c$  or  $b \cdot a = c \cdot a$  implies  $a = c$ , then inverses exist.
 
 # Interactive Problems
 
-20 Use Cayley's theorem (6.2) to find a subgroup of  $S_{12}$  that is isomorphic to  $Z_{21}^{*}$ .  
+20 Use Cayley's theorem (6.2) to find a subgroup of  $S_{12}$  that is isomorphic to  $Z_{21}^{*}$ .
 21 Use Cayley's theorem (6.2) to find a subgroup of  $S_{12}$  that is isomorphic to the following group:
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^3, e)  
-Define(b^4, e)  
-Define(b*a, a^2*b)  
-G = Group(); G  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^3, e)
+Define(b^4, e)
+Define(b*a, a^2*b)
+G = Group(); G
 {e, a, a^2, b, a*b, a^2*b, b^2, a*b^2, a^2*b^2, b^3, a*b^3, a^2*b^3}
 ```
 
 22 Use the generalized Cayley's theorem (6.3) to find a subgroup of  $S_8$  that is isomorphic to the following group:
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^2, e)  
-Define(b^8, e)  
-Define(b*a, a*b^5)  
-G = Group(); G  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^2, e)
+Define(b^8, e)
+Define(b*a, a*b^5)
+G = Group(); G
 {e, a, b, a*b, b^2, a*b^2, b^3, a*b^3, b^4, a*b^4, b^5, a*b^5, b^6, a*b^6, b^7, a*b^7}
 ```
 
@@ -8141,9 +8141,9 @@ Alternatively, we could have used the cycle notation.
 
 # [PermToCycle(x) for x in Q]
 
-$[(), (1, 6, 5, 2) (3, 8, 7, 4), (1, 3, 5, 7) (2, 8, 6, 4),$  
-(1, 8, 5, 4) (2, 7, 6, 3), (1, 5) (2, 6) (3, 7) (4, 8),  
-(1, 2, 5, 6) (3, 4, 7, 8), (1, 7, 5, 3) (2, 4, 6, 8),  
+$[(), (1, 6, 5, 2) (3, 8, 7, 4), (1, 3, 5, 7) (2, 8, 6, 4),$
+(1, 8, 5, 4) (2, 7, 6, 3), (1, 5) (2, 6) (3, 7) (4, 8),
+(1, 2, 5, 6) (3, 4, 7, 8), (1, 7, 5, 3) (2, 4, 6, 8),
 (1, 4, 5, 8) (2, 3, 6, 7)]
 
 Which method is best? For small groups, using cycles would be a good choice, because the results are easy to read. But for larger groups (say over 100 elements, and yes, we will be working with groups that large in the next chapter) having SageMath write out all of the elements in terms of cycles would be time consuming and messy. It would be convenient to have a succinct way to describe each permutation using some type of abbreviation.
@@ -8238,7 +8238,7 @@ $$
 
 So we find that the quaternion group contains the 25827th and 14805th permutations. Now we can form the group using these two permutations as generators.
 
-TABLE 6.3: Integer representation of  $Q$  
+TABLE 6.3: Integer representation of  $Q$
 
 <table><tr><td>.</td><td>1</td><td>7526</td><td>14805</td><td>16992</td><td>23617</td><td>25827</td><td>32484</td><td>39728</td></tr><tr><td>1</td><td>1</td><td>7526</td><td>14805</td><td>16992</td><td>23617</td><td>25827</td><td>32484</td><td>39728</td></tr><tr><td>7526</td><td>7526</td><td>23617</td><td>16992</td><td>32484</td><td>25827</td><td>1</td><td>39728</td><td>14805</td></tr><tr><td>14805</td><td>14805</td><td>39728</td><td>23617</td><td>7526</td><td>32484</td><td>16992</td><td>1</td><td>25827</td></tr><tr><td>16992</td><td>16992</td><td>14805</td><td>25827</td><td>23617</td><td>39728</td><td>32484</td><td>7526</td><td>1</td></tr><tr><td>23617</td><td>23617</td><td>25827</td><td>32484</td><td>39728</td><td>1</td><td>7526</td><td>14805</td><td>16992</td></tr><tr><td>25827</td><td>25827</td><td>1</td><td>39728</td><td>14805</td><td>7526</td><td>23617</td><td>16992</td><td>32484</td></tr><tr><td>32484</td><td>32484</td><td>16992</td><td>1</td><td>25827</td><td>14805</td><td>39728</td><td>23617</td><td>7526</td></tr><tr><td>39728</td><td>39728</td><td>32484</td><td>7526</td><td>1</td><td>16992</td><td>14805</td><td>25827</td><td>23617</td></tr></table>
 
@@ -8402,9 +8402,9 @@ $$
 
 How should we interpret this union?
 
-19 Show that the set of elements in  $S_{\infty}^{0}$  is countable. See Problem 18 and Definition 1.13.  
-20 Let  $S_{\infty}$  be the collection of all one-to-one and onto functions from  $\mathbb{Z}^{+}$  to  $\mathbb{Z}^{+}$ . Prove that  $S_{\infty}$  is a group. Find an element of this group that is not in  $S_{\infty}^{0}$ . (See Problem 18.)  
-21 Show that  $S_{\infty}^{0}$  is a normal subgroup of  $S_{\infty}$ . (See Problems 18 and 20.)  
+19 Show that the set of elements in  $S_{\infty}^{0}$  is countable. See Problem 18 and Definition 1.13.
+20 Let  $S_{\infty}$  be the collection of all one-to-one and onto functions from  $\mathbb{Z}^{+}$  to  $\mathbb{Z}^{+}$ . Prove that  $S_{\infty}$  is a group. Find an element of this group that is not in  $S_{\infty}^{0}$ . (See Problem 18.)
+21 Show that  $S_{\infty}^{0}$  is a normal subgroup of  $S_{\infty}$ . (See Problems 18 and 20.)
 22 Consider the set  $G$  of all one-to-one and onto functions  $f(x)$  from  $\mathbb{Z}^+$  to  $\mathbb{Z}^+$  such that there is some integer  $M$  for which
 
 $$
@@ -8413,13 +8413,13 @@ $$
 
 (The value of  $M$  is different for different elements of the group.)
 
-(a) Prove that  $G$  is a group containing  $S_{\infty}^{0}$ .  
-(b) Find an element of  $G$  that is not in  $S_{\infty}^{0}$ .  
+(a) Prove that  $G$  is a group containing  $S_{\infty}^{0}$ .
+(b) Find an element of  $G$  that is not in  $S_{\infty}^{0}$ .
 (c) Find an element of  $S_{\infty}$  that is not in  $G$ . (See Problems 18 and 20.)
 
 # Interactive Problems
 
-23 Find the elements of  $A_4$  converted to the integer representation. Is there a pattern as to which positive integers correspond to the even permutations, and which correspond to odd? Does the pattern continue to  $A_5$ ?  
+23 Find the elements of  $A_4$  converted to the integer representation. Is there a pattern as to which positive integers correspond to the even permutations, and which correspond to odd? Does the pattern continue to  $A_5$ ?
 24 Use SageMath to find all elements of  $S_7$  whose square is  $P(3, 5, 1, 7, 6, 2, 4)$ . Hint: Use a "for" loop to test all of the elements of  $S_7$ :
 
 for i in range(1, 5041):
@@ -8446,7 +8446,7 @@ $$
 
 The four group properties for the direct product are easy to verify. Certainly  $H \times K$  is closed under multiplication, since the component-wise product of two ordered pairs is again an ordered pair. If  $e_1$  is the identity element for  $H$ , and  $e_2$  the identity element for  $K$ , then  $(e_1, e_2)$  would be the identity element of the direct product. Also, the inverse of an ordered pair  $(h, k)$  is  $(h^{-1}, k^{-1})$ . Finally, the associative law would hold for  $H \times K$ , since it holds for both  $H$  and  $K$ .
 
-TABLE 7.1: Cayley table of  ${Z}_{4} \times  {Z}_{2}$  
+TABLE 7.1: Cayley table of  ${Z}_{4} \times  {Z}_{2}$
 
 <table><tr><td></td><td>(0,0)</td><td>(0,1)</td><td>(1,0)</td><td>(1,1)</td><td>(2,0)</td><td>(2,1)</td><td>(3,0)</td><td>(3,1)</td></tr><tr><td>(0,0)</td><td>(0,0)</td><td>(0,1)</td><td>(1,0)</td><td>(1,1)</td><td>(2,0)</td><td>(2,1)</td><td>(3,0)</td><td>(3,1)</td></tr><tr><td>(0,1)</td><td>(0,1)</td><td>(0,0)</td><td>(1,1)</td><td>(1,0)</td><td>(2,1)</td><td>(2,0)</td><td>(3,1)</td><td>(3,0)</td></tr><tr><td>(1,0)</td><td>(1,0)</td><td>(1,1)</td><td>(2,0)</td><td>(2,1)</td><td>(3,0)</td><td>(3,1)</td><td>(0,0)</td><td>(0,1)</td></tr><tr><td>(1,1)</td><td>(1,1)</td><td>(1,0)</td><td>(2,1)</td><td>(2,0)</td><td>(3,1)</td><td>(3,0)</td><td>(0,1)</td><td>(0,0)</td></tr><tr><td>(2,0)</td><td>(2,0)</td><td>(2,1)</td><td>(3,0)</td><td>(3,1)</td><td>(0,0)</td><td>(0,1)</td><td>(1,0)</td><td>(1,1)</td></tr><tr><td>(2,1)</td><td>(2,1)</td><td>(2,0)</td><td>(3,1)</td><td>(3,0)</td><td>(0,1)</td><td>(0,0)</td><td>(1,1)</td><td>(1,0)</td></tr><tr><td>(3,0)</td><td>(3,0)</td><td>(3,1)</td><td>(0,0)</td><td>(0,1)</td><td>(1,0)</td><td>(1,1)</td><td>(2,0)</td><td>(2,1)</td></tr><tr><td>(3,1)</td><td>(3,1)</td><td>(3,0)</td><td>(0,1)</td><td>(0,0)</td><td>(1,1)</td><td>(1,0)</td><td>(2,1)</td><td>(2,0)</td></tr></table>
 
@@ -8463,9 +8463,9 @@ Thus, we will have a group of order 8. Multiplication is performed component-wis
 In order to define this group in SageMath, we first define the groups  $Z_4$  and  $Z_2$ .
 
 ```txt
-Z4 = ZGroup(4)  
-Z2 = ZGroup(2)  
-G = DirectProduct(Z4, Z2); G  
+Z4 = ZGroup(4)
+Z2 = ZGroup(2)
+G = DirectProduct(Z4, Z2); G
  $\{(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1), (3, 0), (3, 1)\}$
 ```
 
@@ -8551,7 +8551,7 @@ For example, the group  $Z_{15}^{*}$  has a decomposition, since we saw in Examp
 
 Let  $G$  be a group with identity  $e$ , and let  $H$  and  $K$  be two subgroups of  $G$ . Suppose the following two statements are true:
 
-1.  $H\cap K = \{e\}$  
+1.  $H\cap K = \{e\}$
 2.  $h\cdot k = k\cdot h$  for all  $h\in H$  and  $k\in K$
 
 Then  $H\cdot K\approx H\times K$
@@ -8597,19 +8597,19 @@ We can use this theorem to define the direct product of two groups in SageMath.
 Suppose we wish to generate the direct product  $S_3 \times Z_8^*$ . We first must define the two groups in SageMath using the same identity element and different letters for the generators. The group  $S_3$  is defined by the commands
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^3, e); Define(b^2, e); Define(b*a, a^2*b)  
-H = Group(a, b); H  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^3, e); Define(b^2, e); Define(b*a, a^2*b)
+H = Group(a, b); H
 {e, b, a^2*b, a, a^2, a*b}
 ```
 
 Now let us define  $Z_8^*$ , using  $c$  and  $d$  for the two generators.
 
 ```txt
-AddGroupVar("c", "d")  
-Define(c^2, e); Define(d^2, e); Define(d*c, c*d)  
-K = Group(c, d); K  
+AddGroupVar("c", "d")
+Define(c^2, e); Define(d^2, e); Define(d*c, c*d)
+K = Group(c, d); K
 {e, c, d, c*d}
 ```
 
@@ -8624,7 +8624,7 @@ is just the identity element, so the first condition of the direct product theor
 In order for the second condition of the direct product theorem to be satisfied, every element of  $H$  must commute with every element of  $K$ . This will be true as long as all of the generators of  $H$  commute with all of the generators of  $K$ . Since there are 2 generators of  $H$  and 2 of  $K$ , we can tell SageMath that the generators commute using  $2 \cdot 2 = 4$  definitions:
 
 ```m4
-Define(c*a, a*c); Define(c*b, b*c)  
+Define(c*a, a*c); Define(c*b, b*c)
 Define(d*a, a*d); Define(d*b, b*d)
 ```
 
@@ -8632,7 +8632,7 @@ Note that we were consistent in the direction of these definitions. That is, we 
 
 According to the direct product theorem  $H \cdot K$  is now the same as  $H \times K$ . Here, then, is the direct product:
 
-H  $\star$  K  
+H  $\star$  K
 ```txt
 $\{e,b,a^{\wedge}2*b,a,a^{\wedge}2,a*b,c,b*c,d,b*d,a^{\wedge}2*b*c,a*c,$ $a^{\wedge}2*b*d,a*d,a^{\wedge}2*c,a*b*c,a^{\wedge}2*d,a*b*d,c*d,b*c*d,$ $a^{\wedge}2*b*c*d,a*c*d,a^{\wedge}2*c*d,a*b*c*d\}$
 ```
@@ -8640,8 +8640,8 @@ $\{e,b,a^{\wedge}2*b,a,a^{\wedge}2,a*b,c,b*c,d,b*d,a^{\wedge}2*b*c,a*c,$ $a^{\we
 We would get the same result by finding the smallest group that contains all of the generators.
 
 ```matlab
-G = Group(a, b, c, d)  
-len(G)  
+G = Group(a, b, c, d)
+len(G)
 24
 ```
 
@@ -8695,8 +8695,8 @@ This corollary is sometimes more useful than the direct product theorem, even th
 
 # Problems for §7.1
 
-1 We have shown by process of elimination that  $Z_4 \times Z_2$  is isomorphic to  $Z_{15}^*$ . Demonstrate the isomorphism by giving Cayley tables for the two groups with the same pattern.  
-2 Demonstrate that  $Z_{3} \times Z_{2}$  is isomorphic to  $Z_{6}$ .  
+1 We have shown by process of elimination that  $Z_4 \times Z_2$  is isomorphic to  $Z_{15}^*$ . Demonstrate the isomorphism by giving Cayley tables for the two groups with the same pattern.
+2 Demonstrate that  $Z_{3} \times Z_{2}$  is isomorphic to  $Z_{6}$ .
 3 Construct a Cayley table for  $Z_{2} \times Z_{8}^{*}$ .
 
 4 Construct a Cayley table for  $Z_{3} \times Z_{8}^{*}$ .
@@ -8739,14 +8739,14 @@ Hint: First calculate  $R_{2}(G)$ ,  $R_{3}(G)$ , and  $R_{4}(G)$ .
 
 14  $Z_{4}\times A_{4}\times Z_{6}$
 
-15 Show that  $Z_{2} \times Z_{6}$  is not isomorphic to  $Z_{12}$ .  
-16 Show that  $S_{3} \times Z_{2}$  is not isomorphic to  $A_{4}$ .  
-17 Using only the fact that  $R_{2}(S_{4}) = 10$ , prove that  $S_{4}$  is not the decomposition of two smaller groups. You can use the result of Problem 22 in §3.3.  
+15 Show that  $Z_{2} \times Z_{6}$  is not isomorphic to  $Z_{12}$ .
+16 Show that  $S_{3} \times Z_{2}$  is not isomorphic to  $A_{4}$ .
+17 Using only the fact that  $R_{2}(S_{4}) = 10$ , prove that  $S_{4}$  is not the decomposition of two smaller groups. You can use the result of Problem 22 in §3.3.
 18 Using the fact that  $R_{3}(A_{5}) = 21$  and  $R_{5}(A_{5}) = 25$ , prove that  $A_{5}$  is not the decomposition of two smaller groups.
 
 # Interactive Problems
 
-19 Use SageMath to define the group  $Z_{2} \times Z_{6}$ , and display the Cayley table. Then have SageMath find the Cayley table for  $Z_{21}^{*}$ , and rearrange the elements to show that these groups are isomorphic.  
+19 Use SageMath to define the group  $Z_{2} \times Z_{6}$ , and display the Cayley table. Then have SageMath find the Cayley table for  $Z_{21}^{*}$ , and rearrange the elements to show that these groups are isomorphic.
 20 Use SageMath to define the group  $Z_{3} \times Z_{8}^{*}$ , and display the Cayley table. Then have SageMath find the Cayley table for  $Z_{36}^{*}$ , and rearrange the elements to show that these groups are isomorphic.
 
 # 7.2 The Fundamental Theorem of Finite Abelian Groups
@@ -8764,15 +8764,15 @@ $$
 satisfy these two conditions. Thus,  $Z_6 \approx Z_2 \times Z_3$ . This is easily verified using SageMath.
 
 ```matlab
-Z2 = ZGroup(2); Z2  
-{0, 1}  
-Z3 = ZGroup(2); Z3  
-{0, 1, 2}  
-G = DirectProduct(Z2, Z3); G  
-{ (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2) }  
-RootCount(G, 2)  
-2  
-RootCount(G, 3)  
+Z2 = ZGroup(2); Z2
+{0, 1}
+Z3 = ZGroup(2); Z3
+{0, 1, 2}
+G = DirectProduct(Z2, Z3); G
+{ (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2) }
+RootCount(G, 2)
+2
+RootCount(G, 3)
 3
 ```
 
@@ -9130,7 +9130,7 @@ to find that there are five groups of order  $2^4$ . We can even have SageMath l
 
 Table 7.2 gives the number of partitions  $P(m)$ . The number of partitions increases exponentially with  $m$ ; in fact a SageMath plot reveals that it grows approximately like the function  $e^{\sqrt{m}}$ . See Problem 21.
 
-TABLE 7.2: Partitions for  $m \leq  {15}$  
+TABLE 7.2: Partitions for  $m \leq  {15}$
 
 <table><tr><td>P(1)</td><td>= 1</td><td>P(6)</td><td>= 11</td><td>P(11)</td><td>= 56</td></tr><tr><td>P(2)</td><td>= 2</td><td>P(7)</td><td>= 15</td><td>P(12)</td><td>= 77</td></tr><tr><td>P(3)</td><td>= 3</td><td>P(8)</td><td>= 22</td><td>P(13)</td><td>= 101</td></tr><tr><td>P(4)</td><td>= 5</td><td>P(9)</td><td>= 30</td><td>P(14)</td><td>= 135</td></tr><tr><td>P(5)</td><td>= 7</td><td>P(10)</td><td>= 42</td><td>P(15)</td><td>= 176</td></tr></table>
 
@@ -9180,7 +9180,7 @@ From these two corollaries, we see that all finite abelian groups have been clas
 
 # Problems for  $\S 7.2$
 
-1 Let  $n$  be any integer greater than 1. Prove that  $Z_{n} \times Z_{n}$  is not isomorphic to  $Z_{n^{2}}$ .  
+1 Let  $n$  be any integer greater than 1. Prove that  $Z_{n} \times Z_{n}$  is not isomorphic to  $Z_{n^{2}}$ .
 2 Let  $G$  be an abelian group with order  $mn$ , where  $m$  and  $n$  are coprime. Prove that  $R_{m}(G) = m$  and  $R_{n}(G) = n$ .
 
 Hint: Use Lemma 7.1 and the strategy of Lemma 7.3.
@@ -9205,7 +9205,7 @@ For Problems 3 through 11: Find, up to isomorphism, all abelian groups of the fo
 
 11  $|G| = 900$
 
-12 What is the smallest positive integer  $n$  for which there are exactly four non-isomorphic abelian groups of order  $n$ ?  
+12 What is the smallest positive integer  $n$  for which there are exactly four non-isomorphic abelian groups of order  $n$ ?
 13 Calculate the number of elements of order 4 in the groups
 
 $$
@@ -9234,13 +9234,13 @@ During the French revolution of 1830, when Louis-Philippe succeeded Charles X, C
 
 Cauchy returned to Paris in 1838, but could not secure a position because he still refused to take an oath. In 1848, another revolution broke out, and the oath of allegiance was abolished, allowing Cauchy to have an academic appointment. In 1849, he was reinstated as a professor of mathematical astronomy at the Faculté de Sciences. During these final years, until his death in 1857, Cauchy wrote more than 500 research papers.
 
-17 If an abelian group  $G$  of order 40 has exactly three elements of order 2, determine up to isomorphism the group  $G$ .  
-18 Classify the integers  $n$  for which the only abelian groups of order  $n$  are cyclic.  
+17 If an abelian group  $G$  of order 40 has exactly three elements of order 2, determine up to isomorphism the group  $G$ .
+18 Classify the integers  $n$  for which the only abelian groups of order  $n$  are cyclic.
 19 Recall from Problem 19 from §6.2 that the cycle structure of a permutation is the number of 2-cycles, 3-cycles, etc. it contains when written as a product of disjoint cycles. Show that the number of possible cycle structures in  $S_{n}$  is  $P(n)$ .
 
 # Interactive Problems
 
-20 Use SageMath's PartitionsP command to find the number of abelian groups of order 120,000,000.  
+20 Use SageMath's PartitionsP command to find the number of abelian groups of order 120,000,000.
 21 Notice that the logarithm of the PartitionsP function looks like a sideways parabola.
 
 $$
@@ -9269,15 +9269,15 @@ $$
 \begin{array}{l} Z 8 = Z G r o u p (8) \\ \text {C i r c l e G r a p h} (Z 8, \text {P o w} (3)) \\ \end{array}
 $$
 
-![](images/a12f5d26c6ebe2320887372bca229be3c77edbe185bfeb77cc895d97a6e47fe2.jpg)  
+![](images/a12f5d26c6ebe2320887372bca229be3c77edbe185bfeb77cc895d97a6e47fe2.jpg)
 FIGURE 7.1:  $x \to x^3$  in  $Z_8$
 
 which produces Figure 7.1. This mapping could be considered as the permutation (13)(26)(57) since the element 0 is left fixed. However, to make this into a homomorphism in SageMath, we have to define a mapping that sends Z8[1] to Z8[3].
 
 ```latex
-$\mathbf{F} =$  Homomorph(Z8，Z8)  
-HomoDef(F，Z8[1]，Z8[3])  
-FinishHomo(F)  
+$\mathbf{F} =$  Homomorph(Z8，Z8)
+HomoDef(F，Z8[1]，Z8[3])
+FinishHomo(F)
 'Homomorphism defined'
 ```
 
@@ -9464,21 +9464,21 @@ Determine the automorphism group of  $Q$ .
 With a bit of trial and error, we can come up with a new automorphism.
 
 ```txt
-$\mathsf{Q} =$  InitQuaternions();  $\mathsf{Q}$  {1, i, j, k, -1, -i, -j, -k}  
- $\mathbf{X} =$  Homomorph(Q, Q)  
-HomoDef(X, i, i)  
-HomoDef(X, j, k)  
-FinishHomo(X)  
+$\mathsf{Q} =$  InitQuaternions();  $\mathsf{Q}$  {1, i, j, k, -1, -i, -j, -k}
+ $\mathbf{X} =$  Homomorph(Q, Q)
+HomoDef(X, i, i)
+HomoDef(X, j, k)
+FinishHomo(X)
 'Homomorphism defined'
 ```
 
 This homomorphism from  $Q$  to itself can be shown to be one-to-one and onto. In fact, it can be represented by the cycle  $(j,k,-j,-k)$ . Also, the commands
 
 ```txt
-Y = Homomorph(Q, Q)  
-HomoDef(Y, i, k)  
-HomoDef(Y, j, j)  
-FinishHomo(Y)  
+Y = Homomorph(Q, Q)
+HomoDef(Y, i, k)
+HomoDef(Y, j, j)
+FinishHomo(Y)
 'Homomorphism defined'
 ```
 
@@ -9498,7 +9498,7 @@ $$
 
 So the automorphism group is isomorphic to the octahedral group, which we saw was isomorphic to  $S_4$ .
 
-![](images/62049e77a936391c1da4128a0b45bc262f6ae646e8c72b7046b344d88ffef594.jpg)  
+![](images/62049e77a936391c1da4128a0b45bc262f6ae646e8c72b7046b344d88ffef594.jpg)
 FIGURE 7.2: Labeling the octahedron to show  $\operatorname{Aut}(Q) \approx S_4$
 
 Although the inner automorphisms did not produce the full automorphism group, this set of inner automorphisms turns out to be a very important subgroup of the automorphism group. Let us discover the first main property of this subgroup.
@@ -9586,21 +9586,21 @@ Once again, we will begin by determining an upper bound for the number of automo
 One possible automorphism would be to send  $a$  to  $b$ ,  $b$  to  $c$ , and  $c$  back to  $a$ .
 
 ```txt
-$\mathbf{F} =$  Homomorph(Y，Y)   
-HomoDef(F，a，b)   
-HomoDef(F，b，c)   
-HomoDef(F，c，a)   
+$\mathbf{F} =$  Homomorph(Y，Y)
+HomoDef(F，a，b)
+HomoDef(F，b，c)
+HomoDef(F，c，a)
 FinishHomo(F) 'Homomorphism defined'
 ```
 
 which SageMath verifies is an automorphism. Another automorphism, given by
 
 ```txt
-G = Homomorph(Y, Y)  
-HomoDef(G, a, a)  
-HomoDef(G, b, a*b)  
-HomoDef(G, c, c)  
-FinishHomo(G)  
+G = Homomorph(Y, Y)
+HomoDef(G, a, a)
+HomoDef(G, b, a*b)
+HomoDef(G, c, c)
+FinishHomo(G)
 'Homomorphism defined'
 ```
 
@@ -9609,9 +9609,9 @@ indicates that there may indeed be many automorphisms.
 It would be more concise if we could use permutations for a group this large. If we number the non-identity elements in the order they appear in the group list, we have  $a = 1$ ,  $b = 2$ ,  $a \cdot b = 3$ ,  $c = 4$ ,  $a \cdot c = 5$ ,  $b \cdot c = 6$ , and  $a \cdot b \cdot c = 7$ . With this ordering we can convert  $F$  and  $G$  to standard permutations (124)(356) and (23)(67). That is,  $F$  maps element 1 ( $a$ ) to element 2 ( $b$ ), which is mapped to element 4 ( $c$ ), etc. Likewise,  $G$  exchanges the 2nd and 3rd elements, and exchanges the 6th and 7th elements of  $Z_{24}^{*}$ . Once we have all of the elements as permutations, we can use the integer notation feature to list them.
 
 ```latex
-$\mathbf{f} = \mathrm{CycleToPerm}(\mathrm{C}(1,2,4)*\mathrm{C}(3,6,5));\mathbf{f}$  P(2,4,6,1,3,5)   
- $\mathbf{g} = \mathrm{CycleToPerm}(\mathrm{C}(2,3)*\mathrm{C}(6,7));\mathbf{g}$  P(1,3,2,4,5,7,6)   
-DisplayPermInt  $=$  true   
+$\mathbf{f} = \mathrm{CycleToPerm}(\mathrm{C}(1,2,4)*\mathrm{C}(3,6,5));\mathbf{f}$  P(2,4,6,1,3,5)
+ $\mathbf{g} = \mathrm{CycleToPerm}(\mathrm{C}(2,3)*\mathrm{C}(6,7));\mathbf{g}$  P(1,3,2,4,5,7,6)
+DisplayPermInt  $=$  true
 A  $=$  Group(f,g);A {1,27,61,87,122,149,187,231,244,270,331,357,374 404，437，467，496，548，558，593，640，670，684，714，723 745，783，805，844，870，931，957，962，989，1027，1071,
 ```
 
@@ -9622,7 +9622,7 @@ A  $=$  Group(f,g);A {1,27,61,87,122,149,187,231,244,270,331,357,374 404，437�
 Since this gives us 168 elements, we know we have all of the automorphisms. Notice that SageMath orders the numbers, making it easier to find a particular element. In particular, the elements  $f$  and  $g$  are found to be
 
 ```txt
-f 187   
+f 187
 g 723
 ```
 
@@ -9634,28 +9634,28 @@ We have now seen several examples where the group of automorphisms is larger tha
 
 For Problems 1 through 6: Determine an upper bound for the size of the automorphism group for the following groups. It helps to first determine how many elements there are of each order.
 
-1  $S_{3}$  
-3  $Z_{15}^{*}$  
-5  $Z_{3}\times Z_{3}$  
-2  $D_{4}$  
-4  $Z_{6}\times Z_{2}$  
+1  $S_{3}$
+3  $Z_{15}^{*}$
+5  $Z_{3}\times Z_{3}$
+2  $D_{4}$
+4  $Z_{6}\times Z_{2}$
 6  $Z_{2} \times Z_{2} \times Z_{2} \times Z_{2}$
 
 7 Prove that if  $G$  is a finite group of order  $n$ , then  $\operatorname{Aut}(G)$  is isomorphic to a subgroup of  $S_{n-1}$ .
 
-8 Prove that if  $G$  is non-abelian, then there is an inner automorphism that is not trivial.  
-9 Prove that if  $G$  abelian, and there is an element of  $G$  with an order greater than 2, then  $\phi(x) = x^{-1}$  is a non-trivial automorphism.  
+8 Prove that if  $G$  is non-abelian, then there is an inner automorphism that is not trivial.
+9 Prove that if  $G$  abelian, and there is an element of  $G$  with an order greater than 2, then  $\phi(x) = x^{-1}$  is a non-trivial automorphism.
 10 Prove that any finite group of order greater than 2 has at least two automorphisms.
 
 Hint: The only groups not covered by Problems 8 and 9 are isomorphic to  $Z_{2} \times Z_{2} \times \dots \times Z_{2}$ .
 
-11 Prove that if  $G$  is not abelian, then  $\operatorname{Aut}(G)$  is not cyclic.  
-12 Find all of the inner automorphisms of  $S_3$ . Use cycle notation for the automorphisms, as we did for Example 7.8. The Cayley table for  $S_3$  is on page 79.  
-13 Find all of the inner automorphisms of  $D_4$ . Use cycle notation for the automorphisms, as we did for Example 7.8. The Cayley table for  $D_4$  is on page 132.  
-14 Show that for the group  $D_4$ , there is an automorphism with  $\phi(a) = a$  and  $\phi(b) = a \cdot b$ . Show that the Cayley table with the new ordering of elements created by the automorphism has the same "color pattern" as the table on page 132.  
-15 Find the automorphism group of  $S_{3}$ . See Problem 12.  
-16 Find the automorphism group of  $D_4$ . See Problems 13 and 14.  
-17 Find Aut(Z).  
+11 Prove that if  $G$  is not abelian, then  $\operatorname{Aut}(G)$  is not cyclic.
+12 Find all of the inner automorphisms of  $S_3$ . Use cycle notation for the automorphisms, as we did for Example 7.8. The Cayley table for  $S_3$  is on page 79.
+13 Find all of the inner automorphisms of  $D_4$ . Use cycle notation for the automorphisms, as we did for Example 7.8. The Cayley table for  $D_4$  is on page 132.
+14 Show that for the group  $D_4$ , there is an automorphism with  $\phi(a) = a$  and  $\phi(b) = a \cdot b$ . Show that the Cayley table with the new ordering of elements created by the automorphism has the same "color pattern" as the table on page 132.
+15 Find the automorphism group of  $S_{3}$ . See Problem 12.
+16 Find the automorphism group of  $D_4$ . See Problems 13 and 14.
+17 Find Aut(Z).
 18 Find two non-isomorphic groups  $G$  and  $M$  for which  $\operatorname{Aut}(G) \approx \operatorname{Aut}(M)$ .
 
 # Interactive Problems
@@ -9754,7 +9754,7 @@ A semi-direct product of two groups acts in many ways like the direct product. O
 
 Let  $G = K \rtimes_{\phi} H$  be the semi-direct product of  $K$  with  $H$  through the homomorphism  $\phi$ . Suppose that  $e_1$  is the identity element of  $K$ , and  $e_2$  is the identity
 
-TABLE 7.3: Cayley table of  ${Z}_{3} \times  {}_{\phi }{Z}_{2}$  
+TABLE 7.3: Cayley table of  ${Z}_{3} \times  {}_{\phi }{Z}_{2}$
 
 <table><tr><td></td><td>(0,0)</td><td>(0,1)</td><td>(1,0)</td><td>(1,1)</td><td>(2,0)</td><td>(2,1)</td></tr><tr><td>(0,0)</td><td>(0,0)</td><td>(0,1)</td><td>(1,0)</td><td>(1,1)</td><td>(2,0)</td><td>(2,1)</td></tr><tr><td>(0,1)</td><td>(0,1)</td><td>(0,0)</td><td>(2,1)</td><td>(2,0)</td><td>(1,1)</td><td>(1,0)</td></tr><tr><td>(1,0)</td><td>(1,0)</td><td>(1,1)</td><td>(2,0)</td><td>(2,1)</td><td>(0,0)</td><td>(0,1)</td></tr><tr><td>(1,1)</td><td>(1,1)</td><td>(1,0)</td><td>(0,1)</td><td>(0,0)</td><td>(2,1)</td><td>(2,0)</td></tr><tr><td>(2,0)</td><td>(2,0)</td><td>(2,1)</td><td>(0,0)</td><td>(0,1)</td><td>(1,0)</td><td>(1,1)</td></tr><tr><td>(2,1)</td><td>(2,1)</td><td>(2,0)</td><td>(1,1)</td><td>(1,0)</td><td>(0,1)</td><td>(0,0)</td></tr></table>
 
@@ -9919,11 +9919,11 @@ Use SageMath to find a semi-direct product of  $Z_{5}$  with  $Z_{2}$ .
 SOLUTION: We first must define  $Z_{5}$  and  $Z_{2}$  into SageMath using the same identity but different generators.
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^5, e)  
-Define(b^2, e)  
-Z5 = Group(a); Z5{e, a^4, a, a^3, a^2}  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^5, e)
+Define(b^2, e)
+Z5 = Group(a); Z5{e, a^4, a, a^3, a^2}
 Z2 = Group(b); Z2{e, b}
 ```
 
@@ -9953,7 +9953,7 @@ We can use the command StructureDescription() to ask SageMath what group this is
 
 D5
 
-TABLE 7.4: Multiplication table for  ${Z}_{5} \times  {Z}_{2}$  
+TABLE 7.4: Multiplication table for  ${Z}_{5} \times  {Z}_{2}$
 
 <table><tr><td>·</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>a4</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td><td>a4·b</td></tr><tr><td>e</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>a4</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td><td>a4·b</td></tr><tr><td>a</td><td>a</td><td>a2</td><td>a3</td><td>a4</td><td>e</td><td>a·b</td><td>a2·b</td><td>a3·b</td><td>a4·b</td><td>b</td></tr><tr><td>a2</td><td>a2</td><td>a3</td><td>a4</td><td>e</td><td>a</td><td>a2·b</td><td>a3·b</td><td>a4·b</td><td>b</td><td>a·b</td></tr><tr><td>a3</td><td>a3</td><td>a4</td><td>e</td><td>a</td><td>a2</td><td>a3·b</td><td>a4·b</td><td>b</td><td>a·b</td><td>a2·b</td></tr><tr><td>a4</td><td>a4</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>a4·b</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td></tr><tr><td>b</td><td>b</td><td>a4·b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>e</td><td>a4</td><td>a3</td><td>a2</td><td>a</td></tr><tr><td>a·b</td><td>a·b</td><td>b</td><td>a4·b</td><td>a3·b</td><td>a2·b</td><td>a</td><td>e</td><td>a4</td><td>a3</td><td>a2</td></tr><tr><td>a2·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a4·b</td><td>a3·b</td><td>a2</td><td>a</td><td>e</td><td>a4</td><td>a3</td></tr><tr><td>a3·b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a4·b</td><td>a3</td><td>a2</td><td>a</td><td>e</td><td>a4</td></tr><tr><td>a4·b</td><td>a4·b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a4</td><td>a3</td><td>a2</td><td>a</td><td>e</td></tr></table>
 
@@ -9984,28 +9984,28 @@ It should be noted that the semi-direct product may greatly depend on the choice
 Consider finding the semi-direct products of  $Z_{8}$  with  $Z_{2}$ . Since  $\operatorname{Aut}(Z_{8}) \approx Z_{8}^{*}$  has three elements of order 2, there are three nontrivial homomorphisms from  $Z_{2}$  to  $\operatorname{Aut}(Z_{8})$ . One of these produces the dihedral group  $D_{8}$  above, but the other two homomorphisms produce different groups. If we let  $\phi_{b}(a) = a^{3}$ , we get the following.
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^8, e)  
-Define(b^2, e)  
-Define(b*a, a^3*b)  
-G = ListGroup(); G  
-{e, a, a^2, a^3, a^4, a^5, a^6, a^7, b, a*b, a^2*b, a^3*b, a^4*b, a^5*b, a^6*b, a^7*b}  
-StructureDescription()  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^8, e)
+Define(b^2, e)
+Define(b*a, a^3*b)
+G = ListGroup(); G
+{e, a, a^2, a^3, a^4, a^5, a^6, a^7, b, a*b, a^2*b, a^3*b, a^4*b, a^5*b, a^6*b, a^7*b}
+StructureDescription()
 QD16
 ```
 
 SageMath calls this group "QD16," since it is the quasidihedral group of order 16, written  $QD_{16}$ . If we let  $\phi_b(a) = a^5$  instead, we get
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^8, e)  
-Define(b^2, e)  
-Define(b*a, a^5*b)  
-M = ListGroup(); M  
-{e, a, a^2, a^3, a^4, a^5, a^6, a^7, b, a*b, a^2*b, a^3*b, a^4*b, a^5*b, a^6*b, a^7*b}  
-StructureDescription()  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^8, e)
+Define(b^2, e)
+Define(b*a, a^5*b)
+M = ListGroup(); M
+{e, a, a^2, a^3, a^4, a^5, a^6, a^7, b, a*b, a^2*b, a^3*b, a^4*b, a^5*b, a^6*b, a^7*b}
+StructureDescription()
 Z8 : Z2
 ```
 
@@ -10145,7 +10145,7 @@ Let us begin by considering the dihedral group  $D_4$ . Table 8.1 gives us the C
 
 There are five elements of order 2 in this group, but one of these,  $a^2$ , has
 
-TABLE 8.1: Cayley table for  ${D}_{4}$  
+TABLE 8.1: Cayley table for  ${D}_{4}$
 
 <table><tr><td>·</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td></tr><tr><td>e</td><td>e</td><td>a</td><td>a2</td><td>a3</td><td>b</td><td>a·b</td><td>a2·b</td><td>a3·b</td></tr><tr><td>a</td><td>a</td><td>a2</td><td>a3</td><td>e</td><td>a·b</td><td>a2·b</td><td>a3·b</td><td>b</td></tr><tr><td>a2</td><td>a2</td><td>a3</td><td>e</td><td>a</td><td>a2·b</td><td>a3·b</td><td>b</td><td>a·b</td></tr><tr><td>a3</td><td>a3</td><td>e</td><td>a</td><td>a2</td><td>a3·b</td><td>b</td><td>a·b</td><td>a2·b</td></tr><tr><td>b</td><td>b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>e</td><td>a3</td><td>a2</td><td>a</td></tr><tr><td>a·b</td><td>a·b</td><td>b</td><td>a3·b</td><td>a2·b</td><td>a</td><td>e</td><td>a3</td><td>a2</td></tr><tr><td>a2·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a3·b</td><td>a2</td><td>a</td><td>e</td><td>a3</td></tr><tr><td>a3·b</td><td>a3·b</td><td>a2·b</td><td>a·b</td><td>b</td><td>a3</td><td>a2</td><td>a</td><td>e</td></tr></table>
 
@@ -10280,7 +10280,7 @@ $\mathbf{S4} = \mathbf{Group}(\mathbf{C}(1,2),\mathbf{C}(1,2,3),\mathbf{C}(1,2,3
 We find that  $H$  is not a normal subgroup of  $S_4$ .
 
 ```javascript
-LftCoset(S4,H)  $\{\{(1),(1,2)(3,4)\} ,\{(1,2),(3,4)\} ,\{(2,3),(1,3,4,2)\} ,$ $\{(1,3,2),(2,3,4)\} ,\{(1,2,3),(1,3,4)\} ,$ $\{(1,3),(1,2,3,4)\} ,\{(2,4,3),(1,4,2)\} ,$ $\{(1,4,3,2),(2,4)\} ,\{(1,2,4,3),(1,4)\} ,$ $\{(1,4,3),(1,2,4)\} ,\{(1,3)(2,4),(1,4)(2,3)\} ,$ $\{(1,4,2,3),(1,3,2,4)\}\}$    
+LftCoset(S4,H)  $\{\{(1),(1,2)(3,4)\} ,\{(1,2),(3,4)\} ,\{(2,3),(1,3,4,2)\} ,$ $\{(1,3,2),(2,3,4)\} ,\{(1,2,3),(1,3,4)\} ,$ $\{(1,3),(1,2,3,4)\} ,\{(2,4,3),(1,4,2)\} ,$ $\{(1,4,3,2),(2,4)\} ,\{(1,2,4,3),(1,4)\} ,$ $\{(1,4,3),(1,2,4)\} ,\{(1,3)(2,4),(1,4)(2,3)\} ,$ $\{(1,4,2,3),(1,3,2,4)\}\}$
 RtCoset(S4,H)  $\{\{(),(1,2)(3,4)\} ,\{(1,2),(3,4)\} ,\{(2,3),(1,2,4,3)\} ,$ $\{(1,3,2),(1,4,3)\} ,\{(1,2,3),(2,4,3)\}\}$ $\{(1,3),(1,4,3,2)\} ,\{(2,3,4),(1,2,4)\} ,$ $\{(1,3,4,2),(1,4)\} ,\{(2,4),(1,2,3,4)\} ,$ $\{(1,4,2),(1,3,4)\} ,\{(1,3)(2,4),(1,4)(2,3)\} ,$ $\{(1,4,2,3),(1,3,2,4)\}\}$
 ```
 
@@ -10288,17 +10288,17 @@ Contrast this situation to the center of a group. We found that the center of a 
 
 # Problems for §8.1
 
-1 Find the center of the group  $Q$ .  
-2 Find the center of the group  $D_{5}$  
-3 Must the center of a group be abelian?  
-4 Let  $G$  be a group and  $Z(G)$  the center of  $G$ . Prove that  $G$  is abelian if, and only if,  $G / Z(G)$  is cyclic. Hint: Use Proposition 8.3.  
-5 Show that if  $A$  and  $B$  are two groups, then  $Z(A \times B) \approx Z(A) \times Z(B)$ .  
+1 Find the center of the group  $Q$ .
+2 Find the center of the group  $D_{5}$
+3 Must the center of a group be abelian?
+4 Let  $G$  be a group and  $Z(G)$  the center of  $G$ . Prove that  $G$  is abelian if, and only if,  $G / Z(G)$  is cyclic. Hint: Use Proposition 8.3.
+5 Show that if  $A$  and  $B$  are two groups, then  $Z(A \times B) \approx Z(A) \times Z(B)$ .
 6 Prove that if a group only has one element of order 2, then that element must be in the center. Hint: see Problem 27 from §3.1.
 
-7 Prove that if  $H$  is a normal subgroup of  $G$ , and  $|H| = 2$ , then  $H \subseteq Z(G)$ .  
-8 Let  $\phi$  be an automorphism on the group  $G$ , and let  $z \in Z(G)$ . Prove that  $\phi(z) \in Z(G)$ .  
-9 A characteristic subgroup of  $G$  is a subgroup  $H$  such that  $\phi(h) \in H$  for all  $h \in H$  and all automorphisms  $\phi$  of  $G$ . Problem 8 shows that  $Z(G)$  is a characteristic subgroup of  $G$ . Prove that all characteristic subgroups are also normal subgroups.  
-10 Let  $H$  be the only subgroup of  $G$  of size  $|H|$ . Prove that  $H$  is a characteristic subgroup of  $G$ . See Problem 9.  
+7 Prove that if  $H$  is a normal subgroup of  $G$ , and  $|H| = 2$ , then  $H \subseteq Z(G)$ .
+8 Let  $\phi$  be an automorphism on the group  $G$ , and let  $z \in Z(G)$ . Prove that  $\phi(z) \in Z(G)$ .
+9 A characteristic subgroup of  $G$  is a subgroup  $H$  such that  $\phi(h) \in H$  for all  $h \in H$  and all automorphisms  $\phi$  of  $G$ . Problem 8 shows that  $Z(G)$  is a characteristic subgroup of  $G$ . Prove that all characteristic subgroups are also normal subgroups.
+10 Let  $H$  be the only subgroup of  $G$  of size  $|H|$ . Prove that  $H$  is a characteristic subgroup of  $G$ . See Problem 9.
 11 Let  $G$  be an abelian group, and let  $H$  be the subgroup of size  $R_{k}(G)$  given by
 
 $$
@@ -10311,7 +10311,7 @@ Prove that  $H$  is a characteristic subgroup of  $G$ . See Problem 9.
 
 Hint: See Problems 9 and 10.
 
-13 Prove that if  $N$  is a characteristic subgroup of  $G$ , and  $H$  is a characteristic subgroup of  $N$ , then  $H$  is a characteristic subgroup of  $G$ . Note this statement is not true if "characteristic" is replaced with "normal." See Problem 9.  
+13 Prove that if  $N$  is a characteristic subgroup of  $G$ , and  $H$  is a characteristic subgroup of  $N$ , then  $H$  is a characteristic subgroup of  $G$ . Note this statement is not true if "characteristic" is replaced with "normal." See Problem 9.
 14 Prove that if  $N$  is a normal subgroup of  $G$ , and  $H$  is a characteristic subgroup of  $N$ , then  $H$  is a normal subgroup of  $G$ . This generalizes Proposition 8.4, since the center is a characteristic subgroup. See Problem 9.
 
 # Interactive Problems
@@ -10319,10 +10319,10 @@ Hint: See Problems 9 and 10.
 15 Use SageMath to find the center of the group  $D_6$ . This can be loaded by the commands:
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^6, e); Define(b^2, e); Define(b*a, a^5*b)  
-D6 = Group(); D6  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^6, e); Define(b^2, e); Define(b*a, a^5*b)
+D6 = Group(); D6
 {e, a, a^2, a^3, a^4, a^5, b, a*b, a^2*b, a^3*b, a^4*b, a^5*b}
 ```
 
@@ -10383,7 +10383,7 @@ SOLUTION: Since this is a normal subgroup of  $Q$ , the normalizer is all of  $Q
 The SageMath command Normalizer  $(\mathbf{G},\mathbf{H})$  finds the normalizer  $N_{G}(H)$  of the set  $H$  in  $G$ . We can verify the last two examples.
 
 ```txt
-$\mathsf{Q} =$  InitQuaternions();  $\mathsf{Q}$ $\{1,\mathrm{i},\mathrm{j},\mathrm{k}, - 1, - \mathrm{i}, - \mathrm{j}, - \mathrm{k}\}$ $\mathsf{H} =$  Normalizer(Q,i); H  $\{1,\mathrm{i}, - 1, - \mathrm{i}\}$    
+$\mathsf{Q} =$  InitQuaternions();  $\mathsf{Q}$ $\{1,\mathrm{i},\mathrm{j},\mathrm{k}, - 1, - \mathrm{i}, - \mathrm{j}, - \mathrm{k}\}$ $\mathsf{H} =$  Normalizer(Q,i); H  $\{1,\mathrm{i}, - 1, - \mathrm{i}\}$
 Normalizer(Q,H)  $\{1,\mathrm{i},\mathrm{j},\mathrm{k}, - 1, - \mathrm{i}, - \mathrm{j}, - \mathrm{k}\}$
 ```
 
@@ -10430,20 +10430,20 @@ Find all of the normal subgroups of  $S_{3}$ , using the generators  $a$  and  $
 SOLUTION: We would like to see if there are any other normal subgroups besides the two trivial groups. Since a proper subgroup must contain one of the elements  $\{a, b, a \cdot b, b^2, a \cdot b^2\}$ , we have five groups to try.
 
 ```c
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^2, e); Define(b^3, e); Define(b*a, a*b^2)  
-S3 = Group(); S3  
-{e, a, b, a*b, b^2, a*b^2}  
-NormalClosure(S3, a)  
-{e, a, b, a*b, b^2, a*b^2}  
-NormalClosure(S3, b)  
-{e, b, b^2}  
-NormalClosure(S3, a*b)  
-{e, a, b, a*b, b^2, a*b^2}  
-NormalClosure(S3, b^2)  
-{e, b, b^2}  
-NormalClosure(S3, a*b^2)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^2, e); Define(b^3, e); Define(b*a, a*b^2)
+S3 = Group(); S3
+{e, a, b, a*b, b^2, a*b^2}
+NormalClosure(S3, a)
+{e, a, b, a*b, b^2, a*b^2}
+NormalClosure(S3, b)
+{e, b, b^2}
+NormalClosure(S3, a*b)
+{e, a, b, a*b, b^2, a*b^2}
+NormalClosure(S3, b^2)
+{e, b, b^2}
+NormalClosure(S3, a*b^2)
 {e, a, b, a*b, b^2, a*b^2}
 ```
 
@@ -10515,7 +10515,7 @@ For Problems 17 through 20: Find the normal closure of the following sets in  $D
 
 # Interactive Problems
 
-21 Use SageMath to find the normalizer  $N_{D_6}(\{x\})$  for each of the 12 elements of the group  $D_6$  listed in Problem 15 of §8.1. For which elements is the normalizer the same subgroup?  
+21 Use SageMath to find the normalizer  $N_{D_6}(\{x\})$  for each of the 12 elements of the group  $D_6$  listed in Problem 15 of §8.1. For which elements is the normalizer the same subgroup?
 22 Use SageMath's NormalClosure command to find all of the normal subgroups of the group  $D_6$  given in Problem 15 of §8.1.
 
 # 8.3 Conjugacy Classes and Simple Groups
@@ -10538,8 +10538,8 @@ $$
 
 Recall that in Definition 2.3, we defined an equivalence relationship as any relationship having three properties:
 
-1. Every element  $u$  is equivalent to itself.  
-2. If  $u$  is equivalent to  $v$ , then  $v$  is equivalent to  $u$ .  
+1. Every element  $u$  is equivalent to itself.
+2. If  $u$  is equivalent to  $v$ , then  $v$  is equivalent to  $u$ .
 3. If  $u$  is equivalent to  $v$ , and  $v$  in turn is equivalent to  $w$ , then  $u$  is equivalent to  $w$ .
 
 These were called the reflexive, symmetric, and transitive properties. We used the equivalence relationships of cosets in §4.4 to form a partition of the group, which gave us the quotient groups. In the same way, we can use the equivalence relationship of conjugates to form a different partition of the group, called conjugacy classes. Unlike cosets, though, the conjugacy classes will not be all the same size. The conjugacy class containing the element  $u$  is given by
@@ -10555,7 +10555,7 @@ Find all of the conjugacy classes of  $S_4$ .
 SOLUTION: The SageMath command for finding all of the conjugacy classes of a group  $G$  is ConjugacyClasses(G). Let us find the conjugacy classes of  $S_4$ , which are generated by the cycles (1 2) and (2 3 4).
 
 ```txt
-S4 = Group(C(1,2), C(2,3,4)); S4  
+S4 = Group(C(1,2), C(2,3,4)); S4
 {(), (1, 2), (2, 3), (1, 3, 2), (1, 2, 3), (1, 3), (3, 4), (1, 2)(3, 4), (2, 4, 3), (1, 4, 3, 2), (1, 2, 4, 3), (1, 4, 3), (2, 3, 4), (1, 3, 4, 2), (2, 4), (1, 4, 2), (1, 3)(2, 4), (1, 4, 2, 3), (1, 2, 3, 4), (1, 3, 4), (1, 2, 4), (1, 2, 4), (1, 3, 2, 4), (1, 4)(2, 3)}
 ```
 
@@ -10649,35 +10649,35 @@ $$
 
 # ConjugacyClasses(A5)
 
-$\{\{()\} ,\{(1,3,2),(1,2,3),(2,4,3),(1,4,3),(2,3,4),$  
-(1, 4, 2), (1, 3, 4), (1, 2, 4), (3, 5, 4), (2, 5, 4),  
-(1, 5, 4), (3, 4, 5), (2, 5, 3), (1, 5, 3), (2, 4, 5),  
-$(2,3,5),(1,5,2),(1,4,5),(1,3,5),(1,2,5)\}$  
-$\{(1,2)(3,4),(1,3)(2,4),(1,4)(2,3),(1,2)(4,5),$  
-(2,3)(4,5)，(1，3)(4，5)，(1，2)(3，5)，(2，4)(3，5)，  
-(1,4)(3,5)，(1，3)(2，5)，(2，5)(3，4)，(1，4)(2，5)，  
-$(1,5)(2,3)$  ，  $(1,5)(3,4)$  ，  $(1,5)(2,4)\} ,\{(1,5,4,3,2),$  
-(1, 3, 5, 4, 2), (1, 3, 2, 5, 4), (1, 2, 4, 5, 3),  
-(1, 2, 5, 3, 4), (1, 5, 3, 2, 4), (1, 4, 5, 2, 3),  
-(1, 4, 3, 5, 2), (1, 5, 2, 4, 3), (1, 2, 3, 4, 5),  
-$(1,4,2,3,5),(1,3,4,2,5)\}$  ，  $\{(1,2,5,4,3),$  
-(1, 5, 4, 2, 3), (1, 2, 3, 5, 4), (1, 4, 5, 3, 2),  
-(1, 5, 3, 4, 2), (1, 4, 2, 5, 3), (1, 3, 4, 5, 2),  
-(1, 3, 5, 2, 4), (1, 5, 2, 3, 4), (1, 3, 2, 4, 5),  
+$\{\{()\} ,\{(1,3,2),(1,2,3),(2,4,3),(1,4,3),(2,3,4),$
+(1, 4, 2), (1, 3, 4), (1, 2, 4), (3, 5, 4), (2, 5, 4),
+(1, 5, 4), (3, 4, 5), (2, 5, 3), (1, 5, 3), (2, 4, 5),
+$(2,3,5),(1,5,2),(1,4,5),(1,3,5),(1,2,5)\}$
+$\{(1,2)(3,4),(1,3)(2,4),(1,4)(2,3),(1,2)(4,5),$
+(2,3)(4,5)，(1，3)(4，5)，(1，2)(3，5)，(2，4)(3，5)，
+(1,4)(3,5)，(1，3)(2，5)，(2，5)(3，4)，(1，4)(2，5)，
+$(1,5)(2,3)$  ，  $(1,5)(3,4)$  ，  $(1,5)(2,4)\} ,\{(1,5,4,3,2),$
+(1, 3, 5, 4, 2), (1, 3, 2, 5, 4), (1, 2, 4, 5, 3),
+(1, 2, 5, 3, 4), (1, 5, 3, 2, 4), (1, 4, 5, 2, 3),
+(1, 4, 3, 5, 2), (1, 5, 2, 4, 3), (1, 2, 3, 4, 5),
+$(1,4,2,3,5),(1,3,4,2,5)\}$  ，  $\{(1,2,5,4,3),$
+(1, 5, 4, 2, 3), (1, 2, 3, 5, 4), (1, 4, 5, 3, 2),
+(1, 5, 3, 4, 2), (1, 4, 2, 5, 3), (1, 3, 4, 5, 2),
+(1, 3, 5, 2, 4), (1, 5, 2, 3, 4), (1, 3, 2, 4, 5),
 (1, 2, 4, 3, 5), (1, 4, 3, 2, 5) \}
 
 This group also has only five conjugacy classes, so it should be no more difficult to find the normal subgroups than  $S_4$ . We can pick a representative element from each of the non-trivial conjugacy classes: (123), (12)(34), (12345), and (12354). From this point we can proceed as in the  $S_4$  example to show that there are no non-trivial normal subgroups of  $A_5$ . (See Problem 7.) However, we can use SageMath to speed up the process.
 
-len (NormalClosure(A5, C(1, 2, 3)))  
+len (NormalClosure(A5, C(1, 2, 3)))
 60
 
-len (NormalClosure(A5, C(1, 2) * C(3, 4)))  
+len (NormalClosure(A5, C(1, 2) * C(3, 4)))
 60
 
-len (NormalClosure(A5, C(1, 2, 3, 4, 5))))  
+len (NormalClosure(A5, C(1, 2, 3, 4, 5))))
 60
 
-len (NormalClosure(A5, C(1, 2, 3, 5, 4))))  
+len (NormalClosure(A5, C(1, 2, 3, 5, 4))))
 60
 
 This shows that if any of the 4 representative elements are in a non-trivial normal subgroup of  $A_5$ , the subgroup would have to be all 60 elements of  $A_5$ .
@@ -10790,8 +10790,8 @@ Find the normal subgroups of the group  $\operatorname{Aut}(Z_{24}^{*})$ , the g
 
 generated by the 187th and 723rd permutation elements.
 
-DisplayPermInt = true  
-A = Group(NthPerm(187), NthPerm(723)); A  
+DisplayPermInt = true
+A = Group(NthPerm(187), NthPerm(723)); A
 {1, 27, 61, 87, 122, 149, 187, 231, 244, 270, 331, 357, 374, 404, 437, 467, 496, 548, 558, 593, 640, 670, 684, 714, 723, 745, 783, 805, 844, 870, 931, 957, 962, 989, 1027, 1071, 1096, 1148, 1158, 1193, 1214, 1244, 1277, 1307, 1366, 1384, 1410, 1428, 1445, 1466, 1509, 1549, 1566, 1588, 1653, 1675, 1681, 1707, 1741, 1767, 1822, 1862, 1889, 1902, 1966, 1984, 2010, 2028, 2054, 2084, 2117, 2147, 2166, 2188, 2253, 2275, 2285, 2306, 2349, 2389, 2403, 2425, 2463, 2485, 2566, 2584, 2610, 2628, 2662, 2702, 2729, 2742, 2780, 2798, 2843, 2861, 2897, 2927, 2954, 2984, 3018, 3071, 3076, 3110, 3144, 3185, 3206, 3220, 3288, 3306, 3328, 3346, 3361, 3387, 3421, 3447, 3487, 3517, 3531, 3561, 3618, 3671, 3676, 3710, 3737, 3767, 3794, 3824, 3888, 3906, 3928, 3946, 3984, 4025, 4046, 4060, 4083, 4105, 4143, 4165, 4213, 4231, 4257, 4275, 4362, 4392, 4402, 4432, 4488, 4506, 4528, 4546, 4577, 4607, 4634, 4664, 4703, 4721, 4760, 4778, 4809, 4839, 4849, 4879, 4935, 4953,
 
 SOLUTION: As large as this group is, SageMath can still quickly find the conjugacy classes.
@@ -10803,10 +10803,10 @@ So we have six conjugacy classes of this group, one of which is just the identit
 which are the 27th, 149th, 231st, 931st, and 957th permutations. This list alone can be used to show that  $A$  is simple, (see Problem 8), but we can also verify that the normal closure of each of these five elements yields the whole group.
 
 ```txt
-len (NormalClosure(A, NthPerm(27)) 168  
-len (NormalClosure(A, NthPerm(149)) 168  
-len (NormalClosure(A, NthPerm(231)) 168  
-len (NormalClosure(A, NthPerm(931)) 168  
+len (NormalClosure(A, NthPerm(27)) 168
+len (NormalClosure(A, NthPerm(149)) 168
+len (NormalClosure(A, NthPerm(231)) 168
+len (NormalClosure(A, NthPerm(931)) 168
 len (NormalClosure(A, NthPerm(957)) 168
 ```
 
@@ -10875,7 +10875,7 @@ Abel took Degen's advice, and wrote several papers on functional equations and i
 
 In 1828, Abel became seriously ill from tuberculosis, and his condition intensified due to Abel's sled trip to visit his fiancée. In spite of a reprieve long enough for the couple to spend Christmas together, he died soon after on April 6, 1829, just 2 days before word arrived that he was appointed as a professor at the University of Berlin.
 
-![](images/0ff7ff5263d0903cd79f50698e8fea61060a39c07215227d099af563515ca7cc.jpg)  
+![](images/0ff7ff5263d0903cd79f50698e8fea61060a39c07215227d099af563515ca7cc.jpg)
 Image source: Wikimedia Commons
 
 15 The group  $L_{3}(4)$  has 20160 elements, and has 10 conjugacy classes of orders 1, 315, 1260, 1260, 1260, 2240, 2880, 2880, 4032, and 4032. Prove that this group is simple. Show that even though  $A_{8}$  is a simple group with the same order, these two groups are not isomorphic.
@@ -10893,9 +10893,9 @@ Hint: Are (12345) and (12354) in the same conjugacy class? Why are (12)(3456) an
 18 The following commands load a group of order 20 into SageMath.
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^5, e); Define(b^4, e); Define(b*a, a^2*b)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^5, e); Define(b^4, e); Define(b*a, a^2*b)
 M = Group()
 ```
 
@@ -10904,10 +10904,10 @@ Find the conjugacy classes of this group, and use this to find all of the normal
 19 The following commands load a group of order 24 into SageMath.
 
 ```julia
-DisplayPermInt = true  
-G = Group(NthPerm(2374), NthPerm(6212)); G  
-{1, 2374, 4517, 6212, 6841, 9929, 11637, 13016, 13698, 15367, 18454, 19853, 21239, 21896, 24132, 25315, 28226, 28986, 30928, 31590, 33108, 37381, 38807, 39487}  
-StructureDescription(2374, 6212)  
+DisplayPermInt = true
+G = Group(NthPerm(2374), NthPerm(6212)); G
+{1, 2374, 4517, 6212, 6841, 9929, 11637, 13016, 13698, 15367, 18454, 19853, 21239, 21896, 24132, 25315, 28226, 28986, 30928, 31590, 33108, 37381, 38807, 39487}
+StructureDescription(2374, 6212)
 SL(2,3)
 ```
 
@@ -11045,7 +11045,7 @@ Even though this is a different composition series, the composition factors are 
 
 ![](images/8a81e830ecaffde85fc2ac3e128103a77c9c24d948e5c9efa55e4ada2d7c9051.jpg)
 
-![](images/e382a945324d73090f6bf8ad86c0bd859f4451bd7572c26345f246cff1d9ca83.jpg)  
+![](images/e382a945324d73090f6bf8ad86c0bd859f4451bd7572c26345f246cff1d9ca83.jpg)
 FIGURE 8.1: Two subnormal series of different lengths
 
 all of the time. However, we have yet to see why two composition series must have the same length. Even if we can prove that the composition series are the same length, the composition factors may not appear in the same order. For example, the group  $Z_{12}$  has the following two subnormal series:
@@ -11074,7 +11074,7 @@ Figure 8.2 shows these set inclusions, and also gives a hint on how we are to de
 
 The next step will be to show that the quotient groups for each interval of the  $A$  series is isomorphic to a quotient group for an interval of the  $B$  series,
 
-![](images/d1e958e3619069912c684e7fa0f8bd5784101a957539be214a9775ff733caaf9.jpg)  
+![](images/d1e958e3619069912c684e7fa0f8bd5784101a957539be214a9775ff733caaf9.jpg)
 FIGURE 8.2: Strategy for the refinement theorem
 
 as shown by the arrows in Figure 8.2. Note that this scrambles the order of the quotient groups, so that the  $i^{\text{th}}$  subinterval of the  $j^{\text{th}}$  interval in the  $A$  series corresponds to the  $j^{\text{th}}$  subinterval of the  $i^{\text{th}}$  interval of the  $B$  series.
@@ -11305,12 +11305,12 @@ For Problems 2 through 10: Write out a composition series for the group.
 
 10  $S_{6}$
 
-11 Show that there are exactly three possible composition series for  $A_4$ .  
-12 Find an example of two non-isomorphic groups for which the composition factors are isomorphic.  
-13 Find two groups of the same order with composition series of different lengths.  
-14 Find a non-simple group for which all of the composition factors are non-cyclic.  
-15 Find a simple group for which all of the composition factors are cyclic.  
-16 Find a non-abelian, solvable group for which there is only one composition series.  
+11 Show that there are exactly three possible composition series for  $A_4$ .
+12 Find an example of two non-isomorphic groups for which the composition factors are isomorphic.
+13 Find two groups of the same order with composition series of different lengths.
+14 Find a non-simple group for which all of the composition factors are non-cyclic.
+15 Find a simple group for which all of the composition factors are cyclic.
+16 Find a non-abelian, solvable group for which there is only one composition series.
 17 Prove that if the refinement theorem (8.2) is applied to two normal series, the resulting series will be normal. That is, if  $A_u$  and  $B_v$  are such that
 
 $$
@@ -11346,17 +11346,17 @@ are two chief series, then  $n = m$ , and the quotient groups of the first serie
 19 Use SageMath to find a composition series for the following group of order 20:
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b")  
-Define(a^5, e); Define(b^4, e); Define(b*a, a^2*b)  
+InitGroup("e")
+AddGroupVar("a", "b")
+Define(a^5, e); Define(b^4, e); Define(b*a, a^2*b)
 M = Group()
 ```
 
 20 Use SageMath to find a composition series for the following group:
 
 ```txt
-DisplayPermInt = true  
-G = Group(NthPerm(2374), NthPerm(6212)); G  
+DisplayPermInt = true
+G = Group(NthPerm(2374), NthPerm(6212)); G
 {1, 2374, 4517, 6212, 6841, 9929, 11637, 13016, 13698, 15367, 18454, 19853, 21239, 21896, 24132, 25315, 28226, 28986, 30928, 31590, 33108, 37381, 38807, 39487}
 ```
 
@@ -11392,7 +11392,7 @@ $$
 E \times K \approx E \times Z _ {3} \times Z _ {3} \times Z _ {3} \times Z _ {3}.
 $$
 
-![](images/8bac35d39c32a6b67f77100a03716251a77ec80ad81fbdc6ffa61b60930a5a68.jpg)  
+![](images/8bac35d39c32a6b67f77100a03716251a77ec80ad81fbdc6ffa61b60930a5a68.jpg)
 FIGURE 8.3: The PyraminxTM without the corners
 
 To find the structure of the subgroup  $E$ , we analyze the puzzle without the corners, as in Figure 8.3 created by SageMath's HideCorners command.
@@ -11416,8 +11416,8 @@ quotient group  $E / H$  can now be visualized by ignoring whether the six edge 
 We can use SageMath to analyze this group  $E$ . First we consider the subgroup  $H$ , which is the subgroup of flipping an even number of edges. We can represent the edges by disjoint transpositions.
 
 ```matlab
-H = Group(C(1,2) * C(3,4), C(3,4) * C(5,6), C(5,6) * C(7,8), C(7,8) * C(9,10), C(9,10) * C(11,12))  
-len(H)  
+H = Group(C(1,2) * C(3,4), C(3,4) * C(5,6), C(5,6) * C(7,8), C(7,8) * C(9,10), C(9,10) * C(11,12))
+len(H)
 32
 ```
 
@@ -11451,14 +11451,14 @@ Knowing the structure of the group allows us the solve the puzzle! Here is the s
 
 1. First put all of the edge pieces in place. We can begin with the bottom, then rotate the front and back corners until the back two edges are in the right place (they may be reversed). Finally, rotate the front corner until all six edges are in place.
 
-TABLE 8.2: Orders of the group  $E$  
+TABLE 8.2: Orders of the group  $E$
 
 <table><tr><td>1</td><td>element of order 1,</td></tr><tr><td>391</td><td>elements of order 2,</td></tr><tr><td>800</td><td>elements of order 3,</td></tr><tr><td>2520</td><td>elements of order 4,</td></tr><tr><td>2304</td><td>elements of order 5,</td></tr><tr><td>1760</td><td>elements of order 6,</td></tr><tr><td>1440</td><td>elements of order 8,</td></tr><tr><td>2304</td><td>elements of order 10,</td></tr><tr><td>11520</td><td>elements total.</td></tr></table>
 
-![](images/7c1f6539c401292880013f637f61df69852470438cdcc6cc286a780b60e73524.jpg)  
+![](images/7c1f6539c401292880013f637f61df69852470438cdcc6cc286a780b60e73524.jpg)
 FIGURE 8.4: The PyraminxTM with numbered faces
 
-2. At this point, an even number of edges will be reversed. We can find routines that will flip two, four, or six of the edges. These may rotate corners in the process.  
+2. At this point, an even number of edges will be reversed. We can find routines that will flip two, four, or six of the edges. These may rotate corners in the process.
 3. Now only the four corner pieces are out of position. We can find routines to rotate these into position.
 
 To find a combination of the four moves  $f$ ,  $b$ ,  $r$ , and  $l$  that will accomplish these goals, we can have SageMath help us. First we can number the 24 triangles, as in Figure 8.4. Since we consider the product of several rotations to be done from left to right, we need to convert the rotations to permutations the way that we converted book rearrangements. That is, for each number, we consider what new number will be in that position after the rotation. Thus the permutation (4 14 23)(5 15 24)(6 16 19) can represent  $r$ ,  $l = (8 21 16)(9 22 17)(10 23 18)$ ,  $f = (1 7 13)(2 8 14)(6 12 18)$ , and finally  $b = (2 19 10)(3 20 11)(4 21 12)$ . We can then enter the Pyraminx™ group as a subgroup of  $S_{24}$ .
@@ -11471,7 +11471,7 @@ $\mathbf{l} = \mathbf{C}(8,21,16)*\mathbf{C}(9,22,17)*\mathbf{C}(10,23,18)$ $\ma
 
 Now that these rotations are entered into SageMath as permutations, the natural question is how to express any given permutation in the group generated by these elements in terms of  $f$ ,  $b$ ,  $r$  and  $l$  in the most efficient way. For example, suppose we want to find an efficient way to rotate just the right corner piece clockwise, that is the permutation (5 15 24). SageMath can do this with the ExpressAsWord command.
 
-ExpressAsWord([ "r", "l", "f", "b" ], C(5,15,24) )  
+ExpressAsWord([ "r", "l", "f", "b" ], C(5,15,24) )
 'r*b*r^-2*b^-1*r*b*r*b^-1'
 
 This returns a string that describes one of the fastest ways to reach the target permutation from the permutations given. If we evaluate the contents of the string,
@@ -11486,14 +11486,14 @@ $\mathbf{r} = \mathbf{C}(4,14,23) * \mathbf{C}(6,16,19)$ $\mathbf{l} = \mathbf{C
 
 By ignoring corners, we reduce the number of puzzle positions down to 11520, so it should be easy to find combinations that produce the right flips. For example, to flip the top and front left edges, we need the permutation (212)(818).
 
-ExpressAsWord([r", "1", "f", "b"], C(2,12) * C(8,18))  
-' r*1^-1*b^-1*1*r^-1*f^-1'  
-r*1^-1*b^-1*1*r^-1*f^-1  
+ExpressAsWord([r", "1", "f", "b"], C(2,12) * C(8,18))
+' r*1^-1*b^-1*1*r^-1*f^-1'
+r*1^-1*b^-1*1*r^-1*f^-1
 (2, 12) (8, 18)
 
 We summarize the necessary moves in Table 8.3. Note that this also includes routines for rotating a corner without changing the rest of the puzzle. By applying these four routines once or twice, we can get all four corners into position, and solve the puzzle!
 
-TABLE 8.3: Flipping edges and rotating corners into position  
+TABLE 8.3: Flipping edges and rotating corners into position
 
 <table><tr><td>l-1·b·f·l-1·b·f·l-1·b·f</td><td>flip all six edges</td></tr><tr><td>f·b·r-1·l·r·b-1</td><td>flip two front edges</td></tr><tr><td>b·l·b·r·l·r-1·l-1·b</td><td>flip top &amp; bottom edges</td></tr><tr><td>f·r·l-1·b·l·r-1</td><td>flip top &amp; front left edges</td></tr><tr><td>r·l-1·b·l·r-1·f</td><td>flip top &amp; front right edges</td></tr><tr><td>r·b·r·l·b·l-1·b-1·r</td><td>flip left rear &amp; front right edges</td></tr><tr><td>l·r·l·b·r·b-1·r-1·l</td><td>flip right rear &amp; front left edges</td></tr><tr><td>r·b·l-1·f·l·b-1</td><td>flip bottom &amp; front right edges</td></tr><tr><td>l·b·f-1·r·f·b-1</td><td>flip bottom &amp; front left edges</td></tr><tr><td>b·r·f-1·l·f·r-1</td><td>flip top &amp; left rear edges</td></tr><tr><td>b·l·r-1·f·r·l-1</td><td>flip top &amp; right rear edges</td></tr><tr><td>b·f·l-1·r·l·f-1</td><td>flip rear two edges</td></tr><tr><td>l·f·r-1·b·r·f-1</td><td>flip bottom &amp; left rear edges</td></tr><tr><td>r·f·b-1·l·b·f-1</td><td>flip bottom &amp; right rear edges</td></tr><tr><td>l·r·b-1·f·b·r-1</td><td>flip two left-hand edges</td></tr><tr><td>r·l·f-1·b·f·l-1</td><td>flip two right-hand edges</td></tr><tr><td>f·r·f·r-1·f·r·f·r-1</td><td>rotate front corner 120° clockwise</td></tr><tr><td>l·r·l·r-1·l·r·l·r-1</td><td>rotate left corner 120° clockwise</td></tr><tr><td>r·b·r·b-1·r·b·r·b-1</td><td>rotate right corner 120° clockwise</td></tr><tr><td>b·r·b·r-1·b·r·b·r-1</td><td>rotate back corner 120° clockwise</td></tr></table>
 
@@ -11501,17 +11501,17 @@ This same type of analysis can be used to solve other puzzles, such as the Rubik
 
 But not all applications of groups are fun and games. Group theory has also become the backbone of modern mathematics and many important proofs, such as the impossibility of finding solutions to fifth degree polynomials, hinge entirely on finite groups. The theory of finite groups also has applications in quantum physics and inorganic chemistry and crystallography. Therefore, the material presented in this course has many applications beyond mathematics.
 
-![](images/9e32f26497a853e320d67257f361d1fd1a2d3a2345f5857c24b35415a2712c3d.jpg)  
+![](images/9e32f26497a853e320d67257f361d1fd1a2d3a2345f5857c24b35415a2712c3d.jpg)
 FIGURE 8.5: Sam Loyd's 14-15 puzzle for Problem 4
 
 # Problems for §8.5
 
-1 Using the orders of the subgroup  $E$  of the Pyraminx™ group given in Table 8.2, determine the number of elements of the Pyraminx™ group that are of order 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 24, and 30. Verify that the sum of these numbers totals 933,120.  
+1 Using the orders of the subgroup  $E$  of the Pyraminx™ group given in Table 8.2, determine the number of elements of the Pyraminx™ group that are of order 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 24, and 30. Verify that the sum of these numbers totals 933,120.
 2 Consider a  $2 \times 2 \times 2$  Rubik's Cube, consisting of just eight corner pieces. Determine the size of the group of actions on this cube.
 
 Hint: It is impossible to rotate just one corner, and leave the others in place. Is it possible to move just two of the corners?
 
-3 Consider a standard Rubik's Cube. What is the size of the group of actions? What is the center of this group?  
+3 Consider a standard Rubik's Cube. What is the size of the group of actions? What is the center of this group?
  4 A predecessor to the Rubrik's Cube® is the puzzle shown in Figure 8.5, introduced in the 1870's. Solvable versions of the puzzle are sold today as party favors. A move consists of sliding one of the fifteen numbered blocks into the lone empty space. The goal is to get all of the numbers into numerical order. Sam Loyd came up with the version shown in Figure 8.5, with the 14 and 15 blocks exchanged. Sam Loyd offered $1000 for the first person to come up with a solution. Show that in fact, this version of the puzzle is unsolvable.
 
 Hint: Consider the empty space as a 16, so that the positions are elements of  $S_{16}$ .
@@ -11522,15 +11522,15 @@ Hint: Try different combinations of  $a$  and  $b$  to find another 3-cycle.
 
 6 Let  $a = (12345)$  and  $b = (124)$  be two elements of  $A_5$ . Find a way to express the element (14)(25) in terms of  $a$  and  $b$ . There is more than one correct answer.
 
-![](images/b3b8d9592aedfe2cdd9f91a3eb8fbc1ec18e56e58db633f9348c1e6deb76da19.jpg)  
+![](images/b3b8d9592aedfe2cdd9f91a3eb8fbc1ec18e56e58db633f9348c1e6deb76da19.jpg)
 FIGURE 8.6: Puzzle for Problems 7, 8, and 9
 
 7 Consider the puzzle shown in Figure 8.6, in which the seven disks can move within the track, moving  $1 \to 2 \to 3 \to 4 \to 5 \to 6 \to 7$ , and also the dotted circle can rotate  $180^{\circ}$ , exchanging  $1 \leftrightarrow 3$  and  $2 \leftrightarrow 6$ . Show that the set of positions that can be obtained from these two moves is a subgroup of  $A_7$ .
 
 # Interactive Problems
 
-8 Consider the puzzle from Problem 7, in which the possible positions are generated from the elements  $a = (1234567)$  and  $b = (13)(26)$ . Find the group generated from these two elements, and show that this is not all of  $A_7$ . How many elements are in this group? Have we seen any other subgroups of  $A_7$  with this number of elements?  
-9 Even though the puzzle from Problem 7 cannot produce all positions in  $A_7$ , the position corresponding to flipping the dotted circle vertically, so that  $1 \leftrightarrow 2$  and  $3 \leftrightarrow 6$  can be obtained. Use ExpressAsWord to find a way to express (12)(36) in terms of  $a = (1234567)$  and  $b = (13)(26)$ . This problem is not available in Mathematica.  
+8 Consider the puzzle from Problem 7, in which the possible positions are generated from the elements  $a = (1234567)$  and  $b = (13)(26)$ . Find the group generated from these two elements, and show that this is not all of  $A_7$ . How many elements are in this group? Have we seen any other subgroups of  $A_7$  with this number of elements?
+9 Even though the puzzle from Problem 7 cannot produce all positions in  $A_7$ , the position corresponding to flipping the dotted circle vertically, so that  $1 \leftrightarrow 2$  and  $3 \leftrightarrow 6$  can be obtained. Use ExpressAsWord to find a way to express (12)(36) in terms of  $a = (1234567)$  and  $b = (13)(26)$ . This problem is not available in Mathematica.
 10 Suppose we are only allowed to rotate the sides of a  $2 \times 2 \times 2$  Rubik's Cube by  $180^{\circ}$ . Find the corresponding group of possible positions that can be formed.
 
 Hint: Since there is no center square, we can fix one corner, so only 21 of the squares can move. There will be 3 axes of rotation, so we have 3 elements of  $S_{21}$ . Find the group generated by these 3 elements.
@@ -11539,7 +11539,7 @@ Hint: Since there is no center square, we can fix one corner, so only 21 of the 
 
 12 First show that  $A_7$  is generated by the elements  $a = (167)(254)$  and  $b = (1372)(46)$ . Then use ExpressAsWord to find a way to express (123) in terms of  $a$  and  $b$ . This problem is not available in Mathematica.
 
-![](images/7f0c00f13998ce6a98d998c3a3be4f3a5c228c2761230eac1cdee1cac502a594.jpg)  
+![](images/7f0c00f13998ce6a98d998c3a3be4f3a5c228c2761230eac1cdee1cac502a594.jpg)
 FIGURE 8.7: Puzzle for Problem 13
 
 13 Consider the puzzle in Figure 8.7, with 7 disks on 2 wheels. The action  $L$  turns the left wheel  $90^{\circ}$  clockwise, taking the disks with it. The action  $R$  turns the right wheel  $72^{\circ}$  clockwise, again taking the disks with it. The goal is to swap disks 5 and 6, so the disks are in consecutive order. Use SageMath's ExpressAsWord to solve this puzzle. A few brave souls might try to solve this puzzle without SageMath's help. This problem is not available in Mathematica.
@@ -11558,7 +11558,7 @@ Subgroups of  $\mathbb{Z}$  can also be considered. A typical example would be t
 
 Likewise, the group of rationals  $\mathbb{Q}$  and real numbers  $\mathbb{R}$  have two operations. Although these are both abelian groups under addition, they are almost groups under multiplication as well. The multiplicative inverse exists for all
 
-TABLE 9.1: (·) mod 6  
+TABLE 9.1: (·) mod 6
 
 <table><tr><td>.</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>2</td><td>0</td><td>2</td><td>4</td><td>0</td><td>2</td><td>4</td></tr><tr><td>3</td><td>0</td><td>3</td><td>0</td><td>3</td><td>0</td><td>3</td></tr><tr><td>4</td><td>0</td><td>4</td><td>2</td><td>0</td><td>4</td><td>2</td></tr><tr><td>5</td><td>0</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td></tr></table>
 
@@ -11634,7 +11634,7 @@ We call the group of four-dimensional vectors of the form  $a + bi + cj + dk$  t
 
 We have seen many examples of groups that exhibit not one but two operations defined on them. One of these operations is represented with the plus sign, and the other is usually denoted with a dot. Our goal will be to come up with a definition that unites these examples. Let us consider which properties
 
-TABLE 9.2: Property checklist for several groups  
+TABLE 9.2: Property checklist for several groups
 
 <table><tr><td>Property</td><td>Z</td><td>Even Integers</td><td>Q</td><td>Reals</td><td>Z6</td><td>Quaternions</td></tr><tr><td>Closed under Addition</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Closed under Multiplication</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>(a+b)+c=a+(b+c)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>(a·b)·c=a·(b·c)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Additive Identity (0)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Multiplicative Identity (1)</td><td>✓</td><td>×</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Additive Inverses Exist</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>Multiplicative Inverses Exist Except for 0</td><td>×</td><td>×</td><td>✓</td><td>✓</td><td>×</td><td>✓</td></tr><tr><td>a+b=b+a</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>a·b=b·a</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>×</td></tr><tr><td>a·b=0 only if a or b=0</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>×</td><td>✓</td></tr><tr><td>(a+b)·c=a·c+b·c</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>a·(b+c)=a·b+a·c</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr></table>
 
@@ -11805,17 +11805,17 @@ When Hilter rose to power in 1933, Noether and other Jewish professors at Götti
 
 Image source: Wikimedia Commons
 
-1  $(-x)\cdot y = -(x\cdot y)$  4  $x\cdot (y - z) = x\cdot y - x\cdot z$  
-2  $x\cdot (-y) = -(x\cdot y)$  5  $(x - y)\cdot z = x\cdot z - y\cdot z$  
+1  $(-x)\cdot y = -(x\cdot y)$  4  $x\cdot (y - z) = x\cdot y - x\cdot z$
+2  $x\cdot (-y) = -(x\cdot y)$  5  $(x - y)\cdot z = x\cdot z - y\cdot z$
 3  $(-x)\cdot (-y) = x\cdot y$  6  $(x + y)\cdot (x - y) = (x^{2} - y^{2}) + (y\cdot x - x\cdot y)$
 
-7 If  $a$  and  $b$  are elements of a ring  $R$ , and  $a \cdot b$  is a zero divisor, prove that either  $a$  or  $b$  is a zero divisor.  
-8 For the quaternions,  $\mathbb{H}$ , we define the conjugate of an element  $x = a + bi + cj + dk$  to be  $\overline{x} = a - bi - cj - dk$ . Prove that  $\overline{x_1} + \overline{x_2} = \overline{x_1 + x_2}$  for all  $x_1$  and  $x_2$  in  $\mathbb{H}$ .  
-9 Prove or disprove:  $\overline{x_1} \cdot \overline{x_2} = \overline{x_1 \cdot x_2}$  for all  $x_1$  and  $x_2$  in  $\mathbb{H}$ . (See Problem 8.)  
-10 Prove that for  $x$  in  $\mathbb{H}$ ,  $x \cdot \overline{x} = \overline{x} \cdot x = a^2 + b^2 + c^2 + d^2$ . (See Problem 8.)  
-11 For all  $x$  in  $\mathbb{H}$ , we define the absolute value of  $x$  to be  $|x| = \sqrt{x \cdot \overline{x}}$ . Prove that  $|x_1 \cdot x_2| = |x_1||x_2|$ . (See Problem 8.)  
-12 Prove or disprove: For all  $x$  in the quaternions  $\mathbb{H}$ ,  $(x + 1) \cdot (x - 1) = x^2 - 1$ .  
-13 Prove or disprove: For all  $x$  in the quaternions  $\mathbb{H}$ ,  $(x + i) \cdot (x - i) = x^2 + 1$ .  
+7 If  $a$  and  $b$  are elements of a ring  $R$ , and  $a \cdot b$  is a zero divisor, prove that either  $a$  or  $b$  is a zero divisor.
+8 For the quaternions,  $\mathbb{H}$ , we define the conjugate of an element  $x = a + bi + cj + dk$  to be  $\overline{x} = a - bi - cj - dk$ . Prove that  $\overline{x_1} + \overline{x_2} = \overline{x_1 + x_2}$  for all  $x_1$  and  $x_2$  in  $\mathbb{H}$ .
+9 Prove or disprove:  $\overline{x_1} \cdot \overline{x_2} = \overline{x_1 \cdot x_2}$  for all  $x_1$  and  $x_2$  in  $\mathbb{H}$ . (See Problem 8.)
+10 Prove that for  $x$  in  $\mathbb{H}$ ,  $x \cdot \overline{x} = \overline{x} \cdot x = a^2 + b^2 + c^2 + d^2$ . (See Problem 8.)
+11 For all  $x$  in  $\mathbb{H}$ , we define the absolute value of  $x$  to be  $|x| = \sqrt{x \cdot \overline{x}}$ . Prove that  $|x_1 \cdot x_2| = |x_1||x_2|$ . (See Problem 8.)
+12 Prove or disprove: For all  $x$  in the quaternions  $\mathbb{H}$ ,  $(x + 1) \cdot (x - 1) = x^2 - 1$ .
+13 Prove or disprove: For all  $x$  in the quaternions  $\mathbb{H}$ ,  $(x + i) \cdot (x - i) = x^2 + 1$ .
 14 Let
 
 $$
@@ -11861,10 +11861,10 @@ Try this with  $Z_{5}, Z_{7}, Z_{8}, Z_{9}, Z_{10}, Z_{11}$ , and  $Z_{12}$ , an
 22 Use SageMath to show that quaternion multiplication is associative. That is, if we define
 
 ```txt
-$\mathsf{Q} =$  InitQuaternions()   
-var("a1 a2 a3 b1 b2 b3 c1 c2 c3 d1 d2 d3")   
- $\mathbf{x} = \mathbf{a}1 + \mathbf{b}1*\mathbf{i} + \mathbf{c}1*\mathbf{j} + \mathbf{d}1*\mathbf{k}$    
-y  $=$  a2  $^+$  b2\*i  $^+$  c2\*j  $^+$  d2\*k   
+$\mathsf{Q} =$  InitQuaternions()
+var("a1 a2 a3 b1 b2 b3 c1 c2 c3 d1 d2 d3")
+ $\mathbf{x} = \mathbf{a}1 + \mathbf{b}1*\mathbf{i} + \mathbf{c}1*\mathbf{j} + \mathbf{d}1*\mathbf{k}$
+y  $=$  a2  $^+$  b2\*i  $^+$  c2\*j  $^+$  d2\*k
 z  $=$  a3  $^+$  b3\*i  $^+$  c3\*j  $^+$  d3\*k
 ```
 
@@ -11988,7 +11988,7 @@ DEFINITION 9.9 Let  $R$  be a ring. We define the characteristic of  $R$  to be 
 
 When we define a ring using SageMath, the characteristic will simply be the least common multiple of the additive orders of the generators. Thus, for the ring with the additive structure of Table 9.3, the characteristic is  $\operatorname{lcm}(4,2) = 4$ .
 
-TABLE 9.3: Addition table for the ring R  
+TABLE 9.3: Addition table for the ring R
 
 <table><tr><td>+</td><td>0</td><td>a</td><td>2a</td><td>3a</td><td>b</td><td>a+b</td><td>2a+b</td><td>3a+b</td></tr><tr><td>0</td><td>0</td><td>a</td><td>2a</td><td>3a</td><td>b</td><td>a+b</td><td>2a+b</td><td>3a+b</td></tr><tr><td>a</td><td>a</td><td>2a</td><td>3a</td><td>0</td><td>a+b</td><td>2a+b</td><td>3a+b</td><td>b</td></tr><tr><td>2a</td><td>2a</td><td>3a</td><td>0</td><td>a</td><td>2a+b</td><td>3a+b</td><td>b</td><td>a+b</td></tr><tr><td>3a</td><td>3a</td><td>0</td><td>a</td><td>2a</td><td>3a+b</td><td>b</td><td>a+b</td><td>2a+b</td></tr><tr><td>b</td><td>b</td><td>a+b</td><td>2a+b</td><td>3a+b</td><td>0</td><td>a</td><td>2a</td><td>3a</td></tr><tr><td>a+b</td><td>a+b</td><td>2a+b</td><td>3a+b</td><td>b</td><td>a</td><td>2a</td><td>3a</td><td>0</td></tr><tr><td>2a+b</td><td>2a+b</td><td>3a+b</td><td>b</td><td>a+b</td><td>2a</td><td>3a</td><td>0</td><td>a</td></tr><tr><td>3a+b</td><td>3a+b</td><td>b</td><td>a+b</td><td>2a+b</td><td>3a</td><td>0</td><td>a</td><td>2a</td></tr></table>
 
@@ -11999,11 +11999,11 @@ Notice that there are several differences between defining a group and defining 
 Although this defines the additive group very quickly, we must be selective in choosing the generators. Suppose we had instead chosen the generators  $a = 2$  and  $b = 7$ . These two elements generate the group  $Z_{15}^{*}$ , but both are of order 4. So the SageMath commands for entering these two generators would be
 
 ```txt
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0)  
-Define(4*b, 0)  
-R = Ring(); R  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0)
+Define(4*b, 0)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3a + b, 2b, a + 2b, 2a + 2b, 3a + 2b, 3b, a + 3b, 2a + 3b, 3a + 3b}
 ```
 
@@ -12045,15 +12045,15 @@ $$
 
 We can enter the four products using four more Define commands in SageMath. To define the ring described in the above paragraph, we can use
 
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0)  
-Define(2*b, 0)  
-Define(a^2, a)  
-Define(b^2, b)  
-Define(a*b, 0)  
-Define(b*a, 0)  
-R = Ring(); R  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0)
+Define(2*b, 0)
+Define(a^2, a)
+Define(b^2, b)
+Define(a*b, 0)
+Define(b*a, 0)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}
 
 The addition table was given above in Table 9.3, while the multiplication table is given by
@@ -12062,7 +12062,7 @@ The addition table was given above in Table 9.3, while the multiplication table 
 
 producing Table 9.4.
 
-TABLE 9.4: Multiplication table for the ring R  
+TABLE 9.4: Multiplication table for the ring R
 
 <table><tr><td>·</td><td>0</td><td>a</td><td>2a</td><td>3a</td><td>b</td><td>a+b</td><td>2a+b</td><td>3a+b</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>a</td><td>0</td><td>a</td><td>2a</td><td>3a</td><td>0</td><td>a</td><td>2a</td><td>3a</td></tr><tr><td>2a</td><td>0</td><td>2a</td><td>0</td><td>2a</td><td>0</td><td>2a</td><td>0</td><td>2a</td></tr><tr><td>3a</td><td>0</td><td>3a</td><td>2a</td><td>a</td><td>0</td><td>3a</td><td>2a</td><td>a</td></tr><tr><td>b</td><td>0</td><td>0</td><td>0</td><td>0</td><td>b</td><td>b</td><td>b</td><td>b</td></tr><tr><td>a+b</td><td>0</td><td>a</td><td>2a</td><td>3a</td><td>b</td><td>a+b</td><td>2a+b</td><td>3a+b</td></tr><tr><td>2a+b</td><td>0</td><td>2a</td><td>0</td><td>2a</td><td>b</td><td>2a+b</td><td>b</td><td>2a+b</td></tr><tr><td>3a+b</td><td>0</td><td>3a</td><td>2a</td><td>a</td><td>b</td><td>3a+b</td><td>2a+b</td><td>a+b</td></tr></table>
 
@@ -12087,13 +12087,13 @@ Try to define a non-commutative ring using  $Z_{15}^{*}$  as the additive group.
 # InitRing()
 
 ```txt
-AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a*b, b); Define(b*a, 2*a)  
-Define(a^2, 0); Define(b^2, 0)  
-CheckRing()  
-a * (a * b) is not (a * a) * b  
-a * (b * a) is not (a * b) * a  
+AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a*b, b); Define(b*a, 2*a)
+Define(a^2, 0); Define(b^2, 0)
+CheckRing()
+a * (a * b) is not (a * a) * b
+a * (b * a) is not (a * b) * a
 Associative law does not hold.
 ```
 
@@ -12104,20 +12104,20 @@ It would seem as though there would be 64 possibilities to check, but we can nar
 We now have enough information to try the ring again.
 
 ```txt
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a*b, b); Define(b*a, 2*a)  
-Define(a^2, a); Define(b^2, 0)  
-CheckRing()  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a*b, b); Define(b*a, 2*a)
+Define(a^2, a); Define(b^2, 0)
+CheckRing()
 This is a ring.
 ```
 
 In this case, there is no unity element.
 
 ```latex
-$\mathbb{R} = \mathbb{Ring}();\mathbb{R}$ $\{0,a,2a,3a,b,a + b,2a + b,3a + b\}$    
-FindUnity(R)   
+$\mathbb{R} = \mathbb{Ring}();\mathbb{R}$ $\{0,a,2a,3a,b,a + b,2a + b,3a + b\}$
+FindUnity(R)
 No unity element
 ```
 
@@ -12194,13 +12194,13 @@ CheckRing()
 This is a ring.
 
 ```txt
-T8 = Ring(); T8  
-{0, e, a, e + a, b, e + b, a + b, e + a + b}  
-FindUnity(T8)  
+T8 = Ring(); T8
+{0, e, a, e + a, b, e + b, a + b, e + a + b}
+FindUnity(T8)
 e
 ```
 
-TABLE 9.5: Multiplication for a non-commutative unity ring  
+TABLE 9.5: Multiplication for a non-commutative unity ring
 
 <table><tr><td>·</td><td>0</td><td>e</td><td>a</td><td>e+a</td><td>b</td><td>e+b</td><td>a+b</td><td>e+a+b</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>e</td><td>0</td><td>e</td><td>a</td><td>e+a</td><td>b</td><td>e+b</td><td>a+b</td><td>e+a+b</td></tr><tr><td>a</td><td>0</td><td>a</td><td>a</td><td>0</td><td>a</td><td>0</td><td>0</td><td>a</td></tr><tr><td>e+a</td><td>0</td><td>e+a</td><td>0</td><td>e+a</td><td>a+b</td><td>e+b</td><td>a+b</td><td>e+b</td></tr><tr><td>b</td><td>0</td><td>b</td><td>b</td><td>0</td><td>b</td><td>0</td><td>0</td><td>b</td></tr><tr><td>e+b</td><td>0</td><td>e+b</td><td>a+b</td><td>e+a</td><td>0</td><td>e+b</td><td>a+b</td><td>e+a</td></tr><tr><td>a+b</td><td>0</td><td>a+b</td><td>a+b</td><td>0*a</td><td>a+b</td><td>0</td><td>0</td><td>a+b</td></tr><tr><td>e+a+b</td><td>0</td><td>e+a+b</td><td>b</td><td>e+a</td><td>a</td><td>e+b</td><td>a+b</td><td>e</td></tr></table>
 
@@ -12214,24 +12214,24 @@ For Problems 1 through 10: Given the few properties of the generators of a ring,
 
 Hint: Use the associate law to fill in the missing information.
 
-1  $a\cdot b = b,\quad b\cdot a = a$  6  $a\cdot b = a + b,\quad b^2 = a + b$  
-2  $a\cdot b = a$  ，  $b\cdot a = 0$  ，  $b^{2} = b$  7  $a\cdot b = a$  ，  $b^{2} = a$  
-3  $a^2 = b, \quad a \cdot b = a$  8  $a \cdot b = 2b, \quad b \cdot a = a, \quad 3b = 0$  
-4  $a^2 = a + b,\quad b\cdot a = 0$  9  $a\cdot b = b,\quad b\cdot a = 3a,\quad 4a = 0$  
+1  $a\cdot b = b,\quad b\cdot a = a$  6  $a\cdot b = a + b,\quad b^2 = a + b$
+2  $a\cdot b = a$  ，  $b\cdot a = 0$  ，  $b^{2} = b$  7  $a\cdot b = a$  ，  $b^{2} = a$
+3  $a^2 = b, \quad a \cdot b = a$  8  $a \cdot b = 2b, \quad b \cdot a = a, \quad 3b = 0$
+4  $a^2 = a + b,\quad b\cdot a = 0$  9  $a\cdot b = b,\quad b\cdot a = 3a,\quad 4a = 0$
 5  $a\cdot b = a,\quad b^2 = a + b$  10  $a^2 = b,\quad b^2 = a,\quad 2a = 2b = 0$
 
-11 If  $a^2 = a + b + c$ ,  $a \cdot b = c$ ,  $b \cdot c = a$ ,  $c \cdot a = a \cdot c = b$ , determine  $b^2$ ,  $c^2$ ,  $b \cdot a$ , and  $c \cdot b$ .  
+11 If  $a^2 = a + b + c$ ,  $a \cdot b = c$ ,  $b \cdot c = a$ ,  $c \cdot a = a \cdot c = b$ , determine  $b^2$ ,  $c^2$ ,  $b \cdot a$ , and  $c \cdot b$ .
 12 Prove that a ring with a cyclic additive group must be commutative.
 
-13 Prove that for  $m$  a positive integer, and  $x$  and  $y$  elements of a ring, then  $m(x + y) = mx + my$ .  
-14 Prove that for  $m$  and  $n$  positive integers, and  $x$  an element of a ring, then  $(m + n)x = mx + nx$ .  
-15 Prove that for  $m$  and  $n$  positive integers, and  $x$  an element of a ring, then  $(mn)x = m(nx)$ .  
-16 Prove that if  $n$  is an integer, and  $x$  is an element of a ring, then  $n(-x) = -(nx)$ .  
-17 Find the characteristic of the ring  $T_{8}$  defined by Table 9.5.  
-18 Prove that if  $n > 1$ , the characteristic of  $Z_{n}$  is  $n$ .  
-19 Let  $R$  be unity ring. If the unity element has a finite order in the additive group, show that this order is the characteristic of the ring.  
-20 Prove that if a ring  $R$  has a finite number of elements, then the characteristic of  $R$  is a positive integer.  
-21 Use the fundamental theorem of abelian groups (7.2) to show that every finite abelian group has a basis.  
+13 Prove that for  $m$  a positive integer, and  $x$  and  $y$  elements of a ring, then  $m(x + y) = mx + my$ .
+14 Prove that for  $m$  and  $n$  positive integers, and  $x$  an element of a ring, then  $(m + n)x = mx + nx$ .
+15 Prove that for  $m$  and  $n$  positive integers, and  $x$  an element of a ring, then  $(mn)x = m(nx)$ .
+16 Prove that if  $n$  is an integer, and  $x$  is an element of a ring, then  $n(-x) = -(nx)$ .
+17 Find the characteristic of the ring  $T_{8}$  defined by Table 9.5.
+18 Prove that if  $n > 1$ , the characteristic of  $Z_{n}$  is  $n$ .
+19 Let  $R$  be unity ring. If the unity element has a finite order in the additive group, show that this order is the characteristic of the ring.
+20 Prove that if a ring  $R$  has a finite number of elements, then the characteristic of  $R$  is a positive integer.
+21 Use the fundamental theorem of abelian groups (7.2) to show that every finite abelian group has a basis.
 22 Show that  $\{2,3\}$  is a basis of the group  $Z_{6}$ . Since  $\{1\}$  is also a basis, this indicates that the number  $k$  in Definition 9.10 is not uniquely determined.
 
 # Interactive Problems
@@ -12262,11 +12262,11 @@ Z15  $\{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14\}$
 
 We can perform simple operations in  $Z_{15}$  such as
 
-Z15[9] + Z15[7]  
-1  
-Z15[9] * Z15[7]  
-3  
-Z15[9] / Z15[7]  
+Z15[9] + Z15[7]
+1
+Z15[9] * Z15[7]
+3
+Z15[9] / Z15[7]
 12
 
 This last operation shows that we can take multiplicative inverses of some of the elements. Even though multiplicative inverses are not guaranteed to exist for rings, some elements may be invertible.
@@ -12381,7 +12381,7 @@ So  $b^{a - 2}$  is the multiplicative inverse of  $b$ .
 
 #
 
-TABLE 9.6: The non-commutative ring  ${T}_{4}$  
+TABLE 9.6: The non-commutative ring  ${T}_{4}$
 
 <table><tr><td>+</td><td>0</td><td>a</td><td>b</td><td>c</td></tr><tr><td>0</td><td>0</td><td>a</td><td>b</td><td>c</td></tr><tr><td>a</td><td>a</td><td>0</td><td>c</td><td>b</td></tr><tr><td>b</td><td>b</td><td>c</td><td>0</td><td>a</td></tr><tr><td>c</td><td>c</td><td>b</td><td>a</td><td>0</td></tr></table>
 
@@ -12407,34 +12407,34 @@ To conclude this chapter, let us find an example of each of the 11 different typ
 
 # Problems for §9.3
 
-1 Show that the non-commutative ring  $T_4$  given by Table 9.6 has two elements  $r$  such that  $x \cdot r = x$  for all  $x$  in the ring, yet has no element for which  $r \cdot x = x$  for all  $x$  in the ring.  
+1 Show that the non-commutative ring  $T_4$  given by Table 9.6 has two elements  $r$  such that  $x \cdot r = x$  for all  $x$  in the ring, yet has no element for which  $r \cdot x = x$  for all  $x$  in the ring.
 2 Let  $x$  be an element of a commutative ring  $R$  which has an inverse  $x^{-1}$ . Let  $y$  be another element of  $R$  such that  $y^2 = 0$ . Prove that  $x + y$  has an inverse in  $R$ .
 
-TABLE 9.7: The smallest non-commutative unity ring  ${T}_{8}$  
+TABLE 9.7: The smallest non-commutative unity ring  ${T}_{8}$
 
 <table><tr><td>+</td><td>0</td><td>e</td><td>a</td><td>b</td><td>c</td><td>d</td><td>f</td><td>g</td></tr><tr><td>0</td><td>0</td><td>e</td><td>a</td><td>b</td><td>c</td><td>d</td><td>f</td><td>g</td></tr><tr><td>e</td><td>e</td><td>0</td><td>d</td><td>f</td><td>g</td><td>a</td><td>b</td><td>c</td></tr><tr><td>a</td><td>a</td><td>d</td><td>0</td><td>c</td><td>b</td><td>e</td><td>g</td><td>f</td></tr><tr><td>b</td><td>b</td><td>f</td><td>c</td><td>0</td><td>a</td><td>g</td><td>e</td><td>d</td></tr><tr><td>c</td><td>c</td><td>g</td><td>b</td><td>a</td><td>0</td><td>f</td><td>d</td><td>e</td></tr><tr><td>d</td><td>d</td><td>a</td><td>e</td><td>g</td><td>f</td><td>0</td><td>c</td><td>b</td></tr><tr><td>f</td><td>f</td><td>b</td><td>g</td><td>e</td><td>d</td><td>c</td><td>0</td><td>a</td></tr><tr><td>g</td><td>g</td><td>c</td><td>f</td><td>d</td><td>e</td><td>b</td><td>a</td><td>0</td></tr></table>
 
 <table><tr><td>·</td><td>0</td><td>e</td><td>a</td><td>b</td><td>c</td><td>d</td><td>f</td><td>g</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>e</td><td>0</td><td>e</td><td>a</td><td>b</td><td>c</td><td>d</td><td>f</td><td>g</td></tr><tr><td>a</td><td>0</td><td>a</td><td>a</td><td>a</td><td>0</td><td>0</td><td>0</td><td>a</td></tr><tr><td>b</td><td>0</td><td>b</td><td>b</td><td>b</td><td>0</td><td>0</td><td>0</td><td>b</td></tr><tr><td>c</td><td>0</td><td>c</td><td>c</td><td>c</td><td>0</td><td>0</td><td>0</td><td>c</td></tr><tr><td>d</td><td>0</td><td>d</td><td>0</td><td>c</td><td>c</td><td>d</td><td>f</td><td>f</td></tr><tr><td>f</td><td>0</td><td>f</td><td>c</td><td>0</td><td>c</td><td>d</td><td>f</td><td>d</td></tr><tr><td>g</td><td>0</td><td>g</td><td>b</td><td>a</td><td>c</td><td>d</td><td>f</td><td>e</td></tr></table>
 
-TABLE 9.8: Examples for each possible type of ring  
+TABLE 9.8: Examples for each possible type of ring
 
 <table><tr><td>Type</td><td>Name</td><td>Example(s)</td></tr><tr><td>I</td><td>The trivial ring</td><td>Only one such ring, {0}.</td></tr><tr><td>II</td><td>Fields</td><td>R, Q, Zp with p prime.</td></tr><tr><td>III</td><td>Skew fields</td><td>H = the quaternions.</td></tr><tr><td>IV</td><td>Commutative unity rings w/o zero divisors, but are not fields</td><td>Z, polynomials. These rings are called integral domains.</td></tr><tr><td>V</td><td>Non-commutative unity rings w/o zero divisors, but are not skew fields</td><td>Integer quaternions: a + bi + cj + dk, with a, b, c, d ∈ Z.</td></tr><tr><td>VI</td><td>Commutative rings w/o unity and w/o zero divisors</td><td>Even integers, multiples of n, n &gt; 1.</td></tr><tr><td>VII</td><td>Non-commutative rings w/o unity and w/o zero divisors</td><td>Even quaternions.</td></tr><tr><td>VIII</td><td>Commutative unity rings w/ zero divisors</td><td>Zn whenever n &gt; 1 and n is not prime.</td></tr><tr><td>IX</td><td>Non-commutative unity rings w/ zero divisors</td><td>T8 in table 9.7.</td></tr><tr><td>X</td><td>Commutative rings w/o unity and w/ zero divisors</td><td>The subset {0, 2, 4, 6} of Z8.</td></tr><tr><td>XI</td><td>Non-commutative rings w/o unity and w/ zero divisors</td><td>T4 in table 9.6.</td></tr></table>
 
-3 Let  $x$  be an element of a commutative ring  $R$  which has an inverse  $x^{-1}$ . Let  $y$  be another element of  $R$  such that  $y^3 = 0$ . Prove that  $x + y$  has an inverse in  $R$ .  
+3 Let  $x$  be an element of a commutative ring  $R$  which has an inverse  $x^{-1}$ . Let  $y$  be another element of  $R$  such that  $y^3 = 0$ . Prove that  $x + y$  has an inverse in  $R$ .
 4 Find a specific example of two elements  $x$  and  $y$  in a ring  $R$  such that  $x \cdot y = 0$ , but  $y \cdot x$  is nonzero.
 
 Hint: Which of the 11 types of rings would  $R$  have to be?
 
-5 Consider the subset  $\{0,2,4,6,8\}$  of  $Z_{10}$ . Form addition and multiplication tables of this set. Is this a ring? Which of the 11 types of rings is this?  
-6 Let  $R$  be a ring for which  $x^{2} = x$  for all  $x$  in the ring. Prove that  $-x = x$  for all elements  $x$ . Such rings are called Boolean rings.  
-7 Let  $R$  be a ring for which  $x^{2} = x$  for all  $x$  in the ring. Prove that the ring  $R$  is commutative. (See Problem 6.)  
-8 Let  $R$  be a ring for which  $x^3 = x$  for all  $x$  in the ring. Prove that  $6x = 0$  for all  $x$  in the ring.  
-9 Let  $R$  be a commutative ring of characteristic 2. Prove that  $(x + y)^2 = x^2 + y^2$  for all  $x$  and  $y$  in  $R$ . This property is often referred to as "freshman's dream."  
-10 Let  $R$  be a commutative ring of characteristic 2. Prove that  $(x + y)^4 = x^4 + y^4$  for all  $x$  and  $y$  in  $R$ . You can use the result of Problem 9.  
-11 Find an example of a commutative ring of characteristic 4 for which there are elements  $x$  and  $y$  such that  $(x + y)^{4} \neq x^{4} + y^{4}$ .  
-12 Find an example of a non-commutative ring of characteristic 4 for which there are elements  $x$  and  $y$  such that  $(x + y)^{4} \neq x^{4} + y^{4}$ .  
-13 An element  $a$  in a ring  $R$  is idempotent if  $a^2 = a$ . Prove that a nontrivial division ring must contain exactly two idempotent elements.  
-14 Let  $a$  be an idempotent element in a unity ring. Show that  $e - a$  is also an idempotent element. See Problem 13.  
+5 Consider the subset  $\{0,2,4,6,8\}$  of  $Z_{10}$ . Form addition and multiplication tables of this set. Is this a ring? Which of the 11 types of rings is this?
+6 Let  $R$  be a ring for which  $x^{2} = x$  for all  $x$  in the ring. Prove that  $-x = x$  for all elements  $x$ . Such rings are called Boolean rings.
+7 Let  $R$  be a ring for which  $x^{2} = x$  for all  $x$  in the ring. Prove that the ring  $R$  is commutative. (See Problem 6.)
+8 Let  $R$  be a ring for which  $x^3 = x$  for all  $x$  in the ring. Prove that  $6x = 0$  for all  $x$  in the ring.
+9 Let  $R$  be a commutative ring of characteristic 2. Prove that  $(x + y)^2 = x^2 + y^2$  for all  $x$  and  $y$  in  $R$ . This property is often referred to as "freshman's dream."
+10 Let  $R$  be a commutative ring of characteristic 2. Prove that  $(x + y)^4 = x^4 + y^4$  for all  $x$  and  $y$  in  $R$ . You can use the result of Problem 9.
+11 Find an example of a commutative ring of characteristic 4 for which there are elements  $x$  and  $y$  such that  $(x + y)^{4} \neq x^{4} + y^{4}$ .
+12 Find an example of a non-commutative ring of characteristic 4 for which there are elements  $x$  and  $y$  such that  $(x + y)^{4} \neq x^{4} + y^{4}$ .
+13 An element  $a$  in a ring  $R$  is idempotent if  $a^2 = a$ . Prove that a nontrivial division ring must contain exactly two idempotent elements.
+14 Let  $a$  be an idempotent element in a unity ring. Show that  $e - a$  is also an idempotent element. See Problem 13.
 15 Show that if  $R$  is a commutative ring, and  $x$  and  $y$  are elements of  $R$ , then
 
 $$
@@ -12459,13 +12459,13 @@ $$
 (x + y) ^ {n} = x ^ {n} + \binom {n} {1} x ^ {n - 1} y + \binom {n} {2} x ^ {n - 2} y ^ {2} + \dots + \binom {n} {n} y ^ {n}.
 $$
 
-17 Determine all elements of  $T_8$  in Table 9.7 that have a multiplicative inverse.  
-18 Determine all elements of the ring defined by Tables 9.3 and 9.4 in Chapter 9 that have a multiplicative inverse.  
+17 Determine all elements of  $T_8$  in Table 9.7 that have a multiplicative inverse.
+18 Determine all elements of the ring defined by Tables 9.3 and 9.4 in Chapter 9 that have a multiplicative inverse.
 19 An irreducible element  $p \neq 0$  of a ring  $R$  is a non-invertible element for which the only way for  $p = a \cdot b$  is for either  $a$  or  $b$  to have a multiplicative inverse. Determine the irreducible elements of the ring defined by Tables 9.3 and 9.4 in Chapter 9.
 
 Hint: Cross out the rows and columns corresponding to the invertible elements. Which elements are no longer in the interior of the table?
 
-20 Does  $T_4$  or  $T_8$  in Tables 9.6 and 9.7 have any irreducible elements? (See Problem 19.)  
+20 Does  $T_4$  or  $T_8$  in Tables 9.6 and 9.7 have any irreducible elements? (See Problem 19.)
 21 A prime element  $p \neq 0$  of a ring  $R$  is a non-invertible element such that, whenever  $a \cdot b$  is a multiple of  $p$ , either  $a$  or  $b$  is a multiple of  $p$ . (A multiple of  $p$  would be any element that can be expressed as either  $x \cdot p$  or  $p \cdot x$ .) Find a prime element of the ring  $T_8$  in Table 9.7.
 
 Hint: To determine if  $p$  is prime, first find all the multiples of  $p$ . Then cross out the rows and columns of the multiplication table corresponding to those elements. If there are no more multiples of  $p$  remaining, then  $p$  is prime.
@@ -12474,7 +12474,7 @@ Hint: To determine if  $p$  is prime, first find all the multiples of  $p$ . The
 
 # Interactive Problems
 
-23 Define in SageMath the smallest non-commutative ring,  $T_4$  defined by Table 9.6. Use  $a$  and  $c$  as the generators.  
+23 Define in SageMath the smallest non-commutative ring,  $T_4$  defined by Table 9.6. Use  $a$  and  $c$  as the generators.
 24 Define in SageMath the smallest non-commutative unity ring  $T_8$  defined by Table 9.7.
 
 Hint: The basis can be chosen to be  $e$ ,  $a$ , and  $b$ .
@@ -12557,7 +12557,7 @@ can be seen to be a subring from the addition and multiplication tables in Table
 
 One can see that  $S$  is closed with respect to both addition and multiplication. Furthermore, additive inverses exist for all elements, so  $S$  is also closed with respect to subtraction. Thus, by Proposition 10.1, this is a subring.
 
-TABLE 10.1: Tables for the subring  $S$  
+TABLE 10.1: Tables for the subring  $S$
 
 <table><tr><td>+</td><td>0</td><td>a</td><td>2a</td><td>3a</td></tr><tr><td>0</td><td>0</td><td>a</td><td>2a</td><td>3a</td></tr><tr><td>a</td><td>a</td><td>2a</td><td>3a</td><td>0</td></tr><tr><td>2a</td><td>2a</td><td>3a</td><td>0</td><td>a</td></tr><tr><td>3a</td><td>3a</td><td>0</td><td>a</td><td>2a</td></tr></table>
 
@@ -12620,21 +12620,21 @@ $$
 Just as in the case for the Group command, the command Ring finds  $[S]$  for any set  $S$  in SageMath. For example, we can find some subrings for the non-commutative group of order 8,
 
 ```txt
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a^2, a); Define(b^2, b)  
-Define(a*b, 0); Define(b*a, 0)  
-R = Ring(); R  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a^2, a); Define(b^2, b)
+Define(a*b, 0); Define(b*a, 0)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}
 ```
 
 with the commands
 
 ```txt
-Ring(0*a) {0}   
-Ring(a) {0,a,2a,3a}   
-Ring(2*a) {0,2a}   
+Ring(0*a) {0}
+Ring(a) {0,a,2a,3a}
+Ring(2*a) {0,2a}
 Ring(2*a,b) {0,b,2a,2a+b}
 ```
 
@@ -12663,13 +12663,13 @@ $$
 It is actually possible to define this subring in SageMath. We can let  $e$  represent 1, and  $a$  represent  $\sqrt{2}$ . These two elements are both of infinite additive order. If we do not specify the additive order of an element, SageMath will assume that order is infinite. Then  $a^2 = 2e$ , so the ring can be entered by the commands
 
 ```txt
-InitRing()  
-AddRingVar("e", "a")  
-Define(e^2, e)  
-Define(e*a, a)  
-Define(a*e, a)  
-Define(a^2, 2*e)  
-Ring()  
+InitRing()
+AddRingVar("e", "a")
+Define(e^2, e)
+Define(e*a, a)
+Define(a*e, a)
+Define(a^2, 2*e)
+Ring()
 Ring is infinite.
 ```
 
@@ -12691,15 +12691,15 @@ Clearly, the subrings of the real numbers can be much more complicated than the 
 
 For Problems 1 through 10: Use Proposition 10.1 to determine if the following subsets are subrings of  $\mathbb{R}$ .
 
-1  $\{x + y\sqrt{5}\mid x,y\in \mathbb{Z}\}$  
-2  $\{x + y\sqrt{2}\mid x,y\in \mathbb{Q}\}$  
-3  $\{x\mid x\in \mathbb{R},x > 0\}$  
-4  $\{x / y\mid x$  is an even integer,  $y$  is an odd integer}  
-5  $\{x / (2^y)\mid x,y\in \mathbb{Z},y\geq 0\}$  
-6  $\{x + y\sqrt[3]{2}\mid x,y\in \mathbb{Z}\}$  
-7  $\{x + y\sqrt[3]{2} +z\sqrt[3]{4}\mid x,y,z\in \mathbb{Z}\}$  
-8  $\{x + y\sqrt{2}\mid y\in \mathbb{Z},x$  is an even integer}  
-9  $\{x + y\sqrt{2}\mid x,y\in \mathbb{Z},x + y$  is even}  
+1  $\{x + y\sqrt{5}\mid x,y\in \mathbb{Z}\}$
+2  $\{x + y\sqrt{2}\mid x,y\in \mathbb{Q}\}$
+3  $\{x\mid x\in \mathbb{R},x > 0\}$
+4  $\{x / y\mid x$  is an even integer,  $y$  is an odd integer}
+5  $\{x / (2^y)\mid x,y\in \mathbb{Z},y\geq 0\}$
+6  $\{x + y\sqrt[3]{2}\mid x,y\in \mathbb{Z}\}$
+7  $\{x + y\sqrt[3]{2} +z\sqrt[3]{4}\mid x,y,z\in \mathbb{Z}\}$
+8  $\{x + y\sqrt{2}\mid y\in \mathbb{Z},x$  is an even integer}
+9  $\{x + y\sqrt{2}\mid x,y\in \mathbb{Z},x + y$  is even}
 10  $\{x + y\sqrt{3}\mid x,y\in \mathbb{Z},x + y$  is even}
 
 11 Let  $y$  be an element of a ring  $R$ . Let
@@ -12730,12 +12730,12 @@ Show that  $Z$  is a subring of  $R$ . This subring is called the center of  $R$
 
 Hint: See Problem 16 of §9.3.
 
-15 Show that  $2\mathbb{Z} \cup 3\mathbb{Z}$  is not a subring of  $\mathbb{Z}$ . (The symbol  $\cup$  denotes the union of the two sets.)  
+15 Show that  $2\mathbb{Z} \cup 3\mathbb{Z}$  is not a subring of  $\mathbb{Z}$ . (The symbol  $\cup$  denotes the union of the two sets.)
 16 Find all of the subrings of the commutative ring of order 8 defined by Tables 9.3 and 9.4 in Chapter 9.
 
 Hint: There are eight subgroups of the additive group  $Z_{15}^{*}$ . Find the eight subgroups, and determine which subgroups are in fact subrings.
 
-17 Find all of the subrings of  $T_4$  in Table 9.6.  
+17 Find all of the subrings of  $T_4$  in Table 9.6.
 18 Find all of the subrings of  $T_8$  in Table 9.7.
 
 Hint: First find all 16 subgroups of the additive group,  $Z_{24}^{*}$ .
@@ -12745,24 +12745,24 @@ Hint: First find all 16 subgroups of the additive group,  $Z_{24}^{*}$ .
 19 Find all of the subrings of the ring of order 8:
 
 ```txt
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a^2, a); Define(b^2, 0)  
-Define(a*b, b); Define(b*a, 0)  
-R = Ring(); R  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a^2, a); Define(b^2, 0)
+Define(a*b, b); Define(b*a, 0)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}
 ```
 
 20 Find all of the subrings of the ring of order 8:
 
 ```matlab
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a^2, 2*a); Define(b^2, 2*a)  
-Define(a*b, 0); Define(b*a, 2*a)  
-R = Ring(); R  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a^2, 2*a); Define(b^2, 2*a)
+Define(a*b, 0); Define(b*a, 2*a)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}
 ```
 
@@ -12774,12 +12774,12 @@ When we studied group theory, one of the most important concepts we discovered w
 
 Here is the non-commutative ring of order 8 from the last section.
 
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a^2, a); Define(b^2, 0)  
-Define(a*b, b); Define(b*a, 2*a)  
-R = Ring(); R  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a^2, a); Define(b^2, 0)
+Define(a*b, b); Define(b*a, 2*a)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}
 
 Can we form a quotient ring out of this ring, the way that we constructed a quotient group?
@@ -12804,7 +12804,7 @@ $$
 
 This gives us a natural way to add the elements of the quotient  $Q$ , which is shown in Table 10.2, produced by the command AddTable(Q).
 
-TABLE 10.2: Addition for the quotient ring  $Q$  
+TABLE 10.2: Addition for the quotient ring  $Q$
 
 <table><tr><td>+</td><td>{0,a,2a,3a}</td><td>{b,a+b,2a+b,3a+b}</td></tr><tr><td>{0,a,2a,3a}</td><td>{0,a,2a,3a}</td><td>{b,a+b,2a+b,3a+b}</td></tr><tr><td>{b,a+b,2a+b,3a+b}</td><td>{b,a+b,2a+b,3a+b}</td><td>{0,a,2a,3a}</td></tr></table>
 
@@ -12880,7 +12880,7 @@ which produce Table 10.3.
 
 ![](images/8c5f5688fc7a019336eda9aab8709faef2cf107fadf7f11ae150331a75c14978.jpg)
 
-TABLE 10.3: Multiplying cosets of  ${S}_{2}$  
+TABLE 10.3: Multiplying cosets of  ${S}_{2}$
 
 <table><tr><td>·</td><td>{0,2a}</td><td>{a,3a}</td><td>{b,2a+b}</td><td>{a+b,3a+b}</td></tr><tr><td>{0,2a}</td><td>{0}</td><td>{0,2a}</td><td>{0}</td><td>{0,2a}</td></tr><tr><td>{a,3a}</td><td>{0,2a}</td><td>{a,3a}</td><td>{b,2a+b}</td><td>{a+b,3a+b}</td></tr><tr><td>{b,2a+b}</td><td>{0}</td><td>{0,2a}</td><td>{0}</td><td>{0,2a}</td></tr><tr><td>{a+b,3a+b}</td><td>{0,2a}</td><td>{a,3a}</td><td>{b,2a+b}</td><td>{a+b,3a+b}</td></tr></table>
 
@@ -13013,12 +13013,12 @@ This proposition allows us to quickly find all ideals of a ring.
 Find the ideals in the non-commutative ring  $R$  of order 8,
 
 ```txt
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a^2, a); Define(b^2, 0)  
-Define(a*b, b); Define(b*a, 2*a)  
-R = Ring(); R  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a^2, a); Define(b^2, 0)
+Define(a*b, b); Define(b*a, 2*a)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3
 ```
 
@@ -13031,11 +13031,11 @@ Ideal(R，a)  $\{0,a,2a,3a,b,a + b,2a + b,3a + b\}$
 we find that this command produces the whole ring, so  $a$  cannot be contained in any nontrivial ideal. Likewise,  $3a$ ,  $a + b$ , and  $3a + b$  cannot be in a nontrivial ideal. The three remaining nonzero elements,  $2a$ ,  $b$ , and  $2a + b$ , generate different ideals.
 
 ```txt
-Ideal(R, 2*a)  
-{0, 2 a}  
-Ideal(R, b)  
-{0, b, 2 a, 2 a + b}  
-Ideal(R, 2*a+b)  
+Ideal(R, 2*a)
+{0, 2 a}
+Ideal(R, b)
+{0, b, 2 a, 2 a + b}
+Ideal(R, 2*a+b)
 {0, 2 a + b}
 ```
 
@@ -13114,13 +13114,13 @@ Because of Kummer's attempt, and partial success, in proving Fermat's last theor
 
 Image source: Wikipedia Commons
 
-10 Verify that  $\{0, c\}$  is an ideal of the ring  $T_4$  in Table 9.6. Construct addition and multiplication tables for the quotient ring  $T_4 / \{0, c\}$ .  
-11 Verify that  $\{0,2a\}$  is an ideal of the commutative ring  $R$  of order 8 which is defined by Tables 9.3 and 9.4 in Chapter 9. Construct addition and multiplication tables for the quotient ring  $R / \{0,2a\}$ .  
-12 Verify that  $\{0, b\}$  is an ideal of the commutative ring  $R$  of order 8 which is defined by Tables 9.3 and 9.4 in Chapter 9. Construct addition and multiplication tables for the quotient ring  $R / \{0, b\}$ .  
-13 A left ideal  $I$  of a ring  $R$  is a subring for which  $r \cdot x \in I$  when  $r \in R$ , and  $x \in I$ . Find a left ideal of  $T_8$  that is not a standard ideal.  
-14 Verify that  $\{0, c\}$  is an ideal of the ring  $T_8$  in Table 9.7. Construct addition and multiplication tables for the quotient ring  $T_8 / \{0, c\}$ .  
-15 Let  $A = \langle 6 \rangle$  be an ideal of the ring  $\mathbb{Z}$ . Construct addition and multiplication tables of the quotient ring  $\mathbb{Z} / \langle 6 \rangle$ . What does this ring remind you of?  
-16 Let  $A = \langle 2 \rangle$  and  $B = \langle 6 \rangle$  be two ideals of the ring  $\mathbb{Z}$ . Construct addition and multiplication tables of the quotient ring  $A / B$ .  
+10 Verify that  $\{0, c\}$  is an ideal of the ring  $T_4$  in Table 9.6. Construct addition and multiplication tables for the quotient ring  $T_4 / \{0, c\}$ .
+11 Verify that  $\{0,2a\}$  is an ideal of the commutative ring  $R$  of order 8 which is defined by Tables 9.3 and 9.4 in Chapter 9. Construct addition and multiplication tables for the quotient ring  $R / \{0,2a\}$ .
+12 Verify that  $\{0, b\}$  is an ideal of the commutative ring  $R$  of order 8 which is defined by Tables 9.3 and 9.4 in Chapter 9. Construct addition and multiplication tables for the quotient ring  $R / \{0, b\}$ .
+13 A left ideal  $I$  of a ring  $R$  is a subring for which  $r \cdot x \in I$  when  $r \in R$ , and  $x \in I$ . Find a left ideal of  $T_8$  that is not a standard ideal.
+14 Verify that  $\{0, c\}$  is an ideal of the ring  $T_8$  in Table 9.7. Construct addition and multiplication tables for the quotient ring  $T_8 / \{0, c\}$ .
+15 Let  $A = \langle 6 \rangle$  be an ideal of the ring  $\mathbb{Z}$ . Construct addition and multiplication tables of the quotient ring  $\mathbb{Z} / \langle 6 \rangle$ . What does this ring remind you of?
+16 Let  $A = \langle 2 \rangle$  and  $B = \langle 6 \rangle$  be two ideals of the ring  $\mathbb{Z}$ . Construct addition and multiplication tables of the quotient ring  $A / B$ .
 17 If  $R$  is a commutative ring and  $y$  is a fixed element of  $R$ , prove that the set
 
 $$
@@ -13148,24 +13148,24 @@ Hint: Note that if there is no multiplicative identity,  $y$  may not be in  $B$
 21 Which of the subrings of the ring of order 8, found in Problem 19 of §10.1 are ideals? The ring is given as follows:
 
 ```txt
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a^2, a); Define(b^2, 0)  
-Define(a*b, b); Define(b*a, 0)  
-R = Ring(); R  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a^2, a); Define(b^2, 0)
+Define(a*b, b); Define(b*a, 0)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}
 ```
 
 22 Which of the subrings of the ring of order 8, found in Problem 20 of §10.1 are ideals? The ring is given as follows:
 
 ```matlab
-InitRing()  
-AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a^2, 2*a); Define(b^2, 2*a)  
-Define(a*b, 0); Define(b*a, 2*a)  
-R = Ring(); R  
+InitRing()
+AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a^2, 2*a); Define(b^2, 2*a)
+Define(a*b, 0); Define(b*a, 2*a)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}
 ```
 
@@ -13202,24 +13202,24 @@ which we can verify is well defined by noting that if  $a + n\mathbb{Z} = b + n\
 Two very similar looking rings of order 10 can be defined in SageMath as follows:
 
 ```txt
-InitRing()  
-AddRingVar("a")  
-Define(10*a, 0)  
-Define(a^2, 2*a)  
-CheckRing()  
-This is a ring.  
-A = Ring(); A  
+InitRing()
+AddRingVar("a")
+Define(10*a, 0)
+Define(a^2, 2*a)
+CheckRing()
+This is a ring.
+A = Ring(); A
 {0, a, 2a, 3a, 4a, 5a, 6a, 7a, 8a, 9a}
 ```
 
 A second ring can be defined at the same time if we don't start over with InitRing().
 
 ```txt
-AddRingVar("b")  
-Define(10*b, 0)  
-Define(b^2, 6*b)  
-This is a ring.  
-B = Ring(b); B  
+AddRingVar("b")
+Define(10*b, 0)
+Define(b^2, 6*b)
+This is a ring.
+B = Ring(b); B
 {0, b, 2b, 3b, 4b, 5b, 6b, 7b, 8b, 9b}
 ```
 
@@ -13238,29 +13238,29 @@ In spite of the similarities between the two tables, they are not the same "colo
 
 Since  $a$  is an additive generator of  $A$ , we know that it should map to one of the additive generators of  $B$ ,  $\{b, 3b, 7b, 9b\}$ . In SageMath, the command RingHomo defines a ring homomorphism, similar to the way that Homomorph defined a group homomorphism. So let us see if we can create an isomorphism.
 
-TABLE 10.4: Addition and multiplication in the ring  $A$  
+TABLE 10.4: Addition and multiplication in the ring  $A$
 
 <table><tr><td>+</td><td>0 a 2a 3a 4a 5a 6a 7a 8a 9a</td></tr><tr><td>0</td><td>0 a 2a 3a 4a 5a 6a 7a 8a 9a</td></tr><tr><td>a</td><td>a 2a 3a 4a 5a 6a 7a 8a 9a 0</td></tr><tr><td>2a</td><td>2a 3a 4a 5a 6a 7a 8a 9a 0 a</td></tr><tr><td>3a</td><td>3a 4a 5a 6a 7a 8a 9a 0 a 2a</td></tr><tr><td>4a</td><td>4a 5a 6a 7a 8a 9a 0 a 2a 3a</td></tr><tr><td>5a</td><td>5a 6a 7a 8a 9a 0 a 2a 3a 4a</td></tr><tr><td>6a</td><td>6a 7a 8a 9a 0 a 2a 3a 4a 5a</td></tr><tr><td>7a</td><td>7a 8a 9a 0 a 2a 3a 4a 5a 6a</td></tr><tr><td>8a</td><td>8a 9a 0 a 2a 3a 4a 5a 6a 7a</td></tr><tr><td>9a</td><td>9a 0 a 2a 3a 4a 5a 6a 7a 8a</td></tr></table>
 
 <table><tr><td>·</td><td>0</td><td>a</td><td>2a</td><td>3a</td><td>4a</td><td>5a</td><td>6a</td><td>7a</td><td>8a</td><td>9a</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>a</td><td>0</td><td>2a</td><td>4a</td><td>6a</td><td>8a</td><td>0</td><td>2a</td><td>4a</td><td>6a</td><td>8a</td></tr><tr><td>2a</td><td>0</td><td>4a</td><td>8a</td><td>2a</td><td>6a</td><td>0</td><td>4a</td><td>8a</td><td>2a</td><td>6a</td></tr><tr><td>3a</td><td>0</td><td>6a</td><td>2a</td><td>8a</td><td>4a</td><td>0</td><td>6a</td><td>2a</td><td>8a</td><td>4a</td></tr><tr><td>4a</td><td>0</td><td>8a</td><td>6a</td><td>4a</td><td>2a</td><td>0</td><td>8a</td><td>6a</td><td>4a</td><td>2a</td></tr><tr><td>5a</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>6a</td><td>0</td><td>2a</td><td>4a</td><td>6a</td><td>8a</td><td>0</td><td>2a</td><td>4a</td><td>6a</td><td>8a</td></tr><tr><td>7a</td><td>0</td><td>4a</td><td>8a</td><td>2a</td><td>6a</td><td>0</td><td>4a</td><td>8a</td><td>2a</td><td>6a</td></tr><tr><td>8a</td><td>0</td><td>6a</td><td>2a</td><td>8a</td><td>4a</td><td>0</td><td>6a</td><td>2a</td><td>8a</td><td>4a</td></tr><tr><td>9a</td><td>0</td><td>8a</td><td>6a</td><td>4a</td><td>2a</td><td>0</td><td>8a</td><td>6a</td><td>4a</td><td>2a</td></tr></table>
 
-TABLE 10.5: The ring  $B$  
+TABLE 10.5: The ring  $B$
 
 <table><tr><td>·</td><td>0</td><td>b</td><td>2b</td><td>3b</td><td>4b</td><td>5b</td><td>6b</td><td>7b</td><td>8b</td><td>9b</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>b</td><td>0</td><td>6b</td><td>2b</td><td>8b</td><td>4b</td><td>0</td><td>6b</td><td>2b</td><td>8b</td><td>4b</td></tr><tr><td>2b</td><td>0</td><td>2b</td><td>4b</td><td>6b</td><td>8b</td><td>0</td><td>2b</td><td>4b</td><td>6b</td><td>8b</td></tr><tr><td>3b</td><td>0</td><td>8b</td><td>6b</td><td>4b</td><td>2b</td><td>0</td><td>8b</td><td>6b</td><td>4b</td><td>2b</td></tr><tr><td>4b</td><td>0</td><td>4b</td><td>8b</td><td>2b</td><td>6b</td><td>0</td><td>4b</td><td>8b</td><td>2b</td><td>6b</td></tr><tr><td>5b</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>6b</td><td>0</td><td>6b</td><td>2b</td><td>8b</td><td>4b</td><td>0</td><td>6b</td><td>2b</td><td>8b</td><td>4b</td></tr><tr><td>7b</td><td>0</td><td>2b</td><td>4b</td><td>6b</td><td>8b</td><td>0</td><td>2b</td><td>4b</td><td>6b</td><td>8b</td></tr><tr><td>8b</td><td>0</td><td>8b</td><td>6b</td><td>4b</td><td>2b</td><td>0</td><td>8b</td><td>6b</td><td>4b</td><td>2b</td></tr><tr><td>9b</td><td>0</td><td>4b</td><td>8b</td><td>2b</td><td>6b</td><td>0</td><td>4b</td><td>8b</td><td>2b</td><td>6b</td></tr></table>
 
 ```txt
-$\mathbf{F} =$  RingHomo(A,B)   
-HomoDef(F,a,b)   
-FinishHomo(F)  $\mathrm{b + b}$  is not 6 b 'Homomorphism failed'   
- $\mathbf{F} =$  RingHomo(A,B)   
-HomoDef(F,a,3\*b)   
-FinishHomo(F)  $3\mathrm{~b} + 3\mathrm{~b}$  is not 4 b 'Homomorphism failed'   
- $\mathbf{F} =$  RingHomo(A,B)   
-HomoDef(F,a,7\*b)   
+$\mathbf{F} =$  RingHomo(A,B)
+HomoDef(F,a,b)
+FinishHomo(F)  $\mathrm{b + b}$  is not 6 b 'Homomorphism failed'
+ $\mathbf{F} =$  RingHomo(A,B)
+HomoDef(F,a,3\*b)
+FinishHomo(F)  $3\mathrm{~b} + 3\mathrm{~b}$  is not 4 b 'Homomorphism failed'
+ $\mathbf{F} =$  RingHomo(A,B)
+HomoDef(F,a,7\*b)
 FinishHomo(F) 'Homomorphism defined'
 ```
 
-TABLE 10.6: Multiplication in  $2Z_{20}$  
+TABLE 10.6: Multiplication in  $2Z_{20}$
 
 <table><tr><td>·</td><td>0</td><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>0</td><td>4</td><td>8</td><td>12</td><td>16</td><td>0</td><td>4</td><td>8</td><td>12</td><td>16</td></tr><tr><td>4</td><td>0</td><td>8</td><td>16</td><td>4</td><td>12</td><td>0</td><td>8</td><td>16</td><td>4</td><td>12</td></tr><tr><td>6</td><td>0</td><td>12</td><td>4</td><td>16</td><td>8</td><td>0</td><td>12</td><td>4</td><td>16</td><td>8</td></tr><tr><td>8</td><td>0</td><td>16</td><td>12</td><td>8</td><td>4</td><td>0</td><td>16</td><td>12</td><td>8</td><td>4</td></tr><tr><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>12</td><td>0</td><td>4</td><td>8</td><td>12</td><td>16</td><td>0</td><td>4</td><td>8</td><td>12</td><td>16</td></tr><tr><td>14</td><td>0</td><td>8</td><td>16</td><td>4</td><td>12</td><td>0</td><td>8</td><td>16</td><td>4</td><td>12</td></tr><tr><td>16</td><td>0</td><td>12</td><td>4</td><td>16</td><td>8</td><td>0</td><td>12</td><td>4</td><td>16</td><td>8</td></tr><tr><td>18</td><td>0</td><td>16</td><td>12</td><td>8</td><td>4</td><td>0</td><td>16</td><td>12</td><td>8</td><td>4</td></tr></table>
 
@@ -13444,7 +13444,7 @@ Although this corollary seems to be a big help in finding all finite rings, ther
 
 Table 10.7 shows the number of rings of a given order. There are at least 18,590 rings of order 32, but it has not been proven that these are all of them.
 
-TABLE 10.7: Rings of order  $n$  
+TABLE 10.7: Rings of order  $n$
 
 <table><tr><td>n</td><td>rings</td><td>n</td><td>rings</td><td>n</td><td>rings</td><td>n</td><td>rings</td></tr><tr><td>1</td><td>1</td><td>9</td><td>11</td><td>17</td><td>2</td><td>25</td><td>11</td></tr><tr><td>2</td><td>2</td><td>10</td><td>4</td><td>18</td><td>22</td><td>26</td><td>4</td></tr><tr><td>3</td><td>2</td><td>11</td><td>2</td><td>19</td><td>2</td><td>27</td><td>59</td></tr><tr><td>4</td><td>11</td><td>12</td><td>22</td><td>20</td><td>22</td><td>28</td><td>22</td></tr><tr><td>5</td><td>2</td><td>13</td><td>2</td><td>21</td><td>4</td><td>29</td><td>2</td></tr><tr><td>6</td><td>4</td><td>14</td><td>4</td><td>22</td><td>4</td><td>30</td><td>8</td></tr><tr><td>7</td><td>2</td><td>15</td><td>4</td><td>23</td><td>2</td><td>31</td><td>2</td></tr><tr><td>8</td><td>52</td><td>16</td><td>390</td><td>24</td><td>104</td><td>32</td><td>???</td></tr></table>
 
@@ -13464,20 +13464,20 @@ MulttTable(R)
 
 The multiplication table for this ring is shown in Table 10.8.
 
-TABLE 10.8: Ring number 51 of order 8  
+TABLE 10.8: Ring number 51 of order 8
 
 <table><tr><td>·</td><td>0</td><td>a</td><td>b</td><td>a+b</td><td>c</td><td>a+c</td><td>b+c</td><td>a+b+c</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>a</td><td>0</td><td>a</td><td>b</td><td>a+b</td><td>c</td><td>a+c</td><td>b+c</td><td>a+b+c</td></tr><tr><td>b</td><td>0</td><td>b</td><td>b+c</td><td>c</td><td>b</td><td>0</td><td>c</td><td>b+c</td></tr><tr><td>a+b</td><td>0</td><td>a+b</td><td>c</td><td>a+b+c</td><td>b+c</td><td>a+c</td><td>b</td><td>a</td></tr><tr><td>c</td><td>0</td><td>c</td><td>b</td><td>b+c</td><td>c</td><td>0</td><td>b+c</td><td>b</td></tr><tr><td>a+c</td><td>0</td><td>a+c</td><td>0</td><td>a+c</td><td>0</td><td>a+c</td><td>0</td><td>a+c</td></tr><tr><td>b+c</td><td>0</td><td>b+c</td><td>c</td><td>b</td><td>b+c</td><td>0</td><td>b</td><td>c</td></tr><tr><td>a+b+c</td><td>0</td><td>a+b+c</td><td>b+c</td><td>a</td><td>b</td><td>a+c</td><td>c</td><td>a+b</td></tr></table>
 
 # Problems for §10.3
 
-1 Suppose  $\phi$  is an isomorphism between  $R$  and  $S$ . Show that if  $S$  is commutative, then so is  $R$ .  
-2 Suppose  $\phi$  is an surjective isomorphism between  $R$  and  $S$ . Show that if  $S$  has a unity element, then so does  $R$ .  
-3 Suppose  $\phi$  is an isomorphism between  $R$  and  $S$ . Show that if  $R$  has a zero divisor, then so does  $S$ .  
-4 Suppose  $\phi$  is an isomorphism between  $R$  and  $S$ . Show that if  $R$  has a non-zero idempotent element, then so does  $S$ . See Problem 13 of §9.3.  
-5 Find a subring of the ring  $T_8$  in Table 9.7 that is isomorphic to the ring  $T_4$  in Table 9.6.  
-6 Let  $R$  be a non-commutative ring. Define the operation  $x*y = y \cdot x$ . Show that the set  $R$  forms a ring using the operations  $*$  and  $+$  instead of  $\cdot$  and  $+$ . This new ring is called the opposite ring of  $R$  and is denoted  $R^{\mathrm{op}}$ .  
-7 Show that the ring  $T_4$  in Table 9.6 is not isomorphic to its opposite. (See Problem 6.)  
-8 Show that the quotient ring  $R / S_2$  in Table 10.3 is isomorphic to  $T_4^{\mathrm{op}}$ . (See Problem 6.)  
+1 Suppose  $\phi$  is an isomorphism between  $R$  and  $S$ . Show that if  $S$  is commutative, then so is  $R$ .
+2 Suppose  $\phi$  is an surjective isomorphism between  $R$  and  $S$ . Show that if  $S$  has a unity element, then so does  $R$ .
+3 Suppose  $\phi$  is an isomorphism between  $R$  and  $S$ . Show that if  $R$  has a zero divisor, then so does  $S$ .
+4 Suppose  $\phi$  is an isomorphism between  $R$  and  $S$ . Show that if  $R$  has a non-zero idempotent element, then so does  $S$ . See Problem 13 of §9.3.
+5 Find a subring of the ring  $T_8$  in Table 9.7 that is isomorphic to the ring  $T_4$  in Table 9.6.
+6 Let  $R$  be a non-commutative ring. Define the operation  $x*y = y \cdot x$ . Show that the set  $R$  forms a ring using the operations  $*$  and  $+$  instead of  $\cdot$  and  $+$ . This new ring is called the opposite ring of  $R$  and is denoted  $R^{\mathrm{op}}$ .
+7 Show that the ring  $T_4$  in Table 9.6 is not isomorphic to its opposite. (See Problem 6.)
+8 Show that the quotient ring  $R / S_2$  in Table 10.3 is isomorphic to  $T_4^{\mathrm{op}}$ . (See Problem 6.)
 9 Show that the ring  $T_8$  in Table 9.7 is isomorphic to its opposite. (See Problem 6.)
 
 Hint: First construct the multiplication table for  $T_8^{\mathrm{op}}$ , then determine how to rearrange the elements of  $T_8$  so that the patterns match.
@@ -13486,8 +13486,8 @@ Hint: First construct the multiplication table for  $T_8^{\mathrm{op}}$ , then d
 
 Hint: Use Problem 12 from §9.2.
 
-11 Is the ring  $2\mathbb{Z}$  isomorphic to the ring  $3\mathbb{Z}$ ? Why or why not?  
-12 Let  $A = \langle 2 \rangle$  and  $B = \langle 8 \rangle$  be two ideals of the ring  $\mathbb{Z}$ . Show that the group  $A / B$  is isomorphic to  $Z_4$ , but the ring  $A / B$  is not isomorphic to the ring  $Z_4$ .  
+11 Is the ring  $2\mathbb{Z}$  isomorphic to the ring  $3\mathbb{Z}$ ? Why or why not?
+12 Let  $A = \langle 2 \rangle$  and  $B = \langle 8 \rangle$  be two ideals of the ring  $\mathbb{Z}$ . Show that the group  $A / B$  is isomorphic to  $Z_4$ , but the ring  $A / B$  is not isomorphic to the ring  $Z_4$ .
 13 Is the ring  $\mathbb{R}$  isomorphic to the ring of complex numbers  $\mathbb{C}$ ?
 
 For Problems 14 through 17, find all non-isomorphic rings of the following order.
@@ -13586,7 +13586,7 @@ Z6 = ZRing(6); Z6
 The homomorphism is determined completely by the value of  $f(1)$ . A natural choice would be to let  $f(1) = 2 \mod 6$ . To define a ring homomorphism, we use the command RingHomo instead of Homomorph.
 
 ```txt
-$\mathbf{F} =$  RingHomo(Z3, Z6)  
+$\mathbf{F} =$  RingHomo(Z3, Z6)
 HomoDef(F, 1, 2)
 ```
 
@@ -13599,18 +13599,18 @@ FinishHomo(F)  $2*2$  is not 2 'Homomorphism failed'
 SageMath shows that this would not produce a homomorphism. One way to correct this problem would be to send  $f(a)$  to the zero element of  $Z_6$ .
 
 ```txt
-$\mathbf{F} =$  RingHomo(Z3, Z6)  
-HomoDef(F, 1, 0)  
-FinishHomo(F)  
+$\mathbf{F} =$  RingHomo(Z3, Z6)
+HomoDef(F, 1, 0)
+FinishHomo(F)
 'Homomorphism defined'
 ```
 
 Although this works, this is a rather trivial example, since it sends all elements to 0. After some experimenting, we can find a more interesting example.
 
 ```txt
-$\mathbf{F} =$  RingHomo(Z3, Z6)  
-HomoDef(F, 1, 4)  
-FinishHomo(F)  
+$\mathbf{F} =$  RingHomo(Z3, Z6)
+HomoDef(F, 1, 4)
+FinishHomo(F)
 'Homomorphism defined'
 ```
 
@@ -13629,17 +13629,17 @@ is called the zero homomorphism from  $A$  to  $B$ .
 As with groups, we define  $f(S)$ , where  $S$  is a set of elements in the domain of  $f$ , to be the set of all values  $f(x)$ , where  $x$  is in  $S$ . We can also define the inverse image of an element  $y$  to be  $f^{-1}(y)$ , the set of elements such that  $f(x) = y$ . In fact, we can define the inverse image of a set of elements in the same way:  $f^{-1}(T)$  is the set of elements such that  $f(x)$  is in  $T$ . We can find images and inverse images of ring homomorphisms the same way we did for group homomorphisms. Here is a new homomorphism going from  $Z_6$  to  $Z_3$ .
 
 ```txt
-G = RingHomo(Z6, Z3)  
-HomoDef(G, 1, 1)  
-FinishHomo(G)  
-'Homomorphism defined'  
-G(4)  
-1  
-Image(G, Z6)  
-{0, 1, 2}  
-HomoInv(G, 2)  
-{2, 5}  
-HomoInv(G, [0, 1])  
+G = RingHomo(Z6, Z3)
+HomoDef(G, 1, 1)
+FinishHomo(G)
+'Homomorphism defined'
+G(4)
+1
+Image(G, Z6)
+{0, 1, 2}
+HomoInv(G, 2)
+{2, 5}
+HomoInv(G, [0, 1])
 {0, 1, 3, 4}
 ```
 
@@ -13742,17 +13742,17 @@ Find a non-zero homomorphism from the non-commutative ring  $R$  of order 8, use
 SOLUTION: The kernel would have to be an ideal of  $R$ . But  $R$  has only three nontrivial ideals:
 
 ```autohotkey
-InitRing(); AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a^2, a); Define(b^2, 0)  
-Define(a*b, b); Define(b*a, 2*a)  
-R = Ring(); R  
-{0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}  
-I1 = Ideal(R, 2*a); I1  
-{0, 2a}  
-I2 = Ideal(R, 2*a + b); I2  
-{0, 2a + b}  
-I3 = Ideal(R, b); I3  
+InitRing(); AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a^2, a); Define(b^2, 0)
+Define(a*b, b); Define(b*a, 2*a)
+R = Ring(); R
+{0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}
+I1 = Ideal(R, 2*a); I1
+{0, 2a}
+I2 = Ideal(R, 2*a + b); I2
+{0, 2a + b}
+I3 = Ideal(R, b); I3
 {0, b, 2a, 2a + b}
 ```
 
@@ -13769,10 +13769,10 @@ $\mathsf{Q} = \mathsf{Coset}(\mathsf{R},\mathsf{I1})$  ；Q  $\{\{0,2a\} ,\{a,3a
 We wish to define a homomorphism  $i(x)$  which maps an element in  $R$  to the coset of  $Q$  containing that element. We only need to define  $i(a)$  and  $i(b)$  to complete the definition.
 
 ```txt
-$\mathbf{i} =$  RingHomo(R, Q)  
-HomoDef(i, a, a + I1)  
-HomoDef(i, b, b + I1)  
-FinishHomo(i)  
+$\mathbf{i} =$  RingHomo(R, Q)
+HomoDef(i, a, a + I1)
+HomoDef(i, b, b + I1)
+FinishHomo(i)
 'Homomorphism defined'
 ```
 
@@ -13860,15 +13860,15 @@ It should be noted that there are second and third ring isomorphism theorems. Th
 
 # Problems for §10.4
 
-1 Find all ring homomorphisms from  $Z_{6}$  to  $Z_{6}$ .  
-2 Find all ring homomorphisms from  $Z_{10}$  to  $Z_{10}$ .  
-3 Show that if  $\phi(x) = 2x$ , then  $\phi$  is not a ring homomorphism from  $\mathbb{R}$  to  $\mathbb{R}$ .  
-4 Is the mapping  $\phi$  from  $Z_{5}$  to  $Z_{30}$  given by  $\phi(x) = 6x$  a ring homomorphism?  
-5 Is the mapping  $\phi$  from  $Z_{5}$  to  $Z_{20}$  given by  $\phi (x) = 4x$  a ring homomorphism?  
-6 Is the mapping  $\phi$  from  $Z_{30}$  to  $Z_{5}$  given by  $\phi(x) = x \bmod 5$  a ring homomorphism?  
-7 Is the mapping  $\phi$  from  $Z_{20}$  to  $Z_{5}$  given by  $\phi(x) = x \bmod 5$  a ring homomorphism?  
-8 Is the mapping  $\phi$  from  $Z_{20}$  to  $Z_{10}$  given by  $\phi(x) = 6x \bmod 10$  a ring homomorphism?  
-9 Is the mapping  $\phi$  from  $Z_{2}$  to  $Z_{4}$  given by  $\phi (x) = x$  a ring homomorphism?  
+1 Find all ring homomorphisms from  $Z_{6}$  to  $Z_{6}$ .
+2 Find all ring homomorphisms from  $Z_{10}$  to  $Z_{10}$ .
+3 Show that if  $\phi(x) = 2x$ , then  $\phi$  is not a ring homomorphism from  $\mathbb{R}$  to  $\mathbb{R}$ .
+4 Is the mapping  $\phi$  from  $Z_{5}$  to  $Z_{30}$  given by  $\phi(x) = 6x$  a ring homomorphism?
+5 Is the mapping  $\phi$  from  $Z_{5}$  to  $Z_{20}$  given by  $\phi (x) = 4x$  a ring homomorphism?
+6 Is the mapping  $\phi$  from  $Z_{30}$  to  $Z_{5}$  given by  $\phi(x) = x \bmod 5$  a ring homomorphism?
+7 Is the mapping  $\phi$  from  $Z_{20}$  to  $Z_{5}$  given by  $\phi(x) = x \bmod 5$  a ring homomorphism?
+8 Is the mapping  $\phi$  from  $Z_{20}$  to  $Z_{10}$  given by  $\phi(x) = 6x \bmod 10$  a ring homomorphism?
+9 Is the mapping  $\phi$  from  $Z_{2}$  to  $Z_{4}$  given by  $\phi (x) = x$  a ring homomorphism?
 10 Determine all ring homomorphisms from the rationals  $\mathbb{Q}$  to  $\mathbb{Q}$ .
 
 Hint: What are the possible kernels? If  $\phi(1) = 1$ , show that  $\phi(x) = x$ .
@@ -13899,11 +13899,11 @@ Dedekind is also known for the Dedekind domain, which is an integral domain for 
 
 Image source: Wikimedia Commons
 
-13 Show that if  $\phi$  is a homomorphism from a ring  $R$  to a ring  $S$ , then a nilpotent element of  $R$  must be sent to a nilpotent element of  $S$ . See Problem 14 of §10.1.  
-14 Show that if  $\phi$  is a homomorphism from a ring  $R$  to a ring  $S$ , and  $R$  is a principle ideal ring, then  $\operatorname{Im}(\phi)$  is also a principle ideal ring.  
-15 A non-trivial ideal  $I$  of a ring  $R$  is said to be a prime ideal of  $R$  if whenever  $x \cdot y$  is in  $I$ , with  $x, y \in R$ , then either  $x$  or  $y$  is in  $I$ . Show that the prime ideals of the ring  $\mathbb{Z}$  are the ideals  $\langle p \rangle$  with  $p$  prime. Prime ideals are important in Dedekind domains. (See the Historical Diversion on page 334.)  
-16 Let  $R$  be any commutative unity ring, and let  $I = \langle p \rangle$  be a principle ideal of  $R$ . Show that  $I$  is a prime ideal if, and only if,  $p$  is a prime element of  $R$ , as defined in Problem 21 of §9.3. See Problem 15.  
-17 Let  $R$  be any commutative unity ring, and  $I$  a non-trivial ideal of  $R$ . Show that  $I$  is a prime ideal of  $R$  if, and only if, the quotient ring  $R / I$  has no zero divisors. See Problem 15.  
+13 Show that if  $\phi$  is a homomorphism from a ring  $R$  to a ring  $S$ , then a nilpotent element of  $R$  must be sent to a nilpotent element of  $S$ . See Problem 14 of §10.1.
+14 Show that if  $\phi$  is a homomorphism from a ring  $R$  to a ring  $S$ , and  $R$  is a principle ideal ring, then  $\operatorname{Im}(\phi)$  is also a principle ideal ring.
+15 A non-trivial ideal  $I$  of a ring  $R$  is said to be a prime ideal of  $R$  if whenever  $x \cdot y$  is in  $I$ , with  $x, y \in R$ , then either  $x$  or  $y$  is in  $I$ . Show that the prime ideals of the ring  $\mathbb{Z}$  are the ideals  $\langle p \rangle$  with  $p$  prime. Prime ideals are important in Dedekind domains. (See the Historical Diversion on page 334.)
+16 Let  $R$  be any commutative unity ring, and let  $I = \langle p \rangle$  be a principle ideal of  $R$ . Show that  $I$  is a prime ideal if, and only if,  $p$  is a prime element of  $R$ , as defined in Problem 21 of §9.3. See Problem 15.
+17 Let  $R$  be any commutative unity ring, and  $I$  a non-trivial ideal of  $R$ . Show that  $I$  is a prime ideal of  $R$  if, and only if, the quotient ring  $R / I$  has no zero divisors. See Problem 15.
 18 Prove the second ring isomorphism theorem: If  $K$  and  $I$  are two ideals of a ring  $R$ , then
 
 $$
@@ -14087,11 +14087,11 @@ We can use the fact that multiplication is commutative to show that  $(A + B)\cd
 Let us consider the commutative ring of order 8 from Tables 9.3 and 9.4 in Chapter 9.
 
 ```autohotkey
-InitRing(); AddRingVar("a", "b")  
-Define(4*a, 0); Define(2*b, 0)  
-Define(a^2, a); Define(b^2, b)  
-Define(a*b, 0); Define(b*a, 0)  
-R = Ring(); R  
+InitRing(); AddRingVar("a", "b")
+Define(4*a, 0); Define(2*b, 0)
+Define(a^2, a); Define(b^2, b)
+Define(a*b, 0); Define(b*a, 0)
+R = Ring(); R
 {0, a, 2a, 3a, b, a + b, 2a + b, 3a + b}
 ```
 
@@ -14212,14 +14212,14 @@ Now we can do computations in the polynomial ring  $Z_{3}[i]$ .
 Let us try imitating the complex numbers, and tell SageMath that  $i^2 = -1$ .
 
 ```txt
-Define  $(\mathbf{i}^{\wedge}2, - 1)$    
-K  $=$  Field();K{0,1,2,i,i+1,i+2,2*i,2*i+1,2*i+2}AddTable(K)  
+Define  $(\mathbf{i}^{\wedge}2, - 1)$
+K  $=$  Field();K{0,1,2,i,i+1,i+2,2*i,2*i+1,2*i+2}AddTable(K)
 MultTable(K)
 ```
 
 This produces Tables 11.1 and 11.2.
 
-TABLE 11.1: Addition of "complex numbers modulo 3"  
+TABLE 11.1: Addition of "complex numbers modulo 3"
 
 <table><tr><td>+</td><td>0</td><td>1</td><td>2</td><td>i</td><td>2i</td><td>1+i</td><td>2+i</td><td>1+2i</td><td>2+2i</td></tr><tr><td>0</td><td>0</td><td>1</td><td>2</td><td>i</td><td>2i</td><td>1+i</td><td>2+i</td><td>1+2i</td><td>2+2i</td></tr><tr><td>1</td><td>1</td><td>2</td><td>0</td><td>1+i</td><td>1+2i</td><td>2+i</td><td>i</td><td>2+2i</td><td>2i</td></tr><tr><td>2</td><td>2</td><td>0</td><td>1</td><td>2+i</td><td>2+2i</td><td>i</td><td>1+i</td><td>2i</td><td>1+2i</td></tr><tr><td>i</td><td>i</td><td>1+i</td><td>2+i</td><td>2i</td><td>0</td><td>1+2i</td><td>2+2i</td><td>1</td><td>2</td></tr><tr><td>2i</td><td>2i</td><td>1+2i</td><td>2+2i</td><td>0</td><td>i</td><td>1</td><td>2</td><td>1+i</td><td>2+i</td></tr><tr><td>1+i</td><td>1+i</td><td>2+i</td><td>i</td><td>1+2i</td><td>1</td><td>2+2i</td><td>2i</td><td>2</td><td>0</td></tr><tr><td>2+i</td><td>2+i</td><td>i</td><td>1+i</td><td>2+2i</td><td>2</td><td>2i</td><td>1+2i</td><td>0</td><td>1</td></tr><tr><td>1+2i</td><td>1+2i</td><td>2+2i</td><td>2i</td><td>1</td><td>1+i</td><td>2</td><td>0</td><td>2+i</td><td>i</td></tr><tr><td>2+2i</td><td>2+2i</td><td>2i</td><td>1+2i</td><td>2</td><td>2+i</td><td>0</td><td>1</td><td>i</td><td>1+i</td></tr></table>
 
@@ -14235,7 +14235,7 @@ defines the integral domain  $Z_{3}[x]$  in one step. We can now do operations i
 $(\mathbf{x} + 2)^{\wedge}2$ $\mathrm{x^{\wedge}2 + x + 1}$  factor  $(\mathbf{x}^{\wedge}2 + 2)$
 ```
 
-TABLE 11.2: Multiplication for "complex numbers modulo 3"  
+TABLE 11.2: Multiplication for "complex numbers modulo 3"
 
 <table><tr><td>·</td><td>0</td><td>1</td><td>2</td><td>i</td><td>2i</td><td>1+i</td><td>2+i</td><td>1+2i</td><td>2+2i</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>1</td><td>2</td><td>i</td><td>2i</td><td>1+i</td><td>2+i</td><td>1+2i</td><td>2+2i</td></tr><tr><td>2</td><td>0</td><td>2</td><td>1</td><td>2i</td><td>i</td><td>2+2i</td><td>1+2i</td><td>2+i</td><td>1+i</td></tr><tr><td>i</td><td>0</td><td>i</td><td>2i</td><td>2</td><td>1</td><td>2+i</td><td>2+2i</td><td>1+i</td><td>1+2i</td></tr><tr><td>2i</td><td>0</td><td>2i</td><td>i</td><td>1</td><td>2</td><td>1+2i</td><td>1+i</td><td>2+2i</td><td>2+i</td></tr><tr><td>1+i</td><td>0</td><td>1+i</td><td>2+2i</td><td>2+i</td><td>1+2i</td><td>2i</td><td>1</td><td>2</td><td>i</td></tr><tr><td>2+i</td><td>0</td><td>2+i</td><td>1+2i</td><td>2+2i</td><td>1+i</td><td>1</td><td>i</td><td>2i</td><td>2</td></tr><tr><td>1+2i</td><td>0</td><td>1+2i</td><td>2+i</td><td>1+i</td><td>2+2i</td><td>2</td><td>2i</td><td>i</td><td>1</td></tr><tr><td>2+2i</td><td>0</td><td>2+2i</td><td>1+i</td><td>1+2i</td><td>2+i</td><td>i</td><td>2</td><td>1</td><td>2i</td></tr></table>
 
@@ -14258,8 +14258,8 @@ $\mathbf{y} = (1 + \mathbf{i})\star \mathbf{x} + 2;\mathbf{y}$ $(\mathrm{i} + 1)
 SageMath can factor polynomials defined over any finite field. It turns out that such factorizations are unique. If SageMath tries to factor  $x^2 + 1$  in the standard way, (using the ring  $\mathbb{Z}$ ),
 
 ```txt
-var("X")  
-factor(X^2 + 1)  
+var("X")
+factor(X^2 + 1)
 X^2 + 1
 ```
 
@@ -14303,19 +14303,19 @@ For Problems 7 through 12: Expand the following polynomials using the "complex n
 
 12  $(ix^{2} + (2 + i)x + 2)(2x^{2} + 2ix + 1)$
 
-13 Let  $D$  be an integral domain with positive characteristic. Prove that all nonzero elements of  $D$  have the same additive order.  
-14 Show an example for which Problem 13 is not true for arbitrary rings.  
-15 Let  $\{0, e, a, b\}$  be a field of order 4, with  $e$  as the unity. Construct addition and multiplication tables for the field.  
-16 For the field  $K$  of "complex numbers modulo 3," let  $\phi(x)$  denote the complex conjugate mod 3, that is,  $\phi(a + bi) = a + 2bi \mod 3$  for  $a, b \in Z_3$ . Show that  $\phi(x)$  is a ring isomorphism from  $K$  to itself.  
-17 For the field  $K$  of "complex numbers modulo 3," use Table 11.2 to show that every element cubed is the complex conjugate of Problem 16. That is,  $\phi(x) = x^3$ .  
-18 Show that in fact for every commutative ring of characteristic 3, the function  $\phi(x) = x^3$  will be a ring homomorphism from the ring to itself.  
-19 Show that if the ring of Problem 18 is an integral domain of characteristic 3, then the homomorphism  $\phi(x) = x^3$  is in fact one-to-one.  
+13 Let  $D$  be an integral domain with positive characteristic. Prove that all nonzero elements of  $D$  have the same additive order.
+14 Show an example for which Problem 13 is not true for arbitrary rings.
+15 Let  $\{0, e, a, b\}$  be a field of order 4, with  $e$  as the unity. Construct addition and multiplication tables for the field.
+16 For the field  $K$  of "complex numbers modulo 3," let  $\phi(x)$  denote the complex conjugate mod 3, that is,  $\phi(a + bi) = a + 2bi \mod 3$  for  $a, b \in Z_3$ . Show that  $\phi(x)$  is a ring isomorphism from  $K$  to itself.
+17 For the field  $K$  of "complex numbers modulo 3," use Table 11.2 to show that every element cubed is the complex conjugate of Problem 16. That is,  $\phi(x) = x^3$ .
+18 Show that in fact for every commutative ring of characteristic 3, the function  $\phi(x) = x^3$  will be a ring homomorphism from the ring to itself.
+19 Show that if the ring of Problem 18 is an integral domain of characteristic 3, then the homomorphism  $\phi(x) = x^3$  is in fact one-to-one.
 20 List all polynomials in  $Z_{3}[x]$  that have degree 2.
 
-21 Of the second degree polynomials in  $Z_{3}[x]$  listed in Problem 20, which ones cannot be factored?  
-Hint: A quadratic polynomial in  $Z_{3}[x]$  cannot be factored if neither 0, 1, nor 2 are roots.  
-22 We saw that the polynomial  $x^{2} + 1$  factored over the "complex numbers modulo 3" as  $(x + i)(x + 2i)$ , even though this polynomial is irreducible in  $Z_{3}[x]$ . Find any other second degree irreducible polynomial in  $Z_{3}[x]$  from Problem 21, and show that it also factors over the "complex numbers modulo 3."  
-23 List all polynomials in  $Z_{2}[x]$  that have degree 3.  
+21 Of the second degree polynomials in  $Z_{3}[x]$  listed in Problem 20, which ones cannot be factored?
+Hint: A quadratic polynomial in  $Z_{3}[x]$  cannot be factored if neither 0, 1, nor 2 are roots.
+22 We saw that the polynomial  $x^{2} + 1$  factored over the "complex numbers modulo 3" as  $(x + i)(x + 2i)$ , even though this polynomial is irreducible in  $Z_{3}[x]$ . Find any other second degree irreducible polynomial in  $Z_{3}[x]$  from Problem 21, and show that it also factors over the "complex numbers modulo 3."
+23 List all polynomials in  $Z_{2}[x]$  that have degree 3.
 24 Of the third degree polynomials in  $Z_{2}[x]$  listed in Problem 23, which ones cannot be factored?
 
 Hint: A cubic polynomial in  $Z_{2}[x]$  cannot be factored if neither 0 nor 1 are roots.
@@ -14325,10 +14325,10 @@ Hint: A cubic polynomial in  $Z_{2}[x]$  cannot be factored if neither 0 nor 1 a
 25 In the field of "complex numbers modulo 3":
 
 ```txt
-InitDomain(3, "x")  
-AddFieldVar("i")  
-Define(i^2, -1)  
-K = Field(); K  
+InitDomain(3, "x")
+AddFieldVar("i")
+Define(i^2, -1)
+K = Field(); K
 {0, 1, 2, i, i + 1, i + 2, 2*i, 2*i + 1, 2*i + 2}
 ```
 
@@ -14337,8 +14337,8 @@ Factor the polynomials  $x^{3} + 1$ ,  $x^{3} + 2$ ,  $x^{3} + i$ ,  $x^{3} + 2i
 26 Explain why the ring "complex numbers modulo 5":
 
 ```autoit
-InitDomain(5)  
-AddFieldVar("i")  
+InitDomain(5)
+AddFieldVar("i")
 Define(i^2, -1)
 ```
 
@@ -14635,7 +14635,7 @@ $$
 yield the same result. Other ways of showing that  $A$  and  $B$  are equivalent is by computing either of these two commands:
 
 ```erlang
-Together(A-B) 0   
+Together(A-B) 0
 Together(A/B) 1
 ```
 
@@ -14656,8 +14656,8 @@ $$
 defined over the field of order 9 that was defined by Tables 11.1 and 11.2. SOLUTION: First we set up the field.
 
 ```autoit
-InitDomain(3, "x")  
-AddFieldVar("i")  
+InitDomain(3, "x")
+AddFieldVar("i")
 Define(i^2, -1)
 ```
 
@@ -14685,14 +14685,14 @@ As you can see from this example, the definition of the quotient field does not 
 
 # Problems for §11.2
 
-1 If  $Q$  is the field of quotients of an integral domain, show that  $\left(\frac{-a}{b}\right)$  is the additive inverse of  $\left(\frac{a}{b}\right)$  in  $Q$ .  
+1 If  $Q$  is the field of quotients of an integral domain, show that  $\left(\frac{-a}{b}\right)$  is the additive inverse of  $\left(\frac{a}{b}\right)$  in  $Q$ .
 2 If  $Q$  is the field of quotients of an integral domain, show that the left distributive property holds for  $Q$ :
 
 $$
 \left(\frac {u}{v}\right) \cdot \left(\left(\frac {x}{y}\right) + \left(\frac {z}{w}\right)\right) = \left(\frac {u}{v}\right) \cdot \left(\frac {x}{y}\right) + \left(\frac {u}{v}\right) \cdot \left(\frac {z}{w}\right).
 $$
 
-3 If  $Q$  is the field of quotients of an integral domain, show that the multiplication in  $Q$  is associative.  
+3 If  $Q$  is the field of quotients of an integral domain, show that the multiplication in  $Q$  is associative.
 4 Investigate what happens if we compute the field of quotients of a ring that is already a field. Let  $K = Z_{3}$ , and let  $P$  be the set of ordered pairs
 
 $$
@@ -14707,8 +14707,8 @@ $$
 
 If  $Q$  is the set of equivalence classes, construct addition and multiplication tables for  $Q$  and show that  $Q$  is isomorphic to  $Z_{3}$ .
 
-5 Repeat Problem 4, using  $Z_{5}$  instead of  $Z_{3}$ .  
-6 Prove that if  $K$  is a field, then the field of quotients of  $K$  is isomorphic to  $K$ .  
+5 Repeat Problem 4, using  $Z_{5}$  instead of  $Z_{3}$ .
+6 Prove that if  $K$  is a field, then the field of quotients of  $K$  is isomorphic to  $K$ .
 7 Show that is we apply Corollary 11.1 to the ring of even integers, we obtain a field isomorphic to  $\mathbb{Q}$ .
 
 8 What is the quotient field for the ring given by
@@ -14721,9 +14721,9 @@ $$
 
 For Problems 10 through 17: Perform the following operations in  $Z_{2}(x)$ , the rational functions over  $Z_{2}$ .
 
-10  $\frac{x^2 + x + 1}{x + 1} +\frac{x + 1}{x}$  14  $\frac{x^2 + x + 1}{x + 1}\cdot \frac{x}{x + 1}$  
-11  $\frac{x + 1}{x^2 + x + 1} +\frac{1}{x^2 + x}$  15  $\frac{x^2 + 1}{x^2 + x + 1}\cdot \frac{x^2}{x + 1}$  
-12  $\frac{x^2 + 1}{x} +\frac{x^2 + x + 1}{x + 1}$  16  $\frac{x^2 + x + 1}{x^2 + x}\cdot \frac{x^2 + 1}{x}$  
+10  $\frac{x^2 + x + 1}{x + 1} +\frac{x + 1}{x}$  14  $\frac{x^2 + x + 1}{x + 1}\cdot \frac{x}{x + 1}$
+11  $\frac{x + 1}{x^2 + x + 1} +\frac{1}{x^2 + x}$  15  $\frac{x^2 + 1}{x^2 + x + 1}\cdot \frac{x^2}{x + 1}$
+12  $\frac{x^2 + 1}{x} +\frac{x^2 + x + 1}{x + 1}$  16  $\frac{x^2 + x + 1}{x^2 + x}\cdot \frac{x^2 + 1}{x}$
 13  $\frac{x^2 + x}{x^2 + x + 1} +\frac{x}{x + 1}$  17  $\frac{x^2}{x^2 + x + 1}\cdot \frac{x + 1}{x^2 + x + 1}$
 
 Interactive Problems
@@ -14734,7 +14734,7 @@ $$
 \frac {x ^ {4} + x ^ {3} + x + 1}{x ^ {3} + x ^ {2} + x + 1}.
 $$
 
-19 Try squaring different elements of  $Z_{2}(x)$ . What do you observe? Any explanations?  
+19 Try squaring different elements of  $Z_{2}(x)$ . What do you observe? Any explanations?
 20 Have SageMath compute the following operation in the rational function field of Example 11.1.
 
 $$
@@ -14769,8 +14769,8 @@ You may have noticed that SageMath puts the complex part of the number first. In
 
 We would like to show how complex numbers are a natural extension of the real numbers. Instead of considering quantities of the form  $a + bi$ , we will consider ordered pairs  $(a, b)$ . We will declare the following properties for ordered pairs of real numbers:
 
-1.  $(a,b) = (c,d)$  if, and only if,  $a = c$  and  $b = d$ .  
-2.  $(a,b) + (c,d) = (a + c,b + d)$ .  
+1.  $(a,b) = (c,d)$  if, and only if,  $a = c$  and  $b = d$ .
+2.  $(a,b) + (c,d) = (a + c,b + d)$ .
 3.  $(a,b)\cdot (c,d) = (a\cdot c - b\cdot d,a\cdot d + b\cdot c).$
 
 We define  $\mathbb{C}$  to be the set of all ordered pairs of real numbers.
@@ -15053,7 +15053,7 @@ Since there is a geometric interpretation of the absolute value, this propositio
 
 From polar coordinates it is known that any point in the plane can be located by knowing its distance  $r$  from the origin, and its angle  $\theta$  from the positive  $x$ -axis.
 
-![](images/ef55d6d1d7dcc8ee49b5390f88143fb67139484404fa2770718b71cf87a4462a.jpg)  
+![](images/ef55d6d1d7dcc8ee49b5390f88143fb67139484404fa2770718b71cf87a4462a.jpg)
 FIGURE 11.1: Polar coordinates for a complex number
 
 Since  $r$  is the absolute value of  $(x + yi)$ , perhaps the angle  $\theta$  is also significant to the complex number. By using trigonometry in Figure 11.1, we have that
@@ -15222,7 +15222,7 @@ so  $\omega_{n}$  is indeed one  $n^{\mathrm{th}}$  root of unity. In fact, all 
 
 The eighth root of unity,  $\omega_8$ , can be entered into SageMath using the commands
 
-![](images/1fa8f5d8c74ffda36f96679208ed7a474a22cfbe671cad2ed5600665b67d6066.jpg)  
+![](images/1fa8f5d8c74ffda36f96679208ed7a474a22cfbe671cad2ed5600665b67d6066.jpg)
 FIGURE 11.2: The eight roots of unity
 
 $$
@@ -15355,7 +15355,7 @@ Notice that this gives a set of numbers, not just a single number. Although ther
 
 For each integer  $n > 0$ , and any nonzero complex number  $z$ , then there are exactly  $n$  values for  $z^{(1/n)}$ . Thus, there are exactly  $n$  solutions for  $x$  to the equation  $x^n = z$ .
 
-![](images/df3f9a310e1708592dc661d2e272f8dc37563fd5bfc8935bc32ed8404b3e98a0.jpg)  
+![](images/df3f9a310e1708592dc661d2e272f8dc37563fd5bfc8935bc32ed8404b3e98a0.jpg)
 FIGURE 11.3: Imaginary portion of the complex logarithm function
 
 PROOF: Let  $z$  have the polar form
@@ -15432,14 +15432,14 @@ is valid for complex values of  $x$  as well as real values. Prove that  $e^{i} 
 
 Hint: Convert  $(1 + i / n)$  into polar form using an arctangent.
 
-4 Find all possible values of  $\log (-1)$  
-5 Find all possible values of  $\log (\sqrt{3} -i)$  
-6 Find all possible values of  $1^{1/6}$ .  
-7 Find all complex solutions to the equation  $z^4 + 1 = 0$ .  
-8 Find all complex solutions to the equation  $z^3 + 8 = 0$  
-9 Find all possible values of  $(8i)^{1 / 3}$  
-10 Find five values of the expression  $i^i$ .  
-11 Find five values of the expression  $(-i)^{(i / 2)}$ .  
+4 Find all possible values of  $\log (-1)$
+5 Find all possible values of  $\log (\sqrt{3} -i)$
+6 Find all possible values of  $1^{1/6}$ .
+7 Find all complex solutions to the equation  $z^4 + 1 = 0$ .
+8 Find all complex solutions to the equation  $z^3 + 8 = 0$
+9 Find all possible values of  $(8i)^{1 / 3}$
+10 Find five values of the expression  $i^i$ .
+11 Find five values of the expression  $(-i)^{(i / 2)}$ .
 12 Show that when  $x$  and  $y$  are both complex, the set of all values of the expression  $x^{y}$  forms a geometric sequence:
 
 $$
@@ -15454,7 +15454,7 @@ $$
 
 (See Problem 12. There will be more than one solution to this problem.)
 
-14 Show that for a fixed  $n$ , the set of all  $n^{\text{th}}$  roots of 1 forms a group with respect to multiplication.  
+14 Show that for a fixed  $n$ , the set of all  $n^{\text{th}}$  roots of 1 forms a group with respect to multiplication.
 15 Prove that the group in exercise 14 is cyclic, with
 
 $$
@@ -15497,63 +15497,63 @@ $$
 
 # Section 1.1
 
-1)  $q = 7, r = 4$  
-3)  $q = -19, r = 20$  
-5)  $q = 194, r = 2$  
-7)  $q = 0, r = 37$  
+1)  $q = 7, r = 4$
+3)  $q = -19, r = 20$
+5)  $q = 194, r = 2$
+7)  $q = 0, r = 37$
 9)  $q = 0, r = 0$
 
-11) Since  $b = ad$  and  $c = be$  for some integers  $d$  and  $e$ ,  $c = a(de)$  is a multiple of  $a$ .  
-13) Since  $b = ad$  and  $c = ae$  for some integers  $d$  and  $e$ ,  $b - c = a(d - e)$  is a multiple of  $a$ .  
-15) Since  $b = ac$  and  $a = bd$  for some integers  $c$  and  $d$ ,  $a = acd$ , so  $cd = 1$ . This can only happen if  $c$  and  $d$  are  $\pm 1$ .  
-17) Since  $bc = ad$  for some integer  $d$ , and by Bézout's lemma,  $\gcd(a, b) = 1 = ua + vb$  for some integers  $u$  and  $v$ , we find  $c = c(ua + vb) = a(cu + vd)$  is a multiple of  $a$ .  
-19)  $(-1)\cdot 84 + 2\cdot 48 = 12$  
-21)  $4\cdot 84 + (-5)\cdot 66 = 6$  
-23)  $(-34)\cdot 827 + 273\cdot 103 = 1$  
-25)  $(-2)\cdot (-602) + (-5)\cdot 238 = 14.$  
-27)  $0\cdot 0 + 1\cdot 9 = 9$  
-29) Since  $xy$  is a common multiple, by the well-ordering axiom there is a least common multiple, say  $z = ax = by$ . Note that  $\gcd(a, b) = 1$ , else we can divide by  $\gcd(a, b)$  to produce an even smaller common multiple. Then there is a  $u$  and  $v$  such that  $ua + vb = 1$ , so  $uaxy + vbxy = xy$ , hence  $z(uy + vx) = xy$ .  
-31) Let  $t = \gcd(x, y)$ . First find  $r$  and  $s$  so that  $xr + ys = t = \gcd(x, y)$ . Then find  $a$  and  $w$  such that  $at + wz = \gcd(t, z) = 1$ . Then  $a(xr + ys) + wz = 1$ , so let  $u = ar$  and  $v = as$ .  
-33)  $2\cdot 3\cdot 23\cdot 29$  
-35)  $11\cdot 29\cdot 31$  
-37)  $3\cdot 17^{2}\cdot 101$  
-39)  $u = -222222223$ ,  $v = 1777777788$  
+11) Since  $b = ad$  and  $c = be$  for some integers  $d$  and  $e$ ,  $c = a(de)$  is a multiple of  $a$ .
+13) Since  $b = ad$  and  $c = ae$  for some integers  $d$  and  $e$ ,  $b - c = a(d - e)$  is a multiple of  $a$ .
+15) Since  $b = ac$  and  $a = bd$  for some integers  $c$  and  $d$ ,  $a = acd$ , so  $cd = 1$ . This can only happen if  $c$  and  $d$  are  $\pm 1$ .
+17) Since  $bc = ad$  for some integer  $d$ , and by Bézout's lemma,  $\gcd(a, b) = 1 = ua + vb$  for some integers  $u$  and  $v$ , we find  $c = c(ua + vb) = a(cu + vd)$  is a multiple of  $a$ .
+19)  $(-1)\cdot 84 + 2\cdot 48 = 12$
+21)  $4\cdot 84 + (-5)\cdot 66 = 6$
+23)  $(-34)\cdot 827 + 273\cdot 103 = 1$
+25)  $(-2)\cdot (-602) + (-5)\cdot 238 = 14.$
+27)  $0\cdot 0 + 1\cdot 9 = 9$
+29) Since  $xy$  is a common multiple, by the well-ordering axiom there is a least common multiple, say  $z = ax = by$ . Note that  $\gcd(a, b) = 1$ , else we can divide by  $\gcd(a, b)$  to produce an even smaller common multiple. Then there is a  $u$  and  $v$  such that  $ua + vb = 1$ , so  $uaxy + vbxy = xy$ , hence  $z(uy + vx) = xy$ .
+31) Let  $t = \gcd(x, y)$ . First find  $r$  and  $s$  so that  $xr + ys = t = \gcd(x, y)$ . Then find  $a$  and  $w$  such that  $at + wz = \gcd(t, z) = 1$ . Then  $a(xr + ys) + wz = 1$ , so let  $u = ar$  and  $v = as$ .
+33)  $2\cdot 3\cdot 23\cdot 29$
+35)  $11\cdot 29\cdot 31$
+37)  $3\cdot 17^{2}\cdot 101$
+39)  $u = -222222223$ ,  $v = 1777777788$
 41)  $3^{4} \cdot 37^{2} \cdot 333667^{2}$ .
 
 # Section 1.2
 
-1)  $\{e,n,o,r,t,x,y\}$  
-3) a) Not one-to-one,  $f(-1) = f(1) = 1$ . b) Not onto,  $f(x) \neq -1$ .  
+1)  $\{e,n,o,r,t,x,y\}$
+3) a) Not one-to-one,  $f(-1) = f(1) = 1$ . b) Not onto,  $f(x) \neq -1$ .
 5) a) One-to-one,  $x^{3} = y^{3} \Rightarrow x = y$ . b) Onto,  $f(\sqrt[3]{y}) = y$ .
 
-7) a) Not one-to-one,  $f(0) = f(2) = 0$ . b) Not onto,  $f(x) \neq -2$ , since  $x^2 - 2x + 2$  has complex roots.  
-9) a) One-to-one, if  $x$  even,  $y$  odd, then  $y = x + 1/2$ . b) Not onto,  $f(x) \neq 3$ .  
-11) a) One-to-one, if  $x$  even,  $y$  odd, then  $x = 2y - 1$  is odd. b) Not onto,  $f(x) \neq 4$ .  
-13) a) Not one-to-one  $f(0) = f(3) = 1$ . b) Onto, either  $f(2y - 2) = y$  or  $f(2y + 1) = y$ .  
-15) If  $2x^{2} + x = 2y^{2} + y = c$ , then  $x$  and  $y = (-1 \pm \sqrt{1 + 8c}) / 4$ . If  $x \neq y$ , then  $|x - y| = \sqrt{1 + 8c} / 2$ , which is never an integer when  $c$  is an integer.  
-17)  $2^{n} = 2\cdot 2^{n - 1} <   2(n - 1)! <   n(n - 1)! = n!$  
-19) If  $(n - 1)^3 + 2(n - 1) = 3k$ , then  $n^2 + 2n = 3(k + n^2 + n + 1)$ .  
-21) If  $6^{n - 1} + 4 = 20k$ , then  $6^n + 4 = 20(6k - 1)$  
-23)  $(n - 1)((n - 1) + 1) / 2 + n = n(n + 1) / 2.$  
-25)  $(n - 1)((n - 1) + 1)(2(n - 1) + 1) / 6 + n^{2} = n(n + 1)(2n + 1) / 6.$  
-27)  $(n - 1)((n - 1) + 1)((n - 1) + 2) / 3 + n(n + 1) = n(n + 1)(n + 2) / 3.$  
-29) Suppose  $f$  were one-to-one, and let  $\tilde{B} = f(A)$ , so that  $\tilde{f}: A \to \tilde{B}$  would be a bijection. By lemma 1.6,  $|A| = |\tilde{B}|$ , but  $|\tilde{B}| \leq |B| < |A|$ .  
-31) Suppose  $f$  were not one-to-one. Then there is a case where  $f(a_{1}) = f(a_{2})$ , and we can consider the set  $\tilde{A} = A - \{a_{1}\}$ , and the function  $\tilde{f}: \tilde{A} \to B$  would still be onto. But  $|\tilde{A}| < |B|$  so by Problem 30  $\tilde{f}$  cannot be onto. Hence,  $f$  is one-to-one.  
-33)  $x^4 + 2x^2$ .  
-35)  $x^{3} - x^{2} - x + 1$  
-37)  $f(x) = \begin{cases} 3x + 14 & \text{if } x \text{ is even}, \\ 6x + 2 & \text{if } x \text{ is odd}. \end{cases}$  
-39) If  $f(g(x)) = f(g(y))$ , then since  $f$  is one-to-one,  $g(x) = g(y)$ . Since  $g$  is onto,  $x = y$ .  
-41) There is some  $c \in C$  such that  $f(y) \neq c$  for all  $y \in B$ . Then  $f(g(x)) \neq c$  since  $g(x) \in B$ .  
-43) If  $x$  even and  $y$  odd,  $f(x) = f(y)$  means  $y = x + 8$  is even. Onto is proven by finding the inverse:  $f(x) = \begin{cases} x + 3 & \text{if } x \text{ is even}, \\ x - 5 & \text{if } x \text{ is odd}. \end{cases}$  
+7) a) Not one-to-one,  $f(0) = f(2) = 0$ . b) Not onto,  $f(x) \neq -2$ , since  $x^2 - 2x + 2$  has complex roots.
+9) a) One-to-one, if  $x$  even,  $y$  odd, then  $y = x + 1/2$ . b) Not onto,  $f(x) \neq 3$ .
+11) a) One-to-one, if  $x$  even,  $y$  odd, then  $x = 2y - 1$  is odd. b) Not onto,  $f(x) \neq 4$ .
+13) a) Not one-to-one  $f(0) = f(3) = 1$ . b) Onto, either  $f(2y - 2) = y$  or  $f(2y + 1) = y$ .
+15) If  $2x^{2} + x = 2y^{2} + y = c$ , then  $x$  and  $y = (-1 \pm \sqrt{1 + 8c}) / 4$ . If  $x \neq y$ , then  $|x - y| = \sqrt{1 + 8c} / 2$ , which is never an integer when  $c$  is an integer.
+17)  $2^{n} = 2\cdot 2^{n - 1} <   2(n - 1)! <   n(n - 1)! = n!$
+19) If  $(n - 1)^3 + 2(n - 1) = 3k$ , then  $n^2 + 2n = 3(k + n^2 + n + 1)$ .
+21) If  $6^{n - 1} + 4 = 20k$ , then  $6^n + 4 = 20(6k - 1)$
+23)  $(n - 1)((n - 1) + 1) / 2 + n = n(n + 1) / 2.$
+25)  $(n - 1)((n - 1) + 1)(2(n - 1) + 1) / 6 + n^{2} = n(n + 1)(2n + 1) / 6.$
+27)  $(n - 1)((n - 1) + 1)((n - 1) + 2) / 3 + n(n + 1) = n(n + 1)(n + 2) / 3.$
+29) Suppose  $f$  were one-to-one, and let  $\tilde{B} = f(A)$ , so that  $\tilde{f}: A \to \tilde{B}$  would be a bijection. By lemma 1.6,  $|A| = |\tilde{B}|$ , but  $|\tilde{B}| \leq |B| < |A|$ .
+31) Suppose  $f$  were not one-to-one. Then there is a case where  $f(a_{1}) = f(a_{2})$ , and we can consider the set  $\tilde{A} = A - \{a_{1}\}$ , and the function  $\tilde{f}: \tilde{A} \to B$  would still be onto. But  $|\tilde{A}| < |B|$  so by Problem 30  $\tilde{f}$  cannot be onto. Hence,  $f$  is one-to-one.
+33)  $x^4 + 2x^2$ .
+35)  $x^{3} - x^{2} - x + 1$
+37)  $f(x) = \begin{cases} 3x + 14 & \text{if } x \text{ is even}, \\ 6x + 2 & \text{if } x \text{ is odd}. \end{cases}$
+39) If  $f(g(x)) = f(g(y))$ , then since  $f$  is one-to-one,  $g(x) = g(y)$ . Since  $g$  is onto,  $x = y$ .
+41) There is some  $c \in C$  such that  $f(y) \neq c$  for all  $y \in B$ . Then  $f(g(x)) \neq c$  since  $g(x) \in B$ .
+43) If  $x$  even and  $y$  odd,  $f(x) = f(y)$  means  $y = x + 8$  is even. Onto is proven by finding the inverse:  $f(x) = \begin{cases} x + 3 & \text{if } x \text{ is even}, \\ x - 5 & \text{if } x \text{ is odd}. \end{cases}$
 45)  $f(x)$  is both one-to-one and onto.
 
 # Section 1.3
 
-1) a) Commutative. b) Associative,  $(a * b) * c = a * (b * c) = a + b + c - 2$ .  
-3) a) Not commutative,  $b \neq a$ . b) Associative,  $(a * b) * c = a * (b * c) = c$ .  
-5) a) Not commutative,  $a - b \neq b - a$ . b) Not associative,  $(a*b)*c = a - b - c$ ,  $a*(b*c) = a - b + c$ .  
-7) a) Commutative. b) Associative,  $(a * b) * c = a * (b * c) = abc + 2ab + 2ac + 2bc + 4a + 4b + 4c + 6$ .  
-9)  $(a * b) * c = a * (b * c) = \gcd(a, b, c)$ , since any number that divides  $a$ ,  $b$ , and  $c$  must also divide  $\gcd(\gcd(a, b), c)$  and  $\gcd(a, \gcd(b, c))$ .  
+1) a) Commutative. b) Associative,  $(a * b) * c = a * (b * c) = a + b + c - 2$ .
+3) a) Not commutative,  $b \neq a$ . b) Associative,  $(a * b) * c = a * (b * c) = c$ .
+5) a) Not commutative,  $a - b \neq b - a$ . b) Not associative,  $(a*b)*c = a - b - c$ ,  $a*(b*c) = a - b + c$ .
+7) a) Commutative. b) Associative,  $(a * b) * c = a * (b * c) = abc + 2ab + 2ac + 2bc + 4a + 4b + 4c + 6$ .
+9)  $(a * b) * c = a * (b * c) = \gcd(a, b, c)$ , since any number that divides  $a$ ,  $b$ , and  $c$  must also divide  $\gcd(\gcd(a, b), c)$  and  $\gcd(a, \gcd(b, c))$ .
 11) Not associative, for example  $(2*(-2))*3 = 0*3 = 0$ , but  $2*((-2)*3) = 2*1 = 3$ .
 
 13)
@@ -15572,64 +15572,64 @@ $$
 
 <table><tr><td></td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>3</td><td>3</td><td>2</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>4</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td><td>0</td></tr><tr><td>5</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td></tr></table>
 
-21)  $(f*g)*h = f*(g*h) =$  the function sending  $x$  to  $f(g(h(x)))$  
-23) If  $l$  were a left identity and  $r$  were a right identity, then  $l = l * r = r$ .  
-25) If  $e$  were an identity, then  $\min(x, e) = x$  for all  $x$ , meaning  $e \geq x$  for all  $x$ . But there is no greatest integer.  
-27) No.  $1 - 1 = 0\notin S$  
-29) Yes.  
-31) No.  $1/2 = .5 \notin S$ .  
-33) Not commutative,  $(2 * 4 = 2$ , but  $4 * 2 = 4$ ). It is associative,  $(x * y) * z$  and  $x * (y * z)$  both give the first number in the list  $\{x, y, z\}$  which is even, giving the last number if they are all odd.  
+21)  $(f*g)*h = f*(g*h) =$  the function sending  $x$  to  $f(g(h(x)))$
+23) If  $l$  were a left identity and  $r$  were a right identity, then  $l = l * r = r$ .
+25) If  $e$  were an identity, then  $\min(x, e) = x$  for all  $x$ , meaning  $e \geq x$  for all  $x$ . But there is no greatest integer.
+27) No.  $1 - 1 = 0\notin S$
+29) Yes.
+31) No.  $1/2 = .5 \notin S$ .
+33) Not commutative,  $(2 * 4 = 2$ , but  $4 * 2 = 4$ ). It is associative,  $(x * y) * z$  and  $x * (y * z)$  both give the first number in the list  $\{x, y, z\}$  which is even, giving the last number if they are all odd.
 35) No,  $A*B\neq B*A$
 
 # Section 1.4
 
-1) 20  
+1) 20
 3) 92
 
-5) 10  
-7) 9  
+5) 10
+7) 9
 9)5
 
-11) 13  
+11) 13
 13) Since  $10^{n} \bmod 9 = 1^{n} \bmod 9 = 1$ , we find that
 
 $$
 a _ {0} + 1 0 a _ {1} + 1 0 ^ {2} a _ {2} + 1 0 ^ {3} a _ {3} + \dots + 1 0 ^ {m} a _ {m} \bmod 9 = a _ {0} + a _ {1} + a _ {2} + \dots + a _ {m} \bmod 9.
 $$
 
-15) 107  
-17) 187  
-19) 631  
-21) 4073  
-23) 7906  
-25) 11008  
-27)8  
-29) 7  
-31) 16  
-33) 30  
-35) 35  
-37) 67  
-39) 376459425  
-41) 620871478602893110807886503707  
+15) 107
+17) 187
+19) 631
+21) 4073
+23) 7906
+25) 11008
+27)8
+29) 7
+31) 16
+33) 30
+35) 35
+37) 67
+39) 376459425
+41) 620871478602893110807886503707
 43) 705249263948099118
 
 # Section 1.5
 
-1)  $\{0, 1, \frac{1}{2}, 2, \frac{1}{3}, \frac{3}{2}, 3, \frac{1}{4}, \frac{4}{3}, \frac{3}{5}, \frac{5}{2}, \frac{5}{2}, \frac{5}{3}, \frac{3}{4}, 4\}$ .  
-3) If  $a_{n} = b_{n} / b_{n + 1}$ , then  $\lfloor a_n\rfloor = (b_n - (b_n\bmod b_{n + 1})) / b_{n + 1}$ . Then  $1 / a_{n + 1} = (b_{n + 1} + 2(b_n - (b_n\bmod b_{n + 1})) - b_n) / b_{n + 1}$ . This simplifies to give  $a_{n + 1} = b_{n + 1} / (b_n + b_{n + 1} - 2(b_n\bmod b_{n + 1}))$ . Hence,  $b_{n + 2} = b_{n} + b_{n + 1} - 2(b_{n}\bmod b_{n + 1})$ .  
-5)  $a_{2n} = b_{2n} / b_{2n + 1} = b_n / (b_n + b_{n + 1}) = (b_n / b_{n + 1}) / ((b_n / b_{n + 1}) + 1) = a_n / (a_n + 1)$ .  
-7) Let  $x = p / q$  be a rational number, and assume the statement is true for smaller  $p + q$ . If  $x \geq 1$ , then  $a_{m} = x - 1$  for some  $m$ , and  $a_{2m + 1} = x$ . If  $x < 1$ , then  $a_{m} = x / (1 - x)$  for some  $m$ , and  $a_{2m} = x$ .  
-9) Because  $a_i$  can only be one of  $q$  possible integers for  $i > 0$ , at some point we must have  $a_i = a_j$ . Because  $a_{n+1}$  is determined solely on  $a_n$ ,  $a_{2i-j} = a_i$ , and the sequence will repeat from this point on.  
-11)  $x = n.d_{1}d_{2}\ldots d_{1} + 10^{-i}\cdot 0.d_{i + 1}d_{i + 2}\ldots d_{i + j} + 10^{-i - j}\cdot 0.d_{i + 1}d_{i + 2}\ldots d_{i + j} + 10^{-i - 2j}\cdot 0.d_{i + 1}d_{i + 2}\ldots d_{i + j} + \dots$ . The series is geometric after the first term, so the sum is  $n.d_{1}d_{2}\ldots d_{1} + 10^{-i}\cdot 0.d_{i + 1}d_{i + 2}\ldots d_{i + j} / (1 - 10^{-j})$ , which is rational.  
-13) If  $p^3 / q^3 = 2$  with  $p$  and  $q$  coprime, then  $2|p$ , but replacing  $p = 2r$  shows  $2|q$  too.  
+1)  $\{0, 1, \frac{1}{2}, 2, \frac{1}{3}, \frac{3}{2}, 3, \frac{1}{4}, \frac{4}{3}, \frac{3}{5}, \frac{5}{2}, \frac{5}{2}, \frac{5}{3}, \frac{3}{4}, 4\}$ .
+3) If  $a_{n} = b_{n} / b_{n + 1}$ , then  $\lfloor a_n\rfloor = (b_n - (b_n\bmod b_{n + 1})) / b_{n + 1}$ . Then  $1 / a_{n + 1} = (b_{n + 1} + 2(b_n - (b_n\bmod b_{n + 1})) - b_n) / b_{n + 1}$ . This simplifies to give  $a_{n + 1} = b_{n + 1} / (b_n + b_{n + 1} - 2(b_n\bmod b_{n + 1}))$ . Hence,  $b_{n + 2} = b_{n} + b_{n + 1} - 2(b_{n}\bmod b_{n + 1})$ .
+5)  $a_{2n} = b_{2n} / b_{2n + 1} = b_n / (b_n + b_{n + 1}) = (b_n / b_{n + 1}) / ((b_n / b_{n + 1}) + 1) = a_n / (a_n + 1)$ .
+7) Let  $x = p / q$  be a rational number, and assume the statement is true for smaller  $p + q$ . If  $x \geq 1$ , then  $a_{m} = x - 1$  for some  $m$ , and  $a_{2m + 1} = x$ . If  $x < 1$ , then  $a_{m} = x / (1 - x)$  for some  $m$ , and  $a_{2m} = x$ .
+9) Because  $a_i$  can only be one of  $q$  possible integers for  $i > 0$ , at some point we must have  $a_i = a_j$ . Because  $a_{n+1}$  is determined solely on  $a_n$ ,  $a_{2i-j} = a_i$ , and the sequence will repeat from this point on.
+11)  $x = n.d_{1}d_{2}\ldots d_{1} + 10^{-i}\cdot 0.d_{i + 1}d_{i + 2}\ldots d_{i + j} + 10^{-i - j}\cdot 0.d_{i + 1}d_{i + 2}\ldots d_{i + j} + 10^{-i - 2j}\cdot 0.d_{i + 1}d_{i + 2}\ldots d_{i + j} + \dots$ . The series is geometric after the first term, so the sum is  $n.d_{1}d_{2}\ldots d_{1} + 10^{-i}\cdot 0.d_{i + 1}d_{i + 2}\ldots d_{i + j} / (1 - 10^{-j})$ , which is rational.
+13) If  $p^3 / q^3 = 2$  with  $p$  and  $q$  coprime, then  $2|p$ , but replacing  $p = 2r$  shows  $2|q$  too.
 15) If  $p^2 / q^2 = 6$  with  $p$  and  $q$  coprime, then  $2|p$ , but replacing  $p = 2r$  shows  $2|q$  too.
 
-17) If  $p^2 / q^2 = 15$  with  $p$  and  $q$  coprime, then  $3|p$ , but replacing  $p = 3r$  shows  $3|q$  too.  
-19) If  $p^3 / q^3 = 4$  with  $p$  and  $q$  coprime, then  $2|p$ , but replacing  $p = 2r$  shows  $2|q$  too.  
-21) If  $a + b$  were rational, and  $a$  was rational, then  $b = (a + b) - a$  would be rational.  
-23) If  $a \cdot b$  were rational, and  $a$  was rational and nonzero, then  $b = (a \cdot b) / a$  would be rational.  
-25) If  $\log_2(3) = p / q$  were rational, then  $2^{p / q} = 3$ , making  $2^p = 3^q$ . But  $2^p$  is even, and  $3^q$  is odd.  
-27)  $2 - \sqrt{2}$  and  $\sqrt{2}$  are both irrational, but the sum is 2.  
+17) If  $p^2 / q^2 = 15$  with  $p$  and  $q$  coprime, then  $3|p$ , but replacing  $p = 3r$  shows  $3|q$  too.
+19) If  $p^3 / q^3 = 4$  with  $p$  and  $q$  coprime, then  $2|p$ , but replacing  $p = 2r$  shows  $2|q$  too.
+21) If  $a + b$  were rational, and  $a$  was rational, then  $b = (a + b) - a$  would be rational.
+23) If  $a \cdot b$  were rational, and  $a$  was rational and nonzero, then  $b = (a \cdot b) / a$  would be rational.
+25) If  $\log_2(3) = p / q$  were rational, then  $2^{p / q} = 3$ , making  $2^p = 3^q$ . But  $2^p$  is even, and  $3^q$  is odd.
+27)  $2 - \sqrt{2}$  and  $\sqrt{2}$  are both irrational, but the sum is 2.
 29)  $a_2 = \sqrt{3} + 3$ ,  $a_{18} = \sqrt{3} + 6$ ,  $a_{146} = \sqrt{3} + 9$ .
 
 # Section 2.1
@@ -15638,20 +15638,20 @@ $$
 
 <table><tr><td></td><td>Stay</td><td>RotLft</td><td>Rot180</td><td>RotRt</td><td>Flip</td><td>Spin</td><td>FlipLft</td><td>FlipRt</td></tr><tr><td>Stay</td><td>Stay</td><td>RotLft</td><td>Rot180</td><td>RotRt</td><td>Flip</td><td>Spin</td><td>FlipLft</td><td>FlipRt</td></tr><tr><td>RotLft</td><td>RotLft</td><td>Rot180</td><td>RotRt</td><td>Stay</td><td>FlipLft</td><td>FlipRt</td><td>Spin</td><td>Flip</td></tr><tr><td>Rot180</td><td>Rot180</td><td>RotRt</td><td>Stay</td><td>RotLft</td><td>Spin</td><td>Flip</td><td>FlipRt</td><td>FlipLft</td></tr><tr><td>RotRt</td><td>RotRt</td><td>Stay</td><td>RotLft</td><td>Rot180</td><td>FlipRt</td><td>FlipLft</td><td>Flip</td><td>Spin</td></tr><tr><td>Flip</td><td>Flip</td><td>FlipRt</td><td>Spin</td><td>FlipLft</td><td>Stay</td><td>Rot180</td><td>RotRt</td><td>RotLft</td></tr><tr><td>Spin</td><td>Spin</td><td>FlipLft</td><td>Flip</td><td>FlipRt</td><td>Rot180</td><td>Stay</td><td>RotLft</td><td>RotRt</td></tr><tr><td>FlipLft</td><td>FlipLft</td><td>Flip</td><td>FlipRt</td><td>Spin</td><td>RotLft</td><td>RotRt</td><td>Stay</td><td>Rot180</td></tr><tr><td>FlipRt</td><td>FlipRt</td><td>Spin</td><td>FlipLft</td><td>Flip</td><td>RotRt</td><td>RotLft</td><td>Rot180</td><td>Stay</td></tr></table>
 
-3)  $e = e*e' = e'$ , so  $e = e'$ .  
-5) If  $a * b = a * c$ , then  $a^{-1} * (a * b) = a^{-1} * (a * c)$ , so  $b = c$ .  
-7)  $50\%$  (18 of 36).  
+3)  $e = e*e' = e'$ , so  $e = e'$ .
+5) If  $a * b = a * c$ , then  $a^{-1} * (a * b) = a^{-1} * (a * c)$ , so  $b = c$ .
+7)  $50\%$  (18 of 36).
 9) After a flip and a rotation, Terry will be facing the opposite direction, so it would be a flip.
 
-11)  $(\text{FlipRt*Spin})^{-1} \neq \text{FlipRt*Spin}$ .  
-13) Stay = FlipRt*FlipRt, RotRt = FlipRt*FlipLft, RotLft = FlipLft*FlipRt, Spin = FlipRt*FlipLft*FlipRt.  
+11)  $(\text{FlipRt*Spin})^{-1} \neq \text{FlipRt*Spin}$ .
+13) Stay = FlipRt*FlipRt, RotRt = FlipRt*FlipLft, RotLft = FlipLft*FlipRt, Spin = FlipRt*FlipLft*FlipRt.
 15) Such a routine is impossible, since it involves three flips. See Problem 8.
 
 # Section 2.2
 
-1) 4.  
-3) 19.  
-5) 27.  
+1) 4.
+3) 19.
+5) 27.
 7) 40.
 
 9)
@@ -15680,30 +15680,30 @@ $$
 
 21) Define  $x\sim y$  if  $x$  and  $y$  belong to the same subset.
 
-23) 7.  
-25) 19.  
-27) 3.  
-29) 667.  
-31) 1543.  
-33) 11077.  
+23) 7.
+25) 19.
+27) 3.
+29) 667.
+31) 1543.
+33) 11077.
 35)  $n = 5,8$  or 12.
 
 # Section 2.3
 
-1)  $(a\cdot a)\cdot b\neq a\cdot (a\cdot b)$  
-3) Yes, this is a group.  
-5) 0 has no inverse.  
-7) Not closed.  
+1)  $(a\cdot a)\cdot b\neq a\cdot (a\cdot b)$
+3) Yes, this is a group.
+5) 0 has no inverse.
+7) Not closed.
 9) Yes, this is a group.
 
-11) 3 has no inverse.  
-13) Yes, this is a group.  
-15) Note that  $y$  has an inverse,  $z$ , so that  $y \cdot z = e$ . But then  $x = x \cdot (y \cdot z) = (x \cdot y) \cdot z = z$ , so  $y \cdot x = e$ .  
-17) If both  $x \cdot y_1$  and  $x \cdot y_2 = e$ , then by Problem 15,  $y_2 \cdot x = e$ , so  $y_2 = y_2 \cdot (x \cdot y_1) = (y_2 \cdot x) \cdot y_1 = y_1$ .  
-19)  $a^{-1} \cdot (a \cdot x) = a^{-1} \cdot (a \cdot y)$ , so  $x = y$ .  
-21) If  $(a\cdot b)^{2} = a^{2}\cdot b^{2}$ , then  $a\cdot b\cdot a\cdot b = a\cdot a\cdot b\cdot b$ , so  $(a^{-1}\cdot a)\cdot b\cdot a\cdot (b\cdot b^{-1}) = (a^{-1}\cdot a)\cdot a\cdot b\cdot (b\cdot b^{-1})$  giving  $b\cdot a = a\cdot b$ .  
-(23) When  $n = 1$ , we have  $a \cdot b = a \cdot e \cdot b$ , which is true. Assuming true for previous  $n$ ,  $(a \cdot b)^n = (a \cdot b)^{n-1} \cdot (a \cdot b) = a \cdot (b \cdot a)^{n-2} \cdot b \cdot a \cdot b = a \cdot (b \cdot a)^{n-1} \cdot b$ .  
-25) When  $n = 1$ , we have  $a \cdot b \cdot a^{-1} = a \cdot b \cdot a^{-1}$ , which is true. Assuming true for previous  $n$ ,  $(a \cdot b \cdot a^{-1})^n = (a \cdot b \cdot a^{-1})^{n-1} \cdot (a \cdot b \cdot a^{-1}) = a \cdot b^{n-1} \cdot a^{-1} \cdot a \cdot b \cdot a^{-1} = a \cdot b^{n-1} \cdot b \cdot a^{-1} = a \cdot b^n \cdot a^{-1}$ .  
+11) 3 has no inverse.
+13) Yes, this is a group.
+15) Note that  $y$  has an inverse,  $z$ , so that  $y \cdot z = e$ . But then  $x = x \cdot (y \cdot z) = (x \cdot y) \cdot z = z$ , so  $y \cdot x = e$ .
+17) If both  $x \cdot y_1$  and  $x \cdot y_2 = e$ , then by Problem 15,  $y_2 \cdot x = e$ , so  $y_2 = y_2 \cdot (x \cdot y_1) = (y_2 \cdot x) \cdot y_1 = y_1$ .
+19)  $a^{-1} \cdot (a \cdot x) = a^{-1} \cdot (a \cdot y)$ , so  $x = y$ .
+21) If  $(a\cdot b)^{2} = a^{2}\cdot b^{2}$ , then  $a\cdot b\cdot a\cdot b = a\cdot a\cdot b\cdot b$ , so  $(a^{-1}\cdot a)\cdot b\cdot a\cdot (b\cdot b^{-1}) = (a^{-1}\cdot a)\cdot a\cdot b\cdot (b\cdot b^{-1})$  giving  $b\cdot a = a\cdot b$ .
+(23) When  $n = 1$ , we have  $a \cdot b = a \cdot e \cdot b$ , which is true. Assuming true for previous  $n$ ,  $(a \cdot b)^n = (a \cdot b)^{n-1} \cdot (a \cdot b) = a \cdot (b \cdot a)^{n-2} \cdot b \cdot a \cdot b = a \cdot (b \cdot a)^{n-1} \cdot b$ .
+25) When  $n = 1$ , we have  $a \cdot b \cdot a^{-1} = a \cdot b \cdot a^{-1}$ , which is true. Assuming true for previous  $n$ ,  $(a \cdot b \cdot a^{-1})^n = (a \cdot b \cdot a^{-1})^{n-1} \cdot (a \cdot b \cdot a^{-1}) = a \cdot b^{n-1} \cdot a^{-1} \cdot a \cdot b \cdot a^{-1} = a \cdot b^{n-1} \cdot b \cdot a^{-1} = a \cdot b^n \cdot a^{-1}$ .
 27) If  $a^3 = e$ , then  $(a^{-1})^3 = e$ . Furthermore, if  $a \neq e$ , then  $a^{-1} \neq a$ . So the non-identity solutions pair off, and with the identity we have an odd number of solutions.
 
 29)
@@ -15718,49 +15718,49 @@ $$
 
 # Section 3.1
 
-1) 1, 5, 7, and 11.  
-3) 1, 3, 5, 7, 9, 11, 13, and 15.  
-5) 2 and 5.  
-7) No generators  
+1) 1, 5, 7, and 11.
+3) 1, 3, 5, 7, 9, 11, 13, and 15.
+5) 2 and 5.
+7) No generators
 9) No generators
 
-11) 5 and 11.  
-13) 32.  
-15) 240.  
-17) 480.  
+11) 5 and 11.
+13) 32.
+15) 240.
+17) 480.
 19) 1680.
 
-21) If  $n$  has an odd prime factor  $p$ , then  $p - 1$  will be even. If  $n$  is  $2^q$  for some  $q > 1$ , then  $2^{q - 1}$  is even. In all cases, there is an even factor in the formula for  $\phi(n)$ .  
-23) If  $g$  is a generator of  $G$ , and  $x, y \in G$ , then  $x = g^a$  and  $y = g^b$  for some  $a$  and  $b$ . Then  $x \cdot y = g^a \cdot g^b = g^{a + b} = g^{b + a} = g^b \cdot g^a = y \cdot x$ .  
-25) If  $(a \cdot b)^n = e$ , then  $a \cdot (b \cdot a)^n \cdot a^{-1} = e$ , so  $a \cdot (b \cdot a)^n = a$ , hence  $(b \cdot a)^n = e$ . Likewise, if  $(b \cdot a)^n = e$ , then  $(a \cdot b)^n = e$ . Thus, the smallest positive integer  $n$  for which  $(a \cdot b)^n = e$  is also the smallest positive integer for which  $(b \cdot a)^n = e$ .  
-27)  $(y\cdot x\cdot y^{-1})^2 = e$  , but  $y\cdot x\cdot y^{-1}\neq e$  , so  $y\cdot x\cdot y^{-1} = x$  
-29) Yes, 8 elements are generators: 2, 3, 8, 12, 13, 17, 22, and 23.  
+21) If  $n$  has an odd prime factor  $p$ , then  $p - 1$  will be even. If  $n$  is  $2^q$  for some  $q > 1$ , then  $2^{q - 1}$  is even. In all cases, there is an even factor in the formula for  $\phi(n)$ .
+23) If  $g$  is a generator of  $G$ , and  $x, y \in G$ , then  $x = g^a$  and  $y = g^b$  for some  $a$  and  $b$ . Then  $x \cdot y = g^a \cdot g^b = g^{a + b} = g^{b + a} = g^b \cdot g^a = y \cdot x$ .
+25) If  $(a \cdot b)^n = e$ , then  $a \cdot (b \cdot a)^n \cdot a^{-1} = e$ , so  $a \cdot (b \cdot a)^n = a$ , hence  $(b \cdot a)^n = e$ . Likewise, if  $(b \cdot a)^n = e$ , then  $(a \cdot b)^n = e$ . Thus, the smallest positive integer  $n$  for which  $(a \cdot b)^n = e$  is also the smallest positive integer for which  $(b \cdot a)^n = e$ .
+27)  $(y\cdot x\cdot y^{-1})^2 = e$  , but  $y\cdot x\cdot y^{-1}\neq e$  , so  $y\cdot x\cdot y^{-1} = x$
+29) Yes, 8 elements are generators: 2, 3, 8, 12, 13, 17, 22, and 23.
 31)  $Z_{n}^{*}$  is cyclic if  $n$  is twice the power of an odd prime.
 
 # Section 3.2
 
-1) If  $b \cdot a = a \cdot b$ , then  $e = b^2 \cdot a^2 = b \cdot (b \cdot a) \cdot a = b \cdot a \cdot b \cdot a$ . If  $b \cdot a \cdot b \cdot a = e$ , then  $b \cdot a = b \cdot (b \cdot a \cdot b \cdot a) \cdot a = b^2 \cdot (a \cdot b) \cdot a^2 = a \cdot b$ .  
-3)  $b^3\cdot a = b^2\cdot (a^2\cdot b) = b\cdot (a^2\cdot b)\cdot a\cdot b = (a^2\cdot b)\cdot a\cdot (a^2\cdot b)\cdot b = a^2\cdot (a^2\cdot b)\cdot a^2\cdot b^2 =$ $a^4\cdot (a^2\cdot b)\cdot a\cdot b^2 = a^6\cdot (a^2\cdot b)\cdot b^2 = a^5\cdot a^3\cdot b^3 = a^3\cdot b^3.$  
+1) If  $b \cdot a = a \cdot b$ , then  $e = b^2 \cdot a^2 = b \cdot (b \cdot a) \cdot a = b \cdot a \cdot b \cdot a$ . If  $b \cdot a \cdot b \cdot a = e$ , then  $b \cdot a = b \cdot (b \cdot a \cdot b \cdot a) \cdot a = b^2 \cdot (a \cdot b) \cdot a^2 = a \cdot b$ .
+3)  $b^3\cdot a = b^2\cdot (a^2\cdot b) = b\cdot (a^2\cdot b)\cdot a\cdot b = (a^2\cdot b)\cdot a\cdot (a^2\cdot b)\cdot b = a^2\cdot (a^2\cdot b)\cdot a^2\cdot b^2 =$ $a^4\cdot (a^2\cdot b)\cdot a\cdot b^2 = a^6\cdot (a^2\cdot b)\cdot b^2 = a^5\cdot a^3\cdot b^3 = a^3\cdot b^3.$
 5)  $a \cdot b \cdot c^3$ .
 
-7)  $a\cdot b$  
+7)  $a\cdot b$
 9)  $b^{2}\cdot c^{3}$
 
-11)  $a\cdot c^3$  
-13)  $a\cdot c$  
-15)  $a\cdot b\cdot c$  
-17) There are 24 ways of rearranging four books.  
+11)  $a\cdot c^3$
+13)  $a\cdot c$
+15)  $a\cdot b\cdot c$
+17) There are 24 ways of rearranging four books.
 19)
 
 ```txt
-InitGroup("e")  
-AddGroupVar("a", "b", "c")  
-Define(a^2, e)  
-Define(b^2, e)  
-Define(c^3, e)  
-Define(b*a, a*b)  
-Define(c*a, b*c)  
-Define(c*b, a*b*c)  
+InitGroup("e")
+AddGroupVar("a", "b", "c")
+Define(a^2, e)
+Define(b^2, e)
+Define(c^3, e)
+Define(b*a, a*b)
+Define(c*a, b*c)
+Define(c*b, a*b*c)
 Group()
 ```
 
@@ -15770,71 +15770,71 @@ Group()
 
 # Section 3.3
 
-1)  $\{0\}$ ,  $\{0,2,4,6,8,10\}$ ,  $\{0,3,6,9\}$ ,  $\{0,4,8\}$ ,  $\{0,6\}$ , and the whole group.  
-3)  $\{0\}$ ,  $\{0, 3, 6, 9, 12, 15, 18\}$ ,  $\{0, 7, 14\}$ , and the whole group.  
-5)  $\{1\}$ ,  $\{1,3\}$ ,  $\{1,5\}$ , and  $\{1,7\}$ .  
-7)  $R_{2}(G) = 10$ ,  $R_{3}(G) = 9$ ,  $R_{4}(G) = 16$ , and  $R_{6}(G) = 18$ . For these examples,  $R_{k}(G)$  is a multiple of  $k$ .  
+1)  $\{0\}$ ,  $\{0,2,4,6,8,10\}$ ,  $\{0,3,6,9\}$ ,  $\{0,4,8\}$ ,  $\{0,6\}$ , and the whole group.
+3)  $\{0\}$ ,  $\{0, 3, 6, 9, 12, 15, 18\}$ ,  $\{0, 7, 14\}$ , and the whole group.
+5)  $\{1\}$ ,  $\{1,3\}$ ,  $\{1,5\}$ , and  $\{1,7\}$ .
+7)  $R_{2}(G) = 10$ ,  $R_{3}(G) = 9$ ,  $R_{4}(G) = 16$ , and  $R_{6}(G) = 18$ . For these examples,  $R_{k}(G)$  is a multiple of  $k$ .
 9)  $R_{9}(G) = 9$ , and  $R_{3}(G) = 3$ , so six elements of order 9.
 
-11) When  $n = k$ , an element is of order  $k$  if, and only if, it is a generator. If  $k$  is a divisor of  $n$ , and  $m$  is a divisor of  $k$ , then  $R_{m}(Z_{k}) = R_{m}(Z_{n})$ . Thus, computing the elements of order  $k$  in both  $Z_{k}$  and  $Z_{n}$  will give the same results.  
-13) If  $g$  is a generator, than only  $g$  and  $g^{-1}$  have finite order.  
-15) If  $a$  and  $b$  are of finite order, then  $a^m = b^n = e$  for some  $m > 0$  and  $n > 0$ . Then  $(a \cdot b^{-1})^{mn} = e$ , so  $a \cdot b^{-1}$  is of finite order.  
-17) If  $x, y \in H$ , then  $x = a^n$  and  $y = b^n$  for some  $a, b \in G$ . Then  $x \cdot y^{-1} = a^n \cdot b^{-n} = (a \cdot b^{-1})^n$ , so  $x \cdot y^{-1}$  is in  $H$ .  
-19) Problem 18 shows  $H$  is a subgroup. If  $x = a^2 = b^2$ , then  $(a \cdot b^{-1})^2 = 1$  so  $b = a$  or  $b = a(p - 1)$ . Since  $x \mapsto x^2$  is two to one,  $H$  contains half the elements of  $Z_p^*$ .  
-21)  $\{1,2,3,4,6,8,9,12,13,16,18\}$ .  
-23) The subgroup has 10 elements:  $\{e, a, a^2, a^3, a^4, b^2, a \cdot b^2, a^2 \cdot b^2, a^3 \cdot b^2, a^4 \cdot b^2\}$ .  
+11) When  $n = k$ , an element is of order  $k$  if, and only if, it is a generator. If  $k$  is a divisor of  $n$ , and  $m$  is a divisor of  $k$ , then  $R_{m}(Z_{k}) = R_{m}(Z_{n})$ . Thus, computing the elements of order  $k$  in both  $Z_{k}$  and  $Z_{n}$  will give the same results.
+13) If  $g$  is a generator, than only  $g$  and  $g^{-1}$  have finite order.
+15) If  $a$  and  $b$  are of finite order, then  $a^m = b^n = e$  for some  $m > 0$  and  $n > 0$ . Then  $(a \cdot b^{-1})^{mn} = e$ , so  $a \cdot b^{-1}$  is of finite order.
+17) If  $x, y \in H$ , then  $x = a^n$  and  $y = b^n$  for some  $a, b \in G$ . Then  $x \cdot y^{-1} = a^n \cdot b^{-n} = (a \cdot b^{-1})^n$ , so  $x \cdot y^{-1}$  is in  $H$ .
+19) Problem 18 shows  $H$  is a subgroup. If  $x = a^2 = b^2$ , then  $(a \cdot b^{-1})^2 = 1$  so  $b = a$  or  $b = a(p - 1)$ . Since  $x \mapsto x^2$  is two to one,  $H$  contains half the elements of  $Z_p^*$ .
+21)  $\{1,2,3,4,6,8,9,12,13,16,18\}$ .
+23) The subgroup has 10 elements:  $\{e, a, a^2, a^3, a^4, b^2, a \cdot b^2, a^2 \cdot b^2, a^3 \cdot b^2, a^4 \cdot b^2\}$ .
 (25)  $f \cdot r \cdot b$  flips the top edge efficiently, and in the process cycles the remaining 5 edges, so this has order 30.
 
 # Section 4.1
 
-1)  $\{\{0,5\} ,\{1,6\} ,\{2,7\} ,\{3,8\} ,\{4,9\} \}$  
-3)  $\{\{0,5,10\}, \{1,6,11\}, \{2,7,12\}, \{3,8,13\}, \{4,9,14\}\}$ .  
-5)  $\{\{1,14\}, \{2,13\}, \{4,11\}, \{7,8\}\}$ .  
-7)  $\{\{1,9\}, \{3,11\}, \{5,13\}, \{7,15\}\}$ .  
+1)  $\{\{0,5\} ,\{1,6\} ,\{2,7\} ,\{3,8\} ,\{4,9\} \}$
+3)  $\{\{0,5,10\}, \{1,6,11\}, \{2,7,12\}, \{3,8,13\}, \{4,9,14\}\}$ .
+5)  $\{\{1,14\}, \{2,13\}, \{4,11\}, \{7,8\}\}$ .
+7)  $\{\{1,9\}, \{3,11\}, \{5,13\}, \{7,15\}\}$ .
 9) Left cosets:  $\{\mathrm{Stay, FlipRt}\}$ ,  $\{\mathrm{RotRt, Spin}\}$ ,  $\{\mathrm{RotLft, FlipLft}\}$ . Right cosets:  $\{\mathrm{Stay, FlipRt}\}$ ,  $\{\mathrm{RotRt, FlipLft}\}$ ,  $\{\mathrm{RotLft, Spin}\}$ .
 
-11) 6.  
-13) 13.  
-15) 13.  
-17) 8.  
-19) 20.  
-21) 36.  
-23) Since  $(n - 1)^{2} = 1$  in  $Z_{n}^{*}$ ,  $\{1, n - 1\}$  is a subgroup of order 2, so  $|Z_{n}^{*}|$  is even for  $n > 2$ .  
-25) Since  $y \in Hx$ ,  $y = hx$  for some  $h \in H$ , so  $Hy = H \cdot (hx) = (H \cdot h)x = Hx$ .  
-27) Possible orders are  $1, p, q$ , and  $pq$ , so a non-trivial subgroup either has order  $p$  or  $q$ . But any group of prime order is cyclic.  
-29)  $\{1\}$ ,  $\{1, 2, 4, 8\}$ ,  $\{1, 4, 7, 13\}$ ,  $\{1, 4\}$ ,  $\{1, 11\}$ ,  $\{1, 14\}$ ,  $\{1, 4, 11, 14\}$ , and the whole group.  
-31)  $\{1\}, \{1, 3, 7, 9\}, \{1, 9, 13, 17\}, \{1, 9\}, \{1, 11\}, \{1, 19\}, \{1, 9, 11, 19\}$ , and the whole group.  
+11) 6.
+13) 13.
+15) 13.
+17) 8.
+19) 20.
+21) 36.
+23) Since  $(n - 1)^{2} = 1$  in  $Z_{n}^{*}$ ,  $\{1, n - 1\}$  is a subgroup of order 2, so  $|Z_{n}^{*}|$  is even for  $n > 2$ .
+25) Since  $y \in Hx$ ,  $y = hx$  for some  $h \in H$ , so  $Hy = H \cdot (hx) = (H \cdot h)x = Hx$ .
+27) Possible orders are  $1, p, q$ , and  $pq$ , so a non-trivial subgroup either has order  $p$  or  $q$ . But any group of prime order is cyclic.
+29)  $\{1\}$ ,  $\{1, 2, 4, 8\}$ ,  $\{1, 4, 7, 13\}$ ,  $\{1, 4\}$ ,  $\{1, 11\}$ ,  $\{1, 14\}$ ,  $\{1, 4, 11, 14\}$ , and the whole group.
+31)  $\{1\}, \{1, 3, 7, 9\}, \{1, 9, 13, 17\}, \{1, 9\}, \{1, 11\}, \{1, 19\}, \{1, 9, 11, 19\}$ , and the whole group.
 33) Left cosets:  $\{\{e, c^2, c, c^3\}, \{a, a \cdot c^2, a \cdot c, a \cdot c^3\}, \{b, b \cdot c^2, b \cdot c, b \cdot c^3\}, \{a \cdot b \cdot c, a \cdot b, a \cdot b \cdot c^3, a \cdot b \cdot c^2\}, \{b^2, b^2 \cdot c, b^2 \cdot c^2, b^2 \cdot c^3\}, \{a \cdot b^2, a \cdot b^2 \cdot c, a \cdot b^2 \cdot c^2, a \cdot b^2 \cdot c^3\}\}$ . Right cosets:  $\{\{e, c^2, c, c^3\}, \{a, a \cdot b \cdot c, b \cdot c^2, b^2 \cdot c^3\}, \{b, b^2 \cdot c, a \cdot c^2, a \cdot b \cdot c^3\}, \{a \cdot b, b^2 \cdot c^2, b \cdot c, a \cdot c^3\}\}$ .
 
 # Section 4.2
 
-1)24,28,1,0,23,9,24,11,28  
-3) 5, 9, 0, 4, 24, 9, 8, 12, 26, 19  
-5) THIS IS EASY  
-7) MAKE IT SO  
-9) If  $n = pqr$ ,  $\phi(n) = (p - 1)(q - 1)(r - 1)$ . If  $x$  is coprime to  $n$ , use proposition 4.1, otherwise suppose  $x$  is a multiple of  $p$ , but not a multiple of  $qr$ . Then  $x^{rs} \equiv x \pmod{p}$ , and since  $rs \equiv 1 \pmod{(q - 1)(r - 1)}$ , proposition 4.2 shows that  $x^{rs} \equiv x \pmod{qr}$  as well. Finish with the Chinese remainder theorem (1.5).  
-11)  $f^{-1}(x) = x^{11} \bmod 51$ .  
-13)  $f^{-1}(x) = x^{29} \bmod 91$ .  
-15)  $f^{-1}(x) = x^{131} \mod 217$ .  
-17)  $f^{-1}(x) = x^{103} \mod 1001$ .  
+1)24,28,1,0,23,9,24,11,28
+3) 5, 9, 0, 4, 24, 9, 8, 12, 26, 19
+5) THIS IS EASY
+7) MAKE IT SO
+9) If  $n = pqr$ ,  $\phi(n) = (p - 1)(q - 1)(r - 1)$ . If  $x$  is coprime to  $n$ , use proposition 4.1, otherwise suppose  $x$  is a multiple of  $p$ , but not a multiple of  $qr$ . Then  $x^{rs} \equiv x \pmod{p}$ , and since  $rs \equiv 1 \pmod{(q - 1)(r - 1)}$ , proposition 4.2 shows that  $x^{rs} \equiv x \pmod{qr}$  as well. Finish with the Chinese remainder theorem (1.5).
+11)  $f^{-1}(x) = x^{11} \bmod 51$ .
+13)  $f^{-1}(x) = x^{29} \bmod 91$ .
+15)  $f^{-1}(x) = x^{131} \mod 217$ .
+17)  $f^{-1}(x) = x^{103} \mod 1001$ .
 19) 1835, 1628, 1084. Inverse  $= x^{157} \mod 2773$ .
 
-21) PowerMod(c, 10007, n) should give 2.  
-23) Answers will vary.  
+21) PowerMod(c, 10007, n) should give 2.
+23) Answers will vary.
 25) "The repeating 037's and 740's in your n made it easy to factor."
 
 # Section 4.3
 
-1) Since  $e \in H$ ,  $H = e \cdot H \subseteq H \cdot H$ . But  $H$  is closed with respect to multiplication, so  $H \cdot H \subseteq H$ .  
-3) Since  $e \in H$ ,  $a \in a \cdot H$ , so  $a \in H \cdot b$ . But  $a \in H \cdot a$  as well, so  $H \cdot b = H \cdot a$ , hence  $a \cdot H = H \cdot a$ .  
-5) Any element of  $h \in H$  is also in  $G$ , so  $h \cdot n \cdot h^{-1} \in N$ .  
-7) Three possible answers:  $\{e, c^2\}$ ,  $\{e, a \cdot b^2 \cdot c\}$ , or  $\{e, a \cdot b^2 \cdot c^3\}$ .  
+1) Since  $e \in H$ ,  $H = e \cdot H \subseteq H \cdot H$ . But  $H$  is closed with respect to multiplication, so  $H \cdot H \subseteq H$ .
+3) Since  $e \in H$ ,  $a \in a \cdot H$ , so  $a \in H \cdot b$ . But  $a \in H \cdot a$  as well, so  $H \cdot b = H \cdot a$ , hence  $a \cdot H = H \cdot a$ .
+5) Any element of  $h \in H$  is also in  $G$ , so  $h \cdot n \cdot h^{-1} \in N$ .
+7) Three possible answers:  $\{e, c^2\}$ ,  $\{e, a \cdot b^2 \cdot c\}$ , or  $\{e, a \cdot b^2 \cdot c^3\}$ .
 9) If  $g \in G$  and  $h \in Z$ , then  $g \cdot h \cdot g^{-1} = h \cdot g \cdot g^{-1} = h \in Z$ .
 
-11) Let  $a$  be a generator of  $H$ , and let  $m$  be the smallest positive integer for which  $a^m \in K$ . For a given  $g \in G$ ,  $g \cdot a \cdot g^{-1} \in H$ , so  $g \cdot a \cdot g^{-1} = a^n$  for some  $n$ . Then for  $a^{sm} \in K$ ,  $g \cdot a^{sm}cdotg^{-1} = (a \cdot a \cdot g^{-1})^{sm} = (a^n)^{sm} = (a^m)^{sn} \in K$ .  
-13) Let  $f(x) = mx + b \in G$ , and  $t(x) = qx \in T$ , so  $f^{-1}(x) = (x - b) / m$ . Then  $(f \cdot t \cdot f^{-1})(x) = f^{-1}(t(f(x))) = qx + (qb - b) / m \notin T$ . If  $f(x) = 2x + 3$ , then  $fT$  is the set of functions  $k(2x + 3)$ , whereas  $Tf$  is the set of functions  $kx + 3$ .  
-15) If  $g_{1} = h_{1} \cdot k_{1}$  and  $g_{2} = h_{2} \cdot k_{2}$ , then  $g_{1} \cdot g_{2}^{-1} = h_{1} \cdot k_{1} \cdot k_{2}^{-1} \cdot h_{2}^{-1} = (h_{1} \cdot h_{2}^{-1}) \cdot (h_{2} \cdot k_{1} \cdot k_{2}^{-1} \cdot h_{2}^{-1}) \in H \cdot K$ , since  $K$  is normal.  
-17)  $g\cdot H\cdot K\cdot g^{-1} = (g\cdot H\cdot g^{-1})\cdot (g\cdot K\cdot g^{-1}) = H\cdot K.$  
+11) Let  $a$  be a generator of  $H$ , and let  $m$  be the smallest positive integer for which  $a^m \in K$ . For a given  $g \in G$ ,  $g \cdot a \cdot g^{-1} \in H$ , so  $g \cdot a \cdot g^{-1} = a^n$  for some  $n$ . Then for  $a^{sm} \in K$ ,  $g \cdot a^{sm}cdotg^{-1} = (a \cdot a \cdot g^{-1})^{sm} = (a^n)^{sm} = (a^m)^{sn} \in K$ .
+13) Let  $f(x) = mx + b \in G$ , and  $t(x) = qx \in T$ , so  $f^{-1}(x) = (x - b) / m$ . Then  $(f \cdot t \cdot f^{-1})(x) = f^{-1}(t(f(x))) = qx + (qb - b) / m \notin T$ . If  $f(x) = 2x + 3$ , then  $fT$  is the set of functions  $k(2x + 3)$ , whereas  $Tf$  is the set of functions  $kx + 3$ .
+15) If  $g_{1} = h_{1} \cdot k_{1}$  and  $g_{2} = h_{2} \cdot k_{2}$ , then  $g_{1} \cdot g_{2}^{-1} = h_{1} \cdot k_{1} \cdot k_{2}^{-1} \cdot h_{2}^{-1} = (h_{1} \cdot h_{2}^{-1}) \cdot (h_{2} \cdot k_{1} \cdot k_{2}^{-1} \cdot h_{2}^{-1}) \in H \cdot K$ , since  $K$  is normal.
+17)  $g\cdot H\cdot K\cdot g^{-1} = (g\cdot H\cdot g^{-1})\cdot (g\cdot K\cdot g^{-1}) = H\cdot K.$
 19) Subgroups are  $\{e\}$ , with cosets  $\{e\}, \{a\}, \{a^2\}, \{a^3\}, \{b\}, \{a \cdot b\}, \{a^2 \cdot b\}$ , and  $\{a^3 \cdot b\}$ ;  $\{e, a^2\}$ , with cosets  $\{e, a^2\}, \{a, a^3\}, \{b, a^2 \cdot b\}$ , and  $\{a \cdot b, a^3 \cdot b\}$ ;  $\{e, a, a^2, a^3\}$ , with cosets  $\{e, a, a^2, a^3\}$  and  $\{b, a \cdot b, a^2 \cdot b, a^3 \cdot b\}$ ;  $\{e, b, a^2, a^2 \cdot b\}$ , with cosets  $\{e, b, a^2, a^2 \cdot b\}$  and  $\{a, a \cdot b, a^3, a^3 \cdot b\}$ ;  $\{e, a \cdot b, a^2, a^3 \cdot b\}$ , with cosets  $\{e, a \cdot b, a^2, a^3 \cdot b\}$  and  $\{a, b, a^2 \cdot b, a^3\}$ ; and the whole group, with one coset containing the whole group.
 
 # Section 4.4
@@ -15863,117 +15863,117 @@ Group()
 
 <table><tr><td></td><td>{e,b,b2}</td><td>{a,a·b,a·b2}</td></tr><tr><td>{e,b,b2}</td><td>{e,b,b2}</td><td>{a,a·b,a·b2}</td></tr><tr><td>{a,a·b,a·b2}</td><td>{a,a·b,a·b2}</td><td>{e,b,b2}</td></tr></table>
 
-13) Each element of  $G / N$  is a set of functions  $f(x) = px + k$  for which the  $p$  is the same for all functions in the coset.  
-15) Let  $g$  be a generator of  $G$ , then  $gN$  will be a generator of  $G / N$ .  
-17) If  $h_1N$  and  $h_2N$  are two elements of  $H / N$ , then  $h_1$  and  $h_2$  are in  $H$ , and  $(h_1N \cdot (h_2N)^{-1} = (h_1 \cdot h_2^{-1}) \cdot N \in H / N$ . So  $H / N$  is a subgroup of  $G / N$ .  
+13) Each element of  $G / N$  is a set of functions  $f(x) = px + k$  for which the  $p$  is the same for all functions in the coset.
+15) Let  $g$  be a generator of  $G$ , then  $gN$  will be a generator of  $G / N$ .
+17) If  $h_1N$  and  $h_2N$  are two elements of  $H / N$ , then  $h_1$  and  $h_2$  are in  $H$ , and  $(h_1N \cdot (h_2N)^{-1} = (h_1 \cdot h_2^{-1}) \cdot N \in H / N$ . So  $H / N$  is a subgroup of  $G / N$ .
 19)  $|Z_{105}^{*}| = 48$ ,  $H = \{1, 11, 16, 46, 71, 86\}$ , coset  $\{2, 22, 36, 37, 67, 92\}$  has order 4.
 
 # Section 5.1
 
-1) If  $f(x) = a$  and  $f(y) = b$ , then  $f^{-1}(a \cdot b) = x \cdot y = f^{-1}(a) \cdot f^{-1}(b)$ .  
-3) Stay  $\rightarrow e$ , RotRt  $\rightarrow b$ , RotLft  $\rightarrow b^2$ , Spin  $\rightarrow a$ , FlipRt  $\rightarrow a \cdot b$ , FlipLft  $\rightarrow a \cdot b^2$ .  
-5)  $Z_{6} = \{0,1,2,3,4,5\} \approx Z_{7}^{*}$  with order  $\{1,3,2,6,4,5\}$ .  
-7)  $Z_{6} = \{0,1,2,3,4,5\} \approx Z_{14}^{*}$  with order  $\{1,3,9,13,11,5\}$ .  
-9)  $Z_{10} = \{0,1,2,3,\ldots ,9\} \approx Z_{11}^{*}$  with order  $\{1,2,4,8,5,10,9,7,3,6\}$  
+1) If  $f(x) = a$  and  $f(y) = b$ , then  $f^{-1}(a \cdot b) = x \cdot y = f^{-1}(a) \cdot f^{-1}(b)$ .
+3) Stay  $\rightarrow e$ , RotRt  $\rightarrow b$ , RotLft  $\rightarrow b^2$ , Spin  $\rightarrow a$ , FlipRt  $\rightarrow a \cdot b$ , FlipLft  $\rightarrow a \cdot b^2$ .
+5)  $Z_{6} = \{0,1,2,3,4,5\} \approx Z_{7}^{*}$  with order  $\{1,3,2,6,4,5\}$ .
+7)  $Z_{6} = \{0,1,2,3,4,5\} \approx Z_{14}^{*}$  with order  $\{1,3,9,13,11,5\}$ .
+9)  $Z_{10} = \{0,1,2,3,\ldots ,9\} \approx Z_{11}^{*}$  with order  $\{1,2,4,8,5,10,9,7,3,6\}$
 11)  $Z_{12} = \{0,1,2,\ldots ,11\} \approx Z_{13}^{*}$  with order  $\{1,2,4,8,3,6,12,11,9,5,10,7\}$ .
 
-13)  $Z_{12}^{*} = \{1,5,7,11\} \approx Z_{8}^{*}$  with order  $\{1,3,5,7\}$ .  
-15) Let  $g$  be a generator, and consider the function  $f(x): \mathbb{Z} \to G$  defined by  $f(x) = g^x$ .  
-17)  $a^m = e_1$  if and only if  $\phi(a^m) = \phi(e_1) = e_2$  if and only if  $\phi(a)^m = e_2$ .  
-19) The tables for  $Z_{14}$  and  $D_7$  are too large to display here.  
+13)  $Z_{12}^{*} = \{1,5,7,11\} \approx Z_{8}^{*}$  with order  $\{1,3,5,7\}$ .
+15) Let  $g$  be a generator, and consider the function  $f(x): \mathbb{Z} \to G$  defined by  $f(x) = g^x$ .
+17)  $a^m = e_1$  if and only if  $\phi(a^m) = \phi(e_1) = e_2$  if and only if  $\phi(a)^m = e_2$ .
+19) The tables for  $Z_{14}$  and  $D_7$  are too large to display here.
 21)  $Z_{20}^{*} = \{1,3,7,9,11,13,17,19\} \approx Z_{15}^{*}$  with order  $\{1,2,8,4,11,7,13,14\}$ .
 
 # Section 5.2
 
-1) If  $a, b \in \operatorname{Im}(\phi)$ , then  $a = \phi(x)$ ,  $b = \phi(y)$  for some  $x, y \in G$ . Then  $a \cdot b = \phi(x \cdot y) = \phi(y \cdot x) = b \cdot a$ .  
-3)  $\phi (x\cdot y) = \phi (x + y) = 2(x + y) = 2x + 2y = \phi (x) + \phi (y) = \phi (x)\cdot \phi (y),$  since is addition in this group.  
-5)  $\phi (x\cdot y) = \phi (x + y) = x + y + 3$  , but  $\phi (x)\cdot \phi (y) = \phi (x) + \phi (y) = (x + 3) +$ $(y + 3) = x + y + 6$  
-7)  $\phi (x\cdot y) = 2(x\cdot y) = 2xy$  , but  $\phi (x)\cdot \phi (y) = (2x)\cdot (2y) = 4xy$  
-9)  $\phi(x \cdot y) = \phi(x + y) = e^{x + y} = e^x \times e^x = \phi(x) \cdot \phi(y)$ . Image is the positive real numbers.  
-11)  $\phi(f \cdot g) = \phi(f(t) + g(t)) = f(3) + g(3) = \phi(f) + \phi(g) = \phi(f) \cdot \phi(g)$ . The kernel is the set of polynomials with 3 as a root, hence  $t - 3$  is a factor.  
-13)  $\phi(1) = 1$ ,  $\phi(7) = 13$ ,  $\phi(11) = 1$ ,  $\phi(13) = 7$ ,  $\phi(17) = 13$ ,  $\phi(19) = 19$ ,  $\phi(23) = 7$ ,  $\phi(29) = 19$ .  
-15)  $\phi (\pm 1) = 1$ ,  $\phi (\pm i) = 3$ ,  $\phi (\pm j) = 5$ ,  $\phi (\pm k) = 7$ . The 3, 5, and 7 can be permuted.  
-17) For each element  $h \in H$ ,  $f^{-1}(h)$  is a coset of  $K$ , where  $K = \operatorname{Ker} f$ . Hence  $|f^{-1}(h)| = |K|$ . Since each element in  $H$  produces a different coset of  $K$ , the size of  $f^{-1}(H)$  is  $|H| \cdot |K|$ .  
+1) If  $a, b \in \operatorname{Im}(\phi)$ , then  $a = \phi(x)$ ,  $b = \phi(y)$  for some  $x, y \in G$ . Then  $a \cdot b = \phi(x \cdot y) = \phi(y \cdot x) = b \cdot a$ .
+3)  $\phi (x\cdot y) = \phi (x + y) = 2(x + y) = 2x + 2y = \phi (x) + \phi (y) = \phi (x)\cdot \phi (y),$  since is addition in this group.
+5)  $\phi (x\cdot y) = \phi (x + y) = x + y + 3$  , but  $\phi (x)\cdot \phi (y) = \phi (x) + \phi (y) = (x + 3) +$ $(y + 3) = x + y + 6$
+7)  $\phi (x\cdot y) = 2(x\cdot y) = 2xy$  , but  $\phi (x)\cdot \phi (y) = (2x)\cdot (2y) = 4xy$
+9)  $\phi(x \cdot y) = \phi(x + y) = e^{x + y} = e^x \times e^x = \phi(x) \cdot \phi(y)$ . Image is the positive real numbers.
+11)  $\phi(f \cdot g) = \phi(f(t) + g(t)) = f(3) + g(3) = \phi(f) + \phi(g) = \phi(f) \cdot \phi(g)$ . The kernel is the set of polynomials with 3 as a root, hence  $t - 3$  is a factor.
+13)  $\phi(1) = 1$ ,  $\phi(7) = 13$ ,  $\phi(11) = 1$ ,  $\phi(13) = 7$ ,  $\phi(17) = 13$ ,  $\phi(19) = 19$ ,  $\phi(23) = 7$ ,  $\phi(29) = 19$ .
+15)  $\phi (\pm 1) = 1$ ,  $\phi (\pm i) = 3$ ,  $\phi (\pm j) = 5$ ,  $\phi (\pm k) = 7$ . The 3, 5, and 7 can be permuted.
+17) For each element  $h \in H$ ,  $f^{-1}(h)$  is a coset of  $K$ , where  $K = \operatorname{Ker} f$ . Hence  $|f^{-1}(h)| = |K|$ . Since each element in  $H$  produces a different coset of  $K$ , the size of  $f^{-1}(H)$  is  $|H| \cdot |K|$ .
 19) Many solutions, since  $b$  can map to either RotLft or RotRt, and  $a$  can map to FlipLft, FlipRt, or Spin. Any of these combinations will work.
 
 # Section 5.3
 
-1)  $Z_{10}, Z_5, Z_2$ , and the trivial group.  
-3)  $Z_{15}^{*}$ ,  $Z_{4}$ ,  $Z_{8}^{*}$ ,  $Z_{2}$ , and the trivial group.  
-5)  $Q$ ,  $Z_8^*$ ,  $Z_2$ , and the trivial group.  
-7)  $Z_{24}^{*}$ ,  $Z_{8}^{*}$ ,  $Z_{2}$ , and the trivial group.  
-(9) If  $K$  is the kernel, it is sufficient to show that  $G / K$  is cyclic. If  $g$  is a generator of  $G$ , then  $gK$  is a generator of  $G / K$ , since every element can be expressed as  $g^m \cdot K = (gK)^m$ .  
-11) Ten homomorphisms, one sending all elements to  $e$ , three sending  $\{1,3\}$  to  $e$ ,  $\{5,7\}$  to  $a$ ,  $a \cdot b$ , or  $a \cdot b^2$  respectively, three sending  $\{1,5\}$  to  $e$ ,  $\{3,7\}$  to  $a$ ,  $a \cdot b$ , or  $a \cdot b^2$  respectively, and three sending  $\{1,7\}$  to  $e$ ,  $\{3,5\}$  to  $a$ ,  $a \cdot b$ , or  $a \cdot b^2$  respectively.  
-13) Since  $\{0,2,4\}$  and  $\{0,3\}$  are normal subgroups of  $Z_{6}$ ,  $\phi^{-1}(\{0,2,4\})$  and  $\phi^{-1}(\{0,3\})$  are normal subgroups of  $G$ .  
+1)  $Z_{10}, Z_5, Z_2$ , and the trivial group.
+3)  $Z_{15}^{*}$ ,  $Z_{4}$ ,  $Z_{8}^{*}$ ,  $Z_{2}$ , and the trivial group.
+5)  $Q$ ,  $Z_8^*$ ,  $Z_2$ , and the trivial group.
+7)  $Z_{24}^{*}$ ,  $Z_{8}^{*}$ ,  $Z_{2}$ , and the trivial group.
+(9) If  $K$  is the kernel, it is sufficient to show that  $G / K$  is cyclic. If  $g$  is a generator of  $G$ , then  $gK$  is a generator of  $G / K$ , since every element can be expressed as  $g^m \cdot K = (gK)^m$ .
+11) Ten homomorphisms, one sending all elements to  $e$ , three sending  $\{1,3\}$  to  $e$ ,  $\{5,7\}$  to  $a$ ,  $a \cdot b$ , or  $a \cdot b^2$  respectively, three sending  $\{1,5\}$  to  $e$ ,  $\{3,7\}$  to  $a$ ,  $a \cdot b$ , or  $a \cdot b^2$  respectively, and three sending  $\{1,7\}$  to  $e$ ,  $\{3,5\}$  to  $a$ ,  $a \cdot b$ , or  $a \cdot b^2$  respectively.
+13) Since  $\{0,2,4\}$  and  $\{0,3\}$  are normal subgroups of  $Z_{6}$ ,  $\phi^{-1}(\{0,2,4\})$  and  $\phi^{-1}(\{0,3\})$  are normal subgroups of  $G$ .
 15)  $H$  and  $K$  must be normal, since they have index 2. Then  $H \cdot K$  is a subgroup with more than half the elements, so  $H \cdot K = G$ . By the second
 
 isomorphism theorem,  $G / K \approx K / (H \cap K) \approx Z_2$ . So  $H \cap K$  contains half the elements of  $K$ , hence a fourth of the elements of  $G$ , so  $G / (H \cap K)$  contains 4 elements. For every element  $a \in G$ ,  $a^2$  is in both  $H$  and  $K$ , so every element in the quotient group is of order 1 or 2. Thus,  $G / (H \cap K) \approx Z_8^*$ .
 
-17)  $\{\{\{e,a^2\} ,\{a,a^3\} \} \} ,\{\{b,a^2\cdot b\} ,\{a\cdot b,a^3\cdot b\} \} \} \approx \{\{e,a,a^2,a^3\} ,\{b,a\cdot b,a^2\cdot$ $b,a^{3}\cdot b\} \}$  
-19) The statement is false. A typical element of  $G / N$  is  $gN$ , whereas a typical element of  $G / H$  is  $gH$ . So  $G / H$  is not a subgroup of  $G / N$ , hence  $(G / N) / (G / H)$  is meaningless.  
+17)  $\{\{\{e,a^2\} ,\{a,a^3\} \} \} ,\{\{b,a^2\cdot b\} ,\{a\cdot b,a^3\cdot b\} \} \} \approx \{\{e,a,a^2,a^3\} ,\{b,a\cdot b,a^2\cdot$ $b,a^{3}\cdot b\} \}$
+19) The statement is false. A typical element of  $G / N$  is  $gN$ , whereas a typical element of  $G / H$  is  $gH$ . So  $G / H$  is not a subgroup of  $G / N$ , hence  $(G / N) / (G / H)$  is meaningless.
 21) Kernel must be  $\{e, a \cdot b^2 \cdot c, c^2, a \cdot b^2 \cdot c^3\}$ . Several solutions, one is to let  $\phi(a) = a$ ,  $\phi(b) = b$ , and  $\phi(c) = a \cdot b^2$ .
 
 # Section 6.1
 
-1)  $\binom{12345}{52431}$ .  
-3)  $\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 5 & 2 & 1 & 4 & 6 & 3 \end{pmatrix}$ .  
-5)  $\binom{1234567}{4256371}$ .  
+1)  $\binom{12345}{52431}$ .
+3)  $\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 5 & 2 & 1 & 4 & 6 & 3 \end{pmatrix}$ .
+5)  $\binom{1234567}{4256371}$ .
 7)  $\left( \begin{array}{llll}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 3 & 5 & 4 & 8 & 1 & 6 & 2 & 7 \end{array} \right)$ .
 
 9)
 
 <table><tr><td></td><td>(123)123</td><td>(123)132</td><td>(123)213</td><td>(123)231</td><td>(123)312</td><td>(123)321</td></tr><tr><td>(123)123</td><td>(123)123</td><td>(123)132</td><td>(123)213</td><td>(123)231</td><td>(123)312</td><td>(123)321</td></tr><tr><td>(123)132</td><td>(123)132</td><td>(123)123</td><td>(123)312</td><td>(123)321</td><td>(123)213</td><td>(123)231</td></tr><tr><td>(123)213</td><td>(123)213</td><td>(123)231</td><td>(123)123</td><td>(123)132</td><td>(123)321</td><td>(123)312</td></tr><tr><td>(123)231</td><td>(123)231</td><td>(123)213</td><td>(123)321</td><td>(123)312</td><td>(123)123</td><td>(123)132</td></tr><tr><td>(123)312</td><td>(123)312</td><td>(123)321</td><td>(123)132</td><td>(123)123</td><td>(123)231</td><td>(123)213</td></tr><tr><td>(123)321</td><td>(123)321</td><td>(123)312</td><td>(123)231</td><td>(123)213</td><td>(123)132</td><td>(123)123</td></tr></table>
 
-11)  $\binom{1234}{1342}, \binom{1234}{1423}, \binom{1234}{3241}, \binom{1234}{4213}, \binom{1234}{2431}, \binom{1234}{4132}, \binom{1234}{2314}, \binom{1234}{3124}$ .  
-13)  $\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 1 & 3 & 2 & 4 & 5 \end{pmatrix}$ .  
-15)  $x = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 2 & 4 & 3 & 1 & 5 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 5 & 4 & 1 & 2 & 3 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 1 & 4 & 5 & 3 & 2 \end{pmatrix}$ , or  $\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 3 & 4 & 2 & 5 & 1 \end{pmatrix}$ .  
-17) Right-Last-Left.  
+11)  $\binom{1234}{1342}, \binom{1234}{1423}, \binom{1234}{3241}, \binom{1234}{4213}, \binom{1234}{2431}, \binom{1234}{4132}, \binom{1234}{2314}, \binom{1234}{3124}$ .
+13)  $\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 1 & 3 & 2 & 4 & 5 \end{pmatrix}$ .
+15)  $x = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 2 & 4 & 3 & 1 & 5 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 5 & 4 & 1 & 2 & 3 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 1 & 4 & 5 & 3 & 2 \end{pmatrix}$ , or  $\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 3 & 4 & 2 & 5 & 1 \end{pmatrix}$ .
+17) Right-Last-Left.
 19) Right-First-Right.
 
 # Section 6.2
 
-1) (25634).  
-3) (156478)(23).  
+1) (25634).
+3) (156478)(23).
 5) Product is  $(12)(n + 1\quad n + 2)$ . When  $n = 2$ , we easily get (12)(34), so assume that product is correct for  $n - 1$ . Then by induction, the product is  $(12)(n\quad n + 1)(n\quad n + 1\quad n + 2) = (12)(n + 1\quad n + 2)$ .
 
-7) If  $f = \phi_1 \cdot \phi_2$ , where  $\phi_1$  and  $\phi_2$  are disjoint, then  $f^n = e$  if and only if  $\phi_1^n = e$  and  $\phi_2^n = e$ .  
-9) (12)(345)(67)  $\in A_7$  , since this is an even permutation.  
-11) Let  $N = A_{n}$ , which is normal subgroup of  $S_{n}$ . If  $H$  has an odd permutation, then  $H \cdot A_{n} = S_{n}$ , and the second isomorphism theorem shows  $H / (H \cap A_{n}) \approx S_{n} / A_{n} \approx Z_{2}$ .  
-13)  $g$  must be a 5-cycle, so  $g^5 = e$ , and so  $(g^2)^3 = g^6 = g$ . So we can reconstruct  $g$  by cubing  $g^2$ , giving (12354).  
-15) Let  $H$  be the subgroup generated by the  $n$ -cycle  $\phi = (123\ldots n)$ . Then  $\phi^{j - i}$  will map  $i$  to  $j$ .  
-17) If  $\phi = (i_1 i_2 i_3 \ldots i_r)$  and  $f = (j_1 j_2 j_3 \ldots j_s)$ , then  $x \cdot \phi \cdot x^{-1} = (x(i_1) x(i_2) x(i_3) \ldots x(i_r))$ , and  $x \cdot f \cdot x^{-1} = (x(j_1) x(j_2) x(j_3) \ldots x(j_s))$ .  
-19)  $a^2$  is a 3-cycle,  $a^3 = ()$ ,  $b^2$  is a product of two 3-cycles,  $b^3$  is a product of three 2-cycles,  $b^6 = ()$ .  
+7) If  $f = \phi_1 \cdot \phi_2$ , where  $\phi_1$  and  $\phi_2$  are disjoint, then  $f^n = e$  if and only if  $\phi_1^n = e$  and  $\phi_2^n = e$ .
+9) (12)(345)(67)  $\in A_7$  , since this is an even permutation.
+11) Let  $N = A_{n}$ , which is normal subgroup of  $S_{n}$ . If  $H$  has an odd permutation, then  $H \cdot A_{n} = S_{n}$ , and the second isomorphism theorem shows  $H / (H \cap A_{n}) \approx S_{n} / A_{n} \approx Z_{2}$ .
+13)  $g$  must be a 5-cycle, so  $g^5 = e$ , and so  $(g^2)^3 = g^6 = g$ . So we can reconstruct  $g$  by cubing  $g^2$ , giving (12354).
+15) Let  $H$  be the subgroup generated by the  $n$ -cycle  $\phi = (123\ldots n)$ . Then  $\phi^{j - i}$  will map  $i$  to  $j$ .
+17) If  $\phi = (i_1 i_2 i_3 \ldots i_r)$  and  $f = (j_1 j_2 j_3 \ldots j_s)$ , then  $x \cdot \phi \cdot x^{-1} = (x(i_1) x(i_2) x(i_3) \ldots x(i_r))$ , and  $x \cdot f \cdot x^{-1} = (x(j_1) x(j_2) x(j_3) \ldots x(j_s))$ .
+19)  $a^2$  is a 3-cycle,  $a^3 = ()$ ,  $b^2$  is a product of two 3-cycles,  $b^3$  is a product of three 2-cycles,  $b^6 = ()$ .
 21)  $a \cdot b \cdot a^{-1} = (243567)$ . In general,  $a \cdot b \cdot a^{-1}$  will have the same cycle structure as  $b$ .
 
 # Section 6.3
 
-1)  $\left\{\binom{1234}{1234}, \binom{1234}{2143}, \binom{1234}{3412}, \binom{1234}{4321}\right\}$ .  
-3) (), (1234)(5678), (13)(24)(57)(68), (1432)(5876), (15)(28)(37)(46), (16)(25)(38)(47), (17)(26)(35)(48), (18)(27)(36)(45).  
-5)(), (12)(34)(56)(78), (13)(24)(57)(68), (14)(23)(58)(67), (15)(26)(37)(48), (16)(25)(38)(47), (17)(28)(35)(46), (18)(27)(36)(45).  
-7)  $S_{6}$  contains a subgroup generated by (12), (34), and (56).  
-9) Applying Corollary 6.2: 35 divides  $5! \cdot |N|$ , so 7 divides  $|N|$ , hence  $H = N$ , and  $H$  is normal.  
-11) Applying Corollary 6.2: 200 divides  $8! \cdot |N|$ , so 5 divides  $|N|$ , hence either  $H = N$ , or  $|N| = 5$ .  
-13) Applying Corollary 6.2: 189 divides  $7!\cdot |N|$ , so 3 divides  $|N|$ , hence either  $H = N$ ,  $|N| = 3$ , or  $|N| = 9$ .  
-15) Applying Corollary 6.2:  $3|H|$  divides  $3!\cdot |N|$ , so  $H = N$  or  $|N| = |H| / 2$ .  
-17) Any non-trivial subgroup would have order  $p$ . Applying Corollary 6.2 gives  $p^2$  dividing  $p! \cdot |N|$ , so  $N$  must be a multiple of  $p$ , giving  $H = N$ .  
-19) Since the set is finite, for a given element  $a$ , the set  $\{a, a^2, a^3, \dots\}$  must repeat, so  $a^m = a^n$  for some  $m < n$ . Then by the cancellation laws,  $a^{n - m} = 1$ , so  $a^{n - m - 1} \cdot a = 1$ . Thus,  $a$  has an inverse,  $a^{n - m - 1}$ .  
+1)  $\left\{\binom{1234}{1234}, \binom{1234}{2143}, \binom{1234}{3412}, \binom{1234}{4321}\right\}$ .
+3) (), (1234)(5678), (13)(24)(57)(68), (1432)(5876), (15)(28)(37)(46), (16)(25)(38)(47), (17)(26)(35)(48), (18)(27)(36)(45).
+5)(), (12)(34)(56)(78), (13)(24)(57)(68), (14)(23)(58)(67), (15)(26)(37)(48), (16)(25)(38)(47), (17)(28)(35)(46), (18)(27)(36)(45).
+7)  $S_{6}$  contains a subgroup generated by (12), (34), and (56).
+9) Applying Corollary 6.2: 35 divides  $5! \cdot |N|$ , so 7 divides  $|N|$ , hence  $H = N$ , and  $H$  is normal.
+11) Applying Corollary 6.2: 200 divides  $8! \cdot |N|$ , so 5 divides  $|N|$ , hence either  $H = N$ , or  $|N| = 5$ .
+13) Applying Corollary 6.2: 189 divides  $7!\cdot |N|$ , so 3 divides  $|N|$ , hence either  $H = N$ ,  $|N| = 3$ , or  $|N| = 9$ .
+15) Applying Corollary 6.2:  $3|H|$  divides  $3!\cdot |N|$ , so  $H = N$  or  $|N| = |H| / 2$ .
+17) Any non-trivial subgroup would have order  $p$ . Applying Corollary 6.2 gives  $p^2$  dividing  $p! \cdot |N|$ , so  $N$  must be a multiple of  $p$ , giving  $H = N$ .
+19) Since the set is finite, for a given element  $a$ , the set  $\{a, a^2, a^3, \dots\}$  must repeat, so  $a^m = a^n$  for some  $m < n$ . Then by the cancellation laws,  $a^{n - m} = 1$ , so  $a^{n - m - 1} \cdot a = 1$ . Thus,  $a$  has an inverse,  $a^{n - m - 1}$ .
 21)  $\{(), (123)(456)(789)(101112), (132)(465)(798)(101211), (14710)(26812)(35911), (15711)(24810)(36912), (16712)(25811)(34910), (17)(28)(39)(410)(511)(612), (183729)(411610512), (192738)(412510611), (11074)(21286)(31195), (11175)(21084)(31296), (11276)(21185)(31094)\}$
 
 # Section 6.4
 
-1) 532.  
-3) 2195.  
-5) 3928.  
-7) 37387.  
+1) 532.
+3) 2195.
+5) 3928.
+7) 37387.
 9) 29035.
 
-11)  $P(3,4,2,6,5,1)$  
-13)  $P(1,5,6,7,2,3,4)$  
-15)  $P(3,4,6,5,7,1,2)$  
-17)  $P(6,4,8,5,1,2,3,7)$  
-19) Since the sequence  $a_{n} =$  the nth permutation contains every element of  $S_{\infty}^{0}$ , so by definition  $S_{\infty}^{0}$  is countable.  
-21) If  $\phi \in S_{\infty}$  and  $f \in S_{\infty}^{0}$ , then  $\phi(x)$  is moved by  $\phi(f(\phi^{-1}(x)))$  if and only if  $x$  is moved by  $f$ . This shows the count of integers moved by  $f$  and  $\phi \cdot f \cdot \phi^{-1}$  are equal. In particular,  $\phi \cdot f \cdot \phi^{-1}$  moves only finitely many integers, and hence is in  $S_{\infty}^{0}$ .  
-23)  $A_4 = \{1, 4, 5, 8, 9, 12, 13, 16, 17, 20, 21, 24\}$ , the numbers congruent to 0 or 1 (mod 4). But NthPerm(25) is not in  $A_5$ .  
+11)  $P(3,4,2,6,5,1)$
+13)  $P(1,5,6,7,2,3,4)$
+15)  $P(3,4,6,5,7,1,2)$
+17)  $P(6,4,8,5,1,2,3,7)$
+19) Since the sequence  $a_{n} =$  the nth permutation contains every element of  $S_{\infty}^{0}$ , so by definition  $S_{\infty}^{0}$  is countable.
+21) If  $\phi \in S_{\infty}$  and  $f \in S_{\infty}^{0}$ , then  $\phi(x)$  is moved by  $\phi(f(\phi^{-1}(x)))$  if and only if  $x$  is moved by  $f$ . This shows the count of integers moved by  $f$  and  $\phi \cdot f \cdot \phi^{-1}$  are equal. In particular,  $\phi \cdot f \cdot \phi^{-1}$  moves only finitely many integers, and hence is in  $S_{\infty}^{0}$ .
+23)  $A_4 = \{1, 4, 5, 8, 9, 12, 13, 16, 17, 20, 21, 24\}$ , the numbers congruent to 0 or 1 (mod 4). But NthPerm(25) is not in  $A_5$ .
 25)  $P[4, 5, 1, 6, 2, 3] = (1463)(25)$  is the only solution.
 
 # Section 7.1
@@ -15984,11 +15984,11 @@ isomorphism theorem,  $G / K \approx K / (H \cap K) \approx Z_2$ . So  $H \cap K
 
 <table><tr><td></td><td>(0,1)</td><td>(0,3)</td><td>(0,5)</td><td>(0,7)</td><td>(1,1)</td><td>(1,3)</td><td>(1,5)</td><td>(1,7)</td></tr><tr><td>(0,1)</td><td>(0,1)</td><td>(0,3)</td><td>(0,5)</td><td>(0,7)</td><td>(1,1)</td><td>(1,3)</td><td>(1,5)</td><td>(1,7)</td></tr><tr><td>(0,3)</td><td>(0,3)</td><td>(0,1)</td><td>(0,7)</td><td>(0,5)</td><td>(1,3)</td><td>(1,1)</td><td>(1,7)</td><td>(1,5)</td></tr><tr><td>(0,5)</td><td>(0,5)</td><td>(0,7)</td><td>(0,1)</td><td>(0,3)</td><td>(1,5)</td><td>(1,7)</td><td>(1,1)</td><td>(1,3)</td></tr><tr><td>(0,7)</td><td>(0,7)</td><td>(0,5)</td><td>(0,3)</td><td>(0,1)</td><td>(1,7)</td><td>(1,5)</td><td>(1,3)</td><td>(1,1)</td></tr><tr><td>(1,1)</td><td>(1,1)</td><td>(1,3)</td><td>(1,5)</td><td>(1,7)</td><td>(0,1)</td><td>(0,3)</td><td>(0,5)</td><td>(0,7)</td></tr><tr><td>(1,3)</td><td>(1,3)</td><td>(1,1)</td><td>(1,7)</td><td>(1,5)</td><td>(0,3)</td><td>(0,1)</td><td>(0,7)</td><td>(0,5)</td></tr><tr><td>(1,5)</td><td>(1,5)</td><td>(1,7)</td><td>(1,1)</td><td>(1,3)</td><td>(0,5)</td><td>(0,7)</td><td>(0,1)</td><td>(0,3)</td></tr><tr><td>(1,7)</td><td>(1,7)</td><td>(1,5)</td><td>(1,3)</td><td>(1,1)</td><td>(0,7)</td><td>(0,5)</td><td>(0,3)</td><td>(0,1)</td></tr></table>
 
-5) Consider the natural homomorphism  $\phi : G \to K$  defined by  $\phi(h, k) = k$ . The kernel is  $\overline{H}$ , so by the 1st isomorphism theorem,  $G / \overline{H} \approx K$ . Similarly,  $G / \overline{K} \approx H$ .  
-7) 1 element of order 2, 2 elements of order 3, 2 elements of order 4.  
-9) 3 elements of order 2, 8 elements of order 3, no elements of order 4.  
-11) 7 elements of order 2, 8 elements of order 3, no elements of order 4.  
-13) 7 elements of order 2, 8 elements of order 3, 8 elements of order 4.  
+5) Consider the natural homomorphism  $\phi : G \to K$  defined by  $\phi(h, k) = k$ . The kernel is  $\overline{H}$ , so by the 1st isomorphism theorem,  $G / \overline{H} \approx K$ . Similarly,  $G / \overline{K} \approx H$ .
+7) 1 element of order 2, 2 elements of order 3, 2 elements of order 4.
+9) 3 elements of order 2, 8 elements of order 3, no elements of order 4.
+11) 7 elements of order 2, 8 elements of order 3, no elements of order 4.
+13) 7 elements of order 2, 8 elements of order 3, 8 elements of order 4.
 15)  $R_{2}(Z_{2}\times Z_{6}) = 2\cdot 2 = 4$  , whereas  $R_{2}(Z_{12}) = 2$
 
 17) Suppose  $R_{2}(A \times B) = R_{2}(A) \cdot R_{2}(B) = 10$ , with  $R_{2}(A) \geq R_{2}(B)$ . If  $R_{2}(A) = 5$ ,  $A$  would have an even number of elements, but by Problem 22  $R_{2}(A)$  would be even. Thus,  $R_{2}(A) = 10$ , meaning that  $A$  has at least 10 elements, so  $B$  would have at most 2. Then  $B \approx Z_{2}$ , and  $R_{2}(B) \neq 1$ .
@@ -16037,7 +16037,7 @@ isomorphism theorem,  $G / K \approx K / (H \cap K) \approx Z_2$ . So  $H \cap K
 
 15) All automorphism are inner: (),  $(b,b^{2})(a\cdot b,a\cdot b^{2})$ $(a,a\cdot b,a\cdot b^2)$ $(a,a\cdot b^2)(b,b^2)$ $(a,a\cdot b^2,a\cdot b)$ $(a,a\cdot b)(b,b^2)$
 
-17)  $\operatorname{Aut}(\mathbb{Z}) \approx Z_2$ , with  $\phi_0(x) = x$ ,  $\phi_1(x) = -x$ .  
+17)  $\operatorname{Aut}(\mathbb{Z}) \approx Z_2$ , with  $\phi_0(x) = x$ ,  $\phi_1(x) = -x$ .
 19) Eight automorphisms: (), (2,7)(8,13), (2,8)(7,13), (2,13)(7,8),
 
 (2,8)(11,14), (2,13,8,7)(11,14), (7,13)(11,14), (2,7,8,13)(11,14).
@@ -16046,99 +16046,99 @@ isomorphism theorem,  $G / K \approx K / (H \cap K) \approx Z_2$ . So  $H \cap K
 
 # Section 7.4
 
-1) (7, 7).  
-3) (7,5).  
-5)  $(1,1)$ .  
+1) (7, 7).
+3) (7,5).
+5)  $(1,1)$ .
 7) A nontrivial homomorphism from  $Z_{2}$  to  $\operatorname{Aut}(Z_8^*) \approx S_3$  must send 1 to a 2-cycle. But proposition 7.7 shows such homomorphisms are equivalent, so we may assume  $\phi_{1} = (35)$ .  $Z_8^* \rtimes Z_2 \approx D_4$ .
 
 <table><tr><td></td><td>(1,0)</td><td>(1,1)</td><td>(3,0)</td><td>(3,1)</td><td>(5,0)</td><td>(5,1)</td><td>(7,0)</td><td>(7,1)</td></tr><tr><td>(1,0)</td><td>(1,0)</td><td>(1,1)</td><td>(3,0)</td><td>(3,1)</td><td>(5,0)</td><td>(5,1)</td><td>(7,0)</td><td>(7,1)</td></tr><tr><td>(1,1)</td><td>(1,1)</td><td>(1,0)</td><td>(5,1)</td><td>(5,0)</td><td>(3,1)</td><td>(3,0)</td><td>(7,1)</td><td>(7,0)</td></tr><tr><td>(3,0)</td><td>(3,0)</td><td>(3,1)</td><td>(1,0)</td><td>(1,1)</td><td>(7,0)</td><td>(7,1)</td><td>(5,0)</td><td>(5,1)</td></tr><tr><td>(3,1)</td><td>(3,1)</td><td>(3,0)</td><td>(7,1)</td><td>(7,0)</td><td>(1,1)</td><td>(1,0)</td><td>(5,1)</td><td>(5,0)</td></tr><tr><td>(5,0)</td><td>(5,0)</td><td>(5,1)</td><td>(7,0)</td><td>(7,1)</td><td>(1,0)</td><td>(1,1)</td><td>(3,0)</td><td>(3,1)</td></tr><tr><td>(5,1)</td><td>(5,1)</td><td>(5,0)</td><td>(1,1)</td><td>(1,0)</td><td>(7,1)</td><td>(7,0)</td><td>(3,1)</td><td>(3,0)</td></tr><tr><td>(7,0)</td><td>(7,0)</td><td>(7,1)</td><td>(5,0)</td><td>(5,1)</td><td>(3,0)</td><td>(3,1)</td><td>(1,0)</td><td>(1,1)</td></tr><tr><td>(7,1)</td><td>(7,1)</td><td>(7,0)</td><td>(3,1)</td><td>(3,0)</td><td>(5,1)</td><td>(5,0)</td><td>(1,1)</td><td>(1,0)</td></tr></table>
 
-9) A nontrivial homomorphism from  $Z_{4}$  to  $\operatorname{Aut}(Z_3) \approx Z_2$  must send 1 and 3 to the 2-cycle (12). There will only be one element of order 2.  
-11) Since  $\operatorname{Aut}(\mathbb{Z}) \approx Z_2$ , we see that  $\phi_1(x) = -x$ . So  $(x, a) \cdot (y, b) = (x + y, a + b)$  when  $a$  is even, but  $(x, a) \cdot (y, b) = (x - y, a + b)$  when  $a$  is odd.  
-13)  $\psi_{\sigma}((g_1, g_2, \ldots, g_n) \cdot (h_1, h_2, \ldots, h_n)) = \psi_{\sigma}(g_1 \cdot h_1, g_2 \cdot h_2, \ldots, g_n \cdot h_n) = (g_{\sigma^{-1}(1)} \cdot h_{\sigma^{-1}(1)}, g_{\sigma^{-1}(2)} \cdot h_{\sigma^{-1}(2)}, \ldots, g_{\sigma^{-1}(n)} \cdot h_{\sigma^{-1}(n)}) = \psi_{\sigma}(g_1, g_2, \ldots, g_n) \cdot \psi_{\sigma}(h_1, h_2, \ldots, h_n)$ . Since  $\psi_{\sigma^{-1}}$  is the inverse function, we see it is an automorphism.  
-15) By Problems 13 and 14,  $\psi$  is a homomorphism from  $H$  to  $\operatorname{Aut}(G^n)$ . Thus, the semi-direct product would have size  $|G^n| \cdot |H| = |G|^n \cdot |H|$ .  
-17) A nontrivial homomorphism from  $Z_8^*$  to  $\mathrm{Aut}(Z_8^*) \approx S_3$  must be two-to-one, and send two of the elements to a 2-cycle. Proposition 7.7 shows that it does not matter which 2-cycle, and since the non-identity elements of  $Z_8^*$  are essentially equivalent, there is isomorphically only one  $Z_8^* \rtimes Z_8^* \approx Z_2 \times D_4$ .  
-19)  $Z_{3}$  Wr  $S_{2}\approx Z_{3}\times S_{3}$  
+9) A nontrivial homomorphism from  $Z_{4}$  to  $\operatorname{Aut}(Z_3) \approx Z_2$  must send 1 and 3 to the 2-cycle (12). There will only be one element of order 2.
+11) Since  $\operatorname{Aut}(\mathbb{Z}) \approx Z_2$ , we see that  $\phi_1(x) = -x$ . So  $(x, a) \cdot (y, b) = (x + y, a + b)$  when  $a$  is even, but  $(x, a) \cdot (y, b) = (x - y, a + b)$  when  $a$  is odd.
+13)  $\psi_{\sigma}((g_1, g_2, \ldots, g_n) \cdot (h_1, h_2, \ldots, h_n)) = \psi_{\sigma}(g_1 \cdot h_1, g_2 \cdot h_2, \ldots, g_n \cdot h_n) = (g_{\sigma^{-1}(1)} \cdot h_{\sigma^{-1}(1)}, g_{\sigma^{-1}(2)} \cdot h_{\sigma^{-1}(2)}, \ldots, g_{\sigma^{-1}(n)} \cdot h_{\sigma^{-1}(n)}) = \psi_{\sigma}(g_1, g_2, \ldots, g_n) \cdot \psi_{\sigma}(h_1, h_2, \ldots, h_n)$ . Since  $\psi_{\sigma^{-1}}$  is the inverse function, we see it is an automorphism.
+15) By Problems 13 and 14,  $\psi$  is a homomorphism from  $H$  to  $\operatorname{Aut}(G^n)$ . Thus, the semi-direct product would have size  $|G^n| \cdot |H| = |G|^n \cdot |H|$ .
+17) A nontrivial homomorphism from  $Z_8^*$  to  $\mathrm{Aut}(Z_8^*) \approx S_3$  must be two-to-one, and send two of the elements to a 2-cycle. Proposition 7.7 shows that it does not matter which 2-cycle, and since the non-identity elements of  $Z_8^*$  are essentially equivalent, there is isomorphically only one  $Z_8^* \rtimes Z_8^* \approx Z_2 \times D_4$ .
+19)  $Z_{3}$  Wr  $S_{2}\approx Z_{3}\times S_{3}$
 21)  $Z_{2}$  Wr  $S_{3}\approx Z_{2}\times S_{4}$
 
 # Section 8.1
 
-1)  $\{1, -1\}$ .  
-3) Yes, if  $x$  and  $y$  are in the center, then  $x \cdot y = y \cdot x$ .  
+1)  $\{1, -1\}$ .
+3) Yes, if  $x$  and  $y$  are in the center, then  $x \cdot y = y \cdot x$ .
 5) Clearly, if  $a \in Z(a)$  and  $b \in Z(b)$ , then  $(a, b)$  will commute with all elements in  $A \times B$ . But if either  $a$  or  $b$  are not in the center, then there is an element of  $A \times B$  which would not commute with  $(a, b)$ . Thus,
 
 $$
 Z (A \times B) = \{(a, b) \mid a \in Z (a) \text {a n d} b \in Z (B) \}.
 $$
 
-7) Let  $H = \{e, a\}$ . Since  $H$  is normal,  $g \cdot a \cdot g^{-1}$  is in  $H$  for all  $g$ . But  $g \cdot a \cdot g^{-1} \neq e$  since  $a \neq e$ . So  $g \cdot a \cdot g^{-1} = a$ , so  $g \cdot a = a \cdot g$ .  
-9) Since  $\phi(h) \in H$  for all automorphisms, in particular  $\phi(h) \in H$  for all inner automorphisms. Thus,  $g \cdot h \cdot g^{-1} \in H$  for all  $g \in G$ , so  $H$  is normal.  
-11) If  $h \in H$ , and  $\phi$  is any automorphism, then  $\phi(h)^n = \phi(h^n) = \phi(e) = e$ , so  $\phi(h) \in H$ .  
-13) Let  $\phi$  be an automorphism of  $G$ . Since  $N$  is characteristic,  $\phi(n) \in N$  for all  $n \in N$ , so  $\phi$  can be restricted to form an automorphism on  $N$ . Then  $\phi(h) \in H$  for all  $h \in H$ , since  $H$  is a characteristic subgroup of  $N$ . Hence,  $H$  is a characteristic subgroup of  $G$ .  
-15) Center  $= \{e, a^3\}$ , Quotient group  $D_6 / Z(D_6) \approx S_3$ .  
+7) Let  $H = \{e, a\}$ . Since  $H$  is normal,  $g \cdot a \cdot g^{-1}$  is in  $H$  for all  $g$ . But  $g \cdot a \cdot g^{-1} \neq e$  since  $a \neq e$ . So  $g \cdot a \cdot g^{-1} = a$ , so  $g \cdot a = a \cdot g$ .
+9) Since  $\phi(h) \in H$  for all automorphisms, in particular  $\phi(h) \in H$  for all inner automorphisms. Thus,  $g \cdot h \cdot g^{-1} \in H$  for all  $g \in G$ , so  $H$  is normal.
+11) If  $h \in H$ , and  $\phi$  is any automorphism, then  $\phi(h)^n = \phi(h^n) = \phi(e) = e$ , so  $\phi(h) \in H$ .
+13) Let  $\phi$  be an automorphism of  $G$ . Since  $N$  is characteristic,  $\phi(n) \in N$  for all  $n \in N$ , so  $\phi$  can be restricted to form an automorphism on  $N$ . Then  $\phi(h) \in H$  for all  $h \in H$ , since  $H$  is a characteristic subgroup of  $N$ . Hence,  $H$  is a characteristic subgroup of  $G$ .
+15) Center  $= \{e, a^3\}$ , Quotient group  $D_6 / Z(D_6) \approx S_3$ .
 17)  $Z(D_{n}) = \{e\}$  if  $n$  is odd,  $Z(D_{n}) = \{e, a^{n/2}\}$  for  $n$  even. Note that the non-identity element corresponds to a 180 degree rotation.
 
 # Section 8.2
 
-1)  $N_{D_4}(\{e\}) = N_{D_4}(\{a^2\}) = D_4, N_{D_4}(\{a\}) = N_{D_4}(\{a^3\}) = \{e,a,a^2,a^3\},$ $N_{D_4}(\{b\}) = N_{D_4}(\{a^2\cdot b\}) = \{e,a^2,b,a^2\cdot b\}$ $N_{D_4}(\{a\cdot b\}) = N_{D_4}(\{a^3\cdot b\}) =$ $\{e,a^2,a\cdot b,a^3\cdot b\}$  
-3)  $N_{D_4}(\{e,a^2\}) = D_4$ $N_{D_4}(\{e,b\}) = N_{D_4}(\{e,a^2\cdot b\}) = \{e,a^2,b,a^2\cdot b\}$ $N_{D_4}(\{e,a\cdot b\}) = N_{D_4}(\{e,a^3\cdot b\}) = \{e,a^2,a\cdot b,a^3\cdot b\}$  
-5) No, since  $N_G(\{e\}) = G$  for all groups.  
-7)  $x\in N_G(\{g\})\Leftrightarrow x\cdot g = g\cdot x\Leftrightarrow x\cdot g^{-1} = g^{-1}\cdot x\Leftrightarrow x\in N_G(\{g^{-1}\}).$  
-9) If  $z \in Z(G)$  and  $g \in S$ , then  $z \cdot g \cdot z^{-1} = g \cdot z \cdot z^{-1} = g \in S$ .  
-11)  $\{e,a,a^2,a^3\}$  
-13)  $\{e,a^2,b,a^2\cdot b\}$  
-15)  $\{e,a^2,b,a^2\cdot b\}$  
-17)  $\{e, a, a^2, a^3, a^4\}$ .  
-19)  $D_{5}$ .  
+1)  $N_{D_4}(\{e\}) = N_{D_4}(\{a^2\}) = D_4, N_{D_4}(\{a\}) = N_{D_4}(\{a^3\}) = \{e,a,a^2,a^3\},$ $N_{D_4}(\{b\}) = N_{D_4}(\{a^2\cdot b\}) = \{e,a^2,b,a^2\cdot b\}$ $N_{D_4}(\{a\cdot b\}) = N_{D_4}(\{a^3\cdot b\}) =$ $\{e,a^2,a\cdot b,a^3\cdot b\}$
+3)  $N_{D_4}(\{e,a^2\}) = D_4$ $N_{D_4}(\{e,b\}) = N_{D_4}(\{e,a^2\cdot b\}) = \{e,a^2,b,a^2\cdot b\}$ $N_{D_4}(\{e,a\cdot b\}) = N_{D_4}(\{e,a^3\cdot b\}) = \{e,a^2,a\cdot b,a^3\cdot b\}$
+5) No, since  $N_G(\{e\}) = G$  for all groups.
+7)  $x\in N_G(\{g\})\Leftrightarrow x\cdot g = g\cdot x\Leftrightarrow x\cdot g^{-1} = g^{-1}\cdot x\Leftrightarrow x\in N_G(\{g^{-1}\}).$
+9) If  $z \in Z(G)$  and  $g \in S$ , then  $z \cdot g \cdot z^{-1} = g \cdot z \cdot z^{-1} = g \in S$ .
+11)  $\{e,a,a^2,a^3\}$
+13)  $\{e,a^2,b,a^2\cdot b\}$
+15)  $\{e,a^2,b,a^2\cdot b\}$
+17)  $\{e, a, a^2, a^3, a^4\}$ .
+19)  $D_{5}$ .
 21)  $N_{D_6}(\{e\}) = N_{D_6}(\{a^3\}) = D_6, N_{D_6}(\{a\}) = N_{D_6}(\{a^2\}) = N_{D_6}(\{a^4\}) =$ $N_{D_6}(\{a^5\}) = \{e,a,a^2,a^3,a^4,a^5\},N_{D_6}(\{b\}) = N_{D_6}(\{a^3\cdot b\}) = \{e,a^3,b,a^3\}$ $b\}$ $N_{D_6}(\{a\cdot b\}) = N_{D_6}(\{a^4\cdot b\}) = \{e,a\cdot b,a^3,a^4\cdot b\}$ $N_{D_6}(\{a^2\cdot b\}) =$ $N_{D_6}(\{a^5\cdot b\}) = \{e,a^2\cdot b,a^3,a^5\cdot b\}$
 
 # Section 8.3
 
-1)  $\{e\}$ ,  $\{a^2\}$ ,  $\{a, a^3\}$ ,  $\{b, a^2 \cdot b\}$ , and  $\{a \cdot b, a^3 \cdot b\}$ .  
-3)  $\{e\}$ ,  $\{a, a \cdot b, a \cdot b^2, a \cdot b^3, a \cdot b^4\}$ ,  $\{b, b^4\}$ , and  $\{b^2, b^3\}$ .  
-5) If  $g \cdot x \cdot g^{-1} = x^{-1}$  for some  $g$ , then  $g^2 \cdot x = x \cdot g^2$ , and since  $g$  has odd order,  $(g^2)^k = g$  for some  $k$ . Thus,  $g \cdot x = x \cdot g$ , and so  $g \cdot x \cdot g^{-1} = x$ .  
-7) If  $N$  is a nontrivial normal subgroup,  $|N| \geq 13$ , so  $|N| = 30$ , 20, or 15 (divisors of 60).  $|N| \neq 15$ , so  $|N|$  is even, hence classes of size 1 and 15 are in  $N$ . Since  $|N| \geq 28$ ,  $|N| = 30$ , but there is no class of size 14.  
-9)  $|N| \geq 57$ , so  $|N| = 252$ , 168, 126, 84, 72, or 63 (divisors of 504).  $|N| \neq 63$ , so  $|N|$  is even, hence classes of size 1 and 63 are in  $N$ , making  $|N| \geq 120$ . Seven divides  $|N|$ , so all classes of order 72 are in  $N$ , making  $|N| \geq 280$ .  
-11)  $|N| \geq 85$ , so  $|N| = 546$ , 364, 273, 182, 156, or 91 (divisors of 1092). 13 divides  $|N|$ , hence both classes of size 84 are in  $N$ , making  $|N| \geq 260$ . Seven divides  $|N|$ , so all three classes of order 156 are in  $N$ , making  $|N| \geq 728$ .  
-13) The next largest group would be  $A_7$ , with 2520 elements. (Only 72 more elements than  $L_2(17)$ .) The next largest group  $L_2(19)$  has 3420 elements.  
-15) \(|N| \geq 316\), so \(|N| = 10080, 6720, 5040, 4032, 3360, 2880, 2520, 2240, 2016, 1680, 1440, 1344, 1260, 1120, 1008, 960, 840, 720, 672, 630, 576, 560, 504, 480, 448, 420, 360, 336, or 320 (divisors of 20160). \(|N|\) is even, so classes of size 1 and 315 are in \(N\), making \(|N| \geq 1576\). \(|N| \neq 2240\), so \(|N|\) is a multiple of 3, so the class of size 2240 is in \(N\), making \(|N| \geq 3816\). Seven divides \(|N|\), so both classes of size 2880 are in \(N\), making \(|N| \geq 9576\). Five divides \(|N|\), so both classes of size 4032 are in \(N\), making \(|N| \geq 16380\). \(A_8\) has a conjugacy class of size 112 (all 3-cycles).  
-17) 20160 elements, same as  $A_8$  and  $L_3(4)$  from Problem 15. This group is in fact isomorphic to  $A_8$ .  
+1)  $\{e\}$ ,  $\{a^2\}$ ,  $\{a, a^3\}$ ,  $\{b, a^2 \cdot b\}$ , and  $\{a \cdot b, a^3 \cdot b\}$ .
+3)  $\{e\}$ ,  $\{a, a \cdot b, a \cdot b^2, a \cdot b^3, a \cdot b^4\}$ ,  $\{b, b^4\}$ , and  $\{b^2, b^3\}$ .
+5) If  $g \cdot x \cdot g^{-1} = x^{-1}$  for some  $g$ , then  $g^2 \cdot x = x \cdot g^2$ , and since  $g$  has odd order,  $(g^2)^k = g$  for some  $k$ . Thus,  $g \cdot x = x \cdot g$ , and so  $g \cdot x \cdot g^{-1} = x$ .
+7) If  $N$  is a nontrivial normal subgroup,  $|N| \geq 13$ , so  $|N| = 30$ , 20, or 15 (divisors of 60).  $|N| \neq 15$ , so  $|N|$  is even, hence classes of size 1 and 15 are in  $N$ . Since  $|N| \geq 28$ ,  $|N| = 30$ , but there is no class of size 14.
+9)  $|N| \geq 57$ , so  $|N| = 252$ , 168, 126, 84, 72, or 63 (divisors of 504).  $|N| \neq 63$ , so  $|N|$  is even, hence classes of size 1 and 63 are in  $N$ , making  $|N| \geq 120$ . Seven divides  $|N|$ , so all classes of order 72 are in  $N$ , making  $|N| \geq 280$ .
+11)  $|N| \geq 85$ , so  $|N| = 546$ , 364, 273, 182, 156, or 91 (divisors of 1092). 13 divides  $|N|$ , hence both classes of size 84 are in  $N$ , making  $|N| \geq 260$ . Seven divides  $|N|$ , so all three classes of order 156 are in  $N$ , making  $|N| \geq 728$ .
+13) The next largest group would be  $A_7$ , with 2520 elements. (Only 72 more elements than  $L_2(17)$ .) The next largest group  $L_2(19)$  has 3420 elements.
+15) \(|N| \geq 316\), so \(|N| = 10080, 6720, 5040, 4032, 3360, 2880, 2520, 2240, 2016, 1680, 1440, 1344, 1260, 1120, 1008, 960, 840, 720, 672, 630, 576, 560, 504, 480, 448, 420, 360, 336, or 320 (divisors of 20160). \(|N|\) is even, so classes of size 1 and 315 are in \(N\), making \(|N| \geq 1576\). \(|N| \neq 2240\), so \(|N|\) is a multiple of 3, so the class of size 2240 is in \(N\), making \(|N| \geq 3816\). Seven divides \(|N|\), so both classes of size 2880 are in \(N\), making \(|N| \geq 9576\). Five divides \(|N|\), so both classes of size 4032 are in \(N\), making \(|N| \geq 16380\). \(A_8\) has a conjugacy class of size 112 (all 3-cycles).
+17) 20160 elements, same as  $A_8$  and  $L_3(4)$  from Problem 15. This group is in fact isomorphic to  $A_8$ .
 19) Nontrivial normal subgroups are  $\{1, 13016\}$  and  $\{1, 6212, 13016, 19853, 24132, 25315, 33108, 38807\}$ .
 
 # Section 8.4
 
-1)  $A_{1,1} = A_{1,2} = B_{1,1} = Z_{12}$ ,  $A_{2,1} = \{0,6\}$ ,  $A_{2,2} = B_{1,3} = \{0\}$ ,  $B_{1,2} = \{0,2,4,6,8,10\}$ . The arrows show the isomorphisms  $Z_{12}/Z_{12} \approx Z_{12}/Z_{12}$ ,  $Z_{12}/Z_{12} \approx \{0,2,4,6,8,10\}/\{0,2,4,6,8,10\}$ ,  $Z_{12}/\{0,3,6,9\} \approx \{0,4,8\}/\{0\}$ ,  $\{0,3,6,9\}/\{0,6\} \approx Z_{12}/\{0,2,4,6,8,10\}$ ,  $\{0,6\}/\{0\} \approx \{0,2,4,6,8\}/\{0,4,8\}$ ,  $\{0\}/\{0\} \approx \{0\}/\{0\}$ .  
-3)  $Z_{24}^{*}\supseteq \{1,5,7,11\} \supseteq \{1,5\} \supseteq \{1\}$  
-5)  $Z_{12} \times Z_{18} \supseteq \{0, 3, 6, 9\} \times Z_{18} \supseteq \{0, 6\} \times Z_{18} \subseteq \{0\} \times Z_{18} \supseteq \{0\} \times \{0, 3, 6, 9, 12, 15\} \supseteq \{0\} \times \{0, 9\} \supseteq \{0\} \times \{0\}$ .  
-7)  $D_4 \subseteq \{e, b, b^2, b^3\} \subseteq \{e, b^2\} \subseteq \{e\}$ .  
+1)  $A_{1,1} = A_{1,2} = B_{1,1} = Z_{12}$ ,  $A_{2,1} = \{0,6\}$ ,  $A_{2,2} = B_{1,3} = \{0\}$ ,  $B_{1,2} = \{0,2,4,6,8,10\}$ . The arrows show the isomorphisms  $Z_{12}/Z_{12} \approx Z_{12}/Z_{12}$ ,  $Z_{12}/Z_{12} \approx \{0,2,4,6,8,10\}/\{0,2,4,6,8,10\}$ ,  $Z_{12}/\{0,3,6,9\} \approx \{0,4,8\}/\{0\}$ ,  $\{0,3,6,9\}/\{0,6\} \approx Z_{12}/\{0,2,4,6,8,10\}$ ,  $\{0,6\}/\{0\} \approx \{0,2,4,6,8\}/\{0,4,8\}$ ,  $\{0\}/\{0\} \approx \{0\}/\{0\}$ .
+3)  $Z_{24}^{*}\supseteq \{1,5,7,11\} \supseteq \{1,5\} \supseteq \{1\}$
+5)  $Z_{12} \times Z_{18} \supseteq \{0, 3, 6, 9\} \times Z_{18} \supseteq \{0, 6\} \times Z_{18} \subseteq \{0\} \times Z_{18} \supseteq \{0\} \times \{0, 3, 6, 9, 12, 15\} \supseteq \{0\} \times \{0, 9\} \supseteq \{0\} \times \{0\}$ .
+7)  $D_4 \subseteq \{e, b, b^2, b^3\} \subseteq \{e, b^2\} \subseteq \{e\}$ .
 9)  $D_6 \subseteq \{e, b, b^2, b^3, b^4, b^5\} \subseteq \{e, b^3\} \subseteq \{e\}$ .
 
-11)  $A_4$  and  $\{(), (12)(34), (13)(24), (14)(23)\}$  must be in the series, and then we have three choices,  $\{(), (12)(34)\}$ ,  $\{(), (13)(24)\}$ , or  $\{(), (14)(23)\}$  for the next term in the series.  
-13)  $S_{5}$  and  $Z_{120}$ .  
-15) Pick a cyclic group of prime order.  
-17) Since all of the  $A_{i}$  and  $B_{j}$  are normal subgroups of  $G$ , then  $A_{i,j} = (A_{i-1} \cap B_{j}) \cdot A_{i}$  and  $B_{j,i} = (B_{j-1} \cap A_{i}) \cdot B_{j}$  are normal subgroups of  $G$  using Problem 17 from §5.3.  
+11)  $A_4$  and  $\{(), (12)(34), (13)(24), (14)(23)\}$  must be in the series, and then we have three choices,  $\{(), (12)(34)\}$ ,  $\{(), (13)(24)\}$ , or  $\{(), (14)(23)\}$  for the next term in the series.
+13)  $S_{5}$  and  $Z_{120}$ .
+15) Pick a cyclic group of prime order.
+17) Since all of the  $A_{i}$  and  $B_{j}$  are normal subgroups of  $G$ , then  $A_{i,j} = (A_{i-1} \cap B_{j}) \cdot A_{i}$  and  $B_{j,i} = (B_{j-1} \cap A_{i}) \cdot B_{j}$  are normal subgroups of  $G$  using Problem 17 from §5.3.
 19)  $M\supseteq \{e,a,a^{2},a^{3},a^{4},b^{2},a\cdot b^{2},a^{2}\cdot b^{2},a^{3}\cdot b^{2},a^{4}\cdot b^{2}\} \supseteq \{e,a,a^{2},a^{3},a^{4}\} \supseteq \{e\}$
 
 # Section 8.5
 
-1) 1 element of order 1, 391 of order 2, 64880 of order 3, 2520 of order 4, 2304 of order 5, 173840 of order 6, 1440 of order 8, 2304 of order 10, 201600 of order 12, 184320 of order 15, 115200 of order 24, and 184320 elements of order 30.  
-3) The size of group is  $8! \cdot (12! / 2) \cdot 3^7 \cdot 2^{11} = 432520023274489856000$ . The only nontrivial element in the center flips all 12 edges. (Rotating all 8 corners clockwise can't be done, since 8 is not a multiple of 3.)  
-5)  $a^2 \cdot b^{-1} \cdot a^{-1}$ .  
-7) The two possible moves (1234567) and (13)(26) are both even permutations, so the group generated by these two elements would be a subgroup of  $A_7$ .  
-9)  $a \cdot (a^2 \cdot b^{-1})^2 \cdot a^{-1}$ .  
-11)  $(a^{-1} \cdot b^{-1})^3 \cdot (a \cdot b)^3 \cdot a \cdot b^{-1} \cdot a^{-1} \cdot b^{-2}$  
+1) 1 element of order 1, 391 of order 2, 64880 of order 3, 2520 of order 4, 2304 of order 5, 173840 of order 6, 1440 of order 8, 2304 of order 10, 201600 of order 12, 184320 of order 15, 115200 of order 24, and 184320 elements of order 30.
+3) The size of group is  $8! \cdot (12! / 2) \cdot 3^7 \cdot 2^{11} = 432520023274489856000$ . The only nontrivial element in the center flips all 12 edges. (Rotating all 8 corners clockwise can't be done, since 8 is not a multiple of 3.)
+5)  $a^2 \cdot b^{-1} \cdot a^{-1}$ .
+7) The two possible moves (1234567) and (13)(26) are both even permutations, so the group generated by these two elements would be a subgroup of  $A_7$ .
+9)  $a \cdot (a^2 \cdot b^{-1})^2 \cdot a^{-1}$ .
+11)  $(a^{-1} \cdot b^{-1})^3 \cdot (a \cdot b)^3 \cdot a \cdot b^{-1} \cdot a^{-1} \cdot b^{-2}$
 13)  $L\cdot R^{-1}\cdot L\cdot R^{-1}\cdot L\cdot R^{-2}$
 
 # Section 9.1
 
-1)  $(-x)\cdot y = (-x)\cdot y + [x\cdot y + -(x\cdot y)] = [(-x)\cdot y + x\cdot y] + -(x\cdot y) =$ $[( - x ) + x ]\cdot y + - ( x \cdot y ) = 0 \cdot y + - ( x \cdot y ) = - ( x \cdot y ) .$  
-3)  $(-x)\cdot (-y) = -((-x)\cdot y) = -(-(x\cdot y)) = x\cdot y.$  
-5)  $(x - y)\cdot z = (x + (-y))\cdot z = x\cdot z + (-y)\cdot z = x\cdot z + -(y\cdot z) = x\cdot z - y\cdot z.$  
-7) Either  $(a\cdot b)\cdot x = 0$  or  $x\cdot (a\cdot b) = 0$  for some non-zero  $x$ . In the first case,  $a\cdot (b\cdot x) = 0$ , so either  $a$  is a zero divisor, or  $b\cdot x = 0$ , making  $b$  a zero divisor. The second case is similar.  
-9)  $\overline{i} \cdot \overline{j} = (-i) \cdot (-j) = k$ , yet  $\overline{i \cdot j} = \overline{k} = -k$ . What is true is that  $\overline{x_1} \cdot \overline{x_2} = \overline{x_2} \cdot \overline{x_1}$ .  
-11)  $|x_1 \cdot x_2| = \sqrt{x_1 \cdot x_2 \cdot \overline{x_1 \cdot x_2}} = \sqrt{x_1 \cdot x_2 \cdot \overline{x_2} \cdot \overline{x_1}} = \sqrt{x_1 \cdot \overline{x}_1 \cdot x_2 \cdot \overline{x_2}} = \sqrt{x_1 \cdot x_2 \cdot \overline{x_1} \cdot \overline{x_2}} = |x_1||x_2|$ .  
-13)  $(x + i)\cdot (x - i) = x^{2} + i\cdot x - x\cdot i + 1\neq x^{2} + 1.$  (For example, if  $x = j$  .  
-15) This set is not closed under multiplication. For example,  $\sqrt[3]{2} \cdot \sqrt[3]{2} = \sqrt[3]{4}$ .  
+1)  $(-x)\cdot y = (-x)\cdot y + [x\cdot y + -(x\cdot y)] = [(-x)\cdot y + x\cdot y] + -(x\cdot y) =$ $[( - x ) + x ]\cdot y + - ( x \cdot y ) = 0 \cdot y + - ( x \cdot y ) = - ( x \cdot y ) .$
+3)  $(-x)\cdot (-y) = -((-x)\cdot y) = -(-(x\cdot y)) = x\cdot y.$
+5)  $(x - y)\cdot z = (x + (-y))\cdot z = x\cdot z + (-y)\cdot z = x\cdot z + -(y\cdot z) = x\cdot z - y\cdot z.$
+7) Either  $(a\cdot b)\cdot x = 0$  or  $x\cdot (a\cdot b) = 0$  for some non-zero  $x$ . In the first case,  $a\cdot (b\cdot x) = 0$ , so either  $a$  is a zero divisor, or  $b\cdot x = 0$ , making  $b$  a zero divisor. The second case is similar.
+9)  $\overline{i} \cdot \overline{j} = (-i) \cdot (-j) = k$ , yet  $\overline{i \cdot j} = \overline{k} = -k$ . What is true is that  $\overline{x_1} \cdot \overline{x_2} = \overline{x_2} \cdot \overline{x_1}$ .
+11)  $|x_1 \cdot x_2| = \sqrt{x_1 \cdot x_2 \cdot \overline{x_1 \cdot x_2}} = \sqrt{x_1 \cdot x_2 \cdot \overline{x_2} \cdot \overline{x_1}} = \sqrt{x_1 \cdot \overline{x}_1 \cdot x_2 \cdot \overline{x_2}} = \sqrt{x_1 \cdot x_2 \cdot \overline{x_1} \cdot \overline{x_2}} = |x_1||x_2|$ .
+13)  $(x + i)\cdot (x - i) = x^{2} + i\cdot x - x\cdot i + 1\neq x^{2} + 1.$  (For example, if  $x = j$  .
+15) This set is not closed under multiplication. For example,  $\sqrt[3]{2} \cdot \sqrt[3]{2} = \sqrt[3]{4}$ .
 17) Since  $G$  is an abelian group, we only need to check the associative law and the two distributive laws. But these are both trivial, since both sides would evaluate to 0.
 
 19) Since  $x = (x \cdot y) \cdot x = x \cdot (y \cdot x)$ , we have  $x \cdot (e - y \cdot x) = 0$ . Since  $x$  cannot be 0 (else  $x \cdot y = 0$ ), and  $x$  is not a zero-divisor, then  $e - y \cdot x = 0$ .
@@ -16147,56 +16147,56 @@ $$
 
 # Section 9.2
 
-1)  $a^2 = a, b^2 = b$ .  
-3)  $b\cdot a = a$ $b^{2} = b$  
-5)  $b\cdot a = a$ $a^2 = 0$  
-7)  $b\cdot a = a$ $a^2 = a$  
+1)  $a^2 = a, b^2 = b$ .
+3)  $b\cdot a = a$ $b^{2} = b$
+5)  $b\cdot a = a$ $a^2 = 0$
+7)  $b\cdot a = a$ $a^2 = a$
 9)  $a^2 = a, b^2 = 3b$ .
 
-11)  $b^2 = c^2 = a + b + c, b \cdot a = c, c \cdot b = a.$  
-13) By induction in  $m$ :  $m(x + y) = (m - 1)(x + y) + (x + y) = (m - 1)x + (m - 1)y + x + y = mx + my$ .  
-15) By induction in  $m$ :  $(mn)x = ((m - 1)n + n)x = ((m - 1)n)x + nx = (m - 1)(nx) + nx = m(nx)$ .  
-17) 2.  
-19) Let the identity  $e$  have order  $n$  in the additive group. Then the characteristic cannot be less than  $n$ , but  $nx = n(x \cdot e) = (ne) \cdot x = 0$  for all  $x \in R$ .  
-21) Since the additive group is abelian, it can be written as  $Z_{n_1} \times Z_{n_2} \times \dots \times Z_{n_r}$ . Then the  $r$  elements  $(1,0,\ldots,0), (0,1,\ldots,0), \ldots, (0,0,\ldots,1)$  form a basis.  
-23) Define  $2a = 0$ , and  $a^2 = 0$ .  
+11)  $b^2 = c^2 = a + b + c, b \cdot a = c, c \cdot b = a.$
+13) By induction in  $m$ :  $m(x + y) = (m - 1)(x + y) + (x + y) = (m - 1)x + (m - 1)y + x + y = mx + my$ .
+15) By induction in  $m$ :  $(mn)x = ((m - 1)n + n)x = ((m - 1)n)x + nx = (m - 1)(nx) + nx = m(nx)$ .
+17) 2.
+19) Let the identity  $e$  have order  $n$  in the additive group. Then the characteristic cannot be less than  $n$ , but  $nx = n(x \cdot e) = (ne) \cdot x = 0$  for all  $x \in R$ .
+21) Since the additive group is abelian, it can be written as  $Z_{n_1} \times Z_{n_2} \times \dots \times Z_{n_r}$ . Then the  $r$  elements  $(1,0,\ldots,0), (0,1,\ldots,0), \ldots, (0,0,\ldots,1)$  form a basis.
+23) Define  $2a = 0$ , and  $a^2 = 0$ .
 25) Define  $2a = 2b = 2c = 0$ ,  $a^2 = a + c$ ,  $a \cdot b = b + c$ ,  $a \cdot c = c$ ,  $b \cdot a = b$ ,  $b^2 = b$ ,  $b \cdot c = 0$ ,  $c \cdot a = c$ ,  $c \cdot b = c$ , and  $c^2 = 0$ .
 
 # Section 9.3
 
-1) Both  $x \cdot a = x$  and  $x \cdot b = x$  for all  $x$  in the ring, but there is no  $r$  for which  $r \cdot c = c$ , since  $r \cdot c = 0$ .  
-3)  $(x + y)\cdot (x^{-1} - x^{-2}\cdot y + x^{-3}\cdot y^{2}) = e + x^{-1}\cdot y - x^{-1}\cdot y - x^{-2}\cdot y^{2} + x^{-2}\cdot$ $y^{2} + x^{-3}\cdot y^{3} = e.$  
-5) This is actually a field, with 6 as the unity.  
-7) Since  $(x + y)^2 = x^2 + x \cdot y + y \cdot x + y^2 = x + y$ , we have that  $x \cdot y + y \cdot x = 0$ . By Problem 6,  $x \cdot y = -x \cdot y$ , and so  $x \cdot y = y \cdot x$ .  
-9)  $(x + y)^2 = x^2 + 2x \cdot y + y^2 = x^2 + y^2$ .  
-11) For the ring defined by Tables 9.3 and 9.4,  $x = a$ ,  $y = -a$ .  
-13) Obviously 0 and  $e$  satisfy  $a^2 = a$ . If  $a \neq 0$ , then  $a^{-1}$  exists, and  $a = a^2 \cdot a^{-1} = a \cdot a^{-1} = e$ .  
-15)  $(x + y)^2 = x^2 +x\cdot y + y\cdot x + y^2 = x^2 +2xy + y^2$ $(x + y)^3 = (x + y)(x^{2} + 2xy + y^{2})$ $2xy + y^{2}) = x^{3} + y\cdot x^{2} + 2x^{2}\cdot y + 2y\cdot x\cdot y + x\cdot y^{2} + y^{3} = x^{3} + 3x^{2}y + 3xy^{2} + y^{3}.$  
-17)  $e$  and  $g$ .  
+1) Both  $x \cdot a = x$  and  $x \cdot b = x$  for all  $x$  in the ring, but there is no  $r$  for which  $r \cdot c = c$ , since  $r \cdot c = 0$ .
+3)  $(x + y)\cdot (x^{-1} - x^{-2}\cdot y + x^{-3}\cdot y^{2}) = e + x^{-1}\cdot y - x^{-1}\cdot y - x^{-2}\cdot y^{2} + x^{-2}\cdot$ $y^{2} + x^{-3}\cdot y^{3} = e.$
+5) This is actually a field, with 6 as the unity.
+7) Since  $(x + y)^2 = x^2 + x \cdot y + y \cdot x + y^2 = x + y$ , we have that  $x \cdot y + y \cdot x = 0$ . By Problem 6,  $x \cdot y = -x \cdot y$ , and so  $x \cdot y = y \cdot x$ .
+9)  $(x + y)^2 = x^2 + 2x \cdot y + y^2 = x^2 + y^2$ .
+11) For the ring defined by Tables 9.3 and 9.4,  $x = a$ ,  $y = -a$ .
+13) Obviously 0 and  $e$  satisfy  $a^2 = a$ . If  $a \neq 0$ , then  $a^{-1}$  exists, and  $a = a^2 \cdot a^{-1} = a \cdot a^{-1} = e$ .
+15)  $(x + y)^2 = x^2 +x\cdot y + y\cdot x + y^2 = x^2 +2xy + y^2$ $(x + y)^3 = (x + y)(x^{2} + 2xy + y^{2})$ $2xy + y^{2}) = x^{3} + y\cdot x^{2} + 2x^{2}\cdot y + 2y\cdot x\cdot y + x\cdot y^{2} + y^{3} = x^{3} + 3x^{2}y + 3xy^{2} + y^{3}.$
+17)  $e$  and  $g$ .
 19)  $2a + b$  is the only irreducible element.
 
-21)  $a, b, d,$  and  $f$  are prime.  
+21)  $a, b, d,$  and  $f$  are prime.
 23) Define  $2a = 2c = 0$ ,  $a^2 = a$ ,  $a \cdot c = c$ ,  $c \cdot a = 0$ , and  $c^2 = 0$ .
 
 # Section 10.1
 
-1) Subring.  $(x_{1} - x_{2}) + (y_{1} - y_{2})\sqrt{5}$  and  $(x_{1}x_{2} + 5y_{1}y_{2}) + (x_{1}y_{2} + x_{2}y_{1})\sqrt{5}$  are in the set.  
-3) Not a subring, since not closed under subtraction.  
-5) Subring.  $(x_{1}2^{y_{1}} - x_{2}2^{y_{1}}) / (2^{(y_{1} + y_{2})}$  and  $(x_{1}x_{2}) / 2^{(y_{1} + y_{2})}$  are in the set.  
-7) Subring.  $(x_{1} - x_{2}) + (y_{1} - y_{2})\sqrt[3]{2} + (z_{1} - z_{2})\sqrt[3]{4}$  and  $(x_{1}x_{2} + 2y_{1}z_{2} + 2y_{2}z_{1}) + (x_{1}y_{2} + x_{2}y_{1} + 2z_{1}z_{2})\sqrt[3]{2} + (x_{1}z_{2} + y_{1}y_{2} + z_{1}x_{2})\sqrt[3]{4}$  are in the set.  
-9) Not a subring, since not closed under multiplication.  $(1 + \sqrt{2})(1 - \sqrt{2}) = -1$ .  
-11) If  $a, b \in A$ , then  $a \cdot y = b \cdot y = 0$ , so  $(a - b) \cdot y = 0$  and  $(a \cdot b) \cdot y = 0$ , so  $a - b$  and  $a \cdot b$  are in  $A$ .  
-13) If  $a, b \in Z$ , and  $x \in R$ , then  $(a - b) \cdot x = a \cdot x - b \cdot x = x \cdot a - x \cdot b = x \cdot (a - b)$  and  $(a \cdot b) \cdot x = a \cdot (x \cdot b) = x \cdot (a \cdot b)$ , so  $a - b$  and  $a \cdot b$  are in  $Z$ .  
-15) 2 and 3 are in  $2\mathbb{Z}\cup 3\mathbb{Z}$ , but  $2 + 3 = 5\notin 2\mathbb{Z}\cup 3\mathbb{Z}$ .  
-17)  $\{0\}$ ,  $\{0, a\}$ ,  $\{0, b\}$ ,  $\{0, c\}$ , and the whole ring.  
+1) Subring.  $(x_{1} - x_{2}) + (y_{1} - y_{2})\sqrt{5}$  and  $(x_{1}x_{2} + 5y_{1}y_{2}) + (x_{1}y_{2} + x_{2}y_{1})\sqrt{5}$  are in the set.
+3) Not a subring, since not closed under subtraction.
+5) Subring.  $(x_{1}2^{y_{1}} - x_{2}2^{y_{1}}) / (2^{(y_{1} + y_{2})}$  and  $(x_{1}x_{2}) / 2^{(y_{1} + y_{2})}$  are in the set.
+7) Subring.  $(x_{1} - x_{2}) + (y_{1} - y_{2})\sqrt[3]{2} + (z_{1} - z_{2})\sqrt[3]{4}$  and  $(x_{1}x_{2} + 2y_{1}z_{2} + 2y_{2}z_{1}) + (x_{1}y_{2} + x_{2}y_{1} + 2z_{1}z_{2})\sqrt[3]{2} + (x_{1}z_{2} + y_{1}y_{2} + z_{1}x_{2})\sqrt[3]{4}$  are in the set.
+9) Not a subring, since not closed under multiplication.  $(1 + \sqrt{2})(1 - \sqrt{2}) = -1$ .
+11) If  $a, b \in A$ , then  $a \cdot y = b \cdot y = 0$ , so  $(a - b) \cdot y = 0$  and  $(a \cdot b) \cdot y = 0$ , so  $a - b$  and  $a \cdot b$  are in  $A$ .
+13) If  $a, b \in Z$ , and  $x \in R$ , then  $(a - b) \cdot x = a \cdot x - b \cdot x = x \cdot a - x \cdot b = x \cdot (a - b)$  and  $(a \cdot b) \cdot x = a \cdot (x \cdot b) = x \cdot (a \cdot b)$ , so  $a - b$  and  $a \cdot b$  are in  $Z$ .
+15) 2 and 3 are in  $2\mathbb{Z}\cup 3\mathbb{Z}$ , but  $2 + 3 = 5\notin 2\mathbb{Z}\cup 3\mathbb{Z}$ .
+17)  $\{0\}$ ,  $\{0, a\}$ ,  $\{0, b\}$ ,  $\{0, c\}$ , and the whole ring.
 19)  $\{0\}$ ,  $\{0, a, 2a, 3a\}$ ,  $\{0, b\}$ ,  $\{0, 2a\}$ ,  $\{0, b, 2a, 2a + b\}$ ,  $\{0, 2a + b\}$ ,  $\{0, a + b, 2a, 3a + b\}$ , and the whole ring.
 
 # Section 10.2
 
-1) If  $a \in X + Y$  and  $z \in R$ , then  $a = x + y$  for some  $x \in X$  and  $y \in Y$ . Then  $a \cdot z = (x \cdot z) + (y \cdot z) \in X + Y$ . Likewise,  $z \cdot a \in X + Y$ .  
-3) If  $a \in X \cdot Y$ , and  $z \in R$ , then  $a = x_1 \cdot y_1 + x_2 \cdot y_2 + \dots + x_n \cdot y_n$ , so  $a \cdot z = x_1 \cdot (y_1 \cdot z) + x_2 \cdot (y_2 \cdot z) + \dots \cdot x_n \cdot (y_n \cdot z) \in X \cdot Y$ . Likewise,  $z \cdot a \in X \cdot Y$ .  
-5) If  $a \in X \cdot Y$ , then  $a = x_1 \cdot y_1 + x_2 \cdot y_2 + \dots + x_n \cdot y_n \in X$ . Likewise,  $a \in Y$ , so  $a \in X \cap Y$ .  
-7)  $\{0\}$ ,  $\{0, a, 2a, 3a\}$ ,  $\{0, 2a\}$ ,  $\{0, b\}$ ,  $\{0, 2a + b, b, 2a\}$ , and the whole ring.  
+1) If  $a \in X + Y$  and  $z \in R$ , then  $a = x + y$  for some  $x \in X$  and  $y \in Y$ . Then  $a \cdot z = (x \cdot z) + (y \cdot z) \in X + Y$ . Likewise,  $z \cdot a \in X + Y$ .
+3) If  $a \in X \cdot Y$ , and  $z \in R$ , then  $a = x_1 \cdot y_1 + x_2 \cdot y_2 + \dots + x_n \cdot y_n$ , so  $a \cdot z = x_1 \cdot (y_1 \cdot z) + x_2 \cdot (y_2 \cdot z) + \dots \cdot x_n \cdot (y_n \cdot z) \in X \cdot Y$ . Likewise,  $z \cdot a \in X \cdot Y$ .
+5) If  $a \in X \cdot Y$ , then  $a = x_1 \cdot y_1 + x_2 \cdot y_2 + \dots + x_n \cdot y_n \in X$ . Likewise,  $a \in Y$ , so  $a \in X \cap Y$ .
+7)  $\{0\}$ ,  $\{0, a, 2a, 3a\}$ ,  $\{0, 2a\}$ ,  $\{0, b\}$ ,  $\{0, 2a + b, b, 2a\}$ , and the whole ring.
 9)  $\{0\}, \{0, c\}, \{0, a, b, c\}, \{0, c, d, f\}$ , and the whole ring.
 
 11)
@@ -16213,23 +16213,23 @@ $$
 
 <table><tr><td>·</td><td>{6}</td><td>2 + {6}</td><td>4 + {6}</td></tr><tr><td>{6}</td><td>{6}</td><td>{6}</td><td>{6}</td></tr><tr><td>2 + {6}</td><td>{6}</td><td>4 + {6}</td><td>2 + {6}</td></tr><tr><td>4 + {6}</td><td>{6}</td><td>2 + {6}</td><td>4 + {6}</td></tr></table>
 
-17) If  $a, b \in A$ , then  $a \cdot y = b \cdot y = 0$ , so  $(a - b) \cdot y = 0$ , hence  $a - b \in A$ . If  $z \in R$ , then  $(a \cdot z) \cdot y = z \cdot (a \cdot y) = 0$ , so  $A$  is an ideal.  
-19) Problem 14 of §10.1 shows it is a subring, so suppose  $a$  is nilpotent, so that  $a^m = 0$ . If  $x \in R$ ,  $(a \cdot x)^m = a^m \cdot x^m = 0$ , so  $a \cdot x$  is nilpotent.  
+17) If  $a, b \in A$ , then  $a \cdot y = b \cdot y = 0$ , so  $(a - b) \cdot y = 0$ , hence  $a - b \in A$ . If  $z \in R$ , then  $(a \cdot z) \cdot y = z \cdot (a \cdot y) = 0$ , so  $A$  is an ideal.
+19) Problem 14 of §10.1 shows it is a subring, so suppose  $a$  is nilpotent, so that  $a^m = 0$ . If  $x \in R$ ,  $(a \cdot x)^m = a^m \cdot x^m = 0$ , so  $a \cdot x$  is nilpotent.
 21) Nontrivial ideals:  $\{0,b\}$ ,  $\{0,2a\}$ , and  $\{0,b,2a,2a + b\}$ .
 
 # Section 10.3
 
-1)  $\phi(x \cdot y) = \phi(x) \cdot \phi(y) = \phi(y) \cdot \phi(x) = \phi(y \cdot x)$ . Since  $\phi$  is one-to-one,  $x \cdot y = y \cdot x$ .  
-3) If  $x\cdot y = 0$  with non-zero  $x$  and  $y$ , then  $0 = \phi (0) = \phi (x\cdot y) = \phi (x)\cdot \phi (y)$ . Since  $\phi$  is one-to-one,  $\phi (x)$  and  $\phi (y)$  are non-zero.  
-5)  $\{0, a, b, c\}$  gives a copy of  $T_4$  inside of  $T_8$ .  
-7)  $T_4^{\mathrm{op}}$  has an element  $c$  for which  $c \cdot x = 0$  for all  $x$ ,  $T_4$  has no such element.  
+1)  $\phi(x \cdot y) = \phi(x) \cdot \phi(y) = \phi(y) \cdot \phi(x) = \phi(y \cdot x)$ . Since  $\phi$  is one-to-one,  $x \cdot y = y \cdot x$ .
+3) If  $x\cdot y = 0$  with non-zero  $x$  and  $y$ , then  $0 = \phi (0) = \phi (x\cdot y) = \phi (x)\cdot \phi (y)$ . Since  $\phi$  is one-to-one,  $\phi (x)$  and  $\phi (y)$  are non-zero.
+5)  $\{0, a, b, c\}$  gives a copy of  $T_4$  inside of  $T_8$ .
+7)  $T_4^{\mathrm{op}}$  has an element  $c$  for which  $c \cdot x = 0$  for all  $x$ ,  $T_4$  has no such element.
 9)  $\{0,e,a,b,c,d,f,g\} \mapsto \{0,e,d,f,c,a,b,g\}$  or  $\{0,e,f,d,c,b,a,g\}$ .
 
 11) No,  $2\mathbb{Z}$  has a non-zero element  $x$  for which  $x + x = x^2$ ,  $3\mathbb{Z}$  has no such element.
 
-13) No,  $\mathbb{R}$  has no element for which  $x^{2} + e = 0$  
-15)  $Z_{21}$ ,  $3Z_{63}$ ,  $7Z_{147}$ , and  $21Z_{441}$ .  
-17)  $Z_{210}$ ,  $2Z_{420}$ ,  $3Z_{630}$ ,  $5Z_{1050}$ ,  $6Z_{1260}$ ,  $7Z_{1470}$ ,  $10Z_{2100}$ ,  $14Z_{2940}$ ,  $15Z_{3150}$ ,  $21Z_{4410}$ ,  $30Z_{6300}$ ,  $35Z_{7350}$ ,  $42Z_{8820}$ ,  $70Z_{14700}$ ,  $105Z_{22050}$  and  $210Z_{44100}$ .  
+13) No,  $\mathbb{R}$  has no element for which  $x^{2} + e = 0$
+15)  $Z_{21}$ ,  $3Z_{63}$ ,  $7Z_{147}$ , and  $21Z_{441}$ .
+17)  $Z_{210}$ ,  $2Z_{420}$ ,  $3Z_{630}$ ,  $5Z_{1050}$ ,  $6Z_{1260}$ ,  $7Z_{1470}$ ,  $10Z_{2100}$ ,  $14Z_{2940}$ ,  $15Z_{3150}$ ,  $21Z_{4410}$ ,  $30Z_{6300}$ ,  $35Z_{7350}$ ,  $42Z_{8820}$ ,  $70Z_{14700}$ ,  $105Z_{22050}$  and  $210Z_{44100}$ .
 19)
 
 $$
@@ -16240,17 +16240,17 @@ $$
 
 # Section 10.4
 
-1)  $\{0, 1, 2, 3, 4, 5\} \mapsto \{0, 0, 0, 0, 0, 0\}$ ,  $\{0, 1, 2, 3, 4, 5\}$ ,  $\{0, 3, 0, 3, 0, 3\}$ , or  $\{0, 4, 2, 0, 4, 2\}$ .  
-3)  $2 = \phi (1\cdot 1)\neq \phi (1)\cdot \phi (1) = 4.$  
+1)  $\{0, 1, 2, 3, 4, 5\} \mapsto \{0, 0, 0, 0, 0, 0\}$ ,  $\{0, 1, 2, 3, 4, 5\}$ ,  $\{0, 3, 0, 3, 0, 3\}$ , or  $\{0, 4, 2, 0, 4, 2\}$ .
+3)  $2 = \phi (1\cdot 1)\neq \phi (1)\cdot \phi (1) = 4.$
 5) No.  $4 = \phi(1 \cdot 1) \neq \phi(1) \cdot \phi(1) = 16$ .
 
-7) Yes, since clearly  $\phi(x + y) = (x + y) \bmod 5 = \phi(x) + \phi(y)$ , and  $\phi(x \cdot y) = (x \cdot y) \bmod 5 = \phi(x) \cdot \phi(y)$ .  
-9) No.  $0 = \phi (0) = \phi (1 + 1)\neq \phi (1) + \phi (1) = 2$  
-11)  $\phi (x) + \phi (y) = a + c - (b + d)i = \phi (x + y),\phi (x)\cdot \phi (y) = (a - bi)(c - di) =$ $ac - bd - (bc + ad)i = \phi (x\cdot y).$  
-13) If  $x^n = 0$ , then  $\phi(x)^n = \phi(x^n) = \phi(0) = 0$ , so  $\phi(x)$  is nilpotent.  
-15) From Example 10.5, all ideals of  $\mathbb{Z}$  are of the form  $\langle n\rangle$ . If  $n$  is prime, then  $x\cdot y\in \langle n\rangle$  means  $x\cdot y$  is a multiple of  $n$ , which by Euclid's lemma (1.4) says either  $x$  or  $y$  is in  $\langle n\rangle$ , so  $\langle n\rangle$  is a prime ideal. If  $n$  is not prime, then  $n$  factors as  $x\cdot y$ , and  $x\cdot y\in \langle n\rangle$ , but neither  $x$  or  $y$  are in  $\langle n\rangle$ .  
-17) Let  $I$  be a prime ideal, and suppose non-zero elements of  $R / I$  multiply to give the zero element, that is,  $(a + I) \cdot (b + I) = a \cdot b + I = I$ . Then  $a \cdot b \in I$ , so either  $a$  or  $b$  is in  $I$ , giving a contradiction. If  $I$  is not a prime ideal, there is an  $a$  and  $b$  not in  $I$  for which  $a \cdot b \in I$ . But then  $(a + I) \cdot (b + I) = I$ , so  $R / I$  has zero divisors.  
-19) If  $k \in K$  and  $a \in I$ ,  $a \cdot k \in K$  since  $K$  is an ideal of  $R$ , so  $K$  is an ideal of  $I$  as well. The mapping  $\phi: R / K \mapsto R / I$  given by  $\phi(x + K) = x + I$  is a homomorphism, whose image is all of  $x + I$ , and whose kernel is  $I / K$ . So  $I / K$  is an ideal of  $R / K$ , and be the first isomorphism theorem for rings (10.2),  $(R / K) / (I / K) \approx I / K$ .  
+7) Yes, since clearly  $\phi(x + y) = (x + y) \bmod 5 = \phi(x) + \phi(y)$ , and  $\phi(x \cdot y) = (x \cdot y) \bmod 5 = \phi(x) \cdot \phi(y)$ .
+9) No.  $0 = \phi (0) = \phi (1 + 1)\neq \phi (1) + \phi (1) = 2$
+11)  $\phi (x) + \phi (y) = a + c - (b + d)i = \phi (x + y),\phi (x)\cdot \phi (y) = (a - bi)(c - di) =$ $ac - bd - (bc + ad)i = \phi (x\cdot y).$
+13) If  $x^n = 0$ , then  $\phi(x)^n = \phi(x^n) = \phi(0) = 0$ , so  $\phi(x)$  is nilpotent.
+15) From Example 10.5, all ideals of  $\mathbb{Z}$  are of the form  $\langle n\rangle$ . If  $n$  is prime, then  $x\cdot y\in \langle n\rangle$  means  $x\cdot y$  is a multiple of  $n$ , which by Euclid's lemma (1.4) says either  $x$  or  $y$  is in  $\langle n\rangle$ , so  $\langle n\rangle$  is a prime ideal. If  $n$  is not prime, then  $n$  factors as  $x\cdot y$ , and  $x\cdot y\in \langle n\rangle$ , but neither  $x$  or  $y$  are in  $\langle n\rangle$ .
+17) Let  $I$  be a prime ideal, and suppose non-zero elements of  $R / I$  multiply to give the zero element, that is,  $(a + I) \cdot (b + I) = a \cdot b + I = I$ . Then  $a \cdot b \in I$ , so either  $a$  or  $b$  is in  $I$ , giving a contradiction. If  $I$  is not a prime ideal, there is an  $a$  and  $b$  not in  $I$  for which  $a \cdot b \in I$ . But then  $(a + I) \cdot (b + I) = I$ , so  $R / I$  has zero divisors.
+19) If  $k \in K$  and  $a \in I$ ,  $a \cdot k \in K$  since  $K$  is an ideal of  $R$ , so  $K$  is an ideal of  $I$  as well. The mapping  $\phi: R / K \mapsto R / I$  given by  $\phi(x + K) = x + I$  is a homomorphism, whose image is all of  $x + I$ , and whose kernel is  $I / K$ . So  $I / K$  is an ideal of  $R / K$ , and be the first isomorphism theorem for rings (10.2),  $(R / K) / (I / K) \approx I / K$ .
 21)
 
 $$
@@ -16263,27 +16263,27 @@ $$
 
 # Section 11.1
 
-1)  $b$  
-3)  $2ax^{2} + ax + b$  
-5)  $2ax^{3} + 2ax^{2} + bx$  
-7)  $x^{2} + (2 + 2i)x + 2i$  
-9)  $(1 + i)x^{2} + (2 + i)x + 1 + i$  
-11)  $2x^{3} + 2x^{2} + ix + 2i$  
+1)  $b$
+3)  $2ax^{2} + ax + b$
+5)  $2ax^{3} + 2ax^{2} + bx$
+7)  $x^{2} + (2 + 2i)x + 2i$
+9)  $(1 + i)x^{2} + (2 + i)x + 1 + i$
+11)  $2x^{3} + 2x^{2} + ix + 2i$
 13)  $D$  would have no zero divisors, so we can use Proposition 11.2, and the characteristic is a prime number  $p$ . Then the additive order of all non-zero elements is  $p$ .
 
 15)
 
 <table><tr><td>+</td><td>0 e a b</td></tr><tr><td>0</td><td>0 e a b</td></tr><tr><td>e</td><td>0 b a</td></tr><tr><td>a</td><td>0 b e</td></tr><tr><td>b</td><td>0 e 0</td></tr></table>
 
-17)  $0^3 = 0, 1^3 = 1, 2^3 = 2, i^3 = 2i, (2i)^3 = i, (1 + i)^3 = 1 + 2i, (2 + i)^3 = 2 + 2i,$ $(1 + 2i)^{3} = 1 + i, (2 + 2i)^{3} = 2 + i.$  
-19) The kernel of the homomorphism from Problem 18 is found by setting  $x^3 = 0$ . But since there are no zero-divisors, this can only happen if  $x = 0$ . Since the kernel is the trivial subring, the homomorphism is one-to-one.  
-21)  $x^{2} + 1, x^{2} + x + 2, x^{2} + 2x + 2, 2x^{2} + 2, 2x^{2} + x + 1, 2x^{2} + 2x + 1$ .  
-23)  $x^{3}, x^{3} + 1, x^{3} + x, x^{3} + x + 1, x^{3} + x^{2}, x^{3} + x^{2} + 1, x^{3} + x^{2} + x, x^{3} + x^{2} + x + 1.$  
+17)  $0^3 = 0, 1^3 = 1, 2^3 = 2, i^3 = 2i, (2i)^3 = i, (1 + i)^3 = 1 + 2i, (2 + i)^3 = 2 + 2i,$ $(1 + 2i)^{3} = 1 + i, (2 + 2i)^{3} = 2 + i.$
+19) The kernel of the homomorphism from Problem 18 is found by setting  $x^3 = 0$ . But since there are no zero-divisors, this can only happen if  $x = 0$ . Since the kernel is the trivial subring, the homomorphism is one-to-one.
+21)  $x^{2} + 1, x^{2} + x + 2, x^{2} + 2x + 2, 2x^{2} + 2, 2x^{2} + x + 1, 2x^{2} + 2x + 1$ .
+23)  $x^{3}, x^{3} + 1, x^{3} + x, x^{3} + x + 1, x^{3} + x^{2}, x^{3} + x^{2} + 1, x^{3} + x^{2} + x, x^{3} + x^{2} + x + 1.$
 25) All factorizations reveal triple roots. Reason: For real numbers,  $(x + y)^3 = x^3 + 3x^2y + 3xy^2 + y^3$ , but since we are working mod 3,  $(x + y)^3 = x^3 + y^3$ .
 
 # Section 11.2
 
-1)  $\left(\frac{-a}{b}\right) + \left(\frac{a}{b}\right) = \left(\frac{-a\cdot b + a\cdot b}{b^2}\right) = \left(\frac{0}{b^2}\right) = \left(\frac{0}{z}\right)$ .  
+1)  $\left(\frac{-a}{b}\right) + \left(\frac{a}{b}\right) = \left(\frac{-a\cdot b + a\cdot b}{b^2}\right) = \left(\frac{0}{b^2}\right) = \left(\frac{0}{z}\right)$ .
 3)  $\begin{array}{r}\left(\frac{u}{v}\right)\cdot \left(\left(\frac{x}{y}\right)\cdot \left(\frac{z}{w}\right)\right) = \left(\frac{u}{v}\right)\cdot \left(\frac{xz}{wy}\right) = \left(\frac{uxz}{vy}\right) = \left(\frac{ux}{vy}\right)\cdot \left(\frac{z}{w}\right) = \left(\left(\frac{u}{v}\right)\cdot \left(\frac{x}{y}\right)\right)\cdot \\ \left(\frac{z}{w}\right). \end{array}$
 
 5) Isomorphism given by  $0 \mapsto \{(0,1),(0,2),(0,3),(0,4\}$ ,
@@ -16292,13 +16292,13 @@ $$
 \begin{array}{l} 1 \mapsto \{(1, 1), (2, 2), (3, 3), (4, 4) \}, 2 \mapsto \{(2, 1), (4, 2), (1, 3), (3, 4) \}, \\ 3 \mapsto \{(3, 1), (1, 2), (4, 3), (2, 4) \}, 4 \mapsto \{(4, 1), (3, 2), (2, 3), (1, 4) \}. \\ \end{array}
 $$
 
-7) Every rational number  $p / q$  can be put in the form  $(2p) / (2q)$ , so there is a natural mapping from  $\mathbb{Q}$  to the quotient field.  
-9)  $((1 + i)x + i + 2)((1 + 2i)x + i) = (x + 1 + 2i)(2x + 2i) = 2x^2 + 2x + 2 + 2i.$  
-11)  $(x^{3} + x^{2} + 1) / (x^{4} + x)$  
-13)  $x^{2} / (x^{3} + 1)$  
-15)  $(x^{3} + x^{2}) / (x^{2} + x + 1)$  
-17)  $(x^{3} + x^{2}) / (x^{4} + x^{2} + 1)$  
-19) The square of every element is the same as replacing every  $x$  with  $x^2$ . Reason: because of Problem 9 of §9.3,  $\phi(x) = x^2$  is a ring homomorphism.  
+7) Every rational number  $p / q$  can be put in the form  $(2p) / (2q)$ , so there is a natural mapping from  $\mathbb{Q}$  to the quotient field.
+9)  $((1 + i)x + i + 2)((1 + 2i)x + i) = (x + 1 + 2i)(2x + 2i) = 2x^2 + 2x + 2 + 2i.$
+11)  $(x^{3} + x^{2} + 1) / (x^{4} + x)$
+13)  $x^{2} / (x^{3} + 1)$
+15)  $(x^{3} + x^{2}) / (x^{2} + x + 1)$
+17)  $(x^{3} + x^{2}) / (x^{4} + x^{2} + 1)$
+19) The square of every element is the same as replacing every  $x$  with  $x^2$ . Reason: because of Problem 9 of §9.3,  $\phi(x) = x^2$  is a ring homomorphism.
 21) Cross multiplying,  $(3x + 3a)(2x) = ((a + 1)x)((1 - a)x + 5 + a) = 6x^{2} + 6ax$ .
 
 # Section 11.3
@@ -16329,13 +16329,13 @@ $$
 
 by L'Hopital's rule.
 
-5)  $\ln 2 - \pi /6 + 2k\pi i$  , where  $k\in \mathbb{Z}$  
-7)  $\sqrt{2} / 2 \pm i\sqrt{2} / 2, -\sqrt{2} / 2 \pm i\sqrt{2} / 2.$  
-9)  $-2i, \pm \sqrt{3} + i$ .  
-11) ...,  $e^{-7\pi /4}$ ,  $e^{-3\pi /4}$ ,  $e^{\pi /4}$ ,  $e^{5\pi /4}$ ,  $e^{9\pi /4}$ , ...  
-13)  $(1)^{i\ln 2 / (2\pi)}$  
-15) From DeMoivre's theorem, all solutions  $z^n = 1$  are of the form  $z = \cos(2k\pi / n) + i\sin(2k\pi / n) = (\cos(2\pi / n) + i\sin(2\pi / n))^k$ . Thus,  $\omega_n$  generates the group. A generator of this group would be  $\omega_n^k$ , where  $k$  is coprime to  $n$ , hence a primitive  $n$ -th root of unity.  
-17) False:  $(2^{2})^{1 / 2} = 4^{1 / 2} = \pm 2$  , yet  $2^{(2\cdot 1 / 2)} = 2^1 = 2$  
+5)  $\ln 2 - \pi /6 + 2k\pi i$  , where  $k\in \mathbb{Z}$
+7)  $\sqrt{2} / 2 \pm i\sqrt{2} / 2, -\sqrt{2} / 2 \pm i\sqrt{2} / 2.$
+9)  $-2i, \pm \sqrt{3} + i$ .
+11) ...,  $e^{-7\pi /4}$ ,  $e^{-3\pi /4}$ ,  $e^{\pi /4}$ ,  $e^{5\pi /4}$ ,  $e^{9\pi /4}$ , ...
+13)  $(1)^{i\ln 2 / (2\pi)}$
+15) From DeMoivre's theorem, all solutions  $z^n = 1$  are of the form  $z = \cos(2k\pi / n) + i\sin(2k\pi / n) = (\cos(2\pi / n) + i\sin(2\pi / n))^k$ . Thus,  $\omega_n$  generates the group. A generator of this group would be  $\omega_n^k$ , where  $k$  is coprime to  $n$ , hence a primitive  $n$ -th root of unity.
+17) False:  $(2^{2})^{1 / 2} = 4^{1 / 2} = \pm 2$  , yet  $2^{(2\cdot 1 / 2)} = 2^1 = 2$
 19)
 
 $$
@@ -16358,31 +16358,31 @@ The following list not only gives the books and articles mentioned in the text b
 
 # Undergraduate textbooks on Abstract Algebra
 
-1. J. B. Fraleigh, A First Course in Abstract Algebra, 8th ed., Addison Wesley, Boston (2009).  
-2. J. A. Gallian, Contemporary Abstract Algebra, 8th ed., Houghton Mifflin, Boston (2013).  
-3. J. Gilbert and L. Gilbert, Elements of Modern Algebra, 8th ed., PWS Publishing Co., Boston (2014).  
-4. L. J. Goldstein, Abstract Algebra, A First Course, Prentice-Hall, Englewood Cliffs, New Jersey (1973).  
-5. I. N. Herstein, Abstract Algebra, Macmillan Publishing Company, New York (1986).  
-6. T. W. Hungerford, Abstract Algebra, An Introduction, Saunders College Publishing, Philadelphia (1990).  
+1. J. B. Fraleigh, A First Course in Abstract Algebra, 8th ed., Addison Wesley, Boston (2009).
+2. J. A. Gallian, Contemporary Abstract Algebra, 8th ed., Houghton Mifflin, Boston (2013).
+3. J. Gilbert and L. Gilbert, Elements of Modern Algebra, 8th ed., PWS Publishing Co., Boston (2014).
+4. L. J. Goldstein, Abstract Algebra, A First Course, Prentice-Hall, Englewood Cliffs, New Jersey (1973).
+5. I. N. Herstein, Abstract Algebra, Macmillan Publishing Company, New York (1986).
+6. T. W. Hungerford, Abstract Algebra, An Introduction, Saunders College Publishing, Philadelphia (1990).
 7. J. J. Rotman, A First Course in Abstract Algebra, Prentice-Hall, Upper Saddle River, New Jersey (1996).
 
 # Graduate textbooks on Abstract Algebra
 
-8. I. N. Herstein, Topics in Algebra, 2nd ed., Wiley, New York (1975).  
-9. J. F. Humphrey, A Course in Group Theory, Oxford University Press, Oxford (1996).  
+8. I. N. Herstein, Topics in Algebra, 2nd ed., Wiley, New York (1975).
+9. J. F. Humphrey, A Course in Group Theory, Oxford University Press, Oxford (1996).
 10. D. S. Malik, J. N. Mordeson, and M. K. Sen, Fundamentals of Abstract Algebra, McGraw-Hill, New York (1997).
 
 # Sources for historical information
 
-11. D. M. Burton, The History of Mathematics, An Introduction, 6th ed., McGraw-Hill, Boston (2007).  
+11. D. M. Burton, The History of Mathematics, An Introduction, 6th ed., McGraw-Hill, Boston (2007).
 12. J. H. Eves, An Introduction to the History of Mathematics, 6th ed., Saunders College Publishing, Fort Worth (1990).
 
 # Other sources
 
-13. J. H. Conway, R. T. Curtis, S. P. Norton, R. A. Parker, and R. A. Wilson, Atlas of Finite Groups, Clarendon Press, Oxford (1985).  
-14. The GAP Group, GAP Reference Manual, Release 4.4.12, http://www.gap-system.org.  
-15. I. S. Reed and G. Solomon, “Polynomial Codes over Certain Finite Fields,” SIAM Journal of Applied Math., 8 (1960) pp. 300–304.  
-16. "Reed-Solomon error correction," Wikipedia, the free encyclopedia, http://en.wikipedia.org.  
+13. J. H. Conway, R. T. Curtis, S. P. Norton, R. A. Parker, and R. A. Wilson, Atlas of Finite Groups, Clarendon Press, Oxford (1985).
+14. The GAP Group, GAP Reference Manual, Release 4.4.12, http://www.gap-system.org.
+15. I. S. Reed and G. Solomon, “Polynomial Codes over Certain Finite Fields,” SIAM Journal of Applied Math., 8 (1960) pp. 300–304.
+16. "Reed-Solomon error correction," Wikipedia, the free encyclopedia, http://en.wikipedia.org.
 17. W. Paulsen, “Calkin-Wilf Sequences for Irrational Numbers,” The Fibonacci Quarterly, 61:1 (2023) pp. 51-57.
 
 # Index
@@ -16599,51 +16599,51 @@ homomorphism
 
 of groups, 136, 143, 144, 145, 151, 169, 179, 222, 225, 227, 230, 365
 
-of rings, 317, 326, 327, 328, 329, 331, 333, 358  
-ideal, 309, 311, 312, 313, 329, 331 left, 315  
-idempotent, 298  
-identity,46,48,59,61,137,162 165，190，195，278，279 282，288，289，293，302  
-image, 140, 142, 144, 329  
-index of a subgroup, 102, 120, 156 of this book, 401  
-induction, 4, 15, 19, 62, 63, 74, 166, 169, 171, 200, 201, 205, 284, 298, 363  
-inverse, 46, 48, 57, 59, 279, 280, 293, 295, 296, 299, 353  
-invertible element, 59, 147, 279, 293, 295  
-irreducible element, 299  
-isomorphism of groups, 128, 135, 145, 146, 161, 196 of rings, 316, 317, 322 theorems, 145, 150, 154, 331, 335  
-Jordan-Hölder theorem, 262, 264  
-kernel, 141, 142, 143, 144, 179, 329, 330, 366  
-Kummer, Ernst, 314  
-Lagrange'stheorem,100,101,105 117，130,245  
-Latin square, 47, 64, 66, 82, 275  
-linear functions, 61, 121  
-logarithm (complex), 366, 369  
-modulo, 49, 55, 57, 59, 94, 108, 123, 275, 343, 346  
-mutually coprime, 33  
-nilpotent, 305, 315  
+of rings, 317, 326, 327, 328, 329, 331, 333, 358
+ideal, 309, 311, 312, 313, 329, 331 left, 315
+idempotent, 298
+identity,46,48,59,61,137,162 165，190，195，278，279 282，288，289，293，302
+image, 140, 142, 144, 329
+index of a subgroup, 102, 120, 156 of this book, 401
+induction, 4, 15, 19, 62, 63, 74, 166, 169, 171, 200, 201, 205, 284, 298, 363
+inverse, 46, 48, 57, 59, 279, 280, 293, 295, 296, 299, 353
+invertible element, 59, 147, 279, 293, 295
+irreducible element, 299
+isomorphism of groups, 128, 135, 145, 146, 161, 196 of rings, 316, 317, 322 theorems, 145, 150, 154, 331, 335
+Jordan-Hölder theorem, 262, 264
+kernel, 141, 142, 143, 144, 179, 329, 330, 366
+Kummer, Ernst, 314
+Lagrange'stheorem,100,101,105 117，130,245
+Latin square, 47, 64, 66, 82, 275
+linear functions, 61, 121
+logarithm (complex), 366, 369
+modulo, 49, 55, 57, 59, 94, 108, 123, 275, 343, 346
+mutually coprime, 33
+nilpotent, 305, 315
 Noether, Emmy, 281
 
-normal   
-closure,241,246,251   
-series,255,256,263 see also subnormal series   
-subgroup,116,118,121,121 122,124,141,143,146, 149,150,152,154,170, 180,182,196,217,223, 225,234,236,239,241, 244,246,247,249,254, 255,260,310  
-normalizer, 239, 240, 242, 243  
-octahedral group, 81, 82, 116, 122, 124, 124, 138, 152, 147, 160, 217  
-see also  $S_4$  
-order of a group, 61, 100, 102, 106, 128, 134, 175, 180, 207, 208  
-of an element, 70, 81, 82, 88, 94, 95, 101, 163, 172, 196, 283  
-ofaring,292,322,325  
-permutation, 78, 79, 157, 163, 165, 167, 173, 175, 211, 212, 219  
-see also  $S_{n}$  
-alternating, see even  
-even, 170, 172, 189, 266  
-see also  $A_{n}$  
-odd, 170, 189  
-ordering, 184, 185, 189, 219  
-PID, see principal ideal domain  
-pigeonhole principle, 16, 65, 107, 161, 322  
-polynomials, 144, 336, 337, 340, 345  
-prime element of a ring, 299, 335  
-factorization, 3, 110, 207  
+normal
+closure,241,246,251
+series,255,256,263 see also subnormal series
+subgroup,116,118,121,121 122,124,141,143,146, 149,150,152,154,170, 180,182,196,217,223, 225,234,236,239,241, 244,246,247,249,254, 255,260,310
+normalizer, 239, 240, 242, 243
+octahedral group, 81, 82, 116, 122, 124, 124, 138, 152, 147, 160, 217
+see also  $S_4$
+order of a group, 61, 100, 102, 106, 128, 134, 175, 180, 207, 208
+of an element, 70, 81, 82, 88, 94, 95, 101, 163, 172, 196, 283
+ofaring,292,322,325
+permutation, 78, 79, 157, 163, 165, 167, 173, 175, 211, 212, 219
+see also  $S_{n}$
+alternating, see even
+even, 170, 172, 189, 266
+see also  $A_{n}$
+odd, 170, 189
+ordering, 184, 185, 189, 219
+PID, see principal ideal domain
+pigeonhole principle, 16, 65, 107, 161, 322
+polynomials, 144, 336, 337, 340, 345
+prime element of a ring, 299, 335
+factorization, 3, 110, 207
 ideal, 335
 
 integer,1,3,4,72,94,108 109,110,182,201,313 341

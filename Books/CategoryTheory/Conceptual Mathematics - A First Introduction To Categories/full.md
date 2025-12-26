@@ -22,8 +22,8 @@ Acknowledgements xvii
 
 Session 1 Galileo and multiplication of objects 3
 
-1 Introduction 3  
-2 Galileo and the flight of a bird 3  
+1 Introduction 3
+2 Galileo and the flight of a bird 3
 3 Other examples of multiplication of objects 7
 
 # Part I The category of sets
@@ -36,9 +36,9 @@ Summary: Definition of category 21
 
 Session 2 Sets, maps, and composition 22
 
-1 Review of Article I 22  
-2 An example of different rules for a map 27  
-3 External diagrams 28  
+1 Review of Article I 22
+2 An example of different rules for a map 27
+3 External diagrams 28
 4 Problems on the number of maps from one set to another 29
 
 Session 3 Composing maps and counting maps 31
@@ -47,49 +47,49 @@ Session 3 Composing maps and counting maps 31
 
 Article II Isomorphisms 39
 
-1 Isomorphisms 39  
-2 General division problems: Determination and choice 45  
-3 Retractions, sections, and idempotents 49  
-4 Isomorphisms and automorphisms 54  
+1 Isomorphisms 39
+2 General division problems: Determination and choice 45
+3 Retractions, sections, and idempotents 49
+4 Isomorphisms and automorphisms 54
 5 Guide 58
 
 Summary: Special properties a map may have 59
 
 Session 4 Division of maps: Isomorphisms 60
 
-1 Division of maps versus division of numbers 60  
-2 Inverses versus reciprocals 61  
-3 Isomorphisms as 'divisors' 63  
+1 Division of maps versus division of numbers 60
+2 Inverses versus reciprocals 61
+3 Isomorphisms as 'divisors' 63
 4 A small zoo of isomorphisms in other categories 64
 
 Session 5 Division of maps: Sections and retractions 68
 
-1 Determination problems 68  
-2 A special case: Constant maps 70  
-3 Choice problems 71  
-4 Two special cases of division: Sections and retractions 72  
-5 Stacking or sorting 74  
+1 Determination problems 68
+2 A special case: Constant maps 70
+3 Choice problems 71
+4 Two special cases of division: Sections and retractions 72
+5 Stacking or sorting 74
 6 Stacking in a Chinese restaurant 76
 
 Session 6 Two general aspects or uses of maps 81
 
-1 Sorting of the domain by a property 81  
-2 Naming or sampling of the codomain 82  
+1 Sorting of the domain by a property 81
+2 Naming or sampling of the codomain 82
 3 Philosophical explanation of the two aspects 84
 
 Session 7 Isomorphisms and coordinates 86
 
-1 One use of isomorphisms: Coordinate systems 86  
+1 One use of isomorphisms: Coordinate systems 86
 2 Two abuses of isomorphisms 89
 
 Session 8 Pictures of a map making its features evident 91
 
 Session 9 Retracts and idempotents 99
 
-1 Retracts and comparisons 99  
-2 Idempotents as records of retracts 100  
-3 A puzzle 102  
-4 Three kinds of retract problems 103  
+1 Retracts and comparisons 99
+2 Idempotents as records of retracts 100
+3 A puzzle 102
+4 Three kinds of retract problems 103
 5 Comparing infinite sets 106
 
 Quiz 108
@@ -108,13 +108,13 @@ Test 1 119
 
 Session 10 Brouwer's theorems 120
 
-1 Balls, spheres, fixed points, and retractions 120  
-2 Digression on the contrapositive rule 124  
+1 Balls, spheres, fixed points, and retractions 120
+2 Digression on the contrapositive rule 124
 3 Brouwer's proof 124
 
-4 Relation between fixed point and retraction theorems 126  
-5 How to understand a proof: The objectification and 'mapification' of concepts 127  
-6 The eye of the storm 130  
+4 Relation between fixed point and retraction theorems 126
+5 How to understand a proof: The objectification and 'mapification' of concepts 127
+6 The eye of the storm 130
 7 Using maps to formulate guesses 131
 
 # Part III Categories of structured sets
@@ -123,33 +123,33 @@ Session 10 Brouwer's theorems 120
 
 Examples of categories 135
 
-1 The category  $\pmb{S}^{\circ}$  of endomaps of sets 136  
-2 Typical applications of  $\pmb{S}^{\circ}$  137  
-3 Two subcategories of  $\pmb{S}^{\circ}$  138  
-4 Categories of endomaps 138  
-5Irreflexive graphs 141  
-6 Endomaps as special graphs 143  
-7 The simpler category  $\pmb{S}^{!}$  : Objects are just maps of sets 144  
-8 Reflexive graphs 145  
-9 Summary of the examples and their general significance 146  
-10 Retractions and injectivity 146  
-11 Types of structure 149  
+1 The category  $\pmb{S}^{\circ}$  of endomaps of sets 136
+2 Typical applications of  $\pmb{S}^{\circ}$  137
+3 Two subcategories of  $\pmb{S}^{\circ}$  138
+4 Categories of endomaps 138
+5Irreflexive graphs 141
+6 Endomaps as special graphs 143
+7 The simpler category  $\pmb{S}^{!}$  : Objects are just maps of sets 144
+8 Reflexive graphs 145
+9 Summary of the examples and their general significance 146
+10 Retractions and injectivity 146
+11 Types of structure 149
 12 Guide 151
 
 # Session 11
 
 Ascending to categories of richer structures 152
 
-1 A category of richer structures: Endomaps of sets 152  
-2 Two subcategories: Idempotents and automorphisms 155  
+1 A category of richer structures: Endomaps of sets 152
+2 Two subcategories: Idempotents and automorphisms 155
 3 The category of graphs 156
 
 # Session 12
 
 Categories of diagrams 161
 
-1 Dynamical systems or automata 161  
-2 Family trees 162  
+1 Dynamical systems or automata 161
+2 Family trees 162
 3 Dynamical systems revisited 163
 
 # Session 13
@@ -166,22 +166,22 @@ Maps preserve positive properties 170
 
 Objectification of properties in dynamical systems 175
 
-1 Structure-preserving maps from a cycle to another endomap 175  
-2 Naming elements that have a given period by maps 176  
-3 Naming arbitrary elements 177  
-4 The philosophical role of  $N$  180  
+1 Structure-preserving maps from a cycle to another endomap 175
+2 Naming elements that have a given period by maps 176
+3 Naming arbitrary elements 177
+4 The philosophical role of  $N$  180
 5 Presentations of dynamical systems 182
 
 Session 16 Idempotents, involutions, and graphs 187
 
-1 Solving exercises on idempotents and involutions 187  
+1 Solving exercises on idempotents and involutions 187
 2 Solving exercises on maps of graphs 189
 
 Session 17 Some uses of graphs 196
 
-1 Paths 196  
-2 Graphs as diagram shapes 200  
-3 Commuting diagrams 201  
+1 Paths 196
+2 Graphs as diagram shapes 200
+3 Commuting diagrams 201
 4 Is a diagram a map? 203
 
 Test 2 204
@@ -192,13 +192,13 @@ Session 18 Review of Test 2 205
 
 Article IV Universal mapping properties 213
 
-1 Terminal objects 213  
-2 Separating 215  
-3 Initial object 215  
-4 Products 216  
-5 Commutative, associative, and identity laws for multiplication of objects 220  
-6 Sums 222  
-7 Distributive laws 222  
+1 Terminal objects 213
+2 Separating 215
+3 Initial object 215
+4 Products 216
+5 Commutative, associative, and identity laws for multiplication of objects 220
+6 Sums 222
+7 Distributive laws 222
 8 Guide 223
 
 Session 19 Terminal objects 225
@@ -209,14 +209,14 @@ Session 21 Products in categories 236
 
 Session 22 Universal mapping properties and incidence relations 245
 
-1 A special property of the category of sets 245  
-2 A similar property in the category of endomaps of sets 246  
-3 Incidence relations 249  
+1 A special property of the category of sets 245
+2 A similar property in the category of endomaps of sets 246
+3 Incidence relations 249
 4 Basic figure-types, singular figures, and incidence, in the category of graphs 250
 
 Session 23 More on universal mapping properties 254
 
-1 A category of pairs of maps 255  
+1 A category of pairs of maps 255
 2 How to calculate products 256
 
 # Contents
@@ -225,28 +225,28 @@ xi
 
 # Session 24 Uniqueness of products and definition of sum 261
 
-1 The terminal object as an identity for multiplication 261  
-2 The uniqueness theorem for products 263  
+1 The terminal object as an identity for multiplication 261
+2 The uniqueness theorem for products 263
 3 Sum of two objects in a category 265
 
 # Session 25 Labelings and products of graphs 269
 
-1 Detecting the structure of a graph by means of labelings 270  
-2 Calculating the graphs  $A\times Y$  273  
+1 Detecting the structure of a graph by means of labelings 270
+2 Calculating the graphs  $A\times Y$  273
 3 The distributive law 275
 
 # Session 26 Distributive categories and linear categories 276
 
-1 The standard map  $A\times B_1 + A\times B_2\longrightarrow A\times (B_1 + B_2)$  276  
-2 Matrix multiplication in linear categories 279  
-3 Sum of maps in a linear category 279  
+1 The standard map  $A\times B_1 + A\times B_2\longrightarrow A\times (B_1 + B_2)$  276
+2 Matrix multiplication in linear categories 279
+3 Sum of maps in a linear category 279
 4 The associative law for sums and products 281
 
 # Session 27 Examples of universal constructions 284
 
-1 Universal constructions 284  
-2 Can objects have negatives? 287  
-3 Idempotent objects 289  
+1 Universal constructions 284
+2 Can objects have negatives? 287
+3 Idempotent objects 289
 4 Solving equations and picturing maps 292
 
 # Session 28 The category of pointed sets 295
@@ -261,66 +261,66 @@ xi
 
 # Session 29 Binary operations and diagonal arguments 302
 
-1 Binary operations and actions 302  
+1 Binary operations and actions 302
 2 Cantor's diagonal argument 303
 
 # Part V Higher universal mapping properties
 
 # Article V Map objects 313
 
-1 Definition of map object 313  
-2 Distributivity 315  
-3 Map objects and the Diagonal Argument 316  
-4 Universal properties and 'observables' 316  
+1 Definition of map object 313
+2 Distributivity 315
+3 Map objects and the Diagonal Argument 316
+4 Universal properties and 'observables' 316
 5 Guide 319
 
 # Session 30 Exponentiation 320
 
 1 Map objects, or function spaces 320
 
-2 A fundamental example of the transformation of map objects 323  
-3 Laws of exponents 324  
+2 A fundamental example of the transformation of map objects 323
+3 Laws of exponents 324
 4 The distributive law in cartesian closed categories 327
 
 # Session 31 Map object versus product 328
 
-1 Definition of map object versus definition of product 329  
+1 Definition of map object versus definition of product 329
 2 Calculating map objects 331
 
 # Article VI The contravariant parts functor 335
 
-1 Parts and stable conditions 335  
+1 Parts and stable conditions 335
 2Inverse Images and Truth 336
 
 # Session 32 Subobject, logic, and truth 339
 
-1 Subobjects 339  
-2 Truth 342  
+1 Subobjects 339
+2 Truth 342
 3 The truth value object 344
 
 # Session 33 Parts of an object:Toposes 348
 
-1 Parts and inclusions 348  
+1 Parts and inclusions 348
 2 Toposes and logic 352
 
 # Article VII The Connected Components Functor 358
 
-1 Connectedness versus discreteness 358  
-2 The points functor parallel to the components functor 359  
+1 Connectedness versus discreteness 358
+2 The points functor parallel to the components functor 359
 3 The topos of right actions of a monoid 360
 
 # Session 34 Group theory and the number of types of connected objects 362
 
 # Session 35 Constants, codiscrete objects, and many connected objects 366
 
-1 Constants and codiscrete objects 366  
+1 Constants and codiscrete objects 366
 2 Monoids with at least two constants 367
 
 # Appendices 368
 
 # Appendix I Geometry of figures and algebra of functions 369
 
-1 Functors 369  
+1 Functors 369
 2 Geometry of figures and algebra of functions as categories themselves 370
 
 # Appendix II Adjoint functors with examples from graphs and dynamical systems 372
@@ -345,7 +345,7 @@ The appendices use examples from the text to sketch the role of adjoint functors
 
 Buffalo, January 8, 2009
 
-F. William Lawvere  
+F. William Lawvere
 Stephen H. Schanuel
 
 # Organisation of the book
@@ -514,7 +514,7 @@ One last picture, perhaps the simplest of all, hints at the relation to multipli
 
 ![](images/4319da28e648ab95990e714aaf3cc11e707b9ce865dfbc337117c7f15221a5c1.jpg)
 
-![](images/c568172a76144e20c8ac881774bd847a265bb42003c605441e99d55667c2b644.jpg)  
+![](images/c568172a76144e20c8ac881774bd847a265bb42003c605441e99d55667c2b644.jpg)
 Why does  $3 \times 2 = 6$ ?
 
 I hope these pictures seem suggestive to you. Our goal is to learn to use them as precise instruments of understanding and reasoning, not merely as intuitive guides.
@@ -569,8 +569,8 @@ Such a picture, labeled or not, is called an internal diagram of the set.
 
 A  $\boxed{\mathrm{map}} f$  in this category consists of three things:
 
-1. a set  $A$ , called the domain of the map,  
-2. a set  $B$ , called the codomain of the map,  
+1. a set  $A$ , called the domain of the map,
+2. a set  $B$ , called the codomain of the map,
 3. a rule assigning to each element  $a$  in the domain, an element  $b$  in the codomain. This  $b$  is denoted by  $f \circ a$  (or sometimes  $f(a)$ ), read  $f$  of  $a$ .
 
 (Other words for map are 'function', 'transformation', 'operator', 'arrow', and 'morphism').)
@@ -581,7 +581,7 @@ An example will probably make it clearer: Let  $A = \{John, Mary, Sam\}$ , and l
 
 This indicates that the favorite breakfast of John is eggs, written  $f(John) = \text{eggs}$ , while Mary and Sam prefer coffee. Note some peculiarities of the situation, because these are features of the internal diagram of any map:
 
-(a) From each dot in the domain (here  $\{John, Mary, Sam\}$ ), there is exactly one arrow leaving.  
+(a) From each dot in the domain (here  $\{John, Mary, Sam\}$ ), there is exactly one arrow leaving.
 (b) To a dot in the codomain (here {eggs, oatmeal, toast, coffee}), there may be any number of arrows arriving: zero or one or more.
 
 The important thing is: For each dot in the domain, we have exactly one arrow leaving, and the arrow arrives at some dot in the codomain.
@@ -694,27 +694,27 @@ Here are some pictures to illustrate these properties in the category of sets:
 
 1. The identity laws:
 
-![](images/7ba039a4f63a46889d75fb5bfde8e69222d8552821053041257fd7d8e29c23a6.jpg)  
+![](images/7ba039a4f63a46889d75fb5bfde8e69222d8552821053041257fd7d8e29c23a6.jpg)
 (a)
 
-![](images/e7e8131b8b2426aeef682b321f2693e97dd764d7ab1742d4832ad7069c25d19e.jpg)  
+![](images/e7e8131b8b2426aeef682b321f2693e97dd764d7ab1742d4832ad7069c25d19e.jpg)
 (b)
 
-![](images/a21308ba4d4a6d7e835a67782ab6d6de5a3a75e9bec8578d642a7f1753702863.jpg)  
+![](images/a21308ba4d4a6d7e835a67782ab6d6de5a3a75e9bec8578d642a7f1753702863.jpg)
 (i)
 
-![](images/570115e1f556db8e8166978e4529b06cecbffa23a1b4d5e2f076b1d35e937549.jpg)  
+![](images/570115e1f556db8e8166978e4529b06cecbffa23a1b4d5e2f076b1d35e937549.jpg)
 (ii)
 
 2. The associative law:
 
-![](images/46cf67f3f7eaa93b32d517a83899f596c8b81f46d13fe20d357b0a794f68b0bd.jpg)  
+![](images/46cf67f3f7eaa93b32d517a83899f596c8b81f46d13fe20d357b0a794f68b0bd.jpg)
 (iii)
 
-![](images/87cfe64172b7307ed60085352e81725855f9f387d6cbd22ed79560945eacb572.jpg)  
+![](images/87cfe64172b7307ed60085352e81725855f9f387d6cbd22ed79560945eacb572.jpg)
 (iv)
 
-![](images/9f932c44553b4f636fa128075523989d7756b28c6bf01cb697f0beec166ad4f9.jpg)  
+![](images/9f932c44553b4f636fa128075523989d7756b28c6bf01cb697f0beec166ad4f9.jpg)
 (v)
 
 ![](images/740ea945c71095ac4d8531b252ce6fac5f32ff3af452c6f454c967459b8aae57.jpg)
@@ -803,15 +803,15 @@ Our discussion of maps of sets has led us to the general definition of category,
 
 # A category consists of the DATA:
 
-(1) OBJECTS  
-(2) MAPS  
-(3) For each map  $f$ , one object as DOMAIN of  $f$  and one object as CODOMAIN of  $f$  
-(4) For each object  $A$  an IDENTITY MAP, which has domain  $A$  and codomain  $A$  
+(1) OBJECTS
+(2) MAPS
+(3) For each map  $f$ , one object as DOMAIN of  $f$  and one object as CODOMAIN of  $f$
+(4) For each object  $A$  an IDENTITY MAP, which has domain  $A$  and codomain  $A$
 (5) For each pair of maps  $A \xrightarrow{f} B \xrightarrow{g} C$ , a COMPOSITE MAP  $A \xrightarrow{g \text{ following } f} C$
 
 # satisfying the following RULES:
 
-(i) IDENTITY LAWS: If  $A \xrightarrow{f} B$ , then  $1_B \circ f = f$  and  $f \circ 1_A = f$  
+(i) IDENTITY LAWS: If  $A \xrightarrow{f} B$ , then  $1_B \circ f = f$  and  $f \circ 1_A = f$
 (ii) ASSOCIATIVE LAW: If  $A \xrightarrow{f} B \xrightarrow{g} C \xrightarrow{h} D$ , then  $(h \circ g) \circ f = h \circ (g \circ f)$
 
 ... with corresponding notation
@@ -858,8 +858,8 @@ Other words that mean the same as function and map are transformation, operator,
 
 As the internal diagram suggests, to have a map  $f$  of sets involves three things:
 
-1. a set  $A$ , called the domain of the map  $f$ ;  
-2. a set  $B$ , called the codomain of the map  $f$ ; and then the main ingredient:  
+1. a set  $A$ , called the domain of the map  $f$ ;
+2. a set  $B$ , called the codomain of the map  $f$ ; and then the main ingredient:
 3. a rule (or process) for  $f$ , assigning to each element of the domain  $A$  exactly one element of the codomain  $B$ .
 
 That is a fairly accurate description of what a map is, but we also need a means to tell when two different rules give the same map. Here is an example. The first map will be called  $f$  and has as domain and as codomain the set of all natural numbers. The rule for  $f$  will be: 'add 1 and then square'. (This can be written in mathematical shorthand as  $f(x) = (x + 1)^2$ , but that is not important for our discussion.) Part of the internal picture of  $f$  is:
@@ -876,7 +876,7 @@ the same as for  $f$ . Not only that, you can check with any number you like and
 
 In categories other than the category of sets, 'a map from  $A$  to  $B$ ' is typically some sort of 'process for getting from  $A$  to  $B$ ', so that in any category, maps  $f$  and  $g$  are not considered the same unless they have at least the properties:
 
-1.  $f$  and  $g$  have the same domain, say  $A$ , and  
+1.  $f$  and  $g$  have the same domain, say  $A$ , and
 2.  $f$  and  $\pmb{g}$  have the same codomain, say  $\pmb{B}$ .
 
 Of course, there may be many different maps from  $A$  to  $B$ , so that these two properties alone do not guarantee that  $f$  and  $g$  are the same map. If we recall that a point of a set  $A$  is a map from a singleton set  $\mathbf{1}$  to  $A$ , we see that there is a simple test for equality of maps of sets  $A \xrightarrow{f} B$  and  $A \xrightarrow{g} B$ :
@@ -1095,7 +1095,7 @@ This diagram, as we said in last session, can itself be regarded as a rule to ca
 
 is just a simplified rule to calculate the same map. If we do the same thing with  $h$  and  $k$ , we can pass by steps from
 
-![](images/f90b0973c5e7ff1e905e8d29b7592676318211a0efd1399c5c27bbafbdc7605c.jpg)  
+![](images/f90b0973c5e7ff1e905e8d29b7592676318211a0efd1399c5c27bbafbdc7605c.jpg)
 to
 
 ![](images/278301cbf16ccb7e1a57d00de82944f8fcdba7a07603a4bd63e276c303582434.jpg)
@@ -1222,10 +1222,10 @@ Do Exercise 1 again, first drawing this diagram:
 
 Now just read each expression from right to left; so (a) is  $f$  then  $g$  then  $h$  then  $k$ . As you read, follow the arrows in the diagram with your finger, like this:
 
-![](images/b193189589b5d8282d53096c9752186e48f378843dafc1fb5dfa43167cb4d6b2.jpg)  
+![](images/b193189589b5d8282d53096c9752186e48f378843dafc1fb5dfa43167cb4d6b2.jpg)
 C
 
-![](images/c96ca182e3d08952ae9e691819c808796d5c53f8086368190504e3ad4a511c86.jpg)  
+![](images/c96ca182e3d08952ae9e691819c808796d5c53f8086368190504e3ad4a511c86.jpg)
 C
 
 ![](images/e4b530a38c129c5f063ca33586aa37a7bce90dceb011476051d24eaf05f718c4.jpg)
@@ -1302,8 +1302,8 @@ Surprisingly, all these properties come directly from the associative and identi
 
 # Exercise 1:
 
-(R) Show that  $A \xrightarrow{l_A} A$  is an isomorphism. (Hint: find an inverse for  $l_{A}$ .)  
-(S) Show that if  $A \xrightarrow{f} B$  is an isomorphism, and  $B \xrightarrow{g} A$  is an inverse for  $f$ , then  $g$  is also an isomorphism. (Hint: find an inverse for  $g$ .)  
+(R) Show that  $A \xrightarrow{l_A} A$  is an isomorphism. (Hint: find an inverse for  $l_{A}$ .)
+(S) Show that if  $A \xrightarrow{f} B$  is an isomorphism, and  $B \xrightarrow{g} A$  is an inverse for  $f$ , then  $g$  is also an isomorphism. (Hint: find an inverse for  $g$ .)
 (T) Show that if  $A \xrightarrow{f} B$  and  $B \xrightarrow{k} C$  are isomorphisms,  $A \xrightarrow{k \circ f} C$  is also an isomorphism.
 
 These exercises show that the three properties listed before them are correct, but the exercises are more explicit: solving them tells you not just that certain maps have inverses, but how actually to find the inverses.
@@ -1378,7 +1378,7 @@ $$
 
 If  $f$  has an inverse, then  $f$  satisfies the two cancellation laws:
 
-(a) If  $f \circ h = f \circ k$ , then  $h = k$ .  
+(a) If  $f \circ h = f \circ k$ , then  $h = k$ .
 (b) If  $h \circ f = k \circ f$ , then  $h = k$ .
 
 Warning: The following 'cancellation law' is not correct, even if  $f$  has an inverse.
@@ -1417,10 +1417,10 @@ Part (b) you should now be able to do yourself. Part (c), though, is a different
 
 Here are some exercises with sets of numbers.  $\mathbb{R}^{\prime}$  stands for the set of all (real) numbers;  $\mathbb{R}_{\geq 0}$  for all the (real) numbers that are  $\geq 0$ . To describe a map with an infinite set, like  $\mathbb{R}$ , as domain, it is not possible to list the output of  $f$  for each input in the domain, so we typically use formulas. For instance:
 
-1.  $\mathbb{R}\xrightarrow{f}\mathbb{R}$ $f(x) = 3x + 7$  
-2.  $\mathbb{R}_{\geq 0}\xrightarrow{g}\mathbb{R}_{\geq 0}$ $g(x) = x^{2}$  
-3.  $\mathbb{R}\xrightarrow{h}\mathbb{R}$ $h(x) = x^{2}$  
-4.  $\mathbb{R}\xrightarrow{k}\mathbb{R}_{\geq 0}$ $k(x) = x^{2}$  
+1.  $\mathbb{R}\xrightarrow{f}\mathbb{R}$ $f(x) = 3x + 7$
+2.  $\mathbb{R}_{\geq 0}\xrightarrow{g}\mathbb{R}_{\geq 0}$ $g(x) = x^{2}$
+3.  $\mathbb{R}\xrightarrow{h}\mathbb{R}$ $h(x) = x^{2}$
+4.  $\mathbb{R}\xrightarrow{k}\mathbb{R}_{\geq 0}$ $k(x) = x^{2}$
 5.  $\mathbb{R}_{\geq 0}\stackrel {l}{\longrightarrow}\mathbb{R}_{\geq 0}$ $l(x) = \frac{1}{x + 1}$
 
 # Exercise 4:
@@ -1809,8 +1809,8 @@ Summary: Special properties a map  $\boxed{A \xrightarrow{f} B}$  may have.
 
 # 1. Division of maps versus division of numbers
 
-Numbers  
-Maps  
+Numbers
+Maps
 
 <table><tr><td>multiplication</td><td>composition</td></tr><tr><td>division</td><td>?</td></tr></table>
 
@@ -2036,11 +2036,11 @@ We should also get some experience in recognizing when something is not an isomo
 
 An unscrupulous importer has sold to the algebraic category section of our zoo some creatures which are not isomorphisms. Unmask the impostors.
 
-(a)  $(\mathbb{R}, + )\xrightarrow{p}(\mathbb{R}, + )$  by  $\text{plus} 1^{\prime}\colon p x = x + 1.$  
-(b)  $(\mathbb{R},\times)\xrightarrow{sq}(\mathbb{R},\times)$  by 'squaring':  $sqx = x^2$  
-(c)  $(\mathbb{R},\times)\xrightarrow{sq}(\mathbb{R}_{\geqslant 0},\times)$  by 'squaring':  $s q x = x^{2}$  
-(d)  $(\mathbb{R}, + )\xrightarrow{m}(\mathbb{R}, + )$  by 'minus':  $mx = -x$  
-(e)  $(\mathbb{R},\times)\xrightarrow{m}(\mathbb{R},\times)$  by 'minus':  $mx = -x$  
+(a)  $(\mathbb{R}, + )\xrightarrow{p}(\mathbb{R}, + )$  by  $\text{plus} 1^{\prime}\colon p x = x + 1.$
+(b)  $(\mathbb{R},\times)\xrightarrow{sq}(\mathbb{R},\times)$  by 'squaring':  $sqx = x^2$
+(c)  $(\mathbb{R},\times)\xrightarrow{sq}(\mathbb{R}_{\geqslant 0},\times)$  by 'squaring':  $s q x = x^{2}$
+(d)  $(\mathbb{R}, + )\xrightarrow{m}(\mathbb{R}, + )$  by 'minus':  $mx = -x$
+(e)  $(\mathbb{R},\times)\xrightarrow{m}(\mathbb{R},\times)$  by 'minus':  $mx = -x$
 $(f)(\mathbb{R},\times)\xrightarrow{c}(\mathbb{R}_{>0},\times)$  by 'cubing':  $cx = x^3$
 
 Hints: Exactly one is genuine. Some of the cruder impostors fail to be maps in our category, i.e. don't respect the combining-rules. The crudest is not even a map of sets with the indicated domain and codomain.
@@ -2051,7 +2051,7 @@ nourish the roots you will be surprised how far the branches extend. For now, th
 
 In geometry, a significant role is played by 'Euclid's category.' An object is any polygonal figure which can be drawn in the plane, and a map from a figure  $F$  to a figure  $F'$  is any map  $f$  of sets which 'preserves distances': if  $p$  and  $q$  are points of  $F$ , the distance from  $fp$  to  $fq$  (in  $F'$ ) is the same as the distance from  $p$  to  $q$ . (Roughly, the effect of this restriction on the maps is to ensure that if  $F$  were made of some perfectly rigid material you could pick it up and put it down again precisely onto the space occupied by  $F'$ ; but notice that any idea of actually moving  $F$  is not part of the definition.) Objects which are isomorphic in this category are called by Euclid 'congruent' figures. Here is an example.
 
-![](images/1b500556c427fc23c436b284fb146afa2a5df80dec7984c0bcbd106cfc5369ba.jpg)  
+![](images/1b500556c427fc23c436b284fb146afa2a5df80dec7984c0bcbd106cfc5369ba.jpg)
 Isomorphic objects in Euclid's category
 
 Do you see what the map  $f$  is, and what its inverse is? If so, you should be able to locate  $fr$  and  $s$  in the picture. We might enlarge Euclid's category to include solid figures, and to allow curved boundaries. Then if you are perfectly symmetric, your left hand is isomorphic to your right hand when you stand at attention, and your twin's right hand is isomorphic to both of these.
@@ -2150,7 +2150,7 @@ As with the determination problem (Exercise 1), there is a criterion for the exi
 
 # Exercise 2:
 
-(a) Show that if there is an  $f$  with  $g \circ f = h$ , then  $h$  and  $g$  satisfy: For any  $a$  in  $A$  there is at least one  $b$  in  $B$  for which  $h(a) = g(b)$ .  
+(a) Show that if there is an  $f$  with  $g \circ f = h$ , then  $h$  and  $g$  satisfy: For any  $a$  in  $A$  there is at least one  $b$  in  $B$  for which  $h(a) = g(b)$ .
 (b) Does the converse hold? That is, if  $h$  and  $g$  satisfy the condition above, must there be a map  $f$  with  $h = g \circ f$ ?
 
 # 4. Two special cases of division: Sections and retractions
@@ -2185,17 +2185,17 @@ OMER: For the identity map it seems that the order should not matter, or should 
 
 I'm glad you asked, because it is easy to make this mistake, and we should clear it up so that we will have it all neatly organized. Let's compare a choice problem for the identity map, which we just looked at, with a determination problem for the identity map. It's clearer if we don't give the sets and maps any names (since every time you use these ideas the maps involved may have different names) and just draw the schematic external diagrams:
 
-![](images/2ee4667f81a430428ba3486079c83bd63a0be6886bc9d4b267ce1aef13211f13.jpg)  
+![](images/2ee4667f81a430428ba3486079c83bd63a0be6886bc9d4b267ce1aef13211f13.jpg)
 choice
 
-![](images/8ffc0506de5ead018993929f55830846833113b00dfbedc1d4d9ad4747efa898.jpg)  
+![](images/8ffc0506de5ead018993929f55830846833113b00dfbedc1d4d9ad4747efa898.jpg)
 determination
 
 You can see why confusion might arise; the only difference is which map is regarded as given. Let's review.
 
 Say  $A \xrightarrow{f} B$  is a map.
 
-(a) A section of  $f$  is any map  $s$  such that  $f \circ s = l_B$ .  
+(a) A section of  $f$  is any map  $s$  such that  $f \circ s = l_B$ .
 (b) A retraction of  $f$  is any map  $r$  such that  $r \circ f = l_A$ .
 
 Comparing the definitions, we see that a section of  $f$  is not the same as a retraction of  $f$ . The symmetry comes in noticing that a single relationship between two maps can be described in two ways: if  $g \circ f$  is an identity map we can either say that  $g$  is a retraction of  $f$  or that  $f$  is a section of  $g$ . The relationship among maps of 'section' to 'retraction' is nearly the same as the relationship among women of 'aunt' to 'niece'. Just be careful not to use these words in isolation. You cannot ask whether a map is
@@ -2546,22 +2546,22 @@ FATIMA: They must have the same domain and the same codomain.
 
 So, you are saying:
 
-1. the domain of  $g \circ f$  must be the same as the domain of  $1_{\{0,1\}}$ , and  
+1. the domain of  $g \circ f$  must be the same as the domain of  $1_{\{0,1\}}$ , and
 2. the codomain of  $g \circ f$  must be the same as the codomain of  $1_{\{0,1\}}$ .
 
 Is that all? No. Let's review our test for equality of maps of sets. A map of sets  $f \colon X \longrightarrow Y$  is specified by a rule which to each element of  $X$  (the domain of  $f$ ) assigns exactly one element of  $Y$  (the codomain of  $f$ ). The question is: If we have two rules,
 
 when do we say that they specify the same map? Let's call these two rules  $h$  and  $k$ . In order to verify that  $h = k$  you have to check that for each particular input you get the same output with both rules. In summary: to say  $h = k$  means three things:
 
-1. the domain of  $h$  is the same as the domain of  $k$ .  
-2. the codomain of  $h$  equals the codomain of  $k$ , and most importantly,  
+1. the domain of  $h$  is the same as the domain of  $k$ .
+2. the codomain of  $h$  equals the codomain of  $k$ , and most importantly,
 3. for each  $x$  in the domain of  $h$  and  $k$ , we must have  $h(x) = k(x)$ .
 
 In the third condition, the number of things one has to check is equal to the number of elements of the domain, because the condition has to be checked for each element of the domain.
 
 So, let's see:  $f$  goes from  $B$  to  $A$ , and  $g$  goes from  $A$  to  $B$ , so  $g \circ f$  goes from  $B$  to  $B$ , and  $1_{\{0,1\}}$  also goes from  $B = \{0,1\}$  to  $B$ . So we do have
 
-1. the domain of  $g \circ f$  is  $B = \{0, 1\}$ , which equals the domain of  $I_{\{0,1\}}$ , and  
+1. the domain of  $g \circ f$  is  $B = \{0, 1\}$ , which equals the domain of  $I_{\{0,1\}}$ , and
 2. the codomain of  $g \circ f$  is  $B = \{0,1\}$ , the same as the codomain of  $I_{\{0,1\}}$ .
 
 All this writing is really not necessary, though. You can see directly from the diagram with the arrows  $f$  and  $g$  going back and forth between  $A$  and  $B$  that (1) and (2) are true. When you get used to this, conditions (1) and (2) aren't much of a fuss because you won't even ask if two maps are equal if they don't have the same domain and codomain. It is like asking whether two travellers followed the same route; you wouldn't ask the question if one of them travelled from Berlin to Paris and the other from New York to Boston.
@@ -2770,7 +2770,7 @@ Definition:  $A$  is a retract of  $B$  means that there are maps  $A \xrightarr
 
 (In any category) Show that
 
-(R)  $A\leq_{\mathbb{R}}A$  
+(R)  $A\leq_{\mathbb{R}}A$
 (T) If  $A \leq_{\mathbb{R}} B$  and  $B \leq_{\mathbb{R}} C$  then  $A \leq_{\mathbb{R}} C$ .
 
 Hint: You already proved (T) when you proved that if a composable pair of maps each has a retraction, then so does their composite.
@@ -2913,14 +2913,14 @@ The expression 'each set is number' refers to the attitude toward sets in genera
 
 1. Give an example of two explicit sets  $A$  and  $B$  and an explicit map  $A \xrightarrow{f} B$  satisfying both:
 
-(a) there is a retraction for  $f$ , and  
+(a) there is a retraction for  $f$ , and
 (b) there is no section for  $f$ .
 
 Then explain how you know that  $f$  satisfies (a) and (b).
 
 2. If  $C \xrightarrow{p} D$  satisfy  $p \circ q \circ p = p$ , can you conclude that
 
-(a)  $p\circ q$  is idempotent? If so, how?  
+(a)  $p\circ q$  is idempotent? If so, how?
 (b)  $q\circ p$  is idempotent? If so, how?
 
 # Optional questions
@@ -3181,9 +3181,9 @@ In fact for these two maps  $f \circ g \circ f \circ x \neq f \circ x$  for ever
 
 Fill in the blanks; when vs? occurs, cross out the false alternative
 
-1. Given two maps  $f, g$  with domains and codomains as above, we can (sometimes [vs?] always) form the composites  $g \circ f$  and  $f \circ g$ . All we can say about  $g \circ f$  and  $f \circ g$  as maps in themselves is that they are  
-2. If we know that  $g$  is a retraction for  $f$ , that means  $g \circ f$  is actually; then we can prove that  $f \circ g$  is not only an, but actually an. The latter means that the equation is true.  
-3. If we even know that  $f$  is an isomorphism and that  $g \circ f = 1_A$ , then  $f \circ g$  is not only an idempotent, but is ________. If, moreover,  $s$  is a map for which  $f \circ s = 1_B$ , we can conclude that  $s =$  ________.  
+1. Given two maps  $f, g$  with domains and codomains as above, we can (sometimes [vs?] always) form the composites  $g \circ f$  and  $f \circ g$ . All we can say about  $g \circ f$  and  $f \circ g$  as maps in themselves is that they are
+2. If we know that  $g$  is a retraction for  $f$ , that means  $g \circ f$  is actually; then we can prove that  $f \circ g$  is not only an, but actually an. The latter means that the equation is true.
+3. If we even know that  $f$  is an isomorphism and that  $g \circ f = 1_A$ , then  $f \circ g$  is not only an idempotent, but is ________. If, moreover,  $s$  is a map for which  $f \circ s = 1_B$ , we can conclude that  $s =$  ________.
 4. Going back to 0, i.e. assuming no equations, but only the domain and codomain statements about  $f$  and  $g$ , the composite  $f \circ g \circ f$  (could be different from  $\boxed{\mathbf{vs}?}$  must be the same as)  $f$ . Likewise  $f \circ g \circ f \circ g$  (could be different from  $\boxed{\mathbf{vs}?}$  must be the same as)  $f \circ g$ .
 
 # Summary: On the equation  $p \circ j = I_A$
@@ -3206,8 +3206,8 @@ We will see more consequences later.
 
 # In the category of finite sets
 
-(1)  $p$  satisfies: for each member  $a$  of  $A$ , there is at least one member  $x$  of  $X$  for which  $p(x) = a$ ; (We say  $p$  is surjective.)  
-(2)  $j$  satisfies: if  $j(a_{1}) = j(a_{2})$ , then  $a_{1} = a_{2}$ ; (We say  $j$  is injective.)  
+(1)  $p$  satisfies: for each member  $a$  of  $A$ , there is at least one member  $x$  of  $X$  for which  $p(x) = a$ ; (We say  $p$  is surjective.)
+(2)  $j$  satisfies: if  $j(a_{1}) = j(a_{2})$ , then  $a_{1} = a_{2}$ ; (We say  $j$  is injective.)
 (3)  $\# A \leq \# X$ , and if  $\# A = 0$ , then  $\# X = 0$  too!
 
 # Problems involving the equation  $(^{*})$  : (four types)
@@ -3320,10 +3320,10 @@ The only idempotent which has an inverse is an identity map. Every involution ha
 
 ![](images/4bc5198b717d333608cba27429a5ad0ebfc4504eadef4687ea2c960cf8d8cae6.jpg)
 
-(a) Find an invertible map  $A \xrightarrow{f} A$ , different from the identity map  $I_A$ .  
+(a) Find an invertible map  $A \xrightarrow{f} A$ , different from the identity map  $I_A$ .
 (b) Find an idempotent map  $A \xrightarrow{e} A$ , different from the identity map  $I_A$ .
 
-(Draw the 'special internal diagrams' of your maps  $f$  and  $e$  - the diagrams that are available only for endomaps.)  
+(Draw the 'special internal diagrams' of your maps  $f$  and  $e$  - the diagrams that are available only for endomaps.)
 (c) Find another set  $B$  and two maps
 
 $$
@@ -3336,7 +3336,7 @@ for which  $r\circ s = l_B$  and  $s\circ r = e$
 
 2.  $\mathbb{R}$  is the set of all real numbers, and  $\mathbb{R} \xrightarrow{f} \mathbb{R}$  is the map given by the explicit formula  $f(x) = 4x - 7$  for each input  $x$ . Show that  $f$  has an inverse map. To do this, give an explicit formula for the inverse map  $g$ , and then show that
 
-(a)  $(g\circ f)(x) = x$  for each real number  $x$  , and that  
+(a)  $(g\circ f)(x) = x$  for each real number  $x$  , and that
 (b)  $(f\circ g)(x) = x$  for each real number  $x$
 
 # SESSION 10
@@ -3529,8 +3529,8 @@ Brouwer introduces in his proof, besides the sphere  $S$  and ball  $B$  and the
 
 To analyze his proof, then, we must bring these concepts into our category  $\pmb{\mathcal{C}}$ . This means that we will need:
 
-1. an object  $A$  (whose points are the arrows in  $B$ );  
-2. a map  $A \xrightarrow{h} B$  (assigning to each arrow its head); and  
+1. an object  $A$  (whose points are the arrows in  $B$ );
+2. a map  $A \xrightarrow{h} B$  (assigning to each arrow its head); and
 3. a map  $A \xrightarrow{p} S$  (telling where each arrow points).
 
 (Remember that a map in  $\mathcal{C}$  means a 'continuous' map, so that any map obtained by composing maps in  $\mathcal{C}$  will automatically be continuous.)
@@ -3625,9 +3625,9 @@ My travel gives an additional map:  $I \xrightarrow{m} R$ , and your travel give
 
 # Exercise 4:
 
-(a) Express the restrictions given above on my travel and yours by equations involving composition of maps, introducing other objects and maps as needed.  
-(b) Formulate the conclusion that at some time we meet, in terms of composition of maps. (You will need to introduce the object 1.)  
-(c) Guess a stronger version of Brouwer's fixed point theorem in two dimensions, by replacing  $E$ ,  $I$ , and  $R$  by the circle, disk, and plane. (You can do it in three dimensions too, if you want.)  
+(a) Express the restrictions given above on my travel and yours by equations involving composition of maps, introducing other objects and maps as needed.
+(b) Formulate the conclusion that at some time we meet, in terms of composition of maps. (You will need to introduce the object 1.)
+(c) Guess a stronger version of Brouwer's fixed point theorem in two dimensions, by replacing  $E$ ,  $I$ , and  $R$  by the circle, disk, and plane. (You can do it in three dimensions too, if you want.)
 (d) Try to test your guess in (c); e.g. try to invent maps for which your conjectured theorem is not true.
 
 # PART III
@@ -3642,13 +3642,13 @@ Directed graphs and other structures
 
 We recall from Session 10:
 
-1. Given an endomap of the ball with no fixed point, we can construct a retraction of the ball to its boundary.  
+1. Given an endomap of the ball with no fixed point, we can construct a retraction of the ball to its boundary.
 2. Brouwer proved that no such retraction is possible.
 
-We deduced by pure logic:  
+We deduced by pure logic:
 3. Every endomap of a ball has a fixed point.
 
-We saw further that:  
+We saw further that:
 4. The sphere and the ball cannot be isomorphic (since the sphere does have a fixed point free endomap, for example, its antipodal map.)
 
 It is critical that the category which we were discussing is not the category of abstract sets and arbitrary functions; it must rather be some
@@ -4031,8 +4031,8 @@ is an automorphism would be wrong, since  $\mathbb{Z}$  doesn't have fractions i
 
 There is an 'inclusion' map  $\mathbb{Z} \xrightarrow{f} \mathbb{Q}$  in  $\pmb{S}$  for which
 
-1.  $\boxed{\mathbb{Z}^{5\times ()}}\xrightarrow{f}\boxed{\mathbb{Q}^{5\times ()}}$  is a map in  $s^0$  , and  
-2.  $\mathbb{Q}^{5\times ()}$  is an automorphism, and  
+1.  $\boxed{\mathbb{Z}^{5\times ()}}\xrightarrow{f}\boxed{\mathbb{Q}^{5\times ()}}$  is a map in  $s^0$  , and
+2.  $\mathbb{Q}^{5\times ()}$  is an automorphism, and
 3.  $f$  is injective.
 
 Find the  $f$  and prove the three statements.
@@ -4055,8 +4055,8 @@ If  $X^{\ominus \alpha}$  is any object of  $S^{\ominus}$  for which there exist
 
 A type of structure can be specified by giving the following ingredients:
 
-1. a set of names (perhaps more than one or two) for the objects we expect as components of each single structure of the type;  
-2. another set of names for the crucial structural maps that must be specified to determine any single structure of the type; and  
+1. a set of names (perhaps more than one or two) for the objects we expect as components of each single structure of the type;
+2. another set of names for the crucial structural maps that must be specified to determine any single structure of the type; and
 3. the specification of which structural component object is required to be the domain and codomain of each structural map, but in terms of the abstract names.
 
 Each concrete structure of the type is required to have its structural maps conform to the abstract specification. For example, discrete dynamical systems have one component object of 'states' and one structural map, the 'dynamic', whereas graphs have two component objects 'arrows' and 'dots' and two structural maps 'source' and 'target.' Reflexive graphs have three structural maps. Our discussion of kinship systems involves also component sets and structural maps. (Note that an abstract specification of a type of structure can itself be considered a graph - see Session 17.)
@@ -4279,7 +4279,7 @@ $$
 
 These equations can be remembered by drawing this diagram:
 
-![](images/27e280944f9aa575f7ee8429d51d19e9ca0d0c8ff16ef4165863a84fb263bb74.jpg)  
+![](images/27e280944f9aa575f7ee8429d51d19e9ca0d0c8ff16ef4165863a84fb263bb74.jpg)
 and
 
 Given two maps in  $\pmb{S}^{\downarrow \downarrow}$
@@ -4306,7 +4306,7 @@ In what sense is it meant that  $\pmb{S}^{\ominus}$  is a subcategory of  $\pmb{
 
 ![](images/00910fabfae621a0438c9c43d8a194179e7d0c70e3bb8a1fbf506548327130f9.jpg)
 
-![](images/5dfbea3edaef8c76b2a79a6cd68c1d3cfec63ce204d155fc46d7ed760af071ac.jpg)  
+![](images/5dfbea3edaef8c76b2a79a6cd68c1d3cfec63ce204d155fc46d7ed760af071ac.jpg)
 and in this correspondence
 
 The next four exercises concern isomorphisms in  $\pmb{S}^{\circ}$
@@ -4361,7 +4361,7 @@ If these two graphs are isomorphic, find an isomorphism between them; if they ar
 
 $G$  is any graph, and  $b$  and  $e$  are dots of  $G$ .
 
-(a) Suppose that  $G \xrightarrow{f} J$  is a map of graphs with  $fb = 0$  and  $fe = 1$ . Show that there is no path in  $G$  that begins at  $b$  and ends at  $e$ .  
+(a) Suppose that  $G \xrightarrow{f} J$  is a map of graphs with  $fb = 0$  and  $fe = 1$ . Show that there is no path in  $G$  that begins at  $b$  and ends at  $e$ .
 (b) Conversely, suppose that there is no path in  $G$  that begins at  $b$  and ends at  $e$ . Show that there is a map  $G \xrightarrow{f} J$  with  $f b = 0$  and  $f e = 1$ .
 
 You can think of the dots as cities and the arrows as available airline flights, or the dots as states of a physical system and the arrows as simple processes for getting from one state to another, if you want. Here is an example:
@@ -4382,7 +4382,7 @@ The practical use of the category  $S^{\circ}$ , studied last session, is sugges
 
 In the dynamical system view, we have the set  $X$  of all the different possible states of the system, and the endomap  $\alpha$  of  $X$  which takes each state  $x$  to the state in which the system will be one unit of time later. If instead we think of an object of  $S^{\circ}$  as an automaton or machine,  $X$  is the set of all possible states in which the machine can be, and  $\alpha$  gives for each state, the state in which the machine will be if one 'pushes the button' once. Composing  $\alpha$  with itself,  $\alpha \circ \alpha = \alpha^{2}$  gives the operation of 'pushing the button twice.' A simple example of such a system is a push button that turns a lamp on and off. In this machine the set of states has only two elements, and the endomap interchanges them, so that this automaton can be pictured like this:
 
-![](images/284e2e543611b6b544d430c57c650a5b385e06afc07ed5694181e3466060eca4.jpg)  
+![](images/284e2e543611b6b544d430c57c650a5b385e06afc07ed5694181e3466060eca4.jpg)
 or better
 
 ![](images/5024268b4d04dfd5c0d24e08788210cf4a89b4c93e12ec3a22fa95859575ad3e.jpg)
@@ -4435,8 +4435,8 @@ Just as we invented the category  $\mathcal{S}^{\circ}$ , we can make a new cate
 
 What do we need to do to complete our specification of  $\mathcal{C}^{\circ}$ ? We must decide what are the maps in  $\mathcal{C}^{\circ}$ , what is the composite of two maps, and what are the identity maps. Just as we did with  $\pmb{S}^{\circ}$ , we decide:
 
-1. a map  $X^{\odot \alpha} \xrightarrow{f} Y^{\odot \beta}$  will be a map  $X \xrightarrow{f} Y$  in  $\mathcal{C}$  satisfying  $f \circ \alpha = \beta \circ f$ ;  
-2. the composite of  $X^{\circ \alpha} \xrightarrow{f} Y^{\circ \beta} \xrightarrow{g} Z^{\circ \gamma}$  will just be the composite in  $\mathcal{O}$ ,  $X \xrightarrow{g \circ f} Z$ ; and  
+1. a map  $X^{\odot \alpha} \xrightarrow{f} Y^{\odot \beta}$  will be a map  $X \xrightarrow{f} Y$  in  $\mathcal{C}$  satisfying  $f \circ \alpha = \beta \circ f$ ;
+2. the composite of  $X^{\circ \alpha} \xrightarrow{f} Y^{\circ \beta} \xrightarrow{g} Z^{\circ \gamma}$  will just be the composite in  $\mathcal{O}$ ,  $X \xrightarrow{g \circ f} Z$ ; and
 3. the identity map on  $X^{\otimes \alpha}$  will just be the identity map on  $X$  in  $\mathcal{C}, X \xrightarrow{l_X} X$ .
 
 What must we check to be sure we have specified a category? We must check, first, that if  $f$  and  $g$  are maps in  $\mathcal{C}^{\circ}$  (i.e.  $f \circ \alpha = \beta \circ f$  and  $g \circ \beta = \gamma \circ g$ ) then the composite map  $g \circ f$  in (2) really is a map in  $\mathcal{C}^{\circ}$  (i.e.  $\gamma \circ (g \circ f) = (g \circ f) \circ \alpha$ .) This just uses the associative law in  $\mathcal{C}$ .
@@ -4575,8 +4575,8 @@ All the above suggests the 'standard example' of interpretation of a monoid in s
 
 There are many functors from  $\mathcal{X}$  to sets other than the standard one. Suppose I take a set  $X$  together with an endomap  $\alpha$ , and I interpret  $*$  as  $X$  and send each map  $n$  of  $\mathcal{X}$  (a natural number) to the composite of  $\alpha$  with itself  $n$  times, i.e.  $\alpha^n$ , and in order to preserve identities, I send the number 0 to the identity map on  $X$ . In this way we get a functor from  $\mathcal{X}$  to sets,  $h: \mathcal{X} \longrightarrow \mathcal{S}$  which can be summarized this way:
 
-1.  $h(*) = X$  
-2.  $h(n) = \alpha^n$  , and  
+1.  $h(*) = X$
+2.  $h(n) = \alpha^n$  , and
 3.  $h(0) = 1_{X}$ . (It is reasonable, for an endomorphism of an object  $X$ , to define the symbol  $\alpha^0$  to mean  $1_{X}$ ; then (3) becomes a special case of (2).)
 
 Then it is clear that  $h(n + m) = h(n) \circ h(m)$ .
@@ -4781,9 +4781,9 @@ By the same token  $f(2)$  must be  $\beta(z)$ , which is  $y$ , and  $f(3) = z$
 
 But this is based on the assumption that the map  $f$  is structure-preserving. We must check that the two maps  $f \circ \alpha$  and  $\beta \circ f$  are equal, i.e. that they agree at all four elements of their common domain  $X$ :
 
-on 0:  $f\alpha 0 = f1 = z$  and  $\beta f0 = \beta y = z$  
-on 1:  $f\alpha 1 = f2 = y$  and  $\beta f1 = \beta z = y$  
-on 2:  $f\alpha 2 = f3 = z$  and  $\beta f2 = \beta y = z$  
+on 0:  $f\alpha 0 = f1 = z$  and  $\beta f0 = \beta y = z$
+on 1:  $f\alpha 1 = f2 = y$  and  $\beta f1 = \beta z = y$
+on 2:  $f\alpha 2 = f3 = z$  and  $\beta f2 = \beta y = z$
 on 3:  $f\alpha 3 = f0 = y$  and  $\beta f3 = \beta z = y$
 
 We checked the first three elements as we constructed  $f$ ; only  $f\alpha 3 = \beta f3$  needed checking. Thus the two maps  $f \circ \alpha$  and  $\beta \circ f$  agree on the four elements of  $X$ , showing
@@ -4794,7 +4794,7 @@ These maps also illustrate that structure-preserving maps do not preserve negati
 
 Note the difference in the type of proof we have for the two facts:
 
-1. all maps in  $S^{\circ}$  preserve positive properties, and  
+1. all maps in  $S^{\circ}$  preserve positive properties, and
 2. some maps in  $\pmb{S}^{\bigcirc}$  do not preserve negative properties.
 
 The proof of (1) is algebraic, while the proof of (2) is by 'counterexample.'
@@ -4935,11 +4935,11 @@ In 1872 Felix Klein proposed that the way to study an object is to investigate a
 
 In Session 6 we emphasized the notion that in studying a large objective category  $\pmb{x} = \pmb{s}$ , the category of all abstract sets and maps, a bare minimum  $\pmb{c}$  which is adequate is the category with eight maps whose two objects are a one-point set  $\mathbf{1}$  and a two-point set  $\mathbf{2}$ ; this is because:
 
-1. the maps  $\mathbf{1}\longrightarrow X$  are the points of  $X$ ;  
-2. the maps  $2 \longrightarrow X$  are the pairs of points of  $X$ ;  
-3. the maps  $X \longrightarrow 2$  are sufficient to express all the  $yes/no$  properties of points of  $X$ ;  
-4. precomposing with a map  $2 \longrightarrow 2$  exchanges the roles of two points in a pair;  
-5. following by a map  $2 \longrightarrow 2$  effects negating a property; and  
+1. the maps  $\mathbf{1}\longrightarrow X$  are the points of  $X$ ;
+2. the maps  $2 \longrightarrow X$  are the pairs of points of  $X$ ;
+3. the maps  $X \longrightarrow 2$  are sufficient to express all the  $yes/no$  properties of points of  $X$ ;
+4. precomposing with a map  $2 \longrightarrow 2$  exchanges the roles of two points in a pair;
+5. following by a map  $2 \longrightarrow 2$  effects negating a property; and
 6. composing  $\mathbf{1} \longrightarrow X \longrightarrow \mathbf{2}$  records in  $\mathcal{C}$  whether a particular point has a particular property.
 
 These are sufficient basic ingredients to analyze any map  $X \longrightarrow Y$  in  $\mathfrak{X}$ . If we add a three-point set to  $\mathcal{C}$  (getting a category with only 56 maps, most of which can be expressed as composites of a wisely chosen few), then our strengthened 'subject' will be adequate in an even stronger sense, at least for arbitrarily large finite sets  $X$ . Then and or and other crucial logical operations on properties become internal to  $\mathcal{C}$ .
@@ -4954,7 +4954,7 @@ $$
 
 will be adequate to discuss the states of any  $S = Y^{\widehat{\mathcal{O}}\beta}$  because:
 
-1. the maps  $N \xrightarrow{y} S$  'are' the states of  $S$ , and  
+1. the maps  $N \xrightarrow{y} S$  'are' the states of  $S$ , and
 2. precomposing with  $N \xrightarrow{\sigma} N$  effects the 'next state' operation.
 
 Questions about a state such as 'Does it return to itself after seven units of time?' can also be objectified within the subjective if we include in  $\mathcal{C}$  objects such as  $C_7$ . Other questions such as 'Does the state become a rest state after three units of time?' can also be objectified within the subjective if we include in  $\mathcal{C}$  systems such as
@@ -5011,12 +5011,12 @@ Is there a simple rule to determine the number of  $\pmb{S}^{\ominus}$ -maps fro
 
 The labelled elements are called 'generators' for  $X$ .
 
-2. Choose an order in which to list the generators; here  $a, b, c, d$  seems a reasonable order.  
+2. Choose an order in which to list the generators; here  $a, b, c, d$  seems a reasonable order.
 3. Start from the first element in the list, and apply  $\alpha$  until you would get a repetition by going further:  $a, \alpha a, \alpha^2 a, \alpha^3 a, \alpha^4 a$  are distinct, but we stop here because
 
 (i)  $\alpha^5 a = \alpha^2 a$
 
-4. Now pass to the next element in the list  $a, b, c, d$  and continue as before:  $a, \alpha a, \alpha^2 a, \alpha^3 a, \alpha^4 a, b$  are distinct, but we stop here because  
+4. Now pass to the next element in the list  $a, b, c, d$  and continue as before:  $a, \alpha a, \alpha^2 a, \alpha^3 a, \alpha^4 a, b$  are distinct, but we stop here because
 (ii)  $\alpha b = \alpha^2 a$
 
 5. Repeat step (4) until the list  $a, b, c, d$  is exhausted.
@@ -5029,9 +5029,9 @@ $$
 
 and you will have found these equations:
 
-(R) (i)  $\alpha^5 a = \alpha^2 a$  
-(ii)  $\alpha b = \alpha^2 a$  
-(iii)  $\alpha c = \alpha^3 a$  
+(R) (i)  $\alpha^5 a = \alpha^2 a$
+(ii)  $\alpha b = \alpha^2 a$
+(iii)  $\alpha c = \alpha^3 a$
 (iv)  $\alpha^2 d = d$
 
 These equations are called 'relations' among the generators. From the way we constructed it, the list  $(\mathbf{L})$  labels each element of  $X$  exactly once:
@@ -5042,9 +5042,9 @@ In finding the equations, it is helpful to do this labelling as you go along.
 
 Now, of course, any map  $X^{\otimes \alpha} \xrightarrow{f} Y^{\otimes \beta}$  sends  $a, b, c,$  and  $d$  to elements  $f(a) = \bar{a}, f(b) = \bar{b},$  etc. in  $Y$  satisfying the 'same relations':
 
-(R) (i)  $\beta^5\bar{a} = \beta^2\bar{a}$  
-(ii)  $\beta \bar{b} = \beta^2\bar{a}$  
-(iii)  $\beta \bar{c} = \beta^3\bar{a}$  
+(R) (i)  $\beta^5\bar{a} = \beta^2\bar{a}$
+(ii)  $\beta \bar{b} = \beta^2\bar{a}$
+(iii)  $\beta \bar{c} = \beta^3\bar{a}$
 (iv)  $\beta^2\bar{d} = \bar{d}$
 
 The surprise is that this procedure can be reversed: given any elements  $\bar{a}, \bar{b}, \bar{c}, \bar{d}$ , in  $Y$  satisfying the relations  $(\tilde{\mathbf{R}})$ , there is exactly one  $f$  with  $f(a) = \bar{a}, f(b) = \bar{b}, f(c) = \bar{c}$ , and  $f(d) = \bar{d}$ . Symbolically:
@@ -5077,7 +5077,7 @@ $$
 
 so the equation (ii) becomes  $\beta \bar{b} = y$ , which means  $\bar{b}$  must be  $x$  or  $z$ .
 
-3. For each choice of  $\bar{a}$  and  $\bar{b}$ , find all the choices of  $\bar{c}$  satisfying (iii).  
+3. For each choice of  $\bar{a}$  and  $\bar{b}$ , find all the choices of  $\bar{c}$  satisfying (iii).
 4. Then go on to  $\bar{d}$
 
 # Exercise 7:
@@ -5216,7 +5216,7 @@ in  $S^{\downarrow \downarrow}$  means
 
 two maps, but not arbitrary. They must satisfy two conditions, namely, to preserve source and to preserve target. These conditions are two equations which are very easily remembered by just looking at the above diagram. They are:
 
-To preserve source:  $X \xrightarrow{f_A} Y$ $s' \circ f_A = f_D \circ s$ $P \xrightarrow{f_D} Q$  
+To preserve source:  $X \xrightarrow{f_A} Y$ $s' \circ f_A = f_D \circ s$ $P \xrightarrow{f_D} Q$
 X Y X To preserve target: P fQ
 
 As usual we should show that if we have two such maps one after the other like this:
@@ -5405,22 +5405,22 @@ Yes. Of course, the first time you explore new territory a compass doesn't seem 
 
 Danilo noticed that from a graph  $G$  we can build a category  $\mathcal{F}(G)$ , the free category on the graph  $G$ . An object is a dot of  $G$ , and a map is a path in  $G$ . For which of the following graphs does Danilo's category have a terminal object?
 
-![](images/320c49c770cc4e6ed9539d4ccb97c85d5fdd57f30e0ca3f6be4fe53f7d45feca.jpg)  
+![](images/320c49c770cc4e6ed9539d4ccb97c85d5fdd57f30e0ca3f6be4fe53f7d45feca.jpg)
 (a)
 
-![](images/675a3df407fb0c03cb7326032e71a5d5b466e0bb84fd50ac9df93137bd003efe.jpg)  
+![](images/675a3df407fb0c03cb7326032e71a5d5b466e0bb84fd50ac9df93137bd003efe.jpg)
 (b)
 
-![](images/f090028d58f1ad908c4297a0eff08c25a5f3d14086f6ae35ff042f85add5c966.jpg)  
+![](images/f090028d58f1ad908c4297a0eff08c25a5f3d14086f6ae35ff042f85add5c966.jpg)
 (c)
 
-![](images/cb71868253c690faa95f782a69bc2869525b3970c308cd963f7056bb7fa2a55b.jpg)  
+![](images/cb71868253c690faa95f782a69bc2869525b3970c308cd963f7056bb7fa2a55b.jpg)
 (d)
 
-![](images/493003aa8aebbf8b0466d418bca2610089689e06809db16d46d57636c3fef27f.jpg)  
+![](images/493003aa8aebbf8b0466d418bca2610089689e06809db16d46d57636c3fef27f.jpg)
 (e)
 
-![](images/d1146f64885984e657ca0a45718a0d1acd52f8dc1951c6f28748349beb238be4.jpg)  
+![](images/d1146f64885984e657ca0a45718a0d1acd52f8dc1951c6f28748349beb238be4.jpg)
 (f)
 
 # 2. Graphs as diagram shapes
@@ -5483,8 +5483,8 @@ givus diagrams
 
 What equations do we need to make such a diagram commute? We have to look at those pairs of dots between which there is more than one path:
 
-1. upper left to lower middle needs  $kh = if$ ;  
-2. upper middle to lower right needs  $li = jg$ ; and  
+1. upper left to lower middle needs  $kh = if$ ;
+2. upper middle to lower right needs  $li = jg$ ; and
 3. upper left to lower right needs that the three maps  $jgf$ ,  $lif$ ,  $lkh$  must be equal, but these can be proved equal from (1) and (2). (How?)
 
 As these examples may suggest, for graphs which have cycles it can be a fairly difficult problem to find a shortest list of equations which will imply that a diagram of that shape commutes, while for graphs without cycles it is easier. The cases which arise most often are fortunately not difficult, so we won't need to describe the general theory. In each instance, just check that the equations we prove imply whatever additional equations we use.
@@ -5509,13 +5509,13 @@ $$
 
 For each of these diagrams, find a shortest list of equations that will make it commute.
 
-![](images/cc57ca86f9fbdf550c01bf20594f76132f13848138fff8643b40c9d3c1620cac.jpg)  
+![](images/cc57ca86f9fbdf550c01bf20594f76132f13848138fff8643b40c9d3c1620cac.jpg)
 (a)
 
-![](images/1eb6b781c85510b572774b0e30fec61a12b1a0021e640bfa3a63906b02365a4d.jpg)  
+![](images/1eb6b781c85510b572774b0e30fec61a12b1a0021e640bfa3a63906b02365a4d.jpg)
 (b)
 
-![](images/1712802b4f2cfba2d6085473674dd02d0b33504ff5f2704da5ce409fc3e023da.jpg)  
+![](images/1712802b4f2cfba2d6085473674dd02d0b33504ff5f2704da5ce409fc3e023da.jpg)
 (c)
 
 After you have found the answers try to explain clearly how you know, from the equations you chose, that all possible paths give equal composites.
@@ -5638,12 +5638,12 @@ In the test we specified the two graphs by these internal diagrams:
 
 The question is: How many maps of graphs are there from the first graph to the second one? To give a graph map we need two maps,  $f_{A}$  and  $f_{D}$ , satisfying the equations given above. Omer found a way to incorporate all this information in one picture. We need two maps defined on the first graph, one acting on the dots and the other acting on the arrows.
 
-![](images/2a7230556f3d9d65159f727ef0700dbad9033c4b346a26d46f0386ce73997ae2.jpg)  
+![](images/2a7230556f3d9d65159f727ef0700dbad9033c4b346a26d46f0386ce73997ae2.jpg)
 dots to dots, arrows to arrows
 
 $f_{A}$  indicated by dotted lines:
 
-$④$  a to d  
+$④$  a to d
 ⑤  $b$  to  $d$
 
 His picture shows arrows going to arrows and dots going to dots, and we need only check that these maps satisfy the properties of a morphism of graphs, i.e.  $f_{D}s = s'f_{A}$  and  $f_{D}t = t'f_{A}$ . How many things do we have to check to verify  $f_{D}s = s'f_{A}$ ? The two maps  $f_{D}s$  and  $s'f_{A}$  have only two inputs, since their domain is the set with elements  $a$ ,  $b$ . Therefore we have to verify two things
@@ -5784,7 +5784,7 @@ If  $S_1, S_2$  are both initial in  $\pmb{\mathcal{C}}$  then the (unique) map 
 
 In each of  $\pmb{S}, \pmb{S}^{\mathrm{II}}$ , and  $\pmb{S}^{\mathrm{O}}$ , if  $\mathbf{0}$  is an initial object and  $X \xrightarrow{f} \mathbf{0}$  is a map, then both
 
-(a) for any  $X \xrightarrow{g} \mathbf{0}$ ,  $g = f$ ; and  
+(a) for any  $X \xrightarrow{g} \mathbf{0}$ ,  $g = f$ ; and
 (b)  $X$  itself is initial.
 
 # Exercise 9:
@@ -6219,7 +6219,7 @@ I leave as an exercise the proof that the other composite is equal to the corres
 
 Notice that in this proof we use separately the two aspects of the defining property of a terminal object  $T$ , namely that for each object  $X$
 
-1. there is at least one map  $X \longrightarrow T$ , and  
+1. there is at least one map  $X \longrightarrow T$ , and
 2. there are not two different maps  $X \longrightarrow T$ .
 
 Statement (1) is used to get maps  $T_{1} \longleftrightarrow T_{2}$  and (2) is used to prove that they are inverses of each other.
@@ -6388,14 +6388,14 @@ When we multiply two objects we get not only a third object, but also two maps w
 
 A product of  $A$  and  $B$  is
 
-1. an object  $P$ , and  
+1. an object  $P$ , and
 2. a pair of maps,  $P \xrightarrow{p_1} A$ ,  $P \xrightarrow{p_2} B$
 
 But that cannot be the end of the matter. We need to formulate the principle that a motion in  $P$  is uniquely determined by motions in  $A$  and in  $B$ , and we need to do it in a way applicable to any category. The idea is to replace the interval of time by each object in the category. Here is the official definition.
 
 Definition: Suppose that  $A$  and  $B$  are objects in a category  $\mathcal{C}$ . A product of  $A$  and  $B$  (in  $\mathcal{C}$ ) is
 
-1. an object  $P$  in  $\mathcal{O}$ , and  
+1. an object  $P$  in  $\mathcal{O}$ , and
 2. a pair of maps,  $P \xrightarrow{p_1} A, P \xrightarrow{p_2} B$ , in  $\mathcal{C}$  satisfying:
 
 for every object  $T$  and every pair of maps  $T \xrightarrow{q_1} A, T \xrightarrow{q_2} B$ , there is exactly one map  $T \xrightarrow{q} P$  for which  $q_1 = p_1 \circ q$  and  $q_2 = p_2 \circ q$ .
@@ -6450,8 +6450,8 @@ Let's look at another example. Consider the category  $\pmb{S}^{\circ}$  of sets
 
 Take the example of the set Days of all the days that have been and that ever will be - we imagine this as an infinite set - and consider also the set Days of the week =  $\{Sun, Mon, Tue, Wed, Thu, Fri, Sat\}$ . These two sets have obvious endomaps that could be called in both cases 'tomorrow,' and can be pictured like this
 
-Days:  
-![](images/38302f84f8e808a8eb4e596ff7f3ee448f858ef5113494a8e5946c9c272d5938.jpg)  
+Days:
+![](images/38302f84f8e808a8eb4e596ff7f3ee448f858ef5113494a8e5946c9c272d5938.jpg)
 Days of the week:
 
 Furthermore we have an obvious map  $Days \longrightarrow Days$  of the week, assigning to each day the corresponding day of the week. This map may be more clearly pictured in a 'sorting' picture in which we place all the days in an infinite helix above a circle like this:
@@ -6542,7 +6542,7 @@ Return to Exercise 3 of Session 12. Show that the object which was called  $\mat
 
 We want to discuss two related ideas:
 
-1. universal mapping properties, and  
+1. universal mapping properties, and
 2. detecting the structure of an object by means of figures and incidence relations.
 
 An example of (1) is the property appearing in the definition of terminal object: to say that  $\mathbf{1}$  is terminal means that for each object  $X$ , there is exactly one map  $X \longrightarrow \mathbf{1}$ . The 'for each', 'for every', or 'for all' is what makes us call this a universal property: the object  $\mathbf{1}$  is described by its relation to every object in the 'universe', i.e. the category under consideration.
@@ -6871,7 +6871,7 @@ As an example let's calculate the product of the graph  $A$  with itself, i.e.  
 
 The arrows of any graph  $X$  (including loops) are the graph maps  $A \longrightarrow X$ . The dots of  $X$  are the maps  $D \longrightarrow X$ , while the relation between arrows and dots is an instance of incidence relations that can be expressed in terms of those two special maps 'source'  $D \xrightarrow{s} A$  and 'target'  $D \xrightarrow{t} A$  that we introduced in the last session. For example, to say that a dot  $D \xrightarrow{x} X$  is the source of an arrow  $A \xrightarrow{p} X$  is the incidence relation
 
-![](images/2b7573bac40c40c78994c30c285846ddb7f6aed1550a06aaa4521b8646ffc432.jpg)  
+![](images/2b7573bac40c40c78994c30c285846ddb7f6aed1550a06aaa4521b8646ffc432.jpg)
 (the source of  $p$  is  $x$ , or  $ps = x$ )
 
 In order to calculate  $A \times A$  or  $A^2$ , we first find the set of dots of  $A^2$ :
@@ -7172,15 +7172,15 @@ Having at our disposal multiplication and sum of objects, we can make all sorts 
 
 Prove the following formulas:
 
-(a)  $D + D = 2\times D$  
-(b)  $D\times D = D$  
+(a)  $D + D = 2\times D$
+(b)  $D\times D = D$
 (c)  $A\times D = D + D$
 
 # Exercise 3:
 
 Reread Section 5 of Session 15 and find a method, starting from presentations of  $X^{\mathcal{O}\alpha}$  and  $Y^{\mathcal{O}\beta}$ , to construct presentations of
 
-(a)  $X^{\otimes \alpha} + Y^{\otimes \beta}$  
+(a)  $X^{\otimes \alpha} + Y^{\otimes \beta}$
 (b)  $X^{\odot \alpha}\times Y^{\odot \beta}$
 
 Part (b) is harder than part (a).
@@ -7269,7 +7269,7 @@ has the property of a coproduct, but restricted to testing against only the two 
 
 Tricoloring a graph means assigning to each dot one of the three colors white, red, or green, in such a way that for each arrow, the source and target have different colors. If you fix a tricoloring of a graph  $X$ , and you have a map of graphs  $Y \xrightarrow{f} X$ , then you can color the dots of  $Y$  also: just color each dot  $D \xrightarrow{y} Y$  the same color as  $fy$ . This is called the 'tricoloring of  $Y$  induced by  $f$ '
 
-(a) Show that this induced coloring is a tricoloring; i.e. no arrow of  $Y$  has source and target the same color.  
+(a) Show that this induced coloring is a tricoloring; i.e. no arrow of  $Y$  has source and target the same color.
 (b) Find Fatima's tricolored graph  $F$ . It is the best tricolored graph: For any graph  $Y$ , each tricoloring of  $Y$  is induced by exactly one map  $Y \longrightarrow F$ .
 
 # Exercise 4:
@@ -7278,8 +7278,8 @@ In this exercise,  $\mathbf{0}$  is the initial graph, with no dots (and, of cou
 
 Show that for each graph  $X$ :
 
-(a) there is either a map  $X \longrightarrow 0$  or a map  $D \longrightarrow X$ , but not both; and  
-(b) there is either a map  $X \longrightarrow D$  or  $A \longrightarrow X$ , but not both; and  
+(a) there is either a map  $X \longrightarrow 0$  or a map  $D \longrightarrow X$ , but not both; and
+(b) there is either a map  $X \longrightarrow D$  or  $A \longrightarrow X$ , but not both; and
 (c) there is either a map  $X \longrightarrow A$  or  $A_2 \longrightarrow X$ , but not both.
 
 Can the sequence  $\mathbf{0}, D, A, A_2$  be continued? That is, is there a graph  $C$  such that for each graph  $X$
@@ -7896,7 +7896,7 @@ For a given map  $Y \xrightarrow{h} Z$ , consider all parallel pairs  $X \xright
 
 The various categories of dynamical systems and of graphs which we have discussed all satisfy the distributive law. A simple, frequently occurring, example of a category that is not distributive is  $\mathbf{1} / \mathbf{S}$ , the category of pointed sets. An object of this category is a set  $X$  together with a chosen base point, or distinguished point,  $\mathbf{1} \xrightarrow{x_0} X$ . We can picture an object  $\mathbf{1} \xrightarrow{x_0} X$  of this category as
 
-![](images/e8333db6326716d5f5640eeb8219cf114d6025421cbdd11da6d2a86d1853aee7.jpg)  
+![](images/e8333db6326716d5f5640eeb8219cf114d6025421cbdd11da6d2a86d1853aee7.jpg)
 or simply as
 
 ![](images/6fa08d41963c4e941c4993bb474bb212a4e5f019ba0c3000fafedb9e80a02458.jpg)
@@ -7995,7 +7995,7 @@ is not an isomorphism.
 
 # Test 3
 
-1. Prove: If  $\mathbf{1}$  is a terminal object, and  $X$  is any object, then any map  $\mathbf{1} \xrightarrow{f} X$  is a section of a (the?) map  $X \xrightarrow{g} \mathbf{1}$  
+1. Prove: If  $\mathbf{1}$  is a terminal object, and  $X$  is any object, then any map  $\mathbf{1} \xrightarrow{f} X$  is a section of a (the?) map  $X \xrightarrow{g} \mathbf{1}$
 2. Prove: If  $\mathbf{1}$  is a terminal object and  $C$  is any object, then  $C \times \mathbf{1} = C$ . (First you should explain what  $C \times \mathbf{1} = C$ 's means. To get you started, you should decide what maps  $p_1$  and  $p_2$  should be the 'projection maps' in
 
 ![](images/f8764e8e8f1cbe48ba612e2e8feaca6ab3c7ae21c6e9e71fefed37d794f9c156.jpg)
@@ -8006,7 +8006,7 @@ After you have chosen the particular maps  $p_1$  and  $p_2$ , you must prove th
 
 Express your answer in two ways:
 
-(a) draw a picture of  $A \times A \times A$ ;  
+(a) draw a picture of  $A \times A \times A$ ;
 (b) find numbers  $m$  and  $n$  such that  $A \times A \times A \cong mD + nA$ .
 
 (The symbol  $\cong$  means 'is isomorphic to'.)
@@ -8195,8 +8195,8 @@ Cantor's Diagonal Theorem is closely related to the famous incompleteness theore
 
 Our proof of Cantor's Diagonal Theorem is clearly valid in any category with products. This fact was exploited by Russell around 1900 and by Gödel and Tarski in the 1930s to derive certain results (which are sometimes described in 'popular' books as 'paradoxes'). Gödel's work, in particular, went several steps beyond Cantor's. There is a frequent line of thought which does not begin by focussing on visualizing the possible dynamical systems or the possible graphs, etc. and then trying to understand these objects and their transformations. Instead, this line of thought:
 
-1. starts with formulas and rules of proof and tries to  
-2. limit consideration only to those maps (or graphs or ...) which can be completely described by a formula, and  
+1. starts with formulas and rules of proof and tries to
+2. limit consideration only to those maps (or graphs or ...) which can be completely described by a formula, and
 3. considers that two maps are equal only when the corresponding formulas can be proved equivalent on the basis of some given rules.
 
 This part of the 'constructive' point of view has led to some advances in mathematics because, objectively, it leads to new examples of categories which are in some ways very similar to the categories of sets, of graphs, etc. but in some ways quite different.
@@ -8223,11 +8223,11 @@ $f(5,3)$  is the sentence saying that the number 5 has property #3.
 
 The key idealization in the latter example is that we imagine that all the properties (describable in a given syntactic scheme), can be listed in a fixed way so that we can speak of 'property #3,' etc. The list might look like
 
-(0)  $t^2 = t$  
-(1)  $t^2 = 5t$  
-(2)  $t = 0$  
-(3)  $t + 2 = 7$  
-(4)  $t^2 = t + 1$  
+(0)  $t^2 = t$
+(1)  $t^2 = 5t$
+(2)  $t = 0$
+(3)  $t + 2 = 7$
+(4)  $t^2 = t + 1$
 (5)  $t^3 = t^2 + t$
 
 etc.
@@ -8282,7 +8282,7 @@ $$
 
 whose domain is a product may be considered as an  $X$ -parameterized family of maps  $T \longrightarrow Y$ . Namely, any point  $x: \mathbf{1} \longrightarrow X$  gives rise via  $f$  to the map  $T \xrightarrow{\langle l_T, \bar{x} \rangle} T \times X \xrightarrow{f} Y$  (where  $\bar{x}$  is the constant map  $T \longrightarrow \mathbf{1} \xrightarrow{x} X$ ), which is often denoted for short by  $f_x$ . Thus  $f_x(t) = f(t, x)$  for all  $t$ . For example, a calculator has a set  $X = \{\sqrt{} \log, \dots\}$  of names of operations and a set  $T$  of possible numerical inputs, and a pair  $\langle t, x \rangle$  must be entered before the calculation  $f$  can produce an output. For a given pair  $T, Y$  of objects, a randomly chosen  $X, f$  will fail to parameterize 'perfectly' the maps  $T \longrightarrow Y$  in that
 
-(a) there may be a map  $T \longrightarrow Y$  which is not expressible by the given  $f$ , no matter what point  $x$  is chosen, and  
+(a) there may be a map  $T \longrightarrow Y$  which is not expressible by the given  $f$ , no matter what point  $x$  is chosen, and
 (b) two different points  $\mathbf{1} \xrightarrow[x]{x^{\prime}} X$  may name via  $f$  the same map  $T \longrightarrow Y$ .
 
 However, a universal choice may be possible.
@@ -8479,7 +8479,7 @@ If  $A = \mathbb{N}$  and  $x = \langle 1,1 \rangle$  calculate  $\alpha x, \alp
 
 Fix a point  $p$  on a circle  $C$ . Let  $C \xrightarrow{\omega} C$  be the 'wrap twice around' map: the angle from  $p$  to  $\omega(x)$  is twice the angle from  $p$  to  $x$ . Then  $C^{\omega}$  is a dynamical system. Let  $C \xrightarrow{f} \{true, false\}$  answer the question 'Are we on the upper half-circle?' (Let's decide that 'upper half-circle' includes  $p$  but not its antipode.)
 
-(a) Show that  $f$  is an admissible notion of underlying configuration.  
+(a) Show that  $f$  is an admissible notion of underlying configuration.
 (b) Show that  $f$  is not a chaotic observable, but is 'almost chaotic': Given any finite future (a list  $y_0, y_1, \ldots, y_n$  of points of {true, false}), there is a state  $x$  for which  $fx = y_0$ ,  $f\omega x = y_1$ , ..., and  $f\omega^n x = y_n$ .
 
 # Exercise 10:
@@ -8490,8 +8490,8 @@ A syntactical scheme for calculating with map objects is often called a  $\lambd
 
 # Exercise 11:
 
-(a) For any map  $W \xrightarrow{f} Y$  (in a category where  $(\cdot)^T$  exists) there is an induced map  $W^T \xrightarrow{f^T} Y^T$  for which  $f^T(\lceil a \rceil) = \lceil f \rceil$  for all  $T \xrightarrow{a} W$ .  
-(b) There is a standard map  $X \xrightarrow{\lambda_T} (X \times T)^T$  (analogous to the diagonal map to a product.)  
+(a) For any map  $W \xrightarrow{f} Y$  (in a category where  $(\cdot)^T$  exists) there is an induced map  $W^T \xrightarrow{f^T} Y^T$  for which  $f^T(\lceil a \rceil) = \lceil f \rceil$  for all  $T \xrightarrow{a} W$ .
+(b) There is a standard map  $X \xrightarrow{\lambda_T} (X \times T)^T$  (analogous to the diagonal map to a product.)
 (c) For any  $X \times T \xrightarrow{f} Y$ ,  $\lceil f \rceil = f^T \circ \lambda_T$  is the corresponding map  $X \longrightarrow Y^T$ .
 
 # 5. Guide
@@ -8510,7 +8510,7 @@ We saw that a product of two objects  $X_{1}$  and  $X_{2}$  of a category  $\ma
 
 Given two objects  $T$  and  $Y$  of a category  $\mathcal{C}$  that has a terminal object and products, we define a category  $\mathcal{C} / (T \longrightarrow Y)$  by saying that
 
-1. an object in  $\mathcal{C} / (T\longrightarrow Y)$  is an object  $X$  of  $\mathcal{C}$  together with a map in  $\mathcal{C}$  from  $T\times X$  to  $Y$ , and  
+1. an object in  $\mathcal{C} / (T\longrightarrow Y)$  is an object  $X$  of  $\mathcal{C}$  together with a map in  $\mathcal{C}$  from  $T\times X$  to  $Y$ , and
 2. a map in  $\mathcal{C} / (T\longrightarrow Y)$  from  $T\times X^{\prime}\xrightarrow{f^{\prime}}Y$  to  $T\times X\xrightarrow{f}Y$  is a  $\mathcal{C}$ -map  $X^{\prime}\xrightarrow{\xi}X$  such that  $f^{\prime} = f\circ (1_{T}\times \xi)$ , i.e.
 
 ![](images/473d7e86fddbfc39880032731b6d081203003bc53b7c538255ddb09b603e6568.jpg)
@@ -8823,7 +8823,7 @@ The 'corners' are just a mark to make up a symbol for the new map. Since the new
 
 Given objects  $T, Y$ , a Map Object of maps from  $T$  to  $Y$  is two things
 
-1. an object denoted  $Y^T$  and  
+1. an object denoted  $Y^T$  and
 2. a map, called evaluation
 
 $$
@@ -8834,7 +8834,7 @@ $$
 
 Given objects  $B_{1}, B_{2}$ , a Product of  $B_{1}$  and  $B_{2}$  is two things
 
-1. an object, denoted  $B_{1} \times B_{2}$ , and  
+1. an object, denoted  $B_{1} \times B_{2}$ , and
 2. two maps, called projections
 
 $$
@@ -8971,7 +8971,7 @@ To do this you need first to draw  $A \times A$ , and then find all the graph ma
 
 Let  $X$  be an object in a cartesian closed category. Show that the following two properties are equivalent:
 
-(a)  $X\longrightarrow \mathbf{1}$  is a monomorphism;  
+(a)  $X\longrightarrow \mathbf{1}$  is a monomorphism;
 (b)  $X^{X} = 1$
 
 We saw in Session 27 that property (a) is equivalent to 'idempotence' of  $X$  (i.e.  $X \xleftarrow{I_X} X \xrightarrow{I_X} X$  is a product).
@@ -9012,7 +9012,7 @@ When  $g_{1}$  and  $g_{2}$  are related as in Exercise 3, it is sometimes loose
 
 Definition 2: An image of a map  $\mathbf{g}$  is a part  $i$  of the codomain of  $\mathbf{g}$  for which
 
-(1)  $\mathbf{g}$  is in i  
+(1)  $\mathbf{g}$  is in i
 (2) for all parts j, if g is in j then i is in j.
 
 Of course any two images of the same  $g$  are uniquely isomorphic as parts.
@@ -9221,14 +9221,14 @@ This graph  $\Omega$  plays the role among graphs that the set 2 plays among set
 
 ![](images/7be4c58367db3acf52a291ffb1775e88ff189202aecf833a1ebe97bd6ed0dcaa.jpg)
 
-2. The arrow is not in the subgraph, but its source and its target are (e.g. the arrow  $z$  in the graph above).  
-3. The arrow is not in the subgraph and neither is its source, but its target is (e.g. the arrow  $u$  above).  
-4. The arrow is not in the subgraph and neither is its target, but its source is (e.g. the arrow  $\nu$  above).  
+2. The arrow is not in the subgraph, but its source and its target are (e.g. the arrow  $z$  in the graph above).
+3. The arrow is not in the subgraph and neither is its source, but its target is (e.g. the arrow  $u$  above).
+4. The arrow is not in the subgraph and neither is its target, but its source is (e.g. the arrow  $\nu$  above).
 5. The arrow is not in the subgraph and neither is its source nor its target (e.g. the arrows  $p$  and  $q$  above).
 
 (b) For dots:
 
-1. The dot is in the subgraph (e.g. dots  $a, b$ , and  $c$  above.)  
+1. The dot is in the subgraph (e.g. dots  $a, b$ , and  $c$  above.)
 2. The dot is not in the subgraph (e.g. dots  $d, e$ , and  $g$  in the graph pictured above).
 
 Thus, in the example above, the characteristic map of the indicated part is the following:
@@ -9409,8 +9409,8 @@ It is clear from the above that one can discuss the category  $\mathcal{P}(X)$  
 
 A category  $\mathcal{C}$  is a topos if and only if:
 
-1.  $\mathcal{C}$  has  $0, 1, \times, +$ , and for every object  $X$ ,  $\mathcal{C} / X$  has products.  
-2.  $\mathcal{C}$  has map objects  $Y^{X}$ , and  
+1.  $\mathcal{C}$  has  $0, 1, \times, +$ , and for every object  $X$ ,  $\mathcal{C} / X$  has products.
+2.  $\mathcal{C}$  has map objects  $Y^{X}$ , and
 3.  $\mathcal{C}$  has a 'truth-value object'  $\mathbf{1} \longrightarrow \Omega$  (also called a 'subobject classifier').
 
 Most of the categories that we have studied are toposes: sets, irreflexive graphs, dynamical systems, reflexive graphs. (Pointed sets and bipointed sets are not toposes, since having map objects implies distributivity.)
@@ -9663,16 +9663,16 @@ Definition 2: A group is a monoid in which every element has an inverse.
 
 While the theory of monoids and their actions already has much content, the group case has special features which arise mainly from these three:
 
-(1) Each congruence relation on a group arises from a 'normal subgroup' (Exercise 3 below);  
-(2) for any two representations, the underlying set of the map space is the map set of the underlying sets (Exercise 6 below);  
+(1) Each congruence relation on a group arises from a 'normal subgroup' (Exercise 3 below);
+(2) for any two representations, the underlying set of the map space is the map set of the underlying sets (Exercise 6 below);
 (3) given elements  $x$  and  $y$  in a connected representation, there is a group element  $g$  with  $xg = y$  (Exercise 11 below).
 
 Feature (3) of group theory implies that there are only a small number of connected representations, as we will prove in this session.
 
 Exercise 3: Let  $G \xrightarrow{F} H$  be a homomorphism of groups, i.e.  $F(xy) = F(x)F(y)$ . Study the pairs  $a_1, a_2$  for which  $F(a_1) = F(a_2)$  in the following way: Define  $\operatorname{Ker}(F)$  to be the subgroup of all maps  $a$  in  $G$  for which  $F(a)$  is the identity element of  $H$ . Then
 
-(a)  $\operatorname{Ker}(F)$  is a subgroup, and moreover for any  $t$  in  $G$ $a$  is in  $\operatorname{Ker}(F)$  if and only if  $t^{-1}at$  is in  $\operatorname{Ker}(F)$ .  
-(b)  $F(a_{1}) = F(a_{2})$  if and only if  $a_1a_2^{-1}$  is in  $\operatorname{Ker}(F)$ .  
+(a)  $\operatorname{Ker}(F)$  is a subgroup, and moreover for any  $t$  in  $G$ $a$  is in  $\operatorname{Ker}(F)$  if and only if  $t^{-1}at$  is in  $\operatorname{Ker}(F)$ .
+(b)  $F(a_{1}) = F(a_{2})$  if and only if  $a_1a_2^{-1}$  is in  $\operatorname{Ker}(F)$ .
 (c) Any 'normal' subgroup  $K$  of  $G$ , i.e. a subgroup satisfying the condition in (a), arises as  $K = \operatorname{Ker}(F)$  for some functor to some group  $H$ .
 
 Our main goal is the theorem after Exercise 11. A hint of its content is already in Exercise 4, which does not mention actions.
@@ -9805,8 +9805,8 @@ Bill and Steve
 
 The notion of category embraces at least three related sorts of mathematical environments:
 
-(a) an abstract theory  $\mathcal{A}$  of some notion (such as 'preorder' or 'group' or 'dynamical evolution');  
-(b) a background  $\pmb{\mathcal{B}}$  (such as smooth spaces) in which that notion might be realized;  
+(a) an abstract theory  $\mathcal{A}$  of some notion (such as 'preorder' or 'group' or 'dynamical evolution');
+(b) a background  $\pmb{\mathcal{B}}$  (such as smooth spaces) in which that notion might be realized;
 (c) the concrete totality  $\mathcal{C}$  of realizations of  $\pmb{A}$  in  $\pmb{\mathcal{B}}$
 
 The example (a) reflects the observation that the substitutions in a theory  $\mathcal{A}$  can be composed, hence are the maps in a category. A realization  $R$  of  $\mathcal{A}$  in  $\mathcal{B}$  is then a functor from  $\mathcal{A}$  to  $\mathcal{B}$ : a functor is a transformation that turns objects and maps in  $\mathcal{A}$  into objects and maps in  $\mathcal{B}$  in such a way as to satisfy the equations
@@ -9913,7 +9913,7 @@ We say the adjunction makes  $F$  left adjoint to  $G$ , or equivalently, makes 
 
 'Natural' above means 'compatible with maps'. That is, if  $FA \xrightarrow{f} B$  corresponds to  $A \xrightarrow{g} GB$ , then
 
-(1) for each  $A' \xrightarrow{a} A$ , the composite  $FA' \xrightarrow{Fa} FA \xrightarrow{f} B$  corresponds to  $A' \xrightarrow{a} A \xrightarrow{g} GB$ , and  
+(1) for each  $A' \xrightarrow{a} A$ , the composite  $FA' \xrightarrow{Fa} FA \xrightarrow{f} B$  corresponds to  $A' \xrightarrow{a} A \xrightarrow{g} GB$ , and
 (2) for each  $B \xrightarrow{b} B'$  the composite  $FA \xrightarrow{f} B \xrightarrow{b} B'$  corresponds to  $A \xrightarrow{g} GB \xrightarrow{Gb} GB'$ .
 
 It follows that such a natural correspondence is given by a universal mapping property: Given  $A$ , there is an adjunction unit  $\mathfrak{n}_A : A \longrightarrow GFA$  such that any function  $f : A \longrightarrow GB$  (thus whose type is given as a value of  $G$ ) depends on  $\mathfrak{n}_A$ , and uniquely so. That is, in
@@ -9966,9 +9966,9 @@ The study of reflexive graphs and generalized graphs, of dynamical systems and a
 
 Properties of the small category  $\pmb{E}$  and the chosen object  $D$  determine answers to questions like:
 
-(a) do the six collapse to fewer (as in the case of augmented dynamical systems  $P_{*} = P_{!}$ )?  
-(b) do any of the six have additional adjoints (such as the codiscrete functor  $P^!$  for reflexive graphs)?  
-(c) does some left adjoint (such as  $P_{!} =$  the connected components functor for reflexive graphs) preserve products?  
+(a) do the six collapse to fewer (as in the case of augmented dynamical systems  $P_{*} = P_{!}$ )?
+(b) do any of the six have additional adjoints (such as the codiscrete functor  $P^!$  for reflexive graphs)?
+(c) does some left adjoint (such as  $P_{!} =$  the connected components functor for reflexive graphs) preserve products?
 (d) what do the functors do to the truth value space? (For example, consider the truth-value graph  $(\Omega)$ : for the fixed-point set we have  $P_{*}(\Omega) = 2$ , but for its underlying set we have  $D^{*}(\Omega) = 5$ .
 
 In turn these answers (even if simple) will assist in the analysis and measurement of the more intricate  $\pmb{E}$ -actions of scientific interest.
@@ -10011,19 +10011,19 @@ Jose Sebastião e Silva (1940s and 1950s) recognized the need for a very general
 
 The groupoids of Klein and the preorders of Dedekind remain useful, but many important categories (such as the categories of directed graphs and of dynamical systems) contain non-invertible maps as well as parallel maps; in fact their maps include with equal status
 
-- figures in a space,  
-functions on a space,  
-projections from product spaces,  
-- transformations of one space into another  
-- inclusions of subspaces,  
+- figures in a space,
+functions on a space,
+projections from product spaces,
+- transformations of one space into another
+- inclusions of subspaces,
 - functionals.
 
 All these kinds of maps are not merely accumulated into one large set; rather in their category we recognize their totality organized as one system sorted by precise domain and codomain relations, which are symbolized by arrow diagrams.
 
 In the 1950's and 1960's, the use of categorical instruments by Grothendieck, Isbell, Kan, Yoneda, and others began to make explicit and generally applicable the insights of their predecessors and of themselves. The geometrical roles of figures, of map spaces, and of functor categories began to reveal a rational guide to the construction of needed concepts; thus the awkward 19th century attempt, by Frege, to subsume concepts as properties was superceded. At the same time new insights into logic itself were obtained:
 
-(1) Fregean quantifiers are special Kan adjoints to the more basic substitution functionals;  
-(2) the models of logical theories are parameterized by classifier toposes;  
+(1) Fregean quantifiers are special Kan adjoints to the more basic substitution functionals;
+(2) the models of logical theories are parameterized by classifier toposes;
 (3) the rigidly hierarchical 'sets', while serving as a useful calculational tool in certain foundational investigations, can be replaced as a framework for mathematical practice by the relationship between Cantorian abstract sets and cohesively variable spaces.
 
 At the beginning of the 21st century, the various fields of mathematics such as algebraic geometry, functional analysis, combinatorics, etcetera, have the external appearance of esoteric specialties. However, the categorical instruments and insights already obtained give promise of still further simplifications and unifications which will form an important component of the effort to make the mathematical sciences useable to people who will need them.

@@ -84,89 +84,89 @@ Introduction XV
 
 1 What is Abstract Algebra? 3
 
-1.1 What is abstract about Abstract Algebra? 3  
-1.2 What is algebraic about Abstract Algebra? 4  
+1.1 What is abstract about Abstract Algebra? 3
+1.2 What is algebraic about Abstract Algebra? 4
 1.3 Approaches to Abstract Algebra 7
 
 2 Axioms and Definitions 13
 
-2.1 Mathematical axioms and definitions 13  
-2.2 Relating definitions to examples 17  
-2.3 The definition of group 21  
-2.4 Commutativity and rings 25  
+2.1 Mathematical axioms and definitions 13
+2.2 Relating definitions to examples 17
+2.3 The definition of group 21
+2.4 Commutativity and rings 25
 2.5 Mathematical objects and notation 28
 
 3 Theorems and Proofs 31
 
-3.1 Theorems and proofs in Abstract Algebra 31  
-3.2 Logic in familiar algebra 35  
-3.3 Modular arithmetic 39  
-3.4 Equivalence classes 44  
-3.5 Logic in theorems 51  
-3.6 Self-explanation training 56  
+3.1 Theorems and proofs in Abstract Algebra 31
+3.2 Logic in familiar algebra 35
+3.3 Modular arithmetic 39
+3.4 Equivalence classes 44
+3.5 Logic in theorems 51
+3.6 Self-explanation training 56
 3.7 Writing proofs 60
 
 4 Studying Abstract Algebra 67
 
-4.1 Who are you as a student? 67  
-4.2 Myths about learning 68  
+4.1 Who are you as a student? 67
+4.2 Myths about learning 68
 4.3 Effective learning 74
 
 # Part 2 Topics in Abstract Algebra
 
 # 5 Binary Operations 79
 
-5.1 What is a binary operation? 79  
-5.2 Associativity and commutativity 81  
-5.3 Modular arithmetic 84  
-5.4 Binary operations on functions 91  
-5.5 Matrices and transformations 93  
-5.6 Symmetries and permutations 96  
+5.1 What is a binary operation? 79
+5.2 Associativity and commutativity 81
+5.3 Modular arithmetic 84
+5.4 Binary operations on functions 91
+5.5 Matrices and transformations 93
+5.6 Symmetries and permutations 96
 5.7 Binary operations as functions 101
 
 # 6 Groups and Subgroups 105
 
-6.1 What is a group? 105  
-6.2 What is a subgroup? 108  
-6.3 Cyclic groups and subgroups 112  
-6.4 Cyclic subgroups and generators 116  
-6.5 Theorems about cyclic groups 119  
-6.6 Groups of familiar objects 123  
-6.7 The dihedral group  $D_{3}$  127  
-6.8 More symmetry groups 132  
-6.9 Permutation groups 136  
-6.10 Identifying and defining subgroups 141  
+6.1 What is a group? 105
+6.2 What is a subgroup? 108
+6.3 Cyclic groups and subgroups 112
+6.4 Cyclic subgroups and generators 116
+6.5 Theorems about cyclic groups 119
+6.6 Groups of familiar objects 123
+6.7 The dihedral group  $D_{3}$  127
+6.8 More symmetry groups 132
+6.9 Permutation groups 136
+6.10 Identifying and defining subgroups 141
 6.11 Small groups 145
 
 # 7 Quotient Groups 151
 
-7.1 What is a quotient group? 151  
-7.2 Quotient groups in cyclic groups 154  
-7.3 Element-coset commutativity 158  
-7.4 Left and right cosets 163  
-7.5 Normal subgroups: theory 167  
-7.6 Normal subgroups: examples 171  
+7.1 What is a quotient group? 151
+7.2 Quotient groups in cyclic groups 154
+7.3 Element-coset commutativity 158
+7.4 Left and right cosets 163
+7.5 Normal subgroups: theory 167
+7.6 Normal subgroups: examples 171
 7.7 Lagrange's Theorem 176
 
 # 8 Isomorphisms and Homomorphisms 183
 
-8.1 What is an isomorphism? 183  
-8.2 Isomorphism definition 186  
-8.3 Early isomorphism theory 192  
+8.1 What is an isomorphism? 183
+8.2 Isomorphism definition 186
+8.3 Early isomorphism theory 192
 8.4 Example isomorphisms 197
 
-8.5 Isomorphic or not? 202  
-8.6 Homomorphisms 205  
+8.5 Isomorphic or not? 202
+8.6 Homomorphisms 205
 8.7 The First Isomorphism Theorem 212
 
 # 9 Rings 219
 
-9.1 What is a ring? 219  
-9.2 Examples of rings 222  
-9.3 Simple ring theorems 228  
-9.4 Rings, integral domains and fields 231  
-9.5 Units, zero divisors and equations 235  
-9.6 Subrings and ideals 242  
+9.1 What is a ring? 219
+9.2 Examples of rings 222
+9.3 Simple ring theorems 228
+9.4 Rings, integral domains and fields 231
+9.5 Units, zero divisors and equations 235
+9.6 Subrings and ideals 242
 9.7 Ideals, quotient rings and ring homomorphisms 248
 
 Conclusion 257
@@ -1129,7 +1129,7 @@ Theorem: The identity element for an operation on a set is unique.
 
 Proof: Suppose that  $e_1$  and  $e_2$  are both identity elements for  $*$  on  $S$ .
 
-Then  $e_1 = e_1*e_2$  because  $e_2$  is an identity  
+Then  $e_1 = e_1*e_2$  because  $e_2$  is an identity
 $= e_2$  because  $e_1$  is an identity.
 
 I have always thought this argument rather cute. But it is so short that it can seem vacuous, so it is useful to relate it to some specific sets and operations. For instance, suppose that  $S = \mathbb{R}$ , the operation is multiplication,  $e_1 = 1$ , and  $e_2$  is a fictitious other identity element. Then the algebraic part of the argument reads  $1 = 1e_2 = e_2$ . Similarly, if  $S$  is the set of  $2 \times 2$  matrices, the operation is matrix multiplication,
@@ -1230,15 +1230,15 @@ To improve your understanding of a proof, there is a series of techniques you sh
 
 After reading each line:
 
-- Try to identify and elaborate the main ideas in the proof.  
-- Attempt to explain each line in terms of previous ideas. These may be ideas from the information in the proof, ideas from previous theorems/proofs, or ideas from your own prior knowledge of the topic area.  
+- Try to identify and elaborate the main ideas in the proof.
+- Attempt to explain each line in terms of previous ideas. These may be ideas from the information in the proof, ideas from previous theorems/proofs, or ideas from your own prior knowledge of the topic area.
 - Consider any questions that arise if new information contradicts your current understanding.
 
 Before proceeding to the next line of the proof you should ask yourself the following:
 
-- Do I understand the ideas used in that line?  
-- Do I understand why those ideas have been used?  
-- How do those ideas link to other ideas in the proof, other theorems, or prior knowledge that I may have?  
+- Do I understand the ideas used in that line?
+- Do I understand why those ideas have been used?
+- How do those ideas link to other ideas in the proof, other theorems, or prior knowledge that I may have?
 - Does the self-explanation I have generated help to answer the questions that I am asking?
 
 Below you will find an example showing possible self-explanations generated by students when trying to understand a proof (the labels '（LI）' etc. in the proof indicate line numbers). Please read the example carefully in order to understand how to use this strategy in your own learning.
@@ -1249,17 +1249,17 @@ Theorem: No odd integer can be expressed as the sum of three even integers.
 
 Proof: (L1) Assume, to the contrary, that there is an odd integer  $x$  such that  $x = a + b + c$ , where  $a, b$  and  $c$  are even integers.
 
-(L2) Then  $a = 2k, b = 2l$  and  $c = 2p$ , for some integers  $k, l$  and  $p$ .  
-(L3) Thus  $x = a + b + c = 2k + 2l + 2p = 2(k + l + p)$ .  
-(L4) It follows that  $x$  is even; a contradiction.  
+(L2) Then  $a = 2k, b = 2l$  and  $c = 2p$ , for some integers  $k, l$  and  $p$ .
+(L3) Thus  $x = a + b + c = 2k + 2l + 2p = 2(k + l + p)$ .
+(L4) It follows that  $x$  is even; a contradiction.
 (L5) Thus no odd integer can be expressed as the sum of three even integers.
 
 After reading this proof, one reader made the following self-explanations:
 
-- 'This proof uses the technique of proof by contradiction'.<sup>5</sup>  
-- 'Since  $a, b$  and  $c$  are even integers, we have to use the definition of an even integer, which is used in L2.'  
-- 'The proof then replaces  $a, b$  and  $c$  with their respective definitions in the formula for  $x$ .'  
-- 'The formula for  $x$  is then simplified and is shown to satisfy the definition of an even integer also; a contradiction.'  
+- 'This proof uses the technique of proof by contradiction'.<sup>5</sup>
+- 'Since  $a, b$  and  $c$  are even integers, we have to use the definition of an even integer, which is used in L2.'
+- 'The proof then replaces  $a, b$  and  $c$  with their respective definitions in the formula for  $x$ .'
+- 'The formula for  $x$  is then simplified and is shown to satisfy the definition of an even integer also; a contradiction.'
 - 'Therefore, no odd integer can be expressed as the sum of three even integers.'
 
 # Self-explanations compared with other comments
@@ -1454,7 +1454,7 @@ One way to make that effort is to engage in self-explanation; mathematical self-
 
 A second way to improve storage is to use interleaving, switching between topics instead of 'blocking' your learning.
 
-<sup>2</sup> I owe the structure of this section to Iro Xenidou-Dervou, Nina Attridge and Camilla Gilmore, who conduct research in the Centre for Mathematical Cognition at Loughborough University (Nina has since moved to Portsmouth).  
+<sup>2</sup> I owe the structure of this section to Iro Xenidou-Dervou, Nina Attridge and Camilla Gilmore, who conduct research in the Centre for Mathematical Cognition at Loughborough University (Nina has since moved to Portsmouth).
 <sup>3</sup> See Alcock, L., Hodds, M., Roy, S. & Inglis, M. (2015). Investigating and improving undergraduate proof comprehension. Notices of the American Mathematical Society, 62, 742-752, http://www.ams.org/ notices/201507/rnoti-p742.pdf.
 
 <table><tr><td>topic A</td><td>topic B</td><td>topic C</td><td>topic A</td><td>topic B</td><td>topic C</td></tr></table>
@@ -1473,7 +1473,7 @@ which gives you a feeling that you 'know' it. But this can be misleading: it is 
 
 A second way to enhance retrieval is to space your study, where spacing is the opposite of cramming or massing.
 
-![](images/a5354454a6dc6ca75d465329c4a2260dc4e5a59f401d9050cae43f86bf8cbf9a.jpg)  
+![](images/a5354454a6dc6ca75d465329c4a2260dc4e5a59f401d9050cae43f86bf8cbf9a.jpg)
 SPACING
 
 Cramming is common before exams, and some students do it because they are disorganized. But some believe it to be effective. They are wrong, unfortunately. People learn more when they take the same amount of study time and space it out. This is due to the way forgetting works. When we first learn something, we forget it pretty fast. When we review, we forget more slowly. So reviews lead to better retention.
@@ -1888,10 +1888,10 @@ Mathematically, this pattern manifests a quotient group, which will be discussed
 
 To conclude this section, note that an alternative, number-based labelling provides another way to represent symmetries. Below, for instance, a clockwise rotation  $\rho$  of a square through  $90^{\circ}$  sends vertex 1 to position 2, vertex 2 to position 3, and so on; a reflection  $r_1$  in the vertical line swaps vertices 1 and 2 and vertices 3 and 4. Such transformations permute the vertices, where a permutation of a set  $S$  is a rearrangement of the elements of  $S$ . Symmetries of the square can be represented as permutations of  $\{1,2,3,4\}$ .
 
-![](images/6a7f56e506d84029ff9021fc7764832143b9275a196f1b385041f58a8263dd47.jpg)  
+![](images/6a7f56e506d84029ff9021fc7764832143b9275a196f1b385041f58a8263dd47.jpg)
 e
 
-![](images/975a781738c7445b513623202a0d4406b2736810c78c85023ab43e3eb689880b.jpg)  
+![](images/975a781738c7445b513623202a0d4406b2736810c78c85023ab43e3eb689880b.jpg)
 P
 
 ![](images/e8b55c43009db1d981425b81f154ff2c0cfc3c43d842935cfa0660513f3c7b22.jpg)
@@ -2000,11 +2000,11 @@ Now, although groups involve both sets and binary operations, the sets tend to b
 
 Chapter 5 considered various sets and binary operations in relation to the group properties of closure, associativity, identities and inverses. Do you understand why the structures below all satisfy the group definition? (If you have not read Chapter 5, perhaps this will convince you to do so.)
 
-the integers under addition  
-- the integer multiples of 3 under addition  
-- the integers modulo 12 under addition modulo 12  
-- the continuous functions on  $\mathbb{R}$  under function addition  
-- the symmetries of an equilateral triangle under composition  
+the integers under addition
+- the integer multiples of 3 under addition
+- the integers modulo 12 under addition modulo 12
+- the continuous functions on  $\mathbb{R}$  under function addition
+- the symmetries of an equilateral triangle under composition
 - the permutations of the set  $\{1,2,3,4\}$  under composition.
 
 Chapter 5 also discussed structures that do not form groups. The integers modulo 12 do not form a group under multiplication modulo 12 because not every element has a multiplicative inverse (see Section 5.4). Similarly, the set of all  $2 \times 2$  matrices does not form a group under multiplication
@@ -2229,9 +2229,9 @@ Let  $a, b, c \in \langle g \rangle$ .
 
 Then  $\exists l, m, n \in Z$  such that  $a = g^l, b = g^m$  and  $c = g^n$ . So
 
--  $\langle g\rangle$  is closed under the group operation because  $ab = g^{l}g^{m} = g^{l + m}\in \langle g\rangle$  
-- The group operation is associative on  $\langle g \rangle$  because  $(ab)c = (g^l g^m)g^n = g^{l+m}g^n = g^{l+m+n} = g^l g^{m+n} = g^l (g^m g^n) = a(bc)$ .  
-- The group identity element  $e \in  \langle g\rangle$  because  ${g}^{0} = e$  .  
+-  $\langle g\rangle$  is closed under the group operation because  $ab = g^{l}g^{m} = g^{l + m}\in \langle g\rangle$
+- The group operation is associative on  $\langle g \rangle$  because  $(ab)c = (g^l g^m)g^n = g^{l+m}g^n = g^{l+m+n} = g^l g^{m+n} = g^l (g^m g^n) = a(bc)$ .
+- The group identity element  $e \in  \langle g\rangle$  because  ${g}^{0} = e$  .
 - Every element in  $\langle g \rangle$  has its inverse in  $\langle g \rangle$  because  $g^{-l} \in \langle g \rangle$  and  $g^{l}g^{-l} = g^{-l}g^{l} = e$ .
 
 Thus  $\langle g\rangle$  is a subgroup of  $G$ ; it is cyclic because it has a single generator.
@@ -2508,7 +2508,7 @@ Because permutations of a set are functions on that set, any two can be combined
 
 the middle bracket, then it goes back to 1 again in the leftmost bracket. So overall it stays where it is and does not appear on the the right-hand side of the equality. Analogously, 2 goes to 3, then 3 goes to 4, then stays where it is. So overall 2 goes to 4. And so on.
 
-![](images/21666f7ec63f8d972c4ed1e9fc9e43d8b62c3a1cc34524db8ca202591b6de708.jpg)  
+![](images/21666f7ec63f8d972c4ed1e9fc9e43d8b62c3a1cc34524db8ca202591b6de708.jpg)
 (12)(34)(1234) = (24)
 
 ![](images/8700632739da2e9c1ae35e9c3b142cb9ac6319fc2085cf2aafdf922a532f4336.jpg)
@@ -2559,10 +2559,10 @@ If you try that seriously, you will understand why  $S_4$  has a subgroup isomor
 
 ![](images/d72148da65e87bdc59f0a0959a9cf5d6718dc78cf9cc6d7cce476295e25fd2fe.jpg)
 
-![](images/f9603c03c616e9735d4675f8750f9f3b884b215bf5569ea59422d664435e0779.jpg)  
+![](images/f9603c03c616e9735d4675f8750f9f3b884b215bf5569ea59422d664435e0779.jpg)
 (12)(34)
 
-![](images/cc33db1731c7996d0a1da102902f98089d39d93a3be59520f8f52f4504163790.jpg)  
+![](images/cc33db1731c7996d0a1da102902f98089d39d93a3be59520f8f52f4504163790.jpg)
 (12)
 
 We will return to this in Section 7.6. In the meantime, these observations link to the name symmetric group. In a square, not all vertices relate to one another in the same way. Under any symmetry of the square, vertex 2 remains adjacent to vertices 1 and 3; no symmetry makes it adjacent to vertex 4. This means that in  $D_4$ , there is asymmetry in the way that the numbered vertices can be permuted. In the symmetric group, this asymmetry disappears:  $S_4$  is maximally symmetric in that it treats each element of  $S = \{1,2,3,4\}$  in exactly the same way in relation to all the others.
@@ -2589,9 +2589,9 @@ The observation is that every finite group is isomorphic to a group of permutati
 
 This chapter has considered various specific groups and subgroups. But how can we identify subgroups in general? In small groups, this might be fairly easy. In larger groups, it is more challenging. But we can make progress by extending ideas raised so far. For instance, some properties interact favourably with the group axioms. Because associativity is always inherited from a main group, a property determines a subgroup if it delimits a subset that is closed under the group operation and that includes the identity and all of its elements' inverses. This is a very general idea.
 
-- The subset of  $S_4$  comprising all permutations that fix the number 1 is closed under composition and contains the identity and all of its elements' inverses.  
-- The subset of  $S_4$  comprising all even permutations is closed under composition and contains the identity and all of its elements' inverses.  
-- The subset of  $(\mathbb{Z}, +)$  comprising all multiples of 3 is closed under composition and contains the identity and all of its elements' inverses.  
+- The subset of  $S_4$  comprising all permutations that fix the number 1 is closed under composition and contains the identity and all of its elements' inverses.
+- The subset of  $S_4$  comprising all even permutations is closed under composition and contains the identity and all of its elements' inverses.
+- The subset of  $(\mathbb{Z}, +)$  comprising all multiples of 3 is closed under composition and contains the identity and all of its elements' inverses.
 - The subset of  $D_4$  generated by the element  $\rho$  is closed under composition and contains the identity and all of its elements' inverses.
 
 - The subset of  $(\mathbb{C} \setminus \{0\}, \times)$  generated by  $e^{\frac{2\pi i}{5}}$  is closed under composition and contains the identity and all of its elements' inverses.
@@ -3088,10 +3088,10 @@ $$
 
 But the left and right cosets are not the same.
 
-![](images/8462bb1f4cd17fbca15bc0213f6189c5b40a222b25f561e02333ba2aabb6815b.jpg)  
+![](images/8462bb1f4cd17fbca15bc0213f6189c5b40a222b25f561e02333ba2aabb6815b.jpg)
 left cosets
 
-![](images/6d56e1f260e3da686655e953677859843cfba1d3a4b5c7a9bca0a3d7e960a421.jpg)  
+![](images/6d56e1f260e3da686655e953677859843cfba1d3a4b5c7a9bca0a3d7e960a421.jpg)
 right cosets
 
 This led to the problem in constructing a quotient group table for  $\{e, r_1\}$  in  $D_4$ —look back to check. In general, if left and right cosets are unequal then constructing a quotient group 'goes wrong'. This motivates the definition of normal subgroup.
@@ -3204,8 +3204,8 @@ For  $\{e, r_1\}$  as a non-normal subgroup of  $D_4$ , the left and right coset
 
 Now, recall that for  $3\mathbb{Z}$  as a subgroup of  $\mathbb{Z}$ , the horizontal shifts represent remainders. So these diagrams help me to see an analogue of 'division with remainders' in dihedral groups and general groups.
 
-- For  $3\mathbb{Z}$  as a subgroup of  $\mathbb{Z}$ , left cosets have the form (remainder)  $+3\mathbb{Z}$  and elements of cosets have the form (remainder)  $+(element$  of  $3\mathbb{Z}$ ).  
-- For  $H = \{e, \rho, \rho^2, \rho^3\}$  as a subgroup of  $D_4$ , left cosets have the form ('remainder')  $H$  and elements of cosets have the form ('remainder')(element of  $H$ ).  
+- For  $3\mathbb{Z}$  as a subgroup of  $\mathbb{Z}$ , left cosets have the form (remainder)  $+3\mathbb{Z}$  and elements of cosets have the form (remainder)  $+(element$  of  $3\mathbb{Z}$ ).
+- For  $H = \{e, \rho, \rho^2, \rho^3\}$  as a subgroup of  $D_4$ , left cosets have the form ('remainder')  $H$  and elements of cosets have the form ('remainder')(element of  $H$ ).
 - For  $H$  as a subgroup of  $G$ , left cosets have the additive or multiplicative forms ('remainder') +  $H$  or ('remainder')  $H$  and elements of cosets have the form ('remainder') + (element of  $H$ ) or ('remainder')(element of  $H$ ).
 
 ![](images/1effb83ae13b2d7eadeb8624f227281bf9be205d96611179bb20b44438a1f198.jpg)
@@ -3408,9 +3408,9 @@ Now, in earlier mathematics, people often speak ambiguously about notation such 
 
 With an isomorphism  $\phi : G_1 \to G_2$  in place, here are some questions.
 
-- Suppose that  $G_{1}$  is abelian (that its operation is commutative). What should be true about  $G_{2}$ ?  
-- Suppose that  $e$  is the identity for  $G_1$ . What should be true about  $\phi(e)$  in  $G_2$ ? Can you relate that to orders of elements?  
-- If  $g$  has inverse  $g^{-1}$  in  $G_{1}$ , what should be the inverse of  $\phi(g)$  in  $G_{2}$ ?  
+- Suppose that  $G_{1}$  is abelian (that its operation is commutative). What should be true about  $G_{2}$ ?
+- Suppose that  $e$  is the identity for  $G_1$ . What should be true about  $\phi(e)$  in  $G_2$ ? Can you relate that to orders of elements?
+- If  $g$  has inverse  $g^{-1}$  in  $G_{1}$ , what should be the inverse of  $\phi(g)$  in  $G_{2}$ ?
 - Suppose that  $\langle g \rangle = G_1$  (that  $g$  generates  $G_1$ -see Section 6.3). What should be true about  $\phi(g)$  in  $G_2$ ? Can you relate this to orders of elements, too?
 
 Happily, the answers to the questions are those that 'sound right'. Abelian groups should be isomorphic to abelian groups. Any isomorphism should map the identity in one group to the identity in the other, should map inverses to inverses, and should map generators to generators. That sounds like a fair few things to cover, but it turns out that two simple criteria force a map  $\phi : G_1 \to G_2$  to respect all of these aspects of structure. The first criterion is:
@@ -3475,12 +3475,12 @@ Now we have what we need to define isomorphism and isomorphic groups. Each defin
 
 Definition: Let  $G_{1}$  and  $G_{2}$  be groups. Then  $G_{1}$  and  $G_{2}$  are isomorphic if and only if there exists a function  $\phi : G_{1} \to G_{2}$  such that:
 
-1.  $\phi$  is bijective;  
+1.  $\phi$  is bijective;
 2.  $\forall a, b \in G_1, \phi(ab) = \phi(a)\phi(b) \in G_2$ .
 
 Definition: Let  $G_{1}$  and  $G_{2}$  be groups. Then  $\phi : G_{1} \to G_{2}$  is an isomorphism if and only if:
 
-1.  $\phi$  is bijective;  
+1.  $\phi$  is bijective;
 2.  $\forall a, b \in G_1, \phi(ab) = \phi(a)\phi(b) \in G_2.$
 
 Separation, though, adds length. So you might see shorter versions.
@@ -3529,10 +3529,10 @@ Consider  $x,y\in G_2$
 
 Because  $\phi$  is bijective,  $\exists a, b \in G_1$  such that  $\phi(a) = x$  and  $\phi(b) = y$ .
 
-Thus  $xy = \phi(a)\phi(b)$  
-$= \phi (ab)$  because  $\phi$  is an isomorphism  
-$= \phi (ba)$  because  $G_{1}$  is abelian  
-$= \phi (b)\phi (a)$  because  $\phi$  is an isomorphism  
+Thus  $xy = \phi(a)\phi(b)$
+$= \phi (ab)$  because  $\phi$  is an isomorphism
+$= \phi (ba)$  because  $G_{1}$  is abelian
+$= \phi (b)\phi (a)$  because  $\phi$  is an isomorphism
 $= yx$
 
 Hence  $\forall x,y\in G_2,xy = yx$
@@ -4885,201 +4885,201 @@ Asking these questions should help you toward meaningful understanding: identify
 
 # BIBLIOGRAPHY
 
-Ainsworth, S., & Loizou, A. T. (2003). The effects of self-explanation when learning with text or diagrams. Cognitive Science, 27, 669-681.  
-Alcock, L. (2010). Mathematicians' perspectives on the teaching and learning of proof. In F. Hitt, D. Holton, & P. W. Thompson (Eds.), Research in collegiate mathematics education vii (pp. 63-92). Washington DC: MAA.  
-Alcock, L. (2013a). How to study as a mathematics major. Oxford: Oxford University Press.  
-Alcock, L. (2013b). How to study for a mathematics degree. Oxford: Oxford University Press.  
-Alcock, L. (2014). How to think about analysis. Oxford: Oxford University Press.  
-Alcock, L., Bailey, T., Inglis, M., & Docherty, P. (2014). The ability to reject invalid logical inferences predicts proof comprehension and mathematics performance. In Proceedings of the 17th conference on research in undergraduate mathematics education. Denver, CO.  
-Alcock, L., Brown, G., & Dunning, T. C. (2015). Independent study workbooks for proofs in group theory. International Journal of Research in Undergraduate Mathematics Education, 1, 3-26.  
-Alcock, L., Hodds, M., Roy, S., & Inglis, M. (2015). Investigating and improving undergraduate proof comprehension. Notices of the American Mathematical Society, 62, 742-752.  
-Alcock, L., & Inglis, M. (2008). Doctoral students' use of examples in evaluating and proving conjectures. Educational Studies in Mathematics, 69, 111-129.  
-Alcock, L., & Simpson, A. (2002). Definitions: dealing with categories mathematically. For the Learning of Mathematics, 22(2), 28-34.  
+Ainsworth, S., & Loizou, A. T. (2003). The effects of self-explanation when learning with text or diagrams. Cognitive Science, 27, 669-681.
+Alcock, L. (2010). Mathematicians' perspectives on the teaching and learning of proof. In F. Hitt, D. Holton, & P. W. Thompson (Eds.), Research in collegiate mathematics education vii (pp. 63-92). Washington DC: MAA.
+Alcock, L. (2013a). How to study as a mathematics major. Oxford: Oxford University Press.
+Alcock, L. (2013b). How to study for a mathematics degree. Oxford: Oxford University Press.
+Alcock, L. (2014). How to think about analysis. Oxford: Oxford University Press.
+Alcock, L., Bailey, T., Inglis, M., & Docherty, P. (2014). The ability to reject invalid logical inferences predicts proof comprehension and mathematics performance. In Proceedings of the 17th conference on research in undergraduate mathematics education. Denver, CO.
+Alcock, L., Brown, G., & Dunning, T. C. (2015). Independent study workbooks for proofs in group theory. International Journal of Research in Undergraduate Mathematics Education, 1, 3-26.
+Alcock, L., Hodds, M., Roy, S., & Inglis, M. (2015). Investigating and improving undergraduate proof comprehension. Notices of the American Mathematical Society, 62, 742-752.
+Alcock, L., & Inglis, M. (2008). Doctoral students' use of examples in evaluating and proving conjectures. Educational Studies in Mathematics, 69, 111-129.
+Alcock, L., & Simpson, A. (2002). Definitions: dealing with categories mathematically. For the Learning of Mathematics, 22(2), 28-34.
 Alcock, L., & Weber, K. (2010a). Referential and syntactic approaches to proving: Case studies from a transition-to-proof course. In F. Hitt, D. Holton,
 
-& P. W. Thompson (Eds.), Research in collegiate mathematics education vii (p. 93-114). Washington, DC: MAA.  
-Alcock, L., & Weber, K. (2010b). Undergraduates' example use in proof construction: Purposes and effectiveness. *Investigations in Mathematics Learning*, 3, 1-22.  
-Allenby, R. B. J. T. (1991). Rings, fields and groups: An introduction to abstract algebra. Oxford: Butterworth Heinemann.  
-Asghari, A. H., & Khosroshahi, L. G. (2017). Making associativity operational. International Journal of Science and Mathematics Education, 15, 1559-1577.  
-Ash, R. B. (2000). Basic abstract algebra for graduate students and advanced undergraduates. Mineola, NY: Dover Publications, Inc.  
-Asiala, M., Brown, A., Kleiman, J., & Mathews, D. (1998). The development of students' understanding of permutations and symmetries. International Journal of Computers for Mathematical Learning, 3, 13-43.  
-Asiala, M., Dubinsky, E., Matthews, D. W., Morics, S., & Oktac, A. (1997). Development of students' understanding of cosets, normality, and quotient groups. Journal of Mathematical Behavior, 16, 241-309.  
-Attridge, N., Doritou, M., & Inglis, M. (2015). The development of reasoning skills during compulsory 16 to 18 mathematics education. Research in Mathematics Education, 17, 20-37.  
-Attridge, N., & Inglis, M. (2013). Advanced mathematical study and the development of conditional reasoning skills. PLoS ONE, 8, e69399.  
-Bansilal, S., Brijlall, D., & Trigueros, M. (2017). An APOS study on preservice teachers' understanding of injections and surjections. Journal of Mathematical Behavior, 48, 22-37.  
-Bass, H. (2017). Designing opportunities to learn mathematics theory-building practices. Educational Studies in Mathematics, 95, 229-244.  
-Benjamin, A. S., Bjork, R. A., & Schwartz, B. L. (1998). The mismeasure of memory: When retrieval fluency is misleading as a metamnemonic index. Journal of Experimental Psychology: General, 127(1), 55.  
+& P. W. Thompson (Eds.), Research in collegiate mathematics education vii (p. 93-114). Washington, DC: MAA.
+Alcock, L., & Weber, K. (2010b). Undergraduates' example use in proof construction: Purposes and effectiveness. *Investigations in Mathematics Learning*, 3, 1-22.
+Allenby, R. B. J. T. (1991). Rings, fields and groups: An introduction to abstract algebra. Oxford: Butterworth Heinemann.
+Asghari, A. H., & Khosroshahi, L. G. (2017). Making associativity operational. International Journal of Science and Mathematics Education, 15, 1559-1577.
+Ash, R. B. (2000). Basic abstract algebra for graduate students and advanced undergraduates. Mineola, NY: Dover Publications, Inc.
+Asiala, M., Brown, A., Kleiman, J., & Mathews, D. (1998). The development of students' understanding of permutations and symmetries. International Journal of Computers for Mathematical Learning, 3, 13-43.
+Asiala, M., Dubinsky, E., Matthews, D. W., Morics, S., & Oktac, A. (1997). Development of students' understanding of cosets, normality, and quotient groups. Journal of Mathematical Behavior, 16, 241-309.
+Attridge, N., Doritou, M., & Inglis, M. (2015). The development of reasoning skills during compulsory 16 to 18 mathematics education. Research in Mathematics Education, 17, 20-37.
+Attridge, N., & Inglis, M. (2013). Advanced mathematical study and the development of conditional reasoning skills. PLoS ONE, 8, e69399.
+Bansilal, S., Brijlall, D., & Trigueros, M. (2017). An APOS study on preservice teachers' understanding of injections and surjections. Journal of Mathematical Behavior, 48, 22-37.
+Bass, H. (2017). Designing opportunities to learn mathematics theory-building practices. Educational Studies in Mathematics, 95, 229-244.
+Benjamin, A. S., Bjork, R. A., & Schwartz, B. L. (1998). The mismeasure of memory: When retrieval fluency is misleading as a metamnemonic index. Journal of Experimental Psychology: General, 127(1), 55.
 Bielaczyc, K., Pirolli, P. L., & Brown, A. L. (1995). Training in self-explanation and self-regulation strategies: Investigating the effects of knowledge acquisition activities on problem solving. Cognition and Instruction, 13, 221-252.
 
-Bjork, R. A., Dunlosky, J., & Kornell, N. (2013). Self-regulated learning: Beliefs, techniques, and illusions. Annual Review of Psychology, 64, 417-444.  
-Brown, A., DeVries, D. J., Dubinsky, E., & Thomas, K. (1997). Learning binary operations, groups and subgroups. Journal of Mathematical Behavior, 16, 187-239.  
-Brown, S. (2018). Difficult dialogs about degenerate cases: A proof script study. Journal of Mathematical Behavior, 52, 61-76.  
-Buchbinder, O., & Zaslavsky, O. (2011). Is this a coincidence? The role of examples in fostering a need for proof. ZDM: The International Journal on Mathematics Education, 43, 269-281.  
-Burn, B. (1996). What are the fundamental concepts of group theory? Educational Studies in Mathematics, 31, 371-377.  
-Burn, R. P. (1998). Participating in the learning of group theory. PRIMUS, 8, 304-316.  
-Cameron, P. J. (2008). Introduction to algebra. Oxford: Oxford University Press.  
-Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3), 354.  
-Chi, M. T. H., Leeuw, N. D., Chiu, M.-H., & LaVancher, C. (1994). Eliciting self-explanations improves understanding. Cognitive Science, 18, 439-477.  
-Clark, A. (1971). Elements of abstract algebra. New York: Dover Publications, Inc.  
-Conradie, J., & Frith, J. (2000). Comprehension tests in mathematics. Educational Studies in Mathematics, 42, 225-235.  
-Cook, J. P. (2014). The emergence of algebraic structure: Students come to understand units and zero-divisors. International Journal of Mathematical Education in Science and Technology, 45, 349-359.  
-Cook, J. P. (2018). An investigation of an undergraduate student's reasoning with zero-divisors and the zero-product property. Journal of Mathematical Behavior, 49, 95-115.  
+Bjork, R. A., Dunlosky, J., & Kornell, N. (2013). Self-regulated learning: Beliefs, techniques, and illusions. Annual Review of Psychology, 64, 417-444.
+Brown, A., DeVries, D. J., Dubinsky, E., & Thomas, K. (1997). Learning binary operations, groups and subgroups. Journal of Mathematical Behavior, 16, 187-239.
+Brown, S. (2018). Difficult dialogs about degenerate cases: A proof script study. Journal of Mathematical Behavior, 52, 61-76.
+Buchbinder, O., & Zaslavsky, O. (2011). Is this a coincidence? The role of examples in fostering a need for proof. ZDM: The International Journal on Mathematics Education, 43, 269-281.
+Burn, B. (1996). What are the fundamental concepts of group theory? Educational Studies in Mathematics, 31, 371-377.
+Burn, R. P. (1998). Participating in the learning of group theory. PRIMUS, 8, 304-316.
+Cameron, P. J. (2008). Introduction to algebra. Oxford: Oxford University Press.
+Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3), 354.
+Chi, M. T. H., Leeuw, N. D., Chiu, M.-H., & LaVancher, C. (1994). Eliciting self-explanations improves understanding. Cognitive Science, 18, 439-477.
+Clark, A. (1971). Elements of abstract algebra. New York: Dover Publications, Inc.
+Conradie, J., & Frith, J. (2000). Comprehension tests in mathematics. Educational Studies in Mathematics, 42, 225-235.
+Cook, J. P. (2014). The emergence of algebraic structure: Students come to understand units and zero-divisors. International Journal of Mathematical Education in Science and Technology, 45, 349-359.
+Cook, J. P. (2018). An investigation of an undergraduate student's reasoning with zero-divisors and the zero-product property. Journal of Mathematical Behavior, 49, 95-115.
 Cook, J. P., & Fukawa-Connelly, T. (2015). The pedagogical examples of groups and rings that algebraists think are most important in an introductory course. Canadian Journal of Science, Mathematics and Technology Education, 15, 171-185.
 
-Cowen, C. (1991). Teaching and testing mathematics reading. American Mathematical Monthly, 98, 50-53.  
-Crawford, K., Gordon, S., Nicholas, J., & Prosser, M. (1998). University mathematics students' conceptions of mathematics. Studies in Higher Education, 23, 87-94.  
-Credé, M., & Kuncel, N. R. (2008). Study habits, skills, and attitudes. Perspectives on Psychological Science, 3, 425-453.  
-Dawkins, P. C. (2017). On the importance of set-based meanings for categories and connectives in mathematical logic. International Journal of Research in Undergraduate Mathematics Education, 3, 496-522.  
-Dawkins, P. C., & Cook, J. P. (2017). Guiding reinvention of conventional tools of mathematical logic: Students' reasoning about mathematical disjunctions. Educational Studies in Mathematics, 94, 241-256.  
-Dawkins, P. C., & Karunakaran, S. S. (2016). Why research on proof-oriented mathematical behavior should attend to the role of particular mathematical content. The Journal of Mathematical Behavior, 44, 65-75.  
-de Villiers, M. (1990). The role and function of proof in mathematics. *Pythagoras*, 24, 17-24.  
-Diakidoy, I.-A. N., Mouskounti, T., Fella, A., & Ioannides, C. (2016). Comprehension processes and outcomes with refutation and expository texts and their contribution to learning. Learning and Instruction, 41, 60-69.  
-Dubinsky, E., Dautermann, J., Leron, U., & Zazkis, R. (1994). On learning fundamental concepts of group theory. Educational Studies in Mathematics, 27, 267-305.  
-Dubinsky, E., Dautermann, J., Leron, U., & Zazkis, R. (1997). A reaction to Burn's "What are the fundamental concepts of group theory?" Educational Studies in Mathematics, 34, 249-253.  
-Dubinsky, E., & Yiparaki, O. (2000). On student understanding of AE and EA quantification. In E. Dubinsky, A. H. Schofield, & J. Kaput (Eds.), Research in collegiate mathematics IV (pp. 239-289). Providence: RI: American Mathematical Society.  
-Dummit, D. S., & Foote, R. M. (2004). Abstract algebra. New Delhi: John Wiley & Sons.  
+Cowen, C. (1991). Teaching and testing mathematics reading. American Mathematical Monthly, 98, 50-53.
+Crawford, K., Gordon, S., Nicholas, J., & Prosser, M. (1998). University mathematics students' conceptions of mathematics. Studies in Higher Education, 23, 87-94.
+Credé, M., & Kuncel, N. R. (2008). Study habits, skills, and attitudes. Perspectives on Psychological Science, 3, 425-453.
+Dawkins, P. C. (2017). On the importance of set-based meanings for categories and connectives in mathematical logic. International Journal of Research in Undergraduate Mathematics Education, 3, 496-522.
+Dawkins, P. C., & Cook, J. P. (2017). Guiding reinvention of conventional tools of mathematical logic: Students' reasoning about mathematical disjunctions. Educational Studies in Mathematics, 94, 241-256.
+Dawkins, P. C., & Karunakaran, S. S. (2016). Why research on proof-oriented mathematical behavior should attend to the role of particular mathematical content. The Journal of Mathematical Behavior, 44, 65-75.
+de Villiers, M. (1990). The role and function of proof in mathematics. *Pythagoras*, 24, 17-24.
+Diakidoy, I.-A. N., Mouskounti, T., Fella, A., & Ioannides, C. (2016). Comprehension processes and outcomes with refutation and expository texts and their contribution to learning. Learning and Instruction, 41, 60-69.
+Dubinsky, E., Dautermann, J., Leron, U., & Zazkis, R. (1994). On learning fundamental concepts of group theory. Educational Studies in Mathematics, 27, 267-305.
+Dubinsky, E., Dautermann, J., Leron, U., & Zazkis, R. (1997). A reaction to Burn's "What are the fundamental concepts of group theory?" Educational Studies in Mathematics, 34, 249-253.
+Dubinsky, E., & Yiparaki, O. (2000). On student understanding of AE and EA quantification. In E. Dubinsky, A. H. Schofield, & J. Kaput (Eds.), Research in collegiate mathematics IV (pp. 239-289). Providence: RI: American Mathematical Society.
+Dummit, D. S., & Foote, R. M. (2004). Abstract algebra. New Delhi: John Wiley & Sons.
 Durand-Guerrier, V. (2003). Which notion of implication is the right one? From logical considerations to a didactic perspective. Educational Studies in Mathematics, 53, 5-34.
 
-Durand-Guerrier, V. (2008). Truth versus validity in mathematical proof. ZDM: The International Journal on Mathematics Education, 40, 373-384.  
-Durkin, K. (2011). The self-explanation effect when learning mathematics: A meta-analysis. Evanston IL: Society for Research on Educational Effectiveness.  
-Edwards, B. S., & Ward, M. B. (2004). Surprises from mathematics education research: Student (mis)use of mathematical definitions. American Mathematical Monthly, 111, 411-424.  
-Epp, S. (2003). The role of logic in teaching proof. American Mathematical Monthly, 110, 886-899.  
-Freleigh, J. B. (2014). A first course in abstract algebra. Harlow, Essex: Pearson.  
-Fukawa-Connelly, T. (2012). A case study of one instructor's lecture-based teaching of proof in abstract algebra: Making sense of her pedagogical moves. Educational Studies in Mathematics, 81, 325-345.  
-Fukawa-Connelly, T. (2012). Classroom sociomathematical norms for proof presentation in undergraduate abstract algebra. Journal of Mathematical Behavior, 31, 401-416.  
-Fukawa-Connelly, T. (2015). Responsibility for proving and defining in abstract algebra class. International Journal of Mathematical Education in Science and Technology, 47, 733-749.  
-Fukawa-Connelly, T., Weber, K., & Mejía-Ramos, J. P. (2017). Informal content and student note-taking in advanced mathematics classes. Journal for Research in Mathematics Education, 48, 567-579.  
-Fukawa-Connelly, T. P., & Newton, C. (2014). Analyzing the teaching of advanced mathematics courses via the enacted example space. Educational Studies in Mathematics, 87, 323-349.  
-Giaquinto, M. (2007). Visual thinking in mathematics. Oxford: Oxford University Press.  
-Goldenberg, P., & Mason, J. (2008). Shedding light on and with example spaces. Educational Studies in Mathematics, 69, 183-194.  
-Green, J. A. (1965). Sets  $\mathcal{O}$ -groups: A first course in algebra. London: Routledge & Kegan Paul.  
+Durand-Guerrier, V. (2008). Truth versus validity in mathematical proof. ZDM: The International Journal on Mathematics Education, 40, 373-384.
+Durkin, K. (2011). The self-explanation effect when learning mathematics: A meta-analysis. Evanston IL: Society for Research on Educational Effectiveness.
+Edwards, B. S., & Ward, M. B. (2004). Surprises from mathematics education research: Student (mis)use of mathematical definitions. American Mathematical Monthly, 111, 411-424.
+Epp, S. (2003). The role of logic in teaching proof. American Mathematical Monthly, 110, 886-899.
+Freleigh, J. B. (2014). A first course in abstract algebra. Harlow, Essex: Pearson.
+Fukawa-Connelly, T. (2012). A case study of one instructor's lecture-based teaching of proof in abstract algebra: Making sense of her pedagogical moves. Educational Studies in Mathematics, 81, 325-345.
+Fukawa-Connelly, T. (2012). Classroom sociomathematical norms for proof presentation in undergraduate abstract algebra. Journal of Mathematical Behavior, 31, 401-416.
+Fukawa-Connelly, T. (2015). Responsibility for proving and defining in abstract algebra class. International Journal of Mathematical Education in Science and Technology, 47, 733-749.
+Fukawa-Connelly, T., Weber, K., & Mejía-Ramos, J. P. (2017). Informal content and student note-taking in advanced mathematics classes. Journal for Research in Mathematics Education, 48, 567-579.
+Fukawa-Connelly, T. P., & Newton, C. (2014). Analyzing the teaching of advanced mathematics courses via the enacted example space. Educational Studies in Mathematics, 87, 323-349.
+Giaquinto, M. (2007). Visual thinking in mathematics. Oxford: Oxford University Press.
+Goldenberg, P., & Mason, J. (2008). Shedding light on and with example spaces. Educational Studies in Mathematics, 69, 183-194.
+Green, J. A. (1965). Sets  $\mathcal{O}$ -groups: A first course in algebra. London: Routledge & Kegan Paul.
 Hadamard, J. (1945). The psychology of invention in the mathematical field (2nd ed.). New York: Dover Publications.
 
-Hadar, N., & Hadass, R. (1981). Between associativity and commutativity. International Journal of Mathematical Education in Science and Technology, 12, 535-539.  
-Harel, G., & Tall, D. (1989). The general, the abstract, and the generic in advanced mathematics. For the Learning of Mathematics, 11(1), 38-42.  
-Hausberger, T. (2017). The (homo)morphism concept: Didactic transposition, meta-discourse and thematisation. International Journal of Research in Undergraduate Mathematics Education, 3, 417-443.  
-Hayward, C. N., Kogan, M., & Laursen, S. L. (2016). Facilitating instructor adoption of inquiry-based learning in college mathematics. International Journal of Research in Undergraduate Mathematics Education, 2, 59-82.  
-Hazzan, O. (1994). A students' belief about the solutions of the equation  $x = x^{-1}$  in a group. In J. P. da Ponte & J. F. Matos (Eds.), Proceedings of the 18th international conference on the psychology of mathematics education (Vol. 3, pp. 49-56). Lisbon, Portugal: IGPME.  
-Hazzan, O. (1999). Reducing abstraction level when learning abstract algebra concepts. Educational Studies in Mathematics, 40, 71-90.  
-Hazzan, O. (2001). Reducing abstraction: The case of constructing an operation table for a group. Journal of Mathematical Behavior, 20, 163-172.  
-Hazzan, O., & Leron, U. (1996). Students' use and misuse of mathematical theorems: The case of Lagrange's theorem. For the Learning of Mathematics, 16(1), 23-26.  
-Hodds, M., Alcock, L., & Inglis, M. (2014). Self-explanation training improves proof comprehension. Journal for Research in Mathematics Education, 45, 62-101.  
-Hoyles, C., & Kuchemann, D. (2002). Students' understanding of logical implication. Educational Studies in Mathematics, 51, 193-223.  
-Hub, A., & Dawkins, P. C. (2018). On the construction of set-based meanings for the truth of mathematical conditionals. Journal of Mathematical Behavior, 50, 90-102.  
-Inglis, M., & Alcock, L. (2012). Expert and novice approaches to reading mathematical proofs. Journal for Research in Mathematics Education, 43, 358-390.  
-Inglis, M., & Attridge, N. (2016). Does mathematical study develop logical thinking? Testing the theory of formal discipline. London: World Scientific.  
+Hadar, N., & Hadass, R. (1981). Between associativity and commutativity. International Journal of Mathematical Education in Science and Technology, 12, 535-539.
+Harel, G., & Tall, D. (1989). The general, the abstract, and the generic in advanced mathematics. For the Learning of Mathematics, 11(1), 38-42.
+Hausberger, T. (2017). The (homo)morphism concept: Didactic transposition, meta-discourse and thematisation. International Journal of Research in Undergraduate Mathematics Education, 3, 417-443.
+Hayward, C. N., Kogan, M., & Laursen, S. L. (2016). Facilitating instructor adoption of inquiry-based learning in college mathematics. International Journal of Research in Undergraduate Mathematics Education, 2, 59-82.
+Hazzan, O. (1994). A students' belief about the solutions of the equation  $x = x^{-1}$  in a group. In J. P. da Ponte & J. F. Matos (Eds.), Proceedings of the 18th international conference on the psychology of mathematics education (Vol. 3, pp. 49-56). Lisbon, Portugal: IGPME.
+Hazzan, O. (1999). Reducing abstraction level when learning abstract algebra concepts. Educational Studies in Mathematics, 40, 71-90.
+Hazzan, O. (2001). Reducing abstraction: The case of constructing an operation table for a group. Journal of Mathematical Behavior, 20, 163-172.
+Hazzan, O., & Leron, U. (1996). Students' use and misuse of mathematical theorems: The case of Lagrange's theorem. For the Learning of Mathematics, 16(1), 23-26.
+Hodds, M., Alcock, L., & Inglis, M. (2014). Self-explanation training improves proof comprehension. Journal for Research in Mathematics Education, 45, 62-101.
+Hoyles, C., & Kuchemann, D. (2002). Students' understanding of logical implication. Educational Studies in Mathematics, 51, 193-223.
+Hub, A., & Dawkins, P. C. (2018). On the construction of set-based meanings for the truth of mathematical conditionals. Journal of Mathematical Behavior, 50, 90-102.
+Inglis, M., & Alcock, L. (2012). Expert and novice approaches to reading mathematical proofs. Journal for Research in Mathematics Education, 43, 358-390.
+Inglis, M., & Attridge, N. (2016). Does mathematical study develop logical thinking? Testing the theory of formal discipline. London: World Scientific.
 Inglis, M., & Mejía-Ramos, J. P. (2009). On the persuasiveness of visual arguments in mathematics. Foundations of Science, 14, 97-110.
 
-Inglis, M., Mejia-Ramos, J. P., Weber, K., & Alcock, L. (2013). On mathematicians' different standards when evaluating elementary proofs. Topics in Cognitive Science, 5, 270-282.  
-Inglis, M., & Simpson, A. (2008). Conditional inference and advanced mathematical study. Educational Studies in Mathematics, 67, 187-204.  
-Inglis, M., & Simpson, A. (2009). Conditional inference and advanced mathematical study: Further evidence. Educational Studies in Mathematics, 72, 185-198.  
-Johnson, E., Keller, R., & Fukawa-Connelly, T. (2018). Results from a survey of abstract algebra instructors across the United States: Understanding the choice to (not) lecture. International Journal of Research in Undergraduate Mathematics Education, 4, 254-285.  
-Kapler, I. V., Weston, T., & Wiseheart, M. (2015). Spacing in a simulated undergraduate classroom: Long-term benefits for factual and higher-level learning. Learning and Instruction, 36, 38-45.  
-Karpicke, J. D., & Blunt, J. R. (2011). Retrieval practice produces more learning than elaborative studying with concept mapping. Science, 331(6018), 772-775.  
-Kirshner, D., & Awtry, T. (2004). Visual salience of algebraic transformations. Journal for Research in Mathematics Education, 35, 224-257.  
-Kleiner, I. (1986). The evolution of group theory: A brief survey. Mathematics Magazine, 59, 195-215.  
-Kleiner, I. (1999). Field theory: From equations to axiomatization. American Mathematical Monthly, 10, 677-684.  
-Knuth, E., Zaslavsky, O., & Ellis, A. (2017). The role and use of examples in learning to prove. Journal of Mathematical Behavior, 53.  
-Koriat, A., Bjork, R. A., Sheffer, L., & Bar, S. K. (2004). Predicting one's own forgetting: The role of experience-based and theory-based processes. Journal of Experimental Psychology: General, 133(4), 643.  
-Kornell, N. (2009). Optimising learning using flashcards: Spacing is more effective than cramming. Applied Cognitive Psychology, 23(9), 1297-1317.  
-Krupnik, V., Fukawa-Connelly, T., & Weber, K. (2018). Students' epistemological frames and their interpretation of lectures in advanced mathematics. Journal of Mathematical Behavior, 49, 173-183.  
+Inglis, M., Mejia-Ramos, J. P., Weber, K., & Alcock, L. (2013). On mathematicians' different standards when evaluating elementary proofs. Topics in Cognitive Science, 5, 270-282.
+Inglis, M., & Simpson, A. (2008). Conditional inference and advanced mathematical study. Educational Studies in Mathematics, 67, 187-204.
+Inglis, M., & Simpson, A. (2009). Conditional inference and advanced mathematical study: Further evidence. Educational Studies in Mathematics, 72, 185-198.
+Johnson, E., Keller, R., & Fukawa-Connelly, T. (2018). Results from a survey of abstract algebra instructors across the United States: Understanding the choice to (not) lecture. International Journal of Research in Undergraduate Mathematics Education, 4, 254-285.
+Kapler, I. V., Weston, T., & Wiseheart, M. (2015). Spacing in a simulated undergraduate classroom: Long-term benefits for factual and higher-level learning. Learning and Instruction, 36, 38-45.
+Karpicke, J. D., & Blunt, J. R. (2011). Retrieval practice produces more learning than elaborative studying with concept mapping. Science, 331(6018), 772-775.
+Kirshner, D., & Awtry, T. (2004). Visual salience of algebraic transformations. Journal for Research in Mathematics Education, 35, 224-257.
+Kleiner, I. (1986). The evolution of group theory: A brief survey. Mathematics Magazine, 59, 195-215.
+Kleiner, I. (1999). Field theory: From equations to axiomatization. American Mathematical Monthly, 10, 677-684.
+Knuth, E., Zaslavsky, O., & Ellis, A. (2017). The role and use of examples in learning to prove. Journal of Mathematical Behavior, 53.
+Koriat, A., Bjork, R. A., Sheffer, L., & Bar, S. K. (2004). Predicting one's own forgetting: The role of experience-based and theory-based processes. Journal of Experimental Psychology: General, 133(4), 643.
+Kornell, N. (2009). Optimising learning using flashcards: Spacing is more effective than cramming. Applied Cognitive Psychology, 23(9), 1297-1317.
+Krupnik, V., Fukawa-Connelly, T., & Weber, K. (2018). Students' epistemological frames and their interpretation of lectures in advanced mathematics. Journal of Mathematical Behavior, 49, 173-183.
 Lai, Y., & Weber, K. (2014). Factors mathematicians profess to consider when presenting pedagogical proofs. Educational Studies in Mathematics, 85, 93-108.
 
-Lai, Y., Weber, K., & Mejía-Ramos, J.-P. (2012). Mathematicians' perspectives on features of a good pedagogical proof. Cognition and Instruction, 30, 146-169.  
-Lajoie, C., & Mura, R. (2000). What's in a name? A learning difficulty in connection with cyclic groups. For the Learning of Mathematics, 20(3), 29-33.  
-Larsen, S. (2009). Reinventing the concepts of group and isomorphism: The case of Jessica and Sandra. Journal of Mathematical Behavior, 28, 119-137.  
-Larsen, S. (2010). Struggling to disentangle the associative and commutative properties. For the Learning of Mathematics, 30(1), 38-43.  
-Larsen, S. (2013). A local instructional theory for the guided reinvention of the group and isomorphism concepts. Journal of Mathematical Behavior, 32, 712-725.  
-Larsen, S., Johnson, E., & Bartlo, J. (2013). Designing and scaling up an innovation in abstract algebra. The Journal of Mathematical Behavior, 32(4), 693-711.  
-Lem, S., Onghena, P., Verschaffel, L., & Van Dooren, W. (2017). Using refutational text in mathematics education. ZDM Mathematics Education, 49, 509-518.  
-Leron, U., & Dubinsky, E. (1995). An abstract algebra story. American Mathematical Monthly, 102, 227-242.  
-Leron, U., Hazzan, O., & Zazkis, R. (1995). Learning group isomorphism: A crossroads of many concepts. Educational Studies in Mathematics, 29, '153-174.  
-Lew, K., Fukawa-Connelly, T. P., Mejía-Ramos, J. P., & Weber, K. (2016). Lectures in advanced mathematics: Why students might not understand what the mathematics professor is trying to convey. Journal for Research in Mathematics Education, 47, 162-198.  
-Lew, K., & Meía-Ramos, J. P. (2019). Linguistic conventions of mathematical proof writing at the undergraduate level: Mathematicians' and students' perspectives. Journal for Research in Mathematics Education, 50, 121-155.  
-Lew, K., & Zazkis, D. (2019). Undergraduate mathematics students' at-home exploration of a prove-or-disprove task. Journal of Mathematical Behavior, 100674.  
+Lai, Y., Weber, K., & Mejía-Ramos, J.-P. (2012). Mathematicians' perspectives on features of a good pedagogical proof. Cognition and Instruction, 30, 146-169.
+Lajoie, C., & Mura, R. (2000). What's in a name? A learning difficulty in connection with cyclic groups. For the Learning of Mathematics, 20(3), 29-33.
+Larsen, S. (2009). Reinventing the concepts of group and isomorphism: The case of Jessica and Sandra. Journal of Mathematical Behavior, 28, 119-137.
+Larsen, S. (2010). Struggling to disentangle the associative and commutative properties. For the Learning of Mathematics, 30(1), 38-43.
+Larsen, S. (2013). A local instructional theory for the guided reinvention of the group and isomorphism concepts. Journal of Mathematical Behavior, 32, 712-725.
+Larsen, S., Johnson, E., & Bartlo, J. (2013). Designing and scaling up an innovation in abstract algebra. The Journal of Mathematical Behavior, 32(4), 693-711.
+Lem, S., Onghena, P., Verschaffel, L., & Van Dooren, W. (2017). Using refutational text in mathematics education. ZDM Mathematics Education, 49, 509-518.
+Leron, U., & Dubinsky, E. (1995). An abstract algebra story. American Mathematical Monthly, 102, 227-242.
+Leron, U., Hazzan, O., & Zazkis, R. (1995). Learning group isomorphism: A crossroads of many concepts. Educational Studies in Mathematics, 29, '153-174.
+Lew, K., Fukawa-Connelly, T. P., Mejía-Ramos, J. P., & Weber, K. (2016). Lectures in advanced mathematics: Why students might not understand what the mathematics professor is trying to convey. Journal for Research in Mathematics Education, 47, 162-198.
+Lew, K., & Meía-Ramos, J. P. (2019). Linguistic conventions of mathematical proof writing at the undergraduate level: Mathematicians' and students' perspectives. Journal for Research in Mathematics Education, 50, 121-155.
+Lew, K., & Zazkis, D. (2019). Undergraduate mathematics students' at-home exploration of a prove-or-disprove task. Journal of Mathematical Behavior, 100674.
 Lockwood, E., Ellis, E. B., & Lynch, A. G. (2016). Mathematicians' example-related activity when exploring and proving conjectures. International Journal of Research in Undergraduate Mathematics Education, 2, 165-196.
 
-Mason, J., & Pimm, D. (1984). Generic examples: Seeing the general in the particular. Educational Studies in Mathematics, 15, 277-289.  
-Mejía-Ramos, J.-P., Fuller, E., Weber, K., Rhoads, K., & Samkoff, A. (2012). An assessment model for proof comprehension in undergraduate mathematics. Educational Studies in Mathematics, 79, 3-18.  
-Mejía-Ramos, J.-P., & Weber, K. (2014). Why and how mathematicians read proofs: Further evidence from a survey study. Educational Studies in Mathematics, 85, 161-173.  
-Melhuish, K. (2018). Three conceptual replication studies in group theory. Journal for Research in Mathematics Education, 49, 9-38.  
-Melhuish, K., Larsen, S., & Cook, S. (2019). When students prove a theorem without explicitly using a necessary condition: Digging into a subtle problem from practice. International Journal of Research in Undergraduate Mathematics Education, 5, 205-227.  
-Melhuish, K. M. (2019). The group theory concept assessment: A tool for measuring conceptual understanding in introductory group theory. International Journal of Research in Undergraduate Mathematics Education, 5, 359-393.  
-Melhuish, K. M., & Fagan, J. B. (2017). Exploring student conceptions of binary operation. In Proceedings of the twentieth annual conference on research in undergraduate mathematics education. San Diego, CA: RUME.  
-Michener, E. R. (1978). Understanding understanding mathematics. Cognitive Science, 2, 361-383.  
-Mills, M. (2014). A framework for example usage in proof presentations. Journal of Mathematical Behavior, 33, 106-118.  
-Moore, R. (1994). Making the transition to formal proof. Educational Studies in Mathematics, 27, 249-266.  
-Moore, R. C. (2016). Mathematics professors' evaluation of students' proofs: A complex teaching practice. International Journal of Research in Undergraduate Mathematics Education, 2, 246-278.  
-Nardi, E. (2000). Mathematics undergraduates' responses to semantic abbreviations, 'geometric' images and multi-level abstractions in group theory. Educational Studies in Mathematics, 43, 169-189.  
+Mason, J., & Pimm, D. (1984). Generic examples: Seeing the general in the particular. Educational Studies in Mathematics, 15, 277-289.
+Mejía-Ramos, J.-P., Fuller, E., Weber, K., Rhoads, K., & Samkoff, A. (2012). An assessment model for proof comprehension in undergraduate mathematics. Educational Studies in Mathematics, 79, 3-18.
+Mejía-Ramos, J.-P., & Weber, K. (2014). Why and how mathematicians read proofs: Further evidence from a survey study. Educational Studies in Mathematics, 85, 161-173.
+Melhuish, K. (2018). Three conceptual replication studies in group theory. Journal for Research in Mathematics Education, 49, 9-38.
+Melhuish, K., Larsen, S., & Cook, S. (2019). When students prove a theorem without explicitly using a necessary condition: Digging into a subtle problem from practice. International Journal of Research in Undergraduate Mathematics Education, 5, 205-227.
+Melhuish, K. M. (2019). The group theory concept assessment: A tool for measuring conceptual understanding in introductory group theory. International Journal of Research in Undergraduate Mathematics Education, 5, 359-393.
+Melhuish, K. M., & Fagan, J. B. (2017). Exploring student conceptions of binary operation. In Proceedings of the twentieth annual conference on research in undergraduate mathematics education. San Diego, CA: RUME.
+Michener, E. R. (1978). Understanding understanding mathematics. Cognitive Science, 2, 361-383.
+Mills, M. (2014). A framework for example usage in proof presentations. Journal of Mathematical Behavior, 33, 106-118.
+Moore, R. (1994). Making the transition to formal proof. Educational Studies in Mathematics, 27, 249-266.
+Moore, R. C. (2016). Mathematics professors' evaluation of students' proofs: A complex teaching practice. International Journal of Research in Undergraduate Mathematics Education, 2, 246-278.
+Nardi, E. (2000). Mathematics undergraduates' responses to semantic abbreviations, 'geometric' images and multi-level abstractions in group theory. Educational Studies in Mathematics, 43, 169-189.
 Nicholson, J. (1993). The development and understanding of the concept of quotient group. Historia Mathematica, 20(1), 68-88.
 
-Novotná, J., & Hoch, M. (2008). How structure sense for algebraic expressions or equations is related to structure sense for abstract algebra. Mathematics Education Research Journal, 20, 93-104.  
-Ott, N., Brünken, R., Vogel, M., & Malone, S. (2018). Multiple symbolic representations: The combination of formula and text supports problem solving in the mathematical field of propositional logic. Learning and Instruction, 58, 88-105.  
-Panse, A., Alcock, L., & Inglis, M. (2018). Reading proofs for validation and comprehension: An expert-novice eye-movement study. International Journal of Research in Undergraduate Mathematics Education, 4, 357-375.  
-Peled, I., & Zaslavsky, O. (1997). Counter-examples that (only) prove and counter-examples that (also) explain. *Focus on Learning Problems in Mathematics*, 19, 49-61.  
-Perry, W. G. (1988). Different worlds in the same classroom. In P. Ramsden (Ed.), Improving learning: New perspectives (pp. 145-161). London: Kogan Page.  
-Pinter, C. C. (1982). A book of abstract algebra. Mineola, NY: Dover Publications, Inc.  
-Pinto, A. (2019). Variability in the formal and informal content instructors convey in lectures. Journal of Mathematical Behavior, 54, 100680.  
-Pinto, A., & Karsenty, R. (2018). From course design to presentations of proofs: How mathematics professors attend to student independent proof reading. Journal of Mathematical Behavior, 49, 129-144.  
-Pritchard, D. (2010). Where learning starts? A framework for thinking about lectures in university mathematics. International Journal of Mathematical Education in Science and Technology, 41, 609-623.  
-Raman, M. (2004). Epistemological messages conveyed by three high-school and college mathematics textbooks. Journal of Mathematical Behavior, 23, 389-404.  
-Rittle-Johnson, B., Loehr, A. M., & Durkin, K. (2017). Promoting self-explanation to improve mathematics learning: A meta-analysis and instructional design principles. ZDM Mathematics Education, 49, 599-611.  
-Rohrer, D., Dedrick, R. F., & Stershic, S. (2015). Interleaved practice improves mathematics learning. Journal of Educational Psychology, 107, 900-908.  
+Novotná, J., & Hoch, M. (2008). How structure sense for algebraic expressions or equations is related to structure sense for abstract algebra. Mathematics Education Research Journal, 20, 93-104.
+Ott, N., Brünken, R., Vogel, M., & Malone, S. (2018). Multiple symbolic representations: The combination of formula and text supports problem solving in the mathematical field of propositional logic. Learning and Instruction, 58, 88-105.
+Panse, A., Alcock, L., & Inglis, M. (2018). Reading proofs for validation and comprehension: An expert-novice eye-movement study. International Journal of Research in Undergraduate Mathematics Education, 4, 357-375.
+Peled, I., & Zaslavsky, O. (1997). Counter-examples that (only) prove and counter-examples that (also) explain. *Focus on Learning Problems in Mathematics*, 19, 49-61.
+Perry, W. G. (1988). Different worlds in the same classroom. In P. Ramsden (Ed.), Improving learning: New perspectives (pp. 145-161). London: Kogan Page.
+Pinter, C. C. (1982). A book of abstract algebra. Mineola, NY: Dover Publications, Inc.
+Pinto, A. (2019). Variability in the formal and informal content instructors convey in lectures. Journal of Mathematical Behavior, 54, 100680.
+Pinto, A., & Karsenty, R. (2018). From course design to presentations of proofs: How mathematics professors attend to student independent proof reading. Journal of Mathematical Behavior, 49, 129-144.
+Pritchard, D. (2010). Where learning starts? A framework for thinking about lectures in university mathematics. International Journal of Mathematical Education in Science and Technology, 41, 609-623.
+Raman, M. (2004). Epistemological messages conveyed by three high-school and college mathematics textbooks. Journal of Mathematical Behavior, 23, 389-404.
+Rittle-Johnson, B., Loehr, A. M., & Durkin, K. (2017). Promoting self-explanation to improve mathematics learning: A meta-analysis and instructional design principles. ZDM Mathematics Education, 49, 599-611.
+Rohrer, D., Dedrick, R. F., & Stershic, S. (2015). Interleaved practice improves mathematics learning. Journal of Educational Psychology, 107, 900-908.
 Rohrer, D., & Pashler, H. (2010). Recent research on human learning challenges conventional instructional strategies. Educational Researcher, 39, 406-412.
 
-Roy, M., & Chi, M. T. H. (2005). The self-explanation principle in multimedia learning. In E. Mayer (Ed.), The Cambridge handbook of multimedia learning (pp. 271-286). Cambridge: Cambridge University Press.  
-Roy, S., Alcock, L., & Inglis, M. (2017). Multimedia resources designed to support learning from written proofs: An eye-movement study. Educational Studies in Mathematics, 96, 249-266.  
-Samkoff, A., Lai, Y., & Weber, K. (2012). On the different ways that mathematicians use diagrams in proof construction. Research in Mathematics Education, 14(1), 49-67.  
-Sandefur, J., Mason, J., Stylianides, G. J., & Watson, A. (2013). Generating and using examples in the proving process. Educational Studies in Mathematics, 83, 323-340.  
-Savic, M. (2015). The incubation effect: How mathematicians recover from proving impasses. The Journal of Mathematical Behavior, 39, 67-78.  
-Schoenfeld, A. H. (1985). Mathematical problem solving. San Diego: Academic Press.  
-Schotter, E. R., Tran, R., & Rayner, K. (2014). Don't believe what you read (only once): Comprehension is supported by regressions during reading. Psychological Science, 25, 1218-1226.  
-Segal, J. (2000). Learning about mathematical proof: Conviction and validity. Journal of Mathematical Behavior, 18(2), 191-210.  
-Selden, A., & Selden, J. (1987). Errors and misconceptions in college level theorem proving. In Proceedings of the second international seminar on misconceptions and educational strategies in science and mathematics (pp. 457-470). New York: Cornell University.  
-Selden, A., & Selden, J. (2003). Validations of proofs considered as texts: Can undergraduates tell whether an argument proves a theorem? Journal for Research in Mathematics Education, 34, 4-36.  
-Selden, J., & Selden, A. (1995). Unpacking the logic of mathematical statements. Educational Studies in Mathematics, 29, 123-151.  
-Sfard, A. (1991). On the dual nature of mathematical conceptions: Reflections on processes and objects as different sides of the same coin. Educational Studies in Mathematics, 22, 1-36.  
+Roy, M., & Chi, M. T. H. (2005). The self-explanation principle in multimedia learning. In E. Mayer (Ed.), The Cambridge handbook of multimedia learning (pp. 271-286). Cambridge: Cambridge University Press.
+Roy, S., Alcock, L., & Inglis, M. (2017). Multimedia resources designed to support learning from written proofs: An eye-movement study. Educational Studies in Mathematics, 96, 249-266.
+Samkoff, A., Lai, Y., & Weber, K. (2012). On the different ways that mathematicians use diagrams in proof construction. Research in Mathematics Education, 14(1), 49-67.
+Sandefur, J., Mason, J., Stylianides, G. J., & Watson, A. (2013). Generating and using examples in the proving process. Educational Studies in Mathematics, 83, 323-340.
+Savic, M. (2015). The incubation effect: How mathematicians recover from proving impasses. The Journal of Mathematical Behavior, 39, 67-78.
+Schoenfeld, A. H. (1985). Mathematical problem solving. San Diego: Academic Press.
+Schotter, E. R., Tran, R., & Rayner, K. (2014). Don't believe what you read (only once): Comprehension is supported by regressions during reading. Psychological Science, 25, 1218-1226.
+Segal, J. (2000). Learning about mathematical proof: Conviction and validity. Journal of Mathematical Behavior, 18(2), 191-210.
+Selden, A., & Selden, J. (1987). Errors and misconceptions in college level theorem proving. In Proceedings of the second international seminar on misconceptions and educational strategies in science and mathematics (pp. 457-470). New York: Cornell University.
+Selden, A., & Selden, J. (2003). Validations of proofs considered as texts: Can undergraduates tell whether an argument proves a theorem? Journal for Research in Mathematics Education, 34, 4-36.
+Selden, J., & Selden, A. (1995). Unpacking the logic of mathematical statements. Educational Studies in Mathematics, 29, 123-151.
+Sfard, A. (1991). On the dual nature of mathematical conceptions: Reflections on processes and objects as different sides of the same coin. Educational Studies in Mathematics, 22, 1-36.
 Sfard, A., & Linchevski, L. (1994). The gains and pitfalls of reification - the case of algebra. Educational Studies in Mathematics, 26, 191-228.
 
-Shepherd, M. D., Selden, A., & Selden, J. (2012). University students' reading of their first-year mathematics textbooks. *Mathematical Thinking and Learning*, 14, 226-256.  
-Shepherd, M. D., & van de Sande, C. C. (2014). Reading mathematics for understanding—from novice to expert. The Journal of Mathematical Behavior, 35, 74-86.  
-Simpson, A., & Stehlíková, N. (2006). Apprehending mathematical structure: A case study of coming to understand a commutative ring. Educational Studies in Mathematics, 61, 347-371.  
-Skemp, R. R. (1976). Relational understanding and instrumental understanding. Mathematics Teaching, 77, 20-26.  
-Stylianides, A. J., & Stylianides, G. J. (2009). Proof constructions and evaluations. Educational Studies in Mathematics, 72, 237-253.  
-Stylianides, A. J., Stylianides, G. J., & Philippou, G. N. (2004). Undergraduate students' understanding of the contraposition equivalence rule in symbolic and verbal contexts. Educational Studies in Mathematics, 55, 133-162.  
-Stylianou, D. A., & Silver, E. A. (2004). The role of visual representations in advanced mathematical problem solving: An examination of expert-novice similarities and differences. *Mathematical Thinking and Learning*, 6, 353-387.  
-Tall, D. (2008). The transition to formal thinking in mathematics. Mathematics Education Research Journal, 20(2), 5-24.  
-Tall, D. O. (1995). Cognitive development, representations and proof. In Proceedings of justifying and proving in school mathematics (pp. 27-38). London: IoE.  
-Tirosh, D., Hadass, R., & Movshovitz-Hadar, N. (1991). Overcoming overgeneralizations: The case of commutativity and associativity. In F. Furinghetti (Ed.), Proceedings of the 15th annual conference of the international group for the psychology of mathematics education (Vol. 3, pp. 310-315). Assisi, Italy: IGPME.  
-Usiskin, Z. (1975a). Applications of groups and isomorphic groups to topics in the standard curriculum, grades 9-11: Part I. The Mathematics Teacher, 68, 99-106.  
+Shepherd, M. D., Selden, A., & Selden, J. (2012). University students' reading of their first-year mathematics textbooks. *Mathematical Thinking and Learning*, 14, 226-256.
+Shepherd, M. D., & van de Sande, C. C. (2014). Reading mathematics for understanding—from novice to expert. The Journal of Mathematical Behavior, 35, 74-86.
+Simpson, A., & Stehlíková, N. (2006). Apprehending mathematical structure: A case study of coming to understand a commutative ring. Educational Studies in Mathematics, 61, 347-371.
+Skemp, R. R. (1976). Relational understanding and instrumental understanding. Mathematics Teaching, 77, 20-26.
+Stylianides, A. J., & Stylianides, G. J. (2009). Proof constructions and evaluations. Educational Studies in Mathematics, 72, 237-253.
+Stylianides, A. J., Stylianides, G. J., & Philippou, G. N. (2004). Undergraduate students' understanding of the contraposition equivalence rule in symbolic and verbal contexts. Educational Studies in Mathematics, 55, 133-162.
+Stylianou, D. A., & Silver, E. A. (2004). The role of visual representations in advanced mathematical problem solving: An examination of expert-novice similarities and differences. *Mathematical Thinking and Learning*, 6, 353-387.
+Tall, D. (2008). The transition to formal thinking in mathematics. Mathematics Education Research Journal, 20(2), 5-24.
+Tall, D. O. (1995). Cognitive development, representations and proof. In Proceedings of justifying and proving in school mathematics (pp. 27-38). London: IoE.
+Tirosh, D., Hadass, R., & Movshovitz-Hadar, N. (1991). Overcoming overgeneralizations: The case of commutativity and associativity. In F. Furinghetti (Ed.), Proceedings of the 15th annual conference of the international group for the psychology of mathematics education (Vol. 3, pp. 310-315). Assisi, Italy: IGPME.
+Usiskin, Z. (1975a). Applications of groups and isomorphic groups to topics in the standard curriculum, grades 9-11: Part I. The Mathematics Teacher, 68, 99-106.
 Usiskin, Z. (1975b). Applications of groups and isomorphic groups to topics in the standard curriculum, grades 9-11: Part II. The Mathematics Teacher, 68, 235-246.
 
-Vermetten, Y. J., Vermunt, J. D., & Lodewijks, H. G. (2002). Powerful learning environments? How university students differ in their response to instructional measures. Learning and Instruction, 12, 263-284.  
-Vinner, S. (1991). The role of definitions in teaching and learning. In D. O. Tall (Ed.), Advanced mathematical thinking (pp. 65-81). Dordrecht: Kluwer.  
-Wasserman, N. H. (2014). Introducing algebraic structures through solving equations: Vertical content knowledge for mathematics teachers. PRIMUS, 24, 191-214.  
-Wasserman, N. H. (2016). Abstract algebra for algebra teaching: Influencing school mathematics instruction. Canadian Journal of Science, Mathematics and Technology Education, 16, 28-47.  
-Weber, K. (2001). Student difficulty in constructing proofs: The need for strategic knowledge. Educational Studies in Mathematics, 48, 101-119.  
-Weber, K. (2008). How mathematicians determine if an argument is a valid proof. Journal for Research in Mathematics Education, 39, 431-459.  
-Weber, K. (2009). How syntactic reasoners can develop understanding, evaluate conjectures, and generate examples in advanced mathematics. Journal of Mathematical Behavior, 28, 200-208.  
-Weber, K. (2010). Mathematics majors' perceptions of conviction, validity and proof. Mathematical Thinking and Learning, 12, 306-336.  
-Weber, K. (2012). Mathematicians' perspectives on their pedagogical practices with respect to proof. International Journal of Mathematical Education in Science and Technology, 43, 463-482.  
-Weber, K. (2015). Effective proof reading strategies for comprehending mathematical proofs. International Journal of Research in Undergraduate Mathematics Education, 1, 289-314.  
-Weber, K., & Alcock, L. (2004). Semantic and syntactic proof productions. Educational Studies in Mathematics, 56, 209-234.  
-Weber, K., & Alcock, L. (2005). Using warranted implications to understand and validate proofs. For the Learning of Mathematics, 25(1), 34-38.  
-Weber, K., Inglis, M., & Mejía-Ramos, J.-P. (2014). How mathematicians obtain conviction: Implications for mathematics instruction and research on epistemic cognition. Educational Psychologist, 49, 36-58.  
+Vermetten, Y. J., Vermunt, J. D., & Lodewijks, H. G. (2002). Powerful learning environments? How university students differ in their response to instructional measures. Learning and Instruction, 12, 263-284.
+Vinner, S. (1991). The role of definitions in teaching and learning. In D. O. Tall (Ed.), Advanced mathematical thinking (pp. 65-81). Dordrecht: Kluwer.
+Wasserman, N. H. (2014). Introducing algebraic structures through solving equations: Vertical content knowledge for mathematics teachers. PRIMUS, 24, 191-214.
+Wasserman, N. H. (2016). Abstract algebra for algebra teaching: Influencing school mathematics instruction. Canadian Journal of Science, Mathematics and Technology Education, 16, 28-47.
+Weber, K. (2001). Student difficulty in constructing proofs: The need for strategic knowledge. Educational Studies in Mathematics, 48, 101-119.
+Weber, K. (2008). How mathematicians determine if an argument is a valid proof. Journal for Research in Mathematics Education, 39, 431-459.
+Weber, K. (2009). How syntactic reasoners can develop understanding, evaluate conjectures, and generate examples in advanced mathematics. Journal of Mathematical Behavior, 28, 200-208.
+Weber, K. (2010). Mathematics majors' perceptions of conviction, validity and proof. Mathematical Thinking and Learning, 12, 306-336.
+Weber, K. (2012). Mathematicians' perspectives on their pedagogical practices with respect to proof. International Journal of Mathematical Education in Science and Technology, 43, 463-482.
+Weber, K. (2015). Effective proof reading strategies for comprehending mathematical proofs. International Journal of Research in Undergraduate Mathematics Education, 1, 289-314.
+Weber, K., & Alcock, L. (2004). Semantic and syntactic proof productions. Educational Studies in Mathematics, 56, 209-234.
+Weber, K., & Alcock, L. (2005). Using warranted implications to understand and validate proofs. For the Learning of Mathematics, 25(1), 34-38.
+Weber, K., Inglis, M., & Mejía-Ramos, J.-P. (2014). How mathematicians obtain conviction: Implications for mathematics instruction and research on epistemic cognition. Educational Psychologist, 49, 36-58.
 Weber, K., & Larsen, S. (2008). Teaching and learning abstract algebra. In M. Carlson & C. Rasmussen (Eds.), Making the connection: Research and teaching in undergraduate mathematics (pp. 139-152). Washington, DC: MAA.
 
-Weber, K., & Meji-Ramos, J.-P. (2011). Why and how mathematicians read proofs: An exploratory study. Educational Studies in Mathematics, 76, 329-344.  
-Weber, K., & Mejía-Ramos, J. P. (2014). Mathematics majors' beliefs about proof reading. International Journal of Mathematical Education in Science and Technology, 45(1), 89-103.  
-Weinberg, A., Wiesner, E., Benesh, B., & Boester, T. (2012). Undergraduate students' self-reported use of mathematics textbooks. PRIMUS, 22, 152-175.  
-Weinberg, A., Wiesner, E., & Fukawa-Connelly, T. (2014). Students' sense-making frames in mathematics lectures. Journal of Mathematical Behavior, 33, 168-179.  
-Whitelaw, T. A. (1978). An introduction to abstract algebra. Glasgow: Blackie.  
-Wong, R. M. F., Lawson, M. J., & Keeves, J. (2002). The effects of self-explanation training on students' problem solving in high-school mathematics. Learning and Instruction, 12, 233-262.  
-Zandieh, M., Larsen, S., & Nunley, D. (2008). Proving starting from informal notions of symmetry and transformations. In M. Carlson & C. Rasmussen (Eds.), Making the connection: Research and teaching in undergraduate mathematics (pp. 275-287). Washington, DC: MAA.  
-Zaslavsky, O., & Peled, I. (1996). Inhibiting factors in generating examples by mathematics teachers and student teachers: The case of binary operation. Journal for Research in Mathematics Education, 27, 67-78.  
-Zazkis, D., Weber, K., & Mejía-Ramos, J. P. (2015). Two proving strategies of highly successful mathematics majors. The Journal of Mathematical Behavior, 39, 11-27.  
-Zazkis, R., & Dubinsky, E. (1996). Dihedral groups: A tale of two interpretations. In J. Kaput, A. H. Schoenfeld, & E. Dubinsky (Eds.), Research in collegiate mathematics education II (pp. 61-82). Providence, RI: American Mathematical Society.  
-Zazkis, R., Dubinsky, E., & Dautermann, J. (1996). Coordinating visual and analytic strategies: A study of students' understanding of the group  $D_4$ . Journal for Research in Mathematics Education, 27, 435-457.  
+Weber, K., & Meji-Ramos, J.-P. (2011). Why and how mathematicians read proofs: An exploratory study. Educational Studies in Mathematics, 76, 329-344.
+Weber, K., & Mejía-Ramos, J. P. (2014). Mathematics majors' beliefs about proof reading. International Journal of Mathematical Education in Science and Technology, 45(1), 89-103.
+Weinberg, A., Wiesner, E., Benesh, B., & Boester, T. (2012). Undergraduate students' self-reported use of mathematics textbooks. PRIMUS, 22, 152-175.
+Weinberg, A., Wiesner, E., & Fukawa-Connelly, T. (2014). Students' sense-making frames in mathematics lectures. Journal of Mathematical Behavior, 33, 168-179.
+Whitelaw, T. A. (1978). An introduction to abstract algebra. Glasgow: Blackie.
+Wong, R. M. F., Lawson, M. J., & Keeves, J. (2002). The effects of self-explanation training on students' problem solving in high-school mathematics. Learning and Instruction, 12, 233-262.
+Zandieh, M., Larsen, S., & Nunley, D. (2008). Proving starting from informal notions of symmetry and transformations. In M. Carlson & C. Rasmussen (Eds.), Making the connection: Research and teaching in undergraduate mathematics (pp. 275-287). Washington, DC: MAA.
+Zaslavsky, O., & Peled, I. (1996). Inhibiting factors in generating examples by mathematics teachers and student teachers: The case of binary operation. Journal for Research in Mathematics Education, 27, 67-78.
+Zazkis, D., Weber, K., & Mejía-Ramos, J. P. (2015). Two proving strategies of highly successful mathematics majors. The Journal of Mathematical Behavior, 39, 11-27.
+Zazkis, R., & Dubinsky, E. (1996). Dihedral groups: A tale of two interpretations. In J. Kaput, A. H. Schoenfeld, & E. Dubinsky (Eds.), Research in collegiate mathematics education II (pp. 61-82). Providence, RI: American Mathematical Society.
+Zazkis, R., Dubinsky, E., & Dautermann, J. (1996). Coordinating visual and analytic strategies: A study of students' understanding of the group  $D_4$ . Journal for Research in Mathematics Education, 27, 435-457.
 Zhen, B., Weber, K., & Mejía-Ramos, J.-P. (2016). Mathematics majors' perceptions of the admissibility of graphical inferences in proofs. International Journal of Research in Undergraduate Mathematics Education, 2, 1-29.
 
 # INDEX
