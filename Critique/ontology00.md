@@ -80,7 +80,8 @@
 
 ### 1.1 核心问题
 
-本文档旨在澄清**概率理性主义**、**基于数学的物理学科**和**数学本体**之间的三方关系。核心问题包括：
+本文档旨在澄清**概率理性主义**、**基于数学的物理学科**和**数学本体**之间的三方关系。
+核心问题包括：
 
 1. **物理本体**如何与**数学本体**相关？
 2. **现代物理学科**的局限性是什么？
@@ -824,85 +825,85 @@ graph LR
 
 ### 概率论与信息论
 
-3. **Shannon, C. E. (1948)**. "A mathematical theory of communication". *Bell System Technical Journal*, 27(3), 379-423.
+1. **Shannon, C. E. (1948)**. "A mathematical theory of communication". *Bell System Technical Journal*, 27(3), 379-423.
    - 信息论的基础
    - 离散信息的数学处理
 
-4. **Kolmogorov, A. N. (1933)**. *Foundations of the Theory of Probability*. Chelsea Publishing Company.
+2. **Kolmogorov, A. N. (1933)**. *Foundations of the Theory of Probability*. Chelsea Publishing Company.
    - 概率论的数学基础
    - 概率空间的公理化
 
 ### 量子力学与概率诠释
 
-5. **Bohr, N. (1928)**. "The quantum postulate and the recent development of atomic theory". *Nature*, 121(3050), 580-590.
+1. **Bohr, N. (1928)**. "The quantum postulate and the recent development of atomic theory". *Nature*, 121(3050), 580-590.
    - 哥本哈根诠释
    - 量子概率性
 
-6. **Heisenberg, W. (1927)**. "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik". *Zeitschrift für Physik*, 43(3-4), 172-198.
+2. **Heisenberg, W. (1927)**. "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik". *Zeitschrift für Physik*, 43(3-4), 172-198.
    - 不确定性原理
    - 量子概率性
 
 ### 数学本体论
 
-7. **Shapiro, S. (1997)**. *Philosophy of Mathematics: Structure and Ontology*. Oxford University Press.
+1. **Shapiro, S. (1997)**. *Philosophy of Mathematics: Structure and Ontology*. Oxford University Press.
    - 结构主义数学本体论
    - 数学对象的存在性
 
-8. **Linnebo, Ø. (2018)**. *Thin Objects: An Abstractionist Account*. Oxford University Press.
+2. **Linnebo, Ø. (2018)**. *Thin Objects: An Abstractionist Account*. Oxford University Press.
    - 数学本体的抽象性
    - 有限性与无限性
 
 ### Wikipedia 资源
 
-9. **Wikipedia: Mathematical Universe Hypothesis**. https://en.wikipedia.org/wiki/Mathematical_universe_hypothesis
+1. **Wikipedia: Mathematical Universe Hypothesis**. https://en.wikipedia.org/wiki/Mathematical_universe_hypothesis
    - Tegmark 的数学宇宙假说
    - 物理现实是数学结构
 
-10. **Wikipedia: Copenhagen Interpretation**. https://en.wikipedia.org/wiki/Copenhagen_interpretation
+2. **Wikipedia: Copenhagen Interpretation**. https://en.wikipedia.org/wiki/Copenhagen_interpretation
     - 哥本哈根概率诠释
     - 量子概率性
 
-11. **Wikipedia: Finitism**. https://en.wikipedia.org/wiki/Finitism
+3. **Wikipedia: Finitism**. https://en.wikipedia.org/wiki/Finitism
     - 有限主义数学哲学
     - 有限与无限的区别
 
-12. **Wikipedia: Actual and Potential Infinity**. https://en.wikipedia.org/wiki/Actual_and_potential_infinity
+4. **Wikipedia: Actual and Potential Infinity**. https://en.wikipedia.org/wiki/Actual_and_potential_infinity
     - 实际无穷与潜在无穷
     - 有限性与无限性的哲学
 
 ### 大学课程资源
 
-13. **Stanford University: PHIL162 Philosophy of Mathematics**.
+1. **Stanford University: PHIL162 Philosophy of Mathematics**.
     - 数学哲学综合课程
     - 数学对象的形而上学
 
-14. **MIT: 24.801 Philosophy of Mathematics**.
+2. **MIT: 24.801 Philosophy of Mathematics**.
     - 数学哲学专题研讨
     - 实在论与柏拉图主义
 
-15. **Harvard University: Mathematical Ideas and Notions of Quantum Field Theory**.
+3. **Harvard University: Mathematical Ideas and Notions of Quantum Field Theory**.
     - 量子场论的数学结构
     - 数学与物理的交叉
 
 ### 现代理论框架
 
-16. **Yi, Y. (2020)**. "Dual-Projection Informational Ontology". *PhilArchive*.
+1. **Yi, Y. (2020)**. "Dual-Projection Informational Ontology". *PhilArchive*.
     - 双重投影信息本体论
     - 物理与数学的投影关系
 
-17. **Le Nepvou, A.** "Structural Mediation and Dynamic Realism". *PhilPapers*.
+2. **Le Nepvou, A.** "Structural Mediation and Dynamic Realism". *PhilPapers*.
     - 结构中介与动态实在论
     - 数学结构到物理现实的转化
 
-18. **Tegmark, M. (2014)**. *Our Mathematical Universe: My Quest for the Ultimate Nature of Reality*. Knopf.
+3. **Tegmark, M. (2014)**. *Our Mathematical Universe: My Quest for the Ultimate Nature of Reality*. Knopf.
     - 数学宇宙假说
     - 物理现实是数学结构
 
-19. **Rovelli, C. (1996)**. "Relational Quantum Mechanics". *International Journal of Theoretical Physics*, 35(8), 1637-1678.
+4. **Rovelli, C. (1996)**. "Relational Quantum Mechanics". *International Journal of Theoretical Physics*, 35(8), 1637-1678.
     - 关系量子力学
     - 量子状态的关系性
 
-20. **Quine, W. V. O., & Putnam, H.** "The Indispensability Argument for Mathematical Realism". In *Philosophy of Mathematics: Selected Readings* (2nd ed.).
+5. **Quine, W. V. O., & Putnam, H.** "The Indispensability Argument for Mathematical Realism". In *Philosophy of Mathematics: Selected Readings* (2nd ed.).
     - Quine-Putnam 不可或缺性论证
     - 数学实体的不可或缺性
 

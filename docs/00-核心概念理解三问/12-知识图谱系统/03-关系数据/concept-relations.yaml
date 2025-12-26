@@ -8,452 +8,542 @@
 # ═══════════════════════════════════════════════════════════════
 
 requires_relations:
-  
+
   # === 代数学依赖链 ===
-  
+
   - source: "group"
     target: "set"
     strength: 1.0
     description: "群建立在集合之上"
-    
+
   - source: "group"
     target: "binary-operation"
     strength: 1.0
     description: "群运算是二元运算"
-    
+
   - source: "group"
     target: "function"
     strength: 0.8
     description: "需要理解逆元作为函数"
-    
+
   - source: "ring"
     target: "abelian-group"
     strength: 1.0
     description: "环的加法是阿贝尔群"
-    
+
   - source: "ring"
     target: "group"
     strength: 1.0
     description: "环需要群概念"
-    
+
   - source: "field"
     target: "ring"
     strength: 1.0
     description: "域是特殊的环"
-    
+
   - source: "field"
     target: "group"
     strength: 1.0
     description: "域的乘法群"
-    
+
   - source: "vector-space"
     target: "field"
     strength: 1.0
     description: "向量空间需要标量域"
-    
+
   - source: "vector-space"
     target: "abelian-group"
     strength: 1.0
     description: "向量加法是阿贝尔群"
-    
+
   - source: "module"
     target: "ring"
     strength: 1.0
     description: "模是环上的结构"
-    
+
   - source: "module"
     target: "abelian-group"
     strength: 1.0
     description: "模的加法是阿贝尔群"
-    
+
   - source: "module"
     target: "vector-space"
     strength: 0.7
     description: "模推广了向量空间"
-    
+
   - source: "noether-ring"
     target: "ring"
     strength: 1.0
     description: "Noether环是特殊的环"
-    
+
   - source: "noether-ring"
     target: "ideal"
     strength: 1.0
     description: "Noether环涉及理想的性质"
-    
+
   - source: "invariant-ring"
     target: "polynomial-ring"
     strength: 1.0
     description: "不变量环是多项式环的子环"
-    
+
   - source: "invariant-ring"
     target: "noether-ring"
     strength: 0.9
     description: "不变量环是Noether环（在适当条件下）"
-    
+
   - source: "invariant-ring"
     target: "group-action"
     strength: 1.0
     description: "不变量环需要群作用"
-    
+
   - source: "algebra"
     target: "ring"
     strength: 1.0
     description: "代数是环"
-    
+
   - source: "algebra"
     target: "module"
     strength: 1.0
     description: "代数是模"
-    
+
   # === 分析学依赖链 ===
-  
+
   - source: "limit"
     target: "real-numbers"
     strength: 1.0
     description: "极限依赖实数完备性"
-    
+
   - source: "limit"
     target: "absolute-value"
     strength: 0.9
     description: "ε-δ定义需要绝对值"
-    
+
   - source: "limit"
     target: "sequence"
     strength: 0.9
     description: "数列极限"
-    
+
   - source: "continuity"
     target: "limit"
     strength: 1.0
     description: "连续性由极限定义"
-    
+
   - source: "continuity"
     target: "function"
     strength: 1.0
     description: "连续是函数的性质"
-    
+
   - source: "derivative"
     target: "limit"
     strength: 1.0
     description: "导数是极限"
-    
+
   - source: "derivative"
     target: "continuity"
     strength: 0.8
     description: "可微蕴含连续"
-    
+
   - source: "integral"
     target: "limit"
     strength: 1.0
     description: "积分是极限"
-    
+
   - source: "integral"
     target: "continuity"
     strength: 0.7
     description: "连续函数可积"
-    
+
   - source: "measure"
     target: "set"
     strength: 1.0
     description: "测度定义在集合上"
-    
+
   - source: "measure"
     target: "sigma-algebra"
     strength: 1.0
     description: "需要σ-代数结构"
-    
+
   - source: "lebesgue-integral"
     target: "measure"
     strength: 1.0
     description: "Lebesgue积分基于测度"
-    
+
   - source: "lebesgue-integral"
     target: "measurable-function"
     strength: 1.0
     description: "被积函数需可测"
-    
+
   # === 拓扑学依赖链 ===
-  
+
   - source: "topological-space"
     target: "set"
     strength: 1.0
     description: "拓扑空间是集合配上拓扑"
-    
+
   - source: "topological-space"
     target: "power-set"
     strength: 0.8
     description: "拓扑是子集族"
-    
+
   - source: "compactness"
     target: "topological-space"
     strength: 1.0
     description: "紧致性是拓扑性质"
-    
+
   - source: "compactness"
     target: "open-cover"
     strength: 1.0
     description: "定义使用开覆盖"
-    
+
   - source: "connectedness"
     target: "topological-space"
     strength: 1.0
     description: "连通性是拓扑性质"
-    
+
   - source: "connectedness"
     target: "open-set"
     strength: 1.0
     description: "用开集定义"
-    
+
   - source: "path-connectedness"
     target: "connectedness"
     strength: 0.8
     description: "道路连通蕴含连通"
-    
+
   - source: "path-connectedness"
     target: "continuity"
     strength: 1.0
     description: "道路是连续映射"
-    
+
   - source: "fundamental-group"
     target: "path-connectedness"
     strength: 1.0
     description: "基于道路定义"
-    
+
   - source: "fundamental-group"
     target: "group"
     strength: 1.0
     description: "基本群是群"
-    
+
   - source: "homology"
     target: "topological-space"
     strength: 1.0
     description: "拓扑不变量"
-    
+
   - source: "homology"
     target: "abelian-group"
     strength: 1.0
     description: "同调群是阿贝尔群"
-    
+
   # === 几何学依赖链 ===
-  
+
   - source: "manifold"
     target: "topological-space"
     strength: 1.0
     description: "流形是特殊拓扑空间"
-    
+
   - source: "manifold"
     target: "euclidean-space"
     strength: 0.9
     description: "局部同胚于欧氏空间"
-    
+
   - source: "smooth-manifold"
     target: "manifold"
     strength: 1.0
     description: "光滑流形是流形"
-    
+
   - source: "smooth-manifold"
     target: "derivative"
     strength: 1.0
     description: "需要微分概念"
-    
+
   - source: "tangent-bundle"
     target: "smooth-manifold"
     strength: 1.0
     description: "切丛定义在光滑流形上"
-    
+
   - source: "tangent-bundle"
     target: "vector-space"
     strength: 1.0
     description: "切空间是向量空间"
-    
+
   - source: "connection"
     target: "tangent-bundle"
     strength: 1.0
     description: "联络定义在切丛上"
-    
+
   - source: "curvature"
     target: "connection"
     strength: 1.0
     description: "曲率由联络定义"
-    
+
   - source: "riemannian-metric"
     target: "smooth-manifold"
     strength: 1.0
     description: "Riemann度量定义在光滑流形上"
-    
+
   - source: "riemannian-metric"
     target: "tangent-bundle"
     strength: 1.0
     description: "是切丛上的截面"
-    
+
   # === 群论依赖链（扩展）===
-  
+
   - source: "subgroup"
     target: "group"
     strength: 1.0
     description: "子群是群的子结构"
-    
+
   - source: "normal-subgroup"
     target: "subgroup"
     strength: 1.0
     description: "正规子群首先是子群"
-    
+
   - source: "quotient-group"
     target: "normal-subgroup"
     strength: 1.0
     description: "需要正规子群才能做商群"
-    
+
   # === 泛函分析依赖链 ===
-  
+
   - source: "inner-product"
     target: "vector-space"
     strength: 1.0
     description: "内积定义在向量空间上"
-    
+
   - source: "banach-space"
     target: "normed-space"
     strength: 1.0
     description: "Banach空间是完备的赋范空间"
-    
+
   - source: "hilbert-space"
     target: "inner-product"
     strength: 1.0
     description: "Hilbert空间有内积结构"
-    
+
   - source: "hilbert-space"
     target: "banach-space"
     strength: 0.9
     description: "Hilbert空间是特殊的Banach空间"
-    
+
   # === 收敛性依赖链 ===
-  
+
   - source: "uniform-convergence"
     target: "sequence"
     strength: 1.0
     description: "函数序列的收敛"
-    
+
   - source: "uniform-convergence"
     target: "limit"
     strength: 1.0
     description: "基于极限概念"
-    
+
   # === 覆盖空间依赖 ===
-  
+
   - source: "covering-space"
     target: "topological-space"
     strength: 1.0
     description: "是特殊的拓扑空间映射"
-    
+
   - source: "covering-space"
     target: "fundamental-group"
     strength: 0.9
     description: "分类理论使用基本群"
-    
+
   # === 范畴论依赖链 ===
-  
+
   - source: "functor"
     target: "category"
     strength: 1.0
     description: "函子在范畴之间"
-    
+
   - source: "natural-transformation"
     target: "functor"
     strength: 1.0
     description: "自然变换在函子之间"
-    
+
   # === 泛函分析依赖链（扩展）===
-  
+
   - source: "compact-operator"
     target: "banach-space"
     strength: 1.0
     description: "定义在Banach空间上"
-    
+
   - source: "self-adjoint"
     target: "hilbert-space"
     strength: 1.0
     description: "需要内积结构"
-    
+
   - source: "self-adjoint"
     target: "linear-map"
     strength: 1.0
     description: "是特殊的线性算子"
-    
+
   # === 群论依赖链（扩展）===
-  
+
   - source: "commutator"
     target: "group"
     strength: 1.0
     description: "交换子群定义在群上"
-    
+
   - source: "commutator"
     target: "normal-subgroup"
     strength: 0.8
     description: "交换子群是正规子群"
-    
+
   # === 度量空间依赖 ===
-  
+
   - source: "metric-space"
     target: "set"
     strength: 1.0
     description: "度量空间是集合配上度量"
-    
+
   # === 线性代数依赖链 ===
-  
+
   - source: "linear-map"
     target: "vector-space"
     strength: 1.0
     description: "线性映射在向量空间之间"
-    
+
   - source: "linear-map"
     target: "function"
     strength: 1.0
     description: "是特殊的函数"
-    
+
   - source: "eigenvalue"
     target: "linear-map"
     strength: 1.0
     description: "特征值是线性算子的性质"
-    
+
   - source: "eigenvalue"
     target: "polynomial"
     strength: 0.9
     description: "特征多项式"
-    
+
   # === 概率论依赖链 ===
-  
+
   - source: "probability-space"
     target: "measure"
     strength: 1.0
     description: "概率测度是测度的特例"
-    
+
   - source: "probability-space"
     target: "sigma-algebra"
     strength: 1.0
     description: "事件形成σ-代数"
-    
+
   - source: "random-variable"
     target: "probability-space"
     strength: 1.0
     description: "随机变量定义在概率空间上"
-    
+
   - source: "random-variable"
     target: "measurable-function"
     strength: 1.0
     description: "随机变量是可测函数"
-    
+
+  - source: "expectation"
+    target: "random-variable"
+    strength: 1.0
+    description: "期望是随机变量的函数"
+
+  - source: "expectation"
+    target: "probability-space"
+    strength: 1.0
+    description: "期望定义在概率空间上"
+
+  - source: "expectation"
+    target: "integral"
+    strength: 1.0
+    description: "期望是Lebesgue积分"
+
+  - source: "variance"
+    target: "expectation"
+    strength: 1.0
+    description: "方差依赖于期望"
+
+  - source: "variance"
+    target: "random-variable"
+    strength: 1.0
+    description: "方差定义在随机变量上"
+
+  - source: "distribution"
+    target: "random-variable"
+    strength: 1.0
+    description: "分布是随机变量的属性"
+
+  - source: "distribution"
+    target: "probability-space"
+    strength: 1.0
+    description: "分布定义在概率空间上"
+
+  - source: "distribution"
+    target: "measure"
+    strength: 1.0
+    description: "分布是概率测度"
+
+  - source: "conditional-probability"
+    target: "probability-space"
+    strength: 1.0
+    description: "条件概率定义在概率空间上"
+
+  - source: "conditional-probability"
+    target: "event"
+    strength: 1.0
+    description: "条件概率涉及事件"
+
+  - source: "independence"
+    target: "probability-space"
+    strength: 1.0
+    description: "独立性定义在概率空间上"
+
+  - source: "independence"
+    target: "conditional-probability"
+    strength: 0.8
+    description: "独立性涉及条件概率"
+
+  - source: "localization"
+    target: "ring"
+    strength: 1.0
+    description: "局部化定义在交换环上"
+
+  - source: "localization"
+    target: "prime-ideal"
+    strength: 0.8
+    description: "在素理想处局部化"
+
+  - source: "prime-ideal"
+    target: "ring"
+    strength: 1.0
+    description: "素理想定义在交换环上"
+
+  - source: "prime-ideal"
+    target: "ideal"
+    strength: 1.0
+    description: "素理想是特殊的理想"
+
+  - source: "noether-ring"
+    target: "ring"
+    strength: 1.0
+    description: "Noether环是特殊的环"
+
+  - source: "noether-ring"
+    target: "ideal"
+    strength: 1.0
+    description: "涉及理想的性质"
+
   # === 级数依赖链 ===
-  
+
   - source: "sequence"
     target: "function"
     strength: 1.0
     description: "数列是从ℕ到ℝ的函数"
-    
+
   - source: "series"
     target: "sequence"
     strength: 1.0
     description: "级数是数列的部分和"
-    
+
   - source: "series"
     target: "limit"
     strength: 1.0
@@ -467,61 +557,61 @@ requires_relations:
 generalizes_relations:
 
   # === 代数推广链 ===
-  
+
   - source: "group"
     target: "monoid"
     description: "群 = 幺半群 + 逆元"
-    
+
   - source: "monoid"
     target: "semigroup"
     description: "幺半群 = 半群 + 单位元"
-    
+
   - source: "ring"
     target: "abelian-group"
     description: "环的加法是阿贝尔群"
-    
+
   - source: "field"
     target: "integral-domain"
     description: "域是特殊的整环"
-    
+
   - source: "module"
     target: "vector-space"
     description: "模推广向量空间到环系数"
-    
+
   - source: "module"
     target: "abelian-group"
     description: "ℤ-模就是阿贝尔群"
-    
+
   # === 分析推广链 ===
-  
+
   - source: "lebesgue-integral"
     target: "riemann-integral"
     description: "Lebesgue积分推广Riemann积分"
-    
+
   - source: "uniform-convergence"
     target: "pointwise-convergence"
     description: "一致收敛更强"
-    
+
   - source: "lipschitz-continuity"
     target: "continuity"
     description: "Lipschitz连续更强"
-    
+
   # === 拓扑推广链 ===
-  
+
   - source: "topological-space"
     target: "metric-space"
     description: "拓扑空间推广度量空间"
-    
+
   - source: "compactness"
     target: "sequential-compactness"
     description: "序列紧是紧致的特例（度量空间）"
-    
+
   # === 几何推广链 ===
-  
+
   - source: "manifold"
     target: "euclidean-space"
     description: "流形局部是欧氏空间"
-    
+
   - source: "riemannian-manifold"
     target: "euclidean-space"
     description: "黎曼流形推广欧氏空间"
@@ -534,57 +624,134 @@ generalizes_relations:
 related_relations:
 
   # === 代数-拓扑联系 ===
-  
+
   - source: "fundamental-group"
     target: "group"
     relation_type: "is_instance_of"
     description: "基本群是群的例子"
-    
+
   - source: "covering-space"
     target: "subgroup"
     relation_type: "galois_correspondence"
     description: "覆盖空间对应子群"
-    
+
   # === 代数-分析联系 ===
-  
+
   - source: "banach-space"
     target: "vector-space"
     relation_type: "is_instance_of"
     description: "Banach空间是向量空间"
-    
+
   - source: "hilbert-space"
     target: "inner-product"
     relation_type: "equipped_with"
     description: "Hilbert空间配备内积"
-    
+
   # === 分析-拓扑联系 ===
-  
+
   - source: "continuity"
     target: "topological-space"
     relation_type: "defined_on"
     description: "拓扑连续性"
-    
+
   - source: "compactness"
     target: "continuity"
     relation_type: "interacts_with"
     description: "紧集上连续函数一致连续"
-    
+
   # === 范畴联系 ===
-  
+
   - source: "group"
     target: "category"
     relation_type: "forms"
     description: "群形成范畴Grp"
-    
+
   - source: "topological-space"
     target: "category"
     relation_type: "forms"
     description: "拓扑空间形成范畴Top"
-    
+
   - source: "functor"
     target: "homomorphism"
     relation_type: "generalizes"
     description: "函子推广同态"
+
+  # === 概率论联系 ===
+
+  - source: "expectation"
+    target: "variance"
+    relation_type: "related_to"
+    description: "Var(X) = E[X²] - (E[X])²"
+
+  - source: "expectation"
+    target: "law-of-large-numbers"
+    relation_type: "used_in"
+    description: "大数定律：样本均值→期望"
+
+  - source: "variance"
+    target: "central-limit-theorem"
+    relation_type: "used_in"
+    description: "中心极限定理涉及方差标准化"
+
+  - source: "distribution"
+    target: "expectation"
+    relation_type: "determines"
+    description: "分布完全确定期望"
+
+  - source: "distribution"
+    target: "variance"
+    relation_type: "determines"
+    description: "分布完全确定方差"
+
+  - source: "conditional-probability"
+    target: "bayes-theorem"
+    relation_type: "used_in"
+    description: "贝叶斯定理使用条件概率"
+
+  - source: "independence"
+    target: "conditional-probability"
+    relation_type: "related_to"
+    description: "独立时 P(A|B) = P(A)"
+
+  - source: "independence"
+    target: "law-of-large-numbers"
+    relation_type: "required_for"
+    description: "大数定律需要独立性"
+
+  - source: "random-variable"
+    target: "distribution"
+    relation_type: "has"
+    description: "每个随机变量有分布"
+
+  - source: "localization"
+    target: "prime-ideal"
+    relation_type: "used_in"
+    description: "在素理想处局部化"
+
+  - source: "localization"
+    target: "spec"
+    relation_type: "related_to"
+    description: "Spec(S⁻¹R) ↔ {p : p ∩ S = ∅}"
+
+  - source: "prime-ideal"
+    target: "maximal-ideal"
+    relation_type: "generalizes"
+    description: "极大理想 ⟹ 素理想"
+
+  - source: "prime-ideal"
+    target: "spec"
+    relation_type: "forms"
+    description: "素理想形成素理想谱"
+
+  - source: "noether-ring"
+    target: "hilbert-basis-theorem"
+    relation_type: "used_in"
+    description: "Hilbert基定理：R Noether ⟹ R[x] Noether"
+
+  - source: "noether-ring"
+    target: "localization"
+    relation_type: "preserved_by"
+    description: "Noether环的局部化是Noether环"
 
 # ═══════════════════════════════════════════════════════════════
 # 跨领域类比 (analogy)
@@ -603,7 +770,7 @@ analogies:
       - ["Galois群", "甲板变换群"]
       - ["正规扩张", "正规覆盖"]
     description: "Galois理论与覆盖空间理论的对应"
-    
+
   - id: "duality-various"
     domain_a: "代数"
     concept_a: "pontryagin-duality"
@@ -613,7 +780,7 @@ analogies:
       - ["字符群", "上同调群"]
       - ["对偶同构", "配对非退化"]
     description: "各种对偶性的统一视角"
-    
+
   - id: "completion"
     domain_a: "分析"
     concept_a: "cauchy-completion"
@@ -623,7 +790,7 @@ analogies:
       - ["Cauchy列", "多项式根"]
       - ["完备化", "代数闭包"]
     description: "完备化的不同形式"
-    
+
   - id: "localization"
     domain_a: "代数"
     concept_a: "ring-localization"
@@ -643,7 +810,7 @@ statistics:
   total_generalizes: 17
   total_related: 15
   total_analogies: 4
-  
+
   coverage:
     algebra: 18
     analysis: 12

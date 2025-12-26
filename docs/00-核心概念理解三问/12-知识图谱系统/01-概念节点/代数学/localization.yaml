@@ -1,0 +1,186 @@
+# localization.yaml - 局部化概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-07
+
+concept:
+  id: "localization"
+  name:
+    zh: "局部化"
+    en: "Localization"
+  msc_codes: ["13B30"]
+
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 R 是交换环，S ⊆ R 是乘法闭集（1 ∈ S，S 对乘法封闭）。
+      R 在 S 处的局部化 S⁻¹R 定义为：
+
+      S⁻¹R = {r/s : r ∈ R, s ∈ S} / ~
+
+      其中等价关系：r/s ~ r'/s' 当且仅当存在 t ∈ S 使得 t(rs' - r's) = 0。
+
+      特殊情形：
+      1. 素理想处局部化：R_p = (R \ p)⁻¹R（p 是素理想）
+      2. 元素处局部化：R_f = {1, f, f², ...}⁻¹R（f ∈ R）
+
+    informal: |
+      局部化是"允许某些元素做分母"的操作。
+
+      例子：整数环 ℤ
+      - ℤ_{(p)} = {m/n : p 不整除 n}（在素理想 (p) 处局部化）
+      - ℤ_{(p)} 是局部环，唯一极大理想是 pℤ_{(p)}
+
+      直观：局部化 = "放大镜"看局部性质。
+
+    lean: |
+      -- Mathlib定义
+      def Localization (R : Type*) [CommRing R] (S : Submonoid R) : Type* :=
+        Localization S
+
+      -- 素理想处局部化
+      def Localization.AtPrime (R : Type*) [CommRing R] (p : Ideal R) [p.IsPrime] :
+        CommRing := Localization (Submonoid.complement p)
+
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】局部邻域
+      - 局部化对应"几何局部化"
+      - R_p = "在点 p 附近的函数"
+      - R_f = "在开集 D(f) 上的函数"
+      - 局部化 = "放大镜"看局部
+
+    algebraic: |
+      【代数直觉】分式域推广
+      - 局部化推广了分式域的构造
+      - 分式域 = 在所有非零元处局部化
+      - 局部化 = "部分分式域"
+
+    physical: |
+      【物理直觉】局部观察
+      - 局部化 = "局部坐标系"
+      - 在局部化中，某些元素"可逆"
+      - 对应物理中的"局部测量"
+
+    categorical: |
+      【范畴直觉】泛性质
+      - 局部化满足泛性质
+      - 是范畴中的"局部化"
+      - 保持某些同调性质
+
+  # ===== 表征层 =====
+  representations:
+    - type: "分式形式"
+      content: |
+        S⁻¹R = {r/s : r ∈ R, s ∈ S}
+
+    - type: "等价类形式"
+      content: |
+        S⁻¹R = (R × S) / ~
+
+    - type: "泛性质"
+      content: |
+        存在环同态 φ: R → S⁻¹R，使得：
+        - φ(s) 在 S⁻¹R 中可逆（对所有 s ∈ S）
+        - 满足泛性质
+
+  # ===== 例子层 =====
+  examples:
+    prime_localization:
+      - name: "整数环在素理想处"
+        ring: "ℤ"
+        prime: "(p)"
+        localization: "ℤ_{(p)} = {m/n : p 不整除 n}"
+        properties: "局部环，极大理想 pℤ_{(p)}"
+
+      - name: "多项式环在素理想处"
+        ring: "k[x,y]"
+        prime: "(x)"
+        localization: "k[x,y]_{(x)} = {f/g : x 不整除 g}"
+        properties: "局部环，极大理想 (x)"
+
+    element_localization:
+      - name: "多项式环在元素处"
+        ring: "k[x]"
+        element: "x"
+        localization: "k[x]_x = k[x, 1/x]"
+        properties: "所有 x 的幂可逆"
+
+      - name: "整数环在元素处"
+        ring: "ℤ"
+        element: "2"
+        localization: "ℤ_2 = {m/2ⁿ : m ∈ ℤ, n ≥ 0}"
+        properties: "所有 2 的幂可逆"
+
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "ring"
+        description: "定义在交换环上"
+      - id: "multiplicative-set"
+        description: "需要乘法闭集"
+
+    generalizes:
+      - id: "field-of-fractions"
+        description: "分式域是局部化的特例（S = R \ {0}）"
+
+    specialized_by:
+      - id: "prime-localization"
+        description: "素理想处局部化 R_p"
+      - id: "element-localization"
+        description: "元素处局部化 R_f"
+
+    related_to:
+      - id: "prime-ideal"
+        description: "素理想处局部化"
+      - id: "local-ring"
+        description: "局部化得到局部环"
+      - id: "spec"
+        description: "Spec(S⁻¹R) ↔ {p : p ∩ S = ∅}"
+      - id: "flat-module"
+        description: "局部化保持平坦性"
+
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "localization-universal-property"
+      statement: "局部化满足泛性质"
+      importance: 5
+
+    - id: "localization-ideal-correspondence"
+      statement: "局部化建立理想的一一对应"
+      importance: 5
+
+    - id: "localization-preserves-noetherian"
+      statement: "Noether环的局部化是Noether环"
+      importance: 4
+
+    - id: "local-global-principle"
+      statement: "许多性质满足局部-全局原理"
+      importance: 5
+
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+
+    prerequisites:
+      - "ring"
+      - "prime-ideal"
+      - "multiplicative-set"
+
+    leads_to:
+      - "local-ring"
+      - "spec"
+      - "scheme"
+      - "algebraic-geometry"
+
+    history:
+      first_appearance: "1950s"
+      context: "Serre的局部化方法"
+      key_figures: ["Serre", "Grothendieck"]
+
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.RingTheory.Localization.Basic"
+    name: "Localization"
+    coverage: "complete"
