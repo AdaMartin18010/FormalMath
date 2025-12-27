@@ -512,15 +512,15 @@ Zeta函数：
 
 ### 经典教材
 
-3. **Apostol, T. M.** (1976). *Introduction to Analytic Number Theory*. Springer.
+1. **Apostol, T. M.** (1976). *Introduction to Analytic Number Theory*. Springer.
 
-4. **Edwards, H. M.** (1974). *Riemann's Zeta Function*. Academic Press.
+2. **Edwards, H. M.** (1974). *Riemann's Zeta Function*. Academic Press.
 
 ### 历史文献
 
-5. **Dunham, W.** (1999). *Euler: The Master of Us All*. Mathematical Association of America.
+1. **Dunham, W.** (1999). *Euler: The Master of Us All*. Mathematical Association of America.
 
-6. **Sandifer, C. E.** (2007). *How Euler Did It*. Mathematical Association of America.
+2. **Sandifer, C. E.** (2007). *How Euler Did It*. Mathematical Association of America.
 
 ---
 
