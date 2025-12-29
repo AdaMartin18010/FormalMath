@@ -55,11 +55,12 @@
 
 ### 3.1 概念
 
-**Proper Forcing**：
+**Proper Forcing（Shelah, 1980s）**：
 
-- Shelah创立
-- 保持 $\omega_1$
-- 改进Forcing理论
+- **定义**：Forcing notion $P$ 是proper的，如果对任意可数传递模型 $M$ 和 $p \in P$，存在 $q \leq p$ 使得 $q$ 是 $(M, P)$-generic
+- **保持性**：Proper forcing保持 $\omega_1$，比c.c.c.更一般
+- **迭代性**：Proper forcing的迭代仍然是proper的
+- **改进Forcing理论**：为Forcing理论提供了更一般和更灵活的工具
 
 ---
 
@@ -119,14 +120,31 @@
 
 ## 六、总结
 
-科恩与Shelah的关系展示了Forcing理论的发展：
+科恩与Shelah的关系展示了Forcing理论的发展，具有深远的历史意义和现代影响：
 
-1. **方法创立**：科恩创立Forcing
-2. **理论发展**：Shelah发展Proper forcing
-3. **学术传承**：方法传承与理论发展
-4. **现代影响**：共同影响集合论
+### 6.1 历史意义
 
-他们的工作共同推动了Forcing理论的发展。
+1. **方法创立**：科恩创立Forcing方法，为集合论提供了新的模型构造方法
+2. **理论发展**：Shelah发展Proper forcing，改进了Forcing理论
+3. **学术传承**：展示了Forcing理论从创立到发展的历程
+
+### 6.2 主要关系
+
+1. **Forcing方法的发展**：
+   - **科恩（1963）**：创立Forcing方法，基础理论
+   - **Shelah（1980s）**：发展Proper forcing，改进理论
+2. **Proper Forcing**：
+   - **概念**：保持 $\omega_1$ 的forcing，比c.c.c.更一般
+   - **应用**：在集合论中有广泛应用，特别是在需要保持 $\omega_1$ 的情况下
+   - **迭代性**：Proper forcing的迭代仍然是proper的
+
+### 6.3 现代影响
+
+1. **Forcing理论**：Proper forcing成为Forcing理论的重要组成部分
+2. **集合论应用**：在集合论中有广泛应用
+3. **理论发展**：推动Forcing理论的发展
+
+他们的工作共同推动了Forcing理论的发展，使Forcing成为现代集合论的核心工具。
 
 ---
 

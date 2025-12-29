@@ -27,16 +27,25 @@
 
 ### 1.2 ZFC公理
 
-**公理列表**：
+**ZFC公理系统**（Zermelo-Fraenkel with Choice）：
 
-1. 外延公理
-2. 配对公理
-3. 并集公理
-4. 幂集公理
-5. 无穷公理
-6. 替换公理
-7. 正则公理
-8. 选择公理（AC）
+1. **外延公理（Axiom of Extensionality）**：集合由元素决定
+2. **配对公理（Axiom of Pairing）**：可以构造对集
+3. **并集公理（Axiom of Union）**：可以构造并集
+4. **幂集公理（Axiom of Power Set）**：可以构造幂集
+5. **无穷公理（Axiom of Infinity）**：存在无穷集
+6. **替换公理（Axiom Schema of Replacement）**：函数像保持集合性
+7. **正则公理（Axiom of Regularity/Foundation）**：禁止循环集合
+8. **选择公理（Axiom of Choice, AC）**：每个集合族有选择函数
+
+**分离公理（Axiom Schema of Separation）**：
+
+可以从替换公理推导，但通常单独列出。
+
+**记号**：
+
+- **ZF**：Zermelo-Fraenkel公理系统（不含AC）
+- **ZFC**：ZF + AC
 
 ---
 
@@ -156,10 +165,17 @@ $$\forall x (\emptyset \notin x \to \exists f: x \to \bigcup x \forall y \in x (
 
 ### 5.2 AC的独立性
 
-**科恩的结果**：
+**科恩的结果（1964）**：
 
-- AC独立于ZF
+- **一致性方向**：ZFC中AC为真，因此 $\text{ZF} + \text{AC}$ 一致
+- **独立性方向**：使用对称模型技术，$N \models \text{ZF} + \neg \text{AC}$，因此 $\text{ZF} + \neg \text{AC}$ 一致
+- **结论**：AC独立于ZF
+
+**意义**：
+
+- 表明AC不是逻辑必然
 - 可以构造AC为真或为假的模型
+- 推动了对公理的思考
 
 ---
 
@@ -178,9 +194,25 @@ $$\forall x (\emptyset \notin x \to \exists f: x \to \bigcup x \forall y \in x (
 
 **独立性结果**：
 
-- CH独立于ZFC
-- AC独立于ZF
-- 许多其他命题独立
+- **CH独立于ZFC**（哥德尔+科恩）：
+  - 一致性：$L \models \text{ZFC} + \text{CH}$
+  - 独立性：$M[G] \models \text{ZFC} + \neg \text{CH}$
+
+- **AC独立于ZF**（科恩）：
+  - 一致性：ZFC中AC为真
+  - 独立性：$N \models \text{ZF} + \neg \text{AC}$
+
+- **其他独立性**：
+  - Suslin假设独立
+  - Whitehead问题独立
+  - 许多组合命题独立
+  - Easton定理展示了基数假设的广泛独立性
+
+**意义**：
+
+- 表明ZFC不足以决定所有数学问题
+- 需要扩展公理系统（如大基数公理）
+- 推动了对公理系统的研究
 
 ---
 
@@ -227,14 +259,28 @@ $$\forall x (\emptyset \notin x \to \exists f: x \to \bigcup x \forall y \in x (
 
 ## 九、总结
 
-ZFC公理系统展示了集合论的基础：
+ZFC公理系统展示了集合论的基础，具有深远的历史意义和现代影响：
 
-1. **基本公理**：提供集合论的基础
-2. **构造公理**：允许构造复杂集合
-3. **独立性**：某些命题独立
-4. **现代发展**：推动了大基数等理论
+### 9.1 历史意义
 
-这些公理为现代数学提供了坚实的基础。
+1. **建立集合论基础**：为现代数学提供形式化基础
+2. **揭示局限性**：独立性结果揭示了ZFC的局限性
+3. **推动公理研究**：推动了大基数公理等扩展公理的研究
+
+### 9.2 技术贡献
+
+1. **基本公理**：提供集合论的基础（外延、配对、并集等）
+2. **构造公理**：允许构造复杂集合（幂集、替换等）
+3. **独立性**：CH、AC等命题独立于ZFC
+4. **Forcing研究**：Forcing方法用于研究ZFC的性质
+
+### 9.3 现代影响
+
+1. **数学基础**：ZFC是现代数学的标准基础
+2. **公理扩展**：推动了大基数公理等扩展公理的研究
+3. **数学实践**：影响了对公理的使用和理解
+
+这些公理为现代数学提供了坚实的基础，科恩的独立性结果揭示了ZFC的局限性，推动了对公理系统的深入研究。
 
 ---
 
