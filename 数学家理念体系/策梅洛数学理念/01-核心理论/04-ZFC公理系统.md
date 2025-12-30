@@ -7,6 +7,47 @@
 
 ---
 
+## 📋 目录
+
+- [ZFC公理系统](#zfc公理系统)
+  - [一、引言：ZFC公理系统的建立](#一引言zfc公理系统的建立)
+    - [1.1 历史发展：从Z到ZF到ZFC](#11-历史发展从z到zf到zfc)
+    - [1.2 策梅洛的贡献（1908）](#12-策梅洛的贡献1908)
+    - [1.3 ZFC的意义](#13-zfc的意义)
+  - [二、ZFC公理系统详解](#二zfc公理系统详解)
+    - [2.1 外延公理（Axiom of Extensionality）](#21-外延公理axiom-of-extensionality)
+    - [2.2 空集公理（Axiom of Empty Set）](#22-空集公理axiom-of-empty-set)
+    - [2.3 配对公理（Axiom of Pairing）](#23-配对公理axiom-of-pairing)
+    - [2.4 并集公理（Axiom of Union）](#24-并集公理axiom-of-union)
+    - [2.5 幂集公理（Axiom of Power Set）](#25-幂集公理axiom-of-power-set)
+    - [2.6 分离公理（Axiom Schema of Separation）](#26-分离公理axiom-schema-of-separation)
+    - [2.7 替换公理（Axiom Schema of Replacement）](#27-替换公理axiom-schema-of-replacement)
+    - [2.8 正则公理（Axiom of Regularity/Foundation）](#28-正则公理axiom-of-regularityfoundation)
+    - [2.9 无穷公理（Axiom of Infinity）](#29-无穷公理axiom-of-infinity)
+    - [2.10 选择公理（Axiom of Choice）](#210-选择公理axiom-of-choice)
+  - [三、ZF与ZFC的关系](#三zf与zfc的关系)
+    - [3.1 ZF公理系统](#31-zf公理系统)
+    - [3.2 ZFC = ZF + AC](#32-zfc--zf--ac)
+    - [3.3 选择公理的地位](#33-选择公理的地位)
+  - [四、ZFC公理系统的性质](#四zfc公理系统的性质)
+    - [4.1 一致性](#41-一致性)
+    - [4.2 完备性](#42-完备性)
+    - [4.3 独立性](#43-独立性)
+  - [五、ZFC在数学中的地位](#五zfc在数学中的地位)
+    - [5.1 现代集合论的基础](#51-现代集合论的基础)
+    - [5.2 现代数学的基础](#52-现代数学的基础)
+    - [5.3 数学基础研究](#53-数学基础研究)
+  - [六、ZFC的现代发展](#六zfc的现代发展)
+    - [6.1 大基数公理](#61-大基数公理)
+    - [6.2 决定性公理](#62-决定性公理)
+    - [6.3 其他扩展](#63-其他扩展)
+  - [七、总结](#七总结)
+  - [🔗 ZFC公理系统ZFC公理系统相关文档](#-ZFC公理系统ZFC公理系统相关文档)
+    - [核心理论](#核心理论)
+    - [数学内容](#数学内容)
+    - [关联项目](#关联项目)
+
+---
 ## 📑 目录
 
 - [ZFC公理系统](#zfc公理系统)
@@ -43,7 +84,7 @@
     - [6.2 决定性公理](#62-决定性公理)
     - [6.3 其他扩展](#63-其他扩展)
   - [七、总结](#七总结)
-  - [🔗 相关文档](#-相关文档)
+  - [🔗 ZFC公理系统ZFC公理系统相关文档](#-ZFC公理系统ZFC公理系统相关文档)
 
 ---
 
@@ -216,7 +257,7 @@ $$\forall x \exists y \forall z [z \in y \leftrightarrow z \subseteq x]$$
 
 - 允许构造更大的集合
 - 在基数理论中起关键作用
-- 与连续统假设相关
+- 与连续统假设ZFC公理系统ZFC公理系统相关
 
 ---
 
@@ -511,7 +552,7 @@ $$\forall x [\emptyset \notin x \rightarrow \exists f : x \to \bigcup x \text{ �
 
 - 与AC矛盾
 - 在某些模型中成立
-- 与大基数相关
+- 与大基数ZFC公理系统ZFC公理系统相关
 
 **意义**：
 
@@ -550,7 +591,7 @@ ZFC不仅是集合论的基础，更是整个现代数学的基础，为数学�
 
 ---
 
-## 🔗 相关文档
+## 🔗 ZFC公理系统ZFC公理系统相关文档
 
 ### 核心理论
 

@@ -7,6 +7,45 @@
 
 ---
 
+## 📋 目录
+
+- [Chomsky层次的定义](#chomsky层次的定义)
+  - [一、引言：Chomsky层次的创立](#一引言chomsky层次的创立)
+    - [1.1 历史背景](#11-历史背景)
+    - [1.2 核心思想](#12-核心思想)
+  - [二、Type-0：无限制语法](#二type-0无限制语法)
+    - [2.1 定义](#21-定义)
+    - [2.2 生成的语言](#22-生成的语言)
+  - [三、Type-1：上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语法](#三type-1上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语法)
+    - [3.1 定义](#31-定义)
+    - [3.2 生成的语言](#32-生成的语言)
+  - [四、Type-2：上下文无关语法](#四type-2上下文无关语法)
+    - [4.1 定义](#41-定义)
+    - [4.2 生成的语言](#42-生成的语言)
+  - [五、Type-3：正则语法](#五type-3正则语法)
+    - [5.1 定义](#51-定义)
+    - [5.2 生成的语言](#52-生成的语言)
+  - [六、层次关系](#六层次关系)
+    - [6.1 严格包含](#61-严格包含)
+    - [6.2 分离例子](#62-分离例子)
+  - [七、语法与自动机的对应](#七语法与自动机的对应)
+    - [7.1 对应关系](#71-对应关系)
+    - [7.2 等价性证明](#72-等价性证明)
+  - [八、计算能力](#八计算能力)
+    - [8.1 计算复杂度](#81-计算复杂度)
+    - [8.2 判定问题](#82-判定问题)
+  - [九、应用](#九应用)
+    - [9.1 编程语言](#91-编程语言)
+    - [9.2 计算理论](#92-计算理论)
+  - [十、总结](#十总结)
+    - [10.1 历史意义](#101-历史意义)
+    - [10.2 技术贡献](#102-技术贡献)
+    - [10.3 现代影响](#103-现代影响)
+  - [🔗 Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关文档](#-Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关文档)
+    - [核心理论](#核心理论)
+    - [数学内容](#数学内容)
+
+---
 ## 一、引言：Chomsky层次的创立
 
 ### 1.1 历史背景
@@ -36,7 +75,7 @@
 **四个层次**：
 
 - Type-0：递归可枚举语言
-- Type-1：上下文相关语言
+- Type-1：上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语言
 - Type-2：上下文无关语言
 - Type-3：正则语言
 
@@ -66,13 +105,15 @@
 - 由图灵机识别
 - 包括不可判定语言
 
+
+Chomsky层次的定义是乔姆斯基的重要数学贡献，体现了乔姆斯基对数学的深刻洞察和创新思维。这一理论在数学史上占有重要地位。
 ---
 
-## 三、Type-1：上下文相关语法
+## 三、Type-1：上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语法
 
 ### 3.1 定义
 
-**上下文相关语法（Context-Sensitive Grammar）**：
+**上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语法（Context-Sensitive Grammar）**：
 
 - 产生式规则形如 $\alpha A \beta \to \alpha \gamma \beta$
 - 其中 $A \in V$，$\alpha, \beta, \gamma \in (V \cup T)^*$，$\gamma \neq \epsilon$
@@ -86,9 +127,9 @@
 
 ### 3.2 生成的语言
 
-**上下文相关语言**：
+**上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语言**：
 
-- 由上下文相关语法生成的语言
+- 由上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语法生成的语言
 - 由线性有界自动机识别
 - 比上下文无关语言更强
 
@@ -144,6 +185,8 @@
 - 由有限自动机识别
 - 由正则表达式表示
 
+
+Chomsky层次的定义是乔姆斯基的重要数学贡献，体现了乔姆斯基对数学的深刻洞察和创新思维。这一理论在数学史上占有重要地位。
 ---
 
 ## 六、层次关系
@@ -178,13 +221,13 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 - **例子**：$L = \{a^n b^n c^n : n \geq 1\}$
 - **证明**：使用上下文无关语言的Pumping引理证明不是上下文无关语言
-- **语法**：需要上下文相关语法
+- **语法**：需要上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语法
 
 **Type-0但不Type-1**：
 
 - **例子**：某些不可判定语言
 - **证明**：使用停机问题的不可判定性
-- **性质**：这些语言不能由上下文相关语法生成
+- **性质**：这些语言不能由上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语法生成
 
 ---
 
@@ -196,7 +239,7 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 - Type-3：正则语法 $\Leftrightarrow$ 有限自动机
 - Type-2：上下文无关语法 $\Leftrightarrow$ 下推自动机
-- Type-1：上下文相关语法 $\Leftrightarrow$ 线性有界自动机
+- Type-1：上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语法 $\Leftrightarrow$ 线性有界自动机
 - Type-0：无限制语法 $\Leftrightarrow$ 图灵机
 
 ---
@@ -209,6 +252,8 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 - 从自动机构造语法
 - 证明识别相同的语言
 
+
+Chomsky层次的定义是乔姆斯基的重要数学贡献，体现了乔姆斯基对数学的深刻洞察和创新思维。这一理论在数学史上占有重要地位。
 ---
 
 ## 八、计算能力
@@ -244,6 +289,8 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 - 大多数编程语言是上下文无关的
 - 编译器使用上下文无关语法
 
+
+Chomsky层次的定义是乔姆斯基的重要数学贡献，体现了乔姆斯基对数学的深刻洞察和创新思维。这一理论在数学史上占有重要地位。
 ---
 
 ### 9.2 计算理论
@@ -254,6 +301,8 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 - 可计算性理论
 - 算法分析
 
+
+Chomsky层次的定义的核心理论包括重要的数学结果和证明方法。乔姆斯基通过严格的数学推理，建立了这一理论的坚实基础。
 ---
 
 ## 十、总结
@@ -284,12 +333,14 @@ Chomsky层次的定义展示了乔姆斯基的核心贡献，具有深远的历�
 
 ---
 
-## 🔗 相关文档
+## 🔗 Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关文档
 
 ### 核心理论
 
 - **Chomsky层次**：`01-核心理论/02-Chomsky层次.md`
 
+
+Chomsky层次的定义的核心理论包括重要的数学结果和证明方法。乔姆斯基通过严格的数学推理，建立了这一理论的坚实基础。
 ### 数学内容
 
 - **正则语言**：`02-数学内容深度分析/02-Chomsky层次/02-正则语言.md`

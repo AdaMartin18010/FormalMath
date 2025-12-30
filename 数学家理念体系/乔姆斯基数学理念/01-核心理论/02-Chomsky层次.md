@@ -7,6 +7,47 @@
 
 ---
 
+## 📋 目录
+
+- [Chomsky层次](#chomsky层次)
+  - [一、引言：Chomsky层次的创立](#一引言chomsky层次的创立)
+    - [1.1 历史背景](#11-历史背景)
+    - [1.2 核心思想](#12-核心思想)
+  - [二、Type-3：正则语言](#二type-3正则语言)
+    - [2.1 正则语法](#21-正则语法)
+    - [2.2 有限自动机](#22-有限自动机)
+    - [2.3 正则表达式](#23-正则表达式)
+  - [三、Type-2：上下文无关语言](#三type-2上下文无关语言)
+    - [3.1 上下文无关语法](#31-上下文无关语法)
+    - [3.2 下推自动机](#32-下推自动机)
+    - [3.3 应用](#33-应用)
+  - [四、Type-1：上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语言](#四type-1上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语言)
+    - [4.1 上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语法](#41-上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语法)
+    - [4.2 线性有界自动机](#42-线性有界自动机)
+  - [五、Type-0：递归可枚举语言](#五type-0递归可枚举语言)
+    - [5.1 无限制语法](#51-无限制语法)
+    - [5.2 图灵机](#52-图灵机)
+  - [六、层次关系](#六层次关系)
+    - [6.1 严格包含](#61-严格包含)
+    - [6.2 例子](#62-例子)
+  - [七、语法与自动机的等价性](#七语法与自动机的等价性)
+    - [7.1 对应关系](#71-对应关系)
+    - [7.2 证明思路](#72-证明思路)
+  - [八、应用与影响](#八应用与影响)
+    - [8.1 编程语言](#81-编程语言)
+    - [8.2 计算理论](#82-计算理论)
+  - [九、现代发展](#九现代发展)
+    - [9.1 扩展层次](#91-扩展层次)
+    - [9.2 计算复杂性](#92-计算复杂性)
+  - [十、总结](#十总结)
+    - [10.1 历史意义](#101-历史意义)
+    - [10.2 技术贡献](#102-技术贡献)
+    - [10.3 现代影响](#103-现代影响)
+  - [🔗 Chomsky层次Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关文档](#-Chomsky层次Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关文档)
+    - [核心理论](#核心理论)
+    - [数学内容](#数学内容)
+
+---
 ## 一、引言：Chomsky层次的创立
 
 ### 1.1 历史背景
@@ -36,7 +77,7 @@
 **四个层次**：
 
 - Type-0：递归可枚举语言
-- Type-1：上下文相关语言
+- Type-1：上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语言
 - Type-2：上下文无关语言
 - Type-3：正则语言
 
@@ -170,9 +211,9 @@ $$S \to aSb \mid \epsilon$$
 
 ---
 
-## 四、Type-1：上下文相关语言
+## 四、Type-1：上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语言
 
-### 4.1 上下文相关语法
+### 4.1 上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语法
 
 **定义**：
 
@@ -205,7 +246,7 @@ $$cC \to cc$$
 
 **对应关系**：
 
-- **等价性定理**：上下文相关语言 $\Leftrightarrow$ 线性有界自动机可识别
+- **等价性定理**：上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语言 $\Leftrightarrow$ 线性有界自动机可识别
 
 **线性有界自动机（LBA）**：
 
@@ -290,7 +331,7 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 - $L = \{a^n b^n : n \geq 0\}$
 
-**上下文相关语言**：
+**上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语言**：
 
 - $L = \{a^n b^n c^n : n \geq 0\}$
 
@@ -308,7 +349,7 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 - Type-3：正则语法 $\Leftrightarrow$ 有限自动机
 - Type-2：上下文无关语法 $\Leftrightarrow$ 下推自动机
-- Type-1：上下文相关语法 $\Leftrightarrow$ 线性有界自动机
+- Type-1：上下文Chomsky层次Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关语法 $\Leftrightarrow$ 线性有界自动机
 - Type-0：无限制语法 $\Leftrightarrow$ 图灵机
 
 ---
@@ -321,6 +362,8 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 - 从自动机构造语法
 - 证明等价性
 
+
+Chomsky层次是乔姆斯基的重要数学贡献，体现了乔姆斯基对数学的深刻洞察和创新思维。这一理论在数学史上占有重要地位。
 ---
 
 ## 八、应用与影响
@@ -333,6 +376,8 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 - 编译器设计
 - 语言解析
 
+
+Chomsky层次是乔姆斯基的重要数学贡献，体现了乔姆斯基对数学的深刻洞察和创新思维。这一理论在数学史上占有重要地位。
 ---
 
 ### 8.2 计算理论
@@ -343,6 +388,8 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 - 可计算性理论
 - 算法分析
 
+
+Chomsky层次的核心理论包括重要的数学结果和证明方法。乔姆斯基通过严格的数学推理，建立了这一理论的坚实基础。
 ---
 
 ## 九、现代发展
@@ -355,6 +402,8 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 - 其他分类方法
 - 现代研究
 
+
+Chomsky层次是乔姆斯基的重要数学贡献，体现了乔姆斯基对数学的深刻洞察和创新思维。这一理论在数学史上占有重要地位。
 ---
 
 ### 9.2 计算复杂性
@@ -365,6 +414,8 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 - 语法解析的复杂度
 - 现代研究
 
+
+Chomsky层次是乔姆斯基的重要数学贡献，体现了乔姆斯基对数学的深刻洞察和创新思维。这一理论在数学史上占有重要地位。
 ---
 
 ## 十、总结
@@ -395,7 +446,7 @@ Chomsky层次展示了乔姆斯基的核心贡献，具有深远的历史意义�
 
 ---
 
-## 🔗 相关文档
+## 🔗 Chomsky层次Chomsky层次Chomsky层次Chomsky层次Chomsky层次相关文档
 
 ### 核心理论
 

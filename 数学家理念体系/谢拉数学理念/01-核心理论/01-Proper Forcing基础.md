@@ -7,6 +7,35 @@
 
 ---
 
+## 📋 目录
+
+- [Proper Forcing基础](#proper-forcing基础)
+  - [一、引言：Proper Forcing的创立](#一引言proper-forcing的创立)
+    - [1.1 历史背景：从Forcing到Proper Forcing](#11-历史背景从forcing到proper-forcing)
+    - [1.2 谢拉的贡献（1980s）](#12-谢拉的贡献1980s)
+    - [1.3 Proper Forcing的意义](#13-proper-forcing的意义)
+  - [二、Forcing方法的回顾](#二forcing方法的回顾)
+    - [2.1 Cohen的Forcing方法](#21-cohen的forcing方法)
+    - [2.2 Forcing方法的局限性](#22-forcing方法的局限性)
+    - [2.3 需要改进的方向](#23-需要改进的方向)
+  - [三、Proper Forcing的定义](#三proper-forcing的定义)
+    - [3.1 Proper Forcing的概念](#31-proper-forcing的概念)
+    - [3.2 Proper Forcing的条件](#32-proper-forcing的条件)
+    - [3.3 Proper Forcing的性质](#33-proper-forcing的性质)
+  - [四、Proper Forcing的优势](#四proper-forcing的优势)
+    - [4.1 保持$\omega_1$](#41-保持omega_1)
+    - [4.2 迭代性质](#42-迭代性质)
+    - [4.3 应用范围](#43-应用范围)
+  - [五、Proper Forcing的应用](#五proper-forcing的应用)
+    - [5.1 在集合论中的应用](#51-在集合论中的应用)
+    - [5.2 在独立性证明中的应用](#52-在独立性证明中的应用)
+    - [5.3 在现代集合论中的应用](#53-在现代集合论中的应用)
+  - [六、总结](#六总结)
+  - [🔗 相关文档](#-相关文档)
+    - [核心理论](#核心理论)
+    - [关联项目](#关联项目)
+
+---
 ## 📑 目录
 
 - [Proper Forcing基础](#proper-forcing基础)
