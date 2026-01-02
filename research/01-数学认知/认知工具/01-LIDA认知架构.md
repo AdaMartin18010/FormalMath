@@ -317,13 +317,13 @@
 
 ### 相关研究
 
-4. **Anderson, J. R. (2007). How Can the Human Mind Occur in the Physical Universe?**
+1. **Anderson, J. R. (2007). How Can the Human Mind Occur in the Physical Universe?**
    - ACT-R架构
 
-5. **Dehaene, S. (2014). Consciousness and the Brain.**
+2. **Dehaene, S. (2014). Consciousness and the Brain.**
    - 意识的神经机制
 
-6. **Sun, R. (2006). The CLARION Cognitive Architecture.**
+3. **Sun, R. (2006). The CLARION Cognitive Architecture.**
    - CLARION架构
 
 ---

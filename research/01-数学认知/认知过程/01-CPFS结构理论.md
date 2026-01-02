@@ -501,13 +501,13 @@ R ∈ {前提、推论、推广、特例、类比、逆命题、...}
 
 ### 相关理论
 
-4. **Sfard, A. (1991). On the Dual Nature of Mathematical Conceptions.**
+1. **Sfard, A. (1991). On the Dual Nature of Mathematical Conceptions.**
    - 概念的过程-对象二元性
 
-5. **Tall, D. & Vinner, S. (1981). Concept Image and Concept Definition.**
+2. **Tall, D. & Vinner, S. (1981). Concept Image and Concept Definition.**
    - 概念意象与概念定义
 
-6. **Hiebert, J. & Lefevre, P. (1986). Conceptual and Procedural Knowledge.**
+3. **Hiebert, J. & Lefevre, P. (1986). Conceptual and Procedural Knowledge.**
    - 概念性知识与程序性知识
 
 ---

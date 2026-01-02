@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [Teichmüller理论：模空间的几何结构](#teichmüller理论模空间的几何结构)
+  - [📋 目录](#-目录)
   - [一、Teichmüller空间](#一teichmüller空间)
     - [1.1 定义](#11-定义)
     - [1.2 构造](#12-构造)
@@ -29,6 +30,7 @@
     - [Teichmüller理论的历史地位](#teichmüller理论的历史地位)
 
 ---
+
 ## 一、Teichmüller空间
 
 ### 1.1 定义

@@ -760,9 +760,9 @@ $\text{Tor}_n^R(M, N)$ 是 $M$ 和 $N$ 的张量积的导出函子。
 
 ---
 
-**文档状态**: 抽象代数结构完整理论体系  
-**形式化程度**: 100% 形式化证明  
-**应用价值**: 为现代数学和科学提供基础工具  
+**文档状态**: 抽象代数结构完整理论体系
+**形式化程度**: 100% 形式化证明
+**应用价值**: 为现代数学和科学提供基础工具
 **理论深度**: 从基础到前沿的完整体系
 
 ## 术语对照表 / Terminology Table
@@ -789,14 +789,14 @@ from abc import ABC, abstractmethod
 
 class ZFCAlgebraicSystem:
     """ZFC到代数结构的多表征系统"""
-    
+
     def __init__(self):
         self.zfc_axioms = {}
         self.algebraic_structures = {}
         self.construction_paths = {}
         self.dependencies = {}
-        
-    def add_zfc_axiom(self, name: str, description: str, formal_statement: str, 
+
+    def add_zfc_axiom(self, name: str, description: str, formal_statement: str,
                       philosophical_meaning: str):
         """添加ZFC公理"""
         self.zfc_axioms[name] = {
@@ -804,8 +804,8 @@ class ZFCAlgebraicSystem:
             'formal_statement': formal_statement,
             'philosophical_meaning': philosophical_meaning
         }
-        
-    def add_algebraic_structure(self, name: str, definition: str, 
+
+    def add_algebraic_structure(self, name: str, definition: str,
                                zfc_construction: str, properties: List[str]):
         """添加代数结构"""
         self.algebraic_structures[name] = {
@@ -813,8 +813,8 @@ class ZFCAlgebraicSystem:
             'zfc_construction': zfc_construction,
             'properties': properties
         }
-        
-    def add_construction_path(self, structure: str, path: List[str], 
+
+    def add_construction_path(self, structure: str, path: List[str],
                             complexity: float, philosophical_implications: str):
         """添加构造路径"""
         self.construction_paths[structure] = {
@@ -822,7 +822,7 @@ class ZFCAlgebraicSystem:
             'complexity': complexity,
             'philosophical_implications': philosophical_implications
         }
-        
+
     def algebraic_representation(self) -> Dict[str, Any]:
         """代数表征"""
         return {
@@ -831,33 +831,33 @@ class ZFCAlgebraicSystem:
             'total_axioms': len(self.zfc_axioms),
             'total_structures': len(self.algebraic_structures)
         }
-    
+
     def geometric_representation(self) -> nx.DiGraph:
         """几何表征 - 构造依赖图"""
         G = nx.DiGraph()
-        
+
         # 添加ZFC公理作为基础节点
         for axiom in self.zfc_axioms:
             G.add_node(axiom, type='axiom', color='lightblue')
-            
+
         # 添加代数结构作为高级节点
         for structure in self.algebraic_structures:
             G.add_node(structure, type='structure', color='lightgreen')
-            
+
         # 添加构造路径作为边
         for structure, path_info in self.construction_paths.items():
             path = path_info['path']
             for i in range(len(path) - 1):
-                G.add_edge(path[i], path[i+1], 
+                G.add_edge(path[i], path[i+1],
                           weight=path_info['complexity'],
                           type='construction')
-                
+
         return G
-    
+
     def combinatorial_representation(self) -> Dict[str, Any]:
         """组合表征"""
         G = self.geometric_representation()
-        
+
         return {
             'total_nodes': G.number_of_nodes(),
             'total_edges': G.number_of_edges(),
@@ -866,11 +866,11 @@ class ZFCAlgebraicSystem:
             'max_path_length': max(len(path['path']) for path in self.construction_paths.values()),
             'average_complexity': np.mean([path['complexity'] for path in self.construction_paths.values()])
         }
-    
+
     def topological_representation(self) -> Dict[str, Any]:
         """拓扑表征"""
         G = self.geometric_representation()
-        
+
         return {
             'connected_components': list(nx.weakly_connected_components(G)),
             'cycles': list(nx.simple_cycles(G)),
@@ -881,19 +881,19 @@ class ZFCAlgebraicSystem:
 
 class CriticalArgumentationFramework:
     """批判性论证框架"""
-    
+
     def __init__(self):
         self.arguments = {}
         self.counter_arguments = {}
         self.strength_metrics = {}
-        
-    def add_argument(self, topic: str, argument: str, strength: float, 
-                    logical_coherence: float, empirical_support: float, 
+
+    def add_argument(self, topic: str, argument: str, strength: float,
+                    logical_coherence: float, empirical_support: float,
                     explanatory_power: float):
         """添加论证"""
         if topic not in self.arguments:
             self.arguments[topic] = []
-            
+
         self.arguments[topic].append({
             'argument': argument,
             'strength': strength,
@@ -901,30 +901,30 @@ class CriticalArgumentationFramework:
             'empirical_support': empirical_support,
             'explanatory_power': explanatory_power
         })
-        
-    def add_counter_argument(self, topic: str, counter_arg: str, 
+
+    def add_counter_argument(self, topic: str, counter_arg: str,
                            target_argument: str, strength: float):
         """添加反论证"""
         if topic not in self.counter_arguments:
             self.counter_arguments[topic] = []
-            
+
         self.counter_arguments[topic].append({
             'counter_argument': counter_arg,
             'target_argument': target_argument,
             'strength': strength
         })
-        
+
     def analyze_argument_strength(self, topic: str) -> Dict[str, Any]:
         """分析论证强度"""
         if topic not in self.arguments:
             return {}
-            
+
         args = self.arguments[topic]
         total_strength = sum(arg['strength'] for arg in args)
         avg_coherence = np.mean([arg['logical_coherence'] for arg in args])
         avg_support = np.mean([arg['empirical_support'] for arg in args])
         avg_power = np.mean([arg['explanatory_power'] for arg in args])
-        
+
         return {
             'total_arguments': len(args),
             'total_strength': total_strength,
@@ -932,19 +932,19 @@ class CriticalArgumentationFramework:
             'average_support': avg_support,
             'average_power': avg_power
         }
-    
+
     def visualize_argument_network(self, topic: str) -> nx.DiGraph:
         """可视化论证网络"""
         G = nx.DiGraph()
-        
+
         if topic in self.arguments:
             for i, arg in enumerate(self.arguments[topic]):
                 arg_id = f"arg_{i}"
-                G.add_node(arg_id, 
+                G.add_node(arg_id,
                           argument=arg['argument'][:50] + "...",
                           strength=arg['strength'],
                           type='argument')
-                
+
         if topic in self.counter_arguments:
             for i, counter in enumerate(self.counter_arguments[topic]):
                 counter_id = f"counter_{i}"
@@ -952,21 +952,21 @@ class CriticalArgumentationFramework:
                           argument=counter['counter_argument'][:50] + "...",
                           strength=counter['strength'],
                           type='counter_argument')
-                
+
                 # 连接到目标论证
                 target_idx = int(counter['target_argument'].split('_')[1])
                 G.add_edge(counter_id, f"arg_{target_idx}")
-                
+
         return G
 
 class HistoricalDevelopmentTimeline:
     """历史发展时间线"""
-    
+
     def __init__(self):
         self.events = []
         self.figures = {}
-        
-    def add_event(self, year: int, event: str, significance: str, 
+
+    def add_event(self, year: int, event: str, significance: str,
                  figures: List[str], impact: float):
         """添加历史事件"""
         self.events.append({
@@ -976,8 +976,8 @@ class HistoricalDevelopmentTimeline:
             'figures': figures,
             'impact': impact
         })
-        
-    def add_figure(self, name: str, years: str, contributions: List[str], 
+
+    def add_figure(self, name: str, years: str, contributions: List[str],
                   influence: float):
         """添加历史人物"""
         self.figures[name] = {
@@ -985,15 +985,15 @@ class HistoricalDevelopmentTimeline:
             'contributions': contributions,
             'influence': influence
         }
-        
+
     def get_timeline(self) -> List[Dict]:
         """获取时间线"""
         return sorted(self.events, key=lambda x: x['year'])
-    
+
     def visualize_timeline(self) -> nx.DiGraph:
         """可视化时间线"""
         G = nx.DiGraph()
-        
+
         sorted_events = self.get_timeline()
         for i, event in enumerate(sorted_events):
             event_id = f"event_{i}"
@@ -1001,18 +1001,18 @@ class HistoricalDevelopmentTimeline:
                       year=event['year'],
                       event=event['event'],
                       impact=event['impact'])
-            
+
             if i > 0:
                 G.add_edge(f"event_{i-1}", event_id)
-                
+
         return G
 
 def demonstrate_zfc_algebraic_analysis():
     """演示ZFC代数分析"""
-    
+
     # 创建ZFC代数系统
     zas = ZFCAlgebraicSystem()
-    
+
     # 添加ZFC公理
     zas.add_zfc_axiom(
         name="外延公理",
@@ -1020,21 +1020,21 @@ def demonstrate_zfc_algebraic_analysis():
         formal_statement="∀x∀y(∀z(z∈x↔z∈y)→x=y)",
         philosophical_meaning="定义了集合的本质特征"
     )
-    
+
     zas.add_zfc_axiom(
         name="配对公理",
         description="对于任意两个集合，存在包含它们的集合",
         formal_statement="∀x∀y∃z∀w(w∈z↔w=x∨w=y)",
         philosophical_meaning="允许构造有序对和二元关系"
     )
-    
+
     zas.add_zfc_axiom(
         name="并集公理",
         description="对于任意集合族，存在包含所有成员元素的集合",
         formal_statement="∀F∃A∀x(x∈A↔∃B(B∈F∧x∈B))",
         philosophical_meaning="允许构造更大的集合"
     )
-    
+
     # 添加代数结构
     zas.add_algebraic_structure(
         name="群",
@@ -1042,14 +1042,14 @@ def demonstrate_zfc_algebraic_analysis():
         zfc_construction="使用配对公理构造有序对(G,*)",
         properties=["结合律", "单位元", "逆元", "消去律"]
     )
-    
+
     zas.add_algebraic_structure(
         name="环",
         definition="具有两个二元运算的代数结构",
         zfc_construction="使用配对公理构造三元组(R,+,*)",
         properties=["加法群", "乘法半群", "分配律"]
     )
-    
+
     # 添加构造路径
     zas.add_construction_path(
         structure="群",
@@ -1057,40 +1057,40 @@ def demonstrate_zfc_algebraic_analysis():
         complexity=0.7,
         philosophical_implications="展示了从集合论到代数结构的构造过程"
     )
-    
+
     zas.add_construction_path(
         structure="环",
         path=["外延公理", "配对公理", "并集公理", "幂集公理", "分离公理"],
         complexity=0.8,
         philosophical_implications="体现了代数结构的层次性和复杂性"
     )
-    
+
     # 代数表征
     alg_rep = zas.algebraic_representation()
     print("代数表征:")
     print(f"公理数: {alg_rep['total_axioms']}")
     print(f"结构数: {alg_rep['total_structures']}")
-    
+
     # 几何表征
     geom_rep = zas.geometric_representation()
     print(f"\n几何表征 - 节点数: {geom_rep.number_of_nodes()}, 边数: {geom_rep.number_of_edges()}")
-    
+
     # 组合表征
     comb_rep = zas.combinatorial_representation()
     print(f"\n组合表征:")
     print(f"总节点数: {comb_rep['total_nodes']}")
     print(f"总边数: {comb_rep['total_edges']}")
     print(f"平均复杂度: {comb_rep['average_complexity']:.2f}")
-    
+
     # 拓扑表征
     top_rep = zas.topological_representation()
     print(f"\n拓扑表征:")
     print(f"连通分量数: {len(top_rep['connected_components'])}")
     print(f"环数: {len(top_rep['cycles'])}")
-    
+
     # 批判性论证框架
     caf = CriticalArgumentationFramework()
-    
+
     # 添加关于ZFC的论证
     caf.add_argument(
         topic="ZFC公理体系的重要性",
@@ -1100,7 +1100,7 @@ def demonstrate_zfc_algebraic_analysis():
         empirical_support=0.9,
         explanatory_power=0.85
     )
-    
+
     caf.add_argument(
         topic="ZFC公理体系的重要性",
         argument="从ZFC可以构造出所有现代数学结构，包括代数结构。",
@@ -1109,17 +1109,17 @@ def demonstrate_zfc_algebraic_analysis():
         empirical_support=0.8,
         explanatory_power=0.9
     )
-    
+
     # 分析论证强度
     strength_analysis = caf.analyze_argument_strength("ZFC公理体系的重要性")
     print(f"\n论证强度分析:")
     print(f"总论证数: {strength_analysis['total_arguments']}")
     print(f"总强度: {strength_analysis['total_strength']}")
     print(f"平均逻辑一致性: {strength_analysis['average_coherence']:.2f}")
-    
+
     # 历史发展时间线
     hdt = HistoricalDevelopmentTimeline()
-    
+
     # 添加历史事件
     hdt.add_event(
         year=1908,
@@ -1128,7 +1128,7 @@ def demonstrate_zfc_algebraic_analysis():
         figures=["Ernst Zermelo"],
         impact=0.9
     )
-    
+
     hdt.add_event(
         year=1922,
         event="弗兰克尔完善ZFC公理体系",
@@ -1136,7 +1136,7 @@ def demonstrate_zfc_algebraic_analysis():
         figures=["Abraham Fraenkel"],
         impact=0.95
     )
-    
+
     hdt.add_event(
         year=1935,
         event="诺特发展抽象代数",
@@ -1144,18 +1144,18 @@ def demonstrate_zfc_algebraic_analysis():
         figures=["Emmy Noether"],
         impact=0.9
     )
-    
+
     # 可视化
     plt.figure(figsize=(15, 10))
-    
+
     # 构造依赖图
     plt.subplot(2, 3, 1)
     pos = nx.spring_layout(geom_rep)
     colors = [geom_rep.nodes[node]['color'] for node in geom_rep.nodes()]
-    nx.draw(geom_rep, pos, with_labels=True, node_color=colors, 
+    nx.draw(geom_rep, pos, with_labels=True, node_color=colors,
             node_size=1000, font_size=8, arrows=True)
     plt.title("ZFC到代数结构的构造依赖图")
-    
+
     # 论证网络
     plt.subplot(2, 3, 2)
     arg_network = caf.visualize_argument_network("ZFC公理体系的重要性")
@@ -1164,7 +1164,7 @@ def demonstrate_zfc_algebraic_analysis():
         nx.draw(arg_network, pos, with_labels=True, node_color='lightgreen',
                 node_size=1500, font_size=8, arrows=True)
     plt.title("论证网络")
-    
+
     # 历史时间线
     plt.subplot(2, 3, 3)
     timeline = hdt.visualize_timeline()
@@ -1173,10 +1173,10 @@ def demonstrate_zfc_algebraic_analysis():
         nx.draw(timeline, pos, with_labels=True, node_color='lightcoral',
                 node_size=1000, font_size=8, arrows=True)
     plt.title("历史发展时间线")
-    
+
     plt.tight_layout()
     plt.show()
-    
+
     return {
         'algebraic': alg_rep,
         'geometric': geom_rep,
