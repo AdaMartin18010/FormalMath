@@ -44,6 +44,9 @@ Using Concept Maps and Gowin's Vee to Understand Mathematical Models of Physical
       - [3.5.1 匀加速运动模型 / Uniformly Accelerated Motion Model](#351-匀加速运动模型--uniformly-accelerated-motion-model)
       - [3.5.2 简谐运动模型 / Simple Harmonic Motion Model](#352-简谐运动模型--simple-harmonic-motion-model)
       - [3.5.3 指数衰减模型 / Exponential Decay Model](#353-指数衰减模型--exponential-decay-model)
+    - [3.6 跨主题关联小结 / Cross-Topic Association Summary](#36-跨主题关联小结--cross-topic-association-summary)
+      - [3.6.1 物理模型与微积分的关联 / Association Between Physical Models and Calculus](#361-物理模型与微积分的关联--association-between-physical-models-and-calculus)
+      - [3.6.2 物理模型与函数类型的关联 / Association Between Physical Models and Function Types](#362-物理模型与函数类型的关联--association-between-physical-models-and-function-types)
   - [📚 四、概念映射应用 / Concept Map Application](#-四概念映射应用--concept-map-application)
     - [3.1 概念映射构建指南 / Concept Map Construction Guidelines](#31-概念映射构建指南--concept-map-construction-guidelines)
     - [3.2 物理现象概念映射示例 / Physical Phenomena Concept Map Examples](#32-物理现象概念映射示例--physical-phenomena-concept-map-examples)
@@ -818,8 +821,8 @@ $$v_{\max} = A\omega = 0.1 \times 5 = 0.5 \text{ m/s}$$
 2. **Model Application**: Students use the established model to solve specific problems
 3. **结果验证**: 学生验证结果的合理性（单位检查、数量级检查、物理意义检查）
 4. **Result Validation**: Students verify the reasonableness of results (unit check, order of magnitude check, physical meaning check)
-4. **反思总结**: 学生反思建模过程，总结经验和教训
-5. **Reflection and Summary**: Students reflect on the modeling process and summarize experiences and lessons
+5. **反思总结**: 学生反思建模过程，总结经验和教训
+6. **Reflection and Summary**: Students reflect on the modeling process and summarize experiences and lessons
 
 **学生活动示例：自由落体运动建模 / Student Activity Example: Free Fall Motion Modeling**
 
