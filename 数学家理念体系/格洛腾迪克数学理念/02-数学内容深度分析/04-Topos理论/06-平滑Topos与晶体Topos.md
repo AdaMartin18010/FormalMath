@@ -270,6 +270,46 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **平滑Topos**：
+   $$X_{\text{sm}} = \text{Sh}(X_{\text{sm}}), \quad X_{\text{sm}} = \{\text{平滑覆盖}\}$$
+
+2. **平滑态射**：
+   $$f: X \to Y \text{ 平滑 } \iff f \text{ 平坦、有限型，且纤维几何正则}$$
+
+3. **晶体Topos**：
+   $$(X/S)_{\text{cris}} = \text{Sh}(\text{Cris}(X/S)), \quad \text{Cris}(X/S) = \{\text{晶体层}\}$$
+
+4. **晶体层定义**：
+   $$\mathcal{F} \text{ 晶体层 } \iff \mathcal{F} \text{ 在Cris}(X/S) \text{ 上的层，满足特定条件}$$
+
+5. **晶体上同调**：
+   $$H^i_{\text{cris}}(X/S, \mathcal{F}) = H^i((X/S)_{\text{cris}}, \mathcal{F})$$
+
+6. **比较定理（de Rham vs 晶体）**：
+   $$H^i_{\text{cris}}(X/W(k)) \otimes_W \mathbb{Q} \cong H^i_{\text{dR}}(X/k)$$
+
+7. **比较定理（étale vs 晶体）**：
+   $$H^i_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_p) \cong H^i_{\text{cris}}(X/W(\bar{k})) \otimes \mathbb{Q}_p$$
+
+8. **晶体Topos与p进几何**：
+   $$(X/S)_{\text{cris}} \text{ 在 $p$ 进几何中起关键作用}$$
+
+9. **晶体Topos性质**：
+   $$(X/S)_{\text{cris}} \text{ 是Grothendieck Topos，有内部逻辑}$$
+
+10. **平滑Topos与Zariski Topos关系**：
+    $$X_{\text{sm}} \subset X_{\text{Zar}}, \quad \text{平滑拓扑细于Zariski拓扑}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

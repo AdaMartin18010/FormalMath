@@ -269,6 +269,46 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Set作为Topos**：
+   $$\text{Set} \text{ 是Grothendieck Topos}, \quad \Omega_{\text{Set}} = 2 = \{0, 1\}, \quad P(A) = 2^A$$
+
+2. **内部集合论**：
+   $$\text{在Topos $\mathcal{E}$ 中，对象作为"集合"，子对象作为"子集"}$$
+
+3. **幂对象**：
+   $$P(A) = \Omega^A, \quad \text{内部幂集}$$
+
+4. **逻辑Topos定义**：
+   $$\mathcal{E} \text{ 逻辑Topos } \iff \text{内部逻辑是经典逻辑（满足排中律）}$$
+
+5. **Grothendieck宇宙**：
+   $$\mathcal{U} \text{ 宇宙 } \iff \mathcal{U} \text{ 满足ZFC公理（在 $\mathcal{U}$ 中）}$$
+
+6. **内部ZFC**：
+   $$\text{在Topos $\mathcal{E}$ 中，可以形式化内部ZFC（不一定全部成立）}$$
+
+7. **Set的理论**：
+   $$\text{Set} \text{ 的内部逻辑是经典逻辑，满足所有ZFC公理（在 $\mathcal{U}$ 中）}$$
+
+8. **逻辑Topos的性质**：
+   $$\text{逻辑Topos } \Rightarrow \Omega = 2, \quad \text{排中律成立}$$
+
+9. **内部集合论与外部集合论**：
+   $$\text{内部集合论（在 $\mathcal{E}$ 中）} \leftrightarrow \text{外部集合论（元理论）}$$
+
+10. **Topos与集合论**：
+    $$\text{Topos理论提供集合论的范畴论替代，更灵活的基础}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

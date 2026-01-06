@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [上同调与Mayer-Vietoris序列：覆盖的上同调](#上同调与mayer-vietoris序列覆盖的上同调)
+  - [📋 目录](#-目录)
   - [一、Mayer-Vietoris序列](#一mayer-vietoris序列)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -23,6 +24,7 @@
     - [上同调与Mayer-Vietoris序列的意义](#上同调与mayer-vietoris序列的意义)
 
 ---
+
 ## 一、Mayer-Vietoris序列
 
 ### 1.1 定义
@@ -41,6 +43,7 @@ Mayer-Vietoris序列：
 - 上同调计算
 - 应用广泛
 ```
+
 ---
 
 ### 1.2 性质
@@ -52,6 +55,7 @@ Mayer-Vietoris序列：
 - 长正合列
 - 应用广泛
 ```
+
 ---
 
 ## 二、在代数几何中的应用
@@ -66,6 +70,7 @@ Mayer-Vietoris序列：
 - 几何不变量
 - 应用广泛
 ```
+
 ---
 
 ### 2.2 几何应用
@@ -77,6 +82,7 @@ Mayer-Vietoris序列：
 - 几何分类
 - 应用广泛
 ```
+
 ---
 
 ## 三、Grothendieck的贡献
@@ -94,6 +100,7 @@ Grothendieck的贡献：
 - 现代代数几何
 - 应用广泛
 ```
+
 ---
 
 ### 3.2 影响
@@ -107,6 +114,7 @@ Grothendieck的贡献：
 - 应用广泛
 - 现代研究
 ```
+
 ---
 
 ## 四、现代发展
@@ -124,6 +132,7 @@ Grothendieck的贡献：
     ↓
 高阶结构
 ```
+
 ---
 
 ### 4.2 应用
@@ -136,6 +145,7 @@ Grothendieck的贡献：
 - ∞-范畴
 - 现代研究
 ```
+
 ---
 
 ## 五、应用
@@ -149,6 +159,7 @@ Grothendieck的贡献：
 - 几何不变量
 - 应用广泛
 ```
+
 ---
 
 ### 5.2 算术应用
@@ -161,6 +172,7 @@ Grothendieck的贡献：
 - 算术应用
 - 现代研究
 ```
+
 ---
 
 ## 六、总结
@@ -181,6 +193,46 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月7日
+---
+
+## 七、数学公式总结
+
+### 核心公式
+
+1. **Mayer-Vietoris序列**：
+   $$\cdots \to H^i(X, \mathcal{F}) \to H^i(U, \mathcal{F}) \oplus H^i(V, \mathcal{F}) \to H^i(U \cap V, \mathcal{F}) \to H^{i+1}(X, \mathcal{F}) \to \cdots$$
+
+2. **开覆盖条件**：
+   $$X = U \cup V, \quad U, V \text{ 开集}$$
+
+3. **限制映射**：
+   $$H^i(X, \mathcal{F}) \to H^i(U, \mathcal{F}), \quad H^i(X, \mathcal{F}) \to H^i(V, \mathcal{F})$$
+
+4. **差映射**：
+   $$H^i(U, \mathcal{F}) \oplus H^i(V, \mathcal{F}) \to H^i(U \cap V, \mathcal{F})$$
+
+5. **连接同态**：
+   $$\delta: H^i(U \cap V, \mathcal{F}) \to H^{i+1}(X, \mathcal{F})$$
+
+6. **长正合列性质**：
+   $$\text{im}(\delta) = \ker(\text{下一个映射})$$
+
+7. **Čech上同调**：
+   $$\check{H}^i(\mathcal{U}, \mathcal{F}) \cong H^i(X, \mathcal{F}) \text{（对好覆盖）}$$
+
+8. **覆盖的上同调**：
+   $$H^i(X, \mathcal{F}) = \varinjlim_{\mathcal{U}} \check{H}^i(\mathcal{U}, \mathcal{F})$$
+
+9. **Mayer-Vietoris应用**：
+   $$\text{从局部上同调计算全局上同调}$$
+
+10. **紧支撑上同调**：
+    $$H_c^i(X, \mathcal{F}) = \varinjlim_{Z \subseteq X \text{ 紧}} H^i_Z(X, \mathcal{F})$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

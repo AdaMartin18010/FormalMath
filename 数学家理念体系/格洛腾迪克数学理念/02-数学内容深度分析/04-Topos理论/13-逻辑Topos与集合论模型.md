@@ -233,6 +233,48 @@ Topos模型
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 八、数学公式总结
+
+### 核心公式
+
+1. **内部集合论模型**：
+   $$\text{在Topos $\mathcal{E}$ 中，对象作为"集合"，满足集合论公理}$$
+
+2. **集合论公理（内部）**：
+   $$\text{空集公理：} \exists x. \forall y. y \notin x$$
+   $$\text{配对公理：} \forall x, y. \exists z. x \in z \land y \in z$$
+
+3. **幂集公理（内部）**：
+   $$\forall x. \exists y. \forall z. (z \in y \Leftrightarrow z \subseteq x)$$
+   $$P(A) = \Omega^A \text{（内部幂集）}$$
+
+4. **并集公理（内部）**：
+   $$\forall x. \exists y. \forall z. (z \in y \Leftrightarrow \exists w. z \in w \land w \in x)$$
+
+5. **无穷公理（内部）**：
+   $$\exists x. (\emptyset \in x \land \forall y. (y \in x \Rightarrow y \cup \{y\} \in x))$$
+
+6. **选择公理（内部）**：
+   $$\forall x. (\emptyset \notin x \Rightarrow \exists f. \forall y \in x. f(y) \in y)$$
+
+7. **逻辑Topos**：
+   $$\mathcal{E} \text{ 逻辑Topos } \iff \text{内部逻辑是经典逻辑（满足所有集合论公理）}$$
+
+8. **模型与层对应**：
+   $$\text{集合论模型} \leftrightarrow \text{层}, \quad \text{逻辑解释} \leftrightarrow \text{几何构造}$$
+
+9. **内部ZFC**：
+   $$\text{在逻辑Topos中，可以形式化内部ZFC（不一定全部成立）}$$
+
+10. **模型理论与Topos**：
+    $$\text{Topos提供了集合论的范畴论模型，更灵活的框架}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

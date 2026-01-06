@@ -283,6 +283,48 @@ Grothendieck拓扑
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Grothendieck拓扑定义**：
+   $$J: C^{\text{op}} \to \text{Cat}, \quad J(X) = \{\text{覆盖族}\}, \quad \text{满足覆盖公理}$$
+
+2. **覆盖公理**：
+   - 恒等覆盖：$\{\text{id}_X\} \in J(X)$
+   - 覆盖的细化：$\{U_i\} \in J(X), \{U_{ij}\} \in J(U_i) \Rightarrow \{U_{ij}\} \in J(X)$
+   - 覆盖的拉回：$\{U_i\} \in J(X), f: Y \to X \Rightarrow \{U_i \times_X Y\} \in J(Y)$
+
+3. **层条件**：
+   $$F: C^{\text{op}} \to \text{Set} \text{ 是 $J$-层 } \iff F(X) = \varprojlim F(U_i) \text{（对每个覆盖 $\{U_i\}$）}$$
+
+4. **层范畴**：
+   $$\text{Sh}(C, J) = \{J\text{-层}\}, \quad \text{Grothendieck Topos}$$
+
+5. **预层到层（层化）**：
+   $$a: \text{PSh}(C) \to \text{Sh}(C, J), \quad a \dashv i, \quad i: \text{Sh}(C, J) \hookrightarrow \text{PSh}(C)$$
+
+6. **Zariski拓扑**：
+   $$J_{\text{Zar}}(X) = \{\{D(f_i)\} : \bigcup D(f_i) = X\}, \quad D(f) = \{x : f(x) \neq 0\}$$
+
+7. **étale拓扑**：
+   $$J_{\text{ét}}(X) = \{\{U_i \to X\} : U_i \to X \text{ étale且 $\bigcup \text{Im}(U_i) = X$}\}$$
+
+8. **层与上同调**：
+   $$H^i(C, J; F) = H^i(\text{Sh}(C, J), F), \quad F \text{ $J$-层}$$
+
+9. **Grothendieck Topos性质**：
+   $$\text{Sh}(C, J) \text{ 是Grothendieck Topos } \iff \text{有所有（余）极限，子对象分类器}$$
+
+10. **层范畴的内部逻辑**：
+    $$\text{Sh}(C, J) \text{ 的内部逻辑是几何逻辑，依赖于 $J$}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

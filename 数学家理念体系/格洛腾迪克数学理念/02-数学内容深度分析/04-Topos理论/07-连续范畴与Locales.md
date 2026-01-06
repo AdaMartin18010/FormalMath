@@ -262,6 +262,46 @@ Locale
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Locale定义**：
+   $$L \text{ Locale } \iff L \text{ 完备格，满足分配律：} a \land \left(\bigvee_i b_i\right) = \bigvee_i (a \land b_i)$$
+
+2. **连续范畴定义**：
+   $$\mathcal{C} \text{ 连续 } \iff \mathcal{C} \text{ 有所有余极限，且满足特定条件}$$
+
+3. **Locale上的层Topos**：
+   $$\text{Sh}(L) = \{\text{L上的层}\}, \quad \text{Grothendieck Topos}$$
+
+4. **拓扑空间到Locale**：
+   $$\Omega: \text{Top} \to \text{Loc}, \quad \Omega(X) = \text{开集格}, \quad \text{左伴随于 $\text{pt}$}$$
+
+5. **Locale到拓扑空间**：
+   $$\text{pt}: \text{Loc} \to \text{Top}, \quad \text{pt}(L) = \{\text{点}\}, \quad \text{右伴随于 $\Omega$}$$
+
+6. **Locale的层**：
+   $$F: L^{\text{op}} \to \text{Set}, \quad \text{满足层公理}$$
+
+7. **Locale与Topos对应**：
+   $$\text{Locale } L \leftrightarrow \text{Topos Sh}(L)$$
+
+8. **连续范畴与Topos**：
+   $$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
+
+9. **Locale的几何化**：
+   $$\text{无点拓扑} \leftrightarrow \text{Locale}, \quad \text{几何化数学}$$
+
+10. **Locales与逻辑**：
+    $$\text{Locale的内部逻辑是几何逻辑}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

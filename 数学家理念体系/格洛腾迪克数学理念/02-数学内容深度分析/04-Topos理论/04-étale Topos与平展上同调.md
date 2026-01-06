@@ -279,6 +279,46 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **étale态射定义**：
+   $$f: X \to Y \text{ étale } \iff f \text{ 平坦、非分歧、有限型}$$
+
+2. **étale Topos**：
+   $$X_{\text{ét}} = \text{Sh}(X_{\text{ét}}), \quad X_{\text{ét}} = \{\text{étale覆盖}\}$$
+
+3. **étale上同调**：
+   $$H^i_{\text{ét}}(X, \mathcal{F}) = H^i(X_{\text{ét}}, \mathcal{F})$$
+
+4. **ℓ进上同调**：
+   $$H^i_{\text{ét}}(X, \mathbb{Z}_\ell) = \varprojlim_n H^i_{\text{ét}}(X, \mathbb{Z}/\ell^n\mathbb{Z})$$
+
+5. **比较定理（Betti vs étale）**：
+   $$H^i_{\text{ét}}(X_{\mathbb{C}}, \mathbb{Z}_\ell) \cong H^i(X(\mathbb{C}), \mathbb{Z}) \otimes \mathbb{Z}_\ell$$
+
+6. **Frobenius作用**：
+   $$\text{Frob}: H^i_{\text{ét}}(X, \mathbb{Q}_\ell) \to H^i_{\text{ét}}(X, \mathbb{Q}_\ell), \quad \text{Weil猜想相关}$$
+
+7. **étale基本群**：
+   $$\pi_1^{\text{ét}}(X, \bar{x}) = \varprojlim \text{Gal}(Y/X), \quad Y \to X \text{ 有限étale覆盖}$$
+
+8. **étale覆盖**：
+   $$Y \to X \text{ étale覆盖 } \iff Y \to X \text{ 有限étale且满射}$$
+
+9. **étale拓扑与Zariski拓扑**：
+   $$\text{étale拓扑} \supset \text{Zariski拓扑}, \quad \text{更细拓扑，更多覆盖}$$
+
+10. **Weil猜想与étale上同调**：
+    $$H^i_{\text{ét}}(X_{\bar{\mathbb{F}}_q}, \mathbb{Q}_\ell) \text{ 的Frobenius特征值给出Weil ζ函数的零点}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

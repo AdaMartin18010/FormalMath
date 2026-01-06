@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [Grothendieck Topos：广义集合论](#grothendieck-topos广义集合论)
+  - [📋 目录](#-目录)
   - [一、Topos的定义](#一topos的定义)
     - [1.1 基本要求](#11-基本要求)
     - [1.2 例子](#12-例子)
@@ -29,6 +30,7 @@
     - [Grothendieck Topos的意义](#grothendieck-topos的意义)
 
 ---
+
 ## 一、Topos的定义
 
 ### 1.1 基本要求
@@ -301,6 +303,46 @@ Topos
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Grothendieck Topos定义**：
+   $$\mathcal{E} = \text{Sh}(\mathcal{C}, J) \text{（某个格罗腾迪克位型的层范畴）}$$
+
+2. **子对象分类器**：
+   $$\text{对任意子对象 } A \subseteq X, \text{ 存在唯一 } \chi_A: X \to \Omega$$
+
+3. **幂对象**：
+   $$P(A) = \Omega^A \text{（$A$ 的幂对象）}$$
+
+4. **内部逻辑**：
+   $$\text{Topos中的逻辑是直觉主义逻辑（非经典逻辑）}$$
+
+5. **排中律**：
+   $$\text{在Topos中，排中律一般不成立：} \neg \neg P \not\Rightarrow P$$
+
+6. **层上同调**：
+   $$H^i(X, \mathcal{F}) = R^i \Gamma(X, \mathcal{F}) \text{（在Topos中）}$$
+
+7. **几何形态**：
+   $$f: \mathcal{E} \to \mathcal{F} \text{（Topos之间的态射）}$$
+
+8. **拉回**：
+   $$f^*: \mathcal{F} \to \mathcal{E}, \quad f_*: \mathcal{E} \to \mathcal{F}$$
+
+9. **子对象分类器（Set）**：
+   $$\Omega = \{0, 1\}, \quad \text{true}: 1 \to \Omega$$
+
+10. **子对象分类器（Sh(X)）**：
+    $$\Omega(U) = \{V \subseteq U : V \text{ 开}\}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

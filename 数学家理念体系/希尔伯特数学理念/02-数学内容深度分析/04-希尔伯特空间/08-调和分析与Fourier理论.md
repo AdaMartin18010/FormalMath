@@ -87,19 +87,50 @@ f̂(n) = ⟨f, e^(inx)⟩
 
 ### 2.1 定义
 
-**Fourier变换**：
+**Fourier变换的数学定义**：
 
-```
-f̂(ξ) = ∫_ℝ f(x)e^(-2πiξx)dx
+对函数 $f \in L^1(\mathbb{R})$，**Fourier变换**定义为：
 
-逆变换：
-f(x) = ∫_ℝ f̂(ξ)e^(2πiξx)dξ
+$$\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i \xi x} \, dx$$
 
-性质：
-- 线性
-- 卷积 ↔ 乘积
-- 微分 ↔ 乘法
-```
+**逆Fourier变换**（在适当条件下）：
+
+$$f(x) = \int_{-\infty}^{\infty} \hat{f}(\xi) e^{2\pi i \xi x} \, d\xi$$
+
+**具体例子**：
+
+**例1：高斯函数**
+
+- $f(x) = e^{-\pi x^2}$
+- Fourier变换：$\hat{f}(\xi) = e^{-\pi \xi^2}$（自对偶）
+- **验证**：$\hat{f}(\xi) = \int_{-\infty}^{\infty} e^{-\pi x^2} e^{-2\pi i \xi x} \, dx = e^{-\pi \xi^2}$（通过配方法）
+
+**例2：矩形函数**
+
+- $f(x) = \begin{cases} 1 & |x| \leq a \\ 0 & |x| > a \end{cases}$
+- Fourier变换：$\hat{f}(\xi) = \int_{-a}^{a} e^{-2\pi i \xi x} \, dx = \frac{\sin(2\pi a \xi)}{\pi \xi} = 2a \cdot \text{sinc}(2\pi a \xi)$
+- 其中 $\text{sinc}(x) = \frac{\sin(x)}{x}$
+
+**例3：指数衰减函数**
+
+- $f(x) = e^{-a|x|}$（$a > 0$）
+- Fourier变换：$\hat{f}(\xi) = \int_{-\infty}^{\infty} e^{-a|x|} e^{-2\pi i \xi x} \, dx = \frac{2a}{a^2 + 4\pi^2 \xi^2}$
+
+**Fourier变换的性质**：
+
+1. **线性性**：$\widehat{af + bg}(\xi) = a\hat{f}(\xi) + b\hat{g}(\xi)$
+
+2. **卷积定理**：
+   $$\widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi)$$
+   其中 $(f * g)(x) = \int_{-\infty}^{\infty} f(y) g(x-y) \, dy$
+
+3. **微分性质**：
+   $$\widehat{f'}(\xi) = 2\pi i \xi \hat{f}(\xi)$$
+   $$\widehat{xf}(\xi) = \frac{i}{2\pi} \frac{d}{d\xi} \hat{f}(\xi)$$
+
+4. **平移性质**：
+   $$\widehat{f(x-a)}(\xi) = e^{-2\pi i a \xi} \hat{f}(\xi)$$
+   $$\widehat{e^{2\pi i a x} f(x)}(\xi) = \hat{f}(\xi - a)$$
 
 ---
 
@@ -322,6 +353,53 @@ Fourier分析
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月5日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Fourier级数**：
+   $$f(x) = \sum_{n \in \mathbb{Z}} \hat{f}(n) e^{inx}$$
+   其中 $\hat{f}(n) = \frac{1}{2\pi} \int_0^{2\pi} f(x) e^{-inx} \, dx$
+
+2. **Parseval等式**：
+   $$\frac{1}{2\pi} \int_0^{2\pi} |f(x)|^2 \, dx = \sum_{n \in \mathbb{Z}} |\hat{f}(n)|^2$$
+
+3. **Fourier变换**：
+   $$\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i \xi x} \, dx$$
+
+4. **逆Fourier变换**：
+   $$f(x) = \int_{-\infty}^{\infty} \hat{f}(\xi) e^{2\pi i \xi x} \, d\xi$$
+
+5. **Plancherel定理**：
+   $$\|f\|_{L^2} = \|\hat{f}\|_{L^2}$$
+
+6. **卷积定理**：
+   $$\widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi)$$
+
+7. **微分性质**：
+   $$\widehat{f'}(\xi) = 2\pi i \xi \hat{f}(\xi)$$
+
+8. **平移性质**：
+   $$\widehat{f(x-a)}(\xi) = e^{-2\pi i a \xi} \hat{f}(\xi)$$
+
+9. **Laplace算子**：
+   $$\Delta u = \sum_{i=1}^n \frac{\partial^2 u}{\partial x_i^2}$$
+
+10. **调和函数**：
+    $$\Delta u = 0$$
+
+11. **小波基**：
+    $$\psi_{j,k}(x) = 2^{j/2} \psi(2^j x - k)$$
+
+12. **小波变换**：
+    $$W_f(a, b) = \int_{-\infty}^{\infty} f(x) \overline{\psi_{a,b}(x)} \, dx$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约3,500字
+**数学公式数**: 15个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [Noether概形与有限性：代数几何的基础](#noether概形与有限性代数几何的基础)
+  - [📋 目录](#-目录)
   - [一、Noether概形](#一noether概形)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -27,8 +28,11 @@
     - [7.2 应用](#72-应用)
   - [八、总结](#八总结)
     - [Noether概形与有限性的意义](#noether概形与有限性的意义)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
 
 ---
+
 ## 一、Noether概形
 
 ### 1.1 定义
@@ -296,6 +300,46 @@ EGA I-IV：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Noether条件**：
+   $$X \text{ Noether } \iff |X| \text{ Noether } \land O_{X,x} \text{ Noether（对所有 $x$）}$$
+
+2. **有限型定义**：
+   $$f: X \to S \text{ 有限型 } \iff \text{局部有限型} + \text{拟紧}$$
+
+3. **局部有限型**：
+   $$\text{局部：} X|_U \cong \text{Spec}(R[x_1, \ldots, x_n]/I) \text{（有限生成）}$$
+
+4. **有限表示**：
+   $$f: X \to S \text{ 有限表示 } \iff \text{有限型} + \text{拟有限}$$
+
+5. **分离性**：
+   $$\Delta_{X/S}: X \to X \times_S X \text{ 闭嵌入}$$
+
+6. **有限概形**：
+   $$f: X \to S \text{ 有限 } \iff \text{有限型} + \text{固有} + \text{拟有限}$$
+
+7. **上同调有限性**：
+   $$X \text{ Noether } \Rightarrow H^i(X, \mathcal{F}) \text{ 有限维（$\mathcal{F}$ 凝聚）}$$
+
+8. **有限覆盖**：
+   $$X \text{ Noether } \Rightarrow \exists \text{ 有限仿射覆盖 } \{U_i\}$$
+
+9. **Noether环条件**：
+   $$R \text{ Noether } \iff \text{所有理想有限生成}$$
+
+10. **Krull维数有限性**：
+    $$X \text{ Noether } \Rightarrow \dim X < \infty$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

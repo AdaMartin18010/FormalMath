@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [Hodge理论与混合结构：上同调的几何结构](#hodge理论与混合结构上同调的几何结构)
+  - [📋 目录](#-目录)
   - [一、Hodge结构](#一hodge结构)
     - [1.1 定义](#11-定义)
     - [1.2 例子](#12-例子)
@@ -274,6 +275,46 @@ Grothendieck的影响：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Hodge分解**：
+   $$H^n(X(\mathbb{C}), \mathbb{C}) = \bigoplus_{p+q=n} H^{p,q}(X), \quad H^{p,q} = H^q(X, \Omega_X^p)$$
+
+2. **共轭对称**：
+   $$\overline{H^{p,q}} = H^{q,p}$$
+
+3. **Hodge滤过**：
+   $$F^p H^n = \bigoplus_{r \geq p} H^{r,n-r}$$
+
+4. **混合Hodge结构**：
+   $$(V, W_\bullet, F^\bullet), \quad W_\bullet: \text{权滤过}, \quad F^\bullet: \text{Hodge滤过}$$
+
+5. **权分解**：
+   $$V = \bigoplus_{k} \text{Gr}_k^W V, \quad \text{Gr}_k^W V = W_k V / W_{k-1} V$$
+
+6. **Hodge数**：
+   $$h^{p,q} = \dim H^{p,q}(X)$$
+
+7. **Euler特征数**：
+   $$\chi(X) = \sum_{p,q} (-1)^{p+q} h^{p,q}$$
+
+8. **Hodge对称性**：
+   $$h^{p,q} = h^{q,p} = h^{n-p,n-q} \text{（对射影簇）}$$
+
+9. **Hodge指数定理**：
+   $$\text{对射影曲面，符号差 } \sigma = \sum_{p,q} (-1)^p h^{p,q}$$
+
+10. **混合Hodge结构的相容性**：
+    $$\text{Gr}_k^W V \text{ 有纯Hodge结构（权 $k$）}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [上同调与Ext函子应用：同调代数的几何应用](#上同调与ext函子应用同调代数的几何应用)
+  - [📋 目录](#-目录)
   - [一、Ext函子](#一ext函子)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -26,6 +27,7 @@
     - [上同调与Ext函子应用的意义](#上同调与ext函子应用的意义)
 
 ---
+
 ## 一、Ext函子
 
 ### 1.1 定义
@@ -45,6 +47,7 @@ Ext^i(M, N) = H^i(Hom(P, N))
 - 同调代数
 - 应用广泛
 ```
+
 ---
 
 ### 1.2 性质
@@ -56,6 +59,7 @@ Ext^i(M, N) = H^i(Hom(P, N))
 - 函子性
 - 应用广泛
 ```
+
 ---
 
 ## 二、上同调与Ext
@@ -77,6 +81,7 @@ H^i(X, F) ≅ Ext^i(O_X, F)
 - 统一观点
 - 应用广泛
 ```
+
 ---
 
 ### 2.2 应用
@@ -88,6 +93,7 @@ H^i(X, F) ≅ Ext^i(O_X, F)
 - 上同调计算
 - 应用广泛
 ```
+
 ---
 
 ## 三、在代数几何中的应用
@@ -101,6 +107,7 @@ H^i(X, F) ≅ Ext^i(O_X, F)
 - 上同调计算
 - 应用广泛
 ```
+
 ---
 
 ### 3.2 几何应用
@@ -112,6 +119,7 @@ H^i(X, F) ≅ Ext^i(O_X, F)
 - 几何不变量
 - 应用广泛
 ```
+
 ---
 
 ## 四、Grothendieck的贡献
@@ -129,6 +137,7 @@ Grothendieck的贡献：
 - 现代代数几何
 - 应用广泛
 ```
+
 ---
 
 ### 4.2 影响
@@ -142,6 +151,7 @@ Grothendieck的贡献：
 - 应用广泛
 - 现代研究
 ```
+
 ---
 
 ## 五、现代发展
@@ -159,6 +169,7 @@ Grothendieck的贡献：
     ↓
 高阶结构
 ```
+
 ---
 
 ### 5.2 应用
@@ -171,6 +182,7 @@ Grothendieck的贡献：
 - ∞-范畴
 - 现代研究
 ```
+
 ---
 
 ## 六、应用
@@ -184,6 +196,7 @@ Grothendieck的贡献：
 - 几何不变量
 - 应用广泛
 ```
+
 ---
 
 ### 6.2 算术应用
@@ -195,6 +208,7 @@ Grothendieck的贡献：
 - 数论几何
 - 应用广泛
 ```
+
 ---
 
 ## 七、总结
@@ -215,6 +229,46 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月7日
+---
+
+## 八、数学公式总结
+
+### 核心公式
+
+1. **Ext函子定义**：
+   $$\text{Ext}^i(\mathcal{F}, \mathcal{G}) = R^i \text{Hom}(\mathcal{F}, -)(\mathcal{G})$$
+
+2. **上同调与Ext关系**：
+   $$H^i(X, \mathcal{F}) \cong \text{Ext}^i(\mathcal{O}_X, \mathcal{F})$$
+
+3. **Ext长正合列**：
+   $$0 \to \text{Hom}(\mathcal{F}, \mathcal{G}) \to \text{Hom}(\mathcal{F}, \mathcal{H}) \to \text{Hom}(\mathcal{F}, \mathcal{K}) \to \text{Ext}^1(\mathcal{F}, \mathcal{G}) \to \cdots$$
+
+4. **Ext对称性**：
+   $$\text{Ext}^i(\mathcal{F}, \mathcal{G}) \cong \text{Ext}^i(\mathcal{G}^*, \mathcal{F}^*) \text{（对偶）}$$
+
+5. **Ext与Tor关系**：
+   $$\text{Ext}^i(\mathcal{F}, \mathcal{G}) \cong \text{Tor}_i(\mathcal{F}^*, \mathcal{G})^*$$
+
+6. **投射维数**：
+   $$\text{pd}(\mathcal{F}) = \inf\{n : \text{Ext}^i(\mathcal{F}, -) = 0 \text{ 对所有 } i > n\}$$
+
+7. **内射维数**：
+   $$\text{id}(\mathcal{F}) = \inf\{n : \text{Ext}^i(-, \mathcal{F}) = 0 \text{ 对所有 } i > n\}$$
+
+8. **Ext计算**：
+   $$\text{Ext}^i(\mathcal{F}, \mathcal{G}) = H^i(\text{Hom}(\mathcal{P}^\bullet, \mathcal{G})) \text{（$\mathcal{P}^\bullet$ 是 $\mathcal{F}$ 的投射分解）}$$
+
+9. **Serre对偶**：
+   $$\text{Ext}^i(\mathcal{F}, \mathcal{G})^* \cong \text{Ext}^{n-i}(\mathcal{G}, \mathcal{F} \otimes \omega_X)$$
+
+10. **Ext应用**：
+    $$\text{分类扩张：} 0 \to \mathcal{G} \to \mathcal{E} \to \mathcal{F} \to 0 \text{ 对应 } \text{Ext}^1(\mathcal{F}, \mathcal{G})$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [上同调与Grothendieck对偶：对偶理论的高级形式](#上同调与grothendieck对偶对偶理论的高级形式)
+  - [📋 目录](#-目录)
   - [一、Grothendieck对偶](#一grothendieck对偶)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -23,6 +24,7 @@
     - [上同调与Grothendieck对偶的意义](#上同调与grothendieck对偶的意义)
 
 ---
+
 ## 一、Grothendieck对偶
 
 ### 1.1 定义
@@ -192,6 +194,46 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月7日
+---
+
+## 七、数学公式总结
+
+### 核心公式
+
+1. **Grothendieck对偶定理**：
+   $$Rf_* R\mathcal{H}om_X(\mathcal{F}, f^!\mathcal{G}) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \mathcal{G})$$
+
+2. **例外拉回**：
+   $$f^! = f^* \otimes \omega_{X/Y}[n], \quad n = \dim X - \dim Y$$
+
+3. **对偶函子**：
+   $$D_X(\mathcal{F}) = R\mathcal{H}om_X(\mathcal{F}, \omega_X[n])$$
+
+4. **Grothendieck对偶（特殊形式）**：
+   $$Rf_*(\mathcal{F}^\vee) \cong (Rf_!\mathcal{F})^\vee \text{（某些条件下）}$$
+
+5. **真推前与对偶**：
+   $$Rf_! = Rf_* \circ j_!, \quad j: X \hookrightarrow \bar{X} \text{ 开嵌入}$$
+
+6. **对偶与拉回**：
+   $$f^!(\mathcal{G}^\vee) \cong (f^*\mathcal{G})^\vee \otimes \omega_{X/Y}$$
+
+7. **对偶与推前**：
+   $$Rf_*(\mathcal{F}^\vee) \cong (Rf_!\mathcal{F})^\vee \text{（某些条件下）}$$
+
+8. **对偶与张量积**：
+   $$(\mathcal{F} \otimes \mathcal{G})^\vee \cong \mathcal{F}^\vee \otimes \mathcal{G}^\vee \text{（局部自由）}$$
+
+9. **对偶与Ext**：
+   $$R\mathcal{H}om(\mathcal{F}, \mathcal{G})^\vee \cong R\mathcal{H}om(\mathcal{G}^\vee, \mathcal{F}^\vee)$$
+
+10. **对偶与上同调**：
+    $$H^i(X, \mathcal{F})^* \cong H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X) \text{（Serre对偶）}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

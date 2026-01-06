@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [范畴的Grothendieck构造与纤维范畴：范畴的分层结构](#范畴的grothendieck构造与纤维范畴范畴的分层结构)
+  - [📋 目录](#-目录)
   - [一、Grothendieck构造](#一grothendieck构造)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -26,6 +27,7 @@
     - [范畴的Grothendieck构造与纤维范畴的意义](#范畴的grothendieck构造与纤维范畴的意义)
 
 ---
+
 ## 一、Grothendieck构造
 
 ### 1.1 定义

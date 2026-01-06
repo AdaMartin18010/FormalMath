@@ -272,6 +272,46 @@ Topos
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **分类Topos**：
+   $$\mathcal{E} \cong \text{Sh}(\mathcal{C}, J), \quad \text{对某个范畴 $\mathcal{C}$ 和Grothendieck拓扑 $J$}$$
+
+2. **几何点定义**：
+   $$p: \text{Set} \to \mathcal{E} \text{ 几何态射}, \quad p^* \dashv p_*, \quad p^* \text{ 保持有限极限和余极限}$$
+
+3. **点的纤维函子**：
+   $$p^*: \mathcal{E} \to \text{Set}, \quad \text{点的纤维函子}$$
+
+4. **几何点的分类**：
+   $$\text{几何点 } \leftrightarrow \text{几何态射}, \quad \text{逻辑点 } \leftrightarrow \text{逻辑态射}$$
+
+5. **点的集合**：
+   $$\text{pt}(\mathcal{E}) = \{\text{几何态射 } \text{Set} \to \mathcal{E}\}$$
+
+6. **概形的几何点**：
+   $$x: \text{Spec}(k) \to X \text{ 几何点}, \quad k \text{ 代数闭域}$$
+
+7. **Topos的点与概形的点**：
+   $$\text{pt}(\text{Sh}(X)) \leftrightarrow \{\text{几何点 } X\}$$
+
+8. **点的恢复**：
+   $$\mathcal{E} \text{ 有足够点 } \Rightarrow \text{可以恢复几何结构}$$
+
+9. **分类Topos与几何点**：
+   $$\text{分类Topos的几何点对应原始结构的点}$$
+
+10. **几何点的应用**：
+    $$\text{通过几何点研究Topos的几何性质，连接逻辑与几何}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

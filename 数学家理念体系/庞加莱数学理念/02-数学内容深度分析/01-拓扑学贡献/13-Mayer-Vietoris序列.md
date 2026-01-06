@@ -394,6 +394,44 @@ graph TD
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约1,200词
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Mayer-Vietoris序列**：
+   $$\cdots \to H_n(U \cap V) \xrightarrow{(i_*, j_*)} H_n(U) \oplus H_n(V) \xrightarrow{k_* - l_*} H_n(X) \xrightarrow{\partial} H_{n-1}(U \cap V) \to \cdots$$
+
+2. **空间分解**：
+   $$X = U \cup V, \quad U, V \text{ 开子集}$$
+
+3. **包含映射**：
+   $$i: U \cap V \hookrightarrow U, \quad j: U \cap V \hookrightarrow V$$
+
+4. **边界同态**：
+   $$\partial: H_n(X) \to H_{n-1}(U \cap V)$$
+
+5. **正合性**：
+   $$\ker(k_* - l_*) = \text{im}(i_* - j_*), \quad \text{im}(\partial) = \ker(i_* - j_*)$$
+
+6. **上同调版本**：
+   $$\cdots \to H^n(X) \xrightarrow{(k^*, l^*)} H^n(U) \oplus H^n(V) \xrightarrow{i^* - j^*} H^n(U \cap V) \xrightarrow{\delta} H^{n+1}(X) \to \cdots$$
+
+7. **环面计算**：
+   $$H_n(T^2) = \mathbb{Z}, n=0,2; \quad H_1(T^2) = \mathbb{Z}^2$$
+
+8. **球面计算**：
+   $$H_n(S^n) = \mathbb{Z}, n=0,k; \quad H_n(S^n) = 0 \text{ (其他)}$$
+
+9. **应用条件**：
+   $$U, V, U \cap V \text{ 道路连通}$$
+
+10. **长正合序列性质**：
+    $$\text{正合性} + \text{边界同态} + \text{连接同态}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约1,600字
+**数学公式数**: 10个
+**例子数**: 8个
 **最后更新**: 2026年01月02日

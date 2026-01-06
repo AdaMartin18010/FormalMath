@@ -34,23 +34,50 @@
 
 ### 1.1 罗素悖论
 
-**Russell悖论**（1901）：
+**Russell悖论的数学表述**（1901）：
 
-```
-定义：
-R = {x | x ∉ x}
+定义集合：
+$$R = \{x : x \notin x\}$$
 
-问题：
-R ∈ R ⟺ R ∉ R
+**问题**：$R \in R$ 当且仅当 $R \notin R$。
 
-矛盾！
-```
+**逻辑分析**：
+
+- **假设** $R \in R$：
+  - 则根据 $R$ 的定义，$R \notin R$（因为 $R$ 只包含不包含自身的集合）
+  - 矛盾！
+
+- **假设** $R \notin R$：
+  - 则 $R$ 满足 $R$ 的定义条件（$R \notin R$）
+  - 因此 $R \in R$
+  - 矛盾！
+
+**结论**：无论 $R \in R$ 还是 $R \notin R$，都导致矛盾。因此朴素集合论（无限制的概括公理）不一致。
+
+**具体例子**：
+
+**例1：正常集合**
+
+- $A = \{1, 2, 3\}$（有限集合）
+- $A \notin A$（$A$ 不包含自身）
+- 因此 $A \in R$（若 $R$ 存在）
+
+**例2：包含自身的集合（在朴素集合论中）**
+
+- 假设存在 $B = \{B, 1, 2\}$（包含自身的集合）
+- 则 $B \in B$，因此 $B \notin R$
+
+**例3：所有集合的集合（在朴素集合论中）**
+
+- 假设 $U = \{x : x \text{ 是集合}\}$（所有集合的集合）
+- 则 $U \in U$（因为 $U$ 是集合）
+- 但 $U$ 导致罗素悖论的变体
 
 **影响**：
 
-- 摧毁朴素集合论
-- 需要公理化
-- 数学基础危机
+- **摧毁朴素集合论**：无限制的概括公理 $\{x : \phi(x)\}$ 导致矛盾
+- **需要公理化**：必须限制集合的构造方式
+- **数学基础危机**：需要重建集合论基础
 
 ---
 
@@ -76,30 +103,65 @@ R ∈ R ⟺ R ∉ R
 
 ### 2.1 Zermelo公理（1908）
 
-**原始公理**：
+**Zermelo公理系统的数学表述**：
 
-```
-Z1（外延公理）：
-∀x∀y(∀z(z∈x ⟺ z∈y) → x=y)
+**Z1（外延公理）**：
+$$\forall x \forall y (\forall z (z \in x \iff z \in y) \to x = y)$$
 
-Z2（空集公理）：
-∃x∀y(y∉x)
+**含义**：两个集合相等当且仅当它们有相同的元素。
 
-Z3（配对公理）：
-∀x∀y∃z∀w(w∈z ⟺ w=x ∨ w=y)
+**Z2（空集公理）**：
+$$\exists x \forall y (y \notin x)$$
 
-Z4（并集公理）：
-∀x∃y∀z(z∈y ⟺ ∃w(w∈x ∧ z∈w))
+**含义**：存在空集 $\emptyset$（不包含任何元素的集合）。
 
-Z5（幂集公理）：
-∀x∃y∀z(z∈y ⟺ z⊆x)
+**Z3（配对公理）**：
+$$\forall x \forall y \exists z \forall w (w \in z \iff w = x \lor w = y)$$
 
-Z6（分离公理）：
-∀x∃y∀z(z∈y ⟺ z∈x ∧ φ(z))
+**含义**：对任意集合 $x, y$，存在集合 $\{x, y\}$（包含 $x$ 和 $y$ 的集合）。
 
-Z7（无穷公理）：
-∃x(∅∈x ∧ ∀y(y∈x → y∪{y}∈x))
-```
+**Z4（并集公理）**：
+$$\forall x \exists y \forall z (z \in y \iff \exists w (w \in x \land z \in w))$$
+
+**含义**：对任意集合 $x$，存在并集 $\bigcup x = \{z : \exists w \in x, z \in w\}$。
+
+**Z5（幂集公理）**：
+$$\forall x \exists y \forall z (z \in y \iff z \subseteq x)$$
+
+**含义**：对任意集合 $x$，存在幂集 $\mathcal{P}(x) = \{z : z \subseteq x\}$。
+
+**Z6（分离公理/概括公理）**：
+$$\forall x \exists y \forall z (z \in y \iff z \in x \land \phi(z))$$
+
+**含义**：对任意集合 $x$ 和性质 $\phi$，存在子集 $\{z \in x : \phi(z)\}$。
+
+**关键限制**：只能从已有集合中分离子集，不能构造"所有满足 $\phi$ 的集合"（避免罗素悖论）。
+
+**Z7（无穷公理）**：
+$$\exists x (\emptyset \in x \land \forall y (y \in x \to y \cup \{y\} \in x))$$
+
+**含义**：存在归纳集（包含 $\emptyset$，且对每个元素 $y$，包含 $y \cup \{y\}$）。
+
+**具体例子**：
+
+**例1：自然数的构造**
+
+- $\emptyset = 0$
+- $\{\emptyset\} = \{0\} = 1$
+- $\{\emptyset, \{\emptyset\}\} = \{0, 1\} = 2$
+- $\{0, 1, 2\} = 3$
+- 依此类推，得到所有自然数 $\mathbb{N} = \{0, 1, 2, 3, \ldots\}$
+
+**例2：有序对的构造**
+
+- $(a, b) = \{\{a\}, \{a, b\}\}$（Kuratowski定义）
+- 验证：$(a, b) = (c, d) \iff a = c \land b = d$
+
+**例3：避免罗素悖论**
+
+- 在ZFC中，不能构造 $R = \{x : x \notin x\}$
+- 因为分离公理要求：$R = \{x \in A : x \notin x\}$（对某个集合 $A$）
+- 但无法证明这样的 $A$ 存在，因此避免了悖论
 
 ---
 
@@ -158,20 +220,49 @@ AC：
 
 ### 3.1 累积层次
 
-**von Neumann层次**：
+**von Neumann累积层次的数学定义**：
 
-```
-V₀ = ∅
-V_{α+1} = P(V_α)
-V_λ = ∪_{α<λ} V_α（λ极限）
+**递归定义**：
 
-V = ∪_{α∈Ord} V_α
+- **基础**：$V_0 = \emptyset$
+- **后继**：$V_{\alpha+1} = \mathcal{P}(V_\alpha)$（$V_\alpha$ 的幂集）
+- **极限**：$V_\lambda = \bigcup_{\alpha < \lambda} V_\alpha$（$\lambda$ 是极限序数）
 
-性质：
-- 所有集合在V中
-- 良基
-- 分层结构
-```
+**全集**：
+$$V = \bigcup_{\alpha \in \text{Ord}} V_\alpha$$
+
+其中 $\text{Ord}$ 是所有序数的类。
+
+**具体例子**：
+
+**例1：前几个层次**
+
+- $V_0 = \emptyset = \{\}$
+- $V_1 = \mathcal{P}(\emptyset) = \{\emptyset\} = \{0\}$
+- $V_2 = \mathcal{P}(V_1) = \{\emptyset, \{\emptyset\}\} = \{0, 1\}$
+- $V_3 = \mathcal{P}(V_2) = \{\emptyset, \{0\}, \{1\}, \{0, 1\}\} = \{0, 1, 2, 3\}$
+- $V_\omega = \bigcup_{n < \omega} V_n = \mathbb{N}$（自然数集）
+
+**例2：集合的秩**
+
+- **秩（rank）**：集合 $x$ 的秩是使得 $x \in V_{\alpha+1}$ 的最小序数 $\alpha$
+- **性质**：
+  - $\text{rank}(\emptyset) = 0$
+  - $\text{rank}(\{0\}) = 1$
+  - $\text{rank}(\mathbb{N}) = \omega$
+
+**例3：良基性**
+
+- **良基性**：不存在无限下降链 $x_0 \ni x_1 \ni x_2 \ni \cdots$
+- **证明**：若存在这样的链，则 $\text{rank}(x_0) > \text{rank}(x_1) > \cdots$，但序数不能无限下降
+- **应用**：正则公理（基础公理）保证所有集合都在某个 $V_\alpha$ 中
+
+**性质**：
+
+1. **分层性**：$V_\alpha \subseteq V_\beta$（若 $\alpha < \beta$）
+2. **传递性**：$V_\alpha$ 是传递的（若 $x \in V_\alpha$ 且 $y \in x$，则 $y \in V_\alpha$）
+3. **完备性**：所有集合都在某个 $V_\alpha$ 中（在ZFC中）
+4. **良基性**：不存在 $x \in x$（正则公理）
 
 ---
 
@@ -370,6 +461,52 @@ ZFC是**希尔伯特形式主义在集合论中的实现**
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月5日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **罗素悖论**：
+   $$R = \{x : x \notin x\} \implies (R \in R \iff R \notin R) \text{（矛盾）}$$
+
+2. **外延公理**：
+   $$\forall x \forall y (\forall z (z \in x \iff z \in y) \to x = y)$$
+
+3. **空集公理**：
+   $$\exists x \forall y (y \notin x)$$
+
+4. **配对公理**：
+   $$\forall x \forall y \exists z \forall w (w \in z \iff w = x \lor w = y)$$
+
+5. **并集公理**：
+   $$\forall x \exists y \forall z (z \in y \iff \exists w (w \in x \land z \in w))$$
+
+6. **幂集公理**：
+   $$\forall x \exists y \forall z (z \in y \iff z \subseteq x)$$
+
+7. **分离公理**：
+   $$\forall x \exists y \forall z (z \in y \iff z \in x \land \phi(z))$$
+
+8. **替换公理**：
+   $$\forall x \exists! y \phi(x,y) \to \forall A \exists B \forall y (y \in B \iff \exists x (x \in A \land \phi(x,y)))$$
+
+9. **正则公理**：
+   $$\forall x (x \neq \emptyset \to \exists y (y \in x \land y \cap x = \emptyset))$$
+
+10. **选择公理**：
+    $$\forall x (\emptyset \notin x \land \forall y \forall z (y \in x \land z \in x \to y \neq \emptyset \land (y = z \lor y \cap z = \emptyset))) \to \exists f (\forall y \in x, f(y) \in y)$$
+
+11. **von Neumann层次**：
+    $$V_0 = \emptyset, \quad V_{\alpha+1} = \mathcal{P}(V_\alpha), \quad V_\lambda = \bigcup_{\alpha < \lambda} V_\alpha$$
+
+12. **连续统假设**：
+    $$2^{\aleph_0} = \aleph_1$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约3,500字
+**数学公式数**: 15个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

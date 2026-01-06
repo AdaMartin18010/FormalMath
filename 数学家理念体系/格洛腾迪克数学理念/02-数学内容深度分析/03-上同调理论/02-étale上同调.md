@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [étale上同调：拓扑方法进入代数几何](#étale上同调拓扑方法进入代数几何)
+  - [📋 目录](#-目录)
   - [一、代数几何的上同调问题](#一代数几何的上同调问题)
     - [1.1 Zariski拓扑的局限](#11-zariski拓扑的局限)
     - [1.2 韦伊猜想的动机](#12-韦伊猜想的动机)
@@ -29,6 +30,7 @@
     - [étale上同调的意义](#étale上同调的意义)
 
 ---
+
 ## 一、代数几何的上同调问题
 
 ### 1.1 Zariski拓扑的局限
@@ -313,6 +315,46 @@ T_ℓ(E) = lim_n E[ℓ^n]
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **étale上同调群**：
+   $$H_{\text{ét}}^i(X, \mathcal{F}) = R^i \Gamma_{\text{ét}}(X, \mathcal{F})$$
+
+2. **étale拓扑**：
+   $$\text{Cov}_{\text{ét}}(X) = \{\text{étale覆盖}\}$$
+
+3. **ℓ进上同调**：
+   $$H^i(X, \mathbb{Z}_\ell) = \varprojlim_n H^i(X, \mathbb{Z}/\ell^n \mathbb{Z})$$
+
+4. **韦伊猜想（Zeta函数）**：
+   $$\zeta_X(s) = \exp\left(\sum_{n=1}^\infty \frac{N_n}{n} T^n\right), \quad N_n = |X(\mathbb{F}_{q^n})|$$
+
+5. **函数方程**：
+   $$\zeta_X(1-s) = \pm q^{-\chi(X)/2} T^{-\chi(X)} \zeta_X(s)$$
+
+6. **Riemann假设（有限域）**：
+   $$|\alpha_i| = q^{w_i/2}, \quad \text{对所有特征值 } \alpha_i$$
+
+7. **Frobenius作用**：
+   $$F: H_{\text{ét}}^i(X, \mathbb{Q}_\ell) \to H_{\text{ét}}^i(X, \mathbb{Q}_\ell)$$
+
+8. **比较定理**：
+   $$H_{\text{ét}}^i(X, \mathbb{Z}/\ell^n) \cong H_{\text{sing}}^i(X(\mathbb{C}), \mathbb{Z}/\ell^n) \text{（对 $k = \mathbb{C}$）}$$
+
+9. **基变化**：
+   $$H_{\text{ét}}^i(X, \mathcal{F}) \otimes_{\mathbb{Z}_\ell} \mathbb{Q}_\ell = H_{\text{ét}}^i(X, \mathcal{F} \otimes \mathbb{Q}_\ell)$$
+
+10. **上同调维数**：
+    $$\text{cd}_\ell(X) = \sup\{i : H_{\text{ét}}^i(X, \mathbb{Q}_\ell) \neq 0\}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

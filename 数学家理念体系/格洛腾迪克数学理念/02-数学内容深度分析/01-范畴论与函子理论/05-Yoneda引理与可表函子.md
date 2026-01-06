@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [Yoneda引理与可表函子：范畴论的基石](#yoneda引理与可表函子范畴论的基石)
+  - [📋 目录](#-目录)
   - [一、Yoneda引理](#一yoneda引理)
     - [1.1 陈述](#11-陈述)
     - [1.2 证明思路](#12-证明思路)
@@ -27,8 +28,11 @@
     - [7.2 同伦类型论](#72-同伦类型论)
   - [八、总结](#八总结)
     - [Yoneda引理的意义](#yoneda引理的意义)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
 
 ---
+
 ## 一、Yoneda引理
 
 ### 1.1 陈述
@@ -308,6 +312,46 @@ Yoneda引理：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Yoneda引理**：
+   $$\text{Nat}(h_X, F) \cong F(X), \quad h_X = \text{Hom}(-, X)$$
+
+2. **Yoneda嵌入**：
+   $$h: \mathcal{C} \to [\mathcal{C}^{\text{op}}, \text{Set}], \quad h(X) = h_X$$
+
+3. **可表函子**：
+   $$F \cong h_X \text{（$F$ 可表）}$$
+
+4. **可表函子唯一性**：
+   $$\text{若 } F \cong h_X \cong h_Y, \text{ 则 } X \cong Y$$
+
+5. **Yoneda对应**：
+   $$\text{对象 } X \leftrightarrow \text{可表函子 } h_X$$
+
+6. **函子范畴**：
+   $$[\mathcal{C}^{\text{op}}, \text{Set}] = \text{预层范畴}$$
+
+7. **Yoneda完全性**：
+   $$h: \mathcal{C} \hookrightarrow [\mathcal{C}^{\text{op}}, \text{Set}] \text{（完全忠实嵌入）}$$
+
+8. **可表函子保持极限**：
+   $$h_X(\lim D) \cong \lim(h_X \circ D)$$
+
+9. **模空间**：
+   $$\text{若 } F \cong h_M, \text{ 则 } M \text{ 是 $F$ 的模空间}$$
+
+10. **层化**：
+    $$a: [\mathcal{C}^{\text{op}}, \text{Set}] \to \text{Sh}(\mathcal{C}) \text{（层化函子）}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

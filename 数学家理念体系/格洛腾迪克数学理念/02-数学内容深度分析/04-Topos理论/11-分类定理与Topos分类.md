@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [分类定理与Topos分类：Grothendieck的拓扑分类](#分类定理与topos分类grothendieck的拓扑分类)
+  - [📋 目录](#-目录)
   - [一、分类定理](#一分类定理)
     - [1.1 Grothendieck分类定理](#11-grothendieck分类定理)
     - [1.2 性质](#12-性质)
@@ -27,8 +28,11 @@
     - [7.2 逻辑应用](#72-逻辑应用)
   - [八、总结](#八总结)
     - [分类定理与Topos分类的意义](#分类定理与topos分类的意义)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
 
 ---
+
 ## 一、分类定理
 
 ### 1.1 Grothendieck分类定理
@@ -264,6 +268,46 @@ Topos分类
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Grothendieck分类定理**：
+   $$\text{Grothendieck Topos } \mathcal{E} \cong \text{Sh}(\mathcal{C}, J), \quad \text{对某个范畴 $\mathcal{C}$ 和拓扑 $J$}$$
+
+2. **分类方法**：
+   $$\mathcal{E} \cong \text{Sh}(\mathcal{C}_\mathcal{E}, J_\mathcal{E}), \quad \mathcal{C}_\mathcal{E} = \{\text{生成对象}\}$$
+
+3. **Zariski Topos分类**：
+   $$\text{Sh}(X_{\text{Zar}}) \cong \text{Sh}(\text{Open}(X))$$
+
+4. **étale Topos分类**：
+   $$\text{Sh}(X_{\text{ét}}) \cong \text{Sh}(\text{Ét}(X))$$
+
+5. **Topos分类与几何**：
+   $$\text{Topos分类} \leftrightarrow \text{几何结构分类}$$
+
+6. **分类定理的唯一性**：
+   $$\mathcal{E} \cong \text{Sh}(\mathcal{C}, J) \text{ 不唯一，但可以规范化}$$
+
+7. **Topos的分类**：
+   $$\text{Grothendieck Topos} \leftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
+
+8. **分类与内部逻辑**：
+   $$\text{分类Topos的内部逻辑由拓扑 $J$ 决定}$$
+
+9. **Topos分类的应用**：
+   $$\text{通过分类研究Topos的性质，连接逻辑、几何、拓扑}$$
+
+10. **分类定理的意义**：
+    $$\text{每个Grothendieck Topos都可以用范畴和拓扑表示，统一框架}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

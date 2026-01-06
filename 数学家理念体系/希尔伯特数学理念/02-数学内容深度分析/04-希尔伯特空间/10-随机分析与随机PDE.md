@@ -33,29 +33,52 @@
 
 ### 1.1 Brown运动
 
-**定义**：
+**Brown运动的数学定义**：
 
-```
-W_t满足：
-1. W₀ = 0
-2. 独立增量
-3. W_t - W_s ~ N(0, t-s)
-4. 路径连续
+随机过程 $\{W_t\}_{t \geq 0}$ 是**标准Brown运动**（Wiener过程），若满足：
 
-性质：
-- 几乎处处不可微
-- 分形维数3/2
-- Markov性
-```
+1. **初始条件**：$W_0 = 0$（几乎必然）
+2. **独立增量**：对 $0 \leq t_1 < t_2 < \cdots < t_n$，增量 $W_{t_2} - W_{t_1}, W_{t_3} - W_{t_2}, \ldots, W_{t_n} - W_{t_{n-1}}$ 相互独立
+3. **正态增量**：$W_t - W_s \sim N(0, t-s)$（对 $0 \leq s < t$）
+4. **路径连续性**：样本路径 $t \mapsto W_t(\omega)$ 几乎必然连续
+
+**具体例子**：
+
+**例1：一维Brown运动**
+
+- $W_t$ 是实值随机过程
+- 对任意 $0 \leq s < t$，$W_t - W_s \sim N(0, t-s)$
+- **协方差**：$\text{Cov}(W_s, W_t) = \min(s, t)$
+- **自相关**：$\mathbb{E}[W_s W_t] = \min(s, t)$
+
+**例2：多维Brown运动**
+
+- $\mathbf{W}_t = (W_t^{(1)}, \ldots, W_t^{(d)})$ 是 $d$ 维向量
+- 每个分量 $W_t^{(i)}$ 是独立的一维Brown运动
+- **协方差矩阵**：$\text{Cov}(\mathbf{W}_s, \mathbf{W}_t) = \min(s, t) I_d$（$I_d$ 是 $d \times d$ 单位矩阵）
+
+**例3：Brown运动的性质**
+
+- **几乎处处不可微**：对几乎所有 $\omega$，路径 $t \mapsto W_t(\omega)$ 在任意点不可微
+- **分形维数**：Brown运动路径的Hausdorff维数为 $3/2$
+- **Markov性**：$\mathbb{E}[f(W_t) | \mathcal{F}_s] = \mathbb{E}[f(W_t) | W_s]$（对 $s < t$，其中 $\mathcal{F}_s$ 是到时间 $s$ 的信息）
 
 **Hilbert空间框架**：
 
-```
-L²(Ω)：
-- 随机变量的Hilbert空间
-- 内积：E[XY]
-- 应用基础
-```
+在概率空间 $(\Omega, \mathcal{F}, \mathbb{P})$ 上，定义：
+
+$$L^2(\Omega) = \left\{X: \Omega \to \mathbb{R} : \mathbb{E}[X^2] < \infty\right\}$$
+
+**内积**：
+$$\langle X, Y \rangle = \mathbb{E}[XY] = \int_\Omega X(\omega) Y(\omega) \, d\mathbb{P}(\omega)$$
+
+**范数**：
+$$\|X\| = \sqrt{\mathbb{E}[X^2]} = \sqrt{\int_\Omega X(\omega)^2 \, d\mathbb{P}(\omega)}$$
+
+**性质**：
+- $L^2(\Omega)$ 是Hilbert空间（Riesz-Fischer定理）
+- Brown运动 $W_t \in L^2(\Omega)$（对每个 $t$）
+- **等距性**：$\|W_t - W_s\|^2 = \mathbb{E}[(W_t - W_s)^2] = t-s$
 
 ---
 
@@ -87,28 +110,51 @@ L²(Ω)：
 
 ### 2.1 Itô SDE
 
-**方程**：
+**Itô随机微分方程的数学定义**：
 
-```
-dX_t = b(X_t, t)dt + σ(X_t, t)dW_t
+设 $b: \mathbb{R}^d \times [0, T] \to \mathbb{R}^d$（漂移系数）和 $\sigma: \mathbb{R}^d \times [0, T] \to \mathbb{R}^{d \times m}$（扩散系数），**Itô随机微分方程**为：
+
+$$dX_t = b(X_t, t) \, dt + \sigma(X_t, t) \, dW_t$$
 
 其中：
-- b：漂移
-- σ：扩散
-- W_t：Brown运动
-```
+- $X_t \in \mathbb{R}^d$ 是未知随机过程
+- $W_t$ 是 $m$ 维Brown运动
+- 初始条件：$X_0 = x_0$（给定）
 
-**解的存在唯一性**：
+**积分形式**：
+$$X_t = X_0 + \int_0^t b(X_s, s) \, ds + \int_0^t \sigma(X_s, s) \, dW_s$$
 
-```
-条件：
-- Lipschitz条件
-- 线性增长
+**具体例子**：
 
-结果：
-- 强解存在唯一
-- 弱解存在
-```
+**例1：几何Brown运动**
+
+- $dX_t = \mu X_t \, dt + \sigma X_t \, dW_t$（$\mu, \sigma > 0$ 常数）
+- **解**：$X_t = X_0 \exp\left((\mu - \frac{\sigma^2}{2})t + \sigma W_t\right)$
+- **应用**：Black-Scholes模型中的股票价格
+
+**例2：Ornstein-Uhlenbeck过程**
+
+- $dX_t = -\theta X_t \, dt + \sigma \, dW_t$（$\theta, \sigma > 0$）
+- **解**：$X_t = e^{-\theta t} X_0 + \sigma \int_0^t e^{-\theta(t-s)} \, dW_s$
+- **应用**：物理中的随机振动，金融中的均值回归模型
+
+**例3：线性SDE**
+
+- $dX_t = (a(t) X_t + b(t)) \, dt + (c(t) X_t + d(t)) \, dW_t$
+- **解**：可通过Itô公式和积分因子方法求解
+
+**解的存在唯一性定理**（Itô, 1951）：
+
+> 若 $b$ 和 $\sigma$ 满足：
+>
+> 1. **Lipschitz条件**：存在 $L > 0$ 使得
+>    $$|b(x, t) - b(y, t)| + |\sigma(x, t) - \sigma(y, t)| \leq L|x - y|$$
+>    对所有 $x, y \in \mathbb{R}^d$ 和 $t \in [0, T]$ 成立
+>
+> 2. **线性增长条件**：存在 $K > 0$ 使得
+>    $$|b(x, t)|^2 + |\sigma(x, t)|^2 \leq K(1 + |x|^2)$$
+>
+> 则SDE存在唯一的强解 $X_t$，且 $\mathbb{E}[\sup_{0 \leq t \leq T} |X_t|^2] < \infty$。
 
 ---
 
@@ -316,6 +362,49 @@ Hilbert空间理论
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月5日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Brown运动定义**：
+   - $W_0 = 0$（几乎必然）
+   - $W_t - W_s \sim N(0, t-s)$（对 $0 \leq s < t$）
+   - $\text{Cov}(W_s, W_t) = \min(s, t)$
+
+2. **$L^2(\Omega)$ 内积**：
+   $$\langle X, Y \rangle = \mathbb{E}[XY] = \int_\Omega X(\omega) Y(\omega) \, d\mathbb{P}(\omega)$$
+
+3. **Itô积分**：
+   $$\int_0^t f(s) \, dW_s = \lim_{n \to \infty} \sum_{i=0}^{n-1} f(t_i)(W_{t_{i+1}} - W_{t_i})$$
+
+4. **Itô SDE**：
+   $$dX_t = b(X_t, t) \, dt + \sigma(X_t, t) \, dW_t$$
+
+5. **Itô公式**：
+   $$df(X_t) = f'(X_t) \, dX_t + \frac{1}{2} f''(X_t) \, d\langle X \rangle_t$$
+   其中 $d\langle X \rangle_t = \sigma(X_t, t)^2 \, dt$（二次变分）
+
+6. **Fokker-Planck方程**：
+   $$\frac{\partial p}{\partial t} = -\frac{\partial}{\partial x}(b p) + \frac{1}{2} \frac{\partial^2}{\partial x^2}(\sigma^2 p)$$
+
+7. **随机热方程**：
+   $$du = \Delta u \, dt + \sigma \, dW$$
+
+8. **Malliavin导数**：
+   $$D: L^2(\Omega) \to L^2(\Omega; H)$$
+
+9. **HJB方程**：
+   $$\frac{\partial V}{\partial t} + \min_u \left\{H(x, \nabla V, u)\right\} = 0$$
+
+10. **几何Brown运动解**：
+    $$X_t = X_0 \exp\left((\mu - \frac{\sigma^2}{2})t + \sigma W_t\right)$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约3,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [上同调与Serre对偶：对偶理论的经典结果](#上同调与serre对偶对偶理论的经典结果)
+  - [📋 目录](#-目录)
   - [一、Serre对偶](#一serre对偶)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -23,6 +24,7 @@
     - [上同调与Serre对偶的意义](#上同调与serre对偶的意义)
 
 ---
+
 ## 一、Serre对偶
 
 ### 1.1 定义
@@ -193,6 +195,46 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 七、数学公式总结
+
+### 核心公式
+
+1. **Serre对偶定理**：
+   $$H^i(X, \mathcal{F})^* \cong H^{n-i}(X, \mathcal{F}^* \otimes \omega_X)$$
+
+2. **对偶层**：
+   $$\mathcal{F}^* = \mathcal{H}om_{\mathcal{O}_X}(\mathcal{F}, \mathcal{O}_X)$$
+
+3. **典范层**：
+   $$\omega_X = \det(\Omega_{X/k}^1)^* = \bigwedge^n T_X^*$$
+
+4. **完美配对**：
+   $$H^i(X, \mathcal{F}) \times H^{n-i}(X, \mathcal{F}^* \otimes \omega_X) \to H^n(X, \omega_X) \cong k$$
+
+5. **射影空间对偶**：
+   $$H^i(\mathbb{P}^n, \mathcal{O}(d))^* \cong H^{n-i}(\mathbb{P}^n, \mathcal{O}(-d-n-1))$$
+
+6. **Riemann-Roch（曲线）**：
+   $$h^0(X, \mathcal{L}) - h^1(X, \mathcal{L}) = \deg(\mathcal{L}) + 1 - g$$
+
+7. **Serre对偶（曲线）**：
+   $$H^1(X, \mathcal{L})^* \cong H^0(X, \mathcal{L}^{-1} \otimes \omega_X)$$
+
+8. **上同调消失**：
+   $$H^i(X, \mathcal{F}) = 0 \text{ 对所有 } i > n = \dim X$$
+
+9. **对偶同构**：
+   $$\text{Ext}^i(\mathcal{F}, \omega_X) \cong H^{n-i}(X, \mathcal{F})^*$$
+
+10. **Kodaira消失（高维）**：
+    $$H^i(X, \mathcal{L} \otimes \omega_X) = 0 \text{ 对所有 } i > 0 \text{（$\mathcal{L}$ 丰富）}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

@@ -244,7 +244,12 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 - **例子**：$L = \{a^n b^n c^n : n \geq 1\}$
 - **证明**：使用上下文无关语言的Pumping引理证明不是上下文无关语言
-- **语法**：需要上下文Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义Chomsky层次的定义相关语法
+  - **假设**：假设 $L$ 是上下文无关的，设泵长度为 $p$
+  - **选择字符串**：取 $w = a^p b^p c^p \in L$，$|w| = 3p \geq p$
+  - **应用泵引理**：根据泵引理，$w = uvxyz$ 且 $|vxy| \leq p$，$|vy| > 0$
+  - **分析**：由于 $|vxy| \leq p$，$vxy$ 最多跨越两个相邻的字符类型
+  - **导出矛盾**：取 $i = 2$，则 $uv^2 xy^2 z$ 中某个字符的数量增加，但其他字符的数量不变，因此 $uv^2 xy^2 z \notin L$，矛盾
+- **语法**：需要上下文相关语法，如 $S \to aSBC \mid aBC$，$CB \to BC$，$bB \to bb$，$bC \to bc$，$cC \to cc$
 
 **Type-0但不Type-1**：
 

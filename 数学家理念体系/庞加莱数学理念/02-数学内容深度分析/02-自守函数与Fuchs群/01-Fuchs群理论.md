@@ -19,6 +19,8 @@
     - [4.2 应用](#42-应用)
   - [五、总结](#五总结)
     - [Fuchs群理论的历史地位](#fuchs群理论的历史地位)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
 
 ---
 
@@ -154,6 +156,46 @@ Fuchs群理论提供了**自守函数的基础**，是现代数学的工具
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Fuchs群定义**：
+   $$\Gamma \subset \text{PSL}(2, \mathbb{R}) \text{（离散子群）}$$
+
+2. **Möbius变换**：
+   $$\gamma(z) = \frac{az + b}{cz + d}, \quad \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}(2, \mathbb{R})$$
+
+3. **自守函数**：
+   $$f(\gamma z) = f(z) \text{ 对所有 } \gamma \in \Gamma$$
+
+4. **自守形式**：
+   $$f(\gamma z) = (cz + d)^k f(z), \quad \gamma = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$$
+
+5. **基本域**：
+   $$F = \{z \in \mathbb{H} : \text{不与任何 $\gamma F$ 的内部相交}\}$$
+
+6. **单值化定理**：
+   $$R \cong \mathbb{H} / \Gamma, \quad \mathbb{H} = \{z : \text{Im}(z) > 0\}$$
+
+7. **Poincaré度规**：
+   $$ds^2 = \frac{|dz|^2}{(\text{Im}(z))^2}$$
+
+8. **群作用**：
+   $$\Gamma \times \mathbb{H} \to \mathbb{H}, \quad (\gamma, z) \mapsto \gamma z$$
+
+9. **不变测度**：
+   $$d\mu = \frac{dx \, dy}{y^2} \text{（在 $\mathbb{H}$ 上）}$$
+
+10. **轨道空间**：
+    $$R = \mathbb{H} / \Gamma = \{\Gamma z : z \in \mathbb{H}\}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

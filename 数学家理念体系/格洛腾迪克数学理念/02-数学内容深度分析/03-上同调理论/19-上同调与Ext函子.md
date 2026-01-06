@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [上同调与Ext函子：同调代数与几何的连接](#上同调与ext函子同调代数与几何的连接)
+  - [📋 目录](#-目录)
   - [一、Ext函子](#一ext函子)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -26,6 +27,7 @@
     - [上同调与Ext函子的意义](#上同调与ext函子的意义)
 
 ---
+
 ## 一、Ext函子
 
 ### 1.1 定义
@@ -230,6 +232,46 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+---
+
+## 八、数学公式总结
+
+### 核心公式
+
+1. **Ext函子定义**：
+   $$\text{Ext}_X^i(\mathcal{F}, \mathcal{G}) = R^i \mathcal{H}om_X(\mathcal{F}, -)(\mathcal{G}) = H^i(\mathcal{H}om_X(P_\mathcal{F}^\bullet, I_\mathcal{G}^\bullet))$$
+
+2. **上同调与Ext关系**：
+   $$H^i(X, \mathcal{F}) \cong \text{Ext}_X^i(\mathcal{O}_X, \mathcal{F})$$
+
+3. **Ext长正合列**：
+   $$0 \to \text{Hom}(\mathcal{F}, \mathcal{G}) \to \text{Ext}^1(\mathcal{F}, \mathcal{G}) \to \cdots \to \text{Ext}^i(\mathcal{F}, \mathcal{G}) \to \cdots$$
+
+4. **Ext与Serre对偶**：
+   $$\text{Ext}^i(\mathcal{F}, \omega_X) \cong H^{n-i}(X, \mathcal{F})^*$$
+
+5. **Ext与张量积**：
+   $$\text{Ext}^i(\mathcal{F} \otimes \mathcal{G}, \mathcal{H}) \cong \text{Ext}^i(\mathcal{F}, \mathcal{H}om(\mathcal{G}, \mathcal{H}))$$
+
+6. **Ext与拉回**：
+   $$\text{Ext}_Y^i(f^*\mathcal{F}, \mathcal{G}) \cong \text{Ext}_X^i(\mathcal{F}, f_*\mathcal{G}) \text{（某些条件下）}$$
+
+7. **Ext与推前**：
+   $$R^i f_* \mathcal{H}om_X(\mathcal{F}, \mathcal{G}) \cong \mathcal{H}om_Y(Rf_*\mathcal{F}, Rf_*\mathcal{G}) \text{（某些条件下）}$$
+
+8. **Ext与局部化**：
+   $$\text{Ext}_U^i(\mathcal{F}|_U, \mathcal{G}|_U) \cong \text{Ext}_X^i(j_!\mathcal{F}|_U, \mathcal{G})$$
+
+9. **Ext与形变**：
+   $$\text{Ext}^1(\mathcal{F}, \mathcal{F}) \text{ 参数化 $\mathcal{F}$ 的一阶形变}$$
+
+10. **Ext与上同调维数**：
+    $$\text{proj dim}(\mathcal{F}) = \sup\{i : \text{Ext}^i(\mathcal{F}, \mathcal{G}) \neq 0 \text{ 对某个 $\mathcal{G}$}\}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

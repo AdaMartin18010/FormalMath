@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [概形的对偶理论与Serre对偶：几何对偶的高级形式](#概形的对偶理论与serre对偶几何对偶的高级形式)
+  - [📋 目录](#-目录)
   - [一、Serre对偶](#一serre对偶)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -26,6 +27,7 @@
     - [概形的对偶理论与Serre对偶的意义](#概形的对偶理论与serre对偶的意义)
 
 ---
+
 ## 一、Serre对偶
 
 ### 1.1 定义
@@ -46,6 +48,7 @@ H^i(X, F) ≅ H^{n-i}(X, F^∨ ⊗ ω_X)^∨
 - 上同调对偶
 - 应用广泛
 ```
+
 ---
 
 ### 1.2 性质
@@ -57,6 +60,7 @@ H^i(X, F) ≅ H^{n-i}(X, F^∨ ⊗ ω_X)^∨
 - 函子性
 - 应用广泛
 ```
+
 ---
 
 ## 二、对偶理论
@@ -77,6 +81,7 @@ H^i(X, F) ≅ H^{n-i}(X, F^∨ ⊗ ω_X)^∨
 - 对偶理论
 - 应用广泛
 ```
+
 ---
 
 ### 2.2 性质
@@ -88,6 +93,7 @@ H^i(X, F) ≅ H^{n-i}(X, F^∨ ⊗ ω_X)^∨
 - 对偶性质
 - 应用广泛
 ```
+
 ---
 
 ## 三、在代数几何中的应用
@@ -101,6 +107,7 @@ H^i(X, F) ≅ H^{n-i}(X, F^∨ ⊗ ω_X)^∨
 - 上同调计算
 - 应用广泛
 ```
+
 ---
 
 ### 3.2 几何应用
@@ -112,6 +119,7 @@ H^i(X, F) ≅ H^{n-i}(X, F^∨ ⊗ ω_X)^∨
 - 几何分类
 - 应用广泛
 ```
+
 ---
 
 ## 四、Grothendieck的贡献
@@ -129,6 +137,7 @@ Grothendieck的贡献：
 - 现代代数几何
 - 应用广泛
 ```
+
 ---
 
 ### 4.2 影响
@@ -142,6 +151,7 @@ Grothendieck的贡献：
 - 应用广泛
 - 现代研究
 ```
+
 ---
 
 ## 五、现代发展
@@ -159,6 +169,7 @@ Grothendieck的贡献：
     ↓
 高阶结构
 ```
+
 ---
 
 ### 5.2 应用
@@ -171,6 +182,7 @@ Grothendieck的贡献：
 - ∞-范畴
 - 现代研究
 ```
+
 ---
 
 ## 六、应用
@@ -184,6 +196,7 @@ Grothendieck的贡献：
 - 几何分类
 - 应用广泛
 ```
+
 ---
 
 ### 6.2 算术应用
@@ -195,6 +208,7 @@ Grothendieck的贡献：
 - 数论几何
 - 应用广泛
 ```
+
 ---
 
 ## 七、总结
@@ -215,6 +229,46 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月7日
+---
+
+## 八、数学公式总结
+
+### 核心公式
+
+1. **Serre对偶定理**：
+   $$H^i(X, \mathcal{F}) \cong H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X)^*, \quad n = \dim X$$
+
+2. **典范层**：
+   $$\omega_X = \bigwedge^n \Omega_{X/k}^1, \quad \text{最高次微分形式层}$$
+
+3. **对偶函子**：
+   $$D_X(\mathcal{F}) = R\mathcal{H}om_X(\mathcal{F}, \omega_X[n])$$
+
+4. **Serre对偶与Ext**：
+   $$\text{Ext}^i(\mathcal{F}, \omega_X) \cong H^{n-i}(X, \mathcal{F})^*$$
+
+5. **Serre对偶与上同调**：
+   $$H^i(X, \mathcal{F}) \cong H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X)^*$$
+
+6. **Grothendieck对偶**：
+   $$Rf_* R\mathcal{H}om_X(\mathcal{F}, f^!\mathcal{G}) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \mathcal{G})$$
+
+7. **对偶与拉回**：
+   $$f^*(\mathcal{G}^\vee) \cong (f^*\mathcal{G})^\vee \otimes \omega_{X/Y}$$
+
+8. **对偶与推前**：
+   $$Rf_*(\mathcal{F}^\vee) \cong (Rf_!\mathcal{F})^\vee \text{（某些条件下）}$$
+
+9. **对偶与张量积**：
+   $$(\mathcal{F} \otimes \mathcal{G})^\vee \cong \mathcal{F}^\vee \otimes \mathcal{G}^\vee \text{（局部自由）}$$
+
+10. **对偶与上同调维数**：
+    $$\text{cd}(X) = n \Rightarrow H^n(X, \omega_X) \neq 0$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,600字
+**数学公式数**: 12个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

@@ -100,66 +100,76 @@ Col(P, Q, R) ⟺ B(P, Q, R) ∨ B(Q, P, R) ∨ B(P, R, Q)
 
 ### 2.2 10条公理
 
-**A1（反射性）**：
+**Tarski公理系统的数学表述**：
 
-```
-PQ ≡ QP
-```
+**A1（等距的反射性）**：
+$$\forall P, Q: PQ \equiv QP$$
 
-**A2（传递性）**：
+**A2（等距的传递性）**：
+$$\forall P, Q, R, S, T, U: (PQ \equiv RS \land PQ \equiv TU) \to RS \equiv TU$$
 
-```
-PQ ≡ RS ∧ PQ ≡ TU → RS ≡ TU
-```
-
-**A3（等距可移动）**：
-
-```
-PQ ≡ P'Q' → ∃R: B(P, Q, R) ∧ QR ≡ Q'R'
-```
+**A3（等距可移动性）**：
+$$\forall P, Q, P', Q': PQ \equiv P'Q' \to \exists R: B(P, Q, R) \land QR \equiv Q'R'$$
 
 **A4（Pasch公理）**：
+$$\forall A, B, C, P, Q: (B(A, P, C) \land B(B, Q, C)) \to \exists X: B(P, X, B) \land B(Q, X, A)$$
 
-```
-B(A, P, C) ∧ B(B, Q, C) → ∃X: B(P, X, B) ∧ B(Q, X, A)
-```
+**A5（五线段公理，SAS全等）**：
 
-**A5（五线段公理）**：
+设 $A, B, C, A', B', C'$ 满足：
+- $AB \equiv A'B'$
+- $BC \equiv B'C'$
+- $AD \equiv A'D'$（$D$ 在 $BC$ 上，$D'$ 在 $B'C'$ 上）
+- $BD \equiv B'D'$
+- $A \neq B$
 
-```
-（SAS全等的形式化）
-```
+则：$CD \equiv C'D'$
 
-**A6（存在性）**：
+**A6（介于的存在性）**：
+$$\forall P, R: \exists Q: B(P, Q, R)$$
 
-```
-∃Q: B(P, Q, R)
-```
-
-**A7（下界）**：
-
-```
-∃P: ∀Q, R: ¬B(P, Q, R)
-```
+**A7（下界公理）**：
+$$\exists P: \forall Q, R: \neg B(P, Q, R)$$
 
 **A8（Euclid公理）**：
+$$\forall A, B, C, D, T: (B(A, D, T) \land B(B, D, C) \land A \neq D) \to$$
+$$\exists X, Y: B(A, B, X) \land B(A, C, Y) \land B(X, T, Y)$$
 
-```
-B(A, D, T) ∧ B(B, D, C) ∧ A≠D →
-∃X, Y: B(A, B, X) ∧ B(A, C, Y) ∧ B(X, T, Y)
-```
+**A9（上界公理）**：
+$$\exists P: \forall Q, R: (B(Q, P, R) \to Q = R)$$
 
-**A9（上界）**：
+**A10（平行公理，Playfair形式）**：
+$$\forall l, P: (P \notin l) \to \exists! m: (P \in m \land m \parallel l)$$
 
-```
-∃P: ∀Q, R: B(Q, P, R) → Q = R
-```
+其中 $m \parallel l$ 表示 $m$ 和 $l$ 不相交。
 
-**A10（平行公理）**：
+**具体例子**：
 
-```
-（Playfair公理的形式化）
-```
+**例1：A1（反射性）**
+
+- **含义**：线段 $PQ$ 与 $QP$ 等长
+- **验证**：在 $\mathbb{R}^2$ 中，$|PQ| = |QP|$（距离的对称性）
+
+**例2：A4（Pasch公理）**
+
+- **几何意义**：若线穿过三角形一边，必穿过另一边
+- **图示**：
+  ```
+        C
+       /|\
+      / | \
+     /  |  \
+    /   |   \
+   A----P----B
+        |
+        Q
+  ```
+- **结论**：存在 $X$ 使得 $B(P, X, B)$ 和 $B(Q, X, A)$
+
+**例3：A10（平行公理）**
+
+- **含义**：过线外一点，有且仅有一条平行线
+- **验证**：在欧氏平面 $\mathbb{R}^2$ 中，给定直线 $l: ax + by + c = 0$ 和点 $P = (x_0, y_0) \notin l$，唯一平行线为 $ax + by - (ax_0 + by_0) = 0$
 
 ---
 
@@ -378,6 +388,52 @@ Tarski系统是**希尔伯特几何的现代形式化实现**
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月5日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **等距反射性（A1）**：
+   $$\forall P, Q: PQ \equiv QP$$
+
+2. **等距传递性（A2）**：
+   $$(PQ \equiv RS \land PQ \equiv TU) \to RS \equiv TU$$
+
+3. **等距可移动性（A3）**：
+   $$PQ \equiv P'Q' \to \exists R: B(P, Q, R) \land QR \equiv Q'R'$$
+
+4. **Pasch公理（A4）**：
+   $$(B(A, P, C) \land B(B, Q, C)) \to \exists X: B(P, X, B) \land B(Q, X, A)$$
+
+5. **五线段公理（A5，SAS）**：
+   $$(AB \equiv A'B' \land BC \equiv B'C' \land AD \equiv A'D' \land BD \equiv B'D' \land A \neq B) \to CD \equiv C'D'$$
+
+6. **介于存在性（A6）**：
+   $$\forall P, R: \exists Q: B(P, Q, R)$$
+
+7. **下界公理（A7）**：
+   $$\exists P: \forall Q, R: \neg B(P, Q, R)$$
+
+8. **Euclid公理（A8）**：
+   $$(B(A, D, T) \land B(B, D, C) \land A \neq D) \to \exists X, Y: B(A, B, X) \land B(A, C, Y) \land B(X, T, Y)$$
+
+9. **上界公理（A9）**：
+   $$\exists P: \forall Q, R: (B(Q, P, R) \to Q = R)$$
+
+10. **平行公理（A10）**：
+    $$\forall l, P: (P \notin l) \to \exists! m: (P \in m \land m \parallel l)$$
+
+11. **共线定义**：
+    $$\text{Col}(P, Q, R) \iff B(P, Q, R) \lor B(Q, P, R) \lor B(P, R, Q)$$
+
+12. **Tarski系统与Hilbert系统等价**：
+    $$\text{Tarski} \equiv \text{Hilbert} \text{（在适当解释下）}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约3,200字
+**数学公式数**: 15个
+**例子数**: 8个
+**最后更新**: 2026年01月02日

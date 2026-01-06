@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [Gröbner基算法：希尔伯特基底定理的构造性实现](#gröbner基算法希尔伯特基底定理的构造性实现)
+  - [📋 目录](#-目录)
   - [一、从存在性到算法](#一从存在性到算法)
     - [1.1 希尔伯特基底定理的局限](#11-希尔伯特基底定理的局限)
     - [1.2 Buchberger的突破（1965）](#12-buchberger的突破1965)
@@ -31,8 +32,11 @@
     - [7.2 哲学意义](#72-哲学意义)
   - [八、总结](#八总结)
     - [Gröbner基的历史地位](#gröbner基的历史地位)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
 
 ---
+
 ## 一、从存在性到算法
 
 ### 1.1 希尔伯特基底定理的局限
@@ -73,30 +77,55 @@
 
 ### 2.1 单项式序
 
-**定义**：
+**单项式序的数学定义**：
 
-```
-单项式序<：
-- 全序
-- 乘法保持：若u<v，则uw<vw
-- 良序：任意下降链终止
-```
+设 $k[x_1, \ldots, x_n]$ 是多项式环，$<$ 是单项式上的全序关系，则 $<$ 是**单项式序**，若满足：
 
-**例子：字典序**：
+1. **全序性**：对任意两个不同的单项式 $u, v$，要么 $u < v$，要么 $v < u$
+2. **乘法保持性**：若 $u < v$，则对任意单项式 $w$，$uw < vw$
+3. **良序性**：任意下降链 $u_1 > u_2 > u_3 > \cdots$ 在有限步终止
 
-```
-x^a y^b < x^c y^d ⟺
-a < c 或 (a=c 且 b<d)
+**具体例子**：
 
-例子：
-y < x < xy < x² < x²y
-```
+**例1：字典序（Lexicographic Order）**
+
+对单项式 $x_1^{a_1} \cdots x_n^{a_n}$ 和 $x_1^{b_1} \cdots x_n^{b_n}$：
+$$x_1^{a_1} \cdots x_n^{a_n} <_{\text{lex}} x_1^{b_1} \cdots x_n^{b_n} \iff \exists i: a_i < b_i \text{ 且 } a_j = b_j \text{ 对所有 } j < i$$
+
+**具体计算**（$n = 2$，$x > y$）：
+
+- $y < x$（因为 $a_1 = 0 < 1 = b_1$）
+- $xy < x^2$（因为 $a_1 = 1 < 2 = b_1$）
+- $x^2y < x^3$（因为 $a_1 = 2 < 3 = b_1$）
+- $x^2y < xy^2$（因为 $a_1 = 2 = b_1$ 且 $a_2 = 1 < 2 = b_2$）
+
+**排序结果**：$y < xy < x^2 < x^2y < x^3 < \cdots$
+
+**例2：度字典序（Degree Lexicographic Order）**
+
+先比较总次数，再比较字典序：
+$$x_1^{a_1} \cdots x_n^{a_n} <_{\text{deglex}} x_1^{b_1} \cdots x_n^{b_n} \iff$$
+$$\sum a_i < \sum b_i \text{ 或 } \left(\sum a_i = \sum b_i \text{ 且 } x_1^{a_1} \cdots x_n^{a_n} <_{\text{lex}} x_1^{b_1} \cdots x_n^{b_n}\right)$$
+
+**具体计算**（$n = 2$，$x > y$）：
+
+- $x < xy$（因为 $\deg(x) = 1 < 2 = \deg(xy)$）
+- $xy < x^2$（因为次数相同，但 $xy <_{\text{lex}} x^2$）
+- $y^2 < xy$（因为 $\deg(y^2) = 2 = \deg(xy)$ 且 $y^2 <_{\text{lex}} xy$）
+
+**排序结果**：$1 < x < y < x^2 < xy < y^2 < x^3 < x^2y < xy^2 < y^3 < \cdots$
+
+**例3：反字典序（Reverse Lexicographic Order）**
+
+从最后一个变元开始比较：
+$$x_1^{a_1} \cdots x_n^{a_n} <_{\text{revlex}} x_1^{b_1} \cdots x_n^{b_n} \iff$$
+$$\exists i: a_i > b_i \text{ 且 } a_j = b_j \text{ 对所有 } j > i$$
 
 **其他序**：
 
-- 度字典序
-- 反字典序
-- 块序
+- **块序（Block Order）**：对不同变元组使用不同序
+- **加权序（Weighted Order）**：根据权重比较
+- **消除序（Elimination Order）**：用于消元
 
 ---
 
@@ -132,24 +161,53 @@ LM(f) = x²y
 
 ### 2.3 Gröbner基
 
-**定义**：
+**Gröbner基的数学定义**：
 
-```
-理想I的Gröbner基G：
-- G生成I
-- {LT(g) | g∈G}生成LT(I)
+设 $I$ 是 $k[x_1, \ldots, x_n]$ 的理想，$<$ 是单项式序。有限集合 $G = \{g_1, \ldots, g_t\} \subseteq I$ 是 $I$ 的**Gröbner基**（相对于 $<$），若：
+
+$$\langle \text{LT}(g_1), \ldots, \text{LT}(g_t) \rangle = \langle \text{LT}(I) \rangle$$
 
 其中：
-LT(I) = {LT(f) | f∈I}
-```
+
+- **首项理想**：$\text{LT}(I) = \{\text{LT}(f) : f \in I, f \neq 0\}$
+- **首项**：$\text{LT}(f)$ 是 $f$ 中最大的单项式（按 $<$）
+
+**等价条件**：
+
+1. **生成性**：$G$ 生成 $I$（即 $I = \langle g_1, \ldots, g_t \rangle$）
+2. **首项生成性**：$\langle \text{LT}(g_1), \ldots, \text{LT}(g_t) \rangle = \langle \text{LT}(I) \rangle$
+
+**具体例子**：
+
+**例1：简单理想**
+
+- $I = (x^2 + y, xy + x)$（在 $k[x, y]$ 中）
+- 字典序 $x > y$
+- **不是Gröbner基**：$\{x^2 + y, xy + x\}$ 不是Gröbner基
+  - 因为 $x \in I$（因为 $x = (xy + x) - y(x^2 + y)/(x)$），但 $x \notin \langle x^2, xy \rangle$
+- **Gröbner基**：$\{x^2 + y, xy + x, x, y^2 - y\}$ 是Gröbner基
+
+**例2：单变元情况**
+
+- $I = (x^2 - 1, x^3 - x)$（在 $k[x]$ 中）
+- 标准序 $1 < x < x^2 < \cdots$
+- **Gröbner基**：$\{x^2 - 1\}$ 是Gröbner基
+  - 因为 $x^3 - x = x(x^2 - 1)$，所以 $x^3 - x \in \langle x^2 - 1 \rangle$
+  - 且 $\text{LT}(I) = \langle x^2 \rangle = \langle \text{LT}(x^2 - 1) \rangle$
+
+**例3：约化Gröbner基**
+
+- $I = (x^2, xy + y^2)$（在 $k[x, y]$ 中）
+- 字典序 $x > y$
+- **Gröbner基**：$\{x^2, xy + y^2, y^3\}$
+- **约化Gröbner基**：$\{x^2, xy + y^2, y^3\}$（已约化）
 
 **性质**：
 
-```
-1. 任意f∈I可被G约化到0
-2. 约化结果唯一（相对于G）
-3. 可判定f∈I
-```
+1. **约化性**：任意 $f \in I$ 可被 $G$ 约化到 $0$
+2. **唯一性**：约化结果唯一（相对于 $G$）
+3. **判定性**：$f \in I \iff$ $f$ 被 $G$ 约化到 $0$
+4. **有限性**：Gröbner基总是有限的（Hilbert基底定理）
 
 ---
 
@@ -157,35 +215,64 @@ LT(I) = {LT(f) | f∈I}
 
 ### 3.1 S-多项式
 
-**定义**：
+**S-多项式的数学定义**：
 
-```
-给定f, g，单项式序<
+设 $f, g \in k[x_1, \ldots, x_n]$ 是非零多项式，$<$ 是单项式序。定义：
 
-S-多项式：
-S(f,g) = (LCM/LT(f))·f - (LCM/LT(g))·g
+$$S(f, g) = \frac{\text{LCM}(\text{LM}(f), \text{LM}(g))}{\text{LT}(f)} \cdot f - \frac{\text{LCM}(\text{LM}(f), \text{LM}(g))}{\text{LT}(g)} \cdot g$$
 
 其中：
-LCM = LCM(LM(f), LM(g))
-```
 
-**例子**：
+- $\text{LM}(f)$ 是 $f$ 的首项单项式（无系数）
+- $\text{LCM}(u, v)$ 是单项式 $u, v$ 的最小公倍式
 
-```
-f = x²y + xy
-g = xy² + x
+**具体例子**：
 
-字典序x>y：
-LT(f) = x²y
-LT(g) = xy²
-LCM = x²y²
+**例1：基本计算**
 
-S(f,g) = (x²y²/x²y)·f - (x²y²/xy²)·g
-       = y·f - x·g
-       = y(x²y+xy) - x(xy²+x)
-       = x²y² + xy² - x²y² - x²
-       = xy² - x²
-```
+- $f = x^2y + xy$
+- $g = xy^2 + x$
+- 字典序 $x > y$
+
+**计算过程**：
+
+- $\text{LT}(f) = x^2y$，$\text{LM}(f) = x^2y$
+- $\text{LT}(g) = xy^2$，$\text{LM}(g) = xy^2$
+- $\text{LCM}(x^2y, xy^2) = x^2y^2$
+
+**S-多项式**：
+$$S(f, g) = \frac{x^2y^2}{x^2y} \cdot f - \frac{x^2y^2}{xy^2} \cdot g = y \cdot f - x \cdot g$$
+
+**展开**：
+$$S(f, g) = y(x^2y + xy) - x(xy^2 + x) = x^2y^2 + xy^2 - x^2y^2 - x^2 = xy^2 - x^2$$
+
+**例2：另一个例子**
+
+- $f = x^3 - 2xy$
+- $g = x^2y - 2y^2 + x$
+- 字典序 $x > y$
+
+**计算过程**：
+
+- $\text{LT}(f) = x^3$，$\text{LM}(f) = x^3$
+- $\text{LT}(g) = x^2y$，$\text{LM}(g) = x^2y$
+- $\text{LCM}(x^3, x^2y) = x^3y$
+
+**S-多项式**：
+$$S(f, g) = \frac{x^3y}{x^3} \cdot f - \frac{x^3y}{x^2y} \cdot g = y \cdot f - x \cdot g$$
+
+**展开**：
+$$S(f, g) = y(x^3 - 2xy) - x(x^2y - 2y^2 + x) = x^3y - 2xy^2 - x^3y + 2xy^2 - x^2 = -x^2$$
+
+**例3：约化S-多项式**
+
+对 $S(f, g) = xy^2 - x^2$，相对于 $G = \{f, g\}$ 约化：
+
+- $xy^2$ 被 $g$ 约化：$xy^2 - (xy^2 + x) = -x$
+- $-x^2$ 不能被 $G$ 约化
+- **约化结果**：$r = -x^2 - x$
+
+若 $r \neq 0$，则添加 $r$ 到 $G$ 得到新的基。
 
 ---
 
@@ -496,6 +583,48 @@ Buchberger（1965）：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,200字
-**最后更新**: 2025年12月5日
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **字典序**：
+   $$x_1^{a_1} \cdots x_n^{a_n} <_{\text{lex}} x_1^{b_1} \cdots x_n^{b_n} \iff \exists i: a_i < b_i \text{ 且 } a_j = b_j \text{ 对所有 } j < i$$
+
+2. **度字典序**：
+   $$u <_{\text{deglex}} v \iff \deg(u) < \deg(v) \text{ 或 } (\deg(u) = \deg(v) \text{ 且 } u <_{\text{lex}} v)$$
+
+3. **Gröbner基定义**：
+   $$\langle \text{LT}(g_1), \ldots, \text{LT}(g_t) \rangle = \langle \text{LT}(I) \rangle$$
+
+4. **S-多项式**：
+   $$S(f, g) = \frac{\text{LCM}(\text{LM}(f), \text{LM}(g))}{\text{LT}(f)} \cdot f - \frac{\text{LCM}(\text{LM}(f), \text{LM}(g))}{\text{LT}(g)} \cdot g$$
+
+5. **Buchberger准则**：
+   $$G \text{ 是Gröbner基 } \iff S(f, g) \xrightarrow{G} 0 \text{ 对所有 } f, g \in G$$
+
+6. **理想成员判定**：
+   $$f \in I \iff f \xrightarrow{G} 0$$
+
+7. **约化**：
+   多项式 $f$ 相对于 $G$ 的约化 $r$ 满足：
+   - $f = q_1g_1 + \cdots + q_tg_t + r$
+   - $r$ 的项不被任何 $\text{LT}(g_i)$ 整除
+
+8. **复杂度（最坏情况）**：
+   $$O(m^{2^n}) \quad \text{（双重指数）}$$
+
+9. **约化Gröbner基唯一性**：
+   给定理想 $I$ 和单项式序 $<$，$I$ 有唯一的约化Gröbner基。
+
+10. **Hilbert基底定理**：
+    Noether环的任意理想有有限生成基（Gröbner基的存在性保证）。
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约3,800字
+**数学公式数**: 12个
+**例子数**: 10个
+**最后更新**: 2026年01月02日
