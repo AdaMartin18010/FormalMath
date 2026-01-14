@@ -55,7 +55,7 @@
 
 **定义 1.1** (整数)
 整数是自然数序对的等价类，其中等价关系定义为：
-$$(a, b) \sim (c, d) \leqqftrightarrow a + d = b + c$$
+$$(a, b) \sim (c, d) \leftrightarrow a + d = b + c$$
 
 **形式化表述**：
 $$\mathbb{Z} = \mathbb{N} \times \mathbb{N} / \sim$$
@@ -179,13 +179,13 @@ $$[(a, b)] \cdot [(c, d)] = [(ac + bd, ad + bc)]$$
 #### 3.1 序关系的定义
 
 **定义 3.1** (整数序关系)
-$$[(a, b)] < [(c, d)] \leqqftrightarrow a + d < b + c$$
+$$[(a, b)] < [(c, d)] \leftrightarrow a + d < b + c$$
 
 **定理 3.1.1** (序关系的性质)
 
-1. 自反性：$x \leqqq x$
-2. 反对称性：$x \leqqq y \land y \leqqq x \rightarrow x = y$
-3. 传递性：$x \leqqq y \land y \leqqq z \rightarrow x \leqqq z$
+1. 自反性：$x \\leq x$
+2. 反对称性：$x \\leq y \land y \\leq x \rightarrow x = y$
+3. 传递性：$x \\leq y \land y \\leq z \rightarrow x \\leq z$
 4. 完全性：任意非空有上界的集合有最小上界
 
 **形式化证明**：
@@ -253,7 +253,7 @@ $\phi$ 是单射，且保持运算和序关系。
 #### 5.1 整除理论
 
 **定义 5.1** (整除关系)
-$$a \mid b \leqqftrightarrow \exists c \in \mathbb{Z}(b = a \cdot c)$$
+$$a \mid b \leftrightarrow \exists c \in \mathbb{Z}(b = a \cdot c)$$
 
 **定理 5.1.1** (整除的基本性质)
 
@@ -328,7 +328,7 @@ $$\gcd(a, b) = ax + by$$
 #### 6.2 同余理论
 
 **定义 6.2** (同余关系)
-$$a \equiv b \pmod{m} \leqqftrightarrow m \mid (a - b)$$
+$$a \equiv b \pmod{m} \leftrightarrow m \mid (a - b)$$
 
 **定理 6.2.1** (同余的基本性质)
 

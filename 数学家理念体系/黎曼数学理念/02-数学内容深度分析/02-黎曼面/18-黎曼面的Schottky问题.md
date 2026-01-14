@@ -33,7 +33,7 @@
 - 分类工具
 
 **数学公式**：
-- 周期矩阵：$$\Pi = \leqqqqft(\int_{a_j} \omega_i\right)_{i,j=1}^g$$
+- 周期矩阵：$$\Pi = \\left(\int_{a_j} \omega_i\right)_{i,j=1}^g$$
 - Schottky问题：$$\text{何时 } \Pi \text{ 对应黎曼面？}$$
 - 条件：$$\Pi \text{ 满足Riemann双线性关系}$$
 
@@ -139,7 +139,7 @@
 ### 核心公式
 
 1. **周期矩阵**：
-   $$\Pi = \leqqqqft(\int_{a_j} \omega_i\right)_{i,j=1}^g$$
+   $$\Pi = \\left(\int_{a_j} \omega_i\right)_{i,j=1}^g$$
 
 2. **Riemann双线性关系**：
    $$\Pi^T J \Pi = 0$$

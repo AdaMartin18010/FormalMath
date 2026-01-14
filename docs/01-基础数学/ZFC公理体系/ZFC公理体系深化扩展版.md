@@ -40,7 +40,7 @@
 
 **逻辑符号**:
 
-- 连接词: $\neqqg, \land, \lor, \rightarrow, \leqqftrightarrow$
+- 连接词: $\\neg, \land, \lor, \rightarrow, \leftrightarrow$
 - 量词: $\forall, \exists$
 - 等号: $=$
 - 括号: $(, )$
@@ -60,7 +60,7 @@
 公式递归定义如下：
 
 - 如果 $t_1, t_2$ 是项，则 $t_1 = t_2$ 和 $t_1 \in t_2$ 是原子公式
-- 如果 $\phi, \psi$ 是公式，则 $\neqqg\phi, \phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leqqftrightarrow \psi$ 是公式
+- 如果 $\phi, \psi$ 是公式，则 $\\neg\phi, \phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leftrightarrow \psi$ 是公式
 - 如果 $\phi$ 是公式，$x$ 是变量，则 $\forall x \phi, \exists x \phi$ 是公式
 
 ### 1.2 集合论语言
@@ -88,8 +88,8 @@
 
 - 在原子公式 $x = y$ 中，$x$ 和 $y$ 都自由出现
 - 在原子公式 $x \in y$ 中，$x$ 和 $y$ 都自由出现
-- 在 $\neqqg\phi$ 中，$x$ 自由出现当且仅当在 $\phi$ 中自由出现
-- 在 $\phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leqqftrightarrow \psi$ 中，$x$ 自由出现当且仅当在 $\phi$ 或 $\psi$ 中自由出现
+- 在 $\\neg\phi$ 中，$x$ 自由出现当且仅当在 $\phi$ 中自由出现
+- 在 $\phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leftrightarrow \psi$ 中，$x$ 自由出现当且仅当在 $\phi$ 或 $\psi$ 中自由出现
 - 在 $\forall y \phi, \exists y \phi$ 中，$x$ 自由出现当且仅当 $x \neqqq y$ 且在 $\phi$ 中自由出现
 
 **定义 1.3.2** (句子)
@@ -100,13 +100,13 @@
 ### 2.1 外延公理
 
 **公理 2.1.1** (外延公理)
-$$\forall x \forall y [\forall z(z \in x \leqqftrightarrow z \in y) \rightarrow x = y]$$
+$$\forall x \forall y [\forall z(z \in x \leftrightarrow z \in y) \rightarrow x = y]$$
 
 **语义解释**: 两个集合相等当且仅当它们包含相同的元素。
 
 **定理 2.1.2** (外延公理的等价形式)
 外延公理等价于：
-$$\forall x \forall y [x = y \leqqftrightarrow \forall z(z \in x \leqqftrightarrow z \in y)]$$
+$$\forall x \forall y [x = y \leftrightarrow \forall z(z \in x \leftrightarrow z \in y)]$$
 
 **证明**: 使用等号的自反性、对称性和传递性。
 
@@ -126,10 +126,10 @@ $$\exists x \forall y (y \notin x)$$
 ### 2.3 配对公理
 
 **公理 2.3.1** (配对公理)
-$$\forall x \forall y \exists z \forall w(w \in z \leqqftrightarrow w = x \lor w = y)$$
+$$\forall x \forall y \exists z \forall w(w \in z \leftrightarrow w = x \lor w = y)$$
 
 **定义 2.3.2** (无序对)
-对于集合 $x, y$，无序对 $\{x, y\}$ 是满足 $\forall w(w \in \{x, y\} \leqqftrightarrow w = x \lor w = y)$ 的唯一集合。
+对于集合 $x, y$，无序对 $\{x, y\}$ 是满足 $\forall w(w \in \{x, y\} \leftrightarrow w = x \lor w = y)$ 的唯一集合。
 
 **定理 2.3.3** (无序对的性质)
 
@@ -140,10 +140,10 @@ $$\forall x \forall y \exists z \forall w(w \in z \leqqftrightarrow w = x \lor w
 ### 2.4 并集公理
 
 **公理 2.4.1** (并集公理)
-$$\forall F \exists A \forall x(x \in A \leqqftrightarrow \exists B(B \in F \land x \in B))$$
+$$\forall F \exists A \forall x(x \in A \leftrightarrow \exists B(B \in F \land x \in B))$$
 
 **定义 2.4.2** (并集)
-对于集合族 $F$，并集 $\bigcup F$ 是满足 $\forall x(x \in \bigcup F \leqqftrightarrow \exists B(B \in F \land x \in B))$ 的唯一集合。
+对于集合族 $F$，并集 $\bigcup F$ 是满足 $\forall x(x \in \bigcup F \leftrightarrow \exists B(B \in F \land x \in B))$ 的唯一集合。
 
 **定义 2.4.3** (二元并集)
 对于集合 $A, B$，$A \cup B = \bigcup \{A, B\}$。
@@ -157,10 +157,10 @@ $$\forall F \exists A \forall x(x \in A \leqqftrightarrow \exists B(B \in F \lan
 ### 2.5 幂集公理
 
 **公理 2.5.1** (幂集公理)
-$$\forall x \exists y \forall z(z \in y \leqqftrightarrow z \subseteq x)$$
+$$\forall x \exists y \forall z(z \in y \leftrightarrow z \subseteq x)$$
 
 **定义 2.5.2** (幂集)
-对于集合 $x$，幂集 $\mathcal{P}(x)$ 是满足 $\forall z(z \in \mathcal{P}(x) \leqqftrightarrow z \subseteq x)$ 的唯一集合。
+对于集合 $x$，幂集 $\mathcal{P}(x)$ 是满足 $\forall z(z \in \mathcal{P}(x) \leftrightarrow z \subseteq x)$ 的唯一集合。
 
 **定理 2.5.3** (幂集的性质)
 
@@ -189,7 +189,7 @@ $$\exists x(\emptyset \in x \land \forall y(y \in x \rightarrow y \cup \{y\} \in
 
 **公理模式 2.7.1** (替换公理模式)
 对于每个公式 $\phi(x, y, z_1, \ldots, z_n)$，以下是一个公理：
-$$\forall z_1 \ldots \forall z_n \forall A[\forall x \in A \exists! y \phi(x, y, z_1, \ldots, z_n) \rightarrow \exists B \forall y(y \in B \leqqftrightarrow \exists x \in A \phi(x, y, z_1, \ldots, z_n))]$$
+$$\forall z_1 \ldots \forall z_n \forall A[\forall x \in A \exists! y \phi(x, y, z_1, \ldots, z_n) \rightarrow \exists B \forall y(y \in B \leftrightarrow \exists x \in A \phi(x, y, z_1, \ldots, z_n))]$$
 
 **语义解释**: 如果对于集合 $A$ 中的每个元素 $x$，都存在唯一的 $y$ 使得 $\phi(x, y, \ldots)$ 成立，那么存在集合 $B$ 包含所有这些 $y$。
 

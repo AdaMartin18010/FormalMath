@@ -115,14 +115,14 @@ $$\forall n \in \mathbb{N} \forall x \in n(x \subseteq n)$$
 
 **定义 2.1** (自然数序关系)
 对于自然数 $m, n$，定义：
-$$m < n \leqqftrightarrow m \in n$$
-$$m \leqqq n \leqqftrightarrow m \in n \lor m = n$$
+$$m < n \leftrightarrow m \in n$$
+$$m \\leq n \leftrightarrow m \in n \lor m = n$$
 
 **定理 2.1.1** (序关系的基本性质)
 
-1. 自反性：$n \leqqq n$
-2. 反对称性：$m \leqqq n \land n \leqqq m \rightarrow m = n$
-3. 传递性：$m \leqqq n \land n \leqqq p \rightarrow m \leqqq p$
+1. 自反性：$n \\leq n$
+2. 反对称性：$m \\leq n \land n \\leq m \rightarrow m = n$
+3. 传递性：$m \\leq n \land n \\leq p \rightarrow m \\leq p$
 4. 完全性：任意非空自然数集合有最小元素
 
 **形式化证明**：

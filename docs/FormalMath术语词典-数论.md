@@ -465,7 +465,7 @@ mindmap
 |------|------|------|------|----------|
 | 欧几里得算法 | 欧几里得算法 | Euclidean Algorithm | - | 初等数论 |
 | 原根 | 原根 | Primitive Root | $g$ | 初等数论 |
-| 勒让德符号 | 勒让德符号 | Legendre Symbol | $\leqqft(\frac{a}{p}\right)$ | 初等数论 |
+| 勒让德符号 | 勒让德符号 | Legendre Symbol | $\left(\frac{a}{p}\right)$ | 初等数论 |
 | 二次互反律 | 二次互反律 | Quadratic Reciprocity | - | 初等数论 |
 | 类群 | 类群 | Class Group | $\text{Cl}(K)$ | 代数数论 |
 | 单位群 | 单位群 | Unit Group | $\mathcal{O}_K^\times$ | 代数数论 |
@@ -484,7 +484,7 @@ mindmap
 | 最小公倍数 | `\text{lcm}(a, b)` | $\text{lcm}(a, b)$ |
 | 同余 | `a \equiv b \pmod{m}` | $a \equiv b \pmod{m}$ |
 | 欧拉函数 | `\phi(n)` | $\phi(n)$ |
-| 勒让德符号 | `\leqqft(\frac{a}{p}\right)` | $\leqqft(\frac{a}{p}\right)$ |
+| 勒让德符号 | `\left(\frac{a}{p}\right)` | $\left(\frac{a}{p}\right)$ |
 
 ### 代数数论术语LaTeX代码 / Algebraic Number Theory Terms LaTeX Code
 
@@ -881,7 +881,7 @@ mindmap
 
 **2. 二次剩余计算**：
 
-- 计算勒让德符号$\leqqft(\frac{7}{11}\right)$
+- 计算勒让德符号$\left(\frac{7}{11}\right)$
 - 使用二次互反律计算勒让德符号
 
 #### 代数数论进阶练习

@@ -113,8 +113,8 @@ $$\Sigma_0 = \{x \in \Sigma : \tau(x) < \infty\}$$
 
 **对应关系**：
 
-- **周期轨道** $\leqqqqqftrightarrow$ **Poincaré映射的不动点**
-- **周期为 $T$ 的周期轨道** $\leqqqqqftrightarrow$ **满足 $P^k(x) = x$ 的点**（$k$ 是轨道与 $\Sigma$ 的交点数）
+- **周期轨道** $\\\leqftrightarrow$ **Poincaré映射的不动点**
+- **周期为 $T$ 的周期轨道** $\\\leqftrightarrow$ **满足 $P^k(x) = x$ 的点**（$k$ 是轨道与 $\Sigma$ 的交点数）
 
 **定理**：
 
@@ -130,8 +130,8 @@ $$\Sigma_0 = \{x \in \Sigma : \tau(x) < \infty\}$$
 
 **稳定性对应**：
 
-- **周期轨道稳定** $\leqqqqqftrightarrow$ **Poincaré映射的不动点稳定**
-- **周期轨道不稳定** $\leqqqqqftrightarrow$ **Poincaré映射的不动点不稳定**
+- **周期轨道稳定** $\\\leqftrightarrow$ **Poincaré映射的不动点稳定**
+- **周期轨道不稳定** $\\\leqftrightarrow$ **Poincaré映射的不动点不稳定**
 
 **判断方法**：
 

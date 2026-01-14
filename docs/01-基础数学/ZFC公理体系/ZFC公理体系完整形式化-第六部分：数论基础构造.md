@@ -54,13 +54,13 @@
 
 **定义 1.1** (自然数序关系)
 对于自然数 $m, n$，定义：
-$$m < n \leqqftrightarrow m \in n$$
+$$m < n \leftrightarrow m \in n$$
 
 **定理 1.1.1** (自然数序的性质)
 
-1. 自反性：$n \leqqq n$
-2. 反对称性：$m \leqqq n \land n \leqqq m \rightarrow m = n$
-3. 传递性：$m \leqqq n \land n \leqqq p \rightarrow m \leqqq p$
+1. 自反性：$n \\leq n$
+2. 反对称性：$m \\leq n \land n \\leq m \rightarrow m = n$
+3. 传递性：$m \\leq n \land n \\leq p \rightarrow m \\leq p$
 4. 完全性：任意非空自然数集合有最小元素
 
 **形式化证明**：
@@ -329,7 +329,7 @@ $$a^{(p-1)/2} \equiv 1 \pmod{p}$$
 **定义 5.2** (勒让德符号)
 对于奇素数 $p$ 和整数 $a$，勒让德符号定义为：
 $$
-\leqqft(\frac{a}{p}\right) = \begin{cases}
+\left(\frac{a}{p}\right) = \begin{cases}
 1 & \text{如果 } a \text{ 是模 } p \text{ 的二次剩余} \\
 -1 & \text{如果 } a \text{ 不是模 } p \text{ 的二次剩余} \\
 0 & \text{如果 } p \mid a
@@ -338,7 +338,7 @@ $$
 
 **定理 5.2.1** (二次互反律)
 对于不同的奇素数 $p, q$：
-$$\leqqft(\frac{p}{q}\right) \leqqft(\frac{q}{p}\right) = (-1)^{(p-1)(q-1)/4}$$
+$$\left(\frac{p}{q}\right) \left(\frac{q}{p}\right) = (-1)^{(p-1)(q-1)/4}$$
 
 **形式化证明**：
 
@@ -356,7 +356,7 @@ $$\leqqft(\frac{p}{q}\right) \leqqft(\frac{q}{p}\right) = (-1)^{(p-1)(q-1)/4}$$
 
 **定义 6.1** (欧拉函数)
 对于正整数 $n$，欧拉函数 $\phi(n)$ 定义为：
-$$\phi(n) = |\{k \in \mathbb{Z} : 1 \leqqq k \leqqq n, \gcd(k, n) = 1\}|$$
+$$\phi(n) = |\{k \in \mathbb{Z} : 1 \\leq k \\leq n, \gcd(k, n) = 1\}|$$
 
 **定理 6.1.1** (欧拉函数的性质)
 
@@ -387,7 +387,7 @@ $$
 
 **定理 6.2.1** (莫比乌斯反演)
 对于数论函数 $f, g$：
-$$g(n) = \sum_{d \mid n} f(d) \leqqftrightarrow f(n) = \sum_{d \mid n} \mu(d) g\leqqft(\frac{n}{d}\right)$$
+$$g(n) = \sum_{d \mid n} f(d) \leftrightarrow f(n) = \sum_{d \mid n} \mu(d) g\left(\frac{n}{d}\right)$$
 
 **形式化证明**：
 

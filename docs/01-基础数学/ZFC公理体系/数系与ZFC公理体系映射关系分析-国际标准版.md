@@ -72,7 +72,7 @@ ZFC公理体系 - 集合论基础
 
 | ZFC公理 | 数系构造 | 形式化映射 | 认知对应 |
 |---------|----------|------------|----------|
-| 外延公理 | 集合相等定义 | $A = B \leqqftrightarrow \forall x(x \in A \leqqftrightarrow x \in B)$ | 概念识别 |
+| 外延公理 | 集合相等定义 | $A = B \leftrightarrow \forall x(x \in A \leftrightarrow x \in B)$ | 概念识别 |
 | 空集公理 | 自然数0构造 | $0 = \emptyset$ | 空概念 |
 | 配对公理 | 有序对构造 | $(a,b) = \{\{a\}, \{a,b\}\}$ | 关系形成 |
 | 并集公理 | 数系并集构造 | $\bigcup A = \{x \mid \exists y \in A(x \in y)\}$ | 概念整合 |
@@ -164,7 +164,7 @@ end
 
 整数可以通过自然数的等价类构造：
 $\mathbb{Z} = (\mathbb{N} \times \mathbb{N}) / \sim$
-其中 $(a, b) \sim (c, d) \leqqftrightarrow a + d = b + c$
+其中 $(a, b) \sim (c, d) \leftrightarrow a + d = b + c$
 
 **形式化证明** / **Formal Proof**:
 
@@ -209,7 +209,7 @@ end
 
 有理数可以通过整数的等价类构造：
 $\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$
-其中 $(a, b) \sim (c, d) \leqqftrightarrow a \cdot d = b \cdot c$
+其中 $(a, b) \sim (c, d) \leftrightarrow a \cdot d = b \cdot c$
 
 **形式化证明** / **Formal Proof**:
 

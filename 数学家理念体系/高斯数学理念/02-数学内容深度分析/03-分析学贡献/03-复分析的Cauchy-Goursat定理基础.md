@@ -152,7 +152,7 @@ $$\oint_{\gamma} f(z) dz = 0$$
 
 使用Green定理：
 
-$$\oint_{\gamma} (P dx + Q dy) = \iint_D \leqqft(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dx dy$$
+$$\oint_{\gamma} (P dx + Q dy) = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dx dy$$
 
 对于复积分，使用Cauchy-Riemann方程。
 

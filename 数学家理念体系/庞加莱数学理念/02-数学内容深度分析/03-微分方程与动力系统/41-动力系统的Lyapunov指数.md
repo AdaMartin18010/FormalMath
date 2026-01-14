@@ -113,7 +113,7 @@ $$\lambda = \lim_{t \to \infty} \frac{1}{t} \log \| D\phi_t(x_0) v \|$$
 
 对于n维系统，存在n个Lyapunov指数（可能重复）：
 
-$$\lambda_1 \geqqqqqq \lambda_2 \geqqqqqq \cdots \geqqqqqq \lambda_n$$
+$$\lambda_1 \\\geq \lambda_2 \\\geq \cdots \\\geq \lambda_n$$
 
 这些指数由Oseledets定理保证存在。
 
@@ -217,7 +217,7 @@ Lyapunov指数的基本理论包括存在性、唯一性和基本性质。
 
 **Oseledets定理**（多乘数定理）：
 
-对于遍历动力系统，几乎所有的初始点 $x$ 和方向 $v$，Lyapunov指数存在且唯一。具体地，存在Lyapunov指数 $\lambda_1 \geqqqqqq \lambda_2 \geqqqqqq \cdots \geqqqqqq \lambda_n$ 和对应的Lyapunov子空间 $E_i(x)$，使得：
+对于遍历动力系统，几乎所有的初始点 $x$ 和方向 $v$，Lyapunov指数存在且唯一。具体地，存在Lyapunov指数 $\lambda_1 \\\geq \lambda_2 \\\geq \cdots \\\geq \lambda_n$ 和对应的Lyapunov子空间 $E_i(x)$，使得：
 
 $$\lim_{t \to \infty} \frac{1}{t} \log \|D\phi_t(x) v\| = \lambda_i, \quad \forall v \in E_i(x) \setminus E_{i+1}(x)$$
 
@@ -278,7 +278,7 @@ $$h_{KS}(\mu) = \int \sum_{\lambda_i > 0} \lambda_i(x) d\mu(x)$$
 
 $$D_{KY} = k + \frac{\sum_{i=1}^k \lambda_i}{|\lambda_{k+1}|}$$
 
-其中 $k$ 是使得 $\sum_{i=1}^k \lambda_i \geqqqqqq 0$ 的最大整数。
+其中 $k$ 是使得 $\sum_{i=1}^k \lambda_i \\\geq 0$ 的最大整数。
 
 **例子**：Lorenz吸引子
 
@@ -290,7 +290,7 @@ $$D_{KY} = 2 + \frac{0.906}{14.572} \approx 2.062$$
 
 拓扑熵与Lyapunov指数的关系：
 
-$$h_{top}(f) \leqqqqqq \int \sum_{\lambda_i > 0} \lambda_i(x) d\mu(x)$$
+$$h_{top}(f) \\\leq \int \sum_{\lambda_i > 0} \lambda_i(x) d\mu(x)$$
 
 对于双曲系统，等号成立。
 
@@ -400,7 +400,7 @@ Lyapunov指数在混沌理论中有重要应用，是识别和量化混沌的关
 
 正的最大Lyapunov指数是混沌的典型特征：
 
-- **规则运动**：$\lambda_1 \leqqqqqq 0$
+- **规则运动**：$\lambda_1 \\\leq 0$
 - **混沌运动**：$\lambda_1 > 0$
 
 **2. 混沌量化**

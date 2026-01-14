@@ -135,7 +135,7 @@ structure ForcingPartialOrder where
 
 **定理 1.2.3** (反射原理)
 对于任何有限公式$\phi(x_1, \ldots, x_n)$，存在一个序数$\alpha$使得：
-$$\forall x_1, \ldots, x_n \in V_\alpha [\phi^{V_\alpha}(x_1, \ldots, x_n) \leqqftrightarrow \phi(x_1, \ldots, x_n)]$$
+$$\forall x_1, \ldots, x_n \in V_\alpha [\phi^{V_\alpha}(x_1, \ldots, x_n) \leftrightarrow \phi(x_1, \ldots, x_n)]$$
 
 ### 1.3 大基数理论
 
@@ -165,7 +165,7 @@ $$\forall x_1, \ldots, x_n \in V_\alpha [\phi^{V_\alpha}(x_1, \ldots, x_n) \leqq
 #### 1.4.1 强迫偏序
 
 **定义 1.4.1** (强迫偏序)
-强迫偏序是一个偏序集$(P, \leqqq)$，满足：
+强迫偏序是一个偏序集$(P, \\leq)$，满足：
 
 1. 存在最小元
 2. 满足反链条件

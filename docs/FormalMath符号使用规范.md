@@ -80,7 +80,7 @@
 |------|-----------|------|------|
 | $\land$ | `$\land$` | 合取（且） | $p \land q$ |
 | $\lor$ | `$\lor$` | 析取（或） | $p \lor q$ |
-| $\neqqg$ | `$\neqqg$` | 否定（非） | $\neqqg p$ |
+| $\\neg$ | `$\\neg$` | 否定（非） | $\\neg p$ |
 | $\implies$ | `$\implies$` | 蕴含 | $p \implies q$ |
 | $\iff$ | `$\iff$` | 等价 | $p \iff q$ |
 
@@ -131,7 +131,7 @@
 | 符号 | LaTeX代码 | 含义 | 示例 |
 |------|-----------|------|------|
 | $\triangleleft$ | `$\triangleleft$` | 正规子群 | $N \triangleleft G$ |
-| $\leqqq$ | `$\leqqq$` | 子群 | $H \leqqq G$ |
+| $\\leq$ | `$\\leq$` | 子群 | $H \\leq G$ |
 | $<$ | `$<$` | 真子群 | $H < G$ |
 | $\cong$ | `$\cong$` | 同构 | $G \cong H$ |
 | $\simeq$ | `$\simeq$` | 同构（替代） | $G \simeq H$ |

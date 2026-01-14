@@ -105,7 +105,7 @@ $$x_1^{a_1} \cdots x_n^{a_n} <_{\text{lex}} x_1^{b_1} \cdots x_n^{b_n} \iff \exi
 
 先比较总次数，再比较字典序：
 $$x_1^{a_1} \cdots x_n^{a_n} <_{\text{deglex}} x_1^{b_1} \cdots x_n^{b_n} \iff$$
-$$\sum a_i < \sum b_i \text{ 或 } \leqqqqqft(\sum a_i = \sum b_i \text{ 且 } x_1^{a_1} \cdots x_n^{a_n} <_{\text{lex}} x_1^{b_1} \cdots x_n^{b_n}\right)$$
+$$\sum a_i < \sum b_i \text{ 或 } \\\leqft(\sum a_i = \sum b_i \text{ 且 } x_1^{a_1} \cdots x_n^{a_n} <_{\text{lex}} x_1^{b_1} \cdots x_n^{b_n}\right)$$
 
 **具体计算**（$n = 2$，$x > y$）：
 

@@ -107,7 +107,7 @@ $$f(x) = \int_{-\infty}^{\infty} \hat{f}(\xi) e^{2\pi i \xi x} \, d\xi$$
 
 **例2：矩形函数**
 
-- $f(x) = \begin{cases} 1 & |x| \leqqqqqq a \\ 0 & |x| > a \end{cases}$
+- $f(x) = \begin{cases} 1 & |x| \\\leq a \\ 0 & |x| > a \end{cases}$
 - Fourier变换：$\hat{f}(\xi) = \int_{-a}^{a} e^{-2\pi i \xi x} \, dx = \frac{\sin(2\pi a \xi)}{\pi \xi} = 2a \cdot \text{sinc}(2\pi a \xi)$
 - 其中 $\text{sinc}(x) = \frac{\sin(x)}{x}$
 

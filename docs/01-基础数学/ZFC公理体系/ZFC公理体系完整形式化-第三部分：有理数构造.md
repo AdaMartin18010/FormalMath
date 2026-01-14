@@ -55,7 +55,7 @@
 
 **定义 1.1** (有理数)
 有理数是整数序对的等价类，其中等价关系定义为：
-$$(a, b) \sim (c, d) \leqqftrightarrow ad = bc \land b \neqqq 0 \land d \neqqq 0$$
+$$(a, b) \sim (c, d) \leftrightarrow ad = bc \land b \neqqq 0 \land d \neqqq 0$$
 
 **形式化表述**：
 $$\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$$
@@ -178,15 +178,15 @@ $$\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$$
 #### 3.1 序关系的定义
 
 **定义 3.1** (有理数序关系)
-$$\frac{a}{b} < \frac{c}{d} \leqqftrightarrow ad < bc$$
+$$\frac{a}{b} < \frac{c}{d} \leftrightarrow ad < bc$$
 
 其中 $b, d > 0$。
 
 **定理 3.1.1** (序关系的性质)
 
-1. 自反性：$x \leqqq x$
-2. 反对称性：$x \leqqq y \land y \leqqq x \rightarrow x = y$
-3. 传递性：$x \leqqq y \land y \leqqq z \rightarrow x \leqqq z$
+1. 自反性：$x \\leq x$
+2. 反对称性：$x \\leq y \land y \\leq x \rightarrow x = y$
+3. 传递性：$x \\leq y \land y \\leq z \rightarrow x \\leq z$
 4. 完全性：任意非空有上界的集合有最小上界
 
 **形式化证明**：

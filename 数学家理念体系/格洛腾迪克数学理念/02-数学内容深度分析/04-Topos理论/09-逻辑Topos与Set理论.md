@@ -300,7 +300,7 @@ Grothendieck的贡献：
    $$\text{逻辑Topos } \Rightarrow \Omega = 2, \quad \text{排中律成立}$$
 
 9. **内部集合论与外部集合论**：
-   $$\text{内部集合论（在 $\mathcal{E}$ 中）} \leqqqqqqftrightarrow \text{外部集合论（元理论）}$$
+   $$\text{内部集合论（在 $\mathcal{E}$ 中）} \\\leftrightarrow \text{外部集合论（元理论）}$$
 
 10. **Topos与集合论**：
     $$\text{Topos理论提供集合论的范畴论替代，更灵活的基础}$$

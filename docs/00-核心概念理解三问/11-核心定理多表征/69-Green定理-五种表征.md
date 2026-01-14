@@ -26,6 +26,7 @@
 $$\oint_C (P\,dx + Q\,dy) = \iint_D \leqft(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA$$
 
 其中：
+
 - 左边是沿曲线 $C$ 的**线积分**（逆时针方向）
 - 右边是区域 $D$ 上的**二重积分**
 - $\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}$ 是向量场 $\mathbf{F} = (P, Q)$ 的**旋度**（在2D中）
@@ -54,7 +55,7 @@ $$\text{Area}(D) = \frac{1}{2}\oint_C (-y\,dx + x\,dy)$$
 边界积分 = 内部积分
 
     ∮_C (P dx + Q dy) = ∬_D (∂Q/∂x - ∂P/∂y) dA
-    
+
 几何意义：
 - 左边：沿边界C的"环流"
 - 右边：区域D内"旋度"的总和
@@ -71,7 +72,7 @@ $$\text{Area}(D) = \frac{1}{2}\oint_C (-y\,dx + x\,dy)$$
   ↻ ● ↻  ← 旋度 > 0（逆时针旋转）
    ↻ ↻
     ↻
-    
+
 无旋向量场 F = (x, y)
     ↑
   ← ● →  ← 旋度 = 0（无旋转）
@@ -111,6 +112,7 @@ $$\oint_{C_1} - \oint_{C_2} = \iint_D (\nabla \times \mathbf{F}) \cdot \mathbf{k
 ### 3.2 计算类比
 
 **类比**：Green定理类似于：
+
 - **微积分基本定理**：边界值 = 内部导数的积分
 - **散度定理**：边界通量 = 内部散度的积分（3D版本）
 
@@ -124,17 +126,17 @@ $$\oint_{C_1} - \oint_{C_2} = \iint_D (\nabla \times \mathbf{F}) \cdot \mathbf{k
 import numpy as np
 from scipy.integrate import dblquad, quad
 
-def green_theorem_verify(P_func, Q_func, dQ_dx_func, dP_dy_func, 
+def green_theorem_verify(P_func, Q_func, dQ_dx_func, dP_dy_func,
                           C_param, D_bounds):
     """
     数值验证Green定理
-    
+
     参数:
         P_func, Q_func: 向量场分量
         dQ_dx_func, dP_dy_func: 偏导数
         C_param: 曲线参数化 (x(t), y(t)), t in [0, 1]
         D_bounds: 区域边界函数 [x_min(y), x_max(y), y_min, y_max]
-    
+
     返回:
         (line_integral, area_integral, error): 线积分、面积分、误差
     """
@@ -143,20 +145,20 @@ def green_theorem_verify(P_func, Q_func, dQ_dx_func, dP_dy_func,
         x, y = C_param(t)
         dx_dt, dy_dt = C_param_derivative(t)
         return P_func(x, y) * dx_dt + Q_func(x, y) * dy_dt
-    
+
     line_integral, _ = quad(integrand_line, 0, 1)
-    
+
     # 计算面积分 ∬_D (∂Q/∂x - ∂P/∂y) dA
     def integrand_area(x, y):
         return dQ_dx_func(x, y) - dP_dy_func(x, y)
-    
+
     area_integral, _ = dblquad(
         integrand_area,
         D_bounds[2], D_bounds[3],  # y范围
         lambda y: D_bounds[0](y),   # x下界
         lambda y: D_bounds[1](y)    # x上界
     )
-    
+
     error = abs(line_integral - area_integral)
     return line_integral, area_integral, error
 
@@ -166,12 +168,12 @@ def example_green():
     def Q(x, y): return x
     def dQ_dx(x, y): return 1
     def dP_dy(x, y): return -1
-    
+
     # 单位圆参数化
     def circle_param(t):
         theta = 2 * np.pi * t
         return (np.cos(theta), np.sin(theta))
-    
+
     # 计算：∮_C (-y dx + x dy) = ∬_D (1 - (-1)) dA = 2π
     # 线积分 = 2π，面积分 = 2π，验证通过
 ```
@@ -181,11 +183,11 @@ def example_green():
 ```python
 from sympy import symbols, integrate, diff, simplify
 
-def green_theorem_symbolic(P_expr, Q_expr, x_var, y_var, 
+def green_theorem_symbolic(P_expr, Q_expr, x_var, y_var,
                            C_param_x, C_param_y, t_var, t_range):
     """
     符号化计算Green定理
-    
+
     参数:
         P_expr, Q_expr: P和Q的符号表达式
         C_param_x, C_param_y: 曲线的参数化
@@ -193,27 +195,27 @@ def green_theorem_symbolic(P_expr, Q_expr, x_var, y_var,
         t_range: 参数范围 (t_min, t_max)
     """
     x, y, t = symbols('x y t')
-    
+
     # 计算线积分
     dx_dt = diff(C_param_x, t)
     dy_dt = diff(C_param_y, t)
-    
+
     P_sub = P_expr.subs([(x, C_param_x), (y, C_param_y)])
     Q_sub = Q_expr.subs([(x, C_param_x), (y, C_param_y)])
-    
+
     line_integral = integrate(
         P_sub * dx_dt + Q_sub * dy_dt,
         (t, t_range[0], t_range[1])
     )
-    
+
     # 计算面积分
     dQ_dx = diff(Q_expr, x_var)
     dP_dy = diff(P_expr, y_var)
     curl = dQ_dx - dP_dy
-    
+
     # 面积分需要区域D的边界（简化处理）
     area_integral = integrate(integrate(curl, x_var), y_var)
-    
+
     return simplify(line_integral), simplify(area_integral)
 ```
 
@@ -223,11 +225,11 @@ def green_theorem_symbolic(P_expr, Q_expr, x_var, y_var,
 def area_by_green_theorem(C_param, t_range):
     """
     使用Green定理计算区域面积
-    
+
     参数:
         C_param: 曲线参数化 (x(t), y(t))
         t_range: 参数范围
-    
+
     返回:
         area: 区域面积
     """
@@ -236,7 +238,7 @@ def area_by_green_theorem(C_param, t_range):
         x, y = C_param(t)
         dx_dt, dy_dt = C_param_derivative(t)
         return (-y/2) * dx_dt + (x/2) * dy_dt
-    
+
     area, _ = quad(integrand, t_range[0], t_range[1])
     return abs(area)
 
@@ -261,6 +263,7 @@ def ellipse_area(a, b):
 $$\int_{\partial M} \omega = \int_M d\omega$$
 
 对于2维情况：
+
 - $M = D$（2维区域）
 - $\partial M = C$（1维边界）
 - $\omega = P\,dx + Q\,dy$（1形式）
@@ -278,6 +281,7 @@ $$\int_{\partial D} \omega = \int_D d\omega$$
 ### 5.3 同调论视角
 
 在**de Rham上同调**中，Green定理建立了：
+
 - **边界算子** $\partial$ 与**外微分算子** $d$ 的对偶性
 - **链复形**与**上链复形**的对偶
 
@@ -302,6 +306,7 @@ $$\text{Area} = \frac{1}{2}\int_0^{2\pi} (-b\sin t)(-a\sin t) + (a\cos t)(b\cos 
 **例子2**：计算 $\oint_C (x^2 + y^2)\,dx + (x - y)\,dy$，其中 $C$ 是单位圆
 
 使用Green定理：
+
 - $P = x^2 + y^2$，$Q = x - y$
 - $\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 1 - (-1) = 2$
 
@@ -328,6 +333,7 @@ $$\oint_C = \iint_D 2 \, dA = 2\pi$$
 ### 7.2 现代意义
 
 Green定理是：
+
 - 向量分析的基础
 - 偏微分方程理论的重要工具
 - 计算几何中的应用（面积计算）
