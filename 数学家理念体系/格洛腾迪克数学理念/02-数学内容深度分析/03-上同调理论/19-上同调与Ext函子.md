@@ -1,4 +1,4 @@
-# 上同调与Ext函子：同调代数与几何的连接
+﻿# 上同调与Ext函子：同调代数与几何的连接
 
 
 ## 📋 目录
@@ -266,7 +266,7 @@ Grothendieck的贡献：
    $$\text{Ext}^1(\mathcal{F}, \mathcal{F}) \text{ 参数化 $\mathcal{F}$ 的一阶形变}$$
 
 10. **Ext与上同调维数**：
-    $$\text{proj dim}(\mathcal{F}) = \sup\{i : \text{Ext}^i(\mathcal{F}, \mathcal{G}) \neq 0 \text{ 对某个 $\mathcal{G}$}\}$$
+    $$\text{proj dim}(\mathcal{F}) = \sup\{i : \text{Ext}^i(\mathcal{F}, \mathcal{G}) \neqqqqq 0 \text{ 对某个 $\mathcal{G}$}\}$$
 
 ---
 

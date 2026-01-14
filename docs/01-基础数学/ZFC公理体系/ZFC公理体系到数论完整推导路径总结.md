@@ -1,13 +1,12 @@
 ﻿# ZFC公理体系到数论完整推导路径总结
 
-# ZFC公理体系到数论完整推导路径总结
-
 **创建日期**: 2025年11月12日
 **最后更新**: 2025年12月26日
 **版本**: v1.0
 **状态**: 完成
 
 ---
+
 ## 目录
 
 - [ZFC公理体系到数论完整推导路径总结](#zfc公理体系到数论完整推导路径总结)
@@ -104,7 +103,7 @@
 
 - **加法**：递归定义
 - **乘法**：递归定义
-- **序关系**：$m < n \leftrightarrow m \in n$
+- **序关系**：$m < n \leqftrightarrow m \in n$
 
 #### 2.3 皮亚诺公理
 
@@ -142,14 +141,14 @@
 
 #### 4.1 整数定义
 
-- **等价关系**：$(a, b) \sim (c, d) \leftrightarrow a + d = b + c$
+- **等价关系**：$(a, b) \sim (c, d) \leqftrightarrow a + d = b + c$
 - **表示**：$n = [(n, 0)]$, $-n = [(0, n)]$, $0 = [(0, 0)]$
 
 #### 4.2 整数运算
 
 - **加法**：$[(a, b)] + [(c, d)] = [(a + c, b + d)]$
 - **乘法**：$[(a, b)] \cdot [(c, d)] = [(ac + bd, ad + bc)]$
-- **序关系**：$[(a, b)] < [(c, d)] \leftrightarrow a + d < b + c$
+- **序关系**：$[(a, b)] < [(c, d)] \leqftrightarrow a + d < b + c$
 
 #### 4.3 整数性质
 
@@ -162,14 +161,14 @@
 
 #### 5.1 有理数定义
 
-- **等价关系**：$(a, b) \sim (c, d) \leftrightarrow ad = bc$
+- **等价关系**：$(a, b) \sim (c, d) \leqftrightarrow ad = bc$
 - **表示**：$\frac{a}{b} = [(a, b)]$
 
 #### 5.2 有理数运算
 
 - **加法**：$\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}$
 - **乘法**：$\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$
-- **序关系**：$\frac{a}{b} < \frac{c}{d} \leftrightarrow ad < bc$
+- **序关系**：$\frac{a}{b} < \frac{c}{d} \leqftrightarrow ad < bc$
 
 #### 5.3 有理数性质
 
@@ -184,7 +183,7 @@
 
 - **定义**：$(A, B)$ 是有理数的分割
 - **性质**：$A \cup B = \mathbb{Q}$, $A \cap B = \emptyset$
-- **序关系**：$(A, B) < (C, D) \leftrightarrow A \subsetneq C$
+- **序关系**：$(A, B) < (C, D) \leqftrightarrow A \subset C$
 
 #### 6.2 柯西序列方法
 
@@ -228,7 +227,7 @@
 
 #### 8.1 整除理论
 
-- **整除关系**：$a \mid b \leftrightarrow \exists c(b = a \cdot c)$
+- **整除关系**：$a \mid b \leqftrightarrow \exists c(b = a \cdot c)$
 - **最大公约数**：$\gcd(a, b)$
 - **欧几里得算法**：计算最大公约数
 
@@ -240,7 +239,7 @@
 
 #### 8.3 同余理论
 
-- **同余关系**：$a \equiv b \pmod{m} \leftrightarrow m \mid (a - b)$
+- **同余关系**：$a \equiv b \pmod{m} \leqftrightarrow m \mid (a - b)$
 - **同余运算**：加法、减法、乘法
 - **中国剩余定理**：同余方程组的解
 

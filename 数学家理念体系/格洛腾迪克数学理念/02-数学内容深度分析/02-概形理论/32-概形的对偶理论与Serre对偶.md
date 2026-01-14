@@ -1,4 +1,4 @@
-# 概形的对偶理论与Serre对偶：几何对偶的高级形式
+﻿# 概形的对偶理论与Serre对偶：几何对偶的高级形式
 
 
 ## 📋 目录
@@ -263,7 +263,7 @@ Grothendieck的贡献：
    $$(\mathcal{F} \otimes \mathcal{G})^\vee \cong \mathcal{F}^\vee \otimes \mathcal{G}^\vee \text{（局部自由）}$$
 
 10. **对偶与上同调维数**：
-    $$\text{cd}(X) = n \Rightarrow H^n(X, \omega_X) \neq 0$$
+    $$\text{cd}(X) = n \Rightarrow H^n(X, \omega_X) \neqqqqq 0$$
 
 ---
 

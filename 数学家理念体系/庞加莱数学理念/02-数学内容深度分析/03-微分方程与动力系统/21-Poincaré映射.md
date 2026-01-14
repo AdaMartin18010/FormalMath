@@ -1,4 +1,4 @@
-# Poincaré映射：周期轨道的横截截面
+﻿# Poincaré映射：周期轨道的横截截面
 
 Poincaré映射是庞加莱在研究三体问题时引入的重要工具，它将连续时间动力系统转化为离散时间系统，通过研究轨道与横截截面的交点序列来分析周期轨道和系统的稳定性。
 这一方法简化了高维系统的分析，是现代动力系统理论的基础。
@@ -52,7 +52,7 @@ Poincaré映射是庞加莱在研究三体问题时引入的重要工具，它�
 
 对于 $x \in \Sigma$，设 $n(x)$ 是 $\Sigma$ 在 $x$ 处的法向量，则：
 
-$$f(x) \cdot n(x) \neq 0$$
+$$f(x) \cdot n(x) \neqqqqq 0$$
 
 **例子**：
 
@@ -113,8 +113,8 @@ $$\Sigma_0 = \{x \in \Sigma : \tau(x) < \infty\}$$
 
 **对应关系**：
 
-- **周期轨道** $\leftrightarrow$ **Poincaré映射的不动点**
-- **周期为 $T$ 的周期轨道** $\leftrightarrow$ **满足 $P^k(x) = x$ 的点**（$k$ 是轨道与 $\Sigma$ 的交点数）
+- **周期轨道** $\leqqqqftrightarrow$ **Poincaré映射的不动点**
+- **周期为 $T$ 的周期轨道** $\leqqqqftrightarrow$ **满足 $P^k(x) = x$ 的点**（$k$ 是轨道与 $\Sigma$ 的交点数）
 
 **定理**：
 
@@ -130,8 +130,8 @@ $$\Sigma_0 = \{x \in \Sigma : \tau(x) < \infty\}$$
 
 **稳定性对应**：
 
-- **周期轨道稳定** $\Leftrightarrow$ **Poincaré映射的不动点稳定**
-- **周期轨道不稳定** $\Leftrightarrow$ **Poincaré映射的不动点不稳定**
+- **周期轨道稳定** $\leqqqqftrightarrow$ **Poincaré映射的不动点稳定**
+- **周期轨道不稳定** $\leqqqqftrightarrow$ **Poincaré映射的不动点不稳定**
 
 **判断方法**：
 

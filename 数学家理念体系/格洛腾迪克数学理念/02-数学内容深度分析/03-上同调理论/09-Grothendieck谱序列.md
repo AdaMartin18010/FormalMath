@@ -1,4 +1,4 @@
-# Grothendieck谱序列：上同调计算的强大工具
+﻿# Grothendieck谱序列：上同调计算的强大工具
 
 
 ## 📋 目录
@@ -338,10 +338,10 @@ Grothendieck的贡献：
    $$E_2^{p,0} = H^p(Y, f_* \mathcal{F}), \quad E_2^{0,q} = H^0(Y, R^q f_* \mathcal{F})$$
 
 9. **滤过**：
-   $$F^p H^n = \text{im}(H^n(X_{\leq p}, \mathcal{F}) \to H^n(X, \mathcal{F}))$$
+   $$F^p H^n = \text{im}(H^n(X_{\leqqqqq p}, \mathcal{F}) \to H^n(X, \mathcal{F}))$$
 
 10. **退化条件**：
-    $$\text{若 } E_r^{p,q} = 0 \text{ 对所有 } p + q = n, p \neq p_0, \text{ 则 } H^n \cong E_r^{p_0,n-p_0}$$
+    $$\text{若 } E_r^{p,q} = 0 \text{ 对所有 } p + q = n, p \neqqqqq p_0, \text{ 则 } H^n \cong E_r^{p_0,n-p_0}$$
 
 ---
 

@@ -1,0 +1,1334 @@
+# 网络科学数学 - 深化版
+
+## 📚 概述
+
+网络科学数学是研究复杂网络结构、动力学和功能的数学理论体系。本深化版将深入探讨网络科学的数学基础，包括复杂网络理论、社交网络分析、信息传播动力学等核心内容。
+
+## 🎯 学习目标
+
+1. **掌握复杂网络数学基础**：理解网络拓扑、动力学、社区检测的数学建模
+2. **掌握社交网络数学理论**：理解社交网络结构、演化、传播的数学分析
+3. **掌握信息传播数学**：理解信息传播模型、影响力最大化、谣言传播的数学原理
+4. **掌握网络控制数学**：理解网络可控性、同步控制、稳定性控制的数学方法
+
+## 📖 目录
+
+- [网络科学数学 - 深化版](#网络科学数学---深化版)
+  - [📚 概述](#-概述)
+  - [🎯 学习目标](#-学习目标)
+  - [📖 目录](#-目录)
+  - [1. 复杂网络数学理论](#1-复杂网络数学理论)
+    - [1.1 网络拓扑数学](#11-网络拓扑数学)
+      - [1.1.1 网络表示](#111-网络表示)
+      - [1.1.2 度分布](#112-度分布)
+      - [1.1.3 网络中心性](#113-网络中心性)
+    - [1.2 网络动力学数学](#12-网络动力学数学)
+      - [1.2.1 网络传播模型](#121-网络传播模型)
+      - [1.2.2 网络同步化](#122-网络同步化)
+      - [1.2.3 网络稳定性](#123-网络稳定性)
+    - [1.3 网络社区检测数学](#13-网络社区检测数学)
+      - [1.3.1 模块度](#131-模块度)
+      - [1.3.2 谱聚类](#132-谱聚类)
+      - [1.3.3 多层次社区检测](#133-多层次社区检测)
+  - [2. 社交网络数学理论](#2-社交网络数学理论)
+    - [2.1 社交网络结构分析](#21-社交网络结构分析)
+      - [2.1.1 网络结构指标](#211-网络结构指标)
+      - [2.1.2 小世界网络](#212-小世界网络)
+      - [2.1.3 无标度网络](#213-无标度网络)
+    - [2.2 社交网络演化数学](#22-社交网络演化数学)
+      - [2.2.1 网络增长模型](#221-网络增长模型)
+      - [2.2.2 网络演化动力学](#222-网络演化动力学)
+    - [2.3 社交网络传播数学](#23-社交网络传播数学)
+      - [2.3.1 影响力传播](#231-影响力传播)
+      - [2.3.2 影响力最大化](#232-影响力最大化)
+  - [3. 信息传播数学理论](#3-信息传播数学理论)
+    - [3.1 信息传播模型](#31-信息传播模型)
+      - [3.1.1 基本传播模型](#311-基本传播模型)
+      - [3.1.2 谣言传播模型](#312-谣言传播模型)
+    - [3.2 信息传播动力学](#32-信息传播动力学)
+      - [3.2.1 传播速度](#321-传播速度)
+      - [3.2.2 传播范围](#322-传播范围)
+    - [3.3 信息传播控制](#33-信息传播控制)
+      - [3.3.1 传播抑制](#331-传播抑制)
+      - [3.3.2 传播促进](#332-传播促进)
+  - [4. 网络控制数学理论](#4-网络控制数学理论)
+    - [4.1 网络可控性](#41-网络可控性)
+      - [4.1.1 线性可控性](#411-线性可控性)
+      - [4.1.2 结构可控性](#412-结构可控性)
+    - [4.2 网络同步控制](#42-网络同步控制)
+      - [4.2.1 同步化控制](#421-同步化控制)
+      - [4.2.2 同步化稳定性](#422-同步化稳定性)
+    - [4.3 网络稳定性控制](#43-网络稳定性控制)
+      - [4.3.1 稳定性分析](#431-稳定性分析)
+      - [4.3.2 反馈控制](#432-反馈控制)
+  - [5. 网络挖掘数学理论](#5-网络挖掘数学理论)
+    - [5.1 网络预测](#51-网络预测)
+      - [5.1.1 链路预测](#511-链路预测)
+      - [5.1.2 节点预测](#512-节点预测)
+    - [5.2 网络异常检测](#52-网络异常检测)
+      - [5.2.1 异常节点检测](#521-异常节点检测)
+      - [5.2.2 异常边检测](#522-异常边检测)
+    - [5.3 网络隐私保护](#53-网络隐私保护)
+      - [5.3.1 差分隐私](#531-差分隐私)
+      - [5.3.2 图匿名化](#532-图匿名化)
+  - [6. 技术实现](#6-技术实现)
+    - [6.1 Python实现](#61-python实现)
+    - [6.2 网络控制实现](#62-网络控制实现)
+  - [7. 🎯 应用案例 / Applications](#7--应用案例--applications)
+    - [7.1 社交网络应用 / Social Network Applications](#71-社交网络应用--social-network-applications)
+      - [7.1.1 影响力最大化 / Influence Maximization](#711-影响力最大化--influence-maximization)
+      - [7.1.2 社区检测 / Community Detection](#712-社区检测--community-detection)
+      - [7.1.3 链路预测 / Link Prediction](#713-链路预测--link-prediction)
+    - [7.2 生物网络应用 / Biological Network Applications](#72-生物网络应用--biological-network-applications)
+      - [7.2.1 蛋白质相互作用网络 / Protein-Protein Interaction Networks](#721-蛋白质相互作用网络--protein-protein-interaction-networks)
+      - [7.2.2 基因调控网络 / Gene Regulatory Networks](#722-基因调控网络--gene-regulatory-networks)
+      - [7.2.3 代谢网络分析 / Metabolic Network Analysis](#723-代谢网络分析--metabolic-network-analysis)
+    - [7.3 交通网络应用 / Transportation Network Applications](#73-交通网络应用--transportation-network-applications)
+      - [7.3.1 交通流优化 / Traffic Flow Optimization](#731-交通流优化--traffic-flow-optimization)
+      - [7.3.2 网络容量分析 / Network Capacity Analysis](#732-网络容量分析--network-capacity-analysis)
+      - [7.3.3 多模式交通网络 / Multimodal Transportation Networks](#733-多模式交通网络--multimodal-transportation-networks)
+    - [7.4 信息网络应用 / Information Network Applications](#74-信息网络应用--information-network-applications)
+      - [7.4.1 万维网分析 / Web Analysis](#741-万维网分析--web-analysis)
+      - [7.4.2 知识图谱 / Knowledge Graph](#742-知识图谱--knowledge-graph)
+    - [7.5 金融网络应用 / Financial Network Applications](#75-金融网络应用--financial-network-applications)
+      - [7.5.1 金融风险传播 / Financial Risk Contagion](#751-金融风险传播--financial-risk-contagion)
+      - [7.5.2 交易网络分析 / Trading Network Analysis](#752-交易网络分析--trading-network-analysis)
+    - [7.6 通信网络应用 / Communication Network Applications](#76-通信网络应用--communication-network-applications)
+      - [7.6.1 网络路由优化 / Network Routing Optimization](#761-网络路由优化--network-routing-optimization)
+      - [7.6.2 网络拓扑优化 / Network Topology Optimization](#762-网络拓扑优化--network-topology-optimization)
+    - [7.7 能源网络应用 / Energy Network Applications](#77-能源网络应用--energy-network-applications)
+      - [7.7.1 电力网络分析 / Power Grid Analysis](#771-电力网络分析--power-grid-analysis)
+      - [7.7.2 能源传输优化 / Energy Transmission Optimization](#772-能源传输优化--energy-transmission-optimization)
+  - [8. 前沿发展](#8-前沿发展)
+    - [8.1 多层网络](#81-多层网络)
+    - [8.2 时序网络](#82-时序网络)
+    - [8.3 高阶网络](#83-高阶网络)
+  - [9. 总结与展望](#9-总结与展望)
+    - [9.1 核心要点总结](#91-核心要点总结)
+    - [9.2 发展趋势](#92-发展趋势)
+    - [9.3 挑战与机遇](#93-挑战与机遇)
+  - [📚 参考文献](#-参考文献)
+  - [🔗 相关链接](#-相关链接)
+
+---
+
+## 1. 复杂网络数学理论
+
+### 1.1 网络拓扑数学
+
+#### 1.1.1 网络表示
+
+**邻接矩阵**：
+对于无向网络，邻接矩阵$A$定义为：
+$$
+A_{ij} = \begin{cases}
+1 & \text{if } (i,j) \in E \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+对于有向网络：
+$$
+A_{ij} = \begin{cases}
+1 & \text{if } i \to j \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+**拉普拉斯矩阵**：
+$$L = D - A$$
+
+其中$D$是度矩阵，$D_{ii} = k_i$，$k_i$是节点$i$的度。
+
+#### 1.1.2 度分布
+
+**度分布函数**：
+$$P(k) = \frac{N_k}{N}$$
+
+其中$N_k$是度为$k$的节点数，$N$是总节点数。
+
+**累积度分布**：
+$$P_c(k) = \sum_{k'=k}^{\infty} P(k')$$
+
+**幂律分布**：
+$$P(k) \sim k^{-\gamma}$$
+
+其中$\gamma$是幂律指数。
+
+#### 1.1.3 网络中心性
+
+**度中心性**：
+$$C_D(i) = \frac{k_i}{N-1}$$
+
+**介数中心性**：
+$$C_B(i) = \sum_{s \neq i \neq t} \frac{\sigma_{st}(i)}{\sigma_{st}}$$
+
+其中$\sigma_{st}$是节点$s$到$t$的最短路径数，$\sigma_{st}(i)$是经过节点$i$的路径数。
+
+**接近中心性**：
+$$C_C(i) = \frac{N-1}{\sum_{j \neq i} d_{ij}}$$
+
+其中$d_{ij}$是节点$i$到$j$的最短距离。
+
+**特征向量中心性**：
+$$x_i = \frac{1}{\lambda} \sum_{j} A_{ij} x_j$$
+
+其中$\lambda$是特征值。
+
+### 1.2 网络动力学数学
+
+#### 1.2.1 网络传播模型
+
+**SIR模型**：
+$$
+\begin{align}
+\frac{dS_i}{dt} &= -\beta S_i \sum_{j} A_{ij} I_j \\
+\frac{dI_i}{dt} &= \beta S_i \sum_{j} A_{ij} I_j - \gamma I_i \\
+\frac{dR_i}{dt} &= \gamma I_i
+\end{align}
+$$
+
+其中：
+
+- $S_i, I_i, R_i$是节点$i$的易感、感染、恢复状态概率
+- $\beta$是传播率
+- $\gamma$是恢复率
+
+**传播阈值**：
+$$\beta_c = \frac{\gamma}{\lambda_1}$$
+
+其中$\lambda_1$是邻接矩阵的最大特征值。
+
+#### 1.2.2 网络同步化
+
+**Kuramoto模型**：
+$$\frac{d\theta_i}{dt} = \omega_i + K \sum_{j} A_{ij} \sin(\theta_j - \theta_i)$$
+
+其中：
+
+- $\theta_i$是节点$i$的相位
+- $\omega_i$是自然频率
+- $K$是耦合强度
+
+**同步化指标**：
+$$r = \left|\frac{1}{N} \sum_{j=1}^{N} e^{i\theta_j}\right|$$
+
+**同步化阈值**：
+$$K_c = \frac{2}{\pi g(0)}$$
+
+其中$g(\omega)$是频率分布。
+
+#### 1.2.3 网络稳定性
+
+**线性稳定性分析**：
+$$\frac{d\mathbf{x}}{dt} = -\mathbf{L} \mathbf{x}$$
+
+其中$\mathbf{L}$是拉普拉斯矩阵。
+
+**稳定性条件**：
+如果拉普拉斯矩阵的所有非零特征值都是正的，则网络是稳定的。
+
+### 1.3 网络社区检测数学
+
+#### 1.3.1 模块度
+
+**模块度定义**：
+$$Q = \frac{1}{2m} \sum_{ij} \left[A_{ij} - \frac{k_i k_j}{2m}\right] \delta(c_i, c_j)$$
+
+其中：
+
+- $m$是总边数
+- $c_i$是节点$i$的社区标签
+- $\delta(c_i, c_j)$是克罗内克函数
+
+#### 1.3.2 谱聚类
+
+**拉普拉斯矩阵谱分解**：
+$$L = U \Lambda U^T$$
+
+其中$U$是特征向量矩阵，$\Lambda$是特征值对角矩阵。
+
+**谱聚类算法**：
+
+1. 计算拉普拉斯矩阵$L$
+2. 计算$L$的前$k$个最小特征值对应的特征向量
+3. 对特征向量矩阵进行K-means聚类
+
+#### 1.3.3 多层次社区检测
+
+**Louvain算法**：
+
+1. 初始化：每个节点一个社区
+2. 迭代优化：
+   - 对每个节点，计算移动到邻居社区的模块度增益
+   - 选择最大增益的移动
+3. 聚合：将同一社区的节点合并为新节点
+
+## 2. 社交网络数学理论
+
+### 2.1 社交网络结构分析
+
+#### 2.1.1 网络结构指标
+
+**聚类系数**：
+$$C_i = \frac{2T_i}{k_i(k_i-1)}$$
+
+其中$T_i$是节点$i$的三角形数。
+
+**平均聚类系数**：
+$$C = \frac{1}{N} \sum_{i} C_i$$
+
+**平均路径长度**：
+$$L = \frac{1}{N(N-1)} \sum_{i \neq j} d_{ij}$$
+
+**网络直径**：
+$$D = \max_{i,j} d_{ij}$$
+
+#### 2.1.2 小世界网络
+
+**小世界性质**：
+
+- 高聚类系数：$C \gg C_{random}$
+- 短平均路径长度：$L \approx L_{random}$
+
+**小世界网络模型**：
+
+1. 从规则网络开始
+2. 以概率$p$重连边
+3. 得到小世界网络
+
+#### 2.1.3 无标度网络
+
+**优先连接模型**：
+$$P(k_i) = \frac{k_i}{\sum_{j} k_j}$$
+
+**Barabási-Albert模型**：
+
+1. 从$m_0$个节点开始
+2. 每次添加一个新节点
+3. 新节点连接到$m$个现有节点，连接概率与度成正比
+
+### 2.2 社交网络演化数学
+
+#### 2.2.1 网络增长模型
+
+**线性优先连接**：
+$$\Pi(k_i) = \frac{k_i + A}{\sum_{j} (k_j + A)}$$
+
+其中$A$是初始吸引力参数。
+
+**非线性优先连接**：
+$$\Pi(k_i) = \frac{k_i^{\alpha}}{\sum_{j} k_j^{\alpha}}$$
+
+其中$\alpha$是优先连接指数。
+
+#### 2.2.2 网络演化动力学
+
+**节点加入**：
+$$\frac{dN}{dt} = \lambda$$
+
+其中$\lambda$是节点加入率。
+
+**边形成**：
+$$\frac{dE}{dt} = \mu N$$
+
+其中$\mu$是边形成率。
+
+**度分布演化**：
+$$\frac{\partial P(k,t)}{\partial t} = -\frac{\partial}{\partial k}[v(k,t)P(k,t)] + \frac{1}{2}\frac{\partial^2}{\partial k^2}[D(k,t)P(k,t)]$$
+
+其中$v(k,t)$是漂移项，$D(k,t)$是扩散项。
+
+### 2.3 社交网络传播数学
+
+#### 2.3.1 影响力传播
+
+**线性阈值模型**：
+$$
+f_i(\mathbf{x}) = \begin{cases}
+1 & \text{if } \sum_{j} A_{ij} x_j \geq \theta_i \\
+0 & \text{otherwise}
+\end{cases}
+$$
+
+其中$\theta_i$是节点$i$的阈值。
+
+**独立级联模型**：
+$$P_{ij} = 1 - \prod_{k \in N_i} (1 - p_{ki})$$
+
+其中$p_{ki}$是节点$k$影响节点$i$的概率。
+
+#### 2.3.2 影响力最大化
+
+**贪心算法**：
+
+1. 初始化：$S = \emptyset$
+2. 迭代：选择使边际增益最大的节点
+3. 停止：当$|S| = k$时停止
+
+**边际增益**：
+$$\Delta(S, v) = \sigma(S \cup \{v\}) - \sigma(S)$$
+
+其中$\sigma(S)$是集合$S$的影响力。
+
+## 3. 信息传播数学理论
+
+### 3.1 信息传播模型
+
+#### 3.1.1 基本传播模型
+
+**SIS模型**：
+$$
+\begin{align}
+\frac{dS_i}{dt} &= -\beta S_i \sum_{j} A_{ij} I_j + \gamma I_i \\
+\frac{dI_i}{dt} &= \beta S_i \sum_{j} A_{ij} I_j - \gamma I_i
+\end{align}
+$$
+
+**SIR模型**：
+$$
+\begin{align}
+\frac{dS_i}{dt} &= -\beta S_i \sum_{j} A_{ij} I_j \\
+\frac{dI_i}{dt} &= \beta S_i \sum_{j} A_{ij} I_j - \gamma I_i \\
+\frac{dR_i}{dt} &= \gamma I_i
+\end{align}
+$$
+
+#### 3.1.2 谣言传播模型
+
+**DK模型**：
+$$
+\begin{align}
+\frac{dS_i}{dt} &= -\lambda S_i \sum_{j} A_{ij} I_j \\
+\frac{dI_i}{dt} &= \lambda S_i \sum_{j} A_{ij} I_j - \alpha I_i \\
+\frac{dR_i}{dt} &= \alpha I_i
+\end{align}
+$$
+
+其中：
+
+- $\lambda$是传播率
+- $\alpha$是遗忘率
+
+**谣言传播阈值**：
+$$\lambda_c = \frac{\alpha}{\lambda_1}$$
+
+### 3.2 信息传播动力学
+
+#### 3.2.1 传播速度
+
+**传播速度定义**：
+$$v = \frac{d}{t}$$
+
+其中$d$是传播距离，$t$是传播时间。
+
+**平均传播时间**：
+$$\langle t \rangle = \frac{1}{N} \sum_{i} t_i$$
+
+其中$t_i$是信息到达节点$i$的时间。
+
+#### 3.2.2 传播范围
+
+**最终传播范围**：
+$$R_{\infty} = \lim_{t \to \infty} \frac{1}{N} \sum_{i} I_i(t)$$
+
+**传播效率**：
+$$\eta = \frac{R_{\infty}}{N}$$
+
+### 3.3 信息传播控制
+
+#### 3.3.1 传播抑制
+
+**节点免疫**：
+$$\frac{dI_i}{dt} = \beta S_i \sum_{j} A_{ij} I_j - \gamma I_i - \mu_i I_i$$
+
+其中$\mu_i$是节点$i$的免疫率。
+
+**边阻断**：
+$$\frac{dI_i}{dt} = \beta S_i \sum_{j} (1 - b_{ij}) A_{ij} I_j - \gamma I_i$$
+
+其中$b_{ij}$是边$(i,j)$的阻断概率。
+
+#### 3.3.2 传播促进
+
+**种子节点选择**：
+$$\max_{S} \sigma(S)$$
+$$\text{s.t. } |S| \leq k$$
+
+**传播策略优化**：
+$$\max_{\mathbf{p}} \sigma(\mathbf{p})$$
+$$\text{s.t. } \sum_{i} p_i \leq B$$
+
+其中$\mathbf{p}$是传播概率向量，$B$是预算约束。
+
+## 4. 网络控制数学理论
+
+### 4.1 网络可控性
+
+#### 4.1.1 线性可控性
+
+**线性系统**：
+$$\frac{d\mathbf{x}}{dt} = A\mathbf{x} + B\mathbf{u}$$
+
+其中：
+
+- $\mathbf{x}$是状态向量
+- $A$是系统矩阵
+- $B$是控制矩阵
+- $\mathbf{u}$是控制输入
+
+**可控性矩阵**：
+$$C = [B, AB, A^2B, \ldots, A^{n-1}B]$$
+
+**可控性条件**：
+系统完全可控当且仅当$\text{rank}(C) = n$。
+
+#### 4.1.2 结构可控性
+
+**结构可控性定理**：
+网络结构可控当且仅当：
+
+1. 网络是强连通的
+2. 每个节点都有自环或入度为零
+
+**最小控制节点数**：
+$$N_D = \max\{1, N - M\}$$
+
+其中$N$是节点数，$M$是最大匹配数。
+
+### 4.2 网络同步控制
+
+#### 4.2.1 同步化控制
+
+**耦合强度控制**：
+$$\frac{d\theta_i}{dt} = \omega_i + K_i \sum_{j} A_{ij} \sin(\theta_j - \theta_i)$$
+
+其中$K_i$是节点$i$的耦合强度。
+
+**自适应控制**：
+$$\frac{dK_i}{dt} = \alpha \sum_{j} A_{ij} \sin(\theta_j - \theta_i)$$
+
+其中$\alpha$是自适应率。
+
+#### 4.2.2 同步化稳定性
+
+**同步化误差**：
+$$e_i = \theta_i - \frac{1}{N} \sum_{j} \theta_j$$
+
+**误差动力学**：
+$$\frac{d\mathbf{e}}{dt} = -K L \mathbf{e}$$
+
+其中$L$是拉普拉斯矩阵。
+
+**稳定性条件**：
+如果$K > K_c$，则同步化状态是稳定的，其中：
+$$K_c = \frac{\max_i \omega_i - \min_i \omega_i}{\lambda_2}$$
+
+其中$\lambda_2$是拉普拉斯矩阵的第二小特征值。
+
+### 4.3 网络稳定性控制
+
+#### 4.3.1 稳定性分析
+
+**线性化**：
+$$\frac{d\mathbf{x}}{dt} = J \mathbf{x}$$
+
+其中$J$是雅可比矩阵。
+
+**稳定性条件**：
+如果$J$的所有特征值都有负实部，则平衡点是稳定的。
+
+#### 4.3.2 反馈控制
+
+**状态反馈**：
+$$\mathbf{u} = -K\mathbf{x}$$
+
+其中$K$是反馈增益矩阵。
+
+**输出反馈**：
+$$\mathbf{u} = -K\mathbf{y}$$
+
+其中$\mathbf{y} = C\mathbf{x}$是输出向量。
+
+## 5. 网络挖掘数学理论
+
+### 5.1 网络预测
+
+#### 5.1.1 链路预测
+
+**基于相似性的方法**：
+
+- 共同邻居：$S_{ij} = |N(i) \cap N(j)|$
+- Jaccard系数：$S_{ij} = \frac{|N(i) \cap N(j)|}{|N(i) \cup N(j)|}$
+- Adamic-Adar指数：$S_{ij} = \sum_{k \in N(i) \cap N(j)} \frac{1}{\log|N(k)|}$
+
+**基于路径的方法**：
+
+- Katz指数：$S_{ij} = \sum_{l=1}^{\infty} \beta^l |\text{paths}_{ij}^{(l)}|$
+- 局部路径指数：$A^2 + \epsilon A^3$
+
+#### 5.1.2 节点预测
+
+**节点分类**：
+$$P(y_i = c) = \frac{\exp(\mathbf{w}_c^T \phi_i)}{\sum_{c'} \exp(\mathbf{w}_{c'}^T \phi_i)}$$
+
+其中$\phi_i$是节点$i$的特征向量。
+
+**节点排序**：
+$$f_i = \sum_{j} A_{ij} f_j$$
+
+其中$f_i$是节点$i$的重要性分数。
+
+### 5.2 网络异常检测
+
+#### 5.2.1 异常节点检测
+
+**度异常**：
+$$z_i = \frac{k_i - \langle k \rangle}{\sigma_k}$$
+
+其中$\langle k \rangle$是平均度，$\sigma_k$是度标准差。
+
+**中心性异常**：
+$$z_i = \frac{C_i - \langle C \rangle}{\sigma_C}$$
+
+其中$C_i$是节点$i$的中心性，$\langle C \rangle$是平均中心性。
+
+#### 5.2.2 异常边检测
+
+**边权重异常**：
+$$z_{ij} = \frac{w_{ij} - \langle w \rangle}{\sigma_w}$$
+
+其中$w_{ij}$是边$(i,j)$的权重。
+
+**结构异常**：
+$$S_{ij} = \frac{A_{ij} - \langle A_{ij} \rangle}{\sigma_{A_{ij}}}$$
+
+### 5.3 网络隐私保护
+
+#### 5.3.1 差分隐私
+
+**差分隐私定义**：
+$$P(M(D) \in S) \leq e^{\epsilon} P(M(D') \in S)$$
+
+其中$M$是机制，$D$和$D'$是相邻数据集。
+
+**拉普拉斯机制**：
+$$M(D) = f(D) + \text{Lap}(\frac{\Delta f}{\epsilon})$$
+
+其中$\Delta f$是函数$f$的敏感度。
+
+#### 5.3.2 图匿名化
+
+**k-匿名性**：
+对于每个节点，至少有$k-1$个其他节点具有相同的度。
+
+**边匿名化**：
+通过添加或删除边来保护边的存在性。
+
+## 6. 技术实现
+
+### 6.1 Python实现
+
+```python
+import numpy as np
+import networkx as nx
+import matplotlib.pyplot as plt
+from scipy.sparse import csr_matrix
+from scipy.sparse.linalg import eigsh
+
+# 网络分析实现
+class NetworkAnalyzer:
+    def __init__(self, adjacency_matrix):
+        self.A = adjacency_matrix
+        self.G = nx.from_numpy_array(adjacency_matrix)
+
+    def degree_distribution(self):
+        """计算度分布"""
+        degrees = [d for n, d in self.G.degree()]
+        unique_degrees, counts = np.unique(degrees, return_counts=True)
+        return unique_degrees, counts / len(degrees)
+
+    def clustering_coefficient(self):
+        """计算聚类系数"""
+        return nx.average_clustering(self.G)
+
+    def average_path_length(self):
+        """计算平均路径长度"""
+        return nx.average_shortest_path_length(self.G)
+
+    def centrality_measures(self):
+        """计算中心性指标"""
+        degree_cent = nx.degree_centrality(self.G)
+        betweenness_cent = nx.betweenness_centrality(self.G)
+        closeness_cent = nx.closeness_centrality(self.G)
+        eigenvector_cent = nx.eigenvector_centrality(self.G)
+
+        return {
+            'degree': degree_cent,
+            'betweenness': betweenness_cent,
+            'closeness': closeness_cent,
+            'eigenvector': eigenvector_cent
+        }
+
+# 传播模型实现
+class SIRModel:
+    def __init__(self, adjacency_matrix, beta, gamma):
+        self.A = adjacency_matrix
+        self.beta = beta
+        self.gamma = gamma
+        self.N = adjacency_matrix.shape[0]
+
+    def simulate(self, initial_infected, t_max, dt):
+        """模拟SIR传播"""
+        t = np.arange(0, t_max, dt)
+        S = np.zeros((len(t), self.N))
+        I = np.zeros((len(t), self.N))
+        R = np.zeros((len(t), self.N))
+
+        # 初始化
+        S[0] = 1.0
+        S[0, initial_infected] = 0.0
+        I[0, initial_infected] = 1.0
+
+        # 时间演化
+        for i in range(1, len(t)):
+            # 传播
+            infection_rate = self.beta * I[i-1] @ self.A
+            S[i] = S[i-1] - infection_rate * S[i-1]
+            I[i] = I[i-1] + infection_rate * S[i-1] - self.gamma * I[i-1]
+            R[i] = R[i-1] + self.gamma * I[i-1]
+
+        return t, S, I, R
+
+# 社区检测实现
+class CommunityDetector:
+    def __init__(self, adjacency_matrix):
+        self.A = adjacency_matrix
+        self.G = nx.from_numpy_array(adjacency_matrix)
+
+    def spectral_clustering(self, n_communities):
+        """谱聚类"""
+        # 计算拉普拉斯矩阵
+        L = nx.laplacian_matrix(self.G).toarray()
+
+        # 计算特征值和特征向量
+        eigenvalues, eigenvectors = eigsh(L, k=n_communities, sigma=0)
+
+        # K-means聚类
+        from sklearn.cluster import KMeans
+        kmeans = KMeans(n_clusters=n_communities)
+        communities = kmeans.fit_predict(eigenvectors)
+
+        return communities
+
+    def modularity(self, communities):
+        """计算模块度"""
+        return nx.community.modularity(self.G,
+                                     [np.where(communities == i)[0]
+                                      for i in range(max(communities) + 1)])
+
+# 使用示例
+# 生成随机网络
+N = 100
+p = 0.1
+A = np.random.binomial(1, p, (N, N))
+A = (A + A.T) / 2  # 确保对称
+np.fill_diagonal(A, 0)  # 无自环
+
+# 网络分析
+analyzer = NetworkAnalyzer(A)
+degree_dist, degree_counts = analyzer.degree_distribution()
+clustering = analyzer.clustering_coefficient()
+path_length = analyzer.average_path_length()
+centrality = analyzer.centrality_measures()
+
+print(f"聚类系数: {clustering:.3f}")
+print(f"平均路径长度: {path_length:.3f}")
+
+# 传播模拟
+sir = SIRModel(A, beta=0.3, gamma=0.1)
+t, S, I, R = sir.simulate(initial_infected=[0], t_max=50, dt=0.1)
+
+plt.figure(figsize=(12, 4))
+plt.subplot(1, 2, 1)
+plt.plot(t, np.mean(S, axis=1), label='S')
+plt.plot(t, np.mean(I, axis=1), label='I')
+plt.plot(t, np.mean(R, axis=1), label='R')
+plt.xlabel('Time')
+plt.ylabel('Fraction')
+plt.legend()
+plt.title('SIR Model')
+
+plt.subplot(1, 2, 2)
+plt.loglog(degree_dist, degree_counts, 'o-')
+plt.xlabel('Degree')
+plt.ylabel('P(k)')
+plt.title('Degree Distribution')
+plt.show()
+```
+
+### 6.2 网络控制实现
+
+```python
+import numpy as np
+from scipy.linalg import solve
+from scipy.sparse.linalg import eigsh
+
+# 网络可控性分析
+class NetworkControllability:
+    def __init__(self, adjacency_matrix):
+        self.A = adjacency_matrix
+        self.N = adjacency_matrix.shape[0]
+
+    def controllability_matrix(self, B):
+        """计算可控性矩阵"""
+        C = B.copy()
+        for i in range(self.N - 1):
+            C = np.hstack([C, self.A @ C[:, -B.shape[1]:]])
+        return C
+
+    def is_controllable(self, B):
+        """判断系统是否可控"""
+        C = self.controllability_matrix(B)
+        return np.linalg.matrix_rank(C) == self.N
+
+    def minimum_control_nodes(self):
+        """计算最小控制节点数"""
+        # 计算最大匹配
+        from scipy.sparse.csgraph import maximum_bipartite_matching
+        matching = maximum_bipartite_matching(self.A)
+        M = np.sum(matching >= 0)
+        return max(1, self.N - M)
+
+# 网络同步控制
+class NetworkSynchronization:
+    def __init__(self, adjacency_matrix):
+        self.A = adjacency_matrix
+        self.N = adjacency_matrix.shape[0]
+
+    def kuramoto_model(self, omega, K, t_max, dt):
+        """Kuramoto模型"""
+        t = np.arange(0, t_max, dt)
+        theta = np.zeros((len(t), self.N))
+
+        # 初始化
+        theta[0] = np.random.uniform(0, 2*np.pi, self.N)
+
+        # 时间演化
+        for i in range(1, len(t)):
+            coupling = K * self.A @ np.sin(theta[i-1] - theta[i-1].reshape(-1, 1))
+            theta[i] = theta[i-1] + dt * (omega + coupling)
+
+        return t, theta
+
+    def synchronization_order_parameter(self, theta):
+        """计算同步化序参量"""
+        r = np.abs(np.mean(np.exp(1j * theta), axis=1))
+        return r
+
+    def critical_coupling(self, omega):
+        """计算临界耦合强度"""
+        omega_diff = np.max(omega) - np.min(omega)
+        # 计算拉普拉斯矩阵的第二小特征值
+        L = np.diag(np.sum(self.A, axis=1)) - self.A
+        eigenvalues = np.linalg.eigvals(L)
+        lambda_2 = np.sort(eigenvalues)[1]
+        return omega_diff / lambda_2
+
+# 使用示例
+N = 50
+p = 0.1
+A = np.random.binomial(1, p, (N, N))
+A = (A + A.T) / 2
+np.fill_diagonal(A, 0)
+
+# 可控性分析
+controllability = NetworkControllability(A)
+B = np.eye(N)[:, :5]  # 5个控制节点
+is_controllable = controllability.is_controllable(B)
+min_control_nodes = controllability.minimum_control_nodes()
+
+print(f"系统可控: {is_controllable}")
+print(f"最小控制节点数: {min_control_nodes}")
+
+# 同步化分析
+sync = NetworkSynchronization(A)
+omega = np.random.normal(0, 1, N)  # 自然频率
+K = 2.0  # 耦合强度
+t, theta = sync.kuramoto_model(omega, K, t_max=100, dt=0.1)
+r = sync.synchronization_order_parameter(theta)
+K_c = sync.critical_coupling(omega)
+
+plt.figure(figsize=(12, 4))
+plt.subplot(1, 2, 1)
+plt.plot(t, r)
+plt.xlabel('Time')
+plt.ylabel('Order Parameter')
+plt.title('Synchronization')
+plt.axhline(y=0.8, color='r', linestyle='--', label='Sync threshold')
+
+plt.subplot(1, 2, 2)
+plt.plot(t, theta)
+plt.xlabel('Time')
+plt.ylabel('Phase')
+plt.title('Phase Evolution')
+plt.show()
+```
+
+## 7. 🎯 应用案例 / Applications
+
+### 7.1 社交网络应用 / Social Network Applications
+
+#### 7.1.1 影响力最大化 / Influence Maximization
+
+**应用场景**：
+
+- 社交媒体营销
+- 病毒式传播推广
+- 信息传播控制
+
+**数学模型**：
+
+- 独立级联模型：$P(v \text{激活}|u \text{激活}) = p_{uv}$，$I(t+1) = I(t) \cup \{v : \exists u \in I(t), \text{激活}v\}$
+- 线性阈值模型：$v \text{激活} \Leftrightarrow \sum_{u \in N(v)} w_{uv} \geq \theta_v$
+- 影响力最大化：$\max_{S, |S|=k} \sigma(S)$，其中$\sigma(S)$是期望激活节点数
+
+**实际价值**：
+
+- 优化营销策略：选择最有影响力的种子节点
+- 提高传播效率：最大化信息覆盖范围
+- 控制信息传播：防止谣言扩散
+
+#### 7.1.2 社区检测 / Community Detection
+
+**应用场景**：
+
+- 社交网络分析
+- 用户群体识别
+- 推荐系统
+
+**数学模型**：
+
+- 模块度：$Q = \frac{1}{2m}\sum_{ij}(A_{ij} - \frac{k_i k_j}{2m})\delta(c_i, c_j)$
+- 谱聚类：$L\mathbf{v} = \lambda D\mathbf{v}$，其中$L = D - A$是拉普拉斯矩阵
+- 层次聚类：$d(C_i, C_j) = \min_{u \in C_i, v \in C_j} d(u, v)$
+
+**实际价值**：
+
+- 发现用户群体：理解社交网络结构
+- 个性化推荐：基于社区特征推荐
+- 网络分析：理解信息传播路径
+
+#### 7.1.3 链路预测 / Link Prediction
+
+**应用场景**：
+
+- 社交网络好友推荐
+- 知识图谱补全
+- 网络演化预测
+
+**数学模型**：
+
+- 共同邻居：$\text{score}(u,v) = |N(u) \cap N(v)|$
+- Adamic-Adar指数：$\text{score}(u,v) = \sum_{w \in N(u) \cap N(v)} \frac{1}{\log|N(w)|}$
+- 随机游走：$P(u \to v) = \sum_{w} P(u \to w) \cdot \frac{A_{wv}}{d(w)}$
+
+**实际价值**：
+
+- 提高推荐准确性：预测潜在连接
+- 理解网络演化：预测网络结构变化
+- 优化网络结构：发现缺失连接
+
+### 7.2 生物网络应用 / Biological Network Applications
+
+#### 7.2.1 蛋白质相互作用网络 / Protein-Protein Interaction Networks
+
+**应用场景**：
+
+- 蛋白质功能预测
+- 疾病机制研究
+- 药物靶点发现
+
+**数学模型**：
+
+- 网络中心性：$C(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}$（介数中心性）
+- 模块检测：$\max Q = \frac{1}{2m}\sum_{ij}(A_{ij} - \frac{k_i k_j}{2m})\delta(c_i, c_j)$
+- 网络对齐：$\max \sum_{(u,v) \in M} \text{sim}(u, v)$，其中$M$是节点匹配
+
+**实际价值**：
+
+- 识别关键蛋白质：发现疾病相关蛋白
+- 理解蛋白质功能：基于网络结构推断
+- 药物设计：发现新的药物靶点
+
+#### 7.2.2 基因调控网络 / Gene Regulatory Networks
+
+**应用场景**：
+
+- 基因表达分析
+- 疾病诊断
+- 个性化医疗
+
+**数学模型**：
+
+- 布尔网络：$x_i(t+1) = f_i(x_1(t), ..., x_n(t))$
+- 微分方程模型：$\frac{dx_i}{dt} = f_i(\mathbf{x}) - \gamma_i x_i$
+- 贝叶斯网络：$P(\mathbf{x}) = \prod_i P(x_i|\text{pa}(x_i))$
+
+**实际价值**：
+
+- 理解基因调控：揭示基因相互作用
+- 疾病诊断：识别异常调控模式
+- 个性化治疗：基于网络特征定制方案
+
+#### 7.2.3 代谢网络分析 / Metabolic Network Analysis
+
+**应用场景**：
+
+- 代谢通路分析
+- 系统生物学研究
+- 生物工程
+
+**数学模型**：
+
+- 通量平衡分析：$\max \mathbf{c}^T \mathbf{v}$，s.t. $S\mathbf{v} = 0, \mathbf{v}_{\min} \leq \mathbf{v} \leq \mathbf{v}_{\max}$
+- 代谢流：$\mathbf{v} = S^{-1}\mathbf{b}$（稳态假设）
+- 网络拓扑：$C = \frac{2E}{V(V-1)}$（聚类系数）
+
+**实际价值**：
+
+- 优化代谢工程：提高产物产量
+- 理解代谢疾病：分析代谢异常
+- 设计合成生物学系统：构建人工代谢网络
+
+### 7.3 交通网络应用 / Transportation Network Applications
+
+#### 7.3.1 交通流优化 / Traffic Flow Optimization
+
+**应用场景**：
+
+- 智能交通系统
+- 路径规划
+- 拥堵管理
+
+**数学模型**：
+
+- 最短路径：$d(s,t) = \min_{\text{path}} \sum_{e \in \text{path}} w(e)$
+- 流量分配：$\min \sum_e \int_0^{x_e} t_e(\omega) d\omega$，s.t. $\sum_{p \in P_{rs}} f_p = q_{rs}$
+- 用户均衡：$t_p = t_{\min}(r,s), \forall p \in P_{rs}, f_p > 0$
+
+**实际价值**：
+
+- 减少交通拥堵：优化流量分配
+- 提高通行效率：缩短出行时间
+- 降低能耗：优化路径选择
+
+#### 7.3.2 网络容量分析 / Network Capacity Analysis
+
+**应用场景**：
+
+- 交通规划
+- 基础设施设计
+- 应急管理
+
+**数学模型**：
+
+- 最大流：$\max \sum_{v} f(s,v)$，s.t. $\sum_{u} f(u,v) = \sum_{w} f(v,w), \forall v \neq s,t$
+- 最小割：$\min \sum_{e \in C} c(e)$，其中$C$是割集
+- 网络可靠性：$R = P(\text{存在s到t的路径})$
+
+**实际价值**：
+
+- 评估网络性能：识别瓶颈
+- 优化基础设施：提高容量
+- 应急规划：评估网络脆弱性
+
+#### 7.3.3 多模式交通网络 / Multimodal Transportation Networks
+
+**应用场景**：
+
+- 综合交通规划
+- 出行方式选择
+- 城市交通优化
+
+**数学模型**：
+
+- 多模式路径：$\min \sum_{m} c_m x_m$，s.t. $\sum_{m} x_m = 1, x_m \in \{0,1\}$
+- 换乘成本：$C_{\text{transfer}} = \alpha \cdot t_{\text{wait}} + \beta \cdot d_{\text{walk}}$
+- 网络整合：$G = \bigcup_m G_m$，其中$G_m$是第$m$种交通模式的网络
+
+**实际价值**：
+
+- 优化出行方案：减少总出行时间
+- 提高系统效率：整合多种交通方式
+- 减少环境影响：鼓励公共交通
+
+### 7.4 信息网络应用 / Information Network Applications
+
+#### 7.4.1 万维网分析 / Web Analysis
+
+**应用场景**：
+
+- 搜索引擎优化
+- 网页排名
+- 信息检索
+
+**数学模型**：
+
+- PageRank：$PR(v) = \frac{1-d}{N} + d \sum_{u \in M(v)} \frac{PR(u)}{L(u)}$
+- HITS算法：$h(v) = \sum_{u \in B(v)} a(u), a(v) = \sum_{u \in F(v)} h(u)$
+- 网络爬虫：$V_{\text{visited}} \cup \{u : (v,u) \in E, v \in V_{\text{visited}}\}$
+
+**实际价值**：
+
+- 提高搜索质量：准确排名网页
+- 优化信息检索：找到相关页面
+- 理解网络结构：分析信息组织
+
+#### 7.4.2 知识图谱 / Knowledge Graph
+
+**应用场景**：
+
+- 智能问答系统
+- 推荐系统
+- 语义搜索
+
+**数学模型**：
+
+- 三元组：$(h, r, t)$，其中$h$是头实体，$r$是关系，$t$是尾实体
+- 嵌入学习：$\min \sum_{(h,r,t)} \|\mathbf{h} + \mathbf{r} - \mathbf{t}\|^2$
+- 路径推理：$P(t|h, r) = \text{softmax}(\mathbf{W}[\mathbf{h}; \mathbf{r}])$
+
+**实际价值**：
+
+- 理解语义关系：发现实体关联
+- 支持智能应用：问答和推荐
+- 知识发现：从数据中提取知识
+
+### 7.5 金融网络应用 / Financial Network Applications
+
+#### 7.5.1 金融风险传播 / Financial Risk Contagion
+
+**应用场景**：
+
+- 系统性风险分析
+- 金融危机预测
+- 监管政策制定
+
+**数学模型**：
+
+- 违约传播：$P_i(t+1) = 1 - \prod_{j \in N(i)} (1 - P_{ji} \cdot P_j(t))$
+- 网络风险：$R = \sum_i w_i \cdot \text{impact}_i \cdot P_i$
+- 级联失效：$x_i(t+1) = \min(1, x_i(t) + \sum_{j} A_{ij} x_j(t))$
+
+**实际价值**：
+
+- 评估系统性风险：识别关键节点
+- 预防金融危机：早期预警
+- 优化监管政策：针对性措施
+
+#### 7.5.2 交易网络分析 / Trading Network Analysis
+
+**应用场景**：
+
+- 市场微观结构研究
+- 异常交易检测
+- 市场监管
+
+**数学模型**：
+
+- 交易网络：$G = (V, E)$，其中$V$是交易者，$E$是交易关系
+- 网络中心性：$C(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}$
+- 异常检测：$\text{anomaly}(v) = |C(v) - \mu_C| > k \cdot \sigma_C$
+
+**实际价值**：
+
+- 识别市场操纵：发现异常交易
+- 理解市场结构：分析交易模式
+- 提高监管效率：自动化检测
+
+### 7.6 通信网络应用 / Communication Network Applications
+
+#### 7.6.1 网络路由优化 / Network Routing Optimization
+
+**应用场景**：
+
+- 互联网路由
+- 无线传感器网络
+- 移动通信网络
+
+**数学模型**：
+
+- 最短路径路由：$d(s,t) = \min_{\text{path}} \sum_{e \in \text{path}} w(e)$
+- 负载均衡：$\min \max_{e} \frac{f_e}{c_e}$，s.t. $\sum_{p \in P} f_p = d$
+- 多路径路由：$f_e = \sum_{p: e \in p} f_p$，s.t. $\sum_{p} f_p = d$
+
+**实际价值**：
+
+- 提高网络性能：优化路由选择
+- 减少延迟：选择最短路径
+- 提高可靠性：多路径冗余
+
+#### 7.6.2 网络拓扑优化 / Network Topology Optimization
+
+**应用场景**：
+
+- 网络设计
+- 基础设施规划
+- 网络升级
+
+**数学模型**：
+
+- 最小生成树：$T = \arg\min_{T \subseteq G} \sum_{e \in T} w(e)$，s.t. $T$连通所有节点
+- 网络设计：$\min \sum_{e} c_e x_e$，s.t. $\sum_{e \in \delta(S)} x_e \geq 1, \forall S \subset V$
+- 可靠性优化：$\max R(G) = P(\text{网络连通})$，s.t. $\sum_{e} c_e x_e \leq B$
+
+**实际价值**：
+
+- 降低建设成本：优化网络结构
+- 提高可靠性：增强网络鲁棒性
+- 支持扩展：适应未来需求
+
+### 7.7 能源网络应用 / Energy Network Applications
+
+#### 7.7.1 电力网络分析 / Power Grid Analysis
+
+**应用场景**：
+
+- 智能电网
+- 电力系统优化
+- 故障分析
+
+**数学模型**：
+
+- 功率流：$P_i = \sum_{j} V_i V_j (G_{ij}\cos\theta_{ij} + B_{ij}\sin\theta_{ij})$
+- 网络同步：$\dot{\theta}_i = \omega_i + K \sum_{j} A_{ij}\sin(\theta_j - \theta_i)$
+- 级联失效：$L_i(t+1) = \min(1, L_i(t) + \alpha \sum_{j} A_{ij} L_j(t))$
+
+**实际价值**：
+
+- 优化电力分配：提高效率
+- 预防停电：识别脆弱节点
+- 支持可再生能源：整合分布式能源
+
+#### 7.7.2 能源传输优化 / Energy Transmission Optimization
+
+**应用场景**：
+
+- 能源网络规划
+- 传输效率优化
+- 能源市场
+
+**数学模型**：
+
+- 传输容量：$P_{\max} = \frac{V_1 V_2}{X}\sin\theta_{\max}$
+- 网络流：$\max \sum_{i} P_i$，s.t. $\sum_{j} P_{ij} = P_i, |P_{ij}| \leq P_{\max,ij}$
+- 成本优化：$\min \sum_{e} c_e P_e$，s.t. 功率平衡和容量约束
+
+**实际价值**：
+
+- 降低传输损耗：优化能源流动
+- 提高系统效率：合理分配资源
+- 支持能源转型：整合新能源
+
+## 8. 前沿发展
+
+### 8.1 多层网络
+
+**多层网络建模**：
+
+- 不同层之间的耦合
+- 层间传播动力学
+- 多层网络控制
+
+### 8.2 时序网络
+
+**动态网络分析**：
+
+- 网络结构演化
+- 时序传播模型
+- 动态社区检测
+
+### 8.3 高阶网络
+
+**超图理论**：
+
+- 高阶相互作用
+- 超图传播模型
+- 高阶网络控制
+
+## 9. 总结与展望
+
+### 9.1 核心要点总结
+
+1. **复杂网络数学基础**：
+   - 网络拓扑的数学描述
+   - 网络动力学的建模方法
+   - 社区检测的算法原理
+
+2. **社交网络数学理论**：
+   - 社交网络结构的统计特性
+   - 网络演化的动力学模型
+   - 影响力传播的数学分析
+
+3. **信息传播数学**：
+   - 传播模型的微分方程描述
+   - 传播动力学的分析方法
+   - 传播控制的优化策略
+
+4. **网络控制数学**：
+   - 网络可控性的理论分析
+   - 同步化控制的数学方法
+   - 稳定性控制的反馈设计
+
+### 9.2 发展趋势
+
+1. **理论发展**：
+   - 多层网络理论
+   - 时序网络分析
+   - 高阶网络建模
+
+2. **方法创新**：
+   - 机器学习在网络分析中的应用
+   - 深度学习在传播预测中的应用
+   - 强化学习在网络控制中的应用
+
+3. **应用拓展**：
+   - 生物网络分析
+   - 交通网络优化
+   - 金融网络建模
+
+### 9.3 挑战与机遇
+
+**主要挑战**：
+
+- 大规模网络的计算复杂度
+- 动态网络的建模难度
+- 网络数据的隐私保护
+
+**发展机遇**：
+
+- 大数据时代的网络分析
+- 人工智能与网络科学的融合
+- 跨学科应用的拓展
+
+---
+
+## 📚 参考文献
+
+1. Newman, M. E. J. (2010). Networks: An Introduction. Oxford University Press.
+2. Barabási, A. L. (2016). Network Science. Cambridge University Press.
+3. Easley, D., & Kleinberg, J. (2010). Networks, Crowds, and Markets. Cambridge University Press.
+4. Pastor-Satorras, R., & Vespignani, A. (2001). Epidemic Spreading in Scale-Free Networks. Physical Review Letters.
+5. Watts, D. J., & Strogatz, S. H. (1998). Collective Dynamics of 'Small-World' Networks. Nature.
+
+## 🔗 相关链接
+
+- [图论基础](../05-拓扑学/01-点集拓扑.md)
+- [概率论基础](./01-概率论.md)
+- [人工智能数学](./07-人工智能数学-深化版.md)
+- [生物数学](./08-生物数学-深化版.md)
+
+---
+
+*本深化版文档深入探讨了网络科学的数学理论基础，为理解复杂网络的结构、动力学和控制提供了强大的数学工具。*

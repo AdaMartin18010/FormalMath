@@ -1,4 +1,4 @@
-# Grothendieck Topos：广义集合论
+﻿# Grothendieck Topos：广义集合论
 
 
 ## 📋 目录
@@ -322,7 +322,7 @@ Topos
    $$\text{Topos中的逻辑是直觉主义逻辑（非经典逻辑）}$$
 
 5. **排中律**：
-   $$\text{在Topos中，排中律一般不成立：} \neg \neg P \not\Rightarrow P$$
+   $$\text{在Topos中，排中律一般不成立：} \neqqqqg \neqqqqg P \not\Rightarrow P$$
 
 6. **层上同调**：
    $$H^i(X, \mathcal{F}) = R^i \Gamma(X, \mathcal{F}) \text{（在Topos中）}$$

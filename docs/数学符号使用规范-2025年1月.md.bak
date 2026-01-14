@@ -1,0 +1,352 @@
+# 数学符号使用规范 - 2025年1月
+
+## 📋 规范概述
+
+### 规范目标
+
+建立FormalMath数学知识库的统一数学符号使用规范，确保所有数学符号的使用一致、准确、符合国际标准。
+
+### 对标标准
+
+- **国际标准**: ISO 80000-2 (数学符号标准)
+- **学术标准**: AMS、Springer、Elsevier符号规范
+- **大学标准**: MIT、Harvard、Princeton数学课程符号使用
+
+## 🔤 符号分类体系
+
+### 1. 集合论符号 / Set Theory Symbols
+
+#### 基本集合符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $\in$ | `\in` | 属于 | element of | $a \in A$ |
+| $\notin$ | `\notin` | 不属于 | not element of | $a \notin A$ |
+| $\subset$ | `\subset` | 真包含于 | proper subset | $A \subset B$ |
+| $\subseteq$ | `\subseteq` | 包含于 | subset | $A \subseteq B$ |
+| $\supset$ | `\supset` | 真包含 | proper superset | $A \supset B$ |
+| $\supseteq$ | `\supseteq` | 包含 | superset | $A \supseteq B$ |
+| $\cup$ | `\cup` | 并集 | union | $A \cup B$ |
+| $\cap$ | `\cap` | 交集 | intersection | $A \cap B$ |
+| $\setminus$ | `\setminus` | 差集 | set difference | $A \setminus B$ |
+| $\emptyset$ | `\emptyset` | 空集 | empty set | $\emptyset$ |
+
+#### 集合构造符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $\{ \}$ | `\{ \}` | 集合构造 | set builder | $\{x : P(x)\}$ |
+| $\langle \rangle$ | `\langle \rangle` | 有序对 | ordered pair | $\langle a, b \rangle$ |
+| $\times$ | `\times` | 笛卡尔积 | Cartesian product | $A \times B$ |
+| $\mathcal{P}$ | `\mathcal{P}` | 幂集 | power set | $\mathcal{P}(A)$ |
+
+### 2. 逻辑符号 / Logic Symbols
+
+#### 命题逻辑符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $\forall$ | `\forall` | 全称量词 | universal quantifier | $\forall x$ |
+| $\exists$ | `\exists` | 存在量词 | existential quantifier | $\exists x$ |
+| $\exists!$ | `\exists!` | 唯一存在量词 | unique existential | $\exists! x$ |
+| $\implies$ | `\implies` | 蕴含 | implies | $A \implies B$ |
+| $\iff$ | `\iff` | 等价 | if and only if | $A \iff B$ |
+| $\neg$ | `\neg` | 否定 | negation | $\neg A$ |
+| $\land$ | `\land` | 合取 | conjunction | $A \land B$ |
+| $\lor$ | `\lor` | 析取 | disjunction | $A \lor B$ |
+
+#### 证明符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $\therefore$ | `\therefore` | 因此 | therefore | $\therefore$ |
+| $\because$ | `\because` | 因为 | because | $\because$ |
+| $\square$ | `\square` | 证毕 | QED | $\square$ |
+| $\blacksquare$ | `\blacksquare` | 证毕 | QED | $\blacksquare$ |
+
+### 3. 函数符号 / Function Symbols
+
+#### 函数定义符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $f: X \to Y$ | `f: X \to Y` | 函数定义 | function definition | $f: X \to Y$ |
+| $f(x)$ | `f(x)` | 函数值 | function value | $f(x)$ |
+| $f^{-1}$ | `f^{-1}` | 逆函数 | inverse function | $f^{-1}$ |
+| $\circ$ | `\circ` | 函数复合 | function composition | $f \circ g$ |
+| $\text{id}$ | `\text{id}` | 恒等函数 | identity function | $\text{id}_X$ |
+
+#### 函数性质符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $\text{dom}$ | `\text{dom}` | 定义域 | domain | $\text{dom}(f)$ |
+| $\text{codom}$ | `\text{codom}` | 陪域 | codomain | $\text{codom}(f)$ |
+| $\text{im}$ | `\text{im}` | 像 | image | $\text{im}(f)$ |
+| $\text{ker}$ | `\text{ker}` | 核 | kernel | $\text{ker}(f)$ |
+
+### 4. 代数符号 / Algebraic Symbols
+
+#### 群论符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $G$ | `G` | 群 | group | $(G, \cdot)$ |
+| $H \leq G$ | `H \leq G` | 子群 | subgroup | $H \leq G$ |
+| $H \triangleleft G$ | `H \triangleleft G` | 正规子群 | normal subgroup | $H \triangleleft G$ |
+| $G/H$ | `G/H` | 商群 | quotient group | $G/H$ |
+| $\cong$ | `\cong` | 同构 | isomorphic | $G \cong H$ |
+| $\text{Hom}$ | `\text{Hom}` | 同态集 | homomorphism set | $\text{Hom}(G, H)$ |
+| $\text{Aut}$ | `\text{Aut}` | 自同构群 | automorphism group | $\text{Aut}(G)$ |
+
+#### 环论符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $R$ | `R` | 环 | ring | $(R, +, \cdot)$ |
+| $I \triangleleft R$ | `I \triangleleft R` | 理想 | ideal | $I \triangleleft R$ |
+| $R/I$ | `R/I` | 商环 | quotient ring | $R/I$ |
+| $\text{Spec}$ | `\text{Spec}` | 素谱 | prime spectrum | $\text{Spec}(R)$ |
+| $\text{Max}$ | `\text{Max}` | 极大谱 | maximal spectrum | $\text{Max}(R)$ |
+
+### 5. 分析符号 / Analysis Symbols
+
+#### 极限符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $\lim$ | `\lim` | 极限 | limit | $\lim_{x \to a} f(x)$ |
+| $\limsup$ | `\limsup` | 上极限 | limit superior | $\limsup_{n \to \infty} a_n$ |
+| $\liminf$ | `\liminf` | 下极限 | limit inferior | $\liminf_{n \to \infty} a_n$ |
+
+#### 微积分符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $\frac{d}{dx}$ | `\frac{d}{dx}` | 导数 | derivative | $\frac{d}{dx} f(x)$ |
+| $\partial$ | `\partial` | 偏导数 | partial derivative | $\partial_x f$ |
+| $\int$ | `\int` | 积分 | integral | $\int_a^b f(x) dx$ |
+| $\oint$ | `\oint` | 围线积分 | contour integral | $\oint_C f(z) dz$ |
+| $\nabla$ | `\nabla` | 梯度 | gradient | $\nabla f$ |
+| $\Delta$ | `\Delta` | 拉普拉斯算子 | Laplacian | $\Delta f$ |
+
+### 6. 几何符号 / Geometry Symbols
+
+#### 几何对象符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $\mathbb{R}^n$ | `\mathbb{R}^n` | n维实空间 | n-dimensional real space | $\mathbb{R}^n$ |
+| $\mathbb{C}^n$ | `\mathbb{C}^n` | n维复空间 | n-dimensional complex space | $\mathbb{C}^n$ |
+| $S^n$ | `S^n` | n维球面 | n-sphere | $S^n$ |
+| $T_pM$ | `T_pM` | 切空间 | tangent space | $T_pM$ |
+| $\omega$ | `\omega` | 微分形式 | differential form | $\omega$ |
+| $\Omega$ | `\Omega` | 体积形式 | volume form | $\Omega$ |
+
+## 📏 符号使用规范
+
+### 1. 符号优先级规则
+
+#### 数学运算优先级
+
+1. **最高优先级**: 括号 `()`, `[]`, `\{\}`
+2. **函数应用**: $f(x)$, $\sin(x)$, $\log(x)$
+3. **幂运算**: $x^n$, $e^x$
+4. **乘法除法**: $\cdot$, $\times$, $\div$, $\frac{a}{b}$
+5. **加法减法**: $+$, $-$
+6. **关系符号**: $=$, $\neq$, $<$, $>$, $\leq$, $\geq$
+7. **逻辑符号**: $\land$, $\lor$, $\implies$, $\iff$
+
+#### 示例
+
+```latex
+% 正确：括号明确优先级
+(a + b) \cdot (c + d)
+
+% 错误：优先级不明确
+a + b \cdot c + d
+
+% 正确：函数应用优先级
+\sin(x + y)
+
+% 正确：幂运算优先级
+e^{x + y}
+```
+
+### 2. 符号间距规范
+
+#### 标准间距
+
+- **函数名与变量**: 无间距 `\sin x`
+- **运算符**: 前后有间距 `a + b`
+- **关系符号**: 前后有间距 `a = b`
+- **标点符号**: 前无间距，后有间距 `x, y, z`
+
+#### 2示例
+
+```latex
+% 正确：标准间距
+\sin x + \cos y = 1
+
+% 错误：间距不当
+\sinx+\cosy=1
+
+% 正确：关系符号间距
+a \leq b \leq c
+
+% 正确：标点符号间距
+x, y, z \in \mathbb{R}
+```
+
+### 3. 符号大小规范
+
+#### 大小调整规则
+
+- **行内公式**: 使用 `$...$` 或 `\(...\)`
+- **行间公式**: 使用 `$$...$$` 或 `\[...\]`
+- **分数**: 行内使用 `\frac{}{}`，行间可使用 `\dfrac{}{}`
+- **求和积分**: 行内使用 `\sum`，行间可使用 `\displaystyle\sum`
+
+#### 3示例
+
+```latex
+% 行内公式
+The function $f(x) = \frac{1}{x}$ is continuous.
+
+% 行间公式
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$
+
+% 行内分数
+$\frac{a}{b}$
+
+% 行间分数
+$$\frac{a}{b}$$
+```
+
+### 4. 符号一致性规范
+
+#### 变量命名规范
+
+- **集合**: 大写字母 $A, B, C$
+- **元素**: 小写字母 $a, b, c$
+- **函数**: 小写字母 $f, g, h$
+- **群**: 大写字母 $G, H, K$
+- **环**: 大写字母 $R, S, T$
+- **域**: 大写字母 $F, K, L$
+
+#### 4示例
+
+```latex
+% 正确：变量命名一致
+Let $G$ be a group and $H \leq G$ be a subgroup.
+Let $f: A \to B$ be a function.
+
+% 错误：变量命名不一致
+Let $g$ be a group and $h \leq g$ be a subgroup.
+```
+
+## 🔧 特殊符号处理
+
+### 1. 希腊字母
+
+| 小写 | LaTeX代码 | 大写 | LaTeX代码 | 常用含义 |
+|------|-----------|------|-----------|----------|
+| $\alpha$ | `\alpha` | $A$ | `A` | 角度、参数 |
+| $\beta$ | `\beta` | $B$ | `B` | 参数 |
+| $\gamma$ | `\gamma` | $\Gamma$ | `\Gamma` | 伽马函数 |
+| $\delta$ | `\delta` | $\Delta$ | `\Delta` | 变分、拉普拉斯算子 |
+| $\epsilon$ | `\epsilon` | $E$ | `E` | 小正数 |
+| $\varepsilon$ | `\varepsilon` | $E$ | `E` | 小正数 |
+| $\zeta$ | `\zeta` | $Z$ | `Z` | 黎曼ζ函数 |
+| $\eta$ | `\eta` | $H$ | `H` | 参数 |
+| $\theta$ | `\theta` | $\Theta$ | `\Theta` | 角度 |
+| $\iota$ | `\iota` | $I$ | `I` | 包含映射 |
+| $\kappa$ | `\kappa` | $K$ | `K` | 曲率 |
+| $\lambda$ | `\lambda` | $\Lambda$ | `\Lambda` | 特征值 |
+| $\mu$ | `\mu` | $M$ | `M` | 测度 |
+| $\nu$ | `\nu` | $N$ | `N` | 频率 |
+| $\xi$ | `\xi` | $\Xi$ | `\Xi` | 随机变量 |
+| $\pi$ | `\pi` | $\Pi$ | `\Pi` | 圆周率、乘积 |
+| $\rho$ | `\rho` | $P$ | `P` | 密度 |
+| $\sigma$ | `\sigma` | $\Sigma$ | `\Sigma` | 标准差、求和 |
+| $\tau$ | `\tau` | $T$ | `T` | 时间常数 |
+| $\upsilon$ | `\upsilon` | $\Upsilon$ | `\Upsilon` | 参数 |
+| $\phi$ | `\phi` | $\Phi$ | `\Phi` | 欧拉函数 |
+| $\varphi$ | `\varphi` | $\Phi$ | `\Phi` | 欧拉函数 |
+| $\chi$ | `\chi` | $X$ | `X` | 特征函数 |
+| $\psi$ | `\psi` | $\Psi$ | `\Psi` | 波函数 |
+| $\omega$ | `\omega` | $\Omega$ | `\Omega` | 角频率、体积形式 |
+
+### 2. 特殊数学符号
+
+| 符号 | LaTeX代码 | 中文名称 | 英文名称 | 使用场景 |
+|------|-----------|----------|----------|----------|
+| $\infty$ | `\infty` | 无穷 | infinity | $\lim_{x \to \infty}$ |
+| $\aleph$ | `\aleph` | 阿列夫 | aleph | $\aleph_0$ |
+| $\beth$ | `\beth` | 贝斯 | beth | $\beth_0$ |
+| $\mathfrak{c}$ | `\mathfrak{c}` | 连续统基数 | continuum | $\mathfrak{c}$ |
+| $\mathbb{N}$ | `\mathbb{N}` | 自然数集 | natural numbers | $\mathbb{N}$ |
+| $\mathbb{Z}$ | `\mathbb{Z}` | 整数集 | integers | $\mathbb{Z}$ |
+| $\mathbb{Q}$ | `\mathbb{Q}` | 有理数集 | rational numbers | $\mathbb{Q}$ |
+| $\mathbb{R}$ | `\mathbb{R}` | 实数集 | real numbers | $\mathbb{R}$ |
+| $\mathbb{C}$ | `\mathbb{C}` | 复数集 | complex numbers | $\mathbb{C}$ |
+
+## 📊 质量检查清单
+
+### 符号准确性检查
+
+- [ ] 符号定义正确
+- [ ] LaTeX代码正确
+- [ ] 中英文名称准确
+- [ ] 使用场景明确
+
+### 一致性检查
+
+- [ ] 相同概念使用相同符号
+- [ ] 符号大小使用一致
+- [ ] 间距使用一致
+- [ ] 格式规范一致
+
+### 完整性检查
+
+- [ ] 覆盖所有重要符号
+- [ ] 提供完整定义
+- [ ] 包含使用示例
+- [ ] 提供LaTeX代码
+
+### 规范性检查
+
+- [ ] 符合国际标准
+- [ ] 符合学术规范
+- [ ] 符合大学标准
+- [ ] 符合出版要求
+
+## 🛠️ 工具和资源
+
+### LaTeX编辑器
+
+- **在线编辑器**: Overleaf, TeXstudio
+- **本地编辑器**: TeXmaker, TeXworks
+- **IDE插件**: VS Code LaTeX Workshop
+
+### 符号检查工具
+
+- **语法检查**: LaTeX语法检查器
+- **符号验证**: 数学符号验证工具
+- **一致性检查**: 符号一致性检查脚本
+
+### 参考资源
+
+- **ISO标准**: ISO 80000-2 数学符号标准
+- **AMS手册**: AMS数学符号手册
+- **Springer指南**: Springer数学符号指南
+- **大学标准**: 各大学数学符号使用指南
+
+---
+
+**规范制定时间**: 2025年1月
+**版本**: v1.0
+**适用范围**: FormalMath数学知识库
+**维护状态**: 持续更新中

@@ -1,4 +1,4 @@
-# Green定理 - 五种表征
+﻿# Green定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 向量分析
@@ -23,7 +23,7 @@
 
 **Green定理**：设D是平面上由简单闭曲线C围成的区域，则：
 
-$$\oint_C (P\,dx + Q\,dy) = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA$$
+$$\oint_C (P\,dx + Q\,dy) = \iint_D \leqft(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA$$
 
 ---
 

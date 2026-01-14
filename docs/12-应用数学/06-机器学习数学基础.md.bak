@@ -1,0 +1,1010 @@
+# 机器学习数学基础 / Mathematical Foundations of Machine Learning
+
+## 目录 / Table of Contents
+
+- [机器学习数学基础 / Mathematical Foundations of Machine Learning](#机器学习数学基础--mathematical-foundations-of-machine-learning)
+  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [1. 线性代数基础 / Linear Algebra Fundamentals](#1-线性代数基础--linear-algebra-fundamentals)
+    - [1.1 向量与矩阵 / Vectors and Matrices](#11-向量与矩阵--vectors-and-matrices)
+    - [1.2 向量运算 / Vector Operations](#12-向量运算--vector-operations)
+    - [1.3 矩阵运算 / Matrix Operations](#13-矩阵运算--matrix-operations)
+    - [1.4 特征值与特征向量 / Eigenvalues and Eigenvectors](#14-特征值与特征向量--eigenvalues-and-eigenvectors)
+    - [1.5 奇异值分解 / Singular Value Decomposition](#15-奇异值分解--singular-value-decomposition)
+  - [2. 优化理论 / Optimization Theory](#2-优化理论--optimization-theory)
+    - [2.1 凸优化 / Convex Optimization](#21-凸优化--convex-optimization)
+    - [2.2 梯度下降 / Gradient Descent](#22-梯度下降--gradient-descent)
+    - [2.3 随机梯度下降 / Stochastic Gradient Descent](#23-随机梯度下降--stochastic-gradient-descent)
+    - [2.4 拉格朗日对偶 / Lagrangian Duality](#24-拉格朗日对偶--lagrangian-duality)
+  - [3. 信息论 / Information Theory](#3-信息论--information-theory)
+    - [3.1 熵 / Entropy](#31-熵--entropy)
+    - [3.2 互信息 / Mutual Information](#32-互信息--mutual-information)
+    - [3.3 相对熵 / Relative Entropy](#33-相对熵--relative-entropy)
+  - [4. 概率图模型 / Probabilistic Graphical Models](#4-概率图模型--probabilistic-graphical-models)
+    - [4.1 贝叶斯网络 / Bayesian Networks](#41-贝叶斯网络--bayesian-networks)
+    - [4.2 马尔可夫随机场 / Markov Random Fields](#42-马尔可夫随机场--markov-random-fields)
+    - [4.3 隐马尔可夫模型 / Hidden Markov Models](#43-隐马尔可夫模型--hidden-markov-models)
+  - [5. 深度学习数学 / Deep Learning Mathematics](#5-深度学习数学--deep-learning-mathematics)
+    - [5.1 神经网络 / Neural Networks](#51-神经网络--neural-networks)
+    - [5.2 反向传播 / Backpropagation](#52-反向传播--backpropagation)
+    - [5.3 卷积神经网络 / Convolutional Neural Networks](#53-卷积神经网络--convolutional-neural-networks)
+    - [5.4 循环神经网络 / Recurrent Neural Networks](#54-循环神经网络--recurrent-neural-networks)
+  - [6. 核方法 / Kernel Methods](#6-核方法--kernel-methods)
+    - [6.1 核函数 / Kernel Functions](#61-核函数--kernel-functions)
+    - [6.2 支持向量机 / Support Vector Machines](#62-支持向量机--support-vector-machines)
+  - [7. 强化学习数学 / Reinforcement Learning Mathematics](#7-强化学习数学--reinforcement-learning-mathematics)
+    - [7.1 马尔可夫决策过程 / Markov Decision Processes](#71-马尔可夫决策过程--markov-decision-processes)
+    - [7.2 策略梯度 / Policy Gradient](#72-策略梯度--policy-gradient)
+    - [7.3 深度Q网络 / Deep Q-Networks](#73-深度q网络--deep-q-networks)
+  - [8. 形式化实现 / Formal Implementation](#8-形式化实现--formal-implementation)
+    - [8.1 Lean 4 实现](#81-lean-4-实现)
+    - [8.2 Haskell 实现](#82-haskell-实现)
+    - [8.3 Rust 实现](#83-rust-实现)
+  - [🎯 应用案例 / Applications](#-应用案例--applications)
+    - [0. 2025年最新应用：AI与数据科学融合计算 / Latest 2025 Applications: AI and Data Science Integration](#0-2025年最新应用ai与数据科学融合计算--latest-2025-applications-ai-and-data-science-integration)
+      - [0.1 以人为中心的数据科学 / Human-Centered Data Science](#01-以人为中心的数据科学--human-centered-data-science)
+      - [0.2 交互式数据科学 / Interactive Data Science](#02-交互式数据科学--interactive-data-science)
+      - [0.3 云计算数学基础 / Cloud Computing Mathematics](#03-云计算数学基础--cloud-computing-mathematics)
+      - [0.4 张量运算与深度学习 / Tensor Operations and Deep Learning](#04-张量运算与深度学习--tensor-operations-and-deep-learning)
+      - [0.5 随机优化与元学习 / Stochastic Optimization and Meta-Learning](#05-随机优化与元学习--stochastic-optimization-and-meta-learning)
+      - [0.6 贝叶斯深度学习 / Bayesian Deep Learning](#06-贝叶斯深度学习--bayesian-deep-learning)
+      - [0.7 几何深度学习 / Geometric Deep Learning](#07-几何深度学习--geometric-deep-learning)
+    - [1. 计算机视觉应用](#1-计算机视觉应用)
+      - [1.1 图像分类](#11-图像分类)
+      - [1.2 目标检测](#12-目标检测)
+      - [1.3 图像生成](#13-图像生成)
+    - [2. 自然语言处理应用](#2-自然语言处理应用)
+      - [2.1 文本分类](#21-文本分类)
+      - [2.2 机器翻译](#22-机器翻译)
+      - [2.3 语言模型](#23-语言模型)
+    - [3. 推荐系统应用](#3-推荐系统应用)
+      - [3.1 协同过滤](#31-协同过滤)
+      - [3.2 深度学习推荐](#32-深度学习推荐)
+    - [4. 语音识别应用](#4-语音识别应用)
+      - [4.1 语音转文字](#41-语音转文字)
+      - [4.2 语音合成](#42-语音合成)
+    - [5. 机器人学应用](#5-机器人学应用)
+      - [5.1 强化学习在机器人控制中的应用](#51-强化学习在机器人控制中的应用)
+      - [5.2 模仿学习](#52-模仿学习)
+    - [6. 医疗诊断应用](#6-医疗诊断应用)
+      - [6.1 医学影像分析](#61-医学影像分析)
+      - [6.2 药物发现](#62-药物发现)
+    - [7. 金融科技应用](#7-金融科技应用)
+      - [7.1 信用评分](#71-信用评分)
+      - [7.2 欺诈检测](#72-欺诈检测)
+      - [7.3 算法交易](#73-算法交易)
+  - [总结 / Summary](#总结--summary)
+    - [关键要点 / Key Points](#关键要点--key-points)
+    - [知识关联 / Knowledge Connections](#知识关联--knowledge-connections)
+    - [进一步学习 / Further Learning](#进一步学习--further-learning)
+
+---
+
+## 1. 线性代数基础 / Linear Algebra Fundamentals
+
+### 1.1 向量与矩阵 / Vectors and Matrices
+
+**定义 1.1.1** (向量 / Vector)
+向量是 $n$ 维实数空间 $\mathbb{R}^n$ 中的元素：
+$$\mathbf{x} = [x_1, x_2, \ldots, x_n]^T$$
+
+**定义 1.1.2** (矩阵 / Matrix)
+矩阵是 $m \times n$ 的实数数组：
+$$
+\mathbf{A} = \begin{bmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{bmatrix}
+$$
+
+### 1.2 向量运算 / Vector Operations
+
+**定义 1.2.1** (内积 / Inner Product)
+两个向量 $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$ 的内积定义为：
+$$\langle \mathbf{x}, \mathbf{y} \rangle = \sum_{i=1}^{n} x_i y_i$$
+
+**定义 1.2.2** (范数 / Norm)
+向量 $\mathbf{x}$ 的 $L_p$ 范数定义为：
+$$\|\mathbf{x}\|_p = \left(\sum_{i=1}^{n} |x_i|^p\right)^{1/p}$$
+
+**特殊范数**:
+
+- $L_1$ 范数：$\|\mathbf{x}\|_1 = \sum_{i=1}^{n} |x_i|$
+- $L_2$ 范数：$\|\mathbf{x}\|_2 = \sqrt{\sum_{i=1}^{n} x_i^2}$
+- $L_\infty$ 范数：$\|\mathbf{x}\|_\infty = \max_{i} |x_i|$
+
+### 1.3 矩阵运算 / Matrix Operations
+
+**定义 1.3.1** (矩阵乘法 / Matrix Multiplication)
+设 $\mathbf{A} \in \mathbb{R}^{m \times n}$，$\mathbf{B} \in \mathbb{R}^{n \times p}$，则：
+$$(\mathbf{AB})_{ij} = \sum_{k=1}^{n} a_{ik} b_{kj}$$
+
+**定义 1.3.2** (矩阵转置 / Matrix Transpose)
+矩阵 $\mathbf{A}$ 的转置 $\mathbf{A}^T$ 定义为：
+$$(\mathbf{A}^T)_{ij} = a_{ji}$$
+
+**定义 1.3.3** (矩阵逆 / Matrix Inverse)
+方阵 $\mathbf{A}$ 的逆矩阵 $\mathbf{A}^{-1}$ 满足：
+$$\mathbf{AA}^{-1} = \mathbf{A}^{-1}\mathbf{A} = \mathbf{I}$$
+
+### 1.4 特征值与特征向量 / Eigenvalues and Eigenvectors
+
+**定义 1.4.1** (特征值与特征向量 / Eigenvalues and Eigenvectors)
+对于方阵 $\mathbf{A}$，如果存在非零向量 $\mathbf{v}$ 和标量 $\lambda$ 使得：
+$$\mathbf{Av} = \lambda\mathbf{v}$$
+
+则 $\lambda$ 称为特征值，$\mathbf{v}$ 称为对应的特征向量。
+
+**性质**:
+
+- 特征值的乘积等于行列式：$\prod_{i=1}^{n} \lambda_i = \det(\mathbf{A})$
+- 特征值的和等于迹：$\sum_{i=1}^{n} \lambda_i = \text{tr}(\mathbf{A})$
+
+### 1.5 奇异值分解 / Singular Value Decomposition
+
+**定理 1.5.1** (奇异值分解 / SVD)
+对于矩阵 $\mathbf{A} \in \mathbb{R}^{m \times n}$，存在正交矩阵 $\mathbf{U} \in \mathbb{R}^{m \times m}$，$\mathbf{V} \in \mathbb{R}^{n \times n}$ 和对角矩阵 $\mathbf{\Sigma} \in \mathbb{R}^{m \times n}$ 使得：
+$$\mathbf{A} = \mathbf{U\Sigma V}^T$$
+
+其中 $\mathbf{\Sigma} = \text{diag}(\sigma_1, \sigma_2, \ldots, \sigma_r, 0, \ldots, 0)$，$\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r > 0$ 是奇异值。
+
+## 2. 优化理论 / Optimization Theory
+
+### 2.1 凸优化 / Convex Optimization
+
+**定义 2.1.1** (凸集 / Convex Set)
+集合 $C \subseteq \mathbb{R}^n$ 称为凸集，如果对于任意 $\mathbf{x}, \mathbf{y} \in C$ 和 $\lambda \in [0,1]$，有：
+$$\lambda\mathbf{x} + (1-\lambda)\mathbf{y} \in C$$
+
+**定义 2.1.2** (凸函数 / Convex Function)
+函数 $f: \mathbb{R}^n \to \mathbb{R}$ 称为凸函数，如果对于任意 $\mathbf{x}, \mathbf{y} \in \text{dom}(f)$ 和 $\lambda \in [0,1]$，有：
+$$f(\lambda\mathbf{x} + (1-\lambda)\mathbf{y}) \leq \lambda f(\mathbf{x}) + (1-\lambda)f(\mathbf{y})$$
+
+**定义 2.1.3** (凸优化问题 / Convex Optimization Problem)
+凸优化问题具有形式：
+$$\min_{\mathbf{x}} f(\mathbf{x})$$
+$$\text{subject to } g_i(\mathbf{x}) \leq 0, \quad i = 1,2,\ldots,m$$
+$$\quad \quad \quad \quad h_j(\mathbf{x}) = 0, \quad j = 1,2,\ldots,p$$
+
+其中 $f$ 和 $g_i$ 是凸函数，$h_j$ 是仿射函数。
+
+### 2.2 梯度下降 / Gradient Descent
+
+**算法 2.2.1** (梯度下降 / Gradient Descent)
+对于函数 $f: \mathbb{R}^n \to \mathbb{R}$，梯度下降算法为：
+$$\mathbf{x}_{k+1} = \mathbf{x}_k - \alpha_k \nabla f(\mathbf{x}_k)$$
+
+其中 $\alpha_k$ 是学习率。
+
+**收敛性**:
+
+- 如果 $f$ 是凸函数且 $\nabla f$ 是 Lipschitz 连续的，则梯度下降收敛到全局最优解
+- 收敛速度为 $O(1/k)$
+
+### 2.3 随机梯度下降 / Stochastic Gradient Descent
+
+**算法 2.3.1** (随机梯度下降 / SGD)
+对于函数 $f(\mathbf{x}) = \frac{1}{n}\sum_{i=1}^{n} f_i(\mathbf{x})$，SGD 算法为：
+$$\mathbf{x}_{k+1} = \mathbf{x}_k - \alpha_k \nabla f_{i_k}(\mathbf{x}_k)$$
+
+其中 $i_k$ 是随机选择的索引。
+
+**优势**:
+
+- 计算复杂度低
+- 适合大规模数据
+- 可以逃离局部最优
+
+### 2.4 拉格朗日对偶 / Lagrangian Duality
+
+**定义 2.4.1** (拉格朗日函数 / Lagrangian Function)
+对于优化问题：
+$$\min_{\mathbf{x}} f(\mathbf{x})$$
+$$\text{subject to } g_i(\mathbf{x}) \leq 0, \quad i = 1,2,\ldots,m$$
+
+拉格朗日函数定义为：
+$$L(\mathbf{x}, \boldsymbol{\lambda}) = f(\mathbf{x}) + \sum_{i=1}^{m} \lambda_i g_i(\mathbf{x})$$
+
+**定义 2.4.2** (对偶函数 / Dual Function)
+对偶函数定义为：
+$$g(\boldsymbol{\lambda}) = \inf_{\mathbf{x}} L(\mathbf{x}, \boldsymbol{\lambda})$$
+
+**对偶问题**:
+$$\max_{\boldsymbol{\lambda}} g(\boldsymbol{\lambda})$$
+$$\text{subject to } \lambda_i \geq 0, \quad i = 1,2,\ldots,m$$
+
+## 3. 信息论 / Information Theory
+
+### 3.1 熵 / Entropy
+
+**定义 3.1.1** (香农熵 / Shannon Entropy)
+对于离散随机变量 $X$，香农熵定义为：
+$$H(X) = -\sum_{x} p(x) \log p(x)$$
+
+**性质**:
+
+- $H(X) \geq 0$
+- $H(X) \leq \log |\mathcal{X}|$，其中 $|\mathcal{X}|$ 是 $X$ 的取值个数
+- 当 $X$ 均匀分布时，$H(X) = \log |\mathcal{X}|$
+
+**定义 3.1.2** (条件熵 / Conditional Entropy)
+条件熵定义为：
+$$H(X|Y) = -\sum_{x,y} p(x,y) \log p(x|y)$$
+
+### 3.2 互信息 / Mutual Information
+
+**定义 3.2.1** (互信息 / Mutual Information)
+随机变量 $X$ 和 $Y$ 的互信息定义为：
+$$I(X;Y) = H(X) - H(X|Y) = H(Y) - H(Y|X)$$
+
+**性质**:
+
+- $I(X;Y) \geq 0$
+- $I(X;Y) = 0$ 当且仅当 $X$ 和 $Y$ 独立
+- $I(X;Y) = I(Y;X)$
+
+### 3.3 相对熵 / Relative Entropy
+
+**定义 3.3.1** (KL散度 / KL Divergence)
+两个概率分布 $P$ 和 $Q$ 的KL散度定义为：
+$$D_{KL}(P\|Q) = \sum_{x} p(x) \log \frac{p(x)}{q(x)}$$
+
+**性质**:
+
+- $D_{KL}(P\|Q) \geq 0$
+- $D_{KL}(P\|Q) = 0$ 当且仅当 $P = Q$
+- $D_{KL}(P\|Q) \neq D_{KL}(Q\|P)$
+
+## 4. 概率图模型 / Probabilistic Graphical Models
+
+### 4.1 贝叶斯网络 / Bayesian Networks
+
+**定义 4.1.1** (贝叶斯网络 / Bayesian Network)
+贝叶斯网络是一个有向无环图 (DAG)，其中节点表示随机变量，边表示条件依赖关系。
+
+**联合概率分布**:
+$$P(X_1, X_2, \ldots, X_n) = \prod_{i=1}^{n} P(X_i|\text{Pa}(X_i))$$
+
+其中 $\text{Pa}(X_i)$ 是 $X_i$ 的父节点。
+
+### 4.2 马尔可夫随机场 / Markov Random Fields
+
+**定义 4.2.1** (马尔可夫随机场 / MRF)
+马尔可夫随机场是一个无向图，其中节点表示随机变量，边表示依赖关系。
+
+**联合概率分布**:
+$$P(X_1, X_2, \ldots, X_n) = \frac{1}{Z} \prod_{C} \psi_C(\mathbf{x}_C)$$
+
+其中 $C$ 是团，$\psi_C$ 是势函数，$Z$ 是配分函数。
+
+### 4.3 隐马尔可夫模型 / Hidden Markov Models
+
+**定义 4.3.1** (隐马尔可夫模型 / HMM)
+HMM 包含两个随机过程：
+
+- 隐藏状态序列 $\{S_t\}$
+- 观测序列 $\{O_t\}$
+
+**概率模型**:
+$$P(S_{1:T}, O_{1:T}) = P(S_1) \prod_{t=2}^{T} P(S_t|S_{t-1}) \prod_{t=1}^{T} P(O_t|S_t)$$
+
+## 5. 深度学习数学 / Deep Learning Mathematics
+
+### 5.1 神经网络 / Neural Networks
+
+**定义 5.1.1** (前馈神经网络 / Feedforward Neural Network)
+前馈神经网络定义为：
+$$f(\mathbf{x}) = \sigma_L(\mathbf{W}_L \sigma_{L-1}(\mathbf{W}_{L-1} \cdots \sigma_1(\mathbf{W}_1\mathbf{x} + \mathbf{b}_1) + \mathbf{b}_{L-1}) + \mathbf{b}_L)$$
+
+其中 $\sigma_i$ 是激活函数。
+
+**常见激活函数**:
+
+- ReLU：$\sigma(x) = \max(0, x)$
+- Sigmoid：$\sigma(x) = \frac{1}{1 + e^{-x}}$
+- Tanh：$\sigma(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}$
+
+### 5.2 反向传播 / Backpropagation
+
+**算法 5.2.1** (反向传播 / Backpropagation)
+对于损失函数 $L$，反向传播计算梯度：
+$$\frac{\partial L}{\partial \mathbf{W}_l} = \frac{\partial L}{\partial \mathbf{a}_l} \frac{\partial \mathbf{a}_l}{\partial \mathbf{W}_l}$$
+
+其中 $\mathbf{a}_l = \mathbf{W}_l \mathbf{h}_{l-1} + \mathbf{b}_l$。
+
+**链式法则**:
+$$\frac{\partial L}{\partial \mathbf{h}_{l-1}} = \mathbf{W}_l^T \frac{\partial L}{\partial \mathbf{a}_l}$$
+
+### 5.3 卷积神经网络 / Convolutional Neural Networks
+
+**定义 5.3.1** (卷积操作 / Convolution)
+对于输入 $\mathbf{X}$ 和卷积核 $\mathbf{K}$，卷积操作定义为：
+$$(\mathbf{X} * \mathbf{K})_{ij} = \sum_{m,n} X_{i+m,j+n} K_{m,n}$$
+
+**池化操作**:
+
+- 最大池化：$\text{maxpool}(\mathbf{X})_{ij} = \max_{(m,n) \in \mathcal{R}_{ij}} X_{m,n}$
+- 平均池化：$\text{avgpool}(\mathbf{X})_{ij} = \frac{1}{|\mathcal{R}_{ij}|} \sum_{(m,n) \in \mathcal{R}_{ij}} X_{m,n}$
+
+### 5.4 循环神经网络 / Recurrent Neural Networks
+
+**定义 5.4.1** (RNN)
+RNN 的隐藏状态更新为：
+$$\mathbf{h}_t = \sigma(\mathbf{W}_h \mathbf{h}_{t-1} + \mathbf{W}_x \mathbf{x}_t + \mathbf{b})$$
+
+**LSTM**:
+$$\mathbf{f}_t = \sigma(\mathbf{W}_f [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_f)$$
+$$\mathbf{i}_t = \sigma(\mathbf{W}_i [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_i)$$
+$$\mathbf{o}_t = \sigma(\mathbf{W}_o [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_o)$$
+$$\mathbf{c}_t = \mathbf{f}_t \odot \mathbf{c}_{t-1} + \mathbf{i}_t \odot \tanh(\mathbf{W}_c [\mathbf{h}_{t-1}, \mathbf{x}_t] + \mathbf{b}_c)$$
+$$\mathbf{h}_t = \mathbf{o}_t \odot \tanh(\mathbf{c}_t)$$
+
+## 6. 核方法 / Kernel Methods
+
+### 6.1 核函数 / Kernel Functions
+
+**定义 6.1.1** (核函数 / Kernel Function)
+核函数 $k: \mathcal{X} \times \mathcal{X} \to \mathbb{R}$ 满足：
+$$k(\mathbf{x}, \mathbf{y}) = \langle \phi(\mathbf{x}), \phi(\mathbf{y}) \rangle$$
+
+其中 $\phi: \mathcal{X} \to \mathcal{H}$ 是特征映射。
+
+**常见核函数**:
+
+- 线性核：$k(\mathbf{x}, \mathbf{y}) = \langle \mathbf{x}, \mathbf{y} \rangle$
+- 多项式核：$k(\mathbf{x}, \mathbf{y}) = (\langle \mathbf{x}, \mathbf{y} \rangle + c)^d$
+- RBF核：$k(\mathbf{x}, \mathbf{y}) = \exp(-\gamma \|\mathbf{x} - \mathbf{y}\|^2)$
+
+### 6.2 支持向量机 / Support Vector Machines
+
+**定义 6.2.1** (线性SVM / Linear SVM)
+线性SVM的优化问题为：
+$$\min_{\mathbf{w}, b} \frac{1}{2}\|\mathbf{w}\|^2 + C \sum_{i=1}^{n} \xi_i$$
+$$\text{subject to } y_i(\mathbf{w}^T\mathbf{x}_i + b) \geq 1 - \xi_i, \quad \xi_i \geq 0$$
+
+**对偶问题**:
+$$\max_{\boldsymbol{\alpha}} \sum_{i=1}^{n} \alpha_i - \frac{1}{2} \sum_{i,j=1}^{n} \alpha_i \alpha_j y_i y_j \mathbf{x}_i^T\mathbf{x}_j$$
+$$\text{subject to } 0 \leq \alpha_i \leq C, \quad \sum_{i=1}^{n} \alpha_i y_i = 0$$
+
+## 7. 强化学习数学 / Reinforcement Learning Mathematics
+
+### 7.1 马尔可夫决策过程 / Markov Decision Processes
+
+**定义 7.1.1** (MDP)
+马尔可夫决策过程是一个五元组 $(\mathcal{S}, \mathcal{A}, \mathcal{P}, \mathcal{R}, \gamma)$：
+
+- $\mathcal{S}$：状态空间
+- $\mathcal{A}$：动作空间
+- $\mathcal{P}$：转移概率
+- $\mathcal{R}$：奖励函数
+- $\gamma$：折扣因子
+
+**价值函数**:
+$$V^\pi(s) = \mathbb{E}_\pi\left[\sum_{t=0}^{\infty} \gamma^t R_t | S_0 = s\right]$$
+
+**Q函数**:
+$$Q^\pi(s, a) = \mathbb{E}_\pi\left[\sum_{t=0}^{\infty} \gamma^t R_t | S_0 = s, A_0 = a\right]$$
+
+### 7.2 策略梯度 / Policy Gradient
+
+**定理 7.2.1** (策略梯度定理 / Policy Gradient Theorem)
+$$\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}[\nabla_\theta \log \pi_\theta(A|S) Q^{\pi_\theta}(S, A)]$$
+
+**REINFORCE算法**:
+$$\theta_{t+1} = \theta_t + \alpha_t G_t \nabla_\theta \log \pi_\theta(A_t|S_t)$$
+
+### 7.3 深度Q网络 / Deep Q-Networks
+
+**Q学习更新**:
+$$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha[R_{t+1} + \gamma \max_a Q(S_{t+1}, a) - Q(S_t, A_t)]$$
+
+**损失函数**:
+$$L(\theta) = \mathbb{E}[(R + \gamma \max_{a'} Q(s', a'; \theta^-) - Q(s, a; \theta))^2]$$
+
+## 8. 形式化实现 / Formal Implementation
+
+### 8.1 Lean 4 实现
+
+```lean
+-- 线性代数
+structure Vector (n : ℕ) where
+  components : List ℝ
+  length_eq : components.length = n
+
+def inner_product {n : ℕ} (v w : Vector n) : ℝ :=
+  sum (zip_with (λ x y, x * y) v.components w.components)
+
+def norm {n : ℕ} (v : Vector n) (p : ℝ) : ℝ :=
+  (sum (map (λ x, |x|^p) v.components))^(1/p)
+
+-- 优化理论
+structure OptimizationProblem where
+  objective : ℝⁿ → ℝ
+  constraints : List (ℝⁿ → ℝ)
+  domain : Set ℝⁿ
+
+def gradient_descent (f : ℝⁿ → ℝ) (x₀ : ℝⁿ) (α : ℝ) : ℝⁿ :=
+  x₀ - α * gradient f x₀
+
+-- 信息论
+def entropy (p : List ℝ) : ℝ :=
+  -sum (map (λ pi, pi * log pi) p)
+
+def mutual_information (p_xy : Matrix ℝ m n) (p_x p_y : List ℝ) : ℝ :=
+  sum (map (λ i, sum (map (λ j, p_xy i j * log (p_xy i j / (p_x i * p_y j))) (range n))) (range m))
+
+-- 神经网络
+structure NeuralNetwork where
+  weights : List (Matrix ℝ)
+  biases : List (Vector ℝ)
+  activations : List (ℝ → ℝ)
+
+def forward_pass (nn : NeuralNetwork) (input : Vector ℝ) : Vector ℝ :=
+  foldl (λ h (w, b, σ), map σ (add (matmul w h) b)) input (zip3 nn.weights nn.biases nn.activations)
+
+-- 强化学习
+structure MDP where
+  states : Type
+  actions : Type
+  transition : states → actions → states → ℝ
+  reward : states → actions → ℝ
+  discount : ℝ
+
+def value_function (mdp : MDP) (π : states → actions) (s : states) : ℝ :=
+  mdp.reward s (π s) + mdp.discount *
+  sum (map (λ s', mdp.transition s (π s) s' * value_function mdp π s') (all_states mdp))
+```
+
+### 8.2 Haskell 实现
+
+```haskell
+-- 线性代数
+newtype Vector n = Vector [Double]
+  deriving (Show, Eq)
+
+innerProduct :: Vector n -> Vector n -> Double
+innerProduct (Vector v) (Vector w) = sum (zipWith (*) v w)
+
+norm :: Vector n -> Double -> Double
+norm (Vector v) p = (sum (map (\x -> abs x ** p) v)) ** (1/p)
+
+-- 优化理论
+data OptimizationProblem = OptimizationProblem
+  { objective :: [Double] -> Double
+  , constraints :: [[Double] -> Double]
+  , domain :: [[Double]]
+  }
+
+gradientDescent :: ([Double] -> Double) -> [Double] -> Double -> [Double]
+gradientDescent f x₀ α = zipWith (-) x₀ (map (* α) (gradient f x₀))
+
+-- 信息论
+entropy :: [Double] -> Double
+entropy p = -sum (map (\pi -> pi * log pi) p)
+
+mutualInformation :: [[Double]] -> [Double] -> [Double] -> Double
+mutualInformation p_xy p_x p_y =
+  sum [sum [p_xy !! i !! j * log (p_xy !! i !! j / (p_x !! i * p_y !! j)) | j <- [0..n-1]] | i <- [0..m-1]]
+
+-- 神经网络
+data NeuralNetwork = NeuralNetwork
+  { weights :: [[[Double]]]
+  , biases :: [[Double]]
+  , activations :: [Double -> Double]
+  }
+
+forwardPass :: NeuralNetwork -> [Double] -> [Double]
+forwardPass nn input = foldl (\h (w, b, σ) -> map σ (add (matmul w h) b)) input (zip3 (weights nn) (biases nn) (activations nn))
+
+-- 强化学习
+data MDP = MDP
+  { states :: [String]
+  , actions :: [String]
+  , transition :: String -> String -> String -> Double
+  , reward :: String -> String -> Double
+  , discount :: Double
+  }
+
+valueFunction :: MDP -> (String -> String) -> String -> Double
+valueFunction mdp π s =
+  reward mdp s (π s) + discount mdp *
+  sum [transition mdp s (π s) s' * valueFunction mdp π s' | s' <- states mdp]
+```
+
+### 8.3 Rust 实现
+
+```rust
+// 线性代数
+pub struct Vector {
+    pub components: Vec<f64>,
+}
+
+impl Vector {
+    pub fn inner_product(&self, other: &Vector) -> f64 {
+        self.components
+            .iter()
+            .zip(other.components.iter())
+            .map(|(x, y)| x * y)
+            .sum()
+    }
+
+    pub fn norm(&self, p: f64) -> f64 {
+        self.components
+            .iter()
+            .map(|x| x.abs().powf(p))
+            .sum::<f64>()
+            .powf(1.0 / p)
+    }
+}
+
+// 优化理论
+pub struct OptimizationProblem {
+    pub objective: Box<dyn Fn(&[f64]) -> f64>,
+    pub constraints: Vec<Box<dyn Fn(&[f64]) -> f64>>,
+    pub domain: Vec<Vec<f64>>,
+}
+
+pub fn gradient_descent(
+    f: &dyn Fn(&[f64]) -> f64,
+    x₀: &[f64],
+    α: f64,
+) -> Vec<f64> {
+    let grad = gradient(f, x₀);
+    x₀.iter()
+        .zip(grad.iter())
+        .map(|(x, g)| x - α * g)
+        .collect()
+}
+
+// 信息论
+pub fn entropy(p: &[f64]) -> f64 {
+    -p.iter()
+        .map(|pi| pi * pi.ln())
+        .sum::<f64>()
+}
+
+pub fn mutual_information(
+    p_xy: &[Vec<f64>],
+    p_x: &[f64],
+    p_y: &[f64],
+) -> f64 {
+    let m = p_xy.len();
+    let n = p_xy[0].len();
+
+    (0..m)
+        .map(|i| {
+            (0..n)
+                .map(|j| {
+                    p_xy[i][j] * (p_xy[i][j] / (p_x[i] * p_y[j])).ln()
+                })
+                .sum::<f64>()
+        })
+        .sum()
+}
+
+// 神经网络
+pub struct NeuralNetwork {
+    pub weights: Vec<Vec<Vec<f64>>>,
+    pub biases: Vec<Vec<f64>>,
+    pub activations: Vec<Box<dyn Fn(f64) -> f64>>,
+}
+
+impl NeuralNetwork {
+    pub fn forward_pass(&self, input: &[f64]) -> Vec<f64> {
+        let mut h = input.to_vec();
+
+        for (w, b, σ) in self.weights.iter()
+            .zip(self.biases.iter())
+            .zip(self.activations.iter()) {
+            h = h.iter()
+                .zip(b.iter())
+                .map(|(hi, bi)| σ(hi + bi))
+                .collect();
+        }
+
+        h
+    }
+}
+
+// 强化学习
+pub struct MDP {
+    pub states: Vec<String>,
+    pub actions: Vec<String>,
+    pub transition: Box<dyn Fn(&str, &str, &str) -> f64>,
+    pub reward: Box<dyn Fn(&str, &str) -> f64>,
+    pub discount: f64,
+}
+
+impl MDP {
+    pub fn value_function(&self, π: &dyn Fn(&str) -> &str, s: &str) -> f64 {
+        let r = (self.reward)(s, π(s));
+        let v_next: f64 = self.states
+            .iter()
+            .map(|s_prime| {
+                (self.transition)(s, π(s), s_prime) * self.value_function(π, s_prime)
+            })
+            .sum();
+
+        r + self.discount * v_next
+    }
+}
+```
+
+---
+
+**相关链接**:
+
+- [概率论](01-概率论.md)
+- [统计学](02-统计学.md)
+- [随机过程](03-随机过程.md)
+- [数理统计](04-数理统计.md)
+- [时间序列分析](05-时间序列分析.md)
+
+---
+
+## 🎯 应用案例 / Applications
+
+### 0. 2025年最新应用：AI与数据科学融合计算 / Latest 2025 Applications: AI and Data Science Integration
+
+#### 0.1 以人为中心的数据科学 / Human-Centered Data Science
+
+**应用案例 0.1.1** (以人为中心的数据科学在个性化推荐中的应用 - 2025年最新)
+
+**应用场景**：
+
+- 个性化内容推荐系统（2025年最新技术）
+- 可解释AI系统
+- 用户隐私保护的数据分析
+
+**数学模型**：
+
+- 多目标优化：$\min_{\theta} [L(\theta) + \lambda_1 R_{\text{privacy}}(\theta) + \lambda_2 R_{\text{fairness}}(\theta)]$
+- 可解释性度量：$I(x, \hat{y}) = H(\hat{y}) - H(\hat{y}|x)$（互信息）
+- 公平性约束：$\mathbb{P}(\hat{y} = 1|A = a) = \mathbb{P}(\hat{y} = 1|A = b)$（统计公平性）
+
+**实际价值**：
+
+- 提升用户体验：提供更符合用户需求的推荐
+- 保护用户隐私：在保护隐私的前提下进行数据分析
+- 确保公平性：避免算法偏见和歧视
+
+#### 0.2 交互式数据科学 / Interactive Data Science
+
+**应用案例 0.2.1** (交互式数据科学在实时分析中的应用 - 2025年最新)
+
+**应用场景**：
+
+- 实时数据流分析
+- 交互式数据可视化
+- 在线学习系统
+
+**数学模型**：
+
+- 在线学习：$\theta_{t+1} = \theta_t - \eta_t \nabla L(\theta_t, x_t, y_t)$
+- 流式数据处理：$f(x_1, ..., x_n) = \text{Update}(f(x_1, ..., x_{n-1}), x_n)$
+- 增量更新：$\bar{x}_n = \frac{(n-1)\bar{x}_{n-1} + x_n}{n}$
+
+**实际价值**：
+
+- 实时响应：快速处理和分析数据流
+- 交互体验：用户可以与数据实时交互
+- 可扩展性：支持大规模数据流处理
+
+#### 0.3 云计算数学基础 / Cloud Computing Mathematics
+
+**应用案例 0.3.1** (分布式机器学习在云计算中的应用 - 2025年最新)
+
+**应用场景**：
+
+- 分布式模型训练
+- 边缘计算
+- 联邦学习
+
+**数学模型**：
+
+- 分布式梯度下降：$\theta_{t+1} = \theta_t - \frac{\eta}{K}\sum_{k=1}^K \nabla L_k(\theta_t)$
+- 联邦平均：$\bar{\theta} = \frac{1}{K}\sum_{k=1}^K \theta_k$
+- 通信效率：$C = \frac{\text{模型大小} \times \text{通信轮数}}{\text{总数据量}}$
+
+**实际价值**：
+
+- 提高训练效率：利用分布式计算加速训练
+- 保护数据隐私：数据不出本地，只共享模型参数
+- 降低成本：减少数据传输和存储成本
+
+#### 0.4 张量运算与深度学习 / Tensor Operations and Deep Learning
+
+**应用案例 0.4.1** (张量运算在大规模深度学习中的应用 - 2025年最新)
+
+**应用场景**：
+
+- 大规模语言模型训练（GPT-4、Claude等）
+- 多模态学习
+- 张量分解与压缩
+
+**数学模型**：
+
+- 张量积：$\mathbf{C} = \mathbf{A} \otimes \mathbf{B}$，其中$C_{i_1...i_mj_1...j_n} = A_{i_1...i_m} B_{j_1...j_n}$
+- 张量分解：$\mathbf{T} = \sum_{r=1}^R \mathbf{a}_r \circ \mathbf{b}_r \circ \mathbf{c}_r$（CP分解）
+- 张量压缩：$\mathbf{T}_{\text{compressed}} = \text{LowRank}(\mathbf{T}, k)$
+
+**实际价值**：
+
+- 提高计算效率：通过张量运算优化计算
+- 减少存储空间：通过张量分解压缩模型
+- 支持大规模模型：处理超大规模神经网络
+
+#### 0.5 随机优化与元学习 / Stochastic Optimization and Meta-Learning
+
+**应用案例 0.5.1** (随机优化在快速适应中的应用 - 2025年最新)
+
+**应用场景**：
+
+- 少样本学习
+- 快速模型适应
+- 元学习系统
+
+**数学模型**：
+
+- 随机梯度下降：$\theta_{t+1} = \theta_t - \eta_t \nabla_{\theta} L(\theta_t, x_{i_t}, y_{i_t})$
+- 自适应学习率：$\eta_t = \frac{\eta_0}{\sqrt{\sum_{s=1}^t g_s^2 + \epsilon}}$（AdaGrad）
+- 元学习目标：$\min_\phi \sum_{i=1}^N L_i(f_{\theta_i(\phi)})$，其中$\theta_i(\phi) = \phi - \alpha \nabla L_i(\phi)$
+
+**实际价值**：
+
+- 快速适应：模型能够快速适应新任务
+- 提高效率：减少训练时间和计算资源
+- 泛化能力：提高模型在新任务上的泛化能力
+
+#### 0.6 贝叶斯深度学习 / Bayesian Deep Learning
+
+**应用案例 0.6.1** (贝叶斯深度学习在不确定性量化中的应用 - 2025年最新)
+
+**应用场景**：
+
+- 不确定性量化
+- 主动学习
+- 鲁棒性分析
+
+**数学模型**：
+
+- 贝叶斯神经网络：$p(\theta|D) = \frac{p(D|\theta)p(\theta)}{p(D)}$
+- 变分推断：$q^*(\theta) = \arg\min_{q} \text{KL}(q(\theta)||p(\theta|D))$
+- 预测分布：$p(y|x, D) = \int p(y|x, \theta)p(\theta|D)d\theta$
+
+**实际价值**：
+
+- 不确定性量化：提供预测的不确定性估计
+- 提高鲁棒性：模型对输入扰动更加鲁棒
+- 支持决策：为决策提供不确定性信息
+
+#### 0.7 几何深度学习 / Geometric Deep Learning
+
+**应用案例 0.7.1** (几何深度学习在图神经网络中的应用 - 2025年最新)
+
+**应用场景**：
+
+- 图神经网络
+- 3D形状分析
+- 流形学习
+
+**数学模型**：
+
+- 图卷积：$H^{(l+1)} = \sigma(\tilde{D}^{-\frac{1}{2}}\tilde{A}\tilde{D}^{-\frac{1}{2}}H^{(l)}W^{(l)})$
+- 流形上的梯度：$\nabla_M f = \text{Proj}_M(\nabla f)$
+- 等变网络：$f(T_g x) = T_g f(x)$（等变性）
+
+**实际价值**：
+
+- 处理非欧数据：处理图、流形等非欧几里得数据
+- 保持几何结构：保持数据的几何性质
+- 提高性能：在几何数据上取得更好的性能
+
+---
+
+### 1. 计算机视觉应用
+
+#### 1.1 图像分类
+
+**应用案例 1.1.1** (卷积神经网络在图像分类中的应用)
+
+- **应用场景**: ImageNet图像分类挑战、医学影像诊断、自动驾驶
+- **数学模型**: 卷积神经网络、反向传播算法、Softmax分类器
+- **实际价值**: 实现高精度图像识别，推动计算机视觉技术发展
+
+**应用案例 1.1.2** (迁移学习在图像分类中的应用)
+
+- **应用场景**: 小样本图像分类、领域适应
+- **数学模型**: 迁移学习、特征提取、微调
+- **实际价值**: 减少数据需求，提高模型泛化能力
+
+#### 1.2 目标检测
+
+**应用案例 1.2.1** (YOLO算法在实时目标检测中的应用)
+
+- **应用场景**: 自动驾驶、视频监控、机器人导航
+- **数学模型**: 单阶段检测、边界框回归、非极大值抑制
+- **实际价值**: 实现实时目标检测，满足实际应用需求
+
+#### 1.3 图像生成
+
+**应用案例 1.3.1** (生成对抗网络在图像生成中的应用)
+
+- **应用场景**: 艺术创作、数据增强、虚拟现实
+- **数学模型**: 生成对抗网络、对抗训练、Wasserstein距离
+- **实际价值**: 生成高质量图像，推动创意产业发展
+
+### 2. 自然语言处理应用
+
+#### 2.1 文本分类
+
+**应用案例 2.1.1** (文本分类在情感分析中的应用)
+
+- **应用场景**: 社交媒体监控、产品评论分析、舆情分析
+- **数学模型**: 词向量、循环神经网络、注意力机制
+- **实际价值**: 自动分析文本情感，支持商业决策
+
+#### 2.2 机器翻译
+
+**应用案例 2.2.1** (Transformer在机器翻译中的应用)
+
+- **应用场景**: 多语言翻译、跨语言交流、文档翻译
+- **数学模型**: Transformer架构、自注意力机制、位置编码
+- **实际价值**: 实现高质量机器翻译，打破语言障碍
+
+#### 2.3 语言模型
+
+**应用案例 2.3.1** (大语言模型在文本生成中的应用)
+
+- **应用场景**: 对话系统、内容创作、代码生成
+- **数学模型**: 自回归模型、Transformer、预训练-微调范式
+- **实际价值**: 生成高质量文本，提升AI能力
+
+### 3. 推荐系统应用
+
+#### 3.1 协同过滤
+
+**应用案例 3.1.1** (协同过滤在电商推荐中的应用)
+
+- **应用场景**: 商品推荐、内容推荐、个性化服务
+- **数学模型**: 矩阵分解、奇异值分解、协同过滤算法
+- **实际价值**: 提高用户满意度，增加平台收入
+
+#### 3.2 深度学习推荐
+
+**应用案例 3.2.1** (深度神经网络在推荐系统中的应用)
+
+- **应用场景**: 视频推荐、新闻推荐、音乐推荐
+- **数学模型**: 深度神经网络、特征交叉、多任务学习
+- **实际价值**: 提高推荐准确性，改善用户体验
+
+### 4. 语音识别应用
+
+#### 4.1 语音转文字
+
+**应用案例 4.1.1** (语音识别在智能助手中的应用)
+
+- **应用场景**: 智能音箱、语音输入、语音控制
+- **数学模型**: 循环神经网络、CTC损失、注意力机制
+- **实际价值**: 实现自然的人机交互，提升用户体验
+
+#### 4.2 语音合成
+
+**应用案例 4.2.1** (语音合成在文本转语音中的应用)
+
+- **应用场景**: 有声读物、语音导航、辅助阅读
+- **数学模型**: WaveNet、Tacotron、神经声码器
+- **实际价值**: 生成自然语音，提升可访问性
+
+### 5. 机器人学应用
+
+#### 5.1 强化学习在机器人控制中的应用
+
+**应用案例 5.1.1** (强化学习在机器人导航中的应用)
+
+- **应用场景**: 自主导航、路径规划、避障
+- **数学模型**: 马尔可夫决策过程、Q学习、策略梯度
+- **实际价值**: 实现自主机器人，应用于物流和服务行业
+
+#### 5.2 模仿学习
+
+**应用案例 5.2.1** (模仿学习在机器人操作中的应用)
+
+- **应用场景**: 机器人抓取、装配任务、精细操作
+- **数学模型**: 行为克隆、逆强化学习、生成对抗模仿学习
+- **实际价值**: 快速学习复杂技能，提高机器人适应性
+
+### 6. 医疗诊断应用
+
+#### 6.1 医学影像分析
+
+**应用案例 6.1.1** (深度学习在医学影像诊断中的应用)
+
+- **应用场景**: 癌症检测、疾病诊断、影像分析
+- **数学模型**: 卷积神经网络、迁移学习、多任务学习
+- **实际价值**: 提高诊断准确性，辅助医生决策
+
+#### 6.2 药物发现
+
+**应用案例 6.2.1** (机器学习在药物发现中的应用)
+
+- **应用场景**: 新药研发、药物筛选、分子设计
+- **数学模型**: 图神经网络、分子表示学习、生成模型
+- **实际价值**: 加速药物研发，降低研发成本
+
+### 7. 金融科技应用
+
+#### 7.1 信用评分
+
+**应用案例 7.1.1** (机器学习在信用评分中的应用)
+
+- **应用场景**: 银行贷款审批、信用卡申请、风险评估
+- **数学模型**: 逻辑回归、梯度提升树、神经网络
+- **实际价值**: 提高风险评估准确性，优化信贷决策
+
+#### 7.2 欺诈检测
+
+**应用案例 7.2.1** (异常检测在金融欺诈检测中的应用)
+
+- **应用场景**: 信用卡欺诈、交易异常检测、反洗钱
+- **数学模型**: 异常检测、孤立森林、自编码器
+- **实际价值**: 及时发现欺诈行为，保护用户资金安全
+
+#### 7.3 算法交易
+
+**应用案例 7.3.1** (强化学习在算法交易中的应用)
+
+- **应用场景**: 量化交易、高频交易、投资策略优化
+- **数学模型**: 强化学习、多臂老虎机、策略梯度
+- **实际价值**: 优化交易策略，提高投资收益
+
+---
+
+## 总结 / Summary
+
+机器学习数学基础为人工智能的发展提供了坚实的理论支撑。通过线性代数、微积分、概率论、信息论等数学工具，机器学习能够从数据中学习模式并做出预测。
+
+**The mathematical foundations of machine learning provide solid theoretical support for the development of artificial intelligence. Through mathematical tools such as linear algebra, calculus, probability theory, and information theory, machine learning can learn patterns from data and make predictions.**
+
+### 关键要点 / Key Points
+
+1. **线性代数**: 为向量运算、矩阵分解、特征提取提供基础
+2. **微积分**: 为梯度下降、反向传播、优化算法提供工具
+3. **概率论**: 为贝叶斯推理、不确定性建模提供框架
+4. **信息论**: 为特征选择、模型评估提供理论指导
+5. **优化理论**: 为模型训练、参数调优提供方法
+6. **实际应用**: 在计算机视觉、自然语言处理、推荐系统等领域广泛应用
+
+**1. Linear Algebra**: Provides foundation for vector operations, matrix decomposition, feature extraction
+**2. Calculus**: Provides tools for gradient descent, backpropagation, optimization algorithms
+**3. Probability Theory**: Provides framework for Bayesian inference, uncertainty modeling
+**4. Information Theory**: Provides theoretical guidance for feature selection, model evaluation
+**5. Optimization Theory**: Provides methods for model training, parameter tuning
+**6. Practical Applications**: Wide applications in computer vision, natural language processing, recommendation systems, etc.
+
+### 知识关联 / Knowledge Connections
+
+- **与统计学的关系**: 机器学习是统计学的现代扩展
+- **与优化理论的关系**: 机器学习问题本质上是优化问题
+- **与信息论的关系**: 信息论为机器学习提供理论基础
+- **与神经科学的关系**: 神经网络受到生物神经系统的启发
+
+### 进一步学习 / Further Learning
+
+- **深度学习**: 卷积神经网络、循环神经网络、注意力机制
+- **强化学习**: Q学习、策略梯度、深度强化学习
+- **生成模型**: 生成对抗网络、变分自编码器、扩散模型
+- **应用领域**: 计算机视觉、自然语言处理、语音识别、机器人学
+
+---
+
+**参考文献 / References**:
+
+1. Bishop, C.M. "Pattern Recognition and Machine Learning". 2006.
+2. Hastie, T., Tibshirani, R., and Friedman, J. "The Elements of Statistical Learning". 2001.
+3. Goodfellow, I., Bengio, Y., and Courville, A. "Deep Learning". 2016.
+4. Murphy, K.P. "Machine Learning: A Probabilistic Perspective". 2012.
+5. Sutton, R.S. and Barto, A.G. "Reinforcement Learning: An Introduction". 2018.
+
+---

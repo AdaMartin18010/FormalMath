@@ -1,4 +1,4 @@
-# 谱序列与Leray谱序列：上同调的计算工具
+﻿# 谱序列与Leray谱序列：上同调的计算工具
 
 
 ## 📋 目录
@@ -329,7 +329,7 @@ Cech-to-derived谱序列：
    $$E_r^{0,q} = \ker(H^q) \text{（消失项）}$$
 
 10. **退化条件**：
-    $$\text{若 } E_r^{p,q} = 0 \text{ 对某个 $r$，则 } E_s^{p,q} = 0 \text{ 对所有 } s \geq r$$
+    $$\text{若 } E_r^{p,q} = 0 \text{ 对某个 $r$，则 } E_s^{p,q} = 0 \text{ 对所有 } s \geqqqqq r$$
 
 ---
 

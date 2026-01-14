@@ -1,0 +1,672 @@
+# 谓词逻辑 / Predicate Logic
+
+**主题编号**: B.07.02
+**创建日期**: 2025年11月21日
+**最后更新**: 2025年11月21日
+
+---
+
+## 目录 / Table of Contents
+
+- [谓词逻辑 / Predicate Logic](#谓词逻辑--predicate-logic)
+  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [1. 基本概念 / Basic Concepts](#1-基本概念--basic-concepts)
+    - [1.1 谓词 / Predicates](#11-谓词--predicates)
+    - [1.2 量词 / Quantifiers](#12-量词--quantifiers)
+    - [1.3 项 / Terms](#13-项--terms)
+  - [2. 语法 / Syntax](#2-语法--syntax)
+    - [2.1 语言 / Language](#21-语言--language)
+    - [2.2 公式 / Formulas](#22-公式--formulas)
+    - [2.3 替换 / Substitution](#23-替换--substitution)
+  - [3. 语义 / Semantics](#3-语义--semantics)
+    - [3.1 结构 / Structures](#31-结构--structures)
+    - [3.2 真值 / Truth](#32-真值--truth)
+    - [3.3 有效性 / Validity](#33-有效性--validity)
+  - [4. 形式系统 / Formal Systems](#4-形式系统--formal-systems)
+    - [4.1 自然演绎 / Natural Deduction](#41-自然演绎--natural-deduction)
+    - [4.2 希尔伯特系统 / Hilbert System](#42-希尔伯特系统--hilbert-system)
+    - [4.3 证明 / Proofs](#43-证明--proofs)
+  - [5. 模型论 / Model Theory](#5-模型论--model-theory)
+    - [5.1 同构 / Isomorphism](#51-同构--isomorphism)
+    - [5.2 初等等价 / Elementary Equivalence](#52-初等等价--elementary-equivalence)
+    - [5.3 子结构 / Substructures](#53-子结构--substructures)
+  - [6. 完备性定理 / Completeness Theorems](#6-完备性定理--completeness-theorems)
+    - [6.1 哥德尔完备性定理 / Gödel's Completeness Theorem](#61-哥德尔完备性定理--gödels-completeness-theorem)
+    - [6.2 勒文海姆-斯科伦定理 / Löwenheim-Skolem Theorems](#62-勒文海姆-斯科伦定理--löwenheim-skolem-theorems)
+    - [6.3 模型存在定理 / Model Existence Theorem](#63-模型存在定理--model-existence-theorem)
+  - [7. 紧致性定理 / Compactness Theorem](#7-紧致性定理--compactness-theorem)
+    - [7.1 紧致性定理的陈述 / Statement of Compactness Theorem](#71-紧致性定理的陈述--statement-of-compactness-theorem)
+    - [7.2 紧致性定理的应用 / Applications of Compactness Theorem](#72-紧致性定理的应用--applications-of-compactness-theorem)
+    - [7.3 紧致性定理的推广 / Generalizations of Compactness Theorem](#73-紧致性定理的推广--generalizations-of-compactness-theorem)
+  - [8. 形式化实现 / Formal Implementation](#8-形式化实现--formal-implementation)
+    - [8.1 Lean 4 实现 / Lean 4 Implementation](#81-lean-4-实现--lean-4-implementation)
+    - [8.2 Haskell 实现 / Haskell Implementation](#82-haskell-实现--haskell-implementation)
+    - [8.3 重要定理总结 / Summary of Important Theorems](#83-重要定理总结--summary-of-important-theorems)
+  - [参考文献 / References](#参考文献--references)
+
+---
+
+## 1. 基本概念 / Basic Concepts
+
+### 1.1 谓词 / Predicates
+
+**定义 1.1.1** (谓词 / Predicate)
+谓词是表示对象性质或关系的符号。
+
+**定义 1.1.2** (一元谓词 / Unary Predicate)
+一元谓词表示对象的性质，如 $P(x)$ 表示"$x$ 具有性质 $P$"。
+
+**定义 1.1.3** (多元谓词 / Multiary Predicate)
+多元谓词表示对象间的关系，如 $R(x,y)$ 表示"$x$ 和 $y$ 具有关系 $R$"。
+
+**例子** / Examples:
+
+- 一元谓词：$P(x)$ = "$x$ 是素数"
+- 二元谓词：$R(x,y)$ = "$x$ 大于 $y$"
+- 三元谓词：$S(x,y,z)$ = "$x$ 是 $y$ 和 $z$ 的和"
+
+### 1.2 量词 / Quantifiers
+
+**定义 1.2.1** (全称量词 / Universal Quantifier)
+全称量词 $\forall$ 表示"对所有"，$\forall x \phi(x)$ 表示"对所有 $x$，$\phi(x)$ 成立"。
+
+**定义 1.2.2** (存在量词 / Existential Quantifier)
+存在量词 $\exists$ 表示"存在"，$\exists x \phi(x)$ 表示"存在 $x$ 使得 $\phi(x)$ 成立"。
+
+**定理 1.2.1** (量词的否定 / Negation of Quantifiers)
+$$\neg \forall x \phi(x) \equiv \exists x \neg \phi(x)$$
+$$\neg \exists x \phi(x) \equiv \forall x \neg \phi(x)$$
+
+### 1.3 项 / Terms
+
+**定义 1.3.1** (项 / Term)
+项递归定义为：
+
+1. 变量是项
+2. 常量是项
+3. 如果 $f$ 是 $n$ 元函数符号，$t_1, \ldots, t_n$ 是项，则 $f(t_1, \ldots, t_n)$ 是项
+
+**定义 1.3.2** (原子公式 / Atomic Formula)
+原子公式是形如 $P(t_1, \ldots, t_n)$ 的表达式，其中 $P$ 是 $n$ 元谓词符号，$t_1, \ldots, t_n$ 是项。
+
+---
+
+## 2. 语法 / Syntax
+
+### 2.1 语言 / Language
+
+**定义 2.1.1** (一阶语言 / First-Order Language)
+一阶语言 $\mathcal{L}$ 由以下符号组成：
+
+1. **逻辑符号** / Logical Symbols:
+   - 变量：$x, y, z, \ldots$
+   - 连接词：$\neg, \land, \lor, \to, \leftrightarrow$
+   - 量词：$\forall, \exists$
+   - 等号：$=$
+   - 括号：$(, )$
+
+2. **非逻辑符号** / Non-Logical Symbols:
+   - 谓词符号：$P, Q, R, \ldots$
+   - 函数符号：$f, g, h, \ldots$
+   - 常量符号：$a, b, c, \ldots$
+
+**定义 2.1.2** (项的复杂度 / Complexity of Terms)
+项的复杂度递归定义为：
+
+1. 变量和常量的复杂度为 $0$
+2. $f(t_1, \ldots, t_n)$ 的复杂度为 $1 + \max\{\text{复杂度}(t_i)\}$
+
+### 2.2 公式 / Formulas
+
+**定义 2.2.1** (公式 / Formula)
+公式递归定义为：
+
+1. 原子公式是公式
+2. 如果 $\phi$ 是公式，则 $\neg \phi$ 是公式
+3. 如果 $\phi$ 和 $\psi$ 是公式，则 $(\phi \land \psi)$、$(\phi \lor \psi)$、$(\phi \to \psi)$、$(\phi \leftrightarrow \psi)$ 是公式
+4. 如果 $\phi$ 是公式，$x$ 是变量，则 $\forall x \phi$ 和 $\exists x \phi$ 是公式
+
+**定义 2.2.2** (自由变量 / Free Variable)
+变量 $x$ 在公式 $\phi$ 中自由出现，如果：
+
+1. $\phi$ 是原子公式且 $x$ 在 $\phi$ 中出现
+2. $\phi = \neg \psi$ 且 $x$ 在 $\psi$ 中自由出现
+3. $\phi = \psi \circ \chi$ 且 $x$ 在 $\psi$ 或 $\chi$ 中自由出现
+4. $\phi = Qy \psi$ 且 $x \neq y$ 且 $x$ 在 $\psi$ 中自由出现
+
+**定义 2.2.3** (约束变量 / Bound Variable)
+变量 $x$ 在公式 $\phi$ 中约束出现，如果 $x$ 在 $\phi$ 中出现但不自由出现。
+
+**定义 2.2.4** (句子 / Sentence)
+句子是没有自由变量的公式。
+
+### 2.3 替换 / Substitution
+
+**定义 2.3.1** (替换 / Substitution)
+替换是从变量到项的映射 $\sigma$。
+
+**定义 2.3.2** (替换的应用 / Application of Substitution)
+公式 $\phi$ 在替换 $\sigma$ 下的结果 $\phi\sigma$ 递归定义为：
+
+1. 如果 $\phi$ 是原子公式，则 $\phi\sigma$ 是将 $\sigma$ 应用到 $\phi$ 中所有变量
+2. $(\neg \phi)\sigma = \neg(\phi\sigma)$
+3. $(\phi \circ \psi)\sigma = (\phi\sigma) \circ (\psi\sigma)$
+4. $(\forall x \phi)\sigma = \forall x (\phi\sigma)$ 如果 $x$ 不在 $\sigma$ 的定义域中
+
+---
+
+## 3. 语义 / Semantics
+
+### 3.1 结构 / Structures
+
+**定义 3.1.1** (结构 / Structure)
+语言 $\mathcal{L}$ 的结构 $\mathcal{A}$ 由以下组成：
+
+1. **论域** / Domain: 非空集合 $A$
+2. **解释函数** / Interpretation Function:
+   - 对每个 $n$ 元谓词符号 $P$，$P^{\mathcal{A}} \subseteq A^n$
+   - 对每个 $n$ 元函数符号 $f$，$f^{\mathcal{A}}: A^n \to A$
+   - 对每个常量符号 $c$，$c^{\mathcal{A}} \in A$
+
+**定义 3.1.2** (赋值 / Assignment)
+赋值是从变量集到论域的函数 $s: \text{Var} \to A$。
+
+### 3.2 真值 / Truth
+
+**定义 3.2.1** (项的值 / Value of Terms)
+项 $t$ 在结构 $\mathcal{A}$ 和赋值 $s$ 下的值 $t^{\mathcal{A}}[s]$ 递归定义为：
+
+1. 如果 $t$ 是变量 $x$，则 $t^{\mathcal{A}}[s] = s(x)$
+2. 如果 $t$ 是常量 $c$，则 $t^{\mathcal{A}}[s] = c^{\mathcal{A}}$
+3. 如果 $t = f(t_1, \ldots, t_n)$，则 $t^{\mathcal{A}}[s] = f^{\mathcal{A}}(t_1^{\mathcal{A}}[s], \ldots, t_n^{\mathcal{A}}[s])$
+
+**定义 3.2.2** (满足关系 / Satisfaction Relation)
+结构 $\mathcal{A}$ 和赋值 $s$ 满足公式 $\phi$，记作 $\mathcal{A} \models \phi[s]$，递归定义为：
+
+1. **原子公式** / Atomic Formula: $\mathcal{A} \models P[t_1, \ldots, t_n](s)$ 当且仅当 $(t_1^{\mathcal{A}}[s], \ldots, t_n^{\mathcal{A}}[s]) \in P^{\mathcal{A}}$
+2. **否定** / Negation: $\mathcal{A} \models \neg \phi[s]$ 当且仅当 $\mathcal{A} \not\models \phi[s]$
+3. **连接词** / Connectives: 按命题逻辑的规则
+4. **全称量词** / Universal Quantifier: $\mathcal{A} \models \forall x \phi[s]$ 当且仅当对所有 $a \in A$，$\mathcal{A} \models \phi[s(x/a)]$
+5. **存在量词** / Existential Quantifier: $\mathcal{A} \models \exists x \phi[s]$ 当且仅当存在 $a \in A$ 使得 $\mathcal{A} \models \phi[s(x/a)]$
+
+### 3.3 有效性 / Validity
+
+**定义 3.3.1** (有效性 / Validity)
+公式 $\phi$ 称为有效的，如果对于所有结构 $\mathcal{A}$ 和赋值 $s$，$\mathcal{A} \models \phi[s]$。
+
+**定义 3.3.2** (可满足性 / Satisfiability)
+公式 $\phi$ 称为可满足的，如果存在结构 $\mathcal{A}$ 和赋值 $s$ 使得 $\mathcal{A} \models \phi[s]$。
+
+**定义 3.3.3** (逻辑蕴涵 / Logical Entailment)
+公式集 $\Gamma$ 逻辑蕴涵公式 $\phi$，记作 $\Gamma \models \phi$，如果对于所有满足 $\Gamma$ 的结构和赋值，都满足 $\phi$。
+
+---
+
+## 4. 形式系统 / Formal Systems
+
+### 4.1 自然演绎 / Natural Deduction
+
+**定义 4.1.1** (自然演绎规则 / Natural Deduction Rules)
+谓词逻辑的自然演绎规则包括命题逻辑的规则加上：
+
+**全称量词规则** / Universal Quantifier Rules:
+
+- **全称引入** / Universal Introduction: $\frac{\phi}{\forall x \phi}$ (如果 $x$ 不在假设中自由出现)
+- **全称消除** / Universal Elimination: $\frac{\forall x \phi}{\phi[t/x]}$
+
+**存在量词规则** / Existential Quantifier Rules:
+
+- **存在引入** / Existential Introduction: $\frac{\phi[t/x]}{\exists x \phi}$
+- **存在消除** / Existential Elimination: $\frac{\exists x \phi \quad [\phi] \quad \psi}{\psi}$ (如果 $x$ 不在 $\psi$ 中自由出现)
+
+### 4.2 希尔伯特系统 / Hilbert System
+
+**定义 4.2.1** (谓词逻辑的公理 / Axioms of Predicate Logic)
+谓词逻辑的公理包括：
+
+1. **命题逻辑公理** / Propositional Logic Axioms
+2. **全称实例化** / Universal Instantiation: $\forall x \phi \to \phi[t/x]$
+3. **全称概括** / Universal Generalization: $\phi \to \forall x \phi$ (如果 $x$ 不在 $\phi$ 的假设中自由出现)
+
+**推理规则** / Inference Rule:
+
+- **分离规则** / Modus Ponens: $\frac{\phi \to \psi \quad \phi}{\psi}$
+
+### 4.3 证明 / Proofs
+
+**定义 4.3.1** (证明 / Proof)
+从假设集 $\Gamma$ 到结论 $\phi$ 的证明是有限序列 $\phi_1, \phi_2, \ldots, \phi_n$，其中每个 $\phi_i$ 要么是公理，要么属于 $\Gamma$，要么由前面的公式通过推理规则得到。
+
+**定义 4.3.2** (可证性 / Provability)
+如果存在从 $\Gamma$ 到 $\phi$ 的证明，则称 $\phi$ 从 $\Gamma$ 可证，记作 $\Gamma \vdash \phi$。
+
+---
+
+## 5. 模型论 / Model Theory
+
+### 5.1 同构 / Isomorphism
+
+**定义 5.1.1** (同构 / Isomorphism)
+结构 $\mathcal{A}$ 和 $\mathcal{B}$ 之间的同构是双射 $f: A \to B$ 使得：
+
+1. 对每个 $n$ 元谓词符号 $P$，$(a_1, \ldots, a_n) \in P^{\mathcal{A}}$ 当且仅当 $(f(a_1), \ldots, f(a_n)) \in P^{\mathcal{B}}$
+2. 对每个 $n$ 元函数符号 $g$，$f(g^{\mathcal{A}}(a_1, \ldots, a_n)) = g^{\mathcal{B}}(f(a_1), \ldots, f(a_n))$
+3. 对每个常量符号 $c$，$f(c^{\mathcal{A}}) = c^{\mathcal{B}}$
+
+**定理 5.1.1** (同构保持真值 / Isomorphism Preserves Truth)
+如果 $\mathcal{A} \cong \mathcal{B}$，则对于所有句子 $\phi$，$\mathcal{A} \models \phi$ 当且仅当 $\mathcal{B} \models \phi$。
+
+### 5.2 初等等价 / Elementary Equivalence
+
+**定义 5.2.1** (初等等价 / Elementary Equivalence)
+结构 $\mathcal{A}$ 和 $\mathcal{B}$ 称为初等等价的，记作 $\mathcal{A} \equiv \mathcal{B}$，如果对于所有句子 $\phi$，$\mathcal{A} \models \phi$ 当且仅当 $\mathcal{B} \models \phi$。
+
+**定理 5.2.1** (同构蕴含初等等价 / Isomorphism Implies Elementary Equivalence)
+如果 $\mathcal{A} \cong \mathcal{B}$，则 $\mathcal{A} \equiv \mathcal{B}$。
+
+### 5.3 子结构 / Substructures
+
+**定义 5.3.1** (子结构 / Substructure)
+结构 $\mathcal{B}$ 是结构 $\mathcal{A}$ 的子结构，如果：
+
+1. $B \subseteq A$
+2. 对每个常量符号 $c$，$c^{\mathcal{B}} = c^{\mathcal{A}}$
+3. 对每个函数符号 $f$，$f^{\mathcal{B}}$ 是 $f^{\mathcal{A}}$ 在 $B$ 上的限制
+4. 对每个谓词符号 $P$，$P^{\mathcal{B}} = P^{\mathcal{A}} \cap B^n$
+
+**定义 5.3.2** (初等子结构 / Elementary Substructure)
+子结构 $\mathcal{B}$ 是 $\mathcal{A}$ 的初等子结构，如果对于所有公式 $\phi$ 和赋值 $s: \text{Var} \to B$，$\mathcal{A} \models \phi[s]$ 当且仅当 $\mathcal{B} \models \phi[s]$。
+
+---
+
+## 6. 完备性定理 / Completeness Theorems
+
+### 6.1 哥德尔完备性定理 / Gödel's Completeness Theorem
+
+**定理 6.1.1** (哥德尔完备性定理 / Gödel's Completeness Theorem)
+对于任意公式集 $\Gamma$ 和公式 $\phi$，$\Gamma \models \phi$ 当且仅当 $\Gamma \vdash \phi$。
+
+**证明** / Proof:
+使用亨金构造证明。主要步骤：
+
+1. 将 $\Gamma$ 扩展为极大一致集
+2. 构造典范模型
+3. 证明真值引理
+
+**推论 6.1.1** (紧致性定理 / Compactness Theorem)
+公式集 $\Gamma$ 是可满足的当且仅当 $\Gamma$ 的每个有限子集都是可满足的。
+
+### 6.2 勒文海姆-斯科伦定理 / Löwenheim-Skolem Theorems
+
+**定理 6.2.1** (向下勒文海姆-斯科伦定理 / Downward Löwenheim-Skolem Theorem)
+如果可数语言的理论有无限模型，则它有任意大的无限子模型。
+
+**定理 6.2.2** (向上勒文海姆-斯科伦定理 / Upward Löwenheim-Skolem Theorem)
+如果理论有无限模型，则它有任意大的模型。
+
+### 6.3 模型存在定理 / Model Existence Theorem
+
+**定理 6.3.1** (模型存在定理 / Model Existence Theorem)
+如果公式集 $\Gamma$ 是一致的，则 $\Gamma$ 有模型。
+
+**证明** / Proof:
+使用亨金构造或超积构造。
+
+---
+
+## 7. 紧致性定理 / Compactness Theorem
+
+### 7.1 紧致性定理的陈述 / Statement of Compactness Theorem
+
+**定理 7.1.1** (紧致性定理 / Compactness Theorem)
+公式集 $\Gamma$ 是可满足的当且仅当 $\Gamma$ 的每个有限子集都是可满足的。
+
+**证明** / Proof:
+从哥德尔完备性定理和有限证明的性质导出。
+
+### 7.2 紧致性定理的应用 / Applications of Compactness Theorem
+
+**定理 7.2.1** (非标准分析 / Non-Standard Analysis)
+存在包含无限小和无限大的实数域的非标准模型。
+
+**定理 7.2.2** (饱和模型 / Saturated Models)
+对于任意基数 $\kappa$，存在 $\kappa$-饱和模型。
+
+**定理 7.2.3** (超积 / Ultraproducts)
+超积是保持一阶性质的模型构造方法。
+
+### 7.3 紧致性定理的推广 / Generalizations of Compactness Theorem
+
+**定理 7.3.1** (林登鲍姆引理 / Lindenbaum's Lemma)
+每个一致的理论都可以扩展为极大一致理论。
+
+**定理 7.3.2** (亨金引理 / Henkin's Lemma)
+每个一致的理论都有典范模型。
+
+---
+
+## 8. 形式化实现 / Formal Implementation
+
+### 8.1 Lean 4 实现 / Lean 4 Implementation
+
+```lean
+-- 语言
+structure FirstOrderLanguage where
+  predicateSymbols : Set String
+  functionSymbols : Set String
+  constantSymbols : Set String
+
+-- 项
+inductive Term (L : FirstOrderLanguage) where
+  | var : String → Term L
+  | const : String → Term L
+  | func : String → List (Term L) → Term L
+
+-- 公式
+inductive Formula (L : FirstOrderLanguage) where
+  | atomic : String → List (Term L) → Formula L
+  | equal : Term L → Term L → Formula L
+  | neg : Formula L → Formula L
+  | and : Formula L → Formula L → Formula L
+  | or : Formula L → Formula L → Formula L
+  | imp : Formula L → Formula L → Formula L
+  | equiv : Formula L → Formula L → Formula L
+  | forall : String → Formula L → Formula L
+  | exists : String → Formula L → Formula L
+
+-- 结构
+structure Structure (L : FirstOrderLanguage) where
+  domain : Type
+  predicateInterpretation : String → Set (List domain)
+  functionInterpretation : String → domain → domain
+  constantInterpretation : String → domain
+
+-- 赋值
+def Assignment (L : FirstOrderLanguage) (A : Structure L) :=
+  String → A.domain
+
+-- 项的值
+def termValue {L : FirstOrderLanguage} (A : Structure L) (t : Term L) (s : Assignment L A) : A.domain :=
+  match t with
+  | Term.var x => s x
+  | Term.const c => A.constantInterpretation c
+  | Term.func f args => A.functionInterpretation f (map (λ t => termValue A t s) args)
+
+-- 满足关系
+def satisfies {L : FirstOrderLanguage} (A : Structure L) (φ : Formula L) (s : Assignment L A) : Prop :=
+  match φ with
+  | Formula.atomic P args =>
+    (map (λ t => termValue A t s) args) ∈ A.predicateInterpretation P
+  | Formula.equal t1 t2 => termValue A t1 s = termValue A t2 s
+  | Formula.neg ψ => ¬ satisfies A ψ s
+  | Formula.and ψ χ => satisfies A ψ s ∧ satisfies A χ s
+  | Formula.or ψ χ => satisfies A ψ s ∨ satisfies A χ s
+  | Formula.imp ψ χ => satisfies A ψ s → satisfies A χ s
+  | Formula.equiv ψ χ => satisfies A ψ s ↔ satisfies A χ s
+  | Formula.forall x ψ => ∀ a : A.domain, satisfies A ψ (s.update x a)
+  | Formula.exists x ψ => ∃ a : A.domain, satisfies A ψ (s.update x a)
+
+-- 有效性
+def Valid (L : FirstOrderLanguage) (φ : Formula L) : Prop :=
+  ∀ A : Structure L, ∀ s : Assignment L A, satisfies A φ s
+
+-- 可满足性
+def Satisfiable (L : FirstOrderLanguage) (φ : Formula L) : Prop :=
+  ∃ A : Structure L, ∃ s : Assignment L A, satisfies A φ s
+
+-- 自然演绎
+inductive NaturalDeduction (L : FirstOrderLanguage) where
+  | assumption : Formula L → NaturalDeduction L
+  | universalIntro : String → NaturalDeduction L → NaturalDeduction L
+  | universalElim : Term L → NaturalDeduction L → NaturalDeduction L
+  | existentialIntro : Term L → NaturalDeduction L → NaturalDeduction L
+  | existentialElim : Formula L → String → NaturalDeduction L → NaturalDeduction L → NaturalDeduction L
+
+-- 可证性
+def Provable (L : FirstOrderLanguage) (Γ : Set (Formula L)) (φ : Formula L) : Prop :=
+  ∃ d : NaturalDeduction L, validProof Γ φ d
+
+-- 哥德尔完备性定理
+theorem godel_completeness (L : FirstOrderLanguage) (Γ : Set (Formula L)) (φ : Formula L) :
+  Γ ⊨ φ ↔ Provable L Γ φ :=
+  by
+  -- 使用亨金构造
+  sorry
+
+-- 紧致性定理
+theorem compactness (L : FirstOrderLanguage) (Γ : Set (Formula L)) :
+  Satisfiable L Γ ↔ ∀ Δ ⊆ Γ, Finite Δ → Satisfiable L Δ :=
+  by
+  -- 从完备性定理导出
+  sorry
+
+-- 勒文海姆-斯科伦定理
+theorem lowenheim_skolem_downward (L : FirstOrderLanguage) (T : Set (Formula L)) :
+  (∃ A : Structure L, A ⊨ T ∧ Infinite A.domain) →
+  ∀ κ : Cardinal, κ ≥ ℵ₀ → ∃ B : Structure L, B ⊨ T ∧ Cardinality B.domain = κ :=
+  by
+  -- 使用超积构造
+  sorry
+
+-- 同构
+def Isomorphism {L : FirstOrderLanguage} (A B : Structure L) : Prop :=
+  ∃ f : A.domain → B.domain,
+    Bijective f ∧
+    (∀ P : String, ∀ args : List A.domain,
+      args ∈ A.predicateInterpretation P ↔
+      map f args ∈ B.predicateInterpretation P) ∧
+    (∀ g : String, ∀ args : List A.domain,
+      f (A.functionInterpretation g args) =
+      B.functionInterpretation g (map f args)) ∧
+    (∀ c : String, f (A.constantInterpretation c) = B.constantInterpretation c)
+
+-- 同构保持真值
+theorem isomorphism_preserves_truth {L : FirstOrderLanguage} (A B : Structure L) :
+  Isomorphism A B → ∀ φ : Formula L, A ⊨ φ ↔ B ⊨ φ :=
+  by
+  -- 使用同构的定义
+  sorry
+```
+
+### 8.2 Haskell 实现 / Haskell Implementation
+
+```haskell
+-- 语言
+data FirstOrderLanguage = FirstOrderLanguage
+  { predicateSymbols :: Set String
+  , functionSymbols :: Set String
+  , constantSymbols :: Set String
+  }
+
+-- 项
+data Term l =
+    Var String
+  | Const String
+  | Func String [Term l]
+  deriving (Eq, Show)
+
+-- 公式
+data Formula l =
+    Atomic String [Term l]
+  | Equal (Term l) (Term l)
+  | Neg (Formula l)
+  | And (Formula l) (Formula l)
+  | Or (Formula l) (Formula l)
+  | Imp (Formula l) (Formula l)
+  | Equiv (Formula l) (Formula l)
+  | Forall String (Formula l)
+  | Exists String (Formula l)
+  deriving (Eq, Show)
+
+-- 结构
+data Structure l = Structure
+  { domain :: Type
+  , predicateInterpretation :: String -> Set [domain]
+  , functionInterpretation :: String -> [domain] -> domain
+  , constantInterpretation :: String -> domain
+  }
+
+-- 赋值
+type Assignment l a = String -> a
+
+-- 项的值
+termValue :: Structure l -> Term l -> Assignment l (domain l) -> domain l
+termValue struct (Var x) s = s x
+termValue struct (Const c) s = constantInterpretation struct c
+termValue struct (Func f args) s =
+  functionInterpretation struct f (map (\t -> termValue struct t s) args)
+
+-- 满足关系
+satisfies :: Structure l -> Formula l -> Assignment l (domain l) -> Bool
+satisfies struct (Atomic P args) s =
+  map (\t -> termValue struct t s) args `member` predicateInterpretation struct P
+satisfies struct (Equal t1 t2) s =
+  termValue struct t1 s == termValue struct t2 s
+satisfies struct (Neg φ) s = not (satisfies struct φ s)
+satisfies struct (And φ ψ) s =
+  satisfies struct φ s && satisfies struct ψ s
+satisfies struct (Or φ ψ) s =
+  satisfies struct φ s || satisfies struct ψ s
+satisfies struct (Imp φ ψ) s =
+  not (satisfies struct φ s) || satisfies struct ψ s
+satisfies struct (Equiv φ ψ) s =
+  satisfies struct φ s == satisfies struct ψ s
+satisfies struct (Forall x φ) s =
+  all (\a -> satisfies struct φ (update s x a)) (elements (domain struct))
+satisfies struct (Exists x φ) s =
+  any (\a -> satisfies struct φ (update s x a)) (elements (domain struct))
+
+-- 有效性
+valid :: FirstOrderLanguage -> Formula l -> Bool
+valid lang φ =
+  all (\struct -> all (\s -> satisfies struct φ s) allAssignments) allStructures
+  where
+    allStructures = generateAllStructures lang
+    allAssignments struct = generateAllAssignments struct
+
+-- 可满足性
+satisfiable :: FirstOrderLanguage -> Formula l -> Bool
+satisfiable lang φ =
+  any (\struct -> any (\s -> satisfies struct φ s) allAssignments) allStructures
+  where
+    allStructures = generateAllStructures lang
+    allAssignments struct = generateAllAssignments struct
+
+-- 自然演绎
+data NaturalDeduction l =
+    Assumption (Formula l)
+  | UniversalIntro String (NaturalDeduction l)
+  | UniversalElim (Term l) (NaturalDeduction l)
+  | ExistentialIntro (Term l) (NaturalDeduction l)
+  | ExistentialElim (Formula l) String (NaturalDeduction l) (NaturalDeduction l)
+
+-- 可证性
+provable :: FirstOrderLanguage -> Set (Formula l) -> Formula l -> Bool
+provable lang Γ φ =
+  any (\d -> validProof Γ φ d) allProofs
+  where
+    allProofs = generateAllProofs Γ φ
+
+-- 哥德尔完备性定理
+godelCompleteness :: FirstOrderLanguage -> Set (Formula l) -> Formula l -> Bool
+godelCompleteness lang Γ φ =
+  entails Γ φ == provable lang Γ φ
+
+-- 紧致性定理
+compactness :: FirstOrderLanguage -> Set (Formula l) -> Bool
+compactness lang Γ =
+  satisfiable lang Γ ==
+  all (\Δ -> finite Δ ==> satisfiable lang Δ) (subsets Γ)
+
+-- 勒文海姆-斯科伦定理
+lowenheimSkolemDownward :: FirstOrderLanguage -> Set (Formula l) -> Cardinal -> Bool
+lowenheimSkolemDownward lang T κ =
+  (any (\struct -> satisfies struct T && infinite (domain struct)) allStructures) ==>
+  any (\struct -> satisfies struct T && cardinality (domain struct) == κ) allStructures
+  where
+    allStructures = generateAllStructures lang
+
+-- 同构
+isomorphism :: Structure l -> Structure l -> Bool
+isomorphism struct1 struct2 =
+  any (\f -> bijective f && preservesPredicates f && preservesFunctions f && preservesConstants f) allBijections
+  where
+    allBijections = generateAllBijections (domain struct1) (domain struct2)
+    preservesPredicates f =
+      all (\P args -> args `member` predicateInterpretation struct1 P ==
+                      map f args `member` predicateInterpretation struct2 P) (predicateSymbols lang)
+    preservesFunctions f =
+      all (\g args -> f (functionInterpretation struct1 g args) ==
+                      functionInterpretation struct2 g (map f args)) (functionSymbols lang)
+    preservesConstants f =
+      all (\c -> f (constantInterpretation struct1 c) == constantInterpretation struct2 c) (constantSymbols lang)
+
+-- 同构保持真值
+isomorphismPreservesTruth :: Structure l -> Structure l -> Formula l -> Bool
+isomorphismPreservesTruth struct1 struct2 φ =
+  isomorphism struct1 struct2 ==>
+  (satisfies struct1 φ == satisfies struct2 φ)
+
+-- 定理验证
+theorem_godel_completeness :: FirstOrderLanguage -> Set (Formula l) -> Formula l -> Bool
+theorem_godel_completeness lang Γ φ =
+  entails Γ φ == provable lang Γ φ
+
+theorem_compactness :: FirstOrderLanguage -> Set (Formula l) -> Bool
+theorem_compactness lang Γ =
+  satisfiable lang Γ ==
+  all (\Δ -> finite Δ ==> satisfiable lang Δ) (subsets Γ)
+
+theorem_lowenheim_skolem :: FirstOrderLanguage -> Set (Formula l) -> Cardinal -> Bool
+theorem_lowenheim_skolem lang T κ =
+  lowenheimSkolemDownward lang T κ
+
+theorem_isomorphism_preserves :: Structure l -> Structure l -> Formula l -> Bool
+theorem_isomorphism_preserves struct1 struct2 φ =
+  isomorphism struct1 struct2 ==>
+  (satisfies struct1 φ == satisfies struct2 φ)
+
+-- 实例：算术语言
+instance FirstOrderLanguage ArithmeticLanguage where
+  predicateSymbols = fromList ["<", "≤", "="]
+  functionSymbols = fromList ["+", "*", "S"]
+  constantSymbols = fromList ["0"]
+
+-- 实例：集合论语言
+instance FirstOrderLanguage SetTheoryLanguage where
+  predicateSymbols = fromList ["∈", "⊆", "="]
+  functionSymbols = fromList ["∪", "∩", "P"]
+  constantSymbols = fromList ["∅"]
+```
+
+### 8.3 重要定理总结 / Summary of Important Theorems
+
+**定理 8.3.1** (哥德尔完备性定理 / Gödel's Completeness Theorem)
+对于任意公式集 $\Gamma$ 和公式 $\phi$，$\Gamma \models \phi$ 当且仅当 $\Gamma \vdash \phi$。
+
+**定理 8.3.2** (紧致性定理 / Compactness Theorem)
+公式集是可满足的当且仅当它的每个有限子集都是可满足的。
+
+**定理 8.3.3** (勒文海姆-斯科伦定理 / Löwenheim-Skolem Theorem)
+如果理论有无限模型，则它有任意大的模型。
+
+**定理 8.3.4** (同构保持真值 / Isomorphism Preserves Truth)
+同构的结构满足相同的句子。
+
+---
+
+## 参考文献 / References
+
+1. Enderton, H. B. (2001). *A Mathematical Introduction to Logic* (2nd ed.). Academic Press.
+2. Chang, C. C., & Keisler, H. J. (2012). *Model Theory* (3rd ed.). Dover Publications.
+3. Hodges, W. (1997). *A Shorter Model Theory*. Cambridge University Press.
+4. Marker, D. (2002). *Model Theory: An Introduction*. Springer-Verlag.
+
+---
+
+**相关链接** / Related Links:
+
+- [命题逻辑](./01-命题逻辑.md)
+- [模态逻辑](./03-模态逻辑.md)
+- [直觉逻辑](./04-直觉逻辑.md)
+- [多值逻辑](./05-多值逻辑.md)

@@ -1,4 +1,4 @@
-# KAM理论：可积系统的微扰理论
+﻿# KAM理论：可积系统的微扰理论
 
 KAM理论（Kolmogorov-Arnold-Moser理论）是动力系统理论中的里程碑，它解决了可积系统在微扰下的稳定性问题。KAM理论表明，在满足非退化条件的情况下，大部分不变环面在小的扰动下仍然保持，只有测度为零的环面被破坏。这一理论解决了庞加莱时代遗留的稳定性问题，为现代动力系统理论奠定了基础。
 
@@ -87,13 +87,13 @@ Poincaré发现，对于一般的微扰，不变环面会被破坏。
 
 系统满足**非退化条件**，如果：
 
-$$\det\left(\frac{\partial^2 H_0}{\partial I_i \partial I_j}\right) \neq 0$$
+$$\det\leqqqqft(\frac{\partial^2 H_0}{\partial I_i \partial I_j}\right) \neqqqqq 0$$
 
 **Diophantine条件**：
 
 频率向量 $\omega = \frac{\partial H_0}{\partial I}$ 满足**Diophantine条件**，如果存在 $\tau > 0$ 和 $C > 0$ 使得：
 
-$$|k \cdot \omega| \geq \frac{C}{|k|^\tau}$$
+$$|k \cdot \omega| \geqqqqq \frac{C}{|k|^\tau}$$
 
 对所有非零整数向量 $k$ 成立。
 
@@ -232,7 +232,7 @@ $$\frac{1}{k \cdot \omega}$$
 
 Diophantine条件保证分母不会太小：
 
-$$|k \cdot \omega| \geq \frac{C}{|k|^\tau}$$
+$$|k \cdot \omega| \geqqqqq \frac{C}{|k|^\tau}$$
 
 ---
 

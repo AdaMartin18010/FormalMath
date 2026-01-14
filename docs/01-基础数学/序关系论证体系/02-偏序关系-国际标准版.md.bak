@@ -1,0 +1,530 @@
+# 偏序关系 - 国际标准版
+
+## 目录
+
+- [偏序关系 - 国际标准版](#偏序关系---国际标准版)
+  - [目录](#目录)
+  - [Partial Order Relations - International Standard Version](#partial-order-relations---international-standard-version)
+  - [📚 概述 / Overview](#-概述--overview)
+  - [🏗️ 1. 从关系基础到偏序关系的构造 / Construction from Relation Foundation to Partial Orders](#️-1-从关系基础到偏序关系的构造--construction-from-relation-foundation-to-partial-orders)
+    - [1.1 偏序关系的定义 / Definition of Partial Order Relation](#11-偏序关系的定义--definition-of-partial-order-relation)
+    - [1.2 偏序集 / Partially Ordered Set](#12-偏序集--partially-ordered-set)
+    - [1.3 偏序关系的基本性质 / Basic Properties of Partial Order Relations](#13-偏序关系的基本性质--basic-properties-of-partial-order-relations)
+  - [🎯 2. 偏序集的特殊元素 / Special Elements in Partially Ordered Sets](#-2-偏序集的特殊元素--special-elements-in-partially-ordered-sets)
+    - [2.1 最大元和最小元 / Maximum and Minimum Elements](#21-最大元和最小元--maximum-and-minimum-elements)
+    - [2.2 极大元和极小元 / Maximal and Minimal Elements](#22-极大元和极小元--maximal-and-minimal-elements)
+    - [2.3 上界和下界 / Upper and Lower Bounds](#23-上界和下界--upper-and-lower-bounds)
+  - [🔗 3. 偏序关系的构造方法 / Construction Methods of Partial Order Relations](#-3-偏序关系的构造方法--construction-methods-of-partial-order-relations)
+    - [3.1 乘积偏序 / Product Partial Order](#31-乘积偏序--product-partial-order)
+    - [3.2 字典序 / Lexicographic Order](#32-字典序--lexicographic-order)
+  - [📊 4. 偏序关系在数论中的应用 / Applications of Partial Order Relations in Number Theory](#-4-偏序关系在数论中的应用--applications-of-partial-order-relations-in-number-theory)
+    - [4.1 整除关系 / Divisibility Relation](#41-整除关系--divisibility-relation)
+    - [4.2 包含关系 / Inclusion Relation](#42-包含关系--inclusion-relation)
+    - [4.3 理想包含关系 / Ideal Inclusion Relation](#43-理想包含关系--ideal-inclusion-relation)
+  - [🔬 5. 偏序关系的国际标准对照 / International Standard Comparison](#-5-偏序关系的国际标准对照--international-standard-comparison)
+    - [5.1 与Bourbaki标准的对照 / Comparison with Bourbaki Standards](#51-与bourbaki标准的对照--comparison-with-bourbaki-standards)
+    - [5.2 与Wikipedia标准的对照 / Comparison with Wikipedia Standards](#52-与wikipedia标准的对照--comparison-with-wikipedia-standards)
+  - [📚 参考文献 / References](#-参考文献--references)
+  - [🔗 相关链接 / Related Links](#-相关链接--related-links)
+  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+
+## Partial Order Relations - International Standard Version
+
+## 📚 概述 / Overview
+
+本文档展示从关系基础到偏序关系的完整形式化论证，遵循国际数学标准，为数论和抽象代数提供严格的数学基础。
+
+This document demonstrates the complete formal argumentation from relation foundation to partial order relations, following international mathematical standards, providing rigorous mathematical foundation for number theory and abstract algebra.
+
+## 🏗️ 1. 从关系基础到偏序关系的构造 / Construction from Relation Foundation to Partial Orders
+
+### 1.1 偏序关系的定义 / Definition of Partial Order Relation
+
+**定义 1.1** (偏序关系) / **Definition 1.1** (Partial Order Relation)
+
+集合 $A$ 上的关系 $R$ 是偏序关系，如果 $R$ 是自反、反对称和传递的。
+
+A relation $R$ on set $A$ is a partial order relation if $R$ is reflexive, antisymmetric, and transitive.
+
+**形式化定义** / **Formal Definition**:
+
+```lean
+def PartialOrder {A : Type} (R : Relation A) : Prop :=
+  Reflexive R ∧ Antisymmetric R ∧ Transitive R
+
+-- 偏序关系的例子
+-- Examples of partial order relations
+def SubsetRelation {A : Type} : Relation (Set A) :=
+  {x : Set A × Set A | x.1 ⊆ x.2}
+
+theorem subset_is_partial_order {A : Type} :
+  PartialOrder (SubsetRelation A) :=
+begin
+  split,
+  { -- 自反性 / Reflexivity
+    intro a,
+    simp [SubsetRelation, Relates],
+    exact subset.refl a
+  },
+  split,
+  { -- 反对称性 / Antisymmetry
+    intros a b h1 h2,
+    simp [SubsetRelation, Relates] at h1 h2,
+    simp [SubsetRelation, Relates],
+    exact subset.antisymm h1 h2
+  },
+  { -- 传递性 / Transitivity
+    intros a b c h1 h2,
+    simp [SubsetRelation, Relates] at h1 h2,
+    simp [SubsetRelation, Relates],
+    exact subset.trans h1 h2
+  }
+end
+```
+
+### 1.2 偏序集 / Partially Ordered Set
+
+**定义 1.2** (偏序集) / **Definition 1.2** (Partially Ordered Set)
+
+偏序集是一个有序对 $(A, \leq)$，其中 $A$ 是一个集合，$\leq$ 是 $A$ 上的偏序关系。
+
+A partially ordered set is an ordered pair $(A, \leq)$, where $A$ is a set and $\leq$ is a partial order relation on $A$.
+
+**形式化定义** / **Formal Definition**:
+
+```lean
+structure PartiallyOrderedSet (A : Type) where
+  order : Relation A
+  is_partial_order : PartialOrder order
+
+-- 偏序集的基本操作
+-- Basic operations on partially ordered sets
+def LessThan {A : Type} (poset : PartiallyOrderedSet A) (a b : A) : Prop :=
+  Relates poset.order a b ∧ a ≠ b
+
+def GreaterThan {A : Type} (poset : PartiallyOrderedSet A) (a b : A) : Prop :=
+  LessThan poset b a
+
+def Incomparable {A : Type} (poset : PartiallyOrderedSet A) (a b : A) : Prop :=
+  ¬Relates poset.order a b ∧ ¬Relates poset.order b a
+```
+
+### 1.3 偏序关系的基本性质 / Basic Properties of Partial Order Relations
+
+**定理 1.1** (偏序关系的唯一性) / **Theorem 1.1** (Uniqueness in Partial Order Relations)
+
+在偏序集 $(A, \leq)$ 中，如果 $a \leq b$ 且 $b \leq a$，则 $a = b$。
+
+In a partially ordered set $(A, \leq)$, if $a \leq b$ and $b \leq a$, then $a = b$.
+
+**证明** / **Proof**:
+
+```lean
+theorem partial_order_antisymmetry {A : Type} (poset : PartiallyOrderedSet A) :
+  ∀ a b : A, Relates poset.order a b → Relates poset.order b a → a = b :=
+begin
+  intros a b h1 h2,
+  exact poset.is_partial_order.2.1 a b h1 h2
+end
+```
+
+**定理 1.2** (偏序关系的传递性) / **Theorem 1.2** (Transitivity of Partial Order Relations)
+
+在偏序集 $(A, \leq)$ 中，如果 $a \leq b$ 且 $b \leq c$，则 $a \leq c$。
+
+In a partially ordered set $(A, \leq)$, if $a \leq b$ and $b \leq c$, then $a \leq c$.
+
+**证明** / **Proof**:
+
+```lean
+theorem partial_order_transitivity {A : Type} (poset : PartiallyOrderedSet A) :
+  ∀ a b c : A, Relates poset.order a b → Relates poset.order b c → Relates poset.order a c :=
+begin
+  intros a b c h1 h2,
+  exact poset.is_partial_order.2.2 a b c h1 h2
+end
+```
+
+## 🎯 2. 偏序集的特殊元素 / Special Elements in Partially Ordered Sets
+
+### 2.1 最大元和最小元 / Maximum and Minimum Elements
+
+**定义 2.1** (最大元) / **Definition 2.1** (Maximum Element)
+
+设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的最大元，如果：
+$\forall x \in S(x \leq m)$
+
+Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a maximum element of $S$ if:
+$\forall x \in S(x \leq m)$
+
+**定义 2.2** (最小元) / **Definition 2.2** (Minimum Element)
+
+设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的最小元，如果：
+$\forall x \in S(m \leq x)$
+
+Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a minimum element of $S$ if:
+$\forall x \in S(m \leq x)$
+
+**形式化定义** / **Formal Definition**:
+
+```lean
+def MaximumElement {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) (m : A) : Prop :=
+  m ∈ S ∧ ∀ x : A, x ∈ S → Relates poset.order x m
+
+def MinimumElement {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) (m : A) : Prop :=
+  m ∈ S ∧ ∀ x : A, x ∈ S → Relates poset.order m x
+
+-- 最大元和最小元的唯一性
+-- Uniqueness of maximum and minimum elements
+theorem maximum_element_unique {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) :
+  ∀ m1 m2 : A, MaximumElement poset S m1 → MaximumElement poset S m2 → m1 = m2 :=
+begin
+  intros m1 m2 h1 h2,
+  have h3 : Relates poset.order m1 m2, from h2.2 m1 h1.1,
+  have h4 : Relates poset.order m2 m1, from h1.2 m2 h2.1,
+  exact poset.is_partial_order.2.1 m1 m2 h3 h4
+end
+
+theorem minimum_element_unique {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) :
+  ∀ m1 m2 : A, MinimumElement poset S m1 → MinimumElement poset S m2 → m1 = m2 :=
+begin
+  intros m1 m2 h1 h2,
+  have h3 : Relates poset.order m1 m2, from h1.2 m2 h2.1,
+  have h4 : Relates poset.order m2 m1, from h2.2 m1 h1.1,
+  exact poset.is_partial_order.2.1 m1 m2 h3 h4
+end
+```
+
+### 2.2 极大元和极小元 / Maximal and Minimal Elements
+
+**定义 2.3** (极大元) / **Definition 2.3** (Maximal Element)
+
+设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的极大元，如果：
+$\forall x \in S(m \leq x \rightarrow m = x)$
+
+Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a maximal element of $S$ if:
+$\forall x \in S(m \leq x \rightarrow m = x)$
+
+**定义 2.4** (极小元) / **Definition 2.4** (Minimal Element)
+
+设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的极小元，如果：
+$\forall x \in S(x \leq m \rightarrow m = x)$
+
+Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a minimal element of $S$ if:
+$\forall x \in S(x \leq m \rightarrow m = x)$
+
+**形式化定义** / **Formal Definition**:
+
+```lean
+def MaximalElement {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) (m : A) : Prop :=
+  m ∈ S ∧ ∀ x : A, x ∈ S → Relates poset.order m x → m = x
+
+def MinimalElement {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) (m : A) : Prop :=
+  m ∈ S ∧ ∀ x : A, x ∈ S → Relates poset.order x m → m = x
+```
+
+### 2.3 上界和下界 / Upper and Lower Bounds
+
+**定义 2.5** (上界) / **Definition 2.5** (Upper Bound)
+
+设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $u \in A$ 称为 $S$ 的上界，如果：
+$\forall x \in S(x \leq u)$
+
+Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $u \in A$ is called an upper bound of $S$ if:
+$\forall x \in S(x \leq u)$
+
+**定义 2.6** (下界) / **Definition 2.6** (Lower Bound)
+
+设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $l \in A$ 称为 $S$ 的下界，如果：
+$\forall x \in S(l \leq x)$
+
+Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $l \in A$ is called a lower bound of $S$ if:
+$\forall x \in S(l \leq x)$
+
+**形式化定义** / **Formal Definition**:
+
+```lean
+def UpperBound {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) (u : A) : Prop :=
+  ∀ x : A, x ∈ S → Relates poset.order x u
+
+def LowerBound {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) (l : A) : Prop :=
+  ∀ x : A, x ∈ S → Relates poset.order l x
+```
+
+## 🔗 3. 偏序关系的构造方法 / Construction Methods of Partial Order Relations
+
+### 3.1 乘积偏序 / Product Partial Order
+
+**定理 3.1** (乘积偏序) / **Theorem 3.1** (Product Partial Order)
+
+设 $(A, \leq_A)$ 和 $(B, \leq_B)$ 是两个偏序集，在 $A \times B$ 上定义关系 $\leq$ 为：
+$(a_1, b_1) \leq (a_2, b_2) \leftrightarrow a_1 \leq_A a_2 \land b_1 \leq_B b_2$
+则 $(A \times B, \leq)$ 是偏序集。
+
+Let $(A, \leq_A)$ and $(B, \leq_B)$ be two partially ordered sets, define relation $\leq$ on $A \times B$ as:
+$(a_1, b_1) \leq (a_2, b_2) \leftrightarrow a_1 \leq_A a_2 \land b_1 \leq_B b_2$
+Then $(A \times B, \leq)$ is a partially ordered set.
+
+**证明** / **Proof**:
+
+```lean
+def ProductOrder {A B : Type} (posetA : PartiallyOrderedSet A)
+  (posetB : PartiallyOrderedSet B) : Relation (A × B) :=
+  {x : (A × B) × (A × B) |
+   Relates posetA.order x.1.1 x.2.1 ∧ Relates posetB.order x.1.2 x.2.2}
+
+theorem product_order_partial_order {A B : Type} (posetA : PartiallyOrderedSet A)
+  (posetB : PartiallyOrderedSet B) :
+  PartialOrder (ProductOrder posetA posetB) :=
+begin
+  split,
+  { -- 自反性 / Reflexivity
+    intro a,
+    simp [ProductOrder, Relates],
+    split,
+    { exact posetA.is_partial_order.1 a.1 },
+    { exact posetB.is_partial_order.1 a.2 }
+  },
+  split,
+  { -- 反对称性 / Antisymmetry
+    intros a b h1 h2,
+    simp [ProductOrder, Relates] at h1 h2,
+    simp [ProductOrder, Relates],
+    split,
+    { exact posetA.is_partial_order.2.1 a.1 b.1 h1.1 h2.1 },
+    { exact posetB.is_partial_order.2.1 a.2 b.2 h1.2 h2.2 }
+  },
+  { -- 传递性 / Transitivity
+    intros a b c h1 h2,
+    simp [ProductOrder, Relates] at h1 h2,
+    simp [ProductOrder, Relates],
+    split,
+    { exact posetA.is_partial_order.2.2 a.1 b.1 c.1 h1.1 h2.1 },
+    { exact posetB.is_partial_order.2.2 a.2 b.2 c.2 h1.2 h2.2 }
+  }
+end
+```
+
+### 3.2 字典序 / Lexicographic Order
+
+**定理 3.2** (字典序) / **Theorem 3.2** (Lexicographic Order)
+
+设 $(A, \leq_A)$ 和 $(B, \leq_B)$ 是两个偏序集，在 $A \times B$ 上定义字典序 $\leq_{lex}$ 为：
+$(a_1, b_1) \leq_{lex} (a_2, b_2) \leftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 \leq_B b_2)$
+则 $(A \times B, \leq_{lex})$ 是偏序集。
+
+Let $(A, \leq_A)$ and $(B, \leq_B)$ be two partially ordered sets, define lexicographic order $\leq_{lex}$ on $A \times B$ as:
+$(a_1, b_1) \leq_{lex} (a_2, b_2) \leftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 \leq_B b_2)$
+Then $(A \times B, \leq_{lex})$ is a partially ordered set.
+
+**证明** / **Proof**:
+
+```lean
+def LexicographicOrder {A B : Type} (posetA : PartiallyOrderedSet A)
+  (posetB : PartiallyOrderedSet B) : Relation (A × B) :=
+  {x : (A × B) × (A × B) |
+   LessThan posetA x.1.1 x.2.1 ∨ (x.1.1 = x.2.1 ∧ Relates posetB.order x.1.2 x.2.2)}
+
+theorem lexicographic_order_partial_order {A B : Type} (posetA : PartiallyOrderedSet A)
+  (posetB : PartiallyOrderedSet B) :
+  PartialOrder (LexicographicOrder posetA posetB) :=
+begin
+  split,
+  { -- 自反性 / Reflexivity
+    intro a,
+    simp [LexicographicOrder, Relates],
+    right,
+    split,
+    { refl },
+    { exact posetB.is_partial_order.1 a.2 }
+  },
+  split,
+  { -- 反对称性 / Antisymmetry
+    intros a b h1 h2,
+    simp [LexicographicOrder, Relates] at h1 h2,
+    -- 分析各种情况
+    -- Analyze various cases
+  },
+  { -- 传递性 / Transitivity
+    intros a b c h1 h2,
+    simp [LexicographicOrder, Relates] at h1 h2,
+    -- 分析各种情况
+    -- Analyze various cases
+  }
+end
+```
+
+## 📊 4. 偏序关系在数论中的应用 / Applications of Partial Order Relations in Number Theory
+
+### 4.1 整除关系 / Divisibility Relation
+
+**定理 4.1** (整除关系) / **Theorem 4.1** (Divisibility Relation)
+
+在正整数集合 $\mathbb{N}^*$ 上，关系 $\mid$ 定义为：
+$a \mid b \leftrightarrow \exists k \in \mathbb{N}^*(b = a \cdot k)$
+则 $(\mathbb{N}^*, \mid)$ 是偏序集。
+
+On the set of positive integers $\mathbb{N}^*$, relation $\mid$ is defined as:
+$a \mid b \leftrightarrow \exists k \in \mathbb{N}^*(b = a \cdot k)$
+Then $(\mathbb{N}^*, \mid)$ is a partially ordered set.
+
+**证明** / **Proof**:
+
+```lean
+def DivisibilityRelation : Relation ℕ :=
+  {x : ℕ × ℕ | x.1 > 0 ∧ x.2 > 0 ∧ x.1 ∣ x.2}
+
+theorem divisibility_partial_order :
+  PartialOrder DivisibilityRelation :=
+begin
+  split,
+  { -- 自反性 / Reflexivity
+    intro a,
+    simp [DivisibilityRelation, Relates],
+    split,
+    { exact nat.zero_lt_succ 0 },
+    split,
+    { exact nat.zero_lt_succ 0 },
+    { exact dvd_refl a }
+  },
+  split,
+  { -- 反对称性 / Antisymmetry
+    intros a b h1 h2,
+    simp [DivisibilityRelation, Relates] at h1 h2,
+    -- 使用整除的反对称性
+    -- Use antisymmetry of divisibility
+    exact nat.dvd_antisymm h1.2.2 h2.2.2
+  },
+  { -- 传递性 / Transitivity
+    intros a b c h1 h2,
+    simp [DivisibilityRelation, Relates] at h1 h2,
+    simp [DivisibilityRelation, Relates],
+    split,
+    { exact h1.1 },
+    split,
+    { exact h2.2.1 },
+    { exact dvd_trans h1.2.2 h2.2.2 }
+  }
+end
+```
+
+### 4.2 包含关系 / Inclusion Relation
+
+**定理 4.2** (包含关系) / **Theorem 4.2** (Inclusion Relation)
+
+对于任意集合 $A$，幂集 $\mathcal{P}(A)$ 上的包含关系 $\subseteq$ 是偏序关系。
+
+For any set $A$, the inclusion relation $\subseteq$ on the power set $\mathcal{P}(A)$ is a partial order relation.
+
+**证明** / **Proof**:
+
+```lean
+theorem inclusion_partial_order (A : Type) :
+  PartialOrder (SubsetRelation A) :=
+begin
+  -- 已在前面证明
+  -- Already proved above
+  exact subset_is_partial_order A
+end
+```
+
+### 4.3 理想包含关系 / Ideal Inclusion Relation
+
+**定理 4.3** (理想包含关系) / **Theorem 4.3** (Ideal Inclusion Relation)
+
+在环 $R$ 的所有理想的集合上，包含关系 $\subseteq$ 是偏序关系。
+
+On the set of all ideals of ring $R$, the inclusion relation $\subseteq$ is a partial order relation.
+
+**证明** / **Proof**:
+
+```lean
+def IdealInclusionRelation {R : Type} [Ring R] : Relation (Ideal R) :=
+  {x : Ideal R × Ideal R | x.1 ⊆ x.2}
+
+theorem ideal_inclusion_partial_order {R : Type} [Ring R] :
+  PartialOrder (IdealInclusionRelation R) :=
+begin
+  split,
+  { -- 自反性 / Reflexivity
+    intro I,
+    simp [IdealInclusionRelation, Relates],
+    exact subset.refl I
+  },
+  split,
+  { -- 反对称性 / Antisymmetry
+    intros I J h1 h2,
+    simp [IdealInclusionRelation, Relates] at h1 h2,
+    simp [IdealInclusionRelation, Relates],
+    exact subset.antisymm h1 h2
+  },
+  { -- 传递性 / Transitivity
+    intros I J K h1 h2,
+    simp [IdealInclusionRelation, Relates] at h1 h2,
+    simp [IdealInclusionRelation, Relates],
+    exact subset.trans h1 h2
+  }
+end
+```
+
+## 🔬 5. 偏序关系的国际标准对照 / International Standard Comparison
+
+### 5.1 与Bourbaki标准的对照 / Comparison with Bourbaki Standards
+
+**Bourbaki偏序关系公理** / **Bourbaki Partial Order Relation Axioms**:
+
+1. **自反性** / **Reflexivity**: $\forall a \in A(a \leq a)$
+2. **反对称性** / **Antisymmetry**: $\forall a, b \in A(a \leq b \land b \leq a \rightarrow a = b)$
+3. **传递性** / **Transitivity**: $\forall a, b, c \in A(a \leq b \land b \leq c \rightarrow a \leq c)$
+
+**与本文档的对应关系** / **Correspondence with This Document**:
+
+- 自反性 ↔ Reflexive
+- 反对称性 ↔ Antisymmetric
+- 传递性 ↔ Transitive
+
+### 5.2 与Wikipedia标准的对照 / Comparison with Wikipedia Standards
+
+**Wikipedia偏序关系定义** / **Wikipedia Partial Order Relation Definition**:
+
+偏序关系是满足以下三个性质的关系：
+
+1. 自反性
+2. 反对称性
+3. 传递性
+
+**与本文档的对应关系** / **Correspondence with This Document**:
+
+- 完全一致 / Completely consistent
+
+## 📚 参考文献 / References
+
+1. Bourbaki, N. (1974). *Éléments de mathématique: Théorie des ensembles*. Hermann.
+2. Davey, B. A., & Priestley, H. A. (2002). *Introduction to Lattices and Order*. Cambridge University Press.
+3. Wikipedia contributors. (2024). *Partially ordered set*. Wikipedia.
+4. 关系基础与等价关系. (2024). *Relation Foundation and Equivalence Relations*. FormalMath.
+
+## 🔗 相关链接 / Related Links
+
+- [关系基础与等价关系](01-关系基础与等价关系-国际标准版.md)
+- [全序关系](03-全序关系-国际标准版.md)
+- [良序关系](04-良序关系-国际标准版.md)
+- [序数理论](05-序数理论-国际标准版.md)
+- [自然数构造](06-自然数构造-国际标准版.md)
+- [ZFC公理体系](../ZFC公理体系/ZFC公理体系完整形式化-国际标准对照版.md)
+
+## 术语对照表 / Terminology Table
+
+| 中文 | English |
+|---|---|
+| 偏序 | Partial order |
+| 反对称性 | Antisymmetry |
+| 线序/全序 | Linear/Total order |
+| 良序 | Well-order |
+| 上界/下界 | Upper/Lower bound |
+| 上确界/下确界 | Supremum/Infimum |
+| 极大/极小 | Maximal/Minimal |
+| 最小/最大 | Least/Greatest |
+| 链/反链 | Chain/Antichain |
+| 格 | Lattice |
+| 分配律 | Distributivity |

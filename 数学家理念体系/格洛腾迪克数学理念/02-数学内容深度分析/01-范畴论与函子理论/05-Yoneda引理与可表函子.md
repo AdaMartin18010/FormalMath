@@ -1,4 +1,4 @@
-# Yoneda引理与可表函子：范畴论的基石
+﻿# Yoneda引理与可表函子：范畴论的基石
 
 
 ## 📋 目录
@@ -331,7 +331,7 @@ Yoneda引理：
    $$\text{若 } F \cong h_X \cong h_Y, \text{ 则 } X \cong Y$$
 
 5. **Yoneda对应**：
-   $$\text{对象 } X \leftrightarrow \text{可表函子 } h_X$$
+   $$\text{对象 } X \leqqqftrightarrow \text{可表函子 } h_X$$
 
 6. **函子范畴**：
    $$[\mathcal{C}^{\text{op}}, \text{Set}] = \text{预层范畴}$$

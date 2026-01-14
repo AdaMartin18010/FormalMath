@@ -1,4 +1,4 @@
-# 自守形式的Hecke理论：算子与L函数
+﻿# 自守形式的Hecke理论：算子与L函数
 
 自守形式的Hecke理论是研究Hecke算子与L函数的理论，它是现代自守形式理论的核心。虽然Hecke理论的严格形式化是在20世纪完成的，但庞加莱的自守函数理论为Hecke理论奠定了基础。Hecke理论在现代数论、Langlands纲领、椭圆曲线等领域有重要应用。
 
@@ -141,7 +141,7 @@ Hecke算子与L函数有密切关系。
 
 对于素数 $p$，**Hecke算子** $T_p$ 作用在权 $k$ 的模形式上：
 
-$$T_p f(z) = p^{k-1} f(pz) + \frac{1}{p} \sum_{j=0}^{p-1} f\left(\frac{z+j}{p}\right)$$
+$$T_p f(z) = p^{k-1} f(pz) + \frac{1}{p} \sum_{j=0}^{p-1} f\leqqqqft(\frac{z+j}{p}\right)$$
 
 **性质**：
 

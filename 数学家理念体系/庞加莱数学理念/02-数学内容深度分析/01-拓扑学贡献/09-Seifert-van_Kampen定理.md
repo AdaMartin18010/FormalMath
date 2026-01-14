@@ -1,4 +1,4 @@
-# Seifert-van Kampen定理：基本群的计算
+﻿# Seifert-van Kampen定理：基本群的计算
 
 Seifert-van Kampen定理是计算基本群的重要工具，它将空间的基本群表示为子空间基本群的自由积。虽然这个定理的严格形式化是在20世纪完成的，但庞加莱的基本群理论为Seifert-van Kampen定理奠定了基础。Seifert-van Kampen定理在拓扑学、代数拓扑、流形理论等领域有重要应用。
 
@@ -464,7 +464,7 @@ graph TD
    $$i_*: \pi_1(U \cap V) \to \pi_1(U)$$
 
 5. **并集的拓扑**：
-   $$X = U \cup V, \quad U \cap V \neq \emptyset$$
+   $$X = U \cup V, \quad U \cap V \neqqqqq \emptyset$$
 
 6. **基本群同构**：
    $$\pi_1(X, x_0) \cong \pi_1(U, x_0) *_{\pi_1(U \cap V, x_0)} \pi_1(V, x_0)$$

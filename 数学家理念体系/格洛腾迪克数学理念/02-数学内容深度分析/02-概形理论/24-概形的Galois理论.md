@@ -1,4 +1,4 @@
-# 概形的Galois理论：代数与几何的统一
+﻿# 概形的Galois理论：代数与几何的统一
 
 
 ## 📋 目录
@@ -246,7 +246,7 @@ Grothendieck的贡献：
    $$\pi_1(X, \bar{x}) = \varprojlim \text{Aut}(Y/X), \quad Y \to X \text{ 有限étale覆盖}$$
 
 3. **Galois对应**：
-   $$\{\text{有限étale覆盖 } Y \to X\} \leftrightarrow \{\text{$\pi_1(X)$ 的有限商群}\}$$
+   $$\{\text{有限étale覆盖 } Y \to X\} \leqqqqftrightarrow \{\text{$\pi_1(X)$ 的有限商群}\}$$
 
 4. **基本群与覆盖**：
    $$\text{Hom}(\pi_1(X, \bar{x}), G) \cong \{\text{$G$-覆盖 } Y \to X\}$$

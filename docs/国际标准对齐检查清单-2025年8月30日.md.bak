@@ -1,0 +1,296 @@
+# 国际标准对齐检查清单-2025年8月30日
+
+## 检查概述 / Check Overview
+
+**检查目标**: 确保FormalMath内容符合国际数学标准  
+**对标对象**: nLab、Wikipedia、MIT、Harvard、Princeton数学课程  
+**检查范围**: 所有数学内容文档  
+**检查标准**: 术语、表述、结构、深度、权威性
+
+## 第一部分：术语标准检查 / Terminology Standards Check
+
+### 1.1 数学术语统一性 / Mathematical Terminology Consistency
+
+#### 基础数学术语
+
+- [ ] **集合论术语**: set, element, subset, union, intersection, complement
+- [ ] **数系术语**: natural numbers, integers, rational numbers, real numbers, complex numbers
+- [ ] **函数术语**: function, domain, codomain, image, preimage, bijection
+- [ ] **关系术语**: relation, equivalence relation, partial order, total order
+
+#### 代数结构术语
+
+- [ ] **群论术语**: group, subgroup, normal subgroup, quotient group, homomorphism
+- [ ] **环论术语**: ring, ideal, quotient ring, field, polynomial ring
+- [ ] **域论术语**: field, field extension, algebraic extension, transcendental extension
+- [ ] **模论术语**: module, submodule, quotient module, free module, tensor product
+
+#### 分析学术语
+
+- [ ] **实分析术语**: limit, continuity, derivative, integral, series, convergence
+- [ ] **复分析术语**: complex function, holomorphic, analytic, residue, contour integral
+- [ ] **泛函分析术语**: norm, inner product, Hilbert space, Banach space, operator
+
+#### 几何学术语
+
+- [ ] **欧几里得几何**: point, line, plane, angle, distance, congruence
+- [ ] **微分几何**: manifold, tangent space, connection, curvature, geodesic
+- [ ] **代数几何**: variety, scheme, morphism, sheaf, cohomology
+
+### 1.2 符号使用标准 / Symbol Usage Standards
+
+#### 标准数学符号
+
+- [ ] **集合符号**: $\in, \notin, \subset, \subseteq, \cup, \cap, \setminus$
+- [ ] **逻辑符号**: $\forall, \exists, \implies, \iff, \neg, \land, \lor$
+- [ ] **函数符号**: $f: X \to Y, f(x), f^{-1}, \circ$
+- [ ] **代数符号**: $+, -, \times, \div, \cdot, \sum, \prod$
+
+#### 高级数学符号
+
+- [ ] **群论符号**: $G, H, N, \triangleleft, \cong, \text{Hom}, \text{Aut}$
+- [ ] **环论符号**: $R, I, R/I, \text{Spec}, \text{Max}$
+- [ ] **分析符号**: $\lim, \frac{d}{dx}, \int, \partial, \nabla$
+- [ ] **几何符号**: $\mathbb{R}^n, S^n, T_pM, \omega, \Omega$
+
+## 第二部分：表述规范检查 / Expression Standards Check
+
+### 2.1 定义表述规范 / Definition Expression Standards
+
+#### 定义结构
+
+- [ ] **定义编号**: 采用统一的定义编号系统
+- [ ] **双语表述**: 中英文对照的完整表述
+- [ ] **符号说明**: 明确说明所有使用的符号
+- [ ] **条件完整**: 完整列出所有条件和假设
+
+#### 定义示例
+
+```markdown
+**定义 1.1** (群 / Group)
+设 $G$ 是一个非空集合，$\cdot: G \times G \to G$ 是一个二元运算。如果满足以下条件：
+1. 结合律：$(a \cdot b) \cdot c = a \cdot (b \cdot c)$ 对所有 $a, b, c \in G$
+2. 单位元：存在 $e \in G$ 使得 $e \cdot a = a \cdot e = a$ 对所有 $a \in G$
+3. 逆元：对每个 $a \in G$，存在 $a^{-1} \in G$ 使得 $a \cdot a^{-1} = a^{-1} \cdot a = e$
+
+则称 $(G, \cdot)$ 是一个群。
+
+**Definition 1.1** (Group)
+Let $G$ be a non-empty set and $\cdot: G \times G \to G$ be a binary operation. If the following conditions are satisfied:
+1. Associativity: $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ for all $a, b, c \in G$
+2. Identity: There exists $e \in G$ such that $e \cdot a = a \cdot e = a$ for all $a \in G$
+3. Inverse: For each $a \in G$, there exists $a^{-1} \in G$ such that $a \cdot a^{-1} = a^{-1} \cdot a = e$
+
+Then $(G, \cdot)$ is called a group.
+```
+
+### 2.2 定理表述规范 / Theorem Expression Standards
+
+#### 定理结构
+
+- [ ] **定理编号**: 采用统一的定理编号系统
+- [ ] **条件明确**: 明确列出所有假设条件
+- [ ] **结论清晰**: 清晰表述定理结论
+- [ ] **证明完整**: 提供完整或概要的证明
+
+#### 定理示例
+
+```markdown
+**定理 1.2** (拉格朗日定理 / Lagrange's Theorem)
+设 $G$ 是一个有限群，$H$ 是 $G$ 的子群。则 $|H|$ 整除 $|G|$。
+
+**Theorem 1.2** (Lagrange's Theorem)
+Let $G$ be a finite group and $H$ be a subgroup of $G$. Then $|H|$ divides $|G|$.
+
+**证明 / Proof**:
+[完整的证明内容]
+
+**Proof**:
+[Complete proof content]
+```
+
+## 第三部分：内容深度检查 / Content Depth Check
+
+### 3.1 对标MIT课程深度 / MIT Course Depth Benchmarking
+
+#### 基础课程对标
+
+- [ ] **18.01 单变量微积分**: 极限、连续性、导数、积分、级数
+- [ ] **18.02 多变量微积分**: 偏导数、多重积分、向量场、格林定理
+- [ ] **18.06 线性代数**: 矩阵、向量空间、特征值、对角化
+- [ ] **18.100 实分析**: 实数完备性、收敛性、连续性、可微性
+
+#### 高级课程对标
+
+- [ ] **18.701 抽象代数**: 群、环、域、伽罗瓦理论
+- [ ] **18.725 代数几何**: 代数簇、概形、上同调
+- [ ] **18.785 数论**: 代数数论、模形式、朗兰兹纲领
+
+### 3.2 对标Harvard课程深度 / Harvard Course Depth Benchmarking
+
+#### 荣誉课程对标
+
+- [ ] **Math 25a 荣誉线性代数**: 抽象向量空间、线性变换、内积空间
+- [ ] **Math 25b 荣誉多变量微积分**: 微分形式、斯托克斯定理、李群
+- [ ] **Math 55a 荣誉抽象代数**: 群论、环论、域论、伽罗瓦理论
+- [ ] **Math 55b 荣誉线性代数**: 线性代数、表示论、李代数
+
+### 3.3 对标Princeton课程深度 / Princeton Course Depth Benchmarking
+
+#### 核心课程对标
+
+- [ ] **MAT 201 多变量微积分**: 多变量函数、偏导数、多重积分
+- [ ] **MAT 202 线性代数**: 矩阵代数、向量空间、线性变换
+- [ ] **MAT 320 抽象代数**: 群论、环论、域论
+- [ ] **MAT 325 实分析**: 实数理论、测度论、勒贝格积分
+
+## 第四部分：权威性检查 / Authority Check
+
+### 4.1 参考文献标准 / Reference Standards
+
+#### 经典教材引用
+
+- [ ] **基础数学**: Rudin, Apostol, Spivak
+- [ ] **代数**: Dummit & Foote, Lang, Hungerford
+- [ ] **分析**: Rudin, Folland, Stein & Shakarchi
+- [ ] **几何**: Hartshorne, Griffiths & Harris, do Carmo
+
+#### 前沿文献引用
+
+- [ ] **代数几何**: Grothendieck, Mumford, Deligne
+- [ ] **数论**: Serre, Tate, Wiles
+- [ ] **拓扑**: Milnor, Bott, Atiyah
+- [ ] **分析**: Hörmander, Stein, Fefferman
+
+### 4.2 历史发展脉络 / Historical Development Context
+
+#### 重要历史节点
+
+- [ ] **19世纪**: 柯西、黎曼、戴德金、康托尔
+- [ ] **20世纪初**: 希尔伯特、庞加莱、诺特
+- [ ] **20世纪中期**: 格罗滕迪克、塞尔、米尔诺
+- [ ] **20世纪末**: 威尔斯、佩雷尔曼、陶哲轩
+
+#### 重要理论发展
+
+- [ ] **集合论**: 康托尔集合论、策梅洛-弗兰克尔公理
+- [ ] **代数**: 诺特环理论、伽罗瓦理论、李群理论
+- [ ] **分析**: 勒贝格积分、泛函分析、调和分析
+- [ ] **几何**: 黎曼几何、代数几何、微分拓扑
+
+## 第五部分：结构组织检查 / Structure Organization Check
+
+### 5.1 知识结构层次 / Knowledge Structure Hierarchy
+
+#### 基础层次
+
+- [ ] **概念定义**: 清晰的概念定义和基本性质
+- [ ] **基本定理**: 重要的基本定理和证明
+- [ ] **典型实例**: 丰富的典型实例和应用
+- [ ] **练习问题**: 适当的练习和思考题
+
+#### 高级层次
+
+- [ ] **理论深化**: 理论的深化和发展
+- [ ] **前沿应用**: 前沿应用和最新发展
+- [ ] **研究问题**: 开放问题和研究方向
+- [ ] **历史背景**: 历史背景和发展脉络
+
+### 5.2 知识关联网络 / Knowledge Association Network
+
+#### 内部关联
+
+- [ ] **概念关联**: 概念之间的逻辑关联
+- [ ] **理论关联**: 理论之间的发展关联
+- [ ] **应用关联**: 应用之间的交叉关联
+- [ ] **历史关联**: 历史发展的时间关联
+
+#### 外部关联
+
+- [ ] **学科交叉**: 与其他学科的交叉关联
+- [ ] **应用领域**: 与实际应用领域的关联
+- [ ] **前沿发展**: 与前沿发展的关联
+- [ ] **国际标准**: 与国际标准的关联
+
+## 第六部分：检查执行计划 / Check Execution Plan
+
+### 6.1 检查优先级 / Check Priorities
+
+#### 高优先级（立即执行）
+
+- [ ] 术语统一性检查
+- [ ] 符号使用标准检查
+- [ ] 定义表述规范检查
+- [ ] 定理表述规范检查
+
+#### 中优先级（1-2周内）
+
+- [ ] 内容深度对标检查
+- [ ] 权威性检查
+- [ ] 结构组织检查
+- [ ] 知识关联检查
+
+#### 低优先级（1个月内）
+
+- [ ] 历史发展脉络检查
+- [ ] 前沿发展检查
+- [ ] 国际影响检查
+- [ ] 合作拓展检查
+
+### 6.2 检查方法 / Check Methods
+
+#### 自动化检查
+
+- [ ] 术语一致性检查工具
+- [ ] 符号使用检查工具
+- [ ] 格式规范检查工具
+- [ ] 链接完整性检查工具
+
+#### 人工检查
+
+- [ ] 内容准确性专家评审
+- [ ] 表述规范性专家评审
+- [ ] 深度对标专家评审
+- [ ] 权威性专家评审
+
+### 6.3 检查结果处理 / Check Result Processing
+
+#### 问题分类
+
+- [ ] **严重问题**: 立即修正
+- [ ] **重要问题**: 优先修正
+- [ ] **一般问题**: 计划修正
+- [ ] **建议问题**: 考虑采纳
+
+#### 修正计划
+
+- [ ] **立即修正**: 术语、符号、格式问题
+- [ ] **短期修正**: 表述、结构、深度问题
+- [ ] **中期修正**: 权威性、关联性问题
+- [ ] **长期修正**: 前沿性、影响力问题
+
+---
+
+**检查状态**: 国际标准对齐检查清单  
+**检查日期**: 2025年8月30日  
+**检查目标**: 确保内容符合国际数学标准  
+**执行计划**: 按优先级逐步执行检查
+
+## 增补完成情况与复核结论（2025-当前）
+
+- 覆盖范围：
+  - 02-代数结构：线性代数补充、群/环/域/模/李代数/范畴论精炼补充已完成；
+  - 01-基础数学：ZFC、关系与等价、基数与序数精炼补充已完成。
+- 对齐核查：
+  - 术语与定义：与 Wikipedia/主流教材/Lean-Coq-Isabelle 接口表达一致；
+  - 结构模板：均含“国际要点 + 多表征与图建模 + 批判性 + 时间线 + 示例/练习”。
+- 示例可运行性：
+  - 纯NumPy/Python示例可独立运行；依赖 SciPy 的 Schur 演示设置了不可用时自动跳过的分支；
+  - 线性代数中的 PCA/SVD/最小二乘、正定性与Cholesky示例已校对语法无误。
+- 一致性检查：
+  - “非自反性”术语统一；
+  - 目录锚点与新增小节链接已校对；
+  - Mermaid 图块采用简化模式，避免大规模渲染负担。
+- 结论：
+  - 本轮递归增强已达成既定范围的100%覆盖并通过一致性与可运行性抽检；
+  - 后续如需进一步细化（如完整形式化证明移植），建议另开“形式化移植专项”。

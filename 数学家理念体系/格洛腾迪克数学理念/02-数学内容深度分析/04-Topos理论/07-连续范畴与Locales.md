@@ -1,4 +1,4 @@
-# 连续范畴与Locales：Topos的几何化
+﻿# 连续范畴与Locales：Topos的几何化
 
 
 ## 📋 目录
@@ -269,7 +269,7 @@ Locale
 ### 核心公式
 
 1. **Locale定义**：
-   $$L \text{ Locale } \iff L \text{ 完备格，满足分配律：} a \land \left(\bigvee_i b_i\right) = \bigvee_i (a \land b_i)$$
+   $$L \text{ Locale } \iff L \text{ 完备格，满足分配律：} a \land \leqqqqft(\bigvee_i b_i\right) = \bigvee_i (a \land b_i)$$
 
 2. **连续范畴定义**：
    $$\mathcal{C} \text{ 连续 } \iff \mathcal{C} \text{ 有所有余极限，且满足特定条件}$$
@@ -287,13 +287,13 @@ Locale
    $$F: L^{\text{op}} \to \text{Set}, \quad \text{满足层公理}$$
 
 7. **Locale与Topos对应**：
-   $$\text{Locale } L \leftrightarrow \text{Topos Sh}(L)$$
+   $$\text{Locale } L \leqqqqftrightarrow \text{Topos Sh}(L)$$
 
 8. **连续范畴与Topos**：
    $$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
 
 9. **Locale的几何化**：
-   $$\text{无点拓扑} \leftrightarrow \text{Locale}, \quad \text{几何化数学}$$
+   $$\text{无点拓扑} \leqqqqftrightarrow \text{Locale}, \quad \text{几何化数学}$$
 
 10. **Locales与逻辑**：
     $$\text{Locale的内部逻辑是几何逻辑}$$

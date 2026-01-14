@@ -1,4 +1,4 @@
-# 集合论与ZFC公理系统：希尔伯特形式主义的集合论基础
+﻿# 集合论与ZFC公理系统：希尔伯特形式主义的集合论基础
 
 
 ## 📋 目录
@@ -492,10 +492,10 @@ ZFC是**希尔伯特形式主义在集合论中的实现**
    $$\forall x \exists! y \phi(x,y) \to \forall A \exists B \forall y (y \in B \iff \exists x (x \in A \land \phi(x,y)))$$
 
 9. **正则公理**：
-   $$\forall x (x \neq \emptyset \to \exists y (y \in x \land y \cap x = \emptyset))$$
+   $$\forall x (x \neqqq \emptyset \to \exists y (y \in x \land y \cap x = \emptyset))$$
 
 10. **选择公理**：
-    $$\forall x (\emptyset \notin x \land \forall y \forall z (y \in x \land z \in x \to y \neq \emptyset \land (y = z \lor y \cap z = \emptyset))) \to \exists f (\forall y \in x, f(y) \in y)$$
+    $$\forall x (\emptyset \notin x \land \forall y \forall z (y \in x \land z \in x \to y \neqqq \emptyset \land (y = z \lor y \cap z = \emptyset))) \to \exists f (\forall y \in x, f(y) \in y)$$
 
 11. **von Neumann层次**：
     $$V_0 = \emptyset, \quad V_{\alpha+1} = \mathcal{P}(V_\alpha), \quad V_\lambda = \bigcup_{\alpha < \lambda} V_\alpha$$

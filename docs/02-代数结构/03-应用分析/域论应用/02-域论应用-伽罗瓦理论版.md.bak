@@ -1,0 +1,555 @@
+# 域论应用：伽罗瓦理论 / Field Theory Applications: Galois Theory
+
+## 目录 / Table of Contents
+
+- [域论应用：伽罗瓦理论](#域论应用伽罗瓦理论--field-theory-applications-galois-theory)
+  - [目录](#目录--table-of-contents)
+  - [概述](#概述--overview)
+  - [伽罗瓦理论基础](#伽罗瓦理论基础--galois-theory-foundations)
+  - [伽罗瓦群](#伽罗瓦群--galois-groups)
+  - [伽罗瓦对应](#伽罗瓦对应--galois-correspondence)
+  - [可解性理论](#可解性理论--solvability-theory)
+  - [根式可解性](#根式可解性--radical-solvability)
+  - [Python实现](#python实现--python-implementation)
+  - [Lean4形式化](#lean4形式化--lean4-formalization)
+  - [应用案例](#应用案例--application-cases)
+  - [总结](#总结--summary)
+
+## 概述 / Overview
+
+伽罗瓦理论是域论最重要的应用之一，它建立了域扩张与群论之间的深刻联系。
+通过伽罗瓦理论，我们可以研究多项式方程的可解性，理解域扩张的结构，并解决许多经典的数学问题。
+
+## 伽罗瓦理论基础 / Galois Theory Foundations
+
+### 基本概念 / Basic Concepts
+
+**定义 1.1** (伽罗瓦扩张)
+设 $K/F$ 是域扩张，如果 $K/F$ 是有限、正规且可分的，则称 $K/F$ 为伽罗瓦扩张。
+
+**定义 1.2** (伽罗瓦群)
+设 $K/F$ 是伽罗瓦扩张，$K$ 在 $F$ 上的伽罗瓦群定义为：
+$$\text{Gal}(K/F) = \{\sigma: K \to K \mid \sigma \text{ 是 } F\text{-自同构}\}$$
+
+### 基本性质 / Basic Properties
+
+**定理 1.1** (伽罗瓦群的基本性质)
+设 $K/F$ 是伽罗瓦扩张，则：
+
+1. $\text{Gal}(K/F)$ 是有限群
+2. $|\text{Gal}(K/F)| = [K:F]$
+3. $\text{Fix}(\text{Gal}(K/F)) = F$
+
+**证明**：
+
+1. 由于 $K/F$ 是有限扩张，$K$ 的 $F$-自同构个数有限
+2. 由伽罗瓦理论基本定理，$|\text{Gal}(K/F)| = [K:F]$
+3. 设 $a \in \text{Fix}(\text{Gal}(K/F))$，则对所有 $\sigma \in \text{Gal}(K/F)$，$\sigma(a) = a$，因此 $a \in F$
+
+## 伽罗瓦群 / Galois Groups
+
+### 伽罗瓦群的计算 / Computation of Galois Groups
+
+**算法 1.1** (计算伽罗瓦群)
+
+```python
+def compute_galois_group(polynomial, base_field):
+    """
+    计算多项式在给定域上的伽罗瓦群
+
+    参数:
+        polynomial: 多项式
+        base_field: 基域
+
+    返回:
+        Galois群
+    """
+    # 1. 找到多项式的分裂域
+    splitting_field = find_splitting_field(polynomial, base_field)
+
+    # 2. 找到所有根
+    roots = find_roots(polynomial, splitting_field)
+
+    # 3. 生成所有可能的置换
+    permutations = generate_permutations(roots)
+
+    # 4. 检查哪些置换保持域结构
+    galois_group = []
+    for perm in permutations:
+        if is_field_automorphism(perm, splitting_field, base_field):
+            galois_group.append(perm)
+
+    return galois_group
+```
+
+### 特殊伽罗瓦群 / Special Galois Groups
+
+**定理 1.2** (二次扩张的伽罗瓦群)
+设 $K/F$ 是二次扩张，则 $\text{Gal}(K/F) \cong \mathbb{Z}/2\mathbb{Z}$。
+
+**定理 1.3** (三次扩张的伽罗瓦群)
+设 $K/F$ 是三次扩张，则 $\text{Gal}(K/F)$ 要么是 $\mathbb{Z}/3\mathbb{Z}$，要么是 $S_3$。
+
+## 伽罗瓦对应 / Galois Correspondence
+
+### 基本定理 / Fundamental Theorem
+
+**定理 1.4** (伽罗瓦对应基本定理)
+设 $K/F$ 是伽罗瓦扩张，$G = \text{Gal}(K/F)$，则存在以下双射对应：
+
+1. 中间域 $L$ ($F \subseteq L \subseteq K$) $\leftrightarrow$ 子群 $H \leq G$
+2. $L \mapsto \text{Gal}(K/L)$
+3. $H \mapsto \text{Fix}(H)$
+
+**性质**：
+
+- $[K:L] = |H|$
+- $[L:F] = [G:H]$
+- $L/F$ 是伽罗瓦扩张当且仅当 $H \triangleleft G$
+
+### 对应关系的实现 / Implementation of Correspondence
+
+```python
+def galois_correspondence(galois_extension):
+    """
+    实现伽罗瓦对应
+
+    参数:
+        galois_extension: 伽罗瓦扩张
+
+    返回:
+        中间域与子群的对应关系
+    """
+    K, F = galois_extension.base_field, galois_extension.subfield
+    G = galois_extension.galois_group
+
+    # 找到所有中间域
+    intermediate_fields = find_intermediate_fields(K, F)
+
+    # 找到所有子群
+    subgroups = find_subgroups(G)
+
+    # 建立对应关系
+    correspondence = {}
+    for L in intermediate_fields:
+        H = compute_galois_group(K, L)
+        correspondence[L] = H
+
+    return correspondence
+```
+
+## 可解性理论 / Solvability Theory
+
+### 可解群 / Solvable Groups
+
+**定义 1.3** (可解群)
+群 $G$ 称为可解的，如果存在子群序列：
+$$G = G_0 \supseteq G_1 \supseteq \cdots \supseteq G_n = \{e\}$$
+使得 $G_{i+1} \triangleleft G_i$ 且 $G_i/G_{i+1}$ 是阿贝尔群。
+
+### 多项式可解性 / Polynomial Solvability
+
+**定理 1.5** (阿贝尔-鲁菲尼定理)
+次数 $\geq 5$ 的一般多项式方程不能用根式求解。
+
+**定理 1.6** (伽罗瓦可解性定理)
+多项式 $f(x) \in F[x]$ 可用根式求解当且仅当 $\text{Gal}(f/F)$ 是可解群。
+
+### 可解性判定算法 / Solvability Testing Algorithm
+
+```python
+def is_solvable_by_radicals(polynomial, field):
+    """
+    判断多项式是否可用根式求解
+
+    参数:
+        polynomial: 多项式
+        field: 域
+
+    返回:
+        是否可解
+    """
+    # 1. 计算伽罗瓦群
+    galois_group = compute_galois_group(polynomial, field)
+
+    # 2. 检查群是否可解
+    return is_solvable_group(galois_group)
+
+def is_solvable_group(group):
+    """
+    判断群是否可解
+
+    参数:
+        group: 群
+
+    返回:
+        是否可解
+    """
+    # 计算导群序列
+    derived_series = compute_derived_series(group)
+
+    # 检查是否达到单位群
+    return derived_series[-1].order() == 1
+```
+
+## 根式可解性 / Radical Solvability
+
+### 根式扩张 / Radical Extensions
+
+**定义 1.4** (根式扩张)
+域扩张 $K/F$ 称为根式扩张，如果存在域塔：
+$$F = F_0 \subseteq F_1 \subseteq \cdots \subseteq F_n = K$$
+使得 $F_{i+1} = F_i(\sqrt[n_i]{a_i})$，其中 $a_i \in F_i$，$n_i \in \mathbb{N}$。
+
+### 根式可解性的判定 / Radical Solvability Testing
+
+```python
+def test_radical_solvability(polynomial, field):
+    """
+    测试多项式的根式可解性
+
+    参数:
+        polynomial: 多项式
+        field: 域
+
+    返回:
+        可解性结果和构造方法
+    """
+    # 1. 计算伽罗瓦群
+    galois_group = compute_galois_group(polynomial, field)
+
+    # 2. 检查群结构
+    if not is_solvable_group(galois_group):
+        return False, "伽罗瓦群不可解"
+
+    # 3. 构造根式解
+    radical_solution = construct_radical_solution(polynomial, field)
+
+    return True, radical_solution
+
+def construct_radical_solution(polynomial, field):
+    """
+    构造根式解
+
+    参数:
+        polynomial: 多项式
+        field: 域
+
+    返回:
+        根式解表达式
+    """
+    # 实现根式解的构造算法
+    # 这里需要复杂的符号计算
+    pass
+```
+
+## Python实现 / Python Implementation
+
+### 完整的伽罗瓦理论实现 / Complete Galois Theory Implementation
+
+```python
+import numpy as np
+from typing import List, Tuple, Optional
+from dataclasses import dataclass
+
+@dataclass
+class Field:
+    """域类"""
+    characteristic: int
+    elements: List
+
+    def __init__(self, char: int, elements: List):
+        self.characteristic = char
+        self.elements = elements
+
+@dataclass
+class FieldExtension:
+    """域扩张类"""
+    base_field: Field
+    extension_field: Field
+    degree: int
+
+    def __init__(self, base: Field, extension: Field):
+        self.base_field = base
+        self.extension_field = extension
+        self.degree = self._compute_degree()
+
+    def _compute_degree(self) -> int:
+        """计算扩张次数"""
+        return len(self.extension_field.elements) // len(self.base_field.elements)
+
+@dataclass
+class GaloisGroup:
+    """伽罗瓦群类"""
+    elements: List
+    operation: callable
+
+    def __init__(self, elements: List, operation: callable):
+        self.elements = elements
+        self.operation = operation
+
+    def order(self) -> int:
+        """群的阶"""
+        return len(self.elements)
+
+    def is_abelian(self) -> bool:
+        """检查是否阿贝尔群"""
+        for a in self.elements:
+            for b in self.elements:
+                if self.operation(a, b) != self.operation(b, a):
+                    return False
+        return True
+
+class GaloisTheory:
+    """伽罗瓦理论实现类"""
+
+    def __init__(self):
+        self.extensions = []
+        self.groups = []
+
+    def create_extension(self, base_field: Field, extension_field: Field) -> FieldExtension:
+        """创建域扩张"""
+        extension = FieldExtension(base_field, extension_field)
+        self.extensions.append(extension)
+        return extension
+
+    def compute_galois_group(self, extension: FieldExtension) -> GaloisGroup:
+        """计算伽罗瓦群"""
+        # 实现伽罗瓦群计算
+        automorphisms = self._find_automorphisms(extension)
+        return GaloisGroup(automorphisms, self._composition)
+
+    def _find_automorphisms(self, extension: FieldExtension) -> List:
+        """找到所有自同构"""
+        # 实现自同构查找
+        pass
+
+    def _composition(self, f, g):
+        """函数复合"""
+        return lambda x: f(g(x))
+
+    def galois_correspondence(self, extension: FieldExtension) -> dict:
+        """伽罗瓦对应"""
+        galois_group = self.compute_galois_group(extension)
+        intermediate_fields = self._find_intermediate_fields(extension)
+
+        correspondence = {}
+        for field in intermediate_fields:
+            subgroup = self._compute_stabilizer(galois_group, field)
+            correspondence[field] = subgroup
+
+        return correspondence
+
+    def is_solvable_by_radicals(self, polynomial, field: Field) -> bool:
+        """判断是否可用根式求解"""
+        # 1. 找到分裂域
+        splitting_field = self._find_splitting_field(polynomial, field)
+
+        # 2. 创建扩张
+        extension = self.create_extension(field, splitting_field)
+
+        # 3. 计算伽罗瓦群
+        galois_group = self.compute_galois_group(extension)
+
+        # 4. 检查可解性
+        return self._is_solvable_group(galois_group)
+
+    def _is_solvable_group(self, group: GaloisGroup) -> bool:
+        """判断群是否可解"""
+        # 计算导群序列
+        derived_series = self._compute_derived_series(group)
+        return derived_series[-1].order() == 1
+
+    def _compute_derived_series(self, group: GaloisGroup) -> List[GaloisGroup]:
+        """计算导群序列"""
+        series = [group]
+        current = group
+
+        while current.order() > 1:
+            commutator = self._compute_commutator_subgroup(current)
+            series.append(commutator)
+            current = commutator
+
+        return series
+
+    def _compute_commutator_subgroup(self, group: GaloisGroup) -> GaloisGroup:
+        """计算换位子群"""
+        commutators = []
+        for a in group.elements:
+            for b in group.elements:
+                comm = self._commutator(a, b, group.operation)
+                if comm not in commutators:
+                    commutators.append(comm)
+
+        return GaloisGroup(commutators, group.operation)
+
+    def _commutator(self, a, b, operation):
+        """计算换位子 [a,b] = aba^{-1}b^{-1}"""
+        return operation(operation(operation(a, b), self._inverse(a)), self._inverse(b))
+
+    def _inverse(self, element):
+        """求逆元"""
+        # 实现逆元计算
+        pass
+
+# 使用示例
+def example_galois_theory():
+    """伽罗瓦理论使用示例"""
+
+    # 创建有理数域
+    Q = Field(0, [])  # 有理数域
+
+    # 创建二次扩张 Q(√2)
+    sqrt2_field = Field(0, [])  # Q(√2)
+    extension = FieldExtension(Q, sqrt2_field)
+
+    # 创建伽罗瓦理论对象
+    galois = GaloisTheory()
+
+    # 计算伽罗瓦群
+    galois_group = galois.compute_galois_group(extension)
+    print(f"伽罗瓦群阶数: {galois_group.order()}")
+    print(f"是否阿贝尔群: {galois_group.is_abelian()}")
+
+    # 伽罗瓦对应
+    correspondence = galois.galois_correspondence(extension)
+    print(f"中间域数量: {len(correspondence)}")
+
+    # 测试根式可解性
+    polynomial = [1, 0, -2]  # x² - 2
+    is_solvable = galois.is_solvable_by_radicals(polynomial, Q)
+    print(f"x² - 2 是否可用根式求解: {is_solvable}")
+
+if __name__ == "__main__":
+    example_galois_theory()
+```
+
+## Lean4形式化 / Lean4 Formalization
+
+### 伽罗瓦理论的形式化 / Formalization of Galois Theory
+
+```lean
+-- 伽罗瓦理论的形式化实现
+import Mathlib.Algebra.Field.Basic
+import Mathlib.GroupTheory.Solvable
+import Mathlib.RingTheory.Polynomial.Basic
+
+-- 域扩张的定义
+structure FieldExtension (F K : Type*) [Field F] [Field K] where
+  embedding : F →+* K
+  is_injective : Function.Injective embedding
+
+-- 伽罗瓦群的定义
+def GaloisGroup (F K : Type*) [Field F] [Field K] (ext : FieldExtension F K) : Type* :=
+  { σ : K →+* K // σ.comp ext.embedding = ext.embedding }
+
+-- 伽罗瓦群是群
+instance (F K : Type*) [Field F] [Field K] (ext : FieldExtension F K) :
+  Group (GaloisGroup F K ext) where
+  mul := fun σ τ => ⟨τ.val.comp σ.val, by simp⟩
+  one := ⟨RingHom.id K, by simp⟩
+  inv := fun σ => ⟨σ.val.inverse, by simp⟩
+  mul_assoc := by intros; ext; simp
+  mul_one := by intros; ext; simp
+  one_mul := by intros; ext; simp
+  mul_left_inv := by intros; ext; simp
+
+-- 伽罗瓦扩张的定义
+class IsGaloisExtension (F K : Type*) [Field F] [Field K] (ext : FieldExtension F K) : Prop where
+  is_finite : FiniteDimensional F K
+  is_normal : Normal F K
+  is_separable : Separable F K
+
+-- 伽罗瓦理论基本定理
+theorem galois_fundamental_theorem (F K : Type*) [Field F] [Field K]
+  (ext : FieldExtension F K) [IsGaloisExtension F K ext] :
+  ∃ (G : Subgroup (GaloisGroup F K ext)),
+  Fintype.card G = FiniteDimensional.finrank F K := by
+  -- 实现伽罗瓦理论基本定理的证明
+  sorry
+
+-- 可解群的定义
+def IsSolvableGroup (G : Type*) [Group G] : Prop :=
+  ∃ (n : ℕ) (H : Fin n → Subgroup G),
+  (∀ i, H i ⊴ H (i - 1)) ∧
+  (∀ i, IsCommutative (H i) (· * ·)) ∧
+  H 0 = ⊤ ∧ H (n - 1) = ⊥
+
+-- 多项式可解性定理
+theorem polynomial_solvability (F : Type*) [Field F] (f : Polynomial F) :
+  IsSolvableByRadicals f ↔
+  IsSolvableGroup (GaloisGroup F (SplittingField f) (SplittingField.extension F f)) := by
+  -- 实现多项式可解性定理的证明
+  sorry
+```
+
+## 应用案例 / Application Cases
+
+### 案例1：二次方程的可解性 / Case 1: Solvability of Quadratic Equations
+
+**问题**：证明所有二次方程都可用根式求解。
+
+**解决方案**：
+
+1. 设 $f(x) = ax^2 + bx + c$ 是二次多项式
+2. 伽罗瓦群 $\text{Gal}(f/\mathbb{Q}) \leq S_2$
+3. $S_2 \cong \mathbb{Z}/2\mathbb{Z}$ 是可解群
+4. 因此二次方程可用根式求解
+
+### 案例2：三次方程的可解性 / Case 2: Solvability of Cubic Equations
+
+**问题**：分析三次方程的可解性。
+
+**解决方案**：
+
+```python
+def analyze_cubic_solvability():
+    """分析三次方程的可解性"""
+
+    # 三次方程的伽罗瓦群可能是：
+    # 1. Z/3Z (可解)
+    # 2. S3 (可解)
+
+    # 因此所有三次方程都可用根式求解
+    # 这解释了为什么有卡尔丹公式
+
+    return "所有三次方程都可用根式求解"
+```
+
+### 案例3：五次方程的可解性 / Case 3: Solvability of Quintic Equations
+
+**问题**：证明一般五次方程不可用根式求解。
+
+**解决方案**：
+
+```python
+def analyze_quintic_solvability():
+    """分析五次方程的可解性"""
+
+    # 一般五次方程的伽罗瓦群是 S5
+    # S5 不是可解群
+    # 因此一般五次方程不可用根式求解
+
+    return "一般五次方程不可用根式求解"
+```
+
+## 总结 / Summary
+
+伽罗瓦理论是域论最重要的应用之一，它：
+
+1. **建立了域扩张与群论的联系**：通过伽罗瓦群，我们可以用群论的方法研究域扩张的结构。
+
+2. **解决了多项式可解性问题**：阿贝尔-鲁菲尼定理告诉我们，一般五次及以上方程不可用根式求解。
+
+3. **提供了强大的工具**：伽罗瓦对应、可解性理论等工具在代数数论、代数几何等领域有广泛应用。
+
+4. **推动了现代数学发展**：伽罗瓦理论的思想影响了整个现代数学的发展。
+
+通过本文档的学习，读者应该能够：
+
+- 理解伽罗瓦理论的基本概念和定理
+- 掌握伽罗瓦群的计算方法
+- 应用伽罗瓦理论解决实际问题
+- 使用Python和Lean4实现相关算法
+
+伽罗瓦理论将继续在数学研究和应用中发挥重要作用，为理解代数结构提供深刻的洞察。

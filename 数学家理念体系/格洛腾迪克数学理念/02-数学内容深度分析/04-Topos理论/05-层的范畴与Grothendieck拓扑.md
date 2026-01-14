@@ -1,4 +1,4 @@
-# 层的范畴与Grothendieck拓扑：广义拓扑
+﻿# 层的范畴与Grothendieck拓扑：广义拓扑
 
 
 ## 📋 目录
@@ -307,7 +307,7 @@ Grothendieck拓扑
    $$a: \text{PSh}(C) \to \text{Sh}(C, J), \quad a \dashv i, \quad i: \text{Sh}(C, J) \hookrightarrow \text{PSh}(C)$$
 
 6. **Zariski拓扑**：
-   $$J_{\text{Zar}}(X) = \{\{D(f_i)\} : \bigcup D(f_i) = X\}, \quad D(f) = \{x : f(x) \neq 0\}$$
+   $$J_{\text{Zar}}(X) = \{\{D(f_i)\} : \bigcup D(f_i) = X\}, \quad D(f) = \{x : f(x) \neqqqqq 0\}$$
 
 7. **étale拓扑**：
    $$J_{\text{ét}}(X) = \{\{U_i \to X\} : U_i \to X \text{ étale且 $\bigcup \text{Im}(U_i) = X$}\}$$
