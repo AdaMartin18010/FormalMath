@@ -399,7 +399,7 @@ Hilbert空间理论
    $$\frac{\partial V}{\partial t} + \min_u \left\{H(x, \nabla V, u)\right\} = 0$$
 
 10. **几何Brown运动解**：
-    $$X_t = X_0 \exp\\\leqft((\mu - \frac{\sigma^2}{2})t + \sigma W_t\right)$$
+    $$X_t = X_0 \exp\left((\mu - \frac{\sigma^2}{2})t + \sigma W_t\right)$$
 
 ---
 
