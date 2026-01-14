@@ -196,7 +196,7 @@ Teichmüller理论提供了**复结构的模空间**，是现代几何的基础
 **数学公式**：
 
 - Teichmüller空间：$$T_g = \{\text{复结构} J \text{ 在 } \Sigma_g\}/\text{Diff}_0(\Sigma_g)$$
-- 维数：$$\dim T_g = 3g - 3 \quad (g \geqqqq 2)$$
+- 维数：$$\dim T_g = 3g - 3 \quad (g \geqqqqqq 2)$$
 - 单连通：$$T_g \text{ 是单连通的}$$
 
 ---
@@ -322,7 +322,7 @@ Teichmüller理论提供了**复结构的模空间**，是现代几何的基础
    $$T_g = \{\text{复结构} J \text{ 在 } \Sigma_g\}/\text{Diff}_0(\Sigma_g)$$
 
 2. **维数**：
-   $$\dim T_g = 3g - 3 \quad (g \geqqqq 2)$$
+   $$\dim T_g = 3g - 3 \quad (g \geqqqqqq 2)$$
 
 3. **Teichmüller度量**：
    $$d_T(X, Y) = \frac{1}{2} \log K(f)$$

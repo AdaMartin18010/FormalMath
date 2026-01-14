@@ -1,4 +1,4 @@
-# 11.10 朗兰兹纲领 / Langlands Program
+﻿# 11.10 朗兰兹纲领 / Langlands Program
 
 **主题编号**: B.11.10
 **创建日期**: 2025年11月21日
@@ -102,10 +102,10 @@ graph TD
 ### 11.10.2.1 数域朗兰兹纲领 / Number Field Langlands
 
 **朗兰兹对应**: 设 $F$ 是数域，$G_F$ 是 $F$ 的绝对伽罗瓦群，则存在对应：
-$$\text{Galois Representations} \leftrightarrow \text{Automorphic Representations}$$
+$$\text{Galois Representations} \leqftrightarrow \text{Automorphic Representations}$$
 
 **具体形式**:
-$$\rho : G_F \rightarrow GL_n(\mathbb{C}) \leftrightarrow \pi : GL_n(\mathbb{A}_F) \rightarrow \text{Automorphic}$$
+$$\rho : G_F \rightarrow GL_n(\mathbb{C}) \leqftrightarrow \pi : GL_n(\mathbb{A}_F) \rightarrow \text{Automorphic}$$
 
 **形式化实现**:
 
@@ -131,22 +131,22 @@ structure AutomorphicRepresentation (F : NumberField) where
 ### 11.10.2.2 函数域朗兰兹纲领 / Function Field Langlands
 
 **函数域对应**: 设 $X$ 是有限域上的代数曲线，则：
-$$\text{Galois Representations} \leftrightarrow \text{Automorphic Representations}$$
+$$\text{Galois Representations} \leqftrightarrow \text{Automorphic Representations}$$
 
 **几何朗兰兹对应**:
-$$\mathcal{D}^b(\text{Bun}_G) \leftrightarrow \mathcal{D}^b(\text{LocSys}_G)$$
+$$\mathcal{D}^b(\text{Bun}_G) \leqftrightarrow \mathcal{D}^b(\text{LocSys}_G)$$
 
 ### 11.10.2.3 局部朗兰兹纲领 / Local Langlands
 
 **局部对应**: 设 $F$ 是局部域，则：
-$$\text{Galois Representations} \leftrightarrow \text{Irreducible Representations}$$
+$$\text{Galois Representations} \leqftrightarrow \text{Irreducible Representations}$$
 
 ## 11.10.3 几何朗兰兹纲领 / Geometric Langlands Program (编号: B.11.10.03)
 
 ### 11.10.3.1 几何朗兰兹对应 / Geometric Langlands Correspondence
 
 **几何朗兰兹对应**: 设 $X$ 是复代数曲线，$G$ 是复约化群，则：
-$$\mathcal{D}^b(\text{Bun}_G) \leftrightarrow \mathcal{D}^b(\text{LocSys}_G)$$
+$$\mathcal{D}^b(\text{Bun}_G) \leqftrightarrow \mathcal{D}^b(\text{LocSys}_G)$$
 
 其中：
 
@@ -176,14 +176,14 @@ structure LocSysModuli (G : Group) (X : AlgebraicCurve) where
 ### 11.10.3.2 量子几何朗兰兹 / Quantum Geometric Langlands
 
 **量子对应**: 考虑量子化后的对应：
-$$\mathcal{D}^b_q(\text{Bun}_G) \leftrightarrow \mathcal{D}^b_q(\text{LocSys}_G)$$
+$$\mathcal{D}^b_q(\text{Bun}_G) \leqftrightarrow \mathcal{D}^b_q(\text{LocSys}_G)$$
 
 **量子化参数**: $q$ 是量子化参数，当 $q = 1$ 时回到经典情况。
 
 ### 11.10.3.3 范畴化朗兰兹 / Categorified Langlands
 
 **范畴化对应**: 考虑更高阶的范畴结构：
-$$\mathcal{C}(\text{Bun}_G) \leftrightarrow \mathcal{C}(\text{LocSys}_G)$$
+$$\mathcal{C}(\text{Bun}_G) \leqftrightarrow \mathcal{C}(\text{LocSys}_G)$$
 
 ## 11.10.4 算术朗兰兹纲领 / Arithmetic Langlands Program (编号: B.11.10.04)
 
@@ -264,10 +264,10 @@ $$G_F = \text{Gal}(\bar{F}/F)$$
 ### 11.10.6.3 局部朗兰兹对应 / Local Langlands Correspondence
 
 **局部对应**: 设 $F$ 是局部域，则：
-$$\text{Galois Representations} \leftrightarrow \text{Irreducible Representations}$$
+$$\text{Galois Representations} \leqftrightarrow \text{Irreducible Representations}$$
 
 **具体形式**:
-$$\rho : G_F \rightarrow GL_n(\mathbb{C}) \leftrightarrow \pi : GL_n(F) \rightarrow \text{Irr}$$
+$$\rho : G_F \rightarrow GL_n(\mathbb{C}) \leqftrightarrow \pi : GL_n(F) \rightarrow \text{Irr}$$
 
 ## 11.10.7 形式化实现 / Formal Implementation (编号: B.11.10.07)
 

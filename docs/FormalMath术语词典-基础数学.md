@@ -417,7 +417,7 @@ mindmap
 
 **中文定义**：有理数是可以表示为两个整数之比的数。
 **英文定义**：Rational numbers are numbers that can be expressed as the ratio of two integers.
-**符号表示**：$\mathbb{Q} = \{\frac{a}{b} \mid a, b \in \mathbb{Z}, b \neqq 0\}$
+**符号表示**：$\mathbb{Q} = \{\frac{a}{b} \mid a, b \in \mathbb{Z}, b \neqqq 0\}$
 **性质**：有理数集在加法、减法、乘法、除法下封闭
 
 #### 分数 / Fraction
@@ -541,7 +541,7 @@ mindmap
 
 **中文定义**：否定连接词表示"非"。
 **英文定义**：The negation connective represents "not".
-**符号表示**：$\neqg p$ 或 $\sim p$
+**符号表示**：$\neqqg p$ 或 $\sim p$
 
 ##### 合取 / Conjunction
 
@@ -601,13 +601,13 @@ mindmap
 
 **中文定义**：矛盾是永远为假的命题。
 **英文定义**：A contradiction is a proposition that is always false.
-**示例**：$p \land \neqg p$
+**示例**：$p \land \neqqg p$
 
 #### 重言式 / Tautology
 
 **中文定义**：重言式是永远为真的命题。
 **英文定义**：A tautology is a proposition that is always true.
-**示例**：$p \lor \neqg p$
+**示例**：$p \lor \neqqg p$
 
 #### 推理 / Inference
 
@@ -996,7 +996,7 @@ ZFC公理体系
 
 | 符号 | 中文名称 | 英文名称 | 说明 |
 |------|---------|---------|------|
-| $\neqg p$ | 否定 | Negation | 非p |
+| $\neqqg p$ | 否定 | Negation | 非p |
 | $p \land q$ | 合取 | Conjunction | p且q |
 | $p \lor q$ | 析取 | Disjunction | p或q |
 | $p \implies q$ | 蕴含 | Implication | 如果p那么q |
@@ -1028,7 +1028,7 @@ ZFC公理体系
 
 **错误表述**：$\emptyset = 0$ 或 $\emptyset = \{\emptyset\}$
 **正确理解**：空集是不包含任何元素的集合，$\{\emptyset\}$ 是包含空集的集合
-**注意**：$\emptyset \neqq \{\emptyset\}$，$|\emptyset| = 0$，$|\{\emptyset\}| = 1$
+**注意**：$\emptyset \neqqq \{\emptyset\}$，$|\emptyset| = 0$，$|\{\emptyset\}| = 1$
 
 ### 数系常见错误 / Common Errors in Number Systems
 
@@ -1062,13 +1062,13 @@ ZFC公理体系
 
 **错误表述**：$\forall x$ 和 $\exists x$ 可以互换
 **正确理解**：全称量词表示"所有"，存在量词表示"存在"
-**注意**：$\neqg(\forall x P(x)) \iff \exists x \neqg P(x)$
+**注意**：$\neqqg(\forall x P(x)) \iff \exists x \neqqg P(x)$
 
 #### ❌ 错误3：混淆矛盾和重言式
 
 **错误表述**：矛盾就是重言式
 **正确理解**：矛盾永远为假，重言式永远为真
-**示例**：$p \land \neqg p$ 是矛盾，$p \lor \neqg p$ 是重言式
+**示例**：$p \land \neqqg p$ 是矛盾，$p \lor \neqqg p$ 是重言式
 
 ### 通用注意事项 / General Notes
 
@@ -1356,11 +1356,11 @@ ZFC公理体系
 
 | 中文术语 | 英文术语 | LaTeX代码 | 说明 |
 |---------|---------|-----------|------|
-| 否定 | Negation | `$\neqg p$` 或 `$\sim p$` | 否定连接词 |
+| 否定 | Negation | `$\neqqg p$` 或 `$\sim p$` | 否定连接词 |
 | 合取 | Conjunction | `$p \land q$` | 合取连接词 |
 | 析取 | Disjunction | `$p \lor q$` | 析取连接词 |
 | 蕴含 | Implication | `$p \implies q$` 或 `$p \to q$` | 蕴含连接词 |
-| 等价 | Equivalence | `$p \iff q$` 或 `$p \leqftrightarrow q$` | 等价连接词 |
+| 等价 | Equivalence | `$p \iff q$` 或 `$p \leqqftrightarrow q$` | 等价连接词 |
 | 全称量词 | Universal Quantifier | `$\forall x$` | 全称量词 |
 | 存在量词 | Existential Quantifier | `$\exists x$` | 存在量词 |
 | 唯一存在量词 | Unique Existential Quantifier | `$\exists! x$` | 唯一存在量词 |
@@ -1507,7 +1507,7 @@ ZFC公理体系
 #### 逻辑连接词 / Logical Connectives
 
 - **否定 (Negation)**：
-  - `$\neqg p$`：标准符号
+  - `$\neqqg p$`：标准符号
   - `$\sim p$`：替代符号
   - `$\bar{p}$`：在某些上下文中使用
 
@@ -1527,7 +1527,7 @@ ZFC公理体系
 
 - **等价 (Equivalence)**：
   - `$p \iff q$`：标准符号
-  - `$p \leqftrightarrow q$`：替代符号
+  - `$p \leqqftrightarrow q$`：替代符号
   - `$p \equiv q$`：在某些上下文中使用
 
 #### 量词 / Quantifiers
@@ -1783,7 +1783,7 @@ ZFC公理体系
 1. **否定 (Negation)**：
    - 记忆法：否定是"非"的关系，真变假，假变真
    - 口诀："否定真假反，合取全真才真"
-   - 符号记忆：$\neqg p$，$\neqg$ 像否定符号
+   - 符号记忆：$\neqqg p$，$\neqqg$ 像否定符号
 
 2. **合取 (Conjunction)**：
    - 记忆法：合取是"且"的关系，两个都为真才为真
@@ -1927,8 +1927,8 @@ ZFC公理体系
 **2. 量词逻辑**：
 
 - 证明以下等价关系：
-  - $\neqg(\forall x P(x)) \iff \exists x \neqg P(x)$
-  - $\neqg(\exists x P(x)) \iff \forall x \neqg P(x)$
+  - $\neqqg(\forall x P(x)) \iff \exists x \neqqg P(x)$
+  - $\neqqg(\exists x P(x)) \iff \forall x \neqqg P(x)$
 
 ### 学习检查点 / Learning Checkpoints
 
@@ -2007,12 +2007,12 @@ ZFC公理体系
 **答案**：
 
 - **$f: \mathbb{R} \to \mathbb{R}$，$f(x) = x^2$**：
-  - 不是单射：$f(-1) = f(1) = 1$，但 $-1 \neqq 1$
+  - 不是单射：$f(-1) = f(1) = 1$，但 $-1 \neqqq 1$
   - 不是满射：$-1 \in \mathbb{R}$，但不存在 $x \in \mathbb{R}$ 使得 $x^2 = -1$
   - 因此 $f$ 既不是单射也不是满射
 
 - **$f: \mathbb{R} \to \mathbb{R}^+$，$f(x) = x^2$**：
-  - 不是单射：$f(-1) = f(1) = 1$，但 $-1 \neqq 1$
+  - 不是单射：$f(-1) = f(1) = 1$，但 $-1 \neqqq 1$
   - 是满射：对于任意 $y \in \mathbb{R}^+$，存在 $x = \sqrt{y}$ 使得 $f(x) = y$
   - 因此 $f$ 是满射但不是单射
 
@@ -2049,10 +2049,10 @@ ZFC公理体系
   - 因此"整除"关系是偏序关系（不是全序关系，因为不是所有整数对都可比较）
 
 - **在实数集上的"小于等于"关系**：
-  - 自反性：对于任意 $a \in \mathbb{R}$，$a \leqq a$
-  - 反对称性：如果 $a \leqq b$ 且 $b \leqq a$，则 $a = b$
-  - 传递性：如果 $a \leqq b$ 且 $b \leqq c$，则 $a \leqq c$
-  - 完全性：对于任意 $a, b \in \mathbb{R}$，$a \leqq b$ 或 $b \leqq a$
+  - 自反性：对于任意 $a \in \mathbb{R}$，$a \leqqq a$
+  - 反对称性：如果 $a \leqqq b$ 且 $b \leqqq a$，则 $a = b$
+  - 传递性：如果 $a \leqqq b$ 且 $b \leqqq c$，则 $a \leqqq c$
+  - 完全性：对于任意 $a, b \in \mathbb{R}$，$a \leqqq b$ 或 $b \leqqq a$
   - 因此"小于等于"关系是全序关系
 
 ### 数系练习题答案 / Number System Exercise Answers
@@ -2252,33 +2252,33 @@ ZFC公理体系
 
 - **从"如果下雨，那么地湿"和"地不湿"推出"没下雨"**：
   - 前提1：$R \implies W$（如果下雨，那么地湿）
-  - 前提2：$\neqg W$（地不湿）
+  - 前提2：$\neqqg W$（地不湿）
   - 推理：
-    1. 从前提1，使用逆否命题：$\neqg W \implies \neqg R$
-    2. 从前提2和步骤1，使用假言推理：$\neqg R$
-  - 结论：$\neqg R$（没下雨）
+    1. 从前提1，使用逆否命题：$\neqqg W \implies \neqqg R$
+    2. 从前提2和步骤1，使用假言推理：$\neqqg R$
+  - 结论：$\neqqg R$（没下雨）
 
 **2. 量词逻辑**：
 
 **答案**：
 
-- **$\neqg(\forall x P(x)) \iff \exists x \neqg P(x)$**：
+- **$\neqqg(\forall x P(x)) \iff \exists x \neqqg P(x)$**：
   - 证明：
-    - 如果 $\neqg(\forall x P(x))$ 为真，则 $\forall x P(x)$ 为假
+    - 如果 $\neqqg(\forall x P(x))$ 为真，则 $\forall x P(x)$ 为假
     - 这意味着存在某个 $x$ 使得 $P(x)$ 为假
-    - 因此 $\exists x \neqg P(x)$ 为真
-    - 反之，如果 $\exists x \neqg P(x)$ 为真，则存在某个 $x$ 使得 $P(x)$ 为假
-    - 因此 $\forall x P(x)$ 为假，即 $\neqg(\forall x P(x))$ 为真
-  - 因此 $\neqg(\forall x P(x)) \iff \exists x \neqg P(x)$
+    - 因此 $\exists x \neqqg P(x)$ 为真
+    - 反之，如果 $\exists x \neqqg P(x)$ 为真，则存在某个 $x$ 使得 $P(x)$ 为假
+    - 因此 $\forall x P(x)$ 为假，即 $\neqqg(\forall x P(x))$ 为真
+  - 因此 $\neqqg(\forall x P(x)) \iff \exists x \neqqg P(x)$
 
-- **$\neqg(\exists x P(x)) \iff \forall x \neqg P(x)$**：
+- **$\neqqg(\exists x P(x)) \iff \forall x \neqqg P(x)$**：
   - 证明：
-    - 如果 $\neqg(\exists x P(x))$ 为真，则 $\exists x P(x)$ 为假
+    - 如果 $\neqqg(\exists x P(x))$ 为真，则 $\exists x P(x)$ 为假
     - 这意味着对所有 $x$，$P(x)$ 都为假
-    - 因此 $\forall x \neqg P(x)$ 为真
-    - 反之，如果 $\forall x \neqg P(x)$ 为真，则对所有 $x$，$P(x)$ 都为假
-    - 因此 $\exists x P(x)$ 为假，即 $\neqg(\exists x P(x))$ 为真
-  - 因此 $\neqg(\exists x P(x)) \iff \forall x \neqg P(x)$
+    - 因此 $\forall x \neqqg P(x)$ 为真
+    - 反之，如果 $\forall x \neqqg P(x)$ 为真，则对所有 $x$，$P(x)$ 都为假
+    - 因此 $\exists x P(x)$ 为假，即 $\neqqg(\exists x P(x))$ 为真
+  - 因此 $\neqqg(\exists x P(x)) \iff \forall x \neqqg P(x)$
 
 ### 解析说明 / Solution Explanations
 
@@ -2550,7 +2550,7 @@ ZFC公理体系
 **正确理解**：
 
 - 子集 ($\subseteq$) 包括相等的情况：$A \subseteq B$ 表示 $A$ 是 $B$ 的子集，可能 $A = B$
-- 真子集 ($\subset$) 不包括相等的情况：$A \subset B$ 表示 $A$ 是 $B$ 的子集且 $A \neqq B$
+- 真子集 ($\subset$) 不包括相等的情况：$A \subset B$ 表示 $A$ 是 $B$ 的子集且 $A \neqqq B$
 
 **示例**：
 
@@ -2579,8 +2579,8 @@ ZFC公理体系
 **正确理解**：
 
 - 空集是不包含任何元素的集合
-- $\emptyset \neqq 0$（空集是集合，0是数）
-- $\emptyset \neqq \{\emptyset\}$（空集不包含元素，$\{\emptyset\}$ 包含一个元素：空集本身）
+- $\emptyset \neqqq 0$（空集是集合，0是数）
+- $\emptyset \neqqq \{\emptyset\}$（空集不包含元素，$\{\emptyset\}$ 包含一个元素：空集本身）
 
 **注意**：
 
@@ -2684,7 +2684,7 @@ ZFC公理体系
 - 全称量词 ($\forall$) 表示"对所有"：所有元素都满足条件
 - 存在量词 ($\exists$) 表示"存在"：至少一个元素满足条件
 
-**注意**：$\neqg(\forall x P(x)) \iff \exists x \neqg P(x)$
+**注意**：$\neqqg(\forall x P(x)) \iff \exists x \neqqg P(x)$
 
 **示例**：
 
@@ -2697,13 +2697,13 @@ ZFC公理体系
 
 **正确理解**：
 
-- 矛盾永远为假：$p \land \neqg p$ 总是为假
-- 重言式永远为真：$p \lor \neqg p$ 总是为真
+- 矛盾永远为假：$p \land \neqqg p$ 总是为假
+- 重言式永远为真：$p \lor \neqqg p$ 总是为真
 
 **示例**：
 
-- $p \land \neqg p$ 是矛盾（永远为假）
-- $p \lor \neqg p$ 是重言式（永远为真）
+- $p \land \neqqg p$ 是矛盾（永远为假）
+- $p \lor \neqqg p$ 是重言式（永远为真）
 
 #### 误解4：误解蕴含的真值表
 
@@ -2807,7 +2807,7 @@ ZFC公理体系
 |------|------|------|------|----------|
 | **自然数** | $\mathbb{N}$ | $\{1, 2, 3, \ldots\}$ | 有序、可数、有最小元 | $1, 2, 3, \ldots$ |
 | **整数** | $\mathbb{Z}$ | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$ | 有序、可数、有加法逆元 | $-1, 0, 1, 2, \ldots$ |
-| **有理数** | $\mathbb{Q}$ | $\{p/q \mid p, q \in \mathbb{Z}, q \neqq 0\}$ | 有序、可数、稠密 | $1/2, -3/4, 0.5, \ldots$ |
+| **有理数** | $\mathbb{Q}$ | $\{p/q \mid p, q \in \mathbb{Z}, q \neqqq 0\}$ | 有序、可数、稠密 | $1/2, -3/4, 0.5, \ldots$ |
 | **实数** | $\mathbb{R}$ | 有理数和无理数的并集 | 有序、不可数、完备 | $\sqrt{2}, \pi, e, \ldots$ |
 | **复数** | $\mathbb{C}$ | $\{a + bi \mid a, b \in \mathbb{R}\}$ | 无序、不可数、代数闭 | $1 + i, 2 - 3i, \ldots$ |
 
@@ -2855,7 +2855,7 @@ ZFC公理体系
 
 | 连接词 | 符号 | 定义 | 真值表特点 | 典型示例 |
 |--------|------|------|------------|----------|
-| **否定** | $\neqg$ | 真变假，假变真 | 1行真，1行假 | $\neqg p$ |
+| **否定** | $\neqqg$ | 真变假，假变真 | 1行真，1行假 | $\neqqg p$ |
 | **合取** | $\land$ | 两者都为真时为真 | 1行真，3行假 | $p \land q$ |
 | **析取** | $\lor$ | 至少一个为真时为真 | 3行真，1行假 | $p \lor q$ |
 | **蕴含** | $\implies$ | 前件假或后件真时为真 | 3行真，1行假 | $p \implies q$ |
@@ -2863,17 +2863,17 @@ ZFC公理体系
 
 **关系说明**：
 
-- 蕴含可以表示为：$p \implies q \equiv \neqg p \lor q$
+- 蕴含可以表示为：$p \implies q \equiv \neqqg p \lor q$
 - 等价可以表示为：$p \iff q \equiv (p \implies q) \land (q \implies p)$
-- 德摩根律：$\neqg(p \land q) \equiv \neqg p \lor \neqg q$
+- 德摩根律：$\neqqg(p \land q) \equiv \neqqg p \lor \neqqg q$
 
 ### 量词对比 / Quantifiers Comparison
 
 | 量词 | 符号 | 定义 | 否定 | 典型示例 |
 |------|------|------|------|----------|
-| **全称量词** | $\forall$ | 对所有元素 | $\neqg(\forall x P(x)) \equiv \exists x \neqg P(x)$ | $\forall x (x > 0)$ |
-| **存在量词** | $\exists$ | 存在一个元素 | $\neqg(\exists x P(x)) \equiv \forall x \neqg P(x)$ | $\exists x (x > 0)$ |
-| **唯一存在量词** | $\exists!$ | 存在唯一元素 | $\neqg(\exists! x P(x)) \equiv \neqg(\exists x P(x)) \lor (\exists x, y (P(x) \land P(y) \land x \neqq y))$ | $\exists! x (x^2 = 0)$ |
+| **全称量词** | $\forall$ | 对所有元素 | $\neqqg(\forall x P(x)) \equiv \exists x \neqqg P(x)$ | $\forall x (x > 0)$ |
+| **存在量词** | $\exists$ | 存在一个元素 | $\neqqg(\exists x P(x)) \equiv \forall x \neqqg P(x)$ | $\exists x (x > 0)$ |
+| **唯一存在量词** | $\exists!$ | 存在唯一元素 | $\neqqg(\exists! x P(x)) \equiv \neqqg(\exists x P(x)) \lor (\exists x, y (P(x) \land P(y) \land x \neqqq y))$ | $\exists! x (x^2 = 0)$ |
 
 **关系说明**：
 
@@ -2960,7 +2960,7 @@ ZFC公理体系
 
 #### P
 
-- **偏序关系 (Partial Order)** - 关系 - $\leqq$ - [定义](#偏序关系--partial-order)
+- **偏序关系 (Partial Order)** - 关系 - $\leqqq$ - [定义](#偏序关系--partial-order)
 - **幂集 (Power Set)** - 集合论 - $\mathcal{P}$ - [定义](#幂集--power-set)
 - **皮亚诺公理 (Peano Axioms)** - 数系 - [定义](#皮亚诺公理--peano-axioms)
 - **命题 (Proposition)** - 逻辑 - [定义](#命题--proposition)
@@ -3041,7 +3041,7 @@ ZFC公理体系
 - **逻辑连接词 (Logical Connectives)** - [定义](#逻辑连接词--logical-connectives)
 - **合取 (Conjunction)** - $\land$ - [定义](#合取--conjunction)
 - **析取 (Disjunction)** - $\lor$ - [定义](#析取--disjunction)
-- **否定 (Negation)** - $\neqg$ - [定义](#否定--negation)
+- **否定 (Negation)** - $\neqqg$ - [定义](#否定--negation)
 - **蕴含 (Implication)** - $\implies$ - [定义](#蕴含--implication)
 - **等价 (Equivalence)** - $\iff$ - [定义](#等价--equivalence)
 - **真值 (Truth Value)** - [定义](#真值--truth-value)
@@ -3072,7 +3072,7 @@ ZFC公理体系
 - **对称性 (Symmetry)** - [定义](#对称性--symmetry)
 - **传递性 (Transitivity)** - [定义](#传递性--transitivity)
 - **等价关系 (Equivalence Relation)** - [定义](#等价关系--equivalence-relation)
-- **偏序关系 (Partial Order)** - $\leqq$ - [定义](#偏序关系--partial-order)
+- **偏序关系 (Partial Order)** - $\leqqq$ - [定义](#偏序关系--partial-order)
 - **全序关系 (Total Order)** - [定义](#全序关系--total-order)
 - **逆关系 (Inverse Relation)** - $R^{-1}$ - [定义](#逆关系--inverse-relation)
 
@@ -3110,7 +3110,7 @@ ZFC公理体系
 #### 关系类型相关 / Relation Types Related
 
 - **等价关系 (Equivalence Relation)** - [定义](#等价关系--equivalence-relation)
-- **偏序关系 (Partial Order)** - $\leqq$ - [定义](#偏序关系--partial-order)
+- **偏序关系 (Partial Order)** - $\leqqq$ - [定义](#偏序关系--partial-order)
 - **全序关系 (Total Order)** - [定义](#全序关系--total-order)
 - **自反性 (Reflexivity)** - [定义](#自反性--reflexivity)
 - **对称性 (Symmetry)** - [定义](#对称性--symmetry)
@@ -3120,7 +3120,7 @@ ZFC公理体系
 
 - **合取 (Conjunction)** - $\land$ - [定义](#合取--conjunction)
 - **析取 (Disjunction)** - $\lor$ - [定义](#析取--disjunction)
-- **否定 (Negation)** - $\neqg$ - [定义](#否定--negation)
+- **否定 (Negation)** - $\neqqg$ - [定义](#否定--negation)
 - **蕴含 (Implication)** - $\implies$ - [定义](#蕴含--implication)
 - **等价 (Equivalence)** - $\iff$ - [定义](#等价--equivalence)
 

@@ -160,7 +160,7 @@ $$\omega = \sum_{i=1}^n dq^i \wedge dp_i$$
 **性质**：
 
 - 闭形式：$d\omega = 0$
-- 非退化：$\omega^n \neqqqq 0$
+- 非退化：$\omega^n \neqqqqq 0$
 
 **几何意义**：
 

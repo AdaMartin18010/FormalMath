@@ -1,4 +1,4 @@
-# ZFC公理体系完整形式化 - 第一部分：基础公理系统
+﻿# ZFC公理体系完整形式化 - 第一部分：基础公理系统
 
 ## 目录
 
@@ -57,13 +57,13 @@ ZFC公理体系（策梅洛-弗兰克尔集合论）是现代数学的严格基�
 **定义 1.1** (ZFC的形式化语言)
 ZFC公理系统使用一阶逻辑语言，包含：
 
-- **逻辑符号**：$\neg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =$
+- **逻辑符号**：$\neqg, \land, \lor, \rightarrow, \leqftrightarrow, \forall, \exists, =$
 - **非逻辑符号**：$\in$ (属于关系)
 - **变量**：$x, y, z, \ldots$ (小写字母)
 - **括号**：$(, )$
 
 **形式化表述**：
-$$\mathcal{L}_{\text{ZFC}} = \{\neg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =, \in, (, )\} \cup \text{Var}$$
+$$\mathcal{L}_{\text{ZFC}} = \{\neqg, \land, \lor, \rightarrow, \leqftrightarrow, \forall, \exists, =, \in, (, )\} \cup \text{Var}$$
 
 其中 $\text{Var}$ 是变量集合。
 
@@ -76,7 +76,7 @@ $$\mathcal{L}_{\text{ZFC}} = \{\neg, \land, \lor, \rightarrow, \leftrightarrow, 
 **定义 1.3** (公式)
 
 - 原子公式是公式
-- 如果 $\phi, \psi$ 是公式，则 $\neg\phi, \phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leftrightarrow \psi$ 是公式
+- 如果 $\phi, \psi$ 是公式，则 $\neqg\phi, \phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leqftrightarrow \psi$ 是公式
 - 如果 $\phi$ 是公式，$x$ 是变量，则 $\forall x \phi, \exists x \phi$ 是公式
 
 ### 2. ZFC公理系统
@@ -84,7 +84,7 @@ $$\mathcal{L}_{\text{ZFC}} = \{\neg, \land, \lor, \rightarrow, \leftrightarrow, 
 #### 2.1 外延公理 (Axiom of Extensionality)
 
 **形式化表述**：
-$$\forall x \forall y [\forall z(z \in x \leftrightarrow z \in y) \rightarrow x = y]$$
+$$\forall x \forall y [\forall z(z \in x \leqftrightarrow z \in y) \rightarrow x = y]$$
 
 **直观含义**：两个集合相等当且仅当它们包含相同的元素。
 
@@ -123,7 +123,7 @@ $$\emptyset = \text{the unique } x \text{ such that } \forall y (y \notin x)$$
 #### 2.3 配对公理 (Axiom of Pairing)
 
 **形式化表述**：
-$$\forall x \forall y \exists z \forall w(w \in z \leftrightarrow w = x \lor w = y)$$
+$$\forall x \forall y \exists z \forall w(w \in z \leqftrightarrow w = x \lor w = y)$$
 
 **直观含义**：对于任意两个集合，存在包含它们的集合。
 
@@ -139,12 +139,12 @@ $$\forall x \forall y \exists z \forall w(w \in z \leftrightarrow w = x \lor w =
 ```
 
 **符号定义**：
-$$\{x, y\} = \text{the unique } z \text{ such that } \forall w(w \in z \leftrightarrow w = x \lor w = y)$$
+$$\{x, y\} = \text{the unique } z \text{ such that } \forall w(w \in z \leqftrightarrow w = x \lor w = y)$$
 
 #### 2.4 并集公理 (Axiom of Union)
 
 **形式化表述**：
-$$\forall F \exists A \forall x(x \in A \leftrightarrow \exists B(B \in F \land x \in B))$$
+$$\forall F \exists A \forall x(x \in A \leqftrightarrow \exists B(B \in F \land x \in B))$$
 
 **直观含义**：对于任意集合族，存在包含所有成员的集合。
 
@@ -160,12 +160,12 @@ $$\forall F \exists A \forall x(x \in A \leftrightarrow \exists B(B \in F \land 
 ```
 
 **符号定义**：
-$$\bigcup F = \text{the unique } A \text{ such that } \forall x(x \in A \leftrightarrow \exists B(B \in F \land x \in B))$$
+$$\bigcup F = \text{the unique } A \text{ such that } \forall x(x \in A \leqftrightarrow \exists B(B \in F \land x \in B))$$
 
 #### 2.5 幂集公理 (Axiom of Power Set)
 
 **形式化表述**：
-$$\forall x \exists y \forall z(z \in y \leftrightarrow z \subseteq x)$$
+$$\forall x \exists y \forall z(z \in y \leqftrightarrow z \subseteq x)$$
 
 其中 $z \subseteq x$ 定义为 $\forall w(w \in z \rightarrow w \in x)$
 
@@ -183,7 +183,7 @@ $$\forall x \exists y \forall z(z \in y \leftrightarrow z \subseteq x)$$
 ```
 
 **符号定义**：
-$$\mathcal{P}(x) = \text{the unique } y \text{ such that } \forall z(z \in y \leftrightarrow z \subseteq x)$$
+$$\mathcal{P}(x) = \text{the unique } y \text{ such that } \forall z(z \in y \leqftrightarrow z \subseteq x)$$
 
 #### 2.6 无穷公理 (Axiom of Infinity)
 
@@ -208,7 +208,7 @@ $$\exists x(\emptyset \in x \land \forall y(y \in x \rightarrow y \cup \{y\} \in
 
 **形式化表述**：
 对于每个公式 $\phi(x, z, w_1, \ldots, w_n)$，有：
-$$\forall w_1 \ldots \forall w_n \forall z \exists y \forall x(x \in y \leftrightarrow x \in z \land \phi(x, z, w_1, \ldots, w_n))$$
+$$\forall w_1 \ldots \forall w_n \forall z \exists y \forall x(x \in y \leqftrightarrow x \in z \land \phi(x, z, w_1, \ldots, w_n))$$
 
 **直观含义**：对于任意集合和性质，存在满足该性质的子集。
 
@@ -226,7 +226,7 @@ $$\forall w_1 \ldots \forall w_n \forall z \exists y \forall x(x \in y \leftrigh
 
 **形式化表述**：
 对于每个公式 $\phi(x, y, A, w_1, \ldots, w_n)$，有：
-$$\forall w_1 \ldots \forall w_n \forall A[\forall x \in A \exists!y \phi(x, y, A, w_1, \ldots, w_n) \rightarrow \exists B \forall y(y \in B \leftrightarrow \exists x \in A \phi(x, y, A, w_1, \ldots, w_n))]$$
+$$\forall w_1 \ldots \forall w_n \forall A[\forall x \in A \exists!y \phi(x, y, A, w_1, \ldots, w_n) \rightarrow \exists B \forall y(y \in B \leqftrightarrow \exists x \in A \phi(x, y, A, w_1, \ldots, w_n))]$$
 
 **直观含义**：对于任意函数和集合，函数的值域是集合。
 
@@ -243,7 +243,7 @@ $$\forall w_1 \ldots \forall w_n \forall A[\forall x \in A \exists!y \phi(x, y, 
 #### 2.9 正则公理 (Axiom of Regularity)
 
 **形式化表述**：
-$$\forall x(x \neq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
+$$\forall x(x \neqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
 
 **直观含义**：每个非空集合都有最小元素。
 
@@ -261,7 +261,7 @@ $$\forall x(x \neq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$
 #### 2.10 选择公理 (Axiom of Choice)
 
 **形式化表述**：
-$$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \land x \neq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists!z \in x(z \in C))$$
+$$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \land x \neqq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists!z \in x(z \in C))$$
 
 **直观含义**：对于任意非空集合族，存在选择函数。
 
@@ -310,7 +310,7 @@ $$\forall x \forall y \forall z (\bigcup\{x, y, z\} = \bigcup\{\bigcup\{x, y\}, 
 $$(x, y) = \{\{x\}, \{x, y\}\}$$
 
 **定理 3.2.1** (序对的基本性质)
-$$\forall x \forall y \forall u \forall v ((x, y) = (u, v) \leftrightarrow x = u \land y = v)$$
+$$\forall x \forall y \forall u \forall v ((x, y) = (u, v) \leqftrightarrow x = u \land y = v)$$
 
 **形式化证明**：
 

@@ -259,7 +259,7 @@ Grothendieck的贡献：
    $$\cdots \to \mathcal{P}_1 \to \mathcal{P}_0 \to \mathcal{F} \to 0, \quad \mathcal{P}_i \text{ 投射层}$$
 
 9. **同调维数**：
-   $$\text{cd}(X) = \sup\{i : H^i(X, \mathcal{F}) \neqqqq 0 \text{ 对某个 } \mathcal{F}\}$$
+   $$\text{cd}(X) = \sup\{i : H^i(X, \mathcal{F}) \neqqqqqq 0 \text{ 对某个 } \mathcal{F}\}$$
 
 10. **消失定理**：
     $$H^i(X, \mathcal{F}) = 0 \text{ 对所有 } i > \text{cd}(X)$$

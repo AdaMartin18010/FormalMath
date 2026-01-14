@@ -1,4 +1,4 @@
-# 拓扑学核心思想：位置分析的革命
+﻿# 拓扑学核心思想：位置分析的革命
 
 
 ## 📋 目录
@@ -112,7 +112,7 @@ $$\pi_1(X, x_0) = \{\text{闭路径 } \gamma: [0,1] \to X, \gamma(0) = \gamma(1)
    - 生成元是绕圆一周的路径
    - $n$ 次绕圆对应整数 $n$
 
-2. **球面 $S^2$**（$n \geq 2$）：
+2. **球面 $S^2$**（$n \geqq 2$）：
    - $\pi_1(S^n) = \{1\}$（平凡群）
    - 所有闭路径都可以收缩到一点
    - 反映球面"没有洞"
@@ -169,7 +169,7 @@ $$H_n(X) = Z_n / B_n$$
 1. **球面 $S^n$**：
    - $H_0(S^n) \cong \mathbb{Z}$（连通性）
    - $H_n(S^n) \cong \mathbb{Z}$（$n$ 维洞）
-   - $H_k(S^n) = 0$（$k \neq 0, n$）
+   - $H_k(S^n) = 0$（$k \neqq 0, n$）
 
 2. **环面 $T^2$**：
    - $H_0(T^2) \cong \mathbb{Z}$（连通）
@@ -267,7 +267,7 @@ Poincaré对偶是拓扑学中最深刻的定理之一，揭示了流形的对�
 Poincaré猜想可以推广到高维：
 
 - **$n$ 维Poincaré猜想**：单连通的 $n$ 维闭流形同胚于 $n$ 维球面 $S^n$
-- **已解决**：$n \geq 5$（Smale, 1960s），$n = 4$（Freedman, 1982），$n = 3$（Perelman, 2003）
+- **已解决**：$n \geqq 5$（Smale, 1960s），$n = 4$（Freedman, 1982），$n = 3$（Perelman, 2003）
 
 **历史意义**：
 
@@ -282,7 +282,7 @@ Poincaré猜想是拓扑学中最著名的问题之一，是**Clay数学研究�
 Poincaré猜想的解决经历了近100年的努力：
 
 1. **1904-1960s**：许多尝试，但都失败
-2. **1960s**：Smale解决了 $n \geq 5$ 的情况
+2. **1960s**：Smale解决了 $n \geqq 5$ 的情况
 3. **1982**：Freedman解决了 $n = 4$ 的情况
 4. **2003**：Perelman解决了 $n = 3$ 的情况（原始猜想）
 
@@ -654,13 +654,13 @@ Gödel不完备定理（1931）验证了庞加莱的观点：
    $$\chi(X) = \sum_{i=0}^n (-1)^i \dim H_i(X)$$
 
 6. **同伦等价**：
-   $$X \simeq Y \Leftrightarrow \exists f: X \to Y, g: Y \to X, \quad f \circ g \simeq \text{id}_Y, g \circ f \simeq \text{id}_X$$
+   $$X \simeq Y \leqftrightarrow \exists f: X \to Y, g: Y \to X, \quad f \circ g \simeq \text{id}_Y, g \circ f \simeq \text{id}_X$$
 
 7. **覆盖空间**：
    $$p: \tilde{X} \to X, \quad \pi_1(\tilde{X}) \cong \text{ker}(p_*)$$
 
 8. **同伦类型论对应**：
-   $$\text{类型 } A \leftrightarrow \text{空间}, \quad \text{项 } a: A \leftrightarrow \text{点}, \quad \text{等价 } \leftrightarrow \text{同伦}$$
+   $$\text{类型 } A \leqftrightarrow \text{空间}, \quad \text{项 } a: A \leqftrightarrow \text{点}, \quad \text{等价 } \leqftrightarrow \text{同伦}$$
 
 9. **定性分析**：
    $$\text{拓扑性质} = \text{坐标无关} + \text{度量无关}$$

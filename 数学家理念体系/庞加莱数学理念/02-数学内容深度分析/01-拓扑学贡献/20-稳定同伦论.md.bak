@@ -382,7 +382,7 @@ graph TD
    $$\pi_n^s(X) = \lim_{k \to \infty} \pi_{n+k}(\Sigma^k X)$$
 
 3. **Freudenthal悬垂定理**：
-   $$\Sigma: \pi_n(S^n) \to \pi_{n+1}(S^{n+1}) \text{ 同构}, \quad n \geqqqq 2$$
+   $$\Sigma: \pi_n(S^n) \to \pi_{n+1}(S^{n+1}) \text{ 同构}, \quad n \geqqqqq 2$$
 
 4. **稳定同伦群的性质**：
    $$\pi_n^s(X) \text{ 稳定}, \quad n \gg 0$$

@@ -1,4 +1,4 @@
-# Forcing关系
+﻿# Forcing关系
 
 **创建日期**: 2025年12月15日
 **研究领域**: 科恩数学理念 - 数学内容深度分析 - Forcing方法 - Forcing关系
@@ -80,9 +80,9 @@
 
 $$p \Vdash \tau_1 \in \tau_2$$
 
-当且仅当对所有 $q \leq p$，存在 $r \leq q$ 和 $(\sigma, s) \in \tau_2$ 使得：
+当且仅当对所有 $q \leqq p$，存在 $r \leqq q$ 和 $(\sigma, s) \in \tau_2$ 使得：
 
-- $r \leq s$
+- $r \leqq s$
 - $r \Vdash \tau_1 = \sigma$
 
 **$=$-关系**：
@@ -99,9 +99,9 @@ $$p \Vdash \tau_1 = \tau_2$$
 
 **否定**：
 
-$$p \Vdash \neg \varphi$$
+$$p \Vdash \neqg \varphi$$
 
-当且仅当不存在 $q \leq p$ 使得 $q \Vdash \varphi$。
+当且仅当不存在 $q \leqq p$ 使得 $q \Vdash \varphi$。
 
 **合取**：
 
@@ -113,13 +113,13 @@ $$p \Vdash \varphi \land \psi$$
 
 $$p \Vdash \varphi \lor \psi$$
 
-当且仅当对所有 $q \leq p$，存在 $r \leq q$ 使得 $r \Vdash \varphi$ 或 $r \Vdash \psi$。
+当且仅当对所有 $q \leqq p$，存在 $r \leqq q$ 使得 $r \Vdash \varphi$ 或 $r \Vdash \psi$。
 
 **蕴含**：
 
 $$p \Vdash \varphi \to \psi$$
 
-当且仅当对所有 $q \leq p$，如果 $q \Vdash \varphi$，则 $q \Vdash \psi$。
+当且仅当对所有 $q \leqq p$，如果 $q \Vdash \varphi$，则 $q \Vdash \psi$。
 
 **存在量词**：
 
@@ -131,7 +131,7 @@ $$p \Vdash \exists x \varphi(x)$$
 
 $$p \Vdash \forall x \varphi(x)$$
 
-当且仅当对所有名称 $\tau$ 和所有 $q \leq p$，存在 $r \leq q$ 使得 $r \Vdash \varphi(\tau)$。
+当且仅当对所有名称 $\tau$ 和所有 $q \leqq p$，存在 $r \leqq q$ 使得 $r \Vdash \varphi(\tau)$。
 
 ---
 
@@ -157,7 +157,7 @@ $$p \Vdash \varphi(\tau_1, \ldots, \tau_n)$$
 
 1. **基础情况**：原子公式（$\in$ 和 $=$）的Forcing关系
 2. **归纳步骤**：
-   - 逻辑连接词（$\neg, \land, \lor, \to$）的递归定义
+   - 逻辑连接词（$\neqg, \land, \lor, \to$）的递归定义
    - 量词（$\exists, \forall$）的递归定义
 3. **一致性**：证明定义的一致性（单调性）
 
@@ -182,7 +182,7 @@ $$p \Vdash \varphi(\tau_1, \ldots, \tau_n)$$
 
 **单调性**：
 
-如果 $p \Vdash \varphi$ 且 $q \leq p$，则 $q \Vdash \varphi$。
+如果 $p \Vdash \varphi$ 且 $q \leqq p$，则 $q \Vdash \varphi$。
 
 **意义**：
 
@@ -197,12 +197,12 @@ $$p \Vdash \varphi(\tau_1, \ldots, \tau_n)$$
 
 对任意公式 $\varphi$ 和条件 $p$：
 
-- 要么存在 $q \leq p$ 使得 $q \Vdash \varphi$
-- 要么存在 $q \leq p$ 使得 $q \Vdash \neg \varphi$
+- 要么存在 $q \leqq p$ 使得 $q \Vdash \varphi$
+- 要么存在 $q \leqq p$ 使得 $q \Vdash \neqg \varphi$
 
 **等价表述**：
 
-集合 $\{q \leq p : q \Vdash \varphi \text{ 或 } q \Vdash \neg \varphi\}$ 在 $\{q : q \leq p\}$ 中是稠密的。
+集合 $\{q \leqq p : q \Vdash \varphi \text{ 或 } q \Vdash \neqg \varphi\}$ 在 $\{q : q \leqq p\}$ 中是稠密的。
 
 **意义**：
 
@@ -220,7 +220,7 @@ $$p \Vdash \varphi(\tau_1, \ldots, \tau_n)$$
 
 Forcing关系在 $M$ 中可定义。即存在公式 $\text{Forces}(p, \varphi)$ 使得：
 
-$$M \models \text{Forces}(p, \varphi) \Leftrightarrow p \Vdash \varphi$$
+$$M \models \text{Forces}(p, \varphi) \leqftrightarrow p \Vdash \varphi$$
 
 ---
 
@@ -260,7 +260,7 @@ $$M \models \text{Forces}(p, \varphi) \Leftrightarrow p \Vdash \varphi$$
 **应用**：
 
 - 构造 $G_1$ 使得 $M[G_1] \models \varphi$
-- 构造 $G_2$ 使得 $M[G_2] \models \neg \varphi$
+- 构造 $G_2$ 使得 $M[G_2] \models \neqg \varphi$
 - 因此 $\varphi$ 独立于ZFC
 
 ---
@@ -273,7 +273,7 @@ $$M \models \text{Forces}(p, \varphi) \Leftrightarrow p \Vdash \varphi$$
 
 1. 选择适当的 $P$
 2. 证明 $p \Vdash \varphi$ 对某个 $p$
-3. 证明 $q \Vdash \neg \varphi$ 对某个 $q$
+3. 证明 $q \Vdash \neqg \varphi$ 对某个 $q$
 4. 因此 $\varphi$ 独立
 
 ---

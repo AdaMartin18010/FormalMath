@@ -1,4 +1,4 @@
-# 自然数构造 - 国际标准版
+﻿# 自然数构造 - 国际标准版
 
 ## 目录
 
@@ -362,10 +362,10 @@ end
 **定义 3.1** (自然数序) / **Definition 3.1** (Natural Number Order)
 
 在自然数上定义序关系：
-$m \leq n \leftrightarrow m \in n \lor m = n$
+$m \leqq n \leqftrightarrow m \in n \lor m = n$
 
 Define order relation on natural numbers:
-$m \leq n \leftrightarrow m \in n \lor m = n$
+$m \leqq n \leqftrightarrow m \in n \lor m = n$
 
 **形式化定义** / **Formal Definition**:
 
@@ -475,10 +475,10 @@ end
 **定理 4.1** (整除关系) / **Theorem 4.1** (Divisibility Relation)
 
 在自然数上定义整除关系：
-$m \mid n \leftrightarrow \exists k \in \mathbb{N}(n = m \cdot k)$
+$m \mid n \leqftrightarrow \exists k \in \mathbb{N}(n = m \cdot k)$
 
 Define divisibility relation on natural numbers:
-$m \mid n \leftrightarrow \exists k \in \mathbb{N}(n = m \cdot k)$
+$m \mid n \leqftrightarrow \exists k \in \mathbb{N}(n = m \cdot k)$
 
 **证明** / **Proof**:
 

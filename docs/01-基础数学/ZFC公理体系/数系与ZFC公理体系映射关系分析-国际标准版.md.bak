@@ -1,4 +1,4 @@
-# 数系与ZFC公理体系映射关系分析 - 国际标准版
+﻿# 数系与ZFC公理体系映射关系分析 - 国际标准版
 
 ## 目录
 
@@ -72,7 +72,7 @@ ZFC公理体系 - 集合论基础
 
 | ZFC公理 | 数系构造 | 形式化映射 | 认知对应 |
 |---------|----------|------------|----------|
-| 外延公理 | 集合相等定义 | $A = B \leftrightarrow \forall x(x \in A \leftrightarrow x \in B)$ | 概念识别 |
+| 外延公理 | 集合相等定义 | $A = B \leqftrightarrow \forall x(x \in A \leqftrightarrow x \in B)$ | 概念识别 |
 | 空集公理 | 自然数0构造 | $0 = \emptyset$ | 空概念 |
 | 配对公理 | 有序对构造 | $(a,b) = \{\{a\}, \{a,b\}\}$ | 关系形成 |
 | 并集公理 | 数系并集构造 | $\bigcup A = \{x \mid \exists y \in A(x \in y)\}$ | 概念整合 |
@@ -80,7 +80,7 @@ ZFC公理体系 - 集合论基础
 | 分离公理 | 子集定义 | $\{x \in A \mid \phi(x)\}$ | 属性筛选 |
 | 无穷公理 | 自然数集构造 | $\omega = \{\emptyset, \{\emptyset\}, \{\emptyset, \{\emptyset\}\}, \ldots\}$ | 无限概念 |
 | 替换公理 | 函数构造 | $F[A] = \{F(x) \mid x \in A\}$ | 映射思维 |
-| 正则公理 | 良基性保证 | $\forall A \neq \emptyset \exists x \in A(x \cap A = \emptyset)$ | 层次结构 |
+| 正则公理 | 良基性保证 | $\forall A \neqq \emptyset \exists x \in A(x \cap A = \emptyset)$ | 层次结构 |
 | 选择公理 | 选择函数 | $\exists f: \mathcal{P}(A) \setminus \{\emptyset\} \to A$ | 决策选择 |
 
 ### 1.2 自然数构造的ZFC映射 / ZFC Mapping for Natural Number Construction
@@ -164,7 +164,7 @@ end
 
 整数可以通过自然数的等价类构造：
 $\mathbb{Z} = (\mathbb{N} \times \mathbb{N}) / \sim$
-其中 $(a, b) \sim (c, d) \leftrightarrow a + d = b + c$
+其中 $(a, b) \sim (c, d) \leqftrightarrow a + d = b + c$
 
 **形式化证明** / **Formal Proof**:
 
@@ -209,7 +209,7 @@ end
 
 有理数可以通过整数的等价类构造：
 $\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$
-其中 $(a, b) \sim (c, d) \leftrightarrow a \cdot d = b \cdot c$
+其中 $(a, b) \sim (c, d) \leqftrightarrow a \cdot d = b \cdot c$
 
 **形式化证明** / **Formal Proof**:
 

@@ -928,7 +928,7 @@ graph TD
    $$K^1(X) = K^0(\Sigma X) = K^0(SX)$$
 
 3. **Bott周期性**：
-   $$K^n(X) \cong K^{n+2}(X), \quad n \geqqqq 0$$
+   $$K^n(X) \cong K^{n+2}(X), \quad n \geqqqqq 0$$
 
 4. **K理论环**：
    $$K^*(X) = K^0(X) \oplus K^1(X)$$

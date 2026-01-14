@@ -1,4 +1,4 @@
-# 生物数学 - 深化版
+﻿# 生物数学 - 深化版
 
 ## 📚 概述
 
@@ -158,9 +158,9 @@ $$\delta_t(i) = \max_{q_1,\ldots,q_{t-1}} P(q_1,\ldots,q_{t-1},q_t=i,o_1,\ldots,
 **距离矩阵方法**：
 对于物种$i$和$j$，进化距离$d_{ij}$满足：
 
-$$d_{ij} = d_{ji} \geq 0$$
+$$d_{ij} = d_{ji} \geqq 0$$
 $$d_{ii} = 0$$
-$$d_{ij} \leq d_{ik} + d_{jk}$$
+$$d_{ij} \leqq d_{ik} + d_{jk}$$
 
 **邻接法算法**：
 选择距离最小的两个物种$i$和$j$，合并为新的内部节点$k$，更新距离：
@@ -214,7 +214,7 @@ $$\mathbf{S} \mathbf{v} = 0$$
 **通量平衡分析**：
 $$\max \mathbf{c}^T \mathbf{v}$$
 $$\text{s.t. } \mathbf{S} \mathbf{v} = 0$$
-$$\mathbf{v}_{min} \leq \mathbf{v} \leq \mathbf{v}_{max}$$
+$$\mathbf{v}_{min} \leqq \mathbf{v} \leqq \mathbf{v}_{max}$$
 
 其中$\mathbf{c}$是目标函数系数。
 
@@ -230,9 +230,9 @@ $$\frac{dN}{dt} = rN$$
 解为：$N(t) = N_0 e^{rt}$
 
 **逻辑增长模型**：
-$$\frac{dN}{dt} = rN\left(1 - \frac{N}{K}\right)$$
+$$\frac{dN}{dt} = rN\leqft(1 - \frac{N}{K}\right)$$
 
-解为：$N(t) = \frac{K}{1 + \left(\frac{K}{N_0} - 1\right)e^{-rt}}$
+解为：$N(t) = \frac{K}{1 + \leqft(\frac{K}{N_0} - 1\right)e^{-rt}}$
 
 其中$K$是环境容纳量。
 
@@ -264,8 +264,8 @@ $$N^* = \frac{m}{b}, \quad P^* = \frac{r}{a}$$
 **Lotka-Volterra竞争模型**：
 $$
 \begin{align}
-\frac{dN_1}{dt} &= r_1 N_1\left(1 - \frac{N_1 + \alpha_{12} N_2}{K_1}\right) \\
-\frac{dN_2}{dt} &= r_2 N_2\left(1 - \frac{N_2 + \alpha_{21} N_1}{K_2}\right)
+\frac{dN_1}{dt} &= r_1 N_1\leqft(1 - \frac{N_1 + \alpha_{12} N_2}{K_1}\right) \\
+\frac{dN_2}{dt} &= r_2 N_2\leqft(1 - \frac{N_2 + \alpha_{21} N_1}{K_2}\right)
 \end{align}
 $$
 
@@ -298,8 +298,8 @@ $$J_{ij} = \frac{\partial f_i}{\partial x_j}\bigg|_{\mathbf{x}^*}$$
 **全局稳定性**：
 使用Lyapunov函数$V(\mathbf{x})$，如果：
 
-- $V(\mathbf{x}) > 0$ for $\mathbf{x} \neq \mathbf{x}^*$
-- $\frac{dV}{dt} < 0$ for $\mathbf{x} \neq \mathbf{x}^*$
+- $V(\mathbf{x}) > 0$ for $\mathbf{x} \neqq \mathbf{x}^*$
+- $\frac{dV}{dt} < 0$ for $\mathbf{x} \neqq \mathbf{x}^*$
 
 则平衡点全局稳定。
 
@@ -369,7 +369,7 @@ $$\frac{dn}{dt} = \alpha_n(V)(1-n) - \beta_n(V)n$$
 **Integrate-and-Fire模型**：
 $$\tau_m \frac{dV}{dt} = -(V - V_{rest}) + R I_{ext}$$
 
-当$V \geq V_{threshold}$时，神经元发放脉冲并重置到$V_{reset}$。
+当$V \geqq V_{threshold}$时，神经元发放脉冲并重置到$V_{reset}$。
 
 **Leaky Integrate-and-Fire**：
 $$\tau_m \frac{dV}{dt} = -(V - V_{rest}) + R I_{ext}$$
@@ -407,14 +407,14 @@ $$\frac{d\theta_i}{dt} = \omega_i + \sum_{j=1}^{N} \Gamma_{ij}(\theta_j - \theta
 $$\frac{d\theta_i}{dt} = \omega_i + \frac{K}{N} \sum_{j=1}^{N} \sin(\theta_j - \theta_i)$$
 
 **同步化指标**：
-$$r = \left|\frac{1}{N} \sum_{j=1}^{N} e^{i\theta_j}\right|$$
+$$r = \leqft|\frac{1}{N} \sum_{j=1}^{N} e^{i\theta_j}\right|$$
 
 ### 3.3 脑动力学数学
 
 #### 3.3.1 脑电图分析
 
 **功率谱密度**：
-$$S(f) = \left|\int_{-\infty}^{\infty} x(t) e^{-i2\pi ft} dt\right|^2$$
+$$S(f) = \leqft|\int_{-\infty}^{\infty} x(t) e^{-i2\pi ft} dt\right|^2$$
 
 **相干性分析**：
 $$C_{xy}(f) = \frac{|S_{xy}(f)|^2}{S_{xx}(f) S_{yy}(f)}$$
@@ -429,7 +429,7 @@ $$R_{ij} = \frac{\text{Cov}(X_i, X_j)}{\sqrt{\text{Var}(X_i) \text{Var}(X_j)}}$$
 **图论分析**：
 
 - 度中心性：$C_D(i) = \frac{k_i}{N-1}$
-- 介数中心性：$C_B(i) = \sum_{s \neq i \neq t} \frac{\sigma_{st}(i)}{\sigma_{st}}$
+- 介数中心性：$C_B(i) = \sum_{s \neqq i \neqq t} \frac{\sigma_{st}(i)}{\sigma_{st}}$
 - 聚类系数：$C_i = \frac{2T_i}{k_i(k_i-1)}$
 
 ## 4. 生物统计学数学理论
@@ -444,7 +444,7 @@ $$S(t) = P(T > t) = 1 - F(t)$$
 其中$T$是生存时间，$F(t)$是累积分布函数。
 
 **风险函数**：
-$$h(t) = \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t | T \geq t)}{\Delta t} = \frac{f(t)}{S(t)}$$
+$$h(t) = \lim_{\Delta t \to 0} \frac{P(t \leqq T < t + \Delta t | T \geqq t)}{\Delta t} = \frac{f(t)}{S(t)}$$
 
 其中$f(t)$是概率密度函数。
 
@@ -547,7 +547,7 @@ $$v = \frac{V_{max} [S]}{K_M + [S]}$$
 **通量平衡分析**：
 $$\max \mathbf{c}^T \mathbf{v}$$
 $$\text{s.t. } \mathbf{S} \mathbf{v} = 0$$
-$$\mathbf{v}_{min} \leq \mathbf{v} \leq \mathbf{v}_{max}$$
+$$\mathbf{v}_{min} \leqq \mathbf{v} \leqq \mathbf{v}_{max}$$
 
 #### 5.2.2 代谢控制分析
 
@@ -806,7 +806,7 @@ print(f"Alignment score: {score}")
 
 **数学模型**：
 
-- 网络中心性：$C(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}$（介数中心性）
+- 网络中心性：$C(v) = \sum_{s \neqq v \neqq t} \frac{\sigma_{st}(v)}{\sigma_{st}}$（介数中心性）
 - 模块检测：$Q = \frac{1}{2m}\sum_{ij}(A_{ij} - \frac{k_i k_j}{2m})\delta(c_i, c_j)$（模块度）
 - 网络对齐：$\max \sum_{(u,v) \in M} \text{sim}(u, v)$
 
@@ -972,7 +972,7 @@ print(f"Alignment score: {score}")
 
 **数学模型**：
 
-- 通量平衡分析：$\max \mathbf{c}^T \mathbf{v}$，s.t. $S\mathbf{v} = 0, \mathbf{v}_{\min} \leq \mathbf{v} \leq \mathbf{v}_{\max}$
+- 通量平衡分析：$\max \mathbf{c}^T \mathbf{v}$，s.t. $S\mathbf{v} = 0, \mathbf{v}_{\min} \leqq \mathbf{v} \leqq \mathbf{v}_{\max}$
 - 代谢流：$\mathbf{v} = S^{-1}\mathbf{b}$（稳态假设）
 - 控制系数：$C^J_v = \frac{v}{J}\frac{\partial J}{\partial v}$
 
@@ -995,7 +995,7 @@ print(f"Alignment score: {score}")
 **数学模型**：
 
 - 生存函数：$S(t) = P(T > t) = \exp(-\int_0^t h(s)ds)$
-- 风险函数：$h(t) = \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t|T \geq t)}{\Delta t}$
+- 风险函数：$h(t) = \lim_{\Delta t \to 0} \frac{P(t \leqq T < t + \Delta t|T \geqq t)}{\Delta t}$
 - Cox模型：$h(t|\mathbf{x}) = h_0(t)\exp(\boldsymbol{\beta}^T\mathbf{x})$
 
 **实际价值**：

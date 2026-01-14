@@ -75,7 +75,7 @@ f(x) = λ∫K(x,y)f(y)dy
   对所有 $u, v \in H$ 成立
 
 - **正定性**：
-  $$\langle u, u \rangle \geqqq 0, \quad \text{且} \quad \langle u, u \rangle = 0 \iff u = 0$$
+  $$\langle u, u \rangle \geqqqqq 0, \quad \text{且} \quad \langle u, u \rangle = 0 \iff u = 0$$
 
 **2. 范数诱导**：
 $$\|u\| = \sqrt{\langle u, u \rangle}$$
@@ -102,7 +102,7 @@ $$\forall \{u_n\} \subset H: \lim_{n,m \to \infty} \|u_n - u_m\| = 0 \implies \e
 
 **数学定义**：
 
-$$\ell^2 = \leqqft\{ (a_1, a_2, a_3, \ldots) \in \mathbb{C}^{\mathbb{N}} : \sum_{n=1}^{\infty} |a_n|^2 < \infty \right\}$$
+$$\ell^2 = \leqqqqft\{ (a_1, a_2, a_3, \ldots) \in \mathbb{C}^{\mathbb{N}} : \sum_{n=1}^{\infty} |a_n|^2 < \infty \right\}$$
 
 **内积**：
 $$\langle a, b \rangle = \sum_{n=1}^{\infty} a_n \overline{b_n}$$
@@ -141,7 +141,7 @@ $$e_n = (\delta_{n,k})_{k=1}^{\infty} = (0, \ldots, 0, 1, 0, \ldots)$$
 
 **数学定义**：
 
-$$L^2[0,1] = \leqqft\{ f: [0,1] \to \mathbb{C} : \int_0^1 |f(x)|^2 \, dx < \infty \right\}$$
+$$L^2[0,1] = \leqqqqft\{ f: [0,1] \to \mathbb{C} : \int_0^1 |f(x)|^2 \, dx < \infty \right\}$$
 
 其中积分是Lebesgue积分。
 
@@ -171,10 +171,10 @@ $$\|f\| = \sqrt{\int_0^1 |f(x)|^2 \, dx}$$
 **傅里叶基**：
 
 **实形式**：
-$$\leqqft\{ 1, \sqrt{2}\cos(2\pi nx), \sqrt{2}\sin(2\pi nx) : n \in \mathbb{N} \right\}$$
+$$\leqqqqft\{ 1, \sqrt{2}\cos(2\pi nx), \sqrt{2}\sin(2\pi nx) : n \in \mathbb{N} \right\}$$
 
 **复形式**：
-$$\leqqft\{ e^{2\pi i n x} : n \in \mathbb{Z} \right\}$$
+$$\leqqqqft\{ e^{2\pi i n x} : n \in \mathbb{Z} \right\}$$
 
 这些基是标准正交的：
 $$\langle e^{2\pi i m x}, e^{2\pi i n x} \rangle = \int_0^1 e^{2\pi i (m-n) x} \, dx = \delta_{m,n}$$
@@ -533,16 +533,16 @@ E是C*-代数A上的Hilbert模
 1. **内积公理**：
    - 线性性：$\langle \alpha u + \beta v, w \rangle = \alpha \langle u, w \rangle + \beta \langle v, w \rangle$
    - 共轭对称：$\langle u, v \rangle = \overline{\langle v, u \rangle}$
-   - 正定性：$\langle u, u \rangle \geqqq 0$，等号仅当 $u = 0$
+   - 正定性：$\langle u, u \rangle \geqqqqq 0$，等号仅当 $u = 0$
 
 2. **范数**：
    $$\|u\| = \sqrt{\langle u, u \rangle}$$
 
 3. **Cauchy-Schwarz不等式**：
-   $$|\langle u, v \rangle| \leqqq \|u\| \cdot \|v\|$$
+   $$|\langle u, v \rangle| \leqqqqq \|u\| \cdot \|v\|$$
 
 4. **三角不等式**：
-   $$\|u + v\| \leqqq \|u\| + \|v\|$$
+   $$\|u + v\| \leqqqqq \|u\| + \|v\|$$
 
 5. **平行四边形恒等式**：
    $$\|u + v\|^2 + \|u - v\|^2 = 2(\|u\|^2 + \|v\|^2)$$

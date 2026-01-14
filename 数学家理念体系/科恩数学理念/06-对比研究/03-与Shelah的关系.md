@@ -1,4 +1,4 @@
-# 与Shelah的关系
+﻿# 与Shelah的关系
 
 **创建日期**: 2025年12月15日
 **研究领域**: 科恩数学理念 - 对比研究 - 与Shelah的关系
@@ -84,7 +84,7 @@
 
 **Proper Forcing（Shelah, 1980s）**：
 
-- **定义**：Forcing notion $P$ 是proper的，如果对任意可数传递模型 $M$ 和 $p \in P$，存在 $q \leq p$ 使得 $q$ 是 $(M, P)$-generic
+- **定义**：Forcing notion $P$ 是proper的，如果对任意可数传递模型 $M$ 和 $p \in P$，存在 $q \leqq p$ 使得 $q$ 是 $(M, P)$-generic
 - **保持性**：Proper forcing保持 $\omega_1$，比c.c.c.更一般
 - **迭代性**：Proper forcing的迭代仍然是proper的
 - **改进Forcing理论**：为Forcing理论提供了更一般和更灵活的工具

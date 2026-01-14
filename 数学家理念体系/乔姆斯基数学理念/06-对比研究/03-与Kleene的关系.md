@@ -1,4 +1,4 @@
-# 与Kleene的关系
+﻿# 与Kleene的关系
 
 **创建日期**: 2025年12月15日
 **研究领域**: 乔姆斯基数学理念 - 对比研究 - 与Kleene的关系
@@ -82,7 +82,7 @@
 
 **Kleene定理（1956）**：
 
-- **等价性**：正则表达式 $\Leftrightarrow$ 有限自动机 $\Leftrightarrow$ 正则语法
+- **等价性**：正则表达式 $\leqftrightarrow$ 有限自动机 $\leqftrightarrow$ 正则语法
 - **意义**：建立了正则语言的三种表示方法的等价性
 - **应用**：在编译器设计、文本处理等领域有广泛应用
 
@@ -273,7 +273,7 @@ Kleene和乔姆斯基都是计算理论领域的重要贡献者，他们的工�
    - **Kleene（1956）**：建立正则表达式，证明Kleene定理（正则表达式、有限自动机、正则语法等价）
    - **乔姆斯基（1956）**：发展形式语言理论，建立Chomsky层次，Type-3对应正则语言
 2. **对应关系**：
-   - **Kleene定理**：正则表达式 $\Leftrightarrow$ 有限自动机 $\Leftrightarrow$ 正则语法
+   - **Kleene定理**：正则表达式 $\leqftrightarrow$ 有限自动机 $\leqftrightarrow$ 正则语法
    - **Chomsky层次**：Type-3（正则语言）对应这三种表示方法
 
 ### 6.3 现代影响

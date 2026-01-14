@@ -174,7 +174,7 @@ A = {Steenrod平方}
    $$\theta: H^n(X) \to H^{n+k}(X), \quad \text{自然变换}$$
 
 5. **Steenrod代数**：
-   $$\mathcal{A}_2 = \langle Sq^i : i \geqqqq 0 \rangle / \text{Adem关系}$$
+   $$\mathcal{A}_2 = \langle Sq^i : i \geqqqqq 0 \rangle / \text{Adem关系}$$
 
 6. **上同调运算的稳定性**：
    $$\theta: H^n(X) \to H^{n+k}(X), \quad \text{对所有} n \text{定义}$$
@@ -189,7 +189,7 @@ A = {Steenrod平方}
    $$P^i: H^n(X; \mathbb{Z}/p) \to H^{n+2i(p-1)}(X; \mathbb{Z}/p), \quad p \text{ 奇素数}$$
 
 10. **上同调运算的分类**：
-    $$\text{上同调运算} \leqqqftrightarrow H^*(K(\mathbb{Z}/p, n); \mathbb{Z}/p)$$
+    $$\text{上同调运算} \leqqqqftrightarrow H^*(K(\mathbb{Z}/p, n); \mathbb{Z}/p)$$
 
 ---
 

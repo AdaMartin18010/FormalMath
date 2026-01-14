@@ -53,15 +53,15 @@ This document demonstrates the complete mapping relationship between number syst
 
 **ZFC公理列表** / **ZFC Axiom List** (Wikipedia 2024标准):
 
-1. **外延公理** / **Axiom of Extensionality**: $\forall x \forall y[\forall z(z \in x \leqftrightarrow z \in y) \rightarrow x = y]$
+1. **外延公理** / **Axiom of Extensionality**: $\forall x \forall y[\forall z(z \in x \leqqftrightarrow z \in y) \rightarrow x = y]$
 2. **空集公理** / **Axiom of Empty Set**: $\exists x \forall y(y \notin x)$
-3. **配对公理** / **Axiom of Pairing**: $\forall x \forall y \exists z \forall w(w \in z \leqftrightarrow w = x \lor w = y)$
-4. **并集公理** / **Axiom of Union**: $\forall F \exists A \forall x(x \in A \leqftrightarrow \exists B(B \in F \land x \in B))$
-5. **幂集公理** / **Axiom of Power Set**: $\forall x \exists y \forall z(z \in y \leqftrightarrow z \subseteq x)$
+3. **配对公理** / **Axiom of Pairing**: $\forall x \forall y \exists z \forall w(w \in z \leqqftrightarrow w = x \lor w = y)$
+4. **并集公理** / **Axiom of Union**: $\forall F \exists A \forall x(x \in A \leqqftrightarrow \exists B(B \in F \land x \in B))$
+5. **幂集公理** / **Axiom of Power Set**: $\forall x \exists y \forall z(z \in y \leqqftrightarrow z \subseteq x)$
 6. **无穷公理** / **Axiom of Infinity**: $\exists x(\emptyset \in x \land \forall y(y \in x \rightarrow y \cup \{y\} \in x))$
-7. **分离公理** / **Axiom Schema of Separation**: $\forall z \exists y \forall x(x \in y \leqftrightarrow x \in z \land \phi(x))$
-8. **替换公理** / **Axiom Schema of Replacement**: $\forall A \exists B \forall y(y \in B \leqftrightarrow \exists x \in A \phi(x,y))$
-9. **正则公理** / **Axiom of Regularity**: $\forall x(x \neqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$
+7. **分离公理** / **Axiom Schema of Separation**: $\forall z \exists y \forall x(x \in y \leqqftrightarrow x \in z \land \phi(x))$
+8. **替换公理** / **Axiom Schema of Replacement**: $\forall A \exists B \forall y(y \in B \leqqftrightarrow \exists x \in A \phi(x,y))$
+9. **正则公理** / **Axiom of Regularity**: $\forall x(x \neqqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$
 10. **选择公理** / **Axiom of Choice**: $\forall A \exists R(R \text{ well-orders } A)$
 
 **形式化表述** / **Formal Expression**:
@@ -266,12 +266,12 @@ end
 整数构造为自然数序对的等价类：
 $\mathbb{Z} = (\mathbb{N} \times \mathbb{N}) / \sim$
 其中等价关系定义为：
-$(a,b) \sim (c,d) \leqftrightarrow a + d = b + c$
+$(a,b) \sim (c,d) \leqqftrightarrow a + d = b + c$
 
 Integers are constructed as equivalence classes of natural number ordered pairs:
 $\mathbb{Z} = (\mathbb{N} \times \mathbb{N}) / \sim$
 where the equivalence relation is defined as:
-$(a,b) \sim (c,d) \leqftrightarrow a + d = b + c$
+$(a,b) \sim (c,d) \leqqftrightarrow a + d = b + c$
 
 **形式化定义** / **Formal Definition**:
 
@@ -366,12 +366,12 @@ def integer_multiplication : integers → integers → integers :=
 有理数构造为整数序对的等价类：
 $\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$
 其中等价关系定义为：
-$(a,b) \sim (c,d) \leqftrightarrow a \cdot d = b \cdot c$
+$(a,b) \sim (c,d) \leqqftrightarrow a \cdot d = b \cdot c$
 
 Rational numbers are constructed as equivalence classes of integer ordered pairs:
 $\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$
 where the equivalence relation is defined as:
-$(a,b) \sim (c,d) \leqftrightarrow a \cdot d = b \cdot c$
+$(a,b) \sim (c,d) \leqqftrightarrow a \cdot d = b \cdot c$
 
 **形式化定义** / **Formal Definition**:
 

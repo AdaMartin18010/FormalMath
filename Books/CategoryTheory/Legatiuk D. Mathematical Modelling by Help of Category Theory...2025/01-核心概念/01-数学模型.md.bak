@@ -1,0 +1,367 @@
+# 数学模型 (Mathematical Models)
+
+**创建日期**: 2025年12月11日
+**来源**: Mathematical Modelling by Help of Category Theory, Chapter 1
+**主题编号**: CT.LEGATIUK.01.01
+
+---
+
+## 📑 目录
+
+- [数学模型 (Mathematical Models)](#数学模型-mathematical-models)
+  - [📑 目录](#-目录)
+  - [一、模型的定义](#一模型的定义)
+    - [1.1 基本定义](#11-基本定义)
+    - [1.2 完整性和一致性](#12-完整性和一致性)
+    - [1.3 模型评估框架](#13-模型评估框架)
+  - [二、模型类型](#二模型类型)
+    - [2.1 基于物理的模型](#21-基于物理的模型)
+    - [2.2 数据驱动模型](#22-数据驱动模型)
+    - [2.3 模型分类](#23-模型分类)
+  - [三、建模过程](#三建模过程)
+    - [3.1 建模工作流](#31-建模工作流)
+    - [3.2 概念建模与实例建模](#32-概念建模与实例建模)
+    - [3.3 建模过程的特征](#33-建模过程的特征)
+  - [四、模型关系](#四模型关系)
+    - [4.1 包含关系](#41-包含关系)
+    - [4.2 模型耦合](#42-模型耦合)
+    - [4.3 模型复杂性](#43-模型复杂性)
+
+---
+
+## 一、模型的定义
+
+### 1.1 基本定义
+
+**数学模型 (Mathematical Model)**：任何完整且一致的数学方程组集合，被认为对应于某个其他实体（其原型）。原型可以是物理、生物、社会、心理或概念实体，甚至可以是另一个数学模型。
+
+**数学表述**：
+
+设 $M$ 是一个数学模型，$P$ 是其原型，则 $M$ 由一组数学方程组成：
+
+$$M = \{E_1, E_2, \ldots, E_n\}$$
+
+其中每个方程 $E_i$ 描述原型 $P$ 的某些方面。
+
+### 1.2 完整性和一致性
+
+**完整性 (Completeness)**：模型必须包含描述原型所需的所有方程。
+
+**数学表述**：
+
+- **完整性**：对原型 $P$ 的每个相关方面 $A_j$，存在方程 $E_i \in M$ 描述它
+- 形式化：$\forall A_j \in \text{Aspects}(P): \exists E_i \in M: E_i \models A_j$
+
+**一致性 (Consistency)**：模型中的方程不能相互矛盾。
+
+**数学表述**：
+
+- **一致性**：不存在方程 $E_i, E_j \in M$ 使得 $E_i \Rightarrow \neg E_j$
+- 形式化：$\neg \exists E_i, E_j \in M: E_i \models \neg E_j$
+- 等价地：所有方程的解空间非空：$\bigcap_{E_i \in M} \text{Sol}(E_i) \neq \emptyset$
+
+**例子**：
+
+1. **完整但不一致**：
+   - $E_1: x + y = 1$
+   - $E_2: x + y = 2$
+   - 模型完整（描述了两个变量），但不一致（无解）
+
+2. **一致但不完整**：
+   - $E_1: x + y = 1$
+   - 模型一致（有解），但不完整（未描述 $z$ 变量）
+
+3. **完整且一致**：
+   - $E_1: x + y = 1$
+   - $E_2: x - y = 0$
+   - $E_3: z = 2$
+   - 模型完整且一致（唯一解：$x = 0.5, y = 0.5, z = 2$）
+
+### 1.3 模型评估框架
+
+**模型评估**：评估模型质量，即模型如何充分表示所考虑的物理现象。
+
+**评估框架**：
+
+1. **建模任务 $T$**：
+   - **输入参数**：$P = \{p_1, p_2, \ldots, p_n\}$
+   - **输出效应**：$E = \{e_1, e_2, \ldots, e_m\}$
+   - **目标**：预测 $E$ 给定 $P$
+
+2. **建模过程**：
+   - **概念建模**（步骤1-4）：确定假设集合 $S$，选择形式化映射 $F$
+   - **实例建模**（步骤5-8）：实现 $F$，求解模型
+
+3. **最终模型 $M$**：
+   - $M = (S, F, C)$，其中：
+     - $S$ 是假设集合
+     - $F: S \to E$ 是形式化映射
+     - $C$ 是约束条件
+
+4. **模型评估**：
+   - **准确性**：$\text{Accuracy}(M) = ||E_{\text{predicted}} - E_{\text{actual}}||$
+   - **复杂性**：$\text{Complexity}(M) = f(|S|, C(F))$
+   - **可转换性**：$M_1 \sim M_2 \Leftrightarrow S_1 = S_2$
+
+**数学表述**：
+
+模型质量函数：
+$$Q(M, T) = \alpha \cdot \text{Accuracy}(M) + \beta \cdot (1/\text{Complexity}(M)) + \gamma \cdot \text{Consistency}(M)$$
+
+其中 $\alpha, \beta, \gamma$ 是权重系数。
+
+---
+
+## 二、模型类型
+
+### 2.1 基于物理的模型
+
+**基于物理的模型 (Physics-Based Models)**：基于明确的建模假设，这些假设被形式化为数学表达式和方程。
+
+**数学表述**：
+
+设 $S_{\text{physics}} = \{s_1, s_2, \ldots, s_n\}$ 是物理假设集合，则模型：
+
+$$M_{\text{physics}} = \{E_i : E_i \text{ 基于 } S_{\text{physics}}\}$$
+
+**特征**：
+
+- **基于建模假设**：$S_{\text{physics}} \neq \emptyset$
+- **形式化映射**：$F: S_{\text{physics}} \to \text{Equations}$
+- **可解释性强**：每个方程都有物理意义
+- **理论基础明确**：基于物理定律
+
+**例子**：
+
+1. **热传导方程**：
+   - **假设**：$S = \{\text{恒定热导率 } \lambda, \text{恒定密度 } \rho, \text{恒定比热容 } c\}$
+   - **方程**：$\rho c \frac{\partial T}{\partial t} = \lambda \nabla^2 T + Q$
+   - 其中 $T$ 是温度，$Q$ 是热源
+
+2. **弹性力学方程**：
+   - **假设**：$S = \{\text{线性弹性}, \text{小变形}, \text{均匀材料}\}$
+   - **方程**：$\sigma_{ij} = C_{ijkl} \varepsilon_{kl}$（本构关系）
+   - **平衡方程**：$\sigma_{ij,j} + f_i = 0$
+   - 其中 $\sigma_{ij}$ 是应力，$\varepsilon_{kl}$ 是应变，$C_{ijkl}$ 是弹性张量
+
+3. **Navier-Stokes方程**：
+   - **假设**：$S = \{\text{牛顿流体}, \text{不可压缩}\}$
+   - **方程**：$\rho \frac{\partial v_i}{\partial t} + \rho v_j v_{i,j} = -p_{,i} + \mu v_{i,jj} + f_i$
+   - 其中 $v_i$ 是速度，$p$ 是压力，$\mu$ 是动力粘度
+
+### 2.2 数据驱动模型
+
+**数据驱动模型 (Data-Driven Models)**：基于数据，由机器学习算法、回归等表示，不基于建模假设，而是基于数据。
+
+**数学表述**：
+
+设 $D = \{(x_i, y_i) : i = 1, \ldots, N\}$ 是数据集，则模型：
+
+$$M_{\text{data}} = \{f: X \to Y \mid f \text{ 从数据 } D \text{ 学习}\}$$
+
+**特征**：
+
+- **基于数据**：$S_{\text{data}} = \emptyset$（无物理假设）
+- **形式化映射**：$F: D \to \text{Functions}$（从数据学习函数）
+- **可能缺乏可解释性**：黑盒模型
+- **需要大量数据**：$|D| \gg \text{模型参数数量}$
+
+**例子**：
+
+1. **线性回归模型**：
+   - **模型**：$y = \beta_0 + \beta_1 x_1 + \cdots + \beta_n x_n + \varepsilon$
+   - **学习**：最小化 $\sum_{i=1}^N (y_i - \hat{y}_i)^2$
+   - **参数**：$\beta_0, \beta_1, \ldots, \beta_n$
+
+2. **神经网络模型**：
+   - **模型**：$f(x) = \sigma(W_n \sigma(W_{n-1} \cdots \sigma(W_1 x + b_1) \cdots + b_{n-1}) + b_n)$
+   - **学习**：反向传播算法
+   - **参数**：权重矩阵 $W_i$ 和偏置向量 $b_i$
+
+3. **支持向量机**：
+   - **模型**：$f(x) = \sum_{i=1}^N \alpha_i y_i K(x_i, x) + b$
+   - **学习**：最大化间隔
+   - **参数**：$\alpha_i, b$
+
+### 2.3 模型分类
+
+**部分模型 (Partial Models)**：与其他模型耦合的模型。
+
+**耦合模型 (Coupled Models)**：耦合多个部分模型的模型。
+
+**全局模型 (Global Models)**：从耦合/部分模型导出的真实对象的模型。
+
+**数学定义**：
+
+**定义 1.1**：模型 $A$ 被称为模型 $B$ 的部分模型，当且仅当 $A \subset B$，但 $B \not\subset A$。此外，模型 $M$ 被称为全局模型，当且仅当不存在模型 $N$ 使得 $M \subset N$。
+
+**例子**：
+
+- **单个结构元素**（如梁）：部分模型
+- **多个梁构成一层**：耦合模型
+- **完整建筑**：全局模型
+
+---
+
+## 三、建模过程
+
+### 3.1 建模工作流
+
+**一般建模工作流**：
+
+1. **步骤1**：制定建模任务
+2. **步骤2**：识别物理现象
+3. **步骤3**：选择部分模型
+4. **步骤4**：耦合部分模型（如果需要）
+5. **步骤5**：选择求解方法
+6. **步骤6**：实现模型
+7. **步骤7**：执行计算
+8. **步骤8**：解释结果
+
+### 3.2 概念建模与实例建模
+
+**概念建模阶段 (Conceptual Modelling Phase)**：
+
+- 步骤1-4
+- 处理抽象对象（"模型"）
+- 不涉及具体单位、测量或关注量
+- 结果：用数学表达式和方程表述的模型
+
+**实例建模阶段 (Instance Modelling Phase)**：
+
+- 步骤5-8
+- 处理具体应用
+- 涉及单位、测量、关注量
+- 结果：可执行的模型
+
+**区别**：
+
+- **概念建模**：抽象层面，关注模型结构
+- **实例建模**：具体层面，关注模型实现
+
+### 3.3 建模过程的特征
+
+**可选步骤**：
+
+- 某些步骤可能可选，取决于之前步骤的选择
+- 例如：如果只选择数据驱动模型，则不需要选择特定求解方法
+
+**子步骤**：
+
+- 每个步骤可以进一步细分为更小的子步骤
+
+**阶段划分**：
+
+- 步骤1-4：概念建模
+- 步骤5-8：实例建模
+
+---
+
+## 四、模型关系
+
+### 4.1 包含关系
+
+**包含关系 (Inclusion Relation)**：模型 $A$ 是模型 $B$ 的部分模型，当且仅当 $A \subset B$。
+
+**数学表述**：
+
+$$A \subset B \Leftrightarrow \text{Equations}(A) \subset \text{Equations}(B)$$
+
+其中 $\text{Equations}(M)$ 是模型 $M$ 的方程集合。
+
+**等价表述**：
+
+$$A \subset B \Leftrightarrow S_A \subset S_B$$
+
+其中 $S_A, S_B$ 分别是模型 $A, B$ 的假设集合。
+
+**性质**：
+
+1. **传递性**：如果 $A \subset B$ 且 $B \subset C$，则 $A \subset C$
+   - **证明**：$S_A \subset S_B \subset S_C$，因此 $S_A \subset S_C$，所以 $A \subset C$
+
+2. **反对称性**：如果 $A \subset B$ 且 $B \subset A$，则 $A = B$
+   - **证明**：$S_A \subset S_B$ 且 $S_B \subset S_A$，因此 $S_A = S_B$，所以 $A = B$
+
+3. **自反性**：$A \subset A$
+   - **证明**：$S_A \subset S_A$ 显然成立
+
+**例子**：
+
+- **Bernoulli-Euler梁** $\subset$ **Rayleigh梁** $\subset$ **Timoshenko梁**
+- **假设集合**：
+  - $S_{\text{B-E}} = \{\text{忽略转动惯量}, \text{忽略剪切变形}\}$
+  - $S_{\text{R}} = \{\text{考虑转动惯量}, \text{忽略剪切变形}\}$
+  - $S_{\text{T}} = \{\text{考虑转动惯量}, \text{考虑剪切变形}\}$
+- 关系：$S_{\text{B-E}} \subset S_{\text{R}} \subset S_{\text{T}}$
+
+### 4.2 模型耦合
+
+**耦合 (Coupling)**：将多个部分模型组合成耦合模型或全局模型的过程。
+
+**数学表述**：
+
+设 $M_1, M_2, \ldots, M_n$ 是部分模型，则耦合模型 $M$ 定义为：
+
+$$M = \{M_1, M_2, \ldots, M_n; C_{\text{coupling}}\}$$
+
+其中 $C_{\text{coupling}} = \{c_j(u_1, u_2, \ldots, u_n) = 0 : j = 1, \ldots, m\}$ 是耦合条件。
+
+**耦合条件类型**：
+
+1. **运动学条件**：$u_1|_{\Gamma} = u_2|_{\Gamma}$（位移连续）
+2. **动力学条件**：$\sigma_1 \cdot n|_{\Gamma} = \sigma_2 \cdot n|_{\Gamma}$（力平衡）
+3. **热条件**：$T_1|_{\Gamma} = T_2|_{\Gamma}$（温度连续）
+4. **流量条件**：$q_1|_{\Gamma} = q_2|_{\Gamma}$（流量连续）
+
+**例子**：结构-流体耦合
+
+- **结构模型** $M_s$：$\sigma_{ij,j} + f_i = 0$（在 $\Omega_s$ 上）
+- **流体模型** $M_f$：$\rho \frac{\partial v_i}{\partial t} + \rho v_j v_{i,j} = -p_{,i} + \mu v_{i,jj}$（在 $\Omega_f$ 上）
+- **耦合条件** $C$：
+  - $v_i|_{\Gamma} = \frac{\partial u_i}{\partial t}|_{\Gamma}$（运动学）
+  - $\sigma_{ij} n_j|_{\Gamma} = -p n_i|_{\Gamma} + \tau_{ij} n_j|_{\Gamma}$（动力学）
+- **耦合模型**：$M = \{M_s, M_f; C\}$
+
+### 4.3 模型复杂性
+
+**模型复杂性 (Model Complexity)**：衡量模型复杂程度的指标。
+
+**数学定义**：
+
+$$C(M) = \alpha \cdot |\text{Equations}(M)| + \beta \cdot \sum_{E \in \text{Equations}(M)} \text{Complexity}(E) + \gamma \cdot |C_{\text{coupling}}|$$
+
+其中：
+
+- $|\text{Equations}(M)|$ 是方程数量
+- $\text{Complexity}(E)$ 是单个方程的复杂度（ODE、PDE、非线性度等）
+- $|C_{\text{coupling}}|$ 是耦合条件数量
+- $\alpha, \beta, \gamma$ 是权重系数
+
+**因素**：
+
+1. **方程数量**：$n = |\text{Equations}(M)|$
+2. **方程类型**：
+   - ODE：复杂度 = 1
+   - PDE：复杂度 = 2
+   - 非线性PDE：复杂度 = 3
+3. **耦合程度**：$m = |C_{\text{coupling}}|$
+4. **非线性程度**：$\text{Nonlinearity}(M) = \max_{E \in M} \text{Nonlinearity}(E)$
+
+**应用**：
+
+1. **模型比较**：$M_1 \leq M_2$ 如果 $C(M_1) \leq C(M_2)$
+2. **模型选择**：选择满足精度要求的最小复杂度模型
+3. **模型评估**：平衡复杂性和准确性
+
+**例子**：
+
+- **Bernoulli-Euler梁**：$C(M_{\text{B-E}}) = 1$（1个PDE）
+- **Rayleigh梁**：$C(M_{\text{R}}) = 2$（1个PDE + 转动惯量项）
+- **Timoshenko梁**：$C(M_{\text{T}}) = 3$（2个耦合PDE）
+- 关系：$C(M_{\text{B-E}}) < C(M_{\text{R}}) < C(M_{\text{T}})$
+
+---
+
+**最后更新**: 2025年12月11日
+**参考章节**: Chapter 1.1

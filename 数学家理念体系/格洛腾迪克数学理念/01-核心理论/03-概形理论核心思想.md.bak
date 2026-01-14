@@ -1,4 +1,4 @@
-# 概形理论核心思想：代数几何的现代化
+﻿# 概形理论核心思想：代数几何的现代化
 
 
 ## 📋 目录
@@ -712,13 +712,13 @@ Yoneda引理在概形理论中的具体应用：
    $$h_X: \text{Sch}^{\text{op}} \to \text{Set}, \quad h_X(T) = \text{Hom}(T, X)$$
 
 7. **Yoneda引理**：
-   $$X \cong Y \Leftrightarrow h_X \cong h_Y$$
+   $$X \cong Y \leqqftrightarrow h_X \cong h_Y$$
 
 8. **基变化**：
    $$X_T = X \times_S T, \quad \text{基从 } S \text{ 变到 } T$$
 
 9. **相对性质**：
-   $$f: X \to S \text{ 光滑/平坦/分离} \Leftrightarrow \text{相对性质}$$
+   $$f: X \to S \text{ 光滑/平坦/分离} \leqqftrightarrow \text{相对性质}$$
 
 10. **统一性**：
     $$\text{几何} + \text{算术} = \text{概形理论}$$

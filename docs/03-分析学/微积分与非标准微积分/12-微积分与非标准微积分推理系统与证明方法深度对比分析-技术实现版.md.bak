@@ -1,4 +1,4 @@
-# 微积分与非标准微积分推理系统与证明方法深度对比分析 - 技术实现版
+﻿# 微积分与非标准微积分推理系统与证明方法深度对比分析 - 技术实现版
 
 ## 目录
 
@@ -169,12 +169,12 @@
 **内部证明示例 - 导数定义**：
 
 ```latex
-\text{内部证明}: f'(a) = \text{st}\left(\frac{f(a+\epsilon) - f(a)}{\epsilon}\right)
+\text{内部证明}: f'(a) = \text{st}\leqft(\frac{f(a+\epsilon) - f(a)}{\epsilon}\right)
 \begin{align}
 & \text{内部假设}: f \text{在} a \text{内部可微} \\
 & \text{内部构造}: \text{差商} \frac{f(a+\epsilon) - f(a)}{\epsilon} \\
 & \text{内部分析}: \text{标准部分存在性} \\
-& \text{内部结论}: f'(a) = \text{st}\left(\frac{f(a+\epsilon) - f(a)}{\epsilon}\right)
+& \text{内部结论}: f'(a) = \text{st}\leqft(\frac{f(a+\epsilon) - f(a)}{\epsilon}\right)
 \end{align}
 ```
 
@@ -194,9 +194,9 @@
 ```latex
 \text{反证结构}:
 \begin{align}
-& \text{假设}: \neg Q \\
+& \text{假设}: \neqg Q \\
 & \text{目标}: \text{矛盾} \\
-& \text{步骤1}: \neg Q \implies R_1 \\
+& \text{步骤1}: \neqg Q \implies R_1 \\
 & \text{步骤2}: R_1 \implies R_2 \\
 & \text{步骤3}: R_2 \implies \text{矛盾} \\
 & \text{结论}: Q
@@ -208,7 +208,7 @@
 ```latex
 \text{反证}: \lim_{x \to a} f(x) = L_1 \land \lim_{x \to a} f(x) = L_2 \implies L_1 = L_2
 \begin{align}
-& \text{假设}: L_1 \neq L_2 \\
+& \text{假设}: L_1 \neqq L_2 \\
 & \text{构造}: \epsilon = \frac{|L_1 - L_2|}{2} \\
 & \text{分析}: \text{矛盾} \\
 & \text{结论}: L_1 = L_2
@@ -220,9 +220,9 @@
 ```latex
 \text{内部反证结构}:
 \begin{align}
-& \text{内部假设}: \neg Q^* \\
+& \text{内部假设}: \neqg Q^* \\
 & \text{内部目标}: \text{内部矛盾} \\
-& \text{内部步骤1}: \neg Q^* \implies R_1^* \\
+& \text{内部步骤1}: \neqg Q^* \implies R_1^* \\
 & \text{内部步骤2}: R_1^* \implies R_2^* \\
 & \text{内部步骤3}: R_2^* \implies \text{内部矛盾} \\
 & \text{内部结论}: Q^*
@@ -234,7 +234,7 @@
 ```latex
 \text{内部反证}: \text{st}(f(a+\epsilon)) = L_1 \land \text{st}(f(a+\epsilon)) = L_2 \implies L_1 = L_2
 \begin{align}
-& \text{内部假设}: L_1 \neq L_2 \\
+& \text{内部假设}: L_1 \neqq L_2 \\
 & \text{内部构造}: \epsilon = \frac{|L_1 - L_2|}{2} \\
 & \text{内部分析}: \text{内部矛盾} \\
 & \text{内部结论}: L_1 = L_2
@@ -290,11 +290,11 @@
 **内部构造示例 - 内部中值定理**：
 
 ```latex
-\text{内部构造}: \exists^* c \in (a,b): \text{st}(f'(c)) = \text{st}\left(\frac{f(b)-f(a)}{b-a}\right)
+\text{内部构造}: \exists^* c \in (a,b): \text{st}(f'(c)) = \text{st}\leqft(\frac{f(b)-f(a)}{b-a}\right)
 \begin{align}
 & \text{内部构造}: c^* = \text{满足内部条件的点} \\
-& \text{内部验证}: \text{st}(f'(c^*)) = \text{st}\left(\frac{f(b)-f(a)}{b-a}\right) \\
-& \text{内部结论}: \exists^* c \in (a,b): \text{st}(f'(c)) = \text{st}\left(\frac{f(b)-f(a)}{b-a}\right)
+& \text{内部验证}: \text{st}(f'(c^*)) = \text{st}\leqft(\frac{f(b)-f(a)}{b-a}\right) \\
+& \text{内部结论}: \exists^* c \in (a,b): \text{st}(f'(c)) = \text{st}\leqft(\frac{f(b)-f(a)}{b-a}\right)
 \end{align}
 ```
 
@@ -388,7 +388,7 @@
 ```latex
 \text{计算}: \int_0^1 x^n dx
 \begin{align}
-& \text{黎曼和}: \sum_{i=1}^n \left(\frac{i}{n}\right)^n \frac{1}{n} \\
+& \text{黎曼和}: \sum_{i=1}^n \leqft(\frac{i}{n}\right)^n \frac{1}{n} \\
 & \text{化简}: \frac{1}{n^{n+1}} \sum_{i=1}^n i^n \\
 & \text{极限}: \lim_{n \to \infty} \frac{1}{n^{n+1}} \sum_{i=1}^n i^n \\
 & \text{结果}: \int_0^1 x^n dx = \frac{1}{n+1}
@@ -411,9 +411,9 @@
 ```latex
 \text{内部计算}: \int_0^1 x^n dx
 \begin{align}
-& \text{有限和}: \sum_{i=1}^N \left(\frac{i}{N}\right)^n \frac{1}{N} \\
+& \text{有限和}: \sum_{i=1}^N \leqft(\frac{i}{N}\right)^n \frac{1}{N} \\
 & \text{化简}: \frac{1}{N^{n+1}} \sum_{i=1}^N i^n \\
-& \text{标准部分}: \text{st}\left(\frac{1}{N^{n+1}} \sum_{i=1}^N i^n\right) \\
+& \text{标准部分}: \text{st}\leqft(\frac{1}{N^{n+1}} \sum_{i=1}^N i^n\right) \\
 & \text{结果}: \int_0^1 x^n dx = \frac{1}{n+1}
 \end{align}
 ```

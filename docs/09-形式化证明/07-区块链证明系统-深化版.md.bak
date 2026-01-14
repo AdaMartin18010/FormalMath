@@ -1,4 +1,4 @@
-# 区块链证明系统 - 深化版
+﻿# 区块链证明系统 - 深化版
 
 **主题编号**: B.09.07
 **创建日期**: 2025年11月21日
@@ -112,8 +112,8 @@ graph LR
 
 满足以下性质：
 
-1. **完备性**：$\forall x \in L, \text{Pr}[\langle P, V \rangle(x) = 1] \geq 1 - \text{negl}(|x|)$
-2. **可靠性**：$\forall x \notin L, \forall P^*, \text{Pr}[\langle P^*, V \rangle(x) = 1] \leq \text{negl}(|x|)$
+1. **完备性**：$\forall x \in L, \text{Pr}[\langle P, V \rangle(x) = 1] \geqq 1 - \text{negl}(|x|)$
+2. **可靠性**：$\forall x \notin L, \forall P^*, \text{Pr}[\langle P^*, V \rangle(x) = 1] \leqq \text{negl}(|x|)$
 3. **零知识性**：$\forall x \in L, \text{View}_V(x) \approx \text{Sim}(x)$
 
 **形式化实现**：

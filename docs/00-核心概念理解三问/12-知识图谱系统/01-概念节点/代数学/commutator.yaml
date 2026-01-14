@@ -8,37 +8,37 @@ concept:
     zh: "交换子"
     en: "Commutator"
   msc_codes: ["20F12"]
-  
+
   # ===== 定义层 =====
   definition:
     formal: |
       设 G 是群，a, b ∈ G。
       交换子定义为：[a, b] = aba⁻¹b⁻¹
-      
+
       交换子群 [G, G] = ⟨[a,b] : a,b ∈ G⟩
       是所有交换子生成的子群。
-      
+
       性质：
       - [G, G] ⊴ G（正规子群）
       - G/[G,G] 是阿贝尔群（阿贝尔化）
       - G 阿贝尔 ⟺ [G,G] = {e}
-      
+
     informal: |
       交换子衡量"不可交换程度"。
-      
+
       [a,b] = e ⟺ ab = ba（可交换）
       [a,b] ≠ e ⟺ ab ≠ ba（不可交换）
-      
+
       交换子群收集了所有"不交换"信息。
-      
+
     lean: |
       -- 交换子
       def commutatorElement (a b : G) : G := a * b * a⁻¹ * b⁻¹
-      
+
       -- 交换子群
       def commutatorGroup (G : Type*) [Group G] : Subgroup G :=
         Subgroup.closure { g | ∃ a b : G, g = commutatorElement a b }
-        
+
   # ===== 直觉层 =====
   intuition:
     geometric: |
@@ -46,33 +46,33 @@ concept:
       - 从e出发：先a再b，vs 先b再a
       - 两条路径的"差"就是交换子
       - 阿贝尔群中两条路径相同
-      
+
     algebraic: |
       【代数直觉】阿贝尔化
       - G/[G,G] 是最大的阿贝尔商群
       - 交换子群衡量G离阿贝尔有多远
-      
+
   # ===== 例子层 =====
   examples:
     - name: "GL(n,ℝ)"
       commutator: "[GL,GL] = SL(n,ℝ)"
-      
+
     - name: "Sₙ (n≥5)"
       commutator: "[Sₙ,Sₙ] = Aₙ"
-      
+
     - name: "自由群 Fₙ"
       commutator: "[Fₙ,Fₙ] ≠ Fₙ"
-      
+
   # ===== 关系层 =====
   relations:
     requires:
       - id: "group"
       - id: "normal-subgroup"
-        
+
     related_to:
       - id: "abelianization"
       - id: "solvable-group"
-        
+
   # ===== 元数据层 =====
   metadata:
     difficulty: 3

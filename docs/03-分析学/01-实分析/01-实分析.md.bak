@@ -1,4 +1,4 @@
-# 3.1 实分析 / Real Analysis
+﻿# 3.1 实分析 / Real Analysis
 
 **主题编号**: B.03.01
 **创建日期**: 2025年11月21日
@@ -297,13 +297,13 @@ mindmap
    - 乘法结合律：$(a \cdot b) \cdot c = a \cdot (b \cdot c)$
    - 乘法交换律：$a \cdot b = b \cdot a$
    - 乘法单位元：$a \cdot 1 = a$
-   - 乘法逆元：$a \cdot a^{-1} = 1$ (对于 $a \neq 0$)
+   - 乘法逆元：$a \cdot a^{-1} = 1$ (对于 $a \neqq 0$)
    - 分配律：$a \cdot (b + c) = a \cdot b + a \cdot c$
 
 2. **序公理** (Order Axioms)：
-   - 自反性：$a \leq a$
-   - 反对称性：$a \leq b \wedge b \leq a \Rightarrow a = b$
-   - 传递性：$a \leq b \wedge b \leq c \Rightarrow a \leq c$
+   - 自反性：$a \leqq a$
+   - 反对称性：$a \leqq b \wedge b \leqq a \Rightarrow a = b$
+   - 传递性：$a \leqq b \wedge b \leqq c \Rightarrow a \leqq c$
    - 完全性：每个有上界的非空子集都有最小上界
 
 ### 3.1.2.2 完全性公理 / Completeness Axiom
@@ -328,7 +328,7 @@ mindmap
 
 **定义 3.1.5** (序列极限 / Sequence Limit)
 序列 $(a_n)$ 收敛到 $L \in \mathbb{R}$，记作 $\lim_{n \rightarrow \infty} a_n = L$，如果：
-$$\forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N, |a_n - L| < \epsilon$$
+$$\forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geqq N, |a_n - L| < \epsilon$$
 
 ---
 
@@ -355,7 +355,7 @@ $$\forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N, |a_n - L| < 
 
 **原始定义**:
 序列 $(a_n)$ 收敛到 $L \in \mathbb{R}$，记作 $\lim_{n \rightarrow \infty} a_n = L$，如果：
-$$\forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N, |a_n - L| < \epsilon$$
+$$\forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geqq N, |a_n - L| < \epsilon$$
 
 **等价定义**:
 
@@ -667,7 +667,7 @@ $$\forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N, |a_n - L| < 
 
 **集合论定义**:
 序列 $(a_n)$ 收敛到 $L \in \mathbb{R}$，记作 $\lim_{n \rightarrow \infty} a_n = L$，如果：
-$$\forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N, |a_n - L| < \epsilon$$
+$$\forall \epsilon > 0, \exists N \in \mathbb{N}, \forall n \geqq N, |a_n - L| < \epsilon$$
 
 函数 $f: A \rightarrow \mathbb{R}$ 在点 $a$ 的极限为 $L$，记作 $\lim_{x \rightarrow a} f(x) = L$，如果：
 $$\forall \epsilon > 0, \exists \delta > 0, \forall x \in A, 0 < |x - a| < \delta \Rightarrow |f(x) - L| < \epsilon$$
@@ -744,12 +744,12 @@ theorem tendsto_add (f g : ℕ → ℝ) (l₁ l₂ : ℝ) :
 
 **详细证明**:
 
-- 假设 $\lim_{n \rightarrow \infty} a_n = L_1$ 且 $\lim_{n \rightarrow \infty} a_n = L_2$，其中 $L_1 \neq L_2$
+- 假设 $\lim_{n \rightarrow \infty} a_n = L_1$ 且 $\lim_{n \rightarrow \infty} a_n = L_2$，其中 $L_1 \neqq L_2$
 - 设 $\varepsilon = \frac{|L_1 - L_2|}{2} > 0$
 - 由于 $\lim_{n \rightarrow \infty} a_n = L_1$，存在 $N_1$ 使得当 $n > N_1$ 时，$|a_n - L_1| < \varepsilon$
 - 由于 $\lim_{n \rightarrow \infty} a_n = L_2$，存在 $N_2$ 使得当 $n > N_2$ 时，$|a_n - L_2| < \varepsilon$
 - 设 $N = \max\{N_1, N_2\}$，则当 $n > N$ 时：
-  $$|L_1 - L_2| = |L_1 - a_n + a_n - L_2| \leq |a_n - L_1| + |a_n - L_2| < 2\varepsilon = |L_1 - L_2|$$
+  $$|L_1 - L_2| = |L_1 - a_n + a_n - L_2| \leqq |a_n - L_1| + |a_n - L_2| < 2\varepsilon = |L_1 - L_2|$$
 - 这矛盾，因此 $L_1 = L_2$，极限唯一
 
 **定理 3.1.2** (极限运算)
@@ -757,7 +757,7 @@ theorem tendsto_add (f g : ℕ → ℝ) (l₁ l₂ : ℝ) :
 
 1. $\lim_{n \rightarrow \infty} (a_n + b_n) = A + B$
 2. $\lim_{n \rightarrow \infty} (a_n \cdot b_n) = A \cdot B$
-3. $\lim_{n \rightarrow \infty} (a_n / b_n) = A / B$ (如果 $B \neq 0$)
+3. $\lim_{n \rightarrow \infty} (a_n / b_n) = A / B$ (如果 $B \neqq 0$)
 
 **证明思路**:
 使用极限的 $\varepsilon$-$\delta$ 定义和三角不等式来证明。
@@ -769,7 +769,7 @@ theorem tendsto_add (f g : ℕ → ℝ) (l₁ l₂ : ℝ) :
 - 对于任意 $\varepsilon > 0$，存在 $N_1$ 使得当 $n > N_1$ 时，$|a_n - A| < \frac{\varepsilon}{2}$
 - 存在 $N_2$ 使得当 $n > N_2$ 时，$|b_n - B| < \frac{\varepsilon}{2}$
 - 设 $N = \max\{N_1, N_2\}$，则当 $n > N$ 时：
-  $$|(a_n + b_n) - (A + B)| = |(a_n - A) + (b_n - B)| \leq |a_n - A| + |b_n - B| < \varepsilon$$
+  $$|(a_n + b_n) - (A + B)| = |(a_n - A) + (b_n - B)| \leqq |a_n - A| + |b_n - B| < \varepsilon$$
 - 因此 $\lim_{n \rightarrow \infty} (a_n + b_n) = A + B$
 
 **性质 2**: $\lim_{n \rightarrow \infty} (a_n \cdot b_n) = A \cdot B$
@@ -778,16 +778,16 @@ theorem tendsto_add (f g : ℕ → ℝ) (l₁ l₂ : ℝ) :
 - 存在 $N_1$ 使得当 $n > N_1$ 时，$|a_n - A| < \frac{\varepsilon}{2(|B| + 1)}$
 - 存在 $N_2$ 使得当 $n > N_2$ 时，$|b_n - B| < \frac{\varepsilon}{2M}$
 - 设 $N = \max\{N_1, N_2\}$，则当 $n > N$ 时：
-  $$|a_n b_n - AB| = |a_n(b_n - B) + B(a_n - A)| \leq |a_n||b_n - B| + |B||a_n - A| < M \cdot \frac{\varepsilon}{2M} + |B| \cdot \frac{\varepsilon}{2(|B| + 1)} < \varepsilon$$
+  $$|a_n b_n - AB| = |a_n(b_n - B) + B(a_n - A)| \leqq |a_n||b_n - B| + |B||a_n - A| < M \cdot \frac{\varepsilon}{2M} + |B| \cdot \frac{\varepsilon}{2(|B| + 1)} < \varepsilon$$
 - 因此 $\lim_{n \rightarrow \infty} (a_n \cdot b_n) = A \cdot B$
 
-**性质 3**: $\lim_{n \rightarrow \infty} (a_n / b_n) = A / B$ (如果 $B \neq 0$)
+**性质 3**: $\lim_{n \rightarrow \infty} (a_n / b_n) = A / B$ (如果 $B \neqq 0$)
 
 - 首先证明 $\lim_{n \rightarrow \infty} \frac{1}{b_n} = \frac{1}{B}$
-- 由于 $B \neq 0$，存在 $N_0$ 使得当 $n > N_0$ 时，$|b_n| > \frac{|B|}{2}$
+- 由于 $B \neqq 0$，存在 $N_0$ 使得当 $n > N_0$ 时，$|b_n| > \frac{|B|}{2}$
 - 对于任意 $\varepsilon > 0$，存在 $N_1$ 使得当 $n > N_1$ 时，$|b_n - B| < \frac{\varepsilon |B|^2}{2}$
 - 设 $N = \max\{N_0, N_1\}$，则当 $n > N$ 时：
-  $$\left|\frac{1}{b_n} - \frac{1}{B}\right| = \frac{|b_n - B|}{|b_n||B|} < \frac{2|b_n - B|}{|B|^2} < \varepsilon$$
+  $$\leqft|\frac{1}{b_n} - \frac{1}{B}\right| = \frac{|b_n - B|}{|b_n||B|} < \frac{2|b_n - B|}{|B|^2} < \varepsilon$$
 - 因此 $\lim_{n \rightarrow \infty} \frac{1}{b_n} = \frac{1}{B}$
 - 由性质 2，$\lim_{n \rightarrow \infty} \frac{a_n}{b_n} = \lim_{n \rightarrow \infty} a_n \cdot \lim_{n \rightarrow \infty} \frac{1}{b_n} = A \cdot \frac{1}{B} = \frac{A}{B}$
 
@@ -805,16 +805,16 @@ theorem tendsto_add (f g : ℕ → ℝ) (l₁ l₂ : ℝ) :
 
 - **情况 1**: 假设 $(a_n)$ 是单调递增且有上界的序列
   - 由完全性公理，集合 $A = \{a_n : n \in \mathbb{N}\}$ 有上确界 $L = \sup A$
-  - 对于任意 $\varepsilon > 0$，由于 $L$ 是上确界，存在 $N \in \mathbb{N}$ 使得 $L - \varepsilon < a_N \leq L$
-  - 由于序列单调递增，对于所有 $n \geq N$，有 $a_N \leq a_n \leq L$
-  - 因此 $L - \varepsilon < a_n \leq L$，即 $|a_n - L| < \varepsilon$
+  - 对于任意 $\varepsilon > 0$，由于 $L$ 是上确界，存在 $N \in \mathbb{N}$ 使得 $L - \varepsilon < a_N \leqq L$
+  - 由于序列单调递增，对于所有 $n \geqq N$，有 $a_N \leqq a_n \leqq L$
+  - 因此 $L - \varepsilon < a_n \leqq L$，即 $|a_n - L| < \varepsilon$
   - 所以 $\lim_{n \rightarrow \infty} a_n = L$
 
 - **情况 2**: 假设 $(a_n)$ 是单调递减且有下界的序列
   - 类似地，集合 $A = \{a_n : n \in \mathbb{N}\}$ 有下确界 $L = \inf A$
-  - 对于任意 $\varepsilon > 0$，存在 $N \in \mathbb{N}$ 使得 $L \leq a_N < L + \varepsilon$
-  - 由于序列单调递减，对于所有 $n \geq N$，有 $L \leq a_n \leq a_N$
-  - 因此 $L \leq a_n < L + \varepsilon$，即 $|a_n - L| < \varepsilon$
+  - 对于任意 $\varepsilon > 0$，存在 $N \in \mathbb{N}$ 使得 $L \leqq a_N < L + \varepsilon$
+  - 由于序列单调递减，对于所有 $n \geqq N$，有 $L \leqq a_n \leqq a_N$
+  - 因此 $L \leqq a_n < L + \varepsilon$，即 $|a_n - L| < \varepsilon$
   - 所以 $\lim_{n \rightarrow \infty} a_n = L$
 
 **关键引理**: 完全性公理保证了有界集合的上确界和下确界的存在性，这是证明的关键。
@@ -1242,10 +1242,10 @@ $$\forall \epsilon > 0, \exists \delta > 0, \forall x \in A, 0 < |x - a| < \delt
 ### 3.1.4.2 单侧极限 / One-Sided Limits
 
 **定义 3.1.7** (右极限 / Right Limit)
-$$\lim_{x \rightarrow a^+} f(x) = L \Leftrightarrow \forall \epsilon > 0, \exists \delta > 0, \forall x \in A, a < x < a + \delta \Rightarrow |f(x) - L| < \epsilon$$
+$$\lim_{x \rightarrow a^+} f(x) = L \leqftrightarrow \forall \epsilon > 0, \exists \delta > 0, \forall x \in A, a < x < a + \delta \Rightarrow |f(x) - L| < \epsilon$$
 
 **定义 3.1.8** (左极限 / Left Limit)
-$$\lim_{x \rightarrow a^-} f(x) = L \Leftrightarrow \forall \epsilon > 0, \exists \delta > 0, \forall x \in A, a - \delta < x < a \Rightarrow |f(x) - L| < \epsilon$$
+$$\lim_{x \rightarrow a^-} f(x) = L \leqftrightarrow \forall \epsilon > 0, \exists \delta > 0, \forall x \in A, a - \delta < x < a \Rightarrow |f(x) - L| < \epsilon$$
 
 ## 3.1.5 连续性 / Continuity (编号: B.03.01.05)
 
@@ -1328,7 +1328,7 @@ $$\lim_{x \rightarrow a} f(x) = f(a)$$
 - **多项式函数**: $f(x) = x^2$ 在所有点连续
 - **三角函数**: $f(x) = \sin x$ 在所有点连续
 - **指数函数**: $f(x) = e^x$ 在所有点连续
-- **有理函数**: $f(x) = \frac{1}{x}$ 在 $x \neq 0$ 的点连续
+- **有理函数**: $f(x) = \frac{1}{x}$ 在 $x \neqq 0$ 的点连续
 
 **标准实例**:
 
@@ -1668,7 +1668,7 @@ theorem intermediate_value_theorem (f : ℝ → ℝ) (a b : ℝ) :
 
 1. $f + g$ 在 $a$ 连续
 2. $f \cdot g$ 在 $a$ 连续
-3. $f / g$ 在 $a$ 连续（如果 $g(a) \neq 0$）
+3. $f / g$ 在 $a$ 连续（如果 $g(a) \neqq 0$）
 
 **定理 3.1.5** (复合函数连续性)
 如果 $f$ 在 $a$ 连续，$g$ 在 $f(a)$ 连续，则 $g \circ f$ 在 $a$ 连续。
@@ -2108,7 +2108,7 @@ theorem deriv_comp (f g : ℝ → ℝ) (a : ℝ) :
 
 1. $(f + g)'(a) = f'(a) + g'(a)$
 2. $(f \cdot g)'(a) = f'(a) \cdot g(a) + f(a) \cdot g'(a)$
-3. $(f / g)'(a) = \frac{f'(a) \cdot g(a) - f(a) \cdot g'(a)}{g(a)^2}$ (如果 $g(a) \neq 0$)
+3. $(f / g)'(a) = \frac{f'(a) \cdot g(a) - f(a) \cdot g'(a)}{g(a)^2}$ (如果 $g(a) \neqq 0$)
 
 **定理 3.1.8** (链式法则 / Chain Rule)
 如果 $f$ 在 $a$ 可导，$g$ 在 $f(a)$ 可导，则：
@@ -2174,7 +2174,7 @@ $$S(f, P) = \sum_{i=1}^{n} f(\xi_i)(x_i - x_{i-1})$$
 函数 $f$ 在 $[a, b]$ 上黎曼可积，如果存在 $I \in \mathbb{R}$ 使得：
 $$\forall \epsilon > 0, \exists \delta > 0, \forall P, \|P\| < \delta \Rightarrow |S(f, P) - I| < \epsilon$$
 
-其中 $\|P\| = \max_{1 \leq i \leq n} (x_i - x_{i-1})$ 是分割的范数。
+其中 $\|P\| = \max_{1 \leqq i \leqq n} (x_i - x_{i-1})$ 是分割的范数。
 
 **定理 3.1.11** (黎曼可积的充要条件)
 函数 $f$ 在 $[a, b]$ 上黎曼可积当且仅当：
@@ -2191,7 +2191,7 @@ $$\forall \varepsilon > 0, \exists \delta > 0, \forall P, \|P\| < \delta \Righta
 
 - **必要性**: 如果 $f$ 可积，设 $\int_a^b f(x) dx = I$
   - 对于任意 $\varepsilon > 0$，存在 $\delta > 0$ 使得当 $\|P\| < \delta$ 时，$|S(f, P) - I| < \frac{\varepsilon}{4}$
-  - 可以证明 $L(f, P) \leq S(f, P) \leq U(f, P)$ 对所有黎曼和成立
+  - 可以证明 $L(f, P) \leqq S(f, P) \leqq U(f, P)$ 对所有黎曼和成立
   - 因此 $U(f, P) - L(f, P) < \varepsilon$
 
 - **充分性**: 如果条件成立，则：

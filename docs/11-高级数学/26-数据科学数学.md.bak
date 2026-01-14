@@ -1,4 +1,4 @@
-# 26. 数据科学数学 / Data Science Mathematics
+﻿# 26. 数据科学数学 / Data Science Mathematics
 
 ## 目录
 
@@ -135,7 +135,7 @@ timeline
 
 **定理** (VC泛化界):
 对于任何 $\delta > 0$，以概率至少 $1-\delta$，
-$$R(f) \leq \hat{R}(f) + \sqrt{\frac{\log|\mathcal{F}| + \log(1/\delta)}{2n}}$$
+$$R(f) \leqq \hat{R}(f) + \sqrt{\frac{\log|\mathcal{F}| + \log(1/\delta)}{2n}}$$
 
 其中 $R(f)$ 是真实风险，$\hat{R}(f)$ 是经验风险。
 
@@ -162,7 +162,7 @@ def minimize_structural_risk (srm : StructuralRiskMinimization) : Function :=
 
 **稀疏性**是高维统计的核心概念：
 
-**定义**: 向量 $\beta \in \mathbb{R}^p$ 是 $s$-稀疏的，如果 $\|\beta\|_0 \leq s$。
+**定义**: 向量 $\beta \in \mathbb{R}^p$ 是 $s$-稀疏的，如果 $\|\beta\|_0 \leqq s$。
 
 **Lasso回归**:
 $$\min_{\beta} \frac{1}{2n}\|y - X\beta\|_2^2 + \lambda\|\beta\|_1$$
@@ -198,7 +198,7 @@ instance Regularization Vector where
 **随机矩阵的特征值分布**是随机矩阵理论的核心：
 
 **维格纳半圆律**: 对于 $n \times n$ 对称随机矩阵 $A$，其特征值分布收敛到半圆分布：
-$$\rho(x) = \frac{1}{2\pi}\sqrt{4-x^2}, \quad |x| \leq 2$$
+$$\rho(x) = \frac{1}{2\pi}\sqrt{4-x^2}, \quad |x| \leqq 2$$
 
 ### 26.5.2 矩阵集中不等式
 
@@ -206,7 +206,7 @@ $$\rho(x) = \frac{1}{2\pi}\sqrt{4-x^2}, \quad |x| \leq 2$$
 
 **定理** (矩阵伯恩斯坦不等式):
 对于独立随机矩阵 $X_1, \ldots, X_n$，以高概率：
-$$\left\|\sum_{i=1}^n X_i\right\| \leq C\sqrt{\log n} \max\{\sigma, R\}$$
+$$\leqft\|\sum_{i=1}^n X_i\right\| \leqq C\sqrt{\log n} \max\{\sigma, R\}$$
 
 其中 $\sigma$ 是方差参数，$R$ 是范数界。
 

@@ -1,4 +1,4 @@
-# ZFC公理体系完整形式化 - 第五部分：复数构造
+﻿# ZFC公理体系完整形式化 - 第五部分：复数构造
 
 ## 目录
 
@@ -60,7 +60,7 @@
 
 **定义 1.1** (复数)
 复数是实数有序对的集合，其中等价关系定义为：
-$$(a, b) = (c, d) \leftrightarrow a = c \land b = d$$
+$$(a, b) = (c, d) \leqftrightarrow a = c \land b = d$$
 
 **形式化表述**：
 $$\mathbb{C} = \mathbb{R} \times \mathbb{R}$$
@@ -140,7 +140,7 @@ $$z_1 \cdot z_2 = (a_1a_2 - b_1b_2, a_1b_2 + a_2b_1)$$
 1. 结合律：$(z_1 \cdot z_2) \cdot z_3 = z_1 \cdot (z_2 \cdot z_3)$
 2. 交换律：$z_1 \cdot z_2 = z_2 \cdot z_1$
 3. 单位元：$z \cdot 1 = z$
-4. 逆元：$z \cdot z^{-1} = 1$ (对于 $z \neq 0$)
+4. 逆元：$z \cdot z^{-1} = 1$ (对于 $z \neqq 0$)
 
 **形式化证明**：
 
@@ -190,7 +190,7 @@ $$z_1 \cdot z_2 = (a_1a_2 - b_1b_2, a_1b_2 + a_2b_1)$$
 
 **定义 4.1** (复平面)
 复平面是复数与平面点的对应关系：
-$$z = a + bi \leftrightarrow (a, b) \in \mathbb{R}^2$$
+$$z = a + bi \leqftrightarrow (a, b) \in \mathbb{R}^2$$
 
 **定理 4.1.1** (复平面的性质)
 复平面为复数提供了几何解释。

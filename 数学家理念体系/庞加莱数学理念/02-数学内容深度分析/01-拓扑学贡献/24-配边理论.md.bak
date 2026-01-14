@@ -163,13 +163,13 @@
 ### 核心公式
 
 1. **配边关系**：
-   $$M_1 \sim M_2 \leqqqftrightarrow \exists W: \partial W = M_1 \sqcup M_2$$
+   $$M_1 \sim M_2 \leqqqqftrightarrow \exists W: \partial W = M_1 \sqcup M_2$$
 
 2. **配边群**：
    $$\Omega_n = \{\text{闭n维流形}\} / \text{配边}$$
 
 3. **配边不变量**：
-   $$M \sim 0 \leqqqftrightarrow \text{所有Stiefel-Whitney类} = 0$$
+   $$M \sim 0 \leqqqqftrightarrow \text{所有Stiefel-Whitney类} = 0$$
 
 4. **Thom同构**：
    $$\Omega_n \cong \pi_{n+k}(MO(k)), \quad k \gg n$$

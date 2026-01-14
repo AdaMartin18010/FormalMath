@@ -59,7 +59,7 @@
 
 **形式化表述**:
 对于任意集合 $A$ 和 $B$，
-$$A = B \iff \forall x (x \in A \leftrightarrow x \in B)$$
+$$A = B \iff \forall x (x \in A \leqftrightarrow x \in B)$$
 
 ### 1.2 元素关系
 
@@ -67,7 +67,7 @@ $$A = B \iff \forall x (x \in A \leftrightarrow x \in B)$$
 元素关系 $\in$ 是集合论的基本关系，表示一个对象是另一个集合的元素。
 
 **公理 1.1** (外延公理 / Axiom of Extensionality)
-$$\forall x \forall y [\forall z (z \in x \leftrightarrow z \in y) \rightarrow x = y]$$
+$$\forall x \forall y [\forall z (z \in x \leqftrightarrow z \in y) \rightarrow x = y]$$
 
 ## 2. ZFC公理系统
 
@@ -80,7 +80,7 @@ $$\exists x \forall y (y \notin x)$$
 空集是唯一不包含任何元素的集合，记作 $\emptyset$。
 
 **公理 2.2** (配对公理 / Axiom of Pairing)
-$$\forall x \forall y \exists z \forall w (w \in z \leftrightarrow w = x \vee w = y)$$
+$$\forall x \forall y \exists z \forall w (w \in z \leqftrightarrow w = x \vee w = y)$$
 
 **定义 2.2** (无序对 / Unordered Pair)
 对于集合 $a$ 和 $b$，它们的无序对是 $\{a, b\}$。
@@ -88,13 +88,13 @@ $$\forall x \forall y \exists z \forall w (w \in z \leftrightarrow w = x \vee w 
 ### 2.2 构造性公理
 
 **公理 2.3** (并集公理 / Axiom of Union)
-$$\forall F \exists A \forall x (x \in A \leftrightarrow \exists B (B \in F \wedge x \in B))$$
+$$\forall F \exists A \forall x (x \in A \leqftrightarrow \exists B (B \in F \wedge x \in B))$$
 
 **定义 2.3** (并集 / Union)
 对于集合族 $F$，其并集是 $\bigcup F = \{x \mid \exists B \in F (x \in B)\}$。
 
 **公理 2.4** (幂集公理 / Axiom of Power Set)
-$$\forall x \exists y \forall z (z \in y \leftrightarrow z \subseteq x)$$
+$$\forall x \exists y \forall z (z \in y \leqftrightarrow z \subseteq x)$$
 
 **定义 2.4** (幂集 / Power Set)
 对于集合 $A$，其幂集是 $P(A) = \{B \mid B \subseteq A\}$。
@@ -103,7 +103,7 @@ $$\forall x \exists y \forall z (z \in y \leftrightarrow z \subseteq x)$$
 
 **公理模式 2.5** (分离公理模式 / Axiom Schema of Separation)
 对于每个公式 $\phi(x, z, w_1, \ldots, w_n)$，
-$$\forall z \forall w_1 \ldots \forall w_n \exists y \forall x (x \in y \leftrightarrow x \in z \wedge \phi(x, z, w_1, \ldots, w_n))$$
+$$\forall z \forall w_1 \ldots \forall w_n \exists y \forall x (x \in y \leqftrightarrow x \in z \wedge \phi(x, z, w_1, \ldots, w_n))$$
 
 **定义 2.5** (分离 / Separation)
 对于集合 $A$ 和性质 $P(x)$，分离集是 $\{x \in A \mid P(x)\}$。
@@ -112,7 +112,7 @@ $$\forall z \forall w_1 \ldots \forall w_n \exists y \forall x (x \in y \leftrig
 
 **公理模式 2.6** (替换公理模式 / Axiom Schema of Replacement)
 对于每个公式 $\phi(x, y, A, w_1, \ldots, w_n)$，
-$$\forall A \forall w_1 \ldots \forall w_n [\forall x \in A \exists! y \phi(x, y, A, w_1, \ldots, w_n) \rightarrow \exists B \forall y (y \in B \leftrightarrow \exists x \in A \phi(x, y, A, w_1, \ldots, w_n))]$$
+$$\forall A \forall w_1 \ldots \forall w_n [\forall x \in A \exists! y \phi(x, y, A, w_1, \ldots, w_n) \rightarrow \exists B \forall y (y \in B \leqftrightarrow \exists x \in A \phi(x, y, A, w_1, \ldots, w_n))]$$
 
 ### 2.5 无穷公理
 
@@ -125,12 +125,12 @@ $$\exists x [\emptyset \in x \wedge \forall y (y \in x \rightarrow y \cup \{y\} 
 ### 2.6 正则公理
 
 **公理 2.8** (正则公理 / Axiom of Regularity)
-$$\forall x [x \neq \emptyset \rightarrow \exists y (y \in x \wedge y \cap x = \emptyset)]$$
+$$\forall x [x \neqq \emptyset \rightarrow \exists y (y \in x \wedge y \cap x = \emptyset)]$$
 
 ### 2.7 选择公理
 
 **公理 2.9** (选择公理 / Axiom of Choice)
-$$\forall F [\emptyset \notin F \wedge \forall x \forall y (x \in F \wedge y \in F \wedge x \neq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists! z (z \in x \cap C)]$$
+$$\forall F [\emptyset \notin F \wedge \forall x \forall y (x \in F \wedge y \in F \wedge x \neqq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists! z (z \in x \cap C)]$$
 
 ## 3. 集合运算
 
@@ -170,7 +170,7 @@ $$A \times B = \{(a, b) \mid a \in A \wedge b \in B\}$$
 设 $R$ 是集合 $A$ 上的关系：
 
 1. **自反性** (Reflexivity): $\forall x \in A (x R x)$
-2. **非自反性** (Irreflexivity): $\forall x \in A (\neg x R x)$
+2. **非自反性** (Irreflexivity): $\forall x \in A (\neqg x R x)$
 3. **对称性** (Symmetry): $\forall x, y \in A (x R y \rightarrow y R x)$
 4. **反对称性** (Antisymmetry): $\forall x, y \in A (x R y \wedge y R x \rightarrow x = y)$
 5. **传递性** (Transitivity): $\forall x, y, z \in A (x R y \wedge y R z \rightarrow x R z)$
@@ -223,11 +223,11 @@ $$A \times B = \{(a, b) \mid a \in A \wedge b \in B\}$$
 **定义 5.5** (基数比较)
 对于基数 $\kappa$ 和 $\lambda$：
 
-- $\kappa \leq \lambda$ 如果存在从 $\kappa$ 到 $\lambda$ 的单射
-- $\kappa < \lambda$ 如果 $\kappa \leq \lambda$ 且 $\kappa \neq \lambda$
+- $\kappa \leqq \lambda$ 如果存在从 $\kappa$ 到 $\lambda$ 的单射
+- $\kappa < \lambda$ 如果 $\kappa \leqq \lambda$ 且 $\kappa \neqq \lambda$
 
 **定理 5.2** (康托尔-伯恩斯坦定理 / Cantor-Bernstein Theorem)
-如果 $\kappa \leq \lambda$ 且 $\lambda \leq \kappa$，则 $\kappa = \lambda$。
+如果 $\kappa \leqq \lambda$ 且 $\lambda \leqq \kappa$，则 $\kappa = \lambda$。
 
 ## 6. 形式化实现
 

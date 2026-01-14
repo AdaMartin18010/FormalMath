@@ -1,4 +1,4 @@
-# ZFC公理体系完整形式化 - 序关系构造详细版
+﻿# ZFC公理体系完整形式化 - 序关系构造详细版
 
 ## 目录
 
@@ -61,7 +61,7 @@ $$R \subseteq A \times A$$
 
 **定义 1.2** (关系的表示)
 对于关系 $R$ 和元素 $a, b \in A$，记作：
-$$a R b \leftrightarrow (a, b) \in R$$
+$$a R b \leqftrightarrow (a, b) \in R$$
 
 **定理 1.1.1** (关系的基本性质)
 关系具有以下基本性质：
@@ -89,7 +89,7 @@ $$a R b \leftrightarrow (a, b) \in R$$
 集合 $A$ 上的关系 $R$ 是等价关系，如果 $R$ 是自反、对称和传递的。
 
 **形式化表述**：
-$$R \text{ 是等价关系} \leftrightarrow \forall a \in A(a R a) \land \forall a, b \in A(a R b \rightarrow b R a) \land \forall a, b, c \in A(a R b \land b R c \rightarrow a R c)$$
+$$R \text{ 是等价关系} \leqftrightarrow \forall a \in A(a R a) \land \forall a, b \in A(a R b \rightarrow b R a) \land \forall a, b, c \in A(a R b \land b R c \rightarrow a R c)$$
 
 **定理 2.1.1** (等价关系的基本性质)
 等价关系具有以下性质：
@@ -116,7 +116,7 @@ $$[a]_R = \{b \in A : a R b\}$$
 **定理 2.2.1** (等价类的性质)
 
 1. $a \in [a]_R$
-2. $[a]_R = [b]_R \leftrightarrow a R b$
+2. $[a]_R = [b]_R \leqftrightarrow a R b$
 3. $[a]_R \cap [b]_R = \emptyset \lor [a]_R = [b]_R$
 
 **形式化证明**：
@@ -137,19 +137,19 @@ $$[a]_R = \{b \in A : a R b\}$$
 #### 3.1 偏序关系的定义
 
 **定义 3.1** (偏序关系)
-集合 $A$ 上的关系 $\leq$ 是偏序关系，如果 $\leq$ 是自反、反对称和传递的。
+集合 $A$ 上的关系 $\leqq$ 是偏序关系，如果 $\leqq$ 是自反、反对称和传递的。
 
 **形式化表述**：
-$$\leq \text{ 是偏序关系} \leftrightarrow \forall a \in A(a \leq a) \land \forall a, b \in A(a \leq b \land b \leq a \rightarrow a = b) \land \forall a, b, c \in A(a \leq b \land b \leq c \rightarrow a \leq c)$$
+$$\leqq \text{ 是偏序关系} \leqftrightarrow \forall a \in A(a \leqq a) \land \forall a, b \in A(a \leqq b \land b \leqq a \rightarrow a = b) \land \forall a, b, c \in A(a \leqq b \land b \leqq c \rightarrow a \leqq c)$$
 
 **定义 3.2** (严格偏序关系)
 集合 $A$ 上的关系 $<$ 是严格偏序关系，如果 $<$ 是非自反和传递的。
 
 **形式化表述**：
-$$< \text{ 是严格偏序关系} \leftrightarrow \forall a \in A(\neg(a < a)) \land \forall a, b, c \in A(a < b \land b < c \rightarrow a < c)$$
+$$< \text{ 是严格偏序关系} \leqftrightarrow \forall a \in A(\neqg(a < a)) \land \forall a, b, c \in A(a < b \land b < c \rightarrow a < c)$$
 
 **定理 3.1.1** (偏序关系与严格偏序关系的关系)
-如果 $\leq$ 是偏序关系，则 $<$ 定义为 $a < b \leftrightarrow a \leq b \land a \neq b$ 是严格偏序关系。
+如果 $\leqq$ 是偏序关系，则 $<$ 定义为 $a < b \leqftrightarrow a \leqq b \land a \neqq b$ 是严格偏序关系。
 
 **形式化证明**：
 
@@ -165,21 +165,21 @@ $$< \text{ 是严格偏序关系} \leftrightarrow \forall a \in A(\neg(a < a)) \
 #### 3.2 偏序集的基本概念
 
 **定义 3.3** (偏序集)
-偏序集是集合 $A$ 和其上的偏序关系 $\leq$ 的二元组 $(A, \leq)$。
+偏序集是集合 $A$ 和其上的偏序关系 $\leqq$ 的二元组 $(A, \leqq)$。
 
 **定义 3.4** (上界和下界)
-对于偏序集 $(A, \leq)$ 和子集 $B \subseteq A$：
+对于偏序集 $(A, \leqq)$ 和子集 $B \subseteq A$：
 
-- $u \in A$ 是 $B$ 的上界，如果 $\forall b \in B(b \leq u)$
-- $l \in A$ 是 $B$ 的下界，如果 $\forall b \in B(l \leq b)$
+- $u \in A$ 是 $B$ 的上界，如果 $\forall b \in B(b \leqq u)$
+- $l \in A$ 是 $B$ 的下界，如果 $\forall b \in B(l \leqq b)$
 
 **定义 3.5** (最小上界和最大下界)
 
-- $u$ 是 $B$ 的最小上界（上确界），如果 $u$ 是 $B$ 的上界，且对于 $B$ 的任意上界 $v$，$u \leq v$
-- $l$ 是 $B$ 的最大下界（下确界），如果 $l$ 是 $B$ 的下界，且对于 $B$ 的任意下界 $m$，$m \leq l$
+- $u$ 是 $B$ 的最小上界（上确界），如果 $u$ 是 $B$ 的上界，且对于 $B$ 的任意上界 $v$，$u \leqq v$
+- $l$ 是 $B$ 的最大下界（下确界），如果 $l$ 是 $B$ 的下界，且对于 $B$ 的任意下界 $m$，$m \leqq l$
 
 **定理 3.2.1** (最小上界和最大下界的唯一性)
-如果偏序集 $(A, \leq)$ 的子集 $B$ 有最小上界（最大下界），则它是唯一的。
+如果偏序集 $(A, \leqq)$ 的子集 $B$ 有最小上界（最大下界），则它是唯一的。
 
 **形式化证明**：
 
@@ -197,10 +197,10 @@ $$< \text{ 是严格偏序关系} \leftrightarrow \forall a \in A(\neg(a < a)) \
 #### 4.1 全序关系的定义
 
 **定义 4.1** (全序关系)
-偏序集 $(A, \leq)$ 是全序集，如果对于任意 $a, b \in A$，$a \leq b$ 或 $b \leq a$。
+偏序集 $(A, \leqq)$ 是全序集，如果对于任意 $a, b \in A$，$a \leqq b$ 或 $b \leqq a$。
 
 **形式化表述**：
-$$(A, \leq) \text{ 是全序集} \leftrightarrow \forall a, b \in A(a \leq b \lor b \leq a)$$
+$$(A, \leqq) \text{ 是全序集} \leqftrightarrow \forall a, b \in A(a \leqq b \lor b \leqq a)$$
 
 **定理 4.1.1** (全序集的性质)
 全序集具有以下性质：
@@ -254,10 +254,10 @@ $$(A, \leq) \text{ 是全序集} \leftrightarrow \forall a, b \in A(a \leq b \lo
 #### 5.1 良序关系的定义
 
 **定义 5.1** (良序关系)
-全序集 $(A, \leq)$ 是良序集，如果 $A$ 的每个非空子集都有最小元素。
+全序集 $(A, \leqq)$ 是良序集，如果 $A$ 的每个非空子集都有最小元素。
 
 **形式化表述**：
-$$(A, \leq) \text{ 是良序集} \leftrightarrow \forall B \subseteq A(B \neq \emptyset \rightarrow \exists b \in B \forall c \in B(b \leq c))$$
+$$(A, \leqq) \text{ 是良序集} \leqftrightarrow \forall B \subseteq A(B \neqq \emptyset \rightarrow \exists b \in B \forall c \in B(b \leqq c))$$
 
 **定理 5.1.1** (良序集的性质)
 良序集具有以下性质：
@@ -299,7 +299,7 @@ $$(A, \leq) \text{ 是良序集} \leftrightarrow \forall B \subseteq A(B \neq \e
 序数是传递的良序集。
 
 **形式化表述**：
-$$\alpha \text{ 是序数} \leftrightarrow \alpha \text{ 是传递的} \land (\alpha, \in) \text{ 是良序集}$$
+$$\alpha \text{ 是序数} \leqftrightarrow \alpha \text{ 是传递的} \land (\alpha, \in) \text{ 是良序集}$$
 
 **定理 5.3.1** (序数的性质)
 
@@ -452,11 +452,11 @@ $$\alpha \text{ 是序数} \leftrightarrow \alpha \text{ 是传递的} \land (\a
 #### 7.1 乘积序
 
 **定义 7.1** (乘积序)
-对于偏序集 $(A, \leq_A)$ 和 $(B, \leq_B)$，定义乘积序：
-$$(a_1, b_1) \leq (a_2, b_2) \leftrightarrow a_1 \leq_A a_2 \land b_1 \leq_B b_2$$
+对于偏序集 $(A, \leqq_A)$ 和 $(B, \leqq_B)$，定义乘积序：
+$$(a_1, b_1) \leqq (a_2, b_2) \leqftrightarrow a_1 \leqq_A a_2 \land b_1 \leqq_B b_2$$
 
 **定理 7.1.1** (乘积序的性质)
-如果 $(A, \leq_A)$ 和 $(B, \leq_B)$ 都是偏序集（全序集、良序集），则 $(A \times B, \leq)$ 也是偏序集（全序集、良序集）。
+如果 $(A, \leqq_A)$ 和 $(B, \leqq_B)$ 都是偏序集（全序集、良序集），则 $(A \times B, \leqq)$ 也是偏序集（全序集、良序集）。
 
 **形式化证明**：
 
@@ -470,11 +470,11 @@ $$(a_1, b_1) \leq (a_2, b_2) \leftrightarrow a_1 \leq_A a_2 \land b_1 \leq_B b_2
 #### 7.2 字典序
 
 **定义 7.2** (字典序)
-对于偏序集 $(A, \leq_A)$ 和 $(B, \leq_B)$，定义字典序：
-$$(a_1, b_1) < (a_2, b_2) \leftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 <_B b_2)$$
+对于偏序集 $(A, \leqq_A)$ 和 $(B, \leqq_B)$，定义字典序：
+$$(a_1, b_1) < (a_2, b_2) \leqftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 <_B b_2)$$
 
 **定理 7.2.1** (字典序的性质)
-如果 $(A, \leq_A)$ 和 $(B, \leq_B)$ 都是全序集（良序集），则 $(A \times B, <)$ 也是全序集（良序集）。
+如果 $(A, \leqq_A)$ 和 $(B, \leqq_B)$ 都是全序集（良序集），则 $(A \times B, <)$ 也是全序集（良序集）。
 
 **形式化证明**：
 

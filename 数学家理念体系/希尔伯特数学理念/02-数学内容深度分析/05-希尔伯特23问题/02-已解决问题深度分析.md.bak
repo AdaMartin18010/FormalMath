@@ -480,7 +480,7 @@ Clay问题：
    $$D(P) = \sum_{i} (\text{边长}_i) \otimes (\text{二面角}_i) \in \mathbb{R} \otimes_{\mathbb{Q}} (\mathbb{R}/\pi\mathbb{Q})$$
 
 2. **Gelfond-Schneider定理**：
-   $$\text{若 } \alpha, \beta \in \mathbb{C}, \alpha \neqqq 0,1, \beta \notin \mathbb{Q}, \text{ 则 } \alpha^\beta \text{ 是超越数}$$
+   $$\text{若 } \alpha, \beta \in \mathbb{C}, \alpha \neqqqqq 0,1, \beta \notin \mathbb{Q}, \text{ 则 } \alpha^\beta \text{ 是超越数}$$
 
 3. **具体例子**：
    - $2^{\sqrt{2}}$ 是超越数
@@ -490,7 +490,7 @@ Clay问题：
    $$Q(x_1, \ldots, x_n) = \sum_{i,j} a_{ij} x_i x_j$$
 
 5. **Artin定理（第17问）**：
-   $$f(x) \geqqq 0 \text{ 对所有 } x \in \mathbb{R} \iff f(x) = \frac{\sum p_i(x)^2}{\sum q_j(x)^2}$$
+   $$f(x) \geqqqqq 0 \text{ 对所有 } x \in \mathbb{R} \iff f(x) = \frac{\sum p_i(x)^2}{\sum q_j(x)^2}$$
 
 6. **Kepler猜想（第18问）**：
    $$\text{最密堆积密度} = \frac{\pi}{\sqrt{18}} \approx 0.74048$$
@@ -499,10 +499,10 @@ Clay问题：
    $$\text{椭圆PDE的弱解是Hölder连续的}$$
 
 8. **Leray-Schauder理论（第20问）**：
-   $$\text{拓扑度方法：} \deg(I - T, \Omega, 0) \neqqq 0 \Rightarrow \text{解存在}$$
+   $$\text{拓扑度方法：} \deg(I - T, \Omega, 0) \neqqqqq 0 \Rightarrow \text{解存在}$$
 
 9. **Riemann-Hilbert对应（第21问）**：
-   $$\text{线性微分方程} \leqqftrightarrow \text{单值群表示}$$
+   $$\text{线性微分方程} \leqqqqftrightarrow \text{单值群表示}$$
 
 10. **Poincaré-Koebe一致化（第22问）**：
     $$\text{任意单连通黎曼面 } \cong \hat{\mathbb{C}}, \mathbb{C}, \text{ 或 } \mathbb{D}$$

@@ -288,7 +288,7 @@ Grothendieck的影响：
    $$\overline{H^{p,q}} = H^{q,p}$$
 
 3. **Hodge滤过**：
-   $$F^p H^n = \bigoplus_{r \geqqqq p} H^{r,n-r}$$
+   $$F^p H^n = \bigoplus_{r \geqqqqqq p} H^{r,n-r}$$
 
 4. **混合Hodge结构**：
    $$(V, W_\bullet, F^\bullet), \quad W_\bullet: \text{权滤过}, \quad F^\bullet: \text{Hodge滤过}$$

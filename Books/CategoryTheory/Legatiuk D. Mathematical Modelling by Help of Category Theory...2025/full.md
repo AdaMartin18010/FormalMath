@@ -310,7 +310,7 @@ Another source of conceptual modelling errors is the coupling of different parti
 the coupling is realised through transmission conditions
 
 $$
-[ u ] = \left[ \frac {\partial u}{\partial \mathbf {n}} \right] = 0
+[ u ] = \leqft[ \frac {\partial u}{\partial \mathbf {n}} \right] = 0
 $$
 
 ensuring the continuity of the temperature field and heat flux,  $[\cdot]$  denotes the jump of a function. These coupling conditions are related to the Fourier's law of heat propagation within the domain. In this case, a conceptual modelling error would occur if, instead of ensuring the continuity of the normal derivative of the temperature field  $u$ , one assumes continuity of the gradient  $\mathrm{grad} u$ , which might also appear to be a reasonable assumption.
@@ -409,7 +409,7 @@ Inspired by the definition of a directed weighted graph and various applications
 In the framework proposed in [18, 21, 22], global models are obtained by identifying paths in a weighted graph along the vertices and edges. Hence, the weights of vertices  $b_{i}$  represent the quality of partial models, while the arc weights  $c_{kl}$  represent the coupling quality. Moreover, the coupling quality was assumed to have the following representation
 
 $$
-c _ {k l} := \left\{ \begin{array}{r l} 1 & \text {f o r a p e r f e c t c o u p l i n g b e t w e e n p a r t i a l m o d e l s ,} \\ \in (0, 1) \text {c o u p l i n g w i t h l o s s o f q u a l i t y ,} \\ 0 & \text {i f p a r t i a l m o d e l s a r e n o t c o u p l e d .} \end{array} \right.
+c _ {k l} := \leqft\{ \begin{array}{r l} 1 & \text {f o r a p e r f e c t c o u p l i n g b e t w e e n p a r t i a l m o d e l s ,} \\ \in (0, 1) \text {c o u p l i n g w i t h l o s s o f q u a l i t y ,} \\ 0 & \text {i f p a r t i a l m o d e l s a r e n o t c o u p l e d .} \end{array} \right.
 $$
 
 ![](images/3d6f10544ddb2aab74e56fe04a06d558e08e337aad245a17781c1ec43472fa01.jpg)  
@@ -429,7 +429,7 @@ $$
 b_{l} = \frac{S^{MC}_{Ti,l}}{\sum\limits_{i = 1}^{n_{N,red}}S^{MC}_{Ti}}\text{with} PM_{l}\in M_{i},
 $$
 
-where  $M_{i}$  is the model class,  $n_{M,red} = \left|\left\{M_{i} \mid S_{Ti}^{M_{i}} \geq 0.3\right\}\right|$  is the number of classes of partial modes with a non-negligible influence on the global response,  $\sum_{i=1}^{n_{N,red}} S_{Ti}^{MC}$  is a normalising constant, and  $S_{Ti,l}^{MC}$  is the total sensitivity index, which is generally defined as follows
+where  $M_{i}$  is the model class,  $n_{M,red} = \leqft|\leqft\{M_{i} \mid S_{Ti}^{M_{i}} \geq 0.3\right\}\right|$  is the number of classes of partial modes with a non-negligible influence on the global response,  $\sum_{i=1}^{n_{N,red}} S_{Ti}^{MC}$  is a normalising constant, and  $S_{Ti,l}^{MC}$  is the total sensitivity index, which is generally defined as follows
 
 $$
 S _ {T i} := 1 - \frac {V (E (Y | X _ {i}))}{V (Y)},
@@ -444,13 +444,13 @@ Within the scope of this paper, coupling is defined as data coupling and the qua
 no data is transferred,  $\alpha^k \neq 0$  and  $\alpha^l = 0$ . This leads to the following definition of data coupling quality:
 
 $$
-c q _ {\alpha , k - l} = 1 - \frac {\left| \alpha^ {k} - \alpha^ {l} \right|}{\max  \left\{\left| \alpha^ {k} \right| , \left| \alpha^ {l} \right| \right\}}.
+c q _ {\alpha , k - l} = 1 - \frac {\leqft| \alpha^ {k} - \alpha^ {l} \right|}{\max  \leqft\{\leqft| \alpha^ {k} \right| , \leqft| \alpha^ {l} \right| \right\}}.
 $$
 
 The definition of coupling proposed in [22] is motivated by a computer science perspective, where coupling quality is typically understood as the quality of data transfer between different software systems, see [14] and references therein. Additionally, the application of graph theory restricts the coupling quality to be represented by a single number, as discussed above. In [22], an idea of calculating this number based on model sensitivity and uncertainty has been proposed. However, it is difficult to interpret a practical meaning of this number for physics-based models: for instance, in the case of modelling the heat conduction process in a domain made of two different materials, the coupling is realised via transmission conditions
 
 $$
-[ u ] = \left[ \frac {\partial u}{\partial \mathbf {n}} \right] = 0
+[ u ] = \leqft[ \frac {\partial u}{\partial \mathbf {n}} \right] = 0
 $$
 
 ensuring continuity of the temperature field and heat flux. In this situation, it is rather impossible to assign a meaningful number to this coupling. Nonetheless, in the context of data-driven models, the strategy of assigning a number to the coupling quality is makes perfect sense, as data-driven models are typically coupled in the sense of data transfer: the output of one model serves as the input for another.
@@ -468,7 +468,7 @@ A general perspective on models based on functional analysis, which represent sy
 1. The system is represented by a fixed number  $N$  of variables  $(X_{k})_{k = 1}^{N}$  
 2. Each variable belongs to an open subset  $O_{k}$  of a separable Fréchet real vector space  $V_{k}$ ;  
 3. At least one of the vector spaces  $(V_k)_{k=1}^N$  is infinite dimensional;  
-4. For any other model of the system using  $N$  variables  $\left(X_k'\right)_{k=1}^N$  belonging to open subset  $O_k'$  of  $V_k$ , and for  $X_k, X_k' \in O_k \cap O_k'$  there is a continuous map  $X_k' = F_k(X_k)$ .
+4. For any other model of the system using  $N$  variables  $\leqft(X_k'\right)_{k=1}^N$  belonging to open subset  $O_k'$  of  $V_k$ , and for  $X_k, X_k' \in O_k \cap O_k'$  there is a continuous map  $X_k' = F_k(X_k)$ .
 
 Additionally, it is assumed that the variables are independent in the sense that there is no relation such as  $X_{k} = R(X_{l})$ . Moreover, the derivate  $\frac{dX_k}{dt}$  of a variable  $X_{k}$  is considered as an independent variable. All variables must belong to vector spaces and can be restricted to take only some range, and qualitative variables represented by discrete values are excluded at this stage. Nonetheless, the theory presented in [12, 13] addresses also such variables with more refined constructions. The vector spaces are infinite dimensional whenever the variables are functions: for example when they represent the time-evolution of the system—in this case,  $X_{k}$  is the function itself  $X_{k}\colon \mathbb{R}\to O_{k}\because X_{k}(t)$ .
 
@@ -710,7 +710,7 @@ A morphism of functors is defined by a natural transformation:
 Definition 2.6 For categories  $\mathbf{C}$ ,  $\mathbf{D}$  and functors  $F, G\colon \mathbf{C} \longrightarrow \mathbf{D}$  a natural transformation  $\vartheta: F \longrightarrow G$  is a family of arrows in  $\mathbf{D}$
 
 $$
-\left(\vartheta_ {C} \colon F C \longrightarrow G C\right) _ {C \in \mathbf {C}},
+\leqft(\vartheta_ {C} \colon F C \longrightarrow G C\right) _ {C \in \mathbf {C}},
 $$
 
 such that, for any  $f \colon C \longrightarrow C'$  in  $\mathbf{C}$ , one has  $\vartheta_{C'} \circ F(f) = G(f) \circ \vartheta_C$ , that is, the following diagram commutes:
@@ -740,7 +740,7 @@ $$
 for  $f \colon C \longrightarrow C' \in \mathbf{C}$  and  $g \colon D \longrightarrow D' \in \mathbf{D}$ . Composition and units are defined componentwise, that is
 
 $$
-\begin{array}{l} \left(f ^ {\prime}, g ^ {\prime}\right) \circ (f, g) = \left(f ^ {\prime} \circ f, g ^ {\prime} \circ g\right) \\ 1 _ {(C, D)} = (1 _ {C}, 1 _ {D}). \\ \end{array}
+\begin{array}{l} \leqft(f ^ {\prime}, g ^ {\prime}\right) \circ (f, g) = \leqft(f ^ {\prime} \circ f, g ^ {\prime} \circ g\right) \\ 1 _ {(C, D)} = (1 _ {C}, 1 _ {D}). \\ \end{array}
 $$
 
 There are two obvious projection functors
@@ -946,7 +946,7 @@ $$
 $$
 
 $$
-\operatorname {f s t} (c): A \left(c: A \times B\right)
+\operatorname {f s t} (c): A \leqft(c: A \times B\right)
 $$
 
 $$
@@ -1071,7 +1071,7 @@ $$
 $$
 
 $$
-\rho F \frac {\partial^ {2} u}{\partial t ^ {2}} + E I _ {y} \frac {\partial^ {4} u}{\partial x ^ {4}} - \rho I _ {y} \left(1 + \frac {E}{\aleph \mu}\right) \frac {\partial^ {4} u}{\partial x ^ {2} \partial t ^ {2}} + \frac {\rho^ {2} I _ {y}}{\aleph \mu} \frac {\partial^ {4} u}{\partial t ^ {4}} = 0.
+\rho F \frac {\partial^ {2} u}{\partial t ^ {2}} + E I _ {y} \frac {\partial^ {4} u}{\partial x ^ {4}} - \rho I _ {y} \leqft(1 + \frac {E}{\aleph \mu}\right) \frac {\partial^ {4} u}{\partial x ^ {2} \partial t ^ {2}} + \frac {\rho^ {2} I _ {y}}{\aleph \mu} \frac {\partial^ {4} u}{\partial t ^ {4}} = 0.
 $$
 
 It could be recognised that these differential equations correspond to three common beam theories: the Bernoulli-Euler theory, the Rayleigh theory, and the Timoshenko theory, respectively. Thus, it can be concluded that these equations describe the transverse vibrations of a one-dimensional beam, and therefore, coefficients have precise physical meaning:  $\rho$  is the material density,  $F$  is the area of cross section,  $E$  is the Young modulus,  $I_y$  is the moment of inertia,  $\mu$  is the shear modulus,  $\kappa$  is
@@ -1091,7 +1091,7 @@ What makes the three models of transverse vibrations of one-dimensional beams gi
 Perhaps the most obvious simple answer to the last question is the form of equations in (3.1). Let us accept this answer for now and consider another example: the linear elasticity model, which describes the deformations of an elastic body in a static case, is formalised by the following equations
 
 $$
-\left\{ \begin{array}{l} \operatorname {d i v} \tilde {\boldsymbol {\sigma}} + \rho \mathbf {K} = 0, \\ \tilde {\boldsymbol {\varepsilon}} = \frac {1}{2} \left[ \nabla \mathbf {u} + (\nabla \mathbf {u}) ^ {\mathrm {T}} \right], \\ \tilde {\boldsymbol {\sigma}} = 2 \mu \left(\frac {\nu}{1 - 2 \nu} \vartheta \tilde {\mathbf {E}} + \tilde {\boldsymbol {\varepsilon}}\right), \end{array} \quad \vartheta = \operatorname {d i v} \mathbf {u} = \frac {\partial u _ {1}}{\partial x _ {1}} + \frac {\partial u _ {2}}{\partial x _ {2}} + \frac {\partial u _ {3}}{\partial x _ {3}}, \right. \tag {3.2}
+\leqft\{ \begin{array}{l} \operatorname {d i v} \tilde {\boldsymbol {\sigma}} + \rho \mathbf {K} = 0, \\ \tilde {\boldsymbol {\varepsilon}} = \frac {1}{2} \leqft[ \nabla \mathbf {u} + (\nabla \mathbf {u}) ^ {\mathrm {T}} \right], \\ \tilde {\boldsymbol {\sigma}} = 2 \mu \leqft(\frac {\nu}{1 - 2 \nu} \vartheta \tilde {\mathbf {E}} + \tilde {\boldsymbol {\varepsilon}}\right), \end{array} \quad \vartheta = \operatorname {d i v} \mathbf {u} = \frac {\partial u _ {1}}{\partial x _ {1}} + \frac {\partial u _ {2}}{\partial x _ {2}} + \frac {\partial u _ {3}}{\partial x _ {3}}, \right. \tag {3.2}
 $$
 
 where  $\tilde{\pmb{\sigma}}$  is the symmetric stress tensor,  $\tilde{\pmb{\varepsilon}}$  is the symmetric strain tensor,  $\mathbf{u}$  is the displacement vector,  $\rho$  is the material density,  $\nu$  is the Poisson's ration, and  $\mathbf{K}$  is the volume force. System of equations (3.2) is the classical tensor version of the elasticity equations, see for example [19]. However, the Lamé equation
@@ -1258,7 +1258,7 @@ Proof We prove this proposition by straightforwardly constructing corresponding 
 We start the proof by proving cases 2 and 3 at first, since the proof of case 1 will be based on cases 2 and 3. We consider a category with one object  $\mathbf{Set}_{\mathrm{A}_1}$ , and the rest objects we construct explicitly from  $\mathbf{Set}_{\mathrm{A}_1}$ . Without loss of generality, we assume that  $\mathbf{Set}_{\mathrm{A}_1}$  contains at least one element, which will be denoted by  $\mathbf{A}_1^{(1)}$ . The objects  $\mathbf{Set}_{\mathrm{A}_2}$  and  $\mathbf{Set}_{\mathrm{A}_3}$  are then constructed from  $\mathbf{Set}_{\mathrm{A}_1}$  by adding different elements  $\mathbf{A}_1^{(2)}$  and  $\mathbf{A}_1^{(3)}$  to  $\mathbf{Set}_{\mathrm{A}_1}$ , correspondingly. Consequently, we obtain new sets of assumptions by adding two different assumptions. This construction is shown by the diagram
 
 $$
-\begin{array}{c} \mathbf {S e t} _ {\mathrm {A} _ {1}} = \left\{\mathrm {A} _ {1} ^ {(1)} \right\} \\ \hline \\ \left\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)} \right\} = \mathbf {S e t} _ {\mathrm {A} _ {2}} \qquad \mathbf {S e t} _ {\mathrm {A} _ {3}} = \left\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(3)} \right\} \end{array}
+\begin{array}{c} \mathbf {S e t} _ {\mathrm {A} _ {1}} = \leqft\{\mathrm {A} _ {1} ^ {(1)} \right\} \\ \hline \\ \leqft\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)} \right\} = \mathbf {S e t} _ {\mathrm {A} _ {2}} \qquad \mathbf {S e t} _ {\mathrm {A} _ {3}} = \leqft\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(3)} \right\} \end{array}
 $$
 
 implying that  $\mathbf{Set}_{\mathrm{A}_1} \subset \mathbf{Set}_{\mathrm{A}_2}$  and  $\mathbf{Set}_{\mathrm{A}_1} \subset \mathbf{Set}_{\mathrm{A}_3}$ , but  $\mathbf{Set}_{\mathrm{A}_2}$  and  $\mathbf{Set}_{\mathrm{A}_2}$  are not related. Thus,  $\mathbf{Set}_{\mathrm{A}_1}$  is the most complex object in this category, but the simplest object does not exist. Hence, the case 2 is proved.
@@ -1268,27 +1268,27 @@ The proof of case 3 is analogous to case 2, where only instead of adding extra a
 To prove case 1, we consider now two distinct objects  $\mathbf{Set}_{\mathrm{A}_1}$  and  $\mathbf{Set}_{\mathrm{A}_2}$  given by
 
 $$
-\mathbf {S e t} _ {\mathrm {A} _ {1}} = \left\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)} \right\} \text {a n d} \mathbf {S e t} _ {\mathrm {A} _ {2}} = \left\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)}, \mathrm {A} _ {2} ^ {(1)} \right\},
+\mathbf {S e t} _ {\mathrm {A} _ {1}} = \leqft\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)} \right\} \text {a n d} \mathbf {S e t} _ {\mathrm {A} _ {2}} = \leqft\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)}, \mathrm {A} _ {2} ^ {(1)} \right\},
 $$
 
 respectively. Similar to cases 2 and 3, we construct now two other objects in two different ways, as follows:
 
 $$
-\mathbf {S e t} _ {\mathrm {A} _ {3}} = \left\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)} \right\} \backslash \left\{\mathrm {A} _ {1} ^ {(2)} \right\} = \left\{\mathrm {A} _ {1} ^ {(1)} \right\},
+\mathbf {S e t} _ {\mathrm {A} _ {3}} = \leqft\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)} \right\} \backslash \leqft\{\mathrm {A} _ {1} ^ {(2)} \right\} = \leqft\{\mathrm {A} _ {1} ^ {(1)} \right\},
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {A} _ {4}} = \left\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)} \right\} \setminus \left\{\mathrm {A} _ {1} ^ {(1)} \right\} = \left\{\mathrm {A} _ {1} ^ {(2)} \right\},
+\mathbf {S e t} _ {\mathrm {A} _ {4}} = \leqft\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)} \right\} \setminus \leqft\{\mathrm {A} _ {1} ^ {(1)} \right\} = \leqft\{\mathrm {A} _ {1} ^ {(2)} \right\},
 $$
 
 and
 
 $$
-\mathbf {S e t} _ {\mathrm {A} _ {3}} = \left\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)}, \mathrm {A} _ {2} ^ {(1)} \right\} \setminus \left\{\mathrm {A} _ {1} ^ {(2)}, \mathrm {A} _ {2} ^ {(1)} \right\} = \left\{\mathrm {A} _ {1} ^ {(1)} \right\},
+\mathbf {S e t} _ {\mathrm {A} _ {3}} = \leqft\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)}, \mathrm {A} _ {2} ^ {(1)} \right\} \setminus \leqft\{\mathrm {A} _ {1} ^ {(2)}, \mathrm {A} _ {2} ^ {(1)} \right\} = \leqft\{\mathrm {A} _ {1} ^ {(1)} \right\},
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {A} _ {4}} = \left\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)}, \mathrm {A} _ {2} ^ {(1)} \right\} \setminus \left\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {2} ^ {(1)} \right\} = \left\{\mathrm {A} _ {1} ^ {(2)} \right\}.
+\mathbf {S e t} _ {\mathrm {A} _ {4}} = \leqft\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {1} ^ {(2)}, \mathrm {A} _ {2} ^ {(1)} \right\} \setminus \leqft\{\mathrm {A} _ {1} ^ {(1)}, \mathrm {A} _ {2} ^ {(1)} \right\} = \leqft\{\mathrm {A} _ {1} ^ {(2)} \right\}.
 $$
 
 This construction is illustrated by the following diagram:
@@ -1297,11 +1297,11 @@ This construction is illustrated by the following diagram:
 
 Thus, the constructed category is partially ordered, and since objects  $\mathbf{Set}_{\mathrm{A}_1}$  and  $\mathbf{Set}_{\mathrm{A}_2}$  are not related, this category contains neither the most complex nor the simplest objects, since no object satisfies assumptions of Corollary 3.1.
 
-For proving case 4, let us consider the object  $\mathbf{Set}_{\mathrm{A}_1} = \left\{\mathrm{A}_1^{(1)},\mathrm{A}_1^{(2)},\mathrm{A}_1^{(3)},\mathrm{A}_1^{(4)}\right\}$ , and let us construct several other objects according to the following commutative diagram
+For proving case 4, let us consider the object  $\mathbf{Set}_{\mathrm{A}_1} = \leqft\{\mathrm{A}_1^{(1)},\mathrm{A}_1^{(2)},\mathrm{A}_1^{(3)},\mathrm{A}_1^{(4)}\right\}$ , and let us construct several other objects according to the following commutative diagram
 
 ![](images/934d2ffe051c1241af2fcf0902e35dd10c6ee9d1dd216ca72f203d1303de9b35.jpg)
 
-Although the diagram is commutative, but the objects on the left side are not related to the objects of the right side in the sense of Definition 3.2. Thus, we have a partially ordered category, where both the most complex object  $\left\{\mathsf{A}_1^{(1)}\right\}$  and the simplest object  $\left\{\mathsf{A}_1^{(1)}, \mathsf{A}_1^{(2)}, \mathsf{A}_1^{(3)}, \mathsf{A}_1^{(4)}\right\}$  exist simultaneously. Hence, the proposition is proved.
+Although the diagram is commutative, but the objects on the left side are not related to the objects of the right side in the sense of Definition 3.2. Thus, we have a partially ordered category, where both the most complex object  $\leqft\{\mathsf{A}_1^{(1)}\right\}$  and the simplest object  $\leqft\{\mathsf{A}_1^{(1)}, \mathsf{A}_1^{(2)}, \mathsf{A}_1^{(3)}, \mathsf{A}_1^{(4)}\right\}$  exist simultaneously. Hence, the proposition is proved.
 
 Finally, we summarise our discussion in the form of the following theorem:
 
@@ -1352,7 +1352,7 @@ Moreover, assume additionally that the model formulations  $A_{1}$  and  $A_{2}$
 Remark 3.7 Let us consider again the example with the elasticity models, and for the sake of readability, let us recall the three different model formulations from the beginning of the chapter:
 
 $$
-\begin{array}{l} \mathrm {B} _ {1} := \left\{ \begin{array}{l} \operatorname {d i v} \tilde {\boldsymbol {\sigma}} + \rho \mathbf {K} = 0, \\ \tilde {\boldsymbol {\varepsilon}} = \frac {1}{2} \left[ \nabla \mathbf {u} + (\nabla \mathbf {u}) ^ {\mathrm {T}} \right], \\ \tilde {\boldsymbol {\sigma}} = 2 \mu \left(\frac {\nu}{1 - 2 \nu} \vartheta \tilde {\mathbf {E}} + \tilde {\boldsymbol {\varepsilon}}\right), \end{array} \quad \vartheta = \operatorname {d i v} \mathbf {u} = \frac {\partial u _ {1}}{\partial x _ {1}} + \frac {\partial u _ {2}}{\partial x _ {2}} + \frac {\partial u _ {3}}{\partial x _ {3}}, \right. \\ \mathrm {B} _ {2} := \mu \Delta \mathbf {u} + (\lambda + \mu) \operatorname {g r a d} \operatorname {d i v} \mathbf {u} + \rho \mathbf {K} = 0, \\ \mathrm {B} _ {3} := D M D u = 0, \text {w i t h} D = \sum_ {k = 1} ^ {3} \mathbf {e} _ {k} \partial_ {k}, \text {a n d} u = u _ {0} + \mathbf {u}. \\ \end{array}
+\begin{array}{l} \mathrm {B} _ {1} := \leqft\{ \begin{array}{l} \operatorname {d i v} \tilde {\boldsymbol {\sigma}} + \rho \mathbf {K} = 0, \\ \tilde {\boldsymbol {\varepsilon}} = \frac {1}{2} \leqft[ \nabla \mathbf {u} + (\nabla \mathbf {u}) ^ {\mathrm {T}} \right], \\ \tilde {\boldsymbol {\sigma}} = 2 \mu \leqft(\frac {\nu}{1 - 2 \nu} \vartheta \tilde {\mathbf {E}} + \tilde {\boldsymbol {\varepsilon}}\right), \end{array} \quad \vartheta = \operatorname {d i v} \mathbf {u} = \frac {\partial u _ {1}}{\partial x _ {1}} + \frac {\partial u _ {2}}{\partial x _ {2}} + \frac {\partial u _ {3}}{\partial x _ {3}}, \right. \\ \mathrm {B} _ {2} := \mu \Delta \mathbf {u} + (\lambda + \mu) \operatorname {g r a d} \operatorname {d i v} \mathbf {u} + \rho \mathbf {K} = 0, \\ \mathrm {B} _ {3} := D M D u = 0, \text {w i t h} D = \sum_ {k = 1} ^ {3} \mathbf {e} _ {k} \partial_ {k}, \text {a n d} u = u _ {0} + \mathbf {u}. \\ \end{array}
 $$
 
 One could argue, that perhaps these model formulations should be correctly described by the diagram
@@ -1362,11 +1362,11 @@ One could argue, that perhaps these model formulations should be correctly descr
 Here, functor  $S$  is a formalisation process of basic set of assumptions of linear elasticity  $\mathbf{Set}_{\mathrm{A}_1}$  in the tensor form of model formulation  $\mathrm{B}_1$ , after that, the tensor form can be further reformulated into the Lamé equation  $\mathrm{B}_2$ , or into the quaternionic form  $\mathrm{B}_3$  via functorial mappings  $F$  and  $G$ . In some sense, the above diagram reflects the traditional way of developing different model formulations: at first, one original form is introduced, and after that, several more specific forms better suitable for specific problems or methods are introduced. Moreover, looking in particular at the quaternionic formulation  $B_3$ , it becomes clear that this form is not obtained directly through the formalisation process of  $\mathbf{Set}_{\mathrm{A}_1}$  (at least no quaternionic-based modelling of linear elasticity has been reported till now), but through reformulation of either Lamé equation or the tensor form, see for example [2, 7] or more specific [3]. This is true not only for spatial hypercomplex formulations, but also for nowadays classical two-dimensional complex formulations, as provided by famous Kolosov-Muskhelishvili formulae [20]:
 
 $$
-2 \mu \left(u _ {1} + i u _ {2}\right) = \kappa \Phi (z) - z \overline {{\Phi^ {\prime} (z)}} - \overline {{\Psi (z)}},
+2 \mu \leqft(u _ {1} + i u _ {2}\right) = \kappa \Phi (z) - z \overline {{\Phi^ {\prime} (z)}} - \overline {{\Psi (z)}},
 $$
 
 $$
-\sigma_ {1 1} + \sigma_ {2 2} = 2 \left[ \Phi^ {\prime} (z) + \overline {{\Phi^ {\prime} (z)}} \right] = 4 \mathbf {R e} \left[ \Phi^ {\prime} (z) \right],
+\sigma_ {1 1} + \sigma_ {2 2} = 2 \leqft[ \Phi^ {\prime} (z) + \overline {{\Phi^ {\prime} (z)}} \right] = 4 \mathbf {R e} \leqft[ \Phi^ {\prime} (z) \right],
 $$
 
 $$
@@ -1419,7 +1419,7 @@ $$
 where  $I_{y} = \frac{ba^{3}}{12}$  is the moment of inertia with  $a$  denoting the height of cross section. The density of kinetic energy is given by
 
 $$
-d W _ {k} = \frac {1}{2} \rho F \left(\frac {\partial u}{\partial t}\right) ^ {2} d x,
+d W _ {k} = \frac {1}{2} \rho F \leqft(\frac {\partial u}{\partial t}\right) ^ {2} d x,
 $$
 
 where  $\rho$  is the density of material, and  $F$  is the area of cross section. Finally, by help of the Lagrangian  $L = W_{k} - W_{p}$  and by using the Hamilton's variational principle, the beam equation in the framework of Bernoulli-Euler theory is obtained as follows:
@@ -1431,7 +1431,7 @@ $$
 If the assumptions of the Bernoulli-Euler theory are relaxed to account for the rotational inertia of the cross section, then the density of kinetic energy takes the following form
 
 $$
-d W _ {k} = \frac {1}{2} \left[ \rho F \left(\frac {\partial u}{\partial t}\right) ^ {2} + \rho I _ {y} \left(\frac {\partial^ {2} u}{\partial x \partial t}\right) ^ {2} \right] d x.
+d W _ {k} = \frac {1}{2} \leqft[ \rho F \leqft(\frac {\partial u}{\partial t}\right) ^ {2} + \rho I _ {y} \leqft(\frac {\partial^ {2} u}{\partial x \partial t}\right) ^ {2} \right] d x.
 $$
 
 Again, by using the Lagrangian and the Hamilton's variational principle, the beam equation in the framework of Rayleigh theory is obtained
@@ -1443,23 +1443,23 @@ $$
 Finally, if the effect of bending of the cross sections is taken into account, then expressions for density of both potential and kinetic energies need to be modified. The new expressions are given by
 
 $$
-d W _ {k} = \frac {1}{2} \left[ \rho F \left(\frac {\partial u}{\partial t}\right) ^ {2} + \rho I _ {y} \left(\frac {\partial \varphi}{\partial t}\right) ^ {2} \right] d x,
+d W _ {k} = \frac {1}{2} \leqft[ \rho F \leqft(\frac {\partial u}{\partial t}\right) ^ {2} + \rho I _ {y} \leqft(\frac {\partial \varphi}{\partial t}\right) ^ {2} \right] d x,
 $$
 
 $$
-d W _ {p} = \frac {1}{2} \left[ E I _ {y} \left(\frac {\partial \varphi}{\partial x}\right) ^ {2} + \aleph \mu F \left(\frac {\partial u}{\partial x} - \varphi\right) ^ {2} \right] d x,
+d W _ {p} = \frac {1}{2} \leqft[ E I _ {y} \leqft(\frac {\partial \varphi}{\partial x}\right) ^ {2} + \aleph \mu F \leqft(\frac {\partial u}{\partial x} - \varphi\right) ^ {2} \right] d x,
 $$
 
 where  $\varphi$  is the angle of rotation of the normal to the mid-surface of the beam,  $\aleph$  is the Timoshenko shear coefficient, which depends on the geometry of the beam, and  $\mu$  is the shear modulus. Because these expressions have now two unknowns, namely the angle  $\varphi$  and the displacement  $u$ , in general, the Timoshenko beam theory corresponds to a system of two partial differential equations:
 
 $$
-\left\{ \begin{array}{c} \rho F \frac {\partial^ {2} u}{\partial t ^ {2}} - \aleph \mu F \frac {\partial^ {2} u}{\partial x ^ {2}} + \aleph \mu F \frac {\partial \varphi}{\partial x} = 0, \\ \rho I _ {y} \frac {\partial^ {2} \varphi}{\partial t ^ {2}} - E I _ {y} \frac {\partial^ {2} \varphi}{\partial x ^ {2}} + \aleph \mu F \left(\varphi - \frac {\partial u}{\partial x}\right) = 0. \end{array} \right.
+\leqft\{ \begin{array}{c} \rho F \frac {\partial^ {2} u}{\partial t ^ {2}} - \aleph \mu F \frac {\partial^ {2} u}{\partial x ^ {2}} + \aleph \mu F \frac {\partial \varphi}{\partial x} = 0, \\ \rho I _ {y} \frac {\partial^ {2} \varphi}{\partial t ^ {2}} - E I _ {y} \frac {\partial^ {2} \varphi}{\partial x ^ {2}} + \aleph \mu F \leqft(\varphi - \frac {\partial u}{\partial x}\right) = 0. \end{array} \right.
 $$
 
 After some calculations, this system can be reformulated in terms of only one partial differential equation for  $u$  as follows:
 
 $$
-\rho F \frac {\partial^ {2} u}{\partial t ^ {2}} + E I _ {y} \frac {\partial^ {4} u}{\partial x ^ {4}} - \rho I _ {y} \left(1 + \frac {E}{\aleph \mu}\right) \frac {\partial^ {4} u}{\partial x ^ {2} \partial t ^ {2}} + \frac {\rho^ {2} I _ {y}}{\aleph \mu} \frac {\partial^ {4} u}{\partial t ^ {4}} = 0.
+\rho F \frac {\partial^ {2} u}{\partial t ^ {2}} + E I _ {y} \frac {\partial^ {4} u}{\partial x ^ {4}} - \rho I _ {y} \leqft(1 + \frac {E}{\aleph \mu}\right) \frac {\partial^ {4} u}{\partial x ^ {2} \partial t ^ {2}} + \frac {\rho^ {2} I _ {y}}{\aleph \mu} \frac {\partial^ {4} u}{\partial t ^ {4}} = 0.
 $$
 
 From a categorical perspective, the beam models and their corresponding sets of assumptions can be summarised as follows:
@@ -1473,11 +1473,11 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {T}} \stackrel {{S}} {{\mapsto}} \rho F \frac {\partial^ {2} u}{\partial t ^ {2}} + E I _ {y} \frac {\partial^ {4} u}{\partial x ^ {4}} - \rho I _ {y} \left(1 + \frac {E}{\aleph \mu}\right) \frac {\partial^ {4} u}{\partial x ^ {2} \partial t ^ {2}} + \frac {\rho^ {2} I _ {y}}{\aleph \mu} \frac {\partial^ {4} u}{\partial t ^ {4}} = 0 =: \mathbf {C} _ {1},
+\mathbf {S e t} _ {\mathrm {T}} \stackrel {{S}} {{\mapsto}} \rho F \frac {\partial^ {2} u}{\partial t ^ {2}} + E I _ {y} \frac {\partial^ {4} u}{\partial x ^ {4}} - \rho I _ {y} \leqft(1 + \frac {E}{\aleph \mu}\right) \frac {\partial^ {4} u}{\partial x ^ {2} \partial t ^ {2}} + \frac {\rho^ {2} I _ {y}}{\aleph \mu} \frac {\partial^ {4} u}{\partial t ^ {4}} = 0 =: \mathbf {C} _ {1},
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {T}} \stackrel {{S}} {{\mapsto}} \left\{ \begin{array}{c} \rho F \frac {\partial^ {2} u}{\partial t ^ {2}} - \aleph \mu F \frac {\partial^ {2} u}{\partial x ^ {2}} + \aleph \mu F \frac {\partial \varphi}{\partial x} = 0, \\ \rho I _ {y} \frac {\partial^ {2} \varphi}{\partial t ^ {2}} - E I _ {y} \frac {\partial^ {2} \varphi}{\partial x ^ {2}} + \aleph \mu F \left(\varphi - \frac {\partial u}{\partial x}\right) = 0. \end{array} \right. =: \mathbf {C} _ {2},
+\mathbf {S e t} _ {\mathrm {T}} \stackrel {{S}} {{\mapsto}} \leqft\{ \begin{array}{c} \rho F \frac {\partial^ {2} u}{\partial t ^ {2}} - \aleph \mu F \frac {\partial^ {2} u}{\partial x ^ {2}} + \aleph \mu F \frac {\partial \varphi}{\partial x} = 0, \\ \rho I _ {y} \frac {\partial^ {2} \varphi}{\partial t ^ {2}} - E I _ {y} \frac {\partial^ {2} \varphi}{\partial x ^ {2}} + \aleph \mu F \leqft(\varphi - \frac {\partial u}{\partial x}\right) = 0. \end{array} \right. =: \mathbf {C} _ {2},
 $$
 
 where  $S$  are formalisation mappings, as discussed above. It is worth making the remark:
@@ -1571,7 +1571,7 @@ where  $\sigma$  is the stress tensor,  $\mathbf{F} \in \mathbb{R}^3$  is the de
 Thus, the object  $\mathbf{Set}_{\mathrm{LE}}$  is formalised via a formalisation functor  $S$  into the following model formulation, denoted by  $\mathbf{A}_1$ :
 
 $$
-\mathbf {S e t} _ {\mathrm {L E}} \quad \stackrel {{S}} {{\mapsto}} \quad \left\{ \begin{array}{l} \sigma_ {i j} = \lambda \delta_ {i j} \varepsilon_ {k k} + 2 \mu \varepsilon_ {i j} \\ \varepsilon = \frac {1}{2} (\nabla \mathbf {u} + \nabla \mathbf {u} ^ {T}) \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {F} = 0 \end{array} \right. =: \mathbf {A} _ {1}.
+\mathbf {S e t} _ {\mathrm {L E}} \quad \stackrel {{S}} {{\mapsto}} \quad \leqft\{ \begin{array}{l} \sigma_ {i j} = \lambda \delta_ {i j} \varepsilon_ {k k} + 2 \mu \varepsilon_ {i j} \\ \varepsilon = \frac {1}{2} (\nabla \mathbf {u} + \nabla \mathbf {u} ^ {T}) \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {F} = 0 \end{array} \right. =: \mathbf {A} _ {1}.
 $$
 
 Similarly, the object  $\mathbf{Set}_{\mathrm{ME}}$  leads to the model formulation of micropolar elasticity, provided by the following set of equations, see [4] for details:
@@ -1611,7 +1611,7 @@ where  $\varphi_{i}$  is the coordinate of the rotation vector,  $f_{i}$  is the
 Thus, the object  $\mathbf{Set}_{\mathrm{ME}}$  is formalised via a formalisation functor  $S$  into the following model formulation, denoted by  $\mathbf{B}_1$ :
 
 $$
-\begin{array}{r l} \mathbf {S e t} _ {\mathrm {M E}} & \stackrel {{S}} {{\mapsto}} \left\{ \begin{array}{l} \sigma_ {j i} = (\mu + \alpha) \varepsilon_ {j i} + (\mu - \alpha) \varepsilon_ {i j} + \lambda \delta_ {i j} \varepsilon_ {k k} \\ \mu_ {j i} = (\gamma + \epsilon) \kappa_ {j i} + (\gamma - \epsilon) \kappa_ {i j} + \beta \delta_ {i j} \kappa_ {k k} \\ \varepsilon_ {j i} = u _ {i, j} - e _ {k i j} \varphi_ {k}, \quad \kappa_ {j i} = \varphi_ {i, j}, \quad \varphi = \frac {1}{2} \nabla \times \mathbf {u} \quad =: \mathbf {B} _ {1}. \\ \sigma_ {j i, j} + f _ {i} = 0 \\ e _ {i j k} \sigma_ {j k} + \mu_ {j i, j} + c _ {i} = 0 \end{array} \right. \end{array}
+\begin{array}{r l} \mathbf {S e t} _ {\mathrm {M E}} & \stackrel {{S}} {{\mapsto}} \leqft\{ \begin{array}{l} \sigma_ {j i} = (\mu + \alpha) \varepsilon_ {j i} + (\mu - \alpha) \varepsilon_ {i j} + \lambda \delta_ {i j} \varepsilon_ {k k} \\ \mu_ {j i} = (\gamma + \epsilon) \kappa_ {j i} + (\gamma - \epsilon) \kappa_ {i j} + \beta \delta_ {i j} \kappa_ {k k} \\ \varepsilon_ {j i} = u _ {i, j} - e _ {k i j} \varphi_ {k}, \quad \kappa_ {j i} = \varphi_ {i, j}, \quad \varphi = \frac {1}{2} \nabla \times \mathbf {u} \quad =: \mathbf {B} _ {1}. \\ \sigma_ {j i, j} + f _ {i} = 0 \\ e _ {i j k} \sigma_ {j k} + \mu_ {j i, j} + c _ {i} = 0 \end{array} \right. \end{array}
 $$
 
 Next, lets us describe the model formulation of nonlinear elasticity associated with the object  $\mathbf{Set}_{\mathrm{NE}}$ . Moreover, since we consider only the finite strain model—also known as the geometrically nonlinear model—the main difference to the linear model will be visible only in the formulation of the deformation (strain) tensor. There exist various possible formulations of deformation tensors, see for example [18] for details. According to the categorical constructions introduced above, the model formulations obtained by these different tensor formulations are convertible. Thus, we will only present one possible model formulation, which is formalised by the following set of equations:
@@ -1643,7 +1643,7 @@ where  $\sigma$  is the stress tensor,  $\mathbf{K} \in \mathbb{R}^3$  is the de
 Thus, the object  $\mathbf{Set}_{\mathrm{NE}}$  is formalised via a formalisation functor  $S$  into the following model formulation, denoted by  $\mathbf{C}_1$ :
 
 $$
-\mathbf {S e t} _ {\mathrm {N E}} \quad \stackrel {{S}} {{\mapsto}} \quad \left\{ \begin{array}{l} \boldsymbol {\sigma} = \lambda \mathbf {I} + 2 \mu \mathbf {C} \\ \mathbf {C} = \mathbf {F} ^ {T} \mathbf {F} \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {K} = 0 \end{array} \right. =: \mathbf {C} _ {1}.
+\mathbf {S e t} _ {\mathrm {N E}} \quad \stackrel {{S}} {{\mapsto}} \quad \leqft\{ \begin{array}{l} \boldsymbol {\sigma} = \lambda \mathbf {I} + 2 \mu \mathbf {C} \\ \mathbf {C} = \mathbf {F} ^ {T} \mathbf {F} \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {K} = 0 \end{array} \right. =: \mathbf {C} _ {1}.
 $$
 
 Finally, let us discuss the model formulation of linear elastic fracture mechanics derived from the set of assumptions  $\mathbf{Set}_{\mathrm{LEF}}$ . In fact, the model formulation of linear elastic fracture mechanics is based on the same equations as the linear elasticity model, with the addition of an extra condition specifying the location of cracks:
@@ -1677,7 +1677,7 @@ where  $\sigma$  is the stress tensor,  $\mathbf{F} \in \mathbb{R}^3$  is the de
 Thus, the object  $\mathbf{Set}_{\mathrm{LEF}}$  is formalised via a formalisation functor  $S$  into the following model formulation, denoted by  $\mathbf{D}_1$ :
 
 $$
-\mathbf {S e t} _ {\mathrm {L E F}} \quad \stackrel {{S}} {{\mapsto}} \quad \left\{ \begin{array}{l} \sigma_ {i j} = \lambda \delta_ {i j} \varepsilon_ {k k} + 2 \mu \varepsilon_ {i j} \\ \varepsilon = \frac {1}{2} (\nabla \mathbf {u} + \nabla \mathbf {u} ^ {T}) \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {F} = 0 \\ \text {C r a c k s g e o m e t r i c i n f o r m a t i o n} \end{array} \right. =: \mathbf {D} _ {1}.
+\mathbf {S e t} _ {\mathrm {L E F}} \quad \stackrel {{S}} {{\mapsto}} \quad \leqft\{ \begin{array}{l} \sigma_ {i j} = \lambda \delta_ {i j} \varepsilon_ {k k} + 2 \mu \varepsilon_ {i j} \\ \varepsilon = \frac {1}{2} (\nabla \mathbf {u} + \nabla \mathbf {u} ^ {T}) \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {F} = 0 \\ \text {C r a c k s g e o m e t r i c i n f o r m a t i o n} \end{array} \right. =: \mathbf {D} _ {1}.
 $$
 
 It is necessary to make the following remark:
@@ -1730,13 +1730,13 @@ Moreover, let  $\mathbf{Set}_i$  and  $\mathbf{Set}_j$  denote objects of catego
 1. sets of assumptions of coupled mathematical models  $\mathbf{Set}_{i,j}$  are constructed formally as follows:
 
 $$
-\mathbf {S e t} _ {i, j} := \left\langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i j} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {i, j} := \leqft\langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i j} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 where the set  $\mathbf{Set}_{ij}^{\mathrm{Coup}}$  represents the coupling conditions, which are necessary to couple models from  $\mathbf{Model}_i$  with models from  $\mathbf{Model}_j$ . Moreover, the following relations must be satisfied:
 
 $$
-(a) \left(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}\right) \subset \mathbf {S e t} _ {i, j} ^ {\mathrm {U}}; \quad (b) \mathbf {S e t} _ {i, j} ^ {\mathrm {U}} \not \subset \left(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}\right), \tag {3.5}
+(a) \leqft(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}\right) \subset \mathbf {S e t} _ {i, j} ^ {\mathrm {U}}; \quad (b) \mathbf {S e t} _ {i, j} ^ {\mathrm {U}} \not \subset \leqft(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}\right), \tag {3.5}
 $$
 
 where  $\mathbf{Set}_{i,j}^{\mathrm{U}} = \mathbf{Set}_i\cup \mathbf{Set}_j\cup \mathbf{Set}_{ij}^{\mathrm{Coup}}$
@@ -1748,7 +1748,7 @@ Let us discuss assumption 1 from the last definition in more details. As it is s
 It is also important to mention that originally in works [9, 13] the definition of a category of coupled mathematical models has been formulated a bit differently. Particularly, sets of assumptions of coupled mathematical models have been originally constructed as follows:
 
 $$
-\mathbf {S e t} _ {i, j} := \mathbf {T} \left(\mathbf {S e t} _ {i}\right) \cup \mathbf {F} \left(\mathbf {S e t} _ {j}\right),
+\mathbf {S e t} _ {i, j} := \mathbf {T} \leqft(\mathbf {S e t} _ {i}\right) \cup \mathbf {F} \leqft(\mathbf {S e t} _ {j}\right),
 $$
 
 where  $\mathbf{T}$  and  $\mathbf{F}$  are functorial mappings between  $\mathbf{Model}_i$ ,  $\mathbf{Model}_j$  and  $\mathbf{ModCoup}_{i,j}$ , respectively. The idea was to underline the fact that a coupling of models is more than a simple union of these models, and, therefore, during the coupling process sets of assumptions of individual models are modified by functors acting on them. However, from the modelling perspective, the sets of assumptions of individual models are not really modified, but rather extra coupling conditions are added to both sets. Nonetheless, the construction of sets of assumptions of coupled models by using functors does not exclude this situation, because modification of objects  $\mathbf{Set}_i$ ,  $\mathbf{Set}_j$  by functors implies adding something more to the both objects. However, for the sake of clarity, the fact that coupling is more than just a union has been stated explicitly in Definition 3.6 in the construction of objects  $\mathbf{Set}_{i,j}$ .
@@ -1764,13 +1764,13 @@ As a summary of the above discussion, we can now elaborate how coupled model are
 Proposition 3.2 Let  $\mathbf{Model}_i$  and  $\mathbf{Model}_j$  with  $i \neq j$  be two categories of mathematical models, and let  $\mathbf{Set}_i$  and  $\mathbf{Set}_j$  denote objects of categories  $\mathbf{Model}_i$  and  $\mathbf{Model}_j$ , respectively. The coupling of categories  $\mathbf{Model}_i$  and  $\mathbf{Model}_j$  is realised by help of functorial mappings acting on objects  $\mathbf{Set}_i$  and  $\mathbf{Set}_j$  as follows:
 
 $$
-\mathbf {T} \left(\mathbf {S e t} _ {i}\right) = \langle \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i} ^ {\text {C o u p}} \rangle , \quad \mathbf {F} \left(\mathbf {S e t} _ {j}\right) = \langle \mathbf {S e t} _ {j}, \mathbf {S e t} _ {j} ^ {\text {C o u p}} \rangle ,
+\mathbf {T} \leqft(\mathbf {S e t} _ {i}\right) = \langle \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i} ^ {\text {C o u p}} \rangle , \quad \mathbf {F} \leqft(\mathbf {S e t} _ {j}\right) = \langle \mathbf {S e t} _ {j}, \mathbf {S e t} _ {j} ^ {\text {C o u p}} \rangle ,
 $$
 
 and, consequently, the objects  $\mathbf{Set}_{i,j}$  of category  $\mathbf{ModCoup}_{i,j}$  are constructed formally as follows:
 
 $$
-\begin{array}{l} \mathbf {S e t} _ {i, j} := \mathbf {T} \left(\mathbf {S e t} _ {i}\right) \cup \mathbf {F} \left(\mathbf {S e t} _ {j}\right) \\ = \langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {j} ^ {\text {C o u p}} \rangle \\ = \langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i j} ^ {\text {C o u p}} \rangle . \\ \end{array}
+\begin{array}{l} \mathbf {S e t} _ {i, j} := \mathbf {T} \leqft(\mathbf {S e t} _ {i}\right) \cup \mathbf {F} \leqft(\mathbf {S e t} _ {j}\right) \\ = \langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {j} ^ {\text {C o u p}} \rangle \\ = \langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i j} ^ {\text {C o u p}} \rangle . \\ \end{array}
 $$
 
 Then for  $\mathbf{Set}_i^{\mathrm{Coup}}$  and  $\mathbf{Set}_j^{\mathrm{Coup}}$  one of the following statements holds:
@@ -1809,7 +1809,7 @@ Moreover, for all objects of  $\mathbf{ModCoup}_{i,i}$ , denoted by  $\mathbf{Se
 1. sets of assumptions of a coupled mathematical models  $\mathbf{Set}_{i,i}$  are constructed formally as follows:
 
 $$
-\mathbf {S e t} _ {i, i} := \left\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {i, i} := \leqft\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 where the set  $\mathbf{Set}_{ii}^{\mathrm{Coup}} \neq \emptyset$  represents the coupling conditions, which are necessary to couple models from  $\mathbf{Model}_i$ ;
@@ -1825,13 +1825,13 @@ A more detailed discussion on construction of objects  $\mathbf{Set}_{i,i}$  is 
 Corollary 3.3 Let  $\mathbf{Model}_i$  be a category of mathematical models with objects denoted by  $\mathbf{Set}_i$ . The coupling of category  $\mathbf{Model}_i$  with itself is realised by help of functorial mappings acting on objects  $\mathbf{Set}_i$  as follows:
 
 $$
-\mathbf {T} \left(\mathbf {S e t} _ {i}\right) = \left\langle \mathbf {S e t} _ {i}, \mathbf {S e t} _ {\mathbf {T}} ^ {\text {C o u p}} \right\rangle , \quad \mathbf {F} \left(\mathbf {S e t} _ {j}\right) = \left\langle \mathbf {S e t} _ {j}, \mathbf {S e t} _ {\mathbf {F}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {T} \leqft(\mathbf {S e t} _ {i}\right) = \leqft\langle \mathbf {S e t} _ {i}, \mathbf {S e t} _ {\mathbf {T}} ^ {\text {C o u p}} \right\rangle , \quad \mathbf {F} \leqft(\mathbf {S e t} _ {j}\right) = \leqft\langle \mathbf {S e t} _ {j}, \mathbf {S e t} _ {\mathbf {F}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 and, consequently, the objects  $\mathbf{Set}_{i,i}$  of category  $\mathbf{ModCoup}_{i,i}$  are constructed formally as follows:
 
 $$
-\begin{array}{l} \mathbf {S e t} _ {i, i} := \mathbf {T} \left(\mathbf {S e t} _ {i}\right) \cup \mathbf {F} \left(\mathbf {S e t} _ {i}\right) \\ = \left\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {j}, \mathbf {S e t} _ {\mathbf {T}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\mathbf {F}} ^ {\text {C o u p}} \right\rangle \\ = \langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \rangle . \\ \end{array}
+\begin{array}{l} \mathbf {S e t} _ {i, i} := \mathbf {T} \leqft(\mathbf {S e t} _ {i}\right) \cup \mathbf {F} \leqft(\mathbf {S e t} _ {i}\right) \\ = \leqft\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {j}, \mathbf {S e t} _ {\mathbf {T}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\mathbf {F}} ^ {\text {C o u p}} \right\rangle \\ = \langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \rangle . \\ \end{array}
 $$
 
 It is necessary to make the following remark:
@@ -1879,25 +1879,25 @@ Definition 3.9 (Refinement of Base Complexity) Let  $\mathbf{Model}_i$  and  $\m
 - the model A has higher left-base complexity than the model B if and only if
 
 $$
-\pi_ {1} \left(\mathbf {S e t} _ {\mathrm {A}}\right) \subset \pi_ {1} \left(\mathbf {S e t} _ {\mathrm {B}}\right), \text {b u t} \pi_ {1} \left(\mathbf {S e t} _ {\mathrm {A}}\right) \not \subset \pi_ {1} \left(\mathbf {S e t} _ {\mathrm {B}}\right) \text {f o r} i \neq j
+\pi_ {1} \leqft(\mathbf {S e t} _ {\mathrm {A}}\right) \subset \pi_ {1} \leqft(\mathbf {S e t} _ {\mathrm {B}}\right), \text {b u t} \pi_ {1} \leqft(\mathbf {S e t} _ {\mathrm {A}}\right) \not \subset \pi_ {1} \leqft(\mathbf {S e t} _ {\mathrm {B}}\right) \text {f o r} i \neq j
 $$
 
 or
 
 $$
-i _ {1} \left(\mathbf {S e t} _ {\mathrm {A}}\right) \subset i _ {1} \left(\mathbf {S e t} _ {\mathrm {B}}\right), \text {b u t} i _ {1} \left(\mathbf {S e t} _ {\mathrm {A}}\right) \not \subset i _ {1} \left(\mathbf {S e t} _ {\mathrm {B}}\right) \text {f o r} i = j;
+i _ {1} \leqft(\mathbf {S e t} _ {\mathrm {A}}\right) \subset i _ {1} \leqft(\mathbf {S e t} _ {\mathrm {B}}\right), \text {b u t} i _ {1} \leqft(\mathbf {S e t} _ {\mathrm {A}}\right) \not \subset i _ {1} \leqft(\mathbf {S e t} _ {\mathrm {B}}\right) \text {f o r} i = j;
 $$
 
 - the model A has higher right-base complexity than the model B if and only if
 
 $$
-\pi_ {2} \left(\mathbf {S e t} _ {\mathrm {A}}\right) \subset \pi_ {2} \left(\mathbf {S e t} _ {\mathrm {B}}\right), \text {b u t} \pi_ {2} \left(\mathbf {S e t} _ {\mathrm {A}}\right) \not \subset \pi_ {2} \left(\mathbf {S e t} _ {\mathrm {B}}\right) \text {f o r} i \neq j,
+\pi_ {2} \leqft(\mathbf {S e t} _ {\mathrm {A}}\right) \subset \pi_ {2} \leqft(\mathbf {S e t} _ {\mathrm {B}}\right), \text {b u t} \pi_ {2} \leqft(\mathbf {S e t} _ {\mathrm {A}}\right) \not \subset \pi_ {2} \leqft(\mathbf {S e t} _ {\mathrm {B}}\right) \text {f o r} i \neq j,
 $$
 
 or
 
 $$
-i _ {2} \left(\mathbf {S e t} _ {\mathrm {A}}\right) \subset i _ {2} \left(\mathbf {S e t} _ {\mathrm {B}}\right), \text {b u t} i _ {2} \left(\mathbf {S e t} _ {\mathrm {A}}\right) \not \subset i _ {2} \left(\mathbf {S e t} _ {\mathrm {B}}\right) \text {f o r} i = j.
+i _ {2} \leqft(\mathbf {S e t} _ {\mathrm {A}}\right) \subset i _ {2} \leqft(\mathbf {S e t} _ {\mathrm {B}}\right), \text {b u t} i _ {2} \leqft(\mathbf {S e t} _ {\mathrm {A}}\right) \not \subset i _ {2} \leqft(\mathbf {S e t} _ {\mathrm {B}}\right) \text {f o r} i = j.
 $$
 
 The next proposition is a direct consequence of the last definition and our discussion on partially and totally ordered categories in Sect. 3.2:
@@ -2006,7 +2006,7 @@ The next step is to extend the notion of convertible mathematical models introdu
 with
 
 $$
-\vartheta : F \left(\langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i j} ^ {\mathrm {C o u p}} \rangle\right)\rightarrow G \left(\langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i j} ^ {\mathrm {C o u p}} \rangle\right).
+\vartheta : F \leqft(\langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i j} ^ {\mathrm {C o u p}} \rangle\right)\rightarrow G \leqft(\langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j}, \mathbf {S e t} _ {i j} ^ {\mathrm {C o u p}} \rangle\right).
 $$
 
 However, to build on the discussion from the previous subsection, a more detailed analysis of convertible coupled mathematical models is required. Nonetheless, we start with the following definition, which is a direct extension of Definition 3.4:
@@ -2165,7 +2165,7 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {N U H}, \mathrm {R H}} := \left\langle \mathbf {S e t} _ {\mathrm {N U H}} + \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {N U H}, \mathrm {R H}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {N U H}, \mathrm {R H}} := \leqft\langle \mathbf {S e t} _ {\mathrm {N U H}} + \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {N U H}, \mathrm {R H}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
@@ -2177,7 +2177,7 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {R H}, \mathrm {N U H}} := \left\langle \mathbf {S e t} _ {\mathrm {R H}} + \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {R H}, \mathrm {N U H}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {R H}, \mathrm {N U H}} := \leqft\langle \mathbf {S e t} _ {\mathrm {R H}} + \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {R H}, \mathrm {N U H}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
@@ -2224,13 +2224,13 @@ Next, we need to describe the coupling conditions used in the category HeatCoup.
 which are valid for all considered heat conduction models, see [22]. Thus, the set of coupling conditions has the form
 
 $$
-\mathbf {S e t} _ {i, i} ^ {\text {C o u p}} = \left\{ \begin{array}{l} \text {t h e t e m p e r a t u r e f i e l d m u s t b e c o n t i n u o u s ,} \\ \text {t h e h e a t f l u x m u s t b e c o n t i n u o u s} \end{array} \right\},
+\mathbf {S e t} _ {i, i} ^ {\text {C o u p}} = \leqft\{ \begin{array}{l} \text {t h e t e m p e r a t u r e f i e l d m u s t b e c o n t i n u o u s ,} \\ \text {t h e h e a t f l u x m u s t b e c o n t i n u o u s} \end{array} \right\},
 $$
 
 where  $i = \{\mathrm{UH},\mathrm{NUH},\mathrm{RH},\mathrm{NURH}\}$ . Further, the set of coupling conditions is formalised via a functorial mapping  $S$  as follows
 
 $$
-\mathbf {S e t} _ {i, i} ^ {\text {C o u p}} \mapsto^ {S} \left\{ \begin{array}{c} [ \theta ] = 0 \text {o n} \Gamma_ {3} \\ \left[ \lambda \frac {\partial \theta}{\partial n} \right] = 0 \text {o n} \Gamma_ {3} \end{array} \right.
+\mathbf {S e t} _ {i, i} ^ {\text {C o u p}} \mapsto^ {S} \leqft\{ \begin{array}{c} [ \theta ] = 0 \text {o n} \Gamma_ {3} \\ \leqft[ \lambda \frac {\partial \theta}{\partial n} \right] = 0 \text {o n} \Gamma_ {3} \end{array} \right.
 $$
 
 To finish our discussion of this example, let us now list some additional facts about the category HeatCoup:
@@ -2262,7 +2262,7 @@ Let us list these three models given by partial differential equations:
 - Coupled dynamic thermoelasticity model is given by the following system of differential equations:
 
 $$
-\left\{ \begin{array}{c} \mu \Delta \mathbf {u} + (\lambda + \mu) \mathrm {g r a d}   \mathrm {d i v}   \mathbf {u} - (3 \lambda + 2 \mu) \alpha_ {T} \mathrm {g r a d}   \Theta + \mathbf {F} - \rho \ddot {\mathbf {u}} = 0, \\ \Delta \Theta - \frac {1}{a} \dot {\Theta} + \frac {w}{\lambda_ {q}} - \frac {(3 \lambda + 2 \mu) \alpha_ {T} T _ {0}}{\lambda_ {q}} \mathrm {d i v}   \mathbf {u} = 0, \end{array} \right.
+\leqft\{ \begin{array}{c} \mu \Delta \mathbf {u} + (\lambda + \mu) \mathrm {g r a d}   \mathrm {d i v}   \mathbf {u} - (3 \lambda + 2 \mu) \alpha_ {T} \mathrm {g r a d}   \Theta + \mathbf {F} - \rho \ddot {\mathbf {u}} = 0, \\ \Delta \Theta - \frac {1}{a} \dot {\Theta} + \frac {w}{\lambda_ {q}} - \frac {(3 \lambda + 2 \mu) \alpha_ {T} T _ {0}}{\lambda_ {q}} \mathrm {d i v}   \mathbf {u} = 0, \end{array} \right.
 $$
 
 where  $\lambda_q$  is the heat conduction coefficient,  $w$  is the specific power of heat sources,  $\rho$  is the material density,  $a = \frac{\lambda_q}{c_q}$  is the thermal conductivity with  $c_q$  being the heat capacity, and  $\mathbf{F}$  is the vector of body forces.
@@ -2270,7 +2270,7 @@ where  $\lambda_q$  is the heat conduction coefficient,  $w$  is the specific po
 - Coupled quasi-static thermoelasticity model is given by the following system of differential equations:
 
 $$
-\left\{ \begin{array}{l} \mu \Delta \mathbf {u} + (\lambda + \mu) \mathrm {g r a d}   \mathrm {d i v}   \mathbf {u} - (3 \lambda + 2 \mu) \alpha_ {T} \mathrm {g r a d}   \Theta + \mathbf {F} = 0, \\ \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \Delta \Theta - \frac {1}{a} (1 + \varepsilon) \Theta + \frac {w}{\lambda_ {q}} = 0, \end{array} \right.
+\leqft\{ \begin{array}{l} \mu \Delta \mathbf {u} + (\lambda + \mu) \mathrm {g r a d}   \mathrm {d i v}   \mathbf {u} - (3 \lambda + 2 \mu) \alpha_ {T} \mathrm {g r a d}   \Theta + \mathbf {F} = 0, \\ \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \Delta \Theta - \frac {1}{a} (1 + \varepsilon) \Theta + \frac {w}{\lambda_ {q}} = 0, \end{array} \right.
 $$
 
 where
@@ -2284,7 +2284,7 @@ is the coupling coefficient.
 - Dynamic thermoelasticity model is given by the following system of differential equations:
 
 $$
-\left\{ \begin{array}{c} \mu \Delta \mathbf {u} + (\lambda + \mu) \mathrm {g r a d}   \mathrm {d i v}   \mathbf {u} - (3 \lambda + 2 \mu) \alpha_ {T} \mathrm {g r a d}   \Theta + \mathbf {F} - \rho \ddot {\mathbf {u}} = 0, \\ \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \\ \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \q quad \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. \\ & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0. & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0; & \\ 1; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ p; & \\ q; &\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;}&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&&\end{array} \right.
+\leqft\{ \begin{array}{c} \mu \Delta \mathbf {u} + (\lambda + \mu) \mathrm {g r a d}   \mathrm {d i v}   \mathbf {u} - (3 \lambda + 2 \mu) \alpha_ {T} \mathrm {g r a d}   \Theta + \mathbf {F} - \rho \ddot {\mathbf {u}} = 0, \\ \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \\ \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \q quad \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. \\ & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0. & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0, & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0. & \\ 0; & \\ 1; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ q; & \\ p; & \\ p; & \\ q; &\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;}&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&\\ p;&\\ q;&&\end{array} \right.
 $$
 
 In fact, the difference between these three thermoelasticity models lies in the coupling. In essence, we have just described coupling complexity of thermoelasticity models. To make further constructions clearer, let us now formally consider three objects:  $\mathbf{Set}_{\mathrm{CDT}}^{\mathrm{Coup}}$ ,  $\mathbf{Set}_{\mathrm{CQST}}^{\mathrm{Coup}}$ , and  $\mathbf{Set}_{\mathrm{DT}}^{\mathrm{Coup}}$ . These objects represent the coupling
@@ -2306,11 +2306,11 @@ To demonstrate all objects of the category ThermoElast, we will examine three ob
 - Object SetLE:
 
 $$
-\mathbf {S e t} _ {\text {L E}, \text {U H}} ^ {\text {C D T}} := \left\langle \mathbf {S e t} _ {\text {L E}} \cup \mathbf {S e t} _ {\text {U H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E}, \text {U H}} ^ {\text {C D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E}} \cup \mathbf {S e t} _ {\text {U H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E , U H}} ^ {\text {C Q S T}} := \left(\mathbf {S e t} _ {\text {L E}} \cup \mathbf {S e t} _ {\text {U H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C O u p}}\right)
+\mathbf {S e t} _ {\text {L E , U H}} ^ {\text {C Q S T}} := \leqft(\mathbf {S e t} _ {\text {L E}} \cup \mathbf {S e t} _ {\text {U H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C O u p}}\right)
 $$
 
 $$
@@ -2318,19 +2318,19 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E}, \text {N U H}} ^ {\text {C D T}} := \left\langle \mathbf {S e t} _ {\text {L E}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E}, \text {N U H}} ^ {\text {C D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E , N U H}} ^ {\text {C Q S T}} := \left\langle \mathbf {S e t} _ {\text {L E}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E , N U H}} ^ {\text {C Q S T}} := \leqft\langle \mathbf {S e t} _ {\text {L E}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {L E}, \mathrm {N U H}} ^ {\mathrm {D T}} := \left\langle \mathbf {S e t} _ {\mathrm {L E}} \cup \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {L E}, \mathrm {N U H}} ^ {\mathrm {D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {L E}} \cup \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {L E}, \mathrm {R H}} ^ {\mathrm {C D T}} := \left\langle \mathbf {S e t} _ {\mathrm {L E}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {L E}, \mathrm {R H}} ^ {\mathrm {C D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {L E}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
@@ -2338,7 +2338,7 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {L E}, \mathrm {R H}} ^ {\mathrm {D T}} := \left\langle \mathbf {S e t} _ {\mathrm {L E}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {L E}, \mathrm {R H}} ^ {\mathrm {D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {L E}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
@@ -2350,37 +2350,37 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E , N U R H}} ^ {\mathrm {D T}} := \left\langle \mathbf {S e t} _ {\mathrm {L E}} \cup \mathbf {S e t} _ {\mathrm {N U R H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E , N U R H}} ^ {\mathrm {D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {L E}} \cup \mathbf {S e t} _ {\mathrm {N U R H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 - Object SetME:
 
 $$
-\mathbf {S e t} _ {\mathrm {M E}, \mathrm {U H}} ^ {\mathrm {C D T}} := \left\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {M E}, \mathrm {U H}} ^ {\mathrm {C D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {M E}, \mathrm {U H}} ^ {\mathrm {C Q S T}} := \left\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\mathrm {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {M E}, \mathrm {U H}} ^ {\mathrm {C Q S T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\mathrm {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {M E}, \mathrm {U H}} ^ {\mathrm {D T}} := \left\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {M E}, \mathrm {U H}} ^ {\mathrm {D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {M E}, \mathrm {N U H}} ^ {\mathrm {C D T}} := \left\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {M E}, \mathrm {N U H}} ^ {\mathrm {C D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {M E}, \mathrm {N U H}} ^ {\mathrm {C Q S T}} := \left\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {C Q S T}} ^ {\mathrm {C o u p}} \right.
+\mathbf {S e t} _ {\mathrm {M E}, \mathrm {N U H}} ^ {\mathrm {C Q S T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {C Q S T}} ^ {\mathrm {C o u p}} \right.
 $$
 
 $$
-\mathbf {S e t} _ {\text {M E , N U H}} ^ {\text {D T}} := \left\langle \mathbf {S e t} _ {\text {M E}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {M E , N U H}} ^ {\text {D T}} := \leqft\langle \mathbf {S e t} _ {\text {M E}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {M E}, \mathrm {R H}} ^ {\mathrm {C D T}} := \left\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {M E}, \mathrm {R H}} ^ {\mathrm {C D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
@@ -2388,33 +2388,33 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {M E}, \mathrm {R H}} ^ {\mathrm {D T}} := \left\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {M E}, \mathrm {R H}} ^ {\mathrm {D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {M E , N U R H}} ^ {\text {C D T}} := \left\langle \mathbf {S e t} _ {\text {M E}} \cup \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {M E , N U R H}} ^ {\text {C D T}} := \leqft\langle \mathbf {S e t} _ {\text {M E}} \cup \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {M E , N U R H}} ^ {\text {C Q S T}} := \left\langle \mathbf {S e t} _ {\text {M E}} \cup \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {M E , N U R H}} ^ {\text {C Q S T}} := \leqft\langle \mathbf {S e t} _ {\text {M E}} \cup \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {M E}, \mathrm {N U R H}} ^ {\mathrm {D T}} := \left\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {N U R H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {M E}, \mathrm {N U R H}} ^ {\mathrm {D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {M E}} \cup \mathbf {S e t} _ {\mathrm {N U R H}}, \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 - Object SetLEF:
 
 $$
-\mathbf {S e t} _ {\text {L E F}, \mathrm {U H}} ^ {\text {C D T}} := \left\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E F}, \mathrm {U H}} ^ {\text {C D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E F}, \mathrm {U H}} ^ {\text {C Q S T}} := \left\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E F}, \mathrm {U H}} ^ {\text {C Q S T}} := \leqft\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E F}, \mathrm {U H}} ^ {\text {D T}} := \left\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\text {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E F}, \mathrm {U H}} ^ {\text {D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\text {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
@@ -2422,31 +2422,31 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E F , N U H}} ^ {\text {C Q S T}} := \left\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E F , N U H}} ^ {\text {C Q S T}} := \leqft\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E F , N U H}} ^ {\text {D T}} := \left\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E F , N U H}} ^ {\text {D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E F}, \mathrm {R H}} ^ {\text {C D T}} := \left\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E F}, \mathrm {R H}} ^ {\text {C D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {L E F}, \mathrm {R H}} ^ {\overline {{\mathrm {C Q S T}}}} := \left\langle \mathbf {S e t} _ {\mathrm {L E F}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {L E F}, \mathrm {R H}} ^ {\overline {{\mathrm {C Q S T}}}} := \leqft\langle \mathbf {S e t} _ {\mathrm {L E F}} \cup \mathbf {S e t} _ {\mathrm {R H}}, \mathbf {S e t} _ {\mathrm {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E F}, \text {R H}} ^ {\text {D T}} := \left\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {R H}}, \mathbf {S e t} _ {\text {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E F}, \text {R H}} ^ {\text {D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {R H}}, \mathbf {S e t} _ {\text {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E F}, \text {N U R H}} ^ {\text {C D T}} := \left\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E F}, \text {N U R H}} ^ {\text {C D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E F , N U R H}} ^ {\text {C Q S T}} := \left\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E F , N U R H}} ^ {\text {C Q S T}} := \leqft\langle \mathbf {S e t} _ {\text {L E F}} \cup \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
@@ -2531,13 +2531,13 @@ Further, for all objects of  $\mathbf{ModCoup}_{i,j,k}$ , denoted by  $\mathbf{S
 1. sets of assumptions  $\mathbf{Set}_{i,j,k}$  are constructed formally as follows:
 
 $$
-\mathbf {S e t} _ {i, j, k} := \left\langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j} \cup \mathbf {S e t} _ {k}, \mathbf {S e t} _ {i j} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {i j k} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {i, j, k} := \leqft\langle \mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j} \cup \mathbf {S e t} _ {k}, \mathbf {S e t} _ {i j} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {i j k} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 where the set  $\mathbf{Set}_{ijk}^{\mathrm{Coup}}$  represents the coupling conditions, which are necessary to couple models from  $\mathbf{ModCoup}_{i,j}$  with models from  $\mathbf{Model}_k$ . Moreover, the following relations must be satisfied:
 
 $$
-(a) \left(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j} \cup \mathbf {S e t} _ {k}\right) \subset \mathbf {S e t} _ {i, j, k} ^ {\mathrm {U}}; \quad (b) \mathbf {S e t} _ {i, j, k} ^ {\mathrm {U}} \not \in \left(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j} \cup \mathbf {S e t} _ {k}\right),
+(a) \leqft(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j} \cup \mathbf {S e t} _ {k}\right) \subset \mathbf {S e t} _ {i, j, k} ^ {\mathrm {U}}; \quad (b) \mathbf {S e t} _ {i, j, k} ^ {\mathrm {U}} \not \in \leqft(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {j} \cup \mathbf {S e t} _ {k}\right),
 $$
 
 where  $\mathbf{Set}_{i,j,k}^{\mathrm{U}} = \mathbf{Set}_i\cup \mathbf{Set}_j\cup \mathbf{Set}_k\cup \mathbf{Set}_{ij}^{\mathrm{Coup}}\cup \mathbf{Set}_{ijk}^{\mathrm{Coup}}$
@@ -2571,13 +2571,13 @@ Further, for all objects of  $\mathbf{ModCoup}_{i,i,k}$ , denoted by  $\mathbf{S
 1. sets of assumptions  $\mathbf{Set}_{i,i,k}$  are constructed formally as follows:
 
 $$
-\mathbf {S e t} _ {i, i, k} := \left\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {k}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {i i k} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {i, i, k} := \leqft\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {k}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {i i k} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 where the set  $\mathbf{Set}_{iik}^{\mathrm{Coup}}$  represents the coupling conditions, which are necessary to couple models from  $\mathbf{ModCoup}_{i,i}$  with models from  $\mathbf{Model}_k$ . Moreover, the following relations must be satisfied:
 
 $$
-(a) \left(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {k}\right) \subset \mathbf {S e t} _ {i, i, k} ^ {\mathrm {U}}; \quad (b) \mathbf {S e t} _ {i, i, k} ^ {\mathrm {U}} \not \subset \left(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {k}\right),
+(a) \leqft(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {k}\right) \subset \mathbf {S e t} _ {i, i, k} ^ {\mathrm {U}}; \quad (b) \mathbf {S e t} _ {i, i, k} ^ {\mathrm {U}} \not \subset \leqft(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {k}\right),
 $$
 
 where  $\mathbf{Set}_{i,i,k}^{\mathrm{U}} = \mathbf{Set}_i\cup \mathbf{Set}_k\cup \mathbf{Set}_{ii}^{\mathrm{Coup}}\cup \mathbf{Set}_{iik}^{\mathrm{Coup}}$
@@ -2587,7 +2587,7 @@ where  $\mathbf{Set}_{i,i,k}^{\mathrm{U}} = \mathbf{Set}_i\cup \mathbf{Set}_k\cu
 The case  $i = j \neq k$  creates an interesting "mixture" of product and coproduct categories, which of course comes naturally from the construction. It is also necessary to underline, that if we considered another order of coupling, namely  $i, k, i$  then the category  $\mathbf{ModCoup}_{i,k}$  would be a product category, and the objects of  $\mathbf{ModCoup}_{i,k,i}$  would be of the form
 
 $$
-\mathbf {S e t} _ {i, k, i} := \left\langle \left(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {k}\right) + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i k} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {i k i} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {i, k, i} := \leqft\langle \leqft(\mathbf {S e t} _ {i} \cup \mathbf {S e t} _ {k}\right) + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i k} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {i k i} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 where the set of coupling conditions  $\mathbf{Set}_{iki}^{\mathrm{Coup}}$  is in fact the same as  $\mathbf{Set}_{iik}^{\mathrm{Coup}}$ . Finally, we address the third case:
@@ -2609,7 +2609,7 @@ Moreover, for all objects of  $\mathbf{ModCoup}_{i,i,i}$ , denoted by  $\mathbf{
 1. sets of assumptions of a coupled mathematical models  $\mathbf{Set}_{i,i,i}$  are constructed formally as follows:
 
 $$
-\mathbf {S e t} _ {i, i, i} := \left\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {i, i, i} := \leqft\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 where the set  $\mathbf{Set}_{ii}^{\mathrm{Coup}} \neq \emptyset$  represents the coupling conditions, which are necessary to couple models from  $\mathbf{Model}_i$ ;
@@ -2694,15 +2694,15 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E}, \mathrm {U H}, \mathrm {N U H}} ^ {\text {C D T}} := \left\langle \mathbf {S e t} _ {\text {L E}}, \mathbf {S e t} _ {\mathrm {U H}} + \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {U H}, \mathrm {N U H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E}, \mathrm {U H}, \mathrm {N U H}} ^ {\text {C D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E}}, \mathbf {S e t} _ {\mathrm {U H}} + \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {U H}, \mathrm {N U H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E , U H , N U H}} ^ {\text {C Q S T}} := \left\langle \mathbf {S e t} _ {\text {L E}}, \mathbf {S e t} _ {\text {U H}} + \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {U H , N U H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E , U H , N U H}} ^ {\text {C Q S T}} := \leqft\langle \mathbf {S e t} _ {\text {L E}}, \mathbf {S e t} _ {\text {U H}} + \mathbf {S e t} _ {\text {N U H}}, \mathbf {S e t} _ {\text {U H , N U H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\text {C Q S T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {L E}, \mathrm {U H}, \mathrm {N U H}} ^ {\mathrm {D T}} := \left\langle \mathbf {S e t} _ {\mathrm {L E}}, \mathbf {S e t} _ {\mathrm {U H}} + \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {U H}, \mathrm {N U H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {L E}, \mathrm {U H}, \mathrm {N U H}} ^ {\mathrm {D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {L E}}, \mathbf {S e t} _ {\mathrm {U H}} + \mathbf {S e t} _ {\mathrm {N U H}}, \mathbf {S e t} _ {\mathrm {U H}, \mathrm {N U H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
@@ -2718,7 +2718,7 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\text {L E}, \text {U H}, \text {N U R H}} ^ {\text {C D T}} := \left\langle \mathbf {S e t} _ {\text {L E}}, \mathbf {S e t} _ {\text {U H}} + \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {U H}, \text {N U R H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\text {L E}, \text {U H}, \text {N U R H}} ^ {\text {C D T}} := \leqft\langle \mathbf {S e t} _ {\text {L E}}, \mathbf {S e t} _ {\text {U H}} + \mathbf {S e t} _ {\text {N U R H}}, \mathbf {S e t} _ {\text {U H}, \text {N U R H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\text {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 $$
@@ -2726,7 +2726,7 @@ $$
 $$
 
 $$
-\mathbf {S e t} _ {\mathrm {L E}, \mathrm {U H}, \mathrm {N U R H}} ^ {\mathrm {D T}} := \left\langle \mathbf {S e t} _ {\mathrm {L E}}, \mathbf {S e t} _ {\mathrm {U H}} + \mathbf {S e t} _ {\mathrm {N U R H}}, \mathbf {S e t} _ {\mathrm {U H}, \mathrm {N U R H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle .
+\mathbf {S e t} _ {\mathrm {L E}, \mathrm {U H}, \mathrm {N U R H}} ^ {\mathrm {D T}} := \leqft\langle \mathbf {S e t} _ {\mathrm {L E}}, \mathbf {S e t} _ {\mathrm {U H}} + \mathbf {S e t} _ {\mathrm {N U R H}}, \mathbf {S e t} _ {\mathrm {U H}, \mathrm {N U R H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\mathrm {D T}} ^ {\text {C o u p}} \right\rangle .
 $$
 
 Continuing this process, we will obtain all possible coupled models. However, if we change the order in which models were coupled, then we would end with the following structure
@@ -2738,7 +2738,7 @@ $$
 but the objects would have the following structure
 
 $$
-\mathbf {S e t} _ {\mathrm {U H}, \mathrm {L E}, \mathrm {U H}} ^ {\mathrm {C D T}} := \left\langle \left(\mathbf {S e t} _ {\mathrm {U H}} \cup \mathbf {S e t} _ {\mathrm {L E}}\right) + \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\mathrm {U H}, \mathrm {U H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
+\mathbf {S e t} _ {\mathrm {U H}, \mathrm {L E}, \mathrm {U H}} ^ {\mathrm {C D T}} := \leqft\langle \leqft(\mathbf {S e t} _ {\mathrm {U H}} \cup \mathbf {S e t} _ {\mathrm {L E}}\right) + \mathbf {S e t} _ {\mathrm {U H}}, \mathbf {S e t} _ {\mathrm {U H}, \mathrm {U H}} ^ {\text {C o u p}} \cup \mathbf {S e t} _ {\mathrm {C D T}} ^ {\text {C o u p}} \right\rangle ,
 $$
 
 where the disjoint union of sets of assumptions is necessary for keeping track that models from the same category are being coupled.
@@ -2762,13 +2762,13 @@ Now we list the functor categories that have already implicitly appeared:
 - Functor categories of formalisation mappings:
 
 $$
-\begin{array}{l} \left(\mathbf {M o d e l} ^ {F}\right) ^ {\mathbf {M o d e l}} = \operatorname {F u n c t} \left(\mathbf {M o d e l}, \mathbf {M o d e l} ^ {F}\right), \\ \left(\mathbf {M o d C o u p} _ {i, j} ^ {F}\right) ^ {\mathbf {M o d C o u p} _ {i, j}} = \operatorname {F u n c t} \left(\mathbf {M o d C o u p} _ {i, j}, \mathbf {M o d C o u p} _ {i, j} ^ {F}\right); \\ \end{array}
+\begin{array}{l} \leqft(\mathbf {M o d e l} ^ {F}\right) ^ {\mathbf {M o d e l}} = \operatorname {F u n c t} \leqft(\mathbf {M o d e l}, \mathbf {M o d e l} ^ {F}\right), \\ \leqft(\mathbf {M o d C o u p} _ {i, j} ^ {F}\right) ^ {\mathbf {M o d C o u p} _ {i, j}} = \operatorname {F u n c t} \leqft(\mathbf {M o d C o u p} _ {i, j}, \mathbf {M o d C o u p} _ {i, j} ^ {F}\right); \\ \end{array}
 $$
 
 - Functor categories related to coupled models:
 
 $$
-\begin{array}{l} \left(\mathbf {M o d C o u p} _ {i, j}\right) ^ {\mathbf {M o d e l} _ {i}} = \operatorname {F u n c t} \left(\mathbf {M o d e l} _ {i}, \mathbf {M o d C o u p} _ {i, j}\right), \\ \left(\mathbf {M o d C o u p} _ {i, j}\right) ^ {\mathbf {M o d e l} _ {j}} = \operatorname {F u n c t} \left(\mathbf {M o d e l} _ {j}, \mathbf {M o d C o u p} _ {i, j}\right). \\ \end{array}
+\begin{array}{l} \leqft(\mathbf {M o d C o u p} _ {i, j}\right) ^ {\mathbf {M o d e l} _ {i}} = \operatorname {F u n c t} \leqft(\mathbf {M o d e l} _ {i}, \mathbf {M o d C o u p} _ {i, j}\right), \\ \leqft(\mathbf {M o d C o u p} _ {i, j}\right) ^ {\mathbf {M o d e l} _ {j}} = \operatorname {F u n c t} \leqft(\mathbf {M o d e l} _ {j}, \mathbf {M o d C o u p} _ {i, j}\right). \\ \end{array}
 $$
 
 # 3.4.2 Comma Categories
@@ -3059,7 +3059,7 @@ According to [15], model robustness focuses on analysing the response of a model
 Definition 4.10 Let  $X, Y, Z$  be Banach spaces, and  $A: X \to Y$  and  $R: X \to Z$  are operators, then the problem
 
 $$
-\left\{ \begin{array}{l} A u = f \text {i n} \Omega , \\ R u = g \text {i n} \partial \Omega , \end{array} \right.
+\leqft\{ \begin{array}{l} A u = f \text {i n} \Omega , \\ R u = g \text {i n} \partial \Omega , \end{array} \right.
 $$
 
 is called robust, if the problem is stable and if for all  $\varepsilon > 0$  and for all  $f$  and  $g$  a  $\delta > 0$  exists such that
@@ -3156,7 +3156,7 @@ This example illustrates the trivial case, when we are interested in a physical 
 Let us now consider a more interesting case by addressing the following set of assumptions:
 
 $$
-\mathbf {S e t} _ {\mathrm {R N}} ^ {\prime} = \left\{ \begin{array}{l} \text {B o d y i s m a d e o f a n o n - h o m o g e n e o u s m a t e r i a l} \\ \text {T h e r e i s a r a d i a t i v e h e a t e x c h a n g e w i t h t h e s u r r o u n d i n g s} \end{array} \right\}.
+\mathbf {S e t} _ {\mathrm {R N}} ^ {\prime} = \leqft\{ \begin{array}{l} \text {B o d y i s m a d e o f a n o n - h o m o g e n e o u s m a t e r i a l} \\ \text {T h e r e i s a r a d i a t i v e h e a t e x c h a n g e w i t h t h e s u r r o u n d i n g s} \end{array} \right\}.
 $$
 
 In this case, only object SetNURH is complete with respect to  $\mathbf{Set}_{\mathrm{RN}}^{\prime}$ , implying that this object simultaneously minimally and maximal object of this category. Thus, no model reduction is possible in this case, and we have to work with the terminal object of the category.
@@ -3183,7 +3183,7 @@ Definition 4.17 (Relative Comparison of Models) Let  $\mathbf{Set}_{\mathrm{A}}$
 Then objects  $\mathbf{Set}_{\mathrm{A}}$  and  $\mathbf{Set}_{\mathrm{B}}$  are called relatively comparable with respect to object  $\mathbf{Set}_{\mathrm{C}}$ , if and only if one of the following conditions holds
 
 $$
-\left(\mathbf {S e t} _ {\mathrm {A}} \cup \mathbf {S e t} _ {\mathrm {B}}\right) \subseteq \mathbf {S e t} _ {\mathrm {C}} \quad \text {o r} \quad \mathbf {S e t} _ {\mathrm {C}} \subseteq \left(\mathbf {S e t} _ {\mathrm {A}} \cup \mathbf {S e t} _ {\mathrm {B}}\right),
+\leqft(\mathbf {S e t} _ {\mathrm {A}} \cup \mathbf {S e t} _ {\mathrm {B}}\right) \subseteq \mathbf {S e t} _ {\mathrm {C}} \quad \text {o r} \quad \mathbf {S e t} _ {\mathrm {C}} \subseteq \leqft(\mathbf {S e t} _ {\mathrm {A}} \cup \mathbf {S e t} _ {\mathrm {B}}\right),
 $$
 
 respectively. Similarly, the corresponding (coupled) mathematical models are called relatively comparable.
@@ -3214,7 +3214,7 @@ The goal of this section is to illustrate how the category theory-based modellin
 The problem of fluid-structure interaction in the context of the bridge aerodynamics consists of modelling a deformable structure (bridge deck) under the influence of wind forces, see Fig. 4.4. To account for the motion of a structure, we consider a liner structural model S, which is given by the following model formulation:
 
 $$
-S := \left\{ \begin{array}{l} m _ {h} \ddot {h} + c _ {h} \dot {h} + k _ {h} h = L, \\ m _ {\alpha} \ddot {\alpha} + c _ {\alpha} \dot {\alpha} + k _ {\alpha} \alpha = M, \end{array} \right. \tag {4.1}
+S := \leqft\{ \begin{array}{l} m _ {h} \ddot {h} + c _ {h} \dot {h} + k _ {h} h = L, \\ m _ {\alpha} \ddot {\alpha} + c _ {\alpha} \dot {\alpha} + k _ {\alpha} \alpha = M, \end{array} \right. \tag {4.1}
 $$
 
 ![](images/5c6c525debaf282dd56e21bd4e125c9b3ddac9fcc45a4582a118fc0f18134370.jpg)  
@@ -3227,7 +3227,7 @@ Let us now list the model formulations of eleven semi-analytical aerodynamic mod
 1. Steady model:
 
 $$
-\mathrm {S T} := \left\{ \begin{array}{l l} L = F _ {L} \cos \phi - F _ {D} \sin \phi , F _ {D} = \frac {1}{2} \rho U _ {r} ^ {2} B C _ {D} (\alpha_ {e}), \\ F _ {L} = - \frac {1}{2} \rho U _ {r} ^ {2} B C _ {L} (\alpha_ {e}), & M = \frac {1}{2} \rho U _ {r} ^ {2} B ^ {2} C _ {M} (\alpha_ {e}), \\ \alpha_ {e} = \alpha_ {s} + \phi , & \phi = \arctan \left(\frac {w}{U + u}\right), \\ U _ {r} = \sqrt {(U + u) ^ {2} + w ^ {2}}, \end{array} \right.
+\mathrm {S T} := \leqft\{ \begin{array}{l l} L = F _ {L} \cos \phi - F _ {D} \sin \phi , F _ {D} = \frac {1}{2} \rho U _ {r} ^ {2} B C _ {D} (\alpha_ {e}), \\ F _ {L} = - \frac {1}{2} \rho U _ {r} ^ {2} B C _ {L} (\alpha_ {e}), & M = \frac {1}{2} \rho U _ {r} ^ {2} B ^ {2} C _ {M} (\alpha_ {e}), \\ \alpha_ {e} = \alpha_ {s} + \phi , & \phi = \arctan \leqft(\frac {w}{U + u}\right), \\ U _ {r} = \sqrt {(U + u) ^ {2} + w ^ {2}}, \end{array} \right.
 $$
 
 where  $U_{r}$  is the resultant wind velocity considering only the wind fluctuations,  $\alpha_{e}$  is the effective angle of attack,  $\phi$  is the dynamic angle of attack, and  $\alpha_{s}$  is the wind angle of attack at equilibrium at equilibrium position. The drag, lift and moment static wind coefficients are denoted as  $C_D$ ,  $C_L$ , and  $C_M$ , respectively.
@@ -3235,7 +3235,7 @@ where  $U_{r}$  is the resultant wind velocity considering only the wind fluctua
 2. Linear steady model:
 
 $$
-\text {L S T} := \left\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \left[ C _ {L} + 2 C _ {L} \frac {u}{U} + (C _ {L} ^ {\prime} + C _ {D}) \frac {w}{U} \right], \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \left[ C _ {M} + 2 C _ {M} \frac {u}{U} + C _ {M} ^ {\prime} \frac {w}{U} \right], \end{array} \right.
+\text {L S T} := \leqft\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \leqft[ C _ {L} + 2 C _ {L} \frac {u}{U} + (C _ {L} ^ {\prime} + C _ {D}) \frac {w}{U} \right], \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \leqft[ C _ {M} + 2 C _ {M} \frac {u}{U} + C _ {M} ^ {\prime} \frac {w}{U} \right], \end{array} \right.
 $$
 
 where  $C_D = C_D(\alpha_s)$ ,  $C_L = C_L(\alpha_s)$ , and  $C_M = C_M(\alpha_s)$  are the static wind coefficients for  $\alpha_s$ .
@@ -3243,7 +3243,7 @@ where  $C_D = C_D(\alpha_s)$ ,  $C_L = C_L(\alpha_s)$ , and  $C_M = C_M(\alpha_s
 3. Quasi-steady model:
 
 $$
-\mathrm {Q S} := \left\{ \begin{array}{l} L = F _ {L} \cos \phi - F _ {D} \sin \phi , \quad F _ {D} = \frac {1}{2} \rho U _ {r} ^ {2} B C _ {D} \left(\alpha_ {e}\right), \\ F _ {L} = - \frac {1}{2} \rho U _ {r} ^ {2} B C _ {L} \left(\alpha_ {e}\right), \quad M = \frac {1}{2} \rho U _ {r} ^ {2} B ^ {2} C _ {M} \left(\alpha_ {e}\right), \\ \alpha_ {e} = \alpha_ {s} + \alpha + \phi , \quad \phi = \arctan \left(\frac {w + \dot {h} + m _ {1} B \dot {\alpha}}{U + u}\right), \\ U _ {r} = \sqrt {(U + u) ^ {2} + (w + \dot {h} + m _ {1} B \dot {\alpha}) ^ {2}}, \end{array} \right. \tag {4.2}
+\mathrm {Q S} := \leqft\{ \begin{array}{l} L = F _ {L} \cos \phi - F _ {D} \sin \phi , \quad F _ {D} = \frac {1}{2} \rho U _ {r} ^ {2} B C _ {D} \leqft(\alpha_ {e}\right), \\ F _ {L} = - \frac {1}{2} \rho U _ {r} ^ {2} B C _ {L} \leqft(\alpha_ {e}\right), \quad M = \frac {1}{2} \rho U _ {r} ^ {2} B ^ {2} C _ {M} \leqft(\alpha_ {e}\right), \\ \alpha_ {e} = \alpha_ {s} + \alpha + \phi , \quad \phi = \arctan \leqft(\frac {w + \dot {h} + m _ {1} B \dot {\alpha}}{U + u}\right), \\ U _ {r} = \sqrt {(U + u) ^ {2} + (w + \dot {h} + m _ {1} B \dot {\alpha}) ^ {2}}, \end{array} \right. \tag {4.2}
 $$
 
 where the  $m_{1}$  coefficient specifies the position of the aerodynamic centre.
@@ -3251,13 +3251,13 @@ where the  $m_{1}$  coefficient specifies the position of the aerodynamic centre
 4. Linear quasi-steady model:
 
 $$
-\mathrm {L Q S} := \left\{ \begin{array}{c} L = - \frac {1}{2} \rho U ^ {2} B \left[ C _ {L} + 2 C _ {L} \frac {u}{U} + \left(C _ {L} ^ {\prime} + C _ {D}\right) \frac {w}{U} \right. \\ \left. + \left(C _ {L} ^ {\prime} + C _ {D}\right) \frac {\dot {h} + m _ {1} B \dot {\alpha}}{U} + C _ {L} ^ {\prime} \alpha \right], \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \left[ C _ {M} + 2 C _ {M} \frac {u}{U} + C _ {M} ^ {\prime} \frac {w}{U} \right. \\ \left. + C _ {M} ^ {\prime} \frac {\dot {h} + m _ {1} B \dot {\alpha}}{U} + C _ {M} ^ {\prime} \alpha \right]. \end{array} \right. \tag {4.3}
+\mathrm {L Q S} := \leqft\{ \begin{array}{c} L = - \frac {1}{2} \rho U ^ {2} B \leqft[ C _ {L} + 2 C _ {L} \frac {u}{U} + \leqft(C _ {L} ^ {\prime} + C _ {D}\right) \frac {w}{U} \right. \\ \leqft. + \leqft(C _ {L} ^ {\prime} + C _ {D}\right) \frac {\dot {h} + m _ {1} B \dot {\alpha}}{U} + C _ {L} ^ {\prime} \alpha \right], \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \leqft[ C _ {M} + 2 C _ {M} \frac {u}{U} + C _ {M} ^ {\prime} \frac {w}{U} \right. \\ \leqft. + C _ {M} ^ {\prime} \frac {\dot {h} + m _ {1} B \dot {\alpha}}{U} + C _ {M} ^ {\prime} \alpha \right]. \end{array} \right. \tag {4.3}
 $$
 
 5. Linear unsteady model:
 
 $$
-\mathrm {L U} := \left\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \left\{C _ {L} + 2 C _ {L} \int_ {0} ^ {t} \Phi_ {L u} (t - \tau) \frac {\dot {u} (\tau)}{U} \mathrm {d} \tau \right. \\ \quad + \left(C _ {L} ^ {\prime} + C _ {D}\right) \int_ {0} ^ {t} \left[ \Phi_ {L w} (t - \tau) \frac {\dot {w} (\tau)}{U} + \Phi_ {L h} (t - \tau) \frac {\ddot {h} (\tau)}{U} \right. \\ \quad + \left. \Phi_ {L \dot {\alpha}} (t - \tau) \frac {B \ddot {\alpha} (\tau)}{U} + \Phi_ {L \alpha} (t - \tau) \dot {\alpha} (\tau) \right] \mathrm {d} \tau \}, \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \left\{C _ {M} + 2 C _ {M} \int_ {0} ^ {t} \Phi_ {M u} (t - \tau) \frac {\dot {u} (\tau)}{U} \mathrm {d} \tau \right. \\ \quad + C _ {M} ^ {\prime} \int_ {0} ^ {t} \left[ \Phi_ {M w} (t - \tau) \frac {\dot {w} (\tau)}{U} + \Phi_ {M h} (t - \tau) \frac {\ddot {h} (\tau)}{U} \right. \\ \quad + \left. \Phi_ {M \dot {\alpha}} (t - \tau) \frac {B \ddot {\alpha} (\tau)}{U} + \Phi_ {M \alpha} (t - \tau) \dot {\alpha} (\tau) \right] \mathrm {d} \tau \}, \end{array} \right. \tag {4.4}
+\mathrm {L U} := \leqft\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \leqft\{C _ {L} + 2 C _ {L} \int_ {0} ^ {t} \Phi_ {L u} (t - \tau) \frac {\dot {u} (\tau)}{U} \mathrm {d} \tau \right. \\ \quad + \leqft(C _ {L} ^ {\prime} + C _ {D}\right) \int_ {0} ^ {t} \leqft[ \Phi_ {L w} (t - \tau) \frac {\dot {w} (\tau)}{U} + \Phi_ {L h} (t - \tau) \frac {\ddot {h} (\tau)}{U} \right. \\ \quad + \leqft. \Phi_ {L \dot {\alpha}} (t - \tau) \frac {B \ddot {\alpha} (\tau)}{U} + \Phi_ {L \alpha} (t - \tau) \dot {\alpha} (\tau) \right] \mathrm {d} \tau \}, \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \leqft\{C _ {M} + 2 C _ {M} \int_ {0} ^ {t} \Phi_ {M u} (t - \tau) \frac {\dot {u} (\tau)}{U} \mathrm {d} \tau \right. \\ \quad + C _ {M} ^ {\prime} \int_ {0} ^ {t} \leqft[ \Phi_ {M w} (t - \tau) \frac {\dot {w} (\tau)}{U} + \Phi_ {M h} (t - \tau) \frac {\ddot {h} (\tau)}{U} \right. \\ \quad + \leqft. \Phi_ {M \dot {\alpha}} (t - \tau) \frac {B \ddot {\alpha} (\tau)}{U} + \Phi_ {M \alpha} (t - \tau) \dot {\alpha} (\tau) \right] \mathrm {d} \tau \}, \end{array} \right. \tag {4.4}
 $$
 
 where  $\Phi_L$ , and  $\Phi_M$  are the lift and moment indicial functions, respectively.
@@ -3265,7 +3265,7 @@ where  $\Phi_L$ , and  $\Phi_M$  are the lift and moment indicial functions, res
 6. Modified quasi-steady model:
 
 $$
-\text {M Q S} := \left\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \left[ C _ {L} + 2 C _ {L} \frac {u}{U} + \left(C _ {L} ^ {\prime} + C _ {D}\right) \frac {w}{U} - h _ {1} \frac {\dot {h}}{U} \right. \\ \left. - h _ {2} \frac {B \dot {\alpha}}{U} - h _ {3} \alpha - h _ {4} \frac {h}{B} \right], \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \left[ C _ {M} + 2 C _ {M} \frac {u}{U} + C _ {M} ^ {\prime} \frac {w}{U} + a _ {1} \frac {\dot {h}}{U} + a _ {2} \frac {B \dot {\alpha}}{U} \right. \\ \left. + a _ {3} \alpha + a _ {4} \frac {h}{B} \right], \end{array} \right. \tag {4.5}
+\text {M Q S} := \leqft\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \leqft[ C _ {L} + 2 C _ {L} \frac {u}{U} + \leqft(C _ {L} ^ {\prime} + C _ {D}\right) \frac {w}{U} - h _ {1} \frac {\dot {h}}{U} \right. \\ \leqft. - h _ {2} \frac {B \dot {\alpha}}{U} - h _ {3} \alpha - h _ {4} \frac {h}{B} \right], \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \leqft[ C _ {M} + 2 C _ {M} \frac {u}{U} + C _ {M} ^ {\prime} \frac {w}{U} + a _ {1} \frac {\dot {h}}{U} + a _ {2} \frac {B \dot {\alpha}}{U} \right. \\ \leqft. + a _ {3} \alpha + a _ {4} \frac {h}{B} \right], \end{array} \right. \tag {4.5}
 $$
 
 where  $h_j = K_c H_j^*(K_c)$ ,  $a_j = K_c A_j^*(K_c)$  for  $j = \{1, 2\}$  and  $h_j = K_c^2 H_j^*(K_c)$ ,  $a_j = K_c^2 A_j^*(K_c)$  for  $j = \{3, 4\}$  are the frequency-independent coefficients taking into account the average fluid memory at a specific reduced frequency of oscillation  $K_c$ .
@@ -3275,13 +3275,13 @@ where  $h_j = K_c H_j^*(K_c)$ ,  $a_j = K_c A_j^*(K_c)$  for  $j = \{1, 2\}$  an
 MBM
 
 $$
-:= \left\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \left\{C _ {L} + \int_ {0} ^ {t} 2 C _ {L} \Phi_ {L u} (t - \tau) \frac {\dot {u} (\tau)}{U} \mathrm {d} \tau \right. \\ \qquad + \left(C _ {L} ^ {\prime} + C _ {D}\right) \int_ {0} ^ {t} \left[ \Phi_ {L w} (t - \tau) \frac {\dot {w} (\tau)}{U} + \Phi_ {L h} (t - \tau) \frac {\ddot {h} (\tau)}{U} \right] \mathrm {d} \tau \}, \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \left\{C _ {M} + \int_ {0} ^ {t} 2 C _ {M} \Phi_ {M u} (t - \tau) \frac {\dot {u} (\tau)}{U} \mathrm {d} \tau \right. \\ \qquad + \int_ {0} ^ {t} C _ {M} ^ {\prime} \left[ \Phi_ {M w} (t - \tau) \frac {\dot {w} (\tau)}{U} + \Phi_ {M \dot {\alpha}} (t - \tau) \frac {B \ddot {\alpha} (\tau)}{U} \right. \\ \qquad + \left. \Phi_ {M \alpha} (t - \tau) \dot {\alpha} (\tau) \right] \mathrm {d} \tau \}. \end{array} \right.
+:= \leqft\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \leqft\{C _ {L} + \int_ {0} ^ {t} 2 C _ {L} \Phi_ {L u} (t - \tau) \frac {\dot {u} (\tau)}{U} \mathrm {d} \tau \right. \\ \qquad + \leqft(C _ {L} ^ {\prime} + C _ {D}\right) \int_ {0} ^ {t} \leqft[ \Phi_ {L w} (t - \tau) \frac {\dot {w} (\tau)}{U} + \Phi_ {L h} (t - \tau) \frac {\ddot {h} (\tau)}{U} \right] \mathrm {d} \tau \}, \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \leqft\{C _ {M} + \int_ {0} ^ {t} 2 C _ {M} \Phi_ {M u} (t - \tau) \frac {\dot {u} (\tau)}{U} \mathrm {d} \tau \right. \\ \qquad + \int_ {0} ^ {t} C _ {M} ^ {\prime} \leqft[ \Phi_ {M w} (t - \tau) \frac {\dot {w} (\tau)}{U} + \Phi_ {M \dot {\alpha}} (t - \tau) \frac {B \ddot {\alpha} (\tau)}{U} \right. \\ \qquad + \leqft. \Phi_ {M \alpha} (t - \tau) \dot {\alpha} (\tau) \right] \mathrm {d} \tau \}. \end{array} \right.
 $$
 
 8. Corrected quasi-steady model:
 
 $$
-\mathrm {C Q S} := \left\{ \begin{array}{l} L = F _ {L} \cos \phi - F _ {D} \sin \phi , \quad F _ {D} = \frac {1}{2} \rho U _ {r} ^ {2} B C _ {D} ^ {*} (\alpha_ {e}), \\ F _ {L} = - \frac {1}{2} \rho U _ {r} ^ {2} B C _ {L} ^ {*} (\alpha_ {e}), \quad M = \frac {1}{2} \rho U _ {r} ^ {2} B ^ {2} C _ {M} ^ {*} (\alpha_ {e}), \\ \alpha_ {e} = \alpha_ {s} + \alpha + \phi , \quad \phi = \arctan \left(\frac {w + \dot {h} + m _ {1} B \dot {\alpha}}{U + u}\right), \\ U _ {r} = \sqrt {(U + u) ^ {2} + (w + \dot {h} + m _ {1} B \dot {\alpha}) ^ {2}}, \\ C _ {j} ^ {*} (\alpha_ {e}) = C _ {j} (\alpha_ {s}) + \int_ {\alpha_ {s}} ^ {\alpha_ {e}} K _ {j} ^ {*} (\alpha , \omega_ {c}) C _ {j} ^ {\prime} (\alpha) d \alpha , \end{array} \right. \tag {4.6}
+\mathrm {C Q S} := \leqft\{ \begin{array}{l} L = F _ {L} \cos \phi - F _ {D} \sin \phi , \quad F _ {D} = \frac {1}{2} \rho U _ {r} ^ {2} B C _ {D} ^ {*} (\alpha_ {e}), \\ F _ {L} = - \frac {1}{2} \rho U _ {r} ^ {2} B C _ {L} ^ {*} (\alpha_ {e}), \quad M = \frac {1}{2} \rho U _ {r} ^ {2} B ^ {2} C _ {M} ^ {*} (\alpha_ {e}), \\ \alpha_ {e} = \alpha_ {s} + \alpha + \phi , \quad \phi = \arctan \leqft(\frac {w + \dot {h} + m _ {1} B \dot {\alpha}}{U + u}\right), \\ U _ {r} = \sqrt {(U + u) ^ {2} + (w + \dot {h} + m _ {1} B \dot {\alpha}) ^ {2}}, \\ C _ {j} ^ {*} (\alpha_ {e}) = C _ {j} (\alpha_ {s}) + \int_ {\alpha_ {s}} ^ {\alpha_ {e}} K _ {j} ^ {*} (\alpha , \omega_ {c}) C _ {j} ^ {\prime} (\alpha) d \alpha , \end{array} \right. \tag {4.6}
 $$
 
 for  $j = \{D,L,M\}$
@@ -3289,7 +3289,7 @@ for  $j = \{D,L,M\}$
 9. Hybrid nonlinear model:
 
 $$
-\mathrm {H N L} := \left\{ \begin{array}{l} L = L ^ {Q S} \left(\alpha_ {e} ^ {l}\right) + L ^ {L U} \left(\alpha_ {e} ^ {h}\right) | _ {\alpha_ {e} ^ {l}}, \quad M = M ^ {Q S} \left(\alpha_ {e} ^ {l}\right) + M ^ {L U} \left(\alpha_ {e} ^ {h}\right) | _ {\alpha_ {e} ^ {l}}, \\ \alpha_ {e} = \alpha_ {e} ^ {l} + \alpha_ {e} ^ {h}, \\ \alpha_ {e} ^ {l} = \alpha_ {s} + \alpha^ {l} + \arctan \left(\frac {w ^ {l} + \dot {h} ^ {l} + m _ {1} B \dot {\alpha} ^ {l} + n _ {1} \dot {w} ^ {l}}{U + u ^ {l}}\right), \end{array} \right. \tag {4.7}
+\mathrm {H N L} := \leqft\{ \begin{array}{l} L = L ^ {Q S} \leqft(\alpha_ {e} ^ {l}\right) + L ^ {L U} \leqft(\alpha_ {e} ^ {h}\right) | _ {\alpha_ {e} ^ {l}}, \quad M = M ^ {Q S} \leqft(\alpha_ {e} ^ {l}\right) + M ^ {L U} \leqft(\alpha_ {e} ^ {h}\right) | _ {\alpha_ {e} ^ {l}}, \\ \alpha_ {e} = \alpha_ {e} ^ {l} + \alpha_ {e} ^ {h}, \\ \alpha_ {e} ^ {l} = \alpha_ {s} + \alpha^ {l} + \arctan \leqft(\frac {w ^ {l} + \dot {h} ^ {l} + m _ {1} B \dot {\alpha} ^ {l} + n _ {1} \dot {w} ^ {l}}{U + u ^ {l}}\right), \end{array} \right. \tag {4.7}
 $$
 
 where  $|\alpha_{e}^{l}$  denotes linearisation at  $\alpha_{e}^{l}$ , which includes the small angle hypothesis and disregards higher order terms.
@@ -3297,7 +3297,7 @@ where  $|\alpha_{e}^{l}$  denotes linearisation at  $\alpha_{e}^{l}$ , which inc
 10. Modified nonlinear model:
 
 $$
-\text {M N L} := \left\{ \begin{array}{l} L = - \frac {1}{2} \rho U _ {r} ^ {2} B \left[ C _ {L} ^ {h y s} \left(\alpha_ {e}, \dot {\alpha} _ {e}, \omega_ {c}\right) \cos \phi + C _ {D} ^ {h y s} \left(\alpha_ {e}, \dot {\alpha} _ {e}, \omega_ {c}\right) \sin \phi \right], \\ M = \frac {1}{2} \rho U _ {r} ^ {2} B ^ {2} C _ {M} ^ {h y s} \left(\alpha_ {e}, \dot {\alpha} _ {e}, \omega_ {c}\right), \quad \alpha_ {e} = \alpha_ {s} + \alpha + \phi , \\ \phi = \arctan \left(\frac {w + \dot {h} + m _ {1} B \dot {\alpha}}{U + u}\right), \\ U _ {r} = \sqrt {(U + u) ^ {2} + (w + \dot {h} + m _ {1} B \dot {\alpha}) ^ {2}}, \\ C _ {j} ^ {h y s} = C _ {j} \left(\alpha_ {s}\right) + \sum_ {k, l} ^ {n} \eta_ {j k l} \alpha_ {e} ^ {k} \left(\omega_ {c}\right) \dot {\alpha} _ {e} ^ {l} \left(\omega_ {c}\right), \end{array} \right. \tag {4.8}
+\text {M N L} := \leqft\{ \begin{array}{l} L = - \frac {1}{2} \rho U _ {r} ^ {2} B \leqft[ C _ {L} ^ {h y s} \leqft(\alpha_ {e}, \dot {\alpha} _ {e}, \omega_ {c}\right) \cos \phi + C _ {D} ^ {h y s} \leqft(\alpha_ {e}, \dot {\alpha} _ {e}, \omega_ {c}\right) \sin \phi \right], \\ M = \frac {1}{2} \rho U _ {r} ^ {2} B ^ {2} C _ {M} ^ {h y s} \leqft(\alpha_ {e}, \dot {\alpha} _ {e}, \omega_ {c}\right), \quad \alpha_ {e} = \alpha_ {s} + \alpha + \phi , \\ \phi = \arctan \leqft(\frac {w + \dot {h} + m _ {1} B \dot {\alpha}}{U + u}\right), \\ U _ {r} = \sqrt {(U + u) ^ {2} + (w + \dot {h} + m _ {1} B \dot {\alpha}) ^ {2}}, \\ C _ {j} ^ {h y s} = C _ {j} \leqft(\alpha_ {s}\right) + \sum_ {k, l} ^ {n} \eta_ {j k l} \alpha_ {e} ^ {k} \leqft(\omega_ {c}\right) \dot {\alpha} _ {e} ^ {l} \leqft(\omega_ {c}\right), \end{array} \right. \tag {4.8}
 $$
 
 for  $j = \{D, L, M\}$  and where  $C^{hys} = C^{hys}(\alpha_e, \dot{\alpha}_e, \omega_c)$  is the aerodynamic hysteresis and  $\eta$  is the approximation coefficient.
@@ -3305,7 +3305,7 @@ for  $j = \{D, L, M\}$  and where  $C^{hys} = C^{hys}(\alpha_e, \dot{\alpha}_e, 
 11. Nonlinear unsteady model:
 
 $$
-\mathrm {N L U} := \left\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \left\{\Phi_ {L} ^ {0} + \sum_ {k} \int_ {0} ^ {t} \Phi_ {L k} ^ {\mathrm {I}} (t - \tau) \dot {k} (\tau) \mathrm {d} \tau \right. \\ + \sum_ {k, l} \int_ {0} ^ {t} \int_ {0} ^ {t} \Phi_ {L k l} ^ {\mathrm {I I}} (t - \tau_ {1}, t - \tau_ {2}) \dot {k} (\tau_ {1}) \dot {l} (\tau_ {2}) \mathrm {d} \tau_ {1} \mathrm {d} \tau_ {2} + \dots \Bigg \}, \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \left\{\Phi_ {M} ^ {0} + \sum_ {k} \int_ {0} ^ {t} \Phi_ {M k} ^ {\mathrm {I}} (t - \tau) \dot {k} (\tau) \mathrm {d} \tau \right. \\ + \sum_ {k, l} \int_ {0} ^ {t} \int_ {0} ^ {t} \Phi_ {M k l} ^ {\mathrm {I I}} (t - \tau_ {1}, t - \tau_ {2}) \dot {k} (\tau_ {1}) \dot {l} (\tau_ {2}) \mathrm {d} \tau_ {1} \mathrm {d} \tau_ {2} + \dots \Bigg \}, \end{array} \right. \tag {4.9}
+\mathrm {N L U} := \leqft\{ \begin{array}{l} L = - \frac {1}{2} \rho U ^ {2} B \leqft\{\Phi_ {L} ^ {0} + \sum_ {k} \int_ {0} ^ {t} \Phi_ {L k} ^ {\mathrm {I}} (t - \tau) \dot {k} (\tau) \mathrm {d} \tau \right. \\ + \sum_ {k, l} \int_ {0} ^ {t} \int_ {0} ^ {t} \Phi_ {L k l} ^ {\mathrm {I I}} (t - \tau_ {1}, t - \tau_ {2}) \dot {k} (\tau_ {1}) \dot {l} (\tau_ {2}) \mathrm {d} \tau_ {1} \mathrm {d} \tau_ {2} + \dots \Bigg \}, \\ M = \frac {1}{2} \rho U ^ {2} B ^ {2} \leqft\{\Phi_ {M} ^ {0} + \sum_ {k} \int_ {0} ^ {t} \Phi_ {M k} ^ {\mathrm {I}} (t - \tau) \dot {k} (\tau) \mathrm {d} \tau \right. \\ + \sum_ {k, l} \int_ {0} ^ {t} \int_ {0} ^ {t} \Phi_ {M k l} ^ {\mathrm {I I}} (t - \tau_ {1}, t - \tau_ {2}) \dot {k} (\tau_ {1}) \dot {l} (\tau_ {2}) \mathrm {d} \tau_ {1} \mathrm {d} \tau_ {2} + \dots \Bigg \}, \end{array} \right. \tag {4.9}
 $$
 
 for  $k,l = \{u,w,\dot{h},\alpha ,\dot{\alpha}\}$ , and where  $\Phi^0$ ,  $\Phi^{\mathrm{I}}$ , and  $\Phi^{\mathrm{II}}$  are the zeroth, first and second order indicial functions.
@@ -3376,7 +3376,7 @@ Fig. 4.6 Relative comparative metric based on the root-mean square [12]
 Further, by comparing the LU and LQS models, the effect of linear fluid memory on the SRQ can be analysed. In this case, the object Set $_{\mathrm{LU}}$  has higher complexity than object Set $_{\mathrm{LQS}}$ , and the formalised assumption of interest is
 
 $$
-\mathbf {S e t} _ {\mathrm {L Q S}} \backslash \mathbf {S e t} _ {\mathrm {L U}} = \left\{V _ {r} \rightarrow \infty \right\},
+\mathbf {S e t} _ {\mathrm {L Q S}} \backslash \mathbf {S e t} _ {\mathrm {L U}} = \leqft\{V _ {r} \rightarrow \infty \right\},
 $$
 
 based on  $\mathbf{Set}_{\mathrm{LU}}$ . Figure 4.6 (right) shows the relative comparison metric  $M_{rms}^{\mathrm{LU,LQS}}$ . From the figure, it can be concluded that including the linear fluid memory based on the LU model reduces the response. The difference decreases with increasing wind speeds (thus, increasing  $V_{r}$ ) for the vertical degree of freedom, as the effect of fluid memory should be insignificant at high  $V_{r}$ . However, the difference for the rotation for  $U > 40~\mathrm{m / s}$  increases, which is attributed to the effect of fluid memory on the aerodynamic coupling [14]. In [12], further comparison and analysis of models has been performed, which underline that abstract construction defined at the level of categories can be transferred to concrete engineering applications and numerical calculations.
@@ -3408,7 +3408,7 @@ A categorical formalisation of the formulation and solution procedure mappings r
 Let  $\mathbf{Set}_{ij}^{\mathrm{Coup}}$  denote the set of coupling conditions of a coupled mathematical model. Moreover, to cover the cases of coupling of models from different categories and from the same category, we allow  $i$  to be equal  $j$ . Further, let  $\mathbf{Sol}_{ij}^{\mathrm{Coup}}$  denote the subpart of a general solution procedure, representing the coupling conditions used in the solution procedure. Let us now analyse step-by-step how the coupling conditions  $\mathbf{Set}_{ij}^{\mathrm{Coup}}$  are mapped through the general scheme presented above:
 
 1. First, the coupling conditions  $\mathbf{Set}_{ij}^{\mathrm{Coup}}$  conditions are formalised by a formalisation mapping  $S$ .  
-2. Second, the formalised coupling conditions  $S\left(\mathbf{Set}_{ij}^{\mathrm{Coup}}\right)$  are extended by a formulation mapping  $T$ , which adds boundary and/or initial conditions to a formalised coupled mathematical model. Note, that in practical applications, the mapping  $T$  will often act as identity mapping on  $S\left(\mathbf{Set}_{ij}^{\mathrm{Coup}}\right)$ , because coupling conditions are typically not affected by boundary and/or initial conditions.  
+2. Second, the formalised coupling conditions  $S\leqft(\mathbf{Set}_{ij}^{\mathrm{Coup}}\right)$  are extended by a formulation mapping  $T$ , which adds boundary and/or initial conditions to a formalised coupled mathematical model. Note, that in practical applications, the mapping  $T$  will often act as identity mapping on  $S\leqft(\mathbf{Set}_{ij}^{\mathrm{Coup}}\right)$ , because coupling conditions are typically not affected by boundary and/or initial conditions.  
 3. Third, the object  $\mathbf{Sol}_{ij}^{\mathrm{Coup}}$  is constructed by applying a solution procedure mapping  $P$  to the outcome of step 2. Hence, we have the following representation
 
 $$
@@ -3442,7 +3442,7 @@ The linear elastic fracture mechanics problem can be formulated as a coupled pro
 models, see Sect. 3.2.4.2 for details. Thus, according to Definition 3.7, the objects of this category have the following form
 
 $$
-\mathbf {S e t} _ {i, i} = \left\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \right\rangle .
+\mathbf {S e t} _ {i, i} = \leqft\langle \mathbf {S e t} _ {i} + \mathbf {S e t} _ {i}, \mathbf {S e t} _ {i i} ^ {\text {C o u p}} \right\rangle .
 $$
 
 The structure of these objects clearly indicates that the set of coupling conditions  $\mathbf{Set}_{ii}^{\mathrm{Coup}}$  must be formulated. In the fracture mechanics example, these coupling conditions at the coupling interface require:
@@ -3555,7 +3555,7 @@ As formulated, this definition makes clear the connection between the verificati
 To further elaborate the point of having pathological models, let us recall the category  $\mathbf{Beam}$  containing sets of assumptions of beam theories listed in Table 3.1. In this case, the set  $X$  of all modelling assumptions used in  $\mathbf{Beam}$  is given by:
 
 $$
-X = \left\{ \begin{array}{l} 1. \text {C r o s s s e c t i o n s o f a b e a m t h a t a r e p l a n e s r e m a i n p l a n e s a f t e r} \\ \text {t h e d e f o r m a t i o n p r o c e s s} \\ 2. \text {N o r m a l s t r e s s e s o n p l a n e s p a r a l l e l t o t h e a x i s t o f a b e a m} \\ \text {a r e i n f i n i t e s i m a l} \\ 3. \text {A b e a m h a s a c o n s t a n t c r o s s s e c t i o n} \\ 4. \text {A b e a m i s m a d o f a h o m o g e n e u o u s i s o t r o p i c m a t e r i a l} \\ 5. \text {C r o s s s e c t i o n s o f a b e a m p e r p e n d i c u l a r t o i t s a x i s t a r e m a i n} \\ \text {p e r p e n d i c u l a r t o t h e d e f o r m e d a x i s t} \\ 6. \text {R o t a t i o n i n e r t i a o f c r o s s s e c t i o n s o f a b e a m i s o m i t t e d} \end{array} \right\}
+X = \leqft\{ \begin{array}{l} 1. \text {C r o s s s e c t i o n s o f a b e a m t h a t a r e p l a n e s r e m a i n p l a n e s a f t e r} \\ \text {t h e d e f o r m a t i o n p r o c e s s} \\ 2. \text {N o r m a l s t r e s s e s o n p l a n e s p a r a l l e l t o t h e a x i s t o f a b e a m} \\ \text {a r e i n f i n i t e s i m a l} \\ 3. \text {A b e a m h a s a c o n s t a n t c r o s s s e c t i o n} \\ 4. \text {A b e a m i s m a d o f a h o m o g e n e u o u s i s o t r o p i c m a t e r i a l} \\ 5. \text {C r o s s s e c t i o n s o f a b e a m p e r p e n d i c u l a r t o i t s a x i s t a r e m a i n} \\ \text {p e r p e n d i c u l a r t o t h e d e f o r m e d a x i s t} \\ 6. \text {R o t a t i o n i n e r t i a o f c r o s s s e c t i o n s o f a b e a m i s o m i t t e d} \end{array} \right\}
 $$
 
 Thus,  $\mathcal{P}(X)$  contains 64 elements from which only three, namely
@@ -3616,13 +3616,13 @@ is conceptual and never used explicitly. What is typed explicitly are the equati
 For the convenience of future practical realisation of the language proposed in this section, and to express  $n$ -ary relations on signals, we view a signal carrying elements of a product type
 
 $$
-\mathrm {S} \left(T _ {1} \times T _ {2} \times \dots \times T _ {n}\right)
+\mathrm {S} \leqft(T _ {1} \times T _ {2} \times \dots \times T _ {n}\right)
 $$
 
 as isomorphic to a product of signals
 
 $$
-\left(\mathrm {S} T _ {1}\right) \times \left(\mathrm {S} T _ {2}\right) \times \dots \times \left(\mathrm {S} T _ {n}\right).
+\leqft(\mathrm {S} T _ {1}\right) \times \leqft(\mathrm {S} T _ {2}\right) \times \dots \times \leqft(\mathrm {S} T _ {n}\right).
 $$
 
 It is also important to make the following remark:
@@ -3712,7 +3712,7 @@ where  $\mathbb{N}_{\leq n}$  is the type of natural numbers up to and including
 As divergence and gradient require only first order partial derivatives with respect to the spatial variables, the divergence and gradient can be defined by a recursive application of operator  $D_{i}^{1}$  to a vector-valued signal and via mapping the operator  $D_{i}^{1}$  over a vector filled in by a scalar-valued function, respectively. The types of div and grad are:
 
 $$
-\begin{array}{l} \operatorname {d i v} \because \{n: \text {N a t} \} \rightarrow \operatorname {S R} n \left(\alpha^ {n}, \alpha\right), \tag {5.6} \\ \operatorname {g r a d} \because \{n: \mathrm {N a t} \} \rightarrow \operatorname {S R} n \left(\alpha , \alpha^ {n}\right), \\ \end{array}
+\begin{array}{l} \operatorname {d i v} \because \{n: \text {N a t} \} \rightarrow \operatorname {S R} n \leqft(\alpha^ {n}, \alpha\right), \tag {5.6} \\ \operatorname {g r a d} \because \{n: \mathrm {N a t} \} \rightarrow \operatorname {S R} n \leqft(\alpha , \alpha^ {n}\right), \\ \end{array}
 $$
 
 where  $\alpha$  is a base type and  $\alpha^n$  is an  $n$ -ary vector of  $\alpha$ ; i.e., a product of  $n$ $\alpha$ s. Note that this, again, is a dependent type, and that the number of spatial dimensions, again, is an implicit argument, allowing it to be omitted whenever it is implied by the context, which we exploit in the following.
@@ -3720,7 +3720,7 @@ where  $\alpha$  is a base type and  $\alpha^n$  is an  $n$ -ary vector of  $\al
 The composition of these operators is not commutative:
 
 $$
-\operatorname {d i v} \circ \operatorname {g r a d}: \operatorname {S R} n (\alpha , \alpha), \text {w h i l e g r a d} \circ \operatorname {d i v}: \operatorname {S R} n \left(\alpha^ {n}, \alpha^ {n}\right),
+\operatorname {d i v} \circ \operatorname {g r a d}: \operatorname {S R} n (\alpha , \alpha), \text {w h i l e g r a d} \circ \operatorname {d i v}: \operatorname {S R} n \leqft(\alpha^ {n}, \alpha^ {n}\right),
 $$
 
 where  $\circ$  is relational composition. Moreover,  $\operatorname{div} \circ \operatorname{grad}$  defines the classical Laplace operator, which can be applied to scalar-valued functions or mapped over vector-valued functions.
@@ -3949,7 +3949,7 @@ which is obtained under the formalisation mapping  $S_{1}$  described during con
 - A mathematical model of the Rayleigh beam theory is the triple
 
 $$
-\mathfrak {M} _ {\mathrm {R}} := \left\langle \mathbf {S e t} _ {\mathrm {R}}, \mathcal {B}, S _ {1} \right\rangle ,
+\mathfrak {M} _ {\mathrm {R}} := \leqft\langle \mathbf {S e t} _ {\mathrm {R}}, \mathcal {B}, S _ {1} \right\rangle ,
 $$
 
 where  $\mathbf{Set}_{\mathbb{R}}$  is the set of assumptions listed in Table 3.1,  $\mathcal{B}$  is the following model formulation
@@ -3969,7 +3969,7 @@ $$
 where  $\mathbf{Set}_T$  is the set of assumptions listed in Table 3.1,  $C$  is the following model formulation
 
 $$
-\left\{ \begin{array}{c} \rho F \frac {\partial^ {2} u}{\partial t ^ {2}} - \aleph \mu F \frac {\partial^ {2} u}{\partial x ^ {2}} + \aleph \mu F \frac {\partial \varphi}{\partial x} = 0, \\ \rho I _ {y} \frac {\partial^ {2} \varphi}{\partial t ^ {2}} - E I _ {y} \frac {\partial^ {2} \varphi}{\partial x ^ {2}} + \aleph \mu F \left(\varphi - \frac {\partial u}{\partial x}\right) = 0, \end{array} \right.
+\leqft\{ \begin{array}{c} \rho F \frac {\partial^ {2} u}{\partial t ^ {2}} - \aleph \mu F \frac {\partial^ {2} u}{\partial x ^ {2}} + \aleph \mu F \frac {\partial \varphi}{\partial x} = 0, \\ \rho I _ {y} \frac {\partial^ {2} \varphi}{\partial t ^ {2}} - E I _ {y} \frac {\partial^ {2} \varphi}{\partial x ^ {2}} + \aleph \mu F \leqft(\varphi - \frac {\partial u}{\partial x}\right) = 0, \end{array} \right.
 $$
 
 which is obtained under the formalisation mapping  $S_{1}$  described during construction of the category  $\mathbf{Beam}$ .
@@ -3977,13 +3977,13 @@ which is obtained under the formalisation mapping  $S_{1}$  described during con
 While discussing the category  $\mathbf{Beam}$ , it has been pointed out that there are two possible differential formulations of the Timoshenko beam theory. Within the category theory-based modelling framework, this situation has been resolved through a natural transformation of the formalisation mapping  $S$ . In this more general approach, however, we need to introduce another model for this situation: Another mathematical model of Timoshenko beam theory is the triple
 
 $$
-\mathfrak {M} _ {\mathrm {T}} ^ {'} := \left\langle \mathbf {S e t} _ {\mathrm {T}}, \mathcal {D}, S _ {2} \right\rangle ,
+\mathfrak {M} _ {\mathrm {T}} ^ {'} := \leqft\langle \mathbf {S e t} _ {\mathrm {T}}, \mathcal {D}, S _ {2} \right\rangle ,
 $$
 
 where  $\mathbf{Set}_T$  is the set of assumptions listed in Table 3.1,  $\mathcal{D}$  is the following model formulation
 
 $$
-\rho F \frac {\partial^ {2} u}{\partial t ^ {2}} + E I _ {y} \frac {\partial^ {4} u}{\partial x ^ {4}} - \rho I _ {y} \left(1 + \frac {E}{\aleph \mu}\right) \frac {\partial^ {4} u}{\partial x ^ {2} \partial t ^ {2}} + \frac {\rho^ {2} I _ {y}}{\aleph \mu} \frac {\partial^ {4} u}{\partial t ^ {4}} = 0,
+\rho F \frac {\partial^ {2} u}{\partial t ^ {2}} + E I _ {y} \frac {\partial^ {4} u}{\partial x ^ {4}} - \rho I _ {y} \leqft(1 + \frac {E}{\aleph \mu}\right) \frac {\partial^ {4} u}{\partial x ^ {2} \partial t ^ {2}} + \frac {\rho^ {2} I _ {y}}{\aleph \mu} \frac {\partial^ {4} u}{\partial t ^ {4}} = 0,
 $$
 
 which is obtained under the formalisation mapping  $S_{2}$ . In fact, the only difference of the formalisation mapping  $S_{2}$  to  $S_{1}$  is that, after obtaining a model formulation  $C$ , the system of equations is reduced to a single differential equation. Nonetheless, it is necessary to address these two models separately within this general framework.
@@ -4024,7 +4024,7 @@ $$
 where  $\mathbf{Set}_{\mathrm{LE}}$  is the set of assumptions listed in Table 3.2,  $\mathcal{A}$  is the following model formulation
 
 $$
-\mathbf {S e t} _ {\mathrm {L E}} \stackrel {{S}} {{\mapsto}} \left\{ \begin{array}{l} \sigma_ {i j} = \lambda \delta_ {i j} \varepsilon_ {k k} + 2 \mu \varepsilon_ {i j} \\ \varepsilon = \frac {1}{2} (\nabla \mathbf {u} + \nabla \mathbf {u} ^ {T}) \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {F} = 0 \end{array} \right. =: \mathcal {A}.
+\mathbf {S e t} _ {\mathrm {L E}} \stackrel {{S}} {{\mapsto}} \leqft\{ \begin{array}{l} \sigma_ {i j} = \lambda \delta_ {i j} \varepsilon_ {k k} + 2 \mu \varepsilon_ {i j} \\ \varepsilon = \frac {1}{2} (\nabla \mathbf {u} + \nabla \mathbf {u} ^ {T}) \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {F} = 0 \end{array} \right. =: \mathcal {A}.
 $$
 
 which is obtained under the formalisation mapping  $S_{1}$  described during construction of the category Elast.
@@ -4032,13 +4032,13 @@ which is obtained under the formalisation mapping  $S_{1}$  described during con
 - A mathematical model of the micropolar elasticity is the triple
 
 $$
-\mathfrak {M} _ {\mathrm {M E}} := \left\langle \operatorname {S e t} _ {\mathrm {M E}}, \mathcal {B}, S _ {1} \right\rangle ,
+\mathfrak {M} _ {\mathrm {M E}} := \leqft\langle \operatorname {S e t} _ {\mathrm {M E}}, \mathcal {B}, S _ {1} \right\rangle ,
 $$
 
 where  $\mathbf{Set}_{\mathrm{ME}}$  is the set of assumptions listed in Table 3.2,  $\mathcal{B}$  is the following model formulation
 
 $$
-\begin{array}{r l} \mathbf {S e t} _ {\mathrm {M E}} & \stackrel {{S}} {{\mapsto}} \left\{ \begin{array}{l} \sigma_ {j i} = (\mu + \alpha) \varepsilon_ {j i} + (\mu - \alpha) \varepsilon_ {i j} + \lambda \delta_ {i j} \varepsilon_ {k k} \\ \mu_ {j i} = (\gamma + \epsilon) \kappa_ {j i} + (\gamma - \epsilon) \kappa_ {i j} + \beta \delta_ {i j} \kappa_ {k k} \\ \varepsilon_ {j i} = u _ {i, j} - e _ {k i j} \varphi_ {k}, \quad \kappa_ {j i} = \varphi_ {i, j}, \quad \varphi = \frac {1}{2} \nabla \times \mathbf {u} \quad =: \mathcal {B}. \\ \sigma_ {j i, j} + f _ {i} = 0 \\ e _ {i j k} \sigma_ {j k} + \mu_ {j i, j} + c _ {i} = 0 \end{array} \right. \end{array}
+\begin{array}{r l} \mathbf {S e t} _ {\mathrm {M E}} & \stackrel {{S}} {{\mapsto}} \leqft\{ \begin{array}{l} \sigma_ {j i} = (\mu + \alpha) \varepsilon_ {j i} + (\mu - \alpha) \varepsilon_ {i j} + \lambda \delta_ {i j} \varepsilon_ {k k} \\ \mu_ {j i} = (\gamma + \epsilon) \kappa_ {j i} + (\gamma - \epsilon) \kappa_ {i j} + \beta \delta_ {i j} \kappa_ {k k} \\ \varepsilon_ {j i} = u _ {i, j} - e _ {k i j} \varphi_ {k}, \quad \kappa_ {j i} = \varphi_ {i, j}, \quad \varphi = \frac {1}{2} \nabla \times \mathbf {u} \quad =: \mathcal {B}. \\ \sigma_ {j i, j} + f _ {i} = 0 \\ e _ {i j k} \sigma_ {j k} + \mu_ {j i, j} + c _ {i} = 0 \end{array} \right. \end{array}
 $$
 
 which is obtained under the formalisation mapping  $S_{1}$  described during construction of the category Elast.
@@ -4052,7 +4052,7 @@ $$
 where  $\mathbf{Set}_{\mathrm{NE}}$  is the set of assumptions listed in Table 3.2,  $C$  is the following model formulation
 
 $$
-\mathbf {S e t} _ {\mathrm {N E}} \quad \stackrel {{S}} {{\mapsto}} \quad \left\{ \begin{array}{l} \boldsymbol {\sigma} = \lambda \mathbf {I} + 2 \mu \mathbf {C} \\ \mathbf {C} = \mathbf {F} ^ {T} \mathbf {F} \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {K} = 0 \end{array} \right. =: C.
+\mathbf {S e t} _ {\mathrm {N E}} \quad \stackrel {{S}} {{\mapsto}} \quad \leqft\{ \begin{array}{l} \boldsymbol {\sigma} = \lambda \mathbf {I} + 2 \mu \mathbf {C} \\ \mathbf {C} = \mathbf {F} ^ {T} \mathbf {F} \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {K} = 0 \end{array} \right. =: C.
 $$
 
 which is obtained under the formalisation mapping  $S_{1}$  described during construction of the category Elast.
@@ -4066,7 +4066,7 @@ $$
 where  $\mathbf{Set}_{\mathrm{LEF}}$  is the set of assumptions listed in Table 3.2,  $\mathcal{D}$  is the following model formulation
 
 $$
-\mathbf {S e t} _ {\mathrm {L E F}} \quad \stackrel {{S}} {{\mapsto}} \quad \left\{ \begin{array}{l} \sigma_ {i j} = \lambda \delta_ {i j} \varepsilon_ {k k} + 2 \mu \varepsilon_ {i j} \\ \varepsilon = \frac {1}{2} (\nabla \mathbf {u} + \nabla \mathbf {u} ^ {T}) \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {F} = 0 \\ \text {C r a c k s g e o m e t r i c i n f o r m a t i o n} \end{array} \right. =: \mathcal {D}.
+\mathbf {S e t} _ {\mathrm {L E F}} \quad \stackrel {{S}} {{\mapsto}} \quad \leqft\{ \begin{array}{l} \sigma_ {i j} = \lambda \delta_ {i j} \varepsilon_ {k k} + 2 \mu \varepsilon_ {i j} \\ \varepsilon = \frac {1}{2} (\nabla \mathbf {u} + \nabla \mathbf {u} ^ {T}) \\ \nabla \cdot \boldsymbol {\sigma} + \rho \mathbf {F} = 0 \\ \text {C r a c k s g e o m e t r i c i n f o r m a t i o n} \end{array} \right. =: \mathcal {D}.
 $$
 
 which is obtained under the formalisation mapping  $S_{1}$  described during construction of the category Elast.
@@ -4106,7 +4106,7 @@ With this definition, instead of imposing a strict structure in terms of categor
 To illustrate how the approach based on Definition 5.4 can be used in practice, let us consider the following collection of mathematical models:
 
 $$
-\mathfrak {M} _ {\mathfrak {C}} = \left\langle \left(\mathfrak {M} _ {\mathrm {B - E}}, \mathfrak {M} _ {\mathrm {R}}, \mathfrak {M} _ {\mathrm {T}}, \mathfrak {M} _ {\mathrm {T}} ^ {'}, \mathfrak {M} _ {\mathrm {L E}}, \mathfrak {M} _ {\mathrm {M E}}, \mathfrak {M} _ {\mathrm {N E}}, \mathfrak {M} _ {\mathrm {L E F}}\right), (R _ {1}, R _ {2}) \right\rangle ,
+\mathfrak {M} _ {\mathfrak {C}} = \leqft\langle \leqft(\mathfrak {M} _ {\mathrm {B - E}}, \mathfrak {M} _ {\mathrm {R}}, \mathfrak {M} _ {\mathrm {T}}, \mathfrak {M} _ {\mathrm {T}} ^ {'}, \mathfrak {M} _ {\mathrm {L E}}, \mathfrak {M} _ {\mathrm {M E}}, \mathfrak {M} _ {\mathrm {N E}}, \mathfrak {M} _ {\mathrm {L E F}}\right), (R _ {1}, R _ {2}) \right\rangle ,
 $$
 
 where we have listed all the models discussed in the previous subsection. The goal is now to establish a lattice of mathematical models, where the expansion operation implies satisfaction of at least one of the relations from the couple  $(R_1, R_2)$ , where
@@ -4135,7 +4135,7 @@ For illustrative purposes, we will now consider three models of thermoelasticity
 the category theory-based approach. Therefore, we will consider the following collection of mathematical models:
 
 $$
-\mathfrak {M} _ {\mathfrak {C}} ^ {\mathrm {T h e r E l}} = \left\langle \left(\mathfrak {M} _ {\mathrm {U N}}, \mathfrak {M} _ {\mathrm {L E}}, \mathfrak {M} _ {\mathrm {L E , U N}} ^ {\mathrm {C D T}}, \mathfrak {M} _ {\mathrm {L E , U N}} ^ {\mathrm {C Q S T}}, \mathfrak {M} _ {\mathrm {L E , U N}} ^ {\mathrm {D T}}\right), (R _ {1}, R _ {2}) \right\rangle ,
+\mathfrak {M} _ {\mathfrak {C}} ^ {\mathrm {T h e r E l}} = \leqft\langle \leqft(\mathfrak {M} _ {\mathrm {U N}}, \mathfrak {M} _ {\mathrm {L E}}, \mathfrak {M} _ {\mathrm {L E , U N}} ^ {\mathrm {C D T}}, \mathfrak {M} _ {\mathrm {L E , U N}} ^ {\mathrm {C Q S T}}, \mathfrak {M} _ {\mathrm {L E , U N}} ^ {\mathrm {D T}}\right), (R _ {1}, R _ {2}) \right\rangle ,
 $$
 
 where  $\mathfrak{M}_{\mathrm{UN}}$  is the model of heat conduction in the case of a uniform material,  $\mathfrak{M}_{\mathrm{LE}}$  is the model of linear elasticity,  $\mathfrak{M}_{\mathrm{LE, UN}}^{\mathrm{CDT}}$  is the model of coupled dynamic thermoelasticity,  $\mathfrak{M}_{\mathrm{LE, UN}}^{\mathrm{COST}}$  is the model of coupled quasi-static thermoelasticity,  $\mathfrak{M}_{\mathrm{LE, UN}}^{\mathrm{DT}}$  is the model of dynamic thermoelasticity, see the discussions around categories Heat, Elast, and ThermoElast for details about the corresponding sets of assumptions and model formulations. For the couple of relations  $(R_1, R_2)$ , we consider the following concrete cases:
@@ -4157,7 +4157,7 @@ The case of coupling mathematical models that describe the same physical phenome
 For illustrative purposes, let us consider only two heat conduction models: the model of heat conduction in the case of a uniform material, denoted by  $\mathfrak{M}_{\mathrm{UN}}$ , and the model of heat conduction in the case of a radiative heat exchange with the surroundings, denoted by  $\mathfrak{M}_{\mathrm{RH}}$ . For details on the models and their assumptions, we refer to the discussion on the category HeatCoup in Sect. 3.3.4.1. To represent the coupling of these models with each other, the following collection of mathematical models needs to be considered:
 
 $$
-\mathfrak {M} _ {\mathfrak {C}} ^ {\text {H e a t}} = \left\langle \left(\mathfrak {M} _ {\text {U N}}, \mathfrak {M} _ {\text {R H}}, \mathfrak {M} _ {\text {U N , U N}}, \mathfrak {M} _ {\text {U N , R H}}, \mathfrak {M} _ {\text {R H , U N}}, \mathfrak {M} _ {\text {R H , R H}}\right), (R _ {1}, R _ {2}) \right\rangle ,
+\mathfrak {M} _ {\mathfrak {C}} ^ {\text {H e a t}} = \leqft\langle \leqft(\mathfrak {M} _ {\text {U N}}, \mathfrak {M} _ {\text {R H}}, \mathfrak {M} _ {\text {U N , U N}}, \mathfrak {M} _ {\text {U N , R H}}, \mathfrak {M} _ {\text {R H , U N}}, \mathfrak {M} _ {\text {R H , R H}}\right), (R _ {1}, R _ {2}) \right\rangle ,
 $$
 
 where the relation  $R_{1}$  is true then a model is part of a coupled model in subdomain  $\Omega_{1}$ , and the relation  $R_{2}$  is true when a model is part of a coupled model in subdomain  $\Omega_{2}$ . Note that these relations reflect the idea of the co-product structure, which has been introduced for coupling of mathematical models from the same category in Definition 3.7.
@@ -4205,7 +4205,7 @@ where the relations  $R_{1}, R_{2}, \ldots, R_{m}$  are defined by the base stat
 
 Definition 5.7 A sensor network is the object  $S_{\mathcal{N}} = \langle \mathfrak{S}_{\mathfrak{N}},\Re \rangle$  , where
 
--  $\mathfrak{S}_{\mathfrak{R}} = \left(S_C^1, S_C^2, \ldots, S_C^n\right)$  is an  $n$ -tuple of sensor clusters, introduced in Definition 5.6;
+-  $\mathfrak{S}_{\mathfrak{R}} = \leqft(S_C^1, S_C^2, \ldots, S_C^n\right)$  is an  $n$ -tuple of sensor clusters, introduced in Definition 5.6;
 
 -  $\Re = (R_1, R_2, \ldots, R_k)$  is an  $k$ -tuple of relations.
 

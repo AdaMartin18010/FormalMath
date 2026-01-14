@@ -244,10 +244,10 @@ Grothendieck Topos E
    $$\text{Topos逻辑是直觉主义的，强调构造性}$$
 
 6. **排中律失效**：
-   $$P \lor \neqqqg P \neqqqq \text{true} \text{（在一般Topos中）}$$
+   $$P \lor \neqqqqqg P \neqqqqqq \text{true} \text{（在一般Topos中）}$$
 
 7. **双重否定律**：
-   $$\neqqqg \neqqqg P \neqqqq P \text{（在一般Topos中）}$$
+   $$\neqqqqqg \neqqqqqg P \neqqqqqq P \text{（在一般Topos中）}$$
 
 8. **构造性与几何**：
    $$\text{构造性逻辑对应几何直觉}$$

@@ -8,36 +8,36 @@ concept:
     zh: "特征值"
     en: "Eigenvalue"
   msc_codes: ["15A18"]
-  
+
   # ===== 定义层 =====
   definition:
     formal: |
       设 V 是域 F 上的向量空间，T: V → V 是线性算子。
-      
+
       λ ∈ F 是 T 的特征值，若存在 v ≠ 0 使得：
       T(v) = λv
-      
+
       此时 v 称为对应于 λ 的特征向量。
-      
+
       特征空间：E_λ = ker(T - λI) = {v : Tv = λv}
       特征多项式：p_T(λ) = det(T - λI)
-      
+
     informal: |
       特征向量是被线性变换"只拉伸不旋转"的向量。
       特征值是拉伸的倍数。
-      
+
       想象弹簧系统：
       - 特征向量是振动的"模态"
       - 特征值是频率的平方
-      
+
     lean: |
       -- 特征值定义
       def Module.End.HasEigenvalue (f : Module.End R M) (a : R) : Prop :=
         f.eigenspace a ≠ ⊥
-        
+
       def Module.End.eigenspace (f : Module.End R M) (a : R) : Submodule R M :=
         (f - algebraMap R _ a).ker
-        
+
   # ===== 直觉层 =====
   intuition:
     geometric: |
@@ -46,42 +46,42 @@ concept:
       - λ > 1: 拉伸
       - 0 < λ < 1: 压缩
       - λ < 0: 反向
-      
+
     algebraic: |
       【代数直觉】矩阵分解
       - 找到使矩阵"简单化"的基
       - 对角化 = 完全分解
       - 特征多项式决定特征值
-      
+
   # ===== 例子层 =====
   examples:
     - name: "旋转矩阵 R_θ"
       eigenvalues: "e^{±iθ}（复数）"
       note: "θ ≠ 0, π 时无实特征值"
-      
+
     - name: "投影矩阵"
       eigenvalues: "0 和 1"
       geometric: "投影到某子空间"
-      
+
     - name: "对称矩阵"
       eigenvalues: "全为实数"
       theorem: "谱定理"
-      
+
     - name: "幂零矩阵"
       eigenvalues: "只有0"
       example: "[[0,1],[0,0]]"
-      
+
   # ===== 定理层 =====
   key_theorems:
     - id: "spectral-theorem"
       statement: "对称矩阵可正交对角化"
-      
+
     - id: "cayley-hamilton"
       statement: "矩阵满足自己的特征多项式"
-      
+
     - id: "jordan-normal-form"
       statement: "复矩阵的标准形"
-      
+
   # ===== 关系层 =====
   relations:
     requires:
@@ -91,7 +91,7 @@ concept:
         description: "特征多项式"
       - id: "polynomial"
         description: "代数方程"
-        
+
     related_to:
       - id: "spectral-theorem"
         description: "谱定理"
@@ -99,7 +99,7 @@ concept:
         description: "Jordan标准形"
       - id: "singular-value"
         description: "奇异值（非方阵）"
-        
+
   # ===== 元数据层 =====
   metadata:
     difficulty: 2

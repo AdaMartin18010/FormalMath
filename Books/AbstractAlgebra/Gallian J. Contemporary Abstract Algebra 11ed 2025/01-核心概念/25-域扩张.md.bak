@@ -1,0 +1,247 @@
+# 域扩张 (Field Extension)
+
+**创建日期**: 2025年12月11日
+**来源**: Gallian J. Contemporary Abstract Algebra 11ed 2025, Chapter 19
+**主题编号**: AA.GALLIAN.19.01
+
+---
+
+## 📑 目录
+
+- [域扩张 (Field Extension)](#域扩张-field-extension)
+  - [📑 目录](#-目录)
+  - [一、定义与基本概念](#一定义与基本概念)
+    - [1.1 域扩张的定义](#11-域扩张的定义)
+    - [1.2 记号](#12-记号)
+    - [1.3 基本例子](#13-基本例子)
+  - [二、域理论基本定理 (定理 19.1)](#二域理论基本定理-定理-191)
+    - [2.1 定理内容（Kronecker 定理）](#21-定理内容kronecker-定理)
+    - [2.2 证明思路](#22-证明思路)
+    - [2.3 构造方法](#23-构造方法)
+  - [三、分裂域 (Splitting Field)](#三分裂域-splitting-field)
+    - [3.1 分裂域的定义](#31-分裂域的定义)
+    - [3.2 分裂域的存在性 (定理 19.2)](#32-分裂域的存在性-定理-192)
+    - [3.3 分裂域的例子](#33-分裂域的例子)
+  - [四、$F(a)$ 与 $F\[x\]/\\langle p(x)\\rangle$ 的关系 (定理 19.3)](#四fa-与-fxlangle-pxrangle-的关系-定理-193)
+    - [4.1 定理内容](#41-定理内容)
+    - [4.2 证明思路](#42-证明思路)
+    - [4.3 基的构造](#43-基的构造)
+  - [五、分裂域的唯一性 (定理 19.4)](#五分裂域的唯一性-定理-194)
+    - [5.1 定理内容](#51-定理内容)
+    - [5.2 推论：分裂域在同构意义下唯一](#52-推论分裂域在同构意义下唯一)
+  - [六、例子与应用](#六例子与应用)
+    - [6.1 构造复数域](#61-构造复数域)
+    - [6.2 有限域的例子](#62-有限域的例子)
+    - [6.3 高次多项式的分裂域](#63-高次多项式的分裂域)
+  - [七、数学意义与应用](#七数学意义与应用)
+    - [7.1 代数的基础](#71-代数的基础)
+    - [7.2 数论中的应用](#72-数论中的应用)
+    - [7.3 几何中的应用](#73-几何中的应用)
+  - [八、学习要点与难点](#八学习要点与难点)
+    - [8.1 理解构造方法](#81-理解构造方法)
+    - [8.2 掌握分裂域的概念](#82-掌握分裂域的概念)
+    - [8.3 理解唯一性](#83-理解唯一性)
+
+---
+
+## 一、定义与基本概念
+
+### 1.1 域扩张的定义
+
+**定义**: 域 $E$ 是域 $F$ 的**扩张域 (Extension Field)**，如果 $F \subseteq E$ 且 $F$ 的运算是 $E$ 的运算限制到 $F$。
+
+- *Gallian原文*: "Definition Extension Field" (Chapter 19)
+
+换句话说，如果 $E$ 是域且 $F$ 是 $E$ 的子域，则 $E$ 是 $F$ 的扩张域。
+
+### 1.2 记号
+
+设 $F$ 是域，$a_1, a_2, \ldots, a_n$ 是域 $F$ 的某个扩张 $E$ 的元素。我们使用 $F(a_1, a_2, \ldots, a_n)$ 表示包含 $F$ 和集合 $\{a_1, a_2, \ldots, a_n\}$ 的 $E$ 的最小子域。我们留作练习（练习 37）来证明 $F(a_1, a_2, \ldots, a_n)$ 是包含 $F$ 和集合 $\{a_1, a_2, \ldots, a_n\}$ 的所有 $E$ 的子域的交集。即，如果 $K$ 是任何包含 $F$ 和集合 $\{a_1, a_2, \ldots, a_n\}$ 的域，则 $K$ 包含 $F(a_1, a_2, \ldots, a_n)$。
+
+- *Gallian原文*: "Let $F$ be a field and let $a_1, a_2, \ldots, a_n$ be elements of some extension $E$ of $F$." (Chapter 19)
+
+### 1.3 基本例子
+
+**例子**:
+
+- $\mathbf{R}$ 是 $Q$ 的扩张域
+- $\mathbf{C}$ 是 $\mathbf{R}$ 的扩张域
+- $Q(\sqrt{2}) = \{a + b\sqrt{2} \mid a, b \in Q\}$ 是 $Q$ 的扩张域
+- $Q(i) = \{a + bi \mid a, b \in Q\}$ 是 $Q$ 的扩张域
+
+---
+
+## 二、域理论基本定理 (定理 19.1)
+
+### 2.1 定理内容（Kronecker 定理）
+
+**定理 19.1 域理论基本定理（Kronecker 定理，1887）**: 设 $F$ 是域，$f(x)$ 是 $F[x]$ 中的非常数多项式。则存在 $F$ 的扩张域 $E$，使得 $f(x)$ 在 $E$ 中有零点。
+
+- *Gallian原文*: "Theorem 19.1 Fundamental Theorem of Field Theory (Kronecker's Theorem, 1887)" (Chapter 19)
+
+### 2.2 证明思路
+
+**证明**: 由于 $F[x]$ 是唯一分解整环，$f(x)$ 有不可约因子，比如 $p(x)$。显然，构造 $F$ 的扩张域 $E$，使得 $p(x)$ 在 $E$ 中有零点就足够了。我们的候选是 $E = F[x] / \langle p(x) \rangle$。我们已经知道根据定理 17.5 的推论 1，这是一个域。此外，由于从 $F$ 到 $E$ 的映射 $\phi \colon F \to E$，由 $\phi(a) = a + \langle p(x) \rangle$ 给出，是单射且保持两种运算，$E$ 有与 $F$ 同构的子域。我们可以认为 $E$ 包含 $F$，如果我们简单地将陪集 $a + \langle p(x) \rangle$ 与其唯一的属于 $F$ 的陪集代表元 $a$ 等同（即，将 $a + \langle p(x) \rangle$ 视为 $a$，反之亦然；见第 17 章练习 41）。
+
+最后，要证明 $p(x)$ 在 $E$ 中有零点，写
+$$
+p (x) = a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {0}.
+$$
+则，在 $E$ 中，$x + \langle p(x) \rangle$ 是 $p(x)$ 的零点，因为
+$$
+\begin{array}{l} p (x + \langle p (x) \rangle) = a _ {n} (x + \langle p (x) \rangle) ^ {n} + a _ {n - 1} (x + \langle p (x) \rangle) ^ {n - 1} + \dots + a _ {0} \\ = a _ {n} \left(x ^ {n} + \langle p (x) \rangle\right) + a _ {n - 1} \left(x ^ {n - 1} + \langle p (x) \rangle\right) + \dots + a _ {0} \\ = a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {0} + \langle p (x) \rangle \\ = p (x) + \langle p (x) \rangle = 0 + \langle p (x) \rangle . \\ \end{array}
+$$
+
+### 2.3 构造方法
+
+这个定理提供了一种构造域扩张的方法：对于域 $F$ 上的任何非常数多项式 $f(x)$，我们可以构造 $F$ 的扩张域 $E$，使得 $f(x)$ 在 $E$ 中有零点。构造方法是取 $E = F[x] / \langle p(x) \rangle$，其中 $p(x)$ 是 $f(x)$ 的不可约因子。
+
+---
+
+## 三、分裂域 (Splitting Field)
+
+### 3.1 分裂域的定义
+
+**定义**: 设 $E$ 是域 $F$ 的扩张域，$f(x) \in F[x]$ 的次数至少为 1。我们说 $f(x)$ 在 $E$ 中**分裂 (Splits)**，如果存在 $F$ 中的元素 $a$ 和 $E$ 中的元素 $a_1, a_2, \ldots, a_n$，使得
+$$
+f (x) = a \left(x - a _ {1}\right) \left(x - a _ {2}\right) \dots \left(x - a _ {n}\right).
+$$
+如果 $E = F(a_{1}, a_{2}, \ldots, a_{n})$，我们称 $E$ 是 $f(x)$ 在 $F$ 上的**分裂域 (Splitting Field)**。
+
+- *Gallian原文*: "Definition Splitting Field" (Chapter 19)
+
+注意，多项式在域上的分裂域不仅依赖于多项式，还依赖于域。实际上，$f(x)$ 在 $F$ 上的分裂域只是 $F$ 的最小扩张域，使得 $f(x)$ 在其中分裂。
+
+### 3.2 分裂域的存在性 (定理 19.2)
+
+**定理 19.2**: 设 $F$ 是域，$f(x)$ 是 $F[x]$ 中的非常数元素。则存在 $f(x)$ 在 $F$ 上的分裂域 $E$。
+
+- *Gallian原文*: "Theorem 19.2 Existence of Splitting Fields" (Chapter 19)
+
+**证明**: 我们对 $\deg f(x)$ 进行归纳。如果 $\deg f(x) = 1$，则 $f(x)$ 是线性的。现在假设该陈述对所有域和所有次数小于 $f(x)$ 的多项式都成立。根据定理 19.1，存在 $F$ 的扩张域 $E$，使得 $f(x)$ 在 $E$ 中有零点，比如 $a_1$。则我们可以写 $f(x) = (x - a_1)g(x)$，其中 $g(x) \in E[x]$。由于 $\deg g(x) < \deg f(x)$，根据归纳，存在域 $K$，包含 $E$ 且包含 $g(x)$ 的所有零点，比如 $a_2, \ldots, a_n$。显然，$f(x)$ 在 $F$ 上的分裂域是 $F(a_1, a_2, \ldots, a_n)$。
+
+### 3.3 分裂域的例子
+
+**例子 4**: 考虑多项式 $f(x) = x^{2} + 1 \in Q[x]$。由于 $x^{2} + 1 = (x + \sqrt{-1})(x - \sqrt{-1})$，我们看到 $f(x)$ 在 $\mathbf{C}$ 中分裂，但在 $Q$ 上的分裂域是 $Q(i) = \{r + si \mid r, s \in Q\}$。$x^{2} + 1$ 在 $\mathbf{R}$ 上的分裂域是 $\mathbf{C}$。同样，$x^{2} - 2 \in Q[x]$ 在 $\mathbf{R}$ 中分裂，但在 $Q$ 上的分裂域是 $Q(\sqrt{2}) = \{r + s\sqrt{2} \mid r, s \in Q\}$。
+
+- *Gallian原文*: "EXAMPLE 4" (Chapter 19)
+
+**例子 5**: 考虑
+$$
+f (x) = x ^ {4} - x ^ {2} - 2 = (x ^ {2} - 2) (x ^ {2} + 1)
+$$
+在 $Q$ 上。显然，$f(x)$ 在 $\mathbf{C}$ 中的零点是 $\pm \sqrt{2}$ 和 $\pm i$。所以 $f(x)$ 在 $Q$ 上的分裂域是
+$$
+\begin{array}{l} Q (\sqrt {2}, i) = Q (\sqrt {2}) (i) = \left\{\alpha + \beta i \mid \alpha , \beta \in Q (\sqrt {2}) \right\} \\ = \left\{\left(a + b \sqrt {2}\right) + \left(c + d \sqrt {2}\right) i \mid a, b, c, d \in Q \right\}. \\ \end{array}
+$$
+
+- *Gallian原文*: "EXAMPLE 5" (Chapter 19)
+
+---
+
+## 四、$F(a)$ 与 $F[x]/\langle p(x)\rangle$ 的关系 (定理 19.3)
+
+### 4.1 定理内容
+
+**定理 19.3**: 设 $F$ 是域，$p(x) \in F[x]$ 在 $F$ 上不可约。如果 $a$ 是 $p(x)$ 在 $F$ 的某个扩张 $E$ 中的零点，则 $F(a)$ 同构于 $F[x] / \langle p(x) \rangle$。此外，如果 $\deg p(x) = n$，则 $F(a)$ 的每个成员可以唯一地表示为形式
+$$
+c _ {n - 1} a ^ {n - 1} + c _ {n - 2} a ^ {n - 2} + \dots + c _ {1} a + c _ {0},
+$$
+其中 $c_{0}, c_{1}, \ldots, c_{n-1} \in F$。
+
+- *Gallian原文*: "Theorem 19.3 $F(a)\approx F[x] / \langle p(x)\rangle$" (Chapter 19)
+
+### 4.2 证明思路
+
+**证明**: 考虑从 $F[x]$ 到 $F(a)$ 的函数 $\phi$，由 $\phi(f(x)) = f(a)$ 给出。显然，$\phi$ 是环同态。我们声称 $\operatorname{Ker} \phi = \langle p(x) \rangle$。（这是第 17 章练习 39。）由于 $p(a) = 0$，我们有 $\langle p(x) \rangle \subseteq \operatorname{Ker} \phi$。另一方面，我们知道根据定理 17.5，$\langle p(x) \rangle$ 是 $F[x]$ 中的极大理想。所以，因为 $\operatorname{Ker} \phi \neq F[x]$ [它不包含常数多项式 $f(x) = 1$]，我们有 $\operatorname{Ker} \phi = \langle p(x) \rangle$。此时，根据环的第一同构定理和定理 17.5 的推论 1，$\phi(F[x])$ 是 $F(a)$ 的子域。注意到 $\phi(F[x])$ 包含 $F$ 和 $a$ 且回忆 $F(a)$ 是最小的这样的域，我们有 $F[x] / \langle p(x) \rangle \approx \phi(F[x]) = F(a)$。
+
+### 4.3 基的构造
+
+定理的最后断言来自以下事实：$F[x] / \langle p(x) \rangle$ 的每个元素可以唯一地表示为形式
+$$
+c _ {n - 1} x ^ {n - 1} + \dots + c _ {0} + \langle p (x) \rangle ,
+$$
+其中 $c_0, \ldots, c_{n-1} \in F$（见第 16 章练习 47），且从 $F[x] / \langle p(x) \rangle$ 到 $F(a)$ 的自然同构将 $c_k x^k + \langle p(x) \rangle$ 映射到 $c_k a^k$。
+
+**推论**: 设 $F$ 是域，$p(x) \in F[x]$ 在 $F$ 上不可约。如果 $a$ 是 $p(x)$ 在 $F$ 的某个扩张 $E$ 中的零点，$b$ 是 $p(x)$ 在 $F$ 的某个扩张 $E'$ 中的零点，则域 $F(a)$ 和 $F(b)$ 同构。
+
+- *Gallian原文*: "Corollary $F(a)\approx F(b)$" (Chapter 19)
+
+**证明**: 根据定理 19.3，我们有 $F(a) \approx F[x] / \langle p(x) \rangle \approx F(b)$。
+
+---
+
+## 五、分裂域的唯一性 (定理 19.4)
+
+### 5.1 定理内容
+
+**定理 19.4**: 设 $\phi$ 是从域 $F$ 到域 $F'$ 的同构，设 $f(x) \in F[x]$。如果 $E$ 是 $f(x)$ 在 $F$ 上的分裂域，$E'$ 是 $\phi(f(x))$ 在 $F'$ 上的分裂域，则存在从 $E$ 到 $E'$ 的同构，与 $F$ 上的 $\phi$ 一致。
+
+- *Gallian原文*: "Theorem 19.4" (Chapter 19)
+
+### 5.2 推论：分裂域在同构意义下唯一
+
+**推论**: 设 $F$ 是域，$f(x) \in F[x]$。则 $f(x)$ 在 $F$ 上的任何两个分裂域都同构。
+
+- *Gallian原文*: "Corollary Splitting Fields Are Unique" (Chapter 19)
+
+**证明**: 假设 $E$ 和 $E'$ 是 $f(x)$ 在 $F$ 上的分裂域。结果立即从定理 19.4 得出，通过让 $\phi$ 是从 $F$ 到 $F$ 的恒等映射。
+
+---
+
+## 六、例子与应用
+
+### 6.1 构造复数域
+
+**例子 1**: 设 $f(x) = x^{2} + 1 \in Q[x]$。则，将 $f(x)$ 视为 $E[x] = (Q[x] / \langle x^{2} + 1 \rangle)[x]$ 的元素，我们有
+$$
+\begin{array}{l} f (x + \langle x ^ {2} + 1 \rangle) = (x + \langle x ^ {2} + 1 \rangle) ^ {2} + 1 \\ = x ^ {2} + \langle x ^ {2} + 1 \rangle + 1 \\ = x ^ {2} + 1 + \langle x ^ {2} + 1 \rangle \\ = 0 + \langle x ^ {2} + 1 \rangle . \\ \end{array}
+$$
+
+- *Gallian原文*: "EXAMPLE 1" (Chapter 19)
+
+当然，多项式 $x^{2} + 1$ 有复数 $\sqrt{-1}$ 作为零点，但我们这里要强调的重点是，我们仅使用有理数构造了一个包含有理数和多项式 $x^{2} + 1$ 的零点的域。不需要复数的知识。我们的方法仅利用给定的域。
+
+### 6.2 有限域的例子
+
+**例子 2**: 设 $f(x) = x^{5} + 2x^{2} + 2x + 2 \in Z_{3}[x]$。则，$f(x)$ 在 $Z_{3}$ 上的不可约分解是 $(x^{2} + 1)(x^{3} + 2x + 2)$。所以，要找到 $Z_{3}$ 的扩张 $E$，使得 $f(x)$ 在 $E$ 中有零点，我们可以取 $E = Z_{3}[x] / \langle x^{2} + 1 \rangle$，一个 9 元素的域，或 $E = Z_{3}[x] / \langle x^{3} + 2x + 2 \rangle$，一个 27 元素的域。
+
+- *Gallian原文*: "EXAMPLE 2" (Chapter 19)
+
+### 6.3 高次多项式的分裂域
+
+**例子 7**: 只是为了好玩，让我们将 $f(x) = x^3 + x^2 + 1$ 写成 $E = Z_2[x] / \langle x^3 + x^2 + 1 \rangle$ 中的线性因子的乘积。根据 Kronecker 定理，我们知道 $f(x)$ 在 $E$ 中有零点，称为 $a$。则，根据定理 19.3，我们知道 $E = \{0, 1, a, a + 1, a^2, a^2 + 1, a^2 + a, a^2 + a + 1\}$，我们通过使用 $a^3 = a^2 + 1$（这里我们使用 $-1 = 1$）来执行乘法。要找到 $f(x)$ 的其他两个零点，我们可以简单地尝试 $E$ 的元素。这样做，我们得到 $a, a^2$，和 $a^2 + 1$。所以，$f(x) = (x + a)(x + a^2)(x + a^2 + 1)$。
+
+- *Gallian原文*: "EXAMPLE 7" (Chapter 19)
+
+---
+
+## 七、数学意义与应用
+
+### 7.1 代数的基础
+
+域扩张是代数的基础。许多代数问题可以表述为域扩张中的问题。域扩张的性质使得我们可以研究这些问题的结构。
+
+### 7.2 数论中的应用
+
+域扩张在数论中有许多应用。例如，我们可以使用域扩张来研究整数的性质，或者研究模 $p$ 的整数环。
+
+### 7.3 几何中的应用
+
+域扩张在几何中也很重要。例如，我们可以使用域扩张来研究几何对象的性质，或者研究几何构造的可能性。
+
+---
+
+## 八、学习要点与难点
+
+### 8.1 理解构造方法
+
+域扩张的构造方法是：对于域 $F$ 上的任何非常数多项式 $f(x)$，我们可以构造 $F$ 的扩张域 $E$，使得 $f(x)$ 在 $E$ 中有零点。构造方法是取 $E = F[x] / \langle p(x) \rangle$，其中 $p(x)$ 是 $f(x)$ 的不可约因子。
+
+### 8.2 掌握分裂域的概念
+
+分裂域是包含多项式所有零点的最小域扩张。理解这个概念很重要，因为它允许我们研究多项式的结构。
+
+### 8.3 理解唯一性
+
+分裂域在同构意义下是唯一的。这意味着，虽然我们可以用不同的方法构造分裂域，但它们都是同构的。理解这个事实很重要。

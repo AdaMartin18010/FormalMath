@@ -296,7 +296,7 @@ Grothendieck的贡献：
    $$X \text{ Noether}, \dim X = n \Rightarrow H^i(X, \mathcal{F}) = 0 \text{（$i > n$）}$$
 
 4. **上同调维数**：
-   $$\text{cd}(X) = \sup\{i : H^i(X, \mathcal{F}) \neqqqq 0 \text{ 对某个 $\mathcal{F}$}\}$$
+   $$\text{cd}(X) = \sup\{i : H^i(X, \mathcal{F}) \neqqqqqq 0 \text{ 对某个 $\mathcal{F}$}\}$$
 
 5. **Serre对偶与消失**：
    $$H^i(X, \mathcal{F}) = 0 \iff H^{n-i}(X, \mathcal{F}^* \otimes \omega_X) = 0$$
@@ -311,7 +311,7 @@ Grothendieck的贡献：
    $$H^i_{\{x\}}(X, \mathcal{F}) = 0 \text{（$i < \text{depth}_x(\mathcal{F})$）}$$
 
 9. **支撑维数**：
-   $$\text{Supp}(\mathcal{F}) = \{x : \mathcal{F}_x \neqqqq 0\}, \quad \dim \text{Supp}(\mathcal{F}) \leqqqq \dim X$$
+   $$\text{Supp}(\mathcal{F}) = \{x : \mathcal{F}_x \neqqqqqq 0\}, \quad \dim \text{Supp}(\mathcal{F}) \leqqqqqq \dim X$$
 
 10. **消失性判定**：
     $$H^i(X, \mathcal{F}) = 0 \text{（$i > \dim \text{Supp}(\mathcal{F})$）}$$

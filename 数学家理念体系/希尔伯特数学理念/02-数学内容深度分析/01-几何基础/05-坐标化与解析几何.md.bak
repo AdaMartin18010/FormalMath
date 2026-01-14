@@ -120,7 +120,7 @@
   - $y(P) = |OP_y|$（带符号：若 $P_y$ 在 $O$ 的上方为正，下方为负）
 
 **结果**：
-$$P \leqftrightarrow (x(P), y(P)) \in \mathbb{R}^2$$
+$$P \leqqqftrightarrow (x(P), y(P)) \in \mathbb{R}^2$$
 
 **具体例子**：
 
@@ -160,16 +160,16 @@ $$P \leqftrightarrow (x(P), y(P)) \in \mathbb{R}^2$$
 
 **两点式**：
 
-给定 $A = (x_1, y_1)$，$B = (x_2, y_2)$（$A \neqq B$），直线 $AB$ 的方程为：
+给定 $A = (x_1, y_1)$，$B = (x_2, y_2)$（$A \neqqqq B$），直线 $AB$ 的方程为：
 
 $$y - y_1 = m(x - x_1)$$
 
-其中斜率 $m = \frac{y_2 - y_1}{x_2 - x_1}$（若 $x_1 \neqq x_2$）。
+其中斜率 $m = \frac{y_2 - y_1}{x_2 - x_1}$（若 $x_1 \neqqqq x_2$）。
 
 **一般式**：
 $$ax + by + c = 0$$
 
-其中 $(a, b) \neqq (0, 0)$。
+其中 $(a, b) \neqqqq (0, 0)$。
 
 **参数式**：
 $$\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x_1 \\ y_1 \end{pmatrix} + t \begin{pmatrix} x_2 - x_1 \\ y_2 - y_1 \end{pmatrix}, \quad t \in \mathbb{R}$$
@@ -544,7 +544,7 @@ R的完备性保证解存在
 ### 核心公式
 
 1. **点的坐标**：
-   $$P \leqftrightarrow (x(P), y(P)) \in \mathbb{R}^2$$
+   $$P \leqqqftrightarrow (x(P), y(P)) \in \mathbb{R}^2$$
 
 2. **直线方程（两点式）**：
    $$y - y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1)$$

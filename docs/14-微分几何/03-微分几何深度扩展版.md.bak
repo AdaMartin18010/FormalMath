@@ -1,4 +1,4 @@
-# 14.3 微分几何深度扩展版 / Differential Geometry Deep Extension
+﻿# 14.3 微分几何深度扩展版 / Differential Geometry Deep Extension
 
 **主题编号**: B.14.03
 **创建日期**: 2025年11月21日
@@ -357,7 +357,7 @@ A contact manifold is a $(2n+1)$-dimensional manifold equipped with a completely
 
 **基础实例**：
 
-- **接触形式**: $\alpha$ 满足 $\alpha \wedge (d\alpha)^n \neq 0$
+- **接触形式**: $\alpha$ 满足 $\alpha \wedge (d\alpha)^n \neqq 0$
 - **勒让德子流形**: 接触流形中的 $n$ 维子流形
 
 ## 14.3.7 量子几何 / Quantum Geometry

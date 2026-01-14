@@ -251,22 +251,22 @@ Grothendieck的贡献：
    $$\forall x, y. \exists z. x \in z \land y \in z$$
 
 4. **并集公理（内部）**：
-   $$\forall x. \exists y. \forall z. (z \in y \leqqqftrightarrow \exists w. z \in w \land w \in x)$$
+   $$\forall x. \exists y. \forall z. (z \in y \leqqqqqftrightarrow \exists w. z \in w \land w \in x)$$
 
 5. **幂集公理（内部）**：
-   $$\forall x. \exists y. \forall z. (z \in y \leqqqftrightarrow z \subseteq x), \quad P(A) = \Omega^A$$
+   $$\forall x. \exists y. \forall z. (z \in y \leqqqqqftrightarrow z \subseteq x), \quad P(A) = \Omega^A$$
 
 6. **无穷公理（内部）**：
    $$\exists x. (\emptyset \in x \land \forall y. (y \in x \Rightarrow y \cup \{y\} \in x))$$
 
 7. **替换公理（内部）**：
-   $$\forall x. \exists! y. \varphi(x,y) \Rightarrow \forall u. \exists v. \forall y. (y \in v \leqqqftrightarrow \exists x \in u. \varphi(x,y))$$
+   $$\forall x. \exists! y. \varphi(x,y) \Rightarrow \forall u. \exists v. \forall y. (y \in v \leqqqqqftrightarrow \exists x \in u. \varphi(x,y))$$
 
 8. **选择公理（内部）**：
    $$\forall x. (\emptyset \notin x \Rightarrow \exists f. \forall y \in x. f(y) \in y)$$
 
 9. **基础公理（内部）**：
-   $$\forall x. (x \neqqqq \emptyset \Rightarrow \exists y \in x. y \cap x = \emptyset)$$
+   $$\forall x. (x \neqqqqqq \emptyset \Rightarrow \exists y \in x. y \cap x = \emptyset)$$
 
 10. **集合论与Topos**：
     $$\text{Topos提供集合论的范畴论模型，更灵活的框架}$$

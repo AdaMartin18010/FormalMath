@@ -299,7 +299,7 @@ Topos逻辑：
 ### 核心公式
 
 1. **内部逻辑对应**：
-   $$\text{对象 } X \leqqqftrightarrow \text{类型}, \quad \text{态射 } f \leqqqftrightarrow \text{项}, \quad \text{子对象 } A \leqqqftrightarrow \text{命题}$$
+   $$\text{对象 } X \leqqqqqftrightarrow \text{类型}, \quad \text{态射 } f \leqqqqqftrightarrow \text{项}, \quad \text{子对象 } A \leqqqqqftrightarrow \text{命题}$$
 
 2. **逻辑运算（合取）**：
    $$A \land B = A \times_\Omega B = A \times B \times_{\Omega \times \Omega} \Omega$$
@@ -311,10 +311,10 @@ Topos逻辑：
    $$A \Rightarrow B = B^A, \quad \text{指数对象}$$
 
 5. **逻辑运算（否定）**：
-   $$\neqqqg A = A \Rightarrow \text{false} = A \Rightarrow 0$$
+   $$\neqqqqqg A = A \Rightarrow \text{false} = A \Rightarrow 0$$
 
 6. **排中律**：
-   $$P \lor \neqqqg P = \text{true} \text{（在Set中）}, \quad P \lor \neqqqg P \neqqqq \text{true} \text{（在一般Topos中）}$$
+   $$P \lor \neqqqqqg P = \text{true} \text{（在Set中）}, \quad P \lor \neqqqqqg P \neqqqqqq \text{true} \text{（在一般Topos中）}$$
 
 7. **子对象分类器**：
    $$\text{Sub}(X) \cong \text{Hom}(X, \Omega), \quad \Omega = \{\text{true}, \text{false}\}$$
@@ -326,7 +326,7 @@ Topos逻辑：
    $$\text{几何公式} = \text{有限合取、有限析取、存在量词}$$
 
 10. **逻辑与几何对应**：
-    $$\text{逻辑结构} \leqqqftrightarrow \text{几何结构}, \quad \text{内部逻辑} \leqqqftrightarrow \text{相对逻辑}$$
+    $$\text{逻辑结构} \leqqqqqftrightarrow \text{几何结构}, \quad \text{内部逻辑} \leqqqqqftrightarrow \text{相对逻辑}$$
 
 ---
 

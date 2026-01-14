@@ -597,7 +597,7 @@ The method used by the Postal Service does not detect all single-digit errors (s
 To explain how the check digit is calculated, it is convenient to introduce the dot product notation for two  $k$ -tuples:
 
 $$
-\left(a _ {1}, a _ {2}, \dots , a _ {k}\right) \cdot \left(w _ {1}, w _ {2}, \dots , w _ {k}\right) = a _ {1} w _ {1} + a _ {2} w _ {2} + \dots + a _ {k} w _ {k}.
+\leqft(a _ {1}, a _ {2}, \dots , a _ {k}\right) \cdot \leqft(w _ {1}, w _ {2}, \dots , w _ {k}\right) = a _ {1} w _ {1} + a _ {2} w _ {2} + \dots + a _ {k} w _ {k}.
 $$
 
 ![](images/9e68ae4f18ed5bf3e829abbde162ba1843d588518df21a02f965e72790d78188.jpg)  
@@ -609,7 +609,7 @@ Figure 0.2 UPC bar code.
 An item with the UPC identification number  $a_1a_2 \cdots a_{12}$  satisfies the condition
 
 $$
-\left(a _ {1}, a _ {2}, \dots , a _ {1 2}\right) \cdot \left(3, 1, 3, 1, \dots , 3, 1\right) \bmod 1 0 = 0.
+\leqft(a _ {1}, a _ {2}, \dots , a _ {1 2}\right) \cdot \leqft(3, 1, 3, 1, \dots , 3, 1\right) \bmod 1 0 = 0.
 $$
 
 To verify that the number in Figure 0.2 satisfies this condition, we calculate
@@ -641,25 +641,25 @@ $$
 is undetected if and only if
 
 $$
-\left(a _ {1}, a _ {2}, \dots , a _ {i + 1}, a _ {i}, \dots , a _ {1 2}\right) \cdot \left(3, 1, 3, 1, \dots , 3, 1\right) \bmod 1 0 = 0.
+\leqft(a _ {1}, a _ {2}, \dots , a _ {i + 1}, a _ {i}, \dots , a _ {1 2}\right) \cdot \leqft(3, 1, 3, 1, \dots , 3, 1\right) \bmod 1 0 = 0.
 $$
 
 That is, the error is undetected if and only if
 
 $$
-\begin{array}{l} (a _ {1}, a _ {2}, \dots , a _ {i + 1}, a _ {i}, \dots , a _ {1 2}) \cdot (3, 1, 3, 1, \dots , 3, 1) \mod 1 0 \\ = \left(a _ {1}, a _ {2}, \dots , a _ {i}, a _ {i + 1}, \dots , a _ {1 2}\right) \cdot \left(3, 1, 3, 1, \dots , 3, 1\right) \mod 1 0. \\ \end{array}
+\begin{array}{l} (a _ {1}, a _ {2}, \dots , a _ {i + 1}, a _ {i}, \dots , a _ {1 2}) \cdot (3, 1, 3, 1, \dots , 3, 1) \mod 1 0 \\ = \leqft(a _ {1}, a _ {2}, \dots , a _ {i}, a _ {i + 1}, \dots , a _ {1 2}\right) \cdot \leqft(3, 1, 3, 1, \dots , 3, 1\right) \mod 1 0. \\ \end{array}
 $$
 
 This equality simplifies to either
 
 $$
-\left(3 a _ {i + 1} + a _ {i}\right) \mod 1 0 = \left(3 a _ {i} + a _ {i + 1}\right) \mod 1 0
+\leqft(3 a _ {i + 1} + a _ {i}\right) \mod 1 0 = \leqft(3 a _ {i} + a _ {i + 1}\right) \mod 1 0
 $$
 
 or
 
 $$
-\left(a _ {i + 1} + 3 a _ {i}\right) \bmod 1 0 = \left(a _ {i} + 3 a _ {i + 1}\right) \bmod 1 0,
+\leqft(a _ {i + 1} + 3 a _ {i}\right) \bmod 1 0 = \leqft(a _ {i} + 3 a _ {i + 1}\right) \bmod 1 0,
 $$
 
 depending on whether  $i$  is even or odd. Both cases reduce to  $2(a_{i+1} - a_i) \mod 10 = 0$ . It follows that  $|a_{i+1} - a_i| = 5$ , if  $a_{i+1} \neq a_i$ .
@@ -725,16 +725,16 @@ $$
 \begin{array}{l} (3 + 5 i) (- 5 + 2 i) = - 2 5 + (- 1 9) i = - 2 5 - 1 9 i; \\ \frac {3 + 5 i}{- 2 + 7 i} = \frac {3 + 5 i}{- 2 + 7 i} \frac {- 2 - 7 i}{- 2 - 7 i} = \frac {2 9 - 3 1 i}{5 3} = \frac {2 9}{5 3} + \frac {- 3 1}{5 3} i; \\ (3 + 5 i) (3 - 5 i) = 9 + 2 5 = 3 4; \\ (3 + 5 i) ^ {- 1} = \frac {3}{3 4} - \frac {5}{3 4} i. \\ \end{array}
 $$
 
-EXAMPLE 11  $(-1 + i)^{4} = \left(\sqrt{2}\left(\cos \frac{3\pi}{4} +i\sin \frac{3\pi}{4}\right)\right)^{4} =$
+EXAMPLE 11  $(-1 + i)^{4} = \leqft(\sqrt{2}\leqft(\cos \frac{3\pi}{4} +i\sin \frac{3\pi}{4}\right)\right)^{4} =$
 
 $$
-\sqrt {2 ^ {4}} \left(\cos \frac {4 \cdot 3 \pi}{4} + i \sin \frac {4 \cdot 3 \pi}{4}\right) = 4 (\cos 3 \pi + i \sin 3 \pi) = - 4.
+\sqrt {2 ^ {4}} \leqft(\cos \frac {4 \cdot 3 \pi}{4} + i \sin \frac {4 \cdot 3 \pi}{4}\right) = 4 (\cos 3 \pi + i \sin 3 \pi) = - 4.
 $$
 
 The three cube roots of  $i = \cos \frac{\pi}{2} + i \sin \frac{\pi}{2}$  are
 
 $$
-\begin{array}{l} \cos \frac {\pi}{6} + i \sin \frac {\pi}{6} = \frac {\sqrt {3}}{2} + \frac {1}{2} i \\ \cos \left(\frac {\pi}{6} + \frac {2 \pi}{3}\right) + i \sin \left(\frac {\pi}{6} + \frac {2 \pi}{3}\right) = - \frac {\sqrt {3}}{2} + \frac {1}{2} i \\ \cos \left(\frac {\pi}{6} + \frac {4 \pi}{3}\right) + i \sin \left(\frac {\pi}{6} + \frac {4 \pi}{3}\right) = - i. \\ \end{array}
+\begin{array}{l} \cos \frac {\pi}{6} + i \sin \frac {\pi}{6} = \frac {\sqrt {3}}{2} + \frac {1}{2} i \\ \cos \leqft(\frac {\pi}{6} + \frac {2 \pi}{3}\right) + i \sin \leqft(\frac {\pi}{6} + \frac {2 \pi}{3}\right) = - \frac {\sqrt {3}}{2} + \frac {1}{2} i \\ \cos \leqft(\frac {\pi}{6} + \frac {4 \pi}{3}\right) + i \sin \leqft(\frac {\pi}{6} + \frac {4 \pi}{3}\right) = - i. \\ \end{array}
 $$
 
 # Mathematical Induction
@@ -756,7 +756,7 @@ EXAMPLE 12 We use induction to prove that given a straightedge, a compass, and a
 EXAMPLE 13 DeMoivre's Theorem We use induction to prove that for every positive integer  $n$  and every real number  $\theta$ ,  $(\cos \theta + i \sin \theta)^n = \cos n\theta + i \sin n\theta$ , where  $i$  is the complex number  $\sqrt{-1}$ . Obviously, the statement is true for  $n = 1$ . Now assume it is true for  $n$ . We must prove that  $(\cos \theta + i \sin \theta)^{n+1} = \cos (n+1)\theta + i \sin (n+1)\theta$ . Observe that
 
 $$
-\begin{array}{l} \left(\cos \theta + i \sin \theta\right) ^ {n + 1} = \left(\cos \theta + i \sin \theta\right) ^ {n} \left(\cos \theta + i \sin \theta\right) \\ = (\cos n \theta + i \sin n \theta) (\cos \theta + i \sin \theta) \\ = \cos n \theta \cos \theta + i (\sin n \theta \cos \theta \\ + \sin \theta \cos n \theta) - \sin n \theta \sin \theta . \\ \end{array}
+\begin{array}{l} \leqft(\cos \theta + i \sin \theta\right) ^ {n + 1} = \leqft(\cos \theta + i \sin \theta\right) ^ {n} \leqft(\cos \theta + i \sin \theta\right) \\ = (\cos n \theta + i \sin n \theta) (\cos \theta + i \sin \theta) \\ = \cos n \theta \cos \theta + i (\sin n \theta \cos \theta \\ + \sin \theta \cos n \theta) - \sin n \theta \sin \theta . \\ \end{array}
 $$
 
 Now, using trigonometric identities for  $\cos (\alpha +\beta)$  and  $\sin (\alpha +\beta)$ , we see that this last term is  $\cos (n + 1)\theta +i\sin (n + 1)\theta$ . So, by induction, the statement is true for all positive integers.
@@ -1268,7 +1268,7 @@ EXAMPLE 5 The set  $S$  of positive irrational numbers together with 1 under mul
 EXAMPLE 6 A rectangular array of the form  $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$  is called a  $2 \times 2$  matrix. The set of all  $2 \times 2$  matrices with real entries is a group under componentwise addition. That is,
 
 $$
-\left[ \begin{array}{c c} a _ {1} & b _ {1} \\ c _ {1} & d _ {1} \end{array} \right] + \left[ \begin{array}{c c} a _ {2} & b _ {2} \\ c _ {2} & d _ {2} \end{array} \right] = \left[ \begin{array}{c c} a _ {1} + a _ {2} & b _ {1} + b _ {2} \\ c _ {1} + c _ {2} & d _ {1} + d _ {2} \end{array} \right]
+\leqft[ \begin{array}{c c} a _ {1} & b _ {1} \\ c _ {1} & d _ {1} \end{array} \right] + \leqft[ \begin{array}{c c} a _ {2} & b _ {2} \\ c _ {2} & d _ {2} \end{array} \right] = \leqft[ \begin{array}{c c} a _ {1} + a _ {2} & b _ {1} + b _ {2} \\ c _ {1} + c _ {2} & d _ {1} + d _ {2} \end{array} \right]
 $$
 
 The identity is  $\begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}$ , and the inverse of  $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$  is  $\begin{bmatrix} -a & -b \\ -c & -d \end{bmatrix}$ .
@@ -1279,16 +1279,16 @@ As we have seen, the real numbers, the  $2 \times 2$  matrices with real entries
 
 EXAMPLE 8 The set  $\mathbf{R}^*$  of nonzero real numbers is a group under ordinary multiplication. The identity is 1. The inverse of  $a$  is  $1 / a$ .
 
-EXAMPLE 9 The determinant of the  $2 \times 2$  matrix  $\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]$  is the number  $ad - bc$ . If  $A$  is a  $2 \times 2$  matrix,  $\det A$  denotes the determinant of  $A$ . The set
+EXAMPLE 9 The determinant of the  $2 \times 2$  matrix  $\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]$  is the number  $ad - bc$ . If  $A$  is a  $2 \times 2$  matrix,  $\det A$  denotes the determinant of  $A$ . The set
 
 $$
-G L (2, \mathbf {R}) = \left\{\left[ \begin{array}{c c} a & b \\ c & d \end{array} \right] \Big | a, b, c, d \in \mathbf {R}, a d - b c \neq 0 \right\}
+G L (2, \mathbf {R}) = \leqft\{\leqft[ \begin{array}{c c} a & b \\ c & d \end{array} \right] \Big | a, b, c, d \in \mathbf {R}, a d - b c \neq 0 \right\}
 $$
 
 of  $2 \times 2$  matrices with real entries and nonzero determinants is a non-Abelian group under the operation
 
 $$
-\left[ \begin{array}{c c} a _ {1} & b _ {1} \\ c _ {1} & d _ {1} \end{array} \right] \left[ \begin{array}{c c} a _ {2} & b _ {2} \\ c _ {2} & d _ {2} \end{array} \right] = \left[ \begin{array}{c c} a _ {1} a _ {2} + b _ {1} c _ {2} & a _ {1} b _ {2} + b _ {1} d _ {2} \\ c _ {1} a _ {2} + d _ {1} c _ {2} & c _ {1} b _ {2} + d _ {1} d _ {2} \end{array} \right].
+\leqft[ \begin{array}{c c} a _ {1} & b _ {1} \\ c _ {1} & d _ {1} \end{array} \right] \leqft[ \begin{array}{c c} a _ {2} & b _ {2} \\ c _ {2} & d _ {2} \end{array} \right] = \leqft[ \begin{array}{c c} a _ {1} a _ {2} + b _ {1} c _ {2} & a _ {1} b _ {2} + b _ {1} d _ {2} \\ c _ {1} a _ {2} + d _ {1} c _ {2} & c _ {1} b _ {2} + d _ {1} d _ {2} \end{array} \right].
 $$
 
 The first step in verifying that this set is a group is to show that the product of two matrices with nonzero determinants also has a nonzero determinant. This follows from the fact that for any pair of  $2 \times 2$  matrices  $A$  and  $B$ ,  $\det(AB) = (\det A)(\det B)$ .
@@ -1296,7 +1296,7 @@ The first step in verifying that this set is a group is to show that the product
 Associativity can be verified by direct (but cumbersome) calculations. The identity is  $\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ ; the inverse of  $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$  is
 
 $$
-\left[ \begin{array}{c c} d & - b \\ \hline a d - b c & \overline {{a d - b c}} \\ \hline - c & a \\ \hline a d - b c & \overline {{a d - b c}} \end{array} \right]
+\leqft[ \begin{array}{c c} d & - b \\ \hline a d - b c & \overline {{a d - b c}} \\ \hline - c & a \\ \hline a d - b c & \overline {{a d - b c}} \end{array} \right]
 $$
 
 (explaining the requirement in the definition of  $GL(2, \mathbf{R})$  that  $ad - bc \neq 0$ ). In particular, the determinant of a matrix determines if it has an inverse. Another useful fact about determinants is  $\det A^{-1} = (\det A)^{-1}$ .
@@ -1312,7 +1312,7 @@ EXAMPLE 11 Algebraic approach to the dihedral groups
 In  $D_{n}$  let  $R$  denote  $R_{360 / n}$  and let  $F$  be any reflection. Then
 
 $$
-D _ {n} = \left\{R _ {0}, R, R ^ {2}, \dots , R ^ {n - 1}, F, R F, R ^ {2} F, \dots , R ^ {n - 1} F \right\}.
+D _ {n} = \leqft\{R _ {0}, R, R ^ {2}, \dots , R ^ {n - 1}, F, R F, R ^ {2} F, \dots , R ^ {n - 1} F \right\}.
 $$
 
 To do the multiplication observe that because every reflection is its own inverse we know  $FF = R_0$  and  $R^i FR^i F = R_0$ . Rearranging we have  $R^i F = F^{-1}R^{-i} = FR^{-i}$ . This tells us that we can always "switch"  $R^i$  and  $F$  provided we change the sign of the exponent of  $R$ . In particular, this relationship serves as a commutativity-like property that allows us to rearrange the product of rotations and reflections. For instance, if  $n = 10$ , we have  $R^{10} = R_0$  and  $R^3 FR^7 F = R^3 FFR^{-7} = R^3 R^{-7} = R^{-4} = R^6$ ;  $FR^4 = R^{-4}F = R^6 F$ ; and  $FR^{-3}F = R^3 FF = R^3$ .
@@ -1344,7 +1344,7 @@ $$
 EXAMPLE 16 For all integers  $n \geq 1$ , the set of complex  $n$ th roots of unity
 
 $$
-\left\{\cos \frac {k \cdot 3 6 0 ^ {\circ}}{n} + i \sin \frac {k \cdot 3 6 0 ^ {\circ}}{n} \Big | k = 0, 1, 2, \dots , n - 1 \right\}
+\leqft\{\cos \frac {k \cdot 3 6 0 ^ {\circ}}{n} + i \sin \frac {k \cdot 3 6 0 ^ {\circ}}{n} \Big | k = 0, 1, 2, \dots , n - 1 \right\}
 $$
 
 (i.e., complex zeros of  $x^n - 1$ ) is a group under multiplication. (See DeMoivre's Theorem—Example 13 in Chapter 0.) Compare this group with the one in Example 3.
@@ -1433,7 +1433,7 @@ Because of the associative property, we may unambiguously write the expression  
 essentially means that parentheses can be inserted or deleted at will without affecting the value of a product involving any number of group elements. Thus,
 
 $$
-a ^ {2} (b c d b ^ {2}) = a ^ {2} b (c d) b ^ {2} = \left(a ^ {2} b\right) (c d) b ^ {2} = a (a b c d b) b,
+a ^ {2} (b c d b ^ {2}) = a ^ {2} b (c d) b ^ {2} = \leqft(a ^ {2} b\right) (c d) b ^ {2} = a (a b c d b) b,
 $$
 
 and so on.
@@ -1522,9 +1522,9 @@ d. In  $GL(2,Z_7)$ $\begin{bmatrix} 2 & 1\\ 1 & 3 \end{bmatrix} ^{-1}$
 
 7. Which of the following sets are groups under matrix multiplication?
 
-a.  $G_{1} = \left\{\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\bigg{|}a,b,c,d\in Z_{4},ad - bc\neq 0\bmod 4\right\}$  
-b.  $G_{2} = \left\{\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\biggm {|}a,b,c,d\in Z,ad - bc\neq 0\right\} .$  
-c.  $G_{3} = \left\{\left[ \begin{array}{cc}a & b\\ 0 & d \end{array} \right]\bigg{|}a,b,d\text{are rational numbers and} ad\neq 0\right\} .$
+a.  $G_{1} = \leqft\{\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\bigg{|}a,b,c,d\in Z_{4},ad - bc\neq 0\bmod 4\right\}$  
+b.  $G_{2} = \leqft\{\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\biggm {|}a,b,c,d\in Z,ad - bc\neq 0\right\} .$  
+c.  $G_{3} = \leqft\{\leqft[ \begin{array}{cc}a & b\\ 0 & d \end{array} \right]\bigg{|}a,b,d\text{are rational numbers and} ad\neq 0\right\} .$
 
 8. Does the set of integers under subtraction (i.e.,  $a - b$ ) have an identity element?  
 9. Show that the equation  $5x = 3$  modulo 20 has no integer solution but  $3x = 5$  does.  
@@ -1565,13 +1565,13 @@ c.  $(ab^{2})^{-3}c^{2} = e$
 35. Prove that the set of all  $3 \times 3$  matrices with real entries of the form
 
 $$
-\left[ \begin{array}{c c c} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & 1 \end{array} \right]
+\leqft[ \begin{array}{c c c} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & 1 \end{array} \right]
 $$
 
 is a group. (Multiplication is defined by
 
 $$
-\left[ \begin{array}{c c c} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & 1 \end{array} \right] \left[ \begin{array}{c c c} 1 & a ^ {\prime} & b ^ {\prime} \\ 0 & 1 & c ^ {\prime} \\ 0 & 0 & 1 \end{array} \right] = \left[ \begin{array}{c c c} 1 & a + a ^ {\prime} & b ^ {\prime} + a c ^ {\prime} + b \\ 0 & 1 & c ^ {\prime} + c \\ 0 & 0 & 1 \end{array} \right].
+\leqft[ \begin{array}{c c c} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & 1 \end{array} \right] \leqft[ \begin{array}{c c c} 1 & a ^ {\prime} & b ^ {\prime} \\ 0 & 1 & c ^ {\prime} \\ 0 & 0 & 1 \end{array} \right] = \leqft[ \begin{array}{c c c} 1 & a + a ^ {\prime} & b ^ {\prime} + a c ^ {\prime} + b \\ 0 & 1 & c ^ {\prime} + c \\ 0 & 0 & 1 \end{array} \right].
 $$
 
 This group, sometimes called the Heisenberg group after the Nobel Prize-winning physicist Werner Heisenberg, is intimately related to the Heisenberg Uncertainty Principle of quantum physics.)
@@ -1579,7 +1579,7 @@ This group, sometimes called the Heisenberg group after the Nobel Prize-winning 
 36. Prove that in a group,  $(ab)^2 = a^2 b^2$  if and only if  $ab = ba$ .  
 Prove that in a group,  $(ab)^{-2} = b^{-2}a^{-2}$  if and only if  $ab = ba$ .  
 37. Let  $G$  be a finite group and  $n$  an odd positive integer. Show that the number of elements  $x$  of  $G$  such that  $x^n = e$  is odd. Show that the number of elements  $x$  of  $G$  such that  $x^2 \neq e$  is even.  
-38. Let  $Q^{+}$  denote the positive rational numbers. Explain why the correspondence from  $Q^{+} \times Q^{+}$  that takes  $\left(\frac{a}{b}, \frac{c}{d}\right)$  to  $\frac{a + c}{b + d}$  is not a binary operation on  $Q^{+}$ . (That is, the correspondence is not well-defined.)  
+38. Let  $Q^{+}$  denote the positive rational numbers. Explain why the correspondence from  $Q^{+} \times Q^{+}$  that takes  $\leqft(\frac{a}{b}, \frac{c}{d}\right)$  to  $\frac{a + c}{b + d}$  is not a binary operation on  $Q^{+}$ . (That is, the correspondence is not well-defined.)  
 39. Suppose  $F_{1}$  and  $F_{2}$  are distinct reflections in a dihedral group  $D_{n}$ . Prove that  $F_{1}F_{2} \neq R_{0}$ .  
 40. Suppose  $F_{1}$  and  $F_{2}$  are distinct reflections in a dihedral group  $D_{n}$  such that  $F_{1}F_{2} = F_{2}F_{1}$ . Prove that  $F_{1}F_{2} = R_{180}$ .  
 41. Let  $R$  be any fixed rotation and  $F$  any fixed reflection in a dihedral group. Prove that  $R^k FR^k = F$ .  
@@ -1790,7 +1790,7 @@ PROOF For variety, we shall use Theorem 3.2 to prove this result. Clearly,  $e \
 Next, assume that  $a \in Z(G)$ . Then we have  $ax = xa$  for all  $x$  in  $G$ . What we want is  $a^{-1}x = xa^{-1}$  for all  $x$  in  $G$ . The desired equation can be obtained from the original one by multiplying it on the left and right by  $a^{-1}$ , like so:
 
 $$
-\begin{array}{l} a ^ {- 1} (a x) a ^ {- 1} = a ^ {- 1} (x a) a ^ {- 1}, \\ (a ^ {- 1} a) x a ^ {- 1} = a ^ {- 1} x \left(a a ^ {- 1}\right), \\ e x a ^ {- 1} = a ^ {- 1} x e, \\ \begin{array}{r c l} x a ^ {- 1} & = & a ^ {- 1} x. \end{array} \\ \end{array}
+\begin{array}{l} a ^ {- 1} (a x) a ^ {- 1} = a ^ {- 1} (x a) a ^ {- 1}, \\ (a ^ {- 1} a) x a ^ {- 1} = a ^ {- 1} x \leqft(a a ^ {- 1}\right), \\ e x a ^ {- 1} = a ^ {- 1} x e, \\ \begin{array}{r c l} x a ^ {- 1} & = & a ^ {- 1} x. \end{array} \\ \end{array}
 $$
 
 This shows that  $a^{-1} \in Z(G)$  whenever  $a$  is.
@@ -1800,7 +1800,7 @@ For practice, let's determine the centers of the dihedral groups.
 EXAMPLE 15 For  $n \geq 3$ ,
 
 $$
-Z (D _ {n}) = \left\{ \begin{array}{l l} \{R _ {0}, R _ {1 8 0} \} & \text {w h e n n i s e v e n ,} \\ \{R _ {0} \} & \text {w h e n n i s o d d .} \end{array} \right.
+Z (D _ {n}) = \leqft\{ \begin{array}{l l} \{R _ {0}, R _ {1 8 0} \} & \text {w h e n n i s e v e n ,} \\ \{R _ {0} \} & \text {w h e n n i s o d d .} \end{array} \right.
 $$
 
 To verify this, first observe that since every rotation in  $D_{n}$  is a power of  $R_{360 / n}$ , rotations commute with rotations. We now investigate when a rotation commutes with a reflection. Let  $R$  be any rotation in  $D_{n}$  and let  $F$  be any reflection in  $D_{n}$ . Observe that since  $RF$  is a reflection we have  $RF = (RF)^{-1} = F^{-1}R^{-1} = FR^{-1}$ . Thus, it follows that  $R$  and  $F$  commute if and only if  $FR = RF = FR^{-1}$ . By cancellation, this holds if and only if
@@ -1924,16 +1924,16 @@ In each part, find an integer  $k$  such that the subgroup is  $\langle k \rangl
 58. For any positive integer  $n$  and any angle  $\theta$ , show that in the group  $SL(2, \mathbf{R})$ ,
 
 $$
-\left[ \begin{array}{c} \cos \theta - \sin \theta \\ \sin \theta \quad \cos \theta \end{array} \right] ^ {n} = \left[ \begin{array}{c} \cos n \theta - \sin n \theta \\ \sin n \theta \quad \cos n \theta \end{array} \right]
+\leqft[ \begin{array}{c} \cos \theta - \sin \theta \\ \sin \theta \quad \cos \theta \end{array} \right] ^ {n} = \leqft[ \begin{array}{c} \cos n \theta - \sin n \theta \\ \sin n \theta \quad \cos n \theta \end{array} \right]
 $$
 
 Use this formula to find the order of
 
 $$
-\left[ \begin{array}{c c} \cos 6 0 ^ {\circ} - \sin 6 0 ^ {\circ} \\ \sin 6 0 ^ {\circ} & \cos 6 0 ^ {\circ} \end{array} \right] \text {a n d} \left[ \begin{array}{c c} \cos \sqrt {2} ^ {\circ} - \sin \sqrt {2} ^ {\circ} \\ \sin \sqrt {2} ^ {\circ} & \cos \sqrt {2} ^ {\circ} \end{array} \right].
+\leqft[ \begin{array}{c c} \cos 6 0 ^ {\circ} - \sin 6 0 ^ {\circ} \\ \sin 6 0 ^ {\circ} & \cos 6 0 ^ {\circ} \end{array} \right] \text {a n d} \leqft[ \begin{array}{c c} \cos \sqrt {2} ^ {\circ} - \sin \sqrt {2} ^ {\circ} \\ \sin \sqrt {2} ^ {\circ} & \cos \sqrt {2} ^ {\circ} \end{array} \right].
 $$
 
-(Geometrically,  $\left[ \begin{array}{cc}\cos \theta -\sin \theta \\ \sin \theta & \cos \theta \end{array} \right]$  represents a rotation of the plane  $\theta$  degrees.)
+(Geometrically,  $\leqft[ \begin{array}{cc}\cos \theta -\sin \theta \\ \sin \theta & \cos \theta \end{array} \right]$  represents a rotation of the plane  $\theta$  degrees.)
 
 59. Let  $G$  be the symmetry group of a circle. Show that  $G$  has elements of every finite order as well as elements of infinite order.  
 60. In the group  $\mathbf{R}^*$  find elements  $a$  and  $b$  such that  $|a| = \infty$ ,  $|b| = \infty$  and  $|ab| = 2$ .  
@@ -1974,7 +1974,7 @@ The group  $xHx^{-1}$  is called a conjugate of  $H$ . (Note that conjugation pr
 74. Let  $H = \{A \in GL(2, \mathbf{R})$  and  $H = \{A \in G \mid \det A$  is an integer power of 2\}. Show that  $H$  is a subgroup of  $GL(2, \mathbf{R})$ .  
 75. Let  $H$  be a subgroup of  $\mathbf{R}$  under addition. Let  $K = \{2^a \mid a \in H\}$ . Prove that  $K$  is a subgroup of  $\mathbf{R}^*$  under multiplication.  
 76. Let  $G$  be a group of functions from  $\mathbf{R}^*$  to  $\mathbf{R}^*$ , where the operation of  $G$  is multiplication of functions. Let  $H = \{f \in G \mid f(2) = 1\}$ . Prove that  $H$  is a subgroup of  $G$ . Can 2 be replaced by any real number?  
-77. Let  $G = GL(2, \mathbf{R})$  and  $H = \left\{\left[ \begin{array}{cc} a & 0 \\ 0 & b \end{array} \right] \mid a \text{ and } b \text{ are nonzero integers}\right\}$  under the operation of matrix multiplication. Prove or disprove that  $H$  is a subgroup of  $GL(2, \mathbf{R})$ .  
+77. Let  $G = GL(2, \mathbf{R})$  and  $H = \leqft\{\leqft[ \begin{array}{cc} a & 0 \\ 0 & b \end{array} \right] \mid a \text{ and } b \text{ are nonzero integers}\right\}$  under the operation of matrix multiplication. Prove or disprove that  $H$  is a subgroup of  $GL(2, \mathbf{R})$ .  
 78. For any odd integer  $n > 3$  give two examples of groups with exactly  $n$  elements of order 2.  
 79. Let  $H = \{a + bi \mid a, b \in \mathbf{R}, a^2 + b^2 = 1\}$ . Prove or disprove that  $H$  is a subgroup of  $\mathbf{C}^*$  under multiplication. Describe the elements of  $H$  geometrically.  
 80. Let  $G$  be a finite Abelian group and let  $a$  and  $b$  belong to  $G$ . Prove that the set  $\langle a, b \rangle = \{a^i b^j \mid i, j \in Z\}$  is a subgroup of  $G$ . What can you say about  $|\langle a, b \rangle|$  in terms of  $|a|$  and  $|b|$ ?
@@ -1986,7 +1986,7 @@ The group  $xHx^{-1}$  is called a conjugate of  $H$ . (Note that conjugation pr
 85. If  $n$  is an integer at least 3, prove that  $2^n - 1$  and  $2^{n-1} \pm 1$  are the only elements in  $U(2^n)$  of order 2.  
 86. For parts a and b below give examples of finite group and an infinite group for which each set is a proper subgroup. For parts c and d give finite examples.
 
-a.  $\{1, -1\}$ , b.  $\left\{\left[ \begin{array}{cc}1 & 0\\ 0 & 1 \end{array} \right], \left[ \begin{array}{cc} -1 & 0\\ 0 & -1 \end{array} \right]\right\}$ , c.  $\{1, 5\}$  d.  $\{0, 3\}$
+a.  $\{1, -1\}$ , b.  $\leqft\{\leqft[ \begin{array}{cc}1 & 0\\ 0 & 1 \end{array} \right], \leqft[ \begin{array}{cc} -1 & 0\\ 0 & -1 \end{array} \right]\right\}$ , c.  $\{1, 5\}$  d.  $\{0, 3\}$
 
 87. Let  $H$  be a subgroup of a group  $G$ . Prove that the set  $HZ(G) = \{hz \mid h \in H, z \in Z(G)\}$  is a subgroup of  $G$ . This exercise is referred to in this chapter.  
 88. If  $H$  and  $K$  are nontrivial subgroups of the rational numbers under addition, prove that  $H \cap K$  is nontrivial.  
@@ -2126,7 +2126,7 @@ Let  $a$  be an element of order  $n$  in a group and let  $k$  be a positive in
 PROOF To simplify the notation, let  $d = \gcd(n, k)$  and let  $k = dr$ . Since  $a^k = (a^d)^r$ , we have by closure that  $\langle a^k \rangle \subseteq \langle a^d \rangle$ . By Theorem 0.2 (the gcd theorem), there are integers  $s$  and  $t$  such that  $d = ns + kt$ . So,
 
 $$
-a ^ {d} = a ^ {n s + k t} = a ^ {n s} a ^ {k t} = (a ^ {n}) ^ {s} (a ^ {k}) ^ {t} = e (a ^ {k}) ^ {t} = \left(a ^ {k}\right) ^ {t} \in \langle a ^ {k} \rangle .
+a ^ {d} = a ^ {n s + k t} = a ^ {n s} a ^ {k t} = (a ^ {n}) ^ {s} (a ^ {k}) ^ {t} = e (a ^ {k}) ^ {t} = \leqft(a ^ {k}\right) ^ {t} \in \langle a ^ {k} \rangle .
 $$
 
 This proves  $\langle a^d\rangle \subseteq \langle a^k\rangle$ . So, we have verified that  $\langle a^k\rangle = \langle a^{\gcd (n,k)}\rangle$
@@ -2263,7 +2263,7 @@ In particular, note that once you have the generator  $a^{n / d}$  for the subgr
 
 By combining Theorems 4.2 and 4.3, we can easily count the number of elements of each order in a finite cyclic group. For convenience, we introduce an important number-theoretic function called the Euler phi function. Let  $\phi(1) = 1$ , and for any integer  $n > 1$ , let  $\phi(n)$  denote the number of positive integers less than  $n$  and relatively prime to  $n$ . Notice that by definition of the group  $U(n)$ ,  $|U(n)| = \phi(n)$ . The first 12 values of  $\phi(n)$  are given in Table 4.1.
 
-Table 4.1 Values of  $\phi \left( n\right)$  .  
+Table 4.1 Values of  $\phi \leqft( n\right)$  .  
 
 <table><tr><td>n</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>φ(n)</td><td>1</td><td>1</td><td>2</td><td>2</td><td>4</td><td>2</td><td>6</td><td>4</td><td>6</td><td>4</td><td>10</td><td>4</td></tr></table>
 
@@ -2527,7 +2527,7 @@ $$
 A more convenient way to express this correspondence is to write  $\alpha$  in array form as
 
 $$
-\alpha = \left[ \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 1 & 4 \end{array} \right].
+\alpha = \leqft[ \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 1 & 4 \end{array} \right].
 $$
 
 Here  $\alpha(j)$  is placed directly below  $j$  for each  $j$ . Similarly, the permutation  $\beta$  of the set  $\{1,2,3,4,5,6\}$  given by
@@ -2539,25 +2539,25 @@ $$
 is expressed in array form as
 
 $$
-\beta = \left[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 5 & 3 & 1 & 6 & 2 & 4 \end{array} \right].
+\beta = \leqft[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 5 & 3 & 1 & 6 & 2 & 4 \end{array} \right].
 $$
 
 Composition of permutations expressed in array notation is carried out from right to left by going from top to bottom, then again from top to bottom. For example, let
 
 $$
-\sigma = \left[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 2 & 4 & 3 & 5 & 1 \end{array} \right]
+\sigma = \leqft[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 2 & 4 & 3 & 5 & 1 \end{array} \right]
 $$
 
 and
 
 $$
-\gamma = \left[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 5 & 4 & 1 & 2 & 3 \end{array} \right],
+\gamma = \leqft[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 5 & 4 & 1 & 2 & 3 \end{array} \right],
 $$
 
 then
 
 $$
-\gamma \sigma = \left[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ & \downarrow & & & \\ 5 & 4 & 1 & 2 & 3 \end{array} \right] \cdot \left[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ & \downarrow & & & \\ 2 & 4 & 3 & 5 & 1 \end{array} \right] = \left[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 4 & 2 & 1 & 3 & 5 \end{array} \right]
+\gamma \sigma = \leqft[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ & \downarrow & & & \\ 5 & 4 & 1 & 2 & 3 \end{array} \right] \cdot \leqft[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ & \downarrow & & & \\ 2 & 4 & 3 & 5 & 1 \end{array} \right] = \leqft[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 4 & 2 & 1 & 3 & 5 \end{array} \right]
 $$
 
 On the right we have 4 under 1, since  $(\gamma \sigma)(1) = \gamma (\sigma (1)) = \gamma (2) = 4$  so  $\gamma \sigma$  sends 1 to 4. The remainder of the bottom row  $\gamma \sigma$  is obtained in a similar fashion.
@@ -2567,14 +2567,14 @@ We are now ready to give some examples of permutation groups.
 EXAMPLE 1 Symmetric Group  $S_{3}$  Let  $S_{3}$  denote the set of all one-to-one functions from  $\{1,2,3\}$  to itself. Then  $S_{3}$ , under function composition, is a group with six elements. The six elements are
 
 $$
-\varepsilon = \left[ \begin{array}{c c c} 1 & 2 & 3 \\ 1 & 2 & 3 \end{array} \right], \quad \alpha = \left[ \begin{array}{c c c} 1 & 2 & 3 \\ 2 & 3 & 1 \end{array} \right], \quad \alpha^ {2} = \left[ \begin{array}{c c c} 1 & 2 & 3 \\ 3 & 1 & 2 \end{array} \right],
+\varepsilon = \leqft[ \begin{array}{c c c} 1 & 2 & 3 \\ 1 & 2 & 3 \end{array} \right], \quad \alpha = \leqft[ \begin{array}{c c c} 1 & 2 & 3 \\ 2 & 3 & 1 \end{array} \right], \quad \alpha^ {2} = \leqft[ \begin{array}{c c c} 1 & 2 & 3 \\ 3 & 1 & 2 \end{array} \right],
 $$
 
 $$
-\beta = \left[ \begin{array}{c c c} 1 & 2 & 3 \\ 1 & 3 & 2 \end{array} \right], \quad \alpha \beta = \left[ \begin{array}{c c c} 1 & 2 & 3 \\ 2 & 1 & 3 \end{array} \right], \quad \alpha^ {2} \beta = \left[ \begin{array}{c c c} 1 & 2 & 3 \\ 3 & 2 & 1 \end{array} \right].
+\beta = \leqft[ \begin{array}{c c c} 1 & 2 & 3 \\ 1 & 3 & 2 \end{array} \right], \quad \alpha \beta = \leqft[ \begin{array}{c c c} 1 & 2 & 3 \\ 2 & 1 & 3 \end{array} \right], \quad \alpha^ {2} \beta = \leqft[ \begin{array}{c c c} 1 & 2 & 3 \\ 3 & 2 & 1 \end{array} \right].
 $$
 
-Note that  $\beta \alpha = \left[ \begin{array}{lll}1 & 2 & 3\\ 3 & 2 & 1 \end{array} \right] = \alpha^2\beta \neq \alpha \beta$  so that  $S_{3}$  is non-Abelian.
+Note that  $\beta \alpha = \leqft[ \begin{array}{lll}1 & 2 & 3\\ 3 & 2 & 1 \end{array} \right] = \alpha^2\beta \neq \alpha \beta$  so that  $S_{3}$  is non-Abelian.
 
 The relation  $\beta \alpha = \alpha^2\beta$  can be used to compute other products in  $S_{3}$  without resorting to the arrays. For example,  $\beta \alpha^{2} = (\beta \alpha)\alpha = (\alpha^{2}\beta)\alpha = \alpha^{2}(\beta \alpha) = \alpha^{2}(\alpha^{2}\beta) = \alpha^{4}\beta = \alpha \beta$ .
 
@@ -2583,7 +2583,7 @@ Example 1 can be generalized as follows.
 EXAMPLE 2 Symmetric Group  $S_{n}$  Let  $A = \{1,2,\dots,n\}$ . The set of all permutations of  $A$  is called the symmetric group of degree  $n$  and is denoted by  $S_{n}$ . Elements of  $S_{n}$  have the form
 
 $$
-\alpha = \left[ \begin{array}{c c c c} 1 & 2 & \dots & n \\ \alpha (1) & \alpha (2) & \dots & \alpha (n) \end{array} \right].
+\alpha = \leqft[ \begin{array}{c c c c} 1 & 2 & \dots & n \\ \alpha (1) & \alpha (2) & \dots & \alpha (n) \end{array} \right].
 $$
 
 It is easy to compute the order of  $S_{n}$ . There are  $n$  choices of  $\alpha(1)$ . Once  $\alpha(1)$  has been determined, there are  $n - 1$  possibilities for  $\alpha(2)$  [since  $\alpha$  is one-to-one, we must have  $\alpha(1) \neq \alpha(2)$ ]. After choosing  $\alpha(2)$ , there are exactly  $n - 2$  possibilities for  $\alpha(3)$ . Continuing along in this fashion, we see that  $S_{n}$  has  $n(n - 1) \cdots 3 \cdot 2 \cdot 1 = n!$  elements. We leave it to the reader to prove that  $S_{n}$  is non-Abelian when  $n \geq 3$  (Exercise 51).
@@ -2595,13 +2595,13 @@ EXAMPLE 3 Symmetries of a Square As a third example, we associate each motion in
 ![](images/033c06028a3c1ea2f755b909d3ddf70117a25a108618072eb5acbcf5621e222f.jpg)
 
 $$
-\rho = \left[ \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right],
+\rho = \leqft[ \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right],
 $$
 
 whereas a reflection across a horizontal axis yields
 
 $$
-\phi = \left[ \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right].
+\phi = \leqft[ \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right].
 $$
 
 These two elements generate the entire group (i.e., every element is some combination of the  $\rho$ 's and  $\phi$ 's).
@@ -2615,7 +2615,7 @@ There is another notation commonly used to specify permutations. It is called cy
 As an illustration of cycle notation, let us consider the permutation
 
 $$
-\alpha = \left[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 2 & 1 & 4 & 6 & 5 & 3 \end{array} \right].
+\alpha = \leqft[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 2 & 1 & 4 & 6 & 5 & 3 \end{array} \right].
 $$
 
 This assignment of values could be presented schematically as follows.
@@ -2629,7 +2629,7 @@ This assignment of values could be presented schematically as follows.
 Although mathematically satisfactory, such diagrams are cumbersome. Instead, we leave out the arrows and simply write  $\alpha = (1,2)(3,4,6)(5)$ . As a second example, consider
 
 $$
-\beta = \left[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 5 & 3 & 1 & 6 & 2 & 4 \end{array} \right].
+\beta = \leqft[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 5 & 3 & 1 & 6 & 2 & 4 \end{array} \right].
 $$
 
 In cycle notation,  $\beta$  can be written (2, 3, 1, 5)(6, 4) or (4, 6)(3, 1, 5, 2), since both of these unambiguously specify the function  $\beta$ . An expression of the form  $(a_{1}, a_{2}, \ldots, a_{m})$  is called a cycle of length  $m$  or an  $m$ -cycle.
@@ -2655,7 +2655,7 @@ To be sure you understand how to switch from one notation to the other and how t
 If array notations for  $\alpha$  and  $\beta$ , respectively, are
 
 $$
-\left[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 2 & 1 & 3 & 5 & 4 \end{array} \right] \quad \text {a n d} \quad \left[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 5 & 4 & 1 & 2 & 3 \end{array} \right],
+\leqft[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 2 & 1 & 3 & 5 & 4 \end{array} \right] \quad \text {a n d} \quad \leqft[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 5 & 4 & 1 & 2 & 3 \end{array} \right],
 $$
 
 then, in cycle notation,  $\alpha = (12)(3)(45),\beta = (153)(24)$  , and  $\alpha \beta =$  (12)(3)(45)(153)(24).
@@ -2667,13 +2667,13 @@ One can convert  $\alpha \beta$  back to array form without converting each cycl
 One final remark about cycle notation: Mathematicians prefer not to write cycles that have only one entry. In this case, it is understood that any missing element is mapped to itself. With this convention, the permutation  $\alpha$  above can be written as (12)(45). Similarly,
 
 $$
-\alpha = \left[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 3 & 2 & 4 & 1 & 5 \end{array} \right]
+\alpha = \leqft[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 3 & 2 & 4 & 1 & 5 \end{array} \right]
 $$
 
 can be written  $\alpha = (134)$ . Of course, the identity permutation consists only of cycles with one entry, so we cannot omit all of these! In this case, one usually writes just one cycle. For example,
 
 $$
-\varepsilon = \left[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 1 & 2 & 3 & 4 & 5 \end{array} \right]
+\varepsilon = \leqft[ \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 1 & 2 & 3 & 4 & 5 \end{array} \right]
 $$
 
 can be written as  $\varepsilon = (5)$  or  $\varepsilon = (1)$ . Just remember that missing elements are mapped to themselves.
@@ -2695,13 +2695,13 @@ $$
 and so on, until we arrive at  $a_1 = \alpha^m(a_1)$  for some  $m$ . We know that such an  $m$  exists because the sequence  $a_1, \alpha(a_1), \alpha^2(a_1), \ldots$  must be finite; so there must eventually be a repetition, say  $\alpha^i(a_1) = \alpha^j(a_1)$  for some  $i$  and  $j$  with  $i < j$ . Then  $a_1 = \alpha^m(a_1)$ , where  $m = j - i$ . We express this relationship among  $a_1, a_2, \ldots, a_m$  as
 
 $$
-\alpha = \left(a _ {1}, a _ {2}, \dots , a _ {m}\right) \dots .
+\alpha = \leqft(a _ {1}, a _ {2}, \dots , a _ {m}\right) \dots .
 $$
 
 The three dots at the end indicate the possibility that we may not have exhausted the set  $A$  in this process. In such a case, we merely choose any element  $b_{1}$  of  $A$  not appearing in the first cycle and proceed to create a new cycle as before. That is, we let  $b_{2} = \alpha(b_{1}), b_{3} = \alpha^{2}(b_{1})$ , and so on, until we reach  $b_{1} = \alpha^{k}(b_{1})$  for some  $k$ . This new cycle will have no elements in common with the previously constructed cycle. For, if so, then  $\alpha^{i}(a_{1}) = \alpha^{j}(b_{1})$  for some  $i$  and  $j$ . But then  $\alpha^{i-j}(a_{1}) = b_{1}$ , and therefore  $b_{1} = a_{t}$  for some  $t$ . This contradicts the way  $b_{1}$  was chosen. Continuing this process until we run out of elements of  $A$ , our permutation will appear as
 
 $$
-\alpha = \left(a _ {1}, a _ {2}, \dots , a _ {m}\right) \left(b _ {1}, b _ {2}, \dots , b _ {k}\right) \dots \left(c _ {1}, c _ {2}, \dots , c _ {s}\right).
+\alpha = \leqft(a _ {1}, a _ {2}, \dots , a _ {m}\right) \leqft(b _ {1}, b _ {2}, \dots , b _ {k}\right) \dots \leqft(c _ {1}, c _ {2}, \dots , c _ {s}\right).
 $$
 
 In this way, we see that every permutation can be written as a product of disjoint cycles.
@@ -2715,7 +2715,7 @@ $$
 PROOF For definiteness, let us say that  $\alpha$  and  $\beta$  are permutations of the set
 
 $$
-S = \left\{a _ {1}, a _ {2}, \dots , a _ {m}, b _ {1}, b _ {2}, \dots , b _ {n}, c _ {1}, c _ {2}, \dots , c _ {k} \right\},
+S = \leqft\{a _ {1}, a _ {2}, \dots , a _ {m}, b _ {1}, b _ {2}, \dots , b _ {n}, c _ {1}, c _ {2}, \dots , c _ {k} \right\},
 $$
 
 where the  $c$ 's are the members of  $S$  left fixed by both  $\alpha$  and  $\beta$  (there may not be any  $c$ 's). To prove that  $\alpha \beta = \beta \alpha$ , we must show that  $(\alpha \beta)(x) = (\beta \alpha)(x)$  for all  $x$  in  $S$ . If  $x$  is one of the  $a$  elements, say  $a_i$ , then
@@ -2816,7 +2816,7 @@ Every permutation in  $S_{n}, n > 1$ , is a product of 2-cycles.
 PROOF First, note that the identity can be expressed as (12)(12), and so it is a product of 2-cycles. By Theorem 5.1, we know that every permutation can be written in the form
 
 $$
-\left(a _ {1} a _ {2} \dots a _ {k}\right) \left(b _ {1} b _ {2} \dots b _ {t}\right) \dots \left(c _ {1} c _ {2} \dots c _ {s}\right).
+\leqft(a _ {1} a _ {2} \dots a _ {k}\right) \leqft(b _ {1} b _ {2} \dots b _ {t}\right) \dots \leqft(c _ {1} c _ {2} \dots c _ {s}\right).
 $$
 
 A direct computation shows that this is the same as
@@ -3049,7 +3049,7 @@ Sherlock Holmes, The Sign of Four
 1. Let
 
 $$
-\alpha = \left[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 2 & 1 & 3 & 5 & 4 & 6 \end{array} \right] \quad \text {a n d} \quad \beta = \left[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 6 & 1 & 2 & 4 & 3 & 5 \end{array} \right].
+\alpha = \leqft[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 2 & 1 & 3 & 5 & 4 & 6 \end{array} \right] \quad \text {a n d} \quad \beta = \leqft[ \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 6 & 1 & 2 & 4 & 3 & 5 \end{array} \right].
 $$
 
 Compute each of the following.
@@ -3059,11 +3059,11 @@ a.  $\alpha^{-1}$  b.  $\beta \alpha$  c.  $\alpha \beta$
 2. Let
 
 $$
-\alpha = \left[ \begin{array}{c c c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ 2 & 3 & 4 & 5 & 1 & 7 & 8 & 6 \end{array} \right]
+\alpha = \leqft[ \begin{array}{c c c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ 2 & 3 & 4 & 5 & 1 & 7 & 8 & 6 \end{array} \right]
 $$
 
 $$
-\text {a n d} \quad \beta = \left[ \begin{array}{c c c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ 1 & 3 & 8 & 7 & 6 & 5 & 2 & 4 \end{array} \right].
+\text {a n d} \quad \beta = \leqft[ \begin{array}{c c c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ 1 & 3 & 8 & 7 & 6 & 5 & 2 & 4 \end{array} \right].
 $$
 
 Write  $\alpha, \beta$ , and  $\alpha \beta$  as a products of disjoint cycles and as products of 2-cycles.
@@ -3300,7 +3300,7 @@ EXAMPLE 4  $U(10) \approx Z_4$  and  $U(5) \approx Z_4$ . To verify this, one ne
 EXAMPLE 5 There is no isomorphism from  $Q$ , the group of rational numbers under addition, to  $Q^*$ , the group of nonzero rational numbers under multiplication. If  $\phi$  were such a mapping, there would be a rational number  $a$  such that  $\phi(a) = -1$ . But then
 
 $$
-- 1 = \phi (a) = \phi \left(\frac {1}{2} a + \frac {1}{2} a\right) = \phi \left(\frac {1}{2} a\right) \phi \left(\frac {1}{2} a\right) = \left(\phi \left(\frac {1}{2} a\right)\right) ^ {2}.
+- 1 = \phi (a) = \phi \leqft(\frac {1}{2} a + \frac {1}{2} a\right) = \phi \leqft(\frac {1}{2} a\right) \phi \leqft(\frac {1}{2} a\right) = \leqft(\phi \leqft(\frac {1}{2} a\right)\right) ^ {2}.
 $$
 
 However, no rational number squared is  $-1$ .
@@ -3518,11 +3518,11 @@ The group  $\overline{G}$  constructed previously is called the left regular rep
 EXAMPLE 15 For concreteness, let us calculate the left regular representation  $\overline{U(12)}$  for  $U(12) = \{1, 5, 7, 11\}$ . Writing the permutations of  $U(12)$  in array form, we have (remember,  $T_x$  is just multiplication by  $x$ )
 
 $$
-T _ {1} = \left[ \begin{array}{c c c c} 1 & 5 & 7 & 1 1 \\ 1 & 5 & 7 & 1 1 \end{array} \right], \quad T _ {5} = \left[ \begin{array}{c c c c} 1 & 5 & 7 & 1 1 \\ 5 & 1 & 1 1 & 7 7 \end{array} \right],
+T _ {1} = \leqft[ \begin{array}{c c c c} 1 & 5 & 7 & 1 1 \\ 1 & 5 & 7 & 1 1 \end{array} \right], \quad T _ {5} = \leqft[ \begin{array}{c c c c} 1 & 5 & 7 & 1 1 \\ 5 & 1 & 1 1 & 7 7 \end{array} \right],
 $$
 
 $$
-T _ {7} = \left[ \begin{array}{c c c c} 1 & 5 & 7 & 1 1 \\ 7 & 1 1 & 1 & 5 \end{array} \right], \quad T _ {1 1} = \left[ \begin{array}{c c c c} 1 & 5 & 7 & 1 1 \\ 1 1 & 7 & 5 & 1 \end{array} \right].
+T _ {7} = \leqft[ \begin{array}{c c c c} 1 & 5 & 7 & 1 1 \\ 7 & 1 1 & 1 & 5 \end{array} \right], \quad T _ {1 1} = \leqft[ \begin{array}{c c c c} 1 & 5 & 7 & 1 1 \\ 1 1 & 7 & 5 & 1 \end{array} \right].
 $$
 
 It is instructive to compare the Cayley tables for  $U(12)$  and its left regular representation  $\overline{U(12)}$ .
@@ -3536,7 +3536,7 @@ It should be abundantly clear from these tables that  $U(12)$  and  $\overline{U
 EXAMPLE 16 Writing the left regular representations for the permutations  $T_{R_{270}}$  and  $T_H$  from  $D_4$  in disjoint cycle form we have (see the Cayley table in Chapter 1):
 
 $$
-T _ {R _ {2 7 0}} = \left(R _ {0} R _ {2 7 0} R _ {1 8 0} R _ {9 0}\right) \left(H D ^ {\prime}\right) (V D)
+T _ {R _ {2 7 0}} = \leqft(R _ {0} R _ {2 7 0} R _ {1 8 0} R _ {9 0}\right) \leqft(H D ^ {\prime}\right) (V D)
 $$
 
 $$
@@ -3598,7 +3598,7 @@ Prove that  $H = \{x \in G \mid \phi(x) = x^4\}$  is a subgroup of  $G$ . If  $\
 29. Identify a group  $G$  that has subgroups isomorphic to  $Z_{n}$  for all positive integers  $n$ .  
 30. Explain why  $\operatorname{Aut}(Z_{27})$  has an element of order 18. Give a formula for an element in  $\operatorname{Aut}(Z_{20})$  that has order 4.  
 31. Let  $r \in U(n)$ . Prove that the mapping  $\alpha \colon Z_n \to Z_n$  defined by  $\alpha(s) = sr \mod n$  for all  $s$  in  $Z_n$  is an automorphism of  $Z_n$ . (This exercise is referred to in this chapter.)  
-32. The group  $\left\{\left[ \begin{array}{cc}1 & a\\ 0 & 1 \end{array} \right]\bigg{|}a\in Z\right\}$  is isomorphic to what familiar group? What if  $Z$  is replaced by  $\mathbf{R}$ ?  
+32. The group  $\leqft\{\leqft[ \begin{array}{cc}1 & a\\ 0 & 1 \end{array} \right]\bigg{|}a\in Z\right\}$  is isomorphic to what familiar group? What if  $Z$  is replaced by  $\mathbf{R}$ ?  
 33. If  $\phi$  and  $\gamma$  are isomorphisms from the cyclic group  $\langle a\rangle$  to some group and  $\phi (a) = \gamma (a)$ , prove that  $\phi = \gamma$ .  
 34. Suppose that  $\phi: Z_{50} \to Z_{50}$  is an automorphism with  $\phi(7) = 13$ . Determine a formula for  $\phi(x)$ .  
 35. Find an isomorphism from  $Z_{10}$  to  $U(11)$ .  
@@ -3615,7 +3615,7 @@ $$
 and
 
 $$
-H = \left\{\left[ \begin{array}{c c} a & 2 b \\ b & a \end{array} \right] \Big | a, b \text {a r e r a t i o n a l} \right\}.
+H = \leqft\{\leqft[ \begin{array}{c c} a & 2 b \\ b & a \end{array} \right] \Big | a, b \text {a r e r a t i o n a l} \right\}.
 $$
 
 Show that  $G$  and  $H$  are isomorphic under addition. Prove that  $G$  and  $H$  are closed under multiplication. Does your isomorphism preserve multiplication as well as addition? (  $G$  and  $H$  are examples of rings—a topic we will take up later.)
@@ -3627,7 +3627,7 @@ Show that  $G$  and  $H$  are isomorphic under addition. Prove that  $G$  and  $
 43. Let  $\mathbf{C}$  be the complex numbers and
 
 $$
-M = \left\{\left[ \begin{array}{c c} a & - b \\ b & a \end{array} \right] \Big |   a, b \in \mathbf {R} \right\}.
+M = \leqft\{\leqft[ \begin{array}{c c} a & - b \\ b & a \end{array} \right] \Big |   a, b \in \mathbf {R} \right\}.
 $$
 
 Prove that  $\mathbf{C}$  and  $M$  are isomorphic under addition and that  $\mathbf{C}^*$  and  $M^*$ , the nonzero elements of  $M$ , are isomorphic under multiplication.
@@ -3736,7 +3736,7 @@ $$
 EXAMPLE 2 Let  $\mathcal{K} = \{R_0, R_{180}\}$ , in  $D_4$ , the dihedral group of order 8. Then,
 
 $$
-\begin{array}{l} R _ {0} \mathcal {K} = \mathcal {K}, \\ R _ {9 0} \mathcal {K} = \left\{R _ {9 0}, R _ {2 7 0} \right\} = R _ {2 7 0} \mathcal {K}, \\ R _ {1 8 0} \mathcal {K} = \left\{R _ {1 8 0}, R _ {0} \right\} = \mathcal {K}, \\ V \mathcal {K} = \{V, H \} = H \mathcal {K}, \\ D \mathcal {K} = \left\{D, D ^ {\prime} \right\} = D ^ {\prime} \mathcal {K}. \\ \end{array}
+\begin{array}{l} R _ {0} \mathcal {K} = \mathcal {K}, \\ R _ {9 0} \mathcal {K} = \leqft\{R _ {9 0}, R _ {2 7 0} \right\} = R _ {2 7 0} \mathcal {K}, \\ R _ {1 8 0} \mathcal {K} = \leqft\{R _ {1 8 0}, R _ {0} \right\} = \mathcal {K}, \\ V \mathcal {K} = \{V, H \} = H \mathcal {K}, \\ D \mathcal {K} = \leqft\{D, D ^ {\prime} \right\} = D ^ {\prime} \mathcal {K}. \\ \end{array}
 $$
 
 EXAMPLE 3 Let  $H = \{0, 3, 6\}$  in  $Z_{9}$  under addition. In the case that the group operation is addition, we use the notation  $a + H$  instead of  $aH$ . Then the cosets of  $H$  in  $Z_{9}$  are
@@ -3785,16 +3785,16 @@ Note that properties 1, 5, and 7 of the lemma guarantee that the left cosets of 
 Cosets of groups allow us to organize the group elements in a coherent way with every element of each coset sharing a special property. In particular, the subgroup  $H$  is often chosen so that the cosets partition the group in some highly desirable fashion. For example, if  $G$  is 3-space  $\mathbf{R}^3$  and  $H$  is a plane through the origin, then the coset  $(a, b, c) + H$  (addition is done componentwise) is the plane passing through the point  $(a, b, c)$  and parallel to  $H$ . Thus, the cosets of  $H$  constitute a partition of 3-space into planes parallel to  $H$ . If  $G = GL(2, \mathbf{R})$  and  $H = SL(2, \mathbf{R})$ , then for any matrix  $A$  in  $G$ , the coset  $AH$  is the set of all  $2 \times 2$  matrices with the same determinant as  $A$ . Thus,
 
 $$
-\left[ \begin{array}{c c} 2 & 0 \\ 0 & 1 \end{array} \right] H \quad \text {i s t h e s e t o f a l l 2 \times 2 m a t r i c e s o f d e t e r m i n a n t 2}
+\leqft[ \begin{array}{c c} 2 & 0 \\ 0 & 1 \end{array} \right] H \quad \text {i s t h e s e t o f a l l 2 \times 2 m a t r i c e s o f d e t e r m i n a n t 2}
 $$
 
 and
 
 $$
-\left[ \begin{array}{c c} 1 & 2 \\ 2 & 1 \end{array} \right] H \quad \text {i s t h e s e t o f a l l} 2 \times 2 \text {m a t r i c e s o f d e t e r m i n a n t} - 3.
+\leqft[ \begin{array}{c c} 1 & 2 \\ 2 & 1 \end{array} \right] H \quad \text {i s t h e s e t o f a l l} 2 \times 2 \text {m a t r i c e s o f d e t e r m i n a n t} - 3.
 $$
 
-Similarly, it follows from Example 16 of Chapter 2 and Property 7 of complex numbers in Chapter 0 that if  $a + bi = \sqrt{a^2 + b^2}$  ( $\cos \theta + i \sin \theta$ ) the set of  $n$  roots of  $a + bi$  is the coset of  $\left\langle \cos \frac{360^\circ}{n} + i \sin \frac{360^\circ}{n} \right\rangle$  that contains  $\sqrt[n]{a^2 + b^2} \left( \cos \frac{\theta}{n} + i \sin \frac{\theta}{n} \right)$ .
+Similarly, it follows from Example 16 of Chapter 2 and Property 7 of complex numbers in Chapter 0 that if  $a + bi = \sqrt{a^2 + b^2}$  ( $\cos \theta + i \sin \theta$ ) the set of  $n$  roots of  $a + bi$  is the coset of  $\leqft\langle \cos \frac{360^\circ}{n} + i \sin \frac{360^\circ}{n} \right\rangle$  that contains  $\sqrt[n]{a^2 + b^2} \leqft( \cos \frac{\theta}{n} + i \sin \frac{\theta}{n} \right)$ .
 
 Property 5 of the lemma is useful for actually finding the distinct cosets of a subgroup. We illustrate this in the next example.
 
@@ -3817,7 +3817,7 @@ $$
 Now, property 5 of the lemma shows that this union is disjoint, so that
 
 $$
-| G | = \left| a _ {1} H \right| + \left| a _ {2} H \right| + \dots + \left| a _ {r} H \right|.
+| G | = \leqft| a _ {1} H \right| + \leqft| a _ {2} H \right| + \dots + \leqft| a _ {r} H \right|.
 $$
 
 Finally, since  $|a_{i}H| = |H|$  for each  $i$ , we have  $|G| = r|H|$ .
@@ -4145,7 +4145,7 @@ Let  $G_1, G_2, \ldots, G_n$  be a finite collection of groups. The external dir
 In symbols,
 
 $$
-G _ {1} \oplus G _ {2} \oplus \dots \oplus G _ {n} = \left\{\left(g _ {1}, g _ {2}, \dots , g _ {n}\right) \mid g _ {i} \in G _ {i} \right\},
+G _ {1} \oplus G _ {2} \oplus \dots \oplus G _ {n} = \leqft\{\leqft(g _ {1}, g _ {2}, \dots , g _ {n}\right) \mid g _ {i} \in G _ {i} \right\},
 $$
 
 where  $(g_{1}, g_{2}, \ldots, g_{n})(g_{1}', g_{2}', \ldots, g_{n}')$  is defined to be  $(g_{1}g_{1}', g_{2}g_{2}', \ldots, g_{n}g_{n}')$ . It is understood that each product  $g_{i}g_{i}'$  is performed with the operation of  $G_{i}$ . Note that in the case that each  $G_{i}$  is finite, we have by properties of sets that  $|G_{1} \oplus G_{2} \oplus \dots \oplus G_{n}| = |G_{1}||G_{2}|\dots|G_{n}|$ . We leave it to the reader to show that the external direct product of groups is itself a group (Exercise 1).
@@ -4307,7 +4307,7 @@ Since  $|U(20)| = 8$  and  $|U(10) \oplus U(2)| = 4$  we see that the condition 
 Among all groups, surely the cyclic groups  $Z_{n}$  have the simplest structures and, at the same time, are the easiest groups with which to compute. Direct products of groups of the form  $Z_{n}$  are only slightly more complicated in structure and computability. Because of this, algebraists endeavor to describe a finite Abelian group as such a direct product. Indeed, we shall soon see that every finite Abelian group can be so represented. With this goal in mind, let us reexamine the  $U$ -groups. Using the corollary to Theorem 8.3 and the facts, first proved by Carl Gauss in 1801, that
 
 $$
-U (2) \approx \{0 \}, \qquad U (4) \approx Z _ {2}, \qquad U \left(2 ^ {n}\right) \approx Z _ {2 ^ {n - 2}} \oplus Z _ {2} \qquad \text {f o r} n \geq 3,
+U (2) \approx \{0 \}, \qquad U (4) \approx Z _ {2}, \qquad U \leqft(2 ^ {n}\right) \approx Z _ {2 ^ {n - 2}} \oplus Z _ {2} \qquad \text {f o r} n \geq 3,
 $$
 
 and
@@ -4403,7 +4403,7 @@ Why does this method work? Well, we know that  $U(n) \approx U(p) \oplus U(q) \a
 $m = t(q - 1)$  for some integers  $s$  and  $t$ . Then  $(mx_{1}, mx_{2}) = (s(p - 1)x_{1}, (q - 1)x_{2}) = (0, 0)$  in  $Z_{p - 1} \oplus Z_{q - 1}$ , and it follows that  $x^{m} = 1$  for all  $x$  in  $U(n)$ . So, because each message  $M_{i}$  is an element of  $U(n)$  and  $e$  was chosen so that  $ed = 1 + km$  for some  $k$ , we have, modulo  $n$ ,
 
 $$
-R _ {i} ^ {d} = \left(M _ {i} ^ {e}\right) ^ {d} = M _ {i} ^ {e d} = M _ {i} ^ {1 + k m} = M _ {i} \left(M _ {i} ^ {m}\right) ^ {k} = M _ {i} 1 ^ {k} = M _ {i}.
+R _ {i} ^ {d} = \leqft(M _ {i} ^ {e}\right) ^ {d} = M _ {i} ^ {e d} = M _ {i} ^ {1 + k m} = M _ {i} \leqft(M _ {i} ^ {m}\right) ^ {k} = M _ {i} 1 ^ {k} = M _ {i}.
 $$
 
 In 2002, Ronald Rivest, Adi Shamir, and Leonard Adleman received the Association for Computing Machinery A. M. Turing Award, which is considered the "Nobel Prize of computing," for their contribution to public key cryptography.
@@ -4492,7 +4492,7 @@ and  $N$  are isomorphic. What is the corresponding theorem for the group of  $m
 38. Let
 
 $$
-H = \left\{\left[ \begin{array}{c c c} 1 & a & b \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right] \Big |   a, b \in Z _ {3} \right\}.
+H = \leqft\{\leqft[ \begin{array}{c c c} 1 & a & b \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right] \Big |   a, b \in Z _ {3} \right\}.
 $$
 
 (See Exercise 35 in Chapter 2 for the definition of multiplication.) Show that  $H$  is an Abelian group of order 9. Is  $H$  isomorphic to  $Z_9$  or to  $Z_3 \oplus Z_3$ ?
@@ -4574,9 +4574,9 @@ Use the results presented in this chapter to prove that  $U(144)$  is isomorphic
 
 86. Explain why  $S_{20}$  contains a subgroup isomorphic to  $D_5 \oplus Z_2$ .
 
-87. Let  $G = \left\{\left[ \begin{array}{cc}1 & 0\\ 0 & 1 \end{array} \right],\left[ \begin{array}{cc}1 & 0\\ 0 & -1 \end{array} \right],\left[ \begin{array}{cc} - 1 & 0\\ 0 & 1 \end{array} \right],\left[ \begin{array}{cc} - 1 & 0\\ 0 & -1 \end{array} \right]\right\}$ . Is  $G$  isomorphic to  $Z_{4}$  or  $Z_{2}\oplus Z_{2}$ ?
+87. Let  $G = \leqft\{\leqft[ \begin{array}{cc}1 & 0\\ 0 & 1 \end{array} \right],\leqft[ \begin{array}{cc}1 & 0\\ 0 & -1 \end{array} \right],\leqft[ \begin{array}{cc} - 1 & 0\\ 0 & 1 \end{array} \right],\leqft[ \begin{array}{cc} - 1 & 0\\ 0 & -1 \end{array} \right]\right\}$ . Is  $G$  isomorphic to  $Z_{4}$  or  $Z_{2}\oplus Z_{2}$ ?
 
-88. Let  $G = \left\{\left[ \begin{array}{ccc}a & 0 & 0\\ 0 & b & 0\\ 0 & 0 & c \end{array} \right]\Bigg{|}a,b,c\text{are} 1\text{or} -1\right\}$ . Is  $G$  Abelian? Is  $G$  isomorphic to  $Z_{8}$ ,  $Z_{4}\oplus Z_{2}$ , or  $Z_{2}\oplus Z_{2}\oplus Z_{2}$ ?  
+88. Let  $G = \leqft\{\leqft[ \begin{array}{ccc}a & 0 & 0\\ 0 & b & 0\\ 0 & 0 & c \end{array} \right]\Bigg{|}a,b,c\text{are} 1\text{or} -1\right\}$ . Is  $G$  Abelian? Is  $G$  isomorphic to  $Z_{8}$ ,  $Z_{4}\oplus Z_{2}$ , or  $Z_{2}\oplus Z_{2}\oplus Z_{2}$ ?  
 89. If  $H$  is a subgroup of  $U(n)$  that contains all elements in  $U(n)$  of even order, prove that  $H = U(n)$ .  
 90. For any integers  $n > 1$  and  $k > 1$  let  $U(n)^k = \{x^k \mid x \in U(n)\}$ . (The argument given in Example 5 of Chapter 3 shows that  $U(n)^k$  is a subgroup of  $U(n)$ .) Prove that  $U(n)^k$  is a proper subgroup of  $U(n)$  if and only if  $k$  is relatively prime to  $|U(n)|$ .  
 91. Assuming that a message has been sent via the RSA scheme with  $p = 37$ ,  $q = 73$ , and  $e = 5$ , decode the received message "34."  
@@ -4847,7 +4847,7 @@ EXAMPLE 18 If  $s$  and  $t$  are relatively prime positive integers then  $U(st
 EXAMPLE 19  $D_{6}$ , the dihedral group of order 12, let  $F$  denote some reflection and let  $R_{k}$  denote a rotation of  $k$  degrees. Then,
 
 $$
-D _ {6} = \left\{R _ {0}, R _ {1 2 0}, R _ {2 4 0}, F, R _ {1 2 0} F, R _ {2 4 0} F \right\} \times \left\{R _ {0}, R _ {1 8 0} \right\}.
+D _ {6} = \leqft\{R _ {0}, R _ {1 2 0}, R _ {2 4 0}, F, R _ {1 2 0} F, R _ {2 4 0} F \right\} \times \leqft\{R _ {0}, R _ {1 8 0} \right\}.
 $$
 
 Observe that Example 19 shows that  $D_{6}$  is isomorphic to  $D_{3} \oplus Z_{2}$ .
@@ -4878,13 +4878,13 @@ If a group  $G$  is the internal direct product of a finite number of subgroups 
 PROOF We first show that the normality of the  $H$ 's together with the second condition of the definition guarantees that  $h$ 's from different  $H_{i}$ 's commute. For if  $h_{i} \in H_{i}$  and  $h_{j} \in H_{j}$  with  $i \neq j$ , then
 
 $$
-\left(h _ {i} h _ {j} h _ {i} ^ {- 1}\right) h _ {j} ^ {- 1} \in H _ {j} h _ {j} ^ {- 1} = H _ {j}
+\leqft(h _ {i} h _ {j} h _ {i} ^ {- 1}\right) h _ {j} ^ {- 1} \in H _ {j} h _ {j} ^ {- 1} = H _ {j}
 $$
 
 and
 
 $$
-h _ {i} \left(h _ {j} h _ {i} ^ {- 1} h _ {j} ^ {- 1}\right) \in h _ {i} H _ {i} = H _ {i}.
+h _ {i} \leqft(h _ {j} h _ {i} ^ {- 1} h _ {j} ^ {- 1}\right) \in h _ {i} H _ {i} = H _ {i}.
 $$
 
 Thus,  $h_i h_j h_i^{-1} h_j^{-1} \in H_i \cap H_j = \{e\}$  (see Exercise 5), and, therefore,  $h_i h_j = h_j h_i$ . We next claim that each member of  $G$  can be expressed uniquely in the form  $h_1 h_2 \cdots h_n$ , where  $h_i \in H_i$ . That there is at least one such representation is the content of condition 1 of the definition. To prove uniqueness, suppose that  $g = h_1 h_2 \cdots h_n$  and  $g = h_1' h_2' \cdots h_n'$ , where  $h_i$  and  $h_i'$  belong to  $H_i$  for  $i = 1, \ldots, n$ . Then, using the fact that the  $h$ 's from different  $H_i$ 's commute, we can solve the equation
@@ -4896,7 +4896,7 @@ $$
 for  $h_n^\prime h_n^{-1}$  to obtain
 
 $$
-h _ {n} ^ {\prime} h _ {n} ^ {- 1} = \left(h _ {1} ^ {\prime}\right) ^ {- 1} h _ {1} \left(h _ {2} ^ {\prime}\right) ^ {- 1} h _ {2} \dots \left(h _ {n - 1} ^ {\prime}\right) ^ {- 1} h _ {n - 1}.
+h _ {n} ^ {\prime} h _ {n} ^ {- 1} = \leqft(h _ {1} ^ {\prime}\right) ^ {- 1} h _ {1} \leqft(h _ {2} ^ {\prime}\right) ^ {- 1} h _ {2} \dots \leqft(h _ {n - 1} ^ {\prime}\right) ^ {- 1} h _ {n - 1}.
 $$
 
 But then
@@ -4979,7 +4979,7 @@ Paul Halmos
 
 5. Show that if  $G$  is the internal direct product of  $H_{1}, H_{2}, \ldots, H_{n}$  and  $i \neq j$  with  $1 \leq i \leq n, 1 \leq j \leq n$ , then  $H_{i} \cap H_{j} = \{e\}$ . (This exercise is referred to in this chapter.)
 
-6. Let  $H = \left\{\left[ \begin{array}{ll}a & b\\ 0 & d \end{array} \right]\bigg{|}a,b,d\in \mathbf{R},ad\neq 0\right\}$ . Is  $H$  a normal subgroup of  $GL(2,\mathbf{R})$ ?
+6. Let  $H = \leqft\{\leqft[ \begin{array}{ll}a & b\\ 0 & d \end{array} \right]\bigg{|}a,b,d\in \mathbf{R},ad\neq 0\right\}$ . Is  $H$  a normal subgroup of  $GL(2,\mathbf{R})$ ?
 
 7. Let  $G = GL(2, \mathbf{R})$  and let  $K$  be a subgroup of  $\mathbf{R}^*$ . Prove that  $H = \{A \in G | \det A \in K\}$  is a normal subgroup of  $G$ .
 
@@ -5463,7 +5463,7 @@ does this prove that the number of homomorphisms from  $Z_{m}$  to  $Z_{n}$  is 
 8. Let  $G$  be a group of permutations. For each  $\sigma$  in  $G$ , define
 
 $$
-\operatorname {s g n} (\sigma) = \left\{ \begin{array}{l} + 1 \text {i f} \sigma \text {i s a n e v e n p e r m u t a t i o n}, \\ - 1 \text {i f} \sigma \text {i s a n o d d p e r m u t a t i o n}. \end{array} \right.
+\operatorname {s g n} (\sigma) = \leqft\{ \begin{array}{l} + 1 \text {i f} \sigma \text {i s a n e v e n p e r m u t a t i o n}, \\ - 1 \text {i f} \sigma \text {i s a n o d d p e r m u t a t i o n}. \end{array} \right.
 $$
 
 Prove that  $\operatorname{sgn}$  is a homomorphism from  $G$  to the multiplicative group  $\{+1, -1\}$ . What is the kernel? Why does this homomorphism allow you to conclude that  $A_{n}$  is a normal subgroup of  $S_{n}$  of index 2? Why does this prove Exercise 27 of Chapter 5?
@@ -5473,7 +5473,7 @@ Prove that  $\operatorname{sgn}$  is a homomorphism from  $G$  to the multiplica
 10. Let  $G$  be a subgroup of some dihedral group. For each  $x$  in  $G$ , define
 
 $$
-\phi (x) = \left\{ \begin{array}{l} + 1 \text {i f} x \text {i s a r o t a t i o n ,} \\ - 1 \text {i f} x \text {i s a r e f l e c t i o n .} \end{array} \right.
+\phi (x) = \leqft\{ \begin{array}{l} + 1 \text {i f} x \text {i s a r o t a t i o n ,} \\ - 1 \text {i f} x \text {i s a r e f l e c t i o n .} \end{array} \right.
 $$
 
 Prove that  $\phi$  is a homomorphism from  $G$  to the multiplicative group  $\{+1, -1\}$ . What is the kernel? Why does this prove Exercise 30 of Chapter 3?
@@ -5558,7 +5558,7 @@ d. Determine  $\phi^{-1}(12)$ . That is, determine the set of all elements that 
 64. Prove that the mapping from  $\mathbf{R}$  under addition to  $SL(2, \mathbf{R})$  that takes  $x$  to
 
 $$
-\left[ \begin{array}{c c} \cos x & \sin x \\ - \sin x & \cos x \end{array} \right]
+\leqft[ \begin{array}{c c} \cos x & \sin x \\ - \sin x & \cos x \end{array} \right]
 $$
 
 is a group homomorphism. What is the kernel of the homomorphism?
@@ -5969,13 +5969,13 @@ EXAMPLE 6 The set of all continuous real-valued functions of a real variable who
 EXAMPLE 7 Let  $R_1, R_2, \ldots, R_n$  be rings. We can use these to construct a new ring as follows. Let
 
 $$
-R _ {1} \oplus R _ {2} \oplus \dots \oplus R _ {n} = \left\{\left(a _ {1}, a _ {2}, \dots , a _ {n}\right) \mid a _ {i} \in R _ {i} \right\}
+R _ {1} \oplus R _ {2} \oplus \dots \oplus R _ {n} = \leqft\{\leqft(a _ {1}, a _ {2}, \dots , a _ {n}\right) \mid a _ {i} \in R _ {i} \right\}
 $$
 
 and perform componentwise addition and multiplication; that is, define
 
 $$
-\left(a _ {1}, a _ {2}, \dots , a _ {n}\right) + \left(b _ {1}, b _ {2}, \dots , b _ {n}\right) = \left(a _ {1} + b _ {1}, a _ {2} + b _ {2}, \dots , a _ {n} + b _ {n}\right)
+\leqft(a _ {1}, a _ {2}, \dots , a _ {n}\right) + \leqft(b _ {1}, b _ {2}, \dots , b _ {n}\right) = \leqft(a _ {1} + b _ {1}, a _ {2} + b _ {2}, \dots , a _ {n} + b _ {n}\right)
 $$
 
 and
@@ -6065,7 +6065,7 @@ EXAMPLE 12 Let  $R$  be the ring of all real-valued functions of a single real v
 EXAMPLE 13 The set
 
 $$
-\left\{\left[ \begin{array}{c c} a & 0 \\ 0 & b \end{array} \right] \bigg | a, b \in Z \right\}
+\leqft\{\leqft[ \begin{array}{c c} a & 0 \\ 0 & b \end{array} \right] \bigg | a, b \in Z \right\}
 $$
 
 of diagonal matrices is a subring of the ring of all  $2 \times 2$  matrices over  $Z$ .
@@ -6132,7 +6132,7 @@ Is the  $n$  you found prime?
 33. Give an example of ring elements  $a$  and  $b$  with the properties that  $ab = 0$  but  $ba \neq 0$ .  
 34. Let  $n$  be an integer greater than 1. In a ring in which  $x^n = x$ , for all  $x$ , show that  $ab = 0$  implies  $ba = 0$ .
 
-35. Prove that for any integer  $n > 1$ , the set  $R = \left\{\left[ \begin{array}{cc}0 & a\\ 0 & b \end{array} \right]\bigg{|}a,b\in Z\right\}$  is a non-commutative ring of order  $n^2$ . Generalize to non-commutative rings of order  $n^m$  for  $m > 1$ .  
+35. Prove that for any integer  $n > 1$ , the set  $R = \leqft\{\leqft[ \begin{array}{cc}0 & a\\ 0 & b \end{array} \right]\bigg{|}a,b\in Z\right\}$  is a non-commutative ring of order  $n^2$ . Generalize to non-commutative rings of order  $n^m$  for  $m > 1$ .  
 36. Suppose that  $R$  is a ring such that  $x^3 = x$  for all  $x$  in  $R$ .  
 a. Prove that  $6x = 0$  for all  $x$  in  $R$ .  
 b. Determine all positive integers  $n$  such that  $x^3 = x$  for all  $x$  in  $Z_n$ .  
@@ -6143,11 +6143,11 @@ b. Determine all positive integers  $n$  such that  $x^3 = x$  for all  $x$  in 
 41. Explain why every subgroup of  $Z_{n}$  under addition is also a subring of  $Z_{n}$ .  
 42. Is  $Z_6$  a subring of  $Z_{12}$ ?  
 43. Suppose that  $R$  is a ring with unity 1 and  $a$  is an element of  $R$  such that  $a^2 = 1$ . Let  $S = \{ara \mid r \in R\}$ . Prove that  $S$  is a subring of  $R$ . Does  $S$  contain 1?  
-44. Let  $M_2(Z)$  be the ring of all  $2 \times 2$  matrices over the integers and let  $R = \left\{\left[ \begin{array}{cc} a & a + b \\ a + b & b \end{array} \right] \Bigg| a, b \in Z\right\}$ . Prove or disprove that  $R$  is a sub-ring of  $M_2(Z)$ .  
-45. Let  $M_2(Z)$  be the ring of all  $2 \times 2$  matrices over the integers and let  $R = \left\{\left[ \begin{array}{cc}a & a - b\\ a - b & b \end{array} \right]\bigg{|}a,b\in Z\right\}$ . Prove or disprove that  $R$  is a sub-ring of  $M_2(Z)$ .  
-46. Let  $M_2(Z)$  be the ring of all  $2 \times 2$  matrices over the integers and let  $R = \left\{ \begin{bmatrix} a & a \\ b & b \end{bmatrix} \bigg| a, b \in Z \right\}$ . Prove or disprove that  $R$  is a subring of  $M_2(Z)$ .  
-47. Prove or disprove that  $R = \left\{ \begin{bmatrix} 0 & a \\ 0 & 0 \end{bmatrix} \mid a \in Z \right\}$  and  $S = \left\{ \begin{bmatrix} 0 & 0 \\ a & 0 \end{bmatrix} \mid a \in Z \right\}$  are subrings of  $M_2(Z)$ . What is unusual about about  $R$  and  $S$ ?  
-48. Prove or disprove that  $R = \left\{ \begin{bmatrix} a & 0 \\ 0 & 0 \end{bmatrix} \mid a \in Z \right\}$  and  $S = \left\{ \begin{bmatrix} 0 & 0 \\ 0 & a \end{bmatrix} \mid a \in Z \right\}$  are subrings of  $M_2(Z)$ .
+44. Let  $M_2(Z)$  be the ring of all  $2 \times 2$  matrices over the integers and let  $R = \leqft\{\leqft[ \begin{array}{cc} a & a + b \\ a + b & b \end{array} \right] \Bigg| a, b \in Z\right\}$ . Prove or disprove that  $R$  is a sub-ring of  $M_2(Z)$ .  
+45. Let  $M_2(Z)$  be the ring of all  $2 \times 2$  matrices over the integers and let  $R = \leqft\{\leqft[ \begin{array}{cc}a & a - b\\ a - b & b \end{array} \right]\bigg{|}a,b\in Z\right\}$ . Prove or disprove that  $R$  is a sub-ring of  $M_2(Z)$ .  
+46. Let  $M_2(Z)$  be the ring of all  $2 \times 2$  matrices over the integers and let  $R = \leqft\{ \begin{bmatrix} a & a \\ b & b \end{bmatrix} \bigg| a, b \in Z \right\}$ . Prove or disprove that  $R$  is a subring of  $M_2(Z)$ .  
+47. Prove or disprove that  $R = \leqft\{ \begin{bmatrix} 0 & a \\ 0 & 0 \end{bmatrix} \mid a \in Z \right\}$  and  $S = \leqft\{ \begin{bmatrix} 0 & 0 \\ a & 0 \end{bmatrix} \mid a \in Z \right\}$  are subrings of  $M_2(Z)$ . What is unusual about about  $R$  and  $S$ ?  
+48. Prove or disprove that  $R = \leqft\{ \begin{bmatrix} a & 0 \\ 0 & 0 \end{bmatrix} \mid a \in Z \right\}$  and  $S = \leqft\{ \begin{bmatrix} 0 & 0 \\ 0 & a \end{bmatrix} \mid a \in Z \right\}$  are subrings of  $M_2(Z)$ .
 
 49. Let  $R = Z \oplus Z \oplus Z$  and  $S = \{(a, b, c) \in R \mid a + b = c\}$ . Prove or disprove that  $S$  is a subring of  $R$ .
 
@@ -6185,9 +6185,9 @@ b. Determine all positive integers  $n$  such that  $x^3 = x$  for all  $x$  in 
 
 66. If  $a$ ,  $b$ , and  $a + b$  are units in some ring, find an expression for  $a^{-1} + b^{-1}$  in terms of  $a, b$ , and  $ab$ . Explain why this proves that  $a^{-1} + b^{-1}$  is a unit in the ring.  
 67. Let  $p > 2$  be a prime. Prove that the subring  $R = \{0, 2, 4, \ldots, 2p - 2\}$  of the ring  $Z_{2p}$  has a unity.  
-68. Let  $R = \left\{\left[ \begin{array}{cc}a & 0\\ b & c \end{array} \right]\bigg{|}a,b,c\in Z\right\}$ . Prove or disprove that  $R$  is a sub-ring of  $M(Z)$ .  
-69. Let  $R = \left\{\left[ \begin{array}{cc}a & b\\ c & 0 \end{array} \right]\bigg{|}a,b,c\in Z\right\}$ . Prove or disprove that  $R$  is a sub-ring of  $M(Z)$ .  
-70. Let  $R = \left\{\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\bigg{|}a,b,c,d\in 2Z\right\}$ . Prove or disprove that  $R$  is a subring of  $M_2(Z)$ . Is your argument valid when  $2Z$  is replaced by  $kZ$  for any positive integer  $k$ ?
+68. Let  $R = \leqft\{\leqft[ \begin{array}{cc}a & 0\\ b & c \end{array} \right]\bigg{|}a,b,c\in Z\right\}$ . Prove or disprove that  $R$  is a sub-ring of  $M(Z)$ .  
+69. Let  $R = \leqft\{\leqft[ \begin{array}{cc}a & b\\ c & 0 \end{array} \right]\bigg{|}a,b,c\in Z\right\}$ . Prove or disprove that  $R$  is a sub-ring of  $M(Z)$ .  
+70. Let  $R = \leqft\{\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\bigg{|}a,b,c,d\in 2Z\right\}$ . Prove or disprove that  $R$  is a subring of  $M_2(Z)$ . Is your argument valid when  $2Z$  is replaced by  $kZ$  for any positive integer  $k$ ?
 
 Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html for interactive software that finds the group of units of the ring of  $Z_{n}[i]$ , the Gaussian integers modulo  $n$ , and the order of each element of the group. On the basis of the orders of the elements of the group of units for various cases of  $n$ , the user is asked to try to guess the isomorphism class of this group. Another program determines the order of the group of units in the ring of  $2 \times 2$  matrices with entries from  $Z_{n}$ . The user is asked to make conjectures about the relationship between  $|SL(2,m)|$  and  $SL(2,n)|$  and between  $|GL(2,m)|$  and  $|GL(2,n)|$  for certain special cases of  $n$ .
 
@@ -6298,7 +6298,7 @@ EXAMPLE 10 Let  $Z_{5}[i] = \{a + bi \mid a, b \in Z_{5}, i^{2} = -1\}$ . This r
 
 EXAMPLE 11 Let  $Q[\sqrt{2}] = \{a + b\sqrt{2} \mid a, b \in Q\}$ . It is easy to see that  $Q[\sqrt{2}]$  is a ring. Viewed as an element of  $\mathbf{R}$ , the multiplicative inverse of any nonzero element of the form  $a + b\sqrt{2}$  is simply  $1 / (a + b\sqrt{2})$ . To verify that  $Q[\sqrt{2}]$  is a field, we must show that  $1 / (a + b\sqrt{2})$  can be written in the form  $c + d\sqrt{2}$ . In high school algebra, this process is called "rationalizing the
 
-Table 13.1 Multiplication Table for  ${Z}_{3}{\left\lbrack  i\right\rbrack  }^{ * }$  .  
+Table 13.1 Multiplication Table for  ${Z}_{3}{\leqft\lbrack  i\right\rbrack  }^{ * }$  .  
 
 <table><tr><td></td><td>1</td><td>2</td><td>i</td><td>1+i</td><td>2+i</td><td>2i</td><td>1+2i</td><td>2+2i</td></tr><tr><td>1</td><td>1</td><td>2</td><td>i</td><td>1+i</td><td>2+i</td><td>2i</td><td>1+2i</td><td>2+2i</td></tr><tr><td>2</td><td>2</td><td>1</td><td>2i</td><td>2+2i</td><td>1+2i</td><td>i</td><td>2+i</td><td>1+i</td></tr><tr><td>i</td><td>i</td><td>2i</td><td>2</td><td>2+i</td><td>2+2i</td><td>1</td><td>1+i</td><td>1+2i</td></tr><tr><td>1+i</td><td>1+i</td><td>2+2i</td><td>2+i</td><td>2i</td><td>1</td><td>1+2i</td><td>2</td><td>i</td></tr><tr><td>2+i</td><td>2+i</td><td>1+2i</td><td>2+2i</td><td>1</td><td>i</td><td>1+i</td><td>2i</td><td>2</td></tr><tr><td>2i</td><td>2i</td><td>i</td><td>1</td><td>1+2i</td><td>1+i</td><td>2</td><td>2+2i</td><td>2+i</td></tr><tr><td>1+2i</td><td>1+2i</td><td>2+i</td><td>1+i</td><td>2</td><td>2i</td><td>2+2i</td><td>i</td><td>1</td></tr><tr><td>2+2i</td><td>2+2i</td><td>1+i</td><td>1+2i</td><td>i</td><td>2</td><td>2+i</td><td>1</td><td>2i</td></tr></table>
 
@@ -6573,7 +6573,7 @@ PROOF We know that the set of cosets forms a group under addition. Once we know 
 is distributive over addition. Hence, the proof boils down to showing that multiplication is well-defined if and only if  $A$  is an ideal of  $R$ . To do this, let us suppose that  $A$  is an ideal and let  $s + A = s' + A$  and  $t + A = t' + A$ . Then we must show that  $st + A = s't' + A$ . Well, by definition,  $s = s' + a$  and  $t = t' + b$ , where  $a$  and  $b$  belong to  $A$ . Then
 
 $$
-s t = \left(s ^ {\prime} + a\right) \left(t ^ {\prime} + b\right) = s ^ {\prime} t ^ {\prime} + a t ^ {\prime} + s ^ {\prime} b + a b,
+s t = \leqft(s ^ {\prime} + a\right) \leqft(t ^ {\prime} + b\right) = s ^ {\prime} t ^ {\prime} + a t ^ {\prime} + s ^ {\prime} b + a b,
 $$
 
 and so
@@ -6604,7 +6604,7 @@ EXAMPLE 9  $2Z / 6Z = \{0 + 6Z, 2 + 6Z, 4 + 6Z\}$ . Here the operations are esse
 
 Here is a noncommutative example of an ideal and factor ring.
 
-EXAMPLE 10 Let  $R = \left\{\left[ \begin{array}{cc}a_1 & a_2\\ a_3 & a_4 \end{array} \right]\bigg{|}a_i\in Z\right\}$  and let  $I$  be the subset of  $R$  consisting of matrices with even entries. It is easy to show that  $I$  is indeed an ideal of  $R$  (Exercise 25). Consider the factor ring  $R / I$ . The interesting question about this ring is: What is its size? We claim  $R / I$  has 16 elements; in fact,  $R / I = \left\{\left[ \begin{array}{cc}r_{1} & r_{2}\\ r_{3} & r_{4} \end{array} \right] + I\bigg{|}r_{i}\in \{0,1\} \right\}$ . An example illustrates the typical situation. Which of the 16 elements is  $\left[ \begin{array}{cc}7 & 8\\ 5 & -3 \end{array} \right] + I?$  Well, observe that  $\left[ \begin{array}{cc}7 & 8\\ 5 & -3 \end{array} \right] + I = \left[ \begin{array}{cc}1 & 0\\ 1 & 1 \end{array} \right] + \left[ \begin{array}{cc}6 & 8\\ 4 & -4 \end{array} \right] + I = \left[ \begin{array}{cc}1 & 0\\ 1 & 1 \end{array} \right] + I,$  since an ideal absorbs its own elements. In essence, we may replace even entries with 0 and odd entries with 1. The general case is left to the reader (see Exercise 27.)
+EXAMPLE 10 Let  $R = \leqft\{\leqft[ \begin{array}{cc}a_1 & a_2\\ a_3 & a_4 \end{array} \right]\bigg{|}a_i\in Z\right\}$  and let  $I$  be the subset of  $R$  consisting of matrices with even entries. It is easy to show that  $I$  is indeed an ideal of  $R$  (Exercise 25). Consider the factor ring  $R / I$ . The interesting question about this ring is: What is its size? We claim  $R / I$  has 16 elements; in fact,  $R / I = \leqft\{\leqft[ \begin{array}{cc}r_{1} & r_{2}\\ r_{3} & r_{4} \end{array} \right] + I\bigg{|}r_{i}\in \{0,1\} \right\}$ . An example illustrates the typical situation. Which of the 16 elements is  $\leqft[ \begin{array}{cc}7 & 8\\ 5 & -3 \end{array} \right] + I?$  Well, observe that  $\leqft[ \begin{array}{cc}7 & 8\\ 5 & -3 \end{array} \right] + I = \leqft[ \begin{array}{cc}1 & 0\\ 1 & 1 \end{array} \right] + \leqft[ \begin{array}{cc}6 & 8\\ 4 & -4 \end{array} \right] + I = \leqft[ \begin{array}{cc}1 & 0\\ 1 & 1 \end{array} \right] + I,$  since an ideal absorbs its own elements. In essence, we may replace even entries with 0 and odd entries with 1. The general case is left to the reader (see Exercise 27.)
 
 Example 10 demonstrates how we can use the particular properties of an ideal  $I$  of a ring  $R$  to simplify the form of the elements of the factor ring  $R / I$ . Following are more examples.
 
@@ -6637,13 +6637,13 @@ Figure 14.1 Lattice of ideals of  $Z_{36}$ .
 EXAMPLE 16 The ideal  $\langle x^2 + 1 \rangle$  is maximal in  $\mathbf{R}[x]$ . To see this, assume that  $A$  is an ideal of  $\mathbf{R}[x]$  that properly contains  $\langle x^2 + 1 \rangle$ . We will prove that  $A = \mathbf{R}[x]$  by showing that  $A$  contains some nonzero real number  $c$ . [This is the constant polynomial  $h(x) = c$  for all  $x$ .] Then  $1 = (1/c)c \in A$  and therefore, by Exercise 19,  $A = \mathbf{R}[x]$ . To this end, let  $f(x) \in A$ , but  $f(x) \notin \langle x^2 + 1 \rangle$ . Then
 
 $$
-f (x) = q (x) \left(x ^ {2} + 1\right) + r (x),
+f (x) = q (x) \leqft(x ^ {2} + 1\right) + r (x),
 $$
 
 where  $r(x) \neq 0$  and the degree of  $r(x)$  is less than 2. It follows that  $r(x) = ax + b$ , where  $a$  and  $b$  are not both 0, and
 
 $$
-a x + b + r (x) = f (x) - q (x) \left(x ^ {2} + 1\right) \in A.
+a x + b + r (x) = f (x) - q (x) \leqft(x ^ {2} + 1\right) \in A.
 $$
 
 Thus,
@@ -6744,9 +6744,9 @@ c.  $\langle a\rangle = \langle m\rangle \langle n\rangle$
 24. Suppose that  $R$  is a commutative ring and  $|R| = 30$ . If  $I$  is an ideal of  $R$  and  $|I| = 10$ , prove that  $I$  is a maximal ideal.  
 25. Let  $R$  and  $I$  be as described in Example 10. Prove that  $I$  is an ideal of  $R$ .  
 26. Prove that  $I = \{f(x) \in Z[x] \mid f(1) \text{ is even}\}$  is an ideal of  $Z[x]$ .  
-27. Let  $n > 1$  be an integer. For the ring  $R$  in Example 10 let  $I = \left\{\left[ \begin{array}{cc}b_1 & b_2\\ b_3 & b_4 \end{array} \right]\biggm {|}b_i \text{is a multiple of} n\right\}$ . Prove that  $I$  is an ideal of  $R$ . How many elements are in  $I$ ?  
-28. In  $M_2(Z) = \left\{ \begin{bmatrix} a_1 & a_2 \\ a_3 & a_4 \end{bmatrix} \mid a_i \in Z \right\}$  let  $A = \left\{ \begin{bmatrix} a_1 & a_2 \\ 0 & 0 \end{bmatrix} \right\}$ ,  $a_i \in Z$ . Is  $A$  a subring of  $M_2(Z)$ ? Is  $A$  an ideal of  $M_2(Z)$ ?  
-29. Let  $R = \left\{\left[ \begin{array}{cc}a & b\\ 0 & c \end{array} \right]\biggm {|}a,b,c\in \mathbf{R}\right\}$  and  $I = \left\{\left[ \begin{array}{cc}0 & x\\ 0 & y \end{array} \right] \right\}$ $|x,y\in \mathbf{R}\}$ . Prove that  $I$  is an ideal of  $R$  and  $R / I$  is field. What is the multiplicative inverse of  $\left[ \begin{array}{ll}2 & 0\\ 0 & 0 \end{array} \right] + I?$  
+27. Let  $n > 1$  be an integer. For the ring  $R$  in Example 10 let  $I = \leqft\{\leqft[ \begin{array}{cc}b_1 & b_2\\ b_3 & b_4 \end{array} \right]\biggm {|}b_i \text{is a multiple of} n\right\}$ . Prove that  $I$  is an ideal of  $R$ . How many elements are in  $I$ ?  
+28. In  $M_2(Z) = \leqft\{ \begin{bmatrix} a_1 & a_2 \\ a_3 & a_4 \end{bmatrix} \mid a_i \in Z \right\}$  let  $A = \leqft\{ \begin{bmatrix} a_1 & a_2 \\ 0 & 0 \end{bmatrix} \right\}$ ,  $a_i \in Z$ . Is  $A$  a subring of  $M_2(Z)$ ? Is  $A$  an ideal of  $M_2(Z)$ ?  
+29. Let  $R = \leqft\{\leqft[ \begin{array}{cc}a & b\\ 0 & c \end{array} \right]\biggm {|}a,b,c\in \mathbf{R}\right\}$  and  $I = \leqft\{\leqft[ \begin{array}{cc}0 & x\\ 0 & y \end{array} \right] \right\}$ $|x,y\in \mathbf{R}\}$ . Prove that  $I$  is an ideal of  $R$  and  $R / I$  is field. What is the multiplicative inverse of  $\leqft[ \begin{array}{ll}2 & 0\\ 0 & 0 \end{array} \right] + I?$  
 30. Determine the order of  $Z[i] / \langle i \rangle$ .
 
 31. List the distinct elements in  $Z[i] / \langle 2i \rangle$ . Is  $Z[i] / \langle 2i \rangle$  an integral domain?  
@@ -6784,7 +6784,7 @@ Express  $I$  in the form  $\langle f_1(x),f_2(x)\rangle$  where  $f_{1}(x)$  an
 
 57. An integral domain  $D$  is called a principal ideal domain if every ideal of  $D$  has the form  $\langle a \rangle = \{ ad \mid d \in D \}$  for some  $a$  in  $D$ . Show that  $Z$  is a principal ideal domain. (This exercise is referred to in Chapter 18.)
 
-58. Let  $R = \left\{ \begin{bmatrix} a & b \\ 0 & d \end{bmatrix} \mid a, b, d \in Z \right\}$  and  $S = \left\{ \begin{bmatrix} r & s \\ 0 & t \end{bmatrix} \mid r, s, t \in Z, \right.$ $s$  is even. If  $S$  is an ideal of  $R$ , what can you say about  $r$  and  $t$ ?
+58. Let  $R = \leqft\{ \begin{bmatrix} a & b \\ 0 & d \end{bmatrix} \mid a, b, d \in Z \right\}$  and  $S = \leqft\{ \begin{bmatrix} r & s \\ 0 & t \end{bmatrix} \mid r, s, t \in Z, \right.$ $s$  is even. If  $S$  is an ideal of  $R$ , what can you say about  $r$  and  $t$ ?
 
 59. If  $R$  and  $S$  are principal ideal domains, prove that  $R \oplus S$  is a principal ideal ring. (That is, every ideal of  $R \oplus S$  has the form  $\langle (r, s) \rangle$ .)
 
@@ -6944,7 +6944,7 @@ Our next two examples are applications to number theory of the natural homomorph
 An integer  $n$  with decimal representation  $a_{k}a_{k - 1}\dots a_{0}$  is divisible by 9 if and only if  $a_{k} + a_{k - 1} + \dots +a_{0}$  is divisible by 9. To verify this, observe that  $n = a_k10^k +a_{k - 1}10^{k - 1} + \dots +a_0$ . Then, letting  $\alpha$  denote the natural homomorphism from  $Z$  to  $Z_{9}$  [in particular,  $\alpha (10) = 1$ ], we note that  $n$  is divisible by 9 if and only if
 
 $$
-\begin{array}{l} 0 = \alpha (n) = \alpha \left(a _ {k}\right) \left(\alpha (1 0)\right) ^ {k} + \alpha \left(a _ {k - 1}\right) \left(\alpha (1 0)\right) ^ {k - 1} + \dots + \alpha \left(a _ {0}\right) \\ = \alpha \left(a _ {k}\right) + \alpha \left(a _ {k - 1}\right) + \dots + \alpha \left(a _ {0}\right) \\ = \alpha \left(a _ {k} + a _ {k - 1} + \dots + a _ {0}\right). \\ \end{array}
+\begin{array}{l} 0 = \alpha (n) = \alpha \leqft(a _ {k}\right) \leqft(\alpha (1 0)\right) ^ {k} + \alpha \leqft(a _ {k - 1}\right) \leqft(\alpha (1 0)\right) ^ {k - 1} + \dots + \alpha \leqft(a _ {0}\right) \\ = \alpha \leqft(a _ {k}\right) + \alpha \leqft(a _ {k - 1}\right) + \dots + \alpha \leqft(a _ {0}\right) \\ = \alpha \leqft(a _ {k} + a _ {k - 1} + \dots + a _ {0}\right). \\ \end{array}
 $$
 
 But  $\alpha (a_{k} + a_{k - 1} + \dots +a_{0}) = 0$  is equivalent to  $a_{k} + a_{k - 1} + \dots +a_{0}$  being divisible by 9.
@@ -7050,13 +7050,13 @@ $$
 Since there are many representations of any particular element of  $F$  (just as in the rationals, we have  $1/2 = 3/6 = 4/8$ ), we must show that these two operations are well-defined. To do this, suppose that  $a/b = a'/b'$  and  $c/d = c'/d'$ , so that  $ab' = a'b$  and  $cd' = c'd$ . It then follows that
 
 $$
-\begin{array}{l} (a d + b c) b ^ {\prime} d ^ {\prime} = a d b ^ {\prime} d ^ {\prime} + b c b ^ {\prime} d ^ {\prime} = \left(a b ^ {\prime}\right) d d ^ {\prime} + \left(c d ^ {\prime}\right) b b ^ {\prime} \\ = \left(a ^ {\prime} b\right) d d ^ {\prime} + \left(c ^ {\prime} d\right) b b ^ {\prime} = a ^ {\prime} d ^ {\prime} b d + b ^ {\prime} c ^ {\prime} b d \\ = \left(a ^ {\prime} d ^ {\prime} + b ^ {\prime} c ^ {\prime}\right) b d. \\ \end{array}
+\begin{array}{l} (a d + b c) b ^ {\prime} d ^ {\prime} = a d b ^ {\prime} d ^ {\prime} + b c b ^ {\prime} d ^ {\prime} = \leqft(a b ^ {\prime}\right) d d ^ {\prime} + \leqft(c d ^ {\prime}\right) b b ^ {\prime} \\ = \leqft(a ^ {\prime} b\right) d d ^ {\prime} + \leqft(c ^ {\prime} d\right) b b ^ {\prime} = a ^ {\prime} d ^ {\prime} b d + b ^ {\prime} c ^ {\prime} b d \\ = \leqft(a ^ {\prime} d ^ {\prime} + b ^ {\prime} c ^ {\prime}\right) b d. \\ \end{array}
 $$
 
 Thus, by definition, we have
 
 $$
-\left. (a d + b c) / (b d) = \left(a ^ {\prime} d ^ {\prime} + b ^ {\prime} c ^ {\prime}\right) / \left(b ^ {\prime} d ^ {\prime}\right), \right.
+\leqft. (a d + b c) / (b d) = \leqft(a ^ {\prime} d ^ {\prime} + b ^ {\prime} c ^ {\prime}\right) / \leqft(b ^ {\prime} d ^ {\prime}\right), \right.
 $$
 
 and, therefore, addition is well-defined. We leave the verification that multiplication is well-defined as an exercise (Exercise 63). That  $F$  is a field is straightforward. Let  $1$  denote the unity of  $D$ . Then  $0/1$  is the additive identity of  $F$ . The additive inverse of  $a/b$  is  $-a/b$ ; the multiplicative inverse of a nonzero element  $a/b$  is  $b/a$ . The remaining field properties can be checked easily.
@@ -7086,7 +7086,7 @@ John Lennon and Paul McCartney, "We Can Work It Out," single<sup>1</sup>
 7. Show that the mapping  $\phi \colon D \to F$  in the proof of Theorem 15.6 is a ring homomorphism.  
 8. Prove that every ring homomorphism  $\phi$  from  $Z_{n}$  to itself has the form  $\phi(x) = ax$ , where  $a^2 = a$ .  
 9. Prove that the mapping from  $Z_{m}$  to  $Z_{n}$  given by  $x \to kx$  is a ring homomorphism if and only if  $n$  divides both  $m$  and  $n$  and  $k$  is an idempotent in  $Z_{n}$ . This exercise is referenced in this chapter.  
-10. Prove that the ring  $R$  in Example 10 in Chapter 14 is isomorphic to the ring  $S = \left\{\left[ \begin{array}{cc}a_1 & a_2\\ a_3 & a_4 \end{array} \right]\biggm {|}a_i\in Z_2\right\}$ .  
+10. Prove that the ring  $R$  in Example 10 in Chapter 14 is isomorphic to the ring  $S = \leqft\{\leqft[ \begin{array}{cc}a_1 & a_2\\ a_3 & a_4 \end{array} \right]\biggm {|}a_i\in Z_2\right\}$ .  
 11. For the ring  $R$  in Example 11, determine the number of group isomorphisms and the number of ring isomorphisms from  $Z_{5}$  to  $R$ .  
 12. a. Is the ring  $2Z$  isomorphic to the ring  $3Z$ ?  
 b. Is the ring  $2Z$  isomorphic to the ring  $4Z$ ?  
@@ -7096,13 +7096,13 @@ b. Is the ring  $2Z$  isomorphic to the ring  $4Z$ ?
 15. Let
 
 $$
-S = \left\{\left[ \begin{array}{c c} a & b \\ - b & a \end{array} \right] \bigm | a, b \in \mathbf {R} \right\}.
+S = \leqft\{\leqft[ \begin{array}{c c} a & b \\ - b & a \end{array} \right] \bigm | a, b \in \mathbf {R} \right\}.
 $$
 
 Show that  $\phi \colon \mathbf{C} \to S$  given by
 
 $$
-\phi (a + b i) = \left[ \begin{array}{c c} a & b \\ - b & a \end{array} \right]
+\phi (a + b i) = \leqft[ \begin{array}{c c} a & b \\ - b & a \end{array} \right]
 $$
 
 is a ring isomorphism.
@@ -7110,16 +7110,16 @@ is a ring isomorphism.
 16. Let  $Z[\sqrt{2}] = \{a + b\sqrt{2} \mid a, b \in Z\}$  and
 
 $$
-H = \left\{\left[ \begin{array}{c c} a & 2 b \\ b & a \end{array} \right] \bigg |   a, b \in Z \right\}.
+H = \leqft\{\leqft[ \begin{array}{c c} a & 2 b \\ b & a \end{array} \right] \bigg |   a, b \in Z \right\}.
 $$
 
 Show that  $Z[\sqrt{2}]$  and  $H$  are isomorphic as rings.
 
-17. Consider the mapping from  $M_2(Z)$  into  $Z$  given by  $\left[ \begin{array}{cc} a & b \\ c & d \end{array} \right] \to a$ .
+17. Consider the mapping from  $M_2(Z)$  into  $Z$  given by  $\leqft[ \begin{array}{cc} a & b \\ c & d \end{array} \right] \to a$ .
 
 Prove or disprove that this is a ring homomorphism.
 
-18. Let  $\left\{\left[ \begin{array}{cc}a & b\\ 0 & c \end{array} \right]\biggm {|}a,b,c\in Z\right\}$ . Prove or disprove that the mapping  $\left[ \begin{array}{ll}a & b\\ 0 & c \end{array} \right]\to a$  is a ring homomorphism.
+18. Let  $\leqft\{\leqft[ \begin{array}{cc}a & b\\ 0 & c \end{array} \right]\biggm {|}a,b,c\in Z\right\}$ . Prove or disprove that the mapping  $\leqft[ \begin{array}{ll}a & b\\ 0 & c \end{array} \right]\to a$  is a ring homomorphism.
 
 19. Is the mapping from  $Z_{5}$  to  $Z_{30}$  given by  $x \to 6x$  a ring homomorphism? Note that the image of the unity is the unity of the image but not the unity of  $Z_{30}$ .
 
@@ -7145,7 +7145,7 @@ Prove or disprove that this is a ring homomorphism.
 
 30. In  $Z$ , let  $A = \langle 2 \rangle$  and  $B = \langle 8 \rangle$ . Show that the group  $A / B$  is isomorphic to the group  $Z_4$  but that the ring  $A / B$  is not ring-isomorphic to the ring  $Z_4$ .
 
-31. Prove that  $R[x] / \langle x^2 \rangle = \{ax + b + \langle x^2 \rangle\}$  is ring isomorphic to  $\left\{\left[ \begin{array}{cc} a & b \\ 0 & a \end{array} \right] \mid a, b \in R\right\}$ .  
+31. Prove that  $R[x] / \langle x^2 \rangle = \{ax + b + \langle x^2 \rangle\}$  is ring isomorphic to  $\leqft\{\leqft[ \begin{array}{cc} a & b \\ 0 & a \end{array} \right] \mid a, b \in R\right\}$ .  
 32. Prove that the ring  $Z_{3}[x] / \langle x^{2} + 1\rangle$  is isomorphic to the field  $Z_{3}[i]$ .  
 33. Given that  $\phi$  is a ring homomorphism from  $Z \oplus Z$  to  $Z \oplus Z$  with  $\phi((1,0)) = (0,1)$  and  $\phi((1,1)) = (1,1)$  find a formula for  $\phi((a,b))$ .  
 34. Show that  $(Z\oplus Z) / (\langle a\rangle \oplus \langle b\rangle)$  is ring-isomorphic to  $Z_{a}\oplus Z_{b}$  
@@ -7222,7 +7222,7 @@ c. Show that  $R\oplus S$  is ring-isomorphic to  $S\oplus R$
 
 73. Let  $f(x) \in \mathbf{R}[x]$ . If  $a + bi$  is a complex zero of  $f(x)$  (here  $i = \sqrt{-1}$ ), show that  $a - bi$  is a zero of  $f(x)$ . (This exercise is referred to in Chapter 30.)
 
-74. Let  $R = \left\{ \left[ \begin{array}{cc} a & b \\ b & a \end{array} \right] \mid a, b \in Z \right\}$ , and let  $\phi$  be the mapping that takes  $\left[ \begin{array}{cc} a & b \\ b & a \end{array} \right]$  to  $a - b$ .
+74. Let  $R = \leqft\{ \leqft[ \begin{array}{cc} a & b \\ b & a \end{array} \right] \mid a, b \in Z \right\}$ , and let  $\phi$  be the mapping that takes  $\leqft[ \begin{array}{cc} a & b \\ b & a \end{array} \right]$  to  $a - b$ .
 
 a. Show that  $\phi$  is a homomorphism.  
 b. Determine the kernel of  $\phi$  
@@ -7284,7 +7284,7 @@ One of the mathematical concepts that students are most familiar with and most c
 Let  $R$  be a commutative ring. The set of formal symbols
 
 $$
-R [ x ] = \left\{a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {1} x + a _ {0} \mid a _ {i} \in R, \right.
+R [ x ] = \leqft\{a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {1} x + a _ {0} \mid a _ {i} \in R, \right.
 $$
 
 $n$  is a nonnegative integer}
@@ -7324,7 +7324,7 @@ $$
 belong to  $R[x]$ . Then
 
 $$
-\begin{array}{l} f (x) + g (x) = \left(a _ {s} + b _ {s}\right) x ^ {s} + \left(a _ {s - 1} + b _ {s - 1}\right) x ^ {s - 1} \\ + \dots + (a _ {1} + b _ {1}) x + a _ {0} + b _ {0}, \\ \end{array}
+\begin{array}{l} f (x) + g (x) = \leqft(a _ {s} + b _ {s}\right) x ^ {s} + \leqft(a _ {s - 1} + b _ {s - 1}\right) x ^ {s - 1} \\ + \dots + (a _ {1} + b _ {1}) x + a _ {0} + b _ {0}, \\ \end{array}
 $$
 
 where  $s$  is the maximum of  $m$  and  $n$ ,  $a_{i} = 0$  for  $i > n$ , and  $b_{i} = 0$  for  $i > m$ . Also,
@@ -7400,7 +7400,7 @@ PROOF We begin by showing the existence of  $q(x)$  and  $r(x)$ . If  $f(x) = 0$
 [Technically, we should get the induction started by proving the case in which  $\deg f(x) = 0$ , but this is trivial.] Thus,
 
 $$
-\begin{array}{l} f (x) = a _ {n} b _ {m} ^ {- 1} x ^ {n - m} g (x) + f _ {1} (x) \\ = a _ {n} b _ {m} ^ {- 1} x ^ {n - m} g (x) + q _ {1} (x) g (x) + r _ {1} (x) \\ = \left[ a _ {n} b _ {m} ^ {- 1} x ^ {n - m} + q _ {1} (x) \right] g (x) + r _ {1} (x). \\ \end{array}
+\begin{array}{l} f (x) = a _ {n} b _ {m} ^ {- 1} x ^ {n - m} g (x) + f _ {1} (x) \\ = a _ {n} b _ {m} ^ {- 1} x ^ {n - m} g (x) + q _ {1} (x) g (x) + r _ {1} (x) \\ = \leqft[ a _ {n} b _ {m} ^ {- 1} x ^ {n - m} + q _ {1} (x) \right] g (x) + r _ {1} (x). \\ \end{array}
 $$
 
 So, the polynomials  $q(x) = a_{n}b_{m}^{-1}x^{n - m} + q_{1}(x)$  and  $r(x) = r_1(x)$  have the desired properties.
@@ -7434,7 +7434,7 @@ $$
 So,
 
 $$
-f _ {1} (x) = \left(a _ {n} x ^ {n} + \dots\right) - a _ {n} b _ {m} ^ {- 1} x ^ {n - m} \left(b _ {m} x ^ {m} + \dots\right).
+f _ {1} (x) = \leqft(a _ {n} x ^ {n} + \dots\right) - a _ {n} b _ {m} ^ {- 1} x ^ {n - m} \leqft(b _ {m} x ^ {m} + \dots\right).
 $$
 
 To prove uniqueness, suppose that  $f(x) = g(x)q(x) + r(x)$  and  $f(x) = g(x)\bar{q}(x) + \bar{r}(x)$ , where  $r(x) = 0$  or  $\deg r(x) < \deg g(x)$  and  $\bar{r}(x) = 0$  or  $\deg \bar{r}(x) < \deg g(x)$ . Then, subtracting these two equations, we obtain
@@ -7446,7 +7446,7 @@ $$
 or
 
 $$
-\bar {r} (x) - r (x) = g (x) \left(q (x) - \bar {q} (x)\right).
+\bar {r} (x) - r (x) = g (x) \leqft(q (x) - \bar {q} (x)\right).
 $$
 
 Thus,  $\bar{r}(x) - r(x)$  is 0, or the degree of  $\bar{r}(x) - r(x)$  is at least that of  $g(x)$ . Since the latter is clearly impossible, we have  $\bar{r}(x) = r(x)$  and  $q(x) = \bar{q}(x)$  as well.
@@ -7597,7 +7597,7 @@ a commutative ring  $R$  it is possible that  $\deg f(x)g(x) < \deg f(x) + \deg 
 53. Let  $F$  be a field and let
 
 $$
-\begin{array}{l} I = \left\{a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {0} \mid a _ {n}, a _ {n - 1}, \dots , a _ {0} \in F \text {a n d} \right. \\ a _ {n} + a _ {n - 1} + \dots + a _ {0} = 0 \}. \\ \end{array}
+\begin{array}{l} I = \leqft\{a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {0} \mid a _ {n}, a _ {n - 1}, \dots , a _ {0} \in F \text {a n d} \right. \\ a _ {n} + a _ {n - 1} + \dots + a _ {0} = 0 \}. \\ \end{array}
 $$
 
 Show that  $I$  is an ideal of  $F[x]$  and find a generator for  $I$ .
@@ -7845,13 +7845,13 @@ The next two examples put the theory to work.
 We construct a field with eight elements. By Theorem 17.1 and Corollary 1 of Theorem 17.5, it suffices to find a cubic polynomial over  $Z_{2}$  that has no zero in  $Z_{2}$ . By inspection,  $x^{3} + x + 1$  fills the bill. Thus,  $Z_{2}[x] / \langle x^{3} + x + 1 \rangle = \{ax^{2} + bx + c + \langle x^{3} + x + 1 \rangle | a, b, c \in Z_{2}\}$  is a field with eight elements. For practice, let us do a few calculations in this field. Since the sum of two polynomials of the form  $ax^{2} + bx + c$  is another one of the same form, addition is easy. For example,
 
 $$
-\begin{array}{l} \left(x ^ {2} + x + 1 + \langle x ^ {3} + x + 1 \rangle\right) + \left(x ^ {2} + 1 + \langle x ^ {3} + x + 1 \rangle\right) \\ = x + \langle x ^ {3} + x + 1 \rangle . \\ \end{array}
+\begin{array}{l} \leqft(x ^ {2} + x + 1 + \langle x ^ {3} + x + 1 \rangle\right) + \leqft(x ^ {2} + 1 + \langle x ^ {3} + x + 1 \rangle\right) \\ = x + \langle x ^ {3} + x + 1 \rangle . \\ \end{array}
 $$
 
 On the other hand, multiplication of two coset representatives need not yield one of the original eight coset representatives:
 
 $$
-\begin{array}{l} \left(x ^ {2} + x + 1 + \langle x ^ {3} + x + 1 \rangle\right) \cdot \left(x ^ {2} + 1 + \langle x ^ {3} + x + 1 \rangle\right) \\ = x ^ {4} + x ^ {3} + x + 1 + \langle x ^ {3} + x + 1 \rangle = x ^ {4} + \langle x ^ {3} + x + 1 \rangle \\ \end{array}
+\begin{array}{l} \leqft(x ^ {2} + x + 1 + \langle x ^ {3} + x + 1 \rangle\right) \cdot \leqft(x ^ {2} + 1 + \langle x ^ {3} + x + 1 \rangle\right) \\ = x ^ {4} + x ^ {3} + x + 1 + \langle x ^ {3} + x + 1 \rangle = x ^ {4} + \langle x ^ {3} + x + 1 \rangle \\ \end{array}
 $$
 
 (since the ideal absorbs the last three terms). How do we express this in the form  $ax^2 + bx + c + \langle x^3 + x + 1 \rangle$ ? One way is to long divide  $x^4$  by
@@ -7869,7 +7869,7 @@ $$
 Similarly,
 
 $$
-\begin{array}{l} \left(x ^ {2} + x + \langle x ^ {3} + x + 1 \rangle\right) \cdot \left(x + \langle x ^ {3} + x + 1 \rangle\right) \\ = x ^ {3} + x ^ {2} + \langle x ^ {3} + x + 1 \rangle \\ = x ^ {2} + x + 1 + \langle x ^ {3} + x + 1 \rangle . \\ \end{array}
+\begin{array}{l} \leqft(x ^ {2} + x + \langle x ^ {3} + x + 1 \rangle\right) \cdot \leqft(x + \langle x ^ {3} + x + 1 \rangle\right) \\ = x ^ {3} + x ^ {2} + \langle x ^ {3} + x + 1 \rangle \\ = x ^ {2} + x + 1 + \langle x ^ {3} + x + 1 \rangle . \\ \end{array}
 $$
 
 A partial multiplication table for this field is given in Table 17.1. To simplify the notation, we indicate a coset by its representative only. (Complete the table yourself. Keep in mind that  $x^3$  can be replaced by  $x + 1$  and  $x^4$  by  $x^2 + x$ .)
@@ -7922,25 +7922,25 @@ Figure 17.1
 between pairs of labels whose sums are 6 and pairs of terms whose products are  $x^6$ . This correspondence is one-to-one, and it is valid for all sums and all dice—including the Sicherman dice and any other dice that yield the desired probabilities. So, let  $a_1, a_2, a_3, a_4, a_5, a_6$  and  $b_1, b_2, b_3, b_4, b_5, b_6$  be any two lists of positive integer labels for the faces of a pair of cubes with the property that the probability of rolling any particular sum with these dice (let us call them weird dice) is the same as the probability of rolling that sum with ordinary dice labeled 1 through 6. Using our observation about products of polynomials, this means that
 
 $$
-\begin{array}{l} (x ^ {6} + x ^ {5} + x ^ {4} + x ^ {3} + x ^ {2} + x) (x ^ {6} + x ^ {5} + x ^ {4} + x ^ {3} + x ^ {2} + x) \\ = \left(x ^ {a _ {1}} + x ^ {a _ {2}} + x ^ {a _ {3}} + x ^ {a _ {4}} + x ^ {a _ {5}} + x ^ {a _ {6}}\right) \cdot \\ \left(x ^ {b _ {1}} + x ^ {b _ {2}} + x ^ {b _ {3}} + x ^ {b _ {4}} + x ^ {b _ {5}} + x ^ {b _ {6}}\right). \tag {17.1} \\ \end{array}
+\begin{array}{l} (x ^ {6} + x ^ {5} + x ^ {4} + x ^ {3} + x ^ {2} + x) (x ^ {6} + x ^ {5} + x ^ {4} + x ^ {3} + x ^ {2} + x) \\ = \leqft(x ^ {a _ {1}} + x ^ {a _ {2}} + x ^ {a _ {3}} + x ^ {a _ {4}} + x ^ {a _ {5}} + x ^ {a _ {6}}\right) \cdot \\ \leqft(x ^ {b _ {1}} + x ^ {b _ {2}} + x ^ {b _ {3}} + x ^ {b _ {4}} + x ^ {b _ {5}} + x ^ {b _ {6}}\right). \tag {17.1} \\ \end{array}
 $$
 
 Now all we have to do is solve this equation for the  $a$ 's and  $b$ 's. Here is where unique factorization in  $Z[x]$  comes in. The polynomial  $x^6 + x^5 + x^4 + x^3 + x^2 + x$  factors uniquely into irreducibles as
 
 $$
-x (x + 1) \left(x ^ {2} + x + 1\right) \left(x ^ {2} - x + 1\right)
+x (x + 1) \leqft(x ^ {2} + x + 1\right) \leqft(x ^ {2} - x + 1\right)
 $$
 
 so that the left-hand side of Equation (17.1) has the irreducible factorization
 
 $$
-x ^ {2} (x + 1) ^ {2} \left(x ^ {2} + x + 1\right) ^ {2} \left(x ^ {2} - x + 1\right) ^ {2}.
+x ^ {2} (x + 1) ^ {2} \leqft(x ^ {2} + x + 1\right) ^ {2} \leqft(x ^ {2} - x + 1\right) ^ {2}.
 $$
 
 So, by Theorem 17.6, this means that these factors are the only possible irreducible factors of  $P(x) = x^{a_1} + x^{a_2} + x^{a_3} + x^{a_4} + x^{a_5} + x^{a_6}$ . Thus,  $P(x)$  has the form
 
 $$
-x ^ {q} (x + 1) ^ {r} \left(x ^ {2} + x + 1\right) ^ {t} \left(x ^ {2} - x + 1\right) ^ {u},
+x ^ {q} (x + 1) ^ {r} \leqft(x ^ {2} + x + 1\right) ^ {t} \leqft(x ^ {2} - x + 1\right) ^ {u},
 $$
 
 where  $0\leq q,r,t,u\leq 2$
@@ -8315,7 +8315,7 @@ Examples 5 and 6 illustrate just one of many similarities between the rings  $Z$
 
 EXAMPLE 7 The ring of Gaussian integers  $Z[i] = \{a + bi \mid a, b \in Z\}$  is a Euclidean domain with  $d(a + bi) = a^2 + b^2$ . Unlike the previous two examples, in this example the function  $d$  does not obviously satisfy the necessary conditions. That  $d(x) \leq d(xy)$  for  $x, y \in Z[i]$  follows directly from the fact that  $d(xy) = d(x)d(y)$  (Exercise 7). To verify that condition 2 holds, observe that if  $x, y \in Z[i]$  and  $y \neq 0$ , then  $xy^{-1} \in Q[i]$ , the field of quotients of  $Z[i]$  (Exercise 65 in Chapter 15). Say  $xy^{-1} = s + ti$ , where  $s, t \in Q$ . Now let  $m$  be the integer nearest  $s$ , and let  $n$  be the integer nearest  $t$ . (These integers may not be uniquely determined, but that does not matter.) Thus,  $|m - s| \leq 1/2$
 
-Table 18.1 Similarities Between  $Z$  and  $F\left\lbrack  x\right\rbrack$  .  
+Table 18.1 Similarities Between  $Z$  and  $F\leqft\lbrack  x\right\rbrack$  .  
 
 <table><tr><td>Z</td><td></td><td>F[x]</td></tr><tr><td>Euclidean domain:</td><td>↔</td><td>Euclidean domain:</td></tr><tr><td>d(a) = |a|</td><td></td><td>d(f(x)) = deg f(x)</td></tr><tr><td>Units:</td><td></td><td>Units:</td></tr><tr><td>a is a unit if and only if |a| = 1</td><td></td><td>f(x) is a unit if and only if deg f(x) = 0</td></tr><tr><td>Division algorithm:</td><td>↔</td><td>Division algorithm:</td></tr><tr><td>For a,b ∈ Z, b ≠ 0, there exist q,r ∈ Z such that a = bq + r, 0 ≤ r &lt; |b|</td><td></td><td>For f(x), g(x) ∈ F[x], g(x) ≠ 0, there exist q(x), r(x) ∈ F[x] such that f(x) = g(x)q(x) + r(x), 0 ≤ deg r(x) &lt; deg g(x) or r(x) = 0</td></tr><tr><td>PID:</td><td>↔</td><td>PID:</td></tr><tr><td>Every nonzero ideal I = &lt;a&gt;, where a ≠ 0 and |a| is minimum</td><td></td><td>Every nonzero ideal I = &lt;f(x)&gt;, where deg f(x) is minimum</td></tr><tr><td>Prime:</td><td>↔</td><td>Irreducible:</td></tr><tr><td>No nontrivial factors</td><td></td><td>No nontrivial factors</td></tr><tr><td>UFD:</td><td>↔</td><td>UFD:</td></tr><tr><td>Every element is a “unique” product of primes</td><td></td><td>Every element is a “unique” product of irreducibles</td></tr></table>
 
@@ -8340,7 +8340,7 @@ $$
 Clearly,  $q$  belongs to  $Z[i]$ , and since  $r = x - qy$ , so does  $r$ . Finally,
 
 $$
-\begin{array}{l} d (r) = d ([ (s - m) + (t - n) i ]) d (y) \\ = [ (s - m) ^ {2} + (t - n) ^ {2} ] d (y) \\ \leq \left(\frac {1}{4} + \frac {1}{4}\right) d (y) <   d (y). \\ \end{array}
+\begin{array}{l} d (r) = d ([ (s - m) + (t - n) i ]) d (y) \\ = [ (s - m) ^ {2} + (t - n) ^ {2} ] d (y) \\ \leq \leqft(\frac {1}{4} + \frac {1}{4}\right) d (y) <   d (y). \\ \end{array}
 $$
 
 # Theorem 18.4 ED Implies PID
@@ -8566,7 +8566,7 @@ $$
 Then, in  $E, x + \langle p(x) \rangle$  is a zero of  $p(x)$ , because
 
 $$
-\begin{array}{l} p (x + \langle p (x) \rangle) = a _ {n} (x + \langle p (x) \rangle) ^ {n} + a _ {n - 1} (x + \langle p (x) \rangle) ^ {n - 1} + \dots + a _ {0} \\ = a _ {n} \left(x ^ {n} + \langle p (x) \rangle\right) + a _ {n - 1} \left(x ^ {n - 1} + \langle p (x) \rangle\right) + \dots + a _ {0} \\ = a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {0} + \langle p (x) \rangle \\ = p (x) + \langle p (x) \rangle = 0 + \langle p (x) \rangle . \\ \end{array}
+\begin{array}{l} p (x + \langle p (x) \rangle) = a _ {n} (x + \langle p (x) \rangle) ^ {n} + a _ {n - 1} (x + \langle p (x) \rangle) ^ {n - 1} + \dots + a _ {0} \\ = a _ {n} \leqft(x ^ {n} + \langle p (x) \rangle\right) + a _ {n - 1} \leqft(x ^ {n - 1} + \langle p (x) \rangle\right) + \dots + a _ {0} \\ = a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {0} + \langle p (x) \rangle \\ = p (x) + \langle p (x) \rangle = 0 + \langle p (x) \rangle . \\ \end{array}
 $$
 
 EXAMPLE 1 Let  $f(x) = x^{2} + 1 \in Q[x]$ . Then, viewing  $f(x)$  as an element of  $E[x] = (Q[x] / \langle x^{2} + 1 \rangle)[x]$ , we have
@@ -8596,7 +8596,7 @@ Let  $F$  be a field and let  $a_1, a_2, \ldots, a_n$  be elements of some exten
 Let  $E$  be an extension field of  $F$  and let  $f(x) \in F[x]$  with degree at least 1. We say that  $f(x)$  splits in  $E$  if there are elements  $a \in F$  and  $a_1, a_2, \ldots, a_n \in E$  such that
 
 $$
-f (x) = a \left(x - a _ {1}\right) \left(x - a _ {2}\right) \dots \left(x - a _ {n}\right).
+f (x) = a \leqft(x - a _ {1}\right) \leqft(x - a _ {2}\right) \dots \leqft(x - a _ {n}\right).
 $$
 
 We call  $E$  a splitting field for  $f(x)$  over  $F$  if  $E = F(a_{1}, a_{2}, \ldots, a_{n})$ .
@@ -8624,7 +8624,7 @@ $$
 over  $Q$ . Obviously, the zeros of  $f(x)$  in  $\mathbf{C}$  are  $\pm \sqrt{2}$  and  $\pm i$ . So a splitting field for  $f(x)$  over  $Q$  is
 
 $$
-\begin{array}{l} Q (\sqrt {2}, i) = Q (\sqrt {2}) (i) = \left\{\alpha + \beta i \mid \alpha , \beta \in Q (\sqrt {2}) \right\} \\ = \left\{\left(a + b \sqrt {2}\right) + \left(c + d \sqrt {2}\right) i \mid a, b, c, d \in Q \right\}. \\ \end{array}
+\begin{array}{l} Q (\sqrt {2}, i) = Q (\sqrt {2}) (i) = \leqft\{\alpha + \beta i \mid \alpha , \beta \in Q (\sqrt {2}) \right\} \\ = \leqft\{\leqft(a + b \sqrt {2}\right) + \leqft(c + d \sqrt {2}\right) i \mid a, b, c, d \in Q \right\}. \\ \end{array}
 $$
 
 EXAMPLE 6 Consider  $f(x) = x^{2} + x + 2$  over  $Z_{3}$ . Then  $Z_{3}(i) = \{a + bi \mid a, b \in Z_{3}\}$  (see Example 9 in Chapter 13) is a splitting field for  $f(x)$  over  $Z_{3}$  because
@@ -8688,7 +8688,7 @@ Theorem 19.3 often provides a convenient way of describing the elements of a fie
 EXAMPLE 8 Consider the irreducible polynomial  $f(x) = x^6 - 2$  over  $Q$ . Since  $\sqrt[6]{2}$  is a zero of  $f(x)$ , we know from Theorem 19.3 that the set  $\{1, 2^{1/6}, 2^{2/6}, 2^{3/6}, 2^{4/6}, 2^{5/6}\}$  is a basis for  $Q(\sqrt[6]{2})$  over  $Q$ . Thus,
 
 $$
-Q (\sqrt [ 6 ]{2}) = \left\{a _ {0} + a _ {1} 2 ^ {1 / 6} + a _ {2} 2 ^ {2 / 6} + a _ {3} 2 ^ {3 / 6} + a _ {4} 2 ^ {4 / 6} + a _ {5} 2 ^ {5 / 6} \mid a _ {i} \in Q \right\}.
+Q (\sqrt [ 6 ]{2}) = \leqft\{a _ {0} + a _ {1} 2 ^ {1 / 6} + a _ {2} 2 ^ {2 / 6} + a _ {3} 2 ^ {3 / 6} + a _ {4} 2 ^ {4 / 6} + a _ {5} 2 ^ {5 / 6} \mid a _ {i} \in Q \right\}.
 $$
 
 This field is isomorphic to  $Q[x] / \langle x^6 - 2 \rangle$ .
@@ -8813,7 +8813,7 @@ If  $f(x)$  is an irreducible polynomial over a perfect field  $F$ , then  $f(x)
 PROOF The case where  $F$  has characteristic 0 has been done. So let us assume that  $f(x) \in F[x]$  is irreducible over a perfect field  $F$  of characteristic  $p$  and that  $f(x)$  has multiple zeros. From Theorem 19.6 we know that  $f(x) = g(x^p)$  for some  $g(x) \in F[x]$ , say,  $g(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$ . Since  $F^p = F$ , each  $a_i$  in  $F$  can be written in the form  $b_i^p$  for some  $b_i$  in  $F$ . So, using Exercise 49a in Chapter 13, we have
 
 $$
-\begin{array}{l} f (x) = g \left(x ^ {p}\right) = b _ {n} ^ {p} x ^ {p n} + b _ {n - 1} ^ {p} x ^ {p (n - 1)} + \dots + b _ {1} ^ {p} x ^ {p} + b _ {0} ^ {p} \\ = (b _ {n} x ^ {n} + b _ {n - 1} x ^ {n - 1} + \dots + b _ {1} x + b _ {0}) ^ {p} = (h (x)) ^ {p}, \\ \end{array}
+\begin{array}{l} f (x) = g \leqft(x ^ {p}\right) = b _ {n} ^ {p} x ^ {p n} + b _ {n - 1} ^ {p} x ^ {p (n - 1)} + \dots + b _ {1} ^ {p} x ^ {p} + b _ {0} ^ {p} \\ = (b _ {n} x ^ {n} + b _ {n - 1} x ^ {n - 1} + \dots + b _ {1} x + b _ {0}) ^ {p} = (h (x)) ^ {p}, \\ \end{array}
 $$
 
 where  $h(x) \in F[x]$ . But then  $f(x)$  is not irreducible.
@@ -9090,7 +9090,7 @@ Let  $K$  be a finite extension field of the field  $E$  and let  $E$  be a fini
 PROOF Let  $X = \{x_{1}, x_{2}, \ldots, x_{n}\}$  be a basis for  $K$  over  $E$ , and let  $Y = \{y_{1}, y_{2}, \ldots, y_{m}\}$  be a basis for  $E$  over  $F$ . It suffices to prove that
 
 $$
-Y X = \left\{y _ {j} x _ {i} \mid 1 \leq j \leq m, 1 \leq i \leq n \right\}
+Y X = \leqft\{y _ {j} x _ {i} \mid 1 \leq j \leq m, 1 \leq i \leq n \right\}
 $$
 
 is a basis for  $K$  over  $F$ . To do this, let  $a \in K$ . Then there are elements  $b_{1}, b_{2}, \ldots, b_{n} \in E$  such that
@@ -9108,7 +9108,7 @@ $$
 Thus,
 
 $$
-a = \sum_ {i = 1} ^ {n} b _ {i} x _ {i} = \sum_ {i = 1} ^ {n} \left(\sum_ {j = 1} ^ {m} c _ {i j} y _ {j}\right) x _ {i} = \sum_ {i, j} c _ {i j} (y _ {j} x _ {i}).
+a = \sum_ {i = 1} ^ {n} b _ {i} x _ {i} = \sum_ {i = 1} ^ {n} \leqft(\sum_ {j = 1} ^ {m} c _ {i j} y _ {j}\right) x _ {i} = \sum_ {i, j} c _ {i j} (y _ {j} x _ {i}).
 $$
 
 This proves that  $YX$  spans  $K$  over  $F$ .
@@ -9116,7 +9116,7 @@ This proves that  $YX$  spans  $K$  over  $F$ .
 Now suppose there are elements  $c_{ij}$  in  $F$  such that
 
 $$
-0 = \sum_ {i, j} c _ {i j} (y _ {j} x _ {i}) = \sum_ {i} \left(\sum_ {j} (c _ {i j} y _ {j})\right) x _ {i}.
+0 = \sum_ {i, j} c _ {i j} (y _ {j} x _ {i}) = \sum_ {i} \leqft(\sum_ {j} (c _ {i j} y _ {j})\right) x _ {i}.
 $$
 
 Then, since each  $\sum_{j}c_{ij}y_{j}\in E$  and  $X$  is a basis for  $K$  over  $E$ , we have
@@ -9205,11 +9205,11 @@ If  $K$  is an algebraic extension of  $E$  and  $E$  is an algebraic extension 
 PROOF Let  $a \in K$ . It suffices to show that  $a$  belongs to some finite extension of  $F$ . Since  $a$  is algebraic over  $E$ , we know that  $a$  is the zero of some irreducible polynomial in  $E[x]$ , say,  $p(x) = b_n x^n + \dots + b_0$ . Now we construct a tower of extension fields of  $F$ , as follows:
 
 $$
-F _ {0} = F \left(b _ {0}\right),
+F _ {0} = F \leqft(b _ {0}\right),
 $$
 
 $$
-F _ {1} = F _ {0} \left(b _ {1}\right), \dots , F _ {n} = F _ {n - 1} \left(b _ {n}\right).
+F _ {1} = F _ {0} \leqft(b _ {1}\right), \dots , F _ {n} = F _ {n - 1} \leqft(b _ {n}\right).
 $$
 
 In particular,
@@ -9435,7 +9435,7 @@ Although Theorems 21.1 and 21.2 tell us that fields of order  $p^n$  exist for a
 EXAMPLE 1 Let's examine the field  $\mathrm{GF}(16)$  in detail. Since  $x^4 + x + 1$  is irreducible over  $Z_2$ , we know by Theorems 21.1 and 19.3 that for any zero  $a$  of  $x^4 + x + 1$  in  $\mathrm{GF}(16)$  we have
 
 $$
-\operatorname {G F} (1 6) \approx \left\{c _ {3} a ^ {3} + c _ {2} a ^ {2} + c _ {1} a + c _ {0} \mid c _ {0}, c _ {1}, c _ {2}, c _ {3}, c _ {4} \in Z _ {2} \right\}
+\operatorname {G F} (1 6) \approx \leqft\{c _ {3} a ^ {3} + c _ {2} a ^ {2} + c _ {1} a + c _ {0} \mid c _ {0}, c _ {1}, c _ {2}, c _ {3}, c _ {4} \in Z _ {2} \right\}
 $$
 
 where addition is done as in  $Z_{2}(a)$ . To determine which of the 16 elements in the field is, say, the product  $(a^{3} + a^{2} + a + 1)(a^{3} + a)$  we expand it in the usual way and note that the condition  $a^4 + a + 1 = 0$  implies that
@@ -9455,7 +9455,7 @@ $$
 Thus,
 
 $$
-\begin{array}{l} (a ^ {3} + a ^ {2} + a + 1) (a ^ {3} + a) = a ^ {6} + a ^ {5} + a ^ {4} + a ^ {3} + a ^ {4} + a ^ {3} + a ^ {2} + a \\ = a ^ {6} + a ^ {5} + a ^ {2} + a = \left(a ^ {3} + a ^ {2}\right) + \left(a ^ {2} + a\right) + a ^ {2} + a = a ^ {3} + a ^ {2}. \\ \end{array}
+\begin{array}{l} (a ^ {3} + a ^ {2} + a + 1) (a ^ {3} + a) = a ^ {6} + a ^ {5} + a ^ {4} + a ^ {3} + a ^ {4} + a ^ {3} + a ^ {2} + a \\ = a ^ {6} + a ^ {5} + a ^ {2} + a = \leqft(a ^ {3} + a ^ {2}\right) + \leqft(a ^ {2} + a\right) + a ^ {2} + a = a ^ {3} + a ^ {2}. \\ \end{array}
 $$
 
 A way to simplify the multiplication process is to make use of the fact that the nonzero elements of  $\mathrm{GF}(16)$  form a cyclic group of order 15. To take advantage of this, we must first find a generator of this group. Since any element  $\mathrm{GF}(16)^*$  must have a multiplicative order that divides 15, all we need to do is find an element in  $\mathrm{GF}(16)^*$  whose order is not 1, 3, or 5. Our calculations have shown that  $a$  has these properties. So, we may think of  $\mathrm{GF}(16)$  as the set  $\{0,1,a,a^2,\ldots,a^{14}\}$ , where  $a^{15} = 1$ . This makes multiplication in  $\mathrm{GF}(16)$  trivial, but, unfortunately, it makes addition more difficult. For example,  $a^{10} \cdot a^7 = a^{17} = a^2$ , but what is  $(a^{10} + a^7)^{-1}$ ? So, we face a dilemma. If we write the elements of  $\mathrm{GF}(16)$  in the additive form  $c_3a^3 + c_2a^2 + c_3a + c_4$ , then addition is easy and multiplication is hard. On the other hand, if we write the elements of  $\mathrm{GF}(16)^*$  in the multiplicative form  $a^i$ , then multiplication is easy and addition is hard. Can we have the best of both? Yes, we can. All we need to do is use the relation  $a^4 = a + 1$  to make a two-way conversion table, as in Table 21.1. So, we see from Table 21.1 that
@@ -9497,13 +9497,13 @@ $$
 Now let's see whether  $a^2$  is a zero of  $f(x)$ .
 
 $$
-\begin{array}{l} f (a ^ {2}) = \left(a ^ {2}\right) ^ {3} + \left(a ^ {2}\right) ^ {2} + 1 = a ^ {6} + a ^ {4} + 1 \\ = (a ^ {2} + a) + (a ^ {2} + a + 1) + 1 = 0. \\ \end{array}
+\begin{array}{l} f (a ^ {2}) = \leqft(a ^ {2}\right) ^ {3} + \leqft(a ^ {2}\right) ^ {2} + 1 = a ^ {6} + a ^ {4} + 1 \\ = (a ^ {2} + a) + (a ^ {2} + a + 1) + 1 = 0. \\ \end{array}
 $$
 
 So, yes, it is. Next we try  $a^3$ .
 
 $$
-\begin{array}{l} f \left(a ^ {3}\right) = \left(a ^ {3}\right) ^ {3} + \left(a ^ {3}\right) ^ {2} + 1 = a ^ {9} + a ^ {6} + 1 \\ = a ^ {2} + (a ^ {2} + a) + 1 = a + 1 \neq 0. \\ \end{array}
+\begin{array}{l} f \leqft(a ^ {3}\right) = \leqft(a ^ {3}\right) ^ {3} + \leqft(a ^ {3}\right) ^ {2} + 1 = a ^ {9} + a ^ {6} + 1 \\ = a ^ {2} + (a ^ {2} + a) + 1 = a + 1 \neq 0. \\ \end{array}
 $$
 
 Now  $a^4$
@@ -9557,7 +9557,7 @@ The uniqueness portion of the theorem follows from the observation that because 
 Finally, suppose that  $F$  is a subfield of  $GF(p^n)$ . Then  $F$  is isomorphic to  $GF(p^d)$  for some  $d$  and, by Theorem 20.5,
 
 $$
-\begin{array}{l} n = [ \mathrm {G F} (p ^ {n}): \mathrm {G F} (p) ] \\ = [ \mathrm {G F} (p ^ {n}): \mathrm {G F} (p ^ {d}) ] [ \mathrm {G F} (p ^ {d}): \mathrm {G F} (p) ] \\ = \left[ \operatorname {G F} \left(p ^ {n}\right): \operatorname {G F} \left(p ^ {d}\right) \right] d. \\ \end{array}
+\begin{array}{l} n = [ \mathrm {G F} (p ^ {n}): \mathrm {G F} (p) ] \\ = [ \mathrm {G F} (p ^ {n}): \mathrm {G F} (p ^ {d}) ] [ \mathrm {G F} (p ^ {d}): \mathrm {G F} (p) ] \\ = \leqft[ \operatorname {G F} \leqft(p ^ {n}\right): \operatorname {G F} \leqft(p ^ {d}\right) \right] d. \\ \end{array}
 $$
 
 Thus,  $d$  divides  $n$ .
@@ -9819,7 +9819,7 @@ A real number  $c$  is constructible if and only if  $[Q(c):Q] = 2^k$  for some 
 Re Gauss's proof that a regular 17-gon (heptadecagon) is constructible, he gave the following expression in his book Disquisitiones Arithmeticae published in 1801.
 
 $$
-\begin{array}{l} \cos \frac {2 \pi}{1 7} = \frac {1}{1 6} \left(\sqrt {1 7} - 1 + \sqrt {3 4 - 2 \sqrt {1 7}}\right) \\ + \frac {1}{8} \left(\sqrt {1 7 + 3 \sqrt {1 7} - \sqrt {3 4 - 2 \sqrt {1 7}} - 2 \sqrt {3 4 + 2 \sqrt {1 7}}}\right). \\ \end{array}
+\begin{array}{l} \cos \frac {2 \pi}{1 7} = \frac {1}{1 6} \leqft(\sqrt {1 7} - 1 + \sqrt {3 4 - 2 \sqrt {1 7}}\right) \\ + \frac {1}{8} \leqft(\sqrt {1 7 + 3 \sqrt {1 7} - \sqrt {3 4 - 2 \sqrt {1 7}} - 2 \sqrt {3 4 + 2 \sqrt {1 7}}}\right). \\ \end{array}
 $$
 
 Figure 22.1 demonstrates the construction of a heptadecagon.
@@ -9919,21 +9919,21 @@ Let  $a$  and  $b$  be elements of a group  $G$ . We say that  $a$  and  $b$  ar
 We leave it to the reader (Exercise 1) to prove that conjugacy is an equivalence relation on  $G$ , and that the conjugacy class of  $a$  is the equivalence class of  $a$  under conjugacy. Thus, we may partition any group into disjoint conjugacy classes. Let's look at one example. In  $D_4$  we have
 
 $$
-\begin{array}{l} \operatorname {c l} (H) = \left\{R _ {0} H R _ {0} ^ {- 1}, R _ {9 0} H R _ {9 0} ^ {- 1}, R _ {1 8 0} H R _ {1 8 0} ^ {- 1}, R _ {2 7 0} H R _ {2 7 0} ^ {- 1}, \right. \\ H H H ^ {- 1}, V H V ^ {- 1}, D H D ^ {- 1}, D ^ {\prime} H D ^ {\prime - 1} \} = \{H, V \}. \\ \end{array}
+\begin{array}{l} \operatorname {c l} (H) = \leqft\{R _ {0} H R _ {0} ^ {- 1}, R _ {9 0} H R _ {9 0} ^ {- 1}, R _ {1 8 0} H R _ {1 8 0} ^ {- 1}, R _ {2 7 0} H R _ {2 7 0} ^ {- 1}, \right. \\ H H H ^ {- 1}, V H V ^ {- 1}, D H D ^ {- 1}, D ^ {\prime} H D ^ {\prime - 1} \} = \{H, V \}. \\ \end{array}
 $$
 
 Similarly, one may verify that
 
 $$
-\operatorname {c l} \left(R _ {0}\right) = \left\{R _ {0} \right\},
+\operatorname {c l} \leqft(R _ {0}\right) = \leqft\{R _ {0} \right\},
 $$
 
 $$
-\operatorname {c l} \left(R _ {9 0}\right) = \left\{R _ {9 0}, R _ {2 7 0} \right\} = \operatorname {c l} \left(R _ {2 7 0}\right),
+\operatorname {c l} \leqft(R _ {9 0}\right) = \leqft\{R _ {9 0}, R _ {2 7 0} \right\} = \operatorname {c l} \leqft(R _ {2 7 0}\right),
 $$
 
 $$
-\operatorname {c l} \left(R _ {1 8 0}\right) = \left\{R _ {1 8 0} \right\},
+\operatorname {c l} \leqft(R _ {1 8 0}\right) = \leqft\{R _ {1 8 0} \right\},
 $$
 
 $$
@@ -9941,7 +9941,7 @@ $$
 $$
 
 $$
-\operatorname {c l} (D) = \left\{D, D ^ {\prime} \right\} = \operatorname {c l} \left(D ^ {\prime}\right).
+\operatorname {c l} (D) = \leqft\{D, D ^ {\prime} \right\} = \operatorname {c l} \leqft(D ^ {\prime}\right).
 $$
 
 Theorem 23.1 gives an arithmetic relationship between the size of the conjugacy class of  $a$  and the size of  $C(a) = \{x \in G \mid xa = ax\}$ , the centralizer of  $a$  in  $G$ .
@@ -10105,11 +10105,11 @@ $$
 EXAMPLE 2 Consider the Sylow 3-subgroups of  $A_4$ . They are  $\{\alpha_1, \alpha_5, \alpha_9\}$ ,  $\{\alpha_1, \alpha_6, \alpha_{11}\}$ ,  $\{\alpha_1, \alpha_7, \alpha_{12}\}$ , and  $\{\alpha_1, \alpha_8, \alpha_{10}\}$ . (See Table 5.1.) Then,
 
 $$
-\alpha_ {2} \left\{\alpha_ {1}, \alpha_ {5}, \alpha_ {9} \right\} \alpha_ {2} ^ {- 1} = \left\{\alpha_ {1}, \alpha_ {7}, \alpha_ {1 2} \right\},
+\alpha_ {2} \leqft\{\alpha_ {1}, \alpha_ {5}, \alpha_ {9} \right\} \alpha_ {2} ^ {- 1} = \leqft\{\alpha_ {1}, \alpha_ {7}, \alpha_ {1 2} \right\},
 $$
 
 $$
-\alpha_ {3} \left\{\alpha_ {1}, \alpha_ {5}, \alpha_ {9} \right\} \alpha_ {3} ^ {- 1} = \left\{\alpha_ {1}, \alpha_ {8}, \alpha_ {1 0} \right\},
+\alpha_ {3} \leqft\{\alpha_ {1}, \alpha_ {5}, \alpha_ {9} \right\} \alpha_ {3} ^ {- 1} = \leqft\{\alpha_ {1}, \alpha_ {8}, \alpha_ {1 0} \right\},
 $$
 
 $$
@@ -10174,7 +10174,7 @@ Figure 23.2 The number of groups of a given order up to 100.
 Suppose that  $G$  is a group of order 66. Let  $H$  be a Sylow 3-subgroup of  $G$  and let  $K$  be a Sylow 11-subgroup of  $G$ . Since 1 is the only positive divisor of 66 that is equal to 1 modulo 11, we know that  $K$  is normal in  $G$ . Thus,  $HK$  is a subgroup of  $G$  of order 33 (see Example 5 in Chapter 9 and Theorem 7.2). Since any group of order 33 is cyclic (Theorem 23.6), we may write  $HK = \langle x \rangle$ . Next, let  $y \in G$  and  $|y| = 2$ . Since  $\langle x \rangle$  has index 2 in  $G$ , we know it is normal. So  $yxy^{-1} = x^i$  for some  $i$  from 1 to 32. Then,  $yx = x^i y$  and, since every member of  $G$  is of the form  $x^s y^t$ , the structure of  $G$  is completely determined by the value of  $i$ . We claim that there are only four possibilities for  $i$ . To prove this, observe that  $|x^i| = |x|$ . Thus,  $i$  and 33 are relatively prime. But also, since  $y$  has order 2,
 
 $$
-x = y ^ {- 1} \left(y x y ^ {- 1}\right) y = y ^ {- 1} x ^ {i} y = y x ^ {i} y ^ {- 1} = \left(y x y ^ {- 1}\right) i = \left(x ^ {i}\right) i = x ^ {i ^ {2}}.
+x = y ^ {- 1} \leqft(y x y ^ {- 1}\right) y = y ^ {- 1} x ^ {i} y = y x ^ {i} y ^ {- 1} = \leqft(y x y ^ {- 1}\right) i = \leqft(x ^ {i}\right) i = x ^ {i ^ {2}}.
 $$
 
 So  $x^{i^2 - 1} = e$  and therefore 33 divides  $i^2 - 1$ . From this it follows that 11 divides  $i \pm 1$ , and therefore  $i = 0 \pm 1, i = 11 \pm 1, i = 22 \pm 1$ , or  $i = 33 \pm 1$ . Putting this together with the other information we have about  $i$ , we see that  $i = 1, 10, 23$ , or 32. This proves that there are at most four groups of order 66.
@@ -10487,11 +10487,11 @@ EXAMPLE 1 We illustrate the Generalized Cayley Theorem with  $D_4$  and the subg
 In matrix form the images of  $R_{90}$  and  $\mathcal{H}$  are:
 
 $$
-T _ {R _ {9 0}} = \left[ \begin{array}{c c c c} \mathcal {H} & R _ {9 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {2 7 0} \mathcal {H} \\ R _ {9 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {2 7 0} \mathcal {H} & \mathcal {H} \end{array} \right] \text {a n d}
+T _ {R _ {9 0}} = \leqft[ \begin{array}{c c c c} \mathcal {H} & R _ {9 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {2 7 0} \mathcal {H} \\ R _ {9 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {2 7 0} \mathcal {H} & \mathcal {H} \end{array} \right] \text {a n d}
 $$
 
 $$
-\begin{array}{l} T _ {H} = \left[ \begin{array}{c c c c} \mathcal {H} & R _ {9 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {2 7 0} \mathcal {H} \\ H \mathcal {H} & H R _ {9 0} \mathcal {H} & H R _ {1 8 0} \mathcal {H} & H R _ {2 7 0} \mathcal {H} \end{array} \right] \\ = \left[ \begin{array}{c c c c} \mathcal {H} & R _ {9 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {2 7 0} \mathcal {H} \\ \mathcal {H} & R _ {2 7 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {9 0} \mathcal {H} \end{array} \right]. \\ \end{array}
+\begin{array}{l} T _ {H} = \leqft[ \begin{array}{c c c c} \mathcal {H} & R _ {9 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {2 7 0} \mathcal {H} \\ H \mathcal {H} & H R _ {9 0} \mathcal {H} & H R _ {1 8 0} \mathcal {H} & H R _ {2 7 0} \mathcal {H} \end{array} \right] \\ = \leqft[ \begin{array}{c c c c} \mathcal {H} & R _ {9 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {2 7 0} \mathcal {H} \\ \mathcal {H} & R _ {2 7 0} \mathcal {H} & R _ {1 8 0} \mathcal {H} & R _ {9 0} \mathcal {H} \end{array} \right]. \\ \end{array}
 $$
 
 In cycle form (we insert commas for clarity) the images of  $R_{90}$  and  $\mathcal{H}$  are:  $T_{R_{90}} = (\mathcal{H}, R_{90}\mathcal{H}, R_{180}\mathcal{H}, R_{270}\mathcal{H})$  and
@@ -10543,7 +10543,7 @@ Now, we have three arithmetic conditions on  $k = |N(H \cap H')|$ . We know that
 Finally, suppose that  $G$  is a non-Abelian simple group of order  $180 = 2^2 \cdot 3^2 \cdot 5$ . Then  $n_5 = 6$  or 36 and  $n_3 = 10$  ( $n_3 = 4$  is ruled out by the Index Theorem). First, assume that  $n_5 = 36$ . Then  $G$  has  $36 \cdot 4 = 144$  elements of order 5. Now, if each pair of the Sylow 3-subgroups intersects in only the identity, then there are 80 more elements in the group, which is a contradiction. So, we may assume that there are two Sylow 3-subgroups  $L_3$  and  $L_3'$  whose intersection has order 3. Then, as was the case for order 144, we have
 
 $$
-\left| N \left(L _ {3} \cap L _ {3} ^ {\prime}\right) \right| \geq \left| L _ {3} L _ {3} ^ {\prime} \right| = \frac {9 \cdot 9}{3} = 2 7.
+\leqft| N \leqft(L _ {3} \cap L _ {3} ^ {\prime}\right) \right| \geq \leqft| L _ {3} L _ {3} ^ {\prime} \right| = \frac {9 \cdot 9}{3} = 2 7.
 $$
 
 Thus,  $|N(L_3 \cap L_3')| = 9 \cdot k$ , where  $k \geq 3$  and  $k$  divides 20. Clearly, then,  $|N(L_3 \cap L_3')| \geq 36$  and therefore  $|G : N(L_3 \cap L_3')| \leq 5$ .
@@ -10773,13 +10773,13 @@ PROOF Let  $G$  be a group and let  $S$  be a set of generators for  $G$ . (Such
 Now consider the mapping from  $F$  into  $G$  given by
 
 $$
-\phi \left(x _ {1} x _ {2} \dots x _ {n}\right) = \left(x _ {1} x _ {2} \dots x _ {n}\right) _ {G}.
+\phi \leqft(x _ {1} x _ {2} \dots x _ {n}\right) = \leqft(x _ {1} x _ {2} \dots x _ {n}\right) _ {G}.
 $$
 
 [All we are doing is taking a product in  $F$  and viewing it as a product in  $G$ . For example, if  $G$  is the cyclic group of order 4 generated by  $a$ , then  $\phi(aaaa) = (aaa)_{G} = a$ .] Clearly,  $\phi$  is well-defined, for inserting or deleting expressions of the form  $xx^{-1}$  or  $x^{-1}x$  in elements of  $W(S)$  corresponds to inserting or deleting the identity in  $G$ . To check that  $\phi$  is operation-preserving, observe that
 
 $$
-\begin{array}{l} \phi \left(x _ {1} x _ {2} \dots x _ {n}\right) \overline {{\left(y _ {1} y _ {2} \cdots y _ {m}\right)}} = \phi \left(x _ {1} x _ {2} \dots x _ {n} y _ {1} y _ {2} \dots y _ {m}\right) \\ = \left(x _ {1} x _ {2} \dots x _ {n} y _ {1} y _ {2} \dots y _ {m}\right) _ {G} \\ = \left(x _ {1} x _ {2} \dots x _ {n}\right) _ {G} \left(y _ {1} y _ {2} \dots y _ {m}\right) _ {G}. \\ \end{array}
+\begin{array}{l} \phi \leqft(x _ {1} x _ {2} \dots x _ {n}\right) \overline {{\leqft(y _ {1} y _ {2} \cdots y _ {m}\right)}} = \phi \leqft(x _ {1} x _ {2} \dots x _ {n} y _ {1} y _ {2} \dots y _ {m}\right) \\ = \leqft(x _ {1} x _ {2} \dots x _ {n} y _ {1} y _ {2} \dots y _ {m}\right) _ {G} \\ = \leqft(x _ {1} x _ {2} \dots x _ {n}\right) _ {G} \leqft(y _ {1} y _ {2} \dots y _ {m}\right) _ {G}. \\ \end{array}
 $$
 
 Finally,  $\phi$  is onto  $G$  because  $S$  generates  $G$ .
@@ -10809,7 +10809,7 @@ Let  $G$  be a group generated by some subset  $A = \{a_1, a_2, \ldots, a_n\}$  
 The notation for this situation is
 
 $$
-G = \left\langle a _ {1}, a _ {2}, \dots , a _ {n} \mid w _ {1} = w _ {2} = \dots = w _ {t} = e \right\rangle .
+G = \leqft\langle a _ {1}, a _ {2}, \dots , a _ {n} \mid w _ {1} = w _ {2} = \dots = w _ {t} = e \right\rangle .
 $$
 
 As a matter of convenience, we have restricted the number of generators and relations in our definition to be finite. This restriction is not necessary, however. Also, it is often more convenient to write a relation in implicit
@@ -10849,7 +10849,7 @@ $$
 and let
 
 $$
-\begin{array}{l} \bar {G} = \left\langle a _ {1}, a _ {2}, \dots , a _ {n} \mid w _ {1} = w _ {2} = \dots = w _ {t} = w _ {t + 1} = \dots = \right. \\ w _ {t + k} = e \rangle . \\ \end{array}
+\begin{array}{l} \bar {G} = \leqft\langle a _ {1}, a _ {2}, \dots , a _ {n} \mid w _ {1} = w _ {2} = \dots = w _ {t} = w _ {t + 1} = \dots = \right. \\ w _ {t + k} = e \rangle . \\ \end{array}
 $$
 
 Then  $\bar{G}$  is a homomorphic image of  $G$ .
@@ -10867,7 +10867,7 @@ If  $K$  is a group satisfying the defining relations of a finite group  $G$  an
 EXAMPLE 5 Quaternions Consider the group  $G = \langle a, b \mid a^2 = b^2 = (ab)^2 \rangle$ . What does  $G$  look like? Formally, of course,  $G$  is isomorphic to  $F / N$ , where  $F$  is free on  $\{a, b\}$  and  $N$  is the smallest normal subgroup of  $F$  containing  $b^{-2}a^2$  and  $(ab)^{-2}a^2$ . Now, let  $H = \langle b \rangle$  and  $S = \{H, aH\}$ . Then, just as in Example 2, it follows that  $S$  is closed under multiplication by  $a$  and  $b$  from the left. So, as in Example 2, we have  $G = H \cup aH$ . Thus, we can determine the elements of  $G$  once we know exactly how many elements there are in  $H$ . (Here again, the three relations come in.) To do this, first observe that  $b^2 = (ab)^2 = abab$  implies  $b = aba$ . Then  $a^2 = b^2 = (aba)(aba) = aba^2ba = ab^4a$  and therefore  $b^4 = e$ . Hence,  $H$  has at most four elements, and therefore  $G$  has at most eight—namely,  $e, b, b^2, b^3, a, ab, ab^2$ , and  $ab^3$ . It is conceivable, however, that not all of these eight elements are distinct. For example,  $Z_2 \oplus Z_2$  satisfies the defining relations and has only four elements. Perhaps it is the largest group satisfying the relations. How can we show that the eight elements listed above are distinct? Well, consider the group  $\bar{G}$  generated by the matrices
 
 $$
-A = \left[ \begin{array}{c c} 0 & 1 \\ - 1 & 0 \end{array} \right] \quad \text {a n d} \quad B = \left[ \begin{array}{c c} 0 & i \\ i & 0 \end{array} \right],
+A = \leqft[ \begin{array}{c c} 0 & 1 \\ - 1 & 0 \end{array} \right] \quad \text {a n d} \quad B = \leqft[ \begin{array}{c c} 0 & i \\ i & 0 \end{array} \right],
 $$
 
 where  $i = \sqrt{-1}$ . Direct calculations show that in  $\bar{G}$ , the elements  $e, B, B^2, B^3, A, AB, AB^2$ , and  $AB^3$  are distinct and that  $\bar{G}$  satisfies the relations  $A^2 = B^2 = (AB)^2$ . So, it follows from the corollary to Dyck's Theorem that  $\bar{G}$  is isomorphic to  $G$  and therefore  $G$  has order 8.
@@ -10883,7 +10883,7 @@ $$
 Once again, we let  $H = \langle b \rangle$  and observe that  $G = H \cup aH \cup a^2H$ . Thus,
 
 $$
-G = \left\{a ^ {i} b ^ {j} \mid 0 \leq i \leq 2, 0 \leq j \leq 8 \right\},
+G = \leqft\{a ^ {i} b ^ {j} \mid 0 \leq i \leq 2, 0 \leq j \leq 8 \right\},
 $$
 
 and therefore  $G$  has at most 27 elements. But this time we will not be able to find some concrete group of order 27 satisfying the same relations that  $G$  does, for notice that  $b^{-1} = a^{-1}ba$  implies
@@ -10989,7 +10989,7 @@ $$
 However,
 
 $$
-\left(a b H\right) ^ {2 i} = \left(a H\right) ^ {2} = a ^ {2} H = H,
+\leqft(a b H\right) ^ {2 i} = \leqft(a H\right) ^ {2} = a ^ {2} H = H,
 $$
 
 so that  $D_{\infty} / H$  is again finite. This contradiction forces  $H = \{e\}$  and  $G$  to be isomorphic to  $D_{\infty}$ .
@@ -11053,7 +11053,7 @@ b. Express  $b^3 abab^3 a$  in the form  $b^i a^j$ .
 23. Let  $G = \langle a, b \mid a^6 = b^3 = e, b^{-1}ab = a^3 \rangle$ . How many elements does  $G$  have? To what familiar group is  $G$  isomorphic?  
 24. Let  $G = \langle x, y \mid x^4 = y^4 = e, xyxy^{-1} = e \rangle$ . Show that  $|G| \leq 16$ . Assuming that  $G = 16$ , find the center of  $G$  and show that  $G / \langle y^2 \rangle$  is isomorphic to  $D_4$ .  
 25. Determine the orders of the elements of  $D_{\infty}$  
-26. Let  $G = \left\{\left[ \begin{array}{ccc}1 & a & b\\ 0 & 1 & c\\ 0 & 0 & 1 \end{array} \right]\Bigg{|}a,b,c\in Z_2\right\}$ . Prove that  $G$  is isomorphic to  
+26. Let  $G = \leqft\{\leqft[ \begin{array}{ccc}1 & a & b\\ 0 & 1 & c\\ 0 & 0 & 1 \end{array} \right]\Bigg{|}a,b,c\in Z_2\right\}$ . Prove that  $G$  is isomorphic to  
 27. Let  $G = \langle a, b, c, d \mid ab = c, bc = d, cd = a, da = b \rangle$ . Determine  $|G|$ .  
 28. Let  $G = \langle a, b \mid a^2 = e, b^2 = e, aba = bab \rangle$ . To what familiar group is  $G$  isomorphic?  
 29. Let  $G = \langle a, b \mid a^3 = e, b^2 = e, aba^{-1}b^{-1} = e \rangle$ . To what familiar group is  $G$  isomorphic?  
@@ -11161,7 +11161,7 @@ $$
 are also reflections. Furthermore, this is the entire set of reflections of  $G$ . For if  $g$  is any reflection in  $G$ , then  $fg$  is a rotation, and so  $fg = (R_{\beta})^k$  for some  $k$ . Thus,  $g = f^{-1}(R_{\beta})^k = f(R_{\beta})^k$ . So
 
 $$
-G = \left\{R _ {0}, R _ {\beta}, (R _ {\beta}) ^ {2}, \dots , (R _ {\beta}) ^ {n - 1}, f, f R _ {\beta}, f (R _ {\beta}) ^ {2}, \dots , f (R _ {\beta}) ^ {n - 1} \right\},
+G = \leqft\{R _ {0}, R _ {\beta}, (R _ {\beta}) ^ {2}, \dots , (R _ {\beta}) ^ {n - 1}, f, f R _ {\beta}, f (R _ {\beta}) ^ {2}, \dots , f (R _ {\beta}) ^ {n - 1} \right\},
 $$
 
 and  $G$  is generated by the pair of reflections  $f$  and  $fR_{\beta}$ . Hence, by our characterization of the dihedral groups (Theorem 25.5),  $G$  is the dihedral group  $D_{n}$ .
@@ -11320,7 +11320,7 @@ $$
 n = \sum_ {\phi \in G} | \operatorname {f i x} (\phi) |.
 $$
 
-Second, for each particular  $i$  in  $S$ , observe that  $\left|\operatorname{stab}_G(i)\right|$  is exactly the number of pairs  $(\phi, i)$  for which  $\phi(i) = i$ . So,
+Second, for each particular  $i$  in  $S$ , observe that  $\leqft|\operatorname{stab}_G(i)\right|$  is exactly the number of pairs  $(\phi, i)$  for which  $\phi(i) = i$ . So,
 
 $$
 n = \sum_ {i \in S} | \operatorname {s t a b} _ {G} (i) |.
@@ -11393,7 +11393,7 @@ two elements of order 2 yield the same results.
 Now that we have analyzed the three types of group elements, we can apply Burnside's Theorem. In particular, the number of distinct colorings of the edges of a tetrahedron with three colors is
 
 $$
-\frac {1}{1 2} \left(1 \cdot 3 ^ {6} + 8 \cdot 3 ^ {2} + 3 \cdot 3 ^ {4}\right) = 8 7.
+\frac {1}{1 2} \leqft(1 \cdot 3 ^ {6} + 8 \cdot 3 ^ {2} + 3 \cdot 3 ^ {4}\right) = 8 7.
 $$
 
 Surely it would be a difficult task to solve this problem without Burnside's Theorem.
@@ -11569,7 +11569,7 @@ Figures 28.2 and 28.3 show a Hamiltonian path for the digraph given in Example 2
 Is there a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\{(1, 0), (0, 1) \}: Z _ {3} \oplus Z _ {2}\right)?
+\operatorname {C a y} \leqft(\{(1, 0), (0, 1) \}: Z _ {3} \oplus Z _ {2}\right)?
 $$
 
 More generally, let us investigate the existence of Hamiltonian circuits in
@@ -11633,7 +11633,7 @@ some  $s \in S$ . Let  $T = S - \{s\}$  that is,  $T$  is  $S$  with  $s$  remov
 Because  $|T| < |S|$  and  $H$  is a finite Abelian group, the induction hypothesis guarantees that there is a Hamiltonian path  $(a_{1}, a_{2}, \ldots, a_{k})$  in  $\operatorname{Cay}(T:H)$ . We will show that
 
 $$
-\left(a _ {1}, a _ {2}, \dots , a _ {k}, s, a _ {1}, a _ {2}, \dots , a _ {k}, s, \dots , a _ {1}, a _ {2}, \dots , a _ {k}, s, a _ {1}, a _ {2}, \dots , a _ {k}\right),
+\leqft(a _ {1}, a _ {2}, \dots , a _ {k}, s, a _ {1}, a _ {2}, \dots , a _ {k}, s, \dots , a _ {1}, a _ {2}, \dots , a _ {k}, s, a _ {1}, a _ {2}, \dots , a _ {k}\right),
 $$
 
 where  $a_1, a_2, \ldots, a_k$  occurs  $|G| / |H|$  times and  $s$  occurs  $|G| / |H| - 1$  times, is a Hamiltonian path in  $\operatorname{Cay}(S; G)$ .
@@ -11651,7 +11651,7 @@ $$
 Then a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\left\{\left(r, 0\right), (f, 0), (e, 1) \right\}: D _ {3} \oplus Z _ {6}\right)
+\operatorname {C a y} \leqft(\leqft\{\leqft(r, 0\right), (f, 0), (e, 1) \right\}: D _ {3} \oplus Z _ {6}\right)
 $$
 
 is given in Figure 28.7.
@@ -11662,7 +11662,7 @@ Figure 28.7 Cay  $\{((r,0),(f,0),(e,1)\} :D_3\oplus Z_6)$
 Although it is not easy to prove, it is true that
 
 $$
-\operatorname {C a y} \left(\left\{\left(r, 0\right), (f, 0), (e, 1) \right\}: D _ {n} \oplus Z _ {m}\right)
+\operatorname {C a y} \leqft(\leqft\{\leqft(r, 0\right), (f, 0), (e, 1) \right\}: D _ {n} \oplus Z _ {m}\right)
 $$
 
 has a Hamiltonian circuit for all  $n$  and  $m$ . Example 10 shows the circuit for this digraph when  $m$  is even.
@@ -11676,13 +11676,13 @@ $$
 Then a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\left\{\left(r, 0\right), (f, 0), (e, 1) \right\}: D _ {n} \oplus Z _ {m}\right)
+\operatorname {C a y} \leqft(\leqft\{\leqft(r, 0\right), (f, 0), (e, 1) \right\}: D _ {n} \oplus Z _ {m}\right)
 $$
 
 with  $m$  even is traced in Figure 28.8. The sequence of generators that traces the circuit is
 
 $$
-m * \left[ (n - 1) * (r, 0), (f, 0), (n - 1) * (r, 0), (e, 1) \right].
+m * \leqft[ (n - 1) * (r, 0), (f, 0), (n - 1) * (r, 0), (e, 1) \right].
 $$
 
 ![](images/902c3546d225c141e45b3c14f60858c1f5ef746550eb24b69def14af62fa7def.jpg)  
@@ -11723,13 +11723,13 @@ Alfréd Rényi
 2. Find a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\left\{\left(a, 0\right), \left(b, 0\right), (e, 1) \right\}: Q _ {4} \oplus Z _ {2}\right).
+\operatorname {C a y} \leqft(\leqft\{\leqft(a, 0\right), \leqft(b, 0\right), (e, 1) \right\}: Q _ {4} \oplus Z _ {2}\right).
 $$
 
 3. Find a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\left\{\left(a, 0\right), \left(b, 0\right), (e, 1) \right\}: Q _ {4} \oplus Z _ {m}\right)
+\operatorname {C a y} \leqft(\leqft\{\leqft(a, 0\right), \leqft(b, 0\right), (e, 1) \right\}: Q _ {4} \oplus Z _ {m}\right)
 $$
 
 where  $m$  is even.
@@ -11751,7 +11751,7 @@ $$
 is a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\left\{\left(r, 0\right), (f, 0), (e, 1) \right\}: D _ {4} \oplus Z _ {6}\right).
+\operatorname {C a y} \leqft(\leqft\{\leqft(r, 0\right), (f, 0), (e, 1) \right\}: D _ {4} \oplus Z _ {6}\right).
 $$
 
 10. Draw a picture of  $\mathrm{Cay}(\{2,5\} :Z_8)$
@@ -11761,7 +11761,7 @@ $$
 13. Show that there is no Hamiltonian path in
 
 $$
-\operatorname {C a y} \left(\{(1, 0), (0, 1) \}: Z _ {3} \oplus Z _ {2}\right)
+\operatorname {C a y} \leqft(\{(1, 0), (0, 1) \}: Z _ {3} \oplus Z _ {2}\right)
 $$
 
 from  $(0,0)$  to  $(2,0)$ .
@@ -11778,7 +11778,7 @@ b. Show that the sequence  $s_1s_2 \cdots s_n$  is a Hamiltonian circuit if and 
 19. Let  $Q_{8}$  be as in Exercise 18. Find a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\left\{\left(a, 0\right), \left(b, 0\right), (e, 1) \right\}: Q _ {8} \oplus Z _ {5}\right).
+\operatorname {C a y} \leqft(\leqft\{\leqft(a, 0\right), \leqft(b, 0\right), (e, 1) \right\}: Q _ {8} \oplus Z _ {5}\right).
 $$
 
 20. Prove that the Cayley digraph given in Example 6 does not have a Hamiltonian circuit. Does it have a Hamiltonian path?
@@ -11786,7 +11786,7 @@ $$
 21. Find a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\left\{\left(R _ {9 0}, 0\right), (H, 0), \left(R _ {0}, 1\right) \right\}: D _ {4} \oplus Z _ {3}\right).
+\operatorname {C a y} \leqft(\leqft\{\leqft(R _ {9 0}, 0\right), (H, 0), \leqft(R _ {0}, 1\right) \right\}: D _ {4} \oplus Z _ {3}\right).
 $$
 
 Does this circuit generalize to the case  $D_{n + 1} \oplus Z_n$  for all  $n \geq 3$ ?
@@ -11794,19 +11794,19 @@ Does this circuit generalize to the case  $D_{n + 1} \oplus Z_n$  for all  $n \g
 22. Let  $Q_{8}$  be as in Exercise 18. Find a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\left\{\left(a, 0\right), \left(b, 0\right), (e, 1) \right\}: Q _ {8} \oplus Z _ {m}\right) \text {f o r a l l e v e n} m.
+\operatorname {C a y} \leqft(\leqft\{\leqft(a, 0\right), \leqft(b, 0\right), (e, 1) \right\}: Q _ {8} \oplus Z _ {m}\right) \text {f o r a l l e v e n} m.
 $$
 
 23. Let  $Q_4$  be as in Example 7. Find a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left( \right.\left\{\left(a, 0\right), (b, 0) \right., (e, 1) \left. \right\}: Q _ {4} \oplus Z _ {3}\left. \right).
+\operatorname {C a y} \leqft( \right.\leqft\{\leqft(a, 0\right), (b, 0) \right., (e, 1) \leqft. \right\}: Q _ {4} \oplus Z _ {3}\leqft. \right).
 $$
 
 24. Let  $Q_4$  be as in Example 7. Find a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\left\{\left(a, 0\right), \left(b, 0\right), \left(e, 1\right) \right\}: Q _ {4} \oplus Z _ {m}\right) \text {f o r a l l o d d} m \geq 3.
+\operatorname {C a y} \leqft(\leqft\{\leqft(a, 0\right), \leqft(b, 0\right), \leqft(e, 1\right) \right\}: Q _ {4} \oplus Z _ {m}\right) \text {f o r a l l o d d} m \geq 3.
 $$
 
 25. Write the sequence of generators that describes the Hamiltonian circuit in Example 9.
@@ -11814,7 +11814,7 @@ $$
 26. Let  $D_{n}$  be as in Example 10. Find a Hamiltonian circuit in
 
 $$
-\operatorname {C a y} \left(\{(r, 0), (f, 0), (e, 1) \}: D _ {4} \oplus Z _ {5}\right).
+\operatorname {C a y} \leqft(\{(r, 0), (f, 0), (e, 1) \}: D _ {4} \oplus Z _ {5}\right).
 $$
 
 Does your circuit generalize to the case  $D_{n} \oplus Z_{n + 1}$  for all  $n \geq 4$ ?
@@ -11932,7 +11932,7 @@ Before plunging into the formal theory, it is instructive to look at a sophistic
 This time, our message set consists of all possible 4-tuples of 0's and 1's (i.e., we wish to send a sequence of 0's and 1's of length 4). Encoding will be done by viewing these messages as  $1 \times 4$  matrices with entries from  $Z_{2}$  and multiplying each of the 16 messages on the right by the matrix
 
 $$
-G = \left[ \begin{array}{c c c c c c c} 1 & 0 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 0 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 & 0 & 1 & 1 \end{array} \right].
+G = \leqft[ \begin{array}{c c c c c c c} 1 & 0 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 0 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 & 0 & 1 & 1 \end{array} \right].
 $$
 
 (All arithmetic is done modulo 2.) The resulting 7-tuples are called code words. (See Table 29.1.)
@@ -12062,7 +12062,7 @@ EXAMPLE 7 Since the Hamming weight of the linear code given in Example 2 is 4, i
 It is natural to wonder how the matrix  $G$  used to produce the Hamming code in Example 1 was chosen. Better yet, in general, how can one find a matrix  $G$  that carries a subspace  $V$  of  $F^k$  to a subspace of  $F^n$  in such a way that for any  $k$ -tuple  $v$  in  $V$ , the vector  $vG$  will agree with  $v$  in the first  $k$  components and build in some redundancy in the last  $n - k$  components? Such a matrix is a  $k \times n$  matrix of the form
 
 $$
-\left[ \begin{array}{c c c c c c c} 1 & 0 & \dots & 0 & a _ {1 1} & \dots & a _ {1 n - k} \\ 0 & 1 & \dots & 0 & \cdot & & \cdot \\ \cdot & \cdot & & \cdot & \cdot & & \cdot \\ \cdot & \cdot & & \cdot & \cdot & & \cdot \\ \cdot & \cdot & & \cdot & \cdot & & \cdot \\ 0 & 0 & \dots & 1 & a _ {k 1} & \dots & a _ {k n - k} \end{array} \right]
+\leqft[ \begin{array}{c c c c c c c} 1 & 0 & \dots & 0 & a _ {1 1} & \dots & a _ {1 n - k} \\ 0 & 1 & \dots & 0 & \cdot & & \cdot \\ \cdot & \cdot & & \cdot & \cdot & & \cdot \\ \cdot & \cdot & & \cdot & \cdot & & \cdot \\ \cdot & \cdot & & \cdot & \cdot & & \cdot \\ 0 & 0 & \dots & 1 & a _ {k 1} & \dots & a _ {k n - k} \end{array} \right]
 $$
 
 where the  $a_{ij}$ 's belong to  $F$ . A matrix of this form is called the standard generator matrix (or standard encoding matrix) for the resulting code.
@@ -12082,7 +12082,7 @@ $$
 we may construct a (6, 3) linear code over  $Z_{2}$  with the standard generator matrix
 
 $$
-G = \left[ \begin{array}{c c c c c c} 1 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 1 & 1 & 1 \end{array} \right].
+G = \leqft[ \begin{array}{c c c c c c} 1 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 1 & 1 & 1 \end{array} \right].
 $$
 
 The resulting code words are given in Table 29.2. Since the minimum weight of any nonzero code word is 3, this code will correct any single error or detect any double error.
@@ -12100,7 +12100,7 @@ $$
 and we construct a (4, 2) linear code over  $Z_{3}$  with the standard generator matrix
 
 $$
-G = \left[ \begin{array}{c c c c} 1 & 0 & 2 & 1 \\ 0 & 1 & 2 & 2 \end{array} \right].
+G = \leqft[ \begin{array}{c c c c} 1 & 0 & 2 & 1 \\ 0 & 1 & 2 & 2 \end{array} \right].
 $$
 
 The resulting code words are given in Table 29.3. Since the minimum weight of the code is 3, it will correct any single error or detect any double error.
@@ -12118,7 +12118,7 @@ Table 29.3
 from  $G$  by deleting the first  $k$  columns of  $G$ . Then, the  $n \times (n - k)$  matrix
 
 $$
-H = \left[ \frac {- A}{I _ {n - k}} \right],
+H = \leqft[ \frac {- A}{I _ {n - k}} \right],
 $$
 
 where  $-A$  is the negative of  $A$  and  $I_{n - k}$  is the  $(n - k)\times (n - k)$  identity matrix, is called the parity-check matrix for  $V$ . (In the literature, the transpose of  $H$  is called the parity-check matrix, but  $H$  is much more convenient for our purposes.) The decoding procedure is:
@@ -12132,13 +12132,13 @@ $\mathbf{3^{\prime}}$ . When the code is binary, category 3 reduces to the follo
 EXAMPLE 10 Consider the Hamming (7, 4) code given in Example 1. The generator matrix is
 
 $$
-G = \left[ \begin{array}{c c c c c c c} 1 & 0 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 0 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 & 0 & 1 & 1 \end{array} \right].
+G = \leqft[ \begin{array}{c c c c c c c} 1 & 0 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 0 & 1 & 1 & 1 \\ 0 & 0 & 0 & 1 & 0 & 1 & 1 \end{array} \right].
 $$
 
 and the corresponding parity-check matrix is
 
 $$
-H = \left[ \begin{array}{c c c} 1 & 1 & 0 \\ 1 & 0 & 1 \\ 1 & 1 & 1 \\ 0 & 1 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right].
+H = \leqft[ \begin{array}{c c c} 1 & 1 & 0 \\ 1 & 0 & 1 \\ 1 & 1 & 1 \\ 0 & 1 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right].
 $$
 
 Now, if the received vector is  $v = 0000110$ , we find  $vH = 110$ . Since this is the first row of  $H$  and no other row, we assume that an error has been made in the first position of  $v$ . Thus, the transmitted code word is assumed to be 1000110, and the corresponding message is assumed to be 1000. Similarly, if  $w = 1011111$  is the received word, then  $wH = 101$ , and we assume that an error has been made in the second position. So, we assume that 1111111 was sent and that 1111 was the intended message. If the encoded message 1001101 is received as  $z = 1001011$  (with errors in the fifth and sixth positions), we find  $zH = 110$ . Since this matches the first row of  $H$ , we decode  $z$  as 0001011 and incorrectly assume that the message 0001 was intended. On the other hand, nearest-neighbor decoding would yield the same incorrect result.
@@ -12149,10 +12149,10 @@ Notice that when only one error was made in transmission, the parity-check decod
 
 Let  $C$  be a systematic  $(n, k)$  linear code over  $F$  with a standard generator matrix  $G$  and parity-check matrix  $H$ . Then, for any vector  $v$  in  $F^n$ , we have  $vH = 0$  (the zero vector) if and only if  $v$  belongs to  $C$ .
 
-PROOF First note that, since  $H$  has rank  $n - k$ , we may think of  $H$  as a linear transformation from  $F^n$  onto  $F^{n - k}$ . Therefore, it follows from the dimension theorem for linear transformations that  $n = n - k + \dim (\operatorname{Ker}H)$ , so that  $\operatorname{Ker}H$  has dimension  $k$ . (Alternatively, one can use a group theory argument to show that  $|\operatorname{Ker}H| = |F|^k$ .) Then, since the dimension of  $C$  is also  $k$ , it suffices to show that  $C \subseteq \operatorname{Ker}H$ . To do this, let  $G = [I_k|A]$ , so that  $H = \left[\frac{-A}{I_{n - k}}\right]$ . Then,
+PROOF First note that, since  $H$  has rank  $n - k$ , we may think of  $H$  as a linear transformation from  $F^n$  onto  $F^{n - k}$ . Therefore, it follows from the dimension theorem for linear transformations that  $n = n - k + \dim (\operatorname{Ker}H)$ , so that  $\operatorname{Ker}H$  has dimension  $k$ . (Alternatively, one can use a group theory argument to show that  $|\operatorname{Ker}H| = |F|^k$ .) Then, since the dimension of  $C$  is also  $k$ , it suffices to show that  $C \subseteq \operatorname{Ker}H$ . To do this, let  $G = [I_k|A]$ , so that  $H = \leqft[\frac{-A}{I_{n - k}}\right]$ . Then,
 
 $$
-G H = \left[ I _ {k} | A \right] \left[ \frac {- A}{I _ {n - k}} \right] = - A + A = [ 0 ] \quad (\mathrm {t h e z e r o m a t r i x}).
+G H = \leqft[ I _ {k} | A \right] \leqft[ \frac {- A}{I _ {n - k}} \right] = - A + A = [ 0 ] \quad (\mathrm {t h e z e r o m a t r i x}).
 $$
 
 Now, by definition, any vector  $v$  in  $C$  has the form  $mG$ , where  $m$  is a message vector. Thus,  $vH = (mG)H = m(GH) = m[0] = 0$  (the zero vector).
@@ -12174,7 +12174,7 @@ But this last vector is precisely the  $i$ th row of  $H$ . Thus, if there was e
 Conversely, suppose that the parity-check matrix method correctly decodes all received words in which at most one error has been made in transmission and that the  $i$ th row of  $H$  and the  $j$ th row of  $H$  are equal and  $i \neq j$ . Then, if some code word  $w$  is transmitted and the received word is  $w + e_i$  (i.e., there is a single error in the  $i$ th position), we find
 
 $$
-\left(w + e _ {i}\right) H = w H + e _ {i} H = i \text {t h r o w o f} H = j \text {t h r o w o f} H.
+\leqft(w + e _ {i}\right) H = w H + e _ {i} H = i \text {t h r o w o f} H = j \text {t h r o w o f} H.
 $$
 
 Thus, our decoding procedure tells us not to decode. This contradicts our assumption that the method correctly decodes all received words in which at most one error has been made.
@@ -12243,7 +12243,7 @@ With this method, we can decode any received word with a table that has only two
 EXAMPLE 12 Consider the code given in Example 11. The parity-check matrix for this code is
 
 $$
-H = \left[ \begin{array}{c c c} 1 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right].
+H = \leqft[ \begin{array}{c c c} 1 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right].
 $$
 
 <table><tr><td>Coset leader</td><td>000000</td><td>100000</td><td>010000</td><td>001000</td><td>000100</td><td>000010</td><td>000001</td><td>100001</td></tr><tr><td>Syndromes</td><td>000</td><td>110</td><td>101</td><td>011</td><td>100</td><td>010</td><td>001</td><td>111</td></tr></table>
@@ -12319,7 +12319,7 @@ c.  $d(u,v) = d(u + w,v + w)$  (translation invariance).
 5. Determine the (6, 3) binary linear code with generator matrix
 
 $$
-G = \left[ \begin{array}{c c c c c c} 1 & 0 & 0 & 0 & 1 & 1 \\ 0 & 1 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 1 & 1 & 0 \end{array} \right].
+G = \leqft[ \begin{array}{c c c c c c} 1 & 0 & 0 & 0 & 1 & 1 \\ 0 & 1 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 1 & 1 & 0 \end{array} \right].
 $$
 
 6. Show that for binary vectors,  $\mathrm{wt}(u + v) \geq \mathrm{wt}(u) = \mathrm{wt}(v)$  and equality occurs if and only if for all  $i$  the  $i$ th component of  $u$  is 1 whenever the  $i$ th component of  $v$  is 1.  
@@ -12330,7 +12330,7 @@ $$
 10. Let
 
 $$
-\begin{array}{l} C = \{0 0 0 0 0 0 0, 1 1 1 0 1 0 0, 0 1 1 1 0 1 0, 0 0 1 1 1 0 1, 1 0 0 1 1 1 0, \\ \left. \begin{array}{l} 0 1 0 0 1 1 1, 1 0 1 0 0 1 1, 1 1 0 1 0 0 1 \}. \end{array} \right. \\ \end{array}
+\begin{array}{l} C = \{0 0 0 0 0 0 0, 1 1 1 0 1 0 0, 0 1 1 1 0 1 0, 0 0 1 1 1 0 1, 1 0 0 1 1 1 0, \\ \leqft. \begin{array}{l} 0 1 0 0 1 1 1, 1 0 1 0 0 1 1, 1 1 0 1 0 0 1 \}. \end{array} \right. \\ \end{array}
 $$
 
 What is the error-correcting capability of  $C$ ? What is the error-detecting capability of  $C$ ?
@@ -12338,7 +12338,7 @@ What is the error-correcting capability of  $C$ ? What is the error-detecting ca
 11. Suppose that the parity-check matrix of a binary linear code is
 
 $$
-H = \left[ \begin{array}{c c} 1 & 0 \\ 0 & 1 \\ 1 & 1 \\ 1 & 0 \\ 0 & 1 \end{array} \right].
+H = \leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 1 \\ 1 & 1 \\ 1 & 0 \\ 0 & 1 \end{array} \right].
 $$
 
 Can the code correct any single error?
@@ -12346,7 +12346,7 @@ Can the code correct any single error?
 12. Use the generator matrix
 
 $$
-G = \left[ \begin{array}{c c c c} 1 & 0 & 1 & 1 \\ 0 & 1 & 2 & 1 \end{array} \right]
+G = \leqft[ \begin{array}{c c c c} 1 & 0 & 1 & 1 \\ 0 & 1 & 2 & 1 \end{array} \right]
 $$
 
 to construct a (4, 2) ternary linear code. What is the parity-check matrix for this code? What is the error-correcting capability of this code? What is the error-detecting capability of this code? Use parity-check decoding to decode the received word 1201.
@@ -12354,7 +12354,7 @@ to construct a (4, 2) ternary linear code. What is the parity-check matrix for t
 13. Find all code words of the (7, 4) binary linear code whose generator matrix is
 
 $$
-G = \left[ \begin{array}{c c c c c c c} 1 & 0 & 0 & 0 & 1 & 1 & 1 \\ 0 & 1 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 1 & 0 & 1 & 1 \end{array} \right].
+G = \leqft[ \begin{array}{c c c c c c c} 1 & 0 & 0 & 0 & 1 & 1 & 1 \\ 0 & 1 & 0 & 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 0 & 1 & 1 & 0 \\ 0 & 0 & 0 & 1 & 0 & 1 & 1 \end{array} \right].
 $$
 
 Find the parity-check matrix of this code. Will this code correct any single error?
@@ -12374,7 +12374,7 @@ Construct a standard array for  $C$ . Use nearest-neighbor decoding to decode 11
 17. Construct a (6, 3) binary linear code with generator matrix
 
 $$
-G = \left[ \begin{array}{c c c c c c} 1 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 0 & 1 & 1 \\ 0 & 0 & 1 & 1 & 0 & 1 \end{array} \right].
+G = \leqft[ \begin{array}{c c c c c c} 1 & 0 & 0 & 1 & 1 & 0 \\ 0 & 1 & 0 & 0 & 1 & 1 \\ 0 & 0 & 1 & 1 & 0 & 1 \end{array} \right].
 $$
 
 Decode each of the received words
@@ -12402,7 +12402,7 @@ Determine the code.
 22. If the parity-check matrix for a binary linear code is
 
 $$
-H = \left[ \begin{array}{c c c} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right].
+H = \leqft[ \begin{array}{c c c} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right].
 $$
 
 will the code correct any single error? Why?
@@ -12410,7 +12410,7 @@ will the code correct any single error? Why?
 23. Suppose that the parity-check matrix for a ternary code is
 
 $$
-H = \left[ \begin{array}{c c} 2 & 1 \\ 2 & 2 \\ 1 & 2 \\ 1 & 0 \\ 0 & 1 \end{array} \right].
+H = \leqft[ \begin{array}{c c} 2 & 1 \\ 2 & 2 \\ 1 & 2 \\ 1 & 0 \\ 0 & 1 \end{array} \right].
 $$
 
 Can the code correct all single errors? Give a reason for your answer.
@@ -12533,7 +12533,7 @@ The following examples will help you assimilate these definitions. In each examp
 EXAMPLE 1 Consider the extension  $Q(\sqrt{2})$  of  $Q$ . Since
 
 $$
-Q (\sqrt {2}) = \left\{a + b \sqrt {2} \mid a, b \in Q \right\}
+Q (\sqrt {2}) = \leqft\{a + b \sqrt {2} \mid a, b \in Q \right\}
 $$
 
 and any automorphism of a field containing  $Q$  must act as the identity on  $Q$  (Exercise 1), an automorphism  $\phi$  of  $Q(\sqrt{2})$  is completely determined by  $\phi(\sqrt{2})$ . Thus,
@@ -12557,7 +12557,7 @@ we see that  $\phi(\sqrt[4]{2})$  must be a fourth root of 2. Thus, there are at
 EXAMPLE 4 Consider the extension  $Q(\sqrt{3}, \sqrt{5})$  of  $Q$ . Since
 
 $$
-Q (\sqrt {3}, \sqrt {5}) = \left\{a + b \sqrt {3} + c \sqrt {5} + d \sqrt {3} \sqrt {5} \mid a, b, c, d \in Q \right\},
+Q (\sqrt {3}, \sqrt {5}) = \leqft\{a + b \sqrt {3} + c \sqrt {5} + d \sqrt {3} \sqrt {5} \mid a, b, c, d \in Q \right\},
 $$
 
 any automorphism  $\phi$  of  $Q(\sqrt{3},\sqrt{5})$  is completely determined by the two values  $\phi (\sqrt{3})$  and  $\phi (\sqrt{5})$ . This time there are four automorphisms.
@@ -12613,7 +12613,7 @@ $$
 Also, since
 
 $$
-x ^ {7} - 1 = (x - 1) \left(x ^ {6} + x ^ {5} + x ^ {4} + x ^ {3} + x ^ {2} + x + 1\right)
+x ^ {7} - 1 = (x - 1) \leqft(x ^ {6} + x ^ {5} + x ^ {4} + x ^ {3} + x ^ {2} + x + 1\right)
 $$
 
 and  $\omega$  is a zero of  $x^7 - 1$ , we see that
@@ -12666,7 +12666,7 @@ So, a polynomial in  $F[x]$  is solvable by radicals if we can obtain all of its
 EXAMPLE 8 Let  $\omega = \cos(2\pi/8) + i\sin(2\pi/8) = \sqrt{2}/2 + i\sqrt{2}/2$ . Then  $x^8 - 3$  splits in  $Q(\omega, \sqrt[8]{3}), \omega^8 \in Q$ , and  $(\sqrt[8]{3})^8 \in Q \subset Q(\omega)$ . Thus,  $x^8 - 3$  is solvable by radicals over  $Q$ . Although the zeros of  $x^8 - 3$  are most conveniently written in the form  $\sqrt[8]{3}, \sqrt[8]{3}\omega, \sqrt[8]{3}\omega^2, \ldots, \sqrt[8]{3}\omega^7$ , the notion of solvable by radicals is best illustrated by writing them in the form
 
 $$
-\begin{array}{l} \pm \sqrt [ 8 ]{3}, \pm \sqrt {- 1} \sqrt [ 8 ]{3}, \pm \sqrt [ 8 ]{3} \left(\frac {\sqrt {2}}{2} + \frac {\sqrt {- 1} \sqrt {2}}{2}\right), \\ \pm \sqrt [ s ]{3} \left(\frac {\sqrt {2}}{2} - \frac {\sqrt {- 1} \sqrt {2}}{2}\right). \\ \end{array}
+\begin{array}{l} \pm \sqrt [ 8 ]{3}, \pm \sqrt {- 1} \sqrt [ 8 ]{3}, \pm \sqrt [ 8 ]{3} \leqft(\frac {\sqrt {2}}{2} + \frac {\sqrt {- 1} \sqrt {2}}{2}\right), \\ \pm \sqrt [ s ]{3} \leqft(\frac {\sqrt {2}}{2} - \frac {\sqrt {- 1} \sqrt {2}}{2}\right). \\ \end{array}
 $$
 
 Thus, the problem of solving a polynomial equation for its zeros can be transformed into a problem about field extensions. At the same time, we can use the Fundamental Theorem of Galois Theory to transform a problem about field extensions into a problem about groups. This is exactly how Galois showed that there are fifth-degree polynomials that cannot be solved by radicals, and this is exactly how we will do it. Before giving an example of such a polynomial, we need some additional group theory.
@@ -12690,13 +12690,13 @@ Let  $F$  be a field of characteristic 0 and let  $a \in F$ . If  $E$  is the sp
 PROOF We first handle the case where  $F$  contains a primitive  $n$ th root of unity  $\omega$ . Let  $b$  be a zero of  $x^n - a$  in  $E$ . Then the zeros of  $x^n - a$  are  $b, \omega b, \omega^2 b, \ldots, \omega^{n-1} b$ , and therefore  $E = F(b)$ . In this case, we claim that  $\operatorname{Gal}(E / F)$  is Abelian and hence solvable. To see this, observe that any automorphism in  $\operatorname{Gal}(E / F)$  is completely determined by its action on  $b$ . Also, since  $b$  is a zero of  $x^n - a$ , we know that any element of  $\operatorname{Gal}(E / F)$  sends  $b$  to another zero of  $x^n - a$ . That is, any element of  $\operatorname{Gal}(E / F)$  takes  $b$  to  $\omega^i b$  for some  $i$ . Let  $\phi$  and  $\sigma$  be two elements of  $\operatorname{Gal}(E / F)$ . Then, since  $\omega \in F$ ,  $\phi$  and  $\sigma$  fix  $\omega$  and  $\phi(b) = \omega^j b$  and  $\sigma(b) = \omega^k b$  for some  $j$  and  $k$ . Thus,
 
 $$
-(\sigma \phi) (b) = \sigma (\phi (b)) = \sigma \left(\omega^ {j} b\right) = \sigma \left(\omega^ {j}\right) \sigma (b) = \omega^ {j} \omega^ {k} b = \omega^ {j + k} b,
+(\sigma \phi) (b) = \sigma (\phi (b)) = \sigma \leqft(\omega^ {j} b\right) = \sigma \leqft(\omega^ {j}\right) \sigma (b) = \omega^ {j} \omega^ {k} b = \omega^ {j + k} b,
 $$
 
 whereas
 
 $$
-(\phi \sigma) (b) = \phi (\sigma (b)) = \phi \left(\omega^ {k} b\right) = \phi \left(\omega^ {k}\right) \phi (b) = \omega^ {k} \omega^ {j} b = \omega^ {k + j} b,
+(\phi \sigma) (b) = \phi (\sigma (b)) = \phi \leqft(\omega^ {k} b\right) = \phi \leqft(\omega^ {k}\right) \phi (b) = \omega^ {k} \omega^ {j} b = \omega^ {k + j} b,
 $$
 
 so that  $\sigma \phi$  and  $\phi \sigma$  agree on  $b$  and fix the elements of  $F$ . This shows that  $\sigma \phi = \phi \sigma$ , and therefore  $\operatorname{Gal}(E / F)$  is Abelian.
@@ -12949,7 +12949,7 @@ Let  $\omega$  be a primitive  $n$ th root of unity. Then  $Gal(Q(\omega) / Q)\a
 PROOF Since  $1, \omega, \omega^2, \ldots, \omega^{n-1}$  are all the  $n$ th roots of unity,  $Q(\omega)$  is the splitting field of  $x^n - 1$  over  $Q$ . For each  $k$  in  $U(n)$ ,  $\omega^k$  is a primitive  $n$ th root of unity, and by the lemma preceding Theorem 19.4, there is a field automorphism of  $Q(\omega)$ , which we denote by  $\phi_k$ , that carries  $\omega$  to  $\omega^k$  and acts as the identity on  $Q$ . Moreover, these are all the automorphisms of  $Q(\omega)$ , since any automorphism must map a primitive  $n$ th root of unity to a primitive  $n$ th root of unity. Next, observe that for every  $r$ ,  $s \in U(n)$ ,
 
 $$
-\left(\phi_ {r} \phi_ {s}\right) (\omega) = \phi_ {r} \left(\omega^ {s}\right) = \left(\phi_ {r} (\omega)\right) ^ {s} = \left(\omega^ {r}\right) ^ {s} = \omega^ {r s} \phi_ {r s} (\omega).
+\leqft(\phi_ {r} \phi_ {s}\right) (\omega) = \phi_ {r} \leqft(\omega^ {s}\right) = \leqft(\phi_ {r} (\omega)\right) ^ {s} = \leqft(\omega^ {r}\right) ^ {s} = \omega^ {r s} \phi_ {r s} (\omega).
 $$
 
 This shows that the mapping from  $U(n)$  onto  $\operatorname{Gal}(Q(\omega)/Q)$  given by  $k \to \phi_k$  is a group homomorphism. Clearly, the mapping is an isomorphism, since  $\omega^r \neq \omega^s$  when  $r, s \in U(n)$  and  $r \neq s$ .
@@ -12995,7 +12995,7 @@ Recall that the elements  $\sigma$  of  $\operatorname{Gal}(Q(\omega) / Q)$  hav
 Write  $n = 2^k p_1^{n_1} p_2^{n_2} \cdots p_t^{n_t}$ , where  $k \geq 0$ , the  $p_i$ 's are distinct odd primes, and the  $n_i$ 's are positive. Then
 
 $$
-\begin{array}{l} \phi (n) = | U (n) | = | U (2 ^ {k}) | | U \left(p _ {1} ^ {n _ {1}}\right) | | U \left(p _ {2} ^ {n _ {2}}\right) | \dots | U \left(p _ {t} ^ {n _ {t}}\right) | \\ = 2 ^ {k - 1} p _ {1} ^ {n _ {1} - 1} (p _ {1} - 1) p _ {2} ^ {n _ {2} - 1} (p _ {2} - 1) \dots p _ {t} ^ {n _ {t} - 1} (p _ {t} - 1) \\ \end{array}
+\begin{array}{l} \phi (n) = | U (n) | = | U (2 ^ {k}) | | U \leqft(p _ {1} ^ {n _ {1}}\right) | | U \leqft(p _ {2} ^ {n _ {2}}\right) | \dots | U \leqft(p _ {t} ^ {n _ {t}}\right) | \\ = 2 ^ {k - 1} p _ {1} ^ {n _ {1} - 1} (p _ {1} - 1) p _ {2} ^ {n _ {2} - 1} (p _ {2} - 1) \dots p _ {t} ^ {n _ {t} - 1} (p _ {t} - 1) \\ \end{array}
 $$
 
 must be a power of 2. Clearly, this implies that each  $n_i = 1$  and each  $p_i - 1$  is a power of 2. This completes the proof that the condition in the statement is necessary.
@@ -13113,7 +13113,7 @@ $$
 $$
 
 $$
-\left. \begin{array}{l} \{1, 2, 3, 4, 6, 7, 8, 9, 1 1, 1 2, 1 3, 1 4, 1 6, \\ 1 7, 1 8, 1 9, 2 1, 2 2, 2 3, 2 4 \} \end{array} \right.
+\leqft. \begin{array}{l} \{1, 2, 3, 4, 6, 7, 8, 9, 1 1, 1 2, 1 3, 1 4, 1 6, \\ 1 7, 1 8, 1 9, 2 1, 2 2, 2 3, 2 4 \} \end{array} \right.
 $$
 
 1.  $\{1,2,3,4\}$  ；  $\{1,3,5,7\}$  
@@ -13215,7 +13215,7 @@ Success is the ability to go from one failure to another with no loss of enthusi
 # SIR WINSTON CHURCHILL
 
 $$
-| U (2 0) | = 8; \left| D _ {4} \right| = 8
+| U (2 0) | = 8; \leqft| D _ {4} \right| = 8
 $$
 
 $$
@@ -13227,7 +13227,7 @@ $$
 $$
 
 $$
-\left| 4 \right| = \left| 8 \right| = 3; \left| 6 \right| = 2.
+\leqft| 4 \right| = \leqft| 8 \right| = 3; \leqft| 6 \right| = 2.
 $$
 
 $$
@@ -13251,7 +13251,7 @@ $$
 $$
 
 $$
-4; \left| R _ {1 8 0} \right| = | H | = | V | = | D | = \left| D ^ {\prime} \right| = 2.
+4; \leqft| R _ {1 8 0} \right| = | H | = | V | = | D | = \leqft| D ^ {\prime} \right| = 2.
 $$
 
 1.  $|Z_{12}| = 12$ ;  $|U(10)| = 4$ ;  $|U(12)| = 4$  
@@ -13286,7 +13286,7 @@ b. Let  $K = \{s_1^{n_1}s_2^{n_2}\dots s_m^{n_m} \mid m\geq 1, s_i\in S, n_i\in 
 47. Mimic the proof of Theorem 3.5.  
 49. No. In  $D_4, C(R_{180}) = D_4$ . Yes. Elements in the center commute with all elements.  
 51. For the first part, see Example 4. For the second part, use  $D_4$ .  
-53. Note that  $\left[ \begin{array}{ll}1 & 1\\ 0 & 1 \end{array} \right]^n = \left[ \begin{array}{ll}1 & n\\ 0 & 1 \end{array} \right]$  
+53. Note that  $\leqft[ \begin{array}{ll}1 & 1\\ 0 & 1 \end{array} \right]^n = \leqft[ \begin{array}{ll}1 & n\\ 0 & 1 \end{array} \right]$  
 55. First observe that  $(a^d)^{n / d} = a^n = e$ , so  $|a^{d}|$  is at most  $n / d$ . Moreover, there is no positive integer  $t < n / d$  such that  $(a^{d})^{t} = a^{dt} = e$ , for otherwise  $|a| \neq n$ .
 
 57. Let  $G$  be a group of even order. Observe that for each element  $x$  of order greater than  $2x$  and  $x^{-1}$  are distinct elements of the same order. So, because elements of order greater than 2 come in pairs, there is an even number of elements of order greater than 2 (possibly 0). This means that the number of elements of order 1 or 2 is even. Since the identity is the unique element of order 1, it follows that the number of order 2 is odd.  
@@ -13301,7 +13301,7 @@ b. Let  $\langle h \rangle = H$ . Then  $\langle xhx^{-1} \rangle = xHx^{-1}$ .
 c.  $(xh_1x^{-1})(xh_2x^{-1}) = xh_1h_2x^{-1} = xh_2h_1x^{-1} = (xh_2x^{-1})(xh_1x^{-1})$ .  
 73. Let  $a / b$  and  $c / d$  belong to the set. By observation  $ac / bd$  and  $b / a$  have odd numerators and denominators. If  $ac / bd$  reduces in lowest terms to  $x / y$  then  $x$  divides  $ac$  and  $y$  divides  $bd$ . So they are odd.  
 75. If  $2^a$  and  $2^b \in K$ , then  $2^a (2^b)^{-1} = 2^{a - b} \in K$ , since  $a - b \in H$ .  
-77.  $\left[ \begin{array}{ll}2 & 0\\ 0 & 2 \end{array} \right]^{-1} = \left[ \begin{array}{ll}\frac{1}{2} & 0\\ 0 & \frac{1}{2} \end{array} \right]$  is not in  $H$  
+77.  $\leqft[ \begin{array}{ll}2 & 0\\ 0 & 2 \end{array} \right]^{-1} = \leqft[ \begin{array}{ll}\frac{1}{2} & 0\\ 0 & \frac{1}{2} \end{array} \right]$  is not in  $H$  
 79. If  $a + bi$  and  $c + di \in H$ , then  $(a + bi)(c + di)^{-1} = (ac + bd) + (bc - ad)i$  and  $(ac + bd)^2 + (bc - ad)^2 = 1$ , so that  $H$  is a subgroup.  $H$  is the unit circle in the complex plane.  
 81.  $\{1,2n - 1,2n + 1,4n - 1\}$
 
@@ -13424,7 +13424,7 @@ the product of the first two 4-cycles is even, then the product of the next two 
 71. Verifying that  $a*\sigma (b)\neq b*\sigma (a)$  is done by examining all cases. To prove the general case, observe that  $\sigma^i (a)*\sigma^{i + 1}(b)\neq \sigma^i (b)*\sigma^{i + 1}(a)$  can be written in the form  $\sigma^i (a)*\sigma (\sigma^i (b))\neq \sigma^i (b)*\sigma (\sigma^1 (a))$  , which is the case already done. If a transposition were not detected, then  $\sigma (a_{1})*\dots *\sigma^{i}(a_{i})*\sigma^{i + 1}(a_{i + 1})*\dots *\sigma^{n}(a_{n}) =$ $\sigma (a_1)*\dots *\sigma^i (a_{i + 1})*\sigma^{i + 1}(a_i)*\dots *\sigma^n (a_n),$  which implies
 
 $$
-\sigma^ {i} \left(a _ {i}\right) * \sigma^ {i + 1} \left(a _ {i + 1}\right) = \sigma^ {i} \left(a _ {i + 1}\right) * \sigma^ {i + 1} \left(a _ {i}\right).
+\sigma^ {i} \leqft(a _ {i}\right) * \sigma^ {i + 1} \leqft(a _ {i + 1}\right) = \sigma^ {i} \leqft(a _ {i + 1}\right) * \sigma^ {i + 1} \leqft(a _ {i}\right).
 $$
 
 73. By Theorem 5.4 it is enough to prove that every 2-cycle can be expressed as a product of elements of the form  $(1k)$ . To this end, observe that if  $a \neq 1, b \neq 1$ , then  $(ab) = (1a)(1b)(1a)$ .
@@ -13558,7 +13558,7 @@ Practice isn't the thing you do when you're good. It's the thing you do that mak
 19.  $\langle m / r\rangle \oplus \langle n / s\rangle$  
 21. Since  $\langle (g,h)\rangle \subseteq \langle g\rangle \oplus \langle h\rangle$ , a necessary and sufficient condition for equality is that lcm  $(|g|,|h|) = |(g,h)| = |\langle g\rangle \oplus \langle h\rangle)| = |g||h|$ . This is equivalent to gcd  $(|g|,|h|) = 1$ .  
 23. For  $n$  copies of  $Z_{3}$ ,  $(3^{n} - 1) / 2$ .  
-25. Map  $\left[ \begin{array}{ll}a & b\\ c & d \end{array} \right]$  to  $(a,b,c,d)$ . Let  $\mathbf{R}^k$  denote  $\mathbf{R}\oplus \mathbf{R}\oplus \dots \oplus \mathbf{R}$  ( $k$  factors). Then the group of  $m\times n$  matrices under addition is isomorphic to  $\mathbf{R}^{mn}$ .  
+25. Map  $\leqft[ \begin{array}{ll}a & b\\ c & d \end{array} \right]$  to  $(a,b,c,d)$ . Let  $\mathbf{R}^k$  denote  $\mathbf{R}\oplus \mathbf{R}\oplus \dots \oplus \mathbf{R}$  ( $k$  factors). Then the group of  $m\times n$  matrices under addition is isomorphic to  $\mathbf{R}^{mn}$ .  
 27.  $(g,g)(h,h)^{-1} = (gh^{-1},gh^{-1})$  .When  $G = \mathbf{R}$ $G\oplus G$  is the plane and  $H$  is the line  $y = x$  
 29.  $\langle (3,0)\rangle ,\langle (3,1)\rangle ,\langle (3,2)\rangle ,\langle (0,1)\rangle$
 
@@ -13574,7 +13574,7 @@ Z _ {4} \oplus Z _ {3} \oplus Z _ {2} \approx Z _ {2} \oplus Z _ {1 2} \approx \
 $$
 
 $$
-\left\{R _ {0}, F \right\} \oplus \left\{R _ {0}, R _ {1 8 0}, H, V \right\}.
+\leqft\{R _ {0}, F \right\} \oplus \leqft\{R _ {0}, R _ {1 8 0}, H, V \right\}.
 $$
 
 35. Let  $F$  be a reflection in  $D_{3}$  
@@ -13835,7 +13835,7 @@ Ever tried. Ever failed. No matter. Try again. Fail again. Fail better.
 33. Try the ring  $M_2(Z)$ .  
 35. By inspection,  $R$  is closed under addition and multiplication. The elements
 
-$\left[ \begin{array}{ll}0 & 1\\ 0 & 0 \end{array} \right]$  and  $\left[ \begin{array}{ll}0 & 1\\ 0 & 1 \end{array} \right]$  do not commute.
+$\leqft[ \begin{array}{ll}0 & 1\\ 0 & 0 \end{array} \right]$  and  $\leqft[ \begin{array}{ll}0 & 1\\ 0 & 1 \end{array} \right]$  do not commute.
 
 For the general case use  $m \times m$  matrices with the first  $m - 1$  columns all 0 and the last column any elements from  $Z_{n}$ .
 
@@ -13867,7 +13867,7 @@ Mathematics is not a careful march down a well-cleared highway, but a journey in
 1. The verifications for Example 16 follow from elementary properties of real and complex numbers. For Example 7, note that
 
 $$
-\left[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] \left[ \begin{array}{c c} 0 & 0 \\ 0 & 1 \end{array} \right] = \left[ \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right].
+\leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] \leqft[ \begin{array}{c c} 0 & 0 \\ 0 & 1 \end{array} \right] = \leqft[ \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right].
 $$
 
 For Example 8, note that  $(1,0)(0,1) = (0,0)$ .  
@@ -13896,7 +13896,7 @@ b. Use the fact that there exist integers  $s$  and  $t$  such that  $1 = sn + t
 43. In  $Z_{p}[k]$  note that
 
 $$
-\begin{array}{l} \left(a + b \sqrt {k}\right) ^ {- 1} = \frac {1}{\left(a + b \sqrt {k}\right)} \frac {\left(a - b \sqrt {k}\right)}{\left(a - b \sqrt {k}\right)} = \frac {a - b \sqrt {k}}{a ^ {2} - b ^ {2} k} \\ \text {e x i s t s i f a n d o n l y i f} a ^ {2} - b ^ {2} k \neq 0 \text {w h e r e} \\ a \neq 0 \text {a n d} b \neq 0. \end{array}
+\begin{array}{l} \leqft(a + b \sqrt {k}\right) ^ {- 1} = \frac {1}{\leqft(a + b \sqrt {k}\right)} \frac {\leqft(a - b \sqrt {k}\right)}{\leqft(a - b \sqrt {k}\right)} = \frac {a - b \sqrt {k}}{a ^ {2} - b ^ {2} k} \\ \text {e x i s t s i f a n d o n l y i f} a ^ {2} - b ^ {2} k \neq 0 \text {w h e r e} \\ a \neq 0 \text {a n d} b \neq 0. \end{array}
 $$
 
 45. Let  $S = \{a_{1}, a_{2}, \ldots, a_{n}\}$  be the nonzero elements of the ring. First show that  $S = \{a_{1}a_{1}, a_{1}a_{2}, \ldots, a_{1}a_{n}\}$ . Thus,  $a_{1} = a_{1}a_{i}$  for some  $i$ . Then  $a_{i}$  is the unity, for if  $a_{k}$  is any element of  $S$ , we have  $a_{1}a_{k} = a_{1}a_{i}a_{k}$ , so that  $a_{1}(a_{k} - a_{i}a_{k}) = 0$ .  
@@ -13970,19 +13970,19 @@ c.  $a = mn$
 29. That  $I$  satisfies the ideal test follows directly from the definitions of matrix addition and multiplication. To see that  $R / I$  is field first observe that
 
 $$
-\begin{array}{l} \left[ \begin{array}{c c} a & b \\ 0 & c \end{array} \right] + I = \\ \left[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + \left[ \begin{array}{c c} 0 & b \\ 0 & c \end{array} \right] + I = \left[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I. \\ \end{array}
+\begin{array}{l} \leqft[ \begin{array}{c c} a & b \\ 0 & c \end{array} \right] + I = \\ \leqft[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + \leqft[ \begin{array}{c c} 0 & b \\ 0 & c \end{array} \right] + I = \leqft[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I. \\ \end{array}
 $$
 
 Thus we need only show that
 
 $$
-\left[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I \text {h a s a n i n v e r s e i n} R / I
+\leqft[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I \text {h a s a n i n v e r s e i n} R / I
 $$
 
 when  $a \neq 0$ . To this end note that
 
 $$
-\begin{array}{l} \Big (\left[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I \Big) \Big (\left[ \begin{array}{c c} a ^ {- 1} & 0 \\ 0 & 0 \end{array} \right] + I \Big) = \\ \left[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] + I = \\ \Big (\left[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] + I \Big) + \Big (\left[ \begin{array}{c c} 0 & 0 \\ 0 & 1 \end{array} \right] + I \Big) = \\ \left[ \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right] + I. \\ \Big (\left[ \begin{array}{c c} 2 & 0 \\ 0 & 0 \end{array} \right] + I \Big) ^ {- 1} = \left[ \begin{array}{c c} 1 / 2 & 0 \\ 0 & 0 \end{array} \right] + I. \\ \end{array}
+\begin{array}{l} \Big (\leqft[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I \Big) \Big (\leqft[ \begin{array}{c c} a ^ {- 1} & 0 \\ 0 & 0 \end{array} \right] + I \Big) = \\ \leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] + I = \\ \Big (\leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] + I \Big) + \Big (\leqft[ \begin{array}{c c} 0 & 0 \\ 0 & 1 \end{array} \right] + I \Big) = \\ \leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right] + I. \\ \Big (\leqft[ \begin{array}{c c} 2 & 0 \\ 0 & 0 \end{array} \right] + I \Big) ^ {- 1} = \leqft[ \begin{array}{c c} 1 / 2 & 0 \\ 0 & 0 \end{array} \right] + I. \\ \end{array}
 $$
 
 31.  $R = \{0 + \langle 2i\rangle ,1 + \langle 2i\rangle ,i + \langle 2i\rangle ,1 + i + \langle 2i\rangle \} .$ $R$  is not an integral domain because  $(1 + i + \langle 2i\rangle)^{2} = (1 + i)^{2} + \langle 2i\rangle =$ $1 + 1 + \langle 2i\rangle = 0 + \langle 2i\rangle$  
@@ -14110,7 +14110,7 @@ On the other hand, if  $k^2 = k$  in  $Z_{n}$ , then  $\phi(ab) = k(ab) = k^2(ab
 
 29. If  $ab = 1$ , then  $\phi(a)\phi(b) = \phi(1)$ , which is a unity in  $S$  (see property 7 of Theorem 15.1). If  $a$  is a zero-divisor in  $R$ , then  $\phi(a)$  is a zero-divisor in  $S$  or is 0.
 
-31. First note that every element of  $R[x] / \langle x^2\rangle$  can be written uniquely in the form  $ax + b + \langle x^2\rangle$ . Then mapping that takes  $ax + b + \langle x^2\rangle$  to  $\left\{\left[ \begin{array}{cc}a & b\\ 0 & a \end{array} \right]\right\}$  is a ring isomorphism.
+31. First note that every element of  $R[x] / \langle x^2\rangle$  can be written uniquely in the form  $ax + b + \langle x^2\rangle$ . Then mapping that takes  $ax + b + \langle x^2\rangle$  to  $\leqft\{\leqft[ \begin{array}{cc}a & b\\ 0 & a \end{array} \right]\right\}$  is a ring isomorphism.
 
 33. First observe that
 
@@ -14127,7 +14127,7 @@ $a(0,1) + b(1,0) = (b,a).$
 37. Say  $m = a_{k}a_{k - 1}\dots a_{1}a_{0}$  and  $n = b_{k}b_{k - 1}\dots b_{1}b_{0}$ . Then
 
 $$
-m - n = \left(a _ {k} - b _ {k}\right) 1 0 ^ {k} + \left(a _ {k - 1} - \right.
+m - n = \leqft(a _ {k} - b _ {k}\right) 1 0 ^ {k} + \leqft(a _ {k - 1} - \right.
 $$
 
 $b_{k - 1})10^{k - 1} + \dots +(a_1 - b_1)10 + (a_0 - b_0).$
@@ -14192,7 +14192,7 @@ SHERLOCK HOMES The Hound of the Baskervilles
 13. Let  $f(x), g(x) \in R[x]$ . By inserting terms with the coefficient 0, we may write  $f(x) = a_{n}x^{n} + \dots + a_{0}$  and  $g(x) = b_{n}x^{n} + \dots + b_{0}$ . Then
 
 $$
-\begin{array}{l} \bar {\phi} (f (x) + g (x)) = \phi \left(a _ {n} + b _ {n}\right) x ^ {n} + \dots + \\ \phi \left(a _ {0} + b _ {0}\right) \\ = \left(\phi \left(a _ {n}\right) + \phi \left(b _ {n}\right)\right) x ^ {n} + \\ \dots + \phi (a _ {0}) + \phi (b _ {0}) \\ = (\phi (a _ {n}) x ^ {n} + \dots + \phi (a _ {0})) + \\ \left(\phi \left(b _ {n}\right) x ^ {n} + \dots + \phi \left(b _ {0}\right)\right) \\ = \bar {\phi} (f (x)) + \bar {\phi} (g (x)). \\ \end{array}
+\begin{array}{l} \bar {\phi} (f (x) + g (x)) = \phi \leqft(a _ {n} + b _ {n}\right) x ^ {n} + \dots + \\ \phi \leqft(a _ {0} + b _ {0}\right) \\ = \leqft(\phi \leqft(a _ {n}\right) + \phi \leqft(b _ {n}\right)\right) x ^ {n} + \\ \dots + \phi (a _ {0}) + \phi (b _ {0}) \\ = (\phi (a _ {n}) x ^ {n} + \dots + \phi (a _ {0})) + \\ \leqft(\phi \leqft(b _ {n}\right) x ^ {n} + \dots + \phi \leqft(b _ {0}\right)\right) \\ = \bar {\phi} (f (x)) + \bar {\phi} (g (x)). \\ \end{array}
 $$
 
 Multiplication is done similarly.
@@ -14372,19 +14372,19 @@ If you are going through hell, keep going.
 2.  $N((a + b\sqrt{d})(a' + b'\sqrt{d})) =$
 
 $$
-N \left(a a ^ {\prime} + d b b ^ {\prime} + \left(a b ^ {\prime} + a ^ {\prime} b\right) \sqrt {d}\right) = | (a a ^ {\prime} +
+N \leqft(a a ^ {\prime} + d b b ^ {\prime} + \leqft(a b ^ {\prime} + a ^ {\prime} b\right) \sqrt {d}\right) = | (a a ^ {\prime} +
 $$
 
 $$
-\left. d b b ^ {\prime}\right) ^ {2} - d \left(a b ^ {\prime} + a ^ {\prime} b\right) ^ {2} | = \left| a ^ {2} a ^ {\prime 2} + d ^ {2} b ^ {2} b ^ {\prime 2} - \right.
+\leqft. d b b ^ {\prime}\right) ^ {2} - d \leqft(a b ^ {\prime} + a ^ {\prime} b\right) ^ {2} | = \leqft| a ^ {2} a ^ {\prime 2} + d ^ {2} b ^ {2} b ^ {\prime 2} - \right.
 $$
 
 $$
-d a ^ {2} b ^ {\prime 2} - d a ^ {\prime 2} b ^ {2} | = \left| a ^ {2} - d b ^ {2} \right| \left| a ^ {\prime 2} - d b ^ {\prime 2} \right| =
+d a ^ {2} b ^ {\prime 2} - d a ^ {\prime 2} b ^ {2} | = \leqft| a ^ {2} - d b ^ {2} \right| \leqft| a ^ {\prime 2} - d b ^ {\prime 2} \right| =
 $$
 
 $$
-N (a + b \sqrt {d}) N \left(a ^ {\prime} + b ^ {\prime} \sqrt {d}\right).
+N (a + b \sqrt {d}) N \leqft(a ^ {\prime} + b ^ {\prime} \sqrt {d}\right).
 $$
 
 3. If  $xy = 1$ , then
@@ -14432,7 +14432,7 @@ $$
 On the other hand,
 
 $$
-\begin{array}{l} d (x) d (y) = \left(a ^ {2} + b ^ {2}\right) \left(c ^ {2} + d ^ {2}\right) = a ^ {2} c ^ {2} + \\ b ^ {2} d ^ {2} + b ^ {2} c ^ {2} + a ^ {2} d ^ {2}. \\ \end{array}
+\begin{array}{l} d (x) d (y) = \leqft(a ^ {2} + b ^ {2}\right) \leqft(c ^ {2} + d ^ {2}\right) = a ^ {2} c ^ {2} + \\ b ^ {2} d ^ {2} + b ^ {2} c ^ {2} + a ^ {2} d ^ {2}. \\ \end{array}
 $$
 
 9. Suppose  $a = bu$ , where  $u$  is a unit. Then  $d(b) \leq d(bu) = d(a)$ . Also,  $d(a) \leq d(au^{-1}) = d(b)$ .
@@ -14466,7 +14466,7 @@ $$
 37. Suppose  $R$  satisfies the ascending chain condition and there is an ideal  $I$  of  $R$  that is not finitely generated. Then pick  $a_1 \in I$ . Since  $I$  is not finitely generated,  $\langle a_1 \rangle$  is a proper subset of  $I$ , so we may choose  $a_2 \in I$  but  $a_2 \notin \langle a_1 \rangle$ . As before,  $\langle a_1, a_2 \rangle$  is proper, so we may choose  $a_3 \in I$  but  $a_3 \notin \langle a_1, a_2 \rangle$ . Continuing in this fashion, we obtain a chain of infinite length
 
 $$
-\left\langle a _ {1} \right\rangle \subset \left\langle a _ {1}, a _ {2} \right\rangle \subset \left\langle a _ {1}, a _ {2}, a _ {3} \right\rangle \subset \dots .
+\leqft\langle a _ {1} \right\rangle \subset \leqft\langle a _ {1}, a _ {2} \right\rangle \subset \leqft\langle a _ {1}, a _ {2}, a _ {3} \right\rangle \subset \dots .
 $$
 
 Now suppose every ideal of  $R$  is finitely generated and there is a chain  $I_{1}\subset I_{2}\subset I_{3}\subset \dots .$  Let  $I = \cup I_{i}$  . Then  $I = \langle a_1,a_2,\ldots ,a_n\rangle$
@@ -14497,7 +14497,7 @@ THOMAS FULLER
 11. The set of all expressions of the form
 
 $$
-\begin{array}{l} \left(a _ {n} \pi^ {n} + a _ {n - 1} \pi^ {n - 1} + \dots + a _ {0}\right) / \left(b _ {m} \pi^ {m} + \right. \\ \left. b _ {m - 1} \pi^ {m - 1} + \dots + b _ {0}\right), \\ \end{array}
+\begin{array}{l} \leqft(a _ {n} \pi^ {n} + a _ {n - 1} \pi^ {n - 1} + \dots + a _ {0}\right) / \leqft(b _ {m} \pi^ {m} + \right. \\ \leqft. b _ {m - 1} \pi^ {m - 1} + \dots + b _ {0}\right), \\ \end{array}
 $$
 
 where  $b_{m}\neq 0$
@@ -14525,7 +14525,7 @@ where  $b_{m}\neq 0$
 51. If  $\alpha \in F(\beta)$ , then we have  $\alpha = a\beta + b$  for some  $a, b \in F$ . Squaring both sides, replacing  $\beta^2$  with  $-\beta - 1$ , and solving for  $\beta$ , we find that  $\beta \in F$ . For the second part, if  $\beta \in F(\alpha)$  we have  $\beta = a\alpha + b$  for some  $a, b \in F$ . Solving for  $\alpha$  in terms of  $\beta$  and proceeding as before we get that  $\beta$  is in  $F$ .
 
 53. Because the derivative of  $x^{p^n} - x$  is  $-1$ ,  $x^{p^n} - x$  has no multiple zeroes in any extension of  $Z_p$ .  
-55. Let  $f(x) = c_{n}x^{n} + c_{n - 1}x^{n - 1} + \dots +c_{1}x + c_{0}$  Then, using Exercise 49 in Chapter 13 and that the fact that  $0 = 0^{2}$  and  $1 = 1^{2}$  we have  $f(a^{2}) =$ $c_{n}(a^{2})^{n} + c_{n - 1}(a^{2})^{n - 1} + \dots +c_{1}(a^{2}) + c_{0} = (c_{n}a^{n})^{2} + (c_{n - 1}a^{n - 1})^{2} + \dots +(c_{1}a)^{2} + c_{0}^{2} = (c_{n}a^{n} + c_{n - 1}a^{n - 1} + \dots +c_{1}a + c_{0})^{2} =$ $f(a)^2 = 0$  . By repeating the first part of this problem, we know that the five zeros are  $a,a^2,a^4,a^8,a^{16}$  . If any two of these were equal, then we would have  $a^k = 1$  for some positive integer  $k$  less than 31, whereas  $|a| = 31$  because  $\left|(Z_2[x]\langle f(x)\rangle)\right|^* = 31.$
+55. Let  $f(x) = c_{n}x^{n} + c_{n - 1}x^{n - 1} + \dots +c_{1}x + c_{0}$  Then, using Exercise 49 in Chapter 13 and that the fact that  $0 = 0^{2}$  and  $1 = 1^{2}$  we have  $f(a^{2}) =$ $c_{n}(a^{2})^{n} + c_{n - 1}(a^{2})^{n - 1} + \dots +c_{1}(a^{2}) + c_{0} = (c_{n}a^{n})^{2} + (c_{n - 1}a^{n - 1})^{2} + \dots +(c_{1}a)^{2} + c_{0}^{2} = (c_{n}a^{n} + c_{n - 1}a^{n - 1} + \dots +c_{1}a + c_{0})^{2} =$ $f(a)^2 = 0$  . By repeating the first part of this problem, we know that the five zeros are  $a,a^2,a^4,a^8,a^{16}$  . If any two of these were equal, then we would have  $a^k = 1$  for some positive integer  $k$  less than 31, whereas  $|a| = 31$  because  $\leqft|(Z_2[x]\langle f(x)\rangle)\right|^* = 31.$
 
 # Chapter 20
 
@@ -14573,7 +14573,7 @@ Difficulties strengthen the mind, as labor does the body.
 
 # SENECA
 
-1.  $\left[\mathrm{GF}(729):\mathrm{GF}(9)\right] = 3$ ;  $\left[\mathrm{GF}(64):\mathrm{GF}(8)\right] = 2$  
+1.  $\leqft[\mathrm{GF}(729):\mathrm{GF}(9)\right] = 3$ ;  $\leqft[\mathrm{GF}(64):\mathrm{GF}(8)\right] = 2$  
 3. The lattice of subfields of  $\mathrm{GF}(64)$  looks like Figure 20.3 with GF(2) at the bottom, GF(64) at the top, and GF(4) and GF(8) on the sides.  
 5.  $\mathrm{GF}(2^6)$  
 7.  $2a + 1$  
@@ -14728,7 +14728,7 @@ $$
 $$
 
 $$
-\begin{array}{l} b \left(a ^ {3} N\right) = b \left(a ^ {2} N\right) a = a ^ {2} b N a = a ^ {2} b (a N) \\ = a ^ {2} a ^ {3} b N \\ = a ^ {5} b N = a ^ {5} N b = a N b = a b N \\ \end{array}
+\begin{array}{l} b \leqft(a ^ {3} N\right) = b \leqft(a ^ {2} N\right) a = a ^ {2} b N a = a ^ {2} b (a N) \\ = a ^ {2} a ^ {3} b N \\ = a ^ {5} b N = a ^ {5} N b = a N b = a b N \\ \end{array}
 $$
 
 $$
@@ -14740,11 +14740,11 @@ b (a b N) = b a N b = a ^ {3} b N b = a ^ {3} b ^ {2} N = a ^ {3} N
 $$
 
 $$
-\begin{array}{l} b \left(a ^ {2} b N\right) = b a ^ {2} N b = a ^ {2} b N b = a ^ {2} b ^ {2} N \\ = a ^ {2} N \\ \end{array}
+\begin{array}{l} b \leqft(a ^ {2} b N\right) = b a ^ {2} N b = a ^ {2} b N b = a ^ {2} b ^ {2} N \\ = a ^ {2} N \\ \end{array}
 $$
 
 $$
-b \left(a ^ {3} b N\right) = b a ^ {3} N b = a b N b = a b ^ {2} N = a N
+b \leqft(a ^ {3} b N\right) = b a ^ {3} N b = a b N b = a b ^ {2} N = a N
 $$
 
 5. Let  $F$  be the free group on
@@ -14816,7 +14816,7 @@ $$
 21. For  $H$  to be a normal subgroup we must have  $yxy^{-1} \in H =$
 
 $$
-\left\{e, y ^ {3}, y ^ {6}, y ^ {9}, x, x y ^ {3}, x y ^ {6}, x y ^ {9} \right\}. B u t
+\leqft\{e, y ^ {3}, y ^ {6}, y ^ {9}, x, x y ^ {3}, x y ^ {6}, x y ^ {9} \right\}. B u t
 $$
 
 $$
@@ -14942,7 +14942,7 @@ We must view with profound respect the infinite capacity of the human mind to re
 13. 0000000, 1000111, 0100101, 0010110, 0001011, 1100010, 1010001, 1001100, 0110011, 0101110, 0011101, 1110100, 1101001, 1011010, 0111000, 1111111;
 
 $$
-H = \left[ \begin{array}{c c c} 1 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right];
+H = \leqft[ \begin{array}{c c c} 1 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right];
 $$
 
 yes.
@@ -14951,7 +14951,7 @@ yes.
 17. 000000, 100110, 010011, 001101, 110101, 101011, 011110, 111000;
 
 $$
-H = \left[ \begin{array}{c c c} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right].
+H = \leqft[ \begin{array}{c c c} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right].
 $$
 
 001001 is decoded as 001101 by all four methods.
@@ -14972,7 +14972,7 @@ Since there are no code words whose distance from 100001 is 1 and three whose di
 will produce the desired code:
 
 $$
-\left[ \begin{array}{c c c c c} 1 & 0 & 1 & 1 & x \\ 0 & 1 & x & x + 1 & x + 1 \end{array} \right].
+\leqft[ \begin{array}{c c c c c} 1 & 0 & 1 & 1 & x \\ 0 & 1 & x & x + 1 & x + 1 \end{array} \right].
 $$
 
 31. Use Exercise 14.  
@@ -15054,7 +15054,7 @@ $\deg \Phi_n(x) = \phi (n)$  . Thus, it suffices to show that every zero of  $\P
 
 $|\omega | = 2n$
 
-15. Let  $G = \operatorname{Gal}(Q(\omega) / Q)$  and  $H_{1}$  be the subgroup of  $G$  of order 2 that fixes  $\cos\left(\frac{2\pi}{n}\right)$ . Then, by induction,  $G / H_{1}$  has a series of subgroups  $H_{1} / H_{1} \subset H_{2} / H_{1} \subset$
+15. Let  $G = \operatorname{Gal}(Q(\omega) / Q)$  and  $H_{1}$  be the subgroup of  $G$  of order 2 that fixes  $\cos\leqft(\frac{2\pi}{n}\right)$ . Then, by induction,  $G / H_{1}$  has a series of subgroups  $H_{1} / H_{1} \subset H_{2} / H_{1} \subset$
 
 $\dots \subset H_t / H_1 = G / H_1$  so that
 

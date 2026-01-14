@@ -66,35 +66,31 @@
 
 **几何表示**：
 
-```text
-复数z = x + iy对应平面上的点(x, y)
+复数 $z = x + iy$ 对应平面上的点 $(x, y)$。
 
-坐标：
-- 横轴：实轴（Re z）
-- 纵轴：虚轴（Im z）
-- 原点：0
+**坐标**：
+- 横轴：实轴（$\text{Re } z$）
+- 纵轴：虚轴（$\text{Im } z$）
+- 原点：$0$
 
-模长：
-|z| = √(x² + y²) = 点到原点的距离
+**模长**：
+$$|z| = \sqrt{x^2 + y^2} = \text{点到原点的距离}$$
 
-幅角：
-arg z = arctan(y/x) = 与实轴的夹角
-```
+**幅角**：
+$$\arg z = \arctan\leqft(\frac{y}{x}\right) = \text{与实轴的夹角}$$
 
 **极坐标形式**：
 
-```text
-z = r e^{iθ} = r(cos θ + i sin θ)
+$$z = r e^{i\theta} = r(\cos \theta + i \sin \theta)$$
 
 其中：
-- r = |z|（模长）
-- θ = arg z（幅角）
+- $r = |z|$（模长）
+- $\theta = \arg z$（幅角）
 
-优势：
-- 乘法：模相乘，幅角相加
-- 幂：模的幂，幅角的倍数
-- 根：均匀分布
-```
+**优势**：
+- **乘法**：$z_1 \cdot z_2 = r_1 r_2 e^{i(\theta_1 + \theta_2)}$（模相乘，幅角相加）
+- **幂**：$z^n = r^n e^{in\theta}$（模的幂，幅角的倍数）
+- **根**：$z^{1/n} = r^{1/n} e^{i(\theta + 2k\pi)/n}$（$k = 0, 1, \ldots, n-1$，均匀分布）
 
 ---
 
@@ -104,41 +100,35 @@ z = r e^{iθ} = r(cos θ + i sin θ)
 
 **加法**：
 
-```text
-几何意义：向量加法
+**几何意义**：向量加法
 
-z₁ + z₂ = (x₁ + x₂) + i(y₁ + y₂)
+$$z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)$$
 
-对应：点(x₁, y₁) + 点(x₂, y₂)
-```
+对应：点 $(x_1, y_1) + $ 点 $(x_2, y_2)$
 
 **乘法**：
 
-```text
-代数：
-z₁ · z₂ = (x₁x₂ - y₁y₂) + i(x₁y₂ + x₂y₁)
+**代数形式**：
+$$z_1 \cdot z_2 = (x_1x_2 - y_1y_2) + i(x_1y_2 + x_2y_1)$$
 
-极坐标：
-z₁ · z₂ = r₁r₂ e^{i(θ₁ + θ₂)}
+**极坐标形式**：
+$$z_1 \cdot z_2 = r_1r_2 e^{i(\theta_1 + \theta_2)}$$
 
-几何意义：
-- 模相乘：|z₁ · z₂| = |z₁| · |z₂|
-- 幅角相加：arg(z₁ · z₂) = arg z₁ + arg z₂
-- 旋转和缩放
-```
+**几何意义**：
+- **模相乘**：$|z_1 \cdot z_2| = |z_1| \cdot |z_2|$
+- **幅角相加**：$\arg(z_1 \cdot z_2) = \arg z_1 + \arg z_2$
+- **旋转和缩放**：将 $z_1$ 旋转 $\theta_2$ 并缩放 $r_2$ 倍
 
 **除法**：
 
-```text
-z₁ / z₂ = (z₁ · z̄₂) / |z₂|²
+$$z_1 / z_2 = \frac{z_1 \cdot \bar{z}_2}{|z_2|^2}$$
 
-极坐标：
-z₁ / z₂ = (r₁/r₂) e^{i(θ₁ - θ₂)}
+**极坐标形式**：
+$$z_1 / z_2 = \frac{r_1}{r_2} e^{i(\theta_1 - \theta_2)}$$
 
-几何意义：
-- 模相除
-- 幅角相减
-```
+**几何意义**：
+- **模相除**：$|z_1 / z_2| = |z_1| / |z_2|$
+- **幅角相减**：$\arg(z_1 / z_2) = \arg z_1 - \arg z_2$
 
 ---
 
@@ -146,28 +136,26 @@ z₁ / z₂ = (r₁/r₂) e^{i(θ₁ - θ₂)}
 
 **共轭**：
 
-```text
-定义：z̄ = x - iy
+**定义**：$\bar{z} = x - iy$
 
-几何意义：关于实轴的反射
+**几何意义**：关于实轴的反射
 
-性质：
-1. z + z̄ = 2 Re z
-2. z - z̄ = 2i Im z
-3. z · z̄ = |z|²
-4. z̄̄ = z
-```
+**性质**：
+1. $z + \bar{z} = 2 \text{Re } z$
+2. $z - \bar{z} = 2i \text{Im } z$
+3. $z \cdot \bar{z} = |z|^2$
+4. $\overline{\bar{z}} = z$
 
 **模的性质**：
 
-```text
-|z|² = z · z̄ = x² + y²
+$$|z|^2 = z \cdot \bar{z} = x^2 + y^2$$
 
-三角不等式：
-|z₁ + z₂| ≤ |z₁| + |z₂|
+**三角不等式**：
+$$|z_1 + z_2| \leq |z_1| + |z_2|$$
 
-几何意义：三角形两边之和大于第三边
-```
+**几何意义**：三角形两边之和大于第三边
+
+**推广**：$|z_1 + z_2 + \cdots + z_n| \leq |z_1| + |z_2| + \cdots + |z_n|$
 
 ---
 
@@ -188,27 +176,22 @@ P(z) = a₀ + a₁z + ... + aₙzⁿ
 
 **指数函数**：
 
-```text
-e^z = e^x (cos y + i sin y)
+$$e^z = e^x (\cos y + i \sin y)$$
 
-性质：
-1. e^{z₁ + z₂} = e^{z₁} · e^{z₂}
-2. |e^z| = e^x
-3. arg(e^z) = y
-4. e^{iπ} = -1（Euler公式）
-```
+**性质**：
+1. $e^{z_1 + z_2} = e^{z_1} \cdot e^{z_2}$
+2. $|e^z| = e^x$
+3. $\arg(e^z) = y$
+4. $e^{i\pi} = -1$（Euler公式）
 
 **三角函数**：
 
-```text
-sin z = (e^{iz} - e^{-iz})/(2i)
-cos z = (e^{iz} + e^{-iz})/2
+$$\sin z = \frac{e^{iz} - e^{-iz}}{2i}, \quad \cos z = \frac{e^{iz} + e^{-iz}}{2}$$
 
-性质：
-- 周期函数
-- 与实函数类似
-- 但有复值
-```
+**性质**：
+- **周期性**：$\sin(z + 2\pi) = \sin z$，$\cos(z + 2\pi) = \cos z$
+- **与实函数类似**：$\sin^2 z + \cos^2 z = 1$
+- **但有复值**：可以取任意复数值
 
 ---
 
@@ -216,17 +199,17 @@ cos z = (e^{iz} + e^{-iz})/2
 
 **定义**：
 
-```text
-函数f(z)在点z₀解析，如果：
-- 在z₀的邻域内可导
+函数 $f(z)$ 在点 $z_0$ 解析，如果：
+- 在 $z_0$ 的邻域内可导
 - 导数存在且连续
 
-等价条件（Cauchy-Riemann方程）：
-∂u/∂x = ∂v/∂y
-∂u/∂y = -∂v/∂x
+**等价条件（Cauchy-Riemann方程）**：
+$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
 
-其中f(z) = u(x, y) + i v(x, y)
-```
+其中 $f(z) = u(x, y) + i v(x, y)$。
+
+**解析函数的导数**：
+$$f'(z) = \frac{\partial u}{\partial x} + i \frac{\partial v}{\partial x} = \frac{\partial v}{\partial y} - i \frac{\partial u}{\partial y}$$
 
 **性质**：
 
@@ -245,16 +228,17 @@ cos z = (e^{iz} + e^{-iz})/2
 
 **代数基本定理**：
 
-```text
-定理（Gauss, 1799）：
-每个n次复系数多项式
-P(z) = a₀ + a₁z + ... + aₙzⁿ  (aₙ ≠ 0)
+**定理（Gauss, 1799）**：
+每个 $n$ 次复系数多项式
+$$P(z) = a_0 + a_1z + \cdots + a_nz^n \quad (a_n \neq 0)$$
 
-在复数域内有n个根（计重数）
+在复数域内有 $n$ 个根（计重数）。
 
-等价表述：
-复数域C是代数闭域
-```
+**等价表述**：
+复数域 $\mathbb{C}$ 是代数闭域。
+
+**数学表述**：
+$$\forall P(z) \in \mathbb{C}[z], \deg P = n > 0, \exists z_1, z_2, \ldots, z_n \in \mathbb{C}: P(z) = a_n(z - z_1)(z - z_2) \cdots (z - z_n)$$
 
 **历史意义**：
 
@@ -303,16 +287,16 @@ P(z) = a₀ + a₁z + ... + aₙzⁿ  (aₙ ≠ 0)
 
 **留数定理**：
 
-```text
 应用复分析计算实积分：
 
-∫_{-∞}^∞ f(x) dx = 2πi ∑ Res(f, zₖ)
+$$\int_{-\infty}^{\infty} f(x) dx = 2\pi i \sum \text{Res}(f, z_k)$$
 
-其中zₖ是f在上半平面的奇点
+其中 $z_k$ 是 $f$ 在上半平面的奇点。
 
-例子：
-∫_{-∞}^∞ dx/(1 + x²) = π
-```
+**例子**：
+$$\int_{-\infty}^{\infty} \frac{dx}{1 + x^2} = \pi$$
+
+**证明**：$f(z) = \frac{1}{1 + z^2}$ 在上半平面有奇点 $z = i$，留数为 $\text{Res}(f, i) = \frac{1}{2i}$，所以积分等于 $2\pi i \cdot \frac{1}{2i} = \pi$。
 
 ---
 

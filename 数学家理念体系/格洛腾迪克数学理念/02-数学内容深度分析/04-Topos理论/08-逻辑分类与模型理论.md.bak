@@ -276,10 +276,10 @@ Topos逻辑
 ### 核心公式
 
 1. **内部逻辑对应**：
-   $$\text{对象} \leqqqftrightarrow \text{类型}, \quad \text{子对象} \leqqqftrightarrow \text{命题}, \quad \text{子对象分类器} \leqqqftrightarrow \text{真值}$$
+   $$\text{对象} \leqqqqqftrightarrow \text{类型}, \quad \text{子对象} \leqqqqqftrightarrow \text{命题}, \quad \text{子对象分类器} \leqqqqqftrightarrow \text{真值}$$
 
 2. **逻辑运算**：
-   $$A \land B = A \times_\Omega B, \quad A \lor B = A \sqcup B, \quad A \Rightarrow B = B^A, \quad \neqqqg A = A \Rightarrow 0$$
+   $$A \land B = A \times_\Omega B, \quad A \lor B = A \sqcup B, \quad A \Rightarrow B = B^A, \quad \neqqqqqg A = A \Rightarrow 0$$
 
 3. **几何逻辑**：
    $$\text{几何公式} = \text{有限合取、有限析取、存在量词的组合}$$
@@ -297,13 +297,13 @@ Topos逻辑
    $$\text{几何逻辑} \subset \text{内部逻辑} \subset \text{高阶逻辑}$$
 
 8. **模型与层对应**：
-   $$\text{模型} \leqqqftrightarrow \text{层}, \quad \text{逻辑解释} \leqqqftrightarrow \text{几何构造}$$
+   $$\text{模型} \leqqqqqftrightarrow \text{层}, \quad \text{逻辑解释} \leqqqqqftrightarrow \text{几何构造}$$
 
 9. **内部逻辑推理**：
    $$\text{在Topos $\mathcal{E}$ 中可以像在Set中一样进行逻辑推理}$$
 
 10. **逻辑与几何对应**：
-    $$\text{逻辑结构} \leqqqftrightarrow \text{几何结构}, \quad \text{模型理论} \leqqqftrightarrow \text{层理论}$$
+    $$\text{逻辑结构} \leqqqqqftrightarrow \text{几何结构}, \quad \text{模型理论} \leqqqqqftrightarrow \text{层理论}$$
 
 ---
 

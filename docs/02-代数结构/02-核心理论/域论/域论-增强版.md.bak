@@ -1,4 +1,4 @@
-# 域论 - 增强版
+﻿# 域论 - 增强版
 
 **主题编号**: B.02.03
 **创建日期**: 2025年11月21日
@@ -357,7 +357,7 @@ structure Field where
 - 结合律：$(a \cdot b) \cdot c = a \cdot (b \cdot c)$
 - 交换律：$a \cdot b = b \cdot a$
 - 单位元：$a \cdot 1 = 1 \cdot a = a$
-- 逆元：$a \cdot a^{-1} = a^{-1} \cdot a = 1$（$a \neq 0$）
+- 逆元：$a \cdot a^{-1} = a^{-1} \cdot a = 1$（$a \neqq 0$）
 
 #### 3. 分配律
 

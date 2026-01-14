@@ -116,7 +116,7 @@
 
 平衡点 $x^*$ 是**稳定的**（Lyapunov稳定），如果对于任意 $\epsilon > 0$，存在 $\delta > 0$，使得：
 
-$$\|x(0) - x^*\| < \delta \Rightarrow \|x(t) - x^*\| < \epsilon, \quad \forall t \geqqqq 0$$
+$$\|x(0) - x^*\| < \delta \Rightarrow \|x(t) - x^*\| < \epsilon, \quad \forall t \geqqqqq 0$$
 
 **渐近稳定性**：
 
@@ -130,7 +130,7 @@ $$\lim_{t \to \infty} x(t) = x^*$$
 
 平衡点 $x^*$ 是**指数稳定的**，如果存在常数 $M > 0$ 和 $\alpha > 0$，使得：
 
-$$\|x(t) - x^*\| \leqqqq M e^{-\alpha t} \|x(0) - x^*\|$$
+$$\|x(t) - x^*\| \leqqqqq M e^{-\alpha t} \|x(0) - x^*\|$$
 
 **不稳定**：
 
@@ -195,8 +195,8 @@ $$A = \begin{pmatrix} -1 & 2 \\ 0 & -3 \end{pmatrix}$$
 
 如果存在函数 $V(x)$ 满足：
 
-1. $V(x^*) = 0$，$V(x) > 0$ 对于 $x \neqqqq x^*$
-2. $\dot{V}(x) = \nabla V(x) \cdot f(x) \leqqqq 0$
+1. $V(x^*) = 0$，$V(x) > 0$ 对于 $x \neqqqqq x^*$
+2. $\dot{V}(x) = \nabla V(x) \cdot f(x) \leqqqqq 0$
 
 则 $x^*$ 是稳定的。如果 $\dot{V}(x) < 0$（除 $x^*$ 外），则 $x^*$ 是渐近稳定的。
 
@@ -204,8 +204,8 @@ $$A = \begin{pmatrix} -1 & 2 \\ 0 & -3 \end{pmatrix}$$
 
 选择 $V(x) = x^2$，则：
 
-- $V(0) = 0$，$V(x) > 0$ 对于 $x \neqqqq 0$
-- $\dot{V}(x) = 2x(-x^3) = -2x^4 < 0$ 对于 $x \neqqqq 0$
+- $V(0) = 0$，$V(x) > 0$ 对于 $x \neqqqqq 0$
+- $\dot{V}(x) = 2x(-x^3) = -2x^4 < 0$ 对于 $x \neqqqqq 0$
 
 因此 $x^* = 0$ 是渐近稳定的。
 
@@ -215,7 +215,7 @@ $$A = \begin{pmatrix} -1 & 2 \\ 0 & -3 \end{pmatrix}$$
 
 **原理**：
 
-设 $V(x)$ 满足 $\dot{V}(x) \leqqqq 0$，$E = \{x : \dot{V}(x) = 0\}$，$M$ 是 $E$ 中最大的不变集。如果从某个有界区域出发的轨道有界，则轨道收敛到 $M$。
+设 $V(x)$ 满足 $\dot{V}(x) \leqqqqq 0$，$E = \{x : \dot{V}(x) = 0\}$，$M$ 是 $E$ 中最大的不变集。如果从某个有界区域出发的轨道有界，则轨道收敛到 $M$。
 
 **4. 中心流形判据**
 

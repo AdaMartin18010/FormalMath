@@ -91,7 +91,7 @@ $$|T| = \sup\{\alpha : T \text{ 可证明到 } \alpha \text{ 的超限归纳}\}$
 
 - **Cantor正规形式**：
   $$\alpha = \omega^{\alpha_1} + \omega^{\alpha_2} + \cdots + \omega^{\alpha_n}$$
-  其中 $\alpha_1 \geqq \alpha_2 \geqq \cdots \geqq \alpha_n$
+  其中 $\alpha_1 \geqqqq \alpha_2 \geqqqq \cdots \geqqqq \alpha_n$
 
 - **$\varepsilon_0$ 的构造**：
   - $\varepsilon_0 = \omega^{\varepsilon_0}$（不动点）

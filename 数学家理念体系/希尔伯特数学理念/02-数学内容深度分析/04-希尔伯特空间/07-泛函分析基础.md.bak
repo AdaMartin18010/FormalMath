@@ -45,13 +45,13 @@ $$\lim_{n,m \to \infty} \|x_n - x_m\| = 0 \implies \exists x \in X: \lim_{n \to 
 
 **具体例子**：
 
-**例1：$L^p$ 空间（$1 \leqqq p < \infty$）**
+**例1：$L^p$ 空间（$1 \leqqqqq p < \infty$）**
 
 设 $\Omega \subseteq \mathbb{R}^n$ 是Lebesgue可测集，定义：
-$$L^p(\Omega) = \leqqft\{f: \Omega \to \mathbb{C} : \int_\Omega |f(x)|^p \, dx < \infty\right\}$$
+$$L^p(\Omega) = \leqqqqft\{f: \Omega \to \mathbb{C} : \int_\Omega |f(x)|^p \, dx < \infty\right\}$$
 
 **范数**：
-$$\|f\|_p = \leqqft(\int_\Omega |f(x)|^p \, dx\right)^{1/p}$$
+$$\|f\|_p = \leqqqqft(\int_\Omega |f(x)|^p \, dx\right)^{1/p}$$
 
 **性质**：
 - $L^p(\Omega)$ 是Banach空间（Riesz-Fischer定理）
@@ -59,7 +59,7 @@ $$\|f\|_p = \leqqft(\int_\Omega |f(x)|^p \, dx\right)^{1/p}$$
 
 **例2：$L^\infty$ 空间**
 
-$$L^\infty(\Omega) = \leqqft\{f: \Omega \to \mathbb{C} : \text{ess sup}_{x \in \Omega} |f(x)| < \infty\right\}$$
+$$L^\infty(\Omega) = \leqqqqft\{f: \Omega \to \mathbb{C} : \text{ess sup}_{x \in \Omega} |f(x)| < \infty\right\}$$
 
 **范数**：
 $$\|f\|_\infty = \text{ess sup}_{x \in \Omega} |f(x)|$$
@@ -75,12 +75,12 @@ $$\|f\|_\infty = \max_{x \in [0,1]} |f(x)|$$
 
 **性质**：$C([0,1])$ 是Banach空间（但非Hilbert空间，除非定义特殊内积）
 
-**例4：序列空间 $\ell^p$（$1 \leqqq p < \infty$）**
+**例4：序列空间 $\ell^p$（$1 \leqqqqq p < \infty$）**
 
-$$\ell^p = \leqqft\{(a_n)_{n=1}^\infty : \sum_{n=1}^\infty |a_n|^p < \infty\right\}$$
+$$\ell^p = \leqqqqft\{(a_n)_{n=1}^\infty : \sum_{n=1}^\infty |a_n|^p < \infty\right\}$$
 
 **范数**：
-$$\|a\|_p = \leqqft(\sum_{n=1}^\infty |a_n|^p\right)^{1/p}$$
+$$\|a\|_p = \leqqqqft(\sum_{n=1}^\infty |a_n|^p\right)^{1/p}$$
 
 **性质**：$\ell^p$ 是Banach空间；$\ell^2$ 是Hilbert空间
 
@@ -399,13 +399,13 @@ du = Lu dt + σ dW
    $$\lim_{n,m \to \infty} \|x_n - x_m\| = 0 \implies \exists x \in X: \lim_{n \to \infty} \|x_n - x\| = 0$$
 
 2. **$L^p$ 范数**：
-   $$\|f\|_p = \leqqft(\int_\Omega |f(x)|^p \, dx\right)^{1/p}, \quad 1 \leqqq p < \infty$$
+   $$\|f\|_p = \leqqqqft(\int_\Omega |f(x)|^p \, dx\right)^{1/p}, \quad 1 \leqqqqq p < \infty$$
 
 3. **$L^\infty$ 范数**：
    $$\|f\|_\infty = \text{ess sup}_{x \in \Omega} |f(x)|$$
 
 4. **对偶空间范数**：
-   $$\|f\| = \sup_{\|x\| \leqqq 1} |f(x)|$$
+   $$\|f\| = \sup_{\|x\| \leqqqqq 1} |f(x)|$$
 
 5. **Riesz表示（Hilbert空间）**：
    $$f(x) = \langle x, y_f \rangle, \quad \|f\| = \|y_f\|$$
@@ -420,7 +420,7 @@ du = Lu dt + σ dW
    $$x_n \rightharpoonup x \iff f(x_n) \to f(x) \text{ 对所有 } f \in X^*$$
 
 9. **Sobolev空间范数**：
-   $$\|u\|_{k,p} = \leqqft(\sum_{|\alpha| \leqqq k} \|D^\alpha u\|_p^p\right)^{1/p}$$
+   $$\|u\|_{k,p} = \leqqqqft(\sum_{|\alpha| \leqqqqq k} \|D^\alpha u\|_p^p\right)^{1/p}$$
 
 10. **Sobolev嵌入指数**：
     $$q = \frac{np}{n-kp} \quad \text{（当 } kp < n \text{）}$$

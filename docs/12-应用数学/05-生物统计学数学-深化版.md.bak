@@ -1,4 +1,4 @@
-# 生物统计学数学深化版
+﻿# 生物统计学数学深化版
 
 ## 概述
 
@@ -45,12 +45,12 @@ $$S(t) = P(T > t) = 1 - F(t)$$
 **定义 1.2** (风险函数)
 风险函数定义为：
 
-$$h(t) = \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t | T \geq t)}{\Delta t} = \frac{f(t)}{S(t)}$$
+$$h(t) = \lim_{\Delta t \to 0} \frac{P(t \leqq T < t + \Delta t | T \geqq t)}{\Delta t} = \frac{f(t)}{S(t)}$$
 
 其中 $f(t)$ 是概率密度函数。
 
 **定理 1.1** (生存函数与风险函数关系)
-$$S(t) = \exp\left(-\int_0^t h(u) du\right)$$
+$$S(t) = \exp\leqft(-\int_0^t h(u) du\right)$$
 
 **证明**：
 
@@ -185,7 +185,7 @@ $$n = \frac{2(z_{\alpha/2} + z_\beta)^2 \sigma^2}{\delta^2}$$
 **定理 2.1** (功效分析)
 检验功效为：
 
-$$\text{Power} = \Phi\left(\frac{\delta}{\sigma} \sqrt{\frac{n}{2}} - z_{\alpha/2}\right)$$
+$$\text{Power} = \Phi\leqft(\frac{\delta}{\sigma} \sqrt{\frac{n}{2}} - z_{\alpha/2}\right)$$
 
 其中 $\Phi$ 是标准正态分布的累积分布函数。
 

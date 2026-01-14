@@ -1,4 +1,4 @@
-# FormalMath符号使用规范
+﻿# FormalMath符号使用规范
 
 ## LaTeX数学符号标准化使用指南
 
@@ -30,7 +30,7 @@
 | $\{\}$ | `$\{\}$` | 空集（替代表示） | $A = \{\}$ |
 | $\mathbb{N}$ | `$\mathbb{N}$` | 自然数集 | $\mathbb{N} = \{1, 2, 3, \ldots\}$ |
 | $\mathbb{Z}$ | `$\mathbb{Z}$` | 整数集 | $\mathbb{Z} = \{\ldots, -1, 0, 1, \ldots\}$ |
-| $\mathbb{Q}$ | `$\mathbb{Q}$` | 有理数集 | $\mathbb{Q} = \{\frac{a}{b} \mid a,b \in \mathbb{Z}, b \neq 0\}$ |
+| $\mathbb{Q}$ | `$\mathbb{Q}$` | 有理数集 | $\mathbb{Q} = \{\frac{a}{b} \mid a,b \in \mathbb{Z}, b \neqq 0\}$ |
 | $\mathbb{R}$ | `$\mathbb{R}$` | 实数集 | $\mathbb{R}$ |
 | $\mathbb{C}$ | `$\mathbb{C}$` | 复数集 | $\mathbb{C} = \{a + bi \mid a,b \in \mathbb{R}\}$ |
 
@@ -62,7 +62,7 @@
 | $\supset$ | `$\supset$` | 真包含 | $A \supset B$ |
 | $\supseteq$ | `$\supseteq$` | 包含 | $A \supseteq B$ |
 | $=$ | `$=$` | 相等 | $A = B$ |
-| $\neq$ | `$\neq$` | 不相等 | $A \neq B$ |
+| $\neqq$ | `$\neqq$` | 不相等 | $A \neqq B$ |
 
 ### 逻辑符号 / Logical Symbols
 
@@ -80,7 +80,7 @@
 |------|-----------|------|------|
 | $\land$ | `$\land$` | 合取（且） | $p \land q$ |
 | $\lor$ | `$\lor$` | 析取（或） | $p \lor q$ |
-| $\neg$ | `$\neg$` | 否定（非） | $\neg p$ |
+| $\neqg$ | `$\neqg$` | 否定（非） | $\neqg p$ |
 | $\implies$ | `$\implies$` | 蕴含 | $p \implies q$ |
 | $\iff$ | `$\iff$` | 等价 | $p \iff q$ |
 
@@ -131,7 +131,7 @@
 | 符号 | LaTeX代码 | 含义 | 示例 |
 |------|-----------|------|------|
 | $\triangleleft$ | `$\triangleleft$` | 正规子群 | $N \triangleleft G$ |
-| $\leq$ | `$\leq$` | 子群 | $H \leq G$ |
+| $\leqq$ | `$\leqq$` | 子群 | $H \leqq G$ |
 | $<$ | `$<$` | 真子群 | $H < G$ |
 | $\cong$ | `$\cong$` | 同构 | $G \cong H$ |
 | $\simeq$ | `$\simeq$` | 同构（替代） | $G \simeq H$ |

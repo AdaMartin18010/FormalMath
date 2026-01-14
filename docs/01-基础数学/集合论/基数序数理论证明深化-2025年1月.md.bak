@@ -1,4 +1,4 @@
-# 基数序数理论证明深化 - 2025年1月
+﻿# 基数序数理论证明深化 - 2025年1月
 
 ## 📋 概述
 
@@ -26,13 +26,13 @@ $$|A| < |\mathcal{P}(A)|$$
 
 #### 证明思路
 
-1. **第一步**: 证明 $|A| \leq |\mathcal{P}(A)|$
-2. **第二步**: 证明 $|A| \neq |\mathcal{P}(A)|$
+1. **第一步**: 证明 $|A| \leqq |\mathcal{P}(A)|$
+2. **第二步**: 证明 $|A| \neqq |\mathcal{P}(A)|$
 3. **第三步**: 结合前两步得到严格不等式
 
 #### 详细证明
 
-**步骤 1**: 证明 $|A| \leq |\mathcal{P}(A)|$
+**步骤 1**: 证明 $|A| \leqq |\mathcal{P}(A)|$
 
 定义函数 $f : A \rightarrow \mathcal{P}(A)$ 为：
 $$f(x) = \{x\}$$
@@ -45,9 +45,9 @@ $$f(x) = \{x\}$$
 - 由集合的外延性，$x = y$
 - 因此 $f$ 是单射
 
-由单射的存在性，我们得到 $|A| \leq |\mathcal{P}(A)|$。
+由单射的存在性，我们得到 $|A| \leqq |\mathcal{P}(A)|$。
 
-**步骤 2**: 证明 $|A| \neq |\mathcal{P}(A)|$
+**步骤 2**: 证明 $|A| \neqq |\mathcal{P}(A)|$
 
 假设存在双射 $g : A \rightarrow \mathcal{P}(A)$。
 
@@ -64,7 +64,7 @@ $$D = \{x \in A : x \notin g(x)\}$$
 - **情况 2**: 如果 $d \notin D$，则 $d \in g(d) = D$，矛盾
 - 因此，不存在这样的 $d$，即 $D \notin \text{range}(g)$
 
-这与 $g$ 是满射矛盾，因此 $|A| \neq |\mathcal{P}(A)|$。
+这与 $g$ 是满射矛盾，因此 $|A| \neqq |\mathcal{P}(A)|$。
 
 **步骤 3**: 结合步骤 1 和步骤 2，得到 $|A| < |\mathcal{P}(A)|$。
 
@@ -92,7 +92,7 @@ $$D = \{x \in A : x \notin g(x)\}$$
 
 #### 定理 1.2.1 (康托尔-伯恩斯坦定理 / Cantor-Bernstein Theorem)
 
-如果 $|A| \leq |B|$ 且 $|B| \leq |A|$，则 $|A| = |B|$。
+如果 $|A| \leqq |B|$ 且 $|B| \leqq |A|$，则 $|A| = |B|$。
 
 #### 证明思路
 
@@ -245,7 +245,7 @@ $$\alpha \cdot (\beta + \gamma) = \sup\{\alpha \cdot (\beta + \delta) : \delta <
 
 **步骤 3**: 证明 $V_\kappa$ 满足替换公理模式
 
-对于函数 $f : x \rightarrow V_\kappa$，有 $|f(x)| \leq |x| < \kappa$。
+对于函数 $f : x \rightarrow V_\kappa$，有 $|f(x)| \leqq |x| < \kappa$。
 
 由于 $\kappa$ 是正则基数，$f(x) \in V_\kappa$。
 

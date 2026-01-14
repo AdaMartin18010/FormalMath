@@ -1,4 +1,4 @@
-# 11. 算术几何 / Arithmetic Geometry
+﻿# 11. 算术几何 / Arithmetic Geometry
 
 **主题编号**: B.11.11
 **创建日期**: 2025年11月21日
@@ -192,7 +192,7 @@ structure RingOfIntegers (K : AlgebraicNumberField) where
 $$\text{Gal}(K/F) = \{\sigma : K \rightarrow K : \sigma|_F = \text{id}\}$$
 
 **基本定理**: 存在一一对应：
-$$\{\text{中间域}\} \leftrightarrow \{\text{子群}\}$$
+$$\{\text{中间域}\} \leqftrightarrow \{\text{子群}\}$$
 
 ## 11.4 算术几何核心 / Core of Arithmetic Geometry (编号: B.11.11.04)
 
@@ -225,7 +225,7 @@ def ArithmeticSchemeProperties (X : ArithmeticScheme) : Prop :=
 $$H^i_{\text{ét}}(X, \mathbb{Z}/\ell^n\mathbb{Z})$$
 
 **ℓ进上同调**:
-$$H^i_{\text{ét}}(X, \mathbb{Z}_\ell) = \lim_{\leftarrow n} H^i_{\text{ét}}(X, \mathbb{Z}/\ell^n\mathbb{Z})$$
+$$H^i_{\text{ét}}(X, \mathbb{Z}_\ell) = \lim_{\leqftarrow n} H^i_{\text{ét}}(X, \mathbb{Z}/\ell^n\mathbb{Z})$$
 
 ### 11.4.3 L函数 / L-Functions
 
@@ -241,7 +241,7 @@ $$L(X, s) = \prod_p \frac{1}{1 - a_p p^{-s} + \chi(p) p^{1-2s}}$$
 **定义**: 椭圆曲线是光滑的射影曲线 $E$，具有：
 $$E : y^2 = x^3 + ax + b$$
 
-其中 $4a^3 + 27b^2 \neq 0$。
+其中 $4a^3 + 27b^2 \neqq 0$。
 
 **群结构**: $E$ 上的点形成阿贝尔群，群运算为：
 $$P + Q = R$$
@@ -322,7 +322,7 @@ $$T_p f = a_p f$$
 ### 11.6.3 模形式与椭圆曲线 / Modular Forms and Elliptic Curves
 
 **对应关系**: 通过模性定理，椭圆曲线与模形式建立对应：
-$$E \leftrightarrow f$$
+$$E \leqftrightarrow f$$
 
 其中 $L(E, s) = L(f, s)$。
 
@@ -331,15 +331,15 @@ $$E \leftrightarrow f$$
 ### 11.7.1 朗兰兹对应 / Langlands Correspondence
 
 **朗兰兹对应**: 设 $F$ 是数域，则存在对应：
-$$\text{Galois Representations} \leftrightarrow \text{Automorphic Representations}$$
+$$\text{Galois Representations} \leqftrightarrow \text{Automorphic Representations}$$
 
 **具体形式**:
-$$\rho : G_F \rightarrow GL_n(\mathbb{C}) \leftrightarrow \pi : GL_n(\mathbb{A}_F) \rightarrow \text{Automorphic}$$
+$$\rho : G_F \rightarrow GL_n(\mathbb{C}) \leqftrightarrow \pi : GL_n(\mathbb{A}_F) \rightarrow \text{Automorphic}$$
 
 ### 11.7.2 几何朗兰兹 / Geometric Langlands
 
 **几何朗兰兹对应**: 设 $X$ 是复代数曲线，$G$ 是复约化群，则：
-$$\mathcal{D}^b(\text{Bun}_G) \leftrightarrow \mathcal{D}^b(\text{LocSys}_G)$$
+$$\mathcal{D}^b(\text{Bun}_G) \leqftrightarrow \mathcal{D}^b(\text{LocSys}_G)$$
 
 ### 11.7.3 算术朗兰兹 / Arithmetic Langlands
 

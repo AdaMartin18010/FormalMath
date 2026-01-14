@@ -5,16 +5,16 @@ $conceptFiles = Get-ChildItem "g:\_src\FormalMath\concept\核心概念\*.md" -Ex
 
 foreach ($file in $conceptFiles) {
     Write-Host "完善文件: $($file.Name)"
-    
+
     $content = Get-Content $file.FullName -Raw -Encoding UTF8
     $modified = $false
-    
+
     # 检查并修复目录中的其他部分链接
     if ($content -match '9\. \[其他部分\]\(#9-其他部分\)' -and $content -notmatch '9\.1 \[思维导图\]') {
         $content = $content -replace '9\. \[其他部分\]\(#9-其他部分\)', "9. [其他部分](#9-其他部分)`n   - 9.1 [思维导图](#91-思维导图)（如果有）`n   - 9.2 [知识多维关系矩阵](#92-知识多维关系矩阵)（如果有）`n   - 9.3 [形象化解释与论证](#93-形象化解释与论证)（如果有）`n   - 9.4 [学习路径](#94-学习路径)（如果有）`n   - 9.5 [习题库](#95-习题库)（如果有）`n   - 9.6 [认知维度表征](#96-认知维度表征)（如果有）`n   - 9.7 [理性维度表征](#97-理性维度表征)（如果有）`n   - 9.8 [综合整合表征](#98-综合整合表征)（如果有）"
         $modified = $true
     }
-    
+
     # 确保所有其他部分都有编号
     if ($content -match '## 🗺️ 思维导图' -and $content -notmatch '## 9\.1 🗺️') {
         $content = $content -replace '## 🗺️ 思维导图', '## 9.1 🗺️ 思维导图'
@@ -52,7 +52,7 @@ foreach ($file in $conceptFiles) {
         $content = $content -replace '## 👨‍🏫 专家观点与论证', '## 9.9 👨‍🏫 专家观点与论证'
         $modified = $true
     }
-    
+
     # 确保所有主要章节都有编号
     if ($content -match '## 📋 概述' -and $content -notmatch '## 1\. 📋') {
         $content = $content -replace '## 📋 概述', '## 1. 📋 概述'
@@ -86,7 +86,7 @@ foreach ($file in $conceptFiles) {
         $content = $content -replace '## 📖 参考文献', '## 8. 📖 参考文献'
         $modified = $true
     }
-    
+
     # 确保所有子章节都有编号
     if ($content -match '### 基础定义 \(L0\)' -and $content -notmatch '### 2\.1 基础定义') {
         $content = $content -replace '### 基础定义 \(L0\)', '### 2.1 基础定义 (L0)'
@@ -124,7 +124,7 @@ foreach ($file in $conceptFiles) {
         $content = $content -replace '### 实际应用', '### 6.2 实际应用'
         $modified = $true
     }
-    
+
     if ($modified) {
         Set-Content -Path $file.FullName -Value $content -Encoding UTF8 -NoNewline
         Write-Host "已更新: $($file.Name)"

@@ -848,7 +848,7 @@ Topos理论的核心思想是：**几何决定逻辑，逻辑可以改变**。
    $$\llbracket \varphi \rrbracket \in \Omega, \quad \text{公式的真值}$$
 
 5. **排中律失效**：
-   $$P \lor \neqg P \neqq \text{true} \text{（在一般Topos中）}$$
+   $$P \lor \neqqqg P \neqqqq \text{true} \text{（在一般Topos中）}$$
 
 6. **层上同调**：
    $$H^i(X, \mathcal{F}) = R^i\Gamma(X, \mathcal{F})$$

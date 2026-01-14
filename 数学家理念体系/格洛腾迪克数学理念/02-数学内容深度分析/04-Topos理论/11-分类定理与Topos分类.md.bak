@@ -287,13 +287,13 @@ Topos分类
    $$\text{Sh}(X_{\text{ét}}) \cong \text{Sh}(\text{Ét}(X))$$
 
 5. **Topos分类与几何**：
-   $$\text{Topos分类} \leqqqftrightarrow \text{几何结构分类}$$
+   $$\text{Topos分类} \leqqqqqftrightarrow \text{几何结构分类}$$
 
 6. **分类定理的唯一性**：
    $$\mathcal{E} \cong \text{Sh}(\mathcal{C}, J) \text{ 不唯一，但可以规范化}$$
 
 7. **Topos的分类**：
-   $$\text{Grothendieck Topos} \leqqqftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
+   $$\text{Grothendieck Topos} \leqqqqqftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
 
 8. **分类与内部逻辑**：
    $$\text{分类Topos的内部逻辑由拓扑 $J$ 决定}$$

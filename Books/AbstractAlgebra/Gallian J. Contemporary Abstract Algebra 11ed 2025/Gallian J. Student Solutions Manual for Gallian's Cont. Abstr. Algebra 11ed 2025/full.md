@@ -330,15 +330,15 @@ $D_{7}$  ，  $D_{4}$  ，  $D_{5}$  ，  $Z_{10}$
 4. a, c
 
 5. 7; 13;  $n - 1$ ;  $\frac{1}{3 - 2i} = \frac{1}{3 - 2i}$ ,  $\frac{3 + 2i}{3 + 2i} = \frac{3}{13}$ ,  $\frac{2}{13} i$  
-6. a.  $-31 - i$  b. 5 c.  $\frac{1}{12}\left[ \begin{array}{cc}2 & -3\\ -8 & 6 \end{array} \right]$  d.  $\left[ \begin{array}{ll}2 & 4\\ 4 & 6 \end{array} \right]$ .  
-7. Let  $A = \left[ \begin{array}{ll}2 & 0\\ 0 & 1 \end{array} \right]$ . Then  $A\in G_1$  and  $\det A = 2$  but  $\det A^2 = 0$ . So  $G_{1}$  is not closed under multiplication. Also  $A\in G_{2}$  but  $A^{-1} = \left[ \begin{array}{ll}1 / 2 & 0\\ 0 & 1 \end{array} \right]$  is not in  $G_{2}$ .  $G_{3}$  is a group.  
+6. a.  $-31 - i$  b. 5 c.  $\frac{1}{12}\leqft[ \begin{array}{cc}2 & -3\\ -8 & 6 \end{array} \right]$  d.  $\leqft[ \begin{array}{ll}2 & 4\\ 4 & 6 \end{array} \right]$ .  
+7. Let  $A = \leqft[ \begin{array}{ll}2 & 0\\ 0 & 1 \end{array} \right]$ . Then  $A\in G_1$  and  $\det A = 2$  but  $\det A^2 = 0$ . So  $G_{1}$  is not closed under multiplication. Also  $A\in G_{2}$  but  $A^{-1} = \leqft[ \begin{array}{ll}1 / 2 & 0\\ 0 & 1 \end{array} \right]$  is not in  $G_{2}$ .  $G_{3}$  is a group.  
 8. Say,  $x$  is the identity. Then,  $0 - x = 0$ . So,  $x = 0$ . But  $0 - 1 \neq 1$ .  
 9. If  $5x = 3$  multiply both sides by 4, we get  $0 = 12$ . If  $3x = 5$  multiply both sides by 7, we get  $x = 15$ . Checking, we see that  $3 \cdot 15 = 5 \mod 20$ .  
 10. 1,3,7,9,11,13,17,19.1,9,11, and 19 are their own inverses; 3 and 7 are inverses of each other as are 11 and 13.  
 11. One is Socks-Shoes-Boots.  
 12. The set does not contain the identity; closure fails.  
 13. Under multiplication modulo 4, 2 does not have an inverse. Under multiplication modulo 5,  $\{1,2,3,4\}$  is closed, 1 is the identity, 1 and 4 are their own inverses, and 2 and 3 are inverses of each other. Modulo multiplication is associative.  
-14.  $\left[ \begin{array}{ll}1 & 1\\ 0 & 1 \end{array} \right]\left[ \begin{array}{ll}1 & 0\\ 1 & 1 \end{array} \right]\neq \left[ \begin{array}{ll}1 & 0\\ 1 & 1 \end{array} \right]\left[ \begin{array}{ll}1 & 1\\ 0 & 1 \end{array} \right].$  
+14.  $\leqft[ \begin{array}{ll}1 & 1\\ 0 & 1 \end{array} \right]\leqft[ \begin{array}{ll}1 & 0\\ 1 & 1 \end{array} \right]\neq \leqft[ \begin{array}{ll}1 & 0\\ 1 & 1 \end{array} \right]\leqft[ \begin{array}{ll}1 & 1\\ 0 & 1 \end{array} \right].$  
 15.  $a^{11}, a^6, a^4, a^1$  
 16. The identity is 25.  
 17. (a)  $2a + 3b$ ; (b)  $-2a + 2(-b + c)$ ; (c)  $-3(a + 2b) + 2c = 0$  
@@ -346,7 +346,7 @@ $D_{7}$  ，  $D_{4}$  ，  $D_{5}$  ，  $Z_{10}$
 19. Observe that  $a^5 = e$  implies that  $a^{-2} = a^3$  and  $b^7 = e$  implies that  $b^{14} = e$  and therefore  $b^{-11} = b^3$ . Thus,  $a^{-2}b^{-11} = a^3b^3$ . Moreover,  $(a^2b^4)^{-2} = ((a^2b^4)^{-1})^2 = (b^{-4}a^{-2})^2 = (b^3a^3)^2$ .  
 20.  $K = \{R_0,R_{180}\}$  .  $L = \{R_0,R_{180},H,V,D,D'\} .$
 
-21. The set is closed because  $\det (AB) = (\det A)(\det B)$ . Matrix multiplication is associative.  $\left[ \begin{array}{cc}1 & 0\\ 0 & 1 \end{array} \right]$  is the identity. Since  $\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]^{-1} = \left[ \begin{array}{cc}d & -b\\ -c & a \end{array} \right]$  its determinant is  $ad - bc = 1$ .
+21. The set is closed because  $\det (AB) = (\det A)(\det B)$ . Matrix multiplication is associative.  $\leqft[ \begin{array}{cc}1 & 0\\ 0 & 1 \end{array} \right]$  is the identity. Since  $\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]^{-1} = \leqft[ \begin{array}{cc}d & -b\\ -c & a \end{array} \right]$  its determinant is  $ad - bc = 1$ .
 
 22.  $1^{2} = (n - 1)^{2} = 1$
 
@@ -404,10 +404,10 @@ Alternate proof. Observe that  $(F_{1}F_{2})^{-1} = F_{2}^{-1}F_{1}^{-1} = F_{2}
 
 Continuing in this fashion, we have that the number of nonidentity solutions to  $x^{5} = e$  is a multiple of 4. In the general case, the number of solutions is a multiple of 4 or is infinite.
 
-47. The matrix  $\left[ \begin{array}{ll}a & b\\ c & d \end{array} \right]$  is in  $\mathrm{GL}(2,Z_2)$  if and only if  $ad\neq bc$ . This happens when  $a$  and  $d$  are 1 and at least 1 of  $b$  and  $c$  is 0 and when  $b$  and  $c$  are 1 and at least 1 of  $a$  and  $d$  is 0. So, the elements are
+47. The matrix  $\leqft[ \begin{array}{ll}a & b\\ c & d \end{array} \right]$  is in  $\mathrm{GL}(2,Z_2)$  if and only if  $ad\neq bc$ . This happens when  $a$  and  $d$  are 1 and at least 1 of  $b$  and  $c$  is 0 and when  $b$  and  $c$  are 1 and at least 1 of  $a$  and  $d$  is 0. So, the elements are
 
 $$
-\begin{array}{l} \left[ \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right] \left[ \begin{array}{c c} 1 & 1 \\ 0 & 1 \end{array} \right] \left[ \begin{array}{c c} 1 & 0 \\ 1 & 1 \end{array} \right] \left[ \begin{array}{c c} 1 & 1 \\ 1 & 0 \end{array} \right] \left[ \begin{array}{c c} 0 & 1 \\ 1 & 1 \end{array} \right] \left[ \begin{array}{c c} 0 & 1 \\ 1 & 0 \end{array} \right]. \\ \left[ \begin{array}{c c} 1 & 1 \\ 0 & 1 \end{array} \right] \text {a n d} \left[ \begin{array}{c c} 1 & 0 \\ 1 & 1 \end{array} \right] \text {d o n o t c o m m u t e}. \\ \end{array}
+\begin{array}{l} \leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right] \leqft[ \begin{array}{c c} 1 & 1 \\ 0 & 1 \end{array} \right] \leqft[ \begin{array}{c c} 1 & 0 \\ 1 & 1 \end{array} \right] \leqft[ \begin{array}{c c} 1 & 1 \\ 1 & 0 \end{array} \right] \leqft[ \begin{array}{c c} 0 & 1 \\ 1 & 1 \end{array} \right] \leqft[ \begin{array}{c c} 0 & 1 \\ 1 & 0 \end{array} \right]. \\ \leqft[ \begin{array}{c c} 1 & 1 \\ 0 & 1 \end{array} \right] \text {a n d} \leqft[ \begin{array}{c c} 1 & 0 \\ 1 & 1 \end{array} \right] \text {d o n o t c o m m u t e}. \\ \end{array}
 $$
 
 48. If  $n$  is not prime, we can write  $n = ab$ , where  $1 < a < n$  and  $1 < b < n$ . Then,  $a$  and  $b$  belong to the set  $\{1,2,\ldots,n-1\}$ , but  $0 = ab \mod n$  does not. If  $n$  is prime, let  $c$  be any element in the set. Then by the Corollary of Theorem 0.2 there are integers  $s$  and  $t$  such that  $cs + nt = 1$ . So, mod  $n$  we have  $cs = 1$ .
@@ -512,7 +512,7 @@ and therefore  $xy \in C(a)$ . Starting with  $xa = ax$ , we multiply both sides
 50. That  $C(a) \subseteq C(a^3)$  is easy. To prove the other inclusion, observe that  $a^6 = a$  so if  $x \in C(a^3)$ , then
 
 $$
-\begin{array}{l} x a = x a ^ {6} = x \left(a ^ {3} a ^ {3}\right) = \left(x a ^ {3}\right) a ^ {3} = \left(a ^ {3} x\right) a ^ {3} = a ^ {3} \left(x a ^ {3}\right) \\ = a ^ {3} \left(a ^ {3} x\right) = \left(a ^ {3} a ^ {3}\right) x = a ^ {6} x = a x. \\ \end{array}
+\begin{array}{l} x a = x a ^ {6} = x \leqft(a ^ {3} a ^ {3}\right) = \leqft(x a ^ {3}\right) a ^ {3} = \leqft(a ^ {3} x\right) a ^ {3} = a ^ {3} \leqft(x a ^ {3}\right) \\ = a ^ {3} \leqft(a ^ {3} x\right) = \leqft(a ^ {3} a ^ {3}\right) x = a ^ {6} x = a x. \\ \end{array}
 $$
 
 For the second part of the exercise try  $D_6$ .
@@ -522,10 +522,10 @@ For the second part of the exercise try  $D_6$ .
 53. Induction shows that for any positive integer  $n$  we have
 
 $$
-\left[ \begin{array}{c c} 1 & 1 \\ 0 & 1 \end{array} \right] ^ {n} = \left[ \begin{array}{c c} 1 & n \\ 0 & 1 \end{array} \right].
+\leqft[ \begin{array}{c c} 1 & 1 \\ 0 & 1 \end{array} \right] ^ {n} = \leqft[ \begin{array}{c c} 1 & n \\ 0 & 1 \end{array} \right].
 $$
 
-So, when the entries are from  $\mathbf{R}$ ,  $\left[ \begin{array}{ll}1 & 1\\ 0 & 1 \end{array} \right]$  has infinite order. When the entries are from  $Z_{p}$ , the order is  $p$ .
+So, when the entries are from  $\mathbf{R}$ ,  $\leqft[ \begin{array}{ll}1 & 1\\ 0 & 1 \end{array} \right]$  has infinite order. When the entries are from  $Z_{p}$ , the order is  $p$ .
 
 54.  $|A| = 2$ ,  $|B| = 2$ ,  $|AB| = \infty$ .
 
@@ -577,7 +577,7 @@ c.  $(xh_{1}x^{-1})(xh_{2}x^{-1}) = xh_{1}h_{2}x^{-1} = xh_{2}h_{1}x^{-1} = (xh_
 
 76. The function  $i(x) = 1$  where  $x \neq 0$  is in  $H$ . Let  $f, g \in H$ . Then,  $(f \cdot g)(2) = f(2) \cdot g(2) = 1 \cdot 1 = 1$ . Also,  $1 = i(2) = (f \cdot f^{-1})(2) = f(2) \cdot f^{-1}(2) = f^{-1}(2)$  so  $f^{-1}(2) = 1$  and  $f^{-1}(x)$  is in  $H$ . The 2 can be replaced by any nonzero number.
 
-77.  $\left[ \begin{array}{cc}2 & 0\\ 0 & 2 \end{array} \right]^{-1} = \left[ \begin{array}{cc}\frac{1}{2} & 0\\ 0 & \frac{1}{2} \end{array} \right]$  is not in  $H$
+77.  $\leqft[ \begin{array}{cc}2 & 0\\ 0 & 2 \end{array} \right]^{-1} = \leqft[ \begin{array}{cc}\frac{1}{2} & 0\\ 0 & \frac{1}{2} \end{array} \right]$  is not in  $H$
 
 78.  $D_{n}$  when  $n$  is odd;  $D_{n - 1}$  when  $n$  is even.
 
@@ -611,13 +611,13 @@ d.  $Z_{6}$
 3.  $\langle 20\rangle = \{20,10,0\}$  .  $\langle 10\rangle = \{10,20,0\}$
 
 $$
-\langle a ^ {2 0} \rangle = \left\{a ^ {2 0}, a ^ {1 0}, a ^ {0} \right\}; \langle a ^ {1 0} \rangle = \left\{a ^ {1 0}, a ^ {2 0}, a ^ {0} \right\}
+\langle a ^ {2 0} \rangle = \leqft\{a ^ {2 0}, a ^ {1 0}, a ^ {0} \right\}; \langle a ^ {1 0} \rangle = \leqft\{a ^ {1 0}, a ^ {2 0}, a ^ {0} \right\}
 $$
 
 4.  $\langle 3\rangle = \{3,6,9,12,15,0\}$  .  $\langle 15\rangle = \{15,12,9,6,3,0\}$  .  $\langle a^3\rangle = \{a^3,a^6,a^9,a^{12},a^{15},a^0\}$
 
 $$
-\langle a ^ {1 5} \rangle = \left\{a ^ {1 5}, a ^ {1 2}, a ^ {9}, a ^ {6}, a ^ {3}, a ^ {0} \right\}.
+\langle a ^ {1 5} \rangle = \leqft\{a ^ {1 5}, a ^ {1 2}, a ^ {9}, a ^ {6}, a ^ {3}, a ^ {0} \right\}.
 $$
 
 5.  $\langle 3\rangle = \{3,9,7,1\}$
@@ -938,7 +938,7 @@ That  $\alpha$  is one-to-one and onto follows directly from the definitions.
 13. For any  $x$  in the group, we have
 
 $$
-\left(\phi_ {g} \phi_ {h}\right) (x) = \phi_ {g} \left(\phi_ {h} (x)\right) = \phi_ {g} \left(h x h ^ {- 1}\right) = g h x h ^ {- 1} g ^ {- 1} = (g h) x (g h) ^ {- 1} = \phi_ {g h} (x).
+\leqft(\phi_ {g} \phi_ {h}\right) (x) = \phi_ {g} \leqft(\phi_ {h} (x)\right) = \phi_ {g} \leqft(h x h ^ {- 1}\right) = g h x h ^ {- 1} g ^ {- 1} = (g h) x (g h) ^ {- 1} = \phi_ {g h} (x).
 $$
 
 14. In  $U(16)$ ,  $|7| = |9| = 2$ , so by Theorem 4.4,  $U(16)$  is not cyclic.  
@@ -990,7 +990,7 @@ $\phi_{e} = \phi_{a^{n}a^{-n}} = \phi_{a^{n}}\phi_{a^{-n}} = \phi_{a^{n}}(\phi_{
 
 31. That  $\alpha$  is one-to-one follows from the fact that  $r^{-1}$  exists module  $n$ . Onto follows from Exercise 13 in Chapter 5. The operation preserving condition is Exercise 11 of Chapter 0.
 
-32. The mapping  $\left[ \begin{array}{cc}1 & a\\ 0 & 1 \end{array} \right]\to a$  is an isomorphism to  $Z$  when  $a\in Z$  and to  $\mathbf{R}$  when  $a\in \mathbf{R}$ .
+32. The mapping  $\leqft[ \begin{array}{cc}1 & a\\ 0 & 1 \end{array} \right]\to a$  is an isomorphism to  $Z$  when  $a\in Z$  and to  $\mathbf{R}$  when  $a\in \mathbf{R}$ .
 
 33. By Part 1 of Theorem 6.2, we have  $\phi(a^n) = \phi(a)^n = \gamma(a)^n = \gamma(a^n)$  thus  $\phi$  and  $\gamma$  agree on all elements of  $\langle a \rangle$ .
 
@@ -1006,7 +1006,7 @@ $\phi_{e} = \phi_{a^{n}a^{-n}} = \phi_{a^{n}}\phi_{a^{-n}} = \phi_{a^{n}}(\phi_{
 
 39. To prove that  $\phi$  is 1-1, observe that  $\phi(a + bi) = \phi(c + di)$  implies that  $a - bi = c - di$ . From properties of complex numbers this gives that  $a = c$  and  $b = d$ . Thus  $a + bi = c + di$ . To prove  $\phi$  is onto, let  $a + bi$  be any complex number. Then  $\phi(a - bi) = a + bi$ . To prove that  $\phi$  preserves addition and multiplication, note that  $\phi((a + bi) + (c + di)) = \phi((a + c) + (b + d)i) = (a + c) - (b + d)i = (a - bi) + (c - di) = \phi(a + bi) + \phi(c + di)$ . Also,  $\phi((a + bi)(c + di) = \phi((ac - bd) + (ad + bc)i) = (ac - bd) - (ad + bc)i$  and  $\phi(a + bi)\phi(c + di) = (a - bi)(c - di) = (ac - bd) - (ad + bc)i$ .
 
-40. Map  $a + b\sqrt{2} \rightarrow \left[ \begin{array}{cc}a & 2b\\ b & a \end{array} \right]$ . This map preserves both addition and multiplication.
+40. Map  $a + b\sqrt{2} \rightarrow \leqft[ \begin{array}{cc}a & 2b\\ b & a \end{array} \right]$ . This map preserves both addition and multiplication.
 
 41. First observe that  $Z$  is a cyclic group generated by 1. By property 3 of Theorem 6.2, it suffices to show that  $Q$  is not cyclic under addition. By way of contradiction, suppose that  $Q = \langle p / q \rangle$ . But then  $p / 2q$  is a rational number that is not in  $\langle p / q \rangle$ .
 
@@ -1015,17 +1015,17 @@ $\phi_{e} = \phi_{a^{n}a^{-n}} = \phi_{a^{n}}\phi_{a^{-n}} = \phi_{a^{n}}(\phi_{
 43. The notation itself suggests that
 
 $$
-\phi (a + b i) = \left[ \begin{array}{l l} a & - b \\ b & a \end{array} \right]
+\phi (a + b i) = \leqft[ \begin{array}{l l} a & - b \\ b & a \end{array} \right]
 $$
 
 is the appropriate isomorphism. To verify this, note that
 
 $$
-\phi ((a + b i) + (c + d i)) = \left[ \begin{array}{c c} a + c & - (b + d) \\ (b + d) & a + c \end{array} \right] =
+\phi ((a + b i) + (c + d i)) = \leqft[ \begin{array}{c c} a + c & - (b + d) \\ (b + d) & a + c \end{array} \right] =
 $$
 
 $$
-\left[ \begin{array}{c c} a & - b \\ b & a \end{array} \right] + \left[ \begin{array}{c c} c & - d \\ d & c \end{array} \right] = \phi (a + b i) + \phi (c + d i).
+\leqft[ \begin{array}{c c} a & - b \\ b & a \end{array} \right] + \leqft[ \begin{array}{c c} c & - d \\ d & c \end{array} \right] = \phi (a + b i) + \phi (c + d i).
 $$
 
 $$
@@ -1033,7 +1033,7 @@ $$
 $$
 
 $$
-\left[ \begin{array}{c c} (a c - b d) & - (a d + b c)) \\ (a d + b c) & a c - b d) \end{array} \right] = \left[ \begin{array}{c c} a & - b \\ b & a \end{array} \right] \left[ \begin{array}{c c} c & - d \\ d & c \end{array} \right] =
+\leqft[ \begin{array}{c c} (a c - b d) & - (a d + b c)) \\ (a d + b c) & a c - b d) \end{array} \right] = \leqft[ \begin{array}{c c} a & - b \\ b & a \end{array} \right] \leqft[ \begin{array}{c c} c & - d \\ d & c \end{array} \right] =
 $$
 
 $$
@@ -1047,7 +1047,7 @@ $$
 $$
 
 $$
-\left(- a _ {1}, \dots , - a _ {n}\right) \left(- b _ {1}, \dots , - b _ {n}\right) = \phi \left(\left(a _ {1}, \dots , a _ {n}\right)\right) + \phi \left(\left(b _ {1}, \dots , b _ {n}\right)\right).
+\leqft(- a _ {1}, \dots , - a _ {n}\right) \leqft(- b _ {1}, \dots , - b _ {n}\right) = \phi \leqft(\leqft(a _ {1}, \dots , a _ {n}\right)\right) + \phi \leqft(\leqft(b _ {1}, \dots , b _ {n}\right)\right).
 $$
 
 $\phi$  reflects each point through the origin.
@@ -1143,7 +1143,7 @@ Alternate proof: Again, assume that there is no element of order 105. Let  $H$  
 31. By Lagrange's theorem every element in  $G$  has an order that is a divisor of  $n$ . So, we can partition the  $n$  elements of  $G$  according to their orders. For each divisor  $d$  of  $n$ , let  $m_d$  be the number of elements in  $G$  of order  $d$ . By our assumption,  $m_d$  is  $\phi(d)$  where  $\phi$  is the Euler phi function. (If there were more than  $\phi(d)$  elements of order  $d$  in  $G$ , then  $G$  would have at least 2 subgroups of order  $d$ .) So  $n = \Sigma m_d$  where  $d$  ranges over all divisors  $d$  of  $n$ . We also have from Exercise 87 of Chapter 4 that  $n = \Sigma \phi(d)$  where  $d$  ranges over all divisors  $d$  of  $n$ . This proves that each  $n_d = \phi(d)$ . In particular,  $m_n \neq 0$ .  
 32. By Theorem 7.3,  $G$  is isomorphic to  $Z_{2p}$  or  $D_p$ . So the number of elements of order 2 is 1 or  $p + 1$ .  
 33. Suppose that  $H$  and  $K$  are distinct subgroups of order  $m$ . Then  $|HK| = |H||K| = \frac{m \cdot m}{|H \cap K|} \leq 2m$  and therefore  $\frac{m}{2} \leq |H \cap K|$ . Since  $m$  is odd and  $H$  and  $K$  are distinct, we know that  $\frac{m}{2} < |H \cap K| < m$  and that  $|H \cap K|$  divides  $m$ . This is impossible.  
-34. For any positive integer  $n$  let  $\omega_{n} = \cos\left(\frac{2\pi}{n}\right) + i\sin\left(\frac{2\pi}{n}\right)$ . The finite subgroups of  $C^*$  are those of the form  $\langle \omega_{n} \rangle$ . To verify this, let  $H$  denote any finite subgroup of  $C^*$  of order  $n$ . Then every element of  $H$  is a solution to  $x^{n} = 1$ . But the solution set of  $x^{n} = 1$  in  $C^*$  is  $\langle \omega_{n} \rangle$ .  
+34. For any positive integer  $n$  let  $\omega_{n} = \cos\leqft(\frac{2\pi}{n}\right) + i\sin\leqft(\frac{2\pi}{n}\right)$ . The finite subgroups of  $C^*$  are those of the form  $\langle \omega_{n} \rangle$ . To verify this, let  $H$  denote any finite subgroup of  $C^*$  of order  $n$ . Then every element of  $H$  is a solution to  $x^{n} = 1$ . But the solution set of  $x^{n} = 1$  in  $C^*$  is  $\langle \omega_{n} \rangle$ .  
 35. Observe that  $|G:H| = |G| / |H|$ ,  $|G:K| = |G| / |K|$ ,  $|K:H| = |K| / |H|$ . So,  $|G:K||K:H| = |G| / |H| = |G:H|$ .  
 36. By Exercise 35,  $p = [G:H] = [G:K][K:H]$  so  $[G:H] = 1$  or  $[K:H] = 1$ .  
 37. Cyclic subgroups of order 12 and 20 in  $D_{n}$  must be in the subgroup of rotations. So,  $n$  must be the smallest positive integer divisible by 12 and 20, which is 60.  
@@ -1202,7 +1202,7 @@ $\alpha^2 = \alpha H$ . Since the latter implies that  $\alpha \in H$ , we have 
 ![](images/0b8ea499e75a1a6708b8b92b5893853753767003059f4f37581293a931a041a2.jpg)
 
 $$
-\begin{array}{l} \left\{R _ {0}, H \right\}; \left\{R _ {0}, D ^ {\prime} \right\}; \left\{R _ {0}, H \right\} \\ \{R _ {0} \}; \{R _ {0} \}; \{R _ {0} \}. \\ \end{array}
+\begin{array}{l} \leqft\{R _ {0}, H \right\}; \leqft\{R _ {0}, D ^ {\prime} \right\}; \leqft\{R _ {0}, H \right\} \\ \{R _ {0} \}; \{R _ {0} \}; \{R _ {0} \}. \\ \end{array}
 $$
 
 69. a.  $\operatorname{stab}_G(1) = \{(1), (24)(56)\}$ ;  $\operatorname{orb}_G(1) = \{1, 2, 3, 4\}$
@@ -1273,7 +1273,7 @@ In the general case, observe that by Theorem 4.4 as long as  $d$  divides  $n$ ,
 
 24. In this case, observe that  $|(a,b)| = 2$  if and only if  $|a| = 1$  or 2 and  $|b| = 1$  or 2 but not both  $|a| = 1$  and  $|b| = 1$ . So, there are  $(m + 2)(n + 1) - 1 = mn + m + 2n + 1$  elements of order 2. For the second part, observe that  $|(a,b)| = 4$  if and only if  $|a| = 4$  and  $|b| = 1$  or 2. So, there are  $2(n + 1)$  elements of order 4.
 
-25. Define a mapping  $\phi$  from  $M$  to  $N$  by  $\phi\left(\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\right) = (a,b,c,d)$ . To verify that  $\phi$  is one-to-one we note that  $\phi\left(\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\right) = \phi\left(\left[ \begin{array}{cc}a' & b' \\ c' & d' \end{array} \right]\right)$  implies  $(a,b,c,d) = (a',b',c',d')$ . Thus  $a = a'$ ,  $b = b'$ ,  $c = c'$ , and  $d = d'$ . This proves that  $\phi$  is one-to-one. The element  $(a,b,c,d)$  is the image of  $\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]$  so  $\phi$  is onto. Finally,  $\phi\left(\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right] + \left[ \begin{array}{cc}a' & b' \\ c' & d' \end{array} \right]\right) = \phi\left(\left[ \begin{array}{cc}a + a' & b + b' \\ c + c' & d + d' \end{array} \right]\right) = (a + a',b + b',c + c',d + d') = (a,b,c,d) + (a',b',c',d') = \phi\left(\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\right) + \phi\left(\left[ \begin{array}{cc}a' & b' \\ c' & d' \end{array} \right]\right)$ .
+25. Define a mapping  $\phi$  from  $M$  to  $N$  by  $\phi\leqft(\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\right) = (a,b,c,d)$ . To verify that  $\phi$  is one-to-one we note that  $\phi\leqft(\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\right) = \phi\leqft(\leqft[ \begin{array}{cc}a' & b' \\ c' & d' \end{array} \right]\right)$  implies  $(a,b,c,d) = (a',b',c',d')$ . Thus  $a = a'$ ,  $b = b'$ ,  $c = c'$ , and  $d = d'$ . This proves that  $\phi$  is one-to-one. The element  $(a,b,c,d)$  is the image of  $\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]$  so  $\phi$  is onto. Finally,  $\phi\leqft(\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right] + \leqft[ \begin{array}{cc}a' & b' \\ c' & d' \end{array} \right]\right) = \phi\leqft(\leqft[ \begin{array}{cc}a + a' & b + b' \\ c + c' & d + d' \end{array} \right]\right) = (a + a',b + b',c + c',d + d') = (a,b,c,d) + (a',b',c',d') = \phi\leqft(\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\right) + \phi\leqft(\leqft[ \begin{array}{cc}a' & b' \\ c' & d' \end{array} \right]\right)$ .
 
 Let  $\mathbf{R}^k$  denote  $\mathbf{R} \oplus \mathbf{R} \oplus \dots \oplus \mathbf{R}$  ( $k$  factors). Then the group of  $m \times n$  matrices under addition is isomorphic to  $R^{mn}$ .
 
@@ -1401,7 +1401,7 @@ element below it, any unused element below the second one, and so on. Now let  $
 3.  $HR_{90} = R_{270}H; DR_{270} = R_{90}D; R_{90}V = VR_{270}$  
 4. Solving (12)(13)(14) =  $\alpha(12)$  for  $\alpha$  we have  $\alpha = (12)(13)(14)(12)$ . Solving (1234)(12)(23) =  $\alpha(1234)$  for  $\alpha$  we have  $\alpha = (234)$ .  
 5. Say  $i < j$  and  $h \in H_i \cap H_j$ . Then  $h \in H_1H_2 \cdots H_{j-1} \cap H_j = \{e\}$ .  
-6. No. Let  $A = \left[ \begin{array}{cc}1 & 0\\ 0 & -1 \end{array} \right]$  and  $B = \left[ \begin{array}{cc}1 & 0\\ 1 & 1 \end{array} \right]$ . Then  $A$  is in  $H$  and  $B$  is in  $GL(2,\mathbf{R})$  but  $BAB^{-1}$  is not in  $H$ .  
+6. No. Let  $A = \leqft[ \begin{array}{cc}1 & 0\\ 0 & -1 \end{array} \right]$  and  $B = \leqft[ \begin{array}{cc}1 & 0\\ 1 & 1 \end{array} \right]$ . Then  $A$  is in  $H$  and  $B$  is in  $GL(2,\mathbf{R})$  but  $BAB^{-1}$  is not in  $H$ .  
 7.  $H$  contains the identity so  $H$  is not empty. Let  $A, B \in H$ . Then  $\det(AB^{-1}) = (\det A)(\det B)^{-1} \in K$ . This proves that  $H$  is a subgroup. Also, for  $A \in H$  and  $B \in G$  we have  $\det(BAB^{-1}) = (\det B)(\det A)(\det B)^{-1} = \det A \in K$  so  $BAB^{-1} \in H$ .  
 8. If  $k$  divides  $n$ , then  $\langle k \rangle / \langle n \rangle$  is a cyclic group of order  $n / k$ . So, it is isomorphic to  $Z_{n / k}$ .  
 9. Let  $x \in G$ . If  $x \in H$ , then  $xH = H = Hx$ . If  $x \notin H$ , then  $xH$  is the set of elements in  $G$ , not in  $H$  and  $Hx$  is also the elements in  $G$ , not in  $H$ .  
@@ -1509,7 +1509,7 @@ $$
 64. a. Observe that for any  $g$  in  $G$ ,
 
 $$
-g (x ^ {- 1} y ^ {- 1} x y) g ^ {- 1} = \left(g x ^ {- 1} g ^ {- 1}\right) \left(g y ^ {- 1} g ^ {- 1}\right) \left(g x g ^ {- 1}\right) \left(g y g ^ {- 1}\right) \in S.
+g (x ^ {- 1} y ^ {- 1} x y) g ^ {- 1} = \leqft(g x ^ {- 1} g ^ {- 1}\right) \leqft(g y ^ {- 1} g ^ {- 1}\right) \leqft(g x g ^ {- 1}\right) \leqft(g y g ^ {- 1}\right) \in S.
 $$
 
 b. Observe that  $xG' yG' = yG' xG'$  if and only if  $x^{-1} y^{-1} xy \in G'$ .  
@@ -1521,7 +1521,7 @@ d. Let  $h \in H$  and  $g \in G$ . Then  $ghg^{-1}h^{-1} \in G' \leq H$  so tha
 66. Let  $C$  be the collection of all subgroups of  $G$  of order  $n$ . Then, since  $|H| = n$  implies  $|xHx^{-1}| = n$ , we have
 
 $$
-x \left(\cap_ {H \in C} H\right) x ^ {- 1} = \cap_ {H \in C} x H x ^ {- 1} = \cap_ {H \in C} H.
+x \leqft(\cap_ {H \in C} H\right) x ^ {- 1} = \cap_ {H \in C} x H x ^ {- 1} = \cap_ {H \in C} H.
 $$
 
 67. Suppose that  $\operatorname{Aut}(G)$  is cyclic. Then  $\operatorname{Inn}(G)$  is also cyclic. So, by Theorem 9.4,  $G / Z$  is cyclic and from Theorem 9.3 it follows that  $G$  is Abelian. This is a contradiction.  
@@ -1771,7 +1771,7 @@ $$
 latter group contains a subgroup isomorphic to  $Z_{p_1^{n_1}} \oplus Z_{p_2^{n_2}}$ . The general case follows in the same way.
 
 $$
-\operatorname {A u t} \left(Z _ {2} \oplus Z _ {3} \oplus Z _ {5}\right) \approx \operatorname {A u t} \left(Z _ {3 0}\right) \approx U (3 0) \approx U (2) \oplus U (3) \oplus U (5) \approx Z _ {2} \oplus Z _ {4}.
+\operatorname {A u t} \leqft(Z _ {2} \oplus Z _ {3} \oplus Z _ {5}\right) \approx \operatorname {A u t} \leqft(Z _ {3 0}\right) \approx U (3 0) \approx U (2) \oplus U (3) \oplus U (5) \approx Z _ {2} \oplus Z _ {4}.
 $$
 
 40. Observe that  
@@ -1888,9 +1888,9 @@ If  $m > n$ , observe that
 
 $a = a^n = aa^{n - 1} = a^n a^{n - 1} = a^{2n - 1} = aa^{2n - 2} = a^n a^{2n - 1} = 2^{3n - 3}$ . Continuing this for  $k$  iterations we have  $a = a^{kn - (k - 1)}$ . Thus we eventually reach Case 1.
 
-33. In  $M_2(Z)$ , let  $a = \left[ \begin{array}{ll}0 & 1\\ 0 & 0 \end{array} \right]$  and  $b = \left[ \begin{array}{ll}1 & 0\\ 0 & 0 \end{array} \right]$ .  
+33. In  $M_2(Z)$ , let  $a = \leqft[ \begin{array}{ll}0 & 1\\ 0 & 0 \end{array} \right]$  and  $b = \leqft[ \begin{array}{ll}1 & 0\\ 0 & 0 \end{array} \right]$ .  
 34.  $ba = (ba)^n = baba\dots = b(ab)a\dots = 0.$  
-35. By inspection,  $R$  is closed under addition and multiplication. The elements  $\left[ \begin{array}{ll}0 & 1\\ 0 & 0 \end{array} \right]$  and  $\left[ \begin{array}{ll}0 & 1\\ 0 & 1 \end{array} \right]$  do not commute,
+35. By inspection,  $R$  is closed under addition and multiplication. The elements  $\leqft[ \begin{array}{ll}0 & 1\\ 0 & 0 \end{array} \right]$  and  $\leqft[ \begin{array}{ll}0 & 1\\ 0 & 1 \end{array} \right]$  do not commute,
 
 For the general case, use  $m \times m$  matrices with the first  $m - 1$  columns all 0 and that last columns elements from  $Z_{n}$ .
 
@@ -1904,10 +1904,10 @@ For the general case, use  $m \times m$  matrices with the first  $m - 1$  colum
 43. Since  $ara - asa = a(r - s)a$  and  $(ara)(asa) = ara^2 sa = arsa$ ,  $S$  is a subring. Also,  $a1a = a^2 = 1$ , so  $1 \in S$ .  
 44. The set is not closed under multiplication.
 
-45. Let  $\left[ \begin{array}{cc}a & a - b\\ a - b & b \end{array} \right]$  and  $\left[ \begin{array}{cc}a' & a' - b'\\ a' - b' & b' \end{array} \right]\in R.$  Then
+45. Let  $\leqft[ \begin{array}{cc}a & a - b\\ a - b & b \end{array} \right]$  and  $\leqft[ \begin{array}{cc}a' & a' - b'\\ a' - b' & b' \end{array} \right]\in R.$  Then
 
 $$
-\begin{array}{l} \left[ \begin{array}{c c} a & a - b \\ a - b & b \end{array} \right] - \left[ \begin{array}{c c} a ^ {\prime} & a ^ {\prime} - b ^ {\prime} \\ a ^ {\prime} - b ^ {\prime} & b ^ {\prime} \end{array} \right] = \\ \left[ \begin{array}{c c} a - a ^ {\prime} & (a - a ^ {\prime}) - (b - b ^ {\prime}) \\ (a - a ^ {\prime}) - (b - b ^ {\prime}) & b - b ^ {\prime} \end{array} \right] \in R. \text {A l s o}, \\ \left[ \begin{array}{c c} a & a - b \\ a - b & b \end{array} \right] \left[ \begin{array}{c c} a ^ {\prime} & a ^ {\prime} - b ^ {\prime} \\ a ^ {\prime} - b ^ {\prime} & b ^ {\prime} \end{array} \right] = \\ \left[ \begin{array}{c c} a a ^ {\prime} + a a ^ {\prime} - a b ^ {\prime} - b a ^ {\prime} + b b ^ {\prime} & a a ^ {\prime} - b b ^ {\prime} \\ a a ^ {\prime} - b b ^ {\prime} & a a ^ {\prime} - a b ^ {\prime} - b a ^ {\prime} + b b ^ {\prime} + b b ^ {\prime} \end{array} \right] \\ \end{array}
+\begin{array}{l} \leqft[ \begin{array}{c c} a & a - b \\ a - b & b \end{array} \right] - \leqft[ \begin{array}{c c} a ^ {\prime} & a ^ {\prime} - b ^ {\prime} \\ a ^ {\prime} - b ^ {\prime} & b ^ {\prime} \end{array} \right] = \\ \leqft[ \begin{array}{c c} a - a ^ {\prime} & (a - a ^ {\prime}) - (b - b ^ {\prime}) \\ (a - a ^ {\prime}) - (b - b ^ {\prime}) & b - b ^ {\prime} \end{array} \right] \in R. \text {A l s o}, \\ \leqft[ \begin{array}{c c} a & a - b \\ a - b & b \end{array} \right] \leqft[ \begin{array}{c c} a ^ {\prime} & a ^ {\prime} - b ^ {\prime} \\ a ^ {\prime} - b ^ {\prime} & b ^ {\prime} \end{array} \right] = \\ \leqft[ \begin{array}{c c} a a ^ {\prime} + a a ^ {\prime} - a b ^ {\prime} - b a ^ {\prime} + b b ^ {\prime} & a a ^ {\prime} - b b ^ {\prime} \\ a a ^ {\prime} - b b ^ {\prime} & a a ^ {\prime} - a b ^ {\prime} - b a ^ {\prime} + b b ^ {\prime} + b b ^ {\prime} \end{array} \right] \\ \end{array}
 $$
 
 belongs to  $R$
@@ -1965,7 +1965,7 @@ $(a + b\sqrt{2}) - (c + d\sqrt{2}) = (a - c) + (b - d)\sqrt{2}$  and
 $(a + b\sqrt{2})(c + d\sqrt{2}) = (ac + 2bd) + (bc + ad)\sqrt{2}$  so  $Z[\sqrt{2}]$  is a ring;  $Z[\sqrt{2}]$  has no zero-divisors because it is a subring of  $\mathbf{R}$ , which has no zero-divisors. For Example 5, note that  $Z_{p}$  is closed under addition and multiplication and multiplication is commutative; 1 is the unity; in  $Z_{p}$ ,  $ab = 0$  implies that  $p$  divides  $ab$ . So, by Euclid's Lemma (see Chapter 0), we know that  $p$  divides  $a$  or  $p$  divides  $b$ . Thus, in  $Z_{p}$ ,  $a = 0$  or  $b = 0$ . For Example 6, if  $n$  is not prime, then  $n = ab$  where  $1 < a < n$  and  $1 < b < n$ . But then  $a \neq 0$  and  $b \neq 0$  while  $ab = 0$ . For Example 7, note that
 
 $$
-\left[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] \left[ \begin{array}{c c} 0 & 0 \\ 0 & 1 \end{array} \right] = \left[ \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right].
+\leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] \leqft[ \begin{array}{c c} 0 & 0 \\ 0 & 1 \end{array} \right] = \leqft[ \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right].
 $$
 
 For Example 8, note that  $(1,0)(0,1) = (0,0)$ .
@@ -2098,7 +2098,7 @@ $$
 
 52.  $Z_{3}[x]$
 
-53.  $n\left[ \begin{array}{ll}a & b\\ c & d \end{array} \right] = \left[ \begin{array}{ll}0 & 0\\ 0 & 0 \end{array} \right]$  for all members of  $M_2(R)$  if and only if  $na = 0$  for all  $a$  in  $R$ .
+53.  $n\leqft[ \begin{array}{ll}a & b\\ c & d \end{array} \right] = \leqft[ \begin{array}{ll}0 & 0\\ 0 & 0 \end{array} \right]$  for all members of  $M_2(R)$  if and only if  $na = 0$  for all  $a$  in  $R$ .
 
 54. Observe char  $R =$  least common multiple  $\{|x| \mid x \in R\}$  (additive order). Now use Corollary 2 to Theorem 7.1.
 
@@ -2179,19 +2179,19 @@ Alternate proof. First observe that for a ring with positive characteristic, the
 16. Let  $a_1b_1 + \dots + a_nb_n$  and  $a_1'b_1' + \dots + a_m'b_m'$  then
 
 $$
-\begin{array}{l} \left(a _ {1} b _ {1} + \dots + a _ {n} b _ {b}\right) - \left(a _ {1} ^ {\prime} b _ {1} ^ {\prime} + \dots + a _ {m} ^ {\prime} b _ {m} ^ {\prime}\right) \\ = a _ {1} b _ {1} + \dots + a _ {n} b _ {n} + \left(- a _ {1} ^ {\prime}\right) b _ {1} ^ {\prime} + \dots + \left(- a _ {m} ^ {\prime}\right) b _ {m} ^ {\prime} \in A B. \\ \end{array}
+\begin{array}{l} \leqft(a _ {1} b _ {1} + \dots + a _ {n} b _ {b}\right) - \leqft(a _ {1} ^ {\prime} b _ {1} ^ {\prime} + \dots + a _ {m} ^ {\prime} b _ {m} ^ {\prime}\right) \\ = a _ {1} b _ {1} + \dots + a _ {n} b _ {n} + \leqft(- a _ {1} ^ {\prime}\right) b _ {1} ^ {\prime} + \dots + \leqft(- a _ {m} ^ {\prime}\right) b _ {m} ^ {\prime} \in A B. \\ \end{array}
 $$
 
 Also
 
 $$
-r \left(a _ {1} b _ {1} + \dots + a _ {n} b _ {n}\right) = \left(r a _ {1}\right) b _ {1} + \dots + \left(r a _ {n}\right) b _ {n} \in A B
+r \leqft(a _ {1} b _ {1} + \dots + a _ {n} b _ {n}\right) = \leqft(r a _ {1}\right) b _ {1} + \dots + \leqft(r a _ {n}\right) b _ {n} \in A B
 $$
 
 and
 
 $$
-\left(a _ {1} b _ {1} + \dots + a _ {n} b _ {n}\right) r = a _ {1} \left(b _ {1} r\right) + \dots + a _ {n} \left(b _ {n} r\right) \in A B.
+\leqft(a _ {1} b _ {1} + \dots + a _ {n} b _ {n}\right) r = a _ {1} \leqft(b _ {1} r\right) + \dots + a _ {n} \leqft(b _ {n} r\right) \in A B.
 $$
 
 17. a.  $a = 12$  
@@ -2208,21 +2208,21 @@ c.  $a = mn$
 24. Observe that as groups  $|R: I| = 3$ . So there is not a proper subgroup of  $R$  that strictly contains  $I$ .  
 25.  $I$  is closed under subtraction since the even integers are closed under subtraction.
 
-Also, if  $b_{1}, b_{2}, b_{3}$ , and  $b_{4}$  are even, then every entry of  $\left[ \begin{array}{cc} a_{1} & a_{2} \\ a_{3} & a_{4} \end{array} \right] \left[ \begin{array}{cc} b_{1} & b_{2} \\ b_{3} & b_{4} \end{array} \right]$  is even.
+Also, if  $b_{1}, b_{2}, b_{3}$ , and  $b_{4}$  are even, then every entry of  $\leqft[ \begin{array}{cc} a_{1} & a_{2} \\ a_{3} & a_{4} \end{array} \right] \leqft[ \begin{array}{cc} b_{1} & b_{2} \\ b_{3} & b_{4} \end{array} \right]$  is even.
 
 26.  $0 \in I$ . Let  $f(x), g(x) \in I$  and  $h(x) \in Z[x]$ . Then  $f(1) - g(1)$  even and  $f(1)h(1)$  is even.  
 27. The proof that  $I$  is an ideal is the same as the case that  $n = 2$  in Exercise 25. The number of elements in  $I$  is  $n^4$ .  
-28. Since  $A$  is non-empty and closed under subtraction and multiplication, it is a subring. It is not an ideal because  $\left[ \begin{array}{cc}0 & 0\\ 1 & 0 \end{array} \right]\left[ \begin{array}{cc}1 & 0\\ 0 & 0 \end{array} \right] = \left[ \begin{array}{cc}0 & 0\\ 1 & 0 \end{array} \right]$  is not in  $A$ .  
+28. Since  $A$  is non-empty and closed under subtraction and multiplication, it is a subring. It is not an ideal because  $\leqft[ \begin{array}{cc}0 & 0\\ 1 & 0 \end{array} \right]\leqft[ \begin{array}{cc}1 & 0\\ 0 & 0 \end{array} \right] = \leqft[ \begin{array}{cc}0 & 0\\ 1 & 0 \end{array} \right]$  is not in  $A$ .  
 29. That  $I$  satisfies the ideal test follows directly from the definitions of matrix addition and multiplication. To see that  $R / I$  is a field, first observe that
 
 $$
-\left[ \begin{array}{c c} a & b \\ 0 & c \end{array} \right] + I = \left[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + \left[ \begin{array}{c c} 0 & b \\ 0 & c \end{array} \right] + I = \left[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I.
+\leqft[ \begin{array}{c c} a & b \\ 0 & c \end{array} \right] + I = \leqft[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + \leqft[ \begin{array}{c c} 0 & b \\ 0 & c \end{array} \right] + I = \leqft[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I.
 $$
 
-Thus we need only show that  $\left[ \begin{array}{cc}a & 0\\ 0 & 0 \end{array} \right] + I$  has an inverse in  $R / I$  when  $a\neq 0$ . To this end, note that
+Thus we need only show that  $\leqft[ \begin{array}{cc}a & 0\\ 0 & 0 \end{array} \right] + I$  has an inverse in  $R / I$  when  $a\neq 0$ . To this end, note that
 
 $$
-\begin{array}{l} \Big (\left[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I \Big) \Big (\left[ \begin{array}{c c} & a ^ {- 1} & 0 \\ 0 & 0 \end{array} \right] + I \Big) = \left[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] + I = \\ \Big (\left[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] + I \Big) + \Big (\left[ \begin{array}{c c} 0 & 0 \\ 0 & 1 \end{array} \right] + I \Big) = \left[ \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right] + I. \\ \Big (\left[ \begin{array}{c c} 2 & 0 \\ 0 & 0 \end{array} \right] + I \Big) ^ {- 1} = \left[ \begin{array}{c c} 1 / 2 & 0 \\ 0 & 0 \end{array} \right] + I. \\ \end{array}
+\begin{array}{l} \Big (\leqft[ \begin{array}{c c} a & 0 \\ 0 & 0 \end{array} \right] + I \Big) \Big (\leqft[ \begin{array}{c c} & a ^ {- 1} & 0 \\ 0 & 0 \end{array} \right] + I \Big) = \leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] + I = \\ \Big (\leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 0 \end{array} \right] + I \Big) + \Big (\leqft[ \begin{array}{c c} 0 & 0 \\ 0 & 1 \end{array} \right] + I \Big) = \leqft[ \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right] + I. \\ \Big (\leqft[ \begin{array}{c c} 2 & 0 \\ 0 & 0 \end{array} \right] + I \Big) ^ {- 1} = \leqft[ \begin{array}{c c} 1 / 2 & 0 \\ 0 & 0 \end{array} \right] + I. \\ \end{array}
 $$
 
 30. Since  $(-i)i = -i^2 = 1\in \langle i\rangle$  every element of  $Z[i]$  is in  $\langle i\rangle$ . So,  $Z[x] / \langle i\rangle = \{0 + \langle i\rangle\}$ .  
@@ -2233,7 +2233,7 @@ $$
 35. Use the observation that every member of  $R$  can be written in the form
 
 $$
-\left[ \begin{array}{l l} 2 q _ {1} + r _ {1} & 2 q _ {2} + r _ {2} \\ 2 q _ {3} + r _ {3} & 2 q _ {4} + r _ {4} \end{array} \right] \text {w h e r e e a c h} r _ {i} \text {i s 0 o r 1 . T h e n n o t e t h a t} \\ \left[ \begin{array}{l l} 2 q _ {1} + r _ {1} & 2 q _ {2} + r _ {2} \\ 2 q _ {3} + r _ {3} & 2 q _ {4} + r _ {4} \end{array} \right] + I = \left[ \begin{array}{l l} r _ {1} & r _ {2} \\ r _ {3} & r _ {4} \end{array} \right] + I.
+\leqft[ \begin{array}{l l} 2 q _ {1} + r _ {1} & 2 q _ {2} + r _ {2} \\ 2 q _ {3} + r _ {3} & 2 q _ {4} + r _ {4} \end{array} \right] \text {w h e r e e a c h} r _ {i} \text {i s 0 o r 1 . T h e n n o t e t h a t} \\ \leqft[ \begin{array}{l l} 2 q _ {1} + r _ {1} & 2 q _ {2} + r _ {2} \\ 2 q _ {3} + r _ {3} & 2 q _ {4} + r _ {4} \end{array} \right] + I = \leqft[ \begin{array}{l l} r _ {1} & r _ {2} \\ r _ {3} & r _ {4} \end{array} \right] + I.
 $$
 
 36. Let  $R$  be the ring  $\{0, 2, 4, 6\}$  under addition and multiplication mod 8. Then  $\{0, 4\}$  is maximal but not prime.
@@ -2273,7 +2273,7 @@ Finally, because  $2 \cdot 2 \in I$  and 2 is not, I is not prime.
 55.  $3x + 1 + I$  
 56. Let  $a, b \in I_p$ . Say  $|a| = p^n$  and  $|b| = p^m$ . Then  $p^{n+m}(a - b) = 0$  so  $|a - b|$  divides  $p^{n+m}$ . Also,  $p^n(ra) = r(p^n a) = 0$  so  $|ra|$  divides  $p^n$ .  
 57. Every ideal is a subgroup. Every subgroup of a cyclic group is cyclic.  
-58. Since  $\left[ \begin{array}{ll}a & b\\ 0 & d \end{array} \right]\left[ \begin{array}{ll}r & s\\ 0 & t \end{array} \right] = \left[ \begin{array}{ll}ar & as + bt\\ 0 & dt \end{array} \right]$  and  
+58. Since  $\leqft[ \begin{array}{ll}a & b\\ 0 & d \end{array} \right]\leqft[ \begin{array}{ll}r & s\\ 0 & t \end{array} \right] = \leqft[ \begin{array}{ll}ar & as + bt\\ 0 & dt \end{array} \right]$  and  
 are even.  
 59. Let  $I$  be any ideal of  $R \oplus S$  and let  $I_R = \{r \in R | (r, s) \in I \text{ for some } s \in S\}$  and  $I_S = \{s \in S | (r, s) \in I \text{ for some } r \in R\}$ . Then  $I_R$  is an ideal of  $R$  and  $I_S$  is an ideal of  $S$ . Let  $I_R = \langle r \rangle$  and  $I_S = \langle s \rangle$ . Since, for any  $(a, b) \in I$  there are elements  $a' \in R$  and  $b' \in S$  such that  $(a, b) = (a'r, b's) = (a', b')(r, s)$ , we have that  $I = \langle (r, s) \rangle$ .  
 60. Suppose  $A$  is prime and  $B$  is an ideal which properly contains  $A$ . Say  $A = \langle a \rangle$  and  $B = \langle b \rangle$ . It suffices to show  $b$  is a unit. Write  $a = br$ . Then, since  $A$  is prime,  $b \in A$  or  $r \in A$ . If  $b \in A$ , then  $B \subseteq A$  so  $r \in A$ . Say  $r = ar'$ . Then  $a = br = bar'$  so that  $a(1 - br') = 0$ . Thus  $1 = br'$  and  $b$  is a unit.  
@@ -2381,7 +2381,7 @@ So, we need to show that  $k$  is an idempotent in  $Z_{n}$  is necessary and su
 
 $Z_{n}$ ,  $k = \phi(1) = \phi(1 \cdot 1) = \phi(1)\phi(1) = k^{2}$ . On the other hand, if  $k^{2} = k$  in  $Z_{n}$ , then  $\phi(ab) = k(ab) = k^{2}(ab) = (ka)(kb) = \phi(a)\phi(b)$ .
 
-10. Let  $\phi$  be the mapping that takes  $\left\{\left[ \begin{array}{cc}a_1 & a_2\\ a_3 & a_4 \end{array} \right]\biggm {|}a_i\in Z\right\}$  to  $\left\{\left[ \begin{array}{cc}a_1\bmod 2 & a_2\bmod 2\\ a_3\bmod 2 & a_4\bmod 2 \end{array} \right]\right\}$  and use Theorem 15.3.  
+10. Let  $\phi$  be the mapping that takes  $\leqft\{\leqft[ \begin{array}{cc}a_1 & a_2\\ a_3 & a_4 \end{array} \right]\biggm {|}a_i\in Z\right\}$  to  $\leqft\{\leqft[ \begin{array}{cc}a_1\bmod 2 & a_2\bmod 2\\ a_3\bmod 2 & a_4\bmod 2 \end{array} \right]\right\}$  and use Theorem 15.3.  
 11. For groups,  $\phi(x) = ax$  for  $a = 2, 4, 6, 8$  since each of these has additive order 5. For rings, only  $\phi(x) = 6x$  since 6 is the only non-zero idempotent in  $R$ .  
 12. Parts a and b. No. Suppose  $2 \to a$ . Then  $4 = 2 + 2 \to a + a = 2a$  and  $4 = 2 \cdot 2 \to aa = 2a$ .  
 13. If  $a$  and  $b$  ( $b \neq 0$ ) belong to every member of the collection, then so do  $a - b$  and  $ab^{-1}$ . Thus, by Exercise 29 of Chapter 13, the intersection is a subfield.  
@@ -2389,19 +2389,19 @@ $Z_{n}$ ,  $k = \phi(1) = \phi(1 \cdot 1) = \phi(1)\phi(1) = k^{2}$ . On the oth
 15. By observation,  $\phi$  is one-to-one and onto. Since
 
 $$
-\begin{array}{l} \phi ((a + b i) + (c + d i)) = \phi ((a + c) + (b + d) i) = \left[ \begin{array}{c c} a + c & b + d \\ - (b + d) & a + c \end{array} \right] = \\ \left[ \begin{array}{c c} a & b \\ - b & a \end{array} \right] + \left[ \begin{array}{c c} c & d \\ - d & c \end{array} \right] = \phi (a + b i) + \phi (c + d i) \\ \end{array}
+\begin{array}{l} \phi ((a + b i) + (c + d i)) = \phi ((a + c) + (b + d) i) = \leqft[ \begin{array}{c c} a + c & b + d \\ - (b + d) & a + c \end{array} \right] = \\ \leqft[ \begin{array}{c c} a & b \\ - b & a \end{array} \right] + \leqft[ \begin{array}{c c} c & d \\ - d & c \end{array} \right] = \phi (a + b i) + \phi (c + d i) \\ \end{array}
 $$
 
 addition is preserved. Also,
 
 $$
-\begin{array}{l} \phi ((a + b i) (c + d i)) = \phi ((a c - b d) + (a d + b c) i) = \left[ \begin{array}{c c} a c - b d & a d + b c \\ - (a d + b c) & a c - b d \end{array} \right] = \\ \left[ \begin{array}{c c} a & b \\ - b & a \end{array} \right] \left[ \begin{array}{c c} c & d \\ - d & c \end{array} \right] = \phi (a + b i) \phi (c + d i) \\ \end{array}
+\begin{array}{l} \phi ((a + b i) (c + d i)) = \phi ((a c - b d) + (a d + b c) i) = \leqft[ \begin{array}{c c} a c - b d & a d + b c \\ - (a d + b c) & a c - b d \end{array} \right] = \\ \leqft[ \begin{array}{c c} a & b \\ - b & a \end{array} \right] \leqft[ \begin{array}{c c} c & d \\ - d & c \end{array} \right] = \phi (a + b i) \phi (c + d i) \\ \end{array}
 $$
 
 so multiplication is preserved.
 
-16. Try  $a + b\sqrt{2}\rightarrow \left[ \begin{array}{cc}a & 2b\\ b & a \end{array} \right].$  
-17. Since  $\phi\left(\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\left[ \begin{array}{cc}a' & b'\\ c' & d' \end{array} \right]\right) = \phi \left(\left[ \begin{array}{cc}aa' + bc' & ab' + bd' \\ ca' + dc' & cb' + dd' \end{array} \right]\right) = aa' + bc' \neq aa' =$ $\phi \left(\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\right)\phi \left(\left[ \begin{array}{cc}a' & b'\\ c' & d' \end{array} \right]\right),$  multiplication is not preserved.  
+16. Try  $a + b\sqrt{2}\rightarrow \leqft[ \begin{array}{cc}a & 2b\\ b & a \end{array} \right].$  
+17. Since  $\phi\leqft(\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\leqft[ \begin{array}{cc}a' & b'\\ c' & d' \end{array} \right]\right) = \phi \leqft(\leqft[ \begin{array}{cc}aa' + bc' & ab' + bd' \\ ca' + dc' & cb' + dd' \end{array} \right]\right) = aa' + bc' \neq aa' =$ $\phi \leqft(\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\right)\phi \leqft(\leqft[ \begin{array}{cc}a' & b'\\ c' & d' \end{array} \right]\right),$  multiplication is not preserved.  
 18. It is a ring homomorphism.  
 19. Yes.  $\phi(x) = 6x$  is well defined because  $a = b$  in  $Z_5$  implies that 5 divides  $a - b$ . So, 30 divides  $6a - 6b$ . Moreover,  $\phi(a + b) = 6(a + b) = 6a + 6b = \phi(a) + \phi(b)$  and  $\phi(ab) = 6ab = 6 \cdot 6ab = 6a6b = \phi(a)\phi(b)$ .  
 20. No. For  $\phi (x) = 2x$  we have  $2 = \phi (1) = \phi (1\cdot 1) = \phi (1)\phi (1) = 4.$  
@@ -2416,9 +2416,9 @@ so multiplication is preserved.
 28. Since  $(1,0)$  is an idempotent and idempotents must map to idempotents; the possibilities are  $(0,0),(1,0),(0,1),(1,1)$ .  
 29. If  $ab = 1$ , then  $\phi(a)\phi(b) = \phi(1)$ , which is a unity in  $S$  (see property 7 of Theorem 15.1). If  $a$  is a zero-divisor in  $R$ , then  $\phi(a)$  is a zero-divisor in  $S$  or is 0.  
 30. The group  $A / B$  is cyclic of order 4. The ring  $A / B$  has no unity.  
-31. First, note that every element of  $R[x] / \langle x^2 \rangle$  can be written uniquely in the form  $ax + a + \langle x^2 \rangle$ . Then mapping that takes  $ax + b + \langle x^2 \rangle$  to  $\left\{ \begin{bmatrix} a & b \\ 0 & a \end{bmatrix} \right\}$  is a ring isomorphism.
+31. First, note that every element of  $R[x] / \langle x^2 \rangle$  can be written uniquely in the form  $ax + a + \langle x^2 \rangle$ . Then mapping that takes  $ax + b + \langle x^2 \rangle$  to  $\leqft\{ \begin{bmatrix} a & b \\ 0 & a \end{bmatrix} \right\}$  is a ring isomorphism.
 
-Alternate proof: The mapping  $a_{n}x^{n} + a_{n - 1}x^{n - 1} + \dots +a_{1}x + a_{0}$  to  $\left\{\left[ \begin{array}{cc}a_0 & a_1\\ 0 & a_0 \end{array} \right]\right\}$  is a ring homomorphism with kernel  $\langle x^2\rangle$ .
+Alternate proof: The mapping  $a_{n}x^{n} + a_{n - 1}x^{n - 1} + \dots +a_{1}x + a_{0}$  to  $\leqft\{\leqft[ \begin{array}{cc}a_0 & a_1\\ 0 & a_0 \end{array} \right]\right\}$  is a ring homomorphism with kernel  $\langle x^2\rangle$ .
 
 32. The mapping from  $Z_{3}[x]$  onto  $Z_{3}[i]$  given by  $\phi(f(x)) = f(i)$  is a ring homomorphism with  $\operatorname{Ker} \phi = \langle x^{2} + 1 \rangle$ . So, by Theorem 15.3, the ring  $Z_{3}[x] / \langle x^{2} + 1 \rangle$  is isomorphic to  $Z_{3}[i]$ .
 
@@ -2502,7 +2502,7 @@ $$
 
 74. a. Apply the definition.
 
-b. Ker  $\phi = \left\{\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\biggm {|}a\in Z\right\}$
+b. Ker  $\phi = \leqft\{\leqft[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\biggm {|}a\in Z\right\}$
 
 c. Use Theorem 15.3.
 
@@ -2561,7 +2561,7 @@ $$
 Then
 
 $$
-\begin{array}{l} \overline {{\phi}} (f (x) + g (x)) = \phi \left(a _ {n} + b _ {n}\right) x ^ {n} + \dots + \phi \left(a _ {0} + b _ {0}\right) \\ = \left(\phi \left(a _ {n}\right) + \phi \left(b _ {n}\right)\right) x ^ {n} + \dots + \phi \left(a _ {0}\right) + \phi \left(b _ {0}\right) \\ = \left(\phi \left(a _ {n}\right) x ^ {n} + \dots + \phi \left(a _ {0}\right)\right) + \left(\phi \left(b _ {n}\right) x ^ {n} + \dots + \phi \left(b _ {0}\right)\right) \\ = \overline {{\phi}} (f (x)) + \overline {{\phi}} (g (x). \\ \end{array}
+\begin{array}{l} \overline {{\phi}} (f (x) + g (x)) = \phi \leqft(a _ {n} + b _ {n}\right) x ^ {n} + \dots + \phi \leqft(a _ {0} + b _ {0}\right) \\ = \leqft(\phi \leqft(a _ {n}\right) + \phi \leqft(b _ {n}\right)\right) x ^ {n} + \dots + \phi \leqft(a _ {0}\right) + \phi \leqft(b _ {0}\right) \\ = \leqft(\phi \leqft(a _ {n}\right) x ^ {n} + \dots + \phi \leqft(a _ {0}\right)\right) + \leqft(\phi \leqft(b _ {n}\right) x ^ {n} + \dots + \phi \leqft(b _ {0}\right)\right) \\ = \overline {{\phi}} (f (x)) + \overline {{\phi}} (g (x). \\ \end{array}
 $$
 
 Multiplication is done similarly.
@@ -2650,7 +2650,7 @@ The analogous argument works for multiplication.
 # CHAPTER 17 Factorization of Polynomials
 
 $$
-2 x ^ {2} + 4 = 2 \left(x ^ {2} + 2\right) = 2 \left(x + \sqrt {2} i\right) \left(x - \sqrt {2} i\right).
+2 x ^ {2} + 4 = 2 \leqft(x ^ {2} + 2\right) = 2 \leqft(x + \sqrt {2} i\right) \leqft(x - \sqrt {2} i\right).
 $$
 
 1. By Theorem 17.1,  $f(x)$  is irreducible over  $\mathbf{R}$ . Over  $\mathbf{C}$  we have  
@@ -2813,7 +2813,7 @@ $$
 On the other hand,
 
 $$
-d (x) d (y) = \left(a ^ {2} + b ^ {2}\right) \left(c ^ {2} + d ^ {2}\right) = a ^ {2} c ^ {2} + b ^ {2} d ^ {2} + b ^ {2} c ^ {2} + a ^ {2} d ^ {2}.
+d (x) d (y) = \leqft(a ^ {2} + b ^ {2}\right) \leqft(c ^ {2} + d ^ {2}\right) = a ^ {2} c ^ {2} + b ^ {2} d ^ {2} + b ^ {2} c ^ {2} + a ^ {2} d ^ {2}.
 $$
 
 8. First, observe that for any  $r \in D$ ,  $d(1) \leq d(1 \cdot r) = d(r)$  so that  $d(1)$  is the minimum value of  $d$ . Now if  $u$  is a unit, then  $d(u) \leq d(uu^{-1}) = d(1)$  so that  $d(u) = d(1)$ . If  $d(u) = d(1)$ , then  $1 = uq + r$  where  $r = 0$  or  $d(r) < d(u) = d(1)$ . So  $r = 0$ .
@@ -2898,7 +2898,7 @@ $(\sqrt{2}\sqrt{3})(\sqrt{2} + \sqrt{3}) = 2\sqrt{3} + 3\sqrt{2} = 3\sqrt{2} + 2
 11.  $Q(\pi)$  is the set of all expressions of the form
 
 $$
-\left. \left(a _ {n} \pi^ {n} + a _ {n - 1} \pi^ {n - 1} + \dots + a _ {0}\right) / \left(b _ {m} \pi^ {m} + b _ {m - 1} \pi^ {m - 1} + \dots + b _ {0}\right), \right.
+\leqft. \leqft(a _ {n} \pi^ {n} + a _ {n - 1} \pi^ {n - 1} + \dots + a _ {0}\right) / \leqft(b _ {m} \pi^ {m} + b _ {m - 1} \pi^ {m - 1} + \dots + b _ {0}\right), \right.
 $$
 
 where  $b_{m}\neq 0$
@@ -2971,7 +2971,7 @@ $$
 $$
 
 $$
-F _ {0} = Q (i), F _ {1} = Q \left(i, \sqrt {p _ {1}}\right), F _ {2} = Q \left(i, \sqrt {p _ {2}}\right), F _ {3} = Q \left(i, \sqrt {p _ {3}}\right), \dots .
+F _ {0} = Q (i), F _ {1} = Q \leqft(i, \sqrt {p _ {1}}\right), F _ {2} = Q \leqft(i, \sqrt {p _ {2}}\right), F _ {3} = Q \leqft(i, \sqrt {p _ {3}}\right), \dots .
 $$
 
 53. Because the derivative of  $x^{p^n} - x$  is  $-1$ ,  $x^{p^n} - x$  has no multiple zeroes in any extension of  $Z_p$ .
@@ -3154,7 +3154,7 @@ Alternate solution. First observe that  $Q(\sqrt{2}, \sqrt[3]{2}, \sqrt[4]{2}) =
 77. By the proof of Theorem 21.1, we have that
 
 $$
-x ^ {n} - x = x (x - a) \left(x - a ^ {2}\right) \left(x - a ^ {3}\right) \dots \left(x - a ^ {n - 1}\right).
+x ^ {n} - x = x (x - a) \leqft(x - a ^ {2}\right) \leqft(x - a ^ {3}\right) \dots \leqft(x - a ^ {n - 1}\right).
 $$
 
 # CHAPTER 22
@@ -3374,11 +3374,11 @@ b (a b N) = b a N b = a ^ {3} b N b = a ^ {3} b ^ {2} N = a ^ {3} N
 $$
 
 $$
-b \left(a ^ {2} b N\right) = b a ^ {2} N b = a ^ {2} b N b = a ^ {2} b ^ {2} N = a ^ {2} N
+b \leqft(a ^ {2} b N\right) = b a ^ {2} N b = a ^ {2} b N b = a ^ {2} b ^ {2} N = a ^ {2} N
 $$
 
 $$
-b \left(a ^ {3} b N\right) = b a ^ {3} N b = a b N b = a b ^ {2} N = a N
+b \leqft(a ^ {3} b N\right) = b a ^ {3} N b = a b N b = a b ^ {2} N = a N
 $$
 
 4. Since  $b = b^{-1}$ , we have  $bab = a^2$ . Then  $a = a^6 = (bab)^3 = ba^3b$  so that  $ba = a^3b$ . Thus,  $a^3b = a^2b$  and  $a = e$ . Finally, note that  $Z_2$  satisfies the relations with  $a = 0$  and  $b = 1$ .
@@ -3417,7 +3417,7 @@ b. Also,  $b^{3}abab^{3}a = b^{3}(aba)b^{3}a = b^{3}bb^{3}a = b^{7}a$ .
 22. Every element has the form  $x^i$  or  $x^i y$  where  $0 \leq i < 2n$ . Let  $0 < i < 2n$ . Then  $x^i \in Z(G)$  if and only if  $y^{-1}x^i y = x^i$ . But
 
 $$
-y ^ {- 1} x ^ {i} y = \left(y ^ {- 1} x y\right) ^ {i} = \left(x ^ {- 1}\right) ^ {i} = x ^ {- 1}.
+y ^ {- 1} x ^ {i} y = \leqft(y ^ {- 1} x y\right) ^ {i} = \leqft(x ^ {- 1}\right) ^ {i} = x ^ {- 1}.
 $$
 
 So  $x^{2i} = e$ . This implies  $i = n$ . A similar argument shows  $x^i y \in Z(G)$  implies  $i = n$ . But  $x^n y \in Z(G)$  and  $x^n \in Z(G)$  imply  $y \in Z(G)$ , which is false. So  $x^n y \notin Z(G)$ . To prove the second portion, observe that  $G / Z(G)$  has order  $2n$  and is generated by a pair of elements of order 2.
@@ -3457,7 +3457,7 @@ T _ {v ^ {\prime}}: \mathbf {R} ^ {n} \to \mathbf {R} ^ {n} \mathrm {b y} T _ {v
 $$
 
 $$
-T _ {v ^ {\prime}} \circ T _ {w ^ {\prime}} = T _ {w ^ {\prime} + v ^ {\prime}}; T _ {0} \text {i s t h e i d e n t i t y}; \left(T _ {v ^ {\prime}}\right) ^ {- 1} = T _ {- v ^ {\prime}}.
+T _ {v ^ {\prime}} \circ T _ {w ^ {\prime}} = T _ {w ^ {\prime} + v ^ {\prime}}; T _ {0} \text {i s t h e i d e n t i t y}; \leqft(T _ {v ^ {\prime}}\right) ^ {- 1} = T _ {- v ^ {\prime}}.
 $$
 
 1. If  $T$  is a distance-preserving function and the distance between points  $a$  and  $b$  is positive, then the distance between  $T(a)$  and  $T(b)$  is positive.  
@@ -3518,7 +3518,7 @@ $$
 9. The symmetry group is  $D_{11}$ . The identity fixes  $2^{11}$  colorings. Each of the other 10 rotations fixes only the two colorings in which the beads are all the same color. (Here we use the fact that 11 is prime. For example, if the rotation  $R_{2\cdot 360 / 11}$  fixes a coloring, then once we choose a color for one vertex, the rotation forces all other vertices to have that same color because the rotation moves 2 vertices at a time and 2 is a generator of  $Z_{11}$ .) For each reflection, we may color the vertex containing the axis of reflection 2 ways and each vertex on the same side of the axis of reflection 2 ways. This gives us  $2^6$  colorings for each reflection. So, the number of different colorings is
 
 $$
-\frac {1}{2 2} \left(2 ^ {1 1} + 1 0 \cdot 2 + 1 1 \cdot 2 ^ {6}\right) = 1 2 6.
+\frac {1}{2 2} \leqft(2 ^ {1 1} + 1 0 \cdot 2 + 1 1 \cdot 2 ^ {6}\right) = 1 2 6.
 $$
 
 10. 57
@@ -3526,7 +3526,7 @@ $$
 11. The symmetry group is  $Z_6$ . The identity fixes all  $n^6$  possible colorings. Since the rotations of  $60^\circ$  and  $300^\circ$  fix only the cases where each section is the same color, they each fix  $n$  colorings. Rotations of  $120^\circ$  and  $240^\circ$  each fix  $n^2$  colorings since every other section must have the same color. The  $180^\circ$  rotation fixes  $n^3$  colorings, since once we choose colors for three adjacent sections, the colors for the remaining three sections are determined. So, the number is
 
 $$
-\frac {1}{6} \left(n ^ {6} + 2 \cdot n + 2 \cdot n ^ {2} + n ^ {3}\right).
+\frac {1}{6} \leqft(n ^ {6} + 2 \cdot n + 2 \cdot n ^ {2} + n ^ {3}\right).
 $$
 
 12. 51
@@ -3613,14 +3613,14 @@ c. Use Theorem 29.1.
 9. Observe that a vector has even weight if and only if it can be written as a sum of an even number of vectors of weight 1. So, if  $u$  can be written as the sum of  $2m$  vectors of even weight and  $v$  can be written as the sum of  $2n$  vectors of even weight, then  $u + v$  can be written as the sum of  $2m + 2n$  vectors of even weight and therefore the set of code words of even weight is closed. (We need not check that the inverse of a code word is a code word since every binary code word is its own inverse.)  
 10. Since the minimum weight of any nonzero member of  $C$  is 4, we see by Theorem 29.2 that  $C$  will correct any single error and detect any triple error. (To verify this, use  $t = 3/2$  in the last paragraph of the proof for Theorem 29.2.)  
 11. No, by Theorem 29.3.  
-12.  $H = \left[ \begin{array}{ll}2 & 2\\ 1 & 2\\ 1 & 0\\ 0 & 1 \end{array} \right]$
+12.  $H = \leqft[ \begin{array}{ll}2 & 2\\ 1 & 2\\ 1 & 0\\ 0 & 1 \end{array} \right]$
 
 The code is  $\{\bar{0} 000,1011,2022,0121,0212,1102,2201,2110,1220\}$ . It will correct any single error and detect any double error. 2201.
 
 13. 0000000, 1000111, 0100101, 0010110, 0001011, 1100010, 1010001, 1001100, 0110011, 0101110, 0011101, 1110100, 1101001, 1011010, 0111000, 1111111.
 
 $$
-H = \left[ \begin{array}{l l l} 1 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right]
+H = \leqft[ \begin{array}{l l l} 1 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right]
 $$
 
 Yes, the code will detect any single error because it has weight 3.
@@ -3631,7 +3631,7 @@ Yes, the code will detect any single error because it has weight 3.
 17. 000000, 100110, 010011, 001101, 110101, 101011, 011110, 111000
 
 $$
-H = \left[ \begin{array}{l l l} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right]
+H = \leqft[ \begin{array}{l l l} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array} \right]
 $$
 
 001001 is decoded as 001101 by all four methods.  
@@ -3653,18 +3653,18 @@ $k$  is even, we have  $d(u,u^{\prime}) = \frac{k}{2} = d(0,u^{\prime})$  so tha
 Now suppose that the nearest-neighbor method will detect any  $2t$  or fewer errors and that the weight of the code is at most  $2t$ . Let  $u$  be a code word whose weight is the weight of the code. Then the error made by changing all the components of  $u$  to 0 is not detected.
 
 25. No. For if so, nonzero code words would be all words with weight at least 5. But this set is not closed under addition.  
-26. Say  $G = \left[ \begin{array}{cccc} 1 & 0 & a_1 & a_2 & a_3 \\ 0 & 1 & b_1 & b_2 & b_3 \end{array} \right]$ . To detect 3 errors the minimum weight of nonzero code words must be 4. Thus any nonzero code word has at most one zero component. Since (10)  $G = 10a_1a_2a_3$  and (01)  $G = 01b_1b_2b_3$  we have  $a_i \neq 0$  and  $b_i \neq 0$  for  $i = 1, 2, 3$ . Because (21)  $G = 2, 1, 2a_1 + b_1, 2a_2 + b_2, 2a_3 + b_3$  we must have  $a_i \neq b_i$ . Thus the last three columns for  $G$  are  $\frac{1}{2}$  or  $\frac{2}{1}$ . But then (11)  $G = 11000$ , a contradiction.  
+26. Say  $G = \leqft[ \begin{array}{cccc} 1 & 0 & a_1 & a_2 & a_3 \\ 0 & 1 & b_1 & b_2 & b_3 \end{array} \right]$ . To detect 3 errors the minimum weight of nonzero code words must be 4. Thus any nonzero code word has at most one zero component. Since (10)  $G = 10a_1a_2a_3$  and (01)  $G = 01b_1b_2b_3$  we have  $a_i \neq 0$  and  $b_i \neq 0$  for  $i = 1, 2, 3$ . Because (21)  $G = 2, 1, 2a_1 + b_1, 2a_2 + b_2, 2a_3 + b_3$  we must have  $a_i \neq b_i$ . Thus the last three columns for  $G$  are  $\frac{1}{2}$  or  $\frac{2}{1}$ . But then (11)  $G = 11000$ , a contradiction.  
 27. By Exercise 24, for a linear code to correct every error the minimum weight must be at least 3. Since a (4,2) binary linear code only has three nonzero code words, if each must have weight at least 3, then the only possibilities are  $(1,1,1,0)$ ,  $(1,1,0,1)$ ,  $(1,0,1,1)$ ,  $(0,1,1,1)$  and  $(1,1,1,1)$ . But each pair of these has at least two components that agree. So, the sum of any distinct two of them is a nonzero word of weight at most 2. This contradicts the closure property.  
 28. 000010 110110 011000 111011 101100 001111 100001 010101.  
 29. Abbreviate the coset  $a + \langle x^2 + x + 1 \rangle$  with  $a$ . The following generating matrix will produce the desired code:
 
 $$
-\left[ \begin{array}{c c c c c} 1 & 0 & 1 & 1 & x \\ 0 & 1 & x & x + 1 & x + 1 \end{array} \right].
+\leqft[ \begin{array}{c c c c c} 1 & 0 & 1 & 1 & x \\ 0 & 1 & x & x + 1 & x + 1 \end{array} \right].
 $$
 
-30.  $G = \left[ \begin{array}{cccc}1 & 0 & 2 & 1\\ 0 & 1 & 1 & 2 \end{array} \right];\{0000,1021,2012,0112,1100,2121,0221,1212,2200\}$
+30.  $G = \leqft[ \begin{array}{cccc}1 & 0 & 2 & 1\\ 0 & 1 & 1 & 2 \end{array} \right];\{0000,1021,2012,0112,1100,2121,0221,1212,2200\}$
 
-$H = \left[ \begin{array}{ll}1 & 2\\ 2 & 1\\ 1 & 0\\ 0 & 1 \end{array} \right].$  The code will not detect all single errors.
+$H = \leqft[ \begin{array}{ll}1 & 2\\ 2 & 1\\ 1 & 0\\ 0 & 1 \end{array} \right].$  The code will not detect all single errors.
 
 31. By Exercise 14 and the assumption, for each component exactly  $n/2$  of the code words have the entry 1. So, determining the sum of the weights of all code words by summing over the contributions made by each component, we obtain  $n(n/2)$ . Thus, the average weight of a code word is  $n/2$ .  
 32. Suppose every vector of weight  $t + 1$  is a coset leader. Let  $v$  be a code word of weight  $2t + 1$  and  $w$  the vector obtained from  $v$  by changing the first  $t + 1$  nonzero component to 0. Then  $\mathrm{wt}(w - v) = t + 1$  so that  $w - v$  is a coset leader. But  $w + C = w - v + C$  and  $w$  has weight  $t$ . This contradicts the definition of coset leader.  
@@ -3687,7 +3687,7 @@ $H = \left[ \begin{array}{ll}1 & 2\\ 2 & 1\\ 1 & 0\\ 0 & 1 \end{array} \right].$
 7. It suffices to show that each member of  $\operatorname{Gal}(K / F)$  defines a permutation on the  $a_i$ 's. Let  $\alpha \in \operatorname{Gal}(K / F)$  and write  $f(x) = c_n x^n + c_{n-1} x^{n-1} + \dots + c_0$ . Then  $0 = f(a_i) = c_n a_i^n + c_{n-1} a_i^{n-1} + \dots + c_0$ . So,  $0 = \alpha(0) = \alpha(c_n) (\alpha(a_i)^n + \alpha(c_{n-1}) \alpha(a_i)^{n-1} + \dots + \alpha(c_0) = c_n (\alpha(a_i)^n + c_{n-1} \alpha(a_i)^{n-1} + \dots + c_0 = f(\alpha(a_i))$ . So,  $\alpha(a_i) = a_j$  for some  $j$ , and therefore  $\alpha$  permutes the  $a_i$ 's.  
 8. Use Corollary 3 of Theorem 16.2 and Exercise 7 of this chapter.  
 9. Observe that  $\phi^6 (\omega) = \omega^{729} = \omega$  , whereas  $\phi^3 (\omega) = \omega^{27} = \omega^{-1}$  and  $\phi^2 (\omega) = \omega^9 = \omega^2$ $\phi^3 (\omega +\omega^{-1}) = \omega^{27} + \omega^{-27} = \omega^{-1} + \omega .$ $\phi^2 (\omega^3 +\omega^5 +\omega^6) = \omega^{27} + \omega^{45} + \omega^{54} = \omega^6 +\omega^3 +\omega^5.$  
-10.  $|\operatorname {Gal}(E / Q)| = [E:Q] = 4;\left|\operatorname {Gal}(Q(\sqrt{10}) / Q\right| = \left[Q(\sqrt{10}):Q\right] = 2.$  
+10.  $|\operatorname {Gal}(E / Q)| = [E:Q] = 4;\leqft|\operatorname {Gal}(Q(\sqrt{10}) / Q\right| = \leqft[Q(\sqrt{10}):Q\right] = 2.$  
 11. a.  $Z_{20} \oplus Z_2$  has three subgroups of order 10. b. 25 does not divide 40 so there is none. c.  $Z_{20} \oplus Z_2$  has one subgroup of order 5.  
 12. See Example 4 in this chapter.  
 13. The splitting field over  $\mathbf{R}$  is  $\mathbf{R}(\sqrt{-3})$ . The Galois group is the identity and the mapping  $a + b\sqrt{-3} \to a - b\sqrt{-3}$ .  
@@ -3795,7 +3795,7 @@ $$
 
 13. First observe that  $\deg \Phi_{2n}(x) = \phi(2n) = \phi(n)$  and  $\deg \Phi_n(-x) = \deg \Phi_n(x) = \phi(n)$ . Thus, it suffices to show that every zero of  $\Phi_n(-x)$  is a zero of  $\Phi_{2n}(x)$ . But  $\omega$  is a zero of  $\Phi_n(-x)$  means that  $|- \omega| = n$ , which in turn implies that  $|\omega| = 2n$ . (Here  $|\omega|$  means the order of the group element  $\omega$ .)  
 14. Since the two sides are monic and have the same degree it suffices to prove that every zero of  $\Phi_{p^k}(x)$  is a zero of  $\Phi_p(x^{p^{k - 1}})$ . Let  $\omega$  be a zero of  $\Phi_{p^k}(x)$  and note that  $|\omega | = p^{k}$  implies that  $|\omega^{p^{k - 1}}| = p$ .  
-15. Let  $G = \operatorname{Gal}(Q(\omega) / Q)$  and  $H_1$  be the subgroup of  $G$  of order 2 that fixes  $\cos\left(\frac{2\pi}{n}\right)$ . Then, by induction,  $G / H_1$  has a series of subgroups  
+15. Let  $G = \operatorname{Gal}(Q(\omega) / Q)$  and  $H_1$  be the subgroup of  $G$  of order 2 that fixes  $\cos\leqft(\frac{2\pi}{n}\right)$ . Then, by induction,  $G / H_1$  has a series of subgroups  
 16. Use Theorem 31.4.  
 17. Instead, we prove that  $\Phi_n(x)\Phi_{pn}(x) = \Phi_n(x^p)$ . Since both sides are monic and have degree  $p\phi(n)$ , it suffices to show that every zero of  $\Phi_n(x)\Phi_{pn}(x)$  is a zero of  $\Phi_n(x^p)$ . If  $\omega$  is a zero of  $\Phi_n(x)$ , then  $|\omega| = n$ . By Theorem 4.2,  $|\omega^p| = n$  also. Thus  $\omega$  is a zero of  $\Phi_n(x^p)$ . If  $\omega$  is a zero of  $\Phi_{np}(x)$ , then  $|\omega| = np$  and therefore  $|\omega^p| = n$ .  
 18. Use Theorem 31.4.  

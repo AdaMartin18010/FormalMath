@@ -474,9 +474,9 @@ theorem nullstellensatz :
 ### 核心公式
 
 1. **Curry-Howard对应**：
-   - 命题 $\leqftrightarrow$ 类型
-   - 证明 $\leqftrightarrow$ 项
-   - 逻辑运算 $\leqftrightarrow$ 类型构造
+   - 命题 $\leqqqftrightarrow$ 类型
+   - 证明 $\leqqqftrightarrow$ 项
+   - 逻辑运算 $\leqqqftrightarrow$ 类型构造
 
 2. **依赖函数类型**：
    $$\Pi_{x:A} B(x) \quad \text{（依赖函数）}$$
@@ -497,10 +497,10 @@ theorem nullstellensatz :
    $$\text{Id}_A(a, b) \quad \text{（$a = b$ 的证明类型）}$$
 
 8. **单值公理（HoTT）**：
-   $$\text{等价类型} \leqftrightarrow \text{相等类型}$$
+   $$\text{等价类型} \leqqqftrightarrow \text{相等类型}$$
 
 9. **证明即程序**：
-   $$\text{证明 } P \leqftrightarrow \text{程序 } p : P$$
+   $$\text{证明 } P \leqqqftrightarrow \text{程序 } p : P$$
 
 10. **形式化定理**：
     $$\text{theorem} : \forall x, P(x) \to Q(x)$$

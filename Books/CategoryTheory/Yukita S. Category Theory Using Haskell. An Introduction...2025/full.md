@@ -672,7 +672,7 @@ Definition 1.6 The data for a category consists of objects, morphisms, table of 
 - A collection of functions
 
 $$
-F _ {1} \left(A _ {1}, A _ {2}\right): \mathscr {A} \left(A _ {1}, A _ {2}\right)\rightarrow \mathscr {B} \left(F _ {0} \left(A _ {1}\right), F _ {0} \left(A _ {2}\right)\right)
+F _ {1} \leqft(A _ {1}, A _ {2}\right): \mathscr {A} \leqft(A _ {1}, A _ {2}\right)\rightarrow \mathscr {B} \leqft(F _ {0} \leqft(A _ {1}\right), F _ {0} \leqft(A _ {2}\right)\right)
 $$
 
 for all the pair  $A_1, A_2 \in \mathrm{Obj}(\mathcal{A})$ . Since there are no overlapping of domains of definition, we can collectively call the collection as a function on morphisms.
@@ -931,25 +931,25 @@ As to the function of morphisms, a complex linear mapping can be considered as a
 Conversely, an arbitrary real linear mapping is not necessarily a complex linear mapping. So, we have
 
 $$
-\operatorname {V e c t} _ {\mathbb {C}} \left(V _ {1}, V _ {2}\right) \subsetneq \operatorname {V e c t} _ {\mathbb {R}} \left(F V _ {1}, F V _ {2}\right).
+\operatorname {V e c t} _ {\mathbb {C}} \leqft(V _ {1}, V _ {2}\right) \subsetneq \operatorname {V e c t} _ {\mathbb {R}} \leqft(F V _ {1}, F V _ {2}\right).
 $$
 
 Let us employ matrix representations with a fixed basis. Then, we can identify  $V = \mathbb{C}^n$  and  $FV = \mathbb{R}^{2n}$ . Then, morphisms in  $\mathrm{Vect}_{\mathbb{C}}$  are represented as an  $n \times n$  matrix; the corresponding morphisms in  $\mathrm{Vect}_{\mathbb{R}}$  are represented as an  $2n \times 2n$  matrix. For example,
 
 $$
-\left( \begin{array}{c c} \sqrt {- 1} & 0 \\ 0 & 1 0 \end{array} \right) \left( \begin{array}{c} x + y i \\ u + v i \end{array} \right)
+\leqft( \begin{array}{c c} \sqrt {- 1} & 0 \\ 0 & 1 0 \end{array} \right) \leqft( \begin{array}{c} x + y i \\ u + v i \end{array} \right)
 $$
 
 is rewritten as
 
 $$
-\left( \begin{array}{c c c} 0 & - 1 & \\ 1 & 0 & \\ & & 1 0 \quad 0 \\ & & 0 \quad 1 0 \end{array} \right) \left( \begin{array}{c} x \\ y \\ u \\ v \end{array} \right).
+\leqft( \begin{array}{c c c} 0 & - 1 & \\ 1 & 0 & \\ & & 1 0 \quad 0 \\ & & 0 \quad 1 0 \end{array} \right) \leqft( \begin{array}{c} x \\ y \\ u \\ v \end{array} \right).
 $$
 
 The function of morphisms acts like this:
 
 $$
-\left( \begin{array}{c c} \sqrt {- 1} & 0 \\ 0 & 1 0 \end{array} \right) \mapsto \left( \begin{array}{c c c c} 0 & - 1 & & \\ 1 & 0 & & \\ & & 1 0 & 0 \\ & & 0 & 1 0 \end{array} \right),
+\leqft( \begin{array}{c c} \sqrt {- 1} & 0 \\ 0 & 1 0 \end{array} \right) \mapsto \leqft( \begin{array}{c c c c} 0 & - 1 & & \\ 1 & 0 & & \\ & & 1 0 & 0 \\ & & 0 & 1 0 \end{array} \right),
 $$
 
 where empty slots should be filled with 0s.
@@ -1739,13 +1739,13 @@ makes the right square commute. Since  $F$  is full and faithful, there is a uni
 Given two morphisms  $g: B \to B'$  and  $g': B' \to B''$ , we must show
 
 $$
-G \left(g ^ {\prime} \circ g\right) = G g ^ {\prime} \circ G g. \tag {2.5}
+G \leqft(g ^ {\prime} \circ g\right) = G g ^ {\prime} \circ G g. \tag {2.5}
 $$
 
 Let us consider the following diagram.
 
 $$
-\begin{array}{c} \mathcal {A} \xrightarrow {F} \mathcal {B} \\ G B \longmapsto F G B \xrightarrow {\varepsilon_ {B}} B \\ \left( \begin{array}{c c c} G g & \Bigg | & \Bigg | _ {\varepsilon_ {B ^ {\prime}} ^ {- 1} \circ g \circ \varepsilon_ {B}} \\ & & \Bigg | & \Bigg | _ {\Bigg |} \\ G (g ^ {\prime} \circ g) & \Bigg | & \Bigg | _ {\varepsilon_ {B ^ {\prime}} ^ {- 1} \circ g ^ {\prime} \circ \varepsilon_ {B ^ {\prime}}} \\ & & \Bigg | & \Bigg | _ {\Bigg |} \\ & & \Bigg | & \Bigg | _ {\Bigg |} \\ & G B ^ {\prime \prime} & \longmapsto F G B ^ {\prime \prime} \xrightarrow {\varepsilon_ {B ^ {\prime \prime}}} B ^ {\prime \prime} \end{array} \right) g ^ {\prime} \circ g \\ & \end{array}
+\begin{array}{c} \mathcal {A} \xrightarrow {F} \mathcal {B} \\ G B \longmapsto F G B \xrightarrow {\varepsilon_ {B}} B \\ \leqft( \begin{array}{c c c} G g & \Bigg | & \Bigg | _ {\varepsilon_ {B ^ {\prime}} ^ {- 1} \circ g \circ \varepsilon_ {B}} \\ & & \Bigg | & \Bigg | _ {\Bigg |} \\ G (g ^ {\prime} \circ g) & \Bigg | & \Bigg | _ {\varepsilon_ {B ^ {\prime}} ^ {- 1} \circ g ^ {\prime} \circ \varepsilon_ {B ^ {\prime}}} \\ & & \Bigg | & \Bigg | _ {\Bigg |} \\ & & \Bigg | & \Bigg | _ {\Bigg |} \\ & G B ^ {\prime \prime} & \longmapsto F G B ^ {\prime \prime} \xrightarrow {\varepsilon_ {B ^ {\prime \prime}}} B ^ {\prime \prime} \end{array} \right) g ^ {\prime} \circ g \\ & \end{array}
 $$
 
 If we compose two morphisms in the center column, we obtain
@@ -1757,7 +1757,7 @@ $$
 We now see that  $Gg' \circ Gg$  and  $G(g' \circ g)$  are mapped by  $F$  to the same morphism  $\varepsilon_{B''}^{-1} \circ g' \circ g \circ \varepsilon_B$ . For better illustration, we draw morphism mapping as follows.
 
 $$
-\begin{array}{l} \mathcal {A} (G B, G B ^ {\prime \prime}) \xrightarrow {F} \mathcal {B} (F G B, F G B ^ {\prime \prime}) \\ G g ^ {\prime} \circ G g \longmapsto \varepsilon_ {B ^ {\prime \prime}} ^ {- 1} \circ g ^ {\prime} \circ g \circ \varepsilon_ {B} \\ G \left(g ^ {\prime} \circ g\right) \longmapsto \varepsilon_ {B ^ {\prime \prime}} ^ {- 1} \circ \left(g ^ {\prime} \circ g\right) \circ \varepsilon_ {B} \\ \end{array}
+\begin{array}{l} \mathcal {A} (G B, G B ^ {\prime \prime}) \xrightarrow {F} \mathcal {B} (F G B, F G B ^ {\prime \prime}) \\ G g ^ {\prime} \circ G g \longmapsto \varepsilon_ {B ^ {\prime \prime}} ^ {- 1} \circ g ^ {\prime} \circ g \circ \varepsilon_ {B} \\ G \leqft(g ^ {\prime} \circ g\right) \longmapsto \varepsilon_ {B ^ {\prime \prime}} ^ {- 1} \circ \leqft(g ^ {\prime} \circ g\right) \circ \varepsilon_ {B} \\ \end{array}
 $$
 
 By assumption  $F$  is faithful, so the two morphisms on the left must coincide, which proves Eq. (2.5). Now,  $G$  is a functor.
@@ -1948,16 +1948,16 @@ Example 3.4 Let us consider Example 3.2 again. Let  $X = \{1, 2, 3\}$ . We study
 If a product of  $\{1,2\}$  and  $\{2,3\}$  exists in  $\mathcal{P}(X)$ , we put  $z = \{1,2\} \times \{2,3\}$ , and write as
 
 $$
-\{1, 2 \} \leftarrow z \rightarrow \{2, 3 \}.
+\{1, 2 \} \leqftarrow z \rightarrow \{2, 3 \}.
 $$
 
 Candidates for  $z$  are only  $\{2\}$  and  $\varnothing$  since morphisms are very limited in this category. In other words, we can write as
 
 $$
-\begin{array}{l} \operatorname {O b j} (\operatorname {S p a n} (\{1, 2 \}, \{2, 3 \})) \\ = \{\{1, 2 \} \leftarrow \{2 \} \rightarrow \{2, 3 \}, \quad \{1, 2 \} \leftarrow \emptyset \rightarrow \{2, 3 \} \}. \\ \end{array}
+\begin{array}{l} \operatorname {O b j} (\operatorname {S p a n} (\{1, 2 \}, \{2, 3 \})) \\ = \{\{1, 2 \} \leqftarrow \{2 \} \rightarrow \{2, 3 \}, \quad \{1, 2 \} \leqftarrow \emptyset \rightarrow \{2, 3 \} \}. \\ \end{array}
 $$
 
-$\{1,2\} \leftarrow \{2\} \rightarrow \{2,3\}$  is clearly a terminal object in  $\operatorname{Span}(\{1,2\}, \{2,3\})$ . So, we may write as  $\{2\} = \{1,2\} \times \{2,3\}$ . Notice that  $\{2\}$  is the greatest lower bound of  $\{1,2\}$  and  $\{2,3\}$ .
+$\{1,2\} \leqftarrow \{2\} \rightarrow \{2,3\}$  is clearly a terminal object in  $\operatorname{Span}(\{1,2\}, \{2,3\})$ . So, we may write as  $\{2\} = \{1,2\} \times \{2,3\}$ . Notice that  $\{2\}$  is the greatest lower bound of  $\{1,2\}$  and  $\{2,3\}$ .
 
 Proposition 3.3 A product, if it exists, is unique up to isomorphisms.
 
@@ -2092,7 +2092,7 @@ which is unique up to isomorphisms if it exists. We often (almost always) identi
 Example 3.7 Let us search for coproducts in the category  $\mathcal{P}(X)$  of the power set of Example 3.2. Consider  $\{1\} \sqcup \{1,2\}$ . Does it exist in the first place? Let  $z$  be a coproduct if it exists. For a cospan
 
 $$
-\{1 \} \to z \leftarrow \{1, 2 \}
+\{1 \} \to z \leqftarrow \{1, 2 \}
 $$
 
 candidates for  $z$  are  $\{1, 2\}$  and  $\{1, 2, 3\}$ . The category of cospans consists of only two objects and obvious morphisms. The initial object is  $\{1, 2\}$ , which is the least upper bound of  $\{1\}$  and  $\{1, 2\}$ . We have
@@ -2202,13 +2202,13 @@ is the same as considering the cone from  $X$  to a  $J$ -shaped diagram  $F$ . 
 Example 3.10 We consider an index category  $J$  with natural numbers  $1, 2, 3, \dots$  as objects and
 
 $$
-1 \leftarrow 2 \leftarrow 3 \leftarrow \dots
+1 \leqftarrow 2 \leqftarrow 3 \leqftarrow \dots
 $$
 
 as generators of morphisms. Let  $F: J \to \mathbf{Set}$  be a functor where
 
 - function on objects is given by  $F(n) = \mathbb{R}^n$ ,  
-- function on morphisms is given by  $F(n \leftarrow n + 1) = p_n$ , where  $p_n$  is a projection
+- function on morphisms is given by  $F(n \leqftarrow n + 1) = p_n$ , where  $p_n$  is a projection
 
 $$
 p _ {n}: \mathbb {R} ^ {n + 1} \rightarrow \mathbb {R} ^ {n}
@@ -2225,7 +2225,7 @@ Let  $Y$  be an arbitrary set. A cone from  $Y$  to a  $J$ -shaped diagram  $F$ 
 We have  $\varprojlim F = \mathbb{R}^{\infty}$ . In fact, we use the data  $\{y_{n}\}$  to uniquely define  $f:Y\to \mathbb{R}^{\infty}$  as
 
 $$
-f (z) = \left(f _ {1} (z), f _ {2} (z), \dots , f _ {n} (z), \dots\right),
+f (z) = \leqft(f _ {1} (z), f _ {2} (z), \dots , f _ {n} (z), \dots\right),
 $$
 
 where  $y_{n}(z)\in \mathbb{R}^{n}$  and  $f_{n}(z)$  is its  $n$  -th component.
@@ -2233,7 +2233,7 @@ where  $y_{n}(z)\in \mathbb{R}^{n}$  and  $f_{n}(z)$  is its  $n$  -th component
 Definition 3.6 We consider an index category  $J$  with objects 0, 1, and 2. The following two morphisms
 
 $$
-1 \rightarrow 0 \leftarrow 2
+1 \rightarrow 0 \leqftarrow 2
 $$
 
 generate the whole morphisms. A limit of a  $J$ -shaped diagram is called a pullback or fiber product. Let  $F: J \to \mathcal{A}$  be a functor given by:
@@ -2433,7 +2433,7 @@ A product of morphisms accompanies with the universality of product.
 Proposition 3.5 We use the same notation in Definition 3.8. Consider an arbitrary morphism  $g: Y \to X$ . We have the following.
 
 $$
-\left(\prod_ {j \in \operatorname {O b j} (J)} f _ {j}\right) \circ g = \prod_ {j \in \operatorname {O b j} (J)} \left(f _ {j} \circ g\right).
+\leqft(\prod_ {j \in \operatorname {O b j} (J)} f _ {j}\right) \circ g = \prod_ {j \in \operatorname {O b j} (J)} \leqft(f _ {j} \circ g\right).
 $$
 
 The operation of composing  $g$  from right and the operation of taking a limit commute.
@@ -2445,13 +2445,13 @@ Proof First, observe that all the triangles in the diagram
 commute. Large triangles obtained by taking the union of the adjacent small triangles also commute. Consider a cone  $(Y, \{f_j \circ g\})$ . The mediating morphism from  $Y$  to the universal cone is given by
 
 $$
-\prod_ {j \in \operatorname {O b j} (J)} \left(f _ {j} \circ g\right). \tag {3.3}
+\prod_ {j \in \operatorname {O b j} (J)} \leqft(f _ {j} \circ g\right). \tag {3.3}
 $$
 
 While morphism
 
 $$
-\left(\prod_ {j \in \operatorname {O b j} (J)} f _ {j}\right) \circ g \tag {3.4}
+\leqft(\prod_ {j \in \operatorname {O b j} (J)} f _ {j}\right) \circ g \tag {3.4}
 $$
 
 makes all the large triangles
@@ -2504,7 +2504,7 @@ When  $\mathcal{A}$  is locally small, using the language of Chap. 7, the above 
 Example 3.13 Let the index category  $J$  be the category with only two objects 1 and 2 and the identity morphisms. Determining a functor  $F$  from  $J$  to the category  $\mathcal{A}$  is the same as choosing two objects in the category  $\mathcal{A}$ . Given  $F(1) = A_{1}$  and  $F(2) = A_{2}$ , the cospan to any object  $X$  in the category  $\mathcal{A}$
 
 $$
-A _ {1} \stackrel {x _ {1}} {\longrightarrow} X \stackrel {x _ {2}} {\leftarrow} A _ {2}
+A _ {1} \stackrel {x _ {1}} {\longrightarrow} X \stackrel {x _ {2}} {\leqftarrow} A _ {2}
 $$
 
 is the same as considering the cocone from  $J$ -shaped diagram  $F$  to an object of  $\mathcal{A}$ . Considering the category of cospans  $\operatorname{Cospan}(A_1, A_2)$ , and the category of cocones  $(F, \mathcal{A})$  is the same. So it turns out that colimit is a generalization of coproduct.
@@ -2549,7 +2549,7 @@ We may choose a greater  $n$ , which gives the same result due to the commutativ
 Definition 3.11 We consider an index category  $J$  with objects 0, 1, and 2. The following two morphisms
 
 $$
-1 \leftarrow 0 \rightarrow 2
+1 \leqftarrow 0 \rightarrow 2
 $$
 
 generate the whole morphisms. A colimit of a  $J$ -shaped diagram is called a pushout or fibered coproduct, the dual of pullback. Let  $F: J \to \mathcal{A}$  be a functor given by:
@@ -2865,7 +2865,7 @@ $$
 Proposition 3.6 We use the notation in Definition 3.13. Given a morphism  $g: X \to Y$ , we have the following:
 
 $$
-g \circ \left(\prod_ {j \in \operatorname {O b j} (J)} x _ {j}\right) = \prod_ {j \in \operatorname {O b j} (J)} (g \circ x _ {j}),
+g \circ \leqft(\prod_ {j \in \operatorname {O b j} (J)} x _ {j}\right) = \prod_ {j \in \operatorname {O b j} (J)} (g \circ x _ {j}),
 $$
 
 which means that operating  $g$  from left is commutative with the coproduct operation.
@@ -2877,13 +2877,13 @@ Proof In diagram
 the triangles are all commutative. Larger triangles made by composition are also commutative. Let us consider a cocone  $(\{g \circ x_j\}, Y)$ . A mediating morphism from a universal cocone to  $Y$  is
 
 $$
-\coprod_ {j \in \operatorname {O b j} (J)} \left(g \circ x _ {j}\right). \tag {3.6}
+\coprod_ {j \in \operatorname {O b j} (J)} \leqft(g \circ x _ {j}\right). \tag {3.6}
 $$
 
 The morphism
 
 $$
-g \circ \left(\coprod_ {j \in \operatorname {O b j} (J)} x _ {j}\right) \tag {3.7}
+g \circ \leqft(\coprod_ {j \in \operatorname {O b j} (J)} x _ {j}\right) \tag {3.7}
 $$
 
 makes all the triangles
@@ -2904,8 +2904,8 @@ Not all  $J$ -shaped diagrams  $F: J \to \mathcal{A}$  have limits or colimits.
 - If a category  $\mathcal{A}$  have limits [colimits] of shape  $J$  for all small and discrete categories  $J$ , then  $\mathcal{A}$  is said to have products [have coproducts].
 
 - If all  $\bullet \Longrightarrow \bullet$ -shaped diagrams in  $\mathcal{A}$  have limits[colimits], category  $\mathcal{A}$  is said to have equalizers[have coequalizers].  
-- If all  $\bullet \gets \bullet \rightarrow \bullet$ -shaped diagrams have limits, category  $\mathcal{A}$  is said to have pullbacks.  
-- If all  $\bullet \to \bullet \gets \bullet$ -shaped diagrams have colimits, category  $\mathcal{A}$  is said to have pushouts.  
+- If all  $\bullet \geqts \bullet \rightarrow \bullet$ -shaped diagrams have limits, category  $\mathcal{A}$  is said to have pullbacks.  
+- If all  $\bullet \to \bullet \geqts \bullet$ -shaped diagrams have colimits, category  $\mathcal{A}$  is said to have pushouts.  
 - If a category  $\mathcal{A}$  has limits[colimits] of shape  $J$  for all small categories  $J$ , category  $\mathcal{A}$  is said to be complete[cocomplete].
 
 An often used sufficient condition for a category to have limits is presented below. A little preparation is required for this.
@@ -2919,7 +2919,7 @@ $$
 to a diagram  $F \circ \operatorname{cod}$  of shape  $\operatorname{Mor}(J)$ , namely a product indexed by  $f \in \operatorname{Mor}(J)$ . The data structure is presented as follows.
 
 $$
-\left(\prod_ {f \in \operatorname {M o r} (J)} F (\operatorname {c o d} (f)), \quad \{\pi_ {f} \} _ {f \in \operatorname {M o r} (J)}, \quad F \circ \operatorname {c o d}\right)
+\leqft(\prod_ {f \in \operatorname {M o r} (J)} F (\operatorname {c o d} (f)), \quad \{\pi_ {f} \} _ {f \in \operatorname {M o r} (J)}, \quad F \circ \operatorname {c o d}\right)
 $$
 
 Let us consider another cone to  $F \circ \mathrm{cod}$
@@ -2931,7 +2931,7 @@ $$
 with data structure
 
 $$
-\left(\prod_ {j \in \operatorname {O b j} (J)} F (j), \quad \{F (f) \circ p _ {\operatorname {d o m} (f)} \} _ {f \in \operatorname {M o r} (J)}, \quad F \circ \operatorname {c o d}\right),
+\leqft(\prod_ {j \in \operatorname {O b j} (J)} F (j), \quad \{F (f) \circ p _ {\operatorname {d o m} (f)} \} _ {f \in \operatorname {M o r} (J)}, \quad F \circ \operatorname {c o d}\right),
 $$
 
 where  $p_j$ 's are projections accompanying the product  $\prod_{j \in \mathrm{Obj}(J)} F(j)$ . These projections appear in the form of  $p_{\mathrm{dom}(f)}$  in the diagram. It often happens that  $\mathrm{dom}(f_1) = \mathrm{dom}(f_2)$  for a pair  $f_1 \neq f_2$ . So, the same  $p_{\mathrm{dom}(f)}$  may appear repeatedly in the upper half of the diagram. However, this does not cause any inconvenience since the base of the cone is indexed by  $f$ . The universal cone (3.8) gives a unique mediating morphism  $s$  that makes all the squares in the diagram commute.
@@ -2951,7 +2951,7 @@ We consider yet another cone from  $\prod_{j\in \mathrm{Obj}(J)}F(j)$  to  $F\ci
 The data structure for this is given as
 
 $$
-\left(\prod_ {j \in \operatorname {O b j} (J)} F (j), \quad \{p _ {\operatorname {c o d} (f)} \} _ {f \in \operatorname {M o r} (J)}, \quad F \circ \operatorname {c o d}\right)
+\leqft(\prod_ {j \in \operatorname {O b j} (J)} F (j), \quad \{p _ {\operatorname {c o d} (f)} \} _ {f \in \operatorname {M o r} (J)}, \quad F \circ \operatorname {c o d}\right)
 $$
 
 It is sometimes the case that  $\operatorname{cod}(f_1) = \operatorname{cod}(f_2)$  for a pair  $f_1 \neq f_2$ , which means that some objects repeatedly appear in the base of the cone. Notice that no trouble is caused since the base is indexed by  $f$ .
@@ -2979,7 +2979,7 @@ Theorem 3.1 Let  $\mathcal{A}$  be a category with equalizers and products, and 
 ![](images/248b3d1dfc94d2a76d832ef6b45643d9239856e1c1dc73f8a89393d227434215.jpg)
 
 $$
-\left(K, \left\{p _ {j} \circ e \right\} _ {j \in \operatorname {O b j} (J)}, F\right).
+\leqft(K, \leqft\{p _ {j} \circ e \right\} _ {j \in \operatorname {O b j} (J)}, F\right).
 $$
 
 Proof Let  $(X, x = \{x_{j}\}_{j \in \mathrm{Obj}(J)}, F)$  be any cone to  $F$ . This cone automatically is a cone to  $F|_{\mathrm{Obj}(J)}$ , where the discrete category  $\mathrm{Obj}(J)$  is considered as a subcategory of  $J$ . Universality of products gives a unique morphism  $x$  in the commutative diagram below.
@@ -2997,7 +2997,7 @@ where  $x = \prod_{j\in \mathrm{Obj}(J)}x_j$
 We now show that  $s \circ x = t \circ x$ . Rewriting the LHS, we have
 
 $$
-\begin{array}{l} s \circ x = \left(\prod_ {f \in \operatorname {M o r} (J)} F (f) \circ p _ {\operatorname {d o m} (f)}\right) \circ x \\ = \prod_ {f \in \operatorname {M o r} (J)} \left(F (f) \circ p _ {\operatorname {d o m} (f)} \circ x\right) \\ = \prod_ {f \in \operatorname {M o r} (J)} \left(F (f) \circ x _ {\operatorname {d o m} (f)}\right). \\ \end{array}
+\begin{array}{l} s \circ x = \leqft(\prod_ {f \in \operatorname {M o r} (J)} F (f) \circ p _ {\operatorname {d o m} (f)}\right) \circ x \\ = \prod_ {f \in \operatorname {M o r} (J)} \leqft(F (f) \circ p _ {\operatorname {d o m} (f)} \circ x\right) \\ = \prod_ {f \in \operatorname {M o r} (J)} \leqft(F (f) \circ x _ {\operatorname {d o m} (f)}\right). \\ \end{array}
 $$
 
 Line 2 is derived by Proposition 3.5 which claims that limits and composition of a morphism commute. Line 3 is obtained directly from the definition of  $x$ , namely  $p_j \circ x = x_j$  with  $j$  replaced by  $\operatorname{dom}(f)$ .
@@ -3005,7 +3005,7 @@ Line 2 is derived by Proposition 3.5 which claims that limits and composition of
 Rewriting the RHS, we have
 
 $$
-\begin{array}{l} t \circ x = \left(\prod_ {f \in \operatorname {M o r} (J)} p _ {\operatorname {c o d} (f)}\right) \circ x \\ = \prod_ {f \in \operatorname {M o r} (J)} \left(p _ {\operatorname {c o d} (f)} \circ x\right) \\ = \prod_ {f \in \operatorname {M o r} (J)} x _ {\operatorname {c o d} (f)}. \\ \end{array}
+\begin{array}{l} t \circ x = \leqft(\prod_ {f \in \operatorname {M o r} (J)} p _ {\operatorname {c o d} (f)}\right) \circ x \\ = \prod_ {f \in \operatorname {M o r} (J)} \leqft(p _ {\operatorname {c o d} (f)} \circ x\right) \\ = \prod_ {f \in \operatorname {M o r} (J)} x _ {\operatorname {c o d} (f)}. \\ \end{array}
 $$
 
 Line 2 is derived from the fact that limits and composition of a morphism commute. Line 3 is obtained directly from the definition of  $x$ , namely  $p_j \circ x = x_j$  with  $j$  replaced by  $\operatorname{cod}(f)$ .
@@ -3059,7 +3059,7 @@ are considered as discrete categories. We assume existence of products. We have 
 We reindex the base with  $\operatorname{Mor}(J)$ .
 
 $$
-\operatorname {c o d} \left(1 _ {1}\right) = 1, \quad \operatorname {c o d} \left(1 _ {2}\right) = \operatorname {c o d} (f) = 2
+\operatorname {c o d} \leqft(1 _ {1}\right) = 1, \quad \operatorname {c o d} \leqft(1 _ {2}\right) = \operatorname {c o d} (f) = 2
 $$
 
 Projections indexed by  $\operatorname{Mor}(J)$  are  $\mu$ 's below.
@@ -3188,8 +3188,8 @@ The correspondence is found in the following way.
 
 - On the left side, list out all the pair from  $F(1) \times F(2)$ . Note that  $F(1)$  and  $F(2)$  are indexed by 1 and 2.  
 - On the right side, prepare three columns that are indexed by  $1_{1}, 1_{2}$ , and  $f$ . Now, we have totally five columns indexed by  $1, 2, 1_{1}, 1_{2}, f$  from left.  
-- Copy column  $1 = \operatorname{cod}\left( {1}_{1}\right)$  (the first column from left) to column  ${1}_{1}$  (the third column from left).  
-- Copy column  $2 = \operatorname{cod}\left( {1}_{2}\right)$  (the second column from left) to column  ${1}_{2}$  (the forth column from left).  
+- Copy column  $1 = \operatorname{cod}\leqft( {1}_{1}\right)$  (the first column from left) to column  ${1}_{1}$  (the third column from left).  
+- Copy column  $2 = \operatorname{cod}\leqft( {1}_{2}\right)$  (the second column from left) to column  ${1}_{2}$  (the forth column from left).  
 - Copy column  $2 = \operatorname{cod}(f)$  (the second column from left) to column  $f$  (the right-most column).
 
 Construction of  $s$  needs some detour.
@@ -3370,7 +3370,7 @@ Let  $\mathcal{A}$  be a category that has coequalizers, and  $J$  be an index c
 from a diagram  $F \circ \operatorname{dom} : \operatorname{Mor}(J) \to \mathcal{A}$  of shape  $\operatorname{Mor}(J)$ , namely a coproduct indexed by  $f \in \operatorname{Mor}(J)$ . The data structure is presented as follows.
 
 $$
-\left(F \circ \operatorname {d o m}, \quad \{\pi_ {f} \} _ {f \in \operatorname {M o r} (J)}, \coprod_ {f \in \operatorname {M o r} (J)} F (\operatorname {d o m} (f))\right),
+\leqft(F \circ \operatorname {d o m}, \quad \{\pi_ {f} \} _ {f \in \operatorname {M o r} (J)}, \coprod_ {f \in \operatorname {M o r} (J)} F (\operatorname {d o m} (f))\right),
 $$
 
 where  $\pi_f$  's are coprojections.
@@ -3382,7 +3382,7 @@ Let us consider another cocone from  $F \circ \mathrm{dom}$
 with data structure
 
 $$
-\left(F \circ \operatorname {d o m}, \quad \{p _ {\operatorname {c o d} (f)} \circ F (f) \} _ {f \in \operatorname {M o r} (J)}, \coprod_ {j \in \operatorname {O b j} (J)} F (j)\right),
+\leqft(F \circ \operatorname {d o m}, \quad \{p _ {\operatorname {c o d} (f)} \circ F (f) \} _ {f \in \operatorname {M o r} (J)}, \coprod_ {j \in \operatorname {O b j} (J)} F (j)\right),
 $$
 
 where  $p_j$ 's are coprojections accompanying the coproduct  $\coprod_{j \in \mathrm{Obj}(J)} F(j)$ . These coprojections appear in the form of  $p_{\mathrm{cod}(f)}$  in the diagram. It often happens that  $\operatorname{cod}(f_1) = \operatorname{cod}(f_2)$  for a pair  $f_1 \neq f_2$ . So, the same  $p_{\mathrm{cod}(f)}$  may appear repeatedly in the lower half of the diagram. However, this does not cause any inconvenience since the base of the cocone is indexed by  $f$ . Therefore, there is a unique mediating morphism  $s$
@@ -3402,7 +3402,7 @@ We consider yet another cocone from  $\operatorname{Mor}(J)$ -shaped diagram  $F
 The data structure is given by
 
 $$
-\left(F \circ \operatorname {d o m}, \quad \{p _ {\operatorname {d o m} (f)} \} _ {f \in \operatorname {M o r} (J)}, \coprod_ {j \in \operatorname {O b j} (J)} F (j)\right).
+\leqft(F \circ \operatorname {d o m}, \quad \{p _ {\operatorname {d o m} (f)} \} _ {f \in \operatorname {M o r} (J)}, \coprod_ {j \in \operatorname {O b j} (J)} F (j)\right).
 $$
 
 This cocone has a base indexed by  $f \in \operatorname{Mor}(J)$ . Therefore, there is a unique mediating morphism  $t$ :
@@ -3443,7 +3443,7 @@ $$
 We want to show that  $x \circ s = x \circ t$ . First, we rewrite the LHS.
 
 $$
-\begin{array}{l} x \circ s = x \circ \left(\coprod_ {f \in \operatorname {M o r} (J)} p _ {\operatorname {c o d} (f)} \circ F (f)\right) \\ = \coprod_ {f \in \operatorname {M o r} (J)} \left(x \circ p _ {\operatorname {c o d} (f)} \circ F (f)\right) \\ = \coprod_ {f \in \operatorname {M o r} (J)} \left(x _ {\operatorname {c o d} (f)} \circ F (f)\right) \\ \end{array}
+\begin{array}{l} x \circ s = x \circ \leqft(\coprod_ {f \in \operatorname {M o r} (J)} p _ {\operatorname {c o d} (f)} \circ F (f)\right) \\ = \coprod_ {f \in \operatorname {M o r} (J)} \leqft(x \circ p _ {\operatorname {c o d} (f)} \circ F (f)\right) \\ = \coprod_ {f \in \operatorname {M o r} (J)} \leqft(x _ {\operatorname {c o d} (f)} \circ F (f)\right) \\ \end{array}
 $$
 
 Line 2 is obtained by the exchange of colimit and composition by a morphism. This exchange is not trivial (Proposition 3.6). Line 3 is obtained by the definition of  $x$ , namely  $x \circ p_j = x_j$ , where  $j$  is replaced by  $\operatorname{cod}(f)$ .
@@ -3451,7 +3451,7 @@ Line 2 is obtained by the exchange of colimit and composition by a morphism. Thi
 Next, we rewrite the RHS.
 
 $$
-\begin{array}{l} x \circ t = x \circ \left(\coprod_ {f \in \operatorname {M o r} (J)} p _ {\operatorname {d o m} (f)}\right) \\ = \coprod_ {f \in \operatorname {M o r} (J)} \left(x \circ p _ {\operatorname {d o m} (f)}\right) \\ = \coprod_ {f \in \operatorname {M o r} (J)} x _ {\operatorname {d o m} (f)} \\ \end{array}
+\begin{array}{l} x \circ t = x \circ \leqft(\coprod_ {f \in \operatorname {M o r} (J)} p _ {\operatorname {d o m} (f)}\right) \\ = \coprod_ {f \in \operatorname {M o r} (J)} \leqft(x \circ p _ {\operatorname {d o m} (f)}\right) \\ = \coprod_ {f \in \operatorname {M o r} (J)} x _ {\operatorname {d o m} (f)} \\ \end{array}
 $$
 
 Line 2 is obtained by the exchange of colimit and composition by a morphism. Line 3 is obtained by the definition of  $x$ . Since  $x_{j}$ 's constitute a cocone from  $F$ ,
@@ -3777,7 +3777,7 @@ $$
 A universal cocone if given as
 
 $$
-\left(F, \quad \{\pi \circ \rho_ {j} \} _ {j \in \operatorname {O b j} (J)}, \coprod_ {j \in \operatorname {O b j} (J)} F (j) / \sim\right).
+\leqft(F, \quad \{\pi \circ \rho_ {j} \} _ {j \in \operatorname {O b j} (J)}, \coprod_ {j \in \operatorname {O b j} (J)} F (j) / \sim\right).
 $$
 
 # Functors and Limits
@@ -3916,7 +3916,7 @@ $$
 - We define a functor  $\mathcal{A}^{\mathrm{op}} \times [J, \mathcal{A}] \to \mathbf{Set}$  that creates a  $J$ -shaped diagram first, and then applies the limit functor as follows:
 
 $$
-\mathcal {A} ^ {\mathrm {o p}} \times [ J, \mathcal {A} ] \xrightarrow {\lim  _ {\leftarrow}} [ J, \mathbf {S e t} ] \xrightarrow {\underset {\leftarrow} {\lim  }} \mathbf {S e t}
+\mathcal {A} ^ {\mathrm {o p}} \times [ J, \mathcal {A} ] \xrightarrow {\lim  _ {\leqftarrow}} [ J, \mathbf {S e t} ] \xrightarrow {\underset {\leqftarrow} {\lim  }} \mathbf {S e t}
 $$
 
 $$
@@ -3956,7 +3956,7 @@ $$
 where  $\mathrm{const}_{p_j}$  is a function from a singleton set  $\{*\}$  to  $\mathcal{A}(A, D(j))$  that has a single value  $p_j$ . The data representation of this cone is
 
 $$
-\left(\{\ast \}, \left\{\operatorname {c o n s t} _ {p _ {j}} \right\} _ {j \in \operatorname {O b j} (J)}, \mathcal {A} (A, -) \circ D\right).
+\leqft(\{\ast \}, \leqft\{\operatorname {c o n s t} _ {p _ {j}} \right\} _ {j \in \operatorname {O b j} (J)}, \mathcal {A} (A, -) \circ D\right).
 $$
 
 Such a cone is in one-to-one correspondence with  $(\{p_j\}, D)$ , an element of Cones  $(A, D)$ . Thus, we have
@@ -4065,13 +4065,13 @@ $$
 $$
 
 $$
-x = \qquad p _ {j} \underset {\text {c o n s t} _ {p _ {j}} \text {c o n s t} _ {p _ {k}}} {\underset {\text {c o n s t} _ {p _ {k}}} {\leftarrow}} p _ {k},
+x = \qquad p _ {j} \underset {\text {c o n s t} _ {p _ {j}} \text {c o n s t} _ {p _ {k}}} {\underset {\text {c o n s t} _ {p _ {k}}} {\leqftarrow}} p _ {k},
 $$
 
 where  $\mathrm{const}_{p_j}$  is a function from a singleton set  $\{*\}$  to  $\mathcal{A}(D(j), A)$  that has a single value  $p_j$ . The data representation of this  $J^{\mathrm{op}}$ -shaped cone is
 
 $$
-\left(\{\ast \}, \left. \operatorname {c o n s t} _ {p _ {j}} \right\} _ {j \in \mathrm {O b j} (J)}, \mathcal {A} (-, A) \circ D\right).
+\leqft(\{\ast \}, \leqft. \operatorname {c o n s t} _ {p _ {j}} \right\} _ {j \in \mathrm {O b j} (J)}, \mathcal {A} (-, A) \circ D\right).
 $$
 
 Such a cone is in one-to-one correspondence with  $(D, \{p_j\})$ , an element of Cones  $(D, A)$ . Thus, we have
@@ -4743,7 +4743,7 @@ In this diagram, the triangle, square, and consequently trapezoid standing on it
 We want to show that such a morphism  $h$  is unique. Note that when we apply functor  $U$  to morphism  $h$ , we can distribute  $U$  over the composition  $\circ$ , namely
 
 $$
-U h = U \left(\varepsilon_ {A} \circ F f\right) = U \left(\varepsilon_ {A}\right) \circ U (F f) = U \varepsilon_ {A} \circ U F f.
+U h = U \leqft(\varepsilon_ {A} \circ F f\right) = U \leqft(\varepsilon_ {A}\right) \circ U (F f) = U \varepsilon_ {A} \circ U F f.
 $$
 
 Suppose we have another  $h' : FX \to A$  such that  $Uh \circ \eta_X = Uh' \circ \eta_X$ . Let us draw a square of natural transformation  $\varepsilon$  with a triangle that fit to the square.
@@ -4787,7 +4787,7 @@ Suppose we have another  $f': X \to UA$  such that  $\varepsilon_X \circ Ff = \v
 This gives
 
 $$
-f ^ {\prime} = f = U \left(\varepsilon_ {A} \circ F f ^ {\prime} = \varepsilon_ {A} \circ F f\right).
+f ^ {\prime} = f = U \leqft(\varepsilon_ {A} \circ F f ^ {\prime} = \varepsilon_ {A} \circ F f\right).
 $$
 
 ![](images/cdf279e301ce11f18b0d6a8911c5f1e59f4a9da009472c61bff6c319370880c3.jpg)
@@ -4988,7 +4988,7 @@ where the dashed morphism  $U(\eta_{X^{\prime}}\circ f)^{\sharp}$  is uniquely d
 We are tempted to define a function on morphisms as follows. From now on we write  $F$  instead of  $F_0$ .
 
 $$
-F f = \left(\eta_ {X ^ {\prime}} \circ f\right) ^ {\sharp}.
+F f = \leqft(\eta_ {X ^ {\prime}} \circ f\right) ^ {\sharp}.
 $$
 
 We must ask ourselves if this assignment complies with the functor axioms. Two tests must be passed.
@@ -5053,7 +5053,7 @@ Remark 5.1 In Set, monomorphism=injection. We use the same notation in Definitio
 A function  $f: A \to B$  is called an injection if the following condition holds:
 
 $$
-\forall a, a ^ {\prime} \in A. i f f (a) = f \left(a ^ {\prime}\right) t h e n a = a ^ {\prime}.
+\forall a, a ^ {\prime} \in A. i f f (a) = f \leqft(a ^ {\prime}\right) t h e n a = a ^ {\prime}.
 $$
 
 Suppose  $f$  is an injection. If  $f \circ g = f \circ g'$ , then  $f(g(c)) = f(g'(c))$  for all  $c \in C$ . Since  $f$  is injective, we have  $g(c) = g'(c)$  for all  $c \in C$ . We can conclude that  $g = g'$  and thus  $f$  is monic.
@@ -5093,7 +5093,7 @@ $$
 Let  $C' = \{1, 2\} \sqcup C$ . We define two functions  $\bar{g}, \bar{g}' : B \to C'$  as follows.
 
 $$
-\begin{array}{l} \bar {g} (x) = \left\{ \begin{array}{l l} 1 & (x = b) \\ g (x) & (x \neq b) \end{array} \right. \\ \bar {g ^ {\prime}} (x) = \left\{ \begin{array}{l l} 2 & (x = b) \\ g ^ {\prime} (x) & (x \neq b) \end{array} \right. \\ \end{array}
+\begin{array}{l} \bar {g} (x) = \leqft\{ \begin{array}{l l} 1 & (x = b) \\ g (x) & (x \neq b) \end{array} \right. \\ \bar {g ^ {\prime}} (x) = \leqft\{ \begin{array}{l l} 2 & (x = b) \\ g ^ {\prime} (x) & (x \neq b) \end{array} \right. \\ \end{array}
 $$
 
 We have  $\bar{g} \circ f = \bar{g}' \circ f$  but  $\bar{g} \neq \bar{g}'$ . This contradicts the assumption that  $f$  is an epimorphism. Therefore,  $f$  must be surjective.
@@ -5262,7 +5262,7 @@ The situation is concisely described by the following diagram.
 The square on the right is commutative due to the natural transformation  $\alpha$ . The triangle below commutes since it is just a composition of morphisms. We show the triangle on the left commutes as follows.
 
 $$
-\begin{array}{l} (f \circ x) ^ {\sharp} = U ^ {- 1} (f \circ x \circ \alpha_ {X ^ {\prime}} ^ {- 1}) \\ = U ^ {- 1} \left(f \circ \alpha_ {X} ^ {- 1} \circ U F x\right) \\ = U ^ {- 1} \left(f \circ \alpha_ {X} ^ {- 1}\right) \circ U ^ {- 1} (U F x) \\ = f ^ {\sharp} \circ F x \\ \end{array}
+\begin{array}{l} (f \circ x) ^ {\sharp} = U ^ {- 1} (f \circ x \circ \alpha_ {X ^ {\prime}} ^ {- 1}) \\ = U ^ {- 1} \leqft(f \circ \alpha_ {X} ^ {- 1} \circ U F x\right) \\ = U ^ {- 1} \leqft(f \circ \alpha_ {X} ^ {- 1}\right) \circ U ^ {- 1} (U F x) \\ = f ^ {\sharp} \circ F x \\ \end{array}
 $$
 
 Thus, we established naturality in  $X$ .
@@ -5378,7 +5378,7 @@ $$
 since  $F(1_X) = 1_{FX}$ , which shows
 
 $$
-\mathcal {A} (F -, -) \left(1 _ {X}, 1 _ {A}\right) = 1 _ {\mathcal {A} \left(F X, A\right)}.
+\mathcal {A} (F -, -) \leqft(1 _ {X}, 1 _ {A}\right) = 1 _ {\mathcal {A} \leqft(F X, A\right)}.
 $$
 
 Next, we check if the following triangle commutes:
@@ -5420,7 +5420,7 @@ $$
 We want to send this morphism to a function in a way
 
 $$
-(x, a) \stackrel {{\mathcal {X} (-, U -)}} {{\longmapsto}} \left( \begin{array}{c} \mathcal {X} (X, U A) \longrightarrow \mathcal {X} (X ^ {\prime}, U A ^ {\prime}) \\ f \longmapsto U a \circ f \circ x \end{array} \right)
+(x, a) \stackrel {{\mathcal {X} (-, U -)}} {{\longmapsto}} \leqft( \begin{array}{c} \mathcal {X} (X, U A) \longrightarrow \mathcal {X} (X ^ {\prime}, U A ^ {\prime}) \\ f \longmapsto U a \circ f \circ x \end{array} \right)
 $$
 
 Identity morphisms are mapped to identity morphisms. We apply  $\mathcal{X}(-, U-)$  to the triangle 5.17 to get the following:
@@ -6015,7 +6015,7 @@ In what follows, we use uppercase letters for type variables outside the code so
 Lines 26-28 define the  $(-)^{\sharp}$  function.
 
 $$
-\begin{array}{l} \text {s h a r p}:: \left(a - > T v b\right) - > \left(T v a - > T v b\right) \\ \text {s h a r p f m} = \\ T (\backslash b ^ {\prime} \rightarrow u n T m (\backslash a \rightarrow u n T (f a) b ^ {\prime})) \\ \end{array}
+\begin{array}{l} \text {s h a r p}:: \leqft(a - > T v b\right) - > \leqft(T v a - > T v b\right) \\ \text {s h a r p f m} = \\ T (\backslash b ^ {\prime} \rightarrow u n T m (\backslash a \rightarrow u n T (f a) b ^ {\prime})) \\ \end{array}
 $$
 
 The construction looks a little bit clumsy. However, we can deduce the implementation in a straight forward manner. First, analyze the signature of sharp.
@@ -6269,7 +6269,7 @@ Given a Kleisli triple, we can construct a Monad.
 Theorem 6.1 Let  $\mathcal{C}$  and  $T: \mathcal{C} \to \mathcal{C}$  be a category and endofunctor. Given a Kleisli triple  $(T, \eta, (-)^{\sharp})$ , we set
 
 $$
-\mu_ {A} = \left(1 _ {T A}\right) ^ {\sharp}: T (T A) \rightarrow T A. \tag {6.1}
+\mu_ {A} = \leqft(1 _ {T A}\right) ^ {\sharp}: T (T A) \rightarrow T A. \tag {6.1}
 $$
 
 Then,  $\mu : T \circ T \to T$  is a natural transformation, and a triple  $(T, \eta, \mu)$  is a Monad.
@@ -6289,13 +6289,13 @@ Proof We first show that the family of morphisms  $\{\mu_A = 1_{TA}^\sharp \mid 
 Iterate rewriting as follows. We consider a path that starts with  $T^2 A$ , goes down, and goes down-right:
 
 $$
-\begin{array}{l} 1 _ {T B} ^ {\sharp} \circ (T (T f)) \\ = 1 _ {T B} ^ {\sharp} \circ (\eta_ {T B} \circ (\eta_ {B} \circ f) ^ {\sharp}) ^ {\sharp} \quad \text {t w i c e r e p l a c i n g T w i t h \sharp} \\ = \left(1 _ {T B} ^ {\sharp} \circ \eta_ {T B} \circ (\eta_ {B} \circ f) ^ {\sharp}\right) ^ {\sharp} \quad \text {C o n d i t i o n (3) f o r} \sharp \\ = \left(1 _ {T B} \circ (\eta_ {B} \circ f) ^ {\sharp}\right) ^ {\sharp} \quad \text {C o n d i t i o n (1) f o r} \sharp \\ = (\eta_ {B} \circ f) ^ {\sharp \sharp} \quad \text {o m i t t i n g t h e i d e n t i t y} \\ \end{array}
+\begin{array}{l} 1 _ {T B} ^ {\sharp} \circ (T (T f)) \\ = 1 _ {T B} ^ {\sharp} \circ (\eta_ {T B} \circ (\eta_ {B} \circ f) ^ {\sharp}) ^ {\sharp} \quad \text {t w i c e r e p l a c i n g T w i t h \sharp} \\ = \leqft(1 _ {T B} ^ {\sharp} \circ \eta_ {T B} \circ (\eta_ {B} \circ f) ^ {\sharp}\right) ^ {\sharp} \quad \text {C o n d i t i o n (3) f o r} \sharp \\ = \leqft(1 _ {T B} \circ (\eta_ {B} \circ f) ^ {\sharp}\right) ^ {\sharp} \quad \text {C o n d i t i o n (1) f o r} \sharp \\ = (\eta_ {B} \circ f) ^ {\sharp \sharp} \quad \text {o m i t t i n g t h e i d e n t i t y} \\ \end{array}
 $$
 
 Next, we consider a path that starts with  $T^2 A$ , goes up-right, and goes down:
 
 $$
-\begin{array}{l} T f \circ 1 _ {T A} ^ {\sharp} \\ = (\eta_ {B} \circ f) ^ {\sharp} \circ 1 _ {T A} ^ {\sharp} \quad \text {r e p l a c i n g T w i t h \sharp} \\ = \left(\left(\eta_ {B} \circ f\right) ^ {\sharp} \circ 1 _ {T A}\right) ^ {\sharp} \quad \text {C o n d i t i o n (3) f o r \sharp} \\ = (\eta_ {B} \circ f) ^ {\sharp \sharp} \quad \text {o m i t t i n g t h e i d e n t i t y} \\ \end{array}
+\begin{array}{l} T f \circ 1 _ {T A} ^ {\sharp} \\ = (\eta_ {B} \circ f) ^ {\sharp} \circ 1 _ {T A} ^ {\sharp} \quad \text {r e p l a c i n g T w i t h \sharp} \\ = \leqft(\leqft(\eta_ {B} \circ f\right) ^ {\sharp} \circ 1 _ {T A}\right) ^ {\sharp} \quad \text {C o n d i t i o n (3) f o r \sharp} \\ = (\eta_ {B} \circ f) ^ {\sharp \sharp} \quad \text {o m i t t i n g t h e i d e n t i t y} \\ \end{array}
 $$
 
 This establishes the naturality of  $\mu$  defined via  $\mu_A = 1_{TA}^\sharp$ .
@@ -6309,7 +6309,7 @@ What remains to show is that  $\mu_A = 1_{TA}^\sharp$  satisfies the three equat
 Iterate rewriting as follows.
 
 $$
-\begin{array}{l} 1 _ {T A} ^ {\sharp} \circ T \eta_ {A} \\ = 1 _ {T _ {A}} ^ {\sharp} \circ (\eta_ {T A} \circ \eta_ {A}) ^ {\sharp} \quad \text {r e p l a c e} T \text {w i t h} \sharp (*) \\ = (1 _ {T A} ^ {\sharp} \circ \eta_ {T A} \circ \eta_ {A}) ^ {\sharp} \quad \text {C o n d i t i o n (3) f o r \sharp} \\ = \left(1 _ {T A} \circ \eta_ {A}\right) ^ {\sharp} \quad \text {C o n d i t i o n (2) f o r \sharp (* *)} \\ = \eta_ {A} ^ {\sharp} \quad \text {o m i t t i n g t h e i d e n t i t y} \\ = 1 _ {T A} \quad \text {C o n d i t i o n (2) f o r \sharp} \\ \end{array}
+\begin{array}{l} 1 _ {T A} ^ {\sharp} \circ T \eta_ {A} \\ = 1 _ {T _ {A}} ^ {\sharp} \circ (\eta_ {T A} \circ \eta_ {A}) ^ {\sharp} \quad \text {r e p l a c e} T \text {w i t h} \sharp (*) \\ = (1 _ {T A} ^ {\sharp} \circ \eta_ {T A} \circ \eta_ {A}) ^ {\sharp} \quad \text {C o n d i t i o n (3) f o r \sharp} \\ = \leqft(1 _ {T A} \circ \eta_ {A}\right) ^ {\sharp} \quad \text {C o n d i t i o n (2) f o r \sharp (* *)} \\ = \eta_ {A} ^ {\sharp} \quad \text {o m i t t i n g t h e i d e n t i t y} \\ = 1 _ {T A} \quad \text {C o n d i t i o n (2) f o r \sharp} \\ \end{array}
 $$
 
 Take a careful look at the diagram
@@ -6351,7 +6351,7 @@ $$
 Next, we compute the path right-down.
 
 $$
-\begin{array}{l} 1 _ {T A} ^ {\sharp} \circ T (1 _ {T A} ^ {\sharp}) \\ = 1 _ {T A} ^ {\sharp} \circ (\eta_ {T A} \circ 1 _ {T A} ^ {\sharp}) ^ {\sharp} \quad T \text {i s r e p l a c e d b y \sharp} \\ = \left(1 _ {T A} ^ {\sharp} \circ \eta_ {T A} \circ 1 _ {T A} ^ {\sharp}\right) ^ {\sharp} \quad \text {f o r m u l a} (g ^ {\sharp} \circ f) ^ {\sharp} = g ^ {\sharp} \circ f ^ {\sharp} \\ = \left(1 _ {T A} \circ 1 _ {T A} ^ {\sharp}\right) ^ {\sharp} \quad \text {f o r m u l a} f ^ {\sharp} \circ \eta_ {-} = f \\ = 1 _ {T A} ^ {\text {印}} \quad \text {o m i t t i n g} 1 _ {T A} \\ \end{array}
+\begin{array}{l} 1 _ {T A} ^ {\sharp} \circ T (1 _ {T A} ^ {\sharp}) \\ = 1 _ {T A} ^ {\sharp} \circ (\eta_ {T A} \circ 1 _ {T A} ^ {\sharp}) ^ {\sharp} \quad T \text {i s r e p l a c e d b y \sharp} \\ = \leqft(1 _ {T A} ^ {\sharp} \circ \eta_ {T A} \circ 1 _ {T A} ^ {\sharp}\right) ^ {\sharp} \quad \text {f o r m u l a} (g ^ {\sharp} \circ f) ^ {\sharp} = g ^ {\sharp} \circ f ^ {\sharp} \\ = \leqft(1 _ {T A} \circ 1 _ {T A} ^ {\sharp}\right) ^ {\sharp} \quad \text {f o r m u l a} f ^ {\sharp} \circ \eta_ {-} = f \\ = 1 _ {T A} ^ {\text {印}} \quad \text {o m i t t i n g} 1 _ {T A} \\ \end{array}
 $$
 
 Rewriting the first line to the second is inspired by the following commutative diagram, where morphism  $T(1_{TA}^{\sharp})$  appears at the top edge.
@@ -6439,7 +6439,7 @@ $$
 Since  $T$  is a functor, we can rewrite the subexpression of the RHS as follows.
 
 $$
-T \left(\mu_ {C} \circ T g \circ f\right) = T \mu_ {C} \circ T ^ {2} g \circ T f
+T \leqft(\mu_ {C} \circ T g \circ f\right) = T \mu_ {C} \circ T ^ {2} g \circ T f
 $$
 
 The whole RHS becomes
@@ -7331,7 +7331,7 @@ where map is the same as those that have the same name in various programming la
 We consider the composite  $FU: \mathbf{Mon} \to \mathbf{Mon}$ . Starting with a monoid  $(A, \bullet_A, 1_A)$ , the object function sends it to  $UA$ , the underlying set of the monoid  $A$ . We further apply  $F$  to  $UA$  to get  $FUA$  which is a free monoid on  $UA$ . An element of  $FUA$  is a list of elements in  $A$ . The binary operation is the concatenation of lists. Let  $[a_1, \dots, c_m]$  and  $[b_1, \dots, b_n]$  be a list of elements of  $A$ , which is, as stated above, elements of the monoid  $FUA$ . We have
 
 $$
-\left[ a _ {1}, \dots , a _ {m} \right] \bullet_ {F U A} \left[ b _ {1}, \dots , b _ {n} \right] = \left[ a _ {1}, \dots , c _ {m}, b _ {1}, \dots , b _ {n} \right]
+\leqft[ a _ {1}, \dots , a _ {m} \right] \bullet_ {F U A} \leqft[ b _ {1}, \dots , b _ {n} \right] = \leqft[ a _ {1}, \dots , c _ {m}, b _ {1}, \dots , b _ {n} \right]
 $$
 
 and
@@ -7383,7 +7383,7 @@ $$
 We forget the monoid structure by operating  $U$ . We have
 
 $$
-\begin{array}{l} U \varepsilon_ {A}: U F U A \rightarrow U A \\ \left[ x _ {1}, \dots , x _ {n} \right] \mapsto x _ {1} \dots x _ {n} \\ \end{array}
+\begin{array}{l} U \varepsilon_ {A}: U F U A \rightarrow U A \\ \leqft[ x _ {1}, \dots , x _ {n} \right] \mapsto x _ {1} \dots x _ {n} \\ \end{array}
 $$
 
 Compose them to obtain
@@ -7664,7 +7664,7 @@ $$
 We extend this correspondence to a function on morphisms in a unique way. For any morphism  $f: A'' \to A'$  of  $\mathcal{A}$ , we define a mapping  $H_A(f)$  as follows:
 
 $$
-H _ {A} (f) = \mathscr {A} (f, A): \quad \mathscr {A} \left(A ^ {\prime}, A\right) \longrightarrow \mathscr {A} \left(A ^ {\prime \prime}, A\right).
+H _ {A} (f) = \mathscr {A} (f, A): \quad \mathscr {A} \leqft(A ^ {\prime}, A\right) \longrightarrow \mathscr {A} \leqft(A ^ {\prime \prime}, A\right).
 $$
 
 $$
@@ -7682,7 +7682,7 @@ The situation is depicted in Fig. 7.5.
 Remark 7.2 We sometimes write  $-\circ f$  instead of  $H_A(f)$ . In a lambda expression, we may write as follows:
 
 $$
-H _ {A} (f) = \lambda g \in \mathscr {A} \left(A ^ {\prime}, A\right). g \circ f
+H _ {A} (f) = \lambda g \in \mathscr {A} \leqft(A ^ {\prime}, A\right). g \circ f
 $$
 
 Definition 7.5 Let  $\mathcal{A}$  be a locally small category. Let  $X:\mathcal{A}^{\mathrm{op}}\to \mathbf{Set}$  be a contravariant functor. If the functor  $X$  is naturally isomorphic to  $H_{A}$  for some  $A\in \operatorname {Obj}(\mathcal{A})$ , we say  $X$  is representable. A representation of  $X$  is a pair  $(A,\phi)$
@@ -7701,7 +7701,7 @@ Contravariant functor  $H_A: \mathcal{A}^{\mathrm{op}} \to \mathbf{Set}$  is aut
 Example 7.2 We consider a contravariant functor  $\mathcal{P}:\mathbf{Set}^{\mathrm{op}}\to \mathbf{Set}$ . Function on objects sends a set  $X$  to its power set  $\mathcal{P}(X)$ . Function on morphisms sends a morphism  $f:X^{\prime}\rightarrow X$  to
 
 $$
-\mathscr {P} (f): \quad \mathscr {P} (X) \longrightarrow \mathscr {P} \left(X ^ {\prime}\right)
+\mathscr {P} (f): \quad \mathscr {P} (X) \longrightarrow \mathscr {P} \leqft(X ^ {\prime}\right)
 $$
 
 $$
@@ -7743,7 +7743,7 @@ $$
 The  $B$  component  $(H_{f})_{B}$  is given by
 
 $$
-\begin{array}{l} H _ {-} (f) _ {B} = \left(H _ {f}\right) _ {B}: \quad H _ {A} (B) \longrightarrow H _ {A ^ {\prime}} (B). \\ g \longmapsto f \circ g \\ \end{array}
+\begin{array}{l} H _ {-} (f) _ {B} = \leqft(H _ {f}\right) _ {B}: \quad H _ {A} (B) \longrightarrow H _ {A ^ {\prime}} (B). \\ g \longmapsto f \circ g \\ \end{array}
 $$
 
 We can write it in the lambda expression like
@@ -7778,7 +7778,7 @@ Let us observe a resonance caused by a natural transformation  $\alpha : H^A \to
 - Let  $f$  be any element of  $H^{A}(A')$ . This  $f$  is, at the same time, a morphism  $f: A \to A'$ . Therefore, functor  $H^{A}$  sends  $f$  to
 
 $$
-H ^ {A} (f): H ^ {A} (A) \to H ^ {A} \left(A ^ {\prime}\right),
+H ^ {A} (f): H ^ {A} (A) \to H ^ {A} \leqft(A ^ {\prime}\right),
 $$
 
 which is a mapping between sets.
@@ -7905,7 +7905,7 @@ $$
 We transform the LHS step by step as follows:
 
 $$
-\begin{array}{l} (\alpha \circ H ^ {f}) _ {A ^ {\prime}} (1 _ {A ^ {\prime}}) \\ = \alpha_ {A ^ {\prime}} \left(\left(H ^ {f}\right) _ {A ^ {\prime}} \left(1 _ {A ^ {\prime}}\right)\right) \\ = \alpha_ {A ^ {\prime}} \left(1 _ {A ^ {\prime}} \circ f\right) \\ = \alpha_ {A ^ {\prime}} (f). \\ \end{array}
+\begin{array}{l} (\alpha \circ H ^ {f}) _ {A ^ {\prime}} (1 _ {A ^ {\prime}}) \\ = \alpha_ {A ^ {\prime}} \leqft(\leqft(H ^ {f}\right) _ {A ^ {\prime}} \leqft(1 _ {A ^ {\prime}}\right)\right) \\ = \alpha_ {A ^ {\prime}} \leqft(1 _ {A ^ {\prime}} \circ f\right) \\ = \alpha_ {A ^ {\prime}} (f). \\ \end{array}
 $$
 
 ![](images/56e2d347315b200e0cfd6856df044a973703c3aebc1ef01b1f34af11a273df0b.jpg)  
@@ -7952,7 +7952,7 @@ We fixed an object  $A$  of a category  $\mathcal{A}$  and defined a contravaria
 - Let  $f$  be any element of  $H_A(A')$ . This  $f$  is, at the same time, a morphism  $f: A' \to A$ . Therefore, contravariant functor  $H_A$  sends  $f$  to
 
 $$
-H _ {A} (f): H _ {A} (A) \rightarrow H _ {A} \left(A ^ {\prime}\right),
+H _ {A} (f): H _ {A} (A) \rightarrow H _ {A} \leqft(A ^ {\prime}\right),
 $$
 
 which is a mapping between sets.
@@ -8020,7 +8020,7 @@ namely,  $\theta \mapsto (\theta \circ -)$
 We have to check if the functor really preserves the composition of morphisms:
 
 $$
-\left(\theta^ {\prime} \circ \theta\right) \circ - = \left(\theta^ {\prime} \circ -\right) \circ \left(\theta \circ -\right)
+\leqft(\theta^ {\prime} \circ \theta\right) \circ - = \leqft(\theta^ {\prime} \circ -\right) \circ \leqft(\theta \circ -\right)
 $$
 
 which can be easily seen by the following diagram:
@@ -8054,7 +8054,7 @@ $$
 which is actually a natural transformation between functors  $X$  and  $X'$ , we can simply take  $\theta \mapsto \theta_A$ . Composition of morphisms  $\theta : X \to X'$  and  $\theta': X' \to X''$  is given by
 
 $$
-\begin{array}{c} X \longmapsto X (A) \\ \theta^ {\prime} \circ \theta \left( \begin{array}{c c c} \theta & & \downarrow_ {\theta_ {A}} \\ X ^ {\prime} & & \downarrow_ {\theta_ {A} ^ {\prime}} \\ \theta^ {\prime} & & \downarrow_ {\theta_ {A} ^ {\prime}} \end{array} \right) (\theta^ {\prime} \circ \theta) _ {A} \\ X ^ {\prime \prime} \longmapsto X ^ {\prime \prime} (A), \end{array}
+\begin{array}{c} X \longmapsto X (A) \\ \theta^ {\prime} \circ \theta \leqft( \begin{array}{c c c} \theta & & \downarrow_ {\theta_ {A}} \\ X ^ {\prime} & & \downarrow_ {\theta_ {A} ^ {\prime}} \\ \theta^ {\prime} & & \downarrow_ {\theta_ {A} ^ {\prime}} \end{array} \right) (\theta^ {\prime} \circ \theta) _ {A} \\ X ^ {\prime \prime} \longmapsto X ^ {\prime \prime} (A), \end{array}
 $$
 
 where we have commutative triangles at the left and right sides. This comes from the vertical composition of natural transformations  $\theta$  and  $\theta'$ . Combining the discussion before, we now have
@@ -8076,19 +8076,19 @@ $$
 whose component at  $A$  is given by
 
 $$
-y _ {A} = \left[ \mathcal {A} ^ {\mathrm {o p}}, \operatorname {S e t} \right]\left(H _ {A}, X\right)\rightarrow X (A): \alpha \mapsto \alpha_ {A} \left(1 _ {A}\right)
+y _ {A} = \leqft[ \mathcal {A} ^ {\mathrm {o p}}, \operatorname {S e t} \right]\leqft(H _ {A}, X\right)\rightarrow X (A): \alpha \mapsto \alpha_ {A} \leqft(1 _ {A}\right)
 $$
 
 can be made into a natural transformation. For each morphism  $f: A \to A'$ , we have to show that the two paths from  $\alpha$  to  $X(A')$  in Fig. 7.10 are identical. In other words, we have to show the following equation holds:
 
 $$
-\left(\alpha \circ H _ {f}\right) _ {A ^ {\prime}} \left(1 _ {A ^ {\prime}}\right) = (X f) \left(\alpha_ {A} \left(1 _ {A}\right)\right). \tag {7.1}
+\leqft(\alpha \circ H _ {f}\right) _ {A ^ {\prime}} \leqft(1 _ {A ^ {\prime}}\right) = (X f) \leqft(\alpha_ {A} \leqft(1 _ {A}\right)\right). \tag {7.1}
 $$
 
 We transform the LHS step by step as follows:
 
 $$
-\begin{array}{l} (\alpha \circ H _ {f}) _ {A ^ {\prime}} (1 _ {A ^ {\prime}}) \\ = \alpha_ {A ^ {\prime}} \left(\left(H _ {f}\right) _ {A ^ {\prime}} \left(1 _ {A ^ {\prime}}\right)\right) \\ = \alpha_ {A ^ {\prime}} (f \circ 1 _ {A ^ {\prime}}) \\ = \alpha_ {A ^ {\prime}} (f). \\ \end{array}
+\begin{array}{l} (\alpha \circ H _ {f}) _ {A ^ {\prime}} (1 _ {A ^ {\prime}}) \\ = \alpha_ {A ^ {\prime}} \leqft(\leqft(H _ {f}\right) _ {A ^ {\prime}} \leqft(1 _ {A ^ {\prime}}\right)\right) \\ = \alpha_ {A ^ {\prime}} (f \circ 1 _ {A ^ {\prime}}) \\ = \alpha_ {A ^ {\prime}} (f). \\ \end{array}
 $$
 
 The last expression above is equal to the RHS in Eq. (7.1) since  $\alpha$  is a natural transformation that makes the following square commute:
@@ -8114,7 +8114,7 @@ $$
 whose component at  $X$  is given by
 
 $$
-z _ {X} = \left[ \mathscr {A} ^ {\mathrm {o p}}, \operatorname {S e t} \right]\left(H _ {A}, X\right)\rightarrow X (A): \alpha \mapsto \alpha_ {A} \left(1 _ {A}\right)
+z _ {X} = \leqft[ \mathscr {A} ^ {\mathrm {o p}}, \operatorname {S e t} \right]\leqft(H _ {A}, X\right)\rightarrow X (A): \alpha \mapsto \alpha_ {A} \leqft(1 _ {A}\right)
 $$
 
 can be made into a natural transformation.
@@ -8458,7 +8458,7 @@ $$
 The Yoneda Lemma 7.4 for contravariant functors gives, by specializing  $X: \mathcal{A}^{\mathrm{op}} \to \mathbf{Set}$  to  $H_{A'}$ , the following equivalence:
 
 $$
-[ \mathcal {A} ^ {\mathrm {o p}}, \mathbf {S e t} ] \left(H _ {A}, H _ {A ^ {\prime}}\right) \simeq \mathcal {A} (A, A ^ {\prime})
+[ \mathcal {A} ^ {\mathrm {o p}}, \mathbf {S e t} ] \leqft(H _ {A}, H _ {A ^ {\prime}}\right) \simeq \mathcal {A} (A, A ^ {\prime})
 $$
 
 These observations lead us to the following theorem.
@@ -8551,13 +8551,13 @@ Definition 8.1 A category  $\mathcal{C}$  is called a monoidal category if it is
 - a family of isomorphisms called the associator
 
 $$
-\alpha = \left\{\alpha_ {X, Y, Z}: X \otimes (Y \otimes Z) \rightarrow (X \otimes Y) \otimes Z \mid X, Y, Z \in \operatorname {O b j} (\mathcal {C}) \right\},
+\alpha = \leqft\{\alpha_ {X, Y, Z}: X \otimes (Y \otimes Z) \rightarrow (X \otimes Y) \otimes Z \mid X, Y, Z \in \operatorname {O b j} (\mathcal {C}) \right\},
 $$
 
 - a family of isomorphisms called the left unitor
 
 $$
-\lambda = \left\{\lambda_ {X}: \mathbb {1} \otimes X \rightarrow X \mid X \in \operatorname {O b j} (\mathcal {C}) \right\},
+\lambda = \leqft\{\lambda_ {X}: \mathbb {1} \otimes X \rightarrow X \mid X \in \operatorname {O b j} (\mathcal {C}) \right\},
 $$
 
 and
@@ -8565,7 +8565,7 @@ and
 - a family of isomorphisms called the right unitor
 
 $$
-\rho = \left\{\rho_ {X}: X \otimes \mathbb {1} \rightarrow X \mid X \in \operatorname {O b j} (\mathcal {C}) \right\},
+\rho = \leqft\{\rho_ {X}: X \otimes \mathbb {1} \rightarrow X \mid X \in \operatorname {O b j} (\mathcal {C}) \right\},
 $$
 
 satisfying the following conditions:
@@ -8699,13 +8699,13 @@ $$
 is a category with the following sets of objects and morphisms. The objects are all  $n$ -tuples
 
 $$
-\left(X _ {1}, X _ {2}, \dots , X _ {n}\right) \text {o r o f t e n w r i t t e n a s} X _ {1} \times X _ {2} \times \dots X _ {n}
+\leqft(X _ {1}, X _ {2}, \dots , X _ {n}\right) \text {o r o f t e n w r i t t e n a s} X _ {1} \times X _ {2} \times \dots X _ {n}
 $$
 
 for  $X_{i}\in \mathrm{Obj}(\mathcal{C})$ . The morphisms are all  $n$ -tuples
 
 $$
-\left(f _ {1}, f _ {2}, \dots , f _ {n}\right) \text {o r o f t e n w r i t t e n a s} f _ {1} \times f _ {2} \times \dots f _ {n}
+\leqft(f _ {1}, f _ {2}, \dots , f _ {n}\right) \text {o r o f t e n w r i t t e n a s} f _ {1} \times f _ {2} \times \dots f _ {n}
 $$
 
 for  $f_{i} \in \mathrm{Mor}(\mathcal{C}_{i})$ . Composition of morphisms is performed componentwise. Componentwise functors can be introduced in an obvious way.
@@ -8769,7 +8769,7 @@ $$
 $$
 
 $$
-\begin{array}{c} (X, Y, Z) \xrightarrow {(- \otimes -) \otimes -} (X \otimes Y) \otimes Z \\ \left( \begin{array}{c} - \otimes (- \otimes -) \\ f, g, h \end{array} \right) \xrightarrow {- \otimes (- \otimes -)} \begin{array}{c} X \otimes (Y \otimes Z) \\ f \otimes (g \otimes h) \\ X ^ {\prime} \otimes (Y ^ {\prime} \otimes Z ^ {\prime}) \\ \alpha_ {X ^ {\prime}, Y ^ {\prime}, Z ^ {\prime}} \end{array} \begin{array}{c} (\alpha_ {X, Y, Z} \\ \bigcirc \\ (f \otimes g) \otimes h \\ (X ^ {\prime}, Y ^ {\prime}, Z ^ {\prime}) \xrightarrow {(- \otimes -) \otimes -} (X ^ {\prime} \otimes Y ^ {\prime}) \otimes Z ^ {\prime} \end{array}
+\begin{array}{c} (X, Y, Z) \xrightarrow {(- \otimes -) \otimes -} (X \otimes Y) \otimes Z \\ \leqft( \begin{array}{c} - \otimes (- \otimes -) \\ f, g, h \end{array} \right) \xrightarrow {- \otimes (- \otimes -)} \begin{array}{c} X \otimes (Y \otimes Z) \\ f \otimes (g \otimes h) \\ X ^ {\prime} \otimes (Y ^ {\prime} \otimes Z ^ {\prime}) \\ \alpha_ {X ^ {\prime}, Y ^ {\prime}, Z ^ {\prime}} \end{array} \begin{array}{c} (\alpha_ {X, Y, Z} \\ \bigcirc \\ (f \otimes g) \otimes h \\ (X ^ {\prime}, Y ^ {\prime}, Z ^ {\prime}) \xrightarrow {(- \otimes -) \otimes -} (X ^ {\prime} \otimes Y ^ {\prime}) \otimes Z ^ {\prime} \end{array}
 $$
 
 The natural transformation  $\lambda$  relates the functor  $\mathbb{1} \otimes -$  and the identity functor  $1_{\mathcal{C}}$  just denoted by  $-$ . See the following diagram. The trapezoid at right commutes for all  $f \in \operatorname{Mor}(\mathcal{C})$ .
@@ -8828,7 +8828,7 @@ $$
 \alpha_ {X _ {1}, X _ {2}, X _ {3}}: X _ {1} \times (X _ {2} \times X _ {3}) \rightarrow (X _ {1} \times X _ {2}) \times X _ {3}.
 $$
 
-We are going to show that the collection  $\left\{\alpha_{X_1,X_2,X_3}\mid X_1,X_2,X_3\in \mathrm{Obj}(\mathcal{C})\right\}$  forms a natural transformation
+We are going to show that the collection  $\leqft\{\alpha_{X_1,X_2,X_3}\mid X_1,X_2,X_3\in \mathrm{Obj}(\mathcal{C})\right\}$  forms a natural transformation
 
 $$
 \alpha : - \times (- \times -) \rightarrow (- \times -) \times -.
@@ -8946,7 +8946,7 @@ $$
 at the morphism  $\rho_{\mathbb{1}}: \mathbb{1} \otimes \mathbb{1} \to \mathbb{1}$  as follows:
 
 $$
-\begin{array}{c} \mathbb {1} \otimes \mathbb {1} \xrightarrow [ ]{(- \otimes Z) \otimes W} ((\mathbb {1} \otimes \mathbb {1}) \otimes Z) \otimes W \\ \rho_ {\mathbb {1}} \left| \begin{array}{c} - \otimes (Z \otimes W) \\ \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad (\mathbb {1} \times \mathbb {1}) \otimes (Z \otimes W) \\ \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad (\rho_ {\mathbb {1}}) \otimes 1 _ {Z}) \otimes 1 _ {W} \\ - \otimes (Z \otimes W) \\ \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \alpha_ {\mathbb {1}, Z, W} \\ | & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\
+\begin{array}{c} \mathbb {1} \otimes \mathbb {1} \xrightarrow [ ]{(- \otimes Z) \otimes W} ((\mathbb {1} \otimes \mathbb {1}) \otimes Z) \otimes W \\ \rho_ {\mathbb {1}} \leqft| \begin{array}{c} - \otimes (Z \otimes W) \\ \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad (\mathbb {1} \times \mathbb {1}) \otimes (Z \otimes W) \\ \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad (\rho_ {\mathbb {1}}) \otimes 1 _ {Z}) \otimes 1 _ {W} \\ - \otimes (Z \otimes W) \\ \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \alpha_ {\mathbb {1}, Z, W} \\ | & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\ & | \\
 $$
 
 The trapezoid at right is the quadrilateral ②.
@@ -9404,7 +9404,7 @@ Lemma 8.4 Forward basic arrows always decrease the rank of a word.
 Proof Let  $\nu \otimes (w_1 \otimes w_2)$  be a subword of a binary word in question. If we apply  $\alpha_{u, w_1, w_2}$  to this part of the binary word, the rank of this subword changes while the length being unchanged. So, all we have to do is to compare the ranks of a subword before and after the operation.
 
 $$
-\begin{array}{l} \operatorname {r a n k} (v \otimes \left(w _ {1} \otimes w _ {2}\right)) = \operatorname {r a n k} (v) + \operatorname {r a n k} \left(w _ {1}\right) + \operatorname {r a n k} \left(w _ {2}\right) + \operatorname {l e n} \left(w _ {1}\right) + 2 \times \operatorname {l e n} \left(w _ {2}\right) - 2 \\ \operatorname {r a n k} \left(\left(v \otimes w _ {1}\right) \otimes w _ {2}\right) = \operatorname {r a n k} (v) + \operatorname {r a n k} \left(w _ {1}\right) + \operatorname {r a n k} \left(w _ {2}\right) + \operatorname {l e n} \left(w _ {1}\right) + \operatorname {l e n} \left(w _ {2}\right) - 2 \\ \end{array}
+\begin{array}{l} \operatorname {r a n k} (v \otimes \leqft(w _ {1} \otimes w _ {2}\right)) = \operatorname {r a n k} (v) + \operatorname {r a n k} \leqft(w _ {1}\right) + \operatorname {r a n k} \leqft(w _ {2}\right) + \operatorname {l e n} \leqft(w _ {1}\right) + 2 \times \operatorname {l e n} \leqft(w _ {2}\right) - 2 \\ \operatorname {r a n k} \leqft(\leqft(v \otimes w _ {1}\right) \otimes w _ {2}\right) = \operatorname {r a n k} (v) + \operatorname {r a n k} \leqft(w _ {1}\right) + \operatorname {r a n k} \leqft(w _ {2}\right) + \operatorname {l e n} \leqft(w _ {1}\right) + \operatorname {l e n} \leqft(w _ {2}\right) - 2 \\ \end{array}
 $$
 
 Since the length of  $w_{2}$  is not zero, the lemma holds.
@@ -9456,7 +9456,7 @@ This is a desired diamond.
 (Case 2) Let  $\nu = u\otimes (s\otimes t)$ . Let  $\beta = \alpha_{u,s,t}$  and  $\gamma = \gamma^{\prime}\otimes 1_{s\otimes t}$ . We have the following diagram:
 
 $$
-\begin{array}{c} u \otimes (s \otimes t) \\ \stackrel {{\alpha_ {u, s, t}}} {{\leftarrow}} \\ (u \otimes s) \otimes t \\ \stackrel {{(\gamma^ {\prime} \otimes 1 _ {s}) \otimes 1 _ {t}}} {{\leftarrow}} \\ (u ^ {\prime} \otimes s) \otimes t \end{array} \stackrel {{\gamma^ {\prime} \otimes 1 _ {s \otimes t}}} {{\leftarrow}} u ^ {\prime} \otimes (s \otimes t)
+\begin{array}{c} u \otimes (s \otimes t) \\ \stackrel {{\alpha_ {u, s, t}}} {{\leqftarrow}} \\ (u \otimes s) \otimes t \\ \stackrel {{(\gamma^ {\prime} \otimes 1 _ {s}) \otimes 1 _ {t}}} {{\leqftarrow}} \\ (u ^ {\prime} \otimes s) \otimes t \end{array} \stackrel {{\gamma^ {\prime} \otimes 1 _ {s \otimes t}}} {{\leqftarrow}} u ^ {\prime} \otimes (s \otimes t)
 $$
 
 This diagram commutes since  $\alpha$  is a natural isomorphism between the functors  $-\otimes (-\otimes -)$  and  $(- \otimes -) \otimes -$  as follows:
@@ -9534,13 +9534,13 @@ $$
 Example 8.5 Let  $w = ((a \otimes a) \otimes a) \otimes (a \otimes a)$ . The corresponding functor is given by
 
 $$
-w _ {\mathcal {C}} = \left(\left(\operatorname {I d} _ {\mathcal {C}} \otimes \operatorname {I d} _ {\mathcal {C}}\right) \otimes \operatorname {I d} _ {\mathcal {C}}\right) \otimes \left(\operatorname {I d} _ {\mathcal {C}} \otimes \operatorname {I d} _ {\mathcal {C}}\right).
+w _ {\mathcal {C}} = \leqft(\leqft(\operatorname {I d} _ {\mathcal {C}} \otimes \operatorname {I d} _ {\mathcal {C}}\right) \otimes \operatorname {I d} _ {\mathcal {C}}\right) \otimes \leqft(\operatorname {I d} _ {\mathcal {C}} \otimes \operatorname {I d} _ {\mathcal {C}}\right).
 $$
 
 Let  $(X_{1},X_{2},X_{3},X_{4},X_{5})\in \mathrm{Obj}(\mathcal{C}^{5})$  . Applying the functor  $w_{\mathcal{C}}$  , we get
 
 $$
-\left(\left(X _ {1} \otimes X _ {2}\right) \otimes X _ {3}\right) \otimes \left(X _ {4} \otimes X _ {5}\right).
+\leqft(\leqft(X _ {1} \otimes X _ {2}\right) \otimes X _ {3}\right) \otimes \leqft(X _ {4} \otimes X _ {5}\right).
 $$
 
 Definition 8.9 Let  $\mathcal{C}$  be a monoidal category. We construct another monoidal category  $\operatorname{It}(\mathcal{C})$ . Its objects are all pairs  $(n, T)$ , where  $T: \mathcal{C}^n \to \mathcal{C}$  is a functor. Its morphisms from  $(n, T)$  to  $(n', T')$ , if  $n = n'$ , are all natural transformations  $\gamma: T \to T'$ . There is no morphism from  $(n, T)$  to  $(n, T')$  if  $n \neq n'$ . We often write  $(n, T)$  as  $T$  for short when there can be no confusion.
@@ -9568,21 +9568,21 @@ $$
 is defined componentwise as
 
 $$
-\left(\alpha_ {T, T ^ {\prime}, T ^ {\prime \prime}}\right) _ {X, X ^ {\prime}, X ^ {\prime \prime}} = \alpha_ {T X, T ^ {\prime} X ^ {\prime}, T ^ {\prime \prime} X ^ {\prime \prime}},
+\leqft(\alpha_ {T, T ^ {\prime}, T ^ {\prime \prime}}\right) _ {X, X ^ {\prime}, X ^ {\prime \prime}} = \alpha_ {T X, T ^ {\prime} X ^ {\prime}, T ^ {\prime \prime} X ^ {\prime \prime}},
 $$
 
 where  $X, X'$ , and  $X''$  denote
 
 $$
-X = \left(X _ {1}, X _ {2}, \dots , X _ {n}\right) \in \operatorname {O b j} \left(\mathscr {C} ^ {n}\right),
+X = \leqft(X _ {1}, X _ {2}, \dots , X _ {n}\right) \in \operatorname {O b j} \leqft(\mathscr {C} ^ {n}\right),
 $$
 
 $$
-X ^ {\prime} = \left(X _ {1} ^ {\prime}, X _ {2} ^ {\prime}, \dots , X _ {n ^ {\prime}} ^ {\prime}\right) \in \operatorname {O b j} \left(\mathcal {C} ^ {n ^ {\prime}}\right), \text {a n d}
+X ^ {\prime} = \leqft(X _ {1} ^ {\prime}, X _ {2} ^ {\prime}, \dots , X _ {n ^ {\prime}} ^ {\prime}\right) \in \operatorname {O b j} \leqft(\mathcal {C} ^ {n ^ {\prime}}\right), \text {a n d}
 $$
 
 $$
-X ^ {\prime \prime} = \left(X _ {1} ^ {\prime \prime}, X _ {2} ^ {\prime \prime}, \dots , X _ {n ^ {\prime \prime}} ^ {\prime \prime}\right) \in \operatorname {O b j} \left(\mathcal {C} ^ {n ^ {\prime \prime}}\right),
+X ^ {\prime \prime} = \leqft(X _ {1} ^ {\prime \prime}, X _ {2} ^ {\prime \prime}, \dots , X _ {n ^ {\prime \prime}} ^ {\prime \prime}\right) \in \operatorname {O b j} \leqft(\mathcal {C} ^ {n ^ {\prime \prime}}\right),
 $$
 
 respectively.
@@ -9602,15 +9602,15 @@ Proof Let us begin with the associator  $\alpha$ . For any triplet of natural tr
 To prove this, we just have to confirm commutativity of the component at an arbitrary object  $(X,X^{\prime},X^{\prime \prime})$ , where  $X$ ,  $X^{\prime}$ , and  $X^{\prime \prime}$  denote
 
 $$
-X = \left(X _ {1}, X _ {2}, \dots , X _ {n}\right) \in \operatorname {O b j} \left(\mathcal {C} ^ {n}\right),
+X = \leqft(X _ {1}, X _ {2}, \dots , X _ {n}\right) \in \operatorname {O b j} \leqft(\mathcal {C} ^ {n}\right),
 $$
 
 $$
-X ^ {\prime} = \left(X _ {1} ^ {\prime}, X _ {2} ^ {\prime}, \dots , X _ {n ^ {\prime}} ^ {\prime}\right) \in \operatorname {O b j} \left(\mathcal {C} ^ {n ^ {\prime}}\right), \text {a n d}
+X ^ {\prime} = \leqft(X _ {1} ^ {\prime}, X _ {2} ^ {\prime}, \dots , X _ {n ^ {\prime}} ^ {\prime}\right) \in \operatorname {O b j} \leqft(\mathcal {C} ^ {n ^ {\prime}}\right), \text {a n d}
 $$
 
 $$
-X ^ {\prime \prime} = \left(X _ {1} ^ {\prime \prime}, X _ {2} ^ {\prime \prime}, \dots , X _ {n ^ {\prime \prime}} ^ {\prime \prime}\right) \in \operatorname {O b j} \left(\mathcal {C} ^ {n ^ {\prime \prime}}\right),
+X ^ {\prime \prime} = \leqft(X _ {1} ^ {\prime \prime}, X _ {2} ^ {\prime \prime}, \dots , X _ {n ^ {\prime \prime}} ^ {\prime \prime}\right) \in \operatorname {O b j} \leqft(\mathcal {C} ^ {n ^ {\prime \prime}}\right),
 $$
 
 respectively. The diagram at this component is as follows:
@@ -9626,7 +9626,7 @@ The naturality of the unitor  $\lambda$  requires that, for any  $(n,T),(n,S)$ ,
 To prove this, we just have to confirm commutativity of the component at an arbitrary object
 
 $$
-X = \left(X _ {1}, X _ {2}, \dots , X _ {n}\right) \in \operatorname {O b j} \left(\mathcal {C} ^ {n}\right).
+X = \leqft(X _ {1}, X _ {2}, \dots , X _ {n}\right) \in \operatorname {O b j} \leqft(\mathcal {C} ^ {n}\right).
 $$
 
 Namely,
@@ -9812,7 +9812,7 @@ pure id  $<  * >$  ta  $\equiv$  ta
 Proof We rewrite the LHS step by step.
 
 ```txt
-pure id  $\text{<  >}$  ta -- by definition of pure and  $\text{<  >}$ $= T$  (\s -> let  $(\mathrm{h},\mathrm{s}2) = \mathrm{unT}$  (T  $\left(\backslash \mathrm{s} - > (\mathrm{id},\mathrm{s})\right)$  s  $(\mathbf{a},\mathbf{s}3) = \mathbf{unT}$  ta s2 in (ha,s3)) -- cancel the T/unT pair  $= T$  (\s -> let  $(\mathrm{h},\mathrm{s}2) = (\backslash \mathrm{s} - > (\mathrm{id},\mathrm{s}))$  s  $(\mathbf{a},\mathbf{s}3) = \mathbf{unT}$  ta s2 in (ha,s3)) -- beta reduction   
+pure id  $\text{<  >}$  ta -- by definition of pure and  $\text{<  >}$ $= T$  (\s -> let  $(\mathrm{h},\mathrm{s}2) = \mathrm{unT}$  (T  $\leqft(\backslash \mathrm{s} - > (\mathrm{id},\mathrm{s})\right)$  s  $(\mathbf{a},\mathbf{s}3) = \mathbf{unT}$  ta s2 in (ha,s3)) -- cancel the T/unT pair  $= T$  (\s -> let  $(\mathrm{h},\mathrm{s}2) = (\backslash \mathrm{s} - > (\mathrm{id},\mathrm{s}))$  s  $(\mathbf{a},\mathbf{s}3) = \mathbf{unT}$  ta s2 in (ha,s3)) -- beta reduction   
  $= T$  (\s -> let  $(\mathrm{h},\mathrm{s}2) = (\mathrm{id},\mathrm{s})$ $(\mathbf{a},\mathbf{s}3) = \mathbf{unT}$  ta s2 in (ha,s3)) -- do part of the let expression   
  $= T$  (\s -> let  $(\mathrm{a},\mathrm{s}3) = \mathrm{unT}$  ta s in (a,s3)) -- do another part of the let expression   
  $= T$  (\s -> unT ta s) -- eta conversion   
@@ -9842,7 +9842,7 @@ shift further right pure  $(.)\ll >$  tu  $<  >$  tv -- apply the definition of 
 ```
 
 ```txt
-in  $(\backslash f->\backslash x->u(f x))$  , s2)  $\begin{array}{rl} & {\mathrm{(v,s4)} = \mathrm{unT}\mathrm{tv}\mathrm{s3}}\\ & {\mathrm{in}\quad (\mathrm{h}\mathrm{v},\mathrm{s4})} \end{array}$  -- let s3=s2 and h  $=$ $\backslash \mathbf{f} - >\backslash \mathbf{x} - >\mathbf{u}(\mathbf{f}\mathbf{x}))$  -- beautify  $= T$  (ss->let  $\left(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu ss  $\mathrm{(v,s3)} = \mathrm{unT}$  tv s2 in  $((\backslash f->\backslash x->u(f x))v,s3)$  -- beta reduction in the left part on the (in) expression  $= T$  (ss->let  $\left(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu ss  $\mathrm{(v,s3)} = \mathrm{unT}$  tv s2 in ((x->u(v x)),s3) Complete the calculation of the LHS to the rightmost pure (.)<\*>tu <\*\*>tv <\*\*>tw -- definition of the rightmost <\*\*>  $= T$  (s->let  $\left(\mathrm{h},\mathrm{s}4\right) = \mathrm{unT}$  T (T (ss->let  $\left(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu ss  $(\mathrm{v},\mathrm{s}3) = \mathrm{unT}$  tv s2 in ((x->u(v x)),s3) )s (w,s5)=unT tw s4 in (h w,s5) -- cancel the T/unT pair  $= T$  (s->let  $\left(\mathrm{h},\mathrm{s}4\right) = (\backslash \mathrm{s}s - >1$  let  $\left(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu ss  $(\mathrm{v},\mathrm{s}3) = \mathrm{unT}$  tv s2 in ((x->u(v x)),s3) )s (w,s5)=unT tw s4 in (h w,s5) -- beta reduction  $= T$  (s->let  $\left(\mathrm{h},\mathrm{s}4\right) = \mathrm{let}\quad (\mathrm{u},\mathrm{s}2)\quad = \mathrm{unT}$  tu s  $(\mathrm{v},\mathrm{s}3) = \mathrm{unT}$  tv s2 in ((x->u(v x)),s3) (w,s5)=unT tw s4 in (h w,s5) -- knowing that s4  $= \mathfrak{s}3$  and h  $=$  (x->u(v x))  $= T$  (s->let  $\left(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu s  $(\mathrm{v},\mathrm{s}3) = \mathrm{unT}$  tv s2  $(\mathrm{w},\mathrm{s}4) = \mathrm{unT}$  tw s3 in ((x->u(v x)) w,s4) -- beta reduction in the (in) expression  $= T$  (s->let  $\left(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu s
+in  $(\backslash f->\backslash x->u(f x))$  , s2)  $\begin{array}{rl} & {\mathrm{(v,s4)} = \mathrm{unT}\mathrm{tv}\mathrm{s3}}\\ & {\mathrm{in}\quad (\mathrm{h}\mathrm{v},\mathrm{s4})} \end{array}$  -- let s3=s2 and h  $=$ $\backslash \mathbf{f} - >\backslash \mathbf{x} - >\mathbf{u}(\mathbf{f}\mathbf{x}))$  -- beautify  $= T$  (ss->let  $\leqft(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu ss  $\mathrm{(v,s3)} = \mathrm{unT}$  tv s2 in  $((\backslash f->\backslash x->u(f x))v,s3)$  -- beta reduction in the left part on the (in) expression  $= T$  (ss->let  $\leqft(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu ss  $\mathrm{(v,s3)} = \mathrm{unT}$  tv s2 in ((x->u(v x)),s3) Complete the calculation of the LHS to the rightmost pure (.)<\*>tu <\*\*>tv <\*\*>tw -- definition of the rightmost <\*\*>  $= T$  (s->let  $\leqft(\mathrm{h},\mathrm{s}4\right) = \mathrm{unT}$  T (T (ss->let  $\leqft(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu ss  $(\mathrm{v},\mathrm{s}3) = \mathrm{unT}$  tv s2 in ((x->u(v x)),s3) )s (w,s5)=unT tw s4 in (h w,s5) -- cancel the T/unT pair  $= T$  (s->let  $\leqft(\mathrm{h},\mathrm{s}4\right) = (\backslash \mathrm{s}s - >1$  let  $\leqft(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu ss  $(\mathrm{v},\mathrm{s}3) = \mathrm{unT}$  tv s2 in ((x->u(v x)),s3) )s (w,s5)=unT tw s4 in (h w,s5) -- beta reduction  $= T$  (s->let  $\leqft(\mathrm{h},\mathrm{s}4\right) = \mathrm{let}\quad (\mathrm{u},\mathrm{s}2)\quad = \mathrm{unT}$  tu s  $(\mathrm{v},\mathrm{s}3) = \mathrm{unT}$  tv s2 in ((x->u(v x)),s3) (w,s5)=unT tw s4 in (h w,s5) -- knowing that s4  $= \mathfrak{s}3$  and h  $=$  (x->u(v x))  $= T$  (s->let  $\leqft(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu s  $(\mathrm{v},\mathrm{s}3) = \mathrm{unT}$  tv s2  $(\mathrm{w},\mathrm{s}4) = \mathrm{unT}$  tw s3 in ((x->u(v x)) w,s4) -- beta reduction in the (in) expression  $= T$  (s->let  $\leqft(\mathbf{u},\mathbf{s}2\right) = \mathbf{unT}$  tu s
 ```
 
 ```txt
@@ -10037,7 +10037,7 @@ $\mathrm{mf} <   * > \mathrm{mx} = \mathrm{mf} > > = \backslash \mathrm{f}\Right
 Proof We rewrite the LHS step by step.
 
 ```txt
-mf  $<  * >$  mx -- definition of  $<  * >$ $\begin{array}{rl} & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T\left(\backslash s1\rightarrow\right)\end{array}$  let (f,s2)  $= \mathrm{unT}$  mf s1  $(x,s3) = \mathrm{unT}$  mx s2 in (f x,s3))   
+mf  $<  * >$  mx -- definition of  $<  * >$ $\begin{array}{rl} & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T(\backslash s1\rightarrow)\\ & = T\leqft(\backslash s1\rightarrow\right)\end{array}$  let (f,s2)  $= \mathrm{unT}$  mf s1  $(x,s3) = \mathrm{unT}$  mx s2 in (f x,s3))   
 We calculate subexpressions of the RHS from the innermost. return (f x)  $= T(\backslash s\rightarrow)(f\times ,s))$    
 mx  $> = \backslash x - >$  return (f x) -- replace  $(> = )$  with sharp  $=$  sharp ( $x\rightarrow$  T ( $s\rightarrow$  (f x,s))) mx -- definition of sharp  $= T(\backslash t1\rightarrow$  let (y,t2)  $= \mathrm{unT}$  mx t1 in unT ((x->T ( $s\rightarrow$  (f x,s))) y) t2) -- beta reduction  $= T(\backslash t1\rightarrow$  let (y,t2)  $= \mathrm{unT}$  mx t1 in unT (T ( $s\rightarrow$  (f y,s))) t2) -- cancel the T/unT pair  $= T(\backslash t1\rightarrow$  let (y,t2)  $= \mathrm{unT}$  mx t1 in ( $s\rightarrow$  (f y,s)) t2) -- beta reduction  $= T(\backslash t1\rightarrow$  let (y,t2)  $= \mathrm{unT}$  mx t1 in (f y,t2))   
 mf  $> = \backslash f\rightarrow$  mx  $>> = \backslash x - >$  return (f x)  $= \mathrm{mf} >> = \backslash f\rightarrow$  T ( $t1\rightarrow$  let (y,t2)  $= \mathrm{unT}$  mx t1 in (f y,t2)) -- replace  $(> = )$  with sharp  $= \mathrm{sharp}$  ( $f\rightarrow$  T (\ $t1\rightarrow$  let (y,t2)  $= \mathrm{unT}$  mx t1 in (f y,t2)) mlf -- definition of sharp  $= T(\backslash s1\rightarrow$  let (v1,s2)  $= \mathrm{unT}$  mf s1 in unT ((f->T (\ $t1\rightarrow$  let (y,t2)  $= \mathrm{unT}$  mx t1 in (f y,t2)) v1
@@ -10101,7 +10101,7 @@ Remark 1. Function composition operator (. can be defined as follows.
 
 Remark 2. Function composition sometimes takes the form as follows.
 
-f.  $\left(\backslash x \rightarrow y\right) = \backslash x \rightarrow f y$
+f.  $\leqft(\backslash x \rightarrow y\right) = \backslash x \rightarrow f y$
 
 We calculate the LHS.
 

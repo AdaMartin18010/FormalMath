@@ -1,4 +1,4 @@
-# Chomsky层次
+﻿# Chomsky层次
 
 **创建日期**: 2025年12月15日
 **研究领域**: 乔姆斯基数学理念 - 核心理论 - Chomsky层次
@@ -112,7 +112,7 @@ $$S \to aS \mid bS \mid \epsilon$$
 
 **对应关系**：
 
-- **Kleene定理**：正则语言 $\Leftrightarrow$ 有限自动机可识别
+- **Kleene定理**：正则语言 $\leqftrightarrow$ 有限自动机可识别
 
 **有限自动机（FA）**：
 
@@ -147,7 +147,7 @@ $$S \to aS \mid bS \mid \epsilon$$
 
 **等价性**：
 
-- 正则表达式 $\Leftrightarrow$ 有限自动机 $\Leftrightarrow$ 正则语法
+- 正则表达式 $\leqftrightarrow$ 有限自动机 $\leqftrightarrow$ 正则语法
 
 ---
 
@@ -172,7 +172,7 @@ $$S \to aS \mid bS \mid \epsilon$$
 
 $$S \to aSb \mid \epsilon$$
 
-生成语言：$\{a^n b^n : n \geq 0\}$（相同数量的 $a$ 和 $b$）
+生成语言：$\{a^n b^n : n \geqq 0\}$（相同数量的 $a$ 和 $b$）
 
 ---
 
@@ -180,7 +180,7 @@ $$S \to aSb \mid \epsilon$$
 
 **对应关系**：
 
-- **等价性定理**：上下文无关语言 $\Leftrightarrow$ 下推自动机可识别
+- **等价性定理**：上下文无关语言 $\leqftrightarrow$ 下推自动机可识别
 
 **下推自动机（PDA）**：
 
@@ -222,7 +222,7 @@ $$S \to aSb \mid \epsilon$$
 - 产生式规则形如 $\alpha A \beta \to \alpha \gamma \beta$，其中：
   - $A$ 是变元
   - $\alpha, \beta, \gamma$ 是符号串
-  - $\gamma \neq \epsilon$（不允许删除）
+  - $\gamma \neqq \epsilon$（不允许删除）
 - **关键**：依赖上下文（$A$ 的替换依赖于周围的符号 $\alpha$ 和 $\beta$）
 
 **性质**：
@@ -240,7 +240,7 @@ $$bB \to bb$$
 $$bC \to bc$$
 $$cC \to cc$$
 
-生成语言：$\{a^n b^n c^n : n \geq 1\}$（相同数量的 $a$、$b$ 和 $c$）
+生成语言：$\{a^n b^n c^n : n \geqq 1\}$（相同数量的 $a$、$b$ 和 $c$）
 
 ---
 
@@ -248,7 +248,7 @@ $$cC \to cc$$
 
 **对应关系**：
 
-- **等价性定理**：上下文相关语言 $\Leftrightarrow$ 线性有界自动机可识别
+- **等价性定理**：上下文相关语言 $\leqftrightarrow$ 线性有界自动机可识别
 
 **线性有界自动机（LBA）**：
 
@@ -273,7 +273,7 @@ $$cC \to cc$$
 
 - 产生式规则无限制
 - 形如 $\alpha \to \beta$，其中 $\alpha, \beta \in (V \cup T)^*$
-- **唯一限制**：$\alpha \neq \epsilon$（不允许空字符串在左边）
+- **唯一限制**：$\alpha \neqq \epsilon$（不允许空字符串在左边）
 
 **性质**：
 
@@ -291,7 +291,7 @@ $$cC \to cc$$
 
 **对应关系**：
 
-- **等价性定理**：递归可枚举语言 $\Leftrightarrow$ 图灵机可识别
+- **等价性定理**：递归可枚举语言 $\leqftrightarrow$ 图灵机可识别
 
 **图灵机（TM）**：
 
@@ -327,15 +327,15 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 **正则语言**：
 
-- $L = \{a^n : n \geq 0\}$
+- $L = \{a^n : n \geqq 0\}$
 
 **上下文无关语言**：
 
-- $L = \{a^n b^n : n \geq 0\}$
+- $L = \{a^n b^n : n \geqq 0\}$
 
 **上下文相关语言**：
 
-- $L = \{a^n b^n c^n : n \geq 0\}$
+- $L = \{a^n b^n c^n : n \geqq 0\}$
 
 **递归可枚举语言**：
 
@@ -349,7 +349,7 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 **Kleene定理（1956）**：
 
-- **定理内容**：正则语言 $\Leftrightarrow$ 有限自动机可识别 $\Leftrightarrow$ 正则表达式
+- **定理内容**：正则语言 $\leqftrightarrow$ 有限自动机可识别 $\leqftrightarrow$ 正则表达式
 - **历史意义**：由Stephen Cole Kleene在1956年证明，建立了正则语言的三种等价表示
 - **证明方法**：
   - 从正则表达式构造NFA（Thompson构造法）
@@ -359,7 +359,7 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 **上下文无关语言的等价性定理**：
 
-- **定理内容**：上下文无关语言 $\Leftrightarrow$ 下推自动机可识别
+- **定理内容**：上下文无关语言 $\leqftrightarrow$ 下推自动机可识别
 - **证明方法**：
   - 从上下文无关语法构造下推自动机（使用栈模拟推导）
   - 从下推自动机构造上下文无关语法（使用变元表示栈状态）
@@ -367,7 +367,7 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 **上下文相关语言的等价性定理**：
 
-- **定理内容**：上下文相关语言 $\Leftrightarrow$ 线性有界自动机可识别
+- **定理内容**：上下文相关语言 $\leqftrightarrow$ 线性有界自动机可识别
 - **证明方法**：
   - 从上下文相关语法构造线性有界自动机
   - 从线性有界自动机构造上下文相关语法
@@ -375,7 +375,7 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 **递归可枚举语言的等价性定理**：
 
-- **定理内容**：递归可枚举语言 $\Leftrightarrow$ 图灵机可识别
+- **定理内容**：递归可枚举语言 $\leqftrightarrow$ 图灵机可识别
 - **证明方法**：
   - 从无限制语法构造图灵机（模拟推导过程）
   - 从图灵机构造无限制语法（模拟图灵机计算）

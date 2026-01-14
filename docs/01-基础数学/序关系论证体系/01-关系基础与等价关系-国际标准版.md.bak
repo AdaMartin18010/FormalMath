@@ -1,4 +1,4 @@
-# 关系基础与等价关系 - 国际标准版
+﻿# 关系基础与等价关系 - 国际标准版
 
 ## 目录
 
@@ -296,11 +296,11 @@ end
 **定理 3.1** (函数诱导的等价关系) / **Theorem 3.1** (Equivalence Relation Induced by Function)
 
 设 $f: A \rightarrow B$ 是一个函数，定义关系 $R_f$ 为：
-$a R_f b \leftrightarrow f(a) = f(b)$
+$a R_f b \leqftrightarrow f(a) = f(b)$
 则 $R_f$ 是 $A$ 上的等价关系。
 
 Let $f: A \rightarrow B$ be a function, define relation $R_f$ as:
-$a R_f b \leftrightarrow f(a) = f(b)$
+$a R_f b \leqftrightarrow f(a) = f(b)$
 Then $R_f$ is an equivalence relation on $A$.
 
 **证明** / **Proof**:
@@ -379,11 +379,11 @@ end
 **定理 4.1** (模n同余关系) / **Theorem 4.1** (Congruence Modulo n)
 
 对于正整数 $n$，关系 $\equiv_n$ 定义为：
-$a \equiv_n b \leftrightarrow n \mid (a - b)$
+$a \equiv_n b \leqftrightarrow n \mid (a - b)$
 则 $\equiv_n$ 是 $\mathbb{Z}$ 上的等价关系。
 
 For positive integer $n$, relation $\equiv_n$ is defined as:
-$a \equiv_n b \leftrightarrow n \mid (a - b)$
+$a \equiv_n b \leqftrightarrow n \mid (a - b)$
 Then $\equiv_n$ is an equivalence relation on $\mathbb{Z}$.
 
 **证明** / **Proof**:
@@ -455,10 +455,10 @@ end
 **定理 4.3** (有理数作为等价类) / **Theorem 4.3** (Rational Numbers as Equivalence Classes)
 
 有理数可以构造为 $\mathbb{Z} \times \mathbb{Z}^*$ 上的等价类，其中等价关系定义为：
-$(a, b) \sim (c, d) \leftrightarrow a \cdot d = b \cdot c$
+$(a, b) \sim (c, d) \leqftrightarrow a \cdot d = b \cdot c$
 
 Rational numbers can be constructed as equivalence classes on $\mathbb{Z} \times \mathbb{Z}^*$, where the equivalence relation is defined as:
-$(a, b) \sim (c, d) \leftrightarrow a \cdot d = b \cdot c$
+$(a, b) \sim (c, d) \leqftrightarrow a \cdot d = b \cdot c$
 
 **证明** / **Proof**:
 

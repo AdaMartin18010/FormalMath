@@ -1,4 +1,4 @@
-# 偏序关系 - 国际标准版
+﻿# 偏序关系 - 国际标准版
 
 ## 目录
 
@@ -86,9 +86,9 @@ end
 
 **定义 1.2** (偏序集) / **Definition 1.2** (Partially Ordered Set)
 
-偏序集是一个有序对 $(A, \leq)$，其中 $A$ 是一个集合，$\leq$ 是 $A$ 上的偏序关系。
+偏序集是一个有序对 $(A, \leqq)$，其中 $A$ 是一个集合，$\leqq$ 是 $A$ 上的偏序关系。
 
-A partially ordered set is an ordered pair $(A, \leq)$, where $A$ is a set and $\leq$ is a partial order relation on $A$.
+A partially ordered set is an ordered pair $(A, \leqq)$, where $A$ is a set and $\leqq$ is a partial order relation on $A$.
 
 **形式化定义** / **Formal Definition**:
 
@@ -113,9 +113,9 @@ def Incomparable {A : Type} (poset : PartiallyOrderedSet A) (a b : A) : Prop :=
 
 **定理 1.1** (偏序关系的唯一性) / **Theorem 1.1** (Uniqueness in Partial Order Relations)
 
-在偏序集 $(A, \leq)$ 中，如果 $a \leq b$ 且 $b \leq a$，则 $a = b$。
+在偏序集 $(A, \leqq)$ 中，如果 $a \leqq b$ 且 $b \leqq a$，则 $a = b$。
 
-In a partially ordered set $(A, \leq)$, if $a \leq b$ and $b \leq a$, then $a = b$.
+In a partially ordered set $(A, \leqq)$, if $a \leqq b$ and $b \leqq a$, then $a = b$.
 
 **证明** / **Proof**:
 
@@ -130,9 +130,9 @@ end
 
 **定理 1.2** (偏序关系的传递性) / **Theorem 1.2** (Transitivity of Partial Order Relations)
 
-在偏序集 $(A, \leq)$ 中，如果 $a \leq b$ 且 $b \leq c$，则 $a \leq c$。
+在偏序集 $(A, \leqq)$ 中，如果 $a \leqq b$ 且 $b \leqq c$，则 $a \leqq c$。
 
-In a partially ordered set $(A, \leq)$, if $a \leq b$ and $b \leq c$, then $a \leq c$.
+In a partially ordered set $(A, \leqq)$, if $a \leqq b$ and $b \leqq c$, then $a \leqq c$.
 
 **证明** / **Proof**:
 
@@ -151,19 +151,19 @@ end
 
 **定义 2.1** (最大元) / **Definition 2.1** (Maximum Element)
 
-设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的最大元，如果：
-$\forall x \in S(x \leq m)$
+设 $(A, \leqq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的最大元，如果：
+$\forall x \in S(x \leqq m)$
 
-Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a maximum element of $S$ if:
-$\forall x \in S(x \leq m)$
+Let $(A, \leqq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a maximum element of $S$ if:
+$\forall x \in S(x \leqq m)$
 
 **定义 2.2** (最小元) / **Definition 2.2** (Minimum Element)
 
-设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的最小元，如果：
-$\forall x \in S(m \leq x)$
+设 $(A, \leqq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的最小元，如果：
+$\forall x \in S(m \leqq x)$
 
-Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a minimum element of $S$ if:
-$\forall x \in S(m \leq x)$
+Let $(A, \leqq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a minimum element of $S$ if:
+$\forall x \in S(m \leqq x)$
 
 **形式化定义** / **Formal Definition**:
 
@@ -199,19 +199,19 @@ end
 
 **定义 2.3** (极大元) / **Definition 2.3** (Maximal Element)
 
-设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的极大元，如果：
-$\forall x \in S(m \leq x \rightarrow m = x)$
+设 $(A, \leqq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的极大元，如果：
+$\forall x \in S(m \leqq x \rightarrow m = x)$
 
-Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a maximal element of $S$ if:
-$\forall x \in S(m \leq x \rightarrow m = x)$
+Let $(A, \leqq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a maximal element of $S$ if:
+$\forall x \in S(m \leqq x \rightarrow m = x)$
 
 **定义 2.4** (极小元) / **Definition 2.4** (Minimal Element)
 
-设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的极小元，如果：
-$\forall x \in S(x \leq m \rightarrow m = x)$
+设 $(A, \leqq)$ 是偏序集，$S \subseteq A$，元素 $m \in S$ 称为 $S$ 的极小元，如果：
+$\forall x \in S(x \leqq m \rightarrow m = x)$
 
-Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a minimal element of $S$ if:
-$\forall x \in S(x \leq m \rightarrow m = x)$
+Let $(A, \leqq)$ be a partially ordered set, $S \subseteq A$, an element $m \in S$ is called a minimal element of $S$ if:
+$\forall x \in S(x \leqq m \rightarrow m = x)$
 
 **形式化定义** / **Formal Definition**:
 
@@ -227,19 +227,19 @@ def MinimalElement {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) (m : A
 
 **定义 2.5** (上界) / **Definition 2.5** (Upper Bound)
 
-设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $u \in A$ 称为 $S$ 的上界，如果：
-$\forall x \in S(x \leq u)$
+设 $(A, \leqq)$ 是偏序集，$S \subseteq A$，元素 $u \in A$ 称为 $S$ 的上界，如果：
+$\forall x \in S(x \leqq u)$
 
-Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $u \in A$ is called an upper bound of $S$ if:
-$\forall x \in S(x \leq u)$
+Let $(A, \leqq)$ be a partially ordered set, $S \subseteq A$, an element $u \in A$ is called an upper bound of $S$ if:
+$\forall x \in S(x \leqq u)$
 
 **定义 2.6** (下界) / **Definition 2.6** (Lower Bound)
 
-设 $(A, \leq)$ 是偏序集，$S \subseteq A$，元素 $l \in A$ 称为 $S$ 的下界，如果：
-$\forall x \in S(l \leq x)$
+设 $(A, \leqq)$ 是偏序集，$S \subseteq A$，元素 $l \in A$ 称为 $S$ 的下界，如果：
+$\forall x \in S(l \leqq x)$
 
-Let $(A, \leq)$ be a partially ordered set, $S \subseteq A$, an element $l \in A$ is called a lower bound of $S$ if:
-$\forall x \in S(l \leq x)$
+Let $(A, \leqq)$ be a partially ordered set, $S \subseteq A$, an element $l \in A$ is called a lower bound of $S$ if:
+$\forall x \in S(l \leqq x)$
 
 **形式化定义** / **Formal Definition**:
 
@@ -257,13 +257,13 @@ def LowerBound {A : Type} (poset : PartiallyOrderedSet A) (S : Set A) (l : A) : 
 
 **定理 3.1** (乘积偏序) / **Theorem 3.1** (Product Partial Order)
 
-设 $(A, \leq_A)$ 和 $(B, \leq_B)$ 是两个偏序集，在 $A \times B$ 上定义关系 $\leq$ 为：
-$(a_1, b_1) \leq (a_2, b_2) \leftrightarrow a_1 \leq_A a_2 \land b_1 \leq_B b_2$
-则 $(A \times B, \leq)$ 是偏序集。
+设 $(A, \leqq_A)$ 和 $(B, \leqq_B)$ 是两个偏序集，在 $A \times B$ 上定义关系 $\leqq$ 为：
+$(a_1, b_1) \leqq (a_2, b_2) \leqftrightarrow a_1 \leqq_A a_2 \land b_1 \leqq_B b_2$
+则 $(A \times B, \leqq)$ 是偏序集。
 
-Let $(A, \leq_A)$ and $(B, \leq_B)$ be two partially ordered sets, define relation $\leq$ on $A \times B$ as:
-$(a_1, b_1) \leq (a_2, b_2) \leftrightarrow a_1 \leq_A a_2 \land b_1 \leq_B b_2$
-Then $(A \times B, \leq)$ is a partially ordered set.
+Let $(A, \leqq_A)$ and $(B, \leqq_B)$ be two partially ordered sets, define relation $\leqq$ on $A \times B$ as:
+$(a_1, b_1) \leqq (a_2, b_2) \leqftrightarrow a_1 \leqq_A a_2 \land b_1 \leqq_B b_2$
+Then $(A \times B, \leqq)$ is a partially ordered set.
 
 **证明** / **Proof**:
 
@@ -309,13 +309,13 @@ end
 
 **定理 3.2** (字典序) / **Theorem 3.2** (Lexicographic Order)
 
-设 $(A, \leq_A)$ 和 $(B, \leq_B)$ 是两个偏序集，在 $A \times B$ 上定义字典序 $\leq_{lex}$ 为：
-$(a_1, b_1) \leq_{lex} (a_2, b_2) \leftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 \leq_B b_2)$
-则 $(A \times B, \leq_{lex})$ 是偏序集。
+设 $(A, \leqq_A)$ 和 $(B, \leqq_B)$ 是两个偏序集，在 $A \times B$ 上定义字典序 $\leqq_{lex}$ 为：
+$(a_1, b_1) \leqq_{lex} (a_2, b_2) \leqftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 \leqq_B b_2)$
+则 $(A \times B, \leqq_{lex})$ 是偏序集。
 
-Let $(A, \leq_A)$ and $(B, \leq_B)$ be two partially ordered sets, define lexicographic order $\leq_{lex}$ on $A \times B$ as:
-$(a_1, b_1) \leq_{lex} (a_2, b_2) \leftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 \leq_B b_2)$
-Then $(A \times B, \leq_{lex})$ is a partially ordered set.
+Let $(A, \leqq_A)$ and $(B, \leqq_B)$ be two partially ordered sets, define lexicographic order $\leqq_{lex}$ on $A \times B$ as:
+$(a_1, b_1) \leqq_{lex} (a_2, b_2) \leqftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 \leqq_B b_2)$
+Then $(A \times B, \leqq_{lex})$ is a partially ordered set.
 
 **证明** / **Proof**:
 
@@ -361,11 +361,11 @@ end
 **定理 4.1** (整除关系) / **Theorem 4.1** (Divisibility Relation)
 
 在正整数集合 $\mathbb{N}^*$ 上，关系 $\mid$ 定义为：
-$a \mid b \leftrightarrow \exists k \in \mathbb{N}^*(b = a \cdot k)$
+$a \mid b \leqftrightarrow \exists k \in \mathbb{N}^*(b = a \cdot k)$
 则 $(\mathbb{N}^*, \mid)$ 是偏序集。
 
 On the set of positive integers $\mathbb{N}^*$, relation $\mid$ is defined as:
-$a \mid b \leftrightarrow \exists k \in \mathbb{N}^*(b = a \cdot k)$
+$a \mid b \leqftrightarrow \exists k \in \mathbb{N}^*(b = a \cdot k)$
 Then $(\mathbb{N}^*, \mid)$ is a partially ordered set.
 
 **证明** / **Proof**:
@@ -473,9 +473,9 @@ end
 
 **Bourbaki偏序关系公理** / **Bourbaki Partial Order Relation Axioms**:
 
-1. **自反性** / **Reflexivity**: $\forall a \in A(a \leq a)$
-2. **反对称性** / **Antisymmetry**: $\forall a, b \in A(a \leq b \land b \leq a \rightarrow a = b)$
-3. **传递性** / **Transitivity**: $\forall a, b, c \in A(a \leq b \land b \leq c \rightarrow a \leq c)$
+1. **自反性** / **Reflexivity**: $\forall a \in A(a \leqq a)$
+2. **反对称性** / **Antisymmetry**: $\forall a, b \in A(a \leqq b \land b \leqq a \rightarrow a = b)$
+3. **传递性** / **Transitivity**: $\forall a, b, c \in A(a \leqq b \land b \leqq c \rightarrow a \leqq c)$
 
 **与本文档的对应关系** / **Correspondence with This Document**:
 

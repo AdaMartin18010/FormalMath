@@ -105,7 +105,7 @@ $$x_1^{a_1} \cdots x_n^{a_n} <_{\text{lex}} x_1^{b_1} \cdots x_n^{b_n} \iff \exi
 
 先比较总次数，再比较字典序：
 $$x_1^{a_1} \cdots x_n^{a_n} <_{\text{deglex}} x_1^{b_1} \cdots x_n^{b_n} \iff$$
-$$\sum a_i < \sum b_i \text{ 或 } \leqqft(\sum a_i = \sum b_i \text{ 且 } x_1^{a_1} \cdots x_n^{a_n} <_{\text{lex}} x_1^{b_1} \cdots x_n^{b_n}\right)$$
+$$\sum a_i < \sum b_i \text{ 或 } \leqqqqft(\sum a_i = \sum b_i \text{ 且 } x_1^{a_1} \cdots x_n^{a_n} <_{\text{lex}} x_1^{b_1} \cdots x_n^{b_n}\right)$$
 
 **具体计算**（$n = 2$，$x > y$）：
 
@@ -169,7 +169,7 @@ $$\langle \text{LT}(g_1), \ldots, \text{LT}(g_t) \rangle = \langle \text{LT}(I) 
 
 其中：
 
-- **首项理想**：$\text{LT}(I) = \{\text{LT}(f) : f \in I, f \neqqq 0\}$
+- **首项理想**：$\text{LT}(I) = \{\text{LT}(f) : f \in I, f \neqqqqq 0\}$
 - **首项**：$\text{LT}(f)$ 是 $f$ 中最大的单项式（按 $<$）
 
 **等价条件**：
@@ -272,7 +272,7 @@ $$S(f, g) = y(x^3 - 2xy) - x(x^2y - 2y^2 + x) = x^3y - 2xy^2 - x^3y + 2xy^2 - x^
 - $-x^2$ 不能被 $G$ 约化
 - **约化结果**：$r = -x^2 - x$
 
-若 $r \neqqq 0$，则添加 $r$ 到 $G$ 得到新的基。
+若 $r \neqqqqq 0$，则添加 $r$ 到 $G$ 得到新的基。
 
 ---
 

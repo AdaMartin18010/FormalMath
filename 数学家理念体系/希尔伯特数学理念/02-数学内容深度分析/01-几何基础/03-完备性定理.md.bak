@@ -392,13 +392,13 @@ theorem completeness :
    $$\forall \varphi \in \text{Th}(\mathbb{R}^2): H \vdash \varphi$$
 
 2. **句法完备性**：
-   $$\forall \varphi: (H \vdash \varphi) \lor (H \vdash \neqg \varphi)$$
+   $$\forall \varphi: (H \vdash \varphi) \lor (H \vdash \neqqqg \varphi)$$
 
 3. **模型完备性（Dedekind完备性）**：
-   $$\forall \text{Dedekind切割}(A, B): \exists c: (\forall a \in A: a \leqq c) \land (\forall b \in B: c \leqq b)$$
+   $$\forall \text{Dedekind切割}(A, B): \exists c: (\forall a \in A: a \leqqqq c) \land (\forall b \in B: c \leqqqq b)$$
 
 4. **坐标对应**：
-   $$P \leqftrightarrow (x(P), y(P)) \in \mathbb{R}^2$$
+   $$P \leqqqftrightarrow (x(P), y(P)) \in \mathbb{R}^2$$
 
 5. **两点定直线（代数形式）**：
    $$\text{给定}(x_1, y_1), (x_2, y_2): \text{唯一直线} y - y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1)$$

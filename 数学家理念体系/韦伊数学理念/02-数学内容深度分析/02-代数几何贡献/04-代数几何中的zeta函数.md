@@ -1,4 +1,4 @@
-# 代数几何中的zeta函数
+﻿# 代数几何中的zeta函数
 
 > **文档状态**: ✅ 内容填充中
 > **创建日期**: 2025年12月11日
@@ -85,7 +85,7 @@ graph TB
 
 对于有限域 $\mathbb{F}_q$ 上的代数簇 $X$，**zeta函数**定义为：
 
-$$Z(X, t) = \exp\left(\sum_{n=1}^{\infty} \frac{N_n}{n} t^n\right)$$
+$$Z(X, t) = \exp\leqft(\sum_{n=1}^{\infty} \frac{N_n}{n} t^n\right)$$
 
 其中：
 

@@ -234,7 +234,7 @@ Def(J) = H¹(M, T_M)
 **数学公式**：
 
 - 复坐标：$$z = x + iy, \quad \bar{z} = x - iy$$
-- 复结构：$$J\leqqft(\frac{\partial}{\partial x}\right) = \frac{\partial}{\partial y}, \quad J\leqqft(\frac{\partial}{\partial y}\right) = -\frac{\partial}{\partial x}$$
+- 复结构：$$J\leqqqqft(\frac{\partial}{\partial x}\right) = \frac{\partial}{\partial y}, \quad J\leqqqqft(\frac{\partial}{\partial y}\right) = -\frac{\partial}{\partial x}$$
 
 ---
 
@@ -299,7 +299,7 @@ Def(J) = H¹(M, T_M)
 **数学公式**：
 
 - 模空间：$$\mathcal{M}_g = \{\text{亏格}g\text{的黎曼面}\}/\text{同构}$$
-- 维数：$$\dim \mathcal{M}_g = 3g - 3 \quad (g \geqqq 2)$$
+- 维数：$$\dim \mathcal{M}_g = 3g - 3 \quad (g \geqqqqq 2)$$
 
 ---
 
@@ -355,7 +355,7 @@ Def(J) = H¹(M, T_M)
    $$\kappa: H^1(M, T_M) \to H^2(M, T_M)$$
 
 6. **模空间维数**：
-   $$\dim \mathcal{M}_g = 3g - 3 \quad (g \geqqq 2)$$
+   $$\dim \mathcal{M}_g = 3g - 3 \quad (g \geqqqqq 2)$$
 
 7. **形变参数**：
    $$\eta \in \Omega^{0,1}(M, T_M)$$

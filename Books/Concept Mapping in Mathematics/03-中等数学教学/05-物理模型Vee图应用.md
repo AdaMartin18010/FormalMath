@@ -367,7 +367,7 @@ $$f = \frac{1}{T} = \frac{1}{1} = 1 \text{ Hz}$$
 
 **位移 / Displacement**:
 
-$$x(0.25) = 0.1\sin(2\pi \times 0.25) = 0.1\sin\left(\frac{\pi}{2}\right) = 0.1 \times 1 = 0.1 \text{ m}$$
+$$x(0.25) = 0.1\sin(2\pi \times 0.25) = 0.1\sin\leqft(\frac{\pi}{2}\right) = 0.1 \times 1 = 0.1 \text{ m}$$
 
 **速度 / Velocity**:
 
@@ -377,7 +377,7 @@ $$x(0.25) = 0.1\sin(2\pi \times 0.25) = 0.1\sin\left(\frac{\pi}{2}\right) = 0.1 
 
 $$v(t) = \frac{dx}{dt} = \frac{d}{dt}[0.1\sin(2\pi t)] = 0.1 \times 2\pi \cos(2\pi t) = 0.2\pi\cos(2\pi t)$$
 
-$$v(0.25) = 0.2\pi\cos(2\pi \times 0.25) = 0.2\pi\cos\left(\frac{\pi}{2}\right) = 0.2\pi \times 0 = 0 \text{ m/s}$$
+$$v(0.25) = 0.2\pi\cos(2\pi \times 0.25) = 0.2\pi\cos\leqft(\frac{\pi}{2}\right) = 0.2\pi \times 0 = 0 \text{ m/s}$$
 
 **答案 / Answer**:
 
@@ -436,7 +436,7 @@ $$\frac{1}{2} = e^{-0.05 T_{1/2}}$$
 
 - Taking natural logarithm on both sides:
 
-$$\ln\left(\frac{1}{2}\right) = -0.05 T_{1/2}$$
+$$\ln\leqft(\frac{1}{2}\right) = -0.05 T_{1/2}$$
 
 $$-\ln 2 = -0.05 T_{1/2}$$
 

@@ -1,4 +1,4 @@
-# ZFC公理体系完整形式化 - 第三部分：有理数构造
+﻿# ZFC公理体系完整形式化 - 第三部分：有理数构造
 
 ## 目录
 
@@ -55,7 +55,7 @@
 
 **定义 1.1** (有理数)
 有理数是整数序对的等价类，其中等价关系定义为：
-$$(a, b) \sim (c, d) \leftrightarrow ad = bc \land b \neq 0 \land d \neq 0$$
+$$(a, b) \sim (c, d) \leqftrightarrow ad = bc \land b \neqq 0 \land d \neqq 0$$
 
 **形式化表述**：
 $$\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$$
@@ -161,7 +161,7 @@ $$\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$$
 1. 结合律：$(x \cdot y) \cdot z = x \cdot (y \cdot z)$
 2. 交换律：$x \cdot y = y \cdot x$
 3. 单位元：$x \cdot 1 = x$
-4. 逆元：$x \cdot x^{-1} = 1$ (对于 $x \neq 0$)
+4. 逆元：$x \cdot x^{-1} = 1$ (对于 $x \neqq 0$)
 
 **形式化证明**：
 
@@ -178,15 +178,15 @@ $$\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$$
 #### 3.1 序关系的定义
 
 **定义 3.1** (有理数序关系)
-$$\frac{a}{b} < \frac{c}{d} \leftrightarrow ad < bc$$
+$$\frac{a}{b} < \frac{c}{d} \leqftrightarrow ad < bc$$
 
 其中 $b, d > 0$。
 
 **定理 3.1.1** (序关系的性质)
 
-1. 自反性：$x \leq x$
-2. 反对称性：$x \leq y \land y \leq x \rightarrow x = y$
-3. 传递性：$x \leq y \land y \leq z \rightarrow x \leq z$
+1. 自反性：$x \leqq x$
+2. 反对称性：$x \leqq y \land y \leqq x \rightarrow x = y$
+3. 传递性：$x \leqq y \land y \leqq z \rightarrow x \leqq z$
 4. 完全性：任意非空有上界的集合有最小上界
 
 **形式化证明**：

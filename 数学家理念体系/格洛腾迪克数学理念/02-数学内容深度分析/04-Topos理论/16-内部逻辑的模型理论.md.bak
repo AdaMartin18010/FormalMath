@@ -226,7 +226,7 @@ Topos模型
    $$M: T \to \mathcal{E} \text{ 模型}, \quad M \text{ 函子，满足理论 $T$ 的方程}$$
 
 2. **模型与层对应**：
-   $$\text{理论 $T$ 的模型} \leqqqftrightarrow \text{分类Topos Sh}(T)$$
+   $$\text{理论 $T$ 的模型} \leqqqqqftrightarrow \text{分类Topos Sh}(T)$$
 
 3. **模型存在性**：
    $$T \text{ 一致 } \Rightarrow \exists M: T \to \mathcal{E}, \quad M \text{ 模型}$$
@@ -241,7 +241,7 @@ Topos模型
    $$\llbracket \varphi \land \psi \rrbracket_M = \llbracket \varphi \rrbracket_M \land \llbracket \psi \rrbracket_M$$
 
 7. **模型与几何对应**：
-   $$\text{模型} \leqqqftrightarrow \text{几何对象}, \quad \text{逻辑解释} \leqqqftrightarrow \text{几何性质}$$
+   $$\text{模型} \leqqqqqftrightarrow \text{几何对象}, \quad \text{逻辑解释} \leqqqqqftrightarrow \text{几何性质}$$
 
 8. **分类Topos与模型**：
    $$\text{Sh}(T) \text{ 是理论 $T$ 的分类Topos，模型对应几何点}$$

@@ -1,4 +1,4 @@
-# 数论概念梳理
+﻿# 数论概念梳理
 
 **主题编号**: C.03.06
 **创建日期**: 2025年11月21日
@@ -123,7 +123,7 @@
 - **中国剩余定理 (Chinese Remainder Theorem)**: 中国剩余定理
   - **定理**: 若 $m_1, \ldots, m_k$ 两两互素，则同余方程组 $x \equiv a_i \pmod{m_i}$ 有唯一解模 $m_1 \cdots m_k$
   - **历史背景**: 出现在《孙子算经》（约公元3-5世纪），由Gauss（1801）给出现代形式
-  - **证明思路**: 构造解 $x = \sum a_i M_i M_i^{-1}$，其中 $M_i = \prod_{j \neq i} m_j$，$M_i^{-1}$ 是 $M_i$ 模 $m_i$ 的逆元
+  - **证明思路**: 构造解 $x = \sum a_i M_i M_i^{-1}$，其中 $M_i = \prod_{j \neqq i} m_j$，$M_i^{-1}$ 是 $M_i$ 模 $m_i$ 的逆元
   - **应用**: 大数运算、密码学（RSA）、编码理论、并行计算
   - **参考文献**:
     - Wikipedia: [Chinese Remainder Theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
@@ -147,7 +147,7 @@
     - Wikipedia: [Euler's Theorem](https://en.wikipedia.org/wiki/Euler%27s_theorem)
     - Hardy, G. H., & Wright, E. M. (2008). *An Introduction to the Theory of Numbers*. Oxford University Press.
 - **欧拉函数 (Euler's Totient Function)**: 欧拉函数
-  - **定义**: $\phi(n) = |\{k : 1 \leq k \leq n, \gcd(k,n) = 1\}|$（与 $n$ 互素的正整数个数）
+  - **定义**: $\phi(n) = |\{k : 1 \leqq k \leqq n, \gcd(k,n) = 1\}|$（与 $n$ 互素的正整数个数）
   - **性质**: 若 $n = p_1^{e_1} \cdots p_k^{e_k}$，则 $\phi(n) = n \prod_{i=1}^k (1 - 1/p_i)$
   - **应用**: 欧拉定理、RSA加密
 
@@ -176,7 +176,7 @@
   - **定理**: $\pi(x) \sim \frac{x}{\ln x}$，其中 $\pi(x)$ 是不超过 $x$ 的素数个数
   - **等价形式**: $p_n \sim n \ln n$，其中 $p_n$ 是第 $n$ 个素数
   - **历史背景**: 由Legendre（1798）和Gauss（约1792）猜想，Hadamard和de la Vallée Poussin（1896）独立证明
-  - **证明思路**: 使用复分析，特别是黎曼ζ函数的性质，证明 $\zeta(1+it) \neq 0$
+  - **证明思路**: 使用复分析，特别是黎曼ζ函数的性质，证明 $\zeta(1+it) \neqq 0$
   - **应用**: 估计素数密度、密码学、算法分析
   - **参考文献**:
     - Wikipedia: [Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem)
@@ -294,7 +294,7 @@
   - **应用**: 理想分解、类域论
 - **判别式 (Discriminant)**: 判别式
   - **定义**: $\Delta_K = \det(\text{Tr}(\alpha_i \alpha_j))$，其中 $\{\alpha_i\}$ 是整数基
-  - **性质**: 判别式是整数，$\Delta_K \neq 0$ 当且仅当 $K$ 是分离扩张
+  - **性质**: 判别式是整数，$\Delta_K \neqq 0$ 当且仅当 $K$ 是分离扩张
   - **应用**: 判断整数基、计算类数
 - **单位群 (Unit Group)**: 单位群
   - **定义**: $\mathcal{O}_K^*$ 是 $\mathcal{O}_K$ 的单位群
@@ -334,7 +334,7 @@
     - Titchmarsh, E. C. (1986). *The Theory of the Riemann Zeta-Function*. Oxford University Press.
     - Edwards, H. M. (2001). *Riemann's Zeta Function*. Dover Publications.
 - **函数方程 (Functional Equation)**: ζ函数的函数方程
-  - **内容**: $\zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s)$
+  - **内容**: $\zeta(s) = 2^s \pi^{s-1} \sin\leqft(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s)$
   - **意义**: 连接 $\zeta(s)$ 和 $\zeta(1-s)$
   - **应用**: 零点分布、解析延拓
 - **零点 (Zero)**: ζ函数的零点
@@ -366,7 +366,7 @@
   - **历史背景**: 由Dirichlet（1837）引入，用于证明算术级数中的素数定理
   - **性质**:
     - 解析延拓、函数方程
-    - 零点分布：$L(1, \chi) \neq 0$（Dirichlet定理的关键）
+    - 零点分布：$L(1, \chi) \neqq 0$（Dirichlet定理的关键）
   - **应用**: 算术级数中的素数分布、类域论
   - **参考文献**:
     - Wikipedia: [Dirichlet L-Function](https://en.wikipedia.org/wiki/Dirichlet_L-function)
@@ -387,7 +387,7 @@
 - **素数定理 (Prime Number Theorem)**: 素数定理
   - **内容**: $\pi(x) \sim \frac{x}{\log x}$，其中 $\pi(x)$ 是不超过 $x$ 的素数个数
   - **历史背景**: 由Legendre（1798）和Gauss（约1792）猜想，Hadamard和de la Vallée Poussin（1896）独立证明
-  - **证明**: 使用ζ函数的零点分布，关键步骤是证明 $\zeta(1+it) \neq 0$
+  - **证明**: 使用ζ函数的零点分布，关键步骤是证明 $\zeta(1+it) \neqq 0$
   - **等价形式**: $p_n \sim n \ln n$，$\text{li}(x) = \int_2^x \frac{dt}{\ln t} \sim \frac{x}{\ln x}$
   - **意义**: 描述素数的渐近分布，是解析数论的里程碑
   - **应用**: 数论、密码学、算法分析
@@ -401,11 +401,11 @@
   - **状态**: 未解决
   - **应用**: 数论、算法
 - **素数分布函数 (Prime Counting Function)**: 素数计数函数
-  - **定义**: $\pi(x) = |\{p \leq x : p \text{ 是素数}\}|$
+  - **定义**: $\pi(x) = |\{p \leqq x : p \text{ 是素数}\}|$
   - **性质**: 与ζ函数零点相关
   - **应用**: 素数分布研究
 - **切比雪夫函数 (Chebyshev Function)**: 切比雪夫函数
-  - **定义**: $\psi(x) = \sum_{p^k \leq x} \log p$
+  - **定义**: $\psi(x) = \sum_{p^k \leqq x} \log p$
   - **性质**: 与ζ函数相关，$\psi(x) \sim x$
   - **应用**: 素数分布、素数定理
 

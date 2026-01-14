@@ -75,7 +75,7 @@ $$\omega = \sum_{i=1}^n dq^i \wedge dp_i$$
 **性质**：
 
 - 闭形式：$d\omega = 0$
-- 非退化：$\omega^n \neqqqq 0$
+- 非退化：$\omega^n \neqqqqq 0$
 
 ---
 
@@ -232,7 +232,7 @@ Kolmogorov-Arnold-Moser定理表明，在可积系统和不可积系统之间存
 **性质**：
 
 - $d\omega = 0$（闭形式）
-- $\omega^n \neqqqq 0$（非退化）
+- $\omega^n \neqqqqq 0$（非退化）
 
 **几何意义**：
 

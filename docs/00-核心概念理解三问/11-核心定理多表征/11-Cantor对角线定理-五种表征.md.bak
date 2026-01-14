@@ -1,4 +1,4 @@
-# Cantor对角线定理 - 五种表征
+﻿# Cantor对角线定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 集合论
@@ -23,7 +23,7 @@
 
 **Cantor定理**：对任意集合 A，不存在 A 到其幂集 P(A) 的满射。
 
-$$\nexists f: A \twoheadrightarrow \mathcal{P}(A)$$
+$$\neqxists f: A \twoheadrightarrow \mathcal{P}(A)$$
 
 **推论**：|A| < |P(A)|，特别地 |ℕ| < |ℝ|
 

@@ -1,4 +1,4 @@
-# 1.2 数系与运算 / Number Systems and Operations
+﻿# 1.2 数系与运算 / Number Systems and Operations
 
 **主题编号**: B.01.02
 **创建日期**: 2025年11月21日
@@ -97,7 +97,7 @@
 - 对任意 $n \in \mathbb{N}$，$S(n) \in \mathbb{N}$
 - 对任意 $n, m \in \mathbb{N}$，如果 $S(n) = S(m)$，则 $n = m$
 
-**P3** (零元唯一性 / Zero Uniqueness): 对任意 $n \in \mathbb{N}$，$S(n) \neq 0$
+**P3** (零元唯一性 / Zero Uniqueness): 对任意 $n \in \mathbb{N}$，$S(n) \neqq 0$
 
 **P4** (归纳公理 / Induction Axiom): 如果 $P$ 是 $\mathbb{N}$ 的一个性质，满足：
 
@@ -115,7 +115,7 @@ The set of natural numbers $\mathbb{N}$ satisfies the following axioms:
 - For any $n \in \mathbb{N}$, $S(n) \in \mathbb{N}$
 - For any $n, m \in \mathbb{N}$, if $S(n) = S(m)$, then $n = m$
 
-**P3** (Zero Uniqueness): For any $n \in \mathbb{N}$, $S(n) \neq 0$
+**P3** (Zero Uniqueness): For any $n \in \mathbb{N}$, $S(n) \neqq 0$
 
 **P4** (Induction Axiom): If $P$ is a property of $\mathbb{N}$ such that:
 
@@ -157,7 +157,7 @@ Then for any $n \in \mathbb{N}$, $P(n)$ holds
 整数集 $\mathbb{Z}$ 是自然数对的等价类：
 $$\mathbb{Z} = \{(a, b) : a, b \in \mathbb{N}\} / \sim$$
 其中等价关系 $\sim$ 定义为：
-$$(a, b) \sim (c, d) \Leftrightarrow a + d = b + c$$
+$$(a, b) \sim (c, d) \leqftrightarrow a + d = b + c$$
 
 **定义 1.2.5** (整数表示 / Integer Representation)
 
@@ -187,9 +187,9 @@ $(\mathbb{Z}, +, \cdot)$ 构成一个交换环，具有：
 
 **定义 1.2.8** (有理数 / Rational Number)
 有理数集 $\mathbb{Q}$ 是整数对的等价类：
-$$\mathbb{Q} = \{(a, b) : a, b \in \mathbb{Z}, b \neq 0\} / \sim$$
+$$\mathbb{Q} = \{(a, b) : a, b \in \mathbb{Z}, b \neqq 0\} / \sim$$
 其中等价关系 $\sim$ 定义为：
-$$(a, b) \sim (c, d) \Leftrightarrow a \cdot d = b \cdot c$$
+$$(a, b) \sim (c, d) \leqftrightarrow a \cdot d = b \cdot c$$
 
 **定义 1.2.9** (有理数表示 / Rational Representation)
 有理数 $[(a, b)]$ 通常记作 $\frac{a}{b}$。

@@ -1,4 +1,4 @@
-# Fargues-Fontaine曲线
+﻿# Fargues-Fontaine曲线
 
 > **连接p进域与代数几何的桥梁**
 
@@ -140,7 +140,7 @@ $$X = \text{Proj}(P)$$
 
 其中 $P$ 是分次环，定义为：
 
-$$P = \bigoplus_{d \geq 0} H^0(X, \mathcal{O}_X(d))$$
+$$P = \bigoplus_{d \geqq 0} H^0(X, \mathcal{O}_X(d))$$
 
 **构造方法**：
 
@@ -314,7 +314,7 @@ Fargues-Fontaine曲线 $X$ 与倾斜操作相关：
 
 存在从p进域到Fargues-Fontaine曲线的对应：
 
-$$C_p \leftrightarrow X_{C_p^\flat}$$
+$$C_p \leqftrightarrow X_{C_p^\flat}$$
 
 **具体形式**：
 
@@ -336,7 +336,7 @@ $$C_p \leftrightarrow X_{C_p^\flat}$$
 
 在Fargues-Fontaine曲线 $X$ 上，存在朗兰兹对应：
 
-$$\text{Galois表示} \leftrightarrow \text{向量丛}$$
+$$\text{Galois表示} \leqftrightarrow \text{向量丛}$$
 
 **具体形式**：
 
@@ -360,7 +360,7 @@ $$\text{Galois表示} \leftrightarrow \text{向量丛}$$
 
 在Fargues-Fontaine曲线 $X$ 上，存在p进Hodge对应：
 
-$$\text{p进Hodge结构} \leftrightarrow \text{向量丛的过滤}$$
+$$\text{p进Hodge结构} \leqftrightarrow \text{向量丛的过滤}$$
 
 **具体形式**：
 
@@ -609,7 +609,7 @@ $$\mu(E_1) > \mu(E_2) > \cdots > \mu(E_n)$$
 
 向量丛 $E$ 是半稳定的，如果对于任何子丛 $F \subset E$，有：
 
-$$\mu(F) \leq \mu(E)$$
+$$\mu(F) \leqq \mu(E)$$
 
 其中 $\mu(E) = \deg(E)/\text{rank}(E)$ 是斜率。
 
@@ -830,7 +830,7 @@ Fargues-Fontaine曲线 $X$ 上结构层 $\mathcal{O}_X$ 的上同调：
 
 对于线丛 $\mathcal{O}_X(d)$：
 
-- 当 $d \geq 0$ 时：$H^0(X, \mathcal{O}_X(d)) \neq 0$
+- 当 $d \geqq 0$ 时：$H^0(X, \mathcal{O}_X(d)) \neqq 0$
 - 当 $d < 0$ 时：$H^0(X, \mathcal{O}_X(d)) = 0$
 - $H^1(X, \mathcal{O}_X(d))$ 由Riemann-Roch定理决定
 

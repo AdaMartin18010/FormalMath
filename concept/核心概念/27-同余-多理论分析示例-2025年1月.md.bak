@@ -1,4 +1,4 @@
-# 同余概念的多理论分析示例 / Multi-Theory Analysis Example: Congruence Concept
+﻿# 同余概念的多理论分析示例 / Multi-Theory Analysis Example: Congruence Concept
 
 **主题编号 / Topic ID**: C.CORE.027.MULTI
 **创建日期 / Created**: 2025年1月 / January 2025
@@ -130,7 +130,7 @@ This document provides a multi-theory analysis example for the "Congruence" conc
   - 通过公理严格定义同余 / Strictly defining congruences through axioms
 
 - **形式化定义 / Formal Definition**：
-  - 同余的形式化定义：$\text{Prime}(p) \Leftrightarrow p > 1 \land \forall a, b \in \mathbb{Z}^+, p = ab \Rightarrow (a = 1 \lor b = 1)$ / Formal definition of congruences: $\text{Prime}(p) \Leftrightarrow p > 1 \land \forall a, b \in \mathbb{Z}^+, p = ab \Rightarrow (a = 1 \lor b = 1)$
+  - 同余的形式化定义：$\text{Prime}(p) \leqftrightarrow p > 1 \land \forall a, b \in \mathbb{Z}^+, p = ab \Rightarrow (a = 1 \lor b = 1)$ / Formal definition of congruences: $\text{Prime}(p) \leqftrightarrow p > 1 \land \forall a, b \in \mathbb{Z}^+, p = ab \Rightarrow (a = 1 \lor b = 1)$
   - 同余分布的形式化定义 / Formal definition of prime distribution
   - 同余性质的严格证明 / Strict proof of congruence properties
 

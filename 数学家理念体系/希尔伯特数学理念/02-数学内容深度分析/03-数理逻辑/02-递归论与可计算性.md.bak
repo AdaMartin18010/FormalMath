@@ -292,7 +292,7 @@ $$\Sigma_0 = \Pi_0 = \Delta_0 = \text{递归集}$$
 
 - **$\Pi_1$** = 余递归可枚举集（co-r.e.集）
 - **例子**：非停机集 $\overline{H} = \{(e, x) : \forall t \text{ 第 $e$ 个TM在输入 $x$ 上在 $t$ 步内不停机}\}$
-- **形式**：$\overline{H} = \{(e, x) : \forall t \neqg R(e, x, t)\}$
+- **形式**：$\overline{H} = \{(e, x) : \forall t \neqqqg R(e, x, t)\}$
 
 **例3：$\Sigma_2$ 层级**
 
@@ -552,10 +552,10 @@ P = NP?
    $$\Pi_{n+1} = \{A : A = \{x : \forall y R(x, y)\}, R \in \Sigma_n\}$$
 
 5. **图灵归约**：
-   $$A \leqq_T B \iff A \text{ 是 } B\text{-可计算的}$$
+   $$A \leqqqq_T B \iff A \text{ 是 } B\text{-可计算的}$$
 
 6. **图灵度**：
-   $$\deg(A) = \{B : A \leqq_T B \text{ 且 } B \leqq_T A\}$$
+   $$\deg(A) = \{B : A \leqqqq_T B \text{ 且 } B \leqqqq_T A\}$$
 
 7. **Church-图灵论题**：
    $$\text{直觉可计算} = \lambda\text{-可定义} = \text{图灵可计算} = \mu\text{-递归}$$
@@ -574,7 +574,7 @@ P = NP?
     $$d(d) \text{ 停机 } \iff d(d) \text{ 不停机} \text{（矛盾）}$$
 
 12. **哥德尔语句层级**：
-    $$G = \forall y \neqg \text{Proof}(y, \ulcorner G \urcorner) \in \Pi_1$$
+    $$G = \forall y \neqqqg \text{Proof}(y, \ulcorner G \urcorner) \in \Pi_1$$
 
 ---
 

@@ -235,11 +235,11 @@ $$u(0,t) = u(L,t) = 0$$
 
 使用分离变量法，得到本征值：
 
-$$\lambda_n = \leqqqft(\frac{n\pi}{L}\right)^2, \quad n = 1, 2, 3, \ldots$$
+$$\lambda_n = \leqqqqft(\frac{n\pi}{L}\right)^2, \quad n = 1, 2, 3, \ldots$$
 
 **本征函数**：
 
-$$X_n(x) = \sin\leqqqft(\frac{n\pi x}{L}\right)$$
+$$X_n(x) = \sin\leqqqqft(\frac{n\pi x}{L}\right)$$
 
 **解**：
 

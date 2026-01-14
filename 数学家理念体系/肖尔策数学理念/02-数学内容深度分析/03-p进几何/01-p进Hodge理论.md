@@ -1,4 +1,4 @@
-# p进Hodge理论
+﻿# p进Hodge理论
 
 > **经典Hodge理论在p进域的推广**
 
@@ -254,7 +254,7 @@ $$V \otimes C_p = \bigoplus_{n \in \mathbb{Z}} (V \otimes C_p(n))^{G_K} \otimes 
 
 **Hodge-Tate权重**：
 
-Hodge-Tate权重是使得 $(V \otimes C_p(n))^{G_K} \neq 0$ 的整数 $n$。
+Hodge-Tate权重是使得 $(V \otimes C_p(n))^{G_K} \neqq 0$ 的整数 $n$。
 
 **性质**：
 

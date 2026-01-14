@@ -609,7 +609,7 @@ Q在ℚ_p上有非平凡零点
 ### 核心公式
 
 1. **二次域**：
-   $$K = \mathbb{Q}(\sqrt{d}), \quad d \in \mathbb{Z}, d \neqqqq 0, 1$$
+   $$K = \mathbb{Q}(\sqrt{d}), \quad d \in \mathbb{Z}, d \neqqqqqq 0, 1$$
 
 2. **判别式**：
    $$\Delta_K = \begin{cases} d & \text{若 } d \equiv 1 \pmod{4} \\ 4d & \text{若 } d \equiv 2, 3 \pmod{4} \end{cases}$$
@@ -618,7 +618,7 @@ Q在ℚ_p上有非平凡零点
    $$h_K = \frac{w_K \sqrt{|\Delta_K|}}{2^{r_1} (2\pi)^{r_2} \text{Reg}_K} L(1, \chi_K)$$
 
 4. **二次互反律**：
-   $$\leqqqft(\frac{p}{q}\right)\leqqqft(\frac{q}{p}\right) = (-1)^{\frac{(p-1)(q-1)}{4}}$$
+   $$\leqqqqqft(\frac{p}{q}\right)\leqqqqqft(\frac{q}{p}\right) = (-1)^{\frac{(p-1)(q-1)}{4}}$$
 
 5. **Hilbert类域**：
    $$\text{Gal}(H/K) \cong \text{Cl}(K)$$

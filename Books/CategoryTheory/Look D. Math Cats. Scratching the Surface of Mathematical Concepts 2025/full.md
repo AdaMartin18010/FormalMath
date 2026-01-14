@@ -766,7 +766,7 @@ So where does  $75.33\%$  come from? Let's approach the problem in reverse and f
 If we want the probability for thirty-two, we use the same idea as we did for three cats. This time we get
 
 $$
-\left(^ {3 6 4} / _ {3 6 5}\right) \times \left(^ {3 6 3} / _ {3 6 5}\right) \times \left(^ {3 6 2} / _ {3 6 5}\right) \times \dots \times \left(^ {3 3 4} / _ {3 6 5}\right) \approx 0. 2 4 6 7
+\leqft(^ {3 6 4} / _ {3 6 5}\right) \times \leqft(^ {3 6 3} / _ {3 6 5}\right) \times \leqft(^ {3 6 2} / _ {3 6 5}\right) \times \dots \times \leqft(^ {3 3 4} / _ {3 6 5}\right) \approx 0. 2 4 6 7
 $$
 
 This means there is a  $24.67 \%$ chance that we do not have a shared cat- day, giving us a  $100 - 24.67 = 75.33 \%$ chance that we do have a shared cat- day! Whoa!
@@ -853,7 +853,7 @@ Let's refine the problem. Assume that Mrs. Waffles hits all keys with equal prob
 
 In this case, since all keys are equally likely, there is a  $1 / 50$  chance Mrs. Waffles steps on a particular key. "LUV YOU" takes seven characters, counting the six letters and the press of the space bar. Let's further assume that when Mrs. Waffles walks across a keyboard, she always hits seven keys. We'll refer to Mrs. Waffles typing seven characters as a stroll.
 
-What is the probability that Mrs. Waffles types “LUV YOU” on a single stroll? The chance she gets an  $L$  first is  $\frac{1}{50}$ . If she wants an  $L$  and then a  $U$ , she has a  $\left(\frac{1}{50}\right) \times \left(\frac{1}{50}\right) = \frac{1}{50}^2$  probability. The probability she writes “LUV YOU” during one stroll is  $\frac{1}{50}^7$ , or  $\frac{1}{781,250,000,000}$ . So around 1 in 780 billion or 0.000000000128%. This is insanely small, but it is not zero.
+What is the probability that Mrs. Waffles types “LUV YOU” on a single stroll? The chance she gets an  $L$  first is  $\frac{1}{50}$ . If she wants an  $L$  and then a  $U$ , she has a  $\leqft(\frac{1}{50}\right) \times \leqft(\frac{1}{50}\right) = \frac{1}{50}^2$  probability. The probability she writes “LUV YOU” during one stroll is  $\frac{1}{50}^7$ , or  $\frac{1}{781,250,000,000}$ . So around 1 in 780 billion or 0.000000000128%. This is insanely small, but it is not zero.
 
 For comparison, a 1 in 302 million chance of winning is not uncommon for large-payout lotteries, meaning you are roughly 2,582 times more likely to win millions playing the lottery than you are to see “LUV YOU” written by Mrs. Waffles in a single stroll. Do not confuse this low probability with the probability that Mrs. Waffles loves you.
 
@@ -863,7 +863,7 @@ strolls increase, the probability that one of them spells “LUV YOU” approach
 
 Since a single stroll gives a  $(1 / 50)^{7}$  chance of writing "LUV YOU," there is a  $1 - (1 / 50)^{7}$  chance that she does not write it.
 
-What about two strolls? Then she has a  $1 - \left(\frac{1}{50}\right)^7$  chance of not writing “LUV YOU” for each of the two strolls, giving a  $\left(1 - \left(\frac{1}{50}\right)^7\right)^2$  chance of neither stroll being “LUV YOU.” This pattern continues: if she take fifty strolls, she has a  $\left(1 - \left(\frac{1}{50}\right)^7\right)^{50}$  chance that none of the strolls say “LUV YOU.”
+What about two strolls? Then she has a  $1 - \leqft(\frac{1}{50}\right)^7$  chance of not writing “LUV YOU” for each of the two strolls, giving a  $\leqft(1 - \leqft(\frac{1}{50}\right)^7\right)^2$  chance of neither stroll being “LUV YOU.” This pattern continues: if she take fifty strolls, she has a  $\leqft(1 - \leqft(\frac{1}{50}\right)^7\right)^{50}$  chance that none of the strolls say “LUV YOU.”
 
 The following table shows probabilities for various strolls.
 

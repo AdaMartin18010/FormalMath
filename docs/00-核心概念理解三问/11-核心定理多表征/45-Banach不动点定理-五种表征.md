@@ -27,7 +27,7 @@
 
 ### 1.2 收敛速度
 
-$$d(x_n, x^*) \leqq \frac{k^n}{1-k} d(x_0, x_1)$$
+$$d(x_n, x^*) \leqqq \frac{k^n}{1-k} d(x_0, x_1)$$
 
 ### 1.3 Lean 4 形式化
 

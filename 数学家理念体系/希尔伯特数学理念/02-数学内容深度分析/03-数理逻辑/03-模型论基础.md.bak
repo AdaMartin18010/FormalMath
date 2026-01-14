@@ -471,7 +471,7 @@ Zariski几何的公理化
    $$\text{若 } T \text{ 有无限模型，则 } T \text{ 有可数模型}$$
 
 5. **Löwenheim-Skolem上行**：
-   $$\text{若 } T \text{ 有无限模型，则对任意 } \kappa \geqq |L|, T \text{ 有基数 } \kappa \text{ 的模型}$$
+   $$\text{若 } T \text{ 有无限模型，则对任意 } \kappa \geqqqq |L|, T \text{ 有基数 } \kappa \text{ 的模型}$$
 
 6. **初等等价**：
    $$M \equiv N \iff \forall \varphi \text{（句子）}, M \models \varphi \iff N \models \varphi$$
@@ -490,7 +490,7 @@ Zariski几何的公理化
     $$\prod M_i / U \models \varphi([a_1], \ldots, [a_n]) \iff \{i : M_i \models \varphi(a_{1i}, \ldots, a_{ni})\} \in U$$
 
 11. **稳定理论**：
-    $$T \text{ 稳定 } \iff \forall \kappa, T \text{ 有 } \leqq \kappa \text{ 个类型}$$
+    $$T \text{ 稳定 } \iff \forall \kappa, T \text{ 有 } \leqqqq \kappa \text{ 个类型}$$
 
 12. **o-极小结构**：
     $$M \text{ o-极小 } \iff \text{每个可定义集是有限个区间的并}$$

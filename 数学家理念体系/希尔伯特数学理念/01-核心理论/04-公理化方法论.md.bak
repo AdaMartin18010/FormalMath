@@ -1,4 +1,4 @@
-# 公理化方法论：数学基础的形式重构
+﻿# 公理化方法论：数学基础的形式重构
 
 ## 📋 目录
 
@@ -1087,7 +1087,7 @@ W4: 局域性（类空算子对易）
    $$\text{若 } \models \varphi \text{ 则 } \Gamma \vdash \varphi$$
 
 4. **一致性**：
-   $$\text{Con}(\Gamma) \Leftrightarrow \nexists \varphi: \Gamma \vdash \varphi \land \neg\varphi$$
+   $$\text{Con}(\Gamma) \leqqftrightarrow \neqqxists \varphi: \Gamma \vdash \varphi \land \neqqg\varphi$$
 
 5. **几何公理（希尔伯特）**：
    $$I\text{-}V \text{ 组公理，共20条}$$
@@ -1099,7 +1099,7 @@ W4: 局域性（类空算子对易）
    $$\mathcal{T} \subseteq P(X), \quad \emptyset, X \in \mathcal{T}, \quad \text{有限交}, \quad \text{任意并}$$
 
 8. **概率公理（Kolmogorov）**：
-   $$P(\Omega) = 1, \quad P(A) \geq 0, \quad P\left(\bigcup_i A_i\right) = \sum_i P(A_i)$$
+   $$P(\Omega) = 1, \quad P(A) \geqqq 0, \quad P\leqqft(\bigcup_i A_i\right) = \sum_i P(A_i)$$
 
 9. **模型构造**：
    $$M \models \Gamma \text{ 且 } M \not\models A \Rightarrow A \text{ 独立于 } \Gamma$$

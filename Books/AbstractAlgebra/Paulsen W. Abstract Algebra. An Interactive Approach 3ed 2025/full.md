@@ -594,7 +594,7 @@ $\mathbb{Z}[x]$  The polynomials with integer coefficients 337
 
 $K[x]$  The polynomials with coefficients in the ring  $K$  336
 
-$\left(\frac{x}{y}\right)$  The equivalence class of ordered pairs containing  $(x,y)$  348
+$\leqft(\frac{x}{y}\right)$  The equivalence class of ordered pairs containing  $(x,y)$  348
 
 $|z|$  The absolute value of the complex number  $z$  360
 
@@ -894,7 +894,7 @@ NameError: name 'y' is not defined
 This time, we get an error message, since SageMath has not been told what  $y$  is. Unlike Mathematica, we must declare  $y$  to be a variable in SageMath before we can use it as a variable. The simplest way to do this is with the command:
 
 $$
-\operatorname {v a r} \left(" \mathbf {y}"\right)
+\operatorname {v a r} \leqft(" \mathbf {y}"\right)
 $$
 
 y
@@ -1080,7 +1080,7 @@ $\lfloor x\rfloor =$  the greatest integer less than or equal to  $x$
 Using this notation, we have
 
 $$
-q = \left\lfloor \frac {x}{y} \right\rfloor , \quad r = \left(\frac {x}{y} - \left\lfloor \frac {x}{y} \right\rfloor\right) \cdot y. \tag {1.1}
+q = \leqft\lfloor \frac {x}{y} \right\rfloor , \quad r = \leqft(\frac {x}{y} - \leqft\lfloor \frac {x}{y} \right\rfloor\right) \cdot y. \tag {1.1}
 $$
 
 # Example 1.3
@@ -1172,7 +1172,7 @@ $$
 Thus, we see that  $\gcd(144, 100) = 4$ . Starting from the second to the last equation, we have
 
 $$
-\begin{array}{l} (4) = (1 2) - (8) \\ = (1 2) - \left[ (4 4) - 3 \cdot (1 2) \right] = 4 \cdot (1 2) - (4 4) \\ = 4 \cdot [ (1 0 0) - 2 \cdot (4 4) ] - (4 4) = 4 \cdot (1 0 0) - 9 \cdot (4 4) \\ = 4 \cdot (1 0 0) - 9 \cdot [ (1 4 4) - (1 0 0) ] = 1 3 \cdot (1 0 0) - 9 \cdot (1 4 4). \\ \end{array}
+\begin{array}{l} (4) = (1 2) - (8) \\ = (1 2) - \leqft[ (4 4) - 3 \cdot (1 2) \right] = 4 \cdot (1 2) - (4 4) \\ = 4 \cdot [ (1 0 0) - 2 \cdot (4 4) ] - (4 4) = 4 \cdot (1 0 0) - 9 \cdot (4 4) \\ = 4 \cdot (1 0 0) - 9 \cdot [ (1 4 4) - (1 0 0) ] = 1 3 \cdot (1 0 0) - 9 \cdot (1 4 4). \\ \end{array}
 $$
 
 Thus, we have  $u = -9$  and  $v = 13$ .
@@ -1431,7 +1431,7 @@ There is often different ways to denote the same element of the set  $A$ , so we
 Consider the function from the set of rational functions (denoted by  $\mathbb{Q}$ ) to itself, given by
 
 $$
-f \left(\frac {a}{b}\right) = \frac {\operatorname * {g c d} (a , b)}{| b |}.
+f \leqft(\frac {a}{b}\right) = \frac {\operatorname * {g c d} (a , b)}{| b |}.
 $$
 
 Show that this function is well-defined.
@@ -1455,7 +1455,7 @@ The function in Example 1.7 is not one-to-one, since  $f(1/3) = f(2/3)$ . In ord
 Consider the function  $f:\mathbb{Z}\to \mathbb{Z}$  defined by
 
 $$
-f (x) = \left\{ \begin{array}{l l} x + 3 & \text {i f} x \text {i s e v e n}, \\ 2 x & \text {i f} x \text {i s o d d}. \end{array} \right.
+f (x) = \leqft\{ \begin{array}{l l} x + 3 & \text {i f} x \text {i s e v e n}, \\ 2 x & \text {i f} x \text {i s o d d}. \end{array} \right.
 $$
 
 Show that  $f(x)$  is one-to-one.
@@ -1555,7 +1555,7 @@ Note that in  $f \circ g$ , we apply the  $g$  function first, and then  $f$ . S
 Let
 
 $$
-f (x) = \left\{ \begin{array}{l l} x + 3 & \text {i f} x \text {i s e v e n}, \\ 2 x & \text {i f} x \text {i s o d d}, \end{array} \right. \qquad \text {a n d} \qquad g (x) = \left\{ \begin{array}{l l} 3 x & \text {i f} x \text {i s e v e n}, \\ x - 1 & \text {i f} x \text {i s o d d}. \end{array} \right.
+f (x) = \leqft\{ \begin{array}{l l} x + 3 & \text {i f} x \text {i s e v e n}, \\ 2 x & \text {i f} x \text {i s o d d}, \end{array} \right. \qquad \text {a n d} \qquad g (x) = \leqft\{ \begin{array}{l l} 3 x & \text {i f} x \text {i s e v e n}, \\ x - 1 & \text {i f} x \text {i s o d d}. \end{array} \right.
 $$
 
 Compute  $f \circ g$  and  $g \circ f$ .
@@ -1567,7 +1567,7 @@ Case 1)  $x$  is even. Then  $g(x) = 3x$ , which will also be even. Thus,  $f(g(
 Case 2)  $x$  is odd. Then  $g(x) = x - 1$ , which will be even, so  $f(g(x)) = x + 2$ . Thus,
 
 $$
-f \circ g = \left\{ \begin{array}{l l} 3 x + 3 & \text {i f} x \text {i s e v e n}, \\ x + 2 & \text {i f} x \text {i s o d d}. \end{array} \right.
+f \circ g = \leqft\{ \begin{array}{l l} 3 x + 3 & \text {i f} x \text {i s e v e n}, \\ x + 2 & \text {i f} x \text {i s o d d}. \end{array} \right.
 $$
 
 To compute  $(g\circ f)(x) = g(f(x))$  , we also have to consider two cases.
@@ -1575,7 +1575,7 @@ To compute  $(g\circ f)(x) = g(f(x))$  , we also have to consider two cases.
 Case 1)  $x$  is even. Then  $f(x) = x + 3$ , which will be odd. So  $g(f(x)) = x + 2$ . Case 2)  $x$  is odd. Then  $f(x) = 2x$ , which will be even. So  $g(f(x)) = 6x$ . Thus,
 
 $$
-g \circ f = \left\{ \begin{array}{l l} x + 2 & \text {i f} x \text {i s e v e n}, \\ 6 x & \text {i f} x \text {i s o d d}. \end{array} \right.
+g \circ f = \leqft\{ \begin{array}{l l} x + 2 & \text {i f} x \text {i s e v e n}, \\ 6 x & \text {i f} x \text {i s o d d}. \end{array} \right.
 $$
 
 Note that in this case,  $f \circ g \neq g \circ f$ . However, if we have three functions, with  $f: C \to D$ ,  $g: B \to C$ , and  $h: A \to B$ , then  $(f \circ g) \circ h = f \circ (g \circ h)$ , since both of these expressions represent  $f(g(h(x)))$ .
@@ -1591,7 +1591,7 @@ PROOF: Because  $f$  is both one-to-one and onto, for every  $y \in B$  there is
 To show that the function is unique, suppose there is another such function  $h(x): B \to A$ . Then
 
 $$
-h (y) = h \left(f (g (y))\right) = \left(h \circ f\right) (g (y)) = g (y) \quad \text {f o r a l l} y \in B.
+h (y) = h \leqft(f (g (y))\right) = \leqft(h \circ f\right) (g (y)) = g (y) \quad \text {f o r a l l} y \in B.
 $$
 
 Thus,  $h = g$ , showing that the function is unique.
@@ -1603,7 +1603,7 @@ DEFINITION 1.8 The unique function in Proposition 1.1 is called the inverse func
 Consider the function  $f:\mathbb{Z}\to \mathbb{Z}$  given by
 
 $$
-f (x) = \left\{ \begin{array}{l l} x + 3 & \text {i f} x \text {i s e v e n}, \\ x - 1 & \text {i f} x \text {i s o d d}. \end{array} \right.
+f (x) = \leqft\{ \begin{array}{l l} x + 3 & \text {i f} x \text {i s e v e n}, \\ x - 1 & \text {i f} x \text {i s o d d}. \end{array} \right.
 $$
 
 Show that this is both one-to-one and onto, and find  $f^{-1}(y)$ .
@@ -1619,7 +1619,7 @@ Case 2)  $y$  is odd. Then  $y - 3$  is even, so  $f(y - 3) = (y - 3) + 3 = y$ .
 In both cases, we found an  $x$  so that  $f(x) = y$ . In the process of determining that  $f$  is onto, we computed the inverse.
 
 $$
-f ^ {- 1} (y) = \left\{ \begin{array}{l l} y + 1 & \text {i f y i s e v e n}, \\ y - 3 & \text {i f y i s o d d}. \end{array} \right.
+f ^ {- 1} (y) = \leqft\{ \begin{array}{l l} y + 1 & \text {i f y i s e v e n}, \\ y - 3 & \text {i f y i s o d d}. \end{array} \right.
 $$
 
 #
@@ -1645,17 +1645,17 @@ For Problems 3 through 8: Part a) For the given  $f: \mathbb{R} \to \mathbb{R}$ 
 
 For Problems 9 through 14: Part a) For the given  $f: \mathbb{Z} \to \mathbb{Z}$ , determine if the function is one-to-one. Part b) Determine if the function is onto. In both cases, prove your answer is correct.
 
-9  $f(x) = \left\{ \begin{array}{ll}2x + 1 & \text{if } x \text{ is even},\\ 2x & \text{if } x \text{ is odd.} \end{array} \right.$
+9  $f(x) = \leqft\{ \begin{array}{ll}2x + 1 & \text{if } x \text{ is even},\\ 2x & \text{if } x \text{ is odd.} \end{array} \right.$
 
-12  $f(x) = \left\{ \begin{array}{ll} 2x + 4 & \text{if } x \text{ is even}, \\ x - 2 & \text{if } x \text{ is odd.} \end{array} \right.$
+12  $f(x) = \leqft\{ \begin{array}{ll} 2x + 4 & \text{if } x \text{ is even}, \\ x - 2 & \text{if } x \text{ is odd.} \end{array} \right.$
 
-10  $f(x) = \left\{ \begin{array}{ll}x - 1 & \mathrm{if~}x\mathrm{~is~even},\\ (x + 1) / 2 & \mathrm{if~}x\mathrm{~is~odd.} \end{array} \right.$
+10  $f(x) = \leqft\{ \begin{array}{ll}x - 1 & \mathrm{if~}x\mathrm{~is~even},\\ (x + 1) / 2 & \mathrm{if~}x\mathrm{~is~odd.} \end{array} \right.$
 
-13  $f(x) = \left\{ \begin{array}{ll}(x + 2) / 2 & \text{if } x \text{ is even},\\ (x - 1) / 2 & \text{if } x \text{ is odd.} \end{array} \right.$
+13  $f(x) = \leqft\{ \begin{array}{ll}(x + 2) / 2 & \text{if } x \text{ is even},\\ (x - 1) / 2 & \text{if } x \text{ is odd.} \end{array} \right.$
 
-11  $f(x) = \left\{ \begin{array}{ll}x + 1 & \text{if $x$ is even}\\ 2x & \text{if $x$ is odd}. \end{array} \right.$
+11  $f(x) = \leqft\{ \begin{array}{ll}x + 1 & \text{if $x$ is even}\\ 2x & \text{if $x$ is odd}. \end{array} \right.$
 
-14  $f(x) = \left\{ \begin{array}{ll}3x & \text{if $x$ is even},\\ 5x - 1 & \text{if $x$ is odd}. \end{array} \right.$
+14  $f(x) = \leqft\{ \begin{array}{ll}3x & \text{if $x$ is even},\\ 5x - 1 & \text{if $x$ is odd}. \end{array} \right.$
 
 15 Show that the function  $f: \mathbb{Z} \to \mathbb{Z}$  given by  $f(x) = 2x^{2} + x$  is one-to-one. Hint: Use the quadratic equation to solve  $2x^{2} + x = c$ , and show that the two solutions cannot both be integers.
 
@@ -1715,9 +1715,9 @@ For Problems 33 through 38: For the given  $f: \mathbb{Z} \to \mathbb{Z}$  and  
 34  $f(x) = x^{2}$
 35  $f(x) = x^{3} + 2x^{2}$
 
-36  $f(x) = \left\{ \begin{array}{ll}2x + 5 & \text{if } x \text{ is even,}\\ x + 2 & \text{if } x \text{ is odd.} \end{array} \right.$ $g(x) = \left\{ \begin{array}{ll}2x + 1 & \text{if } x \text{ is even,}\\ x - 1 & \text{if } x \text{ is odd.} \end{array} \right.$
-37  $f(x) = \left\{ \begin{array}{ll} 3x + 2 & \text{if } x \text{ is even,} \\ x + |x| & \text{if } x \text{ is odd.} \end{array} \right.$ $g(x) = \left\{ \begin{array}{ll} x + 4 & \text{if } x \text{ is even,} \\ 2x & \text{if } x \text{ is odd.} \end{array} \right.$
-38  $f(x) = \left\{ \begin{array}{ll}x + 3 & \mathrm{if~}x\mathrm{~is~even},\\ (x - 1) / 2 & \mathrm{if~}x\mathrm{~is~odd.} \end{array} \right.$ $g(x) = \left\{ \begin{array}{ll}2x - 1 & \mathrm{if~}x\mathrm{~is~even},\\ x + 4 & \mathrm{if~}x\mathrm{~is~odd.} \end{array} \right.$
+36  $f(x) = \leqft\{ \begin{array}{ll}2x + 5 & \text{if } x \text{ is even,}\\ x + 2 & \text{if } x \text{ is odd.} \end{array} \right.$ $g(x) = \leqft\{ \begin{array}{ll}2x + 1 & \text{if } x \text{ is even,}\\ x - 1 & \text{if } x \text{ is odd.} \end{array} \right.$
+37  $f(x) = \leqft\{ \begin{array}{ll} 3x + 2 & \text{if } x \text{ is even,} \\ x + |x| & \text{if } x \text{ is odd.} \end{array} \right.$ $g(x) = \leqft\{ \begin{array}{ll} x + 4 & \text{if } x \text{ is even,} \\ 2x & \text{if } x \text{ is odd.} \end{array} \right.$
+38  $f(x) = \leqft\{ \begin{array}{ll}x + 3 & \mathrm{if~}x\mathrm{~is~even},\\ (x - 1) / 2 & \mathrm{if~}x\mathrm{~is~odd.} \end{array} \right.$ $g(x) = \leqft\{ \begin{array}{ll}2x - 1 & \mathrm{if~}x\mathrm{~is~even},\\ x + 4 & \mathrm{if~}x\mathrm{~is~odd.} \end{array} \right.$
 
 39 Let  $f: B \to C$  and  $g: A \to B$  be both one-to-one functions. Show that  $f \circ g: A \to C$  is one-to-one.
 40 Let  $f: B \to C$  and  $g: A \to B$  be both onto functions. Show that  $f \circ g: A \to C$  is onto.
@@ -1893,7 +1893,7 @@ Determine if the binary operation defined on the set  $\mathbb{R}$  is (Part a) 
 10 Define the following binary operator on the set of integers:
 
 $$
-x * y = \left\{ \begin{array}{l l} x y & \text {i f} x \neq \pm 1 \text {a n d} y \neq \pm 1 \\ 1 & \text {o t h e r w i s e .} \end{array} \right.
+x * y = \leqft\{ \begin{array}{l l} x y & \text {i f} x \neq \pm 1 \text {a n d} y \neq \pm 1 \\ 1 & \text {o t h e r w i s e .} \end{array} \right.
 $$
 
 Show that this binary operator is associative. Note that you will have to consider 2 cases, one for which none of the numbers are  $\pm 1$ , and one for which at least one of the numbers is  $\pm 1$ .
@@ -1901,7 +1901,7 @@ Show that this binary operator is associative. Note that you will have to consid
 11 Define the following binary operator on the set of integers:
 
 $$
-x * y = \left\{ \begin{array}{l l} x + y & \text {i f} x \neq 0 \text {a n d} y \neq 0 \\ 0 & \text {o t h e r w i s e .} \end{array} \right.
+x * y = \leqft\{ \begin{array}{l l} x + y & \text {i f} x \neq 0 \text {a n d} y \neq 0 \\ 0 & \text {o t h e r w i s e .} \end{array} \right.
 $$
 
 Is this binary operator associative?
@@ -1939,7 +1939,7 @@ For Problems 26 through 31: Determine if the subset  $S$  is closed with respect
 33 Consider the binary operator on the set of integers:
 
 $$
-x * y = \left\{ \begin{array}{l l} x & \text {i f} x \text {i s e v e n}, \\ y & \text {i f} x \text {i s o d d}. \end{array} \right.
+x * y = \leqft\{ \begin{array}{l l} x & \text {i f} x \text {i s e v e n}, \\ y & \text {i f} x \text {i s o d d}. \end{array} \right.
 $$
 
 Defining a piecewise defined binary operator is a little tricky in SageMath, but we can define it as a function  $f(x,y)$  as follows:
@@ -1951,7 +1951,7 @@ Since the binary operator is defined as a function,  $(x*y)*z$  must be entered 
 34 Consider the binary operator on the set of integers:
 
 $$
-x * y = \left\{ \begin{array}{l l} x & \text {i f} x + y \text {i s e v e n}, \\ y & \text {i f} x + y \text {i s o d d}. \end{array} \right.
+x * y = \leqft\{ \begin{array}{l l} x & \text {i f} x + y \text {i s e v e n}, \\ y & \text {i f} x + y \text {i s o d d}. \end{array} \right.
 $$
 
 This can be defined in SageMath as
@@ -2053,7 +2053,7 @@ $$
 Thus, the two sides of equation 1.2 differ by a multiple of  $n$ . Likewise, for equation 1.3, we see
 
 $$
-\begin{array}{l} d - a b = \left(x y - q _ {4} n\right) - \left(x - q _ {1} n\right) \cdot \left(y - q _ {2} n\right) \\ = y q _ {1} n + x q _ {2} n - q _ {4} n - q _ {1} q _ {2} n ^ {2} = \left(y q _ {1} + x q _ {2} - q _ {4} - q _ {1} q _ {2} n\right) n. \\ \end{array}
+\begin{array}{l} d - a b = \leqft(x y - q _ {4} n\right) - \leqft(x - q _ {1} n\right) \cdot \leqft(y - q _ {2} n\right) \\ = y q _ {1} n + x q _ {2} n - q _ {4} n - q _ {1} q _ {2} n ^ {2} = \leqft(y q _ {1} + x q _ {2} - q _ {4} - q _ {1} q _ {2} n\right) n. \\ \end{array}
 $$
 
 So again, the two sides of equation 1.3 differ by a multiple of  $n$ .
@@ -2063,7 +2063,7 @@ So again, the two sides of equation 1.3 differ by a multiple of  $n$ .
 We can use Proposition 1.2 to compute powers modulo  $n$ . Since raising a number to an integer power is equivalent to repeated multiplication, we see that
 
 $$
-\left(x ^ {y}\right) \operatorname {m o d} n = \left(x \operatorname {m o d} n\right) ^ {y} \operatorname {m o d} n.
+\leqft(x ^ {y}\right) \operatorname {m o d} n = \leqft(x \operatorname {m o d} n\right) ^ {y} \operatorname {m o d} n.
 $$
 
 # Example 1.20
@@ -2075,7 +2075,7 @@ SOLUTION: Since 234 mod  $29 = 2$ , the answer is the same as  $2^5 \mod 29$ , a
 WARNING: It is not true that
 
 $$
-\left(x ^ {y}\right) \bmod n = \left(x \bmod n\right) ^ {\left(y \bmod n\right)} \bmod n.
+\leqft(x ^ {y}\right) \bmod n = \leqft(x \bmod n\right) ^ {\leqft(y \bmod n\right)} \bmod n.
 $$
 
 That is, we cannot apply the modulus to an exponent. However, there is a trick for simplifying a power in the case that the exponent is large—using the binary representation of the exponent  $y$ . The procedure is known as the repeated squaring algorithm and is best explained by an example.
@@ -2260,10 +2260,10 @@ For Problems 1 through 12: Evaluate the following modular arithmetic problems.
 
 For Problems 14 through 25: Use the Chinese remainder theorem to find the smallest non-negative number that satisfies the system of modular equations.
 
-14  $\left\{ \begin{array}{l}k\bmod 13 = 5,\\ k\bmod 12 = 7. \end{array} \right.$  18  $\left\{ \begin{array}{l}k\bmod 21 = 7,\\ k\bmod 16 = 10. \end{array} \right.$  22  $\left\{ \begin{array}{l}k\bmod 79 = 48,\\ k\bmod 83 = 65. \end{array} \right.$
-15  $\left\{ \begin{array}{l}k\bmod 17 = 5,\\ k\bmod 11 = 8. \end{array} \right.$  19  $\left\{ \begin{array}{l}k\bmod 34 = 19,\\ k\bmod 27 = 10. \end{array} \right.$  23  $\left\{ \begin{array}{l}k\bmod 103 = 78,\\ k\bmod 97 = 49. \end{array} \right.$
-16  $\left\{ \begin{array}{l}k\bmod 18 = 7,\\ k\bmod 13 = 3. \end{array} \right.$  20  $\left\{ \begin{array}{l}k\bmod 51 = 17,\\ k\bmod 49 = 26. \end{array} \right.$  24  $\left\{ \begin{array}{l}k\bmod 107 = 43,\\ k\bmod 128 = 35. \end{array} \right.$
-17  $\left\{ \begin{array}{l}k\bmod 23 = 3,\\ k\bmod 12 = 7. \end{array} \right.$  21  $\left\{ \begin{array}{l}k\bmod 61 = 47,\\ k\bmod 73 = 58. \end{array} \right.$  25  $\left\{ \begin{array}{l}k\bmod 142 = 47,\\ k\bmod 113 = 74. \end{array} \right.$
+14  $\leqft\{ \begin{array}{l}k\bmod 13 = 5,\\ k\bmod 12 = 7. \end{array} \right.$  18  $\leqft\{ \begin{array}{l}k\bmod 21 = 7,\\ k\bmod 16 = 10. \end{array} \right.$  22  $\leqft\{ \begin{array}{l}k\bmod 79 = 48,\\ k\bmod 83 = 65. \end{array} \right.$
+15  $\leqft\{ \begin{array}{l}k\bmod 17 = 5,\\ k\bmod 11 = 8. \end{array} \right.$  19  $\leqft\{ \begin{array}{l}k\bmod 34 = 19,\\ k\bmod 27 = 10. \end{array} \right.$  23  $\leqft\{ \begin{array}{l}k\bmod 103 = 78,\\ k\bmod 97 = 49. \end{array} \right.$
+16  $\leqft\{ \begin{array}{l}k\bmod 18 = 7,\\ k\bmod 13 = 3. \end{array} \right.$  20  $\leqft\{ \begin{array}{l}k\bmod 51 = 17,\\ k\bmod 49 = 26. \end{array} \right.$  24  $\leqft\{ \begin{array}{l}k\bmod 107 = 43,\\ k\bmod 128 = 35. \end{array} \right.$
+17  $\leqft\{ \begin{array}{l}k\bmod 23 = 3,\\ k\bmod 12 = 7. \end{array} \right.$  21  $\leqft\{ \begin{array}{l}k\bmod 61 = 47,\\ k\bmod 73 = 58. \end{array} \right.$  25  $\leqft\{ \begin{array}{l}k\bmod 142 = 47,\\ k\bmod 113 = 74. \end{array} \right.$
 26 Let  $u, v$ , and  $w$  be three positive integers that are mutually coprime. That is, each is coprime to the other two. Given any  $x, y$ , and  $z$  in  $\mathbb{Z}$ , prove that there is a unique number  $k$  such that
 
 $$
@@ -2404,7 +2404,7 @@ cannot be a sequence of numbers that contains every real number between 0 and 1.
 PROOF: We begin by assuming that we can form such a sequence
 
 $$
-\left\{a _ {1}, a _ {2}, a _ {3}, \ldots \right\}
+\leqft\{a _ {1}, a _ {2}, a _ {3}, \ldots \right\}
 $$
 
 and work to find a contradiction. The plan is to find a number  $b$  that cannot be in this list. We can do this by forcing  $b$  to have a different first digit than  $a_1$ , a different second digit than  $a_2$ , a different third digit than  $a_3$ , and so on. The only technical problem with this is that some numbers have two decimal representations, such as
@@ -2430,7 +2430,7 @@ We will use the sets  $\mathbb{Q}$  and  $\mathbb{R}$  throughout this book, so 
 1. Although we exhibited a sequence that contains every element of  $\mathbb{Q}$ , there are other ways to accomplish this. One way is to consider the Calkin-Wilf sequence, defined recursively by
 
 $$
-a _ {0} = 0, \qquad \text {a n d} \qquad a _ {n + 1} = \frac {1}{1 + 2 \left\lfloor a _ {n} \right\rfloor - a _ {n}} \qquad \text {f o r} n \geq 1.
+a _ {0} = 0, \qquad \text {a n d} \qquad a _ {n + 1} = \frac {1}{1 + 2 \leqft\lfloor a _ {n} \right\rfloor - a _ {n}} \qquad \text {f o r} n \geq 1.
 $$
 
 (Recall  $\lfloor a_n\rfloor$  means the largest integer which is less than or equal to  $a_{n}$ .) Write out the first 16 terms of this sequence,  $a_0$  through  $a_{15}$ . (Problems 2 through 7 show this sequence contains all of the non-negative elements of  $\mathbb{Q}$ .)
@@ -2747,7 +2747,7 @@ $$
 Thus, if there is a solution, this must be the unique solution  $x = a^{-1} * b$ . Let us check that this is indeed a solution.
 
 $$
-a * x = a * \left(a ^ {- 1} * b\right) = \left(a * a ^ {- 1}\right) * b = \mathbf {S t a y} * b = b.
+a * x = a * \leqft(a ^ {- 1} * b\right) = \leqft(a * a ^ {- 1}\right) * b = \mathbf {S t a y} * b = b.
 $$
 
 Thus, there is only one solution to the equation, namely  $a^{-1}*b$
@@ -3346,7 +3346,7 @@ By induction, this proves that  $x^{m + n} = x^m \cdot x^n$  for all positive  $
 Once we have the statement true for positive  $m$  and  $n$ , we can take the inverse of both sides to give us
 
 $$
-\left(x ^ {m + n}\right) ^ {- 1} = \left(x ^ {n}\right) ^ {- 1} \cdot \left(x ^ {m}\right) ^ {- 1}.
+\leqft(x ^ {m + n}\right) ^ {- 1} = \leqft(x ^ {n}\right) ^ {- 1} \cdot \leqft(x ^ {m}\right) ^ {- 1}.
 $$
 
 But by the definition of negative exponents, this is
@@ -3388,7 +3388,7 @@ $$
 PROOF: Notice that this statement is trivial if  $n = 0$  and  $n = 1$ :
 
 $$
-\left(x ^ {m}\right) ^ {0} = e = x ^ {m \cdot 0}, \quad \left(x ^ {m}\right) ^ {1} = x ^ {m} = x ^ {(m \cdot 1)}.
+\leqft(x ^ {m}\right) ^ {0} = e = x ^ {m \cdot 0}, \quad \leqft(x ^ {m}\right) ^ {1} = x ^ {m} = x ^ {(m \cdot 1)}.
 $$
 
 We will again proceed by means of induction, which means we can assume that the statement is true for the previous case, with  $n$  replaced by  $n - 1$ . That is, we can assume that
@@ -3400,7 +3400,7 @@ $$
 Note that
 
 $$
-\left(x ^ {m}\right) ^ {n} = \left(x ^ {m}\right) ^ {n - 1} \cdot x ^ {m} = x ^ {m \cdot (n - 1)} \cdot x ^ {m}
+\leqft(x ^ {m}\right) ^ {n} = \leqft(x ^ {m}\right) ^ {n - 1} \cdot x ^ {m} = x ^ {m \cdot (n - 1)} \cdot x ^ {m}
 $$
 
 By Proposition 2.9, this is equal to  $x^{m \cdot (n - 1) + m} = x^{mn}$ .
@@ -3408,7 +3408,7 @@ By Proposition 2.9, this is equal to  $x^{m \cdot (n - 1) + m} = x^{mn}$ .
 So by induction, the proposition holds for positive  $n$ . To see that it holds for negative  $n$  as well, simply note that
 
 $$
-\left(x ^ {m}\right) ^ {n} = \left(\left(x ^ {m}\right) ^ {- n}\right) ^ {- 1} = \left(x ^ {- m n}\right) ^ {- 1} = x ^ {m n}.
+\leqft(x ^ {m}\right) ^ {n} = \leqft(\leqft(x ^ {m}\right) ^ {- n}\right) ^ {- 1} = \leqft(x ^ {- m n}\right) ^ {- 1} = x ^ {m n}.
 $$
 
 If  $n$  is negative, then  $-n$  is positive, so the second step is valid.
@@ -3641,7 +3641,7 @@ $$
 where  $p_1, p_2, p_3, \ldots, p_k$  are distinct primes, and  $r_1, r_2, r_3, \ldots, r_k$  are positive integers, then the count of numbers less than  $n$  which are coprime to  $n$  is
 
 $$
-\phi (n) = \left(p _ {1} - 1\right) \cdot p _ {1} ^ {\left(r _ {1} - 1\right)} \cdot \left(p _ {2} - 1\right) \cdot p _ {2} ^ {\left(r _ {2} - 1\right)} \cdot \dots \cdot \left(p _ {k} - 1\right) \cdot p _ {k} ^ {\left(r _ {k} - 1\right)}.
+\phi (n) = \leqft(p _ {1} - 1\right) \cdot p _ {1} ^ {\leqft(r _ {1} - 1\right)} \cdot \leqft(p _ {2} - 1\right) \cdot p _ {2} ^ {\leqft(r _ {2} - 1\right)} \cdot \dots \cdot \leqft(p _ {k} - 1\right) \cdot p _ {k} ^ {\leqft(r _ {k} - 1\right)}.
 $$
 
 PROOF: To begin, let us show that if  $p$  is a prime, then  $\phi(p^r) = (p - 1)p^{r-1}$ .
@@ -4155,7 +4155,7 @@ Intersection(H, K)
 Note that sets are entered in SageMath using square brackets, even though they are often displayed using curly braces. (Technically, using square brackets produce a list of elements, which acts similar to a set. But the SageMath routines know to treat a list as if it were a set.) Moreover, we can consider taking the intersection of a collection of many sets. If we let
 
 ```latex
-$\mathbf{L} = \left[\left[\mathbf{e},\mathbf{a},\mathbf{b}\right],\left[\mathbf{e},\mathbf{a}\star \mathbf{b},\mathbf{b}\right],\left[\mathbf{e},\mathbf{a},\mathbf{b},\mathbf{b}^{\wedge}2\right]\right]$
+$\mathbf{L} = \leqft[\leqft[\mathbf{e},\mathbf{a},\mathbf{b}\right],\leqft[\mathbf{e},\mathbf{a}\star \mathbf{b},\mathbf{b}\right],\leqft[\mathbf{e},\mathbf{a},\mathbf{b},\mathbf{b}^{\wedge}2\right]\right]$
 ```
 
 then  $L$  represents a "set of sets." We can take the intersection of all of the sets in this collection with the command
@@ -4494,7 +4494,7 @@ Finding the number of solutions to the equation  $x^{k} = e$  in a group will be
 DEFINITION 3.6 Let  $G$  be a group, and  $k$  a positive integer. Then the number of elements of  $G$  for which  $x^k = e$  is called the  $k^{\text{th}}$  root count of  $G$  and is denoted by
 
 $$
-R _ {k} (G) = \left| \left\{x \in G \mid x ^ {k} = e \right\} \right|.
+R _ {k} (G) = \leqft| \leqft\{x \in G \mid x ^ {k} = e \right\} \right|.
 $$
 
 Corollary 3.1 can now be expressed in the new notation. If  $G$  is a cyclic group, then
@@ -4599,7 +4599,7 @@ $$
 19 Let  $p$  be an odd prime number, and let  $G = Z_p^*$ . Show that the set
 
 $$
-H = \left\{x ^ {2} \mid x \in Z _ {p} ^ {*} \right\}
+H = \leqft\{x ^ {2} \mid x \in Z _ {p} ^ {*} \right\}
 $$
 
 forms a subgroup of  $G$  of order  $(p - 1)/2$ . Note this is a special case of Problem 17. This subgroup  $H$  is called the group of quadratic residues modulo  $p$ .
@@ -5033,7 +5033,7 @@ we get Figure 4.4. This graph has a very different behavior: no two elements hav
 To understand this example, we notice that the cube root of any element in this group can be found by taking the seventh power of the element! This is because  $\phi(33) = 20$ , so using Corollary 4.4,
 
 $$
-\left(x ^ {3}\right) ^ {7} = x ^ {2 1} = x ^ {2 0} \cdot x = e \cdot x = x.
+\leqft(x ^ {3}\right) ^ {7} = x ^ {2 1} = x ^ {2 0} \cdot x = e \cdot x = x.
 $$
 
 The key difference between the squaring function and the cubing function stems from the fact that 3 is coprime to  $\phi(33) = 20$ , whereas 2 is not.
@@ -5053,7 +5053,7 @@ for some integer  $k$ .
 Now we are ready to take the  $r^{\mathrm{th}}$  root of an element. If  $y$  is an element of  $G$ , then the  $r^{\mathrm{th}}$  root of  $y$  in  $G$  is merely  $y^{s}$ . To see this, note that
 
 $$
-\left(y ^ {s}\right) ^ {r} = y ^ {s r} = y ^ {(k m + 1)} = \left(y ^ {m}\right) ^ {k} \cdot y = e ^ {k} \cdot y = y.
+\leqft(y ^ {s}\right) ^ {r} = y ^ {s r} = y ^ {(k m + 1)} = \leqft(y ^ {m}\right) ^ {k} \cdot y = e ^ {k} \cdot y = y.
 $$
 
 So  $y^{s}$  is one  $r^{\text{th}}$  root of  $y$ . But  $y^{s}$  must be a different element for every  $y$  in  $G$ , since the  $r^{\text{th}}$  power of  $y^{s}$  is different. Since the  $r^{\text{th}}$  root of every element of  $G$  is accounted for, by the pigeonhole principle there cannot be two  $r^{\text{th}}$  roots to any element. Thus,  $y^{s}$  gives the unique  $r^{\text{th}}$  root of  $y$  in  $G$ .
@@ -5078,7 +5078,7 @@ $$
 Then for all values of  $x$  less than  $n$ ,
 
 $$
-\left(x ^ {r}\right) ^ {s} \equiv x (\mathrm {m o d} n).
+\leqft(x ^ {r}\right) ^ {s} \equiv x (\mathrm {m o d} n).
 $$
 
 PROOF: The proposition is trivial if  $x = 0$ , so we will assume that  $x > 0$ .
@@ -5146,7 +5146,7 @@ $$
 "undoes" the encryption, since
 
 $$
-\left(x ^ {r}\right) ^ {s} \equiv x (\mathrm {m o d} n).
+\leqft(x ^ {r}\right) ^ {s} \equiv x (\mathrm {m o d} n).
 $$
 
 One big advantage of using huge numbers for the code is that we can encrypt an entire line at a time. For example,
@@ -5521,11 +5521,11 @@ $$
 $$
 
 $$
-\left\{b, a * b * c, b * c ^ {\wedge} 2, a * b * c ^ {\wedge} 3 \right\}, \left\{a * b, b * c, a * b * c ^ {\wedge} 2, b * c ^ {\wedge} 3 \right\},
+\leqft\{b, a * b * c, b * c ^ {\wedge} 2, a * b * c ^ {\wedge} 3 \right\}, \leqft\{a * b, b * c, a * b * c ^ {\wedge} 2, b * c ^ {\wedge} 3 \right\},
 $$
 
 $$
-\left\{b ^ {\wedge} 2, a * c, b ^ {\wedge} 2 * c ^ {\wedge} 2, a * c ^ {\wedge} 3 \right\}, \left\{a * b ^ {\wedge} 2, c, a * b ^ {\wedge} 2 * c ^ {\wedge} 2, c ^ {\wedge} 3 \right\}
+\leqft\{b ^ {\wedge} 2, a * c, b ^ {\wedge} 2 * c ^ {\wedge} 2, a * c ^ {\wedge} 3 \right\}, \leqft\{a * b ^ {\wedge} 2, c, a * b ^ {\wedge} 2 * c ^ {\wedge} 2, c ^ {\wedge} 3 \right\}
 $$
 
 # LftCoset(G,M)
@@ -5535,11 +5535,11 @@ $$
 $$
 
 $$
-\left\{b, a * b * c, b * c ^ {\wedge} 2, a * b * c ^ {\wedge} 3 \right\}, \left\{a * b, b * c, a * b * c ^ {\wedge} 2, b * c ^ {\wedge} 3 \right\},
+\leqft\{b, a * b * c, b * c ^ {\wedge} 2, a * b * c ^ {\wedge} 3 \right\}, \leqft\{a * b, b * c, a * b * c ^ {\wedge} 2, b * c ^ {\wedge} 3 \right\},
 $$
 
 $$
-\left\{b ^ {\wedge} 2, a * c, b ^ {\wedge} 2 * c ^ {\wedge} 2, a * c ^ {\wedge} 3 \right\}, \left\{a * b ^ {\wedge} 2, c, a * b ^ {\wedge} 2 * c ^ {\wedge} 2, c ^ {\wedge} 3 \right\}
+\leqft\{b ^ {\wedge} 2, a * c, b ^ {\wedge} 2 * c ^ {\wedge} 2, a * c ^ {\wedge} 3 \right\}, \leqft\{a * b ^ {\wedge} 2, c, a * b ^ {\wedge} 2 * c ^ {\wedge} 2, c ^ {\wedge} 3 \right\}
 $$
 
 Two of these cosets are
@@ -5595,7 +5595,7 @@ $$
 Now, suppose that  $gHg^{-1} = H$  for all elements  $g$  in  $G$ . Then
 
 $$
-H g = \left(g H g ^ {- 1}\right) \cdot g = g H e = g H.
+H g = \leqft(g H g ^ {- 1}\right) \cdot g = g H e = g H.
 $$
 
 Thus, every left coset is also a right coset, and vice versa.
@@ -5812,7 +5812,7 @@ $$
 The cosets, or equivalence classes, with respect to this subgroup are given by the command
 
 $$
-\begin{array}{l} Q = \operatorname {L f t C o s e t} (G, M); Q \\ \{\{e, a * b ^ {\wedge} 2 * c, c ^ {\wedge} 2, a * b ^ {\wedge} 2 * c ^ {\wedge} 3 \}, \{a, b ^ {\wedge} 2 * c, a * c ^ {\wedge} 2, b ^ {\wedge} 2 * c ^ {\wedge} 3 \}, \\ \left\{b, a * b * c, b * c ^ {\wedge} 2, a * b * c ^ {\wedge} 3 \right\}, \left\{a * b, b * c, a * b * c ^ {\wedge} 2, b * c ^ {\wedge} 3 \right\}, \\ \left\{b ^ {\wedge} 2, a * c, b ^ {\wedge} 2 * c ^ {\wedge} 2, a * c ^ {\wedge} 3 \right\}, \left\{a * b ^ {\wedge} 2, c, a * b ^ {\wedge} 2 * c ^ {\wedge} 2, c ^ {\wedge} 3 \right\} \\ \end{array}
+\begin{array}{l} Q = \operatorname {L f t C o s e t} (G, M); Q \\ \{\{e, a * b ^ {\wedge} 2 * c, c ^ {\wedge} 2, a * b ^ {\wedge} 2 * c ^ {\wedge} 3 \}, \{a, b ^ {\wedge} 2 * c, a * c ^ {\wedge} 2, b ^ {\wedge} 2 * c ^ {\wedge} 3 \}, \\ \leqft\{b, a * b * c, b * c ^ {\wedge} 2, a * b * c ^ {\wedge} 3 \right\}, \leqft\{a * b, b * c, a * b * c ^ {\wedge} 2, b * c ^ {\wedge} 3 \right\}, \\ \leqft\{b ^ {\wedge} 2, a * c, b ^ {\wedge} 2 * c ^ {\wedge} 2, a * c ^ {\wedge} 3 \right\}, \leqft\{a * b ^ {\wedge} 2, c, a * b ^ {\wedge} 2 * c ^ {\wedge} 2, c ^ {\wedge} 3 \right\} \\ \end{array}
 $$
 
 We can use the SageMath command CayleyTable(Q) to give us the Cayley table of the quotient group  $Q$ , shown in Figure 4.6. Since the names of the elements are so long, SageMath uses a color code for the elements, which is shown here as shading.
@@ -5832,11 +5832,11 @@ The color patterns are not the same, but this doesn't mean that these two groups
 produces the table in Table 4.2. With this particular arrangement of the elements, we see that the color patterns for  $Q$  and  $H$  match. In Chapter 5, we will define two groups that have the same color pattern as being isomorphic.
 
 $$
-\left\{\mathrm {e}, \mathrm {a} ^ {*} \mathrm {b} ^ {\wedge} 2 ^ {*} \mathrm {c}, \mathrm {c} ^ {\wedge} 2, \mathrm {a} ^ {*} \mathrm {b} ^ {\wedge} 2 ^ {*} \mathrm {c} ^ {\wedge} 3 \right\}
+\leqft\{\mathrm {e}, \mathrm {a} ^ {*} \mathrm {b} ^ {\wedge} 2 ^ {*} \mathrm {c}, \mathrm {c} ^ {\wedge} 2, \mathrm {a} ^ {*} \mathrm {b} ^ {\wedge} 2 ^ {*} \mathrm {c} ^ {\wedge} 3 \right\}
 $$
 
 $$
-\left\{a, b ^ {\wedge} 2 ^ {*} c, a ^ {*} c ^ {\wedge} 2, b ^ {\wedge} 2 ^ {*} c ^ {\wedge} 3 \right\}
+\leqft\{a, b ^ {\wedge} 2 ^ {*} c, a ^ {*} c ^ {\wedge} 2, b ^ {\wedge} 2 ^ {*} c ^ {\wedge} 3 \right\}
 $$
 
 $$
@@ -5844,15 +5844,15 @@ $$
 $$
 
 $$
-\left\{a ^ {*} b, b ^ {*} c, a ^ {*} b ^ {*} c ^ {\wedge} 2, b ^ {*} c ^ {\wedge} 3 \right\}
+\leqft\{a ^ {*} b, b ^ {*} c, a ^ {*} b ^ {*} c ^ {\wedge} 2, b ^ {*} c ^ {\wedge} 3 \right\}
 $$
 
 $$
-\left\{\mathrm {b} \wedge 2, \mathrm {a} ^ {*} \mathrm {c}, \mathrm {b} \wedge 2 ^ {*} \mathrm {c} \wedge 2, \mathrm {a} ^ {*} \mathrm {c} \wedge 3 \right\}
+\leqft\{\mathrm {b} \wedge 2, \mathrm {a} ^ {*} \mathrm {c}, \mathrm {b} \wedge 2 ^ {*} \mathrm {c} \wedge 2, \mathrm {a} ^ {*} \mathrm {c} \wedge 3 \right\}
 $$
 
 $$
-\left\{a ^ {*} b \wedge 2, c, a ^ {*} b \wedge 2 ^ {*} c \wedge 2, c ^ {\wedge} 3 \right\}
+\leqft\{a ^ {*} b \wedge 2, c, a ^ {*} b \wedge 2 ^ {*} c \wedge 2, c ^ {\wedge} 3 \right\}
 $$
 
 ![](images/7587ebb9f0485c25976bca78dfdb4ac796a960630c29dd87d5664096c615a45d.jpg)
@@ -5930,13 +5930,13 @@ We begin by finding a correlation between the elements of the two groups so that
 Here is one such possible correlation between the two groups:
 
 $$
-\begin{array}{l} e \leftrightarrow \{e, a \cdot b ^ {2} \cdot c, c ^ {2}, a \cdot b ^ {2} \cdot c ^ {3} \} \\ a \cdot b ^ {2} \leftrightarrow \{a, b ^ {2} \cdot c, a \cdot c ^ {2}, b ^ {2} \cdot c ^ {3} \} \\ b \leftrightarrow \{b, a \cdot b \cdot c, b \cdot c ^ {2}, a \cdot b \cdot c ^ {3} \} \\ a \leftrightarrow \left\{a \cdot b, b \cdot c, a \cdot b \cdot c ^ {2}, b \cdot c ^ {3} \right\} \\ b ^ {2} \leftrightarrow \left\{b ^ {2}, a \cdot c, b ^ {2} \cdot c ^ {2}, a \cdot c ^ {3} \right\} \\ a \cdot b \leftrightarrow \left\{a \cdot b ^ {2}, c, a \cdot b ^ {2} \cdot c ^ {2}, c ^ {3} \right\} \\ \end{array}
+\begin{array}{l} e \leqftrightarrow \{e, a \cdot b ^ {2} \cdot c, c ^ {2}, a \cdot b ^ {2} \cdot c ^ {3} \} \\ a \cdot b ^ {2} \leqftrightarrow \{a, b ^ {2} \cdot c, a \cdot c ^ {2}, b ^ {2} \cdot c ^ {3} \} \\ b \leqftrightarrow \{b, a \cdot b \cdot c, b \cdot c ^ {2}, a \cdot b \cdot c ^ {3} \} \\ a \leqftrightarrow \leqft\{a \cdot b, b \cdot c, a \cdot b \cdot c ^ {2}, b \cdot c ^ {3} \right\} \\ b ^ {2} \leqftrightarrow \leqft\{b ^ {2}, a \cdot c, b ^ {2} \cdot c ^ {2}, a \cdot c ^ {3} \right\} \\ a \cdot b \leqftrightarrow \leqft\{a \cdot b ^ {2}, c, a \cdot b ^ {2} \cdot c ^ {2}, c ^ {3} \right\} \\ \end{array}
 $$
 
 Suppose we use this correlation to define a function  $f(x)$  sending each element of  $S_{3}$  to an element of  $G / M$ . Thus,
 
 $$
-\begin{array}{l} f (e) = \{e, a \cdot b ^ {2} \cdot c, c ^ {2}, a \cdot b ^ {2} \cdot c ^ {3} \} \\ f (a \cdot b ^ {2}) = \{a, b ^ {2} \cdot c, a \cdot c ^ {2}, b ^ {2} \cdot c ^ {3} \} \\ f (b) = \{b, a \cdot b \cdot c, b \cdot c ^ {2}, a \cdot b \cdot c ^ {3} \} \\ f (a) = \left\{a \cdot b, b \cdot c, a \cdot b \cdot c ^ {2}, b \cdot c ^ {3} \right\} \\ f (b ^ {2}) = \left\{b ^ {2}, a \cdot c, b ^ {2} \cdot c ^ {2}, a \cdot c ^ {3} \right\} \\ f (a \cdot b) = \left\{a \cdot b ^ {2}, c, a \cdot b ^ {2} \cdot c ^ {2}, c ^ {3} \right\} \\ \end{array}
+\begin{array}{l} f (e) = \{e, a \cdot b ^ {2} \cdot c, c ^ {2}, a \cdot b ^ {2} \cdot c ^ {3} \} \\ f (a \cdot b ^ {2}) = \{a, b ^ {2} \cdot c, a \cdot c ^ {2}, b ^ {2} \cdot c ^ {3} \} \\ f (b) = \{b, a \cdot b \cdot c, b \cdot c ^ {2}, a \cdot b \cdot c ^ {3} \} \\ f (a) = \leqft\{a \cdot b, b \cdot c, a \cdot b \cdot c ^ {2}, b \cdot c ^ {3} \right\} \\ f (b ^ {2}) = \leqft\{b ^ {2}, a \cdot c, b ^ {2} \cdot c ^ {2}, a \cdot c ^ {3} \right\} \\ f (a \cdot b) = \leqft\{a \cdot b ^ {2}, c, a \cdot b ^ {2} \cdot c ^ {2}, c ^ {3} \right\} \\ \end{array}
 $$
 
 The fact that the corresponding Cayley tables have the same color patterns can now be expressed simply by
@@ -6747,7 +6747,7 @@ By a similar argument, the inverse of any element in  $K \cdot H$  must be in  $
 Now, let us suppose that  $H \cdot K = K \cdot H$ . We want to show that  $H \cdot K$  is a subgroup. Let  $h_1, h_2 \in H$  and  $k_1, k_2 \in K$  so both  $h_1 \cdot k_1$  and  $h_2 \cdot k_2$  are elements of  $H \cdot K$ . By Proposition 3.2, it is enough to show that  $(h_1 \cdot k_1) \cdot (h_2 \cdot k_2)^{-1}$  is in  $H \cdot K$ . But  $(k_1 \cdot k_2^{-1}) \cdot h_2^{-1}$  is in  $K \cdot H = H \cdot K$ , and so there must be two elements  $h_3 \in H$  and  $k_3 \in K$  such that  $(k_1 \cdot k_2^{-1}) \cdot h_2^{-1} = h_3 \cdot k_3$ . Then we have
 
 $$
-\left(h _ {1} \cdot k _ {1}\right) \cdot \left(h _ {2} \cdot k _ {2}\right) ^ {- 1} = h _ {1} \cdot k _ {1} \cdot k _ {2} ^ {- 1} \cdot h _ {2} ^ {- 1} = \left(h _ {1} \cdot h _ {3}\right) \cdot k _ {3}
+\leqft(h _ {1} \cdot k _ {1}\right) \cdot \leqft(h _ {2} \cdot k _ {2}\right) ^ {- 1} = h _ {1} \cdot k _ {1} \cdot k _ {2} ^ {- 1} \cdot h _ {2} ^ {- 1} = \leqft(h _ {1} \cdot h _ {3}\right) \cdot k _ {3}
 $$
 
 which is in  $H\cdot K$  . Thus,  $H\cdot K$  is a subgroup if, and only if,  $H\cdot K = K\cdot H$
@@ -6937,7 +6937,7 @@ $$
 To see that this is well defined, note that if  $h_1 \cdot K = h_2 \cdot K$  for two elements  $h_1$  and  $h_2$  in  $H$ , then  $h_2^{-1} \cdot h_1 \cdot K = K$ , so  $h_2^{-1} \cdot h_1$  must be in  $K$ . But  $h_2^{-1} \cdot h_1$  is also in  $H$ , hence in the intersection. Thus,
 
 $$
-h _ {2} \cdot (H \cap K) = h _ {2} \cdot \left(h _ {2} ^ {- 1} \cdot h _ {1}\right) \cdot (H \cap K) = h _ {1} \cdot (H \cap K).
+h _ {2} \cdot (H \cap K) = h _ {2} \cdot \leqft(h _ {2} ^ {- 1} \cdot h _ {1}\right) \cdot (H \cap K) = h _ {1} \cdot (H \cap K).
 $$
 
 So we see that if  $h_1 \cdot K = h_2 \cdot K$ , then  $\phi(h_1 \cdot K) = \phi(h_2 \cdot K)$ , and the function  $\phi$  is well defined.
@@ -7143,19 +7143,19 @@ For three books, any permutation can be obtained by just one of these six comman
 One natural way to do this is to number the books in consecutive order, and determine the numbers in the final position. For example, if we put the books in their original order, and then shift the books to the left with MoveBooks (Left), we find that if the books started in 1, 2, 3, 4 order, the final position will be 2, 3, 4, 1. We write the ending position below the starting position, as follows.
 
 $$
-\left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right).
+\leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right).
 $$
 
 We can multiply the permutations using the new notation. For example, to calculate Left-Last, we have
 
 $$
-\left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) \cdot \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 2 & 4 & 3 \end{array} \right) = \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 1 & 4 \end{array} \right).
+\leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) \cdot \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 2 & 4 & 3 \end{array} \right) = \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 1 & 4 \end{array} \right).
 $$
 
 On the other hand, Last-Left is given by
 
 $$
-\left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 2 & 4 & 3 \end{array} \right) \cdot \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) = \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 4 & 3 & 1 \end{array} \right).
+\leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 2 & 4 & 3 \end{array} \right) \cdot \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) = \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 4 & 3 & 1 \end{array} \right).
 $$
 
 Obviously, Left-Last does not equal Last-Left.
@@ -7178,7 +7178,7 @@ $$
 f (4) = 4 \qquad \phi (4) = 1.
 $$
 
-Note that  $f(x)$  appears directly below  $x$  in the permutation  $\left( \begin{array}{cccc}1 & 2 & 3 & 4\\ 2 & 3 & 1 & 4 \end{array} \right)$ . The product of the permutations is the same as the composition of the two functions. Thus,  $f\cdot \phi$  would be
+Note that  $f(x)$  appears directly below  $x$  in the permutation  $\leqft( \begin{array}{cccc}1 & 2 & 3 & 4\\ 2 & 3 & 1 & 4 \end{array} \right)$ . The product of the permutations is the same as the composition of the two functions. Thus,  $f\cdot \phi$  would be
 
 $$
 \begin{array}{l} f (\phi (1)) = f (2) = 3 \\ f (\phi (2)) = f (3) = 1 \\ f (\phi (3)) = f (4) = 4 \\ f (\phi (4)) = f (1) = 2. \\ \end{array}
@@ -7337,18 +7337,18 @@ showing that  $f(2) = 4$ . In spite of the simplicity of the notations for a per
 
 For Problems 1 through 8: Compute the following permutation products
 
-1  $\left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 3 & 5 & 1 & 4 & 2 \end{array} \right)\cdot \left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 2 & 5 & 4 & 1 & 3 \end{array} \right).$
-2  $\left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 2 & 5 & 4 & 3 & 1 \end{array} \right)\cdot \left( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 3 & 4 & 1 & 5 & 2 \end{array} \right).$
-3  $\left( \begin{array}{ccccccc}1 & 2 & 3 & 4 & 5 & 6\\ 3 & 2 & 4 & 6 & 1 & 5 \end{array} \right)\cdot \left( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 6 & 2 & 5 & 3 & 4 & 1 \end{array} \right).$
-4  $\left( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 2 & 1 & 6 & 3 & 5 & 4 \end{array} \right)\cdot \left( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 6 & 4 & 1 & 3 & 2 & 5 \end{array} \right).$
-5  $\left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 3 & 6 & 2 & 7 & 1 & 4 & 5 \end{array} \right)\cdot \left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 6 & 3 & 7 & 2 & 1 & 4 & 5 \end{array} \right).$
-6  $\left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 6 & 5 & 7 & 2 & 3 & 1 & 4 \end{array} \right)\cdot \left( \begin{array}{ccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 3 & 6 & 2 & 7 & 4 & 1 & 5 \end{array} \right).$
-7  $\left( \begin{array}{ccccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 6 & 3 & 8 & 2 & 4 & 7 & 5 & 1 \end{array} \right)\cdot \left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 2 & 7 & 5 & 3 & 8 & 1 & 4 & 6 \end{array} \right).$
-8  $\left( \begin{array}{ccccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 4 & 7 & 3 & 1 & 8 & 2 & 5 & 6 \end{array} \right)\cdot \left( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 8 & 3 & 7 & 4 & 1 & 6 & 5 & 2 \end{array} \right).$
+1  $\leqft( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 3 & 5 & 1 & 4 & 2 \end{array} \right)\cdot \leqft( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 2 & 5 & 4 & 1 & 3 \end{array} \right).$
+2  $\leqft( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 2 & 5 & 4 & 3 & 1 \end{array} \right)\cdot \leqft( \begin{array}{ccccc}1 & 2 & 3 & 4 & 5\\ 3 & 4 & 1 & 5 & 2 \end{array} \right).$
+3  $\leqft( \begin{array}{ccccccc}1 & 2 & 3 & 4 & 5 & 6\\ 3 & 2 & 4 & 6 & 1 & 5 \end{array} \right)\cdot \leqft( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 6 & 2 & 5 & 3 & 4 & 1 \end{array} \right).$
+4  $\leqft( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 2 & 1 & 6 & 3 & 5 & 4 \end{array} \right)\cdot \leqft( \begin{array}{cccccc}1 & 2 & 3 & 4 & 5 & 6\\ 6 & 4 & 1 & 3 & 2 & 5 \end{array} \right).$
+5  $\leqft( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 3 & 6 & 2 & 7 & 1 & 4 & 5 \end{array} \right)\cdot \leqft( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 6 & 3 & 7 & 2 & 1 & 4 & 5 \end{array} \right).$
+6  $\leqft( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 6 & 5 & 7 & 2 & 3 & 1 & 4 \end{array} \right)\cdot \leqft( \begin{array}{ccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7\\ 3 & 6 & 2 & 7 & 4 & 1 & 5 \end{array} \right).$
+7  $\leqft( \begin{array}{ccccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 6 & 3 & 8 & 2 & 4 & 7 & 5 & 1 \end{array} \right)\cdot \leqft( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 2 & 7 & 5 & 3 & 8 & 1 & 4 & 6 \end{array} \right).$
+8  $\leqft( \begin{array}{ccccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 4 & 7 & 3 & 1 & 8 & 2 & 5 & 6 \end{array} \right)\cdot \leqft( \begin{array}{cccccccc}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 8 & 3 & 7 & 4 & 1 & 6 & 5 & 2 \end{array} \right).$
 9 Form a Cayley table of  $S_{3}$  using the permutation notation for the elements. That is, use the elements
 
 $$
-S _ {3} = \left\{\left( \begin{array}{c} 1   2   3 \\ 1   2   3 \end{array} \right), \left( \begin{array}{c} 1   2   3 \\ 1   3   2 \end{array} \right), \left( \begin{array}{c} 1   2   3 \\ 2   1   3 \end{array} \right), \left( \begin{array}{c} 1   2   3 \\ 2   3   1 \end{array} \right), \left( \begin{array}{c} 1   2   3 \\ 3   1   2 \end{array} \right), \left( \begin{array}{c} 1   2   3 \\ 3   2   1 \end{array} \right) \right\}.
+S _ {3} = \leqft\{\leqft( \begin{array}{c} 1   2   3 \\ 1   2   3 \end{array} \right), \leqft( \begin{array}{c} 1   2   3 \\ 1   3   2 \end{array} \right), \leqft( \begin{array}{c} 1   2   3 \\ 2   1   3 \end{array} \right), \leqft( \begin{array}{c} 1   2   3 \\ 2   3   1 \end{array} \right), \leqft( \begin{array}{c} 1   2   3 \\ 3   1   2 \end{array} \right), \leqft( \begin{array}{c} 1   2   3 \\ 3   2   1 \end{array} \right) \right\}.
 $$
 
 10 Find the six elements of  $S_4$  that are of order 4.
@@ -7361,13 +7361,13 @@ Hint: One number must map to itself.
 13 Find a nontrivial element of  $S_{5}$  that commutes with the permutation
 
 $$
-x = \left( \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 4 & 2 & 3 & 5 & 1 \end{array} \right).
+x = \leqft( \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 4 & 2 & 3 & 5 & 1 \end{array} \right).
 $$
 
 14 Find a permutation  $x$  in  $S_4$  that solves the equation
 
 $$
-x \cdot \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 3 & 4 & 2 \end{array} \right) = \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 4 & 1 & 3 & 2 \end{array} \right) \cdot x.
+x \cdot \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 3 & 4 & 2 \end{array} \right) = \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 4 & 1 & 3 & 2 \end{array} \right) \cdot x.
 $$
 
 (There are in fact three different answers.)
@@ -7375,7 +7375,7 @@ $$
 15 Find a permutation  $x$  in  $S_{5}$  that solves the equation
 
 $$
-x \cdot \left( \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 4 & 2 & 5 & 3 & 1 \end{array} \right) = \left( \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 3 & 1 & 5 & 4 & 2 \end{array} \right) \cdot x.
+x \cdot \leqft( \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 4 & 2 & 5 & 3 & 1 \end{array} \right) = \leqft( \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 3 & 1 & 5 & 4 & 2 \end{array} \right) \cdot x.
 $$
 
 (There are in fact four different answers.)
@@ -7383,7 +7383,7 @@ $$
 16 SageMath views the permutations
 
 $$
-\left( \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 2 & 1 & 4 & 3 & 5 \end{array} \right) \qquad \text {a n d} \qquad \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right)
+\leqft( \begin{array}{c c c c c} 1 & 2 & 3 & 4 & 5 \\ 2 & 1 & 4 & 3 & 5 \end{array} \right) \qquad \text {a n d} \qquad \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right)
 $$
 
 as being the same permutation,  $P(2,1,4,3)$ . But are these really the same? If not, why can SageMath use the same notation for these two elements?
@@ -7392,13 +7392,13 @@ as being the same permutation,  $P(2,1,4,3)$ . But are these really the same? If
 
 For Problems 17 through 20: Determine how the following permutations can be expressed in terms of the book rearrangements First, Last, Left, Right, and Rev.
 
-17  $\left( \begin{array}{cccc}1 & 2 & 3 & 4\\ 1 & 3 & 2 & 4 \end{array} \right)$
+17  $\leqft( \begin{array}{cccc}1 & 2 & 3 & 4\\ 1 & 3 & 2 & 4 \end{array} \right)$
 
-19  $\left( \begin{array}{cccc}1 & 2 & 3 & 4\\ 3 & 1 & 4 & 2 \end{array} \right)$
+19  $\leqft( \begin{array}{cccc}1 & 2 & 3 & 4\\ 3 & 1 & 4 & 2 \end{array} \right)$
 
-18  $\left( \begin{array}{cccc}1 & 2 & 3 & 4\\ 4 & 2 & 3 & 1 \end{array} \right)$
+18  $\leqft( \begin{array}{cccc}1 & 2 & 3 & 4\\ 4 & 2 & 3 & 1 \end{array} \right)$
 
-20  $\left( \begin{array}{cccc}1 & 2 & 3 & 4\\ 2 & 4 & 1 & 3 \end{array} \right)$
+20  $\leqft( \begin{array}{cccc}1 & 2 & 3 & 4\\ 2 & 4 & 1 & 3 \end{array} \right)$
 
 # 6.2 Cycles
 
@@ -7446,7 +7446,7 @@ $$
 represents the permutation that maps  $i_1$  to  $i_2$ ,  $i_2$  to  $i_3$ , etc., and finally  $i_r$  back to  $i_1$ . Notice that
 
 $$
-\left(i _ {1} i _ {2} i _ {3} \dots i _ {r}\right) ^ {- 1} = \left(i _ {r} i _ {r - 1} \dots i _ {3} i _ {2} i _ {1}\right),
+\leqft(i _ {1} i _ {2} i _ {3} \dots i _ {r}\right) ^ {- 1} = \leqft(i _ {r} i _ {r - 1} \dots i _ {3} i _ {2} i _ {1}\right),
 $$
 
 so the inverse of an  $r$ -cycle will always be an  $r$ -cycle. The identity element can be written as the 0-cycle().
@@ -7562,13 +7562,13 @@ For  $n > 1$ , the set of transpositions in  $S_{n}$  generates  $S_{n}$ .
 Proof: We need to show that every element of  $S_{n}$  can be written as a product of transpositions. The identity element can be written as (12)(12), so we let  $x$  be a permutation that is not the identity. By Lemma 6.1, we can express  $x$  as a product of nontrivial disjoint cycles:
 
 $$
-x = \left(i _ {1} i _ {2} i _ {3} \dots i _ {r}\right) \cdot \left(j _ {1} j _ {2} \dots j _ {s}\right) \cdot \left(k _ {1} k _ {2} \dots k _ {t}\right) \cdot \dots .
+x = \leqft(i _ {1} i _ {2} i _ {3} \dots i _ {r}\right) \cdot \leqft(j _ {1} j _ {2} \dots j _ {s}\right) \cdot \leqft(k _ {1} k _ {2} \dots k _ {t}\right) \cdot \dots .
 $$
 
 Now, consider the product of transpositions
 
 $$
-\left(i _ {1} i _ {2}\right) \cdot \left(i _ {2} i _ {3}\right) \dots \left(i _ {r - 1} i _ {r}\right) \cdot \left(j _ {1} j _ {2}\right) \cdot \left(j _ {2} j _ {3}\right) \dots \left(j _ {s - 1} j _ {s}\right) \cdot \left(k _ {1} k _ {2}\right) \dots \left(k _ {t - 1} k _ {t}\right) \dots .
+\leqft(i _ {1} i _ {2}\right) \cdot \leqft(i _ {2} i _ {3}\right) \dots \leqft(i _ {r - 1} i _ {r}\right) \cdot \leqft(j _ {1} j _ {2}\right) \cdot \leqft(j _ {2} j _ {3}\right) \dots \leqft(j _ {s - 1} j _ {s}\right) \cdot \leqft(k _ {1} k _ {2}\right) \dots \leqft(k _ {t - 1} k _ {t}\right) \dots .
 $$
 
 Note that this product is equal to  $x$ . Therefore, we have expressed every element of  $S_{n}$  as a product of transpositions.
@@ -7641,7 +7641,7 @@ For  $n > 2$ , the alternating group  $A_{n}$  is generated by the set of 3-cycl
 Proof: Since every 3-cycle is a product of two transpositions, every 3-cycle is in  $A_{n}$ . Thus, it is sufficient to show that every element in  $A_{n}$  can be expressed in terms of 3-cycles. We have already seen that any element can be expressed as a product of an even number of transpositions. Suppose we group these in pairs as follows:
 
 $$
-x = \left[ \left(i _ {1} j _ {1}\right) \cdot \left(k _ {1} l _ {1}\right) \right] \cdot \left[ \left(i _ {2} j _ {2}\right) \cdot \left(k _ {2} l _ {2}\right) \right] \dots \dots \left[ \left(i _ {n} j _ {n}\right) \cdot \left(k _ {n} l _ {n}\right) \right].
+x = \leqft[ \leqft(i _ {1} j _ {1}\right) \cdot \leqft(k _ {1} l _ {1}\right) \right] \cdot \leqft[ \leqft(i _ {2} j _ {2}\right) \cdot \leqft(k _ {2} l _ {2}\right) \right] \dots \dots \leqft[ \leqft(i _ {n} j _ {n}\right) \cdot \leqft(k _ {n} l _ {n}\right) \right].
 $$
 
 If we could convert each pair of transpositions into 3-cycles, we would have the permutation  $x$  expressed as a product of 3-cycles. There are three cases to consider:
@@ -7659,7 +7659,7 @@ Case 2:
 Three of the four integers  $i_m, j_m, k_m, l_m$  are distinct. The four combinations that would produce this situation are  $i_m = k_m$ ,  $i_m = l_m$ ,  $j_m = k_m$ , or  $j_m = l_m$ . However, these four possibilities are essentially the same, so we only have to check one of these four combinations:  $i_m = k_m$ . Then we have
 
 $$
-\left(i _ {m} j _ {m}\right) \cdot \left(i _ {m} l _ {m}\right) = \left(i _ {m} l _ {m} j _ {m}\right).
+\leqft(i _ {m} j _ {m}\right) \cdot \leqft(i _ {m} l _ {m}\right) = \leqft(i _ {m} l _ {m} j _ {m}\right).
 $$
 
 Case 3:
@@ -7667,7 +7667,7 @@ Case 3:
 Only two of the four integers  $i_m, j_m, k_m$ , and  $l_m$  are distinct. Then we must either have  $i_m = k_m$  and  $j_m = l_m$ , or  $i_m = l_m$  and  $j_m = k_m$ . In either case, we have
 
 $$
-\left(i _ {m} j _ {m}\right) \cdot \left(k _ {m} l _ {m}\right) = () = (1 2 3) (1 3 2).
+\leqft(i _ {m} j _ {m}\right) \cdot \leqft(k _ {m} l _ {m}\right) = () = (1 2 3) (1 3 2).
 $$
 
 In all three cases, we were able to express a pair of transpositions in terms of a product of one or two 3-cycles. Therefore, the permutation  $x$  can be written as a product of 3-cycles.
@@ -7676,7 +7676,7 @@ Let us use this proposition to find the elements of  $A_4$ . We know that this i
 
 Group(C(1,2,3), C(1,2,4))
 
-$\left\{() ,(1,3,2) ,(1,2,3) ,(1,2)(3,4) ,(2,4,3) ,(1,4,3)\right.$
+$\leqft\{() ,(1,3,2) ,(1,2,3) ,(1,2)(3,4) ,(2,4,3) ,(1,4,3)\right.$
 
 (2,3,4)，(1，4，2)，(1，3)(2，4)，(1，3，4)，(1，2，4)，
 
@@ -7828,7 +7828,7 @@ So  $f$  must not be a homomorphism. Let us try seeing if  $\phi$  is a homomorp
 
 ```latex
 $\mathbf{T} = \mathrm{Group}(\mathbf{C}(1,2,5,6)*\mathbf{C}(3,4,7,8),\mathbf{C}(1,3,5,7)*\mathbf{C}(2,8,6,4))$
-T  $\left\{\left( \begin{array}{lll}() & (1,6,5,2)(3,8,7,4) & (1,3,5,7)(2,8,6,4) \end{array} \right.\right.$ $(1,8,5,4)(2,7,6,3),(1,5)(2,6)(3,7)(4,8)$ $(1,2,5,6)(3,4,7,8),(1,7,5,3)(2,4,6,8)$ $(1,4,5,8)(2,3,6,7)\}$
+T  $\leqft\{\leqft( \begin{array}{lll}() & (1,6,5,2)(3,8,7,4) & (1,3,5,7)(2,8,6,4) \end{array} \right.\right.$ $(1,8,5,4)(2,7,6,3),(1,5)(2,6)(3,7)(4,8)$ $(1,2,5,6)(3,4,7,8),(1,7,5,3)(2,4,6,8)$ $(1,4,5,8)(2,3,6,7)\}$
 phi  $=$  Homomorph(Q,T)
 HomoDef(phi,i,C(1,2,5,6)*C(3,8,7,4))
 HomoDef(phi,j,C(1,3,5,7)*C(2,4,6,8))
@@ -7877,7 +7877,7 @@ Find a subgroup of  $S_{6}$  isomorphic to Terry's dance steps, using Table 2.2.
 SOLUTION: Since the proof of Cayley's theorem uses multiplication on the right, we will use the rows of the Cayley table to produce the permutations. First, we will number Terry's dance steps in the order they appear in the table.
 
 $$
-\begin{array}{l} 1 \leftrightarrow \text {S t a y}, \quad 2 \leftrightarrow \text {F l i p R t}, \quad 3 \leftrightarrow \text {R o t R t}, \\ 4 \leftrightarrow \text {F l i p L f t}, \quad 5 \leftrightarrow \text {R o t L f t}, \quad 6 \leftrightarrow \text {S p i n}. \\ \end{array}
+\begin{array}{l} 1 \leqftrightarrow \text {S t a y}, \quad 2 \leqftrightarrow \text {F l i p R t}, \quad 3 \leqftrightarrow \text {R o t R t}, \\ 4 \leqftrightarrow \text {F l i p L f t}, \quad 5 \leqftrightarrow \text {R o t L f t}, \quad 6 \leqftrightarrow \text {S p i n}. \\ \end{array}
 $$
 
 Now, each row in the table converts to a list of numbers, which becomes the lower half of the permutation for that row. For example, the second row in the table,
@@ -7887,13 +7887,13 @@ Now, each row in the table converts to a list of numbers, which becomes the lowe
 converts to the numbers 2 1 4 3 6 5, which represents the permutation
 
 $$
-\left( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 2 & 1 & 4 & 3 & 6 & 5 \end{array} \right)
+\leqft( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 2 & 1 & 4 & 3 & 6 & 5 \end{array} \right)
 $$
 
 (The row for the identity element will always give the identity permutation.) Doing this for each row, we get the list of permutations
 
 $$
-\begin{array}{l} \left\{\left( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 1 & 2 & 3 & 4 & 5 & 6 \end{array} \right), \left( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 2 & 1 & 4 & 3 & 6 & 5 \end{array} \right), \left( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 3 & 6 & 5 & 2 & 1 & 4 \end{array} \right), \right. \\ \left. \left( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 4 & 5 & 6 & 1 & 2 & 3 \end{array} \right), \left( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 5 & 4 & 1 & 6 & 3 & 2 \end{array} \right), \left( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 6 & 3 & 2 & 5 & 4 & 1 \end{array} \right) \right\}. \\ \end{array}
+\begin{array}{l} \leqft\{\leqft( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 1 & 2 & 3 & 4 & 5 & 6 \end{array} \right), \leqft( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 2 & 1 & 4 & 3 & 6 & 5 \end{array} \right), \leqft( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 3 & 6 & 5 & 2 & 1 & 4 \end{array} \right), \right. \\ \leqft. \leqft( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 4 & 5 & 6 & 1 & 2 & 3 \end{array} \right), \leqft( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 5 & 4 & 1 & 6 & 3 & 2 \end{array} \right), \leqft( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & 6 \\ 6 & 3 & 2 & 5 & 4 & 1 \end{array} \right) \right\}. \\ \end{array}
 $$
 
 #
@@ -8004,7 +8004,7 @@ $$
 Now, consider two elements  $\phi(g)$  and  $\phi(h)$ . The product of these is the mapping
 
 $$
-x H \rightarrow \left(p _ {g} \cdot p _ {h}\right) (x H) = p _ {g} \left(p _ {h} (x H)\right) = p _ {g} (h \cdot x H) = g \cdot (h \cdot x H) = (g \cdot h) \cdot x H.
+x H \rightarrow \leqft(p _ {g} \cdot p _ {h}\right) (x H) = p _ {g} \leqft(p _ {h} (x H)\right) = p _ {g} (h \cdot x H) = g \cdot (h \cdot x H) = (g \cdot h) \cdot x H.
 $$
 
 Since this is the same as  $\phi(g \cdot h)$ ,  $\phi$  is a homomorphism.
@@ -8134,7 +8134,7 @@ $$
 These two elements can be converted to the permutation notation, and use these to generate a subgroup of  $S_8$ . Thus, we could form a group isomorphic to  $Q$  by the command
 
 ```latex
-$\mathsf{Q} = \mathsf{Group}(\{\mathsf{P}(2,5,4,7,6,1,8,3),\mathsf{P}(3,8,5,2,7,4,1,6)\})$  ；Q $\begin{array}{l}\left\{\mathrm{P(6,P(6,1,8,3,2,5,4,7),P(3,8,5,2,7,4,1,6),}\right.\\ \mathrm{P(8,7,2,1,4,3,6,5),P(5,6,7,8,1,2,3,4),}\\ \mathrm{P(2,5,4,7,6,1,8,3),P(7,4,1,6,3,8,5,2),}\\ \mathrm{P(4,3,6,5,8,7,2,1)}\end{array}$
+$\mathsf{Q} = \mathsf{Group}(\{\mathsf{P}(2,5,4,7,6,1,8,3),\mathsf{P}(3,8,5,2,7,4,1,6)\})$  ；Q $\begin{array}{l}\leqft\{\mathrm{P(6,P(6,1,8,3,2,5,4,7),P(3,8,5,2,7,4,1,6),}\right.\\ \mathrm{P(8,7,2,1,4,3,6,5),P(5,6,7,8,1,2,3,4),}\\ \mathrm{P(2,5,4,7,6,1,8,3),P(7,4,1,6,3,8,5,2),}\\ \mathrm{P(4,3,6,5,8,7,2,1)}\end{array}$
 ```
 
 Alternatively, we could have used the cycle notation.
@@ -8441,7 +8441,7 @@ One way in which we can create a larger group from two smaller groups is to cons
 DEFINITION 7.1 Given two groups  $H$  and  $K$ , the direct product of  $H$  and  $K$ , denoted  $H \times K$ , is the group of ordered pairs  $(h, k)$  such that  $h \in H$  and  $k \in K$ , with multiplication defined by
 
 $$
-\left(h _ {1}, k _ {1}\right) \cdot \left(h _ {2}, k _ {2}\right) = \left(h _ {1} \cdot h _ {2}, k _ {1} \cdot k _ {2}\right).
+\leqft(h _ {1}, k _ {1}\right) \cdot \leqft(h _ {2}, k _ {2}\right) = \leqft(h _ {1} \cdot h _ {2}, k _ {1} \cdot k _ {2}\right).
 $$
 
 The four group properties for the direct product are easy to verify. Certainly  $H \times K$  is closed under multiplication, since the component-wise product of two ordered pairs is again an ordered pair. If  $e_1$  is the identity element for  $H$ , and  $e_2$  the identity element for  $K$ , then  $(e_1, e_2)$  would be the identity element of the direct product. Also, the inverse of an ordered pair  $(h, k)$  is  $(h^{-1}, k^{-1})$ . Finally, the associative law would hold for  $H \times K$ , since it holds for both  $H$  and  $K$ .
@@ -8482,7 +8482,7 @@ Let  $H$  and  $K$  be two groups. Then  $H \times K$  is commutative if, and on
 PROOF: First, suppose that  $H$  and  $K$  are both abelian. Then for two elements  $(h_1, k_1)$  and  $(h_2, k_2)$  in  $H \times K$ , we have
 
 $$
-\left(h _ {1}, k _ {1}\right) \cdot \left(h _ {2}, k _ {2}\right) = \left(h _ {1} \cdot h _ {2}, k _ {1} \cdot k _ {2}\right) = \left(h _ {2} \cdot h _ {1}, k _ {2} \cdot k _ {1}\right) = \left(h _ {2}, k _ {2}\right) \cdot \left(h _ {1}, k _ {1}\right).
+\leqft(h _ {1}, k _ {1}\right) \cdot \leqft(h _ {2}, k _ {2}\right) = \leqft(h _ {1} \cdot h _ {2}, k _ {1} \cdot k _ {2}\right) = \leqft(h _ {2} \cdot h _ {1}, k _ {2} \cdot k _ {1}\right) = \leqft(h _ {2}, k _ {2}\right) \cdot \leqft(h _ {1}, k _ {1}\right).
 $$
 
 So the two elements in  $H \times K$  commute. Hence,  $H \times K$  is abelian.
@@ -8490,7 +8490,7 @@ So the two elements in  $H \times K$  commute. Hence,  $H \times K$  is abelian.
 Now suppose that  $H \times K$  is commutative. We then have
 
 $$
-\left(h _ {1} \cdot h _ {2}, k _ {1} \cdot k _ {2}\right) = \left(h _ {1}, k _ {1}\right) \cdot \left(h _ {2}, k _ {2}\right) = \left(h _ {2}, k _ {2}\right) \cdot \left(h _ {1}, k _ {1}\right) = \left(h _ {2} \cdot h _ {1}, k _ {2} \cdot k _ {1}\right).
+\leqft(h _ {1} \cdot h _ {2}, k _ {1} \cdot k _ {2}\right) = \leqft(h _ {1}, k _ {1}\right) \cdot \leqft(h _ {2}, k _ {2}\right) = \leqft(h _ {2}, k _ {2}\right) \cdot \leqft(h _ {1}, k _ {1}\right) = \leqft(h _ {2} \cdot h _ {1}, k _ {2} \cdot k _ {1}\right).
 $$
 
 Comparing components, we see that  $h_1 \cdot h_2 = h_2 \cdot h_1$  and  $k_1 \cdot k_2 = k_2 \cdot k_1$ . Since this is true for all  $h_1$  and  $h_2$  in  $H$ , and all  $k_1$  and  $k_2$  in  $K$ , both  $H$  and  $K$  are abelian.
@@ -8583,7 +8583,7 @@ by  $\phi(x) = (h, k)$ , where  $h$  and  $k$  are the unique elements such that
 can only have come from  $h \cdot k$ . Also,  $\phi$  is onto, for the element  $h \cdot k$  maps to  $(h, k)$ . All that remains to show is that  $\phi(x \cdot y) = \phi(x) \cdot \phi(y)$ . Let  $x = h_1 \cdot k_1$ , and  $y = h_2 \cdot k_2$ . Then
 
 $$
-\begin{array}{l} \phi (x \cdot y) = \phi \left(h _ {1} \cdot k _ {1} \cdot h _ {2} \cdot k _ {2}\right) \\ = \phi \left(h _ {1} \cdot h _ {2} \cdot k _ {1} \cdot k _ {2}\right) \\ = \left(h _ {1} \cdot h _ {2}, k _ {1} \cdot k _ {2}\right) \\ = \left(h _ {1}, k _ {1}\right) \cdot \left(h _ {2}, k _ {2}\right) \\ = \phi (x) \cdot \phi (y). \\ \end{array}
+\begin{array}{l} \phi (x \cdot y) = \phi \leqft(h _ {1} \cdot k _ {1} \cdot h _ {2} \cdot k _ {2}\right) \\ = \phi \leqft(h _ {1} \cdot h _ {2} \cdot k _ {1} \cdot k _ {2}\right) \\ = \leqft(h _ {1} \cdot h _ {2}, k _ {1} \cdot k _ {2}\right) \\ = \leqft(h _ {1}, k _ {1}\right) \cdot \leqft(h _ {2}, k _ {2}\right) \\ = \phi (x) \cdot \phi (y). \\ \end{array}
 $$
 
 Thus,  $\phi$  is an isomorphism, and so  $H\cdot K\approx H\times K$
@@ -8913,7 +8913,7 @@ We now let  $X$  be the subgroup generated by  $x$ . If  $X = P$ , then we can a
 Since  $y$  is in  $P$ ,  $y^{m} = e$ . But
 
 $$
-y ^ {m} = \left(y ^ {p}\right) ^ {(m / p)} = \left(x ^ {q}\right) ^ {(m / p)} = x ^ {(m q / p)}.
+y ^ {m} = \leqft(y ^ {p}\right) ^ {(m / p)} = \leqft(x ^ {q}\right) ^ {(m / p)} = x ^ {(m q / p)}.
 $$
 
 Because  $x$  is of order  $m$ , this can be the identity only if  $mq / p$  is a multiple of  $m$ . Hence,  $q$  is a multiple of  $p$ .
@@ -8921,7 +8921,7 @@ Because  $x$  is of order  $m$ , this can be the identity only if  $mq / p$  is 
 If we let  $k = x^{-(q / p)} \cdot y$ , then  $k$  is not in  $X$  because  $y$  is not, and
 
 $$
-k ^ {p} = \left(x ^ {- (q / p)}\right) ^ {p} \cdot y ^ {p} = x ^ {- q} \cdot y ^ {p} = x ^ {- q} \cdot x ^ {q} = e.
+k ^ {p} = \leqft(x ^ {- (q / p)}\right) ^ {p} \cdot y ^ {p} = x ^ {- q} \cdot y ^ {p} = x ^ {- q} \cdot x ^ {q} = e.
 $$
 
 Therefore, we have found an element  $k$  of order  $p$  that is not in  $X$ . If we let  $K$  be the group generated by the element  $k$ , then  $X \cap K = \{e\}$ .
@@ -8983,7 +8983,7 @@ $$
 where  $h_1, h_2, \ldots, h_n$  are positive integers, and  $k_1, k_2, \ldots, k_m$  are coprime to  $p$ . Then if  $q = p^x$ ,
 
 $$
-R _ {q} (G) = p ^ {\left(\sum_ {i = 1} ^ {n} \operatorname {M i n} \left(h _ {i}, x\right)\right)},
+R _ {q} (G) = p ^ {\leqft(\sum_ {i = 1} ^ {n} \operatorname {M i n} \leqft(h _ {i}, x\right)\right)},
 $$
 
 where  $\operatorname{Min}(h_i, x)$  denotes the minimum of  $h_i$  and  $x$ .
@@ -8991,13 +8991,13 @@ where  $\operatorname{Min}(h_i, x)$  denotes the minimum of  $h_i$  and  $x$ .
 PROOF: Since  $G$  is expressed as a direct product we can use Proposition 7.2 and find  $R_{q}(H)$  for each factor  $H$  in the product, and multiply these numbers together. Since each factor is cyclic, we can use Corollary 3.1. For all of the factors  $Z_{k_1}, Z_{k_2}, \ldots, Z_{k_m}$ , since  $\gcd(k_i, q) = \gcd(k_i, p^x) = 1$ ,  $R_{q}(H)$  would be 1. On the other hand,  $R_{q}(Z_{(p^{h_i})})$  is
 
 $$
-\operatorname * {g c d} \left(p ^ {h _ {i}}, q\right) = \operatorname * {g c d} \left(p ^ {h _ {i}}, p ^ {x}\right) = p ^ {\operatorname {M i n} \left(h _ {i}, x\right)}.
+\operatorname * {g c d} \leqft(p ^ {h _ {i}}, q\right) = \operatorname * {g c d} \leqft(p ^ {h _ {i}}, p ^ {x}\right) = p ^ {\operatorname {M i n} \leqft(h _ {i}, x\right)}.
 $$
 
 Thus,  $R_q(G)$  is the product of the above for factors 1 through  $n$  of  $G$ , which gives us a grand total of
 
 $$
-p \left(\sum_ {i = 1} ^ {n} \operatorname {M i n} \left(h _ {i}, x\right)\right).
+p \leqft(\sum_ {i = 1} ^ {n} \operatorname {M i n} \leqft(h _ {i}, x\right)\right).
 $$
 
 We are now ready to show that all finite abelian groups can be represented as the direct product of cyclic groups. However, we would like to show at the
@@ -9015,13 +9015,13 @@ $$
 where each  $q_i$  is a power of a prime. Then for a given prime  $p$  and positive integer  $x$ , the number of  $q_i$  equal to  $p^x$  is given by the formula
 
 $$
-2 \log_ {p} \left(R _ {p ^ {x}} (G)\right) - \log_ {p} \left(R _ {p ^ {x - 1}} (G)\right) - \log_ {p} \left(R _ {p ^ {x + 1}} (G)\right). \tag {7.1}
+2 \log_ {p} \leqft(R _ {p ^ {x}} (G)\right) - \log_ {p} \leqft(R _ {p ^ {x - 1}} (G)\right) - \log_ {p} \leqft(R _ {p ^ {x + 1}} (G)\right). \tag {7.1}
 $$
 
 Proof: Applying Lemma 7.5 simplifies Equation 7.1 to
 
 $$
-2 \sum_ {i = 1} ^ {n} \operatorname {M i n} \left(h _ {i}, x\right) - \sum_ {i = 1} ^ {n} \operatorname {M i n} \left(h _ {i}, x - 1\right) - \sum_ {i = 1} ^ {n} \operatorname {M i n} \left(h _ {i}, x + 1\right), \tag {7.2}
+2 \sum_ {i = 1} ^ {n} \operatorname {M i n} \leqft(h _ {i}, x\right) - \sum_ {i = 1} ^ {n} \operatorname {M i n} \leqft(h _ {i}, x - 1\right) - \sum_ {i = 1} ^ {n} \operatorname {M i n} \leqft(h _ {i}, x + 1\right), \tag {7.2}
 $$
 
 where  $n$  is the number of the  $q_{i}$  that are a power of  $p$ . Let us observe the value of the expression
@@ -9039,13 +9039,13 @@ $$
 However, if  $h_i = x$ , then  $\operatorname{Min}(h_i, x) = x$ ,  $\operatorname{Min}(h_i, x - 1) = x - 1$ , and  $\operatorname{Min}(h_i, x + 1) = x$ . Hence, we have
 
 $$
-2 \operatorname {M i n} \left(h _ {i}, x\right) - \operatorname {M i n} \left(h _ {i}, x - 1\right) - \operatorname {M i n} \left(h _ {i}, x + 1\right) = 2 x - (x - 1) - x = 1.
+2 \operatorname {M i n} \leqft(h _ {i}, x\right) - \operatorname {M i n} \leqft(h _ {i}, x - 1\right) - \operatorname {M i n} \leqft(h _ {i}, x + 1\right) = 2 x - (x - 1) - x = 1.
 $$
 
 Thus, we see that
 
 $$
-2 \operatorname {M i n} (h _ {i}, x) - \operatorname {M i n} (h _ {i}, x - 1) - \operatorname {M i n} (h _ {i}, x + 1) = \left\{ \begin{array}{l l} 1 & \text {i f} h _ {i} = x, \\ 0 & \text {i f} h _ {i} \neq x. \end{array} \right.
+2 \operatorname {M i n} (h _ {i}, x) - \operatorname {M i n} (h _ {i}, x - 1) - \operatorname {M i n} (h _ {i}, x + 1) = \leqft\{ \begin{array}{l l} 1 & \text {i f} h _ {i} = x, \\ 0 & \text {i f} h _ {i} \neq x. \end{array} \right.
 $$
 
 Thus, if we sum the above expression for  $i$  going from 1 to  $n$ , we will count the number of terms  $h_i$  that are equal to  $x$ . This will give us the number of  $q_i$  that are equal to  $p^x$ . Hence this count will be given by Equation 7.2, and hence Equation 7.1.  $\square$
@@ -9069,7 +9069,7 @@ Furthermore, if  $x$  is an element of maximal order in  $P$ , and  $X$  is the 
 We next have to show that this decomposition is unique. Using Lemma 7.6, the number of times  $Z_{(p^x)}$  appears in the decomposition is given by
 
 $$
-2 \log_ {p} \left(R _ {p ^ {x}} (G)\right) - \log_ {p} \left(R _ {p ^ {x - 1}} (G)\right) - \log_ {p} \left(R _ {p ^ {x + 1}} (G)\right),
+2 \log_ {p} \leqft(R _ {p ^ {x}} (G)\right) - \log_ {p} \leqft(R _ {p ^ {x - 1}} (G)\right) - \log_ {p} \leqft(R _ {p ^ {x + 1}} (G)\right),
 $$
 
 which is determined by the group  $G$ . Thus, the decomposition of  $G$  as a direct product of cyclic groups of the form  $Z_{(p^x)}$  is unique.
@@ -9105,7 +9105,7 @@ Let  $P(m)$  denote the number of ways in which  $m$  can be expressed as a sum 
 PROOF: By the fundamental theorem of abelian groups (7.2), every abelian group of order  $p^m$  must be isomorphic to
 
 $$
-Z _ {\left(p ^ {h _ {1}}\right)} \times Z _ {\left(p ^ {h _ {2}}\right)} \times Z _ {\left(p ^ {h _ {3}}\right)} \times \dots \times Z _ {\left(p ^ {h _ {n}}\right)}.
+Z _ {\leqft(p ^ {h _ {1}}\right)} \times Z _ {\leqft(p ^ {h _ {2}}\right)} \times Z _ {\leqft(p ^ {h _ {3}}\right)} \times \dots \times Z _ {\leqft(p ^ {h _ {n}}\right)}.
 $$
 
 Also,
@@ -9147,7 +9147,7 @@ $$
 where  $p_1, p_2, p_3, \ldots, p_n$  are distinct primes. Then the number of non-isomorphic abelian groups of order  $m$  is given by
 
 $$
-P \left(h _ {1}\right) \cdot P \left(h _ {2}\right) \cdot P \left(h _ {3}\right) \dots P \left(h _ {n}\right).
+P \leqft(h _ {1}\right) \cdot P \leqft(h _ {2}\right) \cdot P \leqft(h _ {3}\right) \dots P \leqft(h _ {n}\right).
 $$
 
 Proof: We know from the fundamental theorem of abelian groups (7.2) that each such group is isomorphic to a direct product of cyclic groups whose order is a power of a prime. If we collect all factors involving the same primes together, we find that such a group is isomorphic to a direct product of a series of groups of orders  $p_1^{h_1}, p_2^{h_2}, p_3^{h_3}, \ldots, p_n^{h_n}$ .
@@ -9155,7 +9155,7 @@ Proof: We know from the fundamental theorem of abelian groups (7.2) that each su
 We know from Corollary 7.2 that there are exactly  $P(x)$  non-isomorphic abelian groups of order  $p^x$ . Thus, there are  $P(h_i)$  possible groups for the  $i^{\text{th}}$  factor in this decomposition. Therefore, there are
 
 $$
-P \left(h _ {1}\right) \cdot P \left(h _ {2}\right) \cdot P \left(h _ {3}\right) \dots P \left(h _ {n}\right)
+P \leqft(h _ {1}\right) \cdot P \leqft(h _ {2}\right) \cdot P \leqft(h _ {3}\right) \dots P \leqft(h _ {n}\right)
 $$
 
 possible ways of forming a product of groups with orders
@@ -9310,7 +9310,7 @@ $$
 So  $\phi(f(x))$  is a homomorphism on  $G$ , so  $\phi \cdot f$  is an automorphism of  $G$ . Also, since  $f$  is one-to-one and onto,  $f^{-1}$  exists on  $G$ , and
 
 $$
-f \left(f ^ {- 1} (x) \cdot f ^ {- 1} (y)\right) = f \left(f ^ {- 1} (x)\right) \cdot f \left(f ^ {- 1} (y)\right) = x \cdot y.
+f \leqft(f ^ {- 1} (x) \cdot f ^ {- 1} (y)\right) = f \leqft(f ^ {- 1} (x)\right) \cdot f \leqft(f ^ {- 1} (y)\right) = x \cdot y.
 $$
 
 Taking  $f^{-1}$  of both sides of the equation gives us
@@ -9346,7 +9346,7 @@ It is not hard to generalize this result.
 # PROPOSITION 7.4
 
 $$
-\operatorname {A u t} \left(Z _ {n}\right) \approx Z _ {n} ^ {*}.
+\operatorname {A u t} \leqft(Z _ {n}\right) \approx Z _ {n} ^ {*}.
 $$
 
 PROOF: Consider the mapping
@@ -9358,13 +9358,13 @@ $$
 given by  $\psi(j) = f_j$ , where  $f_j(x) = (jx) \bmod n$ . Then given two elements  $j$  and  $k$  in  $Z_n^*$ , we have that
 
 $$
-f _ {j} \left(f _ {k} (x)\right) = \left(j \cdot (k \cdot x)\right) \operatorname {m o d} n = \left(\left(j \cdot k\right) \cdot x\right) \operatorname {m o d} n = f _ {j \cdot k} (x).
+f _ {j} \leqft(f _ {k} (x)\right) = \leqft(j \cdot (k \cdot x)\right) \operatorname {m o d} n = \leqft(\leqft(j \cdot k\right) \cdot x\right) \operatorname {m o d} n = f _ {j \cdot k} (x).
 $$
 
 So
 
 $$
-\psi (j) \cdot \psi (k) = f _ {j} \left(f _ {k}\right) = f _ {j \cdot k} = \psi (j \cdot k).
+\psi (j) \cdot \psi (k) = f _ {j} \leqft(f _ {k}\right) = f _ {j \cdot k} = \psi (j \cdot k).
 $$
 
 Hence,  $\psi$  is a homomorphism from  $Z_{n}^{*}$  to  $\operatorname{Aut}(Z_n)$ . To see that  $\psi$  is one-to-one, we note that  $f_{j}(1) = j$ , and so  $f_{j} = f_{k}$  only if  $j = k$ .
@@ -9485,7 +9485,7 @@ FinishHomo(Y)
 show that there is yet another automorphism on  $Q$ , which can be represented by  $(i, k, -i, -k)$ . These two automorphisms, along with the group of 4 inner automorphisms, generate a total of 24 automorphisms.
 
 ```latex
-$\mathbf{A} = \mathrm{Group}(C(j, -j)*C(k, -k), C(i, -i)*C(k, -k),$ $C(j, k, -j, -k), C(i, k, -i, -k)); A$ $\left\{\left(-i, -j\right)\left(-k, k\right)\left(j, i\right), \left(-i, -j, -k\right)\left(k, i, j\right), \left(-i, -j, k\right)\left(-k, i\right), \left(-i, -k, -j\right)\left(k, j, i\right), \left(-i, -k, j\right)\left(-j, i, k\right), \left(-i, -k, i, k\right), \left(-i, k\right)\left(-j, j\right)\left(-k, i\right), \left(-i, k, j\right)\left(-j, i, -k\right), \left(-i, k, i\right), \left(-i, k, i\right), \left(-i, k, i\right), \left(-i, k, i\right), \left(-i, k, i\right), \left(-i, k, i\right), \left(-i, k, i\right), \left(-i, k, i\right), \left(-i, k, i\right), \left(-i, k, i-1\right), \left(-i, k, i-2\right), \left(-i, k, i-3\right), \left(-i, k, i-4\right), \left(-i, k, i-5\right), \left(-i, k, i-6\right), \left(-i, k, i-7\right), \left(-i, k, i-8\right), \left(-i, k, i-9\right), \left(-i, k, i-10\right), \left(-i, k, i-11\right), \left(-i, k, i-12\right), \left(-i, k, i-13\right), \left(-i, k, i-14\right), \left(-i, k, i-15\right), \left(-i, k, i-16\right), \left(-i, k, i-17\right), \left(-i, k, i-18\right), \left(-i, k, i-19\right), \left(-i, k, i-20\right), \left(-i, k, i-21\right), \left(-i, k, i-22\right), \left(-i, k, i-23\right), \left(-i, k, i-24\right), \left(-i, k, i-25\right), \left(-i, k, i-26\right), \left(-i, k, i-27\right), \left(-i, k, i-28\right), \left(-i, k, i-29\right), \left(-i, k, i-30\right), \left(-i, k, i-31\right), \left(-i, k, i-32\right), \left(-i, k, i-33\right), \left(-i, k, i-34\right), \left(-i, k, i-35\right), \left(-i, k, i-36\right), \left(-i, k, i-37\right), \left(-i, k, i-38\right), \left(-i, k, i-39\right), \left(-i,j,k,k\right)\}$
+$\mathbf{A} = \mathrm{Group}(C(j, -j)*C(k, -k), C(i, -i)*C(k, -k),$ $C(j, k, -j, -k), C(i, k, -i, -k)); A$ $\leqft\{\leqft(-i, -j\right)\leqft(-k, k\right)\leqft(j, i\right), \leqft(-i, -j, -k\right)\leqft(k, i, j\right), \leqft(-i, -j, k\right)\leqft(-k, i\right), \leqft(-i, -k, -j\right)\leqft(k, j, i\right), \leqft(-i, -k, j\right)\leqft(-j, i, k\right), \leqft(-i, -k, i, k\right), \leqft(-i, k\right)\leqft(-j, j\right)\leqft(-k, i\right), \leqft(-i, k, j\right)\leqft(-j, i, -k\right), \leqft(-i, k, i\right), \leqft(-i, k, i\right), \leqft(-i, k, i\right), \leqft(-i, k, i\right), \leqft(-i, k, i\right), \leqft(-i, k, i\right), \leqft(-i, k, i\right), \leqft(-i, k, i\right), \leqft(-i, k, i\right), \leqft(-i, k, i-1\right), \leqft(-i, k, i-2\right), \leqft(-i, k, i-3\right), \leqft(-i, k, i-4\right), \leqft(-i, k, i-5\right), \leqft(-i, k, i-6\right), \leqft(-i, k, i-7\right), \leqft(-i, k, i-8\right), \leqft(-i, k, i-9\right), \leqft(-i, k, i-10\right), \leqft(-i, k, i-11\right), \leqft(-i, k, i-12\right), \leqft(-i, k, i-13\right), \leqft(-i, k, i-14\right), \leqft(-i, k, i-15\right), \leqft(-i, k, i-16\right), \leqft(-i, k, i-17\right), \leqft(-i, k, i-18\right), \leqft(-i, k, i-19\right), \leqft(-i, k, i-20\right), \leqft(-i, k, i-21\right), \leqft(-i, k, i-22\right), \leqft(-i, k, i-23\right), \leqft(-i, k, i-24\right), \leqft(-i, k, i-25\right), \leqft(-i, k, i-26\right), \leqft(-i, k, i-27\right), \leqft(-i, k, i-28\right), \leqft(-i, k, i-29\right), \leqft(-i, k, i-30\right), \leqft(-i, k, i-31\right), \leqft(-i, k, i-32\right), \leqft(-i, k, i-33\right), \leqft(-i, k, i-34\right), \leqft(-i, k, i-35\right), \leqft(-i, k, i-36\right), \leqft(-i, k, i-37\right), \leqft(-i, k, i-38\right), \leqft(-i, k, i-39\right), \leqft(-i,j,k,k\right)\}$
 ```
 
 Notice that SageMath allows group elements inside of cycles. We can see that the inner automorphisms are embedded in this list. What is this group isomorphic to?
@@ -9616,7 +9616,7 @@ A  $=$  Group(f,g);A {1,27,61,87,122,149,187,231,244,270,331,357,374 404，437�
 ```
 
 ```txt
-1096, 1148, 1158, 1193, 1214, 1244, 1277, 1307, 1366, 1384, 1410, 1428, 1445, 1466, 1509, 1549, 1566, 1588, 1653, 1675, 1681, 1707, 1741, 1767, 1822, 1862, 1889, 1902, 1966, 1984, 2010, 2028, 2054, 2084, 2117, 2147, 2166, 2188, 2253, 2275, 2285, 2306, 2349, 2389, 2403, 2425, 2463, 2485, 2566, 2584, 2610, 2628, 2662, 2702, 2729, 2742, 2780, 2798, 2843, 2861, 2897, 2927, 2954, 2984, 3018, 3071, 3076, 3110, 3144, 3185, 3206, 3220, 3288, 3306, 3328, 3346, 3361, 3387, 3421, 3447, 3487, 3517, 3531, 3561, 3618, 3671, 3676, 3710, 3737, 3767, 3794, 3824, 3888, 3906, 3928, 3946, 3984, 4025, 4046, 4060, 4083, 4105, 4143, 4165, 4213, 4231, 4257, 4275, 4362, 4392, 4402, 4432, 4488, 4506, 4528, 4546, 4577, 4607, 4634, 4664, 4703, 4721, 4760, 4778, 4809, 4839, 4849, 4879, 4935, 4953,  $\left. {4975},{4993}\right\}$  len (A)
+1096, 1148, 1158, 1193, 1214, 1244, 1277, 1307, 1366, 1384, 1410, 1428, 1445, 1466, 1509, 1549, 1566, 1588, 1653, 1675, 1681, 1707, 1741, 1767, 1822, 1862, 1889, 1902, 1966, 1984, 2010, 2028, 2054, 2084, 2117, 2147, 2166, 2188, 2253, 2275, 2285, 2306, 2349, 2389, 2403, 2425, 2463, 2485, 2566, 2584, 2610, 2628, 2662, 2702, 2729, 2742, 2780, 2798, 2843, 2861, 2897, 2927, 2954, 2984, 3018, 3071, 3076, 3110, 3144, 3185, 3206, 3220, 3288, 3306, 3328, 3346, 3361, 3387, 3421, 3447, 3487, 3517, 3531, 3561, 3618, 3671, 3676, 3710, 3737, 3767, 3794, 3824, 3888, 3906, 3928, 3946, 3984, 4025, 4046, 4060, 4083, 4105, 4143, 4165, 4213, 4231, 4257, 4275, 4362, 4392, 4402, 4432, 4488, 4506, 4528, 4546, 4577, 4607, 4634, 4664, 4703, 4721, 4760, 4778, 4809, 4839, 4849, 4879, 4935, 4953,  $\leqft. {4975},{4993}\right\}$  len (A)
 ```
 
 Since this gives us 168 elements, we know we have all of the automorphisms. Notice that SageMath orders the numbers, making it easier to find a particular element. In particular, the elements  $f$  and  $g$  are found to be
@@ -9681,7 +9681,7 @@ There will always be at least one homomorphism from  $H$  to  $\operatorname{Aut
 DEFINITION 7.6 Let  $K$  and  $H$  be two groups, and let  $G$  be the set of all ordered pairs  $(k, h)$ , where  $k$  is in  $K$  and  $h$  is in  $H$ . Let  $\phi$  be a nontrivial homomorphism from  $H$  to  $\operatorname{Aut}(K)$ . Then the semi-direct product of  $K$  with  $H$  through  $\phi$ , denoted  $K \rtimes_{\phi} H$ , is the set  $G$  with multiplication defined by
 
 $$
-\left(k _ {1}, h _ {1}\right) \cdot \left(k _ {2}, h _ {2}\right) = \left(k _ {1} \cdot \phi_ {h _ {1}} \left(k _ {2}\right), h _ {1} \cdot h _ {2}\right).
+\leqft(k _ {1}, h _ {1}\right) \cdot \leqft(k _ {2}, h _ {2}\right) = \leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(k _ {2}\right), h _ {1} \cdot h _ {2}\right).
 $$
 
 # PROPOSITION 7.6
@@ -9697,13 +9697,13 @@ $$
 since  $\phi$  must map  $e_2$  to the identity automorphism of  $K$ . Thus
 
 $$
-\left(k _ {1}, h _ {1}\right) \cdot \left(e _ {1}, e _ {2}\right) = \left(k _ {1} \cdot \phi_ {h _ {1}} \left(e _ {1}\right), h _ {1} \cdot e _ {2}\right) = \left(k _ {1}, h _ {1}\right),
+\leqft(k _ {1}, h _ {1}\right) \cdot \leqft(e _ {1}, e _ {2}\right) = \leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(e _ {1}\right), h _ {1} \cdot e _ {2}\right) = \leqft(k _ {1}, h _ {1}\right),
 $$
 
 and
 
 $$
-\left(e _ {1}, e _ {2}\right) \cdot \left(k _ {2}, h _ {2}\right) = \left(e _ {1} \cdot \phi_ {e _ {2}} \left(k _ {2}\right), e _ {2} \cdot h _ {2}\right) = \left(k _ {2}, h _ {2}\right).
+\leqft(e _ {1}, e _ {2}\right) \cdot \leqft(k _ {2}, h _ {2}\right) = \leqft(e _ {1} \cdot \phi_ {e _ {2}} \leqft(k _ {2}\right), e _ {2} \cdot h _ {2}\right) = \leqft(k _ {2}, h _ {2}\right).
 $$
 
 So  $(e_1, e_2)$  acts as the identity element of  $G$ .
@@ -9711,25 +9711,25 @@ So  $(e_1, e_2)$  acts as the identity element of  $G$ .
 Next we note that the element  $(k,h)$  has an inverse  $(\phi_{h^{-1}}(k^{-1}),h^{-1})$  , since
 
 $$
-\begin{array}{l} \left(\phi_ {h ^ {- 1}} \left(k ^ {- 1}\right), h ^ {- 1}\right) \cdot (k, h) = \left(\phi_ {h ^ {- 1}} \left(k ^ {- 1}\right) \cdot \phi_ {h ^ {- 1}} (k), h ^ {- 1} \cdot h\right) \\ = \left(\phi_ {h ^ {- 1}} \left(k ^ {- 1} \cdot k\right), e _ {2}\right) = \left(\phi_ {h ^ {- 1}} \left(e _ {1}\right), e _ {2}\right) = \left(e _ {1}, e _ {2}\right), \\ \end{array}
+\begin{array}{l} \leqft(\phi_ {h ^ {- 1}} \leqft(k ^ {- 1}\right), h ^ {- 1}\right) \cdot (k, h) = \leqft(\phi_ {h ^ {- 1}} \leqft(k ^ {- 1}\right) \cdot \phi_ {h ^ {- 1}} (k), h ^ {- 1} \cdot h\right) \\ = \leqft(\phi_ {h ^ {- 1}} \leqft(k ^ {- 1} \cdot k\right), e _ {2}\right) = \leqft(\phi_ {h ^ {- 1}} \leqft(e _ {1}\right), e _ {2}\right) = \leqft(e _ {1}, e _ {2}\right), \\ \end{array}
 $$
 
 and
 
 $$
-\begin{array}{l} (k, h) \cdot \left(\phi_ {h ^ {- 1}} \left(k ^ {- 1}\right), h ^ {- 1}\right) = \left(k \cdot \phi_ {h} \left(\phi_ {h ^ {- 1}} \left(k ^ {- 1}\right)\right), h \cdot h ^ {- 1}\right) \\ = \left(k \cdot \phi_ {e _ {2}} \left(k ^ {- 1}\right), e _ {2}\right) = \left(k \cdot k ^ {- 1}, e _ {2}\right) = \left(e _ {1}, e _ {2}\right). \\ \end{array}
+\begin{array}{l} (k, h) \cdot \leqft(\phi_ {h ^ {- 1}} \leqft(k ^ {- 1}\right), h ^ {- 1}\right) = \leqft(k \cdot \phi_ {h} \leqft(\phi_ {h ^ {- 1}} \leqft(k ^ {- 1}\right)\right), h \cdot h ^ {- 1}\right) \\ = \leqft(k \cdot \phi_ {e _ {2}} \leqft(k ^ {- 1}\right), e _ {2}\right) = \leqft(k \cdot k ^ {- 1}, e _ {2}\right) = \leqft(e _ {1}, e _ {2}\right). \\ \end{array}
 $$
 
 The final thing we need to check is that the multiplication on  $G$  is associative. Note that
 
 $$
-\begin{array}{l} [ (k _ {1}, h _ {1}) \cdot (k _ {2}, h _ {2}) ] \cdot (h _ {3}, k _ {3}) = (k _ {1} \cdot \phi_ {h _ {1}} (k _ {2}), h _ {1} \cdot h _ {2}) \cdot (k _ {3}, h _ {3}) \\ = \left(k _ {1} \cdot \phi_ {h _ {1}} \left(k _ {2}\right) \cdot \phi_ {h _ {1} \cdot h _ {2}} \left(k _ {3}\right), \left(h _ {1} \cdot h _ {2}\right) \cdot h _ {3}\right), \\ \end{array}
+\begin{array}{l} [ (k _ {1}, h _ {1}) \cdot (k _ {2}, h _ {2}) ] \cdot (h _ {3}, k _ {3}) = (k _ {1} \cdot \phi_ {h _ {1}} (k _ {2}), h _ {1} \cdot h _ {2}) \cdot (k _ {3}, h _ {3}) \\ = \leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(k _ {2}\right) \cdot \phi_ {h _ {1} \cdot h _ {2}} \leqft(k _ {3}\right), \leqft(h _ {1} \cdot h _ {2}\right) \cdot h _ {3}\right), \\ \end{array}
 $$
 
 while
 
 $$
-\begin{array}{l} \left(k _ {1}, h _ {1}\right) \cdot \left[ \left(k _ {2}, h _ {2}\right) \cdot \left(k _ {3}, h _ {3}\right) \right] = \left(k _ {1}, h _ {1}\right) \cdot \left(k _ {2} \cdot \phi_ {h _ {2}} \left(k _ {3}\right), h _ {2} \cdot h _ {3}\right) \\ = \left(k _ {1} \cdot \phi_ {h _ {1}} \left(k _ {2} \cdot \phi_ {h _ {2}} \left(k _ {3}\right)\right), h _ {1} \cdot \left(h _ {2} \cdot h _ {3}\right)\right) \\ = \left(k _ {1} \cdot \phi_ {h _ {1}} \left(k _ {2}\right) \cdot \phi_ {h _ {1}} \left(\phi_ {h _ {2}} \left(k _ {3}\right)\right), \left(h _ {1} \cdot h _ {2}\right) \cdot h _ {3}\right) \\ = \left(k _ {1} \cdot \phi_ {h _ {1}} \left(k _ {2}\right) \cdot \phi_ {h _ {1} \cdot h _ {2}} \left(k _ {3}\right), \left(h _ {1} \cdot h _ {2}\right) \cdot h _ {3}\right). \\ \end{array}
+\begin{array}{l} \leqft(k _ {1}, h _ {1}\right) \cdot \leqft[ \leqft(k _ {2}, h _ {2}\right) \cdot \leqft(k _ {3}, h _ {3}\right) \right] = \leqft(k _ {1}, h _ {1}\right) \cdot \leqft(k _ {2} \cdot \phi_ {h _ {2}} \leqft(k _ {3}\right), h _ {2} \cdot h _ {3}\right) \\ = \leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(k _ {2} \cdot \phi_ {h _ {2}} \leqft(k _ {3}\right)\right), h _ {1} \cdot \leqft(h _ {2} \cdot h _ {3}\right)\right) \\ = \leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(k _ {2}\right) \cdot \phi_ {h _ {1}} \leqft(\phi_ {h _ {2}} \leqft(k _ {3}\right)\right), \leqft(h _ {1} \cdot h _ {2}\right) \cdot h _ {3}\right) \\ = \leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(k _ {2}\right) \cdot \phi_ {h _ {1} \cdot h _ {2}} \leqft(k _ {3}\right), \leqft(h _ {1} \cdot h _ {2}\right) \cdot h _ {3}\right). \\ \end{array}
 $$
 
 Hence the multiplication on  $G$  is associative and so  $G$  forms a group.
@@ -9775,7 +9775,7 @@ is a normal subgroup of  $G$ . Furthermore,  $\overline{H} \approx H$ ,  $\overl
 PROOF: We will use Proposition 3.2 and observe that
 
 $$
-(e _ {1}, h) ^ {- 1} = \left(\phi_ {h ^ {- 1}} \left(e _ {1} ^ {- 1}\right), h ^ {- 1}\right) = \left(e _ {1}, h ^ {- 1}\right),
+(e _ {1}, h) ^ {- 1} = \leqft(\phi_ {h ^ {- 1}} \leqft(e _ {1} ^ {- 1}\right), h ^ {- 1}\right) = \leqft(e _ {1}, h ^ {- 1}\right),
 $$
 
 so
@@ -9795,7 +9795,7 @@ $$
 is a homomorphism, since
 
 $$
-f \left(\left(k _ {1}, h _ {1}\right) \cdot \left(k _ {2}, h _ {2}\right)\right) = f \left( \right.\left(k _ {1} \cdot \phi_ {h _ {1}} \left(k _ {2}\right), \left. h _ {1} \cdot h _ {2}\right)\right) = h _ {1} \cdot h _ {2} = f \left(\left(k _ {1}, h _ {1}\right)\right) \cdot f \left(\left(k _ {2}, h _ {2}\right)\right).
+f \leqft(\leqft(k _ {1}, h _ {1}\right) \cdot \leqft(k _ {2}, h _ {2}\right)\right) = f \leqft( \right.\leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(k _ {2}\right), \leqft. h _ {1} \cdot h _ {2}\right)\right) = h _ {1} \cdot h _ {2} = f \leqft(\leqft(k _ {1}, h _ {1}\right)\right) \cdot f \leqft(\leqft(k _ {2}, h _ {2}\right)\right).
 $$
 
 The kernel of this homomorphism is  $\overline{K}$ , so  $\overline{K}$  is a normal subgroup of  $G$ . By restricting the function  $f$  to the set  $\overline{H}$ , we find that it is one-to-one and onto. Thus,  $\overline{H} \approx H$ . A similar function  $g: K \to \overline{K}$ , given by
@@ -9807,7 +9807,7 @@ $$
 can show that  $\overline{K} \approx K$ . This function is clearly one-to-one and onto, and
 
 $$
-g \left(k _ {1}\right) \cdot g \left(k _ {2}\right) = \left(k _ {1}, e _ {2}\right) \cdot \left(k _ {2}, e _ {2}\right) = \left(k _ {1} \cdot \phi_ {e _ {2}} \left(k _ {2}\right), e _ {2}\right) = \left(k _ {1} \cdot k _ {2}, e _ {2}\right) = g \left(k _ {1} \cdot k _ {2}\right).
+g \leqft(k _ {1}\right) \cdot g \leqft(k _ {2}\right) = \leqft(k _ {1}, e _ {2}\right) \cdot \leqft(k _ {2}, e _ {2}\right) = \leqft(k _ {1} \cdot \phi_ {e _ {2}} \leqft(k _ {2}\right), e _ {2}\right) = \leqft(k _ {1} \cdot k _ {2}, e _ {2}\right) = g \leqft(k _ {1} \cdot k _ {2}\right).
 $$
 
 Finally, it is clear that the intersections of the two groups give  $\{(e_1,e_2)\}$ .
@@ -9831,7 +9831,7 @@ $$
 for all  $k \in N$ . We first need to show that  $\phi_h$  is an automorphism on  $N$  for each  $h$  in  $H$ , and then we need to show that  $\phi$  itself is a nontrivial homomorphism. Note that
 
 $$
-\phi_ {h} \left(k _ {1} \cdot k _ {2}\right) = h \cdot k _ {1} \cdot k _ {2} \cdot h ^ {- 1} = \left(h \cdot k _ {1} \cdot h ^ {- 1}\right) \cdot \left(h \cdot k _ {2} \cdot h ^ {- 1}\right) = \phi_ {h} \left(k _ {1}\right) \cdot \phi_ {h} \left(k _ {2}\right).
+\phi_ {h} \leqft(k _ {1} \cdot k _ {2}\right) = h \cdot k _ {1} \cdot k _ {2} \cdot h ^ {- 1} = \leqft(h \cdot k _ {1} \cdot h ^ {- 1}\right) \cdot \leqft(h \cdot k _ {2} \cdot h ^ {- 1}\right) = \phi_ {h} \leqft(k _ {1}\right) \cdot \phi_ {h} \leqft(k _ {2}\right).
 $$
 
 So  $\phi_h$  is a homomorphism from  $N$  to  $N$ . Since
@@ -9845,7 +9845,7 @@ we see that  $\phi_h$  is a one-to-one and onto function. Thus,  $\phi_h$  is an
 Next, we need to see that  $\phi$  itself is a homomorphism from  $H$  to  $\operatorname{Aut}(N)$ . Note that
 
 $$
-\begin{array}{l} \left(\phi_ {h _ {1}} \cdot \phi_ {h _ {2}}\right) (k) = \phi_ {h _ {1}} \left(\phi_ {h _ {2}} (k)\right) \\ = \phi_ {h _ {1}} \left(h _ {2} \cdot k \cdot h _ {2} ^ {- 1}\right) \\ = h _ {1} \cdot h _ {2} \cdot k \cdot h _ {2} ^ {- 1} \cdot h _ {1} ^ {- 1} \\ = \left(h _ {1} \cdot h _ {2}\right) \cdot k \cdot \left(h _ {1} \cdot h _ {2}\right) ^ {- 1} = \phi_ {h _ {1} \cdot h _ {2}} (k). \\ \end{array}
+\begin{array}{l} \leqft(\phi_ {h _ {1}} \cdot \phi_ {h _ {2}}\right) (k) = \phi_ {h _ {1}} \leqft(\phi_ {h _ {2}} (k)\right) \\ = \phi_ {h _ {1}} \leqft(h _ {2} \cdot k \cdot h _ {2} ^ {- 1}\right) \\ = h _ {1} \cdot h _ {2} \cdot k \cdot h _ {2} ^ {- 1} \cdot h _ {1} ^ {- 1} \\ = \leqft(h _ {1} \cdot h _ {2}\right) \cdot k \cdot \leqft(h _ {1} \cdot h _ {2}\right) ^ {- 1} = \phi_ {h _ {1} \cdot h _ {2}} (k). \\ \end{array}
 $$
 
 So  $\phi_{h_1} \cdot \phi_{h_2} = \phi_{(h_1 \cdot h_2)}$  and we see that  $\phi$  is a homomorphism. In fact, the homomorphism must be nontrivial, because if  $\phi_h(k) = k$  for all  $h$  and  $k$ , then since  $\phi_h(k) = h \cdot k \cdot h^{-1} = k$  we have that  $k \cdot h = h \cdot k$  for all  $h$  in  $H$ , and  $k$  in  $N$ . This would indicate that  $H$  is a normal subgroup of  $N \cdot H$ , which contradicts our original assumption. Thus,  $\phi$  is a nontrivial homomorphism.
@@ -9883,13 +9883,13 @@ where  $k$  and  $h$  are the unique elements such that  $k \in N$ ,  $h \in H$ 
 The final step is to show that  $f$  is a homomorphism. Let  $x = k_{1} \cdot h_{1}$ , and  $y = k_{2} \cdot h_{2}$ . Then
 
 $$
-x \cdot y = k _ {1} \cdot h _ {1} \cdot k _ {2} \cdot h _ {2} = \left(k _ {1} \cdot h _ {1} \cdot k _ {2} \cdot h _ {1} ^ {- 1}\right) \cdot \left(h _ {1} \cdot h _ {2}\right).
+x \cdot y = k _ {1} \cdot h _ {1} \cdot k _ {2} \cdot h _ {2} = \leqft(k _ {1} \cdot h _ {1} \cdot k _ {2} \cdot h _ {1} ^ {- 1}\right) \cdot \leqft(h _ {1} \cdot h _ {2}\right).
 $$
 
 Since  $N$  is a normal subgroup,  $h_1 \cdot k_2 \cdot h_1^{-1}$  is in  $N$ , and so  $k_1 \cdot h_1 \cdot k_2 \cdot h_1^{-1}$  is in  $N$  while  $h_1 \cdot h_2$  is in  $H$ . Thus,
 
 $$
-\begin{array}{l} f (x \cdot y) = f \left(\left(k _ {1} \cdot h _ {1} \cdot k _ {2} \cdot h _ {1} ^ {- 1}\right) \cdot \left(h _ {1} \cdot h _ {2}\right)\right) \\ = \left(k _ {1} \cdot h _ {1} \cdot k _ {2} \cdot h _ {1} ^ {- 1}, h _ {1} \cdot h _ {2}\right) \\ = \left(k _ {1} \cdot \phi_ {h _ {1}} \left(k _ {2}\right), h _ {1} \cdot h _ {2}\right) \\ = \left(k _ {1}, h _ {1}\right) \cdot \left(k _ {2}, h _ {2}\right) = f (x) \cdot f (y). \\ \end{array}
+\begin{array}{l} f (x \cdot y) = f \leqft(\leqft(k _ {1} \cdot h _ {1} \cdot k _ {2} \cdot h _ {1} ^ {- 1}\right) \cdot \leqft(h _ {1} \cdot h _ {2}\right)\right) \\ = \leqft(k _ {1} \cdot h _ {1} \cdot k _ {2} \cdot h _ {1} ^ {- 1}, h _ {1} \cdot h _ {2}\right) \\ = \leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(k _ {2}\right), h _ {1} \cdot h _ {2}\right) \\ = \leqft(k _ {1}, h _ {1}\right) \cdot \leqft(k _ {2}, h _ {2}\right) = f (x) \cdot f (y). \\ \end{array}
 $$
 
 So  $f$  is an isomorphism, and we have  $N\cdot H\approx N\rtimes_{\phi}H$
@@ -10022,7 +10022,7 @@ This example is really more of an exception rather than a rule. Part of what mak
 Let  $\phi$  be a homomorphism from a group  $H$  to the group  $\operatorname{Aut}(N)$ . Suppose that  $f$  is another homomorphism such that
 
 $$
-f _ {h} (k) = w \left(\phi_ {h} \left(w ^ {- 1} (k)\right)\right),
+f _ {h} (k) = w \leqft(\phi_ {h} \leqft(w ^ {- 1} (k)\right)\right),
 $$
 
 where  $w(k)$  is an automorphism of  $N$ . Then  $N \rtimes_{f} H \approx N \rtimes_{\phi} H$ .
@@ -10042,19 +10042,19 @@ $$
 Because  $w(k)$  is one-to-one and onto, certainly  $v$  is one-to-one and onto. All we would have to check is that
 
 $$
-v \left(\left(k _ {1}, h _ {1}\right)\right) \cdot v \left(\left(k _ {2}, h _ {2}\right)\right) = v \left(\left(k _ {1}, h _ {1}\right) \cdot \left(k _ {2}, h _ {2}\right)\right).
+v \leqft(\leqft(k _ {1}, h _ {1}\right)\right) \cdot v \leqft(\leqft(k _ {2}, h _ {2}\right)\right) = v \leqft(\leqft(k _ {1}, h _ {1}\right) \cdot \leqft(k _ {2}, h _ {2}\right)\right).
 $$
 
 We have that
 
 $$
-\begin{array}{l} v \left(\left(k _ {1}, h _ {1}\right)\right) \cdot v \left(\left(k _ {2}, h _ {2}\right)\right) = \left(w \left(k _ {1}\right), h _ {1}\right) \cdot \left(w \left(k _ {2}\right), h _ {2}\right) \\ = \left(w \left(k _ {1}\right) \cdot f _ {h _ {1}} \left(w \left(k _ {2}\right)\right), h _ {1} \cdot h _ {2}\right) \\ = \left(w \left(k _ {1}\right) \cdot w \left(\phi_ {h _ {1}} \left(w ^ {- 1} \left(w \left(k _ {2}\right)\right)\right)\right), h _ {1} \cdot h _ {2}\right) \\ = \left(w \left(k _ {1}\right) \cdot w \left(\phi_ {h _ {1}} \left(k _ {2}\right)\right), h _ {1} \cdot h _ {2}\right). \\ \end{array}
+\begin{array}{l} v \leqft(\leqft(k _ {1}, h _ {1}\right)\right) \cdot v \leqft(\leqft(k _ {2}, h _ {2}\right)\right) = \leqft(w \leqft(k _ {1}\right), h _ {1}\right) \cdot \leqft(w \leqft(k _ {2}\right), h _ {2}\right) \\ = \leqft(w \leqft(k _ {1}\right) \cdot f _ {h _ {1}} \leqft(w \leqft(k _ {2}\right)\right), h _ {1} \cdot h _ {2}\right) \\ = \leqft(w \leqft(k _ {1}\right) \cdot w \leqft(\phi_ {h _ {1}} \leqft(w ^ {- 1} \leqft(w \leqft(k _ {2}\right)\right)\right)\right), h _ {1} \cdot h _ {2}\right) \\ = \leqft(w \leqft(k _ {1}\right) \cdot w \leqft(\phi_ {h _ {1}} \leqft(k _ {2}\right)\right), h _ {1} \cdot h _ {2}\right). \\ \end{array}
 $$
 
 On the other hand,
 
 $$
-\begin{array}{l} v \left(\left(k _ {1}, h _ {1}\right) \cdot \left(k _ {2}, h _ {2}\right)\right) = v \left(\left(k _ {1} \cdot \phi_ {h _ {1}} \left(k _ {2}\right), h _ {1} \cdot h _ {2}\right)\right) \\ = \left(w \left(k _ {1} \cdot \phi_ {h _ {1}} \left(k _ {2}\right)\right), h _ {1} \cdot h _ {2}\right) \\ = \left(w \left(k _ {1}\right) \cdot w \left(\phi_ {h _ {1}} \left(k _ {2}\right)\right), h _ {1} \cdot h _ {2}\right). \\ \end{array}
+\begin{array}{l} v \leqft(\leqft(k _ {1}, h _ {1}\right) \cdot \leqft(k _ {2}, h _ {2}\right)\right) = v \leqft(\leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(k _ {2}\right), h _ {1} \cdot h _ {2}\right)\right) \\ = \leqft(w \leqft(k _ {1} \cdot \phi_ {h _ {1}} \leqft(k _ {2}\right)\right), h _ {1} \cdot h _ {2}\right) \\ = \leqft(w \leqft(k _ {1}\right) \cdot w \leqft(\phi_ {h _ {1}} \leqft(k _ {2}\right)\right), h _ {1} \cdot h _ {2}\right). \\ \end{array}
 $$
 
 Since these are equal, we have an isomorphism.
@@ -10234,11 +10234,11 @@ $$
 is a homomorphism. Note that
 
 $$
-\left(\phi_ {x _ {1}} \cdot \phi_ {x _ {2}}\right) (y) = \phi_ {x _ {1}} \left(\phi_ {x _ {2}} (y)\right)
+\leqft(\phi_ {x _ {1}} \cdot \phi_ {x _ {2}}\right) (y) = \phi_ {x _ {1}} \leqft(\phi_ {x _ {2}} (y)\right)
 $$
 
 $$
-\begin{array}{l} = \phi_ {x _ {1}} \left(x _ {2} \cdot y \cdot x _ {2} ^ {- 1}\right) \\ = x _ {1} \cdot x _ {2} \cdot y \cdot x _ {2} ^ {- 1} \cdot x _ {1} ^ {- 1} \\ = \left(x _ {1} \cdot x _ {2}\right) \cdot y \cdot \left(x _ {1} \cdot x _ {2}\right) ^ {- 1} = \phi_ {x _ {1} \cdot x _ {2}} (y). \\ \end{array}
+\begin{array}{l} = \phi_ {x _ {1}} \leqft(x _ {2} \cdot y \cdot x _ {2} ^ {- 1}\right) \\ = x _ {1} \cdot x _ {2} \cdot y \cdot x _ {2} ^ {- 1} \cdot x _ {1} ^ {- 1} \\ = \leqft(x _ {1} \cdot x _ {2}\right) \cdot y \cdot \leqft(x _ {1} \cdot x _ {2}\right) ^ {- 1} = \phi_ {x _ {1} \cdot x _ {2}} (y). \\ \end{array}
 $$
 
 So  $\phi_{x_1} \cdot \phi_{x_2} = \phi_{(x_1 \cdot x_2)}$  and we see that  $\phi$  is a homomorphism.
@@ -10274,7 +10274,7 @@ Hence,  $g \cdot z \cdot g^{-1}$  commutes with every element  $n$  in  $N$ , so
 This proposition demonstrates a rather unusual property of a center of a group. In general, the normal subgroup of a normal subgroup is not necessarily a normal subgroup. Consider  $M = \{(), (12)(34), (13)(24), (14)(23)\}$ , which is a normal subgroup of  $S_4$ , and  $H = \{(), (12)(34)\}$ , which is a normal subgroup of  $M$ .
 
 ```latex
-$\mathbf{S4} = \mathbf{Group}(\mathbf{C}(1,2),\mathbf{C}(1,2,3),\mathbf{C}(1,2,3,4))$ $\mathbf{M} = \mathbf{Group}(\mathbf{C}(1,2)*\mathbf{C}(3,4),\mathbf{C}(1,3)*\mathbf{C}(2,4));\mathbf{M}$ $\left\{\left( \begin{array}{l}\end{array} \right),(1,2)(3,4), (1,3)(2,4), (1,4)(2,3)\right\}$ $\mathbf{H} = \mathbf{Group}(\mathbf{C}(1,2)*\mathbf{C}(3,4));\mathbf{H}$ $\left\{\left( \begin{array}{l}\end{array} \right),(1,2)(3,4)\right\}$
+$\mathbf{S4} = \mathbf{Group}(\mathbf{C}(1,2),\mathbf{C}(1,2,3),\mathbf{C}(1,2,3,4))$ $\mathbf{M} = \mathbf{Group}(\mathbf{C}(1,2)*\mathbf{C}(3,4),\mathbf{C}(1,3)*\mathbf{C}(2,4));\mathbf{M}$ $\leqft\{\leqft( \begin{array}{l}\end{array} \right),(1,2)(3,4), (1,3)(2,4), (1,4)(2,3)\right\}$ $\mathbf{H} = \mathbf{Group}(\mathbf{C}(1,2)*\mathbf{C}(3,4));\mathbf{H}$ $\leqft\{\leqft( \begin{array}{l}\end{array} \right),(1,2)(3,4)\right\}$
 ```
 
 We find that  $H$  is not a normal subgroup of  $S_4$ .
@@ -10351,7 +10351,7 @@ Let  $S$  be a subset of the group  $G$ . Then  $N_G(S)$  is a subgroup of  $G$ 
 PROOF: Suppose  $x$  and  $y$  are in  $N_G(S)$ . Then both  $x \cdot S \cdot x^{-1} = S$ , and  $y \cdot S \cdot y^{-1} = S$ . Thus,  $S = y^{-1} \cdot S \cdot y$ , and so
 
 $$
-\left(x \cdot y ^ {- 1}\right) \cdot S \cdot \left(x \cdot y ^ {- 1}\right) ^ {- 1} = x \cdot \left(y ^ {- 1} \cdot S \cdot y\right) \cdot x ^ {- 1} = x \cdot S \cdot x ^ {- 1} = S.
+\leqft(x \cdot y ^ {- 1}\right) \cdot S \cdot \leqft(x \cdot y ^ {- 1}\right) ^ {- 1} = x \cdot \leqft(y ^ {- 1} \cdot S \cdot y\right) \cdot x ^ {- 1} = x \cdot S \cdot x ^ {- 1} = S.
 $$
 
 Thus,  $x \cdot y^{-1}$  is in  $N_G(S)$ , and so by Proposition 3.2,  $N_G(S)$  is a subgroup of  $G$ .
@@ -10545,7 +10545,7 @@ Recall that in Definition 2.3, we defined an equivalence relationship as any rel
 These were called the reflexive, symmetric, and transitive properties. We used the equivalence relationships of cosets in §4.4 to form a partition of the group, which gave us the quotient groups. In the same way, we can use the equivalence relationship of conjugates to form a different partition of the group, called conjugacy classes. Unlike cosets, though, the conjugacy classes will not be all the same size. The conjugacy class containing the element  $u$  is given by
 
 $$
-\left\{g \cdot u \cdot g ^ {- 1} \mid g \in G \right\}
+\leqft\{g \cdot u \cdot g ^ {- 1} \mid g \in G \right\}
 $$
 
 # Computational Example 8.6
@@ -10729,7 +10729,7 @@ Thus the conjugate of a 3-cycle is another 3-cycle.
 Next we will show that any 3-cycle is conjugate to the element (123) in  $A_{n}$ . Let  $(uvw)$  be a 3-cycle. Since  $n > 4$  there must be at least two numbers not mentioned in this 3-cycle, so we will call two of them  $x$  and  $y$ . Consider the permutation
 
 $$
-\phi = \left( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & \dots \\ u & v & w & x & y & \dots \end{array} \right).
+\phi = \leqft( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & \dots \\ u & v & w & x & y & \dots \end{array} \right).
 $$
 
 Here, the dots indicate that when  $n > 5$ , we can complete the permutation in any way so that the numbers on the bottom row will be a permutation of the numbers 1 through  $n$ .
@@ -10737,7 +10737,7 @@ Here, the dots indicate that when  $n > 5$ , we can complete the permutation in 
 Now  $\phi$  will either be an even permutation or an odd permutation. If  $\phi$  is an odd permutation, we can consider instead the permutation
 
 $$
-\phi = \left( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & \dots \\ u & v & w & y & x & \dots \end{array} \right).
+\phi = \leqft( \begin{array}{c c c c c c} 1 & 2 & 3 & 4 & 5 & \dots \\ u & v & w & y & x & \dots \end{array} \right).
 $$
 
 So we may assume that  $\phi$  is an even permutation. Thus  $\phi$  is in  $A_{n}$ , and we can compute
@@ -10954,7 +10954,7 @@ $$
 which is a normal subgroup of  $K$  since  $K$  is abelian. Therefore, we have a longer subnormal series of length 4:
 
 $$
-S _ {4} \supseteq A _ {4} \supseteq K \supseteq H \supseteq \left(\left(\right)\right).
+S _ {4} \supseteq A _ {4} \supseteq K \supseteq H \supseteq \leqft(\leqft(\right)\right).
 $$
 
 We say that this new subnormal series is a refinement of the first subnormal series.
@@ -10976,7 +10976,7 @@ if each subgroup  $G_{i}$  appears as  $H_{j}$  for some  $j$ .
 Is there a way that we can refine our subnormal series to produce an even longer chain? Our definition did not exclude the possibility of two groups in the series being the same, so we could consider
 
 $$
-S _ {4} \supseteq A _ {4} \supseteq A _ {4} \supseteq K \supseteq H \supseteq H \supseteq H \supseteq \left(\left(\right)\right).
+S _ {4} \supseteq A _ {4} \supseteq A _ {4} \supseteq K \supseteq H \supseteq H \supseteq H \supseteq \leqft(\leqft(\right)\right).
 $$
 
 Although this is a longer subnormal series, it is usually pointless to repeat the same subgroup in the series.
@@ -10992,7 +10992,7 @@ for which each subgroup is smaller than the preceding subgroup, and for which th
 Using this definition, we see that
 
 $$
-S _ {4} \supseteq A _ {4} \supseteq K \supseteq H \supseteq \left\{\left(\right) \right\}
+S _ {4} \supseteq A _ {4} \supseteq K \supseteq H \supseteq \leqft\{\leqft(\right) \right\}
 $$
 
 is a composition series for  $S_4$ , since no subgroups are repeated, and there simply is not enough room between two of these subgroups to slip in another subgroup. For example,  $A_4$  is half of  $S_4$ , so any subgroup containing more than  $A_4$  must be all of  $S_4$ . In fact, we can easily test to see whether a subnormal series is a composition series.
@@ -11026,7 +11026,7 @@ The quotient groups  $G_{k-1} / G_k$  in a composition series for  $G$  are call
 For example, the composition factors for the composition series
 
 $$
-S _ {4} \supseteq A _ {4} \supseteq K \supseteq H \supseteq \left\{\left(\right) \right\}
+S _ {4} \supseteq A _ {4} \supseteq K \supseteq H \supseteq \leqft\{\leqft(\right) \right\}
 $$
 
 are
@@ -11038,7 +11038,7 @@ $$
 It is certainly possible for a group to have more than one composition series. For example, we could have picked the subgroup  $B = \{(), (1,4)(2,3)\}$  instead of  $H$ , producing the composition series
 
 $$
-S _ {4} \supseteq A _ {4} \supseteq K \supseteq B \supseteq \left(\left(\right)\right).
+S _ {4} \supseteq A _ {4} \supseteq K \supseteq B \supseteq \leqft(\leqft(\right)\right).
 $$
 
 Even though this is a different composition series, the composition factors are isomorphically the same. Our goal for this section is to prove that this happens
@@ -11192,13 +11192,13 @@ $$
 PROOF: We let
 
 $$
-A _ {i, j} = \left(A _ {i - 1} \cap B _ {j}\right) \cdot A _ {i} \quad \text {a n d} \quad B _ {j, i} = \left(B _ {j - 1} \cap A _ {i}\right) \cdot B _ {j}.
+A _ {i, j} = \leqft(A _ {i - 1} \cap B _ {j}\right) \cdot A _ {i} \quad \text {a n d} \quad B _ {j, i} = \leqft(B _ {j - 1} \cap A _ {i}\right) \cdot B _ {j}.
 $$
 
 To see that these fit the conditions we need, we first want to show that these are groups. Note that both
 
 $$
-X = \left(A _ {i - 1} \cap B _ {j - 1}\right) \quad \text {a n d} \quad Y = \left(A _ {i - 1} \cap B _ {j}\right)
+X = \leqft(A _ {i - 1} \cap B _ {j - 1}\right) \quad \text {a n d} \quad Y = \leqft(A _ {i - 1} \cap B _ {j}\right)
 $$
 
 are subgroups of  $A_{i-1}$ ,  $Y$  is a subgroup of  $X$ , and  $Z = A_i$  is a normal subgroup of  $A_{i-1}$ .
@@ -11212,7 +11212,7 @@ $$
 Now Lemma 8.2 comes into use. Since  $Y$  is a subgroup of  $X$ ,
 
 $$
-\begin{array}{l} X \cap (Y \cdot Z) = Y \cdot (X \cap Z) = \left(A _ {i - 1} \cap B _ {j}\right) \cdot \left(A _ {i - 1} \cap B _ {j - 1} \cap A _ {i}\right) \\ = \left(A _ {i - 1} \cap B _ {j}\right) \cdot \left(A _ {i} \cap B _ {j - 1}\right) \\ = \left(A _ {i} \cap B _ {j - 1}\right) \cdot \left(A _ {i - 1} \cap B _ {j}\right). \\ \end{array}
+\begin{array}{l} X \cap (Y \cdot Z) = Y \cdot (X \cap Z) = \leqft(A _ {i - 1} \cap B _ {j}\right) \cdot \leqft(A _ {i - 1} \cap B _ {j - 1} \cap A _ {i}\right) \\ = \leqft(A _ {i - 1} \cap B _ {j}\right) \cdot \leqft(A _ {i} \cap B _ {j - 1}\right) \\ = \leqft(A _ {i} \cap B _ {j - 1}\right) \cdot \leqft(A _ {i - 1} \cap B _ {j}\right). \\ \end{array}
 $$
 
 Thus,
@@ -11224,7 +11224,7 @@ $$
 By switching the roles of the two series we find by the exact same argument that
 
 $$
-B _ {j, i - 1} / B _ {j, i} \approx (B _ {j - 1} \cap A _ {i - 1}) / \left[ \left(B _ {j - 1} \cap A _ {i}\right) \cdot \left(B _ {j} \cap A _ {i - 1}\right) \right].
+B _ {j, i - 1} / B _ {j, i} \approx (B _ {j - 1} \cap A _ {i - 1}) / \leqft[ \leqft(B _ {j - 1} \cap A _ {i}\right) \cdot \leqft(B _ {j} \cap A _ {i - 1}\right) \right].
 $$
 
 Notice that these are exactly the same thing, so
@@ -11258,7 +11258,7 @@ The Jordan-Hölder theorem (8.3) shows that the composition factors do not depen
 For example, a composition series for  $S_{5}$  is given by
 
 $$
-S _ {5} \supset A _ {5} \supset \left\{\left(\right) \right\}, \qquad S _ {5} / A _ {5} \approx Z _ {2}, \quad \text {a n d} \quad A _ {5} / \left\{\left(\right) \right\} \approx A _ {5}.
+S _ {5} \supset A _ {5} \supset \leqft\{\leqft(\right) \right\}, \qquad S _ {5} / A _ {5} \approx Z _ {2}, \quad \text {a n d} \quad A _ {5} / \leqft\{\leqft(\right) \right\} \approx A _ {5}.
 $$
 
 Since  $Z_{2}$  and  $A_{5}$  are both simple groups, this is a composition series, and so the composition factors of  $S_{5}$  are  $Z_{2}$  and  $A_{5}$ .
@@ -11525,12 +11525,12 @@ Hint: Try different combinations of  $a$  and  $b$  to find another 3-cycle.
 ![](images/b3b8d9592aedfe2cdd9f91a3eb8fbc1ec18e56e58db633f9348c1e6deb76da19.jpg)
 FIGURE 8.6: Puzzle for Problems 7, 8, and 9
 
-7 Consider the puzzle shown in Figure 8.6, in which the seven disks can move within the track, moving  $1 \to 2 \to 3 \to 4 \to 5 \to 6 \to 7$ , and also the dotted circle can rotate  $180^{\circ}$ , exchanging  $1 \leftrightarrow 3$  and  $2 \leftrightarrow 6$ . Show that the set of positions that can be obtained from these two moves is a subgroup of  $A_7$ .
+7 Consider the puzzle shown in Figure 8.6, in which the seven disks can move within the track, moving  $1 \to 2 \to 3 \to 4 \to 5 \to 6 \to 7$ , and also the dotted circle can rotate  $180^{\circ}$ , exchanging  $1 \leqftrightarrow 3$  and  $2 \leqftrightarrow 6$ . Show that the set of positions that can be obtained from these two moves is a subgroup of  $A_7$ .
 
 # Interactive Problems
 
 8 Consider the puzzle from Problem 7, in which the possible positions are generated from the elements  $a = (1234567)$  and  $b = (13)(26)$ . Find the group generated from these two elements, and show that this is not all of  $A_7$ . How many elements are in this group? Have we seen any other subgroups of  $A_7$  with this number of elements?
-9 Even though the puzzle from Problem 7 cannot produce all positions in  $A_7$ , the position corresponding to flipping the dotted circle vertically, so that  $1 \leftrightarrow 2$  and  $3 \leftrightarrow 6$  can be obtained. Use ExpressAsWord to find a way to express (12)(36) in terms of  $a = (1234567)$  and  $b = (13)(26)$ . This problem is not available in Mathematica.
+9 Even though the puzzle from Problem 7 cannot produce all positions in  $A_7$ , the position corresponding to flipping the dotted circle vertically, so that  $1 \leqftrightarrow 2$  and  $3 \leqftrightarrow 6$  can be obtained. Use ExpressAsWord to find a way to express (12)(36) in terms of  $a = (1234567)$  and  $b = (13)(26)$ . This problem is not available in Mathematica.
 10 Suppose we are only allowed to rotate the sides of a  $2 \times 2 \times 2$  Rubik's Cube by  $180^{\circ}$ . Find the corresponding group of possible positions that can be formed.
 
 Hint: Since there is no center square, we can fix one corner, so only 21 of the squares can move. There will be 3 axes of rotation, so we have 3 elements of  $S_{21}$ . Find the group generated by these 3 elements.
@@ -11625,7 +11625,7 @@ $$
 forms a multiplicative inverse, since it is a simple exercise to show that  $x \cdot x^{-1} = x^{-1} \cdot x = 1$ , the multiplicative identity (see Problem 10). Note that since  $x \neq 0$ , the common denominator  $a^2 + b^2 + c^2 + d^2 > 0$ . It is easy to see that multiplication is closed. The only hard part is to show that the associative law holds, which is best done in SageMath (see Problem 22). Given that the associative law holds, it is easy to see that the product of two nonzero vectors must be nonzero. If  $x \cdot y = 0$ , and  $x \neq 0$ , then
 
 $$
-y = \left(x ^ {- 1} \cdot x\right) \cdot y = x ^ {- 1} \cdot \left(x \cdot y\right) = x ^ {- 1} \cdot 0 = 0.
+y = \leqft(x ^ {- 1} \cdot x\right) \cdot y = x ^ {- 1} \cdot \leqft(x \cdot y\right) = x ^ {- 1} \cdot 0 = 0.
 $$
 
 Thus, if both  $x \neq 0$  and  $y \neq 0$ , then  $x \cdot y \neq 0$ .
@@ -11899,7 +11899,7 @@ for any element  $x$  and any integers  $n$  and  $m$ . See Problems 13, 14 and 
 Let  $x$  and  $y$  be any two elements in a ring, and let  $n$  be an integer. Then
 
 $$
-\left(n x\right) \cdot y = n \left(x \cdot y\right) = x \cdot \left(n y\right).
+\leqft(n x\right) \cdot y = n \leqft(x \cdot y\right) = x \cdot \leqft(n y\right).
 $$
 
 Proof: We will proceed by induction. The statement is certainly true for  $n = 0$  or  $n = 1$ . Suppose that the statement is true for the previous case  $n - 1$ . But then
@@ -11917,7 +11917,7 @@ $$
 and so
 
 $$
-\left(n x\right) \cdot y = n \left(x \cdot y\right) = x \cdot (n y).
+\leqft(n x\right) \cdot y = n \leqft(x \cdot y\right) = x \cdot (n y).
 $$
 
 Hence, the statement is true for all positive integers.
@@ -11925,7 +11925,7 @@ Hence, the statement is true for all positive integers.
 For negative integers, we can merely show that
 
 $$
-\begin{array}{l} \left(n x\right) \cdot y + \left((- n) x\right) \cdot y = \left(n x + (- n) x\right) \cdot y = \left((n - n) x\right) \cdot y = 0 \cdot y = 0. \\ n (x \cdot y) + (- n) (x \cdot y) = (n - n) (x \cdot y) = 0 (x \cdot y) = 0. \\ \end{array}
+\begin{array}{l} \leqft(n x\right) \cdot y + \leqft((- n) x\right) \cdot y = \leqft(n x + (- n) x\right) \cdot y = \leqft((n - n) x\right) \cdot y = 0 \cdot y = 0. \\ n (x \cdot y) + (- n) (x \cdot y) = (n - n) (x \cdot y) = 0 (x \cdot y) = 0. \\ \end{array}
 $$
 
 $$
@@ -12506,7 +12506,7 @@ Notice that from the definition every nontrivial ring  $R$  will contain at leas
 Consider the subset of real numbers of the form
 
 $$
-S = \left\{x + y \sqrt {2} \mid x, y \in \mathbb {Z} \right\}.
+S = \leqft\{x + y \sqrt {2} \mid x, y \in \mathbb {Z} \right\}.
 $$
 
 Determine whether or not this is a subring of  $\mathbb{R}$
@@ -12514,13 +12514,13 @@ Determine whether or not this is a subring of  $\mathbb{R}$
 SOLUTION: Two typical elements of  $S$  are  $a = x_1 + y_1\sqrt{2}$  and  $b = x_2 + y_2\sqrt{2}$ . Then
 
 $$
-a - b = \left(x _ {1} - x _ {2}\right) + \left(y _ {1} - y _ {2}\right) \sqrt {2},
+a - b = \leqft(x _ {1} - x _ {2}\right) + \leqft(y _ {1} - y _ {2}\right) \sqrt {2},
 $$
 
 and
 
 $$
-a \cdot b = \left(x _ {1} x _ {2} + 2 y _ {1} y _ {2}\right) + \left(x _ {1} y _ {2} + x _ {2} y _ {1}\right) \sqrt {2}.
+a \cdot b = \leqft(x _ {1} x _ {2} + 2 y _ {1} y _ {2}\right) + \leqft(x _ {1} y _ {2} + x _ {2} y _ {1}\right) \sqrt {2}.
 $$
 
 Since all expressions in parenthesis are integers, these are in  $S$ . Thus, by Proposition 10.1,  $S$  is a subring of  $\mathbb{R}$ .
@@ -12927,7 +12927,7 @@ which is a coset of  $R / I$ .
 Now suppose that  $X$ ,  $Y$ , and  $Z$  are three cosets of  $R / I$  with  $x$ ,  $y$ , and  $z$  being representative elements, respectively. Then
 
 $$
-\begin{array}{l} (X * Y) * Z = \left(\left(x + I\right) * \left(y + I\right)\right) * (z + I) \\ = (x \cdot y + I) * (z + I) \\ = \left(\left(x \cdot y\right) \cdot z + I\right) \\ = (x \cdot (y \cdot z) + I) \\ = (x + I) * (y \cdot z + I) \\ = (x + I) * ((y + I) * (z + I)) \\ = X * (Y * Z). \\ \end{array}
+\begin{array}{l} (X * Y) * Z = \leqft(\leqft(x + I\right) * \leqft(y + I\right)\right) * (z + I) \\ = (x \cdot y + I) * (z + I) \\ = \leqft(\leqft(x \cdot y\right) \cdot z + I\right) \\ = (x \cdot (y \cdot z) + I) \\ = (x + I) * (y \cdot z + I) \\ = (x + I) * ((y + I) * (z + I)) \\ = X * (Y * Z). \\ \end{array}
 $$
 
 So multiplication is associative. Also,
@@ -13068,7 +13068,7 @@ $$
 3 If  $X$  and  $Y$  are ideals of a ring, show that the product of  $X$  and  $Y$ ,
 
 $$
-X \cdot Y = \left\{x _ {1} \cdot y _ {1} + x _ {2} \cdot y _ {2} + \dots + x _ {n} \cdot y _ {n} \mid x _ {i} \in X \text {a n d} y _ {i} \in Y, n > 0 \right\},
+X \cdot Y = \leqft\{x _ {1} \cdot y _ {1} + x _ {2} \cdot y _ {2} + \dots + x _ {n} \cdot y _ {n} \mid x _ {i} \in X \text {a n d} y _ {i} \in Y, n > 0 \right\},
 $$
 
 is an ideal.
@@ -13103,7 +13103,7 @@ Kummer made significant contributions to several areas of mathematics. He worked
 Kummer's greatest accomplishment came in an attempt to prove Fermat's last theorem. (See the Historical Diversion on page 103.) Several years earlier, Gabriel Lamé had a flawed proof of the theorem, based on the assumption that  $\mathbb{Z}[\omega_n]$  had unique factorization. In the cases where  $\mathbb{Z}[\omega_n]$  is a UFD, such as  $n = 3$  and  $n = 4$ , one can prove Fermat's last theorem from
 
 $$
-z ^ {n} = x ^ {n} + y ^ {n} = (x + y) \left(x + \omega_ {n} y\right) \left(x + \omega_ {n} ^ {2} y\right) \dots \left(x + \omega_ {n} ^ {n - 1} y\right).
+z ^ {n} = x ^ {n} + y ^ {n} = (x + y) \leqft(x + \omega_ {n} y\right) \leqft(x + \omega_ {n} ^ {2} y\right) \dots \leqft(x + \omega_ {n} ^ {n - 1} y\right).
 $$
 
 However, Kummer had shown three years before Lamé's proof that  $\mathbb{Z}[\omega_n]$  is not a UFD for  $n = 23$ . (It is now known that there are only a finite set of integers for which  $\mathbb{Z}[\omega_n]$  is a UFD.)
@@ -13303,7 +13303,7 @@ $$
 Also,
 
 $$
-\begin{array}{l} f ((a \cdot x) \cdot (b \cdot x)) = f (a \cdot b \cdot x ^ {2}) \\ = f (a \cdot b \cdot k \cdot x) \\ = k \cdot a \cdot b \cdot k \mod (k n) \\ = \left(\left(k \cdot a \bmod (k n)\right) \cdot \left(k \cdot b \bmod (k n)\right)\right) \bmod (k n) \\ = f (a \cdot x) \cdot f (b \cdot x). \\ \end{array}
+\begin{array}{l} f ((a \cdot x) \cdot (b \cdot x)) = f (a \cdot b \cdot x ^ {2}) \\ = f (a \cdot b \cdot k \cdot x) \\ = k \cdot a \cdot b \cdot k \mod (k n) \\ = \leqft(\leqft(k \cdot a \bmod (k n)\right) \cdot \leqft(k \cdot b \bmod (k n)\right)\right) \bmod (k n) \\ = f (a \cdot x) \cdot f (b \cdot x). \\ \end{array}
 $$
 
 Therefore,  $f$  is an isomorphism, and  $R \approx kZ_{kn}$ .
@@ -13341,13 +13341,13 @@ PROOF: Bézout's lemma (1.3) would give us values for  $u$  and  $v$ , but there
 Let  $k = \gcd(x, y)$ . Then  $(x / k)$  and  $(y / k)$  are coprime, so  $(x / k)$  has an multiplicative inverse in  $Z_{(y / k)}$ , say  $n$ . That is,
 
 $$
-\frac {x}{k} \cdot n \equiv 1 \left(\mathrm {m o d} \frac {y}{k}\right).
+\frac {x}{k} \cdot n \equiv 1 \leqft(\mathrm {m o d} \frac {y}{k}\right).
 $$
 
 Let  $f$  be the largest divisor of  $k$  that is coprime to  $(y / k)$ . By the Chinese remainder theorem (1.5), there is a number  $u$  such that
 
 $$
-u \equiv n \left(\mathrm {m o d} \frac {y}{k}\right)
+u \equiv n \leqft(\mathrm {m o d} \frac {y}{k}\right)
 $$
 
 and
@@ -13395,11 +13395,11 @@ $$
 Next we need to show that  $f$  is a homomorphism from  $kZ_{kn}$  to  $xZ_{xn}$ . If  $a \equiv k \cdot w \pmod{kn}$  and  $b \equiv k \cdot z \pmod{kn}$ , then
 
 $$
-\begin{array}{l} f (a + b) = f \left(\left(k \cdot w + k \cdot z\right) \bmod (k n)\right) = u \cdot \left(x \cdot w + x \cdot z\right) \bmod (x n) \\ = (u \cdot x \cdot w + u \cdot x \cdot z) \bmod (x n) = f (a) + f (b). \\ \end{array}
+\begin{array}{l} f (a + b) = f \leqft(\leqft(k \cdot w + k \cdot z\right) \bmod (k n)\right) = u \cdot \leqft(x \cdot w + x \cdot z\right) \bmod (x n) \\ = (u \cdot x \cdot w + u \cdot x \cdot z) \bmod (x n) = f (a) + f (b). \\ \end{array}
 $$
 
 $$
-\begin{array}{l} f (a \cdot b) = f ((k \cdot w \cdot k \cdot z) \mod (k n)) = (u \cdot x \cdot w \cdot k \cdot z) \mod (x n) \\ = (u \cdot x \cdot w \cdot (u \cdot x + v \cdot n) \cdot z) \bmod (x n) \\ = (u \cdot x \cdot w \cdot u \cdot x \cdot z + u \cdot x \cdot w \cdot v \cdot n \cdot z) \mod (x n) \\ = \left(\left(u \cdot x \cdot w\right) \cdot \left(u \cdot x \cdot z\right)\right) \operatorname {m o d} (x n) = f (a) \cdot f (b). \\ \end{array}
+\begin{array}{l} f (a \cdot b) = f ((k \cdot w \cdot k \cdot z) \mod (k n)) = (u \cdot x \cdot w \cdot k \cdot z) \mod (x n) \\ = (u \cdot x \cdot w \cdot (u \cdot x + v \cdot n) \cdot z) \bmod (x n) \\ = (u \cdot x \cdot w \cdot u \cdot x \cdot z + u \cdot x \cdot w \cdot v \cdot n \cdot z) \mod (x n) \\ = \leqft(\leqft(u \cdot x \cdot w\right) \cdot \leqft(u \cdot x \cdot z\right)\right) \operatorname {m o d} (x n) = f (a) \cdot f (b). \\ \end{array}
 $$
 
 So  $f$  is indeed a homomorphism from  $kZ_{kn}$  to  $xZ_{xn}$ .
@@ -13971,19 +13971,19 @@ $$
 then
 
 $$
-A + B = \left(a _ {0} + b _ {0}\right) + \left(a _ {1} + b _ {1}\right) x + \left(a _ {2} + b _ {2}\right) x ^ {2} + \left(a _ {3} + b _ {3}\right) x ^ {3} + \dots
+A + B = \leqft(a _ {0} + b _ {0}\right) + \leqft(a _ {1} + b _ {1}\right) x + \leqft(a _ {2} + b _ {2}\right) x ^ {2} + \leqft(a _ {3} + b _ {3}\right) x ^ {3} + \dots
 $$
 
 and
 
 $$
-A \cdot B = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \left(a _ {i} \cdot b _ {j}\right) x ^ {i + j}.
+A \cdot B = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \leqft(a _ {i} \cdot b _ {j}\right) x ^ {i + j}.
 $$
 
 Although this looks like a double infinite sum, only a finite number of the terms will be nonzero. If fact, this product could be written as
 
 $$
-\begin{array}{l} A \cdot B = a _ {0} \cdot b _ {0} \\ + \left(a _ {0} \cdot b _ {1} + a _ {1} \cdot b _ {0}\right) x \\ + \left(a _ {0} \cdot b _ {2} + a _ {1} \cdot b _ {1} + a _ {2} \cdot b _ {0}\right) x ^ {2} \\ + \left(a _ {0} \cdot b _ {3} + a _ {1} \cdot b _ {2} + a _ {2} \cdot b _ {1} + a _ {3} \cdot b _ {0}\right) x ^ {3} + \dots \\ \end{array}
+\begin{array}{l} A \cdot B = a _ {0} \cdot b _ {0} \\ + \leqft(a _ {0} \cdot b _ {1} + a _ {1} \cdot b _ {0}\right) x \\ + \leqft(a _ {0} \cdot b _ {2} + a _ {1} \cdot b _ {1} + a _ {2} \cdot b _ {0}\right) x ^ {2} \\ + \leqft(a _ {0} \cdot b _ {3} + a _ {1} \cdot b _ {2} + a _ {2} \cdot b _ {1} + a _ {3} \cdot b _ {0}\right) x ^ {3} + \dots \\ \end{array}
 $$
 
 so each coefficient is determined by a finite sum.
@@ -14007,7 +14007,7 @@ $$
 Here,  $a_{m}$  and  $b_{n}$  are nonzero elements of  $K$ . The product is determined by
 
 $$
-A \cdot B = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \left(a _ {i} \cdot b _ {j}\right) x ^ {i + j}.
+A \cdot B = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \leqft(a _ {i} \cdot b _ {j}\right) x ^ {i + j}.
 $$
 
 Note that  $a_i$  and  $b_j$  are zero for  $i > m$  and  $j > n$ . If  $i + j > m + n$ , either  $i > m$  or  $j > n$ , and in either case  $a_i \cdot b_j = 0$ . Thus, there are no nonzero terms in  $A \cdot B$  with coefficients larger than  $m + n$ . However, if  $i + j = m + n$ , the only nonzero term would be the one coming from  $i = m$  and  $j = n$ , giving
@@ -14067,19 +14067,19 @@ $$
 Then
 
 $$
-\begin{array}{l} (A + B) + C = \left(a _ {0} + b _ {0}\right) + c _ {0} + \left(\left(a _ {1} + b _ {1}\right) + c _ {1}\right) x + \left(\left(a _ {2} + b _ {2}\right) + c _ {2}\right) x ^ {2} + \dots \\ = a _ {0} + \left(b _ {0} + c _ {0}\right) + \left(a _ {1} + \left(b _ {1} + c _ {1}\right)\right) x + \left(a _ {2} + \left(b _ {2} + c _ {2}\right)\right) x ^ {2} + \dots \\ = A + (B + C). \\ \end{array}
+\begin{array}{l} (A + B) + C = \leqft(a _ {0} + b _ {0}\right) + c _ {0} + \leqft(\leqft(a _ {1} + b _ {1}\right) + c _ {1}\right) x + \leqft(\leqft(a _ {2} + b _ {2}\right) + c _ {2}\right) x ^ {2} + \dots \\ = a _ {0} + \leqft(b _ {0} + c _ {0}\right) + \leqft(a _ {1} + \leqft(b _ {1} + c _ {1}\right)\right) x + \leqft(a _ {2} + \leqft(b _ {2} + c _ {2}\right)\right) x ^ {2} + \dots \\ = A + (B + C). \\ \end{array}
 $$
 
 Also,
 
 $$
-\begin{array}{l} A \cdot (B \cdot C) = A \cdot \left(\sum_ {j = 0} ^ {\infty} \sum_ {k = 0} ^ {\infty} b _ {j} \cdot c _ {k} x ^ {j + k}\right) \\ = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \sum_ {k = 0} ^ {\infty} a _ {i} \cdot \left(b _ {j} \cdot c _ {k}\right) x ^ {i + j + k} \\ = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \sum_ {k = 0} ^ {\infty} (a _ {i} \cdot b _ {j}) \cdot c _ {k} x ^ {i + j + k} = (A \cdot B) \cdot C. \\ \end{array}
+\begin{array}{l} A \cdot (B \cdot C) = A \cdot \leqft(\sum_ {j = 0} ^ {\infty} \sum_ {k = 0} ^ {\infty} b _ {j} \cdot c _ {k} x ^ {j + k}\right) \\ = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \sum_ {k = 0} ^ {\infty} a _ {i} \cdot \leqft(b _ {j} \cdot c _ {k}\right) x ^ {i + j + k} \\ = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \sum_ {k = 0} ^ {\infty} (a _ {i} \cdot b _ {j}) \cdot c _ {k} x ^ {i + j + k} = (A \cdot B) \cdot C. \\ \end{array}
 $$
 
 The two distributive laws are also easy to verify using the summation notation.
 
 $$
-\begin{array}{l} A \cdot (B + C) = A \cdot \left(\sum_ {j = 0} ^ {\infty} \left(b _ {j} + c _ {j}\right) x ^ {j}\right) = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} a _ {i} \cdot \left(b _ {j} + c _ {j}\right) x ^ {i + j} \\ = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \left(a _ {i} \cdot b _ {j} + a _ {i} c _ {j}\right) x ^ {i + j} \\ = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} a _ {i} \cdot b _ {j} x ^ {i + j} + \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} a _ {i} \cdot c _ {j} x ^ {i + j} = A \cdot B + A \cdot C. \\ \end{array}
+\begin{array}{l} A \cdot (B + C) = A \cdot \leqft(\sum_ {j = 0} ^ {\infty} \leqft(b _ {j} + c _ {j}\right) x ^ {j}\right) = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} a _ {i} \cdot \leqft(b _ {j} + c _ {j}\right) x ^ {i + j} \\ = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} \leqft(a _ {i} \cdot b _ {j} + a _ {i} c _ {j}\right) x ^ {i + j} \\ = \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} a _ {i} \cdot b _ {j} x ^ {i + j} + \sum_ {i = 0} ^ {\infty} \sum_ {j = 0} ^ {\infty} a _ {i} \cdot c _ {j} x ^ {i + j} = A \cdot B + A \cdot C. \\ \end{array}
 $$
 
 We can use the fact that multiplication is commutative to show that  $(A + B)\cdot C = A\cdot C + B\cdot C$ . Thus,  $R[x]$  is a commutative ring.
@@ -14430,12 +14430,12 @@ $$
 (x, y) \equiv (u, v) \qquad \text {i f} \qquad x \cdot v = y \cdot u.
 $$
 
-For each  $(x,y)$  in  $P$ , let  $\left(\frac{x}{y}\right)$  denote the equivalence class of  $P$  that contains  $(x,y)$ . Let  $Q$  denote the set of all equivalence classes  $\left(\frac{a}{b}\right)$ . The set  $Q$  is called the set of quotients for  $K$ .
+For each  $(x,y)$  in  $P$ , let  $\leqft(\frac{x}{y}\right)$  denote the equivalence class of  $P$  that contains  $(x,y)$ . Let  $Q$  denote the set of all equivalence classes  $\leqft(\frac{a}{b}\right)$ . The set  $Q$  is called the set of quotients for  $K$ .
 
 This definition allows us to replace an equivalence of two expressions with an equality. We now have that
 
 $$
-\left(\frac {x}{y}\right) = \left(\frac {u}{v}\right) \quad \text {i f , a n d o n l y i f ,} \quad x \cdot v = u \cdot y.
+\leqft(\frac {x}{y}\right) = \leqft(\frac {u}{v}\right) \quad \text {i f , a n d o n l y i f ,} \quad x \cdot v = u \cdot y.
 $$
 
 The next step is to define addition and multiplication on our set of quotients  $Q$ . Once again, we will use the rational numbers to guide us in the definition.
@@ -14445,13 +14445,13 @@ The next step is to define addition and multiplication on our set of quotients  
 Let  $K$  be an integral domain, and let  $Q$  be the set of quotients for  $K$ . The addition and multiplication of two equivalence classes in  $Q$ , defined by
 
 $$
-\left(\frac {x}{y}\right) + \left(\frac {u}{v}\right) = \left(\frac {x \cdot v + u \cdot y}{y \cdot v}\right)
+\leqft(\frac {x}{y}\right) + \leqft(\frac {u}{v}\right) = \leqft(\frac {x \cdot v + u \cdot y}{y \cdot v}\right)
 $$
 
 and
 
 $$
-\left(\frac {x}{y}\right) \cdot \left(\frac {u}{v}\right) = \left(\frac {x \cdot u}{y \cdot v}\right),
+\leqft(\frac {x}{y}\right) \cdot \leqft(\frac {u}{v}\right) = \leqft(\frac {x \cdot u}{y \cdot v}\right),
 $$
 
 are both well-defined operations on  $Q$ . That is, the sum and product do not depend on the choice of the representative elements  $(x,y)$  and  $(u,v)$  of the equivalence classes.
@@ -14460,19 +14460,19 @@ Proof: The first observation we need to make is that the formulas for the
 
 sum and product both form valid elements of  $Q$ , since  $y \cdot v$  is nonzero as long as  $y$  and  $v$  are both nonzero.
 
-Next let us work to show that addition does not depend on the choice of representative elements  $(x,y)$  and  $(u,v)$ . That is, if  $\left(\frac{x}{y}\right) = \left(\frac{a}{b}\right)$ , and  $\left(\frac{u}{v}\right) = \left(\frac{c}{d}\right)$ , we need to show that
+Next let us work to show that addition does not depend on the choice of representative elements  $(x,y)$  and  $(u,v)$ . That is, if  $\leqft(\frac{x}{y}\right) = \leqft(\frac{a}{b}\right)$ , and  $\leqft(\frac{u}{v}\right) = \leqft(\frac{c}{d}\right)$ , we need to show that
 
 $$
-\left(\frac {x}{y}\right) + \left(\frac {u}{v}\right) = \left(\frac {a}{b}\right) + \left(\frac {c}{d}\right).
+\leqft(\frac {x}{y}\right) + \leqft(\frac {u}{v}\right) = \leqft(\frac {a}{b}\right) + \leqft(\frac {c}{d}\right).
 $$
 
 That is, we have to prove that
 
 $$
-\left(\frac {x \cdot v + u \cdot y}{y \cdot v}\right) = \left(\frac {a \cdot d + c \cdot b}{b \cdot d}\right).
+\leqft(\frac {x \cdot v + u \cdot y}{y \cdot v}\right) = \leqft(\frac {a \cdot d + c \cdot b}{b \cdot d}\right).
 $$
 
-Since  $\left(\frac{x}{y}\right) = \left(\frac{a}{b}\right)$  and  $\left(\frac{u}{v}\right) = \left(\frac{c}{d}\right)$ , we have  $x \cdot b = a \cdot y$  and  $u \cdot d = c \cdot v$ . Multiplying the first equation by  $v \cdot d$  and the second by  $y \cdot b$ , we get
+Since  $\leqft(\frac{x}{y}\right) = \leqft(\frac{a}{b}\right)$  and  $\leqft(\frac{u}{v}\right) = \leqft(\frac{c}{d}\right)$ , we have  $x \cdot b = a \cdot y$  and  $u \cdot d = c \cdot v$ . Multiplying the first equation by  $v \cdot d$  and the second by  $y \cdot b$ , we get
 
 $$
 x \cdot b \cdot v \cdot d = a \cdot y \cdot v \cdot d
@@ -14493,7 +14493,7 @@ $$
 This gives us
 
 $$
-\left(\frac {x \cdot v + u \cdot y}{y \cdot v}\right) = \left(\frac {a \cdot d + c \cdot b}{b \cdot d}\right),
+\leqft(\frac {x \cdot v + u \cdot y}{y \cdot v}\right) = \leqft(\frac {a \cdot d + c \cdot b}{b \cdot d}\right),
 $$
 
 which is what we wanted.
@@ -14501,7 +14501,7 @@ which is what we wanted.
 We also need to show that multiplication is well defined, that is
 
 $$
-\left(\frac {x}{y}\right) \cdot \left(\frac {u}{v}\right) = \left(\frac {a}{b}\right) \cdot \left(\frac {c}{d}\right).
+\leqft(\frac {x}{y}\right) \cdot \leqft(\frac {u}{v}\right) = \leqft(\frac {a}{b}\right) \cdot \leqft(\frac {c}{d}\right).
 $$
 
 But since  $x \cdot b = a \cdot y$  and  $u \cdot d = c \cdot v$ , we can multiply these two equations together to get
@@ -14519,7 +14519,7 @@ $$
 Therefore,
 
 $$
-\left(\frac {x \cdot u}{y \cdot v}\right) = \left(\frac {a \cdot c}{b \cdot d}\right),
+\leqft(\frac {x \cdot u}{y \cdot v}\right) = \leqft(\frac {a \cdot c}{b \cdot d}\right),
 $$
 
 so multiplication also is well defined.
@@ -14535,31 +14535,31 @@ PROOF: We have already noted that addition and multiplication are closed in  $Q$
 We next want to look at the properties of addition. From the definition,
 
 $$
-\left(\frac {x}{y}\right) + \left(\frac {u}{v}\right) = \left(\frac {x \cdot v + u \cdot y}{y \cdot v}\right) = \left(\frac {u}{v}\right) + \left(\frac {x}{y}\right),
+\leqft(\frac {x}{y}\right) + \leqft(\frac {u}{v}\right) = \leqft(\frac {x \cdot v + u \cdot y}{y \cdot v}\right) = \leqft(\frac {u}{v}\right) + \leqft(\frac {x}{y}\right),
 $$
 
-we see that addition is commutative. Let  $z$  be any nonzero element of  $K$ . Then  $\left(\frac{0}{z}\right)$  acts as the additive identity:
+we see that addition is commutative. Let  $z$  be any nonzero element of  $K$ . Then  $\leqft(\frac{0}{z}\right)$  acts as the additive identity:
 
 $$
-\left(\frac {u}{v}\right) + \left(\frac {0}{z}\right) = \left(\frac {0}{z}\right) + \left(\frac {u}{v}\right) = \left(\frac {0 \cdot v + u \cdot z}{z \cdot v}\right) = \left(\frac {u \cdot z}{v \cdot z}\right) = \left(\frac {u}{v}\right).
+\leqft(\frac {u}{v}\right) + \leqft(\frac {0}{z}\right) = \leqft(\frac {0}{z}\right) + \leqft(\frac {u}{v}\right) = \leqft(\frac {0 \cdot v + u \cdot z}{z \cdot v}\right) = \leqft(\frac {u \cdot z}{v \cdot z}\right) = \leqft(\frac {u}{v}\right).
 $$
 
-Likewise,  $\left(\frac{-u}{v}\right)$  is the additive inverse of  $\left(\frac{u}{v}\right)$ :
+Likewise,  $\leqft(\frac{-u}{v}\right)$  is the additive inverse of  $\leqft(\frac{u}{v}\right)$ :
 
 $$
-\left(\frac {u}{v}\right) + \left(\frac {- u}{v}\right) = \left(\frac {- u}{v}\right) + \left(\frac {u}{v}\right) = \left(\frac {- u \cdot v + u \cdot v}{v \cdot v}\right) = \left(\frac {0}{v \cdot v}\right) = \left(\frac {0}{z}\right).
+\leqft(\frac {u}{v}\right) + \leqft(\frac {- u}{v}\right) = \leqft(\frac {- u}{v}\right) + \leqft(\frac {u}{v}\right) = \leqft(\frac {- u \cdot v + u \cdot v}{v \cdot v}\right) = \leqft(\frac {0}{v \cdot v}\right) = \leqft(\frac {0}{z}\right).
 $$
 
 The associativity of addition is straightforward:
 
 $$
-\begin{array}{l} \left(\left(\frac {x}{y}\right) + \left(\frac {u}{v}\right)\right) + \left(\frac {a}{b}\right) = \left(\frac {x \cdot v + u \cdot y}{y \cdot v}\right) + \left(\frac {a}{b}\right) \\ = \Big (\frac {x \cdot v \cdot b + u \cdot y \cdot b + a \cdot y \cdot v}{y \cdot v \cdot b} \Big), \\ \end{array}
+\begin{array}{l} \leqft(\leqft(\frac {x}{y}\right) + \leqft(\frac {u}{v}\right)\right) + \leqft(\frac {a}{b}\right) = \leqft(\frac {x \cdot v + u \cdot y}{y \cdot v}\right) + \leqft(\frac {a}{b}\right) \\ = \Big (\frac {x \cdot v \cdot b + u \cdot y \cdot b + a \cdot y \cdot v}{y \cdot v \cdot b} \Big), \\ \end{array}
 $$
 
 while
 
 $$
-\begin{array}{l} \left(\frac {x}{y}\right) + \left(\left(\frac {u}{v}\right) + \left(\frac {a}{b}\right)\right) = \left(\frac {x}{y}\right) + \left(\frac {u \cdot b + a \cdot v}{v \cdot b}\right) \\ = \Big (\frac {x \cdot v \cdot b + u \cdot y \cdot b + a \cdot y \cdot v}{y \cdot v \cdot b} \Big). \\ \end{array}
+\begin{array}{l} \leqft(\frac {x}{y}\right) + \leqft(\leqft(\frac {u}{v}\right) + \leqft(\frac {a}{b}\right)\right) = \leqft(\frac {x}{y}\right) + \leqft(\frac {u \cdot b + a \cdot v}{v \cdot b}\right) \\ = \Big (\frac {x \cdot v \cdot b + u \cdot y \cdot b + a \cdot y \cdot v}{y \cdot v \cdot b} \Big). \\ \end{array}
 $$
 
 So  $Q$  forms a group with respect to addition.
@@ -14567,37 +14567,37 @@ So  $Q$  forms a group with respect to addition.
 Next we look at the properties of multiplication. Multiplication is obviously commutative, since
 
 $$
-\left(\frac {x}{y}\right) \cdot \left(\frac {u}{v}\right) = \left(\frac {x \cdot u}{y \cdot v}\right) = \left(\frac {u \cdot x}{v \cdot y}\right) = \left(\frac {u}{v}\right) \cdot \left(\frac {x}{y}\right).
+\leqft(\frac {x}{y}\right) \cdot \leqft(\frac {u}{v}\right) = \leqft(\frac {x \cdot u}{y \cdot v}\right) = \leqft(\frac {u \cdot x}{v \cdot y}\right) = \leqft(\frac {u}{v}\right) \cdot \leqft(\frac {x}{y}\right).
 $$
 
 We also have associativity for multiplication:
 
 $$
-\begin{array}{l} \left(\left(\frac {x}{y}\right) \cdot \left(\frac {u}{v}\right)\right) \cdot \left(\frac {a}{b}\right) = \left(\frac {x \cdot u}{y \cdot v}\right) \cdot \left(\frac {a}{b}\right) \\ = \left(\frac {x \cdot u \cdot a}{y \cdot v \cdot b}\right) = \left(\frac {x}{y}\right) \cdot \left(\frac {u \cdot a}{v \cdot b}\right) = \left(\frac {x}{y}\right) \cdot \left(\left(\frac {u}{v}\right) \cdot \left(\frac {a}{b}\right)\right). \\ \end{array}
+\begin{array}{l} \leqft(\leqft(\frac {x}{y}\right) \cdot \leqft(\frac {u}{v}\right)\right) \cdot \leqft(\frac {a}{b}\right) = \leqft(\frac {x \cdot u}{y \cdot v}\right) \cdot \leqft(\frac {a}{b}\right) \\ = \leqft(\frac {x \cdot u \cdot a}{y \cdot v \cdot b}\right) = \leqft(\frac {x}{y}\right) \cdot \leqft(\frac {u \cdot a}{v \cdot b}\right) = \leqft(\frac {x}{y}\right) \cdot \leqft(\leqft(\frac {u}{v}\right) \cdot \leqft(\frac {a}{b}\right)\right). \\ \end{array}
 $$
 
-The element  $\left(\frac{z}{z}\right)$  acts as the multiplicative identity for any  $z \neq 0$ .
+The element  $\leqft(\frac{z}{z}\right)$  acts as the multiplicative identity for any  $z \neq 0$ .
 
 $$
-\left(\frac {z}{z}\right) \cdot \left(\frac {x}{y}\right) = \left(\frac {x}{y}\right) \cdot \left(\frac {z}{z}\right) = \left(\frac {x \cdot z}{y \cdot z}\right) = \left(\frac {x}{y}\right).
+\leqft(\frac {z}{z}\right) \cdot \leqft(\frac {x}{y}\right) = \leqft(\frac {x}{y}\right) \cdot \leqft(\frac {z}{z}\right) = \leqft(\frac {x \cdot z}{y \cdot z}\right) = \leqft(\frac {x}{y}\right).
 $$
 
-If  $x = 0$ , then  $\left(\frac{x}{y}\right) = \left(\frac{0}{z}\right)$ . Otherwise, the multiplicative inverse of  $\left(\frac{x}{y}\right)$  is  $\left(\frac{y}{x}\right)$ , since
+If  $x = 0$ , then  $\leqft(\frac{x}{y}\right) = \leqft(\frac{0}{z}\right)$ . Otherwise, the multiplicative inverse of  $\leqft(\frac{x}{y}\right)$  is  $\leqft(\frac{y}{x}\right)$ , since
 
 $$
-\left(\frac {x}{y}\right) \cdot \left(\frac {y}{x}\right) = \left(\frac {x \cdot y}{y \cdot x}\right) = \left(\frac {z}{z}\right).
+\leqft(\frac {x}{y}\right) \cdot \leqft(\frac {y}{x}\right) = \leqft(\frac {x \cdot y}{y \cdot x}\right) = \leqft(\frac {z}{z}\right).
 $$
 
 Thus, every nonzero element of  $Q$  has a multiplicative inverse. Finally, we have the two distribution laws. Because of the commutativity of multiplication, we only need to check one. Since
 
 $$
-\left(\left(\frac {u}{v}\right) + \left(\frac {a}{b}\right)\right) \cdot \left(\frac {x}{y}\right) = \left(\frac {u \cdot b + a \cdot v}{v \cdot b}\right) \cdot \left(\frac {x}{y}\right) = \left(\frac {u \cdot b \cdot x + a \cdot v \cdot x}{v \cdot b \cdot y}\right),
+\leqft(\leqft(\frac {u}{v}\right) + \leqft(\frac {a}{b}\right)\right) \cdot \leqft(\frac {x}{y}\right) = \leqft(\frac {u \cdot b + a \cdot v}{v \cdot b}\right) \cdot \leqft(\frac {x}{y}\right) = \leqft(\frac {u \cdot b \cdot x + a \cdot v \cdot x}{v \cdot b \cdot y}\right),
 $$
 
 while
 
 $$
-\begin{array}{l} \left(\frac {u}{v}\right) \cdot \left(\frac {x}{y}\right) + \left(\frac {a}{b}\right) \cdot \left(\frac {x}{y}\right) = \left(\frac {u \cdot x}{v \cdot y}\right) + \left(\frac {a \cdot x}{b \cdot y}\right) \\ = \left(\frac {u \cdot x \cdot b \cdot y + a \cdot x \cdot v \cdot y}{v \cdot y \cdot b \cdot y}\right) \\ = \left(\frac {u \cdot x \cdot b + a \cdot x \cdot v}{v \cdot y \cdot b}\right), \\ \end{array}
+\begin{array}{l} \leqft(\frac {u}{v}\right) \cdot \leqft(\frac {x}{y}\right) + \leqft(\frac {a}{b}\right) \cdot \leqft(\frac {x}{y}\right) = \leqft(\frac {u \cdot x}{v \cdot y}\right) + \leqft(\frac {a \cdot x}{b \cdot y}\right) \\ = \leqft(\frac {u \cdot x \cdot b \cdot y + a \cdot x \cdot v \cdot y}{v \cdot y \cdot b \cdot y}\right) \\ = \leqft(\frac {u \cdot x \cdot b + a \cdot x \cdot v}{v \cdot y \cdot b}\right), \\ \end{array}
 $$
 
 we have the distributive laws holding, and therefore  $Q$  is a field.
@@ -14615,7 +14615,7 @@ Although the field of quotients was designed from the way we formed rational num
 Let us first consider the most familiar polynomial ring  $\mathbb{Z}[x]$  — the polynomials with integer coefficients. An element in the field of quotients would be of the form  $p(x) / q(x)$ , where  $p(x)$  and  $q(x)$  are polynomials with integer coefficients. But we consider two such fractions  $p(x) / q(x)$  and  $r(x) / s(x)$  to be equivalent if  $p(x) \cdot s(x) = r(x) \cdot q(x)$ . For example, the two fractions
 
 $$
-\operatorname {v a r} \left(" x ^ {\prime \prime}\right)
+\operatorname {v a r} \leqft(" x ^ {\prime \prime}\right)
 $$
 
 $$
@@ -14629,7 +14629,7 @@ $$
 can be seen to be equivalent, since
 
 $$
-\begin{array}{l} \text {e x p a n d} \left(\left(3 * \mathbf {x} ^ {\wedge} 2 + 5 * \mathbf {x} - 2\right) * \left(2 * \mathbf {x} ^ {\wedge} 2 + \mathbf {x} - 3\right)\right) \\ 6 * x ^ {\wedge} 4 + 1 3 * x ^ {\wedge} 3 - 8 * x ^ {\wedge} 2 - 1 7 * x + 6 \\ \text {e x p a n d} \left(\left(3 * \mathbf {x} ^ {\wedge} 2 - 4 * \mathbf {x} + 1\right) * \left(2 * \mathbf {x} ^ {\wedge} 2 + 7 * \mathbf {x} + 6\right)\right) \\ 6 * x ^ {\wedge} 4 + 1 3 * x ^ {\wedge} 3 - 8 * x ^ {\wedge} 2 - 1 7 * x + 6 \\ \end{array}
+\begin{array}{l} \text {e x p a n d} \leqft(\leqft(3 * \mathbf {x} ^ {\wedge} 2 + 5 * \mathbf {x} - 2\right) * \leqft(2 * \mathbf {x} ^ {\wedge} 2 + \mathbf {x} - 3\right)\right) \\ 6 * x ^ {\wedge} 4 + 1 3 * x ^ {\wedge} 3 - 8 * x ^ {\wedge} 2 - 1 7 * x + 6 \\ \text {e x p a n d} \leqft(\leqft(3 * \mathbf {x} ^ {\wedge} 2 - 4 * \mathbf {x} + 1\right) * \leqft(2 * \mathbf {x} ^ {\wedge} 2 + 7 * \mathbf {x} + 6\right)\right) \\ 6 * x ^ {\wedge} 4 + 1 3 * x ^ {\wedge} 3 - 8 * x ^ {\wedge} 2 - 1 7 * x + 6 \\ \end{array}
 $$
 
 yield the same result. Other ways of showing that  $A$  and  $B$  are equivalent is by computing either of these two commands:
@@ -14685,11 +14685,11 @@ As you can see from this example, the definition of the quotient field does not 
 
 # Problems for §11.2
 
-1 If  $Q$  is the field of quotients of an integral domain, show that  $\left(\frac{-a}{b}\right)$  is the additive inverse of  $\left(\frac{a}{b}\right)$  in  $Q$ .
+1 If  $Q$  is the field of quotients of an integral domain, show that  $\leqft(\frac{-a}{b}\right)$  is the additive inverse of  $\leqft(\frac{a}{b}\right)$  in  $Q$ .
 2 If  $Q$  is the field of quotients of an integral domain, show that the left distributive property holds for  $Q$ :
 
 $$
-\left(\frac {u}{v}\right) \cdot \left(\left(\frac {x}{y}\right) + \left(\frac {z}{w}\right)\right) = \left(\frac {u}{v}\right) \cdot \left(\frac {x}{y}\right) + \left(\frac {u}{v}\right) \cdot \left(\frac {z}{w}\right).
+\leqft(\frac {u}{v}\right) \cdot \leqft(\leqft(\frac {x}{y}\right) + \leqft(\frac {z}{w}\right)\right) = \leqft(\frac {u}{v}\right) \cdot \leqft(\frac {x}{y}\right) + \leqft(\frac {u}{v}\right) \cdot \leqft(\frac {z}{w}\right).
 $$
 
 3 If  $Q$  is the field of quotients of an integral domain, show that the multiplication in  $Q$  is associative.
@@ -14808,7 +14808,7 @@ Note that the order on the last two sums is irrelevant, since addition has alrea
 To show that addition is associative, we note that
 
 $$
-\begin{array}{l} (a, b) + [ (c, d) + (e, f) ] = (a, b) + (c + e, d + f) = (a + c + e, b + d + f) \\ = (a + c, b + d) + (e, f) = \left[ (a, b) + (c, d) \right] + (e, f). \\ \end{array}
+\begin{array}{l} (a, b) + [ (c, d) + (e, f) ] = (a, b) + (c + e, d + f) = (a + c + e, b + d + f) \\ = (a + c, b + d) + (e, f) = \leqft[ (a, b) + (c, d) \right] + (e, f). \\ \end{array}
 $$
 
 To show that multiplication is associative is a little more complicated. We have
@@ -14820,7 +14820,7 @@ $$
 and
 
 $$
-\begin{array}{l} \left[ (a, b) \cdot (c, d) \right] \cdot (e, f) = (a \cdot c - b \cdot d, a \cdot d + b \cdot c) \cdot (e, f) = \\ (a \cdot c \cdot e - b \cdot d \cdot e - a \cdot d \cdot f - b \cdot c \cdot f, a \cdot c \cdot f - b \cdot d \cdot f + a \cdot d \cdot e + b \cdot c \cdot e). \\ \end{array}
+\begin{array}{l} \leqft[ (a, b) \cdot (c, d) \right] \cdot (e, f) = (a \cdot c - b \cdot d, a \cdot d + b \cdot c) \cdot (e, f) = \\ (a \cdot c \cdot e - b \cdot d \cdot e - a \cdot d \cdot f - b \cdot c \cdot f, a \cdot c \cdot f - b \cdot d \cdot f + a \cdot d \cdot e + b \cdot c \cdot e). \\ \end{array}
 $$
 
 By comparing these two, we see that they are equal, so multiplication is associative.
@@ -14846,19 +14846,19 @@ $$
 Finally, we need to show that every nonzero element has an inverse. If  $(a,b)$  is nonzero, then  $a^2 + b^2$  will be a positive number. Hence
 
 $$
-\left(\frac {a}{a ^ {2} + b ^ {2}}, \frac {- b}{a ^ {2} + b ^ {2}}\right)
+\leqft(\frac {a}{a ^ {2} + b ^ {2}}, \frac {- b}{a ^ {2} + b ^ {2}}\right)
 $$
 
 is an element of  $\mathbb{C}$ . The product
 
 $$
-(a, b) \cdot \left(\frac {a}{a ^ {2} + b ^ {2}}, \frac {- b}{a ^ {2} + b ^ {2}}\right) = \left(\frac {a ^ {2} + b ^ {2}}{a ^ {2} + b ^ {2}}, \frac {- a \cdot b + a \cdot b}{a ^ {2} + b ^ {2}}\right) = (1, 0)
+(a, b) \cdot \leqft(\frac {a}{a ^ {2} + b ^ {2}}, \frac {- b}{a ^ {2} + b ^ {2}}\right) = \leqft(\frac {a ^ {2} + b ^ {2}}{a ^ {2} + b ^ {2}}, \frac {- a \cdot b + a \cdot b}{a ^ {2} + b ^ {2}}\right) = (1, 0)
 $$
 
 verifies that
 
 $$
-(a, b) ^ {- 1} = \left(\frac {a}{a ^ {2} + b ^ {2}}, \frac {- b}{a ^ {2} + b ^ {2}}\right)
+(a, b) ^ {- 1} = \leqft(\frac {a}{a ^ {2} + b ^ {2}}, \frac {- b}{a ^ {2} + b ^ {2}}\right)
 $$
 
 since multiplication is commutative. Therefore, the set  $\mathbb{C}$  forms a field.
@@ -14994,7 +14994,7 @@ $$
 $$
 
 $$
-\begin{array}{l} \phi (a + b i) \cdot \phi (c + d i) = (a - b i) \cdot (c - d i) = (a \cdot c - b \cdot d) - (a \cdot d + b \cdot c) i \\ = \phi \bigl (\left(a \cdot c - b \cdot d\right) + \left(a \cdot d + b \cdot c\right) i \bigr) = \phi \bigl (\left(a + b i\right) \cdot \left(c + d i\right) \bigr). \\ \end{array}
+\begin{array}{l} \phi (a + b i) \cdot \phi (c + d i) = (a - b i) \cdot (c - d i) = (a \cdot c - b \cdot d) - (a \cdot d + b \cdot c) i \\ = \phi \bigl (\leqft(a \cdot c - b \cdot d\right) + \leqft(a \cdot d + b \cdot c\right) i \bigr) = \phi \bigl (\leqft(a + b i\right) \cdot \leqft(c + d i\right) \bigr). \\ \end{array}
 $$
 
 Thus,  $\phi$  is a homomorphism. Since  $a - bi = 0$  if, and only if,  $a$  and  $b$  are both 0, the kernel of  $\phi$  is just  $\{0\}$ , and so  $\phi$  is one-to-one. Also,  $\phi$  is onto, since  $\phi(a - bi) = a + bi$ . Therefore,  $\phi$  is an automorphism.
@@ -15085,7 +15085,7 @@ $$
 For example, the polar form of  $-\sqrt{3} - i$  is given by
 
 $$
-2 \left(\cos \left(\frac {- 5 \pi}{6}\right) + i \sin \left(\frac {- 5 \pi}{6}\right)\right),
+2 \leqft(\cos \leqft(\frac {- 5 \pi}{6}\right) + i \sin \leqft(\frac {- 5 \pi}{6}\right)\right),
 $$
 
 as seen from the commands
@@ -15101,7 +15101,7 @@ $$
 However, we could have used any co-terminal angle instead of the one Sage-Math gave us. Thus,
 
 $$
-2 \left(\cos \left(\frac {7 \pi}{6}\right) + i \sin \left(\frac {7 \pi}{6}\right)\right), \qquad 2 \left(\cos \left(\frac {1 9 \pi}{6}\right) + i \sin \left(\frac {1 9 \pi}{6}\right)\right), \quad \ldots
+2 \leqft(\cos \leqft(\frac {7 \pi}{6}\right) + i \sin \leqft(\frac {7 \pi}{6}\right)\right), \qquad 2 \leqft(\cos \leqft(\frac {1 9 \pi}{6}\right) + i \sin \leqft(\frac {1 9 \pi}{6}\right)\right), \quad \ldots
 $$
 
 are also polar forms of  $-\sqrt{3} - i$ . The usefulness of the polar form of a complex number is hinted at by the next lemma, which makes use of the trigonometric identities
@@ -15119,7 +15119,7 @@ $$
 If  $z_{1} = r_{1}(\cos \theta_{1} + i\sin \theta_{1})$  and  $z_{2} = r_{2}(\cos \theta_{2} + i\sin \theta_{2})$ , then
 
 $$
-z _ {1} \cdot z _ {2} = r _ {1} \cdot r _ {2} \big (\cos \left(\theta_ {1} + \theta_ {2}\right) + i \sin \left(\theta_ {1} + \theta_ {2}\right) \big).
+z _ {1} \cdot z _ {2} = r _ {1} \cdot r _ {2} \big (\cos \leqft(\theta_ {1} + \theta_ {2}\right) + i \sin \leqft(\theta_ {1} + \theta_ {2}\right) \big).
 $$
 
 So the argument of the product is the sum of the arguments.
@@ -15133,7 +15133,7 @@ $$
 Using the trigonometric identities, this simplifies to
 
 $$
-z _ {1} \cdot z _ {2} = r _ {1} \cdot r _ {2} \big (\cos \left(\theta_ {1} + \theta_ {2}\right) + i \sin \left(\theta_ {1} + \theta_ {2}\right) \big).
+z _ {1} \cdot z _ {2} = r _ {1} \cdot r _ {2} \big (\cos \leqft(\theta_ {1} + \theta_ {2}\right) + i \sin \leqft(\theta_ {1} + \theta_ {2}\right) \big).
 $$
 
 #
@@ -15157,7 +15157,7 @@ $$
 We want to prove that the theorem holds for  $n$  as well. Using Lemma 11.7, we have
 
 $$
-\begin{array}{l} z ^ {n} = z ^ {n - 1} \cdot z \\ = r ^ {n - 1} \left(\cos ((n - 1) \theta) + i \sin ((n - 1) \theta)\right) \cdot \left(r (\cos \theta + i \sin \theta)\right) \\ = r ^ {n} \left(\cos ((n - 1) \theta + \theta) + i \sin ((n - 1) \theta + \theta)\right) \\ = r ^ {n} (\cos (n \theta) + i \sin (n \theta)). \\ \end{array}
+\begin{array}{l} z ^ {n} = z ^ {n - 1} \cdot z \\ = r ^ {n - 1} \leqft(\cos ((n - 1) \theta) + i \sin ((n - 1) \theta)\right) \cdot \leqft(r (\cos \theta + i \sin \theta)\right) \\ = r ^ {n} \leqft(\cos ((n - 1) \theta + \theta) + i \sin ((n - 1) \theta + \theta)\right) \\ = r ^ {n} (\cos (n \theta) + i \sin (n \theta)). \\ \end{array}
 $$
 
 Thus, the theorem is true for  $n$ , and hence by induction it is true whenever  $n$  is positive.
@@ -15171,17 +15171,17 @@ $$
 So the theorem holds for  $n = 0$ . If  $z$  is nonzero, then  $r > 0$ , and so
 
 $$
-\left(r ^ {- n} \left(\cos (- n \theta) + i \sin (- n \theta)\right)\right) \cdot \left(r ^ {n} \left(\cos (n \theta) + i \sin (n \theta)\right)\right) =
+\leqft(r ^ {- n} \leqft(\cos (- n \theta) + i \sin (- n \theta)\right)\right) \cdot \leqft(r ^ {n} \leqft(\cos (n \theta) + i \sin (n \theta)\right)\right) =
 $$
 
 $$
-r ^ {- n + n} \left(\cos (- n \theta + n \theta) + i \sin (- n \theta + n \theta)\right) = r ^ {0} (\cos 0 + i \sin 0) = 1.
+r ^ {- n + n} \leqft(\cos (- n \theta + n \theta) + i \sin (- n \theta + n \theta)\right) = r ^ {0} (\cos 0 + i \sin 0) = 1.
 $$
 
 Now, if  $n < 0$ , then the theorem holds for  $-n$ , and so
 
 $$
-z ^ {- n} \left(r ^ {n} (\cos (n \theta) + i \sin (n \theta))\right) = 1,
+z ^ {- n} \leqft(r ^ {n} (\cos (n \theta) + i \sin (n \theta))\right) = 1,
 $$
 
 hence
@@ -15201,19 +15201,19 @@ Compute  $(- \sqrt{3} - i)^5$ .
 SOLUTION: Since  $r = \sqrt{(-\sqrt{3})^2 + (-1)^2} = 2$ , and  $\theta = \tan^{-1}((-1) / (-\sqrt{3})) - \pi = -5\pi / 6$ , then  $(-\sqrt{3} - i)^5$  is
 
 $$
-2 ^ {5} \left(\cos \left(\frac {- 2 5 \pi}{6}\right) + i \sin \left(\frac {- 2 5 \pi}{6}\right)\right) = 3 2 \left(\frac {\sqrt {3}}{2} - \frac {i}{2}\right) = 1 6 \sqrt {3} - 1 6 i.
+2 ^ {5} \leqft(\cos \leqft(\frac {- 2 5 \pi}{6}\right) + i \sin \leqft(\frac {- 2 5 \pi}{6}\right)\right) = 3 2 \leqft(\frac {\sqrt {3}}{2} - \frac {i}{2}\right) = 1 6 \sqrt {3} - 1 6 i.
 $$
 
 We can also use De Moivre's theorem (11.2) to find the  $n^{\text{th}}$  root of 1. We first define
 
 $$
-\omega_ {n} = \cos \left(\frac {2 \pi}{n}\right) + i \sin \left(\frac {2 \pi}{n}\right).
+\omega_ {n} = \cos \leqft(\frac {2 \pi}{n}\right) + i \sin \leqft(\frac {2 \pi}{n}\right).
 $$
 
 For example,  $\omega_{1} = 1$ ,  $\omega_{2} = -1$ ,  $\omega_{3} = (-1 + i\sqrt{3}) / 2$ , and  $\omega_{4} = i$ , etc. Then
 
 $$
-\left(\omega_ {n}\right) ^ {n} = \cos (2 \pi) + i \sin (2 \pi) = 1,
+\leqft(\omega_ {n}\right) ^ {n} = \cos (2 \pi) + i \sin (2 \pi) = 1,
 $$
 
 so  $\omega_{n}$  is indeed one  $n^{\mathrm{th}}$  root of unity. In fact, all  $n^{\mathrm{th}}$  roots of 1 are given by the numbers  $\omega_{n},\omega_{n}^{2},\omega_{n}^{3},\ldots$  up to  $(\omega_{n})^{n} = 1$
@@ -15264,7 +15264,7 @@ this formula to raise a complex number to any real number, or even raise a numbe
 In most fields, raising an element to the power of an element is absurd. Even in the real number system we will discover that we must utilize the exponential function  $e^x$  to compute quantities such as  $2^{\sqrt{2}}$ . We use that fact that  $2 = e^{\ln 2}$ , and so
 
 $$
-2 ^ {\sqrt {2}} = \left(e ^ {\ln 2}\right) ^ {\sqrt {2}} = e ^ {((\ln 2) \sqrt {2})}.
+2 ^ {\sqrt {2}} = \leqft(e ^ {\ln 2}\right) ^ {\sqrt {2}} = e ^ {((\ln 2) \sqrt {2})}.
 $$
 
 The key algebraic property of the exponential function is that
@@ -15302,13 +15302,13 @@ defines a group homomorphism from  $\mathbb{C}^+$  to  $\mathbb{C}^*$ , which is
 PROOF: If  $z_{1} = a_{1} + b_{1}i$ , and  $z_{2} = a_{2} + b_{2}i$ , we observe that
 
 $$
-f \left(z _ {1} + z _ {2}\right) = e ^ {a _ {1} + a _ {2}} \left(\cos \left(b _ {1} + b _ {2}\right) + i \sin \left(b _ {1} + b _ {2}\right)\right).
+f \leqft(z _ {1} + z _ {2}\right) = e ^ {a _ {1} + a _ {2}} \leqft(\cos \leqft(b _ {1} + b _ {2}\right) + i \sin \leqft(b _ {1} + b _ {2}\right)\right).
 $$
 
 By Lemma 11.7, this equals
 
 $$
-e ^ {a _ {1}} \left(\cos (b _ {1}) + i \sin (b _ {1})\right) \cdot e ^ {a _ {2}} \left(\cos (b _ {2}) + i \sin (b _ {2})\right) = f (z _ {1}) \cdot f (z _ {2}).
+e ^ {a _ {1}} \leqft(\cos (b _ {1}) + i \sin (b _ {1})\right) \cdot e ^ {a _ {2}} \leqft(\cos (b _ {2}) + i \sin (b _ {2})\right) = f (z _ {1}) \cdot f (z _ {2}).
 $$
 
 Thus,  $f$  is a group homomorphism from  $\mathbb{C}^+$  to  $\mathbb{C}^*$ .
@@ -15318,7 +15318,7 @@ Thus,  $f$  is a group homomorphism from  $\mathbb{C}^+$  to  $\mathbb{C}^*$ .
 This allows us another way of expressing  $\omega_{n}$ . Notice that
 
 $$
-e ^ {2 \pi i / n} = \cos \left(\frac {2 \pi}{n}\right) + i \sin \left(\frac {2 \pi}{n}\right) = \omega_ {n}.
+e ^ {2 \pi i / n} = \cos \leqft(\frac {2 \pi}{n}\right) + i \sin \leqft(\frac {2 \pi}{n}\right) = \omega_ {n}.
 $$
 
 So we now have a more succinct way of defining the  $n^{\mathrm{th}}$  root of 1.
@@ -15373,19 +15373,19 @@ $$
 Thus,  $\log (z) / n$  is given by the set
 
 $$
-\left\{\frac {\ln (r)}{n} + \frac {(\theta + 2 k \pi) i}{n} \Bigg | k \in \mathbb {Z} \right\}.
+\leqft\{\frac {\ln (r)}{n} + \frac {(\theta + 2 k \pi) i}{n} \Bigg | k \in \mathbb {Z} \right\}.
 $$
 
 Thus, the exponential function of the elements of this set is given by
 
 $$
-\begin{array}{l} \left\{e ^ {(\ln (r) / n} \cdot \left(\cos \left(\frac {(\theta + 2 k \pi)}{n}\right) + i \sin \left(\frac {(\theta + 2 k \pi)}{n}\right)\right) \Bigg | k \in \mathbb {Z} \right\} \\ = \left\{r ^ {(1 / n)} \cdot \left(\cos \left(\frac {(\theta + 2 k \pi)}{n}\right) + i \sin \left(\frac {(\theta + 2 k \pi)}{n}\right)\right) \mid k \in \mathbb {Z} \right\}. \\ \end{array}
+\begin{array}{l} \leqft\{e ^ {(\ln (r) / n} \cdot \leqft(\cos \leqft(\frac {(\theta + 2 k \pi)}{n}\right) + i \sin \leqft(\frac {(\theta + 2 k \pi)}{n}\right)\right) \Bigg | k \in \mathbb {Z} \right\} \\ = \leqft\{r ^ {(1 / n)} \cdot \leqft(\cos \leqft(\frac {(\theta + 2 k \pi)}{n}\right) + i \sin \leqft(\frac {(\theta + 2 k \pi)}{n}\right)\right) \mid k \in \mathbb {Z} \right\}. \\ \end{array}
 $$
 
 Notice that for two different values of  $k$  that differ by  $n$ , the arguments of the cosine and sine will differ by  $2\pi$ . Hence, we only have to consider the values of  $k$  from 0 to  $(n - 1)$ . This gives us the set
 
 $$
-\left\{r ^ {(1 / n)} \cdot \left(\cos \left(\frac {(\theta + 2 k \pi)}{n}\right) + i \sin \left(\frac {(\theta + 2 k \pi)}{n}\right)\right) \Bigg | k = 0, 1, 2, \dots , n - 1 \right\}.
+\leqft\{r ^ {(1 / n)} \cdot \leqft(\cos \leqft(\frac {(\theta + 2 k \pi)}{n}\right) + i \sin \leqft(\frac {(\theta + 2 k \pi)}{n}\right)\right) \Bigg | k = 0, 1, 2, \dots , n - 1 \right\}.
 $$
 
 However, these  $n$  solutions will have arguments that differ by less than  $2\pi$  so these  $n$  solutions are distinct.
@@ -15393,7 +15393,7 @@ However, these  $n$  solutions will have arguments that differ by less than  $2\
 Finally, we must show that  $x$  is an element of  $z^{(1/n)}$  if, and only if,  $x$  solves the equation  $x^n = z$ . But for any element in the above expression, we have that
 
 $$
-\begin{array}{l} x ^ {n} = r ^ {n (1 / n)} \cdot \left(\cos \left(\frac {n (\theta + 2 k \pi)}{n}\right) + i \sin \left(\frac {n (\theta + 2 k \pi)}{n}\right)\right) \\ = r (\cos \theta + i \sin \theta) = z. \\ \end{array}
+\begin{array}{l} x ^ {n} = r ^ {n (1 / n)} \cdot \leqft(\cos \leqft(\frac {n (\theta + 2 k \pi)}{n}\right) + i \sin \leqft(\frac {n (\theta + 2 k \pi)}{n}\right)\right) \\ = r (\cos \theta + i \sin \theta) = z. \\ \end{array}
 $$
 
 Likewise, if  $x^n = z$ , we can raise both sides to the  $(1/n)^{\text{th}}$  power to get that the two sets  $(x^n)^{(1/n)}$  and  $z^{(1/n)}$  are equal. Since the element  $x$  is certainly in the first set, it must also be in the set  $z^{(1/n)}$  that we have just computed.
@@ -15425,7 +15425,7 @@ Hint: Since  $e^0 = 1$ , we know that  $u(0) = 1$  and  $v(0) = 0$ .
 3 Assume that the limit from calculus
 
 $$
-e ^ {x} = \lim  _ {n \rightarrow \infty} \left(1 + \frac {x}{n}\right) ^ {n}
+e ^ {x} = \lim  _ {n \rightarrow \infty} \leqft(1 + \frac {x}{n}\right) ^ {n}
 $$
 
 is valid for complex values of  $x$  as well as real values. Prove that  $e^{i} = (\cos 1 + i\sin 1)$ .
@@ -15458,7 +15458,7 @@ $$
 15 Prove that the group in exercise 14 is cyclic, with
 
 $$
-\omega_ {n} = \cos \left(\frac {2 \pi}{n}\right) + i \sin \left(\frac {2 \pi}{n}\right)
+\omega_ {n} = \cos \leqft(\frac {2 \pi}{n}\right) + i \sin \leqft(\frac {2 \pi}{n}\right)
 $$
 
 as a generator. Show that any generator of this group is a primitive  $n^{\text{th}}$  root of unity.
@@ -15466,7 +15466,7 @@ as a generator. Show that any generator of this group is a primitive  $n^{\text{
 16 Prove or disprove: For all complex numbers  $x, y$ , and  $z$
 
 $$
-\left(x ^ {z}\right) \cdot \left(y ^ {z}\right) = \left(x \cdot y\right) ^ {z}.
+\leqft(x ^ {z}\right) \cdot \leqft(y ^ {z}\right) = \leqft(x \cdot y\right) ^ {z}.
 $$
 
 Note:  $x^{z}$  and  $y^{z}$  may both represent sets of complex numbers, so the left-hand side of this equation is the set of all possible products formed.
@@ -15482,7 +15482,7 @@ $$
 18 Prove or disprove: For all complex numbers  $x, y$ , and  $z$
 
 $$
-\left(z ^ {x}\right) \cdot \left(z ^ {y}\right) = z ^ {(x + y)}.
+\leqft(z ^ {x}\right) \cdot \leqft(z ^ {y}\right) = z ^ {(x + y)}.
 $$
 
 (See the note on Problem 16.)
@@ -15918,7 +15918,7 @@ isomorphism theorem,  $G / K \approx K / (H \cap K) \approx Z_2$ . So  $H \cap K
 1)  $\binom{12345}{52431}$ .
 3)  $\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 5 & 2 & 1 & 4 & 6 & 3 \end{pmatrix}$ .
 5)  $\binom{1234567}{4256371}$ .
-7)  $\left( \begin{array}{llll}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 3 & 5 & 4 & 8 & 1 & 6 & 2 & 7 \end{array} \right)$ .
+7)  $\leqft( \begin{array}{llll}1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ 3 & 5 & 4 & 8 & 1 & 6 & 2 & 7 \end{array} \right)$ .
 
 9)
 
@@ -15947,7 +15947,7 @@ isomorphism theorem,  $G / K \approx K / (H \cap K) \approx Z_2$ . So  $H \cap K
 
 # Section 6.3
 
-1)  $\left\{\binom{1234}{1234}, \binom{1234}{2143}, \binom{1234}{3412}, \binom{1234}{4321}\right\}$ .
+1)  $\leqft\{\binom{1234}{1234}, \binom{1234}{2143}, \binom{1234}{3412}, \binom{1234}{4321}\right\}$ .
 3) (), (1234)(5678), (13)(24)(57)(68), (1432)(5876), (15)(28)(37)(46), (16)(25)(38)(47), (17)(26)(35)(48), (18)(27)(36)(45).
 5)(), (12)(34)(56)(78), (13)(24)(57)(68), (14)(23)(58)(67), (15)(26)(37)(48), (16)(25)(38)(47), (17)(28)(35)(46), (18)(27)(36)(45).
 7)  $S_{6}$  contains a subgroup generated by (12), (34), and (56).
@@ -16233,7 +16233,7 @@ $$
 19)
 
 $$
-\{\{0, 6 a \}, \{a, 7 a \}, \{2 a, 8 a \}, \{3 a, 9 a \}, \{4 a, 1 0 a \}, \{5 a, 1 1 a \} \} \leftrightarrow \{0, b, 2 b, 3 b, 4 b, 5 b \}.
+\{\{0, 6 a \}, \{a, 7 a \}, \{2 a, 8 a \}, \{3 a, 9 a \}, \{4 a, 1 0 a \}, \{5 a, 1 1 a \} \} \leqftrightarrow \{0, b, 2 b, 3 b, 4 b, 5 b \}.
 $$
 
 21) 4 rings:  $Z_{6}$ ,  $2Z_{12}$ ,  $3Z_{18}$  and  $6Z_{36}$ .
@@ -16283,8 +16283,8 @@ $$
 
 # Section 11.2
 
-1)  $\left(\frac{-a}{b}\right) + \left(\frac{a}{b}\right) = \left(\frac{-a\cdot b + a\cdot b}{b^2}\right) = \left(\frac{0}{b^2}\right) = \left(\frac{0}{z}\right)$ .
-3)  $\begin{array}{r}\left(\frac{u}{v}\right)\cdot \left(\left(\frac{x}{y}\right)\cdot \left(\frac{z}{w}\right)\right) = \left(\frac{u}{v}\right)\cdot \left(\frac{xz}{wy}\right) = \left(\frac{uxz}{vy}\right) = \left(\frac{ux}{vy}\right)\cdot \left(\frac{z}{w}\right) = \left(\left(\frac{u}{v}\right)\cdot \left(\frac{x}{y}\right)\right)\cdot \\ \left(\frac{z}{w}\right). \end{array}$
+1)  $\leqft(\frac{-a}{b}\right) + \leqft(\frac{a}{b}\right) = \leqft(\frac{-a\cdot b + a\cdot b}{b^2}\right) = \leqft(\frac{0}{b^2}\right) = \leqft(\frac{0}{z}\right)$ .
+3)  $\begin{array}{r}\leqft(\frac{u}{v}\right)\cdot \leqft(\leqft(\frac{x}{y}\right)\cdot \leqft(\frac{z}{w}\right)\right) = \leqft(\frac{u}{v}\right)\cdot \leqft(\frac{xz}{wy}\right) = \leqft(\frac{uxz}{vy}\right) = \leqft(\frac{ux}{vy}\right)\cdot \leqft(\frac{z}{w}\right) = \leqft(\leqft(\frac{u}{v}\right)\cdot \leqft(\frac{x}{y}\right)\right)\cdot \\ \leqft(\frac{z}{w}\right). \end{array}$
 
 5) Isomorphism given by  $0 \mapsto \{(0,1),(0,2),(0,3),(0,4\}$ ,
 
@@ -16306,25 +16306,25 @@ $$
 1)
 
 $$
-\begin{array}{l} e ^ {i} = 1 + \frac {i}{1 !} + \frac {- 1}{2 !} + \frac {- i}{3 !} + \frac {1}{4 !} + \frac {i}{5 !} + \dots \\ = \left(1 - \frac {1}{2 !} + \frac {1}{4 !} - \dots\right) + i \left(\frac {1}{1 !} - \frac {1}{3 !} + \frac {1}{5 !} - \dots\right) = \cos 1 + i \sin 1. \\ \end{array}
+\begin{array}{l} e ^ {i} = 1 + \frac {i}{1 !} + \frac {- 1}{2 !} + \frac {- i}{3 !} + \frac {1}{4 !} + \frac {i}{5 !} + \dots \\ = \leqft(1 - \frac {1}{2 !} + \frac {1}{4 !} - \dots\right) + i \leqft(\frac {1}{1 !} - \frac {1}{3 !} + \frac {1}{5 !} - \dots\right) = \cos 1 + i \sin 1. \\ \end{array}
 $$
 
 3)
 
 $$
-1 + \frac {i}{n} = \sqrt {1 + \frac {1}{n ^ {2}}} \left(\cos (\tan^ {- 1} (1 / n)) + i \sin (\tan^ {- 1} (1 / n))\right),
+1 + \frac {i}{n} = \sqrt {1 + \frac {1}{n ^ {2}}} \leqft(\cos (\tan^ {- 1} (1 / n)) + i \sin (\tan^ {- 1} (1 / n))\right),
 $$
 
 so
 
 $$
-\left(1 + \frac {i}{n}\right) ^ {n} = \left(1 + \frac {1}{n ^ {2}}\right) ^ {n / 2} \left(\cos (n \tan^ {- 1} (1 / n)) + i \sin (n \tan^ {- 1} (1 / n))\right).
+\leqft(1 + \frac {i}{n}\right) ^ {n} = \leqft(1 + \frac {1}{n ^ {2}}\right) ^ {n / 2} \leqft(\cos (n \tan^ {- 1} (1 / n)) + i \sin (n \tan^ {- 1} (1 / n))\right).
 $$
 
 But
 
 $$
-\lim  _ {n \rightarrow \infty} \left(1 + \frac {1}{n ^ {2}}\right) ^ {n / 2} = 1 \quad \text {a n d} \quad \lim  _ {n \rightarrow \infty} n \tan^ {- 1} (1 / n) = 1
+\lim  _ {n \rightarrow \infty} \leqft(1 + \frac {1}{n ^ {2}}\right) ^ {n / 2} = 1 \quad \text {a n d} \quad \lim  _ {n \rightarrow \infty} n \tan^ {- 1} (1 / n) = 1
 $$
 
 by L'Hopital's rule.

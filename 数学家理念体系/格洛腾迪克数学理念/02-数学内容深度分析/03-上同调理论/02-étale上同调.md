@@ -331,7 +331,7 @@ T_ℓ(E) = lim_n E[ℓ^n]
    $$H^i(X, \mathbb{Z}_\ell) = \varprojlim_n H^i(X, \mathbb{Z}/\ell^n \mathbb{Z})$$
 
 4. **韦伊猜想（Zeta函数）**：
-   $$\zeta_X(s) = \exp\leqqqqft(\sum_{n=1}^\infty \frac{N_n}{n} T^n\right), \quad N_n = |X(\mathbb{F}_{q^n})|$$
+   $$\zeta_X(s) = \exp\leqqqqqqft(\sum_{n=1}^\infty \frac{N_n}{n} T^n\right), \quad N_n = |X(\mathbb{F}_{q^n})|$$
 
 5. **函数方程**：
    $$\zeta_X(1-s) = \pm q^{-\chi(X)/2} T^{-\chi(X)} \zeta_X(s)$$
@@ -349,7 +349,7 @@ T_ℓ(E) = lim_n E[ℓ^n]
    $$H_{\text{ét}}^i(X, \mathcal{F}) \otimes_{\mathbb{Z}_\ell} \mathbb{Q}_\ell = H_{\text{ét}}^i(X, \mathcal{F} \otimes \mathbb{Q}_\ell)$$
 
 10. **上同调维数**：
-    $$\text{cd}_\ell(X) = \sup\{i : H_{\text{ét}}^i(X, \mathbb{Q}_\ell) \neqqqqq 0\}$$
+    $$\text{cd}_\ell(X) = \sup\{i : H_{\text{ét}}^i(X, \mathbb{Q}_\ell) \neqqqqqqq 0\}$$
 
 ---
 

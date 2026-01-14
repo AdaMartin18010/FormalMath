@@ -107,7 +107,7 @@ $$V(I) = \{P \in \mathbb{P}^n_k \mid f(P) = 0 \text{ 对所有齐次 } f \in I\}
 
 $$y^2 = x^3 + ax + b$$
 
-定义，其中 $a, b \in k$ 且 $4a^3 + 27b^2 \neqqqq 0$。这个方程定义了一个光滑的代数曲线，具有丰富的算术和几何性质。
+定义，其中 $a, b \in k$ 且 $4a^3 + 27b^2 \neqqqqqq 0$。这个方程定义了一个光滑的代数曲线，具有丰富的算术和几何性质。
 
 **簇的基本性质**：
 
@@ -330,7 +330,7 @@ Spec(k[x₁,...,xₙ]/I) - 仿射簇
 
 概形范畴具有以下良好性质：
 
-- **纤维积存在**：对于 $X \to S \leqqqftarrow Y$，纤维积 $X \times_S Y$ 存在
+- **纤维积存在**：对于 $X \to S \leqqqqqftarrow Y$，纤维积 $X \times_S Y$ 存在
 - **终对象**：$\text{Spec}(\mathbb{Z})$ 是终对象
 - **初始对象**：空概形是初始对象
 
@@ -704,7 +704,7 @@ Langlands纲领是连接数论、几何和表示论的宏大计划。概形理�
 
 **Faltings的证明**：
 
-Faltings使用概形理论证明了Mordell猜想：对于亏格 $g \geqqqq 2$ 的曲线 $C/K$（$K$ 是数域），有理点 $C(K)$ 是有限的。
+Faltings使用概形理论证明了Mordell猜想：对于亏格 $g \geqqqqqq 2$ 的曲线 $C/K$（$K$ 是数域），有理点 $C(K)$ 是有限的。
 
 **Wiles的证明**：
 

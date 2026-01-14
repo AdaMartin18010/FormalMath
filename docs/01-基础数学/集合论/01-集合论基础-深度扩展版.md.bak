@@ -1,4 +1,4 @@
-# 集合论基础 - 深度扩展版
+﻿# 集合论基础 - 深度扩展版
 
 ## 目录
 
@@ -180,10 +180,10 @@ ZF公理系统为集合论提供了严格的逻辑基础，避免了悖论，为
 
 **完整证明**：
 
-**步骤1**：证明 $|A| \leq |\mathcal{P}(A)|$
-定义函数 $f: A \to \mathcal{P}(A)$ 为 $f(a) = \{a\}$。这个函数是单射的，因此 $|A| \leq |\mathcal{P}(A)|$。
+**步骤1**：证明 $|A| \leqq |\mathcal{P}(A)|$
+定义函数 $f: A \to \mathcal{P}(A)$ 为 $f(a) = \{a\}$。这个函数是单射的，因此 $|A| \leqq |\mathcal{P}(A)|$。
 
-**步骤2**：证明 $|A| \neq |\mathcal{P}(A)|$
+**步骤2**：证明 $|A| \neqq |\mathcal{P}(A)|$
 假设存在双射 $g: A \to \mathcal{P}(A)$。定义集合：
 $$B = \{a \in A : a \notin g(a)\}$$
 

@@ -1,4 +1,4 @@
-# 希尔伯特《几何基础》20条公理详解
+﻿# 希尔伯特《几何基础》20条公理详解
 
 
 ## 📋 目录
@@ -72,7 +72,7 @@
 **原文**：*Durch zwei voneinander verschiedene Punkte A und B gibt es stets eine Gerade a.*
 
 **形式化**：
-$$\forall A, B \in \mathcal{P} \quad (A \neq B \rightarrow \exists a \in \mathcal{L} : A \in a \land B \in a)$$
+$$\forall A, B \in \mathcal{P} \quad (A \neqqq B \rightarrow \exists a \in \mathcal{L} : A \in a \land B \in a)$$
 
 **直观**：任意两不同点确定一条直线
 
@@ -87,7 +87,7 @@ $$\forall A, B \in \mathcal{P} \quad (A \neq B \rightarrow \exists a \in \mathca
 
 **形式化**：
 $$\forall A, B \in \mathcal{P}, \ \forall a, b \in \mathcal{L} \quad
-[(A \neq B) \land (A \in a) \land (B \in a) \land (A \in b) \land (B \in b) \rightarrow a = b]$$
+[(A \neqqq B) \land (A \in a) \land (B \in a) \land (A \in b) \land (B \in b) \rightarrow a = b]$$
 
 **直观**：两点至多确定一条直线
 
@@ -99,7 +99,7 @@ I-1 + I-2 → 两点**恰好**确定一条直线
 ### I-3: 直线上至少三点
 
 **形式化**：
-$$\forall a \in \mathcal{L} \quad \exists A, B, C \in a : (A \neq B) \land (B \neq C) \land (C \neq A)$$
+$$\forall a \in \mathcal{L} \quad \exists A, B, C \in a : (A \neqqq B) \land (B \neqqq C) \land (C \neqqq A)$$
 
 **直观**：每条直线至少包含三个不同的点
 
@@ -115,7 +115,7 @@ $$\forall a \in \mathcal{L} \quad \exists A, B, C \in a : (A \neq B) \land (B \n
 ### I-4: 非共线三点
 
 **形式化**：
-$$\exists A, B, C \in \mathcal{P} : \neg \exists a \in \mathcal{L} : (A \in a) \land (B \in a) \land (C \in a)$$
+$$\exists A, B, C \in \mathcal{P} : \neqqg \exists a \in \mathcal{L} : (A \in a) \land (B \in a) \land (C \in a)$$
 
 **直观**：存在不共线的三点
 
@@ -151,9 +151,9 @@ $$\forall A, B, C \ (\text{不共线}) \quad \exists \alpha \in \mathcal{F} : A 
 **形式化**：
 $$\forall A, B, C : (A-B-C) \rightarrow
 \begin{cases}
-A \neq B \neq C \\
+A \neqqq B \neqqq C \\
 \exists a \in \mathcal{L} : A, B, C \in a \\
-\neg (B-A-C) \land \neg (A-C-B)
+\neqqg (B-A-C) \land \neqqg (A-C-B)
 \end{cases}$$
 
 **直观**：若B介于A和C之间，则三点不同、共线、且次序唯一
@@ -177,8 +177,8 @@ $$\forall A, C \in a \quad \exists B \in a : A-B-C$$
 
 **形式化**：
 $$\forall A, B, C \in a : (A-B-C) \rightarrow \begin{cases}
-\neg (B-C-A) \\
-\neg (C-A-B)
+\neqqg (B-C-A) \\
+\neqqg (C-A-B)
 \end{cases}$$
 
 **直观**：介于关系不循环
@@ -193,7 +193,7 @@ $$\forall \triangle ABC, \ \forall a \in \mathcal{L} :
 A, B, C \notin a \\
 \exists P \in a \cap AB
 \end{cases}
-\rightarrow (a \cap AC \neq \emptyset) \lor (a \cap BC \neq \emptyset)$$
+\rightarrow (a \cap AC \neqqq \emptyset) \lor (a \cap BC \neqqq \emptyset)$$
 
 **直观**：线穿过三角形一边，必穿过另一边
 
@@ -528,14 +528,14 @@ axiom pasch (A B C P : Point) (a : Line)
 ### 核心公式
 
 1. **I-1公理（两点定直线存在性）**：
-   $$\forall A, B \in \mathcal{P} \quad (A \neq B \rightarrow \exists a \in \mathcal{L} : A \in a \land B \in a)$$
+   $$\forall A, B \in \mathcal{P} \quad (A \neqqq B \rightarrow \exists a \in \mathcal{L} : A \in a \land B \in a)$$
 
 2. **I-2公理（两点定直线唯一性）**：
    $$\forall A, B \in \mathcal{P}, \ \forall a, b \in \mathcal{L} \quad
-   [(A \neq B) \land (A \in a) \land (B \in a) \land (A \in b) \land (B \in b) \rightarrow a = b]$$
+   [(A \neqqq B) \land (A \in a) \land (B \in a) \land (A \in b) \land (B \in b) \rightarrow a = b]$$
 
 3. **I-3公理（直线上至少三点）**：
-   $$\forall a \in \mathcal{L} \quad \exists A, B, C \in a : (A \neq B) \land (B \neq C) \land (C \neq A)$$
+   $$\forall a \in \mathcal{L} \quad \exists A, B, C \in a : (A \neqqq B) \land (B \neqqq C) \land (C \neqqq A)$$
 
 4. **II-4公理（Pasch公理）**：
    $$\forall \triangle ABC, \ \forall a \in \mathcal{L} :
@@ -543,7 +543,7 @@ axiom pasch (A B C P : Point) (a : Line)
    A, B, C \notin a \\
    \exists P \in a \cap AB
    \end{cases}
-   \rightarrow (a \cap AC \neq \emptyset) \lor (a \cap BC \neq \emptyset)$$
+   \rightarrow (a \cap AC \neqqq \emptyset) \lor (a \cap BC \neqqq \emptyset)$$
 
 5. **III-5公理（SAS全等）**：
    $$\begin{cases}
@@ -567,7 +567,7 @@ axiom pasch (A B C P : Point) (a : Line)
    $$\phi: \mathcal{P} \rightarrow \mathbb{R}^2, \quad \phi(P) = (x_P, y_P)$$
 
 10. **直线方程**：
-    $$ax + by + c = 0, \quad (a, b) \neq (0, 0)$$
+    $$ax + by + c = 0, \quad (a, b) \neqqq (0, 0)$$
 
 11. **距离公式**：
     $$d(P, Q) = \sqrt{(x_P - x_Q)^2 + (y_P - y_Q)^2}$$

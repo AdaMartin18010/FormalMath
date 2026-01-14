@@ -238,13 +238,13 @@ $$
 Probably you can write such arguments quickly, fluently and with only occasional errors. But why exactly is each step valid? One step (which?) assumes that  $xy = yx$ . This is valid because multiplication is commutative, meaning that  $xy$  and  $yx$  always take the same value. Another step (which?) assumes that if  $x^2 = 0$  then  $x = 0$ . This is valid because 0 is the only number that, when squared, gives 0. But such assumptions rely on properties of operations and objects. Multiplication is commutative, but not all operations share this property. Division is not commutative, for instance:  $x / y$  could not be replaced by  $y / x$ . And not all objects behave like numbers. If  $x$  and  $y$  were  $2 \times 2$  matrices, $^2$  we could not assume that  $xy = yx$  because matrix multiplication works like this:
 
 $$
-\left( \begin{array}{c c} x _ {1 1} & x _ {1 2} \\ x _ {2 1} & x _ {2 2} \end{array} \right) \left( \begin{array}{c c} y _ {1 1} & y _ {1 2} \\ y _ {2 1} & y _ {2 2} \end{array} \right) = \left( \begin{array}{c c} x _ {1 1} y _ {1 1} + x _ {1 2} y _ {2 1} & x _ {1 1} y _ {1 2} + x _ {1 2} y _ {2 2} \\ x _ {2 1} y _ {1 1} + x _ {2 2} y _ {2 1} & x _ {2 1} y _ {1 2} + x _ {2 2} y _ {2 2} \end{array} \right).
+\leqft( \begin{array}{c c} x _ {1 1} & x _ {1 2} \\ x _ {2 1} & x _ {2 2} \end{array} \right) \leqft( \begin{array}{c c} y _ {1 1} & y _ {1 2} \\ y _ {2 1} & y _ {2 2} \end{array} \right) = \leqft( \begin{array}{c c} x _ {1 1} y _ {1 1} + x _ {1 2} y _ {2 1} & x _ {1 1} y _ {1 2} + x _ {1 2} y _ {2 2} \\ x _ {2 1} y _ {1 1} + x _ {2 2} y _ {2 1} & x _ {2 1} y _ {1 2} + x _ {2 2} y _ {2 2} \end{array} \right).
 $$
 
 So, for example,
 
 $$
-\left( \begin{array}{c c} 1 & 2 \\ 3 & 4 \end{array} \right) \left( \begin{array}{c c} 5 & 6 \\ 7 & 8 \end{array} \right) = \left( \begin{array}{c c} 5 + 1 4 & 6 + 1 6 \\ 1 5 + 2 8 & 1 8 + 3 2 \end{array} \right) = \left( \begin{array}{c c} 1 9 & 2 2 \\ 4 3 & 5 0 \end{array} \right)
+\leqft( \begin{array}{c c} 1 & 2 \\ 3 & 4 \end{array} \right) \leqft( \begin{array}{c c} 5 & 6 \\ 7 & 8 \end{array} \right) = \leqft( \begin{array}{c c} 5 + 1 4 & 6 + 1 6 \\ 1 5 + 2 8 & 1 8 + 3 2 \end{array} \right) = \leqft( \begin{array}{c c} 1 9 & 2 2 \\ 4 3 & 5 0 \end{array} \right)
 $$
 
 This book includes examples based on matrices and complex numbers. If you are studying in a UK-like system and have not come across these, you can find introductions in A-level Further Mathematics textbooks or reliable online resources.
@@ -252,19 +252,19 @@ This book includes examples based on matrices and complex numbers. If you are st
 but
 
 $$
-\left( \begin{array}{c c} 5 & 6 \\ 7 & 8 \end{array} \right) \left( \begin{array}{c c} 1 & 2 \\ 3 & 4 \end{array} \right) = \left( \begin{array}{c c} 5 + 1 8 & 1 0 + 2 4 \\ 7 + 2 4 & 1 4 + 3 2 \end{array} \right) = \left( \begin{array}{c c} 2 3 & 3 4 \\ 3 1 & 4 6 \end{array} \right).
+\leqft( \begin{array}{c c} 5 & 6 \\ 7 & 8 \end{array} \right) \leqft( \begin{array}{c c} 1 & 2 \\ 3 & 4 \end{array} \right) = \leqft( \begin{array}{c c} 5 + 1 8 & 1 0 + 2 4 \\ 7 + 2 4 & 1 4 + 3 2 \end{array} \right) = \leqft( \begin{array}{c c} 2 3 & 3 4 \\ 3 1 & 4 6 \end{array} \right).
 $$
 
 Similarly, we could not assume that if  $x^{2} = 0$  then  $x = 0$ . The matrix
 
 $$
-\left( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right)
+\leqft( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right)
 $$
 
 is not the zero matrix, but nevertheless
 
 $$
-\left( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \left( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) = \left( \begin{array}{c c} 0 + 0 & 0 + 0 \\ 0 + 0 & 0 + 0 \end{array} \right) = \left( \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right).
+\leqft( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \leqft( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) = \leqft( \begin{array}{c c} 0 + 0 & 0 + 0 \\ 0 + 0 & 0 + 0 \end{array} \right) = \leqft( \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right).
 $$
 
 Algebraic validity therefore depends upon properties of both binary operations, including multiplication, division and others to be discussed in Chapter 5, and the sets on which these operate, which might be sets of numbers, matrices or objects of other types—again, see Chapter 5. Binary operations might be commutative on some sets but not on others. In some sets there are few ways to combine objects to give zero; in others, there are many. Thus, 'facts' that are true for one operation on one set do not necessarily hold elsewhere, and Abstract Algebra requires concentration to ensure that you do not overgeneralize from a familiar context. I won't lie: this is hard. When you are accustomed to 'doing' algebra in numerical contexts, it might not require much effort. The manipulations become natural enough that you do them easily, much as you might walk or type easily. And concentrating on something that you do easily feels weird and disruptive. If you concentrate on your muscles as you walk, you become slow and ungainly. If you can touch-type, but you force yourself to look at the keyboard and think about which letters you want, you might find that you can't type at all. Focusing on why algebraic manipulations are valid can feel similar: slow, clunky and therefore like a step backward in your learning rather than a step forward. It takes discipline, and for a while might feel frustrating.
@@ -452,7 +452,7 @@ $$
 Thus it makes no sense to discuss 'the' identity in  $\mathbb{Z}$ ; this definition too requires both a set and a binary operation. That said, people do abuse the language when an operation is established. For instance, the  $2 \times 2$  matrix
 
 $$
-\left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right)
+\leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right)
 $$
 
 is often referred to as 'the' identity matrix. Which is it, a multiplicative or an additive identity? Could it be both, or perhaps an identity in relation to another operation?
@@ -510,7 +510,7 @@ Proof: Let  $x_{1}, x_{2} \in 3\mathbb{Z}$ , so  $\exists n_{1}, n_{2} \in \math
 Then  $x_{1} + x_{2} = 3n_{1} + 3n_{2} = 3(n_{1} + n_{2})\in 3\mathbb{Z}$  because
 
 $$
-\left(n _ {1} + n _ {2}\right) \in \mathbb {Z}.
+\leqft(n _ {1} + n _ {2}\right) \in \mathbb {Z}.
 $$
 
 So  $3\mathbb{Z}$  is closed under addition.
@@ -530,15 +530,15 @@ it is enough to show that it fails one. This can be quite easy. For instance, th
 In cases where some axioms do not hold, it might be possible to restrict to a set on which they do. Consider, for instance, the set of all  $2 \times 2$  matrices under multiplication. This structure satisfies closure, because multiplying together two  $2 \times 2$  matrices gives another. Matrix multiplication is associative, which is tedious but straightforward to check. How would you finish this calculation to do so?
 
 $$
-\begin{array}{l} \left(\left( \begin{array}{c c} a _ {1 1} & a _ {1 2} \\ a _ {2 1} & a _ {2 2} \end{array} \right) \left( \begin{array}{c c} b _ {1 1} & b _ {1 2} \\ b _ {2 1} & b _ {2 2} \end{array} \right)\right) \left( \begin{array}{c c} c _ {1 1} & c _ {1 2} \\ c _ {2 1} & c _ {2 2} \end{array} \right) \\ = \left( \begin{array}{c c c} a _ {1 1} b _ {1 1} + a _ {1 2} b _ {2 1} & a _ {1 1} b _ {1 2} + a _ {1 2} b _ {2 2} \\ a _ {2 1} b _ {1 1} + a _ {2 2} b _ {2 1} & a _ {2 1} b _ {2 1} + a _ {2 2} b _ {2 2} \end{array} \right) \left( \begin{array}{c c} c _ {1 1} & c _ {1 2} \\ c _ {2 1} & c _ {2 2} \end{array} \right) \\ = \dots \\ \end{array}
+\begin{array}{l} \leqft(\leqft( \begin{array}{c c} a _ {1 1} & a _ {1 2} \\ a _ {2 1} & a _ {2 2} \end{array} \right) \leqft( \begin{array}{c c} b _ {1 1} & b _ {1 2} \\ b _ {2 1} & b _ {2 2} \end{array} \right)\right) \leqft( \begin{array}{c c} c _ {1 1} & c _ {1 2} \\ c _ {2 1} & c _ {2 2} \end{array} \right) \\ = \leqft( \begin{array}{c c c} a _ {1 1} b _ {1 1} + a _ {1 2} b _ {2 1} & a _ {1 1} b _ {1 2} + a _ {1 2} b _ {2 2} \\ a _ {2 1} b _ {1 1} + a _ {2 2} b _ {2 1} & a _ {2 1} b _ {2 1} + a _ {2 2} b _ {2 2} \end{array} \right) \leqft( \begin{array}{c c} c _ {1 1} & c _ {1 2} \\ c _ {2 1} & c _ {2 2} \end{array} \right) \\ = \dots \\ \end{array}
 $$
 
-And  $2\times 2$  matrix multiplication has identity  $\left( \begin{array}{ll}1 & 0\\ 0 & 1 \end{array} \right)$
+And  $2\times 2$  matrix multiplication has identity  $\leqft( \begin{array}{ll}1 & 0\\ 0 & 1 \end{array} \right)$
 
-because for every matrix  $\left( \begin{array}{ll}a & b\\ c & d \end{array} \right)$
+because for every matrix  $\leqft( \begin{array}{ll}a & b\\ c & d \end{array} \right)$
 
 $$
-\left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) \left( \begin{array}{c c} a & b \\ c & d \end{array} \right) = \left( \begin{array}{c c} a & b \\ c & d \end{array} \right) \left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) = \left( \begin{array}{c c} a & b \\ c & d \end{array} \right).
+\leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) = \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) \leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) = \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right).
 $$
 
 But not all  $2 \times 2$  matrices have multiplicative inverses. If you have studied matrices, can you list some that do not? Can you suggest a restricted set of matrices that does form a group under multiplication? We will pick up this idea in Section 6.5 and Chapter 9.
@@ -738,13 +738,13 @@ If  $a = 0$  or  $b = 0$  then  $ab = 0$ .
 The first statement is the zero product property: it says that if a product is zero, one of its factors must be zero. The second, its converse, is the statement that 'anything times zero is zero'. Do these seem obviously different? The distinction can be hard to keep straight, for two reasons. First, in everyday life, people are sloppy with the word 'if'—they use it in ways that are logically accurate but also in ways that are not. Second, in the real numbers—and thus in most pre-undergraduate equation solving—both statements are true. Such distinctions are easier to keep straight when one statement is true and the other is false. For  $2 \times 2$  matrices, it is not true that if  $ab = 0$  then  $a = 0$  or  $b = 0$ . For instance, neither
 
 $$
-\left( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \text {n o r} \left( \begin{array}{c c} 0 & 2 \\ 0 & 0 \end{array} \right)
+\leqft( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \text {n o r} \leqft( \begin{array}{c c} 0 & 2 \\ 0 & 0 \end{array} \right)
 $$
 
 is the zero matrix, but
 
 $$
-\left( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \left( \begin{array}{c c} 0 & 2 \\ 0 & 0 \end{array} \right) = \left( \begin{array}{c c} 0 + 0 & 0 + 0 \\ 0 + 0 & 0 + 0 \end{array} \right) = \left( \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right).
+\leqft( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \leqft( \begin{array}{c c} 0 & 2 \\ 0 & 0 \end{array} \right) = \leqft( \begin{array}{c c} 0 + 0 & 0 + 0 \\ 0 + 0 & 0 + 0 \end{array} \right) = \leqft( \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right).
 $$
 
 Formally, matrix multiplication admits zero divisors, nonzero elements that multiply to zero. But it is still true that if  $a$  or  $b$  is the zero matrix, then  $ab$  must be the zero matrix.²
@@ -854,7 +854,7 @@ and  $y\equiv b(\mathrm{mod} 12)$  so  $\exists n_2\in \mathbb{Z}$  such that  $
 Then  $x + y = (a + 12n_{1}) + (b + 12n_{2})$
 
 $$
-\begin{array}{l} = a + \left(1 2 n _ {1} + b\right) + 1 2 n _ {2} \quad (\text {b y}) \\ = a + (b + 1 2 n _ {1}) + 1 2 n _ {2} \quad (\text {b y}) \\ = (a + b) + 1 2 \left(n _ {1} + n _ {2}\right) \quad (\text {b y}) \\ \equiv (a + b) (\mathrm {m o d} 1 2) \quad \text {(b y d e f i n i t i o n)}. \\ \end{array}
+\begin{array}{l} = a + \leqft(1 2 n _ {1} + b\right) + 1 2 n _ {2} \quad (\text {b y}) \\ = a + (b + 1 2 n _ {1}) + 1 2 n _ {2} \quad (\text {b y}) \\ = (a + b) + 1 2 \leqft(n _ {1} + n _ {2}\right) \quad (\text {b y}) \\ \equiv (a + b) (\mathrm {m o d} 1 2) \quad \text {(b y d e f i n i t i o n)}. \\ \end{array}
 $$
 
 This proof might be longer than some that you have encountered, but its steps are not especially clever. They convert the premises about congruences into information about number forms, then add those number forms and rearrange everything in valid ways to arrive at the conclusion. If you wrote out the theorem and covered up the proof, you could probably reconstruct it. I recommend trying that.
@@ -882,7 +882,7 @@ and  $y\equiv b(\mathrm{mod} 12)$  so  $\exists n_2\in \mathbb{Z}$  such that  $
 Then  $xy = (a + 12n_{1})(b + 12n_{2})$
 
 $$
-\begin{array}{l} = a b + 1 2 n _ {1} b + 1 2 n _ {2} a + 1 2 ^ {2} n _ {1} n _ {2} \\ = a b + 1 2 \left(n _ {1} b + n _ {2} a + 1 2 n _ {1} n _ {2}\right) \\ \equiv (a b) (\mathrm {m o d} 1 2). \\ \end{array}
+\begin{array}{l} = a b + 1 2 n _ {1} b + 1 2 n _ {2} a + 1 2 ^ {2} n _ {1} n _ {2} \\ = a b + 1 2 \leqft(n _ {1} b + n _ {2} a + 1 2 n _ {1} n _ {2}\right) \\ \equiv (a b) (\mathrm {m o d} 1 2). \\ \end{array}
 $$
 
 This theorem means that  $\times_{12}$ , like  $+_{12}$ , is well defined, which is important in ring theory and will be picked up in Chapter 9. But  $\times_{12}$ , unlike  $+_{12}$ , does not permit solutions to every simple equation. Consider, for instance,
@@ -957,7 +957,7 @@ Transitive  $\forall x,y,z\in X$  , if  $x\sim y$  and  $y\sim z$  then  $x\sim 
 
 The notation  $x \sim y$  raises potential confusion because it looks a lot like  $x * y$  or  $x + y$ . But a relation on  $X$  is not an operation on  $X$ . For an operation, every two elements  $x, y \in X$  can be combined to give another. For a relation, nothing is combined. Rather, two elements  $x, y \in X$  might be related, in which case we write  $x \sim y$ , or not related, in which case we write  $x \nvdash y$ . For instance,  $14 \equiv 2(\mathrm{mod} 12)$  but  $15 \not\equiv 2(\mathrm{mod} 12)$ .
 
-A simple equivalence relation is  $=$  on the set  $\mathbb{Q}$ : this is reflexive, symmetric and transitive. But not all relations are equivalence relations: the relation  $<$  on the set  $\mathbb{Q}$  is not reflexive because it is not true that  $\forall x \in \mathbb{Q}$ ,  $x < x$  (the relation  $<$  is not symmetric either, though it is transitive). Thus equivalence relations are special, and one consequence of their definition is that every equivalence relation partitions its set into equivalence classes: it distributes the elements into disjoint subsets each containing a full set of equivalent elements. Congruence modulo 12 partitions the integers into congruence classes according to their remainders modulo 12. The relation  $=$  on  $\mathbb{Q}$  partitions the rational numbers into equivalence classes including  $\left\{\frac{1}{2}, \frac{2}{4}, \frac{3}{6}, \ldots\right\}$ ,  $\left\{\frac{1}{3}, \frac{2}{6}, \frac{3}{9}, \ldots\right\}$ , and so on. In general, we
+A simple equivalence relation is  $=$  on the set  $\mathbb{Q}$ : this is reflexive, symmetric and transitive. But not all relations are equivalence relations: the relation  $<$  on the set  $\mathbb{Q}$  is not reflexive because it is not true that  $\forall x \in \mathbb{Q}$ ,  $x < x$  (the relation  $<$  is not symmetric either, though it is transitive). Thus equivalence relations are special, and one consequence of their definition is that every equivalence relation partitions its set into equivalence classes: it distributes the elements into disjoint subsets each containing a full set of equivalent elements. Congruence modulo 12 partitions the integers into congruence classes according to their remainders modulo 12. The relation  $=$  on  $\mathbb{Q}$  partitions the rational numbers into equivalence classes including  $\leqft\{\frac{1}{2}, \frac{2}{4}, \frac{3}{6}, \ldots\right\}$ ,  $\leqft\{\frac{1}{3}, \frac{2}{6}, \frac{3}{9}, \ldots\right\}$ , and so on. In general, we
 
 could imagine a partition as below, where the relational statements appear on the right (and pairs not listed are not related—for example,  $a_1 \not\sim b_1$ ). You can check that this arrangement satisfies reflexivity, symmetry and transitivity.
 
@@ -1046,7 +1046,7 @@ Now let  $y\in b + 12\mathbb{Z}$
 Then  $\exists n_{3}\in \mathbb{Z}$  such that  $y_{1} = b + 12n_{3}$
 
 $$
-= a + 1 2 \left(n _ {1} - n _ {2} + n _ {3}\right) \in a + 1 2 \mathbb {Z}.
+= a + 1 2 \leqft(n _ {1} - n _ {2} + n _ {3}\right) \in a + 1 2 \mathbb {Z}.
 $$
 
 So  $b + 12\mathbb{Z}\subseteq a + 12\mathbb{Z}$
@@ -1056,7 +1056,7 @@ Similarly let  $y \in a + 12\mathbb{Z}$ .
 Then  $\exists n_3\in \mathbb{Z}$  such that  $y = a + 12n_{3}$
 
 $$
-= b + 1 2 \left(n _ {2} - n _ {1} + n _ {3}\right) \in b + 1 2 \mathbb {Z}.
+= b + 1 2 \leqft(n _ {2} - n _ {1} + n _ {3}\right) \in b + 1 2 \mathbb {Z}.
 $$
 
 So  $a + 12\mathbb{Z}\subseteq b + 12\mathbb{Z}$
@@ -1115,10 +1115,10 @@ Identity  $\exists e\in G$  such that  $\forall g\in G,e*g = g*e = g$
 
 To prove that something exists, it is enough to produce one. For instance, in the set of  $2 \times 2$  matrices, a multiplicative identity is
 
-$\left( \begin{array}{ll}1 & 0\\ 0 & 1 \end{array} \right)$  , because for every matrix  $\left( \begin{array}{ll}a & b\\ c & d \end{array} \right)$
+$\leqft( \begin{array}{ll}1 & 0\\ 0 & 1 \end{array} \right)$  , because for every matrix  $\leqft( \begin{array}{ll}a & b\\ c & d \end{array} \right)$
 
 $$
-\left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) \left( \begin{array}{c c} a & b \\ c & d \end{array} \right) = \left( \begin{array}{c c} a & b \\ c & d \end{array} \right) \left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) = \left( \begin{array}{c c} a & b \\ c & d \end{array} \right).
+\leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) = \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) \leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) = \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right).
 $$
 
 Students sometimes worry about such assertions, though. They feel that it is 'cheating' just to produce an object, that they ought somehow to derive it. But that is not necessary. Justifications are often expected, but it is usually fine effectively to say 'Look, here is one that works, let me prove it'.
@@ -1135,13 +1135,13 @@ $= e_2$  because  $e_1$  is an identity.
 I have always thought this argument rather cute. But it is so short that it can seem vacuous, so it is useful to relate it to some specific sets and operations. For instance, suppose that  $S = \mathbb{R}$ , the operation is multiplication,  $e_1 = 1$ , and  $e_2$  is a fictitious other identity element. Then the algebraic part of the argument reads  $1 = 1e_2 = e_2$ . Similarly, if  $S$  is the set of  $2 \times 2$  matrices, the operation is matrix multiplication,
 
 $$
-e _ {1} = \left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) \text {a n d} \left( \begin{array}{c c} e _ {a} & e _ {b} \\ e _ {c c} & e _ {d} \end{array} \right) \text {i s a n o t h e r i d e n t i t y},
+e _ {1} = \leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) \text {a n d} \leqft( \begin{array}{c c} e _ {a} & e _ {b} \\ e _ {c c} & e _ {d} \end{array} \right) \text {i s a n o t h e r i d e n t i t y},
 $$
 
 then the algebraic part reads
 
 $$
-\left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) = \left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) \left( \begin{array}{c c} e _ {a} & e _ {b} \\ e _ {c} & e _ {d} \end{array} \right) = \left( \begin{array}{c c} e _ {a} & e _ {b} \\ e _ {c} & e _ {d} \end{array} \right).
+\leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) = \leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right) \leqft( \begin{array}{c c} e _ {a} & e _ {b} \\ e _ {c} & e _ {d} \end{array} \right) = \leqft( \begin{array}{c c} e _ {a} & e _ {b} \\ e _ {c} & e _ {d} \end{array} \right).
 $$
 
 Now, I observed that the identity matrix commutes with all other matrices. Does this contradict the fact that matrix multiplication is not commutative? No, because quantified statements do not have straightforward 'opposites', so defining not commutative requires careful negation. Commutativity is defined with a universal quantifier.
@@ -1575,11 +1575,11 @@ $$
 Is it associative? Is it true that for any three numbers  $a, b$  and  $c$ ,  $(a * b) * c = a * (b * c)$ ? You can probably convince yourself that it is not by looking at the general algebra:
 
 $$
-(a * b) * c = \frac {1}{2} \left(\frac {1}{2} (a + b) + c\right);
+(a * b) * c = \frac {1}{2} \leqft(\frac {1}{2} (a + b) + c\right);
 $$
 
 $$
-a * (b * c) = \frac {1}{2} \left(a + \frac {1}{2} (b + c)\right).
+a * (b * c) = \frac {1}{2} \leqft(a + \frac {1}{2} (b + c)\right).
 $$
 
 I would also think of number lines.
@@ -1591,10 +1591,10 @@ I would also think of number lines.
 But to really demonstrate, we need a counterexample. For instance,
 
 $$
-(8 * 4) * 2 = \frac {1}{2} \left(\frac {1}{2} (8 + 4) + 2\right) = \frac {1}{2} (6 + 2) = 4,
+(8 * 4) * 2 = \frac {1}{2} \leqft(\frac {1}{2} (8 + 4) + 2\right) = \frac {1}{2} (6 + 2) = 4,
 $$
 
-whereas  $8*(4*2) = \frac{1}{2}\left(8 + \frac{1}{2}(4+2)\right) = \frac{1}{2}(8+3) = \frac{11}{2}$ .
+whereas  $8*(4*2) = \frac{1}{2}\leqft(8 + \frac{1}{2}(4+2)\right) = \frac{1}{2}(8+3) = \frac{11}{2}$ .
 
 Thus 'take the mean of' is commutative but not associative. Is the reverse possible? Can a binary operation be associative but not commutative? To help you think this through, here again is the list of operations. Is each one associative, commutative, both or neither? Check carefully and you will find that all combinations are possible.
 
@@ -1602,7 +1602,7 @@ $$
 \begin{array}{l} a * b = \frac {1}{2} (a + b) \\ a * b = \sqrt {a b} \\ a * b = a \\ a * b = 1 / (a b) \\ a * b = \min  \{a, b \} \\ a * b = | a - b | \\ \end{array}
 $$
 
-Finally, the operation 'take the mean of' can also clarify that binary operations really are binary. The operation  $*$  defined by  $a * b = \frac{1}{2}(a + b)$  takes the mean of two numbers, not three, and certainly not more. We could define a different operation to take the mean of three numbers by finding  $\frac{1}{3}(a + b + c)$ . But that would not be a binary operation, and its results would differ from both  $(a * b) * c = \frac{1}{2}\left(\frac{1}{2}(a + b) + c\right)$  and  $a * (b * c) = \frac{1}{2}\left(a + \frac{1}{2}(b + c)\right)$ . This is important because the expressions  $(s_1 * s_2) * s_3$  and  $s_1 * (s_2 * s_3)$  involve three elements but apply the binary operation to only two at a time. For associative operations, both orders always give the same result, meaning that  $s_1 * s_2 * s_3$  (without brackets) is well defined. If an operation is not associative—or if we do not know whether it is or not—we should take care over which of  $(s_1 * s_2) * s_3$  and  $s_1 * (s_2 * s_3)$  we write.
+Finally, the operation 'take the mean of' can also clarify that binary operations really are binary. The operation  $*$  defined by  $a * b = \frac{1}{2}(a + b)$  takes the mean of two numbers, not three, and certainly not more. We could define a different operation to take the mean of three numbers by finding  $\frac{1}{3}(a + b + c)$ . But that would not be a binary operation, and its results would differ from both  $(a * b) * c = \frac{1}{2}\leqft(\frac{1}{2}(a + b) + c\right)$  and  $a * (b * c) = \frac{1}{2}\leqft(a + \frac{1}{2}(b + c)\right)$ . This is important because the expressions  $(s_1 * s_2) * s_3$  and  $s_1 * (s_2 * s_3)$  involve three elements but apply the binary operation to only two at a time. For associative operations, both orders always give the same result, meaning that  $s_1 * s_2 * s_3$  (without brackets) is well defined. If an operation is not associative—or if we do not know whether it is or not—we should take care over which of  $(s_1 * s_2) * s_3$  and  $s_1 * (s_2 * s_3)$  we write.
 
 # 5.3 Modular arithmetic
 
@@ -1767,7 +1767,7 @@ $$
 and
 
 $$
-f \circ f ^ {- 1} (x) = f (f ^ {- 1} (x)) = \left(\sqrt [ 3 ]{x}\right) ^ {3} = x.
+f \circ f ^ {- 1} (x) = f (f ^ {- 1} (x)) = \leqft(\sqrt [ 3 ]{x}\right) ^ {3} = x.
 $$
 
 Function composition is an important operation for a range of structures in Abstract Algebra, and it is associative. You might see this confirmed as below.
@@ -1787,11 +1787,11 @@ $$
 Another type of object is a matrix. Matrices, like functions, might feel less like objects than numbers. But matrices of appropriately matching sizes can be combined via binary operations. For instance, for  $2 \times 2$  matrices, addition and multiplication work like this:
 
 $$
-\left( \begin{array}{c c} a & b \\ c & d \end{array} \right) + \left( \begin{array}{c c} k & l \\ m & n \end{array} \right) = \left( \begin{array}{c c} a + k & b + l \\ c + m & d + n \end{array} \right);
+\leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) + \leqft( \begin{array}{c c} k & l \\ m & n \end{array} \right) = \leqft( \begin{array}{c c} a + k & b + l \\ c + m & d + n \end{array} \right);
 $$
 
 $$
-\left( \begin{array}{c c} a & b \\ c & d \end{array} \right) \left( \begin{array}{c c} k & l \\ m & n \end{array} \right) = \left( \begin{array}{c c} a k + b m & a l + b n \\ c k + d m & c l + d m \end{array} \right).
+\leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) \leqft( \begin{array}{c c} k & l \\ m & n \end{array} \right) = \leqft( \begin{array}{c c} a k + b m & a l + b n \\ c k + d m & c l + d m \end{array} \right).
 $$
 
 The set of  $2 \times 2$  matrices with entries in  $\mathbb{R}$  is sometimes denoted by  $M_2(\mathbb{R})$  or  $M(2, \mathbb{R})$  or  $M_{2 \times 2}(\mathbb{R})$  (I know, multiple notations are annoying—I
@@ -1801,7 +1801,7 @@ prefer the last as it seems clearest what it means). This set is closed under ma
 How about identities and inverses? For addition, the identity is a matrix of zeros, and all  $2 \times 2$  matrices have additive inverses. For multiplication, the identity is
 
 $$
-\left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right), \text {a n d} \left( \begin{array}{c c} a & b \\ c & d \end{array} \right) \text {h a s i n v e r s e} \frac {1}{a d - b c} \left( \begin{array}{c c} d & - b \\ - c & a \end{array} \right).
+\leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right), \text {a n d} \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) \text {h a s i n v e r s e} \frac {1}{a d - b c} \leqft( \begin{array}{c c} d & - b \\ - c & a \end{array} \right).
 $$
 
 How would you check that these claims are true? And what condition must the determinant  $ad - bc$  satisfy for a multiplicative inverse to exist?
@@ -1809,13 +1809,13 @@ How would you check that these claims are true? And what condition must the dete
 If you have studied Linear Algebra, you might know that matrices are closely tied to transformations or maps. A matrix in  $M_{2 \times 2}(\mathbb{R})$  corresponds to a linear map from  $\mathbb{R}^2$  to itself. This is because  $\mathbb{R}^2$  is an abbreviation for  $\mathbb{R} \times \mathbb{R}$ , which means the set of all pairs of real numbers  $(x, y)$  or the set of all vectors of the form
 
 $$
-\left( \begin{array}{c} x \\ y \end{array} \right) \text {w h e r e} x, y \in \mathbb {R}.
+\leqft( \begin{array}{c} x \\ y \end{array} \right) \text {w h e r e} x, y \in \mathbb {R}.
 $$
 
 Thus  $\mathbb{R}^2$  is 'the plane'. A  $2 \times 2$  matrix  $A$  corresponds via matrix multiplication to a linear transformation  $T_A: \mathbb{R}^2 \to \mathbb{R}^2$  that maps the plane to itself:
 
 $$
-\text {i f} A = \left( \begin{array}{c c} a _ {1 1} & a _ {1 2} \\ a _ {2 1} & a _ {2 2} \end{array} \right) \text {t h e n} A \left( \begin{array}{c} x \\ y \end{array} \right) = \left( \begin{array}{c c} a _ {1 1} & a _ {1 2} \\ a _ {2 1} & a _ {2 2} \end{array} \right) \left( \begin{array}{c} x \\ y \end{array} \right) = \left( \begin{array}{c} a _ {1 1} x + a _ {1 2} y \\ a _ {2 1} x + a _ {2 2} y \end{array} \right).
+\text {i f} A = \leqft( \begin{array}{c c} a _ {1 1} & a _ {1 2} \\ a _ {2 1} & a _ {2 2} \end{array} \right) \text {t h e n} A \leqft( \begin{array}{c} x \\ y \end{array} \right) = \leqft( \begin{array}{c c} a _ {1 1} & a _ {1 2} \\ a _ {2 1} & a _ {2 2} \end{array} \right) \leqft( \begin{array}{c} x \\ y \end{array} \right) = \leqft( \begin{array}{c} a _ {1 1} x + a _ {1 2} y \\ a _ {2 1} x + a _ {2 2} y \end{array} \right).
 $$
 
 Note that the output is an element of  $\mathbb{R}^2$  because  $a_{11}x + a_{12}y$  and  $a_{21}x + a_{22}y$  are both single numbers. Note also that composing transformations corresponds to multiplying matrices: if the matrix  $B$  corresponds to another transformation  $T_B$ , the matrix for performing  $T_A$  then  $T_B$  is  $BA$ . Why  $BA$  rather than  $AB$ , and how does that correspond to the usual written order for function composition?
@@ -1823,7 +1823,7 @@ Note that the output is an element of  $\mathbb{R}^2$  because  $a_{11}x + a_{12
 For intuition, I find it helpful to think about which matrices correspond to simple transformations. For instance, the identity matrix maps every point to itself. A multiple of the identity matrix is an enlargement or dilation centred at  $(0,0)$ ; this 'makes everything bigger or smaller' because, for instance,
 
 $$
-\left( \begin{array}{c c} 5 & 0 \\ 0 & 5 \end{array} \right) \left( \begin{array}{c} x \\ y \end{array} \right) = \left( \begin{array}{c} 5 x \\ 5 y \end{array} \right).
+\leqft( \begin{array}{c c} 5 & 0 \\ 0 & 5 \end{array} \right) \leqft( \begin{array}{c} x \\ y \end{array} \right) = \leqft( \begin{array}{c} 5 x \\ 5 y \end{array} \right).
 $$
 
 What is the determinant for this dilation matrix? What is the inverse transformation and what are its matrix and determinant?
@@ -1899,7 +1899,7 @@ P
 There are two common notations for such permutations. One is 'double-decker' notation, in which the top row of a bracketed array lists the set's elements, and the bottom row shows where each one goes. Permutations corresponding to  $\rho$  and  $r_1$  would be denoted
 
 $$
-\rho = \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) \text {a n d} r _ {1} = \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right).
+\rho = \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) \text {a n d} r _ {1} = \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right).
 $$
 
 Mathematicians like brevity, however, and a more economical tuple notation uses just one row with one or more sets of brackets. Each element 'goes to' the one that follows in its bracket; the last in any bracket 'goes back around to' the first. So  $\rho$  and  $r_1$  would be denoted
@@ -1921,7 +1921,7 @@ In bracket notations, composition is represented implicitly using juxtaposition.
 the first permutation on the right. We therefore find out 'where an element goes' by following it from the right permutation to the left. Here is how that looks for the element 2 in double-decker notation. How do you think it looks in tuple notation?
 
 $$
-\left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right) \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) = \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 4 & 3 & 2 \end{array} \right)
+\leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right) \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) = \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 4 & 3 & 2 \end{array} \right)
 $$
 
 Because composing two permutations gives another, the set of all permutations is closed under composition. And, because permutations are functions, composition is associative. What is the identity permutation, and how do inverses work? If shown a permutation, could you write down its inverse?
@@ -2347,7 +2347,7 @@ And the links do not stop there. Rotations of the whole plane about  $(0,0)$  fo
 Section 5.6 that a rotation through  $\theta$  about  $(0,0)$  can be represented using the matrix
 
 $$
-\left( \begin{array}{c c} \cos \theta & - \sin \theta \\ \sin \theta & \cos \theta \end{array} \right).
+\leqft( \begin{array}{c c} \cos \theta & - \sin \theta \\ \sin \theta & \cos \theta \end{array} \right).
 $$
 
 Composing rotations corresponds to multiplying matrices, so matrices of this form constitute a group under multiplication. And rotation composition is commutative, so multiplication of rotation matrices is commutative, even though matrix multiplication in general is not. You could use matrix calculations to establish this directly.
@@ -2499,7 +2499,7 @@ Finally, many other figures have symmetries. As a child, you might have been ask
 The final groups we will explore are groups of permutations. As in Section 5.6, a permutation of a set  $S$  is a rearrangement of its elements or, more technically, a bijection from  $S$  to itself. For  $S = \{1,2,3,4\}$ , three permutations in 'double-decker' notation appear below. The first sends 1 to 2, 2 to 3, 3 to 4 and 4 to 1; the second swaps 1 and 2 and swaps 3 and 4; the third swaps 2 and 4 but does not move 1 or 3.
 
 $$
-\left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) \quad \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right) \quad \left( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 4 & 3 & 2 \end{array} \right)
+\leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 3 & 4 & 1 \end{array} \right) \quad \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 2 & 1 & 4 & 3 \end{array} \right) \quad \leqft( \begin{array}{c c c c} 1 & 2 & 3 & 4 \\ 1 & 4 & 3 & 2 \end{array} \right)
 $$
 
 In the alternative tuple notation, the first two of these would be written (1234) and (12)(34). Tuple notation is thus more economical, but it raises representational subtleties: the third permutation could be written (1)(24)(3), but mathematicians write simply (24), assuming that elements not mentioned stay where they are. They could also write (42), because this has the same effect. By convention, though, the lowest number in each bracket is listed first.
@@ -2649,7 +2649,7 @@ Proof: Let  $a, b \in 3\mathbb{Z}$ , so  $\exists n_1, n_2 \in \mathbb{Z}$  such
 Then  $b^{-1} = -3n_2$ .
 
 $$
-\operatorname {S o} a + b ^ {- 1} = 3 n _ {1} + (- 3 n _ {2}) = 3 \left(n _ {1} + (- n _ {2})\right) \in 3 \mathbb {Z}.
+\operatorname {S o} a + b ^ {- 1} = 3 n _ {1} + (- 3 n _ {2}) = 3 \leqft(n _ {1} + (- n _ {2})\right) \in 3 \mathbb {Z}.
 $$
 
 So  $(3\mathbb{Z}, + )$  is a subgroup of  $(\mathbb{Z}, + )$
@@ -2781,7 +2781,7 @@ This works like a familiar structure: the odd and even numbers under addition. A
 The 'elements' of these new groups are themselves sets: the rotations, for instance, form a single element. So this way of identifying a group 'within' a group is new. It is not like identifying subgroups because it is not elements of the original group that form another (usually smaller). Rather, sets of elements clump together to form 'elements' of the new one. When this happens, the subgroup and its complementary set are known as cosets. In  $D_{3}$ , the cosets of the subgroup  $\{e,\rho ,\rho^2\}$  are  $\{e,\rho ,\rho^2\}$  and  $\{r_1,r_2,r_3\}$ . In  $\mathbb{Z}$ , the cosets of the subgroup  $2\mathbb{Z}$  are the even numbers and the odd numbers. The new type of group is called a quotient group or factor group because it is formed by 'dividing' the whole group by a subgroup. Using the language of division and the fact that structurally identical groups are isomorphic, we say that
 
 $$
-D _ {3} / \{e, \rho , \rho^ {2} \} \cong \mathbb {Z} _ {2} \quad \left(^ {\prime} D _ {3} \text {o v e r} \{e, \rho , \rho^ {2} \} \text {i s i s o m o r p h i c t o} \mathbb {Z} _ {2} ^ {\prime}\right);
+D _ {3} / \{e, \rho , \rho^ {2} \} \cong \mathbb {Z} _ {2} \quad \leqft(^ {\prime} D _ {3} \text {o v e r} \{e, \rho , \rho^ {2} \} \text {i s i s o m o r p h i c t o} \mathbb {Z} _ {2} ^ {\prime}\right);
 $$
 
 $$
@@ -2897,15 +2897,15 @@ $$
 $$
 
 $$
-r _ {1} H = \left\{r _ {1} e, r _ {1} \rho^ {2} \right\} = \left\{r _ {1}, r _ {2} \right\};
+r _ {1} H = \leqft\{r _ {1} e, r _ {1} \rho^ {2} \right\} = \leqft\{r _ {1}, r _ {2} \right\};
 $$
 
 $$
-r _ {2} H = \left\{r _ {2} e, r _ {2} \rho^ {2} \right\} = \left\{r _ {2}, r _ {1} \right\};
+r _ {2} H = \leqft\{r _ {2} e, r _ {2} \rho^ {2} \right\} = \leqft\{r _ {2}, r _ {1} \right\};
 $$
 
 $$
-r _ {3} H = \left\{r _ {3} e, r _ {3} \rho^ {2} \right\} = \left\{r _ {3}, r _ {4} \right\};
+r _ {3} H = \leqft\{r _ {3} e, r _ {3} \rho^ {2} \right\} = \leqft\{r _ {3}, r _ {4} \right\};
 $$
 
 $$
@@ -2927,7 +2927,7 @@ The next listed coset is  $\{r_1, r_2\}$ , which can go in a third block. Comple
 After that, it gets interesting. Completing more cells shows that commutativity continues to matter, but no longer at the level of single elements. For instance, it is not true that  $r_1 \rho = \rho r_1$  (check). But it is true that
 
 $$
-r _ {1} \left\{\rho , \rho^ {3} \right\} = \left\{r _ {3}, r _ {4} \right\} = \left\{\rho , \rho^ {3} \right\} r _ {1} \quad \text {a n d} \quad r _ {2} \left\{\rho , \rho^ {3} \right\} = \left\{r _ {3}, r _ {4} \right\} = \left\{\rho , \rho^ {3} \right\} r _ {2}.
+r _ {1} \leqft\{\rho , \rho^ {3} \right\} = \leqft\{r _ {3}, r _ {4} \right\} = \leqft\{\rho , \rho^ {3} \right\} r _ {1} \quad \text {a n d} \quad r _ {2} \leqft\{\rho , \rho^ {3} \right\} = \leqft\{r _ {3}, r _ {4} \right\} = \leqft\{\rho , \rho^ {3} \right\} r _ {2}.
 $$
 
 So, although the table for individual elements is not symmetrical across the main diagonal, it nevertheless splits into intact coset blocks. All four of  $r_1\{\rho, \rho^3\}$ ,  $\{\rho, \rho^3\} r_1$ ,  $r_2\{\rho, \rho^3\}$  and  $\{\rho, \rho^3\} r_2$  give the same coset,  $\{r_3, r_4\}$ .
@@ -2971,7 +2971,7 @@ r _ {1} H = \{r _ {1} e, r _ {1} r _ {1} \} = \{r _ {1}, e \};
 $$
 
 $$
-r _ {2} H = \left\{r _ {2} e, r _ {2} r _ {1} \right\} = \left\{r _ {2}, \rho^ {2} \right\};
+r _ {2} H = \leqft\{r _ {2} e, r _ {2} r _ {1} \right\} = \leqft\{r _ {2}, \rho^ {2} \right\};
 $$
 
 $$
@@ -3063,23 +3063,23 @@ H \rho = \{e \rho , r _ {1} \rho \} = \{\rho , r _ {4} \};
 $$
 
 $$
-H \rho^ {2} = \left\{e \rho^ {2}, r _ {1} \rho^ {2} \right\} = \left\{\rho^ {2}, r _ {2} \right\};
+H \rho^ {2} = \leqft\{e \rho^ {2}, r _ {1} \rho^ {2} \right\} = \leqft\{\rho^ {2}, r _ {2} \right\};
 $$
 
 $$
-H \rho^ {3} = \left\{e \rho^ {3}, r _ {1} \rho^ {3} \right\} = \left\{\rho^ {3}, r _ {3} \right\};
+H \rho^ {3} = \leqft\{e \rho^ {3}, r _ {1} \rho^ {3} \right\} = \leqft\{\rho^ {3}, r _ {3} \right\};
 $$
 
 $$
-H r _ {1} = \left\{e r _ {1}, r _ {1} r _ {1} \right\} = \left\{r _ {1}, e \right\};
+H r _ {1} = \leqft\{e r _ {1}, r _ {1} r _ {1} \right\} = \leqft\{r _ {1}, e \right\};
 $$
 
 $$
-H r _ {2} = \left\{e r _ {2}, r _ {1} r _ {2} \right\} = \left\{r _ {2}, \rho^ {2} \right\};
+H r _ {2} = \leqft\{e r _ {2}, r _ {1} r _ {2} \right\} = \leqft\{r _ {2}, \rho^ {2} \right\};
 $$
 
 $$
-H r _ {3} = \left\{e r _ {3}, r _ {1} r _ {3} \right\} = \left\{r _ {3}, \rho^ {3} \right\};
+H r _ {3} = \leqft\{e r _ {3}, r _ {1} r _ {3} \right\} = \leqft\{r _ {3}, \rho^ {3} \right\};
 $$
 
 $$
@@ -3558,7 +3558,7 @@ $\phi(e_{G_1}) \in G_2$  must have an inverse  $(\phi(e_{G_1}))^{-1} \in G_2$ .
 So  $\phi (e_{G_1}) = \phi (e_{G_1})\phi (e_{G_1})$
 
 $$
-\begin{array}{l} \Rightarrow \left(\phi \left(e _ {G _ {1}}\right)\right) ^ {- 1} \phi \left(e _ {G _ {1}}\right) = \left(\phi \left(e _ {G _ {1}}\right)\right) ^ {- 1} \phi \left(e _ {G _ {1}}\right) \phi \left(e _ {G _ {1}}\right) \\ \Rightarrow \quad e _ {G _ {2}} = e _ {G _ {2}} \phi \left(e _ {G _ {1}}\right) \\ \Rightarrow \quad e _ {G _ {2}} = \phi \left(e _ {G _ {1}}\right) \text {a s r e q u i r e d}. \\ \end{array}
+\begin{array}{l} \Rightarrow \leqft(\phi \leqft(e _ {G _ {1}}\right)\right) ^ {- 1} \phi \leqft(e _ {G _ {1}}\right) = \leqft(\phi \leqft(e _ {G _ {1}}\right)\right) ^ {- 1} \phi \leqft(e _ {G _ {1}}\right) \phi \leqft(e _ {G _ {1}}\right) \\ \Rightarrow \quad e _ {G _ {2}} = e _ {G _ {2}} \phi \leqft(e _ {G _ {1}}\right) \\ \Rightarrow \quad e _ {G _ {2}} = \phi \leqft(e _ {G _ {1}}\right) \text {a s r e q u i r e d}. \\ \end{array}
 $$
 
 Would you write this proof differently? Would you, for instance, give the identities single-letter names? That would be less cumbersome, but would make it harder to track what was an element of what. Perhaps a good compromise would be to use  $e_1$  and  $e_2$  for the identities of  $G_1$  and  $G_2$ . In the final line, would you reorder to write  $\phi(e_{G_1}) = e_{G_2}$  instead of the other way around? Would you tag that onto the end, or reorder further up to make it come out that way? There are no right answers to these style questions, though your lecturer might have preferences. I would like you to be aware that mathematicians make choices in writing lecture notes and textbooks, and to think about advantages and disadvantages of different styles so that you can understand those choices. I would also like you to think about your own communication, and to be willing to rewrite something if you decide it would be better in alternative notation.
@@ -3788,7 +3788,7 @@ What happens if  $\phi(1) = \frac{1}{10}$ ? Does every homomorphism  $\phi : (\m
 Next, how do these ideas play out in finite groups? For instance, what homomorphisms exist from  $\mathbb{Z}_6$  to  $\mathbb{Z}_{12}$ , or to  $\mathbb{Z}_5$ , or to itself? From  $\mathbb{Z}_6$  to  $\mathbb{Z}_{12}$ , there is a monomorphism with  $\phi(1) = 2$ . What other homomorphisms exist? From  $\mathbb{Z}_6$  to  $\mathbb{Z}_5$  there are no nontrivial homomorphisms. Does that surprise you? Perhaps not, because 6 and 5 are coprime, so their structures do not 'go well together'. To understand formally, observe that the generator  $1 \in \mathbb{Z}_6$  must map to something in  $\mathbb{Z}_5$ , and that most possibilities lead to contradictions. For instance, setting  $\phi(1) = 1 \in \mathbb{Z}_5$  gives the following—what goes wrong?
 
 $$
-\begin{array}{l} \phi (1) = 1 \\ \Rightarrow \phi (2) = \phi (1 + _ {6} 1) = \phi (1) + _ {5} \phi (1) = 1 + _ {5} 1 = 2 \\ \Rightarrow \phi (3) = \phi (2 + _ {6} 1) = \phi (2) + _ {5} \phi (1) = 2 + _ {5} 1 = 3 \\ \Rightarrow \phi (4) = \phi \left(3 + _ {6} 1\right) = \phi (3) + _ {5} \phi (1) = 3 + _ {5} 1 = 4 \\ \Rightarrow \phi (5) = \phi (4 + _ {6} 1) = \phi (4) + _ {5} \phi (1) = 4 + _ {5} 1 = 0 \\ \Rightarrow \phi (0) = \phi \left(5 + _ {6} 1\right) = \phi (5) + _ {5} \phi (1) = 0 + _ {5} 1 = 1 \\ \Rightarrow \phi (1) = \phi (0 + _ {6} 1) = \phi (0) + _ {5} \phi (1) = 1 + _ {5} 1 = 2 \\ \end{array}
+\begin{array}{l} \phi (1) = 1 \\ \Rightarrow \phi (2) = \phi (1 + _ {6} 1) = \phi (1) + _ {5} \phi (1) = 1 + _ {5} 1 = 2 \\ \Rightarrow \phi (3) = \phi (2 + _ {6} 1) = \phi (2) + _ {5} \phi (1) = 2 + _ {5} 1 = 3 \\ \Rightarrow \phi (4) = \phi \leqft(3 + _ {6} 1\right) = \phi (3) + _ {5} \phi (1) = 3 + _ {5} 1 = 4 \\ \Rightarrow \phi (5) = \phi (4 + _ {6} 1) = \phi (4) + _ {5} \phi (1) = 4 + _ {5} 1 = 0 \\ \Rightarrow \phi (0) = \phi \leqft(5 + _ {6} 1\right) = \phi (5) + _ {5} \phi (1) = 0 + _ {5} 1 = 1 \\ \Rightarrow \phi (1) = \phi (0 + _ {6} 1) = \phi (0) + _ {5} \phi (1) = 1 + _ {5} 1 = 2 \\ \end{array}
 $$
 
 The calculations yield two distinct values for  $\phi(1)$ , so  $\phi$  is not a function, never mind a homomorphism. Similar contradictions arise for most elements of  $\mathbb{Z}_5$  (check), but one option works: setting  $\phi(1) = 0$  yields
@@ -3870,7 +3870,7 @@ Suppose that  $\exists a_{1},a_{2}\in G_{1}$  such that  $\phi (a_1) = \phi (a_2
 Then
 
 $$
-\begin{array}{l} \phi (a _ {1}) (\phi (a _ {2})) ^ {- 1} = \phi (a _ {2}) (\phi (a _ {2})) ^ {- 1} \\ \Rightarrow \phi (a _ {1}) (\phi (a _ {2})) ^ {- 1} = e _ {G _ {2}} \\ \Rightarrow \quad \phi (a _ {1}) \phi (a _ {2} ^ {- 1}) = e _ {G _ {2}} \\ \Rightarrow \quad \phi \left(a _ {1} a _ {2} ^ {- 1}\right) = e _ {G _ {2}} \\ \Rightarrow \quad a _ {1} a _ {2} ^ {- 1} = e _ {G _ {1}} \text {b e c a u s e} \ker \phi = \left\{e _ {G _ {1}} \right\} \\ \Rightarrow \quad a _ {1} = a _ {2}. \\ \end{array}
+\begin{array}{l} \phi (a _ {1}) (\phi (a _ {2})) ^ {- 1} = \phi (a _ {2}) (\phi (a _ {2})) ^ {- 1} \\ \Rightarrow \phi (a _ {1}) (\phi (a _ {2})) ^ {- 1} = e _ {G _ {2}} \\ \Rightarrow \quad \phi (a _ {1}) \phi (a _ {2} ^ {- 1}) = e _ {G _ {2}} \\ \Rightarrow \quad \phi \leqft(a _ {1} a _ {2} ^ {- 1}\right) = e _ {G _ {2}} \\ \Rightarrow \quad a _ {1} a _ {2} ^ {- 1} = e _ {G _ {1}} \text {b e c a u s e} \ker \phi = \leqft\{e _ {G _ {1}} \right\} \\ \Rightarrow \quad a _ {1} = a _ {2}. \\ \end{array}
 $$
 
 Thus  $\phi$  is injective.
@@ -3896,13 +3896,13 @@ The operation on  $K$  is associative because it is inherited from  $G_{1}$ .
 The identity  $e_{G_1} \in K$  because  $\phi$  is a homomorphism so
 
 $$
-\phi \left(e _ {G _ {1}}\right) = e _ {G _ {2}}.
+\phi \leqft(e _ {G _ {1}}\right) = e _ {G _ {2}}.
 $$
 
 If  $k \in K$  then  $k^{-1} \in K$  because  $\phi$  is a homomorphism so
 
 $$
-\phi (k ^ {- 1}) = (\phi (k)) ^ {- 1} = \left(e _ {G _ {2}}\right) ^ {- 1} = e _ {G _ {2}}.
+\phi (k ^ {- 1}) = (\phi (k)) ^ {- 1} = \leqft(e _ {G _ {2}}\right) ^ {- 1} = e _ {G _ {2}}.
 $$
 
 Thus  $K$  is a subgroup of  $G_{1}$
@@ -4076,19 +4076,19 @@ For other axioms, we run into trouble. As noted in Section 5.3, tables show the 
 A course might explore this in more or less detail, establishing or just stating that  $\mathbb{Z}, \mathbb{Q}, \mathbb{R}$  and  $\mathbb{C}$  are rings, and that if  $n$  is a natural number then so is  $\mathbb{Z}_n$ . Have we encountered other rings? Some groups studied in this book do not have a second binary operation: symmetries, for instance, are combined only using composition. But some do: square matrices have both addition and multiplication. For  $2 \times 2$  matrices, these are defined as below.
 
 $$
-\begin{array}{l} \left( \begin{array}{c c} a & b \\ c & d \end{array} \right) + \left( \begin{array}{c c} w & x \\ y & z \end{array} \right) = \left( \begin{array}{c c} a + w & b + x \\ c + y & d + z \end{array} \right); \\ \left( \begin{array}{c c} a & b \\ c & d \end{array} \right) \left( \begin{array}{c c} w & x \\ y & z \end{array} \right) = \left( \begin{array}{c c} a w + b y & a x + b z \\ c w + d y & c x + d z \end{array} \right). \\ \end{array}
+\begin{array}{l} \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) + \leqft( \begin{array}{c c} w & x \\ y & z \end{array} \right) = \leqft( \begin{array}{c c} a + w & b + x \\ c + y & d + z \end{array} \right); \\ \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) \leqft( \begin{array}{c c} w & x \\ y & z \end{array} \right) = \leqft( \begin{array}{c c} a w + b y & a x + b z \\ c w + d y & c x + d z \end{array} \right). \\ \end{array}
 $$
 
 The set of all  $2 \times 2$  matrices with entries in  $\mathbb{R}$  can be denoted by  $M_{2 \times 2}(\mathbb{R})$ . Is  $M_{2 \times 2}(\mathbb{R})$  a ring? It is. Some axioms are easy to check: closure is straightforward because adding or multiplying two  $2 \times 2$  matrices gives another (note that  $aw + by$  is a single number). The additive identity is the matrix of zeros, and
 
 $$
-\left( \begin{array}{c c} a & b \\ c & d \end{array} \right) \text {h a s a d d i t i v e i n v e r s e} \left( \begin{array}{c c} - a & - b \\ - c & - d \end{array} \right).
+\leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) \text {h a s a d d i t i v e i n v e r s e} \leqft( \begin{array}{c c} - a & - b \\ - c & - d \end{array} \right).
 $$
 
 This holds because 0 is the additive identity in  $\mathbb{R}$  and  $a, b, c, d \in \mathbb{R}$  have additive inverses  $-a, -b, -c, -d \in \mathbb{R}$ : the ring properties in  $M_{2 \times 2}(\mathbb{R})$  rely on ring properties in  $\mathbb{R}$ . Similarly, commutativity of addition in  $M_{2 \times 2}(\mathbb{R})$  relies on commutativity of addition in  $\mathbb{R}$ . At which step below is that property used? And what would you write to demonstrate that associativity and distributivity hold in  $M_{2 \times 2}(\mathbb{R})$ ? Maybe work through the calculations.
 
 $$
-\begin{array}{l} \left( \begin{array}{c c} a & b \\ c & d \end{array} \right) + \left( \begin{array}{c c} w & x \\ y & z \end{array} \right) = \left( \begin{array}{c c} a + w & b + x \\ c + y & d + z \end{array} \right) \\ = \left( \begin{array}{c c} w + a & x + b \\ y + c & z + d \end{array} \right) \\ = \left( \begin{array}{c c} w & x \\ y & z \end{array} \right) + \left( \begin{array}{c c} a & b \\ c & d \end{array} \right). \\ \end{array}
+\begin{array}{l} \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) + \leqft( \begin{array}{c c} w & x \\ y & z \end{array} \right) = \leqft( \begin{array}{c c} a + w & b + x \\ c + y & d + z \end{array} \right) \\ = \leqft( \begin{array}{c c} w + a & x + b \\ y + c & z + d \end{array} \right) \\ = \leqft( \begin{array}{c c} w & x \\ y & z \end{array} \right) + \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right). \\ \end{array}
 $$
 
 A course might prove that because  $\mathbb{R}$  satisfies each ring axiom, so does  $M_{2\times 2}(\mathbb{R})$ . Or it might do something more general, proving that if  $R$  is a ring then so is  $M_{2\times 2}(R)$ , and thereby establishing that  $M_{2\times 2}(\mathbb{Z})$ ,  $M_{2\times 2}(\mathbb{Q})$ ,  $M_{2\times 2}(\mathbb{R})$  and  $M_{2\times 2}(\mathbb{C})$  are all rings. Indeed, if  $R$  is a ring and  $n$
@@ -4118,7 +4118,7 @@ If 5 were not a polynomial, then the result would not be in  $\mathbb{Z}[x]$ , s
 Now, I just asked you to consider a sum of polynomials without explaining how to add in  $\mathbb{Z}[x]$ . That is because you already know. Addition works like this.
 
 $$
-\begin{array}{l} \left(a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {1} x + a _ {0}\right) + \left(b _ {n} x ^ {n} + b _ {n - 1} x ^ {n - 1} + \dots + b _ {1} x + b _ {0}\right) \\ = (a _ {n} + b _ {n}) x ^ {n} + (a _ {n - 1} + b _ {n - 1}) x ^ {n - 1} + \dots + (a _ {1} + b _ {1}) x + (a _ {0} + b _ {0}). \\ \end{array}
+\begin{array}{l} \leqft(a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {1} x + a _ {0}\right) + \leqft(b _ {n} x ^ {n} + b _ {n - 1} x ^ {n - 1} + \dots + b _ {1} x + b _ {0}\right) \\ = (a _ {n} + b _ {n}) x ^ {n} + (a _ {n - 1} + b _ {n - 1}) x ^ {n - 1} + \dots + (a _ {1} + b _ {1}) x + (a _ {0} + b _ {0}). \\ \end{array}
 $$
 
 The general formulation can make it seem that the two polynomials must have the same degree. But some coefficients could be zero--you could find this sum:
@@ -4136,7 +4136,7 @@ $$
 I find it easier to reorder so that low powers appear first. Below, what would be some of the intermediate terms and how do they relate to the sigma notation?
 
 $$
-\begin{array}{l} \left(a _ {0} + a _ {1} x + a _ {2} x ^ {2} + \dots + a _ {n} x ^ {n}\right) \left(b _ {0} + b _ {1} x + b _ {2} x ^ {2} + \dots + b _ {n} x ^ {n}\right) \\ = \left(a _ {0} b _ {0}\right) + \left(a _ {0} b _ {1} + a _ {1} b _ {0}\right) x + \left(a _ {0} b _ {2} + a _ {1} b _ {1} + a _ {2} b _ {0}\right) x ^ {2} + \dots + a _ {n} b _ {n} x ^ {2 n}. \\ \end{array}
+\begin{array}{l} \leqft(a _ {0} + a _ {1} x + a _ {2} x ^ {2} + \dots + a _ {n} x ^ {n}\right) \leqft(b _ {0} + b _ {1} x + b _ {2} x ^ {2} + \dots + b _ {n} x ^ {n}\right) \\ = \leqft(a _ {0} b _ {0}\right) + \leqft(a _ {0} b _ {1} + a _ {1} b _ {0}\right) x + \leqft(a _ {0} b _ {2} + a _ {1} b _ {1} + a _ {2} b _ {0}\right) x ^ {2} + \dots + a _ {n} b _ {n} x ^ {2 n}. \\ \end{array}
 $$
 
 <table><tr><td>×</td><td>a0</td><td>a1x</td><td>a2x2</td><td>···</td><td>anxn</td></tr><tr><td>b0</td><td>a0b0</td><td>a1b0x</td><td>a2b0x2</td><td>···</td><td></td></tr><tr><td>b1x</td><td>a0b1x</td><td>a1b1x2</td><td></td><td></td><td></td></tr><tr><td>b2x2</td><td>a0b2x2</td><td></td><td></td><td></td><td></td></tr><tr><td>·</td><td></td><td></td><td></td><td></td><td>·</td></tr><tr><td>bnxn</td><td></td><td></td><td></td><td>···</td><td>anbnx2n</td></tr></table>
@@ -4392,7 +4392,7 @@ Note that the multiplicative identity is always a unit:  $1 \cdot 1 = 1$  must h
 In  $M_{2\times 2}(\mathbb{R})$  under multiplication, every matrix with nonzero determinant is a unit because it is invertible: provided  $ad\neq bc$
 
 $$
-\left( \begin{array}{c c} a & b \\ c & d \end{array} \right) \text {h a s m u l t i p l i c a t i v e i n v e r s e} \frac {1}{a d - b c} \left( \begin{array}{c c} d & - b \\ - c & a \end{array} \right).
+\leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) \text {h a s m u l t i p l i c a t i v e i n v e r s e} \frac {1}{a d - b c} \leqft( \begin{array}{c c} d & - b \\ - c & a \end{array} \right).
 $$
 
 These units form the general linear group of degree 2, denoted  $GL(2,\mathbb{R})$ . Note that  $GL(2,\mathbb{R})$  is a group because multiplying together two invertible matrices gives another, associativity is inherited, the multiplicative identity matrix is invertible, and every invertible matrix by definition has a multiplicative inverse. Moreover, this generalizes: for any ring, the units form a multiplicative group. The units of  $\mathbb{Z}_{12}$  are shown in the table below; they form a group isomorphic to the Klein four-group  $V$  (see Section 6.8).
@@ -4414,7 +4414,7 @@ Inverses  $\forall u\in U,\exists u^{-1}\in U$  such that  $uu^{-1} = u^{-1}u = 
 In my view, two of the subclaims are easier to think about and two are harder. Do you agree? Associativity is easier because it is inherited from  $R$ . And the identity is easier because 1 is a unit. Closure is harder. Why must the product of two units be another? If  $u_{1}$  has inverse  $u_{1}^{-1}$  and  $u_{2}$  has inverse  $u_{2}^{-1}$ , what can we say about  $u_{1}u_{2}$ ? Be careful—the inverse of  $u_{1}u_{2}$  is not (necessarily)  $u_{1}^{-1}u_{2}^{-1}$  because, in a ring, multiplication is not necessarily commutative. But the inverse of  $u_{1}u_{2}$  is  $u_{2}^{-1}u_{1}^{-1}$ , because
 
 $$
-\begin{array}{l} (u _ {1} u _ {2}) \left(u _ {2} ^ {- 1} u _ {1} ^ {- 1}\right) = u _ {1} \left(u _ {2} u _ {2} ^ {- 1}\right) u _ {1} ^ {- 1} \text {b y} \\ = u _ {1} u _ {1} ^ {- 1} \quad \text {b e c a u s e} u _ {2} u _ {2} ^ {- 1} = 1 \\ = 1 \quad \text {b e c a u s e} u _ {1} u _ {1} ^ {- 1} = 1. \\ \end{array}
+\begin{array}{l} (u _ {1} u _ {2}) \leqft(u _ {2} ^ {- 1} u _ {1} ^ {- 1}\right) = u _ {1} \leqft(u _ {2} u _ {2} ^ {- 1}\right) u _ {1} ^ {- 1} \text {b y} \\ = u _ {1} u _ {1} ^ {- 1} \quad \text {b e c a u s e} u _ {2} u _ {2} ^ {- 1} = 1 \\ = 1 \quad \text {b e c a u s e} u _ {1} u _ {1} ^ {- 1} = 1. \\ \end{array}
 $$
 
 Inverses are also harder. If  $u$  is a unit, why must its inverse  $u^{-1}$  be a unit? This might seem obvious because, in the equation  $uu^{-1} = u^{-1}u = 1$ , we could 'swap around'  $u$  and  $u^{-1}$  without changing anything important. Unfortunately, we do not really write about 'swapping things around' in proofs, so what can we say that is more formal? You might see an argument like the one below, which probably adds nothing to your sense of what is going on, but which handles everything politely.
@@ -4452,31 +4452,31 @@ In contrast, 2 is not a unit, so  $2x = 2y$  does not imply that  $x = y$ . For 
 Now, in the ring  $\mathbb{Z}_6$ , every nonzero element is either a unit or a zero divisor (check). But how are units and zero divisors linked in general? Can ring elements be neither units nor zero divisors? Or both units and zero divisors? What do you think? It might help to explore other structures with zero divisors, such as matrix rings. In  $M_{2\times 2}(\mathbb{R})$ , many elements are zero divisors and many are units. For instance,
 
 $$
-\left( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \text {a n d} \left( \begin{array}{c c} 0 & 2 \\ 0 & 0 \end{array} \right)
+\leqft( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \text {a n d} \leqft( \begin{array}{c c} 0 & 2 \\ 0 & 0 \end{array} \right)
 $$
 
 are both zero divisors because
 
 $$
-\left( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \left( \begin{array}{c c} 0 & 2 \\ 0 & 0 \end{array} \right) = \left( \begin{array}{c c} 0 + 0 & 0 + 0 \\ 0 + 0 & 0 + 0 \end{array} \right) = \left( \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right).
+\leqft( \begin{array}{c c} 0 & 1 \\ 0 & 0 \end{array} \right) \leqft( \begin{array}{c c} 0 & 2 \\ 0 & 0 \end{array} \right) = \leqft( \begin{array}{c c} 0 + 0 & 0 + 0 \\ 0 + 0 & 0 + 0 \end{array} \right) = \leqft( \begin{array}{c c} 0 & 0 \\ 0 & 0 \end{array} \right).
 $$
 
 And
 
 $$
-\left( \begin{array}{c c} 1 & 0 \\ 0 & 2 \end{array} \right) \text {a n d} \left( \begin{array}{c c} 1 & 0 \\ 0 & \frac {1}{2} \end{array} \right)
+\leqft( \begin{array}{c c} 1 & 0 \\ 0 & 2 \end{array} \right) \text {a n d} \leqft( \begin{array}{c c} 1 & 0 \\ 0 & \frac {1}{2} \end{array} \right)
 $$
 
 are both units because
 
 $$
-\left( \begin{array}{c c} 1 & 0 \\ 0 & 2 \end{array} \right) \left( \begin{array}{c c} 1 & 0 \\ 0 & \frac {1}{2} \end{array} \right) = \left( \begin{array}{c c} 1 + 0 & 0 + 0 \\ 0 + 0 & 0 + 1 \end{array} \right) = \left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right)
+\leqft( \begin{array}{c c} 1 & 0 \\ 0 & 2 \end{array} \right) \leqft( \begin{array}{c c} 1 & 0 \\ 0 & \frac {1}{2} \end{array} \right) = \leqft( \begin{array}{c c} 1 + 0 & 0 + 0 \\ 0 + 0 & 0 + 1 \end{array} \right) = \leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right)
 $$
 
 and
 
 $$
-\left( \begin{array}{c c} 1 & 0 \\ 0 & \frac {1}{2} \end{array} \right) \left( \begin{array}{c c} 1 & 0 \\ 0 & 2 \end{array} \right) = \left( \begin{array}{c c} 1 + 0 & 0 + 0 \\ 0 + 0 & 0 + 1 \end{array} \right) = \left( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right).
+\leqft( \begin{array}{c c} 1 & 0 \\ 0 & \frac {1}{2} \end{array} \right) \leqft( \begin{array}{c c} 1 & 0 \\ 0 & 2 \end{array} \right) = \leqft( \begin{array}{c c} 1 + 0 & 0 + 0 \\ 0 + 0 & 0 + 1 \end{array} \right) = \leqft( \begin{array}{c c} 1 & 0 \\ 0 & 1 \end{array} \right).
 $$
 
 But is every element of  $M_{2 \times 2}(\mathbb{R})$  either a zero divisor or a unit? Or is there 'room' in this bigger ring for elements that are neither or both? I recommend exploring.
@@ -4586,7 +4586,7 @@ Theorem: Suppose that  $R$  is a ring and that  $S \subseteq R$ . Then  $S$  is 
 Can you work out why this is enough to guarantee that  $S$  satisfies all five axioms on the checklist (and therefore all of the ring axioms)? When you have considered that, try applying the theorem to establish that one subring of  $M_{2\times 2}(\mathbb{R})$  comprises all matrices of the form
 
 $$
-\left( \begin{array}{c c} x & 0 \\ 0 & y \end{array} \right) \text {w h e r e} x, y \in \mathbb {R}.
+\leqft( \begin{array}{c c} x & 0 \\ 0 & y \end{array} \right) \text {w h e r e} x, y \in \mathbb {R}.
 $$
 
 Now, if you have studied group theory or read Chapter 7 then you will know that some groups have 'special' subgroups known as normal subgroups, the cosets of which form a quotient group. (If you have not read Chapter 7, I recommend doing so now—the following text will be easier if you know how I introduced these constructs.) Is there an analogy for rings? Do some rings have 'special' subrings, the 'cosets' of which form a 'quotient ring'? I think the answer is not obvious. On the one hand, every ring is an additive group—indeed, an abelian (commutative) one. On the other hand, every ring also has multiplication. Might that mean that there are no quotient rings? Or that only some rings have quotient rings?
@@ -4726,15 +4726,15 @@ Definition: Let  $(R, +, \cdot)$  be a ring and  $(S, +)$  be a subgroup of  $(R
 To nail the reasoning, consider the fully general case. Suppose that  $R$  is a ring and that  $(S, +)$  is a subgroup of  $(R, +)$ , so that cosets of  $S$  in  $R$  take the form  $r_1 + S$ ,  $r_2 + S$  and so on; these cosets might be finite or infinite, depending on the ring.
 
 $$
-r _ {1} + S = \left\{r _ {1}, r _ {1} + s _ {1}, r _ {1} + s _ {2}, \dots \right\};
+r _ {1} + S = \leqft\{r _ {1}, r _ {1} + s _ {1}, r _ {1} + s _ {2}, \dots \right\};
 $$
 
 $$
-r _ {2} + S = \left\{r _ {2}, r _ {2} + s _ {1}, r _ {2} + s _ {2}, \dots \right\};
+r _ {2} + S = \leqft\{r _ {2}, r _ {2} + s _ {1}, r _ {2} + s _ {2}, \dots \right\};
 $$
 
 $$
-r _ {3} + S = \left\{r _ {3}, r _ {3} + s _ {1}, r _ {3} + s _ {2}, \dots \right\};
+r _ {3} + S = \leqft\{r _ {3}, r _ {3} + s _ {1}, r _ {3} + s _ {2}, \dots \right\};
 $$
 
 ：
@@ -4794,13 +4794,13 @@ As I say, such proofs are not that interesting. But working through the list of 
 To relate the theory to examples, we can consider more ideals and non-ideals. In some rings, every additive subgroup is an ideal. For instance, in  $\mathbb{Z}_6$  all additive subgroups are ideals—why? Does this generalize to  $\mathbb{Z}_n$ ? Other rings have more 'room' for substructures that are not ideals. As above,  $\mathbb{Z}$  is an additive subgroup—in fact a subring—of  $\mathbb{Q}$ , but not an ideal. Similarly,  $\mathbb{Q}$  is a subring but not an ideal of  $\mathbb{R}$ : for instance,  $1 \in \mathbb{Q}$  and  $\sqrt{2} \in \mathbb{R}$  but  $1\sqrt{2} \notin \mathbb{Q}$ . The set
 
 $$
-S = \left\{\left( \begin{array}{c c} x & 0 \\ 0 & y \end{array} \right) | x, y \in \mathbb {R} \right\}
+S = \leqft\{\leqft( \begin{array}{c c} x & 0 \\ 0 & y \end{array} \right) | x, y \in \mathbb {R} \right\}
 $$
 
 is a subring but not an ideal of  $M_{2 \times 2}(\mathbb{R})$ , because multiplying one of its elements by a general element of  $M_{2 \times 2}(\mathbb{R})$  gives
 
 $$
-\left( \begin{array}{c c} x & 0 \\ 0 & y \end{array} \right) \left( \begin{array}{c c} a & b \\ c & d \end{array} \right) = \left( \begin{array}{c c} x a & x b \\ y c & y d \end{array} \right),
+\leqft( \begin{array}{c c} x & 0 \\ 0 & y \end{array} \right) \leqft( \begin{array}{c c} a & b \\ c & d \end{array} \right) = \leqft( \begin{array}{c c} x a & x b \\ y c & y d \end{array} \right),
 $$
 
 which need not be in  $S$ . Can you find an ideal of  $M_{2\times 2}(\mathbb{R})$ , or convince yourself that this is impossible? How about ideals in polynomial rings? For the non-ideals, where does the above argument about distributivity break down?

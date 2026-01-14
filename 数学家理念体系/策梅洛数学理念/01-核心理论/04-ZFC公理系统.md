@@ -1,4 +1,4 @@
-# ZFC公理系统
+﻿# ZFC公理系统
 
 **创建日期**: 2025年12月15日
 **研究领域**: 策梅洛数学理念 - 核心理论 - ZFC公理系统
@@ -163,7 +163,7 @@
 
 **公理表述**：
 
-$$\forall x \forall y [\forall z (z \in x \leftrightarrow z \in y) \rightarrow x = y]$$
+$$\forall x \forall y [\forall z (z \in x \leqftrightarrow z \in y) \rightarrow x = y]$$
 
 **含义**：
 
@@ -202,7 +202,7 @@ $$\exists x \forall y (y \notin x)$$
 
 **公理表述**：
 
-$$\forall x \forall y \exists z \forall w (w \in z \leftrightarrow w = x \lor w = y)$$
+$$\forall x \forall y \exists z \forall w (w \in z \leqftrightarrow w = x \lor w = y)$$
 
 **含义**：
 
@@ -223,7 +223,7 @@ $$\forall x \forall y \exists z \forall w (w \in z \leftrightarrow w = x \lor w 
 
 **公理表述**：
 
-$$\forall x \exists y \forall z [z \in y \leftrightarrow \exists w (w \in x \land z \in w)]$$
+$$\forall x \exists y \forall z [z \in y \leqftrightarrow \exists w (w \in x \land z \in w)]$$
 
 **含义**：
 
@@ -244,7 +244,7 @@ $$\forall x \exists y \forall z [z \in y \leftrightarrow \exists w (w \in x \lan
 
 **公理表述**：
 
-$$\forall x \exists y \forall z [z \in y \leftrightarrow z \subseteq x]$$
+$$\forall x \exists y \forall z [z \in y \leqftrightarrow z \subseteq x]$$
 
 **含义**：
 
@@ -268,7 +268,7 @@ $$\forall x \exists y \forall z [z \in y \leftrightarrow z \subseteq x]$$
 
 对任意公式 $\varphi(z, w_1, \ldots, w_n)$（不含 $y$ 自由出现），
 
-$$\forall w_1 \ldots \forall w_n \forall x \exists y \forall z [z \in y \leftrightarrow z \in x \land \varphi(z, w_1, \ldots, w_n)]$$
+$$\forall w_1 \ldots \forall w_n \forall x \exists y \forall z [z \in y \leqftrightarrow z \in x \land \varphi(z, w_1, \ldots, w_n)]$$
 
 **含义**：
 
@@ -288,7 +288,7 @@ $$\forall w_1 \ldots \forall w_n \forall x \exists y \forall z [z \in y \leftrig
 
 对任意公式 $\varphi(x, y, w_1, \ldots, w_n)$（不含 $v$ 自由出现），
 
-$$\forall w_1 \ldots \forall w_n \forall x [\forall y \forall z (\varphi(x, y, w_1, \ldots, w_n) \land \varphi(x, z, w_1, \ldots, w_n) \rightarrow y = z) \rightarrow \exists v \forall y (y \in v \leftrightarrow \exists x (x \in u \land \varphi(x, y, w_1, \ldots, w_n)))]$$
+$$\forall w_1 \ldots \forall w_n \forall x [\forall y \forall z (\varphi(x, y, w_1, \ldots, w_n) \land \varphi(x, z, w_1, \ldots, w_n) \rightarrow y = z) \rightarrow \exists v \forall y (y \in v \leqftrightarrow \exists x (x \in u \land \varphi(x, y, w_1, \ldots, w_n)))]$$
 
 **含义**：
 
@@ -306,7 +306,7 @@ $$\forall w_1 \ldots \forall w_n \forall x [\forall y \forall z (\varphi(x, y, w
 
 **公理表述**：
 
-$$\forall x [x \neq \emptyset \rightarrow \exists y (y \in x \land y \cap x = \emptyset)]$$
+$$\forall x [x \neqq \emptyset \rightarrow \exists y (y \in x \land y \cap x = \emptyset)]$$
 
 **含义**：
 

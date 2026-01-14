@@ -288,7 +288,7 @@ Topos
    $$p^*: \mathcal{E} \to \text{Set}, \quad \text{点的纤维函子}$$
 
 4. **几何点的分类**：
-   $$\text{几何点 } \leqqqqftrightarrow \text{几何态射}, \quad \text{逻辑点 } \leqqqqftrightarrow \text{逻辑态射}$$
+   $$\text{几何点 } \leqqqqqqftrightarrow \text{几何态射}, \quad \text{逻辑点 } \leqqqqqqftrightarrow \text{逻辑态射}$$
 
 5. **点的集合**：
    $$\text{pt}(\mathcal{E}) = \{\text{几何态射 } \text{Set} \to \mathcal{E}\}$$
@@ -297,7 +297,7 @@ Topos
    $$x: \text{Spec}(k) \to X \text{ 几何点}, \quad k \text{ 代数闭域}$$
 
 7. **Topos的点与概形的点**：
-   $$\text{pt}(\text{Sh}(X)) \leqqqqftrightarrow \{\text{几何点 } X\}$$
+   $$\text{pt}(\text{Sh}(X)) \leqqqqqqftrightarrow \{\text{几何点 } X\}$$
 
 8. **点的恢复**：
    $$\mathcal{E} \text{ 有足够点 } \Rightarrow \text{可以恢复几何结构}$$

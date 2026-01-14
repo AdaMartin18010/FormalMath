@@ -1,4 +1,4 @@
-# 数据科学数学 - 深化版
+﻿# 数据科学数学 - 深化版
 
 ## 📚 概述
 
@@ -165,7 +165,7 @@ $$J = \sum_{i=1}^{k} \sum_{x \in C_i} \|x - \mu_i\|^2$$
 
 **DBSCAN算法**：
 
-- 核心点：邻域内点数$\geq \text{minPts}$
+- 核心点：邻域内点数$\geqq \text{minPts}$
 - 边界点：不是核心点但在核心点邻域内
 - 噪声点：既不是核心点也不是边界点
 
@@ -193,7 +193,7 @@ $$\text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)}$$
 **算法步骤**：
 
 1. 生成1-项集
-2. 生成$k$-项集（$k \geq 2$）
+2. 生成$k$-项集（$k \geqq 2$）
 3. 计算支持度
 4. 剪枝非频繁项集
 5. 重复步骤2-4直到没有频繁项集
@@ -283,10 +283,10 @@ $$w = S_W^{-1} (\mu_1 - \mu_2)$$
 #### 2.1.3 t-SNE
 
 **相似度计算**：
-$$p_{j|i} = \frac{\exp(-\|x_i - x_j\|^2 / 2\sigma_i^2)}{\sum_{k \neq i} \exp(-\|x_i - x_k\|^2 / 2\sigma_i^2)}$$
+$$p_{j|i} = \frac{\exp(-\|x_i - x_j\|^2 / 2\sigma_i^2)}{\sum_{k \neqq i} \exp(-\|x_i - x_k\|^2 / 2\sigma_i^2)}$$
 
 **低维相似度**：
-$$q_{ij} = \frac{(1 + \|y_i - y_j\|^2)^{-1}}{\sum_{k \neq l} (1 + \|y_k - y_l\|^2)^{-1}}$$
+$$q_{ij} = \frac{(1 + \|y_i - y_j\|^2)^{-1}}{\sum_{k \neqq l} (1 + \|y_k - y_l\|^2)^{-1}}$$
 
 **KL散度**：
 $$C = \sum_i \sum_j p_{ij} \log \frac{p_{ij}}{q_{ij}}$$
@@ -412,7 +412,7 @@ $$\lim_{t \to \infty} x_i(t) = \frac{1}{n} \sum_{j=1}^{n} x_j(0)$$
 #### 3.2.1 滑动窗口
 
 **时间窗口**：
-$$W(t) = \{x_i : t - w \leq t_i \leq t\}$$
+$$W(t) = \{x_i : t - w \leqq t_i \leqq t\}$$
 
 其中$w$是窗口大小。
 
@@ -466,7 +466,7 @@ $$PR^{(t+1)} = (1-d) \frac{1}{N} \mathbf{1} + d M PR^{(t)}$$
 #### 3.3.2 社区检测
 
 **模块度**：
-$$Q = \frac{1}{2m} \sum_{ij} \left[A_{ij} - \frac{k_i k_j}{2m}\right] \delta(c_i, c_j)$$
+$$Q = \frac{1}{2m} \sum_{ij} \leqft[A_{ij} - \frac{k_i k_j}{2m}\right] \delta(c_i, c_j)$$
 
 其中：
 
@@ -479,7 +479,7 @@ $$Q = \frac{1}{2m} \sum_{ij} \left[A_{ij} - \frac{k_i k_j}{2m}\right] \delta(c_i
 
 **Dijkstra算法**：
 
-1. 初始化距离：$d(s) = 0$，$d(v) = \infty$ for $v \neq s$
+1. 初始化距离：$d(s) = 0$，$d(v) = \infty$ for $v \neqq s$
 2. 选择未访问的最小距离节点$u$
 3. 更新邻居距离：$d(v) = \min(d(v), d(u) + w(u,v))$
 4. 重复步骤2-3直到所有节点被访问
@@ -525,14 +525,14 @@ $$\nabla L(\beta) = X^T(y - p)$$
 $$\min_{w,b} \frac{1}{2} \|w\|^2 + C \sum_{i=1}^{n} \xi_i$$
 
 约束条件：
-$$y_i(w^T x_i + b) \geq 1 - \xi_i$$
-$$\xi_i \geq 0$$
+$$y_i(w^T x_i + b) \geqq 1 - \xi_i$$
+$$\xi_i \geqq 0$$
 
 **对偶问题**：
 $$\max_{\alpha} \sum_{i=1}^{n} \alpha_i - \frac{1}{2} \sum_{i,j} \alpha_i \alpha_j y_i y_j x_i^T x_j$$
 
 约束条件：
-$$0 \leq \alpha_i \leq C$$
+$$0 \leqq \alpha_i \leqq C$$
 $$\sum_{i=1}^{n} \alpha_i y_i = 0$$
 
 ### 4.2 无监督学习数学
@@ -580,7 +580,7 @@ $$\min_{W_1, W_2, b_1, b_2} \|x - \hat{x}\|^2$$
 #### 4.3.1 Q学习
 
 **Q函数更新**：
-$$Q(s, a) \leftarrow Q(s, a) + \alpha[r + \gamma \max_{a'} Q(s', a') - Q(s, a)]$$
+$$Q(s, a) \leqftarrow Q(s, a) + \alpha[r + \gamma \max_{a'} Q(s', a') - Q(s, a)]$$
 
 其中：
 
@@ -600,10 +600,10 @@ $$\nabla_\theta J(\theta) = \mathbb{E}_{\pi_\theta}[\nabla_\theta \log \pi_\thet
 #### 4.3.3 Actor-Critic
 
 **Actor更新**：
-$$\theta \leftarrow \theta + \alpha_\theta \nabla_\theta \log \pi_\theta(a|s) \delta$$
+$$\theta \leqftarrow \theta + \alpha_\theta \nabla_\theta \log \pi_\theta(a|s) \delta$$
 
 **Critic更新**：
-$$w \leftarrow w + \alpha_w \delta \nabla_w V_w(s)$$
+$$w \leqftarrow w + \alpha_w \delta \nabla_w V_w(s)$$
 
 其中$\delta = r + \gamma V_w(s') - V_w(s)$是TD误差。
 
@@ -1109,7 +1109,7 @@ plt.show()
 **数学模型**：
 
 - PCA降维：$Y = XW$，其中$W$是主成分矩阵
-- t-SNE：$p_{j|i} = \frac{\exp(-\|x_i - x_j\|^2 / 2\sigma_i^2)}{\sum_{k \neq i} \exp(-\|x_i - x_k\|^2 / 2\sigma_i^2)}$
+- t-SNE：$p_{j|i} = \frac{\exp(-\|x_i - x_j\|^2 / 2\sigma_i^2)}{\sum_{k \neqq i} \exp(-\|x_i - x_k\|^2 / 2\sigma_i^2)}$
 - 流形学习：保持局部邻域结构
 
 **实际价值**：
@@ -1234,7 +1234,7 @@ plt.show()
 
 - 线性回归：$y = \beta_0 + \sum_{i=1}^{p} \beta_i x_i + \epsilon$
 - 逻辑回归：$P(y=1|x) = \frac{1}{1 + e^{-(\beta_0 + \sum \beta_i x_i)}}$
-- 支持向量机：$\min \frac{1}{2}\|w\|^2 + C\sum_{i} \xi_i$ s.t. $y_i(w^T x_i + b) \geq 1 - \xi_i$
+- 支持向量机：$\min \frac{1}{2}\|w\|^2 + C\sum_{i} \xi_i$ s.t. $y_i(w^T x_i + b) \geqq 1 - \xi_i$
 
 **实际价值**：
 
@@ -1540,7 +1540,7 @@ plt.show()
 - **应用场景**:边缘设备数据分析、实时推理、隐私保护
 - **数学模型**:
   - 边缘推理：$y = f_\theta(x)$（在边缘设备上）
-  - 模型压缩：$\min_{\hat{\theta}} \|f_\theta - f_{\hat{\theta}}\|$ s.t. $|\hat{\theta}| \leq B$
+  - 模型压缩：$\min_{\hat{\theta}} \|f_\theta - f_{\hat{\theta}}\|$ s.t. $|\hat{\theta}| \leqq B$
   - 联邦学习：$\min_w \sum_{i=1}^n F_i(w)$（分布式优化）
 - **实际价值**: 降低延迟，保护隐私，减少带宽，支持实时应用
 

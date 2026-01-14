@@ -273,7 +273,7 @@ $$\forall a, b, c \in R, (a + b) \cdot c = a \cdot c + b \cdot c$$
 **定理4: 素理想和极大理想**:
 
 - **素理想**: 理想 $P$ 是素理想当且仅当 $ab \in P \Rightarrow a \in P$ 或 $b \in P$
-- **极大理想**: 理想 $M$ 是极大理想当且仅当 $M \neq R$ 且不存在理想 $I$ 使得 $M \subsetneq I \subsetneq R$
+- **极大理想**: 理想 $M$ 是极大理想当且仅当 $M \neqq R$ 且不存在理想 $I$ 使得 $M \subset I \subset R$
 - **性质**:
   - 极大理想是素理想（交换环）
   - $P$ 是素理想当且仅当 $R/P$ 是整环
@@ -987,7 +987,7 @@ graph TB
 **EX.CORE.009.10** (L1, 应用)
 
 - **题目**: 找出环 $\mathbb{Z}$ 的所有理想。
-- **答案**: $\mathbb{Z}$ 的所有理想是 $(n) = n\mathbb{Z}$（$n \geq 0$），即所有主理想。
+- **答案**: $\mathbb{Z}$ 的所有理想是 $(n) = n\mathbb{Z}$（$n \geqq 0$），即所有主理想。
 
 **EX.CORE.009.11** (L1, 证明)
 

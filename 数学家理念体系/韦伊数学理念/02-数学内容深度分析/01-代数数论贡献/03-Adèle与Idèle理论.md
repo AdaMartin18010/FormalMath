@@ -1,4 +1,4 @@
-# Adèle与Idèle理论：韦伊统一方法的数学实现
+﻿# Adèle与Idèle理论：韦伊统一方法的数学实现
 
 > **文档状态**: ✅ 内容填充中
 > **创建日期**: 2025年12月11日
@@ -325,7 +325,7 @@ Langlands纲领将类域论推广到非Abel情况：
 - **Galois表示 ↔ 自守表示**：
   - Galois表示：$\rho: \text{Gal}(\bar{K}/K) \to \text{GL}_n(\mathbb{C})$
   - 自守表示：$\pi$ 是 $\text{GL}_n(\mathbb{A}_K)$ 的自守表示
-  - Langlands对应：$\rho \leftrightarrow \pi$，保持L函数
+  - Langlands对应：$\rho \leqftrightarrow \pi$，保持L函数
 - **Idèle群的作用**：
   - 自守表示是 $\text{GL}_n(\mathbb{A}_K)$ 的表示
   - Idèle群在自守表示的研究中起关键作用
@@ -339,7 +339,7 @@ Langlands纲领将类域论推广到非Abel情况：
 
 对于数域或函数域 $K$，**Langlands对应**建立：
 
-$$\text{Gal}(\bar{K}/K) \text{ 的 } n \text{ 维表示} \leftrightarrow \text{GL}_n(\mathbb{A}_K) \text{ 的自守表示}$$
+$$\text{Gal}(\bar{K}/K) \text{ 的 } n \text{ 维表示} \leqftrightarrow \text{GL}_n(\mathbb{A}_K) \text{ 的自守表示}$$
 
 其中：
 
@@ -352,7 +352,7 @@ $$\text{Gal}(\bar{K}/K) \text{ 的 } n \text{ 维表示} \leftrightarrow \text{G
 - **类域论**：$n=1$ 的情况，对应Abel扩张
   - Artin互反律：$\mathbb{I}_K / K^* \to \text{Gal}(K^{\text{ab}}/K)$
   - 这是Langlands纲领的 $n=1$ 情况
-- **一般Langlands纲领**：$n \geq 2$ 的情况，对应非Abel扩张
+- **一般Langlands纲领**：$n \geqq 2$ 的情况，对应非Abel扩张
   - 这是韦伊类比的现代推广
   - Langlands纲领是韦伊统一思想的现代发展
 

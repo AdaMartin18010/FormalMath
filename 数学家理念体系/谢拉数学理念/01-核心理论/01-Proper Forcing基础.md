@@ -1,4 +1,4 @@
-# Proper Forcing基础
+﻿# Proper Forcing基础
 
 **创建日期**: 2025年12月15日
 **研究领域**: 谢拉数学理念 - 核心理论 - Proper Forcing基础
@@ -183,7 +183,7 @@
 
 **Proper Forcing的定义**：
 
-一个forcing notion $P$ 是proper的，如果对任意足够大的正则基数 $\theta$，对任意可数初等子模型 $M \prec H_\theta$ 使得 $P \in M$，对任意 $p \in P \cap M$，存在 $q \leq p$ 使得 $q$ 是 $(M, P)$-泛型的。
+一个forcing notion $P$ 是proper的，如果对任意足够大的正则基数 $\theta$，对任意可数初等子模型 $M \prec H_\theta$ 使得 $P \in M$，对任意 $p \in P \cap M$，存在 $q \leqq p$ 使得 $q$ 是 $(M, P)$-泛型的。
 
 **$(M, P)$-泛型**：
 
@@ -197,7 +197,7 @@ $q$ 是 $(M, P)$-泛型的，如果对任意 $D \in M$，如果 $D \subseteq P$ 
 
 - 对任意可数初等子模型 $M$
 - 对任意 $p \in P \cap M$
-- 存在 $(M, P)$-泛型的 $q \leq p$
+- 存在 $(M, P)$-泛型的 $q \leqq p$
 
 **条件的作用**：
 

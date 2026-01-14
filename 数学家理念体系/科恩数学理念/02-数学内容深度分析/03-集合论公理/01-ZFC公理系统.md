@@ -1,4 +1,4 @@
-# ZFC公理系统
+﻿# ZFC公理系统
 
 **创建日期**: 2025年12月15日
 **研究领域**: 科恩数学理念 - 数学内容深度分析 - 集合论公理 - ZFC公理系统
@@ -94,7 +94,7 @@
 
 **外延公理**：
 
-$$\forall x \forall y (\forall z (z \in x \leftrightarrow z \in y) \to x = y)$$
+$$\forall x \forall y (\forall z (z \in x \leqftrightarrow z \in y) \to x = y)$$
 
 **意义**：
 
@@ -120,7 +120,7 @@ $$\forall x \forall y \exists z (x \in z \land y \in z)$$
 
 **并集公理**：
 
-$$\forall x \exists y \forall z (z \in y \leftrightarrow \exists w (w \in x \land z \in w))$$
+$$\forall x \exists y \forall z (z \in y \leqftrightarrow \exists w (w \in x \land z \in w))$$
 
 **意义**：
 
@@ -135,7 +135,7 @@ $$\forall x \exists y \forall z (z \in y \leftrightarrow \exists w (w \in x \lan
 
 **幂集公理**：
 
-$$\forall x \exists y \forall z (z \in y \leftrightarrow z \subseteq x)$$
+$$\forall x \exists y \forall z (z \in y \leqftrightarrow z \subseteq x)$$
 
 **意义**：
 
@@ -165,7 +165,7 @@ $$\exists x (\emptyset \in x \land \forall y (y \in x \to y \cup \{y\} \in x))$$
 
 对任意公式 $\varphi(x, y, \bar{z})$：
 
-$$\forall \bar{z} \forall x \exists! y \varphi(x, y, \bar{z}) \to \forall u \exists v \forall y (y \in v \leftrightarrow \exists x (x \in u \land \varphi(x, y, \bar{z})))$$
+$$\forall \bar{z} \forall x \exists! y \varphi(x, y, \bar{z}) \to \forall u \exists v \forall y (y \in v \leqftrightarrow \exists x (x \in u \land \varphi(x, y, \bar{z})))$$
 
 **意义**：
 
@@ -178,7 +178,7 @@ $$\forall \bar{z} \forall x \exists! y \varphi(x, y, \bar{z}) \to \forall u \exi
 
 **正则公理**：
 
-$$\forall x (x \neq \emptyset \to \exists y (y \in x \land y \cap x = \emptyset))$$
+$$\forall x (x \neqq \emptyset \to \exists y (y \in x \land y \cap x = \emptyset))$$
 
 **意义**：
 
@@ -207,7 +207,7 @@ $$\forall x (\emptyset \notin x \to \exists f: x \to \bigcup x \forall y \in x (
 **科恩的结果（1964）**：
 
 - **一致性方向**：ZFC中AC为真，因此 $\text{ZF} + \text{AC}$ 一致
-- **独立性方向**：使用对称模型技术，$N \models \text{ZF} + \neg \text{AC}$，因此 $\text{ZF} + \neg \text{AC}$ 一致
+- **独立性方向**：使用对称模型技术，$N \models \text{ZF} + \neqg \text{AC}$，因此 $\text{ZF} + \neqg \text{AC}$ 一致
 - **结论**：AC独立于ZF
 
 **意义**：
@@ -235,11 +235,11 @@ $$\forall x (\emptyset \notin x \to \exists f: x \to \bigcup x \forall y \in x (
 
 - **CH独立于ZFC**（哥德尔+科恩）：
   - 一致性：$L \models \text{ZFC} + \text{CH}$
-  - 独立性：$M[G] \models \text{ZFC} + \neg \text{CH}$
+  - 独立性：$M[G] \models \text{ZFC} + \neqg \text{CH}$
 
 - **AC独立于ZF**（科恩）：
   - 一致性：ZFC中AC为真
-  - 独立性：$N \models \text{ZF} + \neg \text{AC}$
+  - 独立性：$N \models \text{ZF} + \neqg \text{AC}$
 
 - **其他独立性**：
   - Suslin假设独立

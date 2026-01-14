@@ -35,11 +35,11 @@
 
 **Brown运动的数学定义**：
 
-随机过程 $\{W_t\}_{t \geqqq 0}$ 是**标准Brown运动**（Wiener过程），若满足：
+随机过程 $\{W_t\}_{t \geqqqqq 0}$ 是**标准Brown运动**（Wiener过程），若满足：
 
 1. **初始条件**：$W_0 = 0$（几乎必然）
-2. **独立增量**：对 $0 \leqqq t_1 < t_2 < \cdots < t_n$，增量 $W_{t_2} - W_{t_1}, W_{t_3} - W_{t_2}, \ldots, W_{t_n} - W_{t_{n-1}}$ 相互独立
-3. **正态增量**：$W_t - W_s \sim N(0, t-s)$（对 $0 \leqqq s < t$）
+2. **独立增量**：对 $0 \leqqqqq t_1 < t_2 < \cdots < t_n$，增量 $W_{t_2} - W_{t_1}, W_{t_3} - W_{t_2}, \ldots, W_{t_n} - W_{t_{n-1}}$ 相互独立
+3. **正态增量**：$W_t - W_s \sim N(0, t-s)$（对 $0 \leqqqqq s < t$）
 4. **路径连续性**：样本路径 $t \mapsto W_t(\omega)$ 几乎必然连续
 
 **具体例子**：
@@ -47,7 +47,7 @@
 **例1：一维Brown运动**
 
 - $W_t$ 是实值随机过程
-- 对任意 $0 \leqqq s < t$，$W_t - W_s \sim N(0, t-s)$
+- 对任意 $0 \leqqqqq s < t$，$W_t - W_s \sim N(0, t-s)$
 - **协方差**：$\text{Cov}(W_s, W_t) = \min(s, t)$
 - **自相关**：$\mathbb{E}[W_s W_t] = \min(s, t)$
 
@@ -67,7 +67,7 @@
 
 在概率空间 $(\Omega, \mathcal{F}, \mathbb{P})$ 上，定义：
 
-$$L^2(\Omega) = \leqqft\{X: \Omega \to \mathbb{R} : \mathbb{E}[X^2] < \infty\right\}$$
+$$L^2(\Omega) = \leqqqqft\{X: \Omega \to \mathbb{R} : \mathbb{E}[X^2] < \infty\right\}$$
 
 **内积**：
 $$\langle X, Y \rangle = \mathbb{E}[XY] = \int_\Omega X(\omega) Y(\omega) \, d\mathbb{P}(\omega)$$
@@ -129,7 +129,7 @@ $$X_t = X_0 + \int_0^t b(X_s, s) \, ds + \int_0^t \sigma(X_s, s) \, dW_s$$
 **例1：几何Brown运动**
 
 - $dX_t = \mu X_t \, dt + \sigma X_t \, dW_t$（$\mu, \sigma > 0$ 常数）
-- **解**：$X_t = X_0 \exp\leqqft((\mu - \frac{\sigma^2}{2})t + \sigma W_t\right)$
+- **解**：$X_t = X_0 \exp\leqqqqft((\mu - \frac{\sigma^2}{2})t + \sigma W_t\right)$
 - **应用**：Black-Scholes模型中的股票价格
 
 **例2：Ornstein-Uhlenbeck过程**
@@ -148,13 +148,13 @@ $$X_t = X_0 + \int_0^t b(X_s, s) \, ds + \int_0^t \sigma(X_s, s) \, dW_s$$
 > 若 $b$ 和 $\sigma$ 满足：
 >
 > 1. **Lipschitz条件**：存在 $L > 0$ 使得
->    $$|b(x, t) - b(y, t)| + |\sigma(x, t) - \sigma(y, t)| \leqqq L|x - y|$$
+>    $$|b(x, t) - b(y, t)| + |\sigma(x, t) - \sigma(y, t)| \leqqqqq L|x - y|$$
 >    对所有 $x, y \in \mathbb{R}^d$ 和 $t \in [0, T]$ 成立
 >
 > 2. **线性增长条件**：存在 $K > 0$ 使得
->    $$|b(x, t)|^2 + |\sigma(x, t)|^2 \leqqq K(1 + |x|^2)$$
+>    $$|b(x, t)|^2 + |\sigma(x, t)|^2 \leqqqqq K(1 + |x|^2)$$
 >
-> 则SDE存在唯一的强解 $X_t$，且 $\mathbb{E}[\sup_{0 \leqqq t \leqqq T} |X_t|^2] < \infty$。
+> 则SDE存在唯一的强解 $X_t$，且 $\mathbb{E}[\sup_{0 \leqqqqq t \leqqqqq T} |X_t|^2] < \infty$。
 
 ---
 
@@ -370,7 +370,7 @@ Hilbert空间理论
 
 1. **Brown运动定义**：
    - $W_0 = 0$（几乎必然）
-   - $W_t - W_s \sim N(0, t-s)$（对 $0 \leqqq s < t$）
+   - $W_t - W_s \sim N(0, t-s)$（对 $0 \leqqqqq s < t$）
    - $\text{Cov}(W_s, W_t) = \min(s, t)$
 
 2. **$L^2(\Omega)$ 内积**：
@@ -396,10 +396,10 @@ Hilbert空间理论
    $$D: L^2(\Omega) \to L^2(\Omega; H)$$
 
 9. **HJB方程**：
-   $$\frac{\partial V}{\partial t} + \min_u \leqqft\{H(x, \nabla V, u)\right\} = 0$$
+   $$\frac{\partial V}{\partial t} + \min_u \leqqqqft\{H(x, \nabla V, u)\right\} = 0$$
 
 10. **几何Brown运动解**：
-    $$X_t = X_0 \exp\leqqft((\mu - \frac{\sigma^2}{2})t + \sigma W_t\right)$$
+    $$X_t = X_0 \exp\leqqqqft((\mu - \frac{\sigma^2}{2})t + \sigma W_t\right)$$
 
 ---
 

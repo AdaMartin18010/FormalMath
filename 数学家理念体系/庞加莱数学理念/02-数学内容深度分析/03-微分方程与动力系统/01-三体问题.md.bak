@@ -111,7 +111,7 @@
 
 设三个天体的位置为 $\mathbf{r}_1, \mathbf{r}_2, \mathbf{r}_3$，质量为 $m_1, m_2, m_3$，则运动方程为：
 
-$$m_i \ddot{\mathbf{r}}_i = -G \sum_{j \neqqqq i} \frac{m_i m_j}{|\mathbf{r}_i - \mathbf{r}_j|^3} (\mathbf{r}_i - \mathbf{r}_j), \quad i = 1, 2, 3$$
+$$m_i \ddot{\mathbf{r}}_i = -G \sum_{j \neqqqqq i} \frac{m_i m_j}{|\mathbf{r}_i - \mathbf{r}_j|^3} (\mathbf{r}_i - \mathbf{r}_j), \quad i = 1, 2, 3$$
 
 其中 $G$ 是万有引力常数。
 
@@ -541,7 +541,7 @@ graph TD
 ### 核心公式
 
 1. **三体问题方程**：
-   $$\ddot{\mathbf{r}}_i = -G \sum_{j \neqqqq i} \frac{m_j}{|\mathbf{r}_i - \mathbf{r}_j|^3}(\mathbf{r}_i - \mathbf{r}_j)$$
+   $$\ddot{\mathbf{r}}_i = -G \sum_{j \neqqqqq i} \frac{m_j}{|\mathbf{r}_i - \mathbf{r}_j|^3}(\mathbf{r}_i - \mathbf{r}_j)$$
 
 2. **能量守恒**：
    $$E = \sum_{i=1}^3 \frac{1}{2}m_i|\dot{\mathbf{r}}_i|^2 - G \sum_{i<j} \frac{m_i m_j}{|\mathbf{r}_i - \mathbf{r}_j|} = \text{常数}$$
@@ -553,7 +553,7 @@ graph TD
    $$P: \Sigma \to \Sigma, \quad P(x) = \phi_T(x) \text{（首次返回）}$$
 
 5. **同宿轨道**：
-   $$\lim_{t \to \pm\infty} \phi_t(x) = p, \quad x \neqqqq p$$
+   $$\lim_{t \to \pm\infty} \phi_t(x) = p, \quad x \neqqqqq p$$
 
 6. **Lyapunov指数**：
    $$\lambda = \lim_{t \to \infty} \frac{1}{t} \log \|\delta x(t)\|$$
@@ -568,7 +568,7 @@ graph TD
    $$H = \frac{1}{2}\sum_{i=1}^2 \frac{p_i^2}{m_i} - V(q_1, q_2)$$
 
 10. **混沌条件**：
-    $$W^s(p) \cap W^u(p) \neqqqq \{p\} \Rightarrow \text{混沌行为}$$
+    $$W^s(p) \cap W^u(p) \neqqqqq \{p\} \Rightarrow \text{混沌行为}$$
 
 ---
 

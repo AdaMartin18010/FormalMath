@@ -1,4 +1,4 @@
-# 范畴论方法论：统一的数学语言
+﻿# 范畴论方法论：统一的数学语言
 
 
 ## 📋 目录
@@ -687,7 +687,7 @@ X ≅ Y  ⟺  h_X ≅ h_Y
    $$\text{Nat}(h_X, F) \cong F(X), \quad h_X(Y) = \text{Hom}(Y, X)$$
 
 5. **伴随**：
-   $$F \dashv G \Leftrightarrow \text{Hom}_D(F(X), Y) \cong \text{Hom}_C(X, G(Y))$$
+   $$F \dashv G \leqqftrightarrow \text{Hom}_D(F(X), Y) \cong \text{Hom}_C(X, G(Y))$$
 
 6. **极限**：
    $$\lim F = \text{满足普遍性质的对象}$$
@@ -696,13 +696,13 @@ X ≅ Y  ⟺  h_X ≅ h_Y
    $$\text{colim } F = \text{对偶的极限}$$
 
 8. **概形函子观点**：
-   $$X(T) = \text{Hom}(T, X), \quad X \cong Y \Leftrightarrow h_X \cong h_Y$$
+   $$X(T) = \text{Hom}(T, X), \quad X \cong Y \leqqftrightarrow h_X \cong h_Y$$
 
 9. **∞-范畴**：
    $$\text{对象} + \text{1-态射} + \text{2-态射} + \cdots$$
 
 10. **同伦类型论对应**：
-    $$\text{类型} \leftrightarrow \text{范畴对象}, \quad \text{等价} \leftrightarrow \text{同构}$$
+    $$\text{类型} \leqqftrightarrow \text{范畴对象}, \quad \text{等价} \leqqftrightarrow \text{同构}$$
 
 ---
 

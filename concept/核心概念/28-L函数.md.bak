@@ -122,7 +122,7 @@ $$L(s) = \sum_{n=1}^\infty \frac{a_n}{n^s}$$
 
 **Euler乘积**: 若 $a_n$ 是乘性的，则：
 
-$$L(s) = \prod_p \left(1 + \frac{a_p}{p^s} + \frac{a_{p^2}}{p^{2s}} + \cdots\right)$$
+$$L(s) = \prod_p \leqft(1 + \frac{a_p}{p^s} + \frac{a_{p^2}}{p^{2s}} + \cdots\right)$$
 
 **记号**:
 
@@ -823,7 +823,7 @@ graph TB
 **EX.CORE.028.04** (L1, 计算)
 
 - **题目**: 计算Dirichlet L函数：$L(s, \chi)$ 在 $s = 1$ 处的值（$\chi$ 是非主特征）。
-- **答案**: $L(1, \chi) \neq 0$（Dirichlet定理的证明需要这个）。
+- **答案**: $L(1, \chi) \neqq 0$（Dirichlet定理的证明需要这个）。
 
 **EX.CORE.028.05** (L1, 证明)
 

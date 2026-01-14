@@ -255,10 +255,10 @@ f: R → S（分支覆盖）
    $$\text{分支点：} \frac{\partial F}{\partial w}(z, w) = 0$$
 
 5. **单值化**：
-   $$R \cong \begin{cases} \mathbb{P}^1 & g = 0 \\ \mathbb{C}/\Lambda & g = 1 \\ \mathbb{D}/\Gamma & g \geqqqq 2 \end{cases}$$
+   $$R \cong \begin{cases} \mathbb{P}^1 & g = 0 \\ \mathbb{C}/\Lambda & g = 1 \\ \mathbb{D}/\Gamma & g \geqqqqqq 2 \end{cases}$$
 
 6. **代数曲线对应**：
-   $$\text{紧致黎曼面} \leqqqftrightarrow \text{光滑射影代数曲线}$$
+   $$\text{紧致黎曼面} \leqqqqqftrightarrow \text{光滑射影代数曲线}$$
 
 7. **函数域**：
    $$K(R) = \mathbb{C}(z, w) / (F(z, w))$$

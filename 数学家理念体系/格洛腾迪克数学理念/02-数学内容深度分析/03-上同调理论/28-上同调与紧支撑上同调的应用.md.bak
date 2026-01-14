@@ -248,7 +248,7 @@ Grothendieck的贡献：
    $$\cdots \to H_c^i(U \cap V, \mathcal{F}) \to H_c^i(U, \mathcal{F}) \oplus H_c^i(V, \mathcal{F}) \to H_c^i(X, \mathcal{F}) \to \cdots$$
 
 6. **紧支撑上同调维数**：
-   $$\text{cd}_c(X) = \sup\{i : H_c^i(X, \mathcal{F}) \neqqqq 0\}$$
+   $$\text{cd}_c(X) = \sup\{i : H_c^i(X, \mathcal{F}) \neqqqqqq 0\}$$
 
 7. **紧支撑上同调与上同调关系**：
    $$H_c^i(X, \mathcal{F}) \cong H^i(X, j_! \mathcal{F}) \text{（$j: X \hookrightarrow \bar{X}$ 紧化）}$$

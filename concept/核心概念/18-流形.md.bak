@@ -115,7 +115,7 @@
 **拓扑流形**: $n$ 维拓扑流形 $M$ 是满足以下条件的拓扑空间：
 
 1. **局部欧几里得**: $\forall p \in M, \exists$ 开邻域 $U$ 和同胚 $\phi: U \to \mathbb{R}^n$
-2. **Hausdorff**: $\forall p, q \in M, p \neq q, \exists$ 不相交开邻域 $U_p, U_q$
+2. **Hausdorff**: $\forall p, q \in M, p \neqq q, \exists$ 不相交开邻域 $U_p, U_q$
 3. **第二可数**: 存在可数拓扑基
 
 **光滑流形**: 若坐标图之间的转换映射是光滑的，则称为光滑流形。
@@ -148,7 +148,7 @@
 **20世纪中期**: 流形理论的现代发展
 
 - **Milnor (1956)**: 发现7维怪球，流形上存在多种微分结构
-- **Smale (1961)**: 证明高维Poincaré猜想（$n \geq 5$）
+- **Smale (1961)**: 证明高维Poincaré猜想（$n \geqq 5$）
 - **Thurston (1982)**: 提出几何化猜想
 
 **21世纪**: 流形理论的突破

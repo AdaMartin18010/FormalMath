@@ -203,7 +203,7 @@ S^ℕ(n) = n+1
 **赋值** $v$：变元集 $\to |M|$（将每个变元映射到论域中的元素）
 
 **$x$-变体**：$v[x \mapsto a]$ 是赋值 $v$ 的 $x$-变体，定义为：
-$$v[x \mapsto a](y) = \begin{cases} a & \text{若 } y = x \\ v(y) & \text{若 } y \neqq x \end{cases}$$
+$$v[x \mapsto a](y) = \begin{cases} a & \text{若 } y = x \\ v(y) & \text{若 } y \neqqqq x \end{cases}$$
 
 **项的值**：
 
@@ -219,7 +219,7 @@ $$v[x \mapsto a](y) = \begin{cases} a & \text{若 } y = x \\ v(y) & \text{若 } 
 
 - **原子公式（关系）**：$M \models R(t_1, \ldots, t_n)[v] \iff (t_1^M[v], \ldots, t_n^M[v]) \in R^M$
 - **原子公式（等词）**：$M \models t_1 = t_2[v] \iff t_1^M[v] = t_2^M[v]$
-- **否定**：$M \models \neqg \varphi[v] \iff M \not\models \varphi[v]$
+- **否定**：$M \models \neqqqg \varphi[v] \iff M \not\models \varphi[v]$
 - **合取**：$M \models \varphi \land \psi[v] \iff M \models \varphi[v] \text{ 且 } M \models \psi[v]$
 - **析取**：$M \models \varphi \lor \psi[v] \iff M \models \varphi[v] \text{ 或 } M \models \psi[v]$
 - **蕴含**：$M \models \varphi \to \psi[v] \iff M \not\models \varphi[v] \text{ 或 } M \models \psi[v]$
@@ -571,7 +571,7 @@ PA无法在一阶逻辑中完全刻画ℕ
    $$\text{若 } T \text{ 有无限模型，则 } T \text{ 有可数模型}$$
 
 9. **Löwenheim-Skolem上行**：
-   $$\text{若 } T \text{ 有无限模型，则对任意基数 } \kappa \geqq |L|, T \text{ 有基数 } \kappa \text{ 的模型}$$
+   $$\text{若 } T \text{ 有无限模型，则对任意基数 } \kappa \geqqqq |L|, T \text{ 有基数 } \kappa \text{ 的模型}$$
 
 10. **分离规则（MP）**：
     $$\frac{\varphi, \quad \varphi \to \psi}{\psi}$$

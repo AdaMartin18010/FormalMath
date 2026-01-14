@@ -1,4 +1,4 @@
-# Woodin基数与CH
+﻿# Woodin基数与CH
 
 **创建日期**: 2025年12月15日
 **研究领域**: 伍丁数学理念 - 数学内容深度分析 - Woodin基数与CH
@@ -123,7 +123,7 @@
 
 - 证明¬CH与ZFC一致
 - 使用Forcing构造模型
-- 因此 $\text{ZFC} + \neg \text{CH}$ 一致
+- 因此 $\text{ZFC} + \neqg \text{CH}$ 一致
 
 **意义**：
 

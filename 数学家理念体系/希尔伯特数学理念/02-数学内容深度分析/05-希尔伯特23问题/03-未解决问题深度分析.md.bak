@@ -47,7 +47,7 @@ $$\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = \prod_{p \text{ 素数}} \frac{1}
 
 **函数方程**：
 
-$$\zeta(s) = 2^s \pi^{s-1} \sin\leqqft(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s)$$
+$$\zeta(s) = 2^s \pi^{s-1} \sin\leqqqqft(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s)$$
 
 其中 $\Gamma(s)$ 是Gamma函数。
 
@@ -116,7 +116,7 @@ $$\text{RH} \iff \pi(x) = \text{Li}(x) + O(\sqrt{x} \log x)$$
 
 其中：
 
-- $\pi(x) = |\{p \leqqq x : p \text{ 是素数}\}|$（素数计数函数）
+- $\pi(x) = |\{p \leqqqqq x : p \text{ 是素数}\}|$（素数计数函数）
 - $\text{Li}(x) = \int_2^x \frac{dt}{\log t}$（对数积分）
 
 **函数论等价形式**：
@@ -125,16 +125,16 @@ $$\text{RH} \iff \pi(x) = \text{Li}(x) + O(\sqrt{x} \log x)$$
 
 $$\text{RH} \iff M(x) = O(x^{1/2 + \varepsilon}) \text{ 对所有 } \varepsilon > 0$$
 
-其中 $M(x) = \sum_{n \leqqq x} \mu(n)$ 是Mertens函数，$\mu(n)$ 是Möbius函数。
+其中 $M(x) = \sum_{n \leqqqqq x} \mu(n)$ 是Mertens函数，$\mu(n)$ 是Möbius函数。
 
 **其他等价形式**：
 
 1. **Chebyshev函数**：
    $$\text{RH} \iff \psi(x) = x + O(\sqrt{x} \log^2 x)$$
-   其中 $\psi(x) = \sum_{p^k \leqqq x} \log p$ 是Chebyshev函数
+   其中 $\psi(x) = \sum_{p^k \leqqqqq x} \log p$ 是Chebyshev函数
 
 2. **除数函数**：
-   $$\text{RH} \iff \sum_{n \leqqq x} d(n) = x \log x + (2\gamma - 1)x + O(\sqrt{x})$$
+   $$\text{RH} \iff \sum_{n \leqqqqq x} d(n) = x \log x + (2\gamma - 1)x + O(\sqrt{x})$$
    其中 $d(n)$ 是除数函数
 
 **具体例子**：
@@ -464,7 +464,7 @@ n≥3：
    - 现代研究热点
 
 **数学公式**：
-- Langlands对应：$$\text{Gal}(\overline{\mathbb{Q}}/\mathbb{Q}) \leqqftrightarrow \text{GL}_n(\mathbb{A}_{\mathbb{Q}})$$
+- Langlands对应：$$\text{Gal}(\overline{\mathbb{Q}}/\mathbb{Q}) \leqqqqftrightarrow \text{GL}_n(\mathbb{A}_{\mathbb{Q}})$$
 - 函数域RH：$$\text{在有限域上已证明}$$
 
 ---
@@ -535,7 +535,7 @@ n≥3：
    $$\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = \prod_{p} \frac{1}{1 - p^{-s}} \quad (\text{Re}(s) > 1)$$
 
 2. **函数方程**：
-   $$\zeta(s) = 2^s \pi^{s-1} \sin\leqqft(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s)$$
+   $$\zeta(s) = 2^s \pi^{s-1} \sin\leqqqqft(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s)$$
 
 3. **黎曼假设**：
    $$\text{所有非平凡零点满足 } \text{Re}(s) = \frac{1}{2}$$
@@ -547,13 +547,13 @@ n≥3：
    $$\text{RH} \iff M(x) = O(x^{1/2 + \varepsilon}) \quad \text{对所有 } \varepsilon > 0$$
 
 6. **二次互反律**：
-   $$\leqqft(\frac{p}{q}\right)\leqqft(\frac{q}{p}\right) = (-1)^{\frac{(p-1)(q-1)}{4}}$$
+   $$\leqqqqft(\frac{p}{q}\right)\leqqqqft(\frac{q}{p}\right) = (-1)^{\frac{(p-1)(q-1)}{4}}$$
 
 7. **Artin互反律**：
    $$\text{Gal}(K/k) \cong C_k / N_{K/k}(C_K)$$
 
 8. **Harnack不等式**：
-   $$\text{分支数} \leqqq \frac{(d-1)(d-2)}{2} + 1$$
+   $$\text{分支数} \leqqqqq \frac{(d-1)(d-2)}{2} + 1$$
 
 9. **Waring问题**：
    $$n = x_1^k + x_2^k + \cdots + x_{g(k)}^k$$

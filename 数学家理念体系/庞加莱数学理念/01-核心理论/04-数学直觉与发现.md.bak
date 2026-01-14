@@ -1,4 +1,4 @@
-# 数学直觉与发现：庞加莱的方法论
+﻿# 数学直觉与发现：庞加莱的方法论
 
 
 ## 📋 目录
@@ -918,7 +918,7 @@ Perelman证明Poincaré猜想的过程也体现了四阶段模型：
    $$\text{连续性} \to \text{分析直觉} \to \text{分析性质}$$
 
 8. **平衡原则**：
-   $$\text{直觉} \leftrightarrow \text{逻辑}, \quad \text{平衡发展}$$
+   $$\text{直觉} \leqftrightarrow \text{逻辑}, \quad \text{平衡发展}$$
 
 9. **发现过程**：
    $$\text{有意识工作} \to \text{潜意识工作} \to \text{突然洞察}$$

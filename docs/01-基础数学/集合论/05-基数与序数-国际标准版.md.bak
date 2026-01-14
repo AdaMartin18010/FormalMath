@@ -1,4 +1,4 @@
-# 基数与序数理论 - 国际标准版 / Cardinal and Ordinal Theory - International Standard Edition
+﻿# 基数与序数理论 - 国际标准版 / Cardinal and Ordinal Theory - International Standard Edition
 
 ## 目录
 
@@ -119,16 +119,16 @@
 **定义 2.3** (基数比较 / Cardinal Comparison)
 对于基数 $\kappa$ 和 $\lambda$：
 
-- $\kappa \leq \lambda$ 如果存在从 $\kappa$ 到 $\lambda$ 的单射
-- $\kappa < \lambda$ 如果 $\kappa \leq \lambda$ 且 $\kappa \neq \lambda$
+- $\kappa \leqq \lambda$ 如果存在从 $\kappa$ 到 $\lambda$ 的单射
+- $\kappa < \lambda$ 如果 $\kappa \leqq \lambda$ 且 $\kappa \neqq \lambda$
 
 **定理 2.2** (康托尔-伯恩斯坦定理 / Cantor-Bernstein Theorem)
-如果 $\kappa \leq \lambda$ 且 $\lambda \leq \kappa$，则 $\kappa = \lambda$。
+如果 $\kappa \leqq \lambda$ 且 $\lambda \leqq \kappa$，则 $\kappa = \lambda$。
 
 **证明思路**:
 
-1. 由 $\kappa \leq \lambda$，存在单射 $f : \kappa \to \lambda$
-2. 由 $\lambda \leq \kappa$，存在单射 $g : \lambda \to \kappa$
+1. 由 $\kappa \leqq \lambda$，存在单射 $f : \kappa \to \lambda$
+2. 由 $\lambda \leqq \kappa$，存在单射 $g : \lambda \to \kappa$
 3. 使用康托尔-伯恩斯坦定理的构造性证明，可以构造双射 $h : \kappa \to \lambda$
 4. 因此 $\kappa = \lambda$
 
@@ -147,20 +147,20 @@
 
 **证明思路**:
 
-1. 首先证明 $\kappa \leq 2^\kappa$：构造单射 $f : \kappa \to 2^\kappa$
-2. 然后证明 $\kappa \neq 2^\kappa$：使用对角线法证明不存在满射
+1. 首先证明 $\kappa \leqq 2^\kappa$：构造单射 $f : \kappa \to 2^\kappa$
+2. 然后证明 $\kappa \neqq 2^\kappa$：使用对角线法证明不存在满射
 3. 结合得到严格不等式
 
 **详细证明**:
 
-- **步骤 1**: 定义 $f : \kappa \to 2^\kappa$ 为 $f(\alpha) = \{\alpha\}$，则 $f$ 是单射，因此 $\kappa \leq 2^\kappa$
+- **步骤 1**: 定义 $f : \kappa \to 2^\kappa$ 为 $f(\alpha) = \{\alpha\}$，则 $f$ 是单射，因此 $\kappa \leqq 2^\kappa$
 - **步骤 2**: 假设存在双射 $g : \kappa \to 2^\kappa$，定义对角线集合：
   $$D = \{\alpha \in \kappa : \alpha \notin g(\alpha)\}$$
 - 由于 $g$ 是满射，存在 $\delta \in \kappa$ 使得 $g(\delta) = D$
 - **矛盾分析**:
   - 如果 $\delta \in D$，则 $\delta \notin g(\delta) = D$，矛盾
   - 如果 $\delta \notin D$，则 $\delta \in g(\delta) = D$，矛盾
-- 因此不存在这样的双射，即 $\kappa \neq 2^\kappa$
+- 因此不存在这样的双射，即 $\kappa \neqq 2^\kappa$
 - **步骤 3**: 结合步骤 1 和步骤 2，得到 $\kappa < 2^\kappa$
 
 ### 2.3 阿列夫数
@@ -195,7 +195,7 @@
 **性质 2**: 对任意序数 $\alpha < \beta$，$\aleph_\alpha < \aleph_\beta$
 
 - 如果 $\beta = \alpha + 1$，则由定义 $\aleph_\alpha < \aleph_{\alpha+1} = \aleph_\beta$
-- 如果 $\beta$ 是极限序数，则 $\aleph_\beta = \sup\{\aleph_\gamma : \gamma < \beta\} \geq \aleph_\alpha$，且由于 $\alpha < \beta$，有 $\aleph_\beta > \aleph_\alpha$
+- 如果 $\beta$ 是极限序数，则 $\aleph_\beta = \sup\{\aleph_\gamma : \gamma < \beta\} \geqq \aleph_\alpha$，且由于 $\alpha < \beta$，有 $\aleph_\beta > \aleph_\alpha$
 
 **性质 3**: 每个无限基数都是某个阿列夫数
 
@@ -343,8 +343,8 @@ $2^{\aleph_0} = \aleph_1$
 **定理 4.3** (共尾性的性质)
 
 1. $cf(\alpha)$ 是正则基数
-2. $cf(\alpha) \leq \alpha$
-3. 如果 $\alpha$ 是极限序数，则 $cf(\alpha) \geq \omega$
+2. $cf(\alpha) \leqq \alpha$
+3. 如果 $\alpha$ 是极限序数，则 $cf(\alpha) \geqq \omega$
 
 **定义 4.3** (奇异基数 / Singular Cardinal)
 基数 $\kappa$ 是奇异的，如果 $cf(\kappa) < \kappa$。

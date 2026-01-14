@@ -1,4 +1,4 @@
-# ZFC公理体系完整形式化 - 第四部分：实数构造
+﻿# ZFC公理体系完整形式化 - 第四部分：实数构造
 
 ## 目录
 
@@ -85,7 +85,7 @@ $$\mathbb{R} = \{(A, B) : A, B \subseteq \mathbb{Q} \text{ 满足戴德金分割
 
 **定义 1.2** (实数)
 实数是戴德金分割的等价类，其中等价关系定义为：
-$$(A, B) \sim (C, D) \leftrightarrow A = C \land B = D$$
+$$(A, B) \sim (C, D) \leqftrightarrow A = C \land B = D$$
 
 **定理 1.2.1** (实数定义的良定义性)
 实数的定义不依赖于分割的选择。
@@ -108,7 +108,7 @@ $$(A, B) \sim (C, D) \leftrightarrow A = C \land B = D$$
 $$\forall \epsilon > 0 \exists N \in \mathbb{N} \forall m, n > N(|a_m - a_n| < \epsilon)$$
 
 **形式化表述**：
-$$\text{Cauchy}(\{a_n\}) \leftrightarrow \forall \epsilon \in \mathbb{Q}^+ \exists N \in \mathbb{N} \forall m, n > N(|a_m - a_n| < \epsilon)$$
+$$\text{Cauchy}(\{a_n\}) \leqftrightarrow \forall \epsilon \in \mathbb{Q}^+ \exists N \in \mathbb{N} \forall m, n > N(|a_m - a_n| < \epsilon)$$
 
 **定理 2.1.1** (柯西序列的性质)
 
@@ -134,7 +134,7 @@ $$\text{Cauchy}(\{a_n\}) \leftrightarrow \forall \epsilon \in \mathbb{Q}^+ \exis
 $$\lim_{n \to \infty} (a_n - b_n) = 0$$
 
 **形式化表述**：
-$$\{a_n\} \sim \{b_n\} \leftrightarrow \forall \epsilon > 0 \exists N \in \mathbb{N} \forall n > N(|a_n - b_n| < \epsilon)$$
+$$\{a_n\} \sim \{b_n\} \leqftrightarrow \forall \epsilon > 0 \exists N \in \mathbb{N} \forall n > N(|a_n - b_n| < \epsilon)$$
 
 **定理 2.2.1** (等价关系的性质)
 $\sim$ 是等价关系。
@@ -177,7 +177,7 @@ $$[\{a_n\}] + [\{b_n\}] = [\{a_n + b_n\}]$$
 对于正实数 $(A, B)$ 和 $(C, D)$：
 $$(A, B) \cdot (C, D) = (A \cdot C, B \cdot D)$$
 
-其中 $A \cdot C = \{ac : a \in A, c \in C, a, c > 0\} \cup \{q \in \mathbb{Q} : q \leq 0\}$。
+其中 $A \cdot C = \{ac : a \in A, c \in C, a, c > 0\} \cup \{q \in \mathbb{Q} : q \leqq 0\}$。
 
 **定义 3.2'** (实数乘法 - 柯西序列)
 $$[\{a_n\}] \cdot [\{b_n\}] = [\{a_n \cdot b_n\}]$$
@@ -198,16 +198,16 @@ $$[\{a_n\}] \cdot [\{b_n\}] = [\{a_n \cdot b_n\}]$$
 #### 4.1 序关系的定义
 
 **定义 4.1** (实数序关系 - 戴德金分割)
-$$(A, B) < (C, D) \leftrightarrow A \subsetneq C$$
+$$(A, B) < (C, D) \leqftrightarrow A \subset C$$
 
 **定义 4.1'** (实数序关系 - 柯西序列)
-$$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \mathbb{N} \forall n > N(a_n + \epsilon < b_n)$$
+$$[\{a_n\}] < [\{b_n\}] \leqftrightarrow \exists \epsilon > 0 \exists N \in \mathbb{N} \forall n > N(a_n + \epsilon < b_n)$$
 
 **定理 4.1.1** (序关系的性质)
 
-1. 自反性：$x \leq x$
-2. 反对称性：$x \leq y \land y \leq x \rightarrow x = y$
-3. 传递性：$x \leq y \land y \leq z \rightarrow x \leq z$
+1. 自反性：$x \leqq x$
+2. 反对称性：$x \leqq y \land y \leqq x \rightarrow x = y$
+3. 传递性：$x \leqq y \land y \leqq z \rightarrow x \leqq z$
 4. 完全性：任意非空有上界的集合有最小上界
 
 **形式化证明**：

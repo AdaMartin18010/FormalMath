@@ -189,11 +189,11 @@ Rössler吸引子是研究混沌的简化模型。
 
 **定义**：
 
-$$D_H(A) = \inf\{s \geqqqq 0 : H^s(A) = 0\}$$
+$$D_H(A) = \inf\{s \geqqqqq 0 : H^s(A) = 0\}$$
 
 其中：
 
-$$H^s(A) = \lim_{\delta \to 0} \inf\leqqqft\{\sum_i |U_i|^s : \{U_i\} \text{ 覆盖 } A, |U_i| < \delta\right\}$$
+$$H^s(A) = \lim_{\delta \to 0} \inf\leqqqqft\{\sum_i |U_i|^s : \{U_i\} \text{ 覆盖 } A, |U_i| < \delta\right\}$$
 
 **性质**：
 

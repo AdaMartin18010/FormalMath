@@ -1,4 +1,4 @@
-# 计算几何数学 - 深化版
+﻿# 计算几何数学 - 深化版
 
 ## 📚 概述
 
@@ -211,7 +211,7 @@ $$E_c \subseteq E(T)$$
 
 **分割策略**：
 在深度$d$的节点，按第$(d \bmod k)$维分割：
-$$x_{d \bmod k} \leq \text{median}$$
+$$x_{d \bmod k} \leqq \text{median}$$
 
 **搜索算法**：
 
@@ -261,7 +261,7 @@ $$P(\text{collision}) = \text{sim}(x, y)$$
 #### 2.1.1 单纯复形
 
 **k-单纯形**：
-$$[v_0, v_1, \ldots, v_k] = \{\sum_{i=0}^{k} \lambda_i v_i : \sum_{i=0}^{k} \lambda_i = 1, \lambda_i \geq 0\}$$
+$$[v_0, v_1, \ldots, v_k] = \{\sum_{i=0}^{k} \lambda_i v_i : \sum_{i=0}^{k} \lambda_i = 1, \lambda_i \geqq 0\}$$
 
 **边界算子**：
 $$\partial_k : C_k \to C_{k-1}$$
@@ -325,7 +325,7 @@ $$\min_Y \sum_{i,j} (d_G(i, j) - \|y_i - y_j\|)^2$$
 #### 2.2.3 拉普拉斯特征映射
 
 **相似度矩阵**：
-$$W_{ij} = \exp\left(-\frac{\|x_i - x_j\|^2}{2\sigma^2}\right)$$
+$$W_{ij} = \exp\leqft(-\frac{\|x_i - x_j\|^2}{2\sigma^2}\right)$$
 
 **拉普拉斯矩阵**：
 $$L = D - W$$
@@ -344,7 +344,7 @@ $$L f = \lambda D f$$
 
 **覆盖**：
 将数据空间划分为重叠的球：
-$$B_i = \{x : \|x - c_i\| \leq r\}$$
+$$B_i = \{x : \|x - c_i\| \leqq r\}$$
 
 **聚类**：
 在每个球内进行聚类：
@@ -354,7 +354,7 @@ $$C_{ij} = \text{cluster}(B_i \cap B_j)$$
 将聚类作为节点，重叠关系作为边：
 $$G = (V, E)$$
 
-其中$V = \{C_{ij}\}$，$E = \{(C_{ij}, C_{kl}) : C_{ij} \cap C_{kl} \neq \emptyset\}$。
+其中$V = \{C_{ij}\}$，$E = \{(C_{ij}, C_{kl}) : C_{ij} \cap C_{kl} \neqq \emptyset\}$。
 
 #### 2.3.2 持久性景观
 
@@ -364,12 +364,12 @@ $$\lambda_k(t) = k\text{-th largest value of } \{\Lambda_i(t)\}_{i=1}^{n}$$
 其中$\Lambda_i(t) = \max\{0, \min\{t - b_i, d_i - t\}\}$。
 
 **Lp范数**：
-$$\|\lambda_k\|_p = \left(\int_0^{\infty} \lambda_k(t)^p dt\right)^{1/p}$$
+$$\|\lambda_k\|_p = \leqft(\int_0^{\infty} \lambda_k(t)^p dt\right)^{1/p}$$
 
 #### 2.3.3 持久性图像
 
 **高斯核**：
-$$\rho_i(x, y) = \frac{1}{2\pi\sigma^2} \exp\left(-\frac{(x - b_i)^2 + (y - d_i)^2}{2\sigma^2}\right)$$
+$$\rho_i(x, y) = \frac{1}{2\pi\sigma^2} \exp\leqft(-\frac{(x - b_i)^2 + (y - d_i)^2}{2\sigma^2}\right)$$
 
 **持久性图像**：
 $$I(x, y) = \sum_{i=1}^{n} w_i \rho_i(x, y)$$
@@ -386,7 +386,7 @@ $$I(x, y) = \sum_{i=1}^{n} w_i \rho_i(x, y)$$
 $$\min f_0(x) = \sum_{k=1}^{K_0} c_{0k} \prod_{i=1}^{n} x_i^{a_{0ki}}$$
 
 **约束条件**：
-$$f_j(x) = \sum_{k=1}^{K_j} c_{jk} \prod_{i=1}^{n} x_i^{a_{jki}} \leq 1$$
+$$f_j(x) = \sum_{k=1}^{K_j} c_{jk} \prod_{i=1}^{n} x_i^{a_{jki}} \leqq 1$$
 
 其中$c_{jk} > 0$，$a_{jki} \in \mathbb{R}$。
 
@@ -417,15 +417,15 @@ $$\Delta x = -(\nabla^2 B)^{-1} \nabla B$$
 $$C \text{ is convex} \iff \forall x, y \in C, \lambda \in [0,1], \lambda x + (1-\lambda)y \in C$$
 
 **凸包**：
-$$\text{conv}(S) = \{\sum_{i=1}^{k} \lambda_i x_i : \sum_{i=1}^{k} \lambda_i = 1, \lambda_i \geq 0\}$$
+$$\text{conv}(S) = \{\sum_{i=1}^{k} \lambda_i x_i : \sum_{i=1}^{k} \lambda_i = 1, \lambda_i \geqq 0\}$$
 
 #### 3.2.2 凸函数
 
 **凸函数定义**：
-$$f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1-\lambda)f(y)$$
+$$f(\lambda x + (1-\lambda)y) \leqq \lambda f(x) + (1-\lambda)f(y)$$
 
 **次梯度**：
-$$g \in \partial f(x) \iff f(y) \geq f(x) + g^T(y-x)$$
+$$g \in \partial f(x) \iff f(y) \geqq f(x) + g^T(y-x)$$
 
 #### 3.2.3 对偶理论
 
@@ -436,7 +436,7 @@ $$L(x, \lambda) = f_0(x) + \sum_{i=1}^{m} \lambda_i f_i(x)$$
 $$g(\lambda) = \inf_x L(x, \lambda)$$
 
 **对偶问题**：
-$$\max g(\lambda) \text{ s.t. } \lambda \geq 0$$
+$$\max g(\lambda) \text{ s.t. } \lambda \geqq 0$$
 
 ### 3.3 非线性优化
 
@@ -467,7 +467,7 @@ $$H_{k+1} = H_k + \frac{(y_k - H_k s_k)(y_k - H_k s_k)^T}{(y_k - H_k s_k)^T s_k}
 
 **KKT条件**：
 $$\nabla f(x^*) + \sum_{i=1}^{m} \lambda_i^* \nabla g_i(x^*) + \sum_{j=1}^{p} \mu_j^* \nabla h_j(x^*) = 0$$
-$$g_i(x^*) \leq 0, \quad \lambda_i^* \geq 0, \quad \lambda_i^* g_i(x^*) = 0$$
+$$g_i(x^*) \leqq 0, \quad \lambda_i^* \geqq 0, \quad \lambda_i^* g_i(x^*) = 0$$
 $$h_j(x^*) = 0$$
 
 ## 4. 几何查询数学理论
@@ -491,7 +491,7 @@ $$\text{query}(Q) = \{p \in P : p \in Q\}$$
 #### 4.1.2 半空间查询
 
 **半空间**：
-$$H = \{x : a^T x \leq b\}$$
+$$H = \{x : a^T x \leqq b\}$$
 
 **查询算法**：
 
@@ -502,7 +502,7 @@ $$H = \{x : a^T x \leq b\}$$
 #### 4.1.3 圆范围查询
 
 **圆查询**：
-$$C = \{x : \|x - c\| \leq r\}$$
+$$C = \{x : \|x - c\| \leqq r\}$$
 
 **算法**：
 
@@ -526,7 +526,7 @@ $$\text{NN}(q) = \arg\min_{p \in P} \|q - p\|$$
 #### 4.2.2 近似最近邻
 
 **c-近似**：
-$$\|q - p\| \leq c \cdot \|q - p^*\|$$
+$$\|q - p\| \leqq c \cdot \|q - p^*\|$$
 
 其中$p^*$是精确最近邻。
 
@@ -539,7 +539,7 @@ $$\|q - p\| \leq c \cdot \|q - p^*\|$$
 #### 4.2.3 k-最近邻
 
 **查询**：
-$$\text{kNN}(q) = \{p_1, p_2, \ldots, p_k : \|q - p_i\| \leq \|q - p_j\| \text{ for } i < j\}$$
+$$\text{kNN}(q) = \{p_1, p_2, \ldots, p_k : \|q - p_i\| \leqq \|q - p_j\| \text{ for } i < j\}$$
 
 **算法**：
 
@@ -1174,7 +1174,7 @@ plt.show()
 
 **数学模型**：
 
-- 包围盒检测：$A_{\text{AABB}} \cap B_{\text{AABB}} \neq \emptyset$
+- 包围盒检测：$A_{\text{AABB}} \cap B_{\text{AABB}} \neqq \emptyset$
 - 分离轴定理：$\exists \mathbf{n}, \text{proj}_\mathbf{n}(A) \cap \text{proj}_\mathbf{n}(B) = \emptyset \Rightarrow A \cap B = \emptyset$
 - GJK算法：$d(A, B) = \min_{\mathbf{p} \in A, \mathbf{q} \in B} \|\mathbf{p} - \mathbf{q}\|$
 
@@ -1196,7 +1196,7 @@ plt.show()
 
 **数学模型**：
 
-- Voronoi图：$V(p_i) = \{\mathbf{x} : d(\mathbf{x}, p_i) \leq d(\mathbf{x}, p_j), \forall j \neq i\}$
+- Voronoi图：$V(p_i) = \{\mathbf{x} : d(\mathbf{x}, p_i) \leqq d(\mathbf{x}, p_j), \forall j \neqq i\}$
 - A*算法：$f(n) = g(n) + h(n)$，其中$g(n)$是实际成本，$h(n)$是启发式估计
 - RRT算法：$\mathbf{x}_{\text{new}} = \mathbf{x}_{\text{near}} + \alpha \frac{\mathbf{x}_{\text{rand}} - \mathbf{x}_{\text{near}}}{\|\mathbf{x}_{\text{rand}} - \mathbf{x}_{\text{near}}\|}$
 
@@ -1218,7 +1218,7 @@ plt.show()
 
 - 配置空间：$C = \{q : \text{robot}(q) \cap \text{obstacles} = \emptyset\}$
 - 路径规划：$\gamma : [0,1] \rightarrow C_{\text{free}}$，其中$\gamma(0) = q_{\text{start}}, \gamma(1) = q_{\text{goal}}$
-- 速度约束：$\|\dot{q}\| \leq v_{\max}$，$\|\ddot{q}\| \leq a_{\max}$
+- 速度约束：$\|\dot{q}\| \leqq v_{\max}$，$\|\ddot{q}\| \leqq a_{\max}$
 
 **实际价值**：
 
@@ -1236,7 +1236,7 @@ plt.show()
 
 **数学模型**：
 
-- 冲突避免：$\forall i, j, d(\mathbf{p}_i(t), \mathbf{p}_j(t)) \geq d_{\min}$
+- 冲突避免：$\forall i, j, d(\mathbf{p}_i(t), \mathbf{p}_j(t)) \geqq d_{\min}$
 - 任务分配：$\min \sum_{i,j} c_{ij}x_{ij}$，s.t. $\sum_j x_{ij} = 1, \sum_i x_{ij} = 1$
 - 编队控制：$\mathbf{p}_i = \mathbf{p}_{\text{leader}} + \mathbf{d}_i$（相对位置）
 
@@ -1259,7 +1259,7 @@ plt.show()
 **数学模型**：
 
 - 范围查询：$Q = \{p : p \in R\}$，其中$R$是查询区域
-- k-最近邻：$\text{kNN}(q) = \{p_1, ..., p_k : d(q, p_i) \leq d(q, p_{k+1})\}$
+- k-最近邻：$\text{kNN}(q) = \{p_1, ..., p_k : d(q, p_i) \leqq d(q, p_{k+1})\}$
 - R树索引：$M = (M_{\text{BR}}, \text{child})$，其中$M_{\text{BR}}$是最小包围矩形
 
 **实际价值**：
@@ -1278,7 +1278,7 @@ plt.show()
 
 **数学模型**：
 
-- 缓冲区分析：$B(P, r) = \{\mathbf{x} : d(\mathbf{x}, P) \leq r\}$
+- 缓冲区分析：$B(P, r) = \{\mathbf{x} : d(\mathbf{x}, P) \leqq r\}$
 - 叠加分析：$A \cap B, A \cup B, A \setminus B$
 - 网络分析：$\text{shortest\_path}(s, t) = \arg\min_{\text{path}} \sum_{e \in \text{path}} w(e)$
 
@@ -1342,7 +1342,7 @@ plt.show()
 
 - 形状描述符：$D(S) = \{d_1, d_2, ..., d_n\}$（如傅里叶描述符）
 - 形状匹配：$\text{similarity}(S_1, S_2) = \min_T \|D(S_1) - D(T(S_2))\|$
-- 凸包分析：$\text{CH}(P) = \{\sum_{i} \lambda_i p_i : \lambda_i \geq 0, \sum_i \lambda_i = 1\}$
+- 凸包分析：$\text{CH}(P) = \{\sum_{i} \lambda_i p_i : \lambda_i \geqq 0, \sum_i \lambda_i = 1\}$
 
 **实际价值**：
 
@@ -1406,7 +1406,7 @@ plt.show()
 
 - k-中心问题：$\min_{S, |S|=k} \max_{p \in P} \min_{s \in S} d(p, s)$
 - k-中位数问题：$\min_{S, |S|=k} \sum_{p \in P} \min_{s \in S} d(p, s)$
-- 加权Voronoi图：$V_w(p_i) = \{\mathbf{x} : \frac{d(\mathbf{x}, p_i)}{w_i} \leq \frac{d(\mathbf{x}, p_j)}{w_j}, \forall j \neq i\}$
+- 加权Voronoi图：$V_w(p_i) = \{\mathbf{x} : \frac{d(\mathbf{x}, p_i)}{w_i} \leqq \frac{d(\mathbf{x}, p_j)}{w_j}, \forall j \neqq i\}$
 
 **实际价值**：
 
@@ -1424,8 +1424,8 @@ plt.show()
 
 **数学模型**：
 
-- 装箱问题：$\min k$，s.t. $\sum_{i \in B_j} s_i \leq C, \forall j$
-- 圆形包装：$\min R$，s.t. $\|\mathbf{c}_i - \mathbf{c}_j\| \geq r_i + r_j, \forall i \neq j$
+- 装箱问题：$\min k$，s.t. $\sum_{i \in B_j} s_i \leqq C, \forall j$
+- 圆形包装：$\min R$，s.t. $\|\mathbf{c}_i - \mathbf{c}_j\| \geqq r_i + r_j, \forall i \neqq j$
 - 矩形包装：$\min A$，s.t. 矩形不重叠且都在容器内
 
 **实际价值**：

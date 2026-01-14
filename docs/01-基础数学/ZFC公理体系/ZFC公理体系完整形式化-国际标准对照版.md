@@ -59,13 +59,13 @@ Le système d'axiomes ZFC utilise le langage de logique du premier ordre, inclua
 
 Das ZFC-Axiomensystem verwendet die Sprache der Logik erster Stufe, einschließlich:
 
-- **逻辑符号** / **Logical symbols** / **Symboles logiques** / **Logische Symbole**: $\neqg, \land, \lor, \rightarrow, \leqftrightarrow, \forall, \exists, =$
+- **逻辑符号** / **Logical symbols** / **Symboles logiques** / **Logische Symbole**: $\neqqg, \land, \lor, \rightarrow, \leqqftrightarrow, \forall, \exists, =$
 - **非逻辑符号** / **Non-logical symbols** / **Symboles non-logiques** / **Nicht-logische Symbole**: $\in$ (属于关系 / membership relation / relation d'appartenance / Element-Relation)
 - **变量** / **Variables** / **Variables** / **Variablen**: $x, y, z, \ldots$ (小写字母 / lowercase letters / lettres minuscules / Kleinbuchstaben)
 - **括号** / **Parentheses** / **Parenthèses** / **Klammern**: $(, )$
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\mathcal{L}_{\text{ZFC}} = \{\neqg, \land, \lor, \rightarrow, \leqftrightarrow, \forall, \exists, =, \in, (, )\} \cup \text{Var}$$
+$$\mathcal{L}_{\text{ZFC}} = \{\neqqg, \land, \lor, \rightarrow, \leqqftrightarrow, \forall, \exists, =, \in, (, )\} \cup \text{Var}$$
 
 其中 $\text{Var}$ 是变量集合 / where $\text{Var}$ is the set of variables / où $\text{Var}$ est l'ensemble des variables / wobei $\text{Var}$ die Menge der Variablen ist.
 
@@ -74,7 +74,7 @@ $$\mathcal{L}_{\text{ZFC}} = \{\neqg, \land, \lor, \rightarrow, \leqftrightarrow
 #### 2.1 外延公理 / Axiom of Extensionality / Axiome d'extensionnalité / Extensionalitätsaxiom
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\forall x \forall y [\forall z(z \in x \leqftrightarrow z \in y) \rightarrow x = y]$$
+$$\forall x \forall y [\forall z(z \in x \leqqftrightarrow z \in y) \rightarrow x = y]$$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 两个集合相等当且仅当它们包含相同的元素 / Two sets are equal if and only if they contain the same elements / Deux ensembles sont égaux si et seulement s'ils contiennent les mêmes éléments / Zwei Mengen sind gleich genau dann, wenn sie dieselben Elemente enthalten.
 
@@ -99,34 +99,34 @@ $$\emptyset = \text{the unique } x \text{ such that } \forall y (y \notin x)$$
 #### 2.3 配对公理 / Axiom of Pairing / Axiome de la paire / Paarmengenaxiom
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\forall x \forall y \exists z \forall w(w \in z \leqftrightarrow w = x \lor w = y)$$
+$$\forall x \forall y \exists z \forall w(w \in z \leqqftrightarrow w = x \lor w = y)$$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 对于任意两个集合，存在包含它们的集合 / For any two sets, there exists a set containing them / Pour deux ensembles quelconques, il existe un ensemble les contenant / Für beliebige zwei Mengen existiert eine Menge, die sie enthält.
 
 **符号定义** / **Symbol definition** / **Définition du symbole** / **Symboldefinition**:
-$$\{x, y\} = \text{the unique } z \text{ such that } \forall w(w \in z \leqftrightarrow w = x \lor w = y)$$
+$$\{x, y\} = \text{the unique } z \text{ such that } \forall w(w \in z \leqqftrightarrow w = x \lor w = y)$$
 
 #### 2.4 并集公理 / Axiom of Union / Axiome de la réunion / Vereinigungsaxiom
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\forall F \exists A \forall x(x \in A \leqftrightarrow \exists B(B \in F \land x \in B))$$
+$$\forall F \exists A \forall x(x \in A \leqqftrightarrow \exists B(B \in F \land x \in B))$$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 对于任意集合族，存在包含所有成员的集合 / For any family of sets, there exists a set containing all members / Pour toute famille d'ensembles, il existe un ensemble contenant tous les membres / Für jede Familie von Mengen existiert eine Menge, die alle Mitglieder enthält.
 
 **符号定义** / **Symbol definition** / **Définition du symbole** / **Symboldefinition**:
-$$\bigcup F = \text{the unique } A \text{ such that } \forall x(x \in A \leqftrightarrow \exists B(B \in F \land x \in B))$$
+$$\bigcup F = \text{the unique } A \text{ such that } \forall x(x \in A \leqqftrightarrow \exists B(B \in F \land x \in B))$$
 
 #### 2.5 幂集公理 / Axiom of Power Set / Axiome de l'ensemble des parties / Potenzmengenaxiom
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\forall x \exists y \forall z(z \in y \leqftrightarrow z \subseteq x)$$
+$$\forall x \exists y \forall z(z \in y \leqqftrightarrow z \subseteq x)$$
 
 其中 $z \subseteq x$ 定义为 $\forall w(w \in z \rightarrow w \in x)$ / where $z \subseteq x$ is defined as $\forall w(w \in z \rightarrow w \in x)$ / où $z \subseteq x$ est défini comme $\forall w(w \in z \rightarrow w \in x)$ / wobei $z \subseteq x$ definiert ist als $\forall w(w \in z \rightarrow w \in x)$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 对于任意集合，存在包含其所有子集的集合 / For any set, there exists a set containing all its subsets / Pour tout ensemble, il existe un ensemble contenant tous ses sous-ensembles / Für jede Menge existiert eine Menge, die alle ihre Teilmengen enthält.
 
 **符号定义** / **Symbol definition** / **Définition du symbole** / **Symboldefinition**:
-$$\mathcal{P}(x) = \text{the unique } y \text{ such that } \forall z(z \in y \leqftrightarrow z \subseteq x)$$
+$$\mathcal{P}(x) = \text{the unique } y \text{ such that } \forall z(z \in y \leqqftrightarrow z \subseteq x)$$
 
 #### 2.6 无穷公理 / Axiom of Infinity / Axiome de l'infini / Unendlichkeitsaxiom
 
@@ -140,7 +140,7 @@ $$\exists x(\emptyset \in x \land \forall y(y \in x \rightarrow y \cup \{y\} \in
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
 对于每个公式 $\phi(x, z, w_1, \ldots, w_n)$，有 / For each formula $\phi(x, z, w_1, \ldots, w_n)$, there is / Pour chaque formule $\phi(x, z, w_1, \ldots, w_n)$, il y a / Für jede Formel $\phi(x, z, w_1, \ldots, w_n)$ gibt es:
 
-$$\forall w_1 \ldots \forall w_n \forall z \exists y \forall x(x \in y \leqftrightarrow x \in z \land \phi(x, z, w_1, \ldots, w_n))$$
+$$\forall w_1 \ldots \forall w_n \forall z \exists y \forall x(x \in y \leqqftrightarrow x \in z \land \phi(x, z, w_1, \ldots, w_n))$$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 对于任意集合和性质，存在满足该性质的子集 / For any set and property, there exists a subset satisfying that property / Pour tout ensemble et propriété, il existe un sous-ensemble satisfaisant cette propriété / Für jede Menge und Eigenschaft existiert eine Teilmenge, die diese Eigenschaft erfüllt.
 
@@ -149,21 +149,21 @@ $$\forall w_1 \ldots \forall w_n \forall z \exists y \forall x(x \in y \leqftrig
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
 对于每个公式 $\phi(x, y, A, w_1, \ldots, w_n)$，有 / For each formula $\phi(x, y, A, w_1, \ldots, w_n)$, there is / Pour chaque formule $\phi(x, y, A, w_1, \ldots, w_n)$, il y a / Für jede Formel $\phi(x, y, A, w_1, \ldots, w_n)$ gibt es:
 
-$$\forall w_1 \ldots \forall w_n \forall A[\forall x \in A \exists!y \phi(x, y, A, w_1, \ldots, w_n) \rightarrow \exists B \forall y(y \in B \leqftrightarrow \exists x \in A \phi(x, y, A, w_1, \ldots, w_n))]$$
+$$\forall w_1 \ldots \forall w_n \forall A[\forall x \in A \exists!y \phi(x, y, A, w_1, \ldots, w_n) \rightarrow \exists B \forall y(y \in B \leqqftrightarrow \exists x \in A \phi(x, y, A, w_1, \ldots, w_n))]$$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 对于任意函数和集合，函数的值域是集合 / For any function and set, the range of the function is a set / Pour toute fonction et ensemble, l'image de la fonction est un ensemble / Für jede Funktion und Menge ist der Wertebereich der Funktion eine Menge.
 
 #### 2.9 正则公理 / Axiom of Regularity / Axiome de régularité / Fundierungsaxiom
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\forall x(x \neqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
+$$\forall x(x \neqqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 每个非空集合都有最小元素 / Every non-empty set has a minimal element / Tout ensemble non vide a un élément minimal / Jede nicht-leere Menge hat ein minimales Element.
 
 #### 2.10 选择公理 / Axiom of Choice / Axiome du choix / Auswahlaxiom
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \land x \neqq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists!z \in x(z \in C))$$
+$$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \land x \neqqq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists!z \in x(z \in C))$$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 对于任意非空集合族，存在选择函数 / For any family of non-empty sets, there exists a choice function / Pour toute famille d'ensembles non vides, il existe une fonction de choix / Für jede Familie nicht-leerer Mengen existiert eine Auswahlfunktion.
 
@@ -173,9 +173,9 @@ $$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \
 
 | 公理 / Axiom / Axiome / Axiom | Wikipedia标准 / Wikipedia Standard / Standard Wikipedia / Wikipedia-Standard | 本文档 / This Document / Ce Document / Dieses Dokument |
 |---|---|---|
-| 外延公理 / Extensionality / Extensionnalité / Extensionalität | $\forall x \forall y [\forall z(z \in x \leqftrightarrow z \in y) \rightarrow x = y]$ | ✅ 完全一致 / Fully consistent / Entièrement cohérent / Vollständig konsistent |
+| 外延公理 / Extensionality / Extensionnalité / Extensionalität | $\forall x \forall y [\forall z(z \in x \leqqftrightarrow z \in y) \rightarrow x = y]$ | ✅ 完全一致 / Fully consistent / Entièrement cohérent / Vollständig konsistent |
 | 空集公理 / Empty Set / Ensemble vide / Leermenge | $\exists x \forall y (y \notin x)$ | ✅ 完全一致 / Fully consistent / Entièrement cohérent / Vollständig konsistent |
-| 配对公理 / Pairing / Paire / Paarmenge | $\forall x \forall y \exists z \forall w(w \in z \leqftrightarrow w = x \lor w = y)$ | ✅ 完全一致 / Fully consistent / Entièrement cohérent / Vollständig konsistent |
+| 配对公理 / Pairing / Paire / Paarmenge | $\forall x \forall y \exists z \forall w(w \in z \leqqftrightarrow w = x \lor w = y)$ | ✅ 完全一致 / Fully consistent / Entièrement cohérent / Vollständig konsistent |
 
 ### 与著名大学教程的对照 / Comparison with Famous University Courses / Comparaison avec les cours d'universités célèbres / Vergleich mit berühmten Universitätskursen
 

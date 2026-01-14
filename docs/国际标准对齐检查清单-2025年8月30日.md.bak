@@ -1,4 +1,4 @@
-# 国际标准对齐检查清单-2025年8月30日
+﻿# 国际标准对齐检查清单-2025年8月30日
 
 ## 检查概述 / Check Overview
 
@@ -42,7 +42,7 @@
 #### 标准数学符号
 
 - [ ] **集合符号**: $\in, \notin, \subset, \subseteq, \cup, \cap, \setminus$
-- [ ] **逻辑符号**: $\forall, \exists, \implies, \iff, \neg, \land, \lor$
+- [ ] **逻辑符号**: $\forall, \exists, \implies, \iff, \neqg, \land, \lor$
 - [ ] **函数符号**: $f: X \to Y, f(x), f^{-1}, \circ$
 - [ ] **代数符号**: $+, -, \times, \div, \cdot, \sum, \prod$
 

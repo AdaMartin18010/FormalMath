@@ -1038,7 +1038,7 @@ A = \bigcirc
 $$
 
 $$
-B = \left( \begin{array}{c} S h e r i \\ O m e r \\ A l y s i a \\ M i k e \end{array} \right)
+B = \leqft( \begin{array}{c} S h e r i \\ O m e r \\ A l y s i a \\ M i k e \end{array} \right)
 $$
 
 Answer: There is precisely one map, and its internal diagram is
@@ -1052,7 +1052,7 @@ This diagram doesn't have any arrows, but it doesn't need any. An internal diagr
 (4) Now we reverse the previous example, that is:
 
 $$
-A = \left( \begin{array}{c} S h e r i \\ O m e r \\ A l y s i a \\ M i k e \end{array} \right) \quad B = \bigcirc
+A = \leqft( \begin{array}{c} S h e r i \\ O m e r \\ A l y s i a \\ M i k e \end{array} \right) \quad B = \bigcirc
 $$
 
 Answer: Zero. We have four tasks, and each of them is impossible.
@@ -1153,7 +1153,7 @@ $$
 where the notations  $\# A$  and  $|A|$  are used to indicate the number of elements of the set  $A$ . The notation  $\# A$  is self-explanatory since the symbol  $\#$  is often used to denote 'number', while  $|A|$  is similar to the notation used for the absolute value of a number. The bars indicate that you forget everything except the 'size'; for numbers you forget the sign, while for sets you forget what the elements are, and remember only how many of them there are. So, for example, if
 
 $$
-P = \left( \begin{array}{c} I a n \\ C h a d \end{array} \right) \quad R = \left( \begin{array}{c} l i v i n g r o o m \\ d i n i n g r o o m \end{array} \right)
+P = \leqft( \begin{array}{c} I a n \\ C h a d \end{array} \right) \quad R = \leqft( \begin{array}{c} l i v i n g r o o m \\ d i n i n g r o o m \end{array} \right)
 $$
 
 then we wouldn't say  $P = R$ , but rather  $|P| = |R|$ . To remember which set goes in the base and which one in the exponent you can imagine that the maps are lazy, so that they go down from the exponent to the base. Another way to remember this is to think of an especially simple case, for instance the case in which the codomain has only one element, and therefore the set of maps has also only one element (and, of course, remember that  $1^n = 1$ ).
@@ -1650,7 +1650,7 @@ Proof: Let  $r_1 \circ f = l_A$  and  $r_2 \circ g = l_B$ . Then a good guess fo
 Does it in fact work?
 
 $$
-\begin{array}{l} r \circ (g \circ f) = \left(r _ {1} \circ r _ {2}\right) \circ (g \circ f) = r _ {1} \circ \left(r _ {2} \circ g\right) \circ f = r _ {1} \circ l _ {B} \circ f \\ = r _ {1} \circ f = I _ {A} \\ \end{array}
+\begin{array}{l} r \circ (g \circ f) = \leqft(r _ {1} \circ r _ {2}\right) \circ (g \circ f) = r _ {1} \circ \leqft(r _ {2} \circ g\right) \circ f = r _ {1} \circ l _ {B} \circ f \\ = r _ {1} \circ f = I _ {A} \\ \end{array}
 $$
 
 proves that  $r$  is a retraction for  $g \circ f$ .
@@ -1957,7 +1957,7 @@ $(\mathbb{R}_{>0}, \times)$  Only positive real numbers, but still with multipli
 A map in this category from an object  $(A, *)$  to an object  $(A', *')$  is any map of sets  $A \longrightarrow A'$  which 'respects the combining-rules,' i.e.
 
 $$
-f (a * b) = \left(f a\right) * ^ {\prime} (f b) \quad \text {f o r e a c h} a \text {a n d} b \text {i n} A
+f (a * b) = \leqft(f a\right) * ^ {\prime} (f b) \quad \text {f o r e a c h} a \text {a n d} b \text {i n} A
 $$
 
 Here are some examples of maps in this category:
@@ -1995,7 +1995,7 @@ $$
 i.e.
 
 $$
-\mathbf {e} ^ {(a + b)} = \left(\mathbf {e} ^ {a}\right) \times \left(\mathbf {e} ^ {b}\right)
+\mathbf {e} ^ {(a + b)} = \leqft(\mathbf {e} ^ {a}\right) \times \leqft(\mathbf {e} ^ {b}\right)
 $$
 
 (If you don't know the number  $e = 2.718 \ldots$ , you can use 10 in its place.)
@@ -2717,7 +2717,7 @@ OMER: Compose  $s$  and  $s'$ .
 That's about the simplest thing we can try. There are other ways to go from  $C$  to  $A$ , but let's try the simplest first. So we'll try to prove that  $s' \circ s$  is a section for  $p \circ k$ . In other words, we are faced with the question
 
 $$
-\left(\boldsymbol {p} \circ \boldsymbol {k}\right) \circ \left(\boldsymbol {s} ^ {\prime} \circ \boldsymbol {s}\right) = 1 _ {C}?
+\leqft(\boldsymbol {p} \circ \boldsymbol {k}\right) \circ \leqft(\boldsymbol {s} ^ {\prime} \circ \boldsymbol {s}\right) = 1 _ {C}?
 $$
 
 Any suggestions?
@@ -4528,7 +4528,7 @@ ALYSIA: The identity?
 That's right,  $f_{1} = 1_{\mathbb{N}}$ . Also, the composite of two maps  $f_{n} \circ f_{m}$  is the map which evaluated at a number  $x$  gives
 
 $$
-\begin{array}{l} \left(f _ {n} \circ f _ {m}\right) (x) = f _ {n} \left(f _ {m} (x)\right) = n \times (m \times x) = (n \times m) \times x = (n m) \times x \\ = f _ {n m} (x) \\ \end{array}
+\begin{array}{l} \leqft(f _ {n} \circ f _ {m}\right) (x) = f _ {n} \leqft(f _ {m} (x)\right) = n \times (m \times x) = (n \times m) \times x = (n m) \times x \\ = f _ {n m} (x) \\ \end{array}
 $$
 
 so we conclude that
@@ -4568,7 +4568,7 @@ $$
 Now we have to check that  $g_{n+m}(x) = g_n(g_m(x))$ , which is similar to the previous case:
 
 $$
-g _ {n} \left(g _ {m} (x)\right) = n + (m + x) = (n + m) + x = g _ {n + m} (x)
+g _ {n} \leqft(g _ {m} (x)\right) = n + (m + x) = (n + m) + x = g _ {n + m} (x)
 $$
 
 All the above suggests the 'standard example' of interpretation of a monoid in sets, in which the object of the monoid is interpreted as the set of maps of the monoid itself. In this way we get a standard functor from any monoid to the category of sets.
@@ -4610,7 +4610,7 @@ really is the appropriate notion of 'map of dynamical systems.' Assume in these 
 Let  $x_{1}$  and  $x_{2}$  be two points of  $X$  and define  $y_{1} = f(x_{1})$  and  $y_{2} = f(x_{2})$ . If
 
 $$
-\alpha \left(x _ {1}\right) = \alpha \left(x _ {2}\right) \text {i n} X
+\alpha \leqft(x _ {1}\right) = \alpha \leqft(x _ {2}\right) \text {i n} X
 $$
 
 (i.e. pushing the button  $\alpha$  we arrive at the same state whether the initial state was  $x_{1}$  or  $x_{2}$ ) then show that
@@ -4626,7 +4626,7 @@ $$
 If instead we know that
 
 $$
-x _ {2} = \alpha^ {5} \left(x _ {1}\right) \text {i n} X
+x _ {2} = \alpha^ {5} \leqft(x _ {1}\right) \text {i n} X
 $$
 
 (i.e. that starting from state  $x_{1}$ , five pushes of the button  $\alpha$  will bring  $X$  to the state  $x_{2}$ ), show that the 'same' statement is true of the states  $y_{1}$  and  $y_{2}$  in  $Y^{\circ \beta}$ ; i.e.
@@ -4656,7 +4656,7 @@ The problem is to prove that the points  $y_{1}$  and  $y_{2}$  obtained by appl
 Solution: By direct substitution and use of the associative law it is immediate that  $\beta(y_1)$  is equal to  $f(\alpha(x_1))$  and that  $\beta(y_2)$  is equal to  $f(\alpha(x_2))$ . For example,
 
 $$
-\beta \left(y _ {1}\right) = \beta \left(f \left(x _ {1}\right)\right) = \left(\beta \circ f\right) \left(x _ {1}\right) = \left(f \circ \alpha\right) \left(x _ {1}\right) = f \left(\alpha \left(x _ {1}\right)\right)
+\beta \leqft(y _ {1}\right) = \beta \leqft(f \leqft(x _ {1}\right)\right) = \leqft(\beta \circ f\right) \leqft(x _ {1}\right) = \leqft(f \circ \alpha\right) \leqft(x _ {1}\right) = f \leqft(\alpha \leqft(x _ {1}\right)\right)
 $$
 
 and replacing the subscript 1 by 2 proves the other equality. But we know that  $f(\alpha(x_1)) = f(\alpha(x_2))$  because by hypothesis  $\alpha(x_1) = \alpha(x_2)$ . Therefore we can conclude that  $\beta(y_1) = \beta(y_2)$ .
@@ -4676,13 +4676,13 @@ DANILO: So, just substitute  $\alpha^5$  and  $\beta^5$  for  $\alpha$  and  $\b
 No, it is not so immediate. The fact that  $f \circ \alpha = \beta \circ f$  is true for particular maps  $\alpha$  and  $\beta$  doesn't allow us to substitute any maps for  $\alpha$  and  $\beta$ . One has to prove that it works for  $\alpha^5$  and  $\beta^5$ , by using the associative law. It is true that this will imply that  $f$  is also a map for the new dynamics determined by the endomaps  $\alpha^5$  and  $\beta^5$ , but it has to be proved, it can't be assumed. The proof consists in applying the associative law several times:
 
 $$
-\begin{array}{l} f \circ \alpha^ {5} = f \circ (\alpha \circ \alpha^ {4}) = (f \circ \alpha) \circ \alpha^ {4} = (\beta \circ f) \circ \alpha^ {4} = \beta \circ (f \circ \alpha^ {4}) \\ = \beta \circ ((f \circ \alpha) \circ \alpha^ {3}) = \beta \circ ((\beta \circ f) \circ \alpha^ {3}) = (\beta \circ (\beta \circ f)) \circ \alpha^ {3} \\ = \left(\beta^ {2} \circ f\right) \circ \alpha^ {3} = \beta^ {2} \circ \left(f \circ \alpha^ {3}\right) \\ = \dots \\ = \dots \\ = \beta^ {4} \circ (\beta \circ f) = \beta^ {5} \circ f \\ \end{array}
+\begin{array}{l} f \circ \alpha^ {5} = f \circ (\alpha \circ \alpha^ {4}) = (f \circ \alpha) \circ \alpha^ {4} = (\beta \circ f) \circ \alpha^ {4} = \beta \circ (f \circ \alpha^ {4}) \\ = \beta \circ ((f \circ \alpha) \circ \alpha^ {3}) = \beta \circ ((\beta \circ f) \circ \alpha^ {3}) = (\beta \circ (\beta \circ f)) \circ \alpha^ {3} \\ = \leqft(\beta^ {2} \circ f\right) \circ \alpha^ {3} = \beta^ {2} \circ \leqft(f \circ \alpha^ {3}\right) \\ = \dots \\ = \dots \\ = \beta^ {4} \circ (\beta \circ f) = \beta^ {5} \circ f \\ \end{array}
 $$
 
 Now we can write:
 
 $$
-\begin{array}{l} \beta^ {5} \left(y _ {1}\right) = \beta^ {5} \left(f \left(x _ {1}\right)\right) = \left(\beta^ {5} \circ f\right) \left(x _ {1}\right) = \left(f \circ \alpha^ {5}\right) \left(x _ {1}\right) = f \left(\alpha^ {5} \left(x _ {1}\right)\right) \\ = f (x _ {2}) = y _ {2} \\ \end{array}
+\begin{array}{l} \beta^ {5} \leqft(y _ {1}\right) = \beta^ {5} \leqft(f \leqft(x _ {1}\right)\right) = \leqft(\beta^ {5} \circ f\right) \leqft(x _ {1}\right) = \leqft(f \circ \alpha^ {5}\right) \leqft(x _ {1}\right) = f \leqft(\alpha^ {5} \leqft(x _ {1}\right)\right) \\ = f (x _ {2}) = y _ {2} \\ \end{array}
 $$
 
 Exercise 3 concerns the fixed points of an endomap  $X^{\mathcal{O}\alpha}$ , and it consists in proving that a map  $X^{\mathcal{O}\alpha} \xrightarrow{f} Y^{\mathcal{O}\beta}$  (meaning, as always,  $f \circ \alpha = \beta \circ f$ ) takes every fixed point of  $X^{\mathcal{O}\alpha}$  to a fixed point of  $Y^{\mathcal{O}\beta}$ . A fixed point of  $\alpha$  is an element  $x$  of  $X$  such that  $\alpha(x) = x$ . Such points can be thought of as 'equilibrium states' of the dynamics determined by  $\alpha$ . For example, the endomap
@@ -4804,7 +4804,7 @@ IAN: Is there a general rule to tell how many structure-preserving maps there ar
 There is no simple general rule, but in some particular cases it is easy to find the number of maps. For example, the number of maps from the  $X^{\odot \alpha}$  above to any other  $Y^{\odot \beta}$  is equal to the number of elements in  $Y^{\odot \beta}$  which have period four. We say that an element  $y$  in  $Y^{\odot \beta}$  has period four if  $\beta^4 (y) = y$ . All elements that have period one or two are included in this, because if  $\beta (y) = y$  or  $\beta^2 (y) = y$ , then also  $\beta^4 (y) = y$ . Now, as we saw before, a map of  $\mathcal{S}^{\circ}$  with domain  $X^{\odot \alpha}$  is completely determined by its value at 0, and this can be any element of  $Y^{\odot \beta}$  of period four. Thus maps from  $X^{\odot \alpha}$  to any  $Y^{\odot \beta}$  correspond exactly to elements of period four in  $Y^{\odot \beta}$ . The number of these can also be expressed as a sum of three numbers:
 
 $$
-\begin{array}{l} \left(\text {n u m b e r o f f i x e d p o i n t s i n} Y ^ {\circ \beta}\right) \\ + 2 \times (\text {n u m b e r o f c y c l e s o f l e n g t h 2 i n} Y ^ {\odot \beta}) \\ + 4 \times (o f c y c l e s o f l e n g t h 4 i n Y ^ {\circ \beta}) \\ \end{array}
+\begin{array}{l} \leqft(\text {n u m b e r o f f i x e d p o i n t s i n} Y ^ {\circ \beta}\right) \\ + 2 \times (\text {n u m b e r o f c y c l e s o f l e n g t h 2 i n} Y ^ {\odot \beta}) \\ + 4 \times (o f c y c l e s o f l e n g t h 4 i n Y ^ {\circ \beta}) \\ \end{array}
 $$
 
 # 2. Naming the elements that have a given period by maps
@@ -4912,7 +4912,7 @@ Exercise 5: Show that if  $\mathbb{N}^{\odot \sigma} \xrightarrow{f} Y^{\odot \b
 The results of Exercises 3 through 5 show that we have, for any dynamical system  $S = Y^{\otimes \beta}$ , the correspondence
 
 $$
-\frac {\text {s t a t e s o f} S \left(= \text {e l e m e n t s} y _ {0} \text {o f} Y\right)}{\text {m a p s o f d y n a m i c a l s y s t e m s} N \xrightarrow {y} S}
+\frac {\text {s t a t e s o f} S \leqft(= \text {e l e m e n t s} y _ {0} \text {o f} Y\right)}{\text {m a p s o f d y n a m i c a l s y s t e m s} N \xrightarrow {y} S}
 $$
 
 and that if  $y_0$  in  $Y$  corresponds (by  $y(n) = \beta^n(y_0)$ ) to
@@ -5583,7 +5583,7 @@ $$
 Show  $\alpha^2 = \alpha^3$
 
 $$
-\begin{array}{l} \alpha^ {2} x _ {1} = \alpha (\alpha (x _ {1})) = \alpha (x _ {2}) = x _ {3} = \\ = \alpha \left(x _ {3}\right) = \alpha \left(\alpha \left(x _ {2}\right)\right) = \alpha \left(\alpha \left(\alpha \left(x _ {1}\right)\right)\right) = \\ = \alpha^ {3} (x _ {1}). \\ \end{array}
+\begin{array}{l} \alpha^ {2} x _ {1} = \alpha (\alpha (x _ {1})) = \alpha (x _ {2}) = x _ {3} = \\ = \alpha \leqft(x _ {3}\right) = \alpha \leqft(\alpha \leqft(x _ {2}\right)\right) = \alpha \leqft(\alpha \leqft(\alpha \leqft(x _ {1}\right)\right)\right) = \\ = \alpha^ {3} (x _ {1}). \\ \end{array}
 $$
 
 Katie drew the internal diagram and gave each arrow a different label, but it is rather the whole diagram that is the endomap  $\alpha$ . When we draw the internal diagram of a map  $f: A \longrightarrow B$ ,
@@ -5601,7 +5601,7 @@ CHAD: Check for every input that they give the same output.
 Right. In this case we have three inputs, and we have to check three things:
 
 $$
-\alpha^ {2} \left(x _ {1}\right) = \alpha^ {3} \left(x _ {1}\right), \quad \alpha^ {2} \left(x _ {2}\right) = \alpha^ {3} \left(x _ {2}\right), \quad \text {a n d} \quad \alpha^ {2} \left(x _ {3}\right) = \alpha^ {3} \left(x _ {3}\right)
+\alpha^ {2} \leqft(x _ {1}\right) = \alpha^ {3} \leqft(x _ {1}\right), \quad \alpha^ {2} \leqft(x _ {2}\right) = \alpha^ {3} \leqft(x _ {2}\right), \quad \text {a n d} \quad \alpha^ {2} \leqft(x _ {3}\right) = \alpha^ {3} \leqft(x _ {3}\right)
 $$
 
 Katie has shown the first, but didn't do the other two. They are as easy as the first, but they have to be done. First check:  $\alpha^2 (x_2) = x_3$ , and then it follows that  $\alpha^3 (x_2) = \alpha (\alpha^2 (x_2)) = \alpha (x_3) = x_3$ . The last equation is even easier since  $x_{3} = \alpha (x_{3})$ , so that  $\alpha^2 (x_3) = x_3$  and also  $\alpha^3 (x_3) = x_3$ .
@@ -6343,7 +6343,7 @@ Let's make a little table to collect our information about terminal objects.
 Now let's see an example from the category of irreflexive graphs. Consider the graph
 
 $$
-G = \left[ \begin{array}{c} I a n \quad C h a d \\ s = u s u a l \quad \downarrow \quad t = t o d a y ^ {\prime} s \\ \boxed { \begin{array}{c c c c c} \bullet & \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet & \bullet \\ \end{array} } \\ (\text {s e t o f c h a i r s i n t h e c l a s s r o o m}) \end{array} \right]
+G = \leqft[ \begin{array}{c} I a n \quad C h a d \\ s = u s u a l \quad \downarrow \quad t = t o d a y ^ {\prime} s \\ \boxed { \begin{array}{c c c c c} \bullet & \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet & \bullet \\ \end{array} } \\ (\text {s e t o f c h a i r s i n t h e c l a s s r o o m}) \end{array} \right]
 $$
 
 The internal diagrams of these two maps are the following:
@@ -7099,7 +7099,7 @@ i.e. the diagram below commutes
 The maps  $j_1$  and  $j_2$  are called the sum injections of  $B_1$  and  $B_2$  into the sum  $S$ , and the notation for the unique map  $f$  is
 
 $$
-f = \left\{ \begin{array}{l} f _ {1} \\ f _ {2} \end{array} \right.
+f = \leqft\{ \begin{array}{l} f _ {1} \\ f _ {2} \end{array} \right.
 $$
 
 It should be a very good exercise for you to work out the following:
@@ -7134,13 +7134,13 @@ $$
 f _ {1}: B _ {1} \longrightarrow X \quad \text {a n d} \quad f _ {2}: B _ {2} \longrightarrow X
 $$
 
-How can we 'combine' these two maps into a map  $f = \left\{ \begin{array}{l} f_1 \\ f_2 \end{array} \right.$ ? Well, we can define  $f(s)$  by cases.' If  $s$  is 'in'  $B_1$  (meaning that it is the  $j_1$ -image of some  $s'$  in  $B_1$ ), we define  $f(s)$  using  $f_1$  (i.e.  $f(s) = f_1(s')$ ), and if  $s$  is 'in'  $B_2$  (i.e.  $s = j_2(s'')$  for some  $s''$  in  $B_2$ ) we define  $f(s)$  using  $f_2$ . In summary, we can define the map  $f$  by
+How can we 'combine' these two maps into a map  $f = \leqft\{ \begin{array}{l} f_1 \\ f_2 \end{array} \right.$ ? Well, we can define  $f(s)$  by cases.' If  $s$  is 'in'  $B_1$  (meaning that it is the  $j_1$ -image of some  $s'$  in  $B_1$ ), we define  $f(s)$  using  $f_1$  (i.e.  $f(s) = f_1(s')$ ), and if  $s$  is 'in'  $B_2$  (i.e.  $s = j_2(s'')$  for some  $s''$  in  $B_2$ ) we define  $f(s)$  using  $f_2$ . In summary, we can define the map  $f$  by
 
 $$
-f (s) = \left\{ \begin{array}{l} f _ {1} (s ^ {\prime}) \text {i f} s = j _ {1} (s ^ {\prime}) \\ f _ {2} (s ^ {\prime \prime}) \text {i f} s = j _ {2} (s ^ {\prime \prime}) \end{array} \right.
+f (s) = \leqft\{ \begin{array}{l} f _ {1} (s ^ {\prime}) \text {i f} s = j _ {1} (s ^ {\prime}) \\ f _ {2} (s ^ {\prime \prime}) \text {i f} s = j _ {2} (s ^ {\prime \prime}) \end{array} \right.
 $$
 
-(This expression is the origin of the notation  $\left\{ \begin{array}{ll}f_{1}\\ f_{2} \end{array} \right.$  for the map  $f$  .
+(This expression is the origin of the notation  $\leqft\{ \begin{array}{ll}f_{1}\\ f_{2} \end{array} \right.$  for the map  $f$  .
 
 This definition works because for each  $s$  in  $S$ , either  $s = j_1(s')$  for exactly one  $s'$  in  $B_1$  or  $s = j_2(s'')$  for exactly one  $s''$  in  $B_2$ , but not both. In other words, the maps  $j_1$  and  $j_2$  are injective, and they cover the whole of  $S$  (are exhaustive) and do not overlap (are disjoint).
 
@@ -7341,7 +7341,7 @@ In all the categories which we have studied, sums and products are related by th
 Assuming that  $X$ ,  $B_{1}$  and  $B_{2}$  are objects of a category with sums and products, construct a map from the sum of  $X \times B_{1}$  and  $X \times B_{2}$  to the product of  $X$  with  $B_{1} + B_{2}$ , i.e. construct a map
 
 $$
-\left(X \times B _ {1}\right) + \left(X \times B _ {2}\right) \longrightarrow X \times \left(B _ {1} + B _ {2}\right)
+\leqft(X \times B _ {1}\right) + \leqft(X \times B _ {2}\right) \longrightarrow X \times \leqft(B _ {1} + B _ {2}\right)
 $$
 
 Hint: Use the universal mapping properties of sum and product, and combine appropriate injections and projections.
@@ -7365,7 +7365,7 @@ $$
 An exercise in the last session asked you to find, for any three objects  $A$ ,  $B_1$ , and  $B_2$  of a category  $\mathcal{C}$  that has sums and products, a 'standard' map
 
 $$
-A \times B _ {1} + A \times B _ {2} \longrightarrow A \times \left(B _ {1} + B _ {2}\right)
+A \times B _ {1} + A \times B _ {2} \longrightarrow A \times \leqft(B _ {1} + B _ {2}\right)
 $$
 
 In many categories, this map and the standard (only) map  $\mathbf{0} \longrightarrow A \times \mathbf{0}$  have inverses; when this happens we say that the distributive law holds in  $\mathcal{C}$ , or that the category  $\mathcal{C}$  is distributive. This is the case in all the categories that we have discussed in the sessions.
@@ -7375,7 +7375,7 @@ In categories in which the distributive law doesn't hold, the use of 'sum' for t
 The construction of the standard map mentioned above will be an application of a general fact which follows by combining the universal mapping property of products with that of coproducts: A map from a coproduct of two objects to a product of two objects is 'equivalent' to four maps, one from each summand to each factor. Since its domain is a coproduct, we know that a map  $f$  from  $C_1 + C_2$  to  $A \times B$  is determined by its composites with the injections of  $C_1$  and  $C_2$ , and can be denoted
 
 $$
-f = \left\{ \begin{array}{l} f _ {1} \\ f _ {2} \end{array} \right.
+f = \leqft\{ \begin{array}{l} f _ {1} \\ f _ {2} \end{array} \right.
 $$
 
 where  $f_{1}$  and  $f_{2}$  are the result of composing  $f$  with the injections of  $C_{1}$  and  $C_{2}$  into  $C_{1} + C_{2}$ .
@@ -7397,19 +7397,19 @@ $$
 and, conversely, any four such maps determine a map from  $C_1 + C_2$  to  $A \times B$  given by
 
 $$
-f = \left\{ \begin{array}{l} \langle f _ {1 A}, f _ {1 B} \rangle \\ \langle f _ {2 A}, f _ {2 B} \rangle \end{array} \right.
+f = \leqft\{ \begin{array}{l} \langle f _ {1 A}, f _ {1 B} \rangle \\ \langle f _ {2 A}, f _ {2 B} \rangle \end{array} \right.
 $$
 
 which is more often denoted by the matrix (using a rectangular array of maps enclosed in brackets)
 
 $$
-f = \left[ \begin{array}{c} f _ {1 A} f _ {1 B} \\ f _ {2 A} f _ {2 B} \end{array} \right]
+f = \leqft[ \begin{array}{c} f _ {1 A} f _ {1 B} \\ f _ {2 A} f _ {2 B} \end{array} \right]
 $$
 
 This analysis can be carried out more generally, for coproducts and products of any number of objects. For any objects  $C_1, \ldots, C_m$ , and  $A_1, \ldots, A_n$ , denote product projections by  $A_1 \times \ldots \times A_n \xrightarrow{p_\nu} A_\nu$  and sum injections by  $C_\mu \xrightarrow{j_\mu} C_1 + \ldots + C_m$ . Then for any matrix
 
 $$
-\left[ \begin{array}{c c} f _ {1 1} f _ {1 2} \dots f _ {1 n} \\ \vdots & \vdots \\ f _ {m 1} & \dots f _ {m n} \end{array} \right]
+\leqft[ \begin{array}{c c} f _ {1 1} f _ {1 2} \dots f _ {1 n} \\ \vdots & \vdots \\ f _ {m 1} & \dots f _ {m n} \end{array} \right]
 $$
 
 where  $f_{\mu \nu}: C_\mu \longrightarrow A_\nu$ , there is exactly one map
@@ -7429,7 +7429,7 @@ This way of stating the result, which gives the matrix for  $f$  by formulas, al
 To apply this to the problem of defining a map
 
 $$
-A \times B _ {1} + A \times B _ {2} \longrightarrow A \times \left(B _ {1} + B _ {2}\right)
+A \times B _ {1} + A \times B _ {2} \longrightarrow A \times \leqft(B _ {1} + B _ {2}\right)
 $$
 
 we must define four maps as follows:
@@ -7455,7 +7455,7 @@ These choices provide the standard map  $A \times B_1 + A \times B_2 \xrightarro
 There is a general distributive law which is valid in all distributive categories. If  $B_{1}, B_{2}, \ldots, B_{n}$  and  $A$  are objects in any category with sums and products there is a standard map
 
 $$
-A \times B _ {1} + A \times B _ {2} + \dots + A \times B _ {n} \longrightarrow A \times \left(B _ {1} + B _ {2} + \dots + B _ {n}\right)
+A \times B _ {1} + A \times B _ {2} + \dots + A \times B _ {n} \longrightarrow A \times \leqft(B _ {1} + B _ {2} + \dots + B _ {n}\right)
 $$
 
 The general distributive law says that this standard map is an isomorphism. In the case of  $n = 0$  (sum of no objects) the domain of this map is an initial object, and the map itself is the unique map
@@ -7477,7 +7477,7 @@ Let me make a brief departure from our main topic to say something about these l
 The existence of zero maps has as a consequence that we can define a preferred map from the coproduct  $X + Y$  to the product  $X \times Y$ ,
 
 $$
-f = \left[ \begin{array}{c c} 1 _ {X} & \theta_ {X Y} \\ \theta_ {Y X} & 1 _ {Y} \end{array} \right]: X + Y \longrightarrow X \times Y
+f = \leqft[ \begin{array}{c c} 1 _ {X} & \theta_ {X Y} \\ \theta_ {Y X} & 1 _ {Y} \end{array} \right]: X + Y \longrightarrow X \times Y
 $$
 
 This map is called the 'identity matrix.'
@@ -7487,7 +7487,7 @@ Definition: A category with zero maps in which every 'identity matrix' (as defin
 In a linear category, since every identity matrix is an isomorphism, we can 'multiply' any matrices  $A + B \xrightarrow{f} X \times Y$  and  $X + Y \xrightarrow{g} U \times V$ . We simply define their 'product' as
 
 $$
-\left[ \begin{array}{c c} f _ {A X} & f _ {A Y} \\ f _ {B X} & f _ {B Y} \end{array} \right] \cdot \left[ \begin{array}{c c} g _ {X U} & g _ {X V} \\ g _ {Y U} & g _ {Y V} \end{array} \right] = \left[ \begin{array}{c c} g _ {X U} & g _ {X V} \\ g _ {Y U} & g _ {Y V} \end{array} \right] \circ \left[ \begin{array}{c c} 1 _ {X} & 0 _ {X Y} \\ 0 _ {Y X} & 1 _ {Y} \end{array} \right] ^ {- 1} \circ \left[ \begin{array}{c c} f _ {A X} & f _ {A Y} \\ f _ {B X} & f _ {B Y} \end{array} \right]
+\leqft[ \begin{array}{c c} f _ {A X} & f _ {A Y} \\ f _ {B X} & f _ {B Y} \end{array} \right] \cdot \leqft[ \begin{array}{c c} g _ {X U} & g _ {X V} \\ g _ {Y U} & g _ {Y V} \end{array} \right] = \leqft[ \begin{array}{c c} g _ {X U} & g _ {X V} \\ g _ {Y U} & g _ {Y V} \end{array} \right] \circ \leqft[ \begin{array}{c c} 1 _ {X} & 0 _ {X Y} \\ 0 _ {Y X} & 1 _ {Y} \end{array} \right] ^ {- 1} \circ \leqft[ \begin{array}{c c} f _ {A X} & f _ {A Y} \\ f _ {B X} & f _ {B Y} \end{array} \right]
 $$
 
 This 'product' is another matrix (but now from  $A + B$  to  $U \times V$ ) since it is nothing but the composite
@@ -7505,19 +7505,19 @@ This matrix multiplication has a very interesting consequence. If  $A$  and  $B$
 another map from  $A$  to  $B$ . We use the following particular case of the above matrix multiplication (denoting the two maps that we are going to add by  $A \xrightarrow{f} B$  and  $A \xrightarrow{g} B$ ): Take  $X = U = A$ ,  $Y = V = B$  and the matrices
 
 $$
-\left[ \begin{array}{l l} g _ {X U} & g _ {X V} \\ g _ {Y U} & g _ {Y V} \end{array} \right] = \left[ \begin{array}{c c} 1 _ {A A} & g \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] \quad \text {a n d} \quad \left[ \begin{array}{c c} f _ {A X} & f _ {A Y} \\ f _ {B X} & f _ {B Y} \end{array} \right] = \left[ \begin{array}{c c} 1 _ {A A} & f \\ 0 _ {B A} & 1 _ {B B} \end{array} \right]
+\leqft[ \begin{array}{l l} g _ {X U} & g _ {X V} \\ g _ {Y U} & g _ {Y V} \end{array} \right] = \leqft[ \begin{array}{c c} 1 _ {A A} & g \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] \quad \text {a n d} \quad \leqft[ \begin{array}{c c} f _ {A X} & f _ {A Y} \\ f _ {B X} & f _ {B Y} \end{array} \right] = \leqft[ \begin{array}{c c} 1 _ {A A} & f \\ 0 _ {B A} & 1 _ {B B} \end{array} \right]
 $$
 
 One can show that the 'product' of these two matrices must be of the form
 
 $$
-\left[ \begin{array}{c c} 1 _ {A A} & f \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] \cdot \left[ \begin{array}{c c} 1 _ {A A} & g \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] = \left[ \begin{array}{c c} 1 _ {A A} & h \\ 0 _ {B A} & 1 _ {B B} \end{array} \right]
+\leqft[ \begin{array}{c c} 1 _ {A A} & f \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] \cdot \leqft[ \begin{array}{c c} 1 _ {A A} & g \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] = \leqft[ \begin{array}{c c} 1 _ {A A} & h \\ 0 _ {B A} & 1 _ {B B} \end{array} \right]
 $$
 
 for exactly one map  $h: A \longrightarrow B$ . The sum of  $f$  and  $g$  is now defined to be this map  $h$ , so that  $f + g$  is uniquely determined by the equation
 
 $$
-\left[ \begin{array}{c c} 1 _ {A A} & f \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] \cdot \left[ \begin{array}{c c} 1 _ {A A} & g \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] = \left[ \begin{array}{c c} 1 _ {A A} & f + g \\ 0 _ {B A} & 1 _ {B B} \end{array} \right]
+\leqft[ \begin{array}{c c} 1 _ {A A} & f \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] \cdot \leqft[ \begin{array}{c c} 1 _ {A A} & g \\ 0 _ {B A} & 1 _ {B B} \end{array} \right] = \leqft[ \begin{array}{c c} 1 _ {A A} & f + g \\ 0 _ {B A} & 1 _ {B B} \end{array} \right]
 $$
 
 Even more interesting is that we now get a formula for multiplication of matrices in terms of this addition of maps:
@@ -7527,7 +7527,7 @@ Even more interesting is that we now get a formula for multiplication of matrice
 Using the above definitions of matrix multiplication and addition of maps, prove the following formula for matrix multiplication:
 
 $$
-\begin{array}{l} \left[ \begin{array}{l l} f _ {A X} & f _ {A Y} \\ f _ {B X} & f _ {B Y} \end{array} \right] \cdot \left[ \begin{array}{l l} g _ {X U} & g _ {X V} \\ g _ {Y U} & g _ {Y V} \end{array} \right] = \\ \left[ \begin{array}{l l} g _ {X U} \circ f _ {A X} + g _ {Y U} \circ f _ {A Y} & g _ {X V} \circ f _ {A X} + g _ {Y V} \circ f _ {A Y} \\ g _ {X U} \circ f _ {B X} + g _ {Y U} \circ f _ {B Y} & g _ {X V} \circ f _ {B X} + g _ {Y V} \circ f _ {B Y} \end{array} \right] \\ \end{array}
+\begin{array}{l} \leqft[ \begin{array}{l l} f _ {A X} & f _ {A Y} \\ f _ {B X} & f _ {B Y} \end{array} \right] \cdot \leqft[ \begin{array}{l l} g _ {X U} & g _ {X V} \\ g _ {Y U} & g _ {Y V} \end{array} \right] = \\ \leqft[ \begin{array}{l l} g _ {X U} \circ f _ {A X} + g _ {Y U} \circ f _ {A Y} & g _ {X V} \circ f _ {A X} + g _ {Y V} \circ f _ {A Y} \\ g _ {X U} \circ f _ {B X} + g _ {Y U} \circ f _ {B Y} & g _ {X V} \circ f _ {B X} + g _ {Y V} \circ f _ {B Y} \end{array} \right] \\ \end{array}
 $$
 
 It is worth mentioning where the zero maps come from. In a linear category, the product of a finite family of objects is isomorphic to the coproduct. For an empty family, this says that the terminal object is isomorphic to the initial object. This isomorphism allows us to define 'the zero map' from an object  $X$  to an object  $Y$  by composing the unique maps
@@ -7555,7 +7555,7 @@ and the defining universal mapping property is that for any three maps from  $B_
 there is a unique map  $B_{1} + B_{2} + B_{3}\xrightarrow{f} X$ , which can be denoted
 
 $$
-f = \left\{ \begin{array}{l} f _ {1} \\ f _ {2} \\ f _ {3} \end{array} \right.
+f = \leqft\{ \begin{array}{l} f _ {1} \\ f _ {2} \\ f _ {3} \end{array} \right.
 $$
 
 such that  $f j_{1} = f_{1}, f j_{2} = f_{2}$ , and  $f j_{3} = f_{3}$ . If a category has sums of two objects, then it also has sums of three objects: given  $B_{1}, B_{2}$  and  $B_{3}$  we first form the sum of  $B_{1}$  and  $B_{2}$ , then the sum of  $B_{1} + B_{2}$  with  $B_{3}$ . We obtain injections from  $B_{1} + B_{2}$  and  $B_{3}$ , and composition with the injections from  $B_{1}$  and  $B_{2}$  to  $B_{1} + B_{2}$  yields the three injections required for a sum of three objects:
@@ -7579,7 +7579,7 @@ IAN: Well, just  $B_{1}$  plus  $B_{2} + B_{3}$ .
 Right. This construction is slightly different but you can verify in the same way that it also gives three injections which satisfy the correct universal mapping property. Then the uniqueness theorem for triple sums implies that we have an isomorphism
 
 $$
-\left(B _ {1} + B _ {2}\right) + B _ {3} \cong B _ {1} + \left(B _ {2} + B _ {3}\right)
+\leqft(B _ {1} + B _ {2}\right) + B _ {3} \cong B _ {1} + \leqft(B _ {2} + B _ {3}\right)
 $$
 
 A similar reasoning applies to sums of four objects or more, and obviously all that we have said about sums applies also to products, so that one can find the triple product  $A \times B \times C$  as  $(A \times B) \times C$  or as  $A \times (B \times C)$ . In summary, if it is possible
@@ -7667,7 +7667,7 @@ Let's summarize the terminal objects in these various categories in a table.
 # Terminal object if  $\mathcal{C}$  is the category ...
 
 $$
-\begin{array}{c c} \boldsymbol {S} = \text {S e t s a n d a l m a p s} & \left| \begin{array}{l l} \boldsymbol {S} ^ {\circ} = \text {D y n a m i c a l s y s t e m s} \\ T = \bigodot \end{array} \right. \\ T = \bigodot \end{array} \qquad \qquad T = \bigodot
+\begin{array}{c c} \boldsymbol {S} = \text {S e t s a n d a l m a p s} & \leqft| \begin{array}{l l} \boldsymbol {S} ^ {\circ} = \text {D y n a m i c a l s y s t e m s} \\ T = \bigodot \end{array} \right. \\ T = \bigodot \end{array} \qquad \qquad T = \bigodot
 $$
 
 What about initial objects? What is an initial object in sets?
@@ -7831,7 +7831,7 @@ That is  $f(0) = (0,0)$ ,  $f(1) = (1,0)$ ,  $f(2) = (0,1)$ ,  $f(3) = (2,0)$ , 
 The inverse, call it  $g$ , of the isomorphism of sets  $\mathbb{N} \xrightarrow{f} \mathbb{N} \times \mathbb{N}$  above is actually given by a quadratic polynomial, of the form
 
 $$
-g (x, y) = \frac {1}{2} \left(a x ^ {2} + b x y + c y ^ {2} + d x + e y\right)
+g (x, y) = \frac {1}{2} \leqft(a x ^ {2} + b x y + c y ^ {2} + d x + e y\right)
 $$
 
 where  $a, b, c, d$ , and  $e$  are fixed natural numbers. Can you find them? Can you prove that the map  $g$  defined by your formula is an isomorphism of sets? You might expect that  $f$  would have a simpler formula than its inverse  $g$ , since a map  $\mathbb{N} \xrightarrow{f} \mathbb{N} \times \mathbb{N}$  amounts to a pair of maps  $f_1 = p_1 f$  and  $f_2 = p_2 f$  from  $\mathbb{N}$  to  $\mathbb{N}$ . But  $f_1$  and  $f_2$  are not so simple. In fact, no matter what isomorphism  $\mathbb{N} \xrightarrow{f} \mathbb{N} \times \mathbb{N}$  you choose,  $f_1$  cannot be given by a polynomial. Can you see why?
@@ -7978,7 +7978,7 @@ is not an isomorphism.
 (b) Find objects  $A, B_1$ , and  $B_2$  for which the standard map
 
 $$
-A \times B _ {1} + A \times B _ {2} \longrightarrow A \times \left(B _ {1} + B _ {2}\right)
+A \times B _ {1} + A \times B _ {2} \longrightarrow A \times \leqft(B _ {1} + B _ {2}\right)
 $$
 
 is not an isomorphism.
@@ -8028,7 +8028,7 @@ Hint: First explain what  $\pmb{B} \times \pmb{C} = \pmb{1}$  means!
 2. All parts of this problem are in  $S^{\downarrow \downarrow}$ , the category of irreflexive graphs.
 
 $$
-D = \boxed {\bullet} \quad A = \boxed {\bullet \longrightarrow \bullet} \quad B = \boxed {C \cdot \longrightarrow \bullet} \quad C = \boxed {\bullet \leftarrow \bullet \longrightarrow \bullet}
+D = \boxed {\bullet} \quad A = \boxed {\bullet \longrightarrow \bullet} \quad B = \boxed {C \cdot \longrightarrow \bullet} \quad C = \boxed {\bullet \leqftarrow \bullet \longrightarrow \bullet}
 $$
 
 (a) Find the number of maps  $\mathbf{1} \longrightarrow B + D$  and the number of maps  $\mathbf{1} \longrightarrow C$ .
@@ -8138,13 +8138,13 @@ $$
 for all  $t$ . Taking the special case  $t = t_0$ , we have
 
 $$
-g \left(t _ {0}\right) = f \left(t _ {0}, t _ {0}\right)
+g \leqft(t _ {0}\right) = f \leqft(t _ {0}, t _ {0}\right)
 $$
 
 which by the definition of  $g$  says
 
 $$
-\alpha \left(f \left(t _ {0}, t _ {0}\right)\right) = f \left(t _ {0}, t _ {0}\right)
+\alpha \leqft(f \leqft(t _ {0}, t _ {0}\right)\right) = f \leqft(t _ {0}, t _ {0}\right)
 $$
 
 or, in other words, that  $y_0 = f(t_0, t_0)$  defines a point of  $Y$  which is fixed by  $\alpha$ :
@@ -8174,7 +8174,7 @@ $$
 for all sets  $T$ , where  $\mathbb{N}^T$  is a set for which there is a map  $T \times \mathbb{N}^T \longrightarrow \mathbb{N}$  which parameterizes all maps  $T \longrightarrow \mathbb{N}$ . (Such a map is called an evaluation map and will be studied more in Part V.) Cantor drew the conclusion that for any infinite set  $T$ , there is a whole sequence
 
 $$
-T <   \mathbf {2} ^ {T} <   \mathbf {2} ^ {\left(\mathbf {2} ^ {T}\right)} <   \mathbf {2} ^ {\mathbf {2} ^ {\left(\mathbf {2} ^ {T}\right)}} \dots
+T <   \mathbf {2} ^ {T} <   \mathbf {2} ^ {\leqft(\mathbf {2} ^ {T}\right)} <   \mathbf {2} ^ {\mathbf {2} ^ {\leqft(\mathbf {2} ^ {T}\right)}} \dots
 $$
 
 of genuinely 'more and more infinite' sets.
@@ -8291,7 +8291,7 @@ Definition: Given two objects  $T, Y$  in a category with products, an object  $
 
 ![](images/55f5dfdbb6819c1bd0eb995f8ed8c541af54134bf3d6957ec2ea7a8602e3e485.jpg)
 
-i.e. for which  $f(t,x) = e(t,\bar{f}^{\neg}(x))$  for all  $S \xrightarrow{t} T$ ,  $S \xrightarrow{x} X$ .
+i.e. for which  $f(t,x) = e(t,\bar{f}^{\neqg}(x))$  for all  $S \xrightarrow{t} T$ ,  $S \xrightarrow{x} X$ .
 
 Notation: The map  $\bar{f}$ , uniquely determined by  $f$ , is sometimes called the 'name of  $f$ '. The map  $e$  is called the evaluation map. Because of the uniqueness of map objects (Exercise 1 below) we can give  $M$  also a special symbol: call it  $Y^T$  with  $T \times Y^T \xrightarrow{e} Y$ . Now our 'exactly one' condition on  $e$  is abbreviated as:
 
@@ -8342,7 +8342,7 @@ $$
 Prove that
 
 $$
-\left(Y _ {1} \times Y _ {2}\right) ^ {T} \cong Y _ {1} ^ {T} \times Y _ {2} ^ {T}
+\leqft(Y _ {1} \times Y _ {2}\right) ^ {T} \cong Y _ {1} ^ {T} \times Y _ {2} ^ {T}
 $$
 
 $$
@@ -8440,7 +8440,7 @@ $$
 by the formula
 
 $$
-\bar {f} (x) (n) = f \left(\alpha^ {n} x\right)
+\bar {f} (x) (n) = f \leqft(\alpha^ {n} x\right)
 $$
 
 i.e.  $\bar{f}$  assigns to any state  $x$  the sequence of all  $f$ -observations through its 'future.' The map  $\bar{f}$  is actually a map of dynamical systems:
@@ -8672,7 +8672,7 @@ $$
 The idea of the proofs is to use the universal mapping properties. We will sketch how it goes. For the first law we have, by the definition of map object,
 
 $$
-\frac {X \longrightarrow \left(Y _ {1} \times Y _ {2}\right) ^ {T}}{T \times X \longrightarrow Y _ {1} \times Y _ {2}}
+\frac {X \longrightarrow \leqft(Y _ {1} \times Y _ {2}\right) ^ {T}}{T \times X \longrightarrow Y _ {1} \times Y _ {2}}
 $$
 
 Now, by the universal mapping property of products, applied to  $Y_{1} \times Y_{2}$ ,
@@ -8704,7 +8704,7 @@ Now, although this is only a sketch of the proof, it is a very complete sketch b
 taking its identity as the map we start with, this identity corresponds to a special map  $(Y_{1} \times Y_{2})^{T} \longrightarrow Y_{1}^{T} \times Y_{2}^{T}$ . Similarly, taking  $X = Y_{1}^{T} \times Y_{2}^{T}$  we see that there is a map  $Y_{1}^{T} \times Y_{2}^{T} \longrightarrow (Y_{1} \times Y_{2})^{T}$  that corresponds to the identity of  $Y_{1}^{T} \times Y_{2}^{T}$ . All that remains in order to have a complete proof is to show that the two maps
 
 $$
-\left(Y _ {1} \times Y _ {2}\right) ^ {T} \longrightarrow Y _ {1} ^ {T} \times Y _ {2} ^ {T} \quad \text {a n d} \quad Y _ {1} ^ {T} \times Y _ {2} ^ {T} \longrightarrow \left(Y _ {1} \times Y _ {2}\right) ^ {T}
+\leqft(Y _ {1} \times Y _ {2}\right) ^ {T} \longrightarrow Y _ {1} ^ {T} \times Y _ {2} ^ {T} \quad \text {a n d} \quad Y _ {1} ^ {T} \times Y _ {2} ^ {T} \longrightarrow \leqft(Y _ {1} \times Y _ {2}\right) ^ {T}
 $$
 
 so obtained are inverse of each other. This also follows from the appropriate universal mapping properties, which imply that the two composites satisfy properties that only the corresponding identity maps satisfy. Try to carry out the complete proof indicated above. Once you do that, the calculation sketch becomes a much more reliable tool whose value is enhanced by its simplicity.
@@ -8734,7 +8734,7 @@ $$
 Directly comparing top and bottom, we have
 
 $$
-\frac {X \longrightarrow Y ^ {\left(T _ {1} + T _ {2}\right)}}{X \longrightarrow Y ^ {T _ {1}} \times Y ^ {T _ {2}}}
+\frac {X \longrightarrow Y ^ {\leqft(T _ {1} + T _ {2}\right)}}{X \longrightarrow Y ^ {T _ {1}} \times Y ^ {T _ {2}}}
 $$
 
 This law of exponents illustrates that multiplication is more basic than addition, since maps from a sum - points of  $Y^{(T_1 + T_2)}$  - are points of a product, namely  $Y^{T_1} \times Y^{T_2}$ . Notice also that the first law of exponents discussed above tells us that a map from  $T$  into the product of  $Y_1$  and  $Y_2$  is also equivalent to a point of a product, namely  $Y_1^T \times Y_2^T$ .
@@ -8744,13 +8744,13 @@ This law of exponents illustrates that multiplication is more basic than additio
 We have mentioned that any cartesian closed category satisfies the distributive law. We can now justify that statement by giving the construction of a map
 
 $$
-T \times \left(X _ {1} + X _ {2}\right) \longrightarrow T \times X _ {1} + T \times X _ {2}
+T \times \leqft(X _ {1} + X _ {2}\right) \longrightarrow T \times X _ {1} + T \times X _ {2}
 $$
 
 which can be proved to be inverse to the standard map
 
 $$
-T \times X _ {1} + T \times X _ {2} \longrightarrow T \times \left(X _ {1} + X _ {2}\right)
+T \times X _ {1} + T \times X _ {2} \longrightarrow T \times \leqft(X _ {1} + X _ {2}\right)
 $$
 
 The construction is based on the following calculation:
@@ -8760,7 +8760,7 @@ T \times (X _ {1} + X _ {2}) \longrightarrow T \times X _ {1} + T \times X _ {2}
 $$
 
 $$
-\overline {{X _ {1} + X _ {2}}} \longrightarrow \left(T \times X _ {1} + T \times X _ {2}\right) ^ {T}
+\overline {{X _ {1} + X _ {2}}} \longrightarrow \leqft(T \times X _ {1} + T \times X _ {2}\right) ^ {T}
 $$
 
 $$
@@ -8864,7 +8864,7 @@ such that
 that is, the map  $f$  can be expressed as
 
 $$
-f = e \circ \left(1 _ {T} \times f ^ {\prime}\right).
+f = e \circ \leqft(1 _ {T} \times f ^ {\prime}\right).
 $$
 
 # Universal mapping property defining a product
@@ -9147,7 +9147,7 @@ of course,  $a_1$  and  $a_2$  are only two of the several subgraphs that  $C$  
 
 ![](images/a868de71d570c9d14776692bd381419b46ad337a681a919a1cdad6f1f5e4b3c4.jpg)
 
-Notice that the map  $\left\{ \begin{array}{l}a_{2}\\ p \end{array} \right.$  from  $A + D$  to  $C$  ,i.e.
+Notice that the map  $\leqft\{ \begin{array}{l}a_{2}\\ p \end{array} \right.$  from  $A + D$  to  $C$  ,i.e.
 
 ![](images/541eef48e488c6c333dd559a76d4eb5f4da3769ce51504c6ab7bf6ac9d8ab349.jpg)
 
@@ -9698,7 +9698,7 @@ The category of actions of a group is actually a topos, but this takes place in 
 Exercise 6: Given two actions  $X, Y$  of a group  $G$ , consider the set  $Y^X$  of all abstract maps (i.e. not necessarily preserving the actions) from  $X$  to  $Y$ , equipped with the action
 
 $$
-(f a) (x) = \left(f \left(x a ^ {- 1}\right)\right) a
+(f a) (x) = \leqft(f \leqft(x a ^ {- 1}\right)\right) a
 $$
 
 Show that this is actually the determination of the exponential object or map space in the category of actions.
@@ -9812,7 +9812,7 @@ The notion of category embraces at least three related sorts of mathematical env
 The example (a) reflects the observation that the substitutions in a theory  $\mathcal{A}$  can be composed, hence are the maps in a category. A realization  $R$  of  $\mathcal{A}$  in  $\mathcal{B}$  is then a functor from  $\mathcal{A}$  to  $\mathcal{B}$ : a functor is a transformation that turns objects and maps in  $\mathcal{A}$  into objects and maps in  $\mathcal{B}$  in such a way as to satisfy the equations
 
 $$
-\begin{array}{l} R (\varphi \psi) = R (\varphi) R (\psi) \\ R \left(1 _ {A}\right) = 1 _ {R A} \\ \end{array}
+\begin{array}{l} R (\varphi \psi) = R (\varphi) R (\psi) \\ R \leqft(1 _ {A}\right) = 1 _ {R A} \\ \end{array}
 $$
 
 that express compatibility of  $R$  with composition of maps in  $\mathcal{A}$  and  $\mathcal{B}$ . The many examples of this kind demanded the recognition of the 'category of categories': an object is a category and a map is a functor. The category of categories has map objects, called 'functor categories'. That is, we have for each  $\mathcal{B}$  and  $\mathcal{A}$  a category  $\mathcal{B}^{\mathcal{A}}$  and a bijective correspondence
@@ -9955,7 +9955,7 @@ The 'underlying' functor has a left adjoint, assigning the free dynamical system
 Certain augmented dynamical systems are much used under the name of Newton's method. The mathematical struggle of solving equations, in one-dimensional, finite-dimensional, and even infinite-dimensional calculus treats a given smooth function  $f$  from  $X$  to  $Y$ , and a given possible output  $y$ . One wishes to find an  $x$  for which  $f(x) = y$ ; that is, to partially 'invert'  $f$ , even though there is no known section for  $f$ . Newton's method for this problem uses the new map
 
 $$
-\varphi (x) = x + \left(f ^ {\prime} (x)\right) ^ {- 1} (y - f (x))
+\varphi (x) = x + \leqft(f ^ {\prime} (x)\right) ^ {- 1} (y - f (x))
 $$
 
 where  $f'$  is the derivative of  $f$  in the sense of calculus. Often one can find a 'small' space  $A$  in  $X$  such that the formula  $\varphi$  defines an endomap of  $A$  and such that there is just one point  $x_{\infty}$  in  $A$  for which  $f(x_{\infty}) = y$ . Since clearly  $x_{\infty}$  is a fixed point of  $\varphi$ , we see that  $A, \varphi, x_{\infty}$  defines an action of  $N_{\infty}$  i.e. an augmented dynamical system. The purpose of the whole construction derives from the fact that often the sequence  $a, \varphi(a), \varphi(\varphi(a)), \ldots$  'converges' to the solution  $x_{\infty}$  from any starting point  $a$  in  $A$ . This is often the most practical way to find approximations to  $x_{\infty}$ . (Unlike the simple case of a quadratic polynomial  $f$ , usually no explicit formula for  $x_{\infty}$  is known.) To define what it means for  $A$  to be 'small' and for the sequence above to 'converge' to  $x_{\infty}$ , requires an environment  $\mathcal{B}$  somewhat richer than abstract sets (such  $\mathcal{B}$  are studied in topology and analysis).
@@ -9998,7 +9998,7 @@ Emmy Noether (1920s) advanced the application of general algebraic methods in ge
 Witold Hurewicz (1930s & 1940s) captured the higher connectivity of  $X$  using the connectivity of spaces  $X^A$  and demanded that a reasonable category of spaces should contain (along with  $X$  and  $A$ ) a space  $X^A$  satisfying the exponential law
 
 $$
-\left(X ^ {A}\right) ^ {L} \cong X ^ {A \times L}
+\leqft(X ^ {A}\right) ^ {L} \cong X ^ {A \times L}
 $$
 
 that objectifies the above analysis.

@@ -23,7 +23,7 @@
 
 **Fubini定理**：设(X,μ)和(Y,ν)是σ-有限测度空间，f: X×Y→ℝ可积，则：
 
-$$\int_{X \times Y} f \, d(\mu \times \nu) = \int_X \leqft( \int_Y f(x,y) \, d\nu(y) \right) d\mu(x) = \int_Y \leqft( \int_X f(x,y) \, d\mu(x) \right) d\nu(y)$$
+$$\int_{X \times Y} f \, d(\mu \times \nu) = \int_X \leqqft( \int_Y f(x,y) \, d\nu(y) \right) d\mu(x) = \int_Y \leqqft( \int_X f(x,y) \, d\mu(x) \right) d\nu(y)$$
 
 ### 1.2 Tonelli定理（非负版本）
 

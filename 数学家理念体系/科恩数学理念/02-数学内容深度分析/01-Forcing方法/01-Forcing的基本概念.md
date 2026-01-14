@@ -1,4 +1,4 @@
-# Forcing的基本概念
+﻿# Forcing的基本概念
 
 **创建日期**: 2025年12月15日
 **研究领域**: 科恩数学理念 - 数学内容深度分析 - Forcing方法 - Forcing的基本概念
@@ -82,15 +82,15 @@
 
 **部分序集（Partial Order）**：
 
-一个部分序集是一个偏序集 $(P, \leq)$，其中：
+一个部分序集是一个偏序集 $(P, \leqq)$，其中：
 
 - $P$ 是集合（forcing条件）
-- $\leq$ 是偏序关系
+- $\leqq$ 是偏序关系
 - 通常要求有最大元 $\mathbb{1}$
 
 **记号**：
 
-- $p \leq q$ 表示 $p$ 比 $q$ 更强
+- $p \leqq q$ 表示 $p$ 比 $q$ 更强
 - $p \perp q$ 表示 $p$ 和 $q$ 不兼容
 
 ---
@@ -102,7 +102,7 @@
 $$P = \text{Fn}(\omega_2 \times \omega, 2)$$
 
 - **定义**：从 $\omega_2 \times \omega$ 到 $2$ 的有限部分函数的集合
-- **偏序关系**：$p \leq q$ 当且仅当 $p \supseteq q$（$p$ 是 $q$ 的扩展）
+- **偏序关系**：$p \leqq q$ 当且仅当 $p \supseteq q$（$p$ 是 $q$ 的扩展）
 - **最大元**：空函数 $\emptyset$
 - **性质**：满足可数反链条件（c.c.c.），因此保持所有基数
 - **应用**：用于证明CH的独立性
@@ -145,11 +145,11 @@ $$P = \text{Fn}(\omega_2 \times \omega, 2)$$
 
 $D \subseteq P$ 是稠密的，如果：
 
-对任意 $p \in P$，存在 $q \in D$ 使得 $q \leq p$。
+对任意 $p \in P$，存在 $q \in D$ 使得 $q \leqq p$。
 
 **等价定义**：
 
-- 对任意 $p \in P$，存在 $q \in D$ 使得 $q \leq p$
+- 对任意 $p \in P$，存在 $q \in D$ 使得 $q \leqq p$
 - 等价地：对任意 $p \in P$，存在 $q \in D$ 使得 $p$ 和 $q$ 兼容
 
 **例子**：
@@ -208,7 +208,7 @@ $$M[G] \models \text{ZFC}$$
 一个 $P$-名称是一个关系 $\tau$，使得：
 
 - 如果 $(\sigma, p) \in \tau$，则 $\sigma$ 是 $P$-名称
-- 如果 $(\sigma, p) \in \tau$ 且 $q \leq p$，则 $(\sigma, q) \in \tau$
+- 如果 $(\sigma, p) \in \tau$ 且 $q \leqq p$，则 $(\sigma, q) \in \tau$
 
 **解释**：
 
@@ -265,25 +265,25 @@ $$\tau_G = \{\sigma_G : (\sigma, p) \in \tau \text{ 且 } p \in G\}$$
 
 **原子公式**：
 
-- **$\in$-关系**：$p \Vdash \tau_1 \in \tau_2$ 当且仅当对所有 $q \leq p$，存在 $r \leq q$ 和 $(\sigma, s) \in \tau_2$ 使得 $r \leq s$ 且 $r \Vdash \tau_1 = \sigma$
+- **$\in$-关系**：$p \Vdash \tau_1 \in \tau_2$ 当且仅当对所有 $q \leqq p$，存在 $r \leqq q$ 和 $(\sigma, s) \in \tau_2$ 使得 $r \leqq s$ 且 $r \Vdash \tau_1 = \sigma$
 
 - **$=$-关系**：$p \Vdash \tau_1 = \tau_2$ 当且仅当 $p \Vdash \tau_1 \subseteq \tau_2$ 且 $p \Vdash \tau_2 \subseteq \tau_1$
 
 **逻辑连接词**：
 
-- **否定**：$p \Vdash \neg \varphi$ 当且仅当不存在 $q \leq p$ 使得 $q \Vdash \varphi$
+- **否定**：$p \Vdash \neqg \varphi$ 当且仅当不存在 $q \leqq p$ 使得 $q \Vdash \varphi$
 
 - **合取**：$p \Vdash \varphi \land \psi$ 当且仅当 $p \Vdash \varphi$ 且 $p \Vdash \psi$
 
-- **析取**：$p \Vdash \varphi \lor \psi$ 当且仅当对所有 $q \leq p$，存在 $r \leq q$ 使得 $r \Vdash \varphi$ 或 $r \Vdash \psi$
+- **析取**：$p \Vdash \varphi \lor \psi$ 当且仅当对所有 $q \leqq p$，存在 $r \leqq q$ 使得 $r \Vdash \varphi$ 或 $r \Vdash \psi$
 
-- **蕴含**：$p \Vdash \varphi \to \psi$ 当且仅当对所有 $q \leq p$，如果 $q \Vdash \varphi$，则 $q \Vdash \psi$
+- **蕴含**：$p \Vdash \varphi \to \psi$ 当且仅当对所有 $q \leqq p$，如果 $q \Vdash \varphi$，则 $q \Vdash \psi$
 
 **量词**：
 
 - **存在量词**：$p \Vdash \exists x \varphi(x)$ 当且仅当存在名称 $\tau$ 使得 $p \Vdash \varphi(\tau)$
 
-- **全称量词**：$p \Vdash \forall x \varphi(x)$ 当且仅当对所有名称 $\tau$ 和所有 $q \leq p$，存在 $r \leq q$ 使得 $r \Vdash \varphi(\tau)$
+- **全称量词**：$p \Vdash \forall x \varphi(x)$ 当且仅当对所有名称 $\tau$ 和所有 $q \leqq p$，存在 $r \leqq q$ 使得 $r \Vdash \varphi(\tau)$
 
 ---
 

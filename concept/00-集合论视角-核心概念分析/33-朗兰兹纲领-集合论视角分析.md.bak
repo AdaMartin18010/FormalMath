@@ -1,4 +1,4 @@
-# FormalMath 集合论视角 - 核心概念分析 - 朗兰兹纲领 (Langlands Program)
+﻿# FormalMath 集合论视角 - 核心概念分析 - 朗兰兹纲领 (Langlands Program)
 
 **概念编号**: C.CORE.033
 **主题编号**: C.00.36.33
@@ -12,6 +12,7 @@
 ## 📑 目录 / Table of Contents
 
 - [FormalMath 集合论视角 - 核心概念分析 - 朗兰兹纲领 (Langlands Program)](#formalmath-集合论视角---核心概念分析---朗兰兹纲领-langlands-program)
+  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
   - [📋 概述 (编号: C.00.36.33.01)](#-概述-编号-c00363301)
   - [🎯 一、集合论结构分析 (编号: C.00.36.33.02)](#-一集合论结构分析-编号-c00363302)
     - [1.1 基础概念组合 (编号: C.00.36.33.02.01)](#11-基础概念组合-编号-c0036330201)
@@ -52,7 +53,7 @@
 
 对应关系可以形式化为：
 
-- Galois群 $\text{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ 的表示 $\leftrightarrow$ GL$_n(\mathbb{A})$ 的自守表示
+- Galois群 $\text{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ 的表示 $\leqftrightarrow$ GL$_n(\mathbb{A})$ 的自守表示
 - 通过L函数建立对应：$L(\rho, s) = L(\pi, s)$
 
 这可以分解为以下集合论元素和关系：

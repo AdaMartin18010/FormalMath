@@ -23,7 +23,7 @@
 
 **Cantor定理**：对任意集合 A，不存在 A 到其幂集 P(A) 的满射。
 
-$$\neqxists f: A \twoheadrightarrow \mathcal{P}(A)$$
+$$\neqqxists f: A \twoheadrightarrow \mathcal{P}(A)$$
 
 **推论**：|A| < |P(A)|，特别地 |ℕ| < |ℝ|
 

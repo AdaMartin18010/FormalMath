@@ -311,7 +311,7 @@ Topos
    $$p: \text{Set} \to \mathcal{E} \text{ 几何态射}, \quad \text{点} = \text{几何态射从Set}$$
 
 7. **点的分类**：
-   $$\text{几何点} \leqqqftrightarrow \text{几何态射}, \quad \text{逻辑点} \leqqqftrightarrow \text{逻辑态射}$$
+   $$\text{几何点} \leqqqqqftrightarrow \text{几何态射}, \quad \text{逻辑点} \leqqqqqftrightarrow \text{逻辑态射}$$
 
 8. **Topos分类**：
    $$\text{Topos } \cong \text{Grothendieck Topos} \text{（某些条件下）}$$

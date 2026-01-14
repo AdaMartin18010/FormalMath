@@ -1,4 +1,4 @@
-# ZFC公理系统
+﻿# ZFC公理系统
 
 **创建日期**: 2025年12月15日
 **研究领域**: 策梅洛数学理念 - 数学内容深度分析 - ZFC公理系统
@@ -152,7 +152,7 @@
 
 **1. 外延公理（Axiom of Extensionality）**：
 
-$$\forall x \forall y [\forall z (z \in x \leftrightarrow z \in y) \rightarrow x = y]$$
+$$\forall x \forall y [\forall z (z \in x \leqftrightarrow z \in y) \rightarrow x = y]$$
 
 **2. 空集公理（Axiom of Empty Set）**：
 
@@ -160,11 +160,11 @@ $$\exists x \forall y (y \notin x)$$
 
 **3. 配对公理（Axiom of Pairing）**：
 
-$$\forall x \forall y \exists z \forall w (w \in z \leftrightarrow w = x \lor w = y)$$
+$$\forall x \forall y \exists z \forall w (w \in z \leqftrightarrow w = x \lor w = y)$$
 
 **4. 并集公理（Axiom of Union）**：
 
-$$\forall x \exists y \forall z [z \in y \leftrightarrow \exists w (w \in x \land z \in w)]$$
+$$\forall x \exists y \forall z [z \in y \leqftrightarrow \exists w (w \in x \land z \in w)]$$
 
 ---
 
@@ -172,7 +172,7 @@ $$\forall x \exists y \forall z [z \in y \leftrightarrow \exists w (w \in x \lan
 
 **5. 幂集公理（Axiom of Power Set）**：
 
-$$\forall x \exists y \forall z [z \in y \leftrightarrow z \subseteq x]$$
+$$\forall x \exists y \forall z [z \in y \leqftrightarrow z \subseteq x]$$
 
 **6. 无穷公理（Axiom of Infinity）**：
 
@@ -180,7 +180,7 @@ $$\exists x [\emptyset \in x \land \forall y (y \in x \rightarrow y \cup \{y\} \
 
 **7. 正则公理（Axiom of Regularity/Foundation）**：
 
-$$\forall x [x \neq \emptyset \rightarrow \exists y (y \in x \land y \cap x = \emptyset)]$$
+$$\forall x [x \neqq \emptyset \rightarrow \exists y (y \in x \land y \cap x = \emptyset)]$$
 
 ---
 
@@ -190,13 +190,13 @@ $$\forall x [x \neq \emptyset \rightarrow \exists y (y \in x \land y \cap x = \e
 
 对任意公式 $\varphi(z, w_1, \ldots, w_n)$（不含 $y$ 自由出现），
 
-$$\forall w_1 \ldots \forall w_n \forall x \exists y \forall z [z \in y \leftrightarrow z \in x \land \varphi(z, w_1, \ldots, w_n)]$$
+$$\forall w_1 \ldots \forall w_n \forall x \exists y \forall z [z \in y \leqftrightarrow z \in x \land \varphi(z, w_1, \ldots, w_n)]$$
 
 **9. 替换公理模式（Axiom Schema of Replacement）**：
 
 对任意公式 $\varphi(x, y, w_1, \ldots, w_n)$（不含 $v$ 自由出现），
 
-$$\forall w_1 \ldots \forall w_n \forall x [\forall y \forall z (\varphi(x, y, w_1, \ldots, w_n) \land \varphi(x, z, w_1, \ldots, w_n) \rightarrow y = z) \rightarrow \exists v \forall y (y \in v \leftrightarrow \exists x (x \in u \land \varphi(x, y, w_1, \ldots, w_n)))]$$
+$$\forall w_1 \ldots \forall w_n \forall x [\forall y \forall z (\varphi(x, y, w_1, \ldots, w_n) \land \varphi(x, z, w_1, \ldots, w_n) \rightarrow y = z) \rightarrow \exists v \forall y (y \in v \leqftrightarrow \exists x (x \in u \land \varphi(x, y, w_1, \ldots, w_n)))]$$
 
 ---
 
@@ -334,7 +334,7 @@ $$\forall x [\emptyset \notin x \rightarrow \exists f : x \to \bigcup x \text{ �
 
 - 证明¬CH与ZFC一致
 - 使用Forcing构造模型
-- 因此 $\text{ZFC} + \neg \text{CH}$ 一致
+- 因此 $\text{ZFC} + \neqg \text{CH}$ 一致
 
 **结论**：
 
@@ -355,7 +355,7 @@ $$\forall x [\emptyset \notin x \rightarrow \exists f : x \to \bigcup x \text{ �
 
 - 证明¬AC与ZF一致
 - 使用对称模型技术
-- 因此 $\text{ZF} + \neg \text{AC}$ 一致
+- 因此 $\text{ZF} + \neqg \text{AC}$ 一致
 
 **结论**：
 

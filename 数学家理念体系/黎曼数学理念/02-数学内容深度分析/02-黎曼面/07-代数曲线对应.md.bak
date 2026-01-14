@@ -237,10 +237,10 @@
 ### 核心公式
 
 1. **对应关系**：
-   $$\text{紧致黎曼面} \leqqqftrightarrow \text{光滑射影代数曲线}$$
+   $$\text{紧致黎曼面} \leqqqqqftrightarrow \text{光滑射影代数曲线}$$
 
 2. **函数域对应**：
-   $$K(R) = \mathbb{C}(z, w) / (F(z, w)) \leqqqftrightarrow \text{代数曲线函数域}$$
+   $$K(R) = \mathbb{C}(z, w) / (F(z, w)) \leqqqqqftrightarrow \text{代数曲线函数域}$$
 
 3. **上同调对应**：
    $$H^i(R, O_R) \cong H^i(C, O_C), \quad C \text{ 对应代数曲线}$$
@@ -249,7 +249,7 @@
    $$g(R) = g(C), \quad \text{几何亏格一致}$$
 
 5. **全纯函数对应**：
-   $$\text{全纯函数} \leqqqftrightarrow \text{正则函数}$$
+   $$\text{全纯函数} \leqqqqqftrightarrow \text{正则函数}$$
 
 6. **全纯1形式对应**：
    $$H^0(R, \Omega_R^1) \cong H^0(C, \Omega_C^1)$$
@@ -258,13 +258,13 @@
    $$\chi(R, L) = \chi(C, L), \quad L \text{ 线丛}$$
 
 8. **Serre对偶对应**：
-   $$H^i(R, \mathcal{F}) \cong H^{1-i}(R, \mathcal{F}^\vee \otimes \omega_R)^* \leqqqftrightarrow H^i(C, \mathcal{F}) \cong H^{1-i}(C, \mathcal{F}^\vee \otimes \omega_C)^*$$
+   $$H^i(R, \mathcal{F}) \cong H^{1-i}(R, \mathcal{F}^\vee \otimes \omega_R)^* \leqqqqqftrightarrow H^i(C, \mathcal{F}) \cong H^{1-i}(C, \mathcal{F}^\vee \otimes \omega_C)^*$$
 
 9. **模空间对应**：
    $$\mathcal{M}_g \text{（黎曼面）} \cong \mathcal{M}_g \text{（代数曲线）}$$
 
 10. **概形对应**：
-    $$R \leqqqftrightarrow \text{Spec}(\mathbb{C}[z, w] / (F(z, w)))$$
+    $$R \leqqqqqftrightarrow \text{Spec}(\mathbb{C}[z, w] / (F(z, w)))$$
 
 ---
 
