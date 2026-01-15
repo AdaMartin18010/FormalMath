@@ -32,18 +32,21 @@
 
 ### 1.1 定义
 
-**平坦态射f**：
+**平坦态射**（Grothendieck）：
 
-```
-概形态射f: X → Y
+设 $f: X \to Y$ 是概形态射。
 
-平坦，若：
-O_{X,x}作为O_{Y,f(x)}模是平坦的
+**平坦态射**：$f$ 是**平坦的**，如果对每个点 $x \in X$，局部环 $\mathcal{O}_{X,x}$ 作为 $\mathcal{O}_{Y,f(x)}$-模是平坦的。
 
-意义：
-- 几何性质
-- 应用广泛
-```
+**数学表述**：
+
+- 平坦性：$$f \text{ 平坦} \iff \mathcal{O}_{X,x} \text{ 作为 } \mathcal{O}_{Y,f(x)}\text{-模是平坦的}$$
+- 等价条件：$$f \text{ 平坦} \iff f^* \text{ 正合}$$
+- 局部性：$$f \text{ 平坦} \iff f|_U \text{ 平坦（对所有开集 } U\text{）}$$
+
+**例子1：仿射概形的平坦态射**：
+
+对于仿射概形 $X = \text{Spec}(B)$ 和 $Y = \text{Spec}(A)$，态射 $f: X \to Y$ 平坦当且仅当 $B$ 作为 $A$-模是平坦的。
 
 ---
 
@@ -51,11 +54,17 @@ O_{X,x}作为O_{Y,f(x)}模是平坦的
 
 **平坦态射的性质**：
 
-```
-性质：
-- 函子性
-- 应用广泛
-```
+平坦态射具有以下重要性质：
+
+1. **函子性**：平坦态射的复合是平坦的
+2. **基变换**：平坦态射在基变换下保持
+3. **纤维性质**：平坦态射的纤维维数一致
+
+**数学表述**：
+
+- 函子性：$$f \text{ 平坦}, g \text{ 平坦} \Rightarrow g \circ f \text{ 平坦}$$
+- 基变换：$$f \text{ 平坦} \Rightarrow f' \text{ 平坦（$f'$ 是基变换）}$$
+- 纤维维数：$$f \text{ 平坦} \Rightarrow \dim X_y = \dim X - \dim Y$$
 
 ---
 
@@ -63,21 +72,23 @@ O_{X,x}作为O_{Y,f(x)}模是平坦的
 
 ### 2.1 定义
 
-**Tor函子Tor_i**：
+**Tor函子**（Grothendieck）：
 
-```
-概形X
-O_X模M, N
+对于概形 $X$ 和 $\mathcal{O}_X$-模 $\mathcal{M}$、$\mathcal{N}$，**Tor函子**定义为：
+$$\text{Tor}_i^X(\mathcal{M}, \mathcal{N}) = H_i(\mathcal{M} \otimes_X L_\bullet)$$
 
-Tor函子：
-Tor_i^X(M, N) = H_i(M ⊗_X L)
+其中 $L_\bullet$ 是 $\mathcal{N}$ 的平坦分解。
 
-其中L是N的平坦分解
+**数学表述**：
 
-意义：
-- 同调代数
-- 应用广泛
-```
+- Tor函子：$$\text{Tor}_i^X(\mathcal{M}, \mathcal{N}) = H_i(\mathcal{M} \otimes_X L_\bullet)$$
+- 平坦分解：$$0 \to L_n \to \cdots \to L_0 \to \mathcal{N} \to 0$$
+- 导出张量积：$$\mathcal{M} \otimes_X^{\mathbb{L}} \mathcal{N} = \mathcal{M} \otimes_X L_\bullet$$
+
+**例子2：Tor函子的计算**：
+
+对于 $\mathcal{O}_X$-模 $\mathcal{M}$ 和 $\mathcal{N}$，有：
+$$\text{Tor}_0^X(\mathcal{M}, \mathcal{N}) = \mathcal{M} \otimes_X \mathcal{N}$$
 
 ---
 
@@ -85,11 +96,17 @@ Tor_i^X(M, N) = H_i(M ⊗_X L)
 
 **Tor函子的性质**：
 
-```
-性质：
-- 函子性
-- 应用广泛
-```
+Tor函子具有以下重要性质：
+
+1. **函子性**：Tor函子是双函子
+2. **长正合序列**：短正合序列诱导长正合序列
+3. **消失性**：如果 $\mathcal{N}$ 是平坦的，则 $\text{Tor}_i^X(\mathcal{M}, \mathcal{N}) = 0$（$i > 0$）
+
+**数学表述**：
+
+- 函子性：$$\text{Tor}_i^X(-, -) \text{ 是双函子}$$
+- 长正合列：$$\cdots \to \text{Tor}_i^X(\mathcal{M}', \mathcal{N}) \to \text{Tor}_i^X(\mathcal{M}, \mathcal{N}) \to \text{Tor}_i^X(\mathcal{M}'', \mathcal{N}) \to \text{Tor}_{i-1}^X(\mathcal{M}', \mathcal{N}) \to \cdots$$
+- 消失性：$$\text{Tor}_i^X(\mathcal{M}, \mathcal{N}) = 0 \quad (i > 0, \mathcal{N} \text{ 平坦})$$
 
 ---
 
@@ -97,25 +114,40 @@ Tor_i^X(M, N) = H_i(M ⊗_X L)
 
 ### 3.1 应用
 
-**应用**：
+**同调代数**：
 
-```
-应用：
-- 同调代数
-- 应用广泛
-```
+平坦态射和Tor函子在同调代数中有重要应用：
+- **平坦分解**：使用平坦分解计算Tor
+- **导出函子**：Tor是导出张量积
+- **同调维数**：使用Tor计算同调维数
+
+**数学表述**：
+
+- 平坦分解：$$0 \to L_n \to \cdots \to L_0 \to \mathcal{N} \to 0$$
+- 导出张量积：$$\mathcal{M} \otimes_X^{\mathbb{L}} \mathcal{N} = \mathcal{M} \otimes_X L_\bullet$$
+- 同调维数：$$\text{projdim}(\mathcal{M}) = \sup\{i : \text{Tor}_i^X(\mathcal{M}, -) \neq 0\}$$
+
+**例子3：同调维数的计算**：
+
+对于 $\mathcal{O}_X$-模 $\mathcal{M}$，其投射维数为：
+$$\text{projdim}(\mathcal{M}) = \sup\{i : \text{Tor}_i^X(\mathcal{M}, k(x)) \neq 0 \text{（某个点 } x\text{）}\}$$
 
 ---
 
 ### 3.2 几何应用
 
-**几何应用**：
+**几何不变量**：
 
-```
-应用：
-- 几何不变量
-- 应用广泛
-```
+平坦态射和Tor函子用于研究几何不变量：
+- **相交理论**：使用Tor计算相交数
+- **形变理论**：使用Tor研究形变
+- **模空间**：使用平坦性研究模空间
+
+**数学表述**：
+
+- 相交数：$$(X \cdot Y) = \chi(\text{Tor}_i^X(\mathcal{O}_X, \mathcal{O}_Y))$$
+- 形变：$$\text{Def}_X = \text{Tor}_1^X(\mathcal{O}_X, \mathcal{O}_X)$$
+- 平坦性：$$f \text{ 平坦} \iff \text{Tor}_1^X(\mathcal{O}_X, \mathcal{O}_Y) = 0$$
 
 ---
 
@@ -226,6 +258,8 @@ Grothendieck的贡献：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月7日
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,400字
+**数学公式数**: 12个
+**例子数**: 3个
+**最后更新**: 2026年01月15日

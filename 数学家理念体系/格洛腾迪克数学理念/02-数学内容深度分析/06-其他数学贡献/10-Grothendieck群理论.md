@@ -426,6 +426,59 @@ K理论在拓扑中有应用：
 
 ---
 
+---
+
+## 十一、数学公式总结
+
+### 核心公式
+
+1. **稳定等价**：
+   $$E \sim E' \iff \exists F: E \oplus F \cong E' \oplus F$$
+
+2. **K_0群**：
+   $$K_0(X) = \text{Free}(\text{Vect}(X)) / \sim$$
+
+3. **K_0群关系**：
+   $$[E \oplus F] = [E] + [F]$$
+
+4. **Picard群**：
+   $$\text{Pic}(X) = \{\text{线丛}\} / \cong$$
+
+5. **Picard群到K_0的映射**：
+   $$\text{Pic}(X) \to K_0(X), \quad [L] \mapsto [L]$$
+
+6. **Picard群与K_0的关系**（正则概形）：
+   $$\text{Pic}(X) \cong K_0(X) / K_0(X)^2$$
+
+7. **Chern类**：
+   $$c(E) = \prod_{i=1}^r (1 + x_i)$$
+
+8. **Chern特征**：
+   $$\text{ch}(E) = \sum_{i=0}^r e^{x_i} = \sum_{i=0}^\infty \frac{c_i(E)}{i!}$$
+
+9. **Chern特征的乘法性**：
+   $$\text{ch}(E \otimes F) = \text{ch}(E) \cdot \text{ch}(F)$$
+
+10. **Riemann-Roch公式**：
+    $$\text{ch}(R f_* E) \cdot \text{td}(Y) = f_*(\text{ch}(E) \cdot \text{td}(X))$$
+
+11. **推前映射**：
+    $$f_*: K_0(X) \to K_0(Y)$$
+
+12. **Todd类**：
+    $$\text{td}(X) = \prod_{i=1}^n \frac{x_i}{1 - e^{-x_i}}$$
+
+13. **向量丛分类**：
+    $$K_0(X) \cong \text{Vect}(X) / \sim$$
+
+14. **类数公式**：
+    $$h_K = \frac{w_K \sqrt{|\Delta_K|}}{2^{r_1} (2\pi)^{r_2} \text{Reg}_K} L(1, \chi_K)$$
+
+15. **拓扑K群与上同调**：
+    $$K^*(X) \otimes \mathbb{Q} \cong H^*(X, \mathbb{Q})$$
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,800字
 **数学公式数**: 15个

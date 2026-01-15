@@ -429,8 +429,69 @@ Riemann-Roch定理在枚举几何中有重要应用：
 
 ---
 
+## 十一、数学公式总结
+
+### 核心公式
+
+1. **经典Riemann-Roch公式（曲线）**：
+   $$\chi(C, \mathcal{O}(D)) = \deg(D) + 1 - g(C)$$
+
+2. **Euler特征**：
+   $$\chi(C, \mathcal{O}(D)) = h^0(C, \mathcal{O}(D)) - h^1(C, \mathcal{O}(D))$$
+
+3. **Serre对偶**：
+   $$h^1(C, \mathcal{O}(D)) = h^0(C, \omega_C \otimes \mathcal{O}(-D))$$
+
+4. **亏格公式**：
+   $$g(C) = h^1(C, \mathcal{O}_C)$$
+
+5. **Hirzebruch-Riemann-Roch公式**：
+   $$\chi(X, E) = \int_X \text{ch}(E) \cdot \text{td}(X)$$
+
+6. **Euler特征（高维）**：
+   $$\chi(X, E) = \sum_{i=0}^n (-1)^i h^i(X, E)$$
+
+7. **Chern特征**：
+   $$\text{ch}(E) = \sum_{i=0}^n \frac{c_i(E)}{i!}$$
+
+8. **Todd类**：
+   $$\text{td}(X) = \prod_{i=1}^n \frac{x_i}{1 - e^{-x_i}}$$
+   其中 $x_i$ 是Chern根
+
+9. **Grothendieck-Riemann-Roch公式**：
+   $$\text{ch}(R f_* E) \cdot \text{td}(Y) = f_*(\text{ch}(E) \cdot \text{td}(X))$$
+
+10. **导出推前**：
+    $$R f_* E = \sum_{i=0}^n (-1)^i R^i f_* E$$
+
+11. **推前映射**：
+    $$f_*: A_*(X) \to A_*(Y)$$
+
+12. **截面维数公式**：
+    $$h^0(C, \mathcal{O}(D)) = \deg(D) + 1 - g(C) + h^1(C, \mathcal{O}(D))$$
+
+13. **存在性条件**：
+    $$\deg(D) \geq 2g(C) - 1 \Rightarrow h^1(C, \mathcal{O}(D)) = 0$$
+
+14. **相交数**：
+    $$V \cdot W = \int_X [V] \cdot [W]$$
+
+15. **Chern类**：
+    $$c_i(E) \in H^{2i}(X, \mathbb{Z})$$
+
+16. **相交积**：
+    $$[V] \cdot [W] = c_1(\mathcal{O}(V)) \cdot c_1(\mathcal{O}(W))$$
+
+17. **虚拟维数**：
+    $$\text{vdim} = \int_\beta c_1(X) + (n-3)(1-g)$$
+
+18. **Gromov-Witten不变量**：
+    $$\langle \gamma_1, \ldots, \gamma_k \rangle_{g,\beta}$$
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,800字
-**数学公式数**: 15个
+**数学公式数**: 18个
 **例子数**: 10个
 **最后更新**: 2026年01月15日

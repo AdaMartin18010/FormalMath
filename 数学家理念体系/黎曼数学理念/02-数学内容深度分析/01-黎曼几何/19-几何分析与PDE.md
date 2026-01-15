@@ -71,17 +71,15 @@
 
 **定义**：
 
-在黎曼流形(M, g)上，Laplace-Beltrami算子定义为：
+在黎曼流形$(M, g)$上，Laplace-Beltrami算子定义为：
 
-```text
-Δf = div(∇f) = (1/√g) ∂/∂x^i (√g g^{ij} ∂f/∂x^j)
+$$\Delta f = \text{div}(\nabla f) = \frac{1}{\sqrt{g}} \frac{\partial}{\partial x^i}\left(\sqrt{g} g^{ij} \frac{\partial f}{\partial x^j}\right)$$
 
 其中：
-- g = det(g_{ij})
-- g^{ij}：度规的逆
-- ∇f：梯度
-- div：散度
-```
+- $g = \det(g_{ij})$
+- $g^{ij}$：度规的逆
+- $\nabla f$：梯度
+- $\text{div}$：散度
 
 **性质**：
 
@@ -91,11 +89,9 @@
 
 **与欧氏Laplace算子的关系**：
 
-在欧氏空间Rⁿ上，Laplace-Beltrami算子就是通常的Laplace算子：
+在欧氏空间$\mathbb{R}^n$上，Laplace-Beltrami算子就是通常的Laplace算子：
 
-```text
-Δ = ∂²/∂x₁² + ... + ∂²/∂xₙ²
-```
+$$\Delta = \frac{\partial^2}{\partial x_1^2} + \cdots + \frac{\partial^2}{\partial x_n^2}$$
 
 ---
 
@@ -117,26 +113,23 @@
 
 **能量泛函**：
 
-映射f: (M, g) → (N, h)的能量定义为：
+映射$f: (M, g) \to (N, h)$的能量定义为：
 
-```text
-E(f) = (1/2) ∫_M |df|² dV_g
+$$E(f) = \frac{1}{2} \int_M |df|^2 \, dV_g$$
 
 其中：
-- |df|² = g^{ij} h_{αβ} (∂f^α/∂x^i)(∂f^β/∂x^j)
-- dV_g：M上的体积形式
-```
+$$|df|^2 = g^{ij} h_{\alpha\beta} \frac{\partial f^\alpha}{\partial x^i} \frac{\partial f^\beta}{\partial x^j}$$
+
+$dV_g$是$M$上的体积形式。
 
 **调和映射**：
 
 调和映射是能量泛函的临界点，满足Euler-Lagrange方程：
 
-```text
-τ(f) = 0
+$$\tau(f) = 0$$
 
-其中τ(f)是张力场：
-τ(f)^α = Δf^α + g^{ij} Γ^α_{βγ}(f) (∂f^β/∂x^i)(∂f^γ/∂x^j)
-```
+其中$\tau(f)$是张力场：
+$$\tau(f)^\alpha = \Delta f^\alpha + g^{ij} \Gamma^\alpha_{\beta\gamma}(f) \frac{\partial f^\beta}{\partial x^i} \frac{\partial f^\gamma}{\partial x^j}$$
 
 **几何意义**：
 
@@ -153,13 +146,11 @@ E(f) = (1/2) ∫_M |df|² dV_g
 
 在局部坐标下，调和映射方程是二阶椭圆PDE系统：
 
-```text
-Δf^α + g^{ij} Γ^α_{βγ}(f) (∂f^β/∂x^i)(∂f^γ/∂x^j) = 0
+$$\Delta f^\alpha + g^{ij} \Gamma^\alpha_{\beta\gamma}(f) \frac{\partial f^\beta}{\partial x^i} \frac{\partial f^\gamma}{\partial x^j} = 0$$
 
 其中：
-- Δ：M上的Laplace-Beltrami算子
-- Γ^α_{βγ}：N上的Christoffel符号
-```
+- $\Delta$：$M$上的Laplace-Beltrami算子
+- $\Gamma^\alpha_{\beta\gamma}$：$N$上的Christoffel符号
 
 **非线性性**：
 
@@ -205,20 +196,18 @@ E(f) = (1/2) ∫_M |df|² dV_g
 
 **热方程**：
 
-在黎曼流形(M, g)上，热方程为：
+在黎曼流形$(M, g)$上，热方程为：
 
-```text
-∂u/∂t = Δu
+$$\frac{\partial u}{\partial t} = \Delta u$$
 
 其中：
-- u(x, t)：函数
-- Δ：Laplace-Beltrami算子
-- t：时间参数
-```
+- $u(x, t)$：函数
+- $\Delta$：Laplace-Beltrami算子
+- $t$：时间参数
 
 **初值问题**：
 
-给定初始条件u(x, 0) = u₀(x)，求解u(x, t)。
+给定初始条件$u(x, 0) = u_0(x)$，求解$u(x, t)$。
 
 ---
 
@@ -226,26 +215,21 @@ E(f) = (1/2) ∫_M |df|² dV_g
 
 **热核**：
 
-热方程的基本解称为热核K(x, y, t)，满足：
+热方程的基本解称为热核$K(x, y, t)$，满足：
 
-```text
-∂K/∂t = Δ_x K
-lim_{t→0} K(x, y, t) = δ_y(x)
+$$\frac{\partial K}{\partial t} = \Delta_x K, \quad \lim_{t \to 0} K(x, y, t) = \delta_y(x)$$
 
-其中δ_y是y点的Dirac函数
-```
+其中$\delta_y$是$y$点的Dirac函数。
 
 **渐近展开**：
 
 热核有渐近展开：
 
-```text
-K(x, y, t) ~ (4πt)^{-n/2} e^{-d²(x,y)/4t} [a₀(x,y) + a₁(x,y)t + ...]
+$$K(x, y, t) \sim (4\pi t)^{-n/2} e^{-d^2(x,y)/4t} \left[a_0(x,y) + a_1(x,y)t + \cdots\right]$$
 
 其中：
-- d(x, y)：测地距离
-- a_i(x, y)：由曲率决定的系数
-```
+- $d(x, y)$：测地距离
+- $a_i(x, y)$：由曲率决定的系数
 
 **几何不变量**：
 
@@ -341,11 +325,9 @@ Einstein方程是几何PDE，描述了时空的几何演化。
 
 Ricci流是几何PDE的重要例子：
 
-```text
-∂g/∂t = -2 Ric(g)
+$$\frac{\partial g}{\partial t} = -2 \text{Ric}(g)$$
 
-这是抛物型PDE，用于研究流形的几何演化
-```
+这是抛物型PDE，用于研究流形的几何演化。
 
 **应用**：
 
@@ -402,7 +384,61 @@ Weitzenböck公式将Laplace算子与曲率联系起来（见Hodge理论文档�
 
 Hodge理论是几何分析的重要工具，通过热方程研究调和形式（见Hodge理论文档）。
 
-## 八、总结
+## 九、数学公式总结
+
+### 核心公式
+
+1. **Laplace-Beltrami算子**：
+   $$\Delta f = \frac{1}{\sqrt{g}} \frac{\partial}{\partial x^i}\left(\sqrt{g} g^{ij} \frac{\partial f}{\partial x^j}\right)$$
+
+2. **欧氏Laplace算子**：
+   $$\Delta = \sum_{i=1}^n \frac{\partial^2}{\partial x_i^2}$$
+
+3. **调和映射能量泛函**：
+   $$E(f) = \frac{1}{2} \int_M |df|^2 \, dV_g$$
+
+4. **能量密度**：
+   $$|df|^2 = g^{ij} h_{\alpha\beta} \frac{\partial f^\alpha}{\partial x^i} \frac{\partial f^\beta}{\partial x^j}$$
+
+5. **调和映射方程**：
+   $$\tau(f)^\alpha = \Delta f^\alpha + g^{ij} \Gamma^\alpha_{\beta\gamma}(f) \frac{\partial f^\beta}{\partial x^i} \frac{\partial f^\gamma}{\partial x^j} = 0$$
+
+6. **热方程**：
+   $$\frac{\partial u}{\partial t} = \Delta u$$
+
+7. **热核方程**：
+   $$\frac{\partial K}{\partial t} = \Delta_x K, \quad K(x, y, 0) = \delta_y(x)$$
+
+8. **热核渐近展开**：
+   $$K(x, y, t) \sim (4\pi t)^{-n/2} e^{-d^2(x,y)/4t} \left[a_0(x,y) + a_1(x,y)t + \cdots\right]$$
+
+9. **Ricci流**：
+   $$\frac{\partial g}{\partial t} = -2 \text{Ric}(g)$$
+
+10. **Laplace算子的自伴性**：
+    $$\langle \Delta f, g \rangle = \langle f, \Delta g \rangle$$
+
+11. **椭圆极大值原理**：
+    $$\Delta u = 0, \quad u \text{ 非常数 } \Rightarrow u \text{ 在内部无极大值}$$
+
+12. **椭圆正则性**：
+    $$f \in C^k \Rightarrow u \in C^{k+2} \text{（对椭圆PDE）}$$
+
+13. **Poisson方程**：
+    $$\Delta u = f$$
+
+14. **波动方程**：
+    $$\frac{\partial^2 u}{\partial t^2} = \Delta u$$
+
+15. **调和映射的存在性**：
+    $$M \text{ 紧致}, N \text{ 非正曲率 } \Rightarrow \exists \text{ 调和映射}$$
+
+16. **Weitzenböck公式**：
+    $$\Delta \omega = \nabla^*\nabla \omega + R(\omega)$$
+
+---
+
+## 十、总结
 
 ### 几何分析与PDE的历史地位
 
@@ -444,6 +480,8 @@ Hodge理论是几何分析的重要工具，通过热方程研究调和形式（
 
 ---
 
-**文档状态**: ✅ 完成（已深化）
-**字数**: 约4,500字
-**最后更新**: 2025年12月6日
+**文档状态**: ✅ 完成（已补充数学公式）
+**字数**: 约4,900字
+**数学公式数**: 16个
+**例子数**: 8个
+**最后更新**: 2026年01月15日
