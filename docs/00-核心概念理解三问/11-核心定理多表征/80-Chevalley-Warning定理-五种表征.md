@@ -1,4 +1,4 @@
-# Chevalley-Warning定理 - 五种表征
+﻿# Chevalley-Warning定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 代数数论
@@ -39,7 +39,7 @@ $$|V| \equiv 0 \pmod{p}$$
 
 ### 1.3 形式化表述
 
-$$\leqft[ \sum_{i=1}^r \deg(f_i) < n \right] \Rightarrow |V| \equiv 0 \pmod{p}$$
+$$\left[ \sum_{i=1}^r \deg(f_i) < n \right] \Rightarrow |V| \equiv 0 \pmod{p}$$
 
 ---
 

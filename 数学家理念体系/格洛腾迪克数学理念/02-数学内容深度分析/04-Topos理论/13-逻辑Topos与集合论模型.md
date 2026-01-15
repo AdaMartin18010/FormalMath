@@ -1,4 +1,4 @@
-﻿# 逻辑Topos与集合论模型：Topos中的模型理论
+# 逻辑Topos与集合论模型：Topos中的模型理论
 
 
 ## 📋 目录
@@ -247,11 +247,11 @@ Topos模型
    $$\text{配对公理：} \forall x, y. \exists z. x \in z \land y \in z$$
 
 3. **幂集公理（内部）**：
-   $$\forall x. \exists y. \forall z. (z \in y \\leftrightarrow z \subseteq x)$$
+   $$\forall x. \exists y. \forall z. (z \in y \leqftrightarrow z \subseteq x)$$
    $$P(A) = \Omega^A \text{（内部幂集）}$$
 
 4. **并集公理（内部）**：
-   $$\forall x. \exists y. \forall z. (z \in y \\leftrightarrow \exists w. z \in w \land w \in x)$$
+   $$\forall x. \exists y. \forall z. (z \in y \leqftrightarrow \exists w. z \in w \land w \in x)$$
 
 5. **无穷公理（内部）**：
    $$\exists x. (\emptyset \in x \land \forall y. (y \in x \Rightarrow y \cup \{y\} \in x))$$
@@ -263,7 +263,7 @@ Topos模型
    $$\mathcal{E} \text{ 逻辑Topos } \iff \text{内部逻辑是经典逻辑（满足所有集合论公理）}$$
 
 8. **模型与层对应**：
-   $$\text{集合论模型} \\leftrightarrow \text{层}, \quad \text{逻辑解释} \\leftrightarrow \text{几何构造}$$
+   $$\text{集合论模型} \leqftrightarrow \text{层}, \quad \text{逻辑解释} \leqftrightarrow \text{几何构造}$$
 
 9. **内部ZFC**：
    $$\text{在逻辑Topos中，可以形式化内部ZFC（不一定全部成立）}$$
@@ -271,10 +271,96 @@ Topos模型
 10. **模型理论与Topos**：
     $$\text{Topos提供了集合论的范畴论模型，更灵活的框架}$$
 
+11. **内部集合的幂对象**：
+    在Topos中，集合$A$的幂对象：
+    $$P(A) = \Omega^A = \{f: A \to \Omega\}$$
+
+12. **内部集合的并集**：
+    内部集合的并集使用余极限构造：
+    $$\bigcup_{i \in I} A_i = \text{colim}_{i \in I} A_i$$
+
+13. **内部集合的交集**：
+    内部集合的交集使用极限构造：
+    $$\bigcap_{i \in I} A_i = \lim_{i \in I} A_i$$
+
+14. **内部集合的笛卡尔积**：
+    内部集合的笛卡尔积：
+    $$A \times B = \{(a, b) : a \in A, b \in B\}$$
+
+15. **内部集合的商集**：
+    内部集合的商集使用余等化子：
+    $$A/{\sim} = \text{coeq}(R \rightrightarrows A)$$
+
+---
+
+## 九、集合论模型的详细数学表述
+
+### 9.1 内部集合的构造
+
+**幂对象**：
+
+在Topos $\mathcal{E}$ 中，集合$A$的**幂对象**定义为：
+$$P(A) = \Omega^A = \{f: A \to \Omega\}$$
+
+其中$\Omega$是子对象分类器。
+
+**并集与交集**：
+
+内部集合的**并集**使用余极限构造：
+$$\bigcup_{i \in I} A_i = \text{colim}_{i \in I} A_i$$
+
+内部集合的**交集**使用极限构造：
+$$\bigcap_{i \in I} A_i = \lim_{i \in I} A_i$$
+
+**数学公式**：
+- 幂对象: $$P(A) = \Omega^A = \{f: A \to \Omega\}$$
+- 并集: $$\bigcup_{i \in I} A_i = \text{colim}_{i \in I} A_i$$
+- 交集: $$\bigcap_{i \in I} A_i = \lim_{i \in I} A_i$$
+
+---
+
+### 9.2 内部集合的运算
+
+**笛卡尔积**：
+
+内部集合的**笛卡尔积**：
+$$A \times B = \{(a, b) : a \in A, b \in B\}$$
+
+**商集**：
+
+内部集合的**商集**使用余等化子：
+$$A/{\sim} = \text{coeq}(R \rightrightarrows A)$$
+
+其中$R$是等价关系。
+
+**数学公式**：
+- 笛卡尔积: $$A \times B = \{(a, b) : a \in A, b \in B\}$$
+- 商集: $$A/{\sim} = \text{coeq}(R \rightrightarrows A)$$
+- 等价关系: $$R \hookrightarrow A \times A$$
+
+---
+
+### 9.3 逻辑Topos与集合论模型
+
+**逻辑Topos**：
+
+**逻辑Topos**是内部逻辑是经典逻辑的Topos：
+$$\mathcal{E} \text{ 逻辑Topos } \iff \text{内部逻辑是经典逻辑（满足所有集合论公理）}$$
+
+**模型对应**：
+
+集合论模型对应层：
+$$\text{集合论模型} \leftrightarrow \text{层}, \quad \text{逻辑解释} \leftrightarrow \text{几何构造}$$
+
+**数学公式**：
+- 逻辑Topos: $$\mathcal{E} \text{ 逻辑Topos } \iff \text{内部逻辑是经典逻辑}$$
+- 模型对应: $$\text{集合论模型} \leftrightarrow \text{层}$$
+- Topos模型: $$\text{Topos提供了集合论的范畴论模型}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

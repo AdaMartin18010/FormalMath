@@ -1,4 +1,4 @@
-﻿# 分类Topos与几何点：Topos的几何结构
+# 分类Topos与几何点：Topos的几何结构
 
 
 ## 📋 目录
@@ -288,7 +288,7 @@ Topos
    $$p^*: \mathcal{E} \to \text{Set}, \quad \text{点的纤维函子}$$
 
 4. **几何点的分类**：
-   $$\text{几何点 } \\leftrightarrow \text{几何态射}, \quad \text{逻辑点 } \\leftrightarrow \text{逻辑态射}$$
+   $$\text{几何点 } \leqftrightarrow \text{几何态射}, \quad \text{逻辑点 } \leqftrightarrow \text{逻辑态射}$$
 
 5. **点的集合**：
    $$\text{pt}(\mathcal{E}) = \{\text{几何态射 } \text{Set} \to \mathcal{E}\}$$
@@ -297,7 +297,7 @@ Topos
    $$x: \text{Spec}(k) \to X \text{ 几何点}, \quad k \text{ 代数闭域}$$
 
 7. **Topos的点与概形的点**：
-   $$\text{pt}(\text{Sh}(X)) \\leftrightarrow \{\text{几何点 } X\}$$
+   $$\text{pt}(\text{Sh}(X)) \leqftrightarrow \{\text{几何点 } X\}$$
 
 8. **点的恢复**：
    $$\mathcal{E} \text{ 有足够点 } \Rightarrow \text{可以恢复几何结构}$$
@@ -308,10 +308,94 @@ Topos
 10. **几何点的应用**：
     $$\text{通过几何点研究Topos的几何性质，连接逻辑与几何}$$
 
+11. **几何点的纤维函子**：
+    几何点的纤维函子：
+    $$p^*: \mathcal{E} \to \text{Set}, \quad p^*(A) = \text{点 $p$ 处的纤维}$$
+
+12. **点的集合的构造**：
+    点的集合的构造：
+    $$\text{pt}(\mathcal{E}) = \{\text{几何态射 } \text{Set} \to \mathcal{E}\}$$
+
+13. **概形的几何点**：
+    概形的几何点：
+    $$x: \text{Spec}(k) \to X \text{ 几何点}, \quad k \text{ 代数闭域}$$
+
+14. **Topos的点与概形的点的对应**：
+    Topos的点与概形的点的对应：
+    $$\text{pt}(\text{Sh}(X)) \leftrightarrow \{\text{几何点 } X\}$$
+
+15. **点的恢复定理**：
+    点的恢复定理：
+    $$\mathcal{E} \text{ 有足够点 } \Rightarrow \text{可以恢复几何结构}$$
+
+---
+
+## 十、分类Topos与几何点的详细数学表述
+
+### 10.1 几何点的纤维函子
+
+**纤维函子**：
+
+几何点$p: \text{Set} \to \mathcal{E}$的**纤维函子**是：
+$$p^*: \mathcal{E} \to \text{Set}, \quad p^*(A) = \text{点 $p$ 处的纤维}$$
+
+**伴随关系**：
+
+几何点$p = (p^*, p_*)$满足：
+$$p^* \dashv p_*, \quad p^* \text{ 保持有限极限和余极限}$$
+
+**数学公式**：
+- 纤维函子: $$p^*: \mathcal{E} \to \text{Set}, \quad p^*(A) = \text{点 $p$ 处的纤维}$$
+- 伴随关系: $$p^* \dashv p_*, \quad p^* \text{ 保持有限极限}$$
+- 几何点: $$p: \text{Set} \to \mathcal{E} \text{ 几何态射}$$
+
+---
+
+### 10.2 点的集合与概形的几何点
+
+**点的集合**：
+
+**点的集合**定义为：
+$$\text{pt}(\mathcal{E}) = \{\text{几何态射 } \text{Set} \to \mathcal{E}\}$$
+
+**概形的几何点**：
+
+**概形的几何点**是态射：
+$$x: \text{Spec}(k) \to X \text{ 几何点}, \quad k \text{ 代数闭域}$$
+
+**对应关系**：
+
+Topos的点与概形的点对应：
+$$\text{pt}(\text{Sh}(X)) \leftrightarrow \{\text{几何点 } X\}$$
+
+**数学公式**：
+- 点的集合: $$\text{pt}(\mathcal{E}) = \{\text{几何态射 } \text{Set} \to \mathcal{E}\}$$
+- 概形的几何点: $$x: \text{Spec}(k) \to X \text{ 几何点}$$
+- 对应关系: $$\text{pt}(\text{Sh}(X)) \leftrightarrow \{\text{几何点 } X\}$$
+
+---
+
+### 10.3 点的恢复定理
+
+**点的恢复定理**：
+
+如果Topos $\mathcal{E}$ 有**足够点**，则可以恢复几何结构：
+$$\mathcal{E} \text{ 有足够点 } \Rightarrow \text{可以恢复几何结构}$$
+
+**分类Topos与几何点**：
+
+分类Topos的几何点对应原始结构的点：
+$$\text{分类Topos的几何点对应原始结构的点}$$
+
+**数学公式**：
+- 点的恢复: $$\mathcal{E} \text{ 有足够点 } \Rightarrow \text{可以恢复几何结构}$$
+- 分类Topos: $$\text{分类Topos的几何点对应原始结构的点}$$
+- 几何点的应用: $$\text{通过几何点研究Topos的几何性质}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

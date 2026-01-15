@@ -334,7 +334,7 @@ $$\forall x [\emptyset \notin x \rightarrow \exists f : x \to \bigcup x \text{ �
 
 - 证明¬CH与ZFC一致
 - 使用Forcing构造模型
-- 因此 $\text{ZFC} + \neqg \text{CH}$ 一致
+- 因此 $\text{ZFC} + \neg \text{CH}$ 一致
 
 **结论**：
 
@@ -355,7 +355,7 @@ $$\forall x [\emptyset \notin x \rightarrow \exists f : x \to \bigcup x \text{ �
 
 - 证明¬AC与ZF一致
 - 使用对称模型技术
-- 因此 $\text{ZF} + \neqg \text{AC}$ 一致
+- 因此 $\text{ZF} + \neg \text{AC}$ 一致
 
 **结论**：
 

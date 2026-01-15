@@ -1,4 +1,4 @@
-# Hodge分解定理 - 五种表征
+﻿# Hodge分解定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 微分几何/复几何
@@ -44,7 +44,7 @@ $$H^k_{\text{dR}}(M) \cong \mathcal{H}^k(M)$$
 
 ### 1.3 形式化表述
 
-$$\leqft[ M \text{ 紧致定向Riemann流形 } \right] \Rightarrow \Omega^k(M) = \mathcal{H}^k(M) \oplus d\Omega^{k-1}(M) \oplus d^*\Omega^{k+1}(M)$$
+$$\left[ M \text{ 紧致定向Riemann流形 } \right] \Rightarrow \Omega^k(M) = \mathcal{H}^k(M) \oplus d\Omega^{k-1}(M) \oplus d^*\Omega^{k+1}(M)$$
 
 ---
 

@@ -40,7 +40,7 @@
 
 **逻辑符号**:
 
-- 连接词: $\\neg, \land, \lor, \rightarrow, \leftrightarrow$
+- 连接词: $\neqg, \land, \lor, \rightarrow, \leftrightarrow$
 - 量词: $\forall, \exists$
 - 等号: $=$
 - 括号: $(, )$
@@ -60,7 +60,7 @@
 公式递归定义如下：
 
 - 如果 $t_1, t_2$ 是项，则 $t_1 = t_2$ 和 $t_1 \in t_2$ 是原子公式
-- 如果 $\phi, \psi$ 是公式，则 $\\neg\phi, \phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leftrightarrow \psi$ 是公式
+- 如果 $\phi, \psi$ 是公式，则 $\neqg\phi, \phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leftrightarrow \psi$ 是公式
 - 如果 $\phi$ 是公式，$x$ 是变量，则 $\forall x \phi, \exists x \phi$ 是公式
 
 ### 1.2 集合论语言
@@ -76,7 +76,7 @@
 以下是一些常用的缩写：
 
 - $x \subseteq y$ 表示 $\forall z(z \in x \rightarrow z \in y)$
-- $x \subset y$ 表示 $x \subseteq y \land x \neqqq y$
+- $x \subset y$ 表示 $x \subseteq y \land x \neq y$
 - $\{x\}$ 表示 $\{x, x\}$
 - $\emptyset$ 表示空集（通过空集公理定义）
 - $\{x \in A : \phi(x)\}$ 表示通过替换公理模式定义的集合
@@ -88,9 +88,9 @@
 
 - 在原子公式 $x = y$ 中，$x$ 和 $y$ 都自由出现
 - 在原子公式 $x \in y$ 中，$x$ 和 $y$ 都自由出现
-- 在 $\\neg\phi$ 中，$x$ 自由出现当且仅当在 $\phi$ 中自由出现
+- 在 $\neqg\phi$ 中，$x$ 自由出现当且仅当在 $\phi$ 中自由出现
 - 在 $\phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leftrightarrow \psi$ 中，$x$ 自由出现当且仅当在 $\phi$ 或 $\psi$ 中自由出现
-- 在 $\forall y \phi, \exists y \phi$ 中，$x$ 自由出现当且仅当 $x \neqqq y$ 且在 $\phi$ 中自由出现
+- 在 $\forall y \phi, \exists y \phi$ 中，$x$ 自由出现当且仅当 $x \neq y$ 且在 $\phi$ 中自由出现
 
 **定义 1.3.2** (句子)
 句子是没有自由变量的公式。
@@ -199,7 +199,7 @@ $$\forall z_1 \ldots \forall z_n \forall A[\forall x \in A \exists! y \phi(x, y,
 ### 2.8 正则公理
 
 **公理 2.8.1** (正则公理)
-$$\forall x(x \neqqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
+$$\forall x(x \neq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
 
 **语义解释**: 每个非空集合都有一个与自身不相交的元素。
 
@@ -211,7 +211,7 @@ $$\forall x(x \neqqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset)
 ### 2.9 选择公理
 
 **公理 2.9.1** (选择公理)
-$$\forall F[\emptyset \notin F \land \forall A \forall B(A \in F \land B \in F \land A \neqqq B \rightarrow A \cap B = \emptyset) \rightarrow \exists C \forall A \in F(|A \cap C| = 1)]$$
+$$\forall F[\emptyset \notin F \land \forall A \forall B(A \in F \land B \in F \land A \neq B \rightarrow A \cap B = \emptyset) \rightarrow \exists C \forall A \in F(|A \cap C| = 1)]$$
 
 **语义解释**: 对于任意非空集合族，如果集合两两不相交，则存在选择集，与每个集合恰好有一个公共元素。
 

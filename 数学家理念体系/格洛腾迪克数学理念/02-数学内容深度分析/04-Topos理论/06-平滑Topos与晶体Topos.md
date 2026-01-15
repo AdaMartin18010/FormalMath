@@ -306,10 +306,89 @@ Grothendieck的贡献：
 10. **平滑Topos与Zariski Topos关系**：
     $$X_{\text{sm}} \subset X_{\text{Zar}}, \quad \text{平滑拓扑细于Zariski拓扑}$$
 
+11. **平滑态射的纤维性质**：
+    平滑态射的纤维性质：
+    $$f: X \to Y \text{ 平滑 } \Rightarrow f \text{ 的纤维几何正则}$$
+
+12. **晶体层的构造**：
+    晶体层的构造：
+    $$\mathcal{F} \text{ 晶体层 } \iff \mathcal{F} \text{ 在Cris}(X/S) \text{ 上的层，满足特定条件}$$
+
+13. **晶体上同调的长正合列**：
+    晶体上同调的长正合列：
+    $$0 \to H^0_{\text{cris}}(X/S, \mathcal{F}) \to \cdots \to H^i_{\text{cris}}(X/S, \mathcal{F}) \to H^{i+1}_{\text{cris}}(X/S, \mathcal{F}) \to \cdots$$
+
+14. **晶体上同调与de Rham上同调的比较**：
+    晶体上同调与de Rham上同调的比较：
+    $$H^i_{\text{cris}}(X/W(k)) \otimes_W \mathbb{Q} \cong H^i_{\text{dR}}(X/k)$$
+
+15. **晶体上同调与étale上同调的比较**：
+    晶体上同调与étale上同调的比较：
+    $$H^i_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_p) \cong H^i_{\text{cris}}(X/W(\bar{k})) \otimes \mathbb{Q}_p$$
+
+---
+
+## 十、平滑Topos与晶体Topos的详细数学表述
+
+### 10.1 平滑态射与平滑Topos
+
+**平滑态射的纤维性质**：
+
+平滑态射$f: X \to Y$的**纤维几何正则**：
+$$f: X \to Y \text{ 平滑 } \Rightarrow f \text{ 的纤维几何正则}$$
+
+**平滑Topos**：
+
+**平滑Topos**定义为：
+$$X_{\text{sm}} = \text{Sh}(X_{\text{sm}}), \quad X_{\text{sm}} = \{\text{平滑覆盖}\}$$
+
+**数学公式**：
+- 平滑态射: $$f: X \to Y \text{ 平滑 } \iff f \text{ 平坦、有限型，且纤维几何正则}$$
+- 平滑Topos: $$X_{\text{sm}} = \text{Sh}(X_{\text{sm}})$$
+- 拓扑关系: $$X_{\text{sm}} \subset X_{\text{Zar}}, \quad \text{平滑拓扑细于Zariski拓扑}$$
+
+---
+
+### 10.2 晶体层与晶体上同调
+
+**晶体层的构造**：
+
+**晶体层**$\mathcal{F}$是在$\text{Cris}(X/S)$上的层，满足特定条件：
+$$\mathcal{F} \text{ 晶体层 } \iff \mathcal{F} \text{ 在Cris}(X/S) \text{ 上的层，满足特定条件}$$
+
+**晶体上同调**：
+
+**晶体上同调**定义为：
+$$H^i_{\text{cris}}(X/S, \mathcal{F}) = H^i((X/S)_{\text{cris}}, \mathcal{F})$$
+
+**数学公式**：
+- 晶体层: $$\mathcal{F} \text{ 晶体层 } \iff \mathcal{F} \text{ 在Cris}(X/S) \text{ 上的层}$$
+- 晶体上同调: $$H^i_{\text{cris}}(X/S, \mathcal{F}) = H^i((X/S)_{\text{cris}}, \mathcal{F})$$
+- 晶体Topos: $$(X/S)_{\text{cris}} = \text{Sh}(\text{Cris}(X/S))$$
+
+---
+
+### 10.3 比较定理
+
+**de Rham比较定理**：
+
+晶体上同调与de Rham上同调的比较：
+$$H^i_{\text{cris}}(X/W(k)) \otimes_W \mathbb{Q} \cong H^i_{\text{dR}}(X/k)$$
+
+**étale比较定理**：
+
+晶体上同调与étale上同调的比较：
+$$H^i_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_p) \cong H^i_{\text{cris}}(X/W(\bar{k})) \otimes \mathbb{Q}_p$$
+
+**数学公式**：
+- de Rham比较: $$H^i_{\text{cris}}(X/W(k)) \otimes_W \mathbb{Q} \cong H^i_{\text{dR}}(X/k)$$
+- étale比较: $$H^i_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_p) \cong H^i_{\text{cris}}(X/W(\bar{k})) \otimes \mathbb{Q}_p$$
+- 比较定理: $$\text{晶体上同调连接de Rham上同调与étale上同调}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

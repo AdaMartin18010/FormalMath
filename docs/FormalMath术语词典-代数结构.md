@@ -2839,7 +2839,7 @@ mindmap
 | **定义** | $n \times n$矩阵 | 迹为零的矩阵 | 反对称矩阵 |
 | **维数** | $n^2$ | $n^2 - 1$ | $n(n-1)/2$ |
 | **李括号** | $[A, B] = AB - BA$ | $[A, B] = AB - BA$ | $[A, B] = AB - BA$ |
-| **性质** | 一般李代数 | 单李代数（$n \geq 2$） | 单李代数（$n \geq 3$，$n \neqqq 4$） |
+| **性质** | 一般李代数 | 单李代数（$n \geq 2$） | 单李代数（$n \geq 3$，$n \neq 4$） |
 | **典型例子** | $\mathfrak{gl}_2(\mathbb{R})$ | $\mathfrak{sl}_2(\mathbb{R})$ | $\mathfrak{so}_3(\mathbb{R})$ |
 | **关系** | $\mathfrak{sl}_n \subset \mathfrak{gl}_n$ | $\mathfrak{sl}_n$是$\mathfrak{gl}_n$的理想 | $\mathfrak{so}_n$是$\mathfrak{gl}_n$的子代数 |
 
@@ -5160,7 +5160,7 @@ mindmap
 
 - **$\mathbb{Z}[x]$ 在 $(x)$ 处的局部化**：
   - $S = \mathbb{Z}[x] \setminus (x)$（所有常数项不为零的多项式）
-  - $\mathbb{Z}[x]_{(x)} = \{\frac{f(x)}{g(x)} \mid f(x), g(x) \in \mathbb{Z}[x], g(0) \neqqq 0\}$
+  - $\mathbb{Z}[x]_{(x)} = \{\frac{f(x)}{g(x)} \mid f(x), g(x) \in \mathbb{Z}[x], g(0) \neq 0\}$
 
 ### 域论练习题答案 / Field Theory Exercise Answers
 

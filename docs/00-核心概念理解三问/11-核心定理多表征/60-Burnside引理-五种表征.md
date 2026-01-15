@@ -1,4 +1,4 @@
-# Burnside引理 - 五种表征
+﻿# Burnside引理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 组合学/群论
@@ -39,7 +39,7 @@ $$|X/G| = \frac{1}{|G|} \sum_{g \in G} |\operatorname{Fix}(g)|$$
 
 ### 1.3 形式化表述
 
-$$\leqft[ G \text{ 有限群 } \land G \curvearrowright X \text{ 有限集合 } \right] \Rightarrow |X/G| = \frac{1}{|G|} \sum_{g \in G} |X^g|$$
+$$\left[ G \text{ 有限群 } \land G \curvearrowright X \text{ 有限集合 } \right] \Rightarrow |X/G| = \frac{1}{|G|} \sum_{g \in G} |X^g|$$
 
 ---
 

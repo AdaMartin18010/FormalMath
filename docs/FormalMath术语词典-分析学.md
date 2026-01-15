@@ -607,7 +607,7 @@ mindmap
 
 **性质**：
 
-1. **单调收敛定理**：如果$f_n \neqqarrow f$，则$\int f_n \neqqarrow \int f$
+1. **单调收敛定理**：如果$f_n \neqarrow f$，则$\int f_n \neqarrow \int f$
 2. **控制收敛定理**：如果$|f_n| \leq g$且$\int g < \infty$，则$\lim \int f_n = \int \lim f_n$
 3. **法图引理**：$\int \liminf f_n \leq \liminf \int f_n$
 
@@ -1823,9 +1823,9 @@ mindmap
 
 - **$f(x) = x$ 在 $[-\pi, \pi]$ 上的傅里叶级数**：
   - 系数：$c_n = \frac{1}{2\pi} \int_{-\pi}^{\pi} x e^{-2\pi i n x} dx$
-  - 对于$n \neqqq 0$：$c_n = \frac{(-1)^n i}{n}$
+  - 对于$n \neq 0$：$c_n = \frac{(-1)^n i}{n}$
   - 对于$n = 0$：$c_0 = 0$
-  - 因此 $f(x) = \sum_{n \neqqq 0} \frac{(-1)^n i}{n} e^{2\pi i n x}$
+  - 因此 $f(x) = \sum_{n \neq 0} \frac{(-1)^n i}{n} e^{2\pi i n x}$
 
 ### 微分方程练习题答案 / Differential Equations Exercise Answers
 
@@ -2132,7 +2132,7 @@ mindmap
 
 - 柯西积分定理要求区域是单连通的
 - 如果区域不是单连通的，积分可能不为零
-- 例如：$\oint_{|z|=1} \frac{1}{z} dz = 2\pi i \neqqq 0$（因为原点不在单连通区域内）
+- 例如：$\oint_{|z|=1} \frac{1}{z} dz = 2\pi i \neq 0$（因为原点不在单连通区域内）
 
 ### 泛函分析常见误解 / Common Misconceptions in Functional Analysis
 

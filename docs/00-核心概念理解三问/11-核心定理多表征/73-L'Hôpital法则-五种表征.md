@@ -1,4 +1,4 @@
-# L'Hôpital法则 - 五种表征
+﻿# L'Hôpital法则 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 微积分
@@ -51,7 +51,7 @@ L'Hôpital法则也可用于其他不定型，通过变换：
 
 ### 1.3 形式化表述
 
-$$\leqft[ \lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0 \land \exists \lim_{x \to a} \frac{f'(x)}{g'(x)} \right] \Rightarrow \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
+$$\left[ \lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0 \land \exists \lim_{x \to a} \frac{f'(x)}{g'(x)} \right] \Rightarrow \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
 
 ---
 

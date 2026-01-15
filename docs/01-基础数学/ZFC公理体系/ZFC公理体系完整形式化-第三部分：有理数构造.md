@@ -55,7 +55,7 @@
 
 **定义 1.1** (有理数)
 有理数是整数序对的等价类，其中等价关系定义为：
-$$(a, b) \sim (c, d) \leftrightarrow ad = bc \land b \neqqq 0 \land d \neqqq 0$$
+$$(a, b) \sim (c, d) \leftrightarrow ad = bc \land b \neq 0 \land d \neq 0$$
 
 **形式化表述**：
 $$\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$$
@@ -161,7 +161,7 @@ $$\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$$
 1. 结合律：$(x \cdot y) \cdot z = x \cdot (y \cdot z)$
 2. 交换律：$x \cdot y = y \cdot x$
 3. 单位元：$x \cdot 1 = x$
-4. 逆元：$x \cdot x^{-1} = 1$ (对于 $x \neqqq 0$)
+4. 逆元：$x \cdot x^{-1} = 1$ (对于 $x \neq 0$)
 
 **形式化证明**：
 

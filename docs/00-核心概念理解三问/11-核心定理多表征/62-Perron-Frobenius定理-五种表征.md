@@ -1,4 +1,4 @@
-# Perron-Frobenius定理 - 五种表征
+﻿# Perron-Frobenius定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 线性代数/马尔可夫链
@@ -38,7 +38,7 @@
 
 ### 1.3 形式化表述
 
-$$\leqft[ A \geq 0 \land A \text{ 不可约 } \right] \Rightarrow \exists! r > 0: r = \rho(A) \land \exists v > 0: Av = rv$$
+$$\left[ A \geq 0 \land A \text{ 不可约 } \right] \Rightarrow \exists! r > 0: r = \rho(A) \land \exists v > 0: Av = rv$$
 
 其中 $\rho(A)$ 是 $A$ 的谱半径。
 

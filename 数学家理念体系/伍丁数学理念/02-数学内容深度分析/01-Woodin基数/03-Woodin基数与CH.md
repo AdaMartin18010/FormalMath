@@ -123,7 +123,7 @@
 
 - 证明¬CH与ZFC一致
 - 使用Forcing构造模型
-- 因此 $\text{ZFC} + \neqg \text{CH}$ 一致
+- 因此 $\text{ZFC} + \neg \text{CH}$ 一致
 
 **意义**：
 

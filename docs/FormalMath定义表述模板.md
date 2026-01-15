@@ -183,9 +183,9 @@
 **定义**：重言式
 重言式是在所有真值赋值下都为真的命题。
 **英文定义**：A tautology is a proposition that is true under all truth assignments.
-**符号表示**：$p \lor \\neg p$
-**真值条件**：无论p取何值，$p \lor \\neg p$ 都为真
-**示例**：$p \lor \\neg p$ 是重言式
+**符号表示**：$p \lor \neqg p$
+**真值条件**：无论p取何值，$p \lor \neqg p$ 都为真
+**示例**：$p \lor \neqg p$ 是重言式
 **性质**：重言式的否定是矛盾
 ```
 

@@ -193,7 +193,7 @@ $$M[G] \models \text{ZFC}$$
 
 **逻辑连接词**：
 
-- **否定**：$p \Vdash \neqg \varphi$ 当且仅当不存在 $q \leq p$ 使得 $q \Vdash \varphi$
+- **否定**：$p \Vdash \neg \varphi$ 当且仅当不存在 $q \leq p$ 使得 $q \Vdash \varphi$
 
 - **合取**：$p \Vdash \varphi \land \psi$ 当且仅当 $p \Vdash \varphi$ 且 $p \Vdash \psi$
 
@@ -269,7 +269,7 @@ $$\tau_G = \{\sigma_G : (\sigma, p) \in \tau \text{ 且 } p \in G\}$$
 证明连续统假设（CH）独立于ZFC，即：
 
 - $\text{ZFC} + \text{CH}$ 一致（哥德尔已证明）
-- $\text{ZFC} + \neqg \text{CH}$ 一致（科恩证明）
+- $\text{ZFC} + \neg \text{CH}$ 一致（科恩证明）
 
 **策略**：
 
@@ -288,8 +288,8 @@ $$\tau_G = \{\sigma_G : (\sigma, p) \in \tau \text{ 且 } p \in G\}$$
 
 **结果**：
 
-- $M[G] \models \text{ZFC} + \neqg \text{CH}$
-- 因此 $\text{ZFC} + \neqg \text{CH}$ 一致
+- $M[G] \models \text{ZFC} + \neg \text{CH}$
+- 因此 $\text{ZFC} + \neg \text{CH}$ 一致
 - CH独立于ZFC
 
 ---
@@ -301,7 +301,7 @@ $$\tau_G = \{\sigma_G : (\sigma, p) \in \tau \text{ 且 } p \in G\}$$
 证明选择公理（AC）独立于ZF，即：
 
 - $\text{ZF} + \text{AC}$ 一致（ZFC中AC为真）
-- $\text{ZF} + \neqg \text{AC}$ 一致（科恩证明）
+- $\text{ZF} + \neg \text{AC}$ 一致（科恩证明）
 
 **策略**：
 
@@ -315,12 +315,12 @@ $$\tau_G = \{\sigma_G : (\sigma, p) \in \tau \text{ 且 } p \in G\}$$
 - 定义 $P$ 的自同构群 $\text{Aut}(P)$
 - 定义对称名称：在群作用下不变的名称
 - 对称模型 $N$ 是对称名称的解释
-- $N \models \text{ZF}$ 但 $N \models \neqg \text{AC}$
+- $N \models \text{ZF}$ 但 $N \models \neg \text{AC}$
 
 **结果**：
 
-- $N \models \text{ZF} + \neqg \text{AC}$
-- 因此 $\text{ZF} + \neqg \text{AC}$ 一致
+- $N \models \text{ZF} + \neg \text{AC}$
+- 因此 $\text{ZF} + \neg \text{AC}$ 一致
 - AC独立于ZF
 
 ---

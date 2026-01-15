@@ -286,6 +286,148 @@ Grothendieck（1950s）：
 
 ---
 
-**文档状态**: ✅ 完成
-**字数**: 约2,000字
-**最后更新**: 2025年12月6日
+## 九、Grothendieck群的详细数学表述
+
+### 9.1 K_0群的严格构造
+
+**向量丛的等价关系**：
+
+设 $X$ 是概形，$\text{Vect}(X)$ 是 $X$ 上有限秩向量丛的集合。
+
+**等价关系**：
+- $E \sim E'$ 如果存在 $F$ 使得 $E \oplus F \cong E' \oplus F$
+- 这定义了**稳定等价**
+
+**Grothendieck群**：
+
+**K_0群** $K_0(X)$ 定义为：
+$$K_0(X) = \text{Free}(\text{Vect}(X)) / \sim$$
+
+其中关系由：
+$$[E \oplus F] = [E] + [F]$$
+
+生成。
+
+**数学公式**：
+- 稳定等价：$$E \sim E' \iff \exists F: E \oplus F \cong E' \oplus F$$
+- K_0群：$$K_0(X) = \text{Free}(\text{Vect}(X)) / \sim$$
+- 关系：$$[E \oplus F] = [E] + [F]$$
+
+---
+
+### 9.2 Picard群与K_0的关系
+
+**Picard群**：
+
+**Picard群** $\text{Pic}(X)$ 是线丛的同构类，群运算为张量积：
+$$\text{Pic}(X) = \{\text{线丛}\} / \cong$$
+
+**与K_0的关系**：
+
+存在群同态：
+$$\text{Pic}(X) \to K_0(X), \quad [L] \mapsto [L]$$
+
+**性质**：
+- 如果 $X$ 是正则概形，则 $\text{Pic}(X) \cong K_0(X) / K_0(X)^2$
+- 线丛生成 $K_0(X)$（在某些情况下）
+
+**数学公式**：
+- Picard群：$$\text{Pic}(X) = \{\text{线丛}\} / \cong$$
+- 群同态：$$\text{Pic}(X) \to K_0(X), \quad [L] \mapsto [L]$$
+- 关系：$$\text{Pic}(X) \cong K_0(X) / K_0(X)^2 \quad \text{（$X$ 正则）}$$
+
+---
+
+### 9.3 Chern特征的严格定义
+
+**Chern类**：
+
+设 $E$ 是 $X$ 上的向量丛，**Chern类** $c_i(E) \in H^{2i}(X, \mathbb{Z})$ 定义为：
+$$c(E) = 1 + c_1(E) + c_2(E) + \cdots = \prod_{i=1}^r (1 + x_i)$$
+
+其中 $x_i$ 是Chern根。
+
+**Chern特征**：
+
+**Chern特征** $\text{ch}(E)$ 定义为：
+$$\text{ch}(E) = \sum_{i=0}^r e^{x_i} = \sum_{i=0}^\infty \frac{c_i(E)}{i!}$$
+
+**性质**：
+- 乘法性：$\text{ch}(E \otimes F) = \text{ch}(E) \cdot \text{ch}(F)$
+- 函子性：$\text{ch}(f^* E) = f^* \text{ch}(E)$
+
+**数学公式**：
+- Chern类：$$c(E) = \prod_{i=1}^r (1 + x_i)$$
+- Chern特征：$$\text{ch}(E) = \sum_{i=0}^r e^{x_i} = \sum_{i=0}^\infty \frac{c_i(E)}{i!}$$
+- 乘法性：$$\text{ch}(E \otimes F) = \text{ch}(E) \cdot \text{ch}(F)$$
+
+---
+
+### 9.4 Riemann-Roch中的K理论
+
+**Riemann-Roch公式**：
+
+使用K理论，Riemann-Roch公式可以写成：
+$$\text{ch}(R f_* E) \cdot \text{td}(Y) = f_*(\text{ch}(E) \cdot \text{td}(X))$$
+
+其中 $f_*: K_0(X) \to K_0(Y)$ 是推前映射。
+
+**数学公式**：
+- Riemann-Roch：$$\text{ch}(R f_* E) \cdot \text{td}(Y) = f_*(\text{ch}(E) \cdot \text{td}(X))$$
+- 推前映射：$$f_*: K_0(X) \to K_0(Y)$$
+- Todd类：$$\text{td}(X) = \prod_{i=1}^n \frac{x_i}{1 - e^{-x_i}}$$
+
+---
+
+## 十、Grothendieck群理论的应用
+
+### 10.1 在向量丛分类中的应用
+
+**分类问题**：
+
+K_0群用于分类向量丛：
+- 计算向量丛的不变量
+- 研究模空间
+- 分类问题
+
+**数学公式**：
+- 分类：$$K_0(X) \cong \text{Vect}(X) / \sim$$
+- 不变量：$$\text{rank}, c_1, c_2, \ldots$$
+
+---
+
+### 10.2 在数论中的应用
+
+**代数数论**：
+
+K理论在数论中有应用：
+- 类数公式
+- L函数
+- 应用广泛
+
+**数学公式**：
+- 类数公式：$$h_K = \frac{w_K \sqrt{|\Delta_K|}}{2^{r_1} (2\pi)^{r_2} \text{Reg}_K} L(1, \chi_K)$$
+- K群：$$K_0(\mathcal{O}_K) \cong \text{Cl}(K)$$
+
+---
+
+### 10.3 在拓扑中的应用
+
+**拓扑K理论**：
+
+K理论在拓扑中有应用：
+- 向量丛分类
+- 上同调理论
+- 应用广泛
+
+**数学公式**：
+- 拓扑K群：$$K^0(X) = \text{Vect}(X) / \sim$$
+- 上同调：$$K^*(X) \otimes \mathbb{Q} \cong H^*(X, \mathbb{Q})$$
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,800字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

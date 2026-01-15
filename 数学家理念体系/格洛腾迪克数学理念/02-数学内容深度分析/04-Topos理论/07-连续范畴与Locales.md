@@ -1,4 +1,4 @@
-﻿# 连续范畴与Locales：Topos的几何化
+# 连续范畴与Locales：Topos的几何化
 
 
 ## 📋 目录
@@ -269,7 +269,7 @@ Locale
 ### 核心公式
 
 1. **Locale定义**：
-   $$L \text{ Locale } \iff L \text{ 完备格，满足分配律：} a \land \\\left(\bigvee_i b_i\right) = \bigvee_i (a \land b_i)$$
+   $$L \text{ Locale } \iff L \text{ 完备格，满足分配律：} a \land \left(\bigvee_i b_i\right) = \bigvee_i (a \land b_i)$$
 
 2. **连续范畴定义**：
    $$\mathcal{C} \text{ 连续 } \iff \mathcal{C} \text{ 有所有余极限，且满足特定条件}$$
@@ -287,21 +287,100 @@ Locale
    $$F: L^{\text{op}} \to \text{Set}, \quad \text{满足层公理}$$
 
 7. **Locale与Topos对应**：
-   $$\text{Locale } L \\leftrightarrow \text{Topos Sh}(L)$$
+   $$\text{Locale } L \leqftrightarrow \text{Topos Sh}(L)$$
 
 8. **连续范畴与Topos**：
    $$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
 
 9. **Locale的几何化**：
-   $$\text{无点拓扑} \\leftrightarrow \text{Locale}, \quad \text{几何化数学}$$
+   $$\text{无点拓扑} \leqftrightarrow \text{Locale}, \quad \text{几何化数学}$$
 
 10. **Locales与逻辑**：
     $$\text{Locale的内部逻辑是几何逻辑}$$
 
+11. **Locale的框架**：
+    Locale的框架：
+    $$L = \text{完备格}, \quad \text{满足分配律}: a \land \bigvee_i b_i = \bigvee_i (a \land b_i)$$
+
+12. **Locale的态射**：
+    Locale的态射：
+    $$f: L \to M, \quad f \text{ 保持有限交和任意并}$$
+
+13. **Locale与拓扑空间的对应**：
+    Locale与拓扑空间的对应：
+    $$\Omega: \text{Top} \to \text{Loc}, \quad \text{pt}: \text{Loc} \to \text{Top}, \quad \Omega \dashv \text{pt}$$
+
+14. **Locale的层Topos**：
+    Locale的层Topos：
+    $$\text{Sh}(L) = \text{Locale $L$ 上的层范畴}$$
+
+15. **连续范畴的定义**：
+    连续范畴的定义：
+    $$\mathcal{C} \text{ 连续 } \iff \mathcal{C} \text{ 有所有余极限且满足特定条件}$$
+
+---
+
+## 十、连续范畴与Locales的详细数学表述
+
+### 10.1 Locale的框架与态射
+
+**Locale的框架**：
+
+**Locale**是完备格$L$，满足分配律：
+$$a \land \bigvee_i b_i = \bigvee_i (a \land b_i)$$
+
+**Locale的态射**：
+
+**Locale的态射**$f: L \to M$保持有限交和任意并：
+$$f(a \land b) = f(a) \land f(b), \quad f\left(\bigvee_i a_i\right) = \bigvee_i f(a_i)$$
+
+**数学公式**：
+- Locale框架: $$L = \text{完备格}, \quad a \land \bigvee_i b_i = \bigvee_i (a \land b_i)$$
+- Locale态射: $$f(a \land b) = f(a) \land f(b), \quad f\left(\bigvee_i a_i\right) = \bigvee_i f(a_i)$$
+- Locale范畴: $$\text{Loc} = \text{Locale的范畴}$$
+
+---
+
+### 10.2 Locale与拓扑空间的对应
+
+**对应函子**：
+
+**开集格函子**$\Omega: \text{Top} \to \text{Loc}$和**点函子**$\text{pt}: \text{Loc} \to \text{Top}$形成伴随：
+$$\Omega \dashv \text{pt}, \quad \Omega(X) = \text{开集格}, \quad \text{pt}(L) = \{\text{点}\}$$
+
+**对应关系**：
+
+Locale与拓扑空间对应：
+$$\text{Locale } L \leftrightarrow \text{Topos Sh}(L)$$
+
+**数学公式**：
+- 伴随关系: $$\Omega \dashv \text{pt}, \quad \Omega: \text{Top} \to \text{Loc}, \quad \text{pt}: \text{Loc} \to \text{Top}$$
+- 对应关系: $$\text{Locale } L \leftrightarrow \text{Topos Sh}(L)$$
+- 开集格: $$\Omega(X) = \text{开集格}$$
+
+---
+
+### 10.3 连续范畴的定义
+
+**连续范畴**：
+
+**连续范畴**$\mathcal{C}$有所有余极限且满足特定条件：
+$$\mathcal{C} \text{ 连续 } \iff \mathcal{C} \text{ 有所有余极限且满足特定条件}$$
+
+**与Topos的关系**：
+
+连续范畴是Grothendieck Topos的子类：
+$$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
+
+**数学公式**：
+- 连续范畴: $$\mathcal{C} \text{ 连续 } \iff \mathcal{C} \text{ 有所有余极限}$$
+- 与Topos关系: $$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
+- 连续性质: $$\text{连续范畴满足特定条件}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

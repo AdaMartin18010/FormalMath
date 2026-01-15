@@ -57,13 +57,13 @@ ZFC公理体系（策梅洛-弗兰克尔集合论）是现代数学的严格基�
 **定义 1.1** (ZFC的形式化语言)
 ZFC公理系统使用一阶逻辑语言，包含：
 
-- **逻辑符号**：$\\neg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =$
+- **逻辑符号**：$\neqg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =$
 - **非逻辑符号**：$\in$ (属于关系)
 - **变量**：$x, y, z, \ldots$ (小写字母)
 - **括号**：$(, )$
 
 **形式化表述**：
-$$\mathcal{L}_{\text{ZFC}} = \{\\neg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =, \in, (, )\} \cup \text{Var}$$
+$$\mathcal{L}_{\text{ZFC}} = \{\neqg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =, \in, (, )\} \cup \text{Var}$$
 
 其中 $\text{Var}$ 是变量集合。
 
@@ -76,7 +76,7 @@ $$\mathcal{L}_{\text{ZFC}} = \{\\neg, \land, \lor, \rightarrow, \leftrightarrow,
 **定义 1.3** (公式)
 
 - 原子公式是公式
-- 如果 $\phi, \psi$ 是公式，则 $\\neg\phi, \phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leftrightarrow \psi$ 是公式
+- 如果 $\phi, \psi$ 是公式，则 $\neqg\phi, \phi \land \psi, \phi \lor \psi, \phi \rightarrow \psi, \phi \leftrightarrow \psi$ 是公式
 - 如果 $\phi$ 是公式，$x$ 是变量，则 $\forall x \phi, \exists x \phi$ 是公式
 
 ### 2. ZFC公理系统
@@ -243,7 +243,7 @@ $$\forall w_1 \ldots \forall w_n \forall A[\forall x \in A \exists!y \phi(x, y, 
 #### 2.9 正则公理 (Axiom of Regularity)
 
 **形式化表述**：
-$$\forall x(x \neqqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
+$$\forall x(x \neq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
 
 **直观含义**：每个非空集合都有最小元素。
 
@@ -261,7 +261,7 @@ $$\forall x(x \neqqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset)
 #### 2.10 选择公理 (Axiom of Choice)
 
 **形式化表述**：
-$$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \land x \neqqq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists!z \in x(z \in C))$$
+$$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \land x \neq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists!z \in x(z \in C))$$
 
 **直观含义**：对于任意非空集合族，存在选择函数。
 

@@ -1,4 +1,4 @@
-# Gram-Schmidt正交化 - 五种表征
+﻿# Gram-Schmidt正交化 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 线性代数
@@ -41,7 +41,7 @@ $$V = QR$$
 
 ### 1.3 形式化表述
 
-$$\leqft[ \{v_1, \ldots, v_n\} \text{ 线性无关 } \right] \Rightarrow \exists \{e_1, \ldots, e_n\} \text{ 正交归一}: \operatorname{span}\{e_i\} = \operatorname{span}\{v_i\}$$
+$$\left[ \{v_1, \ldots, v_n\} \text{ 线性无关 } \right] \Rightarrow \exists \{e_1, \ldots, e_n\} \text{ 正交归一}: \operatorname{span}\{e_i\} = \operatorname{span}\{v_i\}$$
 
 ---
 

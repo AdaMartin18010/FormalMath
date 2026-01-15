@@ -1,4 +1,4 @@
-# Riemann-Roch定理 - 五种表征
+﻿# Riemann-Roch定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 代数几何/复分析
@@ -44,7 +44,7 @@ $$\chi(\mathcal{O}(D)) = \deg(D) + 1 - g$$
 
 ### 1.4 形式化表述
 
-$$\leqft[ C \text{ 紧Riemann曲面 } \land D \text{ 除子 } \right] \Rightarrow \ell(D) - \ell(K - D) = \deg(D) - g + 1$$
+$$\left[ C \text{ 紧Riemann曲面 } \land D \text{ 除子 } \right] \Rightarrow \ell(D) - \ell(K - D) = \deg(D) - g + 1$$
 
 ---
 

@@ -129,7 +129,7 @@ $$\forall A, B, C, P, Q: (B(A, P, C) \land B(B, Q, C)) \to \exists X: B(P, X, B)
 $$\forall P, R: \exists Q: B(P, Q, R)$$
 
 **A7（下界公理）**：
-$$\exists P: \forall Q, R: \neqqqqg B(P, Q, R)$$
+$$\exists P: \forall Q, R: \neg B(P, Q, R)$$
 
 **A8（Euclid公理）**：
 $$\forall A, B, C, D, T: (B(A, D, T) \land B(B, D, C) \land A \neq D) \to$$
@@ -413,7 +413,7 @@ Tarski系统是**希尔伯特几何的现代形式化实现**
    $$\forall P, R: \exists Q: B(P, Q, R)$$
 
 7. **下界公理（A7）**：
-   $$\exists P: \forall Q, R: \neqqqqg B(P, Q, R)$$
+   $$\exists P: \forall Q, R: \neg B(P, Q, R)$$
 
 8. **Euclid公理（A8）**：
    $$(B(A, D, T) \land B(B, D, C) \land A \neq D) \to \exists X, Y: B(A, B, X) \land B(A, C, Y) \land B(X, T, Y)$$

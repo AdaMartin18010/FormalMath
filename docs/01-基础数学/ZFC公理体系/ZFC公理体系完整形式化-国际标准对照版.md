@@ -59,13 +59,13 @@ Le système d'axiomes ZFC utilise le langage de logique du premier ordre, inclua
 
 Das ZFC-Axiomensystem verwendet die Sprache der Logik erster Stufe, einschließlich:
 
-- **逻辑符号** / **Logical symbols** / **Symboles logiques** / **Logische Symbole**: $\\neg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =$
+- **逻辑符号** / **Logical symbols** / **Symboles logiques** / **Logische Symbole**: $\neqg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =$
 - **非逻辑符号** / **Non-logical symbols** / **Symboles non-logiques** / **Nicht-logische Symbole**: $\in$ (属于关系 / membership relation / relation d'appartenance / Element-Relation)
 - **变量** / **Variables** / **Variables** / **Variablen**: $x, y, z, \ldots$ (小写字母 / lowercase letters / lettres minuscules / Kleinbuchstaben)
 - **括号** / **Parentheses** / **Parenthèses** / **Klammern**: $(, )$
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\mathcal{L}_{\text{ZFC}} = \{\\neg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =, \in, (, )\} \cup \text{Var}$$
+$$\mathcal{L}_{\text{ZFC}} = \{\neqg, \land, \lor, \rightarrow, \leftrightarrow, \forall, \exists, =, \in, (, )\} \cup \text{Var}$$
 
 其中 $\text{Var}$ 是变量集合 / where $\text{Var}$ is the set of variables / où $\text{Var}$ est l'ensemble des variables / wobei $\text{Var}$ die Menge der Variablen ist.
 
@@ -156,14 +156,14 @@ $$\forall w_1 \ldots \forall w_n \forall A[\forall x \in A \exists!y \phi(x, y, 
 #### 2.9 正则公理 / Axiom of Regularity / Axiome de régularité / Fundierungsaxiom
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\forall x(x \neqqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
+$$\forall x(x \neq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 每个非空集合都有最小元素 / Every non-empty set has a minimal element / Tout ensemble non vide a un élément minimal / Jede nicht-leere Menge hat ein minimales Element.
 
 #### 2.10 选择公理 / Axiom of Choice / Axiome du choix / Auswahlaxiom
 
 **形式化表述** / **Formal expression** / **Expression formelle** / **Formale Darstellung**:
-$$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \land x \neqqq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists!z \in x(z \in C))$$
+$$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \land x \neq y \rightarrow x \cap y = \emptyset) \rightarrow \exists C \forall x \in F \exists!z \in x(z \in C))$$
 
 **直观含义** / **Intuitive meaning** / **Signification intuitive** / **Intuitive Bedeutung**: 对于任意非空集合族，存在选择函数 / For any family of non-empty sets, there exists a choice function / Pour toute famille d'ensembles non vides, il existe une fonction de choix / Für jede Familie nicht-leerer Mengen existiert eine Auswahlfunktion.
 

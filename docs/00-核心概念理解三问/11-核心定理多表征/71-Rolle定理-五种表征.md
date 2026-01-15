@@ -1,4 +1,4 @@
-# Rolle定理 - 五种表征
+﻿# Rolle定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 微积分
@@ -31,7 +31,7 @@
 
 **形式化表述**：
 
-$$\leqft[ f \in C[a,b] \land f \in C^1(a,b) \land f(a) = f(b) \right] \Rightarrow \exists c \in (a,b): f'(c) = 0$$
+$$\left[ f \in C[a,b] \land f \in C^1(a,b) \land f(a) = f(b) \right] \Rightarrow \exists c \in (a,b): f'(c) = 0$$
 
 ### 1.2 几何意义
 

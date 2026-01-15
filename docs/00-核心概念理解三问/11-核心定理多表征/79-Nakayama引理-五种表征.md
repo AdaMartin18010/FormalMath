@@ -1,4 +1,4 @@
-# Nakayama引理 - 五种表征
+﻿# Nakayama引理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 交换代数
@@ -37,7 +37,7 @@
 
 ### 1.3 形式化表述
 
-$$\leqft[ R \text{ 局部环 } \land \mathfrak{m} \text{ 极大理想 } \land M \text{ 有限生成 } \land \mathfrak{m}M = M \right] \Rightarrow M = 0$$
+$$\left[ R \text{ 局部环 } \land \mathfrak{m} \text{ 极大理想 } \land M \text{ 有限生成 } \land \mathfrak{m}M = M \right] \Rightarrow M = 0$$
 
 或等价地：
 

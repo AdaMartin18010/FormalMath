@@ -1,4 +1,4 @@
-# BHK解释与语义理论：直觉主义逻辑的语义基础
+﻿# BHK解释与语义理论：直觉主义逻辑的语义基础
 
 > **文档状态**: ✅ 完成
 > **创建日期**: 2025年12月28日
@@ -263,35 +263,35 @@ $$\exists x A(x) \equiv \sum_{x} A(x)$$
 
 **数学表述**：
 
-$$\neqg A \equiv A \to \bot$$
+$$\neg A \equiv A \to \bot$$
 
-因此，$\neqg A$ 的证明是：
+因此，$\neg A$ 的证明是：
 
-$$\text{Proof}(\neqg A) = f: \text{Proof}(A) \to \text{Proof}(\bot) = f: \text{Proof}(A) \to \emptyset$$
+$$\text{Proof}(\neg A) = f: \text{Proof}(A) \to \text{Proof}(\bot) = f: \text{Proof}(A) \to \emptyset$$
 
-即：证明 $\neqg A$ 需要证明 $A$ 会导致矛盾。
+即：证明 $\neg A$ 需要证明 $A$ 会导致矛盾。
 
 **类型论表述**：
 
 在类型论中，否定对应函数类型到空类型：
-$$\neqg A \equiv A \to \mathbf{0}$$
+$$\neg A \equiv A \to \mathbf{0}$$
 
 **双重否定（¬¬A）**：
 
-$\neqg \neqg A$ 的证明是：
+$\neg \neg A$ 的证明是：
 
-$$\text{Proof}(\neqg \neqg A) = f: \text{Proof}(\neqg A) \to \text{Proof}(\bot) = f: (A \to \bot) \to \bot$$
+$$\text{Proof}(\neg \neg A) = f: \text{Proof}(\neg A) \to \text{Proof}(\bot) = f: (A \to \bot) \to \bot$$
 
-但这不意味着 $A$ 的证明，因此 $\neqg \neqg A \to A$ 不成立。
+但这不意味着 $A$ 的证明，因此 $\neg \neg A \to A$ 不成立。
 
 **数学表述**：
 
-虽然 $A \to \neqg \neqg A$ 成立（可以证明），但 $\neqg \neqg A \to A$ 不成立（等价于排中律）。
+虽然 $A \to \neg \neg A$ 成立（可以证明），但 $\neg \neg A \to A$ 不成立（等价于排中律）。
 
 **例子**：
 
-1. **否定**：证明"$\neqg (n^2 = -1)$"需要证明"$n^2 = -1$"会导致矛盾
-2. **双重否定**：虽然可以证明"$\neqg \neqg (n^2 = -1)$"（即不存在矛盾），但不能证明"$n^2 = -1$"本身
+1. **否定**：证明"$\neg (n^2 = -1)$"需要证明"$n^2 = -1$"会导致矛盾
+2. **双重否定**：虽然可以证明"$\neg \neg (n^2 = -1)$"（即不存在矛盾），但不能证明"$n^2 = -1$"本身
 
 ---
 

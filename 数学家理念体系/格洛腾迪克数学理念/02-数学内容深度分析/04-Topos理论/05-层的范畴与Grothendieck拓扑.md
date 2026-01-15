@@ -1,4 +1,4 @@
-﻿# 层的范畴与Grothendieck拓扑：广义拓扑
+# 层的范畴与Grothendieck拓扑：广义拓扑
 
 
 ## 📋 目录
@@ -321,10 +321,90 @@ Grothendieck拓扑
 10. **层范畴的内部逻辑**：
     $$\text{Sh}(C, J) \text{ 的内部逻辑是几何逻辑，依赖于 $J$}$$
 
+11. **Grothendieck拓扑的公理**：
+    Grothendieck拓扑的公理：
+    $$J(X) \text{ 满足恒等覆盖、覆盖细化、覆盖拉回}$$
+
+12. **层化的构造**：
+    层化的构造：
+    $$a: \text{PSh}(C) \to \text{Sh}(C, J), \quad a(F)(X) = \varinjlim_{\{U_i \to X\}} \check{H}^0(\{U_i\}, F)$$
+
+13. **层范畴的极限**：
+    层范畴的极限：
+    $$\text{Sh}(C, J) \text{ 有所有（余）极限，由预层范畴的极限给出}$$
+
+14. **层范畴的子对象分类器**：
+    层范畴的子对象分类器：
+    $$\Omega(X) = \{U \subseteq X : U \text{ 是 $J$-覆盖的并}\}$$
+
+15. **层范畴与Topos等价**：
+    层范畴与Topos等价：
+    $$\text{Sh}(C, J) \simeq \text{Grothendieck Topos}$$
+
+---
+
+## 十、层的范畴与Grothendieck拓扑的详细数学表述
+
+### 10.1 Grothendieck拓扑的公理
+
+**Grothendieck拓扑公理**：
+
+Grothendieck拓扑$J$满足以下公理：
+1. **恒等覆盖**: $\{\text{id}_X: X \to X\} \in J(X)$
+2. **覆盖细化**: 如果$\{U_i \to X\} \in J(X)$且$\{V_{ij} \to U_i\} \in J(U_i)$，则$\{V_{ij} \to X\} \in J(X)$
+3. **覆盖拉回**: 如果$\{U_i \to X\} \in J(X)$且$Y \to X$，则$\{U_i \times_X Y \to Y\} \in J(Y)$
+
+**数学公式**：
+- 恒等覆盖: $$\{\text{id}_X: X \to X\} \in J(X)$$
+- 覆盖细化: $$\{U_i \to X\} \in J(X), \{V_{ij} \to U_i\} \in J(U_i) \Rightarrow \{V_{ij} \to X\} \in J(X)$$
+- 覆盖拉回: $$\{U_i \to X\} \in J(X), Y \to X \Rightarrow \{U_i \times_X Y \to Y\} \in J(Y)$$
+
+---
+
+### 10.2 层化的构造
+
+**层化函子**：
+
+**层化函子**$a: \text{PSh}(C) \to \text{Sh}(C, J)$定义为：
+$$a(F)(X) = \varinjlim_{\{U_i \to X\}} \check{H}^0(\{U_i\}, F)$$
+
+其中$\check{H}^0(\{U_i\}, F)$是Čech上同调的零阶。
+
+**伴随关系**：
+
+层化函子$a$左伴随于包含函子$i: \text{Sh}(C, J) \hookrightarrow \text{PSh}(C)$：
+$$a \dashv i$$
+
+**数学公式**：
+- 层化: $$a(F)(X) = \varinjlim_{\{U_i \to X\}} \check{H}^0(\{U_i\}, F)$$
+- 伴随关系: $$a \dashv i, \quad a: \text{PSh}(C) \to \text{Sh}(C, J), \quad i: \text{Sh}(C, J) \hookrightarrow \text{PSh}(C)$$
+- 层条件: $$F(X) = \varprojlim F(U_i) \text{（对每个覆盖 $\{U_i\}$）}$$
+
+---
+
+### 10.3 层范畴与Topos等价
+
+**Grothendieck Topos**：
+
+层范畴$\text{Sh}(C, J)$是**Grothendieck Topos**，满足：
+- 有所有（余）极限
+- 有子对象分类器$\Omega$
+- 有幂对象
+
+**等价性**：
+
+每个Grothendieck Topos等价于某个site的层范畴：
+$$\text{Sh}(C, J) \simeq \text{Grothendieck Topos}$$
+
+**数学公式**：
+- Grothendieck Topos: $$\text{Sh}(C, J) \text{ 是Grothendieck Topos}$$
+- 子对象分类器: $$\Omega(X) = \{U \subseteq X : U \text{ 是 $J$-覆盖的并}\}$$
+- 等价性: $$\text{Sh}(C, J) \simeq \text{Grothendieck Topos}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

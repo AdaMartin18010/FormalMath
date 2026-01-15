@@ -271,7 +271,7 @@ $$\tau_G = \{\sigma_G : (\sigma, p) \in \tau \text{ 且 } p \in G\}$$
 
 **逻辑连接词**：
 
-- **否定**：$p \Vdash \neqg \varphi$ 当且仅当不存在 $q \leq p$ 使得 $q \Vdash \varphi$
+- **否定**：$p \Vdash \neg \varphi$ 当且仅当不存在 $q \leq p$ 使得 $q \Vdash \varphi$
 
 - **合取**：$p \Vdash \varphi \land \psi$ 当且仅当 $p \Vdash \varphi$ 且 $p \Vdash \psi$
 

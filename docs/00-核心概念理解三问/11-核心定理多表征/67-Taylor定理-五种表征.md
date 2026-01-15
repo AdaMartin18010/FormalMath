@@ -1,4 +1,4 @@
-# Taylor定理 - 五种表征
+﻿# Taylor定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 微积分
@@ -104,7 +104,7 @@ n=3: 三次逼近
 
 **收敛半径**：对于解析函数，Taylor级数在某个圆盘内收敛：
 
-$$|x-a| < R, \quad R = \limsup_{n \to \infty} \leqft|\frac{f^{(n)}(a)}{n!}\right|^{-1/n}$$
+$$|x-a| < R, \quad R = \limsup_{n \to \infty} \left|\frac{f^{(n)}(a)}{n!}\right|^{-1/n}$$
 
 ---
 

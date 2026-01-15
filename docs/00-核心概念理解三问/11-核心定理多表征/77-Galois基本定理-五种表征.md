@@ -1,4 +1,4 @@
-# Galois基本定理 - 五种表征
+﻿# Galois基本定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 域论/Galois理论
@@ -35,11 +35,11 @@ $$\{\text{中间域 } E: K \subseteq E \subseteq L\} \longleftrightarrow \{\text
 
 1. **度对应**：$[L:E] = |H|$，$[E:K] = [G:H]$
 2. **正规性**：$E/K$ 正规 ⟺ $H \triangleleft G$（$H$ 正规于 $G$）
-3. **复合对应**：$E_1 \cap E_2 \leqftrightarrow \langle H_1, H_2 \rangle$，$E_1E_2 \leqftrightarrow H_1 \cap H_2$
+3. **复合对应**：$E_1 \cap E_2 \leftrightarrow \langle H_1, H_2 \rangle$，$E_1E_2 \leftrightarrow H_1 \cap H_2$
 
 ### 1.3 形式化表述
 
-$$\leqft[ L/K \text{ Galois扩张 } \land G = \operatorname{Gal}(L/K) \right] \Rightarrow \exists \text{ 反序双射}: \{\text{中间域}\} \leqftrightarrow \{\text{子群}\}$$
+$$\left[ L/K \text{ Galois扩张 } \land G = \operatorname{Gal}(L/K) \right] \Rightarrow \exists \text{ 反序双射}: \{\text{中间域}\} \leftrightarrow \{\text{子群}\}$$
 
 ---
 
@@ -337,7 +337,7 @@ def solve_by_galois_theory(polynomial, base_field):
 - Galois群：$G \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$（4阶）
 - 子群：$\{e\}, \langle \sigma \rangle, \langle \tau \rangle, \langle \sigma\tau \rangle, G$
 - 中间域：$L, \mathbb{Q}(\sqrt{3}), \mathbb{Q}(\sqrt{2}), \mathbb{Q}(\sqrt{6}), \mathbb{Q}$
-- 对应：$\langle \sigma \rangle \leqftrightarrow \mathbb{Q}(\sqrt{3})$，$\langle \tau \rangle \leqftrightarrow \mathbb{Q}(\sqrt{2})$
+- 对应：$\langle \sigma \rangle \leftrightarrow \mathbb{Q}(\sqrt{3})$，$\langle \tau \rangle \leftrightarrow \mathbb{Q}(\sqrt{2})$
 
 **例子2**：$L = \mathbb{Q}(\zeta_p)$（$p$次单位根域），$K = \mathbb{Q}$
 

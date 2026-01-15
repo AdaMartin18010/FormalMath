@@ -1,4 +1,4 @@
-# Maschke定理 - 五种表征
+﻿# Maschke定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 表示论
@@ -31,11 +31,11 @@
 
 ### 1.2 形式化表述
 
-$$\leqft[ G \text{ 有限群 } \land \operatorname{char}(k) \nmid |G| \right] \Rightarrow k[G] \text{ 半单}$$
+$$\left[ G \text{ 有限群 } \land \operatorname{char}(k) \nmid |G| \right] \Rightarrow k[G] \text{ 半单}$$
 
 等价地：
 
-$$\leqft[ \operatorname{char}(k) \nmid |G| \right] \Rightarrow \forall M \in k[G]\text{-Mod}: M \text{ 完全可约}$$
+$$\left[ \operatorname{char}(k) \nmid |G| \right] \Rightarrow \forall M \in k[G]\text{-Mod}: M \text{ 完全可约}$$
 
 ---
 

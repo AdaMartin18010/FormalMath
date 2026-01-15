@@ -1,4 +1,4 @@
-# Picard-Lindelöf定理 - 五种表征
+﻿# Picard-Lindelöf定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 微分方程
@@ -43,7 +43,7 @@ $$\mathbf{y}' = \mathbf{f}(t, \mathbf{y}), \quad \mathbf{y}(t_0) = \mathbf{y}_0$
 
 ### 1.3 形式化表述
 
-$$\leqft[ f \text{ 连续 } \land f \text{ Lipschitz连续（关于y）} \right] \Rightarrow \exists! y: y' = f(t,y), y(t_0) = y_0$$
+$$\left[ f \text{ 连续 } \land f \text{ Lipschitz连续（关于y）} \right] \Rightarrow \exists! y: y' = f(t,y), y(t_0) = y_0$$
 
 ---
 

@@ -146,10 +146,10 @@ $$\leq \text{ 是偏序关系} \leftrightarrow \forall a \in A(a \leq a) \land \
 集合 $A$ 上的关系 $<$ 是严格偏序关系，如果 $<$ 是非自反和传递的。
 
 **形式化表述**：
-$$< \text{ 是严格偏序关系} \leftrightarrow \forall a \in A(\\neg(a < a)) \land \forall a, b, c \in A(a < b \land b < c \rightarrow a < c)$$
+$$< \text{ 是严格偏序关系} \leftrightarrow \forall a \in A(\neqg(a < a)) \land \forall a, b, c \in A(a < b \land b < c \rightarrow a < c)$$
 
 **定理 3.1.1** (偏序关系与严格偏序关系的关系)
-如果 $\leq$ 是偏序关系，则 $<$ 定义为 $a < b \leftrightarrow a \leq b \land a \neqqq b$ 是严格偏序关系。
+如果 $\leq$ 是偏序关系，则 $<$ 定义为 $a < b \leftrightarrow a \leq b \land a \neq b$ 是严格偏序关系。
 
 **形式化证明**：
 
@@ -257,7 +257,7 @@ $$(A, \leq) \text{ 是全序集} \leftrightarrow \forall a, b \in A(a \leq b \lo
 全序集 $(A, \leq)$ 是良序集，如果 $A$ 的每个非空子集都有最小元素。
 
 **形式化表述**：
-$$(A, \leq) \text{ 是良序集} \leftrightarrow \forall B \subseteq A(B \neqqq \emptyset \rightarrow \exists b \in B \forall c \in B(b \leq c))$$
+$$(A, \leq) \text{ 是良序集} \leftrightarrow \forall B \subseteq A(B \neq \emptyset \rightarrow \exists b \in B \forall c \in B(b \leq c))$$
 
 **定理 5.1.1** (良序集的性质)
 良序集具有以下性质：

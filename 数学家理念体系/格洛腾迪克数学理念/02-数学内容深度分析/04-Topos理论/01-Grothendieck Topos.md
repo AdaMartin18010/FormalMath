@@ -1,4 +1,4 @@
-﻿# Grothendieck Topos：广义集合论
+# Grothendieck Topos：广义集合论
 
 
 ## 📋 目录
@@ -322,7 +322,7 @@ Topos
    $$\text{Topos中的逻辑是直觉主义逻辑（非经典逻辑）}$$
 
 5. **排中律**：
-   $$\text{在Topos中，排中律一般不成立：} \neqqqqqqg \neqqqqqqg P \not\Rightarrow P$$
+   $$\text{在Topos中，排中律一般不成立：} \neg \neg P \not\Rightarrow P$$
 
 6. **层上同调**：
    $$H^i(X, \mathcal{F}) = R^i \Gamma(X, \mathcal{F}) \text{（在Topos中）}$$
@@ -339,10 +339,91 @@ Topos
 10. **子对象分类器（Sh(X)）**：
     $$\Omega(U) = \{V \subseteq U : V \text{ 开}\}$$
 
+11. **Grothendieck Topos的等价定义**：
+    Grothendieck Topos的等价定义：
+    $$\mathcal{E} \text{ 是Grothendieck Topos } \iff \mathcal{E} \cong \text{Sh}(\mathcal{C}, J) \text{ 对某个site } (\mathcal{C}, J)$$
+
+12. **有限极限的存在性**：
+    有限极限的存在性：
+    $$\mathcal{E} \text{ 有所有有限极限（积、等化子、终对象）}$$
+
+13. **幂对象的存在性**：
+    幂对象的存在性：
+    $$\forall A, B \in \mathcal{E}, \exists B^A \in \mathcal{E}, \quad \text{Hom}(C \times A, B) \cong \text{Hom}(C, B^A)$$
+
+14. **子对象分类器的唯一性**：
+    子对象分类器的唯一性：
+    $$\Omega \text{ 是唯一的，满足 } \text{Sub}(X) \cong \text{Hom}(X, \Omega)$$
+
+15. **内部逻辑的构造**：
+    内部逻辑的构造：
+    $$\text{在Grothendieck Topos中，可以构造内部逻辑，对应几何逻辑}$$
+
+---
+
+## 十、Grothendieck Topos的详细数学表述
+
+### 10.1 Grothendieck Topos的等价定义
+
+**等价定义**：
+
+Grothendieck Topos有多个等价定义：
+$$\mathcal{E} \text{ 是Grothendieck Topos } \iff \mathcal{E} \cong \text{Sh}(\mathcal{C}, J) \text{ 对某个site } (\mathcal{C}, J)$$
+
+**site的定义**：
+
+**site**是范畴$\mathcal{C}$配备Grothendieck拓扑$J$：
+$$(\mathcal{C}, J) = \text{site}$$
+
+**数学公式**：
+- 等价定义: $$\mathcal{E} \cong \text{Sh}(\mathcal{C}, J) \text{ 对某个site } (\mathcal{C}, J)$$
+- site: $$(\mathcal{C}, J) = \text{site}$$
+- Grothendieck Topos: $$\mathcal{E} = \text{Sh}(\mathcal{C}, J)$$
+
+---
+
+### 10.2 有限极限与幂对象
+
+**有限极限**：
+
+Grothendieck Topos有所有**有限极限**：
+- **积**: $A \times B$
+- **等化子**: $\text{eq}(f, g)$
+- **终对象**: $1$
+
+**幂对象**：
+
+Grothendieck Topos有**幂对象**：
+$$\forall A, B \in \mathcal{E}, \exists B^A \in \mathcal{E}, \quad \text{Hom}(C \times A, B) \cong \text{Hom}(C, B^A)$$
+
+**数学公式**：
+- 有限极限: $$\mathcal{E} \text{ 有所有有限极限}$$
+- 幂对象: $$\text{Hom}(C \times A, B) \cong \text{Hom}(C, B^A)$$
+- 指数对象: $$B^A = \text{指数对象}$$
+
+---
+
+### 10.3 子对象分类器与内部逻辑
+
+**子对象分类器**：
+
+**子对象分类器**$\Omega$是唯一的，满足：
+$$\text{Sub}(X) \cong \text{Hom}(X, \Omega)$$
+
+**内部逻辑**：
+
+在Grothendieck Topos中，可以构造**内部逻辑**，对应几何逻辑：
+$$\text{内部逻辑} = \text{几何逻辑（在Grothendieck Topos中）}$$
+
+**数学公式**：
+- 子对象分类器: $$\text{Sub}(X) \cong \text{Hom}(X, \Omega)$$
+- 内部逻辑: $$\text{内部逻辑} = \text{几何逻辑}$$
+- 真值对象: $$\Omega = \text{真值对象}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

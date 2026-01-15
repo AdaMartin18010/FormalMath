@@ -23,7 +23,7 @@
 
 **Zorn引理**：设 (P, ≤) 是非空偏序集，若 P 的每个全序子集（链）都有上界，则 P 有极大元。
 
-$$\text{每个链有上界} \Rightarrow \exists m \in P, \forall x \in P: m \\leq x \Rightarrow m = x$$
+$$\text{每个链有上界} \Rightarrow \exists m \in P, \forall x \in P: m \leq x \Rightarrow m = x$$
 
 ### 1.2 等价形式
 

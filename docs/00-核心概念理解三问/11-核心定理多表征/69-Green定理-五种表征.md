@@ -1,4 +1,4 @@
-# Green定理 - 五种表征
+﻿# Green定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 向量分析
@@ -23,7 +23,7 @@
 
 **Green定理**：设 $D$ 是 $\mathbb{R}^2$ 中由分段光滑的简单闭曲线 $C$ 围成的有界区域，$P(x,y)$ 和 $Q(x,y)$ 在包含 $D$ 的开集上具有连续的一阶偏导数，则：
 
-$$\oint_C (P\,dx + Q\,dy) = \iint_D \leqft(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA$$
+$$\oint_C (P\,dx + Q\,dy) = \iint_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA$$
 
 其中：
 
@@ -37,7 +37,7 @@ $$\oint_C (P\,dx + Q\,dy) = \iint_D \leqft(\frac{\partial Q}{\partial x} - \frac
 
 $$\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_D (\nabla \times \mathbf{F}) \cdot \mathbf{k} \, dA$$
 
-其中 $\nabla \times \mathbf{F} = \leqft(0, 0, \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)$ 是旋度。
+其中 $\nabla \times \mathbf{F} = \left(0, 0, \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)$ 是旋度。
 
 ### 1.3 面积公式
 
@@ -267,13 +267,13 @@ $$\int_{\partial M} \omega = \int_M d\omega$$
 - $M = D$（2维区域）
 - $\partial M = C$（1维边界）
 - $\omega = P\,dx + Q\,dy$（1形式）
-- $d\omega = \leqft(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dx \wedge dy$（2形式）
+- $d\omega = \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dx \wedge dy$（2形式）
 
 ### 5.2 外微分的视角
 
 从**外微分**角度看：
 
-$$d(P\,dx + Q\,dy) = \leqft(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dx \wedge dy$$
+$$d(P\,dx + Q\,dy) = \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dx \wedge dy$$
 
 Green定理是**Stokes公式**：
 $$\int_{\partial D} \omega = \int_D d\omega$$

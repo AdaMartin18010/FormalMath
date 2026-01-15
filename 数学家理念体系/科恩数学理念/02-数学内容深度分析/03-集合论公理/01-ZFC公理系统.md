@@ -207,7 +207,7 @@ $$\forall x (\emptyset \notin x \to \exists f: x \to \bigcup x \forall y \in x (
 **科恩的结果（1964）**：
 
 - **一致性方向**：ZFC中AC为真，因此 $\text{ZF} + \text{AC}$ 一致
-- **独立性方向**：使用对称模型技术，$N \models \text{ZF} + \neqg \text{AC}$，因此 $\text{ZF} + \neqg \text{AC}$ 一致
+- **独立性方向**：使用对称模型技术，$N \models \text{ZF} + \neg \text{AC}$，因此 $\text{ZF} + \neg \text{AC}$ 一致
 - **结论**：AC独立于ZF
 
 **意义**：
@@ -235,11 +235,11 @@ $$\forall x (\emptyset \notin x \to \exists f: x \to \bigcup x \forall y \in x (
 
 - **CH独立于ZFC**（哥德尔+科恩）：
   - 一致性：$L \models \text{ZFC} + \text{CH}$
-  - 独立性：$M[G] \models \text{ZFC} + \neqg \text{CH}$
+  - 独立性：$M[G] \models \text{ZFC} + \neg \text{CH}$
 
 - **AC独立于ZF**（科恩）：
   - 一致性：ZFC中AC为真
-  - 独立性：$N \models \text{ZF} + \neqg \text{AC}$
+  - 独立性：$N \models \text{ZF} + \neg \text{AC}$
 
 - **其他独立性**：
   - Suslin假设独立

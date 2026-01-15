@@ -140,7 +140,7 @@ $$z_1 \cdot z_2 = (a_1a_2 - b_1b_2, a_1b_2 + a_2b_1)$$
 1. 结合律：$(z_1 \cdot z_2) \cdot z_3 = z_1 \cdot (z_2 \cdot z_3)$
 2. 交换律：$z_1 \cdot z_2 = z_2 \cdot z_1$
 3. 单位元：$z \cdot 1 = z$
-4. 逆元：$z \cdot z^{-1} = 1$ (对于 $z \neqqq 0$)
+4. 逆元：$z \cdot z^{-1} = 1$ (对于 $z \neq 0$)
 
 **形式化证明**：
 

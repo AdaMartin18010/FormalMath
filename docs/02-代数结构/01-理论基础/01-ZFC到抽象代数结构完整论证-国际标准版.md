@@ -59,7 +59,7 @@ This document demonstrates the complete formal argumentation from ZFC axiom syst
 6. **无穷公理** / **Axiom of Infinity**: $\exists x(\emptyset \in x \land \forall y(y \in x \rightarrow y \cup \{y\} \in x))$
 7. **分离公理** / **Axiom Schema of Separation**: $\forall z \exists y \forall x(x \in y \leftrightarrow x \in z \land \phi(x))$
 8. **替换公理** / **Axiom Schema of Replacement**: $\forall A \exists B \forall y(y \in B \leftrightarrow \exists x \in A \phi(x,y))$
-9. **正则公理** / **Axiom of Regularity**: $\forall x(x \neqqq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$
+9. **正则公理** / **Axiom of Regularity**: $\forall x(x \neq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$
 10. **选择公理** / **Axiom of Choice**: $\forall A \exists R(R \text{ well-orders } A)$
 
 ### 1.2 二元运算的构造 / Construction of Binary Operations

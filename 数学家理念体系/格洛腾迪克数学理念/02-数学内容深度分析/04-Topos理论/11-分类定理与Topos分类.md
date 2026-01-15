@@ -1,4 +1,4 @@
-﻿# 分类定理与Topos分类：Grothendieck的拓扑分类
+# 分类定理与Topos分类：Grothendieck的拓扑分类
 
 
 ## 📋 目录
@@ -287,13 +287,13 @@ Topos分类
    $$\text{Sh}(X_{\text{ét}}) \cong \text{Sh}(\text{Ét}(X))$$
 
 5. **Topos分类与几何**：
-   $$\text{Topos分类} \\leftrightarrow \text{几何结构分类}$$
+   $$\text{Topos分类} \leqftrightarrow \text{几何结构分类}$$
 
 6. **分类定理的唯一性**：
    $$\mathcal{E} \cong \text{Sh}(\mathcal{C}, J) \text{ 不唯一，但可以规范化}$$
 
 7. **Topos的分类**：
-   $$\text{Grothendieck Topos} \\leftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
+   $$\text{Grothendieck Topos} \leqftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
 
 8. **分类与内部逻辑**：
    $$\text{分类Topos的内部逻辑由拓扑 $J$ 决定}$$
@@ -304,10 +304,89 @@ Topos分类
 10. **分类定理的意义**：
     $$\text{每个Grothendieck Topos都可以用范畴和拓扑表示，统一框架}$$
 
+11. **分类方法的构造**：
+    分类方法的构造：
+    $$\mathcal{E} \cong \text{Sh}(\mathcal{C}_\mathcal{E}, J_\mathcal{E}), \quad \mathcal{C}_\mathcal{E} = \{\text{生成对象}\}$$
+
+12. **Zariski Topos的分类**：
+    Zariski Topos的分类：
+    $$\text{Sh}(X_{\text{Zar}}) \cong \text{Sh}(\text{Open}(X))$$
+
+13. **étale Topos的分类**：
+    étale Topos的分类：
+    $$\text{Sh}(X_{\text{ét}}) \cong \text{Sh}(\text{Ét}(X))$$
+
+14. **分类定理的唯一性**：
+    分类定理的唯一性：
+    $$\mathcal{E} \cong \text{Sh}(\mathcal{C}, J) \text{ 不唯一，但可以规范化}$$
+
+15. **Topos的分类**：
+    Topos的分类：
+    $$\text{Grothendieck Topos} \leftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
+
+---
+
+## 十、分类定理与Topos分类的详细数学表述
+
+### 10.1 分类方法的构造
+
+**分类方法**：
+
+每个Grothendieck Topos $\mathcal{E}$ 可以分类为：
+$$\mathcal{E} \cong \text{Sh}(\mathcal{C}_\mathcal{E}, J_\mathcal{E}), \quad \mathcal{C}_\mathcal{E} = \{\text{生成对象}\}$$
+
+其中$\mathcal{C}_\mathcal{E}$是$\mathcal{E}$的生成对象集合。
+
+**数学公式**：
+- 分类方法: $$\mathcal{E} \cong \text{Sh}(\mathcal{C}_\mathcal{E}, J_\mathcal{E})$$
+- 生成对象: $$\mathcal{C}_\mathcal{E} = \{\text{生成对象}\}$$
+- Grothendieck拓扑: $$J_\mathcal{E} = \text{Grothendieck拓扑}$$
+
+---
+
+### 10.2 特殊Topos的分类
+
+**Zariski Topos**：
+
+**Zariski Topos**的分类：
+$$\text{Sh}(X_{\text{Zar}}) \cong \text{Sh}(\text{Open}(X))$$
+
+其中$\text{Open}(X)$是$X$的开集范畴。
+
+**étale Topos**：
+
+**étale Topos**的分类：
+$$\text{Sh}(X_{\text{ét}}) \cong \text{Sh}(\text{Ét}(X))$$
+
+其中$\text{Ét}(X)$是$X$的étale覆盖范畴。
+
+**数学公式**：
+- Zariski Topos: $$\text{Sh}(X_{\text{Zar}}) \cong \text{Sh}(\text{Open}(X))$$
+- étale Topos: $$\text{Sh}(X_{\text{ét}}) \cong \text{Sh}(\text{Ét}(X))$$
+- 分类对应: $$\text{Topos分类} \leftrightarrow \text{几何结构分类}$$
+
+---
+
+### 10.3 分类定理的唯一性与Topos分类
+
+**唯一性**：
+
+分类$\mathcal{E} \cong \text{Sh}(\mathcal{C}, J)$不唯一，但可以规范化。
+
+**Topos分类**：
+
+Grothendieck Topos对应范畴-拓扑对的等价类：
+$$\text{Grothendieck Topos} \leftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
+
+**数学公式**：
+- 唯一性: $$\mathcal{E} \cong \text{Sh}(\mathcal{C}, J) \text{ 不唯一，但可以规范化}$$
+- Topos分类: $$\text{Grothendieck Topos} \leftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
+- 分类定理: $$\text{每个Grothendieck Topos都可以用范畴和拓扑表示}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

@@ -299,9 +299,9 @@ mindmap
 
 #### 素理想 / Prime Ideal
 
-**中文定义**：设$R$是环，$P$是$R$的理想。如果$P \neqqq R$且对任意$a, b \in R$，如果$ab \in P$，则$a \in P$或$b \in P$，则称$P$是素理想。
+**中文定义**：设$R$是环，$P$是$R$的理想。如果$P \neq R$且对任意$a, b \in R$，如果$ab \in P$，则$a \in P$或$b \in P$，则称$P$是素理想。
 
-**英文定义**：Let $R$ be a ring and $P$ be an ideal of $R$. $P$ is prime if $P \neqqq R$ and for any $a, b \in R$, if $ab \in P$, then $a \in P$ or $b \in P$.
+**英文定义**：Let $R$ be a ring and $P$ be an ideal of $R$. $P$ is prime if $P \neq R$ and for any $a, b \in R$, if $ab \in P$, then $a \in P$ or $b \in P$.
 
 **符号表示**：$P$是素理想
 

@@ -1,0 +1,417 @@
+﻿# 1. 证明系统基础 / Proof System Foundations
+
+**主题编号**: B.09.01
+**创建日期**: 2025年11月21日
+**最后更新**: 2025年11月21日
+
+---
+
+## 目录
+
+- [1. 证明系统基础 / Proof System Foundations](#1-证明系统基础--proof-system-foundations)
+  - [目录](#目录)
+  - [1.1 概述 / Overview (编号: B.09.01.01)](#11-概述--overview-编号-b090101)
+  - [1.2 基本概念 / Basic Concepts](#12-基本概念--basic-concepts)
+    - [1.2.1 形式系统 / Formal System](#121-形式系统--formal-system)
+    - [1.2.2 形式语言 / Formal Language](#122-形式语言--formal-language)
+    - [1.2.3 推理规则 / Inference Rules](#123-推理规则--inference-rules)
+  - [1.3 自然演绎系统 / Natural Deduction System](#13-自然演绎系统--natural-deduction-system)
+    - [1.3.1 命题逻辑的自然演绎 / Natural Deduction for Propositional Logic](#131-命题逻辑的自然演绎--natural-deduction-for-propositional-logic)
+    - [1.3.2 谓词逻辑的自然演绎 / Natural Deduction for Predicate Logic](#132-谓词逻辑的自然演绎--natural-deduction-for-predicate-logic)
+  - [1.4 希尔伯特系统 / Hilbert System](#14-希尔伯特系统--hilbert-system)
+    - [1.4.1 命题逻辑的公理 / Axioms for Propositional Logic](#141-命题逻辑的公理--axioms-for-propositional-logic)
+    - [1.4.2 谓词逻辑的公理 / Axioms for Predicate Logic](#142-谓词逻辑的公理--axioms-for-predicate-logic)
+  - [1.5 序列演算 / Sequent Calculus](#15-序列演算--sequent-calculus)
+    - [1.5.1 序列 / Sequent](#151-序列--sequent)
+    - [1.5.2 序列演算规则 / Sequent Calculus Rules](#152-序列演算规则--sequent-calculus-rules)
+    - [1.5.3 逻辑规则 / Logical Rules](#153-逻辑规则--logical-rules)
+  - [1.6 形式化实现 / Formal Implementation](#16-形式化实现--formal-implementation)
+    - [1.6.1 Lean 4 实现 / Lean 4 Implementation](#161-lean-4-实现--lean-4-implementation)
+    - [1.6.2 Haskell 实现 / Haskell Implementation](#162-haskell-实现--haskell-implementation)
+  - [1.7 应用与计算 / Applications and Computations](#17-应用与计算--applications-and-computations)
+    - [1.7.1 定理证明 / Theorem Proving](#171-定理证明--theorem-proving)
+    - [1.7.2 程序验证 / Program Verification](#172-程序验证--program-verification)
+    - [1.7.3 模型检查 / Model Checking](#173-模型检查--model-checking)
+  - [1.8 高级主题 / Advanced Topics](#18-高级主题--advanced-topics)
+    - [1.8.1 直觉逻辑 / Intuitionistic Logic](#181-直觉逻辑--intuitionistic-logic)
+    - [1.8.2 线性逻辑 / Linear Logic](#182-线性逻辑--linear-logic)
+    - [1.8.3 模态逻辑 / Modal Logic](#183-模态逻辑--modal-logic)
+  - [1.9 总结 / Summary](#19-总结--summary)
+    - [1.9.1 主要成果 / Main Results](#191-主要成果--main-results)
+    - [1.9.2 应用领域 / Applications](#192-应用领域--applications)
+
+## 1.1 概述 / Overview (编号: B.09.01.01)
+
+形式化证明系统是现代数学和计算机科学的核心工具，为数学推理提供了严格的逻辑基础。
+通过形式化证明，我们可以确保数学结论的正确性，并在计算机辅助下进行复杂的数学推理。
+
+## 1.2 基本概念 / Basic Concepts
+
+### 1.2.1 形式系统 / Formal System
+
+**定义 1.1** (形式系统 / Formal System)
+形式系统是一个四元组 $\mathcal{S} = (\mathcal{L}, \mathcal{A}, \mathcal{R}, \mathcal{T})$，其中：
+
+- $\mathcal{L}$ 是形式语言（formal language）
+- $\mathcal{A}$ 是公理集（axioms）
+- $\mathcal{R}$ 是推理规则集（inference rules）
+- $\mathcal{T}$ 是定理集（theorems）
+
+### 1.2.2 形式语言 / Formal Language
+
+**定义 1.2** (形式语言 / Formal Language)
+形式语言由以下部分组成：
+
+1. **字母表**：符号的有限集合
+2. **项**：由函数符号和变量构成的表达式
+3. **公式**：由谓词符号、逻辑连接词和量词构成的表达式
+
+### 1.2.3 推理规则 / Inference Rules
+
+**定义 1.3** (推理规则 / Inference Rule)
+推理规则是形如 $\frac{\varphi_1, \ldots, \varphi_n}{\psi}$ 的规则，表示从前提 $\varphi_1, \ldots, \varphi_n$ 可以推出结论 $\psi$。
+
+## 1.3 自然演绎系统 / Natural Deduction System
+
+### 1.3.1 命题逻辑的自然演绎 / Natural Deduction for Propositional Logic
+
+**定义 1.4** (自然演绎规则 / Natural Deduction Rules)
+
+**引入规则**：
+
+- $\land$-I：$\frac{\varphi \quad \psi}{\varphi \land \psi}$
+- $\lor$-I：$\frac{\varphi}{\varphi \lor \psi}$ 或 $\frac{\psi}{\varphi \lor \psi}$
+- $\to$-I：$\frac{[\varphi] \quad \psi}{\varphi \to \psi}$
+- $\\neg$-I：$\frac{[\varphi] \quad \bot}{\\neg \varphi}$
+
+**消去规则**：
+
+- $\land$-E：$\frac{\varphi \land \psi}{\varphi}$ 或 $\frac{\varphi \land \psi}{\psi}$
+- $\lor$-E：$\frac{\varphi \lor \psi \quad [\varphi] \quad \chi \quad [\psi] \quad \chi}{\chi}$
+- $\to$-E：$\frac{\varphi \to \psi \quad \varphi}{\psi}$
+- $\\neg$-E：$\frac{\varphi \quad \\neg \varphi}{\bot}$
+
+### 1.3.2 谓词逻辑的自然演绎 / Natural Deduction for Predicate Logic
+
+**定义 1.5** (量词规则 / Quantifier Rules)
+
+**全称量词**：
+
+- $\forall$-I：$\frac{[\varphi(x)] \quad \psi(x)}{\forall x \varphi(x)}$
+- $\forall$-E：$\frac{\forall x \varphi(x)}{\varphi(t)}$
+
+**存在量词**：
+
+- $\exists$-I：$\frac{\varphi(t)}{\exists x \varphi(x)}$
+- $\exists$-E：$\frac{\exists x \varphi(x) \quad [\varphi(x)] \quad \psi}{\psi}$
+
+## 1.4 希尔伯特系统 / Hilbert System
+
+### 1.4.1 命题逻辑的公理 / Axioms for Propositional Logic
+
+**定义 1.6** (希尔伯特公理 / Hilbert Axioms)
+经典命题逻辑的希尔伯特公理系统包含以下公理：
+
+1. **A1**：$\varphi \to (\psi \to \varphi)$
+2. **A2**：$(\varphi \to (\psi \to \chi)) \to ((\varphi \to \psi) \to (\varphi \to \chi))$
+3. **A3**：$(\\neg \varphi \to \\neg \psi) \to (\psi \to \varphi)$
+
+**推理规则**：
+
+- **分离规则**：$\frac{\varphi \quad \varphi \to \psi}{\psi}$
+
+### 1.4.2 谓词逻辑的公理 / Axioms for Predicate Logic
+
+**定义 1.7** (谓词逻辑公理 / Predicate Logic Axioms)
+在命题逻辑公理基础上，添加：
+
+1. **A4**：$\forall x \varphi(x) \to \varphi(t)$
+2. **A5**：$\varphi(t) \to \exists x \varphi(x)$
+
+**推理规则**：
+
+- **概括规则**：$\frac{\varphi}{\forall x \varphi}$（如果 $x$ 不在 $\varphi$ 中自由出现）
+
+## 1.5 序列演算 / Sequent Calculus
+
+### 1.5.1 序列 / Sequent
+
+**定义 1.8** (序列 / Sequent)
+序列是形如 $\Gamma \vdash \Delta$ 的表达式，其中 $\Gamma$ 和 $\Delta$ 是公式的有限集合。
+
+**语义**：$\Gamma \vdash \Delta$ 表示如果 $\Gamma$ 中所有公式为真，则 $\Delta$ 中至少有一个公式为真。
+
+### 1.5.2 序列演算规则 / Sequent Calculus Rules
+
+**定义 1.9** (结构规则 / Structural Rules)
+
+**弱化**：
+
+- 左弱化：$\frac{\Gamma \vdash \Delta}{\varphi, \Gamma \vdash \Delta}$
+- 右弱化：$\frac{\Gamma \vdash \Delta}{\Gamma \vdash \Delta, \varphi}$
+
+**收缩**：
+
+- 左收缩：$\frac{\varphi, \varphi, \Gamma \vdash \Delta}{\varphi, \Gamma \vdash \Delta}$
+- 右收缩：$\frac{\Gamma \vdash \Delta, \varphi, \varphi}{\Gamma \vdash \Delta, \varphi}$
+
+**交换**：
+
+- 左交换：$\frac{\varphi, \psi, \Gamma \vdash \Delta}{\psi, \varphi, \Gamma \vdash \Delta}$
+- 右交换：$\frac{\Gamma \vdash \Delta, \varphi, \psi}{\Gamma \vdash \Delta, \psi, \varphi}$
+
+### 1.5.3 逻辑规则 / Logical Rules
+
+**定义 1.10** (逻辑规则 / Logical Rules)
+
+**合取**：
+
+- 左规则：$\frac{\varphi, \Gamma \vdash \Delta}{\varphi \land \psi, \Gamma \vdash \Delta}$ 和 $\frac{\psi, \Gamma \vdash \Delta}{\varphi \land \psi, \Gamma \vdash \Delta}$
+- 右规则：$\frac{\Gamma \vdash \Delta, \varphi \quad \Gamma \vdash \Delta, \psi}{\Gamma \vdash \Delta, \varphi \land \psi}$
+
+**析取**：
+
+- 左规则：$\frac{\varphi, \Gamma \vdash \Delta \quad \psi, \Gamma \vdash \Delta}{\varphi \lor \psi, \Gamma \vdash \Delta}$
+- 右规则：$\frac{\Gamma \vdash \Delta, \varphi}{\Gamma \vdash \Delta, \varphi \lor \psi}$ 和 $\frac{\Gamma \vdash \Delta, \psi}{\Gamma \vdash \Delta, \varphi \lor \psi}$
+
+## 1.6 形式化实现 / Formal Implementation
+
+### 1.6.1 Lean 4 实现 / Lean 4 Implementation
+
+```lean
+-- 命题逻辑公式
+inductive PropFormula where
+  | atom : String → PropFormula
+  | neg : PropFormula → PropFormula
+  | and : PropFormula → PropFormula → PropFormula
+  | or : PropFormula → PropFormula → PropFormula
+  | imp : PropFormula → PropFormula → PropFormula
+
+-- 自然演绎证明
+inductive NaturalDeduction : List PropFormula → PropFormula → Prop where
+  | assumption : NaturalDeduction [φ] φ
+  | and_intro : NaturalDeduction Γ φ → NaturalDeduction Γ ψ →
+                NaturalDeduction Γ (φ ∧ ψ)
+  | and_elim_left : NaturalDeduction Γ (φ ∧ ψ) → NaturalDeduction Γ φ
+  | and_elim_right : NaturalDeduction Γ (φ ∧ ψ) → NaturalDeduction Γ ψ
+  | or_intro_left : NaturalDeduction Γ φ → NaturalDeduction Γ (φ ∨ ψ)
+  | or_intro_right : NaturalDeduction Γ ψ → NaturalDeduction Γ (φ ∨ ψ)
+  | or_elim : NaturalDeduction Γ (φ ∨ ψ) →
+              NaturalDeduction (φ :: Γ) χ →
+              NaturalDeduction (ψ :: Γ) χ →
+              NaturalDeduction Γ χ
+  | imp_intro : NaturalDeduction (φ :: Γ) ψ → NaturalDeduction Γ (φ → ψ)
+  | imp_elim : NaturalDeduction Γ (φ → ψ) → NaturalDeduction Γ φ →
+               NaturalDeduction Γ ψ
+  | neg_intro : NaturalDeduction (φ :: Γ) ⊥ → NaturalDeduction Γ (¬φ)
+  | neg_elim : NaturalDeduction Γ φ → NaturalDeduction Γ (¬φ) →
+               NaturalDeduction Γ ⊥
+
+-- 希尔伯特系统
+inductive HilbertProof : PropFormula → Prop where
+  | axiom1 : HilbertProof (φ → (ψ → φ))
+  | axiom2 : HilbertProof ((φ → (ψ → χ)) → ((φ → ψ) → (φ → χ)))
+  | axiom3 : HilbertProof ((¬φ → ¬ψ) → (ψ → φ))
+  | modus_ponens : HilbertProof (φ → ψ) → HilbertProof φ → HilbertProof ψ
+
+-- 序列演算
+inductive Sequent : List PropFormula → List PropFormula → Prop where
+  | axiom : φ ∈ Γ → Sequent Γ [φ]
+  | weaken_left : Sequent Γ Δ → Sequent (φ :: Γ) Δ
+  | weaken_right : Sequent Γ Δ → Sequent Γ (φ :: Δ)
+  | contract_left : Sequent (φ :: φ :: Γ) Δ → Sequent (φ :: Γ) Δ
+  | contract_right : Sequent Γ (φ :: φ :: Δ) → Sequent Γ (φ :: Δ)
+  | and_left : Sequent (φ :: Γ) Δ → Sequent (φ ∧ ψ :: Γ) Δ
+  | and_right : Sequent Γ (φ :: Δ) → Sequent Γ (ψ :: Δ) →
+                Sequent Γ (φ ∧ ψ :: Δ)
+  | or_left : Sequent (φ :: Γ) Δ → Sequent (ψ :: Γ) Δ →
+              Sequent (φ ∨ ψ :: Γ) Δ
+  | or_right : Sequent Γ (φ :: Δ) → Sequent Γ (φ ∨ ψ :: Δ)
+  | imp_left : Sequent Γ (φ :: Δ) → Sequent (ψ :: Γ) Δ →
+               Sequent (φ → ψ :: Γ) Δ
+  | imp_right : Sequent (φ :: Γ) (ψ :: Δ) → Sequent Γ (φ → ψ :: Δ)
+
+-- 证明检查器
+def check_proof : List PropFormula → PropFormula → Bool :=
+  -- 实现证明检查逻辑
+  sorry
+
+-- 定理证明助手
+def prove_theorem : PropFormula → Option (HilbertProof PropFormula) :=
+  -- 实现定理证明算法
+  sorry
+```
+
+### 1.6.2 Haskell 实现 / Haskell Implementation
+
+```haskell
+-- 命题逻辑公式
+data PropFormula
+  = Atom String
+  | Neg PropFormula
+  | And PropFormula PropFormula
+  | Or PropFormula PropFormula
+  | Imp PropFormula PropFormula
+  deriving (Eq, Show)
+
+-- 自然演绎证明
+data NaturalDeduction = NaturalDeduction
+  { premises :: [PropFormula]
+  , conclusion :: PropFormula
+  , rule :: DeductionRule
+  }
+
+data DeductionRule
+  = Assumption
+  | AndIntro NaturalDeduction NaturalDeduction
+  | AndElimLeft NaturalDeduction
+  | AndElimRight NaturalDeduction
+  | OrIntroLeft NaturalDeduction
+  | OrIntroRight NaturalDeduction
+  | OrElim NaturalDeduction NaturalDeduction NaturalDeduction
+  | ImpIntro NaturalDeduction
+  | ImpElim NaturalDeduction NaturalDeduction
+  | NegIntro NaturalDeduction
+  | NegElim NaturalDeduction NaturalDeduction
+
+-- 希尔伯特系统
+data HilbertProof
+  = Axiom1 PropFormula PropFormula
+  | Axiom2 PropFormula PropFormula PropFormula
+  | Axiom3 PropFormula PropFormula
+  | ModusPonens HilbertProof HilbertProof
+
+-- 序列演算
+data Sequent = Sequent
+  { left :: [PropFormula]
+  , right :: [PropFormula]
+  }
+
+data SequentRule
+  = Axiom PropFormula
+  | WeakenLeft Sequent PropFormula
+  | WeakenRight Sequent PropFormula
+  | ContractLeft Sequent PropFormula
+  | ContractRight Sequent PropFormula
+  | AndLeft Sequent PropFormula PropFormula
+  | AndRight Sequent PropFormula PropFormula
+  | OrLeft Sequent PropFormula PropFormula
+  | OrRight Sequent PropFormula
+  | ImpLeft Sequent PropFormula PropFormula
+  | ImpRight Sequent PropFormula PropFormula
+
+-- 证明检查器
+checkProof :: [PropFormula] -> PropFormula -> Bool
+checkProof premises conclusion =
+  -- 实现证明检查逻辑
+  undefined
+
+-- 定理证明助手
+proveTheorem :: PropFormula -> Maybe HilbertProof
+proveTheorem formula =
+  -- 实现定理证明算法
+  undefined
+
+-- 自然演绎证明构造
+constructProof :: [PropFormula] -> PropFormula -> Maybe NaturalDeduction
+constructProof premises conclusion =
+  -- 实现证明构造算法
+  undefined
+
+-- 序列演算证明
+sequentProof :: Sequent -> [SequentRule]
+sequentProof sequent =
+  -- 实现序列演算证明
+  undefined
+```
+
+## 1.7 应用与计算 / Applications and Computations
+
+### 1.7.1 定理证明 / Theorem Proving
+
+**定义 1.11** (定理证明 / Theorem Proving)
+定理证明是使用形式化证明系统验证数学命题的过程。
+
+**应用**：
+
+- 数学定理的严格证明
+- 程序正确性验证
+- 硬件设计验证
+
+### 1.7.2 程序验证 / Program Verification
+
+**定义 1.12** (程序验证 / Program Verification)
+程序验证使用形式化证明系统验证程序满足其规范。
+
+**方法**：
+
+- 霍尔逻辑（Hoare Logic）
+- 分离逻辑（Separation Logic）
+- 类型系统（Type Systems）
+
+### 1.7.3 模型检查 / Model Checking
+
+**定义 1.13** (模型检查 / Model Checking)
+模型检查是自动验证有限状态系统是否满足时序逻辑规范的方法。
+
+## 1.8 高级主题 / Advanced Topics
+
+### 1.8.1 直觉逻辑 / Intuitionistic Logic
+
+**定义 1.14** (直觉逻辑 / Intuitionistic Logic)
+直觉逻辑拒绝排中律 $\varphi \lor \\neg \varphi$，强调构造性证明。
+
+**特点**：
+
+- 拒绝经典逻辑的某些公理
+- 强调构造性证明
+- 与类型论有密切联系
+
+### 1.8.2 线性逻辑 / Linear Logic
+
+**定义 1.15** (线性逻辑 / Linear Logic)
+线性逻辑是资源敏感的逻辑系统，每个公式只能使用一次。
+
+**特点**：
+
+- 资源管理
+- 并发计算
+- 量子计算
+
+### 1.8.3 模态逻辑 / Modal Logic
+
+**定义 1.16** (模态逻辑 / Modal Logic)
+模态逻辑扩展经典逻辑，引入必然性和可能性算子。
+
+**应用**：
+
+- 知识表示
+- 程序语义
+- 哲学逻辑
+
+## 1.9 总结 / Summary
+
+形式化证明系统为数学推理提供了严格的逻辑基础，是现代数学和计算机科学的重要工具。
+
+### 1.9.1 主要成果 / Main Results
+
+1. **完备性定理**：哥德尔完备性定理证明了经典逻辑的完备性
+2. **不完备性定理**：哥德尔不完备性定理揭示了形式系统的局限性
+3. **证明理论**：各种证明系统的构造和分析
+4. **应用领域**：程序验证、硬件验证、数学定理证明
+
+### 1.9.2 应用领域 / Applications
+
+- **数学**：定理证明、数学基础研究
+- **计算机科学**：程序验证、类型系统、人工智能
+- **哲学**：逻辑学、认识论、形而上学
+- **工程**：硬件验证、软件工程
+
+---
+
+**参考文献 / References**:
+
+1. Troelstra, A. S., & Schwichtenberg, H. (2000). *Basic Proof Theory*. Cambridge University Press.
+2. Girard, J. Y., Lafont, Y., & Taylor, P. (1989). *Proofs and Types*. Cambridge University Press.
+3. Prawitz, D. (1965). *Natural Deduction: A Proof-Theoretical Study*. Almqvist & Wiksell.
+4. Gentzen, G. (1935). *Investigations into Logical Deduction*. In Collected Papers.

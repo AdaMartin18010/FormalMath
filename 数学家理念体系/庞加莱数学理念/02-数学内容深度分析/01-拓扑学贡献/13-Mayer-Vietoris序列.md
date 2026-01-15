@@ -108,9 +108,26 @@ $$\cdots \to H_n(U \cap V) \to H_n(U) \oplus H_n(V) \to H_n(X) \to H_{n-1}(U \ca
 
 **步骤**：
 
-1. 分解空间
-2. 计算子空间的同调
-3. 使用序列计算整个空间
+1. **分解空间**：将空间 $X$ 分解为两个开子集 $U$ 和 $V$，使得 $X = U \cup V$
+2. **计算子空间的同调**：计算 $H_n(U)$、$H_n(V)$ 和 $H_n(U \cap V)$
+3. **使用序列计算整个空间**：通过Mayer-Vietoris序列计算 $H_n(X)$
+
+**数学表述**：
+
+对于空间分解 $X = U \cup V$，Mayer-Vietoris序列给出：
+
+$$\cdots \to H_n(U \cap V) \xrightarrow{(i_*, j_*)} H_n(U) \oplus H_n(V) \xrightarrow{k_* - l_*} H_n(X) \xrightarrow{\partial} H_{n-1}(U \cap V) \to \cdots$$
+
+其中：
+- $i: U \cap V \hookrightarrow U$，$j: U \cap V \hookrightarrow V$ 是包含映射
+- $k: U \hookrightarrow X$，$l: V \hookrightarrow X$ 是包含映射
+- $\partial$ 是连接同态
+
+**计算技巧**：
+
+- **选择好的分解**：选择 $U$ 和 $V$ 使得它们的同调容易计算
+- **利用正合性**：使用序列的正合性确定同调群
+- **连接同态**：通过连接同态连接不同维数的同调群
 
 ---
 
@@ -124,8 +141,22 @@ $$\cdots \to H_n(U \cap V) \to H_n(U) \oplus H_n(V) \to H_n(X) \to H_{n-1}(U \ca
 
 **方法**：
 
-- 将球面分解为两个半球
-- 使用序列计算
+- **分解**：将 $n$ 维球面 $S^n$ 分解为两个开半球 $U$ 和 $V$
+- **计算子空间**：
+  - $U \cong V \cong D^n$（$n$ 维开球），同调群：$H_k(U) = H_k(V) = \mathbb{Z}$（$k=0$），$0$（其他）
+  - $U \cap V \cong S^{n-1} \times (-\epsilon, \epsilon)$，同调群：$H_k(U \cap V) = H_k(S^{n-1})$
+- **使用序列**：通过Mayer-Vietoris序列计算 $H_k(S^n)$
+
+**结果**：
+
+$$H_k(S^n) = \begin{cases} \mathbb{Z} & k = 0, n \\ 0 & \text{其他} \end{cases}$$
+
+**计算细节**：
+
+对于 $n$ 维球面 $S^n$：
+- $H_0(S^n) = \mathbb{Z}$（连通）
+- $H_n(S^n) = \mathbb{Z}$（$n$ 维同调）
+- $H_k(S^n) = 0$（$k \neq 0, n$）
 
 ---
 
@@ -137,8 +168,23 @@ $$\cdots \to H_n(U \cap V) \to H_n(U) \oplus H_n(V) \to H_n(X) \to H_{n-1}(U \ca
 
 **方法**：
 
-- 将环面分解为两个开集
-- 使用序列计算
+- **分解**：将环面 $T^2$ 分解为两个开集 $U$ 和 $V$
+- **计算子空间**：
+  - $U$ 和 $V$ 是环面的开子集，同调群容易计算
+  - $U \cap V$ 是环面的开子集，同调群容易计算
+- **使用序列**：通过Mayer-Vietoris序列计算 $H_k(T^2)$
+
+**结果**：
+
+$$H_k(T^2) = \begin{cases} \mathbb{Z} & k = 0, 2 \\ \mathbb{Z}^2 & k = 1 \\ 0 & \text{其他} \end{cases}$$
+
+**计算细节**：
+
+对于环面 $T^2 = S^1 \times S^1$：
+- $H_0(T^2) = \mathbb{Z}$（连通）
+- $H_1(T^2) = \mathbb{Z}^2$（两个生成元对应两个"洞"）
+- $H_2(T^2) = \mathbb{Z}$（2维同调）
+- $H_k(T^2) = 0$（$k > 2$）
 
 ---
 
@@ -150,9 +196,15 @@ Mayer-Vietoris序列适用于一般拓扑空间。
 
 **应用**：
 
-- 流形
-- 复形
-- 一般空间
+- **流形**：流形可以分解为开集，使用Mayer-Vietoris序列计算同调
+- **复形**：复形可以分解为子复形，使用Mayer-Vietoris序列计算同调
+- **一般空间**：任何可以分解为两个开子集的并集的空间都可以使用Mayer-Vietoris序列
+
+**计算优势**：
+
+- **局部化**：将全局问题转化为局部问题
+- **简化计算**：子空间的同调通常更容易计算
+- **通用性**：适用于各种拓扑空间
 
 ---
 
@@ -431,7 +483,7 @@ graph TD
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约1,600字
-**数学公式数**: 10个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,800字
+**数学公式数**: 12个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

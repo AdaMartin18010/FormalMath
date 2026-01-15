@@ -99,7 +99,7 @@ $$p \Vdash \tau_1 = \tau_2$$
 
 **否定**：
 
-$$p \Vdash \neqg \varphi$$
+$$p \Vdash \neg \varphi$$
 
 当且仅当不存在 $q \leq p$ 使得 $q \Vdash \varphi$。
 
@@ -157,7 +157,7 @@ $$p \Vdash \varphi(\tau_1, \ldots, \tau_n)$$
 
 1. **基础情况**：原子公式（$\in$ 和 $=$）的Forcing关系
 2. **归纳步骤**：
-   - 逻辑连接词（$\neqg, \land, \lor, \to$）的递归定义
+   - 逻辑连接词（$\neg, \land, \lor, \to$）的递归定义
    - 量词（$\exists, \forall$）的递归定义
 3. **一致性**：证明定义的一致性（单调性）
 
@@ -198,11 +198,11 @@ $$p \Vdash \varphi(\tau_1, \ldots, \tau_n)$$
 对任意公式 $\varphi$ 和条件 $p$：
 
 - 要么存在 $q \leq p$ 使得 $q \Vdash \varphi$
-- 要么存在 $q \leq p$ 使得 $q \Vdash \neqg \varphi$
+- 要么存在 $q \leq p$ 使得 $q \Vdash \neg \varphi$
 
 **等价表述**：
 
-集合 $\{q \leq p : q \Vdash \varphi \text{ 或 } q \Vdash \neqg \varphi\}$ 在 $\{q : q \leq p\}$ 中是稠密的。
+集合 $\{q \leq p : q \Vdash \varphi \text{ 或 } q \Vdash \neg \varphi\}$ 在 $\{q : q \leq p\}$ 中是稠密的。
 
 **意义**：
 
@@ -260,7 +260,7 @@ $$M \models \text{Forces}(p, \varphi) \leftrightarrow p \Vdash \varphi$$
 **应用**：
 
 - 构造 $G_1$ 使得 $M[G_1] \models \varphi$
-- 构造 $G_2$ 使得 $M[G_2] \models \neqg \varphi$
+- 构造 $G_2$ 使得 $M[G_2] \models \neg \varphi$
 - 因此 $\varphi$ 独立于ZFC
 
 ---
@@ -273,7 +273,7 @@ $$M \models \text{Forces}(p, \varphi) \leftrightarrow p \Vdash \varphi$$
 
 1. 选择适当的 $P$
 2. 证明 $p \Vdash \varphi$ 对某个 $p$
-3. 证明 $q \Vdash \neqg \varphi$ 对某个 $q$
+3. 证明 $q \Vdash \neg \varphi$ 对某个 $q$
 4. 因此 $\varphi$ 独立
 
 ---

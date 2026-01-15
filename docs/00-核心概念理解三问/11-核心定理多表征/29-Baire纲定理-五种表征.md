@@ -28,7 +28,7 @@ $$\{U_n\}_{n=1}^\infty \text{ 稠密开} \Rightarrow \bigcap_{n=1}^\infty U_n \t
 ### 1.2 等价形式
 
 完备度量空间不是可数个无处稠密集的并：
-$$X \neqqq \bigcup_{n=1}^\infty F_n \text{ 其中 } \overline{F_n}^\circ = \emptyset$$
+$$X \neq \bigcup_{n=1}^\infty F_n \text{ 其中 } \overline{F_n}^\circ = \emptyset$$
 
 ### 1.3 Lean 4 形式化
 

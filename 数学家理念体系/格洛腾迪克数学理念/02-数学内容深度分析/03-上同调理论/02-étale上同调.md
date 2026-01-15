@@ -1,4 +1,4 @@
-﻿# étale上同调：拓扑方法进入代数几何
+# étale上同调：拓扑方法进入代数几何
 
 
 ## 📋 目录
@@ -331,7 +331,7 @@ T_ℓ(E) = lim_n E[ℓ^n]
    $$H^i(X, \mathbb{Z}_\ell) = \varprojlim_n H^i(X, \mathbb{Z}/\ell^n \mathbb{Z})$$
 
 4. **韦伊猜想（Zeta函数）**：
-   $$\zeta_X(s) = \exp\\\left(\sum_{n=1}^\infty \frac{N_n}{n} T^n\right), \quad N_n = |X(\mathbb{F}_{q^n})|$$
+   $$\zeta_X(s) = \exp\left(\sum_{n=1}^\infty \frac{N_n}{n} T^n\right), \quad N_n = |X(\mathbb{F}_{q^n})|$$
 
 5. **函数方程**：
    $$\zeta_X(1-s) = \pm q^{-\chi(X)/2} T^{-\chi(X)} \zeta_X(s)$$
@@ -351,10 +351,88 @@ T_ℓ(E) = lim_n E[ℓ^n]
 10. **上同调维数**：
     $$\text{cd}_\ell(X) = \sup\{i : H_{\text{ét}}^i(X, \mathbb{Q}_\ell) \neq 0\}$$
 
+11. **étale覆盖的细化**：
+    étale覆盖的细化：
+    $$\{U_i \to X\} \text{ 细化 } \{V_j \to X\} \iff \forall i, \exists j, U_i \to V_j$$
+
+12. **étale上同调的长正合列**：
+    étale上同调的长正合列：
+    $$0 \to H_{\text{ét}}^0(X, \mathcal{F}) \to H_{\text{ét}}^0(X, \mathcal{G}) \to H_{\text{ét}}^0(X, \mathcal{H}) \to H_{\text{ét}}^1(X, \mathcal{F}) \to \cdots$$
+
+13. **étale上同调的函子性**：
+    étale上同调的函子性：
+    $$f: X \to Y \Rightarrow f^*: H_{\text{ét}}^i(Y, \mathcal{F}) \to H_{\text{ét}}^i(X, f^*\mathcal{F})$$
+
+14. **étale基本群的构造**：
+    étale基本群的构造：
+    $$\pi_1^{\text{ét}}(X, \bar{x}) = \varprojlim \text{Gal}(Y/X), \quad Y \to X \text{ 有限étale覆盖}$$
+
+15. **étale上同调与Weil猜想**：
+    étale上同调与Weil猜想的关系：
+    $$H_{\text{ét}}^i(X_{\bar{\mathbb{F}}_q}, \mathbb{Q}_\ell) \text{ 的Frobenius特征值给出Weil ζ函数的零点}$$
+
+---
+
+## 十、étale上同调的详细数学表述
+
+### 10.1 étale覆盖与拓扑
+
+**étale覆盖的细化**：
+
+étale覆盖$\{U_i \to X\}$**细化**覆盖$\{V_j \to X\}$，如果：
+$$\forall i, \exists j, U_i \to V_j$$
+
+**étale拓扑**：
+
+étale拓扑是Grothendieck拓扑，覆盖族由étale覆盖组成。
+
+**数学公式**：
+- 覆盖细化: $$\{U_i \to X\} \text{ 细化 } \{V_j \to X\} \iff \forall i, \exists j, U_i \to V_j$$
+- étale拓扑: $$J_{\text{ét}}(X) = \{\{U_i \to X\} : U_i \to X \text{ étale且 $\bigcup \text{Im}(U_i) = X$}\}$$
+- 拓扑关系: $$\text{étale拓扑} \supset \text{Zariski拓扑}$$
+
+---
+
+### 10.2 étale上同调的性质
+
+**长正合列**：
+
+对于短正合列$0 \to \mathcal{F}' \to \mathcal{F} \to \mathcal{F}'' \to 0$，有长正合列：
+$$0 \to H_{\text{ét}}^0(X, \mathcal{F}') \to H_{\text{ét}}^0(X, \mathcal{F}) \to H_{\text{ét}}^0(X, \mathcal{F}'') \to H_{\text{ét}}^1(X, \mathcal{F}') \to \cdots$$
+
+**函子性**：
+
+对于态射$f: X \to Y$，有：
+$$f^*: H_{\text{ét}}^i(Y, \mathcal{F}) \to H_{\text{ét}}^i(X, f^*\mathcal{F})$$
+
+**数学公式**：
+- 长正合列: $$0 \to H_{\text{ét}}^0(X, \mathcal{F}') \to H_{\text{ét}}^0(X, \mathcal{F}) \to H_{\text{ét}}^0(X, \mathcal{F}'') \to H_{\text{ét}}^1(X, \mathcal{F}') \to \cdots$$
+- 函子性: $$f^*: H_{\text{ét}}^i(Y, \mathcal{F}) \to H_{\text{ét}}^i(X, f^*\mathcal{F})$$
+- étale上同调: $$H_{\text{ét}}^i(X, \mathcal{F}) = H^i(X_{\text{ét}}, \mathcal{F})$$
+
+---
+
+### 10.3 étale基本群与Weil猜想
+
+**étale基本群**：
+
+**étale基本群**定义为：
+$$\pi_1^{\text{ét}}(X, \bar{x}) = \varprojlim \text{Gal}(Y/X), \quad Y \to X \text{ 有限étale覆盖}$$
+
+**Weil猜想**：
+
+étale上同调与Weil猜想的关系：
+$$H_{\text{ét}}^i(X_{\bar{\mathbb{F}}_q}, \mathbb{Q}_\ell) \text{ 的Frobenius特征值给出Weil ζ函数的零点}$$
+
+**数学公式**：
+- étale基本群: $$\pi_1^{\text{ét}}(X, \bar{x}) = \varprojlim \text{Gal}(Y/X)$$
+- Frobenius作用: $$\text{Frob}: H_{\text{ét}}^i(X, \mathbb{Q}_\ell) \to H_{\text{ét}}^i(X, \mathbb{Q}_\ell)$$
+- Weil猜想: $$H_{\text{ét}}^i(X_{\bar{\mathbb{F}}_q}, \mathbb{Q}_\ell) \text{ 的Frobenius特征值给出Weil ζ函数的零点}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

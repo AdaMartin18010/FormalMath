@@ -80,7 +80,7 @@ ZFC公理体系 - 集合论基础
 | 分离公理 | 子集定义 | $\{x \in A \mid \phi(x)\}$ | 属性筛选 |
 | 无穷公理 | 自然数集构造 | $\omega = \{\emptyset, \{\emptyset\}, \{\emptyset, \{\emptyset\}\}, \ldots\}$ | 无限概念 |
 | 替换公理 | 函数构造 | $F[A] = \{F(x) \mid x \in A\}$ | 映射思维 |
-| 正则公理 | 良基性保证 | $\forall A \neqqq \emptyset \exists x \in A(x \cap A = \emptyset)$ | 层次结构 |
+| 正则公理 | 良基性保证 | $\forall A \neq \emptyset \exists x \in A(x \cap A = \emptyset)$ | 层次结构 |
 | 选择公理 | 选择函数 | $\exists f: \mathcal{P}(A) \setminus \{\emptyset\} \to A$ | 决策选择 |
 
 ### 1.2 自然数构造的ZFC映射 / ZFC Mapping for Natural Number Construction

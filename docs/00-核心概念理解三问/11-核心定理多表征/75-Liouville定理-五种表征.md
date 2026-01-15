@@ -1,4 +1,4 @@
-# Liouville定理 - 五种表征
+﻿# Liouville定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 复分析
@@ -39,7 +39,7 @@ $$|f(z)| \leq C(1 + |z|^k)$$
 
 ### 1.3 形式化表述
 
-$$\leqft[ f \text{ 整函数 } \land \exists M > 0: |f(z)| \leq M \right] \Rightarrow f \text{ 是常数}$$
+$$\left[ f \text{ 整函数 } \land \exists M > 0: |f(z)| \leq M \right] \Rightarrow f \text{ 是常数}$$
 
 ---
 

@@ -1,4 +1,4 @@
-# Krull主理想定理 - 五种表征
+﻿# Krull主理想定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 交换代数
@@ -40,7 +40,7 @@ $$\operatorname{ht}(P) \leq n$$
 
 ### 1.3 形式化表述
 
-$$\leqft[ R \text{ Noether环 } \land P \text{ 是 } (x) \text{ 的极小素理想 } \right] \Rightarrow \operatorname{ht}(P) \leq 1$$
+$$\left[ R \text{ Noether环 } \land P \text{ 是 } (x) \text{ 的极小素理想 } \right] \Rightarrow \operatorname{ht}(P) \leq 1$$
 
 ---
 
