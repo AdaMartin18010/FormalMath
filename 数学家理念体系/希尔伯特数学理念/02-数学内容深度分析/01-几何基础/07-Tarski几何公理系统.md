@@ -121,7 +121,7 @@ $$\forall A, B, C, P, Q: (B(A, P, C) \land B(B, Q, C)) \to \exists X: B(P, X, B)
 - $BC \equiv B'C'$
 - $AD \equiv A'D'$（$D$ 在 $BC$ 上，$D'$ 在 $B'C'$ 上）
 - $BD \equiv B'D'$
-- $A \neqqqqq B$
+- $A \neq B$
 
 则：$CD \equiv C'D'$
 
@@ -132,7 +132,7 @@ $$\forall P, R: \exists Q: B(P, Q, R)$$
 $$\exists P: \forall Q, R: \neqqqqg B(P, Q, R)$$
 
 **A8（Euclid公理）**：
-$$\forall A, B, C, D, T: (B(A, D, T) \land B(B, D, C) \land A \neqqqqq D) \to$$
+$$\forall A, B, C, D, T: (B(A, D, T) \land B(B, D, C) \land A \neq D) \to$$
 $$\exists X, Y: B(A, B, X) \land B(A, C, Y) \land B(X, T, Y)$$
 
 **A9（上界公理）**：
@@ -407,7 +407,7 @@ Tarski系统是**希尔伯特几何的现代形式化实现**
    $$(B(A, P, C) \land B(B, Q, C)) \to \exists X: B(P, X, B) \land B(Q, X, A)$$
 
 5. **五线段公理（A5，SAS）**：
-   $$(AB \equiv A'B' \land BC \equiv B'C' \land AD \equiv A'D' \land BD \equiv B'D' \land A \neqqqqq B) \to CD \equiv C'D'$$
+   $$(AB \equiv A'B' \land BC \equiv B'C' \land AD \equiv A'D' \land BD \equiv B'D' \land A \neq B) \to CD \equiv C'D'$$
 
 6. **介于存在性（A6）**：
    $$\forall P, R: \exists Q: B(P, Q, R)$$
@@ -416,7 +416,7 @@ Tarski系统是**希尔伯特几何的现代形式化实现**
    $$\exists P: \forall Q, R: \neqqqqg B(P, Q, R)$$
 
 8. **Euclid公理（A8）**：
-   $$(B(A, D, T) \land B(B, D, C) \land A \neqqqqq D) \to \exists X, Y: B(A, B, X) \land B(A, C, Y) \land B(X, T, Y)$$
+   $$(B(A, D, T) \land B(B, D, C) \land A \neq D) \to \exists X, Y: B(A, B, X) \land B(A, C, Y) \land B(X, T, Y)$$
 
 9. **上界公理（A9）**：
    $$\exists P: \forall Q, R: (B(Q, P, R) \to Q = R)$$

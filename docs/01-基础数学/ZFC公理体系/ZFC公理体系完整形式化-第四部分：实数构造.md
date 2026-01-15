@@ -177,7 +177,7 @@ $$[\{a_n\}] + [\{b_n\}] = [\{a_n + b_n\}]$$
 对于正实数 $(A, B)$ 和 $(C, D)$：
 $$(A, B) \cdot (C, D) = (A \cdot C, B \cdot D)$$
 
-其中 $A \cdot C = \{ac : a \in A, c \in C, a, c > 0\} \cup \{q \in \mathbb{Q} : q \\leq 0\}$。
+其中 $A \cdot C = \{ac : a \in A, c \in C, a, c > 0\} \cup \{q \in \mathbb{Q} : q \leq 0\}$。
 
 **定义 3.2'** (实数乘法 - 柯西序列)
 $$[\{a_n\}] \cdot [\{b_n\}] = [\{a_n \cdot b_n\}]$$
@@ -205,9 +205,9 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 
 **定理 4.1.1** (序关系的性质)
 
-1. 自反性：$x \\leq x$
-2. 反对称性：$x \\leq y \land y \\leq x \rightarrow x = y$
-3. 传递性：$x \\leq y \land y \\leq z \rightarrow x \\leq z$
+1. 自反性：$x \leq x$
+2. 反对称性：$x \leq y \land y \leq x \rightarrow x = y$
+3. 传递性：$x \leq y \land y \leq z \rightarrow x \leq z$
 4. 完全性：任意非空有上界的集合有最小上界
 
 **形式化证明**：

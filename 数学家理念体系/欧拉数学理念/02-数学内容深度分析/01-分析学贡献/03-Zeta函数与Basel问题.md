@@ -1,4 +1,4 @@
-# Zeta函数与Basel问题：解析数论的开端
+﻿# Zeta函数与Basel问题：解析数论的开端
 
 
 ## 📋 目录
@@ -120,10 +120,10 @@ $$S_n = \sum_{k=1}^{n} \frac{1}{k^2} = 1 + \frac{1}{4} + \frac{1}{9} + \cdots + 
 将数论问题转化为分析问题，使用无穷乘积和Taylor展开。
 
 **步骤1：考虑sin x的无穷乘积**：
-$$\sin x = x \prod_{n=1}^{\infty} \leqft(1 - \frac{x^2}{n^2\pi^2}\right)$$
+$$\sin x = x \prod_{n=1}^{\infty} \left(1 - \frac{x^2}{n^2\pi^2}\right)$$
 
 **步骤2：展开右边**：
-$$\sin x = x\leqft[1 - \leqft(\frac{1}{\pi^2} + \frac{1}{4\pi^2} + \frac{1}{9\pi^2} + \cdots\right)x^2 + \cdots\right]$$
+$$\sin x = x\left[1 - \left(\frac{1}{\pi^2} + \frac{1}{4\pi^2} + \frac{1}{9\pi^2} + \cdots\right)x^2 + \cdots\right]$$
 
 **步骤3：利用Taylor展开**：
 $$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots$$
@@ -139,7 +139,7 @@ $$\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$$
 **数学公式**：
 
 **欧拉的方法**：
-$$\sin x = x \prod_{n=1}^{\infty} \leqft(1 - \frac{x^2}{n^2\pi^2}\right) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots$$
+$$\sin x = x \prod_{n=1}^{\infty} \left(1 - \frac{x^2}{n^2\pi^2}\right) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots$$
 
 **比较系数**：
 $$-\frac{1}{\pi^2}\sum_{n=1}^{\infty} \frac{1}{n^2} = -\frac{1}{6}$$

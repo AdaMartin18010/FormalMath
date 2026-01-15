@@ -131,7 +131,7 @@
 | 符号 | LaTeX代码 | 含义 | 示例 |
 |------|-----------|------|------|
 | $\triangleleft$ | `$\triangleleft$` | 正规子群 | $N \triangleleft G$ |
-| $\\leq$ | `$\\leq$` | 子群 | $H \\leq G$ |
+| $\leq$ | `$\leq$` | 子群 | $H \leq G$ |
 | $<$ | `$<$` | 真子群 | $H < G$ |
 | $\cong$ | `$\cong$` | 同构 | $G \cong H$ |
 | $\simeq$ | `$\simeq$` | 同构（替代） | $G \simeq H$ |

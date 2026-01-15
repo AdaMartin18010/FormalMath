@@ -349,7 +349,7 @@ T_ℓ(E) = lim_n E[ℓ^n]
    $$H_{\text{ét}}^i(X, \mathcal{F}) \otimes_{\mathbb{Z}_\ell} \mathbb{Q}_\ell = H_{\text{ét}}^i(X, \mathcal{F} \otimes \mathbb{Q}_\ell)$$
 
 10. **上同调维数**：
-    $$\text{cd}_\ell(X) = \sup\{i : H_{\text{ét}}^i(X, \mathbb{Q}_\ell) \neqqqqqqq 0\}$$
+    $$\text{cd}_\ell(X) = \sup\{i : H_{\text{ét}}^i(X, \mathbb{Q}_\ell) \neq 0\}$$
 
 ---
 

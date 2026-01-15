@@ -184,9 +184,9 @@ $$\frac{a}{b} < \frac{c}{d} \leftrightarrow ad < bc$$
 
 **定理 3.1.1** (序关系的性质)
 
-1. 自反性：$x \\leq x$
-2. 反对称性：$x \\leq y \land y \\leq x \rightarrow x = y$
-3. 传递性：$x \\leq y \land y \\leq z \rightarrow x \\leq z$
+1. 自反性：$x \leq x$
+2. 反对称性：$x \leq y \land y \leq x \rightarrow x = y$
+3. 传递性：$x \leq y \land y \leq z \rightarrow x \leq z$
 4. 完全性：任意非空有上界的集合有最小上界
 
 **形式化证明**：

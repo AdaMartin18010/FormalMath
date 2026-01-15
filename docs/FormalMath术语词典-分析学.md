@@ -507,8 +507,8 @@ mindmap
 **符号表示**：
 
 - 开区间：$(a,b) = \{x \in \mathbb{R} \mid a < x < b\}$
-- 闭区间：$[a,b] = \{x \in \mathbb{R} \mid a \\leq x \\leq b\}$
-- 半开区间：$[a,b) = \{x \in \mathbb{R} \mid a \\leq x < b\}$
+- 闭区间：$[a,b] = \{x \in \mathbb{R} \mid a \leq x \leq b\}$
+- 半开区间：$[a,b) = \{x \in \mathbb{R} \mid a \leq x < b\}$
 
 **示例**：$(0,1)$ 表示大于0且小于1的所有实数
 
@@ -594,7 +594,7 @@ mindmap
 **性质**：
 
 1. **线性性**：$\int_a^b (f+g) = \int_a^b f + \int_a^b g$
-2. **单调性**：如果$f \\leq g$，则$\int_a^b f \\leq \int_a^b g$
+2. **单调性**：如果$f \leq g$，则$\int_a^b f \leq \int_a^b g$
 3. **微积分基本定理**：如果$F' = f$，则$\int_a^b f = F(b) - F(a)$
 
 #### 勒贝格积分 / Lebesgue Integral
@@ -608,8 +608,8 @@ mindmap
 **性质**：
 
 1. **单调收敛定理**：如果$f_n \neqqarrow f$，则$\int f_n \neqqarrow \int f$
-2. **控制收敛定理**：如果$|f_n| \\leq g$且$\int g < \infty$，则$\lim \int f_n = \int \lim f_n$
-3. **法图引理**：$\int \liminf f_n \\leq \liminf \int f_n$
+2. **控制收敛定理**：如果$|f_n| \leq g$且$\int g < \infty$，则$\lim \int f_n = \int \lim f_n$
+3. **法图引理**：$\int \liminf f_n \leq \liminf \int f_n$
 
 ### 级数理论 / Series Theory
 
@@ -712,9 +712,9 @@ mindmap
 
 **性质**：
 
-1. **正定性**：$\|x\| \\geq 0$且$\|x\| = 0$当且仅当$x = 0$
+1. **正定性**：$\|x\| \geq 0$且$\|x\| = 0$当且仅当$x = 0$
 2. **齐次性**：$\|\lambda x\| = |\lambda|\|x\|$
-3. **三角不等式**：$\|x+y\| \\leq \|x\| + \|y\|$
+3. **三角不等式**：$\|x+y\| \leq \|x\| + \|y\|$
 
 #### 巴拿赫空间 / Banach Space
 
@@ -738,7 +738,7 @@ mindmap
 
 **性质**：
 
-1. **正定性**：$\langle x,x \rangle \\geq 0$且$\langle x,x \rangle = 0$当且仅当$x = 0$
+1. **正定性**：$\langle x,x \rangle \geq 0$且$\langle x,x \rangle = 0$当且仅当$x = 0$
 2. **对称性**：$\langle x,y \rangle = \overline{\langle y,x \rangle}$
 3. **线性性**：$\langle ax+by,z \rangle = a\langle x,z \rangle + b\langle y,z \rangle$
 
@@ -756,9 +756,9 @@ mindmap
 
 #### 有界线性算子 / Bounded Linear Operator
 
-**中文定义**：设$T: X \to Y$是从赋范空间$X$到赋范空间$Y$的线性算子。如果存在常数$M$使得$\|Tx\| \\leq M\|x\|$对所有$x \in X$成立，则称$T$是有界线性算子。
+**中文定义**：设$T: X \to Y$是从赋范空间$X$到赋范空间$Y$的线性算子。如果存在常数$M$使得$\|Tx\| \leq M\|x\|$对所有$x \in X$成立，则称$T$是有界线性算子。
 
-**英文定义**：A linear operator $T: X \to Y$ between normed spaces is bounded if there exists a constant $M$ such that $\|Tx\| \\leq M\|x\|$ for all $x \in X$.
+**英文定义**：A linear operator $T: X \to Y$ between normed spaces is bounded if there exists a constant $M$ such that $\|Tx\| \leq M\|x\|$ for all $x \in X$.
 
 **符号表示**：$T \in \mathcal{B}(X,Y)$
 
@@ -1799,7 +1799,7 @@ mindmap
   - $\|Ix\| = \|x\|$，因此 $\|I\| = 1$
 
 - **零算子 $0$ 是有界算子**：
-  - $\|0x\| = 0 \\leq 0 \cdot \|x\|$，因此 $\|0\| = 0$
+  - $\|0x\| = 0 \leq 0 \cdot \|x\|$，因此 $\|0\| = 0$
 
 ### 调和分析练习题答案 / Harmonic Analysis Exercise Answers
 
@@ -2166,7 +2166,7 @@ mindmap
 
 **正确理解**：
 
-- 有界算子是指存在常数$M$使得$\|Tx\| \\leq M\|x\|$对所有$x$成立
+- 有界算子是指存在常数$M$使得$\|Tx\| \leq M\|x\|$对所有$x$成立
 - 有界算子的值域不一定有界
 - 例如：恒等算子$I$是有界算子，但其值域是整个空间（无界）
 
@@ -2266,7 +2266,7 @@ mindmap
 |------|------|------|------|----------|
 | **连续性** | $\lim_{x \to a} f(x) = f(a)$ | $f$在$a$处连续 | 局部性质 | $f(x) = x^2$在$x=0$处连续 |
 | **一致连续性** | 对任意$\varepsilon > 0$，存在$\delta > 0$使得对所有$x_1, x_2$，$、\|x_1-x_2\| < \delta$时$\|f(x_1)-f(x_2)\| < \varepsilon$ | $f$在$I$上一致连续 | 全局性质 | $f(x) = x^2$在$[0,1]$上一致连续 |
-| **利普希茨连续性** | 存在$L$使得$\|f(x_1)-f(x_2)\| \\leq L\|x_1-x_2\|$ | $f$是利普希茨连续的 | 比一致连续更强 | $f(x) = \|x\|$是利普希茨连续的 |
+| **利普希茨连续性** | 存在$L$使得$\|f(x_1)-f(x_2)\| \leq L\|x_1-x_2\|$ | $f$是利普希茨连续的 | 比一致连续更强 | $f(x) = \|x\|$是利普希茨连续的 |
 
 **关系说明**：
 

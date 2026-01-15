@@ -287,13 +287,13 @@ Locale
    $$F: L^{\text{op}} \to \text{Set}, \quad \text{满足层公理}$$
 
 7. **Locale与Topos对应**：
-   $$\text{Locale } L \\\leftrightarrow \text{Topos Sh}(L)$$
+   $$\text{Locale } L \\leftrightarrow \text{Topos Sh}(L)$$
 
 8. **连续范畴与Topos**：
    $$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
 
 9. **Locale的几何化**：
-   $$\text{无点拓扑} \\\leftrightarrow \text{Locale}, \quad \text{几何化数学}$$
+   $$\text{无点拓扑} \\leftrightarrow \text{Locale}, \quad \text{几何化数学}$$
 
 10. **Locales与逻辑**：
     $$\text{Locale的内部逻辑是几何逻辑}$$

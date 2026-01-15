@@ -116,7 +116,7 @@
 **上下文相关语法（Context-Sensitive Grammar）**：
 
 - 产生式规则形如 $\alpha A \beta \to \alpha \gamma \beta$
-- 其中 $A \in V$（变元），$\alpha, \beta, \gamma \in (V \cup T)^*$，$\gamma \neqq \epsilon$
+- 其中 $A \in V$（变元），$\alpha, \beta, \gamma \in (V \cup T)^*$，$\gamma \neq \epsilon$
 - 规则依赖于上下文（$\alpha$ 和 $\beta$）
 
 **性质**：
@@ -135,7 +135,7 @@ $$bB \to bb$$
 $$bC \to bc$$
 $$cC \to cc$$
 
-生成语言：$L = \{a^n b^n c^n : n \geqq 1\}$
+生成语言：$L = \{a^n b^n c^n : n \geq 1\}$
 
 ---
 
@@ -145,7 +145,7 @@ $$cC \to cc$$
 
 - **定义**：由上下文相关语法生成的语言
 - **自动机对应**：由线性有界自动机（LBA）识别
-- **计算能力**：比上下文无关语言更强，可以识别 $L = \{a^n b^n c^n : n \geqq 1\}$ 等语言
+- **计算能力**：比上下文无关语言更强，可以识别 $L = \{a^n b^n c^n : n \geq 1\}$ 等语言
 
 **性质**：
 
@@ -155,7 +155,7 @@ $$cC \to cc$$
 
 **例子**：
 
-- $L = \{a^n b^n c^n : n \geqq 1\}$（相同数量的 $a$、$b$ 和 $c$）
+- $L = \{a^n b^n c^n : n \geq 1\}$（相同数量的 $a$、$b$ 和 $c$）
 - $L = \{ww : w \in \{a, b\}^*\}$（回文字符串的平方）
 
 ---
@@ -236,18 +236,18 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 **Type-2但不Type-3**：
 
-- **例子**：$L = \{a^n b^n : n \geqq 0\}$
+- **例子**：$L = \{a^n b^n : n \geq 0\}$
 - **证明**：使用Pumping引理证明不是正则语言
 - **语法**：$S \to aSb \mid \epsilon$
 
 **Type-1但不Type-2**：
 
-- **例子**：$L = \{a^n b^n c^n : n \geqq 1\}$
+- **例子**：$L = \{a^n b^n c^n : n \geq 1\}$
 - **证明**：使用上下文无关语言的Pumping引理证明不是上下文无关语言
   - **假设**：假设 $L$ 是上下文无关的，设泵长度为 $p$
-  - **选择字符串**：取 $w = a^p b^p c^p \in L$，$|w| = 3p \geqq p$
-  - **应用泵引理**：根据泵引理，$w = uvxyz$ 且 $|vxy| \leqq p$，$|vy| > 0$
-  - **分析**：由于 $|vxy| \leqq p$，$vxy$ 最多跨越两个相邻的字符类型
+  - **选择字符串**：取 $w = a^p b^p c^p \in L$，$|w| = 3p \geq p$
+  - **应用泵引理**：根据泵引理，$w = uvxyz$ 且 $|vxy| \leq p$，$|vy| > 0$
+  - **分析**：由于 $|vxy| \leq p$，$vxy$ 最多跨越两个相邻的字符类型
   - **导出矛盾**：取 $i = 2$，则 $uv^2 xy^2 z$ 中某个字符的数量增加，但其他字符的数量不变，因此 $uv^2 xy^2 z \notin L$，矛盾
 - **语法**：需要上下文相关语法，如 $S \to aSBC \mid aBC$，$CB \to BC$，$bB \to bb$，$bC \to bc$，$cC \to cc$
 
@@ -265,10 +265,10 @@ $$\text{Type-3} \subset \text{Type-2} \subset \text{Type-1} \subset \text{Type-0
 
 **定理**：
 
-- Type-3：正则语法 $\leqftrightarrow$ 有限自动机
-- Type-2：上下文无关语法 $\leqftrightarrow$ 下推自动机
-- Type-1：上下文相关语法 $\leqftrightarrow$ 线性有界自动机
-- Type-0：无限制语法 $\leqftrightarrow$ 图灵机
+- Type-3：正则语法 $\leftrightarrow$ 有限自动机
+- Type-2：上下文无关语法 $\leftrightarrow$ 下推自动机
+- Type-1：上下文相关语法 $\leftrightarrow$ 线性有界自动机
+- Type-0：无限制语法 $\leftrightarrow$ 图灵机
 
 ---
 

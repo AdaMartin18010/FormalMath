@@ -82,7 +82,7 @@
 
 - **选择Forcing**：使用Cohen forcing $P = \text{Fn}(\omega_2^M \times \omega, 2)$
 - **添加新实数**：对每个 $\alpha < \omega_2^M$，添加新实数 $r_\alpha$
-- **证明否定**：在 $M[G]$ 中，$2^{\aleph_0} \geqq \aleph_2 > \aleph_1$，因此 $\neqg \text{CH}$
+- **证明否定**：在 $M[G]$ 中，$2^{\aleph_0} \geq \aleph_2 > \aleph_1$，因此 $\neqg \text{CH}$
 
 **技术细节**：
 

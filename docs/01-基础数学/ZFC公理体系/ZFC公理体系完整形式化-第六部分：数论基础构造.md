@@ -58,9 +58,9 @@ $$m < n \leftrightarrow m \in n$$
 
 **定理 1.1.1** (自然数序的性质)
 
-1. 自反性：$n \\leq n$
-2. 反对称性：$m \\leq n \land n \\leq m \rightarrow m = n$
-3. 传递性：$m \\leq n \land n \\leq p \rightarrow m \\leq p$
+1. 自反性：$n \leq n$
+2. 反对称性：$m \leq n \land n \leq m \rightarrow m = n$
+3. 传递性：$m \leq n \land n \leq p \rightarrow m \leq p$
 4. 完全性：任意非空自然数集合有最小元素
 
 **形式化证明**：
@@ -356,7 +356,7 @@ $$\left(\frac{p}{q}\right) \left(\frac{q}{p}\right) = (-1)^{(p-1)(q-1)/4}$$
 
 **定义 6.1** (欧拉函数)
 对于正整数 $n$，欧拉函数 $\phi(n)$ 定义为：
-$$\phi(n) = |\{k \in \mathbb{Z} : 1 \\leq k \\leq n, \gcd(k, n) = 1\}|$$
+$$\phi(n) = |\{k \in \mathbb{Z} : 1 \leq k \leq n, \gcd(k, n) = 1\}|$$
 
 **定理 6.1.1** (欧拉函数的性质)
 

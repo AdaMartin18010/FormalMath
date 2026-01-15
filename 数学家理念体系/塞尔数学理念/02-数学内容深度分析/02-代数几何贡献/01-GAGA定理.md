@@ -176,7 +176,7 @@ graph TB
 
 对于射影簇 $X$，存在双射：
 $$
-\{\text{代数凝聚层}\} \leqftrightarrow \{\text{解析凝聚层}\}
+\{\text{代数凝聚层}\} \leftrightarrow \{\text{解析凝聚层}\}
 $$
 
 **解析上同调 ↔ 代数上同调**：

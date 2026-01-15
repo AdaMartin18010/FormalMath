@@ -464,7 +464,7 @@ graph TD
    $$i_*: \pi_1(U \cap V) \to \pi_1(U)$$
 
 5. **并集的拓扑**：
-   $$X = U \cup V, \quad U \cap V \neqqqqqq \emptyset$$
+   $$X = U \cup V, \quad U \cap V \neq \emptyset$$
 
 6. **基本群同构**：
    $$\pi_1(X, x_0) \cong \pi_1(U, x_0) *_{\pi_1(U \cap V, x_0)} \pi_1(V, x_0)$$

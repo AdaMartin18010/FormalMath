@@ -94,7 +94,7 @@
 
 **外延公理**：
 
-$$\forall x \forall y (\forall z (z \in x \leqftrightarrow z \in y) \to x = y)$$
+$$\forall x \forall y (\forall z (z \in x \leftrightarrow z \in y) \to x = y)$$
 
 **意义**：
 
@@ -120,7 +120,7 @@ $$\forall x \forall y \exists z (x \in z \land y \in z)$$
 
 **并集公理**：
 
-$$\forall x \exists y \forall z (z \in y \leqftrightarrow \exists w (w \in x \land z \in w))$$
+$$\forall x \exists y \forall z (z \in y \leftrightarrow \exists w (w \in x \land z \in w))$$
 
 **意义**：
 
@@ -135,7 +135,7 @@ $$\forall x \exists y \forall z (z \in y \leqftrightarrow \exists w (w \in x \la
 
 **幂集公理**：
 
-$$\forall x \exists y \forall z (z \in y \leqftrightarrow z \subseteq x)$$
+$$\forall x \exists y \forall z (z \in y \leftrightarrow z \subseteq x)$$
 
 **意义**：
 
@@ -165,7 +165,7 @@ $$\exists x (\emptyset \in x \land \forall y (y \in x \to y \cup \{y\} \in x))$$
 
 对任意公式 $\varphi(x, y, \bar{z})$：
 
-$$\forall \bar{z} \forall x \exists! y \varphi(x, y, \bar{z}) \to \forall u \exists v \forall y (y \in v \leqftrightarrow \exists x (x \in u \land \varphi(x, y, \bar{z})))$$
+$$\forall \bar{z} \forall x \exists! y \varphi(x, y, \bar{z}) \to \forall u \exists v \forall y (y \in v \leftrightarrow \exists x (x \in u \land \varphi(x, y, \bar{z})))$$
 
 **意义**：
 
@@ -178,7 +178,7 @@ $$\forall \bar{z} \forall x \exists! y \varphi(x, y, \bar{z}) \to \forall u \exi
 
 **正则公理**：
 
-$$\forall x (x \neqq \emptyset \to \exists y (y \in x \land y \cap x = \emptyset))$$
+$$\forall x (x \neq \emptyset \to \exists y (y \in x \land y \cap x = \emptyset))$$
 
 **意义**：
 

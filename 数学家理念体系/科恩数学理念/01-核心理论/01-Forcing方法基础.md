@@ -81,16 +81,16 @@
 
 **定义**：
 
-一个部分序集（forcing notion）是一个偏序集 $(P, \leqq)$，其中：
+一个部分序集（forcing notion）是一个偏序集 $(P, \leq)$，其中：
 
 - $P$ 是集合（forcing条件）
-- $\leqq$ 是偏序关系
+- $\leq$ 是偏序关系
 - 通常要求有最大元 $\mathbb{1}$（有时称为真值）
 
 **记号**：
 
-- $p \leqq q$ 表示 $p$ 比 $q$ 更强（$p$ 提供更多信息）
-- $p \perp q$ 表示 $p$ 和 $q$ 不兼容（不存在 $r$ 使得 $r \leqq p$ 且 $r \leqq q$）
+- $p \leq q$ 表示 $p$ 比 $q$ 更强（$p$ 提供更多信息）
+- $p \perp q$ 表示 $p$ 和 $q$ 不兼容（不存在 $r$ 使得 $r \leq p$ 且 $r \leq q$）
 
 **例子**：
 
@@ -112,10 +112,10 @@
 设 $M$ 是可数传递模型，$P \in M$ 是部分序集。$G \subseteq P$ 是 $M$ 上的泛型集，如果：
 
 1. $G$ 是滤子（filter）：
-   - 如果 $p \in G$ 且 $q \leqq p$，则 $q \in G$
-   - 如果 $p, q \in G$，则存在 $r \in G$ 使得 $r \leqq p$ 且 $r \leqq q$
+   - 如果 $p \in G$ 且 $q \leq p$，则 $q \in G$
+   - 如果 $p, q \in G$，则存在 $r \in G$ 使得 $r \leq p$ 且 $r \leq q$
 2. $G$ 与 $M$ 中所有稠密集相交：
-   - 对任意 $D \in M$，如果 $D \subseteq P$ 是稠密的，则 $G \cap D \neqq \emptyset$
+   - 对任意 $D \in M$，如果 $D \subseteq P$ 是稠密的，则 $G \cap D \neq \emptyset$
 
 **关键性质**：
 
@@ -127,7 +127,7 @@
 
 $D \subseteq P$ 是稠密的，如果：
 
-对任意 $p \in P$，存在 $q \in D$ 使得 $q \leqq p$。
+对任意 $p \in P$，存在 $q \in D$ 使得 $q \leq p$。
 
 ---
 
@@ -179,7 +179,7 @@ $$M[G] \models \text{ZFC}$$
 
 - Forcing关系在 $M$ 中可定义（定义性引理）
 - 完全性定理（Truth Lemma）：$M[G] \models \varphi$ 当且仅当存在 $p \in G$ 使得 $p \Vdash \varphi$
-- 单调性：如果 $p \Vdash \varphi$ 且 $q \leqq p$，则 $q \Vdash \varphi$
+- 单调性：如果 $p \Vdash \varphi$ 且 $q \leq p$，则 $q \Vdash \varphi$
 
 ---
 
@@ -187,25 +187,25 @@ $$M[G] \models \text{ZFC}$$
 
 **原子公式**：
 
-- **$\in$-关系**：$p \Vdash \tau_1 \in \tau_2$ 当且仅当对所有 $q \leqq p$，存在 $r \leqq q$ 和 $(\sigma, s) \in \tau_2$ 使得 $r \leqq s$ 且 $r \Vdash \tau_1 = \sigma$
+- **$\in$-关系**：$p \Vdash \tau_1 \in \tau_2$ 当且仅当对所有 $q \leq p$，存在 $r \leq q$ 和 $(\sigma, s) \in \tau_2$ 使得 $r \leq s$ 且 $r \Vdash \tau_1 = \sigma$
 
 - **$=$-关系**：$p \Vdash \tau_1 = \tau_2$ 当且仅当 $p \Vdash \tau_1 \subseteq \tau_2$ 且 $p \Vdash \tau_2 \subseteq \tau_1$
 
 **逻辑连接词**：
 
-- **否定**：$p \Vdash \neqg \varphi$ 当且仅当不存在 $q \leqq p$ 使得 $q \Vdash \varphi$
+- **否定**：$p \Vdash \neqg \varphi$ 当且仅当不存在 $q \leq p$ 使得 $q \Vdash \varphi$
 
 - **合取**：$p \Vdash \varphi \land \psi$ 当且仅当 $p \Vdash \varphi$ 且 $p \Vdash \psi$
 
-- **析取**：$p \Vdash \varphi \lor \psi$ 当且仅当对所有 $q \leqq p$，存在 $r \leqq q$ 使得 $r \Vdash \varphi$ 或 $r \Vdash \psi$
+- **析取**：$p \Vdash \varphi \lor \psi$ 当且仅当对所有 $q \leq p$，存在 $r \leq q$ 使得 $r \Vdash \varphi$ 或 $r \Vdash \psi$
 
-- **蕴含**：$p \Vdash \varphi \to \psi$ 当且仅当对所有 $q \leqq p$，如果 $q \Vdash \varphi$，则 $q \Vdash \psi$
+- **蕴含**：$p \Vdash \varphi \to \psi$ 当且仅当对所有 $q \leq p$，如果 $q \Vdash \varphi$，则 $q \Vdash \psi$
 
 **量词**：
 
 - **存在量词**：$p \Vdash \exists x \varphi(x)$ 当且仅当存在名称 $\tau$ 使得 $p \Vdash \varphi(\tau)$
 
-- **全称量词**：$p \Vdash \forall x \varphi(x)$ 当且仅当对所有名称 $\tau$ 和所有 $q \leqq p$，存在 $r \leqq q$ 使得 $r \Vdash \varphi(\tau)$
+- **全称量词**：$p \Vdash \forall x \varphi(x)$ 当且仅当对所有名称 $\tau$ 和所有 $q \leq p$，存在 $r \leq q$ 使得 $r \Vdash \varphi(\tau)$
 
 ---
 
@@ -218,7 +218,7 @@ $$M[G] \models \text{ZFC}$$
 一个 $P$-名称是一个关系 $\tau$，使得：
 
 - 如果 $(\sigma, p) \in \tau$，则 $\sigma$ 是 $P$-名称
-- 如果 $(\sigma, p) \in \tau$ 且 $q \leqq p$，则 $(\sigma, q) \in \tau$
+- 如果 $(\sigma, p) \in \tau$ 且 $q \leq p$，则 $(\sigma, q) \in \tau$
 
 **性质**：
 
@@ -284,7 +284,7 @@ $$\tau_G = \{\sigma_G : (\sigma, p) \in \tau \text{ 且 } p \in G\}$$
 - 对每个 $\alpha < \omega_2^M$，定义新实数 $r_\alpha$：
   $$r_\alpha(n) = \text{第} (\alpha, n) \text{个坐标的值（由} G \text{决定）}$$
 - 这些实数是新的（不在 $M$ 中）
-- 在 $M[G]$ 中，$2^{\aleph_0} \geqq \aleph_2$
+- 在 $M[G]$ 中，$2^{\aleph_0} \geq \aleph_2$
 
 **结果**：
 

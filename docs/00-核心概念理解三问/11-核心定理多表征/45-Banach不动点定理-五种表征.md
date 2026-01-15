@@ -38,7 +38,7 @@ $$d(Tx, Ty) \leq k \cdot d(x, y), \quad \forall x, y \in X$$
 
 ### 1.4 形式化表述
 
-$$\leqft[ (X, d) \text{ 完备度量空间 } \land T: X \to X \text{ 压缩映射 } \right] \Rightarrow \exists! x^* \in X: T(x^*) = x^*$$
+$$\left[ (X, d) \text{ 完备度量空间 } \land T: X \to X \text{ 压缩映射 } \right] \Rightarrow \exists! x^* \in X: T(x^*) = x^*$$
 
 ---
 

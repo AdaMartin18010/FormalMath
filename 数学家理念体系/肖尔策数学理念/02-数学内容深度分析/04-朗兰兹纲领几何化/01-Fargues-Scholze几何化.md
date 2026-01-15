@@ -284,7 +284,7 @@ Fargues-Scholze方法将朗兰兹纲领几何化，通过Fargues-Fontaine曲线�
 **定理 3.2.1**（几何对应定理）：
 在Fargues-Fontaine曲线 $X_{FF}$ 上，存在几何对应：
 
-$$\text{Galois表示} \leqftrightarrow \text{自守表示}$$
+$$\text{Galois表示} \leftrightarrow \text{自守表示}$$
 
 **定理内容**：
 

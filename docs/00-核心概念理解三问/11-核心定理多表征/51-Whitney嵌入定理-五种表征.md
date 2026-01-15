@@ -34,7 +34,7 @@
 
 ### 1.3 形式化表述
 
-$$\leqft[ M \text{ m维光滑流形 } \right] \Rightarrow \exists f: M \hookrightarrow \mathbb{R}^{2m+1} \text{ 光滑嵌入}$$
+$$\left[ M \text{ m维光滑流形 } \right] \Rightarrow \exists f: M \hookrightarrow \mathbb{R}^{2m+1} \text{ 光滑嵌入}$$
 
 如果 $M$ 紧致，则 $f: M \hookrightarrow \mathbb{R}^{2m}$。
 

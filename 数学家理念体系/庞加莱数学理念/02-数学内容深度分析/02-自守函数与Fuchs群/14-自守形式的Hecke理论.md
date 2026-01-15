@@ -141,7 +141,7 @@ Hecke算子与L函数有密切关系。
 
 对于素数 $p$，**Hecke算子** $T_p$ 作用在权 $k$ 的模形式上：
 
-$$T_p f(z) = p^{k-1} f(pz) + \frac{1}{p} \sum_{j=0}^{p-1} f\\\leqft(\frac{z+j}{p}\right)$$
+$$T_p f(z) = p^{k-1} f(pz) + \frac{1}{p} \sum_{j=0}^{p-1} f\left(\frac{z+j}{p}\right)$$
 
 **性质**：
 

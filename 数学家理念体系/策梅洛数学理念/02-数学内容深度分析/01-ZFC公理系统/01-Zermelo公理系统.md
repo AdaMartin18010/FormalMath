@@ -158,7 +158,7 @@
 
 **公理表述**：
 
-$$\forall x \forall y [\forall z (z \in x \leqftrightarrow z \in y) \rightarrow x = y]$$
+$$\forall x \forall y [\forall z (z \in x \leftrightarrow z \in y) \rightarrow x = y]$$
 
 **含义**：
 
@@ -197,7 +197,7 @@ $$\exists x \forall y (y \notin x)$$
 
 **公理表述**：
 
-$$\forall x \forall y \exists z \forall w (w \in z \leqftrightarrow w = x \lor w = y)$$
+$$\forall x \forall y \exists z \forall w (w \in z \leftrightarrow w = x \lor w = y)$$
 
 **含义**：
 
@@ -218,7 +218,7 @@ $$\forall x \forall y \exists z \forall w (w \in z \leqftrightarrow w = x \lor w
 
 **公理表述**：
 
-$$\forall x \exists y \forall z [z \in y \leqftrightarrow \exists w (w \in x \land z \in w)]$$
+$$\forall x \exists y \forall z [z \in y \leftrightarrow \exists w (w \in x \land z \in w)]$$
 
 **含义**：
 
@@ -239,7 +239,7 @@ $$\forall x \exists y \forall z [z \in y \leqftrightarrow \exists w (w \in x \la
 
 **公理表述**：
 
-$$\forall x \exists y \forall z [z \in y \leqftrightarrow z \subseteq x]$$
+$$\forall x \exists y \forall z [z \in y \leftrightarrow z \subseteq x]$$
 
 **含义**：
 
@@ -263,7 +263,7 @@ $$\forall x \exists y \forall z [z \in y \leqftrightarrow z \subseteq x]$$
 
 对任意公式 $\varphi(z, w_1, \ldots, w_n)$（不含 $y$ 自由出现），
 
-$$\forall w_1 \ldots \forall w_n \forall x \exists y \forall z [z \in y \leqftrightarrow z \in x \land \varphi(z, w_1, \ldots, w_n)]$$
+$$\forall w_1 \ldots \forall w_n \forall x \exists y \forall z [z \in y \leftrightarrow z \in x \land \varphi(z, w_1, \ldots, w_n)]$$
 
 **含义**：
 
@@ -277,8 +277,8 @@ $$\forall w_1 \ldots \forall w_n \forall x \exists y \forall z [z \in y \leqftri
 
 **与概括公理的区别**：
 
-- **概括公理**（导致悖论）：$\exists y \forall z [z \in y \leqftrightarrow \varphi(z)]$
-- **分离公理**（安全）：$\exists y \forall z [z \in y \leqftrightarrow z \in x \land \varphi(z)]$
+- **概括公理**（导致悖论）：$\exists y \forall z [z \in y \leftrightarrow \varphi(z)]$
+- **分离公理**（安全）：$\exists y \forall z [z \in y \leftrightarrow z \in x \land \varphi(z)]$
 
 ---
 
@@ -331,7 +331,7 @@ $$\forall x [\emptyset \notin x \rightarrow \exists f : x \to \bigcup x \text{ �
 
 **概括公理（导致悖论）**：
 
-$$\exists y \forall z [z \in y \leqftrightarrow \varphi(z)]$$
+$$\exists y \forall z [z \in y \leftrightarrow \varphi(z)]$$
 
 **问题**：
 
@@ -340,7 +340,7 @@ $$\exists y \forall z [z \in y \leqftrightarrow \varphi(z)]$$
 
 **分离公理（安全）**：
 
-$$\exists y \forall z [z \in y \leqftrightarrow z \in x \land \varphi(z)]$$
+$$\exists y \forall z [z \in y \leftrightarrow z \in x \land \varphi(z)]$$
 
 **优势**：
 

@@ -271,12 +271,12 @@
 **定义**：子群
 设G是群，H是G的子集，如果H在G的运算下也构成群，则称H是G的子群。
 **英文定义**：A subgroup of a group G is a subset H of G that forms a group under the operation of G.
-**符号表示**：$H \\leq G$
+**符号表示**：$H \leq G$
 **判定条件**：
 1. 封闭性：$\forall a,b \in H, a \cdot b \in H$
 2. 单位元：$e \in H$
 3. 逆元：$\forall a \in H, a^{-1} \in H$
-**示例**：$2\mathbb{Z} \\leq \mathbb{Z}$
+**示例**：$2\mathbb{Z} \leq \mathbb{Z}$
 **性质**：子群的交集仍是子群
 ```
 
@@ -475,7 +475,7 @@
 设{aₙ}是实数序列，如果对任意ε>0，存在N∈ℕ，使得当n≥N时，有|aₙ-L|<ε，则称序列{aₙ}的极限为L。
 **英文定义**：The limit of a sequence {aₙ} is L if for every ε>0, there exists N∈ℕ such that |aₙ-L|<ε whenever n≥N.
 **符号表示**：$\lim_{n \to \infty} a_n = L$
-**数学表述**：$\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n \\geq N, |a_n-L| < \varepsilon$
+**数学表述**：$\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N, |a_n-L| < \varepsilon$
 **示例**：$\lim_{n \to \infty} \frac{1}{n} = 0$
 **性质**：收敛序列的极限是唯一的
 ```

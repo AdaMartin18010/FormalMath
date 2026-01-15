@@ -79,11 +79,11 @@ Poincaré猜想是庞加莱在1904年提出的拓扑学问题，它问：如果�
 
 **高维Poincaré猜想**：
 
-对于 $n \\\geq 4$，**高维Poincaré猜想**问：如果 $n$ 维闭流形 $M$ 满足 $H_*(M) \cong H_*(S^n)$，那么 $M$ 是否同胚于 $S^n$？
+对于 $n \geq 4$，**高维Poincaré猜想**问：如果 $n$ 维闭流形 $M$ 满足 $H_*(M) \cong H_*(S^n)$，那么 $M$ 是否同胚于 $S^n$？
 
 **状态**：
 
-- $n \\\geq 5$：已证明（Smale，1961）
+- $n \geq 5$：已证明（Smale，1961）
 - $n = 4$：已证明（Freedman，1982）
 - $n = 3$：已证明（Perelman，2003）
 
@@ -202,7 +202,7 @@ Perelman使用**Ricci流**证明了Poincaré猜想。
 
 **高维Poincaré猜想**：
 
-**高维Poincaré猜想**（$n \\\geq 5$）由Smale证明（1961）。
+**高维Poincaré猜想**（$n \geq 5$）由Smale证明（1961）。
 
 **方法**：
 
@@ -500,7 +500,7 @@ Poincaré猜想是拓扑学中最重要的问题之一，它的解决推动了3�
    $$H_k(M) = \begin{cases} \mathbb{Z} & k = 0, 3 \\ 0 & \text{其他} \end{cases} \text{（对 } S^3\text{）}$$
 
 4. **高维Poincaré猜想**：
-   $$H_*(M) \cong H_*(S^n) \Rightarrow M \cong S^n \text{（$n \\\geq 4$）}$$
+   $$H_*(M) \cong H_*(S^n) \Rightarrow M \cong S^n \text{（$n \geq 4$）}$$
 
 5. **几何化猜想**：
    $$M^3 = \text{素流形的连通和，每个素流形具有8种几何之一}$$
@@ -515,7 +515,7 @@ Poincaré猜想是拓扑学中最重要的问题之一，它的解决推动了3�
    $$\mathcal{F}(g, f) = \int_M (R + |\nabla f|^2) e^{-f} dV$$
 
 9. **熵单调性**：
-   $$\frac{d}{dt} \mathcal{F} \\\geq 0$$
+   $$\frac{d}{dt} \mathcal{F} \geq 0$$
 
 10. **有限时间奇点**：
     $$\text{若 } \text{Ric} < 0, \text{ 则 } T_{\max} < \infty$$

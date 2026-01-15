@@ -85,7 +85,7 @@ graph TB
 
 对于有限域 $\mathbb{F}_q$ 上的代数簇 $X$，**zeta函数**定义为：
 
-$$Z(X, t) = \exp\leqft(\sum_{n=1}^{\infty} \frac{N_n}{n} t^n\right)$$
+$$Z(X, t) = \exp\left(\sum_{n=1}^{\infty} \frac{N_n}{n} t^n\right)$$
 
 其中：
 

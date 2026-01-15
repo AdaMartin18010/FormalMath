@@ -40,7 +40,7 @@ $$H^0(X, \mathcal{F}) \cong H^1(X, \mathcal{F}^\vee \otimes \omega_X)^\vee$$
 
 ### 1.3 形式化表述
 
-$$\leqft[ X \text{ 光滑射影簇 } \land \mathcal{F} \text{ 凝聚层 } \right] \Rightarrow H^i(X, \mathcal{F}) \cong H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X)^\vee$$
+$$\left[ X \text{ 光滑射影簇 } \land \mathcal{F} \text{ 凝聚层 } \right] \Rightarrow H^i(X, \mathcal{F}) \cong H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X)^\vee$$
 
 ---
 

@@ -143,15 +143,15 @@
 
 **部分序集的定义**：
 
-一个部分序集（forcing notion）是一个偏序集 $(P, \leqq)$，其中：
+一个部分序集（forcing notion）是一个偏序集 $(P, \leq)$，其中：
 
 - $P$ 是集合（forcing条件）
-- $\leqq$ 是偏序关系
+- $\leq$ 是偏序关系
 - 通常要求有最大元 $\mathbb{1}$
 
 **记号**：
 
-- $p \leqq q$ 表示 $p$ 比 $q$ 更强
+- $p \leq q$ 表示 $p$ 比 $q$ 更强
 - $p \perp q$ 表示 $p$ 和 $q$ 不兼容
 
 ---
@@ -211,11 +211,11 @@
 
 **Proper Forcing的定义**：
 
-一个forcing notion $P$ 是proper的，如果对任意足够大的正则基数 $\theta$，对任意可数初等子模型 $M \prec H_\theta$ 使得 $P \in M$，对任意 $p \in P \cap M$，存在 $q \leqq p$ 使得 $q$ 是 $(M, P)$-泛型的。
+一个forcing notion $P$ 是proper的，如果对任意足够大的正则基数 $\theta$，对任意可数初等子模型 $M \prec H_\theta$ 使得 $P \in M$，对任意 $p \in P \cap M$，存在 $q \leq p$ 使得 $q$ 是 $(M, P)$-泛型的。
 
 **形式化表述**：
 
-$$P \text{ 是 proper } \iff \forall \theta \text{ 足够大正则基数}, \forall M \prec H_\theta \text{ 可数}, \forall p \in P \cap M, \exists q \leqq p [q \text{ 是 } (M, P)\text{-泛型的}]$$
+$$P \text{ 是 proper } \iff \forall \theta \text{ 足够大正则基数}, \forall M \prec H_\theta \text{ 可数}, \forall p \in P \cap M, \exists q \leq p [q \text{ 是 } (M, P)\text{-泛型的}]$$
 
 ---
 
@@ -238,7 +238,7 @@ $q$ 是 $(M, P)$-泛型的，如果对任意 $D \in M$，如果 $D \subseteq P$ 
 
 **等价表述**：
 
-$P$ 是proper的，当且仅当对任意可数初等子模型 $M$，对任意 $p \in P \cap M$，存在 $q \leqq p$ 使得 $q$ 与 $M$ 中所有稠密集兼容。
+$P$ 是proper的，当且仅当对任意可数初等子模型 $M$，对任意 $p \in P \cap M$，存在 $q \leq p$ 使得 $q$ 与 $M$ 中所有稠密集兼容。
 
 **等价性**：
 
@@ -251,7 +251,7 @@ $P$ 是proper的，当且仅当对任意可数初等子模型 $M$，对任意 $p
 
 **另一种等价表述**：
 
-$P$ 是proper的，当且仅当对任意可数初等子模型 $M$，对任意 $p \in P \cap M$，存在 $q \leqq p$ 使得 $q$ 与 $M$ 中所有闭无界集兼容。
+$P$ 是proper的，当且仅当对任意可数初等子模型 $M$，对任意 $p \in P \cap M$，存在 $q \leq p$ 使得 $q$ 与 $M$ 中所有闭无界集兼容。
 
 **等价性**：
 

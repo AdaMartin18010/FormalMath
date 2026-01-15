@@ -1,4 +1,4 @@
-# Weierstrass椭圆函数
+﻿# Weierstrass椭圆函数
 
 > > 
 Weierstrass椭圆函数：魏尔斯特拉斯引入的椭圆函数形式。
@@ -40,7 +40,7 @@ Weierstrass椭圆函数：魏尔斯特拉斯引入的椭圆函数形式。
 **定义**：
 
 **Weierstrass $\wp$ 函数**：
-$$\wp(z; \omega_1, \omega_2) = \frac{1}{z^2} + \sum'_{\omega \in \Lambda} \leqft[\frac{1}{(z - \omega)^2} - \frac{1}{\omega^2}\right]$$
+$$\wp(z; \omega_1, \omega_2) = \frac{1}{z^2} + \sum'_{\omega \in \Lambda} \left[\frac{1}{(z - \omega)^2} - \frac{1}{\omega^2}\right]$$
 
 其中：
 - $\Lambda = \{m\omega_1 + n\omega_2: m, n \in \mathbb{Z}\}$ 是周期格
@@ -80,7 +80,7 @@ $$\wp'(z)^2 = 4\wp(z)^3 - g_2\wp(z) - g_3$$
 3. **$\wp$ 函数的加法定理**：
    - **定理**：$\wp(z_1 + z_2)$ 可以用 $\wp(z_1)$、$\wp(z_2)$、$\wp'(z_1)$、$\wp'(z_2)$ 表示
    - **数学表述**：
-     $$\wp(z_1 + z_2) = \frac{1}{4}\leqft[\frac{\wp'(z_1) - \wp'(z_2)}{\wp(z_1) - \wp(z_2)}\right]^2 - \wp(z_1) - \wp(z_2)$$
+     $$\wp(z_1 + z_2) = \frac{1}{4}\left[\frac{\wp'(z_1) - \wp'(z_2)}{\wp(z_1) - \wp(z_2)}\right]^2 - \wp(z_1) - \wp(z_2)$$
 
 ### 2.2 证明方法
 
@@ -133,7 +133,7 @@ $$y^2 = 4x^3 - g_2 x - g_3$$
 **实例2：$\wp$函数的加法公式**
 
 Weierstrass $\wp$函数满足加法公式：
-$$\wp(z_1 + z_2) = \frac{1}{4}\leqft(\frac{\wp'(z_1) - \wp'(z_2)}{\wp(z_1) - \wp(z_2)}\right)^2 - \wp(z_1) - \wp(z_2)$$
+$$\wp(z_1 + z_2) = \frac{1}{4}\left(\frac{\wp'(z_1) - \wp'(z_2)}{\wp(z_1) - \wp(z_2)}\right)^2 - \wp(z_1) - \wp(z_2)$$
 
 这展示了椭圆函数的群结构。
 

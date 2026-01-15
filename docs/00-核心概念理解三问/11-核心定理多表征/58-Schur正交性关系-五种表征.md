@@ -45,7 +45,7 @@ $$\langle \chi_i, \chi_j \rangle = \delta_{ij}$$
 
 ### 1.3 形式化表述
 
-$$\leqft[ G \text{ 有限群 } \land \rho_i, \rho_j \text{ 不可约表示 } \right] \Rightarrow \frac{1}{|G|} \sum_{g \in G} \chi_i(g) \overline{\chi_j(g)} = \delta_{ij}$$
+$$\left[ G \text{ 有限群 } \land \rho_i, \rho_j \text{ 不可约表示 } \right] \Rightarrow \frac{1}{|G|} \sum_{g \in G} \chi_i(g) \overline{\chi_j(g)} = \delta_{ij}$$
 
 ---
 

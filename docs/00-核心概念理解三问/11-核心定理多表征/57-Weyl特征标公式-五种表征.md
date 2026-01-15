@@ -39,7 +39,7 @@ $$\sum_{w \in W} \det(w) e^{w(\rho)(H)} = \prod_{\alpha \in \Phi^+} (e^{\alpha(H
 
 ### 1.3 形式化表述
 
-$$\leqft[ G \text{ 紧连通半单Lie群 } \land V_\lambda \text{ 最高权 } \lambda \text{ 的不可约表示 } \right] \Rightarrow \chi_\lambda(e^H) = \frac{\sum_{w \in W} \det(w) e^{w(\lambda+\rho)(H)}}{\sum_{w \in W} \det(w) e^{w(\rho)(H)}}$$
+$$\left[ G \text{ 紧连通半单Lie群 } \land V_\lambda \text{ 最高权 } \lambda \text{ 的不可约表示 } \right] \Rightarrow \chi_\lambda(e^H) = \frac{\sum_{w \in W} \det(w) e^{w(\lambda+\rho)(H)}}{\sum_{w \in W} \det(w) e^{w(\rho)(H)}}$$
 
 ---
 

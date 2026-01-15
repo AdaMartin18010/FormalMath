@@ -2049,10 +2049,10 @@ ZFC公理体系
   - 因此"整除"关系是偏序关系（不是全序关系，因为不是所有整数对都可比较）
 
 - **在实数集上的"小于等于"关系**：
-  - 自反性：对于任意 $a \in \mathbb{R}$，$a \\leq a$
-  - 反对称性：如果 $a \\leq b$ 且 $b \\leq a$，则 $a = b$
-  - 传递性：如果 $a \\leq b$ 且 $b \\leq c$，则 $a \\leq c$
-  - 完全性：对于任意 $a, b \in \mathbb{R}$，$a \\leq b$ 或 $b \\leq a$
+  - 自反性：对于任意 $a \in \mathbb{R}$，$a \leq a$
+  - 反对称性：如果 $a \leq b$ 且 $b \leq a$，则 $a = b$
+  - 传递性：如果 $a \leq b$ 且 $b \leq c$，则 $a \leq c$
+  - 完全性：对于任意 $a, b \in \mathbb{R}$，$a \leq b$ 或 $b \leq a$
   - 因此"小于等于"关系是全序关系
 
 ### 数系练习题答案 / Number System Exercise Answers
@@ -2960,7 +2960,7 @@ ZFC公理体系
 
 #### P
 
-- **偏序关系 (Partial Order)** - 关系 - $\\leq$ - [定义](#偏序关系--partial-order)
+- **偏序关系 (Partial Order)** - 关系 - $\leq$ - [定义](#偏序关系--partial-order)
 - **幂集 (Power Set)** - 集合论 - $\mathcal{P}$ - [定义](#幂集--power-set)
 - **皮亚诺公理 (Peano Axioms)** - 数系 - [定义](#皮亚诺公理--peano-axioms)
 - **命题 (Proposition)** - 逻辑 - [定义](#命题--proposition)
@@ -3072,7 +3072,7 @@ ZFC公理体系
 - **对称性 (Symmetry)** - [定义](#对称性--symmetry)
 - **传递性 (Transitivity)** - [定义](#传递性--transitivity)
 - **等价关系 (Equivalence Relation)** - [定义](#等价关系--equivalence-relation)
-- **偏序关系 (Partial Order)** - $\\leq$ - [定义](#偏序关系--partial-order)
+- **偏序关系 (Partial Order)** - $\leq$ - [定义](#偏序关系--partial-order)
 - **全序关系 (Total Order)** - [定义](#全序关系--total-order)
 - **逆关系 (Inverse Relation)** - $R^{-1}$ - [定义](#逆关系--inverse-relation)
 
@@ -3110,7 +3110,7 @@ ZFC公理体系
 #### 关系类型相关 / Relation Types Related
 
 - **等价关系 (Equivalence Relation)** - [定义](#等价关系--equivalence-relation)
-- **偏序关系 (Partial Order)** - $\\leq$ - [定义](#偏序关系--partial-order)
+- **偏序关系 (Partial Order)** - $\leq$ - [定义](#偏序关系--partial-order)
 - **全序关系 (Total Order)** - [定义](#全序关系--total-order)
 - **自反性 (Reflexivity)** - [定义](#自反性--reflexivity)
 - **对称性 (Symmetry)** - [定义](#对称性--symmetry)

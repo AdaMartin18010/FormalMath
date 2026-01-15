@@ -87,13 +87,13 @@ Poincaré发现，对于一般的微扰，不变环面会被破坏。
 
 系统满足**非退化条件**，如果：
 
-$$\det\\\leqft(\frac{\partial^2 H_0}{\partial I_i \partial I_j}\right) \neqqqqqq 0$$
+$$\det\left(\frac{\partial^2 H_0}{\partial I_i \partial I_j}\right) \neq 0$$
 
 **Diophantine条件**：
 
 频率向量 $\omega = \frac{\partial H_0}{\partial I}$ 满足**Diophantine条件**，如果存在 $\tau > 0$ 和 $C > 0$ 使得：
 
-$$|k \cdot \omega| \\\geq \frac{C}{|k|^\tau}$$
+$$|k \cdot \omega| \geq \frac{C}{|k|^\tau}$$
 
 对所有非零整数向量 $k$ 成立。
 
@@ -232,7 +232,7 @@ $$\frac{1}{k \cdot \omega}$$
 
 Diophantine条件保证分母不会太小：
 
-$$|k \cdot \omega| \\\geq \frac{C}{|k|^\tau}$$
+$$|k \cdot \omega| \geq \frac{C}{|k|^\tau}$$
 
 ---
 

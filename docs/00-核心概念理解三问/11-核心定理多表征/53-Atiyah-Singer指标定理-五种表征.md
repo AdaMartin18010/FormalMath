@@ -43,7 +43,7 @@ $$\chi(M) = \int_M e(TM)$$
 
 ### 1.3 形式化表述
 
-$$\leqft[ M \text{ 紧致定向流形 } \land D \text{ 椭圆算子 } \right] \Rightarrow \operatorname{ind}(D)_{\text{分析}} = \operatorname{ind}(D)_{\text{拓扑}}$$
+$$\left[ M \text{ 紧致定向流形 } \land D \text{ 椭圆算子 } \right] \Rightarrow \operatorname{ind}(D)_{\text{分析}} = \operatorname{ind}(D)_{\text{拓扑}}$$
 
 ---
 

@@ -336,7 +336,7 @@ FAC论文建立了计算代数簇上同调群的方法。对于射影簇 $X$ 和
 
 Serre有限性定理保证了上同调群的有限维性，这使得维数公式成为可能。对于射影簇 $X$ 和凝聚层 $\mathcal{F}$：
 $$
-\dim H^i(X, \mathcal{F}) < \infty \quad (i \geqq 0)
+\dim H^i(X, \mathcal{F}) < \infty \quad (i \geq 0)
 $$
 
 **对偶定理**：
