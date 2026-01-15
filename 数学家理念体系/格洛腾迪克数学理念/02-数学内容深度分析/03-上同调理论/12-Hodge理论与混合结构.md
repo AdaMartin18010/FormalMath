@@ -1,4 +1,4 @@
-﻿# Hodge理论与混合结构：上同调的几何结构
+# Hodge理论与混合结构：上同调的几何结构
 
 
 ## 📋 目录
@@ -28,6 +28,11 @@
     - [7.2 应用](#72-应用)
   - [八、总结](#八总结)
     - [Hodge理论与混合结构的意义](#hodge理论与混合结构的意义)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、Hodge理论的严格数学表述](#十hodge理论的严格数学表述)
+    - [10.1 Hodge结构的严格定义](#101-hodge结构的严格定义)
+    - [10.2 混合Hodge结构的严格定义](#102-混合hodge结构的严格定义)
 
 ---
 ## 一、Hodge结构
@@ -311,10 +316,72 @@ Grothendieck的影响：
 10. **混合Hodge结构的相容性**：
     $$\text{Gr}_k^W V \text{ 有纯Hodge结构（权 $k$）}$$
 
+11. **Hodge结构的权**：
+    Hodge结构的权：
+    $$w(V) = n \text{（若 $V_C = \bigoplus_{p+q=n} H^{p,q}$）}$$
+
+12. **混合Hodge结构的权分解**：
+    混合Hodge结构的权分解：
+    $$V = \bigoplus_k W_k V, \quad \text{Gr}_k^W V \text{ 有纯Hodge结构（权 $k$）}$$
+
+13. **Hodge结构的极化**：
+    Hodge结构的极化：
+    $$Q: V \times V \to \mathbb{Q}, \quad Q(H^{p,q}, H^{r,s}) = 0 \text{（除非 $(p,q) = (s,r)$）}$$
+
+14. **Hodge结构的周期映射**：
+    Hodge结构的周期映射：
+    $$\mathcal{P}: \mathcal{M} \to \mathcal{D}, \quad \mathcal{M} \text{ 模空间}, \quad \mathcal{D} \text{ 周期域}$$
+
+15. **混合Hodge结构的函子性**：
+    混合Hodge结构的函子性：
+    $$f: X \to Y \Rightarrow f^*: H^i(Y) \to H^i(X) \text{ 保持混合Hodge结构}$$
+
+---
+
+## 十、Hodge理论的严格数学表述
+
+### 10.1 Hodge结构的严格定义
+
+**Hodge结构**：
+
+设 $V$ 是有理向量空间，$V_\mathbb{C} = V \otimes_\mathbb{Q} \mathbb{C}$ 是其复化。$V$ 上的**Hodge结构**（权 $n$）由 $V_\mathbb{C}$ 的分解给出：
+$$V_\mathbb{C} = \bigoplus_{p+q=n} H^{p,q}$$
+
+满足共轭对称性：
+$$\overline{H^{p,q}} = H^{q,p}$$
+
+**极化Hodge结构**：
+
+如果存在双线性形式 $Q: V \times V \to \mathbb{Q}$ 使得：
+$$Q(H^{p,q}, H^{r,s}) = 0 \text{（除非 $(p,q) = (s,r)$）}$$
+
+且 $Q$ 在 $H^{p,q}$ 上正定（对 $p+q=n$），则称Hodge结构是**极化的**。
+
+### 10.2 混合Hodge结构的严格定义
+
+**混合Hodge结构**：
+
+设 $V$ 是有理向量空间。$V$ 上的**混合Hodge结构**由以下数据给出：
+
+1. **权滤过**：$W_\bullet V$ 是 $V$ 的递增滤过
+2. **Hodge滤过**：$F^\bullet V_\mathbb{C}$ 是 $V_\mathbb{C}$ 的递减滤过
+
+满足相容性条件：对每个 $k$，$\text{Gr}_k^W V = W_k V / W_{k-1} V$ 有纯Hodge结构（权 $k$）。
+
+**混合Hodge结构的例子**：
+
+**例9：代数簇的混合Hodge结构**
+
+设 $X$ 是代数簇，$Y \subset X$ 是闭子簇。则 $H^i(X \setminus Y)$ 有混合Hodge结构，权在 $[i, 2i]$ 范围内。
+
+**例10：奇点的混合Hodge结构**
+
+设 $X$ 是代数簇，$x \in X$ 是奇点。则局部上同调 $H^i_{\{x\}}(X)$ 有混合Hodge结构，权在 $[i, 2i]$ 范围内。
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

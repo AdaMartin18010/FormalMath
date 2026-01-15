@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [逻辑Topos与集合论模型：Topos中的模型理论](#逻辑topos与集合论模型topos中的模型理论)
+  - [📋 目录](#-目录)
   - [一、Topos中的模型](#一topos中的模型)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -24,8 +25,15 @@
     - [6.2 逻辑应用](#62-逻辑应用)
   - [七、总结](#七总结)
     - [逻辑Topos与集合论模型的意义](#逻辑topos与集合论模型的意义)
+  - [八、数学公式总结](#八数学公式总结)
+    - [核心公式](#核心公式)
+  - [九、集合论模型的详细数学表述](#九集合论模型的详细数学表述)
+    - [9.1 内部集合的构造](#91-内部集合的构造)
+    - [9.2 内部集合的运算](#92-内部集合的运算)
+    - [9.3 逻辑Topos与集合论模型](#93-逻辑topos与集合论模型)
 
 ---
+
 ## 一、Topos中的模型
 
 ### 1.1 定义
@@ -313,6 +321,7 @@ $$\bigcup_{i \in I} A_i = \text{colim}_{i \in I} A_i$$
 $$\bigcap_{i \in I} A_i = \lim_{i \in I} A_i$$
 
 **数学公式**：
+
 - 幂对象: $$P(A) = \Omega^A = \{f: A \to \Omega\}$$
 - 并集: $$\bigcup_{i \in I} A_i = \text{colim}_{i \in I} A_i$$
 - 交集: $$\bigcap_{i \in I} A_i = \lim_{i \in I} A_i$$
@@ -334,6 +343,7 @@ $$A/{\sim} = \text{coeq}(R \rightrightarrows A)$$
 其中$R$是等价关系。
 
 **数学公式**：
+
 - 笛卡尔积: $$A \times B = \{(a, b) : a \in A, b \in B\}$$
 - 商集: $$A/{\sim} = \text{coeq}(R \rightrightarrows A)$$
 - 等价关系: $$R \hookrightarrow A \times A$$
@@ -353,6 +363,7 @@ $$\mathcal{E} \text{ 逻辑Topos } \iff \text{内部逻辑是经典逻辑（满�
 $$\text{集合论模型} \leftrightarrow \text{层}, \quad \text{逻辑解释} \leftrightarrow \text{几何构造}$$
 
 **数学公式**：
+
 - 逻辑Topos: $$\mathcal{E} \text{ 逻辑Topos } \iff \text{内部逻辑是经典逻辑}$$
 - 模型对应: $$\text{集合论模型} \leftrightarrow \text{层}$$
 - Topos模型: $$\text{Topos提供了集合论的范畴论模型}$$

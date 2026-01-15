@@ -28,6 +28,12 @@
     - [7.2 ∞-Topos](#72--topos)
   - [八、总结](#八总结)
     - [Grothendieck Topos的意义](#grothendieck-topos的意义)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、Grothendieck Topos的详细数学表述](#十grothendieck-topos的详细数学表述)
+    - [10.1 Grothendieck Topos的等价定义](#101-grothendieck-topos的等价定义)
+    - [10.2 有限极限与幂对象](#102-有限极限与幂对象)
+    - [10.3 子对象分类器与内部逻辑](#103-子对象分类器与内部逻辑)
 
 ---
 
@@ -376,6 +382,7 @@ $$\mathcal{E} \text{ 是Grothendieck Topos } \iff \mathcal{E} \cong \text{Sh}(\m
 $$(\mathcal{C}, J) = \text{site}$$
 
 **数学公式**：
+
 - 等价定义: $$\mathcal{E} \cong \text{Sh}(\mathcal{C}, J) \text{ 对某个site } (\mathcal{C}, J)$$
 - site: $$(\mathcal{C}, J) = \text{site}$$
 - Grothendieck Topos: $$\mathcal{E} = \text{Sh}(\mathcal{C}, J)$$
@@ -387,6 +394,7 @@ $$(\mathcal{C}, J) = \text{site}$$
 **有限极限**：
 
 Grothendieck Topos有所有**有限极限**：
+
 - **积**: $A \times B$
 - **等化子**: $\text{eq}(f, g)$
 - **终对象**: $1$
@@ -397,6 +405,7 @@ Grothendieck Topos有**幂对象**：
 $$\forall A, B \in \mathcal{E}, \exists B^A \in \mathcal{E}, \quad \text{Hom}(C \times A, B) \cong \text{Hom}(C, B^A)$$
 
 **数学公式**：
+
 - 有限极限: $$\mathcal{E} \text{ 有所有有限极限}$$
 - 幂对象: $$\text{Hom}(C \times A, B) \cong \text{Hom}(C, B^A)$$
 - 指数对象: $$B^A = \text{指数对象}$$
@@ -416,6 +425,7 @@ $$\text{Sub}(X) \cong \text{Hom}(X, \Omega)$$
 $$\text{内部逻辑} = \text{几何逻辑（在Grothendieck Topos中）}$$
 
 **数学公式**：
+
 - 子对象分类器: $$\text{Sub}(X) \cong \text{Hom}(X, \Omega)$$
 - 内部逻辑: $$\text{内部逻辑} = \text{几何逻辑}$$
 - 真值对象: $$\Omega = \text{真值对象}$$

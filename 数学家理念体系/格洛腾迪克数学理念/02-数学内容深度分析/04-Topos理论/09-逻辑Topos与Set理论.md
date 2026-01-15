@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [逻辑Topos与Set理论：集合论基础](#逻辑topos与set理论集合论基础)
+  - [📋 目录](#-目录)
   - [一、Set范畴](#一set范畴)
     - [1.1 定义](#11-定义)
     - [1.2 Topos结构](#12-topos结构)
@@ -27,8 +28,15 @@
     - [7.2 应用](#72-应用)
   - [八、总结](#八总结)
     - [逻辑Topos与Set理论的意义](#逻辑topos与set理论的意义)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、逻辑Topos与Set理论的详细数学表述](#十逻辑topos与set理论的详细数学表述)
+    - [10.1 逻辑Topos的等价定义](#101-逻辑topos的等价定义)
+    - [10.2 Set的内部逻辑与Grothendieck宇宙](#102-set的内部逻辑与grothendieck宇宙)
+    - [10.3 内部ZFC的形式化](#103-内部zfc的形式化)
 
 ---
+
 ## 一、Set范畴
 
 ### 1.1 定义
@@ -46,6 +54,7 @@ Set = 集合范畴
 - 内部逻辑：经典逻辑
 - 应用广泛
 ```
+
 ---
 
 ### 1.2 Topos结构
@@ -63,6 +72,7 @@ Set的性质：
 - 基础Topos
 - 应用广泛
 ```
+
 ---
 
 ## 二、内部集合论
@@ -84,6 +94,7 @@ Topos E
 - 内部逻辑
 - 应用广泛
 ```
+
 ---
 
 ### 2.2 公理系统
@@ -97,6 +108,7 @@ Topos E中的内部集合论：
 - 几何逻辑成立
 - 应用广泛
 ```
+
 ---
 
 ## 三、逻辑Topos
@@ -114,6 +126,7 @@ Topos E是逻辑Topos，若：
 - 特殊Topos
 - 应用广泛
 ```
+
 ---
 
 ### 3.2 例子
@@ -130,6 +143,7 @@ Topos E是逻辑Topos，若：
 - 统一框架
 - 应用广泛
 ```
+
 ---
 
 ## 四、Grothendieck宇宙
@@ -151,6 +165,7 @@ Grothendieck宇宙U：
 - 集合论基础
 - 应用广泛
 ```
+
 ---
 
 ### 4.2 应用
@@ -163,6 +178,7 @@ Grothendieck宇宙U：
 - 避免集合论悖论
 - 应用广泛
 ```
+
 ---
 
 ## 五、在Topos理论中的应用
@@ -177,6 +193,7 @@ Grothendieck宇宙U：
 - 大范畴理论
 - 应用广泛
 ```
+
 ---
 
 ### 5.2 逻辑应用
@@ -189,6 +206,7 @@ Grothendieck宇宙U：
 - 模型理论
 - 应用广泛
 ```
+
 ---
 
 ## 六、Grothendieck的贡献
@@ -207,6 +225,7 @@ Grothendieck的贡献：
 - 现代数学基础
 - 应用广泛
 ```
+
 ---
 
 ### 6.2 影响
@@ -219,6 +238,7 @@ Grothendieck的贡献：
 - Topos理论
 - 应用广泛
 ```
+
 ---
 
 ## 七、现代发展
@@ -236,6 +256,7 @@ Grothendieck的贡献：
     ↓
 ∞-范畴
 ```
+
 ---
 
 ### 7.2 应用
@@ -248,6 +269,7 @@ Grothendieck的贡献：
 - ∞-范畴
 - 现代研究
 ```
+
 ---
 
 ## 八、总结
@@ -342,6 +364,7 @@ $$\mathcal{E} \text{ 逻辑Topos } \iff \Omega = 2, \quad \text{排中律成立}
 $$P \lor \neg P = \text{true}$$
 
 **数学公式**：
+
 - 逻辑Topos: $$\mathcal{E} \text{ 逻辑Topos } \iff \Omega = 2$$
 - 排中律: $$P \lor \neg P = \text{true}$$
 - 真值对象: $$\Omega = 2 = \{\text{true}, \text{false}\}$$
@@ -361,6 +384,7 @@ $$\text{Set的内部逻辑是经典逻辑，满足所有ZFC公理（在 $\mathca
 $$\mathcal{U} \text{ 宇宙 } \iff \mathcal{U} \text{ 满足ZFC公理（在 $\mathcal{U}$ 中）}$$
 
 **数学公式**：
+
 - Set的内部逻辑: $$\text{Set的内部逻辑是经典逻辑}$$
 - Grothendieck宇宙: $$\mathcal{U} \text{ 宇宙 } \iff \mathcal{U} \text{ 满足ZFC公理}$$
 - ZFC公理: $$\text{ZFC公理在 $\mathcal{U}$ 中成立}$$
@@ -380,6 +404,7 @@ $$\text{在Topos $\mathcal{E}$ 中，可以形式化内部ZFC（不一定全部�
 $$\text{逻辑Topos } \Rightarrow \Omega = 2, \quad \text{排中律成立}, \quad \text{选择公理可能不成立}$$
 
 **数学公式**：
+
 - 内部ZFC: $$\text{在Topos $\mathcal{E}$ 中，可以形式化内部ZFC}$$
 - 选择公理: $$\text{选择公理在一般Topos中可能不成立}$$
 - Topos与集合论: $$\text{Topos理论提供集合论的范畴论替代}$$

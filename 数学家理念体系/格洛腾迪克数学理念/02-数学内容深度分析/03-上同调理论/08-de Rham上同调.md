@@ -321,10 +321,93 @@ Grothendieck的贡献：
 10. **特征p情况**：
     $$\text{在特征 $p$ 上，$d^p = 0$，结构更复杂}$$
 
+11. **de Rham上同调的定义**：
+    de Rham上同调的定义：
+    $$H_{\text{dR}}^i(X/k) = H^i(\Omega_{X/k}^\bullet) = \ker(d^i) / \text{im}(d^{i-1})$$
+
+12. **Kähler微分的构造**：
+    Kähler微分的构造：
+    $$\Omega_{X/k}^1 = \Delta^*(\mathcal{I}/\mathcal{I}^2), \quad \Delta: X \to X \times_k X$$
+
+13. **de Rham定理**：
+    de Rham定理：
+    $$H_{\text{dR}}^i(X, \mathbb{R}) \cong H_{\text{sing}}^i(X(\mathbb{C}), \mathbb{R}) \text{（$k = \mathbb{C}$）}$$
+
+14. **Hodge分解**：
+    Hodge分解：
+    $$H_{\text{dR}}^n(X, \mathbb{C}) = \bigoplus_{p+q=n} H^{p,q}(X), \quad H^{p,q} = H^q(X, \Omega_X^p)$$
+
+15. **晶体比较定理**：
+    晶体比较定理：
+    $$H_{\text{cris}}^i(X/W) \otimes_W K \cong H_{\text{dR}}^i(X/K)$$
+
+---
+
+## 十一、de Rham上同调的详细数学表述
+
+### 11.1 de Rham上同调的定义
+
+**定义**：
+
+**de Rham上同调**定义为：
+$$H_{\text{dR}}^i(X/k) = H^i(\Omega_{X/k}^\bullet) = \ker(d^i) / \text{im}(d^{i-1})$$
+
+其中$\Omega_{X/k}^\bullet$是de Rham复形。
+
+**Kähler微分**：
+
+**Kähler微分**$\Omega_{X/k}^1$定义为：
+$$\Omega_{X/k}^1 = \Delta^*(\mathcal{I}/\mathcal{I}^2), \quad \Delta: X \to X \times_k X$$
+
+**数学公式**：
+- de Rham上同调: $$H_{\text{dR}}^i(X/k) = H^i(\Omega_{X/k}^\bullet)$$
+- Kähler微分: $$\Omega_{X/k}^1 = \Delta^*(\mathcal{I}/\mathcal{I}^2)$$
+- de Rham复形: $$\Omega_{X/k}^\bullet: \mathcal{O}_X \xrightarrow{d} \Omega_{X/k}^1 \xrightarrow{d} \cdots$$
+
+---
+
+### 11.2 de Rham定理与Hodge分解
+
+**de Rham定理**：
+
+对于$k = \mathbb{C}$，**de Rham定理**断言：
+$$H_{\text{dR}}^i(X, \mathbb{R}) \cong H_{\text{sing}}^i(X(\mathbb{C}), \mathbb{R}) \text{（$k = \mathbb{C}$）}$$
+
+**Hodge分解**：
+
+**Hodge分解**将de Rham上同调分解为：
+$$H_{\text{dR}}^n(X, \mathbb{C}) = \bigoplus_{p+q=n} H^{p,q}(X), \quad H^{p,q} = H^q(X, \Omega_X^p)$$
+
+**数学公式**：
+- de Rham定理: $$H_{\text{dR}}^i(X, \mathbb{R}) \cong H_{\text{sing}}^i(X(\mathbb{C}), \mathbb{R})$$
+- Hodge分解: $$H_{\text{dR}}^n(X, \mathbb{C}) = \bigoplus_{p+q=n} H^{p,q}(X)$$
+- Hodge数: $$H^{p,q} = H^q(X, \Omega_X^p)$$
+
+---
+
+### 11.3 晶体比较定理
+
+**晶体比较定理**：
+
+**晶体比较定理**连接晶体上同调与de Rham上同调：
+$$H_{\text{cris}}^i(X/W) \otimes_W K \cong H_{\text{dR}}^i(X/K)$$
+
+其中$W$是Witt环，$K = \text{Frac}(W)$。
+
+**特征p情况**：
+
+在**特征p**中，de Rham上同调的结构更复杂：
+$$\text{在特征 $p$ 上，$d^p = 0$，结构更复杂}$$
+
+**数学公式**：
+- 晶体比较: $$H_{\text{cris}}^i(X/W) \otimes_W K \cong H_{\text{dR}}^i(X/K)$$
+- 特征p: $$\text{在特征 $p$ 上，$d^p = 0$}$$
+- 应用: $$\text{de Rham上同调连接代数几何与分析几何}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

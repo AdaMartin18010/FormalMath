@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [连续范畴与Locales：Topos的几何化](#连续范畴与localestopos的几何化)
+  - [📋 目录](#-目录)
   - [一、Locales](#一locales)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -27,8 +28,15 @@
     - [7.2 应用](#72-应用)
   - [八、总结](#八总结)
     - [连续范畴与Locales的意义](#连续范畴与locales的意义)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、连续范畴与Locales的详细数学表述](#十连续范畴与locales的详细数学表述)
+    - [10.1 Locale的框架与态射](#101-locale的框架与态射)
+    - [10.2 Locale与拓扑空间的对应](#102-locale与拓扑空间的对应)
+    - [10.3 连续范畴的定义](#103-连续范畴的定义)
 
 ---
+
 ## 一、Locales
 
 ### 1.1 定义
@@ -47,6 +55,7 @@ Locale = 完备格L
 - 点集论替代
 - 应用广泛
 ```
+
 ---
 
 ### 1.2 性质
@@ -59,6 +68,7 @@ Locale = 完备格L
 - 范畴结构
 - 应用广泛
 ```
+
 ---
 
 ## 二、连续范畴
@@ -77,6 +87,7 @@ Locale = 完备格L
 - Topos的特例
 - 应用广泛
 ```
+
 ---
 
 ### 2.2 性质
@@ -89,6 +100,7 @@ Locale = 完备格L
 - 内部逻辑
 - 应用广泛
 ```
+
 ---
 
 ## 三、Locale的Topos
@@ -108,6 +120,7 @@ Sh(L) = L的层范畴
 - 内部逻辑
 - 应用广泛
 ```
+
 ---
 
 ### 3.2 性质
@@ -120,6 +133,7 @@ Sh(L) = L的层范畴
 - 逻辑结构
 - 应用广泛
 ```
+
 ---
 
 ## 四、与拓扑空间的关系
@@ -141,6 +155,7 @@ Top → Loc
 - 伴随
 - 应用广泛
 ```
+
 ---
 
 ### 4.2 点
@@ -157,6 +172,7 @@ p: L → 2
 - 点集论观点
 - 应用广泛
 ```
+
 ---
 
 ## 五、应用
@@ -172,6 +188,7 @@ p: L → 2
 - 模型理论
 - 应用广泛
 ```
+
 ---
 
 ### 5.2 几何应用
@@ -184,6 +201,7 @@ p: L → 2
 - 几何结构
 - 应用广泛
 ```
+
 ---
 
 ## 六、Grothendieck的贡献
@@ -202,6 +220,7 @@ Grothendieck的贡献：
 - 现代数学
 - 应用广泛
 ```
+
 ---
 
 ### 6.2 影响
@@ -214,6 +233,7 @@ Grothendieck的贡献：
 - 几何逻辑
 - 应用广泛
 ```
+
 ---
 
 ## 七、现代发展
@@ -231,6 +251,7 @@ Locale
     ↓
 高阶结构
 ```
+
 ---
 
 ### 7.2 应用
@@ -242,6 +263,7 @@ Locale
 - ∞-范畴
 - 现代研究
 ```
+
 ---
 
 ## 八、总结
@@ -335,6 +357,7 @@ $$a \land \bigvee_i b_i = \bigvee_i (a \land b_i)$$
 $$f(a \land b) = f(a) \land f(b), \quad f\left(\bigvee_i a_i\right) = \bigvee_i f(a_i)$$
 
 **数学公式**：
+
 - Locale框架: $$L = \text{完备格}, \quad a \land \bigvee_i b_i = \bigvee_i (a \land b_i)$$
 - Locale态射: $$f(a \land b) = f(a) \land f(b), \quad f\left(\bigvee_i a_i\right) = \bigvee_i f(a_i)$$
 - Locale范畴: $$\text{Loc} = \text{Locale的范畴}$$
@@ -354,6 +377,7 @@ Locale与拓扑空间对应：
 $$\text{Locale } L \leftrightarrow \text{Topos Sh}(L)$$
 
 **数学公式**：
+
 - 伴随关系: $$\Omega \dashv \text{pt}, \quad \Omega: \text{Top} \to \text{Loc}, \quad \text{pt}: \text{Loc} \to \text{Top}$$
 - 对应关系: $$\text{Locale } L \leftrightarrow \text{Topos Sh}(L)$$
 - 开集格: $$\Omega(X) = \text{开集格}$$
@@ -373,6 +397,7 @@ $$\mathcal{C} \text{ 连续 } \iff \mathcal{C} \text{ 有所有余极限且满�
 $$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
 
 **数学公式**：
+
 - 连续范畴: $$\mathcal{C} \text{ 连续 } \iff \mathcal{C} \text{ 有所有余极限}$$
 - 与Topos关系: $$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
 - 连续性质: $$\text{连续范畴满足特定条件}$$

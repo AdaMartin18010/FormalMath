@@ -336,10 +336,88 @@ EGA I-IV：
 10. **Krull维数有限性**：
     $$X \text{ Noether } \Rightarrow \dim X < \infty$$
 
+11. **Noether概形的等价定义**：
+    Noether概形的等价定义：
+    $$X \text{ Noether } \iff |X| \text{ Noether } \land O_{X,x} \text{ Noether（对所有 $x$）}$$
+
+12. **有限型的局部刻画**：
+    有限型的局部刻画：
+    $$\text{局部：} X|_U \cong \text{Spec}(R[x_1, \ldots, x_n]/I) \text{（有限生成）}$$
+
+13. **有限概形的等价定义**：
+    有限概形的等价定义：
+    $$f: X \to S \text{ 有限 } \iff \text{有限型} + \text{固有} + \text{拟有限}$$
+
+14. **上同调有限性**：
+    上同调有限性：
+    $$X \text{ Noether } \Rightarrow H^i(X, \mathcal{F}) \text{ 有限维（$\mathcal{F}$ 凝聚）}$$
+
+15. **有限覆盖的存在性**：
+    有限覆盖的存在性：
+    $$X \text{ Noether } \Rightarrow \exists \text{ 有限仿射覆盖 } \{U_i\}$$
+
+---
+
+## 十一、Noether概形与有限性的详细数学表述
+
+### 11.1 Noether概形的等价定义
+
+**等价定义**：
+
+概形$X$是**Noether概形**，如果：
+$$X \text{ Noether } \iff |X| \text{ Noether } \land O_{X,x} \text{ Noether（对所有 $x$）}$$
+
+**Noether拓扑空间**：
+
+拓扑空间$|X|$是**Noether的**，如果所有开集都是拟紧的。
+
+**数学公式**：
+- Noether概形: $$X \text{ Noether } \iff |X| \text{ Noether } \land O_{X,x} \text{ Noether}$$
+- Noether拓扑: $$|X| \text{ Noether } \iff \text{所有开集拟紧}$$
+- Noether环: $$R \text{ Noether } \iff \text{所有理想有限生成}$$
+
+---
+
+### 11.2 有限型的局部刻画与有限概形
+
+**有限型的局部刻画**：
+
+态射$f: X \to S$是**有限型的**，如果局部地：
+$$\text{局部：} X|_U \cong \text{Spec}(R[x_1, \ldots, x_n]/I) \text{（有限生成）}$$
+
+**有限概形的等价定义**：
+
+态射$f: X \to S$是**有限的**，如果：
+$$f: X \to S \text{ 有限 } \iff \text{有限型} + \text{固有} + \text{拟有限}$$
+
+**数学公式**：
+- 有限型: $$f: X \to S \text{ 有限型 } \iff \text{局部有限型} + \text{拟紧}$$
+- 有限: $$f: X \to S \text{ 有限 } \iff \text{有限型} + \text{固有} + \text{拟有限}$$
+- 有限表示: $$f: X \to S \text{ 有限表示 } \iff \text{有限型} + \text{拟有限}$$
+
+---
+
+### 11.3 上同调有限性与有限覆盖
+
+**上同调有限性**：
+
+对于Noether概形$X$和凝聚层$\mathcal{F}$，上同调是**有限维的**：
+$$X \text{ Noether } \Rightarrow H^i(X, \mathcal{F}) \text{ 有限维（$\mathcal{F}$ 凝聚）}$$
+
+**有限覆盖的存在性**：
+
+Noether概形有**有限仿射覆盖**：
+$$X \text{ Noether } \Rightarrow \exists \text{ 有限仿射覆盖 } \{U_i\}$$
+
+**数学公式**：
+- 上同调有限性: $$H^i(X, \mathcal{F}) \text{ 有限维（$\mathcal{F}$ 凝聚）}$$
+- 有限覆盖: $$X = \bigcup_{i=1}^n U_i, \quad U_i \cong \text{Spec}(R_i)$$
+- Krull维数: $$\dim X < \infty$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

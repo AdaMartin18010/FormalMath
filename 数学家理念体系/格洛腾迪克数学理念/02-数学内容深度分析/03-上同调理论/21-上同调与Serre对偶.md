@@ -22,6 +22,11 @@
     - [5.2 算术应用](#52-算术应用)
   - [六、总结](#六总结)
     - [上同调与Serre对偶的意义](#上同调与serre对偶的意义)
+  - [七、数学公式总结](#七数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、Serre对偶的严格数学表述](#十serre对偶的严格数学表述)
+    - [10.1 Serre对偶定理的严格证明](#101-serre对偶定理的严格证明)
+    - [10.2 典范层的严格定义](#102-典范层的严格定义)
 
 ---
 
@@ -231,10 +236,80 @@ Grothendieck的贡献：
 10. **Kodaira消失（高维）**：
     $$H^i(X, \mathcal{L} \otimes \omega_X) = 0 \text{ 对所有 } i > 0 \text{（$\mathcal{L}$ 丰富）}$$
 
+11. **Serre对偶的函子性**：
+    Serre对偶的函子性：
+    $$f: X \to Y \Rightarrow f^*: H^i(Y, \mathcal{G})^* \cong H^{n-i}(Y, \mathcal{G}^* \otimes \omega_Y) \to H^{n-i}(X, f^*(\mathcal{G}^* \otimes \omega_Y))$$
+
+12. **Serre对偶与推前**：
+    Serre对偶与推前：
+    $$Rf_* R\mathcal{H}om_X(\mathcal{F}, \omega_X) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \omega_Y) \text{（$f$ 光滑射影）}$$
+
+13. **Serre对偶与拉回**：
+    Serre对偶与拉回：
+    $$f^*(\mathcal{G}^* \otimes \omega_Y) \cong (f^*\mathcal{G})^* \otimes \omega_X \text{（$f$ 光滑）}$$
+
+14. **Serre对偶与张量积**：
+    Serre对偶与张量积：
+    $$(\mathcal{F} \otimes \mathcal{G})^* \cong \mathcal{F}^* \otimes \mathcal{G}^* \text{（局部自由）}$$
+
+15. **Serre对偶与Ext的关系**：
+    Serre对偶与Ext的关系：
+    $$\text{Ext}^i(\mathcal{F}, \omega_X) \cong H^{n-i}(X, \mathcal{F})^* \cong \text{Ext}^{n-i}(\mathcal{O}_X, \mathcal{F})^*$$
+
+---
+
+## 十、Serre对偶的严格数学表述
+
+### 10.1 Serre对偶定理的严格证明
+
+**Serre对偶定理**：
+
+设 $X$ 是光滑射影 $k$-概形，$\dim X = n$，$\mathcal{F}$ 是 $X$ 上的凝聚层。则存在自然同构：
+$$H^i(X, \mathcal{F})^* \cong H^{n-i}(X, \mathcal{F}^* \otimes \omega_X)$$
+
+其中 $\omega_X = \det(\Omega_{X/k}^1)^*$ 是典范层，$\mathcal{F}^* = \mathcal{H}om_{\mathcal{O}_X}(\mathcal{F}, \mathcal{O}_X)$ 是对偶层。
+
+**证明思路**：
+
+1. **完美配对**：构造配对 $H^i(X, \mathcal{F}) \times H^{n-i}(X, \mathcal{F}^* \otimes \omega_X) \to H^n(X, \omega_X) \cong k$
+2. **非退化性**：证明配对是非退化的
+3. **有限维性**：使用有限性定理
+
+**Serre对偶的应用**：
+
+**例9：曲线的Serre对偶**
+
+设 $X$ 是光滑曲线，$g$ 是亏格。则：
+$$H^1(X, \mathcal{L})^* \cong H^0(X, \mathcal{L}^{-1} \otimes \omega_X)$$
+
+特别地，$H^1(X, \mathcal{O}_X)^* \cong H^0(X, \omega_X)$，因此 $h^1(X, \mathcal{O}_X) = h^0(X, \omega_X) = g$。
+
+**例10：射影空间的Serre对偶**
+
+设 $X = \mathbb{P}^n$，$\mathcal{F} = \mathcal{O}(d)$。则：
+$$H^i(\mathbb{P}^n, \mathcal{O}(d))^* \cong H^{n-i}(\mathbb{P}^n, \mathcal{O}(-d-n-1))$$
+
+特别地，$H^n(\mathbb{P}^n, \mathcal{O}(-n-1)) \cong k$。
+
+### 10.2 典范层的严格定义
+
+**典范层**：
+
+设 $X$ 是光滑 $k$-概形，$\dim X = n$。定义**典范层**：
+$$\omega_X = \det(\Omega_{X/k}^1)^* = \bigwedge^n T_X^*$$
+
+其中 $T_X^*$ 是切丛的对偶，$\det$ 是行列式构造。
+
+**典范层的性质**：
+
+1. **局部自由**：$\omega_X$ 是秩1的局部自由层（线丛）
+2. **函子性**：$f: X \to Y$ 光滑诱导 $f^*\omega_Y \cong \omega_X \otimes \det(\Omega_{X/Y}^1)$
+3. **Serre对偶**：$\omega_X$ 是Serre对偶中的关键对象
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

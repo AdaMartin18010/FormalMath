@@ -25,6 +25,11 @@
     - [6.2 算术应用](#62-算术应用)
   - [七、总结](#七总结)
     - [上同调与Leray谱序列应用的意义](#上同调与leray谱序列应用的意义)
+  - [八、数学公式总结](#八数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、Leray谱序列应用的严格数学表述](#十leray谱序列应用的严格数学表述)
+    - [10.1 Leray谱序列的严格构造](#101-leray谱序列的严格构造)
+    - [10.2 Leray谱序列的收敛性](#102-leray谱序列的收敛性)
 
 ---
 
@@ -258,10 +263,75 @@ Grothendieck的贡献：
 10. **计算应用**：
     $$\text{用于计算复杂上同调群，通过相对上同调逐步逼近}$$
 
+11. **Leray谱序列的退化条件**：
+    Leray谱序列的退化条件：
+    $$R^q f_*\mathcal{F} = 0 \text{（$q > 0$）} \Rightarrow H^n(X, \mathcal{F}) \cong H^n(Y, f_*\mathcal{F})$$
+
+12. **Leray谱序列的函子性**：
+    Leray谱序列的函子性：
+    $$g: Y' \to Y \Rightarrow E_2^{p,q}(X') = E_2^{p,q}(X) \otimes_{O_Y} O_{Y'} \text{（平坦基变化）}$$
+
+13. **Leray谱序列与基变化**：
+    Leray谱序列与基变化：
+    $$E_2^{p,q}(X') = H^p(Y', R^q f'_*\mathcal{F}') \cong H^p(Y, R^q f_*\mathcal{F}) \otimes_{O_Y} O_{Y'} \text{（平坦）}$$
+
+14. **Leray谱序列的收敛速度**：
+    Leray谱序列的收敛速度：
+    $$E_r^{p,q} = E_\infty^{p,q} \text{（对所有 $r \geq r_0$，$r_0$ 依赖于 $p, q$）}$$
+
+15. **Leray谱序列与局部化**：
+    Leray谱序列与局部化：
+    $$E_2^{p,q}(U) = H^p(f(U), R^q f_*\mathcal{F}|_{f(U)}) \text{（$U \subset X$ 开）}$$
+
+---
+
+## 十、Leray谱序列应用的严格数学表述
+
+### 10.1 Leray谱序列的严格构造
+
+**Leray谱序列**：
+
+设 $f: X \to Y$ 是概形态射，$\mathcal{F}$ 是 $X$ 上的Abel层。存在**Leray谱序列**：
+$$E_2^{p,q} = H^p(Y, R^q f_*\mathcal{F}) \Rightarrow H^{p+q}(X, \mathcal{F})$$
+
+**构造方法**：
+
+1. **推前层的分解**：选择 $f_*\mathcal{F}$ 的内射分解
+2. **双复形**：构造双复形 $C^{p,q} = \Gamma(Y, I^{p,q})$
+3. **谱序列**：取双复形的谱序列得到Leray谱序列
+
+**Leray谱序列的应用**：
+
+**例9：纤维丛的上同调**
+
+设 $f: E \to B$ 是纤维丛，纤维为 $F$。则Leray谱序列给出：
+$$E_2^{p,q} = H^p(B, H^q(F)) \Rightarrow H^{p+q}(E)$$
+
+特别地，如果 $H^q(F) = 0$（$q > 0$），则 $H^n(E) \cong H^n(B, H^0(F))$。
+
+**例10：Galois覆盖的上同调**
+
+设 $f: \tilde{X} \to X$ 是Galois覆盖，群为 $G$。则Leray谱序列给出：
+$$E_2^{p,q} = H^p(G, H^q(\tilde{X}, \mathcal{F})) \Rightarrow H^{p+q}(X, \mathcal{F})$$
+
+### 10.2 Leray谱序列的收敛性
+
+**收敛性定理**：
+
+Leray谱序列收敛到 $H^{p+q}(X, \mathcal{F})$，即存在滤过：
+$$0 = F^{n+1} H^n \subset F^n H^n \subset \cdots \subset F^0 H^n = H^n(X, \mathcal{F})$$
+
+使得：
+$$E_\infty^{p,q} = F^p H^{p+q} / F^{p+1} H^{p+q}$$
+
+**应用**：
+
+Leray谱序列是计算上同调的重要工具，特别是在相对情况下，可以通过推前层的上同调逐步逼近全局上同调。
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

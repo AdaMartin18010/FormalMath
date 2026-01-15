@@ -1,4 +1,4 @@
-﻿# Grothendieck谱序列：上同调计算的强大工具
+# Grothendieck谱序列：上同调计算的强大工具
 
 
 ## 📋 目录
@@ -28,6 +28,12 @@
     - [7.2 应用](#72-应用)
   - [八、总结](#八总结)
     - [Grothendieck谱序列的意义](#grothendieck谱序列的意义)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
+  - [十一、Grothendieck谱序列的详细数学表述](#十一grothendieck谱序列的详细数学表述)
+    - [11.1 Grothendieck谱序列的定义](#111-grothendieck谱序列的定义)
+    - [11.2 谱序列的收敛与滤过](#112-谱序列的收敛与滤过)
+    - [11.3 谱序列的应用](#113-谱序列的应用)
 
 ---
 
@@ -343,10 +349,91 @@ Grothendieck的贡献：
 10. **退化条件**：
     $$\text{若 } E_r^{p,q} = 0 \text{ 对所有 } p + q = n, p \neq p_0, \text{ 则 } H^n \cong E_r^{p_0,n-p_0}$$
 
+11. **Grothendieck谱序列的定义**：
+    Grothendieck谱序列的定义：
+    $$E_2^{p,q} = R^p F(R^q G(A)) \Rightarrow R^{p+q}(F \circ G)(A)$$
+
+12. **Leray谱序列的定义**：
+    Leray谱序列的定义：
+    $$E_2^{p,q} = H^p(Y, R^q f_* \mathcal{F}) \Rightarrow H^{p+q}(X, \mathcal{F})$$
+
+13. **谱序列的收敛**：
+    谱序列的收敛：
+    $$E_r^{p,q} \Rightarrow H^{p+q}, \quad E_\infty^{p,q} = F^p H^{p+q} / F^{p+1} H^{p+q}$$
+
+14. **谱序列的滤过**：
+    谱序列的滤过：
+    $$F^p H^n = \text{im}(H^n(X_{\leq p}, \mathcal{F}) \to H^n(X, \mathcal{F}))$$
+
+15. **谱序列的应用**：
+    谱序列的应用：
+    $$\text{计算上同调、研究函子复合、研究群上同调}$$
+
+---
+
+## 十一、Grothendieck谱序列的详细数学表述
+
+### 11.1 Grothendieck谱序列的定义
+
+**定义**：
+
+对于函子复合$F \circ G$，**Grothendieck谱序列**为：
+$$E_2^{p,q} = R^p F(R^q G(A)) \Rightarrow R^{p+q}(F \circ G)(A)$$
+
+**Leray谱序列**：
+
+对于态射$f: X \to Y$和层$\mathcal{F}$，**Leray谱序列**为：
+$$E_2^{p,q} = H^p(Y, R^q f_* \mathcal{F}) \Rightarrow H^{p+q}(X, \mathcal{F})$$
+
+**数学公式**：
+- Grothendieck谱序列: $$E_2^{p,q} = R^p F(R^q G(A)) \Rightarrow R^{p+q}(F \circ G)(A)$$
+- Leray谱序列: $$E_2^{p,q} = H^p(Y, R^q f_* \mathcal{F}) \Rightarrow H^{p+q}(X, \mathcal{F})$$
+- 收敛: $$E_r^{p,q} \Rightarrow H^{p+q}$$
+
+---
+
+### 11.2 谱序列的收敛与滤过
+
+**收敛**：
+
+谱序列**收敛**到$H^{p+q}$：
+$$E_r^{p,q} \Rightarrow H^{p+q}, \quad E_\infty^{p,q} = F^p H^{p+q} / F^{p+1} H^{p+q}$$
+
+**滤过**：
+
+**滤过**定义为：
+$$F^p H^n = \text{im}(H^n(X_{\leq p}, \mathcal{F}) \to H^n(X, \mathcal{F}))$$
+
+**数学公式**：
+- 收敛: $$E_r^{p,q} \Rightarrow H^{p+q}$$
+- 滤过: $$F^p H^n = \text{im}(H^n(X_{\leq p}, \mathcal{F}) \to H^n(X, \mathcal{F}))$$
+- 关系: $$E_\infty^{p,q} = F^p H^{p+q} / F^{p+1} H^{p+q}$$
+
+---
+
+### 11.3 谱序列的应用
+
+**应用**：
+
+谱序列在以下领域有重要应用：
+- **计算上同调**：通过谱序列计算复杂上同调群
+- **研究函子复合**：研究导出函子的复合
+- **研究群上同调**：通过Hochschild-Serre谱序列研究群上同调
+
+**退化条件**：
+
+在某些条件下，谱序列**退化**：
+$$\text{若 } E_r^{p,q} = 0 \text{ 对所有 } p + q = n, p \neq p_0, \text{ 则 } H^n \cong E_r^{p_0,n-p_0}$$
+
+**数学公式**：
+- 应用: $$\text{计算上同调、研究函子复合、研究群上同调}$$
+- 退化条件: $$\text{若 } E_r^{p,q} = 0 \text{ 对所有 } p + q = n, p \neq p_0, \text{ 则 } H^n \cong E_r^{p_0,n-p_0}$$
+- 谱序列: $$\text{谱序列是研究上同调的重要工具}$$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

@@ -229,10 +229,68 @@ Grothendieck的贡献：
 10. **紧支撑上同调**：
     $$H_c^i(X, \mathcal{F}) = \varinjlim_{Z \subseteq X \text{ 紧}} H^i_Z(X, \mathcal{F})$$
 
+11. **Mayer-Vietoris序列的函子性**：
+    Mayer-Vietoris序列的函子性：
+    $$f: X \to Y \Rightarrow f^*: H^i(Y, \mathcal{F}) \to H^i(X, f^*\mathcal{F}) \text{ 保持Mayer-Vietoris序列}$$
+
+12. **Mayer-Vietoris序列与基变化**：
+    Mayer-Vietoris序列与基变化：
+    $$H^i(X', \mathcal{F}') \cong H^i(X, \mathcal{F}) \otimes_k k' \text{（$X' = X \times_k k'$）}$$
+
+13. **Mayer-Vietoris序列与局部化**：
+    Mayer-Vietoris序列与局部化：
+    $$H^i(X, \mathcal{F}) \to H^i(U, \mathcal{F}|_U) \oplus H^i(V, \mathcal{F}|_V) \to H^i(U \cap V, \mathcal{F}|_{U \cap V})$$
+
+14. **Mayer-Vietoris序列与推前**：
+    Mayer-Vietoris序列与推前：
+    $$Rf_*(\mathcal{F}) \text{ 的Mayer-Vietoris序列与 $\mathcal{F}$ 的Mayer-Vietoris序列的关系}$$
+
+15. **Mayer-Vietoris序列的收敛性**：
+    Mayer-Vietoris序列的收敛性：
+    $$\text{Mayer-Vietoris序列收敛到 $H^{i+1}(X, \mathcal{F})$（通过连接同态）}$$
+
+---
+
+## 十、Mayer-Vietoris序列的严格数学表述
+
+### 10.1 Mayer-Vietoris序列的严格构造
+
+**Mayer-Vietoris序列**：
+
+设 $X$ 是概形，$U, V$ 是 $X$ 的开子概形，使得 $X = U \cup V$，$\mathcal{F}$ 是 $X$ 上的Abel层。则存在长正合列：
+$$\cdots \to H^i(X, \mathcal{F}) \to H^i(U, \mathcal{F}|_U) \oplus H^i(V, \mathcal{F}|_V) \to H^i(U \cap V, \mathcal{F}|_{U \cap V}) \to H^{i+1}(X, \mathcal{F}) \to \cdots$$
+
+**构造方法**：
+
+1. **短正合列**：$0 \to \mathcal{F} \to j_{U*}(\mathcal{F}|_U) \oplus j_{V*}(\mathcal{F}|_V) \to j_{U \cap V*}(\mathcal{F}|_{U \cap V}) \to 0$
+2. **长正合列**：应用上同调函子得到Mayer-Vietoris序列
+
+**Mayer-Vietoris序列的应用**：
+
+**例9：射影空间的Mayer-Vietoris序列**
+
+设 $X = \mathbb{P}^n$，$U = D_+(x_0)$，$V = D_+(x_1)$。则Mayer-Vietoris序列给出：
+$$H^i(\mathbb{P}^n, \mathcal{O}(d)) \to H^i(U, \mathcal{O}(d)) \oplus H^i(V, \mathcal{O}(d)) \to H^i(U \cap V, \mathcal{O}(d)) \to H^{i+1}(\mathbb{P}^n, \mathcal{O}(d))$$
+
+**例10：曲线的Mayer-Vietoris序列**
+
+设 $X$ 是曲线，$U, V$ 是开子集，$U \cup V = X$。则Mayer-Vietoris序列用于计算 $H^1(X, \mathcal{F})$。
+
+### 10.2 Mayer-Vietoris序列与Čech上同调
+
+**关系**：
+
+Mayer-Vietoris序列是Čech上同调的特殊情况。对覆盖 $\mathcal{U} = \{U, V\}$，Mayer-Vietoris序列给出：
+$$\check{H}^i(\mathcal{U}, \mathcal{F}) \cong H^i(X, \mathcal{F}) \text{（如果 $\mathcal{U}$ 是好覆盖）}$$
+
+**应用**：
+
+Mayer-Vietoris序列是计算上同调的重要工具，特别是在覆盖只有两个开集的情况下。
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

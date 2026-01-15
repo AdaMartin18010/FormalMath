@@ -4,6 +4,7 @@
 ## 📋 目录
 
 - [Riemann-Roch定理：格洛腾迪克的推广](#riemann-roch定理格洛腾迪克的推广)
+  - [📋 目录](#-目录)
   - [一、经典Riemann-Roch](#一经典riemann-roch)
     - [1.1 曲线情况](#11-曲线情况)
     - [1.2 意义](#12-意义)
@@ -27,6 +28,14 @@
     - [7.2 应用](#72-应用)
   - [八、总结](#八总结)
     - [Riemann-Roch定理的意义](#riemann-roch定理的意义)
+  - [九、Riemann-Roch定理的详细数学表述](#九riemann-roch定理的详细数学表述)
+    - [9.1 经典Riemann-Roch定理的严格表述](#91-经典riemann-roch定理的严格表述)
+    - [9.2 Hirzebruch-Riemann-Roch定理的详细表述](#92-hirzebruch-riemann-roch定理的详细表述)
+    - [9.3 Grothendieck-Riemann-Roch定理的详细表述](#93-grothendieck-riemann-roch定理的详细表述)
+  - [十、Riemann-Roch定理的应用](#十riemann-roch定理的应用)
+    - [10.1 在分类问题中的应用](#101-在分类问题中的应用)
+    - [10.2 在相交理论中的应用](#102-在相交理论中的应用)
+    - [10.3 在枚举几何中的应用](#103-在枚举几何中的应用)
 
 ---
 ## 一、经典Riemann-Roch

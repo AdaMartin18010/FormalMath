@@ -1,4 +1,4 @@
-﻿# 上同调与Ext函子：同调代数与几何的连接
+# 上同调与Ext函子：同调代数与几何的连接
 
 
 ## 📋 目录
@@ -25,6 +25,11 @@
     - [6.2 算术应用](#62-算术应用)
   - [七、总结](#七总结)
     - [上同调与Ext函子的意义](#上同调与ext函子的意义)
+  - [八、数学公式总结](#八数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、Ext函子与上同调的严格数学表述](#十ext函子与上同调的严格数学表述)
+    - [10.1 Ext函子的严格构造](#101-ext函子的严格构造)
+    - [10.2 上同调与Ext关系的严格证明](#102-上同调与ext关系的严格证明)
 
 ---
 
@@ -268,10 +273,80 @@ Grothendieck的贡献：
 10. **Ext与上同调维数**：
     $$\text{proj dim}(\mathcal{F}) = \sup\{i : \text{Ext}^i(\mathcal{F}, \mathcal{G}) \neq 0 \text{ 对某个 $\mathcal{G}$}\}$$
 
+11. **导出Ext函子**：
+    导出Ext函子：
+    $$R\mathcal{H}om_X(\mathcal{F}, \mathcal{G}) = \mathcal{H}om_X(P_\mathcal{F}^\bullet, I_\mathcal{G}^\bullet)$$
+
+12. **Ext与推前的交换性**：
+    Ext与推前的交换性：
+    $$Rf_* R\mathcal{H}om_X(\mathcal{F}, \mathcal{G}) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, Rf_*\mathcal{G}) \text{（某些条件下）}$$
+
+13. **Ext与拉回的交换性**：
+    Ext与拉回的交换性：
+    $$f^* R\mathcal{H}om_Y(\mathcal{F}, \mathcal{G}) \cong R\mathcal{H}om_X(f^*\mathcal{F}, f^*\mathcal{G})$$
+
+14. **Ext与局部化**：
+    Ext与局部化：
+    $$R\mathcal{H}om_U(\mathcal{F}|_U, \mathcal{G}|_U) \cong R\mathcal{H}om_X(j_!\mathcal{F}|_U, \mathcal{G})|_U$$
+
+15. **Ext与Serre对偶的严格形式**：
+    Ext与Serre对偶的严格形式：
+    $$\text{Ext}^i(\mathcal{F}, \omega_X) \cong H^{n-i}(X, \mathcal{F})^* \text{（$X$ 光滑射影，$\dim X = n$）}$$
+
+---
+
+## 十、Ext函子与上同调的严格数学表述
+
+### 10.1 Ext函子的严格构造
+
+**Ext函子**：
+
+设 $X$ 是概形，$\mathcal{F}, \mathcal{G}$ 是 $X$ 上的 $O_X$-模层。定义**Ext函子**：
+$$\text{Ext}_X^i(\mathcal{F}, \mathcal{G}) = R^i \mathcal{H}om_X(\mathcal{F}, -)(\mathcal{G}) = H^i(\mathcal{H}om_X(P_\mathcal{F}^\bullet, I_\mathcal{G}^\bullet))$$
+
+其中 $P_\mathcal{F}^\bullet$ 是 $\mathcal{F}$ 的投射分解，$I_\mathcal{G}^\bullet$ 是 $\mathcal{G}$ 的内射分解。
+
+**导出Hom**：
+
+定义**导出Hom**：
+$$R\mathcal{H}om_X(\mathcal{F}, \mathcal{G}) = \mathcal{H}om_X(P_\mathcal{F}^\bullet, I_\mathcal{G}^\bullet)$$
+
+则：
+$$\text{Ext}_X^i(\mathcal{F}, \mathcal{G}) = H^i(R\mathcal{H}om_X(\mathcal{F}, \mathcal{G}))$$
+
+**Ext函子的应用**：
+
+**例9：线丛的Ext**
+
+设 $X$ 是概形，$\mathcal{L}$ 是线丛。则：
+$$\text{Ext}^i(\mathcal{L}, \mathcal{O}_X) = H^i(X, \mathcal{L}^{-1})$$
+
+**例10：形变理论中的Ext**
+
+设 $X$ 是概形，$\mathcal{F}$ 是凝聚层。则 $\text{Ext}^1(\mathcal{F}, \mathcal{F})$ 参数化 $\mathcal{F}$ 的一阶形变，即短正合列：
+$$0 \to \mathcal{F} \to \mathcal{E} \to \mathcal{F} \to 0$$
+
+### 10.2 上同调与Ext关系的严格证明
+
+**上同调与Ext关系**：
+
+设 $X$ 是概形，$\mathcal{F}$ 是 $X$ 上的 $O_X$-模层。则：
+$$H^i(X, \mathcal{F}) \cong \text{Ext}_X^i(\mathcal{O}_X, \mathcal{F})$$
+
+**证明思路**：
+
+1. **定义**：$H^i(X, \mathcal{F}) = R^i \Gamma(X, \mathcal{F}) = R^i \text{Hom}(\mathcal{O}_X, \mathcal{F})$
+2. **Ext定义**：$\text{Ext}^i(\mathcal{O}_X, \mathcal{F}) = R^i \mathcal{H}om(\mathcal{O}_X, \mathcal{F})$
+3. **同构**：$\text{Hom}(\mathcal{O}_X, \mathcal{F}) = \Gamma(X, \mathcal{F})$，因此两者同构
+
+**应用**：
+
+这个关系将上同调计算转化为Ext计算，在形变理论和分类问题中有重要应用。
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日

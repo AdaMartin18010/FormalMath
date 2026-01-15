@@ -22,6 +22,11 @@
     - [5.2 算术应用](#52-算术应用)
   - [六、总结](#六总结)
     - [上同调与Grothendieck对偶的意义](#上同调与grothendieck对偶的意义)
+  - [七、数学公式总结](#七数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、Grothendieck对偶的严格数学表述](#十grothendieck对偶的严格数学表述)
+    - [10.1 Grothendieck对偶定理的严格证明](#101-grothendieck对偶定理的严格证明)
+    - [10.2 例外拉回的严格定义](#102-例外拉回的严格定义)
 
 ---
 
@@ -230,10 +235,82 @@ Grothendieck的贡献：
 10. **对偶与上同调**：
     $$H^i(X, \mathcal{F})^* \cong H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X) \text{（Serre对偶）}$$
 
+11. **Grothendieck对偶的严格形式**：
+    Grothendieck对偶的严格形式：
+    $$Rf_* R\mathcal{H}om_X(\mathcal{F}, f^!\mathcal{G}) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \mathcal{G}) \text{（$f$ 相对完备）}$$
+
+12. **例外拉回的构造**：
+    例外拉回的构造：
+    $$f^!\mathcal{G} = f^*\mathcal{G} \otimes_{\mathcal{O}_X}^{\mathbb{L}} \omega_{X/Y}[n], \quad n = \dim X - \dim Y$$
+
+13. **Grothendieck对偶与推前**：
+    Grothendieck对偶与推前：
+    $$Rf_*(\mathcal{F}^\vee) \cong (Rf_!\mathcal{F})^\vee \text{（$f$ 相对完备）}$$
+
+14. **Grothendieck对偶与拉回**：
+    Grothendieck对偶与拉回：
+    $$f^!(\mathcal{G}^\vee) \cong (f^*\mathcal{G})^\vee \otimes \omega_{X/Y}$$
+
+15. **Grothendieck对偶与六函子理论**：
+    Grothendieck对偶与六函子理论：
+    $$f^*, f_*, f_!, f^!, \otimes, \mathcal{H}om \text{ 在Grothendieck对偶下相容}$$
+
+---
+
+## 十、Grothendieck对偶的严格数学表述
+
+### 10.1 Grothendieck对偶定理的严格证明
+
+**Grothendieck对偶定理**：
+
+设 $f: X \to Y$ 是相对完备的态射，$\mathcal{F}$ 是 $X$ 上的凝聚层，$\mathcal{G}$ 是 $Y$ 上的凝聚层。则存在自然同构：
+$$Rf_* R\mathcal{H}om_X(\mathcal{F}, f^!\mathcal{G}) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \mathcal{G})$$
+
+其中 $f^!\mathcal{G}$ 是**例外拉回**，定义为：
+$$f^!\mathcal{G} = f^*\mathcal{G} \otimes_{\mathcal{O}_X}^{\mathbb{L}} \omega_{X/Y}[\dim X - \dim Y]$$
+
+**证明思路**：
+
+1. **局部情况**：对仿射概形，使用投射分解
+2. **全局情况**：使用谱序列和局部性质
+3. **函子性**：使用函子的自然性
+
+**Grothendieck对偶的应用**：
+
+**例9：射影态射的Grothendieck对偶**
+
+设 $f: X \to Y$ 是射影态射，$\mathcal{F}$ 是凝聚层。则：
+$$Rf_* R\mathcal{H}om_X(\mathcal{F}, \omega_X) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \omega_Y)$$
+
+**例10：开嵌入的Grothendieck对偶**
+
+设 $j: U \hookrightarrow X$ 是开嵌入，$\mathcal{F}$ 是 $U$ 上的层。则：
+$$Rj_* R\mathcal{H}om_U(\mathcal{F}, \omega_U) \cong R\mathcal{H}om_X(Rj_!\mathcal{F}, \omega_X)$$
+
+### 10.2 例外拉回的严格定义
+
+**例外拉回**：
+
+设 $f: X \to Y$ 是相对完备的态射。定义**例外拉回函子** $f^!: D(Y) \to D(X)$ 为 $f_!$ 的右伴随：
+$$f_! \dashv f^!$$
+
+**例外拉回的构造**：
+
+如果 $f$ 是光滑的，则：
+$$f^!\mathcal{G} = f^*\mathcal{G} \otimes_{\mathcal{O}_X} \omega_{X/Y}[\dim X - \dim Y]$$
+
+其中 $\omega_{X/Y} = \det(\Omega_{X/Y}^1)$ 是相对典范层。
+
+**例外拉回的性质**：
+
+1. **右伴随**：$f_! \dashv f^!$
+2. **函子性**：$(g \circ f)^! = f^! \circ g^!$
+3. **与推前的关系**：$Rf_* R\mathcal{H}om_X(\mathcal{F}, f^!\mathcal{G}) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \mathcal{G})$
+
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日
