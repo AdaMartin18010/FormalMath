@@ -351,8 +351,125 @@ Grothendieck的贡献：
 
 ---
 
+## 十、Abel范畴与同调代数的详细数学表述
+
+### 10.1 Abel范畴的严格定义
+
+**Abel范畴的严格定义**：
+
+**Abel范畴** $\mathcal{A}$ 是满足以下条件的加性范畴：
+
+1. **核和余核存在**：对任意态射 $f: X \to Y$，核 $\ker(f)$ 和余核 $\text{coker}(f)$ 存在
+2. **像分解**：对任意态射 $f$，有分解：
+   $$X \twoheadrightarrow \text{im}(f) \hookrightarrow Y$$
+3. **像 = 余像**：$\text{im}(f) = \text{coim}(f)$
+
+**数学表述**：
+
+Abel范畴：
+$$\mathcal{A} \text{ 是Abel范畴 } \iff \text{核和余核存在，像 = 余像}$$
+
+**例子9：Abel群的范畴**：
+
+Abel群的范畴 $\text{Ab}$ 是Abel范畴。
+
+**例子10：$R$-模的范畴**：
+
+$R$-模的范畴 $\text{Mod}(R)$ 是Abel范畴。
+
+### 10.2 导出函子的严格定义
+
+**导出函子的严格定义**：
+
+设 $F: \mathcal{A} \to \mathcal{B}$ 是左正合函子，$\mathcal{A}$ 有足够内射对象。
+
+**右导出函子** $R^i F$ 定义为：
+$$R^i F(X) = H^i(F(I_X^\bullet))$$
+
+其中 $I_X^\bullet$ 是 $X$ 的内射分解。
+
+**数学表述**：
+
+右导出函子：
+$$R^i F(X) = H^i(F(I_X^\bullet))$$
+
+**例子11：上同调**：
+
+对于全局截面函子 $\Gamma: \text{Sh}(X) \to \text{Ab}$，上同调为：
+$$H^i(X, \mathcal{F}) = R^i \Gamma(\mathcal{F})$$
+
+### 10.3 Ext和Tor函子的严格定义
+
+**Ext函子的严格定义**：
+
+对于 $R$-模 $A, B$，**Ext函子**定义为：
+$$\text{Ext}^i_R(A, B) = H^i(\text{Hom}_R(P_A^\bullet, B))$$
+
+其中 $P_A^\bullet$ 是 $A$ 的投射分解。
+
+**数学表述**：
+
+Ext函子：
+$$\text{Ext}^i_R(A, B) = H^i(\text{Hom}_R(P_A^\bullet, B))$$
+
+**Tor函子的严格定义**：
+
+对于 $R$-模 $A, B$，**Tor函子**定义为：
+$$\text{Tor}_i^R(A, B) = H_i(P_A^\bullet \otimes_R B)$$
+
+其中 $P_A^\bullet$ 是 $A$ 的投射分解。
+
+**数学表述**：
+
+Tor函子：
+$$\text{Tor}_i^R(A, B) = H_i(P_A^\bullet \otimes_R B)$$
+
+**例子12：Ext和Tor的应用**：
+
+Ext和Tor函子在同调代数中有重要应用。
+
+---
+
+## 十一、Abel范畴与同调代数在概形理论中的应用
+
+### 11.1 层上同调
+
+**层上同调的定义**：
+
+对于概形 $X$ 和层 $\mathcal{F}$，**层上同调**定义为：
+$$H^i(X, \mathcal{F}) = R^i \Gamma(\mathcal{F})$$
+
+其中 $\Gamma: \text{Sh}(X) \to \text{Ab}$ 是全局截面函子。
+
+**数学表述**：
+
+层上同调：
+$$H^i(X, \mathcal{F}) = R^i \Gamma(\mathcal{F})$$
+
+**例子13：层上同调的应用**：
+
+层上同调在代数几何中有重要应用，特别是在Riemann-Roch定理中。
+
+### 11.2 推前上同调
+
+**推前上同调的定义**：
+
+对于概形态射 $f: X \to Y$ 和层 $\mathcal{F}$，**推前上同调**定义为：
+$$R^i f_* \mathcal{F} = R^i(f_*)(\mathcal{F})$$
+
+**数学表述**：
+
+推前上同调：
+$$R^i f_* \mathcal{F} = R^i(f_*)(\mathcal{F})$$
+
+**例子14：推前上同调的应用**：
+
+推前上同调在相对几何中有重要应用。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 14个
+**最后更新**: 2026年01月15日

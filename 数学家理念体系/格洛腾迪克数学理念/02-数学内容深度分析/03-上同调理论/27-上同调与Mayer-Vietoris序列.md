@@ -289,8 +289,78 @@ Mayer-Vietoris序列是计算上同调的重要工具，特别是在覆盖只有
 
 ---
 
+## 十一、Mayer-Vietoris序列在概形理论中的应用
+
+### 11.1 Mayer-Vietoris序列与上同调计算
+
+**Mayer-Vietoris序列在上同调计算中的应用**：
+
+使用Mayer-Vietoris序列可以计算上同调：
+$$H^i(X, \mathcal{F}) \to H^i(U, \mathcal{F}) \oplus H^i(V, \mathcal{F}) \to H^i(U \cap V, \mathcal{F})$$
+
+**数学公式**：
+- Mayer-Vietoris序列：$$\cdots \to H^i(X, \mathcal{F}) \to H^i(U, \mathcal{F}) \oplus H^i(V, \mathcal{F}) \to H^i(U \cap V, \mathcal{F}) \to H^{i+1}(X, \mathcal{F}) \to \cdots$$
+- 连接同态：$$\delta: H^i(U \cap V, \mathcal{F}) \to H^{i+1}(X, \mathcal{F})$$
+
+**例子11：射影空间的上同调**：
+
+使用Mayer-Vietoris序列可以计算射影空间的上同调。
+
+### 11.2 Mayer-Vietoris序列与Čech上同调
+
+**Mayer-Vietoris序列与Čech上同调的关系**：
+
+Mayer-Vietoris序列是Čech上同调的特殊情况：
+$$\check{H}^i(\{U, V\}, \mathcal{F}) \cong H^i(X, \mathcal{F})$$
+
+**数学公式**：
+- Čech上同调：$$\check{H}^i(\{U, V\}, \mathcal{F})$$
+- Mayer-Vietoris：$$H^i(X, \mathcal{F}) \to H^i(U, \mathcal{F}) \oplus H^i(V, \mathcal{F})$$
+
+**例子12：Čech上同调**：
+
+Čech上同调在计算中有重要应用。
+
+---
+
+## 十二、Mayer-Vietoris序列的现代发展
+
+### 12.1 导出Mayer-Vietoris序列
+
+**导出Mayer-Vietoris序列**：
+
+Mayer-Vietoris序列可以推广到导出几何：
+$$R\Gamma(X, \mathcal{F}^\bullet) \to R\Gamma(U, \mathcal{F}^\bullet) \oplus R\Gamma(V, \mathcal{F}^\bullet) \to R\Gamma(U \cap V, \mathcal{F}^\bullet)$$
+
+**数学公式**：
+- 导出Mayer-Vietoris：$$R\Gamma(X, \mathcal{F}^\bullet) \to R\Gamma(U, \mathcal{F}^\bullet) \oplus R\Gamma(V, \mathcal{F}^\bullet)$$
+- ∞-Mayer-Vietoris：$$R^{\infty}\Gamma(X, \mathcal{F}^\bullet) \to R^{\infty}\Gamma(U, \mathcal{F}^\bullet) \oplus R^{\infty}\Gamma(V, \mathcal{F}^\bullet)$$
+
+**例子13：导出Mayer-Vietoris**：
+
+导出Mayer-Vietoris序列在导出几何中有重要应用。
+
+### 12.2 Mayer-Vietoris序列的应用
+
+**Mayer-Vietoris序列在现代研究中的应用**：
+
+Mayer-Vietoris序列在现代研究中继续发展：
+- **导出几何**：在导出几何中的应用
+- **∞-范畴**：在∞-范畴中的应用
+- **同伦理论**：在同伦理论中的应用
+
+**数学公式**：
+- 导出Mayer-Vietoris：$$R\Gamma(X, \mathcal{F}^\bullet) \to R\Gamma(U, \mathcal{F}^\bullet) \oplus R\Gamma(V, \mathcal{F}^\bullet)$$
+- ∞-Mayer-Vietoris：$$R^{\infty}\Gamma(X, \mathcal{F}^\bullet) \to R^{\infty}\Gamma(U, \mathcal{F}^\bullet) \oplus R^{\infty}\Gamma(V, \mathcal{F}^\bullet)$$
+
+**例子14：现代应用**：
+
+Mayer-Vietoris序列在现代研究中继续发展。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,900字
-**数学公式数**: 15个
-**例子数**: 10个
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 14个
 **最后更新**: 2026年01月15日

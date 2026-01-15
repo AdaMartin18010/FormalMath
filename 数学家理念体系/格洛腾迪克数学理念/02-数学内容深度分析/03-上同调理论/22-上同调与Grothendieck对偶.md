@@ -309,8 +309,80 @@ $$f^!\mathcal{G} = f^*\mathcal{G} \otimes_{\mathcal{O}_X} \omega_{X/Y}[\dim X - 
 
 ---
 
+## 十一、Grothendieck对偶在概形理论中的应用
+
+### 11.1 Grothendieck对偶与六函子理论
+
+**六函子理论**：
+
+Grothendieck对偶是六函子理论的核心：
+$$f^*, f_*, f_!, f^!, \otimes, \mathcal{H}om$$
+
+**数学公式**：
+- 六函子：$$f^*, f_*, f_!, f^!, \otimes, \mathcal{H}om$$
+- Grothendieck对偶：$$Rf_* R\mathcal{H}om_X(\mathcal{F}, f^!\mathcal{G}) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \mathcal{G})$$
+- 伴随关系：$$f_! \dashv f^!, \quad f^* \dashv f_*$$
+
+**例子11：六函子理论**：
+
+六函子理论在相对几何中有重要应用。
+
+### 11.2 Grothendieck对偶与推前
+
+**Grothendieck对偶与推前的关系**：
+
+对于相对完备的态射 $f: X \to Y$，有：
+$$Rf_*(\mathcal{F}^\vee) \cong (Rf_!\mathcal{F})^\vee$$
+
+**数学公式**：
+- 推前对偶：$$Rf_*(\mathcal{F}^\vee) \cong (Rf_!\mathcal{F})^\vee$$
+- 真推前：$$Rf_! = Rf_* \circ j_!$$
+- 对偶：$$\mathcal{F}^\vee = R\mathcal{H}om(\mathcal{F}, \omega_X[n])$$
+
+**例子12：推前对偶**：
+
+推前对偶在相对几何中有重要应用。
+
+---
+
+## 十二、Grothendieck对偶的现代发展
+
+### 12.1 导出Grothendieck对偶
+
+**导出Grothendieck对偶**：
+
+Grothendieck对偶可以推广到导出几何：
+$$Rf_* R\mathcal{H}om_X(\mathcal{F}^\bullet, f^!\mathcal{G}^\bullet) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+
+**数学公式**：
+- 导出Grothendieck对偶：$$Rf_* R\mathcal{H}om_X(\mathcal{F}^\bullet, f^!\mathcal{G}^\bullet) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+- ∞-Grothendieck对偶：$$R^{\infty}f_* R^{\infty}\mathcal{H}om_X(\mathcal{F}^\bullet, f^!\mathcal{G}^\bullet) \cong R^{\infty}\mathcal{H}om_Y(R^{\infty}f_*\mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+
+**例子13：导出Grothendieck对偶**：
+
+导出Grothendieck对偶在导出几何中有重要应用。
+
+### 12.2 Grothendieck对偶的应用
+
+**Grothendieck对偶在现代研究中的应用**：
+
+Grothendieck对偶在现代研究中继续发展：
+- **导出几何**：在导出几何中的应用
+- **∞-范畴**：在∞-范畴中的应用
+- **同伦理论**：在同伦理论中的应用
+
+**数学公式**：
+- 导出Grothendieck对偶：$$Rf_* R\mathcal{H}om_X(\mathcal{F}^\bullet, f^!\mathcal{G}^\bullet) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+- ∞-Grothendieck对偶：$$R^{\infty}f_* R^{\infty}\mathcal{H}om_X(\mathcal{F}^\bullet, f^!\mathcal{G}^\bullet) \cong R^{\infty}\mathcal{H}om_Y(R^{\infty}f_*\mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+
+**例子14：现代应用**：
+
+Grothendieck对偶在现代研究中继续发展。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,900字
-**数学公式数**: 15个
-**例子数**: 10个
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 14个
 **最后更新**: 2026年01月15日

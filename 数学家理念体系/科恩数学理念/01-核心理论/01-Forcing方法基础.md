@@ -1,4 +1,4 @@
-﻿# Forcing方法基础
+# Forcing方法基础
 
 **创建日期**: 2025年12月15日
 **研究领域**: 科恩数学理念 - 核心理论 - Forcing方法基础
@@ -79,55 +79,109 @@
 
 ### 2.1 部分序集（Partial Order）
 
-**定义**：
+**部分序集的定义**：
 
-一个部分序集（forcing notion）是一个偏序集 $(P, \leq)$，其中：
+一个**部分序集**（partial order，也称为**forcing notion**）是一个偏序集 $(P, \leq)$，其中：
 
-- $P$ 是集合（forcing条件）
-- $\leq$ 是偏序关系
-- 通常要求有最大元 $\mathbb{1}$（有时称为真值）
+- **$P$** 是集合，元素称为**forcing条件**（forcing conditions）
+- **$\leq$** 是 $P$ 上的偏序关系
+- 通常要求有**最大元** $\mathbb{1} \in P$（有时称为"真值"）
 
-**记号**：
+**数学表述**：
 
-- $p \leq q$ 表示 $p$ 比 $q$ 更强（$p$ 提供更多信息）
-- $p \perp q$ 表示 $p$ 和 $q$ 不兼容（不存在 $r$ 使得 $r \leq p$ 且 $r \leq q$）
+部分序集：
+$$(P, \leq) \text{ 是偏序集，通常有最大元 } \mathbb{1}$$
 
-**例子**：
+**记号约定**：
 
-- **Cohen forcing**：$P = \text{Fn}(\omega_2 \times \omega, 2)$，有限部分函数，按包含关系排序
-- **Random forcing**：Borel测度的正测度集合，按包含关系排序
-- **Sacks forcing**：完美树的集合，按包含关系排序
+- **$p \leq q$**：表示 $p$ **比 $q$ 更强**（$p$ 提供更多信息），或 $q$ **比 $p$ 更弱**
+- **$p \perp q$**：表示 $p$ 和 $q$ **不兼容**（incompatible），即不存在 $r \in P$ 使得 $r \leq p$ 且 $r \leq q$
+- **$p \parallel q$**：表示 $p$ 和 $q$ **兼容**（compatible），即存在 $r \leq p, q$
+
+**例子1：Cohen Forcing**：
+
+**Cohen forcing** 是最基本的forcing notion：
+$$P = \text{Fn}(\omega_2 \times \omega, 2) = \{p: \text{有限函数 } p: \omega_2 \times \omega \to 2\}$$
+
+排序关系：$p \leq q$ 当且仅当 $q \subseteq p$（$p$ 扩展 $q$）。
+
+**数学表述**：
+
+Cohen forcing：
+$$P = \{p \mid p: \omega_2 \times \omega \to 2, |p| < \aleph_0\}$$
+$$p \leq q \iff q \subseteq p$$
+
+**例子2：Random Forcing**：
+
+**Random forcing** 使用测度论：
+$$P = \{B \subseteq [0,1] \mid B \text{ 是Borel集且 } \mu(B) > 0\}$$
+
+排序关系：$B_1 \leq B_2$ 当且仅当 $B_1 \subseteq B_2$。
+
+**例子3：Sacks Forcing**：
+
+**Sacks forcing** 使用完美树：
+$$P = \{T \subseteq 2^{<\omega} \mid T \text{ 是完美树}\}$$
+
+排序关系：$T_1 \leq T_2$ 当且仅当 $T_1 \subseteq T_2$。
 
 **关键性质**：
 
-- 部分序集的选择决定了扩展的性质
-- 不同的forcing notion产生不同的模型
+1. **部分序集的选择决定了扩展的性质**：不同的forcing notion产生不同的模型
+2. **兼容性**：不兼容的条件不能同时属于泛型集
+3. **强度**：更强的条件提供更多信息
 
 ---
 
 ### 2.2 泛型集（Generic Set）
 
-**定义**：
+**泛型集的定义**：
 
-设 $M$ 是可数传递模型，$P \in M$ 是部分序集。$G \subseteq P$ 是 $M$ 上的泛型集，如果：
+设 $M$ 是可数传递模型（countable transitive model），$P \in M$ 是部分序集。$G \subseteq P$ 是 **$M$ 上的泛型集**（generic set），如果：
 
-1. $G$ 是滤子（filter）：
-   - 如果 $p \in G$ 且 $q \leq p$，则 $q \in G$
-   - 如果 $p, q \in G$，则存在 $r \in G$ 使得 $r \leq p$ 且 $r \leq q$
-2. $G$ 与 $M$ 中所有稠密集相交：
+1. **$G$ 是滤子（filter）**：
+   - **向下封闭**：如果 $p \in G$ 且 $q \leq p$，则 $q \in G$
+   - **向上有界**：如果 $p, q \in G$，则存在 $r \in G$ 使得 $r \leq p$ 且 $r \leq q$（即 $p$ 和 $q$ 兼容）
+
+2. **$G$ 与 $M$ 中所有稠密集相交**：
    - 对任意 $D \in M$，如果 $D \subseteq P$ 是稠密的，则 $G \cap D \neq \emptyset$
+
+**数学表述**：
+
+泛型集条件：
+- **滤子条件**：$G$ 是滤子
+- **泛型条件**：$\forall D \in M: (D \text{ 稠密}) \Rightarrow (G \cap D \neq \emptyset)$
 
 **关键性质**：
 
-- 泛型集不在 $M$ 中（如果 $M$ 是可数传递模型）
-- 但可以通过 $M$ 和 $G$ 构造新模型 $M[G]$
-- 泛型集的存在性由Löwenheim-Skolem定理保证
+1. **泛型集不在 $M$ 中**：如果 $M$ 是可数传递模型，则 $G \notin M$
+2. **但可以构造新模型**：可以通过 $M$ 和 $G$ 构造新模型 $M[G]$
+3. **存在性**：泛型集的存在性由Löwenheim-Skolem定理和Rasiowa-Sikorski引理保证
+
+**例子4：泛型集的理解**：
+
+在Cohen forcing中，泛型集 $G$ 是一个"理想"的有限函数序列，它：
+- 与所有稠密集相交（保证"完备性"）
+- 形成一个滤子（保证"一致性"）
+- 不在基础模型中（保证"新对象"）
 
 **稠密集（Dense Set）**：
 
-$D \subseteq P$ 是稠密的，如果：
+$D \subseteq P$ 是**稠密的**（dense），如果：
 
 对任意 $p \in P$，存在 $q \in D$ 使得 $q \leq p$。
+
+**数学表述**：
+
+稠密集：
+$$\forall p \in P \exists q \in D: q \leq p$$
+
+**例子5：稠密集的例子**：
+
+在Cohen forcing中，对每个 $\alpha < \omega_2$，集合：
+$$D_\alpha = \{p \in P \mid \exists n: (\alpha, n) \in \text{dom}(p)\}$$
+
+是稠密的，因为对任意 $p$，可以添加 $(\alpha, n)$ 到 $p$ 的定义域中。
 
 ---
 
@@ -462,5 +516,62 @@ Forcing方法是科恩最重要的贡献，具有深远的历史意义和现代�
 
 ---
 
-*最后更新：2025年12月15日*
-*文档状态：骨架完成（待填充详细内容）*
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **部分序集**：
+   $$(P, \leq) \text{ 是偏序集，有最大元 } \mathbb{1}$$
+
+2. **兼容性**：
+   $$p \parallel q \iff \exists r: r \leq p \land r \leq q$$
+
+3. **不兼容性**：
+   $$p \perp q \iff \nexists r: r \leq p \land r \leq q$$
+
+4. **稠密集**：
+   $$\forall p \in P \exists q \in D: q \leq p$$
+
+5. **泛型集条件**：
+   - 滤子：$p \in G \land q \leq p \Rightarrow q \in G$
+   - 泛型：$\forall D \in M \text{ 稠密}: G \cap D \neq \emptyset$
+
+6. **泛型扩展**：
+   $$M[G] = \{\tau_G \mid \tau \text{ 是 } P\text{-名称}\}$$
+
+7. **Forcing关系**：
+   $$p \Vdash \varphi \iff \forall G \text{ 泛型}: (p \in G \Rightarrow M[G] \models \varphi)$$
+
+8. **完全性定理**：
+   $$M[G] \models \varphi \iff \exists p \in G: p \Vdash \varphi$$
+
+9. **P-名称**：
+   $$\tau \text{ 是 } P\text{-名称} \iff (\sigma, p) \in \tau \Rightarrow \sigma \text{ 是 } P\text{-名称}$$
+
+10. **名称解释**：
+    $$\tau_G = \{\sigma_G \mid (\sigma, p) \in \tau \land p \in G\}$$
+
+11. **标准名称**：
+    $$\check{x} = \{(\check{y}, \mathbb{1}) \mid y \in x\}$$
+
+12. **Cohen Forcing**：
+    $$P = \text{Fn}(\omega_2 \times \omega, 2) = \{p: \omega_2 \times \omega \to 2, |p| < \aleph_0\}$$
+
+13. **可数反链条件（c.c.c.）**：
+    $$P \text{ 满足 c.c.c.} \iff \text{每个反链都是可数的}$$
+
+14. **基数保持**：
+    $$P \text{ 满足 c.c.c.} \Rightarrow M[G] \text{ 保持所有基数}$$
+
+15. **CH的独立性**：
+    $$M[G] \models \text{ZFC} + \neg \text{CH}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充详细数学公式和例子）
+**字数**: 约4,500字
+**数学公式数**: 25个
+**例子数**: 12个
+**最后更新**: 2026年01月15日

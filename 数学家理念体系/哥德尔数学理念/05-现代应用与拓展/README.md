@@ -28,19 +28,30 @@
   - 反证与独立性教学案例（PA 下的不可证公式）。
 - 集合论：
   - CH/GCH 在可构造宇宙与强不可达基数背景下的相对一致性讨论。
-  - Forcing 技术在独立性证明中的示范（占位）。
+  - Forcing 技术在独立性证明中的示范：Cohen的forcing方法展示了如何构造模型使得CH不成立，这是独立性证明的经典范例。
 - 计算理论：
   - 停机问题与不完备定理的对照教学；r.e. 集不可判定例子。
-  - 复杂度视角的不可证明/不可判定（占位）。
+  - 复杂度视角的不可证明/不可判定：某些复杂度类中的问题在特定形式系统中不可判定，这反映了不完备性在计算复杂性理论中的体现。
 - 哲学：
   - Platonism vs 形式主义的现代回应；数学实在论的论证与反驳。
   - 不完备性对“数学真理客观性”讨论的影响。
 
-## 参考文献占位
+## 参考文献
 
-- Turing (1936); Gödel (1931/1938/1940)。
-- Jech, *Set Theory*；Cohen Forcing 相关经典。
-- Feferman、Smith 对不完备与应用的综述；SEP 条目。
+### 原始文献
+- **Turing, A. M.** (1936). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society*, 42(2), 230-265.
+- **Gödel, K.** (1931). Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I. *Monatshefte für Mathematik und Physik*, 38(1), 173-198.
+- **Gödel, K.** (1938). The consistency of the axiom of choice and of the generalized continuum-hypothesis. *Proceedings of the National Academy of Sciences*, 24(12), 556-557.
+- **Gödel, K.** (1940). The consistency of the axiom of choice and of the generalized continuum hypothesis with the axioms of set theory. *Annals of Mathematics Studies*, 3.
+
+### 现代文献
+- **Jech, T.** (2003). *Set Theory: The Third Millennium Edition, Revised and Expanded*. Springer.
+- **Cohen, P. J.** (1963). The independence of the continuum hypothesis. *Proceedings of the National Academy of Sciences*, 50(6), 1143-1148.
+- **Feferman, S.** (2006). The impact of the incompleteness theorems on mathematics. *Notices of the AMS*, 53(4), 434-439.
+- **Smith, P.** (2013). *An Introduction to Gödel's Theorems*. Cambridge University Press.
+
+### 在线资源
+- **Stanford Encyclopedia of Philosophy**: "Gödel's Incompleteness Theorems", "Constructibility", "Russell's Paradox"
 
 ---
 

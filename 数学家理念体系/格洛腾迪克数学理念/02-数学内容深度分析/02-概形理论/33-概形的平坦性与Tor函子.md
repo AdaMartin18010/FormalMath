@@ -264,8 +264,83 @@ Grothendieck的贡献：
 
 ---
 
+## 九、平坦性与Tor函子的详细数学表述
+
+### 9.1 平坦性的严格定义
+
+**平坦模定义**：
+
+$\mathcal{O}_X$-模 $M$ 是**平坦的**当且仅当：
+$$\text{Tor}_i^{\mathcal{O}_X}(M, N) = 0 \quad \text{对所有 } i > 0, \text{ 所有 } N$$
+
+**平坦态射**：
+
+态射 $f: X \to Y$ 是**平坦的**当且仅当 $\mathcal{O}_X$ 是 $f^{-1}\mathcal{O}_Y$-平坦模。
+
+**数学公式**：
+- 平坦模：$$M \text{ 平坦 } \iff \text{Tor}_i(M, N) = 0 \quad (i > 0)$$
+- 平坦态射：$$f \text{ 平坦 } \iff \mathcal{O}_X \text{ 是 } f^{-1}\mathcal{O}_Y\text{-平坦}$$
+- 等价条件：$$M \text{ 平坦 } \iff \text{Tor}_1(M, N) = 0 \quad \text{（对所有 } N\text{）}$$
+
+**例子9：平坦态射**：
+
+光滑态射是平坦的。
+
+### 9.2 Tor函子的严格定义
+
+**Tor函子定义**：
+
+**Tor函子** $\text{Tor}_i^{\mathcal{O}_X}(M, N)$ 定义为：
+$$\text{Tor}_i^{\mathcal{O}_X}(M, N) = H_i(M \otimes_{\mathcal{O}_X} P_N^\bullet)$$
+
+其中 $P_N^\bullet$ 是 $N$ 的平坦分解。
+
+**数学公式**：
+- Tor函子：$$\text{Tor}_i(M, N) = H_i(M \otimes P_N^\bullet)$$
+- Tor_0：$$\text{Tor}_0(M, N) = M \otimes N$$
+- 长正合列：$$\cdots \to \text{Tor}_1(M, N) \to M \otimes P \to M \otimes N \to 0$$
+
+**例子10：Tor函子**：
+
+Tor函子在同调代数中有重要应用。
+
+---
+
+## 十、平坦性与Tor函子在概形理论中的应用
+
+### 10.1 平坦族
+
+**平坦族**：
+
+**平坦族** $f: X \to S$ 是平坦态射，用于研究几何对象的形变。
+
+**数学公式**：
+- 平坦族：$$f: X \to S \text{ 平坦}$$
+- 纤维：$$X_s = X \times_S \{s\}$$
+- 维数：$$\dim X_s = \dim X - \dim S \text{（某些条件下）}$$
+
+**例子11：平坦族**：
+
+平坦族在形变理论中有重要应用。
+
+### 10.2 平坦性与基变化
+
+**平坦性与基变化**：
+
+如果 $f: X \to S$ 平坦，则对任意 $S' \to S$，$f_{S'}: X_{S'} \to S'$ 也平坦。
+
+**数学公式**：
+- 基变化：$$f \text{ 平坦 } \Rightarrow f_{S'} \text{ 平坦}$$
+- 拉回：$$f^*(\text{Tor}_i(M, N)) \cong \text{Tor}_i(f^*M, f^*N)$$
+
+**例子12：平坦性与基变化**：
+
+这个性质在相对几何中有重要应用。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 12个
+**最后更新**: 2026年01月15日

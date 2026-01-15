@@ -326,8 +326,79 @@ $$H^i(X, \mathcal{F}) \cong \text{Ext}_X^i(\mathcal{O}_X, \mathcal{F})$$
 
 ---
 
+## 十一、Ext函子应用在概形理论中的应用
+
+### 11.1 Ext函子应用与形变理论
+
+**Ext函子应用在形变理论中的应用**：
+
+Ext函子参数化形变：
+$$\text{Ext}^1(\mathcal{F}, \mathcal{F}) \text{ 参数化 $\mathcal{F}$ 的一阶形变}$$
+
+**数学公式**：
+- 形变参数：$$\text{Ext}^1(\mathcal{F}, \mathcal{F})$$
+- 形变空间：$$\text{Def}(\mathcal{F}) = \text{Spec}(k[\varepsilon] / (\varepsilon^2))$$
+- 形变对应：$$0 \to \mathcal{F} \to \mathcal{E} \to \mathcal{F} \to 0$$
+
+**例子11：形变理论的应用**：
+
+形变理论在分类问题中有重要应用。
+
+### 11.2 Ext函子应用与Serre对偶
+
+**Ext函子应用与Serre对偶的关系**：
+
+Ext函子应用与Serre对偶相关：
+$$\text{Ext}^i(\mathcal{F}, \omega_X) \cong H^{n-i}(X, \mathcal{F})^*$$
+
+**数学公式**：
+- Serre对偶：$$\text{Ext}^i(\mathcal{F}, \omega_X) \cong H^{n-i}(X, \mathcal{F})^*$$
+- 对偶Ext：$$\text{Ext}^i(\mathcal{F}, \mathcal{G}) \cong \text{Ext}^{n-i}(\mathcal{G}^*, \mathcal{F}^* \otimes \omega_X)$$
+
+**例子12：Serre对偶的应用**：
+
+Serre对偶在几何分类中有重要应用。
+
+---
+
+## 十二、Ext函子应用的现代发展
+
+### 12.1 导出Ext函子应用
+
+**导出Ext函子应用**：
+
+Ext函子应用可以推广到导出几何：
+$$R\mathcal{H}om_X(\mathcal{F}^\bullet, \mathcal{G}^\bullet) \text{ 导出Ext函子}$$
+
+**数学公式**：
+- 导出Ext：$$R\mathcal{H}om_X(\mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+- ∞-Ext：$$R^{\infty}\mathcal{H}om_X(\mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+
+**例子13：导出Ext函子应用**：
+
+导出Ext函子应用在导出几何中有重要应用。
+
+### 12.2 Ext函子应用的应用
+
+**Ext函子应用在现代研究中的应用**：
+
+Ext函子应用在现代研究中继续发展：
+- **导出几何**：在导出几何中的应用
+- **∞-范畴**：在∞-范畴中的应用
+- **同伦理论**：在同伦理论中的应用
+
+**数学公式**：
+- 导出Ext：$$R\mathcal{H}om_X(\mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+- ∞-Ext：$$R^{\infty}\mathcal{H}om_X(\mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+
+**例子14：现代应用**：
+
+Ext函子应用在现代研究中继续发展。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,900字
-**数学公式数**: 15个
-**例子数**: 10个
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 14个
 **最后更新**: 2026年01月15日

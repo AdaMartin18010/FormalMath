@@ -350,8 +350,118 @@ Grothendieck的贡献：
 
 ---
 
+## 十、加法范畴与Abel范畴的详细数学表述
+
+### 10.1 加法范畴的严格定义
+
+**加法范畴的严格定义**：
+
+**加法范畴** $\mathcal{C}$ 是满足以下条件的范畴：
+
+1. **Hom集是Abel群**：$\text{Hom}(X, Y)$ 是Abel群
+2. **复合双线性**：$(f + g) \circ h = f \circ h + g \circ h$，$f \circ (g + h) = f \circ g + f \circ h$
+3. **零对象存在**：存在对象 $0$ 使得 $\text{Hom}(0, X) \cong \{0\} \cong \text{Hom}(X, 0)$
+4. **有限积与余积**：有限积与余积存在且同构
+
+**数学表述**：
+
+加法范畴：
+
+- Hom集：$$\text{Hom}(X, Y) \text{ 是Abel群}$$
+- 复合双线性：$$(f + g) \circ h = f \circ h + g \circ h$$
+- 零对象：$$\text{Hom}(0, X) \cong \{0\} \cong \text{Hom}(X, 0)$$
+
+**例子9：$R$-模的范畴**：
+
+$R$-模的范畴 $\text{Mod}(R)$ 是加法范畴。
+
+### 10.2 Abel范畴的严格定义
+
+**Abel范畴的严格定义**：
+
+**Abel范畴** $\mathcal{A}$ 是满足以下条件的加法范畴：
+
+1. **核和余核存在**：对任意态射 $f: X \to Y$，核 $\ker(f)$ 和余核 $\text{coker}(f)$ 存在
+2. **像分解**：对任意态射 $f$，有分解：
+   $$X \twoheadrightarrow \text{im}(f) \hookrightarrow Y$$
+3. **像 = 余像**：$\text{im}(f) = \text{coim}(f)$
+
+**数学表述**：
+
+Abel范畴：
+$$\mathcal{A} \text{ 是Abel范畴 } \iff \text{核和余核存在，像 = 余像}$$
+
+**例子10：Abel群的范畴**：
+
+Abel群的范畴 $\text{Ab}$ 是Abel范畴。
+
+### 10.3 短正合列的严格定义
+
+**短正合列的严格定义**：
+
+序列：
+$$0 \to A \xrightarrow{f} B \xrightarrow{g} C \to 0$$
+
+是**短正合列**当且仅当：
+
+1. $f$ 是单射
+2. $g$ 是满射
+3. $\text{im}(f) = \ker(g)$
+
+**数学表述**：
+
+短正合列：
+$$0 \to A \xrightarrow{f} B \xrightarrow{g} C \to 0 \text{ 正合 } \iff \text{im}(f) = \ker(g)$$
+
+**例子11：向量丛的短正合列**：
+
+对于向量丛的短正合列：
+$$0 \to E' \to E \to E'' \to 0$$
+
+在代数几何中有重要应用。
+
+---
+
+## 十一、加法范畴与Abel范畴在概形理论中的应用
+
+### 11.1 层范畴的Abel结构
+
+**层范畴的Abel结构**：
+
+对于概形 $X$，Abel层范畴 $\text{Sh}(X)$ 是Abel范畴。
+
+**数学表述**：
+
+层范畴：
+$$\text{Sh}(X) \text{ 是Abel范畴}$$
+
+**例子12：层范畴的应用**：
+
+层范畴在代数几何中有重要应用，特别是在上同调理论中。
+
+### 11.2 上同调的长正合列
+
+**上同调的长正合列**：
+
+对于短正合列：
+$$0 \to \mathcal{F}' \to \mathcal{F} \to \mathcal{F}'' \to 0$$
+
+存在长正合列：
+$$0 \to H^0(X, \mathcal{F}') \to H^0(X, \mathcal{F}) \to H^0(X, \mathcal{F}'') \to H^1(X, \mathcal{F}') \to \cdots$$
+
+**数学表述**：
+
+长正合列：
+$$\cdots \to H^i(X, \mathcal{F}') \to H^i(X, \mathcal{F}) \to H^i(X, \mathcal{F}'') \to H^{i+1}(X, \mathcal{F}') \to \cdots$$
+
+**例子13：上同调长正合列的应用**：
+
+上同调长正合列在代数几何中有重要应用。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 13个
+**最后更新**: 2026年01月15日

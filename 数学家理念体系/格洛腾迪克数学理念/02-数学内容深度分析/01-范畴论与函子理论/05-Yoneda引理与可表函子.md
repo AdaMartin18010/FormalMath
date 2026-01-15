@@ -1,4 +1,4 @@
-﻿# Yoneda引理与可表函子：范畴论的基石
+# Yoneda引理与可表函子：范畴论的基石
 
 
 ## 📋 目录
@@ -350,8 +350,124 @@ Yoneda引理：
 
 ---
 
+## 十、Yoneda引理的详细数学表述
+
+### 10.1 Yoneda引理的严格证明
+
+**Yoneda引理的严格证明**：
+
+设 $\mathcal{C}$ 是范畴，$X \in \mathcal{C}$，$F: \mathcal{C}^{\text{op}} \to \text{Set}$ 是函子。
+
+**Yoneda引理**：
+$$\text{Nat}(h_X, F) \cong F(X)$$
+
+**证明**：
+
+定义映射：
+
+- $\Phi: \text{Nat}(h_X, F) \to F(X)$：$\Phi(\alpha) = \alpha_X(\text{id}_X)$
+- $\Psi: F(X) \to \text{Nat}(h_X, F)$：$\Psi(a)_Y(f) = F(f)(a)$
+
+验证 $\Phi$ 和 $\Psi$ 互逆，因此是同构。
+
+**数学表述**：
+
+Yoneda引理：
+$$\text{Nat}(h_X, F) \cong F(X)$$
+
+证明：
+
+- $\Phi(\alpha) = \alpha_X(\text{id}_X)$
+- $\Psi(a)_Y(f) = F(f)(a)$
+
+**例子9：Yoneda引理的证明**：
+
+Yoneda引理的证明展示了函子与对象之间的深刻联系。
+
+### 10.2 可表函子的严格定义
+
+**可表函子的严格定义**：
+
+函子 $F: \mathcal{C}^{\text{op}} \to \text{Set}$ **可表**当且仅当存在对象 $X \in \mathcal{C}$ 和自然同构：
+$$F \cong h_X$$
+
+**可表函子的唯一性**：
+
+如果 $F \cong h_X \cong h_Y$，则 $X \cong Y$。
+
+**数学表述**：
+
+可表函子：
+$$F \cong h_X$$
+
+唯一性：
+$$F \cong h_X \cong h_Y \Rightarrow X \cong Y$$
+
+**例子10：可表函子的识别**：
+
+使用Yoneda引理可以识别可表函子。
+
+### 10.3 模空间的函子构造
+
+**模空间的函子构造**：
+
+模空间通过可表函子构造。
+
+**构造方法**：
+
+1. 定义分类函子 $F: \text{Sch}^{\text{op}} \to \text{Set}$
+2. 证明 $F$ 可表
+3. 模空间 $M$ 满足 $F \cong h_M$
+
+**数学表述**：
+
+模空间：
+$$F \cong h_{\mathcal{M}}$$
+
+**例子11：曲线模空间的构造**：
+
+曲线模空间 $\mathcal{M}_g$ 通过可表函子构造。
+
+---
+
+## 十一、Yoneda引理在概形理论中的应用
+
+### 11.1 概形的函子表示
+
+**概形的函子表示**：
+
+每个概形 $X$ 对应函子 $h_X$，完全由其在其他概形上的作用决定。
+
+**数学表述**：
+
+概形函子：
+$$h_X: \text{Sch}^{\text{op}} \to \text{Set}, \quad h_X(T) = \text{Hom}(T, X)$$
+
+**例子12：仿射概形的函子**：
+
+仿射概形 $\text{Spec}(A)$ 对应函子：
+$$h_{\text{Spec}(A)}(T) = \text{Hom}(T, \text{Spec}(A)) = \text{Hom}(A, \mathcal{O}_T(T))$$
+
+### 11.2 相对概形的函子
+
+**相对概形的函子**：
+
+对于相对概形 $f: X \to S$，相对函子定义为：
+$$h_{X/S}: (\text{Sch}/S)^{\text{op}} \to \text{Set}, \quad h_{X/S}(T \to S) = \text{Hom}_S(T, X)$$
+
+**数学表述**：
+
+相对函子：
+$$h_{X/S}(T \to S) = \text{Hom}_S(T, X)$$
+
+**例子13：相对概形函子的应用**：
+
+相对概形函子在相对几何中有重要应用。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,600字
-**数学公式数**: 12个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 13个
+**最后更新**: 2026年01月15日

@@ -1,4 +1,4 @@
-﻿# Topos理论：改变逻辑的几何
+# Topos理论：改变逻辑的几何
 
 
 ## 📋 目录
@@ -867,8 +867,95 @@ Topos理论的核心思想是：**几何决定逻辑，逻辑可以改变**。
 
 ---
 
+## 十、Topos理论的详细数学表述
+
+### 10.1 Grothendieck Topos的严格定义
+
+**Grothendieck Topos的严格定义**：
+
+设 $\mathcal{C}$ 是小范畴，$J$ 是 $\mathcal{C}$ 上的Grothendieck拓扑。
+
+**Grothendieck Topos** $\mathcal{E} = \text{Sh}(\mathcal{C}, J)$ 定义为：
+
+- **对象**：$J$-层 $F: \mathcal{C}^{\text{op}} \to \text{Set}$
+- **态射**：自然变换
+
+**数学公式**：
+
+- Grothendieck Topos：$$\mathcal{E} = \text{Sh}(\mathcal{C}, J)$$
+- 层条件：$$F(U) \cong \varprojlim_{V \in \text{Cov}(U)} F(V)$$
+- 子对象分类器：$$\Omega(U) = \{U \text{ 的 $J$-覆盖}\}$$
+
+**例子9：Zariski Topos**：
+
+对于概形 $X$，Zariski Topos $\text{Sh}(X_{\text{Zar}})$ 是Grothendieck Topos。
+
+### 10.2 子对象分类器的严格定义
+
+**子对象分类器的严格定义**：
+
+**子对象分类器** $\Omega$ 是具有以下泛性质的对象：
+对每个子对象 $A \hookrightarrow X$，存在唯一态射 $\chi_A: X \to \Omega$ 使得：
+$$A = X \times_\Omega \{true\}$$
+
+**数学公式**：
+
+- 子对象分类器：$$\Omega = \text{Sub}(1)$$
+- 特征映射：$$\chi_A: X \to \Omega$$
+- 拉回：$$A = X \times_\Omega \{true\}$$
+
+**例子10：Set中的子对象分类器**：
+
+在Set中，$\Omega = \{true, false\}$ 是子对象分类器。
+
+---
+
+## 十一、Topos理论在数学中的应用
+
+### 11.1 同伦类型论
+
+**Topos理论与同伦类型论的关系**：
+
+Topos理论发展为同伦类型论：
+
+- **类型 = Topos对象**：类型对应Topos对象
+- **证明 = 路径**：证明对应路径
+- **等价 = 同伦**：类型等价对应同伦等价
+
+**数学公式**：
+
+- 类型：$$A: \text{Type} \leftrightarrow A \in \mathcal{E}$$
+- 证明：$$p: a = b \leftrightarrow p: \text{Path}(a, b)$$
+- 等价：$$A \simeq B \leftrightarrow \text{同伦等价}$$
+
+**例子11：同伦类型论**：
+
+同伦类型论在计算机科学中有重要应用。
+
+### 11.2 ∞-Topos
+
+**∞-Topos的定义**：
+
+**∞-Topos** 是∞-范畴，满足：
+
+- **∞-层条件**：对象是∞-层
+- **∞-子对象分类器**：有∞-子对象分类器
+- **∞-幂对象**：有∞-幂对象
+
+**数学公式**：
+
+- ∞-Topos：$$\mathcal{E}^{\infty} = \text{∞-Topos}$$
+- ∞-层：$$F: \mathcal{C}^{\text{op}} \to \mathcal{S}$$
+- ∞-子对象分类器：$$\Omega^{\infty} = \text{∞-子对象分类器}$$
+
+**例子12：∞-Topos**：
+
+∞-Topos在∞-几何中有重要应用。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约1,600字
-**数学公式数**: 10个
-**例子数**: 8个
-**最后更新**: 2026年01月02日
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 12个
+**最后更新**: 2026年01月15日

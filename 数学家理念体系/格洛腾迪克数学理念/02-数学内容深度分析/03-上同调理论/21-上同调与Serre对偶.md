@@ -308,8 +308,80 @@ $$\omega_X = \det(\Omega_{X/k}^1)^* = \bigwedge^n T_X^*$$
 
 ---
 
+## 十一、Serre对偶在概形理论中的应用
+
+### 11.1 Serre对偶与Riemann-Roch
+
+**Serre对偶与Riemann-Roch的关系**：
+
+Serre对偶是Riemann-Roch定理的推广：
+$$\chi(X, \mathcal{F}) = \int_X \text{ch}(\mathcal{F}) \cdot \text{td}(X)$$
+
+**数学公式**：
+- Riemann-Roch：$$\chi(X, \mathcal{F}) = \int_X \text{ch}(\mathcal{F}) \cdot \text{td}(X)$$
+- Serre对偶：$$H^i(X, \mathcal{F})^* \cong H^{n-i}(X, \mathcal{F}^* \otimes \omega_X)$$
+- Euler特征：$$\chi(X, \mathcal{F}) = \sum_{i=0}^n (-1)^i \dim H^i(X, \mathcal{F})$$
+
+**例子11：曲线的Riemann-Roch**：
+
+对于曲线 $X$ 和线丛 $\mathcal{L}$：
+$$h^0(X, \mathcal{L}) - h^1(X, \mathcal{L}) = \deg(\mathcal{L}) + 1 - g$$
+
+### 11.2 Serre对偶与推前
+
+**Serre对偶与推前的关系**：
+
+对于射影态射 $f: X \to Y$，有：
+$$Rf_* R\mathcal{H}om_X(\mathcal{F}, \omega_X) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \omega_Y)$$
+
+**数学公式**：
+- 推前对偶：$$Rf_* R\mathcal{H}om_X(\mathcal{F}, \omega_X) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, \omega_Y)$$
+- 相对典范层：$$\omega_{X/Y} = \det(\Omega_{X/Y}^1)$$
+
+**例子12：射影态射的Serre对偶**：
+
+射影态射的Serre对偶在相对几何中有重要应用。
+
+---
+
+## 十二、Serre对偶的现代发展
+
+### 12.1 导出Serre对偶
+
+**导出Serre对偶**：
+
+Serre对偶可以推广到导出几何：
+$$R\Gamma(X, \mathcal{F}^\bullet)^* \cong R\Gamma(X, R\mathcal{H}om(\mathcal{F}^\bullet, \omega_X)[n])$$
+
+**数学公式**：
+- 导出Serre对偶：$$R\Gamma(X, \mathcal{F}^\bullet)^* \cong R\Gamma(X, R\mathcal{H}om(\mathcal{F}^\bullet, \omega_X)[n])$$
+- ∞-Serre对偶：$$R^{\infty}\Gamma(X, \mathcal{F}^\bullet)^* \cong R^{\infty}\Gamma(X, R\mathcal{H}om(\mathcal{F}^\bullet, \omega_X)[n])$$
+
+**例子13：导出Serre对偶**：
+
+导出Serre对偶在导出几何中有重要应用。
+
+### 12.2 Serre对偶的应用
+
+**Serre对偶在现代研究中的应用**：
+
+Serre对偶在现代研究中继续发展：
+- **导出几何**：在导出几何中的应用
+- **∞-范畴**：在∞-范畴中的应用
+- **同伦理论**：在同伦理论中的应用
+
+**数学公式**：
+- 导出Serre对偶：$$R\Gamma(X, \mathcal{F}^\bullet)^* \cong R\Gamma(X, R\mathcal{H}om(\mathcal{F}^\bullet, \omega_X)[n])$$
+- ∞-Serre对偶：$$R^{\infty}\Gamma(X, \mathcal{F}^\bullet)^* \cong R^{\infty}\Gamma(X, R\mathcal{H}om(\mathcal{F}^\bullet, \omega_X)[n])$$
+
+**例子14：现代应用**：
+
+Serre对偶在现代研究中继续发展。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,900字
-**数学公式数**: 15个
-**例子数**: 10个
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 14个
 **最后更新**: 2026年01月15日

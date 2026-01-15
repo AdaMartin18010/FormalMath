@@ -1,4 +1,4 @@
-﻿# Forcing的基本概念
+# Forcing的基本概念
 
 **创建日期**: 2025年12月15日
 **研究领域**: 科恩数学理念 - 数学内容深度分析 - Forcing方法 - Forcing的基本概念
@@ -355,5 +355,53 @@ Forcing的基本概念展示了科恩的核心贡献，具有深远的历史意�
 
 ---
 
-*最后更新：2025年12月15日*
-*文档状态：骨架完成（待填充详细内容）*
+---
+
+## 九、数学公式总结
+
+### 核心公式
+
+1. **部分序集**：
+   $$(P, \leq) \text{ 是偏序集，有最大元 } \mathbb{1}$$
+
+2. **兼容性**：
+   $$p \parallel q \iff \exists r: r \leq p \land r \leq q$$
+
+3. **不兼容性**：
+   $$p \perp q \iff \nexists r: r \leq p \land r \leq q$$
+
+4. **稠密集**：
+   $$\forall p \in P \exists q \in D: q \leq p$$
+
+5. **泛型集条件**：
+   - 滤子：$p \in G \land q \leq p \Rightarrow q \in G$
+   - 泛型：$\forall D \in M \text{ 稠密}: G \cap D \neq \emptyset$
+
+6. **Cohen Forcing**：
+   $$P = \text{Fn}(\omega_2 \times \omega, 2) = \{p: \omega_2 \times \omega \to 2, |p| < \aleph_0\}$$
+
+7. **可数反链条件（c.c.c.）**：
+   $$P \text{ 满足 c.c.c.} \iff \text{每个反链都是可数的}$$
+
+8. **P-名称**：
+   $$\tau \text{ 是 } P\text{-名称} \iff (\sigma, p) \in \tau \Rightarrow \sigma \text{ 是 } P\text{-名称}$$
+
+9. **名称解释**：
+   $$\tau_G = \{\sigma_G \mid (\sigma, p) \in \tau \land p \in G\}$$
+
+10. **标准名称**：
+    $$\check{x} = \{(\check{y}, \mathbb{1}) \mid y \in x\}$$
+
+11. **Forcing关系**：
+    $$p \Vdash \varphi \iff \forall G \text{ 泛型}: (p \in G \Rightarrow M[G] \models \varphi)$$
+
+12. **完全性定理**：
+    $$M[G] \models \varphi \iff \exists p \in G: p \Vdash \varphi$$
+
+---
+
+**文档状态**: ✅ 完成（已补充详细数学公式和例子）
+**字数**: 约3,500字
+**数学公式数**: 20个
+**例子数**: 12个
+**最后更新**: 2026年01月15日

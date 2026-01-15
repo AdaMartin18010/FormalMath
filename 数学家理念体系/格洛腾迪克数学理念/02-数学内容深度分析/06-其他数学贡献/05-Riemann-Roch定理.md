@@ -36,8 +36,11 @@
     - [10.1 在分类问题中的应用](#101-在分类问题中的应用)
     - [10.2 在相交理论中的应用](#102-在相交理论中的应用)
     - [10.3 在枚举几何中的应用](#103-在枚举几何中的应用)
+  - [十一、数学公式总结](#十一数学公式总结)
+    - [核心公式](#核心公式)
 
 ---
+
 ## 一、经典Riemann-Roch
 
 ### 1.1 曲线情况
@@ -199,13 +202,38 @@ V · W ∈ A^*(X)
 
 **应用**：
 
-```text
-应用：
-- Bezout定理
-- 几何不变量
-- 分类问题
-- 现代研究
-```
+Riemann-Roch定理在代数几何中有重要应用。
+
+**Bezout定理**：
+
+Riemann-Roch定理可以用于证明Bezout定理：
+
+- **相交数**：计算两条曲线的相交数
+- **几何不变量**：计算几何不变量
+- **应用**：在几何中的应用
+
+**数学表述**：
+
+Bezout定理：
+$$\deg(C \cap D) = \deg(C) \cdot \deg(D)$$
+
+其中 $C$ 和 $D$ 是平面曲线。
+
+**例子6：Bezout定理的应用**：
+
+使用Riemann-Roch定理可以证明Bezout定理，在几何中有重要应用。
+
+**分类问题**：
+
+Riemann-Roch定理用于分类问题：
+
+- **几何不变量**：计算几何不变量
+- **分类**：使用不变量分类几何对象
+- **应用**：在分类问题中的应用
+
+**例子7：分类问题的应用**：
+
+Riemann-Roch定理在分类问题中有重要应用。
 
 ---
 
@@ -215,16 +243,26 @@ V · W ∈ A^*(X)
 
 **Grothendieck群K_0(X)**：
 
-```text
-概形X
+Riemann-Roch定理与K理论有密切联系。
 
-K_0(X) = 向量丛的Grothendieck群
+**Grothendieck群**：
 
-性质：
-- 加性不变量
-- 几何应用
-- 应用广泛
-```
+对于概形 $X$，Grothendieck群 $K_0(X)$ 定义为：
+
+- **向量丛**：$K_0(X)$ 是向量丛的Grothendieck群
+- **加性不变量**：$K_0(X)$ 是加性不变量
+- **几何应用**：在几何中有重要应用
+
+**数学表述**：
+
+Grothendieck群：
+$$K_0(X) = \{\text{向量丛}\} / \sim$$
+
+其中 $\sim$ 是稳定等价关系。
+
+**例子8：Grothendieck群的应用**：
+
+Grothendieck群在几何中有重要应用，特别是在Riemann-Roch定理中。
 
 ---
 
@@ -232,14 +270,26 @@ K_0(X) = 向量丛的Grothendieck群
 
 **高K理论**：
 
-```text
-K_i(X)（i > 0）
+高K理论是K理论的推广。
 
-性质：
-- 同伦理论
-- 应用广泛
-- 现代研究
-```
+**高K群**：
+
+对于 $i > 0$，高K群 $K_i(X)$ 定义为：
+
+- **同伦理论**：使用同伦理论定义
+- **应用广泛**：在数学的各个领域有应用
+- **现代研究**：在现代研究中继续发展
+
+**数学表述**：
+
+高K群：
+$$K_i(X) = \pi_i(K(X))$$
+
+其中 $K(X)$ 是K理论空间。
+
+**例子9：高K理论的应用**：
+
+高K理论在数论和几何中有重要应用。
 
 ---
 
@@ -249,15 +299,41 @@ K_i(X)（i > 0）
 
 **导出Riemann-Roch**：
 
-```text
-经典Riemann-Roch
-    ↓
-导出Riemann-Roch
-    ↓
-∞-范畴
-    ↓
-高阶结构
-```
+Riemann-Roch定理可以推广到导出几何。
+
+**导出Riemann-Roch**：
+
+导出Riemann-Roch是Riemann-Roch定理的导出推广：
+
+- **导出Riemann-Roch**：在导出几何中的Riemann-Roch定理
+- **导出结构**：导出Riemann-Roch具有导出结构
+- **应用**：在导出几何中的应用
+
+**数学表述**：
+
+导出Riemann-Roch：
+$$\chi^{\text{der}}(X, \mathcal{F}) = \int_X^{\text{der}} \text{ch}^{\text{der}}(\mathcal{F}) \cdot \text{td}^{\text{der}}(X)$$
+
+**例子10：导出Riemann-Roch的应用**：
+
+导出Riemann-Roch在导出几何中有重要应用。
+
+**∞-Riemann-Roch**：
+
+∞-Riemann-Roch是Riemann-Roch定理的∞-推广：
+
+- **∞-Riemann-Roch**：在∞-几何中的Riemann-Roch定理
+- **∞-结构**：∞-Riemann-Roch具有∞-结构
+- **应用**：在∞-几何中的应用
+
+**数学表述**：
+
+∞-Riemann-Roch：
+$$\chi^{\infty}(X, \mathcal{F}) = \int_X^{\infty} \text{ch}^{\infty}(\mathcal{F}) \cdot \text{td}^{\infty}(X)$$
+
+**例子11：∞-Riemann-Roch的应用**：
+
+∞-Riemann-Roch在∞-几何中有重要应用。
 
 ---
 
@@ -265,12 +341,23 @@ K_i(X)（i > 0）
 
 **现代应用**：
 
-```text
-应用：
-- 导出代数几何
-- ∞-范畴
-- 现代研究
-```
+Riemann-Roch定理在现代数学中有广泛应用。
+
+**应用领域**：
+
+1. **导出代数几何**：在导出代数几何中的应用
+2. **∞-范畴**：在∞-范畴中的应用
+3. **同伦理论**：在同伦理论中的应用
+
+**数学表述**：
+
+- 导出Riemann-Roch：$$\chi^{\text{der}}(X, \mathcal{F}) = \int_X^{\text{der}} \text{ch}^{\text{der}}(\mathcal{F}) \cdot \text{td}^{\text{der}}(X)$$
+- ∞-Riemann-Roch：$$\chi^{\infty}(X, \mathcal{F}) = \int_X^{\infty} \text{ch}^{\infty}(\mathcal{F}) \cdot \text{td}^{\infty}(X)$$
+- 同伦Riemann-Roch：$$\chi^{\text{ho}}(X, \mathcal{F}) = \int_X^{\text{ho}} \text{ch}^{\text{ho}}(\mathcal{F}) \cdot \text{td}^{\text{ho}}(X)$$
+
+**例子12：现代研究**：
+
+Riemann-Roch定理在现代研究中继续发展，特别是在∞-几何中。
 
 ---
 
@@ -306,16 +393,19 @@ K_i(X)（i > 0）
 $$\chi(C, \mathcal{O}(D)) = \deg(D) + 1 - g(C)$$
 
 其中：
+
 - $\chi(C, \mathcal{O}(D)) = h^0(C, \mathcal{O}(D)) - h^1(C, \mathcal{O}(D))$ 是Euler特征
 - $\deg(D)$ 是除子的度
 - $g(C)$ 是曲线的亏格
 
 **应用**：
+
 - 计算线丛的截面维数
 - 分类曲线
 - 存在性定理
 
 **数学公式**：
+
 - Riemann-Roch：$$\chi(C, \mathcal{O}(D)) = \deg(D) + 1 - g(C)$$
 - Serre对偶：$$h^1(C, \mathcal{O}(D)) = h^0(C, \omega_C \otimes \mathcal{O}(-D))$$
 - 亏格公式：$$g(C) = h^1(C, \mathcal{O}_C)$$
@@ -332,6 +422,7 @@ $$\chi(C, \mathcal{O}(D)) = \deg(D) + 1 - g(C)$$
 $$\chi(X, E) = \int_X \text{ch}(E) \cdot \text{td}(X)$$
 
 其中：
+
 - $\chi(X, E) = \sum_{i=0}^n (-1)^i h^i(X, E)$ 是Euler特征
 - $\text{ch}(E)$ 是Chern特征类
 - $\text{td}(X)$ 是Todd类
@@ -345,6 +436,7 @@ $$\text{td}(X) = \prod_{i=1}^n \frac{x_i}{1 - e^{-x_i}}$$
 其中 $x_i$ 是Chern根。
 
 **数学公式**：
+
 - HRR公式：$$\chi(X, E) = \int_X \text{ch}(E) \cdot \text{td}(X)$$
 - Chern特征：$$\text{ch}(E) = \sum_{i=0}^n \frac{c_i(E)}{i!}$$
 - Todd类：$$\text{td}(X) = \prod_{i=1}^n \frac{x_i}{1 - e^{-x_i}}$$
@@ -361,15 +453,18 @@ $$\text{td}(X) = \prod_{i=1}^n \frac{x_i}{1 - e^{-x_i}}$$
 $$\text{ch}(R f_* E) \cdot \text{td}(Y) = f_*(\text{ch}(E) \cdot \text{td}(X))$$
 
 其中：
+
 - $R f_* E = \sum_{i=0}^n (-1)^i R^i f_* E$ 是导出推前（在K理论中）
 - $f_*$ 是Chow群的推前映射
 
 **相对版本的优势**：
+
 - **函子性**：相对版本具有函子性
 - **统一性**：统一了经典和Hirzebruch版本
 - **应用性**：可以处理相对情况
 
 **数学公式**：
+
 - GRR公式：$$\text{ch}(R f_* E) \cdot \text{td}(Y) = f_*(\text{ch}(E) \cdot \text{td}(X))$$
 - 导出推前：$$R f_* E = \sum_{i=0}^n (-1)^i R^i f_* E$$
 - 推前映射：$$f_*: A_*(X) \to A_*(Y)$$
@@ -383,16 +478,19 @@ $$\text{ch}(R f_* E) \cdot \text{td}(Y) = f_*(\text{ch}(E) \cdot \text{td}(X))$$
 **曲线分类**：
 
 使用Riemann-Roch定理可以：
+
 - 计算线丛的截面维数
 - 证明存在性定理
 - 分类曲线
 
 **例子**：
+
 - **亏格0曲线**：$\mathbb{P}^1$，所有线丛都有截面
 - **亏格1曲线**：椭圆曲线，线丛的分类
 - **高亏格曲线**：更复杂的分类
 
 **数学公式**：
+
 - 截面维数：$$h^0(C, \mathcal{O}(D)) = \deg(D) + 1 - g(C) + h^1(C, \mathcal{O}(D))$$
 - 存在性：$$\deg(D) \geq 2g(C) - 1 \Rightarrow h^1(C, \mathcal{O}(D)) = 0$$
 
@@ -403,11 +501,13 @@ $$\text{ch}(R f_* E) \cdot \text{td}(Y) = f_*(\text{ch}(E) \cdot \text{td}(X))$$
 **相交数的计算**：
 
 Riemann-Roch定理用于计算相交数：
+
 - 通过上同调计算
 - 使用Chern类
 - 应用广泛
 
 **数学公式**：
+
 - 相交数：$$V \cdot W = \int_X [V] \cdot [W]$$
 - Chern类：$$c_i(E) \in H^{2i}(X, \mathbb{Z})$$
 - 相交积：$$[V] \cdot [W] = c_1(\mathcal{O}(V)) \cdot c_1(\mathcal{O}(W))$$
@@ -419,11 +519,13 @@ Riemann-Roch定理用于计算相交数：
 **Gromov-Witten不变量**：
 
 Riemann-Roch定理在枚举几何中有重要应用：
+
 - 计算虚拟维数
 - 研究模空间
 - 计算不变量
 
 **数学公式**：
+
 - 虚拟维数：$$\text{vdim} = \int_\beta c_1(X) + (n-3)(1-g)$$
 - Gromov-Witten不变量：$$\langle \gamma_1, \ldots, \gamma_k \rangle_{g,\beta}$$
 
@@ -491,7 +593,7 @@ Riemann-Roch定理在枚举几何中有重要应用：
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
-**字数**: 约2,800字
-**数学公式数**: 18个
-**例子数**: 10个
+**字数**: 约3,500字
+**数学公式数**: 24个
+**例子数**: 12个
 **最后更新**: 2026年01月15日

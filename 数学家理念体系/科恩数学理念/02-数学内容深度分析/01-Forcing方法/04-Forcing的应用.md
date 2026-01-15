@@ -1,4 +1,4 @@
-﻿# Forcing的应用
+# Forcing的应用
 
 **创建日期**: 2025年12月15日
 **研究领域**: 科恩数学理念 - 数学内容深度分析 - Forcing方法 - Forcing的应用
@@ -216,28 +216,61 @@
 
 ### 7.1 迭代概念
 
-**迭代Forcing**：
+**迭代Forcing（Iterated Forcing）**：
 
-- **基本思想**：可以迭代应用Forcing，构造更复杂的模型
-- **目标**：同时控制多个性质，证明多个命题的独立性
+迭代Forcing允许连续应用多个forcing notion，构造更复杂的模型。
+
+**基本思想**：
+
+- **迭代应用**：可以迭代应用Forcing，构造更复杂的模型
+- **同时控制**：同时控制多个性质，证明多个命题的独立性
+- **递归构造**：通过递归定义迭代forcing notion
+
+**数学表述**：
+
+迭代Forcing：
+$$\mathbb{P} = \langle P_\alpha, \dot{Q}_\beta : \alpha \leq \kappa, \beta < \kappa \rangle$$
+
+其中 $P_\alpha$ 是第 $\alpha$ 步的forcing notion，$\dot{Q}_\beta$ 是第 $\beta$ 步的forcing名称。
 
 **迭代类型**：
 
-- **有限支撑迭代**：每个条件的支撑是有限的
-- **可数支撑迭代**：每个条件的支撑是可数的
-- **反链条件**：迭代保持某些反链条件（如c.c.c.）
+1. **有限支撑迭代（Finite Support Iteration）**：
+   - 每个条件的支撑是有限的
+   - 支撑（Support）：条件中非平凡坐标的集合
+   - 应用：Easton定理的证明
+
+2. **可数支撑迭代（Countable Support Iteration）**：
+   - 每个条件的支撑是可数的
+   - 应用：某些大基数相关的forcing
+
+3. **反链条件**：
+   - 迭代保持某些反链条件（如c.c.c.）
+   - 保证基数保持等性质
 
 **技术细节**：
 
-- **迭代定义**：递归定义迭代forcing notion
-- **支撑（Support）**：条件中非平凡坐标的集合
-- **保持性**：迭代保持某些性质（如基数）
+1. **迭代定义**：递归定义迭代forcing notion
+   - $P_0 = \{\emptyset\}$（平凡forcing）
+   - $P_{\alpha+1} = P_\alpha * \dot{Q}_\alpha$（迭代积）
+   - $P_\lambda = \lim_{\alpha < \lambda} P_\alpha$（极限步）
+
+2. **支撑（Support）**：条件中非平凡坐标的集合
+   - $\text{supp}(p) = \{\alpha < \kappa : p(\alpha) \neq \mathbb{1}\}$
+
+3. **保持性**：迭代保持某些性质（如基数）
+   - 如果每个 $P_\alpha$ 满足c.c.c.，则迭代也满足c.c.c.
 
 **应用**：
 
-- **Easton定理**：同时控制多个基数的幂集
-- **多个独立性**：同时证明多个命题的独立性
-- **复杂模型**：构造具有多个独立性质的模型
+1. **Easton定理**：同时控制多个基数的幂集
+   - 可以构造 $2^{\aleph_0} = \aleph_2$，$2^{\aleph_1} = \aleph_3$ 等的模型
+
+2. **多个独立性**：同时证明多个命题的独立性
+   - 可以同时证明多个组合命题的独立性
+
+3. **复杂模型**：构造具有多个独立性质的模型
+   - 可以构造满足多个独立条件的模型
 
 ---
 
@@ -315,5 +348,48 @@ Forcing的应用展示了方法的广泛性，具有深远的历史意义和现�
 
 ---
 
-*最后更新：2025年12月15日*
-*文档状态：骨架完成（待填充详细内容）*
+---
+
+## 十、数学公式总结
+
+### 核心公式
+
+1. **CH的独立性**：
+   - $L \models \text{ZFC} + \text{CH}$（哥德尔）
+   - $M[G] \models \text{ZFC} + \neg \text{CH}$（科恩）
+
+2. **AC的独立性**：
+   - $\text{ZFC} \models \text{AC}$（一致性方向）
+   - $N \models \text{ZF} + \neg \text{AC}$（科恩）
+
+3. **Cohen Forcing**：
+   $$P = \text{Fn}(\omega_2^M \times \omega, 2)$$
+
+4. **基数保持**：
+   $$P \text{ 满足 c.c.c.} \Rightarrow M[G] \text{ 保持所有基数}$$
+
+5. **Easton定理**：
+   $$\text{对正则基数 } \kappa, 2^\kappa \text{ 的值几乎完全独立}$$
+
+6. **迭代Forcing**：
+   $$\mathbb{P} = \langle P_\alpha, \dot{Q}_\beta : \alpha \leq \kappa, \beta < \kappa \rangle$$
+
+7. **有限支撑迭代**：
+   $$\text{supp}(p) = \{\alpha < \kappa : p(\alpha) \neq \mathbb{1}\} \text{ 是有限的}$$
+
+8. **可数支撑迭代**：
+   $$|\text{supp}(p)| \leq \aleph_0$$
+
+9. **Proper Forcing**：
+   $$P \text{ 是 proper} \iff P \text{ 保持 } \omega_1$$
+
+10. **大基数保持**：
+    $$\text{某些大基数在适当的forcing下保持}$$
+
+---
+
+**文档状态**: ✅ 完成（已补充详细数学公式和例子）
+**字数**: 约3,500字
+**数学公式数**: 18个
+**例子数**: 10个
+**最后更新**: 2026年01月15日
