@@ -360,9 +360,9 @@ z₁·z₂ = (1+i)·i = i + i² = -1 + i
 
 步骤3：连续性论证
 ┌─────────────────────────────────┐
-│  当R从∞→0连续变化时，环绕数从n→0   │
-│  必须经历"跳跃"点                  │
-│  跳跃点对应P(z)=0                  │
+│  当R从∞→0连续变化时，环绕数从n→0  │
+│  必须经历"跳跃"点                │
+│  跳跃点对应P(z)=0                │
 └─────────────────────────────────┘
 
 步骤4：至少存在一个根
@@ -422,9 +422,9 @@ z₁·z₂ = (1+i)·i = i + i² = -1 + i
 
 数学本质：
 ┌─────────────────────────────────────┐
-│  每增加一个约束，几何学失去一些普遍性   │
+│  每增加一个约束，几何学失去一些普遍性  │
 │  但获得更多可度量的性质               │
-│  这是"一般性"与"丰富性"的权衡          │
+│  这是"一般性"与"丰富性"的权衡         │
 └─────────────────────────────────────┘
 ```
 
@@ -619,7 +619,7 @@ mindmap
 
 #### （1）如何学习Klein几何统一思想？
 
-```
+```text
 如何学习Klein几何统一思想？
 ├─当前数学背景？
 │  ├─初中水平
@@ -721,7 +721,7 @@ mindmap
 
 #### （2）几何问题求解决策树
 
-```
+```text
 遇到几何问题如何选择Klein方法？
 ├─问题类型？
 │  ├─证明图形全等
@@ -897,7 +897,7 @@ mindmap
 Klein思想 → 物理对称性 论证图（网络结构）
 
 ┌─────────────────────────────────────────┐
-│      Klein核心思想                        │
+│      Klein核心思想                       │
 │   变换群 + 不变量 = 几何本质              │
 └─────────┬───────────────────────────────┘
           │
@@ -987,7 +987,7 @@ Klein思想 → 物理对称性 论证图（网络结构）
 Klein思想 → 计算机科学 论证图
 
 ┌────────────────────────────────┐
-│   Klein核心：变换群 + 不变量   │
+│   Klein核心：变换群 + 不变量    │
 └──────┬─────────────────────────┘
        │
        ├─→ 【应用1】计算机图形学
@@ -1342,9 +1342,9 @@ Klein思想 → 计算机科学 论证图
 
 逻辑漏洞：
 ┌─────────────────────────────────────┐
-│  前提2是**定义性**的（由克莱因自己定义）  │
-│  结论依赖前提2 → **循环论证**           │
-│  回避问题：何为"直接意义"？            │
+│  前提2是**定义性**的（由克莱因自己定义）│
+│  结论依赖前提2 → **循环论证**         │
+│  回避问题：何为"直接意义"？           │
 └─────────────────────────────────────┘
 ```
 
@@ -1358,18 +1358,18 @@ Klein思想 → 计算机科学 论证图
 
 ┌─────────────────────────────────┐
 │  前提2：无理数在近似数学中无直接意义  │
-│  （这是克莱因的定义）                │
+│  （这是克莱因的定义）             │
 └──────────┬──────────────────────┘
            │
            ↓
 ┌─────────────────────────────────┐
-│  结论：问题属于精确数学            │
+│  结论：问题属于精确数学           │
 └──────────┬──────────────────────┘
            │
            ↓
 ┌─────────────────────────────────┐
-│  但"直接意义"的定义本身需要论证      │
-│  → 循环论证！                      │
+│  但"直接意义"的定义本身需要论证    │
+│  → 循环论证！                    │
 └─────────────────────────────────┘
 ```
 
@@ -1408,10 +1408,10 @@ Klein思想 → 计算机科学 论证图
 
 批判：
 ┌─────────────────────────────────┐
-│  历史充满偶然性（如复数被拒300年）  │
-│  认知研究显示不同路径              │
-│  逻辑顺序是事后重构                │
-│  → 发生学谬误！                    │
+│  历史充满偶然性（如复数被拒300年） │
+│  认知研究显示不同路径             │
+│  逻辑顺序是事后重构               │
+│  → 发生学谬误！                  │
 └─────────────────────────────────┘
 ```
 
@@ -2421,7 +2421,7 @@ graph TB
 1. **Cohen, T. S., & Welling, M. (2016)**. "Group Equivariant Convolutional Networks". ICML 2016.
    - 开创性工作
    - 将群表示论引入CNN
-   - 代码：https://github.com/tscohen/gconv_experiments
+   - 代码：<https://github.com/tscohen/gconv_experiments>
 
 2. **Weiler, M., et al. (2018)**. "3D Steerable CNNs: Learning Rotationally Equivariant Features in Volumetric Data". NeurIPS 2018.
    - 3D等变网络
@@ -2473,11 +2473,11 @@ graph TB
 **研究机构**：
 
 - **International Commission on Mathematical Instruction (ICMI)**
-  - 网站：https://www.mathunion.org/icmi
+  - 网站：<https://www.mathunion.org/icmi>
   - 活动：ICME（国际数学教育大会）
 
 - **European Society for Research in Mathematics Education (ERME)**
-  - 网站：https://erme.site/
+  - 网站：<https://erme.site/>
   - 活动：CERME（欧洲数学教育研究大会）
 
 - **中国数学教育研究会**
@@ -2495,7 +2495,7 @@ graph TB
 **项目成果**：
 
 1. **Klein Project网站**：
-   - URL: https://www.kleinproject.org/
+   - URL: <https://www.kleinproject.org/>
    - 内容：教学资源、案例研究、教师培训材料
 
 2. **出版物**：
@@ -2643,34 +2643,34 @@ graph TB
 
 #### 几何深度学习
 
-4. **Bronstein, M. M., et al. (2021)**. "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges". arXiv:2104.13478.
+1. **Bronstein, M. M., et al. (2021)**. "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges". arXiv:2104.13478.
    - 几何深度学习综述
    - 系统介绍等变神经网络
    - 与Klein纲领的关联
 
-5. **Cohen, T. S., & Welling, M. (2016)**. "Group Equivariant Convolutional Networks". ICML 2016.
+2. **Cohen, T. S., & Welling, M. (2016)**. "Group Equivariant Convolutional Networks". ICML 2016.
    - 等变神经网络开创性工作
    - 将Klein对称性思想应用到深度学习
 
-6. **Weiler, M., et al. (2018)**. "3D Steerable CNNs: Learning Rotationally Equivariant Features in Volumetric Data". NeurIPS 2018.
+3. **Weiler, M., et al. (2018)**. "3D Steerable CNNs: Learning Rotationally Equivariant Features in Volumetric Data". NeurIPS 2018.
    - 3D旋转等变网络
    - 应用：医学图像、3D形状
 
-7. **Fuchs, F., et al. (2020)**. "SE(3)-Transformers: 3D Roto-Translation Equivariant Attention Networks". NeurIPS 2020.
+4. **Fuchs, F., et al. (2020)**. "SE(3)-Transformers: 3D Roto-Translation Equivariant Attention Networks". NeurIPS 2020.
    - SE(3)等变Transformer
    - AlphaFold 2的关键技术
 
-8. **Ruhe, D., et al. (2024)**. "Multivector Neurons: Better and Faster O(n)-Equivariant Clifford Graph Neural Networks". arXiv:2406.04052.
+5. **Ruhe, D., et al. (2024)**. "Multivector Neurons: Better and Faster O(n)-Equivariant Clifford Graph Neural Networks". arXiv:2406.04052.
    - 最新进展：Clifford代数方法
    - 性能提升显著
 
 #### 数学教育
 
-9. **Kilpatrick, J. (2012)**. "The Double Discontinuity in Mathematics Teacher Education". In *ICME-11 Proceedings*.
+1. **Kilpatrick, J. (2012)**. "The Double Discontinuity in Mathematics Teacher Education". In *ICME-11 Proceedings*.
    - 讨论Klein的"双重不连续性"问题
    - 现代数学教师教育
 
-10. **Klein Project (ICMI)**. *The Klein Project: Connecting Contemporary Mathematics with School Teaching*.
+2. **Klein Project (ICMI)**. *The Klein Project: Connecting Contemporary Mathematics with School Teaching*.
     - ICMI项目成果
     - 现代Klein思想应用
 
@@ -2679,11 +2679,11 @@ graph TB
 #### 历史与传记
 
 1. **MacTutor History of Mathematics**:
-   - URL: https://mathshistory.st-andrews.ac.uk/Biographies/Klein/
+   - URL: <https://mathshistory.st-andrews.ac.uk/Biographies/Klein/>
    - 内容：Klein详细传记、主要贡献、时间线
 
 2. **Encyclopedia of Mathematics**:
-   - URL: https://encyclopediaofmath.org/wiki/Klein,_Felix
+   - URL: <https://encyclopediaofmath.org/wiki/Klein,_Felix>
    - 内容：Klein数学贡献、理论条目
 
 3. **Wikipedia**:
@@ -2692,41 +2692,41 @@ graph TB
 
 #### 可视化工具
 
-4. **GeoGebra**:
-   - URL: https://www.geogebra.org/
+1. **GeoGebra**:
+   - URL: <https://www.geogebra.org/>
    - 功能：变换群可视化、对称性演示、动态几何
    - 应用：Klein教学的核心工具
 
-5. **Desmos**:
-   - URL: https://www.desmos.com/
+2. **Desmos**:
+   - URL: <https://www.desmos.com/>
    - 功能：函数图像、变换演示
 
-6. **Wolfram Demonstrations**:
-   - URL: https://demonstrations.wolfram.com/
+3. **Wolfram Demonstrations**:
+   - URL: <https://demonstrations.wolfram.com/>
    - 内容：Klein相关数学演示
 
 #### 教育项目
 
-7. **Klein Project (ICMI)**:
-   - URL: https://www.kleinproject.org/
+1. **Klein Project (ICMI)**:
+   - URL: <https://www.kleinproject.org/>
    - 内容：现代Klein思想应用、教学资源
 
-8. **ICMI (International Commission on Mathematical Instruction)**:
-   - URL: https://www.mathunion.org/icmi
+2. **ICMI (International Commission on Mathematical Instruction)**:
+   - URL: <https://www.mathunion.org/icmi>
    - 内容：国际数学教育研究
 
 #### 学术资源
 
-9. **arXiv.org**:
+1. **arXiv.org**:
    - 搜索：Klein, Erlangen Program, Equivariant Neural Networks
    - 最新研究论文
 
-10. **MathSciNet**:
-    - URL: https://mathscinet.ams.org/
+2. **MathSciNet**:
+    - URL: <https://mathscinet.ams.org/>
     - 内容：数学文献数据库
 
-11. **zbMATH Open**:
-    - URL: https://zbmath.org/
+3. **zbMATH Open**:
+    - URL: <https://zbmath.org/>
     - 内容：免费数学文献数据库
 
 ---
