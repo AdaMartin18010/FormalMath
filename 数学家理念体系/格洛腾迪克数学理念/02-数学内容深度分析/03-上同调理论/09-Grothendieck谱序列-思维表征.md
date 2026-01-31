@@ -1,47 +1,108 @@
-# Grothendieck谱序列：思维表征
+# Grothendieck谱序列：思维表征与可复用模板
 
-**关联文档**：[09-Grothendieck谱序列](./09-Grothendieck谱序列.md) · 同名网络对齐报告
+**文档类型**：思维表征 · 概念矩阵 · 决策树 · 概念树 · 公理–定理树 · 术语表
+**关联文档**：[09-Grothendieck谱序列](./09-Grothendieck谱序列.md) · [09-Grothendieck谱序列-网络对齐与批判性意见报告](./09-Grothendieck谱序列-网络对齐与批判性意见报告.md)
+**创建日期**：2026年01月31日
+**最后更新**：2026年01月31日
 
 ---
 
-## 📋 术语表
+## 一、术语与符号表（中英对照）
 
 | 中文 | 英文 | 符号/备注 |
 |------|------|-----------|
-| Grothendieck 谱序列 | Grothendieck spectral sequence | 复合函子 $G \circ F$ |
-| $E_2$ 页 | $E_2$ page | $E_2^{p,q} = R^p G(R^q F(-))$ |
-| Leray-Grothendieck | Leray-Grothendieck | $R^p f_* R^q g_* \Rightarrow R^{p+q}(fg)_*$ |
-| 退化条件 | Degeneration | $F$  sends 内射到 $G$-非循环 |
+| Grothendieck 谱序列 | Grothendieck spectral sequence | 复合函子 G∘F 的 R(G∘F) |
+| 复合函子 | composite functor | G∘F；R^p G(R^q F(-)) ⇒ R^{p+q}(G∘F)(-) |
+| 滤过 | filtration | F^p H^n，E_∞^{p,q} ≅ F^p/F^{p+1} |
+| 退化 | degeneration | E_2=E_∞ 等，便于计算 |
 
 ---
 
-## 🌳 概念树
+## 二、多维概念对比矩阵
+
+### 2.1 Grothendieck 谱序列 vs Leray vs Hochschild–Serre
+
+| 维度 | Grothendieck | Leray | Hochschild–Serre |
+|------|--------------|-------|-----------------|
+| **输入** | 复合函子 G∘F | 态射 f、层 F | 群扩张 1→N→G→Q→1 |
+| **E_2** | R^p G(R^q F(A)) | H^p(Y, R^q f_* F) | H^p(Q, H^q(N, -)) |
+| **收敛到** | R^{p+q}(G∘F)(A) | H^{p+q}(X, F) | H^{p+q}(G, -) |
+
+### 2.2 概念层次（Grothendieck 谱序列 → 应用）
+
+| 概念 | 含义 | 与其它篇关系 |
+|------|------|--------------|
+| 复合函子谱序列 | R(G∘F) 由 R^p G(R^q F) 逼近 | 05-谱序列与 Leray；06-导出版 |
+| Leray 特例 | Γ(Y, -)∘f_* 的谱序列即 Leray | 01-层上同调；23-Leray 应用 |
+
+---
+
+## 三、决策树图（何时用 Grothendieck 谱序列）
 
 ```text
-Grothendieck谱序列
-├── 复合函子 G∘F
-│   ├── $F: \mathcal{A} \to \mathcal{B}$，$G: \mathcal{B} \to \mathcal{C}$
-│   ├── $E_2^{p,q} = R^p G(R^q F(A))$
-│   └── $\Rightarrow R^{p+q}(GF)(A)$
-├── Leray-Grothendieck 特例
-│   ├── $f: X \to Y$，$g: Y \to Z$
-│   ├── $E_2^{p,q} = R^p g_* R^q f_* \mathcal{F}$
-│   └── $\Rightarrow R^{p+q}(gf)_* \mathcal{F}$
-├── 退化条件
-│   └── $R^q F(I)$ 为 $G$-非循环
-└── 05-谱序列与Leray谱序列、23-上同调与Leray谱序列应用
+                    [目标：计算 R^*(G∘F) 或 RΓ(Rf_* F)]
+                                    |
+            +-----------------------+-----------------------+
+            |                       |                       |
+      [复合函子 G∘F]            [Leray 特例]            [滤过/退化]
+            |                       |                       |
+      R^p G(R^q F(-))           H^p(Y,R^q f_* F)          E_2=E_∞
+      ⇒ R^{p+q}(G∘F)(-)         ⇒ H^{p+q}(X,F)            计算简化
+            |                       |                       |
+            +-----------------------+-----------------------+
+                                    |
+                    [工具：05-谱序列与Leray、06-导出版、23-应用]
 ```
 
 ---
 
-## 📊 多维矩阵：谱序列来源
+## 四、概念树图（Grothendieck 谱序列概念依赖）
 
-| 来源 | 复合 | $E_2$ |
-|------|------|-------|
-| Leray | $f: X \to Y$ | $H^p(Y, R^q f_*)$ |
-| Grothendieck | $G \circ F$ | $R^p G R^q F$ |
-| 滤过 | 滤过复形 | $H^{p+q}(\mathrm{gr})$ |
+```text
+Grothendieck 谱序列
+├── 复合函子
+│   ├── G∘F，F 送内射入 G-非零对象等
+│   └── R^p G(R^q F(-)) ⇒ R^{p+q}(G∘F)(-)
+│
+├── Leray 特例
+│   ├── Γ(Y,-)∘f_*，R^q f_* 为高阶推前
+│   └── E_2^{p,q}=H^p(Y, R^q f_* F) ⇒ H^{p+q}(X, F)
+│
+├── 滤过与收敛
+│   ├── F^p H^n、E_∞^{p,q} ≅ F^p H^{p+q}/F^{p+1}
+│   └── 退化条件 E_2=E_∞
+│
+└── 交叉引用
+    ├── 01-层上同调基础
+    ├── 05-谱序列与Leray谱序列
+    ├── 06-导出版上同调
+    └── 23-上同调与Leray谱序列应用
+```
 
 ---
 
-**字数**: 约 510 字 | **数学公式**: 5+ | **最后更新**: 2026-01-31
+## 五、公理–定理–证明树图（核心逻辑链）
+
+```text
+[设定] A→F→B→G→C，F 右正合、G 左正合；F 送 A 的内射入 G-非零对象（或满足合适条件）.
+
+A1. 复合函子: (G∘F)(A)=G(F(A))；右导出 R^i(G∘F).
+A2. 谱序列: 存在 E_2^{p,q}=R^p G(R^q F(A)) ⇒ R^{p+q}(G∘F)(A).
+
+        |--- 定理 T1 (Grothendieck 谱序列): 上述 E_2 收敛到 R^*(G∘F)(A)，滤过由 F 的消解给出.
+        |
+        |--- 定理 T2 (Leray): f: X→Y，F 层，则 Γ(Y,-)∘f_* 的谱序列为 Leray；E_2^{p,q}=H^p(Y,R^q f_* F) ⇒ H^{p+q}(X,F).
+        |
+        └--- 定理 T3 (退化): 当 R^q f_* F=0（q>0）等条件时 E_2=E_∞，H^*(X,F)≅H^*(Y,f_* F).
+```
+
+---
+
+## 六、使用说明与复用
+
+- **正文**：概念与证明以 [09-Grothendieck谱序列](./09-Grothendieck谱序列.md) 为准；本页为配套思维表征与检索用。
+- **对齐与批判**：见 [09-Grothendieck谱序列-网络对齐与批判性意见报告](./09-Grothendieck谱序列-网络对齐与批判性意见报告.md)。
+- **交叉引用**：[01-层上同调基础](./01-层上同调基础.md)；[05-谱序列与Leray谱序列](./05-谱序列与Leray谱序列.md)；[23-上同调与Leray谱序列应用](./23-上同调与Leray谱序列应用.md)。
+
+**文档状态**：思维表征独立页 v1
+**最后更新**：2026年01月31日

@@ -1,47 +1,109 @@
-# 上同调与Grothendieck对偶：思维表征
+# 上同调与Grothendieck对偶：思维表征与可复用模板
 
-**关联文档**：[22-上同调与Grothendieck对偶](./22-上同调与Grothendieck对偶.md) · 同名网络对齐报告
+**文档类型**：思维表征 · 概念矩阵 · 决策树 · 概念树 · 公理–定理树 · 术语表
+**关联文档**：[22-上同调与Grothendieck对偶](./22-上同调与Grothendieck对偶.md) · [22-上同调与Grothendieck对偶-网络对齐与批判性意见报告](./22-上同调与Grothendieck对偶-网络对齐与批判性意见报告.md)
+**创建日期**：2026年01月31日
+**最后更新**：2026年01月31日
 
 ---
 
-## 📋 术语表
+## 一、术语与符号表（中英对照）
 
 | 中文 | 英文 | 符号/备注 |
 |------|------|-----------|
-| Grothendieck 对偶 | Grothendieck duality | $Rf_* \dashv f^!$，六函子 |
-| 例外拉回 | Exceptional inverse image | $f^!$ |
-| 推出 | Pushforward | $Rf_*$ |
-| 对偶公式 | Duality formula | $\mathrm{Hom}(Rf_* \mathcal{F}, \mathcal{G}) \cong \mathrm{Hom}(\mathcal{F}, f^! \mathcal{G})$ |
+| Grothendieck 对偶 | Grothendieck duality | Rf_* 与 f^!、RHom 关系 |
+| 例外拉回 | exceptional pullback | f^!、右伴 f_!、对偶izing 复形 |
+| 对偶izing 复形 | dualizing complex | ω_{X/Y}^· 或 f^! O_Y |
+| 固有态射 | proper morphism | f 固有、Rf_*=Rf_!（凝聚层） |
 
 ---
 
-## 🌳 概念树
+## 二、多维概念对比矩阵
+
+### 2.1 Grothendieck 对偶 vs Serre 对偶 vs 六函子
+
+| 维度 | Grothendieck 对偶 | Serre 对偶 | 六函子 |
+|------|-------------------|------------|--------|
+| **输入** | 态射 f: X→Y | 射影 X→Spec k | f^*, f_*, f_!, f^! |
+| **核心** | Rf_* RHom(F,f^! G)≅RHom(Rf_* F,G) | H^i(F)≅H^{n-i}(F^∨⊗ω_X)^∨ | 伴随、投影公式 |
+| **篇目** | 22 本篇 | 21-Serre | 15-函子关系 |
+
+### 2.2 概念层次（Grothendieck 对偶 → 应用）
+
+| 概念 | 含义 | 与其它篇关系 |
+|------|------|--------------|
+| f^! | 例外拉回、f_! 的右伴、对偶izing | 15-函子关系；21-Serre（f: X→Spec k 时 f^! k≅ω_X[n]） |
+| 对偶公式 | Rf_* RHom(F,f^! G)≅RHom(Rf_* F,G) | 19-Ext、RHom；21-Serre 的相对推广 |
+| 对偶izing 复形 | ω_{X/Y}^·、f^! O_Y | 光滑时与 ω_X、K_X 相关 |
+
+---
+
+## 三、决策树图（何时用 Grothendieck 对偶）
 
 ```text
-上同调与Grothendieck对偶
-├── Grothendieck 对偶
-│   ├── $f: X \to Y$ 紧合态射
-│   ├── $Rf_* \dashv f^!$（导出范畴中）
-│   └── 对偶公式
-├── 例外拉回 f^!
-│   ├── 右伴随于 $Rf_*$
-│   ├── 对偶化复形 $\omega_{X/Y}$
-│   └── 光滑时：$f^! = f^* \otimes \omega_{X/Y}[n]$
-├── 与 Serre 对偶
-│   └── Serre = Grothendieck 对 $X \to \mathrm{pt}$
-└── 06-导出版上同调、11-上同调与对偶理论、21-上同调与Serre对偶
+                    [目标：固有态射 f 的 Rf_* 与 f^!、对偶公式]
+                                    |
+            +-----------------------+-----------------------+
+            |                       |                       |
+      [固有 f: X→Y]             [f^!、对偶izing]        [RHom、Ext]
+            |                       |                       |
+      Rf_* 与 f^!                 f_! ⊣ f^!                Rf_* RHom(F,f^! G)
+      Grothendieck 对偶          对偶izing 复形           ≅ RHom(Rf_* F,G)
+            |                       |                       |
+            +-----------------------+-----------------------+
+                                    |
+                    [工具：15-函子关系、19-Ext、21-Serre对偶]
 ```
 
 ---
 
-## 📊 六函子速查
+## 四、概念树图（上同调与 Grothendieck 对偶概念依赖）
 
-| 函子 | 符号 | 左/右伴 |
-|------|------|---------|
-| 拉回 | $f^*$ | $f_*$ |
-| 推出 | $Rf_*$ | $f^!$ |
-| 例外推 | $f_!$ | $f^!$ |
+```text
+上同调与 Grothendieck 对偶
+├── 例外拉回 f^!
+│   ├── f_! 的右伴：RHom(Rf_! F, G)≅RHom(F, Rf^! G)
+│   ├── 对偶izing 复形 ω_{X/Y}^· = f^! O_Y
+│   └── 光滑时与 ω_X、Serre 对偶（21）一致
+│
+├── Grothendieck 对偶公式
+│   ├── Rf_* RHom_X(F, f^! G) ≅ RHom_Y(Rf_* F, G)（固有 f、凝聚 F 等）
+│   └── 导出形式、D(X)、D(Y)
+│
+├── 与 Serre 对偶
+│   └── f: X→Spec k 时 f^! k ≅ ω_X[n]；Serre 对偶为特例
+│
+└── 交叉引用
+    ├── 15-上同调与函子关系
+    ├── 19-上同调与Ext函子
+    └── 21-上同调与Serre对偶
+```
 
 ---
 
-**字数**: 约 500 字 | **数学公式**: 6+ | **最后更新**: 2026-01-31
+## 五、公理–定理–证明树图（核心逻辑链）
+
+```text
+[设定] f: X→Y 为固有态射（Noether 概形）；F ∈ D^b_c(X)、G ∈ D^b_c(Y)（或有界凝聚）.
+
+A1. 例外拉回: 存在 Rf^!: D(Y)→D(X)，为 Rf_! 的右伴；RHom(Rf_! F, G)≅RHom(F, Rf^! G).
+A2. 对偶izing: f^! O_Y 为对偶izing 复形（或 ω_{X/Y}^·）；光滑时与 ω_X 相关.
+
+        |--- 定理 T1 (Grothendieck 对偶): Rf_* RHom_X(F, f^! G) ≅ RHom_Y(Rf_* F, G)（固有 f、凝聚等）.
+        |         (证明: Hartshorne Residues and Duality、Neeman 等.)
+        |
+        |--- 定理 T2 (f^! 与 Serre): f: X→Spec k 时 Rf^! k ≅ ω_X[n]；Serre 对偶由 T1 推出.
+        |
+        └--- 定理 T3 (对偶izing 复形): 光滑 f 时 f^! O_Y 与相对典范层、ω_X/Y 相关.
+```
+
+---
+
+## 六、使用说明与复用
+
+- **正文**：概念与证明以 [22-上同调与Grothendieck对偶](./22-上同调与Grothendieck对偶.md) 为准；本页为配套思维表征与检索用。
+- **对齐与批判**：见 [22-上同调与Grothendieck对偶-网络对齐与批判性意见报告](./22-上同调与Grothendieck对偶-网络对齐与批判性意见报告.md)。
+- **交叉引用**：[15-上同调与函子关系](./15-上同调与函子关系.md)；[19-上同调与Ext函子](./19-上同调与Ext函子.md)；[21-上同调与Serre对偶](./21-上同调与Serre对偶.md)。
+
+**文档状态**：思维表征独立页 v1
+**最后更新**：2026年01月31日
