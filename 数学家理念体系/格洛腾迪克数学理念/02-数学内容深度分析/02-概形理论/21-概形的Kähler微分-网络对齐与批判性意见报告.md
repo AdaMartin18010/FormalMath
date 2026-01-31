@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Kähler 微分、Ω^1、微分模 | EGA IV；Hartshorne；Stacks Project | ✅ 一致 |
+| Kähler 微分、Omega^1、微分模 | EGA IV；Hartshorne；Stacks Project | 一致 |
+| Omega_{A/k}、泛导子 d | EGA IV 16.3；Stacks 01UM | 一致 |
+| Omega^1_{X/S}、正合列 | EGA IV 16.4；Stacks 01UR | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- ~~增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。~~ **已落实**（主文已添加两节；本报告权威对齐已扩展）。
 
 ## 三、层次三
 

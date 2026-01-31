@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Grothendieck topos、层范畴、Grothendieck 拓扑 | SGA 4；Mac Lane–Moerdijk；nLab "Grothendieck topos" | ✅ 一致 |
+| Grothendieck topos、层范畴、Grothendieck 拓扑 | SGA 4；Mac Lane-Moerdijk；nLab Grothendieck topos | 一致 |
+| Sh(C,J)、子对象分类器 Omega | SGA 4、Mac Lane-Moerdijk；Stacks 00TY、00TR | 一致 |
+| 内部逻辑、几何逻辑、真值对象 | SGA 4；nLab | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」（SGA 4、03-上同调、06-其他数学贡献/09-六函子）。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

@@ -387,6 +387,20 @@ $$H^i_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_p) \cong H^i_{\text{cris}}(X/W(\bar{k
 
 ---
 
+## 历史与渊源（对齐）
+
+- **平滑 topos**：无穷小层、de Rham 与晶体；SGA 7、Berthelot 晶体上同调、Stacks 07IF 与本文一致。
+- **晶体 topos 与晶体上同调**：W(k)-系数、比较定理；SGA 7、Stacks 07M6、03-上同调理论/晶体上同调。
+- **与 etale、de Rham 的关系**：比较同构；Berthelot、nLab crystalline cohomology。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[04-etale Topos与平展上同调](./04-étale%20Topos与平展上同调.md)、[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)。
+- **03-上同调理论**：[04-晶体上同调](../03-上同调理论/04-晶体上同调.md)。
+- **网络资源**：Stacks Project tag 07IF、07M6；SGA 7；nLab crystalline cohomology。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

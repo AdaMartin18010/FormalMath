@@ -345,6 +345,20 @@ $$H^i(X, \mathcal{F}) \cong \text{Ext}_X^i(\mathcal{O}_X, \mathcal{F})$$
 
 ---
 
+## 历史与渊源（对齐）
+
+- **Ext 与上同调**：Ext^i(F,G)=H^i(RHom(F,G))、H^i 与 Ext 关系；Hartshorne III.6、Stacks 08HP、0A5R 与本文一致。
+- **RHom**：导出 Hom、长正合列；Stacks 08HP、08HS。
+- **形变与分类**：Ext^1 参数化扩张、形变；Hartshorne III、Stacks 08HS。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[06-导出版上同调](./06-导出版上同调.md)、[18-上同调与张量积](./18-上同调与张量积.md)、[21-上同调与Serre对偶](./21-上同调与Serre对偶.md)、[22-上同调与Grothendieck对偶](./22-上同调与Grothendieck对偶.md)、[30-上同调与Ext函子应用](./30-上同调与Ext函子应用.md)。
+- **02-概形理论**：[32-概形的对偶理论与Serre对偶](../02-概形理论/32-概形的对偶理论与Serre对偶.md)。
+- **网络资源**：Stacks Project tag 08HP、08HS、0A5R；Hartshorne III.6。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

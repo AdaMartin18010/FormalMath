@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| étale 上同调、平展拓扑、ℓ-adic | SGA 4；Milne；Stacks Project | ✅ 一致 |
+| etale 上同调、平展拓扑、ℓ-adic | SGA 4；Milne；Stacks Project | 一致 |
+| H^i_et、平展基本群 pi_1^et | SGA 1、SGA 4；Stacks 0BQM、03Q3 | 一致 |
+| Frobenius、Weil 猜想、ζ 函数 | Deligne；Stacks 03Q3 | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

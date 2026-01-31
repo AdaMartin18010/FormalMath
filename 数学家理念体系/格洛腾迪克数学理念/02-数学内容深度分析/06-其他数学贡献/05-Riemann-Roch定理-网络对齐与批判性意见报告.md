@@ -17,6 +17,8 @@
 | GRR：ch(R f_* E)·td(Y) = f_*(ch(E)·td(X)) | SGA 6 (1971)；Wikipedia "Grothendieck–Riemann–Roch" | ✅ 一致：权威常用 **ch(f_* α)·td(TY) = f_*(ch(α)·td(TX))**，$f_*$ 为 K_0 上推前；对凝聚层即 $\sum (-1)^i R^i f_*$ |
 | SGA 6（1966–1968）| SGA 6, Berthelot–Grothendieck–Illusie, LNM 225 (1971) | ⚠️ 建议：正文注明出版 1971，作者 Berthelot, Grothendieck, Illusie；标题 *Théorie des intersections et théorème de Riemann-Roch* |
 | K_0(X)、Chern 特征、Todd 类 | SGA 6；K-theory | ✅ 一致；与 [07-K理论](./07-K理论.md)、[06-相交理论](./06-相交理论.md) 衔接 |
+| 历史与渊源、姊妹篇与网络资源 | 主文已添加；本报告权威对齐已扩展 | 一致 |
+| GRR、SGA 6、Fulton Stacks | SGA 6、Fulton Intersection Theory、Stacks | 一致 |
 
 ### 1.2 关键术语对齐
 
@@ -36,6 +38,8 @@
 ---
 
 ## 二、批判性意见与建议
+
+已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ### 2.1 内容结构
 

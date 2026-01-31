@@ -396,6 +396,21 @@ $$H^i_{\text{ét}}(X_{\bar{\mathbb{F}}_q}, \mathbb{Q}_\ell) \text{ 的Frobenius�
 ---
 
 **文档状态**: ✅ 完成（已补充数学公式和例子）
+## 历史与渊源（对齐）
+
+- **Etale topos**：概形 X 的 etale 层范畴、平展上同调；SGA 4、Stacks 03FN、03F2 与本文一致。
+- **平展上同调**：l-adic 上同调、Weil 猜想；SGA 4、SGA 5、Deligne 证明。
+- **Grothendieck 拓扑**：etale 覆盖、site；Mac Lane–Moerdijk、Stacks 00VG。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[01-Grothendieck Topos](./01-Grothendieck%20Topos.md)、[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)、[06-平滑Topos与晶体Topos](./06-平滑Topos与晶体Topos.md)。
+- **03-上同调理论**：[02-etale上同调](../03-上同调理论/02-etale上同调.md)。
+- **网络资源**：Stacks Project tag 03FN、03F2、00VG；SGA 4；nLab etale topos。
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个
 **例子数**: 10个

@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Mayer-Vietoris、长正合列、覆盖 | Godement；Stacks Project | ✅ 一致 |
+| Mayer-Vietoris、长正合列、覆盖 | Godement；Stacks Project | 一致 |
+| 开覆盖 U并V、长正合列 H^i(X) 与 H^i(U)、H^i(V)、H^i(U交V) | Godement、Hartshorne III.2；Stacks 01ES | 一致 |
+| 粘合、Cech 与 MV | Stacks 01ES、01X9 | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

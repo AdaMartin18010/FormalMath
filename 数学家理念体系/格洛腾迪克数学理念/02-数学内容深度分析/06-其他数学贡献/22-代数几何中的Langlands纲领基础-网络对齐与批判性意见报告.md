@@ -9,8 +9,12 @@
 |------|----------|------|
 | Langlands 纲领、自守表示、Galois 表示 | Langlands；Wikipedia "Langlands program" | ✅ 一致 |
 | 几何化、函数域、数域 | Drinfeld、Lafforgue 等 | ✅ 一致 |
+| 历史与渊源、姊妹篇与网络资源 | 主文已添加；本报告权威对齐已扩展 | 一致 |
+| 几何 Langlands、Beilinson–Drinfeld | Drinfeld；nLab | 一致 |
 
 ## 二、建议
+
+已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 - 增加 **1.3 历史与渊源**：Langlands 纲领、几何 Langlands、与模形式（[20](./20-代数几何中的模形式理论.md)）、算术（[21](./21-代数几何中的算术几何.md)）联系。
 - 文末增加「参考文献与网络资源」（Langlands、Wikipedia、[20](./20-代数几何中的模形式理论.md)、[21](./21-代数几何中的算术几何.md)）。

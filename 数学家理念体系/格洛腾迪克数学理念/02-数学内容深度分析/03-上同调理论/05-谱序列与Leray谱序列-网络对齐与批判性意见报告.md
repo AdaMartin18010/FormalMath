@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| 谱序列、Leray 谱序列、E_2 页 | Godement；Weibel；Stacks Project | ✅ 一致 |
+| 谱序列、Leray 谱序列、E_2 页 | Godement；Weibel；Stacks Project | 一致 |
+| E_r^{p,q}、微分、收敛 | Godement；Stacks 01FP | 一致 |
+| E_2^{p,q}=H^p(R^q f_* F)、收敛到 H^{p+q} | Godement；Stacks 01FQ | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

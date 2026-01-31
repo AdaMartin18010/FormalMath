@@ -411,6 +411,19 @@ $$\text{逻辑Topos } \Rightarrow \Omega = 2, \quad \text{排中律成立}, \qua
 
 ---
 
+## 历史与渊源（对齐）
+
+- **逻辑 topos**：Set 作为 topos、内部集合论；Mac Lane–Moerdijk、Johnstone、nLab "Set" 与本文一致。
+- **内部 ZFC**：在 topos 中形式化集合论、选择公理；Mac Lane–Moerdijk Chapter VI。
+- **Topos 与集合论**：范畴论替代、内部逻辑；SGA 4、nLab internal set theory。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[08-逻辑分类与模型理论](./08-逻辑分类与模型理论.md)、[10-分类Topos与几何点](./10-分类Topos与几何点.md)、[13-逻辑Topos与集合论模型](./13-逻辑Topos与集合论模型.md)。
+- **网络资源**：Mac Lane–Moerdijk Sheaves in geometry and logic；nLab Set、internal set theory。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

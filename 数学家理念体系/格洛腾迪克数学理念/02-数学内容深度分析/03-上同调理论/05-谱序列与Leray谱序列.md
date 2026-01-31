@@ -423,6 +423,20 @@ $$E_2^{p,q} = R^p F(R^q G(A)) \Rightarrow R^{p+q}(F \circ G)(A)$$
 
 ---
 
+## 历史与渊源（对齐）
+
+- **谱序列**：E_r^{p,q}、微分、收敛；Godement、Weibel、Stacks 01FP 与本文一致。
+- **Leray 谱序列**：E_2^{p,q}=H^p(R^q f_* F)、收敛到 H^{p+q}；Godement、Stacks 01FQ。
+- **应用**：函子复合、计算上同调、群上同调；Weibel、Stacks 01FP。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[01-层上同调基础](./01-层上同调基础.md)、[09-Grothendieck谱序列](./09-Grothendieck谱序列.md)、[23-上同调与Leray谱序列应用](./23-上同调与Leray谱序列应用.md)。
+- **02-概形理论**：[05-拟凝聚层与凝聚层](../02-概形理论/05-拟凝聚层与凝聚层.md)。
+- **网络资源**：Stacks Project tag 01FP、01FQ；Godement；Weibel Homological algebra。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

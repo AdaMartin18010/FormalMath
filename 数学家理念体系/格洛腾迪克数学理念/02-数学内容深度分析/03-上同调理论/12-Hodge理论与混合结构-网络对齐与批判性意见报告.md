@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Hodge 结构、混合 Hodge、权 | Deligne；Voisin；Stacks Project | ✅ 一致 |
+| Hodge 结构、混合 Hodge、权 | Deligne；Voisin；Stacks Project | 一致 |
+| H^{p,q}、权滤子、Hodge 滤子 | Deligne；Stacks 0FM4 | 一致 |
+| 奇点与局部上同调、权范围 [i,2i] | Deligne；Stacks 0FM4 | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

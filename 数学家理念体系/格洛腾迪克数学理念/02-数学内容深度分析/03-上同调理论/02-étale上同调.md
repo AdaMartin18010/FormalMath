@@ -431,6 +431,20 @@ $$H_{\text{ét}}^i(X_{\bar{\mathbb{F}}_q}, \mathbb{Q}_\ell) \text{ 的Frobenius�
 
 ---
 
+## 历史与渊源（对齐）
+
+- **etale 上同调**：平展拓扑、H^i_et(X,F)、ℓ-adic；SGA 4、Milne、Stacks 03Q3 与本文一致。
+- **平展基本群**：pi_1^et(X,x)、有限平展覆盖；SGA 1、Stacks 0BQM。
+- **Weil 猜想**：Frobenius 特征值、ζ 函数；Deligne、Stacks 03Q3。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[01-层上同调基础](./01-层上同调基础.md)、[03-韦伊猜想的证明](./03-韦伊猜想的证明.md)、[07-平展基本群](./07-平展基本群.md)、[16-上同调与比较定理](./16-上同调与比较定理.md)。
+- **02-概形理论**：[24-概形的Galois理论](../02-概形理论/24-概形的Galois理论.md)。
+- **网络资源**：Stacks Project tag 03Q3、0BQM；SGA 4、SGA 1；Milne Etale cohomology。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

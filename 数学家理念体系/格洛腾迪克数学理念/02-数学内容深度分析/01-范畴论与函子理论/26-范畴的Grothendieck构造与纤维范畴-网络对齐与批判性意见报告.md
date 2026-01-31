@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Grothendieck 构造、纤维范畴、伪函子 | Grothendieck；nLab；Stacks Project | ✅ 一致 |
+| Grothendieck 构造、纤维范畴、伪函子 | Grothendieck；nLab；Stacks Project | 一致 |
+| 积分 int F、笛卡尔态射 | Grothendieck SGA 1；Stacks 003S、003G | 一致 |
+| 覆盖空间、向量丛、层 | Stacks 03DW、04EU；Grothendieck | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

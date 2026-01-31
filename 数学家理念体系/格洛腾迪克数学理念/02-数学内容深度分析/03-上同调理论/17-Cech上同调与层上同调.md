@@ -392,6 +392,20 @@ $$\check{H}^p(\mathcal{U}, \mathcal{F}) \cong H^p(X, \mathcal{F})$$
 
 ---
 
+## 历史与渊源（对齐）
+
+- **Cech 上同调**：H^p(U,F)、覆盖、与层上同调一致；Godement、Hartshorne III.4、Stacks 01X9 与本文一致。
+- **Leray 谱序列**：E_2^{p,q}=H^p(U,H^q(F)) 收敛到 H^{p+q}(X,F)；Godement、Stacks 01FQ。
+- **Acyclic 覆盖**：acyclic 覆盖则 Cech 与层上同调同构；Hartshorne III.4、Stacks 01X9。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[01-层上同调基础](./01-层上同调基础.md)、[05-谱序列与Leray谱序列](./05-谱序列与Leray谱序列.md)、[23-上同调与Leray谱序列应用](./23-上同调与Leray谱序列应用.md)。
+- **02-概形理论**：[31-概形的层理论与层范畴](../02-概形理论/31-概形的层理论与层范畴.md)。
+- **网络资源**：Stacks Project tag 01X9、01FQ；Godement；Hartshorne III.4。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

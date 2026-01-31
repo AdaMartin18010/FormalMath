@@ -774,6 +774,19 @@ Grothendieck群理论的现代发展具有重要意义，特别是在数论、�
 
 ---
 
+## 历史与渊源（对齐）
+
+- **Grothendieck 群**：K_0、正合列关系；Grothendieck、SGA 6、Bass、Stacks 与本文一致。
+- **与 K 理论、Riemann-Roch 衔接**：K_0(X)、ch、td、GRR；SGA 6、05-Riemann-Roch、07-K理论。
+- **应用**：向量丛、凝聚层、相交理论；Fulton、Weibel、Stacks。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[05-Riemann-Roch定理](./05-Riemann-Roch定理.md)、[07-K理论](./07-K理论.md)、[06-相交理论](./06-相交理论.md)。
+- **网络资源**：Stacks Project；Weibel K-book；SGA 6；nLab Grothendieck group。
+
+---
+
 **文档状态**: ✅ 完成（已补充详细数学公式和例子）
 **字数**: 约6,500字
 **数学公式数**: 30个

@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Ext 函子、Ext^i、同调代数 | Weibel；Hartshorne；Stacks Project | ✅ 一致 |
+| Ext 函子、Ext^i、同调代数 | Weibel；Hartshorne；Stacks Project | 一致 |
+| Ext^i(F,G)=H^i(RHom(F,G))、RHom | Hartshorne III.6；Stacks 08HP、08HS、0A5R | 一致 |
+| Ext^1 参数化扩张、形变 | Hartshorne III；Stacks 08HS | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

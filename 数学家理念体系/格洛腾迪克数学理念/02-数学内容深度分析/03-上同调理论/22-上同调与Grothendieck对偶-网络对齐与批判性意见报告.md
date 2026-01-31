@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Grothendieck 对偶、f^!、Rf_* | Hartshorne；Stacks Project | ✅ 一致 |
+| Grothendieck 对偶、f^!、Rf_* | Hartshorne；Stacks Project | 一致 |
+| Rf_* 与 Rf^!、反常拉回、对偶公式 | Hartshorne III.11；Stacks 0A9E、0AU3 | 一致 |
+| f_!、Rf_!、紧支撑与对偶 | Stacks 0A9E、0F5R | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

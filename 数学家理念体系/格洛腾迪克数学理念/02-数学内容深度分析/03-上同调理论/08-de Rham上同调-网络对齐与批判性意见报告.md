@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| de Rham 上同调、代数 de Rham、Ω^* | Hartshorne；Stacks Project | ✅ 一致 |
+| de Rham 上同调、代数 de Rham、Omega^* | Hartshorne；Stacks Project | 一致 |
+| H^i_dR(X/k)、晶体比较 H_cris 与 H_dR | Hartshorne II.8；Stacks 0FK4、07N0 | 一致 |
+| 特征 p、d^p=0、Frobenius | Hartshorne II.8；Stacks 0FK4 | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

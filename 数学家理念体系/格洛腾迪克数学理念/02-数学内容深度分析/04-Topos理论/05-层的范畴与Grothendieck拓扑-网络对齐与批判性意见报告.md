@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| 层范畴 Sh(C,J)、Grothendieck 拓扑 J | SGA 4；Mac Lane–Moerdijk | ✅ 一致 |
+| 层范畴 Sh(C,J)、Grothendieck 拓扑 J | SGA 4；Mac Lane–Moerdijk | 一致 |
+| Grothendieck topos 等价于 site 层范畴 | Stacks 00TY、Johnstone | 一致 |
+| 子对象分类器在 Sh(C,J) 中的构造 | Stacks 00TR、Mac Lane–Moerdijk | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

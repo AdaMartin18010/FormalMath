@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Ext 函子应用、扩张、Yoneda | Weibel；Hartshorne；Stacks Project | ✅ 一致 |
+| Ext 函子应用、扩张、Yoneda | Weibel；Hartshorne；Stacks Project | 一致 |
+| 形变理论、扩张、RHom 与上同调 | Hartshorne III；Stacks 08HS、0A5R | 一致 |
+| Ext^1 与短正合列、导出范畴 RHom | Weibel；Stacks 08HP、08HS | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

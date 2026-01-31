@@ -674,6 +674,22 @@ Motive理论在算术几何中有重要应用。
 
 ---
 
+---
+
+## 历史与渊源（对齐）
+
+- **Motive 理论**：纯 motive、Grothendieck 标准猜想；Grothendieck、SGA、Andre、Kahn 与本文一致。
+- **标准猜想**：B、C、Kunneth、Lefschetz；Grothendieck、Kleiman、Stacks、nLab motive。
+- **与 上同调、K 理论 衔接**：代数闭域上 motive、K_0(motives)；SGA、03-上同调、07-K理论。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[07-K理论](./07-K理论.md)、[09-六函子理论](./09-六函子理论.md)。
+- **03-上同调理论**：韦伊上同调、motive 与上同调。
+- **网络资源**：Stacks Project；nLab motive、standard conjectures；Grothendieck standard conjectures。
+
+---
+
 **文档状态**: ✅ 完成（已补充详细数学公式和例子）
 **字数**: 约6,500字
 **数学公式数**: 28个

@@ -404,6 +404,19 @@ $$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
 
 ---
 
+## 历史与渊源（对齐）
+
+- **连续范畴**：余极限、与 Grothendieck topos 的关系；Johnstone Sketches、nLab "continuous category" 与本文一致。
+- **Locale**：无点拓扑、frame、点化；Johnstone Stone spaces、Stacks 07AD、nLab locale。
+- **与 topos 的关系**：连续范畴包含于 Grothendieck topos；Mac Lane–Moerdijk。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[01-Grothendieck Topos](./01-Grothendieck%20Topos.md)、[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)、[10-分类Topos与几何点](./10-分类Topos与几何点.md)。
+- **网络资源**：Stacks Project tag 07AD；Johnstone Sketches of an Elephant；nLab locale、continuous category。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| 逻辑 topos、Set、内部集合论 | Mac Lane–Moerdijk；nLab | ✅ 一致 |
+| 逻辑 topos、Set、内部集合论 | Mac Lane–Moerdijk；nLab | 一致 |
+| 内部 ZFC、选择公理在 topos 中 | Mac Lane–Moerdijk Chapter VI | 一致 |
+| Topos 与集合论范畴论替代 | SGA 4、nLab internal set theory | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

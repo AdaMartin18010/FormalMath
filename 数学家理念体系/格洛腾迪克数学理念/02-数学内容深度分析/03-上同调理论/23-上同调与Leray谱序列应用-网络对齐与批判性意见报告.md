@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Leray 谱序列、应用、退化 | Godement；Stacks Project | ✅ 一致 |
+| Leray 谱序列、应用、退化 | Godement；Stacks Project | 一致 |
+| E_2^{p,q}=H^p(Y,R^q f_* F)、收敛到 H^{p+q} | Godement；Stacks 01FQ | 一致 |
+| 函子复合、acyclic 情形 E_2 即 E_infty | Weibel；Stacks 01FP、01FQ | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

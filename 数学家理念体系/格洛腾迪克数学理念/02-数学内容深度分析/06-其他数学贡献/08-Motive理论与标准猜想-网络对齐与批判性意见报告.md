@@ -17,6 +17,8 @@
 | 标准猜想 C/D（Hodge 型）| 数值等价 vs 同调等价；Hodge 指标 | ✅ 一致：C 与 Weil 猜想弱形式相关；D 为 Hodge 型指标猜想 |
 | 纯 Motive / 混合 Motive | 射影光滑 → 纯；一般 → 混合（Voevodsky 等）| ⚠️ 建议：正文区分纯 Motive 范畴与混合 Motive（Voevodsky）|
 | 现状 | 曲线、Abel 簇、曲面、完全交等已知；一般未解决 | ✅ 一致：Kleiman 综述；MathOverflow 进展 |
+| 历史与渊源、姊妹篇与网络资源 | 主文已添加；本报告权威对齐已扩展 | 一致 |
+| Motive、标准猜想 B/C、SGA Stacks | Grothendieck、Kleiman、Stacks、nLab motive | 一致 |
 
 ### 1.2 关键术语对齐
 
@@ -36,6 +38,8 @@
 ---
 
 ## 二、批判性意见与建议
+
+已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ### 2.1 内容结构
 

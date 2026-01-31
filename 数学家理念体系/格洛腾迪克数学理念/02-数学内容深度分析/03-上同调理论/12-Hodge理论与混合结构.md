@@ -380,6 +380,20 @@ $$Q(H^{p,q}, H^{r,s}) = 0 \text{（除非 $(p,q) = (s,r)$）}$$
 
 ---
 
+## 历史与渊源（对齐）
+
+- **Hodge 理论**：H^{p,q}、权、纯 Hodge 结构；Deligne、Voisin、Stacks 0FM4 与本文一致。
+- **混合 Hodge 结构**：权滤子、Hodge 滤子、Deligne 理论；Deligne、Stacks 0FM4。
+- **奇点与局部上同调**：H^i_{x}(X)、权范围 [i,2i]；Deligne、Stacks 0FM4。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[03-韦伊猜想的证明](./03-韦伊猜想的证明.md)、[08-de Rham上同调](./08-de Rham上同调.md)、[16-上同调与比较定理](./16-上同调与比较定理.md)、[11-上同调与对偶理论](./11-上同调与对偶理论.md)。
+- **02-概形理论**：[27-概形的奇点理论](../02-概形理论/27-概形的奇点理论.md)。
+- **网络资源**：Stacks Project tag 0FM4；Deligne Theorie de Hodge；Voisin Hodge theory。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

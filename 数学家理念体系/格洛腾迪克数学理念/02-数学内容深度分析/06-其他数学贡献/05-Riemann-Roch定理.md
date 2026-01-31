@@ -690,6 +690,19 @@ Riemann-Roch定理在数论中有重要应用。
 
 ---
 
+## 历史与渊源（对齐）
+
+- **Riemann-Roch**：曲线 χ(D)=deg(D)+1-g、Grothendieck–Riemann–Roch；SGA 6、Fulton、Stacks 与本文一致。
+- **Serre 对偶、高维推广**：GRR、ch、td；SGA 6、Fulton Intersection Theory、Stacks。
+- **与 06-相交理论、07-K 理论 衔接**：相交、K 理论、GRR；SGA 6、06-相交、07-K理论。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[06-相交理论](./06-相交理论.md)、[07-K理论](./07-K理论.md)。
+- **网络资源**：Stacks Project bibliography SGA6；Wikipedia Grothendieck–Riemann–Roch；nLab Grothendieck-Riemann-Roch theorem；Fulton Intersection Theory。
+
+---
+
 **文档状态**: ✅ 完成（已补充详细数学公式和例子）
 **字数**: 约6,500字
 ---

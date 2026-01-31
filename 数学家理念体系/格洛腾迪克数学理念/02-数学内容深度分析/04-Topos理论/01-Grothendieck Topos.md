@@ -432,6 +432,21 @@ $$\text{内部逻辑} = \text{几何逻辑（在Grothendieck Topos中）}$$
 
 ---
 
+## 历史与渊源（对齐）
+
+- **Grothendieck topos**：层范畴 Sh(C,J)、Grothendieck 拓扑 J；SGA 4、Mac Lane-Moerdijk、Stacks 00TY 与本文一致。
+- **子对象分类器**：Omega、Sub(X) 同构于 Hom(X,Omega)；Mac Lane-Moerdijk、Stacks 00TR。
+- **内部逻辑**：几何逻辑、真值对象；SGA 4、nLab Grothendieck topos。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)、[02-内部逻辑与几何逻辑](./02-内部逻辑与几何逻辑.md)、[03-几何态射与逻辑态射](./03-几何态射与逻辑态射.md)。
+- **03-上同调理论**：[01-层上同调基础](../03-上同调理论/01-层上同调基础.md)。
+- **06-其他数学贡献**：[09-六函子理论](../06-其他数学贡献/09-六函子理论.md)。
+- **网络资源**：Stacks Project tag 00TY、00TR；SGA 4；Mac Lane-Moerdijk Sheaves in geometry and logic；nLab Grothendieck topos。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

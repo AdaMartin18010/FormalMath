@@ -389,6 +389,19 @@ $$\text{Grothendieck Topos} \leftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
 
 ---
 
+## 历史与渊源（对齐）
+
+- **分类定理**：Grothendieck topos 与范畴-拓扑对的一一对应；Mac Lane–Moerdijk、Johnstone、Stacks 00TY 与本文一致。
+- **几何理论**：分类 topos Sh(T)、规范化；Johnstone Sketches、nLab classifying topos。
+- **Topos 分类**：site 的等价、层范畴的表示；SGA 4、Stacks 04DZ。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[10-分类Topos与几何点](./10-分类Topos与几何点.md)、[08-逻辑分类与模型理论](./08-逻辑分类与模型理论.md)、[01-Grothendieck Topos](./01-Grothendieck%20Topos.md)。
+- **网络资源**：Stacks Project tag 00TY、04DZ；Johnstone Sketches of an Elephant；nLab classifying topos。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

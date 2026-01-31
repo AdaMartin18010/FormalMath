@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| 分类定理、topos 分类、几何理论 | Johnstone；Mac Lane–Moerdijk | ✅ 一致 |
+| 分类定理、topos 分类、几何理论 | Johnstone；Mac Lane–Moerdijk | 一致 |
+| 分类 topos Sh(T)、范畴-拓扑对 | Stacks 00TY、04DZ | 一致 |
+| site 等价、层范畴表示 | SGA 4、nLab classifying topos | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

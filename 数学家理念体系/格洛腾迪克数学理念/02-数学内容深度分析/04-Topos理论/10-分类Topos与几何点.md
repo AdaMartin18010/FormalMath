@@ -401,6 +401,19 @@ $$\text{分类Topos的几何点对应原始结构的点}$$
 
 ---
 
+## 历史与渊源（对齐）
+
+- **分类 topos**：几何理论 T 的分类 topos、Sh(T)；Mac Lane–Moerdijk、Johnstone、nLab "classifying topos" 与本文一致。
+- **几何点**：点函子、足够点、恢复几何结构；SGA 4、Stacks 04DU、Johnstone。
+- **分类定理**：逻辑与几何对应、模型与层；Mac Lane–Moerdijk、Stacks 020M。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[08-逻辑分类与模型理论](./08-逻辑分类与模型理论.md)、[11-分类定理与Topos分类](./11-分类定理与Topos分类.md)、[01-Grothendieck Topos](./01-Grothendieck%20Topos.md)。
+- **网络资源**：Stacks Project tag 04DU、020M；Johnstone Sketches of an Elephant；nLab classifying topos、point of a topos。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

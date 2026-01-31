@@ -370,6 +370,19 @@ $$\text{集合论模型} \leftrightarrow \text{层}, \quad \text{逻辑解释} \
 
 ---
 
+## 历史与渊源（对齐）
+
+- **逻辑 topos**：内部逻辑为经典逻辑、集合论模型；Mac Lane–Moerdijk、Johnstone、nLab 与本文一致。
+- **模型对应**：集合论模型与层、点与模型；SGA 4、Stacks 04DU。
+- **Topos 模型**：集合论的范畴论模型、内部 ZFC；Mac Lane–Moerdijk Chapter VI。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[09-逻辑Topos与Set理论](./09-逻辑Topos与Set理论.md)、[10-分类Topos与几何点](./10-分类Topos与几何点.md)、[16-内部逻辑的模型理论](./16-内部逻辑的模型理论.md)。
+- **网络资源**：Stacks Project tag 04DU；Mac Lane–Moerdijk Sheaves in geometry and logic；nLab internal set theory。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个

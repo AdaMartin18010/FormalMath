@@ -380,6 +380,20 @@ Serre对偶在现代研究中继续发展。
 
 ---
 
+## 历史与渊源（对齐）
+
+- **Serre 对偶**：H^i(X,F)^* 同构于 H^{n-i}(X,F^vee 张量 omega_X)、完美配对；Hartshorne III.7、Stacks 0B6I 与本文一致。
+- **典范层**：omega_X、光滑时 omega_X=det(Omega^1)；Hartshorne III.7、Stacks 0B6I。
+- **应用**：上同调计算、对偶、Riemann-Roch；Hartshorne III.7、0B6I。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[11-上同调与对偶理论](./11-上同调与对偶理论.md)、[19-上同调与Ext函子](./19-上同调与Ext函子.md)、[22-上同调与Grothendieck对偶](./22-上同调与Grothendieck对偶.md)。
+- **02-概形理论**：[12-微分形式与对偶层](../02-概形理论/12-微分形式与对偶层.md)、[32-概形的对偶理论与Serre对偶](../02-概形理论/32-概形的对偶理论与Serre对偶.md)。
+- **网络资源**：Stacks Project tag 0B6I；Hartshorne III.7。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约3,500字
 **数学公式数**: 18个

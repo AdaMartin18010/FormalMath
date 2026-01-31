@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Čech 上同调、层上同调、一致 | Godement；Hartshorne；Stacks Project | ✅ 一致 |
+| Cech 上同调、层上同调、一致 | Godement；Hartshorne；Stacks Project | 一致 |
+| H^p(U,F)、Leray 谱序列 E_2^{p,q} | Godement；Stacks 01X9、01FQ | 一致 |
+| acyclic 覆盖、Cech 与层上同调同构 | Hartshorne III.4；Stacks 01X9 | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 

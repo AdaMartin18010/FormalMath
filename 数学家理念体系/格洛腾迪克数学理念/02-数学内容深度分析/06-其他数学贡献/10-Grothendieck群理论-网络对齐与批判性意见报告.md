@@ -15,6 +15,8 @@
 | K_0(X) = 向量丛的 Grothendieck 群，关系由短正合列 | Grothendieck；SGA 6；Wikipedia "Algebraic K-theory" | ✅ 一致 |
 | Pic(X) 与 K_0 | Pic(X) ≅ K_0 中线丛部分 / c_1 | ✅ 一致 |
 | Chern 特征 ch: K_0→H^* | GRR、SGA 6 | ✅ 一致；见 [05-Riemann-Roch定理](./05-Riemann-Roch定理.md)、[07-K理论](./07-K理论.md) |
+| 历史与渊源、姊妹篇与网络资源 | 主文已添加；本报告权威对齐已扩展 | 一致 |
+| K_0、SGA 6、Weibel Stacks | SGA 6、Weibel K-book、Stacks | 一致 |
 
 ### 1.2 关键术语与参考资源
 
@@ -24,6 +26,8 @@
 ---
 
 ## 二、批判性意见与建议
+
+已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 - **历史**：建议增加 **1.3 历史与渊源**：Grothendieck K_0（SGA 6）、Pic、Chern、GRR；与 07-K理论 的关系。
 - **参考文献**：文末增加「参考文献与网络资源」（SGA 6、07、05、06）。

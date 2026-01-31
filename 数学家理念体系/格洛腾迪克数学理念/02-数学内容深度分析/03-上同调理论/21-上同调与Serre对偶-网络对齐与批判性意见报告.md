@@ -7,11 +7,13 @@
 
 | 表述 | 权威来源 | 结论 |
 |------|----------|------|
-| Serre 对偶、ω_X、H^i 与 H^{n-i} | Hartshorne；Stacks Project | ✅ 一致 |
+| Serre 对偶、omega_X、H^i 与 H^{n-i} | Hartshorne；Stacks Project | 一致 |
+| H^i^* 同构于 H^{n-i}(F^vee 张量 omega_X)、完美配对 | Hartshorne III.7；Stacks 0B6I | 一致 |
+| 典范层、光滑时 omega_X=det(Omega^1) | Hartshorne III.7；Stacks 0B6I | 一致 |
 
 ## 二、建议
 
-- 增加 **历史与渊源（对齐）**；文末增加「姊妹篇与网络资源」。
+- 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展。
 
 ## 三、层次三
 
