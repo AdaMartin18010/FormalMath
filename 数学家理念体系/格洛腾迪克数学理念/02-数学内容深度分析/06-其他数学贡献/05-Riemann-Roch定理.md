@@ -8,6 +8,7 @@
   - [一、经典Riemann-Roch](#一经典riemann-roch)
     - [1.1 曲线情况](#11-曲线情况)
     - [1.2 意义](#12-意义)
+  - [1.3 历史与渊源](#13-历史与渊源)
   - [二、Hirzebruch-Riemann-Roch](#二hirzebruch-riemann-roch)
     - [2.1 陈述](#21-陈述)
     - [2.2 意义](#22-意义)
@@ -37,6 +38,7 @@
     - [10.2 在相交理论中的应用](#102-在相交理论中的应用)
     - [10.3 在枚举几何中的应用](#103-在枚举几何中的应用)
   - [十一、数学公式总结](#十一数学公式总结)
+  - [十二、参考文献与网络资源](#十二参考文献与网络资源)
     - [核心公式](#核心公式)
 
 ---
@@ -72,6 +74,10 @@
 - 几何应用
 - 历史重要性
 ```
+
+### 1.3 历史与渊源
+
+**Riemann–Roch**（曲线）由 Riemann、Roch 奠定；**Hirzebruch-Riemann-Roch**（1954）将公式推广到高维光滑射影概形与向量丛；**Grothendieck-Riemann-Roch** 在 **SGA 6**（Berthelot–Grothendieck–Illusie, 1971, LNM 225）中建立相对版本，与相交理论、K 理论统一。参见 [06-相交理论](./06-相交理论.md)、[07-K理论](./07-K理论.md)。
 
 ---
 
@@ -145,20 +151,12 @@ ch(R f_* E) · td(Y) = f_*(ch(E) · td(X))
 
 ### 4.1 SGA 6的内容
 
-**SGA 6（1966-1968）**：
+**SGA 6**（Berthelot–Grothendieck–Illusie, **1971**, Springer LNM 225）：*Théorie des intersections et théorème de Riemann-Roch*。
 
 ```text
-Séminaire de géométrie algébrique
-Théorie des intersections et théorème de Riemann-Roch
-
-内容：
-- 相交理论
-- Riemann-Roch定理
-- 系统研究
-
-作者：
-- Grothendieck
-- 多人合作
+内容：相交理论、Grothendieck-Riemann-Roch、K 理论
+作者：Berthelot, Grothendieck, Illusie
+出版：LNM 225 (1971)
 ```
 
 ---
@@ -445,17 +443,12 @@ $$\text{td}(X) = \prod_{i=1}^n \frac{x_i}{1 - e^{-x_i}}$$
 
 ### 9.3 Grothendieck-Riemann-Roch定理的详细表述
 
-**Grothendieck-Riemann-Roch定理**（SGA 6）：
-
-设 $f: X \to Y$ 是光滑射影概形态射，$E$ 是 $X$ 上的向量丛。
+**Grothendieck-Riemann-Roch定理**（SGA 6, 1971）：设 $f: X \to Y$ 是**固有态射**（proper），$E$ 是 $X$ 上的向量丛（或 $\alpha \in K_0(X)$）。在光滑或 local complete intersection 情形下：
 
 **GRR公式**：
-$$\text{ch}(R f_* E) \cdot \text{td}(Y) = f_*(\text{ch}(E) \cdot \text{td}(X))$$
+$$\text{ch}(f_* \alpha) \cdot \text{td}(T_Y) = f_*(\text{ch}(\alpha) \cdot \text{td}(T_X))$$
 
-其中：
-
-- $R f_* E = \sum_{i=0}^n (-1)^i R^i f_* E$ 是导出推前（在K理论中）
-- $f_*$ 是Chow群的推前映射
+其中 $f_*: K_0(X) \to K_0(Y)$ 为 K 理论推前（对层即 $\sum_i (-1)^i R^i f_*$）。非光滑时可用**虚切丛**（virtual tangent bundle）代替切丛。参见 [06-相交理论](./06-相交理论.md)、[07-K理论](./07-K理论.md)。
 
 **相对版本的优势**：
 
@@ -699,6 +692,17 @@ Riemann-Roch定理在数论中有重要应用。
 
 **文档状态**: ✅ 完成（已补充详细数学公式和例子）
 **字数**: 约6,500字
+---
+
+## 十二、参考文献与网络资源
+
+- **SGA 6**：Berthelot–Grothendieck–Illusie, *Théorie des intersections et théorème de Riemann-Roch*, LNM 225 (Springer, 1971)；Numdam SGA 6。
+- **教材**：Fulton, *Intersection Theory* (Springer)；Vakil, Stanford 245 讲义。
+- **网络**：Wikipedia "Grothendieck–Riemann–Roch theorem" "Riemann–Roch-type theorem"；nLab "Grothendieck-Riemann-Roch theorem"；Stacks Project bibliography SGA6。
+- **姊妹篇**：[06-相交理论](./06-相交理论.md)；[07-K理论](./07-K理论.md)。
+
+---
+
 **数学公式数**: 30个
 **例子数**: 18个
 **最后更新**: 2026年01月15日

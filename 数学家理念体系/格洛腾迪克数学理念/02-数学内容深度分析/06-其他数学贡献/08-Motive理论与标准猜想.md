@@ -8,6 +8,7 @@
   - [一、Motive的动机](#一motive的动机)
     - [1.1 上同调的统一](#11-上同调的统一)
     - [1.2 Grothendieck的愿景](#12-grothendieck的愿景)
+  - [1.3 历史与渊源](#13-历史与渊源)
   - [二、Motive范畴](#二motive范畴)
     - [2.1 定义](#21-定义)
     - [2.2 性质](#22-性质)
@@ -38,6 +39,7 @@
     - [10.1 在Weil猜想中的应用](#101-在weil猜想中的应用)
     - [10.2 在枚举几何中的应用](#102-在枚举几何中的应用)
     - [10.3 混合Motive理论](#103-混合motive理论)
+  - [十一、参考文献与网络资源](#十一参考文献与网络资源)
 
 ---
 
@@ -83,29 +85,22 @@ Motive M(X)：
 - 应用
 ```
 
+### 1.3 历史与渊源
+
+**Motive** 与**标准猜想**由 Grothendieck 提出，旨在统一 Betti、de Rham、étale、晶体等上同调并建立 Weil 猜想的几何基础。**Lefschetz 标准猜想**（B）与 **Hodge 型标准猜想**（D）若成立则纯 Motive 范畴（数值等价）为半单 Abel。**混合 Motive**（Voevodsky 等）推广到一般簇。现状：曲线、Abel 簇、曲面、完全交等满足 B；一般未解决。参见 Kleiman 综述、Wikipedia "Standard conjectures"。
+
 ---
 
 ## 二、Motive范畴
 
 ### 2.1 定义
 
-**Motive范畴Mot(k)**：
+**Motive范畴Mot(k)**：域 $k$ 上**纯 Motive**（射影光滑簇、代数对应、同调或数值等价）构成的范畴；**混合 Motive**（Voevodsky 等）推广到一般簇。参见 Kleiman "Standard conjectures"、Wikipedia "Motive (algebraic geometry)"。
 
 ```text
-域k
-
-Motive范畴：
-Mot(k) = 纯Motive的同构类
-
-构造：
-- 代数对应
-- 等价关系
-- 范畴结构
-
-意义：
-- 统一对象
-- 几何不变量
-- 应用
+Mot(k) = 纯 Motive 的同构类
+构造：代数对应、等价关系（同调/数值）、范畴结构
+意义：统一上同调、几何不变量
 ```
 
 ---
@@ -668,6 +663,14 @@ Motive理论在算术几何中有重要应用。
 - **算术Motive**：定义算术Motive
 - **算术不变量**：使用Motive计算算术不变量
 - **应用**：在算术几何中有重要应用
+
+---
+
+## 十一、参考文献与网络资源
+
+- **Grothendieck / Kleiman**：Standard conjectures 原始表述；Kleiman "Standard conjectures on algebraic cycles" (Dix Exposés)。
+- **网络**：Wikipedia "Standard conjectures on algebraic cycles" "Motive (algebraic geometry)"；MathOverflow 进展讨论。
+- **混合 Motive**：Voevodsky、Levine 等；导出范畴与几何。
 
 ---
 

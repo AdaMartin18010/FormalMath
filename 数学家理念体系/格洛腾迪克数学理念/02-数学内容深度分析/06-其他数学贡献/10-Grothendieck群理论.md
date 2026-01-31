@@ -39,6 +39,7 @@
     - [10.3 在拓扑中的应用](#103-在拓扑中的应用)
   - [十一、数学公式总结](#十一数学公式总结)
     - [核心公式](#核心公式)
+  - [十二、参考文献与网络资源](#十二参考文献与网络资源)
 
 ---
 
@@ -79,6 +80,10 @@ K_0(X) = 向量丛的Grothendieck群
 - 函子性
 - 应用广泛
 ```
+
+### 1.3 历史与渊源
+
+**Grothendieck 群** K_0 由 Grothendieck 在 **SGA 6**（1971）中系统引入，用于向量丛分类、**Riemann-Roch** 与相交理论；**Picard 群** Pic(X)、**Chern 特征** ch 与 K_0、GRR 紧密联系。高 K 群见 [07-K理论](./07-K理论.md)；GRR 与相交见 [05-Riemann-Roch定理](./05-Riemann-Roch定理.md)、[06-相交理论](./06-相交理论.md)。
 
 ---
 
@@ -759,6 +764,13 @@ Grothendieck群理论的现代发展具有重要意义，特别是在数论、�
 
 15. **拓扑K群与上同调**：
     $$K^*(X) \otimes \mathbb{Q} \cong H^*(X, \mathbb{Q})$$
+
+---
+
+## 十二、参考文献与网络资源
+
+- **SGA 6**：Berthelot–Grothendieck–Illusie, LNM 225 (1971)；K_0、Chern、GRR。
+- **姊妹篇**：[05-Riemann-Roch定理](./05-Riemann-Roch定理.md)；[07-K理论](./07-K理论.md)；[06-相交理论](./06-相交理论.md)。
 
 ---
 

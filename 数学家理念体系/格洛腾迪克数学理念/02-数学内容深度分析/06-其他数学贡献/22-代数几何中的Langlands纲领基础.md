@@ -74,6 +74,10 @@ Langlands提出了连接数论与表示论的宏伟纲领。
 - 影响了现代数论几何
 - 影响至今
 
+### 1.3 历史与渊源
+
+**Langlands 纲领**（自守表示与 Galois 表示对应）由 **Langlands** 提出；几何 Langlands、函数域与数域版本与模形式（[20](./20-代数几何中的模形式理论.md)）、算术（[21](./21-代数几何中的算术几何.md)）紧密联系。参见 Langlands、Wikipedia "Langlands program"、[20](./20-代数几何中的模形式理论.md)、[21](./21-代数几何中的算术几何.md)。
+
 ---
 
 ## 二、Langlands纲领概述
@@ -500,6 +504,14 @@ Langlands纲领在算术几何中有重要应用。
 
 15. **Betti上同调**：
     $$H^i_B(X) = H^i(X(\mathbb{C}), \mathbb{Q})$$
+
+---
+
+## 十一、参考文献与网络资源
+
+- **Langlands**：Langlands program 原始文献。
+- **Wikipedia**：Langlands program。
+- **姊妹篇**：[20-代数几何中的模形式理论](./20-代数几何中的模形式理论.md)；[21-代数几何中的算术几何](./21-代数几何中的算术几何.md)。
 
 ---
 
