@@ -1,4 +1,4 @@
-﻿# 概形的对偶理论与Serre对偶：几何对偶的高级形式
+# 概形的对偶理论与Serre对偶：几何对偶的高级形式
 
 
 ## 📋 目录
@@ -264,6 +264,20 @@ Grothendieck的贡献：
 
 10. **对偶与上同调维数**：
     $$\text{cd}(X) = n \Rightarrow H^n(X, \omega_X) \neq 0$$
+
+---
+
+## 历史与渊源（对齐）
+
+- **Serre 对偶**：源于 J.-P. Serre（1955）在代数簇上对偶定理；Hartshorne III.7、Stacks 0B54 与本文表述一致。
+- **Grothendieck 对偶**：由 Grothendieck 在 SGA 与 EGA 中系统化，固有态射的 f^! 与 RHom 对偶；Hartshorne III.11、Stacks 0A7E 为权威参考。
+- **对偶层与典范层**：ω_X 为最高次微分形式层，与 Stacks、EGA 定义一致。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[12-微分形式与对偶层](./12-微分形式与对偶层.md)、[31-概形的层理论与层范畴](./31-概形的层理论与层范畴.md)、[33-概形的平坦性与Tor函子](./33-概形的平坦性与Tor函子.md)。
+- **03-上同调理论**：[21-上同调与Serre对偶](../03-上同调理论/21-上同调与Serre对偶.md)、[22-上同调与Grothendieck对偶](../03-上同调理论/22-上同调与Grothendieck对偶.md)、[11-上同调与对偶理论](../03-上同调理论/11-上同调与对偶理论.md)。
+- **网络资源**：Stacks Project [0B54 Serre duality](https://stacks.math.columbia.edu/tag/0B54)、[0A7E Grothendieck duality](https://stacks.math.columbia.edu/tag/0A7E)；Hartshorne *Algebraic Geometry* Ch. III。
 
 ---
 

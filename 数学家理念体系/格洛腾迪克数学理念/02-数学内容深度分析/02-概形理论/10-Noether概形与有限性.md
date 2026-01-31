@@ -416,6 +416,20 @@ $$X \text{ Noether } \Rightarrow \exists \text{ 有限仿射覆盖 } \{U_i\}$$
 
 ---
 
+## 历史与渊源（对齐）
+
+- **Noether 概形**：拓扑 Noether + 茎 Noether；有限型/有限表现态射与 EGA I.6；Hartshorne II.3，Stacks 01OV、01T6 与本文一致。
+- **有限性**：上同调、凝聚层有限性与 Stacks 02O2、EGA III 一致；与 03-上同调、05-拟凝聚层 衔接。
+- **与完备性**：Noether 概形上固有态射的有限性；见 11-完备概形与紧性。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[11-完备概形与紧性](./11-完备概形与紧性.md)、[05-拟凝聚层与凝聚层](./05-拟凝聚层与凝聚层.md)、[08-射影概形](./08-射影概形.md)。
+- **03-上同调理论**：[02-概形与层上同调](../03-上同调理论/02-概形与层上同调.md)；**05-代数几何现代化**：[05-代数几何的公理化](../05-代数几何现代化/05-代数几何的公理化.md)。
+- **网络资源**：Stacks Project [01OV](https://stacks.math.columbia.edu/tag/01OV)、[01T6](https://stacks.math.columbia.edu/tag/01T6)、[02O2](https://stacks.math.columbia.edu/tag/02O2)；EGA I、III；Hartshorne II.3。
+
+---
+
 **文档状态**: ✅ 完成（已补充数学公式和例子）
 **字数**: 约2,900字
 **数学公式数**: 15个
