@@ -2,17 +2,49 @@
 
 **关联文档**：[30-上同调与Ext函子应用](./30-上同调与Ext函子应用.md) · 同名网络对齐报告
 
-## 术语表
+---
+
+## 📋 术语表
 
 | 中文 | 英文 | 符号/备注 |
 |------|------|-----------|
-| Ext 函子应用 | Ext functor application | 扩张、分类 |
-| Yoneda | Yoneda | Ext^1、扩张群 |
+| Ext 函子应用 | Ext functor application | 扩张、分类、obstruction |
+| Yoneda 扩张 | Yoneda extension | $\mathrm{Ext}^1(A,B)$ = 扩张等价类 |
+| 障碍理论 | Obstruction theory | $\mathrm{Ext}^2$  obstruct 提升 |
+| Serre 对偶 | Serre duality | $H^i \cong H^{n-i}$ 对偶 |
 
-## 概念树
+---
+
+## 🌳 概念树
 
 ```text
 上同调与Ext函子应用
-├── Ext 应用、扩张、Yoneda
+├── Ext 应用
+│   ├── Ext^1：扩张分类（向量丛、层扩张）
+│   ├── Ext^2：障碍理论
+│   └── Ext^i：高阶扩张、形变
+├── Yoneda 解释
+│   ├── 0→B→E→A→0 的等价类
+│   ├── Baer 和、群结构
+│   └── 长正合列
+├── 几何应用
+│   ├── 向量丛的扩张
+│   ├── 形变理论
+│   └── 对偶定理
 └── 19-上同调与Ext函子、29-上同调与同调代数
 ```
+
+---
+
+## 📊 多维矩阵：Ext 应用场景
+
+| 场景 | Ext^i | 说明 |
+|------|-------|------|
+| 向量丛 | Ext^1 | 扩张 0→F→E→G→0 |
+| 形变 | Ext^1 | 一阶形变 |
+| 障碍 | Ext^2 | 提升障碍 |
+| 对偶 | Ext^n | Serre 对偶 |
+
+---
+
+**字数**: 约 510 字 | **数学公式**: 4+ | **最后更新**: 2026-01-31
