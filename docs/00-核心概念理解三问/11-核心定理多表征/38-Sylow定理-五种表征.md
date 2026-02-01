@@ -1,3 +1,8 @@
+---
+msc_primary: "20D20"
+msc_secondary: ["20A05"]
+---
+
 # Sylow定理 - 五种表征
 
 **创建日期**: 2025年12月1日
@@ -28,6 +33,7 @@
 **Sylow第二定理**：所有Sylow p-子群共轭。
 
 **Sylow第三定理**：设nₚ是Sylow p-子群的个数，则：
+
 - nₚ ≡ 1 (mod p)
 - nₚ | m
 

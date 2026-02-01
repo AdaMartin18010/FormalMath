@@ -1,0 +1,1613 @@
+# FormalMath 跨分支链接数据
+# 设计文档: project/00-跨分支链接系统设计文档-2026年2月2日.md
+# 路径均为相对项目根目录
+
+version: "1.0"
+updated: "2026-02-02"
+target_total: 200
+
+links:
+  # 代数-拓扑
+  - id: L001
+    source: "concept/核心概念/08-群.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "交叉"
+    branch_pair: "代数-拓扑"
+    description: "拓扑群是群与拓扑结构的结合，连接代数与拓扑"
+    priority: P0
+    verified: false
+  - id: L002
+    source: "concept/核心概念/09-环.md"
+    target: "concept/核心概念/21-概形.md"
+    type: "先修"
+    branch_pair: "代数-几何"
+    description: "环论是概形与代数几何的基础"
+    priority: P0
+    verified: false
+  - id: L003
+    source: "concept/核心概念/21-概形.md"
+    target: "docs/02-代数结构/02-核心理论/交换代数/01-交换代数核心-深度扩展版.md"
+    type: "应用"
+    branch_pair: "代数-几何"
+    description: "概形理论依赖交换代数"
+    priority: P0
+    verified: false
+  - id: L004
+    source: "concept/核心概念/18-流形.md"
+    target: "concept/核心概念/16-积分.md"
+    type: "应用"
+    branch_pair: "分析-几何"
+    description: "流形上的积分依赖微分形式与Stokes定理"
+    priority: P0
+    verified: false
+  - id: L005
+    source: "docs/03-分析学/01-实分析/01-实分析.md"
+    target: "docs/05-拓扑学/01-点集拓扑.md"
+    type: "先修"
+    branch_pair: "分析-拓扑"
+    description: "实分析中的连续性、收敛性依赖拓扑概念"
+    priority: P0
+    verified: false
+  - id: L006
+    source: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "交叉"
+    branch_pair: "代数-拓扑"
+    description: "拓扑群、李群连接群论与拓扑"
+    priority: P0
+    verified: false
+  - id: L007
+    source: "concept/核心概念/24-同伦.md"
+    target: "concept/核心概念/25-同调.md"
+    type: "先修"
+    branch_pair: "拓扑-代数"
+    description: "同伦与同调是代数拓扑的核心概念"
+    priority: P0
+    verified: false
+  - id: L008
+    source: "concept/核心概念/22-层.md"
+    target: "concept/核心概念/21-概形.md"
+    type: "应用"
+    branch_pair: "拓扑-几何"
+    description: "层论是概形与上同调的基础"
+    priority: P0
+    verified: false
+  - id: L009
+    source: "docs/06-数论/02-代数数论.md"
+    target: "docs/11-高级数学/11-算术几何.md"
+    type: "先修"
+    branch_pair: "数论-几何"
+    description: "代数数论与算术几何紧密关联"
+    priority: P1
+    verified: false
+  - id: L010
+    source: "docs/07-逻辑学/01-命题逻辑.md"
+    target: "docs/09-形式化证明/01-证明系统基础.md"
+    type: "先修"
+    branch_pair: "逻辑-数学"
+    description: "命题逻辑是形式化证明系统的基础"
+    priority: P1
+    verified: false
+  - id: L011
+    source: "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+    target: "docs/02-代数结构/02-核心理论/表示论/01-表示论基础.md"
+    type: "交叉"
+    branch_pair: "分析-代数"
+    description: "算子代数、C*-代数连接泛函分析与表示论"
+    priority: P1
+    verified: false
+  - id: L012
+    source: "concept/核心概念/11-向量空间.md"
+    target: "concept/核心概念/12-线性映射.md"
+    type: "先修"
+    branch_pair: "代数-代数"
+    description: "线性映射定义在向量空间之间"
+    priority: P0
+    verified: false
+  - id: L013
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/06-Stokes定理-五种表征.md"
+    target: "concept/核心概念/18-流形.md"
+    type: "应用"
+    branch_pair: "分析-几何"
+    description: "Stokes定理在流形上的微分形式积分"
+    priority: P0
+    verified: false
+  - id: L014
+    source: "concept/核心概念/09-环.md"
+    target: "concept/核心概念/10-域.md"
+    type: "推广"
+    branch_pair: "代数-代数"
+    description: "域是环的特例（交换除环）"
+    priority: P0
+    verified: false
+  - id: L015
+    source: "concept/核心概念/08-群.md"
+    target: "concept/核心概念/09-环.md"
+    type: "先修"
+    branch_pair: "代数-代数"
+    description: "环的加法群是阿贝尔群"
+    priority: P0
+    verified: false
+  # 概念-概念 先修/推广链
+  - id: L016
+    source: "concept/核心概念/01-集合.md"
+    target: "concept/核心概念/02-函数.md"
+    type: "先修"
+    branch_pair: "基础-基础"
+    description: "函数是集合间的映射"
+    priority: P0
+    verified: false
+  - id: L017
+    source: "concept/核心概念/03-自然数.md"
+    target: "concept/核心概念/04-整数.md"
+    type: "先修"
+    branch_pair: "数论-数论"
+    description: "整数由自然数扩张得到"
+    priority: P0
+    verified: false
+  - id: L018
+    source: "concept/核心概念/04-整数.md"
+    target: "concept/核心概念/05-有理数.md"
+    type: "先修"
+    branch_pair: "数论-数论"
+    description: "有理数为整数之比"
+    priority: P0
+    verified: false
+  - id: L019
+    source: "concept/核心概念/05-有理数.md"
+    target: "concept/核心概念/06-实数.md"
+    type: "先修"
+    branch_pair: "分析-分析"
+    description: "实数为有理数完备化"
+    priority: P0
+    verified: false
+  - id: L020
+    source: "concept/核心概念/06-实数.md"
+    target: "concept/核心概念/07-复数.md"
+    type: "先修"
+    branch_pair: "分析-分析"
+    description: "复数为实数代数闭包"
+    priority: P0
+    verified: false
+  - id: L021
+    source: "concept/核心概念/13-极限.md"
+    target: "concept/核心概念/14-连续.md"
+    type: "先修"
+    branch_pair: "分析-分析"
+    description: "连续性由极限定义"
+    priority: P0
+    verified: false
+  - id: L022
+    source: "concept/核心概念/14-连续.md"
+    target: "concept/核心概念/15-导数.md"
+    type: "先修"
+    branch_pair: "分析-分析"
+    description: "可微蕴含连续"
+    priority: P0
+    verified: false
+  - id: L023
+    source: "concept/核心概念/15-导数.md"
+    target: "concept/核心概念/16-积分.md"
+    type: "先修"
+    branch_pair: "分析-分析"
+    description: "微积分基本定理联系导数与积分"
+    priority: P0
+    verified: false
+  - id: L024
+    source: "concept/核心概念/16-积分.md"
+    target: "concept/核心概念/17-级数.md"
+    type: "交叉"
+    branch_pair: "分析-分析"
+    description: "级数收敛与积分理论相关"
+    priority: P1
+    verified: false
+  - id: L025
+    source: "concept/核心概念/23-拓扑空间.md"
+    target: "concept/核心概念/18-流形.md"
+    type: "先修"
+    branch_pair: "拓扑-几何"
+    description: "流形是局部欧氏空间的拓扑空间"
+    priority: P0
+    verified: false
+  - id: L026
+    source: "concept/核心概念/18-流形.md"
+    target: "concept/核心概念/19-黎曼流形.md"
+    type: "推广"
+    branch_pair: "几何-几何"
+    description: "黎曼流形是带度量结构的流形"
+    priority: P0
+    verified: false
+  - id: L027
+    source: "concept/核心概念/19-黎曼流形.md"
+    target: "concept/核心概念/20-曲率.md"
+    type: "应用"
+    branch_pair: "几何-几何"
+    description: "曲率是黎曼几何的核心不变量"
+    priority: P0
+    verified: false
+  - id: L028
+    source: "concept/核心概念/24-同伦.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "同伦是拓扑空间上的等价关系"
+    priority: P0
+    verified: false
+  - id: L029
+    source: "concept/核心概念/26-素数.md"
+    target: "concept/核心概念/27-同余.md"
+    type: "先修"
+    branch_pair: "数论-数论"
+    description: "同余理论用于研究素数分布"
+    priority: P0
+    verified: false
+  - id: L030
+    source: "concept/核心概念/27-同余.md"
+    target: "concept/核心概念/28-L函数.md"
+    type: "应用"
+    branch_pair: "数论-数论"
+    description: "L函数与同余及素数关联"
+    priority: P1
+    verified: false
+  # 定理-概念 链接
+  - id: L031
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/01-Lagrange定理-五种表征.md"
+    target: "concept/核心概念/08-群.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Lagrange定理刻画有限群的子群阶"
+    priority: P0
+    verified: false
+  - id: L032
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/02-第一同构定理-五种表征.md"
+    target: "concept/核心概念/08-群.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "第一同构定理涉及群与同态"
+    priority: P0
+    verified: false
+  - id: L033
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/03-介值定理-五种表征.md"
+    target: "concept/核心概念/14-连续.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "介值定理是连续函数的重要性质"
+    priority: P0
+    verified: false
+  - id: L034
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/68-微积分基本定理-五种表征.md"
+    target: "concept/核心概念/16-积分.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "微积分基本定理联系导数与积分"
+    priority: P0
+    verified: false
+  - id: L035
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/06-Stokes定理-五种表征.md"
+    target: "concept/核心概念/16-积分.md"
+    type: "应用"
+    branch_pair: "分析-几何"
+    description: "Stokes定理是流形上积分的基本定理"
+    priority: P0
+    verified: false
+  - id: L036
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/35-de Rham定理-五种表征.md"
+    target: "concept/核心概念/25-同调.md"
+    type: "交叉"
+    branch_pair: "分析-拓扑"
+    description: "de Rham定理联系微分形式与上同调"
+    priority: P0
+    verified: false
+  - id: L037
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/12-Gauss-Bonnet定理-五种表征.md"
+    target: "concept/核心概念/20-曲率.md"
+    type: "应用"
+    branch_pair: "几何-几何"
+    description: "Gauss-Bonnet定理将曲率与欧拉示性数联系"
+    priority: P0
+    verified: false
+  - id: L038
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/05-米田引理-五种表征.md"
+    target: "concept/核心概念/21-概形.md"
+    type: "应用"
+    branch_pair: "代数-几何"
+    description: "米田引理在范畴与概形中广泛应用"
+    priority: P1
+    verified: false
+  - id: L039
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/76-代数基本定理-五种表征.md"
+    target: "concept/核心概念/07-复数.md"
+    type: "应用"
+    branch_pair: "分析-代数"
+    description: "代数基本定理断言复数域代数闭"
+    priority: P0
+    verified: false
+  - id: L040
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/30-Hahn-Banach定理-五种表征.md"
+    target: "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Hahn-Banach是泛函分析基本定理"
+    priority: P0
+    verified: false
+  - id: L041
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/38-Sylow定理-五种表征.md"
+    target: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Sylow定理是有限群论核心结果"
+    priority: P0
+    verified: false
+  - id: L042
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/26-素数定理-五种表征.md"
+    target: "docs/06-数论/02-代数数论.md"
+    type: "应用"
+    branch_pair: "数论-数论"
+    description: "素数定理描述素数分布"
+    priority: P0
+    verified: false
+  - id: L043
+    source: "concept/核心概念/22-层.md"
+    target: "concept/核心概念/25-同调.md"
+    type: "应用"
+    branch_pair: "拓扑-代数"
+    description: "层上同调是层论与同调代数的结合"
+    priority: P0
+    verified: false
+  - id: L044
+    source: "concept/核心概念/11-向量空间.md"
+    target: "concept/核心概念/08-群.md"
+    type: "交叉"
+    branch_pair: "代数-代数"
+    description: "向量空间加法群是阿贝尔群"
+    priority: P0
+    verified: false
+  - id: L045
+    source: "docs/01-基础数学/集合论/01-集合论基础.md"
+    target: "concept/核心概念/01-集合.md"
+    type: "应用"
+    branch_pair: "基础-基础"
+    description: "集合论基础与集合概念对应"
+    priority: P0
+    verified: false
+  - id: L046
+    source: "docs/03-分析学/02-复分析/02-复分析.md"
+    target: "concept/核心概念/07-复数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "复分析以复数为基本对象"
+    priority: P0
+    verified: false
+  - id: L047
+    source: "docs/05-拓扑学/01-点集拓扑.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "点集拓扑以拓扑空间为核心"
+    priority: P0
+    verified: false
+  - id: L048
+    source: "docs/14-微分几何/02-微分几何增强版.md"
+    target: "concept/核心概念/18-流形.md"
+    type: "应用"
+    branch_pair: "几何-几何"
+    description: "微分几何在流形上展开"
+    priority: P0
+    verified: false
+  - id: L049
+    source: "docs/13-代数几何/02-代数几何增强版.md"
+    target: "concept/核心概念/21-概形.md"
+    type: "应用"
+    branch_pair: "几何-代数"
+    description: "代数几何以概形为基本对象"
+    priority: P0
+    verified: false
+  - id: L050
+    source: "docs/07-逻辑学/02-谓词逻辑.md"
+    target: "docs/07-逻辑学/01-命题逻辑.md"
+    type: "先修"
+    branch_pair: "逻辑-逻辑"
+    description: "谓词逻辑扩展命题逻辑"
+    priority: P0
+    verified: false
+  - id: L051
+    source: "docs/09-形式化证明/01-证明系统基础.md"
+    target: "docs/07-逻辑学/02-谓词逻辑.md"
+    type: "先修"
+    branch_pair: "逻辑-逻辑"
+    description: "形式化证明依赖谓词逻辑"
+    priority: P1
+    verified: false
+  - id: L052
+    source: "concept/核心概念/32-表示.md"
+    target: "concept/核心概念/08-群.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "群表示是群到线性映射的同态"
+    priority: P0
+    verified: false
+  - id: L053
+    source: "docs/02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md"
+    target: "concept/核心概念/09-环.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "环论深度扩展与环概念对应"
+    priority: P0
+    verified: false
+  - id: L054
+    source: "docs/02-代数结构/02-核心理论/域论/域论-增强版.md"
+    target: "concept/核心概念/10-域.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "域论与域概念对应"
+    priority: P0
+    verified: false
+  - id: L055
+    source: "docs/06-数论/01-初等数论.md"
+    target: "concept/核心概念/26-素数.md"
+    type: "应用"
+    branch_pair: "数论-数论"
+    description: "初等数论以素数与同余为核心"
+    priority: P0
+    verified: false
+  - id: L056
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/67-Taylor定理-五种表征.md"
+    target: "concept/核心概念/15-导数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Taylor定理用导数刻画函数局部行为"
+    priority: P0
+    verified: false
+  - id: L057
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/66-Heine-Borel定理-五种表征.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "分析-拓扑"
+    description: "Heine-Borel刻画欧氏空间紧集"
+    priority: P0
+    verified: false
+  - id: L058
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/22-Seifert-van Kampen定理-五种表征.md"
+    target: "concept/核心概念/24-同伦.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "Seifert-van Kampen计算基本群"
+    priority: P1
+    verified: false
+  - id: L059
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/41-Hilbert零点定理-五种表征.md"
+    target: "concept/核心概念/21-概形.md"
+    type: "应用"
+    branch_pair: "代数-几何"
+    description: "Hilbert零点定理是代数几何基础"
+    priority: P0
+    verified: false
+  - id: L060
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/55-Riemann-Roch定理-五种表征.md"
+    target: "concept/核心概念/22-层.md"
+    type: "应用"
+    branch_pair: "几何-代数"
+    description: "Riemann-Roch涉及层上同调"
+    priority: P1
+    verified: false
+  - id: L061
+    source: "concept/核心概念/13-极限.md"
+    target: "docs/03-分析学/01-实分析/01-实分析.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "实分析以极限为基本工具"
+    priority: P0
+    verified: false
+  - id: L062
+    source: "concept/核心概念/02-函数.md"
+    target: "concept/核心概念/01-集合.md"
+    type: "先修"
+    branch_pair: "基础-基础"
+    description: "函数定义依赖集合与映射"
+    priority: P0
+    verified: false
+  - id: L063
+    source: "docs/11-高级数学/11-算术几何.md"
+    target: "concept/核心概念/21-概形.md"
+    type: "应用"
+    branch_pair: "几何-代数"
+    description: "算术几何在概形框架下研究"
+    priority: P1
+    verified: false
+  - id: L064
+    source: "docs/11-高级数学/07-高阶同伦论.md"
+    target: "concept/核心概念/24-同伦.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "高阶同伦论深化同伦概念"
+    priority: P1
+    verified: false
+  - id: L065
+    source: "docs/15-同调代数/01-同调代数基础.md"
+    target: "concept/核心概念/25-同调.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "同调代数是同调理论的代数化"
+    priority: P0
+    verified: false
+  - id: L066
+    source: "concept/核心概念/33-朗兰兹纲领.md"
+    target: "concept/核心概念/28-L函数.md"
+    type: "应用"
+    branch_pair: "数论-数论"
+    description: "朗兰兹纲领统一L函数与表示"
+    priority: P1
+    verified: false
+  - id: L067
+    source: "concept/核心概念/29-图.md"
+    target: "concept/核心概念/01-集合.md"
+    type: "应用"
+    branch_pair: "离散-基础"
+    description: "图是顶点与边的集合结构"
+    priority: P1
+    verified: false
+  - id: L068
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/09-单调收敛定理-五种表征.md"
+    target: "concept/核心概念/17-级数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "单调收敛定理处理积分与级数"
+    priority: P0
+    verified: false
+  - id: L069
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/45-Banach不动点定理-五种表征.md"
+    target: "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Banach不动点定理在完备度量空间"
+    priority: P0
+    verified: false
+  - id: L070
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/77-Galois基本定理-五种表征.md"
+    target: "concept/核心概念/10-域.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Galois基本定理刻画域扩张与群"
+    priority: P0
+    verified: false
+  - id: L071
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/16-Zorn引理-五种表征.md"
+    target: "concept/核心概念/01-集合.md"
+    type: "应用"
+    branch_pair: "基础-基础"
+    description: "Zorn引理是集合论与选择公理的结果"
+    priority: P0
+    verified: false
+  - id: L072
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/49-Poincaré对偶-五种表征.md"
+    target: "concept/核心概念/25-同调.md"
+    type: "应用"
+    branch_pair: "拓扑-代数"
+    description: "Poincaré对偶是流形上同调的对偶"
+    priority: P1
+    verified: false
+  - id: L073
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/04-Brouwer不动点定理-五种表征.md"
+    target: "concept/核心概念/24-同伦.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "Brouwer不动点定理的证明用同伦论"
+    priority: P0
+    verified: false
+  - id: L074
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/32-Riesz表示定理-五种表征.md"
+    target: "concept/核心概念/11-向量空间.md"
+    type: "应用"
+    branch_pair: "分析-代数"
+    description: "Riesz表示定理联系泛函与内积空间"
+    priority: P0
+    verified: false
+  - id: L075
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/64-Gram-Schmidt正交化-五种表征.md"
+    target: "concept/核心概念/12-线性映射.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Gram-Schmidt是线性代数基本算法"
+    priority: P0
+    verified: false
+  - id: L076
+    source: "concept/核心概念/31-算法.md"
+    target: "concept/核心概念/01-集合.md"
+    type: "应用"
+    branch_pair: "计算-基础"
+    description: "算法操作的对象常为离散集合"
+    priority: P1
+    verified: false
+  - id: L077
+    source: "docs/08-计算数学/01-数值分析.md"
+    target: "concept/核心概念/13-极限.md"
+    type: "应用"
+    branch_pair: "计算-分析"
+    description: "数值分析依赖极限与收敛"
+    priority: P1
+    verified: false
+  - id: L078
+    source: "docs/12-应用数学/06-机器学习数学基础.md"
+    target: "concept/核心概念/11-向量空间.md"
+    type: "应用"
+    branch_pair: "应用-代数"
+    description: "机器学习大量使用线性代数"
+    priority: P1
+    verified: false
+  - id: L079
+    source: "docs/03-分析学/04-调和分析/04-调和分析.md"
+    target: "concept/核心概念/16-积分.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "调和分析以傅里叶分析与积分为基础"
+    priority: P1
+    verified: false
+  - id: L080
+    source: "docs/10-语义模型/模型论/01-模型论基础-深度扩展版.md"
+    target: "docs/07-逻辑学/02-谓词逻辑.md"
+    type: "先修"
+    branch_pair: "逻辑-逻辑"
+    description: "模型论以谓词逻辑与结构为对象"
+    priority: P1
+    verified: false
+  - id: L081
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/07-Gödel不完备定理-五种表征.md"
+    target: "docs/07-逻辑学/01-命题逻辑.md"
+    type: "应用"
+    branch_pair: "逻辑-逻辑"
+    description: "Gödel不完备定理是逻辑与证明论核心"
+    priority: P0
+    verified: false
+  - id: L082
+    source: "concept/核心概念/20-曲率.md"
+    target: "docs/14-微分几何/02-微分几何增强版.md"
+    type: "应用"
+    branch_pair: "几何-几何"
+    description: "曲率在微分几何中系统研究"
+    priority: P0
+    verified: false
+  - id: L083
+    source: "docs/02-代数结构/02-核心理论/表示论/01-表示论基础.md"
+    target: "concept/核心概念/32-表示.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "表示论基础与表示概念对应"
+    priority: P0
+    verified: false
+  - id: L084
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/43-Poincaré引理-五种表征.md"
+    target: "concept/核心概念/18-流形.md"
+    type: "应用"
+    branch_pair: "分析-几何"
+    description: "Poincaré引理涉及流形上微分形式"
+    priority: P0
+    verified: false
+  - id: L085
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/51-Whitney嵌入定理-五种表征.md"
+    target: "concept/核心概念/18-流形.md"
+    type: "应用"
+    branch_pair: "拓扑-几何"
+    description: "Whitney嵌入定理将流形嵌入欧氏空间"
+    priority: P1
+    verified: false
+  - id: L086
+    source: "concept/核心概念/10-域.md"
+    target: "docs/02-代数结构/02-核心理论/域论/域论-增强版.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "域概念在域论中深化"
+    priority: P0
+    verified: false
+  - id: L087
+    source: "concept/核心概念/07-复数.md"
+    target: "docs/03-分析学/02-复分析/02-复分析.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "复数是复分析的基本对象"
+    priority: P0
+    verified: false
+  - id: L088
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/27-二次互反律-五种表征.md"
+    target: "concept/核心概念/27-同余.md"
+    type: "应用"
+    branch_pair: "数论-数论"
+    description: "二次互反律是数论经典结果"
+    priority: P0
+    verified: false
+  - id: L089
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/54-Serre对偶-五种表征.md"
+    target: "concept/核心概念/22-层.md"
+    type: "应用"
+    branch_pair: "几何-代数"
+    description: "Serre对偶涉及凝聚层上同调"
+    priority: P1
+    verified: false
+  - id: L090
+    source: "concept/核心概念/25-同调.md"
+    target: "docs/15-同调代数/01-同调代数基础.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "同调概念在同调代数中形式化"
+    priority: P0
+    verified: false
+  - id: L091
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/08-Cayley定理-五种表征.md"
+    target: "concept/核心概念/08-群.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Cayley定理将群实现为置换群"
+    priority: P0
+    verified: false
+  - id: L092
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/17-极值定理-五种表征.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "分析-拓扑"
+    description: "极值定理依赖紧性"
+    priority: P0
+    verified: false
+  - id: L093
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/15-隐函数定理-五种表征.md"
+    target: "concept/核心概念/15-导数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "隐函数定理是多变量微分的核心"
+    priority: P0
+    verified: false
+  - id: L094
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/20-Urysohn引理-五种表征.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "Urysohn引理是正规空间分离性质"
+    priority: P0
+    verified: false
+  - id: L095
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/13-Tychonoff定理-五种表征.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "Tychonoff定理刻画乘积空间紧性"
+    priority: P0
+    verified: false
+  - id: L096
+    source: "concept/核心概念/16-积分.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/33-Fubini定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Fubini定理处理重积分换序"
+    priority: P0
+    verified: false
+  - id: L097
+    source: "concept/核心概念/09-环.md"
+    target: "docs/02-代数结构/02-核心理论/交换代数/01-交换代数核心-深度扩展版.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "交换代数是环论的深化"
+    priority: P0
+    verified: false
+  - id: L098
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/79-Nakayama引理-五种表征.md"
+    target: "concept/核心概念/09-环.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Nakayama引理是交换代数与模论工具"
+    priority: P0
+    verified: false
+  - id: L099
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/78-Krull主理想定理-五种表征.md"
+    target: "concept/核心概念/21-概形.md"
+    type: "应用"
+    branch_pair: "代数-几何"
+    description: "Krull主理想定理涉及诺特环与维数"
+    priority: P1
+    verified: false
+  - id: L100
+    source: "concept/核心概念/14-连续.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/03-介值定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "介值定理是连续函数的性质"
+    priority: P0
+    verified: false
+  # L101-L200 第二批
+  - id: L101
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/10-控制收敛定理-五种表征.md"
+    target: "concept/核心概念/17-级数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "控制收敛定理处理积分与极限换序"
+    priority: P0
+    verified: false
+  - id: L102
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/11-Cantor对角线定理-五种表征.md"
+    target: "concept/核心概念/01-集合.md"
+    type: "应用"
+    branch_pair: "基础-基础"
+    description: "Cantor对角线论证与集合基数"
+    priority: P0
+    verified: false
+  - id: L103
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/14-Cauchy积分公式-五种表征.md"
+    target: "concept/核心概念/07-复数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Cauchy积分公式是复分析核心"
+    priority: P0
+    verified: false
+  - id: L104
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/18-有限域分类定理-五种表征.md"
+    target: "concept/核心概念/10-域.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "有限域分类依赖域论"
+    priority: P0
+    verified: false
+  - id: L105
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/19-唯一分解定理-五种表征.md"
+    target: "concept/核心概念/09-环.md"
+    type: "应用"
+    branch_pair: "代数-数论"
+    description: "唯一分解在整环与主理想整环中"
+    priority: P0
+    verified: false
+  - id: L106
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/21-van Kampen定理-五种表征.md"
+    target: "concept/核心概念/24-同伦.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "van Kampen定理计算基本群"
+    priority: P1
+    verified: false
+  - id: L107
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/23-反函数定理-五种表征.md"
+    target: "concept/核心概念/15-导数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "反函数定理依赖导数与雅可比"
+    priority: P0
+    verified: false
+  - id: L108
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/24-Frobenius定理-五种表征.md"
+    target: "concept/核心概念/18-流形.md"
+    type: "应用"
+    branch_pair: "几何-几何"
+    description: "Frobenius定理刻画可积分布与流形"
+    priority: P1
+    verified: false
+  - id: L109
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/25-伴随函子存在定理-五种表征.md"
+    target: "concept/核心概念/21-概形.md"
+    type: "应用"
+    branch_pair: "代数-几何"
+    description: "伴随函子在范畴与概形中普遍存在"
+    priority: P1
+    verified: false
+  - id: L110
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/28-Stone-Weierstrass定理-五种表征.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "分析-拓扑"
+    description: "Stone-Weierstrass涉及紧空间上连续函数"
+    priority: P0
+    verified: false
+  - id: L111
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/29-Baire纲定理-五种表征.md"
+    target: "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Baire纲定理在完备度量空间"
+    priority: P0
+    verified: false
+  - id: L112
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/31-开映射定理-五种表征.md"
+    target: "concept/核心概念/12-线性映射.md"
+    type: "应用"
+    branch_pair: "分析-代数"
+    description: "开映射定理涉及连续线性算子"
+    priority: P0
+    verified: false
+  - id: L113
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/34-Radon-Nikodym定理-五种表征.md"
+    target: "concept/核心概念/16-积分.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Radon-Nikodym涉及测度与绝对连续"
+    priority: P0
+    verified: false
+  - id: L114
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/36-Riemann映射定理-五种表征.md"
+    target: "concept/核心概念/07-复数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Riemann映射定理是单复变核心结果"
+    priority: P0
+    verified: false
+  - id: L115
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/37-留数定理-五种表征.md"
+    target: "concept/核心概念/16-积分.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "留数定理用于复积分计算"
+    priority: P0
+    verified: false
+  - id: L116
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/39-Jordan标准形-五种表征.md"
+    target: "concept/核心概念/12-线性映射.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Jordan标准形是线性代数核心"
+    priority: P0
+    verified: false
+  - id: L117
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/40-谱定理-五种表征.md"
+    target: "concept/核心概念/11-向量空间.md"
+    type: "应用"
+    branch_pair: "分析-代数"
+    description: "谱定理刻画自伴算子对角化"
+    priority: P0
+    verified: false
+  - id: L118
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/42-Noether定理-五种表征.md"
+    target: "concept/核心概念/09-环.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Noether定理是交换代数基础"
+    priority: P0
+    verified: false
+  - id: L119
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/44-Artin-Wedderburn定理-五种表征.md"
+    target: "concept/核心概念/09-环.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Artin-Wedderburn刻画半单环"
+    priority: P1
+    verified: false
+  - id: L120
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/46-中心极限定理-五种表征.md"
+    target: "docs/12-应用数学/01-概率论.md"
+    type: "应用"
+    branch_pair: "应用-应用"
+    description: "中心极限定理是概率论核心"
+    priority: P0
+    verified: false
+  - id: L121
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/47-大数定律-五种表征.md"
+    target: "concept/核心概念/17-级数.md"
+    type: "应用"
+    branch_pair: "应用-分析"
+    description: "大数定律涉及极限与期望"
+    priority: P0
+    verified: false
+  - id: L122
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/48-Ascoli-Arzelà定理-五种表征.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "分析-拓扑"
+    description: "Ascoli-Arzelà刻画相对紧性"
+    priority: P0
+    verified: false
+  - id: L123
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/50-Hurewicz定理-五种表征.md"
+    target: "concept/核心概念/25-同调.md"
+    type: "应用"
+    branch_pair: "拓扑-代数"
+    description: "Hurewicz联系同伦群与同调"
+    priority: P1
+    verified: false
+  - id: L124
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/52-Nash嵌入定理-五种表征.md"
+    target: "concept/核心概念/19-黎曼流形.md"
+    type: "应用"
+    branch_pair: "几何-几何"
+    description: "Nash嵌入将黎曼流形等距嵌入欧氏空间"
+    priority: P1
+    verified: false
+  - id: L125
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/53-Atiyah-Singer指标定理-五种表征.md"
+    target: "concept/核心概念/25-同调.md"
+    type: "应用"
+    branch_pair: "几何-拓扑"
+    description: "Atiyah-Singer联系指标与拓扑"
+    priority: P1
+    verified: false
+  - id: L126
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/56-Hodge分解定理-五种表征.md"
+    target: "concept/核心概念/22-层.md"
+    type: "应用"
+    branch_pair: "几何-代数"
+    description: "Hodge分解涉及上同调与调和形式"
+    priority: P1
+    verified: false
+  - id: L127
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/57-Weyl特征标公式-五种表征.md"
+    target: "concept/核心概念/32-表示.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Weyl公式是李群表示论核心"
+    priority: P1
+    verified: false
+  - id: L128
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/58-Schur正交性关系-五种表征.md"
+    target: "concept/核心概念/08-群.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Schur正交性是有限群表示论基础"
+    priority: P0
+    verified: false
+  - id: L129
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/59-Maschke定理-五种表征.md"
+    target: "concept/核心概念/08-群.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Maschke定理刻画群代数半单性"
+    priority: P0
+    verified: false
+  - id: L130
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/60-Burnside引理-五种表征.md"
+    target: "concept/核心概念/08-群.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Burnside引理用于计数与群作用"
+    priority: P0
+    verified: false
+  - id: L131
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/61-Cayley-Hamilton定理-五种表征.md"
+    target: "concept/核心概念/12-线性映射.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Cayley-Hamilton涉及矩阵与特征多项式"
+    priority: P0
+    verified: false
+  - id: L132
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/62-Perron-Frobenius定理-五种表征.md"
+    target: "concept/核心概念/11-向量空间.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Perron-Frobenius刻画非负矩阵谱"
+    priority: P0
+    verified: false
+  - id: L133
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/63-奇异值分解-五种表征.md"
+    target: "concept/核心概念/12-线性映射.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "奇异值分解是矩阵论核心"
+    priority: P0
+    verified: false
+  - id: L134
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/65-Bolzano-Weierstrass定理-五种表征.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "分析-拓扑"
+    description: "Bolzano-Weierstrass刻画序列紧性"
+    priority: P0
+    verified: false
+  - id: L135
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/69-Green定理-五种表征.md"
+    target: "concept/核心概念/16-积分.md"
+    type: "应用"
+    branch_pair: "分析-几何"
+    description: "Green定理是平面上的Stokes型结果"
+    priority: P0
+    verified: false
+  - id: L136
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/70-散度定理-五种表征.md"
+    target: "concept/核心概念/18-流形.md"
+    type: "应用"
+    branch_pair: "分析-几何"
+    description: "散度定理是流形上积分基本定理"
+    priority: P0
+    verified: false
+  - id: L137
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/71-Rolle定理-五种表征.md"
+    target: "concept/核心概念/15-导数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Rolle定理是中值定理基础"
+    priority: P0
+    verified: false
+  - id: L138
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/72-中值定理-五种表征.md"
+    target: "concept/核心概念/15-导数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "中值定理是微分学核心"
+    priority: P0
+    verified: false
+  - id: L139
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/73-L'Hôpital法则-五种表征.md"
+    target: "concept/核心概念/15-导数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "L'Hôpital法则用导数求极限"
+    priority: P0
+    verified: false
+  - id: L140
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/74-Picard-Lindelöf定理-五种表征.md"
+    target: "concept/核心概念/14-连续.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Picard-Lindelöf保证ODE解存在唯一"
+    priority: P0
+    verified: false
+  - id: L141
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/75-Liouville定理-五种表征.md"
+    target: "concept/核心概念/07-复数.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Liouville定理是有界整函数的性质"
+    priority: P0
+    verified: false
+  - id: L142
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/80-Chevalley-Warning定理-五种表征.md"
+    target: "concept/核心概念/10-域.md"
+    type: "应用"
+    branch_pair: "代数-数论"
+    description: "Chevalley-Warning涉及有限域上多项式"
+    priority: P1
+    verified: false
+  - id: L143
+    source: "concept/核心概念/01-集合.md"
+    target: "docs/01-基础数学/ZFC公理体系/ZFC公理体系深化扩展版.md"
+    type: "应用"
+    branch_pair: "基础-基础"
+    description: "集合概念在ZFC中形式化"
+    priority: P0
+    verified: false
+  - id: L144
+    source: "concept/核心概念/03-自然数.md"
+    target: "docs/01-基础数学/自然数构造-国际标准对照版.md"
+    type: "应用"
+    branch_pair: "基础-基础"
+    description: "自然数在集合论中构造"
+    priority: P0
+    verified: false
+  - id: L145
+    source: "concept/核心概念/13-极限.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/67-Taylor定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Taylor定理用极限刻画局部逼近"
+    priority: P0
+    verified: false
+  - id: L146
+    source: "concept/核心概念/15-导数.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/71-Rolle定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Rolle定理是导数的零点定理"
+    priority: P0
+    verified: false
+  - id: L147
+    source: "concept/核心概念/26-素数.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/19-唯一分解定理-五种表征.md"
+    type: "应用"
+    branch_pair: "数论-数论"
+    description: "唯一分解与素数分解等价"
+    priority: P0
+    verified: false
+  - id: L148
+    source: "concept/核心概念/23-拓扑空间.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/13-Tychonoff定理-五种表征.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "Tychonoff定理是乘积拓扑紧性"
+    priority: P0
+    verified: false
+  - id: L149
+    source: "docs/02-代数结构/02-核心理论/模论/模论-深度扩展版.md"
+    target: "concept/核心概念/09-环.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "模论以环与阿贝尔群为基础"
+    priority: P0
+    verified: false
+  - id: L150
+    source: "docs/03-分析学/01-实分析/01-实分析.md"
+    target: "concept/核心概念/13-极限.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "实分析以极限为基本工具"
+    priority: P0
+    verified: false
+  - id: L151
+    source: "docs/04-几何学/03-微分几何.md"
+    target: "concept/核心概念/20-曲率.md"
+    type: "应用"
+    branch_pair: "几何-几何"
+    description: "微分几何系统研究曲率"
+    priority: P0
+    verified: false
+  - id: L152
+    source: "docs/11-高级数学/12-几何朗兰兹纲领.md"
+    target: "concept/核心概念/33-朗兰兹纲领.md"
+    type: "应用"
+    branch_pair: "几何-数论"
+    description: "几何朗兰兹是朗兰兹纲领的几何版本"
+    priority: P1
+    verified: false
+  - id: L153
+    source: "docs/11-高级数学/13-量子几何朗兰兹纲领.md"
+    target: "concept/核心概念/33-朗兰兹纲领.md"
+    type: "应用"
+    branch_pair: "几何-数论"
+    description: "量子几何朗兰兹是朗兰兹的量子化"
+    priority: P1
+    verified: false
+  - id: L154
+    source: "concept/核心概念/09-环.md"
+    target: "concept/核心概念/22-层.md"
+    type: "交叉"
+    branch_pair: "代数-几何"
+    description: "环的谱与层、概形关联"
+    priority: P1
+    verified: false
+  - id: L155
+    source: "concept/核心概念/25-同调.md"
+    target: "concept/核心概念/24-同伦.md"
+    type: "先修"
+    branch_pair: "拓扑-拓扑"
+    description: "同调可由同伦群或链复形定义"
+    priority: P0
+    verified: false
+  - id: L156
+    source: "docs/07-逻辑学/03-模态逻辑.md"
+    target: "docs/07-逻辑学/01-命题逻辑.md"
+    type: "先修"
+    branch_pair: "逻辑-逻辑"
+    description: "模态逻辑扩展命题逻辑"
+    priority: P1
+    verified: false
+  - id: L157
+    source: "concept/核心概念/06-实数.md"
+    target: "docs/03-分析学/01-实分析/01-实分析.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "实分析在实数域上展开"
+    priority: P0
+    verified: false
+  - id: L158
+    source: "concept/核心概念/11-向量空间.md"
+    target: "docs/02-代数结构/02-核心理论/表示论/01-表示论基础.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "表示论在向量空间上研究群作用"
+    priority: P0
+    verified: false
+  - id: L159
+    source: "concept/核心概念/19-黎曼流形.md"
+    target: "docs/14-微分几何/02-微分几何增强版.md"
+    type: "应用"
+    branch_pair: "几何-几何"
+    description: "黎曼流形是微分几何核心对象"
+    priority: P0
+    verified: false
+  - id: L160
+    source: "concept/核心概念/21-概形.md"
+    target: "docs/13-代数几何/02-代数几何增强版.md"
+    type: "应用"
+    branch_pair: "几何-代数"
+    description: "概形是代数几何基本对象"
+    priority: P0
+    verified: false
+  - id: L161
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/02-第一同构定理-五种表征.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/01-Lagrange定理-五种表征.md"
+    type: "先修"
+    branch_pair: "代数-代数"
+    description: "第一同构定理与Lagrange定理关联"
+    priority: P0
+    verified: false
+  - id: L162
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/68-微积分基本定理-五种表征.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/67-Taylor定理-五种表征.md"
+    type: "交叉"
+    branch_pair: "分析-分析"
+    description: "微积分基本定理与Taylor展开关联"
+    priority: P0
+    verified: false
+  - id: L163
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/06-Stokes定理-五种表征.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/70-散度定理-五种表征.md"
+    type: "推广"
+    branch_pair: "分析-几何"
+    description: "散度定理是Stokes在高维的推论"
+    priority: P0
+    verified: false
+  - id: L164
+    source: "docs/00-核心概念理解三问/11-核心定理多表征/35-de Rham定理-五种表征.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/06-Stokes定理-五种表征.md"
+    type: "交叉"
+    branch_pair: "分析-拓扑"
+    description: "de Rham上同调与Stokes积分关联"
+    priority: P0
+    verified: false
+  - id: L165
+    source: "concept/核心概念/08-群.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/38-Sylow定理-五种表征.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Sylow定理刻画有限群p子群"
+    priority: P0
+    verified: false
+  - id: L166
+    source: "concept/核心概念/10-域.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/77-Galois基本定理-五种表征.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Galois基本定理刻画域扩张与Galois群"
+    priority: P0
+    verified: false
+  - id: L167
+    source: "concept/核心概念/16-积分.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/09-单调收敛定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "单调收敛定理处理积分极限"
+    priority: P0
+    verified: false
+  - id: L168
+    source: "concept/核心概念/27-同余.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/27-二次互反律-五种表征.md"
+    type: "应用"
+    branch_pair: "数论-数论"
+    description: "二次互反律涉及同余与勒让德符号"
+    priority: P0
+    verified: false
+  - id: L169
+    source: "concept/核心概念/12-线性映射.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/40-谱定理-五种表征.md"
+    type: "应用"
+    branch_pair: "代数-分析"
+    description: "谱定理刻画自伴算子的对角化"
+    priority: P0
+    verified: false
+  - id: L170
+    source: "concept/核心概念/28-L函数.md"
+    target: "docs/11-高级数学/18-现代数论前沿.md"
+    type: "应用"
+    branch_pair: "数论-数论"
+    description: "L函数是现代数论核心工具"
+    priority: P1
+    verified: false
+  - id: L171
+    source: "docs/11-高级数学/08-代数K理论.md"
+    target: "concept/核心概念/09-环.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "代数K理论以环与模为对象"
+    priority: P1
+    verified: false
+  - id: L172
+    source: "docs/11-高级数学/03-数论几何高级主题.md"
+    target: "concept/核心概念/21-概形.md"
+    type: "应用"
+    branch_pair: "几何-代数"
+    description: "数论几何在概形框架下研究"
+    priority: P1
+    verified: false
+  - id: L173
+    source: "concept/核心概念/05-有理数.md"
+    target: "concept/核心概念/04-整数.md"
+    type: "先修"
+    branch_pair: "数论-数论"
+    description: "有理数是整数之比"
+    priority: P0
+    verified: false
+  - id: L174
+    source: "concept/核心概念/04-整数.md"
+    target: "concept/核心概念/27-同余.md"
+    type: "先修"
+    branch_pair: "数论-数论"
+    description: "同余是整数的一种等价关系"
+    priority: P0
+    verified: false
+  - id: L175
+    source: "concept/核心概念/17-级数.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/10-控制收敛定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "控制收敛处理级数与积分"
+    priority: P0
+    verified: false
+  - id: L176
+    source: "docs/12-应用数学/11-数据科学数学-深化版.md"
+    target: "concept/核心概念/11-向量空间.md"
+    type: "应用"
+    branch_pair: "应用-代数"
+    description: "数据科学大量使用线性代数"
+    priority: P1
+    verified: false
+  - id: L177
+    source: "docs/12-应用数学/04-控制论.md"
+    target: "concept/核心概念/15-导数.md"
+    type: "应用"
+    branch_pair: "应用-分析"
+    description: "控制论依赖微分方程与动力系统"
+    priority: P1
+    verified: false
+  - id: L178
+    source: "concept/核心概念/30-组合数.md"
+    target: "concept/核心概念/01-集合.md"
+    type: "应用"
+    branch_pair: "组合-基础"
+    description: "组合数计数集合子集"
+    priority: P1
+    verified: false
+  - id: L179
+    source: "docs/09-形式化证明/02-自动定理证明-深化版.md"
+    target: "docs/09-形式化证明/01-证明系统基础.md"
+    type: "先修"
+    branch_pair: "逻辑-逻辑"
+    description: "自动定理证明依赖证明系统"
+    priority: P1
+    verified: false
+  - id: L180
+    source: "concept/核心概念/02-函数.md"
+    target: "concept/核心概念/13-极限.md"
+    type: "先修"
+    branch_pair: "分析-分析"
+    description: "极限是函数分析的基本工具"
+    priority: P0
+    verified: false
+  - id: L181
+    source: "docs/01-基础数学/集合论/03-函数与映射.md"
+    target: "concept/核心概念/02-函数.md"
+    type: "应用"
+    branch_pair: "基础-基础"
+    description: "函数与映射在集合论中形式化"
+    priority: P0
+    verified: false
+  - id: L182
+    source: "concept/核心概念/14-连续.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/17-极值定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "极值定理依赖连续与紧性"
+    priority: P0
+    verified: false
+  - id: L183
+    source: "concept/核心概念/20-曲率.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/12-Gauss-Bonnet定理-五种表征.md"
+    type: "应用"
+    branch_pair: "几何-几何"
+    description: "Gauss-Bonnet以曲率积分得欧拉示性数"
+    priority: P0
+    verified: false
+  - id: L184
+    source: "concept/核心概念/24-同伦.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/50-Hurewicz定理-五种表征.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "Hurewicz联系同伦群与同调群"
+    priority: P1
+    verified: false
+  - id: L185
+    source: "concept/核心概念/22-层.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/55-Riemann-Roch定理-五种表征.md"
+    type: "应用"
+    branch_pair: "几何-代数"
+    description: "Riemann-Roch涉及层上同调"
+    priority: P1
+    verified: false
+  - id: L186
+    source: "docs/05-拓扑学/01-点集拓扑-深度扩展版.md"
+    target: "concept/核心概念/23-拓扑空间.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "点集拓扑深度扩展以拓扑空间为核心"
+    priority: P0
+    verified: false
+  - id: L187
+    source: "docs/03-分析学/02-复分析/02-复分析.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/14-Cauchy积分公式-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Cauchy积分公式是复分析核心"
+    priority: P0
+    verified: false
+  - id: L188
+    source: "docs/03-分析学/03-泛函分析/03-泛函分析-深度扩展版.md"
+    target: "concept/核心概念/11-向量空间.md"
+    type: "应用"
+    branch_pair: "分析-代数"
+    description: "泛函分析在拓扑向量空间上展开"
+    priority: P0
+    verified: false
+  - id: L189
+    source: "concept/核心概念/32-表示.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/59-Maschke定理-五种表征.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "Maschke定理保证表示完全可约"
+    priority: P0
+    verified: false
+  - id: L190
+    source: "concept/核心概念/18-流形.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/43-Poincaré引理-五种表征.md"
+    type: "应用"
+    branch_pair: "几何-分析"
+    description: "Poincaré引理在流形上讨论闭形式"
+    priority: P0
+    verified: false
+  - id: L191
+    source: "docs/02-代数结构/02-核心理论/环论/02-环论.md"
+    target: "concept/核心概念/09-环.md"
+    type: "应用"
+    branch_pair: "代数-代数"
+    description: "环论与环概念对应"
+    priority: P0
+    verified: false
+  - id: L192
+    source: "docs/06-数论/01-初等数论.md"
+    target: "concept/核心概念/27-同余.md"
+    type: "应用"
+    branch_pair: "数论-数论"
+    description: "初等数论以同余为核心"
+    priority: P0
+    verified: false
+  - id: L193
+    source: "concept/核心概念/13-极限.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/09-单调收敛定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "单调收敛定理处理极限与积分换序"
+    priority: P0
+    verified: false
+  - id: L194
+    source: "concept/核心概念/16-积分.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/34-Radon-Nikodym定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Radon-Nikodym涉及测度与积分"
+    priority: P0
+    verified: false
+  - id: L195
+    source: "concept/核心概念/07-复数.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/76-代数基本定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-代数"
+    description: "代数基本定理断言复数域代数闭"
+    priority: P0
+    verified: false
+  - id: L196
+    source: "docs/11-高级数学/24-量子数学.md"
+    target: "concept/核心概念/11-向量空间.md"
+    type: "应用"
+    branch_pair: "应用-代数"
+    description: "量子数学大量使用希尔伯特空间"
+    priority: P1
+    verified: false
+  - id: L197
+    source: "concept/核心概念/29-图.md"
+    target: "concept/核心概念/08-群.md"
+    type: "交叉"
+    branch_pair: "离散-代数"
+    description: "图的自同构群是群论应用"
+    priority: P1
+    verified: false
+  - id: L198
+    source: "docs/12-应用数学/01-概率论.md"
+    target: "concept/核心概念/16-积分.md"
+    type: "应用"
+    branch_pair: "应用-分析"
+    description: "概率论以测度与积分为基础"
+    priority: P0
+    verified: false
+  - id: L199
+    source: "concept/核心概念/23-拓扑空间.md"
+    target: "docs/05-拓扑学/01-点集拓扑-深度扩展版.md"
+    type: "应用"
+    branch_pair: "拓扑-拓扑"
+    description: "点集拓扑以拓扑空间为核心对象"
+    priority: P0
+    verified: false
+  - id: L200
+    source: "concept/核心概念/14-连续.md"
+    target: "docs/00-核心概念理解三问/11-核心定理多表征/74-Picard-Lindelöf定理-五种表征.md"
+    type: "应用"
+    branch_pair: "分析-分析"
+    description: "Picard-Lindelöf定理依赖连续性条件"
+    priority: P0
+    verified: false

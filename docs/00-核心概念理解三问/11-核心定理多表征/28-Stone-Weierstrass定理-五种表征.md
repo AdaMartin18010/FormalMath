@@ -1,3 +1,8 @@
+---
+msc_primary: "46E15"
+msc_secondary: ["26A15"]
+---
+
 # Stone-Weierstrass定理 - 五种表征
 
 **创建日期**: 2025年12月1日

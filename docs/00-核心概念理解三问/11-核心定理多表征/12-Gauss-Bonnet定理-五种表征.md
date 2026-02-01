@@ -1,3 +1,8 @@
+---
+msc_primary: "53A05"
+msc_secondary: ["57R20"]
+---
+
 # Gauss-Bonnet定理 - 五种表征
 
 **创建日期**: 2025年12月1日

@@ -1,3 +1,8 @@
+---
+msc_primary: "46A22"
+msc_secondary: ["46B99"]
+---
+
 # Hahn-Banach定理 - 五种表征
 
 **创建日期**: 2025年12月1日

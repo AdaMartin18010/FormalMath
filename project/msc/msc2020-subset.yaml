@@ -1,0 +1,47 @@
+# FormalMath 项目使用的 MSC2020 编码子集
+# 设计文档: project/00-MSC编码标注系统设计文档-2026年2月2日.md
+# 参考: https://www.ams.org/msc/
+
+version: "1.0"
+updated: "2026-02-02"
+source: "MSC2020"
+
+# 项目重点使用的两位数主类及说明
+main_classes:
+  "00": "一般 (General)"
+  "03": "数理逻辑与基础 (Mathematical logic and foundations)"
+  "11": "数论 (Number theory)"
+  "12": "域论与多项式 (Field theory and polynomials)"
+  "13": "交换代数 (Commutative algebra)"
+  "14": "代数几何 (Algebraic geometry)"
+  "18": "范畴论与同调代数 (Category theory; homological algebra)"
+  "20": "群论 (Group theory)"
+  "26": "实函数 (Real functions)"
+  "30": "单复变函数 (Functions of a complex variable)"
+  "46": "泛函分析 (Functional analysis)"
+  "51": "几何 (Geometry)"
+  "54": "一般拓扑 (General topology)"
+  "55": "代数拓扑 (Algebraic topology)"
+  "57": "流形与胞腔复形 (Manifolds and cell complexes)"
+
+# 项目常用的三位数/四位数子类（示例，可扩展）
+subclasses:
+  "00A05": "一般数学文献"
+  "03Bxx": "数理逻辑一般"
+  "11Axx": "初等数论"
+  "11Rxx": "代数数论"
+  "12Fxx": "域扩张、Galois理论"
+  "13Axx": "交换环与理想"
+  "14Axx": "概形与概形态射"
+  "18Axx": "范畴论一般"
+  "20Axx": "群论基础"
+  "26Axx": "一元实函数、极限与连续性"
+  "30Axx": "单复变函数一般性质"
+  "46Axx": "拓扑线性空间"
+  "51Axx": "线性与仿射几何"
+  "54Axx": "一般拓扑基础"
+  "55Axx": "同伦与同伦群"
+  "57Rxx": "微分拓扑、流形"
+
+# 允许的编码格式：主编码必填，可为两位数(00-97)或三位数/四位数(如20A05)
+# 校验规则：msc_primary 必须在本 subset 的 main_classes 或 subclasses 中出现，或为合法 MSC 格式

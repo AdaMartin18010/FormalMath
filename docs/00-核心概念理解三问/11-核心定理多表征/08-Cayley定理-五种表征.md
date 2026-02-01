@@ -1,3 +1,8 @@
+---
+msc_primary: "20B99"
+msc_secondary: ["20A05"]
+---
+
 # Cayley定理 - 五种表征
 
 **创建日期**: 2025年12月1日

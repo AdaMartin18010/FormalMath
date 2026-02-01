@@ -1,3 +1,8 @@
+---
+msc_primary: "55M20"
+msc_secondary: ["54H25"]
+---
+
 # Brouwer不动点定理 - 五种表征
 
 **创建日期**: 2025年12月1日
