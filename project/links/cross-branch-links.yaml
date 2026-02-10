@@ -4,7 +4,7 @@
 
 version: "1.0"
 updated: "2026-02-02"
-target_total: 200
+target_total: 203
 
 links:
   # 代数-拓扑
@@ -1610,4 +1610,28 @@ links:
     branch_pair: "分析-分析"
     description: "Picard-Lindelöf定理依赖连续性条件"
     priority: P0
+    verified: false
+  - id: L201
+    source: "concept/核心概念/22-层.md"
+    target: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/01-层上同调基础.md"
+    type: "应用"
+    branch_pair: "理念体系-概念"
+    description: "层概念为格洛腾迪克层上同调基础篇的桥梁"
+    priority: P1
+    verified: false
+  - id: L202
+    source: "concept/核心概念/21-概形.md"
+    target: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/01-仿射概形基础.md"
+    type: "先修"
+    branch_pair: "理念体系-概念"
+    description: "概形概念为格洛腾迪克概形理论篇的桥梁"
+    priority: P1
+    verified: false
+  - id: L203
+    source: "concept/核心概念/31-算法.md"
+    target: "数学家理念体系/丘奇数学理念/02-数学内容深度分析/03-可计算性/01-Church论题.md"
+    type: "交叉"
+    branch_pair: "理念体系-概念"
+    description: "算法与可计算性与丘奇论题衔接"
+    priority: P1
     verified: false

@@ -441,7 +441,16 @@ $$H_{\text{ét}}^i(X_{\bar{\mathbb{F}}_q}, \mathbb{Q}_\ell) \text{ 的Frobenius�
 
 - **本目录**：[01-层上同调基础](./01-层上同调基础.md)、[03-韦伊猜想的证明](./03-韦伊猜想的证明.md)、[07-平展基本群](./07-平展基本群.md)、[16-上同调与比较定理](./16-上同调与比较定理.md)。
 - **02-概形理论**：[24-概形的Galois理论](../02-概形理论/24-概形的Galois理论.md)。
-- **网络资源**：Stacks Project tag 03Q3、0BQM；SGA 4、SGA 1；Milne Etale cohomology。
+- **网络资源**：Stacks Project tag 03Q3、0BQM；SGA 4、SGA 1；Milne *Étale Cohomology* 与 [LEC](https://www.jmilne.org/math/CourseNotes/lec.html)。
+
+### 现代发展：pro-étale 与近年课程
+
+经典 étale 上同调（本文主体）之后的发展与教学资源：
+
+- **Pro-étale 拓扑**：Bhatt–Scholze *The pro-étale topology for schemes*（arXiv）在概形上引入 pro-étale 位型，使某些上同调计算更自然（如 H^0 为“连续”截面）。Stacks Project 有 pro-étale 相关 tag（如 09ZQ）。学习顺序建议：先掌握本文 étale 理论，再读该文或相应课程。
+- **东京大学 (2024 Spring)**：*(Pro)Étale Cohomology*（Shane Kelly）：前半经典 étale，后半 Bhatt–Scholze pro-étale；参考 Milne 与 Bhatt–Scholze 论文。
+- **Duisburg-Essen (WS 2024-25)**：*Pro-étale cohomology*：étale 基础 + pro-étale 论文精读；讲义与习题见课程页。
+- **项目内**：[00-国际课程与机构对齐对照表](../../../project/00-国际课程与机构对齐对照表-2026年2月.md) 中有上述课程与 02-数学内容深度分析 的对应表。
 
 ---
 
