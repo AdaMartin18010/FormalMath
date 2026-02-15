@@ -1,3 +1,9 @@
+﻿---
+title: "06 Lean4形式化实现 域论"
+msc_primary: ["68V20"]
+msc_secondary: ["12F99", "03B35"]
+---
+
 # Lean4形式化实现：域论 / Lean4 Formalization: Field Theory
 
 ## 目录 / Table of Contents

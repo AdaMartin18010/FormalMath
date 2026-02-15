@@ -1,3 +1,9 @@
+﻿---
+title: "07 Python实现 范畴论算法"
+msc_primary: ["68W30"]
+msc_secondary: ["18A99"]
+---
+
 # 范畴论算法Python实现 - 国际标准版
 
 ## 概述

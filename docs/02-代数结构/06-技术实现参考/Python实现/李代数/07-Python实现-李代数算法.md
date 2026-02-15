@@ -1,3 +1,9 @@
+﻿---
+title: "07 Python实现 李代数算法"
+msc_primary: ["68W30"]
+msc_secondary: ["17B99"]
+---
+
 # Python实现：李代数算法 / Python Implementation: Lie Algebra Algorithms
 
 ## 概述 / Overview

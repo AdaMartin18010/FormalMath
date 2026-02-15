@@ -1,3 +1,9 @@
+﻿---
+title: "01 Python实现 代数结构综合工具"
+msc_primary: ["68W30"]
+msc_secondary: ["20A05", "13A99", "12F99"]
+---
+
 # 代数结构Python实现综合工具 - 国际标准版
 
 ## 概述

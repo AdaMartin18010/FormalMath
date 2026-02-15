@@ -1,3 +1,9 @@
+﻿---
+title: "06 Lean4形式化实现 李代数"
+msc_primary: ["68V20"]
+msc_secondary: ["17B99", "03B35"]
+---
+
 # Lean4形式化实现：李代数 / Lean4 Formalization: Lie Algebras
 
 ## 概述 / Overview

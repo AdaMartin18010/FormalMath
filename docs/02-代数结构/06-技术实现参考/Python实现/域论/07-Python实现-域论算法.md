@@ -1,3 +1,9 @@
+﻿---
+title: "07 Python实现 域论算法"
+msc_primary: ["68W30"]
+msc_secondary: ["12F99"]
+---
+
 # Python实现：域论算法 / Python Implementation: Field Theory Algorithms
 
 ## 目录 / Table of Contents

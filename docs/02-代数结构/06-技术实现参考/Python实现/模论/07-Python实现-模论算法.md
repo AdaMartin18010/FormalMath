@@ -1,3 +1,9 @@
+﻿---
+title: "07 Python实现 模论算法"
+msc_primary: ["68W30"]
+msc_secondary: ["13C99"]
+---
+
 # Python实现-模论算法 - 国际标准版
 
 ## 概述

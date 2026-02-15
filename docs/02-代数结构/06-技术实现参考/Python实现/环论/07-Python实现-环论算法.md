@@ -1,3 +1,9 @@
+﻿---
+title: "07 Python实现 环论算法"
+msc_primary: ["68W30"]
+msc_secondary: ["13A99"]
+---
+
 # 环论算法Python实现 - 国际标准版
 
 ## 目录

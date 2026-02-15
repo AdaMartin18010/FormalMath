@@ -1,3 +1,9 @@
+﻿---
+title: "06 Lean4形式化实现 群论"
+msc_primary: ["68V20"]
+msc_secondary: ["20A05", "03B35"]
+---
+
 # Lean4形式化实现-群论 / Lean4 Formalization of Group Theory
 
 ## 目录 / Table of Contents

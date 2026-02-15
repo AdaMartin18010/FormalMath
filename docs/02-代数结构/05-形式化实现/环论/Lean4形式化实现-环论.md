@@ -1,3 +1,9 @@
+﻿---
+title: "Lean4形式化实现 环论"
+msc_primary: ["68V20"]
+msc_secondary: ["13A99", "03B35"]
+---
+
 # 环论 - Lean4形式化实现
 
 ## 目录 / Table of Contents

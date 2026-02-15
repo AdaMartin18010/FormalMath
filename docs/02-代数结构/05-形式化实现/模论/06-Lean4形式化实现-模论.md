@@ -1,3 +1,9 @@
+﻿---
+title: "06 Lean4形式化实现 模论"
+msc_primary: ["68V20"]
+msc_secondary: ["13C99", "03B35"]
+---
+
 # Lean4形式化实现-模论 / Lean 4 Formalization - Module Theory
 
 ## 目录 / Table of Contents

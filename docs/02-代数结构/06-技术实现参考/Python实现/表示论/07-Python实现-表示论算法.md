@@ -1,3 +1,9 @@
+﻿---
+title: "07 Python实现 表示论算法"
+msc_primary: ["68W30"]
+msc_secondary: ["20C99"]
+---
+
 # 表示论算法Python实现 - 国际标准版
 
 ## 概述
