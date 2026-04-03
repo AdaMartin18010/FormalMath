@@ -1,0 +1,38 @@
+# IMO 2015 Problem 04
+
+## 题目
+
+在锐角三角形 $ABC$ 中，$AB > AC$。设 $\Gamma$ 是其外接圆，$H$ 是垂心，$F$ 是从 $A$ 引出的高的垂足。点 $M$ 是 $BC$ 的中点。点 $Q$ 在 $\Gamma$ 上使得 $\angle HQA = 90°$，点 $K$ 在 $\Gamma$ 上使得 $\angle HKQ = 90°$。假设 $A, B, C, K, Q$ 互不相同且按此顺序在 $\Gamma$ 上。证明：三角形 $KQH$ 和 $FKM$ 的外接圆相切。
+
+## 分类信息
+- **领域**: 几何
+- **难度**: 5分
+- **涉及概念**: 三角形存在条件
+
+## 解答
+
+### 方法一
+
+[详细解答待补充]
+
+## 关键思路
+
+1. [关键思路1]
+2. [关键思路2]
+
+## 相关定理与概念
+- [概念1] - 链接到FormalMath主项目
+- [概念2]
+
+## 变体问题
+
+### 变体1
+[类似题目或推广]
+
+## 参考资源
+- [IMO官方解答](https://www.imo-official.org/problems/IMO2015SL.pdf)
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h)
+
+---
+
+*解答整理：FormalMath项目团队*

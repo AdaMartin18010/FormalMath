@@ -1,0 +1,51 @@
+# AI形式化数学项目依赖
+# Python 3.10+
+
+# 基础依赖
+numpy>=1.24.0
+pandas>=2.0.0
+requests>=2.31.0
+urllib3>=2.0.0
+
+# API客户端
+openai>=1.0.0
+anthropic>=0.8.0
+httpx>=0.25.0
+
+# 数据处理和科学计算
+scipy>=1.11.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter环境
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipywidgets>=8.0.0
+notebook>=7.0.0
+
+# 工具和辅助
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+tqdm>=4.65.0
+rich>=13.0.0
+click>=8.1.0
+
+# 文档处理
+markdown>=3.5.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# 测试
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+
+# 代码质量
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# 类型提示
+typing-extensions>=4.8.0
+types-requests>=2.31.0
