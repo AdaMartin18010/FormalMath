@@ -51,7 +51,7 @@ P(A) = {B | B ⊆ A}
 
 ### 对角线论证 (Diagonal Argument)
 通过构造"对角线"元素来证明不存在某种映射的方法。
--
+-/
 
 -- 康托尔定理：不存在从 A 到 P(A) 的满射
 theorem cantor_theorem {A : Type u} (f : A → Set A) :
@@ -97,10 +97,10 @@ theorem cantor_theorem {A : Type u} (f : A → Set A) :
 **定理**: |A| < |P(A)|
 
 **证明**: 
-1. 显然有单射 A → P(A)，x ↦ {x}，所以 |A| ≤ |P(A)|
+1. 显然有单射 A → P(A)，x ↦ {x}，所以 |A| ≤ |P(A))|
 2. 由康托尔定理，不存在满射 A → P(A)，所以 |A| ≠ |P(A)|
 3. 因此 |A| < |P(A)|
--
+-/
 
 -- 基数的康托尔定理：|A| < |P(A)|
 theorem cardinal_cantor {A : Type u} :
@@ -117,7 +117,7 @@ theorem cardinal_cantor {A : Type u} :
 其中：
 - ℵ₀ = |ℕ| （自然数的基数，可数无穷）
 - 2^ℵ₀ = |P(ℕ)| = |ℝ| （连续统的基数）
--
+-/
 
 -- 自然数的基数
 def aleph_0 : Cardinal := mk ℕ
@@ -146,7 +146,7 @@ def GeneralizedContinuumHypothesis : Prop :=
 **定理**: P(ℕ)（因此 ℝ）是不可数的。
 
 **证明**: 由康托尔定理，|ℕ| < |P(ℕ)|。
--
+-/
 
 -- 自然数的幂集是不可数的
 theorem powerset_nat_uncountable : mk (Set ℕ) > ℵ₀ := by
@@ -156,11 +156,19 @@ theorem powerset_nat_uncountable : mk (Set ℕ) > ℵ₀ := by
 -- 实数集是不可数的
 theorem real_uncountable : mk ℝ > ℵ₀ := by
   /- |ℝ| = |P(ℕ)| > ℵ₀ -/
-  calc
-    mk ℝ = mk (Set ℕ) := by
-      /- 建立 ℝ 与 P(ℕ) 之间的双射 -/
-      sorry  -- 需要通过二进制展开建立
-    _ > ℵ₀ := powerset_nat_uncountable
+  /- 使用康托尔的对角线论证 -/
+  have h_cantor : ℵ₀ < 2 ^ ℵ₀ := by
+    apply cantor
+  have h_continuum : 2 ^ ℵ₀ ≤ 𝔠 := by
+    /- 建立 P(ℕ) 到 ℝ 的嵌入 -/
+    sorry
+  have h_aleph0_le : ℵ₀ ≤ 𝔠 := by
+    apply le_trans (le_of_lt h_cantor)
+    exact h_continuum
+  have h_aleph0_lt : ℵ₀ < 𝔠 := by
+    /- 严格不等式 -/
+    sorry
+  exact h_aleph0_lt
 
 /-
 ## 对角线论证在其他领域的应用
@@ -178,7 +186,7 @@ Gödel使用对角线论证构造了自指命题。
 ### 3. 不可计算实数
 
 对角线论证可以证明不可计算实数的存在性。
--
+-/
 
 -- 不可计算函数的存在性（框架）
 theorem uncomputable_function_exists :
@@ -200,24 +208,31 @@ theorem uncomputable_function_exists :
 - κ^λ ≥ max(κ, 2^λ)（对于无穷基数）
 - κ + λ = max(κ, λ)（对于无穷基数）
 - κ · λ = max(κ, λ)（对于无穷基数）
--
+-/
 
 -- 基数的指数增长
 theorem cardinal_power_increasing (κ : Cardinal) : κ < 2 ^ κ := by
   /- 这是康托尔定理的基数形式 -/
-  sorry  -- 需要基数的定义
+  apply cantor
 
 -- 无穷基数的加法性质
 theorem infinite_cardinal_add {κ λ : Cardinal} (hκ : ℵ₀ ≤ κ) (hλ : λ ≤ κ) :
     κ + λ = κ := by
   /- 无穷基数满足 κ + λ = max(κ, λ) -/
-  sorry
+  rw [Cardinal.add_eq_max]
+  · rw [max_eq_left]
+    exact hλ
+  · exact hκ
 
 -- 无穷基数的乘法性质
 theorem infinite_cardinal_mul {κ λ : Cardinal} (hκ : ℵ₀ ≤ κ) (hλ : 0 < λ ∧ λ ≤ κ) :
     κ * λ = κ := by
   /- 无穷基数满足 κ · λ = max(κ, λ) -/
-  sorry
+  rw [Cardinal.mul_eq_max]
+  · rw [max_eq_left]
+    exact hλ.2
+  · exact hκ
+  · exact hλ.1
 
 /-
 ## 不动点与基数
@@ -225,13 +240,13 @@ theorem infinite_cardinal_mul {κ λ : Cardinal} (hκ : ℵ₀ ≤ κ) (hλ : 0 
 **定理**: 对于任意基数 κ，存在基数 λ > κ 使得 2^λ > λ^κ。
 
 这与 König 定理相关。
--
+-/
 
 -- König定理（基数不等式）
 theorem konig_theorem {ι : Type u} {κ λ : ι → Cardinal} :
     (∀ i, κ i < λ i) → sum κ < prod λ := by
   /- König定理断言：若对每个 i 都有 κᵢ < λᵢ，则 Σκᵢ < ∏λᵢ -/
-  sorry  -- 需要基数求和和乘积的定义
+  apply Cardinal.sum_lt_prod
 
 end CantorDiagonalTheorem
 
@@ -269,4 +284,7 @@ end CantorDiagonalTheorem
 - `Cardinal.aleph`: 阿列夫数
 - `Cardinal.power`: 基数幂运算
 - `Set.powerset`: 幂集
+- `Cardinal.sum_lt_prod`: König定理
+- `Cardinal.add_eq_max`: 无穷基数加法
+- `Cardinal.mul_eq_max`: 无穷基数乘法
 -/

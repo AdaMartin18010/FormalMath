@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 微分中值定理 (Mean Value Theorem)
 
 ## Mathlib4 引用

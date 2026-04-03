@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # Fatou引理 (Fatou's Lemma)
 
 ## Mathlib4 引用

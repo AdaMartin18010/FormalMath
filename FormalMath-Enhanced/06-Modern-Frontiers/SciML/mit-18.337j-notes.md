@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # MIT 18.337J: 科学机器学习课程笔记
 
 > MIT 18.337J - Introduction to Numerical Computing and Scientific Machine Learning

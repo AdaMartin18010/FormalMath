@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 类数公式 (Class Number Formula)
 
 ## Mathlib4 引用

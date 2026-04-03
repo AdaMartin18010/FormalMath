@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 容斥原理 (Inclusion-Exclusion Principle)
 
 ## Mathlib4 引用

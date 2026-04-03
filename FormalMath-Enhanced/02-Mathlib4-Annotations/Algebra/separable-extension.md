@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 可分扩张性质 (Separable Extension Properties)
 
 ## Mathlib4 引用

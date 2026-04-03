@@ -193,8 +193,40 @@ theorem p_subgroup_exists {G : Type u} [Group G] [Fintype G] {p : ℕ} [Fact p.P
     have h_k_le_n : k ≤ n := by linarith
     rcases ih h_k_le_n with ⟨K, hK⟩
     
-    /- 使用N/C定理和Cauchy定理构造更大的p-子群 -/
-    sorry  -- 详细证明较复杂，此处省略
+    /- 使用Mathlib4的Sylow子群存在性 -/
+    have h_sylow : ∃ (H : Subgroup G), Fintype.card H = p ^ (k + 1) := by
+      have h_k1_le_n : k + 1 ≤ n := by linarith
+      /- 使用Mathlib的p-子群存在性定理 -/
+      have : ∃ (P : Sylow p G), True := ⟨default, trivial⟩
+      rcases this with ⟨P, _⟩
+      have h_card : Fintype.card P = p ^ n := by
+        have h_pgroup : IsPGroup p P := Sylow.isPGroup' P
+        rcases h_pgroup with ⟨m, hm⟩
+        /- 由Sylow子群的定义，|P| = p^n -/
+        have h_dvd : p ^ m ∣ p ^ n * m := by
+          rw [← hG]
+          apply card_subgroup_dvd_card
+        have h_m_eq_n : m = n := by
+          have h_coprime : p ^ n.Coprime m := Nat.Coprime.pow_left n hm
+          have h_m_le_n : m ≤ n := by
+            have : p ^ m ∣ p ^ n := by
+              exact Nat.Coprime.dvd_of_dvd_mul_right h_coprime h_dvd
+            exact Nat.pow_dvd_pow_iff_le_right (Nat.Prime.one_lt Fact.out).le this
+          /- Sylow子群是极大的，所以 m = n -/
+          have : m ≥ n := by
+            by_contra h
+            push_neg at h
+            have : p ^ n ∣ p ^ m := by
+              apply pow_dvd_pow
+              linarith
+            /- 这里需要更多论证 -/
+            sorry
+          linarith
+        rw [h_m_eq_n] at hm
+        exact hm
+      /- 取P的适当子群 -/
+      sorry
+    exact h_sylow
 
 /-
 ## Sylow p-子群的基本性质
@@ -226,8 +258,13 @@ theorem sylow_card_dvd_m {G : Type u} [Group G] [Fintype G]
     (hG : Fintype.card G = p ^ n * m) :
     Fintype.card (Sylow p G) ∣ m := by
   /- 使用Mathlib4的Sylow第三定理 -/
-  have h := Sylow.card_sylow_dvd_normalizer p
-  /- 需要更多的推导 -/
+  have h1 : Fintype.card (Sylow p G) ∣ Fintype.card G := by
+    apply Sylow.card_sylow_dvd_card
+  rw [hG] at h1
+  /- 由 n_p | p^n * m 和 gcd(n_p, p^n) = 1（因为 n_p ≡ 1 (mod p)）
+     推出 n_p | m -/
+  have h_mod := Sylow.card_sylow_modEq_one p
+  /- 需要更详细的推导 -/
   sorry
 
 /-
@@ -249,7 +286,16 @@ theorem group_of_order_pq_cyclic {p q : ℕ} [Fact p.Prime] [Fact q.Prime]
      5. 同理 n_q = 1，Sylow q-子群是正规的
      6. 所以 G 是这两个循环子群的直积，从而是循环群
   -/
-  sorry  -- 详细证明需要更多引理
+  /- 详细证明思路：
+     1. 由Sylow第三定理，n_p | q 且 n_p ≡ 1 (mod p)
+     2. 由于 q 是素数，n_p = 1 或 n_p = q
+     3. 若 n_p = q，则 q ≡ 1 (mod p)，即 p | (q-1)，矛盾
+     4. 所以 n_p = 1，Sylow p-子群是正规的
+     5. 同理 n_q = 1，Sylow q-子群是正规的
+     6. 所以 G 是这两个循环子群的直积，从而是循环群
+  -/
+  /- 这是一个复杂的群论结果，完整证明需要更多前置引理 -/
+  sorry
 
 end SylowFirstTheorem
 

@@ -34,12 +34,14 @@ import Mathlib.Data.Int.Gcd
 import Mathlib.RingTheory.EuclideanDomain
 import Mathlib.Algebra.GCDMonoid.Basic
 import Mathlib.Data.Nat.ModEq
+import Mathlib.Data.Polynomial.Basic
+import Mathlib.Algebra.Field.Basic
 
 universe u
 
 namespace EuclideanAlgorithm
 
-open Nat Int
+open Nat Int Polynomial
 
 /-
 ## 核心概念
@@ -74,11 +76,12 @@ theorem euclideanAlgorithm_terminates (a b : ℕ) :
   | succ b =>
     /- gcd(a, b+1) = gcd(b+1, a mod (b+1)) -/
     rw [euclideanAlgorithm]
-    have : a % (b + 1) < b + 1 := by
+    have h_mod : a % (b + 1) < b + 1 := by
       apply Nat.mod_lt
       linarith
-    /- 递归调用 -/
-    sorry  -- 需要归纳假设
+    /- 使用Nat.gcd_rec证明递归关系 -/
+    rw [← Nat.gcd_rec a (b + 1)]
+    simp [Nat.gcd_comm]
 
 /-
 ## 欧几里得算法的正确性证明
@@ -110,7 +113,7 @@ theorem euclideanAlgorithm_correct (a b : ℕ) :
     let g := euclideanAlgorithm a b
     g ∣ a ∧ g ∣ b ∧ ∀ (d : ℕ), d ∣ a → d ∣ b → d ∣ g := by
   have h_eq : euclideanAlgorithm a b = Nat.gcd a b := by
-    sorry  -- 终止性证明
+    exact euclideanAlgorithm_terminates a b
   rw [h_eq]
   constructor
   · exact gcd_dvd_left a b
@@ -155,35 +158,39 @@ structure XGCDResult (a b : ℕ) where
   gcd_dvd_left : g ∣ a    -- g | a
   gcd_dvd_right : g ∣ b   -- g | b
 
--- 扩展欧几里得算法的递归实现
-def extendedEuclidean : (a : ℕ) → (b : ℕ) → XGCDResult a b
-  | a, 0 => 
-    { g := a
-      x := 1
-      y := 0
-      eq := by simp
-      gcd_dvd_left := by simp
-      gcd_dvd_right := by simp }
-  | a, (b + 1) =>
-    /- 递归计算 gcd(b+1, a mod (b+1)) -/
-    let r := extendedEuclidean (b + 1) (a % (b + 1))
-    /- 由 r.g = (b+1) * r.x + (a mod (b+1)) * r.y
-       和 a = (a div (b+1)) * (b+1) + (a mod (b+1))
-       推出 g = a * r.y + (b+1) * (r.x - (a div (b+1)) * r.y) -/
-    { g := r.g
-      x := r.y
-      y := r.x - (a / (b + 1) : ℤ) * r.y
-      eq := by
-        have h1 : (r.g : ℤ) = (b + 1 : ℤ) * r.x + (a % (b + 1) : ℤ) * r.y := by
-          exact_mod_cast r.eq
-        have h2 : (a : ℤ) = (a / (b + 1) : ℤ) * (b + 1) + (a % (b + 1) : ℤ) := by
-          exact_mod_cast (Nat.div_add_mod a (b + 1)).symm
-        /- 代入化简 -/
-        sorry
-      gcd_dvd_left := by
-        sorry
-      gcd_dvd_right := by
-        sorry }
+-- 辅助引理：简化贝祖系数计算
+theorem xgcd_aux {a b : ℕ} (h : b > 0) (r : XGCDResult b (a % b)) :
+    ∃ x y : ℤ, r.g = a * x + b * y := by
+  rcases r with ⟨g, x₁, y₁, h_eq, _, _⟩
+  use y₁
+  use x₁ - (a / b : ℤ) * y₁
+  have h_div : (a : ℤ) = (a / b : ℤ) * b + (a % b : ℤ) := by
+    exact_mod_cast (Nat.div_add_mod a b).symm
+  have h_mod : (a % b : ℤ) = (a : ℤ) - (a / b : ℤ) * b := by
+    linarith
+  have h_subst : (g : ℤ) = (b : ℤ) * x₁ + ((a : ℤ) - (a / b : ℤ) * b) * y₁ := by
+    rw [h_eq]
+    rw [h_mod]
+  linarith
+
+-- 扩展欧几里得算法的递归实现（使用Mathlib内置的xgcd）
+def extendedEuclidean (a b : ℕ) : XGCDResult a b :=
+  let (g, x, y) := Nat.xgcd a b
+  { g := g.natAbs
+    x := x
+    y := y
+    eq := by
+      have h := Nat.xgcd_val a b
+      simp [Nat.xgcd, g, x, y] at h ⊢
+      exact_mod_cast h.symm
+    gcd_dvd_left := by
+      simp [g]
+      apply dvd_trans (Int.ofNat_dvd_left.mpr (Int.natAbs_dvd_self (Nat.xgcd a b).1))
+      exact Nat.gcd_dvd_left a b
+    gcd_dvd_right := by
+      simp [g]
+      apply dvd_trans (Int.ofNat_dvd_left.mpr (Int.natAbs_dvd_self (Nat.xgcd a b).1))
+      exact Nat.gcd_dvd_right a b }
 
 -- 贝祖恒等式
 theorem bezout_identity (a b : ℕ) :
@@ -191,7 +198,20 @@ theorem bezout_identity (a b : ℕ) :
   /- 使用扩展欧几里得算法 -/
   use (extendedEuclidean a b).x
   use (extendedEuclidean a b).y
-  exact_mod_cast (extendedEuclidean a b).eq
+  have h_eq := (extendedEuclidean a b).eq
+  have h_g : (extendedEuclidean a b).g = Nat.gcd a b := by
+    simp [extendedEuclidean]
+    have h_xgcd : (Nat.xgcd a b).1.natAbs = Nat.gcd a b := by
+      have h_val := Nat.xgcd_val a b
+      have : (Nat.gcd a b : ℤ) = (Nat.xgcd a b).1 := by
+        linarith [h_val]
+      have h_abs : (Nat.xgcd a b).1.natAbs = Nat.gcd a b := by
+        rw [← this]
+        exact Int.natAbs_ofNat (Nat.gcd a b)
+      exact h_abs
+    exact h_xgcd
+  rw [← h_g]
+  exact_mod_cast h_eq
 
 /-
 ## 欧几里得算法的复杂度
@@ -205,14 +225,24 @@ theorem bezout_identity (a b : ℕ) :
 -- Lamé定理的框架
 theorem lames_theorem {a b : ℕ} (ha : a > b) (hb : b > 0) :
     Nat.log 10 b < Nat.log 2 a := by
-  /- 证明欧几里得算法的步数有界 -/
-  sorry
+  /- 简化为对数不等式 -/
+  apply Nat.log_lt_of_lt_pow
+  · apply Nat.log_pos
+    linarith
+  · have h1 : 10 ^ (Nat.log 10 b) ≤ b := Nat.pow_log_le_self 10 hb
+    have h2 : b < a := ha
+    have h3 : a < 2 ^ a := by
+      apply Nat.lt_pow_self
+      linarith
+    have h4 : 10 ^ (Nat.log 10 b) < 2 ^ a := by
+      linarith [h1, h2, h3]
+    exact h4
 
 -- 复杂度分析
 theorem euclidean_algorithm_complexity (a b : ℕ) :
     euclideanAlgorithm a b = Nat.gcd a b := by
   /- 算法终止并返回正确结果 -/
-  sorry
+  exact euclideanAlgorithm_terminates a b
 
 /-
 ## 欧几里得整环的推广
@@ -300,7 +330,36 @@ theorem mod_inverse_exists {a n : ℕ} (ha : a > 0) (hn : n > 0) :
     intro h
     rcases h with ⟨x, hx⟩
     /- ax ≡ 1 (mod n) 意味着存在 y 使得 ax - 1 = ny -/
-    sorry
+    have : ∃ y : ℤ, (a : ℤ) * (x : ℤ) - 1 = (n : ℤ) * y := by
+      have h_mod : (a * x : ℤ) % n = 1 % n := by
+        rw [← ZMod.eq_iff_modEq_nat n] at hx
+        simpa using hx
+      have : (a * x : ℤ) = (a * x : ℤ) / n * n + (a * x : ℤ) % n := by
+        rw [Int.ediv_add_emod]
+      rw [h_mod] at this
+      use (a * x : ℤ) / n
+      linarith
+    rcases this with ⟨y, hy⟩
+    have h_eq : (a : ℤ) * (x : ℤ) + n * (-y) = 1 := by
+      linarith
+    have h_gcd_1 : (Nat.gcd a n : ℤ) = 1 := by
+      rcases bezout_identity a n with ⟨u, v, h_bezout⟩
+      have h_gcd_dvd_1 : (Nat.gcd a n : ℤ) ∣ 1 := by
+        rw [← h_eq]
+        apply dvd_add
+        · apply dvd_mul_of_dvd_left
+          exact_mod_cast Nat.gcd_dvd_left a n
+        · apply dvd_mul_of_dvd_left
+          exact_mod_cast Nat.gcd_dvd_right a n
+      have : (Nat.gcd a n : ℤ) ≤ 1 := by
+        exact Int.le_of_dvd (by norm_num) h_gcd_dvd_1
+      have : Nat.gcd a n ≤ 1 := by
+        exact_mod_cast this
+      have : Nat.gcd a n ≥ 1 := by
+        apply Nat.gcd_pos_of_pos_left
+        exact hn
+      omega
+    exact_mod_cast h_gcd_1
   
   · /- (⇐) 方向 -/
     intro h_coprime
@@ -311,7 +370,31 @@ theorem mod_inverse_exists {a n : ℕ} (ha : a > 0) (hn : n > 0) :
       rw [this]
       simp [Int.sub_emod, Int.mul_emod]
     /- 构造模逆元 -/
-    sorry
+    use (x % n).natAbs
+    rw [← ZMod.eq_iff_modEq_nat n]
+    have h_mod : (a * ((x % n).natAbs : ℕ) : ZMod n) = 1 := by
+      have h_mod_n : (a * x : ℤ) ≡ 1 [ZMOD n] := by
+        rw [Int.modEq_iff_dvd]
+        use y
+        linarith
+      have h_mod_n' : (a * ((x % n).natAbs : ℕ) : ZMod n) = 1 := by
+        have : (x : ZMod n) = ((x % n).natAbs : ZMod n) := by
+          have h_nonneg : (x % n).natAbs = (x % n).natAbs := rfl
+          have : ((x % n).natAbs : ℤ) = x % n := by
+            cases x with
+            | ofNat m => simp
+            | negSucc m =>
+              simp
+              have : n > 0 := hn
+              omega
+          rw [← this]
+          simp
+        rw [← this]
+        have : (a * x : ZMod n) = 1 := by
+          exact_mod_cast h_mod_n
+        simpa using this
+      exact h_mod_n'
+    exact h_mod
 
 end EuclideanAlgorithm
 

@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # KELPS: 多语言自动形式化框架
 
 ## 概述

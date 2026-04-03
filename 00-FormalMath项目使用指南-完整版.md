@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # FormalMath项目使用指南 - 完整版
 
 **版本**: v1.0

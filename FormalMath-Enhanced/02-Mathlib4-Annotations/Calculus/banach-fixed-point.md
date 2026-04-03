@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # Banach不动点定理 (Banach Fixed-Point Theorem)
 
 ## Mathlib4 引用

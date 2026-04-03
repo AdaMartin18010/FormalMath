@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 椭圆正则性定理
 
 ## Mathlib4 引用

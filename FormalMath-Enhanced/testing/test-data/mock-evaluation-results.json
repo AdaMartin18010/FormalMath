@@ -1,0 +1,242 @@
+{
+  "description": "T2.2 评估系统 - 模拟评估结果数据",
+  "generated_at": "2026-04-03T17:00:00+08:00",
+  "evaluations": [
+    {
+      "record_id": "eval_001",
+      "user_id": "UG_001",
+      "evaluation_type": "midterm",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 85,
+        "problem_solving": 78,
+        "proof_ability": 82,
+        "application": 75,
+        "innovation": 70
+      },
+      "weighted_score": 79.65,
+      "grade": "B",
+      "percentile": 75,
+      "created_at": "2026-04-01T10:00:00Z"
+    },
+    {
+      "record_id": "eval_002",
+      "user_id": "UG_002",
+      "evaluation_type": "midterm",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 95,
+        "problem_solving": 92,
+        "proof_ability": 94,
+        "application": 88,
+        "innovation": 85
+      },
+      "weighted_score": 91.25,
+      "grade": "A",
+      "percentile": 98,
+      "created_at": "2026-04-01T10:30:00Z"
+    },
+    {
+      "record_id": "eval_003",
+      "user_id": "UG_003",
+      "evaluation_type": "midterm",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 65,
+        "problem_solving": 58,
+        "proof_ability": 55,
+        "application": 62,
+        "innovation": 50
+      },
+      "weighted_score": 59.05,
+      "grade": "D",
+      "percentile": 25,
+      "created_at": "2026-04-01T11:00:00Z"
+    },
+    {
+      "record_id": "eval_004",
+      "user_id": "GR_001",
+      "evaluation_type": "midterm",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 98,
+        "problem_solving": 95,
+        "proof_ability": 97,
+        "application": 92,
+        "innovation": 90
+      },
+      "weighted_score": 95.35,
+      "grade": "A",
+      "percentile": 100,
+      "created_at": "2026-04-02T09:00:00Z"
+    },
+    {
+      "record_id": "eval_005",
+      "user_id": "GR_002",
+      "evaluation_type": "midterm",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 92,
+        "problem_solving": 88,
+        "proof_ability": 90,
+        "application": 82,
+        "innovation": 88
+      },
+      "weighted_score": 88.75,
+      "grade": "A",
+      "percentile": 92,
+      "created_at": "2026-04-02T09:30:00Z"
+    },
+    {
+      "record_id": "eval_006",
+      "user_id": "SL_001",
+      "evaluation_type": "process",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 75,
+        "problem_solving": 80,
+        "proof_ability": 65,
+        "application": 85,
+        "innovation": 70
+      },
+      "weighted_score": 75.25,
+      "grade": "C",
+      "percentile": 60,
+      "created_at": "2026-04-02T10:00:00Z"
+    },
+    {
+      "record_id": "eval_007",
+      "user_id": "UG_004",
+      "evaluation_type": "performance",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 82,
+        "problem_solving": 85,
+        "proof_ability": 78,
+        "application": 88,
+        "innovation": 75
+      },
+      "weighted_score": 82.10,
+      "grade": "B",
+      "percentile": 82,
+      "created_at": "2026-04-02T11:00:00Z"
+    },
+    {
+      "record_id": "eval_008",
+      "user_id": "GR_003",
+      "evaluation_type": "midterm",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 78,
+        "problem_solving": 82,
+        "proof_ability": 75,
+        "application": 85,
+        "innovation": 72
+      },
+      "weighted_score": 78.85,
+      "grade": "C",
+      "percentile": 72,
+      "created_at": "2026-04-02T14:00:00Z"
+    },
+    {
+      "record_id": "eval_009",
+      "user_id": "UG_005",
+      "evaluation_type": "midterm",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 80,
+        "problem_solving": 75,
+        "proof_ability": 72,
+        "application": 78,
+        "innovation": 68
+      },
+      "weighted_score": 75.85,
+      "grade": "C",
+      "percentile": 68,
+      "created_at": "2026-04-03T09:00:00Z"
+    },
+    {
+      "record_id": "eval_010",
+      "user_id": "UG_006",
+      "evaluation_type": "midterm",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 88,
+        "problem_solving": 85,
+        "proof_ability": 80,
+        "application": 90,
+        "innovation": 78
+      },
+      "weighted_score": 85.00,
+      "grade": "B",
+      "percentile": 88,
+      "created_at": "2026-04-03T09:30:00Z"
+    },
+    {
+      "record_id": "eval_011",
+      "user_id": "GR_004",
+      "evaluation_type": "midterm",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 96,
+        "problem_solving": 94,
+        "proof_ability": 95,
+        "application": 88,
+        "innovation": 92
+      },
+      "weighted_score": 93.65,
+      "grade": "A",
+      "percentile": 99,
+      "created_at": "2026-04-03T10:00:00Z"
+    },
+    {
+      "record_id": "eval_012",
+      "user_id": "SL_002",
+      "evaluation_type": "process",
+      "period": "2026-spring",
+      "scores": {
+        "knowledge_mastery": 72,
+        "problem_solving": 68,
+        "proof_ability": 65,
+        "application": 70,
+        "innovation": 62
+      },
+      "weighted_score": 68.45,
+      "grade": "D",
+      "percentile": 45,
+      "created_at": "2026-04-03T10:30:00Z"
+    }
+  ],
+  "learning_trajectories": [
+    {
+      "user_id": "UG_001",
+      "trajectory": [
+        {"date": "2026-01-15", "score": 72},
+        {"date": "2026-02-15", "score": 75},
+        {"date": "2026-03-15", "score": 78},
+        {"date": "2026-04-01", "score": 79.65}
+      ],
+      "growth_rate": 10.63
+    },
+    {
+      "user_id": "UG_002",
+      "trajectory": [
+        {"date": "2026-01-15", "score": 88},
+        {"date": "2026-02-15", "score": 89},
+        {"date": "2026-03-15", "score": 90},
+        {"date": "2026-04-01", "score": 91.25}
+      ],
+      "growth_rate": 3.69
+    },
+    {
+      "user_id": "GR_001",
+      "trajectory": [
+        {"date": "2026-01-15", "score": 92},
+        {"date": "2026-02-15", "score": 93},
+        {"date": "2026-03-15", "score": 94.5},
+        {"date": "2026-04-01", "score": 95.35}
+      ],
+      "growth_rate": 3.64
+    }
+  ]
+}

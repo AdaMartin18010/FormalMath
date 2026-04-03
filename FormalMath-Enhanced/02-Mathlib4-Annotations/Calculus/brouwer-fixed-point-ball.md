@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # Brouwer不动点定理（单位球版本）
 
 ## Mathlib4 引用

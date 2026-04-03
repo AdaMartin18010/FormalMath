@@ -1,0 +1,142 @@
+{
+  "description": "T2.1 认知诊断系统 - 模拟诊断结果数据",
+  "generated_at": "2026-04-03T17:00:00+08:00",
+  "sessions": [
+    {
+      "session_id": "diag_001",
+      "user_id": "UG_001",
+      "start_time": "2026-04-03T09:00:00Z",
+      "end_time": "2026-04-03T09:45:00Z",
+      "question_count": 20,
+      "correct_count": 14,
+      "results": {
+        "L0": {"mastery": 0.85, "confidence": 0.92},
+        "L1": {"mastery": 0.70, "confidence": 0.85},
+        "L2": {"mastery": 0.55, "confidence": 0.78},
+        "L3": {"mastery": 0.30, "confidence": 0.65}
+      },
+      "identified_gaps": ["formal_proof_structure", "advanced_induction"],
+      "strengths": ["basic_logic", "set_theory_basics"],
+      "suggestions": ["加强L2层次证明技巧训练", "先修完备性理论"]
+    },
+    {
+      "session_id": "diag_002",
+      "user_id": "UG_002",
+      "start_time": "2026-04-03T10:00:00Z",
+      "end_time": "2026-04-03T10:35:00Z",
+      "question_count": 20,
+      "correct_count": 18,
+      "results": {
+        "L0": {"mastery": 0.95, "confidence": 0.98},
+        "L1": {"mastery": 0.88, "confidence": 0.92},
+        "L2": {"mastery": 0.80, "confidence": 0.88},
+        "L3": {"mastery": 0.65, "confidence": 0.75}
+      },
+      "identified_gaps": ["cut_elimination", "advanced_type_theory"],
+      "strengths": ["logical_reasoning", "proof_writing", "set_theory"],
+      "suggestions": ["尝试研究级课题", "深入学习证明助手"]
+    },
+    {
+      "session_id": "diag_003",
+      "user_id": "UG_003",
+      "start_time": "2026-04-03T11:00:00Z",
+      "end_time": "2026-04-03T11:50:00Z",
+      "question_count": 20,
+      "correct_count": 10,
+      "results": {
+        "L0": {"mastery": 0.65, "confidence": 0.80},
+        "L1": {"mastery": 0.45, "confidence": 0.70},
+        "L2": {"mastery": 0.20, "confidence": 0.60},
+        "L3": {"mastery": 0.05, "confidence": 0.50}
+      },
+      "identified_gaps": ["formal_logic", "mathematical_induction", "proof_methods"],
+      "strengths": ["basic_concepts"],
+      "suggestions": ["从L0开始系统学习", "加强基础概念理解"]
+    },
+    {
+      "session_id": "diag_004",
+      "user_id": "GR_001",
+      "start_time": "2026-04-03T13:00:00Z",
+      "end_time": "2026-04-03T13:40:00Z",
+      "question_count": 25,
+      "correct_count": 22,
+      "results": {
+        "L0": {"mastery": 0.98, "confidence": 0.99},
+        "L1": {"mastery": 0.95, "confidence": 0.96},
+        "L2": {"mastery": 0.90, "confidence": 0.92},
+        "L3": {"mastery": 0.82, "confidence": 0.85}
+      },
+      "identified_gaps": ["homotopy_type_theory", "cubical_type_theory"],
+      "strengths": ["dependent_types", "proof_assistants", "logic"],
+      "suggestions": ["参与前沿研究", "贡献开源证明库"]
+    },
+    {
+      "session_id": "diag_005",
+      "user_id": "SL_001",
+      "start_time": "2026-04-03T14:00:00Z",
+      "end_time": "2026-04-03T14:55:00Z",
+      "question_count": 20,
+      "correct_count": 12,
+      "results": {
+        "L0": {"mastery": 0.75, "confidence": 0.85},
+        "L1": {"mastery": 0.60, "confidence": 0.78},
+        "L2": {"mastery": 0.35, "confidence": 0.68},
+        "L3": {"mastery": 0.15, "confidence": 0.55}
+      },
+      "identified_gaps": ["formal_semantics", "hoare_logic"],
+      "strengths": ["programming", "algorithm_thinking"],
+      "suggestions": ["结合实践项目学习", "从实用角度理解形式化"]
+    },
+    {
+      "session_id": "diag_006",
+      "user_id": "SL_004",
+      "start_time": "2026-04-03T15:00:00Z",
+      "end_time": "2026-04-03T16:00:00Z",
+      "question_count": 15,
+      "correct_count": 7,
+      "results": {
+        "L0": {"mastery": 0.50, "confidence": 0.70},
+        "L1": {"mastery": 0.30, "confidence": 0.60},
+        "L2": {"mastery": 0.10, "confidence": 0.50},
+        "L3": {"mastery": 0.00, "confidence": 0.40}
+      },
+      "identified_gaps": ["basic_logic", "formal_notation", "proof_concepts"],
+      "strengths": ["learning_motivation"],
+      "suggestions": ["从最基础概念开始", "使用图形化学习工具"]
+    },
+    {
+      "session_id": "diag_007",
+      "user_id": "UG_005",
+      "start_time": "2026-04-03T16:30:00Z",
+      "end_time": "2026-04-03T17:15:00Z",
+      "question_count": 20,
+      "correct_count": 13,
+      "results": {
+        "L0": {"mastery": 0.80, "confidence": 0.88},
+        "L1": {"mastery": 0.65, "confidence": 0.80},
+        "L2": {"mastery": 0.45, "confidence": 0.72},
+        "L3": {"mastery": 0.25, "confidence": 0.60}
+      },
+      "identified_gaps": ["formal_proof", "type_systems"],
+      "strengths": ["abstraction", "pattern_recognition"],
+      "suggestions": ["加强形式化证明训练", "学习类型系统基础"]
+    },
+    {
+      "session_id": "diag_008",
+      "user_id": "GR_005",
+      "start_time": "2026-04-03T09:30:00Z",
+      "end_time": "2026-04-03T10:20:00Z",
+      "question_count": 20,
+      "correct_count": 11,
+      "results": {
+        "L0": {"mastery": 0.70, "confidence": 0.82},
+        "L1": {"mastery": 0.55, "confidence": 0.75},
+        "L2": {"mastery": 0.40, "confidence": 0.68},
+        "L3": {"mastery": 0.20, "confidence": 0.55}
+      },
+      "identified_gaps": ["formal_specification", "temporal_logic"],
+      "strengths": ["software_engineering_principles"],
+      "suggestions": ["结合软件工程实践学习形式化", "重点学习模型检测"]
+    }
+  ]
+}

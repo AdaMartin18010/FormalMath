@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # IMO Lean: IMO题目形式化项目
 
 ## 概述

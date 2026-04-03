@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # Green定理 (Green's Theorem)
 
 ## Mathlib4 引用

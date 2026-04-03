@@ -29,6 +29,7 @@ import Mathlib.Data.Fintype.Card
 import Mathlib.Combinatorics.Pigeonhole
 import Mathlib.Data.Finset.Basic
 import Mathlib.Data.Fintype.Basic
+import Mathlib.Data.Nat.ModEq
 
 universe u v
 
@@ -77,38 +78,28 @@ theorem pigeonhole_exists {α β : Type*} [Fintype α] [Fintype β]
 -/
 
 -- 一般形式鸽巢原理
-theorem pigeonhole_general {α β : Type*} [Fintype α] [Fintype β]
+theorem pigeonhole_general {α β : Type*} [Fintype α] [Fintype β] [DecidableEq α]
     (f : α → β) (k : ℕ) (h : card α > k * card β) :
     ∃ (y : β), #{x | f x = y} > k := by
-  /- 证明思路（反证法）：
-     假设对所有 y，|f⁻¹(y)| ≤ k
-     则 |α| = Σ|f⁻¹(y)| ≤ k·|β|，矛盾
-  -/
-  by_contra h_all
-  push_neg at h_all
-  
-  /- 计算总元素数 -/
-  have h_sum : ∑ y : β, #{x | f x = y} = card α := by
-    /- 这是纤维分解 -/
-    sorry
-  
-  /- 每个纤维大小 ≤ k -/
-  have h_le : ∑ y : β, #{x | f x = y} ≤ k * card β := by
-    sorry
-  
-  /- 矛盾 -/
-  linarith [h_sum, h_le, h]
+  /- 使用Mathlib4的鸽巢原理 -/
+  have h' : ∃ (y : β), #{x | f x = y} > k := by
+    apply Finset.exists_lt_card_fiber_of_mul_lt_card_of_maps_to (s := Finset.univ) (t := Finset.univ)
+    · intro x _
+      exact Finset.mem_univ (f x)
+    · simpa using h
+  exact h'
 
 -- 鸽巢原理的平均形式
-theorem pigeonhole_average {α β : Type*} [Fintype α] [Fintype β] [Nonempty β]
+theorem pigeonhole_average {α β : Type*} [Fintype α] [Fintype β] [Nonempty β] [DecidableEq α]
     (f : α → β) :
     ∃ (y : β), #{x | f x = y} * card β ≥ card α := by
-  /- 平均纤维大小为 |α|/|β| -/
-  by_contra h
-  push_neg at h
-  
-  /- 若所有纤维大小 < |α|/|β|，则总元素数 < |α| -/
-  sorry
+  /- 使用Mathlib4的鸽巢原理 -/
+  have h : ∃ (y : β), #{x | f x = y} * card β ≥ card α := by
+    apply Finset.exists_card_fiber_ge_of_nsmul_le_card_of_maps_to (s := Finset.univ) (t := Finset.univ)
+    · intro x _
+      exact Finset.mem_univ (f x)
+    · simp
+  exact h
 
 /-
 ## 应用：生日问题
@@ -154,7 +145,109 @@ theorem ramsey_3_3 {V : Type*} [Fintype V] (hV : card V = 6)
      4. 若 ab, bc, ca 中有红色边，形成红色三角形
      5. 若 ab, bc, ca 全是蓝色，形成蓝色三角形
   -/
-  sorry  -- 详细证明需要图论框架
+  have h_nonempty : Nonempty V := by
+    have : card V > 0 := by rw [hV]; norm_num
+    exact Fintype.card_pos_iff.mp this
+  
+  rcases h_nonempty with ⟨v⟩
+  
+  /- 考虑从v到其他顶点的边的颜色 -/
+  let other_vertices : Finset V := Finset.univ.erase v
+  have h_card_other : other_vertices.card = 5 := by
+    rw [Finset.card_erase_of_mem (Finset.mem_univ v)]
+    simp [hV]
+  
+  /- 按颜色分类 -/
+  let red_neighbors : Finset V := Finset.filter (fun w => edge_color v w = 1) other_vertices
+  let blue_neighbors : Finset V := Finset.filter (fun w => edge_color v w = 0) other_vertices
+  
+  have h_partition : other_vertices.card = red_neighbors.card + blue_neighbors.card := by
+    rw [Finset.filter_card_add_filter_neg_card_eq_card]
+  
+  rw [h_card_other] at h_partition
+  
+  /- 至少一种颜色有3个或更多邻居 -/
+  have h_large_color : red_neighbors.card ≥ 3 ∨ blue_neighbors.card ≥ 3 := by
+    by_contra h
+    push_neg at h
+    have h1 : red_neighbors.card ≤ 2 := by linarith
+    have h2 : blue_neighbors.card ≤ 2 := by linarith
+    have : red_neighbors.card + blue_neighbors.card ≤ 4 := by linarith
+    linarith
+  
+  cases h_large_color with
+  | inl h_red =>
+    /- 至少有3个红色邻居，应用Ramsey论证 -/
+    have h_card : red_neighbors.card ≥ 3 := h_red
+    have h3 : ∃ (a b c : V), a ≠ b ∧ a ≠ c ∧ b ≠ c ∧
+      a ∈ red_neighbors ∧ b ∈ red_neighbors ∧ c ∈ red_neighbors := by
+      have h_pos : red_neighbors.card ≥ 3 := h_card
+      rcases Finset.three_le h_pos with ⟨a, ha, b, hb, c, hc, hab, hac, hbc⟩
+      exact ⟨a, b, c, hab, hac, hbc, ha, hb, hc⟩
+    
+    rcases h3 with ⟨a, b, c, hab, hac, hbc, ha, hb, hc⟩
+    
+    /- 检查 a, b, c 之间的边 -/
+    by_cases h_ab : edge_color a b = 1
+    · by_cases h_bc : edge_color b c = 1
+      · /- 红色三角形 a-b-c -/
+        use a, b, c, hab, hac, hbc
+        constructor
+        · exact h_ab
+        · exact h_bc.symm.trans (h_sym b c)
+      · /- bc 是蓝色 -/
+        have h_bc_blue : edge_color b c = 0 := by
+          have : edge_color b c = 0 ∨ edge_color b c = 1 := by
+            fin_cases edge_color b c <;> simp
+          tauto
+        by_cases h_ac : edge_color a c = 1
+        · /- 红色三角形 a-c-v -/
+          use a, c, v, hac, by_contra hcv; rw [←hcv] at hac; contradiction, by_contra hva; rw [←hva] at hac; contradiction
+          constructor
+          · exact h_ac
+          · have : edge_color c v = 1 := by
+              simp [red_neighbors] at hc
+              exact hc.2
+            rw [h_sym c v]
+            exact this
+        · /- ac 是蓝色，蓝色三角形 a-b-c -/
+          use a, b, c, hab, hac, hbc
+          constructor
+          · have : edge_color a b = 0 := by
+              have : edge_color a b = 0 ∨ edge_color a b = 1 := by
+                fin_cases edge_color a b <;> simp
+              tauto
+            linarith
+          · exact h_bc_blue
+    · /- ab 是蓝色 -/
+      have h_ab_blue : edge_color a b = 0 := by
+        have : edge_color a b = 0 ∨ edge_color a b = 1 := by
+          fin_cases edge_color a b <;> simp
+        tauto
+      by_cases h_bc : edge_color b c = 1
+      · by_cases h_ac : edge_color a c = 1
+        · /- 红色三角形 a-c-v -/
+          use a, c, v, hac, by_contra hcv; rw [←hcv] at hac; contradiction, by_contra hva; rw [←hva] at hac; contradiction
+          constructor
+          · exact h_ac
+          · have : edge_color c v = 1 := by
+              simp [red_neighbors] at hc
+              exact hc.2
+            rw [h_sym c v]
+            exact this
+        · /- ac 是蓝色，蓝色三角形 a-b-c -/
+          use a, b, c, hab, hac, hbc
+          constructor
+          · exact h_ab_blue
+          · exact h_bc
+      · /- bc 是蓝色，蓝色三角形 a-b-c -/
+        use a, b, c, hab, hac, hbc
+        constructor
+        · exact h_ab_blue
+        · exact h_bc
+  | inr h_blue =>
+    /- 至少有3个蓝色邻居，类似论证 -/
+    sorry
 
 /-
 ## 应用：数论
@@ -179,24 +272,107 @@ theorem pigeonhole_divisibility {n : ℕ} (hn : n > 0)
   -/
   
   /- 定义映射：每个数映射到其奇数部分 -/
-  let f : ℕ → ℕ := fun x => x / 2 ^ (Nat.factorization x 2)
+  let oddPart (x : ℕ) : ℕ := x / 2 ^ (Nat.factorization x 2)
   
-  /- f(x) 总是奇数 -/
-  have h_odd : ∀ (x ∈ s), Odd (f x) := by
+  /- 奇数部分的范围 -/
+  have h_odd_range : ∀ x ∈ s, oddPart x ∈ Finset.Ioc 0 (2 * n) := by
     intro x hx
-    dsimp [f]
-    sorry  -- 需要证明除以最大2的幂次后为奇数
+    simp [oddPart]
+    have h1 : 1 ≤ x := (h_subset x hx).1
+    have h2 : x ≤ 2 * n := (h_subset x hx).2
+    have h_odd : Odd (x / 2 ^ (Nat.factorization x 2)) := by
+      apply Nat.div_pow_factorization_is_pos_and_odd
+      · linarith
+      · linarith
+    rcases h_odd with ⟨k, hk⟩
+    constructor
+    · linarith [hk]
+    · have : x / 2 ^ (Nat.factorization x 2) ≤ x := by
+        apply Nat.div_le_self
+      linarith
   
-  /- f(x) ≤ 2n - 1 且为奇数 -/
-  have h_range : ∀ (x ∈ s), f x ∈ Finset.Ioc 0 (2 * n).pred := by
-    sorry
+  /- 奇数部分的集合的基数最多为 n -/
+  have h_target_card : #(Finset.image oddPart s) ≤ n := by
+    have h_subset : Finset.image oddPart s ⊆ Finset.filter Odd (Finset.Ioc 0 (2 * n)) := by
+      intro m hm
+      simp at hm ⊢
+      rcases hm with ⟨x, hx, rfl⟩
+      have h1 : 1 ≤ x := (h_subset x hx).1
+      have h2 : x ≤ 2 * n := (h_subset x hx).2
+      have h_odd : Odd (oddPart x) := by
+        apply Nat.div_pow_factorization_is_pos_and_odd
+        · linarith
+        · linarith
+      have h_pos : oddPart x > 0 := by
+        apply Nat.div_pos
+        · apply pow_pos
+          linarith
+        · linarith
+      simp [h_pos, h_odd]
+    have h_card_target : #(Finset.filter Odd (Finset.Ioc 0 (2 * n))) = n := by
+      /- {1, 3, ..., 2n-1} 中有 n 个奇数 -/
+      rw [Finset.filter_card_add_filter_neg_card_eq_card (p := Odd) (s := Finset.Ioc 0 (2 * n))]
+      have h_even : #(Finset.filter (fun x => ¬Odd x) (Finset.Ioc 0 (2 * n))) = n := by
+        /- {2, 4, ..., 2n} 中有 n 个偶数 -/
+        rw [Finset.card_Ioc]
+        simp [show 2 * n - 0 = 2 * n by simp]
+        /- 在 {1, ..., 2n} 中，奇数和偶数各 n 个 -/
+        omega
+      rw [h_even]
+      have h_total : #(Finset.Ioc 0 (2 * n)) = 2 * n := by
+        rw [Finset.card_Ioc]
+        simp
+      omega
+    exact Nat.le_trans (Finset.card_le_card h_subset) (by linarith)
   
-  /- 可能的奇数值有 n 个 -/
-  have h_target_card : #{x | Odd x ∧ x ≤ 2 * n} = n := by
-    sorry
+  /- 由鸽巢原理，存在 x ≠ y 使得 oddPart(x) = oddPart(y) -/
+  have h_pigeonhole : ∃ x ∈ s, ∃ y ∈ s, x ≠ y ∧ oddPart x = oddPart y := by
+    by_contra h
+    push_neg at h
+    have h_inj : Set.InjOn oddPart s.toSet := by
+      intro x hx y hy h_eq
+      by_cases hxy : x = y
+      · exact hxy
+      · exfalso
+        exact h x hx y hy hxy h_eq
+    have h_card_eq : #(Finset.image oddPart s) = s.card := by
+      rw [Finset.card_image_iff.mpr h_inj]
+    rw [h_card_eq] at h_target_card
+    rw [h_card] at h_target_card
+    omega
   
-  /- 由鸽巢原理，存在 x ≠ y 使得 f(x) = f(y) -/
-  sorry
+  rcases h_pigeonhole with ⟨x, hx, y, hy, hxy, h_eq⟩
+  
+  /- 设 x = 2^a · m, y = 2^b · m，其中 m = oddPart(x) = oddPart(y) -/
+  let a := Nat.factorization x 2
+  let b := Nat.factorization y 2
+  let m := oddPart x
+  
+  have hx_eq : x = 2 ^ a * m := by
+    rw [Nat.div_mul_cancel]
+    apply Nat.ord_proj_dvd
+  
+  have hy_eq : y = 2 ^ b * m := by
+    have : oddPart y = m := by
+      rw [h_eq]
+    rw [Nat.div_mul_cancel]
+    apply Nat.ord_proj_dvd
+  
+  /- 比较 a 和 b -/
+  by_cases hab : a ≤ b
+  · use x, y, hx, hy, hxy
+    rw [hx_eq, hy_eq]
+    use 2 ^ (b - a)
+    rw [pow_mul]
+    congr
+    omega
+  · use y, x, hy, hx, hxy.symm
+    rw [hx_eq, hy_eq]
+    use 2 ^ (a - b)
+    rw [pow_mul]
+    ring_nf
+    congr
+    omega
 
 /-
 ## 推广：无穷鸽巢原理
@@ -228,7 +404,10 @@ theorem infinite_pigeonhole {α β : Type*} [Infinite α] [Finite β]
   
   /- 有限个有限集的并是有限集 -/
   have h_finite_union : Finite (⋃ (y : β), {x | f x = y}) := by
-    sorry
+    apply Finite.Set.finite_iUnion
+    · exact Fintype.ofFinite β
+    · intro y
+      exact h_finite y
   
   /- 所以 α 是有限集，矛盾 -/
   rw [h_union] at h_finite_union
@@ -248,6 +427,7 @@ end PigeonholePrinciple
 example (f : Fin 5 → Fin 4) : ∃ (x y : Fin 5), x ≠ y ∧ f x = f y := by
   apply pigeonhole_exists
   simp
+  omega
 ```
 
 ### 示例2：一般形式
@@ -257,14 +437,13 @@ example (f : Fin 5 → Fin 4) : ∃ (x y : Fin 5), x ≠ y ∧ f x = f y := by
 -- ⌈10/3⌉ = 4
 example (f : Fin 10 → Fin 3) : 
     ∃ (y : Fin 3), #{x | f x = y} ≥ 4 := by
-  by_contra h
-  push_neg at h
-  /- 若每个盒子最多3个，则总数 ≤ 9，矛盾 -/
-  have : ∑ y : Fin 3, #{x | f x = y} ≤ 9 := by
-    sorry
-  have : ∑ y : Fin 3, #{x | f x = y} = 10 := by
-    sorry
-  linarith
+  have h : ∃ (y : Fin 3), #{x | f x = y} > 3 := by
+    apply pigeonhole_general f 3
+    simp
+    omega
+  rcases h with ⟨y, hy⟩
+  use y
+  omega
 ```
 
 ### 示例3：模运算

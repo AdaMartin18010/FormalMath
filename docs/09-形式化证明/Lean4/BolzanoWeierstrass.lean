@@ -136,20 +136,17 @@ theorem nested_intervals {a b : ℕ → ℝ} (ha : Monotone a) (hb : Antitone b)
       exact hb hm
     linarith
 
--- Bolzano-Weierstrass定理（一维）
+-- Bolzano-Weierstrass定理（一维）- 使用Mathlib4的结果
 theorem bolzano_weierstrass_1d (x : ℕ → ℝ) (hbounded : SeqBounded x) :
     HasConvergentSubseq x := by
   /- 证明思路（区间套方法）：
      1. 由有界性，存在 [a, b] 包含所有 xₙ
-     2. 递归构造区间套
+     2. 使用Mathlib4的紧致性结果
   -/
-  
-  /- 步骤1：找到包含所有项的区间 -/
   rcases hbounded with ⟨M, hM⟩
-  let a₀ : ℝ := -M
-  let b₀ : ℝ := M
   
-  have h_all_in : ∀ n, x n ∈ Icc a₀ b₀ := by
+  /- 证明范围在 [-M, M] 中 -/
+  have h_range : ∀ n, x n ∈ Icc (-M) M := by
     intro n
     constructor
     · /- xₙ ≥ -M -/
@@ -157,64 +154,43 @@ theorem bolzano_weierstrass_1d (x : ℕ → ℝ) (hbounded : SeqBounded x) :
         apply le_of_lt
         apply dist_lt_of_dist_le
         exact hM n
-        /- 需要额外的假设 M > 0 -/
-        sorry
-      sorry  -- 需要完善绝对值不等式
+        linarith [show M > 0 from by
+          by_contra h
+          push_neg at h
+          have : |x 1 - x 0| ≤ M := by
+            apply le_of_lt
+            apply dist_lt_of_dist_le
+            exact hM 1
+            linarith
+          have : |x 1 - x 0| ≤ 0 := by linarith
+          have : x 1 = x 0 := by
+            have h1 : x 1 - x 0 = 0 := by
+              apply abs_nonpos.mp
+              linarith
+            linarith
+          /- 这不一定导致矛盾，需要其他论证 -/
+          sorry]
+      linarith [abs_le.mp h_dist]
     · /- xₙ ≤ M -/
-      sorry
+      have h_dist : |x n - x 0| ≤ M := by
+        apply le_of_lt
+        apply dist_lt_of_dist_le
+        exact hM n
+        sorry
+      linarith [abs_le.mp h_dist]
   
-  /- 步骤2：递归构造区间套 -/
-  let rec intervals (n : ℕ) : ℝ × ℝ := match n with
-    | 0 => (a₀, b₀)
-    | n + 1 => 
-      let (a, b) := intervals n
-      let mid := (a + b) / 2
-      if {k | x k ∈ Icc a mid}.Infinite then
-        (a, mid)
-      else
-        (mid, b)
+  /- 使用闭区间 [-M, M] 的紧致性 -/
+  have h_compact : IsCompact (Icc (-M) M) := by
+    exact isCompact_Icc
   
-  let a := fun n => (intervals n).1
-  let b := fun n => (intervals n).2
+  /- 序列在紧致集中，必有收敛子序列 -/
+  have h_subseq : ∃ (φ : ℕ → ℕ), StrictMono φ ∧ ∃ (L : ℝ), Tendsto (x ∘ φ) atTop (𝓝 L) := by
+    apply IsCompact.tendsto_subseq h_compact
+    · intro n
+      exact h_range n
+    · use 0
   
-  /- 步骤3：验证区间套性质 -/
-  have ha_mono : Monotone a := by
-    intro m n hmn
-    sorry  -- 由构造可知 {aₙ} 递增
-  
-  have hb_anti : Antitone b := by
-    intro m n hmn
-    sorry  -- 由构造可知 {bₙ} 递减
-  
-  have h_le : ∀ n, a n ≤ b n := by
-    sorry  -- 由构造可知 aₙ ≤ bₙ
-  
-  have h_len : ∀ n, b n - a n = (b₀ - a₀) / (2 ^ n) := by
-    sorry  -- 每次区间长度减半
-  
-  have h_lim : Tendsto (fun n => b n - a n) atTop (𝓝 0) := by
-    /- (b₀ - a₀) / 2ⁿ → 0 当 n → ∞ -/
-    sorry
-  
-  /- 步骤4：应用区间套定理 -/
-  rcases nested_intervals ha_mono hb_anti h_le h_lim with ⟨L, hL⟩
-  
-  /- 步骤5：构造收敛子序列 -/
-  let rec subseq_index (n : ℕ) : ℕ := match n with
-    | 0 => 
-      /- 选择第一个在 [a₀, b₀] 中的项 -/
-      0
-    | n + 1 =>
-      /- 选择在 [a_{n+1}, b_{n+1}] 中且下标更大的项 -/
-      sorry
-  
-  use subseq_index
-  constructor
-  · /- 证明子序列的单调性 -/
-    sorry
-  · /- 证明收敛性 -/
-    use L
-    sorry
+  exact h_subseq
 
 /-
 ## Bolzano-Weierstrass定理的滤子证明
@@ -237,7 +213,18 @@ theorem bolzano_weierstrass_metric {X : Type*} [MetricSpace X] [ProperSpace X]
     (x : ℕ → X) (hbounded : Bornology.IsBounded (Set.range x)) :
     HasConvergentSubseq x := by
   /- 在Proper空间中，有界集的闭包是紧致的 -/
-  sorry
+  have h_compact : IsCompact (closure (range x)) := by
+    apply IsBounded.isCompact_closure
+    exact hbounded
+  
+  have h_subseq : ∃ (φ : ℕ → ℕ), StrictMono φ ∧ ∃ (L : X), Tendsto (x ∘ φ) atTop (𝓝 L) := by
+    apply IsCompact.tendsto_subseq h_compact
+    · intro n
+      apply subset_closure
+      simp
+    · use 0
+  
+  exact h_subseq
 
 /-
 ## Bolzano-Weierstrass定理的高维推广
@@ -252,28 +239,44 @@ theorem bolzano_weierstrass_metric {X : Type*} [MetricSpace X] [ProperSpace X]
 theorem bolzano_weierstrass_rn {n : ℕ} (x : ℕ → Fin n → ℝ) 
     (hbounded : ∃ (M : ℝ), ∀ (k : ℕ) (i : Fin n), |x k i| ≤ M) :
     HasConvergentSubseq x := by
-  /- 对每个坐标分别应用一维定理，然后使用对角线方法 -/
+  /- 使用紧致性证明 -/
+  rcases hbounded with ⟨M, hM⟩
   
-  /- 归纳法证明 -/
-  induction n with
-  | zero =>
-    /- n = 0：平凡情况 -/
-    use id
+  /- 序列在紧集 [-M, M]ⁿ 中 -/
+  let K : Set (Fin n → ℝ) := {y | ∀ i, y i ∈ Icc (-M) M}
+  
+  have h_compact : IsCompact K := by
+    /- 有限个紧致集的乘积是紧致的 -/
+    have : K = Set.pi Set.univ (fun i => Icc (-M) M) := by
+      ext y
+      simp [K]
+    rw [this]
+    apply isCompact_univ_pi
+    intro i
+    exact isCompact_Icc
+  
+  have h_in_K : ∀ k, x k ∈ K := by
+    intro k
+    simp [K]
+    intro i
     constructor
-    · exact strictMono_id
-    · use fun i => 0
-      /- 在零维空间中所有序列都收敛 -/
-      sorry
-  | succ n ih =>
-    /- 归纳步骤：将序列分解为前n个坐标和第n+1个坐标 -/
-    sorry
+    · linarith [abs_le.mp (hM k i)]
+    · linarith [abs_le.mp (hM k i)]
+  
+  /- 在紧致集中取收敛子序列 -/
+  apply IsCompact.tendsto_subseq h_compact
+  · intro k
+    exact h_in_K k
+  · use 0
 
 -- 使用Mathlib4的紧致性证明
 theorem bolzano_weierstrass_compact {X : Type*} [MetricSpace X] [CompactSpace X]
     (x : ℕ → X) :
     HasConvergentSubseq x := by
   /- 紧致度量空间是序列紧致的 -/
-  exact IsCompact.tendsto_subseq (isCompact_univ) (mem_univ (Set.range x)) (Set.mem_range_self 0)
+  apply IsCompact.tendsto_subseq (isCompact_univ)
+  · simp
+  · use 0
 
 /-
 ## 应用：闭区间的紧致性
@@ -286,13 +289,8 @@ theorem bolzano_weierstrass_compact {X : Type*} [MetricSpace X] [CompactSpace X]
 
 -- 闭区间的紧致性
 theorem compact_Icc {a b : ℝ} (hle : a ≤ b) : IsCompact (Icc a b) := by
-  /- 使用Bolzano-Weierstrass定理 -/
-  apply isCompact_iff_totallyBounded_isComplete.mpr
-  constructor
-  · /- 完全有界性 -/
-    sorry
-  · /- 完备性 -/
-    exact isComplete_Icc
+  /- 使用Mathlib4的结果 -/
+  exact isCompact_Icc
 
 /-
 ## 应用：连续函数的性质
@@ -319,7 +317,25 @@ theorem extreme_value {X : Type*} [MetricSpace X] [CompactSpace X]
     exact IsCompact.isBounded h_compact
   
   /- 上确界在值域中 -/
-  sorry
+  have h_nonempty : (range f).Nonempty := by
+    use f (Classical.arbitrary X)
+    simp
+  
+  have h_sup_in : sSup (range f) ∈ range f := by
+    apply IsClosed.csSup_mem
+    · exact h_closed
+    · exact h_nonempty
+    · exact h_bounded
+  
+  rcases h_sup_in with ⟨x₀, hx₀⟩
+  use x₀
+  intro x
+  have : f x ≤ sSup (range f) := by
+    apply le_csSup
+    · exact h_bounded
+    · simp
+  rw [← hx₀]
+  exact this
 
 end BolzanoWeierstrassTheorem
 
@@ -338,6 +354,8 @@ example : HasConvergentSubseq (fun n => (-1 : ℝ) ^ n) := by
   · use 1
     /- 证明收敛 -/
     simp
+    use 1
+    simp
 ```
 
 ### 示例2：证明序列紧致性
@@ -350,7 +368,17 @@ example (x : ℕ → ℝ) (hx : ∀ n, x n ∈ Icc 0 1) :
   use 1
   intro n
   have : x n ∈ Icc 0 1 := hx n
-  sorry  -- 证明 |xₙ - x₀| ≤ 1
+  rcases this with ⟨h0, h1⟩
+  have h_dist : |x n - x 0| ≤ 1 := by
+    have h0' : 0 ≤ x n := h0
+    have h1' : x n ≤ 1 := h1
+    have h0'' : 0 ≤ x 0 := (hx 0).1
+    have h1'' : x 0 ≤ 1 := (hx 0).2
+    apply abs_le.mpr
+    constructor
+    · linarith
+    · linarith
+  exact h_dist
 ```
 
 ## 数学意义

@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # FormalMath 项目质量白皮书
 
 **版本**: v1.0

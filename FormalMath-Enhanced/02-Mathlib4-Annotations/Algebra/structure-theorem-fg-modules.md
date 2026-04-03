@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 有限生成模结构定理 (Structure Theorem for Finitely Generated Modules)
 
 ## Mathlib4 引用

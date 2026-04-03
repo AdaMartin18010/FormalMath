@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # Mathlib4 教育注释风格指南
 
 ## 写作原则

@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 伽罗瓦理论基本定理 (Galois Correspondence)
 
 ## Mathlib4 引用

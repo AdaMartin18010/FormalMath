@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # Langlands纲领：2020年代最新进展
 
 > Gaitsgory的几何Langlands证明、Fargues-Fontaine曲线以及局部Langlands对应的最新突破

@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 同构定理 (Isomorphism Theorems)
 
 ## Mathlib4 引用

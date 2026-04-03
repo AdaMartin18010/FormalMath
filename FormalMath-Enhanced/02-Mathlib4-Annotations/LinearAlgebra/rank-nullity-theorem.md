@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 秩-零化度定理 (Rank-Nullity Theorem)
 
 ## Mathlib4 引用

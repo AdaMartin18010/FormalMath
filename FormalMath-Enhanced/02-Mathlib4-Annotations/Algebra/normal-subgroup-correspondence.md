@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 正规子群对应定理 (Normal Subgroup Correspondence)
 
 ## Mathlib4 引用

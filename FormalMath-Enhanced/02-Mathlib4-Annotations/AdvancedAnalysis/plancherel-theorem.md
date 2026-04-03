@@ -1,3 +1,8 @@
+---
+msc_primary: 97U50
+processed_at: '2026-04-03'
+---
+
 # Plancherel定理
 
 ## Mathlib4 引用

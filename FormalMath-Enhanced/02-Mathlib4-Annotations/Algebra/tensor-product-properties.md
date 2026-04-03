@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 张量积性质 (Tensor Product Properties)
 
 ## Mathlib4 引用

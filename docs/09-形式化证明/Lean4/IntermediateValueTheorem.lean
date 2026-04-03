@@ -303,7 +303,30 @@ theorem sign_not_continuous_at_0 : ¬ContinuousAt sign 0 := by
   intro h
   /- 使用 ε-δ 定义证明不连续性 -/
   rw [continuousAt_iff_continuous_left_right] at h
-  sorry  -- 左右极限不相等
+  /- 左右极限不相等 -/
+  have h_left : Tendsto sign (𝓝[<] 0) (𝓝 (-1)) := by
+    apply tendsto_nhdsWithin_of_tendsto_nhds
+    apply Eventually.tendsto
+    apply eventually_of_forall
+    intro x hx
+    simp [sign]
+    intro h_pos
+    linarith
+  have h_right : Tendsto sign (𝓝[>] 0) (𝓝 1) := by
+    apply tendsto_nhdsWithin_of_tendsto_nhds
+    apply Eventually.tendsto
+    apply eventually_of_forall
+    intro x hx
+    simp [sign]
+    intro h_neg
+    linarith
+  /- 左右极限不同，所以在0处不连续 -/
+  have h_left_right : Tendsto sign (𝓝[<] 0) (𝓝 (sign 0)) := h.1
+  have h_right_right : Tendsto sign (𝓝[>] 0) (𝓝 (sign 0)) := h.2
+  simp [sign] at h_left_right h_right_right
+  have h_neg1_eq_0 : -1 = (0 : ℝ) := by
+    apply tendsto_nhds_unique h_left h_left_right
+  norm_num at h_neg1_eq_0
 
 end IntermediateValueTheorem
 
@@ -335,7 +358,24 @@ example : ∃ (x : ℝ), x ∈ Ioo 1 2 ∧ x ^ 3 - x - 1 = 0 := by
 example {f : ℝ → ℝ} (hf : LipschitzWith (1 / 2) f) 
     (h_range : ∀ x ∈ Icc 0 1, f x ∈ Icc 0 1) :
     ∃! (c : ℝ), c ∈ Icc 0 1 ∧ f c = c := by
-  sorry  -- 需要使用压缩映射原理
+  /- 存在性 -/
+  have h_exists : ∃ (c : ℝ), c ∈ Icc 0 1 ∧ f c = c := by
+    apply brouwer_fixed_point_1d
+    · exact hf.continuous.continuousOn
+    · exact h_range
+  rcases h_exists with ⟨c, hc, hfc⟩
+  /- 唯一性 -/
+  have h_unique : ∀ (d : ℝ), d ∈ Icc 0 1 → f d = d → d = c := by
+    intro d hd hfd
+    have h_dist : |d - c| ≤ (1 / 2) * |d - c| := by
+      have h_lip : dist (f d) (f c) ≤ (1 / 2) * dist d c := hf.dist_le_mul d c
+      rw [hfd, hfc] at h_lip
+      simp [dist] at h_lip ⊢
+      exact h_lip
+    have : |d - c| = 0 := by
+      linarith [abs_nonneg (d - c)]
+    linarith [abs_eq_zero.mp this]
+  exact ExistsUnique.intro c ⟨hc, hfc⟩ (fun d hd => h_unique d hd.1 hd.2)
 ```
 
 ## 数学意义

@@ -176,7 +176,26 @@ theorem euler_theorem {n a : ℕ} (hcoprime : Nat.Coprime a n) (hn : n > 0) :
 theorem wilson_theorem {p : ℕ} [Fact p.Prime] :
     Nat.factorial (p - 1) ≡ p - 1 [MOD p] := by
   /- 使用Mathlib4的威尔逊定理 -/
-  sorry  -- Mathlib4可能有现成的定理
+  have h : Nat.factorial (p - 1) ≡ -1 [ZMOD p] := by
+    apply Nat.prime_iff_fac_equiv_neg_one.mp
+    · exact Fact.elim (inferInstance)
+    · infer_instance
+  /- 转换到模p -/
+  rw [← ZMod.eq_iff_modEq_nat p] at h ⊢
+  simp at h ⊢
+  have : (p - 1 : ZMod p) = -1 := by
+    have : (p : ZMod p) = 0 := by
+      exact ZMod.natCast_self p
+    have : ((p - 1 : ℕ) : ZMod p) = (-1 : ℤ) := by
+      have : (p : ℤ) - 1 = -1 + p := by ring
+      have : ((p - 1 : ℕ) : ZMod p) = ((p : ℤ) - 1 : ZMod p) := by
+        simp [Int.natCast_sub, Nat.Prime.pos Fact.out]
+      rw [this, show (-1 + p : ℤ) = -1 + (p : ℤ) by rfl]
+      rw [this]
+      simp
+    simp [this]
+  rw [this] at h ⊢
+  exact h
 
 /-
 ## 原根
@@ -198,7 +217,14 @@ theorem primitive_root_exists {p : ℕ} [Fact p.Prime] :
   /- 循环群有生成元 -/
   rcases h_cyclic with ⟨g, hg⟩
   use g
-  sorry  -- 需要证明 g 的阶为 p-1
+  /- 证明 g 的阶为 p-1 -/
+  have h_order : orderOf g = p - 1 := by
+    rw [orderOf_eq_card_of_cyclic_gcd_eq_one]
+    · rw [units_zmod_card p]
+      simp
+    · rw [units_zmod_card p]
+      simp
+  exact h_order
 
 /-
 ## 计算应用
@@ -224,7 +250,17 @@ theorem fast_mod_exp_correct {a p e : ℕ} [Fact p.Prime] (hpa : ¬p ∣ a) :
   dsimp [fast_mod_exp]
   have h_fermat : a ^ (p - 1) ≡ 1 [MOD p] := fermat_little_theorem a hpa
   /- 使用幂的周期性 -/
-  sorry
+  have h_exp : e = e % (p - 1) + (p - 1) * (e / (p - 1)) := by
+    rw [Nat.mod_add_div]
+  rw [h_exp, pow_add, pow_mul]
+  have h1 : a ^ (e % (p - 1)) * (a ^ (p - 1)) ^ (e / (p - 1)) ≡ a ^ (e % (p - 1)) * 1 ^ (e / (p - 1)) [MOD p] := by
+    apply Nat.ModEq.mul_left
+    apply Nat.ModEq.pow
+    exact h_fermat
+  have h2 : a ^ (e % (p - 1)) * 1 ^ (e / (p - 1)) = a ^ (e % (p - 1)) := by
+    simp
+  rw [h2] at h1
+  exact h1.symm
 
 end FermatLittleTheorem
 
@@ -252,7 +288,15 @@ example {p q e d m : ℕ} (hp : p.Prime) (hq : q.Prime) (hpq : p ≠ q)
     (h_e_coprime : Nat.Coprime e ((p-1)*(q-1)))
     (h_ed : e * d ≡ 1 [MOD (p-1)*(q-1)]) :
     (m ^ e) ^ d ≡ m [MOD p * q] := by
-  sorry  -- 需要完整的RSA正确性证明
+  /- RSA解密正确性的证明思路：
+     1. 由 ed ≡ 1 (mod φ(n))，存在 k 使得 ed = 1 + k·φ(n)
+     2. m^(ed) = m^(1 + k·φ(n)) = m · (m^φ(n))^k
+     3. 若 gcd(m, n) = 1，由欧拉定理 m^φ(n) ≡ 1 (mod n)
+     4. 所以 m^(ed) ≡ m (mod n)
+     5. 若 gcd(m, n) ≠ 1，需要分别考虑模 p 和模 q 的情况
+  -/
+  /- 这是一个复杂的数论证明，完整实现需要更多前置引理 -/
+  sorry
 ```
 
 ## 数学意义

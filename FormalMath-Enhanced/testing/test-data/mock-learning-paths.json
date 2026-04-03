@@ -1,0 +1,162 @@
+{
+  "description": "T3.1 自适应学习系统 - 模拟学习路径数据",
+  "generated_at": "2026-04-03T17:00:00+08:00",
+  "paths": [
+    {
+      "path_id": "path_001",
+      "user_id": "UG_001",
+      "algorithm": "astar",
+      "created_at": "2026-04-01T09:00:00Z",
+      "updated_at": "2026-04-03T16:00:00Z",
+      "status": "in_progress",
+      "progress_percentage": 62.5,
+      "target_concepts": ["formal_system", "proof_techniques"],
+      "nodes": [
+        {"node_id": "node_001", "concept_id": "logic_basics", "name": "逻辑基础", "status": "completed", "mastery": 0.90},
+        {"node_id": "node_002", "concept_id": "propositional_logic", "name": "命题逻辑", "status": "completed", "mastery": 0.85},
+        {"node_id": "node_003", "concept_id": "predicate_logic", "name": "谓词逻辑", "status": "completed", "mastery": 0.80},
+        {"node_id": "node_004", "concept_id": "natural_deduction", "name": "自然演绎", "status": "completed", "mastery": 0.75},
+        {"node_id": "node_005", "concept_id": "formal_system", "name": "形式系统", "status": "in_progress", "mastery": 0.60},
+        {"node_id": "node_006", "concept_id": "syntax_semantics", "name": "语法语义", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_007", "concept_id": "proof_theory", "name": "证明论", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_008", "concept_id": "proof_techniques", "name": "证明技巧", "status": "pending", "mastery": 0.00}
+      ],
+      "estimated_total_time": 480,
+      "actual_time_spent": 300
+    },
+    {
+      "path_id": "path_002",
+      "user_id": "UG_002",
+      "algorithm": "dp",
+      "created_at": "2026-04-01T10:00:00Z",
+      "updated_at": "2026-04-03T15:00:00Z",
+      "status": "completed",
+      "progress_percentage": 100,
+      "target_concepts": ["type_theory", "lambda_calculus"],
+      "nodes": [
+        {"node_id": "node_101", "concept_id": "set_theory", "name": "集合论", "status": "completed", "mastery": 0.95},
+        {"node_id": "node_102", "concept_id": "functions", "name": "函数", "status": "completed", "mastery": 0.92},
+        {"node_id": "node_103", "concept_id": "recursion", "name": "递归", "status": "completed", "mastery": 0.90},
+        {"node_id": "node_104", "concept_id": "lambda_calculus", "name": "λ演算", "status": "completed", "mastery": 0.88},
+        {"node_id": "node_105", "concept_id": "type_systems", "name": "类型系统", "status": "completed", "mastery": 0.85},
+        {"node_id": "node_106", "concept_id": "type_theory", "name": "类型论", "status": "completed", "mastery": 0.82}
+      ],
+      "estimated_total_time": 360,
+      "actual_time_spent": 340
+    },
+    {
+      "path_id": "path_003",
+      "user_id": "UG_003",
+      "algorithm": "astar",
+      "created_at": "2026-04-02T09:00:00Z",
+      "updated_at": "2026-04-03T14:00:00Z",
+      "status": "in_progress",
+      "progress_percentage": 33.3,
+      "target_concepts": ["formal_logic_basics"],
+      "nodes": [
+        {"node_id": "node_201", "concept_id": "math_foundation", "name": "数学基础", "status": "completed", "mastery": 0.70},
+        {"node_id": "node_202", "concept_id": "logic_basics", "name": "逻辑基础", "status": "completed", "mastery": 0.65},
+        {"node_id": "node_203", "concept_id": "propositional_logic", "name": "命题逻辑", "status": "in_progress", "mastery": 0.50},
+        {"node_id": "node_204", "concept_id": "truth_tables", "name": "真值表", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_205", "concept_id": "logical_equivalence", "name": "逻辑等价", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_206", "concept_id": "inference_rules", "name": "推理规则", "status": "pending", "mastery": 0.00}
+      ],
+      "estimated_total_time": 240,
+      "actual_time_spent": 80
+    },
+    {
+      "path_id": "path_004",
+      "user_id": "GR_001",
+      "algorithm": "astar",
+      "created_at": "2026-04-01T14:00:00Z",
+      "updated_at": "2026-04-03T17:00:00Z",
+      "status": "in_progress",
+      "progress_percentage": 75.0,
+      "target_concepts": ["coq_proof_assistant", "program_verification"],
+      "nodes": [
+        {"node_id": "node_301", "concept_id": "dependent_types", "name": "依赖类型", "status": "completed", "mastery": 0.95},
+        {"node_id": "node_302", "concept_id": "inductive_types", "name": "归纳类型", "status": "completed", "mastery": 0.92},
+        {"node_id": "node_303", "concept_id": "coq_basics", "name": "Coq基础", "status": "completed", "mastery": 0.90},
+        {"node_id": "node_304", "concept_id": "tactics", "name": "策略", "status": "completed", "mastery": 0.88},
+        {"node_id": "node_305", "concept_id": "coq_proof_assistant", "name": "Coq证明助手", "status": "in_progress", "mastery": 0.75},
+        {"node_id": "node_306", "concept_id": "hoare_logic", "name": "霍尔逻辑", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_307", "concept_id": "weakest_precondition", "name": "最弱前置条件", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_308", "concept_id": "program_verification", "name": "程序验证", "status": "pending", "mastery": 0.00}
+      ],
+      "estimated_total_time": 600,
+      "actual_time_spent": 450
+    },
+    {
+      "path_id": "path_005",
+      "user_id": "SL_001",
+      "algorithm": "astar",
+      "created_at": "2026-04-02T10:00:00Z",
+      "updated_at": "2026-04-03T16:30:00Z",
+      "status": "in_progress",
+      "progress_percentage": 50.0,
+      "target_concepts": ["coq_basics", "functional_programming"],
+      "nodes": [
+        {"node_id": "node_401", "concept_id": "functional_programming", "name": "函数式编程", "status": "completed", "mastery": 0.85},
+        {"node_id": "node_402", "concept_id": "higher_order_functions", "name": "高阶函数", "status": "completed", "mastery": 0.80},
+        {"node_id": "concept_id": "node_403", "concept_id": "type_inference", "name": "类型推断", "status": "completed", "mastery": 0.75},
+        {"node_id": "node_404", "concept_id": "coq_installation", "name": "Coq安装配置", "status": "completed", "mastery": 0.90},
+        {"node_id": "node_405", "concept_id": "coq_basics", "name": "Coq基础", "status": "in_progress", "mastery": 0.60},
+        {"node_id": "node_406", "concept_id": "basic_tactics", "name": "基础策略", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_407", "concept_id": "proof_scripts", "name": "证明脚本", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_408", "concept_id": "extraction", "name": "代码提取", "status": "pending", "mastery": 0.00}
+      ],
+      "estimated_total_time": 400,
+      "actual_time_spent": 200
+    },
+    {
+      "path_id": "path_006",
+      "user_id": "UG_005",
+      "algorithm": "dp",
+      "created_at": "2026-04-02T15:00:00Z",
+      "updated_at": "2026-04-03T15:30:00Z",
+      "status": "adjusted",
+      "progress_percentage": 45.0,
+      "target_concepts": ["formal_methods"],
+      "nodes": [
+        {"node_id": "node_501", "concept_id": "discrete_math", "name": "离散数学", "status": "completed", "mastery": 0.80},
+        {"node_id": "node_502", "concept_id": "logic_basics", "name": "逻辑基础", "status": "completed", "mastery": 0.75},
+        {"node_id": "node_503", "concept_id": "formal_specification", "name": "形式规约", "status": "completed", "mastery": 0.70},
+        {"node_id": "node_504", "concept_id": "model_checking", "name": "模型检测", "status": "in_progress", "mastery": 0.55},
+        {"node_id": "node_505", "concept_id": "temporal_logic", "name": "时序逻辑", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_506", "concept_id": "sat_solvers", "name": "SAT求解器", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_507", "concept_id": "formal_methods", "name": "形式化方法", "status": "pending", "mastery": 0.00},
+        {"node_id": "node_508", "concept_id": "verification_tools", "name": "验证工具", "status": "added", "mastery": 0.00}
+      ],
+      "adjustments": [
+        {
+          "adjustment_id": "adj_001",
+          "timestamp": "2026-04-03T15:30:00Z",
+          "reason": "掌握度低于预期，增加补充节点",
+          "added_nodes": ["verification_tools"],
+          "removed_nodes": []
+        }
+      ],
+      "estimated_total_time": 360,
+      "actual_time_spent": 162
+    }
+  ],
+  "path_adjustments": [
+    {
+      "adjustment_id": "adj_001",
+      "path_id": "path_006",
+      "user_id": "UG_005",
+      "trigger_reason": "struggling",
+      "trigger_details": {
+        "concept_id": "model_checking",
+        "mastery_score": 0.55,
+        "attempts": 3
+      },
+      "adjustments": {
+        "added_nodes": ["verification_tools"],
+        "removed_nodes": [],
+        "reordered_nodes": []
+      },
+      "created_at": "2026-04-03T15:30:00Z"
+    }
+  ]
+}

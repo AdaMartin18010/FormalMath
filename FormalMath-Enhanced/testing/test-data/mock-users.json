@@ -1,0 +1,220 @@
+{
+  "description": "FormalMath 系统大规模用户测试 - 模拟用户数据",
+  "generated_at": "2026-04-03T17:00:00+08:00",
+  "total_users": 18,
+  "user_categories": {
+    "undergraduate": 8,
+    "graduate": 6,
+    "self_learner": 4
+  },
+  "users": [
+    {
+      "user_id": "UG_001",
+      "type": "undergraduate",
+      "name": "张明",
+      "grade": "大二",
+      "major": "计算机科学",
+      "math_background": "中等",
+      "prior_knowledge": ["discrete_math", "calculus", "linear_algebra"],
+      "learning_style": "visual",
+      "test_scenario": ["T2.1", "T2.2", "T3.1"]
+    },
+    {
+      "user_id": "UG_002",
+      "type": "undergraduate",
+      "name": "李华",
+      "grade": "大三",
+      "major": "数学",
+      "math_background": "优秀",
+      "prior_knowledge": ["mathematical_logic", "abstract_algebra", "real_analysis"],
+      "learning_style": "abstract",
+      "test_scenario": ["T2.1", "T2.2", "T3.1"]
+    },
+    {
+      "user_id": "UG_003",
+      "type": "undergraduate",
+      "name": "王芳",
+      "grade": "大一",
+      "major": "软件工程",
+      "math_background": "基础",
+      "prior_knowledge": ["high_school_math"],
+      "learning_style": "practical",
+      "test_scenario": ["T2.1", "T3.1"]
+    },
+    {
+      "user_id": "UG_004",
+      "type": "undergraduate",
+      "name": "赵强",
+      "grade": "大四",
+      "major": "信息安全",
+      "math_background": "良好",
+      "prior_knowledge": ["cryptography", "number_theory"],
+      "learning_style": "theoretical",
+      "test_scenario": ["T2.2", "T3.1"]
+    },
+    {
+      "user_id": "UG_005",
+      "type": "undergraduate",
+      "name": "刘洋",
+      "grade": "大二",
+      "major": "人工智能",
+      "math_background": "中等",
+      "prior_knowledge": ["probability", "statistics", "optimization"],
+      "learning_style": "visual",
+      "test_scenario": ["T2.1", "T2.2", "T3.1"]
+    },
+    {
+      "user_id": "UG_006",
+      "type": "undergraduate",
+      "name": "陈静",
+      "grade": "大三",
+      "major": "数据科学",
+      "math_background": "良好",
+      "prior_knowledge": ["statistics", "machine_learning"],
+      "learning_style": "practical",
+      "test_scenario": ["T2.1", "T3.1"]
+    },
+    {
+      "user_id": "UG_007",
+      "type": "undergraduate",
+      "name": "杨帆",
+      "grade": "大一",
+      "major": "网络安全",
+      "math_background": "基础",
+      "prior_knowledge": ["programming"],
+      "learning_style": "hands_on",
+      "test_scenario": ["T2.1", "T2.2"]
+    },
+    {
+      "user_id": "UG_008",
+      "type": "undergraduate",
+      "name": "周梅",
+      "grade": "大四",
+      "major": "应用数学",
+      "math_background": "优秀",
+      "prior_knowledge": ["functional_analysis", "topology", "measure_theory"],
+      "learning_style": "abstract",
+      "test_scenario": ["T2.2", "T3.1"]
+    },
+    {
+      "user_id": "GR_001",
+      "type": "graduate",
+      "name": "吴磊",
+      "grade": "研一",
+      "major": "形式化方法",
+      "math_background": "优秀",
+      "prior_knowledge": ["type_theory", "lambda_calculus", "automated_reasoning"],
+      "learning_style": "theoretical",
+      "research_interest": ["proof_assistants", "program_verification"],
+      "test_scenario": ["T2.1", "T2.2", "T3.1"]
+    },
+    {
+      "user_id": "GR_002",
+      "type": "graduate",
+      "name": "郑雪",
+      "grade": "研二",
+      "major": "逻辑学",
+      "math_background": "优秀",
+      "prior_knowledge": ["modal_logic", "set_theory", "model_theory"],
+      "learning_style": "abstract",
+      "research_interest": ["foundations_of_math", "philosophy_of_logic"],
+      "test_scenario": ["T2.1", "T2.2", "T3.1"]
+    },
+    {
+      "user_id": "GR_003",
+      "type": "graduate",
+      "name": "孙鹏",
+      "grade": "研一",
+      "major": "计算机系统",
+      "math_background": "良好",
+      "prior_knowledge": ["operating_systems", "distributed_systems"],
+      "learning_style": "practical",
+      "research_interest": ["distributed_consensus", "formal_verification"],
+      "test_scenario": ["T2.1", "T3.1"]
+    },
+    {
+      "user_id": "GR_004",
+      "type": "graduate",
+      "name": "林琳",
+      "grade": "研三",
+      "major": "理论计算机科学",
+      "math_background": "优秀",
+      "prior_knowledge": ["complexity_theory", "computability", "category_theory"],
+      "learning_style": "abstract",
+      "research_interest": ["type_systems", "semantics"],
+      "test_scenario": ["T2.2", "T3.1"]
+    },
+    {
+      "user_id": "GR_005",
+      "type": "graduate",
+      "name": "黄晓明",
+      "grade": "研二",
+      "major": "软件工程",
+      "math_background": "中等",
+      "prior_knowledge": ["software_testing", "requirements_engineering"],
+      "learning_style": "visual",
+      "research_interest": ["specification_languages", "model_checking"],
+      "test_scenario": ["T2.1", "T2.2", "T3.1"]
+    },
+    {
+      "user_id": "GR_006",
+      "type": "graduate",
+      "name": "许文",
+      "grade": "研一",
+      "major": "人工智能",
+      "math_background": "良好",
+      "prior_knowledge": ["deep_learning", "reinforcement_learning"],
+      "learning_style": "hands_on",
+      "research_interest": ["neural_network_verification", "AI_safety"],
+      "test_scenario": ["T2.1", "T3.1"]
+    },
+    {
+      "user_id": "SL_001",
+      "type": "self_learner",
+      "name": "马云飞",
+      "occupation": "软件工程师",
+      "experience": "5年",
+      "math_background": "中等",
+      "prior_knowledge": ["programming", "algorithms"],
+      "learning_style": "practical",
+      "learning_goal": "学习Coq用于程序验证",
+      "test_scenario": ["T2.1", "T3.1"]
+    },
+    {
+      "user_id": "SL_002",
+      "type": "self_learner",
+      "name": "韩雪",
+      "occupation": "高中教师",
+      "experience": "8年",
+      "math_background": "良好",
+      "prior_knowledge": ["high_school_math", "mathematical_pedagogy"],
+      "learning_style": "visual",
+      "learning_goal": "了解形式化数学教育方法",
+      "test_scenario": ["T2.1", "T2.2"]
+    },
+    {
+      "user_id": "SL_003",
+      "type": "self_learner",
+      "name": "江涛",
+      "occupation": "研究员",
+      "experience": "3年",
+      "math_background": "优秀",
+      "prior_knowledge": ["physics", "quantum_computing"],
+      "learning_style": "theoretical",
+      "learning_goal": "量子计算的形式化验证",
+      "test_scenario": ["T2.2", "T3.1"]
+    },
+    {
+      "user_id": "SL_004",
+      "type": "self_learner",
+      "name": "冯小晓",
+      "occupation": "自由职业",
+      "experience": "初学者",
+      "math_background": "基础",
+      "prior_knowledge": ["basic_programming"],
+      "learning_style": "hands_on",
+      "learning_goal": "入门形式化数学",
+      "test_scenario": ["T2.1", "T3.1"]
+    }
+  ]
+}

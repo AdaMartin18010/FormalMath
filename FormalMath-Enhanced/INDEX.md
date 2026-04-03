@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 📚 FormalMath-Enhanced 中央索引
 
 > **一站式导航系统** | 快速定位任何数学内容

@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # Dedekind整环性质 (Dedekind Domain Properties)
 
 ## Mathlib4 引用

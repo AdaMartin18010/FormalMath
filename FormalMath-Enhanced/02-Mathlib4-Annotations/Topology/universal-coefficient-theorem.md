@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 万有系数定理 (Universal Coefficient Theorem)
 
 ## Mathlib4 引用

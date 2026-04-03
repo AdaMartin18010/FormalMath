@@ -1,3 +1,8 @@
+---
+msc_primary: 00A99
+processed_at: '2026-04-03'
+---
+
 # 与FormalMath主项目链接建议
 
 > **目标**: 将现代数学前沿模块与FormalMath主项目无缝集成
