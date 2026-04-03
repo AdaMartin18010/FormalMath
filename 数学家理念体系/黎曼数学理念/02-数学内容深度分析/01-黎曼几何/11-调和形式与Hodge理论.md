@@ -32,7 +32,9 @@
     - [6.1 非紧流形](#61-非紧流形)
     - [6.2 代数几何](#62-代数几何)
     - [6.3 数学物理](#63-数学物理)
-  - [七、总结](#七总结)
+  - [八、数学公式总结](#八数学公式总结)
+    - [核心公式](#核心公式)
+  - [九、总结](#九总结)
     - [Hodge理论的历史地位](#hodge理论的历史地位)
 
 ---
@@ -51,6 +53,7 @@ $$*: \Omega^k(M) \to \Omega^{n-k}(M)$$
 $$\omega \wedge *\eta = \langle \omega, \eta \rangle \text{vol}_g$$
 
 其中：
+
 - $\langle \cdot, \cdot \rangle$：由度规诱导的内积
 - $\text{vol}_g$：体积形式
 
@@ -76,6 +79,7 @@ $$d^*: \Omega^k(M) \to \Omega^{k-1}(M)$$
 $$d^* = (-1)^{n(k+1)+1} * d *$$
 
 **性质**：
+
 - $d^*$是$d$的形式伴随
 - $(d^*)^* = d$（在紧致流形上）
 
@@ -141,11 +145,13 @@ $$\mathcal{H}^k(M) = \{\omega \in \Omega^k(M) : \Delta \omega = 0\}$$
 $$\Omega^k(M) = \mathcal{H}^k(M) \oplus d\Omega^{k-1}(M) \oplus d^*\Omega^{k+1}(M)$$
 
 其中：
+
 - $\mathcal{H}^k(M)$：调和$k$形式空间
 - $d\Omega^{k-1}(M)$：恰当形式（$d$的像）
 - $d^*\Omega^{k+1}(M)$：余恰当形式（$d^*$的像）
 
 **正交性**：
+
 - $\mathcal{H}^k \perp d\Omega^{k-1}$
 - $\mathcal{H}^k \perp d^*\Omega^{k+1}$
 - $d\Omega^{k-1} \perp d^*\Omega^{k+1}$
@@ -302,6 +308,7 @@ Kähler流形是复流形，具有：
 $$\Omega^k(M, \mathbb{C}) = \bigoplus_{p+q=k} \Omega^{p,q}(M)$$
 
 其中：
+
 - $\Omega^{p,q}$：$(p,q)$形式（$p$个$dz$，$q$个$d\bar{z}$）
 
 **外微分分解**：
@@ -309,6 +316,7 @@ $$\Omega^k(M, \mathbb{C}) = \bigoplus_{p+q=k} \Omega^{p,q}(M)$$
 $$d = \partial + \bar{\partial}$$
 
 其中：
+
 - $\partial$：增加$(p,q) \to (p+1,q)$
 - $\bar{\partial}$：增加$(p,q) \to (p,q+1)$
 
@@ -323,10 +331,12 @@ $$d = \partial + \bar{\partial}$$
 $$\mathcal{H}^k(M, \mathbb{C}) = \bigoplus_{p+q=k} \mathcal{H}^{p,q}(M)$$
 
 其中：
+
 - $\mathcal{H}^k(M, \mathbb{C})$：调和$k$形式（复值）
 - $\mathcal{H}^{p,q}(M)$：调和$(p,q)$形式
 
 **性质**：
+
 - $\mathcal{H}^{p,q} = \overline{\mathcal{H}^{q,p}}$（复共轭）
 - $\mathcal{H}^{p,q} \cong H^{p,q}_{\bar{\partial}}(M)$（Dolbeault上同调）
 
@@ -347,6 +357,7 @@ $$h^{p,q}(M) = \dim \mathcal{H}^{p,q}(M)$$
 $$\Delta = 2\Delta_{\bar{\partial}} = 2\Delta_{\partial}$$
 
 其中：
+
 - $\Delta_{\bar{\partial}} = \bar{\partial}\bar{\partial}^* + \bar{\partial}^*\bar{\partial}$
 - $\Delta_{\partial} = \partial\partial^* + \partial^*\partial$
 
@@ -385,6 +396,7 @@ Hodge理论在镜像对称、弦论等现代数学物理中有深刻应用。
 $$\Delta \omega = \nabla^*\nabla \omega + R(\omega)$$
 
 其中：
+
 - $\nabla^*\nabla$：协变Laplace算子
 - $R(\omega)$：由曲率张量作用在$\omega$上
 

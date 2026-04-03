@@ -33,7 +33,9 @@
     - [7.1 与曲率的关系](#71-与曲率的关系)
     - [7.2 与测地线的关系](#72-与测地线的关系)
     - [7.3 与Hodge理论的关系](#73-与hodge理论的关系)
-  - [八、总结](#八总结)
+  - [九、数学公式总结](#九数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、总结](#十总结)
     - [几何分析与PDE的历史地位](#几何分析与pde的历史地位)
 
 ---
@@ -76,6 +78,7 @@
 $$\Delta f = \text{div}(\nabla f) = \frac{1}{\sqrt{g}} \frac{\partial}{\partial x^i}\left(\sqrt{g} g^{ij} \frac{\partial f}{\partial x^j}\right)$$
 
 其中：
+
 - $g = \det(g_{ij})$
 - $g^{ij}$：度规的逆
 - $\nabla f$：梯度
@@ -149,6 +152,7 @@ $$\tau(f)^\alpha = \Delta f^\alpha + g^{ij} \Gamma^\alpha_{\beta\gamma}(f) \frac
 $$\Delta f^\alpha + g^{ij} \Gamma^\alpha_{\beta\gamma}(f) \frac{\partial f^\beta}{\partial x^i} \frac{\partial f^\gamma}{\partial x^j} = 0$$
 
 其中：
+
 - $\Delta$：$M$上的Laplace-Beltrami算子
 - $\Gamma^\alpha_{\beta\gamma}$：$N$上的Christoffel符号
 
@@ -201,6 +205,7 @@ $$\Delta f^\alpha + g^{ij} \Gamma^\alpha_{\beta\gamma}(f) \frac{\partial f^\beta
 $$\frac{\partial u}{\partial t} = \Delta u$$
 
 其中：
+
 - $u(x, t)$：函数
 - $\Delta$：Laplace-Beltrami算子
 - $t$：时间参数
@@ -228,6 +233,7 @@ $$\frac{\partial K}{\partial t} = \Delta_x K, \quad \lim_{t \to 0} K(x, y, t) = 
 $$K(x, y, t) \sim (4\pi t)^{-n/2} e^{-d^2(x,y)/4t} \left[a_0(x,y) + a_1(x,y)t + \cdots\right]$$
 
 其中：
+
 - $d(x, y)$：测地距离
 - $a_i(x, y)$：由曲率决定的系数
 
