@@ -1,15 +1,15 @@
-name = "FormalMathLib"
+name = "FormalMathLean4"
 version = "0.1.0"
-defaultTargets = ["FormalMathLib"]
+defaultTargets = ["FormalMathLean4"]
 
 [[lean_lib]]
-name = "FormalMathLib"
+name = "FormalMathLean4"
 
 [[require]]
 name = "mathlib"
 scope = "leanprover-community"
-version = "v4.29.0"
+version = "v4.19.0"
 
 [[lean_exe]]
-name = "FormalMathLib"
+name = "FormalMathLean4"
 root = "Main"
