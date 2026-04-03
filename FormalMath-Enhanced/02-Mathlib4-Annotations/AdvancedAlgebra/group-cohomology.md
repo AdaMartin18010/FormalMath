@@ -8,24 +8,24 @@ import Mathlib.RepresentationTheory.GroupCohomology.Basic
 namespace RepresentationTheory
 
 /-- 群上同调的定义 -/
-theorem group_cohomology_def 
+theorem group_cohomology_def
     {G : Type*} [Group G] [Fintype G]
     {k : Type*} [CommRing k]
     (V : Type*) [AddCommGroup V] [Module k V]
     [Representation k G V] (n : ℕ) :
-    GroupCohomology H^n G V = 
-      Ext k n (ModuleCat.of k (MonoidAlgebra k G)) 
+    GroupCohomology H^n G V =
+      Ext k n (ModuleCat.of k (MonoidAlgebra k G))
               (ModuleCat.of k V) := by
   -- 群上同调是平凡模的Ext
   rfl
 
 /-- 低维群上同调的解释 -/
-theorem low_dimensional_cohomology 
+theorem low_dimensional_cohomology
     {G : Type*} [Group G] [Fintype G]
     {k : Type*} [CommRing k]
     (V : Type*) [AddCommGroup V] [Module k V]
     [Representation k G V] :
-    H^0 G V = V^G ∧ 
+    H^0 G V = V^G ∧
     H^1 G V = Derivation G V ⧸ InnerDerivation G V := by
   -- H^0是不变子，H^1是外导子商内导子
   constructor
@@ -53,6 +53,7 @@ end RepresentationTheory
 $$\cdots \to \mathbb{Z}[G^{n+1}] \to \mathbb{Z}[G^n] \to \cdots \to \mathbb{Z}[G] \to \mathbb{Z} \to 0$$
 
 **低维解释**：
+
 - H^0(G, V) = V^G（不变子模）
 - H^1(G, V) = Der(G, V) / Ider(G, V)（导子商内导子）
 - H^2(G, V) 分类 V 被 G 的扩张

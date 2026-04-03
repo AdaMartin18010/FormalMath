@@ -18,13 +18,15 @@
 
 **例 1.2.1** (Nerve of a Category)
 
-对于普通范畴 $\mathcal{C}$，其** nerve ** $N\mathcal{C}$ 是一个拟范畴。
+对于普通范畴 $\mathcal{C}$，其**nerve** $N\mathcal{C}$ 是一个拟范畴。
 
 构造：
+
 - $(N\mathcal{C})_n = \{\text{长度为 } n \text{ 的态射链}\}$
 - 面映射和退化映射由复合和恒等给出
 
 **验证拟范畴条件**：
+
 - 对于 $0 < i < n$，填充 $n$-单形对应于选择适当的复合
 - 对于普通范畴，复合是唯一的，因此填充唯一
 
@@ -37,6 +39,7 @@ $$\text{Sing}(X)_n = C(\Delta^n_{\text{top}}, X)$$
 **定理**：$\text{Sing}(X)$ 是一个拟范畴（实际上是Kan复形，因此也是拟范畴）。
 
 *证明概要*：
+
 - 拓扑单形的角可以被填充（因为 $\Delta^n_{\text{top}}$ 是可缩的）
 - 通过连续性，这诱导了 $\text{Sing}(X)$ 上的填充
 
@@ -45,6 +48,7 @@ $$\text{Sing}(X)_n = C(\Delta^n_{\text{top}}, X)$$
 设 $\text{sSet}$ 是单纯集合的范畴。定义 $N^{\text{hc}}(\text{sSet})$ 为**同伦凝聚nerve**。
 
 **性质**：
+
 - 对象：单纯集合
 - 1-态射：单纯映射
 - 2-态射：单纯同伦
@@ -66,7 +70,7 @@ $$\text{Sing}(X)_n = C(\Delta^n_{\text{top}}, X)$$
 
 **具体构造**：
 
-考虑范畴 $\text{Ch}(\mathcal{A})$ 的** Dwyer-Kan 局部化**在拟范畴的意义下：
+考虑范畴 $\text{Ch}(\mathcal{A})$ 的**Dwyer-Kan 局部化**在拟范畴的意义下：
 $$D_\infty(\mathcal{A}) = N^{\text{hc}}(\text{Ch}(\mathcal{A})[W^{-1}])$$
 其中 $W$ 是拟同构的类。
 
@@ -75,6 +79,7 @@ $$D_\infty(\mathcal{A}) = N^{\text{hc}}(\text{Ch}(\mathcal{A})[W^{-1}])$$
 每个**Kan复形**都是一个∞-群胚（所有1-态射可逆的∞-范畴）。
 
 **具体例子**：
+
 - **Eilenberg-MacLane空间**：$K(A, n)$ 对应只有一个非平凡同伦群 $\pi_n = A$ 的∞-群胚
 - **球面**：$\text{Sing}(S^n)$ 是基本群非平凡的∞-群胚
 
@@ -108,6 +113,7 @@ $$\infty\text{-}\mathbf{Gpd} \simeq \mathbf{Top}[W^{-1}]$$
 **例 2.2.1** (圆的基本群胚)
 
 拓扑空间 $S^1$ 对应∞-群胚具有以下性质：
+
 - 对象：单点（因为 $S^1$ 连通）
 - 自同态空间：$\text{Map}(*, *) \simeq \Omega S^1 \simeq \mathbb{Z}$
 - 作为离散群，这给出：$B\mathbb{Z} = $ 带一个对象，自同态为 $\mathbb{Z}$ 的群胚
@@ -120,6 +126,7 @@ $$\infty\text{-}\mathbf{Gpd} \simeq \mathbf{Top}[W^{-1}]$$
 $$\pi_i = \begin{cases} A & i = n \\ 0 & \text{其他} \end{cases}$$
 
 在∞-群胚的语言中：
+
 - $n$-态射空间同构于 $A$
 - 所有其他非平凡的同伦群消失
 
@@ -154,11 +161,13 @@ $$\cdots \to C_n \to C_{n-1} \to \cdots \to C_2 \to C_1 \rightrightarrows C_0$$
 **定义** (稳定∞-范畴)
 
 一个∞-范畴 $\mathcal{C}$ 是**稳定的**，如果：
+
 1. 有零对象 $0$
 2. 每个态射有纤维和余纤维
 3. 三角形既是纤维序列又是余纤维序列
 
 **等价刻画**：
+
 - 存在悬挂等价 $\Sigma: \mathcal{C} \to \mathcal{C}$
 - $\mathcal{C}$ 是**预可加**的
 - 序列 $A \to B \to C$ 是纤维序列当且仅当 $C \to \Sigma A$ 是纤维序列（旋转公理）
@@ -194,11 +203,13 @@ $$\pi_n^{\text{st}} = \pi_n(\mathbb{S}) = \text{Ext}^{-n}_{\mathbf{Sp}}(\mathbb{
 设 $R$ 是环。定义 $D_\infty(R)$ 为 $R$-模链复形的导出∞-范畴。
 
 **构造**：
+
 1. 从 $\text{Ch}(R)$ 开始（链复形的普通范畴）
 2. 取 Dwyer-Kan 局部化在拟同构处
 3. 结果是一个稳定∞-范畴
 
 **稳定性验证**：
+
 - 零对象：零复形
 - 纤维/余纤维：映射锥/映射柱
 - 旋转公理：来自长正合序列
@@ -224,18 +235,21 @@ $$\pi_n^{\text{st}} = \pi_n(\mathbb{S}) = \text{Ext}^{-n}_{\mathbf{Sp}}(\mathbb{
 稳定∞-范畴 $\mathcal{C}$ 的**同伦范畴** $h\mathcal{C}$ 自然具有三角范畴的结构。
 
 **三角结构**：
+
 - **平移函子** $\Sigma$ 来自稳定∞-范畴的悬挂
-- ** distinguished triangles**：来自纤维序列 $A \to B \to C$
+- **distinguished triangles**：来自纤维序列 $A \to B \to C$
 
 ### 4.2 具体例子
 
 **例 4.2.1** ($D_\infty(R)$ vs $D(R)$)
 
 对于环 $R$：
+
 - $D_\infty(R)$：稳定∞-范畴
 - $hD_\infty(R) \cong D(R)$：经典导出范畴
 
 **联系**：
+
 - 对象相同（拟同构类）
 - $D(R)$ 丢失高阶信息（Ext的导出结构）
 - $D_\infty(R)$ 保留完整的映射空间
@@ -246,6 +260,7 @@ $$\pi_n^{\text{st}} = \pi_n(\mathbb{S}) = \text{Ext}^{-n}_{\mathbf{Sp}}(\mathbb{
 $$\text{Map}_{D_\infty(R)}(M, N[n]) = \text{Ext}^n_R(M, N)$$
 
 但 $D_\infty(R)$ 还包含：
+
 - $\pi_k(\text{Map}(M, N[n]))$ 对于 $k > 0$
 - 这些对应于高阶Ext群
 
@@ -271,6 +286,7 @@ $$\pi_n(\text{Map}_{\mathbf{Sp}}(E, F)) = [E, F]_{-n}$$
 **关键优势**：
 
 在导出∞-范畴中，可以严格地定义：
+
 - 导出张量积 $-\otimes^L-$
 - 导出Hom $R\text{Hom}(-,-)$
 - 这些满足真正的函子性（而非导出意义下）
@@ -301,6 +317,7 @@ $$\mathcal{M}_{\text{dg}} = \text{Stab}(\text{Cat}_{\text{dg}}^{\text{perf}})$$
 在拓扑场论中，**因子化代数**自然构成∞-范畴。
 
 **具体例子**：
+
 - 在 $\mathbb{R}^n$ 上，局部常值因子化代数 $\leftrightarrow$ $E_n$-代数
 - 这是 Lurie 对拓扑场论的代数描述
 
@@ -309,6 +326,7 @@ $$\mathcal{M}_{\text{dg}} = \text{Stab}(\text{Cat}_{\text{dg}}^{\text{perf}})$$
 **例 5.3.1** (谱概形)
 
 Lurie的导出代数几何：
+
 - **谱环**：$E_\infty$-环谱
 - **谱概形**：局部是仿射的环化∞-topos
 - **例子**：导出射影空间 $\mathbb{P}^n_{\text{der}}$

@@ -12,10 +12,11 @@
 
 证明：一个拓扑空间是profinite的当且仅当它是：
 (a) 紧的
-(b) Hausdorff的  
+(b) Hausdorff的
 (c) 全不连通的
 
-**提示**: 
+**提示**:
+
 - (⇒) 方向：有限离散空间的投影极限保持这些性质
 - (⇐) 方向：使用Stone对偶性
 
@@ -67,7 +68,7 @@ $$\text{Hom}_{\text{Cond}}(\underline{S}, \underline{T}) \cong C(S, T)$$
 
 **问题 1.3.2** (正合序列)
 
-在凝聚阿贝尔群范畴中，序列 
+在凝聚阿贝尔群范畴中，序列
 $$0 \to A \to B \to C \to 0$$
 是正合的当且仅当对于每个 profinite set $S$，序列
 $$0 \to A(S) \to B(S) \to C(S) \to 0$$
@@ -303,7 +304,7 @@ $$\underline{S \times T} \cong \underline{S} \times \underline{T}$$
 └── 理解 profinite sets 和层条件
 
 进阶阶段
-├── 完成练习 2.1 - 2.3  
+├── 完成练习 2.1 - 2.3
 ├── 阅读 Clausen-Scholze 解析几何讲义
 └── 尝试理解液体张量积的构造
 

@@ -9,6 +9,7 @@
 ### 1.1 项目目标
 
 Mathlib4中的∞-范畴论形式化旨在：
+
 1. 建立拟范畴 (quasicategories) 的基础理论
 2. 开发∞-函子和∞-自然变换的理论
 3. 形式化稳定∞-范畴的核心结果
@@ -46,26 +47,29 @@ def innerHorn (n : ℕ) (i : Fin (n + 1)) (h : 0 < i ∧ i < n) : SSet := ...
 
 -- 拟范畴定义
 class Quasicategory (X : SSet) where
-  innerKan : ∀ (n : ℕ) (i : Fin (n + 1)) (h : 0 < i ∧ i < n) 
-    (f : innerHorn n i h ⟶ X), 
+  innerKan : ∀ (n : ℕ) (i : Fin (n + 1)) (h : 0 < i ∧ i < n)
+    (f : innerHorn n i h ⟶ X),
     ∃ (g : simplex n ⟶ X), f = hornToSimplex i h ≫ g
 ```
 
 **已实现定理**:
 
 1. **范畴的Nerve是拟范畴**:
+
 ```lean
 theorem nerve_is_quasicategory (C : Type u) [Category.{v} C] :
   Quasicategory (nerve C) := ...
 ```
 
-2. **Kan复形是拟范畴**:
+1. **Kan复形是拟范畴**:
+
 ```lean
 theorem kan_complex_is_quasicategory (X : SSet) [KanComplex X] :
   Quasicategory X := ...
 ```
 
-3. **填充的唯一性条件**:
+1. **填充的唯一性条件**:
+
 ```lean
 def isInnerAnodyne {X Y : SSet} (f : X ⟶ Y) := ...
 ```
@@ -123,11 +127,12 @@ def InfinityNatTrans {X Y : SSet} [Quasicategory X] [Quasicategory Y]
 -- Joyal的等价性判定
 theorem joyal_equivalence_criterion {X Y : SSet} [Quasicategory X] [Quasicategory Y]
   (f : X ⟶ Y) :
-  IsCategoricalEquivalence f ↔ 
+  IsCategoricalEquivalence f ↔
     (IsWeakHomotopyEquivalence f ∧ IsFullyFaithful f) := ...
 ```
 
 **当前进展**:
+
 - ✅ 定义了范畴等价
 - ✅ 定义了弱同伦等价
 - 🔄 证明等价性判定的核心方向
@@ -162,6 +167,7 @@ theorem grothendieck_hypothesis :
 ```
 
 **当前挑战**:
+
 1. 局部化的形式化需要发展模型范畴理论
 2. 同伦单位的证明涉及复杂的技术
 3. 与代数拓扑已有结果的整合
@@ -169,10 +175,12 @@ theorem grothendieck_hypothesis :
 ### 3.3 与拓扑空间的联系
 
 **相关文件**:
+
 - `Mathlib/AlgebraicTopology/SimplicialSet.lean`
 - `Mathlib/AlgebraicTopology/GeometricRealization.lean`
 
 **状态**:
+
 - ✅ 奇异单纯集合定义完成
 - ✅ 几何实现定义完成
 - ✅ 基本伴随关系证明完成
@@ -204,6 +212,7 @@ def triangulatedStructure (C : SSet) [StableInfinityCategory C] :
 ```
 
 **依赖项**:
+
 - 纤维序列的完整理论
 - 同伦极限/余极限的形式化
 - 预可加∞-范畴
@@ -226,6 +235,7 @@ theorem homotopy_category_iso_derived_category (C : Type u) [Category.{v} C] [Ab
 ```
 
 **技术挑战**:
+
 1. Dwyer-Kan局部化的形式化
 2. 与已有同调代数结果的兼容
 3. 计算效率的考虑
@@ -293,11 +303,13 @@ theorem homotopy_category_iso_derived_category (C : Type u) [Category.{v} C] [Ab
 ### 5.3 性能考虑
 
 **当前优化**:
+
 - 使用 `reducible` 定义简化计算
 - 延迟证明构造（lazy proof construction）
 - 缓存常用的同伦计算
 
 **未来优化**:
+
 - 专门的数据结构表示拟范畴
 - 增量式填充算法
 - 与计算代数系统的接口
@@ -318,6 +330,7 @@ AlgebraicTopology/
 ```
 
 **联系点**:
+
 - Kan复形是特殊的拟范畴
 - 奇异函子是∞-群胚的主要来源
 - 同伦群可以从∞-群胚读出
@@ -332,6 +345,7 @@ AlgebraicGeometry/
 ```
 
 **联系点**:
+
 - 导出∞-范畴是现代导出代数几何的基础
 - 拟凝聚层的∞-范畴
 - 完美的复形作为稳定∞-范畴
@@ -339,6 +353,7 @@ AlgebraicGeometry/
 ### 6.3 同伦类型论 (HoTT)
 
 **潜在联系**:
+
 - HoTT中的类型可以解释为∞-群胚
 - 单值公理与∞-范畴论的关系
 - 立方体类型论与单纯类型的对应
@@ -352,6 +367,7 @@ AlgebraicGeometry/
 ### 7.1 如何参与
 
 1. **阅读现有代码**:
+
    ```bash
    lake exe cache get
    lake build
@@ -369,16 +385,19 @@ AlgebraicGeometry/
 ### 7.2 优先任务
 
 **高优先级** (2025 Q2):
+
 - [ ] 完成等价性判定定理
 - [ ] 形式化∞-群胚的基本群
 - [ ] 证明Grothendieck假设的核心部分
 
 **中优先级** (2025 Q3-Q4):
+
 - [ ] 预可加∞-范畴
 - [ ] 稳定∞-范畴的定义和基本性质
 - [ ] 同伦极限/余极限
 
 **长期目标** (2026+):
+
 - [ ] 完整的导出∞-范畴理论
 - [ ] 与代数几何的深度整合
 - [ ] 计算工具开发
@@ -413,6 +432,7 @@ AlgebraicGeometry/
 ### 9.1 当前成就
 
 ✅ **已完成**:
+
 - 拟范畴的基础定义和基本性质
 - 内Kan条件的形式化
 - 映射空间的构造
@@ -422,6 +442,7 @@ AlgebraicGeometry/
 ### 9.2 近期目标 (2025)
 
 🔄 **进行中**:
+
 - 等价性理论的完整形式化
 - ∞-群胚理论的发展
 - Grothendieck假设的证明
@@ -430,6 +451,7 @@ AlgebraicGeometry/
 ### 9.3 长期愿景 (2026+)
 
 📋 **计划中**:
+
 - 完整的稳定∞-范畴理论
 - 导出∞-范畴及其应用
 - 与代数几何的整合

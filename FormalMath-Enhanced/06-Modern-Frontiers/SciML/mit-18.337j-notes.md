@@ -219,14 +219,14 @@ end
 function pde_residual(model, x, t, nu)
     xt = hcat(x, t)
     u = model(xt)
-    
+
     # 计算导数
     u_t = Zygote.gradient(xt -> sum(model(xt)), xt)[1][:, 2]
     u_x = Zygote.gradient(xt -> sum(model(xt)), xt)[1][:, 1]
     u_xx = Zygote.gradient(x -> sum(
         Zygote.gradient(xt -> sum(model(xt)), hcat(x, t))[1][:, 1]
     ), x)[1]
-    
+
     # Burgers方程残差: u_t + u*u_x - nu*u_xx = 0
     return u_t + u.*u_x - nu*u_xx
 end
@@ -242,11 +242,11 @@ function compute_adaptive_weights(model, x_f, t_f, x_bc, t_bc, u_bc)
     # 计算各损失的梯度范数
     grad_f = Zygote.gradient(() -> loss_pde(model, x_f, t_f), Flux.params(model))
     grad_bc = Zygote.gradient(() -> loss_bc(model, x_bc, t_bc, u_bc), Flux.params(model))
-    
+
     # 自适应权重
     λ_f = 1.0 / mean([norm(g) for g in grad_f])
     λ_bc = 1.0 / mean([norm(g) for g in grad_bc])
-    
+
     return λ_f, λ_bc
 end
 
@@ -263,21 +263,21 @@ end
 function causal_loss(model, x, t, nu, epsilon=1e-5)
     n_time = length(unique(t))
     causal_weights = ones(n_time)
-    
+
     total_loss = 0.0
     for i in 1:n_time
         mask = (t .== sorted_times[i])
         residual = pde_residual(model, x[mask], t[mask], nu)
         loss_i = mean(residual.^2)
-        
+
         # 累积因果权重
         if i > 1 && loss_i > epsilon
             causal_weights[i:end] .*= exp(-loss_i)
         end
-        
+
         total_loss += causal_weights[i] * loss_i
     end
-    
+
     return total_loss
 end
 ```
@@ -359,15 +359,15 @@ decoder = Chain(
 function latent_ode_forward(x0, t)
     # 编码
     z0 = encoder(x0)
-    
+
     # 在隐空间中解ODE
     function dynamics(z, p, t)
         return latent_dynamics(z)
     end
-    
+
     prob = ODEProblem(dynamics, z0, (t[1], t[end]))
     sol = solve(prob, Tsit5(), saveat=t)
-    
+
     # 解码
     return decoder.(sol.u)
 end
@@ -399,17 +399,17 @@ function logpdf_cnf(x, model)
         trace_jacobian = tr(jacobian(z -> model(z, p, t), z))
         return vcat(dz, -trace_jacobian)
     end
-    
+
     u0 = vcat(x, [0.0])
     prob = ODEProblem(augmented_dynamics, u0, (0.0, 1.0))
     sol = solve(prob, Tsit5())
-    
+
     z1 = sol.u[end][1:end-1]
     log_det = sol.u[end][end]
-    
+
     # 标准高斯先验的对数概率
     log_pz = logpdf(MvNormal(zeros(2), I), z1)
-    
+
     return log_pz + log_det
 end
 ```
@@ -440,12 +440,12 @@ Flux.@layer SpectralConv
 function (layer::SpectralConv)(x)
     # FFT
     x_ft = fft(x, 2:ndims(x))
-    
+
     # 乘以低模式权重
     out_ft = zero(x_ft)
     inds = [1:m for m in layer.modes]
     out_ft[inds..., :] = x_ft[inds..., :] .* layer.weights
-    
+
     # IFFT
     return real(ifft(out_ft, 2:ndims(x)))
 end
@@ -454,7 +454,7 @@ end
 FNO = Chain(
     # 提升到高维空间
     Conv((1,), 1 => 32),
-    
+
     # Fourier层
     SkipConnection(Chain(
         SpectralConv(32, (16,)),
@@ -471,7 +471,7 @@ FNO = Chain(
     SkipConnection(Chain(
         SpectralConv(32, (16,)),
     ), +),
-    
+
     # 投影回输出空间
     Conv((1,), 32 => 1)
 )
@@ -496,7 +496,7 @@ end
 # 训练循环
 function train_fno(model, train_loader, epochs=500)
     opt_state = Flux.setup(Adam(1e-3), model)
-    
+
     for epoch in 1:epochs
         losses = []
         for (a, u) in train_loader
@@ -504,16 +504,16 @@ function train_fno(model, train_loader, epochs=500)
                 u_pred = m(a)
                 Flux.mse(u_pred, u)
             end
-            
+
             Flux.update!(opt_state, model, grads[1])
             push!(losses, loss)
         end
-        
+
         if epoch % 10 == 0
             println("Epoch $epoch, Loss: $(mean(losses))")
         end
     end
-    
+
     return model
 end
 ```
@@ -537,11 +537,11 @@ using Turing, DifferentialEquations
     W2 ~ MvNormal(zeros(1), I)
     b2 ~ Normal(0, 1)
     σ ~ InverseGamma(2, 3)  # 观测噪声
-    
+
     # 神经网络
     h = tanh.(x .* W1 .+ t .* W1 .+ b1)
     u_pred = h'W2 .+ b2
-    
+
     # 似然
     u_obs ~ MvNormal(u_pred, σ^2 * I)
 end
@@ -583,13 +583,13 @@ end
 # 定义反向传播规则
 function ChainRulesCore.rrule(::typeof(physics_step), state, action, dt)
     new_state = physics_step(state, action, dt)
-    
+
     function physics_pullback(new_statē)
         # 使用伴随法计算梯度
         # ...
         return NoTangent(), statē, action̄, NoTangent()
     end
-    
+
     return new_state, physics_pullback
 end
 
@@ -604,7 +604,7 @@ for epoch in 1:1000
         end
         return final_cost(state)
     end
-    
+
     params -= lr * grads[1]
 end
 ```

@@ -22,6 +22,7 @@ $$\text{D-mod}(\text{Bun}_G) \cong \text{QCoh}(\text{LocSys}_{G^\vee})$$
 $$\text{Whit}_G \cong \text{Spect}_G$$
 
 其中：
+
 - **Whit_G**: Whittaker范畴（"自守"一侧）
 - **Spect_G**: 谱范畴（"伽罗瓦"一侧）
 
@@ -69,6 +70,7 @@ $$\text{Tr}(\text{Frob}_q, \mathcal{F}) \leftrightarrow \text{自守函数}$$
 ### 2.1 基本构造
 
 **设定**:
+
 - $E$: 局部域（通常是 $\mathbb{Q}_p$）
 - $F$: 完美oid空间（或完美oid代数）
 
@@ -79,6 +81,7 @@ $$\text{Tr}(\text{Frob}_q, \mathcal{F}) \leftrightarrow \text{自守函数}$$
 $$X_{F,E} = \text{Proj}\left(\bigoplus_{n \geq 0} B^+_{\text{crys}}(F^+/p)^{\varphi = \pi^n}\right)$$
 
 其中：
+
 - $B^+_{\text{crys}}$: 晶体周期环
 - $\varphi$: Frobenius自同态
 - $\pi$: $E$ 的uniformizer
@@ -111,6 +114,7 @@ $$\{\text{$E$-线性连续} \text{Gal}_F\text{-表示}\} \cong \{\text{$X_{F,E}$
 **定理 2.3.1** ($p$-adic Hodge理论的几何化):
 
 对于 $p$-adic表示 $V$，可以构造 $X_{F, \mathbb{Q}_p}$ 上的向量丛 $\mathcal{E}(V)$ 使得：
+
 - $V$ 是晶体表示 $\Leftrightarrow$ $\mathcal{E}(V)$ 来自晶体模
 - $V$ 是de Rham表示 $\Leftrightarrow$ $\mathcal{E}(V)$ 在无穷远点有对数联络
 
@@ -165,7 +169,8 @@ $$\{\text{不可约光滑表示 of } GL_n(F)\} \longleftrightarrow \{\text{n维 
 | $GL_n(\mathbb{Q}_p)$ | 🔄 进行中 | Emerton, Helm, Moss |
 | 一般约化群 | 📋 计划中 | 多个研究团队 |
 
-**关键技术**: 
+**关键技术**:
+
 - $(\varphi, \Gamma)$-模
 - 完备同调
 - Emerton的特征标簇
@@ -179,6 +184,7 @@ $$\{\text{不可约光滑表示 of } GL_n(F)\} \longleftrightarrow \{\text{n维 
 $$\text{Bun}_G \times \text{Div}^1 \to \text{类特征标理论}$$
 
 其中：
+
 - $\text{Bun}_G$: $X_{F,E}$ 上 $G$-丛的模空间
 - $\text{Div}^1$: Cartier除子的某种推广
 
@@ -193,11 +199,13 @@ $$\text{Bun}_G \times \text{Div}^1 \to \text{类特征标理论}$$
 **描述**: 建立数域上的完整Langlands对应。
 
 **难点**:
+
 - 缺乏几何化工具
 - 局部-整体原理的困难
 - 无阿基米德位置的复杂性
 
-**研究现状**: 
+**研究现状**:
+
 - 模性提升定理有重大进展 (Calegari-Geraghty)
 - potential自守性技术
 
@@ -213,6 +221,7 @@ $$\text{Bun}_G \times \text{Div}^1 \to \text{类特征标理论}$$
 $$\text{Aut}(H) \to \text{Aut}(G)$$
 
 **进展**:
+
 - 循环基变换 (Arthur-Clozel)
 - 基本引理的证明 (Ngo)
 - 稳定迹公式的发展
@@ -224,6 +233,7 @@ $$\text{Aut}(H) \to \text{Aut}(G)$$
 **描述**: 建立 $GL_n$ 的完整 $p$-adic Langlands对应。
 
 **具体目标**:
+
 1. 构造 $p$-adic局部Langlands对应
 2. 证明与经典对应的兼容性
 3. 建立局部-整体相容性
@@ -235,6 +245,7 @@ $$\text{Aut}(H) \to \text{Aut}(G)$$
 **描述**: 将Gaitsgory的几何结果应用于数论问题。
 
 **可能方向**:
+
 - 几何方法在迹公式中的应用
 - 与Iwasawa理论的联系
 - 与算术几何的交叉
@@ -246,10 +257,12 @@ $$\text{Aut}(H) \to \text{Aut}(G)$$
 **描述**: 深化Langlands纲领与理论物理的联系。
 
 **已有联系**:
+
 - Kapustin-Witten: S-对偶与几何Langlands
 - Witten: 扭曲张量场论与Langlands对偶
 
 **开放方向**:
+
 - 量子场论中的Langlands对偶
 - 弦理论与自守形式
 - 黑洞物理与L-函数
@@ -261,6 +274,7 @@ $$\text{Aut}(H) \to \text{Aut}(G)$$
 **描述**: 使用计算工具研究Langlands对应。
 
 **研究方向**:
+
 - L-函数的高精度计算
 - Galois表示的显式构造
 - 机器学习发现新的对应
@@ -285,6 +299,7 @@ $$\text{Aut}(H) \to \text{Aut}(G)$$
 ### 5.1 与凝聚数学的联系
 
 **联系点**:
+
 - $p$-adic局部Langlands的凝聚描述
 - 固体向量空间在表示论中的应用
 - 局部-整体原理的凝聚视角
@@ -296,6 +311,7 @@ $$\text{Aut}(H) \to \text{Aut}(G)$$
 ### 5.2 与∞-范畴论的联系
 
 **联系点**:
+
 - 几何Langlands使用导出∞-范畴
 - 同伦Langlands纲领
 - 高阶不变量
@@ -324,14 +340,17 @@ $$\text{几何Langlands} \times \text{∞-范畴论} \to \text{同伦Langlands}$
 ### 6.1 最新文献
 
 **几何Langlands**:
+
 1. Gaitsgory, D. "Proof of the geometric Langlands conjecture" (2024)
 2. Arinkin, D., Gaitsgory, D. "Singular support of coherent sheaves"
 
 **Fargues-Fontaine曲线**:
+
 1. Fargues, L. "G-torseurs en théorie de Hodge p-adique"
 2. Fargues, L., Fontaine, J-M. "Courbes et fibrés vectoriels"
 
 **局部Langlands**:
+
 1. Scholze, P. "p-adic Hodge theory for rigid-analytic varieties"
 2. Emerton, M., Helm, D. "The local Langlands correspondence for GL_n"
 
@@ -354,6 +373,7 @@ $$\text{几何Langlands} \times \text{∞-范畴论} \to \text{同伦Langlands}$
 ### 7.1 2020年代的突破
 
 ✅ **已完成**:
+
 - 几何Langlands纲领的完整证明（函数域）
 - Fargues-Fontaine曲线理论的成熟
 - $p$-adic Langlands的重大进展
@@ -362,6 +382,7 @@ $$\text{几何Langlands} \times \text{∞-范畴论} \to \text{同伦Langlands}$
 ### 7.2 未来十年的挑战
 
 🔄 **进行中**:
+
 - 数域Langlands对应
 - 函子性的完整证明
 - $p$-adic Langlands的完备化
@@ -370,6 +391,7 @@ $$\text{几何Langlands} \times \text{∞-范畴论} \to \text{同伦Langlands}$
 ### 7.3 长远愿景
 
 📋 **期待中**:
+
 - Langlands纲领的完全解决
 - 与数学物理的深度融合
 - 计算方法的应用
