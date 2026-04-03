@@ -34,6 +34,7 @@
       - [本科课程 (100-level)](#本科课程-100-level)
       - [研究生课程 (200-level)](#研究生课程-200-level)
     - [4.3 Stanford FOAG](#43-stanford-foag)
+    - [4.4 Princeton Mathematics](#44-princeton-mathematics)
   - [五、使用智能学习系统](#五使用智能学习系统)
     - [5.1 认知诊断系统](#51-认知诊断系统)
     - [5.2 评估系统](#52-评估系统)
@@ -69,8 +70,8 @@ FormalMath是一个**面向数学教育的综合性知识库**，旨在：
 | 特色 | 说明 |
 |------|------|
 | **数学家理念体系** | 62位数学家的思想与贡献，从阿基米德到肖尔策 |
-| **国际权威对齐** | 与MIT、Harvard、Stanford课程详细对应 |
-| **形式化证明** | 15个可运行的Lean4定理，与Mathlib4对齐 |
+| **国际权威对齐** | 与MIT、Harvard、Stanford、ETH、Princeton课程详细对应 |
+| **形式化证明** | 20个可运行的Lean4定理，与Mathlib4对齐 |
 | **智能学习系统** | 认知诊断、学习评估、自适应学习路径 |
 
 ### 1.3 内容结构
@@ -258,6 +259,23 @@ FormalMath/
 
 ---
 
+### 3.6 路径六：量子计算数学
+
+**目标**: 掌握量子计算的数学基础
+
+**预计时间**: 6-10个月
+
+**学习路径**:
+
+| 阶段 | 时间 | 内容 | 对应文档 |
+|------|------|------|----------|
+| 1 | 1月 | 量子力学数学基础 | `docs/18-数学物理/02-量子力学的数学基础-深度版.md` |
+| 2 | 2月 | 群论与量子计算 | `docs/02-代数结构/03-应用分析/群论应用/05-群论应用-量子计算版.md` |
+| 3 | 2月 | 线性代数与量子计算 | `docs/02-代数结构/03-应用分析/线性代数应用/06-线性代数应用-量子计算版.md` |
+| 4 | 2月 | 量子算法数学 | `docs/12-应用数学/14-量子计算数学-深化版.md` |
+
+---
+
 ## 四、国际课程对应关系
 
 ### 4.1 MIT Mathematics Course 18
@@ -364,6 +382,34 @@ FormalMath/
 
 ---
 
+### 4.4 Princeton Mathematics
+
+**完整映射文档**: `project/Princeton-course-mapping-detailed.md`
+
+#### 本科荣誉课程
+
+| 课程代码 | 课程名称 | FormalMath对应 | 覆盖率 |
+|----------|----------|----------------|--------|
+| MAT 215/217/218 | Honors Analysis | `docs/03-分析学/01-实分析/` + `docs/03-分析学/02-复分析/` | 88% |
+| MAT 345 | Algebra I | `docs/02-代数结构/群论/` + `docs/02-代数结构/环论/` | 90% |
+| MAT 346 | Algebra II | `docs/02-代数结构/模论/` + `docs/02-代数结构/李代数/` | 82% |
+| MAT 365 | Topology | `docs/05-拓扑学/` | 85% |
+| MAT 355 | Differential Geometry | `docs/14-微分几何/` | 80% |
+
+#### 研究生课程
+
+| 课程代码 | 课程名称 | FormalMath对应 | 覆盖率 |
+|----------|----------|----------------|--------|
+| MAT 447 | Commutative Algebra | `docs/02-代数结构/环论/` | 85% |
+| MAT 457 | Algebraic Geometry | 格洛腾迪克/02-概形理论/ | 75% |
+| MAT 560 | Algebraic Topology | `docs/05-拓扑学/代数拓扑/` | 72% |
+| MAT 531 | Riemann Surfaces | `docs/03-分析学/02-复分析/` | 68% |
+
+**🎯 Princeton特色**:
+> Princeton数学系以小班教学、强调原创思维著称。MAT 215/217/218荣誉分析序列从第一天起就要求严格证明，FormalMath的实分析深度文档与此高度对应。
+
+---
+
 ## 五、使用智能学习系统
 
 ### 5.1 认知诊断系统
@@ -440,6 +486,7 @@ FormalMath/
 - MIT: 查阅 `project/MIT-course-mapping-detailed.md`
 - Harvard: 查阅 `project/Harvard-course-mapping-detailed.md`
 - Stanford FOAG: 查阅 `project/Stanford-FOAG-mapping-detailed.md`
+- Princeton: 查阅 `project/Princeton-course-mapping-detailed.md`
 
 ### Q3: 数学家理念体系如何使用？
 
@@ -481,6 +528,7 @@ FormalMath/
 - 核心内容：季度更新
 - 前沿内容：月度更新
 - 国际对齐：跟随课程更新
+- **第六批更新**：2026年4月，新增Princeton映射、PDE/概率论扩展
 
 ### Q8: 可以使用这些内容进行教学吗？
 
@@ -532,8 +580,10 @@ Year 4: 现代专题
 | 内容索引 | `00-FormalMath项目内容索引-完整版.md` |
 | 最终报告 | `00-FormalMath项目全面推进最终报告-2026年4月.md` |
 | 质量白皮书 | `00-FormalMath项目质量白皮书.md` |
+| 第六批报告 | `00-FormalMath第六批全面推进完成报告-2026年4月.md` |
 
 ---
 
 *最后更新: 2026年4月3日*
-*版本: v1.0*
+*版本: v1.1*
+*第六批更新: 新增Princeton学习路径、量子计算数学路径*

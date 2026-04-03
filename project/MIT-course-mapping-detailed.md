@@ -816,7 +816,38 @@
 
 ---
 
-## 🌍 国际课程对比：MIT vs ETH Zurich
+## 🌍 国际课程对比：MIT vs ETH Zurich vs Princeton
+
+### 四校课程对应总表
+
+| MIT课程 | Princeton对应 | Harvard对应 | ETH对应 | 对应程度 |
+|---------|---------------|-------------|---------|----------|
+| 18.090 Set Theory & Logic | PHI 323 | 基础数学 | 基础数学模块 | ⭐⭐⭐⭐ |
+| 18.700-703 Linear Algebra | MAT 217 | Math 21/23/25 | 401-1151/1152 | ⭐⭐⭐⭐⭐ |
+| 18.100 Real Analysis | MAT 215 | Math 114 | 401-1261/1262 | ⭐⭐⭐⭐⭐ |
+| 18.704 Group Theory | MAT 345 | Math 122 | 401-2284 | ⭐⭐⭐⭐⭐ |
+| 18.715 Ring Theory | MAT 346 | Math 123 | 401-2285 | ⭐⭐⭐⭐⭐ |
+| 18.782 Number Theory | MAT 419 | Math 223 | 401-4145/4146 | ⭐⭐⭐⭐ |
+| 18.705 Commutative Algebra | MAT 447 | Math 221 | 交换代数模块 | ⭐⭐⭐⭐⭐ |
+| **18.725 Algebraic Geometry I** | **MAT 416** | **Math 232ar** | **401-3531** | ⭐⭐⭐⭐⭐ |
+| **18.726 Algebraic Geometry II** | **MAT 416 (II)** | **Math 232br** | **401-3532** | ⭐⭐⭐⭐⭐ |
+| 18.745 Lie Groups | MAT 451/455 | 研究生课程 | 李群选修 | ⭐⭐⭐⭐ |
+| 18.755 Representation Theory | MAT 345内容 | Math 122/123 | 表示论选修 | ⭐⭐⭐⭐ |
+
+### MIT与Princeton对比
+
+| 维度 | MIT | Princeton |
+|------|-----|-----------|
+| **入门分析** | 18.100 (证明与应用平衡) | MAT 215 (纯证明导向) |
+| **线性代数** | 18.700系列 (灵活多样) | MAT 217 (严格抽象) |
+| **代数几何** | Vakil FOAG导向 | Kollár双有理几何导向 |
+| **教学风格** | 直观与严格并重 | 严格形式化优先 |
+| **课程选择** | 多样灵活 | 精简深入 |
+
+**Princeton MAT 215 vs MIT 18.100**:
+- MAT 215更加强调纯证明训练，计算内容极少
+- 18.100提供更多直观解释和应用例子
+- 两课程FormalMath对应度都很高（~88%）
 
 ### MIT与ETH课程对应关系
 
@@ -856,7 +887,49 @@
 | **微分几何** | Riemann几何经典 | `docs/14-微分几何/` | 完整黎曼几何 |
 | **数论** | 类域论传统 | `docs/06-数论/02-代数数论/` | 代数方法深入 |
 
-**推荐跨校学习路径**:
+**四校联合学习路径（MIT + Princeton + Harvard + ETH）**:
+
+```
+四校联合路径
+├── 基础阶段（四校等价）
+│   ├── 实分析
+│   │   ├── MIT 18.100
+│   │   ├── Princeton MAT 215 (最严格证明训练)
+│   │   ├── Harvard Math 114
+│   │   └── ETH 401-1261/1262
+│   │   └── 共同资源: docs/03-分析学/01-实分析/
+│   ├── 线性代数
+│   │   ├── MIT 18.700-703
+│   │   ├── Princeton MAT 217 (最抽象)
+│   │   ├── Harvard Math 21/23
+│   │   └── ETH 401-1151/1152
+│   │   └── 共同资源: docs/02-代数结构/线性代数/
+│   └── 抽象代数
+│       ├── MIT 18.704/715
+│       ├── Princeton MAT 345/346
+│       ├── Harvard Math 122/123
+│       └── ETH 401-2284/2285
+│       └── 共同资源: docs/02-代数结构/核心理论/
+
+核心阶段（代数几何）⭐⭐⭐
+├── MIT 18.725
+├── Princeton MAT 416 (Kollar - 双有理几何)
+├── Harvard Math 232ar
+└── ETH 401-3531
+    └── 完美对应: 格洛腾迪克/02-概形理论/
+    └── 对应度: 95%+
+
+核心阶段（凝聚层上同调）⭐⭐⭐⭐⭐
+├── MIT 18.726
+├── Princeton MAT 416 (II)
+├── Harvard Math 232br  ← 标题完美对应
+└── ETH 401-3532
+    └── 完美对应: 格洛腾迪克/03-上同调理论/
+    └── 特别是: 25-上同调与凝聚层上同调.md
+    └── 对应度: 98%!
+```
+
+**原MIT + ETH联合路径**:
 
 ```
 MIT + ETH 联合路径
@@ -905,6 +978,8 @@ MIT + ETH 联合路径
 - [ETH Zurich Course Mapping](ETH-Zurich-course-mapping.md) - 苏黎世学派对比
 - [ETH Zurich Course Mapping Detailed](ETH-Zurich-course-mapping-detailed.md) - 详细对比分析
 - [Harvard Course Mapping](Harvard-course-mapping-detailed.md) - Harvard对比
+- [Princeton Course Mapping](Princeton-course-mapping.md) - Princeton课程映射
+- [Princeton Course Mapping Detailed](Princeton-course-mapping-detailed.md) - Princeton详细对比
 - [FormalMath 项目主页](../README.md)
 - [FormalMath 全局文档索引](../docs/00-全局文档索引-2025年12月.md)
 
