@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # 平滑Topos与晶体Topos：特殊的Topos
 
 

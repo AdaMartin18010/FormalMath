@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # 上同调与Grothendieck对偶：对偶理论的高级形式
 
 

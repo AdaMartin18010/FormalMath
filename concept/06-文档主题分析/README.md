@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "00A99"
+---
+
 # FormalMath文档主题分析
 
 **主题编号**: C.06.README

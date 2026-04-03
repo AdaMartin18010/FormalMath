@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # 层的范畴与Grothendieck拓扑：网络对齐与批判性意见报告
 
 **关联文档**：[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md) · 同名思维表征

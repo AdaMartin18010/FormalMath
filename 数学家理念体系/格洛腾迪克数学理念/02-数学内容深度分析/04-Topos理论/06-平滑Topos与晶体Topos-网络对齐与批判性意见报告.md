@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # 平滑Topos与晶体Topos：网络对齐与批判性意见报告
 
 **关联文档**：[06-平滑Topos与晶体Topos](./06-平滑Topos与晶体Topos.md) · 同名思维表征

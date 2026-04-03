@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Grothendieck的生平与学术历程：传奇数学家的一生
 
 > **从流亡到革命：Grothendieck的生平与学术历程**

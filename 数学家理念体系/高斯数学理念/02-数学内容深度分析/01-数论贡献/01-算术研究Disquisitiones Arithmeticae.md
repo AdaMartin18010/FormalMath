@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A55"
+---
+
 # 算术研究Disquisitiones Arithmeticae：高斯的数论奠基
 
 > **文档状态**: ✅ 完成

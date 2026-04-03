@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Dedekind ζ函数：数域的L函数
 
 Dedekind ζ函数是Riemann ζ函数在代数数域上的推广，它将数域的算术性质编码在解析函数中。虽然Dedekind ζ函数的严格形式化是在19世纪由Dedekind完成的，但庞加莱的自守函数理论为理解L函数奠定了基础。Dedekind ζ函数在代数数论、类域论、Langlands纲领等领域有重要应用。

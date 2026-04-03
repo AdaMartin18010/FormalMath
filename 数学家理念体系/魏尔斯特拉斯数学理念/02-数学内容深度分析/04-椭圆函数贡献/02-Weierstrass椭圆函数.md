@@ -1,4 +1,8 @@
-﻿# Weierstrass椭圆函数
+﻿---
+msc_primary: "01A55"
+---
+
+# Weierstrass椭圆函数
 
 > > 
 Weierstrass椭圆函数：魏尔斯特拉斯引入的椭圆函数形式。

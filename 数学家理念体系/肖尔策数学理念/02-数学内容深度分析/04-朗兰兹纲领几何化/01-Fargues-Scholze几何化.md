@@ -1,4 +1,8 @@
-﻿# Fargues-Scholze几何化
+﻿---
+msc_primary: "01A70"
+---
+
+# Fargues-Scholze几何化
 
 > **朗兰兹纲领的几何实现**
 

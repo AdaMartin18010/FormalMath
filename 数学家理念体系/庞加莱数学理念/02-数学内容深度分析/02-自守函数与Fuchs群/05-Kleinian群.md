@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Kleinian群：高维自守函数
 
 Kleinian群是研究高维自守函数的群，它是Fuchs群在高维的推广。虽然Kleinian群的严格形式化是在20世纪完成的，但庞加莱的自守函数理论为Kleinian群奠定了基础。Kleinian群在现代复分析、双曲几何、动力系统等领域有重要应用。

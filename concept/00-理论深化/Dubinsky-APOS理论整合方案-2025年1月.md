@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "00A99"
+---
+
 # Dubinsky APOS理论整合方案
 
 **主题编号**: C.THEORY.02.INTEGRATION

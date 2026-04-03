@@ -1,4 +1,8 @@
-﻿# Proper Forcing基础
+﻿---
+msc_primary: "01A99"
+---
+
+# Proper Forcing基础
 
 **创建日期**: 2025年12月15日
 **研究领域**: 谢拉数学理念 - 核心理论 - Proper Forcing基础

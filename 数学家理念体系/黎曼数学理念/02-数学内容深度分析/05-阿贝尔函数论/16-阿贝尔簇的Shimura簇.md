@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A99"
+---
+
 # 阿贝尔簇的Shimura簇：算术几何的现代发展
 
 > **从模空间到Langlands纲领：Shimura簇在算术几何中的核心地位**

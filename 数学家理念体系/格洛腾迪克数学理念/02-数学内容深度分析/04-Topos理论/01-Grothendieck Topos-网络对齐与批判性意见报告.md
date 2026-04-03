@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Grothendieck Topos：网络对齐与批判性意见报告
 
 **关联文档**：[01-Grothendieck Topos](./01-Grothendieck%20Topos.md) · 同名思维表征

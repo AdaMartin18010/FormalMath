@@ -1,4 +1,8 @@
-﻿# p进Hodge理论
+﻿---
+msc_primary: "01A70"
+---
+
+# p进Hodge理论
 
 > **经典Hodge理论在p进域的推广**
 

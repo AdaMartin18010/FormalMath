@@ -1,4 +1,8 @@
-﻿# Fargues-Fontaine曲线
+﻿---
+msc_primary: "01A70"
+---
+
+# Fargues-Fontaine曲线
 
 > **连接p进域与代数几何的桥梁**
 

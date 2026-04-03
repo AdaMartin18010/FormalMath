@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Galois表示与L函数：Langlands纲领的桥梁
 
 > **文档状态**: ✅ 内容填充中

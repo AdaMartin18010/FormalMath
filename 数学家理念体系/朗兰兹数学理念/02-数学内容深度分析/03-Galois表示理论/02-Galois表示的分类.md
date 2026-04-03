@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Galois表示的分类：Langlands纲领的结构
 
 > **文档状态**: ✅ 内容填充中

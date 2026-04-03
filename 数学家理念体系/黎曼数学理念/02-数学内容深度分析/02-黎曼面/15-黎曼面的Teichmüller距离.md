@@ -1,4 +1,8 @@
-﻿# 黎曼面的Teichmüller距离：模空间的度量
+﻿---
+msc_primary: "01A99"
+---
+
+# 黎曼面的Teichmüller距离：模空间的度量
 
 > **从Teichmüller理论到模空间几何**
 

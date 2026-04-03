@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "00A99"
+---
+
 # FormalMath 概念体系 / Concept System
 
 **主题编号**: C.00.01

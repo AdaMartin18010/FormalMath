@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # 连续范畴与Locales：Topos的几何化
 
 

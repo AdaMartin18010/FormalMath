@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # 布劳威尔数学理念体系
 
 > **L.E.J. 布劳威尔 (Luitzen Egbertus Jan Brouwer, 1881-1966)**

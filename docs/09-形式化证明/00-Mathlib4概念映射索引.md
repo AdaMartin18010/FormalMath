@@ -2,7 +2,10 @@
 msc_primary: "68V20"
 msc_secondary: ['03B35', '68T99', '00A99']
 mathlib4_version: "v4.29.0"
+mathlib4_latest: "v4.29.0"
+lean4_version: "v4.29.0"
 last_updated: "2026-04-03"
+next_review: "2026-07-03"
 ---
 
 # Mathlib4概念映射索引
@@ -10,6 +13,41 @@ last_updated: "2026-04-03"
 **Mathlib4版本**: v4.29.0
 **Lean4版本**: v4.29.0
 **最后更新**: 2026-04-03
+
+---
+
+## 📢 2024-2025最新进展
+
+### Mathlib4 v4.29.0重要更新
+
+**发布日期**: 2026年3月
+
+#### 代数几何新进展
+- **Motivic上同调**: 混合特征概形的motivic上同调理论相关形式化进展
+- **层上同调**: `Mathlib.AlgebraicGeometry.Scheme`模块持续增强
+- **概形理论**: 素谱、Zariski拓扑、局部环化空间等核心概念完善
+
+#### 数论新进展
+- **HasFiniteQuotients类**: 新增具有有限商的交换环类
+  - 证明：若`R`有有限商，则其Krull维度≤1
+  - 证明：若`R`有有限商，则它是Noetherian环
+  - 若`S`是域且是有限`R`-模，则`S`有有限商
+- **有限域**: `Mathlib.FieldTheory.Finite.Basic`持续完善
+
+#### 分析学新进展
+- **连续多线性映射**: 从赋范空间推广到拓扑向量空间
+- **实数平方根**: API扩展
+- **连续性自动化**: `fun_prop`等自动化证明增强
+
+### 与项目相关的arXiv论文（2024-2025）
+
+| 论文 | arXiv编号 | 与Mathlib4关系 |
+|------|-----------|----------------|
+| Motivic Cohomology of Mixed Characteristic Schemes | arXiv:2412.06635 | 代数几何高级主题形式化 |
+| Enhancement for Categories and Homotopical Algebra | arXiv:2409.17489 | 同调代数、导出范畴 |
+| Ext Groups in Homotopy Type Theory | arXiv:2305.09639 | 形式化数学前沿 |
+
+---
 
 ---
 

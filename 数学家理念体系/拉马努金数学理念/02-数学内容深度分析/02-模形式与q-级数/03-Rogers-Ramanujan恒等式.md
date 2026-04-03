@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Rogers-Ramanujan恒等式：组合数学的经典
 
 > **文档状态**: ✅ 完成

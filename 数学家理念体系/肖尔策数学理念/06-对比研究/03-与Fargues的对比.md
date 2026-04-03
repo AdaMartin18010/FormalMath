@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A70"
+---
+
 # 肖尔策与Fargues的对比
 
 > **Fargues-Scholze几何化的合作与创新**

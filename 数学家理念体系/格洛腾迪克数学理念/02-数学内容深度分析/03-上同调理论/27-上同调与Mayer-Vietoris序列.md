@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # 上同调与Mayer-Vietoris序列：覆盖的上同调
 
 

@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A65"
+---
+
 # Hard Lefschetz定理的应用
 
 > **文档状态**: ✅ 内容填充中

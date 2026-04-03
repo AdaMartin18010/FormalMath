@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # SGA的系统内容：Grothendieck的研讨会
 
 > **文档状态**: ✅ 内容填充完成

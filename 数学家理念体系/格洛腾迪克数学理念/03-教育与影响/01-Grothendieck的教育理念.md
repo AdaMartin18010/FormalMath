@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Grothendieck的教育理念：数学教育的革命性思考
 
 

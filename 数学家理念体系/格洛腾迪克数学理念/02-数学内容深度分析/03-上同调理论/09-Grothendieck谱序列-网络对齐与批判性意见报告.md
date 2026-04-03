@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Grothendieck谱序列：网络对齐与批判性意见报告
 
 **关联文档**：[09-Grothendieck谱序列](./09-Grothendieck谱序列.md) · [09-Grothendieck谱序列-思维表征](./09-Grothendieck谱序列-思维表征.md)

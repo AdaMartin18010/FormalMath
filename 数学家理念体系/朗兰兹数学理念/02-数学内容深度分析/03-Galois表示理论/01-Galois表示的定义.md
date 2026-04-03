@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Galois表示的定义：Langlands纲领的基础
 
 > **文档状态**: ✅ 内容填充中

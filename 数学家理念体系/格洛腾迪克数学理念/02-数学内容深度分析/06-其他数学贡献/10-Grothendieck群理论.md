@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Grothendieck群理论：向量丛的K理论
 
 

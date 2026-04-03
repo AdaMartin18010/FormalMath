@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A99"
+---
+
 # Deligne-Mumford紧化：模空间的完整理论
 
 

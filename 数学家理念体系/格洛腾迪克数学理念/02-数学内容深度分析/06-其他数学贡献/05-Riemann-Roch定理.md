@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Riemann-Roch定理：格洛腾迪克的推广
 
 

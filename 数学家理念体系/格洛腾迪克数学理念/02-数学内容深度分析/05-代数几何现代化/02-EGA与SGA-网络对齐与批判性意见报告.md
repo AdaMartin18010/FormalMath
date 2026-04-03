@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # EGA与SGA：网络对齐与批判性意见报告
 
 **关联文档**：[02-EGA与SGA](./02-EGA与SGA.md) · [02-EGA与SGA-思维表征](./02-EGA与SGA-思维表征.md)

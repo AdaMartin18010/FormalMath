@@ -1,3 +1,7 @@
+﻿---
+msc_primary: "01A60"
+---
+
 # Seifert-van Kampen定理：基本群的计算
 
 Seifert-van Kampen定理是计算基本群的重要工具，它将空间的基本群表示为子空间基本群的自由积。虽然这个定理的严格形式化是在20世纪完成的，但庞加莱的基本群理论为Seifert-van Kampen定理奠定了基础。Seifert-van Kampen定理在拓扑学、代数拓扑、流形理论等领域有重要应用。
