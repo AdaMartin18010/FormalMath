@@ -1,6 +1,6 @@
 ---
 msc_primary: "00A99"
-msc_secondary: ['28-XX', '47-XX', '00-XX']
+msc_secondary: ['26-XX', '47-XX', '00-XX']
 ---
 
 # 分析学
