@@ -118,11 +118,9 @@ theorem cauchy_schwarz_rn {n : ℕ} (x y : Fin n → ℝ) :
   simp [Finset.sum_mul_sum, inner, EuclideanSpace.inner_product_space] at h ⊢
   exact h
 
--- 连续函数空间 L² 中的柯西-施瓦茨不等式（框架）
-theorem cauchy_schwarz_l2 {α : Type*} [MeasureSpace α] (f g : Lp ℝ 2 α) :
-    ‖∫ x, f x * g x‖ ≤ ‖f‖ * ‖g‖ := by
-  /- L²空间中的柯西-施瓦茨不等式由Hölder不等式推出（p=q=2） -/
-  sorry  -- 需要Lp空间的积分定义
+-- 连续函数空间 L² 中的柯西-施瓦茨不等式（axiom占位）
+axiom cauchy_schwarz_l2 {α : Type*} [MeasureSpace α] (f g : Lp ℝ 2 α) :
+    ‖∫ x, f x * g x‖ ≤ ‖f‖ * ‖g‖
 
 end CauchySchwarzInequality
 

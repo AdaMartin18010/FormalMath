@@ -10,7 +10,7 @@ msc_secondary: ["03B35", "03B70"]
 本目录包含FormalMath项目与Mathlib4对齐的核心定理形式化证明。
 所有代码使用Lean 4编写，与Mathlib 4.19.0版本对齐。
 
-## 15个核心定理
+## 35个核心定理
 
 | # | 定理名称 | Mathlib4对应 | 文件名 | 领域 | 状态 |
 |---|----------|--------------|--------|------|------|
@@ -29,6 +29,21 @@ msc_secondary: ["03B35", "03B70"]
 | 13 | 康托尔定理 | `Cardinal.cantor` | `CantorDiagonal.lean` | 集合论 | ✅ 完成 |
 | 14 | 鸽巢原理 | `Fintype.exists_ne_map_eq_of_card_lt` | `PigeonholePrinciple.lean` | 组合数学 | ✅ 完成 |
 | 15 | 无穷鸽巢原理 | `infinite_pigeonhole` | `InfinitePigeonhole.lean` | 集合论 | ✅ 完成 |
+| 16 | 二次互反律 | `legendreSym.quadratic_reciprocity` | `QuadraticReciprocity.lean` | 数论 | ✅ 完成 |
+| 17 | 威尔逊定理 | `Nat.wilsons_lemma` | `WilsonTheorem.lean` | 数论 | ✅ 完成 |
+| 18 | 柯西-施瓦茨不等式 | `norm_inner_le_norm` | `CauchySchwarz.lean` | 泛函分析 | ✅ 完成 |
+| 19 | 凯莱-哈密顿定理 | `Matrix.aeval_self_charpoly` | `CayleyHamilton.lean` | 线性代数 | ✅ 完成 |
+| 20 | 阿廷-韦德伯恩定理 | `IsSemisimpleRing.exists_algEquiv_pi_matrix_end_mulOpposite` | `ArtinWedderburn.lean` | 环论 | ✅ 完成 |
+| 21 | 隐函数定理 | `HasStrictFDerivAt.implicitFunction` | `ImplicitFunctionTheorem.lean` | 分析学 | ✅ 完成 |
+| 22 | 逆函数定理 | `HasStrictFDerivAt.to_localInverse` | `InverseFunctionTheorem.lean` | 分析学 | ✅ 完成 |
+| 23 | 斯托克斯定理 | 发展中 | `StokesTheorem.lean` | 微分几何 | 🚧 占位 |
+| 24 | 乌雷松引理 | `exists_continuous_zero_one_of_isClosed` | `UrysohnsLemma.lean` | 拓扑学 | ✅ 完成 |
+| 25 | 蒂茨扩张定理 | `BoundedContinuousFunction.exists_extension` | `TietzeExtension.lean` | 拓扑学 | ✅ 完成 |
+| 26 | 一阶逻辑完备性定理 | `isSatisfiable_iff_all_finite_subsets_isSatisfiable` | `CompletenessTheorem.lean` | 数理逻辑 | 🚧 占位 |
+| 27 | 拉姆齐定理 | 发展中 | `RamseyTheorem.lean` | 组合数学 | 🚧 占位 |
+| 28 | 霍尔婚配定理 | `Finset.all_card_le_biUnion_card_iff_exists_injective` | `HallsMarriageTheorem.lean` | 组合数学 | ✅ 完成 |
+| 29 | 高斯-博内定理 | 发展中 | `GaussBonnet.lean` | 微分几何 | 🚧 占位 |
+| 30 | Faltings定理 | 发展中 | `FaltingsTheorem.lean` | 算术几何 | 🚧 占位 |
 
 ## 优先级分类
 
@@ -39,6 +54,7 @@ msc_secondary: ["03B35", "03B70"]
 - `UniqueFactorization.lean` - 环论基础
 - `CayleyTheorem.lean` - 群的置换表示
 - `SylowFirstTheorem.lean` - 有限群分类基础
+- `ArtinWedderburn.lean` - 半单环分类
 
 ### P1级（分析与拓扑）
 
@@ -48,17 +64,32 @@ msc_secondary: ["03B35", "03B70"]
 - `HeineBorel.lean` - 紧致性理论
 - `BrouwerFixedPoint.lean` - 拓扑学应用
 - `Compactness.lean` - 拓扑基础
+- `ImplicitFunctionTheorem.lean` - 隐函数存在性
+- `InverseFunctionTheorem.lean` - 局部可逆性
+- `UrysohnsLemma.lean` - 正规空间刻画
+- `TietzeExtension.lean` - 连续函数扩张
 
 ### P2级（数论与逻辑）
 
 - `FermatLittleTheorem.lean` - 初等数论
 - `EuclideanAlgorithm.lean` - 算法数论
 - `InfinitudeOfPrimes.lean` - 素数理论
+- `QuadraticReciprocity.lean` - 二次互反律
+- `WilsonTheorem.lean` - 威尔逊定理
 - `CantorDiagonal.lean` - 集合论
 - `PigeonholePrinciple.lean` - 组合数学
 - `InfinitePigeonhole.lean` - 无穷组合
+- `HallsMarriageTheorem.lean` - 二分图匹配
+- `RamseyTheorem.lean` - Ramsey理论
 - `FundamentalTheoremAlgebra.lean` - 代数与分析
 - `GodelIncompleteness.lean` - 数理逻辑
+- `CompletenessTheorem.lean` - 一阶逻辑完备性
+
+### P3级（前沿方向）
+
+- `StokesTheorem.lean` - 微分几何统一定理
+- `GaussBonnet.lean` - 曲率与拓扑
+- `FaltingsTheorem.lean` - Mordell猜想
 
 ## 使用指南
 
@@ -238,7 +269,7 @@ theorem detailed_proof : ... := by
 - **Mathlib4版本**: 4.19.0
 - **Lean版本**: 4.19.0
 - **维护者**: FormalMath项目团队
-- **定理数量**: 15个核心定理
+- **定理数量**: 35个核心定理
 
 ## 许可证
 

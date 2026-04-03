@@ -307,3 +307,75 @@ $$
 
 9. **陈志杰**，《同调代数》，北京大学出版社，2006.
    - 第9章：Godement 分解与松软层
+
+---
+
+## 补充内容：Godement分解与其他消解的比较 / Supplement: Godement vs. Other Resolutions
+
+### 软层消解与Godement分解 / Soft Resolution and Godement
+
+**定义 15.7.4** (软层 / Soft Sheaf)
+设 $X$ 是仿紧（paracompact）Hausdorff 空间。层 $\mathcal{F}$ 称为**软的**（soft），如果对任意闭集 $K \subseteq X$，限制映射 $\mathcal{F}(X) \to \mathcal{F}(K)$ 是满射。这里 $\mathcal{F}(K) = \varinjlim_{U \supset K} \mathcal{F}(U)$。
+
+**定理 15.7.8**
+在仿紧 Hausdorff 空间上，软层是 $\Gamma(X, -)$-零调的。且任何层都可以嵌入到软层中。
+
+**比较**：
+- 松软层（flabby）不要求 $X$ 仿紧，但软层要求
+- 在仿紧空间上，松软层都是软层
+- Godement 分解产生的是松软层，因此适用于任意拓扑空间
+- 在微分几何中，光滑函数的精细层（fine sheaves）是软层，常用于 de Rham 定理的证明
+
+### Godement分解与fine层 / Godement Resolution and Fine Sheaves
+
+**定义 15.7.5** (精细层 / Fine Sheaf)
+设 $X$ 是仿紧空间。层 $\mathcal{F}$ 称为**精细的**，如果 $\operatorname{\mathcal{H}om}(\mathcal{F}, \mathcal{F})$ 有足够多的单位分解。即对任意局部有限开覆盖，存在层自同态的分解 $1 = \sum \rho_i$ 使得 $\rho_i$ 在覆盖外为零。
+
+**定理 15.7.9**
+在微分流形上，光滑微分形式层 $\mathcal{A}^q_X$ 是精细层，因此是软层，也是零调的。这给出了 de Rham 消解：
+
+$$
+0 \longrightarrow \underline{\mathbb{R}}_X \longrightarrow \mathcal{A}^0_X \longrightarrow \mathcal{A}^1_X \longrightarrow \mathcal{A}^2_X \longrightarrow \cdots
+$$
+
+**de Rham 定理**：对光滑流形 $X$，
+
+$$
+H^q_{\mathrm{dR}}(X) \cong H^q(X, \underline{\mathbb{R}}_X)
+$$
+
+Godement 分解提供了这一同构的另一种证明路径：因为 $\underline{\mathbb{R}}_X$ 的 Godement 分解和 de Rham 消解都是零调的，它们在导出范畴中给出同构的对象，从而诱导同调同构。
+
+### Godement分解在复几何中的角色 / Godement Resolution in Complex Geometry
+
+**定理 15.7.10** ($\bar{\partial}$-Poincaré 引理)
+设 $X$ 是复流形，$\mathcal{O}_X$ 是全纯函数层。则序列
+
+$$
+0 \longrightarrow \mathcal{O}_X \longrightarrow \mathcal{A}^{0,0}_X \xrightarrow{\bar{\partial}} \mathcal{A}^{0,1}_X \xrightarrow{\bar{\partial}} \mathcal{A}^{0,2}_X \longrightarrow \cdots
+$$
+
+是正合的。这称为 Dolbeault 消解。
+
+因为 $\mathcal{A}^{p,q}_X$ 是精细层（当 $X$ 是仿紧时），Dolbeault 定理给出：
+
+$$
+H^q(X, \Omega^p_X) \cong H^{p,q}_{\bar{\partial}}(X)
+$$
+
+Godement 分解再次提供了这一结果的导出函子视角：$H^q(X, \Omega^p_X)$ 作为层上同调群，可以用 Godement 分解或 Dolbeault 消解计算，结果自然同构。
+
+### 直接像函子的Godement分解 / Godement Resolution for Direct Image Functors
+
+**定理 15.7.11**
+设 $f: X \to Y$ 是连续映射，$\mathcal{F}$ 是 $X$ 上的层。则对 $Y$ 的任意开集 $V$，
+
+$$
+(R^q f_* \mathcal{F})(V) = H^q(f^{-1}(V), \mathcal{F}|_{f^{-1}(V)})
+$$
+
+若 $C^\bullet(\mathcal{F})$ 是 $\mathcal{F}$ 的 Godement 分解，则 $f_* C^\bullet(\mathcal{F})$ 计算 $Rf_* \mathcal{F}$。这是因为 $C^q(\mathcal{F})$ 是松软层，而松软层的直接像 $f_* C^q(\mathcal{F})$ 仍是松软层（从而零调）。因此 Godement 分解也是计算高阶直接像函子的有效工具。
+
+**例子 15.7.5** (投影的 Leray 谱序列)
+设 $f: X \times Y \to Y$ 是投影。对 $X \times Y$ 上的层 $\mathcal{F}$，Godement 分解给出计算 $R^q f_* \mathcal{F}$ 的具体复形。当 $X$ 是紧的，$\mathcal{F}$ 是局部常值层时，$R^q f_* \mathcal{F}$ 是 $Y$ 上的局部系，其茎为 $H^q(X, \mathcal{F}|_{X \times \{y\}})$。这在族的上同调研究中至关重要。
+

@@ -389,3 +389,89 @@ $$
 
 8. **陈志杰**，《同调代数》，北京大学出版社，2006.
    - 第5-6章：具体计算与应用
+
+---
+
+## 补充内容：局部环与Koszul复形上的计算 / Supplement: Local Rings and Koszul Complexes
+
+### 正则局部环上的投射维数 / Projective Dimension over Regular Local Rings
+
+**定理 15.3.11** (Hilbert 合冲定理)
+设 $R = k[x_1, \ldots, x_n]$ 是域 $k$ 上的多项式环，$M$ 是有限生成分次 $R$-模。则 $M$ 有长度不超过 $n$ 的有限自由消解。等价地，$\operatorname{pd}_R(M) \leq n$。
+
+**推论 15.3.2**
+对任意两个有限生成 $R$-模 $M, N$，$\operatorname{Tor}_i^R(M, N) = 0$ 对 $i > n$。因此多项式环的整体维数为 $n$。
+
+### Koszul复形作为Tor计算工具 / Koszul Complexes as Computational Tools
+
+**定义 15.3.4** (Koszul 复形)
+设 $R$ 是交换环，$\mathbf{x} = (x_1, \ldots, x_n) \in R^n$。Koszul 复形 $K_\bullet(\mathbf{x}; R)$ 定义为外代数 $\Lambda^*(R^n)$ 配以微分
+
+$$
+d(e_{i_1} \wedge \cdots \wedge e_{i_p}) = \sum_{k=1}^p (-1)^{k-1} x_{i_k} e_{i_1} \wedge \cdots \wedge \widehat{e}_{i_k} \wedge \cdots \wedge e_{i_p}
+$$
+
+**定理 15.3.12**
+若 $x_1, \ldots, x_n$ 构成 $R$-正则序列，则 $K_\bullet(\mathbf{x}; R)$ 是 $R/(x_1, \ldots, x_n)$ 的自由消解。因此
+
+$$
+\operatorname{Tor}_p^R(R/(\mathbf{x}), M) = H_p(K_\bullet(\mathbf{x}) \otimes_R M)
+$$
+
+**例子 15.3.8** (完全交的 Tor)
+设 $R = k[x, y, z]$，$I = (x, y)$，$M = R/(z)$。因 $x, y$ 是 $R$-正则序列，也是 $M$-正则序列（因为 $z$ 与 $x, y$ 无关），Koszul 复形给出：
+
+$$
+K_\bullet = [0 \to R \xrightarrow{(y, -x)} R^2 \xrightarrow{(x, y)} R \to 0]
+$$
+
+作用 $-\otimes_R M$：
+
+$$
+0 \to M \to M^2 \to M \to 0
+$$
+
+因 $x, y$ 在 $M = k[x,y,z]/(z)$ 上仍是正则的，故 $H_1 = H_2 = 0$，$H_0 = M/(x,y) \cong k$。这说明 $R/I$ 是 $M$-平坦的。
+
+**例子 15.3.9** (非完全交的 Tor)
+设 $R = k[x,y]/(x^2, xy)$，$M = R/(y) \cong k[x]/(x^2)$。计算 $\operatorname{Tor}_1^R(M, M)$。
+
+取 $M$ 的投射消解：
+
+$$
+\cdots \to R \xrightarrow{\cdot y} R \xrightarrow{\cdot x} R \xrightarrow{\cdot y} R \to M \to 0
+$$
+
+作用 $-\otimes_R M$ 后 $y$ 变为零，因此复形变为
+
+$$
+\cdots \to M \xrightarrow{0} M \xrightarrow{\cdot x} M \xrightarrow{0} M \to 0
+$$
+
+因 $x$ 在 $M = k[x]/(x^2)$ 上的核和余核都是 $k$，可得
+
+$$
+\operatorname{Tor}_{2n+1}^R(M, M) = k, \quad \operatorname{Tor}_{2n+2}^R(M, M) = k \quad (n \geq 0)
+$$
+
+这说明非正则局部环可以具有无限的整体维数，Tor 不消失。
+
+### Ext与深度 / Ext and Depth
+
+**定义 15.3.5** (深度 / Depth)
+设 $R$ 是诺特局部环，$\mathfrak{m}$ 是极大理想，$M$ 是有限生成 $R$-模。$M$ 的**深度**定义为
+
+$$
+\operatorname{depth}_R(M) = \min\{n : \operatorname{Ext}_R^n(R/\mathfrak{m}, M) \neq 0\}
+$$
+
+**定理 15.3.13** (Auslander-Buchsbaum 公式)
+设 $R$ 是正则局部环，$M$ 是有限生成 $R$-模。若 $\operatorname{pd}_R(M) < \infty$，则
+
+$$
+\operatorname{pd}_R(M) + \operatorname{depth}(M) = \operatorname{depth}(R) = \dim(R)
+$$
+
+**例子 15.3.10**
+设 $R = k[[x, y]]$，$M = R/(x)$。则 $\operatorname{pd}(M) = 1$（由 Koszul 复形 $0 \to R \xrightarrow{x} R \to M \to 0$），$\operatorname{depth}(M) = 1$（因为 $y$ 在 $M$ 上是正则的），而 $\dim(R) = 2$。Auslander-Buchsbaum 公式验证：$1 + 1 = 2$。
+

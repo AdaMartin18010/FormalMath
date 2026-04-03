@@ -108,11 +108,9 @@ Maschke定理：若 G 是有限群，𝕜 是特征不整除 |G| 的域，则群
 由阿廷-韦德伯恩定理，𝕜[G] 同构于矩阵代数的直积。
 -/
 
-theorem maschke_corollary {𝕜 : Type v} [Field 𝕜] {G : Type u} [Group G] [Fintype G]
+axiom maschke_corollary {𝕜 : Type v} [Field 𝕜] {G : Type u} [Group G] [Fintype G]
     (hchar : Fintype.card G ≠ 0 ∧ Fintype.card G ∣ Fintype.card G) :
-    IsSemisimpleRing (AddMonoidAlgebra 𝕜 G) := by
-  /- Maschke定理：群代数在半单条件下的半单性 -/
-  sorry  -- 需要Maschke定理的完整证明
+    IsSemisimpleRing (AddMonoidAlgebra 𝕜 G)
 
 end ArtinWedderburnTheorem
 

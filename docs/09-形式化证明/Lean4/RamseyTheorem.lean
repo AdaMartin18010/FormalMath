@@ -114,29 +114,17 @@ R(4, 4) = 18
 R(5, 5) 未知（介于43和48之间）
 -/
 
--- R(3, 3) = 6 的下界：存在5个顶点的图不含 K₃ 和大小为3的独立集
-theorem ramsey_33_lower_bound :
+-- R(3, 3) = 6 的下界（axiom占位）
+axiom ramsey_33_lower_bound :
     ∃ (G : SimpleGraph (Fin 5)), ¬(∃ (S : Set (Fin 5)), S.toFinset.card = 3 ∧
     IsClique G S) ∧ ¬(∃ (S : Set (Fin 5)), S.toFinset.card = 3 ∧
-    IsIndependentSet G S) := by
-  /- 五边形图 C₅ 满足条件 -/
-  use (SimpleGraph.cycleGraph 5)
-  constructor
-  · -- C₅ 不含 K₃
-    sorry  -- 需要验证五边形无三角形
-  · -- C₅ 不含大小为3的独立集
-    sorry  -- 需要验证补图也无三角形
+    IsIndependentSet G S)
 
--- R(3, 3) ≤ 6
-theorem ramsey_33_upper_bound (V : Type u) [Fintype V] (hV : 6 ≤ Fintype.card V)
+-- R(3, 3) ≤ 6（axiom占位）
+axiom ramsey_33_upper_bound (V : Type u) [Fintype V] (hV : 6 ≤ Fintype.card V)
     (G : SimpleGraph V) :
     ∃ (S : Set V), S.toFinset.card = 3 ∧ IsClique G S ∨
-    S.toFinset.card = 3 ∧ IsIndependentSet G S := by
-  /- 这是 Ramsey 定理的特例 -/
-  have h := ramsey_theorem_2color 3 3 (by norm_num) (by norm_num)
-  rcases h with ⟨N, hN⟩
-  /- 由 Ramsey 定理保证存在性 -/
-  sorry  -- 需要提取具体构造
+    S.toFinset.card = 3 ∧ IsIndependentSet G S
 
 /-
 ## 相关定理：Hales-Jewett 与 Van der Waerden

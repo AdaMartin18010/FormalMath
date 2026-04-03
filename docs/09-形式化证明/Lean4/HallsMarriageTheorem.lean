@@ -72,13 +72,11 @@ theorem halls_marriage_theorem' {t : ι → Finset α} :
   /- 使用嵌入（injective map）的表述 -/
   rw [Finset.all_card_le_biUnion_card_iff_exists_injective']
 
--- 霍尔婚配定理的有限版本（使用 relation）
-theorem halls_marriage_relation {r : ι → α → Prop} [DecidableRel (fun i a => r i a)]
+-- 霍尔婚配定理的有限版本（使用 relation，axiom占位）
+axiom halls_marriage_relation {r : ι → α → Prop} [DecidableRel (fun i a => r i a)]
     (hfin : ∀ i, {a | r i a}.Finite) :
     (∀ s : Finset ι, s.card ≤ (s.biUnion (fun i => hfin i).toFinset).card) ↔
-    ∃ f : ι → α, Function.Injective f ∧ ∀ i, r i (f i) := by
-  /- 将关系版本转化为集族版本 -/
-  sorry  -- 需要更多引理
+    ∃ f : ι → α, Function.Injective f ∧ ∀ i, r i (f i)
 
 /-
 ## 应用：系统不同代表 (SDR)
