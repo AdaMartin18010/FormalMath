@@ -1,0 +1,190 @@
+% =============================================================================
+% 课程论文LaTeX模板
+% FormalMath项目学术写作支持系统
+% 适用：数学课程论文、学期论文（5-20页）
+% =============================================================================
+
+\documentclass[12pt,a4paper]{article}
+
+% ==================== 宏包引入 ====================
+% 中文支持（使用XeLaTeX编译）
+\usepackage{ctex}
+
+% 页面设置
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% 数学宏包
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+
+% 定理环境设置
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{example}[theorem]{例子}
+\newtheorem{remark}[theorem]{注记}
+
+% 图表支持
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows,shapes,positioning}
+
+% 参考文献
+\usepackage[numbers]{natbib}
+\bibliographystyle{amsplain}
+
+% 超链接
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% 页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 课程名称}
+\fancyhead[R]{\small 论文标题}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% 行间距
+\usepackage{setspace}
+\onehalfspacing
+
+% 列表设置
+\usepackage{enumitem}
+
+% ==================== 文档信息 ====================
+\title{\textbf{论文标题}}
+\author{作者姓名 \\ 学号：12345678 \\ 学校/院系}
+\date{\today}
+
+% ==================== 正文开始 ====================
+\begin{document}
+
+\maketitle
+
+% ==================== 摘要 ====================
+\begin{abstract}
+这是摘要。摘要应该独立概述全文，包括研究背景、主要内容、方法和主要结果。
+长度通常在150-250词之间。
+
+\vspace{1em}
+\noindent\textbf{关键词：} 关键词1；关键词2；关键词3
+\end{abstract}
+
+% ==================== 正文 ====================
+\section{引言}
+
+引言应该：
+\begin{enumerate}
+    \item 引入研究主题，说明背景和动机
+    \item 陈述本文要解决的问题
+    \item 简要回顾相关文献
+    \item 概述论文的结构
+\end{enumerate}
+
+\subsection{背景}
+
+从读者熟悉的内容开始，逐步引入主题。
+
+\subsection{问题陈述}
+
+明确说明本文要研究的具体问题。
+
+\subsection{论文结构}
+
+本文结构如下。第\ref{sec:prelim}节介绍必要的预备知识。第\ref{sec:main}节呈现主要结果。第\ref{sec:applications}节讨论应用和例子。最后，第\ref{sec:conclusion}节总结全文。
+
+% ==================== 预备知识 ====================
+\section{预备知识}\label{sec:prelim}
+
+本节回顾必要的定义和已知结果。
+
+\begin{definition}\label{def:example}
+这是一个定义示例。
+\end{definition}
+
+\begin{theorem}[已知定理]\label{thm:known}
+这是一个已知的定理陈述。
+\end{theorem}
+
+\begin{proof}
+这里可以给出证明或引用参考文献。
+\end{proof}
+
+% ==================== 主要结果 ====================
+\section{主要结果}\label{sec:main}
+
+本节陈述并证明本文的主要结果。
+
+\begin{theorem}[主要定理]\label{thm:main}
+这是本文的主要定理。
+\end{theorem}
+
+\begin{proof}
+证明应该清晰、完整，每一步都有明确说明。
+\end{proof}
+
+\begin{corollary}\label{cor:main}
+这是从主要定理得出的推论。
+\end{corollary}
+
+% ==================== 应用与例子 ====================
+\section{应用与例子}\label{sec:applications}
+
+本节通过具体例子说明理论的应用。
+
+\begin{example}
+这是一个具体的例子。
+\end{example}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}
+        % 在这里添加图形代码
+        \draw[->] (-2,0) -- (2,0) node[right] {$x$};
+        \draw[->] (0,-1) -- (0,2) node[above] {$y$};
+        \draw[domain=-1.5:1.5,smooth,variable=\x,blue] plot (\x,{\x*\x});
+    \end{tikzpicture}
+    \caption{函数 $y=x^2$ 的图像}
+    \label{fig:example}
+\end{figure}
+
+% ==================== 结论 ====================
+\section{结论}\label{sec:conclusion}
+
+结论应该：
+\begin{itemize}
+    \item 总结主要结果
+    \item 讨论局限性和未解决问题
+    \item 展望未来研究方向
+\end{itemize}
+
+% ==================== 参考文献 ====================
+\newpage
+\bibliography{references}
+
+% ==================== 附录（可选） ====================
+\appendix
+\section{补充证明}
+
+这里可以放置详细的补充材料。
+
+\end{document}
+% =============================================================================
+% 使用说明：
+% 1. 确保已安装TeX发行版（TeX Live或MiKTeX）
+% 2. 使用XeLaTeX编译
+% 3. 如需参考文献，创建references.bib文件
+% 4. 根据具体课程要求调整页眉信息
+% =============================================================================
