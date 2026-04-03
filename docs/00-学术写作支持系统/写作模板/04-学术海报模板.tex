@@ -1,0 +1,217 @@
+% =============================================================================
+% 学术海报模板
+% FormalMath项目学术写作支持系统
+% 适用：学术会议海报展示
+% 尺寸：A0 (841mm × 1189mm)
+% =============================================================================
+
+\documentclass[a0paper,portrait]{baposter}
+
+% ==================== 宏包 ====================
+% 中文支持
+\usepackage{ctex}
+
+% 数学
+\usepackage{amsmath,amssymb,amsthm}
+
+% 图形
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows,shapes}
+
+% 颜色
+\usepackage{xcolor}
+
+% 字体
+\usepackage{relsize}
+
+% 多栏
+\usepackage{multicol}
+
+% ==================== 颜色定义 ====================
+\definecolor{maincolor}{RGB}{31, 78, 121}
+\definecolor{accentcolor}{RGB}{192, 80, 77}
+\definecolor{boxcolor}{RGB}{240, 240, 240}
+\definecolor{headercolor}{RGB}{200, 220, 240}
+
+% ==================== 海报设置 ====================
+\begin{document}
+
+\begin{poster}{
+    % 海报选项
+    grid=false,
+    columns=2,
+    colspacing=1em,
+    headerheight=0.12\textheight,
+    background=user,
+    bgColorOne=white,
+    headershape=rounded,
+    headershade=plain,
+    headerColorOne=maincolor,
+    headerColorTwo=maincolor,
+    headerfont=\Large\bfseries\color{white},
+    boxshade=plain,
+    boxColorOne=boxcolor,
+    boxColorTwo=boxcolor,
+    textborder=faded,
+    boxheaderheight=2em,
+    headerborder=open,
+    boxpadding=1em
+}
+% ==================== 标题区 ====================
+{
+    % 标题
+    \bfseries\Huge 海报标题：研究的简短描述\\[0.3em]
+    \Large 作者姓名\textsuperscript{1}, 合作者\textsuperscript{2}\\[0.2em]
+    \large \textsuperscript{1}学校/院系，\textsuperscript{2}合作机构\\[0.2em]
+    \normalsize 联系邮箱：email@example.com
+}
+% ==================== 左侧列 ====================
+{
+    % 1. 引言
+    \begin{posterbox}{1. 引言}
+        \textbf{研究背景：}
+
+        简要介绍研究背景，说明为什么这个问题重要。限制在100字以内。
+
+        \vspace{0.5em}
+
+        \textbf{核心问题：}
+
+        明确陈述研究要解决的具体问题。可以使用项目符号：
+        \begin{itemize}
+            \item 问题1
+            \item 问题2
+        \end{itemize}
+    \end{posterbox}
+
+    % 2. 预备知识/方法
+    \begin{posterbox}{2. 方法与工具}
+        \textbf{主要工具：}
+
+        介绍使用的主要数学工具或方法。
+
+        \vspace{0.5em}
+
+        \begin{center}
+        \begin{tikzpicture}[scale=1.5]
+            % 方法示意图
+            \node[draw, rounded corners, fill=white] (A) at (0,0) {输入};
+            \node[draw, rounded corners, fill=white] (B) at (3,0) {处理};
+            \node[draw, rounded corners, fill=white] (C) at (6,0) {输出};
+            \draw[->, thick] (A) -- (B);
+            \draw[->, thick] (B) -- (C);
+        \end{tikzpicture}
+        \end{center}
+
+        \vspace{0.5em}
+
+        流程说明文字...
+    \end{posterbox}
+
+    % 3. 关键定义
+    \begin{posterbox}{3. 关键定义}
+        \textbf{定义 3.1} 关键概念的定义。
+
+        \[
+        f(x) = \sum_{n=0}^{\infty} a_n x^n
+        \]
+
+        \vspace{0.5em}
+
+        \textbf{记号说明：}
+
+        \begin{tabular}{ll}
+            $\mathbb{R}$ & 实数集 \\
+            $\mathbb{C}$ & 复数集 \\
+            $GL_n$ & 一般线性群
+        \end{tabular}
+    \end{posterbox}
+}
+% ==================== 右侧列 ====================
+{
+    % 4. 主要结果
+    \begin{posterbox}{4. 主要结果}
+        \textbf{定理 4.1}（主要定理）
+
+        陈述主要定理。使用框突出重要结果。
+
+        \begin{center}
+        \fbox{\parbox{0.9\linewidth}{
+            \centering
+            \textbf{核心等式}\\[0.5em]
+            $\displaystyle E = mc^2$
+        }}
+        \end{center}
+
+        \vspace{0.5em}
+
+        \textbf{证明概要：}
+
+        简要说明证明的主要步骤...
+    \end{posterbox}
+
+    % 5. 例子与应用
+    \begin{posterbox}{5. 例子与应用}
+        \textbf{示例 5.1}
+
+        一个具体的例子说明理论的应用。
+
+        \vspace{0.5em}
+
+        \begin{center}
+        \begin{tikzpicture}[scale=2]
+            \draw[->] (-1.5,0) -- (1.5,0) node[right] {$x$};
+            \draw[->] (0,-0.5) -- (0,1.5) node[above] {$y$};
+            \draw[thick, blue, domain=-1:1, samples=50] plot (\x, {\x*\x});
+            \node at (1.2,1) {$y=x^2$};
+        \end{tikzpicture}
+        \end{center}
+
+        图1：示例函数图像
+    \end{posterbox}
+
+    % 6. 结论与参考文献
+    \begin{posterbox}{6. 结论与参考文献}
+        \textbf{主要结论：}
+        \begin{itemize}
+            \item 结论1
+            \item 结论2
+            \item 未来研究方向
+        \end{itemize}
+
+        \vspace{0.5em}
+
+        \textbf{参考文献：}
+
+        \begin{enumerate}[{[1]}]
+            \item J. Smith, \textit{Important Results}, J. Math. 2020.
+            \item A. Jones, \textit{Related Work}, Ann. Math. 2021.
+            \item 基金资助信息（如有）
+        \end{enumerate}
+
+        \vspace{1em}
+
+        \begin{center}
+        \textbf{欢迎扫描二维码获取论文预印本！}
+
+        \vspace{0.5em}
+
+        % 放置二维码
+        \framebox(2cm,2cm){二维码}
+        \end{center}
+    \end{posterbox}
+}
+
+\end{poster}
+\end{document}
+% =============================================================================
+% 使用说明：
+% 1. 使用XeLaTeX编译
+% 2. 需要安装baposter宏包
+% 3. 打印前检查分辨率（建议150-300 DPI）
+% 4. 内容简洁，突出重点
+% 5. 字体大小确保1米外可读
+% 6. 准备1分钟和5分钟两种介绍版本
+% =============================================================================

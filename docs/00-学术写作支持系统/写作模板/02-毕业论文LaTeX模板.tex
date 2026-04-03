@@ -1,0 +1,326 @@
+% =============================================================================
+% 毕业论文LaTeX模板
+% FormalMath项目学术写作支持系统
+% 适用：本科/硕士毕业论文（50+页）
+% =============================================================================
+
+\documentclass[12pt,a4paper]{report}
+
+% ==================== 宏包引入 ====================
+% 中文支持
+\usepackage{ctex}
+
+% 页面设置
+\usepackage{geometry}
+\geometry{left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
+
+% 数学宏包
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+
+% 定理环境
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{example}[theorem]{例子}
+\newtheorem{remark}[theorem]{注记}
+\newtheorem{conjecture}[theorem]{猜想}
+
+% 图表
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows,shapes,positioning,calc}
+
+% 参考文献
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{amsplain}
+
+% 超链接
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    bookmarksnumbered=true,
+    pdftitle={毕业论文标题},
+    pdfauthor={作者姓名}
+}
+
+% 页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\small\nouppercase{\leftmark}}
+\fancyhead[RE]{\small\nouppercase{\rightmark}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% 行间距
+\usepackage{setspace}
+\onehalfspacing
+
+% 列表
+\usepackage{enumitem}
+
+% 算法
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% 代码（如需要）
+\usepackage{listings}
+
+% 符号表
+\usepackage{nomencl}
+\makenomenclature
+
+% 索引（可选）
+\usepackage{makeidx}
+\makeindex
+
+% ==================== 文档信息 ====================
+\title{\Huge\textbf{毕业论文标题}\\[1em]
+\Large 副标题（如有）}
+\author{作者姓名}
+\date{\today}
+
+% ==================== 正文开始 ====================
+\begin{document}
+
+% ==================== 封面 ====================
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    {\Huge\bfseries 学校名称}
+
+    \vspace{1cm}
+
+    {\LARGE 院系名称}
+
+    \vspace{2cm}
+
+    \rule{\textwidth}{1pt}
+
+    \vspace{0.5cm}
+
+    {\Huge\bfseries 毕业论文}
+
+    \vspace{0.5cm}
+
+    \rule{\textwidth}{1pt}
+
+    \vspace{2cm}
+
+    {\LARGE\bfseries 论文标题}
+
+    \vspace{0.5cm}
+
+    {\Large 副标题（如有）}
+
+    \vspace{3cm}
+
+    \begin{tabular}{rl}
+        \textbf{作者：} & 姓名 \\[0.5em]
+        \textbf{学号：} & 12345678 \\[0.5em]
+        \textbf{专业：} & 数学与应用数学 \\[0.5em]
+        \textbf{导师：} & 导师姓名 教授 \\[0.5em]
+        \textbf{日期：} & \today
+    \end{tabular}
+
+    \vfill
+\end{titlepage}
+
+% ==================== 摘要 ====================
+\chapter*{摘要}
+\addcontentsline{toc}{chapter}{摘要}
+
+这是中文摘要。应该包含：
+\begin{itemize}
+    \item 研究背景和动机
+    \item 研究问题
+    \item 主要方法
+    \item 主要结果
+    \item 研究意义
+\end{itemize}
+
+\vspace{1em}
+\noindent\textbf{关键词：} 关键词1；关键词2；关键词3
+
+\newpage
+
+% ==================== Abstract ====================
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+This is the English abstract. It should mirror the content of the Chinese abstract.
+
+\vspace{1em}
+\noindent\textbf{Keywords:} keyword1; keyword2; keyword3
+
+\newpage
+
+% ==================== 致谢 ====================
+\chapter*{致谢}
+\addcontentsline{toc}{chapter}{致谢}
+
+感谢导师的悉心指导...感谢家人的支持...感谢同学的帮助...
+
+\newpage
+
+% ==================== 目录 ====================
+\tableofcontents
+\newpage
+
+% ==================== 符号表 ====================
+\chapter*{符号表}
+\addcontentsline{toc}{chapter}{符号表}
+
+\begin{tabular}{ll}
+    $\mathbb{N}$ & 自然数集 \\
+    $\mathbb{Z}$ & 整数集 \\
+    $\mathbb{Q}$ & 有理数集 \\
+    $\mathbb{R}$ & 实数集 \\
+    $\mathbb{C}$ & 复数集 \\
+    $\mathbb{F}_q$ & 有$q$个元素的有限域 \\
+    $GL_n(F)$ & 域$F$上的一般线性群 \\
+    $SL_n(F)$ & 域$F$上的特殊线性群
+\end{tabular}
+
+\newpage
+
+% ==================== 第1章 引言 ====================
+\chapter{引言}\label{ch:intro}
+
+\section{研究背景}
+
+介绍研究主题的背景，从一般到具体。
+
+\section{问题陈述}
+
+明确陈述本文要研究的具体问题。
+
+\section{文献综述}
+
+\subsection{早期工作}
+
+回顾相关领域的历史发展。
+
+\subsection{近期进展}
+
+介绍最新的研究成果。
+
+\section{本文贡献}
+
+明确列出本文的主要贡献：
+\begin{enumerate}
+    \item 贡献1
+    \item 贡献2
+    \item 贡献3
+\end{enumerate}
+
+\section{论文结构}
+
+本文结构如下：
+\begin{itemize}
+    \item 第\ref{ch:prelim}章介绍必要的预备知识
+    \item 第\ref{ch:main}章陈述并证明主要结果
+    \item 第\ref{ch:applications}章讨论应用和例子
+    \item 第\ref{ch:conclusion}章总结全文并展望未来
+\end{itemize}
+
+% ==================== 第2章 预备知识 ====================
+\chapter{预备知识}\label{ch:prelim}
+
+本章回顾本文所需的定义和已知结果。
+
+\section{基本概念}
+
+\begin{definition}\label{def:fundamental}
+基本概念的定义。
+\end{definition}
+
+\begin{example}
+说明基本概念的简单例子。
+\end{example}
+
+\section{主要工具}
+
+\begin{theorem}[经典结果]\label{thm:classical}
+重要的经典定理。
+\end{theorem}
+
+\begin{proof}
+证明或参考文献。
+\end{proof}
+
+% ==================== 第3章 主要结果 ====================
+\chapter{主要结果}\label{ch:main}
+
+本章陈述并证明本文的主要结果。
+
+\section{主要定理}
+
+\begin{theorem}[主要结果]\label{thm:main}
+本文的主要定理。
+\end{theorem}
+
+\begin{proof}
+详细的证明过程...
+\end{proof}
+
+\section{推论与应用}
+
+\begin{corollary}\label{cor:first}
+第一个重要推论。
+\end{corollary}
+
+% ==================== 第4章 应用 ====================
+\chapter{应用与例子}\label{ch:applications}
+
+\section{具体例子}
+
+通过具体例子说明理论的应用。
+
+\section{数值结果（如适用）}
+
+如果涉及计算，展示数值结果。
+
+% ==================== 第5章 结论 ====================
+\chapter{结论与展望}\label{ch:conclusion}
+
+\section{工作总结}
+
+总结本文的主要成果。
+
+\section{局限性与未来工作}
+
+讨论本文的局限性，并提出未来研究的方向。
+
+% ==================== 参考文献 ====================
+\newpage
+\bibliography{references}
+
+% ==================== 附录 ====================
+\appendix
+\chapter{补充证明}
+
+这里可以放置详细的技术性证明。
+
+\chapter{计算细节}
+
+如果需要，放置详细的计算过程。
+
+\end{document}
+% =============================================================================
+% 使用说明：
+% 1. 使用XeLaTeX编译
+% 2. 需要创建references.bib文件
+% 3. 根据学校要求调整封面格式
+% 4. 编译顺序：XeLaTeX → BibTeX → XeLaTeX × 2
+% =============================================================================
