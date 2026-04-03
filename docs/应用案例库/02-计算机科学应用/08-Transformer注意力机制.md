@@ -1,3 +1,8 @@
+---
+msc_primary: "68Txx"
+msc_secondary: "94Axx"
+---
+
 # Transformer注意力机制的数学原理
 
 ## 概述

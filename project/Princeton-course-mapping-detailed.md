@@ -29,8 +29,10 @@
   - [4.2 MAT 447: 交换代数](#42-mat-447-交换代数)
 - [五、前置课程关系图](#五前置课程关系图)
 - [六、学习路径建议](#六学习路径建议)
-- [七、四校对比分析](#七四校对比分析)
-- [八、附录](#八附录)
+- [七、Junior Seminar 与 Senior Thesis](#七junior-seminar-与-senior-thesis)
+- [八、核心课程教材推荐](#八核心课程教材推荐)
+- [九、四校对比分析](#九四校对比分析)
+- [十、附录](#十附录)
 
 ---
 
@@ -428,7 +430,81 @@ Senior Thesis / 研究生课程
 
 ---
 
-## 七、四校对比分析
+## 七、Junior Seminar 与 Senior Thesis
+
+Princeton 的本科培养体系高度重视**独立研究能力**的培养，Junior Seminar 与 Senior Thesis 是其标志性环节。
+
+### 7.1 Junior Seminar（三年级研讨课）
+
+| 项目 | 内容 |
+|------|------|
+| **性质** | 小班研讨课，通常由资深教授主持 |
+| **目标** | 训练学生阅读原始文献、进行口头报告与学术写作 |
+| **典型主题** | 代数几何前沿、模形式、动力系统、组合数学等（随教授轮换） |
+| **FormalMath 对应** | `docs/00-评估系统/` 的文献阅读与报告标准；`数学家理念体系/` 的历史与传记文档 |
+
+**推荐资源**：
+- Princeton Math Junior Seminar 主页：https://www.math.princeton.edu/undergraduate/junior-seminar
+- 历年主题与讲义：以当学年 Department 公布为准
+
+### 7.2 Senior Thesis（毕业论文）
+
+| 项目 | 内容 |
+|------|------|
+| **性质** | 每位数学专业学生（含 A.B. 与证书项目）通常需完成的原创研究或综述论文 |
+| **目标** | 在导师指导下完成一个深入的数学课题，培养独立研究能力 |
+| **长度** | 通常 30–60 页 |
+| **FormalMath 对应** | 项目中的 `docs/参考文献标准/` 与 `思维表征.md` 的写作规范可作为论文写作参考 |
+
+**推荐资源**：
+- Princeton Senior Thesis 指南：https://www.math.princeton.edu/undergraduate/senior-thesis
+- 历年优秀论文库（Math Library）：https://www.math.princeton.edu/undergraduate/honors
+
+### 7.3 研究型学习路径
+
+```
+Junior Year Fall
+├── 选修 Junior Seminar
+│   └── 使用 FormalMath 术语词典梳理论文概念
+│   └── 重点：学会用 LaTeX 写数学论文
+
+Junior Year Spring
+├── 确定 Senior Thesis 方向
+│   └── 与导师（如 Kollár、Bhargava 等）初步沟通
+│   └── 使用 FormalMath 对应分支文档打基础
+
+Senior Year
+├── Fall: 文献阅读与核心证明理解
+├── Spring: 论文撰写与答辩准备
+└── 关键技能: 独立发现、严格证明、学术表达
+```
+
+---
+
+## 八、核心课程教材推荐
+
+以下为 Princeton 10 门核心课程的关键教材推荐，与 FormalMath 文档形成"教材 + 项目资源"的双轨学习模式。
+
+| 课程 | 核心教材 | 作者 | 出版社/版本 | 与 FormalMath 配套使用建议 |
+|------|---------|------|------------|---------------------------|
+| **MAT 215** | *Principles of Mathematical Analysis* | W. Rudin | McGraw-Hill, 3rd ed. | 配合 `docs/03-分析学/01-实分析/` 深度扩展版使用 |
+| **MAT 217** | *Linear Algebra Done Right* | S. Axler | Springer, 4th ed. | 配合 `docs/02-代数结构/02-核心理论/线性代数/` 系列 |
+| **MAT 218** | *Analysis on Manifolds* | J. Munkres | Addison-Wesley | 配合 `docs/14-微分几何/` 与 `03-分析学/01-实分析/` |
+| **MAT 330/335** | *Complex Analysis* | E. Stein & R. Shakarchi | Princeton Lectures in Analysis, Vol. 2 | 配合 `docs/03-分析学/02-复分析/` 全套 |
+| **MAT 345** | *Algebra* | M. Artin | Pearson, 2nd ed. | 配合 `docs/02-代数结构/02-核心理论/群论/` |
+| **MAT 346** | *Galois Theory* | I. Stewart | CRC Press, 4th ed. | 配合 `docs/02-代数结构/02-核心理论/域论/` |
+| **MAT 355** | *Riemannian Geometry* | M. do Carmo | Birkhäuser | 配合 `docs/14-微分几何/04-黎曼几何-深度扩展版.md` |
+| **MAT 365** | *Algebraic Topology* | A. Hatcher | Cambridge, 2002 (免费电子版) | 配合 `docs/05-拓扑学/02-代数拓扑.md` 及深度扩展版 |
+| **MAT 416** | *Algebraic Geometry* | R. Hartshorne | Springer, GTM 52 | 配合 `格洛腾迪克/02-概形理论/` 与 `03-上同调理论/` |
+| **MAT 447** | *Introduction to Commutative Algebra* | M. Atiyah & I. Macdonald | Addison-Wesley | 配合 `docs/02-代数结构/02-核心理论/交换代数/` |
+
+**附加推荐**：
+- **MAT 416 补充**：R. Vakil, *Foundations of Algebraic Geometry* (FOAG, Oct 2025)。与 Hartshorne 形成互补，FOAG 更注重直观与例子。
+- **MAT 447 补充**：D. Eisenbud, *Commutative Algebra with a View Toward Algebraic Geometry* (GTM 150)。内容更为详尽，适合进阶阅读。
+
+---
+
+## 九、四校对比分析
 
 ### 7.1 入门分析课程对比
 
@@ -464,7 +540,7 @@ Senior Thesis / 研究生课程
 
 ---
 
-## 八、附录
+## 十、附录
 
 ### 8.1 官方资源链接
 
