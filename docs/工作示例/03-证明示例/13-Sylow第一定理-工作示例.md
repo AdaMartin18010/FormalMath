@@ -1,3 +1,8 @@
+---
+msc_primary: "03E20"
+msc_secondary: ['12Exx', '13Cxx', '03Exx']
+---
+
 # Sylow 第一定理 - 工作示例
 
 **类型**: 证明示例

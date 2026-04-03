@@ -1,3 +1,8 @@
+---
+msc_primary: "12Fxx"
+msc_secondary: ['46Cxx', '65Dxx', '68Vxx']
+---
+
 # Heine-Borel定理 - 五种表征
 
 **创建日期**: 2025年12月1日

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['11Axx', '03Bxx', '13Cxx']
+---
+
 # FormalMath项目持续改进推进报告 - 基数与序数完善
 
 ## 📋 报告概述

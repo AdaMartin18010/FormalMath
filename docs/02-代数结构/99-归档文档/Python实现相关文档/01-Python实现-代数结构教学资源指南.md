@@ -1,3 +1,8 @@
+---
+msc_primary: "12F10"
+msc_secondary: ['17-XX', '11Rxx', '22Exx']
+---
+
 # 代数结构Python实现教学资源指南
 
 ## 概述

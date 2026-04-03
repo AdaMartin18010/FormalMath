@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['62Fxx', '03Cxx', '03B40']
+---
+
 # FormalMath文档内容质量标准
 
 **制定日期**: 2025年12月31日

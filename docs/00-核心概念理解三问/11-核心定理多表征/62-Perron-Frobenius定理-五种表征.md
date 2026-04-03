@@ -1,4 +1,9 @@
-﻿# Perron-Frobenius定理 - 五种表征
+---
+msc_primary: "12Fxx"
+msc_secondary: ['15Axx', '60Gxx', '68Vxx']
+---
+
+# Perron-Frobenius定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 线性代数/马尔可夫链

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['14Nxx', '16-XX', '68Qxx']
+---
+
 # FormalMath项目第四阶段执行进度报告
 
 ## 📊 执行概况

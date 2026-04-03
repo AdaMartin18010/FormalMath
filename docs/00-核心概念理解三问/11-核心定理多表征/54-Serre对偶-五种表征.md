@@ -1,3 +1,8 @@
+---
+msc_primary: "12Fxx"
+msc_secondary: ['14-XX', '55Nxx', '68Vxx']
+---
+
 # Serre对偶定理 - 五种表征
 
 **创建日期**: 2025年12月1日

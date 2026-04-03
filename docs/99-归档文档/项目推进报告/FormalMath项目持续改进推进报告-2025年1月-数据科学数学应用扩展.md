@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['12Exx', '03Bxx', '13Cxx']
+---
+
 # FormalMath项目持续改进推进报告 - 数据科学数学应用扩展
 
 ## 📋 报告概述

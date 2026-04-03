@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['03B20', '12Exx', '26A42']
+---
+
 # Rolle 定理证明 - 工作示例
 
 **类型**: 证明示例

@@ -1,3 +1,8 @@
+---
+msc_primary: "12Fxx"
+msc_secondary: ['49-XX', '68Vxx', '68V20']
+---
+
 # Noether定理 - 五种表征
 
 **创建日期**: 2025年12月1日

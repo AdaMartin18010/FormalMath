@@ -1,3 +1,8 @@
+---
+msc_primary: "20-XX"
+msc_secondary: ['16-XX', '20-XX', '55Nxx']
+---
+
 # Poincaré对偶 - 五种表征
 
 **创建日期**: 2025年12月1日

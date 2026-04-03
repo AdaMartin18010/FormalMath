@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['97-XX', '00-XX', '01Axx']
+---
+
 # FormalMath项目100%完成最终确认报告 - 2025年1月 / FormalMath Project 100% Completion Final Confirmation Report - January 2025
 
 ## 目录

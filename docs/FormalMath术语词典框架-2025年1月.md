@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['14Nxx', '97-XX', '55-XX']
+---
+
 # FormalMath术语词典框架 - 2025年1月
 
 ## 📋 词典概述

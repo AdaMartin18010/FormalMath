@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['13Cxx', '01Axx', '03B40']
+---
+
 # FormalMath项目文件命名规范
 
 **制定日期**: 2025年12月29日

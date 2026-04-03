@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['12Exx', '22E47', '13Cxx']
+---
+
 # FormalMath术语标准化推进报告 - 2025年1月
 
 ## 📊 推进概况

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX', '03B35']
+---
+
 # CI 门禁与周报生成说明
 
 ## 触发

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['14Nxx', '22E47', '16-XX']
+---
+
 # FormalMath国际标准对齐推进报告 - 2025年1月
 
 ## 📊 推进概况

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['11Axx', '03-XX', '03Exx']
+---
+
 # FormalMath项目持续改进推进报告 - Lean4证明完善
 
 ## 📋 报告概述

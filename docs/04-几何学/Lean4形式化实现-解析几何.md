@@ -1,3 +1,8 @@
+---
+msc_primary: "14-XX"
+msc_secondary: ['53A04', '14Nxx', '14Cxx']
+---
+
 # Lean4形式化实现-解析几何 / Lean4 Formal Implementation - Analytic Geometry
 
 ## 📊 执行概况

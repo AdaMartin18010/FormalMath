@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['03Bxx', '13Cxx', '68Qxx']
+---
+
 # FormalMath质量保证机制推进报告 - 2025年1月
 
 ## 📊 推进概况

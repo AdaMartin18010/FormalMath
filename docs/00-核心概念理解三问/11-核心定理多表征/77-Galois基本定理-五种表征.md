@@ -1,4 +1,9 @@
-﻿# Galois基本定理 - 五种表征
+---
+msc_primary: "20-XX"
+msc_secondary: ['20-XX', '12Fxx', '68Wxx']
+---
+
+# Galois基本定理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 域论/Galois理论

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['11Sxx', '12Exx', '11Axx']
+---
+
 # FormalMath域论分支100%完成报告
 
 ## 📊 项目完成概况

@@ -1,3 +1,8 @@
+---
+msc_primary: "12Fxx"
+msc_secondary: ['46-XX', '46Axx', '68Vxx']
+---
+
 # Ascoli-Arzelà定理 - 五种表征
 
 **创建日期**: 2025年12月1日

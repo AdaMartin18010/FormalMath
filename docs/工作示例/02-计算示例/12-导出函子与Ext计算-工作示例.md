@@ -1,3 +1,8 @@
+---
+msc_primary: "08-XX"
+msc_secondary: ['12Exx', '13Cxx', '13Dxx']
+---
+
 # 导出函子与 Ext 计算（Z-模） - 工作示例
 
 **类型**: 计算示例

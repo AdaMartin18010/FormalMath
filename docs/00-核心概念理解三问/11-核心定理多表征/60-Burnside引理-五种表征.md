@@ -1,4 +1,9 @@
-﻿# Burnside引理 - 五种表征
+---
+msc_primary: "20-XX"
+msc_secondary: ['20-XX', '62-XX', '68Vxx']
+---
+
+# Burnside引理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 组合学/群论

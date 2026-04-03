@@ -1,4 +1,9 @@
-﻿# Nakayama引理 - 五种表征
+---
+msc_primary: "16-XX"
+msc_secondary: ['16-XX', '13-XX', '14-XX']
+---
+
+# Nakayama引理 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 交换代数

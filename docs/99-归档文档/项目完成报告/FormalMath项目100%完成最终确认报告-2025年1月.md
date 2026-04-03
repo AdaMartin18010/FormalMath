@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['14Nxx', '12Exx', '13Cxx']
+---
+
 # FormalMath项目100%完成最终确认报告
 
 ## 📊 项目完成概况

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # FormalMath项目文档格式规范
 
 **制定日期**: 2025年12月29日

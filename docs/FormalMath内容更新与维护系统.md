@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['12Exx', '03B35', '03B40']
+---
+
 # FormalMath内容更新与维护系统
 
 ## 概述

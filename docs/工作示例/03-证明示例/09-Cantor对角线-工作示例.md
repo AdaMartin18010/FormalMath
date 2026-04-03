@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['12Exx', '22E47', '03Exx']
+---
+
 # Cantor 对角线 - 工作示例
 
 **类型**: 证明示例

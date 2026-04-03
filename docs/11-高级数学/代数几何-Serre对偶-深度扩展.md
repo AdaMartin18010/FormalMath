@@ -1,3 +1,8 @@
+---
+msc_primary: "20Cxx"
+msc_secondary: ['13Dxx', '20-XX', '22E47']
+---
+
 # 代数几何：Serre 对偶 - 深度扩展
 
 ## 目录

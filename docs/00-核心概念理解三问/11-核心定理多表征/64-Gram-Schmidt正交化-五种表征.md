@@ -1,4 +1,9 @@
-﻿# Gram-Schmidt正交化 - 五种表征
+---
+msc_primary: "12Fxx"
+msc_secondary: ['15Axx', '68Vxx', '68Wxx']
+---
+
+# Gram-Schmidt正交化 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 线性代数

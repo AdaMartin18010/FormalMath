@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['12Exx', '13Cxx', '16-XX']
+---
+
 # FormalMath项目持续改进推进总结 - 数系构造完善
 
 ## 📋 总结概述

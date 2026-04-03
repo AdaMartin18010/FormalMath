@@ -1,4 +1,9 @@
-﻿# FormalMath术语词典 - 分析学
+---
+msc_primary: "00A99"
+msc_secondary: ['62Fxx', '01Axx', '34-XX']
+---
+
+# FormalMath术语词典 - 分析学
 
 ## 统一分析学术语标准定义
 

@@ -1,4 +1,9 @@
-﻿# FormalMath定义表述模板
+---
+msc_primary: "00A99"
+msc_secondary: ['22E47', '13Cxx', '03Exx']
+---
+
+# FormalMath定义表述模板
 
 ## 标准化数学定义表述格式指南
 

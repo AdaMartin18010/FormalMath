@@ -1,4 +1,9 @@
-﻿# FormalMath术语词典 - 几何学
+---
+msc_primary: "00A99"
+msc_secondary: ['62Fxx', '01Axx', '52-XX']
+---
+
+# FormalMath术语词典 - 几何学
 
 ## 统一几何学术语标准定义
 

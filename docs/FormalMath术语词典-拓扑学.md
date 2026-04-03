@@ -1,4 +1,9 @@
-﻿# FormalMath术语词典 - 拓扑学
+---
+msc_primary: "00A99"
+msc_secondary: ['54Bxx', '62Fxx', '55-XX']
+---
+
+# FormalMath术语词典 - 拓扑学
 
 ## 统一拓扑学术语标准定义
 

@@ -1,3 +1,8 @@
+---
+msc_primary: "14Hxx"
+msc_secondary: ['14A15', '18F20', '14-XX']
+---
+
 # Lean4形式化实现-代数几何 / Lean 4 Formalization - Algebraic Geometry
 
 ## 目录 / Table of Contents

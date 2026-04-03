@@ -1,4 +1,9 @@
-﻿# L'Hôpital法则 - 五种表征
+---
+msc_primary: "12Fxx"
+msc_secondary: ['28-XX', '65Dxx', '26-XX']
+---
+
+# L'Hôpital法则 - 五种表征
 
 **创建日期**: 2025年12月1日
 **领域**: 微积分

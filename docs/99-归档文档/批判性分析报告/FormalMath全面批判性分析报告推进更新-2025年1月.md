@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['26A42', '55-XX', '97-XX']
+---
+
 # FormalMath全面批判性分析报告推进更新 - 2025年1月
 
 ## 📋 推进概述

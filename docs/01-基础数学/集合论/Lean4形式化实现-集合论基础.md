@@ -1,3 +1,8 @@
+---
+msc_primary: "03E20"
+msc_secondary: ['03E30', '03E15', '68Vxx']
+---
+
 # 集合论基础 - Lean4形式化实现 / Set Theory Foundation - Lean4 Formal Implementation
 
 ## 目录

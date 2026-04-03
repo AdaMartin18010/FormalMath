@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['14Nxx', '68Qxx', '97-XX']
+---
+
 # FormalMath交互式学习内容推进报告 - 2025年1月
 
 ## 📊 推进概况

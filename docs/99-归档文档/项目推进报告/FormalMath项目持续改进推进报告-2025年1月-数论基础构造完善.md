@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['11Axx', '68Qxx', '11Dxx']
+---
+
 # FormalMath项目持续改进推进报告 - 数论基础构造完善
 
 ## 📋 报告概述

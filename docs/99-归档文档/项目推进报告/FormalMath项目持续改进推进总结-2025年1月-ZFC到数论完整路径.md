@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['11Axx', '03Bxx', '68Qxx']
+---
+
 # FormalMath项目持续改进推进总结 - ZFC到数论完整路径
 
 ## 📋 总结概述

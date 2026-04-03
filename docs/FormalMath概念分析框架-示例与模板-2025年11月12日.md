@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['03Bxx', '13Cxx', '03-XX']
+---
+
 # FormalMath概念分析框架 - 示例与模板
 
 ## 📋 框架概述

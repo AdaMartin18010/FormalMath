@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['12Exx', '26A42', '52-XX']
+---
+
 # Stokes 定理求面积 - 工作示例
 
 **类型**: 应用示例

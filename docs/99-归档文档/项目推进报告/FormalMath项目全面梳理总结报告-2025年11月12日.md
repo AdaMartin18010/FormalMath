@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['11Axx', '13Cxx', '16-XX']
+---
+
 # FormalMath项目全面梳理总结报告 - 2025年11月12日
 
 ## 📋 报告概述

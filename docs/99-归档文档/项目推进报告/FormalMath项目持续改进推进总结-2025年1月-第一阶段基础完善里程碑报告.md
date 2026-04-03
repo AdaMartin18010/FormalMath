@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['11Axx', '03Bxx', '16-XX']
+---
+
 # FormalMath项目持续改进推进总结 - 第一阶段基础完善里程碑报告
 
 ## 📋 里程碑报告概述

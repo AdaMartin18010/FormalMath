@@ -1,4 +1,9 @@
-﻿# FormalMath术语词典 - 基础数学
+---
+msc_primary: "00A99"
+msc_secondary: ['03B20', '03Bxx', '11-XX']
+---
+
+# FormalMath术语词典 - 基础数学
 
 ## 统一数学术语标准定义
 

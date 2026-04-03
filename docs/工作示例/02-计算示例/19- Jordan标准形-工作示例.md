@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['12Exx', '16-XX', '52-XX']
+---
+
 # Jordan 标准形 - 工作示例
 
 **类型**: 计算示例

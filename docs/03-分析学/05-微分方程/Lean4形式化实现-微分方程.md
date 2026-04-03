@@ -1,3 +1,8 @@
+---
+msc_primary: "35-XX"
+msc_secondary: ['35Bxx', '35-XX', '60Gxx']
+---
+
 # 微分方程 - Lean4形式化实现 / Differential Equations - Lean4 Formalization
 
 ## 概述 / Overview

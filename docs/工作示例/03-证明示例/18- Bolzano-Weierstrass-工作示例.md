@@ -1,3 +1,8 @@
+---
+msc_primary: "12Fxx"
+msc_secondary: ['12Exx', '03B35', '03B40']
+---
+
 # Bolzano–Weierstrass - 工作示例
 
 **类型**: 证明示例 **领域**: 实分析 **难度**: L1 **创建日期**: 2026年2月2日

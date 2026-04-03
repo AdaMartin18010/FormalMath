@@ -1,3 +1,8 @@
+---
+msc_primary: "18-XX"
+msc_secondary: ['17-XX', '11Rxx', '55Nxx']
+---
+
 # ZFC公理体系到抽象代数结构 - 基础理论
 
 ## 目录 / Table of Contents

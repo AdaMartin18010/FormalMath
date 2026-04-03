@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['11Axx', '03-XX', '03B35']
+---
+
 # FormalMath项目改进执行计划 - 基于2025年11月12日批判性分析
 
 ## 📋 计划概述

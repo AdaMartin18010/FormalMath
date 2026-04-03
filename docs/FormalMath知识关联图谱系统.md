@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['03Bxx', '22E47', '16-XX']
+---
+
 # FormalMath知识关联图谱系统
 
 ## 目录 / Table of Contents
