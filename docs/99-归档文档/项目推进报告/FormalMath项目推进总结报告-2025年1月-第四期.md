@@ -1,3 +1,8 @@
+---
+msc_primary: "00-01"
+msc_secondary: "01A99"
+---
+
 # FormalMath项目推进总结报告 - 2025年1月（第四期）
 
 ## 📋 报告概述

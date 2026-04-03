@@ -1,4 +1,9 @@
-﻿# MSC 按编码文档列表（自动生成）
+---
+msc_primary: "00A99"
+msc_secondary: "97A99"
+---
+
+# MSC 按编码文档列表（自动生成）
 
 **生成时间**: 2026-02-15 08:29
 **说明**: 由 	ools/生成MSC文档列表.ps1 扫描项目 .md 文件 Front Matter 中的 msc_primary 生成。

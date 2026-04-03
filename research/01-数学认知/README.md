@@ -1,3 +1,8 @@
+---
+msc_primary: "97C30"
+msc_secondary: "91E40"
+---
+
 # 01-数学认知
 
 ## 目录说明

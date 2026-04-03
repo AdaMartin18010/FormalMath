@@ -1,3 +1,8 @@
+---
+msc_primary: "00-01"
+msc_secondary: "97Axx"
+---
+
 # FormalMath项目持续改进推进报告 - 集合论基础完善
 
 ## 📋 报告概述

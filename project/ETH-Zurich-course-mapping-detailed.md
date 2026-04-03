@@ -1,3 +1,8 @@
+---
+msc_primary: "97A99"
+msc_secondary: "00-01"
+---
+
 # ETH Zurich数学课程与FormalMath深度映射分析
 
 > **文档类型**: 国际权威课程对齐 · 详细学习路径

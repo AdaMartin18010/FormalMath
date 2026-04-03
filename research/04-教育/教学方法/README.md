@@ -1,3 +1,8 @@
+---
+msc_primary: "97D20"
+msc_secondary: "97C70"
+---
+
 # 教学方法
 
 ## 目录说明

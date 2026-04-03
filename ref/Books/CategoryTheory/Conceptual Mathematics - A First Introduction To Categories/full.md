@@ -1,4 +1,9 @@
-﻿# Conceptual Mathematics, 2nd Edition
+---
+msc_primary: "00A15"
+msc_secondary: "01A99"
+---
+
+# Conceptual Mathematics, 2nd Edition
 
 A first introduction to categories
 

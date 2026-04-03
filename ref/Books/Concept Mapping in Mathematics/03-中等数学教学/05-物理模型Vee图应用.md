@@ -1,4 +1,9 @@
-﻿# 使用概念映射和Gowin的Vee理解物理现象的数学模型
+---
+msc_primary: "00A15"
+msc_secondary: "01A99"
+---
+
+# 使用概念映射和Gowin的Vee理解物理现象的数学模型
 
 Using Concept Maps and Gowin's Vee to Understand Mathematical Models of Physical Phenomena
 

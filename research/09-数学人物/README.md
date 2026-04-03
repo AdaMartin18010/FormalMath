@@ -1,3 +1,8 @@
+---
+msc_primary: "97A99"
+msc_secondary: "00A35"
+---
+
 # 09-数学人物
 
 ## 目录说明

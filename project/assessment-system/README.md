@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: "97A99"
+---
+
 # FormalMath 评估系统 (T2.2)
 
 **任务ID**: T2.2  

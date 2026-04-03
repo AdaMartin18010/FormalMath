@@ -1,0 +1,23 @@
+.path-generator {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step-content {
+  min-height: 300px;
+  padding: 16px 0;
+}
+
+.selected-preview {
+  margin-top: 16px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.step-actions {
+  margin-top: 24px;
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}

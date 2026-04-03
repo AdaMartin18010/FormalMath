@@ -1,3 +1,8 @@
+---
+msc_primary: "00-01"
+msc_secondary: "01A99"
+---
+
 # FormalMath改进执行计划 - 2025年1月
 
 ## 📋 执行计划概述

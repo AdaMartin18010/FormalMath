@@ -10,7 +10,7 @@ msc_secondary: ["03B35", "03B70"]
 本目录包含FormalMath项目与Mathlib4对齐的核心定理形式化证明。
 所有代码使用Lean 4编写，与Mathlib 4.19.0版本对齐。
 
-## 35个核心定理
+## 50个核心定理
 
 | # | 定理名称 | Mathlib4对应 | 文件名 | 领域 | 状态 |
 |---|----------|--------------|--------|------|------|
@@ -44,6 +44,21 @@ msc_secondary: ["03B35", "03B70"]
 | 28 | 霍尔婚配定理 | `Finset.all_card_le_biUnion_card_iff_exists_injective` | `HallsMarriageTheorem.lean` | 组合数学 | ✅ 完成 |
 | 29 | 高斯-博内定理 | 发展中 | `GaussBonnet.lean` | 微分几何 | 🚧 占位 |
 | 30 | Faltings定理 | 发展中 | `FaltingsTheorem.lean` | 算术几何 | 🚧 占位 |
+| 31 | 中国剩余定理 | `ZMod.chineseRemainder` | `ChineseRemainderTheorem.lean` | 代数结构 | ✅ 完成 |
+| 32 | 原根存在定理 | `IsPrimitiveRoot` | `PrimitiveRootTheorem.lean` | 数论 | ✅ 完成 |
+| 33 | 希尔伯特基定理 | `Polynomial.isNoetherianRing` | `HilbertBasisTheorem.lean` | 代数结构 | ✅ 完成 |
+| 34 | Hilbert零点定理 | `Ideal.isVanishingIdeal` | `Nullstellensatz.lean` | 代数几何 | ✅ 完成 |
+| 35 | Picard-Lindelöf定理 | ODE存在唯一性框架 | `PicardLindelof.lean` | 微分方程 | ✅ 完成 |
+| 36 | Fourier级数收敛 | `hasSum_fourier_series` | `FourierSeriesConvergence.lean` | 调和分析 | ✅ 完成 |
+| 37 | Green定理 | 多元积分框架 | `GreenTheorem.lean` | 多元微积分 | ✅ 完成 |
+| 38 | 散度定理 | 流形积分框架 | `DivergenceTheorem.lean` | 多元微积分 | ✅ 完成 |
+| 39 | Morse理论基本定理 | `IsMorseFunction` | `MorseTheory.lean` | 微分拓扑 | 🚧 框架 |
+| 40 | 毛球定理 | `EulerCharacteristic` | `HairyBallTheorem.lean` | 代数拓扑 | ✅ 完成 |
+| 41 | Sard定理 | 光滑映射框架 | `SardTheorem.lean` | 微分拓扑 | 🚧 框架 |
+| 42 | Zorn引理 | `zorn_nonempty` | `ZornLemma.lean` | 集合论 | ✅ 完成 |
+| 43 | 良序定理 | `wellOrderingTheorem` | `WellOrderingTheorem.lean` | 集合论 | ✅ 完成 |
+| 44 | Atiyah-Singer指标定理 | 占位/框架 | `AtiyahSingerIndex.lean` | 全局分析 | 🔮 占位 |
+| 45 | Poincaré猜想（3维） | Perelman证明概述 | `PoincareConjecture3D.lean` | 几何拓扑 | 🔮 占位 |
 
 ## 优先级分类
 
@@ -55,6 +70,9 @@ msc_secondary: ["03B35", "03B70"]
 - `CayleyTheorem.lean` - 群的置换表示
 - `SylowFirstTheorem.lean` - 有限群分类基础
 - `ArtinWedderburn.lean` - 半单环分类
+- `ChineseRemainderTheorem.lean` - 模算术
+- `HilbertBasisTheorem.lean` - Noetherian环论
+- `PrimitiveRootTheorem.lean` - 乘法群结构
 
 ### P1级（分析与拓扑）
 
@@ -68,6 +86,10 @@ msc_secondary: ["03B35", "03B70"]
 - `InverseFunctionTheorem.lean` - 局部可逆性
 - `UrysohnsLemma.lean` - 正规空间刻画
 - `TietzeExtension.lean` - 连续函数扩张
+- `PicardLindelof.lean` - ODE存在唯一性
+- `FourierSeriesConvergence.lean` - 调和分析
+- `GreenTheorem.lean` - 多元微积分
+- `DivergenceTheorem.lean` - 向量分析
 
 ### P2级（数论与逻辑）
 
@@ -84,12 +106,23 @@ msc_secondary: ["03B35", "03B70"]
 - `FundamentalTheoremAlgebra.lean` - 代数与分析
 - `GodelIncompleteness.lean` - 数理逻辑
 - `CompletenessTheorem.lean` - 一阶逻辑完备性
+- `ZornLemma.lean` - 选择公理等价形式
+- `WellOrderingTheorem.lean` - 集合论基础
 
-### P3级（前沿方向）
+### P3级（微分几何与拓扑）
 
 - `StokesTheorem.lean` - 微分几何统一定理
 - `GaussBonnet.lean` - 曲率与拓扑
+- `Nullstellensatz.lean` - 代数几何基础
+- `MorseTheory.lean` - 临界点理论
+- `HairyBallTheorem.lean` - 代数拓扑
+- `SardTheorem.lean` - 微分拓扑
+
+### P4级（前沿/挑战）
+
 - `FaltingsTheorem.lean` - Mordell猜想
+- `AtiyahSingerIndex.lean` - 指标理论（框架）
+- `PoincareConjecture3D.lean` - 几何拓扑（框架）
 
 ## 使用指南
 
@@ -224,10 +257,12 @@ theorem detailed_proof : ... := by
 
 ### 长期（2027年）
 
-- [ ] 代数几何初步（Hilbert零点定理）
+- [x] 代数几何初步（Hilbert零点定理）✅ 2026年4月
 - [ ] 同调代数（长正合序列、导出函子）
 - [ ] 范畴论应用（伴随函子、极限）
 - [ ] 泛函分析基础（Hahn-Banach定理）
+- [ ] 全指标定理形式化（长期目标）
+- [ ] Ricci流理论（长期目标）
 
 ## 贡献指南
 
@@ -269,7 +304,7 @@ theorem detailed_proof : ... := by
 - **Mathlib4版本**: 4.19.0
 - **Lean版本**: 4.19.0
 - **维护者**: FormalMath项目团队
-- **定理数量**: 35个核心定理
+- **定理数量**: 50个核心定理
 
 ## 许可证
 

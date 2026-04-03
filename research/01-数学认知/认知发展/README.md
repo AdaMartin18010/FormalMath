@@ -1,3 +1,8 @@
+---
+msc_primary: "97C30"
+msc_secondary: "91E40"
+---
+
 # 认知发展
 
 ## 目录说明

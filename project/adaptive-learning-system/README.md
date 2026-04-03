@@ -1,3 +1,8 @@
+---
+msc_primary: "97C70"
+msc_secondary: "97D40"
+---
+
 # FormalMath 自适应学习路径系统 (T3.1)
 
 **任务ID**: T3.1  

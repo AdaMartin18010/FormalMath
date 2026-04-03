@@ -1,0 +1,44 @@
+.diagnosis-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.diagnosis-intro {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.diagnosis-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.diagnosis-intro > p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.config-section {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.config-section h4 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.config-info p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.diagnosis-intro .btn {
+  min-width: 200px;
+}

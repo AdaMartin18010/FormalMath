@@ -1,3 +1,8 @@
+---
+msc_primary: "00-01"
+msc_secondary: "01A99"
+---
+
 # FormalMath数学知识图谱系统
 
 **创建日期**: 2025年12月1日

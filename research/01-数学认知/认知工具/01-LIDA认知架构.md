@@ -1,3 +1,8 @@
+---
+msc_primary: "97C30"
+msc_secondary: "91E40"
+---
+
 # LIDA认知架构
 
 **创建日期**: 2025年12月1日

@@ -1,3 +1,8 @@
+---
+msc_primary: "97C30"
+msc_secondary: "91E10"
+---
+
 # FormalMath认知诊断系统 - API文档
 
 ## 基础信息

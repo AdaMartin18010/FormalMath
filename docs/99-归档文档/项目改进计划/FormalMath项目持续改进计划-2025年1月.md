@@ -1,3 +1,8 @@
+---
+msc_primary: "00-01"
+msc_secondary: "01A99"
+---
+
 # FormalMath项目持续改进计划 - 2025年1月
 
 ## 可中断的持续改进系统

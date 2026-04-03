@@ -1,3 +1,8 @@
+---
+msc_primary: "00A15"
+msc_secondary: "01A99"
+---
+
 # How to Think About Abstract Algebra 项目总览
 
 **创建日期**: 2025年12月11日

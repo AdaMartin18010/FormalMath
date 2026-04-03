@@ -1,3 +1,8 @@
+---
+msc_primary: "97C30"
+msc_secondary: "91E40"
+---
+
 # 神经机制
 
 ## 目录说明

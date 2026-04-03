@@ -1,3 +1,8 @@
+---
+msc_primary: "60A99"
+msc_secondary: "05A10, 51A05"
+---
+
 # 计算机械Pascaline：机械计算时代的开创者
 
 > **文档状态**: ✅ 教学级深度

@@ -1,3 +1,8 @@
+---
+msc_primary: "97A99"
+msc_secondary: "00A35"
+---
+
 # 表征工具
 
 ## 目录说明

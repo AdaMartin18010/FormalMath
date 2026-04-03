@@ -1,3 +1,8 @@
+---
+msc_primary: "00A15"
+msc_secondary: "01A99"
+---
+
 # Quantverse理论全面论证报告
 
 ## 重要声明

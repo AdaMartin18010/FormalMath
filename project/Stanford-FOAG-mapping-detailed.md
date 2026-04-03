@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: "97A99"
+---
+
 # Stanford FOAG与FormalMath深度映射表
 
 **文档类型**：国际权威教材对齐 · 章节级详细对应

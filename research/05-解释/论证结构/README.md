@@ -1,3 +1,8 @@
+---
+msc_primary: "97A99"
+msc_secondary: "00A35"
+---
+
 # 论证结构
 
 ## 目录说明

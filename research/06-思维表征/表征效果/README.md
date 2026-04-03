@@ -1,3 +1,8 @@
+---
+msc_primary: "97A99"
+msc_secondary: "00A35"
+---
+
 # 表征效果
 
 ## 目录说明

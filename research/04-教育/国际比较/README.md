@@ -1,3 +1,8 @@
+---
+msc_primary: "97D20"
+msc_secondary: "97C70"
+---
+
 # 国际比较
 
 ## 目录说明

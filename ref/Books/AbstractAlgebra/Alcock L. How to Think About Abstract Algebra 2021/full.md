@@ -1,4 +1,9 @@
-﻿# How to Think about ABSTRACT ALGEBRA
+---
+msc_primary: "00A15"
+msc_secondary: "01A99"
+---
+
+# How to Think about ABSTRACT ALGEBRA
 
 ![](images/aac4751dcfcfc5454ab5843471404b08f18840a3b32a7b8709287c712027728a.jpg)
 

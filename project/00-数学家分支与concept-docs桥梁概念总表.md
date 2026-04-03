@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: "97A99"
+---
+
 # 数学家分支与 concept/docs 桥梁概念总表
 
 **文档类型**：桥梁概念汇总 · 多分支 · 供 00-文档索引 / README 引用

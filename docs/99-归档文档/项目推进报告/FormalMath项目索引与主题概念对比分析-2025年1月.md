@@ -1,3 +1,8 @@
+---
+msc_primary: "00-01"
+msc_secondary: "01A99"
+---
+
 # FormalMath项目索引与主题概念对比分析 - 2025年1月
 
 ## 对标国际Wiki与著名大学数学课程

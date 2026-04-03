@@ -1,3 +1,8 @@
+---
+msc_primary: "97D20"
+msc_secondary: "97C70"
+---
+
 # 教育理论
 
 ## 目录说明

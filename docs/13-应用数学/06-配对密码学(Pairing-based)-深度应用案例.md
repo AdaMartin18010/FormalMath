@@ -1,3 +1,8 @@
+---
+msc_primary: "00A69"
+msc_secondary: "97Mxx"
+---
+
 # 配对密码学(Pairing-based Cryptography)深度应用案例
 
 > **数学主题**: 代数几何、双线性配对、椭圆曲线的扭曲线

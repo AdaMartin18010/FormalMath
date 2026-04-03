@@ -1,3 +1,8 @@
+---
+msc_primary: "00-01"
+msc_secondary: "01A99"
+---
+
 # FormalMath前沿补充计划 - 2025
 
 **文档版本**: v1.0

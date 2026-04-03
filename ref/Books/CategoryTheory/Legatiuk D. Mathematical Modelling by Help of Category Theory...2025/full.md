@@ -1,4 +1,9 @@
-﻿Dmitrii Legatiuk
+---
+msc_primary: "00A15"
+msc_secondary: "01A99"
+---
+
+Dmitrii Legatiuk
 
 # Mathematical Modelling by Help of Category Theory
 

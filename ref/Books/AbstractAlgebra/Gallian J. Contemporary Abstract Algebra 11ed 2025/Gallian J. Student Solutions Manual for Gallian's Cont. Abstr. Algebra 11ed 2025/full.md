@@ -1,4 +1,9 @@
-﻿JOSEPH A. GALLIAN
+---
+msc_primary: "00A15"
+msc_secondary: "01A99"
+---
+
+JOSEPH A. GALLIAN
 
 TEXTBOOKS IN MATHEMATICS
 

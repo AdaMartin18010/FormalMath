@@ -1,3 +1,8 @@
+---
+msc_primary: "01A99"
+msc_secondary: "97A30"
+---
+
 # 古代数学
 
 ## 目录说明

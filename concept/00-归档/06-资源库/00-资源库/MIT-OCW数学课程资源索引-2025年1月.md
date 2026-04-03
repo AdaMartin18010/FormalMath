@@ -1,3 +1,8 @@
+---
+msc_primary: "00-01"
+msc_secondary: "97A99"
+---
+
 # MIT OCW数学课程资源索引
 
 **主题编号**: C.RES.01

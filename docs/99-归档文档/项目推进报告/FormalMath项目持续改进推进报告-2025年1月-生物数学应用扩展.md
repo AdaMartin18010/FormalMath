@@ -1,3 +1,8 @@
+---
+msc_primary: "00A69"
+msc_secondary: "97Mxx"
+---
+
 # FormalMath项目持续改进推进报告 - 生物数学应用扩展
 
 ## 📋 报告概述

@@ -1,3 +1,8 @@
+---
+msc_primary: "97A99"
+msc_secondary: "00-01"
+---
+
 # ETH Zurich数学课程与FormalMath映射表
 
 > **版本**: 2026年4月

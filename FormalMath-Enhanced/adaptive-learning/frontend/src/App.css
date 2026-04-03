@@ -1,0 +1,47 @@
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  margin-right: 48px;
+}
+
+.app-menu {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+}
+
+.app-content {
+  background: #fff;
+  min-height: calc(100vh - 64px - 70px);
+}
+
+.app-footer {
+  text-align: center;
+  background: #f0f2f5;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 16px;
+  }
+  
+  .logo {
+    margin-right: 24px;
+  }
+  
+  .logo h4 {
+    font-size: 16px !important;
+  }
+}

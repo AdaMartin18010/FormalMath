@@ -1,0 +1,22 @@
+.explore-content {
+  padding: 24px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.branch-card {
+  height: 100%;
+}
+
+.branch-tags {
+  margin-bottom: 16px;
+}
+
+.concepts-card {
+  min-height: 600px;
+}

@@ -1,3 +1,8 @@
+---
+msc_primary: "00-01"
+msc_secondary: "01A99"
+---
+
 # FormalMath项目持续改进推进报告 - 自然数构造完善
 
 ## 📋 报告概述
