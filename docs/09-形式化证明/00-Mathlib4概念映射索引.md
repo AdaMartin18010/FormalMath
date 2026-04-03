@@ -23,11 +23,13 @@ next_review: "2026-07-03"
 **发布日期**: 2026年3月
 
 #### 代数几何新进展
+
 - **Motivic上同调**: 混合特征概形的motivic上同调理论相关形式化进展
 - **层上同调**: `Mathlib.AlgebraicGeometry.Scheme`模块持续增强
 - **概形理论**: 素谱、Zariski拓扑、局部环化空间等核心概念完善
 
 #### 数论新进展
+
 - **HasFiniteQuotients类**: 新增具有有限商的交换环类
   - 证明：若`R`有有限商，则其Krull维度≤1
   - 证明：若`R`有有限商，则它是Noetherian环
@@ -35,6 +37,7 @@ next_review: "2026-07-03"
 - **有限域**: `Mathlib.FieldTheory.Finite.Basic`持续完善
 
 #### 分析学新进展
+
 - **连续多线性映射**: 从赋范空间推广到拓扑向量空间
 - **实数平方根**: API扩展
 - **连续性自动化**: `fun_prop`等自动化证明增强
@@ -316,6 +319,8 @@ example (C : Type*) [Category C] (F : Cᵒᵖ ⥤ Type*) (X : C) :
 | **紧致性** | `docs/00-核心概念理解三问/11-核心定理多表征/66-Heine-Borel定理-五种表征.md` | `Mathlib.Topology.Compactness.Compact` | `IsCompact` | `IsCompact.image`, `isCompact_iff_finite_subcover` |
 | **完备性** | `docs/03-分析学/01-实分析/01-实分析-深度扩展版.md` | `Mathlib.Topology.UniformSpace.Complete` | `CompleteSpace` | `CompleteSpace.complete_univ` |
 | **Bolzano-Weierstrass** | `docs/00-核心概念理解三问/11-核心定理多表征/65-Bolzano-Weierstrass定理-五种表征.md` | `Mathlib.Topology.MetricSpace.Basic` | `CompactSpace` | `isCompact_iff_seq_compact` |
+| **柯西收敛准则** | `docs/09-形式化证明/Lean4/08-柯西收敛准则.lean` | `Mathlib.Topology.UniformSpace.Complete` | `CompleteSpace`, `CauchySeq` | `cauchySeq_tendsto_of_complete` |
+| **罗尔定理** | `docs/09-形式化证明/Lean4/09-罗尔定理.lean` | `Mathlib.Analysis.Calculus.Rolle` | `HasDerivAt` | `exists_hasDerivAt_eq_zero` |
 
 #### 实分析代码示例
 
@@ -347,6 +352,7 @@ example (f : ℝ → ℝ) (a b : ℝ) (hab : a < b)
 | **解析函数** | `docs/03-分析学/02-复分析/02-复分析-深度扩展版.md` | `Mathlib.Analysis.Analytic.Basic` | `AnalyticAt`, `AnalyticOn` | `AnalyticAt.continuousAt` |
 | **Riemann映射定理** | `docs/00-核心概念理解三问/11-核心定理多表征/36-Riemann映射定理-五种表征.md` | `Mathlib.Analysis.Complex.RiemannMapping` | `conformalEquiv` | `conformalEquivToUnitDisc` |
 | **Liouville定理** | `docs/00-核心概念理解三问/11-核心定理多表征/75-Liouville定理-五种表征.md` | `Mathlib.Analysis.Complex.Liouville` | `bounded_entire_iff_const` | `Liouville` |
+| **欧拉公式** | `docs/09-形式化证明/Lean4/10-欧拉公式.lean` | `Mathlib.Data.Complex.Exponential` | `Complex.exp` | `Complex.exp_mul_I` |
 
 #### 复分析代码示例
 
@@ -612,5 +618,5 @@ example (M : Type*) [TopologicalSpace M] [ChartedSpace (EuclideanSpace ℝ (Fin 
 
 ---
 
-**最后更新**: 2026-04-03
+**最后更新**: 2026-04-03（新增：群第一同构定理、拉格朗日插值、柯西收敛准则、罗尔定理、欧拉公式）
 **Mathlib4版本**: v4.29.0

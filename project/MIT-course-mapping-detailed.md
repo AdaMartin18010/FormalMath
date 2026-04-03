@@ -816,6 +816,68 @@
 
 ---
 
+## 🌍 国际课程对比：MIT vs ETH Zurich
+
+### MIT与ETH课程对应关系
+
+| MIT课程 | ETH对应课程 | 对应程度 | 主要差异 |
+|---------|-------------|----------|----------|
+| 18.090 Set Theory & Logic | 基础数学模块 | ⭐⭐⭐⭐ | ETH更强调德式形式化 |
+| 18.700-703 Linear Algebra | 401-1151/1152 Linear Algebra I/II | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| 18.100 Real Analysis | 401-1261/1262 Analysis I/II | ⭐⭐⭐⭐⭐ | ETH Analysis II包含更多流形内容 |
+| 18.704 Group Theory | 401-2284 Algebra I | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| 18.715 Ring Theory | 401-2285 Algebra II (部分) | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| 18.782 Number Theory | 401-4145/4146 Number Theory I/II | ⭐⭐⭐⭐ | ETH强调类域论 |
+| 18.705 Commutative Algebra | 交换代数模块 | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| **18.725 Algebraic Geometry I** | **401-3531 Algebraic Geometry I** | ⭐⭐⭐⭐⭐ | **ETH苏黎世学派特色** |
+| **18.726 Algebraic Geometry II** | **401-3532 Algebraic Geometry II** | ⭐⭐⭐⭐⭐ | **凝聚层上同调** |
+| 18.745 Lie Groups | 李群选修 | ⭐⭐⭐⭐ | 内容相似 |
+| 18.755 Representation Theory | 表示论选修 | ⭐⭐⭐⭐ | 内容相似 |
+
+### MIT与ETH教学特色对比
+
+| 维度 | MIT | ETH Zurich |
+|------|-----|------------|
+| **教学语言** | 英语 | 德语（基础）/英语（高级） |
+| **基础课程** | 灵活多样，18.01-18.03等选择 | 统一的Linear Algebra/Analysis序列 |
+| **代数几何** | Vakil FOAG导向 | Hartshorne + 苏黎世学派传统 |
+| **代数拓扑** | Hatcher体系 | Harker体系 + 苏黎世同调代数传统 |
+| **数论** | 椭圆曲线、模形式 | 代数数论、类域论传统 |
+| **严谨性** | 强调直观与证明并重 | 德式严格形式化 |
+
+### ETH苏黎世学派特色
+
+**苏黎世学派在FormalMath中的体现**:
+
+| 领域 | ETH传统 | FormalMath对应 | 优势 |
+|------|---------|----------------|------|
+| **代数几何** | 欧洲概形理论传统 | `格洛腾迪克/02-概形理论/` | 与Harvard 232ar/br完美对应 |
+| **代数拓扑** | 同调代数严格训练 | `docs/05-拓扑学/` | 系统性同调理论 |
+| **微分几何** | Riemann几何经典 | `docs/14-微分几何/` | 完整黎曼几何 |
+| **数论** | 类域论传统 | `docs/06-数论/02-代数数论/` | 代数方法深入 |
+
+**推荐跨校学习路径**:
+
+```
+MIT + ETH 联合路径
+├── 基础阶段
+│   ├── MIT 18.700-703 或 ETH Linear Algebra I/II
+│   └── MIT 18.100 或 ETH Analysis I/II
+├── 代数阶段
+│   ├── MIT 18.704/715 或 ETH Algebra I/II
+│   └── 共同参考: FormalMath代数结构文档
+├── 分析阶段
+│   ├── MIT 18.112 或 ETH Complex Analysis
+│   └── MIT 18.102 或 ETH Functional Analysis
+└── 高级阶段（ETH苏黎世特色）⭐
+    ├── MIT 18.725/726 + ETH 401-3531/3532
+    │   └── 格洛腾迪克体系: 02-概形理论 + 03-上同调理论
+    └── MIT 18.782 + ETH 401-4145/4146
+        └── docs/06-数论/02-代数数论/
+```
+
+---
+
 ## 📊 覆盖度总结
 
 | 课程 | 覆盖度 | 状态 | 建议使用 |
@@ -840,9 +902,13 @@
 
 - [MIT OCW Mathematics](https://ocw.mit.edu/courses/mathematics/)
 - [MIT Math Department](https://math.mit.edu/research/pure/applied.html)
+- [ETH Zurich Course Mapping](ETH-Zurich-course-mapping.md) - 苏黎世学派对比
+- [ETH Zurich Course Mapping Detailed](ETH-Zurich-course-mapping-detailed.md) - 详细对比分析
+- [Harvard Course Mapping](Harvard-course-mapping-detailed.md) - Harvard对比
 - [FormalMath 项目主页](../README.md)
 - [FormalMath 全局文档索引](../docs/00-全局文档索引-2025年12月.md)
 
 ---
 
 *最后更新: 2026年4月*
+*更新内容: 添加ETH Zurich课程对比分析*
