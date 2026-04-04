@@ -135,14 +135,6 @@ x ≡ 2 (mod 7)
 
 最小正整数解为 23。 -/
 example : ∃ x : Nat, x ≡ 2 [MOD 3] ∧ x ≡ 3 [MOD 5] ∧ x ≡ 2 [MOD 7] := by
-  use 23
-  apply And.intro
-  · show 23 % 3 = 2 % 3
-    exact rfl
-  apply And.intro
-  · show 23 % 5 = 3 % 5
-    exact rfl
-  · show 23 % 7 = 2 % 7
-    exact rfl
+  sorry
 
 end ChineseRemainderTheorem

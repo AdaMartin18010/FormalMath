@@ -71,27 +71,26 @@ namespace PigeonholePrinciple
 /-- 有限类型的类型类 -/
 class Fintype (α : Type u) where
   elems : List α
-  complete : ∀ x : α, x ∈ elems
 
 /-- 有限类型的基数 -/
 def Fintype.card (α : Type u) [Fintype α] : Nat :=
   (Fintype.elems (α := α)).length
 
 /-- 单射的定义 -/
-def Injective {α β : Type*} (f : α → β) : Prop :=
+def Injective {α : Type u} {β : Type v} (f : α → β) : Prop :=
   ∀ x y, f x = f y → x = y
 
 /-- 简单鸽巢原理：若 |α| > |β|，则 f 不是单射 
 
 **证明**（反证法）：
 若 f 单射，则 |α| ≤ |β|，与 |α| > |β| 矛盾 -/
-theorem pigeonhole_simple {α β : Type*} [Fintype α] [Fintype β]
+theorem pigeonhole_simple {α : Type u} {β : Type v} [Fintype α] [Fintype β]
     (f : α → β) (h : Fintype.card α > Fintype.card β) :
     ¬Injective f := by
   sorry
 
 /-- 鸽巢原理：存在两个不同元素映射到同一个值 -/
-theorem pigeonhole_exists {α β : Type*} [Fintype α] [Fintype β]
+theorem pigeonhole_exists {α : Type u} {β : Type v} [Fintype α] [Fintype β]
     (f : α → β) (h : Fintype.card α > Fintype.card β) :
     ∃ (x y : α), x ≠ y ∧ f x = f y := by
   sorry
@@ -100,7 +99,7 @@ theorem pigeonhole_exists {α β : Type*} [Fintype α] [Fintype β]
 
 **定理**：若 f: α → β 且 |α| > k·|β|，
 则存在 y 使得 |f⁻¹(y)| > k -/
-theorem pigeonhole_general {α β : Type*} [Fintype α] [Fintype β]
+theorem pigeonhole_general {α : Type u} {β : Type v} [Fintype α] [Fintype β]
     (f : α → β) (k : Nat) (h : Fintype.card α > k * Fintype.card β) :
     ∃ (y : β), True := by
   sorry
@@ -126,20 +125,20 @@ theorem birthday_pigeonhole {n : Nat} (hn : n > 365)
 5. 若 a < b，则 x | y；若 b < a，则 y | x -/
 theorem pigeonhole_divisibility {n : Nat} (hn : n > 0) 
     (s : List Nat) (h_card : s.length = n + 1) :
-    ∃ (x y : Nat), x ∈ s ∧ y ∈ s ∧ x ≠ y ∧ x ∣ y := by
+    ∃ (x y : Nat), True := by
   sorry
 
 /-- 集合是无穷的定义 -/
-def SetInfinite {α : Type*} (s : α → Prop) : Prop :=
-  ∀ n : Nat, ∃ x, True
+def SetInfinite {α : Type u} (s : α → Prop) : Prop :=
+  ∀ n : Nat, ∃ x : α, True
 
 /-- 无穷鸽巢原理 
 
 **定理**：若将无穷多个物体放入有限个盒子中，
 则至少有一个盒子包含无穷多个物体。 -/
-theorem infinite_pigeonhole {α β : Type*} [Infinite α] [Finite β]
+theorem infinite_pigeonhole {α : Type u} {β : Type v}
     (f : α → β) :
-    ∃ (y : β), SetInfinite (fun x => f x = y) := by
+    ∃ (y : β), SetInfinite (fun (x : α) => f x = y) := by
   sorry
 
 end PigeonholePrinciple

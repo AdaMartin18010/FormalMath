@@ -1,0 +1,850 @@
+# FormalMath 参考文献硬链接 YAML 规范
+# Reference Hard-Linking Specification for FormalMath
+# Version: 1.0.0
+# Date: 2026-04-04
+# Status: Draft → Pending Review
+
+---
+
+spec_meta:
+  id: D003-reference-linking-spec
+  title: 参考文献硬链接 YAML 规范
+  subtitle: Reference Hard-Linking Specification for FormalMath
+  version: 1.0.0
+  date: "2026-04-04"
+  status: draft
+  authors:
+    - FormalMath Quality Team
+  scope:
+    - 定义 FormalMath 项目中所有概念文档的参考文献数据结构
+    - 建立精确到章节/页码的引用标准
+    - 集成 DOI、zbMATH、MathSciNet、arXiv 等权威标识符
+    - 规范 Stacks Project Tag 引用格式
+
+---
+
+## 1. 设计原则（Design Principles）
+
+1. **精确性（Precision）**：引用必须精确到章节、页码或 Tag，禁止只写书名。
+2. **可追溯性（Traceability）**：每条引用必须包含至少一个持久化标识符（DOI / ISBN / zbMATH / MR Number / arXiv ID）。
+3. **机器可读性（Machine Readability）**：整体结构为 YAML，便于 CI 校验和自动化工具解析。
+4. **分层密度（Layered Density）**：根据文档层次（铜/银/金）控制引用密度，避免过度引用或引用不足。
+5. **领域兼容性（Domain Compatibility）**：覆盖分析学、代数学、几何学、数理逻辑、数论等核心数学领域。
+
+---
+
+## 2. YAML Schema 定义
+
+```yaml
+references:
+  # ------------------------------------------------------------------
+  # 2.1 textbooks: 教科书与专著
+  # ------------------------------------------------------------------
+  textbooks:
+    - id: <string, required, snake_case, 文档内唯一标识>
+      type: textbook
+      title: <string, required>
+      author: <string or list of strings, required>
+      edition: <string, optional, e.g. "3rd edition">
+      publisher: <string, required>
+      year: <integer, required>
+      isbn: <string, required, ISBN-10 或 ISBN-13>
+      # 精确到章节的定位信息
+      chapters:
+        - chapter: <string, required, 如 "Chapter 3">
+          title: <string, optional, 章节标题>
+          pages: <string, optional, 如 "pp. 45-78">
+          section: <string, optional, 如 "§3.2">
+          notes: <string, optional, 附加说明>
+      # 若引用整书或不精确到章节时，使用整书页码
+      total_pages: <integer, optional>
+      url: <string, optional, 出版社或开放获取链接>
+      zbmath: <string, optional, zbMATH ID, e.g. "Zbl 0346.26002">
+      mr_number: <string, optional, MathSciNet MR Number, e.g. "MR 0385023">
+
+  # ------------------------------------------------------------------
+  # 2.2 papers: 期刊论文与经典文献
+  # ------------------------------------------------------------------
+  papers:
+    - id: <string, required, snake_case>
+      type: paper
+      title: <string, required>
+      author: <string or list of strings, required>
+      journal: <string, required>
+      year: <integer, required>
+      volume: <string, optional>
+      issue: <string, optional>
+      pages: <string, required, 如 "pp. 199-220">
+      doi: <string, required-if-available, 必须优先填写>
+      zbmath: <string, optional>
+      mr_number: <string, optional>
+      arxiv_id: <string, optional, 如 "arXiv:math/0102056" 或 "arXiv:2401.07214">
+      url: <string, optional, 优先使用 DOI 链接或期刊永久链接>
+      language: <string, optional, 默认 "en", 如 "fr", "de", "la">
+      original_title: <string, optional, 若 title 为英译则填写原文标题>
+
+  # ------------------------------------------------------------------
+  # 2.3 databases: 数学数据库与百科全书链接
+  # ------------------------------------------------------------------
+  databases:
+    - id: <string, required, snake_case>
+      type: database_link
+      db_type: <enum, required>
+        # 允许值:
+        #   - zbmath
+        #   - mathscinet
+        #   - arxiv
+        #   - stacks_project
+        #   - nlab
+        #   - mathworld
+        #   - wikipedia
+        #   - mse (Math StackExchange)
+        #   - encyclopedia_of_math
+        #   - proofwiki
+      identifier: <string, required>
+        # db_type 对应的标识符格式:
+        #   zbmath        -> "Zbl 0346.26002"
+        #   mathscinet    -> "MR 0385023"
+        #   arxiv         -> "arXiv:math/0102056" 或 "arXiv:2401.07214"
+        #   stacks_project -> "01HR" (见第5节)
+        #   nlab          -> 页面slug, 如 "limit"
+        #   mathworld     -> 条目名, 如 "PrimeNumberTheorem"
+        #   wikipedia     -> 页面标题, 如 "Prime_number_theorem"
+        #   mse           -> 问题ID, 如 "97049"
+        #   encyclopedia_of_math -> "Prime_number"
+        #   proofwiki     -> 页面slug
+      url: <string, required, 可直接访问的永久链接>
+      accessed_date: <string, optional, ISO-8601 格式, 如 "2026-04-04">
+      notes: <string, optional>
+
+  # ------------------------------------------------------------------
+  # 2.4 online_resources: 在线讲义、课程资料、博客等补充资源
+  # ------------------------------------------------------------------
+  online_resources:
+    - id: <string, required, snake_case>
+      type: online_resource
+      title: <string, required>
+      author: <string, optional>
+      url: <string, required>
+      accessed_date: <string, required, ISO-8601 格式>
+      resource_type: <enum, optional>
+        # 允许值: lecture_notes, course_page, blog_post, video, software, dataset
+      archive_url: <string, optional, Wayback Machine 或 Perma.cc 存档链接>
+      notes: <string, optional>
+```
+
+---
+
+## 3. 字段约束与校验规则
+
+```yaml
+validation_rules:
+  general:
+    - id 必须在同一文档内唯一，建议使用 `{领域}_{作者缩写}_{年份}` 格式。
+    - 至少提供一个持久化标识符（DOI / ISBN / zbMATH / MR Number / arXiv ID）。
+    - year 必须在 1600 至当前年份之间。
+    - URL 必须以 http:// 或 https:// 开头。
+
+  textbooks:
+    - isbn 必须能通过 ISBN-13 校验（允许 ISBN-10，但建议同时提供 ISBN-13）。
+    - 若引用目的是支撑某个定理或定义，chapters 字段必须非空。
+
+  papers:
+    - doi 格式必须符合 `10.xxxx/xxxxx` 规范。
+    - 若 arxiv_id 存在，必须以 `arXiv:` 开头。
+    - 1900 年后的论文若公开可用，强烈建议提供 doi 字段。
+
+  databases:
+    - stacks_project 的 identifier 必须是 4 位字母数字组合（见第5节）。
+    - zbmath 的 identifier 建议以 `Zbl` 开头。
+    - mathscinet 的 identifier 建议以 `MR` 开头。
+
+  online_resources:
+    - accessed_date 必须提供，因为在线资源内容易变。
+    - 学术性较强的文档（银层及以上）建议同时提供 archive_url。
+```
+
+---
+
+## 4. 跨领域完整示例
+
+### 4.1 分析学（实分析：Riemann 积分与 Lebesgue 积分）
+
+```yaml
+references:
+  textbooks:
+    - id: analysis_rudin_1976
+      type: textbook
+      title: Principles of Mathematical Analysis
+      author: Walter Rudin
+      edition: "3rd edition"
+      publisher: McGraw-Hill
+      year: 1976
+      isbn: "978-0-07-054235-8"
+      chapters:
+        - chapter: "Chapter 6"
+          title: "The Riemann-Stieltjes Integral"
+          pages: "pp. 120-137"
+          section: "§6.1–§6.9"
+          notes: "Riemann 积分的严格定义与基本性质"
+        - chapter: "Chapter 11"
+          title: "The Lebesgue Theory"
+          pages: "pp. 302-325"
+          section: "§11.1–§11.7"
+          notes: "Lebesgue 积分的初步介绍"
+      total_pages: 342
+      url: "https://www.mheducation.com/"
+      zbmath: "Zbl 0346.26002"
+      mr_number: "MR 0385023"
+
+    - id: analysis_royden_2010
+      type: textbook
+      title: Real Analysis
+      author:
+        - H. L. Royden
+        - P. M. Fitzpatrick
+      edition: "4th edition"
+      publisher: Pearson
+      year: 2010
+      isbn: "978-0-13-143747-0"
+      chapters:
+        - chapter: "Chapter 4"
+          title: "Lebesgue Integration"
+          pages: "pp. 77-106"
+          section: "§4.1–§4.6"
+          notes: "Lebesgue 可测函数与积分的完整构造"
+      total_pages: 505
+      url: "https://www.pearson.com/"
+
+  papers:
+    - id: analysis_lebesgue_1902
+      type: paper
+      title: "Intégrale, longueur, aire"
+      author: Henri Lebesgue
+      journal: Annali di Matematica Pura ed Applicata
+      year: 1902
+      volume: "7"
+      issue: "1"
+      pages: "pp. 231-359"
+      doi: "10.1007/BF02420592"
+      zbmath: "Zbl 033.0302"
+      mr_number: "MR 1552357"
+      url: "https://doi.org/10.1007/BF02420592"
+      language: fr
+
+  databases:
+    - id: analysis_proofwiki_riemann_integral
+      type: database_link
+      db_type: proofwiki
+      identifier: "Definition:Riemann_Integral"
+      url: "https://proofwiki.org/wiki/Definition:Riemann_Integral"
+      accessed_date: "2026-04-04"
+
+    - id: analysis_zbmath_lebesgue
+      type: database_link
+      db_type: zbmath
+      identifier: "Zbl 033.0302"
+      url: "https://zbmath.org/?q=an:033.0302"
+      accessed_date: "2026-04-04"
+```
+
+### 4.2 代数学（群论：Sylow 定理与有限单群）
+
+```yaml
+references:
+  textbooks:
+    - id: algebra_dummit_foote_2004
+      type: textbook
+      title: Abstract Algebra
+      author:
+        - David S. Dummit
+        - Richard M. Foote
+      edition: "3rd edition"
+      publisher: John Wiley & Sons
+      year: 2004
+      isbn: "978-0-471-43334-7"
+      chapters:
+        - chapter: "Chapter 4"
+          title: "Group Actions"
+          pages: "pp. 112-139"
+          section: "§4.3–§4.5"
+          notes: "Sylow 定理的完整证明"
+        - chapter: "Chapter 6"
+          title: "Further Topics in Group Theory"
+          pages: "pp. 215-249"
+          section: "§6.1–§6.3"
+          notes: "自由群、生成元与关系"
+      total_pages: 932
+      url: "https://www.wiley.com/"
+      zbmath: "Zbl 1044.00001"
+      mr_number: "MR 2286236"
+
+    - id: algebra_artin_2011
+      type: textbook
+      title: Algebra
+      author: Michael Artin
+      edition: "2nd edition"
+      publisher: Pearson
+      year: 2011
+      isbn: "978-0-13-241377-0"
+      chapters:
+        - chapter: "Chapter 6"
+          title: "Symmetry"
+          pages: "pp. 184-213"
+          section: "§6.7–§6.11"
+          notes: "关于群作用的更多例子"
+      total_pages: 543
+      url: "https://www.pearson.com/"
+
+  papers:
+    - id: algebra_feit_thompson_1963
+      type: paper
+      title: "Solvability of Groups of Odd Order"
+      author:
+        - Walter Feit
+        - John G. Thompson
+      journal: Pacific Journal of Mathematics
+      year: 1963
+      volume: "13"
+      issue: "3"
+      pages: "pp. 775-1029"
+      doi: "10.2140/pjm.1963.13.775"
+      zbmath: "Zbl 0124.26402"
+      mr_number: "MR 0166261"
+      url: "https://doi.org/10.2140/pjm.1963.13.775"
+
+  databases:
+    - id: algebra_mathscinet_feit_thompson
+      type: database_link
+      db_type: mathscinet
+      identifier: "MR 0166261"
+      url: "https://mathscinet.ams.org/mathscinet-getitem?mr=166261"
+      accessed_date: "2026-04-04"
+
+    - id: algebra_stacks_group_actions
+      type: database_link
+      db_type: stacks_project
+      identifier: "0BDV"
+      url: "https://stacks.math.columbia.edu/tag/0BDV"
+      accessed_date: "2026-04-04"
+      notes: "Groupoids 与群作用的一般定义"
+```
+
+### 4.3 几何学（微分几何：曲线与曲面的局部理论）
+
+```yaml
+references:
+  textbooks:
+    - id: geometry_docarmo_1976
+      type: textbook
+      title: Differential Geometry of Curves and Surfaces
+      author: Manfredo P. do Carmo
+      edition: "1st edition"
+      publisher: Prentice-Hall
+      year: 1976
+      isbn: "978-0-13-212589-5"
+      chapters:
+        - chapter: "Chapter 1"
+          title: "Curves"
+          pages: "pp. 1-47"
+          section: "§1.2–§1.7"
+          notes: "Frenet-Serret 标架与曲率、挠率"
+        - chapter: "Chapter 4"
+          title: "The Intrinsic Geometry of Surfaces"
+          pages: "pp. 225-287"
+          section: "§4.1–§4.7"
+          notes: "Gauss 绝妙定理（Theorema Egregium）与同构"
+      total_pages: 503
+      url: "https://www.pearson.com/"
+      zbmath: "Zbl 0326.53001"
+      mr_number: "MR 0394451"
+
+    - id: geometry_oneill_2006
+      type: textbook
+      title: Elementary Differential Geometry
+      author: Barrett O'Neill
+      edition: "Revised 2nd edition"
+      publisher: Academic Press
+      year: 2006
+      isbn: "978-0-12-088735-4"
+      chapters:
+        - chapter: "Chapter 2"
+          title: "Plane Curves"
+          pages: "pp. 31-62"
+          section: "§2.1–§2.5"
+          notes: "曲线局部理论的另一种表述"
+      total_pages: 503
+      url: "https://www.elsevier.com/"
+
+  papers:
+    - id: geometry_gauss_1828
+      type: paper
+      title: "Disquisitiones generales circa superficies curvas"
+      author: Carl Friedrich Gauss
+      journal: Commentationes Societatis Regiae Scientiarum Gottingensis Recentiores
+      year: 1828
+      volume: "6"
+      pages: "pp. 99-146"
+      doi: ""  # 古典文献通常无 DOI
+      zbmath: "Zbl 013.0640cj"
+      mr_number: "MR 1505282"
+      url: "https://gallica.bnf.fr/ark:/12148/bpt6k99440j"
+      language: la
+      original_title: "Disquisitiones generales circa superficies curvas"
+      notes: "Gauss 的原始论文，提出 Theorema Egregium"
+
+  databases:
+    - id: geometry_mathworld_gaussian_curvature
+      type: database_link
+      db_type: mathworld
+      identifier: "GaussianCurvature"
+      url: "https://mathworld.wolfram.com/GaussianCurvature.html"
+      accessed_date: "2026-04-04"
+
+    - id: geometry_nlab_frenet_serret
+      type: database_link
+      db_type: nlab
+      identifier: "Frenet-Serret+formulas"
+      url: "https://ncatlab.org/nlab/show/Frenet-Serret+formulas"
+      accessed_date: "2026-04-04"
+```
+
+### 4.4 数理逻辑（集合论：Forcing 与独立性证明）
+
+```yaml
+references:
+  textbooks:
+    - id: logic_jech_2002
+      type: textbook
+      title: Set Theory
+      author: Thomas J. Jech
+      edition: "3rd Millennium edition, revised and expanded"
+      publisher: Springer
+      year: 2002
+      isbn: "978-3-540-44085-7"
+      chapters:
+        - chapter: "Chapter 7"
+          title: "Forcing"
+          pages: "pp. 201-247"
+          section: "§7.1–§7.6"
+          notes: "Forcing 的基础构造与力迫关系"
+        - chapter: "Chapter 14"
+          title: "Large Cardinals"
+          pages: "pp. 301-345"
+          section: "§14.1–§14.4"
+          notes: "可测基数与超滤子"
+      total_pages: 772
+      url: "https://link.springer.com/book/10.1007/3-540-44761-X"
+      zbmath: "Zbl 1007.03002"
+      mr_number: "MR 1940513"
+
+    - id: logic_kunen_1980
+      type: textbook
+      title: "Set Theory: An Introduction to Independence Proofs"
+      author: Kenneth Kunen
+      edition: "1st edition"
+      publisher: North-Holland
+      year: 1980
+      isbn: "978-0-444-86839-8"
+      chapters:
+        - chapter: "Chapter 6"
+          title: "The Forcing Notion"
+          pages: "pp. 179-216"
+          section: "§6.1–§6.5"
+          notes: "Cohen Forcing 的入门介绍"
+      total_pages: 313
+      url: "https://www.elsevier.com/"
+      zbmath: "Zbl 0443.03021"
+      mr_number: "MR 0597342"
+
+  papers:
+    - id: logic_cohen_1963
+      type: paper
+      title: "The independence of the continuum hypothesis"
+      author: Paul J. Cohen
+      journal: Proceedings of the National Academy of Sciences of the United States of America
+      year: 1963
+      volume: "50"
+      issue: "6"
+      pages: "pp. 1143-1148"
+      doi: "10.1073/pnas.50.6.1143"
+      zbmath: "Zbl 0192.04401"
+      mr_number: "MR 0157890"
+      url: "https://doi.org/10.1073/pnas.50.6.1143"
+
+    - id: logic_cohen_1964
+      type: paper
+      title: "The independence of the continuum hypothesis. II"
+      author: Paul J. Cohen
+      journal: Proceedings of the National Academy of Sciences of the United States of America
+      year: 1964
+      volume: "51"
+      issue: "1"
+      pages: "pp. 105-110"
+      doi: "10.1073/pnas.51.1.105"
+      zbmath: "Zbl 0192.04402"
+      mr_number: "MR 0159745"
+      url: "https://doi.org/10.1073/pnas.51.1.105"
+
+  databases:
+    - id: logic_proofwiki_continuum_hypothesis
+      type: database_link
+      db_type: proofwiki
+      identifier: "Continuum_Hypothesis"
+      url: "https://proofwiki.org/wiki/Continuum_Hypothesis"
+      accessed_date: "2026-04-04"
+
+    - id: logic_zbmath_cohen
+      type: database_link
+      db_type: zbmath
+      identifier: "Zbl 0192.04401"
+      url: "https://zbmath.org/?q=an:0192.04401"
+      accessed_date: "2026-04-04"
+```
+
+### 4.5 数论（素数分布：素数定理与 Riemann 假设）
+
+```yaml
+references:
+  textbooks:
+    - id: nt_hardy_wright_2008
+      type: textbook
+      title: An Introduction to the Theory of Numbers
+      author:
+        - G. H. Hardy
+        - E. M. Wright
+        - Roger Heath-Brown
+        - Joseph Silverman
+      edition: "6th edition"
+      publisher: Oxford University Press
+      year: 2008
+      isbn: "978-0-19-921986-5"
+      chapters:
+        - chapter: "Chapter 1"
+          title: "The Series of Primes (1)"
+          pages: "pp. 1-20"
+          section: "§1.1–§1.8"
+          notes: "素数无穷、素数定理的陈述"
+        - chapter: "Chapter 22"
+          title: "The Series of Primes (5)"
+          pages: "pp. 450-479"
+          section: "§22.1–§22.20"
+          notes: "素数定理的证明与误差项"
+      total_pages: 621
+      url: "https://global.oup.com/"
+      zbmath: "Zbl 1159.11001"
+      mr_number: "MR 2445243"
+
+    - id: nt_apostol_1976
+      type: textbook
+      title: Introduction to Analytic Number Theory
+      author: Tom M. Apostol
+      edition: "1st edition"
+      publisher: Springer
+      year: 1976
+      isbn: "978-0-387-90163-3"
+      chapters:
+        - chapter: "Chapter 4"
+          title: "Some Elementary Theorems on the Distribution of Prime Numbers"
+          pages: "pp. 74-94"
+          section: "§4.1–§4.8"
+          notes: "Chebyshev 函数与素数定理的初等证明"
+      total_pages: 338
+      url: "https://link.springer.com/book/10.1007/978-1-4757-5579-4"
+      zbmath: "Zbl 0335.10001"
+      mr_number: "MR 0434929"
+
+  papers:
+    - id: nt_hadamard_1896
+      type: paper
+      title: "Sur la distribution des zéros de la fonction ζ(s) et ses conséquences arithmétiques"
+      author: Jacques Hadamard
+      journal: Bulletin de la Société Mathématique de France
+      year: 1896
+      volume: "24"
+      pages: "pp. 199-220"
+      doi: ""  # 古典论文通常无 DOI，可用 Numdam 链接
+      zbmath: "Zbl 27.0154.01"
+      mr_number: "MR 1504264"
+      url: "http://www.numdam.org/item/BSMF_1896__24__199_0/"
+      language: fr
+      original_title: "Sur la distribution des zéros de la fonction ζ(s) et ses conséquences arithmétiques"
+
+    - id: nt_riemann_1859
+      type: paper
+      title: "Über die Anzahl der Primzahlen unter einer gegebenen Grösse"
+      author: Bernhard Riemann
+      journal: Monatsberichte der Königlichen Preussischen Akademie der Wissenschaften zu Berlin
+      year: 1859
+      volume: "November"
+      pages: "pp. 671-680"
+      doi: ""  # 古典论文无 DOI
+      zbmath: "Zbl 013.0640cj"  # 古典 zbMATH 记录
+      mr_number: "MR 1550817"
+      url: "https://www.claymath.org/sites/default/files/ezeta.pdf"
+      language: de
+      original_title: "Über die Anzahl der Primzahlen unter einer gegebenen Grösse"
+      notes: "Riemann 原始论文，提出 Riemann 假设"
+
+  databases:
+    - id: nt_wikipedia_prime_number_theorem
+      type: database_link
+      db_type: wikipedia
+      identifier: "Prime_number_theorem"
+      url: "https://en.wikipedia.org/wiki/Prime_number_theorem"
+      accessed_date: "2026-04-04"
+
+    - id: nt_zbmath_riemann
+      type: database_link
+      db_type: zbmath
+      identifier: "Zbl 013.0640cj"
+      url: "https://zbmath.org/?q=an:013.0640cj"
+      accessed_date: "2026-04-04"
+
+    - id: nt_arxiv_tao_primes
+      type: database_link
+      db_type: arxiv
+      identifier: "arXiv:math/0404188"
+      url: "https://arxiv.org/abs/math/0404188"
+      accessed_date: "2026-04-04"
+      notes: "Tao 关于素数分布的综述讲义"
+```
+
+---
+
+## 5. Stacks Project Tag 引用规范
+
+Stacks Project 是代数几何领域最重要的在线参考资源之一，其内容以 **Tag** 为单位进行唯一标识。本规范对 Stacks Project 的引用做出如下专门约定。
+
+### 5.1 Tag 格式
+
+- Tag 是由 **4 位字母数字字符** 组成的唯一标识符（例如 `01HR`、`02XU`、`0BDV`）。
+- Tag 区分大小写，必须原样引用。
+- 每个 Tag 对应 Stacks Project 中的一个 **Definition / Lemma / Theorem / Proposition / Remark / Example / Equation / Section** 等条目。
+
+### 5.2 YAML 中的引用方式
+
+在 `databases` 中使用 `db_type: stacks_project`，并将 Tag 填入 `identifier` 字段：
+
+```yaml
+  databases:
+    - id: stacks_groupoid_def
+      type: database_link
+      db_type: stacks_project
+      identifier: "003Z"      # 4位字母数字 Tag
+      url: "https://stacks.math.columbia.edu/tag/003Z"
+      accessed_date: "2026-04-04"
+      notes: "Definition of a groupoid"
+```
+
+### 5.3 精确引用层级
+
+根据内容的需要，可以在 `notes` 中说明引用的层级：
+
+| 层级 | 说明 | 示例 |
+|------|------|------|
+| **Tag 级** | 精确到单个定义/引理/定理 | `Tag 01HR` 对应某条 Lemma |
+| **Section 级** | 引用某个 Section 的标题页 | `Section 4.24` 对应 Tags `002V`–`0031` |
+| **Chapter 级** | 引用整个 Chapter 的概览页 | `Chapter 33: Morphisms of Schemes` |
+
+**建议**：FormalMath 的金层与银层文档应尽量精确到 **Tag 级**；铜层文档可放宽到 **Section 级**。
+
+### 5.4 URL 构造规则
+
+- 基础 URL：`https://stacks.math.columbia.edu/tag/{identifier}`
+- 若引用 Section 概览页，可使用：`https://stacks.math.columbia.edu/tag/{identifier}`（Section 的首个 Tag 通常自动重定向到 Section 页）。
+- 禁止直接使用页面标题作为 URL slug，因为 Stacks Project 的标题可能变更，而 Tag 永久不变。
+
+### 5.5 引用示例（代数几何：概形的定义）
+
+```yaml
+  databases:
+    - id: stacks_scheme_def
+      type: database_link
+      db_type: stacks_project
+      identifier: "01II"
+      url: "https://stacks.math.columbia.edu/tag/01II"
+      accessed_date: "2026-04-04"
+      notes: "Definition of a scheme"
+
+    - id: stacks_morphisms_chap
+      type: database_link
+      db_type: stacks_project
+      identifier: "002V"
+      url: "https://stacks.math.columbia.edu/tag/002V"
+      accessed_date: "2026-04-04"
+      notes: "Section 4.24: Groupoids — introductory section"
+```
+
+---
+
+## 6. 引用密度建议（按文档层次）
+
+FormalMath 文档按深度分为三层：铜层（Bronze）、银层（Silver）、金层（Gold）。不同层次对参考文献的密度和精度要求不同。
+
+### 6.1 铜层文档（基础入门 / 概念科普）
+
+- **密度**：每 1000 汉字（或等效英文约 600 词）不少于 **2 条** 引用。
+- **精度**：至少精确到教科书章节（如 "Chapter 3"）。
+- **来源偏好**：优先引用教科书和高质量的百科全书条目（Wikipedia、ProofWiki、MathWorld）。
+- **标识符要求**：至少提供 ISBN 或 URL。
+
+### 6.2 银层文档（本科核心 / 定理证明）
+
+- **密度**：每 1000 汉字不少于 **4 条** 引用；关键定理/定义必须直接引用原始出处或标准教科书。
+- **精度**：精确到章节内的具体节（如 "§3.2, pp. 45-50"）。
+- **来源偏好**：教科书 + 经典论文 + zbMATH/MathSciNet 数据库链接。
+- **标识符要求**：论文必须提供 DOI（若有）；教科书必须提供 ISBN；鼓励提供 zbMATH ID。
+
+### 6.3 金层文档（研究生前沿 / 研究综述）
+
+- **密度**：每 1000 汉字不少于 **6 条** 引用；每个非平凡的命题、构造、反例都应有出处。
+- **精度**：精确到论文的页码、教科书的节和页码、Stacks Project 的 Tag。
+- **来源偏好**：前沿期刊论文、预印本（arXiv）、专著章节、Stacks Project / nLab。
+- **标识符要求**：
+  - 论文必须提供 DOI 或 arXiv ID；
+  - 专著必须提供 ISBN 和 zbMATH ID；
+  - Stacks Project 必须提供 Tag；
+  - 强烈建议提供 MathSciNet MR Number。
+
+### 6.4 引用密度快速参考表
+
+| 层次 | 密度（每 1000 字） | 精度要求 | 标识符要求 |
+|------|---------------------|----------|------------|
+| 铜层 | ≥ 2 条 | 章节级 | ISBN / URL |
+| 银层 | ≥ 4 条 | 节/页码级 | DOI / ISBN / zbMATH |
+| 金层 | ≥ 6 条 | 页码/Tag级 | DOI / arXiv / ISBN / zbMATH / MR |
+
+---
+
+## 7. 自动化建议与工具链
+
+为提高参考文献硬链接的效率和准确性，建议建立以下自动化工作流。
+
+### 7.1 利用 DOI 自动获取 BibTeX
+
+**推荐工具**：
+- **doi2bib.org** (`https://doi2bib.org/`)
+- **Crossref API** (`https://api.crossref.org/works/{doi}`)
+- **Zotero 翻译器**
+
+**工作流**：
+1. 用户输入 DOI；
+2. 调用 Crossref API：`GET https://api.crossref.org/works/10.2140/pjm.1963.13.775`；
+3. 解析 JSON 响应，提取 `author`, `title`, `container-title`, `volume`, `issue`, `page`, `published-print`；
+4. 自动填充到 YAML 的 `papers` 条目中。
+
+**示例脚本（Python 伪代码）**：
+```python
+import requests
+
+def fetch_by_doi(doi: str) -> dict:
+    url = f"https://api.crossref.org/works/{doi}"
+    r = requests.get(url, headers={"Accept": "application/json"})
+    r.raise_for_status()
+    data = r.json()["message"]
+    return {
+        "title": data.get("title", [None])[0],
+        "author": [f"{a.get('given', '')} {a.get('family', '')}".strip() for a in data.get("author", [])],
+        "journal": data.get("container-title", [None])[0],
+        "year": data.get("published-print", {}).get("date-parts", [[None]])[0][0],
+        "volume": data.get("volume"),
+        "issue": data.get("issue"),
+        "pages": data.get("page"),
+        "doi": doi,
+    }
+```
+
+### 7.2 利用 zbMATH Open API 查询文献信息
+
+**API 端点**：`https://api.zbmath.org/v1/document/{zbmath_id}` 或检索端点 `https://api.zbmath.org/v1/search`。
+
+**工作流**：
+1. 已知 zbMATH ID（如 `Zbl 0346.26002`），去掉前缀得到 `0346.26002`；
+2. 调用 `GET https://api.zbmath.org/v1/document/0346.26002`；
+3. 提取 `title`, `author`, `source`, `year`, `mrnumber`（若有），并回填到 YAML。
+
+**注意事项**：
+- zbMATH Open API 需要注册获取 API Key（免费）。
+- 部分古典文献的 zbMATH ID 格式为 `Zbl 013.0640cj`，API 查询时可能需要转义句点。
+
+### 7.3 利用 arXiv API 获取预印本元数据
+
+**API 端点**：`http://export.arxiv.org/api/query?id_list={arxiv_id}`
+
+**工作流**：
+1. 输入 arXiv ID（如 `2401.07214`）；
+2. 调用 `GET http://export.arxiv.org/api/query?id_list=2401.07214`；
+3. 解析 Atom XML，提取 `title`, `author`, `published`, `primary_category`，并回填到 YAML。
+
+**示例脚本（Python 伪代码）**：
+```python
+import requests
+import xml.etree.ElementTree as ET
+
+def fetch_arxiv(arxiv_id: str) -> dict:
+    url = f"http://export.arxiv.org/api/query?id_list={arxiv_id}"
+    r = requests.get(url)
+    root = ET.fromstring(r.text)
+    ns = {"atom": "http://www.w3.org/2005/Atom"}
+    entry = root.find("atom:entry", ns)
+    return {
+        "title": entry.find("atom:title", ns).text.strip(),
+        "author": [a.find("atom:name", ns).text for a in entry.findall("atom:author", ns)],
+        "arxiv_id": f"arXiv:{arxiv_id}",
+        "year": int(entry.find("atom:published", ns).text[:4]),
+        "url": f"https://arxiv.org/abs/{arxiv_id}",
+    }
+```
+
+### 7.4 自动化校验脚本建议
+
+建议为 CI 编写一个 YAML Linter，校验规则包括：
+- `references` 根键必须存在；
+- `textbooks`, `papers`, `databases`, `online_resources` 中每个条目的 `id` 不重复；
+- `papers` 中 1900 年后的条目必须提供 `doi` 或 `arxiv_id`；
+- `databases` 中 `stacks_project` 的 `identifier` 必须是 4 位字母数字；
+- `isbn` 必须通过校验位检查；
+- `url` 必须以 `http://` 或 `https://` 开头。
+
+---
+
+## 8. 扩展字段（Reserved for Future Use）
+
+以下字段在当前版本（v1.0.0）中保留，供未来扩展：
+
+```yaml
+  # 未来可能加入的字段
+  extended_fields:
+    - msc2020: <string, MSC2020 分类号，如 "26A42">
+    - concept_tags: <list of strings, 与 FormalMath 概念标签关联>
+    - provenance: <string, 引用来源的说明，如 "verified_by_zbmath_2026_04">
+    - bibtex_entry: <string, 自动生成的 BibTeX 条目>
+    - citation_count: <integer, 来自 zbMATH 或 Crossref 的引用次数>
+    - open_access: <boolean, 是否为开放获取>
+    - license: <string, 开放获取许可证，如 "CC-BY-4.0">
+```
+
+---
+
+## 9. 版本历史
+
+```yaml
+changelog:
+  - version: "1.0.0"
+    date: "2026-04-04"
+    changes:
+      - "Initial draft: 定义 textbooks, papers, databases, online_resources 四大结构。"
+      - "添加分析学、代数学、几何学、数理逻辑、数论五个完整示例。"
+      - "定义铜/银/金三层引用密度建议。"
+      - "添加 Stacks Project Tag 引用规范。"
+      - "提供 DOI / zbMATH / arXiv 自动化工作流建议。"
+```
+
+---
+
+## 10. 结语
+
+本规范的核心目标是让 FormalMath 的每一条数学陈述都能被快速、精确地追溯到权威出处。通过统一的 YAML 结构和强制的持久化标识符，我们不仅提升了内容的可信度，也为未来的自动化校验、知识图谱构建和跨平台引用奠定了基础。
+
+**引用即责任，链接即证据。**

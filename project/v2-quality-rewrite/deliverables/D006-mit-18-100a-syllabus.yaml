@@ -1,0 +1,609 @@
+course:
+  code: "MIT 18.100A"
+  name: "Introduction to Real Analysis"
+  instructor: "Dr. Casey Rodriguez"
+  term: "Fall 2020"
+  source_url: "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/"
+  textbook: "Lebl, Jiří. Basic Analysis I: Introduction to Real Analysis, Volume 1. CreateSpace Independent Publishing Platform, 2018. ISBN: 9781718862401."
+  prerequisites:
+    - "18.02 Multivariable Calculus"
+  grading:
+    assignments: "50% (Assignments 1–12, lowest dropped)"
+    midterm: "25% (24-hour take-home)"
+    final_assignment: "25% (take-home Final Assignment)"
+
+units:
+  - title: "Week 1: Foundations — Sets, Induction, and Cardinality"
+    lectures: ["L1: Sets, Set Operations, and Mathematical Induction", "L2: Cantor's Theory of Cardinality (Size)"]
+    readings: ["[JL] Section 0.3"]
+    topics:
+      - name: "Sets and their operations"
+        definitions:
+          - term: "Union, intersection, complement"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Power set"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Injective, surjective, bijective functions"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Cardinality (size) of sets"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Countable set"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "De Morgan's laws"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Well-ordering principle of the natural numbers"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Principle of mathematical induction"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Cantor's theorem: |P(A)| > |A|"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Prove by induction that n < 2^n for all n ∈ ℕ"
+          - "Show that |P(A)| = 2^n for a finite set A of cardinality n"
+          - "Give a countably infinite collection of finite sets whose union is infinite"
+        problem_sets:
+          - source: "PS1"
+            problems:
+              - number: "Ex 0.3.6"
+                type: "proof"
+                topic: "Distributive laws for sets (union and intersection)"
+              - number: "Ex 0.3.11"
+                type: "proof"
+                topic: "Mathematical induction: n < 2^n"
+              - number: "Ex 0.3.12"
+                type: "proof"
+                topic: "Cardinality of power set by induction"
+              - number: "Ex 0.3.15"
+                type: "proof"
+                topic: "Divisibility by induction (n³ + 5n divisible by 6)"
+              - number: "Ex 0.3.19"
+                type: "construction"
+                topic: "Countably infinite union of finite sets is infinite"
+              - number: "Problem 6"
+                type: "proof"
+                topic: "Bijection between ℚ⁺ and ℕ via prime factorization"
+
+  - title: "Week 2: The Real Numbers — Ordered Fields and Completeness"
+    lectures: ["L3: Cantor's Remarkable Theorem and the Rationals' Lack of the Least Upper Bound Property", "L4: The Characterization of the Real Numbers"]
+    readings: ["[JL] Sections 1.1 and 1.2"]
+    topics:
+      - name: "Ordered fields and the real numbers"
+        definitions:
+          - term: "Field"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Ordered field"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Least upper bound (supremum)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Greatest lower bound (infimum)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "ℚ does not have the least upper bound property"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Characterization of ℝ as the unique ordered field with the least upper bound property"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Prove that the set {x ∈ ℚ : x² < 2} has no supremum in ℚ"
+          - "Prove existence and uniqueness of √2 in ℝ via supremum"
+        problem_sets:
+          - source: "PS2"
+            problems:
+              - number: "Ex 1.1.1"
+                type: "proof"
+                topic: "Ordered field properties (x < 0 and y < z implies xy > xz)"
+              - number: "Ex 1.1.2"
+                type: "proof"
+                topic: "Finite subsets of ordered sets are bounded and attain sup/inf"
+              - number: "Ex 1.1.5"
+                type: "proof"
+                topic: "If an upper bound belongs to the set, it is the supremum"
+              - number: "Ex 1.1.6"
+                type: "proof"
+                topic: "If sup A ∉ A, then A contains a countably infinite subset"
+              - number: "Ex 1.2.7"
+                type: "proof"
+                topic: "Arithmetic-geometric mean inequality"
+              - number: "Ex 1.2.9"
+                type: "proof"
+                topic: "Supremum and infimum of sum sets (A + B)"
+              - number: "Problem 7"
+                type: "proof"
+                topic: "Existence of √2 via supremum of {x ∈ ℝ : x² < 2}"
+
+  - title: "Week 3: Properties of ℝ — Archimedean Property, Density, and Uncountability"
+    lectures: ["L5: The Archimedean Property, Density of the Rationals, and Absolute Value", "L6: The Uncountability of the Real Numbers"]
+    readings: ["[JL] Sections 1.2, 1.3, 1.5, and 2.1"]
+    topics:
+      - name: "Archimedean property and density"
+        definitions:
+          - term: "Archimedean property"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Density of ℚ in ℝ"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Absolute value"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Triangle inequality"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Archimedean property of ℝ"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Density of rational numbers in ℝ"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Triangle inequality"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Prove that between any two real numbers there exists a rational number"
+          - "Decimal representations and the uncountability of ℝ"
+        problem_sets:
+          - source: "PS3"
+            problems:
+              - number: "Problem 1"
+                type: "proof"
+                topic: "Existence of an irrational number between any two reals"
+              - number: "Problem 2"
+                type: "proof"
+                topic: "Properties of open sets in ℝ"
+              - number: "Problem 3"
+                type: "proof"
+                topic: "Arbitrary unions and finite intersections of open sets are open"
+              - number: "Problem 4"
+                type: "proof"
+                topic: "Intervals (a,b) are open sets in ℝ"
+              - number: "Problem 5"
+                type: "proof"
+                topic: "ℚ is neither open nor closed in ℝ"
+              - number: "Problem 6"
+                type: "proof"
+                topic: "ℚ is dense in ℝ"
+
+  - title: "Week 4: Sequences — Convergence and Algebraic Properties"
+    lectures: ["L7: Convergent Sequences of Real Numbers", "L8: The Squeeze Theorem and Operations Involving Convergent Sequences"]
+    readings: ["[JL] Sections 2.1 and 2.2"]
+    topics:
+      - name: "Convergent sequences"
+        definitions:
+          - term: "Sequence of real numbers"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Convergence of a sequence (ε-N definition)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Subsequence"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Monotone sequence"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Monotone Convergence Theorem"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Squeeze Theorem for sequences"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Algebraic limit theorem (sums, products, quotients)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Prove lim (n − cos n)/n = 1 using the squeeze lemma"
+          - "Prove that if {xₙ} converges, then lim xₙᵏ = (lim xₙ)ᵏ"
+        problem_sets:
+          - source: "PS4"
+            problems:
+              - number: "Problem 1"
+                type: "proof"
+                topic: "Closed sets: [a,b] is closed; ℤ is closed; ℚ is not closed"
+              - number: "Problem 2"
+                type: "proof"
+                topic: "Arbitrary intersections and finite unions of closed sets are closed"
+              - number: "Problem 3"
+                type: "proof"
+                topic: "Closed sets contain limits of their sequences"
+              - number: "Ex 2.2.3"
+                type: "proof"
+                topic: "Limit of powers of a convergent sequence"
+              - number: "Ex 2.2.5"
+                type: "computation"
+                topic: "Squeeze lemma application to (n − cos n)/n"
+              - number: "Problem 6"
+                type: "proof"
+                topic: "Characterization of supremum via convergent sequences"
+              - number: "Problem 7"
+                type: "proof"
+                topic: "Cluster points and convergent sequences"
+
+  - title: "Week 5: Completeness and Series — Limsup, Liminf, and Bolzano-Weierstrass"
+    lectures: ["L9: Limsup, Liminf, and the Bolzano-Weierstrass Theorem", "L10: The Completeness of the Real Numbers and Basic Properties of Infinite Series"]
+    readings: ["[JL] Sections 2.2, 2.3, 2.4, and 2.5"]
+    topics:
+      - name: "Limsup, liminf, and completeness"
+        definitions:
+          - term: "Limit superior (limsup)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Limit inferior (liminf)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Cauchy sequence"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Convergent series"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Partial sum"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Bolzano-Weierstrass Theorem"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Cauchy completeness of ℝ"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Convergent series and Cauchy series equivalence"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Compute limsup and liminf of (−1)ⁿ/n and of (−1)ⁿ(n−1)/n"
+          - "Show lim xₙ = 0 iff limsup |xₙ| = 0"
+        problem_sets:
+          - source: "PS5"
+            problems:
+              - number: "Ex 2.2.9"
+                type: "proof"
+                topic: "Ratio test for sequences: if lim |xₙ₊₁ − x|/|xₙ − x| < 1, then xₙ → x"
+              - number: "Ex 2.3.5"
+                type: "computation"
+                topic: "Compute limsup and liminf of explicit sequences"
+              - number: "Ex 2.3.6"
+                type: "proof"
+                topic: "Comparison of limsup/liminf for ordered bounded sequences"
+              - number: "Ex 2.3.7"
+                type: "proof"
+                topic: "Subadditivity of liminf and boundedness of sums"
+              - number: "Problem 5"
+                type: "proof"
+                topic: "Sequence converges to 0 iff limsup of absolute values is 0"
+              - number: "Problem 6"
+                type: "conceptual"
+                topic: "Existence of sequence with given liminf, lim, and limsup"
+              - number: "Ex 2.4.8"
+                type: "proof"
+                topic: "Counterexample: Cauchy sequence need not have decreasing consecutive differences"
+
+  - title: "Week 6: Series Tests — Absolute, Comparison, Ratio, Root, and Alternating"
+    lectures: ["L11: Absolute Convergence and the Comparison Test for Series", "L12: The Ratio, Root, and Alternating Series Tests"]
+    readings: ["[JL] Sections 2.5 and 2.6"]
+    topics:
+      - name: "Convergence tests for series"
+        definitions:
+          - term: "Absolute convergence"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Conditional convergence"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "p-series"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Comparison test"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Ratio test"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Root test"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Alternating series test"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Triangle inequality for series"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Determine convergence of Σ 3/(9n+1), Σ 1/(2n−1), Σ (−1)ⁿ/n², Σ 1/(n(n+1)), Σ ne^(−n²)"
+          - "Find a convergent series Σ xₙ such that Σ xₙ² diverges"
+        problem_sets:
+          - source: "PS6"
+            problems:
+              - number: "Ex 2.5.3"
+                type: "computation"
+                topic: "Convergence/divergence of five explicit series via comparison and p-tests"
+              - number: "Ex 2.5.4"
+                type: "proof"
+                topic: "Convergence of paired terms and counterexample for converse"
+              - number: "Ex 2.5.10"
+                type: "proof"
+                topic: "Triangle inequality for series by induction"
+              - number: "Ex 2.6.1"
+                type: "computation"
+                topic: "Convergence via ratio, root, and alternating series tests"
+              - number: "Ex 2.6.13"
+                type: "construction"
+                topic: "Construct convergent Σ xₙ with divergent Σ xₙ²"
+
+  - title: "Week 7: Limits of Functions"
+    lectures: ["L13: Limits of Functions"]
+    readings: ["[JL] Section 3.1"]
+    topics:
+      - name: "Limits of functions"
+        definitions:
+          - term: "Cluster point (accumulation point)"
+            formal_math_path: "docs/05-拓扑学/01-点集拓扑.md"
+          - term: "Limit of a function (ε-δ definition)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Sequential criterion for limits"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Sequential characterization of functional limits"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Squeeze theorem for functions"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Prove that every real number is a cluster point of ℝ \\ ℚ"
+          - "Bounded function on a set with a cluster point has a convergent sequence of images"
+        problem_sets:
+          - source: "PS7"
+            problems:
+              - number: "Ex 2.6.2"
+                type: "proof"
+                topic: "Absolute convergence of Cauchy product of two absolutely convergent series"
+              - number: "Problem 2"
+                type: "computation"
+                topic: "Radius of convergence for four power series"
+              - number: "Problem 3"
+                type: "proof"
+                topic: "Cauchy-Schwarz inequality for series"
+              - number: "Problem 4"
+                type: "proof"
+                topic: "Every real number is a cluster point of the irrationals"
+              - number: "Ex 3.1.13"
+                type: "proof"
+                topic: "Bounded function at a cluster point has a convergent sequence of images"
+              - number: "Problem 6"
+                type: "proof"
+                topic: "Local boundedness and positivity of functional limits"
+
+  - title: "Week 8: Continuity — Definitions and Classic Examples"
+    lectures: ["L14: Limits of Functions in Terms of Sequences and Continuity", "L15: The Continuity of Sine and Cosine and the Many Discontinuities of Dirichlet's Function"]
+    readings: ["[JL] Sections 3.1 and 3.2"]
+    topics:
+      - name: "Continuity of functions"
+        definitions:
+          - term: "Continuity at a point"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "One-sided limits"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Dirichlet function"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析-增强版.md"
+        theorems:
+          - name: "Sequential characterization of continuity"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Continuity of sin(x) and cos(x)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Dirichlet function is discontinuous everywhere"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析-增强版.md"
+        examples:
+          - "Prove a piecewise function mixing ℚ and irrationals is continuous at 0 and discontinuous at 1"
+          - "Inverse image characterization: f is continuous iff f⁻¹(U) is open for every open U"
+        problem_sets:
+          - source: "PS8"
+            problems:
+              - number: "Ex 3.1.3"
+                type: "proof"
+                topic: "Squeeze theorem for functions (Corollary 3.1.11)"
+              - number: "Problem 2"
+                type: "proof"
+                topic: "Continuity at 0 and discontinuity at 1 for a ℚ/irrational piecewise function"
+              - number: "Ex 3.2.11"
+                type: "proof"
+                topic: "Local positivity of continuous functions"
+              - number: "Ex 3.2.14"
+                type: "proof"
+                topic: "Gluing two continuous functions at a common point"
+              - number: "Problem 5"
+                type: "proof"
+                topic: "Inverse image of open sets characterization of continuity"
+
+  - title: "Week 9: Global Properties of Continuous Functions and the Derivative"
+    lectures: ["L16: The Min/Max Theorem and Bolzano's Intermediate Value Theorem", "L17: Uniform Continuity and the Definition of the Derivative"]
+    readings: ["[JL] Sections 3.3, 3.4, and 4.1"]
+    topics:
+      - name: "Continuous functions on closed bounded intervals"
+        definitions:
+          - term: "Uniform continuity"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Derivative"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Lipschitz continuity"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Extreme Value Theorem (Min/Max Theorem)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Bolzano's Intermediate Value Theorem"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Heine-Cantor theorem: continuity on [a,b] implies uniform continuity"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Bisection method for finding roots"
+          - "Example of continuous bounded function on ℝ with no global min or max"
+          - "f(x) = 1/x is Lipschitz continuous on (c,∞) for c > 0"
+        problem_sets:
+          - source: "PS9"
+            problems:
+              - number: "Ex 3.3.11"
+                type: "construction"
+                topic: "Continuous bounded function on ℝ without global extrema"
+              - number: "Ex 3.4.3"
+                type: "proof"
+                topic: "Lipschitz continuity of 1/x on (c,∞)"
+              - number: "Ex 3.4.8"
+                type: "proof"
+                topic: "Uniform continuity properties"
+              - number: "Problem 4"
+                type: "proof"
+                topic: "Continuous function on [a,b] is bounded and attains its bounds"
+              - number: "Problem 5"
+                type: "proof"
+                topic: "Intermediate value property for continuous functions"
+              - number: "Problem 6"
+                type: "proof"
+                topic: "Fixed point theorem for continuous f: [0,1] → [0,1]"
+
+  - title: "Week 10: Differentiation — Rules, Rolle, and Mean Value"
+    lectures: ["L18: Weierstrass's Example of a Continuous and Nowhere Differentiable Function", "L19: Differentiation Rules, Rolle's Theorem, and the Mean Value Theorem"]
+    readings: ["[JL] Sections 4.1 and 4.2"]
+    topics:
+      - name: "Differentiability"
+        definitions:
+          - term: "Differentiable at a point"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Relative (local) maximum and minimum"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Differentiability implies continuity"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Weierstrass's continuous nowhere differentiable function"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析-增强版.md"
+          - name: "Rolle's Theorem"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Mean Value Theorem"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Weierstrass function construction"
+          - "Hölder condition implies uniform continuity; α > 1 implies constant"
+        problem_sets:
+          - source: "PS10"
+            problems:
+              - number: "Problem 1"
+                type: "proof"
+                topic: "Hölder condition: uniform continuity for α > 0; constant for α > 1"
+              - number: "Ex 4.1.11"
+                type: "proof"
+                topic: "Differentiability properties (chain rule, product rule applications)"
+              - number: "Problem 3"
+                type: "proof"
+                topic: "Critical points and local extrema for differentiable functions"
+              - number: "Ex 4.2.9"
+                type: "proof"
+                topic: "Mean value theorem applications"
+
+  - title: "Week 11: Taylor's Theorem and the Riemann Integral"
+    lectures: ["L20: Taylor's Theorem and the Definition of Riemann Sums", "L21: The Riemann Integral of a Continuous Function"]
+    readings: ["[JL] Section 4.3"]
+    topics:
+      - name: "Taylor expansion and Riemann integration"
+        definitions:
+          - term: "Taylor polynomial"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Partition"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Riemann sum"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Riemann integral"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Taylor's Theorem with remainder"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Existence of the Riemann integral for continuous functions on [a,b]"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Linearity of the Riemann integral"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Approximation of e^x by Taylor polynomials"
+          - "Riemann sums for x² on [0,1]"
+        problem_sets:
+          - source: "PS11"
+            problems:
+              - number: "Ex 4.3.2"
+                type: "proof"
+                topic: "Taylor expansion estimates"
+              - number: "Ex 4.3.5"
+                type: "proof"
+                topic: "Taylor's theorem with Lagrange remainder"
+              - number: "Problem 3"
+                type: "proof"
+                topic: "Riemann integrability of monotonic functions"
+              - number: "Problem 4"
+                type: "proof"
+                topic: "Riemann integrability of continuous functions via uniform continuity"
+
+  - title: "Week 12: Fundamental Theorem of Calculus and Sequences of Functions"
+    lectures: ["L22: The Fundamental Theorem of Calculus, Integration by Parts, and Change of Variable Formula", "L23: Pointwise and Uniform Convergence of Sequences of Functions"]
+    readings: ["[JL] Section 6.1"]
+    topics:
+      - name: "FTC and convergence of functions"
+        definitions:
+          - term: "Pointwise convergence of sequences of functions"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Uniform convergence of sequences of functions"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Fundamental Theorem of Calculus (Parts I and II)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Integration by parts"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Change of variables formula"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Riemann-Lebesgue lemma for Fourier coefficients"
+            formal_math_path: "docs/03-分析学/04-调和分析/04-调和分析.md"
+        examples:
+          - "Differentiation under the integral sign"
+          - "fₙ(x) = e^(x/n)/n converges pointwise to 0; uniform on [0,1] but not on ℝ"
+        problem_sets:
+          - source: "PS12"
+            problems:
+              - number: "Ex 6.1.2"
+                type: "computation"
+                topic: "Pointwise and uniform convergence of e^(x/n)/n on ℝ and [0,1]"
+              - number: "Ex 6.1.5"
+                type: "proof"
+                topic: "Uniform convergence is preserved under addition"
+
+  - title: "Week 13: Uniform Convergence, Power Series, and Approximation"
+    lectures: ["L24: Uniform Convergence, the Weierstrass M-Test, and Interchanging Limits", "L25: Power Series and the Weierstrass Approximation Theorem"]
+    readings: ["[JL] Sections 6.1 and 6.2"]
+    topics:
+      - name: "Advanced convergence and approximation"
+        definitions:
+          - term: "Power series"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - term: "Radius of convergence"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        theorems:
+          - name: "Weierstrass M-test"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Interchange of limits (uniform convergence preserves continuity, integration, differentiation)"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+          - name: "Weierstrass Approximation Theorem"
+            formal_math_path: "docs/03-分析学/01-实分析/01-实分析.md"
+        examples:
+          - "Uniform convergence of power series inside radius of convergence"
+          - "Polynomial approximation of |x| on [−1,1]"
+        problem_sets: []
+
+exams:
+  - name: "Midterm Exam"
+    type: "take-home (24-hour)"
+    coverage: "Lectures 1–12 (Sets, real numbers, sequences, series, and convergence tests)"
+    topics:
+      - "Mathematical induction and set operations"
+      - "Cardinality, countability, and Cantor's theorem"
+      - "Ordered fields, least upper bound property, and characterization of ℝ"
+      - "Archimedean property and density of ℚ"
+      - "Convergent sequences, monotone sequences, subsequences"
+      - "Squeeze theorem and algebraic properties of limits"
+      - "Limsup, liminf, and Bolzano-Weierstrass theorem"
+      - "Cauchy sequences and completeness of ℝ"
+      - "Infinite series, absolute convergence, comparison test"
+      - "Ratio test, root test, and alternating series test"
+
+  - name: "Final Assignment"
+    type: "take-home"
+    coverage: "Lectures 13–25 (Limits of functions, continuity, differentiation, integration, sequences of functions, power series)"
+    topics:
+      - "Limits of functions and sequential characterization"
+      - "Continuity, uniform continuity, and classic examples (Dirichlet, Weierstrass)"
+      - "Extreme value theorem and intermediate value theorem"
+      - "Derivative, differentiation rules, Rolle's theorem, mean value theorem"
+      - "Taylor's theorem"
+      - "Riemann integral, fundamental theorem of calculus"
+      - "Pointwise and uniform convergence of sequences of functions"
+      - "Weierstrass M-test and interchanging limits"
+      - "Power series and Weierstrass approximation theorem"
+
+formal_math_mappings:
+  primary_paths:
+    - "docs/03-分析学/01-实分析/01-实分析.md"
+    - "docs/03-分析学/01-实分析/01-实分析-增强版.md"
+    - "docs/03-分析学/01-实分析/01-实分析-深度扩展版.md"
+  topology_paths:
+    - "docs/05-拓扑学/01-点集拓扑.md"
+    - "docs/05-拓扑学/01-点集拓扑-深度扩展版.md"
+  harmonic_analysis_paths:
+    - "docs/03-分析学/04-调和分析/04-调和分析.md"
+
+notes:
+  - "The Fall 2020 offering was taught remotely due to COVID-19. Lectures were prerecorded; recitations and office hours were conducted online."
+  - "Problem sets are drawn primarily from Lebl's Basic Analysis I, with some additional instructor-written problems."
+  - "The course is the less abstract counterpart to 18.100B, focusing primarily on the real line rather than n-space or point-set topology."
