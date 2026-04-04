@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # abc猜想
 
 ## 前沿问题陈述
@@ -52,6 +60,7 @@ timeline
               : 京都讨论
         2020-23 : 争议继续
               : 证明状态不明
+
 ```
 
 ### 2.2 关键突破
@@ -81,6 +90,7 @@ graph TD
 
     style A fill:#ffcccc
     style E fill:#99ff99
+
 ```
 
 ### 3.2 依赖的L3理论
@@ -174,6 +184,7 @@ graph TD
 
     style B fill:#ffcccc
     style D fill:#ff9999
+
 ```
 
 ---
@@ -196,6 +207,7 @@ graph TD
     style B fill:#ccffcc
     style C fill:#ccccff
     style D fill:#ffffcc
+
 ```
 
 ---

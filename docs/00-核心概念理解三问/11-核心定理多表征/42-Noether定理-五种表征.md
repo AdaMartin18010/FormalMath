@@ -51,6 +51,7 @@ theorem noether {M : Type*} [SmoothManifold M]
     (hX : X.IsSymmetry L) : -- X是L的对称性
     ∃ Q : M → ℝ, IsConserved Q L := by
   sorry  -- 需要变分学形式化
+
 ```
 
 ---
@@ -65,6 +66,7 @@ theorem noether {M : Type*} [SmoothManifold M]
     时间平移不变 ─────────→ 能量守恒
     空间平移不变 ─────────→ 动量守恒
     旋转不变 ──────────────→ 角动量守恒
+
 ```
 
 ### 2.2 作用量曲面
@@ -79,6 +81,7 @@ theorem noether {M : Type*} [SmoothManifold M]
     └──────────→ t
 
 两条路径给出相同的作用量
+
 ```
 
 ---
@@ -144,9 +147,10 @@ print(f"空间平移守恒量（动量）: {Q_momentum}")
 # 时间平移对称性: δt = ε (xi = 0, tau = 1)
 Q_energy = noether_conserved_quantity(L, x, t, xi=0, tau=1)
 print(f"时间平移守恒量（能量）: {simplify(-Q_energy)}")
+
 ```
 
-### 4.2 多自由度系统
+## 4.2 多自由度系统
 
 ```python
 def noether_multi_dof(L, qs, t, xis):
@@ -156,6 +160,7 @@ def noether_multi_dof(L, qs, t, xis):
         qdot = sp.diff(q, t)
         Q += sp.diff(L, qdot) * xi
     return simplify(Q)
+
 ```
 
 ---
@@ -170,6 +175,7 @@ Noether定理 = Lie群作用与不变量
 ├─ L在G作用下不变
 ├─ Lie代数g → 守恒量（矩映射）
 └─ 范畴化：辛约化
+
 ```
 
 ### 5.2 现代几何
@@ -180,6 +186,7 @@ Noether定理 = Lie群作用与不变量
 ├─ Hamilton函数H生成流
 ├─ 对称性 ⟺ Poisson括号{H, Q} = 0
 └─ 矩映射μ: M → g*
+
 ```
 
 ### 5.3 推广

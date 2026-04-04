@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # doc_generator
 
 **源文件**: `tools\doc-generator\doc_generator.py`
@@ -8,6 +16,7 @@
 
 ```python
 class GenerationConfig
+
 ```
 
 文档生成配置
@@ -16,6 +25,7 @@ class GenerationConfig
 
 ```python
 class DocumentGenerator
+
 ```
 
 FormalMath 统一文档生成器
@@ -28,6 +38,7 @@ FormalMath 统一文档生成器
 
 ```python
 def main()
+
 ```
 
 主函数 - 示例用法

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 椭圆曲线 - 思维导图
 
 ## 概述
@@ -43,13 +48,16 @@ mindmap
         虚二次域
     有限域上的曲线
       Hasse定理
+
         |#E(F_q)-q-1|≤2√q
+
         迹a_q
       Frobenius
         π: (x,y)→(x^q,y^q)
         特征多项式
       超奇异
         p|a_q
+
         特殊性质
     BSD猜想
       解析秩
@@ -72,6 +80,7 @@ mindmap
         Weil配对
         Tate配对
         基于身份加密
+
 ```
 
 ---
@@ -105,6 +114,7 @@ graph TD
     style A fill:#e3f2fd
     style D fill:#fff3e0
     style K fill:#e8f5e9
+
 ```
 
 ---
@@ -148,6 +158,7 @@ graph TD
     style A fill:#e3f2fd
     style C fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -163,11 +174,13 @@ graph TD
     
     subgraph Hasse定理
         D[#E(F_q)=q+1-a_q] --> E[|a_q|≤2√q]
+
         E --> F[√q屏障]
     end
     
     subgraph 超奇异
         G[a_q=0⇔p|a_q] --> H[超奇异椭圆曲线]
+
         H --> I[自同态代数可除]
     end
     
@@ -179,6 +192,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#e8f5e9
     style H fill:#fff3e0
+
 ```
 
 ---
@@ -222,6 +236,7 @@ mindmap
         秩≥1
       L(E,1)≠0⇒秩=0
         Kolyvagin证明
+
 ```
 
 ---
@@ -255,6 +270,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#e8f5e9
     style M fill:#fff3e0
+
 ```
 
 ---
@@ -303,6 +319,7 @@ flowchart LR
     style D fill:#fff3e0
     style H fill:#e8f5e9
     style L fill:#ffcdd2
+
 ```
 
 ---

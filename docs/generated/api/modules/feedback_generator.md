@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # feedback_generator
 
 **源文件**: `tools\assessment-system\feedback_generator.py`
@@ -8,6 +16,7 @@
 
 ```python
 class FeedbackType
+
 ```
 
 反馈类型枚举
@@ -16,6 +25,7 @@ class FeedbackType
 
 ```python
 class FeedbackPriority
+
 ```
 
 反馈优先级
@@ -24,6 +34,7 @@ class FeedbackPriority
 
 ```python
 class FeedbackItem
+
 ```
 
 反馈项
@@ -32,6 +43,7 @@ class FeedbackItem
 
 ```python
 class FeedbackReport
+
 ```
 
 反馈报告
@@ -40,6 +52,7 @@ class FeedbackReport
 
 ```python
 class FeedbackTemplates
+
 ```
 
 反馈模板库
@@ -48,6 +61,7 @@ class FeedbackTemplates
 
 ```python
 class LearningSuggestions
+
 ```
 
 学习建议库
@@ -56,6 +70,7 @@ class LearningSuggestions
 
 ```python
 class FeedbackGenerator
+
 ```
 
 反馈生成器
@@ -66,6 +81,7 @@ class FeedbackGenerator
 
 ```python
 class RealTimeFeedbackGenerator
+
 ```
 
 实时反馈生成器

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 可积系统 - 思维导图
 
 ## 概述
@@ -44,6 +52,7 @@ mindmap
       经典r矩阵
       量子群
       顶点算子代数
+
 ```
 
 ## 核心概念详解

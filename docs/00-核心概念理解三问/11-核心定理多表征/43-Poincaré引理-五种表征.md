@@ -44,6 +44,7 @@ theorem poincare_lemma {n : ℕ} {U : Set (Fin n → ℝ)}
     (hω : d ω = 0) :
     ∃ η : DifferentialForm n (k-1), d η = ω := by
   sorry  -- 需要微分形式形式化
+
 ```
 
 ---
@@ -60,6 +61,7 @@ theorem poincare_lemma {n : ℕ} {U : Set (Fin n → ℝ)}
     恰当形式：ω = dη（在im d中）
 
     Poincaré：在可缩空间上，ker d = im d
+
 ```
 
 ### 2.2 路径积分视角
@@ -72,6 +74,7 @@ theorem poincare_lemma {n : ℕ} {U : Set (Fin n → ℝ)}
     存在函数f使得ω = df
          ↓
     ∫_A^B ω = f(B) - f(A)（路径无关）
+
 ```
 
 ---
@@ -129,9 +132,10 @@ print(f"η = {eta}")  # 应该得到 xy
 
 # 验证：dη = ∂η/∂x dx + ∂η/∂y dy = y dx + x dy
 print(f"dη = {diff(eta, x)} dx + {diff(eta, y)} dy")
+
 ```
 
-### 4.2 一般同伦公式
+## 4.2 一般同伦公式
 
 ```python
 def poincare_homotopy_general(omega, coords):
@@ -142,6 +146,7 @@ def poincare_homotopy_general(omega, coords):
     # 使得 d∘h + h∘d = id（在可缩空间上）
     # 因此 dω = 0 ⟹ ω = d(hω)
     pass
+
 ```
 
 ---
@@ -156,6 +161,7 @@ Poincaré引理 = 可缩空间的上同调消失
 ├─ 可缩空间: 同伦等价于点
 ├─ 上同调: H^k = 0 (k > 0)
 └─ 同伦不变性: 同伦空间有相同上同调
+
 ```
 
 ### 5.2 推广

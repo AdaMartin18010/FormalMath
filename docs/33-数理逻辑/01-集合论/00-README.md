@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 集合论 (Set Theory)
 
 ## 模块概述
@@ -16,7 +24,9 @@
 ## 学习路径
 
 ```
+
 基础集合运算 → ZFC公理系统 → 序数与基数 → 大基数层级 → 强制法
+
 ```
 
 ## 前置知识

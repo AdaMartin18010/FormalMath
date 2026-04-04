@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # PID → UFD 推导
 
 ## 核心定理陈述
@@ -18,6 +23,7 @@ graph TD
     
     F[不可约元p] --> G[pR极大理想?]
     G -->|PID中| H[pR极大<br/>⇔ p不可约]
+
     H --> I[极大理想素<br/>⇒ p是素元]
     
     E --> J[存在性<br/>任意a = p₁...pₙ]
@@ -33,6 +39,7 @@ graph TD
     style L fill:#f9f,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:1px
     style I fill:#bbf,stroke:#333,stroke-width:1px
+
 ```
 
 ---
@@ -130,6 +137,7 @@ graph TD
     E --> I[ℤ[x,y]是UFD<br/>非PID]
     
     style C fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 ---
@@ -182,6 +190,7 @@ graph TD
     H --> I[Cl(O_K) = 1<br/>⇔ UFD]
     
     style D fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 ---

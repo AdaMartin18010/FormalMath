@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # msc_annotation_phase2
 
 **源文件**: `tools\msc_annotation_phase2.py`
@@ -8,6 +16,7 @@
 
 ```python
 def has_msc(content)
+
 ```
 
 检查文件是否已有MSC编码
@@ -20,6 +29,7 @@ def has_msc(content)
 
 ```python
 def detect_msc_from_filename(filename, content)
+
 ```
 
 根据文件名和内容检测MSC编码
@@ -33,6 +43,7 @@ def detect_msc_from_filename(filename, content)
 
 ```python
 def add_msc_to_frontmatter(content, primary, secondary)
+
 ```
 
 添加MSC编码到frontmatter
@@ -47,6 +58,7 @@ def add_msc_to_frontmatter(content, primary, secondary)
 
 ```python
 def process_file(filepath)
+
 ```
 
 处理单个文件
@@ -59,6 +71,7 @@ def process_file(filepath)
 
 ```python
 def main()
+
 ```
 
 主函数

@@ -365,6 +365,7 @@ class FrontierContentDatabase:
         # 计算完整性分数
         completeness = (theory_count * 0.5 + application_count * 0.3 + reference_count * 0.2) / 10
         return min(1.0, completeness)
+
 ```
 
 #### 2. 前沿内容检查工具
@@ -446,6 +447,7 @@ class FrontierContentChecker:
             'issues': issues,
             'suggestions': suggestions
         }
+
 ```
 
 ### 前沿内容深化流程
@@ -527,6 +529,7 @@ class FrontierContentCollector:
                 return True
 
         return False
+
 ```
 
 #### 2. 前沿内容深化处理
@@ -594,6 +597,7 @@ class FrontierContentDeepener:
         results['formalisms_added'] = formalism_results.get('count', 0)
 
         return results
+
 ```
 
 ---

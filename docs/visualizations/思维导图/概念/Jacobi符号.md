@@ -1,3 +1,13 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
+# Jacobi符号
+
 ﻿# Jacobi符号 思维导图
 
 ## 中心概念

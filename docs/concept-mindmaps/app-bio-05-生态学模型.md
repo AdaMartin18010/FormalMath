@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 生态学模型 - 思维导图
 
 ## 概述
@@ -52,6 +57,7 @@ mindmap
       入侵物种
         扩散模型
         控制策略
+
 ```
 
 ---
@@ -79,6 +85,7 @@ graph TD
     style A fill:#e8f5e9
     style D fill:#ffcdd2
     style E fill:#fff3e0
+
 ```
 
 ---
@@ -112,6 +119,7 @@ mindmap
         物种-面积
       争议
         生态位vs中性
+
 ```
 
 ---
@@ -152,6 +160,7 @@ graph TD
     style B fill:#e3f2fd
     style H fill:#ffcdd2
     style N fill:#fff3e0
+
 ```
 
 ---
@@ -181,6 +190,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style G fill:#fff3e0
+
 ```
 
 ---

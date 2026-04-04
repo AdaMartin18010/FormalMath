@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×生物学：计算神经科学的动力系统
 
 ## 概述
@@ -97,6 +102,7 @@ mindmap
         视觉幻觉
         工作记忆
         决策
+
 ```
 
 ---
@@ -127,6 +133,7 @@ graph TD
     style HH fill:#e3f2fd
     style LIF fill:#e8f5e9
     style K fill:#fff3e0
+
 ```
 
 ---
@@ -180,6 +187,7 @@ mindmap
       异突触可塑性
         竞争机制
         结构可塑性
+
 ```
 
 ---

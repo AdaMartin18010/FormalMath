@@ -251,6 +251,7 @@ msc_secondary: ['12Exx', '13Cxx', '16-XX']
 
 **中文定义**：群G关于正规子群N的商群是陪集集合{gN | g∈G}，配备陪集乘法运算。
 **英文定义**：The quotient group of G by a normal subgroup N is the set of cosets {gN | g∈G} equipped with coset multiplication.
+
 **符号表示**：$G/N$
 **运算**：$(aN)(bN) = (ab)N$
 
@@ -311,6 +312,7 @@ msc_secondary: ['12Exx', '13Cxx', '16-XX']
 
 **中文定义**：元素x在群作用下的轨道是{g·x | g∈G}。
 **英文定义**：The orbit of an element x under a group action is {g·x | g∈G}.
+
 **符号表示**：$G \cdot x$ 或 $\text{Orb}(x)$
 
 #### 稳定子群 / Stabilizer
@@ -337,6 +339,7 @@ msc_secondary: ['12Exx', '13Cxx', '16-XX']
 
 **中文定义**：群G的p-西洛子群是G的p-子群，其阶是p的最高次幂。
 **英文定义**：A p-Sylow subgroup of a group G is a p-subgroup of G whose order is the highest power of p dividing |G|.
+
 **符号表示**：$P \in \text{Syl}_p(G)$
 **性质**：西洛子群存在且共轭
 
@@ -429,6 +432,7 @@ msc_secondary: ['12Exx', '13Cxx', '16-XX']
 
 **中文定义**：环R关于理想I的商环是陪集集合{r+I | r∈R}，配备陪集运算。
 **英文定义**：The quotient ring of R by an ideal I is the set of cosets {r+I | r∈R} equipped with coset operations.
+
 **符号表示**：$R/I$
 **运算**：$(a+I) + (b+I) = (a+b)+I$ 和 $(a+I) \cdot (b+I) = (a \cdot b)+I$
 
@@ -670,6 +674,7 @@ msc_secondary: ['12Exx', '13Cxx', '16-XX']
 
 **中文定义**：R-模M关于子模N的商模是陪集集合{m+N | m∈M}，配备陪集运算。
 **英文定义**：The quotient module of an R-module M by a submodule N is the set of cosets {m+N | m∈M} equipped with coset operations.
+
 **符号表示**：$M/N$
 **运算**：$(m+N) + (n+N) = (m+n)+N$ 和 $r \cdot (m+N) = (r \cdot m)+N$
 
@@ -815,6 +820,7 @@ msc_secondary: ['12Exx', '13Cxx', '16-XX']
 
 **中文定义**：李代数𝔤关于理想𝔦的商李代数是陪集集合{x+𝔦 | x∈𝔤}，配备李括号运算。
 **英文定义**：The quotient Lie algebra of 𝔤 by an ideal 𝔦 is the set of cosets {x+𝔦 | x∈𝔤} equipped with Lie bracket operation.
+
 **符号表示**：$\mathfrak{g}/\mathfrak{i}$
 **运算**：$[x+\mathfrak{i}, y+\mathfrak{i}] = [x,y]+\mathfrak{i}$
 
@@ -1228,6 +1234,7 @@ msc_secondary: ['12Exx', '13Cxx', '16-XX']
 模 (Module) - 环在阿贝尔群上的作用
   ↓
 向量空间 (Vector Space) - 域在阿贝尔群上的作用（模的特例）
+
 ```
 
 #### 思维导图可视化
@@ -1276,6 +1283,7 @@ mindmap
         群同态
         环同态
         模同态
+
 ```
 
 #### 多维知识矩阵：代数结构层次关系
@@ -1312,6 +1320,7 @@ mindmap
       ├─ 可解群 (Solvable Group)
       ├─ 幂零群 (Nilpotent Group)
       └─ 西洛子群 (Sylow Subgroup)
+
 ```
 
 #### 思维导图可视化
@@ -1377,6 +1386,7 @@ mindmap
       化学
         分子对称
         晶体学
+
 ```
 
 #### 多维知识矩阵：群论核心概念
@@ -1410,6 +1420,7 @@ mindmap
   │   └─ 阿廷环 (Artinian Ring)
   └─ 局部化 (Localization)
       └─ 分式域 (Field of Fractions)
+
 ```
 
 ### 模论结构关系 / Module Theory Structure Relationships
@@ -1435,6 +1446,7 @@ mindmap
           ├─ 有限表示模 (Finitely Presented Module)
           ├─ 诺特模 (Noetherian Module)
           └─ 阿廷模 (Artinian Module)
+
 ```
 
 ### 李代数结构关系 / Lie Algebra Structure Relationships
@@ -1460,6 +1472,7 @@ mindmap
       ├─ 根系 (Root System)
       ├─ Cartan子代数 (Cartan Subalgebra)
       └─ 基灵形式 (Killing Form)
+
 ```
 
 ### 范畴论结构关系 / Category Theory Structure Relationships
@@ -1493,6 +1506,7 @@ mindmap
   └─ 等价 (Equivalences)
       ├─ 范畴等价 (Category Equivalence)
       └─ 对偶范畴 (Opposite Category)
+
 ```
 
 ---
@@ -2072,6 +2086,7 @@ mindmap
 % 其他
 \usepackage{mathtools}    % 数学工具扩展
 \usepackage{stmaryrd}     % 特殊符号
+
 ```
 
 ### LaTeX使用技巧 / LaTeX Usage Tips
@@ -2235,6 +2250,7 @@ mindmap
 1970年代：范畴论成为统一语言
   ↓
 现代：代数结构理论的广泛应用
+
 ```
 
 ---
@@ -3602,6 +3618,7 @@ mindmap
   ├─ 半直积 (Semidirect Product)
   └─ 群表示 (Group Representation)
       └─ 特征标 (Character)
+
 ```
 
 #### 环论核心概念网络 / Ring Theory Core Concepts Network
@@ -3625,6 +3642,7 @@ mindmap
   ├─ 局部化 (Localization)
   │   └─ 分式域 (Field of Fractions)
   └─ 诺特环 (Noetherian Ring)
+
 ```
 
 #### 域论核心概念网络 / Field Theory Core Concepts Network
@@ -3644,6 +3662,7 @@ mindmap
   ├─ Galois群 (Galois Group)
   │   └─ Galois理论 (Galois Theory)
   └─ 有限域 (Finite Field)
+
 ```
 
 #### 模论核心概念网络 / Module Theory Core Concepts Network
@@ -3662,6 +3681,7 @@ mindmap
   ├─ 内射模 (Injective Module)
   ├─ 张量积 (Tensor Product)
   └─ 诺特模 (Noetherian Module)
+
 ```
 
 #### 李代数核心概念网络 / Lie Algebra Core Concepts Network
@@ -3681,6 +3701,7 @@ mindmap
   │   └─ 单李代数 (Simple Lie Algebra)
   ├─ 根系 (Root System)
   └─ 李代数表示 (Lie Algebra Representation)
+
 ```
 
 #### 范畴论核心概念网络 / Category Theory Core Concepts Network
@@ -3701,6 +3722,7 @@ mindmap
   │   └─ 积 (Product)
   └─ 余极限 (Colimit)
       └─ 余积 (Coproduct)
+
 ```
 
 ### 跨分支关系网络 / Cross-Branch Relationship Network
@@ -3721,6 +3743,7 @@ mindmap
       ├─ 核 (Kernel)
       ├─ 像 (Image)
       └─ 第一同构定理 (First Isomorphism Theorem)
+
 ```
 
 #### 商结构关系网络 / Quotient Structure Relationship Network
@@ -3737,6 +3760,7 @@ mindmap
       ├─ 通过子结构构造
       ├─ 保持原结构的性质
       └─ 第一同构定理
+
 ```
 
 #### 特殊结构关系网络 / Special Structure Relationship Network
@@ -3760,6 +3784,7 @@ mindmap
   │   └─ 平坦模 (Flat Module)
   └─ 关系：
       自由模 → 投射模 → 平坦模
+
 ```
 
 ### 学习路径关系网络 / Learning Path Relationship Network
@@ -3796,6 +3821,7 @@ mindmap
   ├─ 同调代数 (Homological Algebra)
   ├─ 表示论 (Representation Theory)
   └─ 高级范畴论 (Advanced Category Theory)
+
 ```
 
 ### 应用关系网络 / Application Relationship Network
@@ -3834,6 +3860,7 @@ mindmap
       │   └─ 概形理论 (Scheme Theory)
       └─ 同调代数 (Homological Algebra)
           └─ 导出范畴 (Derived Category)
+
 ```
 
 #### 实际应用关系 / Practical Application Relationships
@@ -3854,6 +3881,7 @@ mindmap
   └─ 计算机科学 (Computer Science)
       ├─ 范畴论 → 函数式编程
       └─ 群论 → 算法设计
+
 ```
 
 ### 关系类型说明 / Relationship Type Explanations

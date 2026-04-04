@@ -42,6 +42,7 @@ theorem hahn_banach {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
     {p : Subspace ℝ E} {f : p →L[ℝ] ℝ} :
     ∃ F : E →L[ℝ] ℝ, (∀ x : p, F x = f x) ∧ ‖F‖ = ‖f‖ := by
   exact exists_extension_norm_eq f
+
 ```
 
 ---
@@ -62,6 +63,7 @@ Hahn-Banach的几何形式：
     │
 
 存在超平面H分离A和x₀
+
 ```
 
 ### 2.2 扩张过程
@@ -75,6 +77,7 @@ f定义在M上 → F扩张到全空间X
     M ──f──> ℝ
     │
     子空间
+
 ```
 
 ---
@@ -142,9 +145,10 @@ A = np.array([[1, 0, 0], [0, 1, 0]])  # 子空间：前两个坐标
 f = np.array([1, 2])  # 子空间上的泛函
 F = hahn_banach_finite(A, f, None)
 print(f"扩张后的泛函: F = {F}")
+
 ```
 
-### 4.2 应用：最优逼近
+## 4.2 应用：最优逼近
 
 ```python
 def best_approximation(X, M, x):
@@ -158,6 +162,7 @@ def best_approximation(X, M, x):
     # 简化：正交投影
     proj = M @ np.linalg.lstsq(M.T @ M, M.T @ x, rcond=None)[0]
     return proj
+
 ```
 
 ---
@@ -171,6 +176,7 @@ Hahn-Banach = 函子保持性质
 ├─ 限制函子: X* → M*
 ├─ Hahn-Banach: 存在右逆（扩张）
 └─ 保范: 函子的"度量兼容"
+
 ```
 
 ### 5.2 推广

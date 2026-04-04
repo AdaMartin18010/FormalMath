@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # FormalMath 定理详细说明
 
 ## fermat_coprime
@@ -6,6 +14,7 @@
 
 ```lean4
 theorem fermat_coprime {m n : ℕ} (hne : m ≠ n) : Nat.Coprime (F_m) (F_n)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -18,6 +27,7 @@ theorem fermat_coprime {m n : ℕ} (hne : m ≠ n) : Nat.Coprime (F_m) (F_n)
 
 ```lean4
 theorem prime_gaps_unbounded : ∀ (N : ℕ), ∃ (n : ℕ), nthPrime (n + 1) - nthPrime n > N
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -30,6 +40,7 @@ theorem prime_gaps_unbounded : ∀ (N : ℕ), ∃ (n : ℕ), nthPrime (n + 1) - 
 
 ```lean4
 theorem no_retraction_sphere {n : ℕ} (hn : n > 0) :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -42,6 +53,7 @@ theorem no_retraction_sphere {n : ℕ} (hn : n > 0) :
 
 ```lean4
 theorem kakutani_fixed_point {n : ℕ} {X : Set (EuclideanSpace ℝ (Fin n))}
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -54,6 +66,7 @@ theorem kakutani_fixed_point {n : ℕ} {X : Set (EuclideanSpace ℝ (Fin n))}
 
 ```lean4
 theorem poly_eq_zero_of_degree_lt_card_roots {R : Type*} [Field R] [DecidableEq R]
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -66,6 +79,7 @@ theorem poly_eq_zero_of_degree_lt_card_roots {R : Type*} [Field R] [DecidableEq 
 
 ```lean4
 theorem fundamental_theorem_of_algebra (P : Polynomial ℂ) (hdeg : P.degree > 0) :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -78,6 +92,7 @@ theorem fundamental_theorem_of_algebra (P : Polynomial ℂ) (hdeg : P.degree > 0
 
 ```lean4
 theorem real_polynomial_factorization (P : Polynomial ℝ) (hdeg : P.degree > 0) :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -90,6 +105,7 @@ theorem real_polynomial_factorization (P : Polynomial ℝ) (hdeg : P.degree > 0)
 
 ```lean4
 theorem weak_nullstellensatz {n : ℕ} (I : Ideal (Poly n k))
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -102,6 +118,7 @@ theorem weak_nullstellensatz {n : ℕ} (I : Ideal (Poly n k))
 
 ```lean4
 theorem weak_nullstellensatz ' {n : ℕ} (I : Ideal (Poly n k)) :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -114,6 +131,7 @@ theorem weak_nullstellensatz ' {n : ℕ} (I : Ideal (Poly n k)) :
 
 ```lean4
 theorem strong_nullstellensatz {n : ℕ} (I : Ideal (Poly n k)) :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -126,6 +144,7 @@ theorem strong_nullstellensatz {n : ℕ} (I : Ideal (Poly n k)) :
 
 ```lean4
 theorem radical_ideal_bijection {n : ℕ} :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -138,6 +157,7 @@ theorem radical_ideal_bijection {n : ℕ} :
 
 ```lean4
 theorem maximal_ideal_point {n : ℕ} (M : Ideal (Poly n k))
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -150,6 +170,7 @@ theorem maximal_ideal_point {n : ℕ} (M : Ideal (Poly n k))
 
 ```lean4
 theorem zariski_topology_closed {n : ℕ} :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -162,6 +183,7 @@ theorem zariski_topology_closed {n : ℕ} :
 
 ```lean4
 theorem coordinate_ring_universal {n : ℕ} (X : Set (Fin n → k))
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -174,6 +196,7 @@ theorem coordinate_ring_universal {n : ℕ} (X : Set (Fin n → k))
 
 ```lean4
 theorem countable_iUnion_finite {α : Type*} {f : ℕ → Set α}
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -186,6 +209,7 @@ theorem countable_iUnion_finite {α : Type*} {f : ℕ → Set α}
 
 ```lean4
 theorem infinite_ramsey_simple {k : ℕ} {C : Type*} [Finite C]
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -198,6 +222,7 @@ theorem infinite_ramsey_simple {k : ℕ} {C : Type*} [Finite C]
 
 ```lean4
 theorem monotone_subsequence_exists {x : ℕ → ℝ} :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -210,6 +235,7 @@ theorem monotone_subsequence_exists {x : ℕ → ℝ} :
 
 ```lean4
 theorem green_rectangle (P Q : ℝ × ℝ → ℝ)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -222,6 +248,7 @@ theorem green_rectangle (P Q : ℝ × ℝ → ℝ)
 
 ```lean4
 theorem green_x_simple (P Q : ℝ × ℝ → ℝ)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -234,6 +261,7 @@ theorem green_x_simple (P Q : ℝ × ℝ → ℝ)
 
 ```lean4
 theorem green_theorem (P Q : ℝ × ℝ → ℝ)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -246,6 +274,7 @@ theorem green_theorem (P Q : ℝ × ℝ → ℝ)
 
 ```lean4
 theorem area_by_line_integral (D : Set (ℝ × ℝ))
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -258,6 +287,7 @@ theorem area_by_line_integral (D : Set (ℝ × ℝ))
 
 ```lean4
 theorem green_divergence_form (F : ℝ × ℝ → ℝ × ℝ)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -270,6 +300,7 @@ theorem green_divergence_form (F : ℝ × ℝ → ℝ × ℝ)
 
 ```lean4
 theorem morse_lemma (f : C^∞⟮M, 𝓡 1⟯) (p : M)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -282,6 +313,7 @@ theorem morse_lemma (f : C^∞⟮M, 𝓡 1⟯) (p : M)
 
 ```lean4
 theorem topology_change (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -294,6 +326,7 @@ theorem topology_change (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f)
 
 ```lean4
 theorem weak_morse_inequality (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -306,6 +339,7 @@ theorem weak_morse_inequality (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f
 
 ```lean4
 theorem strong_morse_inequality (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -318,6 +352,7 @@ theorem strong_morse_inequality (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction
 
 ```lean4
 theorem euler_characteristic_formula (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f) :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -330,6 +365,7 @@ theorem euler_characteristic_formula (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFun
 
 ```lean4
 theorem reeb_theorem (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f) :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -342,6 +378,7 @@ theorem reeb_theorem (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f) :
 
 ```lean4
 theorem two_critical_points_sphere (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -354,6 +391,7 @@ theorem two_critical_points_sphere (f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunct
 
 ```lean4
 theorem noetherian_iff_acc {R : Type u} [CommRing R] :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -366,6 +404,7 @@ theorem noetherian_iff_acc {R : Type u} [CommRing R] :
 
 ```lean4
 theorem lead_coeff_ideal_mono {R : Type u} [CommRing R]
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -378,6 +417,7 @@ theorem lead_coeff_ideal_mono {R : Type u} [CommRing R]
 
 ```lean4
 theorem hilbert_basis_theorem_explicit {R : Type u} [CommRing R]
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -390,6 +430,7 @@ theorem hilbert_basis_theorem_explicit {R : Type u} [CommRing R]
 
 ```lean4
 theorem vanishing_ideal_finitely_generated {k : Type u} [Field k]
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -402,6 +443,7 @@ theorem vanishing_ideal_finitely_generated {k : Type u} [Field k]
 
 ```lean4
 theorem noetherian_of_polynomial_noetherian {R : Type u} [CommRing R]
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -414,6 +456,7 @@ theorem noetherian_of_polynomial_noetherian {R : Type u} [CommRing R]
 
 ```lean4
 theorem divergence_cuboid (F : VectorField3D)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -426,6 +469,7 @@ theorem divergence_cuboid (F : VectorField3D)
 
 ```lean4
 theorem divergence_z_simple (F : VectorField3D)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -438,6 +482,7 @@ theorem divergence_z_simple (F : VectorField3D)
 
 ```lean4
 theorem divergence_theorem (F : VectorField3D)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -450,6 +495,7 @@ theorem divergence_theorem (F : VectorField3D)
 
 ```lean4
 theorem volume_by_flux (V : Set (ℝ × ℝ × ℝ))
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -462,6 +508,7 @@ theorem volume_by_flux (V : Set (ℝ × ℝ × ℝ))
 
 ```lean4
 theorem divergence_meaning (F : VectorField3D)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -474,6 +521,7 @@ theorem divergence_meaning (F : VectorField3D)
 
 ```lean4
 theorem green_first_identity (u v : (ℝ × ℝ × ℝ) → ℝ)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -486,6 +534,7 @@ theorem green_first_identity (u v : (ℝ × ℝ × ℝ) → ℝ)
 
 ```lean4
 theorem green_second_identity (u v : (ℝ × ℝ × ℝ) → ℝ)
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -498,6 +547,7 @@ theorem green_second_identity (u v : (ℝ × ℝ × ℝ) → ℝ)
 
 ```lean4
 theorem carleson_theorem {f : ℝ → ℂ} (hf : Function.Periodic f (2 * π))
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
@@ -510,6 +560,7 @@ theorem carleson_theorem {f : ℝ → ℂ} (hf : Function.Periodic f (2 * π))
 
 ```lean4
 theorem fast_mod_exp_correct {a p e : ℕ} [Fact p.Prime] (hpa : ¬p ∣ a) :
+
 ```
 
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成

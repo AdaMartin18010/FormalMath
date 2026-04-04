@@ -30,12 +30,14 @@ msc_secondary: ['97-XX', '00-XX', '16-XX']
 
 ```text
 作者. 书名[M]. 版本. 出版地: 出版社, 出版年.
+
 ```
 
 **英文格式**:
 
 ```text
 Author, A. Title[M]. Edition. Place: Publisher, Year.
+
 ```
 
 #### 1.2 示例
@@ -44,18 +46,21 @@ Author, A. Title[M]. Edition. Place: Publisher, Year.
 
 ```text
 Jech, T. Set Theory[M]. 3rd Millennium Edition. Berlin: Springer, 2003.
+
 ```
 
 **多作者**:
 
 ```text
 Kunen, K. Set Theory: An Introduction to Independence Proofs[M]. Amsterdam: North-Holland, 1980.
+
 ```
 
 **中文书籍**:
 
 ```text
 张禾瑞. 近世代数基础[M]. 修订本. 北京: 高等教育出版社, 1978.
+
 ```
 
 ### 2. 期刊论文 / Journal Articles
@@ -66,18 +71,21 @@ Kunen, K. Set Theory: An Introduction to Independence Proofs[M]. Amsterdam: Nort
 
 ```text
 Author, A. Article Title[J]. Journal Name, Year, Volume(Issue): Pages.
+
 ```
 
 **中文格式**:
 
 ```text
 作者. 文章标题[J]. 期刊名称, 年份, 卷号(期号): 页码.
+
 ```
 
 #### 2.2 示例
 
 ```text
 Gödel, K. The Consistency of the Axiom of Choice and of the Generalized Continuum-Hypothesis with the Axioms of Set Theory[J]. Annals of Mathematics, 1940, 41(3): 657-660.
+
 ```
 
 ### 3. 会议论文 / Conference Papers
@@ -86,12 +94,14 @@ Gödel, K. The Consistency of the Axiom of Choice and of the Generalized Continu
 
 ```text
 Author, A. Paper Title[C]//Conference Name. Place: Publisher, Year: Pages.
+
 ```
 
 #### 3.2 示例
 
 ```text
 Cohen, P. J. The Independence of the Continuum Hypothesis[C]//Proceedings of the National Academy of Sciences. Washington: National Academy of Sciences, 1963: 1143-1148.
+
 ```
 
 ### 4. 在线资源 / Online Resources
@@ -100,12 +110,14 @@ Cohen, P. J. The Independence of the Continuum Hypothesis[C]//Proceedings of the
 
 ```text
 Author, A. Title[EB/OL]. [访问日期]. URL.
+
 ```
 
 #### 4.2 示例
 
 ```text
 Wikipedia contributors. Zermelo–Fraenkel set theory[EB/OL]. [2025-01-XX]. https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory.
+
 ```
 
 ### 5. 课程资源 / Course Resources
@@ -114,12 +126,14 @@ Wikipedia contributors. Zermelo–Fraenkel set theory[EB/OL]. [2025-01-XX]. http
 
 ```text
 University Name. Course Name[EB/OL]. [访问日期]. URL.
+
 ```
 
 #### 5.2 示例
 
 ```text
 MIT OpenCourseWare. 18.701 Algebra I[EB/OL]. [2025-01-XX]. https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/.
+
 ```
 
 ---
@@ -244,6 +258,7 @@ MIT OpenCourseWare. 18.701 Algebra I[EB/OL]. [2025-01-XX]. https://ocw.mit.edu/c
 
 - Wikipedia: [Zermelo–Fraenkel set theory](https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory)
 - MIT OpenCourseWare: [18.701 Algebra I](https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/)
+
 ```
 
 ### LaTeX格式
@@ -267,6 +282,7 @@ MIT OpenCourseWare. 18.701 Algebra I[EB/OL]. [2025-01-XX]. https://ocw.mit.edu/c
   address = {Amsterdam},
   year = {1980}
 }
+
 ```
 
 ---

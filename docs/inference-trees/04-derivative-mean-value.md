@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 导数定义 → 中值定理家族推理树
 
 ## 概述
@@ -39,6 +47,7 @@ graph TD
     end
     
     style D1 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
+
 ```
 
 ## 推理步骤详解
@@ -78,6 +87,7 @@ $$\frac{f(b)-f(a)}{g(b)-g(a)} = \frac{f'(\xi)}{g'(\xi)}$$
 ## 依赖关系
 
 ```
+
 导数定义
     ↓
 Fermat定理 ← 极限保号性
@@ -89,4 +99,5 @@ Lagrange中值
 Cauchy中值 ← 参数化技巧
     ↓
 L'Hôpital法则
+
 ```

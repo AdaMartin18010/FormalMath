@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Black-Scholes模型 - 思维导图
 
 ## 概述
@@ -57,6 +62,7 @@ mindmap
         Garman-Kohlhagen模型
       期货期权
         Black模型
+
 ```
 
 ---
@@ -95,6 +101,7 @@ graph TD
     style B fill:#e3f2fd
     style H fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -131,6 +138,7 @@ mindmap
         不同执行价的隐含波动率差异
       波动率偏斜
         市场 crashed 恐惧
+
 ```
 
 ---
@@ -171,6 +179,7 @@ graph LR
     style B fill:#e3f2fd
     style E fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---
@@ -212,6 +221,7 @@ graph TD
     style K fill:#e8f5e9
     style L fill:#e8f5e9
     style M fill:#e8f5e9
+
 ```
 
 ---
@@ -244,6 +254,7 @@ flowchart LR
     
     style E fill:#fff3e0
     style F fill:#fff3e0
+
 ```
 
 ---

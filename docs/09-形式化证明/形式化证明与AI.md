@@ -62,7 +62,7 @@ msc_secondary: ['68T07', '03B35', '03B70']
 
 ---
 
-## 1. 自动形式化最新进展
+## 一、自动形式化最新进展
 
 ### 1.1 KELPS系统详解
 
@@ -78,8 +78,10 @@ graph TB
     D --> E[Lean验证器]
     E -->|成功| F[输出代码]
     E -->|失败| G[错误分析]
+
     G --> H[修复建议]
     H --> D
+
 ```
 
 **核心组件**
@@ -124,6 +126,7 @@ $$P_{\text{code}|\text{text}} = \prod_{t=1}^T P(c_t | c_{<t}, \text{text}, \text
 **数据集统计**
 
 ```
+
 总问题数：50,000+
 ├── 高中级别：15,000 (30%)
 ├── 本科级别：25,000 (50%)
@@ -140,6 +143,7 @@ $$P_{\text{code}|\text{text}} = \prod_{t=1}^T P(c_t | c_{<t}, \text{text}, \text
 ├── 英语：35,000 (70%)
 ├── 中文：10,000 (20%)
 └── 其他：5,000 (10%)
+
 ```
 
 **评价指标**
@@ -199,7 +203,7 @@ $$h_{\text{shared}} = \text{XLM-R}(\text{text}_{\text{any lang}})$$
 
 ---
 
-## 2. 神经定理证明系统
+## 二、神经定理证明系统
 
 ### 2.1 AlphaProof深度解析
 
@@ -214,12 +218,14 @@ graph TB
     C --> D[Lean验证]
     D -->|成功| E[输出证明]
     D -->|失败| F[奖励计算]
+
     F --> B
 
     G[预训练LLM] --> H[策略网络]
     G --> I[价值网络]
     H --> C
     I --> C
+
 ```
 
 **核心创新**
@@ -237,6 +243,7 @@ graph TB
 3. **证明树搜索**：
    - 使用**MCTS (蒙特卡洛树搜索)**
    - 策略网络：$\pi(a|s) = P(\text{tactic } a | \text{state } s)$
+
    - 价值网络：$V(s) =$ 从状态 $s$ 成功证明的概率
 
 **数学公式**
@@ -257,6 +264,7 @@ $$\mathcal{L} = \mathcal{L}_{\text{policy}} + \mathcal{L}_{\text{value}}$$
 
 其中：
 $$\mathcal{L}_{\text{policy}} = -\sum_t \log \pi(a_t^* | s_t)$$
+
 $$\mathcal{L}_{\text{value}} = \sum_t (V(s_t) - z_t)^2$$
 
 **IMO 2024成绩**
@@ -281,6 +289,7 @@ $$\mathcal{L}_{\text{value}} = \sum_t (V(s_t) - z_t)^2$$
 **架构组件**
 
 ```
+
 LeanDojo系统
 ├── 数据提取
 │   ├── AST解析器
@@ -298,6 +307,7 @@ LeanDojo系统
     ├── Lean REPL
     ├── Gym环境
     └── 证明搜索
+
 ```
 
 **检索增强生成**
@@ -350,11 +360,13 @@ $$\text{Retrieve}(s, k) = \underset{p \in \mathcal{P}}{\text{top-}k} \, \text{si
 - **超边**：tactic（连接多个父状态到子状态）
 
 ```
+
 状态A
    ↓ tactic t1
 状态B, 状态C  ← 超边连接两个子状态
    ↓ tactic t2
 状态D
+
 ```
 
 **在线学习**
@@ -389,13 +401,14 @@ $$V_\theta(s) = \sigma(W_v \cdot \text{Encoder}(s) + b_v)$$
 
 ---
 
-## 3. LLM辅助形式化证明
+## 三、LLM辅助形式化证明
 
 ### 3.1 提示工程策略
 
 **零样本提示**
 
 ```
+
 将以下数学陈述形式化为Lean 4代码：
 
 陈述：{mathematical_statement}
@@ -404,16 +417,19 @@ $$V_\theta(s) = \sigma(W_v \cdot \text{Encoder}(s) + b_v)$$
 1. 使用正确的Lean语法
 2. 包含所有必要的import
 3. 添加类型注解
+
 ```
 
 **少样本提示 (Few-shot)**
 
 ```
+
 示例1：
 自然语言："对于所有自然数n，n + 0 = n"
 Lean代码：
 theorem add_zero (n : Nat) : n + 0 = n := by
   induction n with
+
   | zero => rfl
   | succ n ih => simp [ih]
 
@@ -422,11 +438,13 @@ theorem add_zero (n : Nat) : n + 0 = n := by
 
 当前问题：{mathematical_statement}
 请生成对应的Lean代码：
+
 ```
 
 **链式思维提示 (CoT)**
 
 ```
+
 问题：证明 sqrt(2) 是无理数
 
 思考过程：
@@ -437,6 +455,7 @@ theorem add_zero (n : Nat) : n + 0 = n := by
 
 生成代码：
 ...
+
 ```
 
 **实验对比**
@@ -463,6 +482,7 @@ graph LR
     D --> E[上下文增强]
     E --> F[LLM生成]
     F --> G[Lean验证]
+
 ```
 
 **关键组件**
@@ -497,6 +517,7 @@ graph LR
 **多智能体架构**
 
 ```
+
 证明协作系统
 ├── 策略智能体 (Policy Agent)
 │   └── 负责：选择tactic
@@ -506,6 +527,7 @@ graph LR
 │   └── 负责：搜索相关引理
 └── 验证智能体 (Verification Agent)
     └── 负责：检查证明正确性
+
 ```
 
 **协作协议**
@@ -536,7 +558,7 @@ $$a^* = \arg\max_a \sum_{i=1}^N w_i \cdot Q_i(s, a)$$
 
 ---
 
-## 4. Lean4 + AI集成
+## 四、Lean4 + AI集成
 
 ### 4.1 Lean Copilot
 
@@ -574,6 +596,7 @@ def suggest_tactic(lean_state: str) -> List[str]:
     outputs = model.generate(**inputs, max_new_tokens=50)
     suggestions = tokenizer.decode(outputs[0])
     return parse_suggestions(suggestions)
+
 ```
 
 **性能指标**
@@ -584,7 +607,7 @@ def suggest_tactic(lean_state: str) -> List[str]:
 
 ---
 
-### 4.2 Mathlib4智能扩展
+## 4.2 Mathlib4智能扩展
 
 **自动引理发现**
 
@@ -626,6 +649,7 @@ goal: x + y = y + x
 - 目标类型：等式证明
 - 建议策略：使用Nat.add_comm
 - 替代方案：induction x
+
 ```
 
 **技术挑战**
@@ -636,7 +660,7 @@ goal: x + y = y + x
 
 ---
 
-## 5. 工具与实现
+## 五、工具与实现
 
 ### 5.1 Python实现示例
 
@@ -778,11 +802,12 @@ if __name__ == "__main__":
         print(f"证明成功: {proof}")
     else:
         print("证明失败")
+
 ```
 
 ---
 
-### 5.2 Lean 4 API集成
+## 5.2 Lean 4 API集成
 
 **Lean REPL交互**
 
@@ -867,6 +892,7 @@ if __name__ == "__main__":
     print(f"结果: {result}")
 
     repl.close()
+
 ```
 
 ---
@@ -909,6 +935,7 @@ def example_calc (a b c : ℝ) (h1 : a < b) (h2 : b < c) : a < c := by
   calc
     a < b := h1
     _ < c := h2
+
 ```
 
 ### 6.2 Mathlib4最新覆盖范围 (v4.30+)
@@ -916,6 +943,7 @@ def example_calc (a b c : ℝ) (h1 : a < b) (h2 : b < c) : a < c := by
 **统计信息** (截至2025年)
 
 ```
+
 Mathlib4 v4.30+统计：
 ├── 代码行数：~1,800,000 行 (持续增长)
 ├── 定义数量：~50,000+
@@ -925,6 +953,7 @@ Mathlib4 v4.30+统计：
 ├── 维护者：28人
 ├── 审阅者：22人
 └── 每周更新：>200次提交
+
 ```
 
 **新增覆盖领域** (2024-2025)
@@ -962,6 +991,7 @@ Mathlib4 v4.30+统计：
 Richard Taylor规划的现代变体Wiles/Taylor-Wiles证明路线：
 
 ```
+
 Fermat大定理
   ↓ (约化)
 椭圆曲线的模性提升
@@ -971,6 +1001,7 @@ Galois表示的形变理论
 自守形式的L函数理论
   ↓
 ... (现代代数数论的庞大体系)
+
 ```
 
 **当前进展** (2025)：
@@ -1039,7 +1070,7 @@ Morph AI (现Math, Inc.) 的Gauss Agent在2025年9月宣布：
 
 ---
 
-## 7. 开放问题与未来方向
+## 七、开放问题与未来方向
 
 ### 7.1 开放问题
 
@@ -1094,7 +1125,7 @@ Morph AI (现Math, Inc.) 的Gauss Agent在2025年9月宣布：
 
 ---
 
-## 8. Lean 4代码示例集锦
+## 八、Lean 4代码示例集锦
 
 ### 8.1 基本证明示例
 
@@ -1108,8 +1139,10 @@ example (n : ℕ) : n + 0 = n := by
 -- 使用归纳法
 example (n : ℕ) : ∑ i in Finset.range n, i = n * (n - 1) / 2 := by
   induction n with
+
   | zero => simp
   | succ n ih =>
+
     rw [Finset.sum_range_succ, ih]
     ring_nf
     omega
@@ -1117,6 +1150,7 @@ example (n : ℕ) : ∑ i in Finset.range n, i = n * (n - 1) / 2 := by
 -- 数论证明：sqrt(2)是无理数
 example : Irrational (Real.sqrt 2) := by
   native_decide
+
 ```
 
 ### 8.2 使用Mathlib的证明
@@ -1140,6 +1174,7 @@ example {X Y : Type} [TopologicalSpace X] [TopologicalSpace Y]
     IsOpen (f ⁻¹' s) := by
   apply hf.isOpen_preimage
   exact hs
+
 ```
 
 ### 8.3 AI辅助证明示例
@@ -1153,10 +1188,12 @@ theorem complex_theorem {α : Type*} [CompleteLattice α]
     ∃ x : α, f x = x := by
   -- AI辅助提示:
   -- 1. 考虑集合 {x | f x ≤ x}
+
   -- 2. 利用完备格的性质
   -- 3. 应用Knaster-Tarski定理
   
   let S := {x : α | f x ≤ x}
+
   have h1 : ∃ x, IsLeast S x := by
     apply IsComplete.wellFoundedGT.has_min
     -- AI可以建议后续步骤
@@ -1166,11 +1203,12 @@ theorem complex_theorem {α : Type*} [CompleteLattice α]
   use x
   -- 证明 f x = x
   sorry
+
 ```
 
 ---
 
-## 9. 参考文献
+## 九、参考文献
 
 ### 核心论文
 
@@ -1216,7 +1254,7 @@ theorem complex_theorem {α : Type*} [CompleteLattice α]
 
 ---
 
-## 7. 参考文献
+## 七、参考文献
 
 ### 关键论文
 

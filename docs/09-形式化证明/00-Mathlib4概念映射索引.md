@@ -7,6 +7,14 @@ lean4_version: "v4.29.0"
 last_updated: "2026-04-03"
 next_review: "2026-07-03"
 ---
+msc_primary: "68V20"
+msc_secondary: ['03B35', '68T99', '00A99']
+mathlib4_version: "v4.29.0"
+mathlib4_latest: "v4.29.0"
+lean4_version: "v4.29.0"
+last_updated: "2026-04-03"
+next_review: "2026-07-03"
+---
 
 # Mathlib4概念映射索引
 
@@ -103,6 +111,7 @@ example (A B : Set ℕ) : A ⊆ B ↔ ∀ x, x ∈ A → x ∈ B := by
 example (A B : Set ℕ) : (A ∪ B)ᶜ = Aᶜ ∩ Bᶜ := by
   ext x
   simp [Set.mem_compl_iff, Set.mem_union, Set.mem_inter]
+
 ```
 
 ---
@@ -149,6 +158,7 @@ open Fintype in
 example (G : Type*) [Group G] [Fintype G] (H : Subgroup G) :
     card H ∣ card G := by
   exact ⟨H.index, by rw [Subgroup.index_mul_card]⟩
+
 ```
 
 #### 2.2 环论
@@ -198,6 +208,7 @@ example {R : Type*} [CommRing R] (I : Ideal R) :
       have := h.1
       contradiction
     · exact fun h' => by simpa using h'
+
 ```
 
 #### 2.3 域论
@@ -229,6 +240,7 @@ example (p n : ℕ) [Fact p.Prime] :
 -- 伽罗瓦群示例
 example (K L : Type*) [Field K] [Field L] [Algebra K L] : Type _ :=
   L ≃ₐ[K] L
+
 ```
 
 #### 2.4 线性代数
@@ -262,6 +274,7 @@ example : Matrix.det !![(1 : ℝ), 2; 3, 4] = -2 := by
 example (V : Type*) [AddCommGroup V] [Module ℝ V]
     (f : V →ₗ[ℝ] V) (μ : ℝ) : Submodule ℝ V :=
   f.eigenspace μ
+
 ```
 
 #### 2.5 模论
@@ -299,6 +312,7 @@ example (C : Type*) [Category C] : C ⥤ C := Functor.id C
 example (C : Type*) [Category C] (F : Cᵒᵖ ⥤ Type*) (X : C) :
     (yoneda.obj X ⟶ F) ≃ F.obj X :=
   yonedaSections X F
+
 ```
 
 ---
@@ -340,6 +354,7 @@ example (f : ℝ → ℝ) (a b : ℝ) (hab : a < b)
     ∃ c ∈ Set.Ioo a b, f' c = (f b - f a) / (b - a) := by
   apply exists_hasDerivAt_eq_slope
   all_goals assumption
+
 ```
 
 #### 3.2 复分析
@@ -368,6 +383,7 @@ example {f : ℂ → ℂ} (hf : Differentiable ℂ f)
     (hb : Bornology.IsBounded (Set.range f)) :
     ∃ c, f = Function.const ℂ c := by
   exact Liouville.bounded_iff_const.mp hb hf
+
 ```
 
 #### 3.3 泛函分析
@@ -394,6 +410,7 @@ example {E F : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
     (p : Subspace ℝ E) (f : p →L[ℝ] F) :
     ∃ g : E →L[ℝ] F, (∀ x : p, g x = f x) ∧ ‖g‖ = ‖f‖ := by
   apply exists_extension_norm_eq
+
 ```
 
 #### 3.4 测度论
@@ -424,6 +441,7 @@ example {X : Type*} [MeasureSpace X] {f g : X → ℝ}
 example {X : Type*} [MeasureSpace X] {f : ℕ → X → ℝ} {g : X → ℝ}
     (hfg : ∀ n, Integrable (f n)) (hg : Integrable g)
     (hf_bound : ∀ n, ∀ x, |f n x| ≤ g x)
+
     (hf_tendsto : ∀ x, Tendsto (fun n => f n x) atTop (𝓝 (0 : ℝ))) :
     Tendsto (fun n => ∫ x, f n x) atTop (𝓝 0) := by
   apply tendsto_integral_of_dominated_convergence
@@ -433,6 +451,7 @@ example {X : Type*} [MeasureSpace X] {f : ℕ → X → ℝ} {g : X → ℝ}
   · exact hf_bound
   · filter_upwards with x
     exact hf_tendsto x
+
 ```
 
 ---
@@ -476,6 +495,7 @@ example {X : Type*} [TopologicalSpace X] :
     exact ⟨h.2⟩
   · intro h
     exact ⟨by trivial, h.preconnected⟩
+
 ```
 
 ---
@@ -502,6 +522,7 @@ import Mathlib.NumberTheory.LegendreSymbol.QuadraticReciprocity
 
 -- 素数无穷多
 example : {p : ℕ | Nat.Prime p}.Infinite := by
+
   apply Nat.infinite_setOf_prime
 
 -- 欧拉函数
@@ -516,6 +537,7 @@ example (p q : ℕ) (hp : Nat.Prime p) (hq : Nat.Prime q)
   have hq' : Fact q.Prime := ⟨hq⟩
   rw [quadratic_reciprocity']
   all_goals omega
+
 ```
 
 ---
@@ -541,6 +563,7 @@ import Mathlib.Geometry.Manifold.TangentBundle
 -- 光滑流形
 example (M : Type*) [TopologicalSpace M] [ChartedSpace (EuclideanSpace ℝ (Fin n)) M]
     [SmoothManifoldWithCorners (𝓡 n) M] : Type _ := TangentBundle (𝓡 n) M
+
 ```
 
 ---

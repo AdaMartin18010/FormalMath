@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 变分法思维导图
 
 ## 概述
@@ -143,6 +151,7 @@ mindmap
         弹性变分
         塑性理论
         断裂力学
+
 ```
 
 ## 核心概念详解
@@ -192,6 +201,7 @@ $$\sum_i p_i \xi_i - \eta F = \text{const}$$
 
 **关键条件**：
 - 强制性：$F(x,y,z) \geq c|z|^p - C$
+
 - 凸性：$F$ 对 $z$ 凸
 
 ## 相关主题

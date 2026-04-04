@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 msc_primary: "03E35"
 ---
@@ -70,6 +75,7 @@ This document provides a comprehensive analysis of the mapping relationship betw
 自然数 (ℕ) - 良序幺半群
     ↓
 ZFC公理体系 - 集合论基础
+
 ```
 
 **ZFC公理到数系的构造映射** / **ZFC Axiom to Number System Construction Mapping**:
@@ -105,6 +111,7 @@ ZFC公理体系 - 集合论基础
 -- ZFC Natural Number Construction
 def ZFC_Natural : Type :=
   {n : Set | ∃ f : ℕ → Set,
+
    f 0 = ∅ ∧
    (∀ k : ℕ, f (k + 1) = f k ∪ {f k}) ∧
    n ∈ range f}
@@ -160,6 +167,7 @@ begin
     exact natural_induction_zfc P h0 h1
   }
 end
+
 ```
 
 ### 1.3 整数构造的ZFC映射 / ZFC Mapping for Integer Construction
@@ -177,6 +185,7 @@ $\mathbb{Z} = (\mathbb{N} \times \mathbb{N}) / \sim$
 -- Integer equivalence relation
 def IntegerEquivalence : Relation (ZFC_Natural × ZFC_Natural) :=
   {x : (ZFC_Natural × ZFC_Natural) × (ZFC_Natural × ZFC_Natural) |
+
    x.1.1 + x.2.2 = x.1.2 + x.2.1}
 
 -- 整数构造
@@ -205,6 +214,7 @@ begin
   -- Prove distributivity
   exact integer_distributivity_zfc
 end
+
 ```
 
 ### 1.4 有理数构造的ZFC映射 / ZFC Mapping for Rational Number Construction
@@ -222,6 +232,7 @@ $\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$
 -- Rational number equivalence relation
 def RationalEquivalence : Relation (ZFC_Integer × ZFC_Integer) :=
   {x : (ZFC_Integer × ZFC_Integer) × (ZFC_Integer × ZFC_Integer) |
+
    x.1.1 * x.2.2 = x.1.2 * x.2.1 ∧ x.1.2 ≠ 0 ∧ x.2.2 ≠ 0}
 
 -- 有理数构造
@@ -244,6 +255,7 @@ begin
   -- Prove distributivity
   exact rational_distributivity_zfc
 end
+
 ```
 
 ### 1.5 实数构造的ZFC映射 / ZFC Mapping for Real Number Construction
@@ -285,6 +297,7 @@ begin
   -- Prove completeness
   exact real_completeness_axiom_zfc
 end
+
 ```
 
 ## 🧠 2. 人脑认知结构对应关系分析 / Human Brain Cognitive Structure Correspondence Analysis
@@ -319,12 +332,15 @@ structure BrainNumberProcessing where
 -- Cognitive complexity function
 def CognitiveComplexity : NumberSystem → ℝ :=
   λ ns, match ns with
+
   | Natural => 1.0
   | Integer => 2.0
   | Rational => 3.0
   | Real => 4.0
   | Complex => 5.0
+
   end
+
 ```
 
 ### 2.3 学习路径映射 / Learning Path Mapping
@@ -375,6 +391,7 @@ structure Measure (X : Type) (𝒜 : SigmaAlgebra X) where
   empty_measure : μ ∅ = 0
   countable_additivity : ∀ {A : ℕ → 𝒜.sets},
     PairwiseDisjoint A → μ (⋃ n, A n) = ∑ n, μ (A n)
+
 ```
 
 ### 3.2 数系上的测度构造 / Measure Construction on Number Systems
@@ -409,6 +426,7 @@ def CountingMeasure : Measure ZFC_Natural (PowerSetAlgebra ZFC_Natural) :=
       exact countable_additivity_infinite A h h1
     }
 }
+
 ```
 
 **定理 3.2** (实数上的勒贝格测度) / **Theorem 3.2** (Lebesgue Measure on Real Numbers)
@@ -424,6 +442,7 @@ $\lambda([a, b]) = b - a$ 对于区间 $[a, b]$
 def LebesgueMeasure : Measure ZFC_Real (BorelAlgebra ZFC_Real) :=
 {
   μ := λ A, inf {∑ n, (b n - a n) | A ⊆ ⋃ n, [a n, b n]},
+
   empty_measure := by simp [inf_empty],
   countable_additivity := λ A h,
     -- 证明可数可加性
@@ -442,6 +461,7 @@ theorem lebesgue_measure_properties :
   -- Scaling property
   (∀ A : BorelSet ZFC_Real, ∀ c : ZFC_Real, c > 0 →
    μ (c • A) = |c| * μ A) :=
+
 begin
   split,
   { -- 平移不变性
@@ -455,6 +475,7 @@ begin
     exact lebesgue_scaling_property A c hc
   }
 end
+
 ```
 
 ### 3.3 测度论与数系的关系 / Relationship Between Measure Theory and Number Systems
@@ -521,6 +542,7 @@ namespace NumberSystems
 -- 自然数构造
 -- Natural number construction
 inductive Natural where
+
   | zero : Natural
   | succ : Natural → Natural
 
@@ -552,28 +574,37 @@ structure Complex where
 -- Number system operations
 namespace Natural
 def add : Natural → Natural → Natural
+
   | zero, n => n
   | succ m, n => succ (add m n)
 
 def mul : Natural → Natural → Natural
+
   | zero, _ => zero
   | succ m, n => add n (mul m n)
+
 end Natural
 
 namespace Integer
 def add : Integer → Integer → Integer
+
   | (a, b), (c, d) => (add a c, add b d)
 
 def neg : Integer → Integer
+
   | (a, b) => (b, a)
+
 end Integer
 
 namespace Rational
 def add : Rational → Rational → Rational
+
   | (a, b), (c, d) => (add (mul a d) (mul c b), mul b d)
 
 def mul : Rational → Rational → Rational
+
   | (a, b), (c, d) => (mul a c, mul b d)
+
 end Rational
 
 -- 测度论实现
@@ -591,11 +622,13 @@ def LebesgueMeasure : MeasureSpace Real :=
 {
   σ_algebra := BorelSets,
   measure := λ A, inf {∑ n, length (I n) | A ⊆ ⋃ n, I n},
+
   empty_measure := by simp,
   countable_additivity := lebesgue_countable_additivity
 }
 
 end NumberSystems
+
 ```
 
 ### 5.2 定理证明系统 / Theorem Proving System
@@ -644,6 +677,7 @@ begin
   let s := {
     lower := {q : Rational | ∃ a ∈ A, q ≤ a},
     upper := {q : Rational | ∀ a ∈ A, a ≤ q},
+
     lower_bounded := _,
     upper_bounded := _,
     separation := _,
@@ -666,6 +700,7 @@ theorem lebesgue_measure_properties :
   -- Scaling property
   (∀ A : BorelSet Real, ∀ c : Real, c > 0 →
    μ (c • A) = |c| * μ A) :=
+
 begin
   split,
   { intros A x,
@@ -673,6 +708,7 @@ begin
   { intros A c hc,
     exact lebesgue_scaling_property A c hc }
 end
+
 ```
 
 ## 🧠 6. 认知科学分析 / Cognitive Science Analysis
@@ -707,12 +743,15 @@ structure BrainNumberProcessing where
 -- Cognitive load function
 def CognitiveLoad : NumberSystem → ℝ :=
   λ ns, match ns with
+
   | Natural => 1.0    -- 低认知负荷
   | Integer => 2.0    -- 中等认知负荷
   | Rational => 3.0   -- 中高认知负荷
   | Real => 4.0       -- 高认知负荷
   | Complex => 5.0    -- 极高认知负荷
+
   end
+
 ```
 
 ### 6.3 学习理论应用 / Learning Theory Applications

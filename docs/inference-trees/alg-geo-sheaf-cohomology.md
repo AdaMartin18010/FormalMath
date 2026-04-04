@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 层上同调推导推理树
 
 ## 概述
@@ -62,26 +70,38 @@ graph TD
     style K fill:#bfb,stroke:#333
     style L fill:#f96,stroke:#333
     style M fill:#f66,stroke:#333
+
 ```
 
 ## 层上同调详解
 
 ### 1. 整体截面函子
+
 ```
+
 Γ(X, -): Sh(X) → Ab
 F ↦ F(X) = Γ(X, F)
+
 ```
+
 - 左正合函子
 - 保持单射，不保持满射
 
 ### 2. 导出函子定义
+
 ```
+
 H^i(X, F) = R^i Γ(X, F)
+
 ```
+
 通过内射分解计算：
+
 ```
+
 0 → F → I⁰ → I¹ → I² → ...
 H^i(X, F) = ker(Iⁱ(X) → Iⁱ⁺¹(X)) / im(Iⁱ⁻¹(X) → Iⁱ(X))
+
 ```
 
 ### 3. 零调对象
@@ -100,15 +120,21 @@ X 是仿射概形 ⟺ H^i(X, F) = 0 对所有 i>0 和拟凝聚层 F 成立
 
 ### Serre对偶定理
 对于 n 维完备光滑簇：
+
 ```
+
 H^i(X, F)^∨ ≅ H^{n-i}(X, ω_X ⊗ F^*)
+
 ```
 
 ## Cech上同调
 
 对于开覆盖 U = {U_i}：
+
 ```
+
 H̃^i(U, F) = ker(δ: C^i → C^{i+1}) / im(δ: C^{i-1} → C^i)
+
 ```
 
 在仿射概形上，Čech上同调与导出上同调一致。

@@ -211,7 +211,7 @@ export function withCache<T extends (...args: any[]) => any>(
   const cachedFn = ((...args: Parameters<T>): ReturnType<T> => {
     const key = keyGenerator(...args);
     
-    let cached = cache.get(key);
+    const cached = cache.get(key);
     if (cached !== undefined) {
       return cached;
     }

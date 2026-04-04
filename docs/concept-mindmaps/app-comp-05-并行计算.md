@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 并行计算 - 思维导图
 
 ## 概述
@@ -62,6 +67,7 @@ mindmap
         FEM
       蒙特卡洛
          embarrassingly并行
+
 ```
 
 ---
@@ -89,6 +95,7 @@ graph TD
     style B fill:#e3f2fd
     style F fill:#fff3e0
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -143,6 +150,7 @@ mindmap
       细粒度
         高并行度
         高开销
+
 ```
 
 ---
@@ -170,6 +178,7 @@ graph TD
     
     style B fill:#e3f2fd
     style F fill:#fff3e0
+
 ```
 
 ---
@@ -206,6 +215,7 @@ mindmap
       长程力
         FMM
         快速多极子
+
 ```
 
 ---
@@ -238,6 +248,7 @@ flowchart LR
     
     style E fill:#e3f2fd
     style G fill:#fff3e0
+
 ```
 
 ---

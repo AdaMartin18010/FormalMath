@@ -59,15 +59,19 @@ $$\{g^1, g^2, \ldots, g^{p-1}\} = \{1, 2, \ldots, p-1\}$$
 #### 协议流程
 
 ```
+
 Alice                           Bob
 -----                           ---
 选择随机 a ∈ [1, p-2]           选择随机 b ∈ [1, p-2]
 计算 A = g^a mod p              计算 B = g^b mod p
+
        |------ A -------->|      
        |<-------- B ------|      
+
 计算 s = B^a mod p              计算 s = A^b mod p
        = (g^b)^a                = (g^a)^b
        = g^(ab)                 = g^(ab)
+
 ```
 
 #### 密钥推导
@@ -125,15 +129,19 @@ $$s_B = A^b = (g^a)^b = g^{ab} \pmod{p}$$
 #### ECDH协议
 
 ```
+
 Alice                           Bob
 -----                           ---
 选择随机 a ∈ [1, n-1]           选择随机 b ∈ [1, n-1]
 计算 A = [a]G                   计算 B = [b]G
+
        |------ A -------->|      
        |<-------- B ------|      
+
 计算 S = [a]B                   计算 S = [b]A
        = [a][b]G                = [b][a]G
        = [ab]G                  = [ab]G
+
 ```
 
 其中 $G$ 是基点，$n$ 是群的阶。
@@ -183,6 +191,7 @@ Alice                           Bob
 
 3. **密钥派生**:
    ```
+
    shared_secret = DH(private_key, peer_public_key)
    session_key = HKDF(shared_secret, salt, info)
    ```
@@ -196,8 +205,10 @@ Alice                           Bob
 Joux (2000) 提出基于配对的单轮三方密钥交换:
 
 ```
+
 Alice      Bob       Carol
   a          b         c
+
   |\        /|\        /|
   | \      / | \      / |
   |  \    /  |  \    /  |
@@ -205,8 +216,10 @@ Alice      Bob       Carol
   |    \/    |    \/    |
   |    /\    |    /\    |
   |   /  \   |   /  \   |
+
   v  v    v  v  v    v  v
  e(g,g)^abc = e(g,g)^abc = e(g,g)^abc
+
 ```
 
 其中 $e$ 是双线性配对。

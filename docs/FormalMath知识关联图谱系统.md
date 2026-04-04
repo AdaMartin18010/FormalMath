@@ -2,6 +2,9 @@
 msc_primary: "00A99"
 msc_secondary: ['03Bxx', '22E47', '16-XX']
 ---
+msc_primary: "00A99"
+msc_secondary: ['03Bxx', '22E47', '16-XX']
+---
 
 # FormalMath知识关联图谱系统
 
@@ -24,7 +27,7 @@ msc_secondary: ['03Bxx', '22E47', '16-XX']
 
 FormalMath知识关联图谱系统是一个全面的数学知识网络，通过建立概念之间的关联关系，实现知识的系统化组织和智能化导航。该系统不仅展示了数学概念之间的逻辑关系，还提供了学习路径规划、知识发现和应用场景分析等功能。
 
-## 1. 知识图谱架构
+## 一、知识图谱架构
 
 ### 1.1 核心概念节点
 
@@ -41,6 +44,7 @@ class ConceptNode:
         self.description = description    # 概念描述
         self.properties = {}              # 概念属性
         self.relations = []               # 关联关系列表
+
 ```
 
 **核心概念分类**：
@@ -73,6 +77,7 @@ class RelationType:
     DEVELOPED_BY = "developed_by"     # 由...发展
     INFLUENCED_BY = "influenced_by"   # 受...影响
     EVOLVED_FROM = "evolved_from"     # 从...演化而来
+
 ```
 
 **关系属性**：
@@ -101,9 +106,10 @@ class KnowledgeGraph:
         }
         self.paths = {}               # 学习路径
         self.clusters = {}            # 概念聚类
+
 ```
 
-## 2. 数学分支关联图谱
+## 二、数学分支关联图谱
 
 ### 2.1 基础数学关联
 
@@ -130,6 +136,7 @@ graph TD
     E --> N[商集]
     F --> O[偏序集]
     G --> P[函数空间]
+
 ```
 
 **数论关联网络**：
@@ -152,6 +159,7 @@ graph TD
     E --> L[代数数]
     E --> M[超越数]
     L --> N[代数数论]
+
 ```
 
 ### 2.2 代数结构关联
@@ -180,6 +188,7 @@ graph TD
     A --> O[群表示]
     O --> P[特征标]
     O --> Q[不可约表示]
+
 ```
 
 **环论关联网络**：
@@ -206,6 +215,7 @@ graph TD
     N --> O[代数几何]
     A --> P[矩阵环]
     P --> Q[线性代数]
+
 ```
 
 ### 2.3 分析学关联
@@ -233,6 +243,7 @@ graph TD
     H --> N[介值定理]
     I --> O[中值定理]
     J --> P[微积分基本定理]
+
 ```
 
 **复分析关联网络**：
@@ -258,6 +269,7 @@ graph TD
     E --> N[泰勒级数]
     E --> O[洛朗级数]
     F --> P[泊松公式]
+
 ```
 
 ### 2.4 几何学关联
@@ -286,4 +298,5 @@ graph TD
     E --> O[高阶同伦群]
     F --> P[奇异同调]
     G --> Q[德拉姆上同调]
+
 ```

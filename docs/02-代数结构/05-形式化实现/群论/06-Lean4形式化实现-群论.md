@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "06 Lean4形式化实现 群论"
 msc_primary: ["68V20"]
@@ -128,6 +133,7 @@ class FiniteGroup (G : Type*) extends Group G where
 
 -- 群的阶
 def Group.order {G : Type*} [Group G] [Fintype G] : ℕ := Fintype.card G
+
 ```
 
 #### 群元素的幂
@@ -135,6 +141,7 @@ def Group.order {G : Type*} [Group G] [Fintype G] : ℕ := Fintype.card G
 ```lean
 -- 群元素的幂
 def Group.pow {G : Type*} [Group G] (a : G) : ℕ → G
+
   | 0 => 1
   | n + 1 => a * pow a n
 
@@ -142,12 +149,14 @@ def Group.pow {G : Type*} [Group G] (a : G) : ℕ → G
 theorem pow_add {G : Type*} [Group G] (a : G) (m n : ℕ) :
   a ^ (m + n) = a ^ m * a ^ n := by
   induction n with
+
   | zero => rw [Nat.add_zero, pow_zero, mul_one]
   | succ n ih => rw [Nat.add_succ, pow_succ, pow_succ, ih, mul_assoc]
 
 theorem pow_mul {G : Type*} [Group G] (a : G) (m n : ℕ) :
   a ^ (m * n) = (a ^ m) ^ n := by
   induction n with
+
   | zero => rw [Nat.mul_zero, pow_zero, pow_zero]
   | succ n ih => rw [Nat.mul_succ, pow_add, ih, pow_succ]
 
@@ -162,6 +171,7 @@ def Group.order_of {G : Type*} [Group G] (a : G) : ℕ :=
 theorem order_of_dvd_card {G : Type*} [Group G] [Fintype G] (a : G) :
   order_of a ∣ Fintype.card G := by
   sorry
+
 ```
 
 ### 6.1.2 子群与陪集
@@ -208,6 +218,7 @@ def subgroup_top {G : Type*} [Group G] : Subgroup G where
   one_mem := Set.mem_univ 1
   mul_mem := fun _ _ _ _ => Set.mem_univ _
   inv_mem := fun _ _ => Set.mem_univ _
+
 ```
 
 #### 陪集定义
@@ -238,6 +249,7 @@ theorem right_coset_eq_iff {G : Type*} [Group G] (H : Subgroup G) (a b : G) :
 def coset_decomposition {G : Type*} [Group G] [Fintype G] (H : Subgroup G) :
   List (Set G) :=
   sorry
+
 ```
 
 ### 6.1.3 同态与同构
@@ -265,6 +277,7 @@ theorem GroupHom.map_inv {G H : Type*} [Group G] [Group H] (f : GroupHom G H) (a
 -- 同态的核
 def GroupHom.ker {G H : Type*} [Group G] [Group H] (f : GroupHom G H) : Subgroup G where
   carrier := {a | f.toFun a = 1}
+
   one_mem := f.map_one
   mul_mem := by
     intro a b ha hb
@@ -276,6 +289,7 @@ def GroupHom.ker {G H : Type*} [Group G] [Group H] (f : GroupHom G H) : Subgroup
 -- 同态的像
 def GroupHom.im {G H : Type*} [Group G] [Group H] (f : GroupHom G H) : Subgroup H where
   carrier := {b | ∃ a, f.toFun a = b}
+
   one_mem := ⟨1, f.map_one⟩
   mul_mem := by
     intro b₁ b₂ ⟨a₁, ha₁⟩ ⟨a₂, ha₂⟩
@@ -285,6 +299,7 @@ def GroupHom.im {G H : Type*} [Group G] [Group H] (f : GroupHom G H) : Subgroup 
     intro b ⟨a, ha⟩
     use a⁻¹
     rw [f.map_inv, ha]
+
 ```
 
 #### 群同构
@@ -316,6 +331,7 @@ def Aut {G : Type*} [Group G] : Group (GroupIso G G) where
   one_mul := by sorry
   mul_one := by sorry
   mul_left_inv := by sorry
+
 ```
 
 ## 6.2 群论定理证明
@@ -351,6 +367,7 @@ theorem fermat_little_theorem_group {G : Type*} [Group G] [Fintype G] (a : G) :
   have h : order_of a ∣ Fintype.card G := order_of_dvd_group_order a
   cases' h with k hk
   rw [hk, pow_mul, pow_order_of_eq_one, one_pow]
+
 ```
 
 ### 6.2.2 同态基本定理
@@ -372,6 +389,7 @@ theorem order_formula {G H : Type*} [Group G] [Group H] [Fintype G] [Fintype H]
   have h := first_isomorphism_theorem f
   rw [GroupIso.order_eq h]
   sorry
+
 ```
 
 ### 6.2.3 西罗定理
@@ -401,8 +419,10 @@ theorem sylow_second_theorem {G : Type*} [Group G] [Fintype G] (p : ℕ) (hp : P
 -- 西罗第三定理
 theorem sylow_third_theorem {G : Type*} [Group G] [Fintype G] (p : ℕ) (hp : Prime p) :
   let n_p := Nat.card {H : Subgroup G | sylow_p_subgroup p H}
+
   n_p ≡ 1 [MOD p] ∧ n_p ∣ Fintype.card G := by
   sorry
+
 ```
 
 ## 6.3 群论算法实现
@@ -440,6 +460,7 @@ instance {X : Type*} : Group (FreeGroup X) where
   one_mul := sorry
   mul_one := sorry
   mul_left_inv := sorry
+
 ```
 
 ### 6.3.2 子群判定
@@ -464,6 +485,7 @@ def is_normal_subgroup {G : Type*} [Group G] (H : Subgroup G) : Prop :=
 theorem normal_subgroup_iff_conjugate {G : Type*} [Group G] (H : Subgroup G) :
   is_normal_subgroup H ↔ ∀ g : G, ∀ h ∈ H, g * h * g⁻¹ ∈ H := by
   sorry
+
 ```
 
 ### 6.3.3 群同构判定
@@ -491,6 +513,7 @@ theorem finite_abelian_group_structure {G : Type*} [CommGroup G] [Fintype G] :
 def isomorphism_test {G H : Type*} [Group G] [Group H] [Fintype G] [Fintype H] :
   Decidable (are_isomorphic G H) := by
   sorry
+
 ```
 
 ## 6.4 高级群论
@@ -528,6 +551,7 @@ def TensorProductRepresentation {G : Type*} [Group G] {V₁ V₂ : Type*}
   ρ := sorry
   ρ_one := sorry
   ρ_mul := sorry
+
 ```
 
 ### 6.4.2 特征标理论
@@ -552,6 +576,7 @@ theorem character_orthogonality {G : Type*} [Group G] [Fintype G] {V₁ V₂ : T
   (ρ₁ : IrreducibleRepresentation G V₁) (ρ₂ : IrreducibleRepresentation G V₂) :
   (∑ g, Character ρ₁ g * Character ρ₂ g⁻¹) = if ρ₁ = ρ₂ then Fintype.card G else 0 := by
   sorry
+
 ```
 
 ### 6.4.3 有限群分类
@@ -580,6 +605,7 @@ theorem classification_of_finite_simple_groups {G : Type*} [Group G] [Fintype G]
 theorem structure_of_finite_abelian_groups {G : Type*} [CommGroup G] [Fintype G] :
   G ≅ (Π i, ZMod (p_i ^ n_i)) := by
   sorry
+
 ```
 
 ## 6.5 应用案例
@@ -607,8 +633,10 @@ theorem symmetric_group_order (n : ℕ) :
 -- 对称群的生成元
 theorem symmetric_group_generators (n : ℕ) :
   let transpositions := {σ : SymmetricGroup n | ∃ i j, σ = Equiv.swap i j}
+
   generate transpositions = subgroup_top := by
   sorry
+
 ```
 
 ### 案例2：循环群的形式化
@@ -634,8 +662,10 @@ theorem cyclic_group_order (n : ℕ) :
 -- 循环群的生成元
 theorem cyclic_group_generators (n : ℕ) :
   let generators := {a : CyclicGroup n | Nat.coprime a.val n}
+
   generate generators = subgroup_top := by
   sorry
+
 ```
 
 ### 案例3：四元数群的形式化
@@ -643,6 +673,7 @@ theorem cyclic_group_generators (n : ℕ) :
 ```lean
 -- 四元数群
 inductive QuaternionGroup where
+
   | one : QuaternionGroup
   | i : QuaternionGroup
   | j : QuaternionGroup
@@ -654,6 +685,7 @@ inductive QuaternionGroup where
 
 instance : Group QuaternionGroup where
   mul := fun a b => match a, b with
+
     | one, x => x
     | x, one => x
     | i, i => neg_one
@@ -701,8 +733,10 @@ instance : Group QuaternionGroup where
       | neg_i => j
       | neg_j => neg_i
       | neg_k => neg_one
+
   one := one
   inv := fun x => match x with
+
     | one => one
     | i => neg_i
     | j => neg_j
@@ -711,6 +745,7 @@ instance : Group QuaternionGroup where
     | neg_i => i
     | neg_j => j
     | neg_k => k
+
   mul_assoc := by sorry
   one_mul := by sorry
   mul_one := by sorry
@@ -724,6 +759,7 @@ theorem quaternion_group_order :
 theorem quaternion_group_non_abelian :
   ¬CommGroup QuaternionGroup := by
   sorry
+
 ```
 
 ## 6.6 总结与展望

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 利率模型 - 思维导图
 
 ## 概述
@@ -54,6 +59,7 @@ mindmap
         f(t,T) = -∂lnP/∂T
       收益率曲线
         y(t,T) = -lnP/(T-t)
+
 ```
 
 ---
@@ -84,6 +90,7 @@ graph TD
     style A fill:#e3f2fd
     style F fill:#fff3e0
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -131,6 +138,7 @@ mindmap
         对应Hull-White
       多因子优势
         更丰富的期限结构动态
+
 ```
 
 ---
@@ -168,6 +176,7 @@ graph LR
     
     style D fill:#e3f2fd
     style E fill:#fff3e0
+
 ```
 
 ---
@@ -189,6 +198,7 @@ mindmap
     债券定价
       零息债券
         P(t,T) = E[e^(-∫ₜᵀrₛds)|ℱₜ]
+
       付息债券
         ∑cᵢP(t,Tᵢ) + NP(t,Tₙ)
       浮动利率债券
@@ -200,6 +210,7 @@ mindmap
         进入互换的权利
       结构化产品
         复杂收益结构
+
 ```
 
 ---
@@ -232,6 +243,7 @@ flowchart LR
     style D fill:#e3f2fd
     style G fill:#fff3e0
     style H fill:#fff3e0
+
 ```
 
 ---

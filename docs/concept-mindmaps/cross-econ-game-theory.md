@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×经济学：博弈论的均衡分析
 
 ## 概述
@@ -92,6 +97,7 @@ mindmap
         计算复杂性
         近似均衡
         价格无序
+
 ```
 
 ---
@@ -119,6 +125,7 @@ graph TD
     style NE fill:#e3f2fd
     style S fill:#e8f5e9
     style EF fill:#fff3e0
+
 ```
 
 ---
@@ -171,6 +178,7 @@ mindmap
         零和博弈
         势博弈
         凸博弈
+
 ```
 
 ---
@@ -198,6 +206,7 @@ graph TD
     style IC fill:#e3f2fd
     style T fill:#e3f2fd
     style A fill:#ffcdd2
+
 ```
 
 ---

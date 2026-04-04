@@ -4,8 +4,7 @@
  */
 
 // 主组件
-export { ProofAssistant } from './index';
-export { default } from './index';
+export { ProofAssistant, default } from './index.tsx';
 
 // 子组件
 export { ProofStateView } from './ProofStateView';

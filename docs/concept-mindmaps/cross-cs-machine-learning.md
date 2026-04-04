@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×计算机科学：机器学习的统计优化
 
 ## 概述
@@ -106,6 +111,7 @@ mindmap
         深度强化学习
         DQN
         PPO
+
 ```
 
 ---
@@ -137,6 +143,7 @@ graph TD
     style MLE1 fill:#e3f2fd
     style B fill:#e8f5e9
     style RL1 fill:#e8f5e9
+
 ```
 
 ---
@@ -192,6 +199,7 @@ mindmap
         隐式正则化
         平坦极小值
         PAC-Bayes
+
 ```
 
 ---
@@ -218,6 +226,7 @@ graph LR
     style GAN fill:#e8f5e9
     style NF fill:#fff3e0
     style DM fill:#fce4ec
+
 ```
 
 ---

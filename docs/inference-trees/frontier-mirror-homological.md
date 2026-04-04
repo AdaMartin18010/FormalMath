@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 镜像对称：同源镜像对称推理树
 
 ## 概述
@@ -59,6 +67,7 @@ graph TD
     style I fill:#f88,stroke:#333
     style J fill:#f77,stroke:#333
     style K fill:#bfb,stroke:#333
+
 ```
 
 ## 同源镜像对称猜想
@@ -66,8 +75,11 @@ graph TD
 ### Kontsevich陈述
 
 对于镜面对(X, X̌)，存在三角范畴等价：
+
 ```
+
 D^b(Coh(X)) ≅ D^π Fuk(X̌)
+
 ```
 
 其中：
@@ -86,13 +98,18 @@ D^b(Coh(X)) ≅ D^π Fuk(X̌)
 ### Serre函子
 
 ```
+
 S: D^b(Coh(X)) → D^b(Coh(X))
 S(E) = E ⊗ ω_X [n]
+
 ```
 
 满足：
+
 ```
+
 Hom(A,B)^* ≅ Hom(B, S(A))
+
 ```
 
 ## Fukaya范畴详解
@@ -107,15 +124,21 @@ Hom(A,B)^* ≅ Hom(B, S(A))
 ### 态射
 
 Floer上同调群：
+
 ```
+
 Hom(L_0, L_1) = HF^*(L_0, L_1)
+
 ```
 
 ### A_∞结构
 
 高阶积：
+
 ```
+
 m_k: Hom(L_0,L_1) ⊗ ... ⊗ Hom(L_{k-1},L_k) → Hom(L_0,L_k)[2-k]
+
 ```
 
 计数伪全纯多边形。
@@ -151,8 +174,11 @@ m_k: Hom(L_0,L_1) ⊗ ... ⊗ Hom(L_{k-1},L_k) → Hom(L_0,L_k)[2-k]
 ### 稳定对象与特殊Lagrange
 
 猜想：
+
 ```
+
 Bogomolov-Gieseker稳定层 ↔ 特殊Lagrange子流形
+
 ```
 
 ## 研究前沿

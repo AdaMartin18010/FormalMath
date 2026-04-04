@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "07 Python实现 环论算法"
 msc_primary: ["68W30"]
@@ -43,7 +48,7 @@ msc_secondary: ["13A99"]
 
 本文档提供环论核心算法的Python实现，基于国际标准数学定义，涵盖基础环论算法、理想理论、商环构造等。
 
-## 1. 基础环论算法
+## 一、基础环论算法
 
 ### 1.1 环的定义与基本运算
 
@@ -257,9 +262,10 @@ def create_zmod_ring(n: int) -> Ring:
         return (-a) % n
 
     return Ring(elements, zmod_add, zmod_mul, 0, 1, zmod_neg)
+
 ```
 
-### 1.2 理想理论算法
+## 1.2 理想理论算法
 
 ```python
 def is_ideal(ring: Ring, subset: List) -> bool:
@@ -330,9 +336,10 @@ def find_all_ideals(ring: Ring) -> List[List]:
                 ideals.append(list(subset))
 
     return ideals
+
 ```
 
-## 2. 应用示例
+## 二、应用示例
 
 ### 2.1 基本环操作示例
 
@@ -384,9 +391,10 @@ def example_ideal_theory():
 if __name__ == "__main__":
     example_basic_operations()
     example_ideal_theory()
+
 ```
 
-## 3. 总结
+## 三、总结
 
 本文档提供了环论核心算法的Python实现，包括：
 
@@ -396,7 +404,7 @@ if __name__ == "__main__":
 
 所有算法都基于国际标准数学定义，提供了完整的理论背景和实际应用示例。
 
-## 3. 商环与环同态
+## 三、商环与环同态
 
 ### 3.1 商环构造
 
@@ -466,6 +474,7 @@ def chinese_remainder_theorem(rings: List[Ring], ideals: List[List]) -> Ring:
     # 构造直积
     # 这里提供框架
     return quotient_rings[0]  # 简化返回
+
 ```
 
 ### 3.2 环同态
@@ -552,9 +561,10 @@ def first_isomorphism_theorem(homomorphism: RingHomomorphism) -> Dict:
         'image': image,
         'isomorphism': homomorphism.is_isomorphism()
     }
+
 ```
 
-## 4. 多项式环
+## 四、多项式环
 
 ### 4.1 多项式环实现
 
@@ -662,9 +672,10 @@ def polynomial_division(poly_ring: PolynomialRing,
                                                for k, v in to_subtract.items()})
 
     return quotient, remainder
+
 ```
 
-## 5. 矩阵环
+## 五、矩阵环
 
 ### 5.1 矩阵环实现
 
@@ -741,9 +752,10 @@ class MatrixRing:
 
                 det = self.base_ring.add(det, cofactor)
             return det
+
 ```
 
-## 6. 环论在密码学中的应用
+## 六、环论在密码学中的应用
 
 ### 6.1 RSA算法中的环
 
@@ -789,6 +801,7 @@ def extended_gcd(a: int, b: int) -> Tuple[int, int, int]:
     x = y1 - (b // a) * x1
     y = x1
     return gcd, x, y
+
 ```
 
 ### 6.2 椭圆曲线密码学中的环
@@ -872,9 +885,10 @@ class EllipticCurveRing:
         )
 
         return (x3, y3)
+
 ```
 
-## 7. 环论在编码理论中的应用
+## 七、环论在编码理论中的应用
 
 ### 7.1 循环码
 
@@ -904,9 +918,10 @@ def cyclic_code_generator(ring: Ring, generator_poly: Dict,
         codewords.append(codeword)
 
     return codewords
+
 ```
 
-## 8. 可视化工具
+## 八、可视化工具
 
 ### 8.1 理想格可视化
 
@@ -938,9 +953,10 @@ def visualize_ideal_lattice(ring: Ring):
             node_size=1000, font_size=8, arrows=True, arrowsize=20)
     plt.title("理想格")
     plt.show()
+
 ```
 
-## 9. 性能优化与测试
+## 九、性能优化与测试
 
 ### 9.1 缓存优化
 
@@ -964,6 +980,7 @@ class OptimizedRing(Ring):
     def cached_add(self, a, b):
         """缓存的加法"""
         return self.add(a, b)
+
 ```
 
 ### 9.2 测试套件
@@ -995,9 +1012,10 @@ class TestRing(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 ```
 
-## 10. 完整应用示例
+## 十、完整应用示例
 
 ### 10.1 环论计算器
 
@@ -1066,6 +1084,7 @@ class RingTheoryCalculator:
         print(f"极大理想数量: {len(analysis['maximal_ideals'])}")
         print(f"素理想数量: {len(analysis['prime_ideals'])}")
         print("=" * 60)
+
 ```
 
 ## 11. 总结

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # path_visualization
 
 **源文件**: `tools\personalized-recommendation\path_visualization.py`
@@ -8,6 +16,7 @@
 
 ```python
 class VisualizationTheme
+
 ```
 
 可视化主题
@@ -16,6 +25,7 @@ class VisualizationTheme
 
 ```python
 class TimelineEvent
+
 ```
 
 时间线事件
@@ -24,6 +34,7 @@ class TimelineEvent
 
 ```python
 class TimelineView
+
 ```
 
 时间线视图
@@ -32,6 +43,7 @@ class TimelineView
 
 ```python
 class PathGraphView
+
 ```
 
 路径依赖图视图
@@ -40,6 +52,7 @@ class PathGraphView
 
 ```python
 class ProgressTracker
+
 ```
 
 进度追踪器
@@ -48,6 +61,7 @@ class ProgressTracker
 
 ```python
 class DashboardRenderer
+
 ```
 
 仪表板渲染器
@@ -58,6 +72,7 @@ class DashboardRenderer
 
 ```python
 def export_path_to_json(path: LearningPath, user_profile: UserProfile)
+
 ```
 
 导出路径为JSON格式

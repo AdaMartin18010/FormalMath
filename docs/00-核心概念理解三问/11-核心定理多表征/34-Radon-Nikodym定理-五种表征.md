@@ -48,6 +48,7 @@ theorem radon_nikodym {X : Type*} [MeasurableSpace X]
     ∃ f : X → ℝ≥0∞, Measurable f ∧ ν = μ.withDensity f := by
   exact ⟨μ.rnDeriv ν, Measure.measurable_rnDeriv,
          (Measure.absolutelyContinuous_iff_withDensity_rnDeriv_eq.mp hν)⟩
+
 ```
 
 ---
@@ -63,6 +64,7 @@ theorem radon_nikodym {X : Type*} [MeasurableSpace X]
     ν:  ██▓▓▓▓░░██████  (加权)
 
     dν/dμ = f(x) = ν在x处的"密度"
+
 ```
 
 ### 2.2 链式法则
@@ -73,6 +75,7 @@ theorem radon_nikodym {X : Type*} [MeasurableSpace X]
     dρ     dρ   dν
     ── = ── · ──
     dμ     dν   dμ
+
 ```
 
 ---
@@ -132,6 +135,7 @@ def radon_nikodym_example():
     return x, f
 
 radon_nikodym_example()
+
 ```
 
 ### 4.2 应用：条件期望
@@ -140,10 +144,12 @@ radon_nikodym_example()
 def conditional_expectation(X, Y, condition):
     """
     E[X|Y] 使用Radon-Nikodym导数
+
     """
     # 条件期望是条件测度关于原测度的导数
     # 简化：离散情况
     pass
+
 ```
 
 ---
@@ -157,6 +163,7 @@ Radon-Nikodym = 测度空间的态射分解
 ├─ 绝对连续：ν是μ的"商"
 ├─ dν/dμ：商的"系数"
 └─ 在测度空间范畴中的分解
+
 ```
 
 ### 5.2 推广
@@ -172,6 +179,7 @@ Radon-Nikodym = 测度空间的态射分解
 ν = ν_ac + ν_s
 ├─ ν_ac ≪ μ（绝对连续部分）
 └─ ν_s ⊥ μ（奇异部分）
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Galois理论 思维导图
 
 ## 中心概念
@@ -58,11 +66,13 @@ mindmap
       Dedekind
       Artin
       Grothendieck
+
 ```
 
 ### 定义与公理
 - **Galois扩张**: 正规且可分的代数扩张 $K/F$
 - **Galois群**: $\text{Gal}(K/F) = \{\sigma \in \text{Aut}(K) : \sigma|_F = \text{id}_F\}$
+
 - **固定子域**: 对于 $H \leq \text{Gal}(K/F)$，$K^H = \{x \in K : \sigma(x) = x, \forall \sigma \in H\}$
 - **分裂域**: 多项式 $f$ 在其中完全分解的最小扩张
 

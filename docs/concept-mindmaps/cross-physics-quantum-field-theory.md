@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×物理学：量子场论的代数拓扑
 
 ## 概述
@@ -101,6 +106,7 @@ mindmap
         全息原理
         Maldacena对偶
         强耦合计算
+
 ```
 
 ---
@@ -134,6 +140,7 @@ graph TD
     style B1 fill:#e3f2fd
     style AS fill:#fff3e0
     style A fill:#fff3e0
+
 ```
 
 ---
@@ -180,6 +187,7 @@ mindmap
       Floer同调
         3维流形
         Lagrangian交
+
 ```
 
 ---

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 机器学习数学 - 思维导图
 
 ## 概述
@@ -59,6 +64,7 @@ mindmap
       正则化
         L1/L2
         Dropout
+
 ```
 
 ---
@@ -90,6 +96,7 @@ graph TD
     style G fill:#e3f2fd
     style H fill:#fff3e0
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -102,6 +109,7 @@ mindmap
     线性回归
       最小二乘
         min ||Xw-y||²
+
         解析解: w = (XᵀX)⁻¹Xᵀy
       正则化
         Ridge: L2
@@ -127,6 +135,7 @@ mindmap
       常见核
         多项式
         高斯RBF
+
 ```
 
 ---
@@ -166,6 +175,7 @@ graph TD
     style C fill:#e3f2fd
     style G fill:#fff3e0
     style K fill:#e8f5e9
+
 ```
 
 ---
@@ -198,6 +208,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style G fill:#fff3e0
+
 ```
 
 ---

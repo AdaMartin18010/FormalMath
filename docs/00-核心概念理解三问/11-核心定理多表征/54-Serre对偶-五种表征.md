@@ -61,6 +61,7 @@ H^i(X, ℱ) ←──对偶──→ H^{n-i}(X, ℱ^∨⊗ω)
     对偶性：
     - 低维"洞" ↔ 高维"洞"
     - 这是Poincaré对偶的代数版本
+
 ```
 
 ### 2.2 维数对应
@@ -74,6 +75,7 @@ H^i(X, ℱ) ←──对偶──→ H^{n-i}(X, ℱ^∨⊗ω)
     dim Hⁱ = dim Hⁿ⁻ⁱ
 
     这是Betti数的对称性
+
 ```
 
 ### 2.3 典范层的作用
@@ -85,6 +87,7 @@ H^i(X, ℱ) ←──对偶──→ H^{n-i}(X, ℱ^∨⊗ω)
 
     在Serre对偶中起"扭转"作用
     使得对偶性成立
+
 ```
 
 ---
@@ -171,6 +174,7 @@ def compute_cohomology(X, F, i):
     # 实际实现需要使用Čech上同调或导出函子
     # 这里简化处理
     pass
+
 ```
 
 ### 4.2 应用：计算上同调
@@ -232,9 +236,10 @@ def line_bundle_cohomology_curve(C, L):
 
     h1_L = compute_h1(C, L)
     return h0_L, h1_L
+
 ```
 
-### 4.3 应用：Riemann-Roch
+## 4.3 应用：Riemann-Roch
 
 ```python
 def riemann_roch_via_serre_duality(C, D):
@@ -266,6 +271,7 @@ def riemann_roch_via_serre_duality(C, D):
     ell_D = h0_K_minus_D + deg(D) - genus(C) + 1
 
     return ell_D
+
 ```
 
 ---

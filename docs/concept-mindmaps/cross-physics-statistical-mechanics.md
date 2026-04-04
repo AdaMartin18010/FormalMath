@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×物理学：统计力学的概率基础
 
 ## 概述
@@ -100,6 +105,7 @@ mindmap
         混沌敏感性
         熵产生率
         Kolmogorov-Sinai熵
+
 ```
 
 ---
@@ -130,6 +136,7 @@ graph TD
     style P1 fill:#e3f2fd
     style F fill:#e8f5e9
     style F1 fill:#e8f5e9
+
 ```
 
 ---
@@ -191,6 +198,7 @@ mindmap
         Ising: d=2, n=1
         XY模型: d=2, n=2
         Heisenberg: d=3, n=3
+
 ```
 
 ---

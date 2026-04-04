@@ -93,6 +93,7 @@ msc_secondary: ['46Gxx', '46-XX', '46Axx']
   Σ f(xᵢ*)Δxᵢ                  Σ yⱼ·μ(Eⱼ)
         │                              │
 "水平切片求和"              "垂直切片求和"
+
 ```
 
 **Lebesgue的格言**：
@@ -136,6 +137,7 @@ msc_secondary: ['46Gxx', '46-XX', '46Axx']
     │               条件
     │                   │
 m*(A) = inf{Σ|Iₙ|:   A是可测的 ⟺
+
 A⊂∪Iₙ, Iₙ为区间}    对所有E:
     │               m*(E)=m*(E∩A)+m*(E∩Aᶜ)
     │                   │
@@ -144,6 +146,7 @@ A⊂∪Iₙ, Iₙ为区间}    对所有E:
     [Lebesgue可测集]
     含所有开集、闭集、Borel集
     及零测集的子集
+
 ```
 
 ### 2.3 可测函数
@@ -152,6 +155,7 @@ A⊂∪Iₙ, Iₙ为区间}    对所有E:
 
 ```text
 f⁻¹((α,∞]) = {x: f(x) > α} ∈ Σ
+
 ```
 
 **等价条件**：
@@ -174,6 +178,7 @@ f⁻¹((α,∞]) = {x: f(x) > α} ∈ Σ
 
 ```text
 φ = Σᵢ₌₁ⁿ aᵢ χ_{Eᵢ}
+
 ```
 
 其中Eᵢ可测且不交。
@@ -182,6 +187,7 @@ f⁻¹((α,∞]) = {x: f(x) > α} ∈ Σ
 
 ```text
 ∫ φ dμ = Σᵢ₌₁ⁿ aᵢ · μ(Eᵢ)
+
 ```
 
 ### 3.2 非负可测函数积分
@@ -190,6 +196,7 @@ f⁻¹((α,∞]) = {x: f(x) > α} ∈ Σ
 
 ```text
 ∫ f dμ = sup{∫ φ dμ : 0 ≤ φ ≤ f, φ简单}
+
 ```
 
 ### 3.3 一般可测函数积分
@@ -203,6 +210,7 @@ f⁻¹((α,∞]) = {x: f(x) > α} ∈ Σ
 
 ```text
 ∫ f dμ = ∫ f⁺ dμ - ∫ f⁻ dμ
+
 ```
 
 **可积条件**：∫|f|dμ < ∞
@@ -224,6 +232,7 @@ f⁻¹((α,∞]) = {x: f(x) > α} ∈ Σ
                   │
         [L¹空间: 可积函数]
         ∫|f|dμ < ∞
+
 ```
 
 ---
@@ -236,6 +245,7 @@ f⁻¹((α,∞]) = {x: f(x) > α} ∈ Σ
 
 ```text
 lim_{n→∞} ∫ fₙ dμ = ∫ f dμ
+
 ```
 
 **证明树**：
@@ -264,6 +274,7 @@ lim∫fₙdμ ≤ ∫fdμ        Eₙ↗X (因fₙ↗f)
     └───────────┬───────────┘
                 │
         lim∫fₙdμ = ∫fdμ ∎
+
 ```
 
 ### 4.2 Fatou引理
@@ -272,6 +283,7 @@ lim∫fₙdμ ≤ ∫fdμ        Eₙ↗X (因fₙ↗f)
 
 ```text
 ∫ liminf fₙ dμ ≤ liminf ∫ fₙ dμ
+
 ```
 
 **证明**：
@@ -288,6 +300,7 @@ lim∫fₙdμ ≤ ∫fdμ        Eₙ↗X (因fₙ↗f)
 
 ```text
 lim_{n→∞} ∫ fₙ dμ = ∫ f dμ
+
 ```
 
 **证明树**：
@@ -317,6 +330,7 @@ liminf∫(g+fₙ)dμ        liminf∫(g-fₙ)dμ
     limsup∫fₙdμ ≤ ∫fdμ ≤ liminf∫fₙdμ
                 │
     ⟹ lim∫fₙdμ = ∫fdμ ∎
+
 ```
 
 ### 4.4 三大定理关系图
@@ -330,6 +344,7 @@ liminf∫(g+fₙ)dμ        liminf∫(g-fₙ)dμ
 单调收敛        引理         控制收敛
     │             │             │
 fₙ↗f非负     liminf      fₙ→f, |fₙ|≤g
+
     │             │             │
 lim∫=∫lim    ∫liminf≤    lim∫=∫lim
               liminf∫
@@ -341,6 +356,7 @@ lim∫=∫lim    ∫liminf≤    lim∫=∫lim
            └─────────┬──────────┘
                      │
               [DCT由Fatou推出]
+
 ```
 
 ---
@@ -374,6 +390,7 @@ lim∫=∫lim    ∫liminf≤    lim∫=∫lim
 ```text
 f(x) = χ_ℚ(x) = { 1, x∈ℚ
                 { 0, x∉ℚ
+
 ```
 
 - **Riemann**：不可积（上和=1，下和=0）
@@ -407,6 +424,7 @@ f(x) = χ_ℚ(x) = { 1, x∈ℚ
 ├─L²: 平方可积（Hilbert空间）
 ├─L^∞: 本性有界
 └─Hölder, Minkowski不等式
+
 ```
 
 ### 6.2 定理证明依赖图
@@ -428,6 +446,7 @@ f(x) = χ_ℚ(x) = { 1, x∈ℚ
                                      │
                                      ▼
                               [Fubini定理]
+
 ```
 
 ### 6.3 积分理论演化图
@@ -457,6 +476,7 @@ f(x) = χ_ℚ(x) = { 1, x∈ℚ
     ┌────────────┼────────────┐
     │            │            │
 [概率论]   [泛函分析]   [调和分析]
+
 ```
 
 ### 6.4 应用领域图
@@ -476,6 +496,7 @@ f(x) = χ_ℚ(x) = { 1, x∈ℚ
 │ Fourier   │ 路径积分  │ 期权定价
 ├─PDE       │           ├─机器学习
 │ Sobolev   │           │ 损失函数
+
 ```
 
 ---
@@ -508,11 +529,13 @@ theorem dominated_convergence {α : Type*} [MeasurableSpace α]
     (hf_meas : ∀ n, Measurable (f n))
     (hf_lim : ∀ᵐ x ∂μ, Tendsto (fun n => f n x) atTop (𝓝 (g x)))
     (hf_bound : ∀ n, ∀ᵐ x ∂μ, |f n x| ≤ bound x)
+
     (hbound_int : Integrable bound μ) :
     Tendsto (fun n => ∫ x, f n x ∂μ) atTop (𝓝 (∫ x, g x ∂μ)) := by
   exact tendsto_integral_of_dominated_convergence bound hf_meas
     (fun n => (hf_bound n).mono fun x hx => le_abs_self _)
     hbound_int hf_lim
+
 ```
 
 ### 7.2 Haskell 函数式实现
@@ -539,10 +562,12 @@ numericalLebesgue :: (Double -> Double) -> Double -> Double -> Int -> Double
 numericalLebesgue f a b n =
     let dx = (b - a) / fromIntegral n
         xs = [a + fromIntegral i * dx | i <- [0..n-1]]
+
         vals = map f xs
         sortedVals = sort vals
         -- 按值域划分并计算
     in sum [v * dx | v <- vals]  -- 简化版本
+
 ```
 
 ### 7.3 Python 数值实现
@@ -582,6 +607,7 @@ def dirichlet(x, rationals_approx):
 
 # Lebesgue: ∫₀¹ χ_ℚ = 0 (有理数零测)
 print("Dirichlet函数Lebesgue积分 ≈ 0")
+
 ```
 
 ---
@@ -594,6 +620,7 @@ print("Dirichlet函数Lebesgue积分 ≈ 0")
 
 ```text
 E[X] = ∫_Ω X dP
+
 ```
 
 **优势**：
@@ -615,6 +642,7 @@ E[X] = ∫_Ω X dP
 
 ```text
 ‖f̂‖_{L²} = ‖f‖_{L²}
+
 ```
 
 ### 8.4 推广方向

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×生物学：系统生物学的网络控制
 
 ## 概述
@@ -101,6 +106,7 @@ mindmap
         最优途径
         异源表达
         产量优化
+
 ```
 
 ---
@@ -127,6 +133,7 @@ graph TD
     style L fill:#e3f2fd
     style G fill:#e8f5e9
     style D fill:#fff3e0
+
 ```
 
 ---
@@ -179,6 +186,7 @@ mindmap
       整合组学
         表达数据
         条件特异性
+
 ```
 
 ---

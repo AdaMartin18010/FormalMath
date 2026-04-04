@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 图神经网络 - 思维导图
 
 ## 概述
@@ -56,6 +61,7 @@ mindmap
       动态图
         时序建模
         时空GNN
+
 ```
 
 ---
@@ -82,6 +88,7 @@ graph TD
     style B fill:#e3f2fd
     style E fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---
@@ -108,6 +115,7 @@ mindmap
     GAT
       注意力
         e_ij = LeakyReLU(aᵀ[Whᵢ||Whⱼ])
+
         α_ij = softmax(e_ij)
       特点
         多头注意力
@@ -120,6 +128,7 @@ mindmap
         WL-test等价
         表达能力最强
         图分类
+
 ```
 
 ---
@@ -158,6 +167,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -191,6 +201,7 @@ mindmap
       应用
         交通预测
         人体动作
+
 ```
 
 ---
@@ -223,6 +234,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style G fill:#fff3e0
+
 ```
 
 ---

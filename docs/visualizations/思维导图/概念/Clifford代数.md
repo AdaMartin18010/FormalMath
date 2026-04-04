@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Clifford代数 思维导图
 
 ## 中心概念
@@ -63,6 +71,7 @@ mindmap
       Cartan
       Dirac
       Atiyah
+
 ```
 
 ### 定义与公理

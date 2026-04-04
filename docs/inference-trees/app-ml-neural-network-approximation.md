@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 神经网络近似理论推导链
 
 ## 概述
@@ -31,8 +36,10 @@ graph TD
     
     subgraph 近似误差
         A4 --> D1[Barron范数<br/>\|f\|_B = inf ∫|w|dμ]
+
         D1 --> D2[Monte Carlo<br/>随机采样]
         D2 --> D3[误差界<br/>\|f-f_N\| = O(1/√N)]
+
     end
     
     subgraph Sobolev近似
@@ -53,6 +60,7 @@ graph TD
     style C3 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style D3 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style E4 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -166,6 +174,7 @@ $$R(f) \leq \hat{R}(f) + O\left(\sqrt{\frac{VC \cdot \log n}{n}}\right)$$
 ## 依赖关系图
 
 ```
+
 函数空间理论
     ↓
 万能近似定理 ← 泛函分析
@@ -181,6 +190,7 @@ ReLU网络 ← Sobolev逼近
 VC维理论 ← 统计学习
     ↓
 表达能力+泛化分析
+
 ```
 
 ---

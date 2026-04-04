@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 同余理论 - 思维导图
 
 ## 概述
@@ -14,6 +19,7 @@ mindmap
     基本定义
       同余关系
         a ≡ b (mod n) ⇔ n|a-b
+
         等价关系
         剩余类划分
       完全剩余系
@@ -35,6 +41,7 @@ mindmap
       一元方程
         ax ≡ b (mod n)
         有解 ⇔ gcd(a,n)|b
+
       解的个数
         恰有d=gcd(a,n)个解
       中国剩余定理
@@ -69,6 +76,7 @@ mindmap
       计算困难性
         离散对数问题
         密码学基础
+
 ```
 
 ---
@@ -97,6 +105,7 @@ graph TD
     style A fill:#e3f2fd
     style D fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---
@@ -128,6 +137,7 @@ graph TD
     style B fill:#e8f5e9
     style C fill:#fff3e0
     style E fill:#e3f2fd
+
 ```
 
 ---
@@ -152,6 +162,7 @@ graph LR
         A[解f(x)≡0 (mod p)] --> B{单根?}
         B -->|是| C[唯一提升]
         B -->|否| D[多重根]
+
     end
     
     subgraph 提升过程
@@ -170,6 +181,7 @@ graph LR
     style A fill:#e3f2fd
     style C fill:#e8f5e9
     style D fill:#ffcdd2
+
 ```
 
 ---
@@ -215,6 +227,7 @@ mindmap
         加密系统
       DSA
         数字签名
+
 ```
 
 ---
@@ -227,6 +240,7 @@ graph TD
         A[(a/p)] --> B[+1: 二次剩余]
         A --> C[-1: 二次非剩余]
         A --> D[0: p|a]
+
     end
     
     subgraph 欧拉准则
@@ -249,6 +263,7 @@ graph TD
     style A fill:#e3f2fd
     style G fill:#fff3e0
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -297,6 +312,7 @@ flowchart LR
     style D fill:#fff3e0
     style G fill:#e8f5e9
     style K fill:#ffcdd2
+
 ```
 
 ---

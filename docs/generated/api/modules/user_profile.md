@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # user_profile
 
 **源文件**: `tools\personalized-recommendation\user_profile.py`
@@ -8,6 +16,7 @@
 
 ```python
 class LearningStyle
+
 ```
 
 学习风格类型 - 基于Felder-Silverman学习风格模型简化版
@@ -16,6 +25,7 @@ class LearningStyle
 
 ```python
 class ProficiencyLevel
+
 ```
 
 熟练度等级
@@ -24,6 +34,7 @@ class ProficiencyLevel
 
 ```python
 class LearningGoalPriority
+
 ```
 
 学习目标优先级
@@ -32,6 +43,7 @@ class LearningGoalPriority
 
 ```python
 class ConceptMastery
+
 ```
 
 概念掌握度记录
@@ -40,6 +52,7 @@ class ConceptMastery
 
 ```python
 class LearningPreference
+
 ```
 
 学习偏好设置
@@ -48,6 +61,7 @@ class LearningPreference
 
 ```python
 class TimePreference
+
 ```
 
 时间偏好设置
@@ -56,6 +70,7 @@ class TimePreference
 
 ```python
 class LearningGoal
+
 ```
 
 学习目标定义
@@ -64,6 +79,7 @@ class LearningGoal
 
 ```python
 class LearningHistory
+
 ```
 
 学习历史记录
@@ -72,6 +88,7 @@ class LearningHistory
 
 ```python
 class UserProfile
+
 ```
 
 用户画像 - 个性化学习路径推荐的核心数据结构
@@ -84,6 +101,7 @@ class UserProfile
 
 ```python
 def create_preset_profile(preset_type: str, name: str = , email: str = ) -> UserProfile
+
 ```
 
 从预设模板创建用户画像

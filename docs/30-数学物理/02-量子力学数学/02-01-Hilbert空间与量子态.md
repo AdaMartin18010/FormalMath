@@ -41,6 +41,7 @@ msc_secondary: ['46C05', '47A70', '46N50']
 **位置表象** ($L^2(\mathbb{R}^n)$):
 单粒子波函数 $\psi(x)$ 属于 $L^2(\mathbb{R}^n)$：
 $$\|\psi\|^2 = \int_{\mathbb{R}^n} |\psi(x)|^2 dx < \infty$$
+
 内积定义为：$\langle\phi, \psi\rangle = \int_{\mathbb{R}^n} \overline{\phi(x)}\psi(x) dx$
 
 **动量表象** ($L^2(\mathbb{R}^n)$):
@@ -76,6 +77,7 @@ $$\sum_{n=1}^\infty |n\rangle\langle n| = I$$
 **公理** (叠加原理)
 若 $|\psi_1\rangle$ 和 $|\psi_2\rangle$ 是可能的量子态，则它们的线性组合
 $$|\psi\rangle = \alpha|\psi_1\rangle + \beta|\psi_2\rangle, \quad |\alpha|^2 + |\beta|^2 = 1$$
+
 也是可能的量子态。
 
 **物理诠释**: 这是量子力学区别于经典力学的本质特征，导致干涉现象。

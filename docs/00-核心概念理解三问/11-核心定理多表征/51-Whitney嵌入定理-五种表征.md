@@ -59,6 +59,7 @@ m=2: 曲面 → ℝ⁵ (一般) 或 ℝ⁴ (紧致)
     └─ 2维流形嵌入4-5维空间
     
 m=n: n维流形 → ℝ²ⁿ⁺¹ (一般) 或 ℝ²ⁿ (紧致)
+
 ```
 
 ### 2.2 自交的避免
@@ -71,6 +72,7 @@ m=n: n维流形 → ℝ²ⁿ⁺¹ (一般) 或 ℝ²ⁿ (紧致)
     
     Whitney：嵌入需要更高维
     浸入：2m维即可
+
 ```
 
 ### 2.3 一般位置
@@ -83,6 +85,7 @@ m=n: n维流形 → ℝ²ⁿ⁺¹ (一般) 或 ℝ²ⁿ (紧致)
     避免自交
     
     这是横截性理论的应用
+
 ```
 
 ---
@@ -175,9 +178,10 @@ def embed_surface_2d(surface_points, surface_normals):
     embedded[:, 2:4] = surface_normals[:, :2]
     
     return embedded
+
 ```
 
-### 4.2 验证嵌入
+## 4.2 验证嵌入
 
 ```python
 def verify_embedding(f, M, check_injectivity=True, check_immersion=True):
@@ -226,6 +230,7 @@ def verify_embedding(f, M, check_injectivity=True, check_immersion=True):
         'is_injective': is_injective,
         'is_immersion': is_immersion
     }
+
 ```
 
 ### 4.3 应用：流形学习
@@ -283,6 +288,7 @@ def reduce_dimension_via_whitney(data, target_dim):
         reduced_data = pca_reduction(data, target_dim)
     
     return reduced_data
+
 ```
 
 ---

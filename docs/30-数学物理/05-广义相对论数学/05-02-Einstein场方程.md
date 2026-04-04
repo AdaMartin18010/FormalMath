@@ -133,6 +133,7 @@ $$\nabla_j(K^{ij} - g^{ij}K) = 8\pi G j^i \quad \text{(动量约束)}$$
 
 假设：
 - 弱场: $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$，$|h| \ll 1$
+
 - 静态: $\partial_0 g_{\mu\nu} = 0$
 - 低速: $v \ll c$
 

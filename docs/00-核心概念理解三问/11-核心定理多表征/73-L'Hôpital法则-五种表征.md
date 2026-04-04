@@ -81,6 +81,7 @@ $$\left[ \lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0 \land \exists \lim_{x \to
 - f(x) ≈ f'(a)(x-a)（线性近似）
 - g(x) ≈ g'(a)(x-a)
 - f(x)/g(x) ≈ f'(a)/g'(a)
+
 ```
 
 ### 2.2 ∞/∞型的几何理解
@@ -98,6 +99,7 @@ $$\left[ \lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0 \land \exists \lim_{x \to
     └──────────→ x
     
 比较 f'(x)/g'(x) 决定哪个增长更快
+
 ```
 
 ### 2.3 多次应用
@@ -108,6 +110,7 @@ $$\left[ \lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0 \land \exists \lim_{x \to
     f(x)/g(x) → f'(x)/g'(x) → f''(x)/g''(x) → ...
     
 直到得到确定值或证明极限不存在
+
 ```
 
 ---
@@ -200,9 +203,10 @@ x = symbols('x')
 f = x  # 注意：这里应该是sin(x)，但演示算法
 g = x
 result = lhopital(f, g, 'x', 0)
+
 ```
 
-### 4.2 数值验证
+## 4.2 数值验证
 
 ```python
 import numpy as np
@@ -237,9 +241,10 @@ ratio, ratio_prime = lhopital_numerical(f, g, f_prime, g_prime, 0)
 print(f"f(x)/g(x) ≈ {ratio:.6f}")
 print(f"f'(x)/g'(x) ≈ {ratio_prime:.6f}")
 # 两者都应接近1
+
 ```
 
-### 4.3 处理其他不定型
+## 4.3 处理其他不定型
 
 ```python
 def handle_indeterminate_form(f, g, form_type, x_var, a):
@@ -267,6 +272,7 @@ def handle_indeterminate_form(f, g, form_type, x_var, a):
         return exp(log_limit)
     
     return None
+
 ```
 
 ---

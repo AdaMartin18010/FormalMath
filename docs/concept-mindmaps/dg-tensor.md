@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 张量分析思维导图
 
 ## 概述
@@ -117,6 +125,7 @@ mindmap
       规范场论
         场强张量
         协变导数
+
 ```
 
 ## 张量类型汇总
@@ -133,9 +142,11 @@ mindmap
 ## 重要恒等式
 
 ```
+
 Cartan公式: L_X = d∘i_X + i_X∘d
 外微分: d(ω∧η) = dω∧η + (-1)^deg(ω) ω∧dη
 Bianchi: ∇_X R(Y,Z)W + 循环 = 0
+
 ```
 
 ## 关联概念

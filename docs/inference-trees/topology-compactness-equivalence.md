@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 紧致性等价条件推导推理树
 
 ## 概述
@@ -50,6 +58,7 @@ graph TD
     style G fill:#bfb,stroke:#333
     style H fill:#bfb,stroke:#333
     style I fill:#fbb,stroke:#333
+
 ```
 
 ## 等价条件详解

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×认知科学：决策与推理的概率模型
 
 ## 概述
@@ -107,6 +112,7 @@ mindmap
         心理理论
         公平偏好
         合作机制
+
 ```
 
 ---
@@ -135,6 +141,7 @@ graph TD
     style E fill:#e3f2fd
     style P fill:#e8f5e9
     style PT fill:#fff3e0
+
 ```
 
 ---
@@ -171,6 +178,7 @@ mindmap
       障碍
         逆转条件概率
         P(A|B) vs P(B|A)
+
         联合概率
     改进方法
       可视化
@@ -191,6 +199,7 @@ mindmap
       真正非理性
         系统性错误
         需要干预
+
 ```
 
 ---

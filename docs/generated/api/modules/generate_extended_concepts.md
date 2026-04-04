@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # generate_extended_concepts
 
 **源文件**: `tools\generate_extended_concepts.py`
@@ -8,6 +16,7 @@
 
 ```python
 def generate_statistics(all_concepts)
+
 ```
 
 生成概念统计信息
@@ -20,5 +29,6 @@ def generate_statistics(all_concepts)
 
 ```python
 def main()
+
 ```
 

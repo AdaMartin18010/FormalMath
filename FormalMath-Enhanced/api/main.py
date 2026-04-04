@@ -135,9 +135,14 @@ app = FastAPI(
     openapi_url="/openapi.json"
 )
 
+# ============ 错误处理器注册 ============
+
+from app.core.error_handlers import register_error_handlers
+register_error_handlers(app)
+
 # ============ 中间件配置 ============
 
-# CORS中间件
+# CORS中间件 - 生产环境应限制来源
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,
@@ -145,6 +150,19 @@ app.add_middleware(
     allow_methods=settings.CORS_ALLOW_METHODS,
     allow_headers=settings.CORS_ALLOW_HEADERS,
 )
+
+# 速率限制中间件（可选，基于内存实现）
+try:
+    from app.middleware.rate_limit import RateLimitMiddleware
+    app.add_middleware(
+        RateLimitMiddleware,
+        requests_per_minute=120,
+        burst_size=20,
+        excluded_paths=["/health", "/docs", "/openapi.json", "/static"]
+    )
+    logger.info("✓ 速率限制中间件已启用")
+except Exception as e:
+    logger.warning(f"速率限制中间件加载失败: {e}")
 
 # 内置GZip压缩（作为后备）
 app.add_middleware(
@@ -233,16 +251,22 @@ async def simple_health_check():
 
 
 # ============ 错误处理 ============
+# 注意：错误处理器已在上方注册
+# 这里保留用于兼容性
 
 @app.exception_handler(Exception)
-async def general_exception_handler(request, exc):
-    """通用异常处理"""
-    logger.error(f"未处理的异常: {exc}", exc_info=True)
+async def legacy_exception_handler(request, exc):
+    """遗留异常处理（作为后备）"""
+    logger.error(f"未处理的异常（遗留处理器）: {exc}", exc_info=True)
     return JSONResponse(
         status_code=500,
         content={
-            "error": "Internal Server Error",
-            "message": str(exc) if settings.DEBUG else "服务器内部错误"
+            "success": False,
+            "error": {
+                "code": "INTERNAL_ERROR",
+                "message": "服务器内部错误，请稍后重试" if not settings.DEBUG else str(exc),
+                "timestamp": datetime.utcnow().isoformat()
+            }
         }
     )
 

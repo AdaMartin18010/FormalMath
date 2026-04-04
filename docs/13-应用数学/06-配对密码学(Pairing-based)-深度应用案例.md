@@ -11,7 +11,7 @@ msc_secondary: "97Mxx"
 
 ---
 
-## 1. 引言
+## 一、引言
 
 配对密码学(Pairing-based Cryptography)是20世纪90年代末兴起的密码学分支，利用椭圆曲线上的**双线性配对**构造了许多传统密码学难以实现的高级密码原语。
 
@@ -38,7 +38,7 @@ msc_secondary: "97Mxx"
 
 ---
 
-## 2. 数学基础
+## 二、数学基础
 
 ### 2.1 代数曲线的除子理论
 
@@ -145,7 +145,7 @@ BN曲线提供约128位安全级别，嵌入度 $k=12$。
 
 ---
 
-## 3. 核心密码构造
+## 三、核心密码构造
 
 ### 3.1 BLS短签名方案
 
@@ -218,7 +218,7 @@ $$\hat{e}(d_{ID}, U) = \hat{e}(sQ_{ID}, tP) = \hat{e}(Q_{ID}, P)^{st} = \hat{e}(
 
 ---
 
-## 4. Python实现
+## 四、Python实现
 
 ```python
 """
@@ -453,6 +453,7 @@ class BLS_Signature:
     特性:
     - 签名长度: |G1| (约曲线阶的一半)
     - 公钥长度: |G2|
+
     - 支持签名聚合
     """
 
@@ -852,9 +853,10 @@ def run_all_tests():
 
 if __name__ == "__main__":
     run_all_tests()
+
 ```
 
-### 使用专业库的配对实现
+## 使用专业库的配对实现
 
 ```python
 """
@@ -913,11 +915,12 @@ def demo_bls_with_py_ecc():
 
 if __name__ == "__main__":
     demo_bls_with_py_ecc()
+
 ```
 
 ---
 
-## 5. 安全性分析
+## 五、安全性分析
 
 ### 5.1 数学困难问题
 
@@ -930,9 +933,11 @@ if __name__ == "__main__":
 **安全性关系**：
 
 ```
+
 CDH ≥ BDH
 DDH ≡ 1 (在G1中，由于配对存在)
 DDH ≈ DBDH (在GT中)
+
 ```
 
 ### 5.2 安全级别推荐
@@ -964,7 +969,7 @@ DDH ≈ DBDH (在GT中)
 
 ---
 
-## 6. 前沿应用
+## 六、前沿应用
 
 ### 6.1 区块链与加密货币
 
@@ -992,16 +997,18 @@ DDH ≈ DBDH (在GT中)
 
 ---
 
-## 7. 与形式化证明的联系
+## 七、与形式化证明的联系
 
 ### 7.1 配对性质的形式化
 
 双线性配对的三条性质可在类型论中形式化：
 
 ```
+
  bilinearity : ∀ a b P Q, e (a·P) (b·Q) = e P Q ^ (a*b)
  non_degenerate : ∀ P, P ≠ O → ∃ Q, e P Q ≠ 1
  computable : ∃ algorithm, computes e
+
 ```
 
 ### 7.2 BLS签名的形式化证明
@@ -1020,7 +1027,7 @@ DDH ≈ DBDH (在GT中)
 
 ---
 
-## 8. 参考文献
+## 八、参考文献
 
 1. **Boneh & Franklin**: "Identity-Based Encryption from the Weil Pairing" (2001)
 2. **Boneh, Lynn, Shacham**: "Short Signatures from the Weil Pairing" (2001)
@@ -1033,7 +1040,7 @@ DDH ≈ DBDH (在GT中)
 
 ---
 
-## 9. 总结
+## 九、总结
 
 配对密码学通过双线性配对这一强大的数学工具，突破了传统密码学的限制，实现了IBE、短签名、三方DH等创新应用。其核心优势在于：
 

@@ -51,6 +51,7 @@ theorem gauss_bonnet {M : Type*} [RiemannianManifold M]
     ∫ x, gaussCurvature M x ∂(volumeForm M) =
     2 * Real.pi * (eulerCharacteristic M : ℝ) := by
   sorry  -- 完整证明需要大量微分几何机制
+
 ```
 
 ### 1.4 证明要点
@@ -69,6 +70,7 @@ theorem gauss_bonnet {M : Type*} [RiemannianManifold M]
     内部边抵消，只剩总曲率
     Σ内角 = (V-边界顶点)·2π + 边界角
     结合得 ∫K = 2πχ
+
 ```
 
 ---
@@ -85,11 +87,14 @@ theorem gauss_bonnet {M : Type*} [RiemannianManifold M]
 
      ___              _____
     /   \            / ___ \          ∞∞
+
    |     |          | |   | |        (两个洞)
+
     \___/            \_____/
 
     ∫K = 4π          ∫K = 0          ∫K = -4π
     (正曲率)          (零总曲率)       (负曲率)
+
 ```
 
 ### 2.2 测地三角形
@@ -102,12 +107,14 @@ theorem gauss_bonnet {M : Type*} [RiemannianManifold M]
        / | \
       /  |  \
      /   |   \
+
     B----+----C
 
     内角和 = π + ∫_△ K dA = π + 面积/R²
 
     球面上三角形内角和 > π
     （等于 π + 球面三角形面积/R²）
+
 ```
 
 ### 2.3 曲率直觉
@@ -121,6 +128,7 @@ theorem gauss_bonnet {M : Type*} [RiemannianManifold M]
       \___/            |
 
     三角形内角>180°   三角形内角=180°  三角形内角<180°
+
 ```
 
 ---
@@ -143,6 +151,7 @@ theorem gauss_bonnet {M : Type*} [RiemannianManifold M]
 ├─ 顶点角度和 > 360°（因为弯曲）
 ├─ "多出来的角度" = 总曲率
 └─ 与拓扑有关！
+
 ```
 
 ### 3.3 虫子爬行
@@ -154,6 +163,7 @@ theorem gauss_bonnet {M : Type*} [RiemannianManifold M]
 ├─ 球面上：转的角度 ≠ 360°
 ├─ 差值 = 包围区域的总曲率
 └─ Gauss-Bonnet！
+
 ```
 
 ---
@@ -192,6 +202,7 @@ def gauss_bonnet_verification():
     print(f"  ∫K dA = 2πχ = 0（正负曲率抵消）")
 
 gauss_bonnet_verification()
+
 ```
 
 ### 4.2 离散版本
@@ -249,9 +260,10 @@ tetra_v = [(1,1,1), (1,-1,-1), (-1,1,-1), (-1,-1,1)]
 tetra_f = [(0,1,2), (0,2,3), (0,3,1), (1,3,2)]
 print("四面体:")
 discrete_gauss_bonnet(tetra_v, tetra_f)
+
 ```
 
-### 4.3 球面三角形面积
+## 4.3 球面三角形面积
 
 ```python
 def spherical_triangle_area(angles, R=1):
@@ -274,6 +286,7 @@ def spherical_triangle_area(angles, R=1):
 # 正八面体的一个面（等边球面三角形）
 # 在单位球上，角度各为90°
 spherical_triangle_area([np.pi/2, np.pi/2, np.pi/2])
+
 ```
 
 ---
@@ -287,6 +300,7 @@ Gauss-Bonnet 是 ∫: H²(M) → ℝ 的实例
 
 K dA 代表第二陈类 c₁(TM)
 ∫K dA = ⟨c₁(TM), [M]⟩ = χ(M) × 2π
+
 ```
 
 ### 5.2 指标定理的先驱
@@ -301,6 +315,7 @@ K dA 代表第二陈类 c₁(TM)
     更一般: ind(D) = ∫Â × ch
               │
     Atiyah-Singer指标定理
+
 ```
 
 ### 5.3 特征类
@@ -313,6 +328,7 @@ K dA 代表第二陈类 c₁(TM)
     GB: ∫_M e(TM) = χ(M)
               │
     与Stokes定理、de Rham定理联系
+
 ```
 
 ---
@@ -339,6 +355,7 @@ K dA 代表第二陈类 c₁(TM)
 4维及更高   Hopf定理    一般流形
     │         │         │
 Pfaffian    矢量场零点   椭圆算子指标
+
 ```
 
 ---

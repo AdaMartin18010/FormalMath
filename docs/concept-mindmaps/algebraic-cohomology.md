@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 上同调思维导图
 
 ## 概述
@@ -115,6 +123,7 @@ mindmap
       交积
         同调上的积
         对偶于cup积
+
 ```
 
 ## 上同调的环结构

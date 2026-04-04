@@ -61,6 +61,7 @@ $$\{x_n\} \text{ 有界 } \Rightarrow \exists \{x_{n_k}\} \text{ 收敛}$$
     └───┴───┴───┴───┴───┴───┘
     
 必有收敛子列（聚点）
+
 ```
 
 ### 2.2 二维情况
@@ -76,6 +77,7 @@ $$\{x_n\} \text{ 有界 } \Rightarrow \exists \{x_{n_k}\} \text{ 收敛}$$
     └─────────────┘
     
 必有收敛子列
+
 ```
 
 ### 2.3 反例：无界序列
@@ -86,6 +88,7 @@ $$\{x_n\} \text{ 有界 } \Rightarrow \exists \{x_{n_k}\} \text{ 收敛}$$
     ●───●───●───●───●───→ ∞
     
 例如：x_n = n（无界，无收敛子列）
+
 ```
 
 ---
@@ -169,9 +172,10 @@ def find_convergent_subsequence(seq, tol=1e-6):
 # 例子
 seq = [np.sin(n) for n in range(100)]  # 有界序列
 subseq, limit = find_convergent_subsequence(seq)
+
 ```
 
-### 4.2 验证有界性
+## 4.2 验证有界性
 
 ```python
 def check_bounded(seq, dim=1):
@@ -202,9 +206,10 @@ def check_bounded(seq, dim=1):
 # 例子
 seq_1d = [1/n for n in range(1, 100)]  # 有界：[0, 1]
 is_bounded, bound = check_bounded(seq_1d)
+
 ```
 
-### 4.3 构造反例
+## 4.3 构造反例
 
 ```python
 def construct_unbounded_sequence():
@@ -229,6 +234,7 @@ def construct_bounded_no_convergent():
     # 有界但极限e不在Q中
     seq = [(1 + 1/n)**n for n in range(1, 100)]
     return seq
+
 ```
 
 ---

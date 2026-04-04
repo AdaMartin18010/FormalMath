@@ -19,7 +19,7 @@ msc_secondary: ['12E20', '11T71', '14G50']
 
 ---
 
-## 1. 有限域$\mathbb{F}_{2^8}$的构造
+## 一、有限域$\mathbb{F}_{2^8}$的构造
 
 ### 1.1 域扩张与不可约多项式
 
@@ -65,6 +65,7 @@ $$
 **乘法算法**:
 
 ```
+
 输入: a(x), b(x) ∈ F_{2^8}
 输出: c(x) = a(x) · b(x)
 
@@ -74,6 +75,7 @@ for i = 0 to 7:
         c ← c ⊕ a
     a ← a · x mod m(x)  // 左移一位，若溢出则异或0x1B
 return c
+
 ```
 
 **乘$x$操作（xtime）**:
@@ -94,7 +96,7 @@ $\mathbb{F}_{2^8}^*$为255阶乘法循环群，每个非零元素有唯一逆元
 
 ---
 
-## 2. AES算法结构
+## 二、AES算法结构
 
 ### 2.1 数据表示
 
@@ -136,7 +138,7 @@ $$
 
 ---
 
-## 3. SubBytes的代数性质
+## 三、SubBytes的代数性质
 
 ### 3.1 S-box构造
 
@@ -212,7 +214,7 @@ $$
 
 ---
 
-## 4. MixColumns的MDS性质
+## 四、MixColumns的MDS性质
 
 ### 4.1 列混合变换
 
@@ -284,7 +286,7 @@ MixColumns矩阵的循环结构保证：
 
 ---
 
-## 5. ShiftRows与整体扩散
+## 五、ShiftRows与整体扩散
 
 ### 5.1 行移位变换
 
@@ -326,7 +328,7 @@ ShiftRows与MixColumns的组合实现**宽轨迹**扩散：
 
 ---
 
-## 6. 密钥扩展算法
+## 六、密钥扩展算法
 
 ### 6.1 密钥调度
 
@@ -339,6 +341,7 @@ AES密钥扩展从种子密钥生成$N_r + 1$个轮密钥。
 **密钥扩展伪代码**:
 
 ```
+
 KeyExpansion(key):
     w[0..Nk-1] = key
     for i = Nk to 4*(Nr+1)-1:
@@ -349,6 +352,7 @@ KeyExpansion(key):
             temp = SubWord(temp)
         w[i] = w[i-Nk] ⊕ temp
     return w
+
 ```
 
 ### 6.2 密钥调度安全性
@@ -361,7 +365,7 @@ KeyExpansion(key):
 
 ---
 
-## 7. 安全性分析框架
+## 七、安全性分析框架
 
 ### 7.1 差分密码分析
 
@@ -372,6 +376,7 @@ KeyExpansion(key):
 对S-box，输入差分$\Delta_{in}$到输出差分$\Delta_{out}$的概率：
 $$
 DP(\Delta_{in}, \Delta_{out}) = \frac{|\{x : S(x) \oplus S(x \oplus \Delta_{in}) = \Delta_{out}\}|}{256}
+
 $$
 
 **定理 7.2（AES抗差分分析）**:
@@ -383,6 +388,7 @@ $$
 对S-box，线性近似概率：
 $$
 LP(\Gamma_{in}, \Gamma_{out}) = \left(\frac{|\{x : \Gamma_{in} \cdot x = \Gamma_{out} \cdot S(x)\}|}{128} - 1\right)^2
+
 $$
 
 **定理 7.3（AES抗线性分析）**:
@@ -400,7 +406,7 @@ $$
 
 ---
 
-## 8. Python实现
+## 八、Python实现
 
 ### 8.1 完整AES实现
 
@@ -535,9 +541,10 @@ if __name__ == "__main__":
     ciphertext = aes.encrypt(plaintext)
     print(f"密文: {ciphertext.hex()}")
     # 预期输出: 66e94bd4ef8a2c3b884cfa59ca342b2e
+
 ```
 
-### 8.2 有限域运算测试
+## 8.2 有限域运算测试
 
 ```python
 def test_gf28():
@@ -554,11 +561,12 @@ def test_gf28():
     print("有限域运算测试通过")
 
 test_gf28()
+
 ```
 
 ---
 
-## 9. Lean4形式化片段
+## 九、Lean4形式化片段
 
 ### 9.1 有限域运算形式化
 
@@ -606,6 +614,7 @@ def aesSbox (a : GF256) : GF256 :=
 -- Theorem: S-box is a permutation
 theorem sbox_bijective : Function.Bijective aesSbox := by
   sorry
+
 ```
 
 ### 9.2 MDS性质形式化
@@ -643,11 +652,12 @@ def branchNumber {n : ℕ} (M : Matrix (Fin n) (Fin n) GF256) : ℕ :=
 theorem mds_max_branch_number {n : ℕ} (M : Matrix (Fin n) (Fin n) GF256)
     (hMDS : IsMDS M) : branchNumber M = n + 1 := by
   sorry
+
 ```
 
 ---
 
-## 10. 实际应用
+## 十、实际应用
 
 ### 10.1 磁盘加密
 

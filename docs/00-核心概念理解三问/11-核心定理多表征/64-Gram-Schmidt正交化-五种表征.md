@@ -62,17 +62,21 @@ $$\left[ \{v_1, \ldots, v_n\} \text{ 线性无关 } \right] \Rightarrow \exists 
         │ Gram-Schmidt
         ↓
     e₁ = v₁/||v₁||
+
         │
         ↓
     u₂ = v₂ - <v₂,e₁>e₁
     e₂ = u₂/||u₂||
+
         │
         ↓
     u₃ = v₃ - <v₃,e₁>e₁ - <v₃,e₂>e₂
     e₃ = u₃/||u₃||
+
         │
         ↓
     e₁,e₂,e₃ (正交归一)
+
 ```
 
 ### 2.2 投影理解
@@ -88,6 +92,7 @@ $$\left[ \{v_1, \ldots, v_n\} \text{ 线性无关 } \right] \Rightarrow \exists 
     
     去除 v₂ 在 e₁ 方向的分量
     得到与 e₁ 垂直的分量
+
 ```
 
 ### 2.3 几何直观
@@ -103,6 +108,7 @@ $$\left[ \{v_1, \ldots, v_n\} \text{ 线性无关 } \right] \Rightarrow \exists 
 ●────┴──→ e₁
 
 u₂ = v₂ - <v₂,e₁>e₁
+
 ```
 
 ---
@@ -183,9 +189,10 @@ print("\nR (上三角):")
 print(R)
 print("\n验证: V = Q @ R")
 print(V - Q @ R)  # 应该接近零
+
 ```
 
-### 4.2 改进算法（数值稳定）
+## 4.2 改进算法（数值稳定）
 
 ```python
 def gram_schmidt_modified(V):
@@ -227,9 +234,10 @@ orthogonality1 = np.linalg.norm(Q1.T @ Q1 - np.eye(5))
 orthogonality2 = np.linalg.norm(Q2.T @ Q2 - np.eye(5))
 print(f"标准方法正交性误差: {orthogonality1:.2e}")
 print(f"改进方法正交性误差: {orthogonality2:.2e}")
+
 ```
 
-### 4.3 QR分解
+## 4.3 QR分解
 
 ```python
 def qr_decomposition(A):
@@ -276,6 +284,7 @@ b = np.array([1, 2, 3], dtype=float)
 x = solve_via_qr(A, b)
 print(f"解: {x}")
 print(f"残差: {np.linalg.norm(A @ x - b):.2e}")
+
 ```
 
 ---

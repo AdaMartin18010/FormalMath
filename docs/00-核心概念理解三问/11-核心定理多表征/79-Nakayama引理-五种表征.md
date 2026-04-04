@@ -64,6 +64,7 @@ $$M/\mathfrak{m}M = 0 \Rightarrow M = 0$$
       ├─ 𝔪 (唯一闭点)
       │
       └─ 其他素理想
+
 ```
 
 ### 2.2 模的"无穷小"理解
@@ -76,6 +77,7 @@ $$M/\mathfrak{m}M = 0 \Rightarrow M = 0$$
 几何意义：
 - M/𝔪M 是M在"无穷小邻域"的行为
 - 如果"一阶近似"为零，则模本身为零
+
 ```
 
 ### 2.3 生成元的理解
@@ -90,6 +92,7 @@ $$M/\mathfrak{m}M = 0 \Rightarrow M = 0$$
     mᵢ = Σ aᵢⱼ mⱼ  (aᵢⱼ ∈ 𝔪)
 
 这导致 M = 0（通过行列式论证）
+
 ```
 
 ---
@@ -171,9 +174,10 @@ def example_nakayama():
 
     # 如果 M/mM = 0，则 M = 0
     pass
+
 ```
 
-### 4.2 应用：证明生成元
+## 4.2 应用：证明生成元
 
 ```python
 def nakayama_generators(M, m_ideal, R):
@@ -218,9 +222,10 @@ def local_to_global(M, generators_local):
     # 使用Nakayama引理
     # 如果 M_p 由某些元素生成，则 M 也由这些元素生成
     pass
+
 ```
 
-### 4.3 符号计算
+## 4.3 符号计算
 
 ```python
 from sympy import symbols, Matrix, simplify
@@ -246,6 +251,7 @@ def nakayama_symbolic(M_matrix, m_ideal_matrix, R):
         return M_matrix.is_zero()
 
     return None
+
 ```
 
 ---

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Lévy过程 - 思维导图
 
 ## 概述
@@ -46,6 +51,7 @@ mindmap
     特征函数
       Lévy-Khintchine表示
         ψ(u) = iγu - ½σ²u² + ∫(e^{iux}-1-iux1_{|x|<1})ν(dx)
+
       特征三元组
         (γ, σ², ν)
     无穷可分分布
@@ -64,6 +70,7 @@ mindmap
       物理
         反常扩散
         湍流
+
 ```
 
 ---
@@ -93,6 +100,7 @@ graph TD
     style B fill:#e3f2fd
     style C fill:#e3f2fd
     style H fill:#fff3e0
+
 ```
 
 ---
@@ -115,10 +123,12 @@ mindmap
       X_t^{(1)}
         补偿和
         ∫∫_{|x|<1} x(N(ds,dx)-dsν(dx))
+
         平方可积鞅
     大跳跃部分
       X_t^{(2)}
         ∑_{s≤t} ΔX_s 1_{|ΔX_s|≥1}
+
         有限个跳跃
     Lévy测度ν
       定义域
@@ -130,6 +140,7 @@ mindmap
       结构
         小跳跃: 可能无限
         大跳跃: 总是有限
+
 ```
 
 ---
@@ -145,6 +156,7 @@ graph TD
     
     subgraph Lévy-Khintchine公式
         C --> D[ψ(u) = iγu - ½σ²u² + ∫(e^{iux}-1-iux1_{|x|<1})ν(dx)]
+
     end
     
     subgraph 特征三元组
@@ -162,6 +174,7 @@ graph TD
     style D fill:#e3f2fd
     style E fill:#fff3e0
     style F fill:#e8f5e9
+
 ```
 
 ---
@@ -206,6 +219,7 @@ mindmap
     特征函数
       对称稳定
         φ(u) = exp(-|u|^α)
+
       一般稳定
         涉及偏斜参数
     应用
@@ -214,6 +228,7 @@ mindmap
       物理
         反常扩散
         Lévy飞行
+
 ```
 
 ---
@@ -229,6 +244,7 @@ graph TD
     
     subgraph 变差性质
         E[有限变差] --> F[∫|x|<1 |x|ν(dx) < ∞]
+
         G[无限变差] --> H[布朗运动型<br/>或密集小跳跃]
     end
     
@@ -240,6 +256,7 @@ graph TD
     style A fill:#e3f2fd
     style C fill:#fff3e0
     style E fill:#e8f5e9
+
 ```
 
 ---
@@ -272,6 +289,7 @@ graph LR
     style D fill:#e3f2fd
     style G fill:#fff3e0
     style K fill:#e8f5e9
+
 ```
 
 ---
@@ -307,6 +325,7 @@ flowchart LR
     style B fill:#e3f2fd
     style D fill:#fff3e0
     style J fill:#e8f5e9
+
 ```
 
 ---

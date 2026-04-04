@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×音乐：算法作曲的生成模型
 
 ## 概述
@@ -101,6 +106,7 @@ mindmap
         共同创作
         创意辅助
         风格迁移
+
 ```
 
 ---
@@ -131,6 +137,7 @@ graph TD
     style RNN fill:#e8f5e9
     style T fill:#fff3e0
     style NS fill:#fce4ec
+
 ```
 
 ---
@@ -193,6 +200,7 @@ mindmap
         新颖性
         价值判断
         艺术地位
+
 ```
 
 ---

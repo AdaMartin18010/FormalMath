@@ -49,6 +49,7 @@ msc_secondary: ['16-XX', '20Cxx', '20-XX']
    └── 表示论 → 群表示 → 特征标 → Schur引理
 
 预计时间：6-12个月
+
 ```
 
 ### 路径2：分析学方向
@@ -94,6 +95,7 @@ msc_secondary: ['16-XX', '20Cxx', '20-XX']
    └── 谱定理
 
 预计时间：8-14个月
+
 ```
 
 ### 路径3：拓扑学方向
@@ -136,6 +138,7 @@ T₀→T₁→T₂(Hausdorff)→正则→正规
    └── Poincaré对偶
 
 预计时间：8-12个月
+
 ```
 
 ### 路径4：几何学方向
@@ -174,6 +177,7 @@ T₀→T₁→T₂(Hausdorff)→正则→正规
    └── 代数几何 → 概形理论
 
 预计时间：10-16个月
+
 ```
 
 ---
@@ -190,6 +194,7 @@ Galois理论 → 代数数论 → 类域论
 表示论 → 李群李代数 → 自守形式
      ↓
 Langlands纲领基础
+
 ```
 
 ### 目标：理解广义相对论
@@ -202,6 +207,7 @@ Langlands纲领基础
 黎曼几何 → 联络与曲率
      ↓
 Einstein场方程
+
 ```
 
 ### 目标：理解量子场论数学基础
@@ -214,6 +220,7 @@ Einstein场方程
 微分几何 → 纤维丛 → 联络
      ↓
 规范场论数学
+
 ```
 
 ---
@@ -239,6 +246,7 @@ Einstein场方程
     │
     ▼
 [深度5] 同调、泛函分析、代数几何
+
 ```
 
 ### 定理依赖链
@@ -263,6 +271,7 @@ Lagrange定理
 子群概念
     ↓ 需要
 群的定义
+
 ```
 
 ---
@@ -297,6 +306,7 @@ def generate_learning_path(known_concepts, target):
         path.extend(prioritize_by_importance(layer))
 
     return path
+
 ```
 
 ### 示例输出
@@ -329,6 +339,7 @@ def generate_learning_path(known_concepts, target):
 
 总时间：10周
 前置测验：微积分、线性代数基础
+
 ```
 
 ---
@@ -348,6 +359,7 @@ def generate_learning_path(known_concepts, target):
 ● 集合  ● 函数  ● 群  ◐ 环  ◯ 域
 ● 极限  ● 连续  ◐ 测度  ◯ Lebesgue积分
 ● 拓扑空间  ◐ 紧致性  ◯ 基本群
+
 ```
 
 ### 推荐下一步
@@ -364,6 +376,7 @@ def generate_learning_path(known_concepts, target):
 1. 完成环论 → 进入域论
 2. 完成测度论 → 进入Lebesgue积分
 3. 学习紧致性定理 → Tychonoff定理
+
 ```
 
 ---

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×计算机科学：算法分析的离散数学
 
 ## 概述
@@ -104,6 +109,7 @@ mindmap
         电路复杂性
         通信复杂性
         查询复杂性
+
 ```
 
 ---
@@ -137,6 +143,7 @@ graph TD
     style M1 fill:#e3f2fd
     style Ma fill:#e8f5e9
     style Ma1 fill:#e8f5e9
+
 ```
 
 ---
@@ -186,6 +193,7 @@ mindmap
       Strassen矩阵乘法
         a=7,b=2,f(n)=O(n²)
         T(n) = Θ(n^log₂7) ≈ O(n^2.81)
+
 ```
 
 ---

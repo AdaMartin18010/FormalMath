@@ -40,6 +40,7 @@ theorem cayley (G : Type*) [Group G] :
     ∃ f : G →* Equiv.Perm G, Function.Injective f := by
   use MulAction.toPerm
   exact MulAction.toPerm_injective G
+
 ```
 
 ### 1.3 证明要点
@@ -48,6 +49,7 @@ theorem cayley (G : Type*) [Group G] :
 λ_g(x) = gx 是双射（逆为λ_{g⁻¹}）
 φ(gh) = λ_{gh} = λ_g ∘ λ_h（同态）
 φ(g) = φ(h) ⟹ g = h（单射）
+
 ```
 
 ---
@@ -60,6 +62,7 @@ theorem cayley (G : Type*) [Group G] :
 λ_0: (0,1,2) → (0,1,2)  恒等
 λ_1: (0,1,2) → (1,2,0)  三循环
 λ_2: (0,1,2) → (2,0,1)  三循环
+
 ```
 
 ### 2.2 Cayley图
@@ -69,6 +72,7 @@ Z/4Z 的 Cayley图：
     0 ──→ 1
     ↑     ↓
     3 ←── 2
+
 ```
 
 ---
@@ -99,6 +103,7 @@ z4 = [0, 1, 2, 3]
 emb = cayley_embedding(z4, lambda a,b: (a+b)%4)
 for g, p in emb.items():
     print(f"λ_{g}: {p}")
+
 ```
 
 ---

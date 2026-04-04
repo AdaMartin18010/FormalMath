@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Black-Scholes期权定价公式推导链
 
 ## 概述
@@ -53,6 +58,7 @@ graph TD
     style G1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
     style D3 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style A1 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+
 ```
 
 ---
@@ -150,6 +156,7 @@ $$d_2 = d_1 - \sigma\sqrt{T-t} = \frac{\ln(S/K) + (r - \sigma^2/2)(T-t)}{\sigma\
 ## 依赖关系图
 
 ```
+
 随机微积分基础
     ↓
 几何布朗运动 ← 伊藤引理
@@ -163,6 +170,7 @@ Black-Scholes PDE ← Girsanov定理
 Black-Scholes公式
     ↓
 希腊字母分析 + 隐含波动率
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 张量分析推导推理树
 
 ## 概述
@@ -65,15 +73,19 @@ graph TD
     style M fill:#f66,stroke:#333
     style N fill:#f77,stroke:#333
     style O fill:#f88,stroke:#333
+
 ```
 
 ## 张量构造详解
 
 ### 1. 张量积
 给定向量空间 V，(k,l) 型张量空间：
+
 ```
+
 T^k_l(V) = V ⊗ ... ⊗ V ⊗ V* ⊗ ... ⊗ V*
             └─ k个 ─┘    └─ l个 ─┘
+
 ```
 
 ### 2. 分量变换
@@ -89,18 +101,27 @@ T^k_l(V) = V ⊗ ... ⊗ V ⊗ V* ⊗ ... ⊗ V*
 
 ### 协变导数
 度量相容、无挠的联络（Levi-Civita联络）：
+
 ```
+
 Γ^k_ij = ½ g^kl(∂ᵢg_jl + ∂ⱼg_il - ∂ₗg_ij)
+
 ```
 
 ### 张量的协变导数
+
 ```
+
 ∇_k T^i_j = ∂_k T^i_j + Γ^i_kl T^l_j - Γ^l_kj T^i_l
+
 ```
 
 ### 曲率张量
+
 ```
+
 R^l_ijk = ∂_iΓ^l_jk - ∂_jΓ^l_ik + Γ^l_imΓ^m_jk - Γ^l_jmΓ^m_ik
+
 ```
 
 ## 重要恒等式

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 可计算性理论 (Computability Theory)
 
 ## 模块概述
@@ -17,7 +25,9 @@
 ## 学习路径
 
 ```
+
 图灵机模型 → 可计算函数 → 不可判定性 → 复杂度类 → 完备性理论
+
 ```
 
 ## 前置知识

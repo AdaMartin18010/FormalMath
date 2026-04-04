@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 最优控制思维导图
 
 ## 概述
@@ -150,6 +158,7 @@ mindmap
         路径规划
         速度规划
         协同控制
+
 ```
 
 ## 核心概念详解

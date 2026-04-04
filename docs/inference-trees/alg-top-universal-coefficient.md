@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 万有系数定理推理树
 
 ## 概述
@@ -67,6 +75,7 @@ graph TD
     style I fill:#bfb,stroke:#333
     style J fill:#bfb,stroke:#333
     style K fill:#bbf,stroke:#333
+
 ```
 
 ## 定理详解
@@ -76,25 +85,33 @@ graph TD
 对于拓扑空间 X 和 Abel 群 G，存在自然的短正合列：
 
 ```
+
 0 -> Hn(X)⊗G -> Hn(X;G) -> Tor(Hn-1(X), G) -> 0
+
 ```
 
 该序列分裂（非自然分裂），因此：
 
 ```
+
 Hn(X;G) ≅ Hn(X)⊗G ⊕ Tor(Hn-1(X), G)
+
 ```
 
 ### 上同调万有系数定理
 
 ```
+
 0 -> Ext(Hn-1(X), G) -> H^n(X;G) -> Hom(Hn(X), G) -> 0
+
 ```
 
 分裂，因此：
 
 ```
+
 H^n(X;G) ≅ Hom(Hn(X), G) ⊕ Ext(Hn-1(X), G)
+
 ```
 
 ## 关键函子

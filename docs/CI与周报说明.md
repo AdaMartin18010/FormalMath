@@ -2,6 +2,9 @@
 msc_primary: "00A99"
 msc_secondary: ['00-XX', '03B35']
 ---
+msc_primary: "00A99"
+msc_secondary: ['00-XX', '03B35']
+---
 
 # CI 门禁与周报生成说明
 
@@ -14,6 +17,7 @@ msc_secondary: ['00-XX', '03B35']
 
 ```bash
 python tools/check_quality.py --scope docs --rules terminology,symbols --report out/report-$(date +%Y%m%d).json
+
 ```
 
 ## 阈值

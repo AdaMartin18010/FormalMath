@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # FormalMath项目MSC编码标注冲刺 - 最终报告
 
 **报告生成时间**: 2026年4月3日
@@ -83,6 +88,7 @@
 msc_primary: "主要MSC编码"
 msc_secondary: ["次要编码1", "次要编码2"]
 ---
+
 ```
 
 ### 编码选择原则

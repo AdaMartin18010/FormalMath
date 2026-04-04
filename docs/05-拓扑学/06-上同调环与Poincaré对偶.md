@@ -67,6 +67,7 @@ H^n(X; G) \\cong \\mathrm{Hom}(H_n(X), G) \\oplus \\mathrm{Ext}(H_{n-1}(X), G).
 **定义 2.4**（杯积）. 设$\\varphi \\in C^k(X; R)$，$\\psi \\in C^l(X; R)$，其中$R$为含单位元的交换环（如$\\mathbb{Z}$）。杯积$\\varphi \\smile \\psi \\in C^{k+l}(X; R)$在奇异$(k+l)$-单形$\\sigma: \\Delta^{k+l} \\to X$上定义为
 \\[
 (\\varphi \\smile \\psi)(\\sigma) = \\varphi(\\sigma|_{[v_0, \\ldots, v_k]}) \\cdot \\psi(\\sigma|_{[v_k, \\ldots, v_{k+l}]}).
+
 \\]
 
 **定理 2.5**（杯积的性质）. 

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 msc_primary: "03E35"
 ---
@@ -83,6 +88,7 @@ axiom separation : ∀ z, ∃ y, ∀ x, x ∈ y ↔ x ∈ z ∧ φ(x)
 axiom replacement : ∀ A, ∃ B, ∀ y, y ∈ B ↔ ∃ x ∈ A, φ(x,y)
 axiom regularity : ∀ x, x ≠ ∅ → ∃ y ∈ x, y ∩ x = ∅
 axiom choice : ∀ A, ∃ R, well_orders R A
+
 ```
 
 ### 1.2 集合论基本概念 / Basic Set Theory Concepts
@@ -124,6 +130,7 @@ begin
     -- Prove ordered_pair a b = ordered_pair c d
     rw [h.1, h.2] }
 end
+
 ```
 
 ## 🎯 2. 自然数系统构造 / Natural Number System Construction
@@ -159,6 +166,7 @@ def von_neumann_successor (n : Set) : Set :=
 -- Set of natural numbers
 def natural_numbers : Set :=
   {n : Set | ∃ f : ℕ → Set,
+
    f 0 = von_neumann_zero ∧
    (∀ k : ℕ, f (k + 1) = von_neumann_successor (f k)) ∧
    n ∈ range f}
@@ -178,6 +186,7 @@ begin
     -- Prove well-foundedness
     exact _ }
 end
+
 ```
 
 ### 2.2 皮亚诺公理验证 / Peano Axioms Verification
@@ -260,6 +269,7 @@ begin
     -- Use well-ordered induction principle
     exact _ }
 end
+
 ```
 
 ## 🔗 3. 整数系统构造 / Integer System Construction
@@ -284,6 +294,7 @@ $(a,b) \sim (c,d) \leftrightarrow a + d = b + c$
 -- Integer equivalence relation
 def integer_equivalence : Relation (Set × Set) :=
   {x : (Set × Set) × (Set × Set) |
+
    x.1.1 ∈ natural_numbers ∧ x.1.2 ∈ natural_numbers ∧
    x.2.1 ∈ natural_numbers ∧ x.2.2 ∈ natural_numbers ∧
    natural_addition x.1.1 x.2.2 = natural_addition x.1.2 x.2.1}
@@ -320,6 +331,7 @@ begin
     -- Use properties of natural number addition
     exact _ }
 end
+
 ```
 
 ### 3.2 整数运算定义 / Integer Operation Definitions
@@ -360,6 +372,7 @@ def integer_multiplication : integers → integers → integers :=
       (natural_addition (natural_multiplication a.1 b.2)
                        (natural_multiplication a.2 b.1))))
     (λ a1 a2 b1 b2 ha hb, _)
+
 ```
 
 ## 📊 4. 有理数系统构造 / Rational Number System Construction
@@ -384,6 +397,7 @@ $(a,b) \sim (c,d) \leftrightarrow a \cdot d = b \cdot c$
 -- Rational number equivalence relation
 def rational_equivalence : Relation (Set × Set) :=
   {x : (Set × Set) × (Set × Set) |
+
    x.1.1 ∈ integers ∧ x.1.2 ∈ integers ∧ x.1.2 ≠ integer_zero ∧
    x.2.1 ∈ integers ∧ x.2.2 ∈ integers ∧ x.2.2 ≠ integer_zero ∧
    integer_multiplication x.1.1 x.2.2 = integer_multiplication x.1.2 x.2.1}
@@ -420,6 +434,7 @@ begin
     -- Use properties of integer multiplication
     exact _ }
 end
+
 ```
 
 ### 4.2 有理数运算定义 / Rational Number Operation Definitions
@@ -459,6 +474,7 @@ def rational_multiplication : rational_numbers → rational_numbers → rational
       (integer_multiplication a.1 b.1)
       (integer_multiplication a.2 b.2)))
     (λ a1 a2 b1 b2 ha hb, _)
+
 ```
 
 ## 🔬 5. 实数系统构造 / Real Number System Construction
@@ -512,6 +528,7 @@ begin
   intros h1 h2 h3 h4 h5 h6,
   exact ⟨A, B, h1, h2, h3, h4, h5, h6⟩
 end
+
 ```
 
 ### 5.2 实数运算定义 / Real Number Operation Definitions
@@ -543,6 +560,7 @@ def real_addition : real_numbers → real_numbers → real_numbers :=
   λ x y, ⟨
     {a : Set | ∃ b c, b ∈ x.left ∧ c ∈ y.left ∧ a = rational_addition b c},
     {a : Set | ∃ b c, b ∈ x.right ∧ c ∈ y.right ∧ a = rational_addition b c},
+
     _, _, _, _, _, _
   ⟩
 
@@ -552,8 +570,10 @@ def real_multiplication : real_numbers → real_numbers → real_numbers :=
   λ x y, ⟨
     {a : Set | ∃ b c, b ∈ x.left ∧ c ∈ y.left ∧ a = rational_multiplication b c},
     {a : Set | ∃ b c, b ∈ x.right ∧ c ∈ y.right ∧ a = rational_multiplication b c},
+
     _, _, _, _, _, _
   ⟩
+
 ```
 
 ## 🎯 6. 复数系统构造 / Complex Number System Construction
@@ -574,6 +594,7 @@ $\mathbb{C} = \mathbb{R} \times \mathbb{R}$
 -- Set of complex numbers
 def complex_numbers : Set :=
   {x : Set | ∃ a b, a ∈ real_numbers ∧ b ∈ real_numbers ∧
+
    x = ordered_pair a b}
 
 -- 复数的基本性质
@@ -589,6 +610,7 @@ begin
   { intro h,
     exact h }
 end
+
 ```
 
 ### 6.2 复数运算定义 / Complex Number Operation Definitions
@@ -625,6 +647,7 @@ def complex_multiplication : complex_numbers → complex_numbers → complex_num
                      (real_multiplication (ordered_pair_second x) (ordered_pair_second y)))
     (real_addition (real_multiplication (ordered_pair_first x) (ordered_pair_second y))
                   (real_multiplication (ordered_pair_second x) (ordered_pair_first y)))
+
 ```
 
 ## 🔬 7. 国际标准对比分析 / International Standard Comparison Analysis
@@ -716,6 +739,7 @@ ZFC公理体系
 实数系统 (有理数分割)
     ↓ (有序对构造)
 复数系统 (实数序对)
+
 ```
 
 ### 8.2 公理依赖关系 / Axiom Dependency Relationship

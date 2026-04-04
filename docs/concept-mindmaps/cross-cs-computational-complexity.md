@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×计算机科学：计算复杂性的组合分析
 
 ## 概述
@@ -106,6 +111,7 @@ mindmap
         概率可检验证明
         近似难度
         哈代拉姆兰
+
 ```
 
 ---
@@ -136,6 +142,7 @@ graph TD
     style L fill:#e3f2fd
     style NP fill:#fff3e0
     style PSPACE fill:#e8f5e9
+
 ```
 
 ---
@@ -193,6 +200,7 @@ mindmap
         USTCON ∈ L
         无向图连通性
         对数空间可解
+
 ```
 
 ---

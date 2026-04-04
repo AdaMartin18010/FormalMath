@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 同调群长正合列推理树
 
 ## 概述
@@ -55,6 +63,7 @@ graph TD
     style G fill:#bfb,stroke:#333
     style H fill:#bfb,stroke:#333
     style I fill:#bfb,stroke:#333
+
 ```
 
 ## 长正合列详解
@@ -62,20 +71,29 @@ graph TD
 ### 代数版本
 
 给定链复形的短正合列：
+
 ```
+
 0 -> A• -> B• -> C• -> 0
+
 ```
 
 诱导同调长正合列：
+
 ```
+
 ... -> Hn(A) -> Hn(B) -> Hn(C) -> Hn-1(A) -> Hn-1(B) -> ...
+
 ```
 
 ### 拓扑版本：空间对的同调
 
 对于空间对 (X, A)，有长正合列：
+
 ```
+
 ... -> Hn(A) -> Hn(X) -> Hn(X,A) -> Hn-1(A) -> ...
+
 ```
 
 其中：
@@ -101,8 +119,11 @@ graph TD
 
 ### 3. 三元组正合列
 对于 A ⊂ B ⊂ X：
+
 ```
+
 ... -> Hn(B,A) -> Hn(X,A) -> Hn(X,B) -> Hn-1(B,A) -> ...
+
 ```
 
 ---

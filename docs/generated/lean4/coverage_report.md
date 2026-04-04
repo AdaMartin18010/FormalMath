@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Lean4 形式化覆盖率报告
 **生成时间**: 2026-04-04 13:07:54
 

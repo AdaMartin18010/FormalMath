@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 流形定义层次推理树
 
 ## 概述
@@ -66,6 +74,7 @@ graph TD
     style L fill:#f96,stroke:#333
     style M fill:#bfb,stroke:#333
     style N fill:#fbb,stroke:#333
+
 ```
 
 ## 层次详解

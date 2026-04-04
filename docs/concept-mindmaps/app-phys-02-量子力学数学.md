@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 量子力学数学 - 思维导图
 
 ## 概述
@@ -17,12 +22,15 @@ mindmap
         L²(ℝⁿ)
         可分性
       态矢量
+
         |ψ⟩
+
         归一化
         相位不确定性
       对偶空间
          Dirac符号
         ⟨φ|
+
         Riesz表示
     算子理论
       有界算子
@@ -63,6 +71,7 @@ mindmap
       密度矩阵
         混合态
         von Neumann熵
+
 ```
 
 ---
@@ -73,6 +82,7 @@ mindmap
 graph TD
     subgraph 有界算子
         A[||A|| < ∞] --> B[全空间定义]
+
         B --> C[连续性]
     end
     
@@ -96,6 +106,7 @@ graph TD
     style G fill:#e3f2fd
     style H fill:#fff3e0
     style L fill:#e8f5e9
+
 ```
 
 ---
@@ -132,6 +143,7 @@ mindmap
         测量实数值
       演化么正
         e^{-iAt}保范数
+
 ```
 
 ---
@@ -155,16 +167,19 @@ graph TD
         B --> C[测量结果λ∈σ(A)]
         C --> D[概率P(λ∈Δ) = ||E(Δ)ψ||²]
         D --> E[坍缩: ψ → E(Δ)ψ/||·||]
+
     end
     
     subgraph 不确定性
         F[ΔA = √(⟨A²⟩-⟨A⟩²)] --> G[Robertson不等式]
         G --> H[ΔA·ΔB ≥ ½|⟨[A,B]⟩|]
+
     end
     
     style B fill:#e3f2fd
     style G fill:#fff3e0
     style D fill:#e8f5e9
+
 ```
 
 ---
@@ -179,13 +194,16 @@ mindmap
         H = H₁ ⊗ H₂
         维数相乘
       可分态
+
         |ψ⟩ = |ψ₁⟩ ⊗ |ψ₂⟩
+
       纠缠态
         不可分
         Bell态
     密度矩阵
       定义
         ρ = |ψ⟩⟨ψ|
+
         混合态推广
       性质
         ρ ≥ 0
@@ -199,6 +217,7 @@ mindmap
       纠缠熵
         约化密度矩阵
         S(ρ_A)
+
 ```
 
 ---
@@ -230,6 +249,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style G fill:#fff3e0
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Hodge理论前沿
 
 ## 前沿问题陈述
@@ -52,6 +60,7 @@ timeline
               : Scholze完美oid
         2020s : 凝聚态Hodge理论
               : Clausen-Scholze
+
 ```
 
 ### 2.2 关键突破
@@ -87,6 +96,7 @@ graph TD
 
     style A fill:#ffcccc
     style E fill:#99ff99
+
 ```
 
 ### 3.2 依赖的L3理论
@@ -118,6 +128,7 @@ graph LR
     style B fill:#ffff99
     style C fill:#99ff99
     style D fill:#ff9999
+
 ```
 
 ### 4.2 主要结果
@@ -199,6 +210,7 @@ graph TD
 
     style A fill:#ffcccc
     style F fill:#99ff99
+
 ```
 
 ---
@@ -224,6 +236,7 @@ graph TD
     style C fill:#ccccff
     style D fill:#ffffcc
     style E fill:#ffccff
+
 ```
 
 ---

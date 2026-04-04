@@ -2,6 +2,9 @@
 msc_primary: "00A99"
 msc_secondary: ['16-XX', '03B35', '97-XX']
 ---
+msc_primary: "00A99"
+msc_secondary: ['16-XX', '03B35', '97-XX']
+---
 
 # FormalMath多任务推进完成报告 - 2025年1月
 

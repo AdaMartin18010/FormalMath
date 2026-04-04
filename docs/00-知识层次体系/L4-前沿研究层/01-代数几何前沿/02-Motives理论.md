@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Motives理论
 
 ## 前沿问题陈述
@@ -50,6 +58,7 @@ timeline
               : 稳定同伦理论
         2020s : 凝聚态方法
               : 范畴化进展
+
 ```
 
 ### 2.2 关键突破
@@ -88,6 +97,7 @@ graph TD
     
     style A fill:#ffcccc
     style F fill:#99ff99
+
 ```
 
 ### 3.2 依赖的L3理论
@@ -129,6 +139,7 @@ graph TD
     style C fill:#ff9999
     style F fill:#ff9999
     style G fill:#99ff99
+
 ```
 
 ### 4.2 标准猜想详解
@@ -160,8 +171,11 @@ Voevodsky构造了一个三角化范畴，使得：
 - 与代数K理论有深刻联系
 
 **关键构造**：
+
 ```
+
 DM(k) = 具有传递性的Nisnevich层复形的A¹-局部化
+
 ```
 
 ---
@@ -195,6 +209,7 @@ graph LR
     style B3 fill:#ff9999
     style C1 fill:#99ff99
     style C2 fill:#ff9999
+
 ```
 
 ### 5.2 研究前沿问题
@@ -260,6 +275,7 @@ graph TD
     style C fill:#ccccff
     style D fill:#ffffcc
     style E fill:#ffccff
+
 ```
 
 ### 7.2 在算术几何中的作用

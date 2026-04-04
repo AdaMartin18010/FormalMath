@@ -65,6 +65,7 @@ $$\left[ G \text{ 有限群 } \land G \curvearrowright X \text{ 有限集合 } \
     
     对每个g∈G，计算不动点数
     平均 = Σ|X^g| / |G|
+
 ```
 
 ### 2.2 双重计数
@@ -81,6 +82,7 @@ Burnside引理的证明思路：
     总数 = Σ_{x∈X} |Stab(x)|
     
     两者相等，得到Burnside引理
+
 ```
 
 ### 2.3 对称性
@@ -93,6 +95,7 @@ Burnside引理的证明思路：
     例如：用3种颜色涂2×2网格
     考虑旋转对称性
     轨道数 = 不同本质的涂色数
+
 ```
 
 ---
@@ -203,9 +206,10 @@ def color_necklace_example():
     return num_orbits
 
 color_necklace_example()
+
 ```
 
-### 4.2 应用：计数问题
+## 4.2 应用：计数问题
 
 ```python
 def count_colorings_with_symmetry(n_positions, n_colors, symmetry_group, action):
@@ -282,9 +286,10 @@ def grid_coloring_example():
     print(f"2×2网格用2种颜色涂色，考虑D₄对称，有{num}种本质不同的涂色")
     
     return num
+
 ```
 
-### 4.3 验证：直接计算轨道
+## 4.3 验证：直接计算轨道
 
 ```python
 def count_orbits_directly(G, X, action):
@@ -354,6 +359,7 @@ def verify_burnside_lemma(G, X, action):
         'direct_count': direct_count,
         'match': match
     }
+
 ```
 
 ---
@@ -366,6 +372,7 @@ def verify_burnside_lemma(G, X, action):
 
 - **轨道-稳定子**：$|G \cdot x| = |G| / |\operatorname{Stab}(x)|$
 - **Burnside**：$|X/G| = \frac{1}{|G|} \sum_{g \in G} |X^g|$
+
 - 两者通过双重计数联系
 
 ### 5.2 表示论

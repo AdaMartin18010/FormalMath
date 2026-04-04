@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Sylow定理思维导图
 
 ## 中心概念精确定义
@@ -25,7 +33,9 @@
 mindmap
   root((Sylow定理<br/>Sylow Theorems))
     基本设定
+
       |G| = pⁿm
+
       p ∤ m
       Sylow p-子群
     第一定理
@@ -39,11 +49,13 @@ mindmap
     第三定理
       nₚ ≡ 1 (mod p)
       nₚ | m
+
       计数约束
     应用
       单群判定
       群分类
       正规子群存在
+
 ```
 
 ### 1. p-子群与Sylow p-子群
@@ -65,6 +77,7 @@ mindmap
 1. 考虑 $G$ 的所有 $p^k$ 元子集构成的集合 $X$
 2. $G$ 通过左乘作用在 $X$ 上
 3. 计数论证：$|X| = \binom{p^n m}{p^k} \not\equiv 0 \pmod{p}$
+
 4. 存在轨道长度不被 $p$ 整除，利用轨道-稳定子定理
 
 **推论**：Sylow p-子群存在。
@@ -89,8 +102,10 @@ mindmap
 
 **证明**：
 - $n_p = [G : N_G(P)]$，故 $n_p \mid |G| = p^n m$
+
 - 由共轭性，$G$ 共轭作用在 $\text{Syl}_p(G)$ 上
 - $p$-群作用的不动点定理：$n_p \equiv |\text{Fix}| \pmod{p}$
+
 - 唯一不动点是 $P$ 本身
 
 ---
@@ -147,6 +162,7 @@ mindmap
 **命题**：$A_5$ 是单群。
 
 **证明概要**：$|A_5| = 60 = 2^2 \times 3 \times 5$。
+
 - $n_5 \equiv 1 \pmod{5}$，$n_5 \mid 12$ $\Rightarrow$ $n_5 = 6$
 - $n_3 \equiv 1 \pmod{3}$，$n_3 \mid 20$ $\Rightarrow$ $n_3 \in \{1, 4, 10\}$
 - 实际：$n_3 = 10$，$n_2 = 5$（Klein四元群）
@@ -181,7 +197,9 @@ mindmap
 mindmap
   root((Sylow定理<br/>Sylow Theorems))
     基本设定
+
       |G| = pⁿm
+
       Sylow p-子群
       nₚ计数
     第一定理
@@ -195,6 +213,7 @@ mindmap
     第三定理
       nₚ ≡ 1 (mod p)
       nₚ | m
+
       计数公式
     应用实例
       S₃分析
@@ -204,6 +223,7 @@ mindmap
       Hall子群
       p-局部分析
       融合系统
+
 ```
 
 ---

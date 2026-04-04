@@ -55,6 +55,7 @@ theorem sylow_conjugate {G : Type*} [Group G] [Fintype G] (p : ℕ) [Fact p.Prim
 theorem sylow_card_mod_p {G : Type*} [Group G] [Fintype G] (p : ℕ) [Fact p.Prime] :
     Fintype.card (Sylow p G) ≡ 1 [MOD p] := by
   exact card_sylow_modEq_one p G
+
 ```
 
 ---
@@ -72,6 +73,7 @@ theorem sylow_card_mod_p {G : Type*} [Group G] [Fintype G] (p : ℕ) [Fact p.Pri
     └── Pₙₚ
 
     所有Pᵢ共轭，nₚ ≡ 1 (mod p)
+
 ```
 
 ### 2.2 群作用视角
@@ -80,7 +82,9 @@ theorem sylow_card_mod_p {G : Type*} [Group G] [Fintype G] (p : ℕ) [Fact p.Pri
 G作用在Sylow p-子群的集合上（共轭）：
 ├─ 作用传递（第二定理）
 ├─ 轨道大小 | |G|
+
 └─ 稳定子 = 正规化子
+
 ```
 
 ---
@@ -94,6 +98,7 @@ G作用在Sylow p-子群的集合上（共轭）：
 ### 3.2 因数分解类比
 
 - |G| = pⁿm：群阶的素数分解
+
 - Sylow p-子群：群中"p的成分"的最大体现
 - 共轭：所有"p-成分"本质相同
 
@@ -143,6 +148,7 @@ def verify_sylow_third(G, p):
     m = order_G // (p ** n)
 
     # 验证 n_p ≡ 1 (mod p) 且 n_p | m
+
     cond1 = (n_p % p == 1)
     cond2 = (m % n_p == 0)
 
@@ -154,6 +160,7 @@ def verify_sylow_third(G, p):
 
 # 示例：S₃ (阶6 = 2×3)
 # Sylow 2-子群：3个（阶2），Sylow 3-子群：1个（阶3）
+
 ```
 
 ---
@@ -167,6 +174,7 @@ Sylow定理 = 群的p-局部化
 ├─ Sylow p-子群：G的"p-局部结构"
 ├─ 共轭：在G的伴随作用下等价
 └─ p-群范畴：p-主部分的分类
+
 ```
 
 ### 5.2 推广
@@ -179,6 +187,7 @@ Sylow定理 = 群的p-局部化
 
 ```text
 有限群分类 → 找Sylow子群 → 分析正规化子 → 确定结构
+
 ```
 
 ---

@@ -13,7 +13,7 @@ import {
   GitBranch,
   Brain,
   BarChart3,
-  Sitemap,
+  Layout,
   History,
   CheckCircle2
 } from 'lucide-react';
@@ -31,7 +31,7 @@ const navItems: NavItem[] = [
   { path: '/reasoning-tree', label: '推理树', icon: <GitBranch className="w-4 h-4" /> },
   { path: '/mind-map', label: '思维导图', icon: <Brain className="w-4 h-4" /> },
   { path: '/comparison', label: '对比分析', icon: <BarChart3 className="w-4 h-4" /> },
-  { path: '/decision-tree', label: '决策树', icon: <Sitemap className="w-4 h-4" /> },
+  { path: '/decision-tree', label: '决策树', icon: <Layout className="w-4 h-4" /> },
   { path: '/evolution', label: '演化历史', icon: <History className="w-4 h-4" /> },
   { path: '/proof-assistant', label: '证明助手', icon: <CheckCircle2 className="w-4 h-4" /> },
 ];

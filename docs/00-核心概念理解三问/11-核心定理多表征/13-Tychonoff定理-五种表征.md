@@ -50,6 +50,7 @@ theorem tychonoff {ι : Type*} {X : ι → Type*}
     (hX : ∀ i, CompactSpace (X i)) :
     CompactSpace (∀ i, X i) := by
   exact Pi.compactSpace
+
 ```
 
 ### 1.4 证明要点（使用选择公理）
@@ -69,6 +70,7 @@ theorem tychonoff {ι : Type*} {X : ι → Type*}
     超滤子在每个分量收敛
     ⟹ 在积空间收敛
     ⟹ 积空间紧致
+
 ```
 
 ---
@@ -89,6 +91,7 @@ theorem tychonoff {ι : Type*} {X : ι → Type*}
     └─────────┘
 
     直观：有限个紧致集的积仍紧致
+
 ```
 
 ### 2.2 无限积的挑战
@@ -101,6 +104,7 @@ theorem tychonoff {ι : Type*} {X : ι → Type*}
     维度无限，但仍紧致！
 
     "无穷维但有界" → 紧致
+
 ```
 
 ### 2.3 开覆盖视角
@@ -115,6 +119,7 @@ theorem tychonoff {ι : Type*} {X : ι → Type*}
 
     需要"协调"无穷多个分量的选择
     → 选择公理
+
 ```
 
 ---
@@ -133,6 +138,7 @@ theorem tychonoff {ι : Type*} {X : ι → Type*}
 ├─ 每个囚犯在每个监狱选一个牢房
 ├─ Tychonoff：所有"选择组合"构成的空间仍是紧致的
 └─ 即使有无穷多监狱！
+
 ```
 
 ### 3.3 开关板类比
@@ -143,6 +149,7 @@ theorem tychonoff {ι : Type*} {X : ι → Type*}
 ├─ 一个配置 = 所有开关状态的组合
 ├─ 配置空间 = ∏Xᵢ
 └─ Tychonoff：配置空间是紧致的
+
 ```
 
 ---
@@ -177,9 +184,11 @@ def tychonoff_finite_demo():
         print(f"  {p}")
 
     print(f"\n|X₁×X₂×X₃| = |X₁|×|X₂|×|X₃| = 2×2×2 = {len(product)}")
+
     print("有限 ⟹ 紧致")
 
 tychonoff_finite_demo()
+
 ```
 
 ### 4.2 Cantor集作为积
@@ -218,6 +227,7 @@ def cantor_as_product():
     print("  ...")
 
 cantor_as_product()
+
 ```
 
 ### 4.3 序列空间
@@ -238,6 +248,7 @@ def sequence_space_compactness():
     print("  - 这推广了Bolzano-Weierstrass定理")
 
 sequence_space_compactness()
+
 ```
 
 ---
@@ -255,6 +266,7 @@ sequence_space_compactness()
               │
     Tychonoff：积在KHaus中闭合
     （即KHaus有任意积）
+
 ```
 
 ### 5.2 Stone对偶
@@ -264,6 +276,7 @@ Stone对偶：
 ├─ 紧致Hausdorff空间 ↔ 交换C*-代数
 ├─ 积空间 ↔ 张量积
 ├─ Tychonoff ↔ C*-代数的张量积性质
+
 ```
 
 ### 5.3 与选择公理
@@ -279,6 +292,7 @@ Stone对偶：
     ├─ 超滤子引理
     ├─ 每个向量空间有基
     └─ Zorn引理
+
 ```
 
 ---
@@ -305,6 +319,7 @@ Stone对偶：
 弱*紧致性   紧化        概率测度
     │         │         │
 泛函分析   一般拓扑     概率论
+
 ```
 
 ---

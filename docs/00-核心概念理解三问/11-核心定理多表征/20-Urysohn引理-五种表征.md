@@ -46,6 +46,7 @@ theorem exists_continuous_zero_one_of_closed {X : Type*}
     ∃ f : X → ℝ, Continuous f ∧ f '' A ⊆ {0} ∧ f '' B ⊆ {1}
         ∧ Set.range f ⊆ Set.Icc (0 : ℝ) 1 := by
   exact exists_continuous_zero_one_of_closed hA hB hAB
+
 ```
 
 ---
@@ -65,6 +66,7 @@ theorem exists_continuous_zero_one_of_closed {X : Type*}
     └──────────┴B
 
 f在A上为0，在B上为1，中间连续过渡
+
 ```
 
 ### 2.2 应用：Tietze扩张
@@ -75,6 +77,7 @@ f在A上为0，在B上为1，中间连续过渡
 整个空间X上的连续函数f
     ↓
 f|_A = g (保持原函数)
+
 ```
 
 ---
@@ -126,6 +129,7 @@ B = [(2, 2)]
 x_test = (1, 1)
 f_value = urysohn_function(x_test, A, B, euclidean_metric)
 print(f"f({x_test}) = {f_value:.3f}")
+
 ```
 
 ---
@@ -139,6 +143,7 @@ Urysohn引理 = 分离公理 + 连续函数存在性
 ├─ 正规空间：T4分离公理
 ├─ 连续函数：拓扑空间到ℝ的态射
 └─ 分离性质：用函数"区分"集合
+
 ```
 
 ### 5.2 万有性质

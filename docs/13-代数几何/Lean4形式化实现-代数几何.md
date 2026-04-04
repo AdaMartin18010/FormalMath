@@ -2,6 +2,9 @@
 msc_primary: "14Hxx"
 msc_secondary: ['14A15', '18F20', '14-XX']
 ---
+msc_primary: "14Hxx"
+msc_secondary: ['14A15', '18F20', '14-XX']
+---
 
 # Lean4形式化实现-代数几何 / Lean 4 Formalization - Algebraic Geometry
 
@@ -27,7 +30,7 @@ msc_secondary: ['14A15', '18F20', '14-XX']
     - [5.3 经济学应用 / Economics Applications](#53-经济学应用--economics-applications)
     - [5.4 生物学应用 / Biology Applications](#54-生物学应用--biology-applications)
 
-## 1. 基本代数几何形式化 / Basic Algebraic Geometry Formalization
+## 一、基本代数几何形式化 / Basic Algebraic Geometry Formalization
 
 ### 1.1 代数簇 / Algebraic Varieties
 
@@ -66,6 +69,7 @@ def dimension (V : AffineVariety k n) : ℕ :=
 class IrreducibleVariety (V : AffineVariety k n) where
   irreducible : ∀ (U₁ U₂ : Set (AffineVariety k n)),
     V.points = U₁ ∪ U₂ → U₁ = V.points ∨ U₂ = V.points
+
 ```
 
 ### 1.2 代数曲线 / Algebraic Curves
@@ -100,9 +104,10 @@ class EllipticCurve (k : Type) [Field k] (C : AlgebraicCurve k) where
 def elliptic_curve_group (E : EllipticCurve k C) : Group E.variety.points :=
   -- 基于弦切法的群运算
   sorry
+
 ```
 
-## 2. 概形理论形式化 / Scheme Theory Formalization
+## 二、概形理论形式化 / Scheme Theory Formalization
 
 ### 2.1 概形的基本定义 / Basic Scheme Definitions
 
@@ -134,6 +139,7 @@ structure SchemeMorphism (X Y : Scheme) where
   compatibility : ∀ U : OpenSet Y.underlying_space,
     sheaf_morphism U ∘ Y.structure_sheaf.restriction U =
     X.structure_sheaf.restriction (continuous_map ⁻¹' U) ∘ sheaf_morphism U
+
 ```
 
 ### 2.2 概形的性质 / Properties of Schemes
@@ -162,9 +168,10 @@ class IrreducibleScheme (X : Scheme) where
 class RegularScheme (X : Scheme) where
   regular : ∀ x : X.underlying_space,
     local_ring (X.structure_sheaf.stalk x) is_regular
+
 ```
 
-## 3. 上同调理论形式化 / Cohomology Theory Formalization
+## 三、上同调理论形式化 / Cohomology Theory Formalization
 
 ### 3.1 层上同调 / Sheaf Cohomology
 
@@ -196,6 +203,7 @@ class CoherentSheaf (X : Scheme) (ℱ : Sheaf X (Module R)) where
   finite_presentation : ∀ U : OpenSet X.underlying_space,
     ∃ (n m : ℕ) (φ : ModuleHom R (FreeModule R n) (FreeModule R m)),
     ℱ.sections U ≅ cokernel φ
+
 ```
 
 ### 3.2 代数几何中的上同调 / Cohomology in Algebraic Geometry
@@ -222,9 +230,10 @@ theorem riemann_roch (C : Curve) (D : Divisor C) :
 theorem coherent_cohomology (X : ProjectiveScheme) (ℱ : Sheaf X (Module R))
   [CoherentSheaf X ℱ] :
   ∀ i > dim X, H^i(X, ℱ) = 0 := sorry
+
 ```
 
-## 4. 相交理论形式化 / Intersection Theory Formalization
+## 四、相交理论形式化 / Intersection Theory Formalization
 
 ### 4.1 相交数 / Intersection Numbers
 
@@ -256,6 +265,7 @@ def intersection_number (X : Scheme) (D₁ D₂ : Divisor X) : ℤ :=
 -- Self-intersection number
 def self_intersection (X : Scheme) (D : Divisor X) : ℤ :=
   intersection_number X D D
+
 ```
 
 ### 4.2 相交理论的基本定理 / Basic Theorems of Intersection Theory
@@ -277,9 +287,10 @@ theorem intersection_symmetry (X : Scheme) (D₁ D₂ : Divisor X) :
 theorem bezout_theorem (C₁ C₂ : AlgebraicCurve k) :
   intersection_number C₁.variety C₂.variety =
   degree C₁ * degree C₂ := sorry
+
 ```
 
-## 5. 应用案例形式化 / Application Case Formalization
+## 五、应用案例形式化 / Application Case Formalization
 
 ### 5.1 密码学应用 / Cryptography Applications
 
@@ -305,6 +316,7 @@ structure ECDSA (k : Field) where
 def verify_signature (ecdsa : ECDSA k) (message : ℕ) (signature : ℕ × ℕ) : Bool :=
   -- 基于椭圆曲线群运算的验证
   sorry
+
 ```
 
 ### 5.2 弦论应用 / String Theory Applications
@@ -329,6 +341,7 @@ structure StringCompactification where
   spacetime : MinkowskiSpace 4
   internal_manifold : CalabiYauManifold 6
   effective_theory : QuantumFieldTheory 4
+
 ```
 
 ### 5.3 经济学应用 / Economics Applications
@@ -353,6 +366,7 @@ def pareto_optimal (allocations : Vector (Vector ℝ n) m) : Bool :=
 def walrasian_equilibrium (economy : EconomicEquilibrium n m) : Bool :=
   -- 检查瓦尔拉斯均衡条件
   sorry
+
 ```
 
 ### 5.4 生物学应用 / Biology Applications
@@ -376,6 +390,7 @@ def structural_similarity (P₁ P₂ : ProteinStructure) : ℝ :=
 def protein_folding (sequence : List AminoAcid) : ProteinStructure :=
   -- 基于能量最小化的折叠预测
   sorry
+
 ```
 
 ---

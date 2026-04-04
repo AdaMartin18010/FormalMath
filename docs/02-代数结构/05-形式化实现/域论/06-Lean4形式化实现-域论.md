@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "06 Lean4形式化实现 域论"
 msc_primary: ["68V20"]
@@ -95,6 +100,7 @@ class Subfield (F K : Type*) [Field F] [Field K] where
   preserves_mul : ∀ a b, embedding (mul a b) = mul (embedding a) (embedding b)
   preserves_zero : embedding zero = zero
   preserves_one : embedding one = one
+
 ```
 
 ### 域的特征 / Field Characteristic
@@ -128,6 +134,7 @@ theorem characteristic_properties (F : Type*) [Field F] :
   · intro h a
     -- 证明特征为素数时所有元素的char倍为零
     sorry
+
 ```
 
 ## 域扩张 / Field Extensions
@@ -160,6 +167,7 @@ class AlgebraicExtension (F K : Type*) [Field F] [Field K] (ext : FieldExtension
 -- 超越扩张
 class TranscendentalExtension (F K : Type*) [Field F] [Field K] (ext : FieldExtension F K) : Prop where
   is_transcendental : ∃ α : K, ∀ f : Polynomial F, f ≠ 0 → f.eval (ext.embedding α) ≠ 0
+
 ```
 
 ### 单扩张 / Simple Extensions
@@ -185,6 +193,7 @@ theorem transcendental_simple_extension (F K : Type*) [Field F] [Field K]
   SimpleExtension ext α ∧ FieldExtension.degree ext = 0 := by
   -- 实现超越单扩张的证明
   sorry
+
 ```
 
 ## 伽罗瓦理论 / Galois Theory
@@ -230,6 +239,7 @@ theorem galois_fundamental_theorem (F K : Type*) [Field F] [Field K]
   L = FixedField H ∧ H = Stabilizer L := by
   -- 实现伽罗瓦理论基本定理的证明
   sorry
+
 ```
 
 ### 可解性理论 / Solvability Theory
@@ -254,6 +264,7 @@ theorem abel_ruffini_theorem (F : Type*) [Field F] (f : Polynomial F) :
   f.degree ≥ 5 → ¬ SolvableByRadicals f := by
   -- 实现阿贝尔-鲁菲尼定理的证明
   sorry
+
 ```
 
 ## 有限域 / Finite Fields
@@ -296,6 +307,7 @@ def FrobeniusAutomorphism (F : Type*) [Field F] [FiniteField F] : FieldAutomorph
   preserves_mul := by sorry
   preserves_zero := by sorry
   preserves_one := by sorry
+
 ```
 
 ### 有限域的构造 / Construction of Finite Fields
@@ -319,6 +331,7 @@ theorem finite_field_uniqueness (F₁ F₂ : Type*) [Field F₁] [Field F₂]
   Nonempty (F₁ ≃+* F₂) := by
   -- 实现有限域唯一性的证明
   sorry
+
 ```
 
 ## 代数数论 / Algebraic Number Theory
@@ -350,6 +363,7 @@ theorem algebraic_number_properties (α β : AlgebraicNumber) :
   (β.value ≠ 0 → ∃ γ : AlgebraicNumber, γ.value = α.value / β.value) := by
   -- 实现代数数性质的证明
   sorry
+
 ```
 
 ### 数域和整数环 / Number Fields and Rings of Integers
@@ -391,6 +405,7 @@ theorem class_group_finite (K : NumberField) :
   Fintype (ClassGroup K) := by
   -- 实现类群有限性定理的证明
   sorry
+
 ```
 
 ## 应用案例 / Application Cases
@@ -420,6 +435,7 @@ theorem quadratic_field_class_number (d : ℤ) (hd : SquareFree d) :
   let h := Fintype.card (ClassGroup K)
   -- 类数的计算
   sorry
+
 ```
 
 ### 案例2：分圆域的形式化 / Case 2: Formalization of Cyclotomic Fields
@@ -448,6 +464,7 @@ theorem cyclotomic_field_galois_group (n : ℕ) :
   GaloisGroup ℚ K ≅ (ℤ/nℤ)ˣ := by
   -- 实现分圆域伽罗瓦群的证明
   sorry
+
 ```
 
 ### 案例3：有限域的形式化应用 / Case 3: Formalization Applications of Finite Fields
@@ -482,9 +499,12 @@ theorem elliptic_curve_properties (F : Type*) [Field F] [FiniteField F] :
   -- 点的个数
   Fintype.card E = q + 1 - t ∧
   -- Hasse界
+
   |t| ≤ 2 * √q := by
+
   -- 实现椭圆曲线性质的证明
   sorry
+
 ```
 
 ## 总结 / Summary

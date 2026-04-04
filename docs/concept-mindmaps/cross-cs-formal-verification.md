@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×计算机科学：形式化验证的逻辑证明
 
 ## 概述
@@ -109,6 +114,7 @@ mindmap
         Paxos/Raft
         Byzantine容错
         验证挑战
+
 ```
 
 ---
@@ -140,6 +146,7 @@ graph TD
     style L1 fill:#e3f2fd
     style T fill:#e8f5e9
     style PT fill:#e8f5e9
+
 ```
 
 ---
@@ -196,6 +203,7 @@ mindmap
         核验证
         可检查证明
         信任基
+
 ```
 
 ---

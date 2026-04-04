@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # quality_control
 
 **源文件**: `tools\metadata-system\quality_control.py`
@@ -8,6 +16,7 @@
 
 ```python
 class QualityLevel
+
 ```
 
 质量等级
@@ -16,6 +25,7 @@ class QualityLevel
 
 ```python
 class QualityReport
+
 ```
 
 质量报告
@@ -24,6 +34,7 @@ class QualityReport
 
 ```python
 class QualityControl
+
 ```
 
 质量控制器
@@ -34,6 +45,7 @@ class QualityControl
 
 ```python
 def main()
+
 ```
 
 主函数

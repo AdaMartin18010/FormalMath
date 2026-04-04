@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "07 Python实现 范畴论算法"
 msc_primary: ["68W30"]
@@ -10,7 +15,7 @@ msc_secondary: ["18A99"]
 
 本文档提供范畴论核心概念的Python实现，基于国际标准数学定义，涵盖范畴、函子、自然变换、极限与余极限等核心概念。虽然Python不是函数式语言，但我们提供了实用的实现方式。
 
-## 1. 范畴基础实现
+## 一、范畴基础实现
 
 ### 1.1 范畴类
 
@@ -145,6 +150,7 @@ class Category:
             'valid': len(issues) == 0,
             'issues': issues
         }
+
 ```
 
 ### 1.2 常见范畴构造
@@ -208,9 +214,10 @@ def poset_category(poset: Dict) -> Category:
             cat.add_morphism(morphism)
 
     return cat
+
 ```
 
-## 2. 函子实现
+## 二、函子实现
 
 ### 2.1 函子类
 
@@ -335,6 +342,7 @@ def forgetful_functor(source_category: Category,
     # 这里提供框架
 
     return functor
+
 ```
 
 ### 2.2 函子运算
@@ -366,9 +374,10 @@ def compose_functors(F: Functor, G: Functor) -> Functor:
                         composed.map_morphism(morphism, G_F_morphism)
 
     return composed
+
 ```
 
-## 3. 自然变换实现
+## 三、自然变换实现
 
 ### 3.1 自然变换类
 
@@ -486,9 +495,10 @@ def compose_natural_transformations(eta: NaturalTransformation,
                 composed.set_component(obj, composed_component)
 
     return composed
+
 ```
 
-## 4. 极限与余极限
+## 四、极限与余极限
 
 ### 4.1 极限实现
 
@@ -536,6 +546,7 @@ def pullback(category: Category, f: Morphism, g: Morphism) -> Optional[Limit]:
     # 拉回是特殊形状的极限
     # 这里提供框架
     pass
+
 ```
 
 ### 4.2 余极限实现
@@ -566,9 +577,10 @@ def coequalizer(category: Category, f: Morphism, g: Morphism) -> Optional[Colimi
 def pushout(category: Category, f: Morphism, g: Morphism) -> Optional[Colimit]:
     """计算推出"""
     pass
+
 ```
 
-## 5. 伴随函子
+## 五、伴随函子
 
 ### 5.1 伴随实现
 
@@ -608,9 +620,10 @@ def free_forgetful_adjunction() -> Adjoint:
     """
     # 这里提供框架
     pass
+
 ```
 
-## 6. 应用示例
+## 六、应用示例
 
 ### 6.1 集合范畴示例
 
@@ -650,6 +663,7 @@ def example_set_category():
     print(f"复合态射: {composed}")
 
     return Set
+
 ```
 
 ### 6.2 函子示例
@@ -677,9 +691,10 @@ def example_functor():
     print(f"函子有效性: {is_valid}")
 
     return F
+
 ```
 
-## 7. 总结
+## 七、总结
 
 本文档提供了范畴论核心概念的Python实现，包括：
 
@@ -692,7 +707,7 @@ def example_functor():
 
 所有实现都基于国际标准数学定义，提供了完整的理论背景和实际应用示例。
 
-## 8. 幺半范畴与闭范畴
+## 八、幺半范畴与闭范畴
 
 ### 8.1 幺半范畴
 
@@ -733,6 +748,7 @@ def category_of_vector_spaces_monoidal() -> MonoidalCategory:
     # 张量积作为幺半结构
 
     return Vect
+
 ```
 
 ### 8.2 闭范畴
@@ -764,9 +780,10 @@ def category_of_sets_closed() -> ClosedCategory:
     # Hom(A, B) = B^A
 
     return Set
+
 ```
 
-## 9. 范畴论在编程中的应用
+## 九、范畴论在编程中的应用
 
 ### 9.1 函子式编程
 
@@ -817,9 +834,10 @@ def example_functor_programming():
     numbers = ListFunctor([1, 2, 3, 4])
     squared = numbers.fmap(lambda x: x ** 2)
     print(f"列表映射后: {squared}")
+
 ```
 
-### 9.2 单子（Monad）
+## 9.2 单子（Monad）
 
 ```python
 class Monad(FunctorType[T]):
@@ -858,9 +876,10 @@ def example_monad():
 
     result = MaybeMonad(10).bind(lambda x: safe_divide(x, 2))
     print(f"单子计算: {result}")
+
 ```
 
-## 10. 范畴论在数据库中的应用
+## 十、范畴论在数据库中的应用
 
 ### 10.1 数据库模式范畴
 
@@ -894,6 +913,7 @@ def query_category(schema: DatabaseSchema) -> Category:
     # 查询变换作为态射
 
     return query_cat
+
 ```
 
 ## 11. 可视化工具
@@ -963,6 +983,7 @@ def visualize_functor(functor: Functor):
     ax2.set_title("目标范畴")
     plt.tight_layout()
     plt.show()
+
 ```
 
 ## 12. 测试套件
@@ -1020,6 +1041,7 @@ class TestFunctor(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 ```
 
 ## 13. 完整应用示例
@@ -1091,6 +1113,7 @@ class CategoryTheoryCalculator:
         print(f"态射数量: {analysis['num_morphisms']}")
         print(f"是否为群胚: {analysis['is_groupoid']}")
         print("=" * 60)
+
 ```
 
 ## 14. 总结

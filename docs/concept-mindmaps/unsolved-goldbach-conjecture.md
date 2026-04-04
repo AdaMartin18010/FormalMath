@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 哥德巴赫猜想 - 思维导图
 
 ## 概述
@@ -65,6 +70,7 @@ mindmap
         塞尔伯格筛法
       密率方法
         Schnirelmann密率
+
 ```
 
 ---
@@ -88,6 +94,7 @@ graph TD
         SC --> WC
         SC -.-> |弱化| T2
         SC -.-> |弱化| T3
+
         T1 --> WC
     end
     
@@ -103,6 +110,7 @@ graph TD
     style SC fill:#ffcdd2
     style WC fill:#c8e6c9
     style T2 fill:#fff3e0
+
 ```
 
 ---
@@ -132,6 +140,7 @@ timeline
          : 完整的弱哥德巴赫证明
     2026 : 强猜想仍然开放
          : 验证到4×10¹⁸
+
 ```
 
 ---
@@ -170,6 +179,7 @@ mindmap
       哥德巴赫问题
       华林-哥德巴赫问题
       多项式推广
+
 ```
 
 ---
@@ -212,6 +222,7 @@ graph TD
     
     style C fill:#fff3e0
     style H2 fill:#c8e6c9
+
 ```
 
 ---
@@ -253,6 +264,7 @@ graph TD
     C1 --> C3
     
     style W fill:#c8e6c9
+
 ```
 
 ---
@@ -299,6 +311,7 @@ mindmap
     加性基问题
       Erdős-Turán猜想
       最小基问题
+
 ```
 
 ---
@@ -355,6 +368,7 @@ flowchart LR
     style K fill:#ffcdd2
     style I fill:#fff3e0
     style J fill:#c8e6c9
+
 ```
 
 ---

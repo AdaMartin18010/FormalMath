@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 镜像对称：SYZ猜想推导推理树
 
 ## 概述
@@ -59,6 +67,7 @@ graph TD
     style I fill:#f88,stroke:#333
     style J fill:#f77,stroke:#333
     style K fill:#bfb,stroke:#333
+
 ```
 
 ## SYZ猜想详解
@@ -80,9 +89,13 @@ graph TD
 ### 3. 对偶纤维化
 
 若f: X → B纤维为T^n = TB/Λ，则：
+
 ```
+
 X̌ = T^*B/Λ^*
+
 ```
+
 其中Λ^*是格Λ的对偶。
 
 ## 几何对应
@@ -97,8 +110,11 @@ X̌ = T^*B/Λ^*
 ## SYZ变换
 
 对于支撑在纤维上的对象：
+
 ```
+
 SYZ: D^bCoh(X) → D^bFuk(X̌)
+
 ```
 
 在光滑纤维上，类似于经典傅里叶变换。
@@ -106,8 +122,11 @@ SYZ: D^bCoh(X) → D^bFuk(X̌)
 ## 瞬子修正
 
 半平坦度量在判别轨迹附近有奇异性，需要瞬子修正：
+
 ```
+
 ω̃ = ω_0 + Σ_{discs} contributions
+
 ```
 
 其中discs是X中边界在SLAG纤维上的全纯圆盘。

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Seifert-van Kampen定理推理树
 
 ## 概述
@@ -77,6 +85,7 @@ graph TD
     style L fill:#f96,stroke:#333
     style M fill:#bfb,stroke:#333
     style N fill:#bbf,stroke:#333
+
 ```
 
 ## 定理详解
@@ -89,8 +98,11 @@ graph TD
 3. x₀ ∈ U ∩ V 是基点
 
 则有群同构：
+
 ```
+
 π₁(X, x₀) ≅ π₁(U, x₀) * π₁(V, x₀) / N
+
 ```
 
 其中：
@@ -117,9 +129,12 @@ graph TD
 ## 应用实例
 
 ### 1. 楔和空间
+
 ```
+
 π₁(A ∨ B) ≅ π₁(A) * π₁(B)
 π₁(S¹ ∨ S¹) ≅ ℤ * ℤ = F₂（二元自由群）
+
 ```
 
 ### 2. 环面 T²

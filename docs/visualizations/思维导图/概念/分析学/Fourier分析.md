@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Fourier分析 (Fourier Analysis)
 
 ## 中心概念精确定义
@@ -56,7 +64,9 @@ mindmap
         滤波器
     Plancherel定理
       L²等距
+
         ||f̂||₂=||f||₂
+
         能量守恒
       内积保持
         ⟨f̂,ĝ⟩=⟨f,g⟩
@@ -81,6 +91,7 @@ mindmap
         数字信号
         图像处理
         多项式乘法
+
 ```
 
 ---
@@ -238,11 +249,13 @@ $$f(x) \sim \frac{4}{\pi}\sum_{k=0}^{\infty} \frac{\sin(2k+1)x}{2k+1}$$
 ### 推广概念
 
 ```
+
 Fourier级数 → Fourier变换 → 抽象调和分析
       ↓              ↓
    离散FT(DFT)    球面调和
       ↓              ↓
    FFT算法      对称空间
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 证明论 (Proof Theory)
 
 ## 模块概述
@@ -17,7 +25,9 @@
 ## 学习路径
 
 ```
+
 一阶逻辑证明系统 → 序数标记 → Gentzen Hauptsatz → 序数分析 → 反向数学
+
 ```
 
 ## 前置知识

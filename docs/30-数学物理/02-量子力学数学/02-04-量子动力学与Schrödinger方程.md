@@ -27,6 +27,7 @@ msc_secondary: ['47D06', '47N50', '35Q41']
 **定义 1.1** (Schrödinger方程)
 量子态的时间演化由**Schrödinger方程**描述：
 $$i\hbar\frac{d}{dt}|\psi(t)\rangle = \hat{H}|\psi(t)\rangle$$
+
 其中 $\hat{H}$ 是系统的Hamilton算子（能量可观测量）。
 
 **初始值问题**: 给定 $|\psi(0)\rangle = |\psi_0\rangle$，求 $|\psi(t)\rangle$ 对所有 $t \in \mathbb{R}$。

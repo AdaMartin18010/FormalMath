@@ -131,6 +131,7 @@ mindmap
         公理
         推理规则
         证明
+
 ```
 
 ## 📊 基础数学核心概念多维知识矩阵
@@ -361,6 +362,7 @@ mindmap
 **中文定义**：函数f：A→B在子集S⊆A上的限制是函数f|_S：S→B，定义为f|_S(s) = f(s)。
 **英文定义**：The restriction of a function f: A→B to a subset S⊆A is the function f|_S: S→B defined by f|_S(s) = f(s).
 **符号表示**：$f|_S$
+
 **性质**：限制函数保持原函数的性质
 
 #### 延拓函数 / Extension
@@ -723,6 +725,7 @@ ZFC公理体系
   ├─ 有理数 (ℚ)
   ├─ 实数 (ℝ)
   └─ 复数 (ℂ)
+
 ```
 
 ### 集合论结构关系 / Set Theory Structure Relationships
@@ -753,6 +756,7 @@ ZFC公理体系
       ├─ 双射 (Bijective)
       ├─ 复合函数 (Composite Function)
       └─ 逆函数 (Inverse Function)
+
 ```
 
 ### 数系结构关系 / Number System Structure Relationships
@@ -780,6 +784,7 @@ ZFC公理体系
   ├─ 实部 (Real Part)
   ├─ 虚部 (Imaginary Part)
   └─ 共轭复数 (Complex Conjugate)
+
 ```
 
 ### 逻辑结构关系 / Logic Structure Relationships
@@ -811,6 +816,7 @@ ZFC公理体系
   ├─ 定理 (Theorem)
   ├─ 引理 (Lemma)
   └─ 推论 (Corollary)
+
 ```
 
 ---
@@ -1379,6 +1385,7 @@ ZFC公理体系
 \usepackage{amsmath}      % 数学符号和公式
 \usepackage{amssymb}      % 数学符号扩展
 \usepackage{amsthm}       % 定理环境
+
 ```
 
 #### 逻辑相关包
@@ -1386,6 +1393,7 @@ ZFC公理体系
 ```latex
 \usepackage{logicproof}   % 逻辑证明
 \usepackage{bussproofs}   % 自然演绎证明树
+
 ```
 
 ### LaTeX使用技巧 / LaTeX Usage Tips
@@ -2161,24 +2169,28 @@ ZFC公理体系
   - 在复平面上位于第一象限
   - 坐标为 $(1, 1)$
   - 模长：$|1 + i| = \sqrt{2}$
+
   - 幅角：$\arg(1 + i) = \frac{\pi}{4}$
 
 - **$-1 + i$**：
   - 在复平面上位于第二象限
   - 坐标为 $(-1, 1)$
   - 模长：$|-1 + i| = \sqrt{2}$
+
   - 幅角：$\arg(-1 + i) = \frac{3\pi}{4}$
 
 - **$-1 - i$**：
   - 在复平面上位于第三象限
   - 坐标为 $(-1, -1)$
   - 模长：$|-1 - i| = \sqrt{2}$
+
   - 幅角：$\arg(-1 - i) = \frac{5\pi}{4}$
 
 - **$1 - i$**：
   - 在复平面上位于第四象限
   - 坐标为 $(1, -1)$
   - 模长：$|1 - i| = \sqrt{2}$
+
   - 幅角：$\arg(1 - i) = \frac{7\pi}{4}$
 
 ### 逻辑练习题答案 / Logic Exercise Answers
@@ -3068,6 +3080,7 @@ ZFC公理体系
 - **复合函数 (Composite Function)** - $\circ$ - [定义](#复合函数--composite-function)
 - **逆函数 (Inverse Function)** - $f^{-1}$ - [定义](#逆函数--inverse-function)
 - **限制函数 (Restriction)** - $f|_A$ - [定义](#限制函数--restriction)
+
 - **延拓函数 (Extension)** - [定义](#延拓函数--extension)
 
 #### 关系术语 / Relation Terms
@@ -3408,6 +3421,7 @@ ZFC公理体系
 └── 特殊集合
     ├── 幂集 (Power Set) ──→ P(A)
     └── 空集 (Empty Set) ──→ ∅
+
 ```
 
 **关系类型说明**：
@@ -3434,6 +3448,7 @@ ZFC公理体系
 │           └── 扩展 ──→ 复数 (C)
 │               ├── 虚数单位 (Imaginary Unit) ──→ i
 │               └── 代数闭性
+
 ```
 
 **关系类型说明**：
@@ -3460,6 +3475,7 @@ ZFC公理体系
         ├── 全称量词 (Universal Quantifier) ──→ ∀
         ├── 存在量词 (Existential Quantifier) ──→ ∃
         └── 唯一存在量词 (Unique Existential Quantifier) ──→ ∃!
+
 ```
 
 **关系类型说明**：
@@ -3482,9 +3498,11 @@ ZFC公理体系
 │   ├── 复合函数 (Composite Function) ──→ f ∘ g
 │   ├── 逆函数 (Inverse Function) ──→ f^(-1)
 │   ├── 限制函数 (Restriction) ──→ f|_A
+
 │   └── 延拓函数 (Extension)
 └── 特殊函数
     └── 双射函数 ──→ 有逆函数
+
 ```
 
 **关系类型说明**：
@@ -3515,6 +3533,7 @@ ZFC公理体系
 │       └── 良序集 (Well Ordered Set)
 └── 关系运算
     └── 逆关系 (Inverse Relation) ──→ R^(-1)
+
 ```
 
 **关系类型说明**：
@@ -3534,6 +3553,7 @@ ZFC公理体系
 │   └── 值域 (Range) ──→ 输出集合
 └── 关系 (Relation) ──→ 集合之间的二元关系
     └── 等价关系 (Equivalence Relation) ──→ 划分集合
+
 ```
 
 #### 数系与逻辑关系
@@ -3543,6 +3563,7 @@ ZFC公理体系
 ├── 自然数 (N) ──→ 皮亚诺公理 (Peano Axioms) ──→ 逻辑公理化
 ├── 实数 (R) ──→ 完备性 ──→ 逻辑推理
 └── 复数 (C) ──→ 代数闭性 ──→ 逻辑证明
+
 ```
 
 #### 函数与关系关系
@@ -3551,6 +3572,7 @@ ZFC公理体系
 函数 (Function)
 ├── 双射函数 ──→ 等价关系（一一对应）
 └── 单射函数 ──→ 偏序关系（部分有序）
+
 ```
 
 ### 学习路径关系网络 / Learning Path Relationship Network
@@ -3570,6 +3592,7 @@ ZFC公理体系
     │           ├── 函数运算 ──→ 复合函数、逆函数、限制函数、延拓函数
     │           ├── 数系构造 ──→ 皮亚诺公理、基数、序数、无穷大
     │           └── 证明理论 ──→ 推理、证明、公理、定理、引理、推论
+
 ```
 
 **关系类型说明**：
@@ -3591,6 +3614,7 @@ ZFC公理体系
     └── 逻辑 ──→ 证明理论和推理方法
         │
         └── 数学基础 ──→ 所有数学分支的基础
+
 ```
 
 #### 实际应用关系
@@ -3601,6 +3625,7 @@ ZFC公理体系
 ├── 物理学 ──→ 数学建模、物理量表示
 ├── 工程学 ──→ 数学建模、工程计算
 └── 经济学 ──→ 数学建模、经济分析
+
 ```
 
 **关系类型说明**：

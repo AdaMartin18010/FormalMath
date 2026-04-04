@@ -45,6 +45,7 @@ theorem fubini {X Y : Type*} [MeasurableSpace X] [MeasurableSpace Y]
     {f : X × Y → ℝ} (hf : Integrable f (μ.prod ν)) :
     ∫ p, f p ∂(μ.prod ν) = ∫ x, ∫ y, f (x, y) ∂ν ∂μ := by
   exact integral_prod f hf
+
 ```
 
 ---
@@ -64,6 +65,7 @@ X×Y上的积分 = 沿Y方向切片，再沿X方向积分
     └──────────→ X
        ↑
        沿x积分切片的积分
+
 ```
 
 ### 2.2 积分顺序
@@ -74,6 +76,7 @@ X×Y上的积分 = 沿Y方向切片，再沿X方向积分
      │           │             │
      └───────────┴─────────────┘
             三者相等
+
 ```
 
 ---
@@ -130,9 +133,10 @@ def fubini_verify(f, x_range, y_range):
 # 示例：f(x,y) = x*y
 f = lambda x, y: x * y
 fubini_verify(f, [0, 1], [0, 1])
+
 ```
 
-### 4.2 反例（不可积时）
+## 4.2 反例（不可积时）
 
 ```python
 def fubini_counterexample():
@@ -149,6 +153,7 @@ def fubini_counterexample():
     # 先对x积分：可能得到-∞
     # 两个顺序结果不同！
     print("反例：积分顺序影响结果（函数不可积）")
+
 ```
 
 ---
@@ -162,6 +167,7 @@ Fubini定理 = 乘积测度的泛函性质
 ├─ 乘积测度μ×ν是μ和ν的"张量积"
 ├─ 积分交换 ⟺ 张量积的对称性
 └─ 在适当的测度空间范畴中成立
+
 ```
 
 ### 5.2 推广
@@ -175,6 +181,7 @@ Fubini定理 = 乘积测度的泛函性质
 ```text
 Tonelli：f ≥ 0 可测 ⟹ 等式成立（可能是∞）
 Fubini：f可积 ⟹ 等式成立（有限值）
+
 ```
 
 ---

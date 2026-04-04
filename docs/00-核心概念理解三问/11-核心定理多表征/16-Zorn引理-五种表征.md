@@ -49,6 +49,7 @@ theorem zorn_lemma {α : Type*} [PartialOrder α]
     (h : ∀ c : Set α, IsChain (· ≤ ·) c → BddAbove c) :
     ∃ m : α, ∀ a : α, m ≤ a → a = m := by
   exact zorn_partialOrder h
+
 ```
 
 ### 1.4 证明思路（从选择公理）
@@ -66,6 +67,7 @@ theorem zorn_lemma {α : Type*} [PartialOrder α]
     └─────────┬─────────┘
               │
     链最终稳定 → 极大元
+
 ```
 
 ---
@@ -91,6 +93,7 @@ theorem zorn_lemma {α : Type*} [PartialOrder α]
               • (最小元，如果有)
 
     每条向上的路径（链）必须到头
+
 ```
 
 ### 2.2 链的概念
@@ -104,6 +107,7 @@ theorem zorn_lemma {α : Type*} [PartialOrder α]
 
 Zorn：如果每条链有上界，
       则存在"最高点"
+
 ```
 
 ---
@@ -122,6 +126,7 @@ Zorn：如果每条链有上界，
 ├─ 条件：每条路径都有尽头（上界）
 ├─ 结论：存在山顶（极大元）
 └─ 山顶可能不唯一！
+
 ```
 
 ### 3.3 组织层级类比
@@ -132,6 +137,7 @@ Zorn：如果每条链有上界，
 ├─ 每条"指挥链"有顶（上界）
 ├─ Zorn：存在"顶级"人物（极大元）
 └─ 可能有多个顶级人物
+
 ```
 
 ### 3.4 为什么不能直接"取最大"？
@@ -141,6 +147,7 @@ Zorn：如果每条链有上界，
 ├─ 不能简单遍历所有元素
 ├─ 需要"间接"方法
 └─ Zorn把条件（链有上界）转化为结论（有极大元）
+
 ```
 
 ---
@@ -198,6 +205,7 @@ def zorn_lemma_demo():
         print(f"  上界: {[set(u) if u else '{}' for u in upper_bounds]}")
 
 zorn_lemma_demo()
+
 ```
 
 ### 4.2 向量空间基的存在
@@ -219,6 +227,7 @@ def demonstrate_basis_existence():
     print("4. B 极大 + 线性无关 → B 是基")
 
 demonstrate_basis_existence()
+
 ```
 
 ### 4.3 理想的极大扩张
@@ -239,6 +248,7 @@ def maximal_ideal_existence():
     print("4. M 是包含 I 的极大理想")
 
 maximal_ideal_existence()
+
 ```
 
 ---
@@ -253,6 +263,7 @@ maximal_ideal_existence()
 ├─ 态射：x → y 当且仅当 x ≤ y
 ├─ 链 = 全序子范畴
 └─ Zorn = 关于余极限的存在性
+
 ```
 
 ### 5.2 与选择公理的等价性
@@ -267,6 +278,7 @@ maximal_ideal_existence()
     │         │         │
     └─────────┴─────────┘
            在ZF中等价
+
 ```
 
 ### 5.3 构造性数学视角
@@ -277,6 +289,7 @@ Zorn引理在构造性数学中：
 ├─ 但某些特殊情况可构造证明
 ├─ 如：有限维向量空间基
 └─ Zorn是"终极的非构造性工具"
+
 ```
 
 ---
@@ -309,6 +322,7 @@ Zorn引理在构造性数学中：
 2. 证明链有上界（通常取并）
 3. 应用Zorn得极大元
 4. 证明极大元就是目标对象
+
 ```
 
 ---

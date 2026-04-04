@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 种群动力学 - 思维导图
 
 ## 概述
@@ -53,6 +58,7 @@ mindmap
       斑块模型
         元种群理论
         Levins模型
+
 ```
 
 ---
@@ -79,6 +85,7 @@ graph TD
     style A fill:#e3f2fd
     style D fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -120,6 +127,7 @@ mindmap
         Type III: S型
       时滞效应
         稳定性变化
+
 ```
 
 ---
@@ -160,6 +168,7 @@ graph TD
     
     style C fill:#fff3e0
     style K fill:#ffcdd2
+
 ```
 
 ---
@@ -191,6 +200,7 @@ mindmap
       细胞自动机
         离散空间时间
         规则驱动
+
 ```
 
 ---
@@ -223,6 +233,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style H fill:#fff3e0
+
 ```
 
 ---

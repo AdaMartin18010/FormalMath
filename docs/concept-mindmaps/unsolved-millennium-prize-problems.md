@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 千禧年大奖难题 - 思维导图
 
 ## 概述
@@ -44,6 +49,7 @@ mindmap
         流体方程的解的存在性
         解的正则性
         湍流理论的核心
+
 ```
 
 ---
@@ -93,6 +99,7 @@ graph TD
     style NS fill:#ffcdd2
     style HOD fill:#ffcdd2
     style BSD fill:#ffcdd2
+
 ```
 
 ---
@@ -130,6 +137,7 @@ mindmap
       佩雷尔曼拒绝菲尔兹奖
       拒绝克雷百万奖金
       数学界的震撼
+
 ```
 
 ---
@@ -176,6 +184,7 @@ graph LR
     B --> PNP1
     C --> HOD1
     D --> YM1
+
 ```
 
 ---
@@ -230,6 +239,7 @@ flowchart LR
     style I fill:#ffcdd2
     style K fill:#ffcdd2
     style M fill:#ffcdd2
+
 ```
 
 ---

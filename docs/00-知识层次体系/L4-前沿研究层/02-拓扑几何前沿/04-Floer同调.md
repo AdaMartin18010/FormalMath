@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Floer同调
 
 ## 前沿问题陈述
@@ -52,6 +60,7 @@ timeline
               : Hutchings
         2015 : 谱不变量发展
               : 量子上同调
+
 ```
 
 ### 2.2 关键突破
@@ -88,6 +97,7 @@ graph TD
     style F2 fill:#ccccff
     style F3 fill:#ffffcc
     style F4 fill:#ffccff
+
 ```
 
 ### 3.2 依赖的L3理论
@@ -186,6 +196,7 @@ graph TD
 
     style B fill:#ffcccc
     style E fill:#99ff99
+
 ```
 
 ---
@@ -211,6 +222,7 @@ graph TD
     style C fill:#ccccff
     style D fill:#ffffcc
     style E fill:#ffccff
+
 ```
 
 ---

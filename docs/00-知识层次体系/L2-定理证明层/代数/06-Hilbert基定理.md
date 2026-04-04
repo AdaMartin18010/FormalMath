@@ -37,6 +37,7 @@ flowchart TD
     E --> F[矛盾!<br/>I有限生成]
     
     style F fill:#ffebee,stroke:#f44336
+
 ```
 
 #### 步骤1-2：反证设定
@@ -138,6 +139,7 @@ flowchart TB
     L3CA --> L4GB[L4: Gröbner基算法]
     
     style L2H fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+
 ```
 
 ---

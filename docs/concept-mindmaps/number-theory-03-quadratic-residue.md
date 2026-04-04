@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 二次剩余 - 思维导图
 
 ## 概述
@@ -22,6 +27,7 @@ mindmap
         (a/p)=1 QR
         (a/p)=-1 NR
         (a/p)=0 p|a
+
     欧拉准则
       判定方法
         a^{(p-1)/2}≡(a/p) (mod p)
@@ -56,7 +62,9 @@ mindmap
         ζ=e^{2πi/p}
       性质
         G²=(-1/p)p
+
         |G|=√p
+
       应用
         互反律证明
         四次剩余
@@ -70,6 +78,7 @@ mindmap
       一般理论
         幂剩余符号
         类域论
+
 ```
 
 ---
@@ -105,6 +114,7 @@ graph TD
     style A fill:#e3f2fd
     style G fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -134,6 +144,7 @@ graph TD
     
     style C fill:#e8f5e9
     style K fill:#fff3e0
+
 ```
 
 ---
@@ -172,6 +183,7 @@ mindmap
       解数变化
         p∤2a: 同模p
         p|a: 复杂
+
     模复合数
       CRT分解
         分解n=∏p_i^{e_i}
@@ -188,6 +200,7 @@ mindmap
       解的结构
         4个解(k≥3)
         提升规律
+
 ```
 
 ---
@@ -203,6 +216,7 @@ graph TD
     
     subgraph 关键性质
         D[G² = (-1)^{(p-1)/2}p] --> E[|G| = √p]
+
         E --> F[G·Ḡ = p]
     end
     
@@ -221,6 +235,7 @@ graph TD
     style A fill:#e3f2fd
     style D fill:#fff3e0
     style K fill:#e8f5e9
+
 ```
 
 ---
@@ -248,6 +263,7 @@ graph LR
     style A fill:#e3f2fd
     style D fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---
@@ -296,6 +312,7 @@ flowchart LR
     style D fill:#fff3e0
     style H fill:#e8f5e9
     style K fill:#ffcdd2
+
 ```
 
 ---

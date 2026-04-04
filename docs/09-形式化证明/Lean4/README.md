@@ -2,6 +2,9 @@
 msc_primary: "68V20"
 msc_secondary: ["03B35", "03B70"]
 ---
+msc_primary: "68V20"
+msc_secondary: ["03B35", "03B70"]
+---
 
 # FormalMath - Mathlib4对齐形式化证明库
 
@@ -134,9 +137,10 @@ lean --version  # 需要 ≥ 4.19.0
 
 # 安装依赖
 lake update mathlib
+
 ```
 
-### 编译代码
+## 编译代码
 
 ```bash
 # 在Lean4目录下
@@ -144,13 +148,15 @@ lake build
 
 # 检查所有文件
 lean *.lean
+
 ```
 
-### 导入模块
+## 导入模块
 
 ```lean
 import docs.形式化证明.Lean4.LagrangeTheorem
 import docs.形式化证明.Lean4.FirstIsomorphismTheorem
+
 ```
 
 ## 代码结构
@@ -164,6 +170,7 @@ import docs.形式化证明.Lean4.FirstIsomorphismTheorem
 5. **应用示例** - 定理的具体应用
 
 ```
+
 theorem_file.lean
 ├── 导入语句 (import)
 ├── 命名空间定义 (namespace)
@@ -171,6 +178,7 @@ theorem_file.lean
 ├── 辅助引理 (lemmas)
 ├── 主定理证明 (main theorem)
 └── 应用示例 (examples)
+
 ```
 
 ## 与Mathlib4的对齐策略
@@ -182,6 +190,7 @@ theorem_file.lean
 ```lean
 theorem my_theorem : ... := by
   exact Mathlib4.theorem_name
+
 ```
 
 ### 2. 补充证明
@@ -191,6 +200,7 @@ theorem my_theorem : ... := by
 ```lean
 theorem alternative_proof : ... := by
   -- 不同的证明方法
+
 ```
 
 ### 3. 教学版本
@@ -200,11 +210,13 @@ theorem alternative_proof : ... := by
 ```lean
 theorem detailed_proof : ... := by
   -- 分步详细注释
+
 ```
 
 ## 定理依赖关系
 
 ```
+
 基础层:
 ├── PigeonholePrinciple.lean
 ├── InfinitePigeonhole.lean
@@ -237,6 +249,7 @@ theorem detailed_proof : ... := by
 集合论层:
 ├── CantorDiagonal.lean
 └── (与所有层关联)
+
 ```
 
 ## 扩展计划

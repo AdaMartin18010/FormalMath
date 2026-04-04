@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # concept_graph_generator
 
 **源文件**: `tools\doc-generator\concept_graph_generator.py`
@@ -8,6 +16,7 @@
 
 ```python
 class Concept
+
 ```
 
 概念节点
@@ -16,6 +25,7 @@ class Concept
 
 ```python
 class ConceptRelation
+
 ```
 
 概念关系
@@ -24,6 +34,7 @@ class ConceptRelation
 
 ```python
 class ConceptGraphGenerator
+
 ```
 
 概念图谱生成器
@@ -36,6 +47,7 @@ class ConceptGraphGenerator
 
 ```python
 def main()
+
 ```
 
 主函数

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "01 Python实现 代数结构综合工具"
 msc_primary: ["68W30"]
@@ -10,7 +15,7 @@ msc_secondary: ["20A05", "13A99", "12F99"]
 
 本文档提供代数结构Python实现的综合工具和统一接口，整合群论、环论、域论、模论、李代数、表示论、范畴论等所有代数结构的实现，提供统一的API和工具集。
 
-## 1. 统一接口设计
+## 一、统一接口设计
 
 ### 1.1 代数结构基类
 
@@ -95,6 +100,7 @@ class FieldStructure(RingStructure):
     def inverse(self, a):
         """乘法逆元"""
         pass
+
 ```
 
 ### 1.2 统一工厂模式
@@ -153,9 +159,10 @@ class AlgebraicStructureFactory:
             return create_rational_field()
         else:
             raise ValueError(f"未知域类型: {field_type}")
+
 ```
 
-## 2. 综合分析工具
+## 二、综合分析工具
 
 ### 2.1 代数结构分析器
 
@@ -289,9 +296,10 @@ class AlgebraicStructureAnalyzer:
             print(f"  - {app}")
 
         print("=" * 60)
+
 ```
 
-## 3. 跨结构操作
+## 三、跨结构操作
 
 ### 3.1 结构转换
 
@@ -337,6 +345,7 @@ def ring_to_group(ring: Ring, operation: str = 'add') -> FiniteGroup:
         return FiniteGroup(units, ring.mul, ring.one.value, None)
     else:
         raise ValueError(f"未知运算: {operation}")
+
 ```
 
 ### 3.2 结构同态
@@ -402,9 +411,10 @@ class StructureHomomorphism:
             return structure.zero.value
         else:
             return None
+
 ```
 
-## 4. 综合计算器
+## 四、综合计算器
 
 ### 4.1 代数结构计算器
 
@@ -509,9 +519,10 @@ class UniversalAlgebraicCalculator:
             print(f"结构: {name}")
             print('='*60)
             self.analyzers[name].print_report()
+
 ```
 
-## 5. 可视化工具
+## 五、可视化工具
 
 ### 5.1 结构关系图
 
@@ -558,9 +569,10 @@ def visualize_structure_relationships(calculator: UniversalAlgebraicCalculator):
             node_size=1500, font_size=10, arrows=True, arrowsize=20)
     plt.title("代数结构关系图")
     plt.show()
+
 ```
 
-## 6. 性能基准测试
+## 六、性能基准测试
 
 ### 6.1 综合性能测试
 
@@ -643,9 +655,10 @@ class AlgebraicStructureBenchmark:
                     print(f"  {op_name}:")
                     print(f"    平均时间: {op_result['avg_time']*1000:.2f} ms")
                     print(f"    每秒运算: {op_result['ops_per_sec']:,.0f} ops/s")
+
 ```
 
-## 7. 完整使用示例
+## 七、完整使用示例
 
 ### 7.1 综合示例
 
@@ -687,9 +700,10 @@ def comprehensive_example():
 
 if __name__ == '__main__':
     comprehensive_example()
+
 ```
 
-## 8. 总结
+## 八、总结
 
 本文档提供了代数结构Python实现的综合工具，包括：
 
@@ -703,7 +717,7 @@ if __name__ == '__main__':
 
 所有工具都基于国际标准数学定义，提供了统一的API和完整的工具集，方便使用和研究。
 
-## 9. 数据库与持久化
+## 九、数据库与持久化
 
 ### 9.1 结构数据库
 
@@ -843,6 +857,7 @@ class AlgebraicStructureDatabase:
                 results.append(name)
 
         return results
+
 ```
 
 ### 9.2 JSON导出/导入
@@ -892,9 +907,10 @@ def import_from_json(filename: str) -> UniversalAlgebraicCalculator:
                 calculator.add_structure(name, ring)
 
     return calculator
+
 ```
 
-## 10. 教学演示系统
+## 十、教学演示系统
 
 ### 10.1 交互式教学系统
 
@@ -1046,6 +1062,7 @@ class AlgebraicStructureTutorial:
 
             except Exception as e:
                 print(f"错误: {e}")
+
 ```
 
 ## 11. 错误处理与验证
@@ -1139,6 +1156,7 @@ class StructureValidator:
                 'valid': False,
                 'issues': ['未知结构类型']
             }
+
 ```
 
 ### 11.2 错误处理装饰器
@@ -1172,6 +1190,7 @@ class SafeAlgebraicCalculator(UniversalAlgebraicCalculator):
     def safe_compare_structures(self, name1: str, name2: str) -> Optional[Dict]:
         """安全比较结构"""
         return self.compare_structures(name1, name2)
+
 ```
 
 ## 12. 高级应用示例
@@ -1236,6 +1255,7 @@ def extended_gcd(a: int, b: int) -> Tuple[int, int, int]:
     x = y1 - (b // a) * x1
     y = x1
     return gcd, x, y
+
 ```
 
 ### 12.2 编码理论应用集成
@@ -1296,6 +1316,7 @@ class CodingTheoryTools:
                     min_dist = dist
 
         return min_dist if min_dist != float('inf') else 0
+
 ```
 
 ## 13. 批量处理工具
@@ -1369,6 +1390,7 @@ class BatchProcessor:
                 f.write("\n")
 
         print(f"报告已保存到 {output_file}")
+
 ```
 
 ## 14. 扩展接口
@@ -1431,6 +1453,7 @@ class SymmetryAnalysisPlugin(PluginInterface):
 
     def get_plugin_name(self) -> str:
         return "SymmetryAnalysis"
+
 ```
 
 ## 15. Web API接口
@@ -1521,9 +1544,10 @@ api.add_resource(AnalysisResource, '/api/analyze')
 def run_api_server(host='localhost', port=5000):
     """运行API服务器"""
     app.run(host=host, port=port, debug=True)
+
 ```
 
-### 15.2 命令行工具
+## 15.2 命令行工具
 
 ```python
 import argparse
@@ -1622,6 +1646,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 ```
 
 ## 16. 与外部库集成
@@ -1654,6 +1679,7 @@ try:
 
 except ImportError:
     print("SymPy未安装，跳过集成功能")
+
 ```
 
 ### 16.2 NumPy集成
@@ -1681,6 +1707,7 @@ def numpy_matrix_operations():
     C_ring = matrix_ring.multiply_matrices(A_ring, B_ring)
 
     return C_ring
+
 ```
 
 ## 17. 完整项目结构
@@ -1722,6 +1749,7 @@ algebraic_structures/
     ├── test_groups.py
     ├── test_rings.py
     └── test_tools.py
+
 ```
 
 ### 17.2 安装与使用
@@ -1754,6 +1782,7 @@ setup(
 # pip install -e .
 # algstruct create group --name Z_6 --params n=6
 # algstruct analyze Z_6
+
 ```
 
 ## 18. 总结

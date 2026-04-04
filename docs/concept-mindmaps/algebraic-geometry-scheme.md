@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 概形思维导图
 
 ## 概述
@@ -119,11 +127,13 @@ mindmap
       motive理论
         通用上同调
         Grothendieck梦想
+
 ```
 
 ## 概形的层次结构
 
 ```
+
 概形
  ├── 局部诺特概形
  │    ├── 整概形
@@ -131,6 +141,7 @@ mindmap
  │    └── 约化概形
  │         └── 代数簇（古典定义）
  └── 仿射概形 (=Spec A)
+
 ```
 
 ## 重要的概形例子

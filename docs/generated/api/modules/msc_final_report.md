@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # msc_final_report
 
 **源文件**: `tools\msc_final_report.py`
@@ -8,6 +16,7 @@
 
 ```python
 def has_msc_encoding(file_path)
+
 ```
 
 检查文件是否已有MSC编码
@@ -20,6 +29,7 @@ def has_msc_encoding(file_path)
 
 ```python
 def get_directory_category(relative_path)
+
 ```
 
 根据路径获取目录分类
@@ -32,6 +42,7 @@ def get_directory_category(relative_path)
 
 ```python
 def scan_and_report(base_dir)
+
 ```
 
 扫描并生成详细报告
@@ -44,6 +55,7 @@ def scan_and_report(base_dir)
 
 ```python
 def print_report(stats)
+
 ```
 
 打印并保存报告

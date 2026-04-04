@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # msc_annotation_sprint
 
 **源文件**: `tools\msc_annotation_sprint.py`
@@ -8,6 +16,7 @@
 
 ```python
 def detect_msc_from_content(filepath, content, branch)
+
 ```
 
 根据文件内容检测MSC编码
@@ -22,6 +31,7 @@ def detect_msc_from_content(filepath, content, branch)
 
 ```python
 def has_frontmatter(content)
+
 ```
 
 检查文件是否已有frontmatter
@@ -34,6 +44,7 @@ def has_frontmatter(content)
 
 ```python
 def has_msc(content)
+
 ```
 
 检查文件是否已有MSC编码
@@ -46,6 +57,7 @@ def has_msc(content)
 
 ```python
 def add_msc_to_frontmatter(content, primary, secondary)
+
 ```
 
 添加MSC编码到frontmatter
@@ -60,6 +72,7 @@ def add_msc_to_frontmatter(content, primary, secondary)
 
 ```python
 def process_file(filepath, branch)
+
 ```
 
 处理单个文件
@@ -73,6 +86,7 @@ def process_file(filepath, branch)
 
 ```python
 def main()
+
 ```
 
 主函数

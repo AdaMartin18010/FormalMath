@@ -2,6 +2,9 @@
 msc_primary: "03F30"
 msc_secondary: ['11Axx', '03E30', '03E15']
 ---
+msc_primary: "03F30"
+msc_secondary: ['11Axx', '03E30', '03E15']
+---
 
 # ZFC公理体系完整形式化 - 第六部分：数论基础构造
 
@@ -76,6 +79,7 @@ $$m < n \leftrightarrow m \in n$$
 (2) 反对称性：如果 m ⊆ n 和 n ⊆ m，则 m = n
 (3) 传递性：如果 m ⊆ n 和 n ⊆ p，则 m ⊆ p
 (4) 完全性：由正则公理，每个非空集合有最小元素
+
 ```
 
 #### 1.2 数学归纳法
@@ -99,6 +103,7 @@ $$m < n \leftrightarrow m \in n$$
 (5) 因此 A 是归纳集合
 (6) 由于 N 是最小的归纳集合，N ⊆ A
 (7) 所以对于所有 n ∈ N，P(n) 成立
+
 ```
 
 ### 2. 整除理论
@@ -121,9 +126,11 @@ $$\exists c \in \mathbb{Z}(b = a \cdot c)$$
 ```text
 证明：
 (1) 自反性：a = a · 1，因此 a | a
+
 (2) 传递性：如果 b = a · k 和 c = b · l，则 c = a · (k · l)
 (3) 线性组合：如果 b = a · k 和 c = a · l，则 b + c = a · (k + l)
 (4) 乘法：如果 b = a · k，则 b · c = a · (k · c)
+
 ```
 
 #### 2.2 最大公约数
@@ -145,12 +152,15 @@ $d$ 是 $a$ 和 $b$ 的最大公约数，记作 $\gcd(a, b)$，如果：
 (2) S 非空（取 x = a, y = 0）
 (3) 由良序性，S 有最小元素 d
 (4) 证明 d | a：使用除法算法，a = qd + r，0 ≤ r < d
+
    - 如果 r > 0，则 r = a - qd ∈ S，与 d 的最小性矛盾
    - 因此 r = 0，即 d | a
 (5) 同理证明 d | b
 (6) 如果 c | a 和 c | b，则 c | d（因为 d = ax + by）
 (7) 唯一性：如果 d₁ 和 d₂ 都是最大公约数，则 d₁ | d₂ 和 d₂ | d₁
+
    - 因此 d₁ = ±d₂，由于都是正数，d₁ = d₂
+
 ```
 
 #### 2.3 欧几里得算法
@@ -165,6 +175,7 @@ $$\gcd(a, b) = ax + by$$
 证明：
 (1) 使用欧几里得算法计算 gcd(a,b)：
    - a = q₁b + r₁, 0 ≤ r₁ < |b|
+
    - b = q₂r₁ + r₂, 0 ≤ r₂ < r₁
    - r₁ = q₃r₂ + r₃, 0 ≤ r₃ < r₂
    - ...
@@ -175,6 +186,7 @@ $$\gcd(a, b) = ax + by$$
    - r_n = r_{n-2} - q_n r_{n-1}
    - 继续替换，最终得到 r_n = ax + by
 (3) 因此 gcd(a,b) = ax + by
+
 ```
 
 ### 3. 素数理论
@@ -200,11 +212,13 @@ $$\forall a, b \in \mathbb{Z}^+(p = a \cdot b \rightarrow a = 1 \lor b = 1)$$
    - 由欧几里得算法，存在 x, y 使得 px + ay = 1
    - 因此 pbx + aby = b
    - 由于 p | ab，p | b
+
 (3) 假设素数只有有限个：p₁, p₂, ..., p_n
    - 考虑 N = p₁p₂...p_n + 1
    - N 不被任何 p_i 整除
    - 因此 N 是素数或包含新的素因子
    - 矛盾，因此素数有无穷多个
+
 ```
 
 #### 3.2 算术基本定理
@@ -230,10 +244,12 @@ $$\forall a, b \in \mathbb{Z}^+(p = a \cdot b \rightarrow a = 1 \lor b = 1)$$
    - 假设 n = p₁p₂...p_k = q₁q₂...q_l
    - 由于 p₁ | n，p₁ | q₁q₂...q_l
    - 因此 p₁ | q_i 对于某个 i
+
    - 由于 q_i 是素数，p₁ = q_i
    - 重新排列后，p₂...p_k = q₁...q_{i-1}q_{i+1}...q_l
    - 由归纳假设，剩余部分相等
    - 因此分解唯一
+
 ```
 
 ### 4. 同余理论
@@ -257,6 +273,7 @@ $$m \mid (a - b)$$
 (1) 自反性：m | (a - a) = 0
 (2) 对称性：如果 m | (a - b)，则 m | (b - a)
 (3) 传递性：如果 m | (a - b) 和 m | (b - c)，则 m | (a - c)
+
 ```
 
 #### 4.2 同余运算
@@ -275,6 +292,7 @@ $$m \mid (a - b)$$
 (1) 加法：如果 a = b + km 和 c = d + lm，则 a + c = b + d + (k+l)m
 (2) 减法：如果 a = b + km 和 c = d + lm，则 a - c = b - d + (k-l)m
 (3) 乘法：如果 a = b + km 和 c = d + lm，则 ac = bd + (bl + dk + klm)m
+
 ```
 
 #### 4.3 中国剩余定理
@@ -302,6 +320,7 @@ $$x \equiv a_k \pmod{m_k}$$
 
 (3) 唯一性：如果 x₁ 和 x₂ 都是解，则 x₁ ≡ x₂ (mod m_i) 对于所有 i
    - 由于 m_i 两两互素，x₁ ≡ x₂ (mod M)
+
 ```
 
 ### 5. 二次剩余理论
@@ -327,6 +346,7 @@ $$a^{(p-1)/2} \equiv 1 \pmod{p}$$
    - 考虑方程 x² ≡ a (mod p)
    - 如果 a ≡ 0 (mod p)，则 x = 0 是解
    - 否则，使用原根理论构造解
+
 ```
 
 #### 5.2 勒让德符号
@@ -353,6 +373,7 @@ $$\left(\frac{p}{q}\right) \left(\frac{q}{p}\right) = (-1)^{(p-1)(q-1)/4}$$
 (2) 计算勒让德符号
 (3) 使用数论函数
 (4) 得到二次互反律
+
 ```
 
 ### 6. 数论函数
@@ -376,6 +397,7 @@ $$\phi(n) = |\{k \in \mathbb{Z} : 1 \leq k \leq n, \gcd(k, n) = 1\}|$$
 (1) 对于素数 p，1 到 p-1 都与 p 互素
 (2) 使用中国剩余定理
 (3) 对于 p^k，计算与 p^k 互素的数的个数
+
 ```
 
 #### 6.2 莫比乌斯函数
@@ -401,6 +423,7 @@ $$g(n) = \sum_{d \mid n} f(d) \leftrightarrow f(n) = \sum_{d \mid n} \mu(d) g\le
 (1) 使用卷积运算
 (2) 证明 μ 是单位函数的逆
 (3) 使用代数运算
+
 ```
 
 ### 7. 数论的应用
@@ -572,6 +595,7 @@ begin
   -- Prove Bézout's identity
   sorry
 end
+
 ```
 
 ### 素数理论形式化
@@ -603,6 +627,7 @@ begin
   -- Prove infinitude of primes
   sorry
 end
+
 ```
 
 ### 同余理论形式化
@@ -653,6 +678,7 @@ begin
   -- Prove Chinese remainder theorem
   sorry
 end
+
 ```
 
 ### 二次剩余理论形式化
@@ -682,6 +708,7 @@ begin
   -- Prove quadratic reciprocity law
   sorry
 end
+
 ```
 
 ### 数论函数形式化
@@ -728,6 +755,7 @@ begin
   -- Prove Möbius inversion
   sorry
 end
+
 ```
 
 ### 应用案例：数论在密码学中的应用
@@ -761,4 +789,5 @@ begin
   -- Prove correctness of RSA algorithm
   sorry
 end
+
 ```

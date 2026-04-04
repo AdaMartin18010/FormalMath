@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Galois理论 - 思维导图
 
 ## 概述
@@ -25,7 +30,9 @@ mindmap
         自同构群作用传递
       等价条件
         分裂域
+
         |Gal(K/F)| = [K:F]
+
     Galois群
       定义
         Aut(K/F)
@@ -47,6 +54,7 @@ mindmap
       判别式
         根的对称函数
         子群判定
+
 ```
 
 ---
@@ -68,6 +76,7 @@ graph TD
     subgraph 关键性质
         Degree[[E:F] = [G:H]]
         Index[[K:E] = |H|]
+
         Normal[H ◁ G ⇔ E/F Galois]
         Quotient[Gal(E/F) ≅ G/H]
     end
@@ -97,6 +106,7 @@ graph TD
     style G fill:#fff3e0
     style Fields fill:#c8e6c9
     style Subgroups fill:#c8e6c9
+
 ```
 
 ---
@@ -115,6 +125,7 @@ graph TD
         C3[K是某多项式的分裂域]
         C4[K^G = F, G=Aut(K/F)]
         C5[[K:F] = |Aut(K/F)|]
+
         C6[F[x]中不可约多项式<br/>有根⇒分裂]
     end
     
@@ -145,6 +156,7 @@ graph TD
     style C1 fill:#c8e6c9
     style C3 fill:#fff3e0
     style C5 fill:#e8f5e9
+
 ```
 
 ---
@@ -194,6 +206,7 @@ graph TD
     style Criterion fill:#c8e6c9
     style Solvable fill:#e8f5e9
     style Quintic fill:#ffcdd2
+
 ```
 
 ---
@@ -241,6 +254,7 @@ graph TD
     style Finite fill:#fff3e0
     style Kummer fill:#e8f5e9
     style S5 fill:#ffcdd2
+
 ```
 
 ---
@@ -274,6 +288,7 @@ mindmap
       可构造条件
         Galois群是2-群
         存在子群链
+
 ```
 
 ---
@@ -292,6 +307,7 @@ graph TD
     subgraph Artin引理
         Lemma[|G|有限, K^G = F]
         Conclusion[[K:F] ≤ |G|]
+
         Deduction[K/F Galois, Gal(K/F)=G]
     end
     
@@ -309,6 +325,7 @@ graph TD
     style Lemma fill:#c8e6c9
     style Conclusion fill:#fff3e0
     style Solvable1 fill:#e8f5e9
+
 ```
 
 ---
@@ -357,6 +374,7 @@ graph TD
     style Square fill:#c8e6c9
     style Reduce fill:#fff3e0
     style Cubic fill:#e8f5e9
+
 ```
 
 ---
@@ -406,6 +424,7 @@ flowchart LR
     style G fill:#e8f5e9
     style H fill:#fce4ec
     style I fill:#fce4ec
+
 ```
 
 ---

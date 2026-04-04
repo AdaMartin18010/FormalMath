@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # metadata_cli
 
 **源文件**: `tools\metadata-system\metadata_cli.py`
@@ -8,6 +16,7 @@
 
 ```python
 class MetadataManager
+
 ```
 
 元数据管理器
@@ -18,6 +27,7 @@ class MetadataManager
 
 ```python
 def main()
+
 ```
 
 主函数

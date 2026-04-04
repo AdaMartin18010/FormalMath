@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 古代数学思维导图
 
 ## 概述
@@ -62,6 +70,7 @@ mindmap
         丢番图
           算术
           代数方程
+
 ```
 
 ## 详细内容

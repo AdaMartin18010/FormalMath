@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 风险中性定价理论推导链
 
 ## 概述
@@ -24,6 +29,7 @@ graph TD
     subgraph 鞅测度
         B3 --> C1[等价鞅测度Q<br/>Q ~ P]
         C1 --> C2[折现价格是鞅<br/>E_Q[S̃ₜ₊₁|Fₜ] = S̃ₜ]
+
         C2 --> C3[测度存在性<br/>Dalang-Morton-Willinger]
     end
     
@@ -35,6 +41,7 @@ graph TD
     
     subgraph 完备市场
         D2 --> E1[唯一鞅测度<br/>|M| = 1]
+
         E1 --> E2[表示定理<br/>任意X可被复制]
         E2 --> E3[完备市场<br/>Second FTAP]
     end
@@ -48,6 +55,7 @@ graph TD
     style C3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style D3 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style E3 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+
 ```
 
 ---
@@ -141,6 +149,7 @@ $$V_t = \sup_{\tau \in \mathcal{T}_{t,T}} E_Q[e^{-r(\tau-t)} f(S_\tau) | \mathca
 ## 离散模型：二叉树
 
 ```
+
         S·u
        /    Cu = max(Su-K, 0)
       S
@@ -150,6 +159,7 @@ $$V_t = \sup_{\tau \in \mathcal{T}_{t,T}} E_Q[e^{-r(\tau-t)} f(S_\tau) | \mathca
 风险中性概率：q = (e^(rΔt) - d)/(u - d)
 
 期权价格：C = e^(-rΔt)[q·Cu + (1-q)·Cd]
+
 ```
 
 ---
@@ -157,6 +167,7 @@ $$V_t = \sup_{\tau \in \mathcal{T}_{t,T}} E_Q[e^{-r(\tau-t)} f(S_\tau) | \mathca
 ## 依赖关系图
 
 ```
+
 概率论基础
     ↓
 随机过程理论 ← 鞅论
@@ -172,6 +183,7 @@ $$V_t = \sup_{\tau \in \mathcal{T}_{t,T}} E_Q[e^{-r(\tau-t)} f(S_\tau) | \mathca
 完备市场 ← 第二基本定理
     ↓
 美式期权定价
+
 ```
 
 ---

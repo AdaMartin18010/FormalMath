@@ -57,6 +57,7 @@ theorem strong_nullstellensatz {k : Type*} [Field k] [IsAlgClosed k]
     {n : ℕ} (I : Ideal (MvPolynomial (Fin n) k)) :
     vanishingIdeal (algebraicSet I) = I.radical := by
   exact MvPolynomial.vanishingIdeal_algebraicSet_eq_radical I
+
 ```
 
 ---
@@ -72,6 +73,7 @@ theorem strong_nullstellensatz {k : Type*} [Field k] [IsAlgClosed k]
 
     代数 ←─→ 几何
     理想 ←─→ 代数簇
+
 ```
 
 ### 2.2 零点定理的几何意义
@@ -81,6 +83,7 @@ theorem strong_nullstellensatz {k : Type*} [Field k] [IsAlgClosed k]
 ├─ 多项式方程总有解（弱形式）
 ├─ 在V上为0的多项式 ⟺ 某幂在I中（强形式）
 └─ √I刻画了V(I)的"代数结构"
+
 ```
 
 ---
@@ -129,6 +132,7 @@ def nullstellensatz_example():
     # f ∉ I，但 f² - (x²-1) = ...
 
 nullstellensatz_example()
+
 ```
 
 ### 4.2 根理想计算
@@ -147,6 +151,7 @@ def compute_radical(ideal_gens, vars):
     # 这里用简化方法
     G = groebner(ideal_gens, vars, order='lex')
     return list(G)
+
 ```
 
 ---
@@ -161,6 +166,7 @@ def compute_radical(ideal_gens, vars):
 ├─ 函子 I: 代数簇 → 理想（协变）
 ├─ I ∘ V = 取根理想（强形式）
 └─ 限制到根理想：等价
+
 ```
 
 ### 5.2 概形论推广

@@ -58,6 +58,7 @@ theorem stokes_theorem {M : Type*} [SmoothManifold M] [CompactSpace M]
 theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) :
     ∫ x in a..b, deriv f x = f b - f a := by
   exact integral_deriv_eq_sub hf.continuous a b
+
 ```
 
 ### 1.4 证明要点
@@ -72,6 +73,7 @@ theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) 
 ├─ 在坐标卡内证明       ├─ 内部边界相消
 ├─ 用单位分解粘合       ├─ 只剩真正的边界
 └─ 归结到ℝⁿ中的积分    └─ 定向决定符号
+
 ```
 
 ---
@@ -99,6 +101,7 @@ theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) 
 
     ∫_M dω = ∫_∂M ω
     内部累积 = 边界流出
+
 ```
 
 ### 2.2 一维情形（微积分基本定理）
@@ -115,6 +118,7 @@ theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) 
 
     ∫ₐᵇ f'(x)dx = f(b) - f(a)
     "累积变化率 = 总变化"
+
 ```
 
 ### 2.3 二维情形（Green定理）
@@ -130,6 +134,7 @@ theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) 
     └─────────────────┘
 
     环流 = 内部旋度的积分
+
 ```
 
 ### 2.4 三维散度定理
@@ -151,6 +156,7 @@ theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) 
     ∯_∂V F·dS = ∭_V (∇·F) dV
 
     通过边界的通量 = 内部源的总量
+
 ```
 
 ---
@@ -171,6 +177,7 @@ theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) 
 ├─ 边界是池壁（∂M）
 ├─ 水从边界流出的总量 = 内部净产水量
 └─ ∫_∂M ω = ∫_M dω
+
 ```
 
 **银行账户**：
@@ -181,6 +188,7 @@ theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) 
 ├─ 边界效果：期末余额 - 期初余额 = f(b)-f(a)
 ├─ 内部累积：∫存款率 - ∫取款率
 └─ Stokes：两者相等！
+
 ```
 
 **人口流动**：
@@ -193,6 +201,7 @@ theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) 
 
 净流出人口 = 内部人口减少量
 ∮边界 流量 = ∬内部 变化率
+
 ```
 
 ### 3.3 为什么是真的？
@@ -210,6 +219,7 @@ theorem ftc_as_stokes (f : ℝ → ℝ) (a b : ℝ) (hf : Differentiable ℝ f) 
     └─ 这就是∂M！
               │
     小块求和 → 积分
+
 ```
 
 ---
@@ -263,6 +273,7 @@ def verify_green_theorem():
     print(f"理论值: 2π ≈ {2*np.pi:.6f}")
 
 verify_green_theorem()
+
 ```
 
 ### 4.2 散度定理验证
@@ -295,6 +306,7 @@ def verify_divergence_theorem():
     print(f"理论值: 4π ≈ {4*np.pi:.6f}")
 
 verify_divergence_theorem()
+
 ```
 
 ### 4.3 微分形式计算
@@ -326,6 +338,7 @@ def differential_forms_example():
     print(f"∫_D dω = {d_omega} × π = {d_omega * pi}")
 
 differential_forms_example()
+
 ```
 
 ---
@@ -342,6 +355,7 @@ differential_forms_example()
     d² = 0（闭链复形）
               │
     Stokes定理：∫与d的对偶关系
+
 ```
 
 ### 5.2 上同调与积分配对
@@ -355,6 +369,7 @@ Stokes定理的范畴化：
 
 Stokes：⟨dω, σ⟩ = ⟨ω, ∂σ⟩
 这是链复形和余链复形的对偶关系
+
 ```
 
 ### 5.3 de Rham定理
@@ -367,6 +382,7 @@ Stokes：⟨dω, σ⟩ = ⟨ω, ∂σ⟩
     de Rham上同调 ≅ 奇异上同调
               │
     Stokes定理是这个同构的核心
+
 ```
 
 ### 5.4 Stokes与同调
@@ -383,6 +399,7 @@ de Rham上同调 = 闭形式/恰当形式
 Stokes：∫_M dη = ∫_∂M η
 如果 ∂M = ∅，则 ∫_M dη = 0
 恰当形式在闭流形上积分为0
+
 ```
 
 ---
@@ -402,6 +419,7 @@ Stokes：∫_M dη = ∫_∂M η
     └───────────┼───────────┘
                 │
         ∫_M dω = ∫_∂M ω
+
 ```
 
 ### 6.2 物理意义

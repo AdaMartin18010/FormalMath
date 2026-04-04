@@ -47,6 +47,7 @@ theorem cantor (A : Type*) : ¬∃ f : A → Set A, Function.Surjective f := by
   intro ⟨f, hf⟩
   -- 构造对角线集合
   let D := {a : A | a ∉ f a}
+
   -- D应该有原像
   obtain ⟨d, hd⟩ := hf D
   -- 矛盾
@@ -55,6 +56,7 @@ theorem cantor (A : Type*) : ¬∃ f : A → Set A, Function.Surjective f := by
     exact h (hd ▸ h)
   · -- 如果 d ∉ D，则 d ∈ D
     exact h (hd ▸ h)
+
 ```
 
 ### 1.4 证明要点
@@ -76,6 +78,7 @@ d ∈ D ⟺ d ∉ f(d)    d ∉ D ⟺ d ∈ f(d)
       = d ∉ D              = d ∈ D
     │                   │
    矛盾！              矛盾！
+
 ```
 
 ---
@@ -101,6 +104,7 @@ a₄  │ 0  │ 1  │ 0  │ 0  │...
 对角线：1, 0, 1, 0, ...
 翻转后：0, 1, 0, 1, ... = D
 D 不在任何行中！
+
 ```
 
 ### 2.2 实数不可数
@@ -115,6 +119,7 @@ D 不在任何行中！
          ↓ ↓ ↓ ↓
 对角线 = 0.1 1 0 1 ...
 翻转   = 0.0 0 1 0 ... ← 新数！
+
 ```
 
 ---
@@ -136,6 +141,7 @@ D 不在任何行中！
 ├─ 如果 d 服务 D，则 d ∈ D ⟺ d ∉ f(d) = D
 ├─ 矛盾！
 └─ 结论：没有人能服务 D
+
 ```
 
 ### 3.3 图书馆类比
@@ -148,6 +154,7 @@ D 不在任何行中！
 ├─ D = {b : b ∉ f(b)}
 ├─ 没有任何书的引用等于 D
 └─ 编目系统无法覆盖所有书目集合
+
 ```
 
 ---
@@ -168,6 +175,7 @@ def cantor_diagonal_demo():
 
     # 假设的"满射" f: A → P(A)
     # 实际上 |P(A)| = 8 > 3 = |A|
+
     f = {
         0: {0, 1},      # f(0) = {0, 1}
         1: {1, 2},      # f(1) = {1, 2}
@@ -194,6 +202,7 @@ def cantor_diagonal_demo():
     print("\n结论: D 不在 f 的像中，f 不是满射")
 
 cantor_diagonal_demo()
+
 ```
 
 ### 4.2 实数不可数
@@ -229,6 +238,7 @@ def real_numbers_uncountable():
     print("（与每个r_n至少在第n位不同）")
 
 real_numbers_uncountable()
+
 ```
 
 ### 4.3 停机问题的Cantor证明
@@ -257,6 +267,7 @@ def halting_problem_cantor():
     print("结论: HALT 不存在")
 
 halting_problem_cantor()
+
 ```
 
 ---
@@ -276,6 +287,7 @@ halting_problem_cantor()
               │
     Cantor: A = 某集合, B = {0,1}, t = 否定
     f = 特征函数对应
+
 ```
 
 ### 5.2 Topos中的推广
@@ -286,6 +298,7 @@ halting_problem_cantor()
 ├─ 幂对象 Ω^X 存在
 ├─ 不存在 X → Ω^X 的满态射
 └─ 这是内在的大小概念
+
 ```
 
 ### 5.3 与其他定理的统一
@@ -298,11 +311,14 @@ halting_problem_cantor()
 [Cantor]   [Russell]  [Gödel]
 基数       集合论      逻辑
     │         │         │
+
 |A|<|P(A)|  罗素悖论   不完备
+
     │         │         │
     └─────────┴─────────┘
               │
         统一方法：自指+否定
+
 ```
 
 ---

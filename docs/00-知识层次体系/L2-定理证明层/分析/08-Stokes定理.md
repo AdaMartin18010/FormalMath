@@ -41,6 +41,7 @@ flowchart TD
     D --> E[结论: 一般形式]
     
     style D fill:#e8f5e9,stroke:#4caf50
+
 ```
 
 #### 步骤1：单位分解
@@ -129,6 +130,7 @@ flowchart TB
     L2S --> L3AT[L3: 代数拓扑]
     
     style L2S fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+
 ```
 
 ---

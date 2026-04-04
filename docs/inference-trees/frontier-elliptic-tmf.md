@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 椭圆上同调：拓扑模形式推理树
 
 ## 概述
@@ -66,6 +74,7 @@ graph TD
     style J fill:#f77,stroke:#333
     style K fill:#bfb,stroke:#333
     style L fill:#f66,stroke:#333
+
 ```
 
 ## 模形式回顾
@@ -73,8 +82,11 @@ graph TD
 ### 定义
 
 权k的模形式是上半平面上的全纯函数：
+
 ```
+
 f: ℍ → ℂ
+
 ```
 
 满足：
@@ -84,20 +96,29 @@ f: ℍ → ℂ
 ### 经典例子
 
 **Eisenstein级数**:
+
 ```
+
 E_{2k}(τ) = 1 - (4k/B_{2k}) Σ σ_{2k-1}(n) q^n
+
 ```
 
 其中q = e^{2πiτ}。
 
 **判别式**:
+
 ```
+
 Δ(τ) = q Π(1-q^n)^24 = (E_4³ - E_6²)/1728
+
 ```
 
 **j-不变量**:
+
 ```
+
 j(τ) = E_4³/Δ = 1/q + 744 + 196884q + ...
+
 ```
 
 ## 椭圆曲线模空间
@@ -107,8 +128,11 @@ j(τ) = E_4³/Δ = 1/q + 744 + 196884q + ...
 椭圆曲线的模叠M_ell是Deligne-Mumford叠。
 
 **Weierstrass universal family**:
+
 ```
+
 y² + a₁xy + a₃y = x³ + a₂x² + a₄x + a₆
+
 ```
 
 系数(a₁, a₂, a₃, a₄, a₆)给出M_ell的坐标。
@@ -136,8 +160,10 @@ y² + a₁xy + a₃y = x³ + a₂x² + a₄x + a₆
 ### 定义
 
 ```
+
 Tmf := Γ(M̄_ell, O^top)  (全局截面)
 tmf := τ_{≥0} Tmf       (连通覆盖)
+
 ```
 
 ### 同伦群
@@ -150,8 +176,11 @@ tmf := τ_{≥0} Tmf       (连通覆盖)
 ### 与球谱的关系
 
 单位映射S → tmf给出：
+
 ```
+
 π_*S → tmf_*
+
 ```
 
 在稳定同伦群的2,3-局部计算中非常有用。
@@ -161,27 +190,39 @@ tmf := τ_{≥0} Tmf       (连通覆盖)
 ### Ochanine亏格
 
 弦流形的椭圆亏格：
+
 ```
+
 φ_W(M) = ⟨Û(M), [M]⟩
+
 ```
 
 ### Witten亏格
 
 假设M有弦结构：
+
 ```
+
 W(M) = ind(D_{LM}) ∈ MF_*
+
 ```
 
 其中D_{LM}是loop space上的Dirac算子。
 
 **定理** (Witten, Hopkins, Mahowald, ...):
+
 ```
+
 弦流形的Witten亏格是模形式
+
 ```
 
 这对应于tmf的定向：
+
 ```
+
 MString → tmf
+
 ```
 
 ## 计算与应用

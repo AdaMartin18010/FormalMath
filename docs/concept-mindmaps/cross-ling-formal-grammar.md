@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×语言学：形式文法的代数结构
 
 ## 概述
@@ -92,6 +97,7 @@ mindmap
         验证博弈
         对话博弈
         语义证明
+
 ```
 
 ---
@@ -125,6 +131,7 @@ graph TD
     style CFL fill:#e3f2fd
     style PDA fill:#e3f2fd
     style TM fill:#ffcdd2
+
 ```
 
 ---
@@ -183,6 +190,7 @@ mindmap
         逻辑语义
         类型语法
         话语理论
+
 ```
 
 ---

@@ -47,6 +47,7 @@ theorem stone_weierstrass {X : Type*} [TopologicalSpace X] [CompactSpace X]
     A.topologicalClosure = ⊤ := by
   exact ContinuousMap.subalgebra_topologicalClosure_eq_top_of_separatesPoints
     hA_sep hA_const
+
 ```
 
 ---
@@ -66,6 +67,7 @@ theorem stone_weierstrass {X : Type*} [TopologicalSpace X] [CompactSpace X]
     └──────────────→ x
 
 多项式pₙ越来越接近f
+
 ```
 
 ### 2.2 分离点条件
@@ -78,6 +80,7 @@ theorem stone_weierstrass {X : Type*} [TopologicalSpace X] [CompactSpace X]
     存在 f ∈ A 使得 f(x₁) ≠ f(x₂)
          │
     A能"区分"K中的不同点
+
 ```
 
 ---
@@ -122,6 +125,7 @@ def bernstein_approx(f, n, x):
     return result
 
 # 验证：逼近 |x - 0.5|
+
 f = lambda x: np.abs(x - 0.5)
 x = np.linspace(0, 1, 100)
 
@@ -129,9 +133,10 @@ for n in [5, 10, 50, 100]:
     approx = np.array([bernstein_approx(f, n, xi) for xi in x])
     error = np.max(np.abs(f(x) - approx))
     print(f"n={n}: max error = {error:.6f}")
+
 ```
 
-### 4.2 三角多项式逼近
+## 4.2 三角多项式逼近
 
 ```python
 def fourier_approx(f, n, x):
@@ -147,6 +152,7 @@ def fourier_approx(f, n, x):
         result += ak * np.cos(k * x) + bk * np.sin(k * x)
 
     return result
+
 ```
 
 ---
@@ -160,6 +166,7 @@ Stone-Weierstrass = C(K)的代数结构决定K
 ├─ K紧致Hausdorff ⟺ C(K)是交换C*-代数
 ├─ Gelfand对偶：K ↔ C(K)
 └─ 分离点子代数→全体的稠密性
+
 ```
 
 ### 5.2 推广

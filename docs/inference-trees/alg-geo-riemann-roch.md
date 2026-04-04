@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Riemann-Roch定理概述推理树
 
 ## 概述
@@ -14,10 +22,12 @@ graph TD
     
     B --> C[定理陈述]<-->C1[lD - lK-D = degD + 1 - g]
     C --> C2[lD = dim LD]<-->C3[LD = f meromorphic | divf + D ≥ 0]
+
     C --> C4[degD = Σ n_i]<-->C5[除子次数]
     C --> C6[K: 典范除子]<-->C7[degK = 2g-2]
     
     D[推论] --> D1[完全线性系]<-->D2[|D| = PH^0O_D]<-->D3[射影空间]
+
     D --> D4[亏格公式]<-->D5[平面曲线: g = d-1d-2/2]
     D --> D6[嵌入判定]<-->D7[degD > 2g ⇒ D非常丰富]<-->D8[射影嵌入]
     
@@ -71,14 +81,18 @@ graph TD
     style M fill:#bbf,stroke:#333
     style N fill:#f96,stroke:#333
     style O fill:#f96,stroke:#333
+
 ```
 
 ## 经典Riemann-Roch
 
 ### 陈述
 对于亏格 g 的紧致Riemann面（光滑射影曲线）和除子 D：
+
 ```
+
 l(D) - l(K - D) = deg(D) + 1 - g
+
 ```
 
 其中：
@@ -95,8 +109,11 @@ l(D) - l(K - D) = deg(D) + 1 - g
 ## Hirzebruch-Riemann-Roch
 
 对于 n 维光滑射影簇 X 上的向量丛 E：
+
 ```
+
 χ(X, E) = ∫_X ch(E) td(X)
+
 ```
 
 其中：
@@ -107,8 +124,11 @@ l(D) - l(K - D) = deg(D) + 1 - g
 ## Grothendieck-Riemann-Roch
 
 相对形式：对于真态射 f: X → Y：
+
 ```
+
 ch(f_! E) td(Y) = f_*(ch(E) td(X))
+
 ```
 
 这是最一般的Riemann-Roch定理，HRR是其特例（Y为点）。

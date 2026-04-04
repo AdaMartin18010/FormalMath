@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 解析数论方法 - 思维导图
 
 ## 概述
@@ -79,6 +84,7 @@ mindmap
       渐近公式
         求和到积分
         误差估计
+
 ```
 
 ---
@@ -110,6 +116,7 @@ graph TD
     style A fill:#e3f2fd
     style C fill:#fff3e0
     style G fill:#ffcdd2
+
 ```
 
 ---
@@ -153,6 +160,7 @@ graph TD
     style A fill:#e3f2fd
     style G fill:#e8f5e9
     style H fill:#ffcdd2
+
 ```
 
 ---
@@ -196,6 +204,7 @@ mindmap
       筛选序列
         殆素数
         素数幂
+
 ```
 
 ---
@@ -215,6 +224,7 @@ graph TD
         E --> G[Weyl不等式<br/>差分降次]
         E --> H[van der Corput<br/>A-process B-process]
         F --> I[波利亚-维诺格拉多夫<br/>|Σ|≤√q log q]
+
     end
     
     subgraph 应用
@@ -226,6 +236,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---
@@ -257,6 +268,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#fff3e0
     style F fill:#ffcdd2
+
 ```
 
 ---
@@ -305,6 +317,7 @@ flowchart LR
     style D fill:#fff3e0
     style G fill:#e8f5e9
     style K fill:#ffcdd2
+
 ```
 
 ---

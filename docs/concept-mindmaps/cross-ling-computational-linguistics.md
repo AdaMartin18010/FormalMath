@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×语言学：计算语言学的统计模型
 
 ## 概述
@@ -101,6 +106,7 @@ mindmap
         拼接合成
         参数合成
         神经网络
+
 ```
 
 ---
@@ -133,6 +139,7 @@ graph TD
     style TR fill:#e3f2fd
     style B fill:#e8f5e9
     style G fill:#fff3e0
+
 ```
 
 ---
@@ -195,6 +202,7 @@ mindmap
       编码器-解码器(T5)
         翻译/摘要
         前缀LM
+
 ```
 
 ---

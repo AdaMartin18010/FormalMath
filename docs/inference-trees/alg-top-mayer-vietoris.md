@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Mayer-Vietoris序列推理树
 
 ## 概述
@@ -59,6 +67,7 @@ graph TD
     style I fill:#bfb,stroke:#333
     style J fill:#bbf,stroke:#333
     style K fill:#bbf,stroke:#333
+
 ```
 
 ## 定理详解
@@ -68,7 +77,9 @@ graph TD
 设 X = U ∪ V，其中 U, V 是开集（或子复形），则存在长正合列：
 
 ```
+
 ... -> Hn(U∩V) -> Hn(U)⊕Hn(V) -> Hn(X) -> Hn-1(U∩V) -> ...
+
 ```
 
 **映射说明**：
@@ -79,7 +90,9 @@ graph TD
 ### 上同调版本
 
 ```
+
 ... -> H^n(X) -> H^n(U)⊕H^n(V) -> H^n(U∩V) -> H^{n+1}(X) -> ...
+
 ```
 
 ## 应用实例

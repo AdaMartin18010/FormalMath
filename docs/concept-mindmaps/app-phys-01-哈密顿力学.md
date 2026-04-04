@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 哈密顿力学 - 思维导图
 
 ## 概述
@@ -54,6 +59,7 @@ mindmap
       KAM理论
         扰动可积
         不变环面
+
 ```
 
 ---
@@ -80,6 +86,7 @@ graph TD
     style C fill:#e3f2fd
     style E fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---
@@ -106,6 +113,7 @@ mindmap
       {f,H} = 0 ⇔ f守恒
       对合
         {f,g} = 0
+
 ```
 
 ---
@@ -143,6 +151,7 @@ graph TD
     style B fill:#e3f2fd
     style F fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -178,6 +187,7 @@ mindmap
       遍历性
         混合
         统计行为
+
 ```
 
 ---
@@ -210,6 +220,7 @@ flowchart LR
     
     style E fill:#e3f2fd
     style H fill:#fff3e0
+
 ```
 
 ---

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×经济学：金融数学的随机分析
 
 ## 概述
@@ -109,6 +114,7 @@ mindmap
         前景理论
         有限理性
         市场异象
+
 ```
 
 ---
@@ -131,6 +137,7 @@ graph TD
     style M fill:#e3f2fd
     style C fill:#e3f2fd
     style BS fill:#e8f5e9
+
 ```
 
 ---
@@ -179,6 +186,7 @@ mindmap
         加权平均
         一般化ES
         风险厌恶函数
+
 ```
 
 ---

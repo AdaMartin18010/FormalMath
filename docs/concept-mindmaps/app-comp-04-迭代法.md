@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 迭代法 - 思维导图
 
 ## 概述
@@ -70,6 +75,7 @@ mindmap
         ILU
         多重网格
         区域分解
+
 ```
 
 ---
@@ -97,6 +103,7 @@ graph TD
     style B fill:#e3f2fd
     style C fill:#fff3e0
     style L fill:#e8f5e9
+
 ```
 
 ---
@@ -150,6 +157,7 @@ mindmap
       Jacobian计算
         解析导数
         有限差分
+
 ```
 
 ---
@@ -177,6 +185,7 @@ graph TD
     style C fill:#e3f2fd
     style F fill:#e8f5e9
     style I fill:#fff3e0
+
 ```
 
 ---
@@ -213,6 +222,7 @@ mindmap
         κ(M⁻¹A) << κ(A)
       谱分布
         聚类改善收敛
+
 ```
 
 ---
@@ -244,6 +254,7 @@ flowchart LR
     
     style F fill:#e3f2fd
     style H fill:#fff3e0
+
 ```
 
 ---

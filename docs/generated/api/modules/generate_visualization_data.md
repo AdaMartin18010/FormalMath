@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # generate_visualization_data
 
 **源文件**: `tools\generate_visualization_data.py`
@@ -8,6 +16,7 @@
 
 ```python
 def parse_concepts(yaml_file)
+
 ```
 
 解析YAML文件提取概念数据
@@ -20,6 +29,7 @@ def parse_concepts(yaml_file)
 
 ```python
 def generate_visualization_data(concepts, metadata)
+
 ```
 
 生成可视化数据
@@ -33,6 +43,7 @@ def generate_visualization_data(concepts, metadata)
 
 ```python
 def get_category_group(category)
+
 ```
 
 获取类别的颜色组
@@ -45,6 +56,7 @@ def get_category_group(category)
 
 ```python
 def generate_mermaid_diagram(concepts, max_nodes = 50)
+
 ```
 
 生成Mermaid图表代码（简化版）
@@ -58,6 +70,7 @@ def generate_mermaid_diagram(concepts, max_nodes = 50)
 
 ```python
 def generate_statistics_report(concepts, metadata)
+
 ```
 
 生成统计报告
@@ -71,5 +84,6 @@ def generate_statistics_report(concepts, metadata)
 
 ```python
 def main()
+
 ```
 

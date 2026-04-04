@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 分布理论 - 思维导图
 
 ## 概述
@@ -65,6 +70,7 @@ mindmap
     分布微分
       弱导数定义
         ⟨∂^αT, φ⟩ = (-1)^{|α|}⟨T, ∂^αφ⟩
+
         任意阶可微
         分部积分形式
       微分性质
@@ -74,6 +80,7 @@ mindmap
       例子
         Heaviside函数的导数 = δ
         log|x|的导数 = p.v.(1/x)
+
         分段光滑函数
     收敛与极限
       弱收敛
@@ -135,6 +142,7 @@ mindmap
         椭圆算子
         亚椭圆性
         奇性传播
+
 ```
 
 ---
@@ -169,6 +177,7 @@ graph TD
     style F fill:#fce4ec
     style G fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -178,6 +187,7 @@ graph TD
 ```mermaid
 graph TD
     A[经典函数f] -->|不连续| B[经典导数不存在]
+
     B --> C[分布导数存在]
     
     C --> D[Heaviside函数H]
@@ -197,6 +207,7 @@ graph TD
     style C fill:#e8f5e9
     style D fill:#e3f2fd
     style K fill:#fff3e0
+
 ```
 
 ---
@@ -214,6 +225,7 @@ graph TD
         A3[S(ℝⁿ)] --> B3[S(ℝⁿ)同构]
         A4[S'(ℝⁿ)] --> B4[S'(ℝⁿ)同构]
         B3 -.->|延拓| B4
+
     end
     
     subgraph 对偶定义
@@ -225,6 +237,7 @@ graph TD
     style A3 fill:#e3f2fd
     style A4 fill:#e8f5e9
     style B4 fill:#fff3e0
+
 ```
 
 ---
@@ -249,6 +262,7 @@ graph TD
     I --> L[奇性传播]
     
     M[例子] --> N[ΔE = δ: E = c_n|x|^{2-n}]
+
     M --> O[∂_tE - ΔE = δ: E = 热核]
     M --> P[∂_t²E - ΔE = δ: E = 波动核]
     
@@ -256,6 +270,7 @@ graph TD
     style C fill:#e8f5e9
     style E fill:#fff3e0
     style J fill:#fce4ec
+
 ```
 
 ---
@@ -291,6 +306,7 @@ mindmap
       结果
         W^{k,p} ↪ C^m
         磨光与嵌入联系
+
 ```
 
 ---
@@ -325,6 +341,7 @@ graph TD
     style A fill:#e3f2fd
     style D fill:#e8f5e9
     style F fill:#fff3e0
+
 ```
 
 ---

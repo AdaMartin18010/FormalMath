@@ -62,6 +62,7 @@ $$\left[ (X, d) \text{ 完备度量空间 } \land T: X \to X \text{ 压缩映射
     d(x₁, x₂) ≤ k·d(x₀, x₁)
     d(x₂, x₃) ≤ k·d(x₁, x₂) ≤ k²·d(x₀, x₁)
     ...
+
 ```
 
 ### 2.2 图形解释
@@ -78,6 +79,7 @@ $$\left[ (X, d) \text{ 完备度量空间 } \land T: X \to X \text{ 压缩映射
 
 斜率<1的曲线与y=x的唯一交点
 压缩映射：|T'(x)| < 1
+
 ```
 
 ### 2.3 距离收缩
@@ -90,6 +92,7 @@ $$\left[ (X, d) \text{ 完备度量空间 } \land T: X \to X \text{ 压缩映射
     d(x₂, x₃) ≤ k²·d₀
     ...
     d(xₙ, x*) ≤ kⁿ/(1-k)·d₀ → 0
+
 ```
 
 ---
@@ -179,9 +182,10 @@ def cos_iteration(x):
 
 x_star, hist = banach_iteration(cos_iteration, 0.5, tol=1e-10)
 print(f"x = cos(x) 的解 ≈ {x_star:.10f}")
+
 ```
 
-### 4.2 误差估计
+## 4.2 误差估计
 
 ```python
 def error_bound(x0, x1, k, n):
@@ -208,9 +212,10 @@ x0, x1 = 1.0, 1.5
 for n in [1, 5, 10, 20]:
     bound = error_bound(x0, x1, k, n)
     print(f"n={n}: 误差上界 = {bound:.2e}")
+
 ```
 
-### 4.3 应用：求解积分方程
+## 4.3 应用：求解积分方程
 
 ```python
 def fredholm_integral_equation(kernel, f, a, b, x0, tol=1e-8):
@@ -252,9 +257,10 @@ def f_example(t):
 
 x0 = np.zeros(100)  # 初始猜测
 x_solution = fredholm_integral_equation(kernel_example, f_example, 0, 1, x0)
+
 ```
 
-### 4.4 应用：Picard迭代
+## 4.4 应用：Picard迭代
 
 ```python
 def picard_iteration(f, y0, t_span, n_steps=100):
@@ -298,6 +304,7 @@ def f_linear(t, y):
 
 t, y = picard_iteration(f_linear, 1.0, [0, 1], n_steps=100)
 print(f"y(1) ≈ {y[-1]:.6f}, 精确值 = {np.exp(1):.6f}")
+
 ```
 
 ---
@@ -347,6 +354,7 @@ print(f"y(1) ≈ {y[-1]:.6f}, 精确值 = {np.exp(1):.6f}")
 **例子3**：矩阵方程
 
 - $T(X) = AX + B$ 是压缩映射（如果 $\|A\| < 1$）
+
 - 不动点：$X^* = (I - A)^{-1}B$
 
 ### 6.2 微分方程应用

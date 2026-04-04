@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 量子场论数学 - 思维导图
 
 ## 概述
@@ -48,6 +56,7 @@ mindmap
       Wightman公理
       代数量子场论
       局部量子物理
+
 ```
 
 ## 核心概念详解

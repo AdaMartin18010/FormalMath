@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Langlands纲领（几何/数论侧）
 
 ## 前沿问题陈述
@@ -9,8 +17,10 @@
 **几何Langlands对应**是Langlands纲领在代数曲线上的几何版本，建立了以下对应关系：
 
 ```
+
 G-丛的D-模范畴  ⟷  ˡG的局部系统范畴
 (几何侧)          (表示论侧)
+
 ```
 
 ### 1.2 核心猜想
@@ -50,6 +60,7 @@ timeline
                    : 范畴化Langlands
         2020-现在 : 导出几何方法
                    : 凝聚态数学应用
+
 ```
 
 ### 2.2 关键里程碑
@@ -88,6 +99,7 @@ graph TD
     style C2 fill:#ff9999
     style C3 fill:#ff9999
     style C4 fill:#ff9999
+
 ```
 
 ### 3.2 依赖的L3理论
@@ -143,6 +155,7 @@ graph TD
     style C1 fill:#99ff99
     style D1 fill:#ffff99
     style E1 fill:#ff9999
+
 ```
 
 ### 4.3 当前活跃方向
@@ -188,6 +201,7 @@ graph LR
     style B fill:#99ff99
     style C fill:#ff9999
     style D fill:#ffff99
+
 ```
 
 ### 5.3 研究前沿问题列表
@@ -233,6 +247,7 @@ graph TD
     E1 --> F1
     
     style F1 fill:#ccccff
+
 ```
 
 ---
@@ -258,6 +273,7 @@ graph TD
     style C fill:#ccccff
     style D fill:#ffffcc
     style E fill:#ffccff
+
 ```
 
 ### 7.2 统一性意义

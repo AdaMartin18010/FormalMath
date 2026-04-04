@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 连通性性质链推理树
 
 ## 概述
@@ -43,6 +51,7 @@ graph TD
     E -.->|拓扑学家正弦曲线| C2
     C2 -.->|逆不成立| E
     H -.->|逆不成立| F
+
     J -.-> I
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
@@ -58,6 +67,7 @@ graph TD
     style K fill:#bbf,stroke:#333
     style L fill:#bbf,stroke:#333
     style M fill:#bbf,stroke:#333
+
 ```
 
 ## 连通性层次详解
@@ -88,9 +98,11 @@ graph TD
 ## 重要关系链
 
 ```
+
 单连通 ⇒ 道路连通 ⇒ 连通
     ↓
 局部道路连通 ⇒ 局部连通
+
 ```
 
 ## 反例集合

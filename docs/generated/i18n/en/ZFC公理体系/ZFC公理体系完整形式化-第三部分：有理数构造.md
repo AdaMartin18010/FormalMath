@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: [🇨🇳 中文](../zh/ZFC公理体系\ZFC公理体系完整形式化-第三部分：有理数构造.md) | **🇬🇧 English**
@@ -95,6 +100,7 @@ Proof：
    - 则 adf = bcf = bde
    - 由于 d ≠ 0，因此 af = be
    - 所以 (a,b) ~ (e,f)
+
 ```
 
 #### 1.2 有理数的表示
@@ -114,6 +120,7 @@ Proof：
 (1) 对于有理数 [(a,b)]，可以约分到既约形式
 (2) 既约形式是唯一的（考虑符号）
 (3) 因此每个有理数有唯一表示
+
 ```
 
 ### 2. 有理数运算的Definition
@@ -134,6 +141,7 @@ Proof：
 (2) 则 ab' = ba' 和 cd' = dc'
 (3) 计算 (ad+bc)(b'd') 和 (a'd'+b'c')(bd)
 (4) 使用整数的运算性质Proof相等
+
 ```
 
 **Theorem 2.1.2** (加法运算的性质)
@@ -151,6 +159,7 @@ Proof：
 (2) 交换律：整数加法的交换律
 (3) 单位元：a/b + 0/1 = a/b
 (4) 逆元：a/b + (-a)/b = 0/b = 0
+
 ```
 
 #### 2.2 乘法运算
@@ -169,6 +178,7 @@ Proof：
 (2) 则 ab' = ba' 和 cd' = dc'
 (3) 计算 ac(b'd') 和 a'c'(bd)
 (4) 使用整数的运算性质Proof相等
+
 ```
 
 **Theorem 2.2.2** (乘法运算的性质)
@@ -186,6 +196,7 @@ Proof：
 (2) 交换律：整数乘法的交换律
 (3) 单位元：a/b · 1/1 = a/b
 (4) 逆元：a/b · b/a = ab/ab = 1
+
 ```
 
 ### 3. 有理数序关系
@@ -212,6 +223,7 @@ Proof：
 (2) 反对称性：如果 ad ≤ bc 和 bc ≤ ad，则 ad = bc
 (3) 传递性：使用整数序的传递性
 (4) 完全性：有理数不满足完全性（这是实数的特征）
+
 ```
 
 #### 3.2 有理数的代数结构
@@ -227,6 +239,7 @@ Proof：
 (2) 乘法Group（除去零）：结合律、交换律、单位元、逆元
 (3) 分配律：左分配律和右分配律
 (4) 零因子：如果 xy = 0，则 x = 0 或 y = 0
+
 ```
 
 ### 4. 有理数的嵌入
@@ -247,6 +260,7 @@ Proof：
 (2) 保持加法：φ(n + m) = φ(n) + φ(m)
 (3) 保持乘法：φ(n · m) = φ(n) · φ(m)
 (4) 保持序关系：n < m ↔ φ(n) < φ(m)
+
 ```
 
 #### 4.2 有理数的唯一性
@@ -262,6 +276,7 @@ Proof：
 (2) 构造Isomorphism映射 f: Q₁ → Q₂
 (3) Proof f 是双射且保持运算
 (4) 因此 Q₁ ≅ Q₂
+
 ```
 
 ### 5. 有理数的基本Theorem
@@ -279,6 +294,7 @@ Proof：
 (2) 取 c = (a + b)/2 = (ps + rq)/(2qs)
 (3) Proof a < c < b
 (4) 因此有理数在数轴上稠密
+
 ```
 
 #### 5.2 有理数的可数性
@@ -294,6 +310,7 @@ Proof：
 (2) 使用对角线方法枚举有理数
 (3) Proof f 是双射
 (4) 因此 Q 是可数的
+
 ```
 
 ### 6. 有理数的代数性质
@@ -311,6 +328,7 @@ Proof：
 (2) 使用整数的唯一因子分解
 (3) 合并得到有理数的分解
 (4) Proof唯一性
+
 ```
 
 #### 6.2 有理数的逼近
@@ -326,6 +344,7 @@ Proof：
 (2) 构造逼近序列
 (3) Proof逼近的Convergent性
 (4) 因此有理数可以逼近任意实数
+
 ```
 
 ### 7. 有理数的拓扑性质
@@ -343,6 +362,7 @@ Proof：
 (2) 这个序列Convergent到 √2
 (3) 但 √2 不是有理数
 (4) 因此有理数不完备
+
 ```
 
 #### 7.2 有理数的Connected性
@@ -358,6 +378,7 @@ Proof：
 (2) 和集合 B = {q ∈ Q : q > √2}
 (3) A 和 B 都是Open Set且不相交
 (4) Q = A ∪ B，因此 Q 不Connected
+
 ```
 
 ### 8. 有理数的应用
@@ -375,6 +396,7 @@ Proof：
 (2) 有理数解的性质
 (3) 有理数解与整数解的关系
 (4) 应用实例
+
 ```
 
 **应用案例 8.1.1** (丢番图方程的有理数解)
@@ -403,6 +425,7 @@ Proof：
 (2) 在Limit理论中的应用
 (3) 在积分理论中的应用
 (4) 在函数逼近中的应用
+
 ```
 
 **应用案例 8.2.1** (有理数在Limit理论中的应用)
@@ -516,6 +539,7 @@ begin
       exact h7 } },
   { exact ⟨h1.2.1, h2.2.2⟩ }
 end
+
 ```
 
 ### 有理数类型Definition
@@ -533,6 +557,7 @@ def Rational.mk (a b : ℤ) (h : b ≠ 0) : Rational :=
 -- 有理数表示
 -- Rational number representation
 notation a "/" b => Rational.mk a b (by norm_num)
+
 ```
 
 ### 有理数运算形式化
@@ -623,6 +648,7 @@ begin
 end
 
 end Rational
+
 ```
 
 ### 有理数序关系形式化
@@ -671,6 +697,7 @@ begin
 end
 
 end Rational
+
 ```
 
 ### 有理数Field结构形式化
@@ -709,6 +736,7 @@ theorem rational_field_properties :
 begin
   exact inferInstance
 end
+
 ```
 
 ### 应用案例：有理数在Number Theory中的应用
@@ -728,11 +756,13 @@ end
 -- Rational approximation of real numbers
 theorem rational_approximation (x : ℝ) (ε : ℝ) (h : ε > 0) :
   ∃ q : Rational, |x - q| < ε :=
+
 begin
   -- Proof有理数可以逼近任意实数
   -- Prove that rational numbers can approximate any real number
   sorry
 end
+
 ```
 
 ## 术语对照表 / Terminology Table

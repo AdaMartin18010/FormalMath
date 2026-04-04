@@ -66,6 +66,7 @@ $$\left[ A \geq 0 \land A \text{ 不可约 } \right] \Rightarrow \exists! r > 0:
     其他特征值 |λ| < r
     
 特征值都在以r为半径的圆内
+
 ```
 
 ### 2.2 特征向量
@@ -77,6 +78,7 @@ Perron根对应的特征向量：
     所有 vᵢ > 0
     
     这反映了矩阵的"正性"
+
 ```
 
 ### 2.3 幂方法收敛
@@ -88,6 +90,7 @@ Perron根对应的特征向量：
     
     Perron根是"主导"特征值
     幂方法收敛到Perron根
+
 ```
 
 ---
@@ -170,9 +173,10 @@ A = A / A.sum(axis=1, keepdims=True)
 r, v = power_method_perron(A)
 print(f"Perron根: {r:.6f} (应该是1)")
 print(f"特征向量: {v}")
+
 ```
 
-### 4.2 验证不可约性
+## 4.2 验证不可约性
 
 ```python
 def is_irreducible(A):
@@ -206,9 +210,10 @@ def is_irreducible(A):
 # 验证
 A = np.array([[0, 1], [1, 0]], dtype=float)
 print(f"不可约: {is_irreducible(A)}")
+
 ```
 
-### 4.3 应用：PageRank
+## 4.3 应用：PageRank
 
 ```python
 def pagerank(link_matrix, damping=0.85, max_iter=100, tol=1e-6):
@@ -252,6 +257,7 @@ L = L / L.sum(axis=0, keepdims=True)  # 列归一化
 
 pr = pagerank(L)
 print(f"PageRank值: {pr}")
+
 ```
 
 ---
@@ -349,8 +355,10 @@ Perron-Frobenius定理是：
 
 1. **正锥**：考虑正锥 $K = \{x \geq 0: \|x\| = 1\}$
 2. **映射**：$T: K \to K$，$T(x) = \frac{Ax}{\|Ax\|}$
+
 3. **不动点**：由Brouwer不动点定理，$T$ 有不动点 $v$
 4. **特征值**：$Av = rv$，其中 $r = \|Av\|$
+
 5. **唯一性**：证明 $r$ 是最大特征值且唯一
 
 ### 8.2 使用压缩映射

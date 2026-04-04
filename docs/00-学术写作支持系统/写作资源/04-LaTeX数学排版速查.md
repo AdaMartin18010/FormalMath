@@ -1,10 +1,12 @@
 ---
 msc_primary: "00A99"
 ---
+msc_primary: "00A99"
+---
 
 # LaTeX数学排版速查
 
-## 1. 公式环境
+## 一、公式环境
 
 ### 1.1 行内公式
 
@@ -15,6 +17,7 @@ gives the roots.
 
 % 使用 \(...\) 也可以（推荐）
 The value is \( \pi \approx 3.14159 \).
+
 ```
 
 ### 1.2 显示公式
@@ -35,6 +38,7 @@ The value is \( \pi \approx 3.14159 \).
 
 % 引用
 Equation \eqref{eq:emc} states that ...
+
 ```
 
 ### 1.3 多行公式
@@ -65,6 +69,7 @@ Equation \eqref{eq:emc} states that ...
   d = e + f \\
   g = h + i
 \end{gather}
+
 ```
 
 ### 1.4 长公式换行
@@ -83,9 +88,10 @@ Equation \eqref{eq:emc} states that ...
             &= a^2 + b^2 + 2ab.
   \end{split}
 \end{equation}
+
 ```
 
-## 2. 上下标与根号
+## 二、上下标与根号
 
 ### 2.1 上标和下标
 
@@ -107,6 +113,7 @@ x_{i_{j_{k}}}
 
 % 文本下标（如max, min）
 \max_{x \in X}, \min_{y \in Y}, \sup_{n \geq 1}
+
 ```
 
 ### 2.2 根号
@@ -120,9 +127,10 @@ x_{i_{j_{k}}}
 
 % 复杂根号
 \sqrt{\frac{x^2 + y^2}{z^2}}
+
 ```
 
-## 3. 分数与二项式
+## 三、分数与二项式
 
 ### 3.1 分数
 
@@ -138,6 +146,7 @@ $\tfrac{a}{b}$
 
 % 斜线分数（行内推荐）
 $a/b$, $(x+y)/(x-y)$
+
 ```
 
 ### 3.2 二项式系数
@@ -145,9 +154,10 @@ $a/b$, $(x+y)/(x-y)$
 ```latex
 \binom{n}{k}, \binom{n+1}{k+1}, \dbinom{n}{k}  % 显示样式
 \tbinom{n}{k}  % 文本样式
+
 ```
 
-## 4. 运算符与求和积分
+## 四、运算符与求和积分
 
 ### 4.1 求和与乘积
 
@@ -167,6 +177,7 @@ $a/b$, $(x+y)/(x-y)$
 % 极限
 \lim_{x \to 0} \frac{\sin x}{x}
 \lim_{n \to \infty} a_n
+
 ```
 
 ### 4.2 积分
@@ -188,6 +199,7 @@ $a/b$, $(x+y)/(x-y)$
 
 % 积分限在右侧
 \int\limits_{-\infty}^{\infty}
+
 ```
 
 **注意**：积分微分前加 `\,` 以保持适当间距
@@ -209,9 +221,10 @@ $a/b$, $(x+y)/(x-y)$
 
 % 散度和旋度
 \divergence \mathbf{F}, \curl \mathbf{F}
+
 ```
 
-## 5. 括号与定界符
+## 五、括号与定界符
 
 ### 5.1 自动调整大小
 
@@ -226,6 +239,7 @@ $a/b$, $(x+y)/(x-y)$
 
 % 高度调整（不推荐自动调整过大）
 \bigl( \bigr), \Bigl( \Bigr), \biggl( \biggr), \Biggl( \Biggr)
+
 ```
 
 ### 5.2 手动指定大小
@@ -235,13 +249,16 @@ $a/b$, $(x+y)/(x-y)$
 \Bigl( \Bigr)      % 更大
 \biggl( \biggr)    % 更大
 \Biggl( \Biggr)    % 最大
+
 ```
 
 ### 5.3 绝对值与范数
 
 ```latex
+
 |x|, \lvert x \rvert, \left| \frac{x}{y} \right|
 \|x\|, \lVert x \rVert, \left\| \frac{x}{y} \right\|
+
 ```
 
 ### 5.4 取整函数
@@ -250,9 +267,10 @@ $a/b$, $(x+y)/(x-y)$
 \lfloor x \rfloor  % 下取整
 \lceil x \rceil    % 上取整
 \langle x \rangle   % 尖括号
+
 ```
 
-## 6. 矩阵与数组
+## 六、矩阵与数组
 
 ### 6.1 矩阵环境
 
@@ -292,6 +310,7 @@ $a/b$, $(x+y)/(x-y)$
   a & b \\
   c & d
 \end{matrix}
+
 ```
 
 ### 6.2 大型矩阵
@@ -303,6 +322,7 @@ $a/b$, $(x+y)/(x-y)$
   \vdots & \vdots & \ddots & \vdots \\
   a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{pmatrix}
+
 ```
 
 ### 6.3 分块矩阵
@@ -310,11 +330,13 @@ $a/b$, $(x+y)/(x-y)$
 ```latex
 \left(
   \begin{array}{c|c}
+
     A & B \\
     \hline
     C & D
   \end{array}
 \right)
+
 ```
 
 ### 6.4 数组环境
@@ -324,9 +346,10 @@ $a/b$, $(x+y)/(x-y)$
   a & = & b + c \\
   x & = & y - z
 \end{array}
+
 ```
 
-## 7. 省略号与修饰符
+## 七、省略号与修饰符
 
 ### 7.1 省略号
 
@@ -343,6 +366,7 @@ $a/b$, $(x+y)/(x-y)$
 a_1, a_2, \ldots, a_n
 a_1 + a_2 + \cdots + a_n
 \begin{pmatrix} a_{11} & \cdots \\ \vdots & \ddots \end{pmatrix}
+
 ```
 
 ### 7.2 上下修饰符
@@ -368,9 +392,10 @@ a_1 + a_2 + \cdots + a_n
 
 % 箭头
 \overleftarrow{AB}, \overrightarrow{AB}, \overleftrightarrow{AB}
+
 ```
 
-## 8. 文本与标注
+## 八、文本与标注
 
 ### 8.1 公式中的文本
 
@@ -383,6 +408,7 @@ f(x) = \begin{cases}
 
 % 罗马体函数名
 \mathrm{Hom}, \operatorname{rank}, \operatorname{tr}
+
 ```
 
 ### 8.2 标注上下标
@@ -393,6 +419,7 @@ x^{\text{max}}, A^{\mathrm{T}}
 
 % 下标标注
 x_{\text{initial}}, f_{\mathrm{max}}
+
 ```
 
 ### 8.3 堆叠符号
@@ -409,9 +436,10 @@ x_{\text{initial}}, f_{\mathrm{max}}
 
 % 更好的上下标（数学）
 \lim_{x \to 0}, \sum_{i=1}^{n}
+
 ```
 
-## 9. 字体样式
+## 九、字体样式
 
 ### 9.1 数学字体
 
@@ -426,6 +454,7 @@ x_{\text{initial}}, f_{\mathrm{max}}
 \mathtt{A}    % 打字机
 \mathit{A}    % 斜体
 \mathnormal{A} % 正常数学字体
+
 ```
 
 ### 9.2 文本大小
@@ -435,9 +464,10 @@ x_{\text{initial}}, f_{\mathrm{max}}
 \textstyle         % 文本样式
 \scriptstyle       % 标号样式
 \scriptscriptstyle % 双重标号样式
+
 ```
 
-## 10. 间距控制
+## 十、间距控制
 
 ### 10.1 水平间距
 
@@ -449,6 +479,7 @@ x_{\text{initial}}, f_{\mathrm{max}}
 \qquad   % 2 em
 \hspace{1cm}  % 指定间距
 \phantom{x}   % 占位间距
+
 ```
 
 ### 10.2 使用场景
@@ -462,6 +493,7 @@ x_{\text{initial}}, f_{\mathrm{max}}
 
 % 调整
 a\!b  % 减小间距
+
 ```
 
 ---

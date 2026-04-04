@@ -37,6 +37,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：[Symbol]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -48,6 +49,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：$A \subseteq B$
 **示例**：$\{1, 2\} \subseteq \{1, 2, 3\}$
 **性质**：子集关系具有自反性和传递性
+
 ```
 
 #### 关系定义模板
@@ -65,6 +67,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：[Symbol]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -80,6 +83,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：$R \subseteq A \times A$
 **示例**：模n同余关系是整数集上的等价关系
 **性质**：等价关系将集合分割为等价类
+
 ```
 
 #### 函数定义模板
@@ -94,6 +98,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：[Mathematical Expression]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -106,6 +111,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：$\forall a_1, a_2 \in A, f(a_1) = f(a_2) \implies a_1 = a_2$ 且 $\forall b \in B, \exists a \in A, f(a) = b$
 **示例**：$f(x) = x$ 是实数集到自身的双射
 **性质**：双射函数存在逆函数
+
 ```
 
 ### 数系定义模板 / Number System Definition Templates
@@ -124,6 +130,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：[Symbol]
 **构造方法**：[Construction Method]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -138,6 +145,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：$\mathbb{R}$
 **构造方法**：通过戴德金分割或柯西序列构造
 **性质**：实数系是完备的有序域
+
 ```
 
 #### 运算定义模板
@@ -152,6 +160,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：[Mathematical Expression]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -164,6 +173,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：$A \cup B = \{x \mid x \in A \text{ or } x \in B\}$
 **示例**：$\{1, 2\} \cup \{2, 3\} = \{1, 2, 3\}$
 **性质**：并集运算满足交换律和结合律
+
 ```
 
 ### 逻辑定义模板 / Logic Definition Templates
@@ -180,6 +190,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **真值条件**：[Truth Conditions]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -192,6 +203,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **真值条件**：无论p取何值，$p \lor \neqg p$ 都为真
 **示例**：$p \lor \neqg p$ 是重言式
 **性质**：重言式的否定是矛盾
+
 ```
 
 #### 推理定义模板
@@ -206,6 +218,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **推理形式**：[Inference Form]
 **示例**：[Example]
 **有效性**：[Validity]
+
 ```
 
 **示例**：
@@ -218,6 +231,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **推理形式**：如果 $p \implies q$ 且 $p$，则 $q$
 **示例**：从"如果下雨那么地湿"和"下雨"推出"地湿"
 **有效性**：假言推理是有效的推理规则
+
 ```
 
 ---
@@ -240,6 +254,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：[Symbol]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -254,6 +269,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：$(G, \cdot)$ 或简写为 $G$
 **示例**：$(\mathbb{Z}, +)$ 是群
 **性质**：群中单位元和逆元都是唯一的
+
 ```
 
 #### 子群定义模板
@@ -268,6 +284,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **判定条件**：[Conditions]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -283,6 +300,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 3. 逆元：$\forall a \in H, a^{-1} \in H$
 **示例**：$2\mathbb{Z} \leq \mathbb{Z}$
 **性质**：子群的交集仍是子群
+
 ```
 
 #### 群同态定义模板
@@ -297,6 +315,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：[Mathematical Expression]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -309,6 +328,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：$\phi(a \cdot b) = \phi(a) \cdot \phi(b)$
 **示例**：$\phi: \mathbb{Z} \to \mathbb{Z}_n, \phi(k) = k \bmod n$ 是群同态
 **性质**：群同态将单位元映射到单位元，将逆元映射到逆元
+
 ```
 
 ### 环论定义模板 / Ring Theory Definition Templates
@@ -327,6 +347,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：[Symbol]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -341,6 +362,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：$(R, +, \cdot)$ 或简写为 $R$
 **示例**：$(\mathbb{Z}, +, \cdot)$ 是环
 **性质**：环中加法单位元是乘法零元
+
 ```
 
 #### 理想定义模板
@@ -357,6 +379,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：[Symbol]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -371,6 +394,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **符号表示**：$I \triangleleft R$
 **示例**：$n\mathbb{Z} \triangleleft \mathbb{Z}$
 **性质**：理想的交集仍是理想
+
 ```
 
 ### 域论定义模板 / Field Theory Definition Templates
@@ -387,6 +411,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：[Mathematical Expression]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -399,6 +424,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：$\forall a \in F \setminus \{0\}, \exists a^{-1} \in F, a \cdot a^{-1} = 1$
 **示例**：$(\mathbb{Q}, +, \cdot)$ 是域
 **性质**：域没有零因子
+
 ```
 
 #### 域扩张定义模板
@@ -413,6 +439,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **扩张次数**：[Extension Degree]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -425,6 +452,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **扩张次数**：$[F:K]$ 表示F作为K-向量空间的维数
 **示例**：$\mathbb{C}/\mathbb{R}$ 是域扩张
 **性质**：有限扩张都是代数扩张
+
 ```
 
 ---
@@ -440,11 +468,13 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 ```text
 **定义**：函数极限
 设f是定义在点a附近（可能除a外）的函数，如果对任意ε>0，存在δ>0，使得当0<|x-a|<δ时，有|f(x)-L|<ε，则称f在x→a时的极限为L。
+
 **英文定义**：[English Definition]
 **符号表示**：[Symbol]
 **数学表述**：[Mathematical Expression]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -453,10 +483,13 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **定义**：函数极限
 设f是定义在点a附近（可能除a外）的函数，如果对任意ε>0，存在δ>0，使得当0<|x-a|<δ时，有|f(x)-L|<ε，则称f在x→a时的极限为L。
 **英文定义**：The limit of a function f as x approaches a is L if for every ε>0, there exists δ>0 such that |f(x)-L|<ε whenever 0<|x-a|<δ.
+
 **符号表示**：$\lim_{x \to a} f(x) = L$
 **数学表述**：$\forall \varepsilon > 0, \exists \delta > 0, \forall x, 0 < |x-a| < \delta \implies |f(x)-L| < \varepsilon$
+
 **示例**：$\lim_{x \to 0} \frac{\sin x}{x} = 1$
 **性质**：极限运算满足线性性质
+
 ```
 
 #### 序列极限定义模板
@@ -466,11 +499,13 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 ```text
 **定义**：序列极限
 设{aₙ}是实数序列，如果对任意ε>0，存在N∈ℕ，使得当n≥N时，有|aₙ-L|<ε，则称序列{aₙ}的极限为L。
+
 **英文定义**：[English Definition]
 **符号表示**：[Symbol]
 **数学表述**：[Mathematical Expression]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -479,10 +514,13 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **定义**：序列极限
 设{aₙ}是实数序列，如果对任意ε>0，存在N∈ℕ，使得当n≥N时，有|aₙ-L|<ε，则称序列{aₙ}的极限为L。
 **英文定义**：The limit of a sequence {aₙ} is L if for every ε>0, there exists N∈ℕ such that |aₙ-L|<ε whenever n≥N.
+
 **符号表示**：$\lim_{n \to \infty} a_n = L$
 **数学表述**：$\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N, |a_n-L| < \varepsilon$
+
 **示例**：$\lim_{n \to \infty} \frac{1}{n} = 0$
 **性质**：收敛序列的极限是唯一的
+
 ```
 
 ### 导数定义模板 / Derivative Definition Templates
@@ -499,6 +537,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：[Mathematical Expression]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -511,6 +550,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：$f'(a) = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}$
 **示例**：$f(x) = x^2$ 在点a的导数是 $f'(a) = 2a$
 **性质**：可导函数在一点处连续
+
 ```
 
 ### 积分定义模板 / Integral Definition Templates
@@ -527,6 +567,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：[Mathematical Expression]
 **示例**：[Example]
 **性质**：[Properties]
+
 ```
 
 **示例**：
@@ -539,6 +580,7 @@ msc_secondary: ['22E47', '13Cxx', '03Exx']
 **数学表述**：$\int_a^b f(x) dx = \sup\{L(f,P) : P \text{ 是分割}\} = \inf\{U(f,P) : P \text{ 是分割}\}$
 **示例**：$\int_0^1 x^2 dx = \frac{1}{3}$
 **性质**：连续函数在闭区间上黎曼可积
+
 ```
 
 ---

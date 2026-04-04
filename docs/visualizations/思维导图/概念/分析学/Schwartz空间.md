@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Schwartz空间 (Schwartz Space)
 
 ## 中心概念精确定义
@@ -6,6 +14,7 @@
 
 > **Schwartz空间** $\mathcal{S}(\mathbb{R}^n)$：所有 $C^\infty$ 函数 $f: \mathbb{R}^n \to \mathbb{C}$ 满足：
 > $$\|f\|_{\alpha,\beta} = \sup_{x \in \mathbb{R}^n} |x^\alpha \partial^\beta f(x)| < \infty$$
+
 > 对所有多重指标 $\alpha, \beta$ 成立。
 
 等价表述：$f$ 及其所有导数比任何多项式的倒数衰减得都快。
@@ -19,7 +28,9 @@ mindmap
   root((Schwartz空间<br/>Schwartz Space 𝒮))
     定义与性质
       速降条件
+
         |x^α ∂^β f|<∞
+
         多项式控制
       拓扑结构
         半范数族
@@ -66,6 +77,7 @@ mindmap
       核定理
         双线性形式
         张量积
+
 ```
 
 ---
@@ -93,11 +105,13 @@ $$C_c^\infty(\mathbb{R}^n) \subset \mathcal{S}(\mathbb{R}^n) \subset L^p(\mathbb
 
 **等价条件**：以下任一等价于 $f \in \mathcal{S}$：
 1. 对所有 $k, m \in \mathbb{N}$：$|f(x)| \leq C_{k,m}(1+|x|)^{-k}$ 且 $|\partial^\beta f(x)| \leq C_{k,m}(1+|x|)^{-k}$
+
 2. 对所有多项式 $P$ 和微分算子 $Q$：$P(x)Q(D)f \in L^\infty$
 3. 对所有多项式 $P$：$P(D)f \in L^1$ 且 $Pf \in L^1$
 
 **标准例子**：
 - Gauss函数：$e^{-|x|^2} \in \mathcal{S}$
+
 - 紧支光滑函数：$C_c^\infty \subset \mathcal{S}$
 - 非例子：$e^{-|x|} \notin \mathcal{S}$（在0点不可微）
 
@@ -125,6 +139,7 @@ $$\langle T, \phi \rangle \in \mathbb{C}, \quad \phi \in \mathcal{S}$$
 **连续性**：$\phi_k \to 0$ 在 $\mathcal{S}$ 中 $\Rightarrow$ $\langle T, \phi_k \rangle \to 0$。
 
 **重要例子**：
+
 | 分布 | 作用 | 说明 |
 |------|------|------|
 | **Dirac delta** | $\langle \delta, \phi \rangle = \phi(0)$ | 点质量 |
@@ -234,6 +249,7 @@ $$\hat{u}(\xi) = \frac{1}{1 - 4\pi^2 \xi^2}$$
 ### 推广概念
 
 ```
+
 Schwartz空间 → Gelfand-Shilov空间
       ↓
    超函数(Sato)
@@ -241,6 +257,7 @@ Schwartz空间 → Gelfand-Shilov空间
    微局部分析
       ↓
    代数分析(D-模)
+
 ```
 
 ---

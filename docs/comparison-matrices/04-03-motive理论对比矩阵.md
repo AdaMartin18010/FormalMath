@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Motive理论对比矩阵
 
 > **摘要**：本文档系统对比motive理论中的各类构造，包括Grothendieck motive、Chow motive、Nori motive、Voevodsky motive等，从构造方法、性质、关系和应用等多维度进行分析，帮助读者理解这一深刻统一理论的核心思想。
@@ -25,12 +30,15 @@
 - motive 范畴是各种几何范畴的"公分母"
 
 **直观理解**：
+
 ```
+
 代数簇 X ──→ Motive M(X)
    ↓              ↓
 H^*_Betti    H^*_motive 的"实现"
 H^*_deRham      ↓
 H^*_ℓ-adic   ← 各种上同调理论
+
 ```
 
 ### Motive理论分类
@@ -86,6 +94,7 @@ $$W_0 \subseteq W_1 \subseteq ... \subseteq W_{2n} = H^*(X)$$
 ### 构造步骤
 
 ```
+
 Step 1: 对应范畴 Corr(k)
   - 对象：光滑射影簇
   - 态射：Corrⁱ(X,Y) = CH^{dim X + i}(X × Y)
@@ -101,6 +110,7 @@ Step 3: 添加Tate motive的逆
 
 Step 4: 取伪Abel完备化（Grothendieck构造）
   - 或取数值等价商（已证明半单）
+
 ```
 
 ### 三种等价关系
@@ -138,6 +148,7 @@ $$M(X) = \bigoplus_{i=0}^{2n} M^i(X)(-?)$$
 ### 构造概要
 
 ```
+
 Step 1: 光滑对应范畴 SmCor(k)
   - 对象：光滑簇
   - 态射：有限对应（代数圈）
@@ -153,6 +164,7 @@ Step 3: 三种局部化
 Step 4: 得到 DM(k)（三角范畴）
   - 对象：混合motive
   - 满足六函子形式体系
+
 ```
 
 ### Voevodsky范畴的性质
@@ -179,6 +191,7 @@ Step 4: 得到 DM(k)（三角范畴）
 **定义**：$H^i_M(X, \mathbb{Z}(j)) = \text{Hom}_{DM}(M(X), \mathbb{Z}(j)[i])$
 
 **与其他理论的关系**：
+
 | 理论 | motivic解释 | 关系 |
 |-----|------------|-----|
 | **Chow群** | H^{2n}_M(X, ℤ(n)) | CH^n(X) ≅ H^{2n}_M |
@@ -195,7 +208,9 @@ Step 4: 得到 DM(k)（三角范畴）
 **Nori的核心思想**：从"好"的上同调理论（如奇异上同调）出发，通过**万有阿贝尔范畴**构造motive。
 
 **步骤**：
+
 ```
+
 Step 1: 定义图表 D = "好对" (X, Y, i)
   - X 代数簇，Y ⊆ X 闭子集，i 整数
   - 模拟相对上同调 H^i(X, Y)
@@ -207,6 +222,7 @@ Step 3: 构造万有阿贝尔范畴 C(T)
   - 反映 T 的所有关系
 
 Step 4: Nori motive = C(T) 的对象
+
 ```
 
 ### Nori范畴的性质
@@ -272,11 +288,14 @@ $$H^i_M(X, \mathbb{Z}/n) \cong H^i_\text{ét}(X, \mu_n^{\otimes j})$$
 | **Tate猜想** | ℓ进循环类代数 | 开放 |
 
 **关系**：
+
 ```
+
 标准猜想 + Hodge猜想 ──→ 纯motive的阿贝尔性
                    │
                    v
               所有上同调理论的统一
+
 ```
 
 ---

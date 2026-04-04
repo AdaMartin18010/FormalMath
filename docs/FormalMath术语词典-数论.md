@@ -281,6 +281,7 @@ mindmap
         素数定理
         黎曼假设
         广义黎曼假设
+
 ```
 
 ## 📊 数论核心概念多维知识矩阵
@@ -582,6 +583,7 @@ mindmap
 └── 原根与指标 (Primitive Roots and Indices)
     ├── 原根 (Primitive Root)
     └── 指标 (Index)
+
 ```
 
 ### 代数数论概念层次关系 / Algebraic Number Theory Concept Hierarchy
@@ -596,6 +598,7 @@ mindmap
 │   └── 极大理想 (Maximal Ideal)
 ├── 类群 (Class Group)
 └── 单位群 (Unit Group)
+
 ```
 
 ### 解析数论概念层次关系 / Analytic Number Theory Concept Hierarchy
@@ -609,6 +612,7 @@ mindmap
 ├── 素数分布 (Prime Distribution)
 │   └── 素数定理 (Prime Number Theorem)
 └── 自守形式 (Automorphic Forms)
+
 ```
 
 ### 数论分支关系 / Number Theory Branch Relationships
@@ -623,6 +627,7 @@ mindmap
 └── 解析数论 (Analytic Number Theory)
     ├── 解析方法 (Analytic Methods)
     └── 自守形式理论 (Automorphic Forms Theory)
+
 ```
 
 ---
@@ -1776,6 +1781,7 @@ mindmap
 └── 原根与指标 (Primitive Roots and Indices)
     ├── 原根 (Primitive Root)
     └── 指标 (Index)
+
 ```
 
 ### 代数数论核心概念网络 / Algebraic Number Theory Core Concept Network
@@ -1790,6 +1796,7 @@ mindmap
 │   └── 极大理想 (Maximal Ideal)
 ├── 类群 (Class Group)
 └── 单位群 (Unit Group)
+
 ```
 
 ### 解析数论核心概念网络 / Analytic Number Theory Core Concept Network
@@ -1803,6 +1810,7 @@ mindmap
 ├── 素数分布 (Prime Distribution)
 │   └── 素数定理 (Prime Number Theorem)
 └── 自守形式 (Automorphic Forms)
+
 ```
 
 ### 数论分支关系网络 / Number Theory Branch Relationship Network
@@ -1817,6 +1825,7 @@ mindmap
 └── 解析数论 (Analytic Number Theory)
     ├── 解析方法 (Analytic Methods)
     └── 自守形式理论 (Automorphic Forms Theory)
+
 ```
 
 ### 学习路径关系网络 / Learning Path Relationship Network
@@ -1832,6 +1841,7 @@ mindmap
 ├── 密码学应用：初等数论 → 同余理论 → 密码学
 ├── 代数应用：代数数论 → 代数几何 → 表示论
 └── 解析应用：解析数论 → 自守形式 → 数论几何
+
 ```
 
 ### 应用关系网络 / Application Relationship Network
@@ -1846,6 +1856,7 @@ mindmap
 ├── 初等数论 → RSA加密、哈希函数、随机数生成
 ├── 代数数论 → 椭圆曲线密码学、代数编码
 └── 解析数论 → 密码分析、随机算法
+
 ```
 
 ---

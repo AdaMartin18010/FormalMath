@@ -1,14 +1,14 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: **🇨🇳 中文** | [🇬🇧 English](./en/00-README.md)
 
 </div>
 
----
-
----
-msc_primary: "00A99"
-msc_secondary: ['11-XX', '97-XX', '00-XX']
 ---
 
 # 基础数学

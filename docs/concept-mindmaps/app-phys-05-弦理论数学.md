@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 弦理论数学 - 思维导图
 
 ## 概述
@@ -65,6 +70,7 @@ mindmap
       对偶网
         各种极限联系
         统一框架
+
 ```
 
 ---
@@ -91,6 +97,7 @@ graph TD
     style A fill:#e3f2fd
     style C fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -135,6 +142,7 @@ mindmap
         超对称
         规范群
         粒子谱
+
 ```
 
 ---
@@ -176,6 +184,7 @@ graph TD
     style C fill:#e3f2fd
     style H fill:#fff3e0
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -210,6 +219,7 @@ mindmap
       F理论
         椭圆纤维化
         12维几何
+
 ```
 
 ---
@@ -241,6 +251,7 @@ flowchart LR
     
     style F fill:#e3f2fd
     style H fill:#fff3e0
+
 ```
 
 ---

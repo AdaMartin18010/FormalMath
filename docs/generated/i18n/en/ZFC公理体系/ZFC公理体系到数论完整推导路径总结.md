@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: [🇨🇳 中文](../zh/ZFC公理体系\ZFC公理体系到数论完整推导路径总结.md) | **🇬🇧 English**
@@ -287,6 +292,7 @@ ZFC公理体系
 复数构造 (有序对方法)
     ↓
 Number Theory基础 (整除、素数、同余)
+
 ```
 
 ## 📊 形式化程度分析

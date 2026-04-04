@@ -2,6 +2,9 @@
 msc_primary: "28A25"
 msc_secondary: ['26A42', '68Vxx', '42-XX']
 ---
+msc_primary: "28A25"
+msc_secondary: ['26A42', '68Vxx', '42-XX']
+---
 
 # 调和分析 - Lean4形式化实现 / Harmonic Analysis - Lean4 Formalization
 
@@ -9,7 +12,7 @@ msc_secondary: ['26A42', '68Vxx', '42-XX']
 
 本文档提供了调和分析核心概念的Lean4形式化实现，包括傅里叶分析、小波理论、调和函数、位势理论等。
 
-## 1. 基础定义 / Basic Definitions
+## 一、基础定义 / Basic Definitions
 
 ### 1.1 函数空间 / Function Spaces
 
@@ -33,6 +36,7 @@ def inner_product (f g : L2Space μ) : ℂ :=
 -- 范数
 def L2_norm (f : L2Space μ) : ℝ :=
   sqrt (∫ x, ‖f x‖^2 ∂μ)
+
 ```
 
 ### 1.2 傅里叶变换 / Fourier Transform
@@ -59,9 +63,10 @@ theorem fourier_transform_shift (f : ℝ → ℂ) (a : ℝ) :
 theorem convolution_theorem (f g : ℝ → ℂ) :
   fourier_transform (f ∗ g) = fourier_transform f * fourier_transform g :=
   sorry
+
 ```
 
-## 2. 傅里叶级数 / Fourier Series
+## 二、傅里叶级数 / Fourier Series
 
 ### 2.1 三角级数 / Trigonometric Series
 
@@ -90,6 +95,7 @@ theorem parseval_theorem (f : ℝ → ℂ) :
   (1 / π) * ∫ x in -π..π, ‖f x‖^2 =
   ‖fourier_coefficient f 0‖^2 + 2 * ∑' n : ℕ, ‖fourier_coefficient f n‖^2 :=
   sorry
+
 ```
 
 ### 2.2 复数形式 / Complex Form
@@ -110,9 +116,10 @@ theorem complex_trigonometric_relation (f : ℝ → ℂ) (n : ℕ) :
   complex_fourier_coefficient f n = (a_n - I * b_n) / 2 ∧
   complex_fourier_coefficient f (-n) = (a_n + I * b_n) / 2 :=
   sorry
+
 ```
 
-## 3. 小波分析 / Wavelet Analysis
+## 三、小波分析 / Wavelet Analysis
 
 ### 3.1 小波基础 / Wavelet Basics
 
@@ -136,6 +143,7 @@ theorem wavelet_reconstruction (f : ℝ → ℂ) (ψ : Wavelet) :
   IsOrthonormalBasis (λ j k, discrete_wavelet ψ j k) →
   f = ∑' j k, ⟨f, discrete_wavelet ψ j k⟩ * discrete_wavelet ψ j k :=
   sorry
+
 ```
 
 ### 3.2 多分辨率分析 / Multiresolution Analysis
@@ -164,9 +172,10 @@ def fast_wavelet_transform (f : ℝ → ℂ) (MRA : MultiresolutionAnalysis) (le
   List (List ℂ) :=
   -- 实现快速小波变换算法
   sorry
+
 ```
 
-## 4. 调和函数 / Harmonic Functions
+## 四、调和函数 / Harmonic Functions
 
 ### 4.1 拉普拉斯算子 / Laplacian Operator
 
@@ -200,6 +209,7 @@ theorem liouville_theorem (u : ℝⁿ → ℝ) :
   Bounded u →
   ∃ c : ℝ, u = λ _, c :=
   sorry
+
 ```
 
 ### 4.2 泊松积分 / Poisson Integral
@@ -219,9 +229,10 @@ theorem poisson_integral_formula (u : ℝⁿ → ℝ) (x : ball 0 1) :
 -- 调和延拓
 def harmonic_extension (f : sphere 0 1 → ℝ) : ball 0 1 → ℝ :=
   λ x, ∫ y in sphere 0 1, poisson_kernel n x y * f y
+
 ```
 
-## 5. 位势理论 / Potential Theory
+## 五、位势理论 / Potential Theory
 
 ### 5.1 牛顿位势 / Newtonian Potential
 
@@ -247,6 +258,7 @@ theorem green_representation (u : ℝⁿ → ℝ) (Ω : Set ℝⁿ) (x : Ω) :
   u x = ∫ y in frontier Ω,
         (u y * ∂green_function Ω x y/∂ν - green_function Ω x y * ∂u y/∂ν) :=
   sorry
+
 ```
 
 ### 5.2 容量理论 / Capacity Theory
@@ -264,9 +276,10 @@ theorem capacity_monotone (K₁ K₂ : Set ℝⁿ) :
 theorem capacity_subadditive (K₁ K₂ : Set ℝⁿ) :
   capacity (K₁ ∪ K₂) ≤ capacity K₁ + capacity K₂ :=
   sorry
+
 ```
 
-## 6. 奇异积分 / Singular Integrals
+## 六、奇异积分 / Singular Integrals
 
 ### 6.1 希尔伯特变换 / Hilbert Transform
 
@@ -290,6 +303,7 @@ theorem hilbert_transform_fourier (f : ℝ → ℂ) :
   fourier_transform (hilbert_transform f) =
   λ ξ, -I * sgn ξ * fourier_transform f ξ :=
   sorry
+
 ```
 
 ### 6.2 里斯变换 / Riesz Transform
@@ -311,9 +325,10 @@ theorem riesz_transform_bounded (f : ℝⁿ → ℝ) (p : ℝ) :
 theorem riesz_transform_square_sum (f : ℝⁿ → ℝ) :
   ∑ j, riesz_transform (riesz_transform f j) j = -f :=
   sorry
+
 ```
 
-## 7. 高级主题 / Advanced Topics
+## 七、高级主题 / Advanced Topics
 
 ### 7.1 加权不等式 / Weighted Inequalities
 
@@ -327,6 +342,7 @@ theorem weighted_boundedness (T : (ℝ → ℂ) → (ℝ → ℂ)) (p : ℝ) (w 
   Ap_weight p w →
   T : LpSpace p → LpSpace p :=
   sorry
+
 ```
 
 ### 7.2 多线性奇异积分 / Multilinear Singular Integrals
@@ -346,9 +362,10 @@ theorem multilinear_boundedness
   1/p₁ + 1/p₂ = 1/p →
   T : LpSpace p₁ → LpSpace p₂ → LpSpace p :=
   sorry
+
 ```
 
-## 8. 应用实例 / Applications
+## 八、应用实例 / Applications
 
 ### 8.1 信号处理 / Signal Processing
 
@@ -364,6 +381,7 @@ def high_pass_filter (f : ℝ → ℂ) (cutoff : ℝ) : ℝ → ℂ :=
 -- 带通滤波器
 def band_pass_filter (f : ℝ → ℂ) (low high : ℝ) : ℝ → ℂ :=
   inverse_fourier_transform (λ ξ, if low ≤ ‖ξ‖ ∧ ‖ξ‖ ≤ high then fourier_transform f ξ else 0)
+
 ```
 
 ### 8.2 图像处理 / Image Processing
@@ -378,9 +396,10 @@ def image_denoising (image : ℝ² → ℝ) (threshold : ℝ) : ℝ² → ℝ :=
   let f̂ := fourier_transform_2d (λ x, image x : ℝ² → ℂ)
   let f̂_filtered := λ ξ, if ‖f̂ ξ‖ < threshold then 0 else f̂ ξ
   λ x, (inverse_fourier_transform_2d f̂_filtered x).re
+
 ```
 
-## 9. 总结 / Summary
+## 九、总结 / Summary
 
 本文档提供了调和分析核心概念的完整Lean4形式化实现，包括：
 

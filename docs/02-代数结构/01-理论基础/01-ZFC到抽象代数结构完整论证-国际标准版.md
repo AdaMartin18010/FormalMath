@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 msc_primary: "20A99"
 ---
@@ -81,6 +86,7 @@ Let $A$ be a set, a binary operation on $A$ is a function $f: A \times A \righta
 -- Formal definition of binary operation
 def BinaryOperation (A : Set) : Set :=
   {f : Set | f ⊆ (A × A) × A ∧
+
    ∀ x y : A, ∃! z : A, ordered_pair (ordered_pair x y) z ∈ f}
 
 -- 二元运算的存在性
@@ -93,6 +99,7 @@ begin
   have h1 : ∃ g : A × A → A, ∀ x : A × A, g x ∈ A, from _,
   cases h1 with g hg,
   let f := {x : Set | ∃ a b c : A, x = ordered_pair (ordered_pair a b) c ∧ c = g (ordered_pair a b)},
+
   existsi f,
   -- 证明 f 是二元运算
   -- Prove f is a binary operation
@@ -134,6 +141,7 @@ begin
       rw [h2.1, h2.2] at h3,
       exact h3 } }
 end
+
 ```
 
 ### 1.3 运算性质的构造 / Construction of Operation Properties
@@ -194,6 +202,7 @@ begin
   have h4 : apply_binary_operation op e1 e2 = e1, from h2 e1,
   exact eq.trans h3 h4.symm
 end
+
 ```
 
 ## 🎯 2. 群论的ZFC构造 / ZFC Construction of Group Theory
@@ -243,6 +252,7 @@ begin
   -- 证明群公理
   -- Prove group axioms
 end
+
 ```
 
 ### 2.2 群的基本性质 / Basic Properties of Groups
@@ -328,6 +338,7 @@ begin
       from g.inverse_left a ▸ h2,
     exact g.identity_left b ▸ g.identity_left c ▸ h3 }
 end
+
 ```
 
 ## 🔗 3. 环论的ZFC构造 / ZFC Construction of Ring Theory
@@ -387,6 +398,7 @@ begin
   -- 证明环公理
   -- Prove ring axioms
 end
+
 ```
 
 ### 3.2 环的基本性质 / Basic Properties of Rings
@@ -463,6 +475,7 @@ begin
     -- Similar proof
     exact _ }
 end
+
 ```
 
 ## 📊 4. 域论的ZFC构造 / ZFC Construction of Field Theory
@@ -520,6 +533,7 @@ begin
   -- 证明域公理
   -- Prove field axioms
 end
+
 ```
 
 ## 🔬 5. 线性代数的ZFC构造 / ZFC Construction of Linear Algebra
@@ -586,6 +600,7 @@ begin
   -- 证明向量空间公理
   -- Prove vector space axioms
 end
+
 ```
 
 ### 5.2 矩阵的构造 / Construction of Matrices
@@ -603,6 +618,7 @@ Let $F$ be a field, $m, n \in \mathbb{N}$, an $m \times n$ matrix is a function 
 -- Formal definition of matrix
 def Matrix (F : Set) (m n : ℕ) : Set :=
   {f : Set | f ⊆ ({1,2,...,m} × {1,2,...,n}) × F ∧
+
    ∀ i j, i ∈ {1,2,...,m} → j ∈ {1,2,...,n} →
    ∃! a : F, ordered_pair (ordered_pair i j) a ∈ f}
 
@@ -610,6 +626,7 @@ def Matrix (F : Set) (m n : ℕ) : Set :=
 -- Matrix addition
 def matrix_addition {F : Set} {m n : ℕ} (A B : Matrix F m n) : Matrix F m n :=
   {x : Set | ∃ i j a b,
+
    ordered_pair (ordered_pair i j) a ∈ A ∧
    ordered_pair (ordered_pair i j) b ∈ B ∧
    x = ordered_pair (ordered_pair i j) (apply_binary_operation field_addition a b)}
@@ -618,6 +635,7 @@ def matrix_addition {F : Set} {m n : ℕ} (A B : Matrix F m n) : Matrix F m n :=
 -- Matrix multiplication
 def matrix_multiplication {F : Set} {m n p : ℕ} (A : Matrix F m n) (B : Matrix F n p) : Matrix F m p :=
   {x : Set | ∃ i k, i ∈ {1,2,...,m} → k ∈ {1,2,...,p} →
+
    x = ordered_pair (ordered_pair i k)
        (matrix_dot_product A B i k)}
 
@@ -627,6 +645,7 @@ def matrix_dot_product {F : Set} {m n p : ℕ} (A : Matrix F m n) (B : Matrix F 
   -- 计算 A 的第 i 行与 B 的第 k 列的点积
   -- Calculate dot product of row i of A and column k of B
   _
+
 ```
 
 ## 🎯 6. 复数、四元数、八元数的ZFC构造 / ZFC Construction of Complex Numbers, Quaternions, Octonions
@@ -646,6 +665,7 @@ Complex numbers are constructed as real number ordered pairs: $\mathbb{C} = \mat
 -- Formal definition of complex numbers
 def ComplexNumbers : Set :=
   {x : Set | ∃ a b, a ∈ real_numbers ∧ b ∈ real_numbers ∧
+
    x = ordered_pair a b}
 
 -- 复数加法
@@ -674,6 +694,7 @@ begin
   -- Use fundamental theorem of algebra
   exact _
 end
+
 ```
 
 ### 6.2 四元数的构造 / Construction of Quaternions
@@ -691,6 +712,7 @@ Quaternions are constructed as complex number ordered pairs: $\mathbb{H} = \math
 -- Formal definition of quaternions
 def Quaternions : Set :=
   {x : Set | ∃ a b, a ∈ complex_numbers ∧ b ∈ complex_numbers ∧
+
    x = ordered_pair a b}
 
 -- 四元数加法
@@ -725,6 +747,7 @@ begin
   -- Prove a · b ≠ b · a
   exact _
 end
+
 ```
 
 ### 6.3 八元数的构造 / Construction of Octonions
@@ -742,6 +765,7 @@ Octonions are constructed as quaternion ordered pairs: $\mathbb{O} = \mathbb{H} 
 -- Formal definition of octonions
 def Octonions : Set :=
   {x : Set | ∃ a b, a ∈ quaternions ∧ b ∈ quaternions ∧
+
    x = ordered_pair a b}
 
 -- 八元数加法
@@ -771,6 +795,7 @@ begin
   -- Construct counterexample
   exact _
 end
+
 ```
 
 ## 🔬 7. 国际标准对比分析 / International Standard Comparison Analysis

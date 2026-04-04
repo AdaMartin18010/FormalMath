@@ -1,14 +1,14 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: **🇨🇳 中文** | [🇬🇧 English](../en/ZFC公理体系\ZFC公理体系完整形式化-抽象代数结构构造.md)
 
 </div>
 
----
-
----
-msc_primary: "03E30"
-msc_secondary: ['16-XX', '20-XX', '03E30']
 ---
 
 # ZFC公理体系完整形式化 - 抽象代数结构构造
@@ -134,6 +134,7 @@ $$\forall a \in G \exists a^{-1} \in G(a * a^{-1} = a^{-1} * a = e)$$
 (3) 消去律 / Cancellation law / Loi de simplification / Kürzungsgesetz:
    如果 a * b = a * c，则 b = c / If a * b = a * c, then b = c / Si a * b = a * c, alors b = c / Wenn a * b = a * c, dann b = c
    证明：b = e * b = (a⁻¹ * a) * b = a⁻¹ * (a * b) = a⁻¹ * (a * c) = (a⁻¹ * a) * c = e * c = c / Proof: b = e * b = (a⁻¹ * a) * b = a⁻¹ * (a * b) = a⁻¹ * (a * c) = (a⁻¹ * a) * c = e * c = c / Preuve: b = e * b = (a⁻¹ * a) * b = a⁻¹ * (a * b) = a⁻¹ * (a * c) = (a⁻¹ * a) * c = e * c = c / Beweis: b = e * b = (a⁻¹ * a) * b = a⁻¹ * (a * b) = a⁻¹ * (a * c) = (a⁻¹ * a) * c = e * c = c
+
 ```
 
 #### 2.2 子群 / Subgroup / Sous-groupe / Untergruppe
@@ -280,6 +281,7 @@ Die Menge der ganzen Zahlen $\mathbb{Z}$ bildet einen kommutativen Ring unter de
 
 (4) 交换性 / Commutativity / Commutativité / Kommutativität:
    - 乘法交换律：由整数乘法的定义 / Multiplicative commutativity: by definition of integer multiplication / Commutativité multiplicative: par définition de la multiplication d'entiers / Multiplikative Kommutativität: nach Definition der Multiplikation ganzer Zahlen
+
 ```
 
 #### 5.2 有理数域 / Field of Rational Numbers / Corps des rationnels / Körper der rationalen Zahlen
@@ -306,6 +308,7 @@ Die Menge der rationalen Zahlen $\mathbb{Q}$ bildet einen Körper unter der übl
 
 (3) 分配律 / Distributivity / Distributivité / Distributivität:
    - 由有理数运算的定义 / By definition of rational operations / Par définition des opérations rationnelles / Nach Definition der rationalen Operationen
+
 ```
 
 #### 5.3 实数域 / Field of Real Numbers / Corps des réels / Körper der reellen Zahlen

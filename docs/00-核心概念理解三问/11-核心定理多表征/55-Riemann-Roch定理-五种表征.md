@@ -67,6 +67,7 @@ $$\left[ C \text{ 紧Riemann曲面 } \land D \text{ 除子 } \right] \Rightarrow
     
     当deg(D)很大时，ℓ(K-D) = 0
     因此 ℓ(D) = deg(D) - g + 1
+
 ```
 
 ### 2.2 亏格的作用
@@ -79,6 +80,7 @@ $$\left[ C \text{ 紧Riemann曲面 } \land D \text{ 除子 } \right] \Rightarrow
     g > 1: 更复杂的修正
     
     亏格越大，约束越多
+
 ```
 
 ### 2.3 典范除子
@@ -91,6 +93,7 @@ $$\left[ C \text{ 紧Riemann曲面 } \land D \text{ 除子 } \right] \Rightarrow
     这是曲面的"拓扑不变量"
     
     K - D 的维数影响 ℓ(D)
+
 ```
 
 ---
@@ -185,9 +188,10 @@ degree_D = 3
 
 ell_D = riemann_roch(degree_D, genus)
 print(f"在亏格{genus}的曲线上，deg(D)={degree_D}时，ℓ(D) ≥ {ell_D}")
+
 ```
 
-### 4.2 应用：证明存在性
+## 4.2 应用：证明存在性
 
 ```python
 def prove_existence_via_riemann_roch(degree, genus, required_poles):
@@ -229,6 +233,7 @@ def construct_divisor(poles):
     # 简化处理
     degree = sum(poles.values())
     return {'degree': degree, 'poles': poles}
+
 ```
 
 ### 4.3 应用：计算亏格
@@ -267,6 +272,7 @@ def compute_genus_via_riemann_roch(curve, sample_divisors):
     
     genus = np.mean(genus_estimates) if genus_estimates else None
     return genus
+
 ```
 
 ---

@@ -36,6 +36,7 @@ flowchart TD
     D --> E[结论: 乘积紧]
     
     style D fill:#e8f5e9,stroke:#4caf50
+
 ```
 
 #### 步骤1-2：超滤子投影
@@ -123,6 +124,7 @@ flowchart TB
     L2TY --> L3SC[L3: Stone-Čech紧化]
     
     style L2TY fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+
 ```
 
 ---

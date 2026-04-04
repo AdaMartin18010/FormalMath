@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # diagnosis_engine
 
 **源文件**: `tools\cognitive-diagnosis\diagnosis_engine.py`
@@ -8,6 +16,7 @@
 
 ```python
 class ResponseType
+
 ```
 
 答题响应类型
@@ -16,6 +25,7 @@ class ResponseType
 
 ```python
 class Response
+
 ```
 
 答题响应
@@ -24,6 +34,7 @@ class Response
 
 ```python
 class KnowledgeState
+
 ```
 
 知识状态
@@ -32,6 +43,7 @@ class KnowledgeState
 
 ```python
 class Suggestion
+
 ```
 
 学习建议
@@ -40,6 +52,7 @@ class Suggestion
 
 ```python
 class DiagnosisResult
+
 ```
 
 诊断结果
@@ -48,6 +61,7 @@ class DiagnosisResult
 
 ```python
 class HCDAlgorithm
+
 ```
 
 HCD (Hierarchical Cognitive Diagnosis) 算法
@@ -58,6 +72,7 @@ HCD (Hierarchical Cognitive Diagnosis) 算法
 
 ```python
 class DiagnosisEngine
+
 ```
 
 诊断引擎主类

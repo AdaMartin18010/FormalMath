@@ -536,7 +536,7 @@ export class ProofStrategyEngine {
       hasNegation: conclusion.includes('¬') || conclusion.includes('~') || conclusion.includes('not'),
       hasEquality: conclusion.includes('='),
       isAtomic: !/[∀∃∧∨¬→]/.test(conclusion) && !/forall|exists|->/.test(conclusion),
-      hasArithmetic: /[\+\-\*\/]/.test(conclusion) || /add|mul|sub|div/.test(conclusion),
+      hasArithmetic: /[+\-*/]/.test(conclusion) || /add|mul|sub|div/.test(conclusion),
       hasInductive: /Nat|List|Tree|inductive/.test(conclusion),
       conclusion,
       hypothesisCount: goal.hypotheses.length

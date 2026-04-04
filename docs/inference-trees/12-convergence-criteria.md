@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 收敛判别法决策链
 
 ## 概述
@@ -42,6 +50,7 @@ graph TD
     
     style B2 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style C3 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 核心判别法
@@ -49,6 +58,7 @@ graph TD
 ### 正项级数判别层次
 
 ```
+
 必要条件检验(aₙ→0)
     ↓ 通过
 比较判别法(找标准级数)
@@ -58,6 +68,7 @@ graph TD
     ├── 根值判别法(lim ⁿ√aₙ)
     │       └── 最强（与比值关系）
     └── 积分判别法(单调函数)
+
 ```
 
 ### 关键定理

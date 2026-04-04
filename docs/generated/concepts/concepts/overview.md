@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # FormalMath 概念总览
 **生成时间**: 2026-04-04 13:07:48
 **概念总数**: 2401

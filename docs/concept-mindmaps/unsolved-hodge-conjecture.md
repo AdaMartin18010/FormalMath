@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Hodge猜想 - 思维导图
 
 ## 概述
@@ -56,6 +61,7 @@ mindmap
       广义Hodge猜想
         Hodge子结构
         Grothendieck提出
+
 ```
 
 ---
@@ -100,6 +106,7 @@ graph TD
     
     style HC fill:#fff3e0
     style FC fill:#c8e6c9
+
 ```
 
 ---
@@ -135,6 +142,7 @@ graph TD
     style C fill:#ffcdd2
     style A fill:#e3f2fd
     style H fill:#fff3e0
+
 ```
 
 ---
@@ -182,6 +190,7 @@ mindmap
         已知反例存在
         Atiyah, Kollár
       理系数是正确表述
+
 ```
 
 ---
@@ -224,6 +233,7 @@ graph TD
     
     style T fill:#c8e6c9
     style P4 fill:#fff3e0
+
 ```
 
 ---
@@ -270,6 +280,7 @@ graph TD
     style H fill:#ffcdd2
     style T fill:#fff3e0
     style R1 fill:#e3f2fd
+
 ```
 
 ---
@@ -309,6 +320,7 @@ mindmap
       标准猜想
         Lefschetz标准猜想
         Hodge标准猜想
+
 ```
 
 ---
@@ -363,6 +375,7 @@ graph TD
     
     style R2 fill:#fff3e0
     style C1 fill:#e3f2fd
+
 ```
 
 ---
@@ -409,6 +422,7 @@ flowchart LR
     style K fill:#ffcdd2
     style L fill:#fff3e0
     style M fill:#e8f5e9
+
 ```
 
 ---

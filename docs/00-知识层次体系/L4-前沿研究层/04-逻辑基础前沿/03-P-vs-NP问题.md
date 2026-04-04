@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # P vs NP问题
 
 ## 前沿问题陈述
@@ -54,6 +62,7 @@ timeline
               : Strong Exponential
         2020s : 新进展
               : 平均复杂性
+
 ```
 
 ### 2.2 关键突破
@@ -88,6 +97,7 @@ graph TD
 
     style F fill:#ffcccc
     style G fill:#99ff99
+
 ```
 
 ### 3.2 依赖的L3理论
@@ -195,6 +205,7 @@ graph TD
 
     style B fill:#ffcccc
     style E fill:#99ff99
+
 ```
 
 ---
@@ -220,6 +231,7 @@ graph TD
     style C fill:#ccccff
     style D fill:#ffffcc
     style E fill:#ffccff
+
 ```
 
 ---

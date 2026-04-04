@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # merge_concepts
 
 **源文件**: `tools\merge_concepts.py`
@@ -8,6 +16,7 @@
 
 ```python
 def load_file(filepath)
+
 ```
 
 加载文件内容
@@ -20,6 +29,7 @@ def load_file(filepath)
 
 ```python
 def merge_concepts()
+
 ```
 
 合并新概念到主文件

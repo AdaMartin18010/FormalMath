@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 动态规划思维导图
 
 ## 概述
@@ -135,6 +143,7 @@ mindmap
         DQN
         A3C/PPO
         MuZero
+
 ```
 
 ## 核心概念详解

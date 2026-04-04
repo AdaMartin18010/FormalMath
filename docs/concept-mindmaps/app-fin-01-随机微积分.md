@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 随机微积分 - 思维导图
 
 ## 概述
@@ -67,6 +72,7 @@ mindmap
       应用
         风险中性测度
         等价鞅测度
+
 ```
 
 ---
@@ -93,6 +99,7 @@ graph TD
     
     subgraph 重要性质
         H --> I[鞅性质<br/>E[∫₀ᵗ HdW|ℱₛ] = ∫₀ˢ HdW]
+
         H --> J[二次变差<br/>⟨∫HdW⟩ₜ = ∫₀ᵗ H²ds]
         H --> K[Itô等距<br/>保持L²结构]
     end
@@ -101,6 +108,7 @@ graph TD
     style H fill:#fff3e0
     style I fill:#e8f5e9
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -134,6 +142,7 @@ mindmap
         期权定价
       Girsanov定理
         测度变换的显式公式
+
 ```
 
 ---
@@ -174,6 +183,7 @@ graph LR
     style A fill:#e3f2fd
     style E fill:#fff3e0
     style D fill:#e8f5e9
+
 ```
 
 ---
@@ -209,6 +219,7 @@ flowchart LR
     style E fill:#fff3e0
     style F fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---

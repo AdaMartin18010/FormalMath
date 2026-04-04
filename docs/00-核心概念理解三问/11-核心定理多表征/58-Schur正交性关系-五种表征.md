@@ -69,6 +69,7 @@ $$\left[ G \text{ 有限群 } \land \rho_i, \rho_j \text{ 不可约表示 } \rig
     └─ ...
     
     ⟨χᵢ, χⱼ⟩ = δᵢⱼ
+
 ```
 
 ### 2.2 正交性
@@ -81,6 +82,7 @@ $$\left[ G \text{ 有限群 } \land \rho_i, \rho_j \text{ 不可约表示 } \rig
     χ₂ ──┘
     
     ⟨χ₁, χ₂⟩ = 0
+
 ```
 
 ### 2.3 归一性
@@ -91,6 +93,7 @@ $$\left[ G \text{ 有限群 } \land \rho_i, \rho_j \text{ 不可约表示 } \rig
     ⟨χᵢ, χᵢ⟩ = 1
     
     这对应表示的"大小"
+
 ```
 
 ---
@@ -202,9 +205,10 @@ G = ['id', 'trans12', 'trans13', 'trans23', 'cycle123', 'cycle132']
 chars = s3_characters()
 is_orth, matrix = verify_schur_orthogonality(G, chars)
 print(f"Schur正交性成立: {is_orth}")
+
 ```
 
-### 4.2 特征标分解
+## 4.2 特征标分解
 
 ```python
 def decompose_character(G, chi, irreducible_characters):
@@ -256,6 +260,7 @@ def verify_decomposition(G, chi, irreducible_characters, coefficients):
     is_valid = error < 1e-10
     
     return is_valid, error
+
 ```
 
 ### 4.3 应用：计算表示维数
@@ -280,6 +285,7 @@ def compute_representation_dimensions(G, irreducible_characters):
         dimensions.append(dimension)
     
     # 验证：Σᵢ (dim Vᵢ)² = |G|
+
     total = sum(d**2 for d in dimensions)
     is_valid = total == len(G)
     
@@ -288,6 +294,7 @@ def compute_representation_dimensions(G, irreducible_characters):
 # 例子：验证S₃
 # S₃的不可约表示维数：1, 1, 2
 # 1² + 1² + 2² = 6 = |S₃| ✓
+
 ```
 
 ---

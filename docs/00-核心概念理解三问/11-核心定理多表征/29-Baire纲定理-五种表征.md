@@ -45,6 +45,7 @@ theorem baire_category {X : Type*} [MetricSpace X] [CompleteSpace X]
     {U : ℕ → Set X} (hU : ∀ n, IsOpen (U n)) (hU_dense : ∀ n, Dense (U n)) :
     Dense (⋂ n, U n) := by
   exact dense_iInter_of_isOpen_nat hU hU_dense
+
 ```
 
 ---
@@ -62,6 +63,7 @@ theorem baire_category {X : Type*} [MetricSpace X] [CompleteSpace X]
     ∩ Uₙ (稠密):  ●○○○●●○●○○●●
 
 每层"打孔"，但总有点保留
+
 ```
 
 ### 2.2 反例：非完备空间
@@ -71,6 +73,7 @@ theorem baire_category {X : Type*} [MetricSpace X] [CompleteSpace X]
 ├─ 每个Uₙ在ℚ中稠密开
 ├─ ∩ Uₙ = ∅ (空集)
 └─ 失败！因为ℚ不完备
+
 ```
 
 ---
@@ -130,6 +133,7 @@ def demonstrate_baire():
     # 应该接近1
 
 demonstrate_baire()
+
 ```
 
 ### 4.2 应用：存在性证明
@@ -148,6 +152,7 @@ def baire_existence_example():
 
     print("Weierstrass函数：连续但处处不可微")
     return x, y
+
 ```
 
 ---
@@ -161,6 +166,7 @@ Baire空间的"大小"分类：
 ├─ 第一纲集：可数个无处稠密集的并（"小"）
 ├─ 第二纲集：不是第一纲（"大"）
 └─ Baire定理：完备空间是第二纲
+
 ```
 
 ### 5.2 推广
@@ -176,6 +182,7 @@ Baire纲定理 ⟹ 泛函分析三大定理：
 ├─ 一致有界原理 (Banach-Steinhaus)
 ├─ 开映射定理
 └─ 闭图像定理
+
 ```
 
 ---

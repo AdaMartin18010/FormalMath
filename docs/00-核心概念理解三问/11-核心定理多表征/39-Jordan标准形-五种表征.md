@@ -47,6 +47,7 @@ theorem jordan_normal_form_exists {K : Type*} [Field K] [IsAlgClosed K]
     ∃ (P : Matrix (Fin n) (Fin n) K) (hP : P.det ≠ 0) (J : Matrix (Fin n) (Fin n) K),
       J.IsJordanNormalForm ∧ A = P⁻¹ * J * P := by
   sorry  -- 需要详细的线性代数形式化
+
 ```
 
 ---
@@ -69,6 +70,7 @@ Jordan块J₃(λ)的作用：
     e₃ ←─λ── e₃
 
 T(eᵢ) = λeᵢ + eᵢ₋₁ (非对角线性依赖)
+
 ```
 
 ### 2.2 不变子空间分解
@@ -79,6 +81,7 @@ V = V₁ ⊕ V₂ ⊕ ... ⊕ Vₖ
    J₁   J₂        Jₖ
 
 每个Vᵢ是Jordan块对应的不变子空间
+
 ```
 
 ---
@@ -138,9 +141,10 @@ A = np.array([[5, 4, 2, 1],
 J, P = compute_jordan_form(A)
 print("Jordan-like form (Schur):")
 print(J)
+
 ```
 
-### 4.2 符号计算
+## 4.2 符号计算
 
 ```python
 from sympy import Matrix, symbols, simplify
@@ -156,6 +160,7 @@ A = [[2, 1], [0, 2]]
 P, J = jordan_form_symbolic(A)
 print(f"Jordan标准形:\n{J}")
 print(f"变换矩阵P:\n{P}")
+
 ```
 
 ---
@@ -169,6 +174,7 @@ Jordan标准形 = 有限生成k[T]-模的分解
 ├─ V是k[T]-模（T作用于V）
 ├─ 结构定理：V ≅ ⊕ k[T]/(T-λ)^n
 └─ 每个因子对应一个Jordan块
+
 ```
 
 ### 5.2 推广

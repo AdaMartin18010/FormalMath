@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # assessment_system
 
 **源文件**: `tools\assessment-system\assessment_system.py`
@@ -8,6 +16,7 @@
 
 ```python
 class AssessmentConfig
+
 ```
 
 评估配置
@@ -16,6 +25,7 @@ class AssessmentConfig
 
 ```python
 class AssessmentSession
+
 ```
 
 评估会话
@@ -24,6 +34,7 @@ class AssessmentSession
 
 ```python
 class AssessmentResult
+
 ```
 
 评估结果
@@ -32,6 +43,7 @@ class AssessmentResult
 
 ```python
 class FormalMathAssessmentSystem
+
 ```
 
 FormalMath 评估系统核心类

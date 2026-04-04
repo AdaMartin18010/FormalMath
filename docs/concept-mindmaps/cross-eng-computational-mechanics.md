@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×工程学：计算力学的数值方法
 
 ## 概述
@@ -96,6 +101,7 @@ mindmap
         并行算法
         GPU加速
         云计算
+
 ```
 
 ---
@@ -122,6 +128,7 @@ graph TD
     style V fill:#e3f2fd
     style D fill:#e8f5e9
     style E fill:#fff3e0
+
 ```
 
 ---
@@ -177,6 +184,7 @@ mindmap
       LES/RANS耦合
         边界层RANS
         分离区LES
+
 ```
 
 ---

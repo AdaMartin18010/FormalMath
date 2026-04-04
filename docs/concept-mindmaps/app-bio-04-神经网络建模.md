@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 神经网络建模 - 思维导图
 
 ## 概述
@@ -57,6 +62,7 @@ mindmap
        attractor网络
         连续attractor
         决策动力学
+
 ```
 
 ---
@@ -83,6 +89,7 @@ graph TD
     style B fill:#e3f2fd
     style H fill:#fff3e0
     style E fill:#e8f5e9
+
 ```
 
 ---
@@ -122,6 +129,7 @@ mindmap
         网络分析
       线性阈值
         [x]⁺ = max(0,x)
+
 ```
 
 ---
@@ -162,6 +170,7 @@ graph TD
     style B fill:#e3f2fd
     style E fill:#e8f5e9
     style G fill:#ffcdd2
+
 ```
 
 ---
@@ -196,6 +205,7 @@ mindmap
         选择性同步
       记忆
         持续活动
+
 ```
 
 ---
@@ -227,6 +237,7 @@ flowchart LR
     
     style C fill:#e3f2fd
     style F fill:#fff3e0
+
 ```
 
 ---

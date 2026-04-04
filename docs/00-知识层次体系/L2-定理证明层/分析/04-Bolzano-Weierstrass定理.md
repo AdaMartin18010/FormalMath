@@ -33,6 +33,7 @@ flowchart TD
     C --> D[Step 4: Cauchy序列<br/>子列收敛]
     
     style D fill:#e8f5e9,stroke:#4caf50
+
 ```
 
 #### 步骤1：有界性假设
@@ -115,6 +116,7 @@ flowchart TB
     L2BW --> L3ST[L3: 序列紧空间]
     
     style L2BW fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+
 ```
 
 ---

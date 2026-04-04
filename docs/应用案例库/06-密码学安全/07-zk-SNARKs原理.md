@@ -41,12 +41,16 @@ msc_secondary: ['14Nxx', '12Exx', '13Cxx']
 **步骤1**: 将程序转换为算术电路
 
 ```
+
 程序: c = a * b + a
       
 电路: a -----\
+
       |      * ----\
       |            + ---> c
+
       b -----/
+
 ```
 
 **门约束**: 每个门的输入输出满足代数关系
@@ -141,6 +145,7 @@ $$e(A, B) = e(\alpha, \beta) \cdot e(C, \delta) \cdot e(\text{公开输入多项
 ### 从程序到证明的流程
 
 ```
+
 高级程序
     ↓ (编译器)
 算术电路 (R1CS)
@@ -150,6 +155,7 @@ $$e(A, B) = e(\alpha, \beta) \cdot e(C, \delta) \cdot e(\text{公开输入多项
 简洁证明 π
     ↓ (验证者)
 接受/拒绝
+
 ```
 
 ---
@@ -196,6 +202,7 @@ $$e(A, B) = e(\alpha, \beta) \cdot e(C, \delta) \cdot e(\text{公开输入多项
 ### 实际编程
 
 **circom语言**:
+
 ```circom
 template Multiplier() {
     signal input a;
@@ -203,14 +210,17 @@ template Multiplier() {
     signal output c;
     c <== a * b;
 }
+
 ```
 
 **snarkjs工具链**:
+
 ```bash
 circom circuit.circom --r1cs --wasm
 snarkjs groth16 setup circuit.r1cs ptau_0001.ptau circuit_0000.zkey
 snarkjs groth16 prove circuit_0000.zkey input.json proof.json public.json
 snarkjs groth16 verify verification_key.json public.json proof.json
+
 ```
 
 ---

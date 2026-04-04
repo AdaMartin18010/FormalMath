@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 隐函数定理证明树
 
 ## 概述
@@ -41,6 +49,7 @@ graph TD
     
     style D1 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style B2 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 核心定理
@@ -56,7 +65,9 @@ $$d(T(x), T(y)) \leq k \cdot d(x, y), \quad \forall x, y \in X$$
 **定理**：完备度量空间上的压缩映射有唯一不动点。
 
 **证明框架**：
+
 ```
+
 任取x₀，构造迭代x_{n+1} = T(x_n)
     ↓
 证明{x_n}是Cauchy列
@@ -66,6 +77,7 @@ $$d(T(x), T(y)) \leq k \cdot d(x, y), \quad \forall x, y \in X$$
 连续性保证T(x*) = x*
     ↓
 压缩性保证唯一性
+
 ```
 
 ### 隐函数定理
@@ -73,7 +85,9 @@ $$d(T(x), T(y)) \leq k \cdot d(x, y), \quad \forall x, y \in X$$
 **定理**：设 $F: \mathbb{R}^{n+m} \to \mathbb{R}^m$ 是 $C^1$ 映射，$F(a, b) = 0$，且 $\frac{\partial F}{\partial y}(a, b)$ 可逆，则存在局部隐函数 $y = f(x)$。
 
 **依赖关系**：
+
 ```
+
 完备性
     ↓
 Banach不动点
@@ -81,4 +95,5 @@ Banach不动点
 反函数定理
     ↓
 隐函数定理
+
 ```

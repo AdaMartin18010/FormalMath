@@ -11,7 +11,7 @@ msc_secondary: "97Mxx"
 
 ---
 
-## 1. 引言
+## 一、引言
 
 椭圆曲线密码学(Elliptic Curve Cryptography, ECC)是现代密码学的核心支柱之一。与基于整数分解(RSA)或离散对数(DSA)的传统密码系统相比，ECC在提供同等安全级别的情况下，使用更短的密钥长度，计算效率更高。
 
@@ -25,7 +25,7 @@ msc_secondary: "97Mxx"
 
 ---
 
-## 2. 数学基础
+## 二、数学基础
 
 ### 2.1 椭圆曲线的定义
 
@@ -71,7 +71,7 @@ $$|q + 1 - \#E(\mathbb{F}_q)| \leq 2\sqrt{q}$$
 
 ---
 
-## 3. 标准曲线参数
+## 三、标准曲线参数
 
 ### 3.1 secp256k1 (比特币曲线)
 
@@ -88,8 +88,10 @@ secp256k1是SECG标准中的曲线，被比特币和以太坊采用。
 **基点** $G = (G_x, G_y)$:
 
 ```
+
 Gx = 0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798
 Gy = 0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8
+
 ```
 
 ### 3.2 Curve25519 (蒙哥马利曲线)
@@ -119,7 +121,7 @@ NIST推荐的标准曲线，广泛应用于TLS、SSH等协议。
 
 ---
 
-## 4. 核心算法实现
+## 四、核心算法实现
 
 ### 4.1 纯Python椭圆曲线实现
 
@@ -775,9 +777,10 @@ def run_all_tests():
 
 if __name__ == "__main__":
     run_all_tests()
+
 ```
 
-### 4.2 使用标准库的完整实现
+## 4.2 使用标准库的完整实现
 
 ```python
 """
@@ -877,11 +880,12 @@ def demo_cryptography_library():
 if __name__ == "__main__":
     demo_ecdsa_with_library()
     demo_cryptography_library()
+
 ```
 
 ---
 
-## 5. 安全性分析
+## 五、安全性分析
 
 ### 5.1 安全级别对照表
 
@@ -929,7 +933,7 @@ if __name__ == "__main__":
 
 ---
 
-## 6. 实际应用场景
+## 六、实际应用场景
 
 ### 6.1 比特币/以太坊
 
@@ -989,9 +993,10 @@ if __name__ == "__main__":
     address = generate_bitcoin_address(private_key)
     print(f"私钥: {private_key.hex()}")
     print(f"比特币地址: {address}")
+
 ```
 
-### 6.2 TLS/HTTPS
+## 6.2 TLS/HTTPS
 
 ECC在TLS中的应用：
 
@@ -1008,17 +1013,19 @@ Signal协议使用X3DH (Extended Triple Diffie-Hellman)：
 
 ---
 
-## 7. 与形式化证明的联系
+## 七、与形式化证明的联系
 
 ### 7.1 群公理的形式化
 
 椭圆曲线点加法满足群的四条公理，可在Coq/Isabelle中形式化证明：
 
 ```
+
 1. 封闭性: ∀P,Q ∈ E(𝔽_p), P+Q ∈ E(𝔽_p)
 2. 结合律: ∀P,Q,R ∈ E(𝔽_p), (P+Q)+R = P+(Q+R)
 3. 单位元: ∃O, ∀P ∈ E(𝔽_p), P+O = O+P = P
 4. 逆元: ∀P ∈ E(𝔽_p), ∃(-P), P+(-P) = O
+
 ```
 
 ### 7.2 ECDLP困难性的数论基础
@@ -1035,7 +1042,7 @@ ECDH和ECDSA的安全性可在计算模型和符号模型中形式化验证：
 
 ---
 
-## 8. 参考文献
+## 八、参考文献
 
 1. **Hankerson, Menezes, Vanstone**: "Guide to Elliptic Curve Cryptography" (2004)
 2. **Washington**: "Elliptic Curves: Number Theory and Cryptography" (2nd ed., 2008)
@@ -1048,7 +1055,7 @@ ECDH和ECDSA的安全性可在计算模型和符号模型中形式化验证：
 
 ---
 
-## 9. 总结
+## 九、总结
 
 椭圆曲线密码学是现代密码学的基石，其安全性建立在椭圆曲线离散对数问题的计算困难性之上。与RSA相比，ECC在同等安全级别下提供更短的密钥和更高的效率，使其成为移动设备、物联网和区块链等场景的首选方案。
 

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 类型论 (Type Theory)
 
 ## 模块概述
@@ -17,7 +25,9 @@
 ## 学习路径
 
 ```
+
 λ演算 → 简单类型 → 多态类型 → 依赖类型 → 归纳族 → HoTT
+
 ```
 
 ## 前置知识

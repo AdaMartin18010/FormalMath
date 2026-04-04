@@ -5,7 +5,7 @@ import {
   GitBranch, 
   Brain, 
   BarChart3, 
-  Sitemap, 
+  Layout, 
   History,
   ArrowRight,
   Sparkles,
@@ -75,7 +75,7 @@ const features = [
     color: 'bg-orange-500',
   },
   {
-    icon: <Sitemap className="w-6 h-6 text-white" />,
+    icon: <Layout className="w-6 h-6 text-white" />,
     title: '决策树',
     description: '基于条件判断探索数学问题的解决方案，找到最优路径。',
     to: '/decision-tree',

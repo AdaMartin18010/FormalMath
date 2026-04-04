@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "07 Python实现 李代数算法"
 msc_primary: ["68W30"]
@@ -18,7 +23,7 @@ msc_secondary: ["17B99"]
 - **半单李代数**：Killing形式、分类算法
 - **经典李代数**：sl(n), so(n), sp(2n)等经典李代数的算法
 
-## 1. 李代数基础算法
+## 一、李代数基础算法
 
 ### 1.1 李代数基本运算
 
@@ -95,6 +100,7 @@ class MatrixLieAlgebra(LieAlgebra):
                     trace += 1
                     break
         return trace
+
 ```
 
 ### 1.2 子代数和理想
@@ -152,6 +158,7 @@ class LieIdeal(LieSubalgebra):
                 if not self.is_linear_combination(bracket, self.basis):
                     return False
         return True
+
 ```
 
 ### 1.3 可解和幂零李代数
@@ -232,9 +239,10 @@ class NilpotentLieAlgebra:
         """判断是否幂零"""
         series = self.lower_central_series()
         return series[-1].dimension() == 0
+
 ```
 
-## 2. 李代数表示算法
+## 二、李代数表示算法
 
 ### 2.1 表示的基本运算
 
@@ -310,6 +318,7 @@ class AdjointRepresentation(LieAlgebraRepresentation):
                 coefficients[i] = 1
                 break
         return coefficients
+
 ```
 
 ### 2.2 特征标计算
@@ -351,6 +360,7 @@ class CharacterCalculator:
             integral += char1 * char2
 
         return integral
+
 ```
 
 ### 2.3 不可约表示
@@ -404,9 +414,10 @@ class IrreducibleRepresentation:
         """判断是否不可约"""
         invariant_subspaces = self.find_invariant_subspaces()
         return len(invariant_subspaces) <= 1
+
 ```
 
-## 3. 根系理论算法
+## 三、根系理论算法
 
 ### 3.1 Cartan子代数
 
@@ -513,6 +524,7 @@ class RootSystem:
         """判断是否为单根"""
         # 简化实现
         return True
+
 ```
 
 ### 3.2 Weyl群算法
@@ -576,6 +588,7 @@ class WeylGroup:
     def order(self):
         """Weyl群的阶数"""
         return len(self.generate_group())
+
 ```
 
 ### 3.3 最高权表示算法
@@ -652,9 +665,10 @@ class HighestWeightRepresentation:
     def dimension(self):
         """模的维数"""
         return len(self.module)
+
 ```
 
-## 4. 半单李代数算法
+## 四、半单李代数算法
 
 ### 4.1 Killing形式计算
 
@@ -705,6 +719,7 @@ class SemisimpleLieAlgebra:
         """寻找Levi子代数"""
         # 简化实现
         return self.lie_algebra
+
 ```
 
 ### 4.2 经典李代数算法
@@ -783,9 +798,10 @@ class ClassicalLieAlgebra:
             'basis': basis,
             'dimension': lambda: n * (2*n + 1)
         })()
+
 ```
 
-## 5. 应用实例
+## 五、应用实例
 
 ### 5.1 SU(2)算法
 
@@ -842,6 +858,7 @@ def su3_example():
     print(f"Weyl群阶数: {weyl_group.order()}")
 
     return su3, cartan, root_system, weyl_group
+
 ```
 
 ### 5.2 表示论算法
@@ -870,9 +887,10 @@ def representation_example():
     print(f"伴随表示是否不可约: {is_irr}")
 
     return adjoint_rep, char_calc, irr_checker
+
 ```
 
-## 6. 总结
+## 六、总结
 
 本文档提供了李代数理论的完整Python算法实现：
 
@@ -900,7 +918,7 @@ def representation_example():
 
 这个Python实现为李代数理论提供了实用的计算工具，便于理论研究和实际应用。
 
-## 7. 可视化工具
+## 七、可视化工具
 
 ### 7.1 根系可视化
 
@@ -981,6 +999,7 @@ def visualize_weyl_group(weyl_group, dimension: int = 2):
         ax.grid(True, alpha=0.3)
         ax.set_title("Weyl群图")
         plt.show()
+
 ```
 
 ### 7.2 李代数结构可视化
@@ -1042,9 +1061,10 @@ def visualize_commutator_table(lie_algebra: LieAlgebra):
 
     plt.title("李括号表")
     plt.show()
+
 ```
 
-## 8. 性能优化与测试
+## 八、性能优化与测试
 
 ### 8.1 缓存优化
 
@@ -1119,6 +1139,7 @@ class OptimizedMatrixLieAlgebra(MatrixLieAlgebra):
 
         self._killing_matrix = killing_matrix
         return killing_matrix
+
 ```
 
 ### 8.2 测试套件
@@ -1162,9 +1183,10 @@ class TestLieAlgebra(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 ```
 
-## 9. 李代数计算器
+## 九、李代数计算器
 
 ### 9.1 综合计算器
 
@@ -1326,9 +1348,10 @@ class LieAlgebraCalculator:
         print(f"  秩: {killing_info['rank']}")
         print(f"  是否非退化: {killing_info['is_non_degenerate']}")
         print("=" * 60)
+
 ```
 
-## 10. 完整应用示例
+## 十、完整应用示例
 
 ### 10.1 李代数综合示例
 
@@ -1378,6 +1401,7 @@ def complete_lie_algebra_example():
 
 if __name__ == '__main__':
     complete_lie_algebra_example()
+
 ```
 
 ## 11. 总结

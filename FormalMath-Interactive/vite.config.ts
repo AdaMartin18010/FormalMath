@@ -192,6 +192,7 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
+      external: ['framer-motion'],
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],

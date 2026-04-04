@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 msc_primary: "03E99"
 ---
@@ -46,9 +51,10 @@ import Mathlib.SetTheory.Ordinal.Basic
 
 -- 设置命名空间
 namespace SetTheory
+
 ```
 
-## 1. 基础定义
+## 一、基础定义
 
 ```lean
 -- 集合类型定义
@@ -105,9 +111,10 @@ theorem pair_properties {α : Type u} (x y : α) :
   · intro z hz
     simp [Pair] at hz
     exact hz
+
 ```
 
-## 2. ZFC公理系统
+## 二、ZFC公理系统
 
 ```lean
 -- ZFC公理系统实现
@@ -157,6 +164,7 @@ theorem axiom_of_power_set {α : Type u} (A : Set α) :
 theorem axiom_schema_of_separation {α : Type u} (A : Set α) (P : α → Prop) :
   ∃ B : Set α, ∀ x : α, x ∈ B ↔ x ∈ A ∧ P x := by
   existsi {x ∈ A | P x}
+
   intro x
   simp [mem_sep]
 
@@ -193,9 +201,10 @@ theorem axiom_of_choice {α : Type u} (F : Set (Set α)) :
   intro h
   -- 选择公理在Lean中通过Classical.choice实现
   sorry
+
 ```
 
-## 3. 集合运算
+## 三、集合运算
 
 ```lean
 -- 集合运算实现
@@ -294,9 +303,10 @@ theorem cartesian_product_properties {α β : Type u} (A : Set α) (B : Set β) 
   ∀ p : α × β, p ∈ (CartesianProduct α β A B) ↔ p.1 ∈ A ∧ p.2 ∈ B := by
   intro p
   simp [CartesianProduct, mem_prod]
+
 ```
 
-## 4. 关系与函数
+## 四、关系与函数
 
 ```lean
 -- 关系与函数实现
@@ -353,9 +363,10 @@ theorem injective_properties {α β : Type u} (f : α → β) :
 theorem surjective_properties {α β : Type u} (f : α → β) (B : Set β) :
   Surjective f B ↔ ∀ y ∈ B, ∃ x : α, f x = y := by
   simp [Surjective]
+
 ```
 
-## 5. 序数与基数
+## 五、序数与基数
 
 ```lean
 -- 序数与基数实现
@@ -419,9 +430,10 @@ def ContinuumHypothesis : Prop := 2 ^ Cardinal.aleph 0 = Cardinal.aleph 1
 /-- 广义连续统假设：对所有序数α，2^ℵ_α = ℵ_{α+1} -/
 def GeneralizedContinuumHypothesis : Prop :=
   ∀ α : Ordinal, 2 ^ Cardinal.aleph α = Cardinal.aleph (α + 1)
+
 ```
 
-## 6. 性能测试
+## 六、性能测试
 
 ```lean
 -- 性能测试实现
@@ -491,9 +503,10 @@ def complexity_test : IO Unit := do
 
 -- 运行性能测试
 #eval complexity_test
+
 ```
 
-## 7. 验证测试
+## 七、验证测试
 
 ```lean
 -- 验证测试实现
@@ -588,6 +601,7 @@ def benchmark_test : IO Unit := do
 
 -- 运行基准测试
 #eval benchmark_test
+
 ```
 
 ## 总结

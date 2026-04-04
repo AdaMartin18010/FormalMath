@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 变分方法 - 思维导图
 
 ## 概述
@@ -119,6 +124,7 @@ mindmap
         能量泛函
         基态能量
         轨道稳定性
+
 ```
 
 ---
@@ -146,6 +152,7 @@ graph TD
     style C fill:#e8f5e9
     style D fill:#fff3e0
     style E4 fill:#fce4ec
+
 ```
 
 ---
@@ -156,6 +163,7 @@ graph TD
 graph TD
     A[J[u] = ∫_Ω L(x,u,∇u)dx] --> B[变分: u → u + εφ]
     B --> C[计算 dJ/dε|_{ε=0} = 0]
+
     C --> D[分部积分]
     D --> E[E-L方程:
     -∂_i(∂L/∂p_i) + ∂L/∂u = 0]
@@ -167,6 +175,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#e8f5e9
     style F fill:#fff3e0
+
 ```
 
 ---
@@ -189,6 +198,7 @@ graph LR
     style A fill:#ffcdd2
     style C fill:#fff3e0
     style E fill:#e8f5e9
+
 ```
 
 ---
@@ -216,6 +226,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#e8f5e9
     style F fill:#fff3e0
+
 ```
 
 ---
@@ -256,6 +267,7 @@ mindmap
       强对偶
         inf = sup
         鞍点存在
+
 ```
 
 ---
@@ -291,6 +303,7 @@ graph TD
     style A fill:#e3f2fd
     style C fill:#fff3e0
     style F fill:#e8f5e9
+
 ```
 
 ---
@@ -311,6 +324,7 @@ graph LR
     style A fill:#e3f2fd
     style B fill:#fff3e0
     style C fill:#e8f5e9
+
 ```
 
 ---

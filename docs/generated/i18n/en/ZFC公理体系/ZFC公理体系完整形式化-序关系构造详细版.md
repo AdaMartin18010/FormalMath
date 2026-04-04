@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: [🇨🇳 中文](../zh/ZFC公理体系\ZFC公理体系完整形式化-序关系构造详细版.md) | **🇬🇧 English**
@@ -94,6 +99,7 @@ Proof：
 (2) 对称性：如果 R 是对称的，则对于所有 a,b ∈ A，如果 (a,b) ∈ R，则 (b,a) ∈ R
 (3) 反对称性：如果 R 是反对称的，则对于所有 a,b ∈ A，如果 (a,b) ∈ R 和 (b,a) ∈ R，则 a = b
 (4) 传递性：如果 R 是传递的，则对于所有 a,b,c ∈ A，如果 (a,b) ∈ R 和 (b,c) ∈ R，则 (a,c) ∈ R
+
 ```
 
 ### 2. 等价关系
@@ -120,6 +126,7 @@ Proof：
 (1) 自反性：由Definition直接得到
 (2) 对称性：由Definition直接得到
 (3) 传递性：由Definition直接得到
+
 ```
 
 #### 2.2 等价类
@@ -145,6 +152,7 @@ Proof：
 (3) 如果 [a]_R ∩ [b]_R ≠ ∅，则存在 c ∈ [a]_R ∩ [b]_R
    因此 a R c 和 b R c，由对称性和传递性 a R b
    由 (2)，[a]_R = [b]_R
+
 ```
 
 ### 3. 偏序关系
@@ -175,6 +183,7 @@ Proof：
    由 ≤ 的传递性，a ≤ c
    如果 a = c，则 a ≤ b ≤ a，由反对称性 a = b，矛盾
    因此 a < c
+
 ```
 
 #### 3.2 偏序集的基本概念
@@ -205,6 +214,7 @@ Proof：
 (3) 由于 u₂ 是上界，u₁ ≤ u₂
 (4) 由反对称性，u₁ = u₂
 (5) 最大下界的唯一性类似Proof
+
 ```
 
 ### 4. 全序关系
@@ -235,6 +245,7 @@ Proof：
    - 对于 n+1 个元素的集合，取一个元素 a，其余 n 个元素有最小元素 b
    - 比较 a 和 b，取较小的作为最小元素
 (3) 由 (2) 得到
+
 ```
 
 #### 4.2 全序集的构造
@@ -249,6 +260,7 @@ Proof：
 (1) 对于任意自然数 m, n，要么 m ∈ n，要么 m = n，要么 n ∈ m
 (2) 这等价于 m ≤ n 或 n ≤ m
 (3) 因此 N 是全序集
+
 ```
 
 **Theorem 4.2.2** (整数的全序性)
@@ -262,6 +274,7 @@ Proof：
 (2) Definition序关系：[(a,b)] ≤ [(c,d)] ↔ a + d ≤ b + c
 (3) 这个序关系是全序的
 (4) 因此 Z 是全序集
+
 ```
 
 ### 5. 良序关系
@@ -290,6 +303,7 @@ Proof：
 (3) 超限归纳法：对于良序集 (A,≤)，如果性质 P 满足：
    对于任意 a ∈ A，如果对于所有 b < a，P(b) 成立，则 P(a) 成立
    那么对于所有 a ∈ A，P(a) 成立
+
 ```
 
 #### 5.2 良序Theorem
@@ -306,6 +320,7 @@ Proof：
 (3) 使用超限递归构造良序
 (4) Definition序关系：a < b 如果 a 在构造过程中先于 b 出现
 (5) Proof这个序关系是良序
+
 ```
 
 #### 5.3 序数
@@ -331,6 +346,7 @@ Proof：
 (2) ω 是传递的良序集
 (3) 如果 α 是序数，则 α+1 = α ∪ {α} 是传递的良序集
 (4) 如果 {α_i} 是序数集合，则 ∪α_i 是传递的良序集
+
 ```
 
 ### 6. 序关系的应用
@@ -348,6 +364,7 @@ Proof：
 (2) 序数理论：序数作为良序集的Isomorphism类
 (3) 超限归纳：基于良序的超限归纳法
 (4) 选择公理：良序Theorem等价于选择公理
+
 ```
 
 **应用案例 6.1.1** (序关系在基数理论中的应用)
@@ -381,6 +398,7 @@ Proof：
 (2) 布尔代数：布尔代数作为特殊的格
 (3) Field Theory：有序Field的概念
 (4) Ring Theory：有序Ring的概念
+
 ```
 
 **应用案例 6.2.1** (序关系在格论中的应用)
@@ -414,6 +432,7 @@ Proof：
 (2) 紧性：序紧性的概念
 (3) Connected性：序Connected性的概念
 (4) 分离性：序分离性的概念
+
 ```
 
 **应用案例 6.3.1** (序关系在序拓扑中的应用)
@@ -480,6 +499,7 @@ Proof：
 (1) 偏序性：直接验证自反性、反对称性、传递性
 (2) 全序性：如果 A 和 B 都是全序集，则乘积也是全序集
 (3) 良序性：如果 A 和 B 都是良序集，则乘积也是良序集
+
 ```
 
 #### 7.2 字典序
@@ -497,6 +517,7 @@ $$(a_1, b_1) < (a_2, b_2) \leftrightarrow a_1 <_A a_2 \lor (a_1 = a_2 \land b_1 
 Proof：
 (1) 全序性：对于任意 (a₁,b₁) 和 (a₂,b₂)，要么 a₁ < a₂，要么 a₁ = a₂ 且 b₁ < b₂，要么 a₂ < a₁
 (2) 良序性：任意非空子集有最小元素
+
 ```
 
 ### 8. 结论
@@ -571,6 +592,7 @@ def Antisymmetric {α : Type} (R : Relation α) : Prop :=
 -- Transitivity
 def Transitive {α : Type} (R : Relation α) : Prop :=
   ∀ x y z : α, R x y → R y z → R x z
+
 ```
 
 ### 等价关系形式化
@@ -593,6 +615,7 @@ def EquivClass {α : Type} (R : EquivalenceRelation α) (a : α) : Set α :=
 -- Quotient set
 def QuotientSet {α : Type} (R : EquivalenceRelation α) : Type :=
   Quotient (Setoid.mk R.rel R.refl R.symm R.trans)
+
 ```
 
 ### 偏序关系形式化
@@ -631,6 +654,7 @@ def Supremum {α : Type} [PartialOrder α] (S : Set α) (x : α) : Prop :=
 -- Infimum
 def Infimum {α : Type} [PartialOrder α] (S : Set α) (x : α) : Prop :=
   LowerBound S x ∧ ∀ y, LowerBound S y → PartialOrder.rel (inferInstance : PartialOrder α) y x
+
 ```
 
 ### 全序关系形式化
@@ -655,6 +679,7 @@ theorem total_order_properties {α : Type} [TotalOrder α] (x y : α) :
 begin
   exact TotalOrder.total (inferInstance : TotalOrder α) x y
 end
+
 ```
 
 ### 良序关系形式化
@@ -687,6 +712,7 @@ structure Ordinal where
   carrier : Type
   order : WellOrder carrier
   transitive : ∀ x ∈ carrier, ∀ y ∈ x, y ∈ carrier
+
 ```
 
 ### 序关系构造方法形式化
@@ -718,6 +744,7 @@ def LexicographicOrder {α β : Type} [TotalOrder α] [TotalOrder β] :
   trans := sorry,
   total := sorry
 }
+
 ```
 
 ### 应用案例：序关系在计算机科学中的应用
@@ -744,4 +771,5 @@ def topological_sort {α : Type} [PartialOrder α] (graph : α → List α) :
   -- 拓扑排序算法
   -- Topological sort algorithm
   sorry
+
 ```

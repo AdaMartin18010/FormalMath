@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # FFT算法 (Fast Fourier Transform)
 
 ## 中心概念精确定义
@@ -271,6 +279,7 @@ mindmap
       图像压缩
       通信系统
       科学计算
+
 ```
 
 ---

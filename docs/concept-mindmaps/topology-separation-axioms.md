@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 分离公理思维导图
 
 ## 概述
@@ -76,13 +84,16 @@ mindmap
         重要判定定理
       Nagata-Smirnov
         一般度量化定理
+
 ```
 
 ## 分离公理层级
 
 ```
+
 T₆(完美正规) ⇒ T₅(完全正规) ⇒ T₄(正规) ⇒ T₃(正则) 
     ⇒ T₂(豪斯多夫) ⇒ T₁ ⇒ T₀
+
 ```
 
 ## 核心定理

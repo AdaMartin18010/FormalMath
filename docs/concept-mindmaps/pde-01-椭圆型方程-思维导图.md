@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 椭圆型方程 - 思维导图
 
 ## 概述
@@ -39,14 +44,17 @@ mindmap
     边值问题
       Dirichlet问题
         u|∂Ω = g
+
         存在唯一性
         极大值原理
       Neumann问题
         ∂u/∂n|∂Ω = g
+
         相容性条件
         常数解自由度
       Robin问题
         (∂u/∂n + σu)|∂Ω = g
+
         混合边界条件
       斜导数问题
         一般边界条件
@@ -80,6 +88,7 @@ mindmap
     极大值原理
       弱极大值原理
         sup u ≤ sup u⁺|∂Ω
+
         比较原理
         唯一性证明
       强极大值原理
@@ -116,6 +125,7 @@ mindmap
         积分表示
         对称性
         估计性质
+
 ```
 
 ---
@@ -146,6 +156,7 @@ graph TD
     style H fill:#ffcdd2
     style L fill:#e8f5e9
     style M fill:#e8f5e9
+
 ```
 
 ---
@@ -177,6 +188,7 @@ graph LR
     style E fill:#fff3e0
     style F fill:#e8f5e9
     style H fill:#fce4ec
+
 ```
 
 ---
@@ -198,6 +210,7 @@ graph TD
     style H1 fill:#fff3e0
     style H2 fill:#e8f5e9
     style Can fill:#e3f2fd
+
 ```
 
 ---
@@ -231,6 +244,7 @@ mindmap
       完全非线性
         Monge-Ampère方程
         Aleksandrov极值原理
+
 ```
 
 ---

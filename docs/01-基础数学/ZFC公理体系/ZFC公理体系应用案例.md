@@ -2,6 +2,9 @@
 msc_primary: "03E20"
 msc_secondary: ['03E30', '03E15', '03E10']
 ---
+msc_primary: "03E20"
+msc_secondary: ['03E30', '03E15', '03E10']
+---
 
 # ZFC公理体系应用案例
 
@@ -65,6 +68,7 @@ data TypeCardinal =
   ProductCardinal TypeCardinal TypeCardinal |
   FunctionCardinal TypeCardinal TypeCardinal |
   RecursiveCardinal TypeCardinal |
+
   DependentCardinal (TypeCardinal -> TypeCardinal)
 
 -- 基数计算函数
@@ -101,6 +105,7 @@ exampleTypeSystem =
 -- 分析结果
 analysisResult :: TypeSystemAnalysis
 analysisResult = analyzeTypeSystem exampleTypeSystem
+
 ```
 
 **理论分析**：
@@ -132,6 +137,7 @@ data TerminationMeasure =
   Limit (TerminationMeasure -> TerminationMeasure) |
   OrdinalSum TerminationMeasure TerminationMeasure |
   OrdinalProduct TerminationMeasure TerminationMeasure |
+
   OrdinalExponentiation TerminationMeasure TerminationMeasure
 
 -- 程序复杂度分析
@@ -172,6 +178,7 @@ exampleProgram =
 -- 终止性证明
 terminationProof :: TerminationProof
 terminationProof = proveTermination exampleProgram
+
 ```
 
 **理论分析**：
@@ -207,6 +214,7 @@ data DatabaseSet =
   PowerSet DatabaseSet |
   SelectionSet (Value -> Bool) DatabaseSet |
   ProjectionSet [Attribute] DatabaseSet |
+
   JoinSet DatabaseSet DatabaseSet (Value -> Value -> Bool)
 
 -- 集合操作实现
@@ -234,11 +242,13 @@ analyzeQueryComplexity (Select _ table) =
 analyzeQueryComplexity (Join q1 q2 _) =
   QueryComplexity
     { complexity = O(n * m)  -- n = |q1|, m = |q2|
+
     , cardinality = max (queryCardinality q1) (queryCardinality q2)
     }
 analyzeQueryComplexity (Aggregate _ q) =
   QueryComplexity
     { complexity = O(n)  -- n = |q|
+
     , cardinality = 1
     }
 
@@ -257,6 +267,7 @@ queryAnalysis = analyzeQueryComplexity
     (Select "user_id = 1" users)
     (Select "status = 'completed'" orders)
     (\u o -> u.id == o.user_id))
+
 ```
 
 **理论分析**：
@@ -289,6 +300,7 @@ data ModelCardinal =
   CountableModel |
   UncountableModel Cardinal |
   InaccessibleModel Cardinal |
+
   LargeCardinalModel Cardinal
 
 -- 模型大小分析
@@ -299,6 +311,7 @@ modelSize model =
     Aleph 0 -> CountableModel
     κ | isInaccessible κ -> InaccessibleModel κ
     κ | isLargeCardinal κ -> LargeCardinalModel κ
+
     κ -> UncountableModel κ
 
 -- 模型结构分析
@@ -332,6 +345,7 @@ exampleModel = Model
 -- 模型分析
 modelAnalysis :: ModelStructure
 modelAnalysis = analyzeModelStructure exampleModel
+
 ```
 
 **理论分析**：
@@ -364,6 +378,7 @@ data ProofComplexity =
   InductionComplexity ProofComplexity Ordinal |
   ReflectionComplexity ProofComplexity Ordinal |
   OrdinalSum ProofComplexity ProofComplexity |
+
   OrdinalProduct ProofComplexity ProofComplexity
 
 -- 证明复杂度分析
@@ -404,6 +419,7 @@ exampleProof =
 -- 证明优化
 proofOptimization :: OptimizedProof
 proofOptimization = optimizeProof exampleProof
+
 ```
 
 **理论分析**：
@@ -437,6 +453,7 @@ data InfinityType =
   AbsoluteInfinity |  -- 绝对无限
   ConstructibleInfinity |  -- 可构造无限
   InaccessibleInfinity |  -- 不可达无限
+
   LargeCardinalInfinity  -- 大基数无限
 
 -- 无限性分析
@@ -448,6 +465,7 @@ analyzeInfinity obj =
     κ | isConstructible κ -> ConstructibleInfinity
     κ | isInaccessible κ -> InaccessibleInfinity
     κ | isLargeCardinal κ -> LargeCardinalInfinity
+
     κ -> ActualInfinity κ
 
 -- 无限性比较
@@ -475,6 +493,7 @@ exampleMathematicalObject =
 -- 哲学分析
 philosophicalAnalysisResult :: PhilosophicalAnalysis
 philosophicalAnalysisResult = philosophicalAnalysis exampleMathematicalObject
+
 ```
 
 **理论分析**：
@@ -506,6 +525,7 @@ data TruthLevel =
   AbsoluteTruth |
   ConstructibleTruth |
   InaccessibleTruth |
+
   LargeCardinalTruth
 
 -- 真值层次分析
@@ -546,6 +566,7 @@ exampleProposition =
 -- 语义分析
 semanticAnalysisResult :: SemanticAnalysis
 semanticAnalysisResult = semanticAnalysis exampleProposition
+
 ```
 
 **理论分析**：
@@ -578,6 +599,7 @@ data ChoiceSetCardinal =
   CountableChoice |
   UncountableChoice Cardinal |
   InaccessibleChoice Cardinal |
+
   LargeCardinalChoice Cardinal
 
 -- 选择复杂度分析
@@ -588,6 +610,7 @@ analyzeChoiceComplexity choices =
     Aleph 0 -> CountableChoice
     κ | isInaccessible κ -> InaccessibleChoice κ
     κ | isLargeCardinal κ -> LargeCardinalChoice κ
+
     κ -> UncountableChoice κ
 
 -- 选择理论分析
@@ -617,6 +640,7 @@ exampleChoiceSet =
 -- 选择理论分析
 choiceTheoryAnalysisResult :: ChoiceTheoryAnalysis
 choiceTheoryAnalysisResult = choiceTheoryAnalysis exampleChoiceSet
+
 ```
 
 **理论分析**：
@@ -647,6 +671,7 @@ data GameComplexity =
   ComplexGame Ordinal |
   InfiniteGame |
   TransfiniteGame Ordinal |
+
   LargeOrdinalGame Ordinal
 
 -- 博弈复杂度分析
@@ -692,6 +717,7 @@ exampleGame =
 -- 博弈论分析
 gameTheoryAnalysisResult :: GameTheoryAnalysis
 gameTheoryAnalysisResult = gameTheoryAnalysis exampleGame
+
 ```
 
 **理论分析**：
@@ -724,6 +750,7 @@ data QuantumStateCardinal =
   CountableDimensional |
   UncountableDimensional Cardinal |
   InaccessibleDimensional Cardinal |
+
   LargeCardinalDimensional Cardinal
 
 -- 量子系统分析
@@ -734,6 +761,7 @@ analyzeQuantumSystem system =
     Aleph 0 -> CountableDimensional
     κ | isInaccessible κ -> InaccessibleDimensional κ
     κ | isLargeCardinal κ -> LargeCardinalDimensional κ
+
     κ -> UncountableDimensional κ
 
 -- 量子力学分析
@@ -768,6 +796,7 @@ exampleQuantumSystem =
 -- 量子力学分析
 quantumMechanicsAnalysisResult :: QuantumMechanicsAnalysis
 quantumMechanicsAnalysisResult = quantumMechanicsAnalysis exampleQuantumSystem
+
 ```
 
 **理论分析**：
@@ -798,6 +827,7 @@ data SpacetimeOrdinal =
   TemporalOrdinal Ordinal |
   SpatialOrdinal Ordinal |
   LightConeOrdinal Ordinal |
+
   HorizonOrdinal Ordinal
 
 -- 时空结构分析
@@ -837,6 +867,7 @@ exampleSpacetime =
 -- 相对论分析
 relativityAnalysisResult :: RelativityAnalysis
 relativityAnalysisResult = relativityAnalysis exampleSpacetime
+
 ```
 
 **理论分析**：

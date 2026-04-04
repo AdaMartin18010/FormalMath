@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 代数数论基础 - 思维导图
 
 ## 概述
@@ -45,6 +50,7 @@ mindmap
       唯一分解
         理想唯一分解
         类数h_K=|Cl(K)|
+
       素理想
         整除(p)的素理想
         分歧、惯性、分裂
@@ -58,6 +64,7 @@ mindmap
         g: 素理想个数
       判别式
         p|d_K ⇔ p分歧
+
       分解法则
         f(x) mod p因式分解
         决定分解类型
@@ -71,6 +78,7 @@ mindmap
       克罗内克
         青春之梦
         分圆域生成阿贝尔扩张
+
 ```
 
 ---
@@ -104,6 +112,7 @@ graph TD
     style A fill:#e3f2fd
     style G fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -124,6 +133,7 @@ graph TD
     
     subgraph 判别式判定
         F[p|d_K] --> D
+
         F --> G[分歧<br/>充要条件]
     end
     
@@ -137,6 +147,7 @@ graph TD
     style C fill:#e8f5e9
     style D fill:#ffcdd2
     style E fill:#fff3e0
+
 ```
 
 ---
@@ -169,6 +180,7 @@ graph TD
         C --> G[Cl(K)=I/P]
         F --> G
         G --> H[类数 h_K=|Cl(K)|]
+
     end
     
     subgraph 意义
@@ -179,6 +191,7 @@ graph TD
     style A fill:#e3f2fd
     style G fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -212,6 +225,7 @@ graph TD
     style A fill:#e3f2fd
     style G fill:#fff3e0
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -243,6 +257,7 @@ mindmap
         (d/p)=1: 分裂
         (d/p)=-1: 惯性
         p|d: 分歧
+
     单位群
       虚二次域
         r₁=0,r₂=1
@@ -262,6 +277,7 @@ mindmap
         类数猜想
         连续分数展开
         基本单位关联
+
 ```
 
 ---
@@ -285,6 +301,7 @@ graph TD
         G --> H[e=1, g=φ(n)/f]
         
         I[p|n] --> J[分歧]
+
     end
     
     subgraph 克罗内克
@@ -295,6 +312,7 @@ graph TD
     style A fill:#e3f2fd
     style D fill:#fff3e0
     style M fill:#e8f5e9
+
 ```
 
 ---
@@ -343,6 +361,7 @@ flowchart LR
     style D fill:#fff3e0
     style G fill:#e8f5e9
     style K fill:#ffcdd2
+
 ```
 
 ---

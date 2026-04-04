@@ -49,6 +49,7 @@ theorem van_kampen {X : Type*} [TopologicalSpace X]
     (x0 : X) (hx0 : x0 ∈ U1 ∩ U2) :
     -- 基本群的推送出结构
     sorry  -- 需要详细的同伦论形式化
+
 ```
 
 ---
@@ -68,6 +69,7 @@ theorem van_kampen {X : Type*} [TopologicalSpace X]
     └────────────┘
 
 基本群 = U₁和U₂的基本群的"粘合"
+
 ```
 
 ### 2.2 例子：8字形
@@ -75,6 +77,7 @@ theorem van_kampen {X : Type*} [TopologicalSpace X]
 ```text
 8字形 = 两个圆粘在一点
 π₁(8) = ℤ * ℤ (两个自由生成元)
+
 ```
 
 ---
@@ -127,6 +130,7 @@ def van_kampen_compute(G1, G2, G12, i1, i2):
 # 示例：8字形
 # G1 = G2 = ℤ, G12 = {1}
 # π₁(8) = ℤ * ℤ
+
 ```
 
 ---
@@ -144,6 +148,7 @@ van Kampen = 推送出（pushout）
     G2 ──────> G1 *_{G12} G2
 
 在群范畴中的推送出
+
 ```
 
 ### 5.2 同调版本

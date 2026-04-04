@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×工程学：信号处理的调和分析
 
 ## 概述
@@ -110,6 +115,7 @@ mindmap
         图Fourier变换
         图谱分析
         图滤波器
+
 ```
 
 ---
@@ -138,6 +144,7 @@ graph TD
     style FT fill:#e3f2fd
     style DTFT fill:#e8f5e9
     style FFT fill:#fff3e0
+
 ```
 
 ---
@@ -192,6 +199,7 @@ mindmap
         对称性
         线性相位
         计算高效
+
 ```
 
 ---
@@ -216,6 +224,7 @@ graph LR
     style S fill:#e3f2fd
     style M fill:#e8f5e9
     style R fill:#fff3e0
+
 ```
 
 ---

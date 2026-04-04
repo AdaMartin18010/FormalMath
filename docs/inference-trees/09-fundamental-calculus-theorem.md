@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 微积分基本定理推导
 
 ## 概述
@@ -40,6 +48,7 @@ graph TD
     
     style B2 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style D1 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 核心定理
@@ -73,6 +82,7 @@ $$\int_a^b f(x)dx = F(b) - F(a)$$
 ## 依赖关系
 
 ```
+
 积分定义
     ↓
 积分中值定理
@@ -82,4 +92,5 @@ $$\int_a^b f(x)dx = F(b) - F(a)$$
 原函数存在性
     ↓
 第二基本定理 ← Lagrange中值
+
 ```

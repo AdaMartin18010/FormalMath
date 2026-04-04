@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 泛化误差界推导链
 
 ## 概述
@@ -33,6 +38,7 @@ graph TD
         D1 --> D2[经验Rademacher<br/>ℜ̂_S = E_σ sup 1/n Σσᵢfxᵢ]
         D2 --> D3[泛化界<br/>R ≤ R̂ + 2ℜ̂_S + O1/√n]
         D3 --> D4[Massart引理<br/>ℜ̂_S ≤ r√2log|H_S|/n]
+
     end
     
     subgraph 覆盖数方法
@@ -51,6 +57,7 @@ graph TD
     
     subgraph 稳定性分析
         A3 --> G1[算法稳定性<br/>|A_S - A_{S^i}| ≤ β]
+
         G1 --> G2[一致稳定性<br/>β-uniform stable]
         G2 --> G3[稳定性泛化界<br/>R ≤ R̂ + O√β/n + 1/√n]
     end
@@ -59,6 +66,7 @@ graph TD
     style D3 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style F4 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style G3 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -153,6 +161,7 @@ $$P_{S \sim \mathcal{D}^n}(R(A(S)) \leq \epsilon) \geq 1 - \delta$$
 
 **样本复杂度**：
 - 有限 $\mathcal{H}$：$n = O\left(\frac{\log|\mathcal{H}| + \log(1/\delta)}{\epsilon^2}\right)$
+
 - VC维：$n = O\left(\frac{d \cdot \log(1/\epsilon) + \log(1/\delta)}{\epsilon^2}\right)$
 
 **Fundamental定理**：概念类 $\mathcal{C}$ 是PAC可学习的当且仅当 $VC(\mathcal{C}) < \infty$。
@@ -190,6 +199,7 @@ $$R(A(S)) \leq \hat{R}_S(A(S)) + O\left(\sqrt{\frac{\beta + 1/n}{n}} + \sqrt{\fr
 ## 依赖关系图
 
 ```
+
 概率论基础 ← 集中不等式
     ↓
 统计学习框架
@@ -205,6 +215,7 @@ Rademacher复杂度 ← 对称化
 PAC学习理论
     ↓
 算法稳定性 ← 优化理论
+
 ```
 
 ---

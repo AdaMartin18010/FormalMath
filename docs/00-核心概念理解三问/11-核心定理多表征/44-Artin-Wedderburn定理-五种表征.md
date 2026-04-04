@@ -48,6 +48,7 @@ theorem artin_wedderburn {R : Type*} [Ring R] [IsSemisimple R] :
       (∀ i, DivisionRing (D i)) ∧
       R ≃+* (Π i, Matrix (Fin (dims i)) (Fin (dims i)) (D i)) := by
   sorry  -- 需要详细的环论形式化
+
 ```
 
 ---
@@ -64,6 +65,7 @@ theorem artin_wedderburn {R : Type*} [Ring R] [IsSemisimple R] :
        单分支₁      单分支₂          单分支ₖ
           │           │               │
        nᵢ×nᵢ矩阵   nⱼ×nⱼ矩阵        nₖ×nₖ矩阵
+
 ```
 
 ### 2.2 模的分解
@@ -74,6 +76,7 @@ R-模的分类：
     每个单模 ≅ Dᵢⁿⁱ（作为Dᵢ-向量空间）
 
     半单模 = 单模的直和
+
 ```
 
 ---
@@ -108,6 +111,7 @@ def wedderburn_group_algebra(G, F):
     """
     计算有限群G在域F上的群代数F[G]的Wedderburn分解
     （当char(F)不整除|G|时，F[G]是半单的）
+
     """
     # 群代数是半单的（Maschke定理）
     # 分解由不可约表示决定
@@ -130,9 +134,11 @@ def verify_wedderburn():
     irrep_dims = [1, 1, 2]
     total = sum(d**2 for d in irrep_dims)
     print(f"dim ℂ[S₃] = {total} = |S₃|")
+
     print(f"ℂ[S₃] ≅ ℂ × ℂ × M₂(ℂ)")
 
 verify_wedderburn()
+
 ```
 
 ### 4.2 单性检验
@@ -144,6 +150,7 @@ def is_simple_ring(R):
     """
     # 单环 ⟺ M_n(D) 对某除环D
     pass
+
 ```
 
 ---
@@ -157,6 +164,7 @@ Artin-Wedderburn = 模范畴的分解
 ├─ R-Mod ≅ D₁-Mod × D₂-Mod × ... × Dₖ-Mod
 ├─ 每个Dᵢ-Mod是单模范畴
 └─ 半单性 ⟺ Abel范畴是半单的
+
 ```
 
 ### 5.2 Morita等价

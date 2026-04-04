@@ -289,6 +289,7 @@ class SymbolDatabase:
                 })
 
         return issues
+
 ```
 
 #### 2. 符号检查工具
@@ -367,6 +368,7 @@ class SymbolChecker:
                 })
 
         return issues
+
 ```
 
 ### 符号标准化流程
@@ -406,6 +408,7 @@ class SymbolCollector:
             symbols.extend(doc_symbols)
 
         return symbols
+
 ```
 
 #### 2. 符号标准化处理
@@ -439,6 +442,7 @@ class SymbolStandardizer:
                 results['errors'].append(f"Error in {rule_name}: {str(e)}")
 
         return results
+
 ```
 
 ---

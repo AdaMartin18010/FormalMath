@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×生物学：种群动力学的微分方程
 
 ## 概述
@@ -91,6 +96,7 @@ mindmap
         环境噪声
         人口波动
         准灭绝风险
+
 ```
 
 ---
@@ -120,6 +126,7 @@ graph TD
     style L fill:#e3f2fd
     style LV fill:#fff3e0
     style TU fill:#e8f5e9
+
 ```
 
 ---
@@ -145,6 +152,7 @@ mindmap
     线性稳定性
       Jacobian矩阵
         J_ij = ∂f_i/∂x_j|*
+
         平衡点处求值
       特征值分析
         Re(λ) < 0 稳定
@@ -172,6 +180,7 @@ mindmap
       分岔分析
         延续算法
         AUTO软件
+
 ```
 
 ---

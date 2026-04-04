@@ -47,7 +47,7 @@ msc_secondary: ['11R39', '14D24', '22E50', '11S37']
 
 ---
 
-## 1. 概述
+## 一、概述
 
 Langlands纲领是当代数学中最具影响力的统一理论之一，由Robert Langlands于1967年提出。2024-2025年，这一领域经历了突破性的进展，特别是在几何Langlands纲领和局部Langlands对应方面。
 
@@ -72,7 +72,7 @@ $$\text{Aut}(G, \mathbb{A}_F) \longleftrightarrow \text{Gal}(\overline{F}/F) \to
 
 ---
 
-## 2. Fargues-Scholze几何化局部Langlands对应
+## 二、Fargues-Scholze几何化局部Langlands对应
 
 ### 2.1 核心理论框架
 
@@ -128,7 +128,7 @@ Peter Scholze基于Ayoub-Gallauer-Vezzani的刚性解析动机构造，将Fargue
 
 ---
 
-## 3. 自守形式与Galois表示的新结果
+## 三、自守形式与Galois表示的新结果
 
 ### 3.1 模性提升定理
 
@@ -162,7 +162,7 @@ $$H^{i}_{\text{ét}}(X_{\overline{\mathbb{Q}}}, \mathbb{Q}_\ell) \Rightarrow \te
 
 ---
 
-## 4. p-adic Langlands对应进展
+## 四、p-adic Langlands对应进展
 
 ### 4.1 范畴化局部Langlands对应
 
@@ -203,7 +203,7 @@ $$H^{i}_{\text{ét}}(X_{\overline{\mathbb{Q}}}, \mathbb{Q}_\ell) \Rightarrow \te
 
 ---
 
-## 5. 几何表示论的联系
+## 五、几何表示论的联系
 
 ### 5.1 Gaitsgory的几何Langlands证明
 
@@ -257,7 +257,7 @@ $$\text{量子群} \longleftrightarrow \text{仿射Kac-Moody代数}$$
 
 ---
 
-## 6. 开放问题与未来方向
+## 六、开放问题与未来方向
 
 ### 6.1 核心开放问题
 
@@ -342,7 +342,7 @@ $$\mathcal{L}: \text{Aut}(G) \to \text{Aut}(H)$$
 
 ---
 
-## 8. 参考文献
+## 八、参考文献
 
 ### 经典文献
 

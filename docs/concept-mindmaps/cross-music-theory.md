@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×音乐：音乐理论的数与形
 
 ## 概述
@@ -97,6 +102,7 @@ mindmap
         变奏曲式
         赋格
         卡农
+
 ```
 
 ---
@@ -128,6 +134,7 @@ graph TD
     style P fill:#e3f2fd
     style T fill:#e8f5e9
     style M fill:#fff3e0
+
 ```
 
 ---
@@ -186,6 +193,7 @@ mindmap
         可视分析
         交互探索
         算法作曲
+
 ```
 
 ---

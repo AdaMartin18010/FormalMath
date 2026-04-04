@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # msc_batch_processor
 
 **源文件**: `tools\msc_batch_processor.py`
@@ -8,6 +16,7 @@
 
 ```python
 def has_msc_encoding(file_path)
+
 ```
 
 检查文件是否已有MSC编码
@@ -20,6 +29,7 @@ def has_msc_encoding(file_path)
 
 ```python
 def determine_msc_code(file_path, relative_path)
+
 ```
 
 根据文件路径确定MSC编码
@@ -33,6 +43,7 @@ def determine_msc_code(file_path, relative_path)
 
 ```python
 def add_msc_to_file(file_path, msc_code)
+
 ```
 
 向文件添加MSC编码
@@ -46,6 +57,7 @@ def add_msc_to_file(file_path, msc_code)
 
 ```python
 def scan_and_process(base_dir)
+
 ```
 
 扫描并处理所有md文件
@@ -58,6 +70,7 @@ def scan_and_process(base_dir)
 
 ```python
 def print_report(stats)
+
 ```
 
 打印处理报告

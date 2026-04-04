@@ -47,6 +47,7 @@ theorem riemann_mapping {U : Set ℂ} (hU : IsOpen U)
       Holomorphic f ∧ Function.Bijective f ∧
       f z₀ = 0 ∧ (deriv f z₀).re > 0 := by
   sorry  -- 深刻的复分析结果
+
 ```
 
 ---
@@ -64,6 +65,7 @@ theorem riemann_mapping {U : Set ℂ} (hU : IsOpen U)
     └─────┘           ○
 
 f把任意"形状"映为标准圆盘
+
 ```
 
 ### 2.2 保角性
@@ -76,6 +78,7 @@ f把任意"形状"映为标准圆盘
          f
          ↓
     𝔻中像曲线夹角也是θ
+
 ```
 
 ---
@@ -134,6 +137,7 @@ def demonstrate_riemann():
         print(f"f({z}) = {w}, |w| = {abs(w):.4f}")
 
 demonstrate_riemann()
+
 ```
 
 ### 4.2 Schwarz-Christoffel公式
@@ -146,6 +150,7 @@ def schwarz_christoffel(vertices, prevertices):
     # f(z) = A ∫ ∏(ζ - zₖ)^(αₖ-1) dζ + B
     # αₖ = 内角/π
     pass
+
 ```
 
 ---
@@ -159,6 +164,7 @@ Riemann映射 = 单连通区域的分类
 ├─ 对象：单连通开集
 ├─ 态射：双全纯映射
 └─ 分类：只有三个同构类（𝔻, ℂ, ℂ̂）
+
 ```
 
 ### 5.2 推广
@@ -174,6 +180,7 @@ Riemann曲面的万有覆盖是：
 ├─ ℂ̂（球面）
 ├─ ℂ（平面）
 └─ 𝔻（圆盘）
+
 ```
 
 ---

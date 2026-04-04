@@ -7,7 +7,7 @@ msc_secondary: ['68P10', '60J10', '05C50']
 
 ---
 
-## 1. 历史背景与问题起源
+## 一、历史背景与问题起源
 
 ### 1.1 信息检索的挑战
 
@@ -34,7 +34,7 @@ PageRank的思想实际上源于学术界长期使用的**引用分析**：
 
 ---
 
-## 2. 数学基础：图论与马尔可夫链
+## 二、数学基础：图论与马尔可夫链
 
 ### 2.1 有向图与邻接矩阵
 
@@ -86,7 +86,7 @@ $$\pi^T = \pi^T P$$
 
 ---
 
-## 3. PageRank的数学模型
+## 三、PageRank的数学模型
 
 ### 3.1 基本PageRank方程
 
@@ -166,7 +166,7 @@ $$\|\pi^{(k)} - \pi\|_1 \leq \alpha^k \cdot C$$
 
 ---
 
-## 4. 幂迭代算法与收敛性分析
+## 四、幂迭代算法与收敛性分析
 
 ### 4.1 幂迭代算法
 
@@ -223,18 +223,20 @@ $$(I - \alpha M)\mathbf{r} = \frac{1-\alpha}{n}\mathbf{1}$$
 
 ---
 
-## 5. 具体图例子与完整计算
+## 五、具体图例子与完整计算
 
 ### 5.1 6节点网页图示例
 
 考虑以下小型网络：
 
 ```
+
     1 ──→ 2 ←── 3
     ↑     ↓     │
     └── 6 ←── 4 ←┘
          ↑
          5
+
 ```
 
 边集：$(1,2), (2,6), (3,2), (3,4), (4,6), (5,6), (6,1)$
@@ -296,7 +298,7 @@ $$\pi \approx [0.201, 0.298, 0.042, 0.042, 0.042, 0.375]^T$$
 
 ---
 
-## 6. Python完整实现
+## 六、Python完整实现
 
 ```python
 """
@@ -528,11 +530,12 @@ if __name__ == "__main__":
     nx_pagerank = nx.pagerank(G, alpha=0.85)
     nx_values = np.array([nx_pagerank[i] for i in range(n_karate)])
     print(f"与networkx差异: {np.linalg.norm(pagerank_karate - nx_values, 1):.2e}")
+
 ```
 
 ---
 
-## 7. 结果分析与应用扩展
+## 七、结果分析与应用扩展
 
 ### 7.1 PageRank的性质
 
@@ -575,7 +578,7 @@ Google早期数据（约2000年）：
 
 ---
 
-## 8. 与线性代数和其他数学分支的联系
+## 八、与线性代数和其他数学分支的联系
 
 ### 8.1 矩阵分析视角
 
@@ -601,7 +604,7 @@ PageRank可推广到：
 
 ---
 
-## 9. 参考资源
+## 九、参考资源
 
 ### 原始论文
 - Page, L., Brin, S., Motwani, R., & Winograd, T. (1999). "The PageRank citation ranking: Bringing order to the web." *Stanford InfoLab*.

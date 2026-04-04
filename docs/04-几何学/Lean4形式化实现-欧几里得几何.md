@@ -2,6 +2,9 @@
 msc_primary: "51Mxx"
 msc_secondary: ['90Cxx', '51Nxx', '68Vxx']
 ---
+msc_primary: "51Mxx"
+msc_secondary: ['90Cxx', '51Nxx', '68Vxx']
+---
 
 # 欧几里得几何 - Lean4形式化实现 / Euclidean Geometry - Lean4 Formalization
 
@@ -9,7 +12,7 @@ msc_secondary: ['90Cxx', '51Nxx', '68Vxx']
 
 本文档提供了欧几里得几何核心概念的Lean4形式化实现，包括基本概念、几何变换、几何不变量、计算几何算法和几何优化等内容。
 
-## 1. 基础定义 / Basic Definitions
+## 一、基础定义 / Basic Definitions
 
 ### 1.1 欧几里得空间 / Euclidean Space
 
@@ -46,6 +49,7 @@ def angle {n : ℕ} (u v : Vector n) : ℝ :=
 -- 正交性
 def orthogonal {n : ℕ} (u v : Vector n) : Prop :=
   inner u v = 0
+
 ```
 
 ### 1.2 几何对象 / Geometric Objects
@@ -87,9 +91,10 @@ structure Polygon (n : ℕ) where
   vertices : List (Point n)
   non_empty : vertices ≠ []
   simple : is_simple_polygon vertices
+
 ```
 
-## 2. 几何变换 / Geometric Transformations
+## 二、几何变换 / Geometric Transformations
 
 ### 2.1 基本变换 / Basic Transformations
 
@@ -125,6 +130,7 @@ def reflect {n : ℕ} (r : Reflection n) (p : Point n) : Point n :=
   let v = p - r.hyperplane.point
   let proj = (inner v r.hyperplane.normal / inner r.hyperplane.normal r.hyperplane.normal) • r.hyperplane.normal
   p - 2 • proj
+
 ```
 
 ### 2.2 复合变换 / Composite Transformations
@@ -154,6 +160,7 @@ structure AffineTransformation (n : ℕ) where
 
 def apply_affine {n : ℕ} (aff : AffineTransformation n) (p : Point n) : Point n :=
   aff.linear_part * p + aff.translation_part
+
 ```
 
 ### 2.3 变换群 / Transformation Groups
@@ -191,9 +198,10 @@ def IsometryGroup (n : ℕ) : Group (Isometry n) where
   mul_one := sorry
   one_mul := sorry
   mul_left_inv := sorry
+
 ```
 
-## 3. 几何不变量 / Geometric Invariants
+## 三、几何不变量 / Geometric Invariants
 
 ### 3.1 距离不变量 / Distance Invariants
 
@@ -220,6 +228,7 @@ def volume_invariant_3d (tetrahedron : List (Point 3)) : ℝ :=
     let v3 := tetrahedron[3] - tetrahedron[0]
     abs (Matrix.det (Matrix.of (fun i j => [v1, v2, v3][i][j]))) / 6
   else 0
+
 ```
 
 ### 3.2 曲率不变量 / Curvature Invariants
@@ -241,6 +250,7 @@ def gaussian_curvature {n : ℕ} (surface : ℝ² → Point n) (u v : ℝ) : ℝ
   let M := inner (partial_deriv_uv surface u v) (unit_normal surface u v)
   let N := inner (partial_deriv_vv surface u v) (unit_normal surface u v)
   (L * N - M^2) / (E * G - F^2)
+
 ```
 
 ### 3.3 拓扑不变量 / Topological Invariants
@@ -259,9 +269,10 @@ def betti_number_0 (points : List (Point n)) : ℕ :=
 
 def betti_number_1 (edges : List (Point n × Point n)) : ℕ :=
   count_cycles edges
+
 ```
 
-## 4. 计算几何算法 / Computational Geometric Algorithms
+## 四、计算几何算法 / Computational Geometric Algorithms
 
 ### 4.1 凸包算法 / Convex Hull Algorithms
 
@@ -288,6 +299,7 @@ def add_to_hull (hull : List (Point 2)) (point : Point 2) : List (Point 2) :=
 -- 叉积
 def cross_product (u v : Vector 2) : ℝ :=
   u[0] * v[1] - u[1] * v[0]
+
 ```
 
 ### 4.2 三角剖分算法 / Triangulation Algorithms
@@ -317,6 +329,7 @@ def in_circumcircle (triangle : Triangle 2) (point : Point 2) : Bool :=
      c[0], c[1], c[0]^2 + c[1]^2, 1,
      d[0], d[1], d[0]^2 + d[1]^2, 1][i * 4 + j]))
   det > 0
+
 ```
 
 ### 4.3 最近邻算法 / Nearest Neighbor Algorithms
@@ -360,27 +373,36 @@ def search_nearest (tree : KDTree n) (query : Point n) (best : Point n) (best_di
 
   if query_coord < tree_coord then
     match tree.left with
+
     | none => new_best
     | some left_tree =>
+
       let left_result := search_nearest left_tree query new_best new_best_dist
       if abs (query_coord - tree_coord) < new_best_dist then
         match tree.right with
+
         | none => left_result
         | some right_tree => search_nearest right_tree query left_result new_best_dist
+
       else left_result
   else
     match tree.right with
+
     | none => new_best
     | some right_tree =>
+
       let right_result := search_nearest right_tree query new_best new_best_dist
       if abs (query_coord - tree_coord) < new_best_dist then
         match tree.left with
+
         | none => right_result
         | some left_tree => search_nearest left_tree query right_result new_best_dist
+
       else right_result
+
 ```
 
-## 5. 几何优化 / Geometric Optimization
+## 五、几何优化 / Geometric Optimization
 
 ### 5.1 凸优化 / Convex Optimization
 
@@ -406,6 +428,7 @@ structure ConvexOptimization (n : ℕ) where
 def gradient_descent (f : Point n → ℝ) (grad_f : Point n → Vector n)
   (initial_point : Point n) (learning_rate : ℝ) (iterations : ℕ) : Point n :=
   iterate (λ x => x - learning_rate • grad_f x) initial_point iterations
+
 ```
 
 ### 5.2 几何规划 / Geometric Programming
@@ -429,6 +452,7 @@ def to_convex_program (gp : GeometricProgramming n) : ConvexOptimization n :=
     objective_convex := sorry
     constraints_convex := sorry
   }
+
 ```
 
 ### 5.3 变分法 / Calculus of Variations
@@ -452,9 +476,10 @@ def brachistochrone_functional : Functional 2 :=
 -- 等周问题
 def isoperimetric_functional : Functional 2 :=
   λ y => ∫ t in 0..1, sqrt ((deriv y t)[0]^2 + (deriv y t)[1]^2)
+
 ```
 
-## 6. 应用实例 / Applications
+## 六、应用实例 / Applications
 
 ### 6.1 计算机图形学应用 / Computer Graphics Applications
 
@@ -477,6 +502,7 @@ def perspective_projection (fov : ℝ) (aspect : ℝ) (near : ℝ) (far : ℝ) :
     else if i = 2 ∧ j = 3 then 2 * far * near / (near - far)
     else if i = 3 ∧ j = 2 then -1
     else 0)
+
 ```
 
 ### 6.2 机器人学应用 / Robotics Applications
@@ -504,6 +530,7 @@ def dh_transform (θ : ℝ) (d : ℝ) (a : ℝ) (α : ℝ) : Matrix ℝ 4 4 :=
     else if i = 2 ∧ j = 3 then d
     else if i = 3 ∧ j = 3 then 1
     else 0)
+
 ```
 
 ### 6.3 计算机视觉应用 / Computer Vision Applications
@@ -532,9 +559,10 @@ def project_point (point_3d : Point 3) (intrinsic : Matrix ℝ 3 3) (extrinsic :
   let homogeneous_3d := [point_3d[0], point_3d[1], point_3d[2], 1]
   let projected := intrinsic * extrinsic * homogeneous_3d
   Point.mk [projected[0] / projected[2], projected[1] / projected[2]]
+
 ```
 
-## 7. 总结 / Summary
+## 七、总结 / Summary
 
 本文档提供了欧几里得几何的完整Lean4形式化实现，包括：
 

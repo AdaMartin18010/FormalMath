@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 非线性规划思维导图
 
 ## 概述
@@ -133,6 +141,7 @@ mindmap
       化学工程
         过程优化
         反应器设计
+
 ```
 
 ## 核心概念详解

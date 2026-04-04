@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "07 Python实现 群论算法"
 msc_primary: ["68W30"]
@@ -10,7 +15,7 @@ msc_secondary: ["20A05", "20B40"]
 
 本文档提供群论核心算法的Python实现，基于国际标准数学定义，涵盖基础群论算法、群结构分析、群表示论算法等。
 
-## 1. 基础群论算法
+## 一、基础群论算法
 
 ### 1.1 群元素生成与运算
 
@@ -186,9 +191,10 @@ def create_symmetric_group(n: int) -> FiniteGroup:
         return tuple(inverse)
 
     return FiniteGroup(perms, compose_permutations, tuple(range(n)), inverse_permutation)
+
 ```
 
-### 1.2 子群检测算法
+## 1.2 子群检测算法
 
 ```python
 def is_subgroup(group: FiniteGroup, subset: List) -> bool:
@@ -244,6 +250,7 @@ def find_all_subgroups(group: FiniteGroup) -> List[FiniteGroup]:
                 subgroups.append(FiniteGroup(list(subset), group.operation, group.identity.value))
 
     return subgroups
+
 ```
 
 ### 1.3 陪集计算
@@ -293,7 +300,7 @@ def is_normal_subgroup(group: FiniteGroup, subgroup: FiniteGroup) -> bool:
                 return False
     return True
 
-## 2. 群同态与同构算法
+## 二、群同态与同构算法
 
 ### 2.1 群同态检测
 
@@ -361,6 +368,7 @@ def find_isomorphism(group1: FiniteGroup, group2: FiniteGroup) -> Optional[Calla
             return phi
 
     return None
+
 ```
 
 ### 2.2 群结构分析
@@ -451,7 +459,7 @@ def group_statistics(group: FiniteGroup) -> Dict:
 
     return stats
 
-## 3. 群表示论算法
+## 三、群表示论算法
 
 ### 3.1 线性表示
 
@@ -550,6 +558,7 @@ def is_irreducible(representation: GroupRepresentation) -> bool:
             if is_central:
                 return False
     return True
+
 ```
 
 ### 3.2 特征标计算
@@ -603,9 +612,10 @@ def character_orthogonality_relations(group: FiniteGroup) -> bool:
             pass
 
     return True
+
 ```
 
-## 4. 高级群论算法
+## 四、高级群论算法
 
 ### 4.1 Sylow定理应用
 
@@ -658,6 +668,7 @@ def sylow_theorems_verification(group: FiniteGroup) -> Dict:
         }
 
     return results
+
 ```
 
 ### 4.2 群分类算法
@@ -712,9 +723,10 @@ def is_solvable_group(group: FiniteGroup) -> bool:
                 return True
 
     return False
+
 ```
 
-## 5. 应用示例
+## 五、应用示例
 
 ### 5.1 基本群操作示例
 
@@ -800,7 +812,7 @@ if __name__ == "__main__":
     example_basic_operations()
     example_subgroup_analysis()
 
-## 6. 性能优化与测试
+## 六、性能优化与测试
 
 ### 6.1 算法复杂度分析
 
@@ -859,6 +871,7 @@ def memory_usage_analysis():
         group = create_cyclic_group(size)
         memory = sys.getsizeof(group) + sum(sys.getsizeof(e) for e in group.elements)
         print(f"群大小 {size}: {memory} bytes")
+
 ```
 
 ### 6.2 错误处理与验证
@@ -990,9 +1003,10 @@ if __name__ == "__main__":
     memory_usage_analysis()
     test_error_handling()
     comprehensive_test_suite()
+
 ```
 
-## 7. 总结
+## 七、总结
 
 本文档提供了群论核心算法的完整Python实现，包括：
 
@@ -1005,7 +1019,7 @@ if __name__ == "__main__":
 
 所有算法都基于国际标准数学定义，提供了完整的理论背景和实际应用示例。代码具有良好的可读性和可维护性，适合教学和研究使用。
 
-## 8. 商群与直积算法
+## 八、商群与直积算法
 
 ### 8.1 商群构造
 
@@ -1078,6 +1092,7 @@ def first_isomorphism_theorem(group1: FiniteGroup, group2: FiniteGroup,
         'image_order': len(image),
         'isomorphic': len(quotient) == len(image)
     }
+
 ```
 
 ### 8.2 直积与半直积
@@ -1128,9 +1143,10 @@ def semidirect_product(normal_group: FiniteGroup, group: FiniteGroup,
         return (n_inv, h_inv)
 
     return FiniteGroup(elements, semidirect_operation, identity, semidirect_inverse)
+
 ```
 
-## 9. 群作用算法
+## 九、群作用算法
 
 ### 9.1 群作用基础
 
@@ -1213,6 +1229,7 @@ class GroupAction:
 
     def orbit_stabilizer_theorem(self, x):
         """轨道-稳定子定理：|G| = |Orbit(x)| · |Stab(x)|"""
+
         orbit = self.orbit(x)
         stabilizer = self.stabilizer(x)
 
@@ -1222,6 +1239,7 @@ class GroupAction:
             'group_size': len(self.group),
             'satisfies_theorem': len(self.group) == len(orbit) * len(stabilizer)
         }
+
 ```
 
 ### 9.2 Burnside引理
@@ -1230,7 +1248,9 @@ class GroupAction:
 def burnside_lemma(group_action: GroupAction) -> int:
     """
     Burnside引理：计算轨道数量
+
     |X/G| = (1/|G|) Σ |Fix(g)|
+
     其中 Fix(g) = {x ∈ X : g·x = x}
     """
     group = group_action.group
@@ -1273,9 +1293,10 @@ def compute_cycles(element, action_func):
     # 这是一个占位函数，实际实现需要根据具体的群作用
     # 这里返回循环的数量
     return 1
+
 ```
 
-## 10. 自由群与生成元算法
+## 十、自由群与生成元算法
 
 ### 10.1 自由群构造
 
@@ -1357,6 +1378,7 @@ class FreeGroup:
                 inverse_word += char  # 未知符号，保持原样
 
         return inverse_word
+
 ```
 
 ### 10.2 生成元与关系
@@ -1398,6 +1420,7 @@ def group_presentation(group: FiniteGroup, generators: List) -> Dict:
         'generators': generators,
         'relations': relations
     }
+
 ```
 
 ## 11. 群论在密码学中的应用
@@ -1460,6 +1483,7 @@ def diffie_hellman_key_exchange(group: FiniteGroup, generator):
     assert shared_secret_A == shared_secret_B, "共享密钥不匹配"
 
     return public_key_A, public_key_B, shared_secret_A
+
 ```
 
 ### 11.2 RSA与群论
@@ -1496,6 +1520,7 @@ def rsa_group_operations(p: int, q: int):
         'group_order': phi_n,
         'modulus': n
     }
+
 ```
 
 ## 12. 群论在图论中的应用
@@ -1557,6 +1582,7 @@ class Graph:
             identity,
             inverse_permutation
         )
+
 ```
 
 ## 13. 优化算法实现
@@ -1587,6 +1613,7 @@ class OptimizedFiniteGroup(FiniteGroup):
         order = super().order(element)
         self._order_cache[element] = order
         return order
+
 ```
 
 ### 13.2 并行计算
@@ -1621,6 +1648,7 @@ def parallel_conjugacy_classes(group: FiniteGroup, num_processes=4):
             seen.add(cls_tuple)
 
     return unique_classes
+
 ```
 
 ## 14. 扩展应用示例
@@ -1652,6 +1680,7 @@ def rubiks_cube_group():
         return op1 + op2  # 占位符
 
     return FiniteGroup(operations, rubiks_operation, '')
+
 ```
 
 ### 14.2 晶体学点群
@@ -1679,6 +1708,7 @@ def crystallographic_point_group(symbol: str):
 
     # 可以扩展更多点群
     return None
+
 ```
 
 ## 15. 总结
@@ -1743,6 +1773,7 @@ def is_central_extension(extension: FiniteGroup,
     center_elements = center
 
     return normal_elements.issubset(center_elements)
+
 ```
 
 ### 16.2 上同调群计算（简化版）
@@ -1774,6 +1805,7 @@ def group_cohomology(group: FiniteGroup, coefficient_group: FiniteGroup,
 
     else:
         return {'dimension': 0, 'note': f'H^{degree}的计算需要更复杂的算法'}
+
 ```
 
 ## 17. 群论在编码理论中的应用
@@ -1846,6 +1878,7 @@ class LinearCode:
             weight = sum(codeword)
             weights[weight] += 1
         return dict(weights)
+
 ```
 
 ### 17.2 循环码与群论
@@ -1880,6 +1913,7 @@ def cyclic_group_action_on_code(code: LinearCode) -> GroupAction:
         return tuple(codeword[(i + shift) % code.n] for i in range(code.n))
 
     return GroupAction(cyclic_group, set(code.codewords), cyclic_shift)
+
 ```
 
 ## 18. 群论在量子计算中的应用
@@ -1947,6 +1981,7 @@ def stabilizer_group(stabilizers: List[np.ndarray]) -> FiniteGroup:
     # 稳定子群由这些生成元生成
     # 这里需要实现泡利群的子群生成
     pass
+
 ```
 
 ### 18.2 量子纠错码的对称群
@@ -1960,6 +1995,7 @@ def quantum_error_correcting_code_symmetry(code_stabilizers: List) -> FiniteGrou
     # 这是一个概念性实现
     # 实际需要检查哪些泡利群元素与所有稳定子对易
     pass
+
 ```
 
 ## 19. 群论在机器学习中的应用
@@ -2007,6 +2043,7 @@ def group_convolution(group: FiniteGroup, signal: np.ndarray,
             result[i] += signal[j] * kernel[gh_inv_idx]
 
     return result
+
 ```
 
 ### 19.2 群不变特征
@@ -2048,6 +2085,7 @@ def max_pooling_over_group(group: FiniteGroup, data: np.ndarray,
         pooled[i] = max_val
 
     return pooled
+
 ```
 
 ## 20. 可视化工具
@@ -2160,6 +2198,7 @@ def plot_character_table(group: FiniteGroup, representations: List) -> None:
     plt.colorbar(im)
     plt.title("特征标表")
     plt.show()
+
 ```
 
 ### 20.2 群作用可视化
@@ -2203,6 +2242,7 @@ def visualize_group_action(group_action: GroupAction,
             node_size=1000, font_size=10, arrows=True, arrowsize=20)
     plt.title("群作用可视化")
     plt.show()
+
 ```
 
 ## 21. 高级测试与验证
@@ -2213,6 +2253,7 @@ def visualize_group_action(group_action: GroupAction,
 def verify_lagrange_theorem(group: FiniteGroup) -> bool:
     """
     验证拉格朗日定理：|H| 整除 |G|
+
     """
     subgroups = find_all_subgroups(group)
     group_order = len(group)
@@ -2225,6 +2266,7 @@ def verify_lagrange_theorem(group: FiniteGroup) -> bool:
 def verify_cauchy_theorem(group: FiniteGroup, p: int) -> bool:
     """
     验证柯西定理：如果 p 整除 |G|，则存在 p 阶元素
+
     """
     group_order = len(group)
     if group_order % p != 0:
@@ -2303,6 +2345,7 @@ def comprehensive_group_analysis(group: FiniteGroup) -> Dict:
     }
 
     return analysis
+
 ```
 
 ## 22. 实际应用案例
@@ -2337,6 +2380,7 @@ class RubiksCubeSolver:
             analysis = comprehensive_group_analysis(self.cube_group)
             return analysis
         return None
+
 ```
 
 ### 22.2 晶体对称性分析
@@ -2359,6 +2403,7 @@ def analyze_crystal_symmetry(point_group_symbol: str) -> Dict:
         }
         return analysis
     return None
+
 ```
 
 ## 23. 性能优化进阶
@@ -2400,6 +2445,7 @@ class SparseGroup(FiniteGroup):
         """逆元"""
         # 在生成元表示上计算逆元
         pass
+
 ```
 
 ### 23.2 群数据库
@@ -2441,6 +2487,7 @@ class GroupDatabase:
                     return name
 
         return f"未知群（阶为{n}）"
+
 ```
 
 ## 24. 总结与扩展
@@ -2649,6 +2696,7 @@ class GroupTheoryCalculator:
             print(f"  Sylow {p}-子群: {info['count']}个")
 
         print("=" * 60)
+
 ```
 
 ### 25.2 群论教学演示系统
@@ -2739,6 +2787,7 @@ class GroupTheoryDemo:
         print(f"\n所有子群:")
         for i, sg in enumerate(subgroups):
             print(f"  H_{i+1}: |H_{i+1}| = {len(sg)}")
+
             print(f"    验证: {len(group)} / {len(sg)} = {len(group) // len(sg)}")
             print(f"    结论: |H_{i+1}| 整除 |G| ✓")
 
@@ -2770,6 +2819,7 @@ class GroupTheoryDemo:
             print(f"  g_{i+1}H = {sorted(coset)}")
 
         print(f"\n验证: |G| = |H| × [G:H]")
+
         print(f"      {len(group)} = {len(subgroup)} × {len(cosets)}")
         print(f"      {len(group)} = {len(subgroup) * len(cosets)} ✓")
 
@@ -2791,6 +2841,7 @@ class GroupTheoryDemo:
             # 计算类方程
             if i == 0:
                 print(f"  类方程: |G| = ", end="")
+
             else:
                 print(f"          + ", end="")
             print(f"{len(cc)}", end="")
@@ -2826,6 +2877,7 @@ class GroupTheoryDemo:
                 self.demonstrate_cosets(name)
                 self.demonstrate_conjugacy(name)
                 print("\n" + "=" * 60)
+
 ```
 
 ### 25.3 与SymPy集成
@@ -2892,6 +2944,7 @@ try:
 
 except ImportError:
     print("SymPy未安装，跳过集成功能")
+
 ```
 
 ### 25.4 性能基准测试套件
@@ -3040,6 +3093,7 @@ class GroupTheoryBenchmark:
         print("=" * 60)
 
         return self.results
+
 ```
 
 ### 25.5 错误处理与边界情况
@@ -3118,6 +3172,7 @@ class RobustFiniteGroup(FiniteGroup):
             'valid': len(issues) == 0,
             'issues': issues
         }
+
 ```
 
 ### 25.6 实际项目集成示例
@@ -3212,6 +3267,7 @@ def example_api_usage():
     # 获取子群
     subgroups = api.get_subgroups()
     print(f"子群数量: {subgroups.get('count', 0)}")
+
 ```
 
 ## 26. 高级算法实现
@@ -3246,6 +3302,7 @@ def todd_coxeter_enumeration(generators: List[str],
         'coset_table': coset_table,
         'note': '这是简化实现，完整版本需要更复杂的算法'
     }
+
 ```
 
 ### 26.2 Schreier-Sims算法（概念）
@@ -3273,6 +3330,7 @@ def schreier_sims_algorithm(group: FiniteGroup) -> Dict:
         'strong_generators': strong_generators,
         'note': '完整实现需要置换群的专门算法'
     }
+
 ```
 
 ## 27. 完整测试套件
@@ -3478,6 +3536,7 @@ def run_all_tests():
 
 if __name__ == '__main__':
     run_all_tests()
+
 ```
 
 ### 27.2 集成测试
@@ -3538,6 +3597,7 @@ class IntegrationTests:
 
         # 验证共享密钥一致
         assert shared is not None
+
 ```
 
 ## 28. 快速开始指南
@@ -3566,9 +3626,10 @@ print(f"是否为阿贝尔群: {Z6.is_abelian()}")
 # 计算子群
 subgroups = find_all_subgroups(Z6)
 print(f"子群数量: {len(subgroups)}")
+
 ```
 
-### 28.2 常见任务示例
+## 28.2 常见任务示例
 
 ```python
 # 任务1：分析一个群
@@ -3634,6 +3695,7 @@ def group_action_example():
     for x in X:
         result = group_action.orbit_stabilizer_theorem(x)
         print(f"元素 {x}: {result}")
+
 ```
 
 ## 29. 最佳实践与设计模式
@@ -3701,9 +3763,10 @@ class GeneratorBasedStrategy(SubgroupFindingStrategy):
         generators = find_generators(group)
         # 使用生成元查找子群
         pass
+
 ```
 
-### 29.2 性能优化建议
+## 29.2 性能优化建议
 
 ```python
 # 1. 使用缓存
@@ -3753,9 +3816,10 @@ def large_group_elements(group: FiniteGroup):
             current = group.operation(current, generator)
             if current == group.identity.value:
                 break
+
 ```
 
-### 29.3 错误处理最佳实践
+## 29.3 错误处理最佳实践
 
 ```python
 class GroupError(Exception):
@@ -3790,6 +3854,7 @@ def safe_group_operation(group: FiniteGroup, a, b):
         if isinstance(e, GroupError):
             raise
         raise GroupError(f"群运算失败: {e}") from e
+
 ```
 
 ## 30. 故障排除与常见问题
@@ -3839,9 +3904,10 @@ def handle_large_group():
     """处理大型群"""
     # 使用生成元表示而不是完整元素列表
     group = SparseGroup(generators=['a', 'b'], relations=['a^2', 'b^3'])
+
 ```
 
-### 30.2 调试工具
+## 30.2 调试工具
 
 ```python
 class GroupDebugger:
@@ -3903,6 +3969,7 @@ class GroupDebugger:
         # 生成Cayley图
         generators = find_generators(self.group)
         visualize_cayley_graph(self.group, generators)
+
 ```
 
 ## 31. 扩展与定制
@@ -3942,9 +4009,10 @@ def create_custom_group():
     group.add_custom_property('description', '4阶循环群')
 
     return group
+
 ```
 
-### 31.2 插件系统
+## 31.2 插件系统
 
 ```python
 class GroupAnalysisPlugin:
@@ -4004,6 +4072,7 @@ def use_plugin_system():
     group = create_cyclic_group(12)
     results = manager.analyze(group)
     print(results)
+
 ```
 
 ## 32. 完整项目示例
@@ -4089,6 +4158,7 @@ class GroupTheoryApp:
 if __name__ == '__main__':
     app = GroupTheoryApp()
     app.interactive_menu()
+
 ```
 
 ### 32.2 教学演示系统
@@ -4107,6 +4177,7 @@ class TeachingSystem:
         print("拉格朗日定理教学")
         print("=" * 60)
         print("\n定理: 如果 H 是有限群 G 的子群，则 |H| 整除 |G|")
+
         print("\n让我们用例子来验证:")
 
         groups = ['Z_6', 'Z_8', 'S_3']
@@ -4119,6 +4190,7 @@ class TeachingSystem:
         print("陪集教学")
         print("=" * 60)
         print("\n定义: 群 G 关于子群 H 的左陪集是 gH = {gh | h ∈ H}")
+
         print("\n让我们看例子:")
 
         self.demo.demonstrate_cosets('Z_12')
@@ -4146,6 +4218,7 @@ class TeachingSystem:
             elif choice in topics:
                 _, func = topics[choice]
                 func()
+
 ```
 
 ## 33. 性能调优指南
@@ -4189,6 +4262,7 @@ def memory_profiling():
     print(f"峰值内存使用: {peak / 1024 / 1024:.2f} MB")
 
     tracemalloc.stop()
+
 ```
 
 ## 34. 文档与API参考
@@ -4217,6 +4291,7 @@ def memory_profiling():
 # sphinx-quickstart
 # 在conf.py中添加:
 # extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon']
+
 ```
 
 ## 35. 总结与未来方向
@@ -4259,6 +4334,7 @@ def memory_profiling():
 # - 添加类型提示
 # - 编写文档字符串
 # - 添加单元测试
+
 ```
 
 ## 36. 参考文献
@@ -4278,3 +4354,4 @@ def memory_profiling():
 13. GAP - Groups, Algorithms, and Programming. <https://www.gap-system.org/>
 14. Magma Computational Algebra System. <http://magma.maths.usyd.edu.au/>
 15. SageMath. <https://www.sagemath.org/>
+```

@@ -129,6 +129,7 @@ msc_secondary: ['03Bxx', '13Cxx', '03-XX']
 #### 7.3 形式化实现 / Formal Implementation
 - **Lean 4实现**: ...
 - **其他形式化实现**: ...
+
 ```
 
 ---
@@ -472,6 +473,7 @@ structure Group (G : Type u) where
   one_mul : ∀ a, mul one a = a
   mul_one : ∀ a, mul a one = a
   mul_left_inv : ∀ a, mul (inv a) a = one
+
 ```
 
 **范畴论定义**:
@@ -491,6 +493,7 @@ structure Group (G : Type u) where
 class Group (G : Type u) extends Monoid G where
   inv : G → G
   mul_left_inv : ∀ a : G, inv a * a = 1
+
 ```
 
 **其他形式化实现**:

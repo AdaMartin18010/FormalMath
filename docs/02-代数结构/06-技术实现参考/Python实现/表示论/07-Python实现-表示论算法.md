@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "07 Python实现 表示论算法"
 msc_primary: ["68W30"]
@@ -10,7 +15,7 @@ msc_secondary: ["20C99"]
 
 本文档提供表示论核心算法的Python实现，基于国际标准数学定义，涵盖群表示、李代数表示、特征标理论、不可约表示分解等核心算法。
 
-## 1. 群表示基础算法
+## 一、群表示基础算法
 
 ### 1.1 群表示类
 
@@ -132,9 +137,10 @@ class GroupRepresentation:
                 return False
 
         return True
+
 ```
 
-### 1.2 标准表示构造
+## 1.2 标准表示构造
 
 ```python
 def trivial_representation(group, field: str = 'complex') -> GroupRepresentation:
@@ -173,6 +179,7 @@ def permutation_representation(group, action: Callable, field: str = 'complex') 
     # 这里需要根据具体的群作用来确定
     # 简化版本：假设作用在有限集合上
     pass
+
 ```
 
 ### 1.3 表示的运算
@@ -236,9 +243,10 @@ def dual_representation(rep: GroupRepresentation) -> GroupRepresentation:
         dual_rep.set_matrix(element.value, dual_matrix)
 
     return dual_rep
+
 ```
 
-## 2. 不可约表示算法
+## 二、不可约表示算法
 
 ### 2.1 不可约性检测
 
@@ -293,6 +301,7 @@ def generate_test_matrices(n: int, num_samples: int = 100) -> List[np.ndarray]:
     matrices.append(np.ones((n, n)))
 
     return matrices
+
 ```
 
 ### 2.2 表示的分解
@@ -346,9 +355,10 @@ def multiplicity_in_decomposition(rep: GroupRepresentation,
     """
     inner_product = character_inner_product(rep, irreducible_rep)
     return inner_product.real  # 重数应该是实数
+
 ```
 
-## 3. 特征标理论算法
+## 三、特征标理论算法
 
 ### 3.1 特征标表计算
 
@@ -435,6 +445,7 @@ class CharacterTable:
         header = "类"
         for j, cc in enumerate(self.conjugacy_classes):
             header += f"\t|C_{j+1}|={len(cc)}"
+
         print(header)
         print("-" * 60)
 
@@ -448,6 +459,7 @@ class CharacterTable:
                 else:
                     row += f"\t{char:.2f}"
             print(row)
+
 ```
 
 ### 3.2 特征标性质验证
@@ -488,11 +500,13 @@ def character_degree(rep: GroupRepresentation) -> int:
 
 def character_norm(rep: GroupRepresentation) -> float:
     """计算特征标的范数：||χ||^2 = <χ, χ>"""
+
     inner_product = character_inner_product(rep, rep)
     return abs(inner_product)
+
 ```
 
-## 4. 李代数表示算法
+## 四、李代数表示算法
 
 ### 4.1 李代数表示基础
 
@@ -548,6 +562,7 @@ class LieAlgebra:
     def __init__(self, basis: List, bracket: Callable):
         self.basis = basis
         self.bracket = bracket  # 李括号运算
+
 ```
 
 ### 4.2 最高权表示
@@ -577,9 +592,10 @@ def weight_space_decomposition(rep: LieAlgebraRepresentation) -> Dict:
     # 3. 分解表示空间
 
     pass
+
 ```
 
-## 5. 应用示例
+## 五、应用示例
 
 ### 5.1 对称群S_3的表示
 
@@ -636,6 +652,7 @@ def construct_standard_representation_matrix(perm: Tuple) -> np.ndarray:
     # 这是一个占位函数
     # 实际实现需要根据具体的群作用
     return np.eye(2)
+
 ```
 
 ### 5.2 特征标表计算示例
@@ -660,6 +677,7 @@ def example_character_table():
     header = "类\t"
     for j, cc in enumerate(classes):
         header += f"|C_{j+1}|={len(cc)}\t"
+
     print(header)
     print("-" * 60)
 
@@ -671,9 +689,10 @@ def example_character_table():
             char = rep.character(representative)
             row += f"{char.real:.2f}\t"
         print(row)
+
 ```
 
-## 6. 总结
+## 六、总结
 
 本文档提供了表示论核心算法的Python实现，包括：
 
@@ -685,7 +704,7 @@ def example_character_table():
 
 所有算法都基于国际标准数学定义，提供了完整的理论背景和实际应用示例。
 
-## 6. 模表示算法
+## 六、模表示算法
 
 ### 6.1 模表示基础
 
@@ -750,6 +769,7 @@ def is_p_regular_element(group, element, prime: int) -> bool:
     """检查元素是否为p-正则元素（阶与p互素）"""
     order = group.order(element)
     return order % prime != 0
+
 ```
 
 ### 6.2 块理论
@@ -771,9 +791,10 @@ def compute_blocks(group, prime: int) -> List[Set]:
     # 实际需要更复杂的算法
 
     return blocks
+
 ```
 
-## 7. 诱导表示与限制表示
+## 七、诱导表示与限制表示
 
 ### 7.1 诱导表示
 
@@ -849,6 +870,7 @@ def find_h_in_subgroup(g, coset1, coset2, group, H):
             return h
 
     return group.identity.value
+
 ```
 
 ### 7.2 限制表示
@@ -870,9 +892,10 @@ def restricted_representation(rep: GroupRepresentation,
         restricted_rep.set_matrix(h.value, matrix)
 
     return restricted_rep
+
 ```
 
-## 8. 表示论在物理中的应用
+## 八、表示论在物理中的应用
 
 ### 8.1 角动量表示
 
@@ -897,9 +920,11 @@ def angular_momentum_representation(j: float) -> Dict:
     for i in range(dimension - 1):
         m = j - i
         # J_+|m> = sqrt((j-m)(j+m+1))|m+1>
+
         coefficient = np.sqrt((j - m) * (j + m + 1))
         J_plus[i, i + 1] = coefficient
         # J_-|m+1> = sqrt((j+m+1)(j-m))|m>
+
         J_minus[i + 1, i] = coefficient
 
     # 构造J_x和J_y
@@ -922,6 +947,7 @@ def clebsch_gordan_coefficient(j1: float, m1: float,
     """
     计算Clebsch-Gordan系数
     <j1, m1; j2, m2 | j, m>
+
     """
     # 这是一个复杂计算，需要递归关系
     # 这里提供框架
@@ -934,6 +960,7 @@ def clebsch_gordan_coefficient(j1: float, m1: float,
     # 实际计算需要递归公式
     # 这里返回占位值
     return 0.0
+
 ```
 
 ### 8.2 对称性分析
@@ -959,9 +986,10 @@ def symmetry_analysis(molecule_symmetry_group) -> Dict:
     # 分析电子态的对称性
 
     return analysis
+
 ```
 
-## 9. 可视化工具
+## 九、可视化工具
 
 ### 9.1 特征标表可视化
 
@@ -1014,9 +1042,10 @@ def plot_character_values(rep: GroupRepresentation):
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
     plt.show()
+
 ```
 
-## 10. 性能优化与测试
+## 十、性能优化与测试
 
 ### 10.1 缓存优化
 
@@ -1046,6 +1075,7 @@ class CachedGroupRepresentation(GroupRepresentation):
         char = super().character(element)
         self._character_cache[element] = char
         return char
+
 ```
 
 ### 10.2 测试套件
@@ -1090,6 +1120,7 @@ class TestGroupRepresentation(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 ```
 
 ## 11. 总结
@@ -1206,6 +1237,7 @@ class RepresentationTheoryCalculator:
             print("\n✓ 特征标正交关系验证通过")
         else:
             print("\n✗ 特征标正交关系验证失败")
+
 ```
 
 ### 13.2 表示论教学演示
@@ -1292,6 +1324,7 @@ class RepresentationTheoryDemo:
                 self.demonstrate_character_theory(name)
                 self.demonstrate_representation_decomposition(name)
                 print("\n" + "=" * 60)
+
 ```
 
 ### 13.3 表示论在量子计算中的应用
@@ -1328,6 +1361,7 @@ def schur_weyl_duality(n: int, d: int) -> Dict:
         'd': d,
         'note': '完整实现需要对称群和一般线性群的表示理论'
     }
+
 ```
 
 ### 13.4 表示论在机器学习中的应用
@@ -1383,6 +1417,7 @@ def group_convolution_layer(group, signal_dim: int, kernel_dim: int):
             return result
 
     return GroupConvolution(group, signal_dim, kernel_dim)
+
 ```
 
 ### 13.5 性能基准测试
@@ -1467,6 +1502,7 @@ class RepresentationTheoryBenchmark:
         print("=" * 60)
 
         return self.results
+
 ```
 
 ### 13.6 完整使用示例
@@ -1513,6 +1549,7 @@ def complete_example():
 
 if __name__ == '__main__':
     complete_example()
+
 ```
 
 ## 14. 总结与扩展
@@ -1622,6 +1659,7 @@ def construct_su2_matrix(j: float, angle: float) -> np.ndarray:
     # 这里需要实现具体的SU(2)表示
     # 简化版本返回单位矩阵
     return np.eye(dimension, dtype=complex)
+
 ```
 
 ### 16.2 量子群表示（概念实现）
@@ -1670,6 +1708,7 @@ def quantum_sl2_representation(q: complex, highest_weight: int) -> QuantumGroupR
     # 简化版本
 
     return rep
+
 ```
 
 ### 16.3 表示论数据库
@@ -1725,6 +1764,7 @@ class RepresentationDatabase:
     def get_irreducible_representations(self, group_name: str) -> List[GroupRepresentation]:
         """获取不可约表示"""
         return self.representations.get(group_name, [])
+
 ```
 
 ## 17. 表示论在化学中的应用
@@ -1771,6 +1811,7 @@ def crystal_field_splitting(point_group, d_orbitals: List) -> Dict:
     }
 
     return splitting
+
 ```
 
 ### 17.2 振动光谱分析
@@ -1794,6 +1835,7 @@ def vibrational_mode_analysis(molecule_symmetry_group) -> Dict:
     }
 
     return analysis
+
 ```
 
 ## 18. 表示论在计算机科学中的应用
@@ -1825,6 +1867,7 @@ def graph_automorphism_representation(graph) -> GroupRepresentation:
         rep.set_matrix(element.value, matrix)
 
     return rep
+
 ```
 
 ### 18.2 编码理论中的表示
@@ -1845,6 +1888,7 @@ def code_symmetry_representation(linear_code) -> GroupRepresentation:
     # 构造置换矩阵
 
     return rep
+
 ```
 
 ## 19. 快速开始指南
@@ -1875,9 +1919,10 @@ print(f"正则表示的特征标: {regular.character(0)}")
 # 4. 使用计算器
 calculator = RepresentationTheoryCalculator(Z6)
 calculator.print_analysis_report()
+
 ```
 
-### 19.2 常见任务
+## 19.2 常见任务
 
 ```python
 # 任务1：计算特征标表
@@ -1915,6 +1960,7 @@ def verify_representation_example():
 
     properties = verify_character_properties(rep)
     print(f"特征标性质: {properties}")
+
 ```
 
 ## 20. 总结

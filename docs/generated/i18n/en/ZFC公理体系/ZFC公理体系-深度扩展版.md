@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: [🇨🇳 中文](../zh/ZFC公理体系\ZFC公理体系-深度扩展版.md) | **🇬🇧 English**
@@ -105,6 +110,7 @@ msc_secondary: ['03E30', '03E10', '03-XX']
 def ConstructibleUniverse : Type :=
   -- 递归Definition可构造集合
   -- 每个阶段只添加可Definition的子集
+
 ```
 
 **强迫法构造**：
@@ -117,6 +123,7 @@ structure ForcingPartialOrder where
   -- 满足反链条件
   antichain_condition : ∀ (A : Set carrier),
     IsAntichain A → A.Countable
+
 ```
 
 #### 1.1.2 Continuous统假设(CH)的独立性
@@ -281,6 +288,7 @@ axiom choice :
     (∀ A B ∈ F, A ≠ B → A ∩ B = ∅) →
     (∅ ∉ F) →
     ∃ C, ∀ A ∈ F, |A ∩ C| = 1
+
 ```
 
 ### 2.2 大基数形式化
@@ -320,6 +328,7 @@ axiom mahlo_cardinal :
 
 axiom weakly_compact_cardinal :
   ∃ κ, WeaklyCompact κ
+
 ```
 
 ### 2.3 强迫法形式化
@@ -349,6 +358,7 @@ def GenericFilter (P : ForcingPartialOrder) (M : Model) : Prop :=
 def ForcingExtension (M : Model) (P : ForcingPartialOrder) : Model :=
   let G : GenericFilter P M := sorry
   M[G] -- 通过G扩展M得到的Module型
+
 ```
 
 ## 🌐 3. 跨学科应用案例 (编号: B.01.10.04)
@@ -371,6 +381,7 @@ data TypeCardinal =
   NatCardinal |
   SumCardinal TypeCardinal TypeCardinal |
   ProductCardinal TypeCardinal TypeCardinal |
+
   FunctionCardinal TypeCardinal TypeCardinal
 
 -- 基数计算函数
@@ -381,6 +392,7 @@ typeCardinal NatCardinal = Aleph 0
 typeCardinal (SumCardinal t1 t2) = addCardinal (typeCardinal t1) (typeCardinal t2)
 typeCardinal (ProductCardinal t1 t2) = mulCardinal (typeCardinal t1) (typeCardinal t2)
 typeCardinal (FunctionCardinal t1 t2) = powCardinal (typeCardinal t2) (typeCardinal t1)
+
 ```
 
 #### 3.1.2 程序终止性Proof
@@ -396,6 +408,7 @@ typeCardinal (FunctionCardinal t1 t2) = powCardinal (typeCardinal t2) (typeCardi
 data TerminationMeasure =
   Zero |
   Successor TerminationMeasure |
+
   Limit (TerminationMeasure -> TerminationMeasure)
 
 -- 程序复杂度分析
@@ -405,6 +418,7 @@ analyzeComplexity (Loop body) =
     Zero -> Successor Zero
     Successor n -> Successor (Successor n)
     Limit f -> Limit (\n -> analyzeComplexity (Loop (f n)))
+
 ```
 
 ### 3.2 逻辑学应用
@@ -422,6 +436,7 @@ analyzeComplexity (Loop body) =
 data ModelCardinal =
   FiniteModel Int |
   CountableModel |
+
   UncountableModel Cardinal
 
 -- Module型大小分析
@@ -431,6 +446,7 @@ modelSize model =
     Finite n -> FiniteModel n
     Aleph 0 -> CountableModel
     κ -> UncountableModel κ
+
 ```
 
 #### 3.2.2 Proof论中的序数
@@ -446,6 +462,7 @@ modelSize model =
 data ProofComplexity =
   AxiomComplexity |
   RuleComplexity ProofComplexity ProofComplexity |
+
   CutComplexity ProofComplexity Ordinal
 
 -- Proof复杂度分析
@@ -455,6 +472,7 @@ analyzeProofComplexity (Rule p1 p2) =
   RuleComplexity (analyzeProofComplexity p1) (analyzeProofComplexity p2)
 analyzeProofComplexity (Cut p1 p2) =
   CutComplexity (analyzeProofComplexity p1) (ordinal p2)
+
 ```
 
 ### 3.3 哲学应用
@@ -472,6 +490,7 @@ analyzeProofComplexity (Cut p1 p2) =
 data InfinityType =
   PotentialInfinity |  -- 潜无限
   ActualInfinity Cardinal |  -- 实无限
+
   AbsoluteInfinity  -- 绝对无限
 
 -- 无限性分析
@@ -481,6 +500,7 @@ analyzeInfinity obj =
     Finite _ -> error "Not infinite"
     Aleph 0 -> PotentialInfinity
     κ -> ActualInfinity κ
+
 ```
 
 #### 3.3.2 逻辑哲学中的真值
@@ -496,6 +516,7 @@ analyzeInfinity obj =
 data TruthLevel =
   GroundTruth |
   ReflectiveTruth Ordinal |
+
   AbsoluteTruth
 
 -- 真值层次分析
@@ -503,6 +524,7 @@ analyzeTruthLevel :: Proposition -> TruthLevel
 analyzeTruthLevel (Atomic _) = GroundTruth
 analyzeTruthLevel (Reflective p n) = ReflectiveTruth n
 analyzeTruthLevel (Absolute p) = AbsoluteTruth
+
 ```
 
 ### 3.4 经济学应用
@@ -520,6 +542,7 @@ analyzeTruthLevel (Absolute p) = AbsoluteTruth
 data ChoiceSetCardinal =
   FiniteChoice Int |
   CountableChoice |
+
   UncountableChoice Cardinal
 
 -- 选择复杂度分析
@@ -529,6 +552,7 @@ analyzeChoiceComplexity choices =
     Finite n -> FiniteChoice n
     Aleph 0 -> CountableChoice
     κ -> UncountableChoice κ
+
 ```
 
 #### 3.4.2 博弈论中的序数
@@ -544,6 +568,7 @@ analyzeChoiceComplexity choices =
 data GameComplexity =
   SimpleGame |
   ComplexGame Ordinal |
+
   InfiniteGame
 
 -- 博弈复杂度分析
@@ -551,6 +576,7 @@ analyzeGameComplexity :: Game -> GameComplexity
 analyzeGameComplexity (Simple _) = SimpleGame
 analyzeGameComplexity (Complex g n) = ComplexGame n
 analyzeGameComplexity (Infinite g) = InfiniteGame
+
 ```
 
 ### 3.5 物理学应用
@@ -568,6 +594,7 @@ analyzeGameComplexity (Infinite g) = InfiniteGame
 data QuantumStateCardinal =
   FiniteDimensional Int |
   CountableDimensional |
+
   UncountableDimensional Cardinal
 
 -- 量子系统分析
@@ -577,6 +604,7 @@ analyzeQuantumSystem system =
     Finite n -> FiniteDimensional n
     Aleph 0 -> CountableDimensional
     κ -> UncountableDimensional κ
+
 ```
 
 #### 3.5.2 相对论中的序数
@@ -592,12 +620,14 @@ analyzeQuantumSystem system =
 data SpacetimeOrdinal =
   CausalOrdinal Ordinal |
   TemporalOrdinal Ordinal |
+
   SpatialOrdinal Ordinal
 
 -- 时空结构分析
 analyzeSpacetimeStructure :: Spacetime -> SpacetimeOrdinal
 analyzeSpacetimeStructure spacetime =
   CausalOrdinal (causalOrder spacetime)
+
 ```
 
 ## 📊 4. 质量评估与改进建议 (编号: B.01.10.05)

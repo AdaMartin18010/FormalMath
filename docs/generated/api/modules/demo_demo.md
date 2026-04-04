@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # demo_demo
 
 **源文件**: `tools\content-quality-assessment\demo_demo.py`
@@ -8,6 +16,7 @@
 
 ```python
 def print_section(title)
+
 ```
 
 打印章节标题
@@ -20,6 +29,7 @@ def print_section(title)
 
 ```python
 def demo_single_file_assessment()
+
 ```
 
 演示单个文件评估
@@ -28,6 +38,7 @@ def demo_single_file_assessment()
 
 ```python
 def demo_batch_assessment()
+
 ```
 
 演示批量评估
@@ -36,6 +47,7 @@ def demo_batch_assessment()
 
 ```python
 def demo_report_generation(results, summary)
+
 ```
 
 演示报告生成
@@ -49,6 +61,7 @@ def demo_report_generation(results, summary)
 
 ```python
 def demo_issue_extraction(results)
+
 ```
 
 演示问题提取
@@ -61,6 +74,7 @@ def demo_issue_extraction(results)
 
 ```python
 def main()
+
 ```
 
 主函数

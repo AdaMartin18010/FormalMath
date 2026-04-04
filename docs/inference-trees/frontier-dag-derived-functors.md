@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 导出代数几何：导出函子理论推理树
 
 ## 概述
@@ -62,6 +70,7 @@ graph TD
     style I fill:#f88,stroke:#333
     style J fill:#f77,stroke:#333
     style K fill:#bfb,stroke:#333
+
 ```
 
 ## 核心概念详解
@@ -69,9 +78,13 @@ graph TD
 ### 1. 链复形
 
 **链复形**: C• = {C_n, d_n}
+
 ```
+
 ... → C_{n+1} → C_n → C_{n-1} → ...
+
 ```
+
 满足 d² = 0。
 
 **同调**: H_n(C) = Ker(d_n) / Im(d_{n+1})
@@ -87,8 +100,11 @@ graph TD
 **拟同构**: f: C• → D•诱导同调同构H_n(f)
 
 **导出范畴**: 
+
 ```
+
 D(A) := K(A)[{拟同构}⁻¹]
+
 ```
 
 **有界性**: 
@@ -126,8 +142,11 @@ D(A) := K(A)[{拟同构}⁻¹]
 ## Grothendieck谱序列
 
 对于F: A → B, G: B → C，若F将内射映到G-零调：
+
 ```
+
 E²_{p,q} = R^pG(R^qF(X)) ⇒ R^{p+q}(GF)(X)
+
 ```
 
 ## 无穷版本

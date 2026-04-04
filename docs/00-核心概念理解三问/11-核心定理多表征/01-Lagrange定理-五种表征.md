@@ -51,6 +51,7 @@ theorem subgroup_card_dvd {G : Type*} [Group G] [Fintype G]
     Fintype.card H ∣ Fintype.card G := by
   use H.index
   exact lagrange H
+
 ```
 
 ### 1.3 证明梗概
@@ -62,12 +63,15 @@ theorem subgroup_card_dvd {G : Type*} [Group G] [Fintype G]
     │                       │
 [陪集分解]              [等势性]
 G = gH ∪ g'H ∪ ...     |gH| = |H|
+
     │                       │
 不交并                  左乘是双射
     │                       │
     └───────────┬───────────┘
                 │
+
         |G| = (陪集数) × |H|
+
 ```
 
 **关键步骤**：
@@ -102,6 +106,7 @@ G = gH ∪ g'H ∪ ...     |gH| = |H|
     └────────────────────────────────┘
 
     |G| = 24 = 6 × 4 = |H| × [G:H]
+
 ```
 
 ### 2.2 动态理解
@@ -118,6 +123,7 @@ G = gH ∪ g'H ∪ ...     |gH| = |H|
     └─────┘        └─────┘         └─────┘
 
     每个房间大小相同！
+
 ```
 
 ### 2.3 陪集分解的可视化
@@ -135,6 +141,7 @@ G = gH ∪ g'H ∪ ...     |gH| = |H|
     2+H   = {2, 5, 8, 11}   ← 陪集3
 
     12 = 4 × 3（子群阶 × 陪集数）
+
 ```
 
 ---
@@ -158,6 +165,7 @@ G = gH ∪ g'H ∪ ...     |gH| = |H|
 └─ 60 = 6 × 10（10个宿舍）
 
 宿舍人数必须整除班级人数！
+
 ```
 
 **蛋糕切分类比**：
@@ -169,6 +177,7 @@ G = gH ∪ g'H ∪ ...     |gH| = |H|
 ├─ 不重复切
 ├─ 覆盖整个蛋糕
 └─ 块数 × 每块大小 = 整个蛋糕
+
 ```
 
 ### 3.3 为什么是真的？
@@ -185,6 +194,7 @@ G = gH ∪ g'H ∪ ...     |gH| = |H|
 映射 φ: H → gH, h ↦ gh 是双射！
 ├─ 单射：gh₁=gh₂ ⟹ h₁=h₂（消去律）
 └─ 满射：gH的每个元素gh都有原像h
+
 ```
 
 ---
@@ -237,19 +247,24 @@ add_mod12 = lambda a, b: (a + b) % 12
 result = lagrange_verification(Z12, H, add_mod12)
 print(f"|G| = {result['group_order']}")
 print(f"|H| = {result['subgroup_order']}")
+
 print(f"陪集数 = {result['num_cosets']}")
 print(f"Lagrange成立: {result['lagrange_holds']}")
 print(f"陪集: {result['cosets']}")
+
 ```
 
-### 4.2 输出结果
+## 4.2 输出结果
 
 ```text
+
 |G| = 12
 |H| = 4
+
 陪集数 = 3
 Lagrange成立: True
 陪集: [{0, 3, 6, 9}, {1, 4, 7, 10}, {2, 5, 8, 11}]
+
 ```
 
 ### 4.3 对称群S₃的例子
@@ -273,6 +288,7 @@ print(f"|H| = {len(H)}")  # 2
 
 # 验证：6 = 2 × 3（3个陪集）
 # 陪集分解确认Lagrange定理
+
 ```
 
 ---
@@ -291,6 +307,7 @@ print(f"|H| = {len(H)}")  # 2
     这是"等化子"的对偶（余等化子）
               │
     G/H = coeq(H⇉G)
+
 ```
 
 **商对象的万有性质**：
@@ -304,6 +321,7 @@ print(f"|H| = {len(H)}")  # 2
   π │     f̄
     ↓   ∕
    G/H
+
 ```
 
 ### 5.2 作为群胚的视角
@@ -317,6 +335,7 @@ Lagrange定理说的是：
     |Aut(*)| = |H|
 
     |G| = |Ob(G/H)| × |Aut(*)|
+
 ```
 
 ### 5.3 推广：Lagrange定理的变体
@@ -347,6 +366,7 @@ Lagrange定理说的是：
 设 p 是素数，a 不被 p 整除
 
 考虑群 G = (ℤ/pℤ)* （非零元乘法群）
+
 |G| = p-1
 
 ⟨a⟩ 是G的子群
@@ -354,7 +374,9 @@ Lagrange定理说的是：
 
 设 |⟨a⟩| = d，则 aᵈ ≡ 1 (mod p)
 由于 d | (p-1)，有 aᵖ⁻¹ ≡ 1 (mod p)
+
 两边乘 a：aᵖ ≡ a (mod p) ∎
+
 ```
 
 ---

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 双曲型方程 - 思维导图
 
 ## 概述
@@ -53,6 +58,7 @@ mindmap
       能量守恒
         波动方程能量
         E(t) = ∫(u_t² + c²|∇u|²)
+
         守恒定律
       能量估计
         Gronwall不等式
@@ -114,6 +120,7 @@ mindmap
         奇性保持
         弥散效应
         惠更斯原理
+
 ```
 
 ---
@@ -146,6 +153,7 @@ graph TD
     style B fill:#e8f5e9
     style C fill:#fff3e0
     style D fill:#fce4ec
+
 ```
 
 ---
@@ -175,6 +183,7 @@ graph TD
     style A1 fill:#e3f2fd
     style A2 fill:#fff3e0
     style A3 fill:#e8f5e9
+
 ```
 
 ---
@@ -184,6 +193,7 @@ graph TD
 ```mermaid
 graph LR
     A[波动方程能量] --> B[定义: E(t) = ½∫(u_t² + c²|∇u|²)]
+
     B --> C[守恒律: dE/dt = 0]
     C --> D[唯一性证明]
     C --> E[适定性分析]
@@ -194,6 +204,7 @@ graph LR
     style A fill:#e3f2fd
     style C fill:#e8f5e9
     style H fill:#fff3e0
+
 ```
 
 ---
@@ -230,6 +241,7 @@ mindmap
         物理可容许性
         Lax条件
         Oleinik条件
+
 ```
 
 ---
@@ -261,6 +273,7 @@ graph TD
     style A fill:#e3f2fd
     style C fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---
@@ -296,6 +309,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#e8f5e9
     style G fill:#fff3e0
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # i18n_generator
 
 **源文件**: `tools\doc-generator\i18n_generator.py`
@@ -8,6 +16,7 @@
 
 ```python
 class TranslationEntry
+
 ```
 
 翻译条目
@@ -16,6 +25,7 @@ class TranslationEntry
 
 ```python
 class I18nGenerator
+
 ```
 
 国际化文档生成器
@@ -28,6 +38,7 @@ class I18nGenerator
 
 ```python
 def main()
+
 ```
 
 主函数

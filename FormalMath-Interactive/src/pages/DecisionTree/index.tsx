@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sitemap, Play, RotateCcw, CheckCircle, XCircle, HelpCircle } from 'lucide-react';
+import { Layout, Play, RotateCcw, CheckCircle, XCircle, HelpCircle } from 'lucide-react';
 import { MermaidChart } from '@visualizations/MermaidChart';
 import { InteractiveTree } from '@visualizations/InteractiveTree';
 import { cn } from '@utils/classNames';
@@ -108,7 +108,7 @@ export const DecisionTree: React.FC = () => {
       {/* Header */}
       <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-white">
         <div className="flex items-center gap-3">
-          <Sitemap className="w-6 h-6 text-pink-600" />
+          <Layout className="w-6 h-6 text-pink-600" />
           <div>
             <h1 className="text-xl font-semibold text-gray-900">决策树</h1>
             <p className="text-sm text-gray-500">基于条件判断的问题求解向导</p>

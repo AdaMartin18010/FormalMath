@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×工程学：控制理论的系统分析
 
 ## 概述
@@ -104,6 +109,7 @@ mindmap
         模型参考
         自校正
         在线辨识
+
 ```
 
 ---
@@ -138,6 +144,7 @@ graph TD
     style M fill:#e3f2fd
     style C fill:#e8f5e9
     style SIM fill:#fff3e0
+
 ```
 
 ---
@@ -194,6 +201,7 @@ mindmap
       时变系统
         微分Riccati
         有限时域
+
 ```
 
 ---

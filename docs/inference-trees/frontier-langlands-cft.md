@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Langlands纲领：类域论到Langlands对应推理树
 
 ## 概述
@@ -51,6 +59,7 @@ graph TD
     style H fill:#f99,stroke:#333
     style I fill:#f88,stroke:#333
     style J fill:#f77,stroke:#333
+
 ```
 
 ## 核心概念详解
@@ -58,20 +67,29 @@ graph TD
 ### 1. 类域论回顾
 
 **局部类域论**：对于p进域K，有Artin同构
+
 ```
+
 K^× ≅ W_K^ab
+
 ```
 
 **整体类域论**：对于数域K，有
+
 ```
+
 GalK^ab/K ≅ C_K/K̄^×
+
 ```
 
 ### 2. 局部Langlands对应
 
 对于p进域K，存在双射：
+
 ```
+
 {GLnK的不可约可容许表示} ↔ {WD_K的n维Frobenius半单表示}
+
 ```
 
 其中WD_K = Weil-Deligne群。
@@ -79,8 +97,11 @@ GalK^ab/K ≅ C_K/K̄^×
 ### 3. 整体Langlands对应
 
 猜想：存在对应
+
 ```
+
 {GLnAQ的尖点自守表示} ↔ {GalQ̄/Q的n维不可约表示}
+
 ```
 
 ## 重要定理

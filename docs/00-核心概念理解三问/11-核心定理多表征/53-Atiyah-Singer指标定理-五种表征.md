@@ -68,6 +68,7 @@ $$\left[ M \text{ 紧致定向流形 } \land D \text{ 椭圆算子 } \right] \Ri
          └─ 流形的拓扑不变量
 
 两者相等！
+
 ```
 
 ### 2.2 分析 vs 拓扑
@@ -80,6 +81,7 @@ $$\left[ M \text{ 紧致定向流形 } \land D \text{ 椭圆算子 } \right] \Ri
     空间的拓扑性质
 
     这是分析学与拓扑学的深刻联系
+
 ```
 
 ### 2.3 示性类
@@ -91,6 +93,7 @@ $$\left[ M \text{ 紧致定向流形 } \land D \text{ 椭圆算子 } \right] \Ri
     Td(TM) = Todd类（切丛的）
 
     它们的乘积积分 = 拓扑指标
+
 ```
 
 ---
@@ -199,6 +202,7 @@ def verify_index_theorem(M, operator_D):
         'topological_index': topological,
         'difference': abs(analytical - topological)
     }
+
 ```
 
 ### 4.2 特殊情形：Gauss-Bonnet
@@ -247,6 +251,7 @@ def compute_analytical_index_hodge(M):
     euler_char = sum((-1)**k * b_k for k, b_k in enumerate(betti_numbers))
 
     return euler_char
+
 ```
 
 ### 4.3 应用：计算零模
@@ -276,6 +281,7 @@ def compute_zero_modes_via_index(M, operator_D):
     zero_modes = index  # 需要根据具体情况调整
 
     return zero_modes
+
 ```
 
 ---

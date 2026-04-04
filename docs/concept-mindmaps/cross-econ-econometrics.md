@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×经济学：计量经济学的统计推断
 
 ## 概述
@@ -109,6 +114,7 @@ mindmap
         Lasso回归
         随机森林
         因果树
+
 ```
 
 ---
@@ -135,6 +141,7 @@ graph TD
     style O fill:#e3f2fd
     style B fill:#e8f5e9
     style AN1 fill:#fff3e0
+
 ```
 
 ---
@@ -195,6 +202,7 @@ mindmap
         协整关系
         误差修正
         长期均衡
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 傅里叶级数收敛性推理树
 
 ## 概述
@@ -48,6 +56,7 @@ graph TD
     
     style C4 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style E2 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 核心定理
@@ -78,6 +87,7 @@ $$\frac{1}{\pi} \int_{-\pi}^{\pi} |f(x)|^2 dx = \frac{a_0^2}{2} + \sum_{n=1}^{\i
 ## 依赖关系
 
 ```
+
 正交函数系
     ↓
 Fourier系数定义
@@ -89,4 +99,5 @@ Riemann-Lebesgue
 各种收敛判别法
     ↓
 Parseval等式 ← L²理论
+
 ```

@@ -31,7 +31,7 @@ msc_secondary: ["11G40", "11G07", "14H52"]
 
 ---
 
-## 1. 椭圆曲线的算术基础
+## 一、椭圆曲线的算术基础
 
 ### 1.1 Weierstrass方程与群结构
 
@@ -90,7 +90,7 @@ $$2Q = \left(\lambda^2 - 2x, \lambda(x - x_{2Q}) - y\right)$$
 
 ---
 
-## 2. Mordell-Weil定理
+## 二、Mordell-Weil定理
 
 ### 2.1 有理点群的有限生成性
 
@@ -140,7 +140,7 @@ $$\hat{h}(P) = \lim_{n \to \infty} \frac{h(2^n P)}{4^n}$$
 
 ---
 
-## 3. BSD猜想的陈述
+## 三、BSD猜想的陈述
 
 ### 3.1 解析秩与代数秩
 
@@ -169,6 +169,7 @@ $$\lim_{s \to 1} \frac{L(E, s)}{(s-1)^r} = \frac{\Omega_E \cdot \text{Reg}(E) \c
 其中：
 
 - $\Omega_E = \int_{E(\mathbb{R})} \frac{dx}{|2y + a_1 x + a_3|}$：实周期
+
 - $\text{Reg}(E) = \det(\langle P_i, P_j \rangle)$：调节子（高度配对矩阵）
 - $\text{Sha}(E)$：Tate-Shafarevich群，$\text{Sha}(E) = \ker(H^1(K, E) \to \prod_v H^1(K_v, E))$
 - $c_p = [E(\mathbb{Q}_p) : E^0(\mathbb{Q}_p)]$：Tamagawa数
@@ -181,7 +182,7 @@ $$\lim_{s \to 1} \frac{L(E, s)}{(s-1)^r} = \frac{\Omega_E \cdot \text{Reg}(E) \c
 
 ---
 
-## 4. BSD猜想的进展
+## 四、BSD猜想的进展
 
 ### 4.1 Coates-Wiles定理
 

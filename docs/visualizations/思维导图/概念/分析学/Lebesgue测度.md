@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Lebesgue测度 (Lebesgue Measure)
 
 ## 中心概念精确定义
@@ -27,6 +35,7 @@ mindmap
         单调性
         平移不变
         缩放:m*(λE)=|λ|ⁿm*(E)
+
       限制
         非可数可加
         不可测集存在
@@ -70,6 +79,7 @@ mindmap
         单调收敛
         Fatou引理
         控制收敛
+
 ```
 
 ---
@@ -164,6 +174,7 @@ $$\int \liminf_{n \to \infty} f_n \leq \liminf_{n \to \infty} \int f_n$$
 ### 定理3：控制收敛定理 (DCT)
 
 **定理**：设 $f_n \to f$ a.e.，且存在可积函数 $g$ 使得 $|f_n| \leq g$ a.e.，则：
+
 $$\lim_{n \to \infty} \int f_n = \int f$$
 
 这是分析中最常用的收敛定理。
@@ -227,6 +238,7 @@ $$f(x) = \begin{cases} 1 & x \in \mathbb{Q} \\ 0 & x \notin \mathbb{Q} \end{case
 ### 推广概念
 
 ```
+
 Lebesgue测度 → 抽象测度空间
       ↓
    Radon测度
@@ -234,6 +246,7 @@ Lebesgue测度 → 抽象测度空间
    几何测度论
       ↓
    遍历理论
+
 ```
 
 ---

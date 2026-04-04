@@ -56,6 +56,7 @@ $$\left[ \operatorname{char}(k) \nmid |G| \right] \Rightarrow \forall M \in k[G]
   不可约 不可约   不可约
     
 每个子表示都是不可约表示的直和
+
 ```
 
 ### 2.2 子模的补
@@ -72,6 +73,7 @@ $$\left[ \operatorname{char}(k) \nmid |G| \right] \Rightarrow \forall M \in k[G]
     M = N ⊕ N'
     
 Maschke保证补存在
+
 ```
 
 ### 2.3 投影
@@ -85,6 +87,7 @@ Maschke保证补存在
     P = (1/|G|) Σ_{g∈G} g·π·g⁻¹
     
     这是G-等变的投影
+
 ```
 
 ---
@@ -144,6 +147,7 @@ def maschke_projection(V, W, G, action):
         return project_to_subspace(v, W)
     
     # Maschke投影：P = (1/|G|) Σ_{g∈G} g·π·g⁻¹
+
     def maschke_proj(v):
         result = np.zeros_like(v)
         for g in G:
@@ -184,6 +188,7 @@ def find_complement_submodule(V, W, G, action):
             pass
     
     return W_complement
+
 ```
 
 ### 4.2 分解表示
@@ -235,6 +240,7 @@ def is_irreducible(V, G, action):
     # 如果只有{0}和V，则不可约
     trivial_only = len(invariant_subspaces) == 2
     return trivial_only
+
 ```
 
 ### 4.3 验证Maschke条件
@@ -254,12 +260,14 @@ def verify_maschke_condition(G, field_char):
     group_order = len(G)
     
     # 条件：char(k) 不整除 |G|
+
     maschke_applies = (group_order % field_char != 0) if field_char > 0 else True
     
     return maschke_applies
 
 # 例子
 G = symmetric_group(3)  # |G| = 6
+
 field_char = 2  # char = 2
 
 maschke_applies = verify_maschke_condition(G, field_char)
@@ -268,6 +276,7 @@ print(f"Maschke适用: {maschke_applies}")  # False，因为2|6
 field_char = 5  # char = 5
 maschke_applies = verify_maschke_condition(G, field_char)
 print(f"Maschke适用: {maschke_applies}")  # True，因为5不整除6
+
 ```
 
 ---
@@ -306,18 +315,21 @@ print(f"Maschke适用: {maschke_applies}")  # True，因为5不整除6
 **例子1**：$G = S_3$（3次对称群），$k = \mathbb{C}$
 
 - $|G| = 6$，$\operatorname{char}(\mathbb{C}) = 0$
+
 - Maschke适用：$k[G]$ 半单
 - 每个表示完全可约
 
 **例子2**：$G = \mathbb{Z}/p\mathbb{Z}$，$k = \mathbb{F}_p$
 
 - $|G| = p$，$\operatorname{char}(k) = p$
+
 - Maschke不适用：$p \mid p$
 - $k[G]$ 不是半单的（实际上同构于 $k[x]/(x^p)$）
 
 **例子3**：$G = \mathbb{Z}/2\mathbb{Z}$，$k = \mathbb{F}_3$
 
 - $|G| = 2$，$\operatorname{char}(k) = 3$
+
 - Maschke适用：$3 \nmid 2$
 - $k[G]$ 半单
 

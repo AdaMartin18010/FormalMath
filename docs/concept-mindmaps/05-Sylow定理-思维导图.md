@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Sylow定理 - 思维导图
 
 ## 概述
@@ -14,26 +19,35 @@ mindmap
     基本定义
       p-子群
         阶为p的幂的子群
+
         |P| = pᵏ
+
       Sylow p-子群
         极大p-子群
+
         |P| = pⁿ, pⁿ∥|G|
         pⁿ整除|G|, pⁿ⁺¹不整除
+
     Sylow三大定理
       第一定理
         Sylow p-子群存在
         ∀p整除|G|
+
       第二定理
         所有Sylow p-子群共轭
         彼此同构
       第三定理
         nₚ ≡ 1 mod p
         nₚ整除|G|/pⁿ
+
     Sylow计数
       nₚ公式
         nₚ | m
+
         nₚ ≡ 1 mod p
+
         |G| = pⁿ·m
+
       推论
         nₚ = 1 ⇔ Sylow子群正规
     应用
@@ -45,6 +59,7 @@ mindmap
         单群分析
       结构分析
         半直积分解
+
 ```
 
 ---
@@ -56,6 +71,7 @@ graph TD
     subgraph 基本设定
         G[有限群 G]
         Order[|G| = pⁿ·m<br/>p∤m]
+
     end
     
     subgraph Sylow三大定理
@@ -67,6 +83,7 @@ graph TD
     subgraph 存在性
         S1 --> P[∃ Sylow p-子群 P]
         S1 --> All[对所有p| |G|]
+
     end
     
     subgraph 共轭性
@@ -78,6 +95,7 @@ graph TD
     subgraph 计数
         S3 --> Np[nₚ = |Sylₚ(G)|]
         S3 --> Div[nₚ | m]
+
         S3 --> Cong[nₚ ≡ 1 mod p]
     end
     
@@ -91,6 +109,7 @@ graph TD
     style S2 fill:#fff3e0
     style S3 fill:#fff3e0
     style P fill:#c8e6c9
+
 ```
 
 ---
@@ -101,6 +120,7 @@ graph TD
 graph TD
     subgraph 群G的阶
         Order[|G| = p₁^a₁ · p₂^a₂ ··· pₖ^aₖ]
+
     end
     
     subgraph Sylow子群
@@ -131,6 +151,7 @@ graph TD
     style P1 fill:#fff3e0
     style P2 fill:#fff3e0
     style Pk fill:#fff3e0
+
 ```
 
 ---
@@ -141,6 +162,7 @@ graph TD
 flowchart TD
     subgraph 第一定理证明
         A1[G作用于X=G/P的子集<br/>|X|=C(|G|, pⁿ)]
+
         A2[轨道-稳定子]
         A3[存在轨道大小<br/>与p互素]
         A4[稳定子即为<br/>Sylow p-子群]
@@ -162,6 +184,7 @@ flowchart TD
     style A1 fill:#e3f2fd
     style B1 fill:#fff3e0
     style C1 fill:#e8f5e9
+
 ```
 
 ---
@@ -172,6 +195,7 @@ flowchart TD
 graph TD
     subgraph nₚ的约束条件
         C1[nₚ | m]
+
         C2[nₚ ≡ 1 mod p]
         C3[nₚ = [G : N_G(P)]]
     end
@@ -180,6 +204,7 @@ graph TD
         S1[nₚ = 1] --> N[P ◁ G<br/>Sylow子群正规]
         S2[nₚ = p+1] --> I[p²阶群]
         S3[nₚ = |G|/pⁿ] --> E[N_G(P) = P]
+
     end
     
     subgraph 应用
@@ -200,6 +225,7 @@ graph TD
     style C2 fill:#e3f2fd
     style S1 fill:#c8e6c9
     style N fill:#c8e6c9
+
 ```
 
 ---
@@ -210,16 +236,20 @@ graph TD
 mindmap
   root((pq阶群<br/>p<q primes))
     阶数分析
+
       |G| = pq
       Sylow p-子群 P, |P|=p
       Sylow q-子群 Q, |Q|=q
+
     n_q分析
       n_q | p
+
       n_q ≡ 1 mod q
       因为p<q, 所以n_q=1
       Q ◁ G 正规
     n_p分析
       n_p | q
+
       n_p ≡ 1 mod p
       可能: n_p=1 或 n_p=q
     情况1: n_p=1
@@ -235,6 +265,7 @@ mindmap
       pq阶群最多两种
       阿贝尔: C_{pq}
       非阿贝尔: 当q≡1 mod p时存在
+
 ```
 
 ---
@@ -245,11 +276,13 @@ mindmap
 flowchart TD
     subgraph 单群判定条件
         A[|G| = pⁿ·m] --> B[nₚ > 1 对所有p| |G|]
+
         B --> C[否则存在正规Sylow子群]
     end
     
     subgraph 例子: p²q阶群
         D[|G| = p²q] --> E[nₚ分析]
+
         E --> F[n_q分析]
         F --> G[总存在正规Sylow子群]
         G --> H[p²q阶群非单]
@@ -257,6 +290,7 @@ flowchart TD
     
     subgraph 小阶单群
         I[|G| = 60] --> J[n₅ = 6]
+
         J --> K[n₃ = 10]
         K --> L[n₂ = 15或5]
         L --> M[A₅ 是单群]
@@ -265,6 +299,7 @@ flowchart TD
     style B fill:#e3f2fd
     style G fill:#c8e6c9
     style M fill:#c8e6c9
+
 ```
 
 ---
@@ -279,6 +314,7 @@ graph TD
         O3[|G| = pq, p<q] --> C3[循环或半直积]
         O4[|G| = p³] --> C4[5种群]
         O5[|G| = 12] --> C5[5种群]
+
     end
     
     subgraph Sylow分析关键
@@ -298,6 +334,7 @@ graph TD
     style O3 fill:#fff3e0
     style O4 fill:#e8f5e9
     style C1 fill:#c8e6c9
+
 ```
 
 ---
@@ -343,6 +380,7 @@ flowchart LR
     style F fill:#e8f5e9
     style G fill:#e8f5e9
     style H fill:#e8f5e9
+
 ```
 
 ---

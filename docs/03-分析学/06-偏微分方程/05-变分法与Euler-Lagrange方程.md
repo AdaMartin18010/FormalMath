@@ -120,6 +120,7 @@ $$
 设 $X$ 为自反Banach空间（如 $W^{1,p}(\Omega)$），$J: X \to \mathbb{R} \cup \{+\infty\}$ 满足：
 
 1. **强制性**（coercivity）：$J(u) \to +\infty$ 当 $\|u\|_X \to \infty$；
+
 2. **弱下半连续性**（weak lower semicontinuity）：若 $u_k \rightharpoonup u$ 弱收敛，则 $J(u) \le \varliminf J(u_k)$。
 
 则 $J$ 在 $X$ 上达到下确界。
@@ -207,6 +208,7 @@ $$
 
 $$
 E(u) = \frac{1}{2} \int_M |du|^2 \, dV_M
+
 $$
 
 的临界点。其EL方程为 **调和映射方程**（tension field 消失）：

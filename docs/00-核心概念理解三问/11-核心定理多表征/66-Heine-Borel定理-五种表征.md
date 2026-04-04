@@ -38,6 +38,7 @@ $$K \text{ 紧致 } \iff K \text{ 有界 } \land K \text{ 闭}$$
 
 其中：
 - **有界**：$\exists M > 0, \forall x \in K, \|x\| \leq M$
+
 - **闭**：$K^c$ 是开集，或等价地，$K$ 包含所有极限点
 
 ### 1.2 一般度量空间
@@ -70,6 +71,7 @@ $$K \text{ 紧致 } \iff \begin{cases}
 - 有界：包含在某个有限区间内
 - 闭：包含端点 a 和 b
 - 紧致：任意开覆盖可有限子覆盖
+
 ```
 
 **反例**：
@@ -82,6 +84,7 @@ $$K \text{ 紧致 } \iff \begin{cases}
 [0, ∞) - 闭但无界，不紧致
     ●──────────────────→
     0                  ∞
+
 ```
 
 ### 2.2 二维情况
@@ -101,6 +104,7 @@ $$K \text{ 紧致 } \iff \begin{cases}
 - 开圆盘（不闭）
 - 整个平面（无界）
 - 第一象限（无界）
+
 ```
 
 ### 2.3 开覆盖的几何理解
@@ -115,6 +119,7 @@ $$K \text{ 紧致 } \iff \begin{cases}
 
 非紧致例子：开区间 (0, 1)
 可用开集族 {(1/n, 1)} 覆盖，但无有限子覆盖
+
 ```
 
 ---
@@ -172,9 +177,10 @@ def is_bounded_interval(a, b):
 def is_closed_interval(interval_type):
     """判断区间是否闭"""
     return interval_type in ['[a,b]', '[a,b)', '(a,b]']
+
 ```
 
-### 4.2 构造有限子覆盖
+## 4.2 构造有限子覆盖
 
 ```python
 def find_finite_subcover(K, open_cover):
@@ -201,6 +207,7 @@ def find_finite_subcover(K, open_cover):
                 break
     
     return finite_subcover
+
 ```
 
 ### 4.3 序列紧致性检查
@@ -228,6 +235,7 @@ def check_sequential_compactness(K, sequence_generator):
         return limit in K
     
     return False
+
 ```
 
 ---

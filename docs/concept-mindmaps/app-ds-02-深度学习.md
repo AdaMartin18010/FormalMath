@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 深度学习 - 思维导图
 
 ## 概述
@@ -61,6 +66,7 @@ mindmap
         局部极小
         鞍点
         平坦极小
+
 ```
 
 ---
@@ -88,6 +94,7 @@ graph TD
     style F fill:#e3f2fd
     style H fill:#fff3e0
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -136,6 +143,7 @@ mindmap
         BERT
         GPT系列
         T5
+
 ```
 
 ---
@@ -178,6 +186,7 @@ graph TD
     style B fill:#e3f2fd
     style D fill:#fff3e0
     style N fill:#e8f5e9
+
 ```
 
 ---
@@ -210,6 +219,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style F fill:#fff3e0
+
 ```
 
 ---

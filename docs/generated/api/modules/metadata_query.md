@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # metadata_query
 
 **源文件**: `tools\metadata-system\metadata_query.py`
@@ -8,6 +16,7 @@
 
 ```python
 class QueryResult
+
 ```
 
 查询结果
@@ -16,6 +25,7 @@ class QueryResult
 
 ```python
 class MetadataQuery
+
 ```
 
 元数据查询系统
@@ -26,6 +36,7 @@ class MetadataQuery
 
 ```python
 def interactive_query()
+
 ```
 
 交互式查询界面

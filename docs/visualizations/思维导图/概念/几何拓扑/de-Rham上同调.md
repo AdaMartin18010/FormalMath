@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # de Rham上同调 (de Rham Cohomology)
 
 ## 中心概念精确定义
@@ -193,6 +201,7 @@ mindmap
       Betti数
       Euler示性数
       Lefschetz不动点
+
 ```
 
 ---

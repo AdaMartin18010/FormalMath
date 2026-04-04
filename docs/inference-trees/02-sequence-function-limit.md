@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 序列极限 → 函数极限推理树
 
 ## 概述
@@ -7,6 +15,7 @@
 graph TD
     subgraph 序列极限基础
         A1[数列极限定义<br/>lim aₙ = L] --> A2[ε-N语言<br/>∀ε>0, ∃N, n>N⇒|aₙ-L|<ε]
+
         A2 --> A3[序列收敛性质<br/>有界性、唯一性]
         A3 --> A4[单调收敛定理<br/>Monotone Convergence]
         A4 --> A5[Cauchy收敛准则<br/>完备性刻画]
@@ -47,6 +56,7 @@ graph TD
     style C1 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style A4 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style F1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+
 ```
 
 ## 核心定理：Heine归结原理
@@ -97,11 +107,14 @@ $$0 < |x_\delta - a| < \delta \text{ 但 } |f(x_\delta) - L| \geq \varepsilon_0$
 **单调收敛定理**：单调有界数列必收敛。
 
 **证明框架**：
+
 ```
+
 有界 → 存在上确界/下确界
     ↓
 单调递增 → sup{aₙ} 即为极限
 单调递减 → inf{aₙ} 即为极限
+
 ```
 
 **关键步骤**：设 $A = \sup\{a_n\}$（单调递增情形）
@@ -126,12 +139,15 @@ $$\forall \varepsilon > 0, \exists N, \forall m,n > N: |a_m - a_n| < \varepsilon
 $$|a_m - a_n| \leq |a_m - L| + |L - a_n| < 2\varepsilon$$
 
 **⇐ 方向**：
+
 ```
+
 Cauchy列 → 有界 → 有收敛子列
     ↓
 子列收敛到L
     ↓
 利用Cauchy条件证明整个序列收敛到L
+
 ```
 
 ### 链3：Bolzano-Weierstrass定理
@@ -191,6 +207,7 @@ $$\forall \varepsilon > 0, \exists \delta > 0, \forall x_1, x_2: 0 < |x_i - a| <
 ## 依赖关系总图
 
 ```
+
 实数完备性
     ├──→ 确界存在定理
     │       └──→ 单调收敛定理
@@ -212,6 +229,7 @@ Heine定理
     │
     └──→ 连续性序列判别
             └──→ 可微性序列判别
+
 ```
 
 ## 关键引理与复杂度

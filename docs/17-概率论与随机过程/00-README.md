@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 概率论与随机过程
 
 msc_primary: 60xx
@@ -32,6 +40,7 @@ msc_primary: 60xx
 ### 理论架构
 
 ```
+
 概率论与随机过程
 ├── 测度论基础
 │   ├── Kolmogorov公理化
@@ -48,6 +57,7 @@ msc_primary: 60xx
     ├── Itô公式
     ├── 随机微分方程
     └── 金融应用
+
 ```
 
 ### 文档索引

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # config
 
 **源文件**: `tools\content-quality-assessment\config.py`
@@ -8,6 +16,7 @@
 
 ```python
 class AssessmentConfig
+
 ```
 
 评估配置类
@@ -18,6 +27,7 @@ class AssessmentConfig
 
 ```python
 def get_config() -> AssessmentConfig
+
 ```
 
 获取配置实例
@@ -26,6 +36,7 @@ def get_config() -> AssessmentConfig
 
 ```python
 def update_weights(new_weights)
+
 ```
 
 更新权重配置
@@ -38,6 +49,7 @@ def update_weights(new_weights)
 
 ```python
 def add_math_terms(terms)
+
 ```
 
 添加数学术语
@@ -50,6 +62,7 @@ def add_math_terms(terms)
 
 ```python
 def set_quality_thresholds(thresholds)
+
 ```
 
 设置质量等级阈值

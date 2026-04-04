@@ -36,7 +36,7 @@ const FunctionSurface: React.FC<{
     const { xMin, xMax, yMin, yMax } = domain;
     
     const positions: number[] = [];
-    const colors: number[] =;
+    const colors: number[] = [];
     const indices: number[] = [];
     
     const color = new THREE.Color(mathFunc.color || '#3b82f6');

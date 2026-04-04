@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Fourier分析 思维导图
 
 ## 中心概念
@@ -64,6 +72,7 @@ mindmap
       Dirichlet
       Plancherel
       Carleson
+
 ```
 
 ### 定义与公理
@@ -88,6 +97,7 @@ mindmap
 ### 核心定理
 - **Parseval等式**: $\|f\|_{L^2}^2 = \sum |\hat{f}(n)|^2$（能量守恒）
 - **Plancherel定理**: $\|\hat{f}\|_{L^2} = \|f\|_{L^2}$
+
 - **Carleson定理**: $L^2$ 函数Fourier级数几乎处处收敛（证明思路：时间-频率分析）
 - **不确定性原理**: $\Delta x \cdot \Delta \xi \geq \frac{1}{4\pi}$
 - **采样定理**: 带限函数可由采样值重构

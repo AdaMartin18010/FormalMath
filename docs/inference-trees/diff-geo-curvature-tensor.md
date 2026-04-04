@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 曲率张量性质推理树
 
 ## 概述
@@ -62,14 +70,18 @@ graph TD
     style K fill:#fbb,stroke:#333
     style L fill:#fbb,stroke:#333
     style M fill:#f66,stroke:#333
+
 ```
 
 ## 曲率张量详解
 
 ### 定义
 黎曼曲率张量度量了协变导数的非交换性：
+
 ```
+
 R(X,Y)Z = ∇_X∇_YZ - ∇_Y∇_XZ - ∇_[X,Y]Z
+
 ```
 
 ### 代数恒等式
@@ -79,8 +91,11 @@ R(X,Y)Z = ∇_X∇_YZ - ∇_Y∇_XZ - ∇_[X,Y]Z
 3. **配对对称**: ⟨R(X,Y)Z, W⟩ = ⟨R(Z,W)X, Y⟩
 
 ### Bianchi恒等式
+
 ```
+
 ∇_X R(Y,Z)W + ∇_Y R(Z,X)W + ∇_Z R(X,Y)W = 0
+
 ```
 
 ### 缩并得到
@@ -90,21 +105,33 @@ R(X,Y)Z = ∇_X∇_YZ - ∇_Y∇_XZ - ∇_[X,Y]Z
 ## 由曲率构造的量
 
 ### Ricci张量
+
 ```
+
 R_ij = g^kl R_kijl
+
 ```
+
 对称张量，表示平均曲率
 
 ### 标量曲率
+
 ```
+
 R = g^ij R_ij
+
 ```
+
 标量函数，平均曲率的迹
 
 ### Einstein张量
+
 ```
+
 G_ij = R_ij - ½ g_ij R
+
 ```
+
 散度为零：∇^i G_ij = 0（来自Bianchi恒等式）
 
 ### Weyl张量

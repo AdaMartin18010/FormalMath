@@ -45,6 +45,7 @@ theorem hurewicz {X : Type*} [TopologicalSpace X] [PathConnected X]
     (n : ℕ) (hn : n ≥ 2) (hX : ∀ k < n, π k X = 0) :
     π n X ≃ H n X := by
   sorry  -- 需要详细的代数拓扑形式化
+
 ```
 
 ---
@@ -61,6 +62,7 @@ theorem hurewicz {X : Type*} [TopologicalSpace X] [PathConnected X]
     └── 同调类 f*([Sⁿ]) ∈ Hₙ(X)（代数像）
 
 Hurewicz: 当低阶同伦群消失时，两者同构
+
 ```
 
 ### 2.2 例子：Sⁿ
@@ -71,6 +73,7 @@ Hurewicz: 当低阶同伦群消失时，两者同构
 ├─ πₙ(Sⁿ) = ℤ（恒等映射生成）
 ├─ Hₙ(Sⁿ) = ℤ
 └─ Hurewicz同态是同构
+
 ```
 
 ---
@@ -125,6 +128,7 @@ def verify_hurewicz(X, n):
     H_n = compute_homology_group(X, n)
 
     return pi_n == H_n, f"πₙ = {pi_n}, Hₙ = {H_n}"
+
 ```
 
 ### 4.2 n=1情形
@@ -142,6 +146,7 @@ def hurewicz_abelianization(pi1):
 # 示例：自由群F₂
 # π₁(8字形) = F₂ (自由群)
 # H₁(8字形) = ℤ² (阿贝尔化)
+
 ```
 
 ---
@@ -156,6 +161,7 @@ Hurewicz定理 = 同伦函子与同调函子的关系
 ├─ Hₙ: Ho(Top) → Ab（同调函子）
 ├─ Hurewicz: h: πₙ → Hₙ 自然变换
 └─ 在n-连通空间上是同构
+
 ```
 
 ### 5.2 推广
@@ -171,6 +177,7 @@ Hurewicz定理是同伦论的基石：
 ├─ 计算同伦群的主要工具
 ├─ 连接几何（同伦）与代数（同调）
 └─ Whitehead定理的基础
+
 ```
 
 ---

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×语言学：语言学的信息论
 
 ## 概述
@@ -18,14 +23,17 @@ mindmap
         平均信息量
       条件熵
         H(X|Y)
+
         给定信息后的不确定性
         预测能力
       互信息
         I(X;Y) = H(X) - H(X|Y)
+
         统计依赖性
         共现信息
       相对熵
         D(P||Q)
+
         Kullback-Leibler散度
         分布差异
     语言熵
@@ -102,6 +110,7 @@ mindmap
         句子加工
         期望违背
         惊讶度
+
 ```
 
 ---
@@ -112,6 +121,7 @@ mindmap
 graph TD
     subgraph 基本关系
         H[熵 H(X)] --> C[条件熵 H(X|Y)]
+
         H --> M[联合熵 H(X,Y)]
         C --> MI[互信息 I(X;Y)]
         M --> MI
@@ -119,11 +129,13 @@ graph TD
     
     subgraph 链式法则
         M --> CH[H(X,Y) = H(X) + H(Y|X)]
+
     end
     
     subgraph 非负性
         MI --> P[I(X;Y) ≥ 0]
         KL[D(P||Q) ≥ 0]
+
     end
     
     H -.-> KL
@@ -131,6 +143,7 @@ graph TD
     style H fill:#e3f2fd
     style MI fill:#e8f5e9
     style KL fill:#fff3e0
+
 ```
 
 ---
@@ -182,6 +195,7 @@ mindmap
         流利度
         一致性
         有用性
+
 ```
 
 ---

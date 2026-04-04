@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # BSD猜想
 
 ## 前沿问题陈述
@@ -54,6 +62,7 @@ timeline
               : 高维Abel簇
         2020s : 新进展
               : 平均结果
+
 ```
 
 ### 2.2 关键突破
@@ -89,6 +98,7 @@ graph TD
 
     style A fill:#ffcccc
     style E fill:#99ff99
+
 ```
 
 ### 3.2 依赖的L3理论
@@ -130,6 +140,7 @@ graph LR
     style B fill:#99ff99
     style C fill:#ff9999
     style D fill:#ff9999
+
 ```
 
 ### 4.3 当前活跃方向
@@ -197,6 +208,7 @@ graph TD
 
     style B fill:#ffcccc
     style E fill:#99ff99
+
 ```
 
 ---
@@ -222,6 +234,7 @@ graph TD
     style C fill:#ccccff
     style D fill:#ffffcc
     style E fill:#ffccff
+
 ```
 
 ---

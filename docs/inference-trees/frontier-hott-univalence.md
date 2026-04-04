@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 同伦类型论：泛等公理推导推理树
 
 ## 概述
@@ -62,6 +70,7 @@ graph TD
     style I fill:#f88,stroke:#333
     style J fill:#f77,stroke:#333
     style K fill:#bfb,stroke:#333
+
 ```
 
 ## 等价详解
@@ -69,16 +78,22 @@ graph TD
 ### 1. 准逆定义
 
 f: A → B有准逆，如果存在g: B → A使得：
+
 ```
+
 g ∘ f ~ id_A
 f ∘ g ~ id_B
+
 ```
 
 ### 2. 等价的标准定义
 
 f: A → B是等价，如果对所有b:B，纤维contractible：
+
 ```
+
 isequiv(f) := Π(b:B). isContr(fib_f(b))
+
 ```
 
 其中 fib_f(b) := Σ(a:A). (f(a) = b)
@@ -86,7 +101,9 @@ isequiv(f) := Π(b:B). isContr(fib_f(b))
 ### 3. 等价类型
 
 ```
+
 A ≃ B := Σ(f:A→B). isequiv(f)
+
 ```
 
 ## 泛等公理
@@ -94,8 +111,11 @@ A ≃ B := Σ(f:A→B). isequiv(f)
 ### 陈述
 
 对于宇宙U中的类型A, B：
+
 ```
+
 (A =_U B) ≃ (A ≃ B)
+
 ```
 
 即类型等同等价于类型等价。
@@ -103,20 +123,29 @@ A ≃ B := Σ(f:A→B). isequiv(f)
 ### 映射
 
 **idtoeqv**: (A = B) → (A ≃ B)
+
 ```
+
 idtoeqv(p) := transport^El(p)
+
 ```
 
 **ua**: (A ≃ B) → (A = B)
+
 ```
+
 ua(e) 是泛等公理提供的逆
+
 ```
 
 ### 计算规则
 
 ```
+
 transport^C(ua(f), x) = e_*^C(x)
+
 ```
+
 其中e_*^C是利用等价e在C中的重解释。
 
 ## 重要推论
@@ -124,21 +153,29 @@ transport^C(ua(f), x) = e_*^C(x)
 ### 1. 函数外延性
 
 从UA可推导：
+
 ```
+
 funext: (Π(x:A). f(x) = g(x)) → (f = g)
+
 ```
 
 ### 2. 结构不变性
 
 等价类型承载相同的代数结构：
+
 ```
+
 (A ≃ B) → (GroupStr(A) ≃ GroupStr(B))
+
 ```
 
 ### 3. 同伦水平保持
 
 ```
+
 (A ≃ B) → (is-n-type(A) ↔ is-n-type(B))
+
 ```
 
 ## 高阶归纳类型示例
@@ -146,17 +183,23 @@ funext: (Π(x:A). f(x) = g(x)) → (f = g)
 ### 圆 S¹
 
 ```
+
 inductive S¹: Type
+
 | base: S¹
 | loop: base = base
+
 ```
 
 ### 球面 S²
 
 ```
+
 inductive S²: Type
+
 | base: S²
 | surf: refl_base = refl_base
+
 ```
 
 ---

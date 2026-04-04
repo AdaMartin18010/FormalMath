@@ -45,6 +45,7 @@ theorem ascoli_arzela {X : Type*} [TopologicalSpace X] [CompactSpace X]
     (hF_equicont : EquicontinuousOn ℱ) :
     IsCompact (closure ℱ) := by
   sorry  -- 需要详细的泛函分析形式化
+
 ```
 
 ---
@@ -64,6 +65,7 @@ theorem ascoli_arzela {X : Type*} [TopologicalSpace X] [CompactSpace X]
     └─────────────→
 
 所有函数的振荡受同一δ控制
+
 ```
 
 ### 2.2 紧致性
@@ -72,6 +74,7 @@ theorem ascoli_arzela {X : Type*} [TopologicalSpace X] [CompactSpace X]
 ℱ紧致 ⟺ 每个序列有收敛子列
 
     f₁, f₂, f₃, ... → 有子列一致收敛
+
 ```
 
 ---
@@ -136,6 +139,7 @@ def f_n(n):
     return lambda x: np.sin(n * x) / n  # 等度连续且一致有界
 
 functions = [f_n(n) for n in range(1, 100)]
+
 ```
 
 ---
@@ -150,6 +154,7 @@ Ascoli-Arzelà = C(K)中的紧致性刻画
 ├─ 紧致 ⟺ 有界+等度连续
 ├─ 闭+有界 ≠ 紧致（无穷维）
 └─ 需要"额外条件"（等度连续）
+
 ```
 
 ### 5.2 推广
@@ -166,6 +171,7 @@ Ascoli-Arzelà的应用：
 ├─ 变分法：极小化序列的收敛
 ├─ 逼近论：多项式逼近
 └─ 调和分析：Fourier级数
+
 ```
 
 ---

@@ -441,6 +441,7 @@ mindmap
         椭圆型
         抛物型
         双曲型
+
 ```
 
 ## 📊 分析学核心概念多维知识矩阵
@@ -614,6 +615,7 @@ mindmap
 
 1. **单调收敛定理**：如果$f_n \neqarrow f$，则$\int f_n \neqarrow \int f$
 2. **控制收敛定理**：如果$|f_n| \leq g$且$\int g < \infty$，则$\lim \int f_n = \int \lim f_n$
+
 3. **法图引理**：$\int \liminf f_n \leq \liminf \int f_n$
 
 ### 级数理论 / Series Theory
@@ -849,6 +851,7 @@ mindmap
 │   └── 勒贝格积分 (Lebesgue Integral)
 └── 级数理论
     └── 级数 (Series)
+
 ```
 
 ### 复分析概念层次关系 / Complex Analysis Concept Hierarchy
@@ -864,6 +867,7 @@ mindmap
 └── 积分理论
     ├── 柯西积分定理 (Cauchy's Integral Theorem)
     └── 留数定理 (Residue Theorem)
+
 ```
 
 ### 泛函分析概念层次关系 / Functional Analysis Concept Hierarchy
@@ -877,6 +881,7 @@ mindmap
 │       └── 希尔伯特空间 (Hilbert Space)
 └── 算子理论
     └── 有界线性算子 (Bounded Linear Operator)
+
 ```
 
 ### 分析学分支关系 / Analysis Branch Relationships
@@ -888,6 +893,7 @@ mindmap
 ├── 泛函分析 (Functional Analysis) ──→ 实分析的抽象化
 ├── 调和分析 (Harmonic Analysis) ──→ 傅里叶分析的应用
 └── 微分方程 (Differential Equations) ──→ 分析学的应用
+
 ```
 
 ---
@@ -1696,6 +1702,7 @@ mindmap
 
 - **$f(x) = |x|$ 在 $x = 0$ 处连续**：
   - $\lim_{x \to 0} |x| = 0 = f(0)$
+
   - 因此函数在$x = 0$处连续
 
 **3. 导数计算**：
@@ -1726,6 +1733,7 @@ mindmap
 
 - **$\int_1^e \frac{1}{x} dx = 1$**：
   - $\int \frac{1}{x} dx = \ln |x|$
+
   - 因此 $\int_1^e \frac{1}{x} dx = [\ln x]_1^e = \ln e - \ln 1 = 1 - 0 = 1$
 
 ### 复分析练习题答案 / Complex Analysis Exercise Answers
@@ -1754,6 +1762,7 @@ mindmap
   - 复导数不存在
 
 - **$f(z) = |z|^2$ 不是全纯函数**：
+
   - 仅在$z = 0$处可导，不是全纯函数
 
 **3. 留数计算**：
@@ -2172,6 +2181,7 @@ mindmap
 **正确理解**：
 
 - 有界算子是指存在常数$M$使得$\|Tx\| \leq M\|x\|$对所有$x$成立
+
 - 有界算子的值域不一定有界
 - 例如：恒等算子$I$是有界算子，但其值域是整个空间（无界）
 
@@ -2821,6 +2831,7 @@ mindmap
 └── 级数理论
     └── 级数 (Series)
         └── → 函数展开
+
 ```
 
 ### 复分析核心概念网络 / Complex Analysis Core Concept Network
@@ -2847,6 +2858,7 @@ mindmap
     │   └── → 留数定理
     └── 留数定理 (Residue Theorem)
         └── → 积分计算
+
 ```
 
 ### 泛函分析核心概念网络 / Functional Analysis Core Concept Network
@@ -2869,6 +2881,7 @@ mindmap
     └── 有界线性算子 (Bounded Linear Operator)
         ├── → 紧算子
         └── → 自伴算子
+
 ```
 
 ### 分析学分支关系网络 / Analysis Branch Relationship Network
@@ -2899,6 +2912,7 @@ mindmap
     ├── ← 实分析（基础）
     ├── ← 复分析（工具）
     └── ← 泛函分析（工具）
+
 ```
 
 ### 学习路径关系网络 / Learning Path Relationship Network
@@ -2939,6 +2953,7 @@ mindmap
     └── 微分方程
         ├── 常微分方程
         └── 偏微分方程
+
 ```
 
 ### 应用关系网络 / Application Relationship Network
@@ -2984,6 +2999,7 @@ mindmap
         ├── → 天气预报
         ├── → 人口模型
         └── → 经济模型
+
 ```
 
 ### 关系类型说明 / Relationship Type Explanations

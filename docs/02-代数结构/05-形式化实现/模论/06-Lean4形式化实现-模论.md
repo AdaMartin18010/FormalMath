@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "06 Lean4形式化实现 模论"
 msc_primary: ["68V20"]
@@ -32,7 +37,7 @@ msc_secondary: ["13C99", "03B35"]
     - [5.3 经济学应用 / Economics Applications](#53-经济学应用--economics-applications)
     - [5.4 生物学应用 / Biology Applications](#54-生物学应用--biology-applications)
 
-## 1. 基本模论形式化 / Basic Module Theory Formalization
+## 一、基本模论形式化 / Basic Module Theory Formalization
 
 ### 1.1 模的基本定义 / Basic Module Definitions
 
@@ -92,6 +97,7 @@ structure ModuleIso (R : Type) [Ring R] (M N : Type)
   inv : ModuleHom R N M
   left_inv : ∀ x, inv.toFun (toHom.toFun x) = x
   right_inv : ∀ x, toHom.toFun (inv.toFun x) = x
+
 ```
 
 ### 1.2 自由模与投射模 / Free and Projective Modules
@@ -127,6 +133,7 @@ class FlatModule (R : Type) [Ring R] (M : Type) [AddCommGroup M] [Module R M] wh
   tensor_injective : ∀ {A B : Type} [AddCommGroup A] [AddCommGroup B] [Module R A] [Module R B],
     ∀ (f : ModuleHom R A B), Injective f.toFun →
     Injective (tensor_product_hom f (id_hom M))
+
 ```
 
 ### 1.3 张量积 / Tensor Products
@@ -160,9 +167,10 @@ theorem tensor_product_properties (R : Type) [Ring R] (M N P : Type)
   TensorProduct R (TensorProduct R M N) P ≅ TensorProduct R M (TensorProduct R N P) ∧
   -- M ⊗ (N ⊕ P) ≅ (M ⊗ N) ⊕ (M ⊗ P)
   TensorProduct R M (N ⊕ P) ≅ (TensorProduct R M N) ⊕ (TensorProduct R M P) := sorry
+
 ```
 
-## 2. 同调代数形式化 / Homological Algebra Formalization
+## 二、同调代数形式化 / Homological Algebra Formalization
 
 ### 2.1 链复形 / Chain Complexes
 
@@ -191,6 +199,7 @@ structure ChainMap (R : Type) [Ring R] (C D : ChainComplex R) where
 -- Homology functor
 def homology_functor (R : Type) [Ring R] (n : ℤ) :
   ChainComplex R → Type := λ C, homology C n
+
 ```
 
 ### 2.2 投射分解与内射分解 / Projective and Injective Resolutions
@@ -227,6 +236,7 @@ def Tor (R : Type) [Ring R] (n : ℕ) (M N : Type)
   [AddCommGroup M] [AddCommGroup N] [Module R M] [Module R N] : Type :=
   let P := ProjectiveResolution R M
   homology (TensorComplex P.complex N) n
+
 ```
 
 ### 2.3 谱序列 / Spectral Sequences
@@ -250,9 +260,10 @@ theorem leray_serre_spectral_sequence (R : Type) [Ring R]
   -- 则存在谱序列 E_2^{p,q} = H^p(B, H^q(F)) ⇒ H^{p+q}(E)
   ∃ (E : SpectralSequence R),
   E.pages 2 = DirectSum (λ p q, H^p B (H^q F)) := sorry
+
 ```
 
-## 3. 表示论形式化 / Representation Theory Formalization
+## 三、表示论形式化 / Representation Theory Formalization
 
 ### 3.1 群表示论 / Group Representation Theory
 
@@ -289,6 +300,7 @@ theorem maschke_theorem (G : Type) [Group G] [Fintype G] :
   ∀ (W : Submodule ℂ V) (invariant : IsInvariantSubspace W),
   ∃ (W' : Submodule ℂ V) (invariant' : IsInvariantSubspace W'),
   V = W ⊕ W' := sorry
+
 ```
 
 ### 3.2 李代数表示论 / Lie Algebra Representation Theory
@@ -317,6 +329,7 @@ class HighestWeightModule (𝔤 : Type) [SemisimpleLieAlgebra 𝔤] (V : Type)
   weight : Weight 𝔤
   annihilation : ∀ α ∈ positive_roots 𝔤, action (e_α) highest_weight_vector = 0
   generation : V = span (orbit highest_weight_vector)
+
 ```
 
 ### 3.3 代数表示论 / Algebraic Representation Theory
@@ -341,9 +354,10 @@ class IrreducibleModule (A : Type) [Algebra A] (V : Type)
   [AddCommGroup V] [Module ℂ V] [AlgebraicRepresentation A V] where
   no_invariant_submodules : ∀ (W : Submodule ℂ V),
     W ≠ ⊥ ∧ W ≠ ⊤ → ¬IsInvariantSubmodule W
+
 ```
 
-## 4. 代数几何形式化 / Algebraic Geometry Formalization
+## 四、代数几何形式化 / Algebraic Geometry Formalization
 
 ### 4.1 凝聚层 / Coherent Sheaves
 
@@ -381,6 +395,7 @@ theorem coherent_sheaf_properties (X : Scheme) (ℱ 𝒢 : Sheaf X (Module R))
     CoherentSheaf X (kernel φ) ∧
     CoherentSheaf X (cokernel φ) ∧
     CoherentSheaf X (image φ) := sorry
+
 ```
 
 ### 4.2 向量丛 / Vector Bundles
@@ -410,6 +425,7 @@ structure Divisor (X : Scheme) where
 -- Correspondence between divisors and line bundles
 theorem divisor_line_bundle_correspondence (X : Scheme) [Regular X] :
   Divisor X ≅ PicardGroup X := sorry
+
 ```
 
 ### 4.3 上同调 / Cohomology
@@ -436,9 +452,10 @@ theorem serre_duality (X : ProjectiveScheme) (ℱ : Sheaf X (Module R))
 -- Riemann-Roch theorem
 theorem riemann_roch (C : Curve) (D : Divisor C) :
   dim H^0(C, 𝒪(D)) - dim H^1(C, 𝒪(D)) = deg D + 1 - genus C := sorry
+
 ```
 
-## 5. 应用案例形式化 / Application Case Formalization
+## 五、应用案例形式化 / Application Case Formalization
 
 ### 5.1 计算机科学应用 / Computer Science Applications
 
@@ -478,6 +495,7 @@ structure NetworkHomomorphism (M N : NeuralModule) where
   transformation : Matrix ℝ M.output_dim N.input_dim
   commutes : ∀ input, forward N (transformation * forward M input) =
     transformation * forward M input
+
 ```
 
 ### 5.2 物理学应用 / Physics Applications
@@ -522,6 +540,7 @@ def free_energy (M : OrderParameterModule n G) (temperature : ℝ) : ℝ :=
 class PhaseTransition (M : OrderParameterModule n G) where
   critical_temperature : ℝ
   critical_exponents : ℝ × ℝ × ℝ × ℝ  -- β, γ, δ, ν
+
 ```
 
 ### 5.3 经济学应用 / Economics Applications
@@ -575,6 +594,7 @@ def portfolio_variance (portfolio : AssetModule n) : ℝ :=
 class RiskMeasure (confidence_level : ℝ) where
   value_at_risk : AssetModule n → ℝ
   conditional_value_at_risk : AssetModule n → ℝ
+
 ```
 
 ### 5.4 生物学应用 / Biology Applications
@@ -626,6 +646,7 @@ def regulatory_paths (network : RegulatoryNetwork n) (source target : String)
   (max_length : ℕ) : List (List String) :=
   -- 实现路径查找算法
   sorry
+
 ```
 
 ---

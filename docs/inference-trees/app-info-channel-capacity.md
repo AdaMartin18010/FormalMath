@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 信道容量推导链
 
 ## 概述
@@ -17,9 +22,11 @@ graph TD
     
     subgraph 信道模型
         A4 --> B1[离散信道<br/>py|x]
+
         B1 --> B2[信道容量<br/>C = max_p I(X;Y)]
         B2 --> B3[无记忆信道<br/>pyn|xn = ∏p(yi|xi)]
         B3 --> B4[对称信道<br/>C = log|Y| - Hrow]
+
     end
     
     subgraph 典型序列
@@ -38,6 +45,7 @@ graph TD
     
     subgraph 逆定理
         B2 --> E1[Fano不等式<br/>HXY ≤ HPe + Pe log|X|]
+
         E1 --> E2[逆定理<br/>P_e ↛ 0 if R > C]
         E2 --> E3[信道容量<br/>C是可达速率上界]
     end
@@ -53,6 +61,7 @@ graph TD
     style D4 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style E3 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style F4 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -87,11 +96,13 @@ $$C = \max_{p(x)} I(X; Y)$$
 
 **计算**：
 - 对给定信道转移概率 $p(y|x)$
+
 - 对输入分布 $p(x)$ 优化互信息
 - 通常使用Blahut-Arimoto算法数值求解
 
 **对称信道**：
 - 若信道转移矩阵行排列相同：$C = \log|\mathcal{Y}| - H(\text{row})$
+
 - 二元对称信道（BSC）：$C = 1 - H(p)$
 
 ### 第三步：典型序列理论
@@ -104,6 +115,7 @@ $$\left|-\frac{1}{n}\log p(x^n) - H(X)\right| \leq \epsilon$$
 **渐近等分割性（AEP）**：
 1. $P(X^n \in A_\epsilon^{(n)}) \to 1$（当 $n \to \infty$）
 2. $|A_\epsilon^{(n)}| \approx 2^{nH(X)}$
+
 3. 对 $x^n \in A_\epsilon^{(n)}$：$p(x^n) \approx 2^{-nH(X)}$
 
 **联合典型性**：
@@ -145,6 +157,7 @@ $$H(W | \hat{W}) \leq H(P_e) + P_e \log |\mathcal{W}|$$
 **逆定理证明**：
 
 $$nR = H(W) = I(W; \hat{W}) + H(W | \hat{W})$$
+
 $$\leq I(X^n; Y^n) + H(P_e) + P_e \cdot nR$$
 $$\leq \sum_{i=1}^n I(X_i; Y_i) + 1 + P_e \cdot nR$$
 $$\leq nC + 1 + P_e \cdot nR$$
@@ -184,6 +197,7 @@ $$C = \frac{1}{2}\log\left(1 + \frac{P}{\sigma^2}\right) \text{ bits/channel use
 ## 依赖关系图
 
 ```
+
 概率论基础
     ↓
 信息度量 ← 熵理论
@@ -199,6 +213,7 @@ $$C = \frac{1}{2}\log\left(1 + \frac{P}{\sigma^2}\right) \text{ bits/channel use
 逆定理 ← Fano不等式
     ↓
 信道容量 = 可达速率上确界
+
 ```
 
 ---

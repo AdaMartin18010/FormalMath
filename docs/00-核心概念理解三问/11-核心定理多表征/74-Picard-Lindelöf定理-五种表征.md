@@ -70,6 +70,7 @@ Lipschitz条件保证解曲线不相交：
 
 方向场"规则"：斜率变化有界
 → 解曲线唯一
+
 ```
 
 ### 2.2 存在性区域
@@ -88,6 +89,7 @@ Lipschitz条件保证解曲线不相交：
 
 解在 [t₀-h, t₀+h] 内存在
 其中 h = min{a, b/M}
+
 ```
 
 ### 2.3 唯一性
@@ -104,6 +106,7 @@ Lipschitz条件保证解曲线不相交：
     └──────────→ t
 
 Lipschitz条件保证它们重合
+
 ```
 
 ---
@@ -186,9 +189,10 @@ def picard_iteration(f, t0, y0, t_end, n_iter=10, tol=1e-6):
 f = lambda t, y: y
 y_solution = picard_iteration(f, 0, 1, 1, n_iter=20)
 print(f"y(1) ≈ {y_solution(1):.6f}, 精确值 e ≈ {np.e:.6f}")
+
 ```
 
-### 4.2 验证Lipschitz条件
+## 4.2 验证Lipschitz条件
 
 ```python
 def check_lipschitz(f, t_range, y_range, L_guess=1.0):
@@ -222,9 +226,10 @@ def check_lipschitz(f, t_range, y_range, L_guess=1.0):
 # 例子：f(t, y) = y（满足Lipschitz，L=1）
 is_lip, L = check_lipschitz(lambda t, y: y, [0, 1], [-1, 1])
 print(f"满足Lipschitz: {is_lip}, L ≈ {L:.6f}")
+
 ```
 
-### 4.3 数值求解
+## 4.3 数值求解
 
 ```python
 from scipy.integrate import solve_ivp
@@ -253,6 +258,7 @@ def solve_ode_picard_lindelof(f, t0, y0, t_span, method='RK45'):
 f = lambda t, y: -y + np.sin(t)
 sol = solve_ode_picard_lindelof(f, 0, 1, [0, 5])
 print(f"解在 t=5 的值: {sol.y[0][-1]:.6f}")
+
 ```
 
 ---
@@ -352,6 +358,7 @@ Picard-Lindelöf定理是：
 
 2. **证明压缩性**：
    $$|T[y_1](t) - T[y_2](t)| \leq Lh \max |y_1(s) - y_2(s)|$$
+
    选择 $h$ 使得 $Lh < 1$，则 $T$ 是压缩映射。
 
 3. **应用Banach不动点定理**：$T$ 有唯一不动点 $y^*$。

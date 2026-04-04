@@ -385,6 +385,7 @@ class VirtualLab {
     // 证明检查逻辑
   }
 }
+
 ```
 
 #### 2. 后端架构设计
@@ -451,6 +452,7 @@ class InteractiveLearningBackend:
         )
 
         return recommendations
+
 ```
 
 #### 3. 数据库设计
@@ -508,6 +510,7 @@ CREATE TABLE knowledge_graph (
     strength DECIMAL(3,2) DEFAULT 1.0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
 ```
 
 ### 交互式学习组件开发
@@ -553,6 +556,7 @@ class MathRenderer {
         });
     }
 }
+
 ```
 
 #### 2. 动态图表组件
@@ -622,6 +626,7 @@ class ChartRenderer {
         });
     }
 }
+
 ```
 
 #### 3. 3D可视化组件
@@ -704,6 +709,7 @@ class ThreeDRenderer {
         return Math.sin(x) * Math.cos(y);
     }
 }
+
 ```
 
 ---

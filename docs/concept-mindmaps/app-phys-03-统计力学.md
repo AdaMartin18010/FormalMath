@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 统计力学 - 思维导图
 
 ## 概述
@@ -61,6 +66,7 @@ mindmap
         标度变换
         不动点
         临界指数
+
 ```
 
 ---
@@ -89,6 +95,7 @@ graph TD
     style C fill:#e3f2fd
     style G fill:#fff3e0
     style K fill:#e8f5e9
+
 ```
 
 ---
@@ -129,6 +136,7 @@ mindmap
         f ≈ e^{-β(ε-μ)}
       Maxwell-Boltzmann
         可区分粒子
+
 ```
 
 ---
@@ -166,6 +174,7 @@ graph TD
     style D fill:#e3f2fd
     style F fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -193,6 +202,7 @@ mindmap
         Lᵢⱼ = Lⱼᵢ
       熵产生
         非平衡态
+
 ```
 
 ---
@@ -225,6 +235,7 @@ flowchart LR
     
     style E fill:#e3f2fd
     style G fill:#fff3e0
+
 ```
 
 ---

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 逻辑几何Topos理论
 
 > **逻辑 ↔ 几何：直觉主义逻辑、层语义与Topos的深层统一**
@@ -65,11 +70,13 @@ graph TB
     Internal <-->|M-B语言| MitchellBenabou
     MitchellBenabou -->|解释| GeometricMorph
     GeometricMorph -->|分类| Classifying
+
 ```
 
 ### 1.2 对应的三层结构
 
 ```
+
 ┌─────────────────────────────────────────────────────────────┐
 │ 第一层：命题对应                                              │
 │  直觉主义命题 ⟷ 子对象                                        │
@@ -86,6 +93,7 @@ graph TB
 │  ◇（可能）⟷ 闭包算子                                          │
 │  可能世界 ⟷ 层/局部算子                                       │
 └─────────────────────────────────────────────────────────────┘
+
 ```
 
 ---
@@ -124,6 +132,7 @@ graph TB
     Heyting <-->|真值对象| TruthValues
     Subobject -->|内语言| InternalLogic
     TruthValues -->|解释| InternalLogic
+
 ```
 
 **详细对应表**：
@@ -146,6 +155,7 @@ graph TB
 **直觉主义逻辑**：在层Topos Sh(X) 中，Ω = O(X)（开集格），排中律一般不成立。
 
 ```
+
 例子：在 Sh(ℝ) 中
 设 P 是命题"x > 0"（作为层/开集 (0, ∞)）
 
@@ -155,6 +165,7 @@ graph TB
 但 P ∨ ¬P 对应于 (0,∞) ∪ (-∞,0] = ℝ \ {0} ≠ ℝ
 
 因此 P ∨ ¬P ≠ ⊤，排中律不成立！
+
 ```
 
 ### 2.3 证明即构造的对应
@@ -188,6 +199,7 @@ graph TB
     Type <-->|类型即对象| Object
     Term <-->|项即截面| GlobalElement
     Function <-->|函数类型即指数| Exponential
+
 ```
 
 **详细对应**：
@@ -211,12 +223,14 @@ graph TB
 **层作为"可能世界"的集合**：
 
 ```
+
 设 X 是拓扑空间，F 是 X 上的层
 
 - 开集 U ⊆ X ⟷ 可能世界（知识状态）
 - 截面 s ∈ F(U) ⟷ 在U上的局部真理
 - 茎 F_x ⟷ 在世界x处的真理
 - 限制映射 ⟷ 知识增长/细化
+
 ```
 
 ```mermaid
@@ -254,6 +268,7 @@ graph TB
     F -->|解释| Diamond
     SectionU -->|局部| Local
     SectionX -->|全局| Global
+
 ```
 
 ### 3.2 内部与闭包算子
@@ -272,11 +287,13 @@ graph TB
 **模态公理的几何意义**：
 
 ```
+
 K: □(P → Q) → (□P → □Q)  ⟷  内部运算保持包含
 T: □P → P                  ⟷  int(A) ⊆ A
 4: □P → □□P               ⟷  int(int(A)) = int(A)
 5: ◇P → □◇P               ⟷  cl(A)是开集（离散空间）
 B: P → □◇P                ⟷  A ⊆ int(cl(A))（正则开）
+
 ```
 
 ### 3.3 McKinsey-Tarski定理
@@ -284,6 +301,7 @@ B: P → □◇P                ⟷  A ⊆ int(cl(A))（正则开）
 **定理陈述**：
 
 ```
+
 S4模态逻辑与拓扑语义的关系：
 
 S4 ⊨ φ  ⟺  对所有拓扑空间X，φ在X的层语义中成立
@@ -292,6 +310,7 @@ S4 ⊨ φ  ⟺  对所有拓扑空间X，φ在X的层语义中成立
 - S4是拓扑空间的模态逻辑
 - S4.2对应于extremally不连通空间
 - S4.1对应于散射空间
+
 ```
 
 ```mermaid
@@ -322,6 +341,7 @@ graph TB
     
     MT -->|证明| TopologicalComp
     TopologicalComp -->|成立| S42
+
 ```
 
 ---
@@ -333,6 +353,7 @@ graph TB
 **核心对应**：
 
 ```
+
 同伦类型论(HoTT)            ∞-Topos理论
 ------------------          ------------------
 类型 A                      ∞-群胚/对象
@@ -340,6 +361,7 @@ graph TB
 等同类型 a =_A b            道路空间 Path(a,b)
 高阶等同 p =_{a=b} q        道路之间的同伦
 同伦层次（h-level）          截断(truncation)
+
 ```
 
 ```mermaid
@@ -370,6 +392,7 @@ graph TB
     
     Object -->|Quillen模型| SimplicialSets
     Type -->|立方体模型| CubicalSets
+
 ```
 
 ### 4.2 Univalence公理的几何意义
@@ -377,6 +400,7 @@ graph TB
 **Univalence公理（Voevodsky）**：
 
 ```
+
 等价即等同 (Equivalence is equivalent to Equality)
 
 形式化表述：
@@ -389,6 +413,7 @@ graph TB
 
 几何意义：
 在同伦论中，同伦等价的空间在无穷群胚的意义下"等同"
+
 ```
 
 **在∞-Topos中的实现**：
@@ -433,6 +458,7 @@ graph TB
     Circle -->|余极限| Colimit
     Loop -->|右伴随| Suspension
     Colimit -->|同伦版本| HomotopyColimit
+
 ```
 
 **经典HIT例子**：
@@ -466,6 +492,7 @@ graph TB
         Objects[对象 X, Y]
         Morphisms[态射 f: X → Y]
         Subobjects[子对象 {x | φ(x)}]
+
         Classifier[分类态射 χ: X → Ω]
     end
 
@@ -481,6 +508,7 @@ graph TB
     
     Objects -->|内构造| ExternalLogic
     Subobjects -->|真值| MetaTheory
+
 ```
 
 **内语言解释表**：
@@ -500,12 +528,14 @@ graph TB
 **几何态射 f: F → E**：由一对伴随函子构成
 
 ```
+
 f* : E → F  （逆像，保持有限极限）
 f_* : F → E  （直像，右伴随）
 
 逻辑意义：
 - f* 翻译E中的逻辑到F
 - f_* 是"全局截面"或" forall "的推广
+
 ```
 
 ```mermaid
@@ -531,6 +561,7 @@ graph TB
     
     LogicE -->|翻译| LogicF
     LogicF -->|逆向翻译| LogicE
+
 ```
 
 ### 5.3 分类Topos
@@ -538,6 +569,7 @@ graph TB
 **思想**：每个几何理论T都有一个"分类Topos"，使得T的模型对应于几何态射。
 
 ```
+
 几何理论 T ────→ 分类Topos B(T)
    ↓                      ↓
 T的模型    ⟷    几何态射 E → B(T)
@@ -546,6 +578,7 @@ T的模型    ⟷    几何态射 E → B(T)
 - 对象分类子：分类"对象"
 - 子对象分类子：分类"子对象"
 - 循环群分类子：分类"循环群对象"
+
 ```
 
 ---
@@ -571,6 +604,7 @@ timeline
               : 内逻辑发展
         1980s : Mitchell-Bénabou语言
               : 分类Topos
+
               | 几何逻辑
     
     section 高阶发展
@@ -578,13 +612,16 @@ timeline
               : 2-Topos
         2006-2014 : Voevodsky: 同伦类型论
                   : Univalence公理
+
                   | ∞-Topos理论
     
     section 当代前沿
         2010s-至今 : 立方体类型论
                    : 形式化数学
                    : 综合微分几何
+
                    | 同伦综合
+
 ```
 
 ### 6.2 关键人物贡献
@@ -643,6 +680,7 @@ graph TB
     Agda -->|UniMath| Homotopy
     Cubical -->|立方体HoTT| Homotopy
     Lean -->|Mathlib4| Category
+
 ```
 
 ---

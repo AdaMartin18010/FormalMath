@@ -37,6 +37,9 @@ const USER_COLORS = [
   '#DDA0DD', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E9',
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type EventCallback = (...args: any[]) => void;
+
 // 协作服务类
 class CollaborationService {
   private socket: Socket | null = null;
@@ -44,7 +47,7 @@ class CollaborationService {
   private yProvider: WebsocketProvider | null = null;
   private heartbeatTimer: NodeJS.Timeout | null = null;
   private reconnectionAttempts = 0;
-  private eventListeners: Map<keyof CollaborationEvents, Set<Function>> = new Map();
+  private eventListeners: Map<keyof CollaborationEvents, Set<EventCallback>> = new Map();
   private currentRoom: CollaborationRoom | null = null;
   private currentUser: UserPresence | null = null;
   private connectionState: ConnectionState = 'disconnected';
@@ -773,11 +776,11 @@ class CollaborationService {
     if (!this.eventListeners.has(event)) {
       this.eventListeners.set(event, new Set());
     }
-    this.eventListeners.get(event)!.add(listener as Function);
+    this.eventListeners.get(event)!.add(listener as EventCallback);
 
     // 返回取消订阅函数
     return () => {
-      this.eventListeners.get(event)?.delete(listener as Function);
+      this.eventListeners.get(event)?.delete(listener as EventCallback);
     };
   }
 
@@ -785,7 +788,7 @@ class CollaborationService {
    * 取消监听
    */
   off<K extends keyof CollaborationEvents>(event: K, listener: CollaborationEvents[K]): void {
-    this.eventListeners.get(event)?.delete(listener as Function);
+    this.eventListeners.get(event)?.delete(listener as EventCallback);
   }
 
   /**

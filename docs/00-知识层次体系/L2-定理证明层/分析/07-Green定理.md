@@ -36,6 +36,7 @@ flowchart TD
     D --> E[结论: 两边相等]
     
     style E fill:#e8f5e9,stroke:#4caf50
+
 ```
 
 #### 步骤1-2：特殊区域
@@ -110,6 +111,7 @@ flowchart TB
     L2G --> L2C[L2: Cauchy积分定理]
     
     style L2G fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+
 ```
 
 ---

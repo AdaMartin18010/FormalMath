@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 优化算法 - 思维导图
 
 ## 概述
@@ -66,6 +71,7 @@ mindmap
       联邦学习
         本地更新
         隐私保护
+
 ```
 
 ---
@@ -92,6 +98,7 @@ graph TD
     style B fill:#e3f2fd
     style E fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -128,6 +135,7 @@ mindmap
         动量+自适应
         偏差修正
         深度学习首选
+
 ```
 
 ---
@@ -169,6 +177,7 @@ graph TD
     style C fill:#e3f2fd
     style G fill:#fff3e0
     style K fill:#e8f5e9
+
 ```
 
 ---
@@ -200,6 +209,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style F fill:#fff3e0
+
 ```
 
 ---

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×认知科学：学习与记忆的数学模型
 
 ## 概述
@@ -101,6 +106,7 @@ mindmap
         知识结构
         组织框架
         自上而下的加工
+
 ```
 
 ---
@@ -126,6 +132,7 @@ graph TD
     style E fill:#e3f2fd
     style S1 fill:#e8f5e9
     style E1 fill:#fff3e0
+
 ```
 
 ---
@@ -178,6 +185,7 @@ mindmap
         Pearce-Hall
         注意力机制
         Mackintosh
+
 ```
 
 ---

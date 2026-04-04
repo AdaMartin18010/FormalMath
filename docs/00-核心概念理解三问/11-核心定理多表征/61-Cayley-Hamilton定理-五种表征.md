@@ -67,6 +67,7 @@ A满足自己的特征方程：
     特征值：A的特征值
     特征多项式：p(λ) = det(λI - A)
     矩阵满足：p(A) = 0
+
 ```
 
 ### 2.2 矩阵的作用
@@ -80,6 +81,7 @@ A满足自己的特征方程：
     p(A) = Aⁿ + c₁Aⁿ⁻¹ + ... + cₙI = 0
     
     矩阵A"知道"自己的特征多项式
+
 ```
 
 ### 2.3 零化性
@@ -90,6 +92,7 @@ A满足自己的特征方程：
     f(A) = 0  ⟹  f 是 A 的零化多项式
     
     Cayley-Hamilton：特征多项式是零化多项式
+
 ```
 
 ---
@@ -164,9 +167,10 @@ def verify_cayley_hamilton(A, tol=1e-10):
 A = np.array([[1, 2], [3, 4]])
 is_sat, err = verify_cayley_hamilton(A)
 print(f"Cayley-Hamilton成立: {is_sat}, 误差: {err:.2e}")
+
 ```
 
-### 4.2 计算矩阵幂
+## 4.2 计算矩阵幂
 
 ```python
 def matrix_power_via_cayley_hamilton(A, k):
@@ -220,9 +224,10 @@ def matrix_exponential_via_cayley_hamilton(A):
     exp_A = eigenvecs @ np.diag(np.exp(eigenvals)) @ np.linalg.inv(eigenvecs)
     
     return exp_A
+
 ```
 
-### 4.3 应用：求逆矩阵
+## 4.3 应用：求逆矩阵
 
 ```python
 def inverse_via_cayley_hamilton(A):
@@ -262,6 +267,7 @@ def inverse_via_cayley_hamilton(A):
 A = np.array([[1, 2], [3, 4]], dtype=float)
 A_inv = inverse_via_cayley_hamilton(A)
 print(f"逆矩阵误差: {np.linalg.norm(A @ A_inv - np.eye(2)):.2e}")
+
 ```
 
 ---

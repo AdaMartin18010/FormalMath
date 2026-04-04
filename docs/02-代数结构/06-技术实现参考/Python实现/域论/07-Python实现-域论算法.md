@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "07 Python实现 域论算法"
 msc_primary: ["68W30"]
@@ -176,6 +181,7 @@ class FiniteField(Field):
         """多项式求逆"""
         # 实现多项式求逆
         pass
+
 ```
 
 ### 域的特征和性质 / Field Characteristic and Properties
@@ -241,6 +247,7 @@ def field_order(field: Field) -> Optional[int]:
         return field.order
 
     return None
+
 ```
 
 ## 域扩张算法 / Field Extension Algorithms
@@ -331,6 +338,7 @@ def is_transcendental_extension(extension: FieldExtension) -> bool:
         是否为超越扩张
     """
     return not is_algebraic_extension(extension)
+
 ```
 
 ### 最小多项式计算 / Minimal Polynomial Computation
@@ -386,6 +394,7 @@ def is_algebraic_element(extension: FieldExtension, element) -> bool:
         return any(coeff != 0 for coeff in min_poly[1:])  # 检查是否有非零系数
     except ValueError:
         return False
+
 ```
 
 ## 伽罗瓦理论算法 / Galois Theory Algorithms
@@ -486,6 +495,7 @@ def is_separable_extension(extension: FieldExtension) -> bool:
     """判断是否为可分扩张"""
     # 实现可分扩张判定
     pass
+
 ```
 
 ### 伽罗瓦对应 / Galois Correspondence
@@ -535,6 +545,7 @@ class GaloisCorrespondence:
     def get_subgroup(self, field: FieldExtension):
         """根据中间域找到对应的子群"""
         return self.correspondence.get(field)
+
 ```
 
 ## 有限域算法 / Finite Field Algorithms
@@ -609,6 +620,7 @@ def find_primitive_element(field: FiniteField):
     """
     # 实现本原元素查找
     pass
+
 ```
 
 ### 有限域运算 / Finite Field Operations
@@ -684,6 +696,7 @@ def generate_finite_field_elements(field: FiniteField) -> List[FiniteFieldElemen
     for i in range(field.order):
         elements.append(FiniteFieldElement(field, i))
     return elements
+
 ```
 
 ## 代数数论算法 / Algebraic Number Theory Algorithms
@@ -793,6 +806,7 @@ def is_square_free(n: int) -> bool:
             return False
 
     return True
+
 ```
 
 ### 理想分解算法 / Ideal Factorization Algorithms
@@ -844,6 +858,7 @@ def compute_unit_group(number_field: NumberField):
     """计算单位群"""
     # 实现单位群计算
     pass
+
 ```
 
 ## 应用案例 / Application Cases
@@ -903,9 +918,10 @@ def example_quadratic_field():
 
 if __name__ == "__main__":
     example_quadratic_field()
+
 ```
 
-### 案例2：有限域的应用 / Case 2: Finite Field Applications
+## 案例2：有限域的应用 / Case 2: Finite Field Applications
 
 ```python
 def finite_field_applications():
@@ -960,6 +976,7 @@ def reed_solomon_code_example():
     print(f"生成多项式: {generator_poly}")
 
     return field, generator_poly, n, k, t
+
 ```
 
 ### 案例3：伽罗瓦理论应用 / Case 3: Galois Theory Applications
@@ -1015,6 +1032,7 @@ def polynomial_solvability_example():
         # 计算伽罗瓦群
         # 这里需要更复杂的实现
         print(f"  伽罗瓦群: S{i}")
+
 ```
 
 ## 总结 / Summary
@@ -1038,7 +1056,7 @@ def polynomial_solvability_example():
 
 域论的Python实现为数学研究和工程应用提供了强大的工具，将继续在科学计算和密码学等领域发挥重要作用。
 
-## 7. 域论计算器与工具
+## 七、域论计算器与工具
 
 ### 7.1 域论综合计算器
 
@@ -1180,6 +1198,7 @@ class FieldTheoryCalculator:
         print(f"子域数量: {len(analysis['subfields'])}")
         print(f"自同构数量: {len(analysis['automorphisms'])}")
         print("=" * 60)
+
 ```
 
 ### 7.2 域扩张分析器
@@ -1257,9 +1276,10 @@ class FieldExtensionAnalyzer:
             print(f"伽罗瓦群阶: {analysis['galois_group']['order']}")
         print(f"中间域数量: {len(analysis['intermediate_fields'])}")
         print("=" * 60)
+
 ```
 
-## 8. 可视化工具
+## 八、可视化工具
 
 ### 8.1 域结构可视化
 
@@ -1357,9 +1377,10 @@ def visualize_galois_correspondence(correspondence: GaloisCorrespondence):
 
     plt.tight_layout()
     plt.show()
+
 ```
 
-## 9. 性能优化与测试
+## 九、性能优化与测试
 
 ### 9.1 缓存优化
 
@@ -1436,6 +1457,7 @@ class OptimizedFiniteField(FiniteField):
             return self._exp_table[log_result]
 
         return self.power(a, n)
+
 ```
 
 ### 9.2 测试套件
@@ -1484,9 +1506,10 @@ class TestField(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 ```
 
-## 10. 完整应用示例
+## 十、完整应用示例
 
 ### 10.1 域论综合示例
 
@@ -1539,6 +1562,7 @@ def complete_field_theory_example():
 
 if __name__ == '__main__':
     complete_field_theory_example()
+
 ```
 
 ## 11. 总结

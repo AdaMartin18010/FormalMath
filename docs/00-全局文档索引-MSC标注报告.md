@@ -2,6 +2,9 @@
 msc_primary: "00A99"
 msc_secondary: ['14Nxx', '03C90', '62Fxx']
 ---
+msc_primary: "00A99"
+msc_secondary: ['14Nxx', '03C90', '62Fxx']
+---
 
 # FormalMath项目MSC编码标注报告
 

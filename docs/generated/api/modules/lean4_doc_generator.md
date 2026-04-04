@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # lean4_doc_generator
 
 **源文件**: `tools\doc-generator\lean4_doc_generator.py`
@@ -8,6 +16,7 @@
 
 ```python
 class LeanTheorem
+
 ```
 
 Lean定理信息
@@ -16,6 +25,7 @@ Lean定理信息
 
 ```python
 class LeanDefinition
+
 ```
 
 Lean定义信息
@@ -24,6 +34,7 @@ Lean定义信息
 
 ```python
 class Lean4DocGenerator
+
 ```
 
 Lean4文档生成器
@@ -37,6 +48,7 @@ Lean4文档生成器
 
 ```python
 def main()
+
 ```
 
 主函数

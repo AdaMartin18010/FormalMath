@@ -64,6 +64,7 @@ $$\text{Area}(D) = \frac{1}{2}\oint_C (-y\,dx + x\,dy)$$
 几何意义：
 - 左边：沿边界C的"环流"
 - 右边：区域D内"旋度"的总和
+
 ```
 
 ### 2.2 旋度的几何意义
@@ -82,6 +83,7 @@ $$\text{Area}(D) = \frac{1}{2}\oint_C (-y\,dx + x\,dy)$$
     ↑
   ← ● →  ← 旋度 = 0（无旋转）
     ↓
+
 ```
 
 ### 2.3 多连通区域
@@ -181,9 +183,10 @@ def example_green():
 
     # 计算：∮_C (-y dx + x dy) = ∬_D (1 - (-1)) dA = 2π
     # 线积分 = 2π，面积分 = 2π，验证通过
+
 ```
 
-### 4.2 符号计算
+## 4.2 符号计算
 
 ```python
 from sympy import symbols, integrate, diff, simplify
@@ -222,6 +225,7 @@ def green_theorem_symbolic(P_expr, Q_expr, x_var, y_var,
     area_integral = integrate(integrate(curl, x_var), y_var)
 
     return simplify(line_integral), simplify(area_integral)
+
 ```
 
 ### 4.3 面积计算应用
@@ -254,6 +258,7 @@ def ellipse_area(a, b):
         return (a * np.cos(theta), b * np.sin(theta))
     return area_by_green_theorem(ellipse_param, (0, 1))
 # 结果：πab
+
 ```
 
 ---

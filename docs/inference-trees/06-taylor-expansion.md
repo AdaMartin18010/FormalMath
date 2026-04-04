@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 泰勒展开推导树
 
 ## 概述
@@ -47,6 +55,7 @@ graph TD
     
     style C2 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style D1 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 核心定理：Taylor展开
@@ -67,6 +76,7 @@ $$f(x) = \sum_{k=0}^n \frac{f^{(k)}(x_0)}{k!}(x-x_0)^k + R_n(x)$$
 ## 推导依赖
 
 ```
+
 Lagrange MVT
     ↓
 Cauchy MVT (辅助函数)
@@ -76,4 +86,5 @@ Cauchy MVT (辅助函数)
 各种余项形式
     ↓
 具体函数展开
+
 ```

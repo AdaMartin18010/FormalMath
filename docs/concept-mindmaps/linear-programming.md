@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 线性规划思维导图
 
 ## 概述
@@ -115,6 +123,7 @@ mindmap
         AMPL
         GAMS
         PuLP
+
 ```
 
 ## 核心概念详解
@@ -137,10 +146,12 @@ $$\begin{aligned}
 ### 2. 单纯形法迭代
 
 ```
+
 1. 选择非基变量 x_j 使 c_j < 0（进基）
 2. 计算方向 d = B⁻¹A_j
 3. 确定步长 θ = min{b_i/d_i : d_i > 0}
 4. 更新基，重复直到最优
+
 ```
 
 ### 3. 复杂度比较

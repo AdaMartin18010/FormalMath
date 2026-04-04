@@ -102,6 +102,7 @@ def SetTheoryLanguage : Type :=
 -- 公式定义
 -- Formula definition
 inductive Formula : Type
+
   | atomic : Nat → Nat → Formula  -- x ∈ y
   | equality : Nat → Nat → Formula  -- x = y
   | not : Formula → Formula
@@ -115,6 +116,7 @@ inductive Formula : Type
 -- 自由变量
 -- Free variables
 def free_variables : Formula → Set Nat
+
   | Formula.atomic x y => {x, y}
   | Formula.equality x y => {x, y}
   | Formula.not φ => free_variables φ
@@ -124,6 +126,7 @@ def free_variables : Formula → Set Nat
   | Formula.iff φ ψ => free_variables φ ∪ free_variables ψ
   | Formula.forall x φ => free_variables φ \ {x}
   | Formula.exists x φ => free_variables φ \ {x}
+
 ```
 
 ### 1.2 ZFC公理系统
@@ -320,6 +323,7 @@ theorem choice_equivalent :
      (∀ A B ∈ F, A ≠ B → A ∩ B = ∅) →
      (∅ ∉ F) →
      ∃ C, ∀ A ∈ F, |A ∩ C| = 1) ↔
+
   (∀ (X : Set α), ∃ f : X → X, ∀ x, f x ∈ x) :=
 begin
   split,
@@ -332,6 +336,7 @@ begin
     -- Use choice function to construct choice set
     sorry }
 end
+
 ```
 
 ## 🔢 2. 大基数理论形式化
@@ -409,6 +414,7 @@ theorem weakly_compact_properties (κ : Cardinal) (h : WeaklyCompact κ) :
 begin
   exact h.1
 end
+
 ```
 
 ### 2.2 大基数公理
@@ -449,6 +455,7 @@ begin
   -- Prove consistency strength relations of large cardinals
   sorry
 end
+
 ```
 
 ## 🔄 3. 强迫法理论形式化
@@ -499,6 +506,7 @@ theorem forcing_partial_order_properties (P : ForcingPartialOrder) :
 begin
   exact P.antichain_condition
 end
+
 ```
 
 ### 3.2 泛型滤子
@@ -530,6 +538,7 @@ begin
   intro h,
   exact h.1
 end
+
 ```
 
 ### 3.3 强迫扩展
@@ -570,6 +579,7 @@ begin
   -- Prove that forcing extension preserves ZFC consistency
   sorry
 end
+
 ```
 
 ## 🏗️ 4. 内模型理论形式化
@@ -595,9 +605,12 @@ def DefinableSubset (M : Model) (φ : Formula) : Set M.universe :=
 -- 可构造层级
 -- Constructible hierarchy
 def ConstructibleHierarchy : Ordinal → Set α
+
   | 0 => ∅
   | succ α => {x | x ⊆ ConstructibleHierarchy α ∧
+
                    ∃ φ, x = DefinableSubset (ConstructibleHierarchy α) φ}
+
   | limit λ => ⋃₀ {ConstructibleHierarchy α | α < λ}
 
 -- 可构造宇宙
@@ -614,6 +627,7 @@ begin
   -- Prove that constructible universe satisfies ZFC
   sorry
 end
+
 ```
 
 ### 4.2 内模型一致性
@@ -659,6 +673,7 @@ begin
   -- Prove properties of minimal inner model
   sorry
 end
+
 ```
 
 ## 🔍 5. 独立性证明形式化
@@ -709,6 +724,7 @@ begin
   -- Prove consistency of ¬AC through forcing
   sorry
 end
+
 ```
 
 ### 5.2 连续统假设独立性
@@ -747,6 +763,7 @@ begin
   -- Prove consistency of ¬CH through forcing
   sorry
 end
+
 ```
 
 ## 📊 6. 应用案例形式化
@@ -792,6 +809,7 @@ begin
   -- Prove cardinality of function type
   sorry
 end
+
 ```
 
 ### 6.2 程序验证应用
@@ -810,6 +828,7 @@ Apply ordinal theory in program verification
 -- 程序复杂度度量
 -- Program complexity measure
 def ProgramComplexity : Type → Ordinal
+
   | Unit => 0
   | Bool => 1
   | Nat => ω
@@ -824,6 +843,7 @@ theorem program_complexity_properties (α β : Type) :
 begin
   simp [ProgramComplexity]
 end
+
 ```
 
 ## 🎯 7. 质量评估与改进建议

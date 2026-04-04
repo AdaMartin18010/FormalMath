@@ -2,6 +2,9 @@
 msc_primary: "00A05"
 msc_secondary: ['03E30', '03E15', '11-XX']
 ---
+msc_primary: "00A05"
+msc_secondary: ['03E30', '03E15', '11-XX']
+---
 
 # ZFC公理体系完整形式化 - 第五部分：复数构造
 
@@ -80,6 +83,7 @@ $$\mathbb{C} = \mathbb{R} \times \mathbb{R}$$
 (1) 等价关系是自反、对称、传递的
 (2) 每个复数有唯一的表示
 (3) 因此定义是良定义的
+
 ```
 
 #### 1.2 复数的表示
@@ -101,6 +105,7 @@ $$\mathbb{C} = \mathbb{R} \times \mathbb{R}$$
 证明：
 (1) 如果 a + bi = c + di，则 a = c 且 b = d
 (2) 因此代数表示是唯一的
+
 ```
 
 ### 2. 复数运算的定义
@@ -130,6 +135,7 @@ $$z_1 + z_2 = (a_1 + a_2, b_1 + b_2)$$
 (2) 交换律：(a₁,b₁) + (a₂,b₂) = (a₁+a₂, b₁+b₂) = (a₂+a₁, b₂+b₁) = (a₂,b₂) + (a₁,b₁)
 (3) 单位元：(a,b) + (0,0) = (a,b)
 (4) 逆元：(a,b) + (-a,-b) = (0,0)
+
 ```
 
 #### 2.2 乘法运算
@@ -155,6 +161,7 @@ $$z_1 \cdot z_2 = (a_1a_2 - b_1b_2, a_1b_2 + a_2b_1)$$
 (2) 交换律：(a₁,b₁) · (a₂,b₂) = (a₁a₂-b₁b₂, a₁b₂+a₂b₁) = (a₂,b₂) · (a₁,b₁)
 (3) 单位元：(a,b) · (1,0) = (a,b)
 (4) 逆元：对于 z = (a,b) ≠ 0，z⁻¹ = (a/(a²+b²), -b/(a²+b²))
+
 ```
 
 ### 3. 复数的代数结构
@@ -172,6 +179,7 @@ $$z_1 \cdot z_2 = (a_1a_2 - b_1b_2, a_1b_2 + a_2b_1)$$
 (2) 乘法群（除去零）：结合律、交换律、单位元、逆元
 (3) 分配律：z₁ · (z₂ + z₃) = z₁ · z₂ + z₁ · z₃
 (4) 零因子：如果 z₁ · z₂ = 0，则 z₁ = 0 或 z₂ = 0
+
 ```
 
 #### 3.2 复数的嵌入
@@ -187,6 +195,7 @@ $$z_1 \cdot z_2 = (a_1a_2 - b_1b_2, a_1b_2 + a_2b_1)$$
 (2) 证明 φ 是单射
 (3) 证明 φ 保持加法：φ(r₁ + r₂) = φ(r₁) + φ(r₂)
 (4) 证明 φ 保持乘法：φ(r₁ · r₂) = φ(r₁) · φ(r₂)
+
 ```
 
 ### 4. 复数的几何解释
@@ -208,6 +217,7 @@ $$z = a + bi \leftrightarrow (a, b) \in \mathbb{R}^2$$
 (2) 乘法对应旋转和缩放
 (3) 模长对应距离
 (4) 幅角对应方向
+
 ```
 
 #### 4.2 极坐标表示
@@ -221,6 +231,7 @@ $$z = r(\cos \theta + i \sin \theta)$$
 **定理 4.2.1** (极坐标的性质)
 
 1. 模长：$|z| = r = \sqrt{a^2 + b^2}$
+
 2. 幅角：$\arg(z) = \theta = \arctan(b/a)$
 3. 乘法：$z_1 \cdot z_2 = r_1r_2(\cos(\theta_1 + \theta_2) + i \sin(\theta_1 + \theta_2))$
 
@@ -229,8 +240,10 @@ $$z = r(\cos \theta + i \sin \theta)$$
 ```text
 证明：
 (1) 模长：|z| = √(a² + b²)
+
 (2) 幅角：arg(z) = arctan(b/a) (考虑象限)
 (3) 乘法：使用三角恒等式
+
 ```
 
 ### 5. 复数的基本定理
@@ -248,6 +261,7 @@ $$z = r(\cos \theta + i \sin \theta)$$
 (2) 考虑函数 f(z) = p(z)/zⁿ
 (3) 使用最大模原理
 (4) 得到矛盾，因此存在根
+
 ```
 
 #### 5.2 复数的分解
@@ -263,6 +277,7 @@ $$z = r(\cos \theta + i \sin \theta)$$
 (2) 使用多项式除法，p(z) = (z - α₁)q(z)
 (3) 对 q(z) 重复此过程
 (4) 得到唯一分解
+
 ```
 
 ### 6. 复数的分析性质
@@ -283,6 +298,7 @@ $$\forall \epsilon > 0 \exists \delta > 0 \forall z(|z - z_0| < \delta \rightarr
 (1) 如果 z_n → z₀，则 f(z_n) → f(z₀)
 (2) 使用连续性的定义
 (3) 得到收敛性
+
 ```
 
 #### 6.2 复数的可微性
@@ -304,6 +320,7 @@ $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\pa
 (1) 必要性：如果 f 可微，则满足柯西-黎曼条件
 (2) 充分性：如果满足柯西-黎曼条件，则 f 可微
 (3) 使用极限的定义
+
 ```
 
 ### 7. 复数的应用
@@ -321,6 +338,7 @@ $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\pa
 (2) 群论：复数乘法群
 (3) 环论：复数环的性质
 (4) 域论：复数域的结构
+
 ```
 
 **应用案例 7.1.1** (代数基本定理的应用)
@@ -354,6 +372,7 @@ $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\pa
 (2) 积分理论：留数定理
 (3) 级数理论：幂级数展开
 (4) 调和函数：拉普拉斯方程
+
 ```
 
 **应用案例 7.2.1** (复变函数理论)
@@ -442,6 +461,7 @@ $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\pa
 (1) 复平面是 R²
 (2) R² 是连通的
 (3) 因此复平面连通
+
 ```
 
 #### 8.2 复数的紧性
@@ -456,6 +476,7 @@ $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\pa
 (1) 闭圆盘是有界闭集
 (2) 在 R² 中，有界闭集是紧的
 (3) 因此闭圆盘是紧的
+
 ```
 
 ### 9. 复数的特殊函数
@@ -478,6 +499,7 @@ $$e^z = e^{a + bi} = e^a(\cos b + i \sin b)$$
 (1) 加法性质：使用三角恒等式
 (2) 欧拉公式：e^(iπ) = cos π + i sin π = -1
 (3) 解析性：满足柯西-黎曼条件
+
 ```
 
 #### 9.2 三角函数
@@ -498,6 +520,7 @@ $$\cos z = \frac{e^{iz} + e^{-iz}}{2}, \quad \sin z = \frac{e^{iz} - e^{-iz}}{2i
 (1) 使用指数函数的定义
 (2) 展开计算
 (3) 使用代数运算
+
 ```
 
 ### 10. 结论
@@ -552,6 +575,7 @@ def Complex.I : Complex := Complex.mk 0 1
 -- 复数表示
 -- Complex number representation
 notation a "+" b "*I" => Complex.mk a b
+
 ```
 
 ### 复数运算形式化
@@ -633,6 +657,7 @@ begin
 end
 
 end Complex
+
 ```
 
 ### 复数域结构形式化
@@ -671,6 +696,7 @@ theorem complex_field_properties :
 begin
   exact inferInstance
 end
+
 ```
 
 ### 复数几何性质形式化
@@ -721,6 +747,7 @@ begin
 end
 
 end Complex
+
 ```
 
 ### 代数基本定理形式化
@@ -747,6 +774,7 @@ theorem complex_is_algebraically_closed :
 begin
   exact fundamental_theorem_of_algebra
 end
+
 ```
 
 ### 应用案例：复数在分析中的应用
@@ -783,6 +811,7 @@ begin
   -- Prove residue theorem
   sorry
 end
+
 ```
 
 ## 术语对照表 / Terminology Table

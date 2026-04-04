@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 分离公理层次结构推理树
 
 ## 概述
@@ -71,6 +79,7 @@ graph TD
     style M fill:#bfb,stroke:#333
     style N fill:#bfb,stroke:#333
     style O fill:#bfb,stroke:#333
+
 ```
 
 ## 分离公理详解
@@ -123,7 +132,9 @@ graph TD
 ## 层次关系
 
 ```
+
 T₆ ⇒ T₅ ⇒ T₄ ⇒ T₃½ ⇒ T₃ ⇒ T₂½ ⇒ T₂ ⇒ T₁ ⇒ T₀
+
 ```
 
 ## 典型例子

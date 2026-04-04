@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: [🇨🇳 中文](./zh/FormalMath项目100%完成最终确认报告-2025年1月.md) | **🇬🇧 English**

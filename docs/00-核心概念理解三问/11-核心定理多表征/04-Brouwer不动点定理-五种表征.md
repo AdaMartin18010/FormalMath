@@ -55,6 +55,7 @@ theorem no_retraction {n : ℕ} :
     ¬∃ (r : ClosedBall n → Sphere n), Continuous r ∧
       ∀ x : Sphere n, r (inclusion x) = x := by
   sorry -- 同调论证明
+
 ```
 
 ### 1.4 证明策略
@@ -73,6 +74,7 @@ H_n(Sⁿ)≠0  π_{n-1}(Sⁿ⁻¹)  Sperner引理
     └───────────┼───────────┘
                 │
         不存在无不动点的映射
+
 ```
 
 ---
@@ -96,6 +98,7 @@ H_n(Sⁿ)≠0  π_{n-1}(Sⁿ⁻¹)  Sperner引理
 f: [0,1] → [0,1] 连续
 f的图像从 (0,f(0)) 到 (1,f(1))
 必与对角线 y=x 相交！
+
 ```
 
 ### 2.2 二维情形
@@ -113,6 +116,7 @@ f的图像从 (0,f(0)) 到 (1,f(1))
 
     无论怎么"揉"这个圆盘
     总有一个点不动！
+
 ```
 
 ### 2.3 不存在收缩
@@ -132,6 +136,7 @@ f的图像从 (0,f(0)) 到 (1,f(1))
 
     但这会导致 S¹ ≃ 点（可缩）
     矛盾！（S¹ 有非平凡基本群）
+
 ```
 
 ### 2.4 咖啡杯比喻
@@ -149,6 +154,7 @@ f的图像从 (0,f(0)) 到 (1,f(1))
 
     假设搅拌是连续的
     由Brouwer定理，必有不动点
+
 ```
 
 ---
@@ -176,6 +182,7 @@ f的图像从 (0,f(0)) 到 (1,f(1))
 
     有一个点同时在"地图上"和"实际位置"重合
     这就是不动点！
+
 ```
 
 **揉面团类比**：
@@ -190,6 +197,7 @@ f的图像从 (0,f(0)) 到 (1,f(1))
 无论怎么揉，总有一点
 在变形前后位置相同！
 （除非把面团撕开——不连续）
+
 ```
 
 ### 3.3 为什么是真的？
@@ -207,6 +215,7 @@ f的图像从 (0,f(0)) 到 (1,f(1))
 
 这定义了 r: Dⁿ → Sⁿ⁻¹
 但这样的收缩不存在！（拓扑阻碍）
+
 ```
 
 ---
@@ -243,9 +252,10 @@ def fixed_point_1d(f, a=0, b=1, tol=1e-10):
 import math
 fp = fixed_point_1d(math.cos, 0, 1)
 print(f"cos(x) = x 的解：{fp:.10f}")
+
 ```
 
-### 4.2 二维情形（数值方法）
+## 4.2 二维情形（数值方法）
 
 ```python
 import numpy as np
@@ -269,9 +279,10 @@ def rotation_contraction(x, theta=0.5, k=0.8):
 
 fp = fixed_point_2d(rotation_contraction, np.array([0.5, 0.5]))
 print(f"不动点: {fp}")  # 应该接近原点
+
 ```
 
-### 4.3 Sperner引理验证
+## 4.3 Sperner引理验证
 
 ```python
 def sperner_lemma_demo(n_divisions=8):
@@ -321,6 +332,7 @@ def sperner_lemma_demo(n_divisions=8):
     return complete
 
 sperner_lemma_demo(16)
+
 ```
 
 ---
@@ -340,6 +352,7 @@ sperner_lemma_demo(16)
               │
     但 ℤ → 0 不能是单射
     矛盾！
+
 ```
 
 ### 5.2 同伦论视角
@@ -354,6 +367,7 @@ sperner_lemma_demo(16)
     不能有左逆（收缩）
               │
     因为 ℤ → 0 → ℤ 不能是恒等
+
 ```
 
 ### 5.3 Lefschetz不动点定理
@@ -368,6 +382,7 @@ sperner_lemma_demo(16)
     对于 f: Dⁿ → Dⁿ：
     L(f) = 1（因为 Dⁿ 可缩）
     ⟹ f 有不动点
+
 ```
 
 ### 5.4 不动点指数
@@ -379,6 +394,7 @@ sperner_lemma_demo(16)
 不动点指数 ↔ 代数计数
 
 这是代数拓扑方法的核心思想
+
 ```
 
 ---

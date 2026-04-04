@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数值线性代数 - 思维导图
 
 ## 概述
@@ -58,6 +63,7 @@ mindmap
       带状矩阵
         追赶法
         降复杂度
+
 ```
 
 ---
@@ -84,6 +90,7 @@ graph TD
     
     style D fill:#e3f2fd
     style F fill:#e8f5e9
+
 ```
 
 ---
@@ -124,7 +131,9 @@ mindmap
         多重网格
     GMRES
       最小残差
+
         ||Ax-b||₂最小
+
       Arnoldi过程
         正交化
         Hessenberg矩阵
@@ -138,6 +147,7 @@ mindmap
         非对称短递推
       QMR
         光滑收敛
+
 ```
 
 ---
@@ -164,6 +174,7 @@ graph TD
     
     style B fill:#e3f2fd
     style E fill:#fff3e0
+
 ```
 
 ---
@@ -191,6 +202,7 @@ mindmap
         A⁺ = VΣ⁺Uᵀ
       主成分分析
         协方差特征值
+
 ```
 
 ---
@@ -222,6 +234,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style G fill:#fff3e0
+
 ```
 
 ---

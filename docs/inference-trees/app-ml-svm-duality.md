@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # SVM对偶理论推导链
 
 ## 概述
@@ -12,12 +17,14 @@ graph TD
     subgraph 原始问题
         A1[线性可分<br/>yᵢw·xᵢ + b ≥ 1] --> A2[最大间隔<br/>max 2/\|w\|]
         A2 --> A3[凸优化<br/>min ½\|w\|²]
+
         A3 --> A4[约束条件<br/>yᵢw·xᵢ + b ≥ 1]
     end
     
     subgraph 拉格朗日函数
         A4 --> B1[拉格朗日乘子<br/>αᵢ ≥ 0]
         B1 --> B2[Lagrangian<br/>L = ½\|w\|² - Σαᵢgᵢ]
+
         B2 --> B3[对偶函数<br/>gα = inf_w L]
     end
     
@@ -45,6 +52,7 @@ graph TD
     subgraph 软间隔
         A4 --> F1[松弛变量<br/>ξᵢ ≥ 0]
         F1 --> F2[正则化<br/>min ½\|w\|² + CΣξᵢ]
+
         F2 --> F3[软间隔对偶<br/>0 ≤ αᵢ ≤ C]
         F3 --> D3
     end
@@ -53,6 +61,7 @@ graph TD
     style D4 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style E4 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style F3 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -188,6 +197,7 @@ $$\max_{\alpha} \sum_{i=1}^n \alpha_i - \frac{1}{2}\sum_{i,j} \alpha_i \alpha_j 
 ## 依赖关系图
 
 ```
+
 线性分类基础
     ↓
 最大间隔原理
@@ -203,6 +213,7 @@ KKT条件 ← 变分分析
 核技巧 ← RKHS理论
     ↓
 非线性分类 + 软间隔
+
 ```
 
 ---

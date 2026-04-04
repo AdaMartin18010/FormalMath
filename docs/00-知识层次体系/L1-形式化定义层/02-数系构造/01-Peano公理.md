@@ -8,6 +8,15 @@ prerequisites: ["集合与元素", "函数与映射"]
 next_level: ["数学归纳法", "整数构造"]
 tags: ["数系构造", "公理系统", "自然数", "形式化定义"]
 ---
+msc_primary: "03F30"
+msc_secondary: ["11B83", "97F40"]
+level: L1-Formal
+domain: 数论
+concept: Peano公理
+prerequisites: ["集合与元素", "函数与映射"]
+next_level: ["数学归纳法", "整数构造"]
+tags: ["数系构造", "公理系统", "自然数", "形式化定义"]
+---
 
 # L1: 自然数的Peano公理 (Peano Axioms)
 
@@ -17,7 +26,7 @@ tags: ["数系构造", "公理系统", "自然数", "形式化定义"]
 
 ---
 
-## 1. 严格形式化定义
+## 一、严格形式化定义
 
 ### 1.1 Peano公理系统
 
@@ -45,6 +54,7 @@ graph LR
     style 1 fill:#ffcc99
     style 2 fill:#ffff99
     style 3 fill:#ccff99
+
 ```
 
 **关键结构要素**：
@@ -54,16 +64,18 @@ graph LR
 
 ---
 
-## 2. 从L0到L1的提升路径
+## 二、从L0到L1的提升路径
 
 ### 2.1 L0直观理解
 
 ```
+
 L0描述：
 - "自然数就是 0, 1, 2, 3, 用来计数的数"
 - "每个数后面跟着下一个数"
 - "数列可以一直数下去"
 - "从0开始，每次加1"
+
 ```
 
 ### 2.2 形式化提升过程
@@ -104,11 +116,12 @@ graph TB
     
     style L0 fill:#e8f5e9,stroke:#4caf50
     style L1 fill:#fff3e0,stroke:#ff9800
+
 ```
 
 ---
 
-## 3. 依赖的L1概念（先修）
+## 三、依赖的L1概念（先修）
 
 | 概念 | 作用 | 依赖程度 |
 |------|------|---------|
@@ -118,7 +131,7 @@ graph TB
 
 ---
 
-## 4. 支撑的L2定理（后继）
+## 四、支撑的L2定理（后继）
 
 ### 4.1 基本定理群
 
@@ -149,6 +162,7 @@ flowchart TB
     style D1 fill:#fff3e0,stroke:#ff9800,stroke-width:3px
     style T1 fill:#e3f2fd,stroke:#2196f3
     style T2 fill:#e3f2fd,stroke:#2196f3
+
 ```
 
 ### 4.3 递归定理（核心）
@@ -162,7 +176,7 @@ flowchart TB
 
 ---
 
-## 5. 定义的历史背景
+## 五、定义的历史背景
 
 ### 5.1 历史发展
 
@@ -182,6 +196,7 @@ timeline
                    : 从逻辑推导数学
         1930s : 哥德尔不完备定理
               : Peano算术的不完备性
+
 ```
 
 ### 5.2 关键人物
@@ -203,7 +218,7 @@ Dedekind的构造与Peano公理等价，两者刻画了相同的结构。
 
 ---
 
-## 6. 扩展与变体
+## 六、扩展与变体
 
 ### 6.1 从1开始的版本
 
@@ -218,6 +233,7 @@ Dedekind的构造与Peano公理等价，两者刻画了相同的结构。
 ### 6.2 在ZFC中的实现
 
 ```
+
 定义（ZFC）：
 - 0 := ∅（空集）
 - S(n) := n ∪ {n}（后继）
@@ -230,11 +246,12 @@ Dedekind的构造与Peano公理等价，两者刻画了相同的结构。
 - 3 = {∅, {∅}, {∅, {∅}}} = {0, 1, 2}
 - ...
 每个自然数是其所有前驱的集合（von Neumann序数）
+
 ```
 
 ---
 
-## 7. 形式化验证（Lean4示例）
+## 七、形式化验证（Lean4示例）
 
 ```lean4
 -- Peano公理的形式化
@@ -251,15 +268,19 @@ structure PeanoSystem where
 -- 加法递归定义
 def add (n m : ℕ) : ℕ :=
   match m with
+
   | 0 => n
   | succ k => succ (add n k)
 
 -- 加法结合律证明（归纳法）
 theorem add_assoc (a b c : ℕ) : (a + b) + c = a + (b + c) := by
   induction c with
+
   | zero => rfl
   | succ k ih => 
+
     simp [add, ih]
+
 ```
 
 ---

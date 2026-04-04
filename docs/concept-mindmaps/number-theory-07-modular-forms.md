@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 模形式 - 思维导图
 
 ## 概述
@@ -19,7 +24,9 @@ mindmap
         γz=(az+b)/(cz+d)
         上半平面H
       基本域
+
         |z|>1, |Re(z)|<1/2
+
         商H/SL(2,ℤ)
     模形式定义
       权k模形式
@@ -76,6 +83,7 @@ mindmap
       球堆积
         E₈格
         Leech格
+
 ```
 
 ---
@@ -96,6 +104,7 @@ graph TD
         G[H={Im(z)>0}] --> H[基本域F]
         H --> I[|z|>1]
         H --> J[|Re(z)|<1/2]
+
     end
     
     subgraph 商空间
@@ -107,6 +116,7 @@ graph TD
     style A fill:#e3f2fd
     style G fill:#fff3e0
     style K fill:#e8f5e9
+
 ```
 
 ---
@@ -139,6 +149,7 @@ graph TD
     style A fill:#e3f2fd
     style B fill:#e8f5e9
     style C fill:#fff3e0
+
 ```
 
 ---
@@ -187,6 +198,7 @@ graph TD
     style A fill:#e3f2fd
     style G fill:#e8f5e9
     style K fill:#fff3e0
+
 ```
 
 ---
@@ -217,6 +229,7 @@ graph TD
     style A fill:#e3f2fd
     style D fill:#fff3e0
     style K fill:#ffcdd2
+
 ```
 
 ---
@@ -259,6 +272,7 @@ mindmap
       变换公式
         根数24次
         模判别式
+
 ```
 
 ---
@@ -287,6 +301,7 @@ graph TD
     style A fill:#e3f2fd
     style G fill:#e8f5e9
     style K fill:#fff3e0
+
 ```
 
 ---
@@ -335,6 +350,7 @@ flowchart LR
     style D fill:#fff3e0
     style G fill:#e8f5e9
     style J fill:#ffcdd2
+
 ```
 
 ---

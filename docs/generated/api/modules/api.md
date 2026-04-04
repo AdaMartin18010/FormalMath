@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # api
 
 **源文件**: `tools\personalized-recommendation\api.py`
@@ -8,6 +16,7 @@
 
 ```python
 class APIResponse
+
 ```
 
 API响应封装
@@ -16,6 +25,7 @@ API响应封装
 
 ```python
 class UserProfileAPI
+
 ```
 
 用户画像API
@@ -24,6 +34,7 @@ class UserProfileAPI
 
 ```python
 class RecommendationAPI
+
 ```
 
 推荐API
@@ -32,6 +43,7 @@ class RecommendationAPI
 
 ```python
 class VisualizationAPI
+
 ```
 
 可视化API
@@ -42,6 +54,7 @@ class VisualizationAPI
 
 ```python
 def initialize_default_engine()
+
 ```
 
 初始化默认推荐引擎

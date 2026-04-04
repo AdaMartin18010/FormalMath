@@ -49,6 +49,7 @@ theorem seifert_van_kampen {X : Type*} [TopologicalSpace X]
     (x0 : X) (hx0 : ∀ i, x0 ∈ U i) :
     -- 基本群的余极限结构
     sorry  -- 需要详细的同伦论形式化
+
 ```
 
 ---
@@ -68,6 +69,7 @@ theorem seifert_van_kampen {X : Type*} [TopologicalSpace X]
     └──────┴──────┘
 
 基本群 = 所有Uᵢ的基本群的"协调粘合"
+
 ```
 
 ### 2.2 例子：多圆粘合
@@ -75,6 +77,7 @@ theorem seifert_van_kampen {X : Type*} [TopologicalSpace X]
 ```text
 多个圆在一点粘合：
 π₁ = ℤ * ℤ * ... * ℤ (自由积)
+
 ```
 
 ---
@@ -121,6 +124,7 @@ def seifert_van_kampen_compute(cover, intersections):
             relations.append(rel)
 
     return F / relations
+
 ```
 
 ---
@@ -141,6 +145,7 @@ Seifert-van Kampen = 余极限（colimit）
     └──────→ G ────┘
 
 在群范畴中的余极限
+
 ```
 
 ### 5.2 群胚版本

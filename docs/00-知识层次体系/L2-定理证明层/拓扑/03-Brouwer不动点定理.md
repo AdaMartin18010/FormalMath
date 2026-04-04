@@ -34,6 +34,7 @@ flowchart TD
     D --> E[结论: 不动点存在]
     
     style D fill:#ffebee,stroke:#f44336
+
 ```
 
 #### 步骤1：反证假设
@@ -120,6 +121,7 @@ flowchart TB
     L2B --> L3GE[L3: 一般均衡理论]
     
     style L2B fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+
 ```
 
 ---

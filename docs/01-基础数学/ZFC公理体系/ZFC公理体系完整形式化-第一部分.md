@@ -2,6 +2,9 @@
 msc_primary: "03F30"
 msc_secondary: ['11Axx', '03E30', '03E15']
 ---
+msc_primary: "03F30"
+msc_secondary: ['11Axx', '03E30', '03E15']
+---
 
 # ZFC公理体系完整形式化 - 第一部分：基础公理系统
 
@@ -102,6 +105,7 @@ $$\forall x \forall y [\forall z(z \in x \leftrightarrow z \in y) \rightarrow x 
 证明：
 (1) 从左到右：由外延公理直接得到
 (2) 从右到左：由等词的自反性得到
+
 ```
 
 #### 2.2 空集公理 (Axiom of Empty Set)
@@ -120,6 +124,7 @@ $$\exists x \forall y (y \notin x)$$
 证明：
 (1) 存在性：由空集公理
 (2) 唯一性：由外延公理，如果存在两个空集，它们必须相等
+
 ```
 
 **符号定义**：
@@ -141,6 +146,7 @@ $$\forall x \forall y \exists z \forall w(w \in z \leftrightarrow w = x \lor w =
 证明：
 (1) 存在性：由配对公理
 (2) 唯一性：由外延公理
+
 ```
 
 **符号定义**：
@@ -162,6 +168,7 @@ $$\forall F \exists A \forall x(x \in A \leftrightarrow \exists B(B \in F \land 
 证明：
 (1) 存在性：由并集公理
 (2) 唯一性：由外延公理
+
 ```
 
 **符号定义**：
@@ -185,6 +192,7 @@ $$\forall x \exists y \forall z(z \in y \leftrightarrow z \subseteq x)$$
 证明：
 (1) 存在性：由幂集公理
 (2) 唯一性：由外延公理
+
 ```
 
 **符号定义**：
@@ -207,6 +215,7 @@ $$\exists x(\emptyset \in x \land \forall y(y \in x \rightarrow y \cup \{y\} \in
 (1) 由无穷公理，存在一个归纳集合
 (2) 自然数集合是所有归纳集合的交集
 (3) 由分离公理，这个交集存在
+
 ```
 
 #### 2.7 分离公理模式 (Axiom Schema of Separation)
@@ -225,6 +234,7 @@ $$\forall w_1 \ldots \forall w_n \forall z \exists y \forall x(x \in y \leftrigh
 
 证明：
 由外延公理直接得到
+
 ```
 
 #### 2.8 替换公理模式 (Axiom Schema of Replacement)
@@ -243,6 +253,7 @@ $$\forall w_1 \ldots \forall w_n \forall A[\forall x \in A \exists!y \phi(x, y, 
 
 证明：
 由外延公理直接得到
+
 ```
 
 #### 2.9 正则公理 (Axiom of Regularity)
@@ -261,6 +272,7 @@ $$\forall x(x \neq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$
 证明：
 (1) 从左到右：由正则公理和集合运算
 (2) 从右到左：直接得到
+
 ```
 
 #### 2.10 选择公理 (Axiom of Choice)
@@ -279,6 +291,7 @@ $$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \
 证明：
 (1) 由选择公理和超限归纳
 (2) 构造良序关系
+
 ```
 
 ### 3. 基本定理的形式化证明
@@ -295,6 +308,7 @@ $$\forall x \forall y (\{x, y\} = \{y, x\})$$
 (1) 由配对公理，{x,y} 和 {y,x} 都存在
 (2) 由外延公理，它们包含相同的元素
 (3) 因此 {x,y} = {y,x}
+
 ```
 
 **定理 3.1.2** (并集运算的结合律)
@@ -307,6 +321,7 @@ $$\forall x \forall y \forall z (\bigcup\{x, y, z\} = \bigcup\{\bigcup\{x, y\}, 
 (1) 由配对公理和并集公理
 (2) 展开定义
 (3) 使用外延公理证明相等
+
 ```
 
 #### 3.2 序对的定义
@@ -328,6 +343,7 @@ $$\forall x \forall y \forall u \forall v ((x, y) = (u, v) \leftrightarrow x = u
    - 如果 x ≠ y，则 {x} ≠ {x,y}
    - 因此 {x} = {u} 且 {x,y} = {u,v}
    - 所以 x = u 且 y = v
+
 ```
 
 ### 4. 自然数的构造
@@ -350,6 +366,7 @@ $$\forall x \forall y \forall u \forall v ((x, y) = (u, v) \leftrightarrow x = u
 (2) 定义 N = ∩{x : x 是归纳集合}
 (3) 由分离公理，N 存在
 (4) N 包含所有自然数
+
 ```
 
 #### 4.2 数学归纳法
@@ -366,6 +383,7 @@ $$\forall P[P(0) \land \forall n(P(n) \rightarrow P(n+1)) \rightarrow \forall n 
 (3) A 是归纳集合
 (4) 因此 N ⊆ A
 (5) 所以 ∀n P(n)
+
 ```
 
 ### 5. ZFC公理体系的应用
@@ -674,6 +692,7 @@ begin
   -- Prove Zorn's lemma (requires axiom of choice)
   sorry
 end
+
 ```
 
 ### 基本定理形式化
@@ -895,6 +914,7 @@ theorem cartesian_product_properties (A B : Set α) (p : Set (Set α)) :
 begin
   refl
 end
+
 ```
 
 ### 应用案例：ZFC公理体系在类型理论中的应用
@@ -913,6 +933,7 @@ structure TypeAsSet (α : Type) where
 -- Function type
 def FunctionType (A B : Set α) : Set (Set (Set (Set α))) :=
   {f : Set (Set (Set α)) |
+
     f ⊆ CartesianProduct A B ∧
     (∀ x ∈ A, ∃! y ∈ B, OrderedPair x y ∈ f)}
 
@@ -920,7 +941,9 @@ def FunctionType (A B : Set α) : Set (Set (Set (Set α))) :=
 -- Dependent type
 def DependentType (A : Set α) (B : α → Set α) : Set (Set (Set α)) :=
   {p : Set (Set α) |
+
     ∃ x ∈ A, ∃ y ∈ B x, p = OrderedPair x y}
+
 ```
 
 ## 术语对照表 / Terminology Table

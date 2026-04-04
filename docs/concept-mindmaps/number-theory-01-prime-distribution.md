@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 素数分布 - 思维导图
 
 ## 概述
@@ -72,6 +77,7 @@ mindmap
       短区间
         π(x+y)-π(x)
         哈代-李特尔伍德猜想
+
 ```
 
 ---
@@ -102,6 +108,7 @@ graph TD
     style D fill:#fff3e0
     style E fill:#e8f5e9
     style J fill:#ffcdd2
+
 ```
 
 ---
@@ -130,6 +137,7 @@ graph LR
     style A fill:#e3f2fd
     style E fill:#fff3e0
     style I fill:#ffcdd2
+
 ```
 
 ---
@@ -175,6 +183,7 @@ mindmap
         强形式未证
       勒让德猜想
         n²与(n+1)²间必有素数
+
 ```
 
 ---
@@ -200,6 +209,7 @@ graph TD
     style E fill:#e3f2fd
     style LB fill:#e8f5e9
     style Z fill:#ffcdd2
+
 ```
 
 ---
@@ -245,6 +255,7 @@ flowchart LR
     style E fill:#fff3e0
     style F fill:#e8f5e9
     style I fill:#ffcdd2
+
 ```
 
 ---

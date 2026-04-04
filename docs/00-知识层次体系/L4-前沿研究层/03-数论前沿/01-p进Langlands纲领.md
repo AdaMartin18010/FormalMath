@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # p进Langlands纲领
 
 ## 前沿问题陈述
@@ -52,6 +60,7 @@ timeline
               : 一般约化群
         2022+ : 几何化推进
               : 凝聚态方法
+
 ```
 
 ### 2.2 关键突破
@@ -87,6 +96,7 @@ graph TD
 
     style C fill:#ffcccc
     style E fill:#99ff99
+
 ```
 
 ### 3.2 依赖的L3理论
@@ -127,6 +137,7 @@ graph TD
 
     style A fill:#ffcccc
     style E fill:#99ff99
+
 ```
 
 ### 4.3 当前活跃方向
@@ -194,6 +205,7 @@ graph TD
 
     style B fill:#ffcccc
     style E fill:#99ff99
+
 ```
 
 ---
@@ -219,6 +231,7 @@ graph TD
     style C fill:#ccccff
     style D fill:#ffffcc
     style E fill:#ffccff
+
 ```
 
 ---

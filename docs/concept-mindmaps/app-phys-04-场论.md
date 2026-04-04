@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 场论 - 思维导图
 
 ## 概述
@@ -60,6 +65,7 @@ mindmap
       非微扰
         瞬子
         格点场论
+
 ```
 
 ---
@@ -84,6 +90,7 @@ graph TD
     style B fill:#e3f2fd
     style E fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -122,6 +129,7 @@ mindmap
       费曼传播子
         时序格林函数
         虚部贡献
+
 ```
 
 ---
@@ -164,6 +172,7 @@ graph TD
     style B fill:#e3f2fd
     style F fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -201,6 +210,7 @@ mindmap
       格点
         离散化
         蒙特卡洛
+
 ```
 
 ---
@@ -234,6 +244,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style H fill:#fff3e0
+
 ```
 
 ---

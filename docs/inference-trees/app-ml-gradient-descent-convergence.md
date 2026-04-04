@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 梯度下降收敛性推导链
 
 ## 概述
@@ -12,6 +17,7 @@ graph TD
     subgraph 优化基础
         A1[光滑函数<br/>L-Lipschitz梯度] --> A2[凸函数<br/>fλ+(1-λ)f ≤ fλ]
         A2 --> A3[强凸函数<br/>f(y) ≥ f(x) + ∇f·(y-x) + μ/2\|y-x\|²]
+
         A3 --> A4[最优解存在<br/>x* = argmin f]
     end
     
@@ -19,6 +25,7 @@ graph TD
         A4 --> B1[迭代格式<br/>xₖ₊₁ = xₖ - αₖ∇fₖ]
         B1 --> B2[步长选择<br/>固定/递减/线搜索]
         B2 --> B3[下降引理<br/>fₖ₊₁ ≤ fₖ - α\|∇fₖ\|²/2]
+
     end
     
     subgraph 凸函数收敛
@@ -30,6 +37,7 @@ graph TD
     subgraph 强凸加速
         A3 --> D1[二次下界<br/>f(y) - f* ≥ μ/2\|y-x*\|²]
         D1 --> D2[线性收敛<br/>\|xₖ - x*\|² ≤ ρᵏ\|x₀ - x*\|²]
+
         D2 --> D3[条件数<br/>κ = L/μ]
         D3 --> D4[收敛率<br/>ρ = (κ-1)/(κ+1)]
     end
@@ -44,6 +52,7 @@ graph TD
         B1 --> F1[SGD迭代<br/>xₖ₊₁ = xₖ - αₖgₖ]
         F1 --> F2[无偏梯度<br/>E[gₖ] = ∇fₖ]
         F2 --> F3[方差控制<br/>E[\|gₖ\|²] ≤ σ²]
+
         F3 --> F4[递减步长<br/>αₖ = O(1/√k)]
         F4 --> F5[收敛性<br/>E[fₖ] - f* = O(1/√k)]
     end
@@ -52,6 +61,7 @@ graph TD
     style D4 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style E3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     style F5 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -115,6 +125,7 @@ $$\|x_k - x^*\|^2 \leq \left(1 - \frac{1}{\kappa}\right)^k \|x_0 - x^*\|^2$$
 **证明**：
 1. $x_{k+1} - x^* = (x_k - x^*) - \frac{1}{L}\nabla f_k$
 2. 由强凸性：$\|\nabla f_k\|^2 \geq \mu^2\|x_k - x^*\|^2$
+
 3. 结合光滑性得收敛界
 
 **收敛速度**：$O(\rho^k)$，其中 $\rho = 1 - \frac{1}{\kappa} < 1$ —— 线性收敛
@@ -164,6 +175,7 @@ $$x_{k+1} = x_k - \alpha_k g_k$$
 ## 依赖关系图
 
 ```
+
 凸分析基础
     ↓
 光滑性条件 ← Lipschitz梯度
@@ -177,6 +189,7 @@ $$x_{k+1} = x_k - \alpha_k g_k$$
         最优收敛率
               ↓
         随机梯度扩展
+
 ```
 
 ---

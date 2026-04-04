@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 统计学习理论 - 思维导图
 
 ## 概述
@@ -55,6 +60,7 @@ mindmap
       收敛速度
         分布依赖
         极小极大率
+
 ```
 
 ---
@@ -81,6 +87,7 @@ graph TD
     style D fill:#e3f2fd
     style F fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -119,6 +126,7 @@ mindmap
         伪维
       回归
         covering number界
+
 ```
 
 ---
@@ -140,6 +148,7 @@ mindmap
 graph TD
     subgraph 一致收敛
         A[sup_{f∈ℱ}|R(f)-R̂(f)| < ε] --> B[Union Bound]
+
         B --> C[复杂度依赖]
     end
     
@@ -154,12 +163,14 @@ graph TD
     
     subgraph PAC-Bayes
         I[后验分布Q] --> J[KL(Q||P)]
+
         J --> K[贝叶斯泛化界]
     end
     
     style A fill:#e3f2fd
     style F fill:#fff3e0
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -192,6 +203,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style F fill:#fff3e0
+
 ```
 
 ---

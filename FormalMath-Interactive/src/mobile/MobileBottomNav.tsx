@@ -6,7 +6,7 @@ import {
   GitBranch, 
   Brain, 
   BarChart3,
-  Sitemap,
+  Layout,
   History,
   MoreHorizontal
 } from 'lucide-react';
@@ -50,7 +50,7 @@ const bottomNavItems: NavItem[] = [
 // 更多菜单中的项目
 const moreNavItems: NavItem[] = [
   { path: '/comparison', label: '对比分析', icon: <BarChart3 className="w-5 h-5" /> },
-  { path: '/decision-tree', label: '决策树', icon: <Sitemap className="w-5 h-5" /> },
+  { path: '/decision-tree', label: '决策树', icon: <Layout className="w-5 h-5" /> },
   { path: '/evolution', label: '演化历史', icon: <History className="w-5 h-5" /> },
 ];
 

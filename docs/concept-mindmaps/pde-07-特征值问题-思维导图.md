@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 特征值问题 - 思维导图
 
 ## 概述
@@ -27,6 +32,7 @@ mindmap
     变分刻画
       Rayleigh商
         R(u) = ∫|∇u|²/∫u²
+
         极小化原理
         驻点即特征函数
       Courant-Fischer
@@ -35,6 +41,7 @@ mindmap
         特征值顺序
       Weyl渐近公式
         N(λ) ~ C_n|Ω|λ^{n/2}
+
         高频渐近
         谱几何联系
     特征值性质
@@ -114,6 +121,7 @@ mindmap
         非均匀介质
         度量测度空间
         曲率影响
+
 ```
 
 ---
@@ -128,6 +136,7 @@ graph TD
     
     B --> E[Dirichlet边界<br/>u|∂Ω = 0]
     B --> F[Neumann边界<br/>∂u/∂n|∂Ω = 0]
+
     B --> G[Robin边界<br/>混合条件]
     
     C --> H[自伴情形<br/>谱定理适用]
@@ -140,6 +149,7 @@ graph TD
     style B fill:#e8f5e9
     style H fill:#fff3e0
     style J fill:#fce4ec
+
 ```
 
 ---
@@ -156,6 +166,7 @@ graph TD
     F --> G[特征值顺序刻画]
     
     H[Weyl渐近] --> I[N(λ) ~ (2π)^{-n}ω_n|Ω|λ^{n/2}]
+
     I --> J[高频特征值计数]
     
     K[应用] --> L[等周不等式]
@@ -166,6 +177,7 @@ graph TD
     style B fill:#fff3e0
     style E fill:#e8f5e9
     style H fill:#fce4ec
+
 ```
 
 ---
@@ -205,6 +217,7 @@ mindmap
         近球域特征值估计
         定量等周不等式
          deficit估计
+
 ```
 
 ---
@@ -227,6 +240,7 @@ graph TD
     style A fill:#e3f2fd
     style D fill:#e8f5e9
     style F fill:#fff3e0
+
 ```
 
 ---
@@ -248,6 +262,7 @@ graph TD
     
     subgraph  Payne-Pólya-Weinberger猜想
         A3[特征值比] --> B3[λ_{k+1}/λ_k ≤ λ₂/λ₁|球]
+
         B3 --> C3[已证明k=1,2]
         B3 --> D3[一般情形猜想]
     end
@@ -255,6 +270,7 @@ graph TD
     style A1 fill:#e3f2fd
     style A2 fill:#fff3e0
     style A3 fill:#e8f5e9
+
 ```
 
 ---
@@ -289,6 +305,7 @@ graph LR
     style A fill:#e3f2fd
     style E fill:#e8f5e9
     style I fill:#fff3e0
+
 ```
 
 ---
@@ -312,6 +329,7 @@ graph TD
     style A fill:#e3f2fd
     style C fill:#e8f5e9
     style H fill:#fff3e0
+
 ```
 
 ---

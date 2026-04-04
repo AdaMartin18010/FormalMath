@@ -90,7 +90,7 @@ export const PuzzleSolver: React.FC<PuzzleSolverProps> = ({
           </div>
         );
 
-      case 'proof_construct':
+      case 'proof_construct': {
         const proofContent = puzzle.content as {
           theorem: string;
           given: string[];
@@ -158,8 +158,9 @@ export const PuzzleSolver: React.FC<PuzzleSolverProps> = ({
             </div>
           </div>
         );
+      }
 
-      case 'concept_match':
+      case 'concept_match': {
         const matchContent = puzzle.content as {
           concepts: { id: string; content: string }[];
           definitions: { id: string; content: string }[];
@@ -201,8 +202,9 @@ export const PuzzleSolver: React.FC<PuzzleSolverProps> = ({
             </div>
           </div>
         );
+      }
 
-      case 'equation_solve':
+      case 'equation_solve': {
         const equationContent = puzzle.content as { equation: string };
         return (
           <div className="space-y-4">
@@ -223,8 +225,9 @@ export const PuzzleSolver: React.FC<PuzzleSolverProps> = ({
             </div>
           </div>
         );
+      }
 
-      case 'pattern_recognize':
+      case 'pattern_recognize': {
         const patternContent = puzzle.content as { sequence: (string | number)[] };
         return (
           <div className="space-y-4">
@@ -255,6 +258,7 @@ export const PuzzleSolver: React.FC<PuzzleSolverProps> = ({
             </div>
           </div>
         );
+      }
 
       default:
         return <div>不支持的谜题类型</div>;

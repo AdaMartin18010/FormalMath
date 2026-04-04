@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 最优控制Pontryagin原理推导链
 
 ## 概述
@@ -51,6 +56,7 @@ graph TD
     style B3 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style D2 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style F2 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -178,6 +184,7 @@ $$PA + A^TP - PBR^{-1}B^TP + Q = 0$$
 ## 依赖关系图
 
 ```
+
 变分法基础
     ↓
 Hamiltonian构造 ← 经典力学
@@ -191,6 +198,7 @@ Pontryagin极大值原理 ← 针状变分
 二阶充分条件
     ↓
 特殊问题: Bang-Bang, LQR
+
 ```
 
 ---

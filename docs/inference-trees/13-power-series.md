@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 幂级数性质推导
 
 ## 概述
@@ -8,6 +16,7 @@ graph TD
     subgraph 收敛半径
         A1[幂级数定义Σaₙxⁿ] --> A2[Cauchy-Hadamard]
         A2 --> A3[R=1/limsupⁿ√|aₙ|]
+
         A2 --> A4[比值法求R]
         A3 --> A5[收敛区间]
     end
@@ -45,6 +54,7 @@ graph TD
     
     style A3 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style F2 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 核心定理
@@ -80,7 +90,9 @@ $$R = \frac{1}{\limsup_{n \to \infty} \sqrt[n]{|a_n|}}$$
 $$a_n = \frac{f^{(n)}(0)}{n!}$$
 
 **依赖关系**：
+
 ```
+
 收敛半径定义
     ↓
 内闭一致收敛
@@ -90,4 +102,5 @@ $$a_n = \frac{f^{(n)}(0)}{n!}$$
 系数与导数关系
     ↓
 Taylor展开
+
 ```

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # FormalMath 生成文档索引
 
 **生成时间**: 2026-04-04 12:58:00
@@ -59,9 +67,10 @@ code docs/generated/api/index.md
 
 # 打开HTML版本
 start docs/generated/api/api_reference.html
+
 ```
 
-### 查看概念图谱
+## 查看概念图谱
 
 ```bash
 # 打开交互式可视化
@@ -69,9 +78,10 @@ start docs/generated/concepts/visualization/concept_graph.html
 
 # 查看学习路径
 code docs/generated/concepts/learning_paths.md
+
 ```
 
-### 查看Lean4文档
+## 查看Lean4文档
 
 ```bash
 # 查看定理列表
@@ -79,14 +89,16 @@ code docs/generated/lean4/theorems.md
 
 # 查看覆盖率
 start docs/generated/lean4/lean4_reference.html
+
 ```
 
-### 生成PDF版本
+## 生成PDF版本
 
 ```bash
 # 按照PDF导出指南操作
 # 需要安装pandoc和wkhtmltopdf
 code docs/generated/export/pdf_export_guide.md
+
 ```
 
 ---

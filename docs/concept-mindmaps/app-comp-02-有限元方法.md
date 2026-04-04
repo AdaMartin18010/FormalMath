@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 有限元方法 - 思维导图
 
 ## 概述
@@ -57,6 +62,7 @@ mindmap
       全离散
         隐式/显式
         Crank-Nicolson
+
 ```
 
 ---
@@ -88,6 +94,7 @@ graph TD
     style B fill:#e3f2fd
     style E fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -119,15 +126,20 @@ mindmap
         条件数影响
     a priori估计
       Céa引理
+
         ||u-u_h|| ≤ C inf||u-v_h||
+
       插值误差
+
         ||u-I_hu||_m ≤ Ch^{k+1-m}|u|_{k+1}
+
       收敛阶
         网格细化
         多项式提升
     a posteriori估计
       残差型
         η_K = h_K||f+Δu_h|| + ...
+
       对偶加权
         目标导向
         自适应
@@ -138,6 +150,7 @@ mindmap
       细化
         红绿细化
         悬挂节点
+
 ```
 
 ---
@@ -163,6 +176,7 @@ graph TD
     
     style D fill:#e3f2fd
     style J fill:#e8f5e9
+
 ```
 
 ---
@@ -195,6 +209,7 @@ flowchart LR
     
     style C fill:#e3f2fd
     style G fill:#fff3e0
+
 ```
 
 ---

@@ -162,7 +162,7 @@ export const MathVoiceReader: React.FC<MathVoiceReaderProps> = ({
 
   // 将 LaTeX 转换为可朗读文本
   const convertLatexToReadable = (latex: string): string => {
-    let readable = latex
+    const readable = latex
       // 分数
       .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, '$1 分之 $2')
       // 上标

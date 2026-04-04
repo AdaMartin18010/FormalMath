@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # recommendation_engine
 
 **源文件**: `tools\personalized-recommendation\recommendation_engine.py`
@@ -8,6 +16,7 @@
 
 ```python
 class PathStrategy
+
 ```
 
 路径生成策略
@@ -16,6 +25,7 @@ class PathStrategy
 
 ```python
 class PathNode
+
 ```
 
 路径节点
@@ -24,6 +34,7 @@ class PathNode
 
 ```python
 class LearningPath
+
 ```
 
 学习路径
@@ -32,6 +43,7 @@ class LearningPath
 
 ```python
 class ConceptGraph
+
 ```
 
 概念依赖图 - 基于NetworkX的包装器
@@ -40,6 +52,7 @@ class ConceptGraph
 
 ```python
 class PathScorer
+
 ```
 
 路径评分器
@@ -48,6 +61,7 @@ class PathScorer
 
 ```python
 class RecommendationEngine
+
 ```
 
 个性化学习路径推荐引擎
@@ -58,6 +72,7 @@ class RecommendationEngine
 
 ```python
 def create_sample_graph() -> ConceptGraph
+
 ```
 
 创建示例概念图

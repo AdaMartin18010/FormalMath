@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Navier-Stokes方程存在性与光滑性 - 思维导图
 
 ## 概述
@@ -55,6 +60,7 @@ mindmap
       尺度分析
         能量尺度
         临界空间
+
 ```
 
 ---
@@ -93,6 +99,7 @@ graph TD
     
     style T2 fill:#ffcdd2
     style D1 fill:#ffcdd2
+
 ```
 
 ---
@@ -139,6 +146,7 @@ graph TD
     style D2 fill:#c8e6c9
     style D3 fill:#ffcdd2
     style Diff3 fill:#fff3e0
+
 ```
 
 ---
@@ -185,6 +193,7 @@ mindmap
       统计解
         Hopf方程
         湍流建模
+
 ```
 
 ---
@@ -239,6 +248,7 @@ graph TD
     
     style C fill:#fff3e0
     style S3 fill:#e3f2fd
+
 ```
 
 ---
@@ -277,6 +287,7 @@ mindmap
       临界
         刚好平衡
         核心困难
+
 ```
 
 ---
@@ -316,6 +327,7 @@ graph TD
     
     style S1 fill:#fff3e0
     style S2 fill:#ffcdd2
+
 ```
 
 ---
@@ -365,6 +377,7 @@ graph TD
     
     style O1 fill:#fff3e0
     style M1 fill:#ffcdd2
+
 ```
 
 ---
@@ -410,6 +423,7 @@ flowchart LR
     style M fill:#ffcdd2
     style K fill:#fff3e0
     style L fill:#e8f5e9
+
 ```
 
 ---

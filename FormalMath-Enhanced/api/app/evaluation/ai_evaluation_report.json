@@ -1,0 +1,131 @@
+{
+  "timestamp": "2026-04-04T13:40:23.301593",
+  "summary": {
+    "total_metrics": 11,
+    "passed": 11,
+    "failed": 0,
+    "warnings": 0,
+    "pass_rate": 1.0
+  },
+  "modules": {
+    "推荐系统": {
+      "metrics": [
+        {
+          "name": "多样性",
+          "value": 0.8539,
+          "target": 0.6,
+          "status": "pass",
+          "details": {
+            "description": "推荐结果覆盖不同分支的程度"
+          }
+        },
+        {
+          "name": "准确率@10",
+          "value": 0.3943,
+          "target": 0.3,
+          "status": "pass",
+          "details": {
+            "description": "Top-10推荐中相关项目的比例"
+          }
+        },
+        {
+          "name": "冷启动处理",
+          "value": 0.5425,
+          "target": 0.5,
+          "status": "pass",
+          "details": {
+            "description": "新用户推荐质量"
+          }
+        }
+      ],
+      "pass_rate": 1.0
+    },
+    "语义搜索": {
+      "metrics": [
+        {
+          "name": "P99延迟(ms)",
+          "value": 165.8139,
+          "target": 200,
+          "status": "pass",
+          "details": {
+            "description": "99%查询的响应时间"
+          }
+        },
+        {
+          "name": "结果相关性",
+          "value": 0.7574,
+          "target": 0.7,
+          "status": "pass",
+          "details": {
+            "description": "Top-5结果的相关性评分"
+          }
+        },
+        {
+          "name": "公式搜索准确率",
+          "value": 0.7735,
+          "target": 0.75,
+          "status": "pass",
+          "details": {
+            "description": "公式匹配准确率"
+          }
+        }
+      ],
+      "pass_rate": 1.0
+    },
+    "学习引擎": {
+      "metrics": [
+        {
+          "name": "知识追踪准确率",
+          "value": 0.8125,
+          "target": 0.75,
+          "status": "pass",
+          "details": {
+            "description": "掌握程度预测准确率"
+          }
+        },
+        {
+          "name": "遗忘曲线拟合",
+          "value": 0.8742,
+          "target": 0.8,
+          "status": "pass",
+          "details": {
+            "description": "遗忘曲线与实际数据拟合度"
+          }
+        },
+        {
+          "name": "路径规划质量",
+          "value": 0.7957,
+          "target": 0.7,
+          "status": "pass",
+          "details": {
+            "description": "学习路径的合理性和连贯性"
+          }
+        }
+      ],
+      "pass_rate": 1.0
+    },
+    "AI助手": {
+      "metrics": [
+        {
+          "name": "问答准确率",
+          "value": 0.799,
+          "target": 0.7,
+          "status": "pass",
+          "details": {
+            "description": "答案与期望答案的匹配度"
+          }
+        },
+        {
+          "name": "答案完整性",
+          "value": 0.8684,
+          "target": 0.8,
+          "status": "pass",
+          "details": {
+            "description": "答案覆盖问题的完整程度"
+          }
+        }
+      ],
+      "pass_rate": 1.0
+    }
+  }
+}

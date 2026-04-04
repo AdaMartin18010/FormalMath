@@ -203,7 +203,7 @@ export class LeanCodeGenerator {
   private generateStructuredStyle(steps: ProofStep[]): string {
     const indent = ' '.repeat(this.options.indentation);
     const lines: string[] = [];
-    let currentIndent = indent;
+    const currentIndent = indent;
     let indentLevel = 1;
 
     const pushLine = (content: string, level: number = indentLevel) => {

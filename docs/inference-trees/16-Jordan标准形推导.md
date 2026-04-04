@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Jordan标准形推导
 
 ## 核心定理陈述
@@ -19,6 +24,7 @@ graph TD
     D --> E[空间分解<br/>ℂⁿ = ⊕ G_{λᵢ}]
     
     E --> F[幂零算子<br/>N = A|G_λ - λI]
+
     F --> G[循环子空间<br/>⟨v, Nv, N²v, ...⟩]
     
     G --> H[循环基<br/>每个Jordan块对应]
@@ -32,6 +38,7 @@ graph TD
     
     style J fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:1px
+
 ```
 
 ---
@@ -56,6 +63,7 @@ graph TD
     E[几何重数] --> F[J_kλ的几何重数 = 1<br/>特征空间1维]
     F --> G[代数重数 = k]
     G --> H[可对角化 ⇔ k=1]
+
 ```
 
 ---
@@ -85,6 +93,7 @@ graph TD
     E --> F[V = ⊕ Wᵢ]
     
     style F fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 ### 步骤3：构造Jordan基
@@ -112,6 +121,7 @@ graph TD
     I --> J[Jordan块 ↔ 初等因子]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 ### 计数公式
@@ -134,6 +144,7 @@ graph TD
     E[幂零指数] --> F[最大块大小 = 3]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 ### 例子2：具体计算
@@ -162,6 +173,7 @@ graph LR
     D --> H[e^{J_kλ} = e^λ e^{N}]
     
     style J fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 ### 矩阵函数计算
@@ -188,6 +200,7 @@ graph TD
     
     style A fill:#bbf,stroke:#333,stroke-width:1px
     style E fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 ---

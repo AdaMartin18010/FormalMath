@@ -35,6 +35,7 @@ msc_primary: "00A99"
 ```bash
 cd project
 python global_dependency_graph.py
+
 ```
 
 ### 使用Python API
@@ -60,6 +61,7 @@ sorted_ids = topological_sort_kahn(graph)
 # 生成学习路径
 generator = LearningPathGenerator(graph)
 path = generator.generate_path(["C017"], DifficultyLevel.INTERMEDIATE)
+
 ```
 
 ---
@@ -67,6 +69,7 @@ path = generator.generate_path(["C017"], DifficultyLevel.INTERMEDIATE)
 ## 文件结构
 
 ```
+
 docs/00-全局学习路径/
 ├── README.md                          # 本文件
 └── 01-概念前置知识全局图谱.md          # 详细文档（约15,000字）
@@ -86,6 +89,7 @@ output/                                # 生成文件（运行后）
 ├── mermaid_number_theory.md           # 数论子图
 ├── mermaid_discrete.md                # 离散数学子图
 └── mermaid_interdisciplinary.md       # 交叉领域子图
+
 ```
 
 ---

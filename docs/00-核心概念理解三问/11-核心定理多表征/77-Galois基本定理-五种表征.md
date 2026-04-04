@@ -32,6 +32,7 @@ $$\{\text{中间域 } E: K \subseteq E \subseteq L\} \longleftrightarrow \{\text
 
 对应关系：
 - **中间域 → 子群**：$E \mapsto \operatorname{Gal}(L/E) = \{g \in G: g|_E = \operatorname{id}_E\}$
+
 - **子群 → 中间域**：$H \mapsto L^H = \{x \in L: h(x) = x \text{ 对所有 } h \in H\}$
 
 ### 1.2 基本性质
@@ -39,6 +40,7 @@ $$\{\text{中间域 } E: K \subseteq E \subseteq L\} \longleftrightarrow \{\text
 在Galois对应下：
 
 1. **度对应**：$[L:E] = |H|$，$[E:K] = [G:H]$
+
 2. **正规性**：$E/K$ 正规 ⟺ $H \triangleleft G$（$H$ 正规于 $G$）
 3. **复合对应**：$E_1 \cap E_2 \leftrightarrow \langle H_1, H_2 \rangle$，$E_1E_2 \leftrightarrow H_1 \cap H_2$
 
@@ -66,6 +68,7 @@ K ──────────── G
 - L ↔ {e}（单位子群）
 - K ↔ G（整个群）
 - 包含关系反转
+
 ```
 
 ### 2.2 子群格
@@ -90,6 +93,7 @@ K ──────────── G
      ├─ E₂  E₃
      │  │   │
      └──┴───┴─ K
+
 ```
 
 ### 2.3 度对应
@@ -98,9 +102,11 @@ K ──────────── G
 度与指数的对应：
 
     [L:E] = |H|（子群阶）
+
     [E:K] = [G:H]（指数）
     
     总度：[L:K] = |G| = |H| × [G:H]
+
 ```
 
 ---
@@ -208,9 +214,10 @@ def find_intermediate_fields(L, K):
 # 子群 {id, σ} ↔ 中间域 Q(√3)
 # 子群 {id, τ} ↔ 中间域 Q(√2)
 # 子群 {id, στ} ↔ 中间域 Q(√6)
+
 ```
 
-### 4.2 验证Galois对应
+## 4.2 验证Galois对应
 
 ```python
 def verify_galois_correspondence(L, K):
@@ -259,6 +266,7 @@ def verify_galois_correspondence(L, K):
         'num_subgroups': len(subgroups),
         'num_intermediate_fields': len(intermediate_fields)
     }
+
 ```
 
 ### 4.3 应用：求解方程
@@ -301,6 +309,7 @@ def solve_by_galois_theory(polynomial, base_field):
         'solvable': solvable_chain is not None,
         'solutions': solutions
     }
+
 ```
 
 ---

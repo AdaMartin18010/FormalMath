@@ -2,6 +2,9 @@
 msc_primary: "03F30"
 msc_secondary: ['11Axx', '03E30', '03E15']
 ---
+msc_primary: "03F30"
+msc_secondary: ['11Axx', '03E30', '03E15']
+---
 
 # ZFC公理体系完整形式化 - 自然数构造详细版
 
@@ -81,6 +84,7 @@ $$\mathbb{N} = \{0, 1, 2, 3, \ldots\}$$
 (2) 定义 N = ∩{x : x 是归纳集合}
 (3) 由分离公理，N 存在
 (4) N 包含所有自然数
+
 ```
 
 #### 1.2 自然数的基本性质
@@ -100,6 +104,7 @@ $$\forall n \in \mathbb{N} \forall x \in n(x \subseteq n)$$
    - 如果 x = n，则 x ⊆ n+1
    - 因此 n+1 是传递的
 (4) 由数学归纳法，所有自然数都是传递的
+
 ```
 
 **定理 1.2.2** (自然数的良序性)
@@ -112,6 +117,7 @@ $$\forall n \in \mathbb{N} \forall x \in n(x \subseteq n)$$
 (1) 线性序：对于任意 m, n ∈ N，要么 m ∈ n，要么 m = n，要么 n ∈ m
 (2) 良序：每个非空自然数子集都有最小元素
 (3) 由正则公理和自然数的传递性得到
+
 ```
 
 ### 2. 自然数的序关系
@@ -138,6 +144,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
 (2) 反对称性：如果 m ⊆ n 和 n ⊆ m，则 m = n
 (3) 传递性：如果 m ⊆ n 和 n ⊆ p，则 m ⊆ p
 (4) 完全性：由良序性得到
+
 ```
 
 #### 2.2 序关系的代数性质
@@ -161,6 +168,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
    - 对于 p = 1，显然成立
    - 假设对于 p 成立，证明对于 p+1 成立
    - 使用乘法的递归定义
+
 ```
 
 ### 3. 自然数运算
@@ -202,6 +210,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
    - 假设对于 p 成立，证明对于 p+1 成立
    - 如果 m + (p+1) = n + (p+1)，则 (m+p) + 1 = (n+p) + 1
    - 因此 m+p = n+p，由归纳假设 m = n
+
 ```
 
 #### 3.2 乘法运算
@@ -242,6 +251,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
    - 对于 p = 0，显然成立
    - 假设对于 p 成立，证明对于 p+1 成立
    - m · (n + (p+1)) = m · ((n+p) + 1) = m·(n+p) + m = (m·n + m·p) + m = m·n + (m·p + m) = m·n + m·(p+1)
+
 ```
 
 ### 4. 数学归纳法
@@ -267,6 +277,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
 (5) 因此 A 是归纳集合
 (6) 由于 N 是最小的归纳集合，N ⊆ A
 (7) 所以对于所有 n ∈ N，P(n) 成立
+
 ```
 
 #### 4.2 强归纳法
@@ -287,6 +298,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
 (4) 特别地，对于 n = 0，由于没有 k < 0，0 ∈ A
 (5) 因此 A = N
 (6) 所以对于所有 n ∈ N，P(n) 成立
+
 ```
 
 ### 5. 自然数的唯一性
@@ -314,6 +326,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
 (3) 0 不是任何自然数的后继，因为 0 = ∅，而每个后继都包含其前驱
 (4) 如果 m+1 = n+1，则 m ∪ {m} = n ∪ {n}，因此 m = n
 (5) 数学归纳法原理已证明
+
 ```
 
 #### 5.2 自然数系统的唯一性
@@ -332,6 +345,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
 (3) 证明 f 是双射
 (4) 证明 f 保持运算
 (5) 因此 N₁ ≅ N₂
+
 ```
 
 ### 6. 自然数的应用
@@ -349,6 +363,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
 (2) 序数理论：自然数作为有限序数
 (3) 递归定义：自然数支持递归定义
 (4) 归纳证明：自然数支持归纳证明
+
 ```
 
 **应用案例 6.1.1** (自然数在基数理论中的应用)
@@ -382,6 +397,7 @@ $$m \leq n \leftrightarrow m \in n \lor m = n$$
 (2) 素数理论：基于自然数的素数概念
 (3) 同余理论：基于自然数的同余关系
 (4) 数论函数：基于自然数的数论函数
+
 ```
 
 **应用案例 6.2.1** (自然数在整除理论中的应用)
@@ -490,6 +506,7 @@ def succ (n : Set α) : Set α := n ∪ {n}
 -- 冯·诺伊曼序数定义
 -- Von Neumann ordinal definition
 def vonNeumannOrdinal : ℕ → Set (Set α)
+
   | 0 => Empty
   | n + 1 => succ (vonNeumannOrdinal n)
 
@@ -519,6 +536,7 @@ begin
   -- Prove well-ordering of natural numbers
   sorry
 end
+
 ```
 
 ### 自然数运算形式化
@@ -529,12 +547,14 @@ namespace Natural
 -- 加法运算（递归定义）
 -- Addition operation (recursive definition)
 def add : Natural → Natural → Natural
+
   | n, 0 => n
   | n, succ m => succ (add n m)
 
 -- 乘法运算（递归定义）
 -- Multiplication operation (recursive definition)
 def mul : Natural → Natural → Natural
+
   | n, 0 => 0
   | n, succ m => add (mul n m) n
 
@@ -587,6 +607,7 @@ begin
 end
 
 end Natural
+
 ```
 
 ### 数学归纳法形式化
@@ -630,6 +651,7 @@ begin
 end
 
 end Natural
+
 ```
 
 ### 皮亚诺公理形式化
@@ -668,6 +690,7 @@ begin
   -- Prove uniqueness of natural number system
   sorry
 end
+
 ```
 
 ### 应用案例：自然数在计算机科学中的应用
@@ -676,21 +699,25 @@ end
 -- 自然数在递归函数中的应用
 -- Application of natural numbers in recursive functions
 def factorial : Natural → Natural
+
   | 0 => 1
   | succ n => mul (succ n) (factorial n)
 
 -- 自然数在数据结构中的应用
 -- Application of natural numbers in data structures
 def list_length {α : Type} : List α → Natural
+
   | [] => 0
   | _ :: xs => succ (list_length xs)
 
 -- 自然数在算法复杂度中的应用
 -- Application of natural numbers in algorithm complexity
 def fibonacci : Natural → Natural
+
   | 0 => 0
   | 1 => 1
   | succ (succ n) => add (fibonacci (succ n)) (fibonacci n)
+
 ```
 
 ## 术语对照表 / Terminology Table

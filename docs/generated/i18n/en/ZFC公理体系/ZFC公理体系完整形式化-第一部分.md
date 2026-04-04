@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: [🇨🇳 中文](../zh/ZFC公理体系\ZFC公理体系完整形式化-第一部分.md) | **🇬🇧 English**
@@ -112,6 +117,7 @@ Theorem 2.1.1 (外延公理的等价形式)
 Proof：
 (1) 从左到右：由外延公理直接得到
 (2) 从右到左：由等词的自反性得到
+
 ```
 
 #### 2.2 空集公理 (Axiom of Empty Set)
@@ -130,6 +136,7 @@ Theorem 2.2.1 (空集的唯一性)
 Proof：
 (1) 存在性：由空集公理
 (2) 唯一性：由外延公理，如果存在两个空集，它们必须相等
+
 ```
 
 **符号Definition**：
@@ -151,6 +158,7 @@ Theorem 2.3.1 (配对集合的唯一性)
 Proof：
 (1) 存在性：由配对公理
 (2) 唯一性：由外延公理
+
 ```
 
 **符号Definition**：
@@ -172,6 +180,7 @@ Theorem 2.4.1 (并集的唯一性)
 Proof：
 (1) 存在性：由并集公理
 (2) 唯一性：由外延公理
+
 ```
 
 **符号Definition**：
@@ -195,6 +204,7 @@ Theorem 2.5.1 (幂集的唯一性)
 Proof：
 (1) 存在性：由幂集公理
 (2) 唯一性：由外延公理
+
 ```
 
 **符号Definition**：
@@ -217,6 +227,7 @@ Proof：
 (1) 由无穷公理，存在一个归纳集合
 (2) 自然数集合是所有归纳集合的交集
 (3) 由分离公理，这个交集存在
+
 ```
 
 #### 2.7 分离公理Module式 (Axiom Schema of Separation)
@@ -235,6 +246,7 @@ Theorem 2.7.1 (分离集合的唯一性)
 
 Proof：
 由外延公理直接得到
+
 ```
 
 #### 2.8 替换公理Module式 (Axiom Schema of Replacement)
@@ -253,6 +265,7 @@ Theorem 2.8.1 (替换集合的唯一性)
 
 Proof：
 由外延公理直接得到
+
 ```
 
 #### 2.9 正则公理 (Axiom of Regularity)
@@ -271,6 +284,7 @@ Theorem 2.9.1 (正则公理的等价形式)
 Proof：
 (1) 从左到右：由正则公理和集合运算
 (2) 从右到左：直接得到
+
 ```
 
 #### 2.10 选择公理 (Axiom of Choice)
@@ -289,6 +303,7 @@ Theorem 2.10.1 (选择公理的等价形式)
 Proof：
 (1) 由选择公理和超限归纳
 (2) 构造良序关系
+
 ```
 
 ### 3. 基本Theorem的形式化Proof
@@ -305,6 +320,7 @@ Proof：
 (1) 由配对公理，{x,y} 和 {y,x} 都存在
 (2) 由外延公理，它们包含相同的元素
 (3) 因此 {x,y} = {y,x}
+
 ```
 
 **Theorem 3.1.2** (并集运算的结合律)
@@ -317,6 +333,7 @@ Proof：
 (1) 由配对公理和并集公理
 (2) 展开Definition
 (3) 使用外延公理Proof相等
+
 ```
 
 #### 3.2 序对的Definition
@@ -338,6 +355,7 @@ Proof：
    - 如果 x ≠ y，则 {x} ≠ {x,y}
    - 因此 {x} = {u} 且 {x,y} = {u,v}
    - 所以 x = u 且 y = v
+
 ```
 
 ### 4. 自然数的构造
@@ -360,6 +378,7 @@ Proof：
 (2) Definition N = ∩{x : x 是归纳集合}
 (3) 由分离公理，N 存在
 (4) N 包含所有自然数
+
 ```
 
 #### 4.2 数学归纳法
@@ -376,6 +395,7 @@ Proof：
 (3) A 是归纳集合
 (4) 因此 N ⊆ A
 (5) 所以 ∀n P(n)
+
 ```
 
 ### 5. ZFC公理体系的应用
@@ -684,6 +704,7 @@ begin
   -- Prove Zorn's lemma (requires axiom of choice)
   sorry
 end
+
 ```
 
 ### 基本Theorem形式化
@@ -905,6 +926,7 @@ theorem cartesian_product_properties (A B : Set α) (p : Set (Set α)) :
 begin
   refl
 end
+
 ```
 
 ### 应用案例：ZFC公理体系在类型理论中的应用
@@ -923,6 +945,7 @@ structure TypeAsSet (α : Type) where
 -- Function type
 def FunctionType (A B : Set α) : Set (Set (Set (Set α))) :=
   {f : Set (Set (Set α)) |
+
     f ⊆ CartesianProduct A B ∧
     (∀ x ∈ A, ∃! y ∈ B, OrderedPair x y ∈ f)}
 
@@ -930,7 +953,9 @@ def FunctionType (A B : Set α) : Set (Set (Set (Set α))) :=
 -- Dependent type
 def DependentType (A : Set α) (B : α → Set α) : Set (Set (Set α)) :=
   {p : Set (Set α) |
+
     ∃ x ∈ A, ∃ y ∈ B x, p = OrderedPair x y}
+
 ```
 
 ## 术语对照表 / Terminology Table

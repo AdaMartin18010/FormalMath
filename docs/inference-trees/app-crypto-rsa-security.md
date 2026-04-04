@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # RSA安全性推导链
 
 ## 概述
@@ -33,6 +38,7 @@ graph TD
         C3 --> D1[Feistel网络<br/>两轮]
         D1 --> D2[随机预言机<br/>G, H]
         D2 --> D3[填充结构<br/>s||t]
+
         D3 --> D4[可证明安全<br/>ROM下IND-CCA2]
     end
     
@@ -54,6 +60,7 @@ graph TD
     style C4 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style D4 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style E4 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -125,6 +132,7 @@ $$\text{OAEP}(m, r) = s \| t$$
 - $G$: 随机预言机（扩展函数）
 - $H$: 随机预言机（压缩函数）
 - $s = (m \| 0^{k_1}) \oplus G(r)$
+
 - $t = r \oplus H(s)$
 
 **加密**：$c = \text{RSA}(\text{OAEP}(m, r)) = (\text{OAEP}(m, r))^e \mod n$
@@ -138,12 +146,15 @@ OAEP-RSA在随机预言机模型（ROM）下是IND-CCA2安全的。
 **时序攻击（Kocher, 1996）**：
 
 简单模幂算法：
+
 ```
+
 result = 1
 for each bit of d:
     if bit == 1:
         result = result * base mod n
     base = base^2 mod n
+
 ```
 
 比特为1时多一次乘法，可通过计时推断私钥比特。
@@ -151,12 +162,15 @@ for each bit of d:
 **防护**：
 
 1. **Montgomery Ladder**（固定时间）：
+
 ```
+
 R[0] = 1
 R[1] = base
 for i from k-1 downto 0:
     R[1-bit_i] = R[0] * R[1] mod n
     R[bit_i] = R[bit_i]^2 mod n
+
 ```
 
 2. **幂盲化**：计算 $c^{d + r\phi(n)} \mod n = c^d \mod n$
@@ -198,6 +212,7 @@ for i from k-1 downto 0:
 ## 依赖关系图
 
 ```
+
 数论基础 ← 模运算、欧拉定理
     ↓
 RSA算法构造
@@ -211,6 +226,7 @@ OAEP填充 ← 随机预言机
 IND-CCA2安全
     ↓
 侧信道防护 ← 实现安全
+
 ```
 
 ---

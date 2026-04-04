@@ -53,6 +53,7 @@ $$\forall (M, g) \text{ 黎曼流形 }, \exists f: M \hookrightarrow \mathbb{R}^
     f*g_std = g
     
     流形"无形变"地放入欧氏空间
+
 ```
 
 ### 2.2 维度估计
@@ -66,6 +67,7 @@ $$\forall (M, g) \text{ 黎曼流形 }, \exists f: M \hookrightarrow \mathbb{R}^
     例子：
     m=1: N ≥ 2 (C¹), N ≤ 22 (C^∞)
     m=2: N ≥ 3 (C¹), N ≤ 50 (C^∞)
+
 ```
 
 ### 2.3 度量的保持
@@ -78,6 +80,7 @@ $$\forall (M, g) \text{ 黎曼流形 }, \exists f: M \hookrightarrow \mathbb{R}^
     内蕴几何 = 外在几何
     
     流形"不扭曲"地嵌入
+
 ```
 
 ---
@@ -173,6 +176,7 @@ def compute_jacobian(f, p):
         J[:, i] = (f(p_plus) - f(p)) / h
     
     return J
+
 ```
 
 ### 4.2 构造嵌入
@@ -237,6 +241,7 @@ def construct_from_metric(coords, metric, N):
     # 实际构造需要Nash的技巧
     
     return embedded
+
 ```
 
 ### 4.3 应用：可视化
@@ -276,6 +281,7 @@ def visualize_riemannian_manifold(M, g, embedding_dim=3):
         # 高维流形，需要降维可视化
         # 使用PCA或其他降维方法
         pass
+
 ```
 
 ---

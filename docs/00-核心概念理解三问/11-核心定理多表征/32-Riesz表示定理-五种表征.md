@@ -48,6 +48,7 @@ theorem riesz_representation {H : Type*} [NormedAddCommGroup H]
     [InnerProductSpace ℂ H] [CompleteSpace H] (f : H →L[ℂ] ℂ) :
     ∃! y : H, ∀ x : H, f x = ⟪x, y⟫ := by
   exact InnerProductSpace.toDualEquiv.surjective f
+
 ```
 
 ---
@@ -64,6 +65,7 @@ Hilbert空间H中：
     x ───→ y的方向上的投影 × ‖y‖
 
     y是f的"表示元"
+
 ```
 
 ### 2.2 正交分解
@@ -77,6 +79,7 @@ H = ker(f) ⊕ span{y}
     │ ╱  f(x) = ⟨x,y⟩
     │╱
     ├────────ker(f)
+
 ```
 
 ---
@@ -131,9 +134,10 @@ x = np.array([1, 2, 3])
 f_x = sum(f_values[i] * x[i] for i in range(n))
 inner_product = np.dot(x, np.conj(y))
 print(f"f(x) = {f_x}, ⟨x,y⟩ = {inner_product}")
+
 ```
 
-### 4.2 测度版本的应用
+## 4.2 测度版本的应用
 
 ```python
 from scipy import integrate
@@ -155,6 +159,7 @@ def riesz_measure_example():
     # 这对应于[0,1]上的Lebesgue测度
 
 riesz_measure_example()
+
 ```
 
 ---
@@ -168,6 +173,7 @@ Riesz表示 = Hilbert空间的自对偶性
 ├─ H ≅ H* (等距同构)
 ├─ 对偶函子在Hilbert空间上"平凡"
 └─ 内积给出自然同构
+
 ```
 
 ### 5.2 推广
@@ -183,6 +189,7 @@ Riesz表示定理是核心：
 ├─ 谱定理的基础
 ├─ 量子力学的数学基础
 └─ 变分法的理论根基
+
 ```
 
 ---

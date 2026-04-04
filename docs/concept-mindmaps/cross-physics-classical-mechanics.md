@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×物理学：经典力学中的数学
 
 ## 概述
@@ -81,6 +86,7 @@ mindmap
       对称性破缺
         Goldstone模式
         分岔理论
+
 ```
 
 ---
@@ -116,6 +122,7 @@ graph LR
     style D1 fill:#e3f2fd
     style E fill:#e8f5e9
     style E1 fill:#e8f5e9
+
 ```
 
 ---
@@ -156,6 +163,7 @@ mindmap
       [Gᵢ,Gⱼ] = fᵢⱼₖGₖ
       Lie代数结构
       量子化对应
+
 ```
 
 ---
@@ -177,6 +185,7 @@ timeline
           : 近可积系统稳定性
     1970s : Marsden-Weinstein约化
           : 对称性与几何
+
 ```
 
 ---

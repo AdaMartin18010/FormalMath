@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "06 Lean4形式化实现 环论"
 msc_primary: ["68V20"]
@@ -34,7 +39,7 @@ msc_secondary: ["13A99", "03B35"]
 本文档提供环论核心概念和定理的Lean4形式化实现，包括环的定义、理想、商环、多项式环、主理想环、欧几里得环等。
 所有实现都基于国际标准数学定义，确保形式化验证的严谨性。
 
-## 1. 环的基本定义
+## 一、环的基本定义
 
 ### 1.1 环的定义
 
@@ -97,6 +102,7 @@ instance (n : ℕ) : Ring (ZMod n) where
   one_mul := by intros; simp [mul, one, Nat.mod_one]
   left_distrib := by intros; simp [add, mul, Nat.mul_add, Nat.mod_add]
   right_distrib := by intros; simp [add, mul, Nat.add_mul, Nat.mod_add]
+
 ```
 
 ### 1.2 环的基本性质
@@ -129,6 +135,7 @@ theorem mul_neg {R : Type*} [Ring R] (a b : R) : neg (mul a b) = mul a (neg b) :
 
 -- 幂运算
 def pow {R : Type*} [Ring R] (a : R) : ℕ → R
+
   | 0 => one
   | n + 1 => mul a (pow a n)
 
@@ -138,11 +145,13 @@ theorem pow_succ {R : Type*} [Ring R] (a : R) (n : ℕ) : pow a (n + 1) = mul a 
 
 theorem pow_add {R : Type*} [Ring R] (a : R) (m n : ℕ) : pow a (m + n) = mul (pow a m) (pow a n) := by
   induction n with
+
   | zero => simp [pow_zero, mul_one]
   | succ n ih => simp [pow_succ, ih, mul_assoc]
+
 ```
 
-## 2. 理想
+## 二、理想
 
 ### 2.1 理想的定义
 
@@ -199,16 +208,21 @@ theorem principal_ideal_is_ideal {R : Type*} [Ring R] (a : R) : Ideal R (princip
   · intros x y hx hy
     cases hx with | intro rx hx =>
     cases hy with | intro ry hy =>
+
     exact ⟨add rx ry, by rw [hx, hy, right_distrib]⟩
   · intros x hx
     cases hx with | intro r hx =>
+
     exact ⟨neg r, by rw [hx, neg_mul]⟩
   · intros x r hx
     cases hx with | intro rx hx =>
+
     exact ⟨mul r rx, by rw [hx, mul_assoc]⟩
   · intros x r hx
     cases hx with | intro rx hx =>
+
     exact ⟨mul rx r, by rw [hx, mul_assoc]⟩
+
 ```
 
 ### 2.2 理想的性质
@@ -227,6 +241,7 @@ theorem Ideal.inter_is_ideal {R : Type*} [Ring R] (I J : Set R) (hI : Ideal R I)
   constructor
   · cases hI.1 with | intro a ha =>
     cases hJ.1 with | intro b hb =>
+
     exact ⟨zero, ⟨hI.2.2.2.1 zero ha, hJ.2.2.2.1 zero hb⟩⟩
   · intros a b ha hb
     exact ⟨hI.2.1 a b ha.1 hb.1, hJ.2.1 a b ha.2 hb.2⟩
@@ -248,23 +263,28 @@ theorem Ideal.sum_is_ideal {R : Type*} [Ring R] (I J : Set R) (hI : Ideal R I) (
   · intros x y hx hy
     cases hx with | intro ax bx hax hbx hx =>
     cases hy with | intro ay by hay hby hy =>
+
     exact ⟨add ax ay, add bx by, hI.2.1 ax ay hax hay, hJ.2.1 bx by hbx hby,
            by rw [hx, hy, add_assoc, add_assoc, add_comm bx ay]⟩
   · intros x hx
     cases hx with | intro a b ha hb hx =>
+
     exact ⟨neg a, neg b, hI.2.2.1 a ha, hJ.2.2.1 b hb,
            by rw [hx, neg_mul, neg_mul, add_comm]⟩
   · intros x r hx
     cases hx with | intro a b ha hb hx =>
+
     exact ⟨mul r a, mul r b, hI.2.2.2.1 a r ha, hJ.2.2.2.1 b r hb,
            by rw [hx, right_distrib]⟩
   · intros x r hx
     cases hx with | intro a b ha hb hx =>
+
     exact ⟨mul a r, mul b r, hI.2.2.2.2 a r ha, hJ.2.2.2.2 b r hb,
            by rw [hx, left_distrib]⟩
+
 ```
 
-## 3. 商环
+## 三、商环
 
 ### 3.1 商环的构造
 
@@ -335,6 +355,7 @@ instance {R : Type*} [Ring R] (I : Set R) (hI : Ideal R I) : Ring (QuotientRing 
   one_mul := by intros; apply Quot.induction_on; simp
   left_distrib := by intros; apply Quot.induction_on₃; simp [left_distrib]
   right_distrib := by intros; apply Quot.induction_on₃; simp [right_distrib]
+
 ```
 
 ### 3.2 商环的性质
@@ -369,9 +390,10 @@ theorem QuotientRing.add_eq {R : Type*} [Ring R] (I : Set R) (hI : Ideal R I) (a
 -- 商环的乘法性质
 theorem QuotientRing.mul_eq {R : Type*} [Ring R] (I : Set R) (hI : Ideal R I) (a b : R) :
   QuotientRing.mul I hI (QuotientRing.mk I hI a) (QuotientRing.mk I hI b) = QuotientRing.mk I hI (mul a b) := rfl
+
 ```
 
-## 4. 多项式环
+## 四、多项式环
 
 ### 4.1 多项式环的定义
 
@@ -387,12 +409,14 @@ def Polynomial.one {R : Type*} [Ring R] : Polynomial R := [one]
 
 -- 多项式的加法
 def Polynomial.add {R : Type*} [Ring R] : Polynomial R → Polynomial R → Polynomial R
+
   | [], q => q
   | p, [] => p
   | (a :: p), (b :: q) => (add a b) :: Polynomial.add p q
 
 -- 多项式的乘法
 def Polynomial.mul {R : Type*} [Ring R] : Polynomial R → Polynomial R → Polynomial R
+
   | [], _ => []
   | _, [] => []
   | [a], [b] => [mul a b]
@@ -401,6 +425,7 @@ def Polynomial.mul {R : Type*} [Ring R] : Polynomial R → Polynomial R → Poly
 
 -- 多项式的负元
 def Polynomial.neg {R : Type*} [Ring R] : Polynomial R → Polynomial R
+
   | [] => []
   | (a :: p) => (neg a) :: Polynomial.neg p
 
@@ -420,6 +445,7 @@ instance {R : Type*} [Ring R] : Ring (Polynomial R) where
   one_mul := by intros; induction a <;> simp [Polynomial.mul, one_mul]
   left_distrib := by intros; induction a <;> simp [Polynomial.mul, Polynomial.add, left_distrib, *]
   right_distrib := by intros; induction a <;> induction b <;> simp [Polynomial.mul, Polynomial.add, right_distrib, *]
+
 ```
 
 ### 4.2 多项式的性质
@@ -427,17 +453,20 @@ instance {R : Type*} [Ring R] : Ring (Polynomial R) where
 ```lean
 -- 多项式的次数
 def Polynomial.degree {R : Type*} [Ring R] : Polynomial R → ℕ
+
   | [] => 0
   | (_ :: p) => 1 + Polynomial.degree p
 
 -- 多项式的首项系数
 def Polynomial.leading_coeff {R : Type*} [Ring R] : Polynomial R → R
+
   | [] => zero
   | (a :: _) => a
 
 -- 多项式的求值
 def Polynomial.eval {R : Type*} [Ring R] (p : Polynomial R) (x : R) : R :=
   match p with
+
   | [] => zero
   | (a :: q) => add a (mul x (Polynomial.eval q x))
 
@@ -445,24 +474,31 @@ def Polynomial.eval {R : Type*} [Ring R] (p : Polynomial R) (x : R) : R :=
 theorem Polynomial.eval_add {R : Type*} [Ring R] (p q : Polynomial R) (x : R) :
   Polynomial.eval (Polynomial.add p q) x = add (Polynomial.eval p x) (Polynomial.eval q x) := by
   induction p generalizing q with
+
   | nil => simp [Polynomial.eval, Polynomial.add]
   | cons a p ih =>
+
     cases q with
+
     | nil => simp [Polynomial.eval, Polynomial.add]
     | cons b q =>
+
       simp [Polynomial.eval, Polynomial.add, add_assoc, left_distrib]
       rw [ih]
 
 theorem Polynomial.eval_mul {R : Type*} [Ring R] (p q : Polynomial R) (x : R) :
   Polynomial.eval (Polynomial.mul p q) x = mul (Polynomial.eval p x) (Polynomial.eval q x) := by
   induction p with
+
   | nil => simp [Polynomial.eval, Polynomial.mul]
   | cons a p ih =>
+
     simp [Polynomial.eval, Polynomial.mul, right_distrib, left_distrib]
     rw [ih, add_assoc, add_comm (mul a (Polynomial.eval q x)), ← add_assoc]
+
 ```
 
-## 5. 主理想环
+## 五、主理想环
 
 ### 5.1 主理想环的定义
 
@@ -494,6 +530,7 @@ theorem EuclideanRing.is_principal_ideal_ring {R : Type*} [EuclideanRing R] :
   · intros I hI
     -- 使用欧几里得算法构造生成元
     sorry
+
 ```
 
 ### 5.2 唯一分解环
@@ -525,9 +562,10 @@ theorem PrincipalIdealRing.irreducible_is_prime {R : Type*} [PrincipalIdealRing 
   · intros b c habc
     -- 使用主理想的性质证明
     sorry
+
 ```
 
-## 6. 总结
+## 六、总结
 
 本文档提供了环论核心概念和定理的完整Lean4形式化实现，包括：
 
@@ -539,7 +577,7 @@ theorem PrincipalIdealRing.irreducible_is_prime {R : Type*} [PrincipalIdealRing 
 
 所有实现都严格遵循国际标准数学定义，确保形式化验证的严谨性和正确性。
 
-## 7. 参考文献
+## 七、参考文献
 
 1. Dummit, D. S., & Foote, R. M. (2004). Abstract algebra. John Wiley & Sons.
 2. Atiyah, M. F., & Macdonald, I. G. (1969). Introduction to commutative algebra. Addison-Wesley.

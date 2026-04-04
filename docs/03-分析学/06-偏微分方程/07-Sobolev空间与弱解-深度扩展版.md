@@ -75,6 +75,7 @@ $$-\frac{d}{dx}F_p + F_u = 0$$
 **Dirichlet原理的争议**：
 
 - **Dirichlet (1850s)**：认为通过最小化能量泛函 $J(u) = \int |\nabla u|^2$ 可求得Laplace方程的解
+
 - **Weierstrass (1870)**：批评Dirichlet原理缺乏严格性，因为下确界可能不被达到
 - **Hilbert (1900)**：将Dirichlet问题列为第20问题，推动变分法的严格化
 
@@ -132,6 +133,7 @@ $$W^{k,p}(\Omega) = \{u \in L^p(\Omega) : D^\alpha u \in L^p(\Omega), \forall |\
 $$\|u\|_{W^{k,p}(\Omega)} = \begin{cases}
 \left(\sum_{|\alpha| \leq k} \|D^\alpha u\|_{L^p}^p\right)^{1/p} & 1 \leq p < \infty \\
 \max_{|\alpha| \leq k} \|D^\alpha u\|_{L^\infty} & p = \infty
+
 \end{cases}$$
 
 **重要特例**：
@@ -172,6 +174,7 @@ $$\int_\Omega u \frac{\partial \phi}{\partial x_i} \, dx = -\int_\Omega v \phi \
 
 **例子 2.3**：
 设 $u(x) = |x|$ on $(-1,1)$，则：
+
 $$u'(x) = \begin{cases} -1 & x < 0 \\ 1 & x > 0 \end{cases} = \text{sgn}(x)$$
 
 验证：对任意 $\phi \in C_c^\infty(-1,1)$：
@@ -287,6 +290,7 @@ $$a(u,v) = \langle f, v \rangle, \quad \forall v \in H$$
 1. 对每个固定的 $u$，$v \mapsto a(u,v)$ 是有界线性泛函
 2. 由Riesz表示定理，存在 $Au \in H$ 使得 $a(u,v) = (Au, v)$
 3. 证明 $A: H \to H$ 是有界线性算子，且 $\|Au\| \geq \alpha\|u\|$
+
 4. 证明 $A$ 是满射（利用值域闭且稠密）
 5. 由Banach逆算子定理，$A$ 可逆
 
@@ -329,6 +333,7 @@ $$u_m = \sum_{k=1}^m c_k^m w_k$$
 **证明要点**：
 
 1. 先验估计：由强制性，$\|u_m\|_{H^1} \leq C$
+
 2. 紧性：有界序列有弱收敛子列
 3. 极限满足弱解定义
 
@@ -339,6 +344,7 @@ $$u_m = \sum_{k=1}^m c_k^m w_k$$
 ### 弱解存在性证明的思维路径
 
 ```
+
 [弱解存在性证明]
        │
        ├─► 问题设置
@@ -352,6 +358,7 @@ $$u_m = \sum_{k=1}^m c_k^m w_k$$
        ├─► 检验Lax-Milgram条件
        │       │
        │       ├─► 有界性: |a(u,v)| ≤ M‖u‖‖v‖
+
        │       │       │
        │       │       ├─► 系数有界
        │       │       │
@@ -360,8 +367,10 @@ $$u_m = \sum_{k=1}^m c_k^m w_k$$
        │       └─► 强制性: a(u,u) ≥ α‖u‖²
        │               │
        │               ├─► 椭圆性: a(u,u) ≥ λ∫|∇u|²
+
        │               │
        │               └─► Poincaré: ∫|∇u|² ≥ C∫|u|²
+
        │
        ├─► 应用Lax-Milgram
        │       │
@@ -376,6 +385,7 @@ $$u_m = \sum_{k=1}^m c_k^m w_k$$
                ├─► 弱解存在且唯一
                │
                └─► 正则性提升 → 经典解（条件合适时）
+
 ```
 
 ---

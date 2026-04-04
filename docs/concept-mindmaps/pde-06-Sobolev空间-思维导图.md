@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Sobolev空间 - 思维导图
 
 ## 概述
@@ -15,6 +20,7 @@ mindmap
       W^{k,p}(Ω)空间
         范数定义
         ‖u‖_{W^{k,p}} = (Σ_{|α|≤k}‖D^αu‖_{L^p}^p)^{1/p}
+
         弱导数可积性
         Banach空间结构
       H^k(Ω)空间
@@ -118,6 +124,7 @@ mindmap
       H^s(ℝⁿ)
         Fourier定义
         (1+|ξ|²)^{s/2}û ∈ L²
+
         插值空间
       W^{s,p}定义
         Slobodeckij范数
@@ -127,6 +134,7 @@ mindmap
         边界正则性
         非整数阶
         精细分析
+
 ```
 
 ---
@@ -152,6 +160,7 @@ graph TD
     style C fill:#e8f5e9
     style F fill:#fff3e0
     style K fill:#fce4ec
+
 ```
 
 ---
@@ -180,6 +189,7 @@ graph TD
     style D fill:#fff3e0
     style H fill:#e8f5e9
     style J fill:#fce4ec
+
 ```
 
 ---
@@ -199,6 +209,7 @@ graph LR
     style A fill:#e3f2fd
     style C fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---
@@ -243,6 +254,7 @@ mindmap
         Faber-Krahn
         等周不等式
         几何极值
+
 ```
 
 ---
@@ -266,6 +278,7 @@ graph TD
     style A fill:#e3f2fd
     style B fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -300,6 +313,7 @@ graph LR
     style A fill:#e3f2fd
     style B fill:#e8f5e9
     style E fill:#fff3e0
+
 ```
 
 ---
@@ -323,6 +337,7 @@ graph TD
     style A fill:#e3f2fd
     style B fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---

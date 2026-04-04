@@ -2,6 +2,9 @@
 msc_primary: "00A99"
 msc_secondary: ['14Nxx', '97-XX', '55-XX']
 ---
+msc_primary: "00A99"
+msc_secondary: ['14Nxx', '97-XX', '55-XX']
+---
 
 # FormalMath术语词典框架 - 2025年1月
 
@@ -133,17 +136,20 @@ msc_secondary: ['14Nxx', '97-XX', '55-XX']
 ### 使用示例 / Usage Examples
 
 #### 示例1
+
 ```latex
 [LaTeX代码示例]
+
 ```
 
 #### 示例2
 
 ```python
 # Python代码示例
+
 ```
 
-### 历史背景 / Historical Background
+## 历史背景 / Historical Background
 
 [术语的历史发展、重要人物、关键事件]
 
@@ -258,3 +264,4 @@ msc_secondary: ['14Nxx', '97-XX', '55-XX']
 **版本**: v1.0
 **适用范围**: FormalMath数学知识库
 **维护状态**: 持续更新中
+```

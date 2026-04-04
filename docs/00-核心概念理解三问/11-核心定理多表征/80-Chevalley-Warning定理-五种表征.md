@@ -63,6 +63,7 @@ $$\left[ \sum_{i=1}^r \deg(f_i) < n \right] \Rightarrow |V| \equiv 0 \pmod{p}$$
     结论：零点数是 p 的倍数
     
     如果有一个零点，则至少有 p 个
+
 ```
 
 ### 2.2 几何直观
@@ -77,6 +78,7 @@ $$\left[ \sum_{i=1}^r \deg(f_i) < n \right] \Rightarrow |V| \equiv 0 \pmod{p}$$
     
     因此交非空或为空集
     如果非空，则点数 ≥ p
+
 ```
 
 ### 2.3 组合结构
@@ -88,7 +90,9 @@ $$\left[ \sum_{i=1}^r \deg(f_i) < n \right] \Rightarrow |V| \equiv 0 \pmod{p}$$
     
     这意味着：
     - 如果 |V| > 0，则 |V| ≥ p
+
     - 零点"成组"出现
+
 ```
 
 ---
@@ -156,6 +160,7 @@ def chevalley_warning_check(equations, n_vars, q):
     zeros = count_zeros(equations, n_vars, q)
     
     # 验证 |V| ≡ 0 (mod p)
+
     p = get_characteristic(q)
     remainder = zeros % p
     
@@ -193,9 +198,10 @@ def count_zeros(equations, n_vars, q):
 # 例子：𝔽₃ 上，f(x,y,z) = x² + y，n=3, deg=2
 # 条件：2 < 3 满足
 # 验证 |V| ≡ 0 (mod 3)
+
 ```
 
-### 4.2 应用：寻找解
+## 4.2 应用：寻找解
 
 ```python
 def find_solution_chevalley_warning(equations, n_vars, q):
@@ -225,6 +231,7 @@ def find_solution_chevalley_warning(equations, n_vars, q):
             return point
     
     # 如果没有解，则 |V| = 0 ≡ 0 (mod p)，符合定理
+
     return None
 
 def get_characteristic(q):
@@ -242,6 +249,7 @@ def get_characteristic(q):
         if q % p == 0:
             return p
     return q  # q 本身是素数
+
 ```
 
 ### 4.3 应用：组合问题
@@ -262,6 +270,7 @@ def combinatorial_application(n, k, q):
 # 例子：证明某些设计的存在性
 # 通过构造多项式方程组
 # 使用Chevalley-Warning证明解的存在
+
 ```
 
 ---

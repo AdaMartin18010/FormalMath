@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 抛物型方程 - 思维导图
 
 ## 概述
@@ -44,6 +49,7 @@ mindmap
     基本解理论
       热核
         K(x,t) = (4πt)^{-n/2}exp(-|x|²/4t)
+
         半群性质
         卷积表示
       基本解估计
@@ -119,6 +125,7 @@ mindmap
         空间离散
         时间离散
         误差估计
+
 ```
 
 ---
@@ -151,6 +158,7 @@ graph TD
     style B fill:#e8f5e9
     style C fill:#fff3e0
     style D fill:#fce4ec
+
 ```
 
 ---
@@ -170,11 +178,13 @@ graph TD
         A --> G[高斯估计]
         G --> H[上界: K ≤ Ct^{-n/2}exp(-|x|²/4t)]
         G --> I[下界: K ≥ ct^{-n/2}exp(-C|x|²/t)]
+
     end
     
     style A fill:#e3f2fd
     style E fill:#fff3e0
     style G fill:#e8f5e9
+
 ```
 
 ---
@@ -205,6 +215,7 @@ graph LR
     style B fill:#fff3e0
     style D fill:#e8f5e9
     style G fill:#ffcdd2
+
 ```
 
 ---
@@ -241,6 +252,7 @@ mindmap
       滑动平面法
         对称性
         单调性
+
 ```
 
 ---
@@ -271,6 +283,7 @@ graph TD
     style D fill:#fff3e0
     style E fill:#ffcdd2
     style F fill:#e3f2fd
+
 ```
 
 ---
@@ -306,6 +319,7 @@ graph LR
     style B fill:#ffcdd2
     style C fill:#e8f5e9
     style D fill:#e3f2fd
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 近代数学思维导图（17-18世纪）
 
 ## 概述
@@ -70,6 +78,7 @@ mindmap
       群论萌芽
         置换理论
         代数方程根式解
+
 ```
 
 ## 详细内容

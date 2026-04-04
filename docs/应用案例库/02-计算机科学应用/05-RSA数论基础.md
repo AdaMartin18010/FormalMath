@@ -134,11 +134,13 @@ $$m^{ed} = m \cdot m^{k\phi(n)} = m \cdot (m^{\phi(n)})^k \equiv m \cdot 1^k = m
 **算法**: 给定 $a = e, b = \phi(n)$，求 $x, y$ 使得 $ax + by = \gcd(a,b) = 1$
 
 ```
+
 extended_gcd(a, b):
     if b = 0: return (a, 1, 0)
     else:
         (g, x', y') = extended_gcd(b, a mod b)
         return (g, y', x' - floor(a/b) * y')
+
 ```
 
 则 $d = x \mod \phi(n)$
@@ -152,6 +154,7 @@ extended_gcd(a, b):
 将指数表示为二进制：$e = (e_k e_{k-1}...e_1 e_0)_2$
 
 ```
+
 powmod(m, e, n):
     result = 1
     base = m mod n
@@ -161,6 +164,7 @@ powmod(m, e, n):
         base = (base * base) mod n
         e = e / 2
     return result
+
 ```
 
 复杂度: $O(\log e)$ 次乘法

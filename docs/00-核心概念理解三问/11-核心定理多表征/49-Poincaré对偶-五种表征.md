@@ -45,6 +45,7 @@ theorem poincare_duality {M : Type*} [TopologicalManifold M]
     (R : Type*) [CommRing R] (k : ℕ) :
     H^k(M; R) ≃ H_{n-k}(M; R) := by
   sorry  -- 需要详细的代数拓扑形式化
+
 ```
 
 ---
@@ -61,6 +62,7 @@ n维流形M上：
 例：2维环面T²
     H⁰ ≅ H₂ (整体 ↔ 曲面)
     H¹ ≅ H₁ (1-形式 ↔ 1-循环)
+
 ```
 
 ### 2.2 交叉数
@@ -71,6 +73,7 @@ k-循环与(n-k)-循环的交叉数：
     γₖ ∩ γₙ₋ₖ = ±(交点数)
 
 这定义了配对 Hₖ × Hₙ₋ₖ → ℤ
+
 ```
 
 ---
@@ -130,9 +133,10 @@ def verify_poincare_duality(M_triangulation, n):
 # 示例：环面T²（n=2）
 # b₀ = 1, b₁ = 2, b₂ = 1
 # Poincaré对偶: b₀ = b₂, b₁ = b₁ ✓
+
 ```
 
-### 4.2 cap积计算
+## 4.2 cap积计算
 
 ```python
 def cap_product(alpha, fundamental_class, simplices):
@@ -145,6 +149,7 @@ def cap_product(alpha, fundamental_class, simplices):
         # α评估在sigma的前面，结果是后面
         pass
     return result
+
 ```
 
 ---
@@ -159,6 +164,7 @@ Poincaré对偶 = 同调与上同调的对偶
 ├─ 同调H_*是协变函子
 ├─ Poincaré对偶：在流形上它们"对偶"
 └─ 通过cap积与[M]实现
+
 ```
 
 ### 5.2 推广
@@ -174,6 +180,7 @@ Poincaré对偶 = 同调与上同调的对偶
 ├─ 层上同调的Serre对偶
 ├─ Grothendieck对偶
 └─ Verdier对偶（导出范畴）
+
 ```
 
 ---

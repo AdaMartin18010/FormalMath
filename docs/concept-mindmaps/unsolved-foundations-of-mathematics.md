@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学基础问题 - 思维导图
 
 ## 概述
@@ -73,6 +78,7 @@ mindmap
       未来
         AI辅助证明
         数学图书馆
+
 ```
 
 ---
@@ -115,6 +121,7 @@ graph TD
 
     style CH fill:#ffcdd2
     style M1 fill:#fff3e0
+
 ```
 
 ---
@@ -161,6 +168,7 @@ mindmap
       哲学
         数学真理vs可证性
         柏拉图主义vs形式主义
+
 ```
 
 ---
@@ -213,6 +221,7 @@ graph TD
 
     style C4 fill:#e8f5e9
     style F1 fill:#fff3e0
+
 ```
 
 ---
@@ -264,6 +273,7 @@ mindmap
       数学图书馆
         形式化数学项目
         合作证明环境
+
 ```
 
 ---
@@ -314,6 +324,7 @@ graph TD
     style P1 fill:#e8f5e9
     style R2 fill:#fff3e0
     style F1 fill:#e3f2fd
+
 ```
 
 ---
@@ -365,6 +376,7 @@ graph TD
 
     style I4 fill:#fff3e0
     style I6 fill:#ffcdd2
+
 ```
 
 ---
@@ -416,6 +428,7 @@ mindmap
       数学实践
         同构即相等
         HoTT体现
+
 ```
 
 ---
@@ -470,6 +483,7 @@ graph TD
 
     style R1 fill:#fff3e0
     style C2 fill:#e8f5e9
+
 ```
 
 ---
@@ -515,6 +529,7 @@ flowchart LR
     style J fill:#ffcdd2
     style K fill:#fff3e0
     style M fill:#e8f5e9
+
 ```
 
 ---

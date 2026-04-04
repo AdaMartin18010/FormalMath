@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 希腊字母 - 思维导图
 
 ## 概述
@@ -58,6 +63,7 @@ mindmap
         ∂³V/∂S²∂t
       Ultima
         ∂³V/∂σ³
+
 ```
 
 ---
@@ -86,6 +92,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#e3f2fd
     style I fill:#fff3e0
+
 ```
 
 ---
@@ -134,6 +141,7 @@ mindmap
       Delta-Gamma对冲
       Delta-Vega对冲
       全希腊字母对冲
+
 ```
 
 ---
@@ -160,6 +168,7 @@ graph TD
     
     style D fill:#fff3e0
     style J fill:#fff3e0
+
 ```
 
 ---
@@ -190,6 +199,7 @@ mindmap
       P&L = Δ·ΔS + ½Γ·(ΔS)² + ν·Δσ + Θ·Δt + ...
       希腊字母归因
       对冲效率评估
+
 ```
 
 ---
@@ -222,6 +232,7 @@ flowchart LR
     style C fill:#e3f2fd
     style D fill:#e3f2fd
     style F fill:#fff3e0
+
 ```
 
 ---

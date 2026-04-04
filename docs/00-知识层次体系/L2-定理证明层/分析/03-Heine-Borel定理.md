@@ -37,6 +37,7 @@ flowchart TD
     D --> E[结论: 有限子覆盖存在]
     
     style E fill:#e8f5e9,stroke:#4caf50
+
 ```
 
 #### 步骤1：反证假设
@@ -59,6 +60,7 @@ flowchart TD
 因 $U$ 开，存在 $\varepsilon > 0$ 使得 $(x_0 - \varepsilon, x_0 + \varepsilon) \subseteq U$。
 
 取 $n$ 充分大使 $|I_n| < \varepsilon$，则 $I_n \subseteq U$。
+
 这与"$I_n$ 无有限子覆盖"矛盾（单个 $U$ 即覆盖）。 $\square$
 
 ---
@@ -125,6 +127,7 @@ flowchart TB
     L2HB --> L3FA[L3: 泛函分析]
     
     style L2HB fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+
 ```
 
 ---

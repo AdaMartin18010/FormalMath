@@ -73,6 +73,7 @@ k-形式空间 Ω^k
          └─ 上同调中为零
     
 正交直和分解
+
 ```
 
 ### 2.2 Laplacian的作用
@@ -85,6 +86,7 @@ Laplacian Δ = dd* + d*d 的作用：
     im(d*) = d*Ω^{k+1} (余恰当形式)
     
     三者正交且直和 = Ω^k
+
 ```
 
 ### 2.3 上同调
@@ -96,6 +98,7 @@ Hodge定理：上同调 = 调和形式
            = ℋ^k(M)
     
     每个上同调类有唯一的调和代表
+
 ```
 
 ---
@@ -206,6 +209,7 @@ def solve_exact_part(omega, d, d_star):
     
     # 实际实现需要求解PDE
     pass
+
 ```
 
 ### 4.2 计算上同调
@@ -251,6 +255,7 @@ def solve_harmonic_equations(M, k):
     
     # 简化处理
     pass
+
 ```
 
 ### 4.3 应用：计算Betti数
@@ -296,6 +301,7 @@ def compute_harmonic_dimension(M, k):
     # 或使用其他方法（如Morse理论）
     
     pass
+
 ```
 
 ---

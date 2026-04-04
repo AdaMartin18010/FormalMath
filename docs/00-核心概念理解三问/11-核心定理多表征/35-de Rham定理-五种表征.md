@@ -45,6 +45,7 @@ $$H^k_{dR}(M) \cong H^k(M; \mathbb{R})$$
 theorem de_rham {M : Type*} [SmoothManifold M] (k : ℕ) :
     deRhamCohomology k M ≃ₗ[ℝ] singularCohomology k M ℝ := by
   sorry  -- 需要详细的微分拓扑形式化
+
 ```
 
 ---
@@ -63,6 +64,7 @@ theorem de_rham {M : Type*} [SmoothManifold M] (k : ℕ) :
 闭形式/恰当形式 ←─de Rham─→ 闭链/边界
     │                          │
 H^k_{dR}(M) ≅ H^k(M;ℝ)
+
 ```
 
 ### 2.2 例子：圆周S¹
@@ -73,6 +75,7 @@ S¹的de Rham上同调：
 ├─ H¹(S¹) = ℝ（dθ生成）
 │
 积分：∮ dθ = 2π 给出非零元
+
 ```
 
 ---
@@ -128,6 +131,7 @@ def de_rham_discrete_example():
     print("对应de Rham上同调维数")
 
 de_rham_discrete_example()
+
 ```
 
 ### 4.2 积分计算
@@ -149,6 +153,7 @@ def de_rham_integral_example():
     print(f"∮ dθ = {integral:.4f}")  # 应该是2π
 
 de_rham_integral_example()
+
 ```
 
 ---
@@ -162,6 +167,7 @@ de Rham定理 = 函子的自然同构
 ├─ Ω•: SmoothMfld → ChainComplexes (微分形式函子)
 ├─ C•: Top → ChainComplexes (奇异链函子)
 └─ H(Ω•) ≅ H(C•) (上同调的自然同构)
+
 ```
 
 ### 5.2 推广

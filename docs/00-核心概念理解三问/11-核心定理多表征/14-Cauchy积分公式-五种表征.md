@@ -44,6 +44,7 @@ theorem cauchy_integral_formula {f : ℂ → ℂ} {z₀ : ℂ} {r : ℝ}
     (hz : z ∈ ball z₀ r) :
     f z = (1 / (2 * π * I)) * ∮ ζ in C(z₀, r), f ζ / (ζ - z) := by
   exact Complex.two_pi_I_inv_smul_circleIntegral_sub_inv_smul hf hr hz
+
 ```
 
 ### 1.3 证明要点
@@ -60,6 +61,7 @@ theorem cauchy_integral_formula {f : ℂ → ℂ} {z₀ : ℂ} {r : ℝ}
     ∮_C g - ∮_Cε g = 0 (Cauchy定理)
               │
     ε → 0: ∮_Cε g → 2πi·f(z₀)
+
 ```
 
 ---
@@ -83,6 +85,7 @@ theorem cauchy_integral_formula {f : ℂ → ℂ} {z₀ : ℂ} {r : ℝ}
     └──────────────────────┘
 
     内部值 = 边界值的加权平均
+
 ```
 
 ### 2.2 平均值性质
@@ -95,6 +98,7 @@ theorem cauchy_integral_formula {f : ℂ → ℂ} {z₀ : ℂ} {r : ℝ}
                     2π
 
     解析函数值 = 周围值的平均
+
 ```
 
 ---
@@ -113,6 +117,7 @@ theorem cauchy_integral_formula {f : ℂ → ℂ} {z₀ : ℂ} {r : ℝ}
 ├─ 内部温度满足Laplace方程
 ├─ 内部任意点温度 = 边界加权平均
 └─ 这正是Cauchy公式的实部！
+
 ```
 
 ### 3.3 为什么成立？
@@ -124,6 +129,7 @@ theorem cauchy_integral_formula {f : ℂ → ℂ} {z₀ : ℂ} {r : ℝ}
 
 积分只依赖边界（类似保守场）
 内部信息"编码"在边界上
+
 ```
 
 ---
@@ -161,9 +167,10 @@ exact = f(z0)
 print(f"Cauchy积分结果: {result:.6f}")
 print(f"f(z₀) = z₀² = {exact:.6f}")
 print(f"误差: {abs(result - exact):.2e}")
+
 ```
 
-### 4.2 高阶导数计算
+## 4.2 高阶导数计算
 
 ```python
 def cauchy_derivative(f, z0, n, r=0.1, n_points=1000):
@@ -190,6 +197,7 @@ print("f(z) = e^z 在 z=0 的导数:")
 for n in range(5):
     deriv = cauchy_derivative(f, z0, n)
     print(f"  f^({n})(0) = {deriv.real:.6f} (理论值: 1)")
+
 ```
 
 ---
@@ -205,6 +213,7 @@ Cauchy公式说：
 ├─ 层的截面由边界数据确定
 ├─ O_X 是"软层"（flabby）的对偶概念
 └─ 与上同调的消没有关
+
 ```
 
 ### 5.2 泛函分析视角
@@ -215,6 +224,7 @@ Cauchy核 K(z, ζ) = 1/(2πi(ζ-z))
 ├─ 是积分算子的核
 ├─ Bergman核的前身
 └─ 再生核Hilbert空间理论
+
 ```
 
 ### 5.3 与其他定理关系
@@ -230,6 +240,7 @@ Cauchy核 K(z, ζ) = 1/(2πi(ζ-z))
     └─────────┴─────────┘
               │
         都源于解析性
+
 ```
 
 ---

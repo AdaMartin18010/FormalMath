@@ -32,10 +32,12 @@ msc_secondary: ["54C30", "54E35", "97I55"]
 flowchart TD
     A[Step 1: 利用正规性<br/>构造开集族] --> B[Step 2: 有理数索引<br/>U_r 对 r∈ℚ∩[0,1]]
     B --> C[Step 3: 定义f(x)<br/>inf{r | x∈U_r}]
+
     C --> D[Step 4: 验证连续性<br/>开集原像]
     D --> E[结论: 连续分离函数]
     
     style C fill:#e8f5e9,stroke:#4caf50
+
 ```
 
 #### 步骤1-2：构造开集族
@@ -117,6 +119,7 @@ flowchart TB
     L2U --> L2UM[L2: Urysohn度量化]
     
     style L2U fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+
 ```
 
 ---

@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # FormalMath L0-L4 数学知识层次定义标准体系
 
 ## 体系概述
@@ -29,6 +34,7 @@ graph TB
     L1[L1 形式化定义<br/>L1-Formal] -->|定理化| L2
     L2[L2 定理证明<br/>L2-Theorem] -->|系统化| L3
     L3[L3 理论建构<br/>L3-Theory] -->|前沿化| L4
+
     L4[L4 前沿研究<br/>L4-Frontier]
 
     style L0 fill:#ffcccc
@@ -36,6 +42,7 @@ graph TB
     style L2 fill:#ffff99
     style L3 fill:#ccffcc
     style L4 fill:#ccccff
+
 ```
 
 ### 各层次定义
@@ -64,6 +71,7 @@ prerequisites: [L1-群定义]
 next_level: L3-Galois理论
 tags: ["证明", "群论", "核心定理"]
 ---
+
 ```
 
 ### 层次递进关系
@@ -102,6 +110,7 @@ graph TD
     E --> E1[能力评估]
 
     style A fill:#ffcccc
+
 ```
 
 ---

@@ -1,13 +1,11 @@
+/* ==================== External Styles ==================== */
+@import 'katex/dist/katex.min.css';
+@import './styles/rtl.css';
+@import './styles/accessibility.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* ==================== KaTeX Styles ==================== */
-@import 'katex/dist/katex.min.css';
-
-/* ==================== Internationalization & Accessibility ==================== */
-@import './styles/rtl.css';
-@import './styles/accessibility.css';
 
 /* ==================== Base Styles ==================== */
 

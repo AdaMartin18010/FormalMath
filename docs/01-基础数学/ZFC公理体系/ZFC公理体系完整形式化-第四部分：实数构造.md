@@ -2,6 +2,9 @@
 msc_primary: "00A05"
 msc_secondary: ['03E30', '03E15', '28-XX']
 ---
+msc_primary: "00A05"
+msc_secondary: ['03E30', '03E15', '28-XX']
+---
 
 # ZFC公理体系完整形式化 - 第四部分：实数构造
 
@@ -84,6 +87,7 @@ $$\mathbb{R} = \{(A, B) : A, B \subseteq \mathbb{Q} \text{ 满足戴德金分割
 (1) 取 A = {q ∈ Q : q < 0}，B = {q ∈ Q : q ≥ 0}
 (2) 验证 (A,B) 满足所有条件
 (3) 因此戴德金分割存在
+
 ```
 
 #### 1.2 实数的定义
@@ -102,6 +106,7 @@ $$(A, B) \sim (C, D) \leftrightarrow A = C \land B = D$$
 (1) 等价关系是自反、对称、传递的
 (2) 每个实数有唯一的表示
 (3) 因此定义是良定义的
+
 ```
 
 ### 2. 柯西序列方法
@@ -129,7 +134,9 @@ $$\text{Cauchy}(\{a_n\}) \leftrightarrow \forall \epsilon \in \mathbb{Q}^+ \exis
    - 因此对于 m, n > N，|a_m - a_n| ≤ |a_m - L| + |L - a_n| < ε
 (2) 柯西序列有界：取 ε = 1，存在 N 使得 n > N 时 |a_n - a_N| < 1
    - 因此 |a_n| < |a_N| + 1
+
 (3) 子序列性质：直接由定义得到
+
 ```
 
 #### 2.2 柯西序列的等价关系
@@ -149,8 +156,10 @@ $\sim$ 是等价关系。
 ```text
 证明：
 (1) 自反性：{a_n} ~ {a_n}，因为 |a_n - a_n| = 0 < ε
+
 (2) 对称性：如果 {a_n} ~ {b_n}，则 {b_n} ~ {a_n}
 (3) 传递性：如果 {a_n} ~ {b_n} 和 {b_n} ~ {c_n}，则 {a_n} ~ {c_n}
+
 ```
 
 ### 3. 实数运算的定义
@@ -174,6 +183,7 @@ $$[\{a_n\}] + [\{b_n\}] = [\{a_n + b_n\}]$$
 证明：
 (1) 对于戴德金分割：如果 (A,B) ~ (A',B') 和 (C,D) ~ (C',D')，则 (A+C,B+D) ~ (A'+C',B'+D')
 (2) 对于柯西序列：如果 {a_n} ~ {a'_n} 和 {b_n} ~ {b'_n}，则 {a_n + b_n} ~ {a'_n + b'_n}
+
 ```
 
 #### 3.2 乘法运算
@@ -196,6 +206,7 @@ $$[\{a_n\}] \cdot [\{b_n\}] = [\{a_n \cdot b_n\}]$$
 证明：
 (1) 对于戴德金分割：验证乘法的良定义性
 (2) 对于柯西序列：如果 {a_n} ~ {a'_n} 和 {b_n} ~ {b'_n}，则 {a_n · b_n} ~ {a'_n · b'_n}
+
 ```
 
 ### 4. 实数序关系
@@ -223,6 +234,7 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 (2) 反对称性：如果 A ⊆ C 和 C ⊆ A，则 A = C
 (3) 传递性：如果 A ⊆ C 和 C ⊆ E，则 A ⊆ E
 (4) 完全性：这是实数的关键性质，需要详细证明
+
 ```
 
 ### 5. 实数的完备性
@@ -241,9 +253,11 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 证明：
 (1) 设 {r_n} 是实数序列的柯西序列
 (2) 对于每个 r_n，选择有理数 a_n 使得 |r_n - a_n| < 1/n
+
 (3) 序列 {a_n} 是柯西序列
 (4) 定义实数 r = [{a_n}]
 (5) 证明 r_n → r
+
 ```
 
 #### 5.2 最小上界性质
@@ -260,6 +274,7 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 (3) 构造集合 B = Q \ A
 (4) 证明 (A,B) 是戴德金分割
 (5) 证明 (A,B) 是 S 的最小上界
+
 ```
 
 ### 6. 实数的代数性质
@@ -277,6 +292,7 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 (2) 乘法群（除去零）：结合律、交换律、单位元、逆元
 (3) 分配律：左分配律和右分配律
 (4) 序关系：与运算相容
+
 ```
 
 #### 6.2 实数的嵌入
@@ -292,6 +308,7 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 (2) 证明 φ 是单射
 (3) 证明 φ 保持运算
 (4) 证明 φ 保持序关系
+
 ```
 
 ### 7. 实数的拓扑性质
@@ -310,6 +327,7 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 (3) 考虑集合 S = {x ∈ [a,b] : [a,x] ⊆ A}
 (4) 证明 sup S 既不在 A 中也不在 B 中
 (5) 矛盾，因此 R 连通
+
 ```
 
 #### 7.2 实数的紧性
@@ -325,6 +343,7 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 (2) 构造反证法
 (3) 使用二分法
 (4) 得到矛盾
+
 ```
 
 ### 8. 实数的构造方法等价性
@@ -343,6 +362,7 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 (3) 证明 f 保持运算
 (4) 证明 f 保持序关系
 (5) 因此两种方法等价
+
 ```
 
 ### 9. 实数的应用
@@ -360,6 +380,7 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 (2) 连续函数：实数的拓扑性质
 (3) 积分理论：实数的序结构
 (4) 微分理论：实数的代数结构
+
 ```
 
 **应用案例 9.1.1** (实数在极限理论中的应用)
@@ -399,6 +420,7 @@ $$[\{a_n\}] < [\{b_n\}] \leftrightarrow \exists \epsilon > 0 \exists N \in \math
 (2) 距离：实数的度量性质
 (3) 坐标：实数的代数结构
 (4) 变换：实数的运算性质
+
 ```
 
 **应用案例 9.2.1** (实数在欧几里得几何中的应用)
@@ -532,6 +554,7 @@ begin
   simp [DedekindCutEquiv] at *,
   exact ⟨h1.1.trans h2.1, h1.2.trans h2.2⟩
 end
+
 ```
 
 ### 实数类型定义
@@ -555,10 +578,12 @@ def Real.ofRat (q : ℚ) : Real :=
   Real.mk {
     lower := {r : ℚ | r < q}
     upper := {r : ℚ | r ≥ q}
+
     -- 证明所有条件
     -- Prove all conditions
     -- (省略详细证明)
   }
+
 ```
 
 ### 柯西序列形式化
@@ -606,6 +631,7 @@ end
 -- Construct real from Cauchy sequence
 def Real.fromCauchy (seq : ℕ → ℚ) (h : IsCauchy seq) : Real :=
   Real.mk (sorry) -- 从柯西序列构造戴德金分割
+
 ```
 
 ### 实数运算形式化
@@ -620,6 +646,7 @@ def add : Real → Real → Real :=
     Real.mk {
       lower := {a + b | a ∈ x.lower ∧ b ∈ y.lower}
       upper := {a + b | a ∈ x.upper ∧ b ∈ y.upper}
+
       -- 证明所有条件
       -- Prove all conditions
       -- (省略详细证明)
@@ -638,6 +665,7 @@ def mul : Real → Real → Real :=
     Real.mk {
       lower := {a * b | a ∈ x.lower ∧ b ∈ y.lower}
       upper := {a * b | a ∈ x.upper ∧ b ∈ y.upper}
+
       -- 证明所有条件（需要处理符号）
       -- Prove all conditions (need to handle signs)
       -- (省略详细证明)
@@ -698,6 +726,7 @@ begin
 end
 
 end Real
+
 ```
 
 ### 实数序关系形式化
@@ -747,6 +776,7 @@ begin
 end
 
 end Real
+
 ```
 
 ### 实数完备性形式化
@@ -784,6 +814,7 @@ begin
 end
 
 end Real
+
 ```
 
 ### 应用案例：实数在分析中的应用
@@ -814,6 +845,7 @@ begin
   -- Use completeness of real numbers
   sorry
 end
+
 ```
 
 ## 术语对照表 / Terminology Table

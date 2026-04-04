@@ -32,6 +32,7 @@ msc_secondary: "01A99"
         [元数据层]
                 │
 ├─历史信息 ├─人物关联 ├─难度等级 ├─MSC分类
+
 ```
 
 ### 1.2 节点类型定义
@@ -64,6 +65,7 @@ msc_secondary: "01A99"
     - scope: 研究范围
     - core_objects: 核心对象
     - main_problems: 主要问题
+
 ```
 
 ### 1.3 关系类型定义
@@ -91,6 +93,7 @@ msc_secondary: "01A99"
     - discovered_by: 发现者
     - developed_by: 发展者
     - named_after: 以...命名
+
 ```
 
 ---
@@ -141,6 +144,7 @@ concept:
     prerequisites: [concept_id]
     first_appearance: year
     key_figures: [mathematician_id]
+
 ```
 
 ### 2.2 定理节点Schema
@@ -188,6 +192,7 @@ theorem:
     year_proved: year
     provers: [mathematician_id]
     has_multi_representation: boolean
+
 ```
 
 ### 2.3 关系Schema
@@ -207,6 +212,7 @@ relation:
   evidence:
     - source: string   # 引用来源
       description: string
+
 ```
 
 ---
@@ -256,6 +262,7 @@ relation:
 ### 4.1 YAML数据文件组织
 
 ```
+
 docs/00-核心概念理解三问/12-知识图谱系统/
 ├── 00-README.md      # 本文档
 ├── 01-概念节点/
@@ -286,6 +293,7 @@ docs/00-核心概念理解三问/12-知识图谱系统/
     ├── concept-graph.md
     ├── theorem-graph.md
     └── learning-paths.md
+
 ```
 
 ### 4.2 示例：群概念节点
@@ -301,16 +309,19 @@ concept:
 
   definition:
     formal: |
+
       (G, ·) 是群，当且仅当：
       1. 封闭性：∀a,b ∈ G, a·b ∈ G
       2. 结合律：∀a,b,c ∈ G, (a·b)·c = a·(b·c)
       3. 单位元：∃e ∈ G, ∀a ∈ G, e·a = a·e = a
       4. 逆元：∀a ∈ G, ∃a⁻¹ ∈ G, a·a⁻¹ = a⁻¹·a = e
     informal: |
+
       群是一种代数结构，描述"可逆的对称操作"。
       想象一个物体的所有对称变换（旋转、翻转等），
       它们可以组合、有"不动"操作、每个操作都能撤销。
     lean: |
+
       class Group (G : Type*) extends Monoid G, Inv G where
         mul_left_inv : ∀ a : G, a⁻¹ * a = 1
 
@@ -324,6 +335,7 @@ concept:
       content: "有限群可用Cayley表完全描述"
     - type: "生成元与关系"
       content: "G = ⟨S | R⟩，群表示"
+
     - type: "作用"
       content: "群作用于集合X的置换表示"
     - type: "图"
@@ -357,6 +369,7 @@ concept:
     prerequisites: ["set", "function", "binary-operation"]
     first_appearance: 1830
     key_figures: ["galois", "cayley", "jordan"]
+
 ```
 
 ---
@@ -389,6 +402,7 @@ concept:
     ├── "某领域有多少核心定理？"
     ├── "哪些概念最基础（被依赖最多）？"
     └── "哪些定理最重要（影响最广）？"
+
 ```
 
 ### 5.2 学习路径生成
@@ -412,6 +426,7 @@ concept:
         ├── Phase 2: 核心概念
         ├── Phase 3: 高级概念
         └── Phase 4: 目标定理
+
 ```
 
 ### 5.3 关联发现
@@ -432,6 +447,7 @@ concept:
     ├── 代数-拓扑桥梁
     ├── 分析-几何桥梁
     └── 数论-几何桥梁
+
 ```
 
 ---
@@ -496,6 +512,7 @@ mathlib_alignment:
     mathlib_path: "Mathlib.GroupTheory.Lagrange"
     mathlib_name: "Subgroup.card_mul_index"
     coverage: "complete"
+
 ```
 
 ---

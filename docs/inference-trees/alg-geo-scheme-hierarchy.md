@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 概形构造层次推理树
 
 ## 概述
@@ -62,6 +70,7 @@ graph TD
     style K fill:#bbf,stroke:#333
     style L fill:#f96,stroke:#333
     style M fill:#bfb,stroke:#333
+
 ```
 
 ## 构造层次详解

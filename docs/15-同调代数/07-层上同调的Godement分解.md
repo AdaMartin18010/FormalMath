@@ -372,6 +372,7 @@ Godement 分解再次提供了这一结果的导出函子视角：$H^q(X, \Omega
 
 $$
 (R^q f_* \mathcal{F})(V) = H^q(f^{-1}(V), \mathcal{F}|_{f^{-1}(V)})
+
 $$
 
 若 $C^\bullet(\mathcal{F})$ 是 $\mathcal{F}$ 的 Godement 分解，则 $f_* C^\bullet(\mathcal{F})$ 计算 $Rf_* \mathcal{F}$。这是因为 $C^q(\mathcal{F})$ 是松软层，而松软层的直接像 $f_* C^q(\mathcal{F})$ 仍是松软层（从而零调）。因此 Godement 分解也是计算高阶直接像函子的有效工具。

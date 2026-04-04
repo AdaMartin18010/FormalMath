@@ -124,7 +124,7 @@ export function generateGraphMermaid(
   
   // 添加节点
   nodes.forEach(node => {
-    const safeLabel = node.label.replace(/["\[\](){}]/g, '');
+    const safeLabel = node.label.replace(/["[\](){}]/g, '');
     lines.push(`  ${node.id}["${safeLabel}"]`);
   });
   

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # main
 
 **源文件**: `tools\personalized-recommendation\main.py`
@@ -8,6 +16,7 @@
 
 ```python
 def print_header(text: str)
+
 ```
 
 打印标题
@@ -20,6 +29,7 @@ def print_header(text: str)
 
 ```python
 def print_section(text: str)
+
 ```
 
 打印小节标题
@@ -32,6 +42,7 @@ def print_section(text: str)
 
 ```python
 def demo_full_workflow()
+
 ```
 
 演示完整工作流
@@ -40,6 +51,7 @@ def demo_full_workflow()
 
 ```python
 def run_api_server(host: str = 127.0.0.1, port: int = 8000)
+
 ```
 
 运行API服务器
@@ -53,6 +65,7 @@ def run_api_server(host: str = 127.0.0.1, port: int = 8000)
 
 ```python
 def run_tests()
+
 ```
 
 运行测试
@@ -61,6 +74,7 @@ def run_tests()
 
 ```python
 def main()
+
 ```
 
 主函数

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Dirichlet 特征 (Dirichlet Characters)
 
 ## 思维导图
@@ -29,11 +37,12 @@ mindmap
       二次互反
       类数公式
       Goldbach研究
+
 ```
 
 ---
 
-## 1. 中心概念精确定义
+## 一、中心概念精确定义
 
 ### 1.1 Dirichlet 特征的定义
 
@@ -57,16 +66,18 @@ $$\chi(n) \in \mu_{\phi(q)} = \{z \in \mathbb{C} : z^{\phi(q)} = 1\}$$
 
 ---
 
-## 2. 核心要素
+## 二、核心要素
 
 ### 2.1 原特征与本原特征
 
 **导子（Conductor）**：特征 $\chi$ 模 $q$ 的导子是最小的 $q^* | q$ 使得存在模 $q^*$ 的特征 $\chi^*$ 满足：
+
 $$\chi(n) = \chi^*(n) \cdot \mathbf{1}_{\gcd(n,q)=1}$$
 
 **原特征（Primitive Character）**：若 $q^* = q$，则 $\chi$ 称为模 $q$ 的原特征。
 
 **诱导特征**：若 $q^* | q$，则模 $q^*$ 的特征 $\chi^*$ 诱导模 $q$ 的特征：
+
 $$\chi(n) = \begin{cases} \chi^*(n) & \text{if } \gcd(n, q) = 1 \\ 0 & \text{if } \gcd(n, q) > 1 \end{cases}$$
 
 **本原性判据**：$\chi$ 是模 $q$ 的原特征当且仅当对所有真因子 $d | q$，存在 $n \equiv 1 \pmod{d}$ 使得 $\gcd(n, q) = 1$ 且 $\chi(n) \neq 1$。
@@ -106,6 +117,7 @@ $$\tau(\chi) = \sum_{n=1}^{q} \chi(n) e^{2\pi i n/q}$$
 
 **性质**：
 - $|\tau(\chi)| = \sqrt{q}$ 对原特征成立
+
 - $\tau(\chi)\tau(\overline{\chi}) = \chi(-1)q$
 
 **二次 Gauss 和**：对 Legendre 符号 $\left(\frac{\cdot}{p}\right)$，
@@ -123,7 +135,7 @@ $$\sum_{n \leq x} \chi(n) \ll x^{1 - 1/r} q^{(r+1)/4r^2 + \varepsilon}$$
 
 ---
 
-## 3. 性质与定理
+## 三、性质与定理
 
 ### 定理 3.1：Dirichlet 定理（1837）
 
@@ -165,7 +177,7 @@ $$\pi(x; q, a) = \frac{\text{li}(x)}{\phi(q)} + O(x \exp(-c_A \sqrt{\ln x}))$$
 
 ---
 
-## 4. 典型例子
+## 四、典型例子
 
 ### 例子 4.1：Legendre 符号
 
@@ -182,11 +194,13 @@ $$L\left(s, \left(\frac{\cdot}{p}\right)\right) = \sum_{n=1}^{\infty} \frac{(n/p
 模 4 有两个特征：
 
 **主特征** $\chi_0$：
+
 | $n$ | 1 | 2 | 3 | 4 |
 |-----|---|---|---|---|
 | $\chi_0(n)$ | 1 | 0 | 1 | 0 |
 
 **非主特征** $\chi_1$（对应于 Legendre 符号 $(\frac{-1}{\cdot})$）：
+
 | $n$ | 1 | 2 | 3 | 4 |
 |-----|---|---|---|---|
 | $\chi_1(n)$ | 1 | 0 | -1 | 0 |
@@ -214,7 +228,7 @@ $$\sum_{p \leq x} \chi_2(p) = \sum_{\substack{p \leq x \\ p \equiv 1, 4 \pmod{5}
 
 ---
 
-## 5. 关联概念
+## 五、关联概念
 
 ### 5.1 直接关联
 
@@ -242,7 +256,7 @@ $$\sum_{p \leq x} \chi_2(p) = \sum_{\substack{p \leq x \\ p \equiv 1, 4 \pmod{5}
 
 ---
 
-## 6. 深入阅读与参考
+## 六、深入阅读与参考
 
 ### 推荐教材
 
@@ -265,7 +279,7 @@ $$\sum_{p \leq x} \chi_2(p) = \sum_{\substack{p \leq x \\ p \equiv 1, 4 \pmod{5}
 
 ---
 
-## 7. 总结
+## 七、总结
 
 Dirichlet 特征是解析数论的核心工具，其意义在于：
 

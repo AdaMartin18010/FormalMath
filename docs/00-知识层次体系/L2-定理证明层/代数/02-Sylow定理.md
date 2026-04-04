@@ -41,10 +41,12 @@ $G$ 的所有Sylow $p$-子群彼此共轭。
 flowchart TD
     A[Step 1: 考虑集合Ω<br/>含p^n个元素的子集] --> B[Step 2: 定义群作用<br/>左乘作用]
     B --> C[Step 3: 计算|Ω|模p<br/>非p倍数]
+
     C --> D[Step 4: 存在轨道<br/>长度非p倍数]
     D --> E[Step 5: 稳定子即<br/>Sylow p-子群]
 
     style E fill:#e8f5e9,stroke:#4caf50
+
 ```
 
 #### 步骤1-2：群作用构造
@@ -85,6 +87,7 @@ flowchart LR
     B --> C[计数论证]
     C --> D[n_p ≡ 1 mod p]
     C --> E[n_p | m]
+
 ```
 
 ---
@@ -145,12 +148,14 @@ flowchart LR
 Sylow定理的证明展示了**群作用**的强大威力：
 
 ```
+
 ┌─────────────────────────────────────────┐
 │  Sylow定理证明的核心思想：                │
 │  1. 在合适的集合上定义群作用              │
 │  2. 利用数论条件分析轨道结构              │
 │  3. 从轨道信息提取子群信息                │
 └─────────────────────────────────────────┘
+
 ```
 
 ### 创新点
@@ -194,6 +199,7 @@ flowchart TB
     style L2S fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
     style L3F fill:#f3e5f5,stroke:#7b1fa2
     style L3SG fill:#f3e5f5,stroke:#7b1fa2
+
 ```
 
 ---

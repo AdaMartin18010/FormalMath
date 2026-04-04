@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 偏导数 → 可微性 → 链式法则推理树
 
 ## 概述
@@ -41,6 +49,7 @@ graph TD
     
     style B1 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style D2 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 推理步骤详解

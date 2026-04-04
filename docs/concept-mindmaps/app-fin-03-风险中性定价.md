@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 风险中性定价 - 思维导图
 
 ## 概述
@@ -48,6 +53,7 @@ mindmap
         V₀ = e^(-rT) E^Q[H]
       多期模型
         Vₜ = e^(-r(T-t)) E^Q[H|ℱₜ]
+
     应用实例
       股票期权
         Black-Scholes框架
@@ -57,6 +63,7 @@ mindmap
       信用衍生品
         违约风险建模
         生存概率
+
 ```
 
 ---
@@ -91,6 +98,7 @@ graph TD
     style D fill:#e3f2fd
     style G fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -106,6 +114,7 @@ mindmap
         θ: 市场风险价格
       Radon-Nikodym导数
         dQ/dP|ℱₜ = Zₜ
+
         Zₜ = exp(-∫θdW - ½∫θ²ds)
       应用步骤
         1. 确定市场风险价格
@@ -127,6 +136,7 @@ mindmap
       应用
         对冲策略构造
         可复制性证明
+
 ```
 
 ---
@@ -169,6 +179,7 @@ graph LR
     style A fill:#ffcdd2
     style G fill:#e8f5e9
     style H fill:#fff3e0
+
 ```
 
 ---
@@ -204,6 +215,7 @@ mindmap
         Garman-Kohlhagen
       Quanto期权
         汇率风险对冲
+
 ```
 
 ---
@@ -238,6 +250,7 @@ flowchart LR
     style E fill:#fff3e0
     style F fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---

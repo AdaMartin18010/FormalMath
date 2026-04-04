@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 微分流形思维导图
 
 ## 概述
@@ -121,6 +129,7 @@ mindmap
       高维
         极其复杂
         光滑结构不唯一
+
 ```
 
 ## 流形的分类（低维）

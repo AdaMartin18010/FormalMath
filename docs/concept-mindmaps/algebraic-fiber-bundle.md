@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 纤维丛思维导图
 
 ## 概述
@@ -122,6 +130,7 @@ mindmap
       示性数
         拓扑不变量
         积分公式
+
 ```
 
 ## 纤维丛的主要类型

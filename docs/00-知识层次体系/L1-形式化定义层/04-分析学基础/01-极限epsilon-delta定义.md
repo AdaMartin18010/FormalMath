@@ -8,6 +8,15 @@ prerequisites: ["实数构造", "绝对值", "量词逻辑"]
 next_level: ["连续性定义", "导数定义", "Bolzano-Weierstrass定理"]
 tags: ["分析学", "极限", "epsilon-delta", "形式化定义"]
 ---
+msc_primary: "26A03"
+msc_secondary: ["26E35", "97I30"]
+level: L1-Formal
+domain: 分析学
+concept: 极限的ε-δ定义
+prerequisites: ["实数构造", "绝对值", "量词逻辑"]
+next_level: ["连续性定义", "导数定义", "Bolzano-Weierstrass定理"]
+tags: ["分析学", "极限", "epsilon-delta", "形式化定义"]
+---
 
 # L1: 极限的ε-δ定义 (ε-δ Definition of Limit)
 
@@ -17,7 +26,7 @@ tags: ["分析学", "极限", "epsilon-delta", "形式化定义"]
 
 ---
 
-## 1. 严格形式化定义
+## 一、严格形式化定义
 
 ### 1.1 序列极限的ε-N定义
 
@@ -45,6 +54,7 @@ graph LR
     style B fill:#ffcc99,stroke:#ff8800
     style C fill:#ffff99,stroke:#cccc00
     style D fill:#ccffcc,stroke:#00cc00
+
 ```
 
 **量词结构的意义**：
@@ -58,17 +68,19 @@ graph LR
 
 ---
 
-## 2. 从L0到L1的提升路径
+## 二、从L0到L1的提升路径
 
 ### 2.1 L0直观理解
 
 ```
+
 L0描述：
 - "极限就是一个数列越来越接近的数"
 - "函数值趋向于某个点"
 - "可以任意接近但不一定达到"
 - "像跑步，越来越接近终点线"
 - "误差越来越小"
+
 ```
 
 ### 2.2 形式化提升过程
@@ -84,14 +96,18 @@ L0描述：
 ### 2.3 量词顺序的重要性
 
 ```
+
 正确顺序：∀ε>0, ∃N, ∀n≥N: |aₙ-L|<ε
+
            ↓
       "无论多精确，我都能做到"
 
 错误顺序：∃N, ∀ε>0, ∀n≥N: |aₙ-L|<ε
+
            ↓
       "存在一个点，从此所有项都相等"
       （这是常数列！）
+
 ```
 
 ### 2.4 提升的关键洞察
@@ -112,6 +128,7 @@ graph TB
     
     subgraph L1["L1: 形式化"]
         G["|aₙ-L| < ε"]
+
         H["量词控制"]
     end
     
@@ -125,11 +142,12 @@ graph TB
     
     style L0 fill:#e8f5e9,stroke:#4caf50
     style L1 fill:#fff3e0,stroke:#ff9800
+
 ```
 
 ---
 
-## 3. 依赖的L1概念（先修）
+## 三、依赖的L1概念（先修）
 
 | 概念 | 作用 | 依赖程度 |
 |------|------|---------|
@@ -141,7 +159,7 @@ graph TB
 
 ---
 
-## 4. 支撑的L2定理（后继）
+## 四、支撑的L2定理（后继）
 
 ### 4.1 极限的基本定理
 
@@ -172,6 +190,7 @@ flowchart TB
     style T5 fill:#e3f2fd,stroke:#2196f3
     style T6 fill:#e3f2fd,stroke:#2196f3
     style T8 fill:#e3f2fd,stroke:#2196f3
+
 ```
 
 ### 4.3 极限唯一性证明（示例）
@@ -192,7 +211,7 @@ $$|L - M| \leq |L - a_n| + |a_n - M| < \varepsilon/2 + \varepsilon/2 = \varepsil
 
 ---
 
-## 5. 定义的历史背景
+## 五、定义的历史背景
 
 ### 5.1 历史发展
 
@@ -217,6 +236,7 @@ timeline
     section 现代
         1960s : Robinson
                : 非标准分析（无穷小严格化）
+
 ```
 
 ### 5.2 关键人物
@@ -242,7 +262,7 @@ timeline
 
 ---
 
-## 6. 扩展与变体
+## 六、扩展与变体
 
 ### 6.1 各种极限类型
 
@@ -261,7 +281,7 @@ $$\lim_{x \to a^+} f(x) = L \Leftrightarrow \forall \varepsilon > 0, \exists \de
 
 ---
 
-## 7. 形式化验证（Lean4示例）
+## 七、形式化验证（Lean4示例）
 
 ```lean4
 -- 序列极限的定义
@@ -276,10 +296,12 @@ theorem limit_unique (a : ℕ → ℝ) (L M : ℝ)
   (hL : a ⟶ L) (hM : a ⟶ M) : L = M := by
   by_contra h
   have hLM : |L - M| > 0 := by
+
     apply abs_pos.mpr
     exact sub_ne_zero_of_ne h
   
   let ε := |L - M| / 2
+
   have hε : ε > 0 := by positivity
   
   obtain ⟨N₁, hN₁⟩ := hL ε hε
@@ -290,10 +312,13 @@ theorem limit_unique (a : ℕ → ℝ) (L M : ℝ)
   have h₂ := hN₂ N (le_max_right _ _)
   
   have h₃ : |L - M| < |L - M| := by
+
     calc
+
       |L - M| = |(L - a N) + (a N - M)| := by ring_nf
       _ ≤ |L - a N| + |a N - M| := by apply abs_add
       _ = |a N - L| + |a N - M| := by rw [abs_sub_comm]
+
       _ < ε + ε := by linarith
       _ = |L - M| := by ring
   
@@ -305,6 +330,7 @@ theorem const_limit (c : ℝ) : (λ _ => c) ⟶ c := by
   use 0
   intro n hn
   simp [hε]
+
 ```
 
 ---

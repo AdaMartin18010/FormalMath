@@ -75,6 +75,7 @@ f(a) = f(b)时，曲线必有水平切线：
     │ ╱        ╲
     └─●─────────●───
       a          b
+
 ```
 
 ### 2.2 特殊情况
@@ -148,6 +149,7 @@ def rolle_find_c_optimization(f_prime, a, b):
         c: 使得 f'(c) = 0 的点
     """
     # 最小化 |f'(x)|^2
+
     result = minimize_scalar(lambda x: f_prime(x)**2, bounds=(a, b), method='bounded')
     return result.x
 
@@ -160,9 +162,10 @@ def example_f_prime(x):
 
 # f(0) = 1, f(2) = 3, 不满足 f(a) = f(b)
 # 但可以找到 f'(x) = 0 的点：x = ±1
+
 ```
 
-### 4.2 符号计算
+## 4.2 符号计算
 
 ```python
 from sympy import symbols, diff, solve, simplify
@@ -195,6 +198,7 @@ f = x**3 - 6*x**2 + 9*x + 1
 # f(0) = 1, f(3) = 1
 # f'(x) = 3*x**2 - 12*x + 9 = 3(x-1)(x-3)
 # 在 (0, 3) 内，f'(1) = 0
+
 ```
 
 ---

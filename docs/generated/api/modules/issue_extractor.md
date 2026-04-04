@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # issue_extractor
 
 **源文件**: `tools\content-quality-assessment\issue_extractor.py`
@@ -8,6 +16,7 @@
 
 ```python
 class IssueItem
+
 ```
 
 问题项
@@ -16,6 +25,7 @@ class IssueItem
 
 ```python
 class IssueCategory
+
 ```
 
 问题分类
@@ -24,6 +34,7 @@ class IssueCategory
 
 ```python
 class IssueExtractor
+
 ```
 
 问题提取器
@@ -32,6 +43,7 @@ class IssueExtractor
 
 ```python
 class BatchIssueProcessor
+
 ```
 
 批量问题处理器
@@ -42,6 +54,7 @@ class BatchIssueProcessor
 
 ```python
 def main()
+
 ```
 
 主函数 - 示例用法

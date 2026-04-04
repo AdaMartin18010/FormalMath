@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×音乐：音乐信号的傅里叶分析
 
 ## 概述
@@ -96,6 +101,7 @@ mindmap
         重复检测
         相似度矩阵
         边界检测
+
 ```
 
 ---
@@ -127,6 +133,7 @@ graph TD
     style F fill:#e8f5e9
     style P fill:#fff3e0
     style N fill:#fce4ec
+
 ```
 
 ---
@@ -175,6 +182,7 @@ mindmap
       音乐转录
         旋律提取
         多音检测
+
 ```
 
 ---

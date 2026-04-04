@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Sobolev空间 思维导图
 
 ## 中心概念
@@ -68,12 +76,14 @@ mindmap
       Schwartz
       Lions
       Nirenberg
+
 ```
 
 ### 定义与公理
 - **弱导数**: $D^\alpha u = v$ 若 $\int u D^\alpha \phi = (-1)^{|\alpha|} \int v \phi$ 对所有测试函数 $\phi$
 - **Sobolev空间**: $W^{k,p}(\Omega) = \{u \in L^p : D^\alpha u \in L^p, |\alpha| \leq k\}$
 - **范数**: $\|u\|_{W^{k,p}} = \left(\sum_{|\alpha| \leq k} \|D^\alpha u\|_{L^p}^p\right)^{1/p}$
+
 - **$H^s$空间**: Fourier定义的分数阶空间
 
 ### 基本性质
@@ -93,6 +103,7 @@ mindmap
 - **Sobolev嵌入定理**: $W^{k,p} \hookrightarrow L^q$ 或 $C^{m,\alpha}$（证明思路：位势估计）
 - **Rellich-Kondrachov**: 有界域上嵌入是紧的
 - **Poincaré不等式**: $\|u\|_{L^p} \leq C\|\nabla u\|_{L^p}$（$u \in W_0^{1,p}$）
+
 - **迹定理**: $W^{1,p}(\Omega) \to W^{1-1/p,p}(\partial\Omega)$ 有界满射
 - **Gagliardo-Nirenberg不等式**: 插值不等式
 

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 模型论 (Model Theory)
 
 ## 模块概述
@@ -17,7 +25,9 @@
 ## 学习路径
 
 ```
+
 语言与结构 → 紧致性 → 完备性与量词消去 → 稳定性 → 几何模型论
+
 ```
 
 ## 前置知识

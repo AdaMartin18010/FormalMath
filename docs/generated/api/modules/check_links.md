@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # check_links
 
 **源文件**: `tools\contributor-workflow\check_links.py`
@@ -8,6 +16,7 @@
 
 ```python
 class LinkCheckResult
+
 ```
 
 链接检查结果
@@ -16,6 +25,7 @@ class LinkCheckResult
 
 ```python
 class LinkChecker
+
 ```
 
 链接检查器
@@ -26,5 +36,6 @@ class LinkChecker
 
 ```python
 def main()
+
 ```
 

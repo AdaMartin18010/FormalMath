@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # quality_assessor
 
 **源文件**: `tools\content-quality-assessment\quality_assessor.py`
@@ -8,6 +16,7 @@
 
 ```python
 class QualityLevel
+
 ```
 
 质量等级
@@ -16,6 +25,7 @@ class QualityLevel
 
 ```python
 class CompletenessMetrics
+
 ```
 
 完整性指标
@@ -24,6 +34,7 @@ class CompletenessMetrics
 
 ```python
 class AccuracyMetrics
+
 ```
 
 准确性指标
@@ -32,6 +43,7 @@ class AccuracyMetrics
 
 ```python
 class ReadabilityMetrics
+
 ```
 
 可读性指标
@@ -40,6 +52,7 @@ class ReadabilityMetrics
 
 ```python
 class InternationalizationMetrics
+
 ```
 
 国际化指标
@@ -48,6 +61,7 @@ class InternationalizationMetrics
 
 ```python
 class LearningEffectMetrics
+
 ```
 
 学习效果预测指标
@@ -56,6 +70,7 @@ class LearningEffectMetrics
 
 ```python
 class QualityAssessmentResult
+
 ```
 
 质量评估结果
@@ -64,6 +79,7 @@ class QualityAssessmentResult
 
 ```python
 class ContentQualityAssessor
+
 ```
 
 内容质量评估器
@@ -74,6 +90,7 @@ class ContentQualityAssessor
 
 ```python
 def main()
+
 ```
 
 主函数

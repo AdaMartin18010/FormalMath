@@ -86,6 +86,7 @@ n=2: 二次逼近（抛物线）
 n=3: 三次逼近
     ╱╲╱
    ╱  ╲  (更接近原函数)
+
 ```
 
 ### 2.2 误差的几何理解
@@ -103,6 +104,7 @@ n=3: 三次逼近
       a      x
       
 误差 = |f(x) - P_n(x)| = |R_n(x)|
+
 ```
 
 ### 2.3 收敛性
@@ -181,6 +183,7 @@ def taylor_remainder_lagrange(f, f_deriv_n1, a, x, n):
     # 使用最大值估计
     max_deriv = max(abs(f_deriv_n1(t)) for t in [a, x])
     return abs(max_deriv * (x - a)**(n+1) / math.factorial(n+1))
+
 ```
 
 ### 4.2 自动计算导数
@@ -217,9 +220,10 @@ x = symbols('x')
 f = math.exp(x)  # e^x
 taylor_e_x = taylor_expand_symbolic(f, 0, 5, 'x')
 # 结果: 1 + x + x**2/2 + x**3/6 + x**4/24 + x**5/120
+
 ```
 
-### 4.3 数值应用
+## 4.3 数值应用
 
 ```python
 import numpy as np
@@ -262,6 +266,7 @@ def exp_func(x):
 
 x_vals = np.linspace(0.5, 1.5, 100)
 approx = taylor_series_approximation(exp_func, 1.0, x_vals, 5)
+
 ```
 
 ---

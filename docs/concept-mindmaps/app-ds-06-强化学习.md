@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 强化学习 - 思维导图
 
 ## 概述
@@ -16,10 +21,12 @@ mindmap
         状态空间S
         动作空间A
         转移P(s'|s,a)
+
         奖励R(s,a)
         折扣γ
       策略
         π(a|s)
+
         确定性/随机
       价值函数
         V^π(s)
@@ -57,6 +64,7 @@ mindmap
       演员-评论家
         A3C
         DDPG
+
 ```
 
 ---
@@ -73,6 +81,7 @@ graph TD
 
     subgraph 策略
         E[π(a|s)] --> F[状态价值V^π(s)]
+
         E --> G[动作价值Q^π(s,a)]
     end
 
@@ -83,6 +92,7 @@ graph TD
     style A fill:#e3f2fd
     style E fill:#fff3e0
     style H fill:#e8f5e9
+
 ```
 
 ---
@@ -117,6 +127,7 @@ mindmap
       ε-贪心
       上置信界
       汤普森采样
+
 ```
 
 ---
@@ -140,11 +151,13 @@ mindmap
 graph TD
     subgraph 策略梯度定理
         A[∇J(θ)] --> B[E[∇log π(a|s) · Q^π(s,a)]]
+
         B --> C[REINFORCE算法]
     end
 
     subgraph Actor-Critic
         D[Actor: π_θ(a|s)] --> E[更新策略]
+
         F[Critic: V_w(s)] --> G[估计优势]
         E --> H[减小方差]
     end
@@ -158,6 +171,7 @@ graph TD
     style B fill:#e3f2fd
     style G fill:#fff3e0
     style L fill:#e8f5e9
+
 ```
 
 ---
@@ -199,6 +213,7 @@ mindmap
       合作
       竞争
       混合
+
 ```
 
 ---
@@ -231,6 +246,7 @@ flowchart LR
 
     style E fill:#e3f2fd
     style H fill:#fff3e0
+
 ```
 
 ---

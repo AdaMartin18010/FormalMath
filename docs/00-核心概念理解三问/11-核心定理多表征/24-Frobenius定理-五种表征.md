@@ -49,6 +49,7 @@ theorem frobenius_theorem {M : Type*} [SmoothManifoldWithCorners I M]
       ∀ x : M, ∃ U : Set M, x ∈ U ∧ -- 局部积分流形
         ∃ (φ : U → N), Function.Injective φ := by
   sorry  -- 需要详细的分布理论形式化
+
 ```
 
 ---
@@ -62,12 +63,15 @@ theorem frobenius_theorem {M : Type*} [SmoothManifoldWithCorners I M]
 
     M:  ┌─────────────┐
         │   •  D|_p   │  (p点的切子空间)
+
         │   │         │
         │   •  D|_q   │
+
         │   │         │
         └─────────────┘
 
 可积 ⟺ 存在"积分流形"（沿D的曲面）
+
 ```
 
 ### 2.2 反例：非对合分布
@@ -77,6 +81,7 @@ theorem frobenius_theorem {M : Type*} [SmoothManifoldWithCorners I M]
 ├─ [X, Y] = ∂/∂z ∉ D
 ├─ 不对合
 └─ 不可积（无积分曲面）
+
 ```
 
 ---
@@ -143,6 +148,7 @@ def integrate_distribution(D, p0, t_max=1.0):
         trajectory.append(solver.y)
 
     return np.array(trajectory)
+
 ```
 
 ---
@@ -156,6 +162,7 @@ Frobenius定理 = 分布的可积性
 ├─ 分布：切丛的子丛
 ├─ 对合：Lie代数结构
 └─ 积分流形：子流形
+
 ```
 
 ### 5.2 叶状结构

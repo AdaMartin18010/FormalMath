@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 几何Langlands对应推理树
 
 ## 概述
@@ -54,6 +62,7 @@ graph TD
     style I fill:#f88,stroke:#333
     style J fill:#f77,stroke:#333
     style K fill:#bfb,stroke:#333
+
 ```
 
 ## 几何设置详解
@@ -65,32 +74,46 @@ graph TD
 **Bun_G**: G-主丛的模空间，是光滑Deligne-Mumford叠。
 
 **LocSys_G**: 具有平坦联络的G-主丛模空间，即表示
+
 ```
+
 ρ: π₁(X) → G
+
 ```
+
 的模空间。
 
 ### 2. Hecke对应
 
 对于点x ∈ X，Hecke对应是：
+
 ```
+
     Hecke_x
    /       \
   ↓         ↓
 Bun_G   Bun_G
+
 ```
+
 对应于在x点修改主丛的纤维。
 
 ### 3. 几何Langlands猜想
 
 **弱形式**: 对于不可约G^∨-局部系统E，存在非零Hecke特征D模F_E，使得：
+
 ```
+
 H_x(F_E) ≅ F_E ⊠ E_x
+
 ```
 
 **强形式**: 范畴等价
+
 ```
+
 D-mod(Bun_G) ≅ QCoh(LocSys_{G^∨})
+
 ```
 
 ## 关键定理
@@ -105,11 +128,13 @@ D-mod(Bun_G) ≅ QCoh(LocSys_{G^∨})
 ## 与经典Langlands的关系
 
 ```
+
 几何Langlands ──函数层──→ 经典Langlands（函数域）
     ↓                             ↓
 D-模层                        自守函数
     ↓                             ↓
 迹公式                          Weil猜想
+
 ```
 
 ## 研究方向

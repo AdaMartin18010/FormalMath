@@ -65,6 +65,7 @@ $$\left[ G \text{ 紧连通半单Lie群 } \land V_\lambda \text{ 最高权 } \la
     Weyl群轨道求和
          ↓
     对称化公式
+
 ```
 
 ### 2.2 Weyl群作用
@@ -79,6 +80,7 @@ Weyl群W作用在权格上：
     分母 = Σ_{w∈W} det(w) e^{w(ρ)}
     
     这是Weyl对称性的体现
+
 ```
 
 ### 2.3 特征标的对称性
@@ -89,6 +91,7 @@ Weyl群W作用在权格上：
     χ_λ(e^H) 在Weyl群作用下对称
     
     这反映了表示的对称性
+
 ```
 
 ---
@@ -195,9 +198,10 @@ def su2_character(n, theta):
     if abs(np.sin(theta/2)) < 1e-10:
         return n  # 极限情况
     return np.sin(n * theta / 2) / np.sin(theta / 2)
+
 ```
 
-### 4.2 应用：计算维数
+## 4.2 应用：计算维数
 
 ```python
 def dimension_via_weyl(highest_weight, root_system):
@@ -245,9 +249,10 @@ def compute_rho(root_system):
 
 # 例子：SU(3)的表示
 # 可以计算各种不可约表示的维数
+
 ```
 
-### 4.3 特征标表
+## 4.3 特征标表
 
 ```python
 def character_table_via_weyl(group, root_system):
@@ -277,6 +282,7 @@ def character_table_via_weyl(group, root_system):
             character_table[(weight, H)] = char_value
     
     return character_table
+
 ```
 
 ---

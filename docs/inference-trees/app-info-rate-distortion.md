@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 率失真理论推导链
 
 ## 概述
@@ -39,6 +44,7 @@ graph TD
     subgraph 向量量化
         D2 --> E1[Lloyd算法<br/>k-means]
         E1 --> E2[质心条件<br/>x̂ = Ex|Q(x)]
+
         E2 --> E3[最近邻条件<br/>Qx = argmin d(x, x̂)]
         E3 --> E4[Lloyd-Max量化<br/>最优标量量化]
     end
@@ -54,6 +60,7 @@ graph TD
     style B3 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style D3 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style E4 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -131,6 +138,7 @@ $$D(R) = \sigma^2 2^{-2R}$$
 
 则：
 $$I(X; \hat{X}) = h(X) - h(X|\hat{X}) = \frac{1}{2}\log(2\pi e \sigma^2) - \frac{1}{2}\log(2\pi e D)$$
+
 $$= \frac{1}{2}\log\frac{\sigma^2}{D}$$
 
 **反向水填充**（多变量高斯）：
@@ -202,6 +210,7 @@ $$R_1 + R_2 > I(X; X_0, X_1, X_2) + I(X_1; X_2)$$
 ## 依赖关系图
 
 ```
+
 信息论基础 ← 熵与互信息
     ↓
 失真度量 ← 应用领域
@@ -215,6 +224,7 @@ $$R_1 + R_2 > I(X; X_0, X_1, X_2) + I(X_1; X_2)$$
 向量量化 ← 迭代算法
     ↓
 多描述编码 ← 网络信息论
+
 ```
 
 ---

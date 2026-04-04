@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 波动率建模 - 思维导图
 
 ## 概述
@@ -60,6 +65,7 @@ mindmap
       风险管理
       波动率交易
       投资组合优化
+
 ```
 
 ---
@@ -88,6 +94,7 @@ graph TD
     style D fill:#e3f2fd
     style G fill:#fff3e0
     style K fill:#e8f5e9
+
 ```
 
 ---
@@ -131,6 +138,7 @@ mindmap
       随机利率
       跳跃扩散
       多因子Heston
+
 ```
 
 ---
@@ -172,6 +180,7 @@ graph TD
     style B fill:#e3f2fd
     style F fill:#fff3e0
     style D fill:#e8f5e9
+
 ```
 
 ---
@@ -210,6 +219,7 @@ mindmap
       VIX期货
       VIX期权
       VIX ETN/ETF
+
 ```
 
 ---
@@ -241,6 +251,7 @@ flowchart LR
     
     style F fill:#e3f2fd
     style I fill:#fff3e0
+
 ```
 
 ---

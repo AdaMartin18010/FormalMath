@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: [🇨🇳 中文](../zh/ZFC公理体系\ZFC公理体系完整形式化-第二部分：整数构造.md) | **🇬🇧 English**
@@ -95,6 +100,7 @@ Proof：
    - 则 a + d + c + f = b + c + d + e
    - 因此 a + f = b + e
    - 所以 (a,b) ~ (e,f)
+
 ```
 
 #### 1.2 整数的表示
@@ -115,6 +121,7 @@ Proof：
 (1) 对于正整数 n，[(n,0)] 是唯一表示
 (2) 对于负整数 -n，[(0,n)] 是唯一表示
 (3) 零的表示 [(0,0)] 是唯一的
+
 ```
 
 ### 2. 整数运算的Definition
@@ -135,6 +142,7 @@ Proof：
 (2) 则 a + b' = b + a' 和 c + d' = d + c'
 (3) 因此 (a+c) + (b'+d') = (b+d) + (a'+c')
 (4) 所以 [(a+c, b+d)] = [(a'+c', b'+d')]
+
 ```
 
 **Theorem 2.1.2** (加法运算的性质)
@@ -152,6 +160,7 @@ Proof：
 (2) 交换律：自然数加法的交换律
 (3) 单位元：[(a,b)] + [(0,0)] = [(a,b)]
 (4) 逆元：[(a,b)] + [(b,a)] = [(a+b, a+b)] = [(0,0)]
+
 ```
 
 #### 2.2 乘法运算
@@ -170,6 +179,7 @@ Proof：
 (2) 则 a + b' = b + a' 和 c + d' = d + c'
 (3) 计算 (ac + bd, ad + bc) 和 (a'c' + b'd', a'd' + b'c')
 (4) 使用自然数的运算性质Proof相等
+
 ```
 
 **Theorem 2.2.2** (乘法运算的性质)
@@ -187,6 +197,7 @@ Proof：
 (2) 交换律：自然数乘法的交换律
 (3) 单位元：[(a,b)] · [(1,0)] = [(a,b)]
 (4) 分配律：使用自然数的分配律
+
 ```
 
 ### 3. 整数序关系
@@ -211,6 +222,7 @@ Proof：
 (2) 反对称性：如果 a + d ≤ b + c 和 c + b ≤ d + a，则 a + d = b + c
 (3) 传递性：使用自然数序的传递性
 (4) 完全性：由自然数的良序性得到
+
 ```
 
 #### 3.2 整数的代数结构
@@ -226,6 +238,7 @@ Proof：
 (2) 乘法半Group：结合律、交换律、单位元
 (3) 分配律：左分配律和右分配律
 (4) 无零因子：如果 xy = 0，则 x = 0 或 y = 0
+
 ```
 
 ### 4. 整数的嵌入
@@ -246,6 +259,7 @@ Proof：
 (2) 保持加法：φ(n + m) = φ(n) + φ(m)
 (3) 保持乘法：φ(n · m) = φ(n) · φ(m)
 (4) 保持序关系：n < m ↔ φ(n) < φ(m)
+
 ```
 
 #### 4.2 整数的唯一性
@@ -261,6 +275,7 @@ Proof：
 (2) 构造Isomorphism映射 f: Z₁ → Z₂
 (3) Proof f 是双射且保持运算
 (4) 因此 Z₁ ≅ Z₂
+
 ```
 
 ### 5. 整数的基本Theorem
@@ -285,6 +300,7 @@ Proof：
 (2) 传递性：如果 b = a · k 和 c = b · l，则 c = a · (k · l)
 (3) 线性组合：如果 b = a · k 和 c = a · l，则 b + c = a · (k + l)
 (4) 乘法：如果 b = a · k，则 b · c = a · (k · c)
+
 ```
 
 #### 5.2 最大公约数
@@ -307,6 +323,7 @@ Proof：
 (3) 由良序性，S 有最小元素 d
 (4) Proof d 是最大公约数
 (5) 唯一性：如果 d₁ 和 d₂ 都是最大公约数，则 d₁ = d₂
+
 ```
 
 #### 5.3 欧几里得算法
@@ -322,6 +339,7 @@ Proof：
 (1) 使用欧几里得算法计算 gcd(a,b)
 (2) 反向追踪得到 x, y
 (3) Proof ax + by = gcd(a,b)
+
 ```
 
 ### 6. 整数的代数性质
@@ -338,6 +356,7 @@ Proof：
 (1) 存在性：使用数学归纳法
 (2) 唯一性：使用素数的性质
 (3) 考虑符号的唯一性
+
 ```
 
 #### 6.2 同余理论
@@ -358,6 +377,7 @@ Proof：
 (1) 自反性：m | (a - a) = 0
 (2) 对称性：如果 m | (a - b)，则 m | (b - a)
 (3) 传递性：如果 m | (a - b) 和 m | (b - c)，则 m | (a - c)
+
 ```
 
 ### 7. 整数的应用
@@ -498,6 +518,7 @@ begin
   -- Prove transitivity
   sorry
 end
+
 ```
 
 ### 整数类型Definition
@@ -522,6 +543,7 @@ def Integer.ofNat (n : ℕ) : Integer := Integer.mk n 0
 -- 负整数
 -- Negative integer
 def Integer.negOfNat (n : ℕ) : Integer := Integer.mk 0 n
+
 ```
 
 ### 整数运算形式化
@@ -614,6 +636,7 @@ begin
 end
 
 end Integer
+
 ```
 
 ### 整数序关系形式化
@@ -652,6 +675,7 @@ begin
 end
 
 end Integer
+
 ```
 
 ### 整数Ring结构形式化
@@ -686,6 +710,7 @@ theorem integer_ring_properties :
 begin
   exact inferInstance
 end
+
 ```
 
 ### 整数Number Theory性质形式化
@@ -759,6 +784,7 @@ begin
 end
 
 end Integer
+
 ```
 
 ### 应用案例：整数在Number Theory中的应用
@@ -785,6 +811,7 @@ begin
   -- Prove Fermat's little theorem
   sorry
 end
+
 ```
 
 ## 术语对照表 / Terminology Table

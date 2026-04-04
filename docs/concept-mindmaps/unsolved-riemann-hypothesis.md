@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 黎曼假设 - 思维导图
 
 ## 概述
@@ -53,6 +58,7 @@ mindmap
         41% 零点在临界线上
         Levinson方法
         Conrey改进
+
 ```
 
 ---
@@ -97,6 +103,7 @@ graph TD
     
     style NT1 fill:#ffcdd2
     style RH fill:#ffcdd2
+
 ```
 
 ---
@@ -137,6 +144,7 @@ graph TD
     
     style Zero fill:#fff3e0
     style RH fill:#ffcdd2
+
 ```
 
 ---
@@ -159,7 +167,9 @@ mindmap
       对于充分大的n
       Robin准则(1984)
     Farey序列
+
       |Fₙ| = 3n²/π² + O(n^{1/2+ε})
+
       Franel-Landau定理
     矩阵理论
       随机矩阵理论联系
@@ -169,6 +179,7 @@ mindmap
     Weil显式公式
       对偶性表述
       迹公式解释
+
 ```
 
 ---
@@ -223,6 +234,7 @@ graph TD
     style RH fill:#ffcdd2
     style GRH fill:#fff3e0
     style ECRH fill:#fff3e0
+
 ```
 
 ---
@@ -262,6 +274,7 @@ mindmap
       谱理论
       遍历理论
       信息论
+
 ```
 
 ---
@@ -308,6 +321,7 @@ flowchart LR
     style K fill:#e8f5e9
     style L fill:#e8f5e9
     style M fill:#e8f5e9
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # validate_msc
 
 **源文件**: `tools\contributor-workflow\validate_msc.py`
@@ -8,6 +16,7 @@
 
 ```python
 class MSCValidationResult
+
 ```
 
 MSC 验证结果
@@ -16,6 +25,7 @@ MSC 验证结果
 
 ```python
 class MSCValidator
+
 ```
 
 MSC 编码验证器
@@ -26,5 +36,6 @@ MSC 编码验证器
 
 ```python
 def main()
+
 ```
 

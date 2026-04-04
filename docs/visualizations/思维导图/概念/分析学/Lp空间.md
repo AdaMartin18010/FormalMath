@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Lp空间 (Lp Spaces)
 
 ## 中心概念精确定义
@@ -6,6 +14,7 @@
 
 > **Lp范数**：设 $(X, \mathcal{M}, \mu)$ 是测度空间，$1 \leq p < \infty$，定义：
 > $$\|f\|_{L^p} = \left(\int_X |f|^p\,d\mu\right)^{1/p}$$
+
 > 
 > 对 $p = \infty$：
 > $$\|f\|_{L^\infty} = \text{ess sup}|f| = \inf\{M : |f| \leq M \text{ a.e.}\}$$
@@ -21,10 +30,13 @@ mindmap
   root((Lp空间<br/>Lp Spaces))
     范数与空间
       p范数
+
         ||f||ₚ=(∫|f|ᵖ)^{1/p}
+
         三角不等式
       L∞范数
         ess sup|f|
+
         本性上确界
       等价类
         几乎处处相等
@@ -40,7 +52,9 @@ mindmap
     重要不等式
       Hölder不等式
         1/p+1/q=1
+
         ||fg||₁≤||f||ₚ||g||_q
+
       Minkowski
         三角不等式
       Jensen不等式
@@ -58,7 +72,9 @@ mindmap
         Lᵖ≅(Lᵖ)**
     收敛性
       强收敛
+
         ||fₙ-f||ₚ→0
+
       弱收敛
         ∫fₙg→∫fg
       分布收敛
@@ -70,6 +86,7 @@ mindmap
         实插值
       应用
         算子有界性
+
 ```
 
 ---
@@ -111,6 +128,7 @@ $$\|fg\|_{L^1} \leq \|f\|_{L^p} \|g\|_{L^q}$$
 1. 取Cauchy列 $\{f_n\}$
 2. 选子列使 $\|f_{n_{k+1}} - f_{n_k}\|_p < 2^{-k}$
 3. 定义 $g = \sum |f_{n_{k+1}} - f_{n_k}|$，由Minkowski $\|g\|_p < \infty$
+
 4. 故 $g < \infty$ a.e.，级数几乎处处绝对收敛
 5. $f_{n_k} \to f$ a.e.，由Fatou引理证明 $f_n \to f$ 在 $L^p$
 
@@ -225,6 +243,7 @@ $$L^\infty \subset L^2 \subset L^1$$
 ### 推广概念
 
 ```
+
 Lp空间 → 向量值Lp空间
       ↓
    加权Lp空间
@@ -232,6 +251,7 @@ Lp空间 → 向量值Lp空间
    变指数Lp(x)
       ↓
    非交换Lp(算子代数)
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # scoring_engine
 
 **源文件**: `tools\assessment-system\scoring_engine.py`
@@ -8,6 +16,7 @@
 
 ```python
 class ScoringAlgorithm
+
 ```
 
 评分算法基类
@@ -16,6 +25,7 @@ class ScoringAlgorithm
 
 ```python
 class WeightedScoringModel
+
 ```
 
 加权评分模型
@@ -26,6 +36,7 @@ class WeightedScoringModel
 
 ```python
 class ValueAddedScoringModel
+
 ```
 
 增值评分模型
@@ -36,6 +47,7 @@ class ValueAddedScoringModel
 
 ```python
 class PerformanceScoringModel
+
 ```
 
 表现性评分模型
@@ -46,6 +58,7 @@ class PerformanceScoringModel
 
 ```python
 class DivergentThinkingScoringModel
+
 ```
 
 发散思维评分模型
@@ -56,6 +69,7 @@ class DivergentThinkingScoringModel
 
 ```python
 class ProcessScoringModel
+
 ```
 
 过程性评分模型
@@ -66,6 +80,7 @@ class ProcessScoringModel
 
 ```python
 class ScoringEngine
+
 ```
 
 评分引擎主类

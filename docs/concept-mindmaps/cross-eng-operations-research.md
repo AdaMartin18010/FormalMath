@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×工程学：运筹学的优化方法
 
 ## 概述
@@ -102,6 +107,7 @@ mindmap
         因果回路
         存量流量
         反馈
+
 ```
 
 ---
@@ -129,6 +135,7 @@ graph TD
     style LP fill:#e3f2fd
     style IP fill:#fff3e0
     style SP fill:#e8f5e9
+
 ```
 
 ---
@@ -188,6 +195,7 @@ mindmap
         Gordon-Newell
         吞吐率
         瓶颈分析
+
 ```
 
 ---

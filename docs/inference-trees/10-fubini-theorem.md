@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Fubini定理证明链
 
 ## 概述
@@ -41,6 +49,7 @@ graph TD
     
     style E3 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style D2 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 核心定理
@@ -60,7 +69,9 @@ $$\int_{X \times Y} f d(\mu \times \nu) = \int_X \left(\int_Y f(x,y) d\nu\right)
 3. 累次积分相等且等于重积分
 
 **依赖关系**：
+
 ```
+
 乘积测度构造
     ↓
 截口可测性
@@ -72,4 +83,5 @@ $$\int_{X \times Y} f d(\mu \times \nu) = \int_X \left(\int_Y f(x,y) d\nu\right)
 Tonelli定理
     ↓
 Fubini定理(可积情形)
+
 ```

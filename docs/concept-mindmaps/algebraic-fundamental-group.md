@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 基本群思维导图
 
 ## 概述
@@ -80,6 +88,7 @@ mindmap
       与同调关系
         Hurewicz同态
         π₁的Abel化
+
 ```
 
 ## 常见空间的基本群

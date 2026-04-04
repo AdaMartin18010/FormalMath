@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Morse理论 (Morse Theory)
 
 ## 中心概念精确定义
@@ -126,6 +134,7 @@ $c_0 = 1, c_1 = 2, c_2 = 1$，$b_0 = 1, b_1 = 2, b_2 = 1$（满足Morse等式）
 ### 例子2：复射影空间$\mathbb{C}P^n$
 
 函数$f([z_0:\cdots:z_n]) = \sum k|z_k|^2/\sum|z_k|^2$：
+
 - $n+1$个临界点
 - 指标为$0, 2, 4, \ldots, 2n$
 - 完美的Morse函数
@@ -187,6 +196,7 @@ mindmap
       cuplength
       临界点下界
       拓扑约束
+
 ```
 
 ---

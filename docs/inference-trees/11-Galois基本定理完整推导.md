@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Galois基本定理完整推导
 
 ## 核心定理陈述
@@ -17,6 +22,7 @@ graph TD
     
     C --> D[固定域对应<br/>H ↦ E^H]
     D --> E[[E:E^H] = |H|]
+
     E --> F[Artin定理<br/>E/E^H Galois]
     
     G[中间域K] --> H[伽罗瓦群<br/>Gal(E/K) ≤ G]
@@ -38,6 +44,7 @@ graph TD
     style J fill:#f9f,stroke:#333,stroke-width:2px
     style L fill:#bbf,stroke:#333,stroke-width:1px
     style M fill:#bbf,stroke:#333,stroke-width:1px
+
 ```
 
 ---
@@ -52,6 +59,7 @@ graph TD
     B --> C[正规+可分]
     B --> D[E是F上某可分多项式的分裂域]
     B --> E[[E:F] = |Gal(E/F)|]
+
     B --> F[E^G = F<br/>G = Gal(E/F)]
     
     C --> G[E^G = F 证明]
@@ -59,6 +67,7 @@ graph TD
     E --> I[自同构数量]
     
     style C fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 ### Artin定理
@@ -88,6 +97,7 @@ graph TD
 
 - 显然 $K \subseteq E^{\text{Gal}(E/K)}$
 - 由 Artin：$[E:E^{\text{Gal}(E/K)}] = |\text{Gal}(E/K)| = [E:K]$
+
 - 故相等 ∎
 
 **步骤2**：$\Phi(\Psi(H)) = H$
@@ -95,6 +105,7 @@ graph TD
 - 显然 $H \leq \text{Gal}(E/E^H)$
 - 由 Artin：$|\text{Gal}(E/E^H)| = [E:E^H]$
 - 由定义/证明：$[E:E^H] \leq |H|$
+
 - 故相等 ∎
 
 ---
@@ -116,6 +127,7 @@ graph TD
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style F fill:#bbf,stroke:#333,stroke-width:1px
+
 ```
 
 ### 重要对应表
@@ -147,6 +159,7 @@ graph TD
     
     K -.->|Gal(E/K) = {id}| H1
     Q -.->|Gal(E/Q) = G| G
+
 ```
 
 ### 例子2：双二次扩张 $\mathbb{Q}(\sqrt{2}, \sqrt{3})/\mathbb{Q}$
@@ -176,6 +189,7 @@ graph TD
     K2 -.-> H2
     K3 -.-> H3
     Q -.-> G
+
 ```
 
 - $\sigma: \sqrt{2} \mapsto -\sqrt{2}, \sqrt{3} \mapsto \sqrt{3}$
@@ -198,13 +212,16 @@ graph TD
     
     C --> D{可解群?}
     D -->|是| E[可解扩张列<br/>G = G₀ ⊵ ... ⊵ {e}]
+
     E --> F[根式扩张塔<br/>添加n次根]
     F --> G[f根式可解<br/>根可用根式表示]
     
     D -->|否| H[一般五次以上<br/>非可解群]
+
     H --> I[Abel-Ruffini<br/>无根式解公式]
     
     style D fill:#f9f,stroke:#333,stroke-width:2px
+
 ```
 
 ---

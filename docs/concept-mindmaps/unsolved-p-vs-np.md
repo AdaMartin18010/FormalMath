@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # P vs NP问题 - 思维导图
 
 ## 概述
@@ -59,6 +64,7 @@ mindmap
       EXP
         指数时间
         P ≠ EXP
+
 ```
 
 ---
@@ -107,6 +113,7 @@ graph TD
     style PSPACE fill:#e3f2fd
     style EXP fill:#fce4ec
     style Q1 fill:#ffcdd2
+
 ```
 
 ---
@@ -159,6 +166,7 @@ mindmap
         最优策略NP难
       超级马里奥
         通关NP难
+
 ```
 
 ---
@@ -195,6 +203,7 @@ graph TD
     
     EQ --> |若成立| Yes1
     EQ --> |若不成立| No1
+
     EQ -.-> Maybe1
     
     Maybe1 --> Maybe2
@@ -203,6 +212,7 @@ graph TD
     style EQ fill:#ffcdd2
     style Yes1 fill:#fff3e0
     style No1 fill:#e8f5e9
+
 ```
 
 ---
@@ -256,6 +266,7 @@ mindmap
         避开自然证明障碍
         长期研究项目
         实现困难但潜力巨大
+
 ```
 
 ---
@@ -302,6 +313,7 @@ graph TD
     style R1 fill:#e3f2fd
     style R2 fill:#fff3e0
     style R6 fill:#c8e6c9
+
 ```
 
 ---
@@ -372,6 +384,7 @@ flowchart LR
     style K fill:#e8f5e9
     style L fill:#e8f5e9
     style M fill:#e8f5e9
+
 ```
 
 ---

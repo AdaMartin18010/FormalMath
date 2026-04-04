@@ -472,6 +472,7 @@ class TerminologyChecker:
                 penalty += 0.05
 
         return max(0, 1.0 - penalty)
+
 ```
 
 #### 2. 自动化测试框架
@@ -582,6 +583,7 @@ class UnitTestSuite:
             results['failures'] = [r for r in test_results if r['status'] == 'failed']
 
         return results
+
 ```
 
 #### 3. 质量监控系统
@@ -730,6 +732,7 @@ class ContentQualityCollector:
             quality_metrics['education_score'] /= len(sample_content)
 
         return quality_metrics
+
 ```
 
 ---

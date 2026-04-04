@@ -124,6 +124,7 @@ def modular_exponentiation(base, exp, mod):
         exp >>= 1
         base = (base * base) % mod
     return result
+
 ```
 
 时间复杂度: $O(\log e)$
@@ -146,6 +147,7 @@ def mod_inverse(e, phi):
     if g != 1:
         raise ValueError("逆元不存在")
     return (x % phi + phi) % phi
+
 ```
 
 ---

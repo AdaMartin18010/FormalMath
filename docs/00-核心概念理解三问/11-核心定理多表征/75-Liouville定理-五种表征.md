@@ -65,6 +65,7 @@ $$\left[ f \text{ 整函数 } \land \exists M > 0: |f(z)| \leq M \right] \Righta
 有界 ⟹ 常数
 
 非常数整函数必无界
+
 ```
 
 ### 2.2 反例：非整函数
@@ -76,6 +77,7 @@ $$\left[ f \text{ 整函数 } \land \exists M > 0: |f(z)| \leq M \right] \Righta
     │f(z)│ ≤ 1，但 f 不是常数
     
 但 f 不是整函数（在 z=0 处不解析）
+
 ```
 
 ### 2.3 多项式增长
@@ -88,6 +90,7 @@ $$\left[ f \text{ 整函数 } \land \exists M > 0: |f(z)| \leq M \right] \Righta
     超越整函数：|f(z)| 增长更快
     
 Liouville：有界 = 常数
+
 ```
 
 ---
@@ -167,9 +170,10 @@ print(f"常数函数: 有界={is_bounded}, 常数={is_constant}")
 f_exp = lambda z: np.exp(z)
 is_bounded, is_constant, max_val, std_val = check_liouville(f_exp, bound=1e10)
 print(f"指数函数: 有界={is_bounded}, 最大值≈{max_val:.2e}")
+
 ```
 
-### 4.2 使用Cauchy估计
+## 4.2 使用Cauchy估计
 
 ```python
 def liouville_via_cauchy_estimate(f, n_derivatives=10):
@@ -204,9 +208,10 @@ def liouville_via_cauchy_estimate(f, n_derivatives=10):
 f = lambda z: 5  # 常数函数
 is_const, derivs = liouville_via_cauchy_estimate(f)
 print(f"是常数: {is_const}")
+
 ```
 
-### 4.3 应用：证明代数基本定理
+## 4.3 应用：证明代数基本定理
 
 ```python
 def prove_fundamental_theorem_via_liouville(poly_func):
@@ -217,6 +222,7 @@ def prove_fundamental_theorem_via_liouville(poly_func):
     1. 假设多项式 p(z) 无零点
     2. 则 1/p(z) 是整函数
     3. 如果 p 非常数，则 |p(z)| → ∞ as |z| → ∞
+
     4. 因此 1/p 有界
     5. 由Liouville，1/p 是常数
     6. 矛盾！所以 p 有零点
@@ -226,6 +232,7 @@ def prove_fundamental_theorem_via_liouville(poly_func):
     values = [poly_func(z) for z in large_z]
     
     # 如果 |p(z)| → ∞，则 p 非常数
+
     grows_unbounded = all(abs(v) > abs(values[0]) for v in values[1:])
     
     if grows_unbounded:
@@ -239,6 +246,7 @@ def prove_fundamental_theorem_via_liouville(poly_func):
 # 例子：p(z) = z^2 + 1
 p = lambda z: z**2 + 1
 prove_fundamental_theorem_via_liouville(p)
+
 ```
 
 ---

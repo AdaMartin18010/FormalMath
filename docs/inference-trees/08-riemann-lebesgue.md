@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 黎曼积分 → 勒贝格积分推理树
 
 ## 概述
@@ -46,6 +54,7 @@ graph TD
     
     style D3 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style E1 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 推理步骤详解
@@ -84,10 +93,13 @@ $$m^*(A) = m^*(A \cap E) + m^*(A \cap E^c)$$
 **定理**：若 $f$ 黎曼可积，则 $f$ 勒贝格可积且积分值相等。
 
 **依赖关系**：
+
 ```
+
 黎曼可积 ⇒ 有界+不连续点零测
     ↓
 可测函数
     ↓
 勒贝格可积
+
 ```

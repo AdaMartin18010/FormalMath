@@ -4,6 +4,11 @@ msc_secondary: ['11T71', '11Y16']
 concept_type: "应用可视化"
 visualization_type: "交互流程图、协议序列"
 ---
+msc_primary: "94A60"
+msc_secondary: ['11T71', '11Y16']
+concept_type: "应用可视化"
+visualization_type: "交互流程图、协议序列"
+---
 
 # Diffie-Hellman密钥交换可视化
 
@@ -42,11 +47,13 @@ sequenceDiagram
     B->>B: 计算 s = A^b mod p = g^(ab) mod p
 
     Note over A,B: 共享密钥: s = g^(ab) mod p
+
 ```
 
 ### ASCII详细过程
 
 ```
+
 Diffie-Hellman密钥交换协议
 ═══════════════════════════════════════════════════════════════
 
@@ -130,6 +137,7 @@ Bob计算:   s = A^b = (g^a)^b = g^(ab) mod p
 • SSH 密钥交换
 • VPN 协议 (IPsec)
 • 即时通讯加密 (Signal协议)
+
 ```
 
 ## 参考

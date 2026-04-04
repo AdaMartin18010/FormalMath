@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×计算机科学：密码学的数论代数
 
 ## 概述
@@ -105,6 +110,7 @@ mindmap
       哈希签名
         Lamport签名
         Merkle树
+
 ```
 
 ---
@@ -136,6 +142,7 @@ graph TD
     style DL fill:#ffcdd2
     style ECDL fill:#ffcdd2
     style SVP fill:#ffcdd2
+
 ```
 
 ---
@@ -169,6 +176,7 @@ timeline
          : 透明设置，后量子安全
     2019 : Plonk
          : 通用可信设置
+
 ```
 
 ---
@@ -202,6 +210,7 @@ mindmap
         隐私计算
         外包计算
         安全机器学习
+
 ```
 
 ---

@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from 'react';
-import { X, BarChart3, Sitemap, History, Settings, Moon, Sun, Monitor, Download } from 'lucide-react';
+import { X, BarChart3, Layout, History, Settings, Moon, Sun, Monitor, Download } from 'lucide-react';
 import { cn } from '@utils/classNames';
 import { useDarkMode } from '@hooks/mobile/useDarkMode';
 import { usePWAState } from '@hooks/mobile/useMobileDetect';
@@ -82,7 +82,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
           action: () => handleNavigate('/comparison'),
         },
         {
-          icon: <Sitemap className="w-5 h-5" />,
+          icon: <Layout className="w-5 h-5" />,
           label: '决策树',
           action: () => handleNavigate('/decision-tree'),
         },

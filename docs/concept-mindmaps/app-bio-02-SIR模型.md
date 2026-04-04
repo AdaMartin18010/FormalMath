@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # SIR模型 - 思维导图
 
 ## 概述
@@ -60,6 +65,7 @@ mindmap
       空间结构
         网络传播
         元种群
+
 ```
 
 ---
@@ -71,6 +77,7 @@ graph LR
     subgraph 仓室流动
         A[S<br/>易感者] -->|感染率<br/>βSI/N| B[I<br/>感染者]
         B -->|恢复率<br/>γI| C[R<br/>康复者]
+
     end
     
     subgraph 参数
@@ -87,6 +94,7 @@ graph LR
     style B fill:#ffcdd2
     style C fill:#e8f5e9
     style H fill:#fff3e0
+
 ```
 
 ---
@@ -126,6 +134,7 @@ mindmap
         I(t) ~ exp((R₀-1)γt)
       后期指数衰减
         I(t) ~ exp(-γt)
+
 ```
 
 ---
@@ -166,6 +175,7 @@ graph TD
     style B fill:#e3f2fd
     style I fill:#fff3e0
     style N fill:#e8f5e9
+
 ```
 
 ---
@@ -199,6 +209,7 @@ mindmap
       超扩散
         异质性传播
         超级传播者
+
 ```
 
 ---
@@ -231,6 +242,7 @@ flowchart LR
     
     style B fill:#e3f2fd
     style I fill:#fff3e0
+
 ```
 
 ---

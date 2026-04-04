@@ -297,6 +297,7 @@ class TerminologyDatabase:
                     })
 
         return inconsistencies
+
 ```
 
 #### 2. 术语检查工具
@@ -352,6 +353,7 @@ class TerminologyChecker:
                 penalty += 0.15
 
         return max(0, 1.0 - penalty)
+
 ```
 
 ### 术语标准化流程
@@ -391,6 +393,7 @@ class TerminologyCollector:
             terms.extend(doc_terms)
 
         return terms
+
 ```
 
 #### 2. 术语标准化处理
@@ -425,6 +428,7 @@ class TerminologyStandardizer:
                 results['errors'].append(f"Error in {rule_name}: {str(e)}")
 
         return results
+
 ```
 
 ---

@@ -29,11 +29,13 @@ msc_secondary: ["54D15", "46E15", "97I55"]
 ```mermaid
 flowchart TD
     A[Step 1: 标准化<br/>|f| ≤ 1] --> B[Step 2: 构造F₁<br/>Urysohn引理]
+
     B --> C[Step 3: 迭代逼近<br/>级数构造]
     C --> D[Step 4: 一致收敛<br/>Weierstrass M判别]
     D --> E[结论: 连续扩张]
     
     style D fill:#e8f5e9,stroke:#4caf50
+
 ```
 
 #### 步骤1：标准化
@@ -119,6 +121,7 @@ flowchart TB
     L2T --> L3ANR[L3: 绝对收缩核理论]
     
     style L2T fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+
 ```
 
 ---

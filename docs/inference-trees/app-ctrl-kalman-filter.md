@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Kalman滤波推导链
 
 ## 概述
@@ -52,6 +57,7 @@ graph TD
     style C1 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style D3 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style E4 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -167,6 +173,7 @@ $$P_k = (I - K_kH_k)P_k^-(I - K_kH_k)^T + K_kR_kK_k^T$$
 ## Kalman滤波算法总结
 
 ```
+
 初始化: x̂₀, P₀
 
 对每个时间步 k = 1, 2, ...:
@@ -178,6 +185,7 @@ $$P_k = (I - K_kH_k)P_k^-(I - K_kH_k)^T + K_kR_kK_k^T$$
     Kₖ = Pₖ⁻Hₖ^T(HₖPₖ⁻Hₖ^T + Rₖ)^{-1}
     x̂ₖ = x̂ₖ⁻ + Kₖ(zₖ - Hₖx̂ₖ⁻)
     Pₖ = (I - KₖHₖ)Pₖ⁻
+
 ```
 
 ---
@@ -185,6 +193,7 @@ $$P_k = (I - K_kH_k)P_k^-(I - K_kH_k)^T + K_kR_kK_k^T$$
 ## 依赖关系图
 
 ```
+
 线性系统理论
     ↓
 随机过程基础 ← 高斯分布
@@ -198,6 +207,7 @@ $$P_k = (I - K_kH_k)P_k^-(I - K_kH_k)^T + K_kR_kK_k^T$$
 更新方程
     ↓
 Riccati方程 ← 稳定性分析
+
 ```
 
 ---

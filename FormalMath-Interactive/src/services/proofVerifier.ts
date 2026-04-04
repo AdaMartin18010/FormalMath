@@ -483,13 +483,14 @@ export class ProofVerifier {
     // 特定策略的检查
     switch (tactic.name) {
       case 'intro':
-      case 'intros':
+      case 'intros': {
         // 检查目标是否允许引入
         const currentGoal = state.goals.find(g => g.id === state.currentGoalId);
         if (currentGoal && !currentGoal.conclusion.includes('→') && !currentGoal.conclusion.includes('∀')) {
           return { valid: false, reason: '当前目标不支持引入操作' };
         }
         break;
+      }
     }
 
     return { valid: true };
@@ -506,7 +507,7 @@ export class ProofVerifier {
   }
 
   private findUndefinedVariables(step: ProofStep, state: ProofState): string[] {
-    const undefined: string[] = [];
+    const undefinedVars: string[] = [];
     const definedVars = new Set([
       ...state.context.variables.map(v => v.name),
       ...state.context.constants.map(c => c.name),
@@ -520,7 +521,7 @@ export class ProofVerifier {
     // 这里应该进行更精确的解析
     // 简化版本：假设策略参数可能包含变量引用
 
-    return undefined;
+    return undefinedVars;
   }
 
   private checkWrongTacticUsage(step: ProofStep): { message: string; suggestion: string } | null {

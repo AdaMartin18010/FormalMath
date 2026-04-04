@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×认知科学：认知计算的形式模型
 
 ## 概述
@@ -109,6 +114,7 @@ mindmap
         认知阶段
         联想阶段
         自动化阶段
+
 ```
 
 ---
@@ -143,6 +149,7 @@ graph TD
     style A fill:#e3f2fd
     style DL fill:#e8f5e9
     style B fill:#fff3e0
+
 ```
 
 ---
@@ -200,6 +207,7 @@ mindmap
         模型预测控制
         多任务迁移
         持续学习
+
 ```
 
 ---

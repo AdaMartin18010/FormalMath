@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # version_control
 
 **源文件**: `tools\metadata-system\version_control.py`
@@ -8,6 +16,7 @@
 
 ```python
 class VersionInfo
+
 ```
 
 版本信息
@@ -16,6 +25,7 @@ class VersionInfo
 
 ```python
 class ChangeRecord
+
 ```
 
 变更记录
@@ -24,6 +34,7 @@ class ChangeRecord
 
 ```python
 class VersionControl
+
 ```
 
 文档版本控制系统
@@ -32,6 +43,7 @@ class VersionControl
 
 ```python
 class MetadataVersionManager
+
 ```
 
 元数据版本管理器
@@ -42,6 +54,7 @@ class MetadataVersionManager
 
 ```python
 def main()
+
 ```
 
 主函数

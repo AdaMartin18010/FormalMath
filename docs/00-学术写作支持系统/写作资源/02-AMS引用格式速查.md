@@ -1,10 +1,12 @@
 ---
 msc_primary: "00A99"
 ---
+msc_primary: "00A99"
+---
 
 # AMS引用格式速查
 
-## 1. 文内引用格式
+## 一、文内引用格式
 
 ### 1.1 标准编号引用
 
@@ -22,6 +24,7 @@ For more details, see [3, 7-10, 12].
 % 引用作为句子成分
 In [12], Smith proved that...
 The theorem [12, Thm. 3.1] states that...
+
 ```
 
 ### 1.2 作者-年份引用
@@ -36,38 +39,45 @@ It has been shown (Smith 1882) that...
 % 多作者
 Smith and Jones (1990) showed...
 Smith et al. (1995) proved...
+
 ```
 
-## 2. 参考文献列表格式
+## 二、参考文献列表格式
 
 ### 2.1 书籍
 
 ```
+
 [1] J. P. Serre, A Course in Arithmetic, Graduate Texts in 
     Mathematics, vol. 7, Springer-Verlag, New York, 1973.
 
 [2] M. Artin, Algebra, 2nd ed., Pearson, Boston, 2010.
+
 ```
 
 ### 2.2 期刊文章
 
 ```
+
 [3] A. Wiles, Modular elliptic curves and Fermat's Last Theorem, 
     Ann. of Math. (2) 141 (1995), no. 3, 443-551.
 
 [4] J. H. Silverman, The arithmetic of elliptic curves, 
     Invent. Math. 23 (1974), 179-206.
+
 ```
 
 ### 2.3 预印本与会议
 
 ```
+
 [5] T. Tao, The prime number theorem, arXiv:math/0309380, 2003.
 
 [6] L. Valiant, A theory of the learnable, STOC (1984), 436-445.
+
 ```
 
-## 3. BibTeX条目模板
+## 三、BibTeX条目模板
 
 ### 3.1 @book
 
@@ -78,6 +88,7 @@ Smith et al. (1995) proved...
   publisher = {Publisher},
   year      = {2023}
 }
+
 ```
 
 ### 3.2 @article
@@ -91,6 +102,7 @@ Smith et al. (1995) proved...
   pages   = {123--145},
   year    = {2023}
 }
+
 ```
 
 ### 3.3 @unpublished
@@ -102,6 +114,7 @@ Smith et al. (1995) proved...
   year   = {2024},
   note   = {arXiv:2401.12345}
 }
+
 ```
 
 ---

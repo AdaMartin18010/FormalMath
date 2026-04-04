@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×物理学：广义相对论的微分几何
 
 ## 概述
@@ -95,6 +100,7 @@ mindmap
         圈量子引力
         弦理论
         黑洞全息
+
 ```
 
 ---
@@ -127,6 +133,7 @@ graph TD
     style G1 fill:#e3f2fd
     style R fill:#fff3e0
     style R1 fill:#fff3e0
+
 ```
 
 ---
@@ -189,6 +196,7 @@ mindmap
         TT规范
       脉冲波
         波前奇点
+
 ```
 
 ---

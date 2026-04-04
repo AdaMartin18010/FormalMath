@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 基本群计算策略推理树
 
 ## 概述
@@ -63,6 +71,7 @@ graph TD
     style H fill:#bfb,stroke:#333
     style I fill:#f96,stroke:#333
     style J fill:#f96,stroke:#333
+
 ```
 
 ## 计算策略详解
@@ -90,9 +99,13 @@ graph TD
 
 ### 5. 贴空间（Seifert-van Kampen）
 **定理**: X = U ∪ V，U,V,U∩V 道路连通
+
 ```
+
 π₁(X) ≅ π₁(U) * π₁(V) / N
+
 ```
+
 其中 N 是正规闭包，由 i*(γ)·j*(γ)⁻¹ 生成
 
 **应用**:
@@ -120,6 +133,7 @@ graph TD
 ## 计算流程图
 
 ```
+
 空间X
   ↓
 是否可缩？ → 是 → π₁ = 0
@@ -135,6 +149,7 @@ graph TD
 有覆叠空间？ → 是 → 覆叠空间理论
   ↓ 否
 用CW复形/胞腔逼近
+
 ```
 
 ---

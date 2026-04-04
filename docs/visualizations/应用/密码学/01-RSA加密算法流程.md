@@ -4,6 +4,11 @@ msc_secondary: ['11T71', '14G50']
 concept_type: "应用可视化"
 visualization_type: "流程图、密钥交换"
 ---
+msc_primary: "94A60"
+msc_secondary: ['11T71', '14G50']
+concept_type: "应用可视化"
+visualization_type: "流程图、密钥交换"
+---
 
 # RSA加密算法流程可视化
 
@@ -41,11 +46,13 @@ graph TB
     style F fill:#fce4ec
     style G fill:#fff3e0
     style H fill:#f3e5f5
+
 ```
 
 ### ASCII详细流程
 
 ```
+
 RSA加密算法详细流程
 ═══════════════════════════════════════════════════════════════
 
@@ -130,6 +137,7 @@ Alice要发送消息 m = 123 给 Bob:
 • 数字签名
 • 安全电子邮件 (PGP/GPG)
 • 软件签名验证
+
 ```
 
 ## 参考

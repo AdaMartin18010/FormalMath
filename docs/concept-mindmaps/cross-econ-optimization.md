@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学×经济学：经济优化的数学规划
 
 ## 概述
@@ -101,6 +106,7 @@ mindmap
         市场出清
         价格发现
         算法机制
+
 ```
 
 ---
@@ -126,6 +132,7 @@ graph TD
     style D fill:#e3f2fd
     style C fill:#e8f5e9
     style S fill:#e8f5e9
+
 ```
 
 ---
@@ -175,6 +182,7 @@ mindmap
         总替代
         弱总替代
         多项式可解
+
 ```
 
 ---

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # evaluation_criteria
 
 **源文件**: `tools\assessment-system\evaluation_criteria.py`
@@ -8,6 +16,7 @@
 
 ```python
 class AssessmentType
+
 ```
 
 评估类型枚举
@@ -16,6 +25,7 @@ class AssessmentType
 
 ```python
 class EvaluationLevel
+
 ```
 
 评价等级枚举
@@ -24,6 +34,7 @@ class EvaluationLevel
 
 ```python
 class DimensionWeight
+
 ```
 
 维度权重定义
@@ -32,6 +43,7 @@ class DimensionWeight
 
 ```python
 class ConceptualUnderstanding
+
 ```
 
 概念理解 (Conceptual Understanding)
@@ -42,6 +54,7 @@ class ConceptualUnderstanding
 
 ```python
 class ProceduralFluency
+
 ```
 
 程序流畅性 (Procedural Fluency)
@@ -52,6 +65,7 @@ class ProceduralFluency
 
 ```python
 class StrategicCompetence
+
 ```
 
 策略能力 (Strategic Competence)
@@ -62,6 +76,7 @@ class StrategicCompetence
 
 ```python
 class AdaptiveReasoning
+
 ```
 
 适应性推理 (Adaptive Reasoning)
@@ -72,6 +87,7 @@ class AdaptiveReasoning
 
 ```python
 class ProductiveDisposition
+
 ```
 
 数学产出 (Productive Disposition)
@@ -82,6 +98,7 @@ class ProductiveDisposition
 
 ```python
 class LearningParticipation
+
 ```
 
 学习参与度指标
@@ -90,6 +107,7 @@ class LearningParticipation
 
 ```python
 class LearningInitiative
+
 ```
 
 学习主动性指标
@@ -98,6 +116,7 @@ class LearningInitiative
 
 ```python
 class LearningProgress
+
 ```
 
 学习进度指标
@@ -106,6 +125,7 @@ class LearningProgress
 
 ```python
 class ValueAddedMetrics
+
 ```
 
 增值评价指标
@@ -114,6 +134,7 @@ class ValueAddedMetrics
 
 ```python
 class OperationalAbility
+
 ```
 
 操作能力指标
@@ -122,6 +143,7 @@ class OperationalAbility
 
 ```python
 class CreativeProduct
+
 ```
 
 创造产品指标
@@ -130,6 +152,7 @@ class CreativeProduct
 
 ```python
 class CreativityMetrics
+
 ```
 
 创造性指标
@@ -138,6 +161,7 @@ class CreativityMetrics
 
 ```python
 class MathematicalAbilityProfile
+
 ```
 
 数学能力档案
@@ -148,6 +172,7 @@ class MathematicalAbilityProfile
 
 ```python
 class EvaluationCriteria
+
 ```
 
 评价标准定义
@@ -158,6 +183,7 @@ class EvaluationCriteria
 
 ```python
 class LearnerProfile
+
 ```
 
 学习者档案

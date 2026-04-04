@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 <div class="language-switcher">
 
 **Languages**: **🇨🇳 中文** | [🇬🇧 English](../en/ZFC公理体系\ZFC公理体系完整形式化-国际标准对照版.md)

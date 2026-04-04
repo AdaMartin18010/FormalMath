@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Sobolev空间 (Sobolev Spaces)
 
 ## 中心概念精确定义
@@ -27,7 +35,9 @@ mindmap
         线性性
         Leibniz法则
       例子
+
         |x|的导数
+
         阶梯函数
     Sobolev空间
       定义
@@ -79,6 +89,7 @@ mindmap
       例子
         Laplace方程
         散度型方程
+
 ```
 
 ---
@@ -90,6 +101,7 @@ mindmap
 **动机**：经典导数要求太强，许多物理问题的解不可微。
 
 **例子**：$f(x) = |x|$ 在 $\mathbb{R}$ 上
+
 - 经典导数：在 $x=0$ 不存在
 - 弱导数：$g(x) = \text{sgn}(x)$（符号函数）
 
@@ -249,6 +261,7 @@ $$J(u) = \int_\Omega |\nabla u|^2$$
 ### 推广概念
 
 ```
+
 Sobolev空间 W^{k,p} → Besov空间 B^{s}_{p,q}
       ↓
    Triebel-Lizorkin F^{s}_{p,q}
@@ -256,6 +269,7 @@ Sobolev空间 W^{k,p} → Besov空间 B^{s}_{p,q}
    各向异性Sobolev
       ↓
    加权Sobolev
+
 ```
 
 ---

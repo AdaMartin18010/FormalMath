@@ -119,7 +119,7 @@ export const LeanCodeEditor: React.FC<LeanCodeEditorProps> = ({
     
     return lines.map((line, i) => {
       // 简单的高亮规则
-      let highlightedLine = line
+      const highlightedLine = line
         // 关键字
         .replace(/\b(import|theorem|lemma|example|def|variable|variables|open|namespace|end|by|have|let|show|suffices|where)\b/g, 
           '<span class="text-purple-600 font-semibold">$1</span>')

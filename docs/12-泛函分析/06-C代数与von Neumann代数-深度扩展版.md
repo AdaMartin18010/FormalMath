@@ -2,6 +2,9 @@
 msc_primary: "46Lxx"
 msc_secondary: ['46L05', '46L10', '46L35', '46L87', '47L30']
 ---
+msc_primary: "46Lxx"
+msc_secondary: ['46L05', '46L10', '46L35', '46L87', '47L30']
+---
 
 # 12.06 C*-代数与von Neumann代数深度扩展版 / C*-Algebras and von Neumann Algebras: In-Depth Extensions
 
@@ -100,6 +103,7 @@ $$\Gamma(a)(\chi) = \chi(a)$$
 则：
 
 1. $\Gamma$ 是连续代数同态，$\|\Gamma(a)\|_\infty = r(a)$
+
 2. $\sigma(a) = \{\chi(a) : \chi \in \hat{\mathcal{A}}\}$
 3. 若 $\mathcal{A}$ 是C*-代数，则 $\Gamma$ 是等距* -同构
 

@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 数学高级结构对比矩阵
 
 本目录包含FormalMath项目中关于数学高级结构的15个对比矩阵文档，系统对比了现代数学核心领域的关键概念。

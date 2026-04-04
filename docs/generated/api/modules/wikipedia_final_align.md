@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # wikipedia_final_align
 
 **源文件**: `tools\wikipedia_final_align.py`
@@ -8,6 +16,7 @@
 
 ```python
 def load_concepts(yaml_path: str)
+
 ```
 
 加载概念列表
@@ -20,6 +29,7 @@ def load_concepts(yaml_path: str)
 
 ```python
 def generate_multilang_table(concepts)
+
 ```
 
 生成多语言对照表
@@ -32,6 +42,7 @@ def generate_multilang_table(concepts)
 
 ```python
 def generate_json_output(table, output_path: str)
+
 ```
 
 生成JSON输出
@@ -45,6 +56,7 @@ def generate_json_output(table, output_path: str)
 
 ```python
 def generate_markdown_report(table, output_path: str)
+
 ```
 
 生成Markdown报告
@@ -58,6 +70,7 @@ def generate_markdown_report(table, output_path: str)
 
 ```python
 def update_yaml_with_multilang(yaml_path: str, table, output_path: str)
+
 ```
 
 更新YAML文件添加多语言字段
@@ -72,6 +85,7 @@ def update_yaml_with_multilang(yaml_path: str, table, output_path: str)
 
 ```python
 def main()
+
 ```
 
 主函数

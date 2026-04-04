@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 变量替换公式推导
 
 ## 概述
@@ -8,6 +16,7 @@ graph TD
     subgraph 线性变换
         A1[线性映射] --> A2[体积变化率]
         A2 --> A3[|det T|几何意义]
+
         A3 --> A4[平行多面体体积]
     end
     
@@ -15,16 +24,19 @@ graph TD
         B1[可微映射] --> B2[局部线性逼近]
         B2 --> B3[Jacobi矩阵]
         B3 --> B4[|det Df|局部体积比]
+
     end
     
     subgraph 简单情形
         A4 --> C1[线性变量替换]
         C1 --> C2[∫f(Ax)|det A|dx]
+
     end
     
     subgraph 一般公式
         B4 --> D1[非线性变量替换]
         D1 --> D2[∫f(φx)|det Dφ|dx]
+
         C2 --> D2
     end
     
@@ -42,6 +54,7 @@ graph TD
     
     style D2 fill:#e1f5ff,stroke:#01579b,stroke-width:3px
     style F1 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
+
 ```
 
 ## 核心定理
@@ -71,6 +84,7 @@ $$\int_V f(y) dy = \int_U f(\varphi(x)) |\det D\varphi(x)| dx$$
 ## 依赖关系
 
 ```
+
 行列式几何意义
     ↓
 线性变换积分公式
@@ -80,4 +94,5 @@ $$\int_V f(y) dy = \int_U f(\varphi(x)) |\det D\varphi(x)| dx$$
 简单函数逼近
     ↓
 一般变量替换公式
+
 ```

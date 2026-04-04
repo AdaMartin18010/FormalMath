@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 导出代数几何：无穷范畴基础推理树
 
 ## 概述
@@ -61,6 +69,7 @@ graph TD
     style I fill:#f88,stroke:#333
     style J fill:#f77,stroke:#333
     style K fill:#bfb,stroke:#333
+
 ```
 
 ## 单纯集合详解
@@ -74,23 +83,31 @@ graph TD
 ### 2. 单纯集合
 
 ```
+
 X: Δ^op → Set
 X_n = X([n]) 称为n-单形
+
 ```
 
 **面与退化映射**：
+
 ```
+
 d_i: X_n → X_{n-1}  (面)
 s_i: X_n → X_{n+1}  (退化)
+
 ```
 
 ### 3. Kan复形
 
 X满足Kan条件：每个inner horn Λ^n_i → X可填充：
+
 ```
+
 Λ^n_i → X
   ↓     ↗
  Δ^n
+
 ```
 
 ## 拟范畴详解
@@ -98,8 +115,11 @@ X满足Kan条件：每个inner horn Λ^n_i → X可填充：
 ### 1. 弱Kan条件
 
 拟范畴C: 满足所有**inner horns**可填充：
+
 ```
+
 ∀ 0 < i < n: Hom(Λ^n_i, C) ← Hom(Δ^n, C)
+
 ```
 
 ### 2. 同伦范畴
@@ -124,9 +144,11 @@ C是稳定的，如果：
 ### 平移
 
 ```
+
 Σ: C → C  ( suspension )
 Ω: C → C  ( loop )
 Σ ⊣ Ω 是等价
+
 ```
 
 ### t-结构
@@ -154,7 +176,9 @@ C是稳定的，如果：
 ### 与无穷范畴的关系
 
 ```
+
 C[W⁻¹] 的无穷版本 ↔ N(C)[W⁻¹]
+
 ```
 
 ---

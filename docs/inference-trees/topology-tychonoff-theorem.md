@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Tychonoff定理证明推理树
 
 ## 概述
@@ -60,6 +68,7 @@ graph TD
     style G fill:#f96,stroke:#333
     style H fill:#f96,stroke:#333
     style I fill:#f66,stroke:#333
+
 ```
 
 ## 证明详解

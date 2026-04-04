@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # demo
 
 **源文件**: `tools\assessment-system\demo.py`
@@ -8,6 +16,7 @@
 
 ```python
 def print_separator(title: str = )
+
 ```
 
 打印分隔线
@@ -20,6 +29,7 @@ def print_separator(title: str = )
 
 ```python
 def print_subsection(title: str)
+
 ```
 
 打印子标题
@@ -32,6 +42,7 @@ def print_subsection(title: str)
 
 ```python
 def demo_basic_evaluation()
+
 ```
 
 演示基础评估功能
@@ -40,6 +51,7 @@ def demo_basic_evaluation()
 
 ```python
 def demo_scoring_engine()
+
 ```
 
 演示评分引擎
@@ -48,6 +60,7 @@ def demo_scoring_engine()
 
 ```python
 def demo_feedback_generation()
+
 ```
 
 演示反馈生成
@@ -56,6 +69,7 @@ def demo_feedback_generation()
 
 ```python
 def demo_full_assessment_system()
+
 ```
 
 演示完整评估系统
@@ -64,6 +78,7 @@ def demo_full_assessment_system()
 
 ```python
 def demo_performance_assessment()
+
 ```
 
 演示表现性评价
@@ -72,6 +87,7 @@ def demo_performance_assessment()
 
 ```python
 def demo_divergent_assessment()
+
 ```
 
 演示发散思维评价
@@ -80,6 +96,7 @@ def demo_divergent_assessment()
 
 ```python
 def demo_realtime_feedback()
+
 ```
 
 演示实时反馈
@@ -88,6 +105,7 @@ def demo_realtime_feedback()
 
 ```python
 def demo_diagnosis_integration()
+
 ```
 
 演示认知诊断系统对接
@@ -96,6 +114,7 @@ def demo_diagnosis_integration()
 
 ```python
 def main()
+
 ```
 
 主函数

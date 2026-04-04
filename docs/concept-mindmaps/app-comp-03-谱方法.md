@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 谱方法 - 思维导图
 
 ## 概述
@@ -59,6 +64,7 @@ mindmap
       球谐函数
         球面问题
         大气/海洋
+
 ```
 
 ---
@@ -92,6 +98,7 @@ graph TD
     style B fill:#e3f2fd
     style F fill:#fff3e0
     style I fill:#e8f5e9
+
 ```
 
 ---
@@ -140,6 +147,7 @@ mindmap
       权重
         (1-x²)^{-1/2}
         积分公式
+
 ```
 
 ---
@@ -166,6 +174,7 @@ graph TD
     
     style D fill:#e3f2fd
     style G fill:#fff3e0
+
 ```
 
 ---
@@ -197,6 +206,7 @@ flowchart LR
     
     style D fill:#e3f2fd
     style F fill:#fff3e0
+
 ```
 
 ---

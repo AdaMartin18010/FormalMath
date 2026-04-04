@@ -2,6 +2,9 @@
 msc_primary: "00A05"
 msc_secondary: ['03E30', '00-XX', '03E10']
 ---
+msc_primary: "00A05"
+msc_secondary: ['03E30', '00-XX', '03E10']
+---
 
 # Lean 4形式化实现 - 基数序数理论
 
@@ -104,6 +107,7 @@ def aleph0 : Cardinal :=
 -- 连续统基数
 def continuum : Cardinal :=
   ⟨ℝ, ⟨⟨0⟩⟩⟩
+
 ```
 
 ### 序数定义
@@ -111,13 +115,16 @@ def continuum : Cardinal :=
 ```lean
 -- 序数类型定义
 inductive Ordinal where
+
   | zero : Ordinal
   | succ : Ordinal → Ordinal
   | limit : (ℕ → Ordinal) → Ordinal
+
   deriving Repr
 
 -- 序数相等性
 def Ordinal.eq : Ordinal → Ordinal → Prop
+
   | zero, zero => True
   | succ α, succ β => α.eq β
   | limit f, limit g => ∀ n, (f n).eq (g n)
@@ -125,6 +132,7 @@ def Ordinal.eq : Ordinal → Ordinal → Prop
 
 -- 序数序关系
 def Ordinal.le : Ordinal → Ordinal → Prop
+
   | zero, _ => True
   | succ α, zero => False
   | succ α, succ β => α.le β
@@ -146,12 +154,14 @@ instance : LT Ordinal where
 
 -- 自然数到序数的嵌入
 def natToOrdinal : ℕ → Ordinal
+
   | 0 => Ordinal.zero
   | n + 1 => Ordinal.succ (natToOrdinal n)
 
 -- ω序数
 def omega : Ordinal :=
   Ordinal.limit natToOrdinal
+
 ```
 
 ## 🔢 运算实现
@@ -199,6 +209,7 @@ theorem cardinal_add_assoc (κ λ μ : Cardinal) :
   · exact ⟨λ | Sum.inl x => Sum.inl (Sum.inl x)
            | Sum.inr (Sum.inl x) => Sum.inl (Sum.inr x)
            | Sum.inr (Sum.inr x) => Sum.inr x⟩
+
 ```
 
 ### 序数运算
@@ -206,18 +217,21 @@ theorem cardinal_add_assoc (κ λ μ : Cardinal) :
 ```lean
 -- 序数加法
 def Ordinal.add : Ordinal → Ordinal → Ordinal
+
   | α, zero => α
   | α, succ β => succ (add α β)
   | α, limit f => limit (λ n => add α (f n))
 
 -- 序数乘法
 def Ordinal.mul : Ordinal → Ordinal → Ordinal
+
   | α, zero => zero
   | α, succ β => add (mul α β) α
   | α, limit f => limit (λ n => mul α (f n))
 
 -- 序数指数
 def Ordinal.pow : Ordinal → Ordinal → Ordinal
+
   | α, zero => succ zero
   | α, succ β => mul (pow α β) α
   | α, limit f => limit (λ n => pow α (f n))
@@ -226,11 +240,15 @@ def Ordinal.pow : Ordinal → Ordinal → Ordinal
 theorem ordinal_add_assoc (α β γ : Ordinal) :
   (α.add β).add γ = α.add (β.add γ) := by
   induction γ with
+
   | zero => simp [Ordinal.add]
   | succ γ ih =>
+
     simp [Ordinal.add]
     rw [ih]
+
   | limit f ih =>
+
     simp [Ordinal.add]
     apply Ordinal.eq.mpr
     intro n
@@ -239,12 +257,16 @@ theorem ordinal_add_assoc (α β γ : Ordinal) :
 theorem ordinal_mul_assoc (α β γ : Ordinal) :
   (α.mul β).mul γ = α.mul (β.mul γ) := by
   induction γ with
+
   | zero => simp [Ordinal.mul]
   | succ γ ih =>
+
     simp [Ordinal.mul]
     rw [ih]
     rw [ordinal_add_assoc]
+
   | limit f ih =>
+
     simp [Ordinal.mul]
     apply Ordinal.eq.mpr
     intro n
@@ -253,16 +275,21 @@ theorem ordinal_mul_assoc (α β γ : Ordinal) :
 theorem ordinal_pow_add (α β γ : Ordinal) :
   α.pow (β.add γ) = (α.pow β).mul (α.pow γ) := by
   induction γ with
+
   | zero => simp [Ordinal.pow, Ordinal.add, Ordinal.mul]
   | succ γ ih =>
+
     simp [Ordinal.pow, Ordinal.add, Ordinal.mul]
     rw [ih]
     rw [ordinal_mul_assoc]
+
   | limit f ih =>
+
     simp [Ordinal.pow, Ordinal.add]
     apply Ordinal.eq.mpr
     intro n
     exact ih n
+
 ```
 
 ## 🎯 定理证明
@@ -297,6 +324,7 @@ axiom continuum_hypothesis : continuum = aleph0.pow (finiteCardinal 1)
 -- 广义连续统假设
 axiom generalized_continuum_hypothesis :
   ∀ κ : Cardinal, κ.pow (finiteCardinal 2) = κ.succ
+
 ```
 
 ### 序数定理
@@ -307,21 +335,29 @@ theorem ordinal_well_ordered (α : Ordinal) :
   WellFounded (λ x y : α => x.lt y) := by
   -- 通过结构归纳证明
   induction α with
+
   | zero =>
+
     constructor
     intro x
     cases x
+
   | succ α ih =>
+
     constructor
     intro x
     cases x with
+
     | zero => exact ⟨⟩
     | succ x => exact ih.wf x
   | limit f ih =>
+
     constructor
     intro x
     cases x with
+
     | limit g =>
+
       -- 需要更复杂的证明
       sorry
 
@@ -329,12 +365,18 @@ theorem ordinal_well_ordered (α : Ordinal) :
 theorem ordinal_add_assoc_complete (α β γ : Ordinal) :
   (α.add β).add γ = α.add (β.add γ) := by
   induction γ with
+
   | zero =>
+
     simp [Ordinal.add]
+
   | succ γ ih =>
+
     simp [Ordinal.add]
     rw [ih]
+
   | limit f ih =>
+
     simp [Ordinal.add]
     apply Ordinal.eq.mpr
     intro n
@@ -344,17 +386,24 @@ theorem ordinal_add_assoc_complete (α β γ : Ordinal) :
 theorem ordinal_mul_distrib (α β γ : Ordinal) :
   α.mul (β.add γ) = (α.mul β).add (α.mul γ) := by
   induction γ with
+
   | zero =>
+
     simp [Ordinal.add, Ordinal.mul]
+
   | succ γ ih =>
+
     simp [Ordinal.add, Ordinal.mul]
     rw [ih]
     rw [ordinal_add_assoc]
+
   | limit f ih =>
+
     simp [Ordinal.add, Ordinal.mul]
     apply Ordinal.eq.mpr
     intro n
     exact ih n
+
 ```
 
 ## 🔄 选择公理
@@ -381,6 +430,7 @@ theorem product_nonempty {α : Type u} {β : α → Type v} (h : ∀ a, Nonempty
   Nonempty (∀ a, β a) := by
   -- 使用选择公理
   sorry
+
 ```
 
 ## 🏗️ 大基数理论
@@ -428,6 +478,7 @@ theorem weakly_compact_properties (κ : Cardinal) (h : isWeaklyCompact κ) :
   isInaccessible κ ∧
   ∀ f : κ → κ, ∃ λ < κ, f '' λ ⊆ λ := by
   exact h
+
 ```
 
 ## 🎮 应用实现
@@ -456,6 +507,7 @@ theorem type_cardinal_properties (α β : Type u) :
   constructor
   · exact cardinal_add_comm (TypeCardinal α) (TypeCardinal β)
   · exact cardinal_mul_comm (TypeCardinal α) (TypeCardinal β)
+
 ```
 
 ### 程序验证应用
@@ -469,6 +521,7 @@ structure ProgramState where
 -- 递归函数复杂度
 def recursiveComplexity (α : Ordinal) : Ordinal :=
   match α with
+
   | Ordinal.zero => Ordinal.zero
   | Ordinal.succ β => Ordinal.succ (recursiveComplexity β)
   | Ordinal.limit f => Ordinal.limit (λ n => recursiveComplexity (f n))
@@ -480,13 +533,16 @@ theorem program_termination (state : ProgramState) :
     state'.depth < state.depth ∧
     state'.complexity.lt state.complexity := by
   cases state.depth with
+
   | zero => left; rfl
   | succ n =>
+
     right
     exists ⟨n, recursiveComplexity state.complexity⟩
     constructor
     · simp
     · sorry
+
 ```
 
 ### 模型论应用
@@ -516,6 +572,7 @@ theorem model_cardinality_product {α β : Type u} (M : Model α) (N : Model β)
   constructor
   · exact ⟨λ (x, y) => (x, y)⟩
   · exact ⟨λ (x, y) => (x, y)⟩
+
 ```
 
 ## 📊 测试和验证
@@ -537,6 +594,7 @@ theorem model_cardinality_product {α β : Type u} (M : Model α) (N : Model β)
 #check cardinal_add_comm (finiteCardinal 3) (finiteCardinal 4)
 #check ordinal_add_assoc (natToOrdinal 2) (natToOrdinal 3) (natToOrdinal 4)
 #check cantor_theorem (finiteCardinal 3)
+
 ```
 
 ### 性能测试
@@ -555,6 +613,7 @@ def ordinal_performance_test : IO Unit := do
   let result := (natToOrdinal 1000).pow (natToOrdinal 100)
   let end := IO.monoMsNow
   IO.println s!"Time: {end - start}ms"
+
 ```
 
 ## 🎯 质量评估
@@ -604,6 +663,7 @@ def β := omega
 #eval α.add β
 #eval α.mul β
 #eval α.pow β
+
 ```
 
 ### 高级使用
@@ -622,6 +682,7 @@ def my_application (α : Type) : Cardinal :=
 def optimized_operation (κ λ : Cardinal) : Cardinal :=
   -- 使用优化的算法
   κ.add λ
+
 ```
 
 ## 📈 总结

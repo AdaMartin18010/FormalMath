@@ -40,6 +40,7 @@ msc_secondary: ["03B35", "03B70", "68-XX"]
 - 对齐统计与下一步建议
 
 **统计**:
+
 ```yaml
 total_concepts: 23
 p0_aligned: 9
@@ -49,6 +50,7 @@ completed: 10
 in_progress: 4
 pending: 9
 overall_completeness: 65%
+
 ```
 
 ### 2. 10个核心定理Lean4形式化
@@ -216,6 +218,7 @@ overall_completeness: 65%
 
 **证明要点**:
 - 对角线集合 D = {x | x ∉ f(x)}
+
 - 反证法证明不存在满射
 - |A| < |P(A)|
 
@@ -238,6 +241,7 @@ overall_completeness: 65%
 ### 已整合的分支
 
 ```
+
 docs/
 ├── 02-代数结构/
 │   └── 02-核心理论/
@@ -262,6 +266,7 @@ docs/
         ├── FermatLittleTheorem.lean
         ├── CantorDiagonal.lean
         └── GodelIncompleteness.lean
+
 ```
 
 ---

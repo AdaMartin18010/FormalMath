@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 ﻿---
 title: "07 Python实现 模论算法"
 msc_primary: ["68W30"]
@@ -10,7 +15,7 @@ msc_secondary: ["13C99"]
 
 本文档提供模论核心算法的Python实现，基于国际标准数学定义，涵盖基础模论算法、同调代数计算、代数几何应用等。
 
-## 1. 基础模论算法
+## 一、基础模论算法
 
 ### 1.1 模的定义与基本运算
 
@@ -211,9 +216,10 @@ def create_quotient_module(module: Module, submodule: List) -> Module:
 
     return Module(unique_cosets, quotient_add, quotient_scalar_multiply,
                   module.ring, quotient_neg)
+
 ```
 
-### 1.2 模同态与同构
+## 1.2 模同态与同构
 
 ```python
 class ModuleHomomorphism:
@@ -303,9 +309,10 @@ def is_isomorphic(module1: Module, module2: Module) -> bool:
         return isomorphism.is_isomorphism()
     except:
         return False
+
 ```
 
-## 2. 同调代数算法
+## 二、同调代数算法
 
 ### 2.1 链复形计算
 
@@ -404,6 +411,7 @@ def compute_ext_functors(ring, module_M: Module, module_N: Module, max_degree: i
         cohomology_groups.append(compute_cohomology(hom_complex, n))
 
     return cohomology_groups
+
 ```
 
 ### 2.2 谱序列计算
@@ -464,9 +472,10 @@ def grothendieck_spectral_sequence(functor_F: Callable, functor_G: Callable,
     differentials = compute_spectral_differentials(E2_terms)
 
     return SpectralSequence(E2_terms, differentials)
+
 ```
 
-## 3. 代数几何算法
+## 三、代数几何算法
 
 ### 3.1 概形与层
 
@@ -530,6 +539,7 @@ def compute_sheaf_cohomology(scheme: Scheme, sheaf_F: Sheaf, degree_i: int) -> M
     cohomology = compute_cohomology(cech_complex, degree_i)
 
     return cohomology
+
 ```
 
 ### 3.2 向量丛操作
@@ -575,9 +585,10 @@ def compute_characteristic_classes(vector_bundle: VectorBundle) -> Dict:
         'todd': todd_class,
         'euler': euler_class
     }
+
 ```
 
-## 4. 应用示例
+## 四、应用示例
 
 ### 4.1 基本模操作示例
 
@@ -661,9 +672,10 @@ if __name__ == "__main__":
     example_basic_module_operations()
     example_homological_algebra()
     example_algebraic_geometry()
+
 ```
 
-## 5. 性能优化
+## 五、性能优化
 
 ### 5.1 算法复杂度分析
 
@@ -713,9 +725,10 @@ def parallel_homology_computation(chain_complex: ChainComplex):
         )
 
     return homology_groups
+
 ```
 
-## 6. 总结
+## 六、总结
 
 本文档提供了模论核心算法的Python实现，包括：
 
@@ -727,7 +740,7 @@ def parallel_homology_computation(chain_complex: ChainComplex):
 
 所有算法都基于国际标准数学定义，提供了完整的理论背景和实际应用示例。
 
-## 7. 自由模、投射模与内射模
+## 七、自由模、投射模与内射模
 
 ### 7.1 自由模
 
@@ -790,6 +803,7 @@ def create_free_module(ring, rank: int) -> FreeModule:
              for j in range(rank)]
 
     return FreeModule(ring, basis, rank)
+
 ```
 
 ### 7.2 投射模
@@ -837,6 +851,7 @@ class ProjectiveModule(Module):
         # 投射模的判定需要检查提升性质
         # 这里提供框架
         return True
+
 ```
 
 ### 7.3 内射模
@@ -865,9 +880,10 @@ class InjectiveModule(Module):
         # 内射模的判定需要检查延拓性质
         # 这里提供框架
         return True
+
 ```
 
-## 8. 模的张量积
+## 八、模的张量积
 
 ### 8.1 张量积实现
 
@@ -927,9 +943,10 @@ class TensorProductModule(Module):
     def tensor_product_element(self, elem1, elem2):
         """创建张量积元素"""
         return (elem1.value, elem2.value)
+
 ```
 
-## 9. 模的直和与直积
+## 九、模的直和与直积
 
 ### 9.1 直和
 
@@ -998,6 +1015,7 @@ class DirectSumModule(Module):
             )
             return direct_sum_elem
         return inj_func
+
 ```
 
 ### 9.2 直积
@@ -1021,9 +1039,10 @@ class DirectProductModule(Module):
         # 对于有限情况，直积和直和相同
         super().__init__(*modules)
         self.modules = modules
+
 ```
 
-## 10. 商模
+## 十、商模
 
 ### 10.1 商模构造
 
@@ -1099,6 +1118,7 @@ class QuotientModule(Module):
                     return rep
             return element.value
         return proj_func
+
 ```
 
 ## 11. 模的分解
@@ -1171,6 +1191,7 @@ def create_submodule(module: Module, elements: List) -> Module:
     """创建子模"""
     return Module([e.value for e in elements], module.add,
                  module.scalar_multiply, module.ring, module.neg_func)
+
 ```
 
 ## 12. 可视化工具
@@ -1226,6 +1247,7 @@ def visualize_module_homomorphism(homomorphism: ModuleHomomorphism):
             node_size=1000, font_size=8, arrows=True, arrowsize=20)
     plt.title("模同态图")
     plt.show()
+
 ```
 
 ## 13. 模论计算器
@@ -1298,6 +1320,7 @@ class ModuleTheoryCalculator:
         print(f"是否为不可分解: {analysis['indecomposable']}")
         print(f"子模数量: {len(analysis['submodules'])}")
         print("=" * 60)
+
 ```
 
 ## 14. 应用示例
@@ -1343,6 +1366,7 @@ def complete_module_example():
 
 if __name__ == '__main__':
     complete_module_example()
+
 ```
 
 ## 15. 总结

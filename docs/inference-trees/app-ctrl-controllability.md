@@ -1,3 +1,8 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # 可控性判定理论推导链
 
 ## 概述
@@ -53,6 +58,7 @@ graph TD
     style C2 fill:#fff8e1,stroke:#ff6f00,stroke-width:2px
     style D3 fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     style E4 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+
 ```
 
 ---
@@ -165,6 +171,7 @@ $$A_c = \begin{bmatrix} 0 & 1 & 0 & \cdots & 0 \\ 0 & 0 & 1 & \cdots & 0 \\ \vdo
 ## 依赖关系图
 
 ```
+
 线性系统理论
     ↓
 状态空间分析 ← 矩阵指数
@@ -178,6 +185,7 @@ PBH判据 ← 特征分析
 Kalman分解 ← 线性代数
     ↓
 可控标准型 + 极点配置
+
 ```
 
 ---

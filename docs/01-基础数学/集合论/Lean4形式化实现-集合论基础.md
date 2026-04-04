@@ -2,6 +2,9 @@
 msc_primary: "03E20"
 msc_secondary: ['03E30', '03E15', '68Vxx']
 ---
+msc_primary: "03E20"
+msc_secondary: ['03E30', '03E15', '68Vxx']
+---
 
 # 集合论基础 - Lean4形式化实现 / Set Theory Foundation - Lean4 Formal Implementation
 
@@ -101,6 +104,7 @@ def Membership (α : Type u) := Membership α (Set α)
 Defines the equality relation of sets
 --/
 def SetEquality (α : Type u) := ∀ (A B : Set α), A = B ↔ ∀ x, x ∈ A ↔ x ∈ B
+
 ```
 
 ### 1.2 基本集合定义 / Basic Set Definitions
@@ -151,6 +155,7 @@ begin
     simp [Singleton],
     exact id }
 end
+
 ```
 
 ## 🔗 2. 集合运算 / Set Operations
@@ -257,6 +262,7 @@ begin
     intro x,
     simp [Difference] }
 end
+
 ```
 
 ### 2.2 高级运算 / Advanced Operations
@@ -322,6 +328,7 @@ begin
     intro B,
     simp [PowerSet, mem_powerset] }
 end
+
 ```
 
 ## 🔗 3. 集合关系 / Set Relations
@@ -411,6 +418,7 @@ begin
     intro h,
     exact ssubset_of_subset_of_ne h.1 h.2.1 }
 end
+
 ```
 
 ### 3.2 相等关系 / Equality Relations
@@ -460,6 +468,7 @@ begin
     intro h,
     exact h.1.trans h.2 }
 end
+
 ```
 
 ## 📐 4. 集合公理 / Set Axioms
@@ -549,6 +558,7 @@ begin
   existsi (PowerSet α A),
   exact power_set_properties α A
 end
+
 ```
 
 ### 4.2 分离公理模式 / Axiom Schema of Separation
@@ -567,6 +577,7 @@ theorem axiom_schema_of_separation (α : Type u) (A : Set α) (P : α → Prop) 
   ∃ B : Set α, ∀ x : α, x ∈ B ↔ x ∈ A ∧ P x :=
 begin
   existsi {x ∈ A | P x},
+
   intro x,
   simp [mem_sep]
 end
@@ -587,6 +598,7 @@ begin
   intro y,
   simp [mem_image]
 end
+
 ```
 
 ## 🎯 5. 重要定理 / Important Theorems
@@ -619,6 +631,7 @@ begin
     ext x,
     simp [Union, Intersection, mem_compl_iff, mem_union, mem_inter_iff] }
 end
+
 ```
 
 ### 5.2 分配律 / Distributive Laws
@@ -649,6 +662,7 @@ begin
     ext x,
     simp [Union, Intersection, mem_union, mem_inter_iff] }
 end
+
 ```
 
 ### 5.3 吸收律 / Absorption Laws
@@ -677,6 +691,7 @@ begin
     ext x,
     simp [Union, Intersection, mem_union, mem_inter_iff] }
 end
+
 ```
 
 ## 🔄 6. 验证测试 / Verification Tests
@@ -710,6 +725,7 @@ example : 5 ∈ (Singleton ℕ 5) := by simp [Singleton]
 -- Test operation properties
 example (A B : Set ℕ) : A ⊆ (Union ℕ A B) := (union_properties ℕ A B).1
 example (A B : Set ℕ) : (Intersection ℕ A B) ⊆ A := (intersection_properties ℕ A B).1
+
 ```
 
 ### 6.2 证明验证 / Proof Verification
@@ -739,6 +755,7 @@ example (A B C : Set ℕ) : A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C) :=
 -- Verify absorption laws
 example (A B : Set ℕ) : A ∪ (A ∩ B) = A :=
   (absorption_laws ℕ A B).1
+
 ```
 
 ## 📊 7. 性能测试 / Performance Tests
@@ -789,6 +806,7 @@ def performance_test (n : ℕ) : IO Unit := do
 -- Run performance tests
 #eval performance_test 100
 #eval performance_test 1000
+
 ```
 
 ## 📚 8. 应用实例 / Application Examples
@@ -827,6 +845,7 @@ end
 -- Problem: Prove application of De Morgan's laws
 example (A B : Set ℕ) : (A ∪ B)ᶜ = Aᶜ ∩ Bᶜ :=
   (de_morgan_laws ℕ A B).1
+
 ```
 
 ## 📋 9. 总结 / Summary

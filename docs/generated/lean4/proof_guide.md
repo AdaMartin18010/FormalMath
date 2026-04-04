@@ -1,3 +1,11 @@
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+msc_primary: "00A99"
+msc_secondary: ['00-XX']
+---
+
 # Lean4 证明编写指南
 
 **生成时间**: 2026-04-04 13:07:54
@@ -10,6 +18,7 @@
 example : p → p := by
   intro hp
   exact hp
+
 ```
 
 ### 2. 反证法 (by_contra)
@@ -19,6 +28,7 @@ example : ¬¬p → p := by
   intro hnnp
   by_contra hnp
   exact hnnp hnp
+
 ```
 
 ### 3. 归纳法 (induction)
@@ -27,10 +37,13 @@ example : ¬¬p → p := by
 theorem nat_add_zero : ∀ n : ℕ, n + 0 = n := by
   intro n
   induction n with
+
   | zero => rfl
   | succ n ih => 
+
     rw [Nat.add_succ]
     rw [ih]
+
 ```
 
 ### 4. 情况分析 (cases)
@@ -39,12 +52,17 @@ theorem nat_add_zero : ∀ n : ℕ, n + 0 = n := by
 example : p ∨ q → q ∨ p := by
   intro h
   cases h with
+
   | inl hp => 
+
     apply Or.inr
     exact hp
+
   | inr hq =>
+
     apply Or.inl
     exact hq
+
 ```
 
 ## 证明状态检查清单
