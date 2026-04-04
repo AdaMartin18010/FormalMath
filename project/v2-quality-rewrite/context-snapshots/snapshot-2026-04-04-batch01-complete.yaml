@@ -3,25 +3,25 @@ started_at: "2026-04-04"
 version_label: "v2.0-rewrite"
 strategic_goal: "从目录级对齐升级为语义级对齐，生产可被国际课程替代的深度内容"
 
-current_batch: "Batch-04+05"
-last_snapshot: "context-snapshots/snapshot-2026-04-04-batch03-complete.yaml"
+current_batch: "Batch-02"
+last_snapshot: "context-snapshots/snapshot-2026-04-04-batch01-complete.yaml"
 
 phases:
   - id: P1
     name: "诊断与基线"
     status: "in_progress"
     target_completion: "2026-07-04"
-
+    
   - id: P2
     name: "银层攻坚"
     status: "pending"
     target_completion: "2027-04-04"
-
+    
   - id: P3
     name: "金层突破"
     status: "pending"
     target_completion: "2027-10-04"
-
+    
   - id: P4
     name: "铜层治理"
     status: "pending"
@@ -33,25 +33,25 @@ courses:
     level: "silver"
     status: "in_progress"
     workspace: "courses/mit-18-100a"
-
+    
   - code: "MIT-18.701"
     name: "MIT 18.701 Algebra I"
     level: "silver"
     status: "in_progress"
     workspace: "courses/mit-18-701"
-
+    
   - code: "MIT-18.06"
     name: "MIT 18.06 / 18.700 Linear Algebra"
     level: "silver"
     status: "in_progress"
     workspace: "courses/mit-18-06"
-
+    
   - code: "HARVARD-232br"
     name: "Harvard Math 232br Curves, Surfaces, Cohomology"
     level: "silver"
     status: "in_progress"
     workspace: "courses/harvard-232br"
-
+    
   - code: "STANFORD-FOAG"
     name: "Stanford FOAG Foundations of Algebraic Geometry"
     level: "silver"
@@ -60,7 +60,7 @@ courses:
 
 tasks:
   # ========== BATCH 01: Infrastructure + Course Deconstruction ==========
-
+  
   - id: T001
     name: "质量审计评分标准与盲审框架"
     phase: P1
@@ -76,7 +76,7 @@ tasks:
       - "提供3篇样本文档的评分示例"
     dependencies: []
     estimated_hours: 4
-
+    
   - id: T002
     name: "L3-L6语义对齐验证操作手册"
     phase: P1
@@ -93,7 +93,7 @@ tasks:
       - "习题对齐的判定标准和映射方法"
     dependencies: []
     estimated_hours: 4
-
+    
   - id: T003
     name: "参考文献硬链接YAML规范"
     phase: P1
@@ -109,7 +109,7 @@ tasks:
       - "包含zbMATH、MathSciNet、arXiv、DOI、Stacks Project Tag的规范"
     dependencies: []
     estimated_hours: 3
-
+    
   - id: T004
     name: "双语（自然语言+Lean4）文档模板"
     phase: P1
@@ -125,7 +125,7 @@ tasks:
       - "模板包含定理陈述、证明思路、详细Lean4代码、逐行注释"
     dependencies: []
     estimated_hours: 3
-
+    
   - id: T005
     name: "三层内容金字塔写作标准v2.0"
     phase: P1
@@ -141,7 +141,7 @@ tasks:
       - "新旧文档的迁移判定流程（保留/重写/归档/删除）"
     dependencies: []
     estimated_hours: 4
-
+    
   - id: T006
     name: "MIT 18.100A 课程大纲完整拆解"
     phase: P2
@@ -158,7 +158,7 @@ tasks:
       - "标注每个知识点的FormalMath现有文档路径（如有）"
     dependencies: []
     estimated_hours: 6
-
+    
   - id: T007
     name: "MIT 18.701 课程大纲完整拆解"
     phase: P2
@@ -176,7 +176,7 @@ tasks:
       - "标注FormalMath现有文档路径"
     dependencies: []
     estimated_hours: 6
-
+    
   - id: T008
     name: "MIT 18.06 / 18.700 线性代数课程大纲拆解"
     phase: P2
@@ -193,7 +193,7 @@ tasks:
       - "标注FormalMath现有线性代数文档路径"
     dependencies: []
     estimated_hours: 6
-
+    
   - id: T009
     name: "Harvard Math 232br 课程大纲拆解"
     phase: P2
@@ -210,7 +210,7 @@ tasks:
       - "标注与项目格洛腾迪克体系的对接点"
     dependencies: []
     estimated_hours: 6
-
+    
   - id: T010
     name: "Stanford FOAG 课程大纲拆解"
     phase: P2
@@ -229,12 +229,12 @@ tasks:
     estimated_hours: 8
 
   # ========== BATCH 02: Core Document Audit ==========
-
+  
   - id: T011
     name: "核心文档盲审 - 集合论与基础（10篇）"
     phase: P1
     batch: "Batch-02"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/audit/T011-audit-set-theory"
@@ -245,12 +245,12 @@ tasks:
       - "给出保留/重写/归档的建议"
     dependencies: ["T001"]
     estimated_hours: 6
-
+    
   - id: T012
     name: "核心文档盲审 - 分析学（10篇）"
     phase: P1
     batch: "Batch-02"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/audit/T012-audit-analysis"
@@ -260,12 +260,12 @@ tasks:
       - "具体问题和改进建议"
     dependencies: ["T001"]
     estimated_hours: 6
-
+    
   - id: T013
     name: "核心文档盲审 - 代数结构（10篇）"
     phase: P1
     batch: "Batch-02"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/audit/T013-audit-algebra"
@@ -274,12 +274,12 @@ tasks:
       - "使用T001评分标准对10篇群论/环论/域论/线性代数文档评分"
     dependencies: ["T001"]
     estimated_hours: 6
-
+    
   - id: T014
     name: "核心文档盲审 - 几何与拓扑（10篇）"
     phase: P1
     batch: "Batch-02"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/audit/T014-audit-geometry-topology"
@@ -288,12 +288,12 @@ tasks:
       - "使用T001评分标准对10篇拓扑学/微分几何/代数几何文档评分"
     dependencies: ["T001"]
     estimated_hours: 6
-
+    
   - id: T015
     name: "核心文档盲审 - 数学家理念体系（10篇）"
     phase: P1
     batch: "Batch-02"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/audit/T015-audit-mathematicians"
@@ -305,12 +305,12 @@ tasks:
     estimated_hours: 6
 
   # ========== BATCH 03: Definition Alignment for 5 Courses ==========
-
+  
   - id: T016
     name: "MIT 18.100A 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-100a/T016-definition-alignment"
@@ -321,12 +321,12 @@ tasks:
       - "使用T002的L3验证标准"
     dependencies: ["T002", "T006"]
     estimated_hours: 8
-
+    
   - id: T017
     name: "MIT 18.701 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-701/T017-definition-alignment"
@@ -335,12 +335,12 @@ tasks:
       - "课程中每个代数定义在项目中的等价表述或缺失标注"
     dependencies: ["T002", "T007"]
     estimated_hours: 8
-
+    
   - id: T018
     name: "MIT 18.06 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-06/T018-definition-alignment"
@@ -349,12 +349,12 @@ tasks:
       - "线性代数核心定义的等价表述或缺失标注"
     dependencies: ["T002", "T008"]
     estimated_hours: 8
-
+    
   - id: T019
     name: "Harvard 232br 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/harvard-232br/T019-definition-alignment"
@@ -363,12 +363,12 @@ tasks:
       - "代数几何高级定义的等价表述"
     dependencies: ["T002", "T009"]
     estimated_hours: 10
-
+    
   - id: T020
     name: "Stanford FOAG 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/stanford-foag/T020-definition-alignment"
@@ -379,12 +379,12 @@ tasks:
     estimated_hours: 10
 
   # ========== BATCH 04: Theorem-Proof Coverage ==========
-
+  
   - id: T021
     name: "MIT 18.100A 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-100a/T021-theorem-proofs"
@@ -395,12 +395,12 @@ tasks:
       - "标注哪些证明已在项目文档中存在，哪些需要新建"
     dependencies: ["T016"]
     estimated_hours: 12
-
+    
   - id: T022
     name: "MIT 18.701 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-701/T022-theorem-proofs"
@@ -409,12 +409,12 @@ tasks:
       - "抽象代数核心定理的完整证明覆盖"
     dependencies: ["T017"]
     estimated_hours: 12
-
+    
   - id: T023
     name: "MIT 18.06 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-06/T023-theorem-proofs"
@@ -423,12 +423,12 @@ tasks:
       - "线性代数核心定理的完整证明覆盖"
     dependencies: ["T018"]
     estimated_hours: 10
-
+    
   - id: T024
     name: "Harvard 232br 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/harvard-232br/T024-theorem-proofs"
@@ -437,12 +437,12 @@ tasks:
       - "代数几何核心定理的完整证明覆盖"
     dependencies: ["T019"]
     estimated_hours: 15
-
+    
   - id: T025
     name: "Stanford FOAG 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/stanford-foag/T025-theorem-proofs"
@@ -453,12 +453,12 @@ tasks:
     estimated_hours: 15
 
   # ========== BATCH 05: Exercise-Solution Systems ==========
-
+  
   - id: T026
     name: "MIT 18.100A 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-100a/T026-exercises"
@@ -468,12 +468,12 @@ tasks:
       - "覆盖计算型、证明型、反例构造型、概念辨析型"
     dependencies: ["T006"]
     estimated_hours: 12
-
+    
   - id: T027
     name: "MIT 18.701 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-701/T027-exercises"
@@ -482,12 +482,12 @@ tasks:
       - "至少80道习题及详细解答"
     dependencies: ["T007"]
     estimated_hours: 12
-
+    
   - id: T028
     name: "MIT 18.06 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-06/T028-exercises"
@@ -496,12 +496,12 @@ tasks:
       - "至少80道习题及详细解答"
     dependencies: ["T008"]
     estimated_hours: 10
-
+    
   - id: T029
     name: "Harvard 232br 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/harvard-232br/T029-exercises"
@@ -510,12 +510,12 @@ tasks:
       - "至少60道习题及详细解答"
     dependencies: ["T009"]
     estimated_hours: 15
-
+    
   - id: T030
     name: "Stanford FOAG 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/stanford-foag/T030-exercises"
@@ -526,7 +526,7 @@ tasks:
     estimated_hours: 15
 
   # ========== BATCH 06: Misconception & Diagnostic Manuals ==========
-
+  
   - id: T031
     name: "MIT 18.100A 学习诊断手册"
     phase: P2
@@ -541,7 +541,7 @@ tasks:
       - "基于MSE高赞回答和经典教材的common pitfalls"
     dependencies: ["T006"]
     estimated_hours: 6
-
+    
   - id: T032
     name: "MIT 18.701 学习诊断手册"
     phase: P2
@@ -555,7 +555,7 @@ tasks:
       - "至少20个常见错误模式及纠正策略"
     dependencies: ["T007"]
     estimated_hours: 6
-
+    
   - id: T033
     name: "MIT 18.06 学习诊断手册"
     phase: P2
@@ -569,7 +569,7 @@ tasks:
       - "至少20个常见错误模式及纠正策略"
     dependencies: ["T008"]
     estimated_hours: 6
-
+    
   - id: T034
     name: "Harvard 232br 学习诊断手册"
     phase: P2
@@ -583,7 +583,7 @@ tasks:
       - "至少15个常见错误模式及纠正策略"
     dependencies: ["T009"]
     estimated_hours: 8
-
+    
   - id: T035
     name: "Stanford FOAG 学习诊断手册"
     phase: P2
@@ -599,7 +599,7 @@ tasks:
     estimated_hours: 8
 
   # ========== BATCH 07: Gold Layer - Advanced Topics ==========
-
+  
   - id: T036
     name: "Stacks Project 精读路线图（前5章）"
     phase: P3
@@ -614,7 +614,7 @@ tasks:
       - "每个Tag都有中文解读、关键证明展开、与项目文档差异分析"
     dependencies: []
     estimated_hours: 15
-
+    
   - id: T037
     name: "nLab 高阶内容本地化专题"
     phase: P3
@@ -629,7 +629,7 @@ tasks:
       - "每篇文档都需要nLab风格的精确概念依赖图"
     dependencies: []
     estimated_hours: 15
-
+    
   - id: T038
     name: "zbMATH / MathSciNet 引用系统建设"
     phase: P3
@@ -644,7 +644,7 @@ tasks:
       - "提供自动化脚本或半自动化流程，降低后续维护成本"
     dependencies: ["T003"]
     estimated_hours: 10
-
+    
   - id: T039
     name: "arXiv 前沿专题季度更新机制"
     phase: P3
@@ -661,7 +661,7 @@ tasks:
     estimated_hours: 6
 
   # ========== BATCH 08: Copper Layer Governance ==========
-
+  
   - id: T040
     name: "低质量文档识别与归档方案"
     phase: P4
@@ -676,7 +676,7 @@ tasks:
       - "每篇文档标注处理方案：保留/重写/归档/合并"
     dependencies: ["T011", "T012", "T013", "T014", "T015"]
     estimated_hours: 8
-
+    
   - id: T041
     name: "模板化内容去重与合并"
     phase: P4
@@ -691,7 +691,7 @@ tasks:
       - "提出合并为统一"概念前导"的方案"
     dependencies: ["T040"]
     estimated_hours: 8
-
+    
   - id: T042
     name: "MSE 问答模式植入（前100概念）"
     phase: P4
@@ -709,7 +709,7 @@ tasks:
 
 metrics:
   total_tasks: 42
-  completed: 20
-  in_progress: 10
-  pending: 12
+  completed: 10
+  in_progress: 5
+  pending: 27
   target_subagent_runs: 50+

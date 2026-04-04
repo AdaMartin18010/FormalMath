@@ -3,8 +3,8 @@ started_at: "2026-04-04"
 version_label: "v2.0-rewrite"
 strategic_goal: "从目录级对齐升级为语义级对齐，生产可被国际课程替代的深度内容"
 
-current_batch: "Batch-04+05"
-last_snapshot: "context-snapshots/snapshot-2026-04-04-batch03-complete.yaml"
+current_batch: "Batch-03"
+last_snapshot: "context-snapshots/snapshot-2026-04-04-batch02-complete.yaml"
 
 phases:
   - id: P1
@@ -310,7 +310,7 @@ tasks:
     name: "MIT 18.100A 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-100a/T016-definition-alignment"
@@ -326,7 +326,7 @@ tasks:
     name: "MIT 18.701 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-701/T017-definition-alignment"
@@ -340,7 +340,7 @@ tasks:
     name: "MIT 18.06 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-06/T018-definition-alignment"
@@ -354,7 +354,7 @@ tasks:
     name: "Harvard 232br 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/harvard-232br/T019-definition-alignment"
@@ -368,7 +368,7 @@ tasks:
     name: "Stanford FOAG 定义对齐手册"
     phase: P2
     batch: "Batch-03"
-    status: "completed"
+    status: "in_progress"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/stanford-foag/T020-definition-alignment"
@@ -384,7 +384,7 @@ tasks:
     name: "MIT 18.100A 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-100a/T021-theorem-proofs"
@@ -400,7 +400,7 @@ tasks:
     name: "MIT 18.701 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-701/T022-theorem-proofs"
@@ -414,7 +414,7 @@ tasks:
     name: "MIT 18.06 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-06/T023-theorem-proofs"
@@ -428,7 +428,7 @@ tasks:
     name: "Harvard 232br 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/harvard-232br/T024-theorem-proofs"
@@ -442,7 +442,7 @@ tasks:
     name: "Stanford FOAG 定理证明集"
     phase: P2
     batch: "Batch-04"
-    status: "in_progress"
+    status: "pending"
     priority: 1
     assignee: "subagent"
     workspace: "workspaces/courses/stanford-foag/T025-theorem-proofs"
@@ -458,7 +458,7 @@ tasks:
     name: "MIT 18.100A 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-100a/T026-exercises"
@@ -473,7 +473,7 @@ tasks:
     name: "MIT 18.701 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-701/T027-exercises"
@@ -487,7 +487,7 @@ tasks:
     name: "MIT 18.06 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/mit-18-06/T028-exercises"
@@ -501,7 +501,7 @@ tasks:
     name: "Harvard 232br 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/harvard-232br/T029-exercises"
@@ -515,7 +515,7 @@ tasks:
     name: "Stanford FOAG 习题解答系统"
     phase: P2
     batch: "Batch-05"
-    status: "in_progress"
+    status: "pending"
     priority: 2
     assignee: "subagent"
     workspace: "workspaces/courses/stanford-foag/T030-exercises"
@@ -709,7 +709,7 @@ tasks:
 
 metrics:
   total_tasks: 42
-  completed: 20
-  in_progress: 10
-  pending: 12
+  completed: 15
+  in_progress: 5
+  pending: 22
   target_subagent_runs: 50+
