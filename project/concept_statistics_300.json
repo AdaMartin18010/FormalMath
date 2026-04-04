@@ -1,0 +1,160 @@
+{
+  "general": {
+    "total_concepts": 299,
+    "total_categories": 14,
+    "total_estimated_hours": 10341,
+    "avg_hours_per_concept": 34.59,
+    "avg_prerequisites": 2.16,
+    "avg_successors": 1.58
+  },
+  "by_category": {
+    "分析学": {
+      "count": 25,
+      "total_hours": 773,
+      "avg_difficulty": 3.36
+    },
+    "代数学": {
+      "count": 25,
+      "total_hours": 785,
+      "avg_difficulty": 3.12
+    },
+    "几何拓扑": {
+      "count": 25,
+      "total_hours": 807,
+      "avg_difficulty": 3.32
+    },
+    "数论逻辑": {
+      "count": 25,
+      "total_hours": 908,
+      "avg_difficulty": 3.32
+    },
+    "概率统计": {
+      "count": 20,
+      "total_hours": 517,
+      "avg_difficulty": 2.9
+    },
+    "最优化": {
+      "count": 20,
+      "total_hours": 556,
+      "avg_difficulty": 3.05
+    },
+    "控制论": {
+      "count": 20,
+      "total_hours": 585,
+      "avg_difficulty": 3.25
+    },
+    "信息论": {
+      "count": 20,
+      "total_hours": 620,
+      "avg_difficulty": 3.35
+    },
+    "密码学": {
+      "count": 20,
+      "total_hours": 825,
+      "avg_difficulty": 3.65
+    },
+    "金融数学": {
+      "count": 20,
+      "total_hours": 765,
+      "avg_difficulty": 4.2
+    },
+    "生物数学": {
+      "count": 19,
+      "total_hours": 680,
+      "avg_difficulty": 3.5789473684210527
+    },
+    "计算数学": {
+      "count": 19,
+      "total_hours": 710,
+      "avg_difficulty": 3.4210526315789473
+    },
+    "物理数学": {
+      "count": 20,
+      "total_hours": 1070,
+      "avg_difficulty": 4.3
+    },
+    "数据科学": {
+      "count": 21,
+      "total_hours": 740,
+      "avg_difficulty": 3.238095238095238
+    }
+  },
+  "difficulty_distribution": {
+    "2": 40,
+    "3": 119,
+    "4": 106,
+    "5": 32,
+    "1": 2
+  },
+  "hours_distribution": {
+    "0-20": 51,
+    "21-40": 168,
+    "41-60": 76,
+    "61+": 4
+  },
+  "cross_discipline_connections": {
+    "金融数学 ↔ 概率统计": [
+      "brownian_motion",
+      "martingale",
+      "stochastic_calculus"
+    ],
+    "金融数学 ↔ 随机分析": [
+      "ito_calculus",
+      "sde",
+      "ito_lemma"
+    ],
+    "生物数学 ↔ 微分方程": [
+      "population_dynamics",
+      "sir_model",
+      "reaction_diffusion"
+    ],
+    "生物数学 ↔ 动力系统": [
+      "evolutionary_dynamics",
+      "replicator_dynamics",
+      "biological_oscillator"
+    ],
+    "计算数学 ↔ 数值分析": [
+      "finite_difference",
+      "finite_element",
+      "numerical_pde"
+    ],
+    "计算数学 ↔ 线性代数": [
+      "sparse_matrix",
+      "iterative_method",
+      "numerical_linear_algebra"
+    ],
+    "物理数学 ↔ 泛函分析": [
+      "quantum_mechanics",
+      "schrodinger_equation",
+      "operator_theory"
+    ],
+    "物理数学 ↔ 李群": [
+      "gauge_theory",
+      "lie_group",
+      "symmetry"
+    ],
+    "数据科学 ↔ 概率统计": [
+      "pca",
+      "bayesian_inference",
+      "statistical_learning"
+    ],
+    "数据科学 ↔ 优化": [
+      "gradient_descent",
+      "adam_optimizer",
+      "svm"
+    ]
+  },
+  "metadata": {
+    "version": "3.0",
+    "generated_date": "2026-04-04",
+    "previous_version": "2.0 (200 concepts)",
+    "current_version": "3.0 (300 concepts)",
+    "new_categories": [
+      "金融数学",
+      "生物数学",
+      "计算数学",
+      "物理数学",
+      "数据科学"
+    ]
+  }
+}

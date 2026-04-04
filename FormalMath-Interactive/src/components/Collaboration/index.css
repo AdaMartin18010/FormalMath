@@ -1,0 +1,343 @@
+/* ==================== 协作组件通用样式 ==================== */
+
+/* 变量定义 */
+:root {
+  --collaboration-primary: #3b82f6;
+  --collaboration-success: #22c55e;
+  --collaboration-warning: #f59e0b;
+  --collaboration-danger: #ef4444;
+  --collaboration-gray-100: #f3f4f6;
+  --collaboration-gray-200: #e5e7eb;
+  --collaboration-gray-300: #d1d5db;
+  --collaboration-gray-400: #9ca3af;
+  --collaboration-gray-500: #6b7280;
+  --collaboration-gray-600: #4b5563;
+  --collaboration-gray-700: #374151;
+  --collaboration-gray-800: #1f2937;
+  --collaboration-gray-900: #111827;
+  
+  --collaboration-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --collaboration-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --collaboration-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  
+  --collaboration-radius-sm: 4px;
+  --collaboration-radius: 8px;
+  --collaboration-radius-lg: 12px;
+  
+  --collaboration-transition: all 0.2s ease;
+}
+
+/* 动画 */
+@keyframes collaboration-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes collaboration-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes collaboration-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes collaboration-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 通用工具类 */
+.collaboration-fade-in {
+  animation: collaboration-fade-in 0.3s ease;
+}
+
+.collaboration-slide-in-right {
+  animation: collaboration-slide-in-right 0.3s ease;
+}
+
+.collaboration-pulse {
+  animation: collaboration-pulse 1.5s infinite;
+}
+
+.collaboration-spin {
+  animation: collaboration-spin 1s linear infinite;
+}
+
+/* 连接状态指示器 */
+.collaboration-connection-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: var(--collaboration-radius-sm);
+}
+
+.collaboration-connection-status.connecting {
+  color: var(--collaboration-warning);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.collaboration-connection-status.connected {
+  color: var(--collaboration-success);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.collaboration-connection-status.disconnected {
+  color: var(--collaboration-danger);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.collaboration-connection-status.reconnecting {
+  color: var(--collaboration-warning);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.collaboration-connection-status .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.collaboration-connection-status.connecting .status-dot {
+  background: var(--collaboration-warning);
+  animation: collaboration-pulse 1.5s infinite;
+}
+
+.collaboration-connection-status.connected .status-dot {
+  background: var(--collaboration-success);
+}
+
+.collaboration-connection-status.disconnected .status-dot {
+  background: var(--collaboration-danger);
+}
+
+.collaboration-connection-status.reconnecting .status-dot {
+  background: var(--collaboration-warning);
+  animation: collaboration-spin 1s linear infinite;
+}
+
+/* 按钮样式 */
+.collaboration-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: var(--collaboration-radius);
+  cursor: pointer;
+  transition: var(--collaboration-transition);
+}
+
+.collaboration-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.collaboration-btn-primary {
+  background: var(--collaboration-primary);
+  color: white;
+}
+
+.collaboration-btn-primary:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.collaboration-btn-secondary {
+  background: var(--collaboration-gray-100);
+  color: var(--collaboration-gray-700);
+  border-color: var(--collaboration-gray-300);
+}
+
+.collaboration-btn-secondary:hover:not(:disabled) {
+  background: var(--collaboration-gray-200);
+}
+
+.collaboration-btn-danger {
+  background: var(--collaboration-danger);
+  color: white;
+}
+
+.collaboration-btn-danger:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+/* 输入框样式 */
+.collaboration-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid var(--collaboration-gray-300);
+  border-radius: var(--collaboration-radius);
+  background: white;
+  transition: var(--collaboration-transition);
+}
+
+.collaboration-input:focus {
+  outline: none;
+  border-color: var(--collaboration-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.collaboration-input::placeholder {
+  color: var(--collaboration-gray-400);
+}
+
+/* 卡片样式 */
+.collaboration-card {
+  background: white;
+  border: 1px solid var(--collaboration-gray-200);
+  border-radius: var(--collaboration-radius);
+  box-shadow: var(--collaboration-shadow-sm);
+  overflow: hidden;
+}
+
+.collaboration-card-header {
+  padding: 12px 16px;
+  background: var(--collaboration-gray-50);
+  border-bottom: 1px solid var(--collaboration-gray-200);
+  font-weight: 600;
+}
+
+.collaboration-card-body {
+  padding: 16px;
+}
+
+.collaboration-card-footer {
+  padding: 12px 16px;
+  background: var(--collaboration-gray-50);
+  border-top: 1px solid var(--collaboration-gray-200);
+}
+
+/* 徽章样式 */
+.collaboration-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.collaboration-badge-primary {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--collaboration-primary);
+}
+
+.collaboration-badge-success {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--collaboration-success);
+}
+
+.collaboration-badge-warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--collaboration-warning);
+}
+
+.collaboration-badge-danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--collaboration-danger);
+}
+
+/* 工具提示 */
+.collaboration-tooltip {
+  position: relative;
+}
+
+.collaboration-tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+  padding: 4px 8px;
+  background: var(--collaboration-gray-800);
+  color: white;
+  font-size: 12px;
+  border-radius: var(--collaboration-radius-sm);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--collaboration-transition);
+  z-index: 1000;
+}
+
+.collaboration-tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 滚动条样式 */
+.collaboration-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--collaboration-gray-300) transparent;
+}
+
+.collaboration-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.collaboration-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.collaboration-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--collaboration-gray-300);
+  border-radius: 3px;
+}
+
+.collaboration-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--collaboration-gray-400);
+}
+
+/* 暗色主题 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --collaboration-gray-100: #1f2937;
+    --collaboration-gray-200: #374151;
+    --collaboration-gray-300: #4b5563;
+    --collaboration-gray-400: #6b7280;
+    --collaboration-gray-500: #9ca3af;
+    --collaboration-gray-600: #d1d5db;
+    --collaboration-gray-700: #e5e7eb;
+    --collaboration-gray-800: #f3f4f6;
+    --collaboration-gray-900: #f9fafb;
+  }
+
+  .collaboration-input {
+    background: var(--collaboration-gray-100);
+    color: var(--collaboration-gray-800);
+  }
+
+  .collaboration-card {
+    background: var(--collaboration-gray-100);
+    border-color: var(--collaboration-gray-200);
+  }
+}

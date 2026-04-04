@@ -1,0 +1,184 @@
+```mermaid
+graph TD
+    limit["极限"]
+    style limit fill:#E1F5FE
+    continuity["连续性"]
+    style continuity fill:#E1F5FE
+    derivative["导数"]
+    style derivative fill:#E1F5FE
+    riemann_integral["积分"]
+    style riemann_integral fill:#E1F5FE
+    infinite_series["级数"]
+    style infinite_series fill:#E1F5FE
+    uniform_convergence["一致收敛"]
+    style uniform_convergence fill:#E1F5FE
+    fourier_analysis["Fourier分析"]
+    style fourier_analysis fill:#E1F5FE
+    complex_analysis["复分析"]
+    style complex_analysis fill:#E1F5FE
+    residue_theory["留数"]
+    style residue_theory fill:#E1F5FE
+    measure_theory["测度论"]
+    style measure_theory fill:#E1F5FE
+    lebesgue_integral["Lebesgue积分"]
+    style lebesgue_integral fill:#E1F5FE
+    lp_spaces["Lp空间"]
+    style lp_spaces fill:#E1F5FE
+    differential_equations["微分方程"]
+    style differential_equations fill:#E1F5FE
+    group["群"]
+    style group fill:#F3E5F5
+    ring["环"]
+    style ring fill:#F3E5F5
+    field["域"]
+    style field fill:#F3E5F5
+    module["模"]
+    style module fill:#F3E5F5
+    linear_algebra["线性代数"]
+    style linear_algebra fill:#F3E5F5
+    vector_space["向量空间"]
+    style vector_space fill:#F3E5F5
+    matrix["矩阵"]
+    style matrix fill:#F3E5F5
+    eigenvalue["特征值"]
+    style eigenvalue fill:#F3E5F5
+    jordan_normal_form["Jordan标准形"]
+    style jordan_normal_form fill:#F3E5F5
+    tensor_product["张量积"]
+    style tensor_product fill:#F3E5F5
+    group_representation["群表示"]
+    style group_representation fill:#F3E5F5
+    character_theory["特征标"]
+    style character_theory fill:#F3E5F5
+    group_action["群作用"]
+    style group_action fill:#F3E5F5
+    sylow_theory["Sylow理论"]
+    style sylow_theory fill:#F3E5F5
+    solvable_group["可解群"]
+    style solvable_group fill:#F3E5F5
+    commutative_algebra["交换代数"]
+    style commutative_algebra fill:#F3E5F5
+    category_theory["范畴论"]
+    style category_theory fill:#F3E5F5
+    topological_space["拓扑空间"]
+    style topological_space fill:#E8F5E9
+    continuous_map["连续映射"]
+    style continuous_map fill:#E8F5E9
+    compactness["紧致性"]
+    style compactness fill:#E8F5E9
+    connectedness["连通性"]
+    style connectedness fill:#E8F5E9
+    homotopy["同伦"]
+    style homotopy fill:#E8F5E9
+    fundamental_group["基本群"]
+    style fundamental_group fill:#E8F5E9
+    covering_space["覆叠空间"]
+    style covering_space fill:#E8F5E9
+    homology_group["同调群"]
+    style homology_group fill:#E8F5E9
+    manifold["流形"]
+    style manifold fill:#E8F5E9
+    tangent_space["切空间"]
+    style tangent_space fill:#E8F5E9
+    tensor_field["张量场"]
+    style tensor_field fill:#E8F5E9
+    differential_form["微分形式"]
+    style differential_form fill:#E8F5E9
+    stokes_theorem["Stokes定理"]
+    style stokes_theorem fill:#E8F5E9
+    riemannian_metric["黎曼度量"]
+    style riemannian_metric fill:#E8F5E9
+    geodesic["测地线"]
+    style geodesic fill:#E8F5E9
+    divisibility["整除"]
+    style divisibility fill:#FBE9E7
+    congruence["同余"]
+    style congruence fill:#FBE9E7
+    primitive_root["原根"]
+    style primitive_root fill:#FBE9E7
+    quadratic_residue["二次剩余"]
+    style quadratic_residue fill:#FBE9E7
+    algebraic_integer["代数整数"]
+    style algebraic_integer fill:#FBE9E7
+    limit --> continuity
+    limit --> derivative
+    continuity --> derivative
+    limit --> riemann_integral
+    continuity --> riemann_integral
+    derivative --> riemann_integral
+    limit --> infinite_series
+    limit --> uniform_convergence
+    infinite_series --> uniform_convergence
+    continuity --> uniform_convergence
+    infinite_series --> fourier_analysis
+    uniform_convergence --> fourier_analysis
+    lebesgue_integral --> fourier_analysis
+    limit --> complex_analysis
+    derivative --> complex_analysis
+    riemann_integral --> complex_analysis
+    complex_analysis --> residue_theory
+    measure_theory --> lebesgue_integral
+    riemann_integral --> lebesgue_integral
+    lebesgue_integral --> lp_spaces
+    vector_space --> lp_spaces
+    derivative --> differential_equations
+    riemann_integral --> differential_equations
+    linear_algebra --> differential_equations
+    group --> ring
+    ring --> field
+    ring --> module
+    vector_space --> module
+    vector_space --> linear_algebra
+    matrix --> linear_algebra
+    field --> vector_space
+    group --> vector_space
+    vector_space --> matrix
+    matrix --> eigenvalue
+    eigenvalue --> jordan_normal_form
+    matrix --> jordan_normal_form
+    vector_space --> tensor_product
+    module --> tensor_product
+    group --> group_representation
+    linear_algebra --> group_representation
+    vector_space --> group_representation
+    group_representation --> character_theory
+    group --> character_theory
+    group --> group_action
+    group_action --> sylow_theory
+    group --> sylow_theory
+    sylow_theory --> solvable_group
+    ring --> commutative_algebra
+    module --> commutative_algebra
+    group --> category_theory
+    topological_space --> continuous_map
+    limit --> continuous_map
+    topological_space --> compactness
+    continuous_map --> compactness
+    topological_space --> connectedness
+    continuous_map --> connectedness
+    continuous_map --> homotopy
+    topological_space --> homotopy
+    homotopy --> fundamental_group
+    group --> fundamental_group
+    fundamental_group --> covering_space
+    homotopy --> covering_space
+    homotopy --> homology_group
+    topological_space --> manifold
+    manifold --> tangent_space
+    vector_space --> tangent_space
+    derivative --> tangent_space
+    tangent_space --> tensor_field
+    tensor_product --> tensor_field
+    manifold --> tensor_field
+    manifold --> differential_form
+    tangent_space --> differential_form
+    differential_form --> stokes_theorem
+    manifold --> riemannian_metric
+    tensor_field --> riemannian_metric
+    riemannian_metric --> geodesic
+    divisibility --> congruence
+    congruence --> primitive_root
+    group --> primitive_root
+    congruence --> quadratic_residue
+    ring --> algebraic_integer
+```

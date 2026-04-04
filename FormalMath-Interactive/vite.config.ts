@@ -1,13 +1,191 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { VitePWA } from 'vite-plugin-pwa'
 import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      manifest: {
+        name: 'FormalMath Interactive',
+        short_name: 'FormalMath',
+        description: '数学知识图谱与推理可视化平台',
+        theme_color: '#2563eb',
+        background_color: '#ffffff',
+        display: 'standalone',
+        scope: '/FormalMath/',
+        start_url: '/FormalMath/',
+        orientation: 'portrait-primary',
+        icons: [
+          {
+            src: '/FormalMath/icons/icon-72x72.png',
+            sizes: '72x72',
+            type: 'image/png',
+            purpose: 'maskable any'
+          },
+          {
+            src: '/FormalMath/icons/icon-96x96.png',
+            sizes: '96x96',
+            type: 'image/png',
+            purpose: 'maskable any'
+          },
+          {
+            src: '/FormalMath/icons/icon-128x128.png',
+            sizes: '128x128',
+            type: 'image/png',
+            purpose: 'maskable any'
+          },
+          {
+            src: '/FormalMath/icons/icon-144x144.png',
+            sizes: '144x144',
+            type: 'image/png',
+            purpose: 'maskable any'
+          },
+          {
+            src: '/FormalMath/icons/icon-152x152.png',
+            sizes: '152x152',
+            type: 'image/png',
+            purpose: 'maskable any'
+          },
+          {
+            src: '/FormalMath/icons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'maskable any'
+          },
+          {
+            src: '/FormalMath/icons/icon-384x384.png',
+            sizes: '384x384',
+            type: 'image/png',
+            purpose: 'maskable any'
+          },
+          {
+            src: '/FormalMath/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable any'
+          }
+        ],
+        categories: ['education', 'productivity'],
+        lang: 'zh-CN',
+        dir: 'ltr',
+        shortcuts: [
+          {
+            name: '知识图谱',
+            short_name: '图谱',
+            description: '快速打开知识图谱',
+            url: '/FormalMath/knowledge-graph',
+            icons: [{ src: '/FormalMath/icons/graph-96x96.png', sizes: '96x96' }]
+          },
+          {
+            name: '推理树',
+            short_name: '推理',
+            description: '快速打开推理树',
+            url: '/FormalMath/reasoning-tree',
+            icons: [{ src: '/FormalMath/icons/tree-96x96.png', sizes: '96x96' }]
+          },
+          {
+            name: '思维导图',
+            short_name: '导图',
+            description: '快速打开思维导图',
+            url: '/FormalMath/mind-map',
+            icons: [{ src: '/FormalMath/icons/mindmap-96x96.png', sizes: '96x96' }]
+          }
+        ],
+        related_applications: [],
+        prefer_related_applications: false
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'google-fonts-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'google-fonts-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+          {
+            urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'images-cache',
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
+              }
+            }
+          },
+          {
+            urlPattern: /\.(?:js|css)$/i,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'static-resources',
+              expiration: {
+                maxEntries: 60,
+                maxAgeSeconds: 60 * 60 * 24 * 7 // 7 days
+              }
+            }
+          },
+          {
+            urlPattern: /^https:\/\/api\./i,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'api-cache',
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 60 * 24 // 24 hours
+              },
+              networkTimeoutSeconds: 10
+            }
+          }
+        ],
+        skipWaiting: true,
+        clientsClaim: true,
+        cleanupOutdatedCaches: true
+      },
+      devOptions: {
+        enabled: true,
+        type: 'module'
+      }
+    })
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      '@components': path.resolve(__dirname, './src/components'),
+      '@pages': path.resolve(__dirname, './src/pages'),
+      '@hooks': path.resolve(__dirname, './src/hooks'),
+      '@utils': path.resolve(__dirname, './src/utils'),
+      '@types': path.resolve(__dirname, './src/types'),
+      '@visualizations': path.resolve(__dirname, './src/visualizations'),
+      '@mobile': path.resolve(__dirname, './src/mobile'),
+      '@stores': path.resolve(__dirname, './src/stores'),
     },
   },
   build: {
@@ -16,12 +194,12 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom'],
-          d3: ['d3', 'd3-selection', 'd3-scale', 'd3-hierarchy'],
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          'react-query': ['react-query'],
+          d3: ['d3', 'd3-selection', 'd3-scale', 'd3-hierarchy', 'd3-force-3d'],
           mermaid: ['mermaid'],
-          utils: ['lodash-es', 'date-fns'],
+          three: ['three', '@react-three/fiber', '@react-three/drei'],
         },
-        // 优化资源文件命名
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split('.')
           const ext = info[info.length - 1]
@@ -37,7 +215,6 @@ export default defineConfig({
         entryFileNames: 'assets/js/[name]-[hash].js',
       },
     },
-    // 优化构建性能
     target: 'es2020',
     minify: 'terser',
     terserOptions: {
@@ -46,14 +223,10 @@ export default defineConfig({
         drop_debugger: true,
       },
     },
-    // 启用 gzip 压缩报告
     reportCompressedSize: true,
-    //  chunk 大小警告阈值
     chunkSizeWarningLimit: 1000,
   },
-  // 生产环境基础路径（GitHub Pages）
   base: '/FormalMath/',
-  // 开发服务器配置
   server: {
     port: 3000,
     host: true,
@@ -66,23 +239,14 @@ export default defineConfig({
       },
     },
   },
-  // 预览服务器配置
   preview: {
     port: 4173,
     host: true,
   },
-  // CSS 配置
   css: {
     devSourcemap: true,
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@use "@/styles/variables.scss" as *;`,
-      },
-    },
   },
-  // 优化依赖预构建
   optimizeDeps: {
-    include: ['react', 'react-dom', 'd3', 'mermaid', 'lodash-es'],
-    exclude: ['@ FormalMath/concept'],
+    include: ['react', 'react-dom', 'd3', 'mermaid'],
   },
 })

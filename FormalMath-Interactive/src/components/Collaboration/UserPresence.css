@@ -1,0 +1,331 @@
+/* ==================== 在线用户列表样式 ==================== */
+
+.user-presence {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 用户头像列表 */
+.user-avatar-list {
+  display: flex;
+  align-items: center;
+  gap: -4px;
+}
+
+/* 用户头像 */
+.user-avatar {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex-shrink: 0;
+}
+
+.user-avatar:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.user-avatar.current-user {
+  border-color: #3b82f6;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-initials {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.user-name-short {
+  font-size: 10px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+/* 状态指示器 */
+.status-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* 分隔线 */
+.avatar-divider {
+  width: 1px;
+  height: 24px;
+  background: #d1d5db;
+  margin: 0 4px;
+}
+
+/* 更多用户按钮 */
+.more-users-btn,
+.collapse-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px dashed #d1d5db;
+  background: #f9fafb;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-users-btn:hover,
+.collapse-btn:hover {
+  background: #e5e7eb;
+  border-color: #9ca3af;
+  color: #374151;
+}
+
+/* 在线用户数 */
+.user-count {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.online-count {
+  font-weight: 500;
+}
+
+/* 光标指示器 */
+.cursor-indicator {
+  position: fixed;
+  width: 2px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 1000;
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor-label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Tooltip */
+.user-tooltip {
+  position: fixed;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 200px;
+  pointer-events: none;
+}
+
+.user-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0;
+  border-style: solid;
+  border-color: white transparent transparent;
+}
+
+.tooltip-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.tooltip-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tooltip-avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tooltip-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tooltip-name {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.tooltip-status {
+  font-size: 12px;
+}
+
+.tooltip-last-seen,
+.tooltip-room,
+.tooltip-cursor {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* 紧凑版本 */
+.compact-user-presence {
+  display: flex;
+  align-items: center;
+}
+
+.compact-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.compact-avatar:hover {
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+.compact-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.compact-avatar.more {
+  background: #6b7280;
+}
+
+/* 暗色主题 */
+@media (prefers-color-scheme: dark) {
+  .user-avatar .avatar-image {
+    background: #374151;
+  }
+
+  .status-indicator {
+    border-color: #1f2937;
+  }
+
+  .avatar-divider {
+    background: #4b5563;
+  }
+
+  .more-users-btn,
+  .collapse-btn {
+    background: #374151;
+    border-color: #4b5563;
+    color: #d1d5db;
+  }
+
+  .more-users-btn:hover,
+  .collapse-btn:hover {
+    background: #4b5563;
+    border-color: #6b7280;
+  }
+
+  .user-count {
+    color: #9ca3af;
+  }
+
+  .user-tooltip {
+    background: #1f2937;
+    border-color: #374151;
+  }
+
+  .user-tooltip::after {
+    border-color: #1f2937 transparent transparent;
+  }
+
+  .tooltip-name {
+    color: #f3f4f6;
+  }
+
+  .tooltip-last-seen,
+  .tooltip-room,
+  .tooltip-cursor {
+    color: #9ca3af;
+  }
+
+  .compact-avatar {
+    border-color: #1f2937;
+  }
+}
+
+/* 响应式 */
+@media (max-width: 640px) {
+  .user-presence {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .user-avatar {
+    width: 28px;
+    height: 28px;
+  }
+
+  .user-tooltip {
+    min-width: 160px;
+    padding: 8px;
+  }
+}

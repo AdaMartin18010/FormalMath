@@ -230,3 +230,6 @@ export interface ErrorProps extends BaseComponentProps {
   error: Error | string;
   onRetry?: () => void;
 }
+
+// ==================== 协作类型重导出 ====================
+export * from './collaboration';

@@ -1,37 +1,39 @@
-/**
- * FormalMath React Hooks 统一导出
- * T2.1/T2.2/T3.1 智能学习系统 Hooks
- */
+// 通用 hooks
+export { useD3 } from './useD3';
+export { useMermaid } from './useMermaid';
+export { useLocalStorage } from './useLocalStorage';
+export { useGraph } from './useGraph';
+export { useAdaptive } from './useAdaptive';
+export { useDiagnosis } from './useDiagnosis';
+export { useEvaluation } from './useEvaluation';
+export { useProgressTracking } from './useProgressTracking';
 
-// 认知诊断系统 (T2.1)
+// 协作 hooks
 export {
-  useDiagnosis,
-  useDiagnosisHistory,
-  useDiagnosisQuestions,
-} from './useDiagnosis';
+  useConnectionState,
+  useOnlineUsers,
+  useChatMessages,
+  useComments,
+  useVersionHistory,
+  useSharedLearningPaths,
+  useTeamChallenges,
+  useCollaborativeEditor,
+} from './useCollaboration';
 
-// 评估系统 (T2.2)
+// 移动端 hooks - 重新导出
 export {
-  useEvaluation,
-  useGrowthCurve,
-  useComparisons,
-  useBadges,
-} from './useEvaluation';
+  useMobileDetect,
+  usePWAState,
+  useTouchGesture,
+  useShakeDetection,
+} from './mobile/useMobileDetect';
 
-// 自适应学习系统 (T3.1)
 export {
-  useAdaptive,
-  useNodeDetail,
-  useLearningStats,
-} from './useAdaptive';
+  usePushNotification,
+  useStudyReminder,
+} from './mobile/usePushNotification';
 
-// 进度追踪
 export {
-  useProgressTracking,
-  useAchievements,
-  useStreak,
-  useSkillGrowth,
-} from './useProgressTracking';
-
-// 默认导出
-export { default } from './useDiagnosis';
+  useDarkMode,
+  useAutoDarkMode,
+} from './mobile/useDarkMode';

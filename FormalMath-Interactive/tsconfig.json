@@ -24,8 +24,11 @@
       "@hooks/*": ["src/hooks/*"],
       "@utils/*": ["src/utils/*"],
       "@types/*": ["src/types/*"],
-      "@api/*": ["src/api/*"]
-    }
+      "@api/*": ["src/api/*"],
+      "@mobile/*": ["src/mobile/*"],
+      "@stores/*": ["src/stores/*"]
+    },
+    "types": ["vite-plugin-pwa/client"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

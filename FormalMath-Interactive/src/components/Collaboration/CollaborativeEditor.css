@@ -1,0 +1,175 @@
+/* ==================== 协同编辑器样式 ==================== */
+
+.collaborative-editor {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+}
+
+.collaborative-editor.error {
+  border-color: #ef4444;
+}
+
+/* 工具栏 */
+.editor-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.editor-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat-toggle-btn {
+  padding: 6px 10px;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.chat-toggle-btn:hover {
+  background: #e5e7eb;
+}
+
+.sync-status {
+  font-size: 12px;
+  color: #6b7280;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* 编辑器容器 */
+.editor-container {
+  display: flex;
+  flex: 1;
+  min-height: 300px;
+  position: relative;
+}
+
+/* 编辑器内容区域 */
+.editor-content {
+  flex: 1;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #1f2937;
+  background: white;
+  overflow-y: auto;
+}
+
+.editor-content:focus {
+  outline: none;
+}
+
+.editor-content .loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6b7280;
+}
+
+/* 远程光标 */
+.remote-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.remote-cursor-label {
+  font-weight: 500;
+}
+
+/* 远程选择 */
+.remote-selection {
+  border-radius: 2px;
+}
+
+/* 状态栏 */
+.editor-statusbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 12px;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* 错误状态 */
+.error-message {
+  padding: 24px;
+  text-align: center;
+}
+
+.error-message p {
+  margin: 0 0 8px;
+  color: #ef4444;
+}
+
+.error-message .error-detail {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.error-message button {
+  padding: 8px 16px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-message button:hover {
+  background: #2563eb;
+}
+
+/* 暗色主题支持 */
+@media (prefers-color-scheme: dark) {
+  .collaborative-editor {
+    background: #1f2937;
+    border-color: #374151;
+  }
+
+  .editor-toolbar,
+  .editor-statusbar {
+    background: #111827;
+    border-color: #374151;
+  }
+
+  .editor-content {
+    background: #1f2937;
+    color: #f3f4f6;
+  }
+
+  .chat-toggle-btn {
+    background: #374151;
+    border-color: #4b5563;
+    color: #f3f4f6;
+  }
+
+  .chat-toggle-btn:hover {
+    background: #4b5563;
+  }
+}

@@ -1,0 +1,5993 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "generated_date": "2026-04-04 11:23:15",
+    "total_concepts": 200,
+    "total_dependencies": 446,
+    "total_cross_connections": 65
+  },
+  "nodes": [
+    {
+      "id": "limit",
+      "label": "极限",
+      "category": "分析学",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 1,
+      "title": "极限 (limit)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "continuity",
+      "label": "连续性",
+      "category": "分析学",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 1,
+      "title": "连续性 (continuity)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "derivative",
+      "label": "导数",
+      "category": "分析学",
+      "difficulty": 2,
+      "estimated_hours": 18,
+      "group": 1,
+      "title": "导数 (derivative)\n难度: 2\n预计学习: 18小时"
+    },
+    {
+      "id": "riemann_integral",
+      "label": "积分",
+      "category": "分析学",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 1,
+      "title": "积分 (riemann_integral)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "infinite_series",
+      "label": "级数",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 1,
+      "title": "级数 (infinite_series)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "uniform_convergence",
+      "label": "一致收敛",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 1,
+      "title": "一致收敛 (uniform_convergence)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "fourier_analysis",
+      "label": "Fourier分析",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 1,
+      "title": "Fourier分析 (fourier_analysis)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "complex_analysis",
+      "label": "复分析",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 1,
+      "title": "复分析 (complex_analysis)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "residue_theory",
+      "label": "留数",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 1,
+      "title": "留数 (residue_theory)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "conformal_mapping",
+      "label": "共形映射",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 25,
+      "group": 1,
+      "title": "共形映射 (conformal_mapping)\n难度: 4\n预计学习: 25小时"
+    },
+    {
+      "id": "harmonic_analysis",
+      "label": "调和分析",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 1,
+      "title": "调和分析 (harmonic_analysis)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "measure_theory",
+      "label": "测度论",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 1,
+      "title": "测度论 (measure_theory)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "lebesgue_integral",
+      "label": "Lebesgue积分",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 1,
+      "title": "Lebesgue积分 (lebesgue_integral)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "lp_spaces",
+      "label": "Lp空间",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 1,
+      "title": "Lp空间 (lp_spaces)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "functional_analysis",
+      "label": "泛函分析",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 1,
+      "title": "泛函分析 (functional_analysis)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "banach_space",
+      "label": "Banach空间",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 30,
+      "group": 1,
+      "title": "Banach空间 (banach_space)\n难度: 4\n预计学习: 30小时"
+    },
+    {
+      "id": "hilbert_space",
+      "label": "Hilbert空间",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 1,
+      "title": "Hilbert空间 (hilbert_space)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "operator_theory",
+      "label": "算子理论",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 1,
+      "title": "算子理论 (operator_theory)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "spectral_theory",
+      "label": "谱理论",
+      "category": "分析学",
+      "difficulty": 5,
+      "estimated_hours": 45,
+      "group": 1,
+      "title": "谱理论 (spectral_theory)\n难度: 5\n预计学习: 45小时"
+    },
+    {
+      "id": "distribution_theory",
+      "label": "分布理论",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 1,
+      "title": "分布理论 (distribution_theory)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "sobolev_spaces",
+      "label": "Sobolev空间",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 1,
+      "title": "Sobolev空间 (sobolev_spaces)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "variational_methods",
+      "label": "变分法",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 1,
+      "title": "变分法 (variational_methods)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "differential_equations",
+      "label": "微分方程",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 1,
+      "title": "微分方程 (differential_equations)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "partial_differential_equations",
+      "label": "偏微分方程",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "group": 1,
+      "title": "偏微分方程 (partial_differential_equations)\n难度: 4\n预计学习: 50小时"
+    },
+    {
+      "id": "asymptotic_analysis",
+      "label": "渐近分析",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 30,
+      "group": 1,
+      "title": "渐近分析 (asymptotic_analysis)\n难度: 4\n预计学习: 30小时"
+    },
+    {
+      "id": "group",
+      "label": "群",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 25,
+      "group": 2,
+      "title": "群 (group)\n难度: 2\n预计学习: 25小时"
+    },
+    {
+      "id": "ring",
+      "label": "环",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 2,
+      "title": "环 (ring)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "field",
+      "label": "域",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 2,
+      "title": "域 (field)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "module",
+      "label": "模",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 2,
+      "title": "模 (module)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "linear_algebra",
+      "label": "线性代数",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 30,
+      "group": 2,
+      "title": "线性代数 (linear_algebra)\n难度: 2\n预计学习: 30小时"
+    },
+    {
+      "id": "vector_space",
+      "label": "向量空间",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 2,
+      "title": "向量空间 (vector_space)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "matrix",
+      "label": "矩阵",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 2,
+      "title": "矩阵 (matrix)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "eigenvalue",
+      "label": "特征值",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 2,
+      "title": "特征值 (eigenvalue)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "jordan_normal_form",
+      "label": "Jordan标准形",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 2,
+      "title": "Jordan标准形 (jordan_normal_form)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "tensor_product",
+      "label": "张量积",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 2,
+      "title": "张量积 (tensor_product)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "homological_algebra",
+      "label": "同调代数",
+      "category": "代数学",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 2,
+      "title": "同调代数 (homological_algebra)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "group_representation",
+      "label": "群表示",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 2,
+      "title": "群表示 (group_representation)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "character_theory",
+      "label": "特征标",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 2,
+      "title": "特征标 (character_theory)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "group_action",
+      "label": "群作用",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 2,
+      "title": "群作用 (group_action)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "sylow_theory",
+      "label": "Sylow理论",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 2,
+      "title": "Sylow理论 (sylow_theory)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "solvable_group",
+      "label": "可解群",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 2,
+      "title": "可解群 (solvable_group)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "lie_group",
+      "label": "Lie群",
+      "category": "代数学",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 2,
+      "title": "Lie群 (lie_group)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "lie_algebra",
+      "label": "Lie代数",
+      "category": "代数学",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 2,
+      "title": "Lie代数 (lie_algebra)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "commutative_algebra",
+      "label": "交换代数",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 40,
+      "group": 2,
+      "title": "交换代数 (commutative_algebra)\n难度: 3\n预计学习: 40小时"
+    },
+    {
+      "id": "algebraic_geometry",
+      "label": "代数几何",
+      "category": "代数学",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "group": 2,
+      "title": "代数几何 (algebraic_geometry)\n难度: 4\n预计学习: 50小时"
+    },
+    {
+      "id": "scheme",
+      "label": "概形",
+      "category": "代数学",
+      "difficulty": 5,
+      "estimated_hours": 55,
+      "group": 2,
+      "title": "概形 (scheme)\n难度: 5\n预计学习: 55小时"
+    },
+    {
+      "id": "sheaf",
+      "label": "层",
+      "category": "代数学",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 2,
+      "title": "层 (sheaf)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "cohomology_sheaf",
+      "label": "上同调",
+      "category": "代数学",
+      "difficulty": 5,
+      "estimated_hours": 50,
+      "group": 2,
+      "title": "上同调 (cohomology_sheaf)\n难度: 5\n预计学习: 50小时"
+    },
+    {
+      "id": "category_theory",
+      "label": "范畴论",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 2,
+      "title": "范畴论 (category_theory)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "homotopy_algebra",
+      "label": "同伦代数",
+      "category": "代数学",
+      "difficulty": 5,
+      "estimated_hours": 50,
+      "group": 2,
+      "title": "同伦代数 (homotopy_algebra)\n难度: 5\n预计学习: 50小时"
+    },
+    {
+      "id": "topological_space",
+      "label": "拓扑空间",
+      "category": "几何拓扑",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 3,
+      "title": "拓扑空间 (topological_space)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "continuous_map",
+      "label": "连续映射",
+      "category": "几何拓扑",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 3,
+      "title": "连续映射 (continuous_map)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "compactness",
+      "label": "紧致性",
+      "category": "几何拓扑",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 3,
+      "title": "紧致性 (compactness)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "connectedness",
+      "label": "连通性",
+      "category": "几何拓扑",
+      "difficulty": 2,
+      "estimated_hours": 12,
+      "group": 3,
+      "title": "连通性 (connectedness)\n难度: 2\n预计学习: 12小时"
+    },
+    {
+      "id": "homotopy",
+      "label": "同伦",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 3,
+      "title": "同伦 (homotopy)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "fundamental_group",
+      "label": "基本群",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 3,
+      "title": "基本群 (fundamental_group)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "covering_space",
+      "label": "覆叠空间",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 3,
+      "title": "覆叠空间 (covering_space)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "homology_group",
+      "label": "同调群",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 3,
+      "title": "同调群 (homology_group)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "cohomology",
+      "label": "上同调",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 3,
+      "title": "上同调 (cohomology)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "manifold",
+      "label": "流形",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 3,
+      "title": "流形 (manifold)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "tangent_space",
+      "label": "切空间",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 3,
+      "title": "切空间 (tangent_space)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "tensor_field",
+      "label": "张量场",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 3,
+      "title": "张量场 (tensor_field)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "differential_form",
+      "label": "微分形式",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 3,
+      "title": "微分形式 (differential_form)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "stokes_theorem",
+      "label": "Stokes定理",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 3,
+      "title": "Stokes定理 (stokes_theorem)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "riemannian_metric",
+      "label": "黎曼度量",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 3,
+      "title": "黎曼度量 (riemannian_metric)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "curvature",
+      "label": "曲率",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 3,
+      "title": "曲率 (curvature)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "geodesic",
+      "label": "测地线",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 3,
+      "title": "测地线 (geodesic)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "connection",
+      "label": "联络",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 3,
+      "title": "联络 (connection)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "fiber_bundle",
+      "label": "纤维丛",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 3,
+      "title": "纤维丛 (fiber_bundle)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "characteristic_class",
+      "label": "示性类",
+      "category": "几何拓扑",
+      "difficulty": 5,
+      "estimated_hours": 50,
+      "group": 3,
+      "title": "示性类 (characteristic_class)\n难度: 5\n预计学习: 50小时"
+    },
+    {
+      "id": "morse_theory",
+      "label": "Morse理论",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 3,
+      "title": "Morse理论 (morse_theory)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "index_theorem",
+      "label": "指标定理",
+      "category": "几何拓扑",
+      "difficulty": 5,
+      "estimated_hours": 55,
+      "group": 3,
+      "title": "指标定理 (index_theorem)\n难度: 5\n预计学习: 55小时"
+    },
+    {
+      "id": "symplectic_geometry",
+      "label": "辛几何",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 3,
+      "title": "辛几何 (symplectic_geometry)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "complex_geometry",
+      "label": "复几何",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 3,
+      "title": "复几何 (complex_geometry)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "algebraic_topology",
+      "label": "代数拓扑",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "group": 3,
+      "title": "代数拓扑 (algebraic_topology)\n难度: 4\n预计学习: 50小时"
+    },
+    {
+      "id": "divisibility",
+      "label": "整除",
+      "category": "数论逻辑",
+      "difficulty": 1,
+      "estimated_hours": 10,
+      "group": 4,
+      "title": "整除 (divisibility)\n难度: 1\n预计学习: 10小时"
+    },
+    {
+      "id": "congruence",
+      "label": "同余",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 4,
+      "title": "同余 (congruence)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "primitive_root",
+      "label": "原根",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 4,
+      "title": "原根 (primitive_root)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "quadratic_residue",
+      "label": "二次剩余",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 4,
+      "title": "二次剩余 (quadratic_residue)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "algebraic_integer",
+      "label": "代数整数",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 4,
+      "title": "代数整数 (algebraic_integer)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "ideal",
+      "label": "理想",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "estimated_hours": 18,
+      "group": 4,
+      "title": "理想 (ideal)\n难度: 2\n预计学习: 18小时"
+    },
+    {
+      "id": "class_number",
+      "label": "类数",
+      "category": "数论逻辑",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 4,
+      "title": "类数 (class_number)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "elliptic_curve",
+      "label": "椭圆曲线",
+      "category": "数论逻辑",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "group": 4,
+      "title": "椭圆曲线 (elliptic_curve)\n难度: 4\n预计学习: 50小时"
+    },
+    {
+      "id": "modular_form",
+      "label": "模形式",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "estimated_hours": 60,
+      "group": 4,
+      "title": "模形式 (modular_form)\n难度: 5\n预计学习: 60小时"
+    },
+    {
+      "id": "l_function",
+      "label": "L函数",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "estimated_hours": 55,
+      "group": 4,
+      "title": "L函数 (l_function)\n难度: 5\n预计学习: 55小时"
+    },
+    {
+      "id": "arithmetic_geometry",
+      "label": "算术几何",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "estimated_hours": 60,
+      "group": 4,
+      "title": "算术几何 (arithmetic_geometry)\n难度: 5\n预计学习: 60小时"
+    },
+    {
+      "id": "p_adic_numbers",
+      "label": "p进数",
+      "category": "数论逻辑",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 4,
+      "title": "p进数 (p_adic_numbers)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "galois_representation",
+      "label": "Galois表示",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "estimated_hours": 55,
+      "group": 4,
+      "title": "Galois表示 (galois_representation)\n难度: 5\n预计学习: 55小时"
+    },
+    {
+      "id": "automorphic_form",
+      "label": "自守形式",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "estimated_hours": 60,
+      "group": 4,
+      "title": "自守形式 (automorphic_form)\n难度: 5\n预计学习: 60小时"
+    },
+    {
+      "id": "propositional_logic",
+      "label": "命题逻辑",
+      "category": "数论逻辑",
+      "difficulty": 1,
+      "estimated_hours": 15,
+      "group": 4,
+      "title": "命题逻辑 (propositional_logic)\n难度: 1\n预计学习: 15小时"
+    },
+    {
+      "id": "predicate_logic",
+      "label": "谓词逻辑",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 4,
+      "title": "谓词逻辑 (predicate_logic)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "proof_theory",
+      "label": "证明论",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 4,
+      "title": "证明论 (proof_theory)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "model_theory",
+      "label": "模型论",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 40,
+      "group": 4,
+      "title": "模型论 (model_theory)\n难度: 3\n预计学习: 40小时"
+    },
+    {
+      "id": "recursion_theory",
+      "label": "递归论",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 4,
+      "title": "递归论 (recursion_theory)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "set_theory",
+      "label": "集合论",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "estimated_hours": 30,
+      "group": 4,
+      "title": "集合论 (set_theory)\n难度: 2\n预计学习: 30小时"
+    },
+    {
+      "id": "forcing",
+      "label": "forcing",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "estimated_hours": 50,
+      "group": 4,
+      "title": "forcing (forcing)\n难度: 5\n预计学习: 50小时"
+    },
+    {
+      "id": "large_cardinal",
+      "label": "大基数",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "estimated_hours": 60,
+      "group": 4,
+      "title": "大基数 (large_cardinal)\n难度: 5\n预计学习: 60小时"
+    },
+    {
+      "id": "computability",
+      "label": "可计算性",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 4,
+      "title": "可计算性 (computability)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "complexity",
+      "label": "复杂度",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 4,
+      "title": "复杂度 (complexity)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "formalized_proof",
+      "label": "形式化证明",
+      "category": "数论逻辑",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 4,
+      "title": "形式化证明 (formalized_proof)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "probability_measure",
+      "label": "概率测度",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 5,
+      "title": "概率测度 (probability_measure)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "random_variable",
+      "label": "随机变量",
+      "category": "概率统计",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 5,
+      "title": "随机变量 (random_variable)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "probability_distribution",
+      "label": "概率分布",
+      "category": "概率统计",
+      "difficulty": 2,
+      "estimated_hours": 18,
+      "group": 5,
+      "title": "概率分布 (probability_distribution)\n难度: 2\n预计学习: 18小时"
+    },
+    {
+      "id": "expectation",
+      "label": "期望",
+      "category": "概率统计",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 5,
+      "title": "期望 (expectation)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "conditional_probability",
+      "label": "条件概率",
+      "category": "概率统计",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 5,
+      "title": "条件概率 (conditional_probability)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "bayes_theorem",
+      "label": "贝叶斯定理",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 5,
+      "title": "贝叶斯定理 (bayes_theorem)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "stochastic_process",
+      "label": "随机过程",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 5,
+      "title": "随机过程 (stochastic_process)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "markov_chain",
+      "label": "马尔可夫链",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 5,
+      "title": "马尔可夫链 (markov_chain)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "martingale",
+      "label": "鞅",
+      "category": "概率统计",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 5,
+      "title": "鞅 (martingale)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "brownian_motion",
+      "label": "布朗运动",
+      "category": "概率统计",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 5,
+      "title": "布朗运动 (brownian_motion)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "law_of_large_numbers",
+      "label": "大数定律",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 5,
+      "title": "大数定律 (law_of_large_numbers)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "central_limit_theorem",
+      "label": "中心极限定理",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 5,
+      "title": "中心极限定理 (central_limit_theorem)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "statistical_inference",
+      "label": "统计推断",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 5,
+      "title": "统计推断 (statistical_inference)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "parameter_estimation",
+      "label": "参数估计",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 5,
+      "title": "参数估计 (parameter_estimation)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "hypothesis_testing",
+      "label": "假设检验",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 5,
+      "title": "假设检验 (hypothesis_testing)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "regression_analysis",
+      "label": "回归分析",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 5,
+      "title": "回归分析 (regression_analysis)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "bayesian_inference",
+      "label": "贝叶斯推断",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 5,
+      "title": "贝叶斯推断 (bayesian_inference)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "time_series_analysis",
+      "label": "时间序列分析",
+      "category": "概率统计",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 5,
+      "title": "时间序列分析 (time_series_analysis)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "variance",
+      "label": "方差",
+      "category": "概率统计",
+      "difficulty": 2,
+      "estimated_hours": 12,
+      "group": 5,
+      "title": "方差 (variance)\n难度: 2\n预计学习: 12小时"
+    },
+    {
+      "id": "maximum_likelihood",
+      "label": "最大似然估计",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 22,
+      "group": 5,
+      "title": "最大似然估计 (maximum_likelihood)\n难度: 3\n预计学习: 22小时"
+    },
+    {
+      "id": "optimization_problem",
+      "label": "最优化问题",
+      "category": "最优化",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 6,
+      "title": "最优化问题 (optimization_problem)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "convex_set",
+      "label": "凸集",
+      "category": "最优化",
+      "difficulty": 2,
+      "estimated_hours": 18,
+      "group": 6,
+      "title": "凸集 (convex_set)\n难度: 2\n预计学习: 18小时"
+    },
+    {
+      "id": "convex_function",
+      "label": "凸函数",
+      "category": "最优化",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 6,
+      "title": "凸函数 (convex_function)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "gradient",
+      "label": "梯度",
+      "category": "最优化",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 6,
+      "title": "梯度 (gradient)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "hessian_matrix",
+      "label": "Hessian矩阵",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 18,
+      "group": 6,
+      "title": "Hessian矩阵 (hessian_matrix)\n难度: 3\n预计学习: 18小时"
+    },
+    {
+      "id": "gradient_descent",
+      "label": "梯度下降法",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 6,
+      "title": "梯度下降法 (gradient_descent)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "newton_method",
+      "label": "牛顿法",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 6,
+      "title": "牛顿法 (newton_method)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "conjugate_gradient",
+      "label": "共轭梯度法",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 6,
+      "title": "共轭梯度法 (conjugate_gradient)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "lagrange_multiplier",
+      "label": "拉格朗日乘子",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 6,
+      "title": "拉格朗日乘子 (lagrange_multiplier)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "kkt_conditions",
+      "label": "KKT条件",
+      "category": "最优化",
+      "difficulty": 4,
+      "estimated_hours": 30,
+      "group": 6,
+      "title": "KKT条件 (kkt_conditions)\n难度: 4\n预计学习: 30小时"
+    },
+    {
+      "id": "linear_programming",
+      "label": "线性规划",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 6,
+      "title": "线性规划 (linear_programming)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "simplex_method",
+      "label": "单纯形法",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 6,
+      "title": "单纯形法 (simplex_method)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "convex_optimization",
+      "label": "凸优化",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 6,
+      "title": "凸优化 (convex_optimization)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "interior_point_method",
+      "label": "内点法",
+      "category": "最优化",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 6,
+      "title": "内点法 (interior_point_method)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "integer_programming",
+      "label": "整数规划",
+      "category": "最优化",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 6,
+      "title": "整数规划 (integer_programming)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "dynamic_programming",
+      "label": "动态规划",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 6,
+      "title": "动态规划 (dynamic_programming)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "stochastic_optimization",
+      "label": "随机优化",
+      "category": "最优化",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 6,
+      "title": "随机优化 (stochastic_optimization)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "optimal_control",
+      "label": "最优控制",
+      "category": "最优化",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 6,
+      "title": "最优控制 (optimal_control)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "quadratic_programming",
+      "label": "二次规划",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 28,
+      "group": 6,
+      "title": "二次规划 (quadratic_programming)\n难度: 3\n预计学习: 28小时"
+    },
+    {
+      "id": "nonlinear_programming",
+      "label": "非线性规划",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 32,
+      "group": 6,
+      "title": "非线性规划 (nonlinear_programming)\n难度: 3\n预计学习: 32小时"
+    },
+    {
+      "id": "control_system",
+      "label": "控制系统",
+      "category": "控制论",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 7,
+      "title": "控制系统 (control_system)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "transfer_function",
+      "label": "传递函数",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 7,
+      "title": "传递函数 (transfer_function)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "state_space",
+      "label": "状态空间",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 7,
+      "title": "状态空间 (state_space)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "feedback_control",
+      "label": "反馈控制",
+      "category": "控制论",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 7,
+      "title": "反馈控制 (feedback_control)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "stability_analysis",
+      "label": "稳定性分析",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 7,
+      "title": "稳定性分析 (stability_analysis)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "pid_controller",
+      "label": "PID控制器",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 7,
+      "title": "PID控制器 (pid_controller)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "root_locus",
+      "label": "根轨迹法",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 7,
+      "title": "根轨迹法 (root_locus)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "bode_plot",
+      "label": "Bode图",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 7,
+      "title": "Bode图 (bode_plot)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "nyquist_criterion",
+      "label": "Nyquist判据",
+      "category": "控制论",
+      "difficulty": 4,
+      "estimated_hours": 30,
+      "group": 7,
+      "title": "Nyquist判据 (nyquist_criterion)\n难度: 4\n预计学习: 30小时"
+    },
+    {
+      "id": "controllability",
+      "label": "能控性",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 7,
+      "title": "能控性 (controllability)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "observability",
+      "label": "能观性",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 7,
+      "title": "能观性 (observability)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "state_feedback",
+      "label": "状态反馈",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 7,
+      "title": "状态反馈 (state_feedback)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "state_observer",
+      "label": "状态观测器",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 7,
+      "title": "状态观测器 (state_observer)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "kalman_filter",
+      "label": "Kalman滤波",
+      "category": "控制论",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 7,
+      "title": "Kalman滤波 (kalman_filter)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "lqr_control",
+      "label": "LQR控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 7,
+      "title": "LQR控制 (lqr_control)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "mpc",
+      "label": "模型预测控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 7,
+      "title": "模型预测控制 (mpc)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "robust_control",
+      "label": "鲁棒控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 7,
+      "title": "鲁棒控制 (robust_control)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "nonlinear_control",
+      "label": "非线性控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 7,
+      "title": "非线性控制 (nonlinear_control)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "adaptive_control",
+      "label": "自适应控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 7,
+      "title": "自适应控制 (adaptive_control)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "system_identification",
+      "label": "系统辨识",
+      "category": "控制论",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 7,
+      "title": "系统辨识 (system_identification)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "information",
+      "label": "信息",
+      "category": "信息论",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "group": 8,
+      "title": "信息 (information)\n难度: 2\n预计学习: 15小时"
+    },
+    {
+      "id": "shannon_entropy",
+      "label": "香农熵",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 8,
+      "title": "香农熵 (shannon_entropy)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "mutual_information",
+      "label": "互信息",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "group": 8,
+      "title": "互信息 (mutual_information)\n难度: 3\n预计学习: 20小时"
+    },
+    {
+      "id": "kl_divergence",
+      "label": "KL散度",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 8,
+      "title": "KL散度 (kl_divergence)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "source_coding",
+      "label": "信源编码",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 8,
+      "title": "信源编码 (source_coding)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "channel_capacity",
+      "label": "信道容量",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 8,
+      "title": "信道容量 (channel_capacity)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "channel_coding",
+      "label": "信道编码",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 8,
+      "title": "信道编码 (channel_coding)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "error_correction",
+      "label": "纠错编码",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 8,
+      "title": "纠错编码 (error_correction)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "reed_solomon",
+      "label": "Reed-Solomon码",
+      "category": "信息论",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 8,
+      "title": "Reed-Solomon码 (reed_solomon)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "ldpc_code",
+      "label": "LDPC码",
+      "category": "信息论",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 8,
+      "title": "LDPC码 (ldpc_code)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "data_compression",
+      "label": "数据压缩",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 8,
+      "title": "数据压缩 (data_compression)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "huffman_coding",
+      "label": "Huffman编码",
+      "category": "信息论",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "group": 8,
+      "title": "Huffman编码 (huffman_coding)\n难度: 2\n预计学习: 20小时"
+    },
+    {
+      "id": "arithmetic_coding",
+      "label": "算术编码",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 8,
+      "title": "算术编码 (arithmetic_coding)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "lossy_compression",
+      "label": "有损压缩",
+      "category": "信息论",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 8,
+      "title": "有损压缩 (lossy_compression)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "rate_distortion",
+      "label": "率失真理论",
+      "category": "信息论",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 8,
+      "title": "率失真理论 (rate_distortion)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "network_information",
+      "label": "网络信息论",
+      "category": "信息论",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 8,
+      "title": "网络信息论 (network_information)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "cryptographic_protocol",
+      "label": "密码学协议",
+      "category": "信息论",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 8,
+      "title": "密码学协议 (cryptographic_protocol)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "quantum_information",
+      "label": "量子信息",
+      "category": "信息论",
+      "difficulty": 5,
+      "estimated_hours": 50,
+      "group": 8,
+      "title": "量子信息 (quantum_information)\n难度: 5\n预计学习: 50小时"
+    },
+    {
+      "id": "algorithmic_information",
+      "label": "算法信息论",
+      "category": "信息论",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 8,
+      "title": "算法信息论 (algorithmic_information)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "differential_privacy",
+      "label": "差分隐私",
+      "category": "信息论",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "group": 8,
+      "title": "差分隐私 (differential_privacy)\n难度: 4\n预计学习: 35小时"
+    },
+    {
+      "id": "symmetric_encryption",
+      "label": "对称加密",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 9,
+      "title": "对称加密 (symmetric_encryption)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "aes",
+      "label": "AES",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 9,
+      "title": "AES (aes)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "public_key",
+      "label": "公钥密码学",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "group": 9,
+      "title": "公钥密码学 (public_key)\n难度: 3\n预计学习: 35小时"
+    },
+    {
+      "id": "rsa",
+      "label": "RSA",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 9,
+      "title": "RSA (rsa)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "diffie_hellman",
+      "label": "Diffie-Hellman",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 9,
+      "title": "Diffie-Hellman (diffie_hellman)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "elliptic_curve_crypto",
+      "label": "椭圆曲线密码",
+      "category": "密码学",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 9,
+      "title": "椭圆曲线密码 (elliptic_curve_crypto)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "hash_function",
+      "label": "哈希函数",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 9,
+      "title": "哈希函数 (hash_function)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "digital_signature",
+      "label": "数字签名",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "group": 9,
+      "title": "数字签名 (digital_signature)\n难度: 3\n预计学习: 30小时"
+    },
+    {
+      "id": "mac",
+      "label": "消息认证码",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "group": 9,
+      "title": "消息认证码 (mac)\n难度: 3\n预计学习: 25小时"
+    },
+    {
+      "id": "zero_knowledge_proof",
+      "label": "零知识证明",
+      "category": "密码学",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "group": 9,
+      "title": "零知识证明 (zero_knowledge_proof)\n难度: 4\n预计学习: 50小时"
+    },
+    {
+      "id": "zk_snarks",
+      "label": "zk-SNARKs",
+      "category": "密码学",
+      "difficulty": 5,
+      "estimated_hours": 60,
+      "group": 9,
+      "title": "zk-SNARKs (zk_snarks)\n难度: 5\n预计学习: 60小时"
+    },
+    {
+      "id": "homomorphic_encryption",
+      "label": "同态加密",
+      "category": "密码学",
+      "difficulty": 5,
+      "estimated_hours": 55,
+      "group": 9,
+      "title": "同态加密 (homomorphic_encryption)\n难度: 5\n预计学习: 55小时"
+    },
+    {
+      "id": "quantum_crypto",
+      "label": "量子密码",
+      "category": "密码学",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "group": 9,
+      "title": "量子密码 (quantum_crypto)\n难度: 4\n预计学习: 50小时"
+    },
+    {
+      "id": "post_quantum",
+      "label": "后量子密码",
+      "category": "密码学",
+      "difficulty": 4,
+      "estimated_hours": 55,
+      "group": 9,
+      "title": "后量子密码 (post_quantum)\n难度: 4\n预计学习: 55小时"
+    },
+    {
+      "id": "blockchain_consensus",
+      "label": "区块链共识",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 40,
+      "group": 9,
+      "title": "区块链共识 (blockchain_consensus)\n难度: 3\n预计学习: 40小时"
+    },
+    {
+      "id": "mpc",
+      "label": "安全多方计算",
+      "category": "密码学",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "group": 9,
+      "title": "安全多方计算 (mpc)\n难度: 4\n预计学习: 50小时"
+    },
+    {
+      "id": "side_channel",
+      "label": "侧信道攻击",
+      "category": "密码学",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "group": 9,
+      "title": "侧信道攻击 (side_channel)\n难度: 4\n预计学习: 40小时"
+    },
+    {
+      "id": "provable_security",
+      "label": "可证明安全",
+      "category": "密码学",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 9,
+      "title": "可证明安全 (provable_security)\n难度: 4\n预计学习: 45小时"
+    },
+    {
+      "id": "lattice_based_crypto",
+      "label": "格密码",
+      "category": "密码学",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "group": 9,
+      "title": "格密码 (lattice_based_crypto)\n难度: 4\n预计学习: 50小时"
+    },
+    {
+      "id": "identity_based",
+      "label": "基于身份的加密",
+      "category": "密码学",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "group": 9,
+      "title": "基于身份的加密 (identity_based)\n难度: 4\n预计学习: 45小时"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "from": "real_numbers",
+      "to": "limit",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e1",
+      "from": "epsilon_delta",
+      "to": "limit",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e2",
+      "from": "sequence",
+      "to": "limit",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e3",
+      "from": "limit",
+      "to": "continuity",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e4",
+      "from": "topology_basic",
+      "to": "continuity",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e5",
+      "from": "limit",
+      "to": "derivative",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e6",
+      "from": "continuity",
+      "to": "derivative",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e7",
+      "from": "limit",
+      "to": "riemann_integral",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e8",
+      "from": "continuity",
+      "to": "riemann_integral",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e9",
+      "from": "derivative",
+      "to": "riemann_integral",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e10",
+      "from": "limit",
+      "to": "infinite_series",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e11",
+      "from": "sequence",
+      "to": "infinite_series",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e12",
+      "from": "limit",
+      "to": "uniform_convergence",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e13",
+      "from": "infinite_series",
+      "to": "uniform_convergence",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e14",
+      "from": "continuity",
+      "to": "uniform_convergence",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e15",
+      "from": "infinite_series",
+      "to": "fourier_analysis",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e16",
+      "from": "uniform_convergence",
+      "to": "fourier_analysis",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e17",
+      "from": "lebesgue_integral",
+      "to": "fourier_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e18",
+      "from": "limit",
+      "to": "complex_analysis",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e19",
+      "from": "derivative",
+      "to": "complex_analysis",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e20",
+      "from": "riemann_integral",
+      "to": "complex_analysis",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e21",
+      "from": "complex_numbers",
+      "to": "complex_analysis",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e22",
+      "from": "complex_analysis",
+      "to": "residue_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e23",
+      "from": "contour_integration",
+      "to": "residue_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e24",
+      "from": "complex_analysis",
+      "to": "conformal_mapping",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e25",
+      "from": "residue_theory",
+      "to": "conformal_mapping",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e26",
+      "from": "fourier_analysis",
+      "to": "harmonic_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e27",
+      "from": "functional_analysis",
+      "to": "harmonic_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e28",
+      "from": "measure_theory",
+      "to": "harmonic_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e29",
+      "from": "real_analysis",
+      "to": "measure_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e30",
+      "from": "set_theory",
+      "to": "measure_theory",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e31",
+      "from": "topology_basic",
+      "to": "measure_theory",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e32",
+      "from": "measure_theory",
+      "to": "lebesgue_integral",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e33",
+      "from": "riemann_integral",
+      "to": "lebesgue_integral",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e34",
+      "from": "lebesgue_integral",
+      "to": "lp_spaces",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e35",
+      "from": "vector_space",
+      "to": "lp_spaces",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e36",
+      "from": "normed_space",
+      "to": "lp_spaces",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e37",
+      "from": "linear_algebra",
+      "to": "functional_analysis",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e38",
+      "from": "measure_theory",
+      "to": "functional_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e39",
+      "from": "lebesgue_integral",
+      "to": "functional_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e40",
+      "from": "topology_basic",
+      "to": "functional_analysis",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e41",
+      "from": "functional_analysis",
+      "to": "banach_space",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e42",
+      "from": "lp_spaces",
+      "to": "banach_space",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e43",
+      "from": "normed_space",
+      "to": "banach_space",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e44",
+      "from": "functional_analysis",
+      "to": "hilbert_space",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e45",
+      "from": "lp_spaces",
+      "to": "hilbert_space",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e46",
+      "from": "inner_product",
+      "to": "hilbert_space",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e47",
+      "from": "functional_analysis",
+      "to": "operator_theory",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e48",
+      "from": "banach_space",
+      "to": "operator_theory",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e49",
+      "from": "hilbert_space",
+      "to": "operator_theory",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e50",
+      "from": "operator_theory",
+      "to": "spectral_theory",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e51",
+      "from": "hilbert_space",
+      "to": "spectral_theory",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e52",
+      "from": "complex_analysis",
+      "to": "spectral_theory",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e53",
+      "from": "functional_analysis",
+      "to": "distribution_theory",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e54",
+      "from": "test_functions",
+      "to": "distribution_theory",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e55",
+      "from": "generalized_functions",
+      "to": "distribution_theory",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e56",
+      "from": "distribution_theory",
+      "to": "sobolev_spaces",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e57",
+      "from": "lp_spaces",
+      "to": "sobolev_spaces",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e58",
+      "from": "weak_derivatives",
+      "to": "sobolev_spaces",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e59",
+      "from": "calculus_of_variations",
+      "to": "variational_methods",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e60",
+      "from": "sobolev_spaces",
+      "to": "variational_methods",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e61",
+      "from": "functional_analysis",
+      "to": "variational_methods",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e62",
+      "from": "derivative",
+      "to": "differential_equations",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e63",
+      "from": "riemann_integral",
+      "to": "differential_equations",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e64",
+      "from": "linear_algebra",
+      "to": "differential_equations",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e65",
+      "from": "differential_equations",
+      "to": "partial_differential_equations",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e66",
+      "from": "multivariable_calculus",
+      "to": "partial_differential_equations",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e67",
+      "from": "sobolev_spaces",
+      "to": "partial_differential_equations",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e68",
+      "from": "fourier_analysis",
+      "to": "partial_differential_equations",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e69",
+      "from": "complex_analysis",
+      "to": "asymptotic_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e70",
+      "from": "residue_theory",
+      "to": "asymptotic_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e71",
+      "from": "special_functions",
+      "to": "asymptotic_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e72",
+      "from": "set_theory",
+      "to": "group",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e73",
+      "from": "binary_operations",
+      "to": "group",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e74",
+      "from": "equivalence_relations",
+      "to": "group",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e75",
+      "from": "group",
+      "to": "ring",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e76",
+      "from": "abelian_group",
+      "to": "ring",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e77",
+      "from": "ring",
+      "to": "field",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e78",
+      "from": "integral_domain",
+      "to": "field",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e79",
+      "from": "ring",
+      "to": "module",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e80",
+      "from": "abelian_group",
+      "to": "module",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e81",
+      "from": "vector_space",
+      "to": "module",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e82",
+      "from": "vector_space",
+      "to": "linear_algebra",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e83",
+      "from": "matrix",
+      "to": "linear_algebra",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e84",
+      "from": "linear_transformation",
+      "to": "linear_algebra",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e85",
+      "from": "field",
+      "to": "vector_space",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e86",
+      "from": "group",
+      "to": "vector_space",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e87",
+      "from": "vector_space",
+      "to": "matrix",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e88",
+      "from": "linear_transformation",
+      "to": "matrix",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e89",
+      "from": "matrix",
+      "to": "eigenvalue",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e90",
+      "from": "linear_transformation",
+      "to": "eigenvalue",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e91",
+      "from": "characteristic_polynomial",
+      "to": "eigenvalue",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e92",
+      "from": "eigenvalue",
+      "to": "jordan_normal_form",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e93",
+      "from": "matrix",
+      "to": "jordan_normal_form",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e94",
+      "from": "generalized_eigenspace",
+      "to": "jordan_normal_form",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e95",
+      "from": "vector_space",
+      "to": "tensor_product",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e96",
+      "from": "module",
+      "to": "tensor_product",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e97",
+      "from": "multilinear_map",
+      "to": "tensor_product",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e98",
+      "from": "module",
+      "to": "homological_algebra",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e99",
+      "from": "exact_sequence",
+      "to": "homological_algebra",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e100",
+      "from": "category_theory",
+      "to": "homological_algebra",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e101",
+      "from": "group",
+      "to": "group_representation",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e102",
+      "from": "linear_algebra",
+      "to": "group_representation",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e103",
+      "from": "vector_space",
+      "to": "group_representation",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e104",
+      "from": "group_representation",
+      "to": "character_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e105",
+      "from": "group",
+      "to": "character_theory",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e106",
+      "from": "group",
+      "to": "group_action",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e107",
+      "from": "set_theory",
+      "to": "group_action",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e108",
+      "from": "group_action",
+      "to": "sylow_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e109",
+      "from": "group",
+      "to": "sylow_theory",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e110",
+      "from": "sylow_theory",
+      "to": "solvable_group",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e111",
+      "from": "normal_subgroup",
+      "to": "solvable_group",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e112",
+      "from": "composition_series",
+      "to": "solvable_group",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e113",
+      "from": "group",
+      "to": "lie_group",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e114",
+      "from": "smooth_manifold",
+      "to": "lie_group",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e115",
+      "from": "group_representation",
+      "to": "lie_group",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e116",
+      "from": "lie_group",
+      "to": "lie_algebra",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e117",
+      "from": "vector_space",
+      "to": "lie_algebra",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e118",
+      "from": "bracket_operation",
+      "to": "lie_algebra",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e119",
+      "from": "ring",
+      "to": "commutative_algebra",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e120",
+      "from": "module",
+      "to": "commutative_algebra",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e121",
+      "from": "ideal",
+      "to": "commutative_algebra",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e122",
+      "from": "commutative_algebra",
+      "to": "algebraic_geometry",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e123",
+      "from": "polynomial_ring",
+      "to": "algebraic_geometry",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e124",
+      "from": "affine_variety",
+      "to": "algebraic_geometry",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e125",
+      "from": "algebraic_geometry",
+      "to": "scheme",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e126",
+      "from": "sheaf",
+      "to": "scheme",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e127",
+      "from": "commutative_algebra",
+      "to": "scheme",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e128",
+      "from": "topology_basic",
+      "to": "sheaf",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e129",
+      "from": "category_theory",
+      "to": "sheaf",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e130",
+      "from": "presheaf",
+      "to": "sheaf",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e131",
+      "from": "sheaf",
+      "to": "cohomology_sheaf",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e132",
+      "from": "homological_algebra",
+      "to": "cohomology_sheaf",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e133",
+      "from": "algebraic_geometry",
+      "to": "cohomology_sheaf",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e134",
+      "from": "set_theory",
+      "to": "category_theory",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e135",
+      "from": "group",
+      "to": "category_theory",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e136",
+      "from": "abstract_algebra",
+      "to": "category_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e137",
+      "from": "category_theory",
+      "to": "homotopy_algebra",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e138",
+      "from": "homological_algebra",
+      "to": "homotopy_algebra",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e139",
+      "from": "homotopy_theory",
+      "to": "homotopy_algebra",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e140",
+      "from": "set_theory",
+      "to": "topological_space",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e141",
+      "from": "real_numbers",
+      "to": "topological_space",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e142",
+      "from": "topological_space",
+      "to": "continuous_map",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e143",
+      "from": "limit",
+      "to": "continuous_map",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e144",
+      "from": "topological_space",
+      "to": "compactness",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e145",
+      "from": "continuous_map",
+      "to": "compactness",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e146",
+      "from": "topological_space",
+      "to": "connectedness",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e147",
+      "from": "continuous_map",
+      "to": "connectedness",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e148",
+      "from": "continuous_map",
+      "to": "homotopy",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e149",
+      "from": "topological_space",
+      "to": "homotopy",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e150",
+      "from": "homotopy",
+      "to": "fundamental_group",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e151",
+      "from": "group",
+      "to": "fundamental_group",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e152",
+      "from": "path_connected",
+      "to": "fundamental_group",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e153",
+      "from": "fundamental_group",
+      "to": "covering_space",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e154",
+      "from": "homotopy",
+      "to": "covering_space",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e155",
+      "from": "homotopy",
+      "to": "homology_group",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e156",
+      "from": "abelian_group",
+      "to": "homology_group",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e157",
+      "from": "simplicial_complex",
+      "to": "homology_group",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e158",
+      "from": "homology_group",
+      "to": "cohomology",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e159",
+      "from": "module",
+      "to": "cohomology",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e160",
+      "from": "topological_space",
+      "to": "manifold",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e161",
+      "from": "calculus_several",
+      "to": "manifold",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e162",
+      "from": "euclidean_space",
+      "to": "manifold",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e163",
+      "from": "manifold",
+      "to": "tangent_space",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e164",
+      "from": "vector_space",
+      "to": "tangent_space",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e165",
+      "from": "derivative",
+      "to": "tangent_space",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e166",
+      "from": "tangent_space",
+      "to": "tensor_field",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e167",
+      "from": "tensor_product",
+      "to": "tensor_field",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e168",
+      "from": "manifold",
+      "to": "tensor_field",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e169",
+      "from": "manifold",
+      "to": "differential_form",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e170",
+      "from": "tangent_space",
+      "to": "differential_form",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e171",
+      "from": "multilinear_algebra",
+      "to": "differential_form",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e172",
+      "from": "differential_form",
+      "to": "stokes_theorem",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e173",
+      "from": "manifold_with_boundary",
+      "to": "stokes_theorem",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e174",
+      "from": "orientation",
+      "to": "stokes_theorem",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e175",
+      "from": "manifold",
+      "to": "riemannian_metric",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e176",
+      "from": "tensor_field",
+      "to": "riemannian_metric",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e177",
+      "from": "inner_product",
+      "to": "riemannian_metric",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e178",
+      "from": "riemannian_metric",
+      "to": "curvature",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e179",
+      "from": "connection",
+      "to": "curvature",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e180",
+      "from": "tensor_field",
+      "to": "curvature",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e181",
+      "from": "riemannian_metric",
+      "to": "geodesic",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e182",
+      "from": "connection",
+      "to": "geodesic",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e183",
+      "from": "calculus_variations",
+      "to": "geodesic",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e184",
+      "from": "riemannian_metric",
+      "to": "connection",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e185",
+      "from": "vector_bundle",
+      "to": "connection",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e186",
+      "from": "manifold",
+      "to": "fiber_bundle",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e187",
+      "from": "lie_group",
+      "to": "fiber_bundle",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e188",
+      "from": "vector_bundle",
+      "to": "fiber_bundle",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e189",
+      "from": "fiber_bundle",
+      "to": "characteristic_class",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e190",
+      "from": "cohomology",
+      "to": "characteristic_class",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e191",
+      "from": "lie_group",
+      "to": "characteristic_class",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e192",
+      "from": "manifold",
+      "to": "morse_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e193",
+      "from": "homology_group",
+      "to": "morse_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e194",
+      "from": "critical_point",
+      "to": "morse_theory",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e195",
+      "from": "characteristic_class",
+      "to": "index_theorem",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e196",
+      "from": "elliptic_operator",
+      "to": "index_theorem",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e197",
+      "from": "cohomology",
+      "to": "index_theorem",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e198",
+      "from": "functional_analysis",
+      "to": "index_theorem",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e199",
+      "from": "manifold",
+      "to": "symplectic_geometry",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e200",
+      "from": "differential_form",
+      "to": "symplectic_geometry",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e201",
+      "from": "hamiltonian_mechanics",
+      "to": "symplectic_geometry",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e202",
+      "from": "manifold",
+      "to": "complex_geometry",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e203",
+      "from": "complex_analysis",
+      "to": "complex_geometry",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e204",
+      "from": "complex_structure",
+      "to": "complex_geometry",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e205",
+      "from": "homology_group",
+      "to": "algebraic_topology",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e206",
+      "from": "fundamental_group",
+      "to": "algebraic_topology",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e207",
+      "from": "cohomology",
+      "to": "algebraic_topology",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e208",
+      "from": "integers",
+      "to": "divisibility",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e209",
+      "from": "arithmetic_operations",
+      "to": "divisibility",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e210",
+      "from": "divisibility",
+      "to": "congruence",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e211",
+      "from": "euclidean_algorithm",
+      "to": "congruence",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e212",
+      "from": "congruence",
+      "to": "primitive_root",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e213",
+      "from": "euler_totient",
+      "to": "primitive_root",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e214",
+      "from": "group",
+      "to": "primitive_root",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e215",
+      "from": "congruence",
+      "to": "quadratic_residue",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e216",
+      "from": "legendre_symbol",
+      "to": "quadratic_residue",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e217",
+      "from": "field_extension",
+      "to": "algebraic_integer",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e218",
+      "from": "minimal_polynomial",
+      "to": "algebraic_integer",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e219",
+      "from": "ring",
+      "to": "algebraic_integer",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e220",
+      "from": "ring",
+      "to": "ideal",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e221",
+      "from": "homomorphism",
+      "to": "ideal",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e222",
+      "from": "ideal",
+      "to": "class_number",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e223",
+      "from": "fractional_ideal",
+      "to": "class_number",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e224",
+      "from": "class_group",
+      "to": "class_number",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e225",
+      "from": "algebraic_curve",
+      "to": "elliptic_curve",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e226",
+      "from": "group",
+      "to": "elliptic_curve",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e227",
+      "from": "projective_geometry",
+      "to": "elliptic_curve",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e228",
+      "from": "complex_analysis",
+      "to": "modular_form",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e229",
+      "from": "group_action",
+      "to": "modular_form",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e230",
+      "from": "elliptic_curve",
+      "to": "modular_form",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e231",
+      "from": "modular_form",
+      "to": "l_function",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e232",
+      "from": "dirichlet_series",
+      "to": "l_function",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e233",
+      "from": "analytic_number_theory",
+      "to": "l_function",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e234",
+      "from": "algebraic_geometry",
+      "to": "arithmetic_geometry",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e235",
+      "from": "number_field",
+      "to": "arithmetic_geometry",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e236",
+      "from": "elliptic_curve",
+      "to": "arithmetic_geometry",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e237",
+      "from": "metric_space",
+      "to": "p_adic_numbers",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e238",
+      "from": "valuation",
+      "to": "p_adic_numbers",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e239",
+      "from": "ultrametric",
+      "to": "p_adic_numbers",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e240",
+      "from": "galois_theory",
+      "to": "galois_representation",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e241",
+      "from": "p_adic_numbers",
+      "to": "galois_representation",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e242",
+      "from": "group_representation",
+      "to": "galois_representation",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e243",
+      "from": "modular_form",
+      "to": "automorphic_form",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e244",
+      "from": "lie_group",
+      "to": "automorphic_form",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e245",
+      "from": "representation_lie",
+      "to": "automorphic_form",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e246",
+      "from": "set_theory",
+      "to": "propositional_logic",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e247",
+      "from": "boolean_algebra",
+      "to": "propositional_logic",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e248",
+      "from": "propositional_logic",
+      "to": "predicate_logic",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e249",
+      "from": "quantifiers",
+      "to": "predicate_logic",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e250",
+      "from": "propositional_logic",
+      "to": "proof_theory",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e251",
+      "from": "predicate_logic",
+      "to": "proof_theory",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e252",
+      "from": "natural_deduction",
+      "to": "proof_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e253",
+      "from": "predicate_logic",
+      "to": "model_theory",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e254",
+      "from": "set_theory",
+      "to": "model_theory",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e255",
+      "from": "universal_algebra",
+      "to": "model_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e256",
+      "from": "predicate_logic",
+      "to": "recursion_theory",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e257",
+      "from": "turing_machine",
+      "to": "recursion_theory",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e258",
+      "from": "logic",
+      "to": "set_theory",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e259",
+      "from": "naive_set",
+      "to": "set_theory",
+      "label": "依赖",
+      "level": "L0",
+      "arrows": "to"
+    },
+    {
+      "id": "e260",
+      "from": "set_theory",
+      "to": "forcing",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e261",
+      "from": "model_theory",
+      "to": "forcing",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e262",
+      "from": "boolean_valued",
+      "to": "forcing",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e263",
+      "from": "set_theory",
+      "to": "large_cardinal",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e264",
+      "from": "ordinal",
+      "to": "large_cardinal",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e265",
+      "from": "inaccessible_cardinal",
+      "to": "large_cardinal",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e266",
+      "from": "recursion_theory",
+      "to": "computability",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e267",
+      "from": "turing_machine",
+      "to": "computability",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e268",
+      "from": "computability",
+      "to": "complexity",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e269",
+      "from": "algorithm",
+      "to": "complexity",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e270",
+      "from": "turing_machine",
+      "to": "complexity",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e271",
+      "from": "proof_theory",
+      "to": "formalized_proof",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e272",
+      "from": "type_theory",
+      "to": "formalized_proof",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e273",
+      "from": "predicate_logic",
+      "to": "formalized_proof",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e274",
+      "from": "measure_theory",
+      "to": "probability_measure",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e275",
+      "from": "probability_measure",
+      "to": "random_variable",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e276",
+      "from": "random_variable",
+      "to": "probability_distribution",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e277",
+      "from": "random_variable",
+      "to": "expectation",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e278",
+      "from": "probability_measure",
+      "to": "conditional_probability",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e279",
+      "from": "conditional_probability",
+      "to": "bayes_theorem",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e280",
+      "from": "random_variable",
+      "to": "stochastic_process",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e281",
+      "from": "probability_measure",
+      "to": "stochastic_process",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e282",
+      "from": "stochastic_process",
+      "to": "markov_chain",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e283",
+      "from": "stochastic_process",
+      "to": "martingale",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e284",
+      "from": "stochastic_process",
+      "to": "brownian_motion",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e285",
+      "from": "expectation",
+      "to": "law_of_large_numbers",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e286",
+      "from": "probability_distribution",
+      "to": "central_limit_theorem",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e287",
+      "from": "probability_distribution",
+      "to": "statistical_inference",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e288",
+      "from": "statistical_inference",
+      "to": "parameter_estimation",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e289",
+      "from": "statistical_inference",
+      "to": "hypothesis_testing",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e290",
+      "from": "statistical_inference",
+      "to": "regression_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e291",
+      "from": "linear_algebra",
+      "to": "regression_analysis",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e292",
+      "from": "bayes_theorem",
+      "to": "bayesian_inference",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e293",
+      "from": "statistical_inference",
+      "to": "bayesian_inference",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e294",
+      "from": "regression_analysis",
+      "to": "time_series_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e295",
+      "from": "stochastic_process",
+      "to": "time_series_analysis",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e296",
+      "from": "expectation",
+      "to": "variance",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e297",
+      "from": "parameter_estimation",
+      "to": "maximum_likelihood",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e298",
+      "from": "calculus",
+      "to": "optimization_problem",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e299",
+      "from": "linear_algebra",
+      "to": "optimization_problem",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e300",
+      "from": "vector_space",
+      "to": "convex_set",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e301",
+      "from": "convex_set",
+      "to": "convex_function",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e302",
+      "from": "derivative",
+      "to": "convex_function",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e303",
+      "from": "partial_derivative",
+      "to": "gradient",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e304",
+      "from": "second_derivative",
+      "to": "hessian_matrix",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e305",
+      "from": "matrix",
+      "to": "hessian_matrix",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e306",
+      "from": "gradient",
+      "to": "gradient_descent",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e307",
+      "from": "convex_function",
+      "to": "gradient_descent",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e308",
+      "from": "hessian_matrix",
+      "to": "newton_method",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e309",
+      "from": "gradient",
+      "to": "newton_method",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e310",
+      "from": "gradient",
+      "to": "conjugate_gradient",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e311",
+      "from": "linear_algebra",
+      "to": "conjugate_gradient",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e312",
+      "from": "optimization_problem",
+      "to": "lagrange_multiplier",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e313",
+      "from": "gradient",
+      "to": "lagrange_multiplier",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e314",
+      "from": "lagrange_multiplier",
+      "to": "kkt_conditions",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e315",
+      "from": "convex_optimization",
+      "to": "kkt_conditions",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e316",
+      "from": "optimization_problem",
+      "to": "linear_programming",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e317",
+      "from": "linear_algebra",
+      "to": "linear_programming",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e318",
+      "from": "linear_programming",
+      "to": "simplex_method",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e319",
+      "from": "convex_function",
+      "to": "convex_optimization",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e320",
+      "from": "optimization_problem",
+      "to": "convex_optimization",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e321",
+      "from": "convex_optimization",
+      "to": "interior_point_method",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e322",
+      "from": "kkt_conditions",
+      "to": "interior_point_method",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e323",
+      "from": "linear_programming",
+      "to": "integer_programming",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e324",
+      "from": "optimization_problem",
+      "to": "dynamic_programming",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e325",
+      "from": "recursion",
+      "to": "dynamic_programming",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e326",
+      "from": "optimization_problem",
+      "to": "stochastic_optimization",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e327",
+      "from": "probability_distribution",
+      "to": "stochastic_optimization",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e328",
+      "from": "dynamic_programming",
+      "to": "optimal_control",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e329",
+      "from": "differential_equations",
+      "to": "optimal_control",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e330",
+      "from": "convex_optimization",
+      "to": "quadratic_programming",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e331",
+      "from": "quadratic_form",
+      "to": "quadratic_programming",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e332",
+      "from": "optimization_problem",
+      "to": "nonlinear_programming",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e333",
+      "from": "gradient",
+      "to": "nonlinear_programming",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e334",
+      "from": "differential_equations",
+      "to": "control_system",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e335",
+      "from": "linear_algebra",
+      "to": "control_system",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e336",
+      "from": "control_system",
+      "to": "transfer_function",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e337",
+      "from": "laplace_transform",
+      "to": "transfer_function",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e338",
+      "from": "control_system",
+      "to": "state_space",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e339",
+      "from": "matrix",
+      "to": "state_space",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e340",
+      "from": "control_system",
+      "to": "feedback_control",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e341",
+      "from": "transfer_function",
+      "to": "feedback_control",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e342",
+      "from": "feedback_control",
+      "to": "stability_analysis",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e343",
+      "from": "eigenvalue",
+      "to": "stability_analysis",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e344",
+      "from": "feedback_control",
+      "to": "pid_controller",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e345",
+      "from": "transfer_function",
+      "to": "pid_controller",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e346",
+      "from": "transfer_function",
+      "to": "root_locus",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e347",
+      "from": "eigenvalue",
+      "to": "root_locus",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e348",
+      "from": "transfer_function",
+      "to": "bode_plot",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e349",
+      "from": "frequency_response",
+      "to": "bode_plot",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e350",
+      "from": "bode_plot",
+      "to": "nyquist_criterion",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e351",
+      "from": "complex_analysis",
+      "to": "nyquist_criterion",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e352",
+      "from": "state_space",
+      "to": "controllability",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e353",
+      "from": "matrix_rank",
+      "to": "controllability",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e354",
+      "from": "state_space",
+      "to": "observability",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e355",
+      "from": "matrix_rank",
+      "to": "observability",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e356",
+      "from": "controllability",
+      "to": "state_feedback",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e357",
+      "from": "state_space",
+      "to": "state_feedback",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e358",
+      "from": "observability",
+      "to": "state_observer",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e359",
+      "from": "state_space",
+      "to": "state_observer",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e360",
+      "from": "state_observer",
+      "to": "kalman_filter",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e361",
+      "from": "stochastic_process",
+      "to": "kalman_filter",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e362",
+      "from": "state_feedback",
+      "to": "lqr_control",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e363",
+      "from": "optimal_control",
+      "to": "lqr_control",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e364",
+      "from": "optimal_control",
+      "to": "mpc",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e365",
+      "from": "state_space",
+      "to": "mpc",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e366",
+      "from": "optimization_problem",
+      "to": "mpc",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e367",
+      "from": "stability_analysis",
+      "to": "robust_control",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e368",
+      "from": "nyquist_criterion",
+      "to": "robust_control",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e369",
+      "from": "control_system",
+      "to": "nonlinear_control",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e370",
+      "from": "lyapunov_stability",
+      "to": "nonlinear_control",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e371",
+      "from": "control_system",
+      "to": "adaptive_control",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e372",
+      "from": "parameter_estimation",
+      "to": "adaptive_control",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e373",
+      "from": "control_system",
+      "to": "system_identification",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e374",
+      "from": "parameter_estimation",
+      "to": "system_identification",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e375",
+      "from": "probability_measure",
+      "to": "information",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e376",
+      "from": "information",
+      "to": "shannon_entropy",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e377",
+      "from": "probability_distribution",
+      "to": "shannon_entropy",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e378",
+      "from": "expectation",
+      "to": "shannon_entropy",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e379",
+      "from": "shannon_entropy",
+      "to": "mutual_information",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e380",
+      "from": "shannon_entropy",
+      "to": "kl_divergence",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e381",
+      "from": "convex_function",
+      "to": "kl_divergence",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e382",
+      "from": "shannon_entropy",
+      "to": "source_coding",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e383",
+      "from": "mutual_information",
+      "to": "channel_capacity",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e384",
+      "from": "channel_coding",
+      "to": "channel_capacity",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e385",
+      "from": "probability_theory",
+      "to": "channel_coding",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e386",
+      "from": "finite_field",
+      "to": "channel_coding",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e387",
+      "from": "channel_coding",
+      "to": "error_correction",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e388",
+      "from": "linear_code",
+      "to": "error_correction",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e389",
+      "from": "error_correction",
+      "to": "reed_solomon",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e390",
+      "from": "finite_field",
+      "to": "reed_solomon",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e391",
+      "from": "error_correction",
+      "to": "ldpc_code",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e392",
+      "from": "graph_theory",
+      "to": "ldpc_code",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e393",
+      "from": "shannon_entropy",
+      "to": "data_compression",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e394",
+      "from": "source_coding",
+      "to": "huffman_coding",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e395",
+      "from": "source_coding",
+      "to": "arithmetic_coding",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e396",
+      "from": "data_compression",
+      "to": "lossy_compression",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e397",
+      "from": "shannon_entropy",
+      "to": "rate_distortion",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e398",
+      "from": "convex_optimization",
+      "to": "rate_distortion",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e399",
+      "from": "channel_capacity",
+      "to": "network_information",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e400",
+      "from": "shannon_entropy",
+      "to": "cryptographic_protocol",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e401",
+      "from": "complexity",
+      "to": "cryptographic_protocol",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e402",
+      "from": "shannon_entropy",
+      "to": "quantum_information",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e403",
+      "from": "quantum_mechanics",
+      "to": "quantum_information",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e404",
+      "from": "shannon_entropy",
+      "to": "algorithmic_information",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e405",
+      "from": "computability",
+      "to": "algorithmic_information",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e406",
+      "from": "probability_measure",
+      "to": "differential_privacy",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e407",
+      "from": "group",
+      "to": "symmetric_encryption",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e408",
+      "from": "permutation",
+      "to": "symmetric_encryption",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e409",
+      "from": "symmetric_encryption",
+      "to": "aes",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e410",
+      "from": "finite_field",
+      "to": "aes",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e411",
+      "from": "number_theory",
+      "to": "public_key",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e412",
+      "from": "one_way_function",
+      "to": "public_key",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e413",
+      "from": "public_key",
+      "to": "rsa",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e414",
+      "from": "modular_arithmetic",
+      "to": "rsa",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e415",
+      "from": "public_key",
+      "to": "diffie_hellman",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e416",
+      "from": "discrete_logarithm",
+      "to": "diffie_hellman",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e417",
+      "from": "elliptic_curve",
+      "to": "elliptic_curve_crypto",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e418",
+      "from": "public_key",
+      "to": "elliptic_curve_crypto",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e419",
+      "from": "one_way_function",
+      "to": "hash_function",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e420",
+      "from": "public_key",
+      "to": "digital_signature",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e421",
+      "from": "hash_function",
+      "to": "digital_signature",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e422",
+      "from": "symmetric_encryption",
+      "to": "mac",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e423",
+      "from": "hash_function",
+      "to": "mac",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e424",
+      "from": "cryptographic_protocol",
+      "to": "zero_knowledge_proof",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e425",
+      "from": "commitment_scheme",
+      "to": "zero_knowledge_proof",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e426",
+      "from": "zero_knowledge_proof",
+      "to": "zk_snarks",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e427",
+      "from": "polynomial_commitment",
+      "to": "zk_snarks",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e428",
+      "from": "public_key",
+      "to": "homomorphic_encryption",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e429",
+      "from": "ring",
+      "to": "homomorphic_encryption",
+      "label": "依赖",
+      "level": "L1",
+      "arrows": "to"
+    },
+    {
+      "id": "e430",
+      "from": "quantum_mechanics",
+      "to": "quantum_crypto",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e431",
+      "from": "information",
+      "to": "quantum_crypto",
+      "label": "依赖",
+      "level": "L2",
+      "arrows": "to"
+    },
+    {
+      "id": "e432",
+      "from": "lattice_based_crypto",
+      "to": "post_quantum",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e433",
+      "from": "code_based_crypto",
+      "to": "post_quantum",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e434",
+      "from": "hash_function",
+      "to": "blockchain_consensus",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e435",
+      "from": "digital_signature",
+      "to": "blockchain_consensus",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e436",
+      "from": "secret_sharing",
+      "to": "mpc",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e437",
+      "from": "oblivious_transfer",
+      "to": "mpc",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e438",
+      "from": "aes",
+      "to": "side_channel",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e439",
+      "from": "statistical_inference",
+      "to": "side_channel",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e440",
+      "from": "reduction_proof",
+      "to": "provable_security",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e441",
+      "from": "complexity",
+      "to": "provable_security",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e442",
+      "from": "lattice",
+      "to": "lattice_based_crypto",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e443",
+      "from": "worst_case_hardness",
+      "to": "lattice_based_crypto",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    },
+    {
+      "id": "e444",
+      "from": "public_key",
+      "to": "identity_based",
+      "label": "依赖",
+      "level": "L3",
+      "arrows": "to"
+    },
+    {
+      "id": "e445",
+      "from": "bilinear_pairing",
+      "to": "identity_based",
+      "label": "依赖",
+      "level": "L4",
+      "arrows": "to"
+    }
+  ],
+  "categories": {
+    "分析学": [
+      "limit",
+      "continuity",
+      "derivative",
+      "riemann_integral",
+      "infinite_series",
+      "uniform_convergence",
+      "fourier_analysis",
+      "complex_analysis",
+      "residue_theory",
+      "conformal_mapping",
+      "harmonic_analysis",
+      "measure_theory",
+      "lebesgue_integral",
+      "lp_spaces",
+      "functional_analysis",
+      "banach_space",
+      "hilbert_space",
+      "operator_theory",
+      "spectral_theory",
+      "distribution_theory",
+      "sobolev_spaces",
+      "variational_methods",
+      "differential_equations",
+      "partial_differential_equations",
+      "asymptotic_analysis"
+    ],
+    "代数学": [
+      "group",
+      "ring",
+      "field",
+      "module",
+      "linear_algebra",
+      "vector_space",
+      "matrix",
+      "eigenvalue",
+      "jordan_normal_form",
+      "tensor_product",
+      "homological_algebra",
+      "group_representation",
+      "character_theory",
+      "group_action",
+      "sylow_theory",
+      "solvable_group",
+      "lie_group",
+      "lie_algebra",
+      "commutative_algebra",
+      "algebraic_geometry",
+      "scheme",
+      "sheaf",
+      "cohomology_sheaf",
+      "category_theory",
+      "homotopy_algebra"
+    ],
+    "几何拓扑": [
+      "topological_space",
+      "continuous_map",
+      "compactness",
+      "connectedness",
+      "homotopy",
+      "fundamental_group",
+      "covering_space",
+      "homology_group",
+      "cohomology",
+      "manifold",
+      "tangent_space",
+      "tensor_field",
+      "differential_form",
+      "stokes_theorem",
+      "riemannian_metric",
+      "curvature",
+      "geodesic",
+      "connection",
+      "fiber_bundle",
+      "characteristic_class",
+      "morse_theory",
+      "index_theorem",
+      "symplectic_geometry",
+      "complex_geometry",
+      "algebraic_topology"
+    ],
+    "数论逻辑": [
+      "divisibility",
+      "congruence",
+      "primitive_root",
+      "quadratic_residue",
+      "algebraic_integer",
+      "ideal",
+      "class_number",
+      "elliptic_curve",
+      "modular_form",
+      "l_function",
+      "arithmetic_geometry",
+      "p_adic_numbers",
+      "galois_representation",
+      "automorphic_form",
+      "propositional_logic",
+      "predicate_logic",
+      "proof_theory",
+      "model_theory",
+      "recursion_theory",
+      "set_theory",
+      "forcing",
+      "large_cardinal",
+      "computability",
+      "complexity",
+      "formalized_proof"
+    ],
+    "概率统计": [
+      "probability_measure",
+      "random_variable",
+      "probability_distribution",
+      "expectation",
+      "conditional_probability",
+      "bayes_theorem",
+      "stochastic_process",
+      "markov_chain",
+      "martingale",
+      "brownian_motion",
+      "law_of_large_numbers",
+      "central_limit_theorem",
+      "statistical_inference",
+      "parameter_estimation",
+      "hypothesis_testing",
+      "regression_analysis",
+      "bayesian_inference",
+      "time_series_analysis",
+      "variance",
+      "maximum_likelihood"
+    ],
+    "最优化": [
+      "optimization_problem",
+      "convex_set",
+      "convex_function",
+      "gradient",
+      "hessian_matrix",
+      "gradient_descent",
+      "newton_method",
+      "conjugate_gradient",
+      "lagrange_multiplier",
+      "kkt_conditions",
+      "linear_programming",
+      "simplex_method",
+      "convex_optimization",
+      "interior_point_method",
+      "integer_programming",
+      "dynamic_programming",
+      "stochastic_optimization",
+      "optimal_control",
+      "quadratic_programming",
+      "nonlinear_programming"
+    ],
+    "控制论": [
+      "control_system",
+      "transfer_function",
+      "state_space",
+      "feedback_control",
+      "stability_analysis",
+      "pid_controller",
+      "root_locus",
+      "bode_plot",
+      "nyquist_criterion",
+      "controllability",
+      "observability",
+      "state_feedback",
+      "state_observer",
+      "kalman_filter",
+      "lqr_control",
+      "mpc",
+      "robust_control",
+      "nonlinear_control",
+      "adaptive_control",
+      "system_identification"
+    ],
+    "信息论": [
+      "information",
+      "shannon_entropy",
+      "mutual_information",
+      "kl_divergence",
+      "source_coding",
+      "channel_capacity",
+      "channel_coding",
+      "error_correction",
+      "reed_solomon",
+      "ldpc_code",
+      "data_compression",
+      "huffman_coding",
+      "arithmetic_coding",
+      "lossy_compression",
+      "rate_distortion",
+      "network_information",
+      "cryptographic_protocol",
+      "quantum_information",
+      "algorithmic_information",
+      "differential_privacy"
+    ],
+    "密码学": [
+      "symmetric_encryption",
+      "aes",
+      "public_key",
+      "rsa",
+      "diffie_hellman",
+      "elliptic_curve_crypto",
+      "hash_function",
+      "digital_signature",
+      "mac",
+      "zero_knowledge_proof",
+      "zk_snarks",
+      "homomorphic_encryption",
+      "quantum_crypto",
+      "post_quantum",
+      "blockchain_consensus",
+      "mpc",
+      "side_channel",
+      "provable_security",
+      "lattice_based_crypto",
+      "identity_based"
+    ]
+  },
+  "cross_connections": [
+    {
+      "from_category": "数论逻辑",
+      "to_category": "分析学",
+      "from_concept": "set_theory",
+      "to_concept": "measure_theory"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "分析学",
+      "from_concept": "vector_space",
+      "to_concept": "lp_spaces"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "分析学",
+      "from_concept": "linear_algebra",
+      "to_concept": "functional_analysis"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "分析学",
+      "from_concept": "linear_algebra",
+      "to_concept": "differential_equations"
+    },
+    {
+      "from_category": "数论逻辑",
+      "to_category": "代数学",
+      "from_concept": "set_theory",
+      "to_concept": "group"
+    },
+    {
+      "from_category": "数论逻辑",
+      "to_category": "代数学",
+      "from_concept": "set_theory",
+      "to_concept": "group_action"
+    },
+    {
+      "from_category": "数论逻辑",
+      "to_category": "代数学",
+      "from_concept": "ideal",
+      "to_concept": "commutative_algebra"
+    },
+    {
+      "from_category": "数论逻辑",
+      "to_category": "代数学",
+      "from_concept": "set_theory",
+      "to_concept": "category_theory"
+    },
+    {
+      "from_category": "数论逻辑",
+      "to_category": "几何拓扑",
+      "from_concept": "set_theory",
+      "to_concept": "topological_space"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "几何拓扑",
+      "from_concept": "limit",
+      "to_concept": "continuous_map"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "几何拓扑",
+      "from_concept": "group",
+      "to_concept": "fundamental_group"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "几何拓扑",
+      "from_concept": "module",
+      "to_concept": "cohomology"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "几何拓扑",
+      "from_concept": "vector_space",
+      "to_concept": "tangent_space"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "几何拓扑",
+      "from_concept": "derivative",
+      "to_concept": "tangent_space"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "几何拓扑",
+      "from_concept": "tensor_product",
+      "to_concept": "tensor_field"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "几何拓扑",
+      "from_concept": "lie_group",
+      "to_concept": "fiber_bundle"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "几何拓扑",
+      "from_concept": "lie_group",
+      "to_concept": "characteristic_class"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "几何拓扑",
+      "from_concept": "functional_analysis",
+      "to_concept": "index_theorem"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "几何拓扑",
+      "from_concept": "complex_analysis",
+      "to_concept": "complex_geometry"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "数论逻辑",
+      "from_concept": "group",
+      "to_concept": "primitive_root"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "数论逻辑",
+      "from_concept": "ring",
+      "to_concept": "algebraic_integer"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "数论逻辑",
+      "from_concept": "ring",
+      "to_concept": "ideal"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "数论逻辑",
+      "from_concept": "group",
+      "to_concept": "elliptic_curve"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "数论逻辑",
+      "from_concept": "complex_analysis",
+      "to_concept": "modular_form"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "数论逻辑",
+      "from_concept": "group_action",
+      "to_concept": "modular_form"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "数论逻辑",
+      "from_concept": "algebraic_geometry",
+      "to_concept": "arithmetic_geometry"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "数论逻辑",
+      "from_concept": "group_representation",
+      "to_concept": "galois_representation"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "数论逻辑",
+      "from_concept": "lie_group",
+      "to_concept": "automorphic_form"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "概率统计",
+      "from_concept": "measure_theory",
+      "to_concept": "probability_measure"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "概率统计",
+      "from_concept": "linear_algebra",
+      "to_concept": "regression_analysis"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "最优化",
+      "from_concept": "linear_algebra",
+      "to_concept": "optimization_problem"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "最优化",
+      "from_concept": "vector_space",
+      "to_concept": "convex_set"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "最优化",
+      "from_concept": "derivative",
+      "to_concept": "convex_function"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "最优化",
+      "from_concept": "matrix",
+      "to_concept": "hessian_matrix"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "最优化",
+      "from_concept": "linear_algebra",
+      "to_concept": "conjugate_gradient"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "最优化",
+      "from_concept": "linear_algebra",
+      "to_concept": "linear_programming"
+    },
+    {
+      "from_category": "概率统计",
+      "to_category": "最优化",
+      "from_concept": "probability_distribution",
+      "to_concept": "stochastic_optimization"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "最优化",
+      "from_concept": "differential_equations",
+      "to_concept": "optimal_control"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "控制论",
+      "from_concept": "differential_equations",
+      "to_concept": "control_system"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "控制论",
+      "from_concept": "linear_algebra",
+      "to_concept": "control_system"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "控制论",
+      "from_concept": "matrix",
+      "to_concept": "state_space"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "控制论",
+      "from_concept": "eigenvalue",
+      "to_concept": "stability_analysis"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "控制论",
+      "from_concept": "eigenvalue",
+      "to_concept": "root_locus"
+    },
+    {
+      "from_category": "分析学",
+      "to_category": "控制论",
+      "from_concept": "complex_analysis",
+      "to_concept": "nyquist_criterion"
+    },
+    {
+      "from_category": "概率统计",
+      "to_category": "控制论",
+      "from_concept": "stochastic_process",
+      "to_concept": "kalman_filter"
+    },
+    {
+      "from_category": "最优化",
+      "to_category": "控制论",
+      "from_concept": "optimal_control",
+      "to_concept": "lqr_control"
+    },
+    {
+      "from_category": "最优化",
+      "to_category": "控制论",
+      "from_concept": "optimal_control",
+      "to_concept": "mpc"
+    },
+    {
+      "from_category": "最优化",
+      "to_category": "控制论",
+      "from_concept": "optimization_problem",
+      "to_concept": "mpc"
+    },
+    {
+      "from_category": "概率统计",
+      "to_category": "控制论",
+      "from_concept": "parameter_estimation",
+      "to_concept": "adaptive_control"
+    },
+    {
+      "from_category": "概率统计",
+      "to_category": "控制论",
+      "from_concept": "parameter_estimation",
+      "to_concept": "system_identification"
+    },
+    {
+      "from_category": "概率统计",
+      "to_category": "信息论",
+      "from_concept": "probability_measure",
+      "to_concept": "information"
+    },
+    {
+      "from_category": "概率统计",
+      "to_category": "信息论",
+      "from_concept": "probability_distribution",
+      "to_concept": "shannon_entropy"
+    },
+    {
+      "from_category": "概率统计",
+      "to_category": "信息论",
+      "from_concept": "expectation",
+      "to_concept": "shannon_entropy"
+    },
+    {
+      "from_category": "最优化",
+      "to_category": "信息论",
+      "from_concept": "convex_function",
+      "to_concept": "kl_divergence"
+    },
+    {
+      "from_category": "最优化",
+      "to_category": "信息论",
+      "from_concept": "convex_optimization",
+      "to_concept": "rate_distortion"
+    },
+    {
+      "from_category": "数论逻辑",
+      "to_category": "信息论",
+      "from_concept": "complexity",
+      "to_concept": "cryptographic_protocol"
+    },
+    {
+      "from_category": "数论逻辑",
+      "to_category": "信息论",
+      "from_concept": "computability",
+      "to_concept": "algorithmic_information"
+    },
+    {
+      "from_category": "概率统计",
+      "to_category": "信息论",
+      "from_concept": "probability_measure",
+      "to_concept": "differential_privacy"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "密码学",
+      "from_concept": "group",
+      "to_concept": "symmetric_encryption"
+    },
+    {
+      "from_category": "数论逻辑",
+      "to_category": "密码学",
+      "from_concept": "elliptic_curve",
+      "to_concept": "elliptic_curve_crypto"
+    },
+    {
+      "from_category": "信息论",
+      "to_category": "密码学",
+      "from_concept": "cryptographic_protocol",
+      "to_concept": "zero_knowledge_proof"
+    },
+    {
+      "from_category": "代数学",
+      "to_category": "密码学",
+      "from_concept": "ring",
+      "to_concept": "homomorphic_encryption"
+    },
+    {
+      "from_category": "信息论",
+      "to_category": "密码学",
+      "from_concept": "information",
+      "to_concept": "quantum_crypto"
+    },
+    {
+      "from_category": "概率统计",
+      "to_category": "密码学",
+      "from_concept": "statistical_inference",
+      "to_concept": "side_channel"
+    },
+    {
+      "from_category": "数论逻辑",
+      "to_category": "密码学",
+      "from_concept": "complexity",
+      "to_concept": "provable_security"
+    }
+  ]
+}

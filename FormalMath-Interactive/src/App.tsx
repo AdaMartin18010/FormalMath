@@ -1,9 +1,15 @@
-import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { Suspense, useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Header } from '@components/Header';
 import { Footer } from '@components/Footer';
-import { Loading, PageLoading } from '@components/Loading';
+import { PageLoading } from '@components/Loading';
+import { MobileBottomNav } from '@mobile/MobileBottomNav';
+import { MobileDrawer } from '@mobile/MobileDrawer';
+import { PWAInstallPrompt } from '@mobile/PWAInstallPrompt';
+import { useMobileDetect } from '@hooks/mobile/useMobileDetect';
+import { useShakeDetection } from '@hooks/mobile/useMobileDetect';
+import { useDarkMode } from '@hooks/mobile/useDarkMode';
 
 // Lazy load pages for better performance
 const Home = React.lazy(() => import('@pages/Home'));
@@ -14,22 +20,30 @@ const Comparison = React.lazy(() => import('@pages/Comparison'));
 const DecisionTree = React.lazy(() => import('@pages/DecisionTree'));
 const Evolution = React.lazy(() => import('@pages/Evolution'));
 
-// Create Query Client
+// Create Query Client with mobile optimizations
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: 5 * 60 * 1000, // 5 minutes
       retry: 2,
       refetchOnWindowFocus: false,
+      // 移动端优化：网络不佳时延长缓存时间
+      cacheTime: 10 * 60 * 1000, // 10 minutes
     },
   },
 });
 
 // Layout wrapper for pages with header only
-const SimpleLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="min-h-screen flex flex-col bg-gray-50">
+const SimpleLayout: React.FC<{ 
+  children: React.ReactNode;
+  isMobile: boolean;
+}> = ({ children, isMobile }) => (
+  <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-slate-900 transition-colors">
     <Header />
-    <main className="flex-1">
+    <main className={cn(
+      "flex-1",
+      isMobile && "pb-20" // 为底部导航栏留出空间
+    )}>
       {children}
     </main>
     <Footer />
@@ -37,10 +51,18 @@ const SimpleLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 );
 
 // Layout for visualization pages (no footer to maximize space)
-const VisualizationLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="min-h-screen flex flex-col bg-white">
+const VisualizationLayout: React.FC<{ 
+  children: React.ReactNode;
+  isMobile: boolean;
+}> = ({ children, isMobile }) => (
+  <div className="min-h-screen flex flex-col bg-white dark:bg-slate-900 transition-colors">
     <Header />
-    {children}
+    <main className={cn(
+      "flex-1",
+      isMobile && "pb-20" // 为底部导航栏留出空间
+    )}>
+      {children}
+    </main>
   </div>
 );
 
@@ -65,15 +87,15 @@ class ErrorBoundary extends React.Component<
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50">
-          <div className="text-center p-8 bg-white rounded-2xl shadow-lg max-w-md">
-            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-slate-900">
+          <div className="text-center p-8 bg-white dark:bg-slate-800 rounded-2xl shadow-lg max-w-md mx-4">
+            <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
               </svg>
             </div>
-            <h2 className="text-xl font-bold text-gray-900 mb-2">出错了</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">出错了</h2>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
               {this.state.error?.message || '应用程序遇到了意外错误'}
             </p>
             <button
@@ -91,17 +113,63 @@ class ErrorBoundary extends React.Component<
   }
 }
 
+// 导入 cn 工具函数
+import { cn } from '@utils/classNames';
+
+// Main App Component
 function App() {
+  const { isMobile } = useMobileDetect();
+  const { isDark } = useDarkMode();
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const navigate = useNavigate();
+
+  // 移除初始加载器
+  useEffect(() => {
+    const loader = document.getElementById('initial-loader');
+    if (loader) {
+      loader.style.opacity = '0';
+      setTimeout(() => loader.remove(), 300);
+    }
+  }, []);
+
+  // 注册 Service Worker
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/sw.js')
+        .then((registration) => {
+          console.log('SW registered:', registration);
+        })
+        .catch((error) => {
+          console.log('SW registration failed:', error);
+        });
+    }
+  }, []);
+
+  // 摇一摇快捷操作 - 打开搜索
+  useShakeDetection({
+    onShake: () => {
+      if (isMobile) {
+        // 触发搜索功能
+        const searchButton = document.querySelector('[title="搜索"]') as HTMLButtonElement;
+        searchButton?.click();
+      }
+    },
+  });
+
   return (
     <QueryClientProvider client={queryClient}>
       <ErrorBoundary>
-        <Router>
+        <div className={cn(
+          "min-h-screen transition-colors",
+          isDark ? "dark bg-slate-900" : "bg-white"
+        )}>
           <Routes>
             {/* Home Page */}
             <Route
               path="/"
               element={
-                <SimpleLayout>
+                <SimpleLayout isMobile={isMobile}>
                   <Suspense fallback={<PageLoading title="正在加载首页" />}>
                     <Home />
                   </Suspense>
@@ -113,7 +181,7 @@ function App() {
             <Route
               path="/knowledge-graph"
               element={
-                <VisualizationLayout>
+                <VisualizationLayout isMobile={isMobile}>
                   <Suspense fallback={<PageLoading title="正在加载知识图谱" />}>
                     <KnowledgeGraph />
                   </Suspense>
@@ -125,7 +193,7 @@ function App() {
             <Route
               path="/reasoning-tree"
               element={
-                <VisualizationLayout>
+                <VisualizationLayout isMobile={isMobile}>
                   <Suspense fallback={<PageLoading title="正在加载推理树" />}>
                     <ReasoningTree />
                   </Suspense>
@@ -137,7 +205,7 @@ function App() {
             <Route
               path="/mind-map"
               element={
-                <VisualizationLayout>
+                <VisualizationLayout isMobile={isMobile}>
                   <Suspense fallback={<PageLoading title="正在加载思维导图" />}>
                     <MindMap />
                   </Suspense>
@@ -149,7 +217,7 @@ function App() {
             <Route
               path="/comparison"
               element={
-                <VisualizationLayout>
+                <VisualizationLayout isMobile={isMobile}>
                   <Suspense fallback={<PageLoading title="正在加载对比分析" />}>
                     <Comparison />
                   </Suspense>
@@ -161,7 +229,7 @@ function App() {
             <Route
               path="/decision-tree"
               element={
-                <VisualizationLayout>
+                <VisualizationLayout isMobile={isMobile}>
                   <Suspense fallback={<PageLoading title="正在加载决策树" />}>
                     <DecisionTree />
                   </Suspense>
@@ -173,7 +241,7 @@ function App() {
             <Route
               path="/evolution"
               element={
-                <VisualizationLayout>
+                <VisualizationLayout isMobile={isMobile}>
                   <Suspense fallback={<PageLoading title="正在加载演化历史" />}>
                     <Evolution />
                   </Suspense>
@@ -185,12 +253,12 @@ function App() {
             <Route
               path="*"
               element={
-                <SimpleLayout>
-                  <div className="min-h-[60vh] flex items-center justify-center">
+                <SimpleLayout isMobile={isMobile}>
+                  <div className="min-h-[60vh] flex items-center justify-center px-4">
                     <div className="text-center">
-                      <h1 className="text-6xl font-bold text-gray-300 mb-4">404</h1>
-                      <h2 className="text-2xl font-semibold text-gray-700 mb-2">页面未找到</h2>
-                      <p className="text-gray-500 mb-6">您访问的页面不存在或已被移除</p>
+                      <h1 className="text-6xl font-bold text-gray-300 dark:text-slate-700 mb-4">404</h1>
+                      <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-2">页面未找到</h2>
+                      <p className="text-gray-500 dark:text-gray-400 mb-6">您访问的页面不存在或已被移除</p>
                       <a
                         href="/"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition-colors"
@@ -203,10 +271,34 @@ function App() {
               }
             />
           </Routes>
-        </Router>
+
+          {/* 移动端底部导航 */}
+          {isMobile && (
+            <>
+              <MobileBottomNav onMoreClick={() => setIsDrawerOpen(true)} />
+              <MobileDrawer
+                isOpen={isDrawerOpen}
+                onClose={() => setIsDrawerOpen(false)}
+                onNavigate={(path) => navigate(path)}
+              />
+            </>
+          )}
+
+          {/* PWA 安装提示 */}
+          <PWAInstallPrompt delay={5000} />
+        </div>
       </ErrorBoundary>
     </QueryClientProvider>
   );
 }
 
-export default App;
+// 包装 Router
+function AppWithRouter() {
+  return (
+    <Router basename="/FormalMath">
+      <App />
+    </Router>
+  );
+}
+
+export default AppWithRouter;
