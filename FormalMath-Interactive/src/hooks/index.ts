@@ -37,3 +37,31 @@ export {
   useDarkMode,
   useAutoDarkMode,
 } from './mobile/useDarkMode';
+
+// 语音交互 hooks
+export {
+  useSpeechSynthesis,
+  useSpeechRecognition,
+  useMathReader,
+  useARSupport,
+  useSocialShare,
+} from './useVoice';
+
+// 离线学习 hooks
+export {
+  useOfflineContent,
+  useOfflineProgress,
+  useOfflineQueue,
+  usePreload,
+  useNetworkStatus,
+} from './useOffline';
+
+// 智能提醒 hooks
+export {
+  useReminders,
+  useLearningGoals,
+  useLearningStats,
+  useSmartSuggestions,
+  useNotificationPermission,
+  useLearningTracker,
+} from './useReminder';
