@@ -86,7 +86,61 @@ export { ProofTreeViz } from './ProofTreeViz';
 export { AssociationHeatmap } from './AssociationHeatmap';
 
 // ============================================
+// 优化版可视化组件 v3.0
+// ============================================
+
+export {
+  // 优化版组件
+  OptimizedD3Graph,
+  OptimizedGraph3D,
+  
+  // 性能优化 Hooks
+  useFPSMonitor,
+  useThrottle,
+  useDebounce,
+  useRAFThrottle,
+  usePerformanceMonitor,
+  useVirtualization,
+  useVisibilityObserver,
+  
+  // 动画优化 Hooks
+  useAnimation,
+  useSpring,
+  useAnimatedValue,
+  useStaggeredAnimation,
+  usePulse,
+  easings,
+  
+  // 主题系统
+  lightTheme,
+  darkTheme,
+  highContrastTheme,
+  colorBlindTheme,
+  themes,
+  getTheme,
+  applyTheme,
+  getNodeColor,
+  getEdgeColor,
+} from './optimized';
+
+export type {
+  // 主题类型
+  VisualizationTheme,
+  ThemeName,
+  
+  // 性能类型
+  PerformanceMetrics,
+  VirtualizationConfig,
+  VirtualizationResult,
+  
+  // 动画类型
+  AnimationConfig,
+  SpringConfig,
+} from './optimized';
+
+// ============================================
 // 默认导出
 // ============================================
 
 export { default } from './D3Graph';
+export { OptimizedD3Graph as OptimizedGraph } from './optimized';
