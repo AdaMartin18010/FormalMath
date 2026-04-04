@@ -1,0 +1,218 @@
+{
+  "alignment_metadata": {
+    "version": "1.0",
+    "date": "2026-04-04",
+    "source": "Wikipedia Mathematics",
+    "target": "FormalMath Concept Graph",
+    "coverage": {
+      "probability_theory": 0.85,
+      "statistics": 0.75,
+      "stochastic_process": 0.80,
+      "machine_learning": 0.40
+    }
+  },
+  "concept_mappings": [
+    {
+      "wikipedia_title": "Probability Measure",
+      "formalmath_id": "probability_measure",
+      "formalmath_name": "概率测度",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Random Variable",
+      "formalmath_id": "random_variable",
+      "formalmath_name": "随机变量",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Probability Distribution",
+      "formalmath_id": "probability_distribution",
+      "formalmath_name": "概率分布",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Expected Value",
+      "formalmath_id": "expectation",
+      "formalmath_name": "期望",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Variance",
+      "formalmath_id": "variance",
+      "formalmath_name": "方差",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Conditional Probability",
+      "formalmath_id": "conditional_probability",
+      "formalmath_name": "条件概率",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Bayes Theorem",
+      "formalmath_id": "bayes_theorem",
+      "formalmath_name": "贝叶斯定理",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Stochastic Process",
+      "formalmath_id": "stochastic_process",
+      "formalmath_name": "随机过程",
+      "alignment_score": 0.90,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Markov Chain",
+      "formalmath_id": "markov_chain",
+      "formalmath_name": "马尔可夫链",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Martingale",
+      "formalmath_id": "martingale",
+      "formalmath_name": "鞅",
+      "alignment_score": 0.90,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Brownian Motion",
+      "formalmath_id": "brownian_motion",
+      "formalmath_name": "布朗运动",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Law of Large Numbers",
+      "formalmath_id": "law_of_large_numbers",
+      "formalmath_name": "大数定律",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Central Limit Theorem",
+      "formalmath_id": "central_limit_theorem",
+      "formalmath_name": "中心极限定理",
+      "alignment_score": 0.95,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Statistical Inference",
+      "formalmath_id": "statistical_inference",
+      "formalmath_name": "统计推断",
+      "alignment_score": 0.90,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Parameter Estimation",
+      "formalmath_id": "parameter_estimation",
+      "formalmath_name": "参数估计",
+      "alignment_score": 0.90,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Maximum Likelihood Estimation",
+      "formalmath_id": "maximum_likelihood",
+      "formalmath_name": "最大似然估计",
+      "alignment_score": 0.90,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Hypothesis Testing",
+      "formalmath_id": "hypothesis_testing",
+      "formalmath_name": "假设检验",
+      "alignment_score": 0.90,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Regression Analysis",
+      "formalmath_id": "regression_analysis",
+      "formalmath_name": "回归分析",
+      "alignment_score": 0.85,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Bayesian Inference",
+      "formalmath_id": "bayesian_inference",
+      "formalmath_name": "贝叶斯推断",
+      "alignment_score": 0.85,
+      "status": "aligned"
+    },
+    {
+      "wikipedia_title": "Time Series Analysis",
+      "formalmath_id": "time_series_analysis",
+      "formalmath_name": "时间序列分析",
+      "alignment_score": 0.85,
+      "status": "aligned"
+    }
+  ],
+  "gaps": [
+    {
+      "wikipedia_concept": "Filtration",
+      "priority": "high",
+      "proposed_id": "filtration",
+      "proposed_name": "滤链"
+    },
+    {
+      "wikipedia_concept": "Markov Chain Monte Carlo",
+      "priority": "high",
+      "proposed_id": "markov_chain_monte_carlo",
+      "proposed_name": "马尔可夫链蒙特卡洛"
+    },
+    {
+      "wikipedia_concept": "Hidden Markov Model",
+      "priority": "medium",
+      "proposed_id": "hidden_markov_model",
+      "proposed_name": "隐马尔可夫模型"
+    },
+    {
+      "wikipedia_concept": "Stochastic Calculus",
+      "priority": "high",
+      "proposed_id": "stochastic_calculus",
+      "proposed_name": "随机分析"
+    },
+    {
+      "wikipedia_concept": "Prior Distribution",
+      "priority": "medium",
+      "proposed_id": "prior_distribution",
+      "proposed_name": "先验分布"
+    },
+    {
+      "wikipedia_concept": "Posterior Distribution",
+      "priority": "medium",
+      "proposed_id": "posterior_distribution",
+      "proposed_name": "后验分布"
+    },
+    {
+      "wikipedia_concept": "Linear Regression",
+      "priority": "medium",
+      "proposed_id": "linear_regression",
+      "proposed_name": "线性回归"
+    },
+    {
+      "wikipedia_concept": "Logistic Regression",
+      "priority": "medium",
+      "proposed_id": "logistic_regression",
+      "proposed_name": "逻辑回归"
+    },
+    {
+      "wikipedia_concept": "Neural Network",
+      "priority": "low",
+      "proposed_id": "neural_network",
+      "proposed_name": "神经网络"
+    },
+    {
+      "wikipedia_concept": "Markov Decision Process",
+      "priority": "low",
+      "proposed_id": "markov_decision_process",
+      "proposed_name": "马尔可夫决策过程"
+    }
+  ]
+}

@@ -1,0 +1,6879 @@
+[
+  {
+    "concept_id": "limit",
+    "name_zh": "极限",
+    "multilang": {
+      "en": {
+        "title": "Limit (mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Limit_(mathematics)"
+      },
+      "de": {
+        "title": "Grenzwert (Folge)",
+        "url": "https://de.wikipedia.org/wiki/Grenzwert_(Folge)"
+      },
+      "fr": {
+        "title": "Limite (mathématiques)",
+        "url": "https://fr.wikipedia.org/wiki/Limite_(mathématiques)"
+      },
+      "ja": {
+        "title": "極限",
+        "url": "https://ja.wikipedia.org/wiki/極限"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "continuity",
+    "name_zh": "连续性",
+    "multilang": {
+      "en": {
+        "title": "Continuous function",
+        "url": "https://en.wikipedia.org/wiki/Continuous_function"
+      },
+      "de": {
+        "title": "Stetige Funktion",
+        "url": "https://de.wikipedia.org/wiki/Stetige_Funktion"
+      },
+      "fr": {
+        "title": "Fonction continue",
+        "url": "https://fr.wikipedia.org/wiki/Fonction_continue"
+      },
+      "ja": {
+        "title": "連続 (数学)",
+        "url": "https://ja.wikipedia.org/wiki/連続 (数学)"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "derivative",
+    "name_zh": "导数",
+    "multilang": {
+      "en": {
+        "title": "Derivative",
+        "url": "https://en.wikipedia.org/wiki/Derivative"
+      },
+      "de": {
+        "title": "Ableitung (Mathematik)",
+        "url": "https://de.wikipedia.org/wiki/Ableitung_(Mathematik)"
+      },
+      "fr": {
+        "title": "Dérivée",
+        "url": "https://fr.wikipedia.org/wiki/Dérivée"
+      },
+      "ja": {
+        "title": "導関数",
+        "url": "https://ja.wikipedia.org/wiki/導関数"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "riemann_integral",
+    "name_zh": "积分",
+    "multilang": {
+      "en": {
+        "title": "Riemann integral",
+        "url": "https://en.wikipedia.org/wiki/Riemann_integral"
+      },
+      "de": {
+        "title": "Riemann-Integral",
+        "url": "https://de.wikipedia.org/wiki/Riemann-Integral"
+      },
+      "fr": {
+        "title": "Intégrale de Riemann",
+        "url": "https://fr.wikipedia.org/wiki/Intégrale_de_Riemann"
+      },
+      "ja": {
+        "title": "リーマン積分",
+        "url": "https://ja.wikipedia.org/wiki/リーマン積分"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "infinite_series",
+    "name_zh": "级数",
+    "multilang": {
+      "en": {
+        "title": "Series (mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Series_(mathematics)"
+      },
+      "de": {
+        "title": "Reihe (Mathematik)",
+        "url": "https://de.wikipedia.org/wiki/Reihe_(Mathematik)"
+      },
+      "fr": {
+        "title": "Série mathématique",
+        "url": "https://fr.wikipedia.org/wiki/Série_mathématique"
+      },
+      "ja": {
+        "title": "級数",
+        "url": "https://ja.wikipedia.org/wiki/級数"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "uniform_convergence",
+    "name_zh": "一致收敛",
+    "multilang": {
+      "en": {
+        "title": "Uniform convergence",
+        "url": "https://en.wikipedia.org/wiki/Uniform_convergence"
+      },
+      "de": {
+        "title": "Gleichmäßige Konvergenz",
+        "url": "https://de.wikipedia.org/wiki/Gleichmäßige_Konvergenz"
+      },
+      "fr": {
+        "title": "Convergence uniforme",
+        "url": "https://fr.wikipedia.org/wiki/Convergence_uniforme"
+      },
+      "ja": {
+        "title": "一様収束",
+        "url": "https://ja.wikipedia.org/wiki/一様収束"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "fourier_analysis",
+    "name_zh": "Fourier分析",
+    "multilang": {
+      "en": {
+        "title": "Fourier Analysis",
+        "url": "https://en.wikipedia.org/wiki/Fourier_Analysis"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "complex_analysis",
+    "name_zh": "复分析",
+    "multilang": {
+      "en": {
+        "title": "Complex analysis",
+        "url": "https://en.wikipedia.org/wiki/Complex_analysis"
+      },
+      "de": {
+        "title": "Funktionentheorie",
+        "url": "https://de.wikipedia.org/wiki/Funktionentheorie"
+      },
+      "fr": {
+        "title": "Analyse complexe",
+        "url": "https://fr.wikipedia.org/wiki/Analyse_complexe"
+      },
+      "ja": {
+        "title": "複素解析",
+        "url": "https://ja.wikipedia.org/wiki/複素解析"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "residue_theory",
+    "name_zh": "留数",
+    "multilang": {
+      "en": {
+        "title": "Residue Theory",
+        "url": "https://en.wikipedia.org/wiki/Residue_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "conformal_mapping",
+    "name_zh": "共形映射",
+    "multilang": {
+      "en": {
+        "title": "Conformal Mapping",
+        "url": "https://en.wikipedia.org/wiki/Conformal_Mapping"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "harmonic_analysis",
+    "name_zh": "调和分析",
+    "multilang": {
+      "en": {
+        "title": "Harmonic Analysis",
+        "url": "https://en.wikipedia.org/wiki/Harmonic_Analysis"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "measure_theory",
+    "name_zh": "测度论",
+    "multilang": {
+      "en": {
+        "title": "Measure (mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Measure_(mathematics)"
+      },
+      "de": {
+        "title": "Maß (Mathematik)",
+        "url": "https://de.wikipedia.org/wiki/Maß_(Mathematik)"
+      },
+      "fr": {
+        "title": "Mesure (mathématiques)",
+        "url": "https://fr.wikipedia.org/wiki/Mesure_(mathématiques)"
+      },
+      "ja": {
+        "title": "測度",
+        "url": "https://ja.wikipedia.org/wiki/測度"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "lebesgue_integral",
+    "name_zh": "Lebesgue积分",
+    "multilang": {
+      "en": {
+        "title": "Lebesgue integration",
+        "url": "https://en.wikipedia.org/wiki/Lebesgue_integration"
+      },
+      "de": {
+        "title": "Lebesgue-Integral",
+        "url": "https://de.wikipedia.org/wiki/Lebesgue-Integral"
+      },
+      "fr": {
+        "title": "Intégrale de Lebesgue",
+        "url": "https://fr.wikipedia.org/wiki/Intégrale_de_Lebesgue"
+      },
+      "ja": {
+        "title": "ルベーグ積分",
+        "url": "https://ja.wikipedia.org/wiki/ルベーグ積分"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "lp_spaces",
+    "name_zh": "Lp空间",
+    "multilang": {
+      "en": {
+        "title": "Lp Spaces",
+        "url": "https://en.wikipedia.org/wiki/Lp_Spaces"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "functional_analysis",
+    "name_zh": "泛函分析",
+    "multilang": {
+      "en": {
+        "title": "Functional analysis",
+        "url": "https://en.wikipedia.org/wiki/Functional_analysis"
+      },
+      "de": {
+        "title": "Funktionalanalysis",
+        "url": "https://de.wikipedia.org/wiki/Funktionalanalysis"
+      },
+      "fr": {
+        "title": "Analyse fonctionnelle (mathématiques)",
+        "url": "https://fr.wikipedia.org/wiki/Analyse_fonctionnelle_(mathématiques)"
+      },
+      "ja": {
+        "title": "関数解析",
+        "url": "https://ja.wikipedia.org/wiki/関数解析"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "banach_space",
+    "name_zh": "Banach空间",
+    "multilang": {
+      "en": {
+        "title": "Banach space",
+        "url": "https://en.wikipedia.org/wiki/Banach_space"
+      },
+      "de": {
+        "title": "Banach-Raum",
+        "url": "https://de.wikipedia.org/wiki/Banach-Raum"
+      },
+      "fr": {
+        "title": "Espace de Banach",
+        "url": "https://fr.wikipedia.org/wiki/Espace_de_Banach"
+      },
+      "ja": {
+        "title": "バナッハ空間",
+        "url": "https://ja.wikipedia.org/wiki/バナッハ空間"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "hilbert_space",
+    "name_zh": "Hilbert空间",
+    "multilang": {
+      "en": {
+        "title": "Hilbert space",
+        "url": "https://en.wikipedia.org/wiki/Hilbert_space"
+      },
+      "de": {
+        "title": "Hilbert-Raum",
+        "url": "https://de.wikipedia.org/wiki/Hilbert-Raum"
+      },
+      "fr": {
+        "title": "Espace de Hilbert",
+        "url": "https://fr.wikipedia.org/wiki/Espace_de_Hilbert"
+      },
+      "ja": {
+        "title": "ヒルベルト空間",
+        "url": "https://ja.wikipedia.org/wiki/ヒルベルト空間"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "operator_theory",
+    "name_zh": "算子理论",
+    "multilang": {
+      "en": {
+        "title": "Operator Theory",
+        "url": "https://en.wikipedia.org/wiki/Operator_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "spectral_theory",
+    "name_zh": "谱理论",
+    "multilang": {
+      "en": {
+        "title": "Spectral Theory",
+        "url": "https://en.wikipedia.org/wiki/Spectral_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "distribution_theory",
+    "name_zh": "分布理论",
+    "multilang": {
+      "en": {
+        "title": "Distribution Theory",
+        "url": "https://en.wikipedia.org/wiki/Distribution_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "sobolev_spaces",
+    "name_zh": "Sobolev空间",
+    "multilang": {
+      "en": {
+        "title": "Sobolev Spaces",
+        "url": "https://en.wikipedia.org/wiki/Sobolev_Spaces"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "variational_methods",
+    "name_zh": "变分法",
+    "multilang": {
+      "en": {
+        "title": "Variational Methods",
+        "url": "https://en.wikipedia.org/wiki/Variational_Methods"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "differential_equations",
+    "name_zh": "微分方程",
+    "multilang": {
+      "en": {
+        "title": "Differential Equations",
+        "url": "https://en.wikipedia.org/wiki/Differential_Equations"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "partial_differential_equations",
+    "name_zh": "偏微分方程",
+    "multilang": {
+      "en": {
+        "title": "Partial differential equation",
+        "url": "https://en.wikipedia.org/wiki/Partial_differential_equation"
+      },
+      "de": {
+        "title": "Partielle Differentialgleichung",
+        "url": "https://de.wikipedia.org/wiki/Partielle_Differentialgleichung"
+      },
+      "fr": {
+        "title": "Équation aux dérivées partielles",
+        "url": "https://fr.wikipedia.org/wiki/Équation_aux_dérivées_partielles"
+      },
+      "ja": {
+        "title": "偏微分方程式",
+        "url": "https://ja.wikipedia.org/wiki/偏微分方程式"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "asymptotic_analysis",
+    "name_zh": "渐近分析",
+    "multilang": {
+      "en": {
+        "title": "Asymptotic Analysis",
+        "url": "https://en.wikipedia.org/wiki/Asymptotic_Analysis"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "group",
+    "name_zh": "群",
+    "multilang": {
+      "en": {
+        "title": "Group (mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Group_(mathematics)"
+      },
+      "de": {
+        "title": "Gruppe (Mathematik)",
+        "url": "https://de.wikipedia.org/wiki/Gruppe_(Mathematik)"
+      },
+      "fr": {
+        "title": "Groupe (mathématiques)",
+        "url": "https://fr.wikipedia.org/wiki/Groupe_(mathématiques)"
+      },
+      "ja": {
+        "title": "群",
+        "url": "https://ja.wikipedia.org/wiki/群"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "ring",
+    "name_zh": "环",
+    "multilang": {
+      "en": {
+        "title": "Ring (mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Ring_(mathematics)"
+      },
+      "de": {
+        "title": "Ring (Algebra)",
+        "url": "https://de.wikipedia.org/wiki/Ring_(Algebra)"
+      },
+      "fr": {
+        "title": "Anneau (mathématiques)",
+        "url": "https://fr.wikipedia.org/wiki/Anneau_(mathématiques)"
+      },
+      "ja": {
+        "title": "環 (数学)",
+        "url": "https://ja.wikipedia.org/wiki/環 (数学)"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "field",
+    "name_zh": "域",
+    "multilang": {
+      "en": {
+        "title": "Field (mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Field_(mathematics)"
+      },
+      "de": {
+        "title": "Körper (Algebra)",
+        "url": "https://de.wikipedia.org/wiki/Körper_(Algebra)"
+      },
+      "fr": {
+        "title": "Corps commutatif",
+        "url": "https://fr.wikipedia.org/wiki/Corps_commutatif"
+      },
+      "ja": {
+        "title": "体 (数学)",
+        "url": "https://ja.wikipedia.org/wiki/体 (数学)"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "module",
+    "name_zh": "模",
+    "multilang": {
+      "en": {
+        "title": "Module (mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Module_(mathematics)"
+      },
+      "de": {
+        "title": "Modul (Mathematik)",
+        "url": "https://de.wikipedia.org/wiki/Modul_(Mathematik)"
+      },
+      "fr": {
+        "title": "Module (mathématiques)",
+        "url": "https://fr.wikipedia.org/wiki/Module_(mathématiques)"
+      },
+      "ja": {
+        "title": "加群",
+        "url": "https://ja.wikipedia.org/wiki/加群"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "linear_algebra",
+    "name_zh": "线性代数",
+    "multilang": {
+      "en": {
+        "title": "Linear Algebra",
+        "url": "https://en.wikipedia.org/wiki/Linear_Algebra"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "vector_space",
+    "name_zh": "向量空间",
+    "multilang": {
+      "en": {
+        "title": "Vector space",
+        "url": "https://en.wikipedia.org/wiki/Vector_space"
+      },
+      "de": {
+        "title": "Vektorraum",
+        "url": "https://de.wikipedia.org/wiki/Vektorraum"
+      },
+      "fr": {
+        "title": "Espace vectoriel",
+        "url": "https://fr.wikipedia.org/wiki/Espace_vectoriel"
+      },
+      "ja": {
+        "title": "ベクトル空間",
+        "url": "https://ja.wikipedia.org/wiki/ベクトル空間"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "matrix",
+    "name_zh": "矩阵",
+    "multilang": {
+      "en": {
+        "title": "Matrix (mathematics)",
+        "url": "https://en.wikipedia.org/wiki/Matrix_(mathematics)"
+      },
+      "de": {
+        "title": "Matrix (Mathematik)",
+        "url": "https://de.wikipedia.org/wiki/Matrix_(Mathematik)"
+      },
+      "fr": {
+        "title": "Matrice (mathématiques)",
+        "url": "https://fr.wikipedia.org/wiki/Matrice_(mathématiques)"
+      },
+      "ja": {
+        "title": "行列",
+        "url": "https://ja.wikipedia.org/wiki/行列"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "eigenvalue",
+    "name_zh": "特征值",
+    "multilang": {
+      "en": {
+        "title": "Eigenvalues and eigenvectors",
+        "url": "https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors"
+      },
+      "de": {
+        "title": "Eigenwertproblem",
+        "url": "https://de.wikipedia.org/wiki/Eigenwertproblem"
+      },
+      "fr": {
+        "title": "Valeur propre",
+        "url": "https://fr.wikipedia.org/wiki/Valeur_propre"
+      },
+      "ja": {
+        "title": "固有値",
+        "url": "https://ja.wikipedia.org/wiki/固有値"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "jordan_normal_form",
+    "name_zh": "Jordan标准形",
+    "multilang": {
+      "en": {
+        "title": "Jordan Normal Form",
+        "url": "https://en.wikipedia.org/wiki/Jordan_Normal_Form"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "tensor_product",
+    "name_zh": "张量积",
+    "multilang": {
+      "en": {
+        "title": "Tensor Product",
+        "url": "https://en.wikipedia.org/wiki/Tensor_Product"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "homological_algebra",
+    "name_zh": "同调代数",
+    "multilang": {
+      "en": {
+        "title": "Homological algebra",
+        "url": "https://en.wikipedia.org/wiki/Homological_algebra"
+      },
+      "de": {
+        "title": "Homologische Algebra",
+        "url": "https://de.wikipedia.org/wiki/Homologische_Algebra"
+      },
+      "fr": {
+        "title": "Algèbre homologique",
+        "url": "https://fr.wikipedia.org/wiki/Algèbre_homologique"
+      },
+      "ja": {
+        "title": "ホモロジー代数",
+        "url": "https://ja.wikipedia.org/wiki/ホモロジー代数"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "group_representation",
+    "name_zh": "群表示",
+    "multilang": {
+      "en": {
+        "title": "Group Representation",
+        "url": "https://en.wikipedia.org/wiki/Group_Representation"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "character_theory",
+    "name_zh": "特征标",
+    "multilang": {
+      "en": {
+        "title": "Character Theory",
+        "url": "https://en.wikipedia.org/wiki/Character_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "group_action",
+    "name_zh": "群作用",
+    "multilang": {
+      "en": {
+        "title": "Group Action",
+        "url": "https://en.wikipedia.org/wiki/Group_Action"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "sylow_theory",
+    "name_zh": "Sylow理论",
+    "multilang": {
+      "en": {
+        "title": "Sylow Theory",
+        "url": "https://en.wikipedia.org/wiki/Sylow_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "solvable_group",
+    "name_zh": "可解群",
+    "multilang": {
+      "en": {
+        "title": "Solvable Group",
+        "url": "https://en.wikipedia.org/wiki/Solvable_Group"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "lie_group",
+    "name_zh": "Lie群",
+    "multilang": {
+      "en": {
+        "title": "Lie group",
+        "url": "https://en.wikipedia.org/wiki/Lie_group"
+      },
+      "de": {
+        "title": "Lie-Gruppe",
+        "url": "https://de.wikipedia.org/wiki/Lie-Gruppe"
+      },
+      "fr": {
+        "title": "Groupe de Lie",
+        "url": "https://fr.wikipedia.org/wiki/Groupe_de_Lie"
+      },
+      "ja": {
+        "title": "リー群",
+        "url": "https://ja.wikipedia.org/wiki/リー群"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "lie_algebra",
+    "name_zh": "Lie代数",
+    "multilang": {
+      "en": {
+        "title": "Lie Algebra",
+        "url": "https://en.wikipedia.org/wiki/Lie_Algebra"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "commutative_algebra",
+    "name_zh": "交换代数",
+    "multilang": {
+      "en": {
+        "title": "Commutative algebra",
+        "url": "https://en.wikipedia.org/wiki/Commutative_algebra"
+      },
+      "de": {
+        "title": "Kommutative Algebra",
+        "url": "https://de.wikipedia.org/wiki/Kommutative_Algebra"
+      },
+      "fr": {
+        "title": "Algèbre commutative",
+        "url": "https://fr.wikipedia.org/wiki/Algèbre_commutative"
+      },
+      "ja": {
+        "title": "可換環論",
+        "url": "https://ja.wikipedia.org/wiki/可換環論"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "algebraic_geometry",
+    "name_zh": "代数几何",
+    "multilang": {
+      "en": {
+        "title": "Algebraic geometry",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_geometry"
+      },
+      "de": {
+        "title": "Algebraische Geometrie",
+        "url": "https://de.wikipedia.org/wiki/Algebraische_Geometrie"
+      },
+      "fr": {
+        "title": "Géométrie algébrique",
+        "url": "https://fr.wikipedia.org/wiki/Géométrie_algébrique"
+      },
+      "ja": {
+        "title": "代数幾何学",
+        "url": "https://ja.wikipedia.org/wiki/代数幾何学"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "scheme",
+    "name_zh": "概形",
+    "multilang": {
+      "en": {
+        "title": "Scheme",
+        "url": "https://en.wikipedia.org/wiki/Scheme"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "sheaf",
+    "name_zh": "层",
+    "multilang": {
+      "en": {
+        "title": "Sheaf",
+        "url": "https://en.wikipedia.org/wiki/Sheaf"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "cohomology_sheaf",
+    "name_zh": "上同调",
+    "multilang": {
+      "en": {
+        "title": "Cohomology Sheaf",
+        "url": "https://en.wikipedia.org/wiki/Cohomology_Sheaf"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "category_theory",
+    "name_zh": "范畴论",
+    "multilang": {
+      "en": {
+        "title": "Category theory",
+        "url": "https://en.wikipedia.org/wiki/Category_theory"
+      },
+      "de": {
+        "title": "Kategorientheorie",
+        "url": "https://de.wikipedia.org/wiki/Kategorientheorie"
+      },
+      "fr": {
+        "title": "Théorie des catégories",
+        "url": "https://fr.wikipedia.org/wiki/Théorie_des_catégories"
+      },
+      "ja": {
+        "title": "圏論",
+        "url": "https://ja.wikipedia.org/wiki/圏論"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "homotopy_algebra",
+    "name_zh": "同伦代数",
+    "multilang": {
+      "en": {
+        "title": "Homotopy Algebra",
+        "url": "https://en.wikipedia.org/wiki/Homotopy_Algebra"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "topological_space",
+    "name_zh": "拓扑空间",
+    "multilang": {
+      "en": {
+        "title": "Topological Space",
+        "url": "https://en.wikipedia.org/wiki/Topological_Space"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "continuous_map",
+    "name_zh": "连续映射",
+    "multilang": {
+      "en": {
+        "title": "Continuous Map",
+        "url": "https://en.wikipedia.org/wiki/Continuous_Map"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "compactness",
+    "name_zh": "紧致性",
+    "multilang": {
+      "en": {
+        "title": "Compact space",
+        "url": "https://en.wikipedia.org/wiki/Compact_space"
+      },
+      "de": {
+        "title": "Kompakter Raum",
+        "url": "https://de.wikipedia.org/wiki/Kompakter_Raum"
+      },
+      "fr": {
+        "title": "Espace compact",
+        "url": "https://fr.wikipedia.org/wiki/Espace_compact"
+      },
+      "ja": {
+        "title": "コンパクト空間",
+        "url": "https://ja.wikipedia.org/wiki/コンパクト空間"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "connectedness",
+    "name_zh": "连通性",
+    "multilang": {
+      "en": {
+        "title": "Connected space",
+        "url": "https://en.wikipedia.org/wiki/Connected_space"
+      },
+      "de": {
+        "title": "Zusammenhang (Topologie)",
+        "url": "https://de.wikipedia.org/wiki/Zusammenhang_(Topologie)"
+      },
+      "fr": {
+        "title": "Connexité (mathématiques)",
+        "url": "https://fr.wikipedia.org/wiki/Connexité_(mathématiques)"
+      },
+      "ja": {
+        "title": "連結空間",
+        "url": "https://ja.wikipedia.org/wiki/連結空間"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "homotopy",
+    "name_zh": "同伦",
+    "multilang": {
+      "en": {
+        "title": "Homotopy",
+        "url": "https://en.wikipedia.org/wiki/Homotopy"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "fundamental_group",
+    "name_zh": "基本群",
+    "multilang": {
+      "en": {
+        "title": "Fundamental group",
+        "url": "https://en.wikipedia.org/wiki/Fundamental_group"
+      },
+      "de": {
+        "title": "Fundamentalgruppe",
+        "url": "https://de.wikipedia.org/wiki/Fundamentalgruppe"
+      },
+      "fr": {
+        "title": "Groupe fondamental",
+        "url": "https://fr.wikipedia.org/wiki/Groupe_fondamental"
+      },
+      "ja": {
+        "title": "基本群",
+        "url": "https://ja.wikipedia.org/wiki/基本群"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "covering_space",
+    "name_zh": "覆叠空间",
+    "multilang": {
+      "en": {
+        "title": "Covering Space",
+        "url": "https://en.wikipedia.org/wiki/Covering_Space"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "homology_group",
+    "name_zh": "同调群",
+    "multilang": {
+      "en": {
+        "title": "Homology Group",
+        "url": "https://en.wikipedia.org/wiki/Homology_Group"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "cohomology",
+    "name_zh": "上同调",
+    "multilang": {
+      "en": {
+        "title": "Cohomology",
+        "url": "https://en.wikipedia.org/wiki/Cohomology"
+      },
+      "de": {
+        "title": "Kohomologie",
+        "url": "https://de.wikipedia.org/wiki/Kohomologie"
+      },
+      "fr": {
+        "title": "Cohomologie",
+        "url": "https://fr.wikipedia.org/wiki/Cohomologie"
+      },
+      "ja": {
+        "title": "コホモロジー",
+        "url": "https://ja.wikipedia.org/wiki/コホモロジー"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "manifold",
+    "name_zh": "流形",
+    "multilang": {
+      "en": {
+        "title": "Manifold",
+        "url": "https://en.wikipedia.org/wiki/Manifold"
+      },
+      "de": {
+        "title": "Mannigfaltigkeit",
+        "url": "https://de.wikipedia.org/wiki/Mannigfaltigkeit"
+      },
+      "fr": {
+        "title": "Variété (géométrie)",
+        "url": "https://fr.wikipedia.org/wiki/Variété_(géométrie)"
+      },
+      "ja": {
+        "title": "多様体",
+        "url": "https://ja.wikipedia.org/wiki/多様体"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "tangent_space",
+    "name_zh": "切空间",
+    "multilang": {
+      "en": {
+        "title": "Tangent Space",
+        "url": "https://en.wikipedia.org/wiki/Tangent_Space"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "tensor_field",
+    "name_zh": "张量场",
+    "multilang": {
+      "en": {
+        "title": "Tensor Field",
+        "url": "https://en.wikipedia.org/wiki/Tensor_Field"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "differential_form",
+    "name_zh": "微分形式",
+    "multilang": {
+      "en": {
+        "title": "Differential Form",
+        "url": "https://en.wikipedia.org/wiki/Differential_Form"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "stokes_theorem",
+    "name_zh": "Stokes定理",
+    "multilang": {
+      "en": {
+        "title": "Stokes Theorem",
+        "url": "https://en.wikipedia.org/wiki/Stokes_Theorem"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "riemannian_metric",
+    "name_zh": "黎曼度量",
+    "multilang": {
+      "en": {
+        "title": "Riemannian Metric",
+        "url": "https://en.wikipedia.org/wiki/Riemannian_Metric"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "curvature",
+    "name_zh": "曲率",
+    "multilang": {
+      "en": {
+        "title": "Curvature",
+        "url": "https://en.wikipedia.org/wiki/Curvature"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "geodesic",
+    "name_zh": "测地线",
+    "multilang": {
+      "en": {
+        "title": "Geodesic",
+        "url": "https://en.wikipedia.org/wiki/Geodesic"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "connection",
+    "name_zh": "联络",
+    "multilang": {
+      "en": {
+        "title": "Connection",
+        "url": "https://en.wikipedia.org/wiki/Connection"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "fiber_bundle",
+    "name_zh": "纤维丛",
+    "multilang": {
+      "en": {
+        "title": "Fiber bundle",
+        "url": "https://en.wikipedia.org/wiki/Fiber_bundle"
+      },
+      "de": {
+        "title": "Faserbündel",
+        "url": "https://de.wikipedia.org/wiki/Faserbündel"
+      },
+      "fr": {
+        "title": "Fibré",
+        "url": "https://fr.wikipedia.org/wiki/Fibré"
+      },
+      "ja": {
+        "title": "ファイバー束",
+        "url": "https://ja.wikipedia.org/wiki/ファイバー束"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "characteristic_class",
+    "name_zh": "示性类",
+    "multilang": {
+      "en": {
+        "title": "Characteristic class",
+        "url": "https://en.wikipedia.org/wiki/Characteristic_class"
+      },
+      "de": {
+        "title": "Charakteristische Klasse",
+        "url": "https://de.wikipedia.org/wiki/Charakteristische_Klasse"
+      },
+      "fr": {
+        "title": "Classe caractéristique",
+        "url": "https://fr.wikipedia.org/wiki/Classe_caractéristique"
+      },
+      "ja": {
+        "title": "特性類",
+        "url": "https://ja.wikipedia.org/wiki/特性類"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "morse_theory",
+    "name_zh": "Morse理论",
+    "multilang": {
+      "en": {
+        "title": "Morse theory",
+        "url": "https://en.wikipedia.org/wiki/Morse_theory"
+      },
+      "de": {
+        "title": "Morse-Theorie",
+        "url": "https://de.wikipedia.org/wiki/Morse-Theorie"
+      },
+      "fr": {
+        "title": "Théorie de Morse",
+        "url": "https://fr.wikipedia.org/wiki/Théorie_de_Morse"
+      },
+      "ja": {
+        "title": "モーズ理論",
+        "url": "https://ja.wikipedia.org/wiki/モーズ理論"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "index_theorem",
+    "name_zh": "指标定理",
+    "multilang": {
+      "en": {
+        "title": "Index Theorem",
+        "url": "https://en.wikipedia.org/wiki/Index_Theorem"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "symplectic_geometry",
+    "name_zh": "辛几何",
+    "multilang": {
+      "en": {
+        "title": "Symplectic geometry",
+        "url": "https://en.wikipedia.org/wiki/Symplectic_geometry"
+      },
+      "de": {
+        "title": "Symplektische Geometrie",
+        "url": "https://de.wikipedia.org/wiki/Symplektische_Geometrie"
+      },
+      "fr": {
+        "title": "Géométrie symplectique",
+        "url": "https://fr.wikipedia.org/wiki/Géométrie_symplectique"
+      },
+      "ja": {
+        "title": "シンプレクティック幾何学",
+        "url": "https://ja.wikipedia.org/wiki/シンプレクティック幾何学"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "complex_geometry",
+    "name_zh": "复几何",
+    "multilang": {
+      "en": {
+        "title": "Complex Geometry",
+        "url": "https://en.wikipedia.org/wiki/Complex_Geometry"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "algebraic_topology",
+    "name_zh": "代数拓扑",
+    "multilang": {
+      "en": {
+        "title": "Algebraic topology",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_topology"
+      },
+      "de": {
+        "title": "Algebraische Topologie",
+        "url": "https://de.wikipedia.org/wiki/Algebraische_Topologie"
+      },
+      "fr": {
+        "title": "Topologie algébrique",
+        "url": "https://fr.wikipedia.org/wiki/Topologie_algébrique"
+      },
+      "ja": {
+        "title": "代数位相幾何学",
+        "url": "https://ja.wikipedia.org/wiki/代数位相幾何学"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "divisibility",
+    "name_zh": "整除",
+    "multilang": {
+      "en": {
+        "title": "Divisibility",
+        "url": "https://en.wikipedia.org/wiki/Divisibility"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "congruence",
+    "name_zh": "同余",
+    "multilang": {
+      "en": {
+        "title": "Congruence",
+        "url": "https://en.wikipedia.org/wiki/Congruence"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "primitive_root",
+    "name_zh": "原根",
+    "multilang": {
+      "en": {
+        "title": "Primitive Root",
+        "url": "https://en.wikipedia.org/wiki/Primitive_Root"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "quadratic_residue",
+    "name_zh": "二次剩余",
+    "multilang": {
+      "en": {
+        "title": "Quadratic Residue",
+        "url": "https://en.wikipedia.org/wiki/Quadratic_Residue"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "algebraic_integer",
+    "name_zh": "代数整数",
+    "multilang": {
+      "en": {
+        "title": "Algebraic Integer",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_Integer"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "ideal",
+    "name_zh": "理想",
+    "multilang": {
+      "en": {
+        "title": "Ideal",
+        "url": "https://en.wikipedia.org/wiki/Ideal"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "class_number",
+    "name_zh": "类数",
+    "multilang": {
+      "en": {
+        "title": "Class Number",
+        "url": "https://en.wikipedia.org/wiki/Class_Number"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "elliptic_curve",
+    "name_zh": "椭圆曲线",
+    "multilang": {
+      "en": {
+        "title": "Elliptic Curve",
+        "url": "https://en.wikipedia.org/wiki/Elliptic_Curve"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "modular_form",
+    "name_zh": "模形式",
+    "multilang": {
+      "en": {
+        "title": "Modular Form",
+        "url": "https://en.wikipedia.org/wiki/Modular_Form"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "l_function",
+    "name_zh": "L函数",
+    "multilang": {
+      "en": {
+        "title": "L Function",
+        "url": "https://en.wikipedia.org/wiki/L_Function"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "arithmetic_geometry",
+    "name_zh": "算术几何",
+    "multilang": {
+      "en": {
+        "title": "Arithmetic Geometry",
+        "url": "https://en.wikipedia.org/wiki/Arithmetic_Geometry"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "p_adic_numbers",
+    "name_zh": "p进数",
+    "multilang": {
+      "en": {
+        "title": "P Adic Numbers",
+        "url": "https://en.wikipedia.org/wiki/P_Adic_Numbers"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "galois_representation",
+    "name_zh": "Galois表示",
+    "multilang": {
+      "en": {
+        "title": "Galois Representation",
+        "url": "https://en.wikipedia.org/wiki/Galois_Representation"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "automorphic_form",
+    "name_zh": "自守形式",
+    "multilang": {
+      "en": {
+        "title": "Automorphic Form",
+        "url": "https://en.wikipedia.org/wiki/Automorphic_Form"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "propositional_logic",
+    "name_zh": "命题逻辑",
+    "multilang": {
+      "en": {
+        "title": "Propositional calculus",
+        "url": "https://en.wikipedia.org/wiki/Propositional_calculus"
+      },
+      "de": {
+        "title": "Aussagenlogik",
+        "url": "https://de.wikipedia.org/wiki/Aussagenlogik"
+      },
+      "fr": {
+        "title": "Calcul propositionnel",
+        "url": "https://fr.wikipedia.org/wiki/Calcul_propositionnel"
+      },
+      "ja": {
+        "title": "命題論理",
+        "url": "https://ja.wikipedia.org/wiki/命題論理"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "predicate_logic",
+    "name_zh": "谓词逻辑",
+    "multilang": {
+      "en": {
+        "title": "First-order logic",
+        "url": "https://en.wikipedia.org/wiki/First-order_logic"
+      },
+      "de": {
+        "title": "Prädikatenlogik",
+        "url": "https://de.wikipedia.org/wiki/Prädikatenlogik"
+      },
+      "fr": {
+        "title": "Logique du premier ordre",
+        "url": "https://fr.wikipedia.org/wiki/Logique_du_premier_ordre"
+      },
+      "ja": {
+        "title": "述語論理",
+        "url": "https://ja.wikipedia.org/wiki/述語論理"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "proof_theory",
+    "name_zh": "证明论",
+    "multilang": {
+      "en": {
+        "title": "Proof theory",
+        "url": "https://en.wikipedia.org/wiki/Proof_theory"
+      },
+      "de": {
+        "title": "Beweistheorie",
+        "url": "https://de.wikipedia.org/wiki/Beweistheorie"
+      },
+      "fr": {
+        "title": "Théorie de la démonstration",
+        "url": "https://fr.wikipedia.org/wiki/Théorie_de_la_démonstration"
+      },
+      "ja": {
+        "title": "証明論",
+        "url": "https://ja.wikipedia.org/wiki/証明論"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "model_theory",
+    "name_zh": "模型论",
+    "multilang": {
+      "en": {
+        "title": "Model theory",
+        "url": "https://en.wikipedia.org/wiki/Model_theory"
+      },
+      "de": {
+        "title": "Modelltheorie",
+        "url": "https://de.wikipedia.org/wiki/Modelltheorie"
+      },
+      "fr": {
+        "title": "Théorie des modèles",
+        "url": "https://fr.wikipedia.org/wiki/Théorie_des_modèles"
+      },
+      "ja": {
+        "title": "モデル理論",
+        "url": "https://ja.wikipedia.org/wiki/モデル理論"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "recursion_theory",
+    "name_zh": "递归论",
+    "multilang": {
+      "en": {
+        "title": "Recursion Theory",
+        "url": "https://en.wikipedia.org/wiki/Recursion_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "set_theory",
+    "name_zh": "集合论",
+    "multilang": {
+      "en": {
+        "title": "Set theory",
+        "url": "https://en.wikipedia.org/wiki/Set_theory"
+      },
+      "de": {
+        "title": "Mengenlehre",
+        "url": "https://de.wikipedia.org/wiki/Mengenlehre"
+      },
+      "fr": {
+        "title": "Théorie des ensembles",
+        "url": "https://fr.wikipedia.org/wiki/Théorie_des_ensembles"
+      },
+      "ja": {
+        "title": "集合論",
+        "url": "https://ja.wikipedia.org/wiki/集合論"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "forcing",
+    "name_zh": "forcing",
+    "multilang": {
+      "en": {
+        "title": "Forcing",
+        "url": "https://en.wikipedia.org/wiki/Forcing"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "large_cardinal",
+    "name_zh": "大基数",
+    "multilang": {
+      "en": {
+        "title": "Large Cardinal",
+        "url": "https://en.wikipedia.org/wiki/Large_Cardinal"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "computability",
+    "name_zh": "可计算性",
+    "multilang": {
+      "en": {
+        "title": "Computability",
+        "url": "https://en.wikipedia.org/wiki/Computability"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "complexity",
+    "name_zh": "复杂度",
+    "multilang": {
+      "en": {
+        "title": "Complexity",
+        "url": "https://en.wikipedia.org/wiki/Complexity"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "formalized_proof",
+    "name_zh": "形式化证明",
+    "multilang": {
+      "en": {
+        "title": "Formalized Proof",
+        "url": "https://en.wikipedia.org/wiki/Formalized_Proof"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "probability_measure",
+    "name_zh": "概率测度",
+    "multilang": {
+      "en": {
+        "title": "Probability Measure",
+        "url": "https://en.wikipedia.org/wiki/Probability_Measure"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "random_variable",
+    "name_zh": "随机变量",
+    "multilang": {
+      "en": {
+        "title": "Random variable",
+        "url": "https://en.wikipedia.org/wiki/Random_variable"
+      },
+      "de": {
+        "title": "Zufallsvariable",
+        "url": "https://de.wikipedia.org/wiki/Zufallsvariable"
+      },
+      "fr": {
+        "title": "Variable aléatoire",
+        "url": "https://fr.wikipedia.org/wiki/Variable_aléatoire"
+      },
+      "ja": {
+        "title": "確率変数",
+        "url": "https://ja.wikipedia.org/wiki/確率変数"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "probability_distribution",
+    "name_zh": "概率分布",
+    "multilang": {
+      "en": {
+        "title": "Probability distribution",
+        "url": "https://en.wikipedia.org/wiki/Probability_distribution"
+      },
+      "de": {
+        "title": "Wahrscheinlichkeitsverteilung",
+        "url": "https://de.wikipedia.org/wiki/Wahrscheinlichkeitsverteilung"
+      },
+      "fr": {
+        "title": "Loi de probabilité",
+        "url": "https://fr.wikipedia.org/wiki/Loi_de_probabilité"
+      },
+      "ja": {
+        "title": "確率分布",
+        "url": "https://ja.wikipedia.org/wiki/確率分布"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "expectation",
+    "name_zh": "期望",
+    "multilang": {
+      "en": {
+        "title": "Expectation",
+        "url": "https://en.wikipedia.org/wiki/Expectation"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "conditional_probability",
+    "name_zh": "条件概率",
+    "multilang": {
+      "en": {
+        "title": "Conditional Probability",
+        "url": "https://en.wikipedia.org/wiki/Conditional_Probability"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "bayes_theorem",
+    "name_zh": "贝叶斯定理",
+    "multilang": {
+      "en": {
+        "title": "Bayes Theorem",
+        "url": "https://en.wikipedia.org/wiki/Bayes_Theorem"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "stochastic_process",
+    "name_zh": "随机过程",
+    "multilang": {
+      "en": {
+        "title": "Stochastic process",
+        "url": "https://en.wikipedia.org/wiki/Stochastic_process"
+      },
+      "de": {
+        "title": "Stochastischer Prozess",
+        "url": "https://de.wikipedia.org/wiki/Stochastischer_Prozess"
+      },
+      "fr": {
+        "title": "Processus stochastique",
+        "url": "https://fr.wikipedia.org/wiki/Processus_stochastique"
+      },
+      "ja": {
+        "title": "確率過程",
+        "url": "https://ja.wikipedia.org/wiki/確率過程"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "markov_chain",
+    "name_zh": "马尔可夫链",
+    "multilang": {
+      "en": {
+        "title": "Markov chain",
+        "url": "https://en.wikipedia.org/wiki/Markov_chain"
+      },
+      "de": {
+        "title": "Markow-Kette",
+        "url": "https://de.wikipedia.org/wiki/Markow-Kette"
+      },
+      "fr": {
+        "title": "Chaîne de Markov",
+        "url": "https://fr.wikipedia.org/wiki/Chaîne_de_Markov"
+      },
+      "ja": {
+        "title": "マルコフ連鎖",
+        "url": "https://ja.wikipedia.org/wiki/マルコフ連鎖"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "martingale",
+    "name_zh": "鞅",
+    "multilang": {
+      "en": {
+        "title": "Martingale (probability theory)",
+        "url": "https://en.wikipedia.org/wiki/Martingale_(probability_theory)"
+      },
+      "de": {
+        "title": "Martingal",
+        "url": "https://de.wikipedia.org/wiki/Martingal"
+      },
+      "fr": {
+        "title": "Martingale (probabilités)",
+        "url": "https://fr.wikipedia.org/wiki/Martingale_(probabilités)"
+      },
+      "ja": {
+        "title": "マルチンゲール",
+        "url": "https://ja.wikipedia.org/wiki/マルチンゲール"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "brownian_motion",
+    "name_zh": "布朗运动",
+    "multilang": {
+      "en": {
+        "title": "Brownian motion",
+        "url": "https://en.wikipedia.org/wiki/Brownian_motion"
+      },
+      "de": {
+        "title": "Brownsche Bewegung",
+        "url": "https://de.wikipedia.org/wiki/Brownsche_Bewegung"
+      },
+      "fr": {
+        "title": "Mouvement brownien",
+        "url": "https://fr.wikipedia.org/wiki/Mouvement_brownien"
+      },
+      "ja": {
+        "title": "ブラウン運動",
+        "url": "https://ja.wikipedia.org/wiki/ブラウン運動"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "law_of_large_numbers",
+    "name_zh": "大数定律",
+    "multilang": {
+      "en": {
+        "title": "Law of large numbers",
+        "url": "https://en.wikipedia.org/wiki/Law_of_large_numbers"
+      },
+      "de": {
+        "title": "Gesetz der großen Zahlen",
+        "url": "https://de.wikipedia.org/wiki/Gesetz_der_großen_Zahlen"
+      },
+      "fr": {
+        "title": "Loi des grands nombres",
+        "url": "https://fr.wikipedia.org/wiki/Loi_des_grands_nombres"
+      },
+      "ja": {
+        "title": "大数の法則",
+        "url": "https://ja.wikipedia.org/wiki/大数の法則"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "central_limit_theorem",
+    "name_zh": "中心极限定理",
+    "multilang": {
+      "en": {
+        "title": "Central limit theorem",
+        "url": "https://en.wikipedia.org/wiki/Central_limit_theorem"
+      },
+      "de": {
+        "title": "Zentraler Grenzwertsatz",
+        "url": "https://de.wikipedia.org/wiki/Zentraler_Grenzwertsatz"
+      },
+      "fr": {
+        "title": "Théorème central limite",
+        "url": "https://fr.wikipedia.org/wiki/Théorème_central_limite"
+      },
+      "ja": {
+        "title": "中心極限定理",
+        "url": "https://ja.wikipedia.org/wiki/中心極限定理"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "statistical_inference",
+    "name_zh": "统计推断",
+    "multilang": {
+      "en": {
+        "title": "Statistical inference",
+        "url": "https://en.wikipedia.org/wiki/Statistical_inference"
+      },
+      "de": {
+        "title": "Statistische Inferenz",
+        "url": "https://de.wikipedia.org/wiki/Statistische_Inferenz"
+      },
+      "fr": {
+        "title": "Inférence statistique",
+        "url": "https://fr.wikipedia.org/wiki/Inférence_statistique"
+      },
+      "ja": {
+        "title": "統計的推論",
+        "url": "https://ja.wikipedia.org/wiki/統計的推論"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "parameter_estimation",
+    "name_zh": "参数估计",
+    "multilang": {
+      "en": {
+        "title": "Parameter Estimation",
+        "url": "https://en.wikipedia.org/wiki/Parameter_Estimation"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "hypothesis_testing",
+    "name_zh": "假设检验",
+    "multilang": {
+      "en": {
+        "title": "Statistical hypothesis testing",
+        "url": "https://en.wikipedia.org/wiki/Statistical_hypothesis_testing"
+      },
+      "de": {
+        "title": "Statistischer Test",
+        "url": "https://de.wikipedia.org/wiki/Statistischer_Test"
+      },
+      "fr": {
+        "title": "Test statistique",
+        "url": "https://fr.wikipedia.org/wiki/Test_statistique"
+      },
+      "ja": {
+        "title": "仮説検定",
+        "url": "https://ja.wikipedia.org/wiki/仮説検定"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "regression_analysis",
+    "name_zh": "回归分析",
+    "multilang": {
+      "en": {
+        "title": "Regression analysis",
+        "url": "https://en.wikipedia.org/wiki/Regression_analysis"
+      },
+      "de": {
+        "title": "Regressionsanalyse",
+        "url": "https://de.wikipedia.org/wiki/Regressionsanalyse"
+      },
+      "fr": {
+        "title": "Régression (statistiques)",
+        "url": "https://fr.wikipedia.org/wiki/Régression_(statistiques)"
+      },
+      "ja": {
+        "title": "回帰分析",
+        "url": "https://ja.wikipedia.org/wiki/回帰分析"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "bayesian_inference",
+    "name_zh": "贝叶斯推断",
+    "multilang": {
+      "en": {
+        "title": "Bayesian inference",
+        "url": "https://en.wikipedia.org/wiki/Bayesian_inference"
+      },
+      "de": {
+        "title": "Bayes-Statistik",
+        "url": "https://de.wikipedia.org/wiki/Bayes-Statistik"
+      },
+      "fr": {
+        "title": "Inférence bayésienne",
+        "url": "https://fr.wikipedia.org/wiki/Inférence_bayésienne"
+      },
+      "ja": {
+        "title": "ベイズ推定",
+        "url": "https://ja.wikipedia.org/wiki/ベイズ推定"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "time_series_analysis",
+    "name_zh": "时间序列分析",
+    "multilang": {
+      "en": {
+        "title": "Time Series Analysis",
+        "url": "https://en.wikipedia.org/wiki/Time_Series_Analysis"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "variance",
+    "name_zh": "方差",
+    "multilang": {
+      "en": {
+        "title": "Variance",
+        "url": "https://en.wikipedia.org/wiki/Variance"
+      },
+      "de": {
+        "title": "Varianz",
+        "url": "https://de.wikipedia.org/wiki/Varianz"
+      },
+      "fr": {
+        "title": "Variance",
+        "url": "https://fr.wikipedia.org/wiki/Variance"
+      },
+      "ja": {
+        "title": "分散",
+        "url": "https://ja.wikipedia.org/wiki/分散"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "maximum_likelihood",
+    "name_zh": "最大似然估计",
+    "multilang": {
+      "en": {
+        "title": "Maximum likelihood estimation",
+        "url": "https://en.wikipedia.org/wiki/Maximum_likelihood_estimation"
+      },
+      "de": {
+        "title": "Maximum-Likelihood-Methode",
+        "url": "https://de.wikipedia.org/wiki/Maximum-Likelihood-Methode"
+      },
+      "fr": {
+        "title": "Maximum de vraisemblance",
+        "url": "https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance"
+      },
+      "ja": {
+        "title": "最尤推定",
+        "url": "https://ja.wikipedia.org/wiki/最尤推定"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "optimization_problem",
+    "name_zh": "最优化问题",
+    "multilang": {
+      "en": {
+        "title": "Optimization Problem",
+        "url": "https://en.wikipedia.org/wiki/Optimization_Problem"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "convex_set",
+    "name_zh": "凸集",
+    "multilang": {
+      "en": {
+        "title": "Convex Set",
+        "url": "https://en.wikipedia.org/wiki/Convex_Set"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "convex_function",
+    "name_zh": "凸函数",
+    "multilang": {
+      "en": {
+        "title": "Convex Function",
+        "url": "https://en.wikipedia.org/wiki/Convex_Function"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "gradient",
+    "name_zh": "梯度",
+    "multilang": {
+      "en": {
+        "title": "Gradient",
+        "url": "https://en.wikipedia.org/wiki/Gradient"
+      },
+      "de": {
+        "title": "Gradient (Mathematik)",
+        "url": "https://de.wikipedia.org/wiki/Gradient_(Mathematik)"
+      },
+      "fr": {
+        "title": "Gradient",
+        "url": "https://fr.wikipedia.org/wiki/Gradient"
+      },
+      "ja": {
+        "title": "勾配",
+        "url": "https://ja.wikipedia.org/wiki/勾配"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "hessian_matrix",
+    "name_zh": "Hessian矩阵",
+    "multilang": {
+      "en": {
+        "title": "Hessian Matrix",
+        "url": "https://en.wikipedia.org/wiki/Hessian_Matrix"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "gradient_descent",
+    "name_zh": "梯度下降法",
+    "multilang": {
+      "en": {
+        "title": "Gradient descent",
+        "url": "https://en.wikipedia.org/wiki/Gradient_descent"
+      },
+      "de": {
+        "title": "Gradientenverfahren",
+        "url": "https://de.wikipedia.org/wiki/Gradientenverfahren"
+      },
+      "fr": {
+        "title": "Algorithme du gradient",
+        "url": "https://fr.wikipedia.org/wiki/Algorithme_du_gradient"
+      },
+      "ja": {
+        "title": "最急降下法",
+        "url": "https://ja.wikipedia.org/wiki/最急降下法"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "newton_method",
+    "name_zh": "牛顿法",
+    "multilang": {
+      "en": {
+        "title": "Newton's method",
+        "url": "https://en.wikipedia.org/wiki/Newton's_method"
+      },
+      "de": {
+        "title": "Newton-Verfahren",
+        "url": "https://de.wikipedia.org/wiki/Newton-Verfahren"
+      },
+      "fr": {
+        "title": "Méthode de Newton",
+        "url": "https://fr.wikipedia.org/wiki/Méthode_de_Newton"
+      },
+      "ja": {
+        "title": "ニュートン法",
+        "url": "https://ja.wikipedia.org/wiki/ニュートン法"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "conjugate_gradient",
+    "name_zh": "共轭梯度法",
+    "multilang": {
+      "en": {
+        "title": "Conjugate Gradient",
+        "url": "https://en.wikipedia.org/wiki/Conjugate_Gradient"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "lagrange_multiplier",
+    "name_zh": "拉格朗日乘子",
+    "multilang": {
+      "en": {
+        "title": "Lagrange multiplier",
+        "url": "https://en.wikipedia.org/wiki/Lagrange_multiplier"
+      },
+      "de": {
+        "title": "Lagrange-Multiplikator",
+        "url": "https://de.wikipedia.org/wiki/Lagrange-Multiplikator"
+      },
+      "fr": {
+        "title": "Multiplicateur de Lagrange",
+        "url": "https://fr.wikipedia.org/wiki/Multiplicateur_de_Lagrange"
+      },
+      "ja": {
+        "title": "ラグランジュ乗数法",
+        "url": "https://ja.wikipedia.org/wiki/ラグランジュ乗数法"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "kkt_conditions",
+    "name_zh": "KKT条件",
+    "multilang": {
+      "en": {
+        "title": "Karush–Kuhn–Tucker conditions",
+        "url": "https://en.wikipedia.org/wiki/Karush–Kuhn–Tucker_conditions"
+      },
+      "de": {
+        "title": "Karush-Kuhn-Tucker-Bedingungen",
+        "url": "https://de.wikipedia.org/wiki/Karush-Kuhn-Tucker-Bedingungen"
+      },
+      "fr": {
+        "title": "Conditions de Karush-Kuhn-Tucker",
+        "url": "https://fr.wikipedia.org/wiki/Conditions_de_Karush-Kuhn-Tucker"
+      },
+      "ja": {
+        "title": "KKT条件",
+        "url": "https://ja.wikipedia.org/wiki/KKT条件"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "linear_programming",
+    "name_zh": "线性规划",
+    "multilang": {
+      "en": {
+        "title": "Linear programming",
+        "url": "https://en.wikipedia.org/wiki/Linear_programming"
+      },
+      "de": {
+        "title": "Lineare Optimierung",
+        "url": "https://de.wikipedia.org/wiki/Lineare_Optimierung"
+      },
+      "fr": {
+        "title": "Programmation linéaire",
+        "url": "https://fr.wikipedia.org/wiki/Programmation_linéaire"
+      },
+      "ja": {
+        "title": "線形計画法",
+        "url": "https://ja.wikipedia.org/wiki/線形計画法"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "simplex_method",
+    "name_zh": "单纯形法",
+    "multilang": {
+      "en": {
+        "title": "Simplex algorithm",
+        "url": "https://en.wikipedia.org/wiki/Simplex_algorithm"
+      },
+      "de": {
+        "title": "Simplex-Verfahren",
+        "url": "https://de.wikipedia.org/wiki/Simplex-Verfahren"
+      },
+      "fr": {
+        "title": "Algorithme du simplexe",
+        "url": "https://fr.wikipedia.org/wiki/Algorithme_du_simplexe"
+      },
+      "ja": {
+        "title": "シンプレックス法",
+        "url": "https://ja.wikipedia.org/wiki/シンプレックス法"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "convex_optimization",
+    "name_zh": "凸优化",
+    "multilang": {
+      "en": {
+        "title": "Convex optimization",
+        "url": "https://en.wikipedia.org/wiki/Convex_optimization"
+      },
+      "de": {
+        "title": "Konvexe Optimierung",
+        "url": "https://de.wikipedia.org/wiki/Konvexe_Optimierung"
+      },
+      "fr": {
+        "title": "Optimisation convexe",
+        "url": "https://fr.wikipedia.org/wiki/Optimisation_convexe"
+      },
+      "ja": {
+        "title": "凸最適化",
+        "url": "https://ja.wikipedia.org/wiki/凸最適化"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "interior_point_method",
+    "name_zh": "内点法",
+    "multilang": {
+      "en": {
+        "title": "Interior Point Method",
+        "url": "https://en.wikipedia.org/wiki/Interior_Point_Method"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "integer_programming",
+    "name_zh": "整数规划",
+    "multilang": {
+      "en": {
+        "title": "Integer programming",
+        "url": "https://en.wikipedia.org/wiki/Integer_programming"
+      },
+      "de": {
+        "title": "Ganzzahlige Optimierung",
+        "url": "https://de.wikipedia.org/wiki/Ganzzahlige_Optimierung"
+      },
+      "fr": {
+        "title": "Programmation en nombres entiers",
+        "url": "https://fr.wikipedia.org/wiki/Programmation_en_nombres_entiers"
+      },
+      "ja": {
+        "title": "整数計画法",
+        "url": "https://ja.wikipedia.org/wiki/整数計画法"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "dynamic_programming",
+    "name_zh": "动态规划",
+    "multilang": {
+      "en": {
+        "title": "Dynamic programming",
+        "url": "https://en.wikipedia.org/wiki/Dynamic_programming"
+      },
+      "de": {
+        "title": "Dynamische Optimierung",
+        "url": "https://de.wikipedia.org/wiki/Dynamische_Optimierung"
+      },
+      "fr": {
+        "title": "Programmation dynamique",
+        "url": "https://fr.wikipedia.org/wiki/Programmation_dynamique"
+      },
+      "ja": {
+        "title": "動的計画法",
+        "url": "https://ja.wikipedia.org/wiki/動的計画法"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "stochastic_optimization",
+    "name_zh": "随机优化",
+    "multilang": {
+      "en": {
+        "title": "Stochastic optimization",
+        "url": "https://en.wikipedia.org/wiki/Stochastic_optimization"
+      },
+      "de": {
+        "title": "Stochastische Optimierung",
+        "url": "https://de.wikipedia.org/wiki/Stochastische_Optimierung"
+      },
+      "fr": {
+        "title": "Optimisation stochastique",
+        "url": "https://fr.wikipedia.org/wiki/Optimisation_stochastique"
+      },
+      "ja": {
+        "title": "確率的最適化",
+        "url": "https://ja.wikipedia.org/wiki/確率的最適化"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "optimal_control",
+    "name_zh": "最优控制",
+    "multilang": {
+      "en": {
+        "title": "Optimal control",
+        "url": "https://en.wikipedia.org/wiki/Optimal_control"
+      },
+      "de": {
+        "title": "Optimale Steuerung",
+        "url": "https://de.wikipedia.org/wiki/Optimale_Steuerung"
+      },
+      "fr": {
+        "title": "Contrôle optimal",
+        "url": "https://fr.wikipedia.org/wiki/Contrôle_optimal"
+      },
+      "ja": {
+        "title": "最適制御",
+        "url": "https://ja.wikipedia.org/wiki/最適制御"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "quadratic_programming",
+    "name_zh": "二次规划",
+    "multilang": {
+      "en": {
+        "title": "Quadratic Programming",
+        "url": "https://en.wikipedia.org/wiki/Quadratic_Programming"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "nonlinear_programming",
+    "name_zh": "非线性规划",
+    "multilang": {
+      "en": {
+        "title": "Nonlinear programming",
+        "url": "https://en.wikipedia.org/wiki/Nonlinear_programming"
+      },
+      "de": {
+        "title": "Nichtlineare Optimierung",
+        "url": "https://de.wikipedia.org/wiki/Nichtlineare_Optimierung"
+      },
+      "fr": {
+        "title": "Programmation non linéaire",
+        "url": "https://fr.wikipedia.org/wiki/Programmation_non_linéaire"
+      },
+      "ja": {
+        "title": "非線形計画法",
+        "url": "https://ja.wikipedia.org/wiki/非線形計画法"
+      }
+    },
+    "alignment_confidence": "high"
+  },
+  {
+    "concept_id": "control_system",
+    "name_zh": "控制系统",
+    "multilang": {
+      "en": {
+        "title": "Control System",
+        "url": "https://en.wikipedia.org/wiki/Control_System"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "transfer_function",
+    "name_zh": "传递函数",
+    "multilang": {
+      "en": {
+        "title": "Transfer Function",
+        "url": "https://en.wikipedia.org/wiki/Transfer_Function"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "state_space",
+    "name_zh": "状态空间",
+    "multilang": {
+      "en": {
+        "title": "State Space",
+        "url": "https://en.wikipedia.org/wiki/State_Space"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "feedback_control",
+    "name_zh": "反馈控制",
+    "multilang": {
+      "en": {
+        "title": "Feedback Control",
+        "url": "https://en.wikipedia.org/wiki/Feedback_Control"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "stability_analysis",
+    "name_zh": "稳定性分析",
+    "multilang": {
+      "en": {
+        "title": "Stability Analysis",
+        "url": "https://en.wikipedia.org/wiki/Stability_Analysis"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "pid_controller",
+    "name_zh": "PID控制器",
+    "multilang": {
+      "en": {
+        "title": "Pid Controller",
+        "url": "https://en.wikipedia.org/wiki/Pid_Controller"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "root_locus",
+    "name_zh": "根轨迹法",
+    "multilang": {
+      "en": {
+        "title": "Root Locus",
+        "url": "https://en.wikipedia.org/wiki/Root_Locus"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "bode_plot",
+    "name_zh": "Bode图",
+    "multilang": {
+      "en": {
+        "title": "Bode Plot",
+        "url": "https://en.wikipedia.org/wiki/Bode_Plot"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "nyquist_criterion",
+    "name_zh": "Nyquist判据",
+    "multilang": {
+      "en": {
+        "title": "Nyquist Criterion",
+        "url": "https://en.wikipedia.org/wiki/Nyquist_Criterion"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "controllability",
+    "name_zh": "能控性",
+    "multilang": {
+      "en": {
+        "title": "Controllability",
+        "url": "https://en.wikipedia.org/wiki/Controllability"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "observability",
+    "name_zh": "能观性",
+    "multilang": {
+      "en": {
+        "title": "Observability",
+        "url": "https://en.wikipedia.org/wiki/Observability"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "state_feedback",
+    "name_zh": "状态反馈",
+    "multilang": {
+      "en": {
+        "title": "State Feedback",
+        "url": "https://en.wikipedia.org/wiki/State_Feedback"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "state_observer",
+    "name_zh": "状态观测器",
+    "multilang": {
+      "en": {
+        "title": "State Observer",
+        "url": "https://en.wikipedia.org/wiki/State_Observer"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "kalman_filter",
+    "name_zh": "Kalman滤波",
+    "multilang": {
+      "en": {
+        "title": "Kalman Filter",
+        "url": "https://en.wikipedia.org/wiki/Kalman_Filter"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "lqr_control",
+    "name_zh": "LQR控制",
+    "multilang": {
+      "en": {
+        "title": "Lqr Control",
+        "url": "https://en.wikipedia.org/wiki/Lqr_Control"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "mpc",
+    "name_zh": "模型预测控制",
+    "multilang": {
+      "en": {
+        "title": "Mpc",
+        "url": "https://en.wikipedia.org/wiki/Mpc"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "robust_control",
+    "name_zh": "鲁棒控制",
+    "multilang": {
+      "en": {
+        "title": "Robust Control",
+        "url": "https://en.wikipedia.org/wiki/Robust_Control"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "nonlinear_control",
+    "name_zh": "非线性控制",
+    "multilang": {
+      "en": {
+        "title": "Nonlinear Control",
+        "url": "https://en.wikipedia.org/wiki/Nonlinear_Control"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "adaptive_control",
+    "name_zh": "自适应控制",
+    "multilang": {
+      "en": {
+        "title": "Adaptive Control",
+        "url": "https://en.wikipedia.org/wiki/Adaptive_Control"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "system_identification",
+    "name_zh": "系统辨识",
+    "multilang": {
+      "en": {
+        "title": "System Identification",
+        "url": "https://en.wikipedia.org/wiki/System_Identification"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "information",
+    "name_zh": "信息",
+    "multilang": {
+      "en": {
+        "title": "Information",
+        "url": "https://en.wikipedia.org/wiki/Information"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "shannon_entropy",
+    "name_zh": "香农熵",
+    "multilang": {
+      "en": {
+        "title": "Shannon Entropy",
+        "url": "https://en.wikipedia.org/wiki/Shannon_Entropy"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "mutual_information",
+    "name_zh": "互信息",
+    "multilang": {
+      "en": {
+        "title": "Mutual Information",
+        "url": "https://en.wikipedia.org/wiki/Mutual_Information"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "kl_divergence",
+    "name_zh": "KL散度",
+    "multilang": {
+      "en": {
+        "title": "Kl Divergence",
+        "url": "https://en.wikipedia.org/wiki/Kl_Divergence"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "source_coding",
+    "name_zh": "信源编码",
+    "multilang": {
+      "en": {
+        "title": "Source Coding",
+        "url": "https://en.wikipedia.org/wiki/Source_Coding"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "channel_capacity",
+    "name_zh": "信道容量",
+    "multilang": {
+      "en": {
+        "title": "Channel Capacity",
+        "url": "https://en.wikipedia.org/wiki/Channel_Capacity"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "channel_coding",
+    "name_zh": "信道编码",
+    "multilang": {
+      "en": {
+        "title": "Channel Coding",
+        "url": "https://en.wikipedia.org/wiki/Channel_Coding"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "error_correction",
+    "name_zh": "纠错编码",
+    "multilang": {
+      "en": {
+        "title": "Error Correction",
+        "url": "https://en.wikipedia.org/wiki/Error_Correction"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "reed_solomon",
+    "name_zh": "Reed-Solomon码",
+    "multilang": {
+      "en": {
+        "title": "Reed Solomon",
+        "url": "https://en.wikipedia.org/wiki/Reed_Solomon"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "ldpc_code",
+    "name_zh": "LDPC码",
+    "multilang": {
+      "en": {
+        "title": "Ldpc Code",
+        "url": "https://en.wikipedia.org/wiki/Ldpc_Code"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "data_compression",
+    "name_zh": "数据压缩",
+    "multilang": {
+      "en": {
+        "title": "Data Compression",
+        "url": "https://en.wikipedia.org/wiki/Data_Compression"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "huffman_coding",
+    "name_zh": "Huffman编码",
+    "multilang": {
+      "en": {
+        "title": "Huffman Coding",
+        "url": "https://en.wikipedia.org/wiki/Huffman_Coding"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "arithmetic_coding",
+    "name_zh": "算术编码",
+    "multilang": {
+      "en": {
+        "title": "Arithmetic Coding",
+        "url": "https://en.wikipedia.org/wiki/Arithmetic_Coding"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "lossy_compression",
+    "name_zh": "有损压缩",
+    "multilang": {
+      "en": {
+        "title": "Lossy Compression",
+        "url": "https://en.wikipedia.org/wiki/Lossy_Compression"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "rate_distortion",
+    "name_zh": "率失真理论",
+    "multilang": {
+      "en": {
+        "title": "Rate Distortion",
+        "url": "https://en.wikipedia.org/wiki/Rate_Distortion"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "network_information",
+    "name_zh": "网络信息论",
+    "multilang": {
+      "en": {
+        "title": "Network Information",
+        "url": "https://en.wikipedia.org/wiki/Network_Information"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "cryptographic_protocol",
+    "name_zh": "密码学协议",
+    "multilang": {
+      "en": {
+        "title": "Cryptographic Protocol",
+        "url": "https://en.wikipedia.org/wiki/Cryptographic_Protocol"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "quantum_information",
+    "name_zh": "量子信息",
+    "multilang": {
+      "en": {
+        "title": "Quantum Information",
+        "url": "https://en.wikipedia.org/wiki/Quantum_Information"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "algorithmic_information",
+    "name_zh": "算法信息论",
+    "multilang": {
+      "en": {
+        "title": "Algorithmic Information",
+        "url": "https://en.wikipedia.org/wiki/Algorithmic_Information"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "differential_privacy",
+    "name_zh": "差分隐私",
+    "multilang": {
+      "en": {
+        "title": "Differential Privacy",
+        "url": "https://en.wikipedia.org/wiki/Differential_Privacy"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "symmetric_encryption",
+    "name_zh": "对称加密",
+    "multilang": {
+      "en": {
+        "title": "Symmetric Encryption",
+        "url": "https://en.wikipedia.org/wiki/Symmetric_Encryption"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "aes",
+    "name_zh": "AES",
+    "multilang": {
+      "en": {
+        "title": "Aes",
+        "url": "https://en.wikipedia.org/wiki/Aes"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "public_key",
+    "name_zh": "公钥密码学",
+    "multilang": {
+      "en": {
+        "title": "Public Key",
+        "url": "https://en.wikipedia.org/wiki/Public_Key"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "rsa",
+    "name_zh": "RSA",
+    "multilang": {
+      "en": {
+        "title": "Rsa",
+        "url": "https://en.wikipedia.org/wiki/Rsa"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "diffie_hellman",
+    "name_zh": "Diffie-Hellman",
+    "multilang": {
+      "en": {
+        "title": "Diffie Hellman",
+        "url": "https://en.wikipedia.org/wiki/Diffie_Hellman"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "elliptic_curve_crypto",
+    "name_zh": "椭圆曲线密码",
+    "multilang": {
+      "en": {
+        "title": "Elliptic Curve Crypto",
+        "url": "https://en.wikipedia.org/wiki/Elliptic_Curve_Crypto"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "hash_function",
+    "name_zh": "哈希函数",
+    "multilang": {
+      "en": {
+        "title": "Hash Function",
+        "url": "https://en.wikipedia.org/wiki/Hash_Function"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "digital_signature",
+    "name_zh": "数字签名",
+    "multilang": {
+      "en": {
+        "title": "Digital Signature",
+        "url": "https://en.wikipedia.org/wiki/Digital_Signature"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "mac",
+    "name_zh": "消息认证码",
+    "multilang": {
+      "en": {
+        "title": "Mac",
+        "url": "https://en.wikipedia.org/wiki/Mac"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "zero_knowledge_proof",
+    "name_zh": "零知识证明",
+    "multilang": {
+      "en": {
+        "title": "Zero Knowledge Proof",
+        "url": "https://en.wikipedia.org/wiki/Zero_Knowledge_Proof"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "zk_snarks",
+    "name_zh": "zk-SNARKs",
+    "multilang": {
+      "en": {
+        "title": "Zk Snarks",
+        "url": "https://en.wikipedia.org/wiki/Zk_Snarks"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "homomorphic_encryption",
+    "name_zh": "同态加密",
+    "multilang": {
+      "en": {
+        "title": "Homomorphic Encryption",
+        "url": "https://en.wikipedia.org/wiki/Homomorphic_Encryption"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "quantum_crypto",
+    "name_zh": "量子密码",
+    "multilang": {
+      "en": {
+        "title": "Quantum Crypto",
+        "url": "https://en.wikipedia.org/wiki/Quantum_Crypto"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "post_quantum",
+    "name_zh": "后量子密码",
+    "multilang": {
+      "en": {
+        "title": "Post Quantum",
+        "url": "https://en.wikipedia.org/wiki/Post_Quantum"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "blockchain_consensus",
+    "name_zh": "区块链共识",
+    "multilang": {
+      "en": {
+        "title": "Blockchain Consensus",
+        "url": "https://en.wikipedia.org/wiki/Blockchain_Consensus"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "mpc",
+    "name_zh": "安全多方计算",
+    "multilang": {
+      "en": {
+        "title": "Mpc",
+        "url": "https://en.wikipedia.org/wiki/Mpc"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "side_channel",
+    "name_zh": "侧信道攻击",
+    "multilang": {
+      "en": {
+        "title": "Side Channel",
+        "url": "https://en.wikipedia.org/wiki/Side_Channel"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "provable_security",
+    "name_zh": "可证明安全",
+    "multilang": {
+      "en": {
+        "title": "Provable Security",
+        "url": "https://en.wikipedia.org/wiki/Provable_Security"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "lattice_based_crypto",
+    "name_zh": "格密码",
+    "multilang": {
+      "en": {
+        "title": "Lattice Based Crypto",
+        "url": "https://en.wikipedia.org/wiki/Lattice_Based_Crypto"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "identity_based",
+    "name_zh": "基于身份的加密",
+    "multilang": {
+      "en": {
+        "title": "Identity Based",
+        "url": "https://en.wikipedia.org/wiki/Identity_Based"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "stochastic_calculus",
+    "name_zh": "随机分析",
+    "multilang": {
+      "en": {
+        "title": "Stochastic Calculus",
+        "url": "https://en.wikipedia.org/wiki/Stochastic_Calculus"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "ito_calculus",
+    "name_zh": "Itô微积分",
+    "multilang": {
+      "en": {
+        "title": "Ito Calculus",
+        "url": "https://en.wikipedia.org/wiki/Ito_Calculus"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "ito_lemma",
+    "name_zh": "Itô引理",
+    "multilang": {
+      "en": {
+        "title": "Ito Lemma",
+        "url": "https://en.wikipedia.org/wiki/Ito_Lemma"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "sde",
+    "name_zh": "随机微分方程",
+    "multilang": {
+      "en": {
+        "title": "Sde",
+        "url": "https://en.wikipedia.org/wiki/Sde"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "black_scholes",
+    "name_zh": "Black-Scholes模型",
+    "multilang": {
+      "en": {
+        "title": "Black Scholes",
+        "url": "https://en.wikipedia.org/wiki/Black_Scholes"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "risk_neutral",
+    "name_zh": "风险中性定价",
+    "multilang": {
+      "en": {
+        "title": "Risk Neutral",
+        "url": "https://en.wikipedia.org/wiki/Risk_Neutral"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "option_pricing",
+    "name_zh": "期权定价",
+    "multilang": {
+      "en": {
+        "title": "Option Pricing",
+        "url": "https://en.wikipedia.org/wiki/Option_Pricing"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "greeks",
+    "name_zh": "希腊字母",
+    "multilang": {
+      "en": {
+        "title": "Greeks",
+        "url": "https://en.wikipedia.org/wiki/Greeks"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "implied_volatility",
+    "name_zh": "隐含波动率",
+    "multilang": {
+      "en": {
+        "title": "Implied Volatility",
+        "url": "https://en.wikipedia.org/wiki/Implied_Volatility"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "volatility_smile",
+    "name_zh": "波动率微笑",
+    "multilang": {
+      "en": {
+        "title": "Volatility Smile",
+        "url": "https://en.wikipedia.org/wiki/Volatility_Smile"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "stochastic_volatility",
+    "name_zh": "随机波动率模型",
+    "multilang": {
+      "en": {
+        "title": "Stochastic Volatility",
+        "url": "https://en.wikipedia.org/wiki/Stochastic_Volatility"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "heston_model",
+    "name_zh": "Heston模型",
+    "multilang": {
+      "en": {
+        "title": "Heston Model",
+        "url": "https://en.wikipedia.org/wiki/Heston_Model"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "monte_carlo_simulation",
+    "name_zh": "蒙特卡洛模拟",
+    "multilang": {
+      "en": {
+        "title": "Monte Carlo Simulation",
+        "url": "https://en.wikipedia.org/wiki/Monte_Carlo_Simulation"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "american_option",
+    "name_zh": "美式期权定价",
+    "multilang": {
+      "en": {
+        "title": "American Option",
+        "url": "https://en.wikipedia.org/wiki/American_Option"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "binomial_tree",
+    "name_zh": "二叉树模型",
+    "multilang": {
+      "en": {
+        "title": "Binomial Tree",
+        "url": "https://en.wikipedia.org/wiki/Binomial_Tree"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "fundamental_theorem",
+    "name_zh": "资产定价基本定理",
+    "multilang": {
+      "en": {
+        "title": "Fundamental Theorem",
+        "url": "https://en.wikipedia.org/wiki/Fundamental_Theorem"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "interest_rate_model",
+    "name_zh": "利率模型",
+    "multilang": {
+      "en": {
+        "title": "Interest Rate Model",
+        "url": "https://en.wikipedia.org/wiki/Interest_Rate_Model"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "credit_risk",
+    "name_zh": "信用风险模型",
+    "multilang": {
+      "en": {
+        "title": "Credit Risk",
+        "url": "https://en.wikipedia.org/wiki/Credit_Risk"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "portfolio_optimization",
+    "name_zh": "投资组合优化",
+    "multilang": {
+      "en": {
+        "title": "Portfolio Optimization",
+        "url": "https://en.wikipedia.org/wiki/Portfolio_Optimization"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "risk_management",
+    "name_zh": "风险管理",
+    "multilang": {
+      "en": {
+        "title": "Risk Management",
+        "url": "https://en.wikipedia.org/wiki/Risk_Management"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "population_dynamics",
+    "name_zh": "种群动力学",
+    "multilang": {
+      "en": {
+        "title": "Population Dynamics",
+        "url": "https://en.wikipedia.org/wiki/Population_Dynamics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "logistic_growth",
+    "name_zh": "Logistic增长",
+    "multilang": {
+      "en": {
+        "title": "Logistic Growth",
+        "url": "https://en.wikipedia.org/wiki/Logistic_Growth"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "predator_prey",
+    "name_zh": "捕食者-猎物模型",
+    "multilang": {
+      "en": {
+        "title": "Predator Prey",
+        "url": "https://en.wikipedia.org/wiki/Predator_Prey"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "lotka_volterra",
+    "name_zh": "Lotka-Volterra方程",
+    "multilang": {
+      "en": {
+        "title": "Lotka Volterra",
+        "url": "https://en.wikipedia.org/wiki/Lotka_Volterra"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "sir_model",
+    "name_zh": "SIR模型",
+    "multilang": {
+      "en": {
+        "title": "Sir Model",
+        "url": "https://en.wikipedia.org/wiki/Sir_Model"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "seir_model",
+    "name_zh": "SEIR模型",
+    "multilang": {
+      "en": {
+        "title": "Seir Model",
+        "url": "https://en.wikipedia.org/wiki/Seir_Model"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "reaction_diffusion",
+    "name_zh": "反应扩散方程",
+    "multilang": {
+      "en": {
+        "title": "Reaction Diffusion",
+        "url": "https://en.wikipedia.org/wiki/Reaction_Diffusion"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "turing_pattern",
+    "name_zh": "Turing模式",
+    "multilang": {
+      "en": {
+        "title": "Turing Pattern",
+        "url": "https://en.wikipedia.org/wiki/Turing_Pattern"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "evolutionary_dynamics",
+    "name_zh": "进化动力学",
+    "multilang": {
+      "en": {
+        "title": "Evolutionary Dynamics",
+        "url": "https://en.wikipedia.org/wiki/Evolutionary_Dynamics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "replicator_dynamics",
+    "name_zh": "复制动力学",
+    "multilang": {
+      "en": {
+        "title": "Replicator Dynamics",
+        "url": "https://en.wikipedia.org/wiki/Replicator_Dynamics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "ess",
+    "name_zh": "进化稳定策略",
+    "multilang": {
+      "en": {
+        "title": "Ess",
+        "url": "https://en.wikipedia.org/wiki/Ess"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "phylogenetics",
+    "name_zh": "系统发生学",
+    "multilang": {
+      "en": {
+        "title": "Phylogenetics",
+        "url": "https://en.wikipedia.org/wiki/Phylogenetics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "population_genetics",
+    "name_zh": "群体遗传学",
+    "multilang": {
+      "en": {
+        "title": "Population Genetics",
+        "url": "https://en.wikipedia.org/wiki/Population_Genetics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "coalescent_theory",
+    "name_zh": "溯祖理论",
+    "multilang": {
+      "en": {
+        "title": "Coalescent Theory",
+        "url": "https://en.wikipedia.org/wiki/Coalescent_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "biological_oscillator",
+    "name_zh": "生物振荡器",
+    "multilang": {
+      "en": {
+        "title": "Biological Oscillator",
+        "url": "https://en.wikipedia.org/wiki/Biological_Oscillator"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "neural_dynamics",
+    "name_zh": "神经动力学",
+    "multilang": {
+      "en": {
+        "title": "Neural Dynamics",
+        "url": "https://en.wikipedia.org/wiki/Neural_Dynamics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "hodgkin_huxley",
+    "name_zh": "Hodgkin-Huxley模型",
+    "multilang": {
+      "en": {
+        "title": "Hodgkin Huxley",
+        "url": "https://en.wikipedia.org/wiki/Hodgkin_Huxley"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "chemotaxis",
+    "name_zh": "趋化性模型",
+    "multilang": {
+      "en": {
+        "title": "Chemotaxis",
+        "url": "https://en.wikipedia.org/wiki/Chemotaxis"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "morphogenesis",
+    "name_zh": "形态发生",
+    "multilang": {
+      "en": {
+        "title": "Morphogenesis",
+        "url": "https://en.wikipedia.org/wiki/Morphogenesis"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "finite_difference",
+    "name_zh": "有限差分法",
+    "multilang": {
+      "en": {
+        "title": "Finite Difference",
+        "url": "https://en.wikipedia.org/wiki/Finite_Difference"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "finite_element",
+    "name_zh": "有限元方法",
+    "multilang": {
+      "en": {
+        "title": "Finite Element",
+        "url": "https://en.wikipedia.org/wiki/Finite_Element"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "finite_volume",
+    "name_zh": "有限体积法",
+    "multilang": {
+      "en": {
+        "title": "Finite Volume",
+        "url": "https://en.wikipedia.org/wiki/Finite_Volume"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "spectral_method",
+    "name_zh": "谱方法",
+    "multilang": {
+      "en": {
+        "title": "Spectral Method",
+        "url": "https://en.wikipedia.org/wiki/Spectral_Method"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "sparse_matrix",
+    "name_zh": "稀疏矩阵",
+    "multilang": {
+      "en": {
+        "title": "Sparse Matrix",
+        "url": "https://en.wikipedia.org/wiki/Sparse_Matrix"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "iterative_method",
+    "name_zh": "迭代法",
+    "multilang": {
+      "en": {
+        "title": "Iterative Method",
+        "url": "https://en.wikipedia.org/wiki/Iterative_Method"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "conjugate_gradient_method",
+    "name_zh": "共轭梯度法",
+    "multilang": {
+      "en": {
+        "title": "Conjugate Gradient Method",
+        "url": "https://en.wikipedia.org/wiki/Conjugate_Gradient_Method"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "multigrid",
+    "name_zh": "多重网格法",
+    "multilang": {
+      "en": {
+        "title": "Multigrid",
+        "url": "https://en.wikipedia.org/wiki/Multigrid"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "preconditioner",
+    "name_zh": "预条件子",
+    "multilang": {
+      "en": {
+        "title": "Preconditioner",
+        "url": "https://en.wikipedia.org/wiki/Preconditioner"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "numerical_integration",
+    "name_zh": "数值积分",
+    "multilang": {
+      "en": {
+        "title": "Numerical Integration",
+        "url": "https://en.wikipedia.org/wiki/Numerical_Integration"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "numerical_ode",
+    "name_zh": "常微分方程数值解",
+    "multilang": {
+      "en": {
+        "title": "Numerical Ode",
+        "url": "https://en.wikipedia.org/wiki/Numerical_Ode"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "runge_kutta",
+    "name_zh": "Runge-Kutta方法",
+    "multilang": {
+      "en": {
+        "title": "Runge Kutta",
+        "url": "https://en.wikipedia.org/wiki/Runge_Kutta"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "numerical_pde",
+    "name_zh": "偏微分方程数值解",
+    "multilang": {
+      "en": {
+        "title": "Numerical Pde",
+        "url": "https://en.wikipedia.org/wiki/Numerical_Pde"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "monte_carlo_numerical",
+    "name_zh": "蒙特卡洛数值方法",
+    "multilang": {
+      "en": {
+        "title": "Monte Carlo Numerical",
+        "url": "https://en.wikipedia.org/wiki/Monte_Carlo_Numerical"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "fast_fourier_transform",
+    "name_zh": "快速傅里叶变换",
+    "multilang": {
+      "en": {
+        "title": "Fast Fourier Transform",
+        "url": "https://en.wikipedia.org/wiki/Fast_Fourier_Transform"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "numerical_linear_algebra",
+    "name_zh": "数值线性代数",
+    "multilang": {
+      "en": {
+        "title": "Numerical Linear Algebra",
+        "url": "https://en.wikipedia.org/wiki/Numerical_Linear_Algebra"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "domain_decomposition",
+    "name_zh": "区域分解",
+    "multilang": {
+      "en": {
+        "title": "Domain Decomposition",
+        "url": "https://en.wikipedia.org/wiki/Domain_Decomposition"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "adaptive_mesh",
+    "name_zh": "自适应网格",
+    "multilang": {
+      "en": {
+        "title": "Adaptive Mesh",
+        "url": "https://en.wikipedia.org/wiki/Adaptive_Mesh"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "uncertainty_quantification",
+    "name_zh": "不确定性量化",
+    "multilang": {
+      "en": {
+        "title": "Uncertainty Quantification",
+        "url": "https://en.wikipedia.org/wiki/Uncertainty_Quantification"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "classical_mechanics",
+    "name_zh": "经典力学",
+    "multilang": {
+      "en": {
+        "title": "Classical Mechanics",
+        "url": "https://en.wikipedia.org/wiki/Classical_Mechanics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "lagrangian",
+    "name_zh": "拉格朗日力学",
+    "multilang": {
+      "en": {
+        "title": "Lagrangian",
+        "url": "https://en.wikipedia.org/wiki/Lagrangian"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "hamiltonian",
+    "name_zh": "哈密顿力学",
+    "multilang": {
+      "en": {
+        "title": "Hamiltonian",
+        "url": "https://en.wikipedia.org/wiki/Hamiltonian"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "hamiltonian_system",
+    "name_zh": "哈密顿系统",
+    "multilang": {
+      "en": {
+        "title": "Hamiltonian System",
+        "url": "https://en.wikipedia.org/wiki/Hamiltonian_System"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "quantum_mechanics",
+    "name_zh": "量子力学",
+    "multilang": {
+      "en": {
+        "title": "Quantum Mechanics",
+        "url": "https://en.wikipedia.org/wiki/Quantum_Mechanics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "schrodinger_equation",
+    "name_zh": "薛定谔方程",
+    "multilang": {
+      "en": {
+        "title": "Schrodinger Equation",
+        "url": "https://en.wikipedia.org/wiki/Schrodinger_Equation"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "path_integral",
+    "name_zh": "路径积分",
+    "multilang": {
+      "en": {
+        "title": "Path Integral",
+        "url": "https://en.wikipedia.org/wiki/Path_Integral"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "gauge_theory",
+    "name_zh": "规范理论",
+    "multilang": {
+      "en": {
+        "title": "Gauge Theory",
+        "url": "https://en.wikipedia.org/wiki/Gauge_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "general_relativity",
+    "name_zh": "广义相对论",
+    "multilang": {
+      "en": {
+        "title": "General Relativity",
+        "url": "https://en.wikipedia.org/wiki/General_Relativity"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "statistical_mechanics",
+    "name_zh": "统计力学",
+    "multilang": {
+      "en": {
+        "title": "Statistical Mechanics",
+        "url": "https://en.wikipedia.org/wiki/Statistical_Mechanics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "phase_transition",
+    "name_zh": "相变理论",
+    "multilang": {
+      "en": {
+        "title": "Phase Transition",
+        "url": "https://en.wikipedia.org/wiki/Phase_Transition"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "electromagnetism",
+    "name_zh": "电磁学",
+    "multilang": {
+      "en": {
+        "title": "Electromagnetism",
+        "url": "https://en.wikipedia.org/wiki/Electromagnetism"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "fluid_dynamics",
+    "name_zh": "流体动力学",
+    "multilang": {
+      "en": {
+        "title": "Fluid Dynamics",
+        "url": "https://en.wikipedia.org/wiki/Fluid_Dynamics"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "turbulence",
+    "name_zh": "湍流理论",
+    "multilang": {
+      "en": {
+        "title": "Turbulence",
+        "url": "https://en.wikipedia.org/wiki/Turbulence"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "quantum_field_theory",
+    "name_zh": "量子场论",
+    "multilang": {
+      "en": {
+        "title": "Quantum Field Theory",
+        "url": "https://en.wikipedia.org/wiki/Quantum_Field_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "renormalization",
+    "name_zh": "重整化群",
+    "multilang": {
+      "en": {
+        "title": "Renormalization",
+        "url": "https://en.wikipedia.org/wiki/Renormalization"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "conformal_field_theory",
+    "name_zh": "共形场论",
+    "multilang": {
+      "en": {
+        "title": "Conformal Field Theory",
+        "url": "https://en.wikipedia.org/wiki/Conformal_Field_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "string_theory",
+    "name_zh": "弦理论",
+    "multilang": {
+      "en": {
+        "title": "String Theory",
+        "url": "https://en.wikipedia.org/wiki/String_Theory"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "supersymmetry",
+    "name_zh": "超对称",
+    "multilang": {
+      "en": {
+        "title": "Supersymmetry",
+        "url": "https://en.wikipedia.org/wiki/Supersymmetry"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "integrable_system",
+    "name_zh": "可积系统",
+    "multilang": {
+      "en": {
+        "title": "Integrable System",
+        "url": "https://en.wikipedia.org/wiki/Integrable_System"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "data_preprocessing",
+    "name_zh": "数据预处理",
+    "multilang": {
+      "en": {
+        "title": "Data Preprocessing",
+        "url": "https://en.wikipedia.org/wiki/Data_Preprocessing"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "feature_engineering",
+    "name_zh": "特征工程",
+    "multilang": {
+      "en": {
+        "title": "Feature Engineering",
+        "url": "https://en.wikipedia.org/wiki/Feature_Engineering"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "pca",
+    "name_zh": "主成分分析",
+    "multilang": {
+      "en": {
+        "title": "Pca",
+        "url": "https://en.wikipedia.org/wiki/Pca"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "svm",
+    "name_zh": "支持向量机",
+    "multilang": {
+      "en": {
+        "title": "Svm",
+        "url": "https://en.wikipedia.org/wiki/Svm"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "decision_tree",
+    "name_zh": "决策树",
+    "multilang": {
+      "en": {
+        "title": "Decision Tree",
+        "url": "https://en.wikipedia.org/wiki/Decision_Tree"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "random_forest",
+    "name_zh": "随机森林",
+    "multilang": {
+      "en": {
+        "title": "Random Forest",
+        "url": "https://en.wikipedia.org/wiki/Random_Forest"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "gradient_boosting",
+    "name_zh": "梯度提升",
+    "multilang": {
+      "en": {
+        "title": "Gradient Boosting",
+        "url": "https://en.wikipedia.org/wiki/Gradient_Boosting"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "neural_network",
+    "name_zh": "神经网络",
+    "multilang": {
+      "en": {
+        "title": "Neural Network",
+        "url": "https://en.wikipedia.org/wiki/Neural_Network"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "backpropagation",
+    "name_zh": "反向传播",
+    "multilang": {
+      "en": {
+        "title": "Backpropagation",
+        "url": "https://en.wikipedia.org/wiki/Backpropagation"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "deep_learning",
+    "name_zh": "深度学习",
+    "multilang": {
+      "en": {
+        "title": "Deep Learning",
+        "url": "https://en.wikipedia.org/wiki/Deep_Learning"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "cnn",
+    "name_zh": "卷积神经网络",
+    "multilang": {
+      "en": {
+        "title": "Cnn",
+        "url": "https://en.wikipedia.org/wiki/Cnn"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "rnn",
+    "name_zh": "循环神经网络",
+    "multilang": {
+      "en": {
+        "title": "Rnn",
+        "url": "https://en.wikipedia.org/wiki/Rnn"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "lstm",
+    "name_zh": "长短期记忆网络",
+    "multilang": {
+      "en": {
+        "title": "Lstm",
+        "url": "https://en.wikipedia.org/wiki/Lstm"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "attention",
+    "name_zh": "注意力机制",
+    "multilang": {
+      "en": {
+        "title": "Attention",
+        "url": "https://en.wikipedia.org/wiki/Attention"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "transformer",
+    "name_zh": "Transformer",
+    "multilang": {
+      "en": {
+        "title": "Transformer",
+        "url": "https://en.wikipedia.org/wiki/Transformer"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "adam_optimizer",
+    "name_zh": "Adam优化器",
+    "multilang": {
+      "en": {
+        "title": "Adam Optimizer",
+        "url": "https://en.wikipedia.org/wiki/Adam_Optimizer"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "batch_normalization",
+    "name_zh": "批归一化",
+    "multilang": {
+      "en": {
+        "title": "Batch Normalization",
+        "url": "https://en.wikipedia.org/wiki/Batch_Normalization"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "dropout",
+    "name_zh": "Dropout正则化",
+    "multilang": {
+      "en": {
+        "title": "Dropout",
+        "url": "https://en.wikipedia.org/wiki/Dropout"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "autoencoder",
+    "name_zh": "自编码器",
+    "multilang": {
+      "en": {
+        "title": "Autoencoder",
+        "url": "https://en.wikipedia.org/wiki/Autoencoder"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "gan",
+    "name_zh": "生成对抗网络",
+    "multilang": {
+      "en": {
+        "title": "Gan",
+        "url": "https://en.wikipedia.org/wiki/Gan"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  },
+  {
+    "concept_id": "reinforcement_learning",
+    "name_zh": "强化学习",
+    "multilang": {
+      "en": {
+        "title": "Reinforcement Learning",
+        "url": "https://en.wikipedia.org/wiki/Reinforcement_Learning"
+      },
+      "de": {
+        "title": "",
+        "url": ""
+      },
+      "fr": {
+        "title": "",
+        "url": ""
+      },
+      "ja": {
+        "title": "",
+        "url": ""
+      }
+    },
+    "alignment_confidence": "low"
+  }
+]

@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "title": "FormalMath数论概念与Wikipedia结构映射",
+    "version": "1.0",
+    "created": "2026-04-04",
+    "source": "Wikipedia Mathematics",
+    "target": "FormalMath概念体系"
+  },
+  "mappings": [
+    {
+      "wikipedia": {
+        "title": "Number Theory",
+        "url": "https://en.wikipedia.org/wiki/Number_theory",
+        "sections": [
+          "History",
+          "Main subdivisions",
+          "Related fields",
+          "References"
+        ]
+      },
+      "formalmath": {
+        "path": "concept/03-主题概念梳理/06-数论概念.md",
+        "identifier": "C.03.06",
+        "section": "数论概念梳理"
+      },
+      "alignment": {
+        "status": "partial",
+        "coverage": 0.75,
+        "gaps": [
+          "Diophantine geometry独立章节缺失",
+          "计算数论未提及"
+        ]
+      },
+      "concepts": [
+        {
+          "name_en": "Elementary Number Theory",
+          "name_zh": "初等数论",
+          "mapped_to": "C.03.06.02.01 初等数论核心概念",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Analytic Number Theory",
+          "name_zh": "解析数论",
+          "mapped_to": "C.03.06.02.03 解析数论核心概念",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Algebraic Number Theory",
+          "name_zh": "代数数论",
+          "mapped_to": "C.03.06.02.02 代数数论核心概念",
+          "status": "aligned"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Analytic Number Theory",
+        "url": "https://en.wikipedia.org/wiki/Analytic_number_theory",
+        "sections": [
+          "History",
+          "Branches",
+          "Methods",
+          "Problems and Results"
+        ]
+      },
+      "formalmath": {
+        "path": "concept/03-主题概念梳理/06-数论概念.md",
+        "identifier": "C.03.06.02.03",
+        "section": "解析数论核心概念"
+      },
+      "alignment": {
+        "status": "partial",
+        "coverage": 0.70,
+        "gaps": [
+          "乘性/加性数论区分不够明确",
+          "Hardy-Littlewood圆法未提及"
+        ]
+      },
+      "concepts": [
+        {
+          "name_en": "Riemann Zeta Function",
+          "name_zh": "黎曼ζ函数",
+          "mapped_to": "黎曼ζ函数 (C.CORE.028)",
+          "definition": "ζ(s) = Σ(n=1 to ∞) 1/n^s",
+          "properties": [
+            "Euler product",
+            "Analytic continuation",
+            "Functional equation"
+          ],
+          "status": "aligned"
+        },
+        {
+          "name_en": "Dirichlet L-function",
+          "name_zh": "Dirichlet L函数",
+          "mapped_to": "Dirichlet L函数",
+          "definition": "L(s, χ) = Σ(n=1 to ∞) χ(n)/n^s",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Prime Number Theorem",
+          "name_zh": "素数定理",
+          "mapped_to": "素数定理",
+          "definition": "π(x) ~ x/ln(x)",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Multiplicative Number Theory",
+          "name_zh": "乘性数论",
+          "mapped_to": null,
+          "status": "missing"
+        },
+        {
+          "name_en": "Additive Number Theory",
+          "name_zh": "加性数论",
+          "mapped_to": null,
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Algebraic Number Theory",
+        "url": "https://en.wikipedia.org/wiki/Algebraic_number_theory",
+        "sections": [
+          "History",
+          "Subfields",
+          "Major Results"
+        ]
+      },
+      "formalmath": {
+        "path": "concept/03-主题概念梳理/06-数论概念.md",
+        "identifier": "C.03.06.02.02",
+        "section": "代数数论核心概念"
+      },
+      "alignment": {
+        "status": "partial",
+        "coverage": 0.80,
+        "gaps": [
+          "Iwasawa理论缺失",
+          "局部域理论不够详细"
+        ]
+      },
+      "concepts": [
+        {
+          "name_en": "Algebraic Integer",
+          "name_zh": "代数整数",
+          "mapped_to": "代数整数",
+          "definition": "首一整数系数多项式的根",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Algebraic Number Field",
+          "name_zh": "代数数域",
+          "mapped_to": "代数数域",
+          "definition": "Q的有限扩张",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Ring of Integers",
+          "name_zh": "整数环",
+          "mapped_to": "数域的整数环",
+          "definition": "O_K",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Ideal Class Group",
+          "name_zh": "理想类群",
+          "mapped_to": "理想类群",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Class Field Theory",
+          "name_zh": "类域论",
+          "mapped_to": "类域论",
+          "status": "partial"
+        },
+        {
+          "name_en": "Dirichlet's Unit Theorem",
+          "name_zh": "Dirichlet单位定理",
+          "mapped_to": "Dirichlet单位定理",
+          "status": "aligned"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Prime Number Theorem",
+        "url": "https://en.wikipedia.org/wiki/Prime_number_theorem"
+      },
+      "formalmath": {
+        "path": "concept/03-主题概念梳理/06-数论概念.md",
+        "section": "素数定理"
+      },
+      "alignment": {
+        "status": "complete",
+        "coverage": 0.90
+      },
+      "concepts": [
+        {
+          "name_en": "Prime-counting function",
+          "name_zh": "素数计数函数",
+          "symbol": "π(x)",
+          "definition": "不超过x的素数个数",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Logarithmic integral",
+          "name_zh": "对数积分",
+          "symbol": "li(x)",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Chebyshev function",
+          "name_zh": "切比雪夫函数",
+          "symbol": "ψ(x)",
+          "status": "aligned"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Riemann Hypothesis",
+        "url": "https://en.wikipedia.org/wiki/Riemann_hypothesis"
+      },
+      "formalmath": {
+        "path": "concept/03-主题概念梳理/06-数论概念.md",
+        "section": "黎曼假设"
+      },
+      "alignment": {
+        "status": "complete",
+        "coverage": 0.85
+      },
+      "concepts": [
+        {
+          "name_en": "Critical line",
+          "name_zh": "临界线",
+          "symbol": "Re(s) = 1/2",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Trivial zeros",
+          "name_zh": "平凡零点",
+          "value": "s = -2, -4, -6, ...",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Non-trivial zeros",
+          "name_zh": "非平凡零点",
+          "status": "aligned"
+        },
+        {
+          "name_en": "Generalized Riemann Hypothesis",
+          "name_zh": "广义黎曼假设",
+          "status": "aligned"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Modular Forms",
+        "url": "https://en.wikipedia.org/wiki/Modular_form"
+      },
+      "formalmath": {
+        "path": null,
+        "section": null
+      },
+      "alignment": {
+        "status": "missing",
+        "coverage": 0,
+        "priority": "high"
+      },
+      "concepts": [
+        {
+          "name_en": "Modular Form",
+          "name_zh": "模形式",
+          "status": "missing",
+          "priority": "P1"
+        },
+        {
+          "name_en": "Cusp Form",
+          "name_zh": "尖点形式",
+          "status": "missing"
+        },
+        {
+          "name_en": "Eisenstein Series",
+          "name_zh": "Eisenstein级数",
+          "status": "missing"
+        },
+        {
+          "name_en": "Hecke Operator",
+          "name_zh": "Hecke算子",
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Elliptic Curves",
+        "url": "https://en.wikipedia.org/wiki/Elliptic_curve"
+      },
+      "formalmath": {
+        "path": null,
+        "section": "素数、同余相关"
+      },
+      "alignment": {
+        "status": "partial",
+        "coverage": 0.20,
+        "priority": "high"
+      },
+      "concepts": [
+        {
+          "name_en": "Elliptic Curve",
+          "name_zh": "椭圆曲线",
+          "status": "missing",
+          "priority": "P1"
+        },
+        {
+          "name_en": "Weierstrass Equation",
+          "name_zh": "Weierstrass方程",
+          "status": "missing"
+        },
+        {
+          "name_en": "Mordell-Weil Theorem",
+          "name_zh": "Mordell-Weil定理",
+          "status": "missing"
+        },
+        {
+          "name_en": "Elliptic Curve Group Law",
+          "name_zh": "椭圆曲线群运算",
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Diophantine Equations",
+        "url": "https://en.wikipedia.org/wiki/Diophantine_equation"
+      },
+      "formalmath": {
+        "path": "concept/03-主题概念梳理/06-数论概念.md",
+        "section": "部分提及"
+      },
+      "alignment": {
+        "status": "partial",
+        "coverage": 0.30
+      },
+      "concepts": [
+        {
+          "name_en": "Linear Diophantine Equation",
+          "name_zh": "线性丢番图方程",
+          "mapped_to": "贝祖等式、扩展欧几里得算法",
+          "status": "partial"
+        },
+        {
+          "name_en": "Pell's Equation",
+          "name_zh": "Pell方程",
+          "status": "missing"
+        },
+        {
+          "name_en": "Hilbert's Tenth Problem",
+          "name_zh": "希尔伯特第十问题",
+          "status": "missing"
+        }
+      ]
+    }
+  ],
+  "concept_relationships": {
+    "hierarchy": [
+      {
+        "parent": "Number Theory",
+        "children": ["Elementary NT", "Analytic NT", "Algebraic NT", "Diophantine Geometry"]
+      },
+      {
+        "parent": "Analytic Number Theory",
+        "children": ["Riemann Zeta Function", "Dirichlet L-function", "Prime Number Theorem"]
+      },
+      {
+        "parent": "Algebraic Number Theory",
+        "children": ["Algebraic Number Field", "Class Field Theory", "Iwasawa Theory"]
+      },
+      {
+        "parent": "Riemann Zeta Function",
+        "children": ["Riemann Hypothesis", "Functional Equation", "Euler Product"]
+      },
+      {
+        "parent": "Diophantine Geometry",
+        "children": ["Elliptic Curves", "Modular Forms"]
+      }
+    ],
+    "prerequisites": [
+      {
+        "concept": "Riemann Zeta Function",
+        "requires": ["Complex Analysis", "Series", "Analytic Continuation"]
+      },
+      {
+        "concept": "Algebraic Number Theory",
+        "requires": ["Ring Theory", "Field Theory", "Galois Theory"]
+      },
+      {
+        "concept": "Class Field Theory",
+        "requires": ["Algebraic Number Fields", "Ideals", "Galois Theory"]
+      },
+      {
+        "concept": "Modular Forms",
+        "requires": ["Complex Analysis", "Group Theory", "Elliptic Functions"]
+      },
+      {
+        "concept": "Elliptic Curves",
+        "requires": ["Algebraic Geometry", "Group Theory", "Number Theory"]
+      }
+    ]
+  },
+  "action_items": {
+    "immediate": [
+      {
+        "task": "添加英文术语对照",
+        "target": "06-数论概念.md",
+        "priority": "P0"
+      },
+      {
+        "task": "更新concept_prerequisites.yaml",
+        "target": "数论概念前置条件",
+        "priority": "P0"
+      }
+    ],
+    "short_term": [
+      {
+        "task": "创建模形式概念文档",
+        "priority": "P1"
+      },
+      {
+        "task": "创建椭圆曲线概念文档",
+        "priority": "P1"
+      },
+      {
+        "task": "扩展丢番图方程内容",
+        "priority": "P1"
+      }
+    ],
+    "long_term": [
+      {
+        "task": "添加Iwasawa理论",
+        "priority": "P2"
+      },
+      {
+        "task": "创建超越数论章节",
+        "priority": "P2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "name": "分析学推理树索引",
+  "version": "1.0.0",
+  "created": "2026-04-04",
+  "description": "分析学核心定理的推理树集合，展示从公理到定理的完整推理链",
+  "categories": [
+    {
+      "name": "极限与连续性",
+      "count": 3,
+      "files": [
+        {
+          "id": "01",
+          "filename": "01-epsilon-delta-limit.md",
+          "title": "ε-δ定义 → 极限性质 → 连续性",
+          "key_theorems": ["极限唯一性", "介值定理", "极值定理"],
+          "prerequisites": ["实数完备性", "绝对值不等式"],
+          "difficulty": "★★☆"
+        },
+        {
+          "id": "02",
+          "filename": "02-sequence-function-limit.md",
+          "title": "序列极限 → 函数极限",
+          "key_theorems": ["Heine归结原理", "Cauchy收敛准则", "Bolzano-Weierstrass"],
+          "prerequisites": ["序列极限", "区间套定理"],
+          "difficulty": "★★★"
+        },
+        {
+          "id": "03",
+          "filename": "03-continuity-equicontinuity.md",
+          "title": "连续性 → 一致连续性 → 等度连续性",
+          "key_theorems": ["Cantor定理", "Arzelà-Ascoli定理"],
+          "prerequisites": ["紧致性", "Bolzano-Weierstrass"],
+          "difficulty": "★★★"
+        }
+      ]
+    },
+    {
+      "name": "微分学",
+      "count": 4,
+      "files": [
+        {
+          "id": "04",
+          "filename": "04-derivative-mean-value.md",
+          "title": "导数定义 → 中值定理家族",
+          "key_theorems": ["Fermat定理", "Rolle定理", "Lagrange MVT", "Cauchy MVT", "L'Hôpital法则"],
+          "prerequisites": ["导数定义", "极值定理"],
+          "difficulty": "★★☆"
+        },
+        {
+          "id": "05",
+          "filename": "05-partial-derivative-chain-rule.md",
+          "title": "偏导数 → 可微性 → 链式法则",
+          "key_theorems": ["多元可微性", "链式法则", "梯度与方向导数"],
+          "prerequisites": ["偏导数", "线性代数基础"],
+          "difficulty": "★★☆"
+        },
+        {
+          "id": "06",
+          "filename": "06-taylor-expansion.md",
+          "title": "泰勒展开推导树",
+          "key_theorems": ["Taylor定理", "各种余项形式"],
+          "prerequisites": ["Cauchy MVT", "归纳法"],
+          "difficulty": "★★☆"
+        },
+        {
+          "id": "07",
+          "filename": "07-implicit-function-theorem.md",
+          "title": "隐函数定理证明树",
+          "key_theorems": ["Banach不动点", "反函数定理", "隐函数定理"],
+          "prerequisites": ["压缩映射", "Jacobi行列式"],
+          "difficulty": "★★★"
+        }
+      ]
+    },
+    {
+      "name": "积分学",
+      "count": 4,
+      "files": [
+        {
+          "id": "08",
+          "filename": "08-riemann-lebesgue.md",
+          "title": "黎曼积分 → 勒贝格积分",
+          "key_theorems": ["Lebesgue判别法", "单调收敛定理", "控制收敛定理"],
+          "prerequisites": ["黎曼积分", "测度论基础"],
+          "difficulty": "★★★"
+        },
+        {
+          "id": "09",
+          "filename": "09-fundamental-calculus-theorem.md",
+          "title": "微积分基本定理推导",
+          "key_theorems": ["第一基本定理", "Newton-Leibniz公式"],
+          "prerequisites": ["连续函数", "原函数"],
+          "difficulty": "★★☆"
+        },
+        {
+          "id": "10",
+          "filename": "10-fubini-theorem.md",
+          "title": "Fubini定理证明链",
+          "key_theorems": ["Tonelli定理", "Fubini定理"],
+          "prerequisites": ["乘积测度", "单调类定理"],
+          "difficulty": "★★★"
+        },
+        {
+          "id": "11",
+          "filename": "11-change-of-variables.md",
+          "title": "变量替换公式推导",
+          "key_theorems": ["变量替换公式", "Jacobi行列式几何意义"],
+          "prerequisites": ["线性代数", "可微映射"],
+          "difficulty": "★★☆"
+        }
+      ]
+    },
+    {
+      "name": "级数理论",
+      "count": 3,
+      "files": [
+        {
+          "id": "12",
+          "filename": "12-convergence-criteria.md",
+          "title": "收敛判别法决策链",
+          "key_theorems": ["比较判别法", "比值判别法", "根值判别法", "Leibniz判别法"],
+          "prerequisites": ["数列极限", "正项级数"],
+          "difficulty": "★★☆"
+        },
+        {
+          "id": "13",
+          "filename": "13-power-series.md",
+          "title": "幂级数性质推导",
+          "key_theorems": ["Cauchy-Hadamard", "Abel定理", "逐项运算"],
+          "prerequisites": ["函数项级数", "一致收敛"],
+          "difficulty": "★★☆"
+        },
+        {
+          "id": "14",
+          "filename": "14-fourier-series.md",
+          "title": "傅里叶级数收敛性",
+          "key_theorems": ["Riemann-Lebesgue引理", "Dirichlet核", "Parseval等式"],
+          "prerequisites": ["正交函数系", "L²空间"],
+          "difficulty": "★★★"
+        }
+      ]
+    }
+  ],
+  "total_files": 14,
+  "format": "Markdown + Mermaid",
+  "dependencies": {
+    "core": ["实数完备性公理", "集合论", "逻辑基础"],
+    "analysis": ["极限理论", "连续性", "微分", "积分", "级数"]
+  }
+}

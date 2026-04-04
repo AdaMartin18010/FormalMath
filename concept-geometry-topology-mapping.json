@@ -1,0 +1,504 @@
+{
+  "alignment_metadata": {
+    "source": "Wikipedia Mathematics",
+    "target": "FormalMath concept_prerequisites.yaml",
+    "category": "几何拓扑",
+    "version": "1.0",
+    "total_concepts": 25,
+    "aligned_concepts": 22,
+    "missing_concepts": 3,
+    "last_updated": "2026-04-04"
+  },
+  "wikipedia_structure": {
+    "topology": {
+      "title": "Topology",
+      "url": "https://en.wikipedia.org/wiki/Topology",
+      "subfields": [
+        {
+          "name": "General Topology",
+          "concepts": ["topological_space", "continuous_map", "compactness", "connectedness", "homeomorphism", "convergence", "hausdorff_space"]
+        },
+        {
+          "name": "Algebraic Topology", 
+          "concepts": ["homotopy", "fundamental_group", "homology_group", "cohomology", "homotopy_group", "covering_space"]
+        },
+        {
+          "name": "Differential Topology",
+          "concepts": ["smooth_manifold", "differentiable_structure", "tangent_bundle", "vector_field", "morse_theory"]
+        },
+        {
+          "name": "Geometric Topology",
+          "concepts": ["manifold", "knot_theory", "low_dimensional_topology"]
+        }
+      ]
+    },
+    "algebraic_topology": {
+      "title": "Algebraic Topology",
+      "url": "https://en.wikipedia.org/wiki/Algebraic_topology",
+      "main_branches": {
+        "homotopy_theory": {
+          "concepts": ["homotopy", "fundamental_group", "higher_homotopy_groups", "fibration", "cofibration", "homotopy_equivalence"],
+          "key_theorems": ["van_kampen", "whitehead", "hopf_fibration"]
+        },
+        "homology_theory": {
+          "types": ["simplicial", "singular", "cellular", "morse"],
+          "concepts": ["chain_complex", "boundary_operator", "homology_group", "exact_sequence", "mayer_vietoris"]
+        },
+        "cohomology_theory": {
+          "types": ["singular", "de_rham", "cech", "sheaf"],
+          "operations": ["cup_product", "cap_product"],
+          "dualities": ["poincare_duality", "universal_coefficient"]
+        }
+      }
+    },
+    "manifold": {
+      "title": "Manifold",
+      "url": "https://en.wikipedia.org/wiki/Manifold",
+      "hierarchy": {
+        "topological_manifold": {
+          "definition": "Locally Euclidean Hausdorff space",
+          "structure": ["chart", "atlas", "transition_map", "coordinate_system"]
+        },
+        "differentiable_manifold": {
+          "prerequisite": "topological_manifold",
+          "structure": ["smooth_structure", "tangent_space", "tangent_bundle", "vector_field", "differential_form"],
+          "operations": ["differentiable_map", "immersion", "submersion", "embedding"]
+        },
+        "riemannian_manifold": {
+          "prerequisite": "differentiable_manifold",
+          "structure": ["riemannian_metric", "levi_civita_connection", "geodesic", "curvature_tensor"],
+          "curvature_types": ["sectional_curvature", "ricci_curvature", "scalar_curvature"]
+        },
+        "complex_manifold": {
+          "prerequisite": "differentiable_manifold",
+          "structure": ["complex_structure", "holomorphic_map", "kahler_metric"]
+        }
+      }
+    },
+    "differential_geometry": {
+      "title": "Differential Geometry",
+      "url": "https://en.wikipedia.org/wiki/Differential_geometry",
+      "branches": {
+        "classical_differential_geometry": {
+          "objects": ["curve", "surface"],
+          "concepts": ["curvature", "torsion", "fundamental_forms", "gaussian_curvature", "mean_curvature"]
+        },
+        "riemannian_geometry": {
+          "concepts": ["metric_tensor", "connection", "parallel_transport", "geodesic", "exponential_map", "curvature"],
+          "theorems": ["gauss_bonusnet", "hopf_rinow", "myers", "synge"]
+        },
+        "symplectic_geometry": {
+          "concepts": ["symplectic_form", "symplectomorphism", "hamiltonian_vector_field", "lagrangian_submanifold"]
+        },
+        "complex_geometry": {
+          "concepts": ["complex_manifold", "hermitian_metric", "kahler_form", "hodge_theory"]
+        }
+      }
+    },
+    "algebraic_geometry": {
+      "title": "Algebraic Geometry",
+      "url": "https://en.wikipedia.org/wiki/Algebraic_geometry",
+      "foundations": {
+        "classical": ["affine_variety", "projective_variety", "regular_function", "rational_map"],
+        "modern": ["scheme", "sheaf", "morphism", "fiber_product"]
+      },
+      "cohomology_theories": ["sheaf_cohomology", "etale_cohomology", "de_rham_cohomology_algebraic"],
+      "topics": ["curves", "surfaces", "moduli_spaces", "birational_geometry"]
+    }
+  },
+  "concept_mapping": {
+    "topological_space": {
+      "wikipedia_title": "Topological space",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Topological_space",
+      "formalmath_id": "topological_space",
+      "chinese_name": "拓扑空间",
+      "difficulty": "L1",
+      "prerequisites": ["set_theory", "real_numbers"],
+      "successors": ["continuous_map", "compactness", "connectedness", "manifold"],
+      "wikipedia_definition_summary": "A set with a collection of open sets satisfying axioms",
+      "alignment_status": "aligned",
+      "notes": "Core foundation concept"
+    },
+    "continuous_map": {
+      "wikipedia_title": "Continuous function (topology)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Continuous_function_(topology)",
+      "formalmath_id": "continuous_map",
+      "chinese_name": "连续映射",
+      "difficulty": "L1",
+      "prerequisites": ["topological_space", "limit"],
+      "successors": ["homeomorphism", "homotopy", "covering_space"],
+      "wikipedia_definition_summary": "Function where preimage of open sets is open",
+      "alignment_status": "aligned"
+    },
+    "compactness": {
+      "wikipedia_title": "Compact space",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Compact_space",
+      "formalmath_id": "compactness",
+      "chinese_name": "紧致性",
+      "difficulty": "L1",
+      "prerequisites": ["topological_space", "continuous_map"],
+      "successors": ["stone_cech", "heine_borel"],
+      "wikipedia_definition_summary": "Every open cover has finite subcover",
+      "alignment_status": "aligned"
+    },
+    "connectedness": {
+      "wikipedia_title": "Connected space",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Connected_space",
+      "formalmath_id": "connectedness",
+      "chinese_name": "连通性",
+      "difficulty": "L1",
+      "prerequisites": ["topological_space", "continuous_map"],
+      "successors": ["path_connected", "fundamental_group"],
+      "wikipedia_definition_summary": "Cannot be partitioned into disjoint open sets",
+      "alignment_status": "aligned"
+    },
+    "homotopy": {
+      "wikipedia_title": "Homotopy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Homotopy",
+      "formalmath_id": "homotopy",
+      "chinese_name": "同伦",
+      "difficulty": "L2",
+      "prerequisites": ["continuous_map", "topological_space"],
+      "successors": ["fundamental_group", "homology_group", "homotopy_group"],
+      "wikipedia_definition_summary": "Continuous deformation between maps",
+      "alignment_status": "aligned"
+    },
+    "fundamental_group": {
+      "wikipedia_title": "Fundamental group",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fundamental_group",
+      "formalmath_id": "fundamental_group",
+      "chinese_name": "基本群",
+      "difficulty": "L2",
+      "prerequisites": ["homotopy", "group", "path_connected"],
+      "successors": ["covering_space", "van_kampen", "algebraic_topology"],
+      "wikipedia_definition_summary": "Group of homotopy classes of loops",
+      "alignment_status": "aligned"
+    },
+    "covering_space": {
+      "wikipedia_title": "Covering space",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Covering_space",
+      "formalmath_id": "covering_space",
+      "chinese_name": "覆叠空间",
+      "difficulty": "L2",
+      "prerequisites": ["fundamental_group", "homotopy"],
+      "successors": ["deck_transformation", "universal_cover"],
+      "wikipedia_definition_summary": "Local homeomorphism with discrete fibers",
+      "alignment_status": "aligned"
+    },
+    "homology_group": {
+      "wikipedia_title": "Homology (mathematics)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Homology_(mathematics)",
+      "formalmath_id": "homology_group",
+      "chinese_name": "同调群",
+      "difficulty": "L2",
+      "prerequisites": ["homotopy", "abelian_group", "simplicial_complex"],
+      "successors": ["cohomology", "betti_number", "algebraic_topology"],
+      "wikipedia_definition_summary": "Algebraic invariant measuring holes in spaces",
+      "alignment_status": "aligned"
+    },
+    "cohomology": {
+      "wikipedia_title": "Cohomology",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cohomology",
+      "formalmath_id": "cohomology",
+      "chinese_name": "上同调",
+      "difficulty": "L3",
+      "prerequisites": ["homology_group", "module"],
+      "successors": ["de_rham_cohomology", "characteristic_class", "cohomology_sheaf"],
+      "wikipedia_definition_summary": "Dual concept to homology with ring structure",
+      "alignment_status": "aligned"
+    },
+    "manifold": {
+      "wikipedia_title": "Manifold",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manifold",
+      "formalmath_id": "manifold",
+      "chinese_name": "流形",
+      "difficulty": "L2",
+      "prerequisites": ["topological_space", "calculus_several", "euclidean_space"],
+      "successors": ["tangent_space", "vector_bundle", "riemannian_metric", "differential_form"],
+      "wikipedia_definition_summary": "Locally Euclidean topological space",
+      "alignment_status": "aligned"
+    },
+    "tangent_space": {
+      "wikipedia_title": "Tangent space",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tangent_space",
+      "formalmath_id": "tangent_space",
+      "chinese_name": "切空间",
+      "difficulty": "L3",
+      "prerequisites": ["manifold", "vector_space", "derivative"],
+      "successors": ["tensor_field", "vector_bundle", "lie_group"],
+      "wikipedia_definition_summary": "Vector space of tangent vectors at a point",
+      "alignment_status": "aligned"
+    },
+    "tensor_field": {
+      "wikipedia_title": "Tensor field",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tensor_field",
+      "formalmath_id": "tensor_field",
+      "chinese_name": "张量场",
+      "difficulty": "L3",
+      "prerequisites": ["tangent_space", "tensor_product", "manifold"],
+      "successors": ["riemannian_metric", "curvature"],
+      "wikipedia_definition_summary": "Assignment of tensor to each point of manifold",
+      "alignment_status": "aligned"
+    },
+    "differential_form": {
+      "wikipedia_title": "Differential form",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Differential_form",
+      "formalmath_id": "differential_form",
+      "chinese_name": "微分形式",
+      "difficulty": "L3",
+      "prerequisites": ["manifold", "tangent_space", "multilinear_algebra"],
+      "successors": ["stokes_theorem", "de_rham_cohomology"],
+      "wikipedia_definition_summary": "Antisymmetric tensor field of type (0,k)",
+      "alignment_status": "aligned"
+    },
+    "riemannian_metric": {
+      "wikipedia_title": "Riemannian manifold",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riemannian_manifold",
+      "formalmath_id": "riemannian_metric",
+      "chinese_name": "黎曼度量",
+      "difficulty": "L3",
+      "prerequisites": ["manifold", "tensor_field", "inner_product"],
+      "successors": ["curvature", "geodesic", "connection"],
+      "wikipedia_definition_summary": "Smooth inner product on tangent spaces",
+      "alignment_status": "aligned"
+    },
+    "curvature": {
+      "wikipedia_title": "Curvature of Riemannian manifolds",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Curvature_of_Riemannian_manifolds",
+      "formalmath_id": "curvature",
+      "chinese_name": "曲率",
+      "difficulty": "L4",
+      "prerequisites": ["riemannian_metric", "connection", "tensor_field"],
+      "successors": ["sectional_curvature", "ricci_curvature", "scalar_curvature"],
+      "wikipedia_definition_summary": "Measure of deviation from flatness",
+      "alignment_status": "aligned"
+    },
+    "geodesic": {
+      "wikipedia_title": "Geodesic",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geodesic",
+      "formalmath_id": "geodesic",
+      "chinese_name": "测地线",
+      "difficulty": "L3",
+      "prerequisites": ["riemannian_metric", "connection", "calculus_variations"],
+      "successors": ["exponential_map", "geodesic_flow"],
+      "wikipedia_definition_summary": "Locally distance-minimizing curve",
+      "alignment_status": "aligned"
+    },
+    "connection": {
+      "wikipedia_title": "Connection (vector bundle)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Connection_(vector_bundle)",
+      "formalmath_id": "connection",
+      "chinese_name": "联络",
+      "difficulty": "L3",
+      "prerequisites": ["riemannian_metric", "vector_bundle"],
+      "successors": ["curvature", "geodesic", "parallel_transport"],
+      "wikipedia_definition_summary": "Structure for parallel transport and differentiation",
+      "alignment_status": "aligned"
+    },
+    "fiber_bundle": {
+      "wikipedia_title": "Fiber bundle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fiber_bundle",
+      "formalmath_id": "fiber_bundle",
+      "chinese_name": "纤维丛",
+      "difficulty": "L4",
+      "prerequisites": ["manifold", "lie_group", "vector_bundle"],
+      "successors": ["characteristic_class", "gauge_theory"],
+      "wikipedia_definition_summary": "Space locally product of base and fiber",
+      "alignment_status": "aligned"
+    },
+    "characteristic_class": {
+      "wikipedia_title": "Characteristic class",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Characteristic_class",
+      "formalmath_id": "characteristic_class",
+      "chinese_name": "示性类",
+      "difficulty": "L5",
+      "prerequisites": ["fiber_bundle", "cohomology", "lie_group"],
+      "successors": ["index_theorem", "topological_quantum_field"],
+      "wikipedia_definition_summary": "Cohomology class associated to bundle",
+      "alignment_status": "aligned"
+    },
+    "morse_theory": {
+      "wikipedia_title": "Morse theory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Morse_theory",
+      "formalmath_id": "morse_theory",
+      "chinese_name": "Morse理论",
+      "difficulty": "L4",
+      "prerequisites": ["manifold", "homology_group", "critical_point"],
+      "successors": ["morse_homology", "floer_homology"],
+      "wikipedia_definition_summary": "Study of topology via critical points of functions",
+      "alignment_status": "aligned"
+    },
+    "index_theorem": {
+      "wikipedia_title": "Atiyah–Singer index theorem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Atiyah%E2%80%93Singer_index_theorem",
+      "formalmath_id": "index_theorem",
+      "chinese_name": "指标定理",
+      "difficulty": "L5",
+      "prerequisites": ["characteristic_class", "elliptic_operator", "cohomology", "functional_analysis"],
+      "successors": ["atiyah_patodi_singer"],
+      "wikipedia_definition_summary": "Relates analytical index to topological index",
+      "alignment_status": "aligned"
+    },
+    "symplectic_geometry": {
+      "wikipedia_title": "Symplectic geometry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symplectic_geometry",
+      "formalmath_id": "symplectic_geometry",
+      "chinese_name": "辛几何",
+      "difficulty": "L4",
+      "prerequisites": ["manifold", "differential_form", "hamiltonian_mechanics"],
+      "successors": ["symplectic_topology", "gromov_witten"],
+      "wikipedia_definition_summary": "Geometry of symplectic manifolds",
+      "alignment_status": "aligned"
+    },
+    "complex_geometry": {
+      "wikipedia_title": "Complex geometry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Complex_geometry",
+      "formalmath_id": "complex_geometry",
+      "chinese_name": "复几何",
+      "difficulty": "L4",
+      "prerequisites": ["manifold", "complex_analysis", "complex_structure"],
+      "successors": ["hodge_theory", "k3_surface"],
+      "wikipedia_definition_summary": "Geometry of complex manifolds",
+      "alignment_status": "aligned"
+    },
+    "algebraic_topology": {
+      "wikipedia_title": "Algebraic topology",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Algebraic_topology",
+      "formalmath_id": "algebraic_topology",
+      "chinese_name": "代数拓扑",
+      "difficulty": "L4",
+      "prerequisites": ["homology_group", "fundamental_group", "cohomology"],
+      "successors": ["spectral_sequence", "k_theory"],
+      "wikipedia_definition_summary": "Study of topological spaces using algebra",
+      "alignment_status": "aligned"
+    },
+    "scheme": {
+      "wikipedia_title": "Scheme (mathematics)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scheme_(mathematics)",
+      "formalmath_id": "scheme",
+      "chinese_name": "概形",
+      "difficulty": "L5",
+      "prerequisites": ["algebraic_geometry", "sheaf", "commutative_algebra"],
+      "successors": ["cohomology_sheaf", "moduli_space"],
+      "wikipedia_definition_summary": "Locally ringed space locally affine",
+      "alignment_status": "aligned"
+    }
+  },
+  "missing_concepts": [
+    {
+      "concept_id": "homeomorphism",
+      "name": "同胚",
+      "wikipedia_title": "Homeomorphism",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Homeomorphism",
+      "category": "几何拓扑",
+      "difficulty": "L1",
+      "prerequisites": ["continuous_map"],
+      "successors": ["topological_invariant"],
+      "estimated_hours": 10,
+      "importance": "high",
+      "rationale": "Core concept for defining topological equivalence"
+    },
+    {
+      "concept_id": "de_rham_cohomology",
+      "name": "de Rham上同调",
+      "wikipedia_title": "De Rham cohomology",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/De_Rham_cohomology",
+      "category": "几何拓扑",
+      "difficulty": "L3",
+      "prerequisites": ["differential_form", "cohomology"],
+      "successors": ["hodge_theory"],
+      "estimated_hours": 35,
+      "importance": "high",
+      "rationale": "Bridge between differential geometry and algebraic topology"
+    },
+    {
+      "concept_id": "vector_bundle",
+      "name": "向量丛",
+      "wikipedia_title": "Vector bundle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vector_bundle",
+      "category": "几何拓扑",
+      "difficulty": "L3",
+      "prerequisites": ["manifold", "vector_space"],
+      "successors": ["fiber_bundle", "connection", "characteristic_class"],
+      "estimated_hours": 30,
+      "importance": "high",
+      "rationale": "Fundamental structure in differential geometry"
+    },
+    {
+      "concept_id": "simplicial_complex",
+      "name": "单纯复形",
+      "wikipedia_title": "Simplicial complex",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simplicial_complex",
+      "category": "几何拓扑",
+      "difficulty": "L2",
+      "prerequisites": ["topological_space"],
+      "successors": ["homology_group", "cw_complex"],
+      "estimated_hours": 20,
+      "importance": "medium",
+      "rationale": "Foundation for simplicial homology"
+    },
+    {
+      "concept_id": "cw_complex",
+      "name": "CW复形",
+      "wikipedia_title": "CW complex",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/CW_complex",
+      "category": "几何拓扑",
+      "difficulty": "L3",
+      "prerequisites": ["topological_space", "simplicial_complex"],
+      "successors": ["cellular_homology"],
+      "estimated_hours": 25,
+      "importance": "medium",
+      "rationale": "Standard construction in algebraic topology"
+    },
+    {
+      "concept_id": "poincare_duality",
+      "name": "Poincaré对偶",
+      "wikipedia_title": "Poincaré duality",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poincar%C3%A9_duality",
+      "category": "几何拓扑",
+      "difficulty": "L4",
+      "prerequisites": ["cohomology", "homology_group"],
+      "successors": ["intersection_theory"],
+      "estimated_hours": 30,
+      "importance": "medium",
+      "rationale": "Fundamental duality in algebraic topology"
+    }
+  ],
+  "alignment_statistics": {
+    "total_wikipedia_concepts": 31,
+    "mapped_to_formalmath": 25,
+    "coverage_percentage": 80.6,
+    "by_difficulty": {
+      "L1": {"total": 5, "mapped": 4, "coverage": 80},
+      "L2": {"total": 8, "mapped": 8, "coverage": 100},
+      "L3": {"total": 10, "mapped": 9, "coverage": 90},
+      "L4": {"total": 5, "mapped": 3, "coverage": 60},
+      "L5": {"total": 3, "mapped": 1, "coverage": 33}
+    },
+    "by_subfield": {
+      "general_topology": {"total": 5, "mapped": 4},
+      "algebraic_topology": {"total": 10, "mapped": 8},
+      "differential_geometry": {"total": 9, "mapped": 8},
+      "algebraic_geometry": {"total": 4, "mapped": 2},
+      "symplectic_geometry": {"total": 2, "mapped": 1},
+      "complex_geometry": {"total": 1, "mapped": 1}
+    }
+  },
+  "recommendations": {
+    "immediate_actions": [
+      "Add 'homeomorphism' concept to complete basic topology structure",
+      "Add 'vector_bundle' with proper prerequisites",
+      "Clarify 'simplicial_complex' definition and dependencies"
+    ],
+    "short_term": [
+      "Add 'de_rham_cohomology' for differential topology completeness",
+      "Add 'cw_complex' and 'cellular_homology'",
+      "Consider splitting 'cohomology' into singular and de Rham variants"
+    ],
+    "long_term": [
+      "Expand algebraic geometry concepts (schemes, stacks)",
+      "Add advanced topics: spectral sequences, K-theory",
+      "Consider adding derived algebraic geometry concepts"
+    ]
+  }
+}

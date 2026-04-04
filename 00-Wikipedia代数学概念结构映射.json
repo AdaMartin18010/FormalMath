@@ -1,0 +1,255 @@
+{
+  "version": "1.0",
+  "created": "2026-04-04",
+  "description": "FormalMath与Wikipedia代数学概念结构映射",
+  "alignment_metadata": {
+    "source": "Wikipedia Mathematics",
+    "target": "FormalMath Concept System",
+    "domain": "Abstract Algebra",
+    "entries_analyzed": 9,
+    "concepts_mapped": 35
+  },
+  "wikipedia_entries": {
+    "abstract_algebra": {
+      "title": "Abstract Algebra",
+      "url": "https://en.wikipedia.org/wiki/Abstract_algebra",
+      "msc_class": "00A99",
+      "concepts": [
+        {"name": "Group", "formalmath_id": "C.CORE.008", "msc": "20A05"},
+        {"name": "Ring", "formalmath_id": "C.CORE.009", "msc": "13A99"},
+        {"name": "Field", "formalmath_id": "C.CORE.010", "msc": "12F99"},
+        {"name": "Module", "formalmath_id": "C.CORE.013", "msc": "13C99"}
+      ]
+    },
+    "group_theory": {
+      "title": "Group Theory",
+      "url": "https://en.wikipedia.org/wiki/Group_theory",
+      "msc_class": "20-XX",
+      "concepts": [
+        {"name": "Group", "formalmath_id": "C.CORE.008", "msc": "20A05"},
+        {"name": "Subgroup", "formalmath_id": "C.CORE.008.SUB", "msc": "20A05"},
+        {"name": "Normal Subgroup", "formalmath_id": "C.CORE.008.NORMAL", "msc": "20A05"},
+        {"name": "Quotient Group", "formalmath_id": "C.CORE.008.QUOTIENT", "msc": "20A05"},
+        {"name": "Group Homomorphism", "formalmath_id": "C.CORE.008.HOMO", "msc": "20A05"},
+        {"name": "Lagrange's Theorem", "formalmath_id": "THM.CORE.008.001", "msc": "20D99", "type": "theorem"},
+        {"name": "Sylow Theorems", "formalmath_id": "THM.CORE.008.002", "msc": "20D20", "type": "theorem"}
+      ]
+    },
+    "ring_theory": {
+      "title": "Ring Theory",
+      "url": "https://en.wikipedia.org/wiki/Ring_theory",
+      "msc_class": "13-XX",
+      "concepts": [
+        {"name": "Ring", "formalmath_id": "C.CORE.009", "msc": "13A99"},
+        {"name": "Ideal", "formalmath_id": "C.CORE.009.IDEAL", "msc": "13A15"},
+        {"name": "Quotient Ring", "formalmath_id": "C.CORE.009.QUOTIENT", "msc": "13A15"},
+        {"name": "Commutative Ring", "formalmath_id": "C.CORE.009.COMM", "msc": "13A99"},
+        {"name": "Noetherian Ring", "formalmath_id": "C.CORE.009.NOETHER", "msc": "13E05"},
+        {"name": "Integral Domain", "formalmath_id": "C.CORE.009.DOMAIN", "msc": "13G05"},
+        {"name": "Chinese Remainder Theorem", "formalmath_id": "THM.CORE.009.001", "msc": "13A15", "type": "theorem"},
+        {"name": "Hilbert's Basis Theorem", "formalmath_id": "THM.CORE.009.002", "msc": "13E05", "type": "theorem"}
+      ]
+    },
+    "field_theory": {
+      "title": "Field Theory",
+      "url": "https://en.wikipedia.org/wiki/Field_(mathematics)",
+      "msc_class": "12-XX",
+      "concepts": [
+        {"name": "Field", "formalmath_id": "C.CORE.010", "msc": "12F99"},
+        {"name": "Field Extension", "formalmath_id": "C.CORE.010.EXT", "msc": "12F05"},
+        {"name": "Finite Field", "formalmath_id": "C.CORE.010.FINITE", "msc": "11Txx"},
+        {"name": "Algebraic Closure", "formalmath_id": "C.CORE.010.ALG_CLOSE", "msc": "12F05"},
+        {"name": "Fundamental Theorem of Algebra", "formalmath_id": "THM.CORE.010.001", "msc": "12D99", "type": "theorem"}
+      ]
+    },
+    "linear_algebra": {
+      "title": "Linear Algebra",
+      "url": "https://en.wikipedia.org/wiki/Linear_algebra",
+      "msc_class": "15-XX",
+      "concepts": [
+        {"name": "Vector Space", "formalmath_id": "C.CORE.011", "msc": "15A03"},
+        {"name": "Linear Map", "formalmath_id": "C.CORE.012", "msc": "15A04"},
+        {"name": "Matrix", "formalmath_id": "C.CORE.014", "msc": "15Axx"},
+        {"name": "Basis", "formalmath_id": "C.CORE.011.BASIS", "msc": "15A03"},
+        {"name": "Dimension", "formalmath_id": "C.CORE.011.DIM", "msc": "15A03"},
+        {"name": "Rank-Nullity Theorem", "formalmath_id": "THM.CORE.011.001", "msc": "15A03", "type": "theorem"}
+      ]
+    },
+    "representation_theory": {
+      "title": "Representation Theory",
+      "url": "https://en.wikipedia.org/wiki/Representation_theory",
+      "msc_class": "20Cxx",
+      "concepts": [
+        {"name": "Group Representation", "formalmath_id": "C.CORE.032", "msc": "20C99"},
+        {"name": "Irreducible Representation", "formalmath_id": "C.CORE.032.IRRED", "msc": "20C99"},
+        {"name": "Character Theory", "formalmath_id": "C.CORE.032.CHAR", "msc": "20C99"},
+        {"name": "Maschke's Theorem", "formalmath_id": "THM.CORE.032.001", "msc": "20C99", "type": "theorem"},
+        {"name": "Schur's Lemma", "formalmath_id": "THM.CORE.032.002", "msc": "20C99", "type": "theorem"}
+      ]
+    },
+    "galois_theory": {
+      "title": "Galois Theory",
+      "url": "https://en.wikipedia.org/wiki/Galois_theory",
+      "msc_class": "12F10",
+      "concepts": [
+        {"name": "Galois Group", "formalmath_id": "C.CORE.033.GALOIS_GROUP", "msc": "12F10"},
+        {"name": "Galois Extension", "formalmath_id": "C.CORE.033.GALOIS_EXT", "msc": "12F10"},
+        {"name": "Galois Correspondence", "formalmath_id": "C.CORE.033.CORRESP", "msc": "12F10"},
+        {"name": "Fundamental Theorem of Galois Theory", "formalmath_id": "THM.CORE.033.001", "msc": "12F10", "type": "theorem"},
+        {"name": "Abel-Ruffini Theorem", "formalmath_id": "THM.CORE.033.002", "msc": "12F10", "type": "theorem"}
+      ]
+    },
+    "commutative_algebra": {
+      "title": "Commutative Algebra",
+      "url": "https://en.wikipedia.org/wiki/Commutative_algebra",
+      "msc_class": "13-XX",
+      "concepts": [
+        {"name": "Commutative Ring", "formalmath_id": "C.CORE.009.COMM", "msc": "13A99"},
+        {"name": "Prime Ideal", "formalmath_id": "C.CORE.009.PRIME", "msc": "13A15"},
+        {"name": "Maximal Ideal", "formalmath_id": "C.CORE.009.MAXIMAL", "msc": "13A15"},
+        {"name": "Localization", "formalmath_id": "C.CORE.034.LOCAL", "msc": "13B30"},
+        {"name": "Krull Dimension", "formalmath_id": "C.CORE.034.DIM", "msc": "13C15"}
+      ]
+    },
+    "homological_algebra": {
+      "title": "Homological Algebra",
+      "url": "https://en.wikipedia.org/wiki/Homological_algebra",
+      "msc_class": "18Gxx",
+      "concepts": [
+        {"name": "Chain Complex", "formalmath_id": "C.CORE.025.CHAIN", "msc": "18G35"},
+        {"name": "Homology Group", "formalmath_id": "C.CORE.025", "msc": "55N99"},
+        {"name": "Exact Sequence", "formalmath_id": "C.CORE.025.EXACT", "msc": "18G10"},
+        {"name": "Derived Functor", "formalmath_id": "C.CORE.035.DERIVED", "msc": "18G10"},
+        {"name": "Ext Functor", "formalmath_id": "C.CORE.035.EXT", "msc": "18G15"},
+        {"name": "Tor Functor", "formalmath_id": "C.CORE.035.TOR", "msc": "18G15"}
+      ]
+    }
+  },
+  "concept_hierarchy": {
+    "Abstract Algebra": {
+      "children": ["Group Theory", "Ring Theory", "Field Theory", "Linear Algebra", "Representation Theory", "Homological Algebra"],
+      "level": 0
+    },
+    "Group Theory": {
+      "children": ["Group", "Subgroup", "Normal Subgroup", "Quotient Group"],
+      "level": 1
+    },
+    "Ring Theory": {
+      "children": ["Ring", "Ideal", "Quotient Ring", "Commutative Ring", "Noetherian Ring"],
+      "level": 1
+    },
+    "Field Theory": {
+      "children": ["Field", "Field Extension", "Finite Field", "Galois Theory"],
+      "level": 1
+    },
+    "Linear Algebra": {
+      "children": ["Vector Space", "Linear Map", "Matrix"],
+      "level": 1
+    },
+    "Representation Theory": {
+      "children": ["Group Representation", "Irreducible Representation", "Character Theory"],
+      "level": 1
+    },
+    "Homological Algebra": {
+      "children": ["Chain Complex", "Homology Group", "Exact Sequence", "Derived Functor"],
+      "level": 1
+    }
+  },
+  "concept_dependencies": [
+    {"from": "Ring", "to": "Group", "type": "depends_on"},
+    {"from": "Field", "to": "Ring", "type": "depends_on"},
+    {"from": "Vector Space", "to": "Field", "type": "depends_on"},
+    {"from": "Module", "to": "Ring", "type": "depends_on"},
+    {"from": "Representation", "to": "Group", "type": "depends_on"},
+    {"from": "Representation", "to": "Vector Space", "type": "depends_on"},
+    {"from": "Homology", "to": "Module", "type": "depends_on"},
+    {"from": "Galois Theory", "to": "Field", "type": "depends_on"}
+  ],
+  "coverage_analysis": {
+    "complete": {
+      "concepts": ["C.CORE.008", "C.CORE.009", "C.CORE.010", "C.CORE.011", "C.CORE.032"],
+      "coverage": "90-95%",
+      "description": "概念定义完整，包含三视角分析"
+    },
+    "partial": {
+      "concepts": ["C.CORE.025"],
+      "coverage": "70-80%",
+      "description": "基础内容完整，需补充高级主题"
+    },
+    "missing": {
+      "concepts": ["C.CORE.033", "C.CORE.034", "C.CORE.035"],
+      "coverage": "0%",
+      "description": "需要创建独立概念文档"
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "action": "create_concept",
+      "concept": "Galois Theory",
+      "id": "C.CORE.033",
+      "msc": "12F10",
+      "rationale": "核心代数学分支，与域论紧密相关",
+      "dependencies": ["C.CORE.010"]
+    },
+    {
+      "priority": "high",
+      "action": "create_concept",
+      "concept": "Commutative Algebra",
+      "id": "C.CORE.034",
+      "msc": "13A99",
+      "rationale": "连接环论与代数几何的重要桥梁",
+      "dependencies": ["C.CORE.009"]
+    },
+    {
+      "priority": "medium",
+      "action": "extend_concept",
+      "concept": "Homology",
+      "id": "C.CORE.025",
+      "msc": "55N99",
+      "rationale": "补充导出函子和谱序列内容",
+      "new_sections": ["Derived Functors", "Spectral Sequences", "Sheaf Cohomology"]
+    },
+    {
+      "priority": "medium",
+      "action": "create_concept",
+      "concept": "Homological Algebra",
+      "id": "C.CORE.035",
+      "msc": "18Gxx",
+      "rationale": "系统化同调代数理论体系",
+      "dependencies": ["C.CORE.025", "C.CORE.013"]
+    }
+  ],
+  "msc_alignment": {
+    "20-XX": {
+      "name": "Group Theory and Generalizations",
+      "concepts": ["C.CORE.008"],
+      "coverage": "high"
+    },
+    "13-XX": {
+      "name": "Commutative Algebra",
+      "concepts": ["C.CORE.009"],
+      "coverage": "medium"
+    },
+    "12-XX": {
+      "name": "Field Theory and Polynomials",
+      "concepts": ["C.CORE.010"],
+      "coverage": "medium"
+    },
+    "15-XX": {
+      "name": "Linear and Multilinear Algebra",
+      "concepts": ["C.CORE.011", "C.CORE.012", "C.CORE.014"],
+      "coverage": "high"
+    },
+    "20Cxx": {
+      "name": "Representation Theory of Groups",
+      "concepts": ["C.CORE.032"],
+      "coverage": "high"
+    },
+    "18Gxx": {
+      "name": "Homological Algebra",
+      "concepts": ["C.CORE.025"],
+      "coverage": "medium"
+    }
+  }
+}
