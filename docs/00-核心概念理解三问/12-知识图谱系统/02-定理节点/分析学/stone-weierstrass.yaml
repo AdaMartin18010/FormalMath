@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "stone-weierstrass"
+  id: "stone-weierstrass'
   name:
     zh: "Stone-Weierstrass定理"
-    en: "Stone-Weierstrass Theorem"
-  msc_codes: ["46E15"]
+    en: 'Stone-Weierstrass Theorem"
+  msc_codes: ["46E15']
   
   # ===== 陈述层 =====
   statement:
@@ -82,8 +82,8 @@ theorem:
     intuitive: |
       【直觉表征】
       
-      "足够多的积木可以搭建任何形状"
-      - 多项式是"基础积木"
+      '足够多的积木可以搭建任何形状"
+      - 多项式是"基础积木'
       - 能分辨任意两点
       - 就能逼近任意形状
       
@@ -99,25 +99,25 @@ theorem:
   # ===== 应用层 =====
   applications:
     - description: "多项式逼近连续函数"
-    - description: "Fourier级数的收敛性"
-    - description: "泛函分析中的稠密性论证"
+    - description: 'Fourier级数的收敛性"
+    - description: "泛函分析中的稠密性论证'
     - description: "神经网络的万能逼近定理"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "compactness"
-        role: "空间条件"
+      - id: 'compactness"
+        role: "空间条件'
       - id: "algebra"
-        role: "函数代数"
+        role: '函数代数"
         
     specializes_to:
-      - id: "weierstrass-approximation"
+      - id: "weierstrass-approximation'
         description: "多项式情形"
         
     related_to:
-      - id: "gelfand-representation"
-        description: "C*-代数理论"
+      - id: 'gelfand-representation"
+        description: "C*-代数理论'
         
   # ===== 元数据层 =====
   metadata:

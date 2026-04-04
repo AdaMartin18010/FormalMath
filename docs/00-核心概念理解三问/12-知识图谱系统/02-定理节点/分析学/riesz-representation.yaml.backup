@@ -1,0 +1,124 @@
+# riesz-representation.yaml - Riesz表示定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "riesz-representation"
+  name:
+    zh: "Riesz表示定理"
+    en: "Riesz Representation Theorem"
+  msc_codes: ["46C05", "28C05"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      【Hilbert空间版本】
+      设 H 是Hilbert空间，f: H → ℂ 是有界线性泛函。
+      则存在唯一的 y ∈ H 使得：
+      f(x) = ⟨x, y⟩, ∀x ∈ H
+      
+      而且 ‖f‖ = ‖y‖。
+      
+      【测度版本】
+      设 X 是局部紧Hausdorff空间，φ: C_c(X) → ℂ 是正线性泛函。
+      则存在唯一的Radon测度 μ 使得：
+      φ(f) = ∫f dμ
+      
+    informal: |
+      Hilbert空间的对偶空间就是它自己！
+      
+      每个线性泛函都是"与某个向量做内积"。
+      
+      这是Hilbert空间的核心特征。
+      
+    lean: |
+      -- Riesz表示定理（Hilbert空间）
+      theorem InnerProductSpace.toDualEquiv {E : Type*} 
+        [NormedAddCommGroup E] [InnerProductSpace ℂ E] [CompleteSpace E] :
+        E ≃ₗ[ℂ] NormedSpace.Dual ℂ E
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "正交补 + 投影定理"
+    
+    proof_tree: |
+      Riesz表示定理
+          │
+          ├── f = 0 的情形
+          │   └── 取 y = 0
+          │
+          └── f ≠ 0 的情形
+              ├── ker(f) 是闭超平面
+              ├── ker(f)⊥ 是一维
+              ├── 取 z ∈ ker(f)⊥, z ≠ 0
+              ├── 令 y = (f(z)/‖z‖²)z
+              └── 验证 f(x) = ⟨x,y⟩
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      H* ≅ H（共轭线性同构）
+      
+      f ↦ y，其中 f(·) = ⟨·, y⟩
+      
+      ‖f‖_{H*} = ‖y‖_H
+      
+    geometric: |
+      【几何表征】
+      
+      线性泛函 f 的等值面是超平面：
+      
+          ker(f)
+            ╱╲
+           ╱  ╲
+          ╱ y  ╲ ← y ⊥ ker(f)
+         ╱  ↓   ╲
+        ╱────────╲
+        
+    intuitive: |
+      【直觉表征】
+      
+      在Hilbert空间中：
+      "测量" = "投影"
+      
+      f(x) = x在y方向上的投影（乘以‖y‖）
+      
+    categorical: |
+      【范畴表征】
+      
+      自然同构：H → H*
+      
+      在Hilbert空间范畴中，
+      对偶函子等同于恒等函子
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "Hilbert空间理论的基础"
+    - description: "最小二乘法的理论基础"
+    - description: "量子力学中态与泛函的对应"
+    - description: "偏微分方程的弱解理论"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "hilbert-space"
+      - id: "inner-product"
+        
+    related_to:
+      - id: "hahn-banach"
+        description: "一般赋范空间的情形"
+      - id: "projection-theorem"
+        description: "证明工具"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    history:
+      discoverer: "Frigyes Riesz"
+      year: 1907
+      
+  mathlib:
+    path: "Mathlib.Analysis.InnerProductSpace.Dual"

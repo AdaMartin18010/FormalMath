@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "topological-space"
+  id: "topological-space'
   name:
     zh: "拓扑空间"
-    en: "Topological Space"
-  msc_codes: ["54A05", "54-XX"]
+    en: 'Topological Space"
+  msc_codes: ["54A05', "54-XX"]
   
   # ===== 定义层 =====
   definition:
@@ -24,10 +24,10 @@ concept:
       τ中的元素称为开集。
       
     informal: |
-      拓扑空间是"只关心邻近关系"的空间。
+      拓扑空间是'只关心邻近关系"的空间。
       
       想象一张可以任意拉伸、弯曲但不能撕裂的橡皮膜。
-      拓扑学研究"不撕裂、不粘合"情况下不变的性质。
+      拓扑学研究"不撕裂、不粘合'情况下不变的性质。
       
       拓扑 = 定义什么是"靠近"的结构
       
@@ -42,8 +42,8 @@ concept:
   # ===== 直觉层 =====
   intuition:
     geometric: |
-      【几何直觉】"近"的公理化
-      - 开集 = 不含边界的"区域"
+      【几何直觉】'近"的公理化
+      - 开集 = 不含边界的"区域'
       - 开集告诉我们什么点"靠近"
       - 忘掉距离，只保留邻近性
       
@@ -57,7 +57,7 @@ concept:
       【物理直觉】相空间
       - 物理状态空间的拓扑
       - 动力系统的相空间
-      - "邻近状态"的概念化
+      - '邻近状态"的概念化
       
     categorical: |
       【范畴直觉】Top范畴
@@ -69,7 +69,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: "开集公理可视化"
+    - type: "开集公理可视化'
       content: |
         开集的性质：
         
@@ -92,7 +92,7 @@ concept:
         
         这等价于指定拓扑
         
-    - type: "闭集对偶"
+    - type: '闭集对偶"
       content: |
         等价定义用闭集：
         - 空集和全集是闭集
@@ -104,99 +104,99 @@ concept:
   # ===== 例子层 =====
   examples:
     fundamental:
-      - name: "欧氏空间 ℝⁿ"
+      - name: "欧氏空间 ℝⁿ'
         description: "度量拓扑：开球生成"
-        properties: ["度量化", "Hausdorff", "第二可数"]
+        properties: ['度量化", "Hausdorff', "第二可数"]
         
-      - name: "离散拓扑"
-        description: "每个子集都是开集"
+      - name: '离散拓扑"
+        description: "每个子集都是开集'
         topology: "τ = 𝒫(X)"
-        properties: ["最精细", "离散"]
+        properties: ['最精细", "离散']
         
       - name: "密着拓扑（trivial）"
-        description: "只有空集和全集是开集"
-        topology: "τ = {∅, X}"
+        description: '只有空集和全集是开集"
+        topology: "τ = {∅, X}'
         properties: ["最粗糙"]
         
     metric_spaces:
-      - name: "度量空间诱导拓扑"
-        description: "开球生成的拓扑"
+      - name: '度量空间诱导拓扑"
+        description: "开球生成的拓扑'
         properties: ["可度量化"]
         
-      - name: "ℓ^p 空间"
-        description: "序列空间"
-        properties: ["Banach空间", "无限维"]
+      - name: 'ℓ^p 空间"
+        description: "序列空间'
+        properties: ["Banach空间", '无限维"]
         
     special:
-      - name: "余有限拓扑"
+      - name: "余有限拓扑'
         description: "开集 = 补集有限的集合"
-        properties: ["紧致", "非Hausdorff"]
+        properties: ['紧致", "非Hausdorff']
         
       - name: "Zariski拓扑"
-        description: "代数几何中的拓扑"
-        properties: ["非Hausdorff", "准紧"]
+        description: '代数几何中的拓扑"
+        properties: ["非Hausdorff', "准紧"]
         
-      - name: "序拓扑"
-        description: "全序集上的开区间拓扑"
+      - name: '序拓扑"
+        description: "全序集上的开区间拓扑'
         properties: ["有序"]
         
     pathological:
-      - name: "Sierpiński空间"
-        description: "两点空间{0,1}，开集={∅,{1},{0,1}}"
-        properties: ["非Hausdorff", "分类空间"]
+      - name: 'Sierpiński空间"
+        description: "两点空间{0,1}，开集={∅,{1},{0,1}}'
+        properties: ["非Hausdorff", '分类空间"]
         
-      - name: "长线"
+      - name: "长线'
         description: "比ℝ更长的一维流形"
-        properties: ["非可度量化", "非紧"]
+        properties: ['非可度量化", "非紧']
         
   # ===== 关系层 =====
   relations:
     requires:
       - id: "set"
-        description: "底集"
-      - id: "power-set"
+        description: '底集"
+      - id: "power-set'
         description: "子集族"
         
     generalizes:
-      - id: "metric-space"
-        description: "度量空间诱导拓扑"
+      - id: 'metric-space"
+        description: "度量空间诱导拓扑'
       - id: "normed-space"
-        description: "赋范空间诱导拓扑"
+        description: '赋范空间诱导拓扑"
         
     specialized_by:
-      - id: "hausdorff-space"
+      - id: "hausdorff-space'
         description: "T₂分离公理"
-      - id: "compact-space"
-        description: "紧致空间"
+      - id: 'compact-space"
+        description: "紧致空间'
       - id: "connected-space"
-        description: "连通空间"
-      - id: "manifold"
+        description: '连通空间"
+      - id: "manifold'
         description: "流形是特殊拓扑空间"
         
     related_to:
-      - id: "continuity"
-        description: "连续映射定义"
+      - id: 'continuity"
+        description: "连续映射定义'
       - id: "open-set"
-        description: "开集是基本概念"
-      - id: "closed-set"
+        description: '开集是基本概念"
+      - id: "closed-set'
         description: "闭集是补集"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "tychonoff-theorem"
-      statement: "紧空间的乘积是紧空间"
+    - id: 'tychonoff-theorem"
+      statement: "紧空间的乘积是紧空间'
       importance: 5
       
     - id: "urysohn-lemma"
-      statement: "正规空间中闭集可用连续函数分离"
+      statement: '正规空间中闭集可用连续函数分离"
       importance: 4
       
-    - id: "urysohn-metrization"
+    - id: "urysohn-metrization'
       statement: "正规第二可数空间可度量化"
       importance: 4
       
-    - id: "baire-category"
-      statement: "完备度量空间是Baire空间"
+    - id: 'baire-category"
+      statement: "完备度量空间是Baire空间'
       importance: 4
       
   # ===== 元数据层 =====
@@ -206,41 +206,41 @@ concept:
     
     prerequisites:
       - "set"
-      - "function"
-      - "metric-space"
+      - 'function"
+      - "metric-space'
       
     corequisites:
       - "open-set"
-      - "closed-set"
-      - "continuity"
+      - 'closed-set"
+      - "continuity'
       
     leads_to:
       - "algebraic-topology"
-      - "differential-topology"
-      - "functional-analysis"
+      - 'differential-topology"
+      - "functional-analysis'
       
     history:
       first_appearance: 1906
       context: "Fréchet的抽象空间"
-      axiomatic_form: "Hausdorff 1914"
+      axiomatic_form: 'Hausdorff 1914"
       
     key_figures:
-      - id: "frechet"
+      - id: "frechet'
         contribution: "抽象空间概念"
-      - id: "hausdorff"
-        contribution: "拓扑空间公理化"
+      - id: 'hausdorff"
+        contribution: "拓扑空间公理化'
       - id: "kuratowski"
-        contribution: "闭包公理"
+        contribution: '闭包公理"
         
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.Topology.Basic"
+    path: "Mathlib.Topology.Basic'
     name: "TopologicalSpace"
-    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Basic.html"
-    coverage: "complete"
+    url: 'https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Basic.html"
+    coverage: "complete'
     
     related_definitions:
       - "IsOpen"
-      - "IsClosed"
-      - "Continuous"
+      - 'IsClosed"
+      - "Continuous'
       - "Homeomorph"

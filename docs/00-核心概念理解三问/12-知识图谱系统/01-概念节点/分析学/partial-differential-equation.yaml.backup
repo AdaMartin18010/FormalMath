@@ -1,0 +1,261 @@
+# partial-differential-equation.yaml - 偏微分方程概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-06
+
+concept:
+  id: "partial-differential-equation"
+  name:
+    zh: "偏微分方程"
+    en: "Partial Differential Equation"
+  msc_codes: ["35-XX"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【一般形式】
+      设 Ω ⊆ ℝⁿ 是开集，u: Ω → ℝ 是未知函数。
+      偏微分方程是形如：
+      
+      F(x₁, ..., xₙ, u, ∂u/∂x₁, ..., ∂u/∂xₙ, ∂²u/∂x₁², ..., ∂²u/∂xᵢ∂xⱼ, ...) = 0
+      
+      的方程，其中 F 是给定的函数。
+      
+      【二阶线性PDE标准形式】
+      ∑ᵢⱼ aᵢⱼ(x) ∂²u/∂xᵢ∂xⱼ + ∑ᵢ bᵢ(x) ∂u/∂xᵢ + c(x)u = f(x)
+      
+      【分类】
+      - 椭圆型：特征值全为正（或全为负）
+      - 抛物型：一个特征值为0，其余同号
+      - 双曲型：特征值有正有负
+      
+    informal: |
+      偏微分方程描述多变量函数及其偏导数之间的关系。
+      
+      类比：如果常微分方程(ODE)描述"一个变量的变化"，
+      那么PDE描述"多个变量的变化如何相互影响"。
+      
+      例如：温度分布 u(x,y,t) 满足热传导方程，
+      描述温度在空间(x,y)和时间(t)上的变化规律。
+      
+    lean: |
+      -- PDE的形式化表示（简化版）
+      structure PDE (u : ℝ → ℝ → ℝ) : Prop where
+        equation : ∀ x t, ∂u/∂t x t = α * ∂²u/∂x² x t
+        -- 热传导方程示例
+        
+      -- 更一般的形式需要依赖类型
+      
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】
+      - 椭圆型PDE：描述平衡状态，如静电势分布
+      - 抛物型PDE：描述扩散过程，如热传导
+      - 双曲型PDE：描述波动传播，如声波
+      
+      解的几何意义：
+      - 椭圆型：光滑曲面，满足极大值原理
+      - 抛物型：时间演化曲面，具有光滑化效应
+      - 双曲型：波前传播，保持奇异性
+      
+    algebraic: |
+      【代数直觉】
+      PDE是"多变量函数的代数关系"。
+      
+      类比：ODE是 f'(x) = g(x)，
+      PDE是 ∂u/∂x + ∂u/∂y = f(x,y)。
+      
+      线性PDE：解的线性组合仍是解（叠加原理）
+      非线性PDE：解的结构更复杂
+      
+    physical: |
+      【物理直觉】
+      PDE是自然规律的数学表达：
+      
+      - 波动方程：描述弦振动、声波、光波
+      - 热传导方程：描述温度扩散、粒子扩散
+      - Laplace方程：描述平衡态、稳态
+      - Navier-Stokes：描述流体运动
+      - Schrödinger方程：描述量子力学
+      
+    categorical: |
+      【范畴直觉】
+      PDE的解空间形成范畴：
+      - 对象：解函数
+      - 态射：解之间的变换
+      - 函子：将PDE映射到解空间
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "符号形式"
+      content: |
+        【热传导方程】
+        ∂u/∂t = α ∂²u/∂x²
+        
+        【波动方程】
+        ∂²u/∂t² = c² ∂²u/∂x²
+        
+        【Laplace方程】
+        ∂²u/∂x² + ∂²u/∂y² = 0
+        
+    - type: "物理图示"
+      content: |
+        热传导：热量从高温区流向低温区
+        [高温] ──→ [低温]
+        
+        波动：扰动在介质中传播
+        [扰动源] ──→ [波前] ──→ [传播方向]
+        
+    - type: "数值离散"
+      content: |
+        有限差分：
+        (uᵢⁿ⁺¹ - uᵢⁿ)/Δt = α (uᵢ₊₁ⁿ - 2uᵢⁿ + uᵢ₋₁ⁿ)/(Δx)²
+        
+  # ===== 例子层 =====
+  examples:
+    elliptic:
+      - name: "Laplace方程"
+        equation: "Δu = 0"
+        description: "调和函数，描述稳态"
+        
+      - name: "Poisson方程"
+        equation: "Δu = f"
+        description: "非齐次Laplace方程"
+        
+    parabolic:
+      - name: "热传导方程"
+        equation: "∂u/∂t = αΔu"
+        description: "一维：∂u/∂t = α ∂²u/∂x²"
+        
+      - name: "扩散方程"
+        equation: "∂u/∂t = DΔu"
+        description: "粒子扩散"
+        
+    hyperbolic:
+      - name: "波动方程"
+        equation: "∂²u/∂t² = c²Δu"
+        description: "一维：∂²u/∂t² = c² ∂²u/∂x²"
+        
+      - name: "传输方程"
+        equation: "∂u/∂t + v·∇u = 0"
+        description: "对流传输"
+        
+    nonlinear:
+      - name: "Burgers方程"
+        equation: "∂u/∂t + u ∂u/∂x = ν ∂²u/∂x²"
+        description: "非线性波动"
+        
+      - name: "KdV方程"
+        equation: "∂u/∂t + u ∂u/∂x + ∂³u/∂x³ = 0"
+        description: "孤立波方程"
+        
+    counterexamples:
+      - name: "不适定问题"
+        description: "某些PDE可能无解或不唯一"
+        example: "某些非线性PDE的爆破"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "derivative"
+        description: "需要偏导数概念"
+      - id: "function"
+        description: "多变量函数"
+      - id: "boundary-condition"
+        description: "边界条件"
+        
+    generalizes:
+      - id: "ordinary-differential-equation"
+        description: "ODE是PDE的特例（单变量）"
+        
+    is_a:
+      - id: "differential-equation"
+        description: "PDE是微分方程的一种"
+        
+    specialized_by:
+      - id: "elliptic-pde"
+        description: "椭圆型PDE"
+      - id: "parabolic-pde"
+        description: "抛物型PDE"
+      - id: "hyperbolic-pde"
+        description: "双曲型PDE"
+        
+    related_to:
+      - id: "weak-solution"
+        description: "弱解理论"
+      - id: "sobolev-space"
+        description: "Sobolev空间是弱解的自然空间"
+      - id: "variational-method"
+        description: "变分方法求解PDE"
+      - id: "numerical-method"
+        description: "数值方法求解PDE"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "cauchy-kovalevskaya"
+      statement: "解析PDE的局部解析解存在性"
+      importance: 4
+      
+    - id: "lax-milgram"
+      statement: "椭圆型PDE弱解的存在唯一性"
+      importance: 5
+      
+    - id: "maximum-principle"
+      statement: "椭圆型PDE的极大值原理"
+      importance: 5
+      
+    - id: "energy-estimate"
+      statement: "双曲型PDE的能量估计"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      - "multivariable-calculus"
+      - "derivative"
+      - "integral"
+      - "functional-analysis"
+      
+    corequisites:
+      - "sobolev-space"
+      - "weak-solution"
+      - "boundary-value-problem"
+      
+    leads_to:
+      - "numerical-pde"
+      - "nonlinear-pde"
+      - "stochastic-pde"
+      - "geometric-pde"
+      
+    history:
+      first_appearance: 1747
+      context: "d'Alembert研究弦振动"
+      key_developments:
+        - "Fourier (1822): 热传导方程和Fourier方法"
+        - "Riemann (1860s): 特征方法"
+        - "Hilbert (1900s): 变分方法"
+        - "Sobolev (1930s): Sobolev空间"
+        - "Lax-Milgram (1950s): 弱解理论"
+        
+    key_figures:
+      - id: "dalembert"
+        contribution: "波动方程"
+      - id: "fourier"
+        contribution: "热传导方程、Fourier方法"
+      - id: "laplace"
+        contribution: "Laplace方程"
+      - id: "hilbert"
+        contribution: "变分方法"
+      - id: "sobolev"
+        contribution: "Sobolev空间理论"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Analysis.PDE"
+    name: "PartialDifferentialEquation"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/PDE.html"
+    coverage: "partial"
+    note: "Mathlib中PDE内容较少，主要集中在热方程和波动方程"

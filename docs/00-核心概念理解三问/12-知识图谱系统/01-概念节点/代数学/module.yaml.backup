@@ -1,0 +1,206 @@
+# module.yaml - 模概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "module"
+  name:
+    zh: "模"
+    en: "Module"
+  msc_codes: ["16D-XX", "13C-XX"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 R 是环（有单位元）。左R-模是阿贝尔群 (M, +) 配备标量乘法：
+      · : R × M → M 满足：
+      
+      (M1) r·(m + n) = r·m + r·n     （分配律）
+      (M2) (r + s)·m = r·m + s·m     （分配律）
+      (M3) (rs)·m = r·(s·m)          （结合律）
+      (M4) 1·m = m                   （单位元）
+      
+      对所有 r,s ∈ R, m,n ∈ M 成立。
+      
+    informal: |
+      模是"环上的向量空间"。
+      
+      当R是域时，R-模就是向量空间。
+      当R是ℤ时，ℤ-模就是阿贝尔群。
+      当R是多项式环k[x]时，k[x]-模 ↔ 带线性变换的向量空间。
+      
+      模 = "系数可以是环元素的向量空间"
+      
+    lean: |
+      -- Mathlib定义
+      class Module (R : Type*) (M : Type*) [Semiring R] [AddCommMonoid M] where
+        smul : R → M → M
+        one_smul : ∀ m : M, smul 1 m = m
+        mul_smul : ∀ r s : R, ∀ m : M, smul (r * s) m = smul r (smul s m)
+        smul_add : ∀ r : R, ∀ m n : M, smul r (m + n) = smul r m + smul r n
+        add_smul : ∀ r s : R, ∀ m : M, smul (r + s) m = smul r m + smul s m
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】层的纤维
+      - 向量丛的截面 = C^∞(M)-模
+      - 层论：层的茎是环上的模
+      - 代数几何：凝聚层 ↔ 有限生成模
+      
+    algebraic: |
+      【代数直觉】推广的向量空间
+      - 域上：模 = 向量空间（有基）
+      - PID上：有限生成模有很好的结构定理
+      - 一般环上：模的结构可能很复杂
+      
+    physical: |
+      【物理直觉】表示空间
+      - 李代数的表示 = U(g)-模
+      - 群表示 = 群环k[G]-模
+      
+    categorical: |
+      【范畴直觉】
+      - R-Mod是阿贝尔范畴
+      - 函子Hom和⊗在模上定义
+      - 导出范畴：D(R-Mod)
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "子模格"
+      content: |
+        模M的子模形成格结构：
+        
+        M
+        │
+        ├── N₁ ────┐
+        │          │
+        ├── N₂ ──┬─┤
+        │        │ │
+        └── N₃ ──┴─┘
+        │
+        {0}
+        
+    - type: "生成元表示"
+      content: |
+        M = ⟨m₁, ..., mₙ⟩_R
+        
+        有限生成模：存在有限生成集
+        自由模：有基
+        
+    - type: "正合列"
+      content: |
+        短正合列：0 → N → M → M/N → 0
+        
+        正合列是模论的核心工具
+        
+  # ===== 例子层 =====
+  examples:
+    fundamental:
+      - name: "向量空间"
+        description: "域上的模"
+        properties: ["有基", "自由"]
+        
+      - name: "阿贝尔群"
+        description: "ℤ-模"
+        properties: ["结构定理适用"]
+        
+      - name: "理想"
+        description: "R作为自身的模，理想是子模"
+        properties: ["R-模"]
+        
+    free_modules:
+      - name: "自由模 R^n"
+        description: "有基的模"
+        properties: ["自由", "投射"]
+        
+      - name: "多项式模 R[x]"
+        description: "可列基"
+        properties: ["自由", "无限生成"]
+        
+    non_free:
+      - name: "Z/nZ 作为ℤ-模"
+        description: "挠模"
+        properties: ["非自由", "有限"]
+        
+      - name: "ℚ 作为ℤ-模"
+        description: "可除模"
+        properties: ["非自由", "内射"]
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "ring"
+        description: "标量来自环"
+      - id: "abelian-group"
+        description: "加法结构"
+        
+    generalizes:
+      - id: "vector-space"
+        description: "域上的模是向量空间"
+      - id: "abelian-group"
+        description: "ℤ-模是阿贝尔群"
+        
+    specialized_by:
+      - id: "free-module"
+        description: "有基的模"
+      - id: "projective-module"
+        description: "投射模"
+      - id: "injective-module"
+        description: "内射模"
+      - id: "flat-module"
+        description: "平坦模"
+        
+    related_to:
+      - id: "ideal"
+        description: "理想是R的子模"
+      - id: "tensor-product"
+        description: "模的张量积"
+      - id: "homological-algebra"
+        description: "模范畴上的同调代数"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "structure-theorem-fg-modules-pid"
+      statement: "PID上有限生成模是循环模的直和"
+      importance: 5
+      
+    - id: "nakayama-lemma"
+      statement: "Nakayama引理"
+      importance: 5
+      
+    - id: "krull-schmidt-theorem"
+      statement: "Artin环上的唯一分解"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      - "ring"
+      - "abelian-group"
+      - "vector-space"
+      
+    leads_to:
+      - "homological-algebra"
+      - "representation-theory"
+      - "commutative-algebra"
+      - "algebraic-geometry"
+      
+    history:
+      first_appearance: 1920s
+      context: "Noether的理想论"
+      
+    key_figures:
+      - id: "noether"
+        contribution: "模论基础"
+      - id: "cartan-eilenberg"
+        contribution: "同调代数"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Algebra.Module.Basic"
+    name: "Module"
+    coverage: "complete"

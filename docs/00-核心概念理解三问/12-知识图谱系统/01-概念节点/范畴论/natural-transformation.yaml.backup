@@ -1,0 +1,93 @@
+# natural-transformation.yaml - 自然变换概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "natural-transformation"
+  name:
+    zh: "自然变换"
+    en: "Natural Transformation"
+  msc_codes: ["18A22"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 F, G: C → D 是函子。自然变换 η: F ⟹ G 是：
+      对每个对象 X ∈ C，有态射 ηₓ: F(X) → G(X)
+      
+      满足自然性条件：对任意 f: X → Y，
+      η_Y ∘ F(f) = G(f) ∘ η_X
+      
+      即下图交换：
+          F(X) ──F(f)──→ F(Y)
+           │              │
+          ηₓ            η_Y
+           ↓              ↓
+          G(X) ──G(f)──→ G(Y)
+          
+    informal: |
+      自然变换是"函子之间的映射"。
+      
+      "自然"意味着：
+      - 变换与具体选择无关
+      - 对所有对象一致
+      - 与态射相容
+      
+    lean: |
+      -- 自然变换
+      structure NatTrans (F G : C ⥤ D) where
+        app : ∀ X : C, F.obj X ⟶ G.obj X
+        naturality : ∀ {X Y : C} (f : X ⟶ Y), 
+                     F.map f ≫ app Y = app X ≫ G.map f
+                     
+  # ===== 直觉层 =====
+  intuition:
+    structural: |
+      【结构直觉】一致的映射族
+      - 每个对象处有一个映射
+      - 所有映射"协调一致"
+      - 自然性 = 交换图
+      
+    categorical: |
+      【范畴直觉】函子范畴的态射
+      - 自然变换是[C,D]中的态射
+      - 可以复合（垂直和水平）
+      - 自然同构 = 可逆自然变换
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "恒等自然变换"
+      description: "id_F: F ⟹ F，每个分量是恒等"
+      
+    - name: "行列式"
+      description: "det: GL_n ⟹ (-)ˣ 是自然变换"
+      
+    - name: "双对偶嵌入"
+      description: "V → V** 是自然的"
+      property: "有限维时是同构"
+      
+    - name: "Hurewicz同态"
+      description: "π₁ ⟹ H₁ 的阿贝尔化"
+      
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "yoneda-lemma"
+      statement: "自然变换 ↔ 对象上的元素"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "functor"
+        
+    related_to:
+      - id: "yoneda-lemma"
+      - id: "equivalence-of-categories"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+  mathlib:
+    path: "Mathlib.CategoryTheory.NatTrans"
+    name: "CategoryTheory.NatTrans"

@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "homology"
+  id: "homology'
   name:
     zh: "同调"
-    en: "Homology"
-  msc_codes: ["55N10"]
+    en: 'Homology"
+  msc_codes: ["55N10']
   
   # ===== 定义层 =====
   definition:
@@ -42,7 +42,7 @@ concept:
   intuition:
     geometric: |
       【几何直觉】洞的代数
-      - 闭链（无边界）代表"可能的洞"
+      - 闭链（无边界）代表'可能的洞"
       - 边界（有东西填充）不是真的洞
       - 同调 = 真的洞 = 闭链/边界
       
@@ -54,48 +54,48 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: "点"
+    - name: "点'
       homology: "H₀ ≅ ℤ, Hₙ = 0 (n > 0)"
       
-    - name: "n-球面 Sⁿ"
-      homology: "H₀ ≅ Hₙ ≅ ℤ, 其他为0"
+    - name: 'n-球面 Sⁿ"
+      homology: "H₀ ≅ Hₙ ≅ ℤ, 其他为0'
       
     - name: "环面 T²"
-      homology: "H₀ ≅ ℤ, H₁ ≅ ℤ², H₂ ≅ ℤ"
+      homology: 'H₀ ≅ ℤ, H₁ ≅ ℤ², H₂ ≅ ℤ"
       
-    - name: "实射影平面 ℝP²"
+    - name: "实射影平面 ℝP²'
       homology: "H₀ ≅ ℤ, H₁ ≅ ℤ/2ℤ, H₂ = 0"
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "eilenberg-steenrod"
-      statement: "同调的公理化特征"
+    - id: 'eilenberg-steenrod"
+      statement: "同调的公理化特征'
       
     - id: "mayer-vietoris"
-      statement: "计算并集的同调"
+      statement: '计算并集的同调"
       
-    - id: "hurewicz"
+    - id: "hurewicz'
       statement: "π₁^{ab} ≅ H₁"
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "abelian-group"
-        description: "同调群是阿贝尔群"
+      - id: 'abelian-group"
+        description: "同调群是阿贝尔群'
       - id: "chain-complex"
-        description: "链复形"
+        description: '链复形"
         
     related_to:
-      - id: "fundamental-group"
+      - id: "fundamental-group'
         description: "Hurewicz同态"
-      - id: "cohomology"
-        description: "对偶理论"
+      - id: 'cohomology"
+        description: "对偶理论'
       - id: "de-rham"
-        description: "微分形式同调"
+        description: '微分形式同调"
         
   # ===== 元数据层 =====
   metadata:
     difficulty: 4
     importance: 5
-    prerequisites: ["abelian-group", "topological-space"]
-    leads_to: ["cohomology", "spectral-sequences"]
+    prerequisites: ["abelian-group', "topological-space"]
+    leads_to: ['cohomology", "spectral-sequences"]

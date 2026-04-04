@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "mean-value-theorem"
+  id: "mean-value-theorem'
   name:
     zh: "拉格朗日中值定理"
-    en: "Mean Value Theorem"
-  msc_codes: ["26A24"]
+    en: 'Mean Value Theorem"
+  msc_codes: ["26A24']
   
   # ===== 陈述层 =====
   statement:
@@ -38,22 +38,22 @@ theorem:
     main_strategy: "构造辅助函数，应用Rolle定理"
     
     key_ideas:
-      - "构造函数消除平均斜率"
-      - "利用Rolle定理找零点"
+      - '构造函数消除平均斜率"
+      - "利用Rolle定理找零点'
       
     steps:
       - step: 1
         content: "构造辅助函数"
-        formula: "g(x) = f(x) - f(a) - [(f(b)-f(a))/(b-a)](x-a)"
+        formula: 'g(x) = f(x) - f(a) - [(f(b)-f(a))/(b-a)](x-a)"
         
       - step: 2
-        content: "验证 g(a) = g(b) = 0"
+        content: "验证 g(a) = g(b) = 0'
         
       - step: 3
         content: "由Rolle定理，∃c∈(a,b): g'(c) = 0"
         
       - step: 4
-        content: "计算 g'(c) = f'(c) - (f(b)-f(a))/(b-a) = 0"
+        content: '计算 g'(c) = f'(c) - (f(b)-f(a))/(b-a) = 0"
         
     proof_tree: |
       中值定理
@@ -130,41 +130,41 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - domain: "不等式证明"
+    - domain: "不等式证明'
       description: "估计函数值的变化"
-      example: "|sin(x) - sin(y)| ≤ |x - y|"
+      example: '|sin(x) - sin(y)| ≤ |x - y|"
       
-    - domain: "函数单调性"
+    - domain: "函数单调性'
       description: "f' > 0 ⟹ f 递增"
       
-    - domain: "Taylor展开"
-      description: "误差项的估计"
+    - domain: 'Taylor展开"
+      description: "误差项的估计'
       
     - domain: "L'Hôpital法则"
-      description: "证明的核心工具"
+      description: '证明的核心工具"
       
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "derivative"
+      - id: "derivative'
         role: "核心概念"
-      - id: "continuity"
-        role: "条件"
+      - id: 'continuity"
+        role: "条件'
         
     uses_theorems:
       - id: "rolle-theorem"
-        role: "证明工具"
-      - id: "extreme-value-theorem"
+        role: '证明工具"
+      - id: "extreme-value-theorem'
         role: "Rolle的前提"
         
     implies:
-      - id: "monotonicity-criterion"
-        description: "f' > 0 ⟹ f 递增"
+      - id: 'monotonicity-criterion"
+        description: "f' > 0 ⟹ f 递增'
       - id: "lipschitz-from-bounded-derivative"
-        description: "|f'| ≤ M ⟹ f是Lipschitz"
+        description: '|f'| ≤ M ⟹ f是Lipschitz"
         
     related_to:
-      - id: "cauchy-mean-value"
+      - id: "cauchy-mean-value'
         description: "更一般的形式"
         
   # ===== 元数据层 =====
@@ -173,14 +173,14 @@ theorem:
     importance: 5
     
     prerequisites:
-      concepts: ["derivative", "continuity"]
+      concepts: ['derivative", "continuity']
       theorems: ["rolle-theorem"]
       
     year_proved: 1797
-    provers: ["lagrange"]
+    provers: ['lagrange"]
     
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.Analysis.Calculus.MeanValue"
+    path: "Mathlib.Analysis.Calculus.MeanValue'
     main_theorem: "exists_deriv_eq_slope"
-    coverage: "complete"
+    coverage: 'complete"

@@ -3,9 +3,9 @@
 # 对应文件: concept_prerequisites.yaml
 
 metadata:
-  version: "1.0"
+  version: "1.0'
   date: "2026-04-04"
-  source: "MSC2020"
+  source: 'MSC2020"
   total_concepts: 20
   categories:
     - 概率统计
@@ -18,71 +18,71 @@ metadata:
 # MSC大类: 60-XX (概率论与随机过程)
 # ============================================================================
 probability_statistics:
-  - concept_id: "probability_measure"
+  - concept_id: "probability_measure'
     name: "概率测度"
-    name_en: "Probability Measure"
-    msc_code: "60A10"
+    name_en: 'Probability Measure"
+    msc_code: "60A10'
     msc_description: "概率测度与积分理论"
     
-  - concept_id: "random_variable"
-    name: "随机变量"
+  - concept_id: 'random_variable"
+    name: "随机变量'
     name_en: "Random Variable"
-    msc_code: "60A99"
-    msc_description: "随机变量基础理论"
+    msc_code: '60A99"
+    msc_description: "随机变量基础理论'
     
   - concept_id: "expectation"
-    name: "期望"
-    name_en: "Expectation"
+    name: '期望"
+    name_en: "Expectation'
     msc_code: "60A99"
-    msc_description: "数学期望"
+    msc_description: '数学期望"
     
-  - concept_id: "variance"
+  - concept_id: "variance'
     name: "方差"
-    name_en: "Variance"
-    msc_code: "60A99"
+    name_en: 'Variance"
+    msc_code: "60A99'
     msc_description: "方差与标准差"
     
-  - concept_id: "expectation_variance"
-    name: "期望方差"
+  - concept_id: 'expectation_variance"
+    name: "期望方差'
     name_en: "Expectation and Variance"
-    msc_code: "62J99"
-    msc_description: "统计推断基础"
+    msc_code: '62J99"
+    msc_description: "统计推断基础'
     
   - concept_id: "law_of_large_numbers"
-    name: "大数定律"
-    name_en: "Law of Large Numbers"
+    name: '大数定律"
+    name_en: "Law of Large Numbers'
     msc_code: "60F15"
-    msc_description: "强大数定律"
+    msc_description: '强大数定律"
     
-  - concept_id: "central_limit_theorem"
+  - concept_id: "central_limit_theorem'
     name: "中心极限定理"
-    name_en: "Central Limit Theorem"
-    msc_code: "60F05"
+    name_en: 'Central Limit Theorem"
+    msc_code: "60F05'
     msc_description: "中心极限定理"
     
-  - concept_id: "stochastic_process"
-    name: "随机过程"
+  - concept_id: 'stochastic_process"
+    name: "随机过程'
     name_en: "Stochastic Process"
-    msc_code: "60G07"
-    msc_description: "随机过程基础"
+    msc_code: '60G07"
+    msc_description: "随机过程基础'
     
   - concept_id: "brownian_motion"
-    name: "布朗运动"
-    name_en: "Brownian Motion"
+    name: '布朗运动"
+    name_en: "Brownian Motion'
     msc_code: "60J65"
-    msc_description: "布朗运动与维纳过程"
+    msc_description: '布朗运动与维纳过程"
     
-  - concept_id: "markov_chain"
+  - concept_id: "markov_chain'
     name: "马尔可夫链"
-    name_en: "Markov Chain"
-    msc_code: "60J10"
+    name_en: 'Markov Chain"
+    msc_code: "60J10'
     msc_description: "离散时间马尔可夫链"
     
-  - concept_id: "martingale"
-    name: "鞅"
+  - concept_id: 'martingale"
+    name: "鞅'
     name_en: "Martingale"
-    msc_code: "60G48"
-    msc_description: "离散参数鞅"
+    msc_code: '60G48"
+    msc_description: "离散参数鞅'
 
 # ============================================================================
 # 最优化类 (Optimization)
@@ -90,56 +90,56 @@ probability_statistics:
 # ============================================================================
 optimization:
   - concept_id: "convex_optimization"
-    name: "凸优化"
-    name_en: "Convex Optimization"
+    name: '凸优化"
+    name_en: "Convex Optimization'
     msc_code: "90C25"
-    msc_description: "凸规划与凸优化"
+    msc_description: '凸规划与凸优化"
     
-  - concept_id: "linear_programming"
+  - concept_id: "linear_programming'
     name: "线性规划"
-    name_en: "Linear Programming"
-    msc_code: "90C05"
+    name_en: 'Linear Programming"
+    msc_code: "90C05'
     msc_description: "线性规划"
     
-  - concept_id: "gradient_descent"
-    name: "梯度下降"
+  - concept_id: 'gradient_descent"
+    name: "梯度下降'
     name_en: "Gradient Descent"
-    msc_code: "90C30"
-    msc_description: "非线性规划中的梯度方法"
+    msc_code: '90C30"
+    msc_description: "非线性规划中的梯度方法'
     
   - concept_id: "lagrange_multiplier"
-    name: "拉格朗日乘子"
-    name_en: "Lagrange Multiplier"
+    name: '拉格朗日乘子"
+    name_en: "Lagrange Multiplier'
     msc_code: "90C46"
-    msc_description: "约束优化的拉格朗日乘子"
+    msc_description: '约束优化的拉格朗日乘子"
 
 # ============================================================================
 # 计算数学类 (Computational Mathematics)
 # MSC大类: 65-XX (数值分析)
 # ============================================================================
 computational_mathematics:
-  - concept_id: "numerical_integration"
+  - concept_id: "numerical_integration'
     name: "数值积分"
-    name_en: "Numerical Integration"
-    msc_code: "65D30"
+    name_en: 'Numerical Integration"
+    msc_code: "65D30'
     msc_description: "数值积分与求积公式"
     
-  - concept_id: "interpolation"
-    name: "插值"
+  - concept_id: 'interpolation"
+    name: "插值'
     name_en: "Interpolation"
-    msc_code: "65D05"
-    msc_description: "插值与逼近"
+    msc_code: '65D05"
+    msc_description: "插值与逼近'
     
   - concept_id: "linear_system_solver"
-    name: "线性方程组求解"
-    name_en: "Linear System Solver"
+    name: '线性方程组求解"
+    name_en: "Linear System Solver'
     msc_code: "65F10"
-    msc_description: "迭代法求解线性系统"
+    msc_description: '迭代法求解线性系统"
     
-  - concept_id: "eigenvalue_computation"
+  - concept_id: "eigenvalue_computation'
     name: "特征值计算"
-    name_en: "Eigenvalue Computation"
-    msc_code: "65F15"
+    name_en: 'Eigenvalue Computation"
+    msc_code: "65F15'
     msc_description: "矩阵特征值计算"
 
 # ============================================================================
@@ -147,22 +147,22 @@ computational_mathematics:
 # MSC大类: 68-XX (计算机科学), 62-XX (统计学)
 # ============================================================================
 data_science:
-  - concept_id: "machine_learning"
-    name: "机器学习"
+  - concept_id: 'machine_learning"
+    name: "机器学习'
     name_en: "Machine Learning"
-    msc_code: "68T05"
-    msc_description: "机器学习与人工智能"
+    msc_code: '68T05"
+    msc_description: "机器学习与人工智能'
     
   - concept_id: "deep_learning"
-    name: "深度学习"
-    name_en: "Deep Learning"
+    name: '深度学习"
+    name_en: "Deep Learning'
     msc_code: "68T07"
-    msc_description: "深度学习与神经网络"
+    msc_description: '深度学习与神经网络"
     
-  - concept_id: "statistical_learning_theory"
+  - concept_id: "statistical_learning_theory'
     name: "统计学习理论"
-    name_en: "Statistical Learning Theory"
-    msc_code: "62G99"
+    name_en: 'Statistical Learning Theory"
+    msc_code: "62G99'
     msc_description: "非参数推断与学习理论"
 
 # ============================================================================
@@ -176,10 +176,10 @@ summary:
     数据科学: 3
     
   by_msc_class:
-    "60-XX (概率论)": 10
-    "62-XX (统计学)": 2
+    '60-XX (概率论)": 10
+    "62-XX (统计学)': 2
     "65-XX (数值分析)": 4
-    "68-XX (计算机科学)": 2
+    '68-XX (计算机科学)": 2
     "90-XX (运筹学)": 4
     
   total: 22

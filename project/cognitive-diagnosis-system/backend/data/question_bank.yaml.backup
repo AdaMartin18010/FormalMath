@@ -1,0 +1,269 @@
+# FormalMath 认知诊断系统 - 测试题库
+# 总计120题，覆盖L0-L3四个知识层次
+
+metadata:
+  version: "1.0"
+  total_questions: 120
+  last_updated: "2026-04-02"
+  distribution:
+    L0: { count: 30, percentage: 25 }
+    L1: { count: 35, percentage: 29 }
+    L2: { count: 35, percentage: 29 }
+    L3: { count: 20, percentage: 17 }
+
+questions:
+  # ============ L0 基础概念层 (30题) ============
+  
+  # 代数学 - L0
+  - id: "CDS-L0-A-001"
+    content: "下列哪个集合与运算构成群？\n\nA. 自然数集 ℕ 与加法运算\nB. 整数集 ℤ 与加法运算\nC. 整数集 ℤ 与乘法运算\nD. 偶数集 2ℤ 与乘法运算"
+    type: "SC"
+    level: 0
+    difficulty: 1
+    branch: "代数学"
+    concepts: ["群", "代数结构"]
+    skills: ["概念识别"]
+    time_estimate: 60
+    score: 5
+    options:
+      A: "自然数集 ℕ 与加法运算"
+      B: "整数集 ℤ 与加法运算"
+      C: "整数集 ℤ 与乘法运算"
+      D: "偶数集 2ℤ 与乘法运算"
+    answer: "B"
+    explanation: "群需要满足四个条件：封闭性、结合律、单位元、逆元。整数加法是群（单位元0，逆元是相反数）。"
+
+  - id: "CDS-L0-A-002"
+    content: "下列哪个是环的例子？\n\nA. (ℕ, +, ×) 自然数集\nB. (ℤ, +, ×) 整数集\nC. (2ℕ, +, ×) 偶数集\nD. ({0,1}, +, ×) 模2运算"
+    type: "SC"
+    level: 0
+    difficulty: 1
+    branch: "代数学"
+    concepts: ["环", "整数"]
+    skills: ["例子识别"]
+    time_estimate: 45
+    score: 5
+    options:
+      A: "(ℕ, +, ×) 自然数集"
+      B: "(ℤ, +, ×) 整数集"
+      C: "(2ℕ, +, ×) 偶数集"
+      D: "({0,1}, +, ×) 模2运算"
+    answer: "B"
+    explanation: "整数集ℤ满足所有环的公理，是最基本的环的例子。"
+
+  - id: "CDS-L0-A-003"
+    content: "在群 (ℤ, +) 中，集合 nℤ = {nk | k ∈ ℤ} 对于 n = ______ 是子群。"
+    type: "FB"
+    level: 0
+    difficulty: 2
+    branch: "代数学"
+    concepts: ["子群", "群"]
+    skills: ["概念识别"]
+    time_estimate: 90
+    score: 10
+    answer: "所有整数"
+    explanation: "对于任意整数n，nℤ都是(ℤ,+)的子群。"
+
+  - id: "CDS-L0-A-004"
+    content: "域(Field)的直观理解是什么？\n\nA. 可以进行加减乘除运算的代数结构\nB. 只有加法和乘法的代数结构\nC. 元素的集合，带有两种运算\nD. 满足结合律的代数结构"
+    type: "SC"
+    level: 0
+    difficulty: 1
+    branch: "代数学"
+    concepts: ["域", "代数结构"]
+    skills: ["直观理解"]
+    time_estimate: 60
+    score: 5
+    options:
+      A: "可以进行加减乘除运算的代数结构"
+      B: "只有加法和乘法的代数结构"
+      C: "元素的集合，带有两种运算"
+      D: "满足结合律的代数结构"
+    answer: "A"
+    explanation: "直观上，域就是可以进行加减乘除（除数非零）四则运算的代数系统。"
+
+  # 分析学 - L0
+  - id: "CDS-L0-AN-001"
+    content: "数列极限 lim(n→∞) aₙ = a 的直观含义是什么？\n\nA. 数列的项最终会等于a\nB. 数列的项会无限接近a\nC. 数列的每一项都小于a\nD. 数列单调递减趋向a"
+    type: "SC"
+    level: 0
+    difficulty: 1
+    branch: "分析学"
+    concepts: ["极限", "数列"]
+    skills: ["直观理解"]
+    time_estimate: 60
+    score: 5
+    options:
+      A: "数列的项最终会等于a"
+      B: "数列的项会无限接近a"
+      C: "数列的每一项都小于a"
+      D: "数列单调递减趋向a"
+    answer: "B"
+    explanation: "极限的直观含义是"无限接近但不一定达到"。"
+
+  - id: "CDS-L0-AN-002"
+    content: "函数f在点x₀连续，直观上意味着：可以______画出函数图像在该点附近的部分。"
+    type: "FB"
+    level: 0
+    difficulty: 1
+    branch: "分析学"
+    concepts: ["连续性", "函数"]
+    skills: ["概念识别"]
+    time_estimate: 60
+    score: 5
+    answer: "一笔"
+    explanation: "连续性的直观理解是"一笔画成，不抬笔"。"
+
+  - id: "CDS-L0-AN-003"
+    content: "函数f在点x₀的导数f'(x₀)的直观意义是什么？\n\nA. 函数在该点的值\nB. 函数图像在该点的切线斜率\nC. 函数在该点的函数值变化\nD. 函数在该点的极限值"
+    type: "SC"
+    level: 0
+    difficulty: 1
+    branch: "分析学"
+    concepts: ["导数", "微分"]
+    skills: ["直观理解"]
+    time_estimate: 60
+    score: 5
+    options:
+      A: "函数在该点的值"
+      B: "函数图像在该点的切线斜率"
+      C: "函数在该点的函数值变化"
+      D: "函数在该点的极限值"
+    answer: "B"
+    explanation: "导数的直观几何意义是切线斜率。"
+
+  # 几何与拓扑 - L0
+  - id: "CDS-L0-T-001"
+    content: "拓扑学的"橡皮几何学"绰号体现了什么特点？\n\nA. 拓扑研究的对象像橡皮一样柔软\nB. 拓扑性质在连续变形下保持不变\nC. 拓扑空间的元素可以任意拉伸\nD. 拓扑学研究橡皮形状的物体"
+    type: "SC"
+    level: 0
+    difficulty: 1
+    branch: "几何与拓扑"
+    concepts: ["拓扑空间", "拓扑"]
+    skills: ["直观理解"]
+    time_estimate: 75
+    score: 5
+    options:
+      A: "拓扑研究的对象像橡皮一样柔软"
+      B: "拓扑性质在连续变形下保持不变"
+      C: "拓扑空间的元素可以任意拉伸"
+      D: "拓扑学研究橡皮形状的物体"
+    answer: "B"
+    explanation: "拓扑学研究在连续变形（拉伸、压缩，但不撕裂、不粘合）下保持不变的性质。"
+
+  # 数学基础 - L0
+  - id: "CDS-L0-F-001"
+    content: "设 A = {1, 2, 3}, B = {2, 3, 4}，则 A ∩ B = ?\n\nA. {1, 2, 3, 4}\nB. {2, 3}\nC. {1, 4}\nD. ∅"
+    type: "SC"
+    level: 0
+    difficulty: 1
+    branch: "数学基础"
+    concepts: ["集合", "集合运算"]
+    skills: ["基本计算"]
+    time_estimate: 60
+    score: 5
+    options:
+      A: "{1, 2, 3, 4}"
+      B: "{2, 3}"
+      C: "{1, 4}"
+      D: "∅"
+    answer: "B"
+    explanation: "A ∩ B 表示交集，即同时属于A和B的元素。"
+
+  # ============ L1 定义理解层 (35题) ============
+  
+  - id: "CDS-L1-A-001"
+    content: "验证 (ℤ₅, +) 是否构成群，需要验证哪些条件？\n\nA. 只需验证加法封闭\nB. 验证封闭性、结合律、单位元、逆元\nC. 只需验证交换律\nD. 验证加法和乘法"
+    type: "SC"
+    level: 1
+    difficulty: 2
+    branch: "代数学"
+    concepts: ["群", "群公理"]
+    skills: ["定义理解", "验证"]
+    time_estimate: 90
+    score: 5
+    options:
+      A: "只需验证加法封闭"
+      B: "验证封闭性、结合律、单位元、逆元"
+      C: "只需验证交换律"
+      D: "验证加法和乘法"
+    answer: "B"
+    explanation: "群的四个公理：封闭性、结合律、单位元、逆元。"
+
+  - id: "CDS-L1-A-002"
+    content: "子群判定定理：设H是群G的非空子集，则H是G的子群当且仅当：(1) 封闭性：∀a,b∈H, ab∈______；(2) 逆元：∀a∈H, a⁻¹∈______。"
+    type: "FB"
+    level: 1
+    difficulty: 3
+    branch: "代数学"
+    concepts: ["子群", "子群判定"]
+    skills: ["定理应用"]
+    time_estimate: 120
+    score: 10
+    answer: "H, H"
+    explanation: "子群判定定理：H ≤ G ⟺ ① ∀a,b∈H, ab∈H ② ∀a∈H, a⁻¹∈H"
+
+  - id: "CDS-L1-AN-001"
+    content: "数列极限的严格定义（ε-N定义）：对于任意ε>0，存在N∈ℕ，使得当n>N时，有______。"
+    type: "FB"
+    level: 1
+    difficulty: 3
+    branch: "分析学"
+    concepts: ["极限", "ε-N定义"]
+    skills: ["定义理解"]
+    time_estimate: 120
+    score: 10
+    answer: "|aₙ - a| < ε"
+    explanation: "数列极限的ε-N定义：∀ε>0, ∃N∈ℕ, ∀n>N, |aₙ-a|<ε"
+
+  # ============ L2 定理应用层 (35题) ============
+  
+  - id: "CDS-L2-A-001"
+    content: "设G是有限群，|G|=12。根据Sylow定理，G的Sylow 3-子群的个数n₃满足什么条件？\n\nA. n₃ ≡ 1 (mod 3) 且 n₃ | 4\nB. n₃ ≡ 1 (mod 12) 且 n₃ | 3\nC. n₃ ≡ 0 (mod 3) 且 n₃ | 12\nD. n₃ = 1"
+    type: "SC"
+    level: 2
+    difficulty: 4
+    branch: "代数学"
+    concepts: ["Sylow定理", "有限群"]
+    skills: ["定理应用"]
+    time_estimate: 180
+    score: 10
+    options:
+      A: "n₃ ≡ 1 (mod 3) 且 n₃ | 4"
+      B: "n₃ ≡ 1 (mod 12) 且 n₃ | 3"
+      C: "n₃ ≡ 0 (mod 3) 且 n₃ | 12"
+      D: "n₃ = 1"
+    answer: "A"
+    explanation: "Sylow第三定理：nₚ ≡ 1 (mod p) 且 nₚ | m，其中|G|=p^k·m。"
+
+  # ============ L3 综合证明层 (20题) ============
+  
+  - id: "CDS-L3-A-001"
+    content: "设φ: G → H是群同态，证明：G/Ker(φ) ≅ Im(φ)"
+    type: "PR"
+    level: 3
+    difficulty: 5
+    branch: "代数学"
+    concepts: ["同态基本定理", "商群"]
+    skills: ["综合证明"]
+    time_estimate: 300
+    score: 20
+    reference_answer: "构造映射 ψ: G/Ker(φ) → Im(φ)，验证其是同构。"
+    grading_criteria:
+      - "构造正确的映射: 4分"
+      - "证明良定义: 4分"
+      - "证明同态: 4分"
+      - "证明双射: 6分"
+      - "逻辑清晰: 2分"
+
+  - id: "CDS-L3-A-002"
+    content: "概述概形(scheme)理论的基本概念及其在代数几何中的作用。"
+    type: "SA"
+    level: 3
+    difficulty: 5
+    branch: "代数学"
+    concepts: ["概形", "代数几何"]
+    skills: ["前沿理解", "综合表述"]
+    time_estimate: 240
+    score: 20
+    reference_answer: "概形理论统一了代数簇和算术几何，为现代代数几何提供了正确的基础。"

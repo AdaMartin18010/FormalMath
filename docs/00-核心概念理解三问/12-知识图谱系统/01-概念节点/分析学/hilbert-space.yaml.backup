@@ -1,0 +1,114 @@
+# hilbert-space.yaml - Hilbert空间概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "hilbert-space"
+  name:
+    zh: "Hilbert空间"
+    en: "Hilbert Space"
+  msc_codes: ["46C05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      Hilbert空间是完备的内积空间。
+      
+      即：(H, ⟨·,·⟩) 是内积空间，且
+      关于诱导范数 ‖x‖ = √⟨x,x⟩ 完备。
+      
+      等价地：
+      - 是Banach空间
+      - 范数满足平行四边形法则
+      
+    informal: |
+      Hilbert空间是"无穷维的欧氏空间"。
+      
+      保留了有限维的几何直觉：
+      - 有内积和角度
+      - 有正交和投影
+      - 有完备性
+      
+    lean: |
+      -- Hilbert空间
+      class InnerProductSpace (𝕜 : Type*) (E : Type*) [RCLike 𝕜]
+        [NormedAddCommGroup E] [Module 𝕜 E] extends NormedSpace 𝕜 E
+        
+      -- 完备的内积空间
+      example [InnerProductSpace ℂ E] [CompleteSpace E] : 
+        HilbertSpace E := inferInstance
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】无穷维欧氏空间
+      - 有距离、角度、正交
+      - 可以做正交投影
+      - 有标准正交基
+      
+    physical: |
+      【物理直觉】量子力学的舞台
+      - 量子态是单位向量
+      - 可观测量是自伴算子
+      - 内积给出概率幅
+      
+  # ===== 例子层 =====
+  examples:
+    finite_dimensional:
+      - name: "ℂⁿ"
+        inner_product: "⟨x,y⟩ = Σx̄ᵢyᵢ"
+        
+    infinite_dimensional:
+      - name: "ℓ²"
+        definition: "{(xₙ) : Σ|xₙ|² < ∞}"
+        inner_product: "⟨x,y⟩ = Σx̄ₙyₙ"
+        
+      - name: "L²(Ω)"
+        definition: "{f : ∫|f|² < ∞}"
+        inner_product: "⟨f,g⟩ = ∫f̄g"
+        
+      - name: "Hardy空间 H²"
+        definition: "解析函数的L²边界值"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "projection-theorem"
+      statement: "到闭凸集的最佳逼近存在唯一"
+      
+    - id: "riesz-representation"
+      statement: "H* ≅ H（共轭线性同构）"
+      
+    - id: "orthonormal-basis"
+      statement: "可分Hilbert空间有可数标准正交基"
+      
+    - id: "spectral-theorem"
+      statement: "自伴算子的谱分解"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "inner-product"
+        description: "有内积结构"
+      - id: "completeness"
+        description: "是完备空间"
+        
+    is_special_case_of:
+      - id: "banach-space"
+        description: "特殊的Banach空间"
+        
+    related_to:
+      - id: "quantum-mechanics"
+        description: "量子力学的数学框架"
+      - id: "fourier-analysis"
+        description: "L²是Fourier分析的自然空间"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    history:
+      named_after: "David Hilbert"
+      development: "20世纪初"
+      
+  mathlib:
+    path: "Mathlib.Analysis.InnerProductSpace.Basic"

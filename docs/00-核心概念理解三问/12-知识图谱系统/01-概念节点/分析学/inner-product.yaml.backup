@@ -1,0 +1,101 @@
+# inner-product.yaml - 内积概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "inner-product"
+  name:
+    zh: "内积"
+    en: "Inner Product"
+  msc_codes: ["46C05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 V 是域 𝕂（ℝ或ℂ）上的向量空间。
+      内积是映射 ⟨·,·⟩: V × V → 𝕂，满足：
+      
+      1. 共轭对称：⟨x, y⟩ = ⟨y, x⟩̄
+      2. 第一变量线性：⟨αx + βy, z⟩ = α⟨x, z⟩ + β⟨y, z⟩
+      3. 正定性：⟨x, x⟩ ≥ 0，等号当且仅当 x = 0
+      
+      诱导范数：‖x‖ = √⟨x, x⟩
+      
+    informal: |
+      内积测量向量之间的"相似度"。
+      
+      ℝⁿ中的点积：
+      ⟨x, y⟩ = x₁y₁ + x₂y₂ + ... + xₙyₙ
+      
+      几何意义：⟨x, y⟩ = ‖x‖ · ‖y‖ · cos θ
+      
+    lean: |
+      class InnerProductSpace (𝕜 : Type*) (E : Type*) [RCLike 𝕜] 
+        [NormedAddCommGroup E] [Module 𝕜 E] extends NormedSpace 𝕜 E where
+        inner : E → E → 𝕜
+        norm_sq_eq_inner : ∀ x, ‖x‖ ^ 2 = RCLike.re (inner x x)
+        conj_symm : ∀ x y, inner y x = conj (inner x y)
+        add_left : ∀ x y z, inner (x + y) z = inner x z + inner y z
+        smul_left : ∀ x y r, inner (r • x) y = conj r * inner x y
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】投影和角度
+      - ⟨x, y⟩ / ‖y‖ = x在y方向的投影长度
+      - 正交：⟨x, y⟩ = 0
+      - 角度：cos θ = ⟨x, y⟩ / (‖x‖‖y‖)
+      
+    algebraic: |
+      【代数直觉】双线性形式
+      - 对称（实）或共轭对称（复）
+      - 正定
+      - 诱导范数和度量
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "欧氏空间 ℝⁿ"
+      formula: "⟨x, y⟩ = Σ xᵢyᵢ"
+      
+    - name: "酉空间 ℂⁿ"
+      formula: "⟨x, y⟩ = Σ x̄ᵢyᵢ"
+      
+    - name: "L²[a,b]"
+      formula: "⟨f, g⟩ = ∫ₐᵇ f(x)g(x) dx"
+      
+    - name: "ℓ²序列空间"
+      formula: "⟨x, y⟩ = Σ xₙȳₙ"
+      
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "cauchy-schwarz"
+      statement: "|⟨x, y⟩| ≤ ‖x‖ · ‖y‖"
+      
+    - id: "parallelogram-law"
+      statement: "‖x+y‖² + ‖x-y‖² = 2(‖x‖² + ‖y‖²)"
+      
+    - id: "polarization"
+      statement: "内积可从范数恢复"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "vector-space"
+        description: "定义在向量空间上"
+        
+    leads_to:
+      - id: "hilbert-space"
+        description: "完备内积空间"
+      - id: "orthogonality"
+        description: "正交概念"
+      - id: "projection"
+        description: "正交投影"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+  mathlib:
+    path: "Mathlib.Analysis.InnerProductSpace.Basic"
+    name: "InnerProductSpace"

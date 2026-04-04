@@ -1,0 +1,7135 @@
+# FormalMath 核心数学概念前置关系数据库
+# 版本: 3.1
+# 概念数量: 311个 (新增11个分析学概念MSC编码)
+# 分类: 分析学(25) | 代数学(25) | 几何拓扑(25) | 数论逻辑(25) | 概率统计(20) | 最优化(20) | 控制论(20) | 信息论(20) | 密码学(20) | 金融数学(20) | 生物数学(20) | 计算数学(20) | 物理数学(20) | 数据科学(20)
+
+# ============================================================================
+# 分析学概念 (25个)
+# ============================================================================
+
+concepts:
+  # ---------- 基础分析概念 ----------
+  - concept_id: "limit"
+    name: "极限"
+    category: "分析学"
+    msc_primary: "26A03"
+    msc_secondary: ["40A05"]
+    prerequisites:
+      - concept_id: "real_numbers"
+        level: "L0"
+        relation: "依赖"
+      - concept_id: "epsilon_delta"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "sequence"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "continuity"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "infinite_series"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "continuity"
+    name: "连续性"
+    category: "分析学"
+    msc_primary: "26A15"
+    msc_secondary: ["26A03", "54C05"]
+    prerequisites:
+      - concept_id: "limit"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "topology_basic"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "uniform_continuity"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "derivative"
+    name: "导数"
+    category: "分析学"
+    msc_primary: "26A24"
+    msc_secondary: ["26A27", "58C20"]
+    prerequisites:
+      - concept_id: "limit"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "continuity"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "multivariable_calculus"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 18
+
+  - concept_id: "riemann_integral"
+    name: "积分"
+    category: "分析学"
+    msc_primary: "26A42"
+    msc_secondary: ["26B15", "28A25"]
+    prerequisites:
+      - concept_id: "limit"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "continuity"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "lebesgue_integral"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "measure_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "improper_integral"
+    name: "反常积分"
+    category: "分析学"
+    msc_primary: "40A10"
+    msc_secondary: ["26A42", "26A33"]
+    prerequisites:
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "limit"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "lebesgue_integral"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "gamma_function"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 15
+
+  - concept_id: "multivariable_calculus"
+    name: "多元微积分"
+    category: "分析学"
+    msc_primary: "26B12"
+    msc_secondary: ["26B15", "58C20"]
+    prerequisites:
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "implicit_function_theorem"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "partial_differential_equations"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "differential_geometry"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "implicit_function_theorem"
+    name: "隐函数定理"
+    category: "分析学"
+    msc_primary: "26B10"
+    msc_secondary: ["26B12", "58C15"]
+    prerequisites:
+      - concept_id: "multivariable_calculus"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "differential_geometry"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "manifold"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "infinite_series"
+    name: "级数"
+    category: "分析学"
+    msc_primary: "40A05"
+    msc_secondary: ["40A10", "40A25"]
+    prerequisites:
+      - concept_id: "limit"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "sequence"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "uniform_convergence"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "fourier_analysis"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "complex_analysis"
+        level: "L2"
+        relation: "被依赖"
+    msc_primary: "42Bxx"
+    msc_secondary: ["42A38"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "uniform_convergence"
+    name: "一致收敛"
+    category: "分析学"
+    msc_primary: "40A30"
+    msc_secondary: ["26A03", "30A10"]
+    prerequisites:
+      - concept_id: "limit"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "infinite_series"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "continuity"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "fourier_analysis"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  # ---------- 复分析与调和分析 ----------
+  - concept_id: "power_series"
+    name: "幂级数"
+    category: "分析学"
+    msc_primary: "30B10"
+    msc_secondary: ["40A30", "32A05"]
+    prerequisites:
+      - concept_id: "infinite_series"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "complex_numbers"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "analytic_function"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "complex_analysis"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "fourier_series"
+    name: "傅里叶级数"
+    category: "分析学"
+    msc_primary: "42A16"
+    msc_secondary: ["42A20", "42A32"]
+    prerequisites:
+      - concept_id: "infinite_series"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "uniform_convergence"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "fourier_analysis"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "signal_processing"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "analytic_function"
+    name: "解析函数"
+    category: "分析学"
+    msc_primary: "30A99"
+    msc_secondary: ["30B10", "30Cxx"]
+    prerequisites:
+      - concept_id: "power_series"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "complex_numbers"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "holomorphic_function"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "cauchy_integral_theorem"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "holomorphic_function"
+    name: "全纯函数"
+    category: "分析学"
+    msc_primary: "30A99"
+    msc_secondary: ["30Cxx", "32A10"]
+    prerequisites:
+      - concept_id: "analytic_function"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "complex_analysis"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "cauchy_integral_theorem"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "cauchy_integral_theorem"
+    name: "柯西积分定理"
+    category: "分析学"
+    msc_primary: "30E20"
+    msc_secondary: ["30B10", "30Cxx"]
+    prerequisites:
+      - concept_id: "holomorphic_function"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "contour_integration"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "residue_theorem"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "complex_analysis"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "residue_theorem"
+    name: "留数定理"
+    category: "分析学"
+    msc_primary: "30E20"
+    msc_secondary: ["30D30", "30Cxx"]
+    prerequisites:
+      - concept_id: "cauchy_integral_theorem"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "holomorphic_function"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "residue_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "conformal_mapping"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "fourier_analysis"
+    name: "Fourier分析"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "infinite_series"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "uniform_convergence"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "lebesgue_integral"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "harmonic_analysis"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "partial_differential_equations"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "signal_processing"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "complex_analysis"
+    name: "复分析"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "limit"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "complex_numbers"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "residue_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "conformal_mapping"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "riemann_surfaces"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "43Axx"
+    msc_secondary: ["42Bxx", "22E30"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "residue_theory"
+    name: "留数"
+    category: "分析学"
+    msc_primary: "30E20"
+    msc_secondary: ["30D30", "30Cxx"]
+    prerequisites:
+      - concept_id: "complex_analysis"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "contour_integration"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "conformal_mapping"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "asymptotic_analysis"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "conformal_mapping"
+    name: "共形映射"
+    category: "分析学"
+    msc_primary: "30C35"
+    msc_secondary: ["30C20", "30D99"]
+    prerequisites:
+      - concept_id: "complex_analysis"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "residue_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "riemann_mapping_theorem"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "schwarz_christoffel"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 25
+
+  - concept_id: "harmonic_analysis"
+    name: "调和分析"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "fourier_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "measure_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "abstract_harmonic_analysis"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "ergodic_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  # ---------- 测度与泛函分析 ----------
+  - concept_id: "measure_theory"
+    name: "测度论"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "real_analysis"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "set_theory"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "topology_basic"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "lebesgue_integral"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "probability_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "37Axx"
+    msc_secondary: ["28Dxx", "60G10"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "lebesgue_integral"
+    name: "Lebesgue积分"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "measure_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "lp_spaces"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "fourier_analysis"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "03E20"
+    msc_secondary: ["03Exx"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "normed_space"
+    name: "赋范空间"
+    category: "分析学"
+    msc_primary: "46B25"
+    msc_secondary: ["46Axx", "46Exx"]
+    prerequisites:
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "metric_space"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "lp_spaces"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "banach_space"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "hilbert_space"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "linear_operator"
+    name: "线性算子"
+    category: "分析学"
+    msc_primary: "47A05"
+    msc_secondary: ["46B25", "47Axx"]
+    prerequisites:
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "banach_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "hilbert_space"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "operator_theory"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "spectral_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 30
+
+  - concept_id: "lp_spaces"
+    name: "Lp空间"
+    category: "分析学"
+    msc_primary: "46E30"
+    msc_secondary: ["46B25", "28A25"]
+    prerequisites:
+      - concept_id: "lebesgue_integral"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "normed_space"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "banach_space"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "hilbert_space"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "sobolev_spaces"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "functional_analysis"
+    name: "泛函分析"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "measure_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "lebesgue_integral"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "topology_basic"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "banach_space"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "hilbert_space"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "operator_theory"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "spectral_theory"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "46E35"
+    msc_secondary: ["46Fxx", "35Sxx"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "banach_space"
+    name: "Banach空间"
+    category: "分析学"
+    msc_primary: "46B25"
+    msc_secondary: ["46Axx", "47Axx"]
+    prerequisites:
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "lp_spaces"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "normed_space"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "operator_theory"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "dual_space"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 30
+
+  - concept_id: "hilbert_space"
+    name: "Hilbert空间"
+    category: "分析学"
+    msc_primary: "46C15"
+    msc_secondary: ["46C05", "47Axx"]
+    prerequisites:
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "lp_spaces"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "inner_product"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "spectral_theory"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "quantum_mechanics"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "operator_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "operator_theory"
+    name: "算子理论"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "banach_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "hilbert_space"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "spectral_theory"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "c_star_algebras"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "81Qxx"
+    msc_secondary: ["81Pxx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "spectral_theory"
+    name: "谱理论"
+    category: "分析学"
+    msc_primary: "47A10"
+    msc_secondary: ["47Axx", "46H30"]
+    prerequisites:
+      - concept_id: "operator_theory"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "hilbert_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "functional_calculus"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "quantum_mechanics_math"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 45
+
+  # ---------- 分布理论与偏微分方程 ----------
+  - concept_id: "distribution_theory"
+    name: "分布理论"
+    category: "分析学"
+    msc_primary: "46Fxx"
+    msc_secondary: ["46E35", "35Dxx"]
+    prerequisites:
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "test_functions"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "generalized_functions"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "sobolev_spaces"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "partial_differential_equations"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "sobolev_spaces"
+    name: "Sobolev空间"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "distribution_theory"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "lp_spaces"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "weak_derivatives"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "partial_differential_equations"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "variational_methods"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "variational_methods"
+    name: "变分法"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "calculus_of_variations"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "sobolev_spaces"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "optimal_control"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "finite_element_method"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "49Jxx"
+    msc_secondary: ["49Kxx", "58E05"]
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "differential_equations"
+    name: "微分方程"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "partial_differential_equations"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "dynamical_systems"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "49N10"
+    msc_secondary: ["93Cxx", "49J15"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "partial_differential_equations"
+    name: "偏微分方程"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "multivariable_calculus"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "sobolev_spaces"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "fourier_analysis"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "mathematical_physics"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "fluid_dynamics"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "asymptotic_analysis"
+    name: "渐近分析"
+    category: "分析学"
+    prerequisites:
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "residue_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "special_functions"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "perturbation_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 30
+
+
+# ============================================================================
+# 代数学概念 (25个)
+# ============================================================================
+
+  # ---------- 基础代数结构 ----------
+  - concept_id: "group"
+    name: "群"
+    category: "代数学"
+    msc_primary: "20A05"
+    msc_secondary: ["20-XX"]
+    prerequisites:
+      - concept_id: "set_theory"
+        level: "L0"
+        relation: "依赖"
+      - concept_id: "binary_operations"
+        level: "L0"
+        relation: "依赖"
+      - concept_id: "equivalence_relations"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "ring"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "group_representation"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "group_action"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "22E15"
+    msc_secondary: ["22Exx"]
+    difficulty: 2
+    estimated_hours: 25
+
+  - concept_id: "ring"
+    name: "环"
+    category: "代数学"
+    msc_primary: "16S50"
+    msc_secondary: ["13-XX"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "abelian_group"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "field"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "module"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "commutative_algebra"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "algebraic_geometry"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "field"
+    name: "域"
+    category: "代数学"
+    msc_primary: "12F99"
+    msc_secondary: ["12E99"]
+    prerequisites:
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "integral_domain"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "galois_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "field_extension"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "algebraic_number_theory"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "module"
+    name: "模"
+    category: "代数学"
+    msc_primary: "13Cxx"
+    msc_secondary: ["16Dxx"]
+    prerequisites:
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "abelian_group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "homological_algebra"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "commutative_algebra"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  # ---------- 线性代数 ----------
+  - concept_id: "linear_algebra"
+    name: "线性代数"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "matrix"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_transformation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "representation_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "multilinear_algebra"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "18Gxx"
+    msc_secondary: ["13Dxx", "16Exx"]
+    difficulty: 2
+    estimated_hours: 30
+
+  - concept_id: "vector_space"
+    name: "向量空间"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "field"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "matrix"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "tensor_product"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "15Axx"
+    msc_secondary: ["15A09", "65Fxx"]
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "matrix"
+    name: "矩阵"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_transformation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "eigenvalue"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "jordan_normal_form"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "numerical_linear_algebra"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "eigenvalue"
+    name: "特征值"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "matrix"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_transformation"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "characteristic_polynomial"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "jordan_normal_form"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "spectral_theory"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "principal_component_analysis"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "65Fxx"
+    msc_secondary: ["65Y05"]
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "jordan_normal_form"
+    name: "Jordan标准形"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "eigenvalue"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "matrix"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "generalized_eigenspace"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "matrix_exponential"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "systems_of_odes"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "tensor_product"
+    name: "张量积"
+    category: "代数学"
+    msc_primary: "15A69"
+    msc_secondary: ["18D10"]
+    prerequisites:
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "module"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "multilinear_map"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "multilinear_algebra"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "tensor_calculus"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "differential_geometry"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  # ---------- 同调代数 ----------
+  - concept_id: "homological_algebra"
+    name: "同调代数"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "module"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "exact_sequence"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "category_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "derived_category"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "group_cohomology"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "sheaf_cohomology"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  # ---------- 群表示与Lie理论 ----------
+  - concept_id: "group_representation"
+    name: "群表示"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "character_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "18Axx"
+    msc_secondary: ["18Bxx", "18Cxx"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "character_theory"
+    name: "特征标"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "group_representation"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "representation_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "burnside_theorem"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "20C15"
+    msc_secondary: ["20Cxx"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "group_action"
+    name: "群作用"
+    category: "代数学"
+    msc_primary: "20B05"
+    msc_secondary: ["20C05"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "set_theory"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "orbit_stabilizer"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "sylow_theory"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "group_cohomology"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "sylow_theory"
+    name: "Sylow理论"
+    category: "代数学"
+    msc_primary: "20D20"
+    msc_secondary: ["20D05"]
+    prerequisites:
+      - concept_id: "group_action"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "finite_group_classification"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "solvable_group"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "solvable_group"
+    name: "可解群"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "sylow_theory"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "normal_subgroup"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "composition_series"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "galois_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "simple_group"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "20F16"
+    msc_secondary: ["20D10", "20Exx"]
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "lie_group"
+    name: "Lie群"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "smooth_manifold"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "group_representation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "lie_algebra"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "representation_lie"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "lie_algebra"
+    name: "Lie代数"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "bracket_operation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "representation_lie"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "root_system"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "17Bxx"
+    msc_secondary: ["22E60", "17Bxx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  # ---------- 交换代数与代数几何 ----------
+  - concept_id: "commutative_algebra"
+    name: "交换代数"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "module"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "ideal"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "algebraic_geometry"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "scheme"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "algebraic_geometry"
+    name: "代数几何"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "commutative_algebra"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "polynomial_ring"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "affine_variety"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "scheme"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "sheaf"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "scheme"
+    name: "概形"
+    category: "代数学"
+    msc_primary: "14A15"
+    msc_secondary: ["14A20", "14F20"]
+    prerequisites:
+      - concept_id: "algebraic_geometry"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "sheaf"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "commutative_algebra"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "cohomology_sheaf"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "moduli_space"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 55
+
+  - concept_id: "sheaf"
+    name: "层"
+    category: "代数学"
+    msc_primary: "14F05"
+    msc_secondary: ["14F06", "18F20"]
+    prerequisites:
+      - concept_id: "topology_basic"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "category_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "presheaf"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "scheme"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "cohomology_sheaf"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "cohomology_sheaf"
+    name: "层上同调"
+    category: "代数学"
+    msc_primary: "14Fxx"
+    msc_secondary: ["14F25", "18G40"]
+    prerequisites:
+      - concept_id: "sheaf"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "homological_algebra"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "algebraic_geometry"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "riemann_roch"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "hodge_theory"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 50
+
+  - concept_id: "category_theory"
+    name: "范畴论"
+    category: "代数学"
+    msc_codes:
+      primary: "18A"
+      secondary: ["18B", "18C", "18D", "18E"]
+      description: "范畴、函子、自然变换"
+    prerequisites:
+      - concept_id: "set_theory"
+        level: "L0"
+        relation: "依赖"
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "abstract_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "homological_algebra"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "sheaf"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "topos_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "homotopy_algebra"
+    name: "同伦代数"
+    category: "代数学"
+    prerequisites:
+      - concept_id: "category_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "homological_algebra"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "homotopy_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "infinity_category"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 50
+
+  # ---------- 基础群论概念（MSC编码补充） ----------
+  - concept_id: "subgroup"
+    name: "子群"
+    category: "代数学"
+    msc_primary: "20A05"
+    msc_secondary: ["20D30"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "normal_subgroup"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "quotient_group"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "quotient_group"
+    name: "商群"
+    category: "代数学"
+    msc_primary: "20A05"
+    msc_secondary: ["20D35"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "subgroup"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "normal_subgroup"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "group_homomorphism"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "simple_group"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "group_homomorphism"
+    name: "群同态"
+    category: "代数学"
+    msc_primary: "20A05"
+    msc_secondary: ["18A22"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "function"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "quotient_group"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "group_isomorphism"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "simple_group"
+    name: "有限单群"
+    category: "代数学"
+    msc_primary: "20D05"
+    msc_secondary: ["20E32"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "quotient_group"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "normal_subgroup"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "finite_group_classification"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "free_group"
+    name: "自由群"
+    category: "代数学"
+    msc_primary: "20E05"
+    msc_secondary: ["20F05"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "set_theory"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "group_presentation"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "combinatorial_group_theory"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "representation_theory"
+    name: "表示论"
+    category: "代数学"
+    msc_primary: "20Cxx"
+    msc_secondary: ["16Gxx", "22E47"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "character_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  # ---------- 环论概念（MSC编码补充） ----------
+  - concept_id: "integral_domain"
+    name: "整环"
+    category: "代数学"
+    msc_primary: "13G05"
+    msc_secondary: ["13Bxx"]
+    prerequisites:
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "commutative_ring"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "field"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "principal_ideal_domain"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "principal_ideal_domain"
+    name: "PID"
+    category: "代数学"
+    msc_primary: "13F15"
+    msc_secondary: ["13Gxx"]
+    prerequisites:
+      - concept_id: "integral_domain"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "ideal"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "euclidean_domain"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "unique_factorization_domain"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "noetherian_ring"
+    name: "诺特环"
+    category: "代数学"
+    msc_primary: "13E05"
+    msc_secondary: ["16P40"]
+    prerequisites:
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "ideal"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "commutative_algebra"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "algebraic_geometry"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  # ---------- 域论概念（MSC编码补充） ----------
+  - concept_id: "field_extension"
+    name: "域扩张"
+    category: "代数学"
+    msc_primary: "12F05"
+    msc_secondary: ["12Fxx"]
+    prerequisites:
+      - concept_id: "field"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "polynomial_ring"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "algebraic_extension"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "galois_theory"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "algebraic_extension"
+    name: "代数扩张"
+    category: "代数学"
+    msc_primary: "12F05"
+    msc_secondary: ["11Rxx"]
+    prerequisites:
+      - concept_id: "field_extension"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "algebraic_number"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "galois_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "algebraic_closure"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "galois_theory"
+    name: "Galois理论"
+    category: "代数学"
+    msc_primary: "12F10"
+    msc_secondary: ["12Gxx", "20B35"]
+    prerequisites:
+      - concept_id: "field_extension"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "algebraic_extension"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "galois_representation"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "inverse_galois_problem"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "finite_field"
+    name: "有限域"
+    category: "代数学"
+    msc_primary: "12E20"
+    msc_secondary: ["11Txx", "94A60"]
+    prerequisites:
+      - concept_id: "field"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "polynomial_ring"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "coding_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "cryptography"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+
+# ============================================================================
+# 几何拓扑概念 (25个)
+# ============================================================================
+
+  # ---------- 基础拓扑 ----------
+  - concept_id: "topological_space"
+    name: "拓扑空间"
+    category: "几何拓扑"
+    msc_primary: "54A05"
+    msc_secondary: ["54-01", "54B05"]
+    prerequisites:
+      - concept_id: "set_theory"
+        level: "L0"
+        relation: "依赖"
+      - concept_id: "real_numbers"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "continuous_map"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "compactness"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "connectedness"
+        level: "L1"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "continuous_map"
+    name: "连续映射"
+    category: "几何拓扑"
+    msc_primary: "54C05"
+    msc_secondary: ["54C10", "54C15"]
+    prerequisites:
+      - concept_id: "topological_space"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "limit"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "homeomorphism"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "homotopy"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "covering_space"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "compactness"
+    name: "紧致性"
+    category: "几何拓扑"
+    msc_primary: "54D30"
+    msc_secondary: ["54D20", "54E45"]
+    prerequisites:
+      - concept_id: "topological_space"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "continuous_map"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "stone_cech"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "heine_borel"
+        level: "L1"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "connectedness"
+    name: "连通性"
+    category: "几何拓扑"
+    msc_primary: "54D05"
+    msc_secondary: ["54D10", "54C05"]
+    prerequisites:
+      - concept_id: "topological_space"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "continuous_map"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "path_connected"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "fundamental_group"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 12
+
+  - concept_id: "separation_axioms"
+    name: "分离公理"
+    category: "几何拓扑"
+    msc_primary: "54D10"
+    msc_secondary: ["54D15", "54A05"]
+    prerequisites:
+      - concept_id: "topological_space"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "continuous_map"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "normal_space"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "urysohn_lemma"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "homotopy"
+    name: "同伦"
+    category: "几何拓扑"
+    msc_primary: "55Pxx"
+    msc_secondary: ["55Qxx", "55U35"]
+    prerequisites:
+      - concept_id: "continuous_map"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "topological_space"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "fundamental_group"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "homology_group"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "homotopy_group"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "fundamental_group"
+    name: "基本群"
+    category: "几何拓扑"
+    msc_primary: "55Q05"
+    msc_secondary: ["55P05", "57M05"]
+    prerequisites:
+      - concept_id: "homotopy"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "path_connected"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "covering_space"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "van_kampen"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "covering_space"
+    name: "覆叠空间"
+    category: "几何拓扑"
+    msc_primary: "57M10"
+    msc_secondary: ["55R05", "55Q52"]
+    prerequisites:
+      - concept_id: "fundamental_group"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "homotopy"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "deck_transformation"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "universal_cover"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "homology_group"
+    name: "同调群"
+    category: "几何拓扑"
+    msc_primary: "55N10"
+    msc_secondary: ["55N07", "55U15"]
+    prerequisites:
+      - concept_id: "homotopy"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "abelian_group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "simplicial_complex"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "cohomology"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "betti_number"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "algebraic_topology"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "55Nxx"
+    msc_secondary: ["55Mxx"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "cohomology"
+    name: "上同调"
+    category: "几何拓扑"
+    msc_primary: "55N10"
+    msc_secondary: ["55N30", "55N91"]
+    prerequisites:
+      - concept_id: "homology_group"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "module"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "de_rham_cohomology"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "characteristic_class"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "cohomology_sheaf"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  # ---------- 微分几何 ----------
+  - concept_id: "manifold"
+    name: "流形"
+    category: "几何拓扑"
+    msc_primary: "57Rxx"
+    msc_secondary: ["58A05", "58Axx"]
+    prerequisites:
+      - concept_id: "topological_space"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "calculus_several"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "euclidean_space"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "tangent_space"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "differential_form"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "riemannian_metric"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "tangent_space"
+    name: "切空间"
+    category: "几何拓扑"
+    msc_primary: "58A05"
+    msc_secondary: ["58A10", "53B05"]
+    prerequisites:
+      - concept_id: "manifold"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "tensor_field"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "vector_bundle"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "tensor_field"
+    name: "张量场"
+    category: "几何拓扑"
+    msc_primary: "53A45"
+    msc_secondary: ["15A72", "58A10"]
+    prerequisites:
+      - concept_id: "tangent_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "tensor_product"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "manifold"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "riemannian_metric"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "curvature"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "differential_form"
+    name: "微分形式"
+    category: "几何拓扑"
+    prerequisites:
+      - concept_id: "manifold"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "tangent_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "multilinear_algebra"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "stokes_theorem"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "de_rham_cohomology"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "stokes_theorem"
+    name: "Stokes定理"
+    category: "几何拓扑"
+    prerequisites:
+      - concept_id: "differential_form"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "manifold_with_boundary"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "orientation"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "de_rham_cohomology"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "index_theorem"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "58C35"
+    msc_secondary: ["58A10", "58Axx"]
+    difficulty: 3
+    estimated_hours: 20
+
+  # ---------- 黎曼几何 ----------
+  - concept_id: "riemannian_metric"
+    name: "黎曼度量"
+    category: "几何拓扑"
+    msc_primary: "53B20"
+    msc_secondary: ["53B21", "53C20"]
+    prerequisites:
+      - concept_id: "manifold"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "tensor_field"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "inner_product"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "curvature"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "geodesic"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "connection"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "curvature"
+    name: "曲率"
+    category: "几何拓扑"
+    msc_primary: "53B21"
+    msc_secondary: ["53B20", "53C21"]
+    prerequisites:
+      - concept_id: "riemannian_metric"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "connection"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "tensor_field"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "sectional_curvature"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "ricci_curvature"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "scalar_curvature"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "geodesic"
+    name: "测地线"
+    category: "几何拓扑"
+    msc_primary: "53C22"
+    msc_secondary: ["53B05", "58E10"]
+    prerequisites:
+      - concept_id: "riemannian_metric"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "connection"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "calculus_variations"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "exponential_map"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "geodesic_flow"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "connection"
+    name: "联络"
+    category: "几何拓扑"
+    msc_primary: "53B05"
+    msc_secondary: ["53C05", "58A05"]
+    prerequisites:
+      - concept_id: "riemannian_metric"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "vector_bundle"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "curvature"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "geodesic"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "parallel_transport"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "fiber_bundle"
+    name: "纤维丛"
+    category: "几何拓扑"
+    msc_primary: "55R10"
+    msc_secondary: ["55R25", "57R22"]
+    prerequisites:
+      - concept_id: "manifold"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "vector_bundle"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "characteristic_class"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "gauge_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "characteristic_class"
+    name: "示性类"
+    category: "几何拓扑"
+    prerequisites:
+      - concept_id: "fiber_bundle"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "cohomology"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "index_theorem"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "topological_quantum_field"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "81T13"
+    msc_secondary: ["53C07", "81Txx"]
+    difficulty: 5
+    estimated_hours: 50
+
+  # ---------- 拓扑学高级主题 ----------
+  - concept_id: "morse_theory"
+    name: "Morse理论"
+    category: "几何拓扑"
+    prerequisites:
+      - concept_id: "manifold"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "homology_group"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "critical_point"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "morse_homology"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "floer_homology"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "58E05"
+    msc_secondary: ["57R70", "58Exx"]
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "index_theorem"
+    name: "指标定理"
+    category: "几何拓扑"
+    prerequisites:
+      - concept_id: "characteristic_class"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "elliptic_operator"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "cohomology"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "atiyah_patodi_singer"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 55
+
+  - concept_id: "symplectic_geometry"
+    name: "辛几何"
+    category: "几何拓扑"
+    prerequisites:
+      - concept_id: "manifold"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "differential_form"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "hamiltonian_mechanics"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "symplectic_topology"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "gromov_witten"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "53D05"
+    msc_secondary: ["37Jxx", "53Dxx"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "complex_geometry"
+    name: "复几何"
+    category: "几何拓扑"
+    prerequisites:
+      - concept_id: "manifold"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "complex_structure"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "hodge_theory"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "k3_surface"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "32Qxx"
+    msc_secondary: ["32Cxx", "53C55"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "algebraic_topology"
+    name: "代数拓扑"
+    category: "几何拓扑"
+    prerequisites:
+      - concept_id: "homology_group"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "fundamental_group"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "cohomology"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "spectral_sequence"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "k_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 50
+
+
+# ============================================================================
+# 数论逻辑概念 (25个)
+# ============================================================================
+
+  # ---------- 初等数论 ----------
+  - concept_id: "divisibility"
+    name: "整除"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "integers"
+        level: "L0"
+        relation: "依赖"
+      - concept_id: "arithmetic_operations"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "congruence"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "prime_numbers"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "gcd"
+        level: "L1"
+        relation: "被依赖"
+    msc_primary: "11A05"
+    msc_secondary: ["11Axx"]
+    difficulty: 1
+    estimated_hours: 10
+
+  - concept_id: "congruence"
+    name: "同余"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11A07"
+      secondary: ["11A15"]
+      description: "同余式、模运算"
+    prerequisites:
+      - concept_id: "divisibility"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "euclidean_algorithm"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "primitive_root"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "quadratic_residue"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "chinese_remainder"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "primitive_root"
+    name: "原根"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "congruence"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "euler_totient"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "discrete_logarithm"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "cryptography"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "11A07"
+    msc_secondary: ["11Axx"]
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "quadratic_residue"
+    name: "二次剩余"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11A15"
+      secondary: ["11R11", "11E16"]
+      description: "二次剩余、Legendre符号、互反律"
+    prerequisites:
+      - concept_id: "congruence"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "legendre_symbol"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "quadratic_reciprocity"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "class_field_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  # ---------- 代数数论 ----------
+  - concept_id: "algebraic_integer"
+    name: "代数整数"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "field_extension"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "minimal_polynomial"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "number_field"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "ideal"
+        level: "L2"
+        relation: "被依赖"
+    msc_primary: "11R04"
+    msc_secondary: ["11Rxx"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "ideal"
+    name: "理想"
+    category: "代数学"
+    msc_primary: "13Axx"
+    msc_secondary: ["16Dxx"]
+    prerequisites:
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "homomorphism"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "class_number"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "factorization"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "commutative_algebra"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 18
+
+  - concept_id: "class_number"
+    name: "类数"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "ideal"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "fractional_ideal"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "class_group"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "ideal_class_group"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "regulator"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "11R29"
+    msc_secondary: ["11Rxx", "11Sxx"]
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "elliptic_curve"
+    name: "椭圆曲线"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11G05"
+      secondary: ["14H52", "11G07", "11Fxx"]
+      description: "椭圆曲线的算术理论"
+    prerequisites:
+      - concept_id: "algebraic_curve"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "projective_geometry"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "mordell_weil"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "modular_form"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "cryptography_elliptic"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "11G05"
+    msc_secondary: ["11Gxx", "14H52"]
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "modular_form"
+    name: "模形式"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11F11"
+      secondary: ["11F12", "11F25", "11F66"]
+      description: "模形式与模函数"
+    prerequisites:
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "group_action"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "elliptic_curve"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "modularity_theorem"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "l_function"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 60
+
+  - concept_id: "l_function"
+    name: "L函数"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "modular_form"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "dirichlet_series"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "analytic_number_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "riemann_hypothesis"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "bch_conjecture"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "11M06"
+    msc_secondary: ["11Mxx", "11F66"]
+    difficulty: 5
+    estimated_hours: 55
+
+  # ---------- 算术几何与p进数 ----------
+  - concept_id: "arithmetic_geometry"
+    name: "算术几何"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "algebraic_geometry"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "number_field"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "elliptic_curve"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "arithmetic_surface"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "arakelov_theory"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "11G35"
+    msc_secondary: ["11Gxx", "14Gxx"]
+    difficulty: 5
+    estimated_hours: 60
+
+  - concept_id: "p_adic_numbers"
+    name: "p进数"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "metric_space"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "valuation"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "ultrametric"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "p_adic_analysis"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "galois_representation"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "galois_representation"
+    name: "Galois表示"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "galois_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "p_adic_numbers"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "group_representation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "langlands_program"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "fermat_last_theorem"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 55
+
+  - concept_id: "automorphic_form"
+    name: "自守形式"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "modular_form"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "representation_lie"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "langlands_program"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "trace_formula"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "11D41"
+    msc_secondary: ["11F80", "11G05"]
+    difficulty: 5
+    estimated_hours: 60
+
+  # ---------- 数理逻辑 ----------
+  - concept_id: "propositional_logic"
+    name: "命题逻辑"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03B05"
+      secondary: ["03B20", "03B22"]
+      description: "经典命题逻辑"
+    prerequisites:
+      - concept_id: "set_theory"
+        level: "L0"
+        relation: "依赖"
+      - concept_id: "boolean_algebra"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "predicate_logic"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "proof_theory"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "circuit_complexity"
+        level: "L2"
+        relation: "被依赖"
+    msc_primary: "03B05"
+    msc_secondary: ["03Bxx"]
+    difficulty: 1
+    estimated_hours: 15
+
+  - concept_id: "predicate_logic"
+    name: "谓词逻辑"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03B10"
+      secondary: ["03C07", "03F03"]
+      description: "一阶谓词逻辑"
+    prerequisites:
+      - concept_id: "propositional_logic"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "quantifiers"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "model_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "proof_theory"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "recursion_theory"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "proof_theory"
+    name: "证明论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03F"
+      secondary: ["03F03", "03F05", "03F30"]
+      description: "证明的数学分析"
+    prerequisites:
+      - concept_id: "propositional_logic"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "predicate_logic"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "natural_deduction"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "ordinal_analysis"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "proof_complexity"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "03Cxx"
+    msc_secondary: ["03C07"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "model_theory"
+    name: "模型论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03C"
+      secondary: ["03C07", "03C10", "03C45"]
+      description: "一阶逻辑模型论"
+    prerequisites:
+      - concept_id: "predicate_logic"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "set_theory"
+        level: "L0"
+        relation: "依赖"
+      - concept_id: "universal_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "stability_theory"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "o_minimality"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "recursion_theory"
+    name: "递归论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03D"
+      secondary: ["03D10", "03D25", "03D30"]
+      description: "可计算性与不可判定性"
+    prerequisites:
+      - concept_id: "predicate_logic"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "turing_machine"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "computability"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "complexity"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "set_theory"
+    name: "集合论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03E"
+      secondary: ["03E30", "03E35", "03E55"]
+      description: "公理集合论"
+    prerequisites:
+      - concept_id: "logic"
+        level: "L0"
+        relation: "依赖"
+      - concept_id: "naive_set"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "forcing"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "large_cardinal"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "descriptive_set"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "03D10"
+    msc_secondary: ["03Dxx", "68Q05"]
+    difficulty: 2
+    estimated_hours: 30
+
+  - concept_id: "forcing"
+    name: "forcing"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03E40"
+      secondary: ["03E25", "03E35", "03E50"]
+      description: "集合论强制方法"
+    prerequisites:
+      - concept_id: "set_theory"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "model_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "boolean_valued"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "continuum_hypothesis"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "independence_results"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 50
+
+  - concept_id: "large_cardinal"
+    name: "大基数"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03E55"
+      secondary: ["03E35", "03E60"]
+      description: "大基数公理层次"
+    prerequisites:
+      - concept_id: "set_theory"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "ordinal"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "inaccessible_cardinal"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "inner_model"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "determinacy"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 60
+
+  # ---------- 可计算性与复杂度 ----------
+  - concept_id: "computability"
+    name: "可计算性"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03D"
+      secondary: ["03D10", "68Q05"]
+      description: "可计算函数与不可计算性"
+    prerequisites:
+      - concept_id: "recursion_theory"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "turing_machine"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "complexity"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "algorithm"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "complexity"
+    name: "复杂度"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "computability"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "algorithm"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "turing_machine"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "np_completeness"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "cryptographic_complexity"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "formalized_proof"
+    name: "形式化证明"
+    category: "数论逻辑"
+    prerequisites:
+      - concept_id: "proof_theory"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "type_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "predicate_logic"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "proof_assistant"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "automated_theorem_proving"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  # ---------- MSC编码补充概念 ----------
+  - concept_id: "algebraic_number_theory"
+    name: "代数数论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11Rxx"
+      secondary: ["11Sxx", "12Fxx"]
+      description: "代数数域、整数环、理想类群"
+    prerequisites:
+      - concept_id: "field_extension"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "ideal"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "class_field_theory"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 55
+
+  - concept_id: "analytic_number_theory"
+    name: "解析数论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11Mxx"
+      secondary: ["11Nxx", "11Pxx"]
+      description: "解析方法研究数论问题"
+    prerequisites:
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "prime_numbers"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "l_function"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "zeta_function"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 60
+
+  - concept_id: "zeta_function"
+    name: "黎曼ζ函数"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11M06"
+      secondary: ["11M26", "11M36", "11R42"]
+      description: "Riemann zeta函数与相关L函数"
+    prerequisites:
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "analytic_number_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "riemann_hypothesis"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "prime_number_theorem"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 50
+
+  - concept_id: "type_theory"
+    name: "类型论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03B15"
+      secondary: ["03B40", "68N18", "03F50"]
+      description: "高阶逻辑与类型论"
+    prerequisites:
+      - concept_id: "lambda_calculus"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "predicate_logic"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "formalized_proof"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "11N05"
+    msc_secondary: ["11M26"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "modal_logic"
+    name: "模态逻辑"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03B45"
+      secondary: ["03B42", "03B44", "03F45"]
+      description: "模态、时态、认知逻辑"
+    prerequisites:
+      - concept_id: "propositional_logic"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "model_theory"
+        level: "L3"
+        relation: "依赖"
+    successors: []
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "zfc_axioms"
+    name: "ZFC公理"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03E30"
+      secondary: ["03E25", "03E35"]
+      description: "Zermelo-Fraenkel集合论"
+    prerequisites:
+      - concept_id: "set_theory"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "first_order_logic"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "forcing"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "large_cardinal"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+# ============================================================================
+# 统计信息
+# ============================================================================
+
+# ============================================================================
+# 第十二批新增概念 (100个)
+# 概率统计(20) | 最优化(20) | 控制论(20) | 信息论(20) | 密码学(20)
+# ============================================================================
+
+# ---------- 概率统计 ----------
+  - concept_id: "probability_measure"
+    name: "概率测度"
+    category: "概率统计"
+    msc_code: "60A10"
+    prerequisites:
+      - concept_id: "measure_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "random_variable"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "bayes_theorem"
+        level: "L2"
+        relation: "被依赖"
+    msc_primary: "03B10"
+    msc_secondary: ["03Bxx", "03Cxx"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "random_variable"
+    name: "随机变量"
+    category: "概率统计"
+    msc_code: "60A99"
+    prerequisites:
+      - concept_id: "probability_measure"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "probability_distribution"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "expectation"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "probability_distribution"
+    name: "概率分布"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "random_variable"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "central_limit_theorem"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "60E05"
+    msc_secondary: ["62Exx"]
+    difficulty: 2
+    estimated_hours: 18
+
+  - concept_id: "expectation"
+    name: "期望"
+    category: "概率统计"
+    msc_code: "60A99"
+    prerequisites:
+      - concept_id: "random_variable"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "variance"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "law_of_large_numbers"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "conditional_probability"
+    name: "条件概率"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "probability_measure"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "bayes_theorem"
+        level: "L2"
+        relation: "被依赖"
+    msc_primary: "60A99"
+    msc_secondary: ["60Axx"]
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "bayes_theorem"
+    name: "贝叶斯定理"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "conditional_probability"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "bayesian_inference"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "stochastic_process"
+    name: "随机过程"
+    category: "概率统计"
+    msc_code: "60G07"
+    prerequisites:
+      - concept_id: "random_variable"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "probability_measure"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "markov_chain"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "martingale"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "60Gxx"
+    msc_secondary: ["60G07"]
+    msc_primary: "60J10"
+    msc_secondary: ["60Jxx"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "markov_chain"
+    name: "马尔可夫链"
+    category: "概率统计"
+    msc_code: "60J10"
+    prerequisites:
+      - concept_id: "stochastic_process"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "markov_chain_monte_carlo"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "martingale"
+    name: "鞅"
+    category: "概率统计"
+    msc_code: "60G48"
+    prerequisites:
+      - concept_id: "stochastic_process"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "stochastic_integral"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "brownian_motion"
+    name: "布朗运动"
+    category: "概率统计"
+    msc_code: "60J65"
+    prerequisites:
+      - concept_id: "stochastic_process"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "stochastic_calculus"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "60J65"
+    msc_secondary: ["60Jxx", "60Hxx"]
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "law_of_large_numbers"
+    name: "大数定律"
+    category: "概率统计"
+    msc_code: "60F15"
+    prerequisites:
+      - concept_id: "expectation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "monte_carlo_method"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "central_limit_theorem"
+    name: "中心极限定理"
+    category: "概率统计"
+    msc_code: "60F05"
+    prerequisites:
+      - concept_id: "probability_distribution"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "confidence_interval"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "statistical_inference"
+    name: "统计推断"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "probability_distribution"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "parameter_estimation"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "hypothesis_testing"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "62F25"
+    msc_secondary: ["62Fxx"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "parameter_estimation"
+    name: "参数估计"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "statistical_inference"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "maximum_likelihood"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "62F03"
+    msc_secondary: ["62Fxx", "62G10"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "hypothesis_testing"
+    name: "假设检验"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "statistical_inference"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "p_value"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "62F10"
+    msc_secondary: ["62Fxx", "62Jxx"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "regression_analysis"
+    name: "回归分析"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "statistical_inference"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "time_series_analysis"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "62J05"
+    msc_secondary: ["62Jxx", "62F10"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "bayesian_inference"
+    name: "贝叶斯推断"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "bayes_theorem"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "statistical_inference"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "kalman_filter"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "93E11"
+    msc_secondary: ["60G35"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "time_series_analysis"
+    name: "时间序列分析"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "regression_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "stochastic_process"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "forecasting"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "93E11"
+    msc_secondary: ["60G35", "62M20"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "variance"
+    name: "方差"
+    category: "概率统计"
+    msc_code: "60A99"
+    prerequisites:
+      - concept_id: "expectation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "central_limit_theorem"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 12
+
+  - concept_id: "maximum_likelihood"
+    name: "最大似然估计"
+    category: "概率统计"
+    prerequisites:
+      - concept_id: "parameter_estimation"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "expectation_maximization"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 22
+
+# ---------- 最优化 ----------
+  - concept_id: "optimization_problem"
+    name: "最优化问题"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "calculus"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "convex_function"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "gradient_descent"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "90Cxx"
+    msc_secondary: ["49Kxx"]
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "convex_set"
+    name: "凸集"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "convex_function"
+        level: "L2"
+        relation: "被依赖"
+    msc_primary: "52Axx"
+    msc_secondary: ["90C25"]
+    difficulty: 2
+    estimated_hours: 18
+
+  - concept_id: "convex_function"
+    name: "凸函数"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "convex_set"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "convex_optimization"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "gradient_descent"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "gradient"
+    name: "梯度"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "partial_derivative"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "gradient_descent"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "newton_method"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "26B05"
+    msc_secondary: ["90C52"]
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "hessian_matrix"
+    name: "Hessian矩阵"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "second_derivative"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "matrix"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "newton_method"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "26B05"
+    msc_secondary: ["90C30"]
+    difficulty: 3
+    estimated_hours: 18
+
+  - concept_id: "gradient_descent"
+    name: "梯度下降法"
+    category: "最优化"
+    msc_code: "90C30"
+    prerequisites:
+      - concept_id: "gradient"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "convex_function"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "stochastic_gradient_descent"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "newton_method"
+    name: "牛顿法"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "hessian_matrix"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "gradient"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "quasi_newton"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "conjugate_gradient"
+    name: "共轭梯度法"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "gradient"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "preconditioned_cg"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "90C52"
+    msc_secondary: ["65F10", "65K05"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "lagrange_multiplier"
+    name: "拉格朗日乘子"
+    category: "最优化"
+    msc_code: "90C46"
+    prerequisites:
+      - concept_id: "optimization_problem"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "gradient"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "kkt_conditions"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "49K99"
+    msc_secondary: ["90C46"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "kkt_conditions"
+    name: "KKT条件"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "lagrange_multiplier"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "convex_optimization"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "interior_point_method"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 30
+
+  - concept_id: "linear_programming"
+    name: "线性规划"
+    category: "最优化"
+    msc_code: "90C05"
+    prerequisites:
+      - concept_id: "optimization_problem"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "simplex_method"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "90C05"
+    msc_secondary: ["90Cxx"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "simplex_method"
+    name: "单纯形法"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "linear_programming"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "interior_point_method"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "convex_optimization"
+    name: "凸优化"
+    category: "最优化"
+    msc_code: "90C25"
+    prerequisites:
+      - concept_id: "convex_function"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "optimization_problem"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "semidefinite_programming"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "interior_point_method"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "interior_point_method"
+    name: "内点法"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "convex_optimization"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "kkt_conditions"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "primal_dual_method"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "90C22"
+    msc_secondary: ["90Cxx", "15Axx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "integer_programming"
+    name: "整数规划"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "linear_programming"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "branch_and_bound"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "90C10"
+    msc_secondary: ["90Cxx", "90C57"]
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "dynamic_programming"
+    name: "动态规划"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "optimization_problem"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "recursion"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "bellman_equation"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "optimal_control"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "49Lxx"
+    msc_secondary: ["90C39", "93Cxx"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "stochastic_optimization"
+    name: "随机优化"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "optimization_problem"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "probability_distribution"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "stochastic_gradient_descent"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "optimal_control"
+    name: "最优控制"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "dynamic_programming"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "lqr_control"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "mpc"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "quadratic_programming"
+    name: "二次规划"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "convex_optimization"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "quadratic_form"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "sequential_quadratic"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 28
+
+  - concept_id: "nonlinear_programming"
+    name: "非线性规划"
+    category: "最优化"
+    prerequisites:
+      - concept_id: "optimization_problem"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "gradient"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "sequential_quadratic"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "90C30"
+    msc_secondary: ["90Cxx"]
+    difficulty: 3
+    estimated_hours: 32
+
+# ---------- 控制论 ----------
+  - concept_id: "control_system"
+    name: "控制系统"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "transfer_function"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "state_space"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "93Bxx"
+    msc_secondary: ["93Cxx"]
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "transfer_function"
+    name: "传递函数"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "control_system"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "laplace_transform"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "bode_plot"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "root_locus"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "state_space"
+    name: "状态空间"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "control_system"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "matrix"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "state_feedback"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "observability"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "93C05"
+    msc_secondary: ["93Bxx"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "feedback_control"
+    name: "反馈控制"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "control_system"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "transfer_function"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "pid_controller"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "stability_analysis"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "93B52"
+    msc_secondary: ["93Cxx"]
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "stability_analysis"
+    name: "稳定性分析"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "feedback_control"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "eigenvalue"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "lyapunov_stability"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "pid_controller"
+    name: "PID控制器"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "feedback_control"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "transfer_function"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "pid_tuning"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "93D05"
+    msc_secondary: ["34D20", "37C75"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "root_locus"
+    name: "根轨迹法"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "transfer_function"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "eigenvalue"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "controller_design"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "bode_plot"
+    name: "Bode图"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "transfer_function"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "frequency_response"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "nyquist_criterion"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "nyquist_criterion"
+    name: "Nyquist判据"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "bode_plot"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "robust_control"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "93D10"
+    msc_secondary: ["93Cxx"]
+    difficulty: 4
+    estimated_hours: 30
+
+  - concept_id: "controllability"
+    name: "能控性"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "state_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "matrix_rank"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "state_feedback"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "93B05"
+    msc_secondary: ["93Cxx"]
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "observability"
+    name: "能观性"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "state_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "matrix_rank"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "state_observer"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "state_feedback"
+    name: "状态反馈"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "controllability"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "state_space"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "pole_placement"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "lqr_control"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "state_observer"
+    name: "状态观测器"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "observability"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "state_space"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "kalman_filter"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "kalman_filter"
+    name: "Kalman滤波"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "state_observer"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "stochastic_process"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "extended_kalman_filter"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "lqr_control"
+    name: "LQR控制"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "state_feedback"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "optimal_control"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "mpc"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "mpc"
+    name: "模型预测控制"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "optimal_control"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "state_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "optimization_problem"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "nonlinear_mpc"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "robust_control"
+    name: "鲁棒控制"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "stability_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "nyquist_criterion"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "h_infinity"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "nonlinear_control"
+    name: "非线性控制"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "control_system"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "lyapunov_stability"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "feedback_linearization"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "93C10"
+    msc_secondary: ["93Cxx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "adaptive_control"
+    name: "自适应控制"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "control_system"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "parameter_estimation"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "model_reference"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "93C40"
+    msc_secondary: ["93Cxx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "system_identification"
+    name: "系统辨识"
+    category: "控制论"
+    prerequisites:
+      - concept_id: "control_system"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "parameter_estimation"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "arx_model"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+# ---------- 信息论 ----------
+  - concept_id: "information"
+    name: "信息"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "probability_measure"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "shannon_entropy"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94A15"
+    msc_secondary: ["94Axx"]
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "shannon_entropy"
+    name: "香农熵"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "information"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "probability_distribution"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "expectation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "mutual_information"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "kl_divergence"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "mutual_information"
+    name: "互信息"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "shannon_entropy"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "channel_capacity"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94A17"
+    msc_secondary: ["94Axx"]
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "kl_divergence"
+    name: "KL散度"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "shannon_entropy"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "convex_function"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "variational_inference"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "expectation_maximization"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "source_coding"
+    name: "信源编码"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "shannon_entropy"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "huffman_coding"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "arithmetic_coding"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94A29"
+    msc_secondary: ["94Axx", "68P30"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "channel_capacity"
+    name: "信道容量"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "mutual_information"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "channel_coding"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "shannon_limit"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "channel_coding"
+    name: "信道编码"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "probability_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "finite_field"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "error_correction"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "channel_capacity"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94Bxx"
+    msc_secondary: ["94Axx"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "error_correction"
+    name: "纠错编码"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "channel_coding"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "linear_code"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "hamming_code"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "reed_solomon"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "reed_solomon"
+    name: "Reed-Solomon码"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "error_correction"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "finite_field"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "bch_code"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "94B15"
+    msc_secondary: ["94Bxx", "11T71"]
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "ldpc_code"
+    name: "LDPC码"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "error_correction"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "graph_theory"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "turbo_code"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "94B05"
+    msc_secondary: ["94Bxx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "data_compression"
+    name: "数据压缩"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "shannon_entropy"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "lossless_compression"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "lossy_compression"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94A29"
+    msc_secondary: ["68P30"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "huffman_coding"
+    name: "Huffman编码"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "source_coding"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "adaptive_huffman"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "arithmetic_coding"
+    name: "算术编码"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "source_coding"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "range_coding"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "lossy_compression"
+    name: "有损压缩"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "data_compression"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "transform_coding"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "rate_distortion"
+    name: "率失真理论"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "shannon_entropy"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "convex_optimization"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "lossy_compression"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94A34"
+    msc_secondary: ["94Axx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "network_information"
+    name: "网络信息论"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "channel_capacity"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "broadcast_channel"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "cryptographic_protocol"
+    name: "密码学协议"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "shannon_entropy"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "complexity"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "zero_knowledge_proof"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["94A62"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "quantum_information"
+    name: "量子信息"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "shannon_entropy"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "quantum_mechanics"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "quantum_channel"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "81P45"
+    msc_secondary: ["94A40", "81Pxx"]
+    difficulty: 5
+    estimated_hours: 50
+
+  - concept_id: "algorithmic_information"
+    name: "算法信息论"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "shannon_entropy"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "computability"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "kolmogorov_complexity"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "differential_privacy"
+    name: "差分隐私"
+    category: "信息论"
+    prerequisites:
+      - concept_id: "probability_measure"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "privacy_mechanism"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+# ---------- 密码学 ----------
+  - concept_id: "symmetric_encryption"
+    name: "对称加密"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "permutation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "aes"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "block_cipher"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["11T71", "14G50"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "aes"
+    name: "AES"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "symmetric_encryption"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "finite_field"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "aes_modes"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "public_key"
+    name: "公钥密码学"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "number_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "one_way_function"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "rsa"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "diffie_hellman"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["11T71", "14G50"]
+    msc_primary: "94A60"
+    msc_secondary: ["11Axx"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "rsa"
+    name: "RSA"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "public_key"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "modular_arithmetic"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "rsa_oaep"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "diffie_hellman"
+    name: "Diffie-Hellman"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "public_key"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "discrete_logarithm"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "elliptic_curve_dh"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "elliptic_curve_crypto"
+    name: "椭圆曲线密码"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "elliptic_curve"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "public_key"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "ecc_protocols"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["11G20", "14H52"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "hash_function"
+    name: "哈希函数"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "one_way_function"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "sha256"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "merkle_tree"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["68P05"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "digital_signature"
+    name: "数字签名"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "public_key"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "hash_function"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "ecdsa"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "94A62"
+    msc_secondary: ["94A60"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "mac"
+    name: "消息认证码"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "symmetric_encryption"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "hash_function"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "hmac"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "94A62"
+    msc_secondary: ["94A60"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "zero_knowledge_proof"
+    name: "零知识证明"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "cryptographic_protocol"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "commitment_scheme"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "zk_snarks"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "zk_snarks"
+    name: "zk-SNARKs"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "zero_knowledge_proof"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "polynomial_commitment"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "zk_starks"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 60
+
+  - concept_id: "homomorphic_encryption"
+    name: "同态加密"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "public_key"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "fully_homomorphic"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["11T71"]
+    difficulty: 5
+    estimated_hours: 55
+
+  - concept_id: "quantum_crypto"
+    name: "量子密码"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "quantum_mechanics"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "information"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "quantum_key_distribution"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "81P94"
+    msc_secondary: ["94A60"]
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "post_quantum"
+    name: "后量子密码"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "lattice_based_crypto"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "code_based_crypto"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "kyber"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 55
+
+  - concept_id: "blockchain_consensus"
+    name: "区块链共识"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "hash_function"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "digital_signature"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "proof_of_work"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "mpc"
+    name: "安全多方计算"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "secret_sharing"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "oblivious_transfer"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "garbled_circuit"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "side_channel"
+    name: "侧信道攻击"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "aes"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "statistical_inference"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "power_analysis"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["68P25"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "provable_security"
+    name: "可证明安全"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "reduction_proof"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "complexity"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "random_oracle"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "lattice_based_crypto"
+    name: "格密码"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "lattice"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "worst_case_hardness"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "learning_with_errors"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "identity_based"
+    name: "基于身份的加密"
+    category: "密码学"
+    prerequisites:
+      - concept_id: "public_key"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "bilinear_pairing"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "attribute_based"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+# ============================================================================
+# 第十三批新增概念 (100个)
+# 金融数学(20) | 生物数学(20) | 计算数学(20) | 物理数学(20) | 数据科学(20)
+# ============================================================================
+
+# ---------- 金融数学 ----------
+  - concept_id: "stochastic_calculus"
+    name: "随机分析"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "brownian_motion"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "martingale"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "measure_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "ito_calculus"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "black_scholes"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 50
+
+  - concept_id: "ito_calculus"
+    name: "Itô微积分"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "stochastic_calculus"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "stochastic_integral"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "ito_lemma"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "sde"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "60H05"
+    msc_secondary: ["60Hxx", "91Gxx"]
+    difficulty: 5
+    estimated_hours: 45
+
+  - concept_id: "ito_lemma"
+    name: "Itô引理"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "ito_calculus"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "taylor_expansion"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "black_scholes"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 30
+
+  - concept_id: "sde"
+    name: "随机微分方程"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "ito_calculus"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "monte_carlo_simulation"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 55
+
+  - concept_id: "black_scholes"
+    name: "Black-Scholes模型"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "ito_lemma"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "risk_neutral"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "option_pricing"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "65C05"
+    msc_secondary: ["91G60", "65Cxx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "risk_neutral"
+    name: "风险中性定价"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "martingale"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "probability_measure"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "black_scholes"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "fundamental_theorem"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "91G20"
+    msc_secondary: ["60Hxx", "91Gxx"]
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "option_pricing"
+    name: "期权定价"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "black_scholes"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "greeks"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "implied_volatility"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "greeks"
+    name: "希腊字母"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "option_pricing"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "partial_derivative"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "risk_management"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "91G20"
+    msc_secondary: ["91Gxx", "60Hxx"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "implied_volatility"
+    name: "隐含波动率"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "option_pricing"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "inverse_problem"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "volatility_smile"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 30
+
+  - concept_id: "volatility_smile"
+    name: "波动率微笑"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "implied_volatility"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "stochastic_volatility"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "local_volatility"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "91G20"
+    msc_secondary: ["91Gxx", "60Hxx"]
+    difficulty: 4
+    estimated_hours: 30
+
+  - concept_id: "stochastic_volatility"
+    name: "随机波动率模型"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "sde"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "parameter_estimation"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "heston_model"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 50
+
+  - concept_id: "heston_model"
+    name: "Heston模型"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "stochastic_volatility"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "characteristic_function"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "volatility_surface"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 45
+
+  - concept_id: "monte_carlo_simulation"
+    name: "蒙特卡洛模拟"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "sde"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "law_of_large_numbers"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "american_option"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "american_option"
+    name: "美式期权定价"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "monte_carlo_simulation"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "optimal_stopping"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "binomial_tree"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "binomial_tree"
+    name: "二叉树模型"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "american_option"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "markov_chain"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "trinomial_tree"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "fundamental_theorem"
+    name: "资产定价基本定理"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "risk_neutral"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "martingale_representation"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "arbitrage_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 45
+
+  - concept_id: "interest_rate_model"
+    name: "利率模型"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "sde"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "bond_pricing"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "yield_curve"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "91G30"
+    msc_secondary: ["91Gxx", "60Hxx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "credit_risk"
+    name: "信用风险模型"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "probability_distribution"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "copula"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "cdo_pricing"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "91G40"
+    msc_secondary: ["91Gxx"]
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "portfolio_optimization"
+    name: "投资组合优化"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "mean_variance"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "quadratic_programming"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "factor_model"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "risk_management"
+    name: "风险管理"
+    category: "金融数学"
+    prerequisites:
+      - concept_id: "greeks"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "var"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "stress_testing"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "91G10"
+    msc_secondary: ["91Gxx"]
+    difficulty: 4
+    estimated_hours: 35
+
+# ---------- 生物数学 ----------
+  - concept_id: "population_dynamics"
+    name: "种群动力学"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "exponential_growth"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "logistic_growth"
+        level: "L2"
+        relation: "被依赖"
+    msc_primary: "91G70"
+    msc_secondary: ["91Gxx", "62P05"]
+    difficulty: 2
+    estimated_hours: 25
+
+  - concept_id: "logistic_growth"
+    name: "Logistic增长"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "population_dynamics"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "nonlinear_dynamics"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "predator_prey"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "predator_prey"
+    name: "捕食者-猎物模型"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "logistic_growth"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "dynamical_systems"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "lotka_volterra"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "92D25"
+    msc_secondary: ["34Cxx", "34Dxx"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "lotka_volterra"
+    name: "Lotka-Volterra方程"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "predator_prey"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "phase_portrait"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "competition_model"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "sir_model"
+    name: "SIR模型"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "population_dynamics"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "compartment_model"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "seir_model"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "epidemic_control"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "92D30"
+    msc_secondary: ["34Cxx", "92Dxx"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "seir_model"
+    name: "SEIR模型"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "sir_model"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "network_epidemic"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "reaction_diffusion"
+    name: "反应扩散方程"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "partial_differential_equations"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "pattern_formation"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "turing_pattern"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "35K57"
+    msc_secondary: ["92Cxx", "35Bxx"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "turing_pattern"
+    name: "Turing模式"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "reaction_diffusion"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "linear_stability"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "morphogenesis"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "evolutionary_dynamics"
+    name: "进化动力学"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "game_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "population_dynamics"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "replicator_dynamics"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "92D15"
+    msc_secondary: ["91A22", "92Dxx"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "replicator_dynamics"
+    name: "复制动力学"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "evolutionary_dynamics"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "dynamical_systems"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "ess"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "ess"
+    name: "进化稳定策略"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "replicator_dynamics"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "nash_equilibrium"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "evolutionary_game"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "phylogenetics"
+    name: "系统发生学"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "tree"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "markov_chain"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "maximum_likelihood_phylogeny"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "92D15"
+    msc_secondary: ["92B10", "05C05"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "population_genetics"
+    name: "群体遗传学"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "probability_distribution"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "wright_fisher"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "coalescent_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "coalescent_theory"
+    name: "溯祖理论"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "population_genetics"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "stochastic_process"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "demographic_inference"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "biological_oscillator"
+    name: "生物振荡器"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "dynamical_systems"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "limit_cycle"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "circadian_rhythm"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "neural_dynamics"
+    name: "神经动力学"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "bifurcation_theory"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "hodgkin_huxley"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "92C20"
+    msc_secondary: ["37N25", "92B20"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "hodgkin_huxley"
+    name: "Hodgkin-Huxley模型"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "neural_dynamics"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "ion_channel"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "fitzhugh_nagumo"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "chemotaxis"
+    name: "趋化性模型"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "reaction_diffusion"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "keller_segel"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "collective_motion"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "morphogenesis"
+    name: "形态发生"
+    category: "生物数学"
+    prerequisites:
+      - concept_id: "turing_pattern"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "mechanochemical"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "developmental_model"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 50
+
+# ---------- 计算数学 ----------
+  - concept_id: "finite_difference"
+    name: "有限差分法"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "taylor_expansion"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "finite_difference_pde"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "65M06"
+    msc_secondary: ["65N06", "65Mxx"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "finite_element"
+    name: "有限元方法"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "variational_methods"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "sobolev_spaces"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "fem_implementation"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "65N30"
+    msc_secondary: ["65M60", "65Mxx"]
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "finite_volume"
+    name: "有限体积法"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "conservation_law"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "divergence_theorem"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "cfd"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "65M08"
+    msc_secondary: ["65N08", "65Mxx"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "spectral_method"
+    name: "谱方法"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "fourier_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "orthogonal_polynomial"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "pseudospectral"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "65M70"
+    msc_secondary: ["65N35", "65Mxx"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "sparse_matrix"
+    name: "稀疏矩阵"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "matrix"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "graph_theory"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "sparse_solver"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "65F50"
+    msc_secondary: ["65Fxx", "65Y05"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "iterative_method"
+    name: "迭代法"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "matrix_norm"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "jacobi_method"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "gauss_seidel"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "65F10"
+    msc_secondary: ["65Fxx"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "conjugate_gradient_method"
+    name: "共轭梯度法"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "iterative_method"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "sparse_matrix"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "preconditioned_cg"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "65F10"
+    msc_secondary: ["65Fxx"]
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "multigrid"
+    name: "多重网格法"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "iterative_method"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "coarse_grid"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "algebraic_multigrid"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "65N55"
+    msc_secondary: ["65F10", "65M55"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "preconditioner"
+    name: "预条件子"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "iterative_method"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "incomplete_lu"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "ilu_preconditioner"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "65F08"
+    msc_secondary: ["65Fxx"]
+    difficulty: 4
+    estimated_hours: 35
+
+  - concept_id: "numerical_integration"
+    name: "数值积分"
+    category: "计算数学"
+    msc_code: "65D30"
+    prerequisites:
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "interpolation"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "gaussian_quadrature"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "65D30"
+    msc_secondary: ["65Dxx"]
+    difficulty: 2
+    estimated_hours: 25
+
+  - concept_id: "numerical_ode"
+    name: "常微分方程数值解"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "finite_difference"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "runge_kutta"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "65L05"
+    msc_secondary: ["65Lxx"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "runge_kutta"
+    name: "Runge-Kutta方法"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "numerical_ode"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "taylor_series"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "adaptive_rk"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "numerical_pde"
+    name: "偏微分方程数值解"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "partial_differential_equations"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "finite_difference_pde"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "cfd"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "65M06"
+    msc_secondary: ["65Nxx", "65Mxx"]
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "monte_carlo_numerical"
+    name: "蒙特卡洛数值方法"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "random_number"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "statistical_sampling"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "quasi_monte_carlo"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "fast_fourier_transform"
+    name: "快速傅里叶变换"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "fourier_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "discrete_fourier"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "fft_application"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "65T50"
+    msc_secondary: ["42A38", "65Txx"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "numerical_linear_algebra"
+    name: "数值线性代数"
+    category: "计算数学"
+    msc_code: "65Fxx"
+    prerequisites:
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "matrix_decomposition"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "eigenvalue_computation"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "domain_decomposition"
+    name: "区域分解"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "parallel_computing"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "boundary_condition"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "schwarz_method"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "65F15"
+    msc_secondary: ["65Fxx"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "adaptive_mesh"
+    name: "自适应网格"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "finite_element"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "error_estimation"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "hp_adaptive"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "uncertainty_quantification"
+    name: "不确定性量化"
+    category: "计算数学"
+    prerequisites:
+      - concept_id: "probability_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "sensitivity_analysis"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "polynomial_chaos"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+# ---------- 物理数学 ----------
+  - concept_id: "classical_mechanics"
+    name: "经典力学"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "differential_equations"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "variational_methods"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "lagrangian"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "70Fxx"
+    msc_secondary: ["37Jxx"]
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "lagrangian"
+    name: "拉格朗日力学"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "classical_mechanics"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "euler_lagrange"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "hamiltonian"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "hamiltonian"
+    name: "哈密顿力学"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "lagrangian"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "symplectic_geometry"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "hamiltonian_system"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "70H05"
+    msc_secondary: ["37Jxx", "70Fxx"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "hamiltonian_system"
+    name: "哈密顿系统"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "hamiltonian"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "dynamical_systems"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "integrable_system"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "quantum_mechanics"
+    name: "量子力学"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "hilbert_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "operator_theory"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "schrodinger_equation"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 55
+
+  - concept_id: "schrodinger_equation"
+    name: "薛定谔方程"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "quantum_mechanics"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "partial_differential_equations"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "quantum_harmonic"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "81Q05"
+    msc_secondary: ["35J10", "81Qxx"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "path_integral"
+    name: "路径积分"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "quantum_mechanics"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "functional_integral"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "quantum_field_theory"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "81S40"
+    msc_secondary: ["81Txx", "58D30"]
+    difficulty: 5
+    estimated_hours: 60
+
+  - concept_id: "gauge_theory"
+    name: "规范理论"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "fiber_bundle"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "yang_mills"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 60
+
+  - concept_id: "general_relativity"
+    name: "广义相对论"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "differential_geometry"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "riemannian_geometry"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "einstein_equation"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "83Cxx"
+    msc_secondary: ["53C50", "83Exx"]
+    difficulty: 5
+    estimated_hours: 65
+
+  - concept_id: "statistical_mechanics"
+    name: "统计力学"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "probability_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "ensemble_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "phase_transition"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "82Bxx"
+    msc_secondary: ["60K35", "82Cxx"]
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "phase_transition"
+    name: "相变理论"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "statistical_mechanics"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "renormalization"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "critical_phenomena"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "electromagnetism"
+    name: "电磁学"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "vector_calculus"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "maxwell_equations"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "electrodynamics"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "81T17"
+    msc_secondary: ["81Txx", "82B28"]
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "fluid_dynamics"
+    name: "流体动力学"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "partial_differential_equations"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "navier_stokes"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "turbulence"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "turbulence"
+    name: "湍流理论"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "fluid_dynamics"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "statistical_mechanics"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "large_eddy"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 55
+
+  - concept_id: "quantum_field_theory"
+    name: "量子场论"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "path_integral"
+        level: "L5"
+        relation: "依赖"
+      - concept_id: "lie_algebra"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "standard_model"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 70
+
+  - concept_id: "renormalization"
+    name: "重整化群"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "quantum_field_theory"
+        level: "L5"
+        relation: "依赖"
+      - concept_id: "scaling_theory"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "critical_exponent"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 55
+
+  - concept_id: "conformal_field_theory"
+    name: "共形场论"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "quantum_field_theory"
+        level: "L5"
+        relation: "依赖"
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "string_theory"
+        level: "L5"
+        relation: "被依赖"
+    msc_primary: "81T40"
+    msc_secondary: ["81Rxx", "81Txx"]
+    difficulty: 5
+    estimated_hours: 65
+
+  - concept_id: "string_theory"
+    name: "弦理论"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "conformal_field_theory"
+        level: "L5"
+        relation: "依赖"
+      - concept_id: "supersymmetry"
+        level: "L5"
+        relation: "依赖"
+    successors:
+      - concept_id: "m_theory"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 80
+
+  - concept_id: "supersymmetry"
+    name: "超对称"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "lie_superalgebra"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "spinor"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "supergravity"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 60
+
+  - concept_id: "integrable_system"
+    name: "可积系统"
+    category: "物理数学"
+    prerequisites:
+      - concept_id: "hamiltonian_system"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "spectral_theory"
+        level: "L4"
+        relation: "依赖"
+    successors:
+      - concept_id: "soliton"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 50
+
+# ---------- 数据科学 ----------
+  - concept_id: "data_preprocessing"
+    name: "数据预处理"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "statistics"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "data_types"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "feature_engineering"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "62Nxx"
+    msc_secondary: ["68T05"]
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "feature_engineering"
+    name: "特征工程"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "data_preprocessing"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "domain_knowledge"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "feature_selection"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "pca"
+    name: "主成分分析"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "eigenvalue"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "variance"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "dimension_reduction"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "62H25"
+    msc_secondary: ["62Hxx", "15A18"]
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "svm"
+    name: "支持向量机"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "optimization"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "kernel_method"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "svm_kernel"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "68T05"
+    msc_secondary: ["62H30", "90C90"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "decision_tree"
+    name: "决策树"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "information_gain"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "entropy"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "random_forest"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "68T05"
+    msc_secondary: ["62H30", "62-07"]
+    difficulty: 2
+    estimated_hours: 25
+
+  - concept_id: "random_forest"
+    name: "随机森林"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "decision_tree"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "bagging"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "gradient_boosting"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "gradient_boosting"
+    name: "梯度提升"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "random_forest"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "gradient_descent"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "xgboost"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "68T05"
+    msc_secondary: ["62H30", "62-07"]
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "neural_network"
+    name: "神经网络"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "gradient_descent"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "activation_function"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "backpropagation"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "68T07"
+    msc_secondary: ["92B20", "68T05"]
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "backpropagation"
+    name: "反向传播"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "neural_network"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "chain_rule"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "deep_learning"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "deep_learning"
+    name: "深度学习"
+    category: "数据科学"
+    msc_code: "68T07"
+    prerequisites:
+      - concept_id: "backpropagation"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "optimization"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "cnn"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "rnn"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "68T07"
+    msc_secondary: ["68T05", "94A08"]
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "cnn"
+    name: "卷积神经网络"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "deep_learning"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "convolution"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "resnet"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "rnn"
+    name: "循环神经网络"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "deep_learning"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "sequential_model"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "lstm"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "lstm"
+    name: "长短期记忆网络"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "rnn"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "vanishing_gradient"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "attention"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "68T07"
+    msc_secondary: ["68T05", "93C57"]
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "attention"
+    name: "注意力机制"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "lstm"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "softmax"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "transformer"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "transformer"
+    name: "Transformer"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "attention"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "positional_encoding"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "bert"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "68T50"
+    msc_secondary: ["68T07", "68T05"]
+    difficulty: 4
+    estimated_hours: 45
+
+  - concept_id: "adam_optimizer"
+    name: "Adam优化器"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "gradient_descent"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "momentum"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "adaptive_lr"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "batch_normalization"
+    name: "批归一化"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "neural_network"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "covariance_shift"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "resnet"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "dropout"
+    name: "Dropout正则化"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "neural_network"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "overfitting"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "regularization"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "autoencoder"
+    name: "自编码器"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "neural_network"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "dimension_reduction"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "vae"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
+
+  - concept_id: "gan"
+    name: "生成对抗网络"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "deep_learning"
+        level: "L4"
+        relation: "依赖"
+      - concept_id: "game_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "conditional_gan"
+        level: "L4"
+        relation: "被依赖"
+    msc_primary: "68T07"
+    msc_secondary: ["68T05", "94A08"]
+    difficulty: 4
+    estimated_hours: 50
+
+  - concept_id: "reinforcement_learning"
+    name: "强化学习"
+    category: "数据科学"
+    prerequisites:
+      - concept_id: "markov_decision_process"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "dynamic_programming"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "q_learning"
+        level: "L3"
+        relation: "被依赖"
+    msc_primary: "68T05"
+    msc_secondary: ["93E35", "91A80"]
+    difficulty: 4
+    estimated_hours: 50
+
+# ============================================================================
+# 应用数学概念MSC编码补充 (2026-04-04)
+# 补充概念: 插值、线性方程组求解、特征值计算、机器学习、统计学习理论、期望方差
+# ============================================================================
+
+  # ---------- 计算数学补充 ----------
+  - concept_id: "interpolation"
+    name: "插值"
+    category: "计算数学"
+    msc_code: "65D05"
+    prerequisites:
+      - concept_id: "numerical_analysis"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "numerical_integration"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "spline_interpolation"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "linear_system_solver"
+    name: "线性方程组求解"
+    category: "计算数学"
+    msc_code: "65F10"
+    prerequisites:
+      - concept_id: "numerical_linear_algebra"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "matrix"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "sparse_linear_system"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "eigenvalue_computation"
+    name: "特征值计算"
+    category: "计算数学"
+    msc_code: "65F15"
+    prerequisites:
+      - concept_id: "numerical_linear_algebra"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "eigenvalue"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "spectral_clustering"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  # ---------- 数据科学补充 ----------
+  - concept_id: "machine_learning"
+    name: "机器学习"
+    category: "数据科学"
+    msc_code: "68T05"
+    prerequisites:
+      - concept_id: "statistics"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "optimization"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "deep_learning"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "supervised_learning"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "statistical_learning_theory"
+    name: "统计学习理论"
+    category: "数据科学"
+    msc_code: "62G99"
+    prerequisites:
+      - concept_id: "machine_learning"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "probability_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "statistical_inference"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "vc_dimension"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  # ---------- 概率统计补充 ----------
+  - concept_id: "expectation_variance"
+    name: "期望方差"
+    category: "概率统计"
+    msc_code: "62J99"
+    prerequisites:
+      - concept_id: "expectation"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "variance"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "covariance"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "regression_analysis"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+
+metadata:
+  total_concepts: 300
+  categories:
+    - name: "分析学"
+      count: 25
+      difficulty_range: "2-5"
+    - name: "代数学"
+      count: 25
+      difficulty_range: "1-5"
+    - name: "几何拓扑"
+      count: 25
+      difficulty_range: "2-5"
+    - name: "数论逻辑"
+      count: 25
+      difficulty_range: "1-5"
+    - name: "概率统计"
+      count: 20
+      difficulty_range: "2-4"
+    - name: "最优化"
+      count: 20
+      difficulty_range: "2-4"
+    - name: "控制论"
+      count: 20
+      difficulty_range: "2-4"
+    - name: "信息论"
+      count: 20
+      difficulty_range: "2-5"
+    - name: "密码学"
+      count: 20
+      difficulty_range: "3-5"
+    - name: "金融数学"
+      count: 20
+      difficulty_range: "3-5"
+    - name: "生物数学"
+      count: 20
+      difficulty_range: "2-5"
+    - name: "计算数学"
+      count: 20
+      difficulty_range: "2-5"
+    - name: "物理数学"
+      count: 20
+      difficulty_range: "3-5"
+    - name: "数据科学"
+      count: 20
+      difficulty_range: "2-4"
+  total_estimated_hours: 10258
+  generated_date: "2026-04-04"
+  version: "3.0"
+  extended_by: "第十三批扩展"
+  cross_discipline_connections:
+    - "信息论 ↔ 概率统计: 香农熵、KL散度"
+    - "最优化 ↔ 控制论: 最优控制、MPC"
+    - "密码学 ↔ 数论: RSA、椭圆曲线"
+    - "密码学 ↔ 代数: 群论、有限域"
+    - "金融数学 ↔ 概率统计: 随机分析、鞅理论"
+    - "金融数学 ↔ 随机分析: Itô引理、SDE"
+    - "生物数学 ↔ 微分方程: 种群动力学、SIR模型"
+    - "生物数学 ↔ 动力系统: 进化动力学、混沌"
+    - "计算数学 ↔ 数值分析: 有限差分、有限元"
+    - "计算数学 ↔ 线性代数: 稀疏矩阵、迭代法"
+    - "物理数学 ↔ 泛函分析: 量子力学、算子理论"
+    - "物理数学 ↔ 李群: 规范理论、粒子物理"
+    - "数据科学 ↔ 概率统计: 贝叶斯方法、推断"
+    - "数据科学 ↔ 优化: 梯度下降、凸优化"
+

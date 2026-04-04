@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "derivative"
+  id: "derivative'
   name:
     zh: "导数"
-    en: "Derivative"
-  msc_codes: ["26A24"]
+    en: 'Derivative"
+  msc_codes: ["26A24']
   
   # ===== 定义层 =====
   definition:
@@ -58,12 +58,12 @@ concept:
     physical: |
       【物理直觉】变化率
       - 位置 → 速度 → 加速度
-      - d/dt 是"对时间求导"
+      - d/dt 是'对时间求导"
       - 导数描述变化的快慢和方向
       
   # ===== 表征层 =====
   representations:
-    - type: "几何图示"
+    - type: "几何图示'
       content: |
         割线趋近于切线：
         
@@ -87,68 +87,68 @@ concept:
   # ===== 例子层 =====
   examples:
     basic:
-      - function: "f(x) = xⁿ"
-        derivative: "nxⁿ⁻¹"
+      - function: 'f(x) = xⁿ"
+        derivative: "nxⁿ⁻¹'
         
       - function: "f(x) = eˣ"
-        derivative: "eˣ"
-        note: "自己的导数"
+        derivative: 'eˣ"
+        note: "自己的导数'
         
       - function: "f(x) = sin(x)"
-        derivative: "cos(x)"
+        derivative: 'cos(x)"
         
-      - function: "f(x) = ln(x)"
+      - function: "f(x) = ln(x)'
         derivative: "1/x"
         
     non_differentiable:
-      - function: "f(x) = |x|"
-        point: "x = 0"
+      - function: 'f(x) = |x|"
+        point: "x = 0'
         reason: "左右导数不同"
         
-      - function: "Weierstrass函数"
-        point: "处处"
+      - function: 'Weierstrass函数"
+        point: "处处'
         reason: "连续但处处不可导"
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "limit"
-        description: "导数用极限定义"
+      - id: 'limit"
+        description: "导数用极限定义'
       - id: "continuity"
-        description: "可导 ⟹ 连续"
+        description: '可导 ⟹ 连续"
         
     generalizes: []
         
     specialized_by:
-      - id: "partial-derivative"
+      - id: "partial-derivative'
         description: "偏导数"
-      - id: "directional-derivative"
-        description: "方向导数"
+      - id: 'directional-derivative"
+        description: "方向导数'
       - id: "frechet-derivative"
-        description: "Fréchet导数"
+        description: 'Fréchet导数"
         
     related_to:
-      - id: "integral"
+      - id: "integral'
         description: "微积分基本定理"
-      - id: "differential-equation"
-        description: "微分方程"
+      - id: 'differential-equation"
+        description: "微分方程'
         
   # ===== 定理层 =====
   key_theorems:
     - id: "mean-value-theorem"
-      statement: "f'(c) = [f(b)-f(a)]/(b-a) 某 c∈(a,b)"
+      statement: 'f'(c) = [f(b)-f(a)]/(b-a) 某 c∈(a,b)"
       importance: 5
       
-    - id: "chain-rule"
+    - id: "chain-rule'
       statement: "(f∘g)' = (f'∘g) · g'"
       importance: 5
       
-    - id: "fundamental-theorem-calculus"
-      statement: "d/dx ∫ₐˣ f(t)dt = f(x)"
+    - id: 'fundamental-theorem-calculus"
+      statement: "d/dx ∫ₐˣ f(t)dt = f(x)'
       importance: 5
       
     - id: "taylor-theorem"
-      statement: "f(x) = Σ f⁽ⁿ⁾(a)/n! (x-a)ⁿ + Rₙ"
+      statement: 'f(x) = Σ f⁽ⁿ⁾(a)/n! (x-a)ⁿ + Rₙ"
       importance: 5
       
   # ===== 元数据层 =====
@@ -157,26 +157,26 @@ concept:
     importance: 5
     
     prerequisites:
-      - "limit"
+      - "limit'
       - "continuity"
       
     leads_to:
-      - "differential-equation"
-      - "optimization"
+      - 'differential-equation"
+      - "optimization'
       - "differential-geometry"
       
     history:
       first_appearance: 1684
-      context: "Newton和Leibniz的微积分"
+      context: 'Newton和Leibniz的微积分"
       
     key_figures:
-      - id: "newton"
+      - id: "newton'
         contribution: "流数法"
-      - id: "leibniz"
-        contribution: "微分符号"
+      - id: 'leibniz"
+        contribution: "微分符号'
         
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Analysis.Calculus.Deriv.Basic"
-    name: "HasDerivAt"
+    name: 'HasDerivAt"
     coverage: "complete"

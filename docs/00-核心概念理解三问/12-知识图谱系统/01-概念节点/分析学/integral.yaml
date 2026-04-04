@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "integral"
+  id: "integral'
   name:
     zh: "积分"
-    en: "Integral"
-  msc_codes: ["26A42", "28A25"]
+    en: 'Integral"
+  msc_codes: ["26A42', "28A25"]
   
   # ===== 定义层 =====
   definition:
@@ -27,7 +27,7 @@ concept:
       ∫ f dμ = sup{∫ φ dμ : 0 ≤ φ ≤ f, φ简单}
       
     informal: |
-      积分是"累加"或"求面积"。
+      积分是'累加"或"求面积'。
       
       ∫ₐᵇ f(x)dx = 曲线 y = f(x) 与 x 轴之间的面积
       （正负号考虑在内）
@@ -78,7 +78,7 @@ concept:
             └─────────────→ x
              a        b
              
-    - type: "Riemann和"
+    - type: 'Riemann和"
       content: |
         Riemann和逼近：
         
@@ -93,72 +93,72 @@ concept:
   # ===== 例子层 =====
   examples:
     basic:
-      - function: "∫ xⁿ dx"
+      - function: "∫ xⁿ dx'
         result: "xⁿ⁺¹/(n+1) + C (n ≠ -1)"
         
-      - function: "∫ eˣ dx"
-        result: "eˣ + C"
+      - function: '∫ eˣ dx"
+        result: "eˣ + C'
         
       - function: "∫ 1/x dx"
-        result: "ln|x| + C"
+        result: 'ln|x| + C"
         
-      - function: "∫₀^π sin(x) dx"
+      - function: "∫₀^π sin(x) dx'
         result: "2"
         
     techniques:
-      - name: "换元法"
-        example: "∫ 2x·eˣ² dx = eˣ² + C"
+      - name: '换元法"
+        example: "∫ 2x·eˣ² dx = eˣ² + C'
         
       - name: "分部积分"
-        formula: "∫ u dv = uv - ∫ v du"
+        formula: '∫ u dv = uv - ∫ v du"
         
-      - name: "部分分式"
+      - name: "部分分式'
         example: "分解有理函数"
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "limit"
-        description: "积分用极限定义"
+      - id: 'limit"
+        description: "积分用极限定义'
       - id: "measure"
-        description: "Lebesgue积分需要测度论"
+        description: 'Lebesgue积分需要测度论"
         
     generalizes:
-      - id: "sum"
+      - id: "sum'
         description: "积分是求和的连续版"
         
     specialized_by:
-      - id: "riemann-integral"
-        description: "Riemann积分"
+      - id: 'riemann-integral"
+        description: "Riemann积分'
       - id: "lebesgue-integral"
-        description: "Lebesgue积分"
-      - id: "line-integral"
+        description: 'Lebesgue积分"
+      - id: "line-integral'
         description: "线积分"
-      - id: "surface-integral"
-        description: "面积分"
+      - id: 'surface-integral"
+        description: "面积分'
         
     related_to:
       - id: "derivative"
-        description: "微积分基本定理"
-      - id: "differential-form"
+        description: '微积分基本定理"
+      - id: "differential-form'
         description: "微分形式上的积分"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "fundamental-theorem-calculus"
-      statement: "∫ₐᵇ f'(x)dx = f(b) - f(a)"
+    - id: 'fundamental-theorem-calculus"
+      statement: "∫ₐᵇ f'(x)dx = f(b) - f(a)'
       importance: 5
       
     - id: "substitution-rule"
-      statement: "∫ f(g(x))g'(x)dx = ∫ f(u)du"
+      statement: '∫ f(g(x))g'(x)dx = ∫ f(u)du"
       importance: 4
       
-    - id: "integration-by-parts"
+    - id: "integration-by-parts'
       statement: "∫ u dv = uv - ∫ v du"
       importance: 4
       
-    - id: "fubini-theorem"
-      statement: "∫∫ f dxdy = ∫(∫ f dx)dy"
+    - id: 'fubini-theorem"
+      statement: "∫∫ f dxdy = ∫(∫ f dx)dy'
       importance: 5
       
   # ===== 元数据层 =====
@@ -168,20 +168,20 @@ concept:
     
     prerequisites:
       - "limit"
-      - "derivative"
+      - 'derivative"
       
     leads_to:
-      - "measure-theory"
+      - "measure-theory'
       - "differential-equation"
-      - "functional-analysis"
+      - 'functional-analysis"
       
     history:
       first_appearance: 1684
-      context: "Newton-Leibniz微积分"
+      context: "Newton-Leibniz微积分'
       development: "Riemann→Lebesgue"
       
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.MeasureTheory.Integral.Lebesgue"
-    name: "MeasureTheory.integral"
+    path: 'Mathlib.MeasureTheory.Integral.Lebesgue"
+    name: "MeasureTheory.integral'
     coverage: "complete"

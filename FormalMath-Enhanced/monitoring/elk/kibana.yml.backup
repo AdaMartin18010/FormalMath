@@ -1,0 +1,67 @@
+# Kibana 配置文件
+# 用于日志可视化和搜索
+
+server.name: formalmath-kibana
+server.host: "0.0.0.0"
+server.port: 5601
+
+# Elasticsearch 连接
+elasticsearch.hosts: ["http://elasticsearch:9200"]
+elasticsearch.requestTimeout: 30000
+elasticsearch.shardTimeout: 30000
+
+# 安全设置（生产环境建议启用）
+xpack.security.enabled: false
+
+# 监控设置
+xpack.monitoring.enabled: true
+xpack.monitoring.ui.enabled: true
+xpack.monitoring.ui.container.elasticsearch.enabled: true
+
+# APM 设置（可选）
+xpack.apm.enabled: true
+xpack.apm.ui.enabled: true
+
+# 机器学习设置
+xpack.ml.enabled: true
+
+# 报表设置
+xpack.reporting.enabled: true
+xpack.reporting.kibanaServer.port: 5601
+xpack.reporting.kibanaServer.protocol: http
+xpack.reporting.kibanaServer.hostname: localhost
+
+# 地图设置
+xpack.maps.enabled: true
+
+# 默认索引设置
+kibana.index: ".kibana"
+kibana.defaultAppId: "home"
+
+# 日志设置
+logging.root.level: info
+logging.appenders.default:
+  type: console
+  layout:
+    type: pattern
+    highlight: true
+
+# 国际化设置
+i18n.locale: "zh-CN"
+
+# 功能开关
+xpack.discoverEnhanced.enabled: true
+xpack.canvas.enabled: true
+xpack.dashboardEnhanced.enabled: true
+
+# 搜索设置
+search.timeout: 30000
+search.aggs.shardDelay.enabled: true
+
+# 状态设置
+status.allowAnonymous: true
+
+# 开发设置
+# server.ssl.enabled: true
+# server.ssl.certificate: /path/to/cert.pem
+# server.ssl.key: /path/to/key.pem

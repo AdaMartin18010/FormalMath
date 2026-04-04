@@ -1,0 +1,186 @@
+# sylow-theorems.yaml - Sylow定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "sylow-theorems"
+  name:
+    zh: "Sylow定理"
+    en: "Sylow Theorems"
+  msc_codes: ["20D20"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 G 是有限群，|G| = pᵐ·n，其中 p 是素数，gcd(p, n) = 1。
+      
+      【Sylow第一定理】
+      G 有 p-Sylow 子群（阶为 pᵐ 的子群）。
+      
+      【Sylow第二定理】
+      G 的所有 p-Sylow 子群相互共轭。
+      
+      【Sylow第三定理】
+      设 nₚ 是 p-Sylow 子群的个数，则：
+      - nₚ ≡ 1 (mod p)
+      - nₚ | n
+      
+    informal: |
+      Sylow定理告诉我们有限群中"素数幂阶子群"的存在性和唯一性。
+      
+      如果群的阶数包含素数p的某个幂pᵐ，
+      那么：
+      1. 一定存在阶为pᵐ的子群
+      2. 所有这样的子群都"本质相同"（共轭）
+      3. 这样的子群个数有很强的限制
+      
+    lean: |
+      -- Mathlib形式化
+      theorem exists_prime_orderOf_dvd_card {G : Type*} [Group G] [Fintype G]
+        {p : ℕ} (hp : p.Prime) (hdvd : p ∣ Fintype.card G) :
+        ∃ x : G, orderOf x = p
+        
+      theorem Sylow.exists_subgroup_card_pow_prime {G : Type*} [Group G] [Fintype G]
+        (p : ℕ) [hp : Fact p.Prime] :
+        ∃ H : Subgroup G, Fintype.card H = p ^ (Fintype.card G).factorization p
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "群作用 + 计数论证"
+    
+    key_ideas:
+      - "G作用在某个集合上"
+      - "轨道-稳定子定理"
+      - "计数模p的论证"
+      
+    proof_tree: |
+      Sylow第一定理
+          │
+          ├── 构造集合 X = {A ⊆ G : |A| = pᵐ}
+          │
+          ├── G通过左乘作用在X上
+          │
+          ├── |X| = C(pᵐn, pᵐ) ≢ 0 (mod p)
+          │   └── 存在轨道大小不被p整除
+          │
+          └── 该轨道对应的稳定子是p-Sylow子群
+      
+      Sylow第二/三定理
+          │
+          ├── G作用在Sylow子群集合上（共轭）
+          │
+          ├── 所有Sylow子群在同一轨道（共轭）
+          │
+          └── 固定点计数 ⟹ nₚ ≡ 1 (mod p)
+          
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      |G| = pᵐ · n, gcd(p,n) = 1
+      
+      Sylow₁: ∃H ≤ G, |H| = pᵐ
+      Sylow₂: H₁, H₂ p-Sylow ⟹ H₁ = gH₂g⁻¹ 某g
+      Sylow₃: nₚ ≡ 1 (mod p), nₚ | n
+      
+    geometric: |
+      【几何表征】
+      
+      共轭子群的"对称性"：
+      
+           G
+          ╱│╲
+         ╱ │ ╲
+        H₁ H₂ H₃   ← p-Sylow子群
+         ╲ │ ╱
+          ╲│╱
+           
+        所有p-Sylow子群通过共轭连接
+        它们在G中"对称分布"
+        
+    intuitive: |
+      【直觉表征】
+      
+      类比：
+      - G像一个组织
+      - p-Sylow子群像"核心团队"
+      - 第一定理：核心团队存在
+      - 第二定理：核心团队间可以"轮换"
+      - 第三定理：核心团队数量有规律
+      
+    computational: |
+      【计算表征】
+      
+      例：|G| = 12 = 2² × 3
+      
+      2-Sylow子群：阶4，n₂ | 3, n₂ ≡ 1 (mod 2)
+        ⟹ n₂ ∈ {1, 3}
+        
+      3-Sylow子群：阶3，n₃ | 4, n₃ ≡ 1 (mod 3)
+        ⟹ n₃ ∈ {1, 4}
+        
+      具体确定需要群的结构
+      
+    categorical: |
+      【范畴表征】
+      
+      从群作用观点：
+      - G作用在Syl_p(G)上通过共轭
+      - 第二定理：作用传递
+      - 第三定理：稳定子大小限制
+      
+      这是"轨道-稳定子"范式的应用
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "群分类"
+      description: "证明某阶群的结构"
+      example: "证明阶15的群是循环群"
+      
+    - domain: "单群判断"
+      description: "证明群不是单群"
+      detail: "若nₚ = 1则p-Sylow子群正规"
+      
+    - domain: "Burnside定理"
+      description: "pᵃqᵇ阶群可解的证明"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "group"
+        role: "基本概念"
+      - id: "subgroup"
+        role: "Sylow子群"
+      - id: "group-action"
+        role: "证明工具"
+      - id: "conjugacy"
+        role: "核心概念"
+        
+    uses_theorems:
+      - id: "lagrange-theorem"
+        role: "基础"
+      - id: "orbit-stabilizer"
+        role: "证明工具"
+        
+    implies:
+      - id: "cauchy-theorem-groups"
+        description: "Cauchy定理是第一定理的特例"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+    prerequisites:
+      concepts: ["group", "subgroup", "group-action"]
+      theorems: ["lagrange-theorem"]
+      
+    year_proved: 1872
+    provers: ["sylow"]
+    
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.GroupTheory.Sylow"
+    main_theorem: "Sylow"
+    coverage: "complete"

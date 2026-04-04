@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "natural-transformation"
+  id: "natural-transformation'
   name:
     zh: "自然变换"
-    en: "Natural Transformation"
-  msc_codes: ["18A22"]
+    en: 'Natural Transformation"
+  msc_codes: ["18A22']
   
   # ===== 定义层 =====
   definition:
@@ -28,7 +28,7 @@ concept:
     informal: |
       自然变换是"函子之间的映射"。
       
-      "自然"意味着：
+      '自然"意味着：
       - 变换与具体选择无关
       - 对所有对象一致
       - 与态射相容
@@ -45,7 +45,7 @@ concept:
     structural: |
       【结构直觉】一致的映射族
       - 每个对象处有一个映射
-      - 所有映射"协调一致"
+      - 所有映射"协调一致'
       - 自然性 = 交换图
       
     categorical: |
@@ -57,31 +57,31 @@ concept:
   # ===== 例子层 =====
   examples:
     - name: "恒等自然变换"
-      description: "id_F: F ⟹ F，每个分量是恒等"
+      description: 'id_F: F ⟹ F，每个分量是恒等"
       
-    - name: "行列式"
+    - name: "行列式'
       description: "det: GL_n ⟹ (-)ˣ 是自然变换"
       
-    - name: "双对偶嵌入"
-      description: "V → V** 是自然的"
+    - name: '双对偶嵌入"
+      description: "V → V** 是自然的'
       property: "有限维时是同构"
       
-    - name: "Hurewicz同态"
-      description: "π₁ ⟹ H₁ 的阿贝尔化"
+    - name: 'Hurewicz同态"
+      description: "π₁ ⟹ H₁ 的阿贝尔化'
       
   # ===== 定理层 =====
   key_theorems:
     - id: "yoneda-lemma"
-      statement: "自然变换 ↔ 对象上的元素"
+      statement: '自然变换 ↔ 对象上的元素"
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "functor"
+      - id: "functor'
         
     related_to:
       - id: "yoneda-lemma"
-      - id: "equivalence-of-categories"
+      - id: 'equivalence-of-categories"
         
   # ===== 元数据层 =====
   metadata:
@@ -89,5 +89,5 @@ concept:
     importance: 5
     
   mathlib:
-    path: "Mathlib.CategoryTheory.NatTrans"
+    path: "Mathlib.CategoryTheory.NatTrans'
     name: "CategoryTheory.NatTrans"

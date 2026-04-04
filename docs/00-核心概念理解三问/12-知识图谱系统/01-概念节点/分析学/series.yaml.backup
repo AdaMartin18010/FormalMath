@@ -1,0 +1,76 @@
+# series.yaml - 级数概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "series"
+  name:
+    zh: "级数"
+    en: "Series"
+  msc_codes: ["40A05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      给定数列 (aₙ)，级数定义为：
+      Σ_{n=1}^∞ aₙ := lim_{N→∞} Σ_{n=1}^N aₙ
+      
+      若此极限存在且有限，称级数收敛。
+      
+      绝对收敛：Σ|aₙ| 收敛
+      条件收敛：Σaₙ 收敛但 Σ|aₙ| 发散
+      
+    informal: |
+      级数是无穷多个数的和。
+      
+      关键问题：无穷和有没有意义？
+      - 1 + 1/2 + 1/4 + ... = 2 ✓
+      - 1 + 2 + 3 + ... = ? (发散)
+      - 1 - 1 + 1 - 1 + ... = ? (发散)
+      
+    lean: |
+      def HasSum (f : ℕ → ℝ) (s : ℝ) : Prop :=
+        Tendsto (fun n => ∑ i in Finset.range n, f i) atTop (𝓝 s)
+        
+      def Summable (f : ℕ → ℝ) : Prop := ∃ s, HasSum f s
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "收敛判别"
+      content: |
+        比值审敛法：lim |aₙ₊₁/aₙ| < 1 → 收敛
+        根值审敛法：lim ⁿ√|aₙ| < 1 → 收敛
+        积分判别法：∫f ↔ Σf(n)
+        
+  # ===== 例子层 =====
+  examples:
+    convergent:
+      - name: "几何级数"
+        formula: "Σrⁿ = 1/(1-r), |r| < 1"
+        
+      - name: "p-级数"
+        formula: "Σ1/nᵖ, p > 1"
+        sum_p2: "π²/6"
+        
+    divergent:
+      - name: "调和级数"
+        formula: "Σ1/n"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "sequence"
+        description: "部分和数列"
+      - id: "limit"
+        description: "收敛性"
+        
+    leads_to:
+      - id: "power-series"
+        description: "幂级数"
+      - id: "fourier-series"
+        description: "Fourier级数"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5

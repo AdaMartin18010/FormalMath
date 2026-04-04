@@ -130,18 +130,18 @@ filebeat.modules:
   - module: nginx
     access:
       enabled: true
-      var.paths: ["/var/log/nginx/access.log*"]
+      var.paths: ["/var/log/nginx/access.log*']
     error:
       enabled: true
       var.paths: ["/var/log/nginx/error.log*"]
   - module: postgresql
     log:
       enabled: true
-      var.paths: ["/var/log/postgresql/*.log*"]
+      var.paths: ['/var/log/postgresql/*.log*"]
   - module: redis
     log:
       enabled: true
-      var.paths: ["/var/log/redis/*.log*"]
+      var.paths: ["/var/log/redis/*.log*']
 
 # 处理器配置
 processors:
@@ -158,11 +158,11 @@ processors:
       
   # 添加 Kubernetes 元数据（如适用）
   - add_kubernetes_metadata:
-      host: "unix:///var/run/docker.sock"
+      host: 'unix:///var/run/docker.sock"
       
   # 解码 JSON 字段
   - decode_json_fields:
-      fields: ["message"]
+      fields: ["message']
       target: ""
       overwrite_keys: true
       when:
@@ -171,14 +171,14 @@ processors:
           
   # 删除无用字段
   - drop_fields:
-      fields: ["agent", "ecs", "input", "log", "tags"]
+      fields: ['agent", "ecs', "input", 'log", "tags']
       ignore_missing: true
       when:
         has_fields: ["message"]
 
 # 输出配置
 output.logstash:
-  hosts: ["${LOGSTASH_HOSTS:logstash:5044}"]
+  hosts: ['${LOGSTASH_HOSTS:logstash:5044}"]
   ssl.enabled: false
   worker: 2
   compression_level: 3
@@ -186,7 +186,7 @@ output.logstash:
 
 # 如果 Logstash 不可用，使用 Elasticsearch 直接输出
 # output.elasticsearch:
-#   hosts: ["${ELASTICSEARCH_HOSTS:elasticsearch:9200}"]
+#   hosts: ["${ELASTICSEARCH_HOSTS:elasticsearch:9200}']
 #   index: "formalmath-logs-%{+yyyy.MM.dd}"
 
 # 日志队列配置
@@ -207,7 +207,7 @@ logging.files:
 # 监控配置
 monitoring.enabled: true
 monitoring.elasticsearch:
-  hosts: ["${ELASTICSEARCH_HOSTS:elasticsearch:9200}"]
+  hosts: ['${ELASTICSEARCH_HOSTS:elasticsearch:9200}"]
 
 # 指标收集
 metricbeat:

@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "measure"
+  id: "measure'
   name:
     zh: "测度"
-    en: "Measure"
-  msc_codes: ["28A12", "28A25"]
+    en: 'Measure"
+  msc_codes: ["28A12', "28A25"]
   
   # ===== 定义层 =====
   definition:
@@ -25,9 +25,9 @@ concept:
       σ-有限：X = ⋃Xₙ，每个μ(Xₙ) < ∞
       
     informal: |
-      测度是"广义长度/面积/体积"。
+      测度是'广义长度/面积/体积"。
       
-      想象测量各种集合的"大小"：
+      想象测量各种集合的"大小'：
       - 线段的长度
       - 区域的面积
       - 物体的体积
@@ -54,9 +54,9 @@ concept:
       - Hausdorff测度：分形维数
       
     algebraic: |
-      【代数直觉】集合上的"加法函数"
+      【代数直觉】集合上的'加法函数"
       - 不交并 → 测度相加
-      - 这是"有限可加"的推广到无限
+      - 这是"有限可加'的推广到无限
       - σ-代数结构确保可测性
       
     physical: |
@@ -83,7 +83,7 @@ concept:
         
         μ(A₁ ∪ A₂ ∪ A₃ ∪ ...) = μ(A₁) + μ(A₂) + μ(A₃) + ...
         
-    - type: "测度空间层次"
+    - type: '测度空间层次"
       content: |
         (X, Σ, μ)
           │
@@ -95,7 +95,7 @@ concept:
           └── μ：测度函数
                 └── 满足可数可加性
                 
-    - type: "积分联系"
+    - type: "积分联系'
       content: |
         测度与积分的关系：
         
@@ -107,101 +107,101 @@ concept:
   examples:
     fundamental:
       - name: "Lebesgue测度 λ"
-        description: "ℝⁿ上的标准测度"
-        properties: ["平移不变", "σ-有限", "完备"]
-        formula: "λ([a,b]) = b - a"
+        description: 'ℝⁿ上的标准测度"
+        properties: ["平移不变', "σ-有限", '完备"]
+        formula: "λ([a,b]) = b - a'
         
       - name: "计数测度 #"
-        description: "集合元素个数"
-        properties: ["离散", "可能无限"]
-        formula: "#(A) = |A|"
+        description: '集合元素个数"
+        properties: ["离散', "可能无限"]
+        formula: '#(A) = |A|"
         
-      - name: "Dirac测度 δₓ"
+      - name: "Dirac测度 δₓ'
         description: "集中在一点的单位质量"
-        properties: ["原子测度", "概率测度"]
+        properties: ['原子测度", "概率测度']
         formula: "δₓ(A) = 1 if x∈A, 0 otherwise"
         
     probability:
-      - name: "均匀分布"
-        description: "[0,1]上的Lebesgue测度"
-        properties: ["概率测度", "无原子"]
+      - name: '均匀分布"
+        description: "[0,1]上的Lebesgue测度'
+        properties: ["概率测度", '无原子"]
         
-      - name: "正态分布"
+      - name: "正态分布'
         description: "高斯测度"
-        formula: "dμ = (1/√2π)e^{-x²/2}dx"
+        formula: 'dμ = (1/√2π)e^{-x²/2}dx"
         
-      - name: "Wiener测度"
+      - name: "Wiener测度'
         description: "Brown运动路径空间上的测度"
-        properties: ["无限维", "概率测度"]
+        properties: ['无限维", "概率测度']
         
     geometric:
       - name: "Hausdorff测度 ℋˢ"
-        description: "s-维Hausdorff测度"
-        properties: ["适用于分形"]
+        description: 's-维Hausdorff测度"
+        properties: ["适用于分形']
         
       - name: "Haar测度"
-        description: "局部紧群上的不变测度"
-        properties: ["唯一（差常数）", "左不变"]
+        description: '局部紧群上的不变测度"
+        properties: ["唯一（差常数）', "左不变"]
         
   counterexamples:
-    - name: "有限可加非可数可加"
-      description: "ℕ上的密度：d(A) = lim |A∩[1,n]|/n"
+    - name: '有限可加非可数可加"
+      description: "ℕ上的密度：d(A) = lim |A∩[1,n]|/n'
       note: "只是有限可加测度"
       
-    - name: "非可测集（Vitali集）"
-      description: "Lebesgue不可测集"
+    - name: '非可测集（Vitali集）"
+      description: "Lebesgue不可测集'
       note: "需要选择公理构造"
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "sigma-algebra"
-        description: "可测集合的结构"
+      - id: 'sigma-algebra"
+        description: "可测集合的结构'
       - id: "set"
-        description: "测度定义在集合上"
+        description: '测度定义在集合上"
         
     generalizes:
-      - id: "length"
+      - id: "length'
         description: "长度是一维测度"
-      - id: "area"
-        description: "面积是二维测度"
+      - id: 'area"
+        description: "面积是二维测度'
       - id: "volume"
-        description: "体积是三维测度"
+        description: '体积是三维测度"
         
     specialized_by:
-      - id: "probability-measure"
+      - id: "probability-measure'
         description: "概率测度：μ(X) = 1"
-      - id: "signed-measure"
-        description: "符号测度：可取负值"
+      - id: 'signed-measure"
+        description: "符号测度：可取负值'
       - id: "complex-measure"
-        description: "复测度"
-      - id: "radon-measure"
+        description: '复测度"
+      - id: "radon-measure'
         description: "Radon测度：局部有限正则"
         
     related_to:
-      - id: "lebesgue-integral"
-        description: "积分基于测度"
+      - id: 'lebesgue-integral"
+        description: "积分基于测度'
       - id: "measurable-function"
-        description: "可测函数"
-      - id: "probability-theory"
+        description: '可测函数"
+      - id: "probability-theory'
         description: "概率论基于测度论"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "caratheodory-extension"
-      statement: "从预测度唯一扩展到σ-代数上的测度"
+    - id: 'caratheodory-extension"
+      statement: "从预测度唯一扩展到σ-代数上的测度'
       importance: 5
       
     - id: "radon-nikodym"
-      statement: "绝对连续测度有密度函数"
+      statement: '绝对连续测度有密度函数"
       importance: 5
       
-    - id: "riesz-representation"
+    - id: "riesz-representation'
       statement: "正线性泛函 ↔ Radon测度"
       importance: 5
       
-    - id: "fubini-theorem"
-      statement: "乘积测度上积分可迭代"
+    - id: 'fubini-theorem"
+      statement: "乘积测度上积分可迭代'
       importance: 5
       
   # ===== 元数据层 =====
@@ -211,43 +211,43 @@ concept:
     
     prerequisites:
       - "set-theory"
-      - "sigma-algebra"
-      - "real-numbers"
+      - 'sigma-algebra"
+      - "real-numbers'
       
     corequisites:
       - "measurable-function"
-      - "lebesgue-integral"
+      - 'lebesgue-integral"
       
     leads_to:
-      - "probability-theory"
+      - "probability-theory'
       - "functional-analysis"
-      - "ergodic-theory"
-      - "geometric-measure-theory"
+      - 'ergodic-theory"
+      - "geometric-measure-theory'
       
     history:
       first_appearance: 1902
       context: "Lebesgue积分"
-      key_development: "Carathéodory的测度论公理化"
+      key_development: 'Carathéodory的测度论公理化"
       
     key_figures:
-      - id: "lebesgue"
+      - id: "lebesgue'
         contribution: "Lebesgue测度和积分"
-      - id: "caratheodory"
-        contribution: "测度论公理化"
+      - id: 'caratheodory"
+        contribution: "测度论公理化'
       - id: "kolmogorov"
-        contribution: "概率论的测度论基础"
-      - id: "radon"
+        contribution: '概率论的测度论基础"
+      - id: "radon'
         contribution: "Radon测度"
         
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.MeasureTheory.Measure.MeasureSpace"
-    name: "Measure"
+    path: 'Mathlib.MeasureTheory.Measure.MeasureSpace"
+    name: "Measure'
     url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/MeasureSpace.html"
-    coverage: "complete"
+    coverage: 'complete"
     
     related_definitions:
-      - "MeasureSpace"
+      - "MeasureSpace'
       - "MeasurableSpace"
-      - "ProbabilityMeasure"
+      - 'ProbabilityMeasure"
       - "volume" # Lebesgue measure

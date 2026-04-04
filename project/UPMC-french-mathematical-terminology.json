@@ -129,7 +129,7 @@
         {"french": "voisinage", "english": "neighborhood", "chinese": "邻域", "context": "contient un ouvert"},
         {"french": "intérieur", "english": "interior", "chinese": "内部", "context": "plus grand ouvert contenu"},
         {"french": "adhérence", "english": "closure", "chinese": "闭包", "context": "plus petit fermé contenant"},
-        {"french": "frontière", "english": "boundary", "chinese": "边界", "context": "adhérence \ intérieur"},
+        {"french": "frontière", "english": "boundary", "chinese": "边界", "context": "adhérence \\ intérieur"},
         {"french": "base de topologie", "english": "base for a topology", "chinese": "拓扑基", "context": "génération de la topologie"},
         {"french": "continuité", "english": "continuity", "chinese": "连续性", "context": "f⁻¹(ouvert) est ouvert"},
         {"french": "homéomorphisme", "english": "homeomorphism", "chinese": "同胚", "context": "bijection continue d'inverse continue"},

@@ -1,0 +1,251 @@
+# intermediate-value-theorem.yaml - 介值定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "intermediate-value-theorem"
+  name:
+    zh: "介值定理"
+    en: "Intermediate Value Theorem"
+  msc_codes: ["26A06", "26A15"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 f: [a,b] → ℝ 连续，且 f(a) ≠ f(b)。
+      则对任意 y 介于 f(a) 和 f(b) 之间，
+      存在 c ∈ (a,b) 使得 f(c) = y。
+      
+      等价表述：连续函数的像是连通集（区间）。
+      
+    informal: |
+      连续函数不能"跳过"任何中间值。
+      
+      如果你从1楼走到10楼，中间必须经过2到9楼。
+      连续函数的图像是一条不断裂的曲线，
+      所以它必须经过所有中间的高度。
+      
+    lean: |
+      -- Mathlib形式化
+      theorem intermediate_value_univ {a b : ℝ} (hab : a ≤ b) 
+        {f : ℝ → ℝ} (hf : Continuous f) :
+        Icc (f a) (f b) ⊆ f '' Icc a b ∨ Icc (f b) (f a) ⊆ f '' Icc a b
+        
+      -- 常用形式
+      theorem intermediate_value_Icc {a b : ℝ} (hab : a ≤ b)
+        {f : ℝ → ℝ} (hf : ContinuousOn f (Icc a b)) 
+        {y : ℝ} (hy : y ∈ Icc (f a) (f b) ∨ y ∈ Icc (f b) (f a)) :
+        ∃ c ∈ Icc a b, f c = y
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "二分法 + 上确界性质"
+    
+    key_ideas:
+      - "构造集合 S = {x ∈ [a,b] : f(x) < y}"
+      - "利用实数完备性取 c = sup S"
+      - "利用连续性证明 f(c) = y"
+      
+    steps:
+      - step: 1
+        content: "不妨设 f(a) < y < f(b)"
+        
+      - step: 2
+        content: "定义 S = {x ∈ [a,b] : f(x) < y}"
+        detail: "S非空（a ∈ S）且有上界b"
+        
+      - step: 3
+        content: "令 c = sup S"
+        detail: "由实数完备性，c存在"
+        
+      - step: 4
+        content: "证明 f(c) ≥ y"
+        detail: "若f(c) < y，由连续性，c不是上界，矛盾"
+        
+      - step: 5
+        content: "证明 f(c) ≤ y"
+        detail: "若f(c) > y，由连续性，存在更小的上界，矛盾"
+        
+      - step: 6
+        content: "结论：f(c) = y"
+        
+    proof_tree: |
+      介值定理
+          │
+          ├── 实数完备性
+          │   └── 上确界存在
+          │       └── S = {x : f(x) < y} 非空有上界
+          │
+          ├── 连续性（f(c) ≥ y）
+          │   └── 若 f(c) < y
+          │       └── ε = y - f(c) > 0
+          │           └── ∃δ：x ∈ (c-δ,c+δ) ⟹ f(x) < y
+          │               └── c不是sup S，矛盾
+          │
+          └── 连续性（f(c) ≤ y）
+              └── 若 f(c) > y
+                  └── ε = f(c) - y > 0
+                      └── ∃δ：x ∈ (c-δ,c+δ) ⟹ f(x) > y
+                          └── c-δ也是上界，矛盾
+                          
+    techniques:
+      - "上确界论证"
+      - "反证法"
+      - "ε-δ连续性"
+      
+    alternatives:
+      - name: "连通性证明"
+        description: "[a,b]连通，连续像连通，区间是ℝ中唯一连通集"
+        
+      - name: "二分法证明"
+        description: "构造套区间逼近"
+        
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      定理：f ∈ C[a,b], f(a)·f(b) < 0 ⟹ ∃c ∈ (a,b), f(c) = 0
+      
+      证明核心（零点形式）：
+      S = {x ∈ [a,b] : f(x) < 0}
+      c = sup S
+      连续性 ⟹ f(c) = 0
+      
+    geometric: |
+      【几何表征】
+      
+      连续曲线必须穿过中间值：
+      
+           y
+           │    ╭────────╮
+      f(b) ├────┤        │──
+           │    │        │
+         y ├····│···c····│··  ← 目标高度
+           │    │╱       │
+      f(a) ├────╳────────┘──
+           │
+           └────┼────┼────┼───→ x
+                a    c    b
+                
+      从(a,f(a))到(b,f(b))的连续曲线必经过高度y
+      
+    intuitive: |
+      【直觉表征】
+      
+      爬山类比：
+      - 从海拔100米爬到海拔500米
+      - 连续行走（不能瞬移）
+      - 必然经过海拔300米的点
+      
+      温度类比：
+      - 冰箱内-5°C，室外25°C
+      - 冰箱门开着，温度连续变化
+      - 门口某处温度恰好是10°C
+      
+    computational: |
+      【计算表征】
+      
+      二分法找零点：
+      
+      def bisection(f, a, b, tol=1e-10):
+          """找f在[a,b]上的零点"""
+          while b - a > tol:
+              c = (a + b) / 2
+              if f(a) * f(c) < 0:
+                  b = c
+              else:
+                  a = c
+          return (a + b) / 2
+          
+      # 例：找 x³ - x - 1 = 0 的根
+      f = lambda x: x**3 - x - 1
+      root = bisection(f, 1, 2)  # ≈ 1.3247
+      
+    categorical: |
+      【范畴表征】
+      
+      从拓扑范畴观点：
+      - 连续映射保持连通性
+      - f: [a,b] → ℝ 连续
+      - [a,b] 连通
+      - ⟹ f([a,b]) 连通
+      - ℝ中连通集是区间
+      - ⟹ f([a,b]) 包含所有中间值
+      
+      这是"连续函数保结构"的体现
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "方程求根"
+      description: "证明方程有解"
+      example: "x⁵ + x = 1在(0,1)有解"
+      
+    - domain: "不动点"
+      description: "若f: [0,1]→[0,1]连续，则f有不动点"
+      detail: "考虑g(x) = f(x) - x"
+      
+    - domain: "拓扑"
+      description: "连续函数保持连通性的基础结果"
+      
+    - domain: "数值分析"
+      description: "二分法、Newton法的理论基础"
+      
+  # ===== 推广与特化 =====
+  generalizations:
+    - id: "intermediate-value-general"
+      statement: "连通集的连续实值函数取所有中间值"
+      description: "推广到一般拓扑空间"
+      
+    - id: "darboux-theorem"
+      statement: "导函数有介值性质（不需连续）"
+      description: "Darboux定理"
+      
+  special_cases:
+    - id: "bolzano-theorem"
+      statement: "f(a)·f(b) < 0 ⟹ ∃c, f(c) = 0"
+      description: "零点存在定理（介值定理特例）"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "continuity"
+        role: "定理条件"
+      - id: "connectedness"
+        role: "拓扑证明的核心"
+      - id: "supremum"
+        role: "分析证明的工具"
+      - id: "real-completeness"
+        role: "存在性保证"
+        
+    uses_theorems:
+      - id: "supremum-property"
+        description: "实数完备性"
+        
+    implies:
+      - id: "brouwer-1d"
+        description: "一维Brouwer不动点定理"
+      - id: "bolzano-zero"
+        description: "零点存在"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      concepts: ["continuity", "connectedness", "supremum"]
+      theorems: ["supremum-property"]
+      
+    year_proved: 1817
+    provers: ["bolzano"]
+    
+    historical_note: |
+      Bolzano在1817年给出了第一个严格证明，
+      当时是为了证明代数基本定理。
+      这是分析学严格化的重要里程碑。
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Topology.Order.IntermediateValue"
+    main_theorem: "intermediate_value_Icc"
+    coverage: "complete"

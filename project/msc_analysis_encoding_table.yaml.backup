@@ -1,0 +1,281 @@
+# FormalMath 分析学概念MSC2020编码对照表
+# 生成时间: 2026-04-04
+# 版本: 1.0
+# 参考: MSC2020 (https://www.ams.org/msc/)
+
+# ============================================================================
+# 分析学核心概念MSC编码 (20个)
+# ============================================================================
+
+analysis_concepts_msc:
+  # ---------- 基础分析概念 (6个) ----------
+  - concept_id: "limit"
+    name: "极限"
+    name_en: "Limit"
+    msc_primary: "26A03"
+    msc_secondary: ["40A05"]
+    msc_description: "一元实函数的极限与连续性基础"
+    category: "分析学"
+    status: "已存在-编码正确"
+
+  - concept_id: "continuity"
+    name: "连续"
+    name_en: "Continuity"
+    msc_primary: "26A15"
+    msc_secondary: ["26A03", "54C05"]
+    msc_description: "实函数的连续性"
+    category: "分析学"
+    status: "已存在-编码正确"
+
+  - concept_id: "derivative"
+    name: "导数"
+    name_en: "Derivative"
+    msc_primary: "26A24"
+    msc_secondary: ["26A27", "58C20"]
+    msc_description: "一元实函数的微分"
+    category: "分析学"
+    status: "已存在-编码正确"
+
+  - concept_id: "riemann_integral"
+    name: "积分"
+    name_en: "Integral (Riemann)"
+    msc_primary: "26A42"
+    msc_secondary: ["26B15", "28A25"]
+    msc_description: "Riemann积分"
+    category: "分析学"
+    status: "已存在-编码正确"
+
+  - concept_id: "infinite_series"
+    name: "级数"
+    name_en: "Infinite Series"
+    msc_primary: "40A05"
+    msc_secondary: ["40A10", "40A25"]
+    msc_description: "实数序列与级数的收敛性"
+    category: "分析学"
+    status: "已存在-编码正确"
+
+  - concept_id: "uniform_convergence"
+    name: "一致收敛"
+    name_en: "Uniform Convergence"
+    msc_primary: "40A30"
+    msc_secondary: ["26A03", "30A10"]
+    msc_description: "函数序列的一致收敛性"
+    category: "分析学"
+    status: "已存在-编码正确"
+
+  # ---------- 新增基础分析概念 (3个) ----------
+  - concept_id: "improper_integral"
+    name: "反常积分"
+    name_en: "Improper Integral"
+    msc_primary: "40A10"
+    msc_secondary: ["26A42", "26A33"]
+    msc_description: "反常积分与瑕积分"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  - concept_id: "multivariable_calculus"
+    name: "多元微积分"
+    name_en: "Multivariable Calculus"
+    msc_primary: "26B12"
+    msc_secondary: ["26B15", "58C20"]
+    msc_description: "多元函数的微分与积分"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  - concept_id: "implicit_function_theorem"
+    name: "隐函数定理"
+    name_en: "Implicit Function Theorem"
+    msc_primary: "26B10"
+    msc_secondary: ["26B12", "58C15"]
+    msc_description: "隐函数与反函数定理"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  # ---------- 新增复分析概念 (6个) ----------
+  - concept_id: "power_series"
+    name: "幂级数"
+    name_en: "Power Series"
+    msc_primary: "30B10"
+    msc_secondary: ["40A30", "32A05"]
+    msc_description: "单复变幂级数"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  - concept_id: "fourier_series"
+    name: "傅里叶级数"
+    name_en: "Fourier Series"
+    msc_primary: "42A16"
+    msc_secondary: ["42A20", "42A32"]
+    msc_description: "三角级数与Fourier级数"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  - concept_id: "analytic_function"
+    name: "解析函数"
+    name_en: "Analytic Function"
+    msc_primary: "30A99"
+    msc_secondary: ["30B10", "30Cxx"]
+    msc_description: "单复变解析函数"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  - concept_id: "holomorphic_function"
+    name: "全纯函数"
+    name_en: "Holomorphic Function"
+    msc_primary: "30A99"
+    msc_secondary: ["30Cxx", "32A10"]
+    msc_description: "全纯函数与复可微函数"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  - concept_id: "cauchy_integral_theorem"
+    name: "柯西积分定理"
+    name_en: "Cauchy Integral Theorem"
+    msc_primary: "30E20"
+    msc_secondary: ["30B10", "30Cxx"]
+    msc_description: "Cauchy积分定理与积分公式"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  - concept_id: "residue_theorem"
+    name: "留数定理"
+    name_en: "Residue Theorem"
+    msc_primary: "30E20"
+    msc_secondary: ["30D30", "30Cxx"]
+    msc_description: "留数理论与围道积分"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  # ---------- 已存在复分析概念-补充编码 (1个) ----------
+  - concept_id: "conformal_mapping"
+    name: "共形映射"
+    name_en: "Conformal Mapping"
+    msc_primary: "30C35"
+    msc_secondary: ["30C20", "30D99"]
+    msc_description: "共形映射与Riemann映射定理"
+    category: "分析学"
+    status: "已存在-本次补充编码"
+
+  # ---------- 新增泛函分析概念 (3个) ----------
+  - concept_id: "normed_space"
+    name: "赋范空间"
+    name_en: "Normed Space"
+    msc_primary: "46B25"
+    msc_secondary: ["46Axx", "46Exx"]
+    msc_description: "赋范线性空间"
+    category: "分析学"
+    status: "新增-本次添加"
+
+  - concept_id: "banach_space"
+    name: "巴拿赫空间"
+    name_en: "Banach Space"
+    msc_primary: "46B25"
+    msc_secondary: ["46Axx", "47Axx"]
+    msc_description: "Banach空间与对偶空间"
+    category: "分析学"
+    status: "已存在-编码正确"
+
+  - concept_id: "hilbert_space"
+    name: "希尔伯特空间"
+    name_en: "Hilbert Space"
+    msc_primary: "46C05"
+    msc_secondary: ["46C15", "47Axx"]
+    msc_description: "Hilbert空间与内积空间"
+    category: "分析学"
+    status: "已存在-本次修正编码"
+
+  - concept_id: "linear_operator"
+    name: "线性算子"
+    name_en: "Linear Operator"
+    msc_primary: "47A05"
+    msc_secondary: ["46B25", "47Axx"]
+    msc_description: "线性算子的一般理论"
+    category: "分析学"
+    status: "新增-本次添加"
+
+# ============================================================================
+# MSC编码分类说明
+# ============================================================================
+
+msc_classifications:
+  # 基础分析
+  "26A03": "实函数的基础: 极限与连续性"
+  "26A15": "实函数的连续性"
+  "26A24": "实函数的微分"
+  "26A42": "Riemann积分与Stieltjes积分"
+  "26A99": "实函数的其他方面(解析函数、全纯函数)"
+  "26B10": "隐函数定理与反函数定理"
+  "26B12": "多元函数的微积分"
+  "26B15": "多元积分: 线积分、面积分、体积积分"
+  "26E30": "实函数在其他领域的应用"
+  
+  # 级数与收敛
+  "40A05": "序列、级数、可求和性: 收敛与发散"
+  "40A10": "反常积分、瑕积分"
+  "40A30": "收敛与一致收敛"
+  
+  # 复分析
+  "30A99": "单复变函数: 解析函数、全纯函数(其他)"
+  "30B10": "幂级数(包括多变量)"
+  "30Cxx": "单复变函数的几何函数论"
+  "30C20": "共形映射与特殊区域"
+  "30C35": "共形映射的一般理论"
+  "30D30": "亚纯函数、有理函数"
+  "30D99": "整函数与亚纯函数的其他方面"
+  "30E20": "积分表示与积分算子、积分方程(Cauchy型积分)"
+  "32A05": "多复变函数的全纯函数"
+  "32A10": "多复变全纯函数的其他方面"
+  
+  # 调和分析
+  "42A16": "Fourier系数、Fourier级数"
+  "42A20": "Fourier级数的收敛与绝对收敛"
+  "42A32": "三角级数与Fourier级数的其他性质"
+  
+  # 泛函分析
+  "46Axx": "拓扑线性空间"
+  "46Bxx": "赋范线性空间与Banach空间"
+  "46B25": "Banach空间: 经典Banach空间及其对偶(赋范空间)"
+  "46C05": "Hilbert空间: 内积空间"
+  "46C15": "Hilbert空间: 特征值的特征空间"
+  "46E30": "线性函数空间及其对偶(Lp空间)"
+  "46Exx": "线性函数空间及其对偶"
+  "46Fxx": "广义函数、分布理论"
+  "47Axx": "单个线性算子的算子理论"
+  "47A05": "线性算子的一般理论: 一般(伴随、共轭积等)"
+  
+  # 拓扑与分析
+  "54C05": "连续映射"
+  "58C15": "流形上的隐函数定理与反函数定理"
+  "58C20": "流形上的微分"
+
+# ============================================================================
+# 编码更新日志
+# ============================================================================
+
+changelog:
+  - date: "2026-04-04"
+    version: "1.0"
+    changes:
+      - "为20个分析学核心概念添加/修正MSC2020编码"
+      - "基础分析概念: 6个已有编码正确 + 3个新增概念"
+      - "复分析概念: 6个新增概念 + 1个补充编码"
+      - "泛函分析概念: 2个已有编码正确 + 1个修正 + 2个新增"
+      - "参考msc_corrections.json和MSC2020官方标准"
+
+# ============================================================================
+# 统计摘要
+# ============================================================================
+
+summary:
+  total_concepts: 20
+  categories:
+    basic_analysis: 9
+      - existing_with_msc: 6
+      - newly_added: 3
+    complex_analysis: 7
+      - existing_with_msc_updated: 1
+      - newly_added: 6
+    functional_analysis: 4
+      - existing_with_msc: 2
+      - existing_msc_corrected: 1
+      - newly_added: 1

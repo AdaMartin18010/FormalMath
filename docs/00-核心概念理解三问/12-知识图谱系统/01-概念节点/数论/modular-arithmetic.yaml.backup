@@ -1,0 +1,178 @@
+# modular-arithmetic.yaml - 模算术概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "modular-arithmetic"
+  name:
+    zh: "模算术"
+    en: "Modular Arithmetic"
+  msc_codes: ["11A07"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 n > 0 为正整数。
+      
+      【同余】
+      a ≡ b (mod n) ⟺ n | (a - b)
+      
+      【模n剩余类环】
+      ℤ/nℤ = {[0], [1], ..., [n-1]}
+      其中 [a] = {a + kn : k ∈ ℤ}
+      
+      运算：
+      [a] + [b] = [a + b]
+      [a] · [b] = [a · b]
+      
+    informal: |
+      模算术是"钟表算术"。
+      
+      在模12的世界里：
+      - 10 + 5 = 3（下午3点）
+      - 只关心除以12的余数
+      
+      模n算术 = 只看除以n的余数
+      
+    lean: |
+      -- Mathlib定义
+      def ZMod (n : ℕ) := Fin n
+      
+      instance (n : ℕ+) : Ring (ZMod n) := ...
+      
+      theorem ZMod.val_add (a b : ZMod n) :
+        (a + b).val = (a.val + b.val) % n
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】圆周
+      - ℤ/nℤ 是圆上的n个等分点
+      - 加法是旋转
+      - 乘法是缩放后投影
+      
+    algebraic: |
+      【代数直觉】商环
+      - ℤ/nℤ = ℤ/(n) 商掉理想(n)
+      - 运算良定义（与代表元无关）
+      - 保持环结构
+      
+    physical: |
+      【物理直觉】周期现象
+      - 时钟（mod 12 或 24）
+      - 星期（mod 7）
+      - 角度（mod 360）
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "圆周图示"
+      content: |
+        ℤ/12ℤ（时钟）：
+        
+              12/0
+            11    1
+          10        2
+         9            3
+          8          4
+            7      5
+              6
+              
+        10 + 5 = 3（顺时针转5格）
+        
+    - type: "运算表"
+      content: |
+        ℤ/4ℤ 乘法表：
+        
+        × | 0  1  2  3
+        ──┼───────────
+        0 | 0  0  0  0
+        1 | 0  1  2  3
+        2 | 0  2  0  2
+        3 | 0  3  2  1
+        
+  # ===== 例子层 =====
+  examples:
+    basic:
+      - name: "ℤ/2ℤ"
+        description: "奇偶性"
+        structure: "域 F₂"
+        
+      - name: "ℤ/7ℤ"
+        description: "模7剩余类"
+        structure: "域 F₇"
+        
+      - name: "ℤ/12ℤ"
+        description: "时钟算术"
+        structure: "不是整环（有零因子）"
+        
+    applications:
+      - name: "ISBN校验"
+        modulus: 11
+        description: "ISBN-10校验位"
+        
+      - name: "身份证校验"
+        modulus: 11
+        description: "中国身份证最后一位"
+        
+      - name: "RSA加密"
+        description: "模大合数的幂运算"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "divisibility"
+        description: "同余用整除定义"
+      - id: "ring"
+        description: "ℤ/nℤ是环"
+        
+    generalizes:
+      - id: "parity"
+        description: "奇偶性是mod 2"
+        
+    specialized_by:
+      - id: "finite-field"
+        description: "n为素数时是域"
+        
+    related_to:
+      - id: "group"
+        description: "(ℤ/nℤ)* 是群"
+      - id: "quotient-ring"
+        description: "商环构造"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "fermat-little"
+      statement: "p素数，gcd(a,p)=1 ⟹ a^{p-1} ≡ 1 (mod p)"
+      importance: 5
+      
+    - id: "euler-theorem"
+      statement: "gcd(a,n)=1 ⟹ a^{φ(n)} ≡ 1 (mod n)"
+      importance: 5
+      
+    - id: "chinese-remainder"
+      statement: "gcd(m,n)=1 ⟹ ℤ/mnℤ ≅ ℤ/mℤ × ℤ/nℤ"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "divisibility"
+      - "ring"
+      
+    leads_to:
+      - "cryptography"
+      - "number-theory"
+      - "finite-field"
+      
+    history:
+      first_appearance: 1801
+      context: "Gauss《算术研究》"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Data.ZMod.Basic"
+    name: "ZMod"
+    coverage: "complete"

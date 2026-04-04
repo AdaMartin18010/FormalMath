@@ -1,0 +1,179 @@
+# conditional-probability.yaml - 条件概率概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-07
+
+concept:
+  id: "conditional-probability"
+  name:
+    zh: "条件概率"
+    en: "Conditional Probability"
+  msc_codes: ["60A05"]
+
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 (Ω, ℱ, P) 是概率空间，B ∈ ℱ 且 P(B) > 0。
+      事件 A 在给定 B 下的条件概率定义为：
+
+      P(A|B) = P(A ∩ B) / P(B)
+
+      条件概率测度：
+      P_B(A) = P(A|B) 定义了一个新的概率测度。
+
+    informal: |
+      条件概率是"在已知B发生的情况下，A发生的概率"。
+
+      例子：掷骰子
+      - A = "点数为偶数" = {2,4,6}
+      - B = "点数≥4" = {4,5,6}
+      - P(A|B) = P(A∩B)/P(B) = P({4,6})/P({4,5,6}) = (2/6)/(3/6) = 2/3
+
+      直观：在已知点数≥4的情况下，偶数的概率是2/3。
+
+    lean: |
+      -- Mathlib定义
+      def ConditionalProbability {Ω : Type*} [MeasurableSpace Ω]
+        (P : Measure Ω) (B : Set Ω) (hB : P B > 0) : Measure Ω :=
+        (P B)⁻¹ • (P.restrict B)
+
+      def condProb (A B : Set Ω) (hB : P B > 0) : ℝ :=
+        P (A ∩ B) / P B
+
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】缩小样本空间
+      - 条件概率 = "在B的范围内，A的比例"
+      - 将样本空间从Ω缩小到B
+      - P(A|B) = "A在B中的相对大小"
+      - 用韦恩图：P(A|B) = |A∩B|/|B|
+
+    algebraic: |
+      【代数直觉】比例
+      - P(A|B) = P(A∩B)/P(B)
+      - 是"联合概率"与"条件概率"的比值
+      - 满足概率公理（归一性、可加性）
+
+    physical: |
+      【物理直觉】条件化
+      - 条件概率 = "在特定条件下的概率"
+      - 在统计力学中，条件概率描述"约束系统"
+      - 在量子力学中，条件概率对应"测量后的状态"
+
+    categorical: |
+      【范畴直觉】限制测度
+      - 条件概率是概率测度在子集上的"限制"
+      - 是"条件化"操作
+      - 保持概率结构
+
+  # ===== 表征层 =====
+  representations:
+    - type: "定义形式"
+      content: |
+        P(A|B) = P(A ∩ B) / P(B)
+
+    - type: "乘法规则"
+      content: |
+        P(A ∩ B) = P(A|B) P(B) = P(B|A) P(A)
+
+    - type: "全概率公式"
+      content: |
+        P(A) = Σ_i P(A|B_i) P(B_i)
+
+        其中 {B_i} 是样本空间的划分
+
+    - type: "贝叶斯公式"
+      content: |
+        P(B|A) = P(A|B) P(B) / P(A)
+
+  # ===== 例子层 =====
+  examples:
+    basic:
+      - name: "掷骰子"
+        problem: "已知点数≥4，求点数为偶数的概率"
+        solution: "P(偶数|≥4) = P({4,6})/P({4,5,6}) = 2/3"
+
+      - name: "抽牌"
+        problem: "从52张牌中抽2张，已知第一张是A，求第二张也是A的概率"
+        solution: "P(第二张A|第一张A) = 3/51"
+
+    advanced:
+      - name: "医学诊断"
+        problem: "已知检测阳性，求实际患病的概率"
+        solution: "使用贝叶斯公式：P(患病|阳性) = P(阳性|患病)P(患病)/P(阳性)"
+
+      - name: "条件独立"
+        problem: "A和B在给定C下独立"
+        solution: "P(A∩B|C) = P(A|C) P(B|C)"
+
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "probability-space"
+        description: "定义在概率空间上"
+      - id: "event"
+        description: "涉及事件"
+
+    generalizes:
+      - id: "unconditional-probability"
+        description: "无条件概率是条件概率的特例（B=Ω）"
+
+    specialized_by:
+      - id: "conditional-expectation"
+        description: "条件期望 E[X|Y]"
+      - id: "conditional-independence"
+        description: "条件独立性"
+      - id: "markov-property"
+        description: "马尔可夫性质"
+
+    related_to:
+      - id: "bayes-theorem"
+        description: "贝叶斯定理"
+      - id: "total-probability"
+        description: "全概率公式"
+      - id: "independence"
+        description: "独立性：P(A|B) = P(A)"
+
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "bayes-theorem"
+      statement: "P(A|B) = P(B|A) P(A) / P(B)"
+      importance: 5
+
+    - id: "total-probability"
+      statement: "P(A) = Σ_i P(A|B_i) P(B_i)"
+      importance: 5
+
+    - id: "multiplication-rule"
+      statement: "P(A₁∩...∩A_n) = P(A₁) P(A₂|A₁) ... P(A_n|A₁∩...∩A_{n-1})"
+      importance: 4
+
+    - id: "conditional-probability-measure"
+      statement: "P_B(·) = P(·|B) 是概率测度"
+      importance: 4
+
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+
+    prerequisites:
+      - "probability-space"
+      - "event"
+
+    leads_to:
+      - "bayes-theorem"
+      - "conditional-expectation"
+      - "markov-chain"
+      - "statistical-inference"
+
+    history:
+      first_appearance: "18世纪"
+      context: "概率论早期发展"
+      key_figures: ["Bayes", "Laplace"]
+
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Probability.ConditionalProbability"
+    name: "cond"
+    coverage: "complete"

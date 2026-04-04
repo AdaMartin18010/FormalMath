@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "curvature"
+  id: "curvature'
   name:
     zh: "曲率"
-    en: "Curvature"
-  msc_codes: ["53B20", "53A04"]
+    en: 'Curvature"
+  msc_codes: ["53B20', "53A04"]
   
   # ===== 定义层 =====
   definition:
@@ -27,7 +27,7 @@ concept:
       曲面的高斯曲率 K = κ₁·κ₂（主曲率之积）
       
     informal: |
-      曲率度量"空间弯曲的程度"。
+      曲率度量'空间弯曲的程度"。
       
       曲线曲率：圆的曲率是1/半径，直线曲率是0。
       曲率越大，弯曲越剧烈。
@@ -54,7 +54,7 @@ concept:
       【代数直觉】联络的不可交换性
       - 平坦空间：协变导数可交换
       - 曲率：R(X,Y) = ∇_X∇_Y - ∇_Y∇_X - ∇_{[X,Y]}
-      - 曲率测量"绕圈后的变化"
+      - 曲率测量"绕圈后的变化'
       
     physical: |
       【物理直觉】引力场
@@ -85,7 +85,7 @@ concept:
                  
         曲率 κ = 1/R
         
-    - type: "高斯曲率类型"
+    - type: '高斯曲率类型"
       content: |
         曲面的高斯曲率：
         
@@ -96,7 +96,7 @@ concept:
           ╲     ╱         │   │            ╱ ╲
            ╰───╯          │   │           ╱   ╲
            
-    - type: "平行移动"
+    - type: "平行移动'
       content: |
         曲率与平行移动：
         
@@ -116,92 +116,92 @@ concept:
   examples:
     curves:
       - name: "直线"
-        curvature: "κ = 0"
-        description: "零曲率"
+        curvature: 'κ = 0"
+        description: "零曲率'
         
       - name: "半径R的圆"
-        curvature: "κ = 1/R"
-        description: "常曲率"
+        curvature: 'κ = 1/R"
+        description: "常曲率'
         
       - name: "抛物线 y = x²"
-        curvature: "κ = 2/(1+4x²)^{3/2}"
-        description: "变曲率，顶点处最大"
+        curvature: 'κ = 2/(1+4x²)^{3/2}"
+        description: "变曲率，顶点处最大'
         
     surfaces:
       - name: "平面"
-        gaussian: "K = 0"
-        mean: "H = 0"
+        gaussian: 'K = 0"
+        mean: "H = 0'
         type: "平坦"
         
-      - name: "半径R的球面"
-        gaussian: "K = 1/R²"
+      - name: '半径R的球面"
+        gaussian: "K = 1/R²'
         mean: "H = 1/R"
-        type: "正曲率"
+        type: '正曲率"
         
-      - name: "双曲抛物面 z = xy"
+      - name: "双曲抛物面 z = xy'
         gaussian: "K = -1/(1+x²+y²)²"
-        type: "负曲率"
+        type: '负曲率"
         
-      - name: "圆柱面"
+      - name: "圆柱面'
         gaussian: "K = 0"
-        mean: "H = 1/(2R)"
-        type: "内蕴平坦"
+        mean: 'H = 1/(2R)"
+        type: "内蕴平坦'
         
     spaces:
       - name: "欧氏空间 ℝⁿ"
-        riemann: "R = 0"
-        description: "平坦"
+        riemann: 'R = 0"
+        description: "平坦'
         
       - name: "球面 Sⁿ"
-        sectional: "K = 1"
-        description: "常正曲率"
+        sectional: 'K = 1"
+        description: "常正曲率'
         
       - name: "双曲空间 ℍⁿ"
-        sectional: "K = -1"
-        description: "常负曲率"
+        sectional: 'K = -1"
+        description: "常负曲率'
         
   # ===== 关系层 =====
   relations:
     requires:
       - id: "manifold"
-        description: "曲率定义在流形上"
-      - id: "connection"
+        description: '曲率定义在流形上"
+      - id: "connection'
         description: "需要联络计算曲率"
-      - id: "tangent-bundle"
-        description: "向量的平行移动"
+      - id: 'tangent-bundle"
+        description: "向量的平行移动'
         
     generalizes: []
         
     specialized_by:
       - id: "gaussian-curvature"
-        description: "高斯曲率（曲面）"
-      - id: "ricci-curvature"
+        description: '高斯曲率（曲面）"
+      - id: "ricci-curvature'
         description: "Ricci曲率（迹）"
-      - id: "scalar-curvature"
-        description: "标量曲率（全迹）"
+      - id: 'scalar-curvature"
+        description: "标量曲率（全迹）'
       - id: "sectional-curvature"
-        description: "截面曲率"
+        description: '截面曲率"
         
     related_to:
-      - id: "geodesic"
+      - id: "geodesic'
         description: "测地线偏离"
-      - id: "parallel-transport"
-        description: "平行移动"
+      - id: 'parallel-transport"
+        description: "平行移动'
       - id: "topology"
-        description: "Gauss-Bonnet"
+        description: 'Gauss-Bonnet"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "gauss-bonnet"
+    - id: "gauss-bonnet'
       statement: "∫∫K dA = 2π·χ(M)"
       importance: 5
       
-    - id: "theorema-egregium"
-      statement: "高斯曲率是内蕴不变量"
+    - id: 'theorema-egregium"
+      statement: "高斯曲率是内蕴不变量'
       importance: 5
       
     - id: "cartan-hadamard"
-      statement: "完备单连通非正曲率流形微分同胚于ℝⁿ"
+      statement: '完备单连通非正曲率流形微分同胚于ℝⁿ"
       importance: 4
       
   # ===== 元数据层 =====
@@ -210,29 +210,29 @@ concept:
     importance: 5
     
     prerequisites:
-      - "manifold"
+      - "manifold'
       - "connection"
-      - "derivative"
+      - 'derivative"
       
     leads_to:
-      - "general-relativity"
+      - "general-relativity'
       - "comparison-geometry"
-      - "geometric-analysis"
+      - 'geometric-analysis"
       
     history:
       first_appearance: 1827
-      context: "Gauss的曲面论"
+      context: "Gauss的曲面论'
       
     key_figures:
       - id: "gauss"
-        contribution: "高斯曲率、绝妙定理"
-      - id: "riemann"
+        contribution: '高斯曲率、绝妙定理"
+      - id: "riemann'
         contribution: "黎曼曲率张量"
-      - id: "ricci"
-        contribution: "Ricci曲率"
+      - id: 'ricci"
+        contribution: "Ricci曲率'
         
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Geometry.Manifold.Riemannian"
-    name: "riemannCurvature"
+    name: 'riemannCurvature"
     coverage: "partial"

@@ -1,0 +1,87 @@
+# sequence.yaml - 数列概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "sequence"
+  name:
+    zh: "数列"
+    en: "Sequence"
+  msc_codes: ["40A05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      数列是从自然数ℕ到某集合X的函数：
+      a: ℕ → X
+      记为 (aₙ)_{n∈ℕ} 或 {aₙ}
+      
+      实数列 a: ℕ → ℝ 收敛到 L：
+      lim_{n→∞} aₙ = L ⟺ ∀ε>0, ∃N, ∀n>N: |aₙ - L| < ε
+      
+    informal: |
+      数列是按顺序排列的数：a₁, a₂, a₃, ...
+      
+      例如：
+      - 等差数列：1, 2, 3, 4, ...
+      - 等比数列：1, 1/2, 1/4, 1/8, ...
+      - 调和数列：1, 1/2, 1/3, 1/4, ...
+      
+    lean: |
+      -- Mathlib: 数列就是函数 ℕ → α
+      def Seq (α : Type*) := ℕ → α
+      
+      -- 数列收敛
+      def Filter.Tendsto (f : ℕ → ℝ) (L : ℝ) : Prop :=
+        ∀ ε > 0, ∃ N, ∀ n > N, |f n - L| < ε
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】数轴上的点
+      - 每个aₙ是数轴上一点
+      - 收敛 = 越来越靠近极限
+      - 发散 = 没有聚集点
+      
+    algebraic: |
+      【代数直觉】函数观点
+      - 数列是定义域为ℕ的函数
+      - 递推公式定义数列
+      - 通项公式是解析表达
+      
+  # ===== 例子层 =====
+  examples:
+    convergent:
+      - formula: "aₙ = 1/n"
+        limit: 0
+        
+      - formula: "aₙ = (1 + 1/n)ⁿ"
+        limit: "e ≈ 2.718..."
+        
+    divergent:
+      - formula: "aₙ = n"
+        behavior: "趋于无穷"
+        
+      - formula: "aₙ = (-1)ⁿ"
+        behavior: "振荡"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "function"
+        description: "数列是特殊函数"
+      - id: "natural-numbers"
+        description: "定义域"
+        
+    leads_to:
+      - id: "limit"
+        description: "极限概念"
+      - id: "series"
+        description: "级数是数列的和"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 1
+    importance: 5
+    prerequisites: ["function"]
+    leads_to: ["limit", "series", "continuity"]

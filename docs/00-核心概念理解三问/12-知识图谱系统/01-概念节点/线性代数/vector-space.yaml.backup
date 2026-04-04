@@ -1,0 +1,184 @@
+# vector-space.yaml - 向量空间概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "vector-space"
+  name:
+    zh: "向量空间"
+    en: "Vector Space"
+  msc_codes: ["15A03"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 F 是域。F 上的向量空间是四元组 (V, +, ·, F)，其中：
+      1. (V, +) 是阿贝尔群
+      2. 标量乘法 ·: F × V → V 满足：
+         - 1·v = v
+         - (ab)·v = a·(b·v)
+         - a·(u + v) = a·u + a·v
+         - (a + b)·v = a·v + b·v
+      
+    informal: |
+      向量空间是"可以做加法和数乘"的对象集合。
+      
+      例如：
+      - ℝ³：三维空间中的箭头
+      - ℝⁿ：n元组
+      - C([0,1])：连续函数
+      - 矩阵空间
+      
+      向量可以加、可以伸缩，满足自然法则。
+      
+    lean: |
+      -- Mathlib定义
+      class Module (R : Type*) (M : Type*) [Semiring R] [AddCommMonoid M] where
+        smul : R → M → M
+        one_smul : ∀ x : M, smul 1 x = x
+        mul_smul : ∀ r s : R, ∀ x : M, smul (r * s) x = smul r (smul s x)
+        smul_add : ∀ r : R, ∀ x y : M, smul r (x + y) = smul r x + smul r y
+        add_smul : ∀ r s : R, ∀ x : M, smul (r + s) x = smul r x + smul s x
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】空间中的箭头
+      - 向量 = 有方向的量
+      - 加法 = 首尾相连
+      - 数乘 = 拉伸/压缩
+      
+    algebraic: |
+      【代数直觉】模的特例
+      - 向量空间是域上的模
+      - 有基和维数
+      - 线性组合概念
+      
+    categorical: |
+      【范畴直觉】
+      - Vect_F 是阿贝尔范畴
+      - 有限维空间半单
+      - Hom空间也是向量空间
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "几何图示"
+      content: |
+        ℝ²中的向量：
+        
+           y│
+            │    ↗ v
+            │   ╱
+            │  ╱
+            │ ╱
+            └─────────→ x
+            
+        v = (v₁, v₂)
+        
+    - type: "坐标表示"
+      content: |
+        基 {e₁, e₂, ..., eₙ} 下：
+        v = Σ vᵢeᵢ = (v₁, v₂, ..., vₙ)
+        
+  # ===== 例子层 =====
+  examples:
+    finite_dimensional:
+      - name: "ℝⁿ"
+        field: "ℝ"
+        dimension: "n"
+        basis: "{e₁, ..., eₙ}"
+        
+      - name: "ℂⁿ"
+        field: "ℂ"
+        dimension: "n"
+        
+      - name: "多项式空间 Pₙ"
+        field: "ℝ或ℂ"
+        dimension: "n+1"
+        basis: "{1, x, x², ..., xⁿ}"
+        
+      - name: "矩阵空间 M_{m×n}"
+        field: "F"
+        dimension: "m·n"
+        
+    infinite_dimensional:
+      - name: "多项式空间 P"
+        field: "ℝ"
+        dimension: "∞"
+        basis: "{1, x, x², ...}"
+        
+      - name: "连续函数 C([0,1])"
+        field: "ℝ"
+        dimension: "∞"
+        
+      - name: "ℓ²序列空间"
+        field: "ℝ或ℂ"
+        property: "Hilbert空间"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "field"
+        description: "向量空间定义在域上"
+      - id: "abelian-group"
+        description: "加法群结构"
+        
+    generalizes:
+      - id: "euclidean-space"
+        description: "欧氏空间是特例"
+        
+    specialized_by:
+      - id: "inner-product-space"
+        description: "内积空间"
+      - id: "normed-space"
+        description: "赋范空间"
+      - id: "banach-space"
+        description: "Banach空间"
+      - id: "hilbert-space"
+        description: "Hilbert空间"
+        
+    related_to:
+      - id: "linear-map"
+        description: "线性映射"
+      - id: "basis"
+        description: "基和维数"
+      - id: "dual-space"
+        description: "对偶空间"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "dimension-theorem"
+      statement: "所有基有相同基数"
+      importance: 5
+      
+    - id: "rank-nullity"
+      statement: "dim(ker T) + dim(im T) = dim(V)"
+      importance: 5
+      
+    - id: "finite-dim-subspace"
+      statement: "有限维空间的子空间是有限维的"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "field"
+      - "abelian-group"
+      
+    leads_to:
+      - "linear-algebra"
+      - "functional-analysis"
+      - "representation-theory"
+      
+    history:
+      first_appearance: "19世纪"
+      context: "几何代数化"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Algebra.Module.Basic"
+    name: "Module"
+    coverage: "complete"

@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "prime-number"
+  id: "prime-number'
   name:
     zh: "素数"
-    en: "Prime Number"
-  msc_codes: ["11A41", "11N05"]
+    en: 'Prime Number"
+  msc_codes: ["11A41', "11N05"]
   
   # ===== 定义层 =====
   definition:
@@ -24,12 +24,12 @@ concept:
       p | ab ⟹ p | a 或 p | b
       
     informal: |
-      素数是"不能再分解"的正整数。
+      素数是'不能再分解"的正整数。
       
       2, 3, 5, 7, 11, 13, ... 是素数，
       它们只能被1和自身整除。
       
-      素数是整数的"原子"——
+      素数是整数的"原子'——
       每个大于1的整数都可以唯一分解为素数乘积。
       
     lean: |
@@ -69,7 +69,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: "埃拉托色尼筛"
+    - type: '埃拉托色尼筛"
       content: |
         筛法找素数：
         
@@ -81,7 +81,7 @@ concept:
          
         剩下的就是素数
         
-    - type: "分布可视化"
+    - type: "分布可视化'
       content: |
         素数分布（渐趋稀疏）：
         
@@ -118,86 +118,86 @@ concept:
   # ===== 例子层 =====
   examples:
     small_primes:
-      - name: "2"
-        description: "唯一的偶素数"
+      - name: '2"
+        description: "唯一的偶素数'
         properties: ["最小素数"]
         
-      - name: "3, 5, 7"
-        description: "小素数"
+      - name: '3, 5, 7"
+        description: "小素数'
         
       - name: "11, 13, 17, 19, 23, 29, 31"
-        description: "个位数上限后的素数"
+        description: '个位数上限后的素数"
         
     special_primes:
-      - name: "Mersenne素数 2ᵖ - 1"
+      - name: "Mersenne素数 2ᵖ - 1'
         examples: "3, 7, 31, 127, 8191, ..."
-        note: "需要p本身是素数"
+        note: '需要p本身是素数"
         
-      - name: "Fermat素数 2^{2ⁿ} + 1"
+      - name: "Fermat素数 2^{2ⁿ} + 1'
         examples: "3, 5, 17, 257, 65537"
-        note: "只知道这5个"
+        note: '只知道这5个"
         
-      - name: "孪生素数 (p, p+2)"
+      - name: "孪生素数 (p, p+2)'
         examples: "(3,5), (5,7), (11,13), (17,19)"
-        conjecture: "无穷多对？"
+        conjecture: '无穷多对？"
         
-      - name: "Sophie Germain素数"
+      - name: "Sophie Germain素数'
         definition: "p和2p+1都是素数"
-        examples: "2, 3, 5, 11, 23, 29"
+        examples: '2, 3, 5, 11, 23, 29"
         
     non_primes:
-      - name: "1"
+      - name: "1'
         reason: "定义排除：需要 > 1"
         
-      - name: "4 = 2²"
-        reason: "可分解"
+      - name: '4 = 2²"
+        reason: "可分解'
         
       - name: "合数"
-        reason: "有非平凡因子"
+        reason: '有非平凡因子"
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "integer"
+      - id: "integer'
         description: "素数是特殊整数"
-      - id: "divisibility"
-        description: "整除概念"
+      - id: 'divisibility"
+        description: "整除概念'
         
     generalizes: []
         
     specialized_by:
       - id: "mersenne-prime"
-        description: "Mersenne素数"
-      - id: "fermat-prime"
+        description: 'Mersenne素数"
+      - id: "fermat-prime'
         description: "Fermat素数"
-      - id: "twin-prime"
-        description: "孪生素数"
+      - id: 'twin-prime"
+        description: "孪生素数'
         
     related_to:
       - id: "prime-ideal"
-        description: "素理想推广"
-      - id: "prime-element"
+        description: '素理想推广"
+      - id: "prime-element'
         description: "一般环中的素元"
-      - id: "factorization"
-        description: "唯一分解"
+      - id: 'factorization"
+        description: "唯一分解'
         
   # ===== 定理层 =====
   key_theorems:
     - id: "infinitude-of-primes"
-      statement: "素数有无穷多个"
+      statement: '素数有无穷多个"
       importance: 5
-      prover: "Euclid"
+      prover: "Euclid'
       
     - id: "fundamental-theorem-arithmetic"
-      statement: "每个 > 1 的整数可唯一分解为素数乘积"
+      statement: '每个 > 1 的整数可唯一分解为素数乘积"
       importance: 5
       
-    - id: "prime-number-theorem"
+    - id: "prime-number-theorem'
       statement: "π(x) ~ x/ln(x)"
       importance: 5
       
-    - id: "dirichlet-theorem"
-      statement: "算术级数 a, a+d, a+2d, ... 中有无穷多素数（若gcd(a,d)=1）"
+    - id: 'dirichlet-theorem"
+      statement: "算术级数 a, a+d, a+2d, ... 中有无穷多素数（若gcd(a,d)=1）'
       importance: 5
       
   # ===== 元数据层 =====
@@ -207,34 +207,34 @@ concept:
     
     prerequisites:
       - "integer"
-      - "divisibility"
+      - 'divisibility"
       
     leads_to:
-      - "number-theory"
+      - "number-theory'
       - "cryptography"
-      - "algebraic-number-theory"
+      - 'algebraic-number-theory"
       
     history:
-      first_appearance: "古希腊"
+      first_appearance: "古希腊'
       context: "Euclid《几何原本》"
       
     key_figures:
-      - id: "euclid"
-        contribution: "素数无穷性证明"
+      - id: 'euclid"
+        contribution: "素数无穷性证明'
       - id: "euler"
-        contribution: "ζ函数与素数"
-      - id: "riemann"
+        contribution: 'ζ函数与素数"
+      - id: "riemann'
         contribution: "Riemann假设"
-      - id: "hadamard-vallee-poussin"
-        contribution: "素数定理证明"
+      - id: 'hadamard-vallee-poussin"
+        contribution: "素数定理证明'
         
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Data.Nat.Prime"
-    name: "Nat.Prime"
-    coverage: "complete"
+    name: 'Nat.Prime"
+    coverage: "complete'
     
     related_definitions:
       - "Prime"
-      - "Irreducible"
+      - 'Irreducible"
       - "minFac"

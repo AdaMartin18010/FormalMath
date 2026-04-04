@@ -1,0 +1,193 @@
+# gauss-bonnet.yaml - Gauss-Bonnet定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "gauss-bonnet-theorem"
+  name:
+    zh: "Gauss-Bonnet定理"
+    en: "Gauss-Bonnet Theorem"
+  msc_codes: ["53A05", "53C20"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      【曲面版本】
+      设 M 是紧致可定向二维黎曼流形，K 是高斯曲率。则：
+      
+      ∫∫_M K dA = 2π · χ(M)
+      
+      其中 χ(M) 是 M 的 Euler 示性数。
+      
+      【带边界版本】
+      若 M 有边界 ∂M，κ_g 是边界的测地曲率，则：
+      
+      ∫∫_M K dA + ∫_{∂M} κ_g ds = 2π · χ(M)
+      
+    informal: |
+      曲面的总曲率完全由其拓扑决定！
+      
+      球面：总曲率 = 4π（χ = 2）
+      环面：总曲率 = 0（χ = 0）
+      双孔环面：总曲率 = -4π（χ = -2）
+      
+      这是几何与拓扑深刻联系的第一个定理。
+      
+    lean: |
+      -- Gauss-Bonnet的形式化
+      theorem gauss_bonnet {M : Type*} [SmoothManifold M] [Compact M]
+        [OrientableManifold M] (g : RiemannianMetric M) :
+        ∫ x, gaussCurvature g x = 2 * π * eulerCharacteristic M
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "三角剖分 + 局部计算 + 整体求和"
+    
+    key_ideas:
+      - "将曲面三角剖分"
+      - "每个三角形应用局部Gauss-Bonnet"
+      - "内部边贡献抵消，得到全局结果"
+      
+    proof_tree: |
+      Gauss-Bonnet定理
+          │
+          ├── 三角剖分
+          │   └── 曲面 = ⋃三角形
+          │
+          ├── 局部公式
+          │   └── 三角形：∫K dA + (角度和 - π) = 0
+          │
+          ├── 求和
+          │   ├── 内角和 = 2π × 顶点数 - ...
+          │   └── 内部边抵消
+          │
+          └── Euler公式
+              └── V - E + F = χ(M)
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      紧致无边界：∫∫_M K dA = 2πχ(M)
+      
+      有边界：∫∫_M K dA + ∮_{∂M} κ_g ds + Σ θᵢ = 2πχ(M)
+      
+      其中 θᵢ 是角点的外角
+      
+    geometric: |
+      【几何表征】
+      
+      各种曲面的总曲率：
+      
+      球面 S²           环面 T²          双孔环面
+       ╭─────╮         ╭─────╮         ╭──╮  ╭──╮
+      ╱       ╲       ╱ ╭───╮ ╲       ╱  ╰──╯  ╲
+      │   +   │       │ │   │ │       │   0     │
+      ╲       ╱       ╲ ╰───╯ ╱       ╲  ╭──╮  ╱
+       ╰─────╯         ╰─────╯         ╰──╯  ╰──╯
+      
+      ∫K = 4π        ∫K = 0          ∫K = -4π
+      χ = 2          χ = 0           χ = -2
+      
+    intuitive: |
+      【直觉表征】
+      
+      气球类比：
+      - 吹大气球（球面）：处处正曲率
+      - 捏成甜甜圈（环面）：正负曲率抵消
+      - 曲率总量是"拓扑不变量"
+      
+      三角形角和：
+      - 球面三角形：角和 > π（正曲率）
+      - 平面三角形：角和 = π
+      - 双曲三角形：角和 < π（负曲率）
+      
+    computational: |
+      【计算表征】
+      
+      验证球面：
+      
+      # 半径R的球面
+      K = 1/R²  （常高斯曲率）
+      A = 4πR²  （表面积）
+      
+      ∫K dA = (1/R²) × (4πR²) = 4π
+      
+      χ(S²) = V - E + F = 2（任意三角剖分）
+      2πχ = 4π ✓
+      
+    categorical: |
+      【范畴表征】
+      
+      特征类观点：
+      - Gauss-Bonnet是Chern-Gauss-Bonnet的特例
+      - ∫_M e(TM) = χ(M)
+      - e(TM)是切丛的Euler类
+      
+      指标定理观点：
+      - χ(M) = ind(d + d*) （de Rham复形的指标）
+      - Atiyah-Singer指标定理的特例
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "拓扑"
+      description: "计算Euler示性数"
+      
+    - domain: "几何"
+      description: "曲率约束"
+      detail: "正曲率曲面必须是球面型"
+      
+    - domain: "物理"
+      description: "膜的拓扑"
+      detail: "DNA环的链接数"
+      
+    - domain: "图论"
+      description: "平面图的Euler公式"
+      
+  # ===== 推广 =====
+  generalizations:
+    - id: "chern-gauss-bonnet"
+      statement: "高维版本：∫Pf(Ω) = (2π)ⁿχ(M)"
+      description: "偶数维流形"
+      
+    - id: "atiyah-singer"
+      statement: "一般指标定理"
+      description: "椭圆算子指标公式"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "curvature"
+        role: "核心概念"
+      - id: "manifold"
+        role: "定理对象"
+      - id: "euler-characteristic"
+        role: "拓扑不变量"
+        
+    uses_theorems:
+      - id: "euler-formula"
+        role: "V - E + F = 2"
+        
+    implies:
+      - id: "hairy-ball-theorem"
+        description: "毛球定理（χ(S²) ≠ 0）"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      concepts: ["curvature", "manifold", "surface"]
+      theorems: ["euler-formula"]
+      
+    year_proved: "1848"
+    provers: ["bonnet"]
+    earlier_work: "Gauss (1827)"
+    
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Geometry.Manifold"
+    main_theorem: "Not yet fully formalized"
+    coverage: "partial"

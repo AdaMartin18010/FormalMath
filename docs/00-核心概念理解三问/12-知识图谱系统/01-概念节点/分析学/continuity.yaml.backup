@@ -1,0 +1,255 @@
+# continuity.yaml - 连续性概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "continuity"
+  name:
+    zh: "连续性"
+    en: "Continuity"
+  msc_codes: ["26A15", "54C05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【ε-δ定义】
+      f: D → ℝ 在点 c ∈ D 连续，当且仅当：
+      ∀ε > 0, ∃δ > 0, ∀x ∈ D, |x - c| < δ ⟹ |f(x) - f(c)| < ε
+      
+      【极限定义】
+      f 在 c 连续 ⟺ lim_{x→c} f(x) = f(c)
+      
+      【拓扑定义】
+      f: X → Y 连续 ⟺ 开集的原像是开集
+      ∀V ⊆ Y 开, f⁻¹(V) ⊆ X 开
+      
+      【邻域定义】
+      f 在 c 连续 ⟺ ∀V ∈ N(f(c)), ∃U ∈ N(c), f(U) ⊆ V
+      
+    informal: |
+      连续函数是"没有跳跃"的函数。
+      
+      想象画一条曲线：如果能一笔画出不抬笔，就是连续的。
+      
+      或者想象拉橡皮筋：小的输入变化只导致小的输出变化。
+      
+      连续 = "靠近的点映射到靠近的点"
+      
+    lean: |
+      -- Mathlib定义（拓扑版本）
+      def Continuous {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]
+        (f : X → Y) : Prop :=
+        ∀ s, IsOpen s → IsOpen (f ⁻¹' s)
+        
+      -- ε-δ版本（度量空间）
+      def ContinuousAt {X Y : Type*} [MetricSpace X] [MetricSpace Y]
+        (f : X → Y) (c : X) : Prop :=
+        ∀ ε > 0, ∃ δ > 0, ∀ x, dist x c < δ → dist (f x) (f c) < ε
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】图像不断裂
+      - 连续函数的图像是"一整块"
+      - 不连续点：图像有"洞"或"跳跃"
+      - 拓扑不变性：连续映射保持"连在一起"
+      
+    algebraic: |
+      【代数直觉】保持极限运算
+      - f连续 ⟺ f(lim xₙ) = lim f(xₙ)
+      - 连续函数"尊重"极限操作
+      - 极限和函数可以交换顺序
+      
+    physical: |
+      【物理直觉】无突变
+      - 连续变化：温度、速度的平滑变化
+      - 不连续：相变、冲击波
+      - 物理系统通常假设连续性
+      
+    categorical: |
+      【范畴直觉】拓扑范畴的态射
+      - Top范畴：对象=拓扑空间，态射=连续映射
+      - 连续性保持拓扑结构
+      - 同胚 = 双向连续的双射
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "ε-δ图示"
+      content: |
+        函数在c点连续：
+        
+        y
+        │      ╭───╮
+    f(c)+ε├······│···│·····
+        │      │ ╱ │
+      f(c)├──────┼─○─┼──────
+        │      │╱  │
+    f(c)-ε├······│···│·····
+        │      ╰───╯
+        └──────┼─┬─┼──────→ x
+              c-δ c c+δ
+              
+    - type: "开集原像"
+      content: |
+        拓扑定义可视化：
+        
+        X          f          Y
+        ┌──────┐      ┌──────┐
+        │  ╭─╮ │  →   │  ╭─╮ │
+        │  │U│ │      │  │V│ │
+        │  ╰─╯ │      │  ╰─╯ │
+        └──────┘      └──────┘
+        
+        V开 ⟹ U = f⁻¹(V) 开
+        
+    - type: "数列刻画"
+      content: |
+        序列连续性：
+        
+        xₙ → c  ⟹  f(xₙ) → f(c)
+        
+        "序列的极限的像 = 像的极限"
+        
+  # ===== 例子层 =====
+  examples:
+    continuous:
+      - name: "多项式函数"
+        description: "处处连续"
+        properties: ["光滑", "代数函数"]
+        
+      - name: "指数函数 eˣ"
+        description: "处处连续"
+        properties: ["光滑", "解析"]
+        
+      - name: "三角函数 sin, cos"
+        description: "处处连续"
+        properties: ["光滑", "周期"]
+        
+      - name: "绝对值函数 |x|"
+        description: "处处连续，在0不可微"
+        properties: ["Lipschitz", "非光滑"]
+        
+    discontinuous:
+      - name: "符号函数 sgn(x)"
+        description: "在x=0有跳跃不连续"
+        properties: ["可去不连续点"]
+        
+      - name: "Dirichlet函数"
+        description: "处处不连续"
+        formula: "D(x) = 1 if x∈ℚ, 0 if x∉ℚ"
+        
+      - name: "Thomae函数"
+        description: "在无理数连续，有理数不连续"
+        properties: ["奇异连续性"]
+        
+    special:
+      - name: "一致连续函数"
+        description: "δ不依赖于点"
+        properties: ["更强的连续性"]
+        
+      - name: "Lipschitz连续"
+        description: "|f(x)-f(y)| ≤ L|x-y|"
+        properties: ["定量连续性"]
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "limit"
+        description: "连续性由极限定义"
+      - id: "topological-space"
+        description: "拓扑连续性需要拓扑"
+      - id: "metric-space"
+        description: "ε-δ定义需要度量"
+        
+    generalizes:
+      - id: "uniform-continuity"
+        description: "一致连续更强"
+      - id: "lipschitz-continuity"
+        description: "Lipschitz连续更强"
+        
+    is_a: []
+        
+    specialized_by:
+      - id: "differentiability"
+        description: "可微 ⟹ 连续"
+      - id: "analyticity"
+        description: "解析 ⟹ 连续"
+        
+    related_to:
+      - id: "homeomorphism"
+        description: "同胚是双向连续双射"
+      - id: "compactness"
+        description: "紧集上连续 ⟹ 一致连续"
+      - id: "connectedness"
+        description: "连续像保持连通"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "intermediate-value-theorem"
+      statement: "介值定理：连续函数取到中间值"
+      importance: 5
+      
+    - id: "extreme-value-theorem"
+      statement: "闭区间上连续函数有最大最小值"
+      importance: 5
+      
+    - id: "heine-cantor"
+      statement: "紧集上连续函数一致连续"
+      importance: 4
+      
+    - id: "continuous-image-compact"
+      statement: "紧集的连续像是紧集"
+      importance: 5
+      
+    - id: "continuous-image-connected"
+      statement: "连通集的连续像是连通集"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "limit"
+      - "function"
+      - "real-numbers"
+      
+    corequisites:
+      - "open-set"
+      - "closed-set"
+      
+    leads_to:
+      - "differentiability"
+      - "integrability"
+      - "topology"
+      - "functional-analysis"
+      
+    history:
+      first_appearance: 1817
+      context: "Bolzano的介值定理证明"
+      rigorous_definition: "Weierstrass, Heine"
+      topological_definition: "Hausdorff"
+      
+    key_figures:
+      - id: "bolzano"
+        contribution: "连续函数的早期研究"
+      - id: "cauchy"
+        contribution: "ε-δ思想"
+      - id: "weierstrass"
+        contribution: "严格定义"
+      - id: "heine"
+        contribution: "一致连续"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Topology.Basic"
+    name: "Continuous"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Basic.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "ContinuousAt"
+      - "ContinuousOn"
+      - "UniformContinuous"
+      - "LipschitzWith"

@@ -3,174 +3,174 @@
 # 创建日期: 2026-04-04
 # 参考: https://www.ams.org/msc/
 
-version: "1.0"
+version: "1.0'
 created: "2026-04-04"
 total_concepts: 20
-category: "几何拓扑"
+category: '几何拓扑"
 
 # ============================================================================
 # 基础拓扑概念 (5个)
 # ============================================================================
 concepts_topology_basic:
-  - concept_id: "topological_space"
+  - concept_id: "topological_space'
     name: "拓扑空间"
-    msc_primary: "54A05"
-    msc_secondary: ["54-01", "54B05"]
-    msc_description: "拓扑空间与连续映射的一般理论"
+    msc_primary: '54A05"
+    msc_secondary: ["54-01', "54B05"]
+    msc_description: '拓扑空间与连续映射的一般理论"
 
-  - concept_id: "continuous_map"
+  - concept_id: "continuous_map'
     name: "连续映射"
-    msc_primary: "54C05"
-    msc_secondary: ["54C10", "54C15"]
-    msc_description: "连续映射与一般拓扑空间类型"
+    msc_primary: '54C05"
+    msc_secondary: ["54C10', "54C15"]
+    msc_description: '连续映射与一般拓扑空间类型"
 
-  - concept_id: "connectedness"
+  - concept_id: "connectedness'
     name: "连通性"
-    msc_primary: "54D05"
-    msc_secondary: ["54D10", "54C05"]
-    msc_description: "连通性与局部连通空间"
+    msc_primary: '54D05"
+    msc_secondary: ["54D10', "54C05"]
+    msc_description: '连通性与局部连通空间"
 
-  - concept_id: "compactness"
+  - concept_id: "compactness'
     name: "紧致性"
-    msc_primary: "54D30"
-    msc_secondary: ["54D20", "54E45"]
-    msc_description: "紧致性与紧化"
+    msc_primary: '54D30"
+    msc_secondary: ["54D20', "54E45"]
+    msc_description: '紧致性与紧化"
 
-  - concept_id: "separation_axioms"
+  - concept_id: "separation_axioms'
     name: "分离公理"
-    msc_primary: "54D10"
-    msc_secondary: ["54D15", "54A05"]
-    msc_description: "低分离公理(T0-T3)与完全正则空间"
+    msc_primary: '54D10"
+    msc_secondary: ["54D15', "54A05"]
+    msc_description: '低分离公理(T0-T3)与完全正则空间"
 
 # ============================================================================
 # 代数拓扑概念 (5个)
 # ============================================================================
 concepts_algebraic_topology:
-  - concept_id: "fundamental_group"
+  - concept_id: "fundamental_group'
     name: "基本群"
-    msc_primary: "55Q05"
-    msc_secondary: ["55P05", "57M05"]
-    msc_description: "同伦群一般理论，基本群与同伦类集合"
+    msc_primary: '55Q05"
+    msc_secondary: ["55P05', "57M05"]
+    msc_description: '同伦群一般理论，基本群与同伦类集合"
 
-  - concept_id: "covering_space"
+  - concept_id: "covering_space'
     name: "覆盖空间"
-    msc_primary: "57M10"
-    msc_secondary: ["55R05", "55Q52"]
-    msc_description: "覆叠空间理论与万有覆叠"
+    msc_primary: '57M10"
+    msc_secondary: ["55R05', "55Q52"]
+    msc_description: '覆叠空间理论与万有覆叠"
 
-  - concept_id: "homology_group"
+  - concept_id: "homology_group'
     name: "同调群"
-    msc_primary: "55N10"
-    msc_secondary: ["55N07", "55U15"]
-    msc_description: "奇异同调与上同调理论"
+    msc_primary: '55N10"
+    msc_secondary: ["55N07', "55U15"]
+    msc_description: '奇异同调与上同调理论"
 
-  - concept_id: "cohomology"
+  - concept_id: "cohomology'
     name: "上同调"
-    msc_primary: "55N10"
-    msc_secondary: ["55N30", "55N91"]
-    msc_description: "同调与上同调理论，奇异理论"
+    msc_primary: '55N10"
+    msc_secondary: ["55N30', "55N91"]
+    msc_description: '同调与上同调理论，奇异理论"
 
-  - concept_id: "homotopy_theory"
+  - concept_id: "homotopy_theory'
     name: "同伦论"
-    msc_primary: "55Pxx"
-    msc_secondary: ["55Qxx", "55U35"]
-    msc_description: "同伦论与同伦群"
+    msc_primary: '55Pxx"
+    msc_secondary: ["55Qxx', "55U35"]
+    msc_description: '同伦论与同伦群"
 
 # ============================================================================
 # 微分几何概念 (5个)
 # ============================================================================
 concepts_differential_geometry:
-  - concept_id: "differentiable_manifold"
+  - concept_id: "differentiable_manifold'
     name: "微分流形"
-    msc_primary: "57Rxx"
-    msc_secondary: ["58A05", "58Axx"]
-    msc_description: "微分拓扑与可微流形"
+    msc_primary: '57Rxx"
+    msc_secondary: ["58A05', "58Axx"]
+    msc_description: '微分拓扑与可微流形"
 
-  - concept_id: "tangent_space"
+  - concept_id: "tangent_space'
     name: "切空间"
-    msc_primary: "58A05"
-    msc_secondary: ["58A10", "53B05"]
-    msc_description: "可微流形一般理论，切丛与向量场"
+    msc_primary: '58A05"
+    msc_secondary: ["58A10', "53B05"]
+    msc_description: '可微流形一般理论，切丛与向量场"
 
-  - concept_id: "tensor_analysis"
+  - concept_id: "tensor_analysis'
     name: "张量分析"
-    msc_primary: "53A45"
-    msc_secondary: ["15A72", "58A10"]
-    msc_description: "向量与张量分析"
+    msc_primary: '53A45"
+    msc_secondary: ["15A72', "58A10"]
+    msc_description: '向量与张量分析"
 
-  - concept_id: "riemannian_metric"
+  - concept_id: "riemannian_metric'
     name: "黎曼度量"
-    msc_primary: "53B20"
-    msc_secondary: ["53B21", "53C20"]
-    msc_description: "局部黎曼几何，黎曼度量"
+    msc_primary: '53B20"
+    msc_secondary: ["53B21', "53C20"]
+    msc_description: '局部黎曼几何，黎曼度量"
 
 # ============================================================================
 # 黎曼几何概念 (4个)
 # ============================================================================
 concepts_riemannian_geometry:
-  - concept_id: "curvature"
+  - concept_id: "curvature'
     name: "曲率"
-    msc_primary: "53B21"
-    msc_secondary: ["53B20", "53C21"]
-    msc_description: "局部黎曼几何方法，曲率张量"
+    msc_primary: '53B21"
+    msc_secondary: ["53B20', "53C21"]
+    msc_description: '局部黎曼几何方法，曲率张量"
 
-  - concept_id: "geodesic"
+  - concept_id: "geodesic'
     name: "测地线"
-    msc_primary: "53C22"
-    msc_secondary: ["53B05", "58E10"]
-    msc_description: "测地线理论"
+    msc_primary: '53C22"
+    msc_secondary: ["53B05', "58E10"]
+    msc_description: '测地线理论"
 
-  - concept_id: "vector_bundle"
+  - concept_id: "vector_bundle'
     name: "向量丛"
-    msc_primary: "55R25"
-    msc_secondary: ["57R22", "53C05"]
-    msc_description: "球丛与向量丛，纤维丛理论"
+    msc_primary: '55R25"
+    msc_secondary: ["57R22', "53C05"]
+    msc_description: '球丛与向量丛，纤维丛理论"
 
-  - concept_id: "connection"
+  - concept_id: "connection'
     name: "联络"
-    msc_primary: "53B05"
-    msc_secondary: ["53C05", "58A05"]
-    msc_description: "线性联络与仿射联络"
+    msc_primary: '53B05"
+    msc_secondary: ["53C05', "58A05"]
+    msc_description: '线性联络与仿射联络"
 
 # ============================================================================
 # 代数几何概念 (4个)
 # ============================================================================
 concepts_algebraic_geometry:
-  - concept_id: "algebraic_variety"
+  - concept_id: "algebraic_variety'
     name: "代数簇"
-    msc_primary: "14Axx"
-    msc_secondary: ["14Jxx", "14Mxx"]
-    msc_description: "代数几何基础，代数簇"
+    msc_primary: '14Axx"
+    msc_secondary: ["14Jxx', "14Mxx"]
+    msc_description: '代数几何基础，代数簇"
 
-  - concept_id: "scheme"
+  - concept_id: "scheme'
     name: "概形"
-    msc_primary: "14A15"
-    msc_secondary: ["14A20", "14F20"]
-    msc_description: "概形与概形态射"
+    msc_primary: '14A15"
+    msc_secondary: ["14A20', "14F20"]
+    msc_description: '概形与概形态射"
 
-  - concept_id: "sheaf"
+  - concept_id: "sheaf'
     name: "层"
-    msc_primary: "14F05"
-    msc_secondary: ["14F06", "18F20"]
-    msc_description: "层理论与相干层"
+    msc_primary: '14F05"
+    msc_secondary: ["14F06', "18F20"]
+    msc_description: '层理论与相干层"
 
-  - concept_id: "cohomology_sheaf"
+  - concept_id: "cohomology_sheaf'
     name: "层上同调"
-    msc_primary: "14Fxx"
-    msc_secondary: ["14F25", "18G40"]
-    msc_description: "上同调理论(代数几何)，层上同调"
+    msc_primary: '14Fxx"
+    msc_secondary: ["14F25', "18G40"]
+    msc_description: '上同调理论(代数几何)，层上同调"
 
 # ============================================================================
 # MSC2020 主类说明
 # ============================================================================
 msc_main_classes:
-  "54": "一般拓扑 (General topology)"
-  "55": "代数拓扑 (Algebraic topology)"
-  "57": "流形与胞腔复形 (Manifolds and cell complexes)"
-  "53": "微分几何 (Differential geometry)"
-  "14": "代数几何 (Algebraic geometry)"
-  "58": "流形上的分析 (Global analysis, analysis on manifolds)"
-  "18": "范畴论与同调代数 (Category theory; homological algebra)"
+  "54': "一般拓扑 (General topology)"
+  '55": "代数拓扑 (Algebraic topology)'
+  "57": '流形与胞腔复形 (Manifolds and cell complexes)"
+  "53': "微分几何 (Differential geometry)"
+  '14": "代数几何 (Algebraic geometry)'
+  "58": '流形上的分析 (Global analysis, analysis on manifolds)"
+  "18': "范畴论与同调代数 (Category theory; homological algebra)"
 
 # ============================================================================
 # 编码统计
@@ -178,11 +178,11 @@ msc_main_classes:
 statistics:
   total_concepts: 20
   by_msc_class:
-    "54": 5    # 一般拓扑
-    "55": 6    # 代数拓扑
+    '54": 5    # 一般拓扑
+    "55': 6    # 代数拓扑
     "57": 1    # 流形与胞腔复形
-    "53": 5    # 微分几何
-    "14": 3    # 代数几何
+    '53": 5    # 微分几何
+    "14': 3    # 代数几何
     "58": 0    # 流形上的分析（次要编码）
   
   # 概念状态

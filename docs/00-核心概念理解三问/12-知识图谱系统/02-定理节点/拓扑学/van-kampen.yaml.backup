@@ -1,0 +1,118 @@
+# van-kampen.yaml - van Kampen定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "van-kampen"
+  name:
+    zh: "van Kampen定理"
+    en: "Van Kampen Theorem"
+  msc_codes: ["55Q05"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 X = U₁ ∪ U₂，其中 U₁, U₂, U₁ ∩ U₂ 是道路连通开集。
+      设 x₀ ∈ U₁ ∩ U₂。则：
+      
+      π₁(X, x₀) ≅ π₁(U₁, x₀) *_{π₁(U₁∩U₂, x₀)} π₁(U₂, x₀)
+      
+      即 X 的基本群是 U₁ 和 U₂ 基本群关于
+      U₁ ∩ U₂ 基本群的合并积（pushout）。
+      
+    informal: |
+      如果把空间分成两块，基本群可以从两块的基本群计算出来。
+      
+      例子：八字形 = 两个圆合并一点
+      - 每个圆的 π₁ ≅ ℤ
+      - 交集（一点）的 π₁ = 0
+      - 八字形的 π₁ ≅ ℤ * ℤ = F₂（自由群）
+      
+    lean: |
+      theorem van_kampen {X : Type*} [TopologicalSpace X] 
+        {U₁ U₂ : Set X} (hU₁ : IsOpen U₁) (hU₂ : IsOpen U₂)
+        (hcover : U₁ ∪ U₂ = Set.univ)
+        (hconn₁ : IsPathConnected U₁) (hconn₂ : IsPathConnected U₂)
+        (hconn₁₂ : IsPathConnected (U₁ ∩ U₂))
+        {x₀ : X} (hx₀ : x₀ ∈ U₁ ∩ U₂) :
+        FundamentalGroup X x₀ ≃* 
+          (FundamentalGroup U₁ x₀).AmalgamatedProduct (FundamentalGroup U₂ x₀)
+            (FundamentalGroup (U₁ ∩ U₂) x₀)
+            
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "用泛性质表征pushout"
+    
+    proof_tree: |
+      van Kampen定理
+          │
+          ├── 同态构造
+          │   ├── j₁: π₁(U₁) → π₁(X)
+          │   └── j₂: π₂(U₂) → π₁(X)
+          │
+          ├── 满射性
+          │   └── 任何X中的路都可以分解
+          │
+          └── 泛性质验证
+              └── 相容同态唯一因子化
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      Pushout图：
+      
+      π₁(U₁∩U₂) ──i₁──→ π₁(U₁)
+           │                │
+          i₂               j₁
+           ↓                ↓
+        π₁(U₂) ──j₂──→ π₁(X)
+        
+    geometric: |
+      【几何表征】
+      
+      空间分解：
+      
+      ┌─────────────────────┐
+      │        X            │
+      │   ┌──────┬──────┐   │
+      │   │  U₁  │  U₂  │   │
+      │   │      │      │   │
+      │   │   U₁∩U₂     │   │
+      │   └──────┴──────┘   │
+      └─────────────────────┘
+      
+    intuitive: |
+      【直觉表征】
+      
+      拼图类比：
+      - 两块拼图在边界处粘合
+      - 每块上可以画的圈
+      - 跨越边界的圈 = 两块圈的组合
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "计算 π₁(S¹ ∨ S¹) ≅ ℤ * ℤ"
+    - description: "计算 π₁(T²) ≅ ℤ × ℤ"
+    - description: "计算结图的基本群"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "fundamental-group"
+        role: "核心概念"
+      - id: "pushout"
+        role: "范畴构造"
+        
+    related_to:
+      - id: "mayer-vietoris"
+        description: "同调版本"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    history:
+      discoverer: "Egbert van Kampen"
+      year: 1933

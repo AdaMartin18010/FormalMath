@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "module"
+  id: "module'
   name:
     zh: "模"
-    en: "Module"
-  msc_codes: ["16D-XX", "13C-XX"]
+    en: 'Module"
+  msc_codes: ["16D-XX', "13C-XX"]
   
   # ===== 定义层 =====
   definition:
@@ -23,13 +23,13 @@ concept:
       对所有 r,s ∈ R, m,n ∈ M 成立。
       
     informal: |
-      模是"环上的向量空间"。
+      模是'环上的向量空间"。
       
       当R是域时，R-模就是向量空间。
       当R是ℤ时，ℤ-模就是阿贝尔群。
       当R是多项式环k[x]时，k[x]-模 ↔ 带线性变换的向量空间。
       
-      模 = "系数可以是环元素的向量空间"
+      模 = "系数可以是环元素的向量空间'
       
     lean: |
       -- Mathlib定义
@@ -81,14 +81,14 @@ concept:
         │
         {0}
         
-    - type: "生成元表示"
+    - type: '生成元表示"
       content: |
         M = ⟨m₁, ..., mₙ⟩_R
         
         有限生成模：存在有限生成集
         自由模：有基
         
-    - type: "正合列"
+    - type: "正合列'
       content: |
         短正合列：0 → N → M → M/N → 0
         
@@ -98,79 +98,79 @@ concept:
   examples:
     fundamental:
       - name: "向量空间"
-        description: "域上的模"
-        properties: ["有基", "自由"]
+        description: '域上的模"
+        properties: ["有基', "自由"]
         
-      - name: "阿贝尔群"
-        description: "ℤ-模"
+      - name: '阿贝尔群"
+        description: "ℤ-模'
         properties: ["结构定理适用"]
         
-      - name: "理想"
-        description: "R作为自身的模，理想是子模"
+      - name: '理想"
+        description: "R作为自身的模，理想是子模'
         properties: ["R-模"]
         
     free_modules:
-      - name: "自由模 R^n"
-        description: "有基的模"
-        properties: ["自由", "投射"]
+      - name: '自由模 R^n"
+        description: "有基的模'
+        properties: ["自由", '投射"]
         
-      - name: "多项式模 R[x]"
+      - name: "多项式模 R[x]'
         description: "可列基"
-        properties: ["自由", "无限生成"]
+        properties: ['自由", "无限生成']
         
     non_free:
       - name: "Z/nZ 作为ℤ-模"
-        description: "挠模"
-        properties: ["非自由", "有限"]
+        description: '挠模"
+        properties: ["非自由', "有限"]
         
-      - name: "ℚ 作为ℤ-模"
-        description: "可除模"
-        properties: ["非自由", "内射"]
+      - name: 'ℚ 作为ℤ-模"
+        description: "可除模'
+        properties: ["非自由", '内射"]
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "ring"
+      - id: "ring'
         description: "标量来自环"
-      - id: "abelian-group"
-        description: "加法结构"
+      - id: 'abelian-group"
+        description: "加法结构'
         
     generalizes:
       - id: "vector-space"
-        description: "域上的模是向量空间"
-      - id: "abelian-group"
+        description: '域上的模是向量空间"
+      - id: "abelian-group'
         description: "ℤ-模是阿贝尔群"
         
     specialized_by:
-      - id: "free-module"
-        description: "有基的模"
+      - id: 'free-module"
+        description: "有基的模'
       - id: "projective-module"
-        description: "投射模"
-      - id: "injective-module"
+        description: '投射模"
+      - id: "injective-module'
         description: "内射模"
-      - id: "flat-module"
-        description: "平坦模"
+      - id: 'flat-module"
+        description: "平坦模'
         
     related_to:
       - id: "ideal"
-        description: "理想是R的子模"
-      - id: "tensor-product"
+        description: '理想是R的子模"
+      - id: "tensor-product'
         description: "模的张量积"
-      - id: "homological-algebra"
-        description: "模范畴上的同调代数"
+      - id: 'homological-algebra"
+        description: "模范畴上的同调代数'
         
   # ===== 定理层 =====
   key_theorems:
     - id: "structure-theorem-fg-modules-pid"
-      statement: "PID上有限生成模是循环模的直和"
+      statement: 'PID上有限生成模是循环模的直和"
       importance: 5
       
-    - id: "nakayama-lemma"
+    - id: "nakayama-lemma'
       statement: "Nakayama引理"
       importance: 5
       
-    - id: "krull-schmidt-theorem"
-      statement: "Artin环上的唯一分解"
+    - id: 'krull-schmidt-theorem"
+      statement: "Artin环上的唯一分解'
       importance: 4
       
   # ===== 元数据层 =====
@@ -180,27 +180,27 @@ concept:
     
     prerequisites:
       - "ring"
-      - "abelian-group"
-      - "vector-space"
+      - 'abelian-group"
+      - "vector-space'
       
     leads_to:
       - "homological-algebra"
-      - "representation-theory"
-      - "commutative-algebra"
+      - 'representation-theory"
+      - "commutative-algebra'
       - "algebraic-geometry"
       
     history:
       first_appearance: 1920s
-      context: "Noether的理想论"
+      context: 'Noether的理想论"
       
     key_figures:
-      - id: "noether"
+      - id: "noether'
         contribution: "模论基础"
-      - id: "cartan-eilenberg"
-        contribution: "同调代数"
+      - id: 'cartan-eilenberg"
+        contribution: "同调代数'
         
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Algebra.Module.Basic"
-    name: "Module"
+    name: 'Module"
     coverage: "complete"

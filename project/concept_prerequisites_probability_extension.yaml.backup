@@ -1,0 +1,507 @@
+# FormalMath 概率统计概念扩展
+# 基于Wikipedia结构对齐的补充概念
+# 生成日期: 2026-04-04
+
+metadata:
+  version: "1.0"
+  date: "2026-04-04"
+  source: "Wikipedia Mathematics Alignment"
+  category: "概率统计"
+  total_new_concepts: 10
+  
+concepts:
+  # ========== 1. Filtration (滤链) ==========
+  - concept_id: "filtration"
+    name: "滤链"
+    name_en: "Filtration"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Filtration_(probability_theory)"
+    definition: "递增的σ-代数族 {F_t}_{t≥0}，表示随时间增长的信息流，是鞅和随机过程理论的基础结构"
+    formal_definition: |
+      给定概率空间 (Ω, F, P)，滤链是一族子σ-代数 {F_t}_{t∈T} 满足：
+      1. 对每个 t，F_t ⊆ F
+      2. 单调性：若 s ≤ t，则 F_s ⊆ F_t
+    prerequisites:
+      - concept_id: "sigma_algebra"
+        level: "L2"
+        relation: "依赖"
+        description: "需要σ-代数的基本概念"
+      - concept_id: "probability_measure"
+        level: "L3"
+        relation: "依赖"
+        description: "在概率空间框架下定义"
+    successors:
+      - concept_id: "martingale"
+        level: "L3"
+        relation: "被依赖"
+        description: "鞅的定义依赖于滤链"
+      - concept_id: "stochastic_process"
+        level: "L3"
+        relation: "被依赖"
+        description: "适应过程需要相对于滤链定义"
+      - concept_id: "stochastic_calculus"
+        level: "L4"
+        relation: "被依赖"
+        description: "随机积分相对于滤链定义"
+    related_concepts:
+      - "conditional_expectation"
+      - "adapted_process"
+      - "predictable_process"
+    difficulty: 3
+    estimated_hours: 20
+    msc_code: "60A99"
+    tags: ["随机过程", "测度论", "信息论"]
+
+  # ========== 2. Markov Chain Monte Carlo ==========
+  - concept_id: "markov_chain_monte_carlo"
+    name: "马尔可夫链蒙特卡洛"
+    name_en: "Markov Chain Monte Carlo"
+    abbreviation: "MCMC"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo"
+    definition: "利用马尔可夫链从复杂概率分布中采样的计算方法，特别适用于高维空间中的积分计算"
+    formal_definition: |
+      MCMC方法通过构造一个以目标分布 π(x) 为平稳分布的马尔可夫链，
+      使得链的样本收敛于目标分布，从而进行随机采样。
+    prerequisites:
+      - concept_id: "markov_chain"
+        level: "L3"
+        relation: "依赖"
+        description: "需要马尔可夫链的基本理论"
+      - concept_id: "bayesian_inference"
+        level: "L3"
+        relation: "依赖"
+        description: "主要用于贝叶斯推断中的后验采样"
+      - concept_id: "stationary_distribution"
+        level: "L3"
+        relation: "依赖"
+        description: "利用平稳分布进行采样"
+    successors:
+      - concept_id: "gibbs_sampling"
+        level: "L4"
+        relation: "被依赖"
+        description: "Gibbs采样是MCMC的重要算法"
+      - concept_id: "metropolis_hastings"
+        level: "L4"
+        relation: "被依赖"
+        description: "M-H算法是MCMC的核心算法"
+      - concept_id: "hamiltonian_monte_carlo"
+        level: "L4"
+        relation: "被依赖"
+        description: "HMC是MCMC的高效变体"
+    related_concepts:
+      - "monte_carlo_method"
+      - "rejection_sampling"
+      - "importance_sampling"
+    difficulty: 4
+    estimated_hours: 40
+    msc_code: "65C05"
+    tags: ["计算方法", "贝叶斯统计", "采样算法", "机器学习"]
+
+  # ========== 3. Hidden Markov Model ==========
+  - concept_id: "hidden_markov_model"
+    name: "隐马尔可夫模型"
+    name_en: "Hidden Markov Model"
+    abbreviation: "HMM"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Hidden_Markov_model"
+    definition: "状态不可直接观测的马尔可夫模型，通过观测序列推断隐藏状态的概率图模型"
+    formal_definition: |
+      HMM由以下要素组成：
+      - 状态集合 S = {s_1, ..., s_N}
+      - 观测集合 O = {o_1, ..., o_M}
+      - 状态转移概率矩阵 A = [a_ij]
+      - 观测概率矩阵 B = [b_j(k)]
+      - 初始状态分布 π
+    prerequisites:
+      - concept_id: "markov_chain"
+        level: "L3"
+        relation: "依赖"
+        description: "基于马尔可夫链的扩展"
+      - concept_id: "conditional_probability"
+        level: "L2"
+        relation: "依赖"
+        description: "需要条件概率进行状态推断"
+      - concept_id: "maximum_likelihood"
+        level: "L3"
+        relation: "依赖"
+        description: "参数估计使用最大似然"
+    successors:
+      - concept_id: "viterbi_algorithm"
+        level: "L4"
+        relation: "被依赖"
+        description: "Viterbi算法用于HMM解码"
+      - concept_id: "forward_backward_algorithm"
+        level: "L4"
+        relation: "被依赖"
+        description: "前向后向算法用于HMM学习"
+      - concept_id: "baum_welch_algorithm"
+        level: "L4"
+        relation: "被依赖"
+        description: "Baum-Welch算法用于HMM参数估计"
+    related_concepts:
+      - "kalman_filter"
+      - "particle_filter"
+      - "conditional_random_field"
+    difficulty: 4
+    estimated_hours: 35
+    msc_code: "60J22"
+    tags: ["概率图模型", "机器学习", "语音识别", "生物信息学"]
+
+  # ========== 4. Stochastic Calculus ==========
+  - concept_id: "stochastic_calculus"
+    name: "随机分析"
+    name_en: "Stochastic Calculus"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Stochastic_calculus"
+    definition: "研究随机过程的微积分理论，包括伊藤积分、随机微分方程及其在金融数学和物理学中的应用"
+    formal_definition: |
+      随机分析是研究如下形式的伊藤积分：
+      I_t = ∫_0^t X_s dW_s
+      其中 W_t 是布朗运动，X_t 是适应过程。
+      核心结果包括伊藤引理和随机微分方程的存在唯一性定理。
+    prerequisites:
+      - concept_id: "brownian_motion"
+        level: "L3"
+        relation: "依赖"
+        description: "布朗运动是随机分析的基础"
+      - concept_id: "martingale"
+        level: "L3"
+        relation: "依赖"
+        description: "伊藤积分是鞅"
+      - concept_id: "convergence_in_probability"
+        level: "L3"
+        relation: "依赖"
+        description: "需要随机收敛的概念"
+      - concept_id: "filtration"
+        level: "L3"
+        relation: "依赖"
+        description: "适应性和可料性相对于滤链定义"
+    successors:
+      - concept_id: "ito_calculus"
+        level: "L4"
+        relation: "被依赖"
+        description: "伊藤微积分是随机分析的核心"
+      - concept_id: "stochastic_differential_equation"
+        level: "L4"
+        relation: "被依赖"
+        description: "随机微分方程的解理论"
+      - concept_id: "black_scholes_model"
+        level: "L4"
+        relation: "被依赖"
+        description: "Black-Scholes期权定价模型"
+    related_concepts:
+      - "riemann_integral"
+      - "lebesgue_integral"
+      - "semimartingale"
+      - "quadratic_variation"
+    difficulty: 5
+    estimated_hours: 50
+    msc_code: "60H05"
+    tags: ["金融数学", "随机微分方程", "伊藤积分", "高级概率"]
+
+  # ========== 5. Prior Distribution ==========
+  - concept_id: "prior_distribution"
+    name: "先验分布"
+    name_en: "Prior Distribution"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Prior_probability"
+    definition: "贝叶斯推断中，在观测数据之前对参数的分布假设，反映先验知识或信念"
+    formal_definition: |
+      设 θ 为待估计参数，先验分布 p(θ) 表示在观测数据 D 之前对 θ 的信念。
+      根据贝叶斯定理：p(θ|D) ∝ p(D|θ) × p(θ)
+      其中 p(θ) 就是先验分布。
+    prerequisites:
+      - concept_id: "bayesian_inference"
+        level: "L3"
+        relation: "依赖"
+        description: "先验是贝叶斯推断的组成部分"
+      - concept_id: "probability_distribution"
+        level: "L2"
+        relation: "依赖"
+        description: "需要概率分布的基础知识"
+      - concept_id: "bayes_theorem"
+        level: "L2"
+        relation: "依赖"
+        description: "贝叶斯定理将先验与后验联系起来"
+    successors:
+      - concept_id: "posterior_distribution"
+        level: "L3"
+        relation: "被依赖"
+        description: "后验通过先验计算得到"
+      - concept_id: "conjugate_prior"
+        level: "L4"
+        relation: "被依赖"
+        description: "共轭先验是先验选择的特殊情况"
+      - concept_id: "jeffreys_prior"
+        level: "L4"
+        relation: "被依赖"
+        description: "Jeffreys无信息先验"
+    related_concepts:
+      - "likelihood_function"
+      - "hyperparameter"
+      - "empirical_bayes"
+    difficulty: 3
+    estimated_hours: 15
+    msc_code: "62F15"
+    tags: ["贝叶斯统计", "先验知识", "参数估计"]
+
+  # ========== 6. Posterior Distribution ==========
+  - concept_id: "posterior_distribution"
+    name: "后验分布"
+    name_en: "Posterior Distribution"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Posterior_probability"
+    definition: "贝叶斯推断中，结合先验分布和观测数据后得到的参数条件分布"
+    formal_definition: |
+      给定数据 D 和参数 θ，后验分布为：
+      p(θ|D) = p(D|θ) × p(θ) / p(D)
+      其中 p(D) = ∫ p(D|θ)p(θ)dθ 是证据（边际似然）。
+    prerequisites:
+      - concept_id: "prior_distribution"
+        level: "L3"
+        relation: "依赖"
+        description: "后验需要先有先验"
+      - concept_id: "bayesian_inference"
+        level: "L3"
+        relation: "依赖"
+        description: "后验是贝叶斯推断的核心输出"
+      - concept_id: "likelihood_function"
+        level: "L3"
+        relation: "依赖"
+        description: "似然函数是计算后验的必要成分"
+    successors:
+      - concept_id: "credible_interval"
+        level: "L3"
+        relation: "被依赖"
+        description: "可信区间基于后验分布"
+      - concept_id: "bayesian_model_selection"
+        level: "L4"
+        relation: "被依赖"
+        description: "贝叶斯模型选择使用证据"
+      - concept_id: "bayesian_prediction"
+        level: "L4"
+        relation: "被依赖"
+        description: "贝叶斯预测使用后验"
+    related_concepts:
+      - "markov_chain_monte_carlo"
+      - "variational_inference"
+      - "laplace_approximation"
+    difficulty: 3
+    estimated_hours: 15
+    msc_code: "62F15"
+    tags: ["贝叶斯统计", "参数推断", "不确定性量化"]
+
+  # ========== 7. Linear Regression ==========
+  - concept_id: "linear_regression"
+    name: "线性回归"
+    name_en: "Linear Regression"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Linear_regression"
+    definition: "研究响应变量与一个或多个预测变量之间线性关系的统计方法"
+    formal_definition: |
+      线性回归模型：Y = Xβ + ε
+      其中 Y 是响应变量，X 是设计矩阵，β 是待估计参数，ε ~ N(0, σ²I) 是误差项。
+      最小二乘估计：β̂ = (X^T X)^{-1} X^T Y
+    prerequisites:
+      - concept_id: "regression_analysis"
+        level: "L3"
+        relation: "依赖"
+        description: "线性回归是回归分析的特例"
+      - concept_id: "variance"
+        level: "L2"
+        relation: "依赖"
+        description: "需要方差分析"
+      - concept_id: "covariance"
+        level: "L2"
+        relation: "依赖"
+        description: "协方差矩阵在估计中起关键作用"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+        description: "需要矩阵运算"
+    successors:
+      - concept_id: "ridge_regression"
+        level: "L3"
+        relation: "被依赖"
+        description: "岭回归是带正则化的线性回归"
+      - concept_id: "lasso_regression"
+        level: "L3"
+        relation: "被依赖"
+        description: "Lasso是另一种正则化线性回归"
+      - concept_id: "generalized_linear_model"
+        level: "L4"
+        relation: "被依赖"
+        description: "GLM是线性回归的推广"
+    related_concepts:
+      - "least_squares"
+      - "correlation"
+      - "analysis_of_variance"
+      - "polynomial_regression"
+    difficulty: 2
+    estimated_hours: 20
+    msc_code: "62J05"
+    tags: ["回归分析", "最小二乘", "机器学习", "统计建模"]
+
+  # ========== 8. Logistic Regression ==========
+  - concept_id: "logistic_regression"
+    name: "逻辑回归"
+    name_en: "Logistic Regression"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Logistic_regression"
+    definition: "用于二分类问题的广义线性模型，通过logistic函数将线性组合映射到概率"
+    formal_definition: |
+      逻辑回归模型：P(Y=1|X) = σ(Xβ) = 1 / (1 + exp(-Xβ))
+      其中 σ 是logistic函数（sigmoid），β 通过最大似然估计获得。
+      对数几率：log(P/(1-P)) = Xβ
+    prerequisites:
+      - concept_id: "regression_analysis"
+        level: "L3"
+        relation: "依赖"
+        description: "逻辑回归是回归分析的扩展"
+      - concept_id: "linear_regression"
+        level: "L3"
+        relation: "依赖"
+        description: "形式上与线性回归类似"
+      - concept_id: "maximum_likelihood"
+        level: "L3"
+        relation: "依赖"
+        description: "参数估计使用最大似然"
+      - concept_id: "sigmoid_function"
+        level: "L2"
+        relation: "依赖"
+        description: "使用sigmoid函数进行概率映射"
+    successors:
+      - concept_id: "multinomial_logistic_regression"
+        level: "L3"
+        relation: "被依赖"
+        description: "多分类逻辑回归"
+      - concept_id: "neural_network"
+        level: "L4"
+        relation: "被依赖"
+        description: "神经网络可视为多层逻辑回归的组合"
+      - concept_id: "support_vector_machine"
+        level: "L4"
+        relation: "被依赖"
+        description: "SVM是另一种分类方法"
+    related_concepts:
+      - "generalized_linear_model"
+      - "odds_ratio"
+      - "softmax_function"
+      - "classification"
+    difficulty: 3
+    estimated_hours: 25
+    msc_code: "62J12"
+    tags: ["分类算法", "机器学习", "广义线性模型", "二分类"]
+
+  # ========== 9. Geometric Brownian Motion ==========
+  - concept_id: "geometric_brownian_motion"
+    name: "几何布朗运动"
+    name_en: "Geometric Brownian Motion"
+    abbreviation: "GBM"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Geometric_Brownian_motion"
+    definition: "带漂移的几何随机过程，常用于建模股票价格等正数值随机现象"
+    formal_definition: |
+      GBM满足随机微分方程：
+      dS_t = μS_t dt + σS_t dW_t
+      其中 μ 是漂移率，σ 是波动率，W_t 是标准布朗运动。
+      解：S_t = S_0 exp((μ - σ²/2)t + σW_t)
+    prerequisites:
+      - concept_id: "brownian_motion"
+        level: "L3"
+        relation: "依赖"
+        description: "GBM基于布朗运动"
+      - concept_id: "stochastic_calculus"
+        level: "L4"
+        relation: "依赖"
+        description: "需要伊藤引理求解SDE"
+      - concept_id: "ito_lemma"
+        level: "L4"
+        relation: "依赖"
+        description: "伊藤引理用于推导解"
+    successors:
+      - concept_id: "black_scholes_model"
+        level: "L4"
+        relation: "被依赖"
+        description: "Black-Scholes模型假设股价服从GBM"
+      - concept_id: "monte_carlo_option_pricing"
+        level: "L4"
+        relation: "被依赖"
+        description: "期权定价的蒙特卡洛模拟"
+    related_concepts:
+      - "brownian_motion_with_drift"
+      - "ornstein_uhlenbeck_process"
+      - "jump_diffusion"
+    difficulty: 4
+    estimated_hours: 25
+    msc_code: "60H10"
+    tags: ["金融数学", "期权定价", "随机微分方程", "量化金融"]
+
+  # ========== 10. Markov Decision Process ==========
+  - concept_id: "markov_decision_process"
+    name: "马尔可夫决策过程"
+    name_en: "Markov Decision Process"
+    abbreviation: "MDP"
+    category: "概率统计"
+    wikipedia_url: "https://en.wikipedia.org/wiki/Markov_decision_process"
+    definition: "离散时间随机控制过程，用于建模决策者在随机环境中做序列决策的问题"
+    formal_definition: |
+      MDP由五元组 (S, A, P, R, γ) 定义：
+      - S: 状态空间
+      - A: 动作空间
+      - P(s'|s,a): 状态转移概率
+      - R(s,a,s'): 奖励函数
+      - γ ∈ [0,1]: 折扣因子
+      目标：寻找策略 π 最大化期望累积奖励。
+    prerequisites:
+      - concept_id: "markov_chain"
+        level: "L3"
+        relation: "依赖"
+        description: "MDP是带决策的马尔可夫链"
+      - concept_id: "conditional_probability"
+        level: "L2"
+        relation: "依赖"
+        description: "状态转移使用条件概率"
+      - concept_id: "expectation"
+        level: "L2"
+        relation: "依赖"
+        description: "优化目标是期望奖励"
+      - concept_id: "dynamic_programming"
+        level: "L3"
+        relation: "依赖"
+        description: "求解MDP需要动态规划"
+    successors:
+      - concept_id: "q_learning"
+        level: "L4"
+        relation: "被依赖"
+        description: "Q学习是MDP的无模型求解方法"
+      - concept_id: "policy_gradient"
+        level: "L4"
+        relation: "被依赖"
+        description: "策略梯度方法"
+      - concept_id: "reinforcement_learning"
+        level: "L4"
+        relation: "被依赖"
+        description: "强化学习以MDP为理论基础"
+    related_concepts:
+      - "bellman_equation"
+      - "value_iteration"
+      - "policy_iteration"
+      - "partially_observable_mdp"
+    difficulty: 4
+    estimated_hours: 35
+    msc_code: "90C40"
+    tags: ["强化学习", "最优控制", "决策理论", "人工智能"]
+
+statistics:
+  total_concepts: 10
+  by_difficulty:
+    2: 1  # Linear Regression
+    3: 4  # Filtration, Prior, Posterior, Logistic Regression
+    4: 4  # MCMC, HMM, GBM, MDP
+    5: 1  # Stochastic Calculus
+  total_hours: 270
+  high_priority: 4
+  medium_priority: 4
+  low_priority: 2

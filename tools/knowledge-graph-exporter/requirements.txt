@@ -1,0 +1,18 @@
+# 知识图谱导出工具依赖
+# 安装命令: pip install -r requirements.txt
+
+# 必需依赖
+pyyaml>=6.0
+
+# PDF导出 (可选但推荐)
+reportlab>=4.0.0
+
+# PNG导出 - 方法1: CairoSVG (推荐)
+cairosvg>=2.7.0
+
+# PNG导出 - 方法2: PIL/Pillow (备选)
+pillow>=10.0.0
+
+# 开发依赖
+pytest>=7.0.0
+black>=23.0.0

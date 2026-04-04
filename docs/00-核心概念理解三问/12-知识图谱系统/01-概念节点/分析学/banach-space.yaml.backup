@@ -1,0 +1,117 @@
+# banach-space.yaml - Banach空间概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "banach-space"
+  name:
+    zh: "Banach空间"
+    en: "Banach Space"
+  msc_codes: ["46B03"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      Banach空间是完备的赋范向量空间。
+      
+      即：(X, ‖·‖) 是赋范空间，且
+      每个Cauchy列都收敛：
+      ∀(xₙ): (∀ε > 0, ∃N, ∀m,n > N: ‖xₘ - xₙ‖ < ε)
+                → ∃x ∈ X: xₙ → x
+      
+    informal: |
+      Banach空间是"没有洞"的向量空间。
+      
+      有理数 ℚ 不完备（√2 是"洞"）
+      实数 ℝ 完备（填补了所有洞）
+      
+      Banach空间 = 完备的赋范空间
+      
+    lean: |
+      -- Banach空间是完备赋范空间
+      class NormedSpace (𝕜 : Type*) (E : Type*) [NormedField 𝕜] 
+        [SeminormedAddCommGroup E] extends Module 𝕜 E where
+        norm_smul_le : ∀ (a : 𝕜) (b : E), ‖a • b‖ ≤ ‖a‖ * ‖b‖
+        
+      -- Banach = NormedSpace + CompleteSpace
+      example [NormedAddCommGroup E] [NormedSpace 𝕜 E] [CompleteSpace E] : 
+        BanachSpace 𝕜 E := inferInstance
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】完备性
+      - Cauchy列都有极限
+      - 空间"没有边界上的洞"
+      - 极限过程可以闭合
+      
+    algebraic: |
+      【代数直觉】分析基础
+      - 可以讨论级数收敛
+      - 可以讨论算子的性质
+      - 不动点定理成立
+      
+  # ===== 例子层 =====
+  examples:
+    finite_dimensional:
+      - name: "ℝⁿ 或 ℂⁿ"
+        note: "任何范数都给出Banach空间"
+        
+    sequence_spaces:
+      - name: "ℓᵖ (1 ≤ p ≤ ∞)"
+        norm: "‖x‖ₚ = (Σ|xₙ|ᵖ)^{1/p}"
+        
+      - name: "c₀（趋于0的序列）"
+        norm: "上确界范数"
+        
+    function_spaces:
+      - name: "Lᵖ(Ω) (1 ≤ p ≤ ∞)"
+        norm: "‖f‖ₚ = (∫|f|ᵖ)^{1/p}"
+        
+      - name: "C([a,b])"
+        norm: "‖f‖ = sup|f(x)|"
+        
+      - name: "C^k([a,b])"
+        norm: "涉及k阶导数"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "banach-fixed-point"
+      statement: "压缩映射有唯一不动点"
+      
+    - id: "open-mapping"
+      statement: "有界算子的满射是开映射"
+      
+    - id: "closed-graph"
+      statement: "闭图像 ⟺ 有界"
+      
+    - id: "uniform-boundedness"
+      statement: "逐点有界 ⟹ 一致有界"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "normed-space"
+        description: "首先是赋范空间"
+      - id: "completeness"
+        description: "需要完备性"
+        
+    specializes:
+      - id: "hilbert-space"
+        description: "由内积诱导范数的完备空间"
+        
+    related_to:
+      - id: "bounded-operator"
+        description: "Banach空间之间的有界算子"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    history:
+      named_after: "Stefan Banach"
+      year: 1920s
+      
+  mathlib:
+    path: "Mathlib.Analysis.NormedSpace.Basic"
+    name: "NormedSpace + CompleteSpace"

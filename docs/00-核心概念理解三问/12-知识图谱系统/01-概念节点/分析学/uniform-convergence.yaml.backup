@@ -1,0 +1,106 @@
+# uniform-convergence.yaml - 一致收敛概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "uniform-convergence"
+  name:
+    zh: "一致收敛"
+    en: "Uniform Convergence"
+  msc_codes: ["40A30"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 (fₙ) 是从 X 到度量空间 (Y, d) 的函数序列。
+      
+      【一致收敛】
+      fₙ →^{unif} f ⟺ ∀ε > 0, ∃N, ∀n > N, ∀x ∈ X:
+                         d(fₙ(x), f(x)) < ε
+      
+      等价于：sup_x d(fₙ(x), f(x)) → 0
+      
+      【逐点收敛】（弱）
+      fₙ → f ⟺ ∀x ∈ X, ∀ε > 0, ∃N(x), ∀n > N(x):
+                  d(fₙ(x), f(x)) < ε
+      
+    informal: |
+      一致收敛 = "收敛速度与x无关"
+      
+      逐点收敛：对每个x，fₙ(x) → f(x)
+      一致收敛：所有x同时以相同速度收敛
+      
+      关键区别：N是否依赖于x
+      
+    lean: |
+      -- 一致收敛
+      def TendstoUniformly (F : ι → α → β) (f : α → β) (p : Filter ι) :=
+        ∀ ε > 0, ∀ᶠ n in p, ∀ x, dist (F n x) (f x) < ε
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】ε-管道
+      
+      一致收敛：所有fₙ最终落入f的ε-管道
+      
+           │  fₙ ↘
+           │     f ────────
+           │  fₙ ↗
+           └──────────────→
+           
+    algebraic: |
+      【代数直觉】sup范数收敛
+      
+      ‖fₙ - f‖_∞ = sup_x |fₙ(x) - f(x)| → 0
+      
+  # ===== 例子层 =====
+  examples:
+    uniform:
+      - name: "fₙ(x) = xⁿ/n 在 [0,1] 上"
+        limit: "0"
+        reason: "sup|xⁿ/n| = 1/n → 0"
+        
+    not_uniform:
+      - name: "fₙ(x) = xⁿ 在 [0,1] 上"
+        pointwise_limit: "χ_{\\{1\\}}"
+        reason: "在x=1附近收敛速度任意慢"
+        
+      - name: "fₙ(x) = nx·e^{-nx²}"
+        pointwise_limit: "0"
+        reason: "峰值不趋于0"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "limit-of-continuous"
+      statement: "连续函数的一致极限是连续的"
+      
+    - id: "interchange-limit-integral"
+      statement: "一致收敛下可以交换极限和积分"
+      
+    - id: "weierstrass-m-test"
+      statement: "级数的一致收敛判别"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "sequence"
+        description: "函数序列"
+      - id: "limit"
+        description: "收敛概念"
+        
+    implies:
+      - id: "pointwise-convergence"
+        description: "一致收敛蕴含逐点收敛"
+        
+    related_to:
+      - id: "equicontinuity"
+        description: "Arzelà-Ascoli定理"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+  mathlib:
+    path: "Mathlib.Topology.UniformSpace.UniformConvergence"

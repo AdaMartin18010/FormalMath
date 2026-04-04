@@ -1,0 +1,180 @@
+# proof.yaml - 证明概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "proof"
+  name:
+    zh: "证明"
+    en: "Proof"
+  msc_codes: ["03F03", "03B22"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【形式证明】
+      设 T 是理论（公理集合），φ 是公式。
+      T 的一个证明是公式序列 φ₁, φ₂, ..., φₙ，
+      其中每个 φᵢ 要么是 T 的公理，要么由推理规则从前面的公式得到。
+      
+      T ⊢ φ 表示 φ 在 T 中可证。
+      
+      【类型论观点】
+      证明是命题类型的居民（项）：
+      若 p : Prop，则 h : p 是 p 的一个证明。
+      
+    informal: |
+      证明是从已知到结论的逻辑推导链。
+      
+      想象法庭辩论：
+      - 证据 = 公理和已知事实
+      - 论证 = 推理步骤
+      - 判决 = 结论
+      
+      证明让我们"确信"结论为真。
+      
+    lean: |
+      -- 在Lean中，证明是构造类型的项
+      theorem example_proof : 2 + 2 = 4 := rfl
+      
+      -- 蕴含的证明是函数
+      theorem modus_ponens (p q : Prop) (hp : p) (hpq : p → q) : q :=
+        hpq hp
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】路径
+      - 证明是从公理到定理的"路径"
+      - 不同证明 = 不同路径
+      - 更短证明 = 更直接路径
+      
+    algebraic: |
+      【代数直觉】构造
+      - 证明是构造性的：建造满足条件的对象
+      - 存在性证明：给出例子
+      - 全称证明：给出一般方法
+      
+    categorical: |
+      【范畴直觉】Curry-Howard
+      - 命题 = 类型
+      - 证明 = 项
+      - 蕴含 = 函数类型
+      - 证明检查 = 类型检查
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "证明树"
+      content: |
+        自然演绎证明树：
+        
+              [p]¹  p → q
+              ─────────── →E
+                   q      q → r
+                  ───────────── →E
+                        r
+        ─────────────────────────── →I¹
+                  p → r
+                  
+        从假设p推导出r，放电得p→r
+        
+    - type: "Fitch格式"
+      content: |
+        Fitch风格证明：
+        
+        1. p → q      前提
+        2. q → r      前提
+        3. │ p        假设
+        4. │ q        1,3 →E
+        5. │ r        2,4 →E
+        6. p → r      3-5 →I
+        
+  # ===== 例子层 =====
+  examples:
+    direct:
+      - name: "√2是无理数"
+        method: "直接证明（反证）"
+        key_step: "假设√2=p/q，推出矛盾"
+        
+      - name: "素数无穷多"
+        method: "构造性证明"
+        key_step: "p₁...pₙ + 1 有新素因子"
+        
+    indirect:
+      - name: "反证法示例"
+        theorem: "若x²是偶数，则x是偶数"
+        method: "假设x是奇数，推出x²是奇数，矛盾"
+        
+    constructive:
+      - name: "构造性存在证明"
+        theorem: "存在无理数a,b使a^b是有理数"
+        method: "考虑√2^√2，分两种情况构造"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "proposition"
+        description: "证明针对命题"
+      - id: "axiom"
+        description: "证明从公理出发"
+      - id: "inference-rule"
+        description: "证明使用推理规则"
+        
+    generalizes: []
+        
+    specialized_by:
+      - id: "direct-proof"
+        description: "直接证明"
+      - id: "proof-by-contradiction"
+        description: "反证法"
+      - id: "proof-by-induction"
+        description: "归纳证明"
+      - id: "constructive-proof"
+        description: "构造性证明"
+        
+    related_to:
+      - id: "theorem"
+        description: "定理有证明"
+      - id: "decidability"
+        description: "可判定性"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "completeness"
+      statement: "T ⊨ φ ⟹ T ⊢ φ（一阶逻辑）"
+      importance: 5
+      prover: "Gödel"
+      
+    - id: "incompleteness"
+      statement: "PA等足够强的系统是不完备的"
+      importance: 5
+      prover: "Gödel"
+      
+    - id: "curry-howard"
+      statement: "证明 ≅ 程序"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "proposition"
+      - "logic"
+      
+    leads_to:
+      - "formal-verification"
+      - "automated-reasoning"
+      - "type-theory"
+      
+    history:
+      first_appearance: "古希腊"
+      context: "Euclid《几何原本》"
+      development: "形式化 → 计算机验证"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Logic.Basic"
+    name: "Proof terms"
+    coverage: "implicit (proofs are terms)"

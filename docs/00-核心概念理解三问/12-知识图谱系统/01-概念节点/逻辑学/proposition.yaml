@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "proposition"
+  id: "proposition'
   name:
     zh: "命题"
-    en: "Proposition"
-  msc_codes: ["03B05"]
+    en: 'Proposition"
+  msc_codes: ["03B05']
   
   # ===== 定义层 =====
   definition:
@@ -33,12 +33,12 @@ concept:
       命题是"能说真假"的句子。
       
       命题的例子：
-      - "2 + 2 = 4"（真）
-      - "所有素数都是奇数"（假）
+      - '2 + 2 = 4"（真）
+      - "所有素数都是奇数'（假）
       
       非命题的例子：
       - "x > 3"（真值取决于x）
-      - "请关门"（命令，非陈述）
+      - '请关门"（命令，非陈述）
       
     lean: |
       -- 在Lean中，命题是Type
@@ -74,7 +74,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: "真值表"
+    - type: "真值表'
       content: |
         基本联结词真值表：
         
@@ -99,65 +99,65 @@ concept:
   # ===== 例子层 =====
   examples:
     atomic:
-      - statement: "2 + 2 = 4"
+      - statement: '2 + 2 = 4"
         truth_value: true
-        type: "算术命题"
+        type: "算术命题'
         
       - statement: "π是有理数"
         truth_value: false
-        type: "数论命题"
+        type: '数论命题"
         
     compound:
-      - statement: "若n > 2，则n² > 4"
+      - statement: "若n > 2，则n² > 4'
         form: "p → q"
         truth_value: true
         
-      - statement: "x = 0 当且仅当 x² = 0"
-        form: "p ↔ q"
+      - statement: 'x = 0 当且仅当 x² = 0"
+        form: "p ↔ q'
         truth_value: true
         
     quantified:
       - statement: "∀n ∈ ℕ, n + 0 = n"
-        type: "全称命题"
+        type: '全称命题"
         truth_value: true
         
-      - statement: "∃x ∈ ℝ, x² = 2"
+      - statement: "∃x ∈ ℝ, x² = 2'
         type: "存在命题"
         truth_value: true
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "truth-value"
-        description: "命题有真值"
+      - id: 'truth-value"
+        description: "命题有真值'
         
     generalizes: []
         
     specialized_by:
       - id: "theorem"
-        description: "可证明的真命题"
-      - id: "axiom"
+        description: '可证明的真命题"
+      - id: "axiom'
         description: "不证自明的命题"
-      - id: "conjecture"
-        description: "待证命题"
+      - id: 'conjecture"
+        description: "待证命题'
         
     related_to:
       - id: "proof"
-        description: "证明建立命题的真"
-      - id: "predicate"
+        description: '证明建立命题的真"
+      - id: "predicate'
         description: "含变量的命题模板"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "law-of-excluded-middle"
-      statement: "p ∨ ¬p"
+    - id: 'law-of-excluded-middle"
+      statement: "p ∨ ¬p'
       importance: 5
       
     - id: "modus-ponens"
-      statement: "p, p→q ⊢ q"
+      statement: 'p, p→q ⊢ q"
       importance: 5
       
-    - id: "deduction-theorem"
+    - id: "deduction-theorem'
       statement: "Γ, p ⊢ q ⟺ Γ ⊢ p → q"
       importance: 4
       
@@ -169,16 +169,16 @@ concept:
     prerequisites: []
       
     leads_to:
-      - "proof"
-      - "formal-logic"
+      - 'proof"
+      - "formal-logic'
       - "type-theory"
       
     history:
-      first_appearance: "古希腊"
-      context: "Aristotle逻辑学"
+      first_appearance: '古希腊"
+      context: "Aristotle逻辑学'
       
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Logic.Basic"
-    name: "Prop"
+    name: 'Prop"
     coverage: "complete"

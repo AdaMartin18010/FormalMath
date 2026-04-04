@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "first-isomorphism"
+  id: "first-isomorphism'
   name:
     zh: "第一同构定理"
-    en: "First Isomorphism Theorem"
-  msc_codes: ["20A05"]
+    en: 'First Isomorphism Theorem"
+  msc_codes: ["20A05']
   
   # ===== 陈述层 =====
   statement:
@@ -22,7 +22,7 @@ theorem:
       
     informal: |
       同态的本质是"商"：
-      把核"压缩"到零后，剩下的与像同构。
+      把核'压缩"到零后，剩下的与像同构。
       
       例子：
       - det: GL(n) → ℝ*
@@ -36,7 +36,7 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: "构造同构并验证"
+    main_strategy: "构造同构并验证'
     
     proof_tree: |
       第一同构定理
@@ -99,25 +99,25 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - description: "计算商群结构"
-    - description: "证明群同构"
+    - description: '计算商群结构"
+    - description: "证明群同构'
     - description: "群分类的基础"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "group-homomorphism"
-        role: "核心概念"
+      - id: 'group-homomorphism"
+        role: "核心概念'
       - id: "normal-subgroup"
-        role: "核是正规子群"
-      - id: "quotient-group"
+        role: '核是正规子群"
+      - id: "quotient-group'
         role: "构造商群"
         
     related_to:
-      - id: "second-isomorphism"
-        description: "(HN)/N ≅ H/(H∩N)"
+      - id: 'second-isomorphism"
+        description: "(HN)/N ≅ H/(H∩N)'
       - id: "third-isomorphism"
-        description: "(G/N)/(M/N) ≅ G/M"
+        description: '(G/N)/(M/N) ≅ G/M"
         
   # ===== 元数据层 =====
   metadata:
@@ -125,5 +125,5 @@ theorem:
     importance: 5
     
   mathlib:
-    path: "Mathlib.GroupTheory.QuotientGroup"
+    path: "Mathlib.GroupTheory.QuotientGroup'
     name: "QuotientGroup.quotientKerEquivRange"

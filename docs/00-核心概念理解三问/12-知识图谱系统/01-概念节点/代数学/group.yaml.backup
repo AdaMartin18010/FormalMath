@@ -1,0 +1,337 @@
+# group.yaml - 群概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "group"
+  name:
+    zh: "群"
+    en: "Group"
+  msc_codes: ["20-XX", "20Axx"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 G 是非空集合，· 是 G 上的二元运算。
+      (G, ·) 是群，当且仅当满足以下公理：
+      
+      (G1) 封闭性：∀a,b ∈ G, a·b ∈ G
+      (G2) 结合律：∀a,b,c ∈ G, (a·b)·c = a·(b·c)
+      (G3) 单位元：∃e ∈ G, ∀a ∈ G, e·a = a·e = a
+      (G4) 逆元：∀a ∈ G, ∃a⁻¹ ∈ G, a·a⁻¹ = a⁻¹·a = e
+      
+    informal: |
+      群是描述"对称性"的数学结构。想象一个正方形，
+      它有8种对称操作（4次旋转+4次翻转）。这些操作：
+      - 可以依次进行（封闭性+结合律）
+      - 有"什么都不做"（单位元）
+      - 每个操作都能撤销（逆元）
+      这就形成了一个群（二面体群D₄）。
+      
+    lean: |
+      -- Mathlib定义
+      class Group (G : Type*) extends Monoid G, Inv G where
+        mul_left_inv : ∀ a : G, a⁻¹ * a = 1
+        
+      -- 等价地
+      class Group' (G : Type*) where
+        mul : G → G → G
+        one : G
+        inv : G → G
+        mul_assoc : ∀ a b c : G, mul (mul a b) c = mul a (mul b c)
+        one_mul : ∀ a : G, mul one a = a
+        mul_one : ∀ a : G, mul a one = a
+        mul_left_inv : ∀ a : G, mul (inv a) a = one
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】对称性的数学化
+      - 群 = 物体的所有对称变换的集合
+      - 群运算 = 对称变换的复合
+      - 单位元 = 恒等变换（不动）
+      - 逆元 = 逆变换（撤销）
+      
+      例：正n边形的对称群Dₙ包含n次旋转和n次反射
+      
+    algebraic: |
+      【代数直觉】可逆运算的抽象
+      - 群捕捉了"能做、能撤销"的运算本质
+      - 整数加法：加3可以通过加-3撤销
+      - 矩阵乘法：可逆矩阵乘法可逆
+      - 群是最基本的"有逆运算"的代数结构
+      
+    physical: |
+      【物理直觉】守恒定律的数学表达
+      - Noether定理：对称性 ↔ 守恒量
+      - 时间平移对称 → 能量守恒
+      - 空间旋转对称 → 角动量守恒
+      - 规范对称 → 电荷守恒
+      
+    categorical: |
+      【范畴直觉】只有一个对象的群胚
+      - 群 = 单对象范畴，其中所有态射可逆
+      - 群同态 = 这类范畴间的函子
+      - 群作用 = 从群到集合范畴的函子
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "乘法表（Cayley表）"
+      content: |
+        有限群可用乘法表完全描述：
+        
+        Z₃ = {0,1,2}的加法表：
+        ┌───┬───┬───┬───┐
+        │ + │ 0 │ 1 │ 2 │
+        ├───┼───┼───┼───┤
+        │ 0 │ 0 │ 1 │ 2 │
+        │ 1 │ 1 │ 2 │ 0 │
+        │ 2 │ 2 │ 0 │ 1 │
+        └───┴───┴───┴───┘
+        
+    - type: "生成元与关系（群表示）"
+      content: |
+        G = ⟨S | R⟩ 表示由生成元S和关系R确定的群
+        
+        例：二面体群 D₄ = ⟨r, s | r⁴ = s² = e, srs = r⁻¹⟩
+        - r：90°旋转
+        - s：翻转
+        - 关系描述它们如何交互
+        
+    - type: "置换表示"
+      content: |
+        群作用于集合X诱导置换表示 G → Sym(X)
+        
+        Cayley定理：每个群都同构于某个置换群的子群
+        G ↪ Sym(G)，g ↦ (x ↦ gx)
+        
+    - type: "Cayley图"
+      content: |
+        群的几何表示，顶点=群元素，边=生成元作用
+        
+        Z = ⟨1⟩ 的Cayley图：...—•—•—•—•—•—...
+        
+        D₃的Cayley图（生成元r,s）：三角形+反射
+        
+    - type: "矩阵表示"
+      content: |
+        群同态 ρ: G → GL(V)
+        
+        D₃在ℝ²上的表示：
+        r ↦ [[cos(2π/3), -sin(2π/3)], 
+             [sin(2π/3),  cos(2π/3)]]
+        s ↦ [[1, 0], 
+             [0, -1]]
+             
+  # ===== 例子层 =====
+  examples:
+    fundamental:
+      - name: "整数加法群 (ℤ, +)"
+        description: "无限循环群的原型，由1生成"
+        properties: ["阿贝尔", "无限", "循环"]
+        
+      - name: "有理数乘法群 (ℚ*, ×)"
+        description: "非零有理数在乘法下成群"
+        properties: ["阿贝尔", "无限", "非循环"]
+        
+    finite:
+      - name: "循环群 Zₙ"
+        description: "n元循环群，模n整数加法"
+        order: "n"
+        properties: ["阿贝尔", "循环"]
+        
+      - name: "对称群 Sₙ"
+        description: "n个元素的所有置换"
+        order: "n!"
+        properties: ["非阿贝尔(n≥3)"]
+        
+      - name: "二面体群 Dₙ"
+        description: "正n边形的对称群"
+        order: "2n"
+        properties: ["非阿贝尔(n≥3)"]
+        
+      - name: "Klein四元群 V₄"
+        description: "最小的非循环群"
+        order: "4"
+        properties: ["阿贝尔", "非循环"]
+        
+    continuous:
+      - name: "一般线性群 GL(n, ℝ)"
+        description: "可逆n×n实矩阵"
+        properties: ["李群", "非紧"]
+        
+      - name: "特殊正交群 SO(n)"
+        description: "行列式为1的正交矩阵"
+        properties: ["李群", "紧致"]
+        
+      - name: "圆群 S¹ = U(1)"
+        description: "模1复数，或ℝ/ℤ"
+        properties: ["阿贝尔", "紧致", "连通"]
+        
+    advanced:
+      - name: "自由群 F(S)"
+        description: "由集合S生成的自由群"
+        properties: ["非阿贝尔(|S|≥2)"]
+        
+      - name: "自同构群 Aut(G)"
+        description: "G的所有自同构"
+        properties: ["结构研究的核心"]
+        
+      - name: "基本群 π₁(X)"
+        description: "拓扑空间X的基本群"
+        properties: ["拓扑不变量"]
+        
+  counterexamples:
+    - name: "自然数加法 (ℕ, +)"
+      description: "没有逆元，只是幺半群"
+      missing: "逆元公理"
+      
+    - name: "实数乘法 (ℝ, ×)"
+      description: "0没有乘法逆元"
+      missing: "逆元公理（0的情况）"
+      
+    - name: "正整数乘法 (ℤ⁺, ×)"
+      description: "除1外没有乘法逆元"
+      missing: "逆元公理"
+      
+    - name: "矩阵乘法 M(n, ℝ)"
+      description: "奇异矩阵没有逆"
+      missing: "逆元公理（奇异矩阵）"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "set"
+        description: "群建立在集合之上"
+      - id: "binary-operation"
+        description: "群运算是二元运算"
+      - id: "function"
+        description: "定义逆元映射"
+        
+    generalizes:
+      - id: "monoid"
+        description: "群 = 幺半群 + 逆元"
+      - id: "semigroup"
+        description: "群 = 半群 + 单位元 + 逆元"
+        
+    is_a:
+      - id: "groupoid"
+        description: "群是单对象群胚"
+        
+    specialized_by:
+      - id: "abelian-group"
+        description: "阿贝尔群 = 群 + 交换律"
+      - id: "cyclic-group"
+        description: "循环群 = 单生成元群"
+      - id: "simple-group"
+        description: "单群 = 无非平凡正规子群"
+      - id: "lie-group"
+        description: "李群 = 光滑流形 + 群"
+        
+    related_to:
+      - id: "ring"
+        description: "环有两个运算，加法成群"
+        relation: "ring的加法部分是阿贝尔群"
+      - id: "field"
+        description: "域的非零元在乘法下成群"
+      - id: "vector-space"
+        description: "向量空间的加法是阿贝尔群"
+      - id: "module"
+        description: "模是环上的"向量空间""
+      - id: "group-action"
+        description: "群作用于集合"
+      - id: "representation"
+        description: "群在向量空间上的线性作用"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "lagrange-theorem"
+      statement: "|H| 整除 |G|（H是G的子群）"
+      importance: 5
+      
+    - id: "cayley-theorem"
+      statement: "每个群同构于某置换群的子群"
+      importance: 4
+      
+    - id: "sylow-theorems"
+      statement: "p-Sylow子群的存在性和共轭性"
+      importance: 5
+      
+    - id: "classification-finite-simple-groups"
+      statement: "有限单群完全分类"
+      importance: 5
+      
+    - id: "fundamental-theorem-finite-abelian-groups"
+      statement: "有限阿贝尔群是循环群的直积"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "set"
+      - "function"
+      - "binary-operation"
+      - "equivalence-relation"
+      
+    corequisites:
+      - "subgroup"
+      - "normal-subgroup"
+      - "quotient-group"
+      - "group-homomorphism"
+      
+    leads_to:
+      - "ring"
+      - "representation-theory"
+      - "galois-theory"
+      - "algebraic-topology"
+      
+    history:
+      first_appearance: 1830
+      context: "Galois求解代数方程"
+      named_by: "Galois (groupe)"
+      
+    key_figures:
+      - id: "galois"
+        contribution: "创立群论，解决方程可解性"
+      - id: "cayley"
+        contribution: "抽象群定义，Cayley定理"
+      - id: "jordan"
+        contribution: "置换群理论"
+      - id: "sylow"
+        contribution: "Sylow定理"
+      - id: "burnside"
+        contribution: "有限群论"
+        
+    applications:
+      - domain: "密码学"
+        description: "椭圆曲线群、RSA"
+      - domain: "物理学"
+        description: "对称性与守恒律"
+      - domain: "化学"
+        description: "分子对称性、晶体学"
+      - domain: "编码理论"
+        description: "纠错码"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Algebra.Group.Defs"
+    name: "Group"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Group/Defs.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "Monoid"
+      - "CommGroup"
+      - "Subgroup"
+      - "QuotientGroup"
+      
+    key_lemmas:
+      - name: "mul_left_inv"
+        statement: "∀ a : G, a⁻¹ * a = 1"
+      - name: "mul_right_inv"
+        statement: "∀ a : G, a * a⁻¹ = 1"
+      - name: "inv_mul_cancel_left"
+        statement: "∀ a b : G, a⁻¹ * (a * b) = b"

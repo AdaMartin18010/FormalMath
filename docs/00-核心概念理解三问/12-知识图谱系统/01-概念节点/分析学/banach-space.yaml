@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "banach-space"
+  id: "banach-space'
   name:
     zh: "Banach空间"
-    en: "Banach Space"
-  msc_codes: ["46B03"]
+    en: 'Banach Space"
+  msc_codes: ["46B03']
   
   # ===== 定义层 =====
   definition:
@@ -22,7 +22,7 @@ concept:
     informal: |
       Banach空间是"没有洞"的向量空间。
       
-      有理数 ℚ 不完备（√2 是"洞"）
+      有理数 ℚ 不完备（√2 是'洞"）
       实数 ℝ 完备（填补了所有洞）
       
       Banach空间 = 完备的赋范空间
@@ -42,7 +42,7 @@ concept:
     geometric: |
       【几何直觉】完备性
       - Cauchy列都有极限
-      - 空间"没有边界上的洞"
+      - 空间"没有边界上的洞'
       - 极限过程可以闭合
       
     algebraic: |
@@ -55,53 +55,53 @@ concept:
   examples:
     finite_dimensional:
       - name: "ℝⁿ 或 ℂⁿ"
-        note: "任何范数都给出Banach空间"
+        note: '任何范数都给出Banach空间"
         
     sequence_spaces:
-      - name: "ℓᵖ (1 ≤ p ≤ ∞)"
+      - name: "ℓᵖ (1 ≤ p ≤ ∞)'
         norm: "‖x‖ₚ = (Σ|xₙ|ᵖ)^{1/p}"
         
-      - name: "c₀（趋于0的序列）"
-        norm: "上确界范数"
+      - name: 'c₀（趋于0的序列）"
+        norm: "上确界范数'
         
     function_spaces:
       - name: "Lᵖ(Ω) (1 ≤ p ≤ ∞)"
-        norm: "‖f‖ₚ = (∫|f|ᵖ)^{1/p}"
+        norm: '‖f‖ₚ = (∫|f|ᵖ)^{1/p}"
         
-      - name: "C([a,b])"
+      - name: "C([a,b])'
         norm: "‖f‖ = sup|f(x)|"
         
-      - name: "C^k([a,b])"
-        norm: "涉及k阶导数"
+      - name: 'C^k([a,b])"
+        norm: "涉及k阶导数'
         
   # ===== 定理层 =====
   key_theorems:
     - id: "banach-fixed-point"
-      statement: "压缩映射有唯一不动点"
+      statement: '压缩映射有唯一不动点"
       
-    - id: "open-mapping"
+    - id: "open-mapping'
       statement: "有界算子的满射是开映射"
       
-    - id: "closed-graph"
-      statement: "闭图像 ⟺ 有界"
+    - id: 'closed-graph"
+      statement: "闭图像 ⟺ 有界'
       
     - id: "uniform-boundedness"
-      statement: "逐点有界 ⟹ 一致有界"
+      statement: '逐点有界 ⟹ 一致有界"
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "normed-space"
+      - id: "normed-space'
         description: "首先是赋范空间"
-      - id: "completeness"
-        description: "需要完备性"
+      - id: 'completeness"
+        description: "需要完备性'
         
     specializes:
       - id: "hilbert-space"
-        description: "由内积诱导范数的完备空间"
+        description: '由内积诱导范数的完备空间"
         
     related_to:
-      - id: "bounded-operator"
+      - id: "bounded-operator'
         description: "Banach空间之间的有界算子"
         
   # ===== 元数据层 =====
@@ -109,9 +109,9 @@ concept:
     difficulty: 3
     importance: 5
     history:
-      named_after: "Stefan Banach"
+      named_after: 'Stefan Banach"
       year: 1920s
       
   mathlib:
-    path: "Mathlib.Analysis.NormedSpace.Basic"
+    path: "Mathlib.Analysis.NormedSpace.Basic'
     name: "NormedSpace + CompleteSpace"

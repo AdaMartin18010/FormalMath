@@ -1,0 +1,101 @@
+# homology.yaml - 同调概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "homology"
+  name:
+    zh: "同调"
+    en: "Homology"
+  msc_codes: ["55N10"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【奇异同调】
+      设 X 是拓扑空间。
+      
+      n-单形：σ: Δⁿ → X（连续映射）
+      n-链群：Cₙ(X) = 自由阿贝尔群，生成元为n-单形
+      边界算子：∂ₙ: Cₙ → Cₙ₋₁
+      
+      同调群：Hₙ(X) = ker(∂ₙ) / im(∂ₙ₊₁)
+                     = Zₙ(X) / Bₙ(X)
+      
+      其中：Zₙ = cycles，Bₙ = boundaries
+      
+    informal: |
+      同调计算空间中的"洞"。
+      
+      - H₀ 计数连通分支
+      - H₁ 计数一维洞（环）
+      - H₂ 计数二维洞（空腔）
+      
+      与基本群区别：同调是阿贝尔群！
+      
+    lean: |
+      -- 同调作为链复形的同调
+      def Homology (C : ChainComplex M) (n : ℤ) : Submodule M :=
+        (LinearMap.ker (C.d n (n-1))) ⧸ (LinearMap.range (C.d (n+1) n))
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】洞的代数
+      - 闭链（无边界）代表"可能的洞"
+      - 边界（有东西填充）不是真的洞
+      - 同调 = 真的洞 = 闭链/边界
+      
+    algebraic: |
+      【代数直觉】ker/im
+      - ∂∂ = 0 是关键
+      - 导出函子的原型
+      - 链复形的精确度量
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "点"
+      homology: "H₀ ≅ ℤ, Hₙ = 0 (n > 0)"
+      
+    - name: "n-球面 Sⁿ"
+      homology: "H₀ ≅ Hₙ ≅ ℤ, 其他为0"
+      
+    - name: "环面 T²"
+      homology: "H₀ ≅ ℤ, H₁ ≅ ℤ², H₂ ≅ ℤ"
+      
+    - name: "实射影平面 ℝP²"
+      homology: "H₀ ≅ ℤ, H₁ ≅ ℤ/2ℤ, H₂ = 0"
+      
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "eilenberg-steenrod"
+      statement: "同调的公理化特征"
+      
+    - id: "mayer-vietoris"
+      statement: "计算并集的同调"
+      
+    - id: "hurewicz"
+      statement: "π₁^{ab} ≅ H₁"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "abelian-group"
+        description: "同调群是阿贝尔群"
+      - id: "chain-complex"
+        description: "链复形"
+        
+    related_to:
+      - id: "fundamental-group"
+        description: "Hurewicz同态"
+      - id: "cohomology"
+        description: "对偶理论"
+      - id: "de-rham"
+        description: "微分形式同调"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    prerequisites: ["abelian-group", "topological-space"]
+    leads_to: ["cohomology", "spectral-sequences"]

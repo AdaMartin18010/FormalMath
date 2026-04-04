@@ -1,0 +1,257 @@
+# limit.yaml - 极限概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "limit"
+  name:
+    zh: "极限"
+    en: "Limit"
+  msc_codes: ["26A03", "40A05", "54A20"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【数列极限】
+      设 (aₙ) 是实数列。称 L 是 (aₙ) 的极限，记作 lim_{n→∞} aₙ = L，
+      当且仅当：
+      ∀ε > 0, ∃N ∈ ℕ, ∀n > N, |aₙ - L| < ε
+      
+      【函数极限】
+      设 f: D → ℝ，c 是 D 的聚点。称 lim_{x→c} f(x) = L，当且仅当：
+      ∀ε > 0, ∃δ > 0, ∀x ∈ D, 0 < |x - c| < δ ⟹ |f(x) - L| < ε
+      
+      【拓扑极限】
+      设 (X, τ) 是拓扑空间，(xₙ) 是X中的点列。
+      称 xₙ → x，当且仅当：
+      ∀U ∈ τ 含x, ∃N, ∀n > N, xₙ ∈ U
+      
+    informal: |
+      极限描述"无限趋近"的过程。
+      
+      想象一个跳蚤，每次跳到当前位置与目标的中点。
+      它永远到不了目标，但可以无限接近——这就是极限。
+      
+      极限 = "最终会无限接近的那个值"
+      
+    lean: |
+      -- Mathlib定义（Filter语言）
+      def Tendsto {α β : Type*} (f : α → β) (l₁ : Filter α) (l₂ : Filter β) :=
+        l₁.map f ≤ l₂
+        
+      -- 数列极限
+      def seqLimit (a : ℕ → ℝ) (L : ℝ) : Prop :=
+        ∀ ε > 0, ∃ N, ∀ n ≥ N, |a n - L| < ε
+        
+      -- 等价于
+      example (a : ℕ → ℝ) (L : ℝ) : 
+        seqLimit a L ↔ Tendsto a atTop (𝓝 L) := by sorry
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】逼近过程
+      - 数列极限：点列向定点收拢
+      - 函数极限：图像向目标点靠近
+      - 极限 = 几何上的"趋势"
+      
+      ε-δ定义：给定任意小的目标邻域(ε)，
+      存在足够小的定义域邻域(δ)使像落入目标邻域
+      
+    algebraic: |
+      【代数直觉】极限运算保持代数结构
+      - lim(aₙ + bₙ) = lim aₙ + lim bₙ
+      - lim(aₙ · bₙ) = lim aₙ · lim bₙ
+      - 极限是"代数相容"的操作
+      
+    physical: |
+      【物理直觉】平衡态/稳态
+      - 物理系统的平衡点
+      - 动力系统的吸引子
+      - 极限 = 系统的"最终状态"
+      
+    categorical: |
+      【范畴直觉】极限作为万有构造
+      - 范畴论中的极限（limit）是不同概念
+      - 但有联系：序列的极限 ≈ 图的余极限
+      - Filter语言统一了各种极限
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "ε-δ图示"
+      content: |
+        函数极限的几何表示：
+        
+              y
+              │    ╭──────╮
+          L+ε ├····│······│·····
+              │    │  /   │
+            L ├────│─X────│─────
+              │    │/     │
+          L-ε ├····│······│·····
+              │    ╰──────╯
+              └────┼─┬─┬──┼────→ x
+                   c-δ c c+δ
+                   
+        ∀ε > 0, ∃δ > 0：灰色区域内的图像落在ε带内
+        
+    - type: "数列图示"
+      content: |
+        数列极限：
+        
+        aₙ
+         │    *
+         │  *   *
+         │    *  *  *
+       L ├─────────*─*─*─*─→
+         │
+         └─────────────────→ n
+                   N
+                   
+        n > N 后，所有点都在L的ε邻域内
+        
+    - type: "Filter表示"
+      content: |
+        现代观点：用Filter统一所有极限
+        
+        - atTop：n→∞ 的邻域基
+        - 𝓝(x)：x 的邻域滤子
+        - Tendsto f F G：f把F推到G
+        
+        这是Mathlib采用的观点
+        
+  # ===== 例子层 =====
+  examples:
+    sequences:
+      - name: "1/n → 0"
+        description: "最基本的收敛数列"
+        properties: ["单调递减", "有界"]
+        
+      - name: "(1 + 1/n)ⁿ → e"
+        description: "自然常数的定义"
+        properties: ["单调递增", "有界"]
+        
+      - name: "调和级数 ∑1/n = ∞"
+        description: "发散但缓慢"
+        properties: ["发散", "项趋于0"]
+        
+    functions:
+      - name: "lim_{x→0} sin(x)/x = 1"
+        description: "三角函数基本极限"
+        properties: ["不定型0/0"]
+        
+      - name: "lim_{x→0} (eˣ-1)/x = 1"
+        description: "指数函数基本极限"
+        properties: ["不定型0/0"]
+        
+      - name: "lim_{x→∞} (1+1/x)ˣ = e"
+        description: "e的另一个定义"
+        properties: ["不定型1^∞"]
+        
+    counterexamples:
+      - name: "(−1)ⁿ 不收敛"
+        description: "振荡数列"
+        reason: "在1和-1之间振荡"
+        
+      - name: "lim_{x→0} sin(1/x) 不存在"
+        description: "本性振荡"
+        reason: "在[-1,1]间无限振荡"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "real-numbers"
+        description: "实数的完备性"
+      - id: "absolute-value"
+        description: "距离度量"
+      - id: "neighborhood"
+        description: "邻域概念"
+        
+    generalizes: []
+        
+    is_a:
+      - id: "topological-convergence"
+        description: "度量空间中的收敛"
+        
+    specialized_by:
+      - id: "uniform-convergence"
+        description: "一致收敛"
+      - id: "pointwise-convergence"
+        description: "逐点收敛"
+      - id: "almost-everywhere-convergence"
+        description: "几乎处处收敛"
+        
+    related_to:
+      - id: "continuity"
+        description: "连续性由极限定义"
+      - id: "derivative"
+        description: "导数是差商的极限"
+      - id: "integral"
+        description: "积分是Riemann和的极限"
+      - id: "series"
+        description: "级数是部分和的极限"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "squeeze-theorem"
+      statement: "夹逼定理"
+      importance: 4
+      
+    - id: "monotone-convergence-sequences"
+      statement: "单调有界数列收敛"
+      importance: 5
+      
+    - id: "bolzano-weierstrass"
+      statement: "有界数列有收敛子列"
+      importance: 5
+      
+    - id: "cauchy-criterion"
+      statement: "Cauchy准则：收敛 ⟺ Cauchy"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "real-numbers"
+      - "sequences"
+      - "absolute-value"
+      
+    corequisites:
+      - "continuity"
+      - "series"
+      
+    leads_to:
+      - "derivative"
+      - "integral"
+      - "topology"
+      - "functional-analysis"
+      
+    history:
+      first_appearance: 1821
+      context: "Cauchy的《分析教程》"
+      earlier_work: "Newton/Leibniz的直觉理解"
+      rigorous_definition: "Weierstrass的ε-δ"
+      
+    key_figures:
+      - id: "cauchy"
+        contribution: "极限的严格定义"
+      - id: "weierstrass"
+        contribution: "ε-δ语言"
+      - id: "heine"
+        contribution: "数列极限与函数极限的联系"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Topology.Basic"
+    name: "Tendsto"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Basic.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "Filter.Tendsto"
+      - "atTop"
+      - "Metric.tendsto_atTop"
+      - "Real.tendsto_atTop"

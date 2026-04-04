@@ -1,0 +1,256 @@
+# category.yaml - 范畴概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "category"
+  name:
+    zh: "范畴"
+    en: "Category"
+  msc_codes: ["18A-XX"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      范畴 C 由以下数据组成：
+      - 对象类 Ob(C)
+      - 对于每对对象 A, B，态射集 Hom(A, B)
+      - 复合运算 ∘: Hom(B,C) × Hom(A,B) → Hom(A,C)
+      - 每个对象A的恒等态射 id_A ∈ Hom(A,A)
+      
+      满足公理：
+      (C1) 结合律：(h ∘ g) ∘ f = h ∘ (g ∘ f)
+      (C2) 单位律：id_B ∘ f = f = f ∘ id_A
+      
+    informal: |
+      范畴是"对象和它们之间箭头"的数学结构。
+      
+      想象一张地图：
+      - 对象 = 城市
+      - 态射 = 道路
+      - 复合 = 连续走两条路
+      - 恒等 = 原地不动
+      
+      范畴 = "数学结构的抽象框架"
+      
+    lean: |
+      -- Mathlib定义
+      class Category (obj : Type u) where
+        Hom : obj → obj → Type v
+        id : ∀ X : obj, Hom X X
+        comp : ∀ {X Y Z : obj}, Hom Y Z → Hom X Y → Hom X Z
+        id_comp : ∀ {X Y : obj} (f : Hom X Y), comp (id Y) f = f
+        comp_id : ∀ {X Y : obj} (f : Hom X Y), comp f (id X) = f
+        assoc : ∀ {W X Y Z : obj} (f : Hom W X) (g : Hom X Y) (h : Hom Y Z),
+          comp (comp h g) f = comp h (comp g f)
+          
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】图/网络
+      - 对象 = 节点
+      - 态射 = 有向边
+      - 复合 = 路径连接
+      - 范畴 = 满足特定规则的有向图
+      
+    algebraic: |
+      【代数直觉】广义幺半群
+      - 单对象范畴 = 幺半群
+      - 所有态射可逆 = 群胚
+      - 范畴是"多对象的幺半群"
+      
+    physical: |
+      【物理直觉】过程/演化
+      - 对象 = 物理状态
+      - 态射 = 过程/演化
+      - 复合 = 连续过程
+      - 量子力学：Hilb范畴
+      
+    categorical: |
+      【范畴直觉】自指性
+      - 范畴本身形成范畴Cat
+      - 对象 = 范畴，态射 = 函子
+      - 这种自指性是范畴论的核心
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "图示法"
+      content: |
+        范畴的图示：
+        
+             f         g
+        A ───────→ B ───────→ C
+        │                     ↗
+        │      g∘f           │
+        └────────────────────┘
+        
+        对象用点，态射用箭头
+        复合用连续箭头表示
+        
+    - type: "Hom集视角"
+      content: |
+        范畴作为Hom集的系统：
+        
+                 B
+                ╱│╲
+        Hom(A,B) │ Hom(B,C)
+              ╲ │ ╱
+               A   C
+               
+        Hom集间有复合映射连接
+        
+    - type: "代数结构表"
+      content: |
+        常见范畴的对象与态射：
+        
+        | 范畴 | 对象 | 态射 |
+        |------|------|------|
+        | Set | 集合 | 函数 |
+        | Grp | 群 | 群同态 |
+        | Top | 拓扑空间 | 连续映射 |
+        | Vect | 向量空间 | 线性映射 |
+        | Ring | 环 | 环同态 |
+        
+  # ===== 例子层 =====
+  examples:
+    concrete:
+      - name: "Set（集合范畴）"
+        objects: "集合"
+        morphisms: "函数"
+        properties: ["完备", "余完备", "有指数对象"]
+        
+      - name: "Grp（群范畴）"
+        objects: "群"
+        morphisms: "群同态"
+        properties: ["完备", "余完备"]
+        
+      - name: "Top（拓扑空间范畴）"
+        objects: "拓扑空间"
+        morphisms: "连续映射"
+        properties: ["完备", "余完备"]
+        
+      - name: "Vect_K（K-向量空间范畴）"
+        objects: "K上向量空间"
+        morphisms: "K-线性映射"
+        properties: ["阿贝尔范畴"]
+        
+    abstract:
+      - name: "单对象范畴（幺半群）"
+        objects: "单个对象 *"
+        morphisms: "幺半群M的元素"
+        note: "Hom(*,*) = M"
+        
+      - name: "离散范畴"
+        objects: "任意类/集合"
+        morphisms: "只有恒等态射"
+        
+      - name: "预序作为范畴"
+        objects: "预序集的元素"
+        morphisms: "a ≤ b 给出唯一态射 a → b"
+        
+      - name: "群胚"
+        objects: "任意"
+        morphisms: "所有态射可逆"
+        
+    higher:
+      - name: "Cat（小范畴的范畴）"
+        objects: "小范畴"
+        morphisms: "函子"
+        
+      - name: "函子范畴 [C, D]"
+        objects: "从C到D的函子"
+        morphisms: "自然变换"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "set"
+        description: "对象类和态射集"
+      - id: "function"
+        description: "复合是函数"
+        
+    generalizes:
+      - id: "monoid"
+        description: "幺半群是单对象范畴"
+      - id: "preorder"
+        description: "预序是thin范畴"
+      - id: "groupoid"
+        description: "群胚是所有态射可逆的范畴"
+        
+    specialized_by:
+      - id: "abelian-category"
+        description: "阿贝尔范畴"
+      - id: "monoidal-category"
+        description: "幺半范畴"
+      - id: "enriched-category"
+        description: "丰化范畴"
+      - id: "higher-category"
+        description: "高阶范畴"
+        
+    related_to:
+      - id: "functor"
+        description: "范畴间的映射"
+      - id: "natural-transformation"
+        description: "函子间的映射"
+      - id: "limit"
+        description: "范畴中的万有构造"
+      - id: "adjunction"
+        description: "伴随函子对"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "yoneda-lemma"
+      statement: "Nat(Hom(A,-), F) ≅ F(A)"
+      importance: 5
+      
+    - id: "freyd-adjoint-functor"
+      statement: "满足某些条件的函子有伴随"
+      importance: 4
+      
+    - id: "category-equivalence"
+      statement: "范畴等价的刻画"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+    prerequisites:
+      - "set"
+      - "function"
+      - "group"
+      
+    leads_to:
+      - "functor"
+      - "natural-transformation"
+      - "topos-theory"
+      - "higher-category-theory"
+      
+    history:
+      first_appearance: 1942-1945
+      context: "Eilenberg-Mac Lane研究代数拓扑"
+      development: "从工具到独立学科"
+      
+    key_figures:
+      - id: "eilenberg"
+        contribution: "范畴论共同创始人"
+      - id: "mac-lane"
+        contribution: "范畴论共同创始人"
+      - id: "grothendieck"
+        contribution: "topos、导出范畴"
+      - id: "lawvere"
+        contribution: "范畴论基础"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.CategoryTheory.Category.Basic"
+    name: "Category"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Category/Basic.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "Functor"
+      - "NatTrans"
+      - "Iso"
+      - "Equivalence"

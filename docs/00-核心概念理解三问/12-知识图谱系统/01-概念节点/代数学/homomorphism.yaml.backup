@@ -1,0 +1,190 @@
+# homomorphism.yaml - 同态概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "homomorphism"
+  name:
+    zh: "同态"
+    en: "Homomorphism"
+  msc_codes: ["20A05", "16B99"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【群同态】
+      设 (G, ·) 和 (H, *) 是群。映射 φ: G → H 是群同态，若：
+      ∀a, b ∈ G: φ(a · b) = φ(a) * φ(b)
+      
+      【环同态】
+      设 R, S 是环。映射 φ: R → S 是环同态，若：
+      1. φ(a + b) = φ(a) + φ(b)
+      2. φ(a · b) = φ(a) · φ(b)
+      3. φ(1_R) = 1_S（若考虑单位元）
+      
+      【核与像】
+      ker(φ) = {g ∈ G : φ(g) = e_H}
+      im(φ) = {φ(g) : g ∈ G}
+      
+    informal: |
+      同态是"保持结构"的映射。
+      
+      想象两台计算器：
+      - 一台用加法，一台用乘法
+      - 如果 log 把乘法变成加法
+      - 那么 log 就是"同态"
+      
+      同态保持运算：先算后映射 = 先映射后算
+      
+    lean: |
+      -- Mathlib群同态
+      structure MonoidHom (M : Type*) (N : Type*) [MulOneClass M] [MulOneClass N] where
+        toFun : M → N
+        map_one' : toFun 1 = 1
+        map_mul' : ∀ x y, toFun (x * y) = toFun x * toFun y
+        
+      -- 环同态
+      structure RingHom (α : Type*) (β : Type*) [Semiring α] [Semiring β] 
+        extends α →* β, α →+ β
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】结构保持变换
+      - 同态像"变形"但保持结构
+      - 运算关系不变
+      - 可以把复杂结构映到简单结构
+      
+    algebraic: |
+      【代数直觉】运算交换图
+      - φ(ab) = φ(a)φ(b)
+      - 运算和映射可交换顺序
+      - 核和像反映映射性质
+      
+    categorical: |
+      【范畴直觉】态射
+      - 同态 = 代数范畴中的态射
+      - 保持结构的映射
+      - 同构 = 可逆同态
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "交换图"
+      content: |
+        同态的交换图：
+        
+        G × G ────→ H × H
+          │            │
+        乘法          乘法
+          ↓            ↓
+          G ─────→ H
+              φ
+              
+        先乘后映 = 先映后乘
+        
+    - type: "核与像"
+      content: |
+        同态的核心结构：
+        
+              G
+             ╱│╲
+            ╱ │ ╲
+        ker(φ) │  im(φ)
+            ╲ │ ╱
+             ╲│╱
+              H
+              
+        G/ker(φ) ≅ im(φ)
+        
+  # ===== 例子层 =====
+  examples:
+    group_homomorphisms:
+      - name: "行列式 det: GL_n(ℝ) → ℝ*"
+        description: "det(AB) = det(A)det(B)"
+        kernel: "SL_n(ℝ)"
+        
+      - name: "符号映射 sgn: S_n → {±1}"
+        description: "置换的奇偶性"
+        kernel: "A_n (交错群)"
+        
+      - name: "指数映射 exp: (ℝ,+) → (ℝ₊,×)"
+        description: "exp(a+b) = exp(a)exp(b)"
+        type: "同构"
+        
+    ring_homomorphisms:
+      - name: "求值映射 ev_a: ℝ[x] → ℝ"
+        description: "f ↦ f(a)"
+        kernel: "(x - a)"
+        
+      - name: "模n映射 π: ℤ → ℤ/nℤ"
+        description: "取余数"
+        kernel: "nℤ"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "group"
+        description: "群同态的定义域/陪域"
+      - id: "ring"
+        description: "环同态的定义域/陪域"
+      - id: "function"
+        description: "同态是特殊函数"
+        
+    generalizes: []
+        
+    specialized_by:
+      - id: "isomorphism"
+        description: "可逆同态"
+      - id: "automorphism"
+        description: "自同构"
+      - id: "endomorphism"
+        description: "自同态"
+      - id: "monomorphism"
+        description: "单同态"
+      - id: "epimorphism"
+        description: "满同态"
+        
+    related_to:
+      - id: "kernel"
+        description: "同态核"
+      - id: "quotient-group"
+        description: "G/ker(φ)"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "first-isomorphism-theorem"
+      statement: "G/ker(φ) ≅ im(φ)"
+      importance: 5
+      
+    - id: "kernel-is-normal"
+      statement: "群同态的核是正规子群"
+      importance: 4
+      
+    - id: "kernel-is-ideal"
+      statement: "环同态的核是理想"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "group"
+      - "ring"
+      - "function"
+      
+    leads_to:
+      - "category-theory"
+      - "representation-theory"
+      - "galois-theory"
+      
+    history:
+      first_appearance: "19世纪"
+      context: "群论发展"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Algebra.Hom.Group.Basic"
+    name: "MonoidHom"
+    coverage: "complete"

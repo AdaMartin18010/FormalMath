@@ -3,11 +3,11 @@
 # Created: 2025-12-06
 
 concept:
-  id: "sobolev-space"
+  id: "sobolev-space'
   name:
     zh: "Sobolev空间"
-    en: "Sobolev Space"
-  msc_codes: ["46E35"]
+    en: 'Sobolev Space"
+  msc_codes: ["46E35']
   
   # ===== 定义层 =====
   definition:
@@ -35,7 +35,7 @@ concept:
       - W^{1,p}空间：函数和其一阶导数都可积
       - W^{k,p}空间：函数及其k阶导数都可积
       
-      类比：如果L^p是"可积函数"，那么W^{k,p}是"可积且可导的函数"。
+      类比：如果L^p是'可积函数"，那么W^{k,p}是"可积且可导的函数'。
       
     lean: |
       -- Mathlib中的Sobolev空间
@@ -87,14 +87,14 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: "函数空间层次"
+    - type: '函数空间层次"
       content: |
         C^∞(Ω) ⊂ W^{k,p}(Ω) ⊂ L^p(Ω)
         
         更精确：
         C^∞_c(Ω) ⊂ W^{k,p}_0(Ω) ⊂ W^{k,p}(Ω) ⊂ L^p(Ω)
         
-    - type: "嵌入关系"
+    - type: "嵌入关系'
       content: |
         Sobolev嵌入定理：
         
@@ -105,83 +105,83 @@ concept:
   examples:
     basic:
       - name: "H¹(0,1)"
-        description: "一维H¹空间，包含连续函数"
-        example: "u(x) = x 属于 H¹(0,1)"
+        description: '一维H¹空间，包含连续函数"
+        example: "u(x) = x 属于 H¹(0,1)'
         
       - name: "H₀¹(Ω)"
-        description: "零边界条件的H¹空间"
-        example: "在边界上为0的函数"
+        description: '零边界条件的H¹空间"
+        example: "在边界上为0的函数'
         
     applications:
       - name: "椭圆型PDE的弱解"
-        description: "u ∈ H₀¹(Ω) 是 Δu = f 的弱解"
-        pde: "∫ ∇u · ∇v dx = ∫ fv dx, ∀v ∈ H₀¹"
+        description: 'u ∈ H₀¹(Ω) 是 Δu = f 的弱解"
+        pde: "∫ ∇u · ∇v dx = ∫ fv dx, ∀v ∈ H₀¹'
         
       - name: "变分问题"
-        description: "能量最小化在H¹中进行"
-        energy: "E(u) = ∫ (|∇u|²/2 - fu) dx"
+        description: '能量最小化在H¹中进行"
+        energy: "E(u) = ∫ (|∇u|²/2 - fu) dx'
         
     counterexamples:
       - name: "不可微函数"
-        description: "某些L^p函数不属于W^{1,p}"
-        example: "|x| 在0点不可微，但属于L^p"
+        description: '某些L^p函数不属于W^{1,p}"
+        example: "|x| 在0点不可微，但属于L^p'
         
   # ===== 关系层 =====
   relations:
     requires:
       - id: "lebesgue-integral"
-        description: "需要Lebesgue积分"
-      - id: "weak-derivative"
+        description: '需要Lebesgue积分"
+      - id: "weak-derivative'
         description: "需要弱导数概念"
-      - id: "lp-space"
-        description: "基于L^p空间"
+      - id: 'lp-space"
+        description: "基于L^p空间'
         
     generalizes:
       - id: "lp-space"
-        description: "W^{0,p} = L^p"
-      - id: "hilbert-space"
+        description: 'W^{0,p} = L^p"
+      - id: "hilbert-space'
         description: "H^k是Hilbert空间"
         
     is_a:
-      - id: "banach-space"
-        description: "W^{k,p}是Banach空间（p < ∞）"
+      - id: 'banach-space"
+        description: "W^{k,p}是Banach空间（p < ∞）'
       - id: "function-space"
-        description: "函数空间"
+        description: '函数空间"
         
     specialized_by:
-      - id: "h1-space"
+      - id: "h1-space'
         description: "H¹ = W^{1,2}"
-      - id: "h0-space"
-        description: "H₀¹：零边界条件"
+      - id: 'h0-space"
+        description: "H₀¹：零边界条件'
       - id: "fractional-sobolev"
-        description: "分数阶Sobolev空间"
+        description: '分数阶Sobolev空间"
         
     related_to:
-      - id: "weak-solution"
+      - id: "weak-solution'
         description: "弱解属于Sobolev空间"
-      - id: "elliptic-pde"
-        description: "椭圆型PDE的弱解在H¹中"
+      - id: 'elliptic-pde"
+        description: "椭圆型PDE的弱解在H¹中'
       - id: "embedding-theorem"
-        description: "Sobolev嵌入定理"
-      - id: "trace-theorem"
+        description: 'Sobolev嵌入定理"
+      - id: "trace-theorem'
         description: "迹定理：边界值"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "sobolev-embedding"
-      statement: "Sobolev嵌入定理"
+    - id: 'sobolev-embedding"
+      statement: "Sobolev嵌入定理'
       importance: 5
       
     - id: "rellich-kondrachov"
-      statement: "紧嵌入定理"
+      statement: '紧嵌入定理"
       importance: 5
       
-    - id: "trace-theorem"
+    - id: "trace-theorem'
       statement: "迹定理：边界限制"
       importance: 4
       
-    - id: "poincare-inequality"
-      statement: "Poincaré不等式"
+    - id: 'poincare-inequality"
+      statement: "Poincaré不等式'
       importance: 5
       
   # ===== 元数据层 =====
@@ -191,40 +191,40 @@ concept:
     
     prerequisites:
       - "lebesgue-integral"
-      - "lp-space"
-      - "distribution-theory"
+      - 'lp-space"
+      - "distribution-theory'
       - "functional-analysis"
       
     corequisites:
-      - "weak-solution"
-      - "elliptic-pde"
+      - 'weak-solution"
+      - "elliptic-pde'
       - "variational-method"
       
     leads_to:
-      - "pde-theory"
-      - "nonlinear-analysis"
+      - 'pde-theory"
+      - "nonlinear-analysis'
       - "calculus-of-variations"
       
     history:
       first_appearance: 1938
-      context: "Sobolev的经典工作"
+      context: 'Sobolev的经典工作"
       key_developments:
-        - "Sobolev (1938): 引入Sobolev空间"
+        - "Sobolev (1938): 引入Sobolev空间'
         - "Gagliardo-Nirenberg (1950s): 插值不等式"
-        - "Adams (1975): 嵌入定理的完整理论"
+        - 'Adams (1975): 嵌入定理的完整理论"
         
     key_figures:
-      - id: "sobolev"
+      - id: "sobolev'
         contribution: "引入Sobolev空间和嵌入定理"
-      - id: "gagliardo"
-        contribution: "Gagliardo-Nirenberg不等式"
+      - id: 'gagliardo"
+        contribution: "Gagliardo-Nirenberg不等式'
       - id: "adams"
-        contribution: "Sobolev空间的完整理论"
+        contribution: 'Sobolev空间的完整理论"
         
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.Analysis.Sobolev"
+    path: "Mathlib.Analysis.Sobolev'
     name: "SobolevSpace"
-    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Sobolev.html"
-    coverage: "partial"
+    url: 'https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Sobolev.html"
+    coverage: "partial'
     note: "Mathlib中有Sobolev空间的基础定义"

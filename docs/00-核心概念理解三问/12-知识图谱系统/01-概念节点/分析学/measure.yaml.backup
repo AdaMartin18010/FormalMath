@@ -1,0 +1,253 @@
+# measure.yaml - 测度概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "measure"
+  name:
+    zh: "测度"
+    en: "Measure"
+  msc_codes: ["28A12", "28A25"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 X 是集合，Σ 是 X 上的σ-代数。
+      测度是函数 μ: Σ → [0, ∞] 满足：
+      
+      (M1) 非负性：μ(A) ≥ 0 对所有 A ∈ Σ
+      (M2) 空集零测：μ(∅) = 0
+      (M3) 可数可加性：若 {Aₙ} 两两不交，则
+           μ(⋃_{n=1}^∞ Aₙ) = Σ_{n=1}^∞ μ(Aₙ)
+           
+      有限测度：μ(X) < ∞
+      概率测度：μ(X) = 1
+      σ-有限：X = ⋃Xₙ，每个μ(Xₙ) < ∞
+      
+    informal: |
+      测度是"广义长度/面积/体积"。
+      
+      想象测量各种集合的"大小"：
+      - 线段的长度
+      - 区域的面积
+      - 物体的体积
+      - 事件的概率
+      
+      测度统一了这些概念，且能处理复杂集合。
+      
+    lean: |
+      -- Mathlib定义
+      structure Measure (α : Type*) [MeasurableSpace α] where
+        toOuterMeasure : OuterMeasure α
+        m_iUnion : ∀ {s : ℕ → Set α}, (∀ i, MeasurableSet (s i)) →
+          Pairwise (Disjoint on s) →
+          toOuterMeasure (⋃ i, s i) = ∑' i, toOuterMeasure (s i)
+        trimmed : toOuterMeasure.trim = toOuterMeasure
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】广义"大小"
+      - 长度测度：线段长度
+      - 面积测度：平面区域面积
+      - 体积测度：空间体积
+      - Hausdorff测度：分形维数
+      
+    algebraic: |
+      【代数直觉】集合上的"加法函数"
+      - 不交并 → 测度相加
+      - 这是"有限可加"的推广到无限
+      - σ-代数结构确保可测性
+      
+    physical: |
+      【物理直觉】
+      - 质量分布：μ(A) = A中的质量
+      - 电荷分布
+      - 概率分布：测度论是概率论基础
+      
+    categorical: |
+      【范畴直觉】
+      - 测度空间形成范畴
+      - 态射：保测映射
+      - Giry单子：概率测度的范畴论描述
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "可数可加性图示"
+      content: |
+        不交分解：
+        
+        ┌─────────────────────┐
+        │  A₁  │  A₂  │ A₃ │…│
+        └─────────────────────┘
+        
+        μ(A₁ ∪ A₂ ∪ A₃ ∪ ...) = μ(A₁) + μ(A₂) + μ(A₃) + ...
+        
+    - type: "测度空间层次"
+      content: |
+        (X, Σ, μ)
+          │
+          ├── X：底空间
+          │
+          ├── Σ：σ-代数（可测集合）
+          │     └── 需要对补、可数并封闭
+          │
+          └── μ：测度函数
+                └── 满足可数可加性
+                
+    - type: "积分联系"
+      content: |
+        测度与积分的关系：
+        
+        μ(A) = ∫_X χ_A dμ
+        
+        测度 ←→ 积分 是Riesz表示定理
+        
+  # ===== 例子层 =====
+  examples:
+    fundamental:
+      - name: "Lebesgue测度 λ"
+        description: "ℝⁿ上的标准测度"
+        properties: ["平移不变", "σ-有限", "完备"]
+        formula: "λ([a,b]) = b - a"
+        
+      - name: "计数测度 #"
+        description: "集合元素个数"
+        properties: ["离散", "可能无限"]
+        formula: "#(A) = |A|"
+        
+      - name: "Dirac测度 δₓ"
+        description: "集中在一点的单位质量"
+        properties: ["原子测度", "概率测度"]
+        formula: "δₓ(A) = 1 if x∈A, 0 otherwise"
+        
+    probability:
+      - name: "均匀分布"
+        description: "[0,1]上的Lebesgue测度"
+        properties: ["概率测度", "无原子"]
+        
+      - name: "正态分布"
+        description: "高斯测度"
+        formula: "dμ = (1/√2π)e^{-x²/2}dx"
+        
+      - name: "Wiener测度"
+        description: "Brown运动路径空间上的测度"
+        properties: ["无限维", "概率测度"]
+        
+    geometric:
+      - name: "Hausdorff测度 ℋˢ"
+        description: "s-维Hausdorff测度"
+        properties: ["适用于分形"]
+        
+      - name: "Haar测度"
+        description: "局部紧群上的不变测度"
+        properties: ["唯一（差常数）", "左不变"]
+        
+  counterexamples:
+    - name: "有限可加非可数可加"
+      description: "ℕ上的密度：d(A) = lim |A∩[1,n]|/n"
+      note: "只是有限可加测度"
+      
+    - name: "非可测集（Vitali集）"
+      description: "Lebesgue不可测集"
+      note: "需要选择公理构造"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "sigma-algebra"
+        description: "可测集合的结构"
+      - id: "set"
+        description: "测度定义在集合上"
+        
+    generalizes:
+      - id: "length"
+        description: "长度是一维测度"
+      - id: "area"
+        description: "面积是二维测度"
+      - id: "volume"
+        description: "体积是三维测度"
+        
+    specialized_by:
+      - id: "probability-measure"
+        description: "概率测度：μ(X) = 1"
+      - id: "signed-measure"
+        description: "符号测度：可取负值"
+      - id: "complex-measure"
+        description: "复测度"
+      - id: "radon-measure"
+        description: "Radon测度：局部有限正则"
+        
+    related_to:
+      - id: "lebesgue-integral"
+        description: "积分基于测度"
+      - id: "measurable-function"
+        description: "可测函数"
+      - id: "probability-theory"
+        description: "概率论基于测度论"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "caratheodory-extension"
+      statement: "从预测度唯一扩展到σ-代数上的测度"
+      importance: 5
+      
+    - id: "radon-nikodym"
+      statement: "绝对连续测度有密度函数"
+      importance: 5
+      
+    - id: "riesz-representation"
+      statement: "正线性泛函 ↔ Radon测度"
+      importance: 5
+      
+    - id: "fubini-theorem"
+      statement: "乘积测度上积分可迭代"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      - "set-theory"
+      - "sigma-algebra"
+      - "real-numbers"
+      
+    corequisites:
+      - "measurable-function"
+      - "lebesgue-integral"
+      
+    leads_to:
+      - "probability-theory"
+      - "functional-analysis"
+      - "ergodic-theory"
+      - "geometric-measure-theory"
+      
+    history:
+      first_appearance: 1902
+      context: "Lebesgue积分"
+      key_development: "Carathéodory的测度论公理化"
+      
+    key_figures:
+      - id: "lebesgue"
+        contribution: "Lebesgue测度和积分"
+      - id: "caratheodory"
+        contribution: "测度论公理化"
+      - id: "kolmogorov"
+        contribution: "概率论的测度论基础"
+      - id: "radon"
+        contribution: "Radon测度"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.MeasureTheory.Measure.MeasureSpace"
+    name: "Measure"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/MeasureSpace.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "MeasureSpace"
+      - "MeasurableSpace"
+      - "ProbabilityMeasure"
+      - "volume" # Lebesgue measure

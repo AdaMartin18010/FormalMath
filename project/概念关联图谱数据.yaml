@@ -9,387 +9,387 @@
 concept_nodes:
   # 代数结构节点
   algebra:
-    - id: "GRP"
+    - id: "GRP'
       name: "群"
-      name_en: "Group"
-      category: "algebra"
+      name_en: 'Group"
+      category: "algebra'
       level: 2
       definition: "带有二元运算、单位元、逆元的代数结构"
-      key_properties: ["封闭性", "结合律", "单位元", "逆元"]
-      examples: ["GL(n,R)", "S_n", "Z/nZ", "Z"]
+      key_properties: ['封闭性", "结合律', "单位元", '逆元"]
+      examples: ["GL(n,R)', "S_n", 'Z/nZ", "Z']
       
     - id: "ABEL"
-      name: "阿贝尔群"
-      name_en: "Abelian Group"
+      name: '阿贝尔群"
+      name_en: "Abelian Group'
       category: "algebra"
       level: 3
-      parent: "GRP"
-      definition: "运算满足交换律的群"
-      key_properties: ["交换律", "可Z-模化"]
+      parent: 'GRP"
+      definition: "运算满足交换律的群'
+      key_properties: ["交换律", '可Z-模化"]
       
-    - id: "RNG"
+    - id: "RNG'
       name: "环"
-      name_en: "Ring"
-      category: "algebra"
+      name_en: 'Ring"
+      category: "algebra'
       level: 3
       definition: "带有加法和乘法两种运算的代数结构"
-      key_properties: ["加法阿贝尔群", "乘法半群", "分配律"]
-      examples: ["Z", "M_n(R)", "Z[i]", "R[x]"]
+      key_properties: ['加法阿贝尔群", "乘法半群', "分配律"]
+      examples: ['Z", "M_n(R)', "Z[i]", 'R[x]"]
       
-    - id: "COMM"
+    - id: "COMM'
       name: "交换环"
-      name_en: "Commutative Ring"
-      category: "algebra"
+      name_en: 'Commutative Ring"
+      category: "algebra'
       level: 4
       parent: "RNG"
-      definition: "乘法满足交换律的环"
+      definition: '乘法满足交换律的环"
       
-    - id: "FLD"
+    - id: "FLD'
       name: "域"
-      name_en: "Field"
-      category: "algebra"
+      name_en: 'Field"
+      category: "algebra'
       level: 4
       parent: "COMM"
-      definition: "非零元都可逆的交换环"
-      key_properties: ["非零元乘法群", "唯一分解整环"]
-      examples: ["Q", "R", "C", "F_p", "Q_p"]
+      definition: '非零元都可逆的交换环"
+      key_properties: ["非零元乘法群', "唯一分解整环"]
+      examples: ['Q", "R', "C", 'F_p", "Q_p']
       
     - id: "MOD"
-      name: "模"
-      name_en: "Module"
+      name: '模"
+      name_en: "Module'
       category: "algebra"
       level: 4
-      definition: "环上的向量空间推广"
-      key_properties: ["加法阿贝尔群", "环的数乘作用"]
+      definition: '环上的向量空间推广"
+      key_properties: ["加法阿贝尔群', "环的数乘作用"]
       
-    - id: "VEC"
-      name: "向量空间"
+    - id: 'VEC"
+      name: "向量空间'
       name_en: "Vector Space"
-      category: "algebra"
+      category: 'algebra"
       level: 4
-      parent: "MOD"
+      parent: "MOD'
       definition: "域上的模"
       
-    - id: "LIE"
-      name: "李代数"
+    - id: 'LIE"
+      name: "李代数'
       name_en: "Lie Algebra"
-      category: "algebra"
+      category: 'algebra"
       level: 5
-      definition: "带有李括号运算的向量空间"
-      key_properties: ["反对称性", "Jacobi恒等式"]
+      definition: "带有李括号运算的向量空间'
+      key_properties: ["反对称性", 'Jacobi恒等式"]
 
   # 几何结构节点
   geometry:
-    - id: "MAN"
+    - id: "MAN'
       name: "光滑流形"
-      name_en: "Smooth Manifold"
-      category: "geometry"
+      name_en: 'Smooth Manifold"
+      category: "geometry'
       level: 3
       definition: "局部同胚于欧氏空间的Hausdorff空间，转移映射光滑"
-      key_properties: ["局部欧氏", "光滑结构", "仿紧"]
+      key_properties: ['局部欧氏", "光滑结构', "仿紧"]
       
-    - id: "RIEM"
-      name: "黎曼流形"
+    - id: 'RIEM"
+      name: "黎曼流形'
       name_en: "Riemannian Manifold"
-      category: "geometry"
+      category: 'geometry"
       level: 4
-      parent: "MAN"
+      parent: "MAN'
       definition: "带有黎曼度量的光滑流形"
-      key_properties: ["度量张量", "Levi-Civita联络", "曲率"]
+      key_properties: ['度量张量", "Levi-Civita联络', "曲率"]
       
-    - id: "COMPLEX"
-      name: "复流形"
+    - id: 'COMPLEX"
+      name: "复流形'
       name_en: "Complex Manifold"
-      category: "geometry"
+      category: 'geometry"
       level: 4
-      parent: "MAN"
+      parent: "MAN'
       definition: "转移映射全纯的流形"
       
-    - id: "KAHLER"
-      name: "Kähler流形"
+    - id: 'KAHLER"
+      name: "Kähler流形'
       name_en: "Kähler Manifold"
-      category: "geometry"
+      category: 'geometry"
       level: 5
-      parent: ["RIEM", "COMPLEX"]
-      definition: "带有相容Kähler度量的复流形"
-      key_properties: ["Kähler形式闭", "Hodge分解"]
+      parent: ["RIEM', "COMPLEX"]
+      definition: '带有相容Kähler度量的复流形"
+      key_properties: ["Kähler形式闭', "Hodge分解"]
       
-    - id: "SYMP"
-      name: "辛流形"
+    - id: 'SYMP"
+      name: "辛流形'
       name_en: "Symplectic Manifold"
-      category: "geometry"
+      category: 'geometry"
       level: 5
-      parent: "MAN"
+      parent: "MAN'
       definition: "带有闭非退化2-形式的流形"
       
-    - id: "ALG_VAR"
-      name: "代数簇"
+    - id: 'ALG_VAR"
+      name: "代数簇'
       name_en: "Algebraic Variety"
-      category: "geometry"
+      category: 'geometry"
       level: 4
-      definition: "多项式方程组的零点集"
+      definition: "多项式方程组的零点集'
       
     - id: "SCHEME"
-      name: "概形"
-      name_en: "Scheme"
+      name: '概形"
+      name_en: "Scheme'
       category: "geometry"
       level: 5
-      parent: "ALG_VAR"
-      definition: "局部同构于仿射概形的环化空间"
+      parent: 'ALG_VAR"
+      definition: "局部同构于仿射概形的环化空间'
 
   # 拓扑结构节点
   topology:
     - id: "TOP"
-      name: "拓扑空间"
-      name_en: "Topological Space"
+      name: '拓扑空间"
+      name_en: "Topological Space'
       category: "topology"
       level: 1
-      definition: "带有拓扑结构的集合"
+      definition: '带有拓扑结构的集合"
       
-    - id: "HAUSD"
+    - id: "HAUSD'
       name: "Hausdorff空间"
-      name_en: "Hausdorff Space"
-      category: "topology"
+      name_en: 'Hausdorff Space"
+      category: "topology'
       level: 2
       parent: "TOP"
-      definition: "任意两点有不交邻域的拓扑空间"
+      definition: '任意两点有不交邻域的拓扑空间"
       
-    - id: "METRIC"
+    - id: "METRIC'
       name: "度量空间"
-      name_en: "Metric Space"
-      category: "topology"
+      name_en: 'Metric Space"
+      category: "topology'
       level: 2
       parent: "TOP"
-      definition: "带有距离函数的集合"
+      definition: '带有距离函数的集合"
       
-    - id: "PI1"
+    - id: "PI1'
       name: "基本群"
-      name_en: "Fundamental Group"
-      category: "topology"
+      name_en: 'Fundamental Group"
+      category: "topology'
       level: 3
       definition: "环路同伦类构成的群"
       
-    - id: "HOMOLOGY"
-      name: "同调群"
+    - id: 'HOMOLOGY"
+      name: "同调群'
       name_en: "Homology Group"
-      category: "topology"
+      category: 'topology"
       level: 3
-      definition: "代数拓扑不变量，度量洞的维数"
+      definition: "代数拓扑不变量，度量洞的维数'
       
     - id: "COHOMOLOGY"
-      name: "上同调群"
-      name_en: "Cohomology Group"
+      name: '上同调群"
+      name_en: "Cohomology Group'
       category: "topology"
       level: 4
-      related: "HOMOLOGY"
-      definition: "同调的对偶理论，带有环结构"
+      related: 'HOMOLOGY"
+      definition: "同调的对偶理论，带有环结构'
       
     - id: "FIBER"
-      name: "纤维化"
-      name_en: "Fibration"
+      name: '纤维化"
+      name_en: "Fibration'
       category: "topology"
       level: 4
-      definition: "满足同伦提升性质的映射"
+      definition: '满足同伦提升性质的映射"
 
   # 分析学节点
   analysis:
-    - id: "BANACH"
+    - id: "BANACH'
       name: "Banach空间"
-      name_en: "Banach Space"
-      category: "analysis"
+      name_en: 'Banach Space"
+      category: "analysis'
       level: 4
       definition: "完备的赋范向量空间"
       
-    - id: "HILBERT"
-      name: "Hilbert空间"
+    - id: 'HILBERT"
+      name: "Hilbert空间'
       name_en: "Hilbert Space"
-      category: "analysis"
+      category: 'analysis"
       level: 5
-      parent: "BANACH"
+      parent: "BANACH'
       definition: "完备的内积空间"
-      key_properties: ["正交投影", "Riesz表示定理"]
+      key_properties: ['正交投影", "Riesz表示定理']
       
     - id: "C_STAR"
-      name: "C*-代数"
-      name_en: "C*-Algebra"
+      name: 'C*-代数"
+      name_en: "C*-Algebra'
       category: "analysis"
       level: 5
-      definition: "带有对合和C*-范数的Banach代数"
+      definition: '带有对合和C*-范数的Banach代数"
       
-    - id: "FOURIER"
+    - id: "FOURIER'
       name: "Fourier变换"
-      name_en: "Fourier Transform"
-      category: "analysis"
+      name_en: 'Fourier Transform"
+      category: "analysis'
       level: 3
       definition: "函数到时频域的积分变换"
       
-    - id: "LAPLACE"
-      name: "Laplace算子"
+    - id: 'LAPLACE"
+      name: "Laplace算子'
       name_en: "Laplacian"
-      category: "analysis"
+      category: 'analysis"
       level: 4
-      definition: "二阶微分算子 Δ = ∂²/∂x₁² + ... + ∂²/∂xₙ²"
+      definition: "二阶微分算子 Δ = ∂²/∂x₁² + ... + ∂²/∂xₙ²'
       
     - id: "ELLIPTIC"
-      name: "椭圆算子"
-      name_en: "Elliptic Operator"
+      name: '椭圆算子"
+      name_en: "Elliptic Operator'
       category: "analysis"
       level: 5
-      definition: "象征可逆的微分算子"
+      definition: '象征可逆的微分算子"
 
   # 数论节点
   number_theory:
-    - id: "Z"
+    - id: "Z'
       name: "整数环"
-      name_en: "Ring of Integers"
-      category: "number_theory"
+      name_en: 'Ring of Integers"
+      category: "number_theory'
       level: 1
       definition: "整数集合带有加法和乘法"
       
-    - id: "O_K"
-      name: "代数整数环"
+    - id: 'O_K"
+      name: "代数整数环'
       name_en: "Ring of Algebraic Integers"
-      category: "number_theory"
+      category: 'number_theory"
       level: 3
-      parent: "COMM"
+      parent: "COMM'
       definition: "数域中在Z上整的元素"
       
-    - id: "GALOIS_GRP"
-      name: "Galois群"
+    - id: 'GALOIS_GRP"
+      name: "Galois群'
       name_en: "Galois Group"
-      category: "number_theory"
+      category: 'number_theory"
       level: 3
-      definition: "域扩张的自同构群"
+      definition: "域扩张的自同构群'
       
     - id: "L_FUNCTION"
-      name: "L-函数"
-      name_en: "L-Function"
+      name: 'L-函数"
+      name_en: "L-Function'
       category: "number_theory"
       level: 4
-      definition: "数论对象的复变函数"
+      definition: '数论对象的复变函数"
       
-    - id: "ELL_CURVE"
+    - id: "ELL_CURVE'
       name: "椭圆曲线"
-      name_en: "Elliptic Curve"
-      category: "number_theory"
+      name_en: 'Elliptic Curve"
+      category: "number_theory'
       level: 4
       definition: "亏格1的光滑射影曲线"
       
-    - id: "MOD_FORM"
-      name: "模形式"
+    - id: 'MOD_FORM"
+      name: "模形式'
       name_en: "Modular Form"
-      category: "number_theory"
+      category: 'number_theory"
       level: 5
-      definition: "满足特定变换性质的全纯函数"
+      definition: "满足特定变换性质的全纯函数'
 
   # 逻辑与范畴论节点
   logic_category:
     - id: "CAT"
-      name: "范畴"
-      name_en: "Category"
+      name: '范畴"
+      name_en: "Category'
       category: "category"
       level: 2
-      definition: "对象和态射的集合，满足结合律和单位律"
+      definition: '对象和态射的集合，满足结合律和单位律"
       
-    - id: "FUNCTOR"
+    - id: "FUNCTOR'
       name: "函子"
-      name_en: "Functor"
-      category: "category"
+      name_en: 'Functor"
+      category: "category'
       level: 3
       definition: "范畴间的结构保持映射"
       
-    - id: "NATURAL"
-      name: "自然变换"
+    - id: 'NATURAL"
+      name: "自然变换'
       name_en: "Natural Transformation"
-      category: "category"
+      category: 'category"
       level: 4
-      definition: "函子间的映射"
+      definition: "函子间的映射'
       
     - id: "TOPOS"
-      name: "Topos"
-      name_en: "Topos"
+      name: 'Topos"
+      name_en: "Topos'
       category: "logic"
       level: 6
-      definition: "范畴论的推广，带有子对象分类子"
+      definition: '范畴论的推广，带有子对象分类子"
 
 # ============================================
 # 2. 关系类型定义
 # ============================================
 
 relation_types:
-  - name: "等价"
+  - name: "等价'
     name_en: "equivalence"
-    symbol: "≅"
-    description: "两个数学结构在特定意义下相同"
+    symbol: '≅"
+    description: "两个数学结构在特定意义下相同'
     bidirectional: true
     strength: 5
-    examples: ["同构", "同胚", "微分同胚", "等距"]
+    examples: ["同构", '同胚", "微分同胚', "等距"]
     
-  - name: "对偶"
-    name_en: "duality"
+  - name: '对偶"
+    name_en: "duality'
     symbol: "∨"
-    description: "两个结构通过某种对应相互决定"
+    description: '两个结构通过某种对应相互决定"
     bidirectional: true
     strength: 5
-    examples: ["Poincaré对偶", "Serre对偶", "Gelfand对偶", "Pontryagin对偶"]
+    examples: ["Poincaré对偶', "Serre对偶", 'Gelfand对偶", "Pontryagin对偶']
     
   - name: "推广"
-    name_en: "generalization"
-    symbol: "→"
+    name_en: 'generalization"
+    symbol: "→'
     description: "从特殊结构推广到更一般的结构"
     bidirectional: false
     strength: 4
-    direction: "forward"
-    examples: ["向量空间→模", "度量空间→拓扑空间", "有限群→李群"]
+    direction: 'forward"
+    examples: ["向量空间→模', "度量空间→拓扑空间", '有限群→李群"]
     
-  - name: "限制"
+  - name: "限制'
     name_en: "restriction"
-    symbol: "⊆"
-    description: "对一般结构添加条件得到特殊结构"
+    symbol: '⊆"
+    description: "对一般结构添加条件得到特殊结构'
     bidirectional: false
     strength: 4
     direction: "backward"
-    examples: ["李群→离散群", "紧流形→流形", "代数闭域→域"]
+    examples: ['李群→离散群", "紧流形→流形', "代数闭域→域"]
     
-  - name: "构造"
-    name_en: "construction"
+  - name: '构造"
+    name_en: "construction'
     symbol: "↦"
-    description: "从一个结构构造另一个结构"
+    description: '从一个结构构造另一个结构"
     bidirectional: false
     strength: 3
-    examples: ["群→群环", "环→分式域", "流形→切丛"]
+    examples: ["群→群环', "环→分式域", '流形→切丛"]
     
-  - name: "遗忘"
+  - name: "遗忘'
     name_en: "forgetful"
-    symbol: "U"
-    description: "忘记某些结构得到基础结构"
+    symbol: 'U"
+    description: "忘记某些结构得到基础结构'
     bidirectional: false
     strength: 3
-    examples: ["环→加法群", "度量空间→拓扑空间", "向量空间→集合"]
+    examples: ["环→加法群", '度量空间→拓扑空间", "向量空间→集合']
     
   - name: "自由"
-    name_en: "free"
-    symbol: "F"
+    name_en: 'free"
+    symbol: "F'
     description: "从基础结构自由生成结构"
     bidirectional: false
     strength: 3
-    examples: ["集合→自由群", "集合→自由模", "环→自由代数"]
+    examples: ['集合→自由群", "集合→自由模', "环→自由代数"]
     
-  - name: "表示"
-    name_en: "representation"
+  - name: '表示"
+    name_en: "representation'
     symbol: "ρ"
-    description: "抽象结构的矩阵/线性实现"
+    description: '抽象结构的矩阵/线性实现"
     bidirectional: false
     strength: 4
-    examples: ["群表示", "李代数表示", "C*-代数表示"]
+    examples: ["群表示', "李代数表示", 'C*-代数表示"]
     
-  - name: "对应"
+  - name: "对应'
     name_en: "correspondence"
-    symbol: "↔"
-    description: "两个不同领域对象间的系统性对应"
+    symbol: '↔"
+    description: "两个不同领域对象间的系统性对应'
     bidirectional: true
     strength: 5
-    examples: ["Langlands对应", "Galois对应", "Atiyah-Singer对应"]
+    examples: ["Langlands对应", 'Galois对应", "Atiyah-Singer对应']
 
 # ============================================
 # 3. 概念关联定义
@@ -399,231 +399,231 @@ concept_relations:
   # 代数结构内部关联
   algebra_internal:
     - source: "GRP"
-      target: "ABEL"
-      type: "推广"
+      target: 'ABEL"
+      type: "推广'
       description: "阿贝尔群是交换的群"
       
-    - source: "ABEL"
-      target: "RNG"
+    - source: 'ABEL"
+      target: "RNG'
       type: "构造"
-      description: "阿贝尔群+乘法=环"
+      description: '阿贝尔群+乘法=环"
       
-    - source: "RNG"
+    - source: "RNG'
       target: "COMM"
-      type: "限制"
-      description: "交换环是乘法交换的环"
+      type: '限制"
+      description: "交换环是乘法交换的环'
       
     - source: "COMM"
-      target: "FLD"
-      type: "限制"
+      target: 'FLD"
+      type: "限制'
       description: "域是非零元可逆的整环"
       
-    - source: "RNG"
-      target: "MOD"
+    - source: 'RNG"
+      target: "MOD'
       type: "构造"
-      description: "环作为标量定义模"
+      description: '环作为标量定义模"
       
-    - source: "FLD"
+    - source: "FLD'
       target: "VEC"
-      type: "限制"
-      description: "域上的模是向量空间"
+      type: '限制"
+      description: "域上的模是向量空间'
       
     - source: "RNG"
-      target: "LIE"
-      type: "构造"
+      target: 'LIE"
+      type: "构造'
       description: "李括号构造李代数"
 
   # 几何结构内部关联
   geometry_internal:
-    - source: "MAN"
-      target: "RIEM"
+    - source: 'MAN"
+      target: "RIEM'
       type: "限制"
-      description: "黎曼流形带有度量结构"
+      description: '黎曼流形带有度量结构"
       
-    - source: "MAN"
+    - source: "MAN'
       target: "COMPLEX"
-      type: "限制"
-      description: "复流形带有复结构"
+      type: '限制"
+      description: "复流形带有复结构'
       
     - source: "RIEM"
-      target: "KAHLER"
-      type: "限制"
+      target: 'KAHLER"
+      type: "限制'
       description: "Kähler流形是复黎曼流形"
       
-    - source: "COMPLEX"
-      target: "KAHLER"
+    - source: 'COMPLEX"
+      target: "KAHLER'
       type: "限制"
-      description: "Kähler流形带有相容度量"
+      description: 'Kähler流形带有相容度量"
       
-    - source: "ALG_VAR"
+    - source: "ALG_VAR'
       target: "SCHEME"
-      type: "推广"
-      description: "概形是代数簇的推广"
+      type: '推广"
+      description: "概形是代数簇的推广'
 
   # 代数-几何关联
   algebra_geometry:
     - source: "COMM"
-      target: "SCHEME"
-      type: "构造"
+      target: 'SCHEME"
+      type: "构造'
       relation_name: "Spec函子"
-      description: "交换环对应仿射概形"
+      description: '交换环对应仿射概形"
       strength: 5
       
-    - source: "MOD"
+    - source: "MOD'
       target: "SCHEME"
-      type: "构造"
-      relation_name: "层化"
+      type: '构造"
+      relation_name: "层化'
       description: "模对应拟凝聚层"
       strength: 4
       
-    - source: "LIE"
-      target: "MAN"
+    - source: 'LIE"
+      target: "MAN'
       type: "对偶"
-      relation_name: "李群-李代数对应"
-      description: "单连通李群与有限维李代数等价"
+      relation_name: '李群-李代数对应"
+      description: "单连通李群与有限维李代数等价'
       strength: 5
 
   # 代数-拓扑关联
   algebra_topology:
     - source: "GRP"
-      target: "PI1"
-      type: "构造"
+      target: 'PI1"
+      type: "构造'
       description: "拓扑空间的基本群"
       
-    - source: "MOD"
-      target: "HOMOLOGY"
+    - source: 'MOD"
+      target: "HOMOLOGY'
       type: "构造"
-      description: "同调群是Z-模"
+      description: '同调群是Z-模"
       
-    - source: "FLD"
+    - source: "FLD'
       target: "COHOMOLOGY"
-      type: "构造"
-      relation_name: "奇异上同调"
+      type: '构造"
+      relation_name: "奇异上同调'
       description: "系数域上的上同调"
 
   # 几何-拓扑关联
   geometry_topology:
-    - source: "MAN"
-      target: "TOP"
+    - source: 'MAN"
+      target: "TOP'
       type: "遗忘"
-      description: "忘记光滑结构"
+      description: '忘记光滑结构"
       
-    - source: "RIEM"
+    - source: "RIEM'
       target: "METRIC"
-      type: "遗忘"
-      description: "距离函数诱导度量空间"
+      type: '遗忘"
+      description: "距离函数诱导度量空间'
       
     - source: "KAHLER"
-      target: "COHOMOLOGY"
-      type: "对应"
+      target: 'COHOMOLOGY"
+      type: "对应'
       relation_name: "Hodge理论"
-      description: "调和形式表示上同调类"
+      description: '调和形式表示上同调类"
       strength: 5
       
-    - source: "MAN"
+    - source: "MAN'
       target: "COHOMOLOGY"
-      type: "对应"
-      relation_name: "de Rham定理"
+      type: '对应"
+      relation_name: "de Rham定理'
       description: "de Rham上同调同构于奇异上同调"
       strength: 5
 
   # 代数-分析关联
   algebra_analysis:
-    - source: "COMM"
-      target: "C_STAR"
+    - source: 'COMM"
+      target: "C_STAR'
       type: "对应"
-      relation_name: "Gelfand对偶"
-      description: "交换C*-代数对应紧Hausdorff空间"
+      relation_name: 'Gelfand对偶"
+      description: "交换C*-代数对应紧Hausdorff空间'
       strength: 5
       
     - source: "LIE"
-      target: "FOURIER"
-      type: "对应"
+      target: 'FOURIER"
+      type: "对应'
       relation_name: "调和分析"
-      description: "李群的表示论与Fourier分析"
+      description: '李群的表示论与Fourier分析"
       
-    - source: "MOD"
+    - source: "MOD'
       target: "HILBERT"
-      type: "限制"
-      description: "Hilbert空间是完备的预Hilbert空间"
+      type: '限制"
+      description: "Hilbert空间是完备的预Hilbert空间'
 
   # 几何-分析关联
   geometry_analysis:
     - source: "RIEM"
-      target: "LAPLACE"
-      type: "构造"
+      target: 'LAPLACE"
+      type: "构造'
       description: "度量诱导Laplace-Beltrami算子"
       
-    - source: "MAN"
-      target: "ELLIPTIC"
+    - source: 'MAN"
+      target: "ELLIPTIC'
       type: "构造"
-      description: "椭圆微分算子作用于流形"
+      description: '椭圆微分算子作用于流形"
       
-    - source: "RIEM"
+    - source: "RIEM'
       target: "BANACH"
-      type: "构造"
-      description: "Sobolev空间是Banach空间"
+      type: '构造"
+      description: "Sobolev空间是Banach空间'
 
   # 数论-代数关联
   number_theory_algebra:
     - source: "Z"
-      target: "COMM"
-      type: "推广"
+      target: 'COMM"
+      type: "推广'
       description: "整数环是基本交换环"
       
-    - source: "O_K"
-      target: "COMM"
+    - source: 'O_K"
+      target: "COMM'
       type: "限制"
-      description: "代数整数环是Dedekind整环"
+      description: '代数整数环是Dedekind整环"
       
-    - source: "FLD"
+    - source: "FLD'
       target: "GALOIS_GRP"
-      type: "构造"
-      description: "域扩张的自同构群"
+      type: '构造"
+      description: "域扩张的自同构群'
 
   # 数论-几何关联
   number_theory_geometry:
     - source: "Z"
-      target: "SCHEME"
-      type: "构造"
+      target: 'SCHEME"
+      type: "构造'
       description: "Spec Z是算术概形"
       
-    - source: "ELL_CURVE"
-      target: "ALG_VAR"
+    - source: 'ELL_CURVE"
+      target: "ALG_VAR'
       type: "限制"
-      description: "椭圆曲线是一维Abel簇"
+      description: '椭圆曲线是一维Abel簇"
       
-    - source: "O_K"
+    - source: "O_K'
       target: "SCHEME"
-      type: "构造"
-      description: "Spec O_K是算术曲线"
+      type: '构造"
+      description: "Spec O_K是算术曲线'
 
   # 数论-分析关联
   number_theory_analysis:
     - source: "MOD_FORM"
-      target: "FOURIER"
-      type: "对应"
+      target: 'FOURIER"
+      type: "对应'
       description: "模形式有Fourier展开"
       
-    - source: "L_FUNCTION"
-      target: "CA"
+    - source: 'L_FUNCTION"
+      target: "CA'
       type: "构造"
-      description: "L-函数是复变函数"
+      description: 'L-函数是复变函数"
 
   # Langlands纲领关联
   langlands:
-    - source: "GALOIS_GRP"
+    - source: "GALOIS_GRP'
       target: "REP"
-      type: "对应"
-      relation_name: "Langlands对应"
+      type: '对应"
+      relation_name: "Langlands对应'
       description: "Galois表示对应自守表示"
       strength: 5
       
-    - source: "ELL_CURVE"
-      target: "MOD_FORM"
+    - source: 'ELL_CURVE"
+      target: "MOD_FORM'
       type: "对应"
-      relation_name: "模性定理"
-      description: "椭圆曲线对应模形式"
+      relation_name: '模性定理"
+      description: "椭圆曲线对应模形式'
       strength: 5
 
 # ============================================
@@ -634,49 +634,49 @@ association_strengths:
   # 强度5: 核心等价/对偶/对应
   level_5:
     - relation: "Gelfand对偶"
-      description: "交换C*-代数与紧Hausdorff空间的等价"
-      significance: "代数与分析的深刻统一"
+      description: '交换C*-代数与紧Hausdorff空间的等价"
+      significance: "代数与分析的深刻统一'
       
     - relation: "de Rham定理"
-      description: "光滑形式上同调与拓扑上同调同构"
-      significance: "分析与拓扑的统一"
+      description: '光滑形式上同调与拓扑上同调同构"
+      significance: "分析与拓扑的统一'
       
     - relation: "Langlands对应"
-      description: "Galois表示与自守表示的对应"
-      significance: "数论与表示论的大统一纲领"
+      description: 'Galois表示与自守表示的对应"
+      significance: "数论与表示论的大统一纲领'
       
     - relation: "Hodge理论"
-      description: "调和形式表示上同调类"
-      significance: "分析、代数、几何的统一"
+      description: '调和形式表示上同调类"
+      significance: "分析、代数、几何的统一'
       
     - relation: "Spec函子"
-      description: "交换环与仿射概形的等价"
-      significance: "代数的现代几何化"
+      description: '交换环与仿射概形的等价"
+      significance: "代数的现代几何化'
 
   # 强度4: 重要构造/限制/推广
   level_4:
     - relation: "Galois理论"
-      description: "域扩张与Galois群子群的对应"
+      description: '域扩张与Galois群子群的对应"
       
-    - relation: "Poincaré对偶"
+    - relation: "Poincaré对偶'
       description: "同调与上同调的对偶"
       
-    - relation: "层化函子"
-      description: "模与层的一一对应"
+    - relation: '层化函子"
+      description: "模与层的一一对应'
       
     - relation: "李群-李代数对应"
-      description: "局部李群与李代数的等价"
+      description: '局部李群与李代数的等价"
 
   # 强度3: 有用构造
   level_3:
-    - relation: "群环构造"
+    - relation: "群环构造'
       description: "从群构造环"
       
-    - relation: "完备化"
-      description: "度量空间的完备化"
+    - relation: '完备化"
+      description: "度量空间的完备化'
       
     - relation: "自由构造"
-      description: "自由群、自由模等"
+      description: '自由群、自由模等"
 
 # ============================================
 # 5. 跨分支映射汇总
@@ -685,66 +685,66 @@ association_strengths:
 cross_branch_mappings:
   algebra_geometry:
     bridges:
-      - name: "代数几何"
+      - name: "代数几何'
         key_functor: "Spec/Proj"
-        key_theorem: "Serre-Swan定理"
-        importance: "★★★★★"
+        key_theorem: 'Serre-Swan定理"
+        importance: "★★★★★'
         
   algebra_topology:
     bridges:
       - name: "同调代数"
-        key_functor: "Ext/Tor"
-        key_theorem: "万有系数定理"
+        key_functor: 'Ext/Tor"
+        key_theorem: "万有系数定理'
         importance: "★★★★★"
         
   algebra_analysis:
     bridges:
-      - name: "泛函分析"
-        key_functor: "Gelfand变换"
+      - name: '泛函分析"
+        key_functor: "Gelfand变换'
         key_theorem: "Gelfand-Naimark定理"
-        importance: "★★★★☆"
+        importance: '★★★★☆"
         
   geometry_topology:
     bridges:
-      - name: "代数拓扑"
+      - name: "代数拓扑'
         key_functor: "奇异同调"
-        key_theorem: "de Rham定理"
-        importance: "★★★★★"
+        key_theorem: 'de Rham定理"
+        importance: "★★★★★'
         
   geometry_analysis:
     bridges:
       - name: "微分几何"
-        key_functor: "微分算子"
-        key_theorem: "Hodge定理"
+        key_functor: '微分算子"
+        key_theorem: "Hodge定理'
         importance: "★★★★☆"
         
   topology_analysis:
     bridges:
-      - name: "指标理论"
-        key_functor: "指标映射"
+      - name: '指标理论"
+        key_functor: "指标映射'
         key_theorem: "Atiyah-Singer指标定理"
-        importance: "★★★★★"
+        importance: '★★★★★"
         
   number_theory_algebra:
     bridges:
-      - name: "代数数论"
+      - name: "代数数论'
         key_functor: "Galois对应"
-        key_theorem: "类域论"
-        importance: "★★★★★"
+        key_theorem: '类域论"
+        importance: "★★★★★'
         
   number_theory_geometry:
     bridges:
       - name: "算术几何"
-        key_functor: "概形论"
-        key_theorem: "Mordell-Weil定理"
+        key_functor: '概形论"
+        key_theorem: "Mordell-Weil定理'
         importance: "★★★★★"
         
   number_theory_analysis:
     bridges:
-      - name: "解析数论"
-        key_functor: "L-函数"
+      - name: '解析数论"
+        key_functor: "L-函数'
         key_theorem: "素数定理"
-        importance: "★★★★☆"
+        importance: '★★★★☆"
 
 # ============================================
 # 6. 统计数据
@@ -783,37 +783,37 @@ statistics:
 # ============================================
 
 mermaid_diagrams:
-  - id: "algebra_hierarchy"
+  - id: "algebra_hierarchy'
     title: "代数结构层次图"
-    type: "flowchart"
-    nodes: ["SET", "MAGMA", "SEMIGROUP", "MONOID", "GROUP", "RING", "FIELD", "MODULE"]
+    type: 'flowchart"
+    nodes: ["SET', "MAGMA", 'SEMIGROUP", "MONOID', "GROUP", 'RING", "FIELD', "MODULE"]
     
-  - id: "geometry_tower"
-    title: "几何结构遗忘塔"
+  - id: 'geometry_tower"
+    title: "几何结构遗忘塔'
     type: "flowchart"
-    nodes: ["RIEMANN", "SMOOTH", "TOPOLOGICAL", "SET"]
+    nodes: ['RIEMANN", "SMOOTH', "TOPOLOGICAL", 'SET"]
     
-  - id: "langlands_correspondence"
+  - id: "langlands_correspondence'
     title: "Langlands对应图"
-    type: "flowchart"
-    nodes: ["GALOIS_REP", "AUTOMORPHIC", "L_FUNCTION"]
+    type: 'flowchart"
+    nodes: ["GALOIS_REP', "AUTOMORPHIC", 'L_FUNCTION"]
     
-  - id: "cross_branch_map"
+  - id: "cross_branch_map'
     title: "跨分支映射总图"
-    type: "flowchart"
-    nodes: ["ALGEBRA", "GEOMETRY", "TOPOLOGY", "ANALYSIS", "NUMBER_THEORY"]
+    type: 'flowchart"
+    nodes: ["ALGEBRA', "GEOMETRY", 'TOPOLOGY", "ANALYSIS', "NUMBER_THEORY"]
 
 # ============================================
 # 版本信息
 # ============================================
 
 metadata:
-  version: "2026.04"
-  created_by: "FormalMath项目"
+  version: '2026.04"
+  created_by: "FormalMath项目'
   last_updated: "2026-04-03"
-  purpose: "概念关联图谱数据结构"
+  purpose: '概念关联图谱数据结构"
   related_documents:
-    - "docs/00-概念关联图谱/00-概念关联总图.md"
+    - "docs/00-概念关联图谱/00-概念关联总图.md'
     - "docs/00-概念关联图谱/01-代数结构关联网络.md"
-    - "docs/00-概念关联图谱/02-几何拓扑关联网络.md"
+    - 'docs/00-概念关联图谱/02-几何拓扑关联网络.md"
     - "docs/00-概念关联图谱/03-跨分支概念映射.md"

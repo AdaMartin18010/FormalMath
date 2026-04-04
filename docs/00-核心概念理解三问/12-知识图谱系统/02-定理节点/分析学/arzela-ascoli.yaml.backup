@@ -1,0 +1,109 @@
+# arzela-ascoli.yaml - Arzelà-Ascoli定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "arzela-ascoli"
+  name:
+    zh: "Arzelà-Ascoli定理"
+    en: "Arzelà-Ascoli Theorem"
+  msc_codes: ["46E15"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 X 是紧度量空间，F ⊆ C(X, ℝ)。
+      F 相对紧（在sup范数下）当且仅当：
+      
+      1. F 一致有界：∃M, ∀f ∈ F, ‖f‖_∞ ≤ M
+      2. F 等度连续：∀ε > 0, ∃δ > 0, ∀f ∈ F, 
+         d(x,y) < δ ⟹ |f(x) - f(y)| < ε
+         
+    informal: |
+      连续函数族什么时候"紧致"？
+      
+      答案：一致有界 + 等度连续
+      
+      这是无穷维空间中紧致性的关键判据。
+      
+    lean: |
+      -- Arzelà-Ascoli定理
+      theorem isCompact_iff_equicontinuous {X : Type*} [MetricSpace X] 
+        [CompactSpace X] (F : Set C(X, ℝ)) :
+        IsCompact F ↔ F.Bounded ∧ Equicontinuous F
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "对角线论证"
+    
+    proof_tree: |
+      Arzelà-Ascoli定理
+          │
+          ├── 必要性（紧 ⟹ 有界+等度连续）
+          │   ├── 紧 ⟹ 有界（显然）
+          │   └── 紧 ⟹ 等度连续（反证法）
+          │
+          └── 充分性（有界+等度连续 ⟹ 紧）
+              ├── 取序列(fₙ)
+              ├── X可分，取稠密{xₖ}
+              ├── 对角线论证：存在子列在每个xₖ收敛
+              ├── 等度连续 ⟹ 一致收敛
+              └── 极限在C(X)中
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      紧 ⟺ 一致有界 + 等度连续
+      
+      ‖f‖_∞ ≤ M, ∀f ∈ F
+      |f(x)-f(y)| < ε (d(x,y) < δ), ∀f ∈ F
+      
+    geometric: |
+      【几何表征】
+      
+      函数族的"厚度"有限：
+      
+        ┌──────────────────┐ M
+        │   f₁  f₂  f₃    │
+        │  ╱╲  ╱╲  ╱╲    │
+        │ ╱  ╲╱  ╲╱  ╲   │
+        └──────────────────┘ -M
+        
+      而且变化速度有限（等度连续）
+      
+    intuitive: |
+      【直觉表征】
+      
+      有限维中：有界闭集是紧的
+      无穷维中：还需要"等度连续"约束
+      
+      想象：函数不能太"陡峭"
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "常微分方程解的存在性（Peano定理）"
+    - description: "变分问题的极小化子存在性"
+    - description: "泛函分析中的紧嵌入定理"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "compactness"
+      - id: "uniform-convergence"
+        
+    related_to:
+      - id: "heine-borel"
+        description: "有限维版本"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 4
+    history:
+      discoverers: "Cesare Arzelà, Giulio Ascoli"
+      year: "1880s"
+      
+  mathlib:
+    path: "Mathlib.Topology.ContinuousFunction.Compact"

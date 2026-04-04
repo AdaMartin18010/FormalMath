@@ -1,0 +1,231 @@
+# connectedness.yaml - 连通性概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "connectedness"
+  name:
+    zh: "连通性"
+    en: "Connectedness"
+  msc_codes: ["54D05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【连通空间】
+      拓扑空间 X 是连通的，当且仅当：
+      X 不能表示为两个非空开集的不交并。
+      
+      即：若 X = U ∪ V，U, V 开，U ∩ V = ∅，
+      则 U = ∅ 或 V = ∅
+      
+      【等价刻画】
+      - X 中唯一的既开又闭的集合是 ∅ 和 X
+      - X 到离散两点空间 {0,1} 的连续函数是常值函数
+      
+      【道路连通】
+      X 道路连通 ⟺ 任意两点可由连续道路连接
+      
+    informal: |
+      连通空间是"一整块"的空间。
+      
+      想象橡皮泥：连通意味着不能把它掰成两块。
+      
+      或者想象地图上的陆地：同一块大陆是连通的，
+      不同大陆之间不连通。
+      
+    lean: |
+      -- Mathlib定义
+      def IsConnected {X : Type*} [TopologicalSpace X] (s : Set X) : Prop :=
+        s.Nonempty ∧ IsPreconnected s
+        
+      def IsPreconnected {X : Type*} [TopologicalSpace X] (s : Set X) : Prop :=
+        ∀ u v : Set X, IsOpen u → IsOpen v → s ⊆ u ∪ v → 
+          (s ∩ u).Nonempty → (s ∩ v).Nonempty → (s ∩ (u ∩ v)).Nonempty
+          
+      class ConnectedSpace (X : Type*) [TopologicalSpace X] : Prop where
+        isPreconnected_univ : IsPreconnected (univ : Set X)
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】"一整块"
+      - 连通 = 不能分成分离的部分
+      - 画一个图形：一笔能画完
+      - 从任意一点可以到达任意另一点（通过连续移动）
+      
+    algebraic: |
+      【代数直觉】没有非平凡分解
+      - 连通空间上的连续函数到{0,1}是常值
+      - 这是"没有切割点"的代数表述
+      
+    physical: |
+      【物理直觉】
+      - 相空间连通 = 系统可从任意状态演化到任意状态
+      - 电路连通 = 电流可以流通
+      
+    categorical: |
+      【范畴直觉】
+      - 连通空间是Top范畴中的"不可分解对象"
+      - π₀(X) = 连通分支集合
+      - 对于道路连通：π₀(X)是点的等价类
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "分离示意图"
+      content: |
+        连通 vs 不连通：
+        
+        连通：                不连通：
+        ┌──────────┐          ┌────┐  ┌────┐
+        │          │          │ U  │  │ V  │
+        │    X     │          │    │  │    │
+        │          │          └────┘  └────┘
+        └──────────┘          X = U ⊔ V
+        
+        不能分成分离部分       可以分成分离部分
+        
+    - type: "道路连通图示"
+      content: |
+        道路连通：
+        
+        ┌──────────────┐
+        │   x ─ ─ ─ y  │
+        │    ╲     ╱   │
+        │     ╲   ╱    │
+        │      ╲ ╱     │
+        │       z      │
+        └──────────────┘
+        
+        任意两点间存在连续道路
+        
+    - type: "连通分支"
+      content: |
+        连通分支分解：
+        
+        X = C₁ ⊔ C₂ ⊔ C₃ ⊔ ...
+        
+        每个Cᵢ是极大连通子集
+        不同连通分支之间没有路径连接
+        
+  # ===== 例子层 =====
+  examples:
+    connected:
+      - name: "实数 ℝ"
+        description: "最基本的连通空间"
+        properties: ["连通", "道路连通", "局部连通"]
+        
+      - name: "闭区间 [a,b]"
+        description: "连通子集"
+        properties: ["连通", "紧致"]
+        
+      - name: "球面 Sⁿ (n≥1)"
+        description: "n维球面"
+        properties: ["连通", "道路连通", "单连通(n≥2)"]
+        
+      - name: "环面 T²"
+        description: "甜甜圈表面"
+        properties: ["连通", "非单连通"]
+        
+    disconnected:
+      - name: "有理数 ℚ ⊂ ℝ"
+        description: "完全不连通"
+        reason: "任意两点可被无理数分离"
+        
+      - name: "Cantor集"
+        description: "完全不连通的紧集"
+        properties: ["完全不连通", "无孤立点", "紧"]
+        
+      - name: "两点离散空间 {0,1}"
+        description: "最简单的不连通空间"
+        properties: ["离散", "两个分支"]
+        
+    path_vs_connected:
+      - name: "拓扑学家的正弦曲线"
+        description: "sin(1/x)的图像与y轴的并"
+        properties: ["连通但非道路连通"]
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "topological-space"
+        description: "连通性是拓扑性质"
+      - id: "open-set"
+        description: "用开集定义"
+        
+    generalizes:
+      - id: "path-connectedness"
+        description: "道路连通 ⟹ 连通"
+      - id: "simply-connected"
+        description: "单连通 ⟹ 道路连通"
+        
+    specialized_by:
+      - id: "locally-connected"
+        description: "局部连通"
+      - id: "arc-wise-connected"
+        description: "弧连通"
+        
+    related_to:
+      - id: "intermediate-value-theorem"
+        description: "连通性的典型应用"
+      - id: "fundamental-group"
+        description: "道路连通分支与π₀"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "intermediate-value-theorem"
+      statement: "连通集的连续实值函数取所有中间值"
+      importance: 5
+      
+    - id: "continuous-image-connected"
+      statement: "连通集的连续像是连通的"
+      importance: 5
+      
+    - id: "union-of-connected"
+      statement: "有公共点的连通集的并是连通的"
+      importance: 4
+      
+    - id: "closure-connected"
+      statement: "连通集的闭包是连通的"
+      importance: 3
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "topological-space"
+      - "open-set"
+      - "continuity"
+      
+    corequisites:
+      - "path"
+      - "compactness"
+      
+    leads_to:
+      - "fundamental-group"
+      - "covering-space"
+      - "algebraic-topology"
+      
+    history:
+      first_appearance: 1883
+      context: "Cantor的点集拓扑"
+      
+    key_figures:
+      - id: "cantor"
+        contribution: "连通性概念"
+      - id: "jordan"
+        contribution: "曲线定理"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Topology.Connected.Basic"
+    name: "IsConnected"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Connected/Basic.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "ConnectedSpace"
+      - "IsPathConnected"
+      - "connectedComponent"

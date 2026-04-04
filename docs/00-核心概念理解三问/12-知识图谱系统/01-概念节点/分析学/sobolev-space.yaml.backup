@@ -1,0 +1,230 @@
+# sobolev-space.yaml - Sobolev空间概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-06
+
+concept:
+  id: "sobolev-space"
+  name:
+    zh: "Sobolev空间"
+    en: "Sobolev Space"
+  msc_codes: ["46E35"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【定义】
+      设 Ω ⊆ ℝⁿ 是开集，k ∈ ℕ，1 ≤ p ≤ ∞。
+      Sobolev空间 W^{k,p}(Ω) 定义为：
+      
+      W^{k,p}(Ω) = {u ∈ L^p(Ω) : D^α u ∈ L^p(Ω), ∀|α| ≤ k}
+      
+      其中 D^α u 是 u 的弱导数（分布意义下的导数）。
+      
+      【范数】
+      ||u||_{W^{k,p}} = (∑_{|α|≤k} ||D^α u||_{L^p}^p)^{1/p}
+      
+      【特殊情况】
+      - H^k(Ω) = W^{k,2}(Ω)：Hilbert空间
+      - H₀^k(Ω)：具有零边界条件的Sobolev空间
+      
+    informal: |
+      Sobolev空间是"具有可积导数的函数空间"。
+      
+      直观理解：
+      - L^p空间：函数本身可积
+      - W^{1,p}空间：函数和其一阶导数都可积
+      - W^{k,p}空间：函数及其k阶导数都可积
+      
+      类比：如果L^p是"可积函数"，那么W^{k,p}是"可积且可导的函数"。
+      
+    lean: |
+      -- Mathlib中的Sobolev空间
+      import Mathlib.Analysis.Sobolev
+      
+      -- W^{k,p}(Ω)的定义
+      def SobolevSpace (k : ℕ) (p : ℝ≥0∞) (Ω : Set ℝ) : Type :=
+        {u : Ω → ℝ // ∀ i ≤ k, HasWeakDeriv i u}
+        
+      -- H^k = W^{k,2}
+      def HSobolev (k : ℕ) (Ω : Set ℝ) : Type :=
+        SobolevSpace k 2 Ω
+      
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】
+      Sobolev空间中的函数"足够光滑"：
+      
+      - W^{1,2}：函数连续（几乎处处），导数可积
+      - W^{2,2}：函数一阶导数连续，二阶导数可积
+      - 更高阶：更光滑
+      
+      嵌入定理：W^{k,p} ↪ C^{k-1,α}（在适当条件下）
+      
+    algebraic: |
+      【代数直觉】
+      Sobolev空间是Banach空间（p < ∞）或Hilbert空间（p = 2）。
+      
+      结构：
+      - 线性空间：函数的线性组合仍在空间中
+      - 完备性：Cauchy序列收敛
+      - 内积（p=2）：(u,v)_{H^k} = ∑_{|α|≤k} (D^α u, D^α v)_{L²}
+      
+    physical: |
+      【物理直觉】
+      Sobolev空间是PDE弱解的自然空间：
+      
+      - 能量泛函：E(u) = ∫ |∇u|² dx 在H¹中定义良好
+      - 变分问题：在H¹中寻找能量最小化函数
+      - 物理意义：能量有限的函数
+      
+    categorical: |
+      【范畴直觉】
+      Sobolev空间形成范畴：
+      - 对象：Sobolev空间 W^{k,p}
+      - 态射：嵌入映射、限制映射
+      - 函子：从开集到Sobolev空间
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "函数空间层次"
+      content: |
+        C^∞(Ω) ⊂ W^{k,p}(Ω) ⊂ L^p(Ω)
+        
+        更精确：
+        C^∞_c(Ω) ⊂ W^{k,p}_0(Ω) ⊂ W^{k,p}(Ω) ⊂ L^p(Ω)
+        
+    - type: "嵌入关系"
+      content: |
+        Sobolev嵌入定理：
+        
+        W^{k,p}(Ω) ↪ L^q(Ω)  (q = np/(n-kp), kp < n)
+        W^{k,p}(Ω) ↪ C^{k-1,α}(Ω̄)  (kp > n)
+        
+  # ===== 例子层 =====
+  examples:
+    basic:
+      - name: "H¹(0,1)"
+        description: "一维H¹空间，包含连续函数"
+        example: "u(x) = x 属于 H¹(0,1)"
+        
+      - name: "H₀¹(Ω)"
+        description: "零边界条件的H¹空间"
+        example: "在边界上为0的函数"
+        
+    applications:
+      - name: "椭圆型PDE的弱解"
+        description: "u ∈ H₀¹(Ω) 是 Δu = f 的弱解"
+        pde: "∫ ∇u · ∇v dx = ∫ fv dx, ∀v ∈ H₀¹"
+        
+      - name: "变分问题"
+        description: "能量最小化在H¹中进行"
+        energy: "E(u) = ∫ (|∇u|²/2 - fu) dx"
+        
+    counterexamples:
+      - name: "不可微函数"
+        description: "某些L^p函数不属于W^{1,p}"
+        example: "|x| 在0点不可微，但属于L^p"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "lebesgue-integral"
+        description: "需要Lebesgue积分"
+      - id: "weak-derivative"
+        description: "需要弱导数概念"
+      - id: "lp-space"
+        description: "基于L^p空间"
+        
+    generalizes:
+      - id: "lp-space"
+        description: "W^{0,p} = L^p"
+      - id: "hilbert-space"
+        description: "H^k是Hilbert空间"
+        
+    is_a:
+      - id: "banach-space"
+        description: "W^{k,p}是Banach空间（p < ∞）"
+      - id: "function-space"
+        description: "函数空间"
+        
+    specialized_by:
+      - id: "h1-space"
+        description: "H¹ = W^{1,2}"
+      - id: "h0-space"
+        description: "H₀¹：零边界条件"
+      - id: "fractional-sobolev"
+        description: "分数阶Sobolev空间"
+        
+    related_to:
+      - id: "weak-solution"
+        description: "弱解属于Sobolev空间"
+      - id: "elliptic-pde"
+        description: "椭圆型PDE的弱解在H¹中"
+      - id: "embedding-theorem"
+        description: "Sobolev嵌入定理"
+      - id: "trace-theorem"
+        description: "迹定理：边界值"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "sobolev-embedding"
+      statement: "Sobolev嵌入定理"
+      importance: 5
+      
+    - id: "rellich-kondrachov"
+      statement: "紧嵌入定理"
+      importance: 5
+      
+    - id: "trace-theorem"
+      statement: "迹定理：边界限制"
+      importance: 4
+      
+    - id: "poincare-inequality"
+      statement: "Poincaré不等式"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      - "lebesgue-integral"
+      - "lp-space"
+      - "distribution-theory"
+      - "functional-analysis"
+      
+    corequisites:
+      - "weak-solution"
+      - "elliptic-pde"
+      - "variational-method"
+      
+    leads_to:
+      - "pde-theory"
+      - "nonlinear-analysis"
+      - "calculus-of-variations"
+      
+    history:
+      first_appearance: 1938
+      context: "Sobolev的经典工作"
+      key_developments:
+        - "Sobolev (1938): 引入Sobolev空间"
+        - "Gagliardo-Nirenberg (1950s): 插值不等式"
+        - "Adams (1975): 嵌入定理的完整理论"
+        
+    key_figures:
+      - id: "sobolev"
+        contribution: "引入Sobolev空间和嵌入定理"
+      - id: "gagliardo"
+        contribution: "Gagliardo-Nirenberg不等式"
+      - id: "adams"
+        contribution: "Sobolev空间的完整理论"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Analysis.Sobolev"
+    name: "SobolevSpace"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Sobolev.html"
+    coverage: "partial"
+    note: "Mathlib中有Sobolev空间的基础定义"

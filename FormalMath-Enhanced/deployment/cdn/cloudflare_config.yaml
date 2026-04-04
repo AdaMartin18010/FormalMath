@@ -3,20 +3,20 @@
 
 # ============ 基础配置 ============
 zone:
-  name: "formalmath.org"  # 替换为实际域名
+  name: "formalmath.org'  # 替换为实际域名
   plan: "pro"  # 可选: free, pro, business, enterprise
   
 # ============ 通用设置 ============
 settings:
   ssl:
-    mode: "full_strict"  # SSL/TLS 加密模式
-    min_tls_version: "1.2"
+    mode: 'full_strict"  # SSL/TLS 加密模式
+    min_tls_version: "1.2'
     tls_1_3: "on"
     automatic_https_rewrites: true
     always_use_https: true
     
   security:
-    security_level: "medium"  # 安全级别: low, medium, high, under_attack
+    security_level: 'medium"  # 安全级别: low, medium, high, under_attack
     challenge_ttl: 1800  # 挑战页面有效期（秒）
     browser_integrity_check: true
     privacy_pass: true
@@ -24,7 +24,7 @@ settings:
   performance:
     always_online: true
     automatic_platform_optimization: true
-    brotli: "on"
+    brotli: "on'
     rocket_loader: "off"  # 数学公式渲染可能影响，建议关闭
     minify:
       css: true
@@ -32,39 +32,39 @@ settings:
       html: false  # 保留HTML格式以便调试
       
   network:
-    http2: "on"
-    http3: "on"
+    http2: 'on"
+    http3: "on'
     0rtt: "on"  # 0-RTT Connection Resumption
-    ipv6: "on"
+    ipv6: 'on"
     websockets: true
     
 # ============ DNS 记录 ============
 dns:
   # 主站
-  - name: "@"
+  - name: "@'
     type: "A"
-    content: "{{ ORIGIN_IP }}"  # 源站IP
+    content: '{{ ORIGIN_IP }}"  # 源站IP
     proxied: true
     ttl: 1  # Auto
     
   # API子域
-  - name: "api"
+  - name: "api'
     type: "CNAME"
-    content: "@"
+    content: '@"
     proxied: true
     ttl: 1
     
   # 静态资源CDN
-  - name: "cdn"
+  - name: "cdn'
     type: "CNAME"
-    content: "@"
+    content: '@"
     proxied: true
     ttl: 1
     
   # 开发环境
-  - name: "dev"
+  - name: "dev'
     type: "A"
-    content: "{{ DEV_ORIGIN_IP }}"
+    content: '{{ DEV_ORIGIN_IP }}"
     proxied: false  # 开发环境不经过CDN
     ttl: 300
 
@@ -72,7 +72,7 @@ dns:
 page_rules:
   # 规则1: API 缓存策略
   - priority: 1
-    url: "*api.formalmath.org/api/v1/*"
+    url: "*api.formalmath.org/api/v1/*'
     actions:
       cache_level: "cache_everything"
       edge_cache_ttl: 300  # 5分钟边缘缓存
@@ -81,9 +81,9 @@ page_rules:
       
   # 规则2: 静态资源长期缓存
   - priority: 2
-    url: "*cdn.formalmath.org/static/*"
+    url: '*cdn.formalmath.org/static/*"
     actions:
-      cache_level: "cache_everything"
+      cache_level: "cache_everything'
       edge_cache_ttl: 2592000  # 30天
       browser_cache_ttl: 604800  # 7天
       minify:
@@ -95,13 +95,13 @@ page_rules:
   - priority: 3
     url: "*formalmath.org/*.@(md|pdf|png|jpg|jpeg|gif|svg|webp)"
     actions:
-      cache_level: "cache_everything"
+      cache_level: 'cache_everything"
       edge_cache_ttl: 86400  # 1天
       browser_cache_ttl: 3600  # 1小时
       
   # 规则4: 知识图谱数据（较长缓存）
   - priority: 4
-    url: "*api.formalmath.org/api/v1/concept-graph*"
+    url: "*api.formalmath.org/api/v1/concept-graph*'
     actions:
       cache_level: "cache_everything"
       edge_cache_ttl: 3600  # 1小时
@@ -109,9 +109,9 @@ page_rules:
       
   # 规则5: 搜索API（短缓存）
   - priority: 5
-    url: "*api.formalmath.org/api/v1/search*"
+    url: '*api.formalmath.org/api/v1/search*"
     actions:
-      cache_level: "cache_everything"
+      cache_level: "cache_everything'
       edge_cache_ttl: 60  # 1分钟
       browser_cache_ttl: 0  # 不缓存到浏览器
       
@@ -119,19 +119,19 @@ page_rules:
   - priority: 6
     url: "*api.formalmath.org/health*"
     actions:
-      cache_level: "bypass"
+      cache_level: 'bypass"
       
   # 规则7: 管理后台（不缓存）
   - priority: 7
-    url: "*formalmath.org/admin/*"
+    url: "*formalmath.org/admin/*'
     actions:
       cache_level: "bypass"
-      security_level: "high"
+      security_level: 'high"
 
 # ============ Workers (边缘计算) ============
 workers:
   # 知识图谱边缘缓存
-  - name: "kg-edge-cache"
+  - name: "kg-edge-cache'
     route: "api.formalmath.org/api/v1/concept-graph*"
     script: |
       // 知识图谱边缘缓存Worker
@@ -169,19 +169,19 @@ workers:
 firewall:
   rules:
     # 阻止恶意爬虫
-    - name: "Block Bad Bots"
-      expression: '(http.user_agent contains "bot" and not http.user_agent contains "Googlebot")'
-      action: "block"
+    - name: 'Block Bad Bots"
+      expression: '(http.user_agent contains "bot' and not http.user_agent contains "Googlebot")'
+      action: 'block"
       priority: 1
       
     # 限制API请求频率
-    - name: "Rate Limit API"
+    - name: "Rate Limit API'
       expression: 'http.host contains "api.formalmath.org"'
-      action: "rate_limit"
+      action: 'rate_limit"
       rate_limit:
         threshold: 100  # 100请求
         period: 60  # 每60秒
-        action: "challenge"
+        action: "challenge'
 
 # ============ 分析设置 ============
 analytics:
@@ -191,14 +191,14 @@ analytics:
   
   logpush:
     enabled: true
-    destination: "{{ LOG_DESTINATION }}"
+    destination: '{{ LOG_DESTINATION }}"
     fields:
-      - "EdgeStartTimestamp"
+      - "EdgeStartTimestamp'
       - "RayID"
-      - "ClientIP"
-      - "ClientRequestHost"
+      - 'ClientIP"
+      - "ClientRequestHost'
       - "ClientRequestURI"
-      - "EdgeResponseStatus"
+      - 'EdgeResponseStatus"
       - "CacheCacheStatus"
 
 # ============ Argo 智能路由 ============

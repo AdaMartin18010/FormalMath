@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "riesz-representation"
+  id: "riesz-representation'
   name:
     zh: "Riesz表示定理"
-    en: "Riesz Representation Theorem"
-  msc_codes: ["46C05", "28C05"]
+    en: 'Riesz Representation Theorem"
+  msc_codes: ["46C05', "28C05"]
   
   # ===== 陈述层 =====
   statement:
@@ -27,7 +27,7 @@ theorem:
     informal: |
       Hilbert空间的对偶空间就是它自己！
       
-      每个线性泛函都是"与某个向量做内积"。
+      每个线性泛函都是'与某个向量做内积"。
       
       这是Hilbert空间的核心特征。
       
@@ -39,7 +39,7 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: "正交补 + 投影定理"
+    main_strategy: "正交补 + 投影定理'
     
     proof_tree: |
       Riesz表示定理
@@ -81,7 +81,7 @@ theorem:
       【直觉表征】
       
       在Hilbert空间中：
-      "测量" = "投影"
+      "测量" = '投影"
       
       f(x) = x在y方向上的投影（乘以‖y‖）
       
@@ -95,22 +95,22 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - description: "Hilbert空间理论的基础"
+    - description: "Hilbert空间理论的基础'
     - description: "最小二乘法的理论基础"
-    - description: "量子力学中态与泛函的对应"
-    - description: "偏微分方程的弱解理论"
+    - description: '量子力学中态与泛函的对应"
+    - description: "偏微分方程的弱解理论'
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
       - id: "hilbert-space"
-      - id: "inner-product"
+      - id: 'inner-product"
         
     related_to:
-      - id: "hahn-banach"
+      - id: "hahn-banach'
         description: "一般赋范空间的情形"
-      - id: "projection-theorem"
-        description: "证明工具"
+      - id: 'projection-theorem"
+        description: "证明工具'
         
   # ===== 元数据层 =====
   metadata:
@@ -121,4 +121,4 @@ theorem:
       year: 1907
       
   mathlib:
-    path: "Mathlib.Analysis.InnerProductSpace.Dual"
+    path: 'Mathlib.Analysis.InnerProductSpace.Dual"

@@ -1,0 +1,100 @@
+# functor.yaml - 函子概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "functor"
+  name:
+    zh: "函子"
+    en: "Functor"
+  msc_codes: ["18A22"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 C, D 是范畴。函子 F: C → D 包含：
+      
+      1. 对象映射：F: Ob(C) → Ob(D)
+      2. 态射映射：F: Hom_C(X,Y) → Hom_D(F(X),F(Y))
+      
+      满足：
+      - F(id_X) = id_{F(X)}（保恒等）
+      - F(g ∘ f) = F(g) ∘ F(f)（保复合）
+      
+      逆变函子：F(g ∘ f) = F(f) ∘ F(g)
+      
+    informal: |
+      函子是"范畴之间的映射"，保持结构。
+      
+      例子：
+      - 遗忘函子：群 → 集合，忘掉运算
+      - 自由函子：集合 → 群，构造自由群
+      - 基本群函子：拓扑空间 → 群
+      
+    lean: |
+      -- 函子定义
+      structure Functor (C : Type*) [Category C] (D : Type*) [Category D] where
+        obj : C → D
+        map : ∀ {X Y : C}, (X ⟶ Y) → (obj X ⟶ obj Y)
+        map_id : ∀ X, map (𝟙 X) = 𝟙 (obj X)
+        map_comp : ∀ {X Y Z} (f : X ⟶ Y) (g : Y ⟶ Z), 
+                   map (f ≫ g) = map f ≫ map g
+                   
+  # ===== 直觉层 =====
+  intuition:
+    structural: |
+      【结构直觉】保结构映射
+      - 函子保持"箭头如何组合"
+      - 是范畴论中的"同态"
+      - 类比：群同态保运算
+      
+    categorical: |
+      【范畴直觉】范畴的范畴
+      - 函子是Cat中的态射
+      - 自然变换是函子间的态射
+      - 形成2-范畴
+      
+  # ===== 例子层 =====
+  examples:
+    - name: "恒等函子 Id_C"
+      description: "C → C，什么都不变"
+      
+    - name: "遗忘函子 Grp → Set"
+      description: "群映到其底集合"
+      
+    - name: "自由函子 Set → Grp"
+      description: "集合映到自由群"
+      
+    - name: "Hom函子"
+      description: "Hom(A,-): C → Set"
+      property: "协变"
+      
+    - name: "基本群函子"
+      description: "π₁: Top* → Grp"
+      
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "yoneda-lemma"
+      statement: "Nat(Hom(A,-), F) ≅ F(A)"
+      
+    - id: "adjoint-functor"
+      statement: "伴随函子的存在性"
+      
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "category"
+        
+    leads_to:
+      - id: "natural-transformation"
+      - id: "adjoint-functor"
+      - id: "limit"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+  mathlib:
+    path: "Mathlib.CategoryTheory.Functor.Basic"
+    name: "CategoryTheory.Functor"

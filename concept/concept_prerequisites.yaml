@@ -4,10 +4,10 @@
 # 描述: 分析学概念的先决条件与依赖关系
 
 metadata:
-  version: "1.0"
+  version: "1.0'
   last_updated: "2026-04-04"
-  description: "分析学概念先决条件与依赖关系配置"
-  author: "FormalMath项目组"
+  description: '分析学概念先决条件与依赖关系配置"
+  author: "FormalMath项目组'
   
 # ============================================
 # 分析学概念先决条件
@@ -18,8 +18,8 @@ concepts:
   limit:
     name:
       english: "Limit"
-      chinese: "极限"
-    category: "analysis"
+      chinese: '极限"
+    category: "analysis'
     msc_code: "26A03"
     prerequisites:
       required:
@@ -34,16 +34,16 @@ concepts:
       - integral
       - series
     formalmath_docs:
-      - "concept/核心概念/13-极限-多理论分析示例-2025年1月.md"
-      - "docs/03-分析学/01-实分析/01-实分析.md"
+      - 'concept/核心概念/13-极限-多理论分析示例-2025年1月.md"
+      - "docs/03-分析学/01-实分析/01-实分析.md'
     difficulty: 1
     importance: 5
     
   continuity:
     name:
       english: "Continuity"
-      chinese: "连续"
-    category: "analysis"
+      chinese: '连续"
+    category: "analysis'
     msc_code: "26A15"
     prerequisites:
       required:
@@ -55,16 +55,16 @@ concepts:
       - differentiable
       - integration
     formalmath_docs:
-      - "concept/核心概念/14-连续-多理论分析示例-2025年1月.md"
-      - "docs/03-分析学/01-实分析/01-实分析.md"
+      - 'concept/核心概念/14-连续-多理论分析示例-2025年1月.md"
+      - "docs/03-分析学/01-实分析/01-实分析.md'
     difficulty: 2
     importance: 5
     
   derivative:
     name:
       english: "Derivative"
-      chinese: "导数"
-    category: "analysis"
+      chinese: '导数"
+    category: "analysis'
     msc_code: "26A24"
     prerequisites:
       required:
@@ -78,16 +78,16 @@ concepts:
       - optimization
       - differential_equations
     formalmath_docs:
-      - "concept/核心概念/15-导数-多理论分析示例-2025年1月.md"
-      - "docs/03-分析学/01-实分析/01-实分析.md"
+      - 'concept/核心概念/15-导数-多理论分析示例-2025年1月.md"
+      - "docs/03-分析学/01-实分析/01-实分析.md'
     difficulty: 2
     importance: 5
     
   integral:
     name:
       english: "Integral"
-      chinese: "积分"
-    category: "analysis"
+      chinese: '积分"
+    category: "analysis'
     msc_code: "26A42"
     prerequisites:
       required:
@@ -100,16 +100,16 @@ concepts:
       - lebesgue_integral
       - differential_equations
     formalmath_docs:
-      - "concept/核心概念/16-积分-多理论分析示例-2025年1月.md"
-      - "docs/03-分析学/01-实分析/01-实分析.md"
+      - 'concept/核心概念/16-积分-多理论分析示例-2025年1月.md"
+      - "docs/03-分析学/01-实分析/01-实分析.md'
     difficulty: 3
     importance: 5
     
   series:
     name:
       english: "Series"
-      chinese: "级数"
-    category: "analysis"
+      chinese: '级数"
+    category: "analysis'
     msc_code: "40-XX"
     prerequisites:
       required:
@@ -122,8 +122,8 @@ concepts:
       - fourier_series
       - analytic_functions
     formalmath_docs:
-      - "concept/核心概念/17-级数-多理论分析示例-2025年1月.md"
-      - "docs/03-分析学/01-实分析/01-实分析.md"
+      - 'concept/核心概念/17-级数-多理论分析示例-2025年1月.md"
+      - "docs/03-分析学/01-实分析/01-实分析.md'
     difficulty: 3
     importance: 4
     
@@ -131,8 +131,8 @@ concepts:
   real_numbers:
     name:
       english: "Real Numbers"
-      chinese: "实数"
-    category: "real_analysis"
+      chinese: '实数"
+    category: "real_analysis'
     msc_code: "26A03"
     prerequisites:
       required:
@@ -142,16 +142,16 @@ concepts:
       - limit
       - completeness_axiom
     formalmath_docs:
-      - "docs/03-分析学/01-实分析/01-实分析.md"
+      - 'docs/03-分析学/01-实分析/01-实分析.md"
     difficulty: 1
     importance: 5
     
   completeness_axiom:
     name:
-      english: "Completeness Axiom"
+      english: "Completeness Axiom'
       chinese: "完备性公理"
-    category: "real_analysis"
-    msc_code: "26A03"
+    category: 'real_analysis"
+    msc_code: "26A03'
     prerequisites:
       required:
         - real_numbers
@@ -165,25 +165,25 @@ concepts:
     
   uniform_continuity:
     name:
-      english: "Uniform Continuity"
-      chinese: "一致连续"
+      english: 'Uniform Continuity"
+      chinese: "一致连续'
     category: "real_analysis"
-    msc_code: "26A15"
+    msc_code: '26A15"
     prerequisites:
       required:
         - continuity
     leads_to:
       - compactness
     formalmath_docs:
-      - "docs/03-分析学/01-实分析/01-实分析.md"
+      - "docs/03-分析学/01-实分析/01-实分析.md'
     difficulty: 3
     importance: 3
     
   mean_value_theorem:
     name:
       english: "Mean Value Theorem"
-      chinese: "中值定理"
-    category: "real_analysis"
+      chinese: '中值定理"
+    category: "real_analysis'
     msc_code: "26A24"
     prerequisites:
       required:
@@ -195,16 +195,16 @@ concepts:
       - lhopital_rule
       - taylor_theorem
     formalmath_docs:
-      - "docs/03-分析学/01-实分析/01-实分析.md"
+      - 'docs/03-分析学/01-实分析/01-实分析.md"
     difficulty: 2
     importance: 4
     
   fundamental_theorem_calculus:
     name:
-      english: "Fundamental Theorem of Calculus"
+      english: "Fundamental Theorem of Calculus'
       chinese: "微积分基本定理"
-    category: "real_analysis"
-    msc_code: "26A42"
+    category: 'real_analysis"
+    msc_code: "26A42'
     prerequisites:
       required:
         - derivative
@@ -220,10 +220,10 @@ concepts:
   # ========== 复分析 ==========
   complex_numbers:
     name:
-      english: "Complex Numbers"
-      chinese: "复数"
+      english: 'Complex Numbers"
+      chinese: "复数'
     category: "complex_analysis"
-    msc_code: "30-XX"
+    msc_code: '30-XX"
     prerequisites:
       required:
         - real_numbers
@@ -233,15 +233,15 @@ concepts:
       - complex_functions
       - holomorphic_functions
     formalmath_docs:
-      - "docs/03-分析学/02-复分析/02-复分析.md"
+      - "docs/03-分析学/02-复分析/02-复分析.md'
     difficulty: 2
     importance: 4
     
   holomorphic_functions:
     name:
       english: "Holomorphic Functions"
-      chinese: "全纯函数"
-    category: "complex_analysis"
+      chinese: '全纯函数"
+    category: "complex_analysis'
     msc_code: "30A99"
     prerequisites:
       required:
@@ -252,16 +252,16 @@ concepts:
       - cauchy_integral_theorem
       - analytic_functions
     formalmath_docs:
-      - "docs/03-分析学/02-复分析/02-复分析.md"
+      - 'docs/03-分析学/02-复分析/02-复分析.md"
     difficulty: 3
     importance: 5
     
   cauchy_riemann_equations:
     name:
-      english: "Cauchy-Riemann Equations"
+      english: "Cauchy-Riemann Equations'
       chinese: "柯西-黎曼方程"
-    category: "complex_analysis"
-    msc_code: "30A99"
+    category: 'complex_analysis"
+    msc_code: "30A99'
     prerequisites:
       required:
         - complex_numbers
@@ -275,10 +275,10 @@ concepts:
     
   cauchy_integral_theorem:
     name:
-      english: "Cauchy Integral Theorem"
-      chinese: "柯西积分定理"
+      english: 'Cauchy Integral Theorem"
+      chinese: "柯西积分定理'
     category: "complex_analysis"
-    msc_code: "30E20"
+    msc_code: '30E20"
     prerequisites:
       required:
         - holomorphic_functions
@@ -287,15 +287,15 @@ concepts:
       - cauchy_integral_formula
       - residue_theorem
     formalmath_docs:
-      - "docs/03-分析学/02-复分析/02-复分析.md"
+      - "docs/03-分析学/02-复分析/02-复分析.md'
     difficulty: 4
     importance: 5
     
   cauchy_integral_formula:
     name:
       english: "Cauchy Integral Formula"
-      chinese: "柯西积分公式"
-    category: "complex_analysis"
+      chinese: '柯西积分公式"
+    category: "complex_analysis'
     msc_code: "30E20"
     prerequisites:
       required:
@@ -304,16 +304,16 @@ concepts:
       - liouville_theorem
       - maximum_modulus_principle
     formalmath_docs:
-      - "docs/03-分析学/02-复分析/02-复分析.md"
+      - 'docs/03-分析学/02-复分析/02-复分析.md"
     difficulty: 4
     importance: 5
     
   residue_theorem:
     name:
-      english: "Residue Theorem"
+      english: "Residue Theorem'
       chinese: "留数定理"
-    category: "complex_analysis"
-    msc_code: "30E20"
+    category: 'complex_analysis"
+    msc_code: "30E20'
     prerequisites:
       required:
         - cauchy_integral_theorem
@@ -328,25 +328,25 @@ concepts:
     
   conformal_mapping:
     name:
-      english: "Conformal Mapping"
-      chinese: "共形映射"
+      english: 'Conformal Mapping"
+      chinese: "共形映射'
     category: "complex_analysis"
-    msc_code: "30C35"
+    msc_code: '30C35"
     prerequisites:
       required:
         - holomorphic_functions
     leads_to:
       - riemann_mapping_theorem
     formalmath_docs:
-      - "docs/03-分析学/02-复分析/02-复分析.md"
+      - "docs/03-分析学/02-复分析/02-复分析.md'
     difficulty: 4
     importance: 3
     
   riemann_mapping_theorem:
     name:
       english: "Riemann Mapping Theorem"
-      chinese: "黎曼映射定理"
-    category: "complex_analysis"
+      chinese: '黎曼映射定理"
+    category: "complex_analysis'
     msc_code: "30C35"
     prerequisites:
       required:
@@ -355,17 +355,17 @@ concepts:
     leads_to:
       - boundary_value_problems
     formalmath_docs:
-      - "docs/03-分析学/02-复分析/02-复分析.md"
+      - 'docs/03-分析学/02-复分析/02-复分析.md"
     difficulty: 5
     importance: 4
     
   # ========== 泛函分析 ==========
   normed_space:
     name:
-      english: "Normed Space"
+      english: "Normed Space'
       chinese: "赋范空间"
-    category: "functional_analysis"
-    msc_code: "46Bxx"
+    category: 'functional_analysis"
+    msc_code: "46Bxx'
     prerequisites:
       required:
         - vector_space
@@ -382,10 +382,10 @@ concepts:
     
   banach_space:
     name:
-      english: "Banach Space"
-      chinese: "巴拿赫空间"
+      english: 'Banach Space"
+      chinese: "巴拿赫空间'
     category: "functional_analysis"
-    msc_code: "46Bxx"
+    msc_code: '46Bxx"
     prerequisites:
       required:
         - normed_space
@@ -394,15 +394,15 @@ concepts:
       - dual_space
       - hahn_banach_theorem
     formalmath_docs:
-      - "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+      - "docs/03-分析学/03-泛函分析/03-泛函分析.md'
     difficulty: 4
     importance: 5
     
   inner_product_space:
     name:
       english: "Inner Product Space"
-      chinese: "内积空间"
-    category: "functional_analysis"
+      chinese: '内积空间"
+    category: "functional_analysis'
     msc_code: "46Cxx"
     prerequisites:
       required:
@@ -413,16 +413,16 @@ concepts:
       - hilbert_space
       - orthogonality
     formalmath_docs:
-      - "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+      - 'docs/03-分析学/03-泛函分析/03-泛函分析.md"
     difficulty: 3
     importance: 4
     
   hilbert_space:
     name:
-      english: "Hilbert Space"
+      english: "Hilbert Space'
       chinese: "希尔伯特空间"
-    category: "functional_analysis"
-    msc_code: "46Cxx"
+    category: 'functional_analysis"
+    msc_code: "46Cxx'
     prerequisites:
       required:
         - inner_product_space
@@ -438,10 +438,10 @@ concepts:
     
   bounded_operators:
     name:
-      english: "Bounded Linear Operators"
-      chinese: "有界线性算子"
+      english: 'Bounded Linear Operators"
+      chinese: "有界线性算子'
     category: "functional_analysis"
-    msc_code: "47Bxx"
+    msc_code: '47Bxx"
     prerequisites:
       required:
         - normed_space
@@ -450,15 +450,15 @@ concepts:
       - operator_norm
       - compact_operators
     formalmath_docs:
-      - "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+      - "docs/03-分析学/03-泛函分析/03-泛函分析.md'
     difficulty: 4
     importance: 4
     
   compact_operators:
     name:
       english: "Compact Operators"
-      chinese: "紧算子"
-    category: "functional_analysis"
+      chinese: '紧算子"
+    category: "functional_analysis'
     msc_code: "47B06"
     prerequisites:
       required:
@@ -468,16 +468,16 @@ concepts:
       - fredholm_theory
       - spectral_theory_compact
     formalmath_docs:
-      - "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+      - 'docs/03-分析学/03-泛函分析/03-泛函分析.md"
     difficulty: 5
     importance: 3
     
   spectral_theory:
     name:
-      english: "Spectral Theory"
+      english: "Spectral Theory'
       chinese: "谱理论"
-    category: "functional_analysis"
-    msc_code: "47A10"
+    category: 'functional_analysis"
+    msc_code: "47A10'
     prerequisites:
       required:
         - bounded_operators
@@ -492,10 +492,10 @@ concepts:
     
   hahn_banach_theorem:
     name:
-      english: "Hahn-Banach Theorem"
-      chinese: "Hahn-Banach定理"
+      english: 'Hahn-Banach Theorem"
+      chinese: "Hahn-Banach定理'
     category: "functional_analysis"
-    msc_code: "46A22"
+    msc_code: '46A22"
     prerequisites:
       required:
         - normed_space
@@ -504,15 +504,15 @@ concepts:
       - dual_space
       - weak_topology
     formalmath_docs:
-      - "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+      - "docs/03-分析学/03-泛函分析/03-泛函分析.md'
     difficulty: 4
     importance: 5
     
   open_mapping_theorem:
     name:
       english: "Open Mapping Theorem"
-      chinese: "开映射定理"
-    category: "functional_analysis"
+      chinese: '开映射定理"
+    category: "functional_analysis'
     msc_code: "46A30"
     prerequisites:
       required:
@@ -522,16 +522,16 @@ concepts:
     leads_to:
       - inverse_mapping_theorem
     formalmath_docs:
-      - "docs/03-分析学/03-泛函分析/03-泛函分析.md"
+      - 'docs/03-分析学/03-泛函分析/03-泛函分析.md"
     difficulty: 5
     importance: 4
     
   closed_graph_theorem:
     name:
-      english: "Closed Graph Theorem"
+      english: "Closed Graph Theorem'
       chinese: "闭图像定理"
-    category: "functional_analysis"
-    msc_code: "46A30"
+    category: 'functional_analysis"
+    msc_code: "46A30'
     prerequisites:
       required:
         - banach_space
@@ -546,10 +546,10 @@ concepts:
   # ========== 测度论 ==========
   measure_theory:
     name:
-      english: "Measure Theory"
-      chinese: "测度论"
+      english: 'Measure Theory"
+      chinese: "测度论'
     category: "measure_theory"
-    msc_code: "28-XX"
+    msc_code: '28-XX"
     prerequisites:
       required:
         - real_analysis
@@ -558,17 +558,17 @@ concepts:
       - probability_theory
       - functional_analysis
     formalmath_docs:
-      - "concept/03-主题概念梳理/03-分析学概念.md"
+      - "concept/03-主题概念梳理/03-分析学概念.md'
     difficulty: 4
     importance: 5
     status: "partial"
     
   sigma_algebra:
     name:
-      english: "Sigma-Algebra"
-      chinese: "σ-代数"
+      english: 'Sigma-Algebra"
+      chinese: "σ-代数'
     category: "measure_theory"
-    msc_code: "28A05"
+    msc_code: '28A05"
     prerequisites:
       required:
         - set_theory
@@ -578,13 +578,13 @@ concepts:
     formalmath_docs: []
     difficulty: 3
     importance: 4
-    status: "missing"
+    status: "missing'
     
   lebesgue_measure:
     name:
       english: "Lebesgue Measure"
-      chinese: "Lebesgue测度"
-    category: "measure_theory"
+      chinese: 'Lebesgue测度"
+    category: "measure_theory'
     msc_code: "28A12"
     prerequisites:
       required:
@@ -594,16 +594,16 @@ concepts:
       - measurable_functions
       - lebesgue_integral
     formalmath_docs:
-      - "concept/03-主题概念梳理/03-分析学概念.md"
+      - 'concept/03-主题概念梳理/03-分析学概念.md"
     difficulty: 4
     importance: 5
     
   lebesgue_integral:
     name:
-      english: "Lebesgue Integral"
+      english: "Lebesgue Integral'
       chinese: "Lebesgue积分"
-    category: "measure_theory"
-    msc_code: "28A25"
+    category: 'measure_theory"
+    msc_code: "28A25'
     prerequisites:
       required:
         - lebesgue_measure
@@ -618,10 +618,10 @@ concepts:
     
   convergence_theorems:
     name:
-      english: "Convergence Theorems"
-      chinese: "收敛定理"
+      english: 'Convergence Theorems"
+      chinese: "收敛定理'
     category: "measure_theory"
-    msc_code: "28A20"
+    msc_code: '28A20"
     prerequisites:
       required:
         - lebesgue_integral
@@ -631,14 +631,14 @@ concepts:
     formalmath_docs: []
     difficulty: 4
     importance: 5
-    status: "missing"
+    status: "missing'
     
   # ========== 调和分析 ==========
   fourier_series:
     name:
       english: "Fourier Series"
-      chinese: "傅里叶级数"
-    category: "harmonic_analysis"
+      chinese: '傅里叶级数"
+    category: "harmonic_analysis'
     msc_code: "42A16"
     prerequisites:
       required:
@@ -650,16 +650,16 @@ concepts:
       - fourier_transform
       - harmonic_functions
     formalmath_docs:
-      - "docs/03-分析学/04-调和分析/04-调和分析.md"
+      - 'docs/03-分析学/04-调和分析/04-调和分析.md"
     difficulty: 3
     importance: 5
     
   fourier_transform:
     name:
-      english: "Fourier Transform"
+      english: "Fourier Transform'
       chinese: "傅里叶变换"
-    category: "harmonic_analysis"
-    msc_code: "42A38"
+    category: 'harmonic_analysis"
+    msc_code: "42A38'
     prerequisites:
       required:
         - fourier_series
@@ -676,10 +676,10 @@ concepts:
     
   convolution:
     name:
-      english: "Convolution"
-      chinese: "卷积"
+      english: 'Convolution"
+      chinese: "卷积'
     category: "harmonic_analysis"
-    msc_code: "42A85"
+    msc_code: '42A85"
     prerequisites:
       required:
         - fourier_transform
@@ -687,15 +687,15 @@ concepts:
     leads_to:
       - signal_processing
     formalmath_docs:
-      - "docs/03-分析学/04-调和分析/04-调和分析.md"
+      - "docs/03-分析学/04-调和分析/04-调和分析.md'
     difficulty: 3
     importance: 4
     
   wavelet_analysis:
     name:
       english: "Wavelet Analysis"
-      chinese: "小波分析"
-    category: "harmonic_analysis"
+      chinese: '小波分析"
+    category: "harmonic_analysis'
     msc_code: "42C40"
     prerequisites:
       required:
@@ -704,16 +704,16 @@ concepts:
     leads_to:
       - multiresolution_analysis
     formalmath_docs:
-      - "docs/03-分析学/04-调和分析/04-调和分析.md"
+      - 'docs/03-分析学/04-调和分析/04-调和分析.md"
     difficulty: 5
     importance: 3
     
   harmonic_functions:
     name:
-      english: "Harmonic Functions"
+      english: "Harmonic Functions'
       chinese: "调和函数"
-    category: "harmonic_analysis"
-    msc_code: "31A05"
+    category: 'harmonic_analysis"
+    msc_code: "31A05'
     prerequisites:
       required:
         - partial_differential_equations
@@ -728,10 +728,10 @@ concepts:
   # ========== 微分方程 ==========
   ordinary_differential_equations:
     name:
-      english: "Ordinary Differential Equations"
-      chinese: "常微分方程"
+      english: 'Ordinary Differential Equations"
+      chinese: "常微分方程'
     category: "differential_equations"
-    msc_code: "34-XX"
+    msc_code: '34-XX"
     prerequisites:
       required:
         - derivative
@@ -742,17 +742,17 @@ concepts:
       - existence_uniqueness
       - stability_theory
     formalmath_docs:
-      - "concept/03-主题概念梳理/03-分析学概念.md"
+      - "concept/03-主题概念梳理/03-分析学概念.md'
     difficulty: 3
     importance: 5
     status: "partial"
     
   partial_differential_equations:
     name:
-      english: "Partial Differential Equations"
-      chinese: "偏微分方程"
+      english: 'Partial Differential Equations"
+      chinese: "偏微分方程'
     category: "differential_equations"
-    msc_code: "35-XX"
+    msc_code: '35-XX"
     prerequisites:
       required:
         - multivariable_calculus
@@ -765,17 +765,17 @@ concepts:
       - parabolic_equations
       - hyperbolic_equations
     formalmath_docs:
-      - "concept/03-主题概念梳理/03-分析学概念.md"
+      - "concept/03-主题概念梳理/03-分析学概念.md'
     difficulty: 5
     importance: 5
     status: "partial"
     
   existence_uniqueness:
     name:
-      english: "Existence and Uniqueness Theorem"
-      chinese: "存在唯一性定理"
+      english: 'Existence and Uniqueness Theorem"
+      chinese: "存在唯一性定理'
     category: "differential_equations"
-    msc_code: "34A12"
+    msc_code: '34A12"
     prerequisites:
       required:
         - ordinary_differential_equations
@@ -785,13 +785,13 @@ concepts:
     formalmath_docs: []
     difficulty: 4
     importance: 5
-    status: "missing"
+    status: "missing'
     
   sobolev_spaces:
     name:
       english: "Sobolev Spaces"
-      chinese: "Sobolev空间"
-    category: "differential_equations"
+      chinese: 'Sobolev空间"
+    category: "differential_equations'
     msc_code: "46E35"
     prerequisites:
       required:
@@ -811,8 +811,8 @@ concepts:
 learning_paths:
   
   basic_analysis:
-    name: "基础分析学"
-    description: "分析学基础概念学习路径"
+    name: '基础分析学"
+    description: "分析学基础概念学习路径'
     sequence:
       - real_numbers
       - limit
@@ -823,18 +823,18 @@ learning_paths:
     estimated_time: "3-4个月"
     
   real_analysis_advanced:
-    name: "实分析进阶"
-    description: "实分析高级主题"
+    name: '实分析进阶"
+    description: "实分析高级主题'
     sequence:
       - fundamental_theorem_calculus
       - uniform_continuity
       - measure_theory
       - lebesgue_integral
     prerequisites: ["basic_analysis"]
-    estimated_time: "2-3个月"
+    estimated_time: '2-3个月"
     
   complex_analysis_path:
-    name: "复分析"
+    name: "复分析'
     description: "复分析学习路径"
     sequence:
       - complex_numbers
@@ -843,12 +843,12 @@ learning_paths:
       - cauchy_integral_formula
       - residue_theorem
       - conformal_mapping
-    prerequisites: ["basic_analysis"]
-    estimated_time: "2-3个月"
+    prerequisites: ['basic_analysis"]
+    estimated_time: "2-3个月'
     
   functional_analysis_path:
     name: "泛函分析"
-    description: "泛函分析学习路径"
+    description: '泛函分析学习路径"
     sequence:
       - normed_space
       - banach_space
@@ -856,18 +856,18 @@ learning_paths:
       - hilbert_space
       - bounded_operators
       - spectral_theory
-    prerequisites: ["real_analysis_advanced", "linear_algebra"]
-    estimated_time: "3-4个月"
+    prerequisites: ["real_analysis_advanced', "linear_algebra"]
+    estimated_time: '3-4个月"
     
   harmonic_analysis_path:
-    name: "调和分析"
+    name: "调和分析'
     description: "调和分析学习路径"
     sequence:
       - fourier_series
       - fourier_transform
       - convolution
       - wavelet_analysis
-    prerequisites: ["real_analysis_advanced", "functional_analysis"]
+    prerequisites: ['real_analysis_advanced", "functional_analysis']
     estimated_time: "2-3个月"
 
 # ============================================

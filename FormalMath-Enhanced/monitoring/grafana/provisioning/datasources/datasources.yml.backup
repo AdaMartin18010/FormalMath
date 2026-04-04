@@ -1,0 +1,89 @@
+# Grafana 数据源配置
+# 自动配置 Prometheus 和 Elasticsearch 数据源
+
+apiVersion: 1
+
+datasources:
+  # Prometheus 数据源
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true
+    editable: false
+    jsonData:
+      httpMethod: POST
+      manageAlerts: true
+      alertmanagerUid: alertmanager
+      prometheusType: Prometheus
+      prometheusVersion: 2.45.0
+      cacheLevel: 'High'
+      incrementalQuerying: true
+      incrementalQueryOverlapWindow: 10m
+
+  # Elasticsearch 日志数据源
+  - name: Elasticsearch
+    type: elasticsearch
+    access: proxy
+    url: http://elasticsearch:9200
+    editable: false
+    jsonData:
+      index: "formalmath-logs-*"
+      timeField: "@timestamp"
+      esVersion: "8.0.0"
+      maxConcurrentShardRequests: 5
+      logMessageField: message
+      logLevelField: level
+
+  # Loki 日志数据源（如果使用 Loki）
+  - name: Loki
+    type: loki
+    access: proxy
+    url: http://loki:3100
+    editable: false
+    jsonData:
+      maxLines: 1000
+      derivedFields:
+        - name: TraceID
+          matcherRegex: '"trace_id":"(\w+)"'
+          url: '$${__value.raw}'
+          datasourceUid: tempo
+
+  # Jaeger 链路追踪（可选）
+  - name: Jaeger
+    type: jaeger
+    access: proxy
+    url: http://jaeger:16686
+    editable: false
+    uid: jaeger
+    jsonData:
+      tracesToLogs:
+        datasourceUid: loki
+        tags: ['service', 'pod', 'namespace']
+        mappedTags: [{ key: 'service', value: 'service_name' }]
+        mapTagNamesEnabled: false
+        spanStartTimeShift: '1h'
+        spanEndTimeShift: '1h'
+        filterByTraceID: false
+        filterBySpanID: false
+
+  # Tempo 链路追踪（可选）
+  - name: Tempo
+    type: tempo
+    access: proxy
+    url: http://tempo:3200
+    editable: false
+    uid: tempo
+    jsonData:
+      tracesToLogs:
+        datasourceUid: loki
+
+  # Alertmanager 数据源
+  - name: Alertmanager
+    type: alertmanager
+    access: proxy
+    url: http://alertmanager:9093
+    editable: false
+    uid: alertmanager
+    jsonData:
+      implementation: prometheus

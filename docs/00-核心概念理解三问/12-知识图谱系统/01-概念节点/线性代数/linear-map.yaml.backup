@@ -1,0 +1,171 @@
+# linear-map.yaml - 线性映射概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "linear-map"
+  name:
+    zh: "线性映射"
+    en: "Linear Map"
+  msc_codes: ["15A04"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 V, W 是域 F 上的向量空间。
+      映射 T: V → W 是线性映射，若满足：
+      1. T(u + v) = T(u) + T(v)（可加性）
+      2. T(αv) = αT(v)（齐次性）
+      
+      等价地：T(αu + βv) = αT(u) + βT(v)
+      
+      【矩阵表示】
+      若 dim(V) = n, dim(W) = m，选定基后
+      T 对应 m×n 矩阵 A: T(v) = Av
+      
+    informal: |
+      线性映射是"保持线性结构"的变换。
+      
+      想象弹簧：
+      - 拉两倍长，力也变两倍
+      - 这就是线性关系
+      
+      线性映射把向量的线性组合
+      变成像的线性组合。
+      
+    lean: |
+      -- Mathlib定义
+      structure LinearMap (R : Type*) (M : Type*) (M₂ : Type*) 
+        [Semiring R] [AddCommMonoid M] [AddCommMonoid M₂] [Module R M] [Module R M₂] where
+        toFun : M → M₂
+        map_add' : ∀ x y, toFun (x + y) = toFun x + toFun y
+        map_smul' : ∀ (c : R) x, toFun (c • x) = c • toFun x
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】几何变换
+      - 旋转、反射、投影、伸缩
+      - 保持直线为直线
+      - 保持原点不动
+      - 保持平行性
+      
+    algebraic: |
+      【代数直觉】保结构映射
+      - 向量空间的态射
+      - 用矩阵表示
+      - 核和像是子空间
+      
+    categorical: |
+      【范畴直觉】
+      - 线性映射 = Vect_F 中的态射
+      - Hom(V, W) 是向量空间
+      - 函子保持这种结构
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "矩阵表示"
+      content: |
+        线性映射与矩阵：
+        
+        T: ℝⁿ → ℝᵐ ←→ A ∈ M_{m×n}(ℝ)
+        
+        T(x) = Ax = [a₁₁ ... a₁ₙ] [x₁]
+                    [  ⋮      ⋮ ] [ ⋮]
+                    [aₘ₁ ... aₘₙ] [xₙ]
+                    
+    - type: "核与像"
+      content: |
+        ker(T) = {v : T(v) = 0} ⊆ V
+        im(T) = {T(v) : v ∈ V} ⊆ W
+        
+        维数关系：
+        dim(ker T) + dim(im T) = dim(V)
+        
+  # ===== 例子层 =====
+  examples:
+    geometric:
+      - name: "旋转 R_θ: ℝ² → ℝ²"
+        matrix: "[[cos θ, -sin θ], [sin θ, cos θ]]"
+        property: "正交变换"
+        
+      - name: "投影到x轴"
+        matrix: "[[1, 0], [0, 0]]"
+        kernel: "y轴"
+        image: "x轴"
+        
+      - name: "反射关于x轴"
+        matrix: "[[1, 0], [0, -1]]"
+        property: "正交，det = -1"
+        
+    algebraic:
+      - name: "微分算子 D: Pₙ → Pₙ₋₁"
+        formula: "D(p) = p'"
+        kernel: "常数多项式"
+        
+      - name: "积分算子"
+        formula: "∫₀ˣ f(t)dt"
+        domain: "C([0,1])"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "vector-space"
+        description: "定义域和陪域"
+      - id: "function"
+        description: "是特殊函数"
+        
+    generalizes: []
+        
+    specialized_by:
+      - id: "isomorphism"
+        description: "同构（可逆）"
+      - id: "endomorphism"
+        description: "自同态"
+      - id: "projection"
+        description: "投影"
+        
+    related_to:
+      - id: "matrix"
+        description: "矩阵表示"
+      - id: "kernel"
+        description: "零空间"
+      - id: "eigenvalue"
+        description: "特征值问题"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "rank-nullity"
+      statement: "dim(ker T) + rank(T) = dim(V)"
+      importance: 5
+      
+    - id: "first-isomorphism"
+      statement: "V/ker(T) ≅ im(T)"
+      importance: 5
+      
+    - id: "representation-matrix"
+      statement: "线性映射 ↔ 矩阵（选定基后）"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      - "vector-space"
+      - "function"
+      
+    leads_to:
+      - "eigenvalue"
+      - "spectral-theory"
+      - "functional-analysis"
+      
+    history:
+      first_appearance: "19世纪"
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Algebra.Module.LinearMap"
+    name: "LinearMap"
+    coverage: "complete"

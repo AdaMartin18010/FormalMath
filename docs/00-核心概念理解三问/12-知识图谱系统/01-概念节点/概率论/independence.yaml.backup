@@ -1,0 +1,200 @@
+# independence.yaml - 独立性概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-07
+
+concept:
+  id: "independence"
+  name:
+    zh: "独立性"
+    en: "Independence"
+  msc_codes: ["60A05"]
+
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      事件独立性：
+      事件 A 和 B 独立，如果：
+      P(A ∩ B) = P(A) P(B)
+
+      等价地：
+      P(A|B) = P(A)  （若 P(B) > 0）
+
+      随机变量独立性：
+      随机变量 X 和 Y 独立，如果：
+      P(X ∈ A, Y ∈ B) = P(X ∈ A) P(Y ∈ B)
+
+      对所有可测集 A, B 成立。
+
+      等价地：
+      F_{X,Y}(x,y) = F_X(x) F_Y(y)
+
+    informal: |
+      独立性意味着"一个事件的发生不影响另一个事件的概率"。
+
+      例子：掷两枚硬币
+      - A = "第一枚正面"
+      - B = "第二枚正面"
+      - P(A∩B) = 1/4 = (1/2)(1/2) = P(A)P(B)
+      - A和B独立
+
+      直观：第一枚的结果不影响第二枚。
+
+    lean: |
+      -- Mathlib定义
+      def IndepSet {Ω : Type*} [MeasurableSpace Ω]
+        (A B : Set Ω) (P : Measure Ω) : Prop :=
+        P (A ∩ B) = P A * P B
+
+      def IndepFun {Ω : Type*} [MeasurableSpace Ω]
+        (X Y : Ω → ℝ) (P : Measure Ω) : Prop :=
+        ∀ s t, MeasurableSet s → MeasurableSet t →
+        P ({ω | X ω ∈ s} ∩ {ω | Y ω ∈ t}) =
+        P {ω | X ω ∈ s} * P {ω | Y ω ∈ t}
+
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】正交性
+      - 独立事件 = "不重叠"的事件
+      - 在概率空间中，独立 = "正交"
+      - 联合概率 = 边际概率的乘积
+      - 独立性 = "无交互"
+
+    algebraic: |
+      【代数直觉】乘积结构
+      - 独立性 = "概率的乘积分解"
+      - P(A∩B) = P(A) P(B)
+      - 联合分布 = 边际分布的乘积
+      - 是"可分离性"
+
+    physical: |
+      【物理直觉】无相互作用
+      - 独立系统 = "无相互作用"
+      - 在统计力学中，独立粒子系统
+      - 在量子力学中，独立 = "可分离态"
+
+    categorical: |
+      【范畴直觉】乘积
+      - 独立性 = "乘积结构"
+      - 独立随机变量的联合分布是乘积测度
+      - 是"张量积"
+
+  # ===== 表征层 =====
+  representations:
+    - type: "定义形式"
+      content: |
+        P(A ∩ B) = P(A) P(B)
+
+    - type: "条件概率形式"
+      content: |
+        P(A|B) = P(A)
+
+    - type: "分布函数形式"
+      content: |
+        F_{X,Y}(x,y) = F_X(x) F_Y(y)
+
+    - type: "密度函数形式"
+      content: |
+        f_{X,Y}(x,y) = f_X(x) f_Y(y)
+
+    - type: "特征函数形式"
+      content: |
+        φ_{X,Y}(s,t) = φ_X(s) φ_Y(t)
+
+  # ===== 例子层 =====
+  examples:
+    events:
+      - name: "掷硬币"
+        problem: "连续掷两枚硬币"
+        solution: "每次结果独立"
+
+      - name: "抽牌"
+        problem: "有放回抽牌"
+        solution: "每次抽牌独立"
+
+      - name: "无放回抽牌"
+        problem: "无放回抽牌"
+        solution: "不独立（条件概率变化）"
+
+    random_variables:
+      - name: "独立同分布"
+        problem: "X₁, X₂, ..., X_n 独立同分布"
+        solution: "P(X₁∈A₁, ..., X_n∈A_n) = Π_i P(X_i∈A_i)"
+
+      - name: "独立随机变量和"
+        problem: "X和Y独立，求Var(X+Y)"
+        solution: "Var(X+Y) = Var(X) + Var(Y)"
+
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "probability-space"
+        description: "定义在概率空间上"
+      - id: "event"
+        description: "涉及事件或随机变量"
+
+    generalizes:
+      - id: "pairwise-independence"
+        description: "两两独立"
+      - id: "mutual-independence"
+        description: "相互独立"
+
+    specialized_by:
+      - id: "conditional-independence"
+        description: "条件独立性"
+      - id: "exchangeability"
+        description: "可交换性"
+
+    related_to:
+      - id: "conditional-probability"
+        description: "独立时 P(A|B) = P(A)"
+      - id: "covariance"
+        description: "独立时 Cov(X,Y) = 0"
+      - id: "expectation"
+        description: "独立时 E[XY] = E[X]E[Y]"
+      - id: "law-of-large-numbers"
+        description: "大数定律需要独立性"
+
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "independence-criteria"
+      statement: "多个等价条件判断独立性"
+      importance: 5
+
+    - id: "independent-sum-variance"
+      statement: "独立时 Var(X+Y) = Var(X) + Var(Y)"
+      importance: 5
+
+    - id: "independent-product-expectation"
+      statement: "独立时 E[XY] = E[X]E[Y]"
+      importance: 5
+
+    - id: "independent-convolution"
+      statement: "独立随机变量和的分布是卷积"
+      importance: 4
+
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+
+    prerequisites:
+      - "probability-space"
+      - "conditional-probability"
+
+    leads_to:
+      - "law-of-large-numbers"
+      - "central-limit-theorem"
+      - "stochastic-process"
+      - "statistical-inference"
+
+    history:
+      first_appearance: "17-18世纪"
+      context: "概率论早期发展"
+      key_figures: ["Pascal", "Fermat"]
+
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Probability.Independence.Basic"
+    name: "IndepSet", "IndepFun"
+    coverage: "complete"

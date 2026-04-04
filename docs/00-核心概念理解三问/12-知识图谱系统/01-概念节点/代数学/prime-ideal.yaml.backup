@@ -1,0 +1,178 @@
+# prime-ideal.yaml - 素理想概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-07
+
+concept:
+  id: "prime-ideal"
+  name:
+    zh: "素理想"
+    en: "Prime Ideal"
+  msc_codes: ["13A15"]
+
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      设 R 是交换环，理想 p ⊊ R 是素理想，如果：
+
+      ab ∈ p ⟹ a ∈ p 或 b ∈ p
+
+      等价条件：
+      1. R/p 是整环
+      2. p 是素理想
+      3. 若 I, J 是理想，IJ ⊆ p ⟹ I ⊆ p 或 J ⊆ p
+
+    informal: |
+      素理想是"素数的理想化"。
+
+      例子：整数环 ℤ
+      - (p) = pℤ 是素理想（p 是素数）
+      - (6) = 6ℤ 不是素理想（2·3 ∈ (6)，但 2, 3 ∉ (6)）
+
+      直观：素理想 = "不可分解"的理想。
+
+    lean: |
+      -- Mathlib定义
+      class Ideal.IsPrime (I : Ideal R) : Prop where
+        ne_top : I ≠ ⊤
+        mem_or_mem : ∀ {x y : R}, x * y ∈ I → x ∈ I ∨ y ∈ I
+
+      -- 等价条件
+      theorem isPrime_iff_quotient_isIntegralDomain (I : Ideal R) :
+        I.IsPrime ↔ IsIntegralDomain (R ⧸ I) :=
+        by simp [Ideal.IsPrime, IsIntegralDomain]
+
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】不可约子集
+      - 素理想对应"不可约子集"
+      - Spec(R) = 素理想集合 = "几何空间"
+      - 素理想 = "点"或"不可约子集"
+
+    algebraic: |
+      【代数直觉】素数的推广
+      - 素理想推广了素数的概念
+      - 在 ℤ 中：素理想 = 素数生成的理想
+      - 素理想 = "不可分解"的理想
+
+    physical: |
+      【物理直觉】基本单元
+      - 素理想 = "基本单元"
+      - 对应物理中的"基本粒子"
+      - 不可进一步分解
+
+    categorical: |
+      【范畴直觉】素对象
+      - 素理想是"素对象"
+      - 在理想范畴中，素理想是特殊的
+      - 对应范畴论中的"素对象"
+
+  # ===== 表征层 =====
+  representations:
+    - type: "定义形式"
+      content: |
+        ab ∈ p ⟹ a ∈ p 或 b ∈ p
+
+    - type: "商环形式"
+      content: |
+        R/p 是整环
+
+    - type: "理想形式"
+      content: |
+        IJ ⊆ p ⟹ I ⊆ p 或 J ⊆ p
+
+  # ===== 例子层 =====
+  examples:
+    number_rings:
+      - name: "整数环"
+        ring: "ℤ"
+        prime: "(p) = pℤ（p 是素数）"
+        quotient: "ℤ/(p) ≅ F_p（有限域）"
+
+      - name: "多项式环"
+        ring: "k[x]"
+        prime: "(x-a)（a ∈ k）"
+        quotient: "k[x]/(x-a) ≅ k"
+
+    polynomial_rings:
+      - name: "二元多项式环"
+        ring: "k[x,y]"
+        prime: "(x), (x,y), (x²+y²-1)"
+        quotient: "k[x,y]/(x) ≅ k[y]"
+
+      - name: "非素理想例子"
+        ring: "k[x,y]"
+        non_prime: "(xy)"
+        reason: "xy ∈ (xy)，但 x, y ∉ (xy)"
+
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "ring"
+        description: "定义在交换环上"
+      - id: "ideal"
+        description: "素理想是特殊的理想"
+
+    generalizes:
+      - id: "prime-number"
+        description: "素数对应素理想"
+
+    specialized_by:
+      - id: "maximal-ideal"
+        description: "极大理想是素理想"
+      - id: "minimal-prime"
+        description: "极小素理想"
+
+    related_to:
+      - id: "maximal-ideal"
+        description: "极大理想 ⟹ 素理想"
+      - id: "localization"
+        description: "在素理想处局部化"
+      - id: "spec"
+        description: "素理想形成素理想谱"
+      - id: "integral-domain"
+        description: "R/p 是整环"
+
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "prime-ideal-characterization"
+      statement: "多个等价条件判断素理想"
+      importance: 5
+
+    - id: "maximal-implies-prime"
+      statement: "极大理想是素理想"
+      importance: 4
+
+    - id: "prime-ideal-correspondence"
+      statement: "素理想在局部化下对应"
+      importance: 5
+
+    - id: "prime-ideal-decomposition"
+      statement: "根理想是素理想的交"
+      importance: 5
+
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+
+    prerequisites:
+      - "ring"
+      - "ideal"
+
+    leads_to:
+      - "maximal-ideal"
+      - "spec"
+      - "localization"
+      - "scheme"
+
+    history:
+      first_appearance: "1871"
+      context: "Dedekind的理想理论"
+      key_figures: ["Dedekind", "Noether"]
+
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.RingTheory.Ideal.Operations"
+    name: "Ideal.IsPrime"
+    coverage: "complete"

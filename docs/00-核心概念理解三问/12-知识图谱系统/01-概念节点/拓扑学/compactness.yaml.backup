@@ -1,0 +1,258 @@
+# compactness.yaml - 紧致性概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-01
+
+concept:
+  id: "compactness"
+  name:
+    zh: "紧致性"
+    en: "Compactness"
+  msc_codes: ["54D30"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      【开覆盖定义】
+      拓扑空间 X 是紧致的，当且仅当：
+      X 的每个开覆盖都有有限子覆盖。
+      
+      即：若 {Uα}α∈I 满足 X = ⋃α Uα（每个Uα开），
+      则存在有限集 F ⊆ I 使得 X = ⋃α∈F Uα
+      
+      【等价刻画（Hausdorff空间）】
+      - 有限交性质：闭集族若两两有交，则全交非空
+      - 序列紧：每个序列有收敛子列
+      - 网紧：每个网有收敛子网
+      
+    informal: |
+      紧致空间是"有限感"的空间。
+      
+      紧致 = "像有限集一样好"：
+      - 有限集的每个覆盖显然有有限子覆盖
+      - 紧致空间推广了这一性质到无限集
+      
+      直觉：紧致空间"不会跑到无穷远"
+      
+    lean: |
+      -- Mathlib定义
+      def IsCompact {X : Type*} [TopologicalSpace X] (s : Set X) : Prop :=
+        ∀ {ι : Type*} {U : ι → Set X}, (∀ i, IsOpen (U i)) → 
+          s ⊆ ⋃ i, U i → ∃ t : Finset ι, s ⊆ ⋃ i ∈ t, U i
+          
+      class CompactSpace (X : Type*) [TopologicalSpace X] : Prop where
+        isCompact_univ : IsCompact (univ : Set X)
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】有界且闭
+      - ℝⁿ中：紧致 ⟺ 有界且闭（Heine-Borel）
+      - 紧致集"不会逃到无穷"
+      - 闭区间[a,b]是紧致的典型例子
+      
+    algebraic: |
+      【代数直觉】有限性的推广
+      - 紧致空间上的连续函数有界
+      - 紧致空间的连续像是紧致的
+      - 很多"有限世界"的结论在紧致世界成立
+      
+    physical: |
+      【物理直觉】有限能量系统
+      - 紧致相空间 → 系统有界
+      - 量子力学：紧致空间上的算子有离散谱
+      
+    categorical: |
+      【范畴直觉】紧对象
+      - 紧致空间是Top范畴中的"紧对象"
+      - 函子Hom(K,-)保持滤过余极限
+      - 这是紧致性的抽象刻画
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "有限子覆盖图示"
+      content: |
+        开覆盖与有限子覆盖：
+        
+        原覆盖（无限）：
+        ┌─────────────────────────┐
+        │ U₁∪U₂∪U₃∪U₄∪...        │
+        │  ╭──╮╭──╮╭──╮╭──╮      │
+        │  │  ││  ││  ││  │ ...  │
+        │  ╰──╯╰──╯╰──╯╰──╯      │
+        └─────────────────────────┘
+        
+        有限子覆盖：
+        ┌─────────────────────────┐
+        │ U₂ ∪ U₅ ∪ U₇           │
+        │   ╭────╮╭────╮╭────╮   │
+        │   │    ││    ││    │   │
+        │   ╰────╯╰────╯╰────╯   │
+        └─────────────────────────┘
+        
+    - type: "等价条件图谱"
+      content: |
+        紧致性等价条件（度量空间）：
+        
+                    开覆盖有限子覆盖
+                          ↕
+        完备+全有界 ← 序列紧 → 有界闭集(ℝⁿ)
+                          ↕
+                    有限交性质
+                    
+    - type: "保持性质图示"
+      content: |
+        紧致性的保持：
+        
+        紧致空间 K
+            │
+            │ 连续映射 f
+            ↓
+        紧致空间 f(K)
+        
+        紧致空间的闭子集紧致
+        紧致空间的乘积紧致(Tychonoff)
+        
+  # ===== 例子层 =====
+  examples:
+    compact:
+      - name: "闭区间 [a,b]"
+        description: "ℝ中的标准紧集"
+        properties: ["连通", "度量紧"]
+        
+      - name: "闭球 B̄(0,r) ⊂ ℝⁿ"
+        description: "高维紧集"
+        properties: ["凸", "有界闭"]
+        
+      - name: "圆 S¹"
+        description: "一维球面"
+        properties: ["紧致流形", "连通"]
+        
+      - name: "球面 Sⁿ"
+        description: "n维球面"
+        properties: ["紧致流形", "单连通(n≥2)"]
+        
+      - name: "环面 T²"
+        description: "圆的乘积"
+        properties: ["紧致流形", "非单连通"]
+        
+      - name: "有限集（离散拓扑）"
+        description: "最简单的紧集"
+        properties: ["离散", "有限"]
+        
+    non_compact:
+      - name: "开区间 (0,1)"
+        description: "有界但不闭"
+        reason: "覆盖{(1/n, 1)}无有限子覆盖"
+        
+      - name: "实数 ℝ"
+        description: "闭但无界"
+        reason: "覆盖{(-n, n)}无有限子覆盖"
+        
+      - name: "无限维单位球"
+        description: "ℓ²中的单位球"
+        reason: "非序列紧：标准基无收敛子列"
+        
+    special:
+      - name: "Stone-Čech紧化 βX"
+        description: "X的最大紧化"
+        properties: ["紧", "包含X稠密"]
+        
+      - name: "一点紧化 X ∪ {∞}"
+        description: "添加无穷远点"
+        properties: ["紧", "ℝⁿ的一点紧化是球面"]
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "topological-space"
+        description: "紧致性是拓扑性质"
+      - id: "open-cover"
+        description: "定义使用开覆盖"
+        
+    generalizes: []
+        
+    specialized_by:
+      - id: "sequential-compactness"
+        description: "序列紧（度量空间等价）"
+      - id: "countable-compactness"
+        description: "可数紧"
+      - id: "local-compactness"
+        description: "局部紧"
+      - id: "paracompactness"
+        description: "仿紧"
+        
+    related_to:
+      - id: "closed-set"
+        description: "紧Hausdorff空间中紧 ⟺ 闭"
+      - id: "bounded"
+        description: "ℝⁿ中紧 ⟺ 有界闭"
+      - id: "continuous-function"
+        description: "紧集上连续函数有界达到最值"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "heine-borel"
+      statement: "ℝⁿ中紧 ⟺ 有界闭"
+      importance: 5
+      
+    - id: "extreme-value-theorem"
+      statement: "紧集上连续实函数达到最大最小值"
+      importance: 5
+      
+    - id: "tychonoff-theorem"
+      statement: "紧空间的任意乘积是紧的"
+      importance: 5
+      
+    - id: "heine-cantor"
+      statement: "紧度量空间上连续函数一致连续"
+      importance: 4
+      
+    - id: "compact-hausdorff-normal"
+      statement: "紧Hausdorff空间是正规的"
+      importance: 4
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 3
+    importance: 5
+    
+    prerequisites:
+      - "topological-space"
+      - "open-set"
+      - "continuity"
+      
+    corequisites:
+      - "connectedness"
+      - "separation-axioms"
+      
+    leads_to:
+      - "compactification"
+      - "functional-analysis"
+      - "algebraic-topology"
+      
+    history:
+      first_appearance: 1870s
+      context: "Heine-Borel定理（ℝ中）"
+      generalization: "Alexandroff-Urysohn的一般定义"
+      
+    key_figures:
+      - id: "heine"
+        contribution: "ℝ中的紧性"
+      - id: "borel"
+        contribution: "Heine-Borel定理"
+      - id: "tychonoff"
+        contribution: "乘积定理"
+      - id: "alexandroff"
+        contribution: "一般拓扑中的紧性"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.Topology.Compactness.Compact"
+    name: "IsCompact"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactness/Compact.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "CompactSpace"
+      - "LocallyCompactSpace"
+      - "IsCompact.finite_subcover"

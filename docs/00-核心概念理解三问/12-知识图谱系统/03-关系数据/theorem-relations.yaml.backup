@@ -1,0 +1,346 @@
+# theorem-relations.yaml - 核心定理依赖关系数据
+# FormalMath Knowledge Graph - Theorem Relation Data
+# Created: 2025-12-01
+
+# ═══════════════════════════════════════════════════════════════
+# 定理使用概念 (uses_concepts)
+# ═══════════════════════════════════════════════════════════════
+
+theorem_uses_concepts:
+
+  # === 代数学定理 ===
+  
+  - theorem: "lagrange-theorem"
+    concepts:
+      - id: "group"
+        role: "定理对象"
+      - id: "subgroup"
+        role: "核心概念"
+      - id: "coset"
+        role: "证明工具"
+      - id: "bijection"
+        role: "等势论证"
+        
+  - theorem: "sylow-theorems"
+    concepts:
+      - id: "group"
+        role: "定理对象"
+      - id: "subgroup"
+        role: "Sylow子群"
+      - id: "group-action"
+        role: "证明技术"
+      - id: "conjugacy"
+        role: "核心概念"
+      - id: "prime-number"
+        role: "阶的素因子"
+        
+  - theorem: "first-isomorphism-theorem"
+    concepts:
+      - id: "group"
+        role: "定理对象"
+      - id: "homomorphism"
+        role: "核心概念"
+      - id: "kernel"
+        role: "正规子群"
+      - id: "quotient-group"
+        role: "商结构"
+        
+  - theorem: "cayley-theorem"
+    concepts:
+      - id: "group"
+        role: "定理对象"
+      - id: "permutation-group"
+        role: "嵌入目标"
+      - id: "group-action"
+        role: "证明工具"
+        
+  # === 分析学定理 ===
+  
+  - theorem: "intermediate-value-theorem"
+    concepts:
+      - id: "continuity"
+        role: "定理条件"
+      - id: "connectedness"
+        role: "拓扑证明核心"
+      - id: "supremum"
+        role: "分析证明工具"
+      - id: "real-completeness"
+        role: "存在性保证"
+        
+  - theorem: "dominated-convergence-theorem"
+    concepts:
+      - id: "lebesgue-integral"
+        role: "积分概念"
+      - id: "measure"
+        role: "测度空间"
+      - id: "measurable-function"
+        role: "函数类"
+      - id: "almost-everywhere"
+        role: "收敛条件"
+        
+  - theorem: "monotone-convergence-theorem"
+    concepts:
+      - id: "lebesgue-integral"
+        role: "积分概念"
+      - id: "measure"
+        role: "测度空间"
+      - id: "monotone-sequence"
+        role: "单调性条件"
+        
+  - theorem: "hahn-banach-theorem"
+    concepts:
+      - id: "normed-space"
+        role: "定理背景"
+      - id: "linear-functional"
+        role: "扩张对象"
+      - id: "sublinear-functional"
+        role: "控制条件"
+        
+  # === 拓扑学定理 ===
+  
+  - theorem: "tychonoff-theorem"
+    concepts:
+      - id: "compactness"
+        role: "核心性质"
+      - id: "product-topology"
+        role: "拓扑结构"
+      - id: "axiom-of-choice"
+        role: "证明依赖"
+      - id: "filter"
+        role: "证明工具"
+        
+  - theorem: "brouwer-fixed-point"
+    concepts:
+      - id: "continuity"
+        role: "映射条件"
+      - id: "compactness"
+        role: "空间条件"
+      - id: "convexity"
+        role: "空间条件"
+      - id: "homology"
+        role: "代数拓扑证明"
+        
+  - theorem: "van-kampen-theorem"
+    concepts:
+      - id: "fundamental-group"
+        role: "计算对象"
+      - id: "topological-space"
+        role: "空间"
+      - id: "free-product"
+        role: "群论构造"
+        
+  # === 几何学定理 ===
+  
+  - theorem: "gauss-bonnet-theorem"
+    concepts:
+      - id: "curvature"
+        role: "几何量"
+      - id: "manifold"
+        role: "定理对象"
+      - id: "euler-characteristic"
+        role: "拓扑不变量"
+      - id: "integration"
+        role: "积分运算"
+        
+  - theorem: "stokes-theorem"
+    concepts:
+      - id: "manifold"
+        role: "积分域"
+      - id: "differential-form"
+        role: "被积对象"
+      - id: "exterior-derivative"
+        role: "微分算子"
+      - id: "boundary"
+        role: "边界"
+        
+  # === 范畴论定理 ===
+  
+  - theorem: "yoneda-lemma"
+    concepts:
+      - id: "category"
+        role: "背景"
+      - id: "functor"
+        role: "核心概念"
+      - id: "natural-transformation"
+        role: "核心概念"
+      - id: "hom-functor"
+        role: "可表函子"
+
+# ═══════════════════════════════════════════════════════════════
+# 定理依赖定理 (uses_theorems)
+# ═══════════════════════════════════════════════════════════════
+
+theorem_dependencies:
+
+  # === 代数学 ===
+  
+  - theorem: "sylow-theorems"
+    uses:
+      - id: "lagrange-theorem"
+        role: "基础"
+      - id: "orbit-stabilizer-theorem"
+        role: "证明工具"
+        
+  - theorem: "cauchy-theorem-groups"
+    uses:
+      - id: "lagrange-theorem"
+        role: "基础"
+        
+  - theorem: "fundamental-theorem-finite-abelian-groups"
+    uses:
+      - id: "sylow-theorems"
+        role: "结构分析"
+      - id: "first-isomorphism-theorem"
+        role: "分解工具"
+        
+  # === 分析学 ===
+  
+  - theorem: "dominated-convergence-theorem"
+    uses:
+      - id: "fatou-lemma"
+        role: "证明核心"
+        
+  - theorem: "riemann-lebesgue-lemma"
+    uses:
+      - id: "dominated-convergence-theorem"
+        role: "收敛论证"
+        
+  - theorem: "fubini-theorem"
+    uses:
+      - id: "monotone-convergence-theorem"
+        role: "证明工具"
+      - id: "tonelli-theorem"
+        role: "非负情况"
+        
+  # === 拓扑学 ===
+  
+  - theorem: "tychonoff-theorem"
+    uses:
+      - id: "alexander-subbase-theorem"
+        role: "证明技术"
+      - id: "zorn-lemma"
+        role: "选择公理"
+        
+  - theorem: "urysohn-metrization"
+    uses:
+      - id: "urysohn-lemma"
+        role: "分离函数"
+        
+  - theorem: "hahn-mazurkiewicz"
+    uses:
+      - id: "tietze-extension"
+        role: "扩张技术"
+        
+  # === 几何学 ===
+  
+  - theorem: "gauss-bonnet-theorem"
+    uses:
+      - id: "euler-formula"
+        role: "组合计数"
+      - id: "stokes-theorem"
+        role: "另一种证明"
+
+# ═══════════════════════════════════════════════════════════════
+# 定理蕴含关系 (implies)
+# ═══════════════════════════════════════════════════════════════
+
+theorem_implications:
+
+  - source: "lagrange-theorem"
+    implies:
+      - id: "fermat-little-theorem"
+        description: "取G = (ℤ/pℤ)*"
+      - id: "euler-theorem"
+        description: "取G = (ℤ/nℤ)*"
+      - id: "prime-order-cyclic"
+        description: "素数阶群只有平凡子群"
+        
+  - source: "sylow-theorems"
+    implies:
+      - id: "cauchy-theorem-groups"
+        description: "第一定理特例"
+      - id: "burnside-pq-theorem"
+        description: "pᵃqᵇ阶群可解"
+        
+  - source: "intermediate-value-theorem"
+    implies:
+      - id: "bolzano-zero-theorem"
+        description: "零点存在"
+      - id: "brouwer-1d-fixed-point"
+        description: "一维不动点定理"
+        
+  - source: "tychonoff-theorem"
+    implies:
+      - id: "banach-alaoglu"
+        description: "对偶空间单位球弱*紧"
+      - id: "compactness-theorem-logic"
+        description: "逻辑紧致性"
+        
+  - source: "gauss-bonnet-theorem"
+    implies:
+      - id: "hairy-ball-theorem"
+        description: "χ(S²)=2≠0"
+      - id: "poincare-hopf"
+        description: "向量场零点"
+
+# ═══════════════════════════════════════════════════════════════
+# 等价定理 (equivalent_to)
+# ═══════════════════════════════════════════════════════════════
+
+theorem_equivalences:
+
+  - theorems: ["tychonoff-theorem", "axiom-of-choice"]
+    note: "在ZF中等价"
+    
+  - theorems: ["zorn-lemma", "axiom-of-choice", "well-ordering"]
+    note: "三者等价"
+    
+  - theorems: ["hahn-banach", "ultrafilter-lemma"]
+    note: "在ZF中Hahn-Banach弱于AC"
+
+# ═══════════════════════════════════════════════════════════════
+# 推广关系 (generalizes)
+# ═══════════════════════════════════════════════════════════════
+
+theorem_generalizations:
+
+  - general: "stokes-theorem"
+    special_cases:
+      - id: "fundamental-theorem-calculus"
+        dimension: "1"
+      - id: "greens-theorem"
+        dimension: "2 (平面)"
+      - id: "divergence-theorem"
+        dimension: "3"
+      - id: "classical-stokes"
+        dimension: "3 (曲面)"
+        
+  - general: "chern-gauss-bonnet"
+    special_cases:
+      - id: "gauss-bonnet-theorem"
+        dimension: "2"
+        
+  - general: "atiyah-singer-index"
+    special_cases:
+      - id: "gauss-bonnet-theorem"
+        operator: "d + d*"
+      - id: "riemann-roch"
+        operator: "∂̄"
+
+# ═══════════════════════════════════════════════════════════════
+# 统计信息
+# ═══════════════════════════════════════════════════════════════
+
+statistics:
+  total_uses_concepts: 50+
+  total_dependencies: 20+
+  total_implications: 15+
+  total_equivalences: 3
+  total_generalizations: 3
+  
+  covered_theorems:
+    algebra: 5
+    analysis: 5
+    topology: 4
+    geometry: 2
+    category: 1

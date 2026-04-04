@@ -1,0 +1,132 @@
+# banach-fixed-point.yaml - Banach不动点定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "banach-fixed-point"
+  name:
+    zh: "Banach不动点定理"
+    en: "Banach Fixed-Point Theorem"
+  msc_codes: ["47H10"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 (X, d) 是非空完备度量空间，T: X → X 是压缩映射，
+      即存在 0 ≤ k < 1 使得：
+      d(T(x), T(y)) ≤ k · d(x, y), ∀x, y ∈ X
+      
+      则 T 有唯一不动点 x* ∈ X：T(x*) = x*
+      
+      而且，对任意 x₀ ∈ X，迭代序列 xₙ₊₁ = T(xₙ) 收敛到 x*，
+      收敛速度：d(xₙ, x*) ≤ kⁿ/(1-k) · d(x₀, x₁)
+      
+    informal: |
+      压缩映射一定有唯一的不动点！
+      而且从任何点出发反复迭代都能到达。
+      
+      直觉：每次距离缩短，最终必然收敛。
+      
+    lean: |
+      -- Banach不动点定理
+      theorem ContractingWith.fixedPoint_unique {α : Type*} [MetricSpace α] 
+        [CompleteSpace α] {f : α → α} (hf : ContractingWith K f) :
+        ∃! x, f x = x
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "构造Cauchy列"
+    
+    proof_tree: |
+      Banach不动点定理
+          │
+          ├── 存在性
+          │   ├── 任取x₀，定义xₙ₊₁ = T(xₙ)
+          │   ├── 证明(xₙ)是Cauchy列
+          │   │   └── d(xₘ,xₙ) ≤ kᵐ/(1-k)·d(x₀,x₁)
+          │   ├── 完备性 ⟹ 存在极限x*
+          │   └── T连续 ⟹ x* = T(x*)
+          │
+          └── 唯一性
+              ├── 设x*, y*都是不动点
+              ├── d(x*,y*) = d(T(x*),T(y*)) ≤ k·d(x*,y*)
+              └── k < 1 ⟹ d(x*,y*) = 0
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      T压缩：d(Tx, Ty) ≤ k·d(x,y), k<1
+      
+      结论：∃!x*: Tx* = x*
+      
+      收敛：xₙ = Tⁿ(x₀) → x*
+      
+    geometric: |
+      【几何表征】
+      
+          x₀
+           ╲
+            x₁ = T(x₀)
+             ╲
+              x₂ = T(x₁)
+               ╲
+                ⋮
+                 x* (不动点)
+                 
+    intuitive: |
+      【直觉表征】
+      
+      橡皮筋类比：
+      - 空间是橡皮筋
+      - T把橡皮筋压缩
+      - 不断压缩必有一点不动
+      
+    computational: |
+      【计算表征】
+      
+      def fixed_point_iteration(T, x0, tol=1e-8, max_iter=1000):
+          x = x0
+          for i in range(max_iter):
+              x_new = T(x)
+              if abs(x_new - x) < tol:
+                  return x_new
+              x = x_new
+          return x
+          
+      # 例：求√2 = x 满足 x = (x + 2/x)/2
+      T = lambda x: (x + 2/x) / 2
+      print(fixed_point_iteration(T, 1.0))  # ≈ 1.414...
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "常微分方程解的存在唯一性（Picard迭代）"
+    - description: "隐函数定理的证明"
+    - description: "数值方法的收敛性分析"
+    - description: "博弈论中的纳什均衡"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "metric-space"
+      - id: "completeness"
+        
+    implies:
+      - id: "picard-lindelof"
+        description: "ODE解的存在唯一"
+        
+    related_to:
+      - id: "brouwer-fixed-point"
+        description: "拓扑版本（不需要压缩）"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    history:
+      discoverer: "Stefan Banach"
+      year: 1922
+      
+  mathlib:
+    path: "Mathlib.Topology.MetricSpace.ContractingWith"

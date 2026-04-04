@@ -1,0 +1,213 @@
+# noether-ring.yaml - Noether环概念知识图谱节点
+# FormalMath Knowledge Graph - Concept Node
+# Created: 2025-12-07
+
+concept:
+  id: "noether-ring"
+  name:
+    zh: "Noether环"
+    en: "Noether Ring"
+  msc_codes: ["13E05", "13C05"]
+  
+  # ===== 定义层 =====
+  definition:
+    formal: |
+      环R是Noether环，若满足下列等价条件之一：
+      
+      (1) 升链条件（Ascending Chain Condition, ACC）：
+      任意理想升链
+      I₁ ⊆ I₂ ⊆ I₃ ⊆ ...
+      必在有限步稳定，即存在N使得Iₙ = Iₙ₊₁对所有n≥N成立
+      
+      (2) 有限生成性：
+      R的任意理想I都有有限生成基
+      即存在a₁,...,aₘ∈I使得I = (a₁,...,aₘ)
+      
+      (3) 极大条件：
+      任意非空理想族有极大元（关于包含关系）
+      
+    informal: |
+      Noether环是"理想的有限性"得到保证的环。
+      
+      直观理解：
+      - 不能有无限严格上升的理想链
+      - 每个理想都可以用有限个元素生成
+      - 理想结构"可控"
+      
+      类比：如果向量空间有有限维，那么Noether环有"有限理想维"
+      
+    lean: |
+      -- Mathlib定义
+      class IsNoetherian (R : Type*) [Semiring R] : Prop where
+        noetherian : ∀ (I : Ideal R), I.FG
+      
+      -- 等价条件
+      theorem isNoetherian_iff_wellFounded :
+        IsNoetherian R ↔ WellFounded ((· > ·) : Ideal R → Ideal R → Prop) := by
+        sorry
+        
+  # ===== 直觉层 =====
+  intuition:
+    geometric: |
+      【几何直觉】有限性
+      - Noether环对应"有限型"的代数簇
+      - 理想对应子簇，有限生成对应有限个方程
+      - Noether性质保证簇的分解是有限的
+      
+    algebraic: |
+      【代数直觉】控制无限性
+      - 理想不能"无限增长"
+      - 每个理想有"有限表示"
+      - 结构"可控"
+      
+    physical: |
+      【物理直觉】有限自由度
+      - Noether环对应有限自由度的系统
+      - 理想对应约束，有限生成对应有限约束
+      
+    categorical: |
+      【范畴直觉】有限性条件
+      - Noether环的模范畴是Noether范畴
+      - 有限生成模的子模有限生成
+      - 上同调有限维
+      
+  # ===== 表征层 =====
+  representations:
+    - type: "理想升链"
+      content: |
+        Noether环：升链必稳定
+        I₁ ⊆ I₂ ⊆ ... ⊆ Iₙ = Iₙ₊₁ = ...
+        
+        非Noether环：可能有无限升链
+        I₁ ⊊ I₂ ⊊ I₃ ⊊ ...
+        
+    - type: "有限生成"
+      content: |
+        每个理想I = (a₁,...,aₘ)
+        有限个生成元
+        
+    - type: "理想格"
+      content: |
+        Noether环的理想格满足ACC
+        （不能有无限严格上升链）
+        
+  # ===== 例子层 =====
+  examples:
+    noetherian:
+      - name: "域k"
+        description: "只有两个理想：(0)和(1)"
+        properties: ["显然Noether"]
+        
+      - name: "主理想整环（PID）"
+        description: "ℤ, k[x]（k是域）"
+        properties: ["每个理想是主理想", "有限生成"]
+        
+      - name: "有限生成k-代数"
+        description: "k[x₁,...,xₙ], k[x₁,...,xₙ]/I"
+        properties: ["Hilbert基底定理保证"]
+        
+      - name: "局部化"
+        description: "若R是Noether环，S是乘闭子集，则R_S也是"
+        properties: ["局部化保持Noether性质"]
+        
+    non_noetherian:
+      - name: "无穷变元环"
+        description: "k[x₁,x₂,x₃,...]"
+        example: "理想(x₁) ⊊ (x₁,x₂) ⊊ ...（无限升链）"
+        
+      - name: "某些函数环"
+        description: "C(ℝ)（连续函数环）"
+        example: "理想可能无有限基"
+        
+  # ===== 关系层 =====
+  relations:
+    requires:
+      - id: "ring"
+        description: "定义在环上"
+      - id: "ideal"
+        description: "涉及理想的概念"
+        
+    generalizes:
+      - id: "pid"
+        description: "PID是Noether环"
+      - id: "field"
+        description: "域是Noether环"
+        
+    specialized_by:
+      - id: "artin-ring"
+        description: "Artin环是Noether环（且维数为0）"
+      - id: "regular-local-ring"
+        description: "正则局部环是Noether环"
+        
+    related_to:
+      - id: "noether-module"
+        description: "Noether模是Noether环上的有限生成模"
+      - id: "hilbert-basis-theorem"
+        description: "Hilbert基底定理：R Noether ⟹ R[x] Noether"
+      - id: "noether-scheme"
+        description: "Noether概形对应Noether环"
+      - id: "commutative-algebra"
+        description: "交换代数的核心概念"
+        
+  # ===== 定理层 =====
+  key_theorems:
+    - id: "hilbert-basis-theorem"
+      statement: "若R是Noether环，则R[x]也是Noether环"
+      importance: 5
+      
+    - id: "noetherian-quotient"
+      statement: "若R是Noether环，I是理想，则R/I也是Noether环"
+      importance: 4
+      
+    - id: "noetherian-localization"
+      statement: "若R是Noether环，S是乘闭子集，则R_S也是Noether环"
+      importance: 4
+      
+    - id: "noetherian-fg-module"
+      statement: "若R是Noether环，M是有限生成R-模，则M是Noether模"
+      importance: 5
+      
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 5
+    
+    prerequisites:
+      - "ring"
+      - "ideal"
+      - "commutative-algebra"
+      
+    corequisites:
+      - "noether-module"
+      - "hilbert-basis-theorem"
+      - "commutative-algebra"
+      
+    leads_to:
+      - "noether-scheme"
+      - "algebraic-geometry"
+      - "homological-algebra"
+      - "commutative-algebra"
+      
+    history:
+      first_appearance: 1921
+      context: "Noether的'Idealtheorie in Ringbereichen'"
+      earlier_work: "Hilbert基底定理（1888）"
+      key_development: "Noether将Hilbert的条件抽象为Noether环概念"
+      
+    key_figures:
+      - id: "hilbert"
+        contribution: "基底定理（1888）"
+      - id: "noether"
+        contribution: "Noether环概念的引入（1921）"
+        
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.RingTheory.Noetherian"
+    name: "IsNoetherian"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Noetherian.html"
+    coverage: "complete"
+    
+    related_definitions:
+      - "IsNoetherian"
+      - "IsNoetherianRing"
+      - "IsNoetherianModule"

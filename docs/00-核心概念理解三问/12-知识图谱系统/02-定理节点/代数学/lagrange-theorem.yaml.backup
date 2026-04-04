@@ -1,0 +1,246 @@
+# lagrange-theorem.yaml - Lagrange定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "lagrange-theorem"
+  name:
+    zh: "Lagrange定理"
+    en: "Lagrange's Theorem"
+  msc_codes: ["20A05"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 G 是有限群，H 是 G 的子群。则：
+      |H| 整除 |G|
+      
+      等价表述：
+      |G| = |H| · [G : H]
+      
+      其中 [G : H] = |G/H| 是 H 在 G 中的指数（陪集个数）。
+      
+    informal: |
+      子群的大小必须能整除全群的大小。
+      
+      直观理解：子群的陪集"平分"了整个群，
+      每个陪集大小相等（都等于|H|），
+      所以|G|必须是|H|的整数倍。
+      
+    lean: |
+      -- Mathlib形式化
+      theorem Subgroup.card_mul_index {G : Type*} [Group G] [Fintype G]
+        (H : Subgroup G) [Fintype H] [DecidablePred (· ∈ H)] :
+        Fintype.card H * H.index = Fintype.card G
+        
+      -- 等价形式
+      theorem Subgroup.card_dvd_of_le {G : Type*} [Group G] [Fintype G]
+        (H : Subgroup G) : Fintype.card H ∣ Fintype.card G
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "陪集分解 + 陪集等势"
+    
+    key_ideas:
+      - "G可以分解为H的不交陪集并"
+      - "每个陪集与H等势（左乘是双射）"
+      - "陪集个数 × 陪集大小 = 群的大小"
+      
+    steps:
+      - step: 1
+        content: "定义左陪集：gH = {gh : h ∈ H}"
+        
+      - step: 2
+        content: "证明陪集要么相等要么不交"
+        detail: "若 aH ∩ bH ≠ ∅，则存在 h₁,h₂ ∈ H 使 ah₁ = bh₂，于是 a⁻¹b = h₁h₂⁻¹ ∈ H，故 aH = bH"
+        
+      - step: 3
+        content: "证明每个陪集与H等势"
+        detail: "映射 h ↦ gh 是 H → gH 的双射"
+        
+      - step: 4
+        content: "G是有限多个等势陪集的不交并"
+        formula: "|G| = [G:H] × |H|"
+        
+    proof_tree: |
+      Lagrange定理
+          │
+          ├── 陪集分解定理
+          │   ├── 陪集等价关系
+          │   │   └── a ~ b ⟺ a⁻¹b ∈ H
+          │   └── 等价类=陪集
+          │
+          ├── 陪集等势
+          │   └── 左乘是双射
+          │       └── Lₐ: H → aH, h ↦ ah
+          │
+          └── 计数论证
+              └── |G| = (陪集数) × |H|
+              
+    techniques:
+      - "陪集分解"
+      - "双射论证"
+      - "等价关系"
+      - "计数原理"
+      
+    alternatives:
+      - name: "作用观点证明"
+        description: "G作用在G/H上，轨道-稳定子定理"
+        
+      - name: "等价关系证明"
+        description: "定义等价关系 a ~ b ⟺ a⁻¹b ∈ H"
+        
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      定理：|H| | |G|（H ≤ G）
+      
+      证明核心：
+      G = ⊔ gᵢH （不交并分解）
+      |gH| = |H| （等势）
+      ∴ |G| = [G:H]·|H|
+      
+    geometric: |
+      【几何表征】
+      
+      群G的陪集分解：
+      ┌─────────────────────────────┐
+      │   ┌───┐ ┌───┐ ┌───┐ ┌───┐ │
+      │   │ H │ │g₁H│ │g₂H│ │g₃H│ │
+      │   └───┘ └───┘ └───┘ └───┘ │
+      │        G = H ⊔ g₁H ⊔ g₂H ⊔ ...│
+      └─────────────────────────────┘
+      
+      每块大小相等 = |H|
+      块数 = [G:H]（指数）
+      
+    intuitive: |
+      【直觉表征】
+      
+      分苹果类比：
+      - 12个苹果分给孩子们
+      - 每人得到相同数量
+      - 12必须能被人数整除
+      
+      群的"分块"：
+      - G被H的陪集"覆盖"
+      - 每块大小 = |H|
+      - |G|必须是|H|的倍数
+      
+    computational: |
+      【计算表征】
+      
+      验证例子：S₃（6阶对称群）
+      
+      子群H = ⟨(12)⟩ = {e, (12)}，|H| = 2
+      陪集：H, (13)H, (23)H
+      [S₃:H] = 3
+      验证：6 = 2 × 3 ✓
+      
+      子群K = A₃ = {e, (123), (132)}，|K| = 3
+      陪集：K, (12)K
+      [S₃:K] = 2
+      验证：6 = 3 × 2 ✓
+      
+    categorical: |
+      【范畴表征】
+      
+      从群胚观点：
+      - G是单对象群胚
+      - H是子群胚
+      - G/H是商群胚
+      
+      函子分解：
+      G → G/H → * (平凡群胚)
+      
+      纤维的大小 = |H|
+      纤维的个数 = [G:H]
+      
+  # ===== 应用层 =====
+  applications:
+    - domain: "群论"
+      description: "有限群的阶必须整除n!（Cayley定理推论）"
+      
+    - domain: "数论"
+      description: "Fermat小定理的群论证明"
+      detail: "aᵖ⁻¹ ≡ 1 (mod p)，因为(ℤ/pℤ)*的阶是p-1"
+      
+    - domain: "数论"
+      description: "Euler定理：aᵠ⁽ⁿ⁾ ≡ 1 (mod n)"
+      
+    - domain: "群论"
+      description: "素数阶群是循环群"
+      
+    - domain: "密码学"
+      description: "RSA和椭圆曲线密码的理论基础"
+      
+  # ===== 推广与特化 =====
+  generalizations:
+    - id: "orbit-stabilizer-theorem"
+      statement: "|G| = |Orb(x)| × |Stab(x)|"
+      description: "轨道-稳定子定理"
+      
+    - id: "lagrange-infinite"
+      statement: "[G:H]的推广到无限群"
+      description: "使用指数概念"
+      
+  special_cases:
+    - id: "cyclic-subgroup"
+      statement: "元素的阶整除群的阶"
+      description: "取H = ⟨g⟩"
+      
+    - id: "index-2"
+      statement: "指数2的子群是正规子群"
+      
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "subgroup"
+        role: "定理对象"
+      - id: "coset"
+        role: "证明工具"
+      - id: "index"
+        role: "关键概念"
+      - id: "bijection"
+        role: "证明等势"
+        
+    uses_theorems: []
+    
+    implies:
+      - id: "fermat-little-theorem"
+        description: "作为Lagrange定理的应用"
+      - id: "euler-theorem"
+        description: "推广到任意模"
+      - id: "prime-order-cyclic"
+        description: "素数阶群是循环群"
+        
+    equivalent_to: []
+    
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 2
+    importance: 5
+    
+    prerequisites:
+      concepts: ["group", "subgroup", "coset"]
+      theorems: []
+      
+    year_proved: 1771
+    provers: ["lagrange"]
+    
+    historical_note: |
+      Lagrange在研究置换群时发现此定理（在Galois之前）。
+      他研究的是多项式方程的根的置换，
+      虽然还没有"群"的抽象概念，但已经使用了陪集分解的思想。
+      
+  # ===== Mathlib对齐 =====
+  mathlib:
+    path: "Mathlib.GroupTheory.Lagrange"
+    main_theorem: "Subgroup.card_mul_index"
+    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Lagrange.html"
+    coverage: "complete"
+    
+    related_lemmas:
+      - "Subgroup.card_dvd_of_le"
+      - "Subgroup.index_eq_card"

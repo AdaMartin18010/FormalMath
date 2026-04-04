@@ -1,0 +1,128 @@
+# jordan-normal-form.yaml - Jordan标准形定理知识图谱节点
+# FormalMath Knowledge Graph - Theorem Node
+# Created: 2025-12-01
+
+theorem:
+  id: "jordan-normal-form"
+  name:
+    zh: "Jordan标准形定理"
+    en: "Jordan Normal Form Theorem"
+  msc_codes: ["15A21"]
+  
+  # ===== 陈述层 =====
+  statement:
+    formal: |
+      设 V 是代数闭域 F 上的有限维向量空间，T: V → V 是线性变换。
+      则存在基使得 T 的矩阵为 Jordan 标准形：
+      
+      J = diag(J_{n₁}(λ₁), J_{n₂}(λ₂), ..., J_{nₖ}(λₖ))
+      
+      其中 Jordan块 J_n(λ) = [λ 1 0 ... 0]
+                            [0 λ 1 ... 0]
+                            [⋮     ⋱    ]
+                            [0 0 0 ... λ]
+                            
+      Jordan标准形在Jordan块的排列顺序意义下唯一。
+      
+    informal: |
+      任何矩阵在代数闭域上都可以"几乎对角化"。
+      
+      不能完全对角化时，用Jordan块代替：
+      - 对角线是特征值
+      - 上副对角线是1
+      - 其他位置是0
+      
+    lean: |
+      -- Jordan标准形（在Mathlib中）
+      theorem jordan_normal_form {V : Type*} [AddCommGroup V] [Module F V]
+        [FiniteDimensional F V] [IsAlgClosed F] (T : V →ₗ[F] V) :
+        ∃ (basis : Basis ι F V), IsJordanForm (T.toMatrix basis basis)
+        
+  # ===== 证明层 =====
+  proof:
+    main_strategy: "广义特征空间分解 + 循环子空间"
+    
+    proof_tree: |
+      Jordan标准形定理
+          │
+          ├── 广义特征空间分解
+          │   ├── V = ⊕ ker(T - λᵢI)^{nᵢ}
+          │   └── 每个广义特征空间T-不变
+          │
+          ├── 单个广义特征空间的Jordan形
+          │   ├── 找循环向量v
+          │   ├── 构造{v, (T-λI)v, ..., (T-λI)^{n-1}v}
+          │   └── 这是Jordan块的基
+          │
+          └── 唯一性
+              └── Jordan块的大小由rank条件决定
+              
+  # ===== 五种表征 =====
+  representations:
+    symbolic: |
+      【符号表征】
+      
+      Jordan块：J_n(λ) = λI + N
+      其中N是nilpotent（N^n = 0）
+      
+      任意矩阵：A = PJP⁻¹
+      
+    geometric: |
+      【几何表征】
+      
+      不变子空间分解：
+      
+      V = V_{λ₁} ⊕ V_{λ₂} ⊕ ...
+      
+      每个V_λ内部有"链"结构
+      
+    intuitive: |
+      【直觉表征】
+      
+      对角化的"最佳近似"：
+      - 能对角化就对角化
+      - 不能就用Jordan块
+      - Jordan块表示"几乎对角"
+      
+    computational: |
+      【计算表征】
+      
+      import numpy as np
+      from scipy.linalg import jordan_normal_form
+      
+      A = np.array([[5, 4, 2, 1],
+                    [0, 1, -1, -1],
+                    [-1, -1, 3, 0],
+                    [1, 1, -1, 2]])
+      J, P = jordan_normal_form(A)
+      # J是Jordan标准形，P是变换矩阵
+      
+  # ===== 应用层 =====
+  applications:
+    - description: "计算矩阵的幂 Aⁿ"
+    - description: "解线性常微分方程组"
+    - description: "分析线性系统的稳定性"
+    - description: "矩阵函数 f(A) 的计算"
+    
+  # ===== 关系层 =====
+  relations:
+    uses_concepts:
+      - id: "eigenvalue"
+      - id: "linear-map"
+        
+    related_to:
+      - id: "spectral-theorem"
+        description: "自伴情形可完全对角化"
+      - id: "cayley-hamilton"
+        description: "最小多项式"
+        
+  # ===== 元数据层 =====
+  metadata:
+    difficulty: 4
+    importance: 4
+    history:
+      discoverer: "Camille Jordan"
+      year: 1870
+      
+  mathlib:
+    path: "Mathlib.LinearAlgebra.JordanChevalley"
