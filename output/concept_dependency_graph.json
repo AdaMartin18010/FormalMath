@@ -1,0 +1,2094 @@
+{
+  "nodes": [
+    {
+      "id": "C001",
+      "name": "关系",
+      "name_en": "Relation",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "04A05",
+      "prerequisites": [],
+      "description": "数学对象之间的基本联系",
+      "estimated_hours": 2.0
+    },
+    {
+      "id": "C002",
+      "name": "集合",
+      "name_en": "Set",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "03Exx",
+      "prerequisites": [
+        "C001"
+      ],
+      "description": "数学对象的汇集",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C003",
+      "name": "函数",
+      "name_en": "Function",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "26A09",
+      "prerequisites": [
+        "C002"
+      ],
+      "description": "集合间的映射关系",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C004",
+      "name": "自然数",
+      "name_en": "Natural Number",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "11A99",
+      "prerequisites": [
+        "C002"
+      ],
+      "description": "计数的数学对象",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C005",
+      "name": "整数",
+      "name_en": "Integer",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "11A99",
+      "prerequisites": [
+        "C004"
+      ],
+      "description": "包含正负的自然数扩展",
+      "estimated_hours": 2.0
+    },
+    {
+      "id": "C006",
+      "name": "有理数",
+      "name_en": "Rational Number",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 2,
+      "msc_code": "11A99",
+      "prerequisites": [
+        "C005"
+      ],
+      "description": "整数之比构成的数",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C007",
+      "name": "实数",
+      "name_en": "Real Number",
+      "level": "L1",
+      "domain": "基础数学",
+      "difficulty": 2,
+      "msc_code": "26A03",
+      "prerequisites": [
+        "C006"
+      ],
+      "description": "完备的有理数扩张",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C008",
+      "name": "复数",
+      "name_en": "Complex Number",
+      "level": "L1",
+      "domain": "基础数学",
+      "difficulty": 2,
+      "msc_code": "30A99",
+      "prerequisites": [
+        "C007"
+      ],
+      "description": "实数的代数闭包扩张",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C009",
+      "name": "逻辑",
+      "name_en": "Logic",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "03B99",
+      "prerequisites": [],
+      "description": "数学推理的基础",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C010",
+      "name": "命题",
+      "name_en": "Proposition",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "03B05",
+      "prerequisites": [
+        "C009"
+      ],
+      "description": "可判断真假的陈述",
+      "estimated_hours": 2.0
+    },
+    {
+      "id": "C011",
+      "name": "谓词",
+      "name_en": "Predicate",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 2,
+      "msc_code": "03B10",
+      "prerequisites": [
+        "C010"
+      ],
+      "description": "含变量的命题形式",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C012",
+      "name": "量词",
+      "name_en": "Quantifier",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 2,
+      "msc_code": "03B10",
+      "prerequisites": [
+        "C011"
+      ],
+      "description": "全称量词与存在量词",
+      "estimated_hours": 2.0
+    },
+    {
+      "id": "C013",
+      "name": "等价关系",
+      "name_en": "Equivalence Relation",
+      "level": "L1",
+      "domain": "基础数学",
+      "difficulty": 2,
+      "msc_code": "04A05",
+      "prerequisites": [
+        "C001",
+        "C002"
+      ],
+      "description": "自反、对称、传递的关系",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C014",
+      "name": "序关系",
+      "name_en": "Order Relation",
+      "level": "L1",
+      "domain": "基础数学",
+      "difficulty": 2,
+      "msc_code": "06A05",
+      "prerequisites": [
+        "C001",
+        "C002"
+      ],
+      "description": "偏序与全序关系",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C015",
+      "name": "笛卡尔积",
+      "name_en": "Cartesian Product",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 2,
+      "msc_code": "03E20",
+      "prerequisites": [
+        "C002"
+      ],
+      "description": "集合的乘积构造",
+      "estimated_hours": 2.0
+    },
+    {
+      "id": "C016",
+      "name": "二元运算",
+      "name_en": "Binary Operation",
+      "level": "L0",
+      "domain": "代数",
+      "difficulty": 2,
+      "msc_code": "08A99",
+      "prerequisites": [
+        "C002",
+        "C003"
+      ],
+      "description": "集合上的二元函数",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C017",
+      "name": "群",
+      "name_en": "Group",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "20A05",
+      "prerequisites": [
+        "C016",
+        "C013"
+      ],
+      "description": "具有逆元的结合运算结构",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C018",
+      "name": "子群",
+      "name_en": "Subgroup",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "20A05",
+      "prerequisites": [
+        "C017"
+      ],
+      "description": "群的子结构",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C019",
+      "name": "正规子群",
+      "name_en": "Normal Subgroup",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "20A05",
+      "prerequisites": [
+        "C018"
+      ],
+      "description": "满足共轭封闭的子群",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C020",
+      "name": "商群",
+      "name_en": "Quotient Group",
+      "level": "L2",
+      "domain": "代数",
+      "difficulty": 4,
+      "msc_code": "20A05",
+      "prerequisites": [
+        "C019",
+        "C013"
+      ],
+      "description": "群模去正规子群",
+      "estimated_hours": 6.0
+    },
+    {
+      "id": "C021",
+      "name": "群同态",
+      "name_en": "Group Homomorphism",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "20A99",
+      "prerequisites": [
+        "C017",
+        "C003"
+      ],
+      "description": "保持群结构的映射",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C022",
+      "name": "群同构",
+      "name_en": "Group Isomorphism",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "20A99",
+      "prerequisites": [
+        "C021"
+      ],
+      "description": "双射的群同态",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C023",
+      "name": "环",
+      "name_en": "Ring",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "13A99",
+      "prerequisites": [
+        "C017"
+      ],
+      "description": "具有加法和乘法的代数结构",
+      "estimated_hours": 6.0
+    },
+    {
+      "id": "C024",
+      "name": "域",
+      "name_en": "Field",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "12E99",
+      "prerequisites": [
+        "C023"
+      ],
+      "description": "非零元可逆的交换环",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C025",
+      "name": "向量空间",
+      "name_en": "Vector Space",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "15A03",
+      "prerequisites": [
+        "C024",
+        "C017"
+      ],
+      "description": "域上的模结构",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C026",
+      "name": "线性映射",
+      "name_en": "Linear Map",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "15A04",
+      "prerequisites": [
+        "C025",
+        "C003"
+      ],
+      "description": "保持线性结构的映射",
+      "estimated_hours": 6.0
+    },
+    {
+      "id": "C027",
+      "name": "矩阵",
+      "name_en": "Matrix",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "15A99",
+      "prerequisites": [
+        "C025",
+        "C026"
+      ],
+      "description": "线性映射的表示",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C028",
+      "name": "行列式",
+      "name_en": "Determinant",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "15A15",
+      "prerequisites": [
+        "C027"
+      ],
+      "description": "方阵的多重线性函数",
+      "estimated_hours": 6.0
+    },
+    {
+      "id": "C029",
+      "name": "特征值",
+      "name_en": "Eigenvalue",
+      "level": "L2",
+      "domain": "代数",
+      "difficulty": 4,
+      "msc_code": "15A18",
+      "prerequisites": [
+        "C027",
+        "C028"
+      ],
+      "description": "线性算子的不变量",
+      "estimated_hours": 7.0
+    },
+    {
+      "id": "C030",
+      "name": "模",
+      "name_en": "Module",
+      "level": "L2",
+      "domain": "代数",
+      "difficulty": 4,
+      "msc_code": "13C99",
+      "prerequisites": [
+        "C023",
+        "C025"
+      ],
+      "description": "环上的向量空间推广",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C031",
+      "name": "序列",
+      "name_en": "Sequence",
+      "level": "L0",
+      "domain": "分析",
+      "difficulty": 2,
+      "msc_code": "40A99",
+      "prerequisites": [
+        "C004",
+        "C003"
+      ],
+      "description": "自然数集上的函数",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C032",
+      "name": "极限",
+      "name_en": "Limit",
+      "level": "L1",
+      "domain": "分析",
+      "difficulty": 3,
+      "msc_code": "26A03",
+      "prerequisites": [
+        "C031",
+        "C007"
+      ],
+      "description": "序列或函数的趋近行为",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C033",
+      "name": "连续性",
+      "name_en": "Continuity",
+      "level": "L1",
+      "domain": "分析",
+      "difficulty": 3,
+      "msc_code": "26A15",
+      "prerequisites": [
+        "C032",
+        "C003"
+      ],
+      "description": "映射的局部稳定性",
+      "estimated_hours": 6.0
+    },
+    {
+      "id": "C034",
+      "name": "导数",
+      "name_en": "Derivative",
+      "level": "L1",
+      "domain": "分析",
+      "difficulty": 3,
+      "msc_code": "26A24",
+      "prerequisites": [
+        "C032"
+      ],
+      "description": "函数的瞬时变化率",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C035",
+      "name": "微分",
+      "name_en": "Differential",
+      "level": "L1",
+      "domain": "分析",
+      "difficulty": 3,
+      "msc_code": "26A24",
+      "prerequisites": [
+        "C034"
+      ],
+      "description": "函数的局部线性近似",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C036",
+      "name": "积分",
+      "name_en": "Integral",
+      "level": "L1",
+      "domain": "分析",
+      "difficulty": 3,
+      "msc_code": "26A42",
+      "prerequisites": [
+        "C034"
+      ],
+      "description": "函数的累积效应",
+      "estimated_hours": 10.0
+    },
+    {
+      "id": "C037",
+      "name": "微积分基本定理",
+      "name_en": "Fundamental Theorem of Calculus",
+      "level": "L2",
+      "domain": "分析",
+      "difficulty": 4,
+      "msc_code": "26A42",
+      "prerequisites": [
+        "C034",
+        "C036"
+      ],
+      "description": "微分与积分的互逆关系",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C038",
+      "name": "级数",
+      "name_en": "Series",
+      "level": "L1",
+      "domain": "分析",
+      "difficulty": 3,
+      "msc_code": "40A05",
+      "prerequisites": [
+        "C031",
+        "C032"
+      ],
+      "description": "无穷序列的和",
+      "estimated_hours": 7.0
+    },
+    {
+      "id": "C039",
+      "name": "幂级数",
+      "name_en": "Power Series",
+      "level": "L2",
+      "domain": "分析",
+      "difficulty": 4,
+      "msc_code": "30B10",
+      "prerequisites": [
+        "C038",
+        "C008"
+      ],
+      "description": "以幂函数为基的级数",
+      "estimated_hours": 6.0
+    },
+    {
+      "id": "C040",
+      "name": "一致收敛",
+      "name_en": "Uniform Convergence",
+      "level": "L2",
+      "domain": "分析",
+      "difficulty": 4,
+      "msc_code": "40A30",
+      "prerequisites": [
+        "C032",
+        "C033"
+      ],
+      "description": "函数序列的全局收敛性",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C041",
+      "name": "度量空间",
+      "name_en": "Metric Space",
+      "level": "L1",
+      "domain": "分析",
+      "difficulty": 3,
+      "msc_code": "54E35",
+      "prerequisites": [
+        "C007",
+        "C032"
+      ],
+      "description": "具有距离函数的空间",
+      "estimated_hours": 6.0
+    },
+    {
+      "id": "C042",
+      "name": "完备性",
+      "name_en": "Completeness",
+      "level": "L2",
+      "domain": "分析",
+      "difficulty": 4,
+      "msc_code": "54E50",
+      "prerequisites": [
+        "C041",
+        "C032"
+      ],
+      "description": "柯西序列收敛的空间",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C043",
+      "name": "紧致性",
+      "name_en": "Compactness",
+      "level": "L2",
+      "domain": "分析",
+      "difficulty": 4,
+      "msc_code": "54D30",
+      "prerequisites": [
+        "C041"
+      ],
+      "description": "有限覆盖性质",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C044",
+      "name": "多元函数",
+      "name_en": "Multivariable Function",
+      "level": "L1",
+      "domain": "分析",
+      "difficulty": 3,
+      "msc_code": "26B99",
+      "prerequisites": [
+        "C003",
+        "C015"
+      ],
+      "description": "多变量输入的函数",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C045",
+      "name": "偏导数",
+      "name_en": "Partial Derivative",
+      "level": "L1",
+      "domain": "分析",
+      "difficulty": 3,
+      "msc_code": "26B05",
+      "prerequisites": [
+        "C034",
+        "C044"
+      ],
+      "description": "多元函数的单变量导数",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C046",
+      "name": "欧几里得空间",
+      "name_en": "Euclidean Space",
+      "level": "L1",
+      "domain": "几何",
+      "difficulty": 3,
+      "msc_code": "51M05",
+      "prerequisites": [
+        "C025",
+        "C041"
+      ],
+      "description": "具有内积的实向量空间",
+      "estimated_hours": 6.0
+    },
+    {
+      "id": "C047",
+      "name": "内积",
+      "name_en": "Inner Product",
+      "level": "L1",
+      "domain": "几何",
+      "difficulty": 3,
+      "msc_code": "15A63",
+      "prerequisites": [
+        "C025"
+      ],
+      "description": "向量间的双线性形式",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C048",
+      "name": "范数",
+      "name_en": "Norm",
+      "level": "L1",
+      "domain": "几何",
+      "difficulty": 3,
+      "msc_code": "46B20",
+      "prerequisites": [
+        "C047"
+      ],
+      "description": "向量的长度度量",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C049",
+      "name": "距离",
+      "name_en": "Distance",
+      "level": "L0",
+      "domain": "几何",
+      "difficulty": 2,
+      "msc_code": "51K05",
+      "prerequisites": [
+        "C048"
+      ],
+      "description": "点与点之间的度量",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C050",
+      "name": "角度",
+      "name_en": "Angle",
+      "level": "L0",
+      "domain": "几何",
+      "difficulty": 2,
+      "msc_code": "51N20",
+      "prerequisites": [
+        "C047"
+      ],
+      "description": "向量间的夹角度量",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C051",
+      "name": "曲率",
+      "name_en": "Curvature",
+      "level": "L2",
+      "domain": "几何",
+      "difficulty": 4,
+      "msc_code": "53A04",
+      "prerequisites": [
+        "C034",
+        "C050"
+      ],
+      "description": "曲线或曲面的弯曲程度",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C052",
+      "name": "流形",
+      "name_en": "Manifold",
+      "level": "L2",
+      "domain": "几何",
+      "difficulty": 4,
+      "msc_code": "57N99",
+      "prerequisites": [
+        "C041",
+        "C042",
+        "C033"
+      ],
+      "description": "局部类似于欧氏空间的空间",
+      "estimated_hours": 12.0
+    },
+    {
+      "id": "C053",
+      "name": "切空间",
+      "name_en": "Tangent Space",
+      "level": "L2",
+      "domain": "几何",
+      "difficulty": 4,
+      "msc_code": "53A99",
+      "prerequisites": [
+        "C052",
+        "C025"
+      ],
+      "description": "流形上某点的线性近似空间",
+      "estimated_hours": 7.0
+    },
+    {
+      "id": "C054",
+      "name": "黎曼度量",
+      "name_en": "Riemannian Metric",
+      "level": "L2",
+      "domain": "几何",
+      "difficulty": 4,
+      "msc_code": "53B20",
+      "prerequisites": [
+        "C052",
+        "C047"
+      ],
+      "description": "流形上的光滑内积场",
+      "estimated_hours": 10.0
+    },
+    {
+      "id": "C055",
+      "name": "黎曼流形",
+      "name_en": "Riemannian Manifold",
+      "level": "L2",
+      "domain": "几何",
+      "difficulty": 4,
+      "msc_code": "53B20",
+      "prerequisites": [
+        "C054",
+        "C052"
+      ],
+      "description": "配备黎曼度量的流形",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C056",
+      "name": "测地线",
+      "name_en": "Geodesic",
+      "level": "L2",
+      "domain": "几何",
+      "difficulty": 4,
+      "msc_code": "53C22",
+      "prerequisites": [
+        "C055",
+        "C051"
+      ],
+      "description": "局部最短路径曲线",
+      "estimated_hours": 7.0
+    },
+    {
+      "id": "C057",
+      "name": "代数曲线",
+      "name_en": "Algebraic Curve",
+      "level": "L2",
+      "domain": "几何",
+      "difficulty": 4,
+      "msc_code": "14H99",
+      "prerequisites": [
+        "C023",
+        "C008"
+      ],
+      "description": "多项式零点集定义的曲线",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C058",
+      "name": "概形",
+      "name_en": "Scheme",
+      "level": "L3",
+      "domain": "几何",
+      "difficulty": 5,
+      "msc_code": "14A15",
+      "prerequisites": [
+        "C057",
+        "C030"
+      ],
+      "description": "代数几何的基本对象",
+      "estimated_hours": 15.0
+    },
+    {
+      "id": "C059",
+      "name": "层",
+      "name_en": "Sheaf",
+      "level": "L3",
+      "domain": "几何",
+      "difficulty": 5,
+      "msc_code": "14F05",
+      "prerequisites": [
+        "C058"
+      ],
+      "description": "局部到整体的粘合结构",
+      "estimated_hours": 12.0
+    },
+    {
+      "id": "C060",
+      "name": "上同调",
+      "name_en": "Cohomology",
+      "level": "L3",
+      "domain": "几何",
+      "difficulty": 5,
+      "msc_code": "14F43",
+      "prerequisites": [
+        "C059"
+      ],
+      "description": "层的全局截面障碍度量",
+      "estimated_hours": 15.0
+    },
+    {
+      "id": "C061",
+      "name": "拓扑空间",
+      "name_en": "Topological Space",
+      "level": "L1",
+      "domain": "拓扑",
+      "difficulty": 3,
+      "msc_code": "54A99",
+      "prerequisites": [
+        "C002",
+        "C033"
+      ],
+      "description": "具有开集族结构的集合",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C062",
+      "name": "开集",
+      "name_en": "Open Set",
+      "level": "L1",
+      "domain": "拓扑",
+      "difficulty": 3,
+      "msc_code": "54A99",
+      "prerequisites": [
+        "C061"
+      ],
+      "description": "拓扑的基本构成元素",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C063",
+      "name": "闭集",
+      "name_en": "Closed Set",
+      "level": "L1",
+      "domain": "拓扑",
+      "difficulty": 3,
+      "msc_code": "54A99",
+      "prerequisites": [
+        "C062"
+      ],
+      "description": "开集的补集",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C064",
+      "name": "连续映射",
+      "name_en": "Continuous Map",
+      "level": "L1",
+      "domain": "拓扑",
+      "difficulty": 3,
+      "msc_code": "54C05",
+      "prerequisites": [
+        "C061",
+        "C033"
+      ],
+      "description": "拓扑空间间的结构保持映射",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C065",
+      "name": "同胚",
+      "name_en": "Homeomorphism",
+      "level": "L1",
+      "domain": "拓扑",
+      "difficulty": 3,
+      "msc_code": "54C05",
+      "prerequisites": [
+        "C064"
+      ],
+      "description": "拓扑空间的等价关系",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C066",
+      "name": "连通性",
+      "name_en": "Connectedness",
+      "level": "L1",
+      "domain": "拓扑",
+      "difficulty": 3,
+      "msc_code": "54D05",
+      "prerequisites": [
+        "C061"
+      ],
+      "description": "空间不能被分割为不交开集",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C067",
+      "name": "道路连通",
+      "name_en": "Path Connectedness",
+      "level": "L1",
+      "domain": "拓扑",
+      "difficulty": 3,
+      "msc_code": "54D05",
+      "prerequisites": [
+        "C066"
+      ],
+      "description": "任意两点可由道路连接",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C068",
+      "name": "同伦",
+      "name_en": "Homotopy",
+      "level": "L2",
+      "domain": "拓扑",
+      "difficulty": 4,
+      "msc_code": "55P99",
+      "prerequisites": [
+        "C067",
+        "C064"
+      ],
+      "description": "映射间的连续变形",
+      "estimated_hours": 10.0
+    },
+    {
+      "id": "C069",
+      "name": "基本群",
+      "name_en": "Fundamental Group",
+      "level": "L2",
+      "domain": "拓扑",
+      "difficulty": 4,
+      "msc_code": "55Q05",
+      "prerequisites": [
+        "C068",
+        "C017"
+      ],
+      "description": "环路等价类的群结构",
+      "estimated_hours": 10.0
+    },
+    {
+      "id": "C070",
+      "name": "同调",
+      "name_en": "Homology",
+      "level": "L2",
+      "domain": "拓扑",
+      "difficulty": 4,
+      "msc_code": "55N99",
+      "prerequisites": [
+        "C069",
+        "C060"
+      ],
+      "description": "空间的代数不变量",
+      "estimated_hours": 12.0
+    },
+    {
+      "id": "C071",
+      "name": "素数",
+      "name_en": "Prime Number",
+      "level": "L0",
+      "domain": "数论",
+      "difficulty": 2,
+      "msc_code": "11A41",
+      "prerequisites": [
+        "C004",
+        "C005"
+      ],
+      "description": "大于1的最小正因子为自身的数",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C072",
+      "name": "整除",
+      "name_en": "Divisibility",
+      "level": "L0",
+      "domain": "数论",
+      "difficulty": 2,
+      "msc_code": "11A05",
+      "prerequisites": [
+        "C005"
+      ],
+      "description": "一个整数被另一个整数除尽",
+      "estimated_hours": 2.0
+    },
+    {
+      "id": "C073",
+      "name": "最大公因子",
+      "name_en": "GCD",
+      "level": "L0",
+      "domain": "数论",
+      "difficulty": 2,
+      "msc_code": "11A05",
+      "prerequisites": [
+        "C072"
+      ],
+      "description": "能整除多个整数的最大正整数",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C074",
+      "name": "同余",
+      "name_en": "Congruence",
+      "level": "L1",
+      "domain": "数论",
+      "difficulty": 3,
+      "msc_code": "11A07",
+      "prerequisites": [
+        "C072",
+        "C013"
+      ],
+      "description": "模意义下的等价关系",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C075",
+      "name": "欧拉函数",
+      "name_en": "Euler's Totient Function",
+      "level": "L1",
+      "domain": "数论",
+      "difficulty": 3,
+      "msc_code": "11A25",
+      "prerequisites": [
+        "C074"
+      ],
+      "description": "与n互素的剩余类个数",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C076",
+      "name": "费马小定理",
+      "name_en": "Fermat's Little Theorem",
+      "level": "L1",
+      "domain": "数论",
+      "difficulty": 3,
+      "msc_code": "11A07",
+      "prerequisites": [
+        "C074",
+        "C017"
+      ],
+      "description": "模素数的幂同余定理",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C077",
+      "name": "中国剩余定理",
+      "name_en": "Chinese Remainder Theorem",
+      "level": "L1",
+      "domain": "数论",
+      "difficulty": 3,
+      "msc_code": "11A07",
+      "prerequisites": [
+        "C074",
+        "C020"
+      ],
+      "description": "同余方程组的解结构",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C078",
+      "name": "二次剩余",
+      "name_en": "Quadratic Residue",
+      "level": "L2",
+      "domain": "数论",
+      "difficulty": 4,
+      "msc_code": "11A15",
+      "prerequisites": [
+        "C074"
+      ],
+      "description": "模意义下的平方数",
+      "estimated_hours": 6.0
+    },
+    {
+      "id": "C079",
+      "name": "狄利克雷特征",
+      "name_en": "Dirichlet Character",
+      "level": "L2",
+      "domain": "数论",
+      "difficulty": 4,
+      "msc_code": "11A25",
+      "prerequisites": [
+        "C074",
+        "C075"
+      ],
+      "description": "模q的群特征",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C080",
+      "name": "L函数",
+      "name_en": "L-function",
+      "level": "L3",
+      "domain": "数论",
+      "difficulty": 5,
+      "msc_code": "11M06",
+      "prerequisites": [
+        "C079",
+        "C039"
+      ],
+      "description": "解析数论的核心对象",
+      "estimated_hours": 15.0
+    },
+    {
+      "id": "C081",
+      "name": "图",
+      "name_en": "Graph",
+      "level": "L0",
+      "domain": "离散数学",
+      "difficulty": 2,
+      "msc_code": "05C99",
+      "prerequisites": [
+        "C002",
+        "C001"
+      ],
+      "description": "顶点和边的组合结构",
+      "estimated_hours": 5.0
+    },
+    {
+      "id": "C082",
+      "name": "路径",
+      "name_en": "Path",
+      "level": "L0",
+      "domain": "离散数学",
+      "difficulty": 2,
+      "msc_code": "05C38",
+      "prerequisites": [
+        "C081"
+      ],
+      "description": "图中顶点的序列连接",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C083",
+      "name": "树",
+      "name_en": "Tree",
+      "level": "L1",
+      "domain": "离散数学",
+      "difficulty": 2,
+      "msc_code": "05C05",
+      "prerequisites": [
+        "C082"
+      ],
+      "description": "无环连通图",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C084",
+      "name": "连通图",
+      "name_en": "Connected Graph",
+      "level": "L0",
+      "domain": "离散数学",
+      "difficulty": 2,
+      "msc_code": "05C40",
+      "prerequisites": [
+        "C081",
+        "C082"
+      ],
+      "description": "任意两点间存在路径的图",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C085",
+      "name": "组合数",
+      "name_en": "Combination",
+      "level": "L0",
+      "domain": "离散数学",
+      "difficulty": 2,
+      "msc_code": "05A10",
+      "prerequisites": [
+        "C004"
+      ],
+      "description": "从n个元素中选k个的方法数",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C086",
+      "name": "排列",
+      "name_en": "Permutation",
+      "level": "L0",
+      "domain": "离散数学",
+      "difficulty": 2,
+      "msc_code": "05A05",
+      "prerequisites": [
+        "C004"
+      ],
+      "description": "元素的重新排列",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C087",
+      "name": "二项式定理",
+      "name_en": "Binomial Theorem",
+      "level": "L1",
+      "domain": "离散数学",
+      "difficulty": 2,
+      "msc_code": "11B65",
+      "prerequisites": [
+        "C085"
+      ],
+      "description": "(a+b)^n的展开公式",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C088",
+      "name": "算法",
+      "name_en": "Algorithm",
+      "level": "L1",
+      "domain": "离散数学",
+      "difficulty": 3,
+      "msc_code": "68W01",
+      "prerequisites": [
+        "C031",
+        "C009"
+      ],
+      "description": "解决问题的明确步骤序列",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C089",
+      "name": "复杂度",
+      "name_en": "Complexity",
+      "level": "L2",
+      "domain": "离散数学",
+      "difficulty": 4,
+      "msc_code": "68Q15",
+      "prerequisites": [
+        "C088"
+      ],
+      "description": "算法资源消耗的度量",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C090",
+      "name": "图灵机",
+      "name_en": "Turing Machine",
+      "level": "L2",
+      "domain": "离散数学",
+      "difficulty": 4,
+      "msc_code": "68Q05",
+      "prerequisites": [
+        "C088",
+        "C009"
+      ],
+      "description": "计算的抽象模型",
+      "estimated_hours": 10.0
+    },
+    {
+      "id": "C091",
+      "name": "表示",
+      "name_en": "Representation",
+      "level": "L2",
+      "domain": "交叉领域",
+      "difficulty": 4,
+      "msc_code": "20C99",
+      "prerequisites": [
+        "C017",
+        "C025",
+        "C026"
+      ],
+      "description": "抽象结构的线性实现",
+      "estimated_hours": 10.0
+    },
+    {
+      "id": "C092",
+      "name": "群表示",
+      "name_en": "Group Representation",
+      "level": "L2",
+      "domain": "交叉领域",
+      "difficulty": 4,
+      "msc_code": "20C99",
+      "prerequisites": [
+        "C091",
+        "C017"
+      ],
+      "description": "群的线性表示",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C093",
+      "name": "李群",
+      "name_en": "Lie Group",
+      "level": "L3",
+      "domain": "交叉领域",
+      "difficulty": 5,
+      "msc_code": "22E99",
+      "prerequisites": [
+        "C017",
+        "C052",
+        "C034"
+      ],
+      "description": "光滑流形上的群",
+      "estimated_hours": 15.0
+    },
+    {
+      "id": "C094",
+      "name": "李代数",
+      "name_en": "Lie Algebra",
+      "level": "L3",
+      "domain": "交叉领域",
+      "difficulty": 5,
+      "msc_code": "17B99",
+      "prerequisites": [
+        "C093",
+        "C025"
+      ],
+      "description": "李群的无穷小生成元",
+      "estimated_hours": 12.0
+    },
+    {
+      "id": "C095",
+      "name": "自守形式",
+      "name_en": "Automorphic Form",
+      "level": "L3",
+      "domain": "交叉领域",
+      "difficulty": 5,
+      "msc_code": "11F99",
+      "prerequisites": [
+        "C080",
+        "C093"
+      ],
+      "description": "对称函数的推广",
+      "estimated_hours": 15.0
+    },
+    {
+      "id": "C096",
+      "name": "朗兰兹纲领",
+      "name_en": "Langlands Program",
+      "level": "L3",
+      "domain": "交叉领域",
+      "difficulty": 5,
+      "msc_code": "11R39",
+      "prerequisites": [
+        "C092",
+        "C080",
+        "C095"
+      ],
+      "description": "数论与表示论的统一框架",
+      "estimated_hours": 20.0
+    },
+    {
+      "id": "C097",
+      "name": "范畴",
+      "name_en": "Category",
+      "level": "L2",
+      "domain": "交叉领域",
+      "difficulty": 4,
+      "msc_code": "18A05",
+      "prerequisites": [
+        "C002",
+        "C003",
+        "C016"
+      ],
+      "description": "对象与态射的结构",
+      "estimated_hours": 10.0
+    },
+    {
+      "id": "C098",
+      "name": "函子",
+      "name_en": "Functor",
+      "level": "L2",
+      "domain": "交叉领域",
+      "difficulty": 4,
+      "msc_code": "18A99",
+      "prerequisites": [
+        "C097"
+      ],
+      "description": "范畴间的结构保持映射",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C099",
+      "name": "泛性质",
+      "name_en": "Universal Property",
+      "level": "L2",
+      "domain": "交叉领域",
+      "difficulty": 4,
+      "msc_code": "18A40",
+      "prerequisites": [
+        "C097"
+      ],
+      "description": "通过映射性质定义构造",
+      "estimated_hours": 8.0
+    },
+    {
+      "id": "C100",
+      "name": "导出范畴",
+      "name_en": "Derived Category",
+      "level": "L3",
+      "domain": "交叉领域",
+      "difficulty": 5,
+      "msc_code": "18E30",
+      "prerequisites": [
+        "C097",
+        "C060",
+        "C098"
+      ],
+      "description": "复形的局部化范畴",
+      "estimated_hours": 18.0
+    }
+  ],
+  "edges": [
+    {
+      "from": "C001",
+      "to": "C002"
+    },
+    {
+      "from": "C001",
+      "to": "C013"
+    },
+    {
+      "from": "C001",
+      "to": "C014"
+    },
+    {
+      "from": "C001",
+      "to": "C081"
+    },
+    {
+      "from": "C002",
+      "to": "C003"
+    },
+    {
+      "from": "C002",
+      "to": "C004"
+    },
+    {
+      "from": "C002",
+      "to": "C013"
+    },
+    {
+      "from": "C002",
+      "to": "C014"
+    },
+    {
+      "from": "C002",
+      "to": "C015"
+    },
+    {
+      "from": "C002",
+      "to": "C016"
+    },
+    {
+      "from": "C002",
+      "to": "C061"
+    },
+    {
+      "from": "C002",
+      "to": "C081"
+    },
+    {
+      "from": "C002",
+      "to": "C097"
+    },
+    {
+      "from": "C004",
+      "to": "C005"
+    },
+    {
+      "from": "C004",
+      "to": "C031"
+    },
+    {
+      "from": "C004",
+      "to": "C071"
+    },
+    {
+      "from": "C004",
+      "to": "C085"
+    },
+    {
+      "from": "C004",
+      "to": "C086"
+    },
+    {
+      "from": "C005",
+      "to": "C006"
+    },
+    {
+      "from": "C005",
+      "to": "C071"
+    },
+    {
+      "from": "C005",
+      "to": "C072"
+    },
+    {
+      "from": "C006",
+      "to": "C007"
+    },
+    {
+      "from": "C007",
+      "to": "C008"
+    },
+    {
+      "from": "C007",
+      "to": "C032"
+    },
+    {
+      "from": "C007",
+      "to": "C041"
+    },
+    {
+      "from": "C009",
+      "to": "C010"
+    },
+    {
+      "from": "C009",
+      "to": "C088"
+    },
+    {
+      "from": "C009",
+      "to": "C090"
+    },
+    {
+      "from": "C010",
+      "to": "C011"
+    },
+    {
+      "from": "C011",
+      "to": "C012"
+    },
+    {
+      "from": "C003",
+      "to": "C016"
+    },
+    {
+      "from": "C003",
+      "to": "C021"
+    },
+    {
+      "from": "C003",
+      "to": "C026"
+    },
+    {
+      "from": "C003",
+      "to": "C031"
+    },
+    {
+      "from": "C003",
+      "to": "C033"
+    },
+    {
+      "from": "C003",
+      "to": "C044"
+    },
+    {
+      "from": "C003",
+      "to": "C097"
+    },
+    {
+      "from": "C016",
+      "to": "C017"
+    },
+    {
+      "from": "C016",
+      "to": "C097"
+    },
+    {
+      "from": "C013",
+      "to": "C017"
+    },
+    {
+      "from": "C013",
+      "to": "C020"
+    },
+    {
+      "from": "C013",
+      "to": "C074"
+    },
+    {
+      "from": "C017",
+      "to": "C018"
+    },
+    {
+      "from": "C017",
+      "to": "C021"
+    },
+    {
+      "from": "C017",
+      "to": "C023"
+    },
+    {
+      "from": "C017",
+      "to": "C025"
+    },
+    {
+      "from": "C017",
+      "to": "C069"
+    },
+    {
+      "from": "C017",
+      "to": "C076"
+    },
+    {
+      "from": "C017",
+      "to": "C091"
+    },
+    {
+      "from": "C017",
+      "to": "C092"
+    },
+    {
+      "from": "C017",
+      "to": "C093"
+    },
+    {
+      "from": "C018",
+      "to": "C019"
+    },
+    {
+      "from": "C019",
+      "to": "C020"
+    },
+    {
+      "from": "C021",
+      "to": "C022"
+    },
+    {
+      "from": "C023",
+      "to": "C024"
+    },
+    {
+      "from": "C023",
+      "to": "C030"
+    },
+    {
+      "from": "C023",
+      "to": "C057"
+    },
+    {
+      "from": "C024",
+      "to": "C025"
+    },
+    {
+      "from": "C025",
+      "to": "C026"
+    },
+    {
+      "from": "C025",
+      "to": "C027"
+    },
+    {
+      "from": "C025",
+      "to": "C030"
+    },
+    {
+      "from": "C025",
+      "to": "C046"
+    },
+    {
+      "from": "C025",
+      "to": "C047"
+    },
+    {
+      "from": "C025",
+      "to": "C053"
+    },
+    {
+      "from": "C025",
+      "to": "C091"
+    },
+    {
+      "from": "C025",
+      "to": "C094"
+    },
+    {
+      "from": "C026",
+      "to": "C027"
+    },
+    {
+      "from": "C026",
+      "to": "C091"
+    },
+    {
+      "from": "C027",
+      "to": "C028"
+    },
+    {
+      "from": "C027",
+      "to": "C029"
+    },
+    {
+      "from": "C028",
+      "to": "C029"
+    },
+    {
+      "from": "C031",
+      "to": "C032"
+    },
+    {
+      "from": "C031",
+      "to": "C038"
+    },
+    {
+      "from": "C031",
+      "to": "C088"
+    },
+    {
+      "from": "C032",
+      "to": "C033"
+    },
+    {
+      "from": "C032",
+      "to": "C034"
+    },
+    {
+      "from": "C032",
+      "to": "C038"
+    },
+    {
+      "from": "C032",
+      "to": "C040"
+    },
+    {
+      "from": "C032",
+      "to": "C041"
+    },
+    {
+      "from": "C032",
+      "to": "C042"
+    },
+    {
+      "from": "C034",
+      "to": "C035"
+    },
+    {
+      "from": "C034",
+      "to": "C036"
+    },
+    {
+      "from": "C034",
+      "to": "C037"
+    },
+    {
+      "from": "C034",
+      "to": "C045"
+    },
+    {
+      "from": "C034",
+      "to": "C051"
+    },
+    {
+      "from": "C034",
+      "to": "C093"
+    },
+    {
+      "from": "C036",
+      "to": "C037"
+    },
+    {
+      "from": "C038",
+      "to": "C039"
+    },
+    {
+      "from": "C008",
+      "to": "C039"
+    },
+    {
+      "from": "C008",
+      "to": "C057"
+    },
+    {
+      "from": "C033",
+      "to": "C040"
+    },
+    {
+      "from": "C033",
+      "to": "C052"
+    },
+    {
+      "from": "C033",
+      "to": "C061"
+    },
+    {
+      "from": "C033",
+      "to": "C064"
+    },
+    {
+      "from": "C041",
+      "to": "C042"
+    },
+    {
+      "from": "C041",
+      "to": "C043"
+    },
+    {
+      "from": "C041",
+      "to": "C046"
+    },
+    {
+      "from": "C041",
+      "to": "C052"
+    },
+    {
+      "from": "C015",
+      "to": "C044"
+    },
+    {
+      "from": "C044",
+      "to": "C045"
+    },
+    {
+      "from": "C047",
+      "to": "C048"
+    },
+    {
+      "from": "C047",
+      "to": "C050"
+    },
+    {
+      "from": "C047",
+      "to": "C054"
+    },
+    {
+      "from": "C048",
+      "to": "C049"
+    },
+    {
+      "from": "C050",
+      "to": "C051"
+    },
+    {
+      "from": "C042",
+      "to": "C052"
+    },
+    {
+      "from": "C052",
+      "to": "C053"
+    },
+    {
+      "from": "C052",
+      "to": "C054"
+    },
+    {
+      "from": "C052",
+      "to": "C055"
+    },
+    {
+      "from": "C052",
+      "to": "C093"
+    },
+    {
+      "from": "C054",
+      "to": "C055"
+    },
+    {
+      "from": "C055",
+      "to": "C056"
+    },
+    {
+      "from": "C051",
+      "to": "C056"
+    },
+    {
+      "from": "C057",
+      "to": "C058"
+    },
+    {
+      "from": "C030",
+      "to": "C058"
+    },
+    {
+      "from": "C058",
+      "to": "C059"
+    },
+    {
+      "from": "C059",
+      "to": "C060"
+    },
+    {
+      "from": "C061",
+      "to": "C062"
+    },
+    {
+      "from": "C061",
+      "to": "C064"
+    },
+    {
+      "from": "C061",
+      "to": "C066"
+    },
+    {
+      "from": "C062",
+      "to": "C063"
+    },
+    {
+      "from": "C064",
+      "to": "C065"
+    },
+    {
+      "from": "C064",
+      "to": "C068"
+    },
+    {
+      "from": "C066",
+      "to": "C067"
+    },
+    {
+      "from": "C067",
+      "to": "C068"
+    },
+    {
+      "from": "C068",
+      "to": "C069"
+    },
+    {
+      "from": "C069",
+      "to": "C070"
+    },
+    {
+      "from": "C060",
+      "to": "C070"
+    },
+    {
+      "from": "C060",
+      "to": "C100"
+    },
+    {
+      "from": "C072",
+      "to": "C073"
+    },
+    {
+      "from": "C072",
+      "to": "C074"
+    },
+    {
+      "from": "C074",
+      "to": "C075"
+    },
+    {
+      "from": "C074",
+      "to": "C076"
+    },
+    {
+      "from": "C074",
+      "to": "C077"
+    },
+    {
+      "from": "C074",
+      "to": "C078"
+    },
+    {
+      "from": "C074",
+      "to": "C079"
+    },
+    {
+      "from": "C020",
+      "to": "C077"
+    },
+    {
+      "from": "C075",
+      "to": "C079"
+    },
+    {
+      "from": "C079",
+      "to": "C080"
+    },
+    {
+      "from": "C039",
+      "to": "C080"
+    },
+    {
+      "from": "C081",
+      "to": "C082"
+    },
+    {
+      "from": "C081",
+      "to": "C084"
+    },
+    {
+      "from": "C082",
+      "to": "C083"
+    },
+    {
+      "from": "C082",
+      "to": "C084"
+    },
+    {
+      "from": "C085",
+      "to": "C087"
+    },
+    {
+      "from": "C088",
+      "to": "C089"
+    },
+    {
+      "from": "C088",
+      "to": "C090"
+    },
+    {
+      "from": "C091",
+      "to": "C092"
+    },
+    {
+      "from": "C093",
+      "to": "C094"
+    },
+    {
+      "from": "C093",
+      "to": "C095"
+    },
+    {
+      "from": "C080",
+      "to": "C095"
+    },
+    {
+      "from": "C080",
+      "to": "C096"
+    },
+    {
+      "from": "C092",
+      "to": "C096"
+    },
+    {
+      "from": "C095",
+      "to": "C096"
+    },
+    {
+      "from": "C097",
+      "to": "C098"
+    },
+    {
+      "from": "C097",
+      "to": "C099"
+    },
+    {
+      "from": "C097",
+      "to": "C100"
+    },
+    {
+      "from": "C098",
+      "to": "C100"
+    }
+  ]
+}

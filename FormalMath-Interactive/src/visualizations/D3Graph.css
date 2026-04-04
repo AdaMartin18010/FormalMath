@@ -1,0 +1,231 @@
+/* D3Graph - 力导向图组件样式 */
+
+.d3graph-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.d3graph-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.d3graph-svg .graph-container {
+  transform-origin: center;
+}
+
+/* 节点样式 */
+.d3graph-svg .nodes .node {
+  transition: opacity 0.2s ease;
+}
+
+.d3graph-svg .nodes .node circle {
+  transition: all 0.2s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.d3graph-svg .nodes .node:hover circle {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+  stroke-width: 3;
+}
+
+.d3graph-svg .nodes .node text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
+  text-shadow: 
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* 连接线样式 */
+.d3graph-svg .links line {
+  transition: opacity 0.2s ease, stroke-width 0.2s ease;
+}
+
+.d3graph-svg .links line:hover {
+  stroke-width: 3;
+  stroke-opacity: 1;
+}
+
+/* 控制按钮 */
+.d3graph-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.d3graph-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #495057;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.d3graph-btn:hover {
+  background: #fff;
+  color: #228be6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.d3graph-btn:active {
+  transform: translateY(0);
+}
+
+/* Tooltip */
+.d3graph-tooltip-container {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.d3graph-tooltip {
+  background: rgba(33, 37, 41, 0.95);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  max-width: 250px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.d3graph-tooltip strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.d3graph-tooltip-type {
+  color: #adb5bd;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+.d3graph-tooltip-data {
+  color: #ced4da;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+/* 统计信息 */
+.d3graph-stats {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 6px;
+  font-size: 12px;
+  color: #6c757d;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 搜索高亮 */
+.d3graph-container.search-active .node {
+  opacity: 0.2;
+}
+
+.d3graph-container.search-active .node.matched {
+  opacity: 1;
+}
+
+.d3graph-container.search-active .node.matched circle {
+  stroke: #FF6B6B;
+  stroke-width: 3;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    stroke-opacity: 1;
+  }
+  50% {
+    stroke-opacity: 0.5;
+  }
+}
+
+/* 选中状态 */
+.d3graph-svg .nodes .node.selected circle {
+  stroke: #FF6B6B;
+  stroke-width: 4;
+  filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.5));
+}
+
+/* 拖拽状态 */
+.d3graph-svg .nodes .node.dragging circle {
+  stroke: #228be6;
+  stroke-width: 3;
+  filter: drop-shadow(0 4px 12px rgba(34, 139, 230, 0.4));
+}
+
+/* 暗色模式适配 */
+@media (prefers-color-scheme: dark) {
+  .d3graph-container {
+    background: linear-gradient(135deg, #1a1d21 0%, #212529 100%);
+  }
+
+  .d3graph-svg .nodes .node text {
+    text-shadow: 
+      -1px -1px 0 #212529,
+      1px -1px 0 #212529,
+      -1px 1px 0 #212529,
+      1px 1px 0 #212529;
+    fill: #e9ecef;
+  }
+
+  .d3graph-btn {
+    background: rgba(33, 37, 41, 0.95);
+    color: #adb5bd;
+  }
+
+  .d3graph-btn:hover {
+    background: #2c3238;
+    color: #74c0fc;
+  }
+
+  .d3graph-stats {
+    background: rgba(33, 37, 41, 0.9);
+    color: #adb5bd;
+  }
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .d3graph-controls {
+    top: 8px;
+    right: 8px;
+  }
+
+  .d3graph-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .d3graph-stats {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}

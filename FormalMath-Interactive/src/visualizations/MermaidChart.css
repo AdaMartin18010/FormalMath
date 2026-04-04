@@ -1,0 +1,359 @@
+/* MermaidChart - Mermaid图表组件样式 */
+
+.mermaid-chart-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.mermaid-chart-container.interactive {
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.mermaid-chart-container.interactive:hover {
+  border-color: #228be6;
+}
+
+/* 工具栏 */
+.mermaid-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 1px solid #dee2e6;
+  gap: 12px;
+}
+
+.mermaid-toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mermaid-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background: #fff;
+  color: #495057;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mermaid-btn:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+  color: #228be6;
+  transform: translateY(-1px);
+}
+
+.mermaid-btn:active {
+  transform: translateY(0);
+}
+
+.mermaid-btn svg {
+  flex-shrink: 0;
+}
+
+.mermaid-zoom-level {
+  min-width: 45px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #495057;
+  font-family: 'SF Mono', Monaco, monospace;
+}
+
+/* 图表包装器 */
+.mermaid-chart-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #fafafa;
+  background-image: 
+    radial-gradient(circle at 1px 1px, #dee2e6 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* SVG 包装器 */
+.mermaid-svg-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.mermaid-svg-wrapper svg {
+  max-width: 100%;
+  max-height: 100%;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
+}
+
+/* 节点样式增强 */
+.mermaid-svg-wrapper .node {
+  transition: all 0.2s ease;
+}
+
+.mermaid-svg-wrapper .node:hover {
+  filter: brightness(1.05);
+}
+
+.mermaid-svg-wrapper .node rect,
+.mermaid-svg-wrapper .node circle,
+.mermaid-svg-wrapper .node ellipse,
+.mermaid-svg-wrapper .node polygon {
+  transition: all 0.2s ease;
+}
+
+.mermaid-svg-wrapper .node:hover rect,
+.mermaid-svg-wrapper .node:hover circle,
+.mermaid-svg-wrapper .node:hover ellipse,
+.mermaid-svg-wrapper .node:hover polygon {
+  stroke-width: 3;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* 边线样式 */
+.mermaid-svg-wrapper .edgePath path {
+  stroke-linecap: round;
+  transition: all 0.2s ease;
+}
+
+.mermaid-svg-wrapper .edgeLabel {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* 加载状态 */
+.mermaid-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #868e96;
+}
+
+.mermaid-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e9ecef;
+  border-top-color: #228be6;
+  border-radius: 50%;
+  animation: mermaidSpin 1s linear infinite;
+}
+
+@keyframes mermaidSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 错误状态 */
+.mermaid-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  text-align: center;
+  color: #e74c3c;
+}
+
+.mermaid-error-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mermaid-error-message {
+  font-size: 13px;
+  color: #868e96;
+  max-width: 400px;
+  word-break: break-word;
+}
+
+/* 空状态 */
+.mermaid-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: #adb5bd;
+}
+
+/* 提示信息 */
+.mermaid-hint {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 8px 16px;
+  background: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  font-size: 11px;
+  color: #868e96;
+}
+
+.mermaid-hint span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 暗色模式适配 */
+@media (prefers-color-scheme: dark) {
+  .mermaid-chart-container {
+    background: #212529;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .mermaid-toolbar {
+    background: linear-gradient(135deg, #1a1d21 0%, #212529 100%);
+    border-bottom-color: #343a40;
+  }
+
+  .mermaid-btn {
+    background: #2c3238;
+    border-color: #495057;
+    color: #adb5bd;
+  }
+
+  .mermaid-btn:hover {
+    background: #343a40;
+    border-color: #6c757d;
+    color: #74c0fc;
+  }
+
+  .mermaid-zoom-level {
+    color: #adb5bd;
+  }
+
+  .mermaid-chart-wrapper {
+    background: #1a1d21;
+    background-image: 
+      radial-gradient(circle at 1px 1px, #343a40 1px, transparent 0);
+  }
+
+  .mermaid-svg-wrapper .edgeLabel {
+    background: rgba(33, 37, 41, 0.9);
+    color: #e9ecef;
+  }
+
+  .mermaid-hint {
+    background: #1a1d21;
+    border-top-color: #343a40;
+    color: #868e96;
+  }
+
+  .mermaid-loading {
+    color: #868e96;
+  }
+
+  .mermaid-spinner {
+    border-color: #343a40;
+    border-top-color: #74c0fc;
+  }
+
+  .mermaid-empty {
+    color: #6c757d;
+  }
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .mermaid-toolbar {
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+
+  .mermaid-toolbar-group {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mermaid-btn span {
+    display: none;
+  }
+
+  .mermaid-hint {
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 10px;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  .mermaid-chart-container {
+    box-shadow: none;
+    border: 1px solid #dee2e6;
+  }
+
+  .mermaid-toolbar,
+  .mermaid-hint {
+    display: none;
+  }
+
+  .mermaid-chart-wrapper {
+    background: white;
+  }
+}
+
+/* 不同图表类型的特定样式 */
+.mermaid-svg-wrapper .flowchart-link {
+  stroke-dasharray: 5;
+  animation: dash 30s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+/* 高亮动画 */
+@keyframes nodePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.mermaid-svg-wrapper .node.highlighted {
+  animation: nodePulse 1s ease-in-out infinite;
+}
+
+/* 选中状态 */
+.mermaid-svg-wrapper .node.selected rect,
+.mermaid-svg-wrapper .node.selected circle,
+.mermaid-svg-wrapper .node.selected ellipse,
+.mermaid-svg-wrapper .node.selected polygon {
+  stroke: #FF6B6B;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.5));
+}

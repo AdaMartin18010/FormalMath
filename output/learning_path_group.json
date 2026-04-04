@@ -1,0 +1,97 @@
+{
+  "path": [
+    {
+      "id": "C001",
+      "name": "关系",
+      "name_en": "Relation",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "04A05",
+      "prerequisites": [],
+      "description": "数学对象之间的基本联系",
+      "estimated_hours": 2.0
+    },
+    {
+      "id": "C002",
+      "name": "集合",
+      "name_en": "Set",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "03Exx",
+      "prerequisites": [
+        "C001"
+      ],
+      "description": "数学对象的汇集",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C003",
+      "name": "函数",
+      "name_en": "Function",
+      "level": "L0",
+      "domain": "基础数学",
+      "difficulty": 1,
+      "msc_code": "26A09",
+      "prerequisites": [
+        "C002"
+      ],
+      "description": "集合间的映射关系",
+      "estimated_hours": 4.0
+    },
+    {
+      "id": "C013",
+      "name": "等价关系",
+      "name_en": "Equivalence Relation",
+      "level": "L1",
+      "domain": "基础数学",
+      "difficulty": 2,
+      "msc_code": "04A05",
+      "prerequisites": [
+        "C001",
+        "C002"
+      ],
+      "description": "自反、对称、传递的关系",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C016",
+      "name": "二元运算",
+      "name_en": "Binary Operation",
+      "level": "L0",
+      "domain": "代数",
+      "difficulty": 2,
+      "msc_code": "08A99",
+      "prerequisites": [
+        "C002",
+        "C003"
+      ],
+      "description": "集合上的二元函数",
+      "estimated_hours": 3.0
+    },
+    {
+      "id": "C017",
+      "name": "群",
+      "name_en": "Group",
+      "level": "L1",
+      "domain": "代数",
+      "difficulty": 3,
+      "msc_code": "20A05",
+      "prerequisites": [
+        "C016",
+        "C013"
+      ],
+      "description": "具有逆元的结合运算结构",
+      "estimated_hours": 8.0
+    }
+  ],
+  "summary": {
+    "total_concepts": 6,
+    "total_hours": 23.0,
+    "by_domain": {
+      "基础数学": 4,
+      "代数": 2
+    }
+  }
+}
