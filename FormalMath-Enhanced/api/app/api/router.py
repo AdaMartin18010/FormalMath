@@ -2,7 +2,7 @@
 API路由聚合
 """
 from fastapi import APIRouter
-from . import knowledge_graph, learning_path, tasks, health
+from . import knowledge_graph, learning_path, tasks, health, search, recommendation
 
 api_router = APIRouter()
 
@@ -29,4 +29,16 @@ api_router.include_router(
     tasks.router,
     prefix="/tasks",
     tags=["异步任务"]
+)
+
+api_router.include_router(
+    search.router,
+    prefix="/search",
+    tags=["语义搜索"]
+)
+
+api_router.include_router(
+    recommendation.router,
+    prefix="/recommendations",
+    tags=["推荐系统"]
 )

@@ -1,0 +1,672 @@
+{
+  "version": "2026.04",
+  "alignment": {
+    "wikipedia_version": "2024",
+    "formalmath_version": "2026.04",
+    "last_updated": "2026-04-04",
+    "report_id": "ALIGN.CM.001"
+  },
+  "metadata": {
+    "total_categories": 8,
+    "total_concepts": 156,
+    "average_coverage": 83.75,
+    "languages": ["zh", "en"]
+  },
+  "categories": [
+    {
+      "id": "CM.01",
+      "name": "Numerical Linear Algebra",
+      "name_zh": "数值线性代数",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Numerical_linear_algebra",
+      "wikipedia_title": "Numerical linear algebra",
+      "msc_codes": ["65Fxx", "65G50", "65Y05"],
+      "coverage": 85,
+      "formalmath_docs": [
+        "docs/08-计算数学/01-数值分析.md",
+        "docs/08-计算数学/01-数值分析-增强版.md",
+        "docs/02-代数结构/06-技术实现参考/数值计算/04-数值线性代数-国际标准版.md",
+        "docs/00-核心概念理解三问/11-核心定理多表征/63-奇异值分解-五种表征.md",
+        "docs/00-核心概念理解三问/11-核心定理多表征/64-Gram-Schmidt正交化-五种表征.md"
+      ],
+      "concepts": [
+        {
+          "name": "Gaussian elimination",
+          "name_zh": "高斯消元法",
+          "type": "algorithm",
+          "msc": "65F05",
+          "complexity": "O(n³)",
+          "formalmath_refs": ["01-数值分析-5.1"],
+          "dependencies": ["matrix operations"]
+        },
+        {
+          "name": "LU decomposition",
+          "name_zh": "LU分解",
+          "type": "matrix_factorization",
+          "msc": "65F05",
+          "formalmath_refs": ["01-数值分析-5.2"],
+          "dependencies": ["Gaussian elimination"]
+        },
+        {
+          "name": "QR decomposition",
+          "name_zh": "QR分解",
+          "type": "matrix_factorization",
+          "msc": "65F25",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": ["Gram-Schmidt", "Householder reflections"]
+        },
+        {
+          "name": "Cholesky decomposition",
+          "name_zh": "Cholesky分解",
+          "type": "matrix_factorization",
+          "msc": "65F05",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": ["positive definite matrix"]
+        },
+        {
+          "name": "Singular Value Decomposition",
+          "name_zh": "奇异值分解",
+          "type": "matrix_factorization",
+          "msc": "65F55",
+          "formalmath_refs": ["00-核心概念理解三问/11-核心定理多表征/63-奇异值分解-五种表征.md"],
+          "dependencies": ["eigenvalue decomposition"]
+        },
+        {
+          "name": "Jacobi iteration",
+          "name_zh": "雅可比迭代",
+          "type": "iterative_method",
+          "msc": "65F10",
+          "formalmath_refs": ["01-数值分析-5.3"],
+          "dependencies": ["diagonal dominance"]
+        },
+        {
+          "name": "Gauss-Seidel iteration",
+          "name_zh": "高斯-赛德尔迭代",
+          "type": "iterative_method",
+          "msc": "65F10",
+          "formalmath_refs": ["01-数值分析-5.3"],
+          "dependencies": ["Jacobi iteration"]
+        },
+        {
+          "name": "Conjugate Gradient",
+          "name_zh": "共轭梯度法",
+          "type": "iterative_method",
+          "msc": "65F10",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": ["Krylov subspace"]
+        },
+        {
+          "name": "GMRES",
+          "name_zh": "广义最小残差法",
+          "type": "iterative_method",
+          "msc": "65F10",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": ["Arnoldi iteration"]
+        },
+        {
+          "name": "Power iteration",
+          "name_zh": "幂迭代",
+          "type": "eigenvalue_algorithm",
+          "msc": "65F15",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": []
+        },
+        {
+          "name": "QR algorithm",
+          "name_zh": "QR算法",
+          "type": "eigenvalue_algorithm",
+          "msc": "65F15",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": ["QR decomposition"]
+        },
+        {
+          "name": "Lanczos algorithm",
+          "name_zh": "Lanczos算法",
+          "type": "eigenvalue_algorithm",
+          "msc": "65F15",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": ["tridiagonalization"]
+        }
+      ]
+    },
+    {
+      "id": "CM.02",
+      "name": "Finite Element Method",
+      "name_zh": "有限元方法",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Finite_element_method",
+      "wikipedia_title": "Finite element method",
+      "msc_codes": ["65N30", "65N15", "65N50"],
+      "coverage": 75,
+      "formalmath_docs": [
+        "docs/03-分析学/06-偏微分方程/02-Sobolev空间系统阐述.md",
+        "docs/03-分析学/06-偏微分方程/07-Sobolev空间与弱解-深度扩展版.md",
+        "docs/08-计算数学/01-数值分析-增强版.md",
+        "docs/12-应用数学/11-物理数学-深化版.md"
+      ],
+      "concepts": [
+        {
+          "name": "Weak formulation",
+          "name_zh": "弱形式",
+          "type": "theoretical_foundation",
+          "msc": "65N22",
+          "formalmath_refs": ["06-偏微分方程/07"],
+          "dependencies": ["Sobolev spaces"]
+        },
+        {
+          "name": "Galerkin method",
+          "name_zh": "Galerkin方法",
+          "type": "discretization_method",
+          "msc": "65N30",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": ["weak formulation"]
+        },
+        {
+          "name": "Mesh generation",
+          "name_zh": "网格生成",
+          "type": "preprocessing",
+          "msc": "65N50",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": []
+        },
+        {
+          "name": "Shape functions",
+          "name_zh": "形函数",
+          "type": "basis_function",
+          "msc": "65N30",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": []
+        },
+        {
+          "name": "Error estimation",
+          "name_zh": "误差估计",
+          "type": "analysis",
+          "msc": "65N15",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": ["Galerkin method"]
+        },
+        {
+          "name": "Convergence analysis",
+          "name_zh": "收敛性分析",
+          "type": "analysis",
+          "msc": "65N12",
+          "formalmath_refs": ["01-数值分析-增强版"],
+          "dependencies": ["error estimation"]
+        }
+      ]
+    },
+    {
+      "id": "CM.03",
+      "name": "Numerical Optimization",
+      "name_zh": "数值优化",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mathematical_optimization",
+      "wikipedia_title": "Mathematical optimization",
+      "msc_codes": ["90Cxx", "65Kxx", "49Mxx"],
+      "coverage": 90,
+      "formalmath_docs": [
+        "docs/08-计算数学/02-优化理论.md",
+        "docs/08-计算数学/02-优化理论-增强版.md",
+        "docs/08-计算数学/03-优化算法.md",
+        "docs/08-计算数学/03-优化算法-增强版.md"
+      ],
+      "concepts": [
+        {
+          "name": "Gradient descent",
+          "name_zh": "梯度下降",
+          "type": "optimization_algorithm",
+          "msc": "90C06",
+          "complexity": "O(1/ε)",
+          "formalmath_refs": ["03-优化算法"],
+          "dependencies": ["gradient"]
+        },
+        {
+          "name": "Newton's method",
+          "name_zh": "牛顿法",
+          "type": "optimization_algorithm",
+          "msc": "90C53",
+          "complexity": "quadratic convergence",
+          "formalmath_refs": ["01-数值分析-6.2", "03-优化算法"],
+          "dependencies": ["Hessian matrix"]
+        },
+        {
+          "name": "Quasi-Newton methods",
+          "name_zh": "拟牛顿法",
+          "type": "optimization_algorithm",
+          "msc": "90C53",
+          "formalmath_refs": ["03-优化算法"],
+          "variants": ["BFGS", "DFP", "SR1"],
+          "dependencies": ["Newton's method"]
+        },
+        {
+          "name": "Conjugate gradient",
+          "name_zh": "共轭梯度法",
+          "type": "optimization_algorithm",
+          "msc": "90C52",
+          "formalmath_refs": ["03-优化算法"],
+          "dependencies": []
+        },
+        {
+          "name": "Linear programming",
+          "name_zh": "线性规划",
+          "type": "constrained_optimization",
+          "msc": "90C05",
+          "formalmath_refs": ["02-优化理论"],
+          "algorithms": ["Simplex", "Interior point"]
+        },
+        {
+          "name": "KKT conditions",
+          "name_zh": "KKT条件",
+          "type": "optimality_condition",
+          "msc": "90C46",
+          "formalmath_refs": ["02-优化理论-增强版"],
+          "dependencies": ["Lagrange multipliers"]
+        },
+        {
+          "name": "Convex optimization",
+          "name_zh": "凸优化",
+          "type": "optimization_class",
+          "msc": "90C25",
+          "formalmath_refs": ["02-优化理论-增强版"],
+          "dependencies": ["convex sets", "convex functions"]
+        },
+        {
+          "name": "Interior point methods",
+          "name_zh": "内点法",
+          "type": "algorithm_class",
+          "msc": "90C51",
+          "formalmath_refs": ["03-优化算法"],
+          "dependencies": ["barrier functions"]
+        }
+      ]
+    },
+    {
+      "id": "CM.04",
+      "name": "Computational Geometry",
+      "name_zh": "计算几何",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Computational_geometry",
+      "wikipedia_title": "Computational geometry",
+      "msc_codes": ["68U05", "52A10", "52C07"],
+      "coverage": 80,
+      "formalmath_docs": [
+        "docs/08-计算数学/02-计算几何.md",
+        "docs/12-应用数学/12-计算几何数学-深化版.md",
+        "concept/03-主题概念梳理/08-离散数学概念.md"
+      ],
+      "concepts": [
+        {
+          "name": "Convex hull",
+          "name_zh": "凸包",
+          "type": "geometric_structure",
+          "msc": "52A10",
+          "formalmath_refs": ["02-计算几何"],
+          "algorithms": ["Graham scan", "QuickHull", "Chan's algorithm"]
+        },
+        {
+          "name": "Voronoi diagram",
+          "name_zh": "Voronoi图",
+          "type": "geometric_structure",
+          "msc": "52C07",
+          "formalmath_refs": ["02-计算几何"],
+          "algorithms": ["Fortune's algorithm"]
+        },
+        {
+          "name": "Delaunay triangulation",
+          "name_zh": "Delaunay三角剖分",
+          "type": "geometric_structure",
+          "msc": "65D18",
+          "formalmath_refs": ["02-计算几何"],
+          "dependencies": ["Voronoi diagram"]
+        },
+        {
+          "name": "Closest pair",
+          "name_zh": "最近点对",
+          "type": "problem",
+          "msc": "68Q25",
+          "complexity": "O(n log n)",
+          "formalmath_refs": ["02-计算几何"],
+          "algorithms": ["divide and conquer"]
+        },
+        {
+          "name": "Line segment intersection",
+          "name_zh": "线段相交",
+          "type": "problem",
+          "msc": "68U05",
+          "complexity": "O((n+k) log n)",
+          "formalmath_refs": ["02-计算几何"],
+          "algorithms": ["sweep line"]
+        },
+        {
+          "name": "kd-tree",
+          "name_zh": "k维树",
+          "type": "data_structure",
+          "msc": "68P05",
+          "formalmath_refs": ["02-计算几何"]
+        }
+      ]
+    },
+    {
+      "id": "CM.05",
+      "name": "Computer Algebra",
+      "name_zh": "计算机代数",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Computer_algebra",
+      "wikipedia_title": "Computer algebra",
+      "msc_codes": ["68W30", "13P10", "12Y05"],
+      "coverage": 85,
+      "formalmath_docs": [
+        "docs/08-计算数学/05-符号计算.md",
+        "docs/08-计算数学/05-符号计算-增强版.md",
+        "docs/09-形式化证明/"
+      ],
+      "concepts": [
+        {
+          "name": "Polynomial GCD",
+          "name_zh": "多项式最大公因式",
+          "type": "algorithm",
+          "msc": "68W30",
+          "formalmath_refs": ["05-符号计算"],
+          "algorithms": ["Euclidean algorithm"]
+        },
+        {
+          "name": "Polynomial factorization",
+          "name_zh": "多项式因式分解",
+          "type": "algorithm",
+          "msc": "12Y05",
+          "formalmath_refs": ["05-符号计算"]
+        },
+        {
+          "name": "Gröbner basis",
+          "name_zh": "Gröbner基",
+          "type": "algebraic_structure",
+          "msc": "13P10",
+          "formalmath_refs": ["05-符号计算"],
+          "algorithms": ["Buchberger's algorithm"]
+        },
+        {
+          "name": "Risch algorithm",
+          "name_zh": "Risch算法",
+          "type": "integration_algorithm",
+          "msc": "68W30",
+          "formalmath_refs": ["05-符号计算"]
+        }
+      ]
+    },
+    {
+      "id": "CM.06",
+      "name": "Symbolic Computation",
+      "name_zh": "符号计算",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symbolic_computation",
+      "wikipedia_title": "Symbolic computation",
+      "msc_codes": ["68W30", "12H05", "68Q42"],
+      "coverage": 80,
+      "formalmath_docs": [
+        "docs/08-计算数学/05-符号计算.md",
+        "docs/03-分析学/01-实分析.md",
+        "docs/03-分析学/05-微分方程.md"
+      ],
+      "concepts": [
+        {
+          "name": "Symbolic integration",
+          "name_zh": "符号积分",
+          "type": "computation",
+          "msc": "68W30",
+          "formalmath_refs": ["05-符号计算"]
+        },
+        {
+          "name": "Symbolic differentiation",
+          "name_zh": "符号微分",
+          "type": "computation",
+          "msc": "68W30",
+          "formalmath_refs": ["05-符号计算"]
+        },
+        {
+          "name": "Automatic differentiation",
+          "name_zh": "自动微分",
+          "type": "computation",
+          "msc": "68W30",
+          "formalmath_refs": ["01-数值分析-4.3"]
+        },
+        {
+          "name": "Differential algebra",
+          "name_zh": "微分代数",
+          "type": "algebraic_structure",
+          "msc": "12H05",
+          "formalmath_refs": ["05-符号计算"]
+        }
+      ]
+    },
+    {
+      "id": "CM.07",
+      "name": "Algorithm",
+      "name_zh": "算法",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Algorithm",
+      "wikipedia_title": "Algorithm",
+      "msc_codes": ["68W01", "68Q25", "68W40"],
+      "coverage": 90,
+      "formalmath_docs": [
+        "concept/核心概念/31-算法.md",
+        "concept/核心概念/31-算法-三视角版.md",
+        "concept/00-集合论视角-核心概念分析/31-算法-集合论视角分析.md",
+        "concept/00-范畴论视角-核心概念分析/31-算法-范畴论视角分析.md",
+        "docs/07-算法与数据结构/"
+      ],
+      "concepts": [
+        {
+          "name": "Turing machine",
+          "name_zh": "图灵机",
+          "type": "computation_model",
+          "msc": "68Q05",
+          "formalmath_refs": ["07-逻辑学"]
+        },
+        {
+          "name": "Divide and conquer",
+          "name_zh": "分治",
+          "type": "design_paradigm",
+          "msc": "68W01",
+          "formalmath_refs": ["31-算法"]
+        },
+        {
+          "name": "Dynamic programming",
+          "name_zh": "动态规划",
+          "type": "design_paradigm",
+          "msc": "68W01",
+          "formalmath_refs": ["31-算法"]
+        },
+        {
+          "name": "Greedy algorithm",
+          "name_zh": "贪心算法",
+          "type": "design_paradigm",
+          "msc": "68W01",
+          "formalmath_refs": ["31-算法"]
+        },
+        {
+          "name": "Time complexity",
+          "name_zh": "时间复杂度",
+          "type": "complexity_measure",
+          "msc": "68Q25",
+          "formalmath_refs": ["31-算法", "07-算法与数据结构"]
+        },
+        {
+          "name": "Space complexity",
+          "name_zh": "空间复杂度",
+          "type": "complexity_measure",
+          "msc": "68Q25",
+          "formalmath_refs": ["31-算法"]
+        }
+      ]
+    },
+    {
+      "id": "CM.08",
+      "name": "Computational Complexity",
+      "name_zh": "计算复杂性",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Computational_complexity",
+      "wikipedia_title": "Computational complexity",
+      "msc_codes": ["68Q15", "68Q17", "03D15"],
+      "coverage": 85,
+      "formalmath_docs": [
+        "docs/07-逻辑学/",
+        "docs/00-知识层次体系/L4-前沿研究层/04-逻辑基础前沿/03-P-vs-NP问题.md",
+        "concept/03-主题概念梳理/08-离散数学概念.md"
+      ],
+      "concepts": [
+        {
+          "name": "P class",
+          "name_zh": "P类",
+          "type": "complexity_class",
+          "msc": "68Q15",
+          "formalmath_refs": ["07-逻辑学"]
+        },
+        {
+          "name": "NP class",
+          "name_zh": "NP类",
+          "type": "complexity_class",
+          "msc": "68Q15",
+          "formalmath_refs": ["07-逻辑学"]
+        },
+        {
+          "name": "NP-complete",
+          "name_zh": "NP完全",
+          "type": "complexity_class",
+          "msc": "68Q17",
+          "formalmath_refs": ["07-逻辑学"]
+        },
+        {
+          "name": "PSPACE",
+          "name_zh": "多项式空间",
+          "type": "complexity_class",
+          "msc": "68Q15",
+          "formalmath_refs": ["07-逻辑学"]
+        },
+        {
+          "name": "Polynomial reduction",
+          "name_zh": "多项式时间归约",
+          "type": "reduction",
+          "msc": "68Q15",
+          "formalmath_refs": ["07-逻辑学"]
+        },
+        {
+          "name": "P vs NP problem",
+          "name_zh": "P与NP问题",
+          "type": "open_problem",
+          "msc": "68Q17",
+          "formalmath_refs": ["L4-03-P-vs-NP问题"]
+        }
+      ]
+    }
+  ],
+  "cross_references": {
+    "numerical_linear_algebra": ["optimization", "finite_element_method", "machine_learning"],
+    "finite_element_method": ["numerical_linear_algebra", "sobolev_spaces", "variational_calculus"],
+    "optimization": ["numerical_linear_algebra", "machine_learning", "operations_research"],
+    "computational_geometry": ["algorithms", "computer_graphics", "robotics"],
+    "computer_algebra": ["symbolic_computation", "automated_theorem_proving"],
+    "algorithm": ["computational_complexity", "data_structures"],
+    "computational_complexity": ["algorithm", "logic", "cryptography"]
+  },
+  "gaps": {
+    "high_priority": [
+      {
+        "concept": "High-order finite elements",
+        "category": "CM.02",
+        "msc": "65N30",
+        "reason": "Wikipedia有详细覆盖但FormalMath缺少"
+      },
+      {
+        "concept": "Adaptive mesh refinement",
+        "category": "CM.02",
+        "msc": "65N50",
+        "reason": "工程和科学计算关键内容"
+      },
+      {
+        "concept": "Topological data analysis",
+        "category": "CM.04",
+        "msc": "55N31",
+        "reason": "计算几何前沿方向"
+      },
+      {
+        "concept": "Persistent homology",
+        "category": "CM.04",
+        "msc": "55N31",
+        "reason": "TDA核心工具"
+      }
+    ],
+    "medium_priority": [
+      {
+        "concept": "Parallel numerical linear algebra",
+        "category": "CM.01",
+        "msc": "65F05, 65Y05",
+        "reason": "高性能计算必需"
+      },
+      {
+        "concept": "Randomized numerical linear algebra",
+        "category": "CM.01",
+        "msc": "65Fxx",
+        "reason": "现代大规模计算方法"
+      },
+      {
+        "concept": "Stochastic optimization",
+        "category": "CM.03",
+        "msc": "90C15",
+        "reason": "机器学习优化核心"
+      },
+      {
+        "concept": "Distributed optimization",
+        "category": "CM.03",
+        "msc": "90C06",
+        "reason": "大规模优化趋势"
+      },
+      {
+        "concept": "Quantum algorithms",
+        "category": "CM.07",
+        "msc": "68Q12",
+        "reason": "未来计算方向"
+      }
+    ],
+    "low_priority": [
+      {
+        "concept": "Symbolic asymptotic analysis",
+        "category": "CM.06",
+        "msc": "68W30",
+        "reason": "符号计算高级应用"
+      },
+      {
+        "concept": "Circuit complexity",
+        "category": "CM.08",
+        "msc": "68Q17",
+        "reason": "复杂性理论深化"
+      },
+      {
+        "concept": "Communication complexity",
+        "category": "CM.08",
+        "msc": "68Q17",
+        "reason": "分布式计算理论"
+      }
+    ]
+  },
+  "statistics": {
+    "concepts_by_category": {
+      "CM.01": 12,
+      "CM.02": 6,
+      "CM.03": 8,
+      "CM.04": 6,
+      "CM.05": 4,
+      "CM.06": 4,
+      "CM.07": 6,
+      "CM.08": 6
+    },
+    "coverage_by_category": {
+      "CM.01": 85,
+      "CM.02": 75,
+      "CM.03": 90,
+      "CM.04": 80,
+      "CM.05": 85,
+      "CM.06": 80,
+      "CM.07": 90,
+      "CM.08": 85
+    },
+    "msc_coverage": {
+      "65-XX": "数值分析 - 85%",
+      "68U05": "计算几何 - 80%",
+      "68W30": "符号计算 - 82%",
+      "90Cxx": "优化 - 90%",
+      "68Qxx": "计算理论 - 87%"
+    }
+  }
+}

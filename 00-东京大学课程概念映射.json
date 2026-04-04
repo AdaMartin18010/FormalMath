@@ -1,0 +1,1147 @@
+{
+  "metadata": {
+    "title": "东京大学数学课程概念映射",
+    "version": "1.0",
+    "created": "2026-04-04",
+    "description": "FormalMath与东京大学大学院数理科学研究科课程的概念映射",
+    "total_courses": 16,
+    "total_concepts": 285
+  },
+  "university": {
+    "name": "東京大学",
+    "name_en": "University of Tokyo",
+    "department": "大学院数理科学研究科",
+    "department_en": "Graduate School of Mathematical Sciences"
+  },
+  "course_mappings": [
+    {
+      "course_id": "UT-MATH-101",
+      "course_name_jp": "解析学I",
+      "course_name_en": "Analysis I",
+      "level": "undergraduate",
+      "year": 1,
+      "credits": 4,
+      "description": "微积分基础",
+      "concepts": [
+        {
+          "concept_id": "C-001",
+          "concept_name_jp": "実数の連続性",
+          "concept_name_en": "continuity of real numbers",
+          "concept_name_cn": "实数连续性",
+          "formalmath_path": "docs/01-基础数学/集合论/07-实数构造.md",
+          "difficulty": "L1",
+          "prerequisites": ["C-002"],
+          "msc_code": "26A03"
+        },
+        {
+          "concept_id": "C-002",
+          "concept_name_jp": "数列の極限",
+          "concept_name_en": "limit of sequence",
+          "concept_name_cn": "数列极限",
+          "formalmath_path": "docs/03-分析学/01-实分析/极限理论-深度扩展版.md",
+          "difficulty": "L1",
+          "prerequisites": [],
+          "msc_code": "40A05"
+        },
+        {
+          "concept_id": "C-003",
+          "concept_name_jp": "関数の連続性",
+          "concept_name_en": "continuity of function",
+          "concept_name_cn": "函数连续性",
+          "formalmath_path": "concept/核心概念/14-连续-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": ["C-002"],
+          "msc_code": "26A15"
+        },
+        {
+          "concept_id": "C-004",
+          "concept_name_jp": "微分",
+          "concept_name_en": "derivative",
+          "concept_name_cn": "导数",
+          "formalmath_path": "concept/核心概念/15-导数-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": ["C-003"],
+          "msc_code": "26A24"
+        },
+        {
+          "concept_id": "C-005",
+          "concept_name_jp": "平均値の定理",
+          "concept_name_en": "mean value theorem",
+          "concept_name_cn": "中值定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/72-中值定理-五种表征.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-004"],
+          "msc_code": "26A06"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-102",
+      "course_name_jp": "解析学II",
+      "course_name_en": "Analysis II",
+      "level": "undergraduate",
+      "year": 1,
+      "credits": 4,
+      "description": "积分与级数",
+      "concepts": [
+        {
+          "concept_id": "C-010",
+          "concept_name_jp": "リーマン積分",
+          "concept_name_en": "Riemann integral",
+          "concept_name_cn": "黎曼积分",
+          "formalmath_path": "concept/核心概念/16-积分-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": ["C-004"],
+          "msc_code": "26A42"
+        },
+        {
+          "concept_id": "C-011",
+          "concept_name_jp": "微分積分学の基本定理",
+          "concept_name_en": "fundamental theorem of calculus",
+          "concept_name_cn": "微积分基本定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/68-微积分基本定理-五种表征.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-004", "C-010"],
+          "msc_code": "26A42"
+        },
+        {
+          "concept_id": "C-012",
+          "concept_name_jp": "無限級数",
+          "concept_name_en": "infinite series",
+          "concept_name_cn": "无穷级数",
+          "formalmath_path": "concept/核心概念/17-级数-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": ["C-002"],
+          "msc_code": "40A05"
+        },
+        {
+          "concept_id": "C-013",
+          "concept_name_jp": "一様収束",
+          "concept_name_en": "uniform convergence",
+          "concept_name_cn": "一致收敛",
+          "formalmath_path": "docs/03-分析学/01-实分析/一致收敛.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-012"],
+          "msc_code": "40A30"
+        },
+        {
+          "concept_id": "C-014",
+          "concept_name_jp": "多変数の微分",
+          "concept_name_en": "differentiation of multivariable functions",
+          "concept_name_cn": "多变量微分",
+          "formalmath_path": "docs/03-分析学/01-实分析/多变量微分.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-004"],
+          "msc_code": "26B05"
+        },
+        {
+          "concept_id": "C-015",
+          "concept_name_jp": "重積分",
+          "concept_name_en": "multiple integral",
+          "concept_name_cn": "重积分",
+          "formalmath_path": "docs/03-分析学/01-实分析/重积分.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-010", "C-014"],
+          "msc_code": "26B15"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-103",
+      "course_name_jp": "解析学III",
+      "course_name_en": "Analysis III",
+      "level": "undergraduate",
+      "year": 2,
+      "credits": 4,
+      "description": "复分析基础",
+      "concepts": [
+        {
+          "concept_id": "C-020",
+          "concept_name_jp": "複素数",
+          "concept_name_en": "complex number",
+          "concept_name_cn": "复数",
+          "formalmath_path": "concept/核心概念/07-复数-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": [],
+          "msc_code": "30-01"
+        },
+        {
+          "concept_id": "C-021",
+          "concept_name_jp": "正則関数",
+          "concept_name_en": "holomorphic function",
+          "concept_name_cn": "全纯函数",
+          "formalmath_path": "docs/03-分析学/02-复分析/全纯函数.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-020"],
+          "msc_code": "30Cxx"
+        },
+        {
+          "concept_id": "C-022",
+          "concept_name_jp": "Cauchyの積分定理",
+          "concept_name_en": "Cauchy's integral theorem",
+          "concept_name_cn": "柯西积分定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/14-Cauchy积分公式-五种表征.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-021"],
+          "msc_code": "30E20"
+        },
+        {
+          "concept_id": "C-023",
+          "concept_name_jp": "留数定理",
+          "concept_name_en": "residue theorem",
+          "concept_name_cn": "留数定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/37-留数定理-五种表征.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-022"],
+          "msc_code": "30E20"
+        },
+        {
+          "concept_id": "C-024",
+          "concept_name_jp": "解析接続",
+          "concept_name_en": "analytic continuation",
+          "concept_name_cn": "解析延拓",
+          "formalmath_path": "docs/03-分析学/02-复分析/解析延拓.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-021"],
+          "msc_code": "30B40"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-201",
+      "course_name_jp": "代数学I",
+      "course_name_en": "Algebra I",
+      "level": "undergraduate",
+      "year": 1,
+      "credits": 4,
+      "description": "线性代数",
+      "concepts": [
+        {
+          "concept_id": "C-030",
+          "concept_name_jp": "ベクトル空間",
+          "concept_name_en": "vector space",
+          "concept_name_cn": "向量空间",
+          "formalmath_path": "concept/核心概念/11-向量空间-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": [],
+          "msc_code": "15A03"
+        },
+        {
+          "concept_id": "C-031",
+          "concept_name_jp": "線形写像",
+          "concept_name_en": "linear map",
+          "concept_name_cn": "线性映射",
+          "formalmath_path": "concept/核心概念/12-线性映射-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": ["C-030"],
+          "msc_code": "15A04"
+        },
+        {
+          "concept_id": "C-032",
+          "concept_name_jp": "行列",
+          "concept_name_en": "matrix",
+          "concept_name_cn": "矩阵",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/",
+          "difficulty": "L1",
+          "prerequisites": ["C-031"],
+          "msc_code": "15Axx"
+        },
+        {
+          "concept_id": "C-033",
+          "concept_name_jp": "行列式",
+          "concept_name_en": "determinant",
+          "concept_name_cn": "行列式",
+          "formalmath_path": "docs/02-代数结构/线性代数/行列式.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-032"],
+          "msc_code": "15A15"
+        },
+        {
+          "concept_id": "C-034",
+          "concept_name_jp": "固有値・固有ベクトル",
+          "concept_name_en": "eigenvalue and eigenvector",
+          "concept_name_cn": "特征值与特征向量",
+          "formalmath_path": "docs/02-代数结构/线性代数/特征值.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-032"],
+          "msc_code": "15A18"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-202",
+      "course_name_jp": "代数学II",
+      "course_name_en": "Algebra II",
+      "level": "undergraduate",
+      "year": 2,
+      "credits": 4,
+      "description": "抽象代数基础",
+      "concepts": [
+        {
+          "concept_id": "C-040",
+          "concept_name_jp": "群",
+          "concept_name_en": "group",
+          "concept_name_cn": "群",
+          "formalmath_path": "concept/核心概念/08-群-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": [],
+          "msc_code": "20A05"
+        },
+        {
+          "concept_id": "C-041",
+          "concept_name_jp": "環",
+          "concept_name_en": "ring",
+          "concept_name_cn": "环",
+          "formalmath_path": "concept/核心概念/09-环-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": ["C-040"],
+          "msc_code": "16-01"
+        },
+        {
+          "concept_id": "C-042",
+          "concept_name_jp": "イデアル",
+          "concept_name_en": "ideal",
+          "concept_name_cn": "理想",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-041"],
+          "msc_code": "16Dxx"
+        },
+        {
+          "concept_id": "C-043",
+          "concept_name_jp": "加群",
+          "concept_name_en": "module",
+          "concept_name_cn": "模",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/模论/01-模论-国际标准深度扩展版.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-041", "C-030"],
+          "msc_code": "16Dxx"
+        },
+        {
+          "concept_id": "C-044",
+          "concept_name_jp": "準同型定理",
+          "concept_name_en": "homomorphism theorem",
+          "concept_name_cn": "同态基本定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/02-第一同构定理-五种表征.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-040"],
+          "msc_code": "20A05"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-203",
+      "course_name_jp": "代数学III",
+      "course_name_en": "Algebra III",
+      "level": "undergraduate",
+      "year": 3,
+      "credits": 4,
+      "description": "域论与Galois理论",
+      "concepts": [
+        {
+          "concept_id": "C-050",
+          "concept_name_jp": "体",
+          "concept_name_en": "field",
+          "concept_name_cn": "域",
+          "formalmath_path": "concept/核心概念/10-域-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": ["C-041"],
+          "msc_code": "12Fxx"
+        },
+        {
+          "concept_id": "C-051",
+          "concept_name_jp": "体の拡大",
+          "concept_name_en": "field extension",
+          "concept_name_cn": "域扩张",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-050"],
+          "msc_code": "12F05"
+        },
+        {
+          "concept_id": "C-052",
+          "concept_name_jp": "ガロア群",
+          "concept_name_en": "Galois group",
+          "concept_name_cn": "伽罗瓦群",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/域论/",
+          "difficulty": "L3",
+          "prerequisites": ["C-051"],
+          "msc_code": "12F10"
+        },
+        {
+          "concept_id": "C-053",
+          "concept_name_jp": "ガロア理論の基本定理",
+          "concept_name_en": "fundamental theorem of Galois theory",
+          "concept_name_cn": "伽罗瓦理论基本定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/77-Galois基本定理-五种表征.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-052"],
+          "msc_code": "12F10"
+        },
+        {
+          "concept_id": "C-054",
+          "concept_name_jp": "代数方程式の可解性",
+          "concept_name_en": "solvability of algebraic equations",
+          "concept_name_cn": "代数方程可解性",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/域论/",
+          "difficulty": "L3",
+          "prerequisites": ["C-053"],
+          "msc_code": "12F10"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-301",
+      "course_name_jp": "幾何学I",
+      "course_name_en": "Geometry I",
+      "level": "undergraduate",
+      "year": 2,
+      "credits": 4,
+      "description": "微分几何入门",
+      "concepts": [
+        {
+          "concept_id": "C-060",
+          "concept_name_jp": "曲線",
+          "concept_name_en": "curve",
+          "concept_name_cn": "曲线",
+          "formalmath_path": "docs/04-几何学/03-微分几何.md",
+          "difficulty": "L1",
+          "prerequisites": [],
+          "msc_code": "53A04"
+        },
+        {
+          "concept_id": "C-061",
+          "concept_name_jp": "曲面",
+          "concept_name_en": "surface",
+          "concept_name_cn": "曲面",
+          "formalmath_path": "docs/04-几何学/08-微分几何核心-深度扩展版.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-060"],
+          "msc_code": "53A05"
+        },
+        {
+          "concept_id": "C-062",
+          "concept_name_jp": "第一基本形式",
+          "concept_name_en": "first fundamental form",
+          "concept_name_cn": "第一基本形式",
+          "formalmath_path": "docs/04-几何学/08-微分几何核心-深度扩展版.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-061"],
+          "msc_code": "53A05"
+        },
+        {
+          "concept_id": "C-063",
+          "concept_name_jp": "第二基本形式",
+          "concept_name_en": "second fundamental form",
+          "concept_name_cn": "第二基本形式",
+          "formalmath_path": "docs/14-微分几何/第二基本形式.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-062"],
+          "msc_code": "53A05"
+        },
+        {
+          "concept_id": "C-064",
+          "concept_name_jp": "Gauss曲率",
+          "concept_name_en": "Gaussian curvature",
+          "concept_name_cn": "高斯曲率",
+          "formalmath_path": "concept/核心概念/20-曲率-三视角版.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-063"],
+          "msc_code": "53A05"
+        },
+        {
+          "concept_id": "C-065",
+          "concept_name_jp": "Gauss-Bonnetの定理",
+          "concept_name_en": "Gauss-Bonnet theorem",
+          "concept_name_cn": "高斯-博内定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/12-Gauss-Bonnet定理-五种表征.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-064"],
+          "msc_code": "53A05"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-302",
+      "course_name_jp": "幾何学II",
+      "course_name_en": "Geometry II",
+      "level": "undergraduate",
+      "year": 2,
+      "credits": 4,
+      "description": "拓扑学基础",
+      "concepts": [
+        {
+          "concept_id": "C-070",
+          "concept_name_jp": "位相空間",
+          "concept_name_en": "topological space",
+          "concept_name_cn": "拓扑空间",
+          "formalmath_path": "concept/核心概念/23-拓扑空间-三视角版.md",
+          "difficulty": "L1",
+          "prerequisites": [],
+          "msc_code": "54A05"
+        },
+        {
+          "concept_id": "C-071",
+          "concept_name_jp": "連続写像",
+          "concept_name_en": "continuous map",
+          "concept_name_cn": "连续映射",
+          "formalmath_path": "docs/05-拓扑学/01-点集拓扑-深度扩展版.md",
+          "difficulty": "L1",
+          "prerequisites": ["C-070"],
+          "msc_code": "54C05"
+        },
+        {
+          "concept_id": "C-072",
+          "concept_name_jp": "基本群",
+          "concept_name_en": "fundamental group",
+          "concept_name_cn": "基本群",
+          "formalmath_path": "docs/05-拓扑学/04-基本群与覆叠空间.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-070", "C-040"],
+          "msc_code": "55Q05"
+        },
+        {
+          "concept_id": "C-073",
+          "concept_name_jp": "被覆空間",
+          "concept_name_en": "covering space",
+          "concept_name_cn": "覆叠空间",
+          "formalmath_path": "docs/05-拓扑学/04-基本群与覆叠空间.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-072"],
+          "msc_code": "55R05"
+        },
+        {
+          "concept_id": "C-074",
+          "concept_name_jp": "多様体",
+          "concept_name_en": "manifold",
+          "concept_name_cn": "流形",
+          "formalmath_path": "concept/核心概念/18-流形-三视角版.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-070"],
+          "msc_code": "57Nxx"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-501",
+      "course_name_jp": "代数学概論",
+      "course_name_en": "Overview of Algebra",
+      "level": "graduate",
+      "year": 1,
+      "credits": 2,
+      "description": "研究生基础代数",
+      "concepts": [
+        {
+          "concept_id": "C-080",
+          "concept_name_jp": "アーベル圏",
+          "concept_name_en": "abelian category",
+          "concept_name_cn": "阿贝尔范畴",
+          "formalmath_path": "docs/01-基础数学/抽象代数结构论证/06-范畴论结构论证-国际标准版.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-043"],
+          "msc_code": "18E10"
+        },
+        {
+          "concept_id": "C-081",
+          "concept_name_jp": "三角圏",
+          "concept_name_en": "triangulated category",
+          "concept_name_cn": "三角范畴",
+          "formalmath_path": "docs/15-同调代数/导出范畴/三角范畴.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-080"],
+          "msc_code": "18E30"
+        },
+        {
+          "concept_id": "C-082",
+          "concept_name_jp": "導出圏",
+          "concept_name_en": "derived category",
+          "concept_name_cn": "导出范畴",
+          "formalmath_path": "docs/11-高级数学/05-导出代数几何.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-081"],
+          "msc_code": "18E30"
+        },
+        {
+          "concept_id": "C-083",
+          "concept_name_jp": "スペクトル列",
+          "concept_name_en": "spectral sequence",
+          "concept_name_cn": "谱序列",
+          "formalmath_path": "docs/05-拓扑学/10-纤维丛与谱序列入门.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-082"],
+          "msc_code": "55Txx"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-502",
+      "course_name_jp": "幾何学概論",
+      "course_name_en": "Overview of Geometry",
+      "level": "graduate",
+      "year": 1,
+      "credits": 2,
+      "description": "研究生基础几何",
+      "concepts": [
+        {
+          "concept_id": "C-090",
+          "concept_name_jp": "ホモトピー",
+          "concept_name_en": "homotopy",
+          "concept_name_cn": "同伦",
+          "formalmath_path": "concept/核心概念/24-同伦-三视角版.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-070"],
+          "msc_code": "55Pxx"
+        },
+        {
+          "concept_id": "C-091",
+          "concept_name_jp": "ホモロジー",
+          "concept_name_en": "homology",
+          "concept_name_cn": "同调",
+          "formalmath_path": "concept/核心概念/25-同调-三视角版.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-090"],
+          "msc_code": "55Nxx"
+        },
+        {
+          "concept_id": "C-092",
+          "concept_name_jp": "Van Kampenの定理",
+          "concept_name_en": "Van Kampen's theorem",
+          "concept_name_cn": "范坎彭定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/22-Seifert-van Kampen定理-五种表征.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-072"],
+          "msc_code": "55Q05"
+        },
+        {
+          "concept_id": "C-093",
+          "concept_name_jp": "群作用",
+          "concept_name_en": "group action",
+          "concept_name_cn": "群作用",
+          "formalmath_path": "docs/02-代数结构/群论/群作用.md",
+          "difficulty": "L2",
+          "prerequisites": ["C-040"],
+          "msc_code": "20B05"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-503",
+      "course_name_jp": "解析学概論",
+      "course_name_en": "Overview of Analysis",
+      "level": "graduate",
+      "year": 1,
+      "credits": 2,
+      "description": "研究生基础分析",
+      "concepts": [
+        {
+          "concept_id": "C-100",
+          "concept_name_jp": "測度",
+          "concept_name_en": "measure",
+          "concept_name_cn": "测度",
+          "formalmath_path": "docs/00-知识层次体系/概念/测度论-层次图谱.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-010"],
+          "msc_code": "28Axx"
+        },
+        {
+          "concept_id": "C-101",
+          "concept_name_jp": "ルベーグ積分",
+          "concept_name_en": "Lebesgue integral",
+          "concept_name_cn": "勒贝格积分",
+          "formalmath_path": "docs/03-分析学/01-实分析/02-Lebesgue积分-深度扩展版.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-100"],
+          "msc_code": "28A25"
+        },
+        {
+          "concept_id": "C-102",
+          "concept_name_jp": "Hilbert空間",
+          "concept_name_en": "Hilbert space",
+          "concept_name_cn": "希尔伯特空间",
+          "formalmath_path": "docs/03-分析学/03-泛函分析/希尔伯特空间.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-030", "C-101"],
+          "msc_code": "46C05"
+        },
+        {
+          "concept_id": "C-103",
+          "concept_name_jp": "Banach空間",
+          "concept_name_en": "Banach space",
+          "concept_name_cn": "巴拿赫空间",
+          "formalmath_path": "docs/03-分析学/03-泛函分析/巴拿赫空间.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-101"],
+          "msc_code": "46Bxx"
+        },
+        {
+          "concept_id": "C-104",
+          "concept_name_jp": "リースの表現定理",
+          "concept_name_en": "Riesz representation theorem",
+          "concept_name_cn": "里斯表示定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/32-Riesz表示定理-五种表征.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-102"],
+          "msc_code": "46C05"
+        },
+        {
+          "concept_id": "C-105",
+          "concept_name_jp": "Hahn-Banachの定理",
+          "concept_name_en": "Hahn-Banach theorem",
+          "concept_name_cn": "哈恩-巴拿赫定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/30-Hahn-Banach定理-五种表征.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-103"],
+          "msc_code": "46A22"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-601",
+      "course_name_jp": "代数幾何",
+      "course_name_en": "Algebraic Geometry",
+      "level": "graduate",
+      "year": 2,
+      "credits": 4,
+      "description": "研究生专门课程",
+      "concepts": [
+        {
+          "concept_id": "C-110",
+          "concept_name_jp": "スキーム",
+          "concept_name_en": "scheme",
+          "concept_name_cn": "概形",
+          "formalmath_path": "concept/核心概念/21-概形-三视角版.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-041"],
+          "msc_code": "14A15"
+        },
+        {
+          "concept_id": "C-111",
+          "concept_name_jp": "層",
+          "concept_name_en": "sheaf",
+          "concept_name_cn": "层",
+          "formalmath_path": "concept/核心概念/22-层-三视角版.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-070"],
+          "msc_code": "14F05"
+        },
+        {
+          "concept_id": "C-112",
+          "concept_name_jp": "層上同調",
+          "concept_name_en": "sheaf cohomology",
+          "concept_name_cn": "层上同调",
+          "formalmath_path": "docs/13-代数几何/04-层与上同调-深度扩展版.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-110", "C-111"],
+          "msc_code": "14F25"
+        },
+        {
+          "concept_id": "C-113",
+          "concept_name_jp": "Serreの双対",
+          "concept_name_en": "Serre duality",
+          "concept_name_cn": "塞尔对偶",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/54-Serre对偶-五种表征.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-112"],
+          "msc_code": "14F25"
+        },
+        {
+          "concept_id": "C-114",
+          "concept_name_jp": "Riemann-Rochの定理",
+          "concept_name_en": "Riemann-Roch theorem",
+          "concept_name_cn": "黎曼-罗赫定理",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/55-Riemann-Roch定理-五种表征.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-113"],
+          "msc_code": "14C40"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-602",
+      "course_name_jp": "微分幾何",
+      "course_name_en": "Differential Geometry",
+      "level": "graduate",
+      "year": 2,
+      "credits": 4,
+      "description": "研究生专门课程",
+      "concepts": [
+        {
+          "concept_id": "C-120",
+          "concept_name_jp": "リーマン計量",
+          "concept_name_en": "Riemannian metric",
+          "concept_name_cn": "黎曼度量",
+          "formalmath_path": "concept/核心概念/19-黎曼流形-三视角版.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-074"],
+          "msc_code": "53B20"
+        },
+        {
+          "concept_id": "C-121",
+          "concept_name_jp": "接続",
+          "concept_name_en": "connection",
+          "concept_name_cn": "联络",
+          "formalmath_path": "docs/14-微分几何/联络.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-120"],
+          "msc_code": "53B05"
+        },
+        {
+          "concept_id": "C-122",
+          "concept_name_jp": "曲率",
+          "concept_name_en": "curvature",
+          "concept_name_cn": "曲率",
+          "formalmath_path": "concept/核心概念/20-曲率-三视角版.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-121"],
+          "msc_code": "53B21"
+        },
+        {
+          "concept_id": "C-123",
+          "concept_name_jp": "測地線",
+          "concept_name_en": "geodesic",
+          "concept_name_cn": "测地线",
+          "formalmath_path": "docs/14-微分几何/测地线.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-121"],
+          "msc_code": "53C22"
+        },
+        {
+          "concept_id": "C-124",
+          "concept_name_jp": "指数写像",
+          "concept_name_en": "exponential map",
+          "concept_name_cn": "指数映射",
+          "formalmath_path": "docs/14-微分几何/指数映射.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-123"],
+          "msc_code": "53C22"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-603",
+      "course_name_jp": "代数トポロジー",
+      "course_name_en": "Algebraic Topology",
+      "level": "graduate",
+      "year": 2,
+      "credits": 4,
+      "description": "研究生专门课程",
+      "concepts": [
+        {
+          "concept_id": "C-130",
+          "concept_name_jp": "特異ホモロジー",
+          "concept_name_en": "singular homology",
+          "concept_name_cn": "奇异同调",
+          "formalmath_path": "docs/05-拓扑学/05-奇异同调计算实例.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-091"],
+          "msc_code": "55N10"
+        },
+        {
+          "concept_id": "C-131",
+          "concept_name_jp": "コホモロジー環",
+          "concept_name_en": "cohomology ring",
+          "concept_name_cn": "上同调环",
+          "formalmath_path": "docs/05-拓扑学/06-上同调环与Poincaré对偶.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-091"],
+          "msc_code": "55Nxx"
+        },
+        {
+          "concept_id": "C-132",
+          "concept_name_jp": "ポアンカレ双対",
+          "concept_name_en": "Poincaré duality",
+          "concept_name_cn": "庞加莱对偶",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/49-Poincaré对偶-五种表征.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-131"],
+          "msc_code": "55N45"
+        },
+        {
+          "concept_id": "C-133",
+          "concept_name_jp": "ファイバー束",
+          "concept_name_en": "fiber bundle",
+          "concept_name_cn": "纤维丛",
+          "formalmath_path": "docs/05-拓扑学/06-纤维丛理论.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-091"],
+          "msc_code": "55R10"
+        },
+        {
+          "concept_id": "C-134",
+          "concept_name_jp": "特性類",
+          "concept_name_en": "characteristic class",
+          "concept_name_cn": "示性类",
+          "formalmath_path": "docs/05-拓扑学/07-向量丛与示性类.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-133"],
+          "msc_code": "55R40"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-604",
+      "course_name_jp": "表現論",
+      "course_name_en": "Representation Theory",
+      "level": "graduate",
+      "year": 2,
+      "credits": 4,
+      "description": "研究生专门课程",
+      "concepts": [
+        {
+          "concept_id": "C-140",
+          "concept_name_jp": "群の表現",
+          "concept_name_en": "group representation",
+          "concept_name_cn": "群表示",
+          "formalmath_path": "concept/核心概念/32-表示-三视角版.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-040"],
+          "msc_code": "20Cxx"
+        },
+        {
+          "concept_id": "C-141",
+          "concept_name_jp": "指標",
+          "concept_name_en": "character",
+          "concept_name_cn": "特征标",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/表示论/",
+          "difficulty": "L3",
+          "prerequisites": ["C-140"],
+          "msc_code": "20C15"
+        },
+        {
+          "concept_id": "C-142",
+          "concept_name_jp": "Schurの補題",
+          "concept_name_en": "Schur's lemma",
+          "concept_name_cn": "舒尔引理",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/表示论/",
+          "difficulty": "L3",
+          "prerequisites": ["C-140"],
+          "msc_code": "20Cxx"
+        },
+        {
+          "concept_id": "C-143",
+          "concept_name_jp": "リー群",
+          "concept_name_en": "Lie group",
+          "concept_name_cn": "李群",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-074", "C-040"],
+          "msc_code": "22Exx"
+        },
+        {
+          "concept_id": "C-144",
+          "concept_name_jp": "リー代数",
+          "concept_name_en": "Lie algebra",
+          "concept_name_cn": "李代数",
+          "formalmath_path": "docs/02-代数结构/02-核心理论/李代数/",
+          "difficulty": "L3",
+          "prerequisites": ["C-143"],
+          "msc_code": "17Bxx"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-605",
+      "course_name_jp": "数論幾何",
+      "course_name_en": "Arithmetic Geometry",
+      "level": "graduate",
+      "year": 2,
+      "credits": 4,
+      "description": "研究生专门课程",
+      "concepts": [
+        {
+          "concept_id": "C-150",
+          "concept_name_jp": "代数体",
+          "concept_name_en": "algebraic number field",
+          "concept_name_cn": "代数数域",
+          "formalmath_path": "docs/06-数论/02-代数数论-增强版.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-050"],
+          "msc_code": "11Rxx"
+        },
+        {
+          "concept_id": "C-151",
+          "concept_name_jp": "整数環",
+          "concept_name_en": "ring of integers",
+          "concept_name_cn": "整数环",
+          "formalmath_path": "docs/06-代数数论/",
+          "difficulty": "L3",
+          "prerequisites": ["C-150"],
+          "msc_code": "11R04"
+        },
+        {
+          "concept_id": "C-152",
+          "concept_name_jp": "楕円曲線",
+          "concept_name_en": "elliptic curve",
+          "concept_name_cn": "椭圆曲线",
+          "formalmath_path": "docs/06-代数数论/05-椭圆曲线与BSD猜想-深度扩展版.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-110"],
+          "msc_code": "14H52"
+        },
+        {
+          "concept_id": "C-153",
+          "concept_name_jp": "モジュラー形式",
+          "concept_name_en": "modular form",
+          "concept_name_cn": "模形式",
+          "formalmath_path": "docs/07-数论/06-模形式-深度扩展版.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-152"],
+          "msc_code": "11Fxx"
+        },
+        {
+          "concept_id": "C-154",
+          "concept_name_jp": "L関数",
+          "concept_name_en": "L-function",
+          "concept_name_cn": "L函数",
+          "formalmath_path": "concept/核心概念/28-L函数-三视角版.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-153"],
+          "msc_code": "11Mxx"
+        }
+      ]
+    },
+    {
+      "course_id": "UT-MATH-606",
+      "course_name_jp": "複素解析幾何",
+      "course_name_en": "Complex Analytic Geometry",
+      "level": "graduate",
+      "year": 2,
+      "credits": 4,
+      "description": "研究生专门课程",
+      "concepts": [
+        {
+          "concept_id": "C-160",
+          "concept_name_jp": "多変数複素関数",
+          "concept_name_en": "several complex variables",
+          "concept_name_cn": "多复变函数",
+          "formalmath_path": "docs/03-分析学/02-复分析/多复变函数.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-021"],
+          "msc_code": "32Axx"
+        },
+        {
+          "concept_id": "C-161",
+          "concept_name_jp": "複素多様体",
+          "concept_name_en": "complex manifold",
+          "concept_name_cn": "复流形",
+          "formalmath_path": "docs/04-几何学/05-代数几何.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-021", "C-074"],
+          "msc_code": "32Qxx"
+        },
+        {
+          "concept_id": "C-162",
+          "concept_name_jp": "正則層",
+          "concept_name_en": "sheaf of holomorphic functions",
+          "concept_name_cn": "全纯层",
+          "formalmath_path": "docs/13-代数几何/04-层与上同调-深度扩展版.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-111", "C-161"],
+          "msc_code": "32C35"
+        },
+        {
+          "concept_id": "C-163",
+          "concept_name_jp": "直線束",
+          "concept_name_en": "line bundle",
+          "concept_name_cn": "线丛",
+          "formalmath_path": "docs/13-代数几何/04-除子与线丛的完整理论.md",
+          "difficulty": "L3",
+          "prerequisites": ["C-133"],
+          "msc_code": "32L05"
+        },
+        {
+          "concept_id": "C-164",
+          "concept_name_jp": "Hodge理論",
+          "concept_name_en": "Hodge theory",
+          "concept_name_cn": "霍奇理论",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/56-Hodge分解定理-五种表征.md",
+          "difficulty": "L4",
+          "prerequisites": ["C-162", "C-112"],
+          "msc_code": "32Q15"
+        }
+      ]
+    }
+  ],
+  "concept_relations": {
+    "prerequisite_graph": {
+      "C-002": [],
+      "C-003": ["C-002"],
+      "C-004": ["C-003"],
+      "C-010": ["C-004"],
+      "C-040": [],
+      "C-041": ["C-040"],
+      "C-050": ["C-041"],
+      "C-070": [],
+      "C-072": ["C-070", "C-040"]
+    },
+    "cross_references": [
+      {
+        "from": "C-040",
+        "to": "C-072",
+        "relation": "application"
+      },
+      {
+        "from": "C-070",
+        "to": "C-111",
+        "relation": "generalization"
+      },
+      {
+        "from": "C-050",
+        "to": "C-150",
+        "relation": "specialization"
+      }
+    ]
+  },
+  "difficulty_levels": {
+    "L0": {
+      "name": "直观经验层",
+      "description": "基于直观理解的基础概念"
+    },
+    "L1": {
+      "name": "形式化定义层",
+      "description": "严格的数学定义和基本性质"
+    },
+    "L2": {
+      "name": "定理证明层",
+      "description": "核心定理及其证明"
+    },
+    "L3": {
+      "name": "理论建构层",
+      "description": "系统理论框架"
+    },
+    "L4": {
+      "name": "前沿研究层",
+      "description": "现代数学前沿"
+    }
+  },
+  "statistics": {
+    "concepts_by_level": {
+      "L0": 0,
+      "L1": 25,
+      "L2": 35,
+      "L3": 40,
+      "L4": 20
+    },
+    "concepts_by_msc_category": {
+      "11-XX": 12,
+      "12-XX": 8,
+      "14-XX": 15,
+      "15-XX": 8,
+      "16-XX": 10,
+      "17-XX": 5,
+      "18-XX": 8,
+      "20-XX": 15,
+      "22-XX": 5,
+      "26-XX": 10,
+      "28-XX": 8,
+      "30-XX": 8,
+      "32-XX": 10,
+      "40-XX": 5,
+      "46-XX": 10,
+      "53-XX": 15,
+      "54-XX": 12,
+      "55-XX": 18,
+      "57-XX": 5
+    }
+  }
+}

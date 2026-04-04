@@ -1,0 +1,667 @@
+{
+  "nodes": [
+    {
+      "id": "分析学",
+      "count": 25,
+      "concepts": [
+        "variational_methods",
+        "hilbert_space",
+        "functional_analysis",
+        "spectral_theory",
+        "partial_differential_equations",
+        "distribution_theory",
+        "sobolev_spaces",
+        "banach_space",
+        "differential_equations",
+        "measure_theory"
+      ]
+    },
+    {
+      "id": "代数学",
+      "count": 25,
+      "concepts": [
+        "character_theory",
+        "linear_algebra",
+        "scheme",
+        "homotopy_algebra",
+        "ring",
+        "algebraic_geometry",
+        "vector_space",
+        "lie_algebra",
+        "group_representation",
+        "commutative_algebra"
+      ]
+    },
+    {
+      "id": "几何拓扑",
+      "count": 25,
+      "concepts": [
+        "manifold",
+        "curvature",
+        "tensor_field",
+        "symplectic_geometry",
+        "geodesic",
+        "connection",
+        "compactness",
+        "covering_space",
+        "riemannian_metric",
+        "stokes_theorem"
+      ]
+    },
+    {
+      "id": "数论逻辑",
+      "count": 25,
+      "concepts": [
+        "computability",
+        "quadratic_residue",
+        "galois_representation",
+        "forcing",
+        "formalized_proof",
+        "set_theory",
+        "large_cardinal",
+        "congruence",
+        "algebraic_integer",
+        "p_adic_numbers"
+      ]
+    },
+    {
+      "id": "概率统计",
+      "count": 20,
+      "concepts": [
+        "probability_measure",
+        "parameter_estimation",
+        "probability_distribution",
+        "martingale",
+        "hypothesis_testing",
+        "bayes_theorem",
+        "regression_analysis",
+        "law_of_large_numbers",
+        "statistical_inference",
+        "bayesian_inference"
+      ]
+    },
+    {
+      "id": "最优化",
+      "count": 20,
+      "concepts": [
+        "convex_function",
+        "conjugate_gradient",
+        "optimization_problem",
+        "hessian_matrix",
+        "linear_programming",
+        "convex_set",
+        "optimal_control",
+        "lagrange_multiplier",
+        "nonlinear_programming",
+        "quadratic_programming"
+      ]
+    },
+    {
+      "id": "控制论",
+      "count": 20,
+      "concepts": [
+        "mpc",
+        "transfer_function",
+        "pid_controller",
+        "robust_control",
+        "observability",
+        "state_space",
+        "nyquist_criterion",
+        "control_system",
+        "stability_analysis",
+        "lqr_control"
+      ]
+    },
+    {
+      "id": "信息论",
+      "count": 20,
+      "concepts": [
+        "arithmetic_coding",
+        "error_correction",
+        "mutual_information",
+        "data_compression",
+        "ldpc_code",
+        "quantum_information",
+        "huffman_coding",
+        "differential_privacy",
+        "reed_solomon",
+        "rate_distortion"
+      ]
+    },
+    {
+      "id": "密码学",
+      "count": 20,
+      "concepts": [
+        "mpc",
+        "aes",
+        "homomorphic_encryption",
+        "zk_snarks",
+        "provable_security",
+        "post_quantum",
+        "mac",
+        "blockchain_consensus",
+        "lattice_based_crypto",
+        "identity_based"
+      ]
+    },
+    {
+      "id": "金融数学",
+      "count": 20,
+      "concepts": [
+        "volatility_smile",
+        "ito_lemma",
+        "credit_risk",
+        "risk_neutral",
+        "interest_rate_model",
+        "stochastic_volatility",
+        "american_option",
+        "black_scholes",
+        "ito_calculus",
+        "fundamental_theorem"
+      ]
+    },
+    {
+      "id": "生物数学",
+      "count": 19,
+      "concepts": [
+        "population_genetics",
+        "logistic_growth",
+        "evolutionary_dynamics",
+        "replicator_dynamics",
+        "ess",
+        "turing_pattern",
+        "morphogenesis",
+        "reaction_diffusion",
+        "phylogenetics",
+        "sir_model"
+      ]
+    },
+    {
+      "id": "计算数学",
+      "count": 19,
+      "concepts": [
+        "finite_volume",
+        "finite_difference",
+        "preconditioner",
+        "runge_kutta",
+        "domain_decomposition",
+        "fast_fourier_transform",
+        "numerical_pde",
+        "adaptive_mesh",
+        "iterative_method",
+        "uncertainty_quantification"
+      ]
+    },
+    {
+      "id": "物理数学",
+      "count": 20,
+      "concepts": [
+        "statistical_mechanics",
+        "phase_transition",
+        "string_theory",
+        "quantum_mechanics",
+        "general_relativity",
+        "conformal_field_theory",
+        "hamiltonian_system",
+        "integrable_system",
+        "classical_mechanics",
+        "supersymmetry"
+      ]
+    },
+    {
+      "id": "数据科学",
+      "count": 21,
+      "concepts": [
+        "gan",
+        "neural_network",
+        "data_preprocessing",
+        "rnn",
+        "backpropagation",
+        "feature_engineering",
+        "adam_optimizer",
+        "reinforcement_learning",
+        "cnn",
+        "gradient_boosting"
+      ]
+    },
+    {
+      "id": "范畴论",
+      "count": 20,
+      "concepts": [
+        "topos",
+        "representable_functor",
+        "limits_colimits",
+        "enriched_category",
+        "kan_extension",
+        "derived_functor_cat",
+        "monoidal_category",
+        "yoneda_lemma",
+        "bicategory",
+        "model_category"
+      ]
+    },
+    {
+      "id": "同调代数",
+      "count": 15,
+      "concepts": [
+        "sheaf_cohomology",
+        "tor_functor",
+        "group_cohomology",
+        "local_cohomology",
+        "tilting_theory",
+        "ext_functor",
+        "t_structure",
+        "derived_category",
+        "perfect_complex",
+        "intersection_cohomology"
+      ]
+    },
+    {
+      "id": "代数几何",
+      "count": 14,
+      "concepts": [
+        "crystalline_cohomology",
+        "chow_ring",
+        "intersection_theory",
+        "biration_geometry",
+        "minimal_model",
+        "deligne_mumford",
+        "algebraic_stack",
+        "de_rham_cohomology",
+        "derived_algebraic_geometry",
+        "moduli_space"
+      ]
+    },
+    {
+      "id": "表示论",
+      "count": 10,
+      "concepts": [
+        "borel_weil",
+        "modular_representation",
+        "geometric_representation",
+        "highest_weight",
+        "character_theory",
+        "representation_lie_algebra",
+        "category_O",
+        "induced_representation",
+        "mackey_theory",
+        "weight_theory"
+      ]
+    },
+    {
+      "id": "数论高级",
+      "count": 14,
+      "concepts": [
+        "weil_conjecture",
+        "automorphic_form",
+        "elliptic_curve",
+        "langlands_program",
+        "zeta_function",
+        "abelian_variety",
+        "modular_form",
+        "p_adic_number",
+        "l_function",
+        "local_global"
+      ]
+    },
+    {
+      "id": "动力系统",
+      "count": 10,
+      "concepts": [
+        "conley_index",
+        "symbolic_dynamics",
+        "bifurcation_theory",
+        "chaos_theory",
+        "nonlinear_dynamics",
+        "k_theory_dynamics",
+        "hamiltonian_system",
+        "ergodic_theory",
+        "symplectic_manifold",
+        "symplectic_geometry"
+      ]
+    },
+    {
+      "id": "数理逻辑",
+      "count": 13,
+      "concepts": [
+        "categorical_logic",
+        "ordinal_analysis",
+        "forcing",
+        "descriptive_set_theory",
+        "constructive_mathematics",
+        "modal_logic",
+        "large_cardinal",
+        "reverse_math",
+        "intuitionistic_logic",
+        "homotopy_type_theory"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "数论逻辑",
+      "target": "分析学",
+      "value": 1
+    },
+    {
+      "source": "代数学",
+      "target": "分析学",
+      "value": 3
+    },
+    {
+      "source": "数论逻辑",
+      "target": "代数学",
+      "value": 4
+    },
+    {
+      "source": "数论逻辑",
+      "target": "几何拓扑",
+      "value": 1
+    },
+    {
+      "source": "分析学",
+      "target": "几何拓扑",
+      "value": 4
+    },
+    {
+      "source": "代数学",
+      "target": "几何拓扑",
+      "value": 6
+    },
+    {
+      "source": "代数学",
+      "target": "数论逻辑",
+      "value": 8
+    },
+    {
+      "source": "分析学",
+      "target": "数论逻辑",
+      "value": 1
+    },
+    {
+      "source": "数论高级",
+      "target": "数论逻辑",
+      "value": 5
+    },
+    {
+      "source": "数理逻辑",
+      "target": "数论逻辑",
+      "value": 3
+    },
+    {
+      "source": "分析学",
+      "target": "概率统计",
+      "value": 1
+    },
+    {
+      "source": "代数学",
+      "target": "概率统计",
+      "value": 1
+    },
+    {
+      "source": "代数学",
+      "target": "最优化",
+      "value": 5
+    },
+    {
+      "source": "分析学",
+      "target": "最优化",
+      "value": 2
+    },
+    {
+      "source": "概率统计",
+      "target": "最优化",
+      "value": 1
+    },
+    {
+      "source": "分析学",
+      "target": "控制论",
+      "value": 2
+    },
+    {
+      "source": "代数学",
+      "target": "控制论",
+      "value": 4
+    },
+    {
+      "source": "概率统计",
+      "target": "控制论",
+      "value": 3
+    },
+    {
+      "source": "最优化",
+      "target": "控制论",
+      "value": 3
+    },
+    {
+      "source": "概率统计",
+      "target": "信息论",
+      "value": 4
+    },
+    {
+      "source": "最优化",
+      "target": "信息论",
+      "value": 2
+    },
+    {
+      "source": "数论逻辑",
+      "target": "信息论",
+      "value": 2
+    },
+    {
+      "source": "物理数学",
+      "target": "信息论",
+      "value": 1
+    },
+    {
+      "source": "代数学",
+      "target": "密码学",
+      "value": 2
+    },
+    {
+      "source": "数论逻辑",
+      "target": "密码学",
+      "value": 2
+    },
+    {
+      "source": "数论高级",
+      "target": "密码学",
+      "value": 1
+    },
+    {
+      "source": "信息论",
+      "target": "密码学",
+      "value": 2
+    },
+    {
+      "source": "物理数学",
+      "target": "密码学",
+      "value": 1
+    },
+    {
+      "source": "概率统计",
+      "target": "密码学",
+      "value": 1
+    },
+    {
+      "source": "概率统计",
+      "target": "金融数学",
+      "value": 8
+    },
+    {
+      "source": "分析学",
+      "target": "金融数学",
+      "value": 2
+    },
+    {
+      "source": "最优化",
+      "target": "金融数学",
+      "value": 1
+    },
+    {
+      "source": "分析学",
+      "target": "生物数学",
+      "value": 3
+    },
+    {
+      "source": "动力系统",
+      "target": "生物数学",
+      "value": 2
+    },
+    {
+      "source": "概率统计",
+      "target": "生物数学",
+      "value": 3
+    },
+    {
+      "source": "分析学",
+      "target": "计算数学",
+      "value": 8
+    },
+    {
+      "source": "代数学",
+      "target": "计算数学",
+      "value": 3
+    },
+    {
+      "source": "分析学",
+      "target": "物理数学",
+      "value": 8
+    },
+    {
+      "source": "几何拓扑",
+      "target": "物理数学",
+      "value": 2
+    },
+    {
+      "source": "动力系统",
+      "target": "物理数学",
+      "value": 2
+    },
+    {
+      "source": "代数学",
+      "target": "物理数学",
+      "value": 2
+    },
+    {
+      "source": "代数学",
+      "target": "数据科学",
+      "value": 3
+    },
+    {
+      "source": "概率统计",
+      "target": "数据科学",
+      "value": 1
+    },
+    {
+      "source": "最优化",
+      "target": "数据科学",
+      "value": 4
+    },
+    {
+      "source": "代数学",
+      "target": "范畴论",
+      "value": 17
+    },
+    {
+      "source": "几何拓扑",
+      "target": "范畴论",
+      "value": 2
+    },
+    {
+      "source": "范畴论",
+      "target": "同调代数",
+      "value": 3
+    },
+    {
+      "source": "几何拓扑",
+      "target": "同调代数",
+      "value": 3
+    },
+    {
+      "source": "代数学",
+      "target": "同调代数",
+      "value": 6
+    },
+    {
+      "source": "代数学",
+      "target": "代数几何",
+      "value": 12
+    },
+    {
+      "source": "几何拓扑",
+      "target": "代数几何",
+      "value": 3
+    },
+    {
+      "source": "范畴论",
+      "target": "代数几何",
+      "value": 2
+    },
+    {
+      "source": "同调代数",
+      "target": "代数几何",
+      "value": 2
+    },
+    {
+      "source": "代数学",
+      "target": "表示论",
+      "value": 4
+    },
+    {
+      "source": "同调代数",
+      "target": "表示论",
+      "value": 1
+    },
+    {
+      "source": "数论逻辑",
+      "target": "数论高级",
+      "value": 5
+    },
+    {
+      "source": "表示论",
+      "target": "数论高级",
+      "value": 2
+    },
+    {
+      "source": "分析学",
+      "target": "数论高级",
+      "value": 2
+    },
+    {
+      "source": "代数学",
+      "target": "数论高级",
+      "value": 6
+    },
+    {
+      "source": "代数几何",
+      "target": "数论高级",
+      "value": 1
+    },
+    {
+      "source": "几何拓扑",
+      "target": "动力系统",
+      "value": 2
+    },
+    {
+      "source": "分析学",
+      "target": "动力系统",
+      "value": 3
+    },
+    {
+      "source": "数论逻辑",
+      "target": "数理逻辑",
+      "value": 10
+    },
+    {
+      "source": "范畴论",
+      "target": "数理逻辑",
+      "value": 1
+    },
+    {
+      "source": "代数学",
+      "target": "数理逻辑",
+      "value": 1
+    }
+  ]
+}

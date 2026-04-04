@@ -1,0 +1,150 @@
+{
+  "general": {
+    "total_concepts": 395,
+    "total_categories": 21,
+    "total_estimated_hours": 15916,
+    "avg_hours_per_concept": 40.29,
+    "avg_prerequisites": 2.13,
+    "avg_successors": 1.24
+  },
+  "by_category": {
+    "分析学": {
+      "count": 25,
+      "total_hours": 773,
+      "avg_difficulty": 3.36
+    },
+    "代数学": {
+      "count": 25,
+      "total_hours": 785,
+      "avg_difficulty": 3.12
+    },
+    "几何拓扑": {
+      "count": 25,
+      "total_hours": 807,
+      "avg_difficulty": 3.32
+    },
+    "数论逻辑": {
+      "count": 25,
+      "total_hours": 908,
+      "avg_difficulty": 3.32
+    },
+    "概率统计": {
+      "count": 20,
+      "total_hours": 517,
+      "avg_difficulty": 2.9
+    },
+    "最优化": {
+      "count": 20,
+      "total_hours": 556,
+      "avg_difficulty": 3.05
+    },
+    "控制论": {
+      "count": 20,
+      "total_hours": 585,
+      "avg_difficulty": 3.25
+    },
+    "信息论": {
+      "count": 20,
+      "total_hours": 620,
+      "avg_difficulty": 3.35
+    },
+    "密码学": {
+      "count": 20,
+      "total_hours": 825,
+      "avg_difficulty": 3.65
+    },
+    "金融数学": {
+      "count": 20,
+      "total_hours": 765,
+      "avg_difficulty": 4.2
+    },
+    "生物数学": {
+      "count": 19,
+      "total_hours": 680,
+      "avg_difficulty": 3.58
+    },
+    "计算数学": {
+      "count": 19,
+      "total_hours": 710,
+      "avg_difficulty": 3.42
+    },
+    "物理数学": {
+      "count": 20,
+      "total_hours": 1070,
+      "avg_difficulty": 4.3
+    },
+    "数据科学": {
+      "count": 21,
+      "total_hours": 740,
+      "avg_difficulty": 3.24
+    },
+    "范畴论": {
+      "count": 20,
+      "total_hours": 945,
+      "avg_difficulty": 4.3
+    },
+    "同调代数": {
+      "count": 15,
+      "total_hours": 880,
+      "avg_difficulty": 4.8
+    },
+    "代数几何": {
+      "count": 14,
+      "total_hours": 960,
+      "avg_difficulty": 4.86
+    },
+    "表示论": {
+      "count": 10,
+      "total_hours": 570,
+      "avg_difficulty": 4.5
+    },
+    "数论高级": {
+      "count": 14,
+      "total_hours": 905,
+      "avg_difficulty": 4.5
+    },
+    "动力系统": {
+      "count": 10,
+      "total_hours": 520,
+      "avg_difficulty": 4.1
+    },
+    "数理逻辑": {
+      "count": 13,
+      "total_hours": 795,
+      "avg_difficulty": 4.46
+    }
+  },
+  "difficulty_distribution": {
+    "2": 40,
+    "3": 126,
+    "4": 139,
+    "5": 88,
+    "1": 2
+  },
+  "hours_distribution": {
+    "0-20": 51,
+    "21-40": 178,
+    "41-60": 126,
+    "61+": 40
+  },
+  "metadata": {
+    "version": "4.0",
+    "generated_date": "2026-04-04",
+    "total_concepts": 400,
+    "new_categories": [
+      "范畴论",
+      "同调代数",
+      "代数几何高级",
+      "表示论",
+      "数论高级",
+      "动力系统",
+      "数理逻辑"
+    ],
+    "international_resources": [
+      "Stacks Project",
+      "Kerodon",
+      "nLab",
+      "arXiv"
+    ]
+  }
+}

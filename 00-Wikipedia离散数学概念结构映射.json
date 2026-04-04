@@ -1,0 +1,914 @@
+{
+  "metadata": {
+    "title": "Wikipedia离散数学概念结构映射",
+    "version": "1.0",
+    "created_date": "2026-04-04",
+    "last_updated": "2026-04-04",
+    "source": "Wikipedia",
+    "target_project": "FormalMath",
+    "total_concepts": 8
+  },
+  "alignment_summary": {
+    "coverage": {
+      "total_areas": 8,
+      "covered": 3,
+      "coverage_rate": "37.5%"
+    },
+    "covered_areas": ["Combinatorics", "Graph Theory", "Algorithm"],
+    "uncovered_areas": ["Discrete Geometry", "Coding Theory", "Design Theory", "Matroid", "Data Structure"]
+  },
+  "concepts": [
+    {
+      "id": "WP-DM-001",
+      "wikipedia_title": "Combinatorics",
+      "chinese_name": "组合数学",
+      "msc_classification": "05-XX",
+      "url": "https://en.wikipedia.org/wiki/Combinatorics",
+      "formalmath_mapping": {
+        "exists": true,
+        "document_path": "concept/核心概念/30-组合数.md",
+        "concept_id": "C.CORE.030",
+        "alignment_quality": "high",
+        "coverage_percentage": 80
+      },
+      "definition": {
+        "english": "Branch of mathematics concerning the study of finite or countable discrete structures",
+        "chinese": "数学的一个分支，主要研究有限或可数的离散结构"
+      },
+      "subconcepts": [
+        {
+          "name": "Enumerative Combinatorics",
+          "chinese_name": "枚举组合学",
+          "key_topics": [
+            {
+              "name": "Counting Principles",
+              "chinese_name": "计数原理",
+              "includes": ["Addition Principle", "Multiplication Principle", "Inclusion-Exclusion Principle"]
+            },
+            {
+              "name": "Permutations",
+              "chinese_name": "排列",
+              "formula": "P(n,r) = n!/(n-r)!"
+            },
+            {
+              "name": "Combinations",
+              "chinese_name": "组合",
+              "formula": "C(n,r) = n!/(r!(n-r)!)"
+            },
+            {
+              "name": "Binomial Coefficients",
+              "chinese_name": "二项式系数",
+              "key_identities": [
+                "Symmetry: C(n,k) = C(n,n-k)",
+                "Pascal's Identity: C(n,k) = C(n-1,k-1) + C(n-1,k)",
+                "Binomial Theorem: (x+y)^n = Σ C(n,k)x^k y^(n-k)"
+              ]
+            },
+            {
+              "name": "Generating Functions",
+              "chinese_name": "生成函数"
+            }
+          ]
+        },
+        {
+          "name": "Extremal Combinatorics",
+          "chinese_name": "极值组合学"
+        },
+        {
+          "name": "Graph Theory",
+          "chinese_name": "图论",
+          "reference": "WP-DM-002"
+        },
+        {
+          "name": "Design Theory",
+          "chinese_name": "设计理论",
+          "reference": "WP-DM-005"
+        },
+        {
+          "name": "Coding Theory",
+          "chinese_name": "编码理论",
+          "reference": "WP-DM-004"
+        }
+      ],
+      "key_theorems": [
+        {
+          "name": "Binomial Theorem",
+          "formula": "(x+y)^n = Σ(k=0 to n) C(n,k) x^k y^(n-k)"
+        },
+        {
+          "name": "Vandermonde's Identity",
+          "formula": "Σ(k=0 to r) C(m,k)C(n,r-k) = C(m+n,r)"
+        }
+      ],
+      "alignment_notes": "FormalMath已有组合数详细文档，覆盖主要概念，需补充极值组合学和生成函数内容"
+    },
+    {
+      "id": "WP-DM-002",
+      "wikipedia_title": "Graph Theory",
+      "chinese_name": "图论",
+      "msc_classification": "05Cxx",
+      "url": "https://en.wikipedia.org/wiki/Graph_theory",
+      "formalmath_mapping": {
+        "exists": true,
+        "document_path": "concept/03-主题概念梳理/08-离散数学概念-详细版.md",
+        "alignment_quality": "medium",
+        "coverage_percentage": 70
+      },
+      "definition": {
+        "english": "Study of graphs, which are mathematical structures used to model pairwise relations between objects",
+        "chinese": "研究图的数学分支，图是用来建模对象之间成对关系的数学结构"
+      },
+      "subconcepts": [
+        {
+          "name": "Basic Concepts",
+          "chinese_name": "基本概念",
+          "topics": [
+            {
+              "name": "Graph",
+              "definition": "G = (V, E) where V is vertex set and E is edge set"
+            },
+            {
+              "name": "Vertex/Node",
+              "chinese_name": "顶点/节点"
+            },
+            {
+              "name": "Edge",
+              "chinese_name": "边"
+            },
+            {
+              "name": "Directed Graph",
+              "chinese_name": "有向图"
+            },
+            {
+              "name": "Undirected Graph",
+              "chinese_name": "无向图"
+            },
+            {
+              "name": "Simple Graph",
+              "chinese_name": "简单图",
+              "properties": ["No self-loops", "No multiple edges"]
+            }
+          ]
+        },
+        {
+          "name": "Graph Properties",
+          "chinese_name": "图性质",
+          "topics": [
+            {
+              "name": "Degree",
+              "chinese_name": "度",
+              "theorems": ["Handshaking Lemma: Σd(v) = 2|E|"]
+            },
+            {
+              "name": "Path",
+              "chinese_name": "路径"
+            },
+            {
+              "name": "Cycle",
+              "chinese_name": "回路/圈"
+            },
+            {
+              "name": "Connectivity",
+              "chinese_name": "连通性"
+            },
+            {
+              "name": "Tree",
+              "chinese_name": "树",
+              "properties": ["Connected and acyclic", "|E| = |V| - 1"]
+            }
+          ]
+        },
+        {
+          "name": "Special Graphs",
+          "chinese_name": "特殊图",
+          "types": [
+            {
+              "name": "Complete Graph",
+              "chinese_name": "完全图",
+              "notation": "K_n"
+            },
+            {
+              "name": "Bipartite Graph",
+              "chinese_name": "二分图"
+            },
+            {
+              "name": "Planar Graph",
+              "chinese_name": "平面图",
+              "formula": "Euler's Formula: V - E + F = 2"
+            },
+            {
+              "name": "Eulerian Graph",
+              "chinese_name": "欧拉图",
+              "condition": "All vertices have even degree"
+            },
+            {
+              "name": "Hamiltonian Graph",
+              "chinese_name": "哈密顿图",
+              "theorem": "Dirac's Theorem: δ(G) ≥ n/2 ⇒ Hamiltonian"
+            }
+          ]
+        },
+        {
+          "name": "Graph Algorithms",
+          "chinese_name": "图算法",
+          "algorithms": [
+            {
+              "name": "DFS",
+              "chinese_name": "深度优先搜索",
+              "complexity": "O(|V| + |E|)"
+            },
+            {
+              "name": "BFS",
+              "chinese_name": "广度优先搜索",
+              "complexity": "O(|V| + |E|)"
+            },
+            {
+              "name": "Dijkstra's Algorithm",
+              "chinese_name": "Dijkstra算法",
+              "complexity": "O((|V| + |E|)log|V|)"
+            },
+            {
+              "name": "Minimum Spanning Tree",
+              "chinese_name": "最小生成树",
+              "algorithms": ["Kruskal", "Prim"]
+            }
+          ]
+        }
+      ],
+      "key_theorems": [
+        {
+          "name": "Handshaking Lemma",
+          "formula": "Σ(v∈V) d(v) = 2|E|"
+        },
+        {
+          "name": "Euler's Formula for Planar Graphs",
+          "formula": "V - E + F = 2"
+        },
+        {
+          "name": "Dirac's Theorem",
+          "statement": "If G has n vertices (n≥3) and every vertex has degree ≥ n/2, then G has a Hamiltonian cycle"
+        }
+      ],
+      "alignment_notes": "FormalMath已有图论基础内容，需补充更多图算法和特殊图类型"
+    },
+    {
+      "id": "WP-DM-003",
+      "wikipedia_title": "Discrete Geometry",
+      "chinese_name": "离散几何",
+      "msc_classification": "52Cxx",
+      "url": "https://en.wikipedia.org/wiki/Discrete_geometry",
+      "formalmath_mapping": {
+        "exists": false,
+        "suggested_path": "concept/核心概念/34-离散几何.md",
+        "priority": "high"
+      },
+      "definition": {
+        "english": "Study of combinatorial properties and constructive methods of discrete geometric objects",
+        "chinese": "研究离散几何对象的组合性质和构造方法的几何学分支"
+      },
+      "subconcepts": [
+        {
+          "name": "Convex Geometry",
+          "chinese_name": "凸几何",
+          "topics": [
+            {
+              "name": "Convex Hull",
+              "chinese_name": "凸包"
+            },
+            {
+              "name": "Convex Polytope",
+              "chinese_name": "凸多面体"
+            },
+            {
+              "name": "Helly's Theorem",
+              "chinese_name": "Helly定理"
+            }
+          ]
+        },
+        {
+          "name": "Packing and Covering",
+          "chinese_name": "填充与覆盖",
+          "topics": [
+            {
+              "name": "Circle Packing",
+              "chinese_name": "圆填充"
+            },
+            {
+              "name": "Sphere Packing",
+              "chinese_name": "球填充"
+            },
+            {
+              "name": "Covering Problem",
+              "chinese_name": "覆盖问题"
+            }
+          ]
+        },
+        {
+          "name": "Polyhedral Combinatorics",
+          "chinese_name": "多面体组合"
+        },
+        {
+          "name": "Geometric Graph Theory",
+          "chinese_name": "几何图论"
+        },
+        {
+          "name": "Lattice Points",
+          "chinese_name": "格点"
+        },
+        {
+          "name": "Finite Geometry",
+          "chinese_name": "有限几何"
+        }
+      ],
+      "key_concepts": [
+        {
+          "name": "Voronoi Diagram",
+          "chinese_name": "Voronoi图"
+        },
+        {
+          "name": "Delaunay Triangulation",
+          "chinese_name": "Delaunay三角剖分"
+        }
+      ],
+      "alignment_notes": "FormalMath缺少离散几何内容，建议创建核心概念文档"
+    },
+    {
+      "id": "WP-DM-004",
+      "wikipedia_title": "Coding Theory",
+      "chinese_name": "编码理论",
+      "msc_classification": "94Bxx",
+      "url": "https://en.wikipedia.org/wiki/Coding_theory",
+      "formalmath_mapping": {
+        "exists": false,
+        "suggested_path": "concept/核心概念/32-编码理论.md",
+        "priority": "high"
+      },
+      "definition": {
+        "english": "Study of the properties of codes and their fitness for a specific application",
+        "chinese": "研究码的性质及其在特定应用中适用性的理论"
+      },
+      "subconcepts": [
+        {
+          "name": "Error-correcting Codes",
+          "chinese_name": "纠错码",
+          "types": [
+            {
+              "name": "Block Codes",
+              "chinese_name": "分组码",
+              "examples": [
+                {
+                  "name": "Hamming Codes",
+                  "chinese_name": "汉明码"
+                },
+                {
+                  "name": "Reed-Solomon Codes",
+                  "chinese_name": "里德-所罗门码"
+                },
+                {
+                  "name": "BCH Codes",
+                  "chinese_name": "BCH码"
+                }
+              ]
+            },
+            {
+              "name": "Convolutional Codes",
+              "chinese_name": "卷积码"
+            }
+          ]
+        },
+        {
+          "name": "Error-detecting Codes",
+          "chinese_name": "检错码",
+          "types": [
+            {
+              "name": "Parity Check",
+              "chinese_name": "奇偶校验"
+            },
+            {
+              "name": "Checksum",
+              "chinese_name": "校验和"
+            },
+            {
+              "name": "Cyclic Redundancy Check",
+              "chinese_name": "循环冗余校验(CRC)"
+            }
+          ]
+        },
+        {
+          "name": "Code Properties",
+          "chinese_name": "码性质",
+          "concepts": [
+            {
+              "name": "Hamming Distance",
+              "chinese_name": "汉明距离",
+              "definition": "Number of positions at which corresponding symbols differ"
+            },
+            {
+              "name": "Hamming Weight",
+              "chinese_name": "汉明重量"
+            },
+            {
+              "name": "Code Rate",
+              "chinese_name": "码率",
+              "formula": "R = k/n"
+            },
+            {
+              "name": "Minimum Distance",
+              "chinese_name": "最小距离",
+              "relation_to_error_correction": "Can correct up to ⌊(d-1)/2⌋ errors"
+            },
+            {
+              "name": "Linear Code",
+              "chinese_name": "线性码"
+            }
+          ]
+        },
+        {
+          "name": "Bounds",
+          "chinese_name": "界",
+          "types": [
+            {
+              "name": "Hamming Bound",
+              "chinese_name": "汉明界"
+            },
+            {
+              "name": "Singleton Bound",
+              "chinese_name": "Singleton界"
+            },
+            {
+              "name": "Gilbert-Varshamov Bound",
+              "chinese_name": "Gilbert-Varshamov界"
+            }
+          ]
+        }
+      ],
+      "alignment_notes": "FormalMath缺少编码理论内容，建议创建核心概念文档"
+    },
+    {
+      "id": "WP-DM-005",
+      "wikipedia_title": "Design Theory",
+      "chinese_name": "设计理论",
+      "msc_classification": "05Bxx",
+      "url": "https://en.wikipedia.org/wiki/Design_theory",
+      "formalmath_mapping": {
+        "exists": false,
+        "suggested_path": "concept/核心概念/35-设计理论.md",
+        "priority": "medium"
+      },
+      "definition": {
+        "english": "Study of combinatorial designs, particularly balanced incomplete block designs (BIBD)",
+        "chinese": "研究组合设计，特别是平衡不完全区组设计(BIBD)的理论"
+      },
+      "subconcepts": [
+        {
+          "name": "Block Designs",
+          "chinese_name": "区组设计",
+          "types": [
+            {
+              "name": "BIBD",
+              "chinese_name": "平衡不完全区组设计",
+              "parameters": "(v, b, r, k, λ)",
+              "relations": ["vr = bk", "r(k-1) = λ(v-1)"]
+            },
+            {
+              "name": "Symmetric BIBD",
+              "chinese_name": "对称BIBD",
+              "property": "b = v, r = k"
+            },
+            {
+              "name": "Steiner Systems",
+              "chinese_name": "Steiner系统",
+              "notation": "S(t,k,n)"
+            }
+          ]
+        },
+        {
+          "name": "Latin Squares",
+          "chinese_name": "拉丁方",
+          "concepts": [
+            {
+              "name": "Orthogonal Latin Squares",
+              "chinese_name": "正交拉丁方"
+            },
+            {
+              "name": "MOLS",
+              "chinese_name": "相互正交拉丁方"
+            }
+          ]
+        },
+        {
+          "name": "Hadamard Matrices",
+          "chinese_name": "Hadamard矩阵",
+          "property": "Entries ±1, rows mutually orthogonal"
+        },
+        {
+          "name": "Finite Geometries",
+          "chinese_name": "有限几何",
+          "types": [
+            {
+              "name": "Projective Planes",
+              "chinese_name": "射影平面"
+            },
+            {
+              "name": "Affine Planes",
+              "chinese_name": "仿射平面"
+            }
+          ]
+        }
+      ],
+      "alignment_notes": "FormalMath缺少设计理论内容，建议创建核心概念文档"
+    },
+    {
+      "id": "WP-DM-006",
+      "wikipedia_title": "Matroid",
+      "chinese_name": "拟阵",
+      "msc_classification": "05B35",
+      "url": "https://en.wikipedia.org/wiki/Matroid",
+      "formalmath_mapping": {
+        "exists": false,
+        "suggested_path": "concept/核心概念/36-拟阵.md",
+        "priority": "medium"
+      },
+      "definition": {
+        "english": "Structure that abstracts and generalizes the notion of linear independence in vector spaces",
+        "chinese": "抽象和推广向量空间中线性无关概念的组合结构"
+      },
+      "subconcepts": [
+        {
+          "name": "Axioms",
+          "chinese_name": "公理",
+          "types": [
+            {
+              "name": "Independent Sets",
+              "chinese_name": "独立集公理"
+            },
+            {
+              "name": "Bases",
+              "chinese_name": "基公理"
+            },
+            {
+              "name": "Circuits",
+              "chinese_name": "回路公理"
+            },
+            {
+              "name": "Rank Function",
+              "chinese_name": "秩函数公理"
+            }
+          ]
+        },
+        {
+          "name": "Examples",
+          "chinese_name": "例子",
+          "types": [
+            {
+              "name": "Linear Matroid",
+              "chinese_name": "线性拟阵"
+            },
+            {
+              "name": "Graphic Matroid",
+              "chinese_name": "图拟阵"
+            },
+            {
+              "name": "Uniform Matroid",
+              "chinese_name": "均匀拟阵"
+            },
+            {
+              "name": "Partition Matroid",
+              "chinese_name": "划分拟阵"
+            }
+          ]
+        },
+        {
+          "name": "Operations",
+          "chinese_name": "运算",
+          "types": [
+            {
+              "name": "Dual Matroid",
+              "chinese_name": "对偶拟阵"
+            },
+            {
+              "name": "Deletion",
+              "chinese_name": "删除"
+            },
+            {
+              "name": "Contraction",
+              "chinese_name": "收缩"
+            },
+            {
+              "name": "Minors",
+              "chinese_name": "子式"
+            }
+          ]
+        },
+        {
+          "name": "Greedy Algorithm",
+          "chinese_name": "贪心算法",
+          "application": "Matroid greedy algorithm finds optimal solution"
+        }
+      ],
+      "key_concepts": [
+        {
+          "name": "Rank Function",
+          "notation": "r(S)",
+          "description": "Maximum size of an independent set in S"
+        },
+        {
+          "name": "Basis",
+          "description": "Maximal independent set"
+        },
+        {
+          "name": "Circuit",
+          "description": "Minimal dependent set"
+        }
+      ],
+      "alignment_notes": "FormalMath缺少拟阵内容，建议创建核心概念文档"
+    },
+    {
+      "id": "WP-DM-007",
+      "wikipedia_title": "Algorithm",
+      "chinese_name": "算法",
+      "msc_classification": "68Wxx",
+      "url": "https://en.wikipedia.org/wiki/Algorithm",
+      "formalmath_mapping": {
+        "exists": true,
+        "document_path": "concept/核心概念/31-算法.md",
+        "concept_id": "C.CORE.031",
+        "alignment_quality": "high",
+        "coverage_percentage": 85
+      },
+      "definition": {
+        "english": "Finite sequence of well-defined, computer-implementable instructions to solve a class of problems",
+        "chinese": "解决一类问题的有限、明确定义、可在计算机上执行的指令序列"
+      },
+      "subconcepts": [
+        {
+          "name": "Algorithm Analysis",
+          "chinese_name": "算法分析",
+          "topics": [
+            {
+              "name": "Time Complexity",
+              "chinese_name": "时间复杂度"
+            },
+            {
+              "name": "Space Complexity",
+              "chinese_name": "空间复杂度"
+            },
+            {
+              "name": "Asymptotic Notation",
+              "chinese_name": "渐近记号",
+              "types": ["Big-O", "Omega", "Theta"]
+            }
+          ]
+        },
+        {
+          "name": "Algorithm Design Paradigms",
+          "chinese_name": "算法设计范式",
+          "types": [
+            {
+              "name": "Divide and Conquer",
+              "chinese_name": "分治"
+            },
+            {
+              "name": "Dynamic Programming",
+              "chinese_name": "动态规划"
+            },
+            {
+              "name": "Greedy Algorithm",
+              "chinese_name": "贪心算法"
+            },
+            {
+              "name": "Backtracking",
+              "chinese_name": "回溯"
+            }
+          ]
+        },
+        {
+          "name": "Sorting Algorithms",
+          "chinese_name": "排序算法",
+          "algorithms": [
+            {
+              "name": "Quick Sort",
+              "chinese_name": "快速排序",
+              "complexity": "O(n log n) average"
+            },
+            {
+              "name": "Merge Sort",
+              "chinese_name": "归并排序",
+              "complexity": "O(n log n)"
+            },
+            {
+              "name": "Bubble Sort",
+              "chinese_name": "冒泡排序",
+              "complexity": "O(n²)"
+            }
+          ]
+        },
+        {
+          "name": "Graph Algorithms",
+          "chinese_name": "图算法",
+          "algorithms": ["DFS", "BFS", "Dijkstra", "MST"]
+        },
+        {
+          "name": "Complexity Classes",
+          "chinese_name": "复杂度类",
+          "classes": [
+            {
+              "name": "P",
+              "description": "Polynomial time"
+            },
+            {
+              "name": "NP",
+              "description": "Nondeterministic polynomial time"
+            },
+            {
+              "name": "NP-complete",
+              "description": "NP中最难的问题"
+            }
+          ]
+        },
+        {
+          "name": "Computability",
+          "chinese_name": "可计算性",
+          "concepts": [
+            {
+              "name": "Turing Machine",
+              "chinese_name": "图灵机"
+            },
+            {
+              "name": "Church-Turing Thesis",
+              "chinese_name": "Church-Turing论题"
+            }
+          ]
+        }
+      ],
+      "key_theorems": [
+        {
+          "name": "Church-Turing Thesis",
+          "statement": "Any effectively calculable function can be computed by a Turing machine"
+        },
+        {
+          "name": "Cook-Levin Theorem",
+          "statement": "SAT is NP-complete"
+        }
+      ],
+      "alignment_notes": "FormalMath已有算法详细文档，覆盖主要概念，需补充数据结构关联"
+    },
+    {
+      "id": "WP-DM-008",
+      "wikipedia_title": "Data Structure",
+      "chinese_name": "数据结构",
+      "msc_classification": "68Pxx",
+      "url": "https://en.wikipedia.org/wiki/Data_structure",
+      "formalmath_mapping": {
+        "exists": false,
+        "suggested_path": "concept/核心概念/33-数据结构.md",
+        "priority": "high"
+      },
+      "definition": {
+        "english": "Data organization, management, and storage format that enables efficient access and modification",
+        "chinese": "使数据能够高效访问和修改的数据组织、管理和存储格式"
+      },
+      "subconcepts": [
+        {
+          "name": "Linear Structures",
+          "chinese_name": "线性结构",
+          "types": [
+            {
+              "name": "Array",
+              "chinese_name": "数组",
+              "operations": {
+                "access": "O(1)",
+                "search": "O(n)",
+                "insertion": "O(n)",
+                "deletion": "O(n)"
+              }
+            },
+            {
+              "name": "Linked List",
+              "chinese_name": "链表"
+            },
+            {
+              "name": "Stack",
+              "chinese_name": "栈",
+              "principle": "LIFO"
+            },
+            {
+              "name": "Queue",
+              "chinese_name": "队列",
+              "principle": "FIFO"
+            }
+          ]
+        },
+        {
+          "name": "Tree Structures",
+          "chinese_name": "树结构",
+          "types": [
+            {
+              "name": "Binary Tree",
+              "chinese_name": "二叉树"
+            },
+            {
+              "name": "Binary Search Tree",
+              "chinese_name": "二叉搜索树",
+              "operations": {
+                "search": "O(log n) average",
+                "insertion": "O(log n) average",
+                "deletion": "O(log n) average"
+              }
+            },
+            {
+              "name": "Heap",
+              "chinese_name": "堆"
+            },
+            {
+              "name": "Balanced Trees",
+              "chinese_name": "平衡树",
+              "types": ["AVL Tree", "Red-Black Tree"]
+            },
+            {
+              "name": "B-Trees",
+              "chinese_name": "B树"
+            }
+          ]
+        },
+        {
+          "name": "Graph Structures",
+          "chinese_name": "图结构",
+          "representations": [
+            {
+              "name": "Adjacency Matrix",
+              "chinese_name": "邻接矩阵"
+            },
+            {
+              "name": "Adjacency List",
+              "chinese_name": "邻接表"
+            }
+          ]
+        },
+        {
+          "name": "Hash Structures",
+          "chinese_name": "哈希结构",
+          "types": [
+            {
+              "name": "Hash Table",
+              "chinese_name": "哈希表",
+              "operations": {
+                "search": "O(1) average",
+                "insertion": "O(1) average",
+                "deletion": "O(1) average"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Abstract Data Types",
+          "chinese_name": "抽象数据类型",
+          "types": [
+            {
+              "name": "Set",
+              "chinese_name": "集合"
+            },
+            {
+              "name": "Map/Dictionary",
+              "chinese_name": "映射/字典"
+            },
+            {
+              "name": "Priority Queue",
+              "chinese_name": "优先队列"
+            }
+          ]
+        }
+      ],
+      "alignment_notes": "FormalMath缺少数据结构内容，建议创建核心概念文档，与算法文档关联"
+    }
+  ],
+  "cross_references": [
+    {
+      "from": "WP-DM-001",
+      "to": ["WP-DM-002", "WP-DM-005", "WP-DM-004"],
+      "relation": "combinatorics_includes"
+    },
+    {
+      "from": "WP-DM-002",
+      "to": ["WP-DM-006"],
+      "relation": "graphic_matroid"
+    },
+    {
+      "from": "WP-DM-007",
+      "to": ["WP-DM-008", "WP-DM-002"],
+      "relation": "algorithm_uses"
+    },
+    {
+      "from": "WP-DM-003",
+      "to": ["WP-DM-002"],
+      "relation": "geometric_graph_theory"
+    }
+  ],
+  "msc_mapping": {
+    "05-XX": ["WP-DM-001", "WP-DM-002", "WP-DM-005", "WP-DM-006"],
+    "52Cxx": ["WP-DM-003"],
+    "94Bxx": ["WP-DM-004"],
+    "68Wxx": ["WP-DM-007"],
+    "68Pxx": ["WP-DM-008"]
+  }
+}

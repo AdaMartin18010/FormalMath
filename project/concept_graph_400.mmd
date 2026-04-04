@@ -1,0 +1,248 @@
+graph TD
+    subgraph 分析学[分析学]
+        limit[极限]
+        continuity[连续性]
+        derivative[导数]
+        riemann_integral[积分]
+        infinite_series[级数]
+    end
+    subgraph 代数学[代数学]
+        group[群]
+        ring[环]
+        field[域]
+        module[模]
+        linear_algebra[线性代数]
+    end
+    subgraph 几何拓扑[几何拓扑]
+        topological_space[拓扑空间]
+        continuous_map[连续映射]
+        compactness[紧致性]
+        connectedness[连通性]
+        homotopy[同伦]
+    end
+    subgraph 数论逻辑[数论逻辑]
+        divisibility[整除]
+        congruence[同余]
+        primitive_root[原根]
+        quadratic_residue[二次剩余]
+        algebraic_integer[代数整数]
+    end
+    subgraph 概率统计[概率统计]
+        probability_measure[概率测度]
+        random_variable[随机变量]
+        probability_distribution[概率分布]
+        expectation[期望]
+        conditional_probability[条件概率]
+    end
+    subgraph 最优化[最优化]
+        optimization_problem[最优化问题]
+        convex_set[凸集]
+        convex_function[凸函数]
+        gradient[梯度]
+        hessian_matrix[Hessian矩阵]
+    end
+    subgraph 控制论[控制论]
+        control_system[控制系统]
+        transfer_function[传递函数]
+        state_space[状态空间]
+        feedback_control[反馈控制]
+        stability_analysis[稳定性分析]
+    end
+    subgraph 信息论[信息论]
+        information[信息]
+        shannon_entropy[香农熵]
+        mutual_information[互信息]
+        kl_divergence[KL散度]
+        source_coding[信源编码]
+    end
+    subgraph 密码学[密码学]
+        symmetric_encryption[对称加密]
+        aes[AES]
+        public_key[公钥密码学]
+        rsa[RSA]
+        diffie_hellman[Diffie-Hellman]
+    end
+    subgraph 金融数学[金融数学]
+        stochastic_calculus[随机分析]
+        ito_calculus[Itô微积分]
+        ito_lemma[Itô引理]
+        sde[随机微分方程]
+        black_scholes[Black-Scholes模型]
+    end
+    subgraph 生物数学[生物数学]
+        population_dynamics[种群动力学]
+        logistic_growth[Logistic增长]
+        predator_prey[捕食者-猎物模型]
+        lotka_volterra[Lotka-Volterra方程]
+        sir_model[SIR模型]
+    end
+    subgraph 计算数学[计算数学]
+        finite_difference[有限差分法]
+        finite_element[有限元方法]
+        finite_volume[有限体积法]
+        spectral_method[谱方法]
+        sparse_matrix[稀疏矩阵]
+    end
+    subgraph 物理数学[物理数学]
+        classical_mechanics[经典力学]
+        lagrangian[拉格朗日力学]
+        hamiltonian[哈密顿力学]
+        hamiltonian_system[哈密顿系统]
+        quantum_mechanics[量子力学]
+    end
+    subgraph 数据科学[数据科学]
+        data_preprocessing[数据预处理]
+        feature_engineering[特征工程]
+        pca[主成分分析]
+        svm[支持向量机]
+        decision_tree[决策树]
+    end
+    subgraph 范畴论[范畴论]
+        higher_category[高阶范畴]
+        infinity_category[无穷范畴]
+        model_category[模型范畴]
+        simplicial_set[单纯形集]
+        monoidal_category[幺半范畴]
+    end
+    subgraph 同调代数[同调代数]
+        derived_category[导出范畴]
+        spectral_sequence[谱序列]
+        tor_functor[Tor函子]
+        ext_functor[Ext函子]
+        group_cohomology[群上同调]
+    end
+    subgraph 代数几何[代数几何]
+        motive[Motive]
+        algebraic_stack[代数堆叠]
+        deligne_mumford[Deligne-Mumford堆叠]
+        moduli_space[模空间]
+        moduli_stack[模堆叠]
+    end
+    subgraph 表示论[表示论]
+        representation_lie_algebra[李代数表示论]
+        highest_weight[最高权理论]
+        category_O[范畴O]
+        geometric_representation[几何表示论]
+        modular_representation[模表示论]
+    end
+    subgraph 数论高级[数论高级]
+        class_field_theory[类域论]
+        langlands_program[Langlands纲领]
+        automorphic_form[自守形式]
+        modular_form[模形式]
+        elliptic_curve[椭圆曲线]
+    end
+    subgraph 动力系统[动力系统]
+        hamiltonian_system[哈密顿系统]
+        symplectic_geometry[辛几何]
+        symplectic_manifold[辛流形]
+        ergodic_theory[遍历理论]
+        chaos_theory[混沌理论]
+    end
+    subgraph 数理逻辑[数理逻辑]
+        forcing[力迫法]
+        large_cardinal[大基数]
+        descriptive_set_theory[描述集合论]
+        proof_theory[证明论]
+        type_theory[类型论]
+    end
+    real_numbers --> limit
+    epsilon_delta --> limit
+    limit --> continuity
+    topology_basic --> continuity
+    limit --> derivative
+    continuity --> derivative
+    limit --> riemann_integral
+    continuity --> riemann_integral
+    limit --> infinite_series
+    sequence --> infinite_series
+    limit --> uniform_convergence
+    infinite_series --> uniform_convergence
+    infinite_series --> fourier_analysis
+    uniform_convergence --> fourier_analysis
+    limit --> complex_analysis
+    derivative --> complex_analysis
+    complex_analysis --> residue_theory
+    contour_integration --> residue_theory
+    complex_analysis --> conformal_mapping
+    residue_theory --> conformal_mapping
+    fourier_analysis --> harmonic_analysis
+    functional_analysis --> harmonic_analysis
+    real_analysis --> measure_theory
+    set_theory --> measure_theory
+    measure_theory --> lebesgue_integral
+    riemann_integral --> lebesgue_integral
+    lebesgue_integral --> lp_spaces
+    vector_space --> lp_spaces
+    linear_algebra --> functional_analysis
+    measure_theory --> functional_analysis
+    functional_analysis --> banach_space
+    lp_spaces --> banach_space
+    functional_analysis --> hilbert_space
+    lp_spaces --> hilbert_space
+    functional_analysis --> operator_theory
+    banach_space --> operator_theory
+    operator_theory --> spectral_theory
+    hilbert_space --> spectral_theory
+    functional_analysis --> distribution_theory
+    test_functions --> distribution_theory
+    distribution_theory --> sobolev_spaces
+    lp_spaces --> sobolev_spaces
+    calculus_of_variations --> variational_methods
+    sobolev_spaces --> variational_methods
+    derivative --> differential_equations
+    riemann_integral --> differential_equations
+    differential_equations --> partial_differential_equations
+    multivariable_calculus --> partial_differential_equations
+    complex_analysis --> asymptotic_analysis
+    residue_theory --> asymptotic_analysis
+    set_theory --> group
+    binary_operations --> group
+    group --> ring
+    abelian_group --> ring
+    ring --> field
+    integral_domain --> field
+    ring --> module
+    abelian_group --> module
+    vector_space --> linear_algebra
+    matrix --> linear_algebra
+    field --> vector_space
+    group --> vector_space
+    vector_space --> matrix
+    linear_transformation --> matrix
+    matrix --> eigenvalue
+    linear_transformation --> eigenvalue
+    eigenvalue --> jordan_normal_form
+    matrix --> jordan_normal_form
+    vector_space --> tensor_product
+    module --> tensor_product
+    module --> homological_algebra
+    exact_sequence --> homological_algebra
+    group --> group_representation
+    linear_algebra --> group_representation
+    group_representation --> character_theory
+    group --> character_theory
+    group --> group_action
+    set_theory --> group_action
+    group_action --> sylow_theory
+    group --> sylow_theory
+    sylow_theory --> solvable_group
+    normal_subgroup --> solvable_group
+    group --> lie_group
+    smooth_manifold --> lie_group
+    lie_group --> lie_algebra
+    vector_space --> lie_algebra
+    ring --> commutative_algebra
+    module --> commutative_algebra
+    commutative_algebra --> algebraic_geometry
+    polynomial_ring --> algebraic_geometry
+    algebraic_geometry --> scheme
+    sheaf --> scheme
+    topology_basic --> sheaf
+    category_theory --> sheaf
+    sheaf --> cohomology_sheaf
+    homological_algebra --> cohomology_sheaf
+    set_theory --> category_theory
+    group --> category_theory
+    category_theory --> homotopy_algebra
+    homological_algebra --> homotopy_algebra

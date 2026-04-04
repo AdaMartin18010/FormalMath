@@ -1,0 +1,6181 @@
+{
+  "nodes": [
+    {
+      "id": "limit",
+      "name": "极限",
+      "category": "分析学",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "continuity",
+      "name": "连续性",
+      "category": "分析学",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "derivative",
+      "name": "导数",
+      "category": "分析学",
+      "difficulty": 2,
+      "hours": 18
+    },
+    {
+      "id": "riemann_integral",
+      "name": "积分",
+      "category": "分析学",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "infinite_series",
+      "name": "级数",
+      "category": "分析学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "uniform_convergence",
+      "name": "一致收敛",
+      "category": "分析学",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "fourier_analysis",
+      "name": "Fourier分析",
+      "category": "分析学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "complex_analysis",
+      "name": "复分析",
+      "category": "分析学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "residue_theory",
+      "name": "留数",
+      "category": "分析学",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "conformal_mapping",
+      "name": "共形映射",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 25
+    },
+    {
+      "id": "harmonic_analysis",
+      "name": "调和分析",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "measure_theory",
+      "name": "测度论",
+      "category": "分析学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "lebesgue_integral",
+      "name": "Lebesgue积分",
+      "category": "分析学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "lp_spaces",
+      "name": "Lp空间",
+      "category": "分析学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "functional_analysis",
+      "name": "泛函分析",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "banach_space",
+      "name": "Banach空间",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 30
+    },
+    {
+      "id": "hilbert_space",
+      "name": "Hilbert空间",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "operator_theory",
+      "name": "算子理论",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "spectral_theory",
+      "name": "谱理论",
+      "category": "分析学",
+      "difficulty": 5,
+      "hours": 45
+    },
+    {
+      "id": "distribution_theory",
+      "name": "分布理论",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "sobolev_spaces",
+      "name": "Sobolev空间",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "variational_methods",
+      "name": "变分法",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "differential_equations",
+      "name": "微分方程",
+      "category": "分析学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "partial_differential_equations",
+      "name": "偏微分方程",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "asymptotic_analysis",
+      "name": "渐近分析",
+      "category": "分析学",
+      "difficulty": 4,
+      "hours": 30
+    },
+    {
+      "id": "group",
+      "name": "群",
+      "category": "代数学",
+      "difficulty": 2,
+      "hours": 25
+    },
+    {
+      "id": "ring",
+      "name": "环",
+      "category": "代数学",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "field",
+      "name": "域",
+      "category": "代数学",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "module",
+      "name": "模",
+      "category": "代数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "linear_algebra",
+      "name": "线性代数",
+      "category": "代数学",
+      "difficulty": 2,
+      "hours": 30
+    },
+    {
+      "id": "vector_space",
+      "name": "向量空间",
+      "category": "代数学",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "matrix",
+      "name": "矩阵",
+      "category": "代数学",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "eigenvalue",
+      "name": "特征值",
+      "category": "代数学",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "jordan_normal_form",
+      "name": "Jordan标准形",
+      "category": "代数学",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "tensor_product",
+      "name": "张量积",
+      "category": "代数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "homological_algebra",
+      "name": "同调代数",
+      "category": "代数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "group_representation",
+      "name": "群表示",
+      "category": "代数学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "character_theory",
+      "name": "特征标",
+      "category": "代数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "group_action",
+      "name": "群作用",
+      "category": "代数学",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "sylow_theory",
+      "name": "Sylow理论",
+      "category": "代数学",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "solvable_group",
+      "name": "可解群",
+      "category": "代数学",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "lie_group",
+      "name": "Lie群",
+      "category": "代数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "lie_algebra",
+      "name": "Lie代数",
+      "category": "代数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "commutative_algebra",
+      "name": "交换代数",
+      "category": "代数学",
+      "difficulty": 3,
+      "hours": 40
+    },
+    {
+      "id": "algebraic_geometry",
+      "name": "代数几何",
+      "category": "代数学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "scheme",
+      "name": "概形",
+      "category": "代数学",
+      "difficulty": 5,
+      "hours": 55
+    },
+    {
+      "id": "sheaf",
+      "name": "层",
+      "category": "代数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "cohomology_sheaf",
+      "name": "上同调",
+      "category": "代数学",
+      "difficulty": 5,
+      "hours": 50
+    },
+    {
+      "id": "category_theory",
+      "name": "范畴论",
+      "category": "代数学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "homotopy_algebra",
+      "name": "同伦代数",
+      "category": "代数学",
+      "difficulty": 5,
+      "hours": 50
+    },
+    {
+      "id": "topological_space",
+      "name": "拓扑空间",
+      "category": "几何拓扑",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "continuous_map",
+      "name": "连续映射",
+      "category": "几何拓扑",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "compactness",
+      "name": "紧致性",
+      "category": "几何拓扑",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "connectedness",
+      "name": "连通性",
+      "category": "几何拓扑",
+      "difficulty": 2,
+      "hours": 12
+    },
+    {
+      "id": "homotopy",
+      "name": "同伦",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "fundamental_group",
+      "name": "基本群",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "covering_space",
+      "name": "覆叠空间",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "homology_group",
+      "name": "同调群",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "cohomology",
+      "name": "上同调",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "manifold",
+      "name": "流形",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "tangent_space",
+      "name": "切空间",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "tensor_field",
+      "name": "张量场",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "differential_form",
+      "name": "微分形式",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "stokes_theorem",
+      "name": "Stokes定理",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "riemannian_metric",
+      "name": "黎曼度量",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "curvature",
+      "name": "曲率",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "geodesic",
+      "name": "测地线",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "connection",
+      "name": "联络",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "fiber_bundle",
+      "name": "纤维丛",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "characteristic_class",
+      "name": "示性类",
+      "category": "几何拓扑",
+      "difficulty": 5,
+      "hours": 50
+    },
+    {
+      "id": "morse_theory",
+      "name": "Morse理论",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "index_theorem",
+      "name": "指标定理",
+      "category": "几何拓扑",
+      "difficulty": 5,
+      "hours": 55
+    },
+    {
+      "id": "symplectic_geometry",
+      "name": "辛几何",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "complex_geometry",
+      "name": "复几何",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "algebraic_topology",
+      "name": "代数拓扑",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "divisibility",
+      "name": "整除",
+      "category": "数论逻辑",
+      "difficulty": 1,
+      "hours": 10
+    },
+    {
+      "id": "congruence",
+      "name": "同余",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "primitive_root",
+      "name": "原根",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "quadratic_residue",
+      "name": "二次剩余",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "algebraic_integer",
+      "name": "代数整数",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "ideal",
+      "name": "理想",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "hours": 18
+    },
+    {
+      "id": "class_number",
+      "name": "类数",
+      "category": "数论逻辑",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "elliptic_curve",
+      "name": "椭圆曲线",
+      "category": "数论逻辑",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "modular_form",
+      "name": "模形式",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "hours": 60
+    },
+    {
+      "id": "l_function",
+      "name": "L函数",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "hours": 55
+    },
+    {
+      "id": "arithmetic_geometry",
+      "name": "算术几何",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "hours": 60
+    },
+    {
+      "id": "p_adic_numbers",
+      "name": "p进数",
+      "category": "数论逻辑",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "galois_representation",
+      "name": "Galois表示",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "hours": 55
+    },
+    {
+      "id": "automorphic_form",
+      "name": "自守形式",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "hours": 60
+    },
+    {
+      "id": "propositional_logic",
+      "name": "命题逻辑",
+      "category": "数论逻辑",
+      "difficulty": 1,
+      "hours": 15
+    },
+    {
+      "id": "predicate_logic",
+      "name": "谓词逻辑",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "proof_theory",
+      "name": "证明论",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "model_theory",
+      "name": "模型论",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "hours": 40
+    },
+    {
+      "id": "recursion_theory",
+      "name": "递归论",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "set_theory",
+      "name": "集合论",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "hours": 30
+    },
+    {
+      "id": "forcing",
+      "name": "forcing",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "hours": 50
+    },
+    {
+      "id": "large_cardinal",
+      "name": "大基数",
+      "category": "数论逻辑",
+      "difficulty": 5,
+      "hours": 60
+    },
+    {
+      "id": "computability",
+      "name": "可计算性",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "complexity",
+      "name": "复杂度",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "formalized_proof",
+      "name": "形式化证明",
+      "category": "数论逻辑",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "probability_measure",
+      "name": "概率测度",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "random_variable",
+      "name": "随机变量",
+      "category": "概率统计",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "probability_distribution",
+      "name": "概率分布",
+      "category": "概率统计",
+      "difficulty": 2,
+      "hours": 18
+    },
+    {
+      "id": "expectation",
+      "name": "期望",
+      "category": "概率统计",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "conditional_probability",
+      "name": "条件概率",
+      "category": "概率统计",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "bayes_theorem",
+      "name": "贝叶斯定理",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "stochastic_process",
+      "name": "随机过程",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "markov_chain",
+      "name": "马尔可夫链",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "martingale",
+      "name": "鞅",
+      "category": "概率统计",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "brownian_motion",
+      "name": "布朗运动",
+      "category": "概率统计",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "law_of_large_numbers",
+      "name": "大数定律",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "central_limit_theorem",
+      "name": "中心极限定理",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "statistical_inference",
+      "name": "统计推断",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "parameter_estimation",
+      "name": "参数估计",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "hypothesis_testing",
+      "name": "假设检验",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "regression_analysis",
+      "name": "回归分析",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "bayesian_inference",
+      "name": "贝叶斯推断",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "time_series_analysis",
+      "name": "时间序列分析",
+      "category": "概率统计",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "variance",
+      "name": "方差",
+      "category": "概率统计",
+      "difficulty": 2,
+      "hours": 12
+    },
+    {
+      "id": "maximum_likelihood",
+      "name": "最大似然估计",
+      "category": "概率统计",
+      "difficulty": 3,
+      "hours": 22
+    },
+    {
+      "id": "optimization_problem",
+      "name": "最优化问题",
+      "category": "最优化",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "convex_set",
+      "name": "凸集",
+      "category": "最优化",
+      "difficulty": 2,
+      "hours": 18
+    },
+    {
+      "id": "convex_function",
+      "name": "凸函数",
+      "category": "最优化",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "gradient",
+      "name": "梯度",
+      "category": "最优化",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "hessian_matrix",
+      "name": "Hessian矩阵",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 18
+    },
+    {
+      "id": "gradient_descent",
+      "name": "梯度下降法",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "newton_method",
+      "name": "牛顿法",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "conjugate_gradient",
+      "name": "共轭梯度法",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "lagrange_multiplier",
+      "name": "拉格朗日乘子",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "kkt_conditions",
+      "name": "KKT条件",
+      "category": "最优化",
+      "difficulty": 4,
+      "hours": 30
+    },
+    {
+      "id": "linear_programming",
+      "name": "线性规划",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "simplex_method",
+      "name": "单纯形法",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "convex_optimization",
+      "name": "凸优化",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "interior_point_method",
+      "name": "内点法",
+      "category": "最优化",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "integer_programming",
+      "name": "整数规划",
+      "category": "最优化",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "dynamic_programming",
+      "name": "动态规划",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "stochastic_optimization",
+      "name": "随机优化",
+      "category": "最优化",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "optimal_control",
+      "name": "最优控制",
+      "category": "最优化",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "quadratic_programming",
+      "name": "二次规划",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 28
+    },
+    {
+      "id": "nonlinear_programming",
+      "name": "非线性规划",
+      "category": "最优化",
+      "difficulty": 3,
+      "hours": 32
+    },
+    {
+      "id": "control_system",
+      "name": "控制系统",
+      "category": "控制论",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "transfer_function",
+      "name": "传递函数",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "state_space",
+      "name": "状态空间",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "feedback_control",
+      "name": "反馈控制",
+      "category": "控制论",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "stability_analysis",
+      "name": "稳定性分析",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "pid_controller",
+      "name": "PID控制器",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "root_locus",
+      "name": "根轨迹法",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "bode_plot",
+      "name": "Bode图",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "nyquist_criterion",
+      "name": "Nyquist判据",
+      "category": "控制论",
+      "difficulty": 4,
+      "hours": 30
+    },
+    {
+      "id": "controllability",
+      "name": "能控性",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "observability",
+      "name": "能观性",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "state_feedback",
+      "name": "状态反馈",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "state_observer",
+      "name": "状态观测器",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "kalman_filter",
+      "name": "Kalman滤波",
+      "category": "控制论",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "lqr_control",
+      "name": "LQR控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "mpc",
+      "name": "模型预测控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "robust_control",
+      "name": "鲁棒控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "nonlinear_control",
+      "name": "非线性控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "adaptive_control",
+      "name": "自适应控制",
+      "category": "控制论",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "system_identification",
+      "name": "系统辨识",
+      "category": "控制论",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "information",
+      "name": "信息",
+      "category": "信息论",
+      "difficulty": 2,
+      "hours": 15
+    },
+    {
+      "id": "shannon_entropy",
+      "name": "香农熵",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "mutual_information",
+      "name": "互信息",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "kl_divergence",
+      "name": "KL散度",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "source_coding",
+      "name": "信源编码",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "channel_capacity",
+      "name": "信道容量",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "channel_coding",
+      "name": "信道编码",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "error_correction",
+      "name": "纠错编码",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "reed_solomon",
+      "name": "Reed-Solomon码",
+      "category": "信息论",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "ldpc_code",
+      "name": "LDPC码",
+      "category": "信息论",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "data_compression",
+      "name": "数据压缩",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "huffman_coding",
+      "name": "Huffman编码",
+      "category": "信息论",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "arithmetic_coding",
+      "name": "算术编码",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "lossy_compression",
+      "name": "有损压缩",
+      "category": "信息论",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "rate_distortion",
+      "name": "率失真理论",
+      "category": "信息论",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "network_information",
+      "name": "网络信息论",
+      "category": "信息论",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "cryptographic_protocol",
+      "name": "密码学协议",
+      "category": "信息论",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "quantum_information",
+      "name": "量子信息",
+      "category": "信息论",
+      "difficulty": 5,
+      "hours": 50
+    },
+    {
+      "id": "algorithmic_information",
+      "name": "算法信息论",
+      "category": "信息论",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "differential_privacy",
+      "name": "差分隐私",
+      "category": "信息论",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "symmetric_encryption",
+      "name": "对称加密",
+      "category": "密码学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "aes",
+      "name": "AES",
+      "category": "密码学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "public_key",
+      "name": "公钥密码学",
+      "category": "密码学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "rsa",
+      "name": "RSA",
+      "category": "密码学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "diffie_hellman",
+      "name": "Diffie-Hellman",
+      "category": "密码学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "elliptic_curve_crypto",
+      "name": "椭圆曲线密码",
+      "category": "密码学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "hash_function",
+      "name": "哈希函数",
+      "category": "密码学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "digital_signature",
+      "name": "数字签名",
+      "category": "密码学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "mac",
+      "name": "消息认证码",
+      "category": "密码学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "zero_knowledge_proof",
+      "name": "零知识证明",
+      "category": "密码学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "zk_snarks",
+      "name": "zk-SNARKs",
+      "category": "密码学",
+      "difficulty": 5,
+      "hours": 60
+    },
+    {
+      "id": "homomorphic_encryption",
+      "name": "同态加密",
+      "category": "密码学",
+      "difficulty": 5,
+      "hours": 55
+    },
+    {
+      "id": "quantum_crypto",
+      "name": "量子密码",
+      "category": "密码学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "post_quantum",
+      "name": "后量子密码",
+      "category": "密码学",
+      "difficulty": 4,
+      "hours": 55
+    },
+    {
+      "id": "blockchain_consensus",
+      "name": "区块链共识",
+      "category": "密码学",
+      "difficulty": 3,
+      "hours": 40
+    },
+    {
+      "id": "mpc",
+      "name": "安全多方计算",
+      "category": "密码学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "side_channel",
+      "name": "侧信道攻击",
+      "category": "密码学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "provable_security",
+      "name": "可证明安全",
+      "category": "密码学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "lattice_based_crypto",
+      "name": "格密码",
+      "category": "密码学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "identity_based",
+      "name": "基于身份的加密",
+      "category": "密码学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "stochastic_calculus",
+      "name": "随机分析",
+      "category": "金融数学",
+      "difficulty": 5,
+      "hours": 50
+    },
+    {
+      "id": "ito_calculus",
+      "name": "Itô微积分",
+      "category": "金融数学",
+      "difficulty": 5,
+      "hours": 45
+    },
+    {
+      "id": "ito_lemma",
+      "name": "Itô引理",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 30
+    },
+    {
+      "id": "sde",
+      "name": "随机微分方程",
+      "category": "金融数学",
+      "difficulty": 5,
+      "hours": 55
+    },
+    {
+      "id": "black_scholes",
+      "name": "Black-Scholes模型",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "risk_neutral",
+      "name": "风险中性定价",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "option_pricing",
+      "name": "期权定价",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "greeks",
+      "name": "希腊字母",
+      "category": "金融数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "implied_volatility",
+      "name": "隐含波动率",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 30
+    },
+    {
+      "id": "volatility_smile",
+      "name": "波动率微笑",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 30
+    },
+    {
+      "id": "stochastic_volatility",
+      "name": "随机波动率模型",
+      "category": "金融数学",
+      "difficulty": 5,
+      "hours": 50
+    },
+    {
+      "id": "heston_model",
+      "name": "Heston模型",
+      "category": "金融数学",
+      "difficulty": 5,
+      "hours": 45
+    },
+    {
+      "id": "monte_carlo_simulation",
+      "name": "蒙特卡洛模拟",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "american_option",
+      "name": "美式期权定价",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "binomial_tree",
+      "name": "二叉树模型",
+      "category": "金融数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "fundamental_theorem",
+      "name": "资产定价基本定理",
+      "category": "金融数学",
+      "difficulty": 5,
+      "hours": 45
+    },
+    {
+      "id": "interest_rate_model",
+      "name": "利率模型",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "credit_risk",
+      "name": "信用风险模型",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "portfolio_optimization",
+      "name": "投资组合优化",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "risk_management",
+      "name": "风险管理",
+      "category": "金融数学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "population_dynamics",
+      "name": "种群动力学",
+      "category": "生物数学",
+      "difficulty": 2,
+      "hours": 25
+    },
+    {
+      "id": "logistic_growth",
+      "name": "Logistic增长",
+      "category": "生物数学",
+      "difficulty": 3,
+      "hours": 20
+    },
+    {
+      "id": "predator_prey",
+      "name": "捕食者-猎物模型",
+      "category": "生物数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "lotka_volterra",
+      "name": "Lotka-Volterra方程",
+      "category": "生物数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "sir_model",
+      "name": "SIR模型",
+      "category": "生物数学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "seir_model",
+      "name": "SEIR模型",
+      "category": "生物数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "reaction_diffusion",
+      "name": "反应扩散方程",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "turing_pattern",
+      "name": "Turing模式",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "evolutionary_dynamics",
+      "name": "进化动力学",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "replicator_dynamics",
+      "name": "复制动力学",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "ess",
+      "name": "进化稳定策略",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "phylogenetics",
+      "name": "系统发生学",
+      "category": "生物数学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "population_genetics",
+      "name": "群体遗传学",
+      "category": "生物数学",
+      "difficulty": 3,
+      "hours": 40
+    },
+    {
+      "id": "coalescent_theory",
+      "name": "溯祖理论",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "biological_oscillator",
+      "name": "生物振荡器",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "neural_dynamics",
+      "name": "神经动力学",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "hodgkin_huxley",
+      "name": "Hodgkin-Huxley模型",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "chemotaxis",
+      "name": "趋化性模型",
+      "category": "生物数学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "morphogenesis",
+      "name": "形态发生",
+      "category": "生物数学",
+      "difficulty": 5,
+      "hours": 50
+    },
+    {
+      "id": "finite_difference",
+      "name": "有限差分法",
+      "category": "计算数学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "finite_element",
+      "name": "有限元方法",
+      "category": "计算数学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "finite_volume",
+      "name": "有限体积法",
+      "category": "计算数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "spectral_method",
+      "name": "谱方法",
+      "category": "计算数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "sparse_matrix",
+      "name": "稀疏矩阵",
+      "category": "计算数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "iterative_method",
+      "name": "迭代法",
+      "category": "计算数学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "conjugate_gradient_method",
+      "name": "共轭梯度法",
+      "category": "计算数学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "multigrid",
+      "name": "多重网格法",
+      "category": "计算数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "preconditioner",
+      "name": "预条件子",
+      "category": "计算数学",
+      "difficulty": 4,
+      "hours": 35
+    },
+    {
+      "id": "numerical_integration",
+      "name": "数值积分",
+      "category": "计算数学",
+      "difficulty": 2,
+      "hours": 25
+    },
+    {
+      "id": "numerical_ode",
+      "name": "常微分方程数值解",
+      "category": "计算数学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "runge_kutta",
+      "name": "Runge-Kutta方法",
+      "category": "计算数学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "numerical_pde",
+      "name": "偏微分方程数值解",
+      "category": "计算数学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "monte_carlo_numerical",
+      "name": "蒙特卡洛数值方法",
+      "category": "计算数学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "fast_fourier_transform",
+      "name": "快速傅里叶变换",
+      "category": "计算数学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "numerical_linear_algebra",
+      "name": "数值线性代数",
+      "category": "计算数学",
+      "difficulty": 3,
+      "hours": 40
+    },
+    {
+      "id": "domain_decomposition",
+      "name": "区域分解",
+      "category": "计算数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "adaptive_mesh",
+      "name": "自适应网格",
+      "category": "计算数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "uncertainty_quantification",
+      "name": "不确定性量化",
+      "category": "计算数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "classical_mechanics",
+      "name": "经典力学",
+      "category": "物理数学",
+      "difficulty": 3,
+      "hours": 40
+    },
+    {
+      "id": "lagrangian",
+      "name": "拉格朗日力学",
+      "category": "物理数学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "hamiltonian",
+      "name": "哈密顿力学",
+      "category": "物理数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "hamiltonian_system",
+      "name": "哈密顿系统",
+      "category": "物理数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "quantum_mechanics",
+      "name": "量子力学",
+      "category": "物理数学",
+      "difficulty": 4,
+      "hours": 55
+    },
+    {
+      "id": "schrodinger_equation",
+      "name": "薛定谔方程",
+      "category": "物理数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "path_integral",
+      "name": "路径积分",
+      "category": "物理数学",
+      "difficulty": 5,
+      "hours": 60
+    },
+    {
+      "id": "gauge_theory",
+      "name": "规范理论",
+      "category": "物理数学",
+      "difficulty": 5,
+      "hours": 60
+    },
+    {
+      "id": "general_relativity",
+      "name": "广义相对论",
+      "category": "物理数学",
+      "difficulty": 5,
+      "hours": 65
+    },
+    {
+      "id": "statistical_mechanics",
+      "name": "统计力学",
+      "category": "物理数学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "phase_transition",
+      "name": "相变理论",
+      "category": "物理数学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "electromagnetism",
+      "name": "电磁学",
+      "category": "物理数学",
+      "difficulty": 3,
+      "hours": 40
+    },
+    {
+      "id": "fluid_dynamics",
+      "name": "流体动力学",
+      "category": "物理数学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "turbulence",
+      "name": "湍流理论",
+      "category": "物理数学",
+      "difficulty": 5,
+      "hours": 55
+    },
+    {
+      "id": "quantum_field_theory",
+      "name": "量子场论",
+      "category": "物理数学",
+      "difficulty": 5,
+      "hours": 70
+    },
+    {
+      "id": "renormalization",
+      "name": "重整化群",
+      "category": "物理数学",
+      "difficulty": 5,
+      "hours": 55
+    },
+    {
+      "id": "conformal_field_theory",
+      "name": "共形场论",
+      "category": "物理数学",
+      "difficulty": 5,
+      "hours": 65
+    },
+    {
+      "id": "string_theory",
+      "name": "弦理论",
+      "category": "物理数学",
+      "difficulty": 5,
+      "hours": 80
+    },
+    {
+      "id": "supersymmetry",
+      "name": "超对称",
+      "category": "物理数学",
+      "difficulty": 5,
+      "hours": 60
+    },
+    {
+      "id": "integrable_system",
+      "name": "可积系统",
+      "category": "物理数学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "data_preprocessing",
+      "name": "数据预处理",
+      "category": "数据科学",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "feature_engineering",
+      "name": "特征工程",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "pca",
+      "name": "主成分分析",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "svm",
+      "name": "支持向量机",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "decision_tree",
+      "name": "决策树",
+      "category": "数据科学",
+      "difficulty": 2,
+      "hours": 25
+    },
+    {
+      "id": "random_forest",
+      "name": "随机森林",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "gradient_boosting",
+      "name": "梯度提升",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "neural_network",
+      "name": "神经网络",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 40
+    },
+    {
+      "id": "backpropagation",
+      "name": "反向传播",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 30
+    },
+    {
+      "id": "deep_learning",
+      "name": "深度学习",
+      "category": "数据科学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "cnn",
+      "name": "卷积神经网络",
+      "category": "数据科学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "rnn",
+      "name": "循环神经网络",
+      "category": "数据科学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "lstm",
+      "name": "长短期记忆网络",
+      "category": "数据科学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "attention",
+      "name": "注意力机制",
+      "category": "数据科学",
+      "difficulty": 4,
+      "hours": 40
+    },
+    {
+      "id": "transformer",
+      "name": "Transformer",
+      "category": "数据科学",
+      "difficulty": 4,
+      "hours": 45
+    },
+    {
+      "id": "adam_optimizer",
+      "name": "Adam优化器",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "batch_normalization",
+      "name": "批归一化",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 25
+    },
+    {
+      "id": "dropout",
+      "name": "Dropout正则化",
+      "category": "数据科学",
+      "difficulty": 2,
+      "hours": 20
+    },
+    {
+      "id": "autoencoder",
+      "name": "自编码器",
+      "category": "数据科学",
+      "difficulty": 3,
+      "hours": 35
+    },
+    {
+      "id": "gan",
+      "name": "生成对抗网络",
+      "category": "数据科学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "reinforcement_learning",
+      "name": "强化学习",
+      "category": "数据科学",
+      "difficulty": 4,
+      "hours": 50
+    },
+    {
+      "id": "higher_category",
+      "name": "高阶范畴",
+      "category": "范畴论",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Higher Category",
+      "resources": {
+        "nlab": "https",
+        "kerodon": "https",
+        "stacks": "07K6",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "infinity_category",
+      "name": "无穷范畴",
+      "category": "范畴论",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Infinity-Category",
+      "resources": {
+        "nlab": "https",
+        "kerodon": "https",
+        "arxiv": "math.AT"
+      }
+    },
+    {
+      "id": "model_category",
+      "name": "模型范畴",
+      "category": "范畴论",
+      "difficulty": 5,
+      "hours": 55,
+      "name_en": "Model Category",
+      "resources": {
+        "nlab": "https",
+        "kerodon": "https",
+        "arxiv": "math.AT"
+      }
+    },
+    {
+      "id": "simplicial_set",
+      "name": "单纯形集",
+      "category": "范畴论",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "Simplicial Set",
+      "resources": {
+        "nlab": "https",
+        "kerodon": "https",
+        "stacks": "014A",
+        "arxiv": "math.AT"
+      }
+    },
+    {
+      "id": "monoidal_category",
+      "name": "幺半范畴",
+      "category": "范畴论",
+      "difficulty": 4,
+      "hours": 40,
+      "name_en": "Monoidal Category",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "abelian_category",
+      "name": "Abel范畴",
+      "category": "范畴论",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "Abelian Category",
+      "resources": {
+        "nlab": "https",
+        "stacks": "0109",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "triangulated_category",
+      "name": "三角范畴",
+      "category": "范畴论",
+      "difficulty": 5,
+      "hours": 50,
+      "name_en": "Triangulated Category",
+      "resources": {
+        "nlab": "https",
+        "stacks": "05QI",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "topos",
+      "name": "拓扑斯",
+      "category": "范畴论",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Topos",
+      "resources": {
+        "nlab": "https",
+        "stacks": "03A0",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "adjoint_functor",
+      "name": "伴随函子",
+      "category": "范畴论",
+      "difficulty": 4,
+      "hours": 40,
+      "name_en": "Adjoint Functor",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "kan_extension",
+      "name": "Kan扩张",
+      "category": "范畴论",
+      "difficulty": 5,
+      "hours": 50,
+      "name_en": "Kan Extension",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "enriched_category",
+      "name": "富范畴",
+      "category": "范畴论",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "Enriched Category",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "2_category",
+      "name": "2-范畴",
+      "category": "范畴论",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "2-Category",
+      "resources": {
+        "nlab": "https",
+        "kerodon": "https",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "fibered_category",
+      "name": "纤维范畴",
+      "category": "范畴论",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "Fibered Category",
+      "resources": {
+        "nlab": "https",
+        "stacks": "02XR",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "stack_category",
+      "name": "堆叠范畴",
+      "category": "范畴论",
+      "difficulty": 5,
+      "hours": 55,
+      "name_en": "Stack (Category Theory)",
+      "resources": {
+        "nlab": "https",
+        "stacks": "02ZI",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "derived_functor_cat",
+      "name": "导出函子（范畴论）",
+      "category": "范畴论",
+      "difficulty": 5,
+      "hours": 55,
+      "name_en": "Derived Functor",
+      "resources": {
+        "nlab": "https",
+        "stacks": "010M",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "limits_colimits",
+      "name": "极限与余极限",
+      "category": "范畴论",
+      "difficulty": 3,
+      "hours": 35,
+      "name_en": "Limits and Colimits",
+      "resources": {
+        "nlab": "https",
+        "stacks": "002E",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "yoneda_lemma",
+      "name": "米田引理",
+      "category": "范畴论",
+      "difficulty": 3,
+      "hours": 30,
+      "name_en": "Yoneda Lemma",
+      "resources": {
+        "nlab": "https",
+        "stacks": "001P",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "representable_functor",
+      "name": "可表函子",
+      "category": "范畴论",
+      "difficulty": 4,
+      "hours": 35,
+      "name_en": "Representable Functor",
+      "resources": {
+        "nlab": "https",
+        "stacks": "001Q",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "groupoid",
+      "name": "广群",
+      "category": "范畴论",
+      "difficulty": 3,
+      "hours": 30,
+      "name_en": "Groupoid",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "bicategory",
+      "name": "双范畴",
+      "category": "范畴论",
+      "difficulty": 5,
+      "hours": 50,
+      "name_en": "Bicategory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "derived_category",
+      "name": "导出范畴",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Derived Category",
+      "resources": {
+        "nlab": "https",
+        "stacks": "05QI",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "spectral_sequence",
+      "name": "谱序列",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Spectral Sequence",
+      "resources": {
+        "nlab": "https",
+        "stacks": "011N",
+        "arxiv": "math.AT"
+      }
+    },
+    {
+      "id": "tor_functor",
+      "name": "Tor函子",
+      "category": "同调代数",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "Tor Functor",
+      "resources": {
+        "nlab": "https",
+        "stacks": "00LZ",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "ext_functor",
+      "name": "Ext函子",
+      "category": "同调代数",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "Ext Functor",
+      "resources": {
+        "nlab": "https",
+        "stacks": "00LV",
+        "arxiv": "math.CT"
+      }
+    },
+    {
+      "id": "group_cohomology",
+      "name": "群上同调",
+      "category": "同调代数",
+      "difficulty": 4,
+      "hours": 50,
+      "name_en": "Group Cohomology",
+      "resources": {
+        "nlab": "https",
+        "stacks": "01FP",
+        "arxiv": "math.GR"
+      }
+    },
+    {
+      "id": "sheaf_cohomology",
+      "name": "层上同调",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Sheaf Cohomology",
+      "resources": {
+        "nlab": "https",
+        "stacks": "01FQ",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "local_cohomology",
+      "name": "局部上同调",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Local Cohomology",
+      "resources": {
+        "nlab": "https",
+        "stacks": "0A39",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "hypercohomology",
+      "name": "超上同调",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Hypercohomology",
+      "resources": {
+        "nlab": "https",
+        "stacks": "01FZ",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "duality_cohomology",
+      "name": "对偶定理（上同调）",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Cohomological Duality",
+      "resources": {
+        "nlab": "https",
+        "stacks": "0G1F",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "perfect_complex",
+      "name": "完美复形",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Perfect Complex",
+      "resources": {
+        "nlab": "https",
+        "stacks": "08FS",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "tilting_theory",
+      "name": "倾斜理论",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 55,
+      "name_en": "Tilting Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "t_structure",
+      "name": "t-结构",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 55,
+      "name_en": "t-Structure",
+      "resources": {
+        "nlab": "https",
+        "stacks": "0148",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "perverse_sheaf",
+      "name": "反常层",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Perverse Sheaf",
+      "resources": {
+        "nlab": "https",
+        "stacks": "0G4H",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "intersection_cohomology",
+      "name": "相交上同调",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Intersection Cohomology",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "koszul_duality",
+      "name": "Koszul对偶",
+      "category": "同调代数",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Koszul Duality",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "motive",
+      "name": "Motive",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 80,
+      "name_en": "Motive",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "algebraic_stack",
+      "name": "代数堆叠",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Algebraic Stack",
+      "resources": {
+        "nlab": "https",
+        "stacks": "04YA",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "deligne_mumford",
+      "name": "Deligne-Mumford堆叠",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Deligne-Mumford Stack",
+      "resources": {
+        "nlab": "https",
+        "stacks": "04YW",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "moduli_space",
+      "name": "模空间",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Moduli Space",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "moduli_stack",
+      "name": "模堆叠",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Moduli Stack",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "etale_cohomology",
+      "name": "平展上同调",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Etale Cohomology",
+      "resources": {
+        "nlab": "https",
+        "stacks": "03N1",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "crystalline_cohomology",
+      "name": "晶体上同调",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 75,
+      "name_en": "Crystalline Cohomology",
+      "resources": {
+        "nlab": "https",
+        "stacks": "07GI",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "de_rham_cohomology",
+      "name": "de Rham上同调",
+      "category": "代数几何",
+      "difficulty": 4,
+      "hours": 50,
+      "name_en": "de Rham Cohomology",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "intersection_theory",
+      "name": "相交理论",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Intersection Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "chow_ring",
+      "name": "Chow环",
+      "category": "代数几何",
+      "difficulty": 4,
+      "hours": 55,
+      "name_en": "Chow Ring",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "hodge_theory",
+      "name": "Hodge理论",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Hodge Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "biration_geometry",
+      "name": "双有理几何",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Birational Geometry",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "minimal_model",
+      "name": "极小模型理论",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 75,
+      "name_en": "Minimal Model Program",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "derived_algebraic_geometry",
+      "name": "导出代数几何",
+      "category": "代数几何",
+      "difficulty": 5,
+      "hours": 80,
+      "name_en": "Derived Algebraic Geometry",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "representation_lie_algebra",
+      "name": "李代数表示论",
+      "category": "表示论",
+      "difficulty": 4,
+      "hours": 55,
+      "name_en": "Representation of Lie Algebras",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "highest_weight",
+      "name": "最高权理论",
+      "category": "表示论",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Highest Weight Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "category_O",
+      "name": "范畴O",
+      "category": "表示论",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Category O",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "geometric_representation",
+      "name": "几何表示论",
+      "category": "表示论",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Geometric Representation Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "modular_representation",
+      "name": "模表示论",
+      "category": "表示论",
+      "difficulty": 4,
+      "hours": 55,
+      "name_en": "Modular Representation Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "character_theory",
+      "name": "特征标理论",
+      "category": "表示论",
+      "difficulty": 3,
+      "hours": 40,
+      "name_en": "Character Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "induced_representation",
+      "name": "诱导表示",
+      "category": "表示论",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "Induced Representation",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "mackey_theory",
+      "name": "Mackey理论",
+      "category": "表示论",
+      "difficulty": 5,
+      "hours": 55,
+      "name_en": "Mackey Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "weight_theory",
+      "name": "权理论",
+      "category": "表示论",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Weight Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "borel_weil",
+      "name": "Borel-Weil定理",
+      "category": "表示论",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Borel-Weil Theorem",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.RT"
+      }
+    },
+    {
+      "id": "class_field_theory",
+      "name": "类域论",
+      "category": "数论高级",
+      "difficulty": 5,
+      "hours": 75,
+      "name_en": "Class Field Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "langlands_program",
+      "name": "Langlands纲领",
+      "category": "数论高级",
+      "difficulty": 5,
+      "hours": 100,
+      "name_en": "Langlands Program",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "automorphic_form",
+      "name": "自守形式",
+      "category": "数论高级",
+      "difficulty": 5,
+      "hours": 80,
+      "name_en": "Automorphic Form",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "modular_form",
+      "name": "模形式",
+      "category": "数论高级",
+      "difficulty": 4,
+      "hours": 60,
+      "name_en": "Modular Form",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "elliptic_curve",
+      "name": "椭圆曲线",
+      "category": "数论高级",
+      "difficulty": 4,
+      "hours": 55,
+      "name_en": "Elliptic Curve",
+      "resources": {
+        "nlab": "https",
+        "stacks": "024J",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "abelian_variety",
+      "name": "Abel簇",
+      "category": "数论高级",
+      "difficulty": 4,
+      "hours": 60,
+      "name_en": "Abelian Variety",
+      "resources": {
+        "nlab": "https",
+        "stacks": "00PB",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "p_adic_number",
+      "name": "p进数",
+      "category": "数论高级",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "p-adic Number",
+      "resources": {
+        "nlab": "https",
+        "stacks": "0J61",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "valuation",
+      "name": "赋值论",
+      "category": "数论高级",
+      "difficulty": 3,
+      "hours": 35,
+      "name_en": "Valuation Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "local_global",
+      "name": "局部-整体原理",
+      "category": "数论高级",
+      "difficulty": 5,
+      "hours": 55,
+      "name_en": "Local-Global Principle",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "arithmetic_geometry",
+      "name": "算术几何",
+      "category": "数论高级",
+      "difficulty": 5,
+      "hours": 75,
+      "name_en": "Arithmetic Geometry",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "diophantine_geometry",
+      "name": "丢番图几何",
+      "category": "数论高级",
+      "difficulty": 5,
+      "hours": 80,
+      "name_en": "Diophantine Geometry",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "weil_conjecture",
+      "name": "Weil猜想",
+      "category": "数论高级",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Weil Conjectures",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.AG"
+      }
+    },
+    {
+      "id": "zeta_function",
+      "name": "Zeta函数",
+      "category": "数论高级",
+      "difficulty": 4,
+      "hours": 50,
+      "name_en": "Zeta Function",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "l_function",
+      "name": "L函数",
+      "category": "数论高级",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "L-Function",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.NT"
+      }
+    },
+    {
+      "id": "hamiltonian_system",
+      "name": "哈密顿系统",
+      "category": "动力系统",
+      "difficulty": 4,
+      "hours": 50,
+      "name_en": "Hamiltonian System",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.DS"
+      }
+    },
+    {
+      "id": "symplectic_geometry",
+      "name": "辛几何",
+      "category": "动力系统",
+      "difficulty": 4,
+      "hours": 55,
+      "name_en": "Symplectic Geometry",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.SG"
+      }
+    },
+    {
+      "id": "symplectic_manifold",
+      "name": "辛流形",
+      "category": "动力系统",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "Symplectic Manifold",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.SG"
+      }
+    },
+    {
+      "id": "ergodic_theory",
+      "name": "遍历理论",
+      "category": "动力系统",
+      "difficulty": 4,
+      "hours": 55,
+      "name_en": "Ergodic Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.DS"
+      }
+    },
+    {
+      "id": "chaos_theory",
+      "name": "混沌理论",
+      "category": "动力系统",
+      "difficulty": 4,
+      "hours": 50,
+      "name_en": "Chaos Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.DS"
+      }
+    },
+    {
+      "id": "nonlinear_dynamics",
+      "name": "非线性动力学",
+      "category": "动力系统",
+      "difficulty": 3,
+      "hours": 40,
+      "name_en": "Nonlinear Dynamics",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.DS"
+      }
+    },
+    {
+      "id": "bifurcation_theory",
+      "name": "分岔理论",
+      "category": "动力系统",
+      "difficulty": 4,
+      "hours": 50,
+      "name_en": "Bifurcation Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.DS"
+      }
+    },
+    {
+      "id": "k_theory_dynamics",
+      "name": "动力系统K理论",
+      "category": "动力系统",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "K-Theory in Dynamics",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.DS"
+      }
+    },
+    {
+      "id": "conley_index",
+      "name": "Conley指数",
+      "category": "动力系统",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Conley Index",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.DS"
+      }
+    },
+    {
+      "id": "symbolic_dynamics",
+      "name": "符号动力学",
+      "category": "动力系统",
+      "difficulty": 4,
+      "hours": 50,
+      "name_en": "Symbolic Dynamics",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.DS"
+      }
+    },
+    {
+      "id": "forcing",
+      "name": "力迫法",
+      "category": "数理逻辑",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Forcing",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "large_cardinal",
+      "name": "大基数",
+      "category": "数理逻辑",
+      "difficulty": 5,
+      "hours": 75,
+      "name_en": "Large Cardinal",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "descriptive_set_theory",
+      "name": "描述集合论",
+      "category": "数理逻辑",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Descriptive Set Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "proof_theory",
+      "name": "证明论",
+      "category": "数理逻辑",
+      "difficulty": 4,
+      "hours": 55,
+      "name_en": "Proof Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "type_theory",
+      "name": "类型论",
+      "category": "数理逻辑",
+      "difficulty": 4,
+      "hours": 60,
+      "name_en": "Type Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "homotopy_type_theory",
+      "name": "同伦类型论",
+      "category": "数理逻辑",
+      "difficulty": 5,
+      "hours": 80,
+      "name_en": "Homotopy Type Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "constructive_mathematics",
+      "name": "构造数学",
+      "category": "数理逻辑",
+      "difficulty": 4,
+      "hours": 50,
+      "name_en": "Constructive Mathematics",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "intuitionistic_logic",
+      "name": "直觉主义逻辑",
+      "category": "数理逻辑",
+      "difficulty": 4,
+      "hours": 45,
+      "name_en": "Intuitionistic Logic",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "modal_logic",
+      "name": "模态逻辑",
+      "category": "数理逻辑",
+      "difficulty": 3,
+      "hours": 40,
+      "name_en": "Modal Logic",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "recursion_theory",
+      "name": "递归论",
+      "category": "数理逻辑",
+      "difficulty": 4,
+      "hours": 55,
+      "name_en": "Recursion Theory",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "reverse_math",
+      "name": "逆数学",
+      "category": "数理逻辑",
+      "difficulty": 5,
+      "hours": 60,
+      "name_en": "Reverse Mathematics",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "ordinal_analysis",
+      "name": "序数分析",
+      "category": "数理逻辑",
+      "difficulty": 5,
+      "hours": 70,
+      "name_en": "Ordinal Analysis",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    },
+    {
+      "id": "categorical_logic",
+      "name": "范畴逻辑",
+      "category": "数理逻辑",
+      "difficulty": 5,
+      "hours": 65,
+      "name_en": "Categorical Logic",
+      "resources": {
+        "nlab": "https",
+        "arxiv": "math.LO"
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "limit",
+      "target": "continuity",
+      "type": "prerequisite"
+    },
+    {
+      "source": "limit",
+      "target": "derivative",
+      "type": "prerequisite"
+    },
+    {
+      "source": "continuity",
+      "target": "derivative",
+      "type": "prerequisite"
+    },
+    {
+      "source": "limit",
+      "target": "riemann_integral",
+      "type": "prerequisite"
+    },
+    {
+      "source": "continuity",
+      "target": "riemann_integral",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derivative",
+      "target": "riemann_integral",
+      "type": "prerequisite"
+    },
+    {
+      "source": "limit",
+      "target": "infinite_series",
+      "type": "prerequisite"
+    },
+    {
+      "source": "limit",
+      "target": "uniform_convergence",
+      "type": "prerequisite"
+    },
+    {
+      "source": "infinite_series",
+      "target": "uniform_convergence",
+      "type": "prerequisite"
+    },
+    {
+      "source": "continuity",
+      "target": "uniform_convergence",
+      "type": "prerequisite"
+    },
+    {
+      "source": "infinite_series",
+      "target": "fourier_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "uniform_convergence",
+      "target": "fourier_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lebesgue_integral",
+      "target": "fourier_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "limit",
+      "target": "complex_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derivative",
+      "target": "complex_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "riemann_integral",
+      "target": "complex_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "residue_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "conformal_mapping",
+      "type": "prerequisite"
+    },
+    {
+      "source": "residue_theory",
+      "target": "conformal_mapping",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fourier_analysis",
+      "target": "harmonic_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "functional_analysis",
+      "target": "harmonic_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "measure_theory",
+      "target": "harmonic_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "measure_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "measure_theory",
+      "target": "lebesgue_integral",
+      "type": "prerequisite"
+    },
+    {
+      "source": "riemann_integral",
+      "target": "lebesgue_integral",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lebesgue_integral",
+      "target": "lp_spaces",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector_space",
+      "target": "lp_spaces",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "functional_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "measure_theory",
+      "target": "functional_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lebesgue_integral",
+      "target": "functional_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "functional_analysis",
+      "target": "banach_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lp_spaces",
+      "target": "banach_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "functional_analysis",
+      "target": "hilbert_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lp_spaces",
+      "target": "hilbert_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "functional_analysis",
+      "target": "operator_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "banach_space",
+      "target": "operator_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hilbert_space",
+      "target": "operator_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "operator_theory",
+      "target": "spectral_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hilbert_space",
+      "target": "spectral_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "spectral_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "functional_analysis",
+      "target": "distribution_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "distribution_theory",
+      "target": "sobolev_spaces",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lp_spaces",
+      "target": "sobolev_spaces",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sobolev_spaces",
+      "target": "variational_methods",
+      "type": "prerequisite"
+    },
+    {
+      "source": "functional_analysis",
+      "target": "variational_methods",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derivative",
+      "target": "differential_equations",
+      "type": "prerequisite"
+    },
+    {
+      "source": "riemann_integral",
+      "target": "differential_equations",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "differential_equations",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "partial_differential_equations",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sobolev_spaces",
+      "target": "partial_differential_equations",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fourier_analysis",
+      "target": "partial_differential_equations",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "asymptotic_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "residue_theory",
+      "target": "asymptotic_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "group",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "ring",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ring",
+      "target": "field",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ring",
+      "target": "module",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector_space",
+      "target": "module",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector_space",
+      "target": "linear_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "matrix",
+      "target": "linear_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "field",
+      "target": "vector_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "vector_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector_space",
+      "target": "matrix",
+      "type": "prerequisite"
+    },
+    {
+      "source": "matrix",
+      "target": "eigenvalue",
+      "type": "prerequisite"
+    },
+    {
+      "source": "eigenvalue",
+      "target": "jordan_normal_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "matrix",
+      "target": "jordan_normal_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector_space",
+      "target": "tensor_product",
+      "type": "prerequisite"
+    },
+    {
+      "source": "module",
+      "target": "tensor_product",
+      "type": "prerequisite"
+    },
+    {
+      "source": "module",
+      "target": "homological_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "homological_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "group_representation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "group_representation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector_space",
+      "target": "group_representation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group_representation",
+      "target": "character_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "character_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "group_action",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "group_action",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group_action",
+      "target": "sylow_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "sylow_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sylow_theory",
+      "target": "solvable_group",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "lie_group",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group_representation",
+      "target": "lie_group",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lie_group",
+      "target": "lie_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector_space",
+      "target": "lie_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ring",
+      "target": "commutative_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "module",
+      "target": "commutative_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ideal",
+      "target": "commutative_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "commutative_algebra",
+      "target": "algebraic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "scheme",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sheaf",
+      "target": "scheme",
+      "type": "prerequisite"
+    },
+    {
+      "source": "commutative_algebra",
+      "target": "scheme",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "sheaf",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sheaf",
+      "target": "cohomology_sheaf",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homological_algebra",
+      "target": "cohomology_sheaf",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "cohomology_sheaf",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "category_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "category_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "homotopy_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homological_algebra",
+      "target": "homotopy_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "topological_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "topological_space",
+      "target": "continuous_map",
+      "type": "prerequisite"
+    },
+    {
+      "source": "limit",
+      "target": "continuous_map",
+      "type": "prerequisite"
+    },
+    {
+      "source": "topological_space",
+      "target": "compactness",
+      "type": "prerequisite"
+    },
+    {
+      "source": "continuous_map",
+      "target": "compactness",
+      "type": "prerequisite"
+    },
+    {
+      "source": "topological_space",
+      "target": "connectedness",
+      "type": "prerequisite"
+    },
+    {
+      "source": "continuous_map",
+      "target": "connectedness",
+      "type": "prerequisite"
+    },
+    {
+      "source": "continuous_map",
+      "target": "homotopy",
+      "type": "prerequisite"
+    },
+    {
+      "source": "topological_space",
+      "target": "homotopy",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homotopy",
+      "target": "fundamental_group",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "fundamental_group",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fundamental_group",
+      "target": "covering_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homotopy",
+      "target": "covering_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homotopy",
+      "target": "homology_group",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homology_group",
+      "target": "cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "module",
+      "target": "cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "topological_space",
+      "target": "manifold",
+      "type": "prerequisite"
+    },
+    {
+      "source": "manifold",
+      "target": "tangent_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector_space",
+      "target": "tangent_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derivative",
+      "target": "tangent_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "tangent_space",
+      "target": "tensor_field",
+      "type": "prerequisite"
+    },
+    {
+      "source": "tensor_product",
+      "target": "tensor_field",
+      "type": "prerequisite"
+    },
+    {
+      "source": "manifold",
+      "target": "tensor_field",
+      "type": "prerequisite"
+    },
+    {
+      "source": "manifold",
+      "target": "differential_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "tangent_space",
+      "target": "differential_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_form",
+      "target": "stokes_theorem",
+      "type": "prerequisite"
+    },
+    {
+      "source": "manifold",
+      "target": "riemannian_metric",
+      "type": "prerequisite"
+    },
+    {
+      "source": "tensor_field",
+      "target": "riemannian_metric",
+      "type": "prerequisite"
+    },
+    {
+      "source": "riemannian_metric",
+      "target": "curvature",
+      "type": "prerequisite"
+    },
+    {
+      "source": "connection",
+      "target": "curvature",
+      "type": "prerequisite"
+    },
+    {
+      "source": "tensor_field",
+      "target": "curvature",
+      "type": "prerequisite"
+    },
+    {
+      "source": "riemannian_metric",
+      "target": "geodesic",
+      "type": "prerequisite"
+    },
+    {
+      "source": "connection",
+      "target": "geodesic",
+      "type": "prerequisite"
+    },
+    {
+      "source": "riemannian_metric",
+      "target": "connection",
+      "type": "prerequisite"
+    },
+    {
+      "source": "manifold",
+      "target": "fiber_bundle",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lie_group",
+      "target": "fiber_bundle",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fiber_bundle",
+      "target": "characteristic_class",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cohomology",
+      "target": "characteristic_class",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lie_group",
+      "target": "characteristic_class",
+      "type": "prerequisite"
+    },
+    {
+      "source": "manifold",
+      "target": "morse_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homology_group",
+      "target": "morse_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "characteristic_class",
+      "target": "index_theorem",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cohomology",
+      "target": "index_theorem",
+      "type": "prerequisite"
+    },
+    {
+      "source": "functional_analysis",
+      "target": "index_theorem",
+      "type": "prerequisite"
+    },
+    {
+      "source": "manifold",
+      "target": "symplectic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_form",
+      "target": "symplectic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "manifold",
+      "target": "complex_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "complex_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homology_group",
+      "target": "algebraic_topology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fundamental_group",
+      "target": "algebraic_topology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cohomology",
+      "target": "algebraic_topology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "divisibility",
+      "target": "congruence",
+      "type": "prerequisite"
+    },
+    {
+      "source": "congruence",
+      "target": "primitive_root",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "primitive_root",
+      "type": "prerequisite"
+    },
+    {
+      "source": "congruence",
+      "target": "quadratic_residue",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ring",
+      "target": "algebraic_integer",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ring",
+      "target": "ideal",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ideal",
+      "target": "class_number",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "elliptic_curve",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "modular_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group_action",
+      "target": "modular_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "elliptic_curve",
+      "target": "modular_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "modular_form",
+      "target": "l_function",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "arithmetic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "elliptic_curve",
+      "target": "arithmetic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "valuation",
+      "target": "p_adic_numbers",
+      "type": "prerequisite"
+    },
+    {
+      "source": "p_adic_numbers",
+      "target": "galois_representation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group_representation",
+      "target": "galois_representation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "modular_form",
+      "target": "automorphic_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lie_group",
+      "target": "automorphic_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "propositional_logic",
+      "type": "prerequisite"
+    },
+    {
+      "source": "propositional_logic",
+      "target": "predicate_logic",
+      "type": "prerequisite"
+    },
+    {
+      "source": "propositional_logic",
+      "target": "proof_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "predicate_logic",
+      "target": "proof_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "predicate_logic",
+      "target": "model_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "model_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "predicate_logic",
+      "target": "recursion_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "forcing",
+      "type": "prerequisite"
+    },
+    {
+      "source": "model_theory",
+      "target": "forcing",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "large_cardinal",
+      "type": "prerequisite"
+    },
+    {
+      "source": "recursion_theory",
+      "target": "computability",
+      "type": "prerequisite"
+    },
+    {
+      "source": "computability",
+      "target": "complexity",
+      "type": "prerequisite"
+    },
+    {
+      "source": "proof_theory",
+      "target": "formalized_proof",
+      "type": "prerequisite"
+    },
+    {
+      "source": "type_theory",
+      "target": "formalized_proof",
+      "type": "prerequisite"
+    },
+    {
+      "source": "predicate_logic",
+      "target": "formalized_proof",
+      "type": "prerequisite"
+    },
+    {
+      "source": "measure_theory",
+      "target": "probability_measure",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_measure",
+      "target": "random_variable",
+      "type": "prerequisite"
+    },
+    {
+      "source": "random_variable",
+      "target": "probability_distribution",
+      "type": "prerequisite"
+    },
+    {
+      "source": "random_variable",
+      "target": "expectation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_measure",
+      "target": "conditional_probability",
+      "type": "prerequisite"
+    },
+    {
+      "source": "conditional_probability",
+      "target": "bayes_theorem",
+      "type": "prerequisite"
+    },
+    {
+      "source": "random_variable",
+      "target": "stochastic_process",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_measure",
+      "target": "stochastic_process",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stochastic_process",
+      "target": "markov_chain",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stochastic_process",
+      "target": "martingale",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stochastic_process",
+      "target": "brownian_motion",
+      "type": "prerequisite"
+    },
+    {
+      "source": "expectation",
+      "target": "law_of_large_numbers",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_distribution",
+      "target": "central_limit_theorem",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_distribution",
+      "target": "statistical_inference",
+      "type": "prerequisite"
+    },
+    {
+      "source": "statistical_inference",
+      "target": "parameter_estimation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "statistical_inference",
+      "target": "hypothesis_testing",
+      "type": "prerequisite"
+    },
+    {
+      "source": "statistical_inference",
+      "target": "regression_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "regression_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "bayes_theorem",
+      "target": "bayesian_inference",
+      "type": "prerequisite"
+    },
+    {
+      "source": "statistical_inference",
+      "target": "bayesian_inference",
+      "type": "prerequisite"
+    },
+    {
+      "source": "regression_analysis",
+      "target": "time_series_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stochastic_process",
+      "target": "time_series_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "expectation",
+      "target": "variance",
+      "type": "prerequisite"
+    },
+    {
+      "source": "parameter_estimation",
+      "target": "maximum_likelihood",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "optimization_problem",
+      "type": "prerequisite"
+    },
+    {
+      "source": "vector_space",
+      "target": "convex_set",
+      "type": "prerequisite"
+    },
+    {
+      "source": "convex_set",
+      "target": "convex_function",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derivative",
+      "target": "convex_function",
+      "type": "prerequisite"
+    },
+    {
+      "source": "matrix",
+      "target": "hessian_matrix",
+      "type": "prerequisite"
+    },
+    {
+      "source": "gradient",
+      "target": "gradient_descent",
+      "type": "prerequisite"
+    },
+    {
+      "source": "convex_function",
+      "target": "gradient_descent",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hessian_matrix",
+      "target": "newton_method",
+      "type": "prerequisite"
+    },
+    {
+      "source": "gradient",
+      "target": "newton_method",
+      "type": "prerequisite"
+    },
+    {
+      "source": "gradient",
+      "target": "conjugate_gradient",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "conjugate_gradient",
+      "type": "prerequisite"
+    },
+    {
+      "source": "optimization_problem",
+      "target": "lagrange_multiplier",
+      "type": "prerequisite"
+    },
+    {
+      "source": "gradient",
+      "target": "lagrange_multiplier",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lagrange_multiplier",
+      "target": "kkt_conditions",
+      "type": "prerequisite"
+    },
+    {
+      "source": "convex_optimization",
+      "target": "kkt_conditions",
+      "type": "prerequisite"
+    },
+    {
+      "source": "optimization_problem",
+      "target": "linear_programming",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "linear_programming",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_programming",
+      "target": "simplex_method",
+      "type": "prerequisite"
+    },
+    {
+      "source": "convex_function",
+      "target": "convex_optimization",
+      "type": "prerequisite"
+    },
+    {
+      "source": "optimization_problem",
+      "target": "convex_optimization",
+      "type": "prerequisite"
+    },
+    {
+      "source": "convex_optimization",
+      "target": "interior_point_method",
+      "type": "prerequisite"
+    },
+    {
+      "source": "kkt_conditions",
+      "target": "interior_point_method",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_programming",
+      "target": "integer_programming",
+      "type": "prerequisite"
+    },
+    {
+      "source": "optimization_problem",
+      "target": "dynamic_programming",
+      "type": "prerequisite"
+    },
+    {
+      "source": "optimization_problem",
+      "target": "stochastic_optimization",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_distribution",
+      "target": "stochastic_optimization",
+      "type": "prerequisite"
+    },
+    {
+      "source": "dynamic_programming",
+      "target": "optimal_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "optimal_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "convex_optimization",
+      "target": "quadratic_programming",
+      "type": "prerequisite"
+    },
+    {
+      "source": "optimization_problem",
+      "target": "nonlinear_programming",
+      "type": "prerequisite"
+    },
+    {
+      "source": "gradient",
+      "target": "nonlinear_programming",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "control_system",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "control_system",
+      "type": "prerequisite"
+    },
+    {
+      "source": "control_system",
+      "target": "transfer_function",
+      "type": "prerequisite"
+    },
+    {
+      "source": "control_system",
+      "target": "state_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "matrix",
+      "target": "state_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "control_system",
+      "target": "feedback_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "transfer_function",
+      "target": "feedback_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "feedback_control",
+      "target": "stability_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "eigenvalue",
+      "target": "stability_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "feedback_control",
+      "target": "pid_controller",
+      "type": "prerequisite"
+    },
+    {
+      "source": "transfer_function",
+      "target": "pid_controller",
+      "type": "prerequisite"
+    },
+    {
+      "source": "transfer_function",
+      "target": "root_locus",
+      "type": "prerequisite"
+    },
+    {
+      "source": "eigenvalue",
+      "target": "root_locus",
+      "type": "prerequisite"
+    },
+    {
+      "source": "transfer_function",
+      "target": "bode_plot",
+      "type": "prerequisite"
+    },
+    {
+      "source": "bode_plot",
+      "target": "nyquist_criterion",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "nyquist_criterion",
+      "type": "prerequisite"
+    },
+    {
+      "source": "state_space",
+      "target": "controllability",
+      "type": "prerequisite"
+    },
+    {
+      "source": "state_space",
+      "target": "observability",
+      "type": "prerequisite"
+    },
+    {
+      "source": "controllability",
+      "target": "state_feedback",
+      "type": "prerequisite"
+    },
+    {
+      "source": "state_space",
+      "target": "state_feedback",
+      "type": "prerequisite"
+    },
+    {
+      "source": "observability",
+      "target": "state_observer",
+      "type": "prerequisite"
+    },
+    {
+      "source": "state_space",
+      "target": "state_observer",
+      "type": "prerequisite"
+    },
+    {
+      "source": "state_observer",
+      "target": "kalman_filter",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stochastic_process",
+      "target": "kalman_filter",
+      "type": "prerequisite"
+    },
+    {
+      "source": "state_feedback",
+      "target": "lqr_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "optimal_control",
+      "target": "lqr_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "optimal_control",
+      "target": "mpc",
+      "type": "prerequisite"
+    },
+    {
+      "source": "state_space",
+      "target": "mpc",
+      "type": "prerequisite"
+    },
+    {
+      "source": "optimization_problem",
+      "target": "mpc",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stability_analysis",
+      "target": "robust_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "nyquist_criterion",
+      "target": "robust_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "control_system",
+      "target": "nonlinear_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "control_system",
+      "target": "adaptive_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "parameter_estimation",
+      "target": "adaptive_control",
+      "type": "prerequisite"
+    },
+    {
+      "source": "control_system",
+      "target": "system_identification",
+      "type": "prerequisite"
+    },
+    {
+      "source": "parameter_estimation",
+      "target": "system_identification",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_measure",
+      "target": "information",
+      "type": "prerequisite"
+    },
+    {
+      "source": "information",
+      "target": "shannon_entropy",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_distribution",
+      "target": "shannon_entropy",
+      "type": "prerequisite"
+    },
+    {
+      "source": "expectation",
+      "target": "shannon_entropy",
+      "type": "prerequisite"
+    },
+    {
+      "source": "shannon_entropy",
+      "target": "mutual_information",
+      "type": "prerequisite"
+    },
+    {
+      "source": "shannon_entropy",
+      "target": "kl_divergence",
+      "type": "prerequisite"
+    },
+    {
+      "source": "convex_function",
+      "target": "kl_divergence",
+      "type": "prerequisite"
+    },
+    {
+      "source": "shannon_entropy",
+      "target": "source_coding",
+      "type": "prerequisite"
+    },
+    {
+      "source": "mutual_information",
+      "target": "channel_capacity",
+      "type": "prerequisite"
+    },
+    {
+      "source": "channel_coding",
+      "target": "channel_capacity",
+      "type": "prerequisite"
+    },
+    {
+      "source": "channel_coding",
+      "target": "error_correction",
+      "type": "prerequisite"
+    },
+    {
+      "source": "error_correction",
+      "target": "reed_solomon",
+      "type": "prerequisite"
+    },
+    {
+      "source": "error_correction",
+      "target": "ldpc_code",
+      "type": "prerequisite"
+    },
+    {
+      "source": "shannon_entropy",
+      "target": "data_compression",
+      "type": "prerequisite"
+    },
+    {
+      "source": "source_coding",
+      "target": "huffman_coding",
+      "type": "prerequisite"
+    },
+    {
+      "source": "source_coding",
+      "target": "arithmetic_coding",
+      "type": "prerequisite"
+    },
+    {
+      "source": "data_compression",
+      "target": "lossy_compression",
+      "type": "prerequisite"
+    },
+    {
+      "source": "shannon_entropy",
+      "target": "rate_distortion",
+      "type": "prerequisite"
+    },
+    {
+      "source": "convex_optimization",
+      "target": "rate_distortion",
+      "type": "prerequisite"
+    },
+    {
+      "source": "channel_capacity",
+      "target": "network_information",
+      "type": "prerequisite"
+    },
+    {
+      "source": "shannon_entropy",
+      "target": "cryptographic_protocol",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complexity",
+      "target": "cryptographic_protocol",
+      "type": "prerequisite"
+    },
+    {
+      "source": "shannon_entropy",
+      "target": "quantum_information",
+      "type": "prerequisite"
+    },
+    {
+      "source": "quantum_mechanics",
+      "target": "quantum_information",
+      "type": "prerequisite"
+    },
+    {
+      "source": "shannon_entropy",
+      "target": "algorithmic_information",
+      "type": "prerequisite"
+    },
+    {
+      "source": "computability",
+      "target": "algorithmic_information",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_measure",
+      "target": "differential_privacy",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "symmetric_encryption",
+      "type": "prerequisite"
+    },
+    {
+      "source": "symmetric_encryption",
+      "target": "aes",
+      "type": "prerequisite"
+    },
+    {
+      "source": "public_key",
+      "target": "rsa",
+      "type": "prerequisite"
+    },
+    {
+      "source": "public_key",
+      "target": "diffie_hellman",
+      "type": "prerequisite"
+    },
+    {
+      "source": "elliptic_curve",
+      "target": "elliptic_curve_crypto",
+      "type": "prerequisite"
+    },
+    {
+      "source": "public_key",
+      "target": "elliptic_curve_crypto",
+      "type": "prerequisite"
+    },
+    {
+      "source": "public_key",
+      "target": "digital_signature",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hash_function",
+      "target": "digital_signature",
+      "type": "prerequisite"
+    },
+    {
+      "source": "symmetric_encryption",
+      "target": "mac",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hash_function",
+      "target": "mac",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cryptographic_protocol",
+      "target": "zero_knowledge_proof",
+      "type": "prerequisite"
+    },
+    {
+      "source": "zero_knowledge_proof",
+      "target": "zk_snarks",
+      "type": "prerequisite"
+    },
+    {
+      "source": "public_key",
+      "target": "homomorphic_encryption",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ring",
+      "target": "homomorphic_encryption",
+      "type": "prerequisite"
+    },
+    {
+      "source": "quantum_mechanics",
+      "target": "quantum_crypto",
+      "type": "prerequisite"
+    },
+    {
+      "source": "information",
+      "target": "quantum_crypto",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lattice_based_crypto",
+      "target": "post_quantum",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hash_function",
+      "target": "blockchain_consensus",
+      "type": "prerequisite"
+    },
+    {
+      "source": "digital_signature",
+      "target": "blockchain_consensus",
+      "type": "prerequisite"
+    },
+    {
+      "source": "aes",
+      "target": "side_channel",
+      "type": "prerequisite"
+    },
+    {
+      "source": "statistical_inference",
+      "target": "side_channel",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complexity",
+      "target": "provable_security",
+      "type": "prerequisite"
+    },
+    {
+      "source": "public_key",
+      "target": "identity_based",
+      "type": "prerequisite"
+    },
+    {
+      "source": "brownian_motion",
+      "target": "stochastic_calculus",
+      "type": "prerequisite"
+    },
+    {
+      "source": "martingale",
+      "target": "stochastic_calculus",
+      "type": "prerequisite"
+    },
+    {
+      "source": "measure_theory",
+      "target": "stochastic_calculus",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stochastic_calculus",
+      "target": "ito_calculus",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ito_calculus",
+      "target": "ito_lemma",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ito_calculus",
+      "target": "sde",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "sde",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ito_lemma",
+      "target": "black_scholes",
+      "type": "prerequisite"
+    },
+    {
+      "source": "risk_neutral",
+      "target": "black_scholes",
+      "type": "prerequisite"
+    },
+    {
+      "source": "martingale",
+      "target": "risk_neutral",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_measure",
+      "target": "risk_neutral",
+      "type": "prerequisite"
+    },
+    {
+      "source": "black_scholes",
+      "target": "option_pricing",
+      "type": "prerequisite"
+    },
+    {
+      "source": "option_pricing",
+      "target": "greeks",
+      "type": "prerequisite"
+    },
+    {
+      "source": "option_pricing",
+      "target": "implied_volatility",
+      "type": "prerequisite"
+    },
+    {
+      "source": "implied_volatility",
+      "target": "volatility_smile",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stochastic_volatility",
+      "target": "volatility_smile",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sde",
+      "target": "stochastic_volatility",
+      "type": "prerequisite"
+    },
+    {
+      "source": "parameter_estimation",
+      "target": "stochastic_volatility",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stochastic_volatility",
+      "target": "heston_model",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sde",
+      "target": "monte_carlo_simulation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "law_of_large_numbers",
+      "target": "monte_carlo_simulation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "monte_carlo_simulation",
+      "target": "american_option",
+      "type": "prerequisite"
+    },
+    {
+      "source": "american_option",
+      "target": "binomial_tree",
+      "type": "prerequisite"
+    },
+    {
+      "source": "markov_chain",
+      "target": "binomial_tree",
+      "type": "prerequisite"
+    },
+    {
+      "source": "risk_neutral",
+      "target": "fundamental_theorem",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sde",
+      "target": "interest_rate_model",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_distribution",
+      "target": "credit_risk",
+      "type": "prerequisite"
+    },
+    {
+      "source": "quadratic_programming",
+      "target": "portfolio_optimization",
+      "type": "prerequisite"
+    },
+    {
+      "source": "greeks",
+      "target": "risk_management",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "population_dynamics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "population_dynamics",
+      "target": "logistic_growth",
+      "type": "prerequisite"
+    },
+    {
+      "source": "nonlinear_dynamics",
+      "target": "logistic_growth",
+      "type": "prerequisite"
+    },
+    {
+      "source": "logistic_growth",
+      "target": "predator_prey",
+      "type": "prerequisite"
+    },
+    {
+      "source": "predator_prey",
+      "target": "lotka_volterra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "population_dynamics",
+      "target": "sir_model",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sir_model",
+      "target": "seir_model",
+      "type": "prerequisite"
+    },
+    {
+      "source": "partial_differential_equations",
+      "target": "reaction_diffusion",
+      "type": "prerequisite"
+    },
+    {
+      "source": "reaction_diffusion",
+      "target": "turing_pattern",
+      "type": "prerequisite"
+    },
+    {
+      "source": "population_dynamics",
+      "target": "evolutionary_dynamics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "evolutionary_dynamics",
+      "target": "replicator_dynamics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "replicator_dynamics",
+      "target": "ess",
+      "type": "prerequisite"
+    },
+    {
+      "source": "markov_chain",
+      "target": "phylogenetics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "probability_distribution",
+      "target": "population_genetics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "population_genetics",
+      "target": "coalescent_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stochastic_process",
+      "target": "coalescent_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "neural_dynamics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "bifurcation_theory",
+      "target": "neural_dynamics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "neural_dynamics",
+      "target": "hodgkin_huxley",
+      "type": "prerequisite"
+    },
+    {
+      "source": "reaction_diffusion",
+      "target": "chemotaxis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "turing_pattern",
+      "target": "morphogenesis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derivative",
+      "target": "finite_difference",
+      "type": "prerequisite"
+    },
+    {
+      "source": "variational_methods",
+      "target": "finite_element",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sobolev_spaces",
+      "target": "finite_element",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fourier_analysis",
+      "target": "spectral_method",
+      "type": "prerequisite"
+    },
+    {
+      "source": "matrix",
+      "target": "sparse_matrix",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "iterative_method",
+      "type": "prerequisite"
+    },
+    {
+      "source": "iterative_method",
+      "target": "conjugate_gradient_method",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sparse_matrix",
+      "target": "conjugate_gradient_method",
+      "type": "prerequisite"
+    },
+    {
+      "source": "iterative_method",
+      "target": "multigrid",
+      "type": "prerequisite"
+    },
+    {
+      "source": "iterative_method",
+      "target": "preconditioner",
+      "type": "prerequisite"
+    },
+    {
+      "source": "riemann_integral",
+      "target": "numerical_integration",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "numerical_ode",
+      "type": "prerequisite"
+    },
+    {
+      "source": "finite_difference",
+      "target": "numerical_ode",
+      "type": "prerequisite"
+    },
+    {
+      "source": "numerical_ode",
+      "target": "runge_kutta",
+      "type": "prerequisite"
+    },
+    {
+      "source": "partial_differential_equations",
+      "target": "numerical_pde",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fourier_analysis",
+      "target": "fast_fourier_transform",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "numerical_linear_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "finite_element",
+      "target": "adaptive_mesh",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "classical_mechanics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "variational_methods",
+      "target": "classical_mechanics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "classical_mechanics",
+      "target": "lagrangian",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lagrangian",
+      "target": "hamiltonian",
+      "type": "prerequisite"
+    },
+    {
+      "source": "symplectic_geometry",
+      "target": "hamiltonian",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hamiltonian",
+      "target": "hamiltonian_system",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hilbert_space",
+      "target": "quantum_mechanics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "operator_theory",
+      "target": "quantum_mechanics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "quantum_mechanics",
+      "target": "schrodinger_equation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "partial_differential_equations",
+      "target": "schrodinger_equation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "quantum_mechanics",
+      "target": "path_integral",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lie_group",
+      "target": "gauge_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fiber_bundle",
+      "target": "gauge_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "statistical_mechanics",
+      "target": "phase_transition",
+      "type": "prerequisite"
+    },
+    {
+      "source": "renormalization",
+      "target": "phase_transition",
+      "type": "prerequisite"
+    },
+    {
+      "source": "partial_differential_equations",
+      "target": "fluid_dynamics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fluid_dynamics",
+      "target": "turbulence",
+      "type": "prerequisite"
+    },
+    {
+      "source": "statistical_mechanics",
+      "target": "turbulence",
+      "type": "prerequisite"
+    },
+    {
+      "source": "path_integral",
+      "target": "quantum_field_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lie_algebra",
+      "target": "quantum_field_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "quantum_field_theory",
+      "target": "renormalization",
+      "type": "prerequisite"
+    },
+    {
+      "source": "quantum_field_theory",
+      "target": "conformal_field_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "conformal_field_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "conformal_field_theory",
+      "target": "string_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "supersymmetry",
+      "target": "string_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "hamiltonian_system",
+      "target": "integrable_system",
+      "type": "prerequisite"
+    },
+    {
+      "source": "spectral_theory",
+      "target": "integrable_system",
+      "type": "prerequisite"
+    },
+    {
+      "source": "data_preprocessing",
+      "target": "feature_engineering",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "pca",
+      "type": "prerequisite"
+    },
+    {
+      "source": "eigenvalue",
+      "target": "pca",
+      "type": "prerequisite"
+    },
+    {
+      "source": "variance",
+      "target": "pca",
+      "type": "prerequisite"
+    },
+    {
+      "source": "decision_tree",
+      "target": "random_forest",
+      "type": "prerequisite"
+    },
+    {
+      "source": "random_forest",
+      "target": "gradient_boosting",
+      "type": "prerequisite"
+    },
+    {
+      "source": "gradient_descent",
+      "target": "gradient_boosting",
+      "type": "prerequisite"
+    },
+    {
+      "source": "linear_algebra",
+      "target": "neural_network",
+      "type": "prerequisite"
+    },
+    {
+      "source": "gradient_descent",
+      "target": "neural_network",
+      "type": "prerequisite"
+    },
+    {
+      "source": "neural_network",
+      "target": "backpropagation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "backpropagation",
+      "target": "deep_learning",
+      "type": "prerequisite"
+    },
+    {
+      "source": "deep_learning",
+      "target": "cnn",
+      "type": "prerequisite"
+    },
+    {
+      "source": "deep_learning",
+      "target": "rnn",
+      "type": "prerequisite"
+    },
+    {
+      "source": "rnn",
+      "target": "lstm",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lstm",
+      "target": "attention",
+      "type": "prerequisite"
+    },
+    {
+      "source": "attention",
+      "target": "transformer",
+      "type": "prerequisite"
+    },
+    {
+      "source": "gradient_descent",
+      "target": "adam_optimizer",
+      "type": "prerequisite"
+    },
+    {
+      "source": "neural_network",
+      "target": "batch_normalization",
+      "type": "prerequisite"
+    },
+    {
+      "source": "neural_network",
+      "target": "dropout",
+      "type": "prerequisite"
+    },
+    {
+      "source": "neural_network",
+      "target": "autoencoder",
+      "type": "prerequisite"
+    },
+    {
+      "source": "deep_learning",
+      "target": "gan",
+      "type": "prerequisite"
+    },
+    {
+      "source": "dynamic_programming",
+      "target": "reinforcement_learning",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "higher_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "higher_category",
+      "target": "infinity_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "simplicial_set",
+      "target": "infinity_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "model_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "simplicial_set",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_topology",
+      "target": "simplicial_set",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "monoidal_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "tensor_product",
+      "target": "monoidal_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "abelian_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homological_algebra",
+      "target": "abelian_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "abelian_category",
+      "target": "triangulated_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homological_algebra",
+      "target": "triangulated_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "topos",
+      "type": "prerequisite"
+    },
+    {
+      "source": "adjoint_functor",
+      "target": "kan_extension",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "enriched_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "monoidal_category",
+      "target": "enriched_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "2_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "fibered_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fiber_bundle",
+      "target": "fibered_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "fibered_category",
+      "target": "stack_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "abelian_category",
+      "target": "derived_functor_cat",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homological_algebra",
+      "target": "derived_functor_cat",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "limits_colimits",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "yoneda_lemma",
+      "type": "prerequisite"
+    },
+    {
+      "source": "yoneda_lemma",
+      "target": "representable_functor",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "groupoid",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "groupoid",
+      "type": "prerequisite"
+    },
+    {
+      "source": "2_category",
+      "target": "bicategory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "monoidal_category",
+      "target": "bicategory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "abelian_category",
+      "target": "derived_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "triangulated_category",
+      "target": "derived_category",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cohomology",
+      "target": "spectral_sequence",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homological_algebra",
+      "target": "tor_functor",
+      "type": "prerequisite"
+    },
+    {
+      "source": "tensor_product",
+      "target": "tor_functor",
+      "type": "prerequisite"
+    },
+    {
+      "source": "homological_algebra",
+      "target": "ext_functor",
+      "type": "prerequisite"
+    },
+    {
+      "source": "module",
+      "target": "ext_functor",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cohomology",
+      "target": "group_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "group_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cohomology",
+      "target": "sheaf_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sheaf_cohomology",
+      "target": "local_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derived_category",
+      "target": "local_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derived_category",
+      "target": "hypercohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "spectral_sequence",
+      "target": "hypercohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sheaf_cohomology",
+      "target": "duality_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derived_category",
+      "target": "duality_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derived_category",
+      "target": "perfect_complex",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derived_category",
+      "target": "tilting_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "module",
+      "target": "tilting_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "triangulated_category",
+      "target": "t_structure",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derived_category",
+      "target": "t_structure",
+      "type": "prerequisite"
+    },
+    {
+      "source": "t_structure",
+      "target": "perverse_sheaf",
+      "type": "prerequisite"
+    },
+    {
+      "source": "intersection_cohomology",
+      "target": "perverse_sheaf",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sheaf_cohomology",
+      "target": "intersection_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derived_category",
+      "target": "koszul_duality",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ext_functor",
+      "target": "koszul_duality",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "motive",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cohomology",
+      "target": "motive",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "motive",
+      "type": "prerequisite"
+    },
+    {
+      "source": "stack_category",
+      "target": "algebraic_stack",
+      "type": "prerequisite"
+    },
+    {
+      "source": "scheme",
+      "target": "algebraic_stack",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_stack",
+      "target": "deligne_mumford",
+      "type": "prerequisite"
+    },
+    {
+      "source": "scheme",
+      "target": "moduli_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "moduli_space",
+      "type": "prerequisite"
+    },
+    {
+      "source": "moduli_space",
+      "target": "moduli_stack",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_stack",
+      "target": "moduli_stack",
+      "type": "prerequisite"
+    },
+    {
+      "source": "scheme",
+      "target": "etale_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "sheaf_cohomology",
+      "target": "etale_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "scheme",
+      "target": "crystalline_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "de_rham_cohomology",
+      "target": "crystalline_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cohomology",
+      "target": "de_rham_cohomology",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "intersection_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "chow_ring",
+      "target": "intersection_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "chow_ring",
+      "type": "prerequisite"
+    },
+    {
+      "source": "cohomology",
+      "target": "chow_ring",
+      "type": "prerequisite"
+    },
+    {
+      "source": "de_rham_cohomology",
+      "target": "hodge_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "biration_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "scheme",
+      "target": "biration_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "biration_geometry",
+      "target": "minimal_model",
+      "type": "prerequisite"
+    },
+    {
+      "source": "intersection_theory",
+      "target": "minimal_model",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "derived_algebraic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "infinity_category",
+      "target": "derived_algebraic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "derived_category",
+      "target": "derived_algebraic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lie_algebra",
+      "target": "representation_lie_algebra",
+      "type": "prerequisite"
+    },
+    {
+      "source": "representation_lie_algebra",
+      "target": "highest_weight",
+      "type": "prerequisite"
+    },
+    {
+      "source": "highest_weight",
+      "target": "category_O",
+      "type": "prerequisite"
+    },
+    {
+      "source": "lie_algebra",
+      "target": "category_O",
+      "type": "prerequisite"
+    },
+    {
+      "source": "perverse_sheaf",
+      "target": "geometric_representation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "character_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "group",
+      "target": "induced_representation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "induced_representation",
+      "target": "mackey_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "representation_lie_algebra",
+      "target": "mackey_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "highest_weight",
+      "target": "weight_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "geometric_representation",
+      "target": "borel_weil",
+      "type": "prerequisite"
+    },
+    {
+      "source": "automorphic_form",
+      "target": "langlands_program",
+      "type": "prerequisite"
+    },
+    {
+      "source": "representation_lie_algebra",
+      "target": "langlands_program",
+      "type": "prerequisite"
+    },
+    {
+      "source": "modular_form",
+      "target": "automorphic_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "representation_lie_algebra",
+      "target": "automorphic_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "elliptic_curve",
+      "target": "modular_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "modular_form",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "elliptic_curve",
+      "type": "prerequisite"
+    },
+    {
+      "source": "abelian_variety",
+      "target": "elliptic_curve",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "abelian_variety",
+      "type": "prerequisite"
+    },
+    {
+      "source": "valuation",
+      "target": "p_adic_number",
+      "type": "prerequisite"
+    },
+    {
+      "source": "field",
+      "target": "valuation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "ring",
+      "target": "valuation",
+      "type": "prerequisite"
+    },
+    {
+      "source": "p_adic_number",
+      "target": "local_global",
+      "type": "prerequisite"
+    },
+    {
+      "source": "scheme",
+      "target": "arithmetic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "arithmetic_geometry",
+      "target": "diophantine_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_geometry",
+      "target": "diophantine_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "etale_cohomology",
+      "target": "weil_conjecture",
+      "type": "prerequisite"
+    },
+    {
+      "source": "zeta_function",
+      "target": "weil_conjecture",
+      "type": "prerequisite"
+    },
+    {
+      "source": "complex_analysis",
+      "target": "zeta_function",
+      "type": "prerequisite"
+    },
+    {
+      "source": "zeta_function",
+      "target": "l_function",
+      "type": "prerequisite"
+    },
+    {
+      "source": "modular_form",
+      "target": "l_function",
+      "type": "prerequisite"
+    },
+    {
+      "source": "symplectic_geometry",
+      "target": "hamiltonian_system",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "hamiltonian_system",
+      "type": "prerequisite"
+    },
+    {
+      "source": "symplectic_manifold",
+      "target": "symplectic_geometry",
+      "type": "prerequisite"
+    },
+    {
+      "source": "measure_theory",
+      "target": "ergodic_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "nonlinear_dynamics",
+      "target": "chaos_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "differential_equations",
+      "target": "nonlinear_dynamics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "nonlinear_dynamics",
+      "target": "bifurcation_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "algebraic_topology",
+      "target": "conley_index",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "forcing",
+      "type": "prerequisite"
+    },
+    {
+      "source": "model_theory",
+      "target": "forcing",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "large_cardinal",
+      "type": "prerequisite"
+    },
+    {
+      "source": "forcing",
+      "target": "large_cardinal",
+      "type": "prerequisite"
+    },
+    {
+      "source": "set_theory",
+      "target": "descriptive_set_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "type_theory",
+      "target": "homotopy_type_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "infinity_category",
+      "target": "homotopy_type_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "intuitionistic_logic",
+      "target": "constructive_mathematics",
+      "type": "prerequisite"
+    },
+    {
+      "source": "propositional_logic",
+      "target": "intuitionistic_logic",
+      "type": "prerequisite"
+    },
+    {
+      "source": "propositional_logic",
+      "target": "modal_logic",
+      "type": "prerequisite"
+    },
+    {
+      "source": "computability",
+      "target": "recursion_theory",
+      "type": "prerequisite"
+    },
+    {
+      "source": "proof_theory",
+      "target": "reverse_math",
+      "type": "prerequisite"
+    },
+    {
+      "source": "proof_theory",
+      "target": "ordinal_analysis",
+      "type": "prerequisite"
+    },
+    {
+      "source": "category_theory",
+      "target": "categorical_logic",
+      "type": "prerequisite"
+    },
+    {
+      "source": "type_theory",
+      "target": "categorical_logic",
+      "type": "prerequisite"
+    }
+  ]
+}

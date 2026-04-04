@@ -1,0 +1,721 @@
+{
+  "alignment_metadata": {
+    "project": "FormalMath",
+    "target": "Wikipedia Applied Mathematics",
+    "generated_date": "2026-04-04T10:16:35+08:00",
+    "version": "1.0",
+    "domains_count": 9,
+    "total_concepts_mapped": 67
+  },
+  "domains": [
+    {
+      "wikipedia": {
+        "title": "Mathematical Physics",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_physics",
+        "definition": "An interdisciplinary field of academic study in between mathematics and physics, aimed at studying and solving problems inspired by physics within a mathematically rigorous framework."
+      },
+      "formalmath": {
+        "path": "docs/18-数学物理/",
+        "files": ["00-README.md", "01-基础概念.md", "02-核心定理.md", "03-实战问题.md"],
+        "exists": true
+      },
+      "alignment_score": 0.65,
+      "key_concepts": [
+        {
+          "wikipedia": "Mathematical rigor",
+          "formalmath": "形式化证明",
+          "status": "partial",
+          "notes": "需要加强数学严谨性的强调"
+        },
+        {
+          "wikipedia": "Operator algebras",
+          "formalmath": "算子代数",
+          "status": "unconfirmed",
+          "notes": "需要确认是否存在于项目中"
+        },
+        {
+          "wikipedia": "Noncommutative geometry",
+          "formalmath": "非交换几何",
+          "status": "unconfirmed",
+          "notes": "需要确认是否存在于项目中"
+        },
+        {
+          "wikipedia": "String theory",
+          "formalmath": "弦理论",
+          "status": "unconfirmed",
+          "notes": "需要确认是否存在于项目中"
+        },
+        {
+          "wikipedia": "Statistical mechanics",
+          "formalmath": "统计力学",
+          "status": "unconfirmed",
+          "notes": "可能存在于物理数学文档中"
+        }
+      ],
+      "gaps": [
+        "需要深化版文档",
+        "需要区分数学物理与理论物理",
+        "需要添加量子场论内容"
+      ],
+      "relationships": [
+        {
+          "related_domain": "Control Theory",
+          "relationship_type": "cross_domain",
+          "topic": "Quantum control"
+        },
+        {
+          "related_domain": "Numerical Analysis",
+          "relationship_type": "methodology",
+          "topic": "Computational physics"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Mathematical and Theoretical Biology",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology",
+        "definition": "A branch of biology which employs theoretical analysis, mathematical models and abstractions of the living organisms to investigate the principles that govern biological systems."
+      },
+      "formalmath": {
+        "path": "docs/26-生物数学/",
+        "alternative_paths": ["docs/12-应用数学/08-生物数学-深化版.md"],
+        "files": ["00-README.md", "01-基础概念.md", "02-核心定理.md", "03-实战问题.md"],
+        "exists": true
+      },
+      "alignment_score": 0.70,
+      "key_concepts": [
+        {
+          "wikipedia": "Population dynamics",
+          "formalmath": "种群动力学",
+          "status": "aligned",
+          "notes": "已包含在生物数学文档中"
+        },
+        {
+          "wikipedia": "Epidemiological models",
+          "formalmath": "流行病学模型",
+          "status": "aligned",
+          "notes": "docs/12-应用数学/03-流行病学数学-深化版.md"
+        },
+        {
+          "wikipedia": "Systems biology",
+          "formalmath": "系统生物学",
+          "status": "partial",
+          "notes": "需要明确区分概念"
+        },
+        {
+          "wikipedia": "Reaction-diffusion equations",
+          "formalmath": "反应-扩散方程",
+          "status": "aligned",
+          "notes": "已包含在文档中"
+        },
+        {
+          "wikipedia": "Turing patterns",
+          "formalmath": "图灵斑图",
+          "status": "unconfirmed",
+          "notes": "需要确认是否存在"
+        }
+      ],
+      "gaps": [
+        "需要更多实际生物模型案例",
+        "需要明确区分数学生物学与计算生物学",
+        "需要添加系统生物学内容"
+      ],
+      "relationships": [
+        {
+          "related_domain": "Information Theory",
+          "relationship_type": "application",
+          "topic": "Bioinformatics"
+        },
+        {
+          "related_domain": "Control Theory",
+          "relationship_type": "application",
+          "topic": "Physiological control systems"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Mathematical Finance",
+        "url": "https://en.wikipedia.org/wiki/Mathematical_finance",
+        "definition": "A field of applied mathematics, concerned with financial markets. Mathematical consistency is required, not compatibility with economic theory."
+      },
+      "formalmath": {
+        "path": "docs/25-金融数学/",
+        "alternative_paths": ["docs/12-应用数学/12-金融数学-深化版.md"],
+        "files": ["00-README.md", "01-基础概念.md", "02-核心定理.md", "03-实战问题.md"],
+        "exists": true
+      },
+      "alignment_score": 0.75,
+      "key_concepts": [
+        {
+          "wikipedia": "Black-Scholes model",
+          "formalmath": "布莱克-斯科尔斯模型",
+          "status": "aligned",
+          "notes": "已包含在核心定理中"
+        },
+        {
+          "wikipedia": "Arbitrage-free pricing",
+          "formalmath": "无套利定价",
+          "status": "partial",
+          "notes": "需要加强"
+        },
+        {
+          "wikipedia": "Stochastic calculus",
+          "formalmath": "随机分析",
+          "status": "unconfirmed",
+          "notes": "需要确认内容完整性"
+        },
+        {
+          "wikipedia": "Risk-neutral measure",
+          "formalmath": "风险中性测度",
+          "status": "unconfirmed",
+          "notes": "需要确认是否存在"
+        },
+        {
+          "wikipedia": "Derivative pricing",
+          "formalmath": "衍生品定价",
+          "status": "aligned",
+          "notes": "已包含"
+        }
+      ],
+      "gaps": [
+        "需要加强随机分析内容",
+        "需要添加更多金融衍生品定价实例",
+        "需要完善风险中性测度理论"
+      ],
+      "relationships": [
+        {
+          "related_domain": "Operations Research",
+          "relationship_type": "application",
+          "topic": "Financial optimization"
+        },
+        {
+          "related_domain": "Numerical Analysis",
+          "relationship_type": "methodology",
+          "topic": "Numerical methods for PDEs in finance"
+        },
+        {
+          "related_domain": "Probability Theory",
+          "relationship_type": "foundation",
+          "topic": "Stochastic processes"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Numerical Analysis",
+        "url": "https://en.wikipedia.org/wiki/Numerical_analysis",
+        "definition": "Deals with the study of algorithms for the problems of continuous mathematics."
+      },
+      "formalmath": {
+        "path": "docs/27-计算数学/",
+        "alternative_paths": ["docs/08-计算数学/"],
+        "files": ["00-README.md", "01-基础概念.md", "02-核心定理.md", "03-实战问题.md"],
+        "exists": true
+      },
+      "alignment_score": 0.70,
+      "key_concepts": [
+        {
+          "wikipedia": "Direct methods",
+          "formalmath": "直接法",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Iterative methods",
+          "formalmath": "迭代法",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Gaussian elimination",
+          "formalmath": "高斯消元法",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Newton's method",
+          "formalmath": "牛顿法",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Numerical linear algebra",
+          "formalmath": "数值线性代数",
+          "status": "aligned",
+          "notes": "已包含"
+        }
+      ],
+      "gaps": [
+        "需要明确区分数值分析与计算数学",
+        "需要整合docs/27-计算数学/与docs/08-计算数学/",
+        "需要添加更多算法收敛性分析"
+      ],
+      "relationships": [
+        {
+          "related_domain": "Computer Science",
+          "relationship_type": "methodology",
+          "topic": "Algorithm analysis"
+        },
+        {
+          "related_domain": "Mathematical Physics",
+          "relationship_type": "application",
+          "topic": "Computational physics"
+        },
+        {
+          "related_domain": "Operations Research",
+          "relationship_type": "application",
+          "topic": "Optimization algorithms"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Operations Research",
+        "url": "https://en.wikipedia.org/wiki/Operations_research",
+        "definition": "A discipline that deals with the application of advanced analytical methods to help make better decisions."
+      },
+      "formalmath": {
+        "path": "docs/21-最优化/",
+        "alternative_paths": ["docs/12-应用数学/03-运筹学.md"],
+        "files": ["00-README.md", "01-基础概念.md", "02-核心定理.md", "03-实战问题.md"],
+        "exists": true
+      },
+      "alignment_score": 0.85,
+      "key_concepts": [
+        {
+          "wikipedia": "Linear programming",
+          "formalmath": "线性规划",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Integer programming",
+          "formalmath": "整数规划",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Queueing theory",
+          "formalmath": "排队论",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Game theory",
+          "formalmath": "博弈论",
+          "status": "partial",
+          "notes": "可能存在于其他位置"
+        },
+        {
+          "wikipedia": "Network optimization",
+          "formalmath": "网络优化",
+          "status": "aligned",
+          "notes": "已包含"
+        }
+      ],
+      "gaps": [
+        "需要更完整的实战问题集",
+        "需要添加更多运筹学应用案例"
+      ],
+      "relationships": [
+        {
+          "related_domain": "Control Theory",
+          "relationship_type": "application",
+          "topic": "Optimal control"
+        },
+        {
+          "related_domain": "Mathematical Finance",
+          "relationship_type": "application",
+          "topic": "Financial optimization"
+        },
+        {
+          "related_domain": "Numerical Analysis",
+          "relationship_type": "methodology",
+          "topic": "Optimization algorithms"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Control Theory",
+        "url": "https://en.wikipedia.org/wiki/Control_theory",
+        "definition": "A subfield of mathematics that deals with the control of continuously operating dynamical systems in engineered processes and machines."
+      },
+      "formalmath": {
+        "path": "docs/22-控制论/",
+        "alternative_paths": ["docs/12-应用数学/04-控制论.md"],
+        "files": ["00-README.md", "01-基础概念.md", "02-核心定理.md", "03-实战问题.md"],
+        "exists": true
+      },
+      "alignment_score": 0.95,
+      "key_concepts": [
+        {
+          "wikipedia": "Classical control theory",
+          "formalmath": "经典控制理论",
+          "status": "aligned",
+          "notes": "完全对齐，包含传递函数、稳定性分析"
+        },
+        {
+          "wikipedia": "Modern control theory",
+          "formalmath": "现代控制理论",
+          "status": "aligned",
+          "notes": "完全对齐，包含状态空间"
+        },
+        {
+          "wikipedia": "State-space representation",
+          "formalmath": "状态空间表示",
+          "status": "aligned",
+          "notes": "包含完整的状态空间模型"
+        },
+        {
+          "wikipedia": "PID controller",
+          "formalmath": "PID控制器",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Optimal control",
+          "formalmath": "最优控制",
+          "status": "aligned",
+          "notes": "包含变分法、极大值原理、动态规划"
+        },
+        {
+          "wikipedia": "Robust control",
+          "formalmath": "鲁棒控制",
+          "status": "aligned",
+          "notes": "包含H∞控制、μ综合"
+        },
+        {
+          "wikipedia": "Adaptive control",
+          "formalmath": "自适应控制",
+          "status": "aligned",
+          "notes": "已包含"
+        }
+      ],
+      "gaps": [
+        "少量术语需标准化",
+        "可添加更多MIMO系统内容"
+      ],
+      "relationships": [
+        {
+          "related_domain": "Operations Research",
+          "relationship_type": "methodology",
+          "topic": "Optimal control"
+        },
+        {
+          "related_domain": "Mathematical Physics",
+          "relationship_type": "application",
+          "topic": "Quantum control"
+        },
+        {
+          "related_domain": "Mathematical Biology",
+          "relationship_type": "application",
+          "topic": "Physiological control"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Information Theory",
+        "url": "https://en.wikipedia.org/wiki/Information_theory",
+        "definition": "Studies the quantification, storage, and communication of information."
+      },
+      "formalmath": {
+        "path": "docs/23-信息论/",
+        "alternative_paths": ["docs/12-应用数学/10-信息论数学-深化版.md"],
+        "files": ["00-README.md", "01-基础概念.md", "02-核心定理.md", "03-实战问题.md"],
+        "exists": true
+      },
+      "alignment_score": 0.90,
+      "key_concepts": [
+        {
+          "wikipedia": "Shannon entropy",
+          "formalmath": "香农熵",
+          "status": "aligned",
+          "notes": "完整定义和公式"
+        },
+        {
+          "wikipedia": "Mutual information",
+          "formalmath": "互信息",
+          "status": "aligned",
+          "notes": "包含所有重要性质"
+        },
+        {
+          "wikipedia": "Channel capacity",
+          "formalmath": "信道容量",
+          "status": "aligned",
+          "notes": "包含离散和高斯信道"
+        },
+        {
+          "wikipedia": "Source coding",
+          "formalmath": "信源编码",
+          "status": "aligned",
+          "notes": "包含霍夫曼编码、算术编码"
+        },
+        {
+          "wikipedia": "Channel coding",
+          "formalmath": "信道编码",
+          "status": "aligned",
+          "notes": "完整覆盖"
+        },
+        {
+          "wikipedia": "Rate-distortion theory",
+          "formalmath": "率失真理论",
+          "status": "aligned",
+          "notes": "已包含"
+        }
+      ],
+      "gaps": [
+        "前沿内容需更新",
+        "可添加更多网络信息论内容"
+      ],
+      "relationships": [
+        {
+          "related_domain": "Cryptography",
+          "relationship_type": "application",
+          "topic": "Information-theoretic security"
+        },
+        {
+          "related_domain": "Mathematical Biology",
+          "relationship_type": "application",
+          "topic": "Bioinformatics"
+        },
+        {
+          "related_domain": "Computer Science",
+          "relationship_type": "foundation",
+          "topic": "Algorithmic information theory"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Cryptography",
+        "url": "https://en.wikipedia.org/wiki/Cryptography",
+        "definition": "The practice and study of hiding information."
+      },
+      "formalmath": {
+        "path": "docs/24-密码学/",
+        "alternative_paths": ["docs/13-应用数学/"],
+        "files": ["00-README.md", "01-基础概念.md", "02-核心定理.md", "03-实战问题.md"],
+        "exists": true
+      },
+      "alignment_score": 0.80,
+      "key_concepts": [
+        {
+          "wikipedia": "Symmetric-key cryptography",
+          "formalmath": "对称密码学",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Public-key cryptography",
+          "formalmath": "公钥密码学",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "RSA algorithm",
+          "formalmath": "RSA算法",
+          "status": "aligned",
+          "notes": "已包含"
+        },
+        {
+          "wikipedia": "Elliptic curve cryptography",
+          "formalmath": "椭圆曲线密码学",
+          "status": "aligned",
+          "notes": "docs/13-应用数学/05-椭圆曲线密码学(ECC)-深度应用案例.md"
+        },
+        {
+          "wikipedia": "Zero-knowledge proofs",
+          "formalmath": "零知识证明",
+          "status": "aligned",
+          "notes": "docs/13-应用数学/07-零知识证明基础-深度应用案例.md"
+        },
+        {
+          "wikipedia": "Homomorphic encryption",
+          "formalmath": "同态加密",
+          "status": "aligned",
+          "notes": "已包含"
+        }
+      ],
+      "gaps": [
+        "需要加强现代密码学前沿内容",
+        "可添加更多密码分析内容"
+      ],
+      "relationships": [
+        {
+          "related_domain": "Information Theory",
+          "relationship_type": "foundation",
+          "topic": "Information-theoretic security"
+        },
+        {
+          "related_domain": "Number Theory",
+          "relationship_type": "foundation",
+          "topic": "Public-key cryptography"
+        },
+        {
+          "related_domain": "Computer Science",
+          "relationship_type": "application",
+          "topic": "Cryptographic protocols"
+        }
+      ]
+    },
+    {
+      "wikipedia": {
+        "title": "Computer Science",
+        "url": "https://en.wikipedia.org/wiki/Computer_science",
+        "definition": "The study of the theoretical foundations of information and computation."
+      },
+      "formalmath": {
+        "path": "docs/08-计算数学/",
+        "alternative_paths": ["docs/09-形式化证明/"],
+        "files": [],
+        "exists": false
+      },
+      "alignment_score": 0.60,
+      "key_concepts": [
+        {
+          "wikipedia": "Computability theory",
+          "formalmath": "可计算性理论",
+          "status": "partial",
+          "notes": "分散在形式化证明文档中"
+        },
+        {
+          "wikipedia": "Automata theory",
+          "formalmath": "自动机理论",
+          "status": "unconfirmed",
+          "notes": "需要确认是否存在"
+        },
+        {
+          "wikipedia": "Computational complexity",
+          "formalmath": "计算复杂性",
+          "status": "partial",
+          "notes": "部分内容存在"
+        },
+        {
+          "wikipedia": "Algorithms",
+          "formalmath": "算法",
+          "status": "aligned",
+          "notes": "计算数学中包含算法内容"
+        },
+        {
+          "wikipedia": "Formal languages",
+          "formalmath": "形式语言",
+          "status": "unconfirmed",
+          "notes": "需要确认是否存在"
+        }
+      ],
+      "gaps": [
+        "需要建立计算机科学理论专门板块",
+        "需要添加可计算性理论系统内容",
+        "需要添加自动机理论内容",
+        "需要添加形式语言理论"
+      ],
+      "relationships": [
+        {
+          "related_domain": "Information Theory",
+          "relationship_type": "foundation",
+          "topic": "Algorithmic information theory"
+        },
+        {
+          "related_domain": "Cryptography",
+          "relationship_type": "application",
+          "topic": "Cryptographic algorithms"
+        },
+        {
+          "related_domain": "Numerical Analysis",
+          "relationship_type": "methodology",
+          "topic": "Algorithm design"
+        }
+      ]
+    }
+  ],
+  "cross_domain_relationships": [
+    {
+      "source": "Information Theory",
+      "target": "Cryptography",
+      "relationship": "foundation",
+      "topics": ["Information-theoretic security", "Entropy in cryptography", "Perfect secrecy"]
+    },
+    {
+      "source": "Operations Research",
+      "target": "Control Theory",
+      "relationship": "methodology",
+      "topics": ["Optimal control", "Dynamic programming", "Linear programming"]
+    },
+    {
+      "source": "Numerical Analysis",
+      "target": "Mathematical Finance",
+      "relationship": "application",
+      "topics": ["PDE solvers for finance", "Monte Carlo methods", "Numerical integration"]
+    },
+    {
+      "source": "Mathematical Physics",
+      "target": "Control Theory",
+      "relationship": "application",
+      "topics": ["Quantum control", "Hamiltonian mechanics in control"]
+    },
+    {
+      "source": "Mathematical Biology",
+      "target": "Information Theory",
+      "relationship": "application",
+      "topics": ["Bioinformatics", "Sequence analysis", "Molecular information theory"]
+    },
+    {
+      "source": "Computer Science",
+      "target": "Cryptography",
+      "relationship": "application",
+      "topics": ["Cryptographic protocols", "Complexity-based security", "Quantum computing"]
+    },
+    {
+      "source": "Mathematical Finance",
+      "target": "Operations Research",
+      "relationship": "application",
+      "topics": ["Portfolio optimization", "Risk management", "Stochastic programming"]
+    },
+    {
+      "source": "Numerical Analysis",
+      "target": "Computer Science",
+      "relationship": "methodology",
+      "topics": ["Algorithm analysis", "Complexity of numerical algorithms", "Parallel algorithms"]
+    }
+  ],
+  "alignment_summary": {
+    "total_domains": 9,
+    "aligned_domains": 9,
+    "high_alignment": ["Control Theory", "Information Theory"],
+    "medium_alignment": ["Operations Research", "Cryptography", "Mathematical Finance"],
+    "low_alignment": ["Mathematical Physics", "Mathematical Biology", "Numerical Analysis", "Computer Science"],
+    "overall_score": 0.77
+  },
+  "recommendations": {
+    "high_priority": [
+      "建立计算机科学理论专门板块",
+      "完善数学物理内容，添加深化版文档",
+      "整合数值分析与计算数学目录"
+    ],
+    "medium_priority": [
+      "加强密码学现代内容",
+      "完善金融数学随机分析",
+      "扩充数学生物学案例"
+    ],
+    "terminology": [
+      {
+        "term": "信息论",
+        "variants": ["信息理论", "Information Theory"],
+        "recommended": "信息论"
+      },
+      {
+        "term": "控制论",
+        "variants": ["控制理论", "Control Theory"],
+        "recommended": "控制论"
+      },
+      {
+        "term": "运筹学",
+        "variants": ["Operations Research", "作业研究"],
+        "recommended": "运筹学"
+      }
+    ]
+  }
+}

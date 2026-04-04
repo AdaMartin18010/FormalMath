@@ -1,0 +1,680 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_date": "2026-04-04",
+    "project": "FormalMath",
+    "mapping_type": "Wikipedia对齐映射",
+    "domains": [
+      "Mathematical Logic",
+      "Set Theory",
+      "Model Theory",
+      "Proof Theory",
+      "Computability Theory",
+      "Type Theory",
+      "Category Theory",
+      "Modal Logic"
+    ]
+  },
+  "concept_hierarchy": {
+    "Mathematical Logic": {
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mathematical_logic",
+      "msc_classification": "03-XX",
+      "formalmath_path": "docs/07-逻辑学/00-README.md",
+      "subfields": {
+        "Set Theory": {
+          "ref": "Set Theory"
+        },
+        "Model Theory": {
+          "ref": "Model Theory"
+        },
+        "Proof Theory": {
+          "ref": "Proof Theory"
+        },
+        "Recursion Theory": {
+          "ref": "Computability Theory"
+        }
+      },
+      "key_concepts": [
+        {
+          "name": "Propositional Logic",
+          "msc": "03B05",
+          "formalmath_path": "docs/07-逻辑学/01-命题逻辑.md",
+          "wikipedia_anchor": "Propositional_logic"
+        },
+        {
+          "name": "First-order Logic",
+          "msc": "03B10",
+          "formalmath_path": "docs/07-逻辑学/02-谓词逻辑.md",
+          "wikipedia_anchor": "First-order_logic"
+        },
+        {
+          "name": "Completeness Theorem",
+          "msc": "03C35",
+          "formalmath_path": "docs/00-知识层次体系/L2-定理证明层/数论与逻辑/04-完备性定理.md",
+          "wikipedia_anchor": "Completeness_theorem"
+        },
+        {
+          "name": "Incompleteness Theorems",
+          "msc": "03F40",
+          "formalmath_path": "docs/00-核心概念理解三问/11-核心定理多表征/07-Gödel不完备定理-五种表征.md",
+          "wikipedia_anchor": "Gödel's_incompleteness_theorems"
+        }
+      ],
+      "historical_figures": [
+        {
+          "name": "George Boole",
+          "years": "1815-1864",
+          "contribution": "布尔代数",
+          "formalmath_path": "数学家理念体系/布尔数学理念/"
+        },
+        {
+          "name": "Gottlob Frege",
+          "years": "1848-1925",
+          "contribution": "现代逻辑符号系统",
+          "formalmath_path": "数学家理念体系/弗雷格数学理念/"
+        },
+        {
+          "name": "Kurt Gödel",
+          "years": "1906-1978",
+          "contribution": "不完备定理",
+          "formalmath_path": "数学家理念体系/哥德尔数学理念/"
+        },
+        {
+          "name": "Alfred Tarski",
+          "years": "1901-1983",
+          "contribution": "语义学",
+          "formalmath_path": "数学家理念体系/塔斯基数学理念/"
+        }
+      ]
+    },
+    "Set Theory": {
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Set_theory",
+      "msc_classification": "03Exx",
+      "formalmath_path": "docs/01-基础数学/集合论/01-集合论基础-国际标准版.md",
+      "subfields": {
+        "Axiomatic Set Theory": {
+          "msc": "03E30",
+          "concepts": ["ZFC", "Axiom of Choice", "Continuum Hypothesis"]
+        },
+        "Cardinal Theory": {
+          "msc": "03E10",
+          "concepts": ["Cardinal number", "Cardinality", "Aleph numbers"]
+        },
+        "Ordinal Theory": {
+          "msc": "03E20",
+          "concepts": ["Ordinal number", "Transfinite induction", "Well-ordering"]
+        },
+        "Descriptive Set Theory": {
+          "msc": "03E15",
+          "concepts": ["Borel sets", "Analytic sets", "Projective hierarchy"]
+        }
+      },
+      "axioms": [
+        {
+          "name": "Extensionality",
+          "zfc_order": 1,
+          "formalmath_ref": "外延公理"
+        },
+        {
+          "name": "Empty Set",
+          "zfc_order": 2,
+          "formalmath_ref": "空集公理"
+        },
+        {
+          "name": "Pairing",
+          "zfc_order": 3,
+          "formalmath_ref": "配对公理"
+        },
+        {
+          "name": "Union",
+          "zfc_order": 4,
+          "formalmath_ref": "并集公理"
+        },
+        {
+          "name": "Power Set",
+          "zfc_order": 5,
+          "formalmath_ref": "幂集公理"
+        },
+        {
+          "name": "Separation",
+          "zfc_order": 6,
+          "formalmath_ref": "分离公理模式"
+        },
+        {
+          "name": "Replacement",
+          "zfc_order": 7,
+          "formalmath_ref": "替换公理模式"
+        },
+        {
+          "name": "Infinity",
+          "zfc_order": 8,
+          "formalmath_ref": "无穷公理"
+        },
+        {
+          "name": "Regularity",
+          "zfc_order": 9,
+          "formalmath_ref": "正则公理"
+        },
+        {
+          "name": "Choice",
+          "zfc_order": 10,
+          "formalmath_ref": "选择公理"
+        }
+      ],
+      "key_concepts": [
+        {
+          "name": "Ordinal Number",
+          "msc": "03E20",
+          "formalmath_path": "docs/01-基础数学/集合论/05-基数与序数-国际标准版.md"
+        },
+        {
+          "name": "Cardinal Number",
+          "msc": "03E10",
+          "formalmath_path": "docs/01-基础数学/集合论/05-基数与序数-国际标准版.md"
+        },
+        {
+          "name": "Well-ordering Theorem",
+          "msc": "03E25",
+          "formalmath_path": "docs/01-基础数学/序关系论证体系/04-良序关系-国际标准版.md"
+        }
+      ]
+    },
+    "Model Theory": {
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Model_theory",
+      "msc_classification": "03Cxx",
+      "formalmath_path": "docs/10-语义模型/模型论/01-模型论基础.md",
+      "subfields": {
+        "Classical Model Theory": {
+          "concepts": ["Elementary equivalence", "Elementary substructure", "Saturated model"]
+        },
+        "Stability Theory": {
+          "msc": "03C45",
+          "concepts": ["Stability", "Simple theories", "Morley rank", "Forking"]
+        },
+        "Geometric Model Theory": {
+          "concepts": ["O-minimal", "Strongly minimal", "Zilber's trichotomy"]
+        }
+      },
+      "core_theorems": [
+        {
+          "name": "Completeness Theorem",
+          "formalmath_path": "docs/00-知识层次体系/L2-定理证明层/数论与逻辑/04-完备性定理.md"
+        },
+        {
+          "name": "Compactness Theorem",
+          "formalmath_path": "docs/10-语义模型/模型论/01-模型论基础.md"
+        },
+        {
+          "name": "Löwenheim-Skolem Theorem",
+          "formalmath_path": "docs/10-语义模型/模型论/01-模型论基础.md"
+        },
+        {
+          "name": "Morley's Categoricity Theorem",
+          "msc": "03C35",
+          "status": "框架待完善"
+        }
+      ],
+      "key_concepts": [
+        {
+          "name": "Structure",
+          "definition": "A set equipped with interpretations of language symbols"
+        },
+        {
+          "name": "Theory",
+          "definition": "A set of sentences in a formal language"
+        },
+        {
+          "name": "Model",
+          "definition": "A structure that satisfies a theory"
+        },
+        {
+          "name": "Type",
+          "definition": "A consistent set of formulas with parameters"
+        },
+        {
+          "name": "Saturated Model",
+          "definition": "A model that realizes all small types"
+        }
+      ]
+    },
+    "Proof Theory": {
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Proof_theory",
+      "msc_classification": "03Fxx",
+      "formalmath_path": "docs/00-知识层次体系/L3-理论建构层/04-逻辑数论方向/04-证明论.md",
+      "status": "框架文档，待完善",
+      "subfields": {
+        "Structural Proof Theory": {
+          "concepts": ["Natural deduction", "Sequent calculus", "Cut elimination"]
+        },
+        "Ordinal Analysis": {
+          "concepts": ["Proof-theoretic ordinal", "Ordinal notation", "Well-ordering proofs"]
+        },
+        "Reverse Mathematics": {
+          "concepts": ["Subsystems of second-order arithmetic", "RCA₀", "ACA₀", "ATR₀"]
+        }
+      },
+      "proof_systems": [
+        {
+          "name": "Hilbert System",
+          "covered_in": "docs/07-逻辑学/01-命题逻辑-增强版.md",
+          "status": "partial"
+        },
+        {
+          "name": "Natural Deduction",
+          "covered_in": "docs/07-逻辑学/01-命题逻辑-增强版.md",
+          "status": "good"
+        },
+        {
+          "name": "Sequent Calculus",
+          "covered_in": null,
+          "status": "missing"
+        }
+      ],
+      "key_theorems": [
+        {
+          "name": "Cut Elimination Theorem",
+          "status": "not_covered",
+          "priority": "high"
+        },
+        {
+          "name": "Deduction Theorem",
+          "status": "partially_covered",
+          "priority": "medium"
+        }
+      ]
+    },
+    "Computability Theory": {
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Computability_theory",
+      "msc_classification": "03Dxx",
+      "formalmath_path": "docs/00-知识层次体系/L3-理论建构层/04-逻辑数论方向/03-递归论.md",
+      "status": "框架文档，待完善",
+      "alternative_names": ["Recursion Theory"],
+      "computation_models": [
+        {
+          "name": "Turing Machine",
+          "status": "partially_covered",
+          "needed_content": "形式定义、停机问题严格证明"
+        },
+        {
+          "name": "Lambda Calculus",
+          "covered_in": "docs/09-形式化证明/04-类型论与证明-深化版.md",
+          "status": "partial"
+        },
+        {
+          "name": "Recursive Functions",
+          "types": ["Primitive recursive", "General recursive", "Partial recursive"],
+          "status": "partially_covered"
+        },
+        {
+          "name": "Register Machine",
+          "status": "not_covered"
+        }
+      ],
+      "key_concepts": [
+        {
+          "name": "Computable Function",
+          "status": "partially_covered"
+        },
+        {
+          "name": "Decidable Set",
+          "status": "partially_covered"
+        },
+        {
+          "name": "Recursively Enumerable",
+          "status": "partially_covered"
+        },
+        {
+          "name": "Halting Problem",
+          "status": "partially_covered",
+          "covered_in": "docs/00-核心概念理解三问/11-核心定理多表征/07-Gödel不完备定理-五种表征.md"
+        },
+        {
+          "name": "Church-Turing Thesis",
+          "status": "partially_covered"
+        },
+        {
+          "name": "Rice's Theorem",
+          "status": "not_covered"
+        }
+      ],
+      "complexity_classes": {
+        "status": "not_covered",
+        "note": "属于计算复杂性理论，与可计算性理论相关但独立"
+      }
+    },
+    "Type Theory": {
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Type_theory",
+      "msc_classification": "03B15, 03B30, 03B35",
+      "formalmath_path": "docs/09-形式化证明/04-类型论与证明-深化版.md",
+      "subfields": {
+        "Simple Type Theory": {
+          "covered_in": "docs/09-形式化证明/04-类型论与证明-深化版.md",
+          "status": "good"
+        },
+        "Dependent Type Theory": {
+          "covered_in": "docs/09-形式化证明/04-类型论与证明-深化版.md",
+          "status": "partial"
+        },
+        "Homotopy Type Theory": {
+          "covered_in": "docs/11-高级数学/15-同伦类型论.md",
+          "status": "good"
+        }
+      },
+      "type_systems": [
+        {
+          "name": "Simply Typed Lambda Calculus",
+          "status": "covered"
+        },
+        {
+          "name": "System F",
+          "status": "partially_covered"
+        },
+        {
+          "name": "Martin-Löf Type Theory",
+          "status": "partially_covered"
+        },
+        {
+          "name": "Calculus of Constructions",
+          "status": "partially_covered"
+        }
+      ],
+      "key_correspondences": [
+        {
+          "name": "Curry-Howard Correspondence",
+          "covered_in": "docs/07-逻辑学/04-直觉逻辑.md",
+          "status": "well_covered"
+        },
+        {
+          "name": "Propositions as Types",
+          "covered_in": "docs/07-逻辑学/04-直觉逻辑.md",
+          "status": "well_covered"
+        }
+      ]
+    },
+    "Category Theory": {
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Category_theory",
+      "msc_classification": "18-XX",
+      "formalmath_path": "docs/02-代数结构/02-核心理论/范畴论/06-范畴论-深度扩展版.md",
+      "subfields": {
+        "Basic Category Theory": {
+          "concepts": ["Category", "Functor", "Natural transformation", "Universal property"]
+        },
+        "Limits and Colimits": {
+          "concepts": ["Product", "Coproduct", "Equalizer", "Coequalizer", "Pullbacks", "Pushouts"]
+        },
+        "Adjoint Functors": {
+          "covered": true,
+          "concepts": ["Adjunction", "Unit", "Counit", "Free/Forgetful"]
+        },
+        "Topos Theory": {
+          "covered": false,
+          "priority": "medium"
+        }
+      },
+      "key_concepts": [
+        {
+          "name": "Category",
+          "definition": "A collection of objects and morphisms with composition and identity"
+        },
+        {
+          "name": "Functor",
+          "definition": "A structure-preserving map between categories"
+        },
+        {
+          "name": "Natural Transformation",
+          "definition": "A morphism between functors"
+        },
+        {
+          "name": "Adjoint Functor",
+          "definition": "A pair of functors with a specific universal property"
+        },
+        {
+          "name": "Limit",
+          "definition": "A universal cone over a diagram"
+        },
+        {
+          "name": "Colimit",
+          "definition": "A universal cocone under a diagram"
+        }
+      ],
+      "applications": {
+        "Logic": {
+          "covered": false,
+          "content": "Cartesian closed categories, Topos theory"
+        },
+        "Algebra": {
+          "covered": true,
+          "content": "Universal algebra, Representation theory"
+        },
+        "Topology": {
+          "covered": true,
+          "content": "Algebraic topology, Homotopy theory"
+        },
+        "Computer Science": {
+          "covered": true,
+          "content": "Type theory, Programming language semantics"
+        }
+      }
+    },
+    "Modal Logic": {
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Modal_logic",
+      "msc_classification": "03B45",
+      "formalmath_path": "docs/07-逻辑学/03-模态逻辑.md",
+      "modal_operators": [
+        {
+          "symbol": "□",
+          "name": "Necessity",
+          "reading": "It is necessary that"
+        },
+        {
+          "symbol": "◇",
+          "name": "Possibility",
+          "reading": "It is possible that"
+        }
+      ],
+      "semantics": {
+        "type": "Possible worlds semantics",
+        "framework": "Kripke semantics",
+        "components": [
+          {
+            "name": "Frame",
+            "definition": "(W, R) where W is set of worlds, R is accessibility relation"
+          },
+          {
+            "name": "Model",
+            "definition": "(W, R, V) where V is valuation function"
+          },
+          {
+            "name": "Accessibility Relation",
+            "definition": "Binary relation on possible worlds"
+          }
+        ]
+      },
+      "axiom_systems": [
+        {
+          "name": "K",
+          "axioms": ["Distribution: □(p→q)→(□p→□q)"],
+          "correspondence": "Minimal normal modal logic"
+        },
+        {
+          "name": "T",
+          "extends": "K",
+          "axioms": ["Reflexivity: □p→p"],
+          "frame_condition": "Reflexive frames"
+        },
+        {
+          "name": "S4",
+          "extends": "T",
+          "axioms": ["4: □p→□□p"],
+          "frame_condition": "Reflexive and transitive frames"
+        },
+        {
+          "name": "S5",
+          "extends": "S4",
+          "axioms": ["5: ◇p→□◇p"],
+          "frame_condition": "Equivalence relations"
+        }
+      ],
+      "applications": [
+        {
+          "area": "Epistemic Logic",
+          "status": "partially_covered",
+          "content": "Knowledge representation, Multi-agent systems"
+        },
+        {
+          "area": "Temporal Logic",
+          "status": "partially_covered",
+          "content": "Time-based reasoning, Program verification"
+        },
+        {
+          "area": "Deontic Logic",
+          "status": "not_covered",
+          "content": "Obligation, permission, prohibition"
+        },
+        {
+          "area": "Dynamic Logic",
+          "status": "not_covered",
+          "content": "Program logic, Action modalities"
+        }
+      ]
+    }
+  },
+  "cross_references": [
+    {
+      "from": "Mathematical Logic.Set Theory",
+      "to": "Set Theory",
+      "type": "subfield"
+    },
+    {
+      "from": "Mathematical Logic.Model Theory",
+      "to": "Model Theory",
+      "type": "subfield"
+    },
+    {
+      "from": "Mathematical Logic.Proof Theory",
+      "to": "Proof Theory",
+      "type": "subfield"
+    },
+    {
+      "from": "Mathematical Logic.Recursion Theory",
+      "to": "Computability Theory",
+      "type": "subfield"
+    },
+    {
+      "from": "Type Theory.Curry-Howard",
+      "to": "Mathematical Logic.Intuitionistic Logic",
+      "type": "correspondence"
+    },
+    {
+      "from": "Category Theory.Cartesian Closed Category",
+      "to": "Type Theory.Simple Type Theory",
+      "type": "semantic_interpretation"
+    },
+    {
+      "from": "Category Theory.Topos",
+      "to": "Mathematical Logic.Intuitionistic Logic",
+      "type": "semantic_interpretation"
+    },
+    {
+      "from": "Model Theory.Completeness",
+      "to": "Mathematical Logic.First-order Logic",
+      "type": "theorem_application"
+    },
+    {
+      "from": "Computability Theory.Turing Machine",
+      "to": "Type Theory.Lambda Calculus",
+      "type": "equivalence",
+      "note": "Church-Turing thesis"
+    },
+    {
+      "from": "Modal Logic.Possible Worlds",
+      "to": "Model Theory.Kripke Models",
+      "type": "semantic_framework"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "domain": "Proof Theory",
+      "missing_content": [
+        "Sequent Calculus",
+        "Cut Elimination Theorem",
+        "Ordinal Analysis",
+        "Reverse Mathematics"
+      ],
+      "priority": "high",
+      "suggested_action": "Create comprehensive proof theory document"
+    },
+    {
+      "domain": "Computability Theory",
+      "missing_content": [
+        "Turing Machine formal definition",
+        "Halting Problem proof",
+        "Rice's Theorem",
+        "Complexity Theory basics"
+      ],
+      "priority": "high",
+      "suggested_action": "Create computability theory document"
+    },
+    {
+      "domain": "Model Theory",
+      "missing_content": [
+        "Stability Theory details",
+        "Geometric Model Theory",
+        "Algebraic applications"
+      ],
+      "priority": "medium",
+      "suggested_action": "Expand model theory coverage"
+    },
+    {
+      "domain": "Set Theory",
+      "missing_content": [
+        "Forcing method",
+        "Large cardinals",
+        "Descriptive Set Theory"
+      ],
+      "priority": "medium",
+      "suggested_action": "Add advanced topics to set theory"
+    },
+    {
+      "domain": "Modal Logic",
+      "missing_content": [
+        "Epistemic Logic details",
+        "Temporal Logic details",
+        "Deontic Logic",
+        "Modal Algebra"
+      ],
+      "priority": "medium",
+      "suggested_action": "Expand modal logic variants"
+    },
+    {
+      "domain": "Category Theory",
+      "missing_content": [
+        "Topos Theory",
+        "Categorical Logic",
+        "Enriched Categories"
+      ],
+      "priority": "low",
+      "suggested_action": "Add advanced category theory topics"
+    }
+  ],
+  "alignment_metrics": {
+    "overall_coverage": 76,
+    "target_coverage": 90,
+    "domain_scores": {
+      "Mathematical Logic": 85,
+      "Set Theory": 90,
+      "Model Theory": 80,
+      "Proof Theory": 60,
+      "Computability Theory": 55,
+      "Type Theory": 75,
+      "Category Theory": 85,
+      "Modal Logic": 80
+    }
+  },
+  "maintenance": {
+    "last_updated": "2026-04-04",
+    "review_cycle": "quarterly",
+    "next_review": "2026-07-04",
+    "maintainers": ["FormalMath Team"]
+  }
+}

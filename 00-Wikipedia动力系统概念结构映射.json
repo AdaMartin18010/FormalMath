@@ -1,0 +1,612 @@
+{
+  "metadata": {
+    "title": "Wikipedia动力系统概念结构映射",
+    "version": "1.0",
+    "created_date": "2026-04-04",
+    "description": "FormalMath动力系统内容与Wikipedia标准概念结构的映射关系"
+  },
+  "wikipedia_entries": [
+    {
+      "entry_name": "Dynamical System",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dynamical_system",
+      "formalmath_mapping": {
+        "coverage_percentage": 92,
+        "alignment_status": "aligned",
+        "main_documents": [
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/01-三体问题.md",
+            "concepts": ["历史发展", "定性理论", "相空间方法"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/09-相空间理论.md",
+            "concepts": ["相空间", "状态空间", "轨道"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/26-连续时间动力系统.md",
+            "concepts": ["连续时间系统", "流", "微分方程"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/27-离散时间动力系统.md",
+            "concepts": ["离散时间系统", "映射", "迭代"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/06-周期轨道理论.md",
+            "concepts": ["周期轨道", "极限环"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/10-吸引子理论.md",
+            "concepts": ["吸引子", "吸引域"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/04-稳定性理论.md",
+            "concepts": ["稳定性", "Lyapunov稳定性"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/24-结构稳定性.md",
+            "concepts": ["结构稳定性", "鲁棒性"],
+            "priority": "medium"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/08-保守系统.md",
+            "concepts": ["保守系统", "耗散系统"],
+            "priority": "medium"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/21-Poincaré映射.md",
+            "concepts": ["Poincaré映射", "首次返回映射"],
+            "priority": "high"
+          }
+        ]
+      },
+      "concept_hierarchy": {
+        "name": "Dynamical System",
+        "children": [
+          {
+            "name": "Phase Space",
+            "formalmath_concept": "相空间"
+          },
+          {
+            "name": "Orbit",
+            "formalmath_concept": "轨道"
+          },
+          {
+            "name": "Equilibrium Point",
+            "formalmath_concept": "平衡点"
+          },
+          {
+            "name": "Periodic Orbit",
+            "formalmath_concept": "周期轨道"
+          },
+          {
+            "name": "Attractor",
+            "formalmath_concept": "吸引子"
+          },
+          {
+            "name": "Stability",
+            "formalmath_concept": "稳定性"
+          },
+          {
+            "name": "Bifurcation",
+            "formalmath_concept": "分岔"
+          }
+        ]
+      },
+      "missing_content": [
+        {
+          "concept": "符号动力系统的现代分类",
+          "priority": "low",
+          "suggested_document": null
+        }
+      ]
+    },
+    {
+      "entry_name": "Chaos Theory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chaos_theory",
+      "formalmath_mapping": {
+        "coverage_percentage": 88,
+        "alignment_status": "aligned",
+        "main_documents": [
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/03-混沌理论先声.md",
+            "concepts": ["混沌历史", "同宿交错", "确定性混沌"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/13-同宿轨道.md",
+            "concepts": ["同宿轨道", "同宿交错", "混沌机制"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/41-动力系统的Lyapunov指数.md",
+            "concepts": ["Lyapunov指数", "指数发散"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/18-拓扑熵.md",
+            "concepts": ["拓扑熵", "复杂性度量"],
+            "priority": "medium"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/38-动力系统的吸引子分类.md",
+            "concepts": ["奇怪吸引子", "吸引子分类"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/19-双曲动力系统.md",
+            "concepts": ["双曲性", "稳定流形", "不稳定流形"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/07-分岔理论.md",
+            "concepts": ["分岔通向混沌"],
+            "priority": "medium"
+          }
+        ]
+      },
+      "concept_hierarchy": {
+        "name": "Chaos Theory",
+        "children": [
+          {
+            "name": "Sensitive Dependence",
+            "formalmath_concept": "敏感依赖性"
+          },
+          {
+            "name": "Topological Transitivity",
+            "formalmath_concept": "拓扑传递性"
+          },
+          {
+            "name": "Strange Attractor",
+            "formalmath_concept": "奇怪吸引子"
+          },
+          {
+            "name": "Homoclinic Orbit",
+            "formalmath_concept": "同宿轨道"
+          },
+          {
+            "name": "Lyapunov Exponent",
+            "formalmath_concept": "Lyapunov指数"
+          },
+          {
+            "name": "Topological Entropy",
+            "formalmath_concept": "拓扑熵"
+          }
+        ]
+      },
+      "missing_content": [
+        {
+          "concept": "Lorenz系统的详细数学分析",
+          "priority": "medium",
+          "suggested_document": "docs/应用案例库/01-物理学应用/"
+        },
+        {
+          "concept": "Hénon映射的动力学性质",
+          "priority": "medium",
+          "suggested_document": null
+        }
+      ]
+    },
+    {
+      "entry_name": "Ergodic Theory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ergodic_theory",
+      "formalmath_mapping": {
+        "coverage_percentage": 90,
+        "alignment_status": "aligned",
+        "main_documents": [
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/05-遍历理论先声.md",
+            "concepts": ["遍历理论历史", "庞加莱回归"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/15-Ergodic理论.md",
+            "concepts": ["遍历性", "Birkhoff遍历定理", "von Neumann遍历定理"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/22-不变测度.md",
+            "concepts": ["不变测度", "遍历测度"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/20-遍历系统.md",
+            "concepts": ["遍历系统", "遍历分解"],
+            "priority": "medium"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/14-随机动力系统.md",
+            "concepts": ["随机动力系统", "随机遍历理论"],
+            "priority": "medium"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/36-动力系统的遍历理论.md",
+            "concepts": ["遍历理论应用"],
+            "priority": "medium"
+          }
+        ]
+      },
+      "concept_hierarchy": {
+        "name": "Ergodic Theory",
+        "children": [
+          {
+            "name": "Measure-Preserving Transformation",
+            "formalmath_concept": "保测变换"
+          },
+          {
+            "name": "Invariant Measure",
+            "formalmath_concept": "不变测度"
+          },
+          {
+            "name": "Ergodicity",
+            "formalmath_concept": "遍历性"
+          },
+          {
+            "name": "Mixing",
+            "formalmath_concept": "混合性"
+          },
+          {
+            "name": "Time Average",
+            "formalmath_concept": "时间平均"
+          },
+          {
+            "name": "Space Average",
+            "formalmath_concept": "空间平均"
+          }
+        ]
+      },
+      "missing_content": [
+        {
+          "concept": "数论应用（一致分布）",
+          "priority": "medium",
+          "suggested_document": null
+        },
+        {
+          "concept": "信息论中的熵",
+          "priority": "low",
+          "suggested_document": null
+        }
+      ]
+    },
+    {
+      "entry_name": "Bifurcation Theory",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bifurcation_theory",
+      "formalmath_mapping": {
+        "coverage_percentage": 85,
+        "alignment_status": "aligned",
+        "main_documents": [
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/07-分岔理论.md",
+            "concepts": ["分岔定义", "分岔点", "分岔图", "静态分岔", "动态分岔"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/40-动力系统的分岔理论深化.md",
+            "concepts": ["分岔分析", "范式理论"],
+            "priority": "medium"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/24-结构稳定性.md",
+            "concepts": ["结构稳定性", "分岔与稳定性"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/13-同宿轨道.md",
+            "concepts": ["同宿分岔"],
+            "priority": "medium"
+          }
+        ]
+      },
+      "concept_hierarchy": {
+        "name": "Bifurcation Theory",
+        "children": [
+          {
+            "name": "Bifurcation Point",
+            "formalmath_concept": "分岔点"
+          },
+          {
+            "name": "Saddle-Node Bifurcation",
+            "formalmath_concept": "鞍结分岔"
+          },
+          {
+            "name": "Transcritical Bifurcation",
+            "formalmath_concept": "跨临界分岔"
+          },
+          {
+            "name": "Pitchfork Bifurcation",
+            "formalmath_concept": "叉形分岔"
+          },
+          {
+            "name": "Hopf Bifurcation",
+            "formalmath_concept": "Hopf分岔"
+          },
+          {
+            "name": "Homoclinic Bifurcation",
+            "formalmath_concept": "同宿分岔"
+          },
+          {
+            "name": "Period-Doubling Bifurcation",
+            "formalmath_concept": "周期倍化分岔"
+          }
+        ]
+      },
+      "missing_content": [
+        {
+          "concept": "全局分岔的详细内容",
+          "priority": "medium",
+          "suggested_document": null
+        },
+        {
+          "concept": "分岔的范式理论完整展开",
+          "priority": "medium",
+          "suggested_document": null
+        }
+      ]
+    },
+    {
+      "entry_name": "Hamiltonian System",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamiltonian_system",
+      "formalmath_mapping": {
+        "coverage_percentage": 90,
+        "alignment_status": "aligned",
+        "main_documents": [
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/25-哈密顿系统.md",
+            "concepts": ["哈密顿方程", "相空间结构", "辛几何", "可积性"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/12-可积系统.md",
+            "concepts": ["Liouville可积性", "作用-角变量"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/16-KAM理论.md",
+            "concepts": ["KAM定理", "近可积系统", "混沌的产生"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/08-保守系统.md",
+            "concepts": ["保守系统", "能量守恒"],
+            "priority": "medium"
+          },
+          {
+            "path": "docs/00-知识层次体系/L3-理论建构层/03-几何拓扑方向/04-辛几何基础.md",
+            "concepts": ["辛几何", "辛形式", "辛变换"],
+            "priority": "medium"
+          }
+        ]
+      },
+      "concept_hierarchy": {
+        "name": "Hamiltonian System",
+        "children": [
+          {
+            "name": "Hamiltonian Function",
+            "formalmath_concept": "哈密顿函数"
+          },
+          {
+            "name": "Hamilton's Equations",
+            "formalmath_concept": "哈密顿方程"
+          },
+          {
+            "name": "Symplectic Structure",
+            "formalmath_concept": "辛结构"
+          },
+          {
+            "name": "Liouville's Theorem",
+            "formalmath_concept": "Liouville定理"
+          },
+          {
+            "name": "Action-Angle Variables",
+            "formalmath_concept": "作用-角变量"
+          },
+          {
+            "name": "KAM Theorem",
+            "formalmath_concept": "KAM定理"
+          }
+        ]
+      },
+      "missing_content": [
+        {
+          "concept": "量子力学应用",
+          "priority": "low",
+          "suggested_document": null
+        }
+      ]
+    },
+    {
+      "entry_name": "Integrable System",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Integrable_system",
+      "formalmath_mapping": {
+        "coverage_percentage": 82,
+        "alignment_status": "aligned",
+        "main_documents": [
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/12-可积系统.md",
+            "concepts": ["Liouville可积性", "Liouville-Arnold定理"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/39-动力系统的可积性理论.md",
+            "concepts": ["可积性理论", "可积系统的特征"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/16-KAM理论.md",
+            "concepts": ["近可积系统", "扰动理论"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/25-哈密顿系统.md",
+            "concepts": ["可积哈密顿系统"],
+            "priority": "medium"
+          }
+        ]
+      },
+      "concept_hierarchy": {
+        "name": "Integrable System",
+        "children": [
+          {
+            "name": "Liouville Integrability",
+            "formalmath_concept": "Liouville可积性"
+          },
+          {
+            "name": "First Integrals",
+            "formalmath_concept": "首次积分"
+          },
+          {
+            "name": "Action-Angle Variables",
+            "formalmath_concept": "作用-角变量"
+          },
+          {
+            "name": "Lax Pair",
+            "formalmath_concept": "Lax对"
+          },
+          {
+            "name": "Soliton",
+            "formalmath_concept": "孤立子"
+          }
+        ]
+      },
+      "missing_content": [
+        {
+          "concept": "孤立子理论",
+          "priority": "medium",
+          "suggested_document": null
+        },
+        {
+          "concept": "KdV方程与逆散射变换",
+          "priority": "medium",
+          "suggested_document": null
+        },
+        {
+          "concept": "Lax对表示",
+          "priority": "medium",
+          "suggested_document": null
+        }
+      ]
+    },
+    {
+      "entry_name": "Symbolic Dynamics",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symbolic_dynamics",
+      "formalmath_mapping": {
+        "coverage_percentage": 85,
+        "alignment_status": "aligned",
+        "main_documents": [
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/17-符号动力学.md",
+            "concepts": ["符号空间", "移位映射", "符号编码", "Markov分割"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/19-双曲动力系统.md",
+            "concepts": ["双曲不变集", "符号表示"],
+            "priority": "high"
+          },
+          {
+            "path": "数学家理念体系/庞加莱数学理念/02-数学内容深度分析/03-微分方程与动力系统/18-拓扑熵.md",
+            "concepts": ["拓扑熵", "复杂性度量"],
+            "priority": "medium"
+          }
+        ]
+      },
+      "concept_hierarchy": {
+        "name": "Symbolic Dynamics",
+        "children": [
+          {
+            "name": "Shift Space",
+            "formalmath_concept": "符号空间"
+          },
+          {
+            "name": "Shift Map",
+            "formalmath_concept": "移位映射"
+          },
+          {
+            "name": "Markov Partition",
+            "formalmath_concept": "Markov分割"
+          },
+          {
+            "name": "Symbolic Coding",
+            "formalmath_concept": "符号编码"
+          },
+          {
+            "name": "Subshift of Finite Type",
+            "formalmath_concept": "有限型子移位"
+          },
+          {
+            "name": "Sofic System",
+            "formalmath_concept": "Sofic系统"
+          }
+        ]
+      },
+      "missing_content": [
+        {
+          "concept": "Sofic系统详细理论",
+          "priority": "low",
+          "suggested_document": null
+        },
+        {
+          "concept": "有限型子移位分类",
+          "priority": "low",
+          "suggested_document": null
+        }
+      ]
+    }
+  ],
+  "cross_references": [
+    {
+      "from": "Dynamical System",
+      "to": "Chaos Theory",
+      "relation": "includes"
+    },
+    {
+      "from": "Dynamical System",
+      "to": "Ergodic Theory",
+      "relation": "includes"
+    },
+    {
+      "from": "Dynamical System",
+      "to": "Bifurcation Theory",
+      "relation": "includes"
+    },
+    {
+      "from": "Dynamical System",
+      "to": "Hamiltonian System",
+      "relation": "specialization"
+    },
+    {
+      "from": "Hamiltonian System",
+      "to": "Integrable System",
+      "relation": "specialization"
+    },
+    {
+      "from": "Chaos Theory",
+      "to": "Symbolic Dynamics",
+      "relation": "uses"
+    },
+    {
+      "from": "Chaos Theory",
+      "to": "Bifurcation Theory",
+      "relation": "connected_to"
+    },
+    {
+      "from": "Ergodic Theory",
+      "to": "Chaos Theory",
+      "relation": "connected_to"
+    }
+  ],
+  "statistics": {
+    "total_wikipedia_entries": 7,
+    "aligned_entries": 7,
+    "average_coverage": 88,
+    "total_mapped_documents": 43,
+    "missing_concepts": 14,
+    "high_priority_missing": 6,
+    "medium_priority_missing": 8
+  }
+}

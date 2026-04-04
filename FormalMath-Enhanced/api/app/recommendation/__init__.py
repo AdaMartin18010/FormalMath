@@ -1,18 +1,16 @@
 """
-智能推荐系统模块
-包含协同过滤、知识图谱嵌入、强化学习、内容推荐和混合推荐算法
+推荐系统模块
+包含动态难度调整、自适应内容推荐、多目标优化
 """
-
-from .collaborative_filtering import CollaborativeFiltering
-from .knowledge_embedding import KnowledgeGraphEmbedding
-from .rl_recommendation import RLRecommender
-from .content_recommendation import ContentRecommender
-from .hybrid_recommender import HybridRecommender
+from .adaptive_difficulty import AdaptiveDifficultyManager, DifficultyCalibration
+from .content_recommender import ContentRecommender, RecommendationEngine
+from .multi_objective import MultiObjectiveOptimizer, ObjectiveBalance
 
 __all__ = [
-    "CollaborativeFiltering",
-    "KnowledgeGraphEmbedding", 
-    "RLRecommender",
-    "ContentRecommender",
-    "HybridRecommender",
+    'AdaptiveDifficultyManager',
+    'DifficultyCalibration',
+    'ContentRecommender',
+    'RecommendationEngine',
+    'MultiObjectiveOptimizer',
+    'ObjectiveBalance',
 ]
