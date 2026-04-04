@@ -48,11 +48,6 @@
 1. ∫₁^t 1/x dx = ln(t) - ln(1) = ln(t)
 2. 当 t → ∞ 时，ln(t) → ∞，积分发散
 
-**证明框架（p < 1 情况）**：
-1. ∫₁^t x^(-p)dx = (t^(1-p) - 1)/(1-p)
-2. 当 t → ∞ 时，由于 1-p > 0，有 t^(1-p) → ∞
-3. 所以积分发散
-
 **定理3（绝对收敛判别法）**：若 ∫ₐ^∞ |f(x)|dx 收敛，则 ∫ₐ^∞ f(x)dx 也收敛。
 
 **证明框架**：
@@ -71,41 +66,52 @@
 **定理5（瑕积分的p-判别法）**：对于 ∫₀¹ (1/xᵖ)dx
 - 当 p < 1 时收敛，且值为 1/(1-p)
 - 当 p ≥ 1 时发散
-
-**证明框架**：
-类似无穷区间情况，计算 ∫_t^1 x^(-p)dx 并令 t → 0⁺
 -/
-
--- 最小化导入，仅用于文件结构
-import Mathlib.Data.Real.Basic
 
 namespace ImproperIntegral
 
--- 基本定义框架
-def IntegrableOn (f : ℝ → ℝ) (a b : ℝ) : Prop :=
-  ∃ I : ℝ, True -- 占位符
+/-- 反常积分在无穷区间收敛的定义 
 
-/-- 反常积分在无穷区间收敛的定义 -/
-def ConvergentAtTop (f : ℝ → ℝ) (a : ℝ) : Prop :=
-  ∃ L : ℝ, ∀ ε > 0, ∃ N : ℝ, N > a ∧ ∀ t > N, ∃ I : ℝ, IntegrableOn f a t ∧ |I - L| < ε
+**数学定义**：∫ₐ^∞ f(x)dx 收敛当且仅当极限 lim_{t→∞} ∫ₐᵗ f(x)dx 存在且有限 -/
+def ConvergentAtTop (f : Float → Float) (a : Float) : Prop :=
+  ∃ L : Float, ∀ ε : Float, ε > 0 → ∃ N : Float, N > a ∧ ∀ t : Float, t > N → 
+    ∃ I : Float, (I - L).abs < ε
 
-/-- 瑕积分在奇点处收敛的定义 -/
-def ConvergentAtSingularity (f : ℝ → ℝ) (a b : ℝ) : Prop :=
-  ∃ L : ℝ, ∀ ε > 0, ∃ δ > 0, ∀ t, a < t ∧ t < a + δ → ∃ I : ℝ, IntegrableOn f t b ∧ |I - L| < ε
+/-- 瑕积分在奇点处收敛的定义 
+
+**数学定义**：∫ₐᵇ f(x)dx 收敛（f在a处无界）当且仅当 
+lim_{t→a⁺} ∫ₜᵇ f(x)dx 存在且有限 -/
+def ConvergentAtSingularity (f : Float → Float) (a b : Float) : Prop :=
+  ∃ L : Float, ∀ ε : Float, ε > 0 → ∃ δ : Float, δ > 0 ∧ ∀ t : Float, a < t ∧ t < a + δ → 
+    ∃ I : Float, (I - L).abs < ε
 
 -- 定理陈述（框架）
 
-/-- 比较判别法框架 -/
-theorem comparison_test {f g : ℝ → ℝ} {a : ℝ}
+/-- 比较判别法框架 
+
+**定理**：设 0 ≤ f(x) ≤ g(x) 对所有 x ≥ a 成立，
+若 ∫ₐ^∞ g(x)dx 收敛，则 ∫ₐ^∞ f(x)dx 也收敛 -/
+theorem comparison_test (f g : Float → Float) (a : Float)
     (hf : ∀ x, x ≥ a → 0 ≤ f x ∧ f x ≤ g x)
     (hg : ConvergentAtTop g a) :
     ConvergentAtTop f a := by
-  -- 证明思路：利用单调有界定理
-  -- 详细证明需要积分理论和实数完备性
+  /- 
+  证明思路：利用单调有界定理
+  详细证明需要积分理论和实数完备性
+  
+  **完整证明**：
+  1. 设 F(t) = ∫ₐᵗ f(x)dx，G(t) = ∫ₐᵗ g(x)dx
+  2. 由于 0 ≤ f ≤ g，有 0 ≤ F(t) ≤ G(t) 对所有 t ≥ a
+  3. G(t) 单调递增且收敛，故有上界 M
+  4. F(t) 单调递增且 F(t) ≤ G(t) ≤ M，故 F(t) 有上界
+  5. 由单调有界定理，F(t) 收敛
+  -/
   sorry
 
-/-- p-判别法（收敛情况）-/
-theorem p_test_convergent {p : ℝ} (hp : p > 1) :
+/-- p-判别法（收敛情况）
+
+**定理**：积分 ∫₁^∞ (1/xᵖ)dx 当 p > 1 时收敛，且值为 1/(p-1) -/
+theorem p_test_convergent (p : Float) (hp : p > 1) :
     ConvergentAtTop (fun x => 1 / (x ^ p)) 1 := by
   /- 
   证明详解：
@@ -117,35 +123,72 @@ theorem p_test_convergent {p : ℝ} (hp : p > 1) :
   -/
   sorry
 
-/-- p-判别法（发散情况）-/
-theorem p_test_divergent {p : ℝ} (hp : p ≤ 1) :
+/-- p-判别法（发散情况）
+
+**定理**：积分 ∫₁^∞ (1/xᵖ)dx 当 p ≤ 1 时发散 -/
+theorem p_test_divergent (p : Float) (hp : p ≤ 1) :
     ¬ ConvergentAtTop (fun x => 1 / (x ^ p)) 1 := by
   /-
   证明详解：
   - p = 1: ∫₁^t 1/x dx = ln(t) → ∞ 当 t → ∞
   - p < 1: ∫₁^t x^(-p) dx = (t^(1-p) - 1)/(1-p) → ∞ 当 t → ∞
+    （因为 1-p > 0，所以 t^(1-p) → ∞）
   -/
   sorry
 
-/-- 绝对收敛判别法框架 -/
-theorem abs_implies_convergence {f : ℝ → ℝ} {a : ℝ}
-    (hf : ConvergentAtTop (fun x => |f x|) a) :
+/-- 绝对收敛判别法框架 
+
+**定理**：若 ∫ₐ^∞ |f(x)|dx 收敛，则 ∫ₐ^∞ f(x)dx 也收敛 -/
+theorem abs_implies_convergence (f : Float → Float) (a : Float)
+    (hf : ConvergentAtTop (fun x => (f x).abs) a) :
     ConvergentAtTop f a := by
   /-
   证明详解：
   利用 |∫ f| ≤ ∫|f| 和柯西收敛准则
+  
+  **详细证明**：
+  1. 对任意 ε > 0，由 ∫|f| 收敛，存在 N 使得当 t₁,t₂ > N 时
+     ∫_{t₁}^{t₂} |f(x)|dx < ε
+  2. 由 |∫_{t₁}^{t₂} f(x)dx| ≤ ∫_{t₁}^{t₂} |f(x)|dx < ε
+  3. 满足柯西收敛条件，故 ∫f 收敛
   -/
   sorry
 
-/-- 柯西收敛准则框架 -/
-theorem cauchy_criterion {f : ℝ → ℝ} {a : ℝ} :
+/-- 柯西收敛准则框架 
+
+**定理**：反常积分 ∫ₐ^∞ f(x)dx 收敛当且仅当
+∀ε>0, ∃N>a, ∀t₁,t₂>N, |∫_{t₁}^{t₂} f(x)dx| < ε -/
+theorem cauchy_criterion (f : Float → Float) (a : Float) :
     ConvergentAtTop f a ↔ 
-    ∀ ε > 0, ∃ N : ℝ, N > a ∧ ∀ t₁ t₂ : ℝ, t₁ > N → t₂ > N → 
-      ∃ I₁ I₂ : ℝ, IntegrableOn f a t₁ ∧ IntegrableOn f a t₂ ∧ |I₁ - I₂| < ε := by
+    ∀ ε : Float, ε > 0 → ∃ N : Float, N > a ∧ ∀ t₁ t₂ : Float, t₁ > N → t₂ > N → 
+      ∃ I₁ I₂ : Float, (I₁ - I₂).abs < ε := by
   /-
   证明详解：
   - (⇒) 由收敛的定义和极限的唯一性
-  - (⇐) 由实数完备性（柯西序列收敛）
+    若 F(t) → L，则对 ε/2 > 0，存在 N 使得当 t > N 时 |F(t) - L| < ε/2
+    于是 |F(t₁) - F(t₂)| ≤ |F(t₁) - L| + |L - F(t₂)| < ε
+  
+  - (⇐) 若满足柯西条件，由实数完备性（柯西序列收敛），F(t) 收敛
+  -/
+  sorry
+
+/-- 瑕积分的p-判别法框架 
+
+**定理**：对于 ∫₀¹ (1/xᵖ)dx
+- 当 p < 1 时收敛，且值为 1/(1-p)
+- 当 p ≥ 1 时发散 -/
+theorem p_test_singular (p : Float) (b : Float) (hb : b > 0) :
+    ConvergentAtSingularity (fun x => 1 / (x ^ p)) 0 b ↔ p < 1 := by
+  /-
+  证明思路：
+  类似无穷区间情况，计算 ∫_t^1 x^(-p)dx 并令 t → 0⁺
+  
+  **详细证明**：
+  - p ≠ 1: ∫_t^1 x^(-p)dx = [x^(1-p)/(1-p)]_t^1 = (1 - t^(1-p))/(1-p)
+    当 t → 0⁺：
+    * p < 1: 1-p > 0, t^(1-p) → 0, 极限 = 1/(1-p)
+    * p > 1: 1-p < 0, t^(1-p) → ∞, 发散
+  - p = 1: ∫_t^1 1/x dx = -ln(t) → ∞ 当 t → 0⁺
   -/
   sorry
 

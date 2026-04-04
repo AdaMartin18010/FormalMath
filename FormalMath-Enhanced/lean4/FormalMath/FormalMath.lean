@@ -120,6 +120,14 @@ import FormalMath.ProofTheory
 import FormalMath.ComputabilityTheory
 import FormalMath.TypeTheory
 
+-- ==================== 数学物理（5个）====================
+-- 第14批新增（定理86-90）- 物理理论数学基础
+import FormalMath.MathematicalPhysics
+import FormalMath.QuantumMechanics
+import FormalMath.StatisticalMechanics
+import FormalMath.GeneralRelativity
+import FormalMath.QuantumFieldTheory
+
 -- ==================== 统计与数据科学（10个）====================
 -- (将在后续批次补充)
 

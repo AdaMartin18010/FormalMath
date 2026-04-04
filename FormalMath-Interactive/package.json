@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:analyze": "tsc && vite build --mode analyze",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "type-check": "tsc --noEmit",
@@ -13,7 +14,12 @@
     "test:watch": "jest --config=../tests/frontend/jest.config.js --watch",
     "test:coverage": "jest --config=../tests/frontend/jest.config.js --coverage",
     "test:e2e": "cypress run --config-file ../tests/frontend/cypress.config.ts",
-    "test:e2e:open": "cypress open --config-file ../tests/frontend/cypress.config.ts"
+    "test:e2e:open": "cypress open --config-file ../tests/frontend/cypress.config.ts",
+    "perf:test": "node scripts/performance-test.cjs",
+    "perf:lighthouse": "node scripts/lighthouse-audit.cjs",
+    "perf:audit": "npm run build && npm run preview & sleep 5 && npm run perf:lighthouse && taskkill /F /IM node.exe 2>nul",
+    "perf:check": "node scripts/optimize-check.cjs",
+    "bundle:analyze": "npx vite-bundle-visualizer"
   },
   "dependencies": {
     "@react-three/drei": "^9.122.0",
