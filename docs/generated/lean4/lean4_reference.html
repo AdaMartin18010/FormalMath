@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormalMath Lean4 文档</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+               line-height: 1.6; color: #333; background: #f5f7fa; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                  color: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .theorem-card { background: white; padding: 25px; border-radius: 12px; 
+                        margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .theorem-card h2 { color: #667eea; margin-bottom: 15px; font-family: 'Consolas', monospace; }
+        .code-block { background: #2d2d2d; color: #f8f8f2; padding: 20px; border-radius: 8px; 
+                      overflow-x: auto; font-family: 'Consolas', monospace; margin: 15px 0; }
+        .tag { display: inline-block; padding: 4px 12px; border-radius: 12px; 
+               font-size: 0.85em; background: #e3f2fd; color: #1976d2; margin-right: 8px; }
+        .status-complete { color: #4caf50; }
+        .status-sorry { color: #ff9800; }
+        .meta { color: #666; font-size: 0.9em; margin-top: 10px; }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔧 FormalMath Lean4 形式化文档</h1>
+            <p>生成时间: 2026-04-04 13:07:54</p>
+            <p>定理总数: 43 | 定义总数: 209</p>
+        </div>
+        <div class="theorem-card">
+            <h2>fermat_coprime</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem fermat_coprime {m n : ℕ} (hne : m ≠ n) : Nat.Coprime (F_m) (F_n)
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\InfinitudeOfPrimes.lean:153</div>
+        </div>
+        <div class="theorem-card">
+            <h2>prime_gaps_unbounded</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem prime_gaps_unbounded : ∀ (N : ℕ), ∃ (n : ℕ), nthPrime (n + 1) - nthPrime n > N
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\InfinitudeOfPrimes.lean:317</div>
+        </div>
+        <div class="theorem-card">
+            <h2>no_retraction_sphere</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem no_retraction_sphere {n : ℕ} (hn : n > 0) :
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\BrouwerFixedPoint.lean:109</div>
+        </div>
+        <div class="theorem-card">
+            <h2>kakutani_fixed_point</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem kakutani_fixed_point {n : ℕ} {X : Set (EuclideanSpace ℝ (Fin n))}
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\BrouwerFixedPoint.lean:194</div>
+        </div>
+        <div class="theorem-card">
+            <h2>poly_eq_zero_of_degree_lt_card_roots</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem poly_eq_zero_of_degree_lt_card_roots {R : Type*} [Field R] [DecidableEq R]
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\07-拉格朗日插值.lean:215</div>
+        </div>
+        <div class="theorem-card">
+            <h2>fundamental_theorem_of_algebra</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem fundamental_theorem_of_algebra (P : Polynomial ℂ) (hdeg : P.degree > 0) :
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\FundamentalTheoremAlgebra.lean:75</div>
+        </div>
+        <div class="theorem-card">
+            <h2>real_polynomial_factorization</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem real_polynomial_factorization (P : Polynomial ℝ) (hdeg : P.degree > 0) :
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\FundamentalTheoremAlgebra.lean:257</div>
+        </div>
+        <div class="theorem-card">
+            <h2>weak_nullstellensatz</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem weak_nullstellensatz {n : ℕ} (I : Ideal (Poly n k))
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\Nullstellensatz.lean:135</div>
+        </div>
+        <div class="theorem-card">
+            <h2>weak_nullstellensatz</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem weak_nullstellensatz ' {n : ℕ} (I : Ideal (Poly n k)) :
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\Nullstellensatz.lean:155</div>
+        </div>
+        <div class="theorem-card">
+            <h2>strong_nullstellensatz</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem strong_nullstellensatz {n : ℕ} (I : Ideal (Poly n k)) :
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\Nullstellensatz.lean:188</div>
+        </div>
+        <div class="theorem-card">
+            <h2>radical_ideal_bijection</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem radical_ideal_bijection {n : ℕ} :
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\Nullstellensatz.lean:206</div>
+        </div>
+        <div class="theorem-card">
+            <h2>maximal_ideal_point</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem maximal_ideal_point {n : ℕ} (M : Ideal (Poly n k))
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\Nullstellensatz.lean:221</div>
+        </div>
+        <div class="theorem-card">
+            <h2>zariski_topology_closed</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem zariski_topology_closed {n : ℕ} :
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\Nullstellensatz.lean:246</div>
+        </div>
+        <div class="theorem-card">
+            <h2>coordinate_ring_universal</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem coordinate_ring_universal {n : ℕ} (X : Set (Fin n → k))
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\Nullstellensatz.lean:268</div>
+        </div>
+        <div class="theorem-card">
+            <h2>countable_iUnion_finite</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem countable_iUnion_finite {α : Type*} {f : ℕ → Set α}
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\InfinitePigeonhole.lean:212</div>
+        </div>
+        <div class="theorem-card">
+            <h2>infinite_ramsey_simple</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem infinite_ramsey_simple {k : ℕ} {C : Type*} [Finite C]
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\InfinitePigeonhole.lean:226</div>
+        </div>
+        <div class="theorem-card">
+            <h2>monotone_subsequence_exists</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem monotone_subsequence_exists {x : ℕ → ℝ} :
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\InfinitePigeonhole.lean:289</div>
+        </div>
+        <div class="theorem-card">
+            <h2>green_rectangle</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem green_rectangle (P Q : ℝ × ℝ → ℝ)
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\GreenTheorem.lean:140</div>
+        </div>
+        <div class="theorem-card">
+            <h2>green_x_simple</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem green_x_simple (P Q : ℝ × ℝ → ℝ)
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\GreenTheorem.lean:156</div>
+        </div>
+        <div class="theorem-card">
+            <h2>green_theorem</h2>
+            <span class="status-sorry">⚠️ sorry</span>
+            <div class="code-block">
+                theorem green_theorem (P Q : ℝ × ℝ → ℝ)
+            </div>
+            <div class="meta">来源: docs\09-形式化证明\Lean4\GreenTheorem.lean:170</div>
+        </div>
+    </div>
+</body>
+</html>

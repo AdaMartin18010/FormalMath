@@ -5,6 +5,10 @@
 /* ==================== KaTeX Styles ==================== */
 @import 'katex/dist/katex.min.css';
 
+/* ==================== Internationalization & Accessibility ==================== */
+@import './styles/rtl.css';
+@import './styles/accessibility.css';
+
 /* ==================== Base Styles ==================== */
 
 * {

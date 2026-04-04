@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormalMath API 文档</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+               line-height: 1.6; color: #333; background: #f5f7fa; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                  color: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .api-card { background: white; padding: 25px; border-radius: 12px; 
+                    margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .api-card h2 { color: #667eea; margin-bottom: 15px; }
+        .api-card .signature { background: #f8f9fa; padding: 15px; border-radius: 6px; 
+                               font-family: 'Consolas', monospace; margin: 10px 0; }
+        .api-card .docstring { color: #555; margin-top: 15px; }
+        .badge { display: inline-block; padding: 4px 12px; border-radius: 12px; 
+                 font-size: 0.85em; font-weight: 500; margin-right: 8px; }
+        .badge-class { background: #e3f2fd; color: #1976d2; }
+        .badge-function { background: #e8f5e9; color: #388e3c; }
+        .badge-method { background: #fff3e0; color: #f57c00; }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 FormalMath API 文档</h1>
+            <p>生成时间: 2026-04-04 13:07:41</p>
+            <p>API总数: 759</p>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>load_existing_concepts</h2>
+            <div class="signature">(filepath)</div>
+            <div class="docstring">加载现有概念数据...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>create_new_concepts</h2>
+            <div class="signature">()</div>
+            <div class="docstring">创建新增的100个概念（5个分支各20个）...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_statistics</h2>
+            <div class="signature">(all_concepts)</div>
+            <div class="docstring">生成概念统计信息...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>parse_concepts</h2>
+            <div class="signature">(yaml_file)</div>
+            <div class="docstring">解析YAML文件提取概念数据...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_visualization_data</h2>
+            <div class="signature">(concepts, metadata)</div>
+            <div class="docstring">生成可视化数据...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>get_category_group</h2>
+            <div class="signature">(category)</div>
+            <div class="docstring">获取类别的颜色组...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_mermaid_diagram</h2>
+            <div class="signature">(concepts, max_nodes = 50)</div>
+            <div class="docstring">生成Mermaid图表代码（简化版）...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_statistics_report</h2>
+            <div class="signature">(concepts, metadata)</div>
+            <div class="docstring">生成统计报告...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>load_file</h2>
+            <div class="signature">(filepath)</div>
+            <div class="docstring">加载文件内容...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>merge_concepts</h2>
+            <div class="signature">()</div>
+            <div class="docstring">合并新概念到主文件...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>extract_frontmatter</h2>
+            <div class="signature">(content: str)</div>
+            <div class="docstring">提取YAML frontmatter...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>get_msc_info</h2>
+            <div class="signature">(frontmatter)</div>
+            <div class="docstring">提取MSC编码信息...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>scan_concepts</h2>
+            <div class="signature">()</div>
+            <div class="docstring">扫描所有概念文档...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>validate_msc_code</h2>
+            <div class="signature">(code: str)</div>
+            <div class="docstring">验证MSC编码格式...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>check_classification_accuracy</h2>
+            <div class="signature">(concepts) -> Dict</div>
+            <div class="docstring">检查MSC分类准确性...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_correction_plan</h2>
+            <div class="signature">(check_results: Dict)</div>
+            <div class="docstring">生成分类修正计划...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>create_msc_reverse_index</h2>
+            <div class="signature">(concepts) -> Dict</div>
+            <div class="docstring">创建MSC到概念的反向索引...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_hierarchy_data</h2>
+            <div class="signature">(reverse_index: Dict) -> Dict</div>
+            <div class="docstring">生成MSC层级可视化数据...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_report</h2>
+            <div class="signature">(concepts, check_results: Dict, corrections, reverse_index: Dict, hierarchy: Dict) -> str</div>
+            <div class="docstring">生成MSC对齐报告...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+            <div class="docstring">主函数...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>has_msc</h2>
+            <div class="signature">(content)</div>
+            <div class="docstring">检查文件是否已有MSC编码...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>detect_msc_from_filename</h2>
+            <div class="signature">(filename, content)</div>
+            <div class="docstring">根据文件名和内容检测MSC编码...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>add_msc_to_frontmatter</h2>
+            <div class="signature">(content, primary, secondary)</div>
+            <div class="docstring">添加MSC编码到frontmatter...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>process_file</h2>
+            <div class="signature">(filepath)</div>
+            <div class="docstring">处理单个文件...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+            <div class="docstring">主函数...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>detect_msc_from_content</h2>
+            <div class="signature">(filepath, content, branch)</div>
+            <div class="docstring">根据文件内容检测MSC编码...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>has_frontmatter</h2>
+            <div class="signature">(content)</div>
+            <div class="docstring">检查文件是否已有frontmatter...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>has_msc</h2>
+            <div class="signature">(content)</div>
+            <div class="docstring">检查文件是否已有MSC编码...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>add_msc_to_frontmatter</h2>
+            <div class="signature">(content, primary, secondary)</div>
+            <div class="docstring">添加MSC编码到frontmatter...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>process_file</h2>
+            <div class="signature">(filepath, branch)</div>
+            <div class="docstring">处理单个文件...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+            <div class="docstring">主函数...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>has_msc_encoding</h2>
+            <div class="signature">(file_path)</div>
+            <div class="docstring">检查文件是否已有MSC编码...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>determine_msc_code</h2>
+            <div class="signature">(file_path, relative_path)</div>
+            <div class="docstring">根据文件路径确定MSC编码...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>add_msc_to_file</h2>
+            <div class="signature">(file_path, msc_code)</div>
+            <div class="docstring">向文件添加MSC编码...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>scan_and_process</h2>
+            <div class="signature">(base_dir)</div>
+            <div class="docstring">扫描并处理所有md文件...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>print_report</h2>
+            <div class="signature">(stats)</div>
+            <div class="docstring">打印处理报告...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>has_msc_encoding</h2>
+            <div class="signature">(file_path)</div>
+            <div class="docstring">检查文件是否已有MSC编码...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>get_directory_category</h2>
+            <div class="signature">(relative_path)</div>
+            <div class="docstring">根据路径获取目录分类...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>scan_and_report</h2>
+            <div class="signature">(base_dir)</div>
+            <div class="docstring">扫描并生成详细报告...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>print_report</h2>
+            <div class="signature">(stats)</div>
+            <div class="docstring">打印并保存报告...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>load_concepts</h2>
+            <div class="signature">(yaml_path: str)</div>
+            <div class="docstring">加载概念列表...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_multilang_table</h2>
+            <div class="signature">(concepts)</div>
+            <div class="docstring">生成多语言对照表...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_json_output</h2>
+            <div class="signature">(table, output_path: str)</div>
+            <div class="docstring">生成JSON输出...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_markdown_report</h2>
+            <div class="signature">(table, output_path: str)</div>
+            <div class="docstring">生成Markdown报告...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>update_yaml_with_multilang</h2>
+            <div class="signature">(yaml_path: str, table, output_path: str)</div>
+            <div class="docstring">更新YAML文件添加多语言字段...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+            <div class="docstring">主函数...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>load_concepts</h2>
+            <div class="signature">(yaml_path: str)</div>
+            <div class="docstring">加载概念列表...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_multilang_table</h2>
+            <div class="signature">(concepts)</div>
+            <div class="docstring">生成多语言对照表...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_json_output</h2>
+            <div class="signature">(table, output_path: str)</div>
+            <div class="docstring">生成JSON输出...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_markdown_report</h2>
+            <div class="signature">(table, output_path: str)</div>
+            <div class="docstring">生成Markdown报告...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>update_yaml_with_multilang</h2>
+            <div class="signature">(yaml_path: str, table, output_path: str)</div>
+            <div class="docstring">更新YAML文件添加多语言字段...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+            <div class="docstring">主函数...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>load_concepts</h2>
+            <div class="signature">(yaml_path: str)</div>
+            <div class="docstring">加载概念列表...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_multilang_table</h2>
+            <div class="signature">(concepts)</div>
+            <div class="docstring">生成多语言对照表...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_json_output</h2>
+            <div class="signature">(table, output_path: str)</div>
+            <div class="docstring">生成JSON输出...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>generate_markdown_report</h2>
+            <div class="signature">(table, output_path: str)</div>
+            <div class="docstring">生成Markdown报告...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>update_yaml_with_multilang</h2>
+            <div class="signature">(yaml_path: str, table, output_path: str)</div>
+            <div class="docstring">更新YAML文件添加多语言字段...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+            <div class="docstring">主函数...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-class">class</span>
+            <h2>MultilangInfo</h2>
+            <div class="docstring">多语言信息...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-class">class</span>
+            <h2>WikipediaMultilangAligner</h2>
+            <div class="docstring">Wikipedia多语言对齐器...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-dunder_method">dunder_method</span>
+            <h2>WikipediaMultilangAligner.__init__</h2>
+            <div class="signature">(self, yaml_path: str, output_dir: str)</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>WikipediaMultilangAligner.fetch_wikipedia_data</h2>
+            <div class="signature">(self, title: str, lang: str)</div>
+            <div class="docstring">获取Wikipedia页面数据...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>WikipediaMultilangAligner.get_concept_english_title</h2>
+            <div class="signature">(self, concept_id: str, name: str) -> str</div>
+            <div class="docstring">获取概念的英文标题...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>WikipediaMultilangAligner.find_langlink</h2>
+            <div class="signature">(self, langlinks, target_lang: str)</div>
+            <div class="docstring">在langlinks中查找指定语言的链接...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>WikipediaMultilangAligner.align_concept</h2>
+            <div class="signature">(self, concept_id: str, name: str) -> MultilangInfo</div>
+            <div class="docstring">对齐单个概念的多语言版本...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>WikipediaMultilangAligner.process_all_concepts</h2>
+            <div class="signature">(self)</div>
+            <div class="docstring">处理所有概念...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>WikipediaMultilangAligner.generate_json_table</h2>
+            <div class="signature">(self)</div>
+            <div class="docstring">生成多语言对照表JSON...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>WikipediaMultilangAligner.generate_markdown_report</h2>
+            <div class="signature">(self)</div>
+            <div class="docstring">生成Markdown报告...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>WikipediaMultilangAligner.update_yaml_with_multilang</h2>
+            <div class="signature">(self)</div>
+            <div class="docstring">更新YAML文件添加多语言字段...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>WikipediaMultilangAligner.run</h2>
+            <div class="signature">(self)</div>
+            <div class="docstring">执行完整流程...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-class">class</span>
+            <h2>MultilangInfo</h2>
+            <div class="docstring">多语言信息...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-class">class</span>
+            <h2>DemoAligner</h2>
+            <div class="docstring">演示版本对齐器...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-dunder_method">dunder_method</span>
+            <h2>DemoAligner.__init__</h2>
+            <div class="signature">(self, yaml_path: str, output_dir: str, limit: int = 10)</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>DemoAligner.fetch_wikipedia_data</h2>
+            <div class="signature">(self, title: str, lang: str)</div>
+            <div class="docstring">获取Wikipedia页面数据...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>DemoAligner.find_langlink</h2>
+            <div class="signature">(self, langlinks, target_lang: str)</div>
+            <div class="docstring">查找语言链接...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>DemoAligner.align_concept</h2>
+            <div class="signature">(self, concept_id: str, name: str) -> MultilangInfo</div>
+            <div class="docstring">对齐概念...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>DemoAligner.run</h2>
+            <div class="signature">(self)</div>
+            <div class="docstring">执行演示...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>DemoAligner.generate_outputs</h2>
+            <div class="signature">(self)</div>
+            <div class="docstring">生成输出文件...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>should_exclude</h2>
+            <div class="signature">(filepath)</div>
+            <div class="docstring">检查文件是否应该被排除...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>fix_symbols_in_file</h2>
+            <div class="signature">(filepath, backup = True)</div>
+            <div class="docstring">修正单个文件中的符号...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-function">function</span>
+            <h2>main</h2>
+            <div class="signature">()</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-class">class</span>
+            <h2>AssessmentConfig</h2>
+            <div class="docstring">评估配置...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-class">class</span>
+            <h2>AssessmentSession</h2>
+            <div class="docstring">评估会话...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>AssessmentSession.complete</h2>
+            <div class="signature">(self, results)</div>
+            <div class="docstring">完成评估会话...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>AssessmentSession.to_dict</h2>
+            <div class="signature">(self)</div>
+            <div class="docstring">转换为字典...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-class">class</span>
+            <h2>AssessmentResult</h2>
+            <div class="docstring">评估结果...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>AssessmentResult.to_dict</h2>
+            <div class="signature">(self)</div>
+            <div class="docstring">转换为字典...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-class">class</span>
+            <h2>FormalMathAssessmentSystem</h2>
+            <div class="docstring">FormalMath 评估系统核心类
+
+整合所有评估功能，提供统一的评估接口
+
+Attributes:
+    config: 评估配置
+    scoring_engine: 评分引擎
+    feedback_generator: 反馈生成器
+    report_generator: 报告生成器
+    sessions: 活跃评估会话...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-dunder_method">dunder_method</span>
+            <h2>FormalMathAssessmentSystem.__init__</h2>
+            <div class="signature">(self, config = None)</div>
+            <div class="docstring">初始化评估系统
+
+Args:
+    config: 评估配置，如果为None则使用默认配置...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>FormalMathAssessmentSystem.register_learner</h2>
+            <div class="signature">(self, learner_id: str, name: str = ) -> LearnerProfile</div>
+            <div class="docstring">注册学习者
+
+Args:
+    learner_id: 学习者ID
+    name: 学习者姓名
+
+Returns:
+    学习者档案...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>FormalMathAssessmentSystem.get_learner_profile</h2>
+            <div class="signature">(self, learner_id: str)</div>
+            <div class="docstring">获取学习者档案
+
+Args:
+    learner_id: 学习者ID
+
+Returns:
+    学习者档案，如果不存在则返回None...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>FormalMathAssessmentSystem.update_learner_ability</h2>
+            <div class="signature">(self, learner_id: str, ability_profile: MathematicalAbilityProfile) -> bool</div>
+            <div class="docstring">更新学习者能力档案
+
+Args:
+    learner_id: 学习者ID
+    ability_profile: 能力档案
+
+Returns:
+    是否更新成功...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>FormalMathAssessmentSystem.update_learner_knowledge</h2>
+            <div class="signature">(self, learner_id: str, concept: str, mastery: float) -> bool</div>
+            <div class="docstring">更新学习者知识状态
+
+Args:
+    learner_id: 学习者ID
+    concept: 概念名称
+    mastery: 掌握度 (0-100)
+
+Returns:
+    是否更新成功...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>FormalMathAssessmentSystem.record_learning_activity</h2>
+            <div class="signature">(self, learner_id: str, activity_data) -> bool</div>
+            <div class="docstring">记录学习活动
+
+Args:
+    learner_id: 学习者ID
+    activity_data: 活动数据
+
+Returns:
+    是否记录成功...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>FormalMathAssessmentSystem.start_assessment</h2>
+            <div class="signature">(self, learner_id: str, assessment_type: AssessmentType, data = None) -> AssessmentSession</div>
+            <div class="docstring">开始评估会话
+
+Args:
+    learner_id: 学习者ID
+    assessment_type: 评估类型
+    data: 附加数据
+
+Returns:
+    评估会话...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>FormalMathAssessmentSystem.end_assessment</h2>
+            <div class="signature">(self, session_id: str, results)</div>
+            <div class="docstring">结束评估会话
+
+Args:
+    session_id: 会话ID
+    results: 评估结果
+
+Returns:
+    评估会话，如果不存在则返回None...</div>
+        </div>
+        <div class="api-card">
+            <span class="badge badge-method">method</span>
+            <h2>FormalMathAssessmentSystem.get_session</h2>
+            <div class="signature">(self, session_id: str)</div>
+            <div class="docstring">获取评估会话...</div>
+        </div>
+    </div>
+</body>
+</html>

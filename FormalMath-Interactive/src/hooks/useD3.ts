@@ -277,3 +277,24 @@ export function useD3Tree(
 
   return { svgRef };
 }
+
+/**
+ * 通用D3 Hook
+ * 用于在组件中创建和更新D3可视化
+ */
+export function useD3<T>(
+  renderFn: (svg: d3.Selection<SVGSVGElement, unknown, null, undefined>) => void,
+  dependencies: React.DependencyList
+): React.RefObject<SVGSVGElement> {
+  const svgRef = useRef<SVGSVGElement>(null);
+
+  useEffect(() => {
+    if (!svgRef.current) return;
+    
+    const svg = d3.select(svgRef.current);
+    renderFn(svg);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, dependencies);
+
+  return svgRef;
+}

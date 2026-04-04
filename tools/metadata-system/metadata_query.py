@@ -343,7 +343,7 @@ class MetadataQuery:
             'by_category': {},
             'by_difficulty': {},
             'by_status': {},
-            'by_msc': {},
+            'by_msc_primary': {},
             'by_depth_level': {},
         }
         

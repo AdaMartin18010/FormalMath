@@ -1,0 +1,347 @@
+/**
+ * WCAG 2.1 无障碍样式
+ * 包含高对比度、焦点可见性、减少动画等
+ */
+
+/* ==================== 焦点可见性 (WCAG 2.4.7) ==================== */
+
+/* 键盘导航的焦点样式 */
+*:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* 确保焦点在视口内 */
+*:focus-visible:not(:focus-within) {
+  scroll-margin-top: 100px;
+  scroll-margin-bottom: 100px;
+}
+
+/* 鼠标点击不显示焦点 */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ==================== 高对比度模式 ==================== */
+
+/* 高对比度基础样式 */
+.high-contrast,
+.high-contrast-mode {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0f0f0;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --border-color: #000000;
+  --accent-color: #0000ff;
+  --error-color: #ff0000;
+  --success-color: #008000;
+  --warning-color: #ff8c00;
+}
+
+.high-contrast.dark,
+.high-contrast-mode.dark {
+  --bg-primary: #000000;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --border-color: #ffffff;
+  --accent-color: #ffff00;
+  --error-color: #ff6b6b;
+  --success-color: #51cf66;
+  --warning-color: #ffd43b;
+}
+
+/* 高对比度元素样式 */
+.high-contrast .high-contrast-bg {
+  background-color: var(--bg-primary) !important;
+}
+
+.high-contrast .high-contrast-text {
+  color: var(--text-primary) !important;
+}
+
+.high-contrast .high-contrast-border {
+  border: 2px solid var(--border-color) !important;
+}
+
+.high-contrast button,
+.high-contrast a {
+  border: 2px solid transparent;
+}
+
+.high-contrast button:focus-visible,
+.high-contrast a:focus-visible {
+  border-color: var(--accent-color);
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* 高对比度表单元素 */
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+}
+
+.high-contrast input:focus,
+.high-contrast textarea:focus,
+.high-contrast select:focus {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* ==================== 减少动画 (WCAG 2.2.2) ==================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 减少动画类 */
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+/* ==================== 屏幕阅读器专用 ==================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 仅在焦点时显示 */
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ==================== 文本对比度增强 ==================== */
+
+/* 确保文本对比度符合WCAG AA标准（4.5:1） */
+.text-contrast-high {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.text-contrast-high-dark {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* 大文本对比度（3:1） */
+.text-contrast-large {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* ==================== 触摸目标尺寸 (WCAG 2.5.5) ==================== */
+
+/* 最小触摸目标尺寸 44x44px */
+.touch-target-min {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* 推荐触摸目标尺寸 */
+.touch-target {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+/* ==================== 错误识别 (WCAG 3.3.1) ==================== */
+
+/* 错误状态样式 */
+.error-field {
+  border: 2px solid #dc2626 !important;
+  background-color: #fef2f2;
+}
+
+.error-message {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.error-icon::before {
+  content: "⚠ ";
+}
+
+/* 成功状态样式 */
+.success-field {
+  border: 2px solid #16a34a !important;
+  background-color: #f0fdf4;
+}
+
+/* ==================== 标签关联 ==================== */
+
+/* 确保标签可见且关联 */
+label.required::after {
+  content: " *";
+  color: #dc2626;
+}
+
+label .help-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: normal;
+}
+
+/* ==================== 状态指示器 ==================== */
+
+/* 加载状态 */
+[aria-busy="true"] {
+  position: relative;
+}
+
+[aria-busy="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 禁用状态 */
+[aria-disabled="true"],
+[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 隐藏内容 */
+[aria-hidden="true"] {
+  /* 保持布局但隐藏内容 */
+}
+
+/* ==================== 打印样式 ==================== */
+
+@media print {
+  /* 隐藏非必要元素 */
+  .no-print,
+  nav,
+  .sidebar,
+  .modal-backdrop {
+    display: none !important;
+  }
+
+  /* 确保背景打印 */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 显示链接URL */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.875rem;
+    color: #666;
+  }
+
+  /* 确保对比度 */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* ==================== 响应式无障碍 ==================== */
+
+/* 大字体支持 */
+@media (min-font-size: 20px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+/* 低视力支持 */
+@media (prefers-contrast: more) {
+  * {
+    border-color: currentColor !important;
+  }
+}
+
+/* 色盲支持 */
+.color-blind-mode {
+  /* 不仅依赖颜色传递信息 */
+}
+
+.color-blind-mode .error::before,
+.color-blind-mode .success::before,
+.color-blind-mode .warning::before {
+  content: "⚠ ";
+}
+
+/* ==================== 焦点顺序 ==================== */
+
+/* 逻辑Tab顺序 */
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+/* 可聚焦元素 */
+[tabindex="0"] {
+  cursor: pointer;
+}
+
+/* ==================== 实时区域 ==================== */
+
+[aria-live="polite"],
+[aria-live="assertive"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ==================== 跳转链接样式 ==================== */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}

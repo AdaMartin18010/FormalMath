@@ -1,0 +1,247 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-04T13:08:00.796520",
+    "total_terms": 47,
+    "languages": [
+      "zh",
+      "en"
+    ]
+  },
+  "translations": [
+    {
+      "zh": "代数几何",
+      "en": "Algebraic Geometry",
+      "category": "其他"
+    },
+    {
+      "zh": "例子",
+      "en": "Example",
+      "category": "其他"
+    },
+    {
+      "zh": "前言",
+      "en": "Preface",
+      "category": "导航"
+    },
+    {
+      "zh": "参考文献",
+      "en": "References",
+      "category": "导航"
+    },
+    {
+      "zh": "可微",
+      "en": "Differentiable",
+      "category": "其他"
+    },
+    {
+      "zh": "可积",
+      "en": "Integrable",
+      "category": "其他"
+    },
+    {
+      "zh": "同态",
+      "en": "Homomorphism",
+      "category": "代数学"
+    },
+    {
+      "zh": "同构",
+      "en": "Isomorphism",
+      "category": "代数学"
+    },
+    {
+      "zh": "同胚",
+      "en": "Homeomorphism",
+      "category": "其他"
+    },
+    {
+      "zh": "向量空间",
+      "en": "Vector Space",
+      "category": "其他"
+    },
+    {
+      "zh": "命题",
+      "en": "Proposition",
+      "category": "其他"
+    },
+    {
+      "zh": "域",
+      "en": "Field",
+      "category": "代数学"
+    },
+    {
+      "zh": "域论",
+      "en": "Field Theory",
+      "category": "基础概念"
+    },
+    {
+      "zh": "复分析",
+      "en": "Complex Analysis",
+      "category": "分析学"
+    },
+    {
+      "zh": "定义",
+      "en": "Definition",
+      "category": "其他"
+    },
+    {
+      "zh": "定理",
+      "en": "Theorem",
+      "category": "其他"
+    },
+    {
+      "zh": "实分析",
+      "en": "Real Analysis",
+      "category": "分析学"
+    },
+    {
+      "zh": "开集",
+      "en": "Open Set",
+      "category": "其他"
+    },
+    {
+      "zh": "引理",
+      "en": "Lemma",
+      "category": "其他"
+    },
+    {
+      "zh": "引言",
+      "en": "Introduction",
+      "category": "其他"
+    },
+    {
+      "zh": "微分几何",
+      "en": "Differential Geometry",
+      "category": "其他"
+    },
+    {
+      "zh": "总结",
+      "en": "Summary",
+      "category": "导航"
+    },
+    {
+      "zh": "拓扑学",
+      "en": "Topology",
+      "category": "基础概念"
+    },
+    {
+      "zh": "推论",
+      "en": "Corollary",
+      "category": "其他"
+    },
+    {
+      "zh": "收敛",
+      "en": "Convergent",
+      "category": "其他"
+    },
+    {
+      "zh": "数理逻辑",
+      "en": "Mathematical Logic",
+      "category": "其他"
+    },
+    {
+      "zh": "数论",
+      "en": "Number Theory",
+      "category": "其他"
+    },
+    {
+      "zh": "极限",
+      "en": "Limit",
+      "category": "分析学"
+    },
+    {
+      "zh": "概率论",
+      "en": "Probability Theory",
+      "category": "其他"
+    },
+    {
+      "zh": "模",
+      "en": "Module",
+      "category": "代数学"
+    },
+    {
+      "zh": "泛函分析",
+      "en": "Functional Analysis",
+      "category": "分析学"
+    },
+    {
+      "zh": "注记",
+      "en": "Remark",
+      "category": "其他"
+    },
+    {
+      "zh": "环",
+      "en": "Ring",
+      "category": "代数学"
+    },
+    {
+      "zh": "环论",
+      "en": "Ring Theory",
+      "category": "基础概念"
+    },
+    {
+      "zh": "目录",
+      "en": "Table of Contents",
+      "category": "导航"
+    },
+    {
+      "zh": "索引",
+      "en": "Index",
+      "category": "其他"
+    },
+    {
+      "zh": "紧致",
+      "en": "Compact",
+      "category": "其他"
+    },
+    {
+      "zh": "级数",
+      "en": "Series",
+      "category": "其他"
+    },
+    {
+      "zh": "线性映射",
+      "en": "Linear Map",
+      "category": "其他"
+    },
+    {
+      "zh": "群",
+      "en": "Group",
+      "category": "代数学"
+    },
+    {
+      "zh": "群论",
+      "en": "Group Theory",
+      "category": "基础概念"
+    },
+    {
+      "zh": "证明",
+      "en": "Proof",
+      "category": "其他"
+    },
+    {
+      "zh": "连续",
+      "en": "Continuous",
+      "category": "分析学"
+    },
+    {
+      "zh": "连通",
+      "en": "Connected",
+      "category": "其他"
+    },
+    {
+      "zh": "闭集",
+      "en": "Closed Set",
+      "category": "其他"
+    },
+    {
+      "zh": "附录",
+      "en": "Appendix",
+      "category": "其他"
+    },
+    {
+      "zh": "集合论",
+      "en": "Set Theory",
+      "category": "基础概念"
+    }
+  ]
+}

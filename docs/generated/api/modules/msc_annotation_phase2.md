@@ -1,0 +1,65 @@
+# msc_annotation_phase2
+
+**源文件**: `tools\msc_annotation_phase2.py`
+
+## 函数
+
+### has_msc
+
+```python
+def has_msc(content)
+```
+
+检查文件是否已有MSC编码
+
+**参数**:
+
+- `content`
+
+### detect_msc_from_filename
+
+```python
+def detect_msc_from_filename(filename, content)
+```
+
+根据文件名和内容检测MSC编码
+
+**参数**:
+
+- `filename`
+- `content`
+
+### add_msc_to_frontmatter
+
+```python
+def add_msc_to_frontmatter(content, primary, secondary)
+```
+
+添加MSC编码到frontmatter
+
+**参数**:
+
+- `content`
+- `primary`
+- `secondary`
+
+### process_file
+
+```python
+def process_file(filepath)
+```
+
+处理单个文件
+
+**参数**:
+
+- `filepath`
+
+### main
+
+```python
+def main()
+```
+
+主函数
+

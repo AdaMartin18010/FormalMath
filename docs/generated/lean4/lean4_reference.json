@@ -1,0 +1,2157 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-04T13:07:54.808835",
+    "version": "1.0.0",
+    "theorem_count": 43,
+    "definition_count": 209
+  },
+  "theorems": [
+    {
+      "name": "fermat_coprime",
+      "statement": "{m n : ℕ} (hne : m ≠ n) : Nat.Coprime (F_m) (F_n)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitudeOfPrimes.lean",
+      "line_number": 153,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "prime_gaps_unbounded",
+      "statement": ": ∀ (N : ℕ), ∃ (n : ℕ), nthPrime (n + 1) - nthPrime n > N",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitudeOfPrimes.lean",
+      "line_number": 317,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "no_retraction_sphere",
+      "statement": "{n : ℕ} (hn : n > 0) :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\BrouwerFixedPoint.lean",
+      "line_number": 109,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "kakutani_fixed_point",
+      "statement": "{n : ℕ} {X : Set (EuclideanSpace ℝ (Fin n))}",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\BrouwerFixedPoint.lean",
+      "line_number": 194,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "poly_eq_zero_of_degree_lt_card_roots",
+      "statement": "{R : Type*} [Field R] [DecidableEq R]",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\07-拉格朗日插值.lean",
+      "line_number": 215,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "fundamental_theorem_of_algebra",
+      "statement": "(P : Polynomial ℂ) (hdeg : P.degree > 0) :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\FundamentalTheoremAlgebra.lean",
+      "line_number": 75,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "real_polynomial_factorization",
+      "statement": "(P : Polynomial ℝ) (hdeg : P.degree > 0) :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\FundamentalTheoremAlgebra.lean",
+      "line_number": 257,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "weak_nullstellensatz",
+      "statement": "{n : ℕ} (I : Ideal (Poly n k))",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 135,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "weak_nullstellensatz",
+      "statement": "' {n : ℕ} (I : Ideal (Poly n k)) :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 155,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "strong_nullstellensatz",
+      "statement": "{n : ℕ} (I : Ideal (Poly n k)) :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 188,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "radical_ideal_bijection",
+      "statement": "{n : ℕ} :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 206,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "maximal_ideal_point",
+      "statement": "{n : ℕ} (M : Ideal (Poly n k))",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 221,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "zariski_topology_closed",
+      "statement": "{n : ℕ} :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 246,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "coordinate_ring_universal",
+      "statement": "{n : ℕ} (X : Set (Fin n → k))",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 268,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "countable_iUnion_finite",
+      "statement": "{α : Type*} {f : ℕ → Set α}",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitePigeonhole.lean",
+      "line_number": 212,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "infinite_ramsey_simple",
+      "statement": "{k : ℕ} {C : Type*} [Finite C]",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitePigeonhole.lean",
+      "line_number": 226,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "monotone_subsequence_exists",
+      "statement": "{x : ℕ → ℝ} :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitePigeonhole.lean",
+      "line_number": 289,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "green_rectangle",
+      "statement": "(P Q : ℝ × ℝ → ℝ)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 140,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "green_x_simple",
+      "statement": "(P Q : ℝ × ℝ → ℝ)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 156,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "green_theorem",
+      "statement": "(P Q : ℝ × ℝ → ℝ)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 170,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "area_by_line_integral",
+      "statement": "(D : Set (ℝ × ℝ))",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 199,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "green_divergence_form",
+      "statement": "(F : ℝ × ℝ → ℝ × ℝ)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 221,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "morse_lemma",
+      "statement": "(f : C^∞⟮M, 𝓡 1⟯) (p : M)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 116,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "topology_change",
+      "statement": "(f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 138,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "weak_morse_inequality",
+      "statement": "(f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 177,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "strong_morse_inequality",
+      "statement": "(f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 184,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "euler_characteristic_formula",
+      "statement": "(f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f) :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 192,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "reeb_theorem",
+      "statement": "(f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f) :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 205,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "two_critical_points_sphere",
+      "statement": "(f : C^∞⟮M, 𝓡 1⟯) (hf : IsMorseFunction f)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 221,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "noetherian_iff_acc",
+      "statement": "{R : Type u} [CommRing R] :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 76,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "lead_coeff_ideal_mono",
+      "statement": "{R : Type u} [CommRing R]",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 124,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "hilbert_basis_theorem_explicit",
+      "statement": "{R : Type u} [CommRing R]",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 139,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "vanishing_ideal_finitely_generated",
+      "statement": "{k : Type u} [Field k]",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 201,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "noetherian_of_polynomial_noetherian",
+      "statement": "{R : Type u} [CommRing R]",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 222,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "divergence_cuboid",
+      "statement": "(F : VectorField3D)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 138,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "divergence_z_simple",
+      "statement": "(F : VectorField3D)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 153,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "divergence_theorem",
+      "statement": "(F : VectorField3D)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 170,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "volume_by_flux",
+      "statement": "(V : Set (ℝ × ℝ × ℝ))",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 197,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "divergence_meaning",
+      "statement": "(F : VectorField3D)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 207,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "green_first_identity",
+      "statement": "(u v : (ℝ × ℝ × ℝ) → ℝ)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 230,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "green_second_identity",
+      "statement": "(u v : (ℝ × ℝ × ℝ) → ℝ)",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 242,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "carleson_theorem",
+      "statement": "{f : ℝ → ℂ} (hf : Function.Periodic f (2 * π))",
+      "proof": "sorry",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 262,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    },
+    {
+      "name": "fast_mod_exp_correct",
+      "statement": "{a p e : ℕ} [Fact p.Prime] (hpa : ¬p ∣ a) :",
+      "proof": "sorry",
+      "file_path": "docs\\09-形式化证明\\Lean4\\FermatLittleTheorem.lean",
+      "line_number": 247,
+      "docstring": "",
+      "tags": [],
+      "is_sorry": true,
+      "dependencies": []
+    }
+  ],
+  "definitions": [
+    {
+      "name": "IsPrime",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitudeOfPrimes.lean",
+      "line_number": 55,
+      "docstring": ""
+    },
+    {
+      "name": "Primes",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitudeOfPrimes.lean",
+      "line_number": 59,
+      "docstring": ""
+    },
+    {
+      "name": "primeCounting",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitudeOfPrimes.lean",
+      "line_number": 62,
+      "docstring": ""
+    },
+    {
+      "name": "fermatNumber",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitudeOfPrimes.lean",
+      "line_number": 148,
+      "docstring": ""
+    },
+    {
+      "name": "IsTwinPrime",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitudeOfPrimes.lean",
+      "line_number": 410,
+      "docstring": ""
+    },
+    {
+      "name": "TwinPrimes",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\InfinitudeOfPrimes.lean",
+      "line_number": 414,
+      "docstring": ""
+    },
+    {
+      "name": "Chart",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 40,
+      "docstring": ""
+    },
+    {
+      "name": "SmoothCompatible",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 49,
+      "docstring": ""
+    },
+    {
+      "name": "SmoothAtlas",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 60,
+      "docstring": ""
+    },
+    {
+      "name": "SmoothManifold",
+      "type": "class",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 70,
+      "docstring": ""
+    },
+    {
+      "name": "SmoothFunction",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 93,
+      "docstring": ""
+    },
+    {
+      "name": "SmoothMap",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 102,
+      "docstring": ""
+    },
+    {
+      "name": "Derivation",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 113,
+      "docstring": ""
+    },
+    {
+      "name": "TangentSpace",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 123,
+      "docstring": ""
+    },
+    {
+      "name": "Differential",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 163,
+      "docstring": ""
+    },
+    {
+      "name": "IsSubmanifold",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 191,
+      "docstring": ""
+    },
+    {
+      "name": "RegularValue",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 216,
+      "docstring": ""
+    },
+    {
+      "name": "SurfaceClassification",
+      "type": "inductive",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ManifoldDefinition.lean",
+      "line_number": 240,
+      "docstring": ""
+    },
+    {
+      "name": "DifferentialForms",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\DeRhamCohomology.lean",
+      "line_number": 46,
+      "docstring": ""
+    },
+    {
+      "name": "ExteriorDerivative",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\DeRhamCohomology.lean",
+      "line_number": 64,
+      "docstring": ""
+    },
+    {
+      "name": "IsClosed",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\DeRhamCohomology.lean",
+      "line_number": 88,
+      "docstring": ""
+    },
+    {
+      "name": "IsExact",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\DeRhamCohomology.lean",
+      "line_number": 91,
+      "docstring": ""
+    },
+    {
+      "name": "DeRhamCohomologyGroup",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\DeRhamCohomology.lean",
+      "line_number": 111,
+      "docstring": ""
+    },
+    {
+      "name": "PullbackMap",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\DeRhamCohomology.lean",
+      "line_number": 165,
+      "docstring": ""
+    },
+    {
+      "name": "Integral",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\DeRhamCohomology.lean",
+      "line_number": 224,
+      "docstring": ""
+    },
+    {
+      "name": "CupProduct",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\DeRhamCohomology.lean",
+      "line_number": 270,
+      "docstring": ""
+    },
+    {
+      "name": "IsFreeModule",
+      "type": "class",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ModuleTheory.lean",
+      "line_number": 143,
+      "docstring": ""
+    },
+    {
+      "name": "ExactAt",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ModuleTheory.lean",
+      "line_number": 176,
+      "docstring": ""
+    },
+    {
+      "name": "ShortExactSequence",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ModuleTheory.lean",
+      "line_number": 181,
+      "docstring": ""
+    },
+    {
+      "name": "SplitSES",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ModuleTheory.lean",
+      "line_number": 194,
+      "docstring": ""
+    },
+    {
+      "name": "IsFinitelyGenerated",
+      "type": "class",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ModuleTheory.lean",
+      "line_number": 225,
+      "docstring": ""
+    },
+    {
+      "name": "IsNoetherianModule",
+      "type": "class",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ModuleTheory.lean",
+      "line_number": 233,
+      "docstring": ""
+    },
+    {
+      "name": "DualModule",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\ModuleTheory.lean",
+      "line_number": 274,
+      "docstring": ""
+    },
+    {
+      "name": "IsCauchySeq",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\08-柯西收敛准则.lean",
+      "line_number": 54,
+      "docstring": ""
+    },
+    {
+      "name": "DifferentialOperator",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\AtiyahSingerIndex.lean",
+      "line_number": 51,
+      "docstring": ""
+    },
+    {
+      "name": "EllipticOperator",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\AtiyahSingerIndex.lean",
+      "line_number": 56,
+      "docstring": ""
+    },
+    {
+      "name": "AnalyticIndex",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\AtiyahSingerIndex.lean",
+      "line_number": 61,
+      "docstring": ""
+    },
+    {
+      "name": "TopologicalIndex",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\AtiyahSingerIndex.lean",
+      "line_number": 66,
+      "docstring": ""
+    },
+    {
+      "name": "Geodesic",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GeodesicEquation.lean",
+      "line_number": 41,
+      "docstring": ""
+    },
+    {
+      "name": "ChristoffelSymbol",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GeodesicEquation.lean",
+      "line_number": 53,
+      "docstring": ""
+    },
+    {
+      "name": "ExponentialMap",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GeodesicEquation.lean",
+      "line_number": 84,
+      "docstring": ""
+    },
+    {
+      "name": "NormalCoordinates",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GeodesicEquation.lean",
+      "line_number": 105,
+      "docstring": ""
+    },
+    {
+      "name": "GeodesicallyComplete",
+      "type": "class",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GeodesicEquation.lean",
+      "line_number": 140,
+      "docstring": ""
+    },
+    {
+      "name": "JacobiField",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GeodesicEquation.lean",
+      "line_number": 170,
+      "docstring": ""
+    },
+    {
+      "name": "ConjugatePoints",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GeodesicEquation.lean",
+      "line_number": 194,
+      "docstring": ""
+    },
+    {
+      "name": "firstIsomorphism",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\06-第一同构定理.lean",
+      "line_number": 102,
+      "docstring": ""
+    },
+    {
+      "name": "SimpleGraphTest",
+      "type": "structure",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 12,
+      "docstring": ""
+    },
+    {
+      "name": "isPathTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 18,
+      "docstring": ""
+    },
+    {
+      "name": "isConnectedTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 26,
+      "docstring": ""
+    },
+    {
+      "name": "ConceptNodeTest",
+      "type": "structure",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 33,
+      "docstring": ""
+    },
+    {
+      "name": "ConceptEdgeTest",
+      "type": "structure",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 41,
+      "docstring": ""
+    },
+    {
+      "name": "ConceptGraphTest",
+      "type": "structure",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 48,
+      "docstring": ""
+    },
+    {
+      "name": "topologicalSortTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 53,
+      "docstring": ""
+    },
+    {
+      "name": "hasCycleTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 58,
+      "docstring": ""
+    },
+    {
+      "name": "prerequisitesSatisfiedTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 65,
+      "docstring": ""
+    },
+    {
+      "name": "learningPathTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Graph.lean",
+      "line_number": 73,
+      "docstring": ""
+    },
+    {
+      "name": "fixed_point_bisection",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\BrouwerFixedPoint.lean",
+      "line_number": 156,
+      "docstring": ""
+    },
+    {
+      "name": "LeviCivitaConnection",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CurvatureTensor.lean",
+      "line_number": 43,
+      "docstring": ""
+    },
+    {
+      "name": "RiemannCurvatureTensor",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CurvatureTensor.lean",
+      "line_number": 64,
+      "docstring": ""
+    },
+    {
+      "name": "CurvatureTensor04",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CurvatureTensor.lean",
+      "line_number": 97,
+      "docstring": ""
+    },
+    {
+      "name": "RicciTensor",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CurvatureTensor.lean",
+      "line_number": 134,
+      "docstring": ""
+    },
+    {
+      "name": "ScalarCurvature",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CurvatureTensor.lean",
+      "line_number": 154,
+      "docstring": ""
+    },
+    {
+      "name": "SectionalCurvature",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CurvatureTensor.lean",
+      "line_number": 164,
+      "docstring": ""
+    },
+    {
+      "name": "ConstantSectionalCurvature",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CurvatureTensor.lean",
+      "line_number": 175,
+      "docstring": ""
+    },
+    {
+      "name": "EinsteinManifold",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CurvatureTensor.lean",
+      "line_number": 206,
+      "docstring": ""
+    },
+    {
+      "name": "bisect",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\IntermediateValueTheorem.lean",
+      "line_number": 165,
+      "docstring": ""
+    },
+    {
+      "name": "bisect_intervals",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\IntermediateValueTheorem.lean",
+      "line_number": 173,
+      "docstring": ""
+    },
+    {
+      "name": "sign",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\IntermediateValueTheorem.lean",
+      "line_number": 296,
+      "docstring": ""
+    },
+    {
+      "name": "groupAxiomsTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Basic.lean",
+      "line_number": 12,
+      "docstring": ""
+    },
+    {
+      "name": "ringAxiomsTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Basic.lean",
+      "line_number": 18,
+      "docstring": ""
+    },
+    {
+      "name": "topologyTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Basic.lean",
+      "line_number": 24,
+      "docstring": ""
+    },
+    {
+      "name": "groupHomTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Basic.lean",
+      "line_number": 45,
+      "docstring": ""
+    },
+    {
+      "name": "subgroupTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Basic.lean",
+      "line_number": 49,
+      "docstring": ""
+    },
+    {
+      "name": "proofByContradictionTest",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\FormalMathTests\\Basic.lean",
+      "line_number": 60,
+      "docstring": ""
+    },
+    {
+      "name": "IsClique",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\RamseyTheorem.lean",
+      "line_number": 75,
+      "docstring": ""
+    },
+    {
+      "name": "IsIndependentSet",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\RamseyTheorem.lean",
+      "line_number": 79,
+      "docstring": ""
+    },
+    {
+      "name": "SmoothProjectiveCurve",
+      "type": "structure",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\FaltingsTheorem.lean",
+      "line_number": 76,
+      "docstring": ""
+    },
+    {
+      "name": "Genus",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\FaltingsTheorem.lean",
+      "line_number": 85,
+      "docstring": ""
+    },
+    {
+      "name": "RationalPoints",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\FaltingsTheorem.lean",
+      "line_number": 89,
+      "docstring": ""
+    },
+    {
+      "name": "IsBounded",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HeineBorel.lean",
+      "line_number": 61,
+      "docstring": ""
+    },
+    {
+      "name": "lagrangeBasis",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\07-拉格朗日插值.lean",
+      "line_number": 78,
+      "docstring": ""
+    },
+    {
+      "name": "lagrangeInterpolation",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\07-拉格朗日插值.lean",
+      "line_number": 156,
+      "docstring": ""
+    },
+    {
+      "name": "Poly",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 81,
+      "docstring": ""
+    },
+    {
+      "name": "zeroLocus",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 84,
+      "docstring": ""
+    },
+    {
+      "name": "vanishingIdeal",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 88,
+      "docstring": ""
+    },
+    {
+      "name": "radical",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 100,
+      "docstring": ""
+    },
+    {
+      "name": "IsRadical",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 114,
+      "docstring": ""
+    },
+    {
+      "name": "ZariskiClosed",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 242,
+      "docstring": ""
+    },
+    {
+      "name": "CoordinateRing",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\Nullstellensatz.lean",
+      "line_number": 264,
+      "docstring": ""
+    },
+    {
+      "name": "leftRegularRepresentation",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\CayleyTheorem.lean",
+      "line_number": 87,
+      "docstring": ""
+    },
+    {
+      "name": "rightRegularRepresentation",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\CayleyTheorem.lean",
+      "line_number": 234,
+      "docstring": ""
+    },
+    {
+      "name": "MyList",
+      "type": "inductive",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 230,
+      "docstring": ""
+    },
+    {
+      "name": "MyList",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 239,
+      "docstring": ""
+    },
+    {
+      "name": "BinTree",
+      "type": "inductive",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 249,
+      "docstring": ""
+    },
+    {
+      "name": "BinTree",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 254,
+      "docstring": ""
+    },
+    {
+      "name": "Semigroup",
+      "type": "structure",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 269,
+      "docstring": ""
+    },
+    {
+      "name": "Monoid",
+      "type": "structure",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 274,
+      "docstring": ""
+    },
+    {
+      "name": "Group",
+      "type": "structure",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 280,
+      "docstring": ""
+    },
+    {
+      "name": "MyAnd",
+      "type": "inductive",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 360,
+      "docstring": ""
+    },
+    {
+      "name": "MyOr",
+      "type": "inductive",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 363,
+      "docstring": ""
+    },
+    {
+      "name": "and_comm",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 368,
+      "docstring": ""
+    },
+    {
+      "name": "or_comm",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 371,
+      "docstring": ""
+    },
+    {
+      "name": "and_distrib",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 376,
+      "docstring": ""
+    },
+    {
+      "name": "imp_trans",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 382,
+      "docstring": ""
+    },
+    {
+      "name": "Vec",
+      "type": "inductive",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 405,
+      "docstring": ""
+    },
+    {
+      "name": "prod_unit_iso",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 410,
+      "docstring": ""
+    },
+    {
+      "name": "prod_unit_iso_inv",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 413,
+      "docstring": ""
+    },
+    {
+      "name": "Semiring",
+      "type": "structure",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\00-Mathlib4示例集\\09-类型论示例.lean",
+      "line_number": 417,
+      "docstring": ""
+    },
+    {
+      "name": "firstIsomorphism",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\FirstIsomorphismTheorem.lean",
+      "line_number": 90,
+      "docstring": ""
+    },
+    {
+      "name": "VectorField2D",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 70,
+      "docstring": ""
+    },
+    {
+      "name": "ParametricCurve",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 73,
+      "docstring": ""
+    },
+    {
+      "name": "IsSimpleClosedCurve",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 76,
+      "docstring": ""
+    },
+    {
+      "name": "IsPiecewiseSmooth",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 82,
+      "docstring": ""
+    },
+    {
+      "name": "IsCounterClockwise",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 87,
+      "docstring": ""
+    },
+    {
+      "name": "LineIntegral",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 128,
+      "docstring": ""
+    },
+    {
+      "name": "DoubleIntegral",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 132,
+      "docstring": ""
+    },
+    {
+      "name": "Curl2D",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GreenTheorem.lean",
+      "line_number": 136,
+      "docstring": ""
+    },
+    {
+      "name": "Hessian",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 81,
+      "docstring": ""
+    },
+    {
+      "name": "IsNondegenerateCriticalPoint",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 86,
+      "docstring": ""
+    },
+    {
+      "name": "IsMorseFunction",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 90,
+      "docstring": ""
+    },
+    {
+      "name": "MorseIndex",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 94,
+      "docstring": ""
+    },
+    {
+      "name": "SublevelSet",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 99,
+      "docstring": ""
+    },
+    {
+      "name": "NumCriticalPoints",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 168,
+      "docstring": ""
+    },
+    {
+      "name": "BettiNumber",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\MorseTheory.lean",
+      "line_number": 172,
+      "docstring": ""
+    },
+    {
+      "name": "IsMarkovChain",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 47,
+      "docstring": ""
+    },
+    {
+      "name": "IsTimeHomogeneous",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 57,
+      "docstring": ""
+    },
+    {
+      "name": "IsInvariantMeasure",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 68,
+      "docstring": ""
+    },
+    {
+      "name": "TransitionOperator",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 78,
+      "docstring": ""
+    },
+    {
+      "name": "IsIrreducible",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 104,
+      "docstring": ""
+    },
+    {
+      "name": "IsPositiveRecurrent",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 112,
+      "docstring": ""
+    },
+    {
+      "name": "IsAperiodic",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 153,
+      "docstring": ""
+    },
+    {
+      "name": "totalVariationDistance",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 174,
+      "docstring": ""
+    },
+    {
+      "name": "GeometricallyErgodic",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 183,
+      "docstring": ""
+    },
+    {
+      "name": "FosterLyapunovCondition",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 193,
+      "docstring": ""
+    },
+    {
+      "name": "MixingTime",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 212,
+      "docstring": ""
+    },
+    {
+      "name": "IsReversible",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MarkovChainErgodic.lean",
+      "line_number": 238,
+      "docstring": ""
+    },
+    {
+      "name": "SatisfiesACC",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 63,
+      "docstring": ""
+    },
+    {
+      "name": "IsFinitelyGenerated",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 68,
+      "docstring": ""
+    },
+    {
+      "name": "IsNoetherianRing",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 72,
+      "docstring": ""
+    },
+    {
+      "name": "LeadCoeffIdeal",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 118,
+      "docstring": ""
+    },
+    {
+      "name": "AlgebraicSet",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\HilbertBasisTheorem.lean",
+      "line_number": 196,
+      "docstring": ""
+    },
+    {
+      "name": "Lagrangian",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 42,
+      "docstring": ""
+    },
+    {
+      "name": "ActionFunctional",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 47,
+      "docstring": ""
+    },
+    {
+      "name": "Variation",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 60,
+      "docstring": ""
+    },
+    {
+      "name": "BrachistochroneProblem",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 91,
+      "docstring": ""
+    },
+    {
+      "name": "descent_time",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 97,
+      "docstring": ""
+    },
+    {
+      "name": "MinimalSurfaceEquation",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 127,
+      "docstring": ""
+    },
+    {
+      "name": "Hamiltonian",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 151,
+      "docstring": ""
+    },
+    {
+      "name": "HamiltonJacobiEquation",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 155,
+      "docstring": ""
+    },
+    {
+      "name": "LegendreTransform",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 165,
+      "docstring": ""
+    },
+    {
+      "name": "HamiltonianSystem",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 176,
+      "docstring": ""
+    },
+    {
+      "name": "HamiltonEquations",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 181,
+      "docstring": ""
+    },
+    {
+      "name": "Symmetry",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 193,
+      "docstring": ""
+    },
+    {
+      "name": "SecondVariation",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 213,
+      "docstring": ""
+    },
+    {
+      "name": "JacobiEquation",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 223,
+      "docstring": ""
+    },
+    {
+      "name": "g",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 239,
+      "docstring": ""
+    },
+    {
+      "name": "a",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 241,
+      "docstring": ""
+    },
+    {
+      "name": "EulerLagrangeSolution",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 243,
+      "docstring": ""
+    },
+    {
+      "name": "partialDerivL_u",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 248,
+      "docstring": ""
+    },
+    {
+      "name": "partialDerivL_gradu",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 252,
+      "docstring": ""
+    },
+    {
+      "name": "partialDerivH_x",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 256,
+      "docstring": ""
+    },
+    {
+      "name": "partialDerivH_p",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 259,
+      "docstring": ""
+    },
+    {
+      "name": "MeanCurvature",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\CalculusOfVariations.lean",
+      "line_number": 262,
+      "docstring": ""
+    },
+    {
+      "name": "IsMartingale",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MartingaleConvergence.lean",
+      "line_number": 41,
+      "docstring": ""
+    },
+    {
+      "name": "IsSupermartingale",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MartingaleConvergence.lean",
+      "line_number": 51,
+      "docstring": ""
+    },
+    {
+      "name": "IsSubmartingale",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MartingaleConvergence.lean",
+      "line_number": 55,
+      "docstring": ""
+    },
+    {
+      "name": "upcrossingsBefore",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MartingaleConvergence.lean",
+      "line_number": 68,
+      "docstring": ""
+    },
+    {
+      "name": "IsStoppingTime",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MartingaleConvergence.lean",
+      "line_number": 149,
+      "docstring": ""
+    },
+    {
+      "name": "IsMartingaleDifference",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\MartingaleConvergence.lean",
+      "line_number": 222,
+      "docstring": ""
+    },
+    {
+      "name": "GaussianCurvatureIntegral",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GaussBonnet.lean",
+      "line_number": 80,
+      "docstring": ""
+    },
+    {
+      "name": "EulerCharacteristicSurface",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\GaussBonnet.lean",
+      "line_number": 86,
+      "docstring": ""
+    },
+    {
+      "name": "VectorField3D",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 70,
+      "docstring": ""
+    },
+    {
+      "name": "VectorField3D",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 73,
+      "docstring": ""
+    },
+    {
+      "name": "VectorField3D",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 74,
+      "docstring": ""
+    },
+    {
+      "name": "VectorField3D",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 75,
+      "docstring": ""
+    },
+    {
+      "name": "Divergence",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 78,
+      "docstring": ""
+    },
+    {
+      "name": "ParametricSurface",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 84,
+      "docstring": ""
+    },
+    {
+      "name": "IsPiecewiseSmoothClosedSurface",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 87,
+      "docstring": ""
+    },
+    {
+      "name": "UnitOuterNormal",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 95,
+      "docstring": ""
+    },
+    {
+      "name": "SurfaceIntegral",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 100,
+      "docstring": ""
+    },
+    {
+      "name": "VolumeIntegral",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\DivergenceTheorem.lean",
+      "line_number": 106,
+      "docstring": ""
+    },
+    {
+      "name": "nthRootsOfUnity",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\10-欧拉公式.lean",
+      "line_number": 267,
+      "docstring": ""
+    },
+    {
+      "name": "main",
+      "type": "def",
+      "signature": "",
+      "file_path": "tests\\lean4\\Test\\Main.lean",
+      "line_number": 7,
+      "docstring": ""
+    },
+    {
+      "name": "taylorPolynomial",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\TaylorTheorem.lean",
+      "line_number": 45,
+      "docstring": ""
+    },
+    {
+      "name": "lagrangeRemainder",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\TaylorTheorem.lean",
+      "line_number": 57,
+      "docstring": ""
+    },
+    {
+      "name": "integralRemainder",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\TaylorTheorem.lean",
+      "line_number": 99,
+      "docstring": ""
+    },
+    {
+      "name": "HeatIVP",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HeatEquation.lean",
+      "line_number": 39,
+      "docstring": ""
+    },
+    {
+      "name": "HeatKernel",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HeatEquation.lean",
+      "line_number": 52,
+      "docstring": ""
+    },
+    {
+      "name": "heat_solution",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HeatEquation.lean",
+      "line_number": 85,
+      "docstring": ""
+    },
+    {
+      "name": "heat_energy",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HeatEquation.lean",
+      "line_number": 126,
+      "docstring": ""
+    },
+    {
+      "name": "CalderonZygmundDecomposition",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 102,
+      "docstring": ""
+    },
+    {
+      "name": "LittlewoodPaleyProjection",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 157,
+      "docstring": ""
+    },
+    {
+      "name": "LittlewoodPaleySquareFunction",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 170,
+      "docstring": ""
+    },
+    {
+      "name": "H¹",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 192,
+      "docstring": ""
+    },
+    {
+      "name": "HardySpaceH1",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 194,
+      "docstring": ""
+    },
+    {
+      "name": "Atom",
+      "type": "structure",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 206,
+      "docstring": ""
+    },
+    {
+      "name": "BMOSeminorm",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 225,
+      "docstring": ""
+    },
+    {
+      "name": "BMO",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 229,
+      "docstring": ""
+    },
+    {
+      "name": "fourier_coeff",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 274,
+      "docstring": ""
+    },
+    {
+      "name": "FourierMultiplier",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\HarmonicAnalysis.lean",
+      "line_number": 277,
+      "docstring": ""
+    },
+    {
+      "name": "UnitsZMod",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\FermatLittleTheorem.lean",
+      "line_number": 53,
+      "docstring": ""
+    },
+    {
+      "name": "fast_mod_exp",
+      "type": "def",
+      "signature": "",
+      "file_path": "docs\\09-形式化证明\\Lean4\\FermatLittleTheorem.lean",
+      "line_number": 242,
+      "docstring": ""
+    },
+    {
+      "name": "GaloisGroup",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GaloisGroup.lean",
+      "line_number": 40,
+      "docstring": ""
+    },
+    {
+      "name": "FixedField",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GaloisGroup.lean",
+      "line_number": 55,
+      "docstring": ""
+    },
+    {
+      "name": "IsGalois",
+      "type": "class",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GaloisGroup.lean",
+      "line_number": 84,
+      "docstring": ""
+    },
+    {
+      "name": "subgroupToIntermediateField",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GaloisGroup.lean",
+      "line_number": 113,
+      "docstring": ""
+    },
+    {
+      "name": "intermediateFieldToSubgroup",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GaloisGroup.lean",
+      "line_number": 116,
+      "docstring": ""
+    },
+    {
+      "name": "SeparableClosure",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GaloisGroup.lean",
+      "line_number": 193,
+      "docstring": ""
+    },
+    {
+      "name": "PolynomialGaloisGroup",
+      "type": "def",
+      "signature": "",
+      "file_path": "FormalMath-Enhanced\\lean4\\FormalMath\\FormalMath\\GaloisGroup.lean",
+      "line_number": 232,
+      "docstring": ""
+    }
+  ]
+}

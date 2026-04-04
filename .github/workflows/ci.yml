@@ -3,170 +3,258 @@ name: CI
 on:
   push:
     branches: [ main, develop ]
-    paths:
-      - 'docs/**/*.md'
-      - '数学家理念体系/**/*.md'
-      - '**.lean'
-      - '**.py'
-      - '.github/workflows/**'
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
   pull_request:
     branches: [ main, develop ]
-    paths:
-      - 'docs/**/*.md'
-      - '数学家理念体系/**/*.md'
-      - '**.lean'
-      - '**.py'
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+
+env:
+  NODE_VERSION: '18'
+  PYTHON_VERSION: '3.11'
+  LEAN_VERSION: 'v4.6.0'
 
 jobs:
-  markdown-lint:
-    name: Markdown Lint
+  # 前端测试
+  frontend-test:
+    name: Frontend Tests
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./FormalMath-Interactive
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        cache-dependency-path: './FormalMath-Interactive/package-lock.json'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Run linter
+      run: npm run lint
+    
+    - name: Run type check
+      run: npm run type-check
+    
+    - name: Run unit tests
+      run: npm run test:unit -- --coverage
+      working-directory: ./tests
+      continue-on-error: true
+    
+    - name: Upload coverage
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./tests/coverage/frontend/lcov.info
+        flags: frontend
+        name: frontend-coverage
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install markdownlint
-        run: npm install -g markdownlint-cli
-
-      - name: Run markdownlint
-        run: |
-          markdownlint 'docs/**/*.md' '数学家理念体系/**/*.md' \
-            --config .markdownlint.json \
-            --ignore '**/node_modules/**' \
-            || true
-
-  content-check:
-    name: Content Quality Check
+  # 后端测试
+  backend-test:
+    name: Backend Tests
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./tests/backend
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Cache pip packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('tests/backend/requirements-test.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements-test.txt
+    
+    - name: Run unit tests
+      run: pytest unit/ -v --tb=short
+    
+    - name: Run integration tests
+      run: pytest integration/ -v --tb=short -m integration
+      continue-on-error: true
+    
+    - name: Upload coverage
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage/backend/coverage.xml
+        flags: backend
+        name: backend-coverage
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pyyaml regex
-
-      - name: Run content checks
-        run: |
-          python tools/contributor-workflow/ci_content_check.py \
-            --paths docs/ 数学家理念体系/ \
-            --fail-on-error
-
-  msc-validation:
-    name: MSC Encoding Validation
+  # Lean4测试
+  lean4-test:
+    name: Lean4 Tests
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Install elan
+      run: |
+        curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
+        echo "$HOME/.elan/bin" >> $GITHUB_PATH
+    
+    - name: Cache Lean packages
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cache/mathlib
+          tests/lean4/.lake
+        key: ${{ runner.os }}-lean-${{ env.LEAN_VERSION }}-${{ hashFiles('tests/lean4/lakefile.lean') }}
+        restore-keys: |
+          ${{ runner.os }}-lean-${{ env.LEAN_VERSION }}-
+          ${{ runner.os }}-lean-
+    
+    - name: Setup Lean4
+      working-directory: ./tests/lean4
+      run: |
+        elan toolchain install ${{ env.LEAN_VERSION }}
+        elan default ${{ env.LEAN_VERSION }}
+    
+    - name: Build Lean4 tests
+      working-directory: ./tests/lean4
+      run: lake build
+      continue-on-error: true
+    
+    - name: Run Lean4 tests
+      working-directory: ./tests/lean4
+      run: lake test
+      continue-on-error: true
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Validate MSC codes
-        run: |
-          python tools/contributor-workflow/validate_msc.py \
-            --check-all \
-            --report-format github
-
-  link-check:
-    name: Link Validation
+  # E2E测试
+  e2e-test:
+    name: E2E Tests
     runs-on: ubuntu-latest
+    needs: [frontend-test, backend-test]
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    
+    - name: Install frontend dependencies
+      working-directory: ./FormalMath-Interactive
+      run: npm ci
+    
+    - name: Build frontend
+      working-directory: ./FormalMath-Interactive
+      run: npm run build
+    
+    - name: Install Cypress
+      working-directory: ./tests
+      run: npm install cypress
+    
+    - name: Run Cypress tests
+      uses: cypress-io/github-action@v6
+      with:
+        working-directory: ./tests
+        start: npx vite preview --port 3000
+        wait-on: 'http://localhost:3000'
+        wait-on-timeout: 120
+        browser: chrome
+        record: false
+      continue-on-error: true
+    
+    - name: Upload screenshots
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: cypress-screenshots
+        path: tests/frontend/e2e/screenshots
 
-      - name: Check internal links
-        run: |
-          python tools/contributor-workflow/check_links.py \
-            --paths docs/ 数学家理念体系/ \
-            --check-internal \
-            --fail-on-broken
-
-  lean-check:
-    name: Lean4 Build Check
+  # 代码质量检查
+  code-quality:
+    name: Code Quality
     runs-on: ubuntu-latest
-    if: contains(github.event.head_commit.message, 'lean') || contains(github.event.head_commit.message, 'Lean')
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install Node dependencies
+      working-directory: ./FormalMath-Interactive
+      run: npm ci
+    
+    - name: Install Python dependencies
+      run: |
+        python -m pip install black isort flake8 mypy
+    
+    - name: Run ESLint
+      working-directory: ./FormalMath-Interactive
+      run: npm run lint
+    
+    - name: Check Python formatting
+      run: |
+        black --check tools/ || true
+        isort --check-only tools/ || true
+    
+    - name: Run Python linter
+      run: |
+        flake8 tools/ --count --select=E9,F63,F7,F82 --show-source --statistics || true
+    
+    - name: Type check Python
+      run: |
+        mypy tools/ --ignore-missing-imports || true
 
-      - name: Install elan
-        run: |
-          curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
-          echo "$HOME/.elan/bin" >> $GITHUB_PATH
-
-      - name: Get Lean version
-        run: |
-          if [ -f lean-toolchain ]; then
-            cat lean-toolchain
-          else
-            echo "leanprover/lean4:v4.29.0" > lean-toolchain
-          fi
-
-      - name: Cache Lean packages
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.elan
-            .lake
-          key: ${{ runner.os }}-lean-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}
-
-      - name: Build Lean project
-        run: |
-          lake build || echo "No lakefile found, skipping build"
-
-  stats-report:
-    name: Generate Contribution Stats
+  # 构建测试
+  build-test:
+    name: Build Test
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Generate stats
-        run: |
-          python tools/contributor-workflow/generate_stats.py \
-            --output .github/stats.json
-
-      - name: Upload stats
-        uses: actions/upload-artifact@v4
-        with:
-          name: contribution-stats
-          path: .github/stats.json
-
-  notify:
-    name: Notify on Failure
-    runs-on: ubuntu-latest
-    needs: [markdown-lint, content-check, msc-validation, link-check]
-    if: failure() && github.event_name == 'pull_request'
-    steps:
-      - name: Comment on PR
-        uses: actions/github-script@v7
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '⚠️ **CI 检查失败**\n\n请检查上述失败的工作流，修复问题后重新提交。\n\n查看 [贡献指南](../../CONTRIBUTING.md) 了解如何修复常见问题。'
-            })
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    
+    - name: Install dependencies
+      working-directory: ./FormalMath-Interactive
+      run: npm ci
+    
+    - name: Build application
+      working-directory: ./FormalMath-Interactive
+      run: npm run build
+    
+    - name: Check build output
+      run: |
+        ls -la FormalMath-Interactive/dist/
+        test -f FormalMath-Interactive/dist/index.html

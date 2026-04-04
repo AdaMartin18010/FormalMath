@@ -1,0 +1,111 @@
+/**
+ * RTL (Right-to-Left) 样式支持
+ * 用于阿拉伯语、希伯来语等从右到左语言布局
+ */
+
+/* ==================== RTL基础样式 ==================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ==================== 文本方向 ==================== */
+
+[dir="rtl"] .rtl-text-start { text-align: right; }
+[dir="rtl"] .rtl-text-end { text-align: left; }
+[dir="ltr"] .rtl-text-start { text-align: left; }
+[dir="ltr"] .rtl-text-end { text-align: right; }
+
+/* ==================== 边距/内边距逻辑属性 ==================== */
+
+[dir="rtl"] .rtl-ms-0 { margin-right: 0; margin-left: unset; }
+[dir="rtl"] .rtl-ms-1 { margin-right: 0.25rem; margin-left: unset; }
+[dir="rtl"] .rtl-ms-2 { margin-right: 0.5rem; margin-left: unset; }
+[dir="rtl"] .rtl-ms-3 { margin-right: 0.75rem; margin-left: unset; }
+[dir="rtl"] .rtl-ms-4 { margin-right: 1rem; margin-left: unset; }
+[dir="rtl"] .rtl-ms-5 { margin-right: 1.25rem; margin-left: unset; }
+[dir="rtl"] .rtl-ms-6 { margin-right: 1.5rem; margin-left: unset; }
+[dir="rtl"] .rtl-ms-8 { margin-right: 2rem; margin-left: unset; }
+
+[dir="rtl"] .rtl-me-0 { margin-left: 0; margin-right: unset; }
+[dir="rtl"] .rtl-me-1 { margin-left: 0.25rem; margin-right: unset; }
+[dir="rtl"] .rtl-me-2 { margin-left: 0.5rem; margin-right: unset; }
+[dir="rtl"] .rtl-me-3 { margin-left: 0.75rem; margin-right: unset; }
+[dir="rtl"] .rtl-me-4 { margin-left: 1rem; margin-right: unset; }
+[dir="rtl"] .rtl-me-5 { margin-left: 1.25rem; margin-right: unset; }
+[dir="rtl"] .rtl-me-6 { margin-left: 1.5rem; margin-right: unset; }
+[dir="rtl"] .rtl-me-8 { margin-left: 2rem; margin-right: unset; }
+
+[dir="rtl"] .rtl-ps-0 { padding-right: 0; padding-left: unset; }
+[dir="rtl"] .rtl-ps-1 { padding-right: 0.25rem; padding-left: unset; }
+[dir="rtl"] .rtl-ps-2 { padding-right: 0.5rem; padding-left: unset; }
+[dir="rtl"] .rtl-ps-3 { padding-right: 0.75rem; padding-left: unset; }
+[dir="rtl"] .rtl-ps-4 { padding-right: 1rem; padding-left: unset; }
+[dir="rtl"] .rtl-ps-6 { padding-right: 1.5rem; padding-left: unset; }
+[dir="rtl"] .rtl-ps-8 { padding-right: 2rem; padding-left: unset; }
+
+[dir="rtl"] .rtl-pe-0 { padding-left: 0; padding-right: unset; }
+[dir="rtl"] .rtl-pe-1 { padding-left: 0.25rem; padding-right: unset; }
+[dir="rtl"] .rtl-pe-2 { padding-left: 0.5rem; padding-right: unset; }
+[dir="rtl"] .rtl-pe-3 { padding-left: 0.75rem; padding-right: unset; }
+[dir="rtl"] .rtl-pe-4 { padding-left: 1rem; padding-right: unset; }
+[dir="rtl"] .rtl-pe-6 { padding-left: 1.5rem; padding-right: unset; }
+[dir="rtl"] .rtl-pe-8 { padding-left: 2rem; padding-right: unset; }
+
+/* ==================== 图标/箭头翻转 ==================== */
+
+[dir="rtl"] .rtl-flip { transform: scaleX(-1); }
+[dir="rtl"] .rtl-rotate-arrow-right { transform: rotate(180deg); }
+[dir="rtl"] .rtl-rotate-chevron-left { transform: rotate(180deg); }
+
+/* ==================== 定位 ==================== */
+
+[dir="rtl"] .rtl-inset-start { right: 0; left: unset; }
+[dir="rtl"] .rtl-inset-end { left: 0; right: unset; }
+[dir="rtl"] .rtl-start-0 { right: 0; left: unset; }
+[dir="rtl"] .rtl-start-4 { right: 1rem; left: unset; }
+[dir="rtl"] .rtl-end-0 { left: 0; right: unset; }
+[dir="rtl"] .rtl-end-4 { left: 1rem; right: unset; }
+
+/* ==================== Flex/Grid 布局 ==================== */
+
+[dir="rtl"] .rtl-flex-row { flex-direction: row-reverse; }
+[dir="rtl"] .rtl-space-x-reverse > :not([hidden]) ~ :not([hidden]) { --tw-space-x-reverse: 1; }
+
+/* ==================== 列表样式 ==================== */
+
+[dir="rtl"] .rtl-list-inside { padding-right: 1.5rem; padding-left: 0; }
+[dir="rtl"] ul.rtl-list-disc, [dir="rtl"] ol.rtl-list-decimal { padding-right: 1.5rem; padding-left: 0; }
+
+/* ==================== 表单元素 ==================== */
+
+[dir="rtl"] input[type="checkbox"], [dir="rtl"] input[type="radio"] { margin-left: 0.5rem; margin-right: 0; }
+[dir="rtl"] select { background-position: left 0.5rem center; padding-left: 2rem; padding-right: 0.75rem; }
+
+/* ==================== 数字/日期显示 ==================== */
+
+[dir="rtl"] .rtl-ltr-embed { direction: ltr; unicode-bidi: embed; }
+[dir="rtl"] .rtl-ltr-isolate { direction: ltr; unicode-bidi: isolate; }
+
+/* ==================== 动画/过渡 ==================== */
+
+[dir="rtl"] .rtl-slide-in { animation: slideInRTL 0.3s ease-out; }
+
+@keyframes slideInRTL {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+[dir="rtl"] .rtl-slide-out { animation: slideOutRTL 0.3s ease-out; }
+
+@keyframes slideOutRTL {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(20px); }
+}
+
+/* ==================== 打印样式 ==================== */
+
+@media print {
+  [dir="rtl"] { direction: rtl; }
+}

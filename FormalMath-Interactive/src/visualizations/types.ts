@@ -1,6 +1,6 @@
 /**
  * 知识图谱可视化组件类型定义
- * FormalMath Interactive - Visualization Types
+ * FormalMath Interactive - Visualization Types v2.0
  */
 
 // ============================================
@@ -140,6 +140,219 @@ export interface MermaidChartProps {
   onError?: (error: Error) => void;
   enableZoom?: boolean;
   enablePan?: boolean;
+}
+
+// ============================================
+// ConceptTimeline 概念演化时间线类型
+// ============================================
+
+export interface TimelineEvent {
+  id: string;
+  date: Date;
+  year: number;
+  title: string;
+  description: string;
+  type: 'discovery' | 'proof' | 'publication' | 'application' | 'extension';
+  mathematician?: string;
+  conceptId: string;
+  impact: number;
+  references?: string[];
+}
+
+export interface ConceptStage {
+  id: string;
+  conceptId: string;
+  name: string;
+  startDate: Date;
+  endDate?: Date;
+  description: string;
+  maturity: 'nascent' | 'developing' | 'mature' | 'refined';
+  keyContributors: string[];
+}
+
+export interface ConceptTimelineProps {
+  events: TimelineEvent[];
+  stages?: ConceptStage[];
+  width?: number;
+  height?: number;
+  className?: string;
+  autoPlay?: boolean;
+  onEventClick?: (event: TimelineEvent) => void;
+  onStageClick?: (stage: ConceptStage) => void;
+  highlightedConcepts?: string[];
+}
+
+// ============================================
+// GraphComparison 知识图谱对比类型
+// ============================================
+
+export type ComparisonMode = 'side-by-side' | 'overlay' | 'diff' | 'merge';
+
+export interface NodeMatch {
+  nodeA?: GraphNode;
+  nodeB?: GraphNode;
+  similarity: number;
+  type: 'match' | 'only-in-a' | 'only-in-b' | 'modified';
+}
+
+export interface ComparisonStats {
+  commonNodes: number;
+  onlyInA: number;
+  onlyInB: number;
+  modifiedNodes: number;
+  commonEdges: number;
+  onlyEdgesInA: number;
+  onlyEdgesInB: number;
+  similarityScore: number;
+}
+
+export interface GraphComparisonProps {
+  graphA: { nodes: GraphNode[]; edges: GraphLink[] };
+  graphB: { nodes: GraphNode[]; edges: GraphLink[] };
+  titleA?: string;
+  titleB?: string;
+  width?: number;
+  height?: number;
+  className?: string;
+  mode?: ComparisonMode;
+  onNodeClick?: (match: NodeMatch) => void;
+  onModeChange?: (mode: ComparisonMode) => void;
+  showStats?: boolean;
+  showLegend?: boolean;
+}
+
+// ============================================
+// PathAnimation 学习路径动画类型
+// ============================================
+
+export interface PathNode {
+  id: string;
+  conceptId: string;
+  label: string;
+  description?: string;
+  x: number;
+  y: number;
+  status: 'locked' | 'available' | 'in_progress' | 'completed' | 'recommended';
+  mastery: number;
+  difficulty: number;
+  estimatedTime: number;
+  prerequisites: string[];
+  rewards?: string[];
+  isMilestone?: boolean;
+  isShortcut?: boolean;
+}
+
+export interface PathConnection {
+  from: string;
+  to: string;
+  type: 'required' | 'recommended' | 'shortcut';
+  strength?: number;
+}
+
+export interface PathEvent {
+  timestamp: number;
+  type: 'start' | 'complete' | 'unlock' | 'recommend' | 'milestone';
+  nodeId: string;
+  message: string;
+}
+
+export interface PathAnimationProps {
+  nodes: PathNode[];
+  connections: PathConnection[];
+  width?: number;
+  height?: number;
+  className?: string;
+  autoPlay?: boolean;
+  playbackSpeed?: number;
+  showParticles?: boolean;
+  showHeatmap?: boolean;
+  onNodeClick?: (node: PathNode) => void;
+  onAnimationComplete?: () => void;
+}
+
+// ============================================
+// ProofTreeViz 定理证明树类型
+// ============================================
+
+export type ProofNodeType = 'theorem' | 'lemma' | 'axiom' | 'assumption' | 'conclusion' | 'contradiction';
+
+export type ProofStatus = 'proven' | 'unproven' | 'pending' | 'invalid' | 'axiomatic';
+
+export interface ProofNode {
+  id: string;
+  label: string;
+  type: ProofNodeType;
+  status: ProofStatus;
+  statement: string;
+  proof?: string;
+  children?: ProofNode[];
+  parentId?: string;
+  depth: number;
+  confidence?: number;
+  usedAxioms?: string[];
+  usedLemmas?: string[];
+  isExpanded?: boolean;
+  metadata?: {
+    author?: string;
+    date?: string;
+    complexity?: number;
+  };
+}
+
+export interface ProofStep {
+  id: string;
+  stepNumber: number;
+  description: string;
+  justification: string;
+  dependsOn?: string[];
+  produces?: string;
+}
+
+export interface ProofTreeVizProps {
+  root: ProofNode;
+  width?: number;
+  height?: number;
+  className?: string;
+  orientation?: 'vertical' | 'horizontal';
+  onNodeClick?: (node: ProofNode) => void;
+  onNodeExpand?: (node: ProofNode, expanded: boolean) => void;
+  showStepByStep?: boolean;
+  interactive?: boolean;
+}
+
+// ============================================
+// AssociationHeatmap 概念关联热力图类型
+// ============================================
+
+export interface AssociationData {
+  concepts: string[];
+  matrix: number[][];
+  metadata?: {
+    conceptCategories?: Record<string, string>;
+    conceptDescriptions?: Record<string, string>;
+  };
+}
+
+export interface ClusterResult {
+  id: number;
+  concepts: string[];
+  centroid: number[];
+  color: string;
+}
+
+export type HeatmapMode = 'matrix' | 'clustered' | 'network' | 'circular';
+
+export interface AssociationHeatmapProps {
+  data: AssociationData;
+  width?: number;
+  height?: number;
+  className?: string;
+  mode?: HeatmapMode;
+  onCellClick?: (conceptA: string, conceptB: string, strength: number) => void;
+  onModeChange?: (mode: HeatmapMode) => void;
+  showColorScale?: boolean;
+  enableClustering?: boolean;
+  threshold?: number;
 }
 
 // ============================================

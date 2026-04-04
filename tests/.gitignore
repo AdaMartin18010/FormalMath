@@ -1,0 +1,59 @@
+# 依赖
+node_modules/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# 覆盖率报告
+coverage/
+.nyc_output/
+*.lcov
+htmlcov/
+.coverage
+
+# 构建输出
+dist/
+build/
+*.tsbuildinfo
+
+# Lake构建
+.lake/
+build/
+
+# 测试输出
+output/
+results/
+snapshots/__snapshots__/
+
+# Cypress
+frontend/e2e/screenshots/
+frontend/e2e/videos/
+frontend/e2e/downloads/
+
+# 日志
+*.log
+logs/
+
+# 环境配置
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 临时文件
+tmp/
+temp/
+*.tmp

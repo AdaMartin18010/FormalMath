@@ -19,6 +19,9 @@ const MindMap = React.lazy(() => import('@pages/MindMap'));
 const Comparison = React.lazy(() => import('@pages/Comparison'));
 const DecisionTree = React.lazy(() => import('@pages/DecisionTree'));
 const Evolution = React.lazy(() => import('@pages/Evolution'));
+const VisualizationGallery = React.lazy(() => import('@pages/VisualizationGallery'));
+const Analytics = React.lazy(() => import('@pages/Analytics'));
+const ProofAssistant = React.lazy(() => import('@pages/ProofAssistant'));
 
 // Create Query Client with mobile optimizations
 const queryClient = new QueryClient({
@@ -244,6 +247,42 @@ function App() {
                 <VisualizationLayout isMobile={isMobile}>
                   <Suspense fallback={<PageLoading title="正在加载演化历史" />}>
                     <Evolution />
+                  </Suspense>
+                </VisualizationLayout>
+              }
+            />
+
+            {/* Analytics Dashboard Page */}
+            <Route
+              path="/analytics"
+              element={
+                <SimpleLayout isMobile={isMobile}>
+                  <Suspense fallback={<PageLoading title="正在加载数据分析" />}>
+                    <Analytics />
+                  </Suspense>
+                </SimpleLayout>
+              }
+            />
+
+            {/* Proof Assistant Page */}
+            <Route
+              path="/proof-assistant"
+              element={
+                <SimpleLayout isMobile={isMobile}>
+                  <Suspense fallback={<PageLoading title="正在加载证明助手" />}>
+                    <ProofAssistant />
+                  </Suspense>
+                </SimpleLayout>
+              }
+            />
+
+            {/* Visualization Gallery Page */}
+            <Route
+              path="/visualization-gallery"
+              element={
+                <VisualizationLayout isMobile={isMobile}>
+                  <Suspense fallback={<PageLoading title="正在加载可视化组件库" />}>
+                    <VisualizationGallery />
                   </Suspense>
                 </VisualizationLayout>
               }
