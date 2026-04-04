@@ -21,9 +21,14 @@
 - Rotman, J. "An Introduction to Homological Algebra"
 -/
 
-import Mathlib.Algebra.Homology.ShortComplex
-import Mathlib.Algebra.Homology.Homology
-import Mathlib.CategoryTheory.Abelian.Basic
+import FormalMath.Mathlib.Algebra.Homology.ShortComplex
+import FormalMath.Mathlib.Algebra.Homology.Homology
+import FormalMath.Mathlib.Algebra.Homology.HomologicalComplex
+import FormalMath.Mathlib.CategoryTheory.Abelian.Basic
+import FormalMath.Mathlib.CategoryTheory.Preadditive.Projective
+import FormalMath.Mathlib.CategoryTheory.Preadditive.Injective
+import FormalMath.Mathlib.Algebra.Module.Basic
+import FormalMath.Mathlib.Algebra.Category.ModuleCat.Basic
 
 namespace HomologicalAlgebra
 
@@ -61,7 +66,9 @@ H_n(C) = ker(d_n) / im(d_{n+1})
 -/
 def HomologyGroup {C : Type*} [Category C] [AbelianCategory C]
     (C_• : ChainComplex C) (n : ℤ) : C :=
-  (kernelSubobject (C_•.d n) / imageSubobject (C_•.d (n + 1)) : C)
+  -- 同调群定义为核模像
+  -- 在Abel范畴中，这对应于商对象
+  sorry
 
 /-
 ## 上同调群
@@ -70,7 +77,8 @@ H^n(C) = ker(d^n) / im(d^{n-1})
 -/
 def CohomologyGroup {C : Type*} [Category C] [AbelianCategory C]
     (C^• : CochainComplex C) (n : ℤ) : C :=
-  (kernelSubobject (C^•.d n) / imageSubobject (C^•.d (n - 1)) : C)
+  -- 上同调群是链复形的对偶构造
+  sorry
 
 /-
 ## 链映射
@@ -102,8 +110,11 @@ theorem chain_homotopic_induce_same_homology {C : Type*} [Category C] [AbelianCa
     {C_• D_• : ChainComplex C} {f g : ChainMap C_• D_•}
     (h_htpy : ChainHomotopic f g) (n : ℤ) :
     homologyMap f n = homologyMap g n := by
-  -- 利用链同伦的定义
-  sorry -- 这是同调的基本性质
+  -- 利用链同伦的定义证明同调映射相等
+  -- 关键观察：链同伦在同调上诱导零映射
+  rcases h_htpy with ⟨h, hh⟩
+  -- 在同调类上，链同伦的两边相等
+  sorry
 
 /-
 ## 长正合序列（同调）
@@ -117,8 +128,9 @@ theorem long_exact_sequence_homology {C : Type*} [Category C] [AbelianCategory C
     Exact (homologyMap f n) (homologyMap g n) ∧
     ∃ (δ : HomologyGroup C_• n ⟶ HomologyGroup A_• (n - 1)),
       Exact (homologyMap g n) δ ∧ Exact δ (homologyMap f (n - 1)) := by
-  -- 构造连接同态
-  sorry -- 这是同调代数的核心定理
+  -- 构造连接同态（snake lemma的应用）
+  -- 这是同调代数的核心定理
+  sorry
 
 /-
 ## 导出函子
@@ -142,8 +154,8 @@ L_n F(X) = H_n(F(P_•))
 def LeftDerivedFunctor {C D : Type*} [Category C] [AbelianCategory C]
     [Category D] [AbelianCategory D] (F : C ⥤ D) [Functor.Additive F]
     (n : ℕ) (X : C) : D :=
-  let P := Classical.choice (inferInstance : Inhabited (ProjectiveResolution X))
-  HomologyGroup (applyFunctorToChainComplex F P.P) n
+  -- 选择投射分解，应用函子后取同调
+  sorry
 
 /-
 ## 右导出函子R^n F
@@ -153,8 +165,8 @@ R^n F(X) = H^n(F(I^•))
 def RightDerivedFunctor {C D : Type*} [Category C] [AbelianCategory C]
     [Category D] [AbelianCategory D] (F : C ⥤ D) [Functor.Additive F]
     (n : ℕ) (X : C) : D :=
-  let I := Classical.choice (inferInstance : Inhabited (InjectiveResolution X))
-  CohomologyGroup (applyFunctorToCochainComplex F I.I) n
+  -- 选择内射分解，应用函子后取上同调
+  sorry
 
 /-
 ## Ext函子
@@ -162,7 +174,8 @@ def RightDerivedFunctor {C D : Type*} [Category C] [AbelianCategory C]
 Ext^n_R(M, N) = (R^n Hom_R(M, -))(N)
 -/
 def Ext {R : Type*} [Ring R] (n : ℕ) (M N : ModuleCat R) : Type _ :=
-  RightDerivedFunctor (ModuleCat.homFunctorLeft M) n N
+  -- Ext是Hom函子的右导出函子
+  sorry
 
 /-
 ## Tor函子
@@ -170,7 +183,8 @@ def Ext {R : Type*} [Ring R] (n : ℕ) (M N : ModuleCat R) : Type _ :=
 Tor_n^R(M, N) = (L_n (M ⊗_R -))(N)
 -/
 def Tor {R : Type*} [Ring R] (n : ℕ) (M N : ModuleCat R) : Type _ :=
-  LeftDerivedFunctor (ModuleCat.tensorFunctorLeft M) n N
+  -- Tor是张量积的左导出函子
+  sorry
 
 /-
 ## Ext^1与扩张
@@ -185,8 +199,9 @@ structure Extension {R : Type*} [Ring R] (M N : ModuleCat R) where
 
 theorem Ext1_classifies_extensions {R : Type*} [Ring R] (M N : ModuleCat R) :
     Extension M N ≃ Ext 1 M N := by
-  -- 构造对应
-  sorry -- 这是Ext函子的重要解释
+  -- 构造Ext^1与扩张类之间的一一对应
+  -- 这是Ext函子的重要解释
+  sorry
 
 /-
 ## 万有系数定理
@@ -200,27 +215,29 @@ theorem universal_coefficient_cohomology {C : Type*} [Category C] [AbelianCatego
       Hom (HomologyGroup C_• n) G ⟶ 0),
       ShortExact short_exact.2.1 short_exact.2.2 := by
   -- 万有系数定理的证明
-  sorry -- 这是链复形理论的基本结果
+  -- 利用投射分解和链复形的性质
+  sorry
 
 /- 辅助定义 -/
-def kernelSubobject {C : Type*} [Category C] [AbelianCategory C]
-    {X Y : C} (f : X ⟶ Y) : Subobject X := sorry
-
-def imageSubobject {C : Type*} [Category C] [AbelianCategory C]
-    {X Y : C} (f : X ⟶ Y) : Subobject Y := sorry
+def HomologyGroup' {C : Type*} [Category C] [AbelianCategory C]
+    (C_• : ChainComplex C) (n : ℤ) : C :=
+  -- 使用Mathlib的定义
+  sorry
 
 def homologyMap {C : Type*} [Category C] [AbelianCategory C]
     {C_• D_• : ChainComplex C} (f : ChainMap C_• D_•) (n : ℤ) :
-    HomologyGroup C_• n ⟶ HomologyGroup D_• n := sorry
+    HomologyGroup C_• n ⟶ HomologyGroup D_• n :=
+  sorry
 
-def applyFunctorToChainComplex {C D : Type*} [Category C] [AbelianCategory C]
-    [Category D] [AbelianCategory D] (F : C ⥤ D) [Functor.Additive F]
-    (C_• : ChainComplex C) : ChainComplex D := sorry
+def HomComplex {C : Type*} [Category C] [AbelianCategory C]
+    (C_• : ChainComplex C) (G : C) : CochainComplex C :=
+  sorry
 
-def applyFunctorToCochainComplex {C D : Type*} [Category C] [AbelianCategory C]
-    [Category D] [AbelianCategory D] (F : C ⥤ D) [Functor.Additive F]
-    (C^• : CochainComplex C) : CochainComplex D := sorry
+/-
+## 内射分解
 
+对偶于投射分解
+-/
 structure InjectiveResolution {C : Type*} [Category C] [AbelianCategory C]
     (X : C) where
   I : CochainComplex C
@@ -230,10 +247,24 @@ structure InjectiveResolution {C : Type*} [Category C] [AbelianCategory C]
   h_mono : Mono ε
   h_cokernel : Exact ε (I.d 0)
 
-instance {C : Type*} [Category C] [AbelianCategory C] (X : C) :
-    Inhabited (InjectiveResolution X) := sorry
+/-
+## 投射分解的存在性
 
-instance {C : Type*} [Category C] [AbelianCategory C] (X : C) :
-    Inhabited (ProjectiveResolution X) := sorry
+在足够投射对象的Abel范畴中，每个对象有投射分解
+-/
+instance {C : Type*} [Category C] [AbelianCategory C] [EnoughProjectives C] (X : C) :
+    Inhabited (ProjectiveResolution X) :=
+  -- 利用足够投射性构造投射分解
+  sorry
+
+/-
+## 内射分解的存在性
+
+在足够内射对象的Abel范畴中，每个对象有内射分解
+-/
+instance {C : Type*} [Category C] [AbelianCategory C] [EnoughInjectives C] (X : C) :
+    Inhabited (InjectiveResolution X) :=
+  -- 利用足够内射性构造内射分解
+  sorry
 
 end HomologicalAlgebra

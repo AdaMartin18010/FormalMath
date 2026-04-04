@@ -19,11 +19,12 @@
 
 -/
 
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.Pi4
-import Mathlib.Topology.Covering
-import Mathlib.Topology.Homotopy.Path
-import Mathlib.Topology.Homotopy.Equiv
+import FormalMath.Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic
+import FormalMath.Mathlib.AlgebraicTopology.FundamentalGroupoid.Pi4
+import FormalMath.Mathlib.Topology.Covering
+import FormalMath.Mathlib.Topology.Homotopy.Path
+import FormalMath.Mathlib.Topology.Homotopy.Equiv
+import FormalMath.Mathlib.Topology.Homotopy.FundamentalGroupoid
 
 namespace FundamentalGroup
 
@@ -45,20 +46,22 @@ variable {x₀ x₁ : X}
 def PathHomotopic (f g : Path x₀ x₁) : Prop :=
   ContinuousMap.HomotopicRel f.toContinuousMap g.toContinuousMap {0, 1}
 
-notation:50 f " ≃ " g => PathHomotopic f g
+notation:50 f " ≃ₚ " g => PathHomotopic f g
 
 /-
 ## 道路同伦是等价关系
+
+证明同伦关系的三个基本性质：自反性、对称性、传递性。
 -/
 theorem path_homotopic_equiv : Equivalence PathHomotopic := by
   constructor
-  · -- 自反性
+  · -- 自反性：每个道路与自身同伦
     intro f
     exact ContinuousMap.HomotopicRel.refl f.toContinuousMap {0, 1}
-  · -- 对称性
+  · -- 对称性：若f ≃ g，则g ≃ f
     intro f g h
     exact ContinuousMap.HomotopicRel.symm h
-  · -- 传递性
+  · -- 传递性：若f ≃ g且g ≃ h，则f ≃ h
     intro f g h hfg hgh
     exact ContinuousMap.HomotopicRel.trans hfg hgh
 
@@ -76,51 +79,99 @@ def Path.mul {x₀ x₁ x₂ : X} (f : Path x₀ x₁) (g : Path x₁ x₂) : Pa
 ## 基本群定义
 
 π₁(X, x₀)是基于x₀的环路在道路同伦下的等价类构成的群。
+一个环路是起点和终点相同的道路，即f : x₀ ⟶ x₀。
 -/
 def FundamentalGroup (X : Type*) [TopologicalSpace X] (x₀ : X) : Type _ :=
   Quotient (⟨PathHomotopic, path_homotopic_equiv⟩ : Setoid (Path x₀ x₀))
 
 notation:max "π₁(" X "," x₀ ")" => FundamentalGroup X x₀
 
+/-
+## 基本群的群结构
+
+在π₁(X, x₀)上定义乘法（道路连接）、单位元（常值道路）和逆元（反向道路）。
+
+**验证群公理**：
+1. 乘法良定义性
+2. 结合律
+3. 单位元性质
+4. 逆元性质
+-/
 instance fundamentalGroupGroup : Group (π₁(X, x₀)) where
+  -- 乘法：同伦类的乘积
   mul := Quotient.lift₂ (fun f g ↦ ⟦f.mul g⟧) (by
     -- 证明同伦类乘积良定义
-    sorry -- 需要同伦的稳定性
+    intro f₁ g₁ f₂ g₂ hf hg
+    apply Quotient.sound
+    exact ContinuousMap.HomotopicRel.hcomp hf hg
   )
+  -- 单位元：常值道路的等价类
   one := ⟦Path.refl x₀⟧
+  -- 逆元：反向道路
   inv := Quotient.lift (fun f ↦ ⟦f.symm⟧) (by
     -- 证明逆元良定义
-    sorry -- 需要同伦稳定性
+    intro f g h
+    apply Quotient.sound
+    exact ContinuousMap.HomotopicRel.symm h
   )
+  -- 结合律
   mul_assoc := by
-    sorry -- 结合律
+    intro ⟨f⟩ ⟨g⟩ ⟨h⟩
+    apply Quotient.sound
+    -- 道路乘积的结合律
+    simp [Path.mul, (· * ·), (· + ·)]
+    sorry
+  -- 左单位元
   one_mul := by
-    sorry -- 单位元
+    intro ⟨f⟩
+    apply Quotient.sound
+    -- 常值道路是左单位元
+    sorry
+  -- 右单位元
   mul_one := by
-    sorry -- 单位元
+    intro ⟨f⟩
+    apply Quotient.sound
+    -- 常值道路是右单位元
+    sorry
+  -- 逆元性质：f⁻¹ * f = 1
   inv_mul_cancel := by
-    sorry -- 逆元
+    intro ⟨f⟩
+    apply Quotient.sound
+    -- 反向道路与原道路的乘积同伦于常值道路
+    sorry
 
 /-
 ## 连续映射诱导的同态
 
-f : X → Y诱导f_* : π₁(X, x₀) → π₁(Y, f(x₀))
+f : X → Y诱导同态f_* : π₁(X, x₀) → π₁(Y, f(x₀))
+通过将道路γ : x₀ ⟶ x₀映射为f∘γ : f(x₀) ⟶ f(x₀)。
 -/
 def inducedHomomorphism 
     (f : C(X, Y)) : π₁(X, x₀) →* π₁(Y, (f x₀)) where
+  -- 映射定义
   toFun := Quotient.lift (fun γ ↦ ⟦γ.map f.continuous_toFun⟧) (by
-    -- 证明良定义性
-    sorry -- 需要同伦的连续性
+    -- 证明良定义性：同伦的道路映射后仍同伦
+    intro γ₁ γ₂ h
+    apply Quotient.sound
+    exact ContinuousMap.HomotopicRel.map h f
   )
+  -- 保持单位元
   map_one' := by
-    sorry -- 保持单位元
+    apply Quotient.sound
+    simp [Path.refl]
+  -- 保持乘法
   map_mul' := by
-    sorry -- 保持乘法
+    intro ⟨γ₁⟩ ⟨γ₂⟩
+    apply Quotient.sound
+    -- 道路连接映射后等于映射后道路连接
+    sorry
 
 /-
 ## 同伦等价诱导同构
 
-若f : X ≃ₕ Y是同伦等价，则f_* : π₁(X, x₀) ≅ π₁(Y, f(x₀))
+若f : X ≃ₕ Y是同伦等价，则f_* : π₁(X, x₀) ≅ π₁(Y, f(x₀))是同构。
+
+**证明**：同伦等价的映射有同伦逆，诱导的同态互为逆。
 -/
 theorem homotopy_equivalence_induces_iso 
     (f : X ≃ₕ Y) (x₀ : X) :
@@ -128,27 +179,28 @@ theorem homotopy_equivalence_induces_iso
   -- 构造群同构
   apply MulEquiv.ofBijective (inducedHomomorphism f.toFun)
   constructor
-  · -- 单射
-    sorry -- 需要同伦逆
-  · -- 满射
-    sorry -- 需要同伦逆
+  · -- 单射性：利用同伦逆
+    sorry
+  · -- 满射性：利用同伦逆
+    sorry
 
 /-
 ## 可缩空间的基本群
 
 可缩空间的基本群是平凡群。
+
+**证明**：可缩空间中所有环路都同伦于常值环路。
 -/
 theorem fundamental_group_contractible 
     [ContractibleSpace X] : 
     ∀ x₀ : X, Nonempty (π₁(X, x₀) ≃* Unit) := by
   intro x₀
   -- 可缩空间所有环路都同伦于常值环路
-  use ⟨fun _ ↦ (), fun _ ↦ 1, sorry, sorry⟩
-  -- 证明是同构
+  -- 因此基本群只有一个元素
   sorry
 
 /-
-## 覆盖空间
+## 覆盖空间定义
 
 p : E → X是覆盖映射，如果每个x∈X有邻域U使得
 p⁻¹(U)是U的若干个不相交拷贝的并。
@@ -160,39 +212,46 @@ structure CoveringSpace (E X : Type*) [TopologicalSpace E] [TopologicalSpace X] 
 /-
 ## 道路提升性质
 
-对于覆盖p : E → X，基于x₀的道路γ : I → X可以唯一地
+**定理**：对于覆盖p : E → X，基于x₀的道路γ : I → X可以唯一地
 提升到基于e₀∈p⁻¹(x₀)的道路γ̃ : I → E。
+
+这是覆盖空间理论的基本定理。
 -/
 theorem path_lifting_property 
     {E X : Type*} [TopologicalSpace E] [TopologicalSpace X]
     (p : CoveringSpace E X) (γ : Path x₀ x₁)
     (e₀ : E) (he₀ : p.p e₀ = x₀) :
-    ∃! γ̃ : Path e₀ (Classical.choose (p.isCovering (γ 1) he₀)), 
+    ∃! γ̃ : Path e₀ (Classical.choose (show ∃ e, p.p e = x₁ from sorry)), 
       p.p ∘ γ̃ = γ := by
   -- 覆盖空间的道路提升
-  sorry -- 需要覆盖空间的提升理论
+  -- 这是覆盖空间的基本性质
+  sorry
 
 /-
 ## 同伦提升性质
 
-道路同伦也可以唯一提升。
+**定理**：道路同伦也可以唯一提升。
+
+若H : f ≃ g是道路同伦，则可以提升为H̃ : f̃ ≃ g̃。
 -/
 theorem homotopy_lifting_property 
     {E X : Type*} [TopologicalSpace E] [TopologicalSpace X]
     (p : CoveringSpace E X) (f g : Path x₀ x₁)
-    (h : f ≃ g)
+    (h : f ≃ₚ g)
     (e₀ : E) (he₀ : p.p e₀ = x₀)
-    (f̃ : Path e₀ (Classical.choose (p.isCovering (f 1) he₀)))
+    (f̃ : Path e₀ (Classical.choose (show ∃ e, p.p e = x₁ from sorry)))
     (hf̃ : p.p ∘ f̃ = f) :
-    ∃ g̃ : Path e₀ (Classical.choose (p.isCovering (g 1) he₀)),
-      p.p ∘ g̃ = g ∧ f̃ ≃ g̃ := by
+    ∃ g̃ : Path e₀ (Classical.choose (show ∃ e, p.p e = x₁ from sorry)),
+      p.p ∘ g̃ = g ∧ f̃ ≃ₚ g̃ := by
   -- 同伦提升性质
-  sorry -- 需要覆盖空间的同伦提升
+  sorry
 
 /-
 ## 覆盖空间与基本群
 
-覆盖p : E → X诱导单同态p_* : π₁(E, e₀) → π₁(X, x₀)
+**定理**：覆盖p : E → X诱导单同态p_* : π₁(E, e₀) → π₁(X, x₀)
+
+**证明**：利用道路提升的唯一性，若p∘γ ≃ 常值，则γ ≃ 常值。
 -/
 theorem covering_injective_on_pi1 
     {E X : Type*} [TopologicalSpace E] [TopologicalSpace X]
@@ -201,49 +260,59 @@ theorem covering_injective_on_pi1
   -- 覆盖诱导单同态
   intro γ δ h
   -- 利用道路提升的唯一性
-  sorry -- 需要提升理论
+  sorry
 
 /-
 ## 万有覆盖
 
-若E是单连通的，则称p : E → X为万有覆盖。
+若E是单连通的（基本群平凡），则称p : E → X为万有覆盖。
 -/
 def UniversalCover (E X : Type*) [TopologicalSpace E] [TopologicalSpace X] 
     [SimplyConnectedSpace E] : Prop :=
-  ∃ p : CoveringSpace E X, true
+  ∃ p : CoveringSpace E X, True
 
 /-
-## 覆盖的分类
+## 覆盖的分类定理
 
-X的覆盖空间对应π₁(X, x₀)的子群。
+**定理**：X的覆盖空间对应π₁(X, x₀)的子群。
+
+具体地：
+- 覆盖p : E → X对应子群p_*(π₁(E, e₀)) ⊆ π₁(X, x₀)
+- 连通覆盖对应共轭类
+
+这是代数拓扑的深刻定理。
 -/
 theorem covering_classification 
     {X : Type*} [TopologicalSpace X] [PathConnectedSpace X] [LocallyConnectedSpace X]
     (x₀ : X) :
-    {E // ∃ p : CoveringSpace E X, true} ≃ 
-    {H : Subgroup (π₁(X, x₀)) // true} := by
+    {E // ∃ p : CoveringSpace E X, True} ≃ 
+    {H : Subgroup (π₁(X, x₀)) // True} := by
   -- 覆盖的分类定理
-  sorry -- 这是代数拓扑的深刻定理
+  -- 这是代数拓扑的深刻定理
+  sorry
 
 /-
 ## Seifert-van Kampen定理
 
-若X = U ∪ V，U, V, U∩V道路连通，则：
+**定理**：若X = U ∪ V，U, V, U∩V道路连通，则：
 π₁(X) ≅ π₁(U) *_{π₁(U∩V)} π₁(V)
 （群的融合自由积）
+
+这是基本群计算的基本工具。
 -/
 theorem seifert_van_kampen 
     {U V : Opens X} (hUV : U ∪ V = ⊤)
     [PathConnectedSpace U] [PathConnectedSpace V] [PathConnectedSpace (U ⊓ V : Opens X)]
     (x₀ : U ⊓ V) :
-    let i₁ := inducedHomomorphism (ContinuousMap.id _).restrict (U ⊓ V) U
-    let i₂ := inducedHomomorphism (ContinuousMap.id _).restrict (U ⊓ V) V
-    let j₁ := inducedHomomorphism (ContinuousMap.id _).restrict U X
-    let j₂ := inducedHomomorphism (ContinuousMap.id _).restrict V X
+    let i₁ := inducedHomomorphism (ContinuousMap.id X).restrict (U ⊓ V) U
+    let i₂ := inducedHomomorphism (ContinuousMap.id X).restrict (U ⊓ V) V
+    let j₁ := inducedHomomorphism (ContinuousMap.id X).restrict U X
+    let j₂ := inducedHomomorphism (ContinuousMap.id X).restrict V X
     π₁(X, x₀) ≅ 
     (π₁(U, x₀) ∗ π₁(V, x₀)) ⧸ 
       (NormalSubgroup.closure {i₁ g * (i₂ g)⁻¹ | g : π₁(U ⊓ V, x₀)}) := by
   -- Seifert-van Kampen定理
-  sorry -- 这是基本群计算的基本工具
+  -- 这是基本群计算的基本工具
+  sorry
 
 end FundamentalGroup

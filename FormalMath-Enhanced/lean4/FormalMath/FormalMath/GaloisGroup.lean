@@ -19,12 +19,12 @@ Gal(E/F) = Aut_F(E) = {σ ∈ Aut(E) : σ|_F = id_F}
 
 -/
 
-import Mathlib.FieldTheory.Galois
-import Mathlib.FieldTheory.Fixed
-import Mathlib.FieldTheory.PrimitiveElement
-import Mathlib.GroupTheory.GroupAction.FixedPoints
-import Mathlib.FieldTheory.Normal
-import Mathlib.FieldTheory.Separable
+import FormalMath.Mathlib.FieldTheory.Galois
+import FormalMath.Mathlib.FieldTheory.Fixed
+import FormalMath.Mathlib.FieldTheory.PrimitiveElement
+import FormalMath.Mathlib.GroupTheory.GroupAction.FixedPoints
+import FormalMath.Mathlib.FieldTheory.Normal
+import FormalMath.Mathlib.FieldTheory.Separable
 
 namespace GaloisGroup
 

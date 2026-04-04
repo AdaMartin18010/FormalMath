@@ -17,10 +17,10 @@
 
 -/
 
-import Mathlib.Probability.Statistics
-import Mathlib.Probability.CentralLimitTheorem
-import Mathlib.Analysis.Calculus.FDeriv.Basic
-import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+import FormalMath.Mathlib.Probability.Statistics
+import FormalMath.Mathlib.Probability.CentralLimitTheorem
+import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
+import FormalMath.Mathlib.MeasureTheory.Function.ConvergenceInMeasure
 
 namespace MaximumLikelihood
 

@@ -24,11 +24,11 @@ de Rham上同调是微分流形的拓扑不变量，
 
 -/
 
-import Mathlib.Geometry.Manifold.Algebra.LeftInvariantDerivation
-import Mathlib.Analysis.Calculus.DifferentialForms
-import Mathlib.Algebra.Homology.ShortComplex
-import Mathlib.Topology.Sheaves.Stalks
-import Mathlib.Algebra.Module.ExteriorPower
+import FormalMath.Mathlib.Geometry.Manifold.Algebra.LeftInvariantDerivation
+import FormalMath.Mathlib.Analysis.Calculus.DifferentialForms
+import FormalMath.Mathlib.Algebra.Homology.ShortComplex
+import FormalMath.Mathlib.Topology.Sheaves.Stalks
+import FormalMath.Mathlib.Algebra.Module.ExteriorPower
 
 namespace DeRhamCohomology
 

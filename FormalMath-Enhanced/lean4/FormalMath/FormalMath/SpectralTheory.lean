@@ -20,9 +20,9 @@
 - Rudin, "Functional Analysis"
 -/
 
-import Mathlib.Analysis.InnerProductSpace.Adjoint
-import Mathlib.Analysis.NormedSpace.CompactOperator
-import Mathlib.Analysis.Calculus.Deriv.Basic
+import FormalMath.Mathlib.Analysis.InnerProductSpace.Adjoint
+import FormalMath.Mathlib.Analysis.NormedSpace.CompactOperator
+import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
 
 namespace SpectralTheory
 

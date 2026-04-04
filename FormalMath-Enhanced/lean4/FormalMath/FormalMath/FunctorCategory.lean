@@ -19,10 +19,10 @@
 - Kashiwara & Schapira, "Categories and Sheaves"
 -/
 
-import Mathlib.CategoryTheory.Category.Basic
-import Mathlib.CategoryTheory.Functor.Basic
-import Mathlib.CategoryTheory.NatTrans
-import Mathlib.CategoryTheory.Limits.Types
+import FormalMath.Mathlib.CategoryTheory.Category.Basic
+import FormalMath.Mathlib.CategoryTheory.Functor.Basic
+import FormalMath.Mathlib.CategoryTheory.NatTrans
+import FormalMath.Mathlib.CategoryTheory.Limits.Types
 
 namespace FunctorCategory
 

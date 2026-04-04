@@ -1,0 +1,3976 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FormalMath 用户手册</title>
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --bg-color: #ffffff;
+        --text-color: #333333;
+        --code-bg: #f8f9fa;
+        --border-color: #e0e0e0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "SimSun", sans-serif;
+        line-height: 1.8;
+        font-size: 16px;
+        color: var(--text-color);
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: var(--bg-color);
+    }
+    
+    h1 {
+        color: var(--secondary-color);
+        font-size: 2em;
+        border-bottom: 3px solid var(--primary-color);
+        padding-bottom: 15px;
+        margin-top: 50px;
+    }
+    
+    h1:first-of-type {
+        margin-top: 20px;
+    }
+    
+    h2 {
+        color: var(--secondary-color);
+        font-size: 1.6em;
+        margin-top: 40px;
+        border-left: 4px solid var(--primary-color);
+        padding-left: 15px;
+    }
+    
+    h3 {
+        color: #555;
+        font-size: 1.3em;
+        margin-top: 30px;
+    }
+    
+    h4 {
+        color: #666;
+        font-size: 1.1em;
+        margin-top: 25px;
+    }
+    
+    p {
+        margin: 15px 0;
+    }
+    
+    code {
+        background: var(--code-bg);
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: "Consolas", "Monaco", "Courier New", monospace;
+        font-size: 0.9em;
+        color: var(--accent-color);
+    }
+    
+    pre {
+        background: var(--code-bg);
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+        border-left: 4px solid var(--primary-color);
+        margin: 20px 0;
+    }
+    
+    pre code {
+        background: none;
+        color: var(--text-color);
+        padding: 0;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 25px 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    th, td {
+        border: 1px solid var(--border-color);
+        padding: 12px 15px;
+        text-align: left;
+    }
+    
+    th {
+        background: var(--primary-color);
+        color: white;
+        font-weight: 600;
+    }
+    
+    tr:nth-child(even) {
+        background: #f8f9fa;
+    }
+    
+    tr:hover {
+        background: #e8f4f8;
+    }
+    
+    a {
+        color: var(--primary-color);
+        text-decoration: none;
+        border-bottom: 1px dotted var(--primary-color);
+    }
+    
+    a:hover {
+        border-bottom: 1px solid var(--primary-color);
+    }
+    
+    blockquote {
+        border-left: 4px solid var(--primary-color);
+        margin: 25px 0;
+        padding: 15px 25px;
+        background: #f8f9fa;
+        color: #555;
+        font-style: italic;
+    }
+    
+    hr {
+        border: none;
+        border-top: 2px solid var(--border-color);
+        margin: 50px 0;
+    }
+    
+    ul, ol {
+        margin: 20px 0;
+        padding-left: 35px;
+    }
+    
+    li {
+        margin: 10px 0;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    /* 目录样式 */
+    .toc {
+        background: #f8f9fa;
+        padding: 25px;
+        border-radius: 8px;
+        margin: 30px 0;
+        border: 1px solid var(--border-color);
+    }
+    
+    .toc ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+    
+    .toc li {
+        margin: 8px 0;
+    }
+    
+    /* 打印样式 */
+    @media print {
+        body {
+            font-size: 12pt;
+            max-width: none;
+        }
+        
+        h1 {
+            page-break-before: always;
+        }
+        
+        h1:first-of-type {
+            page-break-before: avoid;
+        }
+        
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+    }
+    
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+        body {
+            padding: 15px;
+            font-size: 15px;
+        }
+        
+        h1 {
+            font-size: 1.6em;
+        }
+        
+        h2 {
+            font-size: 1.3em;
+        }
+        
+        table {
+            font-size: 0.9em;
+        }
+        
+        th, td {
+            padding: 8px 10px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>FormalMath 用户手册</h1>
+<p style="text-align: center; color: #666;">版本 v1.0 | 2026年4月4日</p>
+</div>
+<hr />
+<p>msc_primary: 00A99<br />
+msc_secondary: 97U50<br />
+document_type: user_manual<br />
+version: 1.0</p>
+<hr />
+<h1 id="formalmath">FormalMath 用户手册</h1>
+<p><strong>版本</strong>: v1.0<br />
+<strong>发布日期</strong>: 2026年4月4日<br />
+<strong>适用对象</strong>: 所有 FormalMath 用户</p>
+<hr />
+<h2 id="_1">📚 手册目录</h2>
+<p>本用户手册包含以下五大部分，建议按顺序阅读：</p>
+<h3 id="01-"><a href="./01-快速开始指南.md">01-快速开始指南</a></h3>
+<p><strong>适合人群</strong>: 所有新用户<br />
+<strong>阅读时间</strong>: 15分钟<br />
+<strong>内容概述</strong>:</p>
+<ul>
+<li>项目简介与特色</li>
+<li>根据水平选择学习起点</li>
+<li>文档命名规则说明</li>
+<li>智能学习系统入门</li>
+<li>常用操作速查</li>
+</ul>
+<p><strong>快速导航</strong>:</p>
+<ul>
+<li><a href="./01-快速开始指南.md#初学者高中大一水平">初学者起点</a></li>
+<li><a href="./01-快速开始指南.md#中级学习者大二大三水平">中级学习者起点</a></li>
+<li><a href="./01-快速开始指南.md#高级学习者研究生水平">高级学习者起点</a></li>
+<li><a href="./01-快速开始指南.md#第三步开始使用智能学习系统">智能系统入门</a></li>
+</ul>
+<hr />
+<h3 id="02-"><a href="./02-功能使用说明.md">02-功能使用说明</a></h3>
+<p><strong>适合人群</strong>: 已了解基础的用户<br />
+<strong>阅读时间</strong>: 25分钟<br />
+<strong>内容概述</strong>:</p>
+<ul>
+<li>文档系统详细使用指南</li>
+<li>三大智能学习系统详解</li>
+<li>数学家理念体系使用方法</li>
+<li>形式化证明系统操作指南</li>
+<li>国际课程映射查询方法</li>
+<li>高级搜索技巧</li>
+</ul>
+<p><strong>快速导航</strong>:</p>
+<ul>
+<li><a href="./02-功能使用说明.md#一文档系统使用">文档结构</a></li>
+<li><a href="./02-功能使用说明.md#二智能学习系统">认知诊断系统</a></li>
+<li><a href="./02-功能使用说明.md#22-自适应学习路径系统">自适应学习路径</a></li>
+<li><a href="./02-功能使用说明.md#四形式化证明系统">Lean4形式化证明</a></li>
+</ul>
+<hr />
+<h3 id="03-"><a href="./03-学习路径指南.md">03-学习路径指南</a></h3>
+<p><strong>适合人群</strong>: 有明确学习目标的用户<br />
+<strong>阅读时间</strong>: 30分钟<br />
+<strong>内容概述</strong>:</p>
+<ul>
+<li>六大专业学习路径</li>
+<li>详细的阶段规划</li>
+<li>国际课程对应关系</li>
+<li>四年制完整学习规划</li>
+<li>关键里程碑检查点</li>
+</ul>
+<p><strong>快速导航</strong>:</p>
+<ul>
+<li><a href="./03-学习路径指南.md#二路径一代数几何专业">代数几何路径</a></li>
+<li><a href="./03-学习路径指南.md#三路径二分析学方向">分析学路径</a></li>
+<li><a href="./03-学习路径指南.md#四路径三代数与数论">代数与数论路径</a></li>
+<li><a href="./03-学习路径指南.md#八四年制完整规划">四年完整规划</a></li>
+</ul>
+<hr />
+<h3 id="04-faq"><a href="./04-常见问题解答.md">04-常见问题解答 (FAQ)</a></h3>
+<p><strong>适合人群</strong>: 所有用户<br />
+<strong>阅读时间</strong>: 按需查阅<br />
+<strong>内容概述</strong>:</p>
+<ul>
+<li>50+ 个常见问题</li>
+<li>入门问题</li>
+<li>文档使用问题</li>
+<li>智能系统问题</li>
+<li>技术问题</li>
+<li>内容问题</li>
+<li>国际课程对齐问题</li>
+</ul>
+<p><strong>快速导航</strong>:</p>
+<ul>
+<li><a href="./04-常见问题解答.md#一入门问题">入门问题</a></li>
+<li><a href="./04-常见问题解答.md#二文档使用问题">文档使用</a></li>
+<li><a href="./04-常见问题解答.md#四技术问题">技术问题</a></li>
+<li><a href="./04-常见问题解答.md#五内容问题">内容问题</a></li>
+</ul>
+<hr />
+<h3 id="05-"><a href="./05-故障排除指南.md">05-故障排除指南</a></h3>
+<p><strong>适合人群</strong>: 遇到问题的用户<br />
+<strong>阅读时间</strong>: 按需查阅<br />
+<strong>内容概述</strong>:</p>
+<ul>
+<li>文档访问问题解决方案</li>
+<li>智能学习系统故障排除</li>
+<li>Lean4形式化证明问题解决</li>
+<li>搜索与导航问题</li>
+<li>内容理解障碍解决</li>
+<li>性能优化建议</li>
+<li>联系支持方式</li>
+</ul>
+<p><strong>快速导航</strong>:</p>
+<ul>
+<li><a href="./05-故障排除指南.md#一文档访问问题">文档访问问题</a></li>
+<li><a href="./05-故障排除指南.md#二智能学习系统问题">智能系统问题</a></li>
+<li><a href="./05-故障排除指南.md#三lean4-形式化证明问题">Lean4问题</a></li>
+<li><a href="./05-故障排除指南.md#六性能问题">性能问题</a></li>
+</ul>
+<hr />
+<h2 id="_2">🚀 快速开始</h2>
+<h3 id="5">5分钟快速上手</h3>
+<ol>
+<li><strong>确定您的水平</strong></li>
+<li>初学者 → 阅读 <a href="./01-快速开始指南.md#初学者高中大一水平">01-快速开始指南#初学者</a></li>
+<li>中级 → 阅读 <a href="./01-快速开始指南.md#中级学习者大二大三水平">01-快速开始指南#中级</a></li>
+<li>
+<p>高级 → 阅读 <a href="./01-快速开始指南.md#高级学习者研究生水平">01-快速开始指南#高级</a></p>
+</li>
+<li>
+<p><strong>选择第一个文档</strong></p>
+</li>
+<li>根据您的水平，选择对应的推荐文档</li>
+<li>
+<p>从 <code>-基础版</code> 或 <code>-国际标准版</code> 开始</p>
+</li>
+<li>
+<p><strong>了解文档命名规则</strong></p>
+</li>
+<li><code>-基础版</code>: 概念介绍</li>
+<li><code>-增强版</code>: 定理+例子</li>
+<li><code>-深度扩展版</code>: 完整证明</li>
+<li><code>-国际标准版</code>: 国际课程对齐</li>
+</ol>
+<h3 id="_3">推荐阅读顺序</h3>
+<pre><code>首次使用 FormalMath
+    ↓
+阅读 01-快速开始指南 (15分钟)
+    ↓
+选择适合水平的学习起点
+    ↓
+开始阅读第一个文档
+    ↓
+深入使用时参考 02-功能使用说明
+    ↓
+规划长期学习使用 03-学习路径指南
+    ↓
+遇到问题查阅 04-FAQ 或 05-故障排除指南
+</code></pre>
+<hr />
+<h2 id="_4">📖 项目简介</h2>
+<p>FormalMath 是一个<strong>面向数学教育的综合性知识库</strong>，致力于：</p>
+<ul>
+<li>🎯 <strong>建立完整知识体系</strong>：从基础数学到现代数学前沿的结构化内容</li>
+<li>🧠 <strong>数学家理念体系</strong>：62位数学家的思想、贡献与现代影响深度分析</li>
+<li>🌍 <strong>国际权威对齐</strong>：与MIT、Harvard、Stanford、Princeton等九校121+门课程详细对应</li>
+<li>💻 <strong>形式化证明</strong>：20个Lean4定理形式化，与Mathlib4 v4.29.0对齐</li>
+<li>🤖 <strong>智能学习系统</strong>：认知诊断、学习评估、自适应学习路径三大系统</li>
+</ul>
+<h3 id="_5">核心统计数据</h3>
+<table>
+<thead>
+<tr>
+<th>资源类型</th>
+<th>数量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数学文档</td>
+<td>6,500+</td>
+<td>15个数学分支结构化内容</td>
+</tr>
+<tr>
+<td>数学家理念</td>
+<td>62位</td>
+<td>从阿基米德到肖尔策</td>
+</tr>
+<tr>
+<td>国际课程映射</td>
+<td>121+门</td>
+<td>九校课程详细对应</td>
+</tr>
+<tr>
+<td>Lean4定理</td>
+<td>20个</td>
+<td>可运行的形式化证明</td>
+</tr>
+<tr>
+<td>智能学习系统</td>
+<td>3大系统</td>
+<td>认知诊断、评估、自适应路径</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_6">🎯 根据目标选择文档</h2>
+<h3 id="formalmath_1">我想快速了解 FormalMath</h3>
+<p>→ <a href="./01-快速开始指南.md">01-快速开始指南</a></p>
+<h3 id="_7">我想了解所有功能如何使用</h3>
+<p>→ <a href="./02-功能使用说明.md">02-功能使用说明</a></p>
+<h3 id="_8">我想制定长期学习计划</h3>
+<p>→ <a href="./03-学习路径指南.md">03-学习路径指南</a></p>
+<h3 id="_9">我遇到了问题需要帮助</h3>
+<p>→ <a href="./04-常见问题解答.md">04-常见问题解答</a> 或 <a href="./05-故障排除指南.md">05-故障排除指南</a></p>
+<h3 id="_10">我想学习代数几何</h3>
+<p>→ <a href="./03-学习路径指南.md#二路径一代数几何专业">03-学习路径指南#代数几何</a></p>
+<h3 id="_11">我想学习分析学</h3>
+<p>→ <a href="./03-学习路径指南.md#三路径二分析学方向">03-学习路径指南#分析学</a></p>
+<h3 id="mitharvard">我想找到与MIT/Harvard课程对应的内容</h3>
+<p>→ <a href="./02-功能使用说明.md#五国际课程映射">02-功能使用说明#国际课程映射</a></p>
+<h3 id="lean4">我想运行Lean4形式化证明</h3>
+<p>→ <a href="./02-功能使用说明.md#四形式化证明系统">02-功能使用说明#形式化证明系统</a></p>
+<h3 id="_12">我想使用智能学习系统</h3>
+<p>→ <a href="./02-功能使用说明.md#二智能学习系统">02-功能使用说明#智能学习系统</a></p>
+<hr />
+<h2 id="_13">📋 文档版本信息</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>更新内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1.0</td>
+<td>2026-04-04</td>
+<td>初始版本，包含五大核心文档</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_14">更新计划</h3>
+<ul>
+<li><strong>v1.1</strong>: 增加视频教程索引</li>
+<li><strong>v1.2</strong>: 增加更多学习路径</li>
+<li><strong>v1.3</strong>: 增加交互式示例</li>
+</ul>
+<hr />
+<h2 id="_15">📞 获取帮助</h2>
+<h3 id="_16">自助资源</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>位置</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>项目使用指南</td>
+<td><code>../00-FormalMath项目使用指南-完整版.md</code></td>
+<td>全面使用说明</td>
+</tr>
+<tr>
+<td>内容索引</td>
+<td><code>../../00-FormalMath项目内容索引-完整版.md</code></td>
+<td>全文档索引</td>
+</tr>
+<tr>
+<td>术语表</td>
+<td><code>../../00-标准术语表-8语言.md</code></td>
+<td>多语言术语对照</td>
+</tr>
+<tr>
+<td>符号表</td>
+<td><code>../00-数学符号对照表.md</code></td>
+<td>数学符号查询</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_17">社区支持</h3>
+<ul>
+<li><strong>GitHub Issues</strong>: 技术问题和内容错误</li>
+<li><strong>邮件</strong>: support@formalmath.org</li>
+<li><strong>讨论区</strong>: 学习交流和问题讨论</li>
+</ul>
+<hr />
+<h2 id="_18">📄 其他格式</h2>
+<p>本用户手册还提供以下格式：</p>
+<ul>
+<li><strong>PDF版本</strong>: <a href="./用户手册.pdf">用户手册.pdf</a> （完整版，适合打印）</li>
+<li><strong>在线文档</strong>: 可通过 Markdown 阅读器在线查看</li>
+<li><strong>单文件版</strong>: 所有内容合并为一个文档（敬请期待）</li>
+</ul>
+<hr />
+<h2 id="_19">📜 许可信息</h2>
+<p>本用户手册采用与 FormalMath 项目相同的开源许可证。</p>
+<ul>
+<li>✅ 个人学习使用</li>
+<li>✅ 课堂教学使用</li>
+<li>✅ 修改和再分发（需遵守许可证）</li>
+<li>✅ 引用和参考</li>
+</ul>
+<hr />
+<p><strong>祝您使用愉快！</strong> 🎓</p>
+<p><em>最后更新: 2026年4月4日</em></p>
+<hr />
+<hr />
+<p>msc_primary: 00A99<br />
+msc_secondary: 97U50<br />
+document_type: user_manual<br />
+version: 1.0</p>
+<hr />
+<h1 id="formalmath_2">FormalMath 快速开始指南</h1>
+<p><strong>版本</strong>: v1.0<br />
+<strong>发布日期</strong>: 2026年4月4日<br />
+<strong>预计阅读时间</strong>: 15分钟</p>
+<hr />
+<h2 id="formalmath_3">欢迎使用 FormalMath</h2>
+<p>FormalMath 是一个面向数学教育的综合性知识库，致力于建立从基础数学到现代数学前沿的完整知识体系。</p>
+<h3 id="_20">您能在这里找到什么？</h3>
+<table>
+<thead>
+<tr>
+<th>资源类型</th>
+<th>数量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数学文档</td>
+<td>6,500+</td>
+<td>15个数学分支结构化内容</td>
+</tr>
+<tr>
+<td>数学家理念</td>
+<td>62位</td>
+<td>从阿基米德到肖尔策的深度分析</td>
+</tr>
+<tr>
+<td>国际课程映射</td>
+<td>121+门</td>
+<td>MIT、Harvard、Stanford等九校课程</td>
+</tr>
+<tr>
+<td>Lean4形式化证明</td>
+<td>20个</td>
+<td>与Mathlib4对齐的可运行代码</td>
+</tr>
+<tr>
+<td>智能学习系统</td>
+<td>3大系统</td>
+<td>认知诊断、评估、自适应路径</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_21">第一步：选择您的起点</h2>
+<p>根据您的数学背景，选择合适的学习起点：</p>
+<h3 id="_22">🌱 初学者（高中/大一水平）</h3>
+<p><strong>如果您符合以下情况</strong>：<br />
+- 刚接触高等数学<br />
+- 需要巩固数学基础<br />
+- 准备大学数学课程</p>
+<p><strong>推荐学习路径</strong>：</p>
+<ol>
+<li><strong>集合论基础</strong> → <code>docs/01-基础数学/集合论/01-集合论基础-国际标准版.md</code></li>
+<li><strong>数系与运算</strong> → <code>docs/01-基础数学/集合论/02-数系与运算-深度扩展版.md</code></li>
+<li><strong>线性代数</strong> → <code>docs/02-代数结构/线性代数/线性代数-深度扩展版.md</code></li>
+</ol>
+<p><strong>预计学习时间</strong>: 3-4个月</p>
+<hr />
+<h3 id="_23">🌿 中级学习者（大二/大三水平）</h3>
+<p><strong>如果您符合以下情况</strong>：<br />
+- 已掌握线性代数和微积分<br />
+- 希望深入学习抽象代数或分析学<br />
+- 准备研究生入学考试</p>
+<p><strong>推荐学习路径</strong>：</p>
+<ol>
+<li><strong>群论</strong> → <code>docs/02-代数结构/群论/群论-深度扩展版.md</code></li>
+<li><strong>实分析</strong> → <code>docs/03-分析学/01-实分析/实分析-深度扩展版.md</code></li>
+<li><strong>点集拓扑</strong> → <code>docs/05-拓扑学/点集拓扑-深度扩展版.md</code></li>
+</ol>
+<p><strong>预计学习时间</strong>: 4-6个月</p>
+<hr />
+<h3 id="_24">🌳 高级学习者（研究生水平）</h3>
+<p><strong>如果您符合以下情况</strong>：<br />
+- 正在攻读数学研究生学位<br />
+- 从事数学研究<br />
+- 需要深入理解现代数学前沿</p>
+<p><strong>推荐学习路径</strong>：</p>
+<ol>
+<li><strong>格洛腾迪克数学理念</strong> → <code>数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/</code></li>
+<li><strong>概形理论</strong> → <code>docs/13-代数几何/概形理论-深度扩展版.md</code></li>
+<li><strong>同调代数</strong> → <code>docs/15-同调代数/导出范畴-深度扩展版.md</code></li>
+</ol>
+<p><strong>预计学习时间</strong>: 6-12个月</p>
+<hr />
+<h2 id="_25">第二步：了解文档命名规则</h2>
+<p>FormalMath 的文档采用统一的命名规则，帮助您快速识别内容深度：</p>
+<table>
+<thead>
+<tr>
+<th>后缀</th>
+<th>含义</th>
+<th>适合人群</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-基础版.md</code></td>
+<td>概念介绍</td>
+<td>初学者</td>
+<td>直观解释，较少证明</td>
+</tr>
+<tr>
+<td><code>-增强版.md</code></td>
+<td>定理+例子</td>
+<td>中级</td>
+<td>包含主要定理和应用</td>
+</tr>
+<tr>
+<td><code>-深度扩展版.md</code></td>
+<td>完整证明</td>
+<td>高级</td>
+<td>严格证明，深入分析</td>
+</tr>
+<tr>
+<td><code>-国际标准版.md</code></td>
+<td>国际对齐</td>
+<td>所有</td>
+<td>与国际课程对应</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_26">示例</h3>
+<pre><code>docs/02-代数结构/群论/
+├── 群论-基础版.md          # 概念介绍
+docs/02-代数结构/群论/群论-深度扩展版.md    # 完整理论
+docs/02-代数结构/群论/群论-国际标准版.md    # MIT/Harvard对齐
+</code></pre>
+<hr />
+<h2 id="_27">第三步：开始使用智能学习系统</h2>
+<p>FormalMath 提供三大智能学习系统，帮助您高效学习：</p>
+<h3 id="1">1. 认知诊断系统</h3>
+<p><strong>功能</strong>: 评估您在 L0-L3 四个知识层次的能力</p>
+<p><strong>使用步骤</strong>：</p>
+<ol>
+<li>进入 <code>docs/00-认知诊断系统使用指南.md</code></li>
+<li>完成诊断测试（约30-45分钟）</li>
+<li>查看诊断报告，了解薄弱环节</li>
+<li>根据建议开始学习</li>
+</ol>
+<p><strong>知识层次说明</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>名称</th>
+<th>能力要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L0</td>
+<td>基础概念层</td>
+<td>概念识别、直观理解</td>
+</tr>
+<tr>
+<td>L1</td>
+<td>定义理解层</td>
+<td>形式化定义、基本证明</td>
+</tr>
+<tr>
+<td>L2</td>
+<td>定理应用层</td>
+<td>复杂证明、综合应用</td>
+</tr>
+<tr>
+<td>L3</td>
+<td>综合证明层</td>
+<td>创新性研究、开放问题</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2">2. 自适应学习路径系统</h3>
+<p><strong>功能</strong>: 根据您的特征生成个性化学习路径</p>
+<p><strong>使用步骤</strong>：</p>
+<ol>
+<li>导入认知诊断结果</li>
+<li>设定学习目标（如"掌握群论基础"）</li>
+<li>系统生成最优学习路径</li>
+<li>跟随路径学习，系统实时调整</li>
+</ol>
+<p><strong>路径特点</strong>：<br />
+- 基于 A* 算法优化<br />
+- 考虑您的学习风格（视觉/听觉/动手/阅读）<br />
+- 根据进度动态调整难度</p>
+<hr />
+<h3 id="3">3. 评估系统</h3>
+<p><strong>功能</strong>: 多维度评价学习效果</p>
+<p><strong>评估维度</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>权重</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>知识掌握度</td>
+<td>30%</td>
+<td>概念理解、定理掌握</td>
+</tr>
+<tr>
+<td>技能熟练度</td>
+<td>25%</td>
+<td>计算、证明、建模</td>
+</tr>
+<tr>
+<td>问题解决能力</td>
+<td>25%</td>
+<td>分析、策略、验证</td>
+</tr>
+<tr>
+<td>创新思维能力</td>
+<td>20%</td>
+<td>发散性、创造性</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_28">第四步：探索特色内容</h2>
+<h3 id="_29">数学家理念体系</h3>
+<p>62位数学家的深度分析，提供独特的历史与哲学视角：</p>
+<p><strong>深度之最</strong>：<br />
+- 🏆 格洛腾迪克：493篇文档，182.4万字<br />
+- 🥈 庞加莱：200篇文档，108万字<br />
+- 🥉 希尔伯特：96篇文档，45.1万字</p>
+<p><strong>使用方式</strong>：<br />
+1. <strong>按数学家学习</strong>: 选择感兴趣的数学家，阅读其完整理念体系<br />
+2. <strong>按主题学习</strong>: 在分支文档中查看相关的数学家引用</p>
+<hr />
+<h3 id="lean4_1">形式化证明（Lean4）</h3>
+<p>20个可运行的 Lean4 定理，与 Mathlib4 对齐：</p>
+<p><strong>示例定理</strong>：<br />
+- 拉格朗日定理<br />
+- Sylow第一定理<br />
+- Bolzano-Weierstrass定理<br />
+- Gödel不完备性定理</p>
+<p><strong>运行步骤</strong>：</p>
+<ol>
+<li>安装 Lean 4.29.0</li>
+<li>安装 Mathlib4</li>
+<li>进入 <code>docs/09-形式化证明/Lean4/</code></li>
+<li>运行 <code>lake build</code></li>
+</ol>
+<hr />
+<h3 id="_30">国际课程对齐</h3>
+<p>与九所世界顶尖大学 121+ 门课程详细对应：</p>
+<table>
+<thead>
+<tr>
+<th>学校</th>
+<th>课程数</th>
+<th>核心课程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIT</td>
+<td>13门</td>
+<td>18.705/725/726</td>
+</tr>
+<tr>
+<td>Harvard</td>
+<td>14门</td>
+<td>Math 232ar/br</td>
+</tr>
+<tr>
+<td>Stanford</td>
+<td>8门</td>
+<td>Math 216 (FOAG)</td>
+</tr>
+<tr>
+<td>Princeton</td>
+<td>12门</td>
+<td>MAT 345/346/416</td>
+</tr>
+<tr>
+<td>Cambridge</td>
+<td>18门</td>
+<td>Part III AG</td>
+</tr>
+<tr>
+<td>Oxford</td>
+<td>20门</td>
+<td>C2.1/2.2</td>
+</tr>
+<tr>
+<td>ETH Zurich</td>
+<td>11门</td>
+<td>401-3531/3532</td>
+</tr>
+<tr>
+<td>Toronto</td>
+<td>8门</td>
+<td>MAT137/237/347</td>
+</tr>
+<tr>
+<td>NUS</td>
+<td>17门</td>
+<td>MA2108/3210/4201</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_31">第五步：常用操作速查</h2>
+<h3 id="_32">查找文档</h3>
+<pre><code class="language-bash"># 按主题搜索
+grep -r &quot;Sylow定理&quot; docs/
+
+# 按MSC编码查找
+grep -r &quot;msc_primary: 20D20&quot; docs/
+
+# 按文件名查找
+find . -name &quot;*群论*&quot;
+</code></pre>
+<h3 id="_33">阅读顺序建议</h3>
+<pre><code>Year 1: 基础构建
+├── 集合论与逻辑
+├── 线性代数
+├── 实分析
+└── 群论基础
+
+Year 2: 代数深化
+├── 环论与域论
+├── 模论
+├── 伽罗瓦理论
+└── 交换代数
+
+Year 3: 分析与几何
+├── 复分析
+├── 泛函分析
+├── 点集拓扑
+└── 微分几何
+
+Year 4: 现代专题
+├── 代数拓扑
+├── 代数几何
+├── 同调代数
+└── 表示论
+</code></pre>
+<hr />
+<h2 id="_34">常见问题快速解答</h2>
+<h3 id="q">Q: 我是纯初学者，完全没有高等数学基础，该从哪里开始？</h3>
+<p><strong>A</strong>: 从 <code>docs/01-基础数学/集合论/01-集合论基础-国际标准版.md</code> 开始，这是最基础的内容。</p>
+<h3 id="q_1">Q: 如何找到与我想学的课程对应的内容？</h3>
+<p><strong>A</strong>: <br />
+- MIT课程 → 查阅 <code>project/MIT-course-mapping-detailed.md</code><br />
+- Harvard课程 → 查阅 <code>project/Harvard-course-mapping-detailed.md</code><br />
+- Stanford FOAG → 查阅 <code>project/Stanford-FOAG-mapping-detailed.md</code></p>
+<h3 id="q_2">Q: 文档太多了，如何快速找到我需要的？</h3>
+<p><strong>A</strong>: 查阅 <code>00-FormalMath项目内容索引-完整版.md</code>，这是全项目的索引。</p>
+<h3 id="q_3">Q: 内容深度不合适怎么办？</h3>
+<p><strong>A</strong>: 每个主题通常有多个版本，选择适合您的后缀：<code>-基础版</code>、<code>-增强版</code>、<code>-深度扩展版</code>。</p>
+<h3 id="q_4">Q: 学习过程中遇到问题如何求助？</h3>
+<p><strong>A</strong>: <br />
+- 查看文档中的"历史背景"和"参考文献"部分<br />
+- 参考相关数学家的理念体系<br />
+- 通过GitHub Issue系统反馈</p>
+<hr />
+<h2 id="_35">下一步</h2>
+<ul>
+<li>📖 <strong>深入学习</strong>: 阅读 <a href="./02-功能使用说明.md">02-功能使用说明.md</a></li>
+<li>🎯 <strong>定制路径</strong>: 阅读 <a href="./03-学习路径指南.md">03-学习路径指南.md</a></li>
+<li>❓ <strong>查看FAQ</strong>: 阅读 <a href="./04-常见问题解答.md">04-常见问题解答.md</a></li>
+<li>🔧 <strong>故障排除</strong>: 阅读 <a href="./05-故障排除指南.md">05-故障排除指南.md</a></li>
+</ul>
+<hr />
+<p><strong>祝您学习愉快！</strong> 🎓</p>
+<p><em>最后更新: 2026年4月4日</em></p>
+<hr />
+<hr />
+<p>msc_primary: 00A99<br />
+msc_secondary: 97U50<br />
+document_type: user_manual<br />
+version: 1.0</p>
+<hr />
+<h1 id="formalmath_4">FormalMath 功能使用说明</h1>
+<p><strong>版本</strong>: v1.0<br />
+<strong>发布日期</strong>: 2026年4月4日<br />
+<strong>预计阅读时间</strong>: 25分钟</p>
+<hr />
+<h2 id="_36">目录</h2>
+<ol>
+<li><a href="#一文档系统使用">文档系统使用</a></li>
+<li><a href="#二智能学习系统">智能学习系统</a></li>
+<li><a href="#三数学家理念体系">数学家理念体系</a></li>
+<li><a href="#四形式化证明系统">形式化证明系统</a></li>
+<li><a href="#五国际课程映射">国际课程映射</a></li>
+<li><a href="#六高级搜索功能">高级搜索功能</a></li>
+</ol>
+<hr />
+<h2 id="_37">一、文档系统使用</h2>
+<h3 id="11">1.1 文档结构</h3>
+<p>FormalMath 的文档按数学分支组织，采用 MSC2020 分类标准：</p>
+<pre><code>docs/
+├── 01-基础数学/          # 集合论、数理逻辑基础
+├── 02-代数结构/          # 群论、环论、域论、线性代数
+├── 03-分析学/            # 实分析、复分析、泛函分析
+├── 04-几何学/            # 欧氏几何、非欧几何
+├── 05-拓扑学/            # 点集拓扑、代数拓扑
+├── 06-数论/              # 初等数论、解析数论、代数数论
+├── 07-逻辑学/            # 命题逻辑、一阶逻辑、证明论
+├── 08-计算数学/          # 数值分析、优化算法
+├── 09-形式化证明/        # Lean4、证明系统
+├── 10-语义模型/          # 模型论、类型论
+├── 11-组合数学/          # 计数原理、图论
+├── 12-应用数学/          # 概率论、统计学、微分方程
+├── 13-代数几何/          # 概形理论、层上同调
+├── 14-微分几何/          # 流形、黎曼几何
+├── 15-同调代数/          # 链复形、导出函子
+└── 18-数学物理/          # 量子力学数学基础
+</code></pre>
+<h3 id="12">1.2 文档格式规范</h3>
+<p>每个文档采用统一的 YAML 头部格式：</p>
+<pre><code class="language-yaml">---
+msc_primary: &quot;20-XX&quot;        # 主要MSC分类
+msc_secondary: [&quot;16-XX&quot;]    # 次要MSC分类
+document_type: concept      # 文档类型
+author: &quot;FormalMath Team&quot;   # 作者
+difficulty: 2               # 难度等级 1-4
+target_level: &quot;L1&quot;          # 目标知识层次
+---
+</code></pre>
+<h3 id="13">1.3 阅读技巧</h3>
+<h4 id="_38">使用文档层级</h4>
+<p>每个数学主题通常包含多个深度层次：</p>
+<pre><code>主题：群论
+group_theory/
+├── 群论-基础版.md          # L0-L1: 概念和例子
+├── 群论-增强版.md          # L1-L2: 定理和应用
+└── 群论-深度扩展版.md      # L2-L3: 完整证明
+</code></pre>
+<p><strong>建议</strong>：</p>
+<ul>
+<li>首次接触主题 → 从基础版开始</li>
+<li>需要深入理解 → 阅读深度扩展版</li>
+<li>备考或应用 → 参考增强版</li>
+</ul>
+<h4 id="_39">利用交叉引用</h4>
+<p>文档中包含大量交叉引用：</p>
+<pre><code class="language-markdown">[相关概念](path/to/concept.md)
+[参见定理](../other/theorem.md)
+[数学家理念](../../数学家理念体系/xxx.md)
+</code></pre>
+<hr />
+<h2 id="_40">二、智能学习系统</h2>
+<h3 id="21">2.1 认知诊断系统</h3>
+<h4 id="_41">系统概述</h4>
+<p>基于 HCD（层次约束感知认知诊断）框架，评估 L0-L3 四个知识层次的能力。</p>
+<h4 id="_42">使用流程</h4>
+<p><strong>步骤1：进入诊断系统</strong></p>
+<p>打开 <code>docs/00-认知诊断系统使用指南.md</code></p>
+<p><strong>步骤2：配置诊断参数</strong></p>
+<pre><code class="language-yaml">诊断配置：
+  目标层次: L1-L2          # 可选：L0, L1, L2, L3
+  重点领域: 代数结构       # 可选：全部、代数、分析、几何
+  题目数量: 30             # 默认30题
+</code></pre>
+<p><strong>步骤3：完成测试</strong></p>
+<ul>
+<li>单选题：自动评分</li>
+<li>多选题：需全部选对</li>
+<li>填空题：精确匹配</li>
+<li>简答题/证明题：人工评分</li>
+</ul>
+<p><strong>步骤4：解读诊断报告</strong></p>
+<p>报告包含：</p>
+<pre><code>诊断报告
+├── 综合评估
+│   ├── 整体水平: L1.5
+│   └── 置信度: 87%
+├── L0-L3能力分析
+│   ├── L0: 0.92 (优秀)
+│   ├── L1: 0.78 (良好)
+│   ├── L2: 0.45 (需提升)
+│   └── L3: 0.12 (初学)
+├── 知识领域分布
+│   ├── 代数结构: 75%
+│   ├── 分析学: 60%
+│   └── 几何学: 45%
+├── 薄弱环节
+│   ├── 环论同态
+│   ├── 拓扑连续性
+│   └── 测度论基础
+└── 学习建议
+    ├── 优先: 强化L1基础
+    ├── 次要: 补充先修知识
+    └── 长期: 逐步提升层次
+</code></pre>
+<h4 id="_43">诊断算法原理</h4>
+<p>HCD 算法的核心特点：</p>
+<ol>
+<li><strong>层次感知</strong>：显式建模 L0→L1→L2→L3 的依赖关系</li>
+<li><strong>约束优化</strong>：使用层次约束指导知识状态估计</li>
+<li><strong>多维度输出</strong>：同时输出知识点掌握度和层次能力</li>
+<li><strong>可解释性</strong>：诊断结果有明确的层次结构解释</li>
+</ol>
+<hr />
+<h3 id="22">2.2 自适应学习路径系统</h3>
+<h4 id="_44">系统概述</h4>
+<p>基于知识图谱和 A* 算法，生成个性化学习路径。</p>
+<h4 id="_45">核心功能</h4>
+<p><strong>1. 学习者特征分析</strong></p>
+<pre><code class="language-python">学习者档案 = {
+    &quot;认知诊断结果&quot;: {...},
+    &quot;学习风格&quot;: &quot;visual&quot;,      # visual/auditory/kinesthetic/reading
+    &quot;先验知识&quot;: {...},
+    &quot;学习目标&quot;: [&quot;群&quot;, &quot;环&quot;, &quot;域&quot;],
+    &quot;可用时间&quot;: {
+        &quot;daily_hours&quot;: 2,
+        &quot;weekly_days&quot;: 5
+    }
+}
+</code></pre>
+<p><strong>2. 路径生成</strong></p>
+<p>系统使用 A* 算法寻找最优路径：</p>
+<pre><code>输入: 当前知识状态 → 目标概念
+输出: 最优学习路径
+
+评估指标:
+├── 平滑度: 难度曲线连续性
+├── 覆盖率: 目标概念覆盖程度
+├── 效率: 单位时间学习效果
+└── 多样性: MSC分类分布
+</code></pre>
+<p><strong>3. 实时调整</strong></p>
+<table>
+<thead>
+<tr>
+<th>检测指标</th>
+<th>阈值</th>
+<th>调整策略</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>时间比例</td>
+<td>&gt; 2.0</td>
+<td>降低难度</td>
+</tr>
+<tr>
+<td>错误率</td>
+<td>&gt; 50%</td>
+<td>插入复习</td>
+</tr>
+<tr>
+<td>帮助请求</td>
+<td>≥ 3次</td>
+<td>添加支持内容</td>
+</tr>
+<tr>
+<td>掌握度</td>
+<td>≥ 0.9</td>
+<td>提高难度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. 间隔重复复习</strong></p>
+<p>基于艾宾浩斯遗忘曲线：</p>
+<pre><code>掌握度 &gt;= 0.9: [7, 14, 30, 60, 120] 天
+掌握度 &gt;= 0.8: [3, 7, 14, 30, 60] 天
+掌握度 &gt;= 0.7: [1, 3, 7, 14, 30] 天
+掌握度 &lt; 0.7:  [1, 2, 4, 7, 14] 天
+</code></pre>
+<h4 id="_46">使用示例</h4>
+<pre><code class="language-bash"># 生成学习路径
+POST /api/v1/learning-path/generate
+{
+    &quot;learner_id&quot;: &quot;learner-001&quot;,
+    &quot;goal_concepts&quot;: [&quot;群&quot;, &quot;环&quot;, &quot;域&quot;],
+    &quot;max_time_hours&quot;: 100
+}
+
+# 响应
+{
+    &quot;path_id&quot;: &quot;path-001&quot;,
+    &quot;total_nodes&quot;: 15,
+    &quot;estimated_hours&quot;: 45.5,
+    &quot;match_score&quot;: 0.85,
+    &quot;nodes&quot;: [
+        {&quot;concept&quot;: &quot;集合&quot;, &quot;estimated_time&quot;: 2},
+        {&quot;concept&quot;: &quot;二元运算&quot;, &quot;estimated_time&quot;: 3},
+        {&quot;concept&quot;: &quot;群&quot;, &quot;estimated_time&quot;: 8},
+        ...
+    ]
+}
+</code></pre>
+<hr />
+<h3 id="23">2.3 评估系统</h3>
+<h4 id="_47">系统概述</h4>
+<p>多维度、过程化、发展性的学习评估平台。</p>
+<h4 id="_48">四维评价模型</h4>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>权重</th>
+<th>子指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>知识掌握度</td>
+<td>30%</td>
+<td>概念理解、定理掌握、方法熟练</td>
+</tr>
+<tr>
+<td>技能熟练度</td>
+<td>25%</td>
+<td>计算能力、证明能力、建模能力</td>
+</tr>
+<tr>
+<td>问题解决能力</td>
+<td>25%</td>
+<td>问题分析、策略选择、执行验证</td>
+</tr>
+<tr>
+<td>创新思维能力</td>
+<td>20%</td>
+<td>发散性思维、创造性、批判性思维</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_49">评价类型</h4>
+<p><strong>1. 综合评价</strong></p>
+<p>综合评估当前能力水平：</p>
+<pre><code class="language-json">{
+  &quot;learner_id&quot;: &quot;learner-001&quot;,
+  &quot;assessment_type&quot;: &quot;comprehensive&quot;,
+  &quot;scores&quot;: {
+    &quot;knowledge&quot;: {&quot;concept&quot;: 85, &quot;theorem&quot;: 80, &quot;method&quot;: 75},
+    &quot;skill&quot;: {&quot;calculation&quot;: 78, &quot;proof&quot;: 72, &quot;modeling&quot;: 70},
+    &quot;problem_solving&quot;: {&quot;analysis&quot;: 82, &quot;strategy&quot;: 80, &quot;verification&quot;: 85},
+    &quot;creative&quot;: {&quot;divergent&quot;: 75, &quot;creativity&quot;: 78, &quot;critical&quot;: 72}
+  }
+}
+</code></pre>
+<p><strong>2. 过程性评价</strong></p>
+<p>基于学习行为数据的持续评估：</p>
+<pre><code>评价指标：
+├── 参与度 (35%): 学习时长、频率
+├── 主动性 (25%): 主动学习行为占比
+├── 持续性 (20%): 学习规律性
+└── 投入度 (20%): 平均学习时长
+</code></pre>
+<p><strong>3. 增值评价</strong></p>
+<p>对比期初期末，量化学习进步：</p>
+<pre><code>增值指标：
+├── 绝对增值: 期末分 - 期初分
+├── 相对增值: (期末 - 期初) / 期初 × 100%
+├── 增长百分位 (SGP): 同侪排名
+└── 增长等级: 快速增长/稳健增长/缓慢增长/停滞/退步
+</code></pre>
+<h4 id="_50">评价等级</h4>
+<table>
+<thead>
+<tr>
+<th>等级</th>
+<th>分数范围</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>专家</td>
+<td>90-100</td>
+<td>能够创造新知和指导他人</td>
+</tr>
+<tr>
+<td>高级</td>
+<td>80-89</td>
+<td>能够灵活应用和迁移知识</td>
+</tr>
+<tr>
+<td>熟练</td>
+<td>60-79</td>
+<td>能够独立应用知识和技能</td>
+</tr>
+<tr>
+<td>发展中</td>
+<td>40-59</td>
+<td>正在发展理解和应用能力</td>
+</tr>
+<tr>
+<td>初级</td>
+<td>0-39</td>
+<td>正在建立基础概念和技能</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_51">三、数学家理念体系</h2>
+<h3 id="31">3.1 体系结构</h3>
+<pre><code>数学家理念体系/
+├── [数学家姓名]数学理念/
+│   ├── 00-数学家理念体系README.md
+│   ├── 01-基础信息/
+│   │   ├── 01-基本信息与历史背景.md
+│   │   ├── 02-教育背景与学术生涯.md
+│   │   └── 03-主要成就与荣誉.md
+│   ├── 02-数学内容深度分析/
+│   │   ├── [分支1]/
+│   │   ├── [分支2]/
+│   │   └── ...
+│   ├── 03-方法论与思想体系/
+│   │   ├── 01-核心数学思想.md
+│   │   ├── 02-研究方法论.md
+│   │   └── 03-问题解决策略.md
+│   ├── 04-历史影响与现代意义/
+│   │   ├── 01-对后世数学发展的影响.md
+│   │   ├── 02-在当代数学中的应用.md
+│   │   └── 03-与其他领域的关系.md
+│   ├── 05-原始文献与参考资料/
+│   │   ├── 01-原始论文解读.md
+│   │   └── 02-经典著作分析.md
+│   └── 06-教学与传播/
+│       ├── 01-教育理念.md
+│       └── 02-概念教学方法.md
+</code></pre>
+<h3 id="32">3.2 深度等级</h3>
+<table>
+<thead>
+<tr>
+<th>等级</th>
+<th>标记</th>
+<th>文档数</th>
+<th>代表数学家</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⭐⭐⭐⭐⭐</td>
+<td>研究级</td>
+<td>26位</td>
+<td>格洛腾迪克、庞加莱、希尔伯特</td>
+</tr>
+<tr>
+<td>⭐⭐⭐☆☆</td>
+<td>教学级</td>
+<td>1位</td>
+<td>克莱因</td>
+</tr>
+<tr>
+<td>⭐⭐☆☆☆</td>
+<td>基础级</td>
+<td>35位</td>
+<td>阿蒂亚、塞尔、德利涅</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33">3.3 使用方式</h3>
+<p><strong>方式一：按数学家学习</strong></p>
+<p>适合：了解特定数学家的思想体系</p>
+<p>步骤：</p>
+<ol>
+<li>选择感兴趣的数学家</li>
+<li>从 <code>01-基础信息/</code> 开始了解背景</li>
+<li>阅读 <code>02-数学内容深度分析/</code> 深入理解</li>
+<li>参考 <code>03-方法论与思想体系/</code> 学习思维方法</li>
+</ol>
+<p><strong>方式二：按主题学习</strong></p>
+<p>适合：学习特定数学分支时了解历史背景</p>
+<p>步骤：</p>
+<ol>
+<li>在学习分支文档时注意数学家引用</li>
+<li>点击引用链接跳转到理念体系</li>
+<li>阅读相关数学家的贡献分析</li>
+</ol>
+<hr />
+<h2 id="_52">四、形式化证明系统</h2>
+<h3 id="41">4.1 系统概述</h3>
+<p>20个 Lean4 形式化证明，与 Mathlib4 v4.29.0 对齐。</p>
+<h3 id="42">4.2 定理列表</h3>
+<table>
+<thead>
+<tr>
+<th>定理</th>
+<th>领域</th>
+<th>Lean4文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>拉格朗日定理</td>
+<td>群论</td>
+<td>LagrangeTheorem.lean</td>
+</tr>
+<tr>
+<td>Sylow第一定理</td>
+<td>群论</td>
+<td>SylowFirstTheorem.lean</td>
+</tr>
+<tr>
+<td>Bolzano-Weierstrass定理</td>
+<td>分析学</td>
+<td>BolzanoWeierstrass.lean</td>
+</tr>
+<tr>
+<td>Gödel不完备性定理</td>
+<td>逻辑学</td>
+<td>GodelIncompleteness.lean</td>
+</tr>
+<tr>
+<td>中间值定理</td>
+<td>分析学</td>
+<td>IntermediateValue.lean</td>
+</tr>
+<tr>
+<td>费马小定理</td>
+<td>数论</td>
+<td>FermatLittleTheorem.lean</td>
+</tr>
+</tbody>
+</table>
+<h3 id="43">4.3 环境配置</h3>
+<p><strong>安装 Lean 4</strong>：</p>
+<pre><code class="language-bash"># 使用 elan 安装 Lean
+curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
+
+# 安装特定版本
+elan toolchain install leanprover/lean4:v4.29.0
+elan default leanprover/lean4:v4.29.0
+</code></pre>
+<p><strong>安装 Mathlib4</strong>：</p>
+<pre><code class="language-bash">cd docs/09-形式化证明/Lean4/
+lake update
+lake build
+</code></pre>
+<h3 id="44">4.4 运行证明</h3>
+<pre><code class="language-bash"># 编译所有证明
+lake build
+
+# 运行特定证明
+lean LagrangeTheorem.lean
+
+# 在 VS Code 中打开
+# 安装 Lean4 扩展后打开项目文件夹
+</code></pre>
+<h3 id="45-mathlib4">4.5 与 Mathlib4 的映射</h3>
+<p>62个概念映射示例：</p>
+<table>
+<thead>
+<tr>
+<th>FormalMath概念</th>
+<th>Mathlib4对应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>群</td>
+<td>Group</td>
+</tr>
+<tr>
+<td>环</td>
+<td>Ring</td>
+</tr>
+<tr>
+<td>域</td>
+<td>Field</td>
+</tr>
+<tr>
+<td>拓扑空间</td>
+<td>TopologicalSpace</td>
+</tr>
+<tr>
+<td>连续映射</td>
+<td>Continuous</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_53">五、国际课程映射</h2>
+<h3 id="51">5.1 映射文档</h3>
+<table>
+<thead>
+<tr>
+<th>学校</th>
+<th>映射文档</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIT</td>
+<td><code>project/MIT-course-mapping-detailed.md</code></td>
+</tr>
+<tr>
+<td>Harvard</td>
+<td><code>project/Harvard-course-mapping-detailed.md</code></td>
+</tr>
+<tr>
+<td>Stanford</td>
+<td><code>project/Stanford-FOAG-mapping-detailed.md</code></td>
+</tr>
+<tr>
+<td>Princeton</td>
+<td><code>project/Princeton-course-mapping-detailed.md</code></td>
+</tr>
+<tr>
+<td>Cambridge</td>
+<td><code>project/Cambridge-course-mapping-detailed.md</code></td>
+</tr>
+<tr>
+<td>Oxford</td>
+<td><code>project/Oxford-course-mapping-detailed.md</code></td>
+</tr>
+<tr>
+<td>ETH Zurich</td>
+<td><code>project/ETH-course-mapping-detailed.md</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-mit-18705">5.2 使用示例：MIT 18.705</h3>
+<p><strong>课程</strong>: Commutative Algebra</p>
+<p><strong>FormalMath对应</strong>:</p>
+<ul>
+<li><code>docs/02-代数结构/环论/</code></li>
+<li>格洛腾迪克/02-概形理论/（基础部分）</li>
+</ul>
+<p><strong>覆盖率</strong>: 85%</p>
+<p><strong>学习建议</strong>：</p>
+<ol>
+<li>阅读MIT课程大纲了解学习目标</li>
+<li>按照映射表顺序阅读FormalMath文档</li>
+<li>完成文档中的练习题</li>
+<li>参考MIT OCW的视频和作业</li>
+</ol>
+<h3 id="53-harvard-math-232br">5.3 Harvard Math 232br 亮点</h3>
+<p><strong>课程</strong>: Coherent Sheaves and Cohomology</p>
+<p><strong>FormalMath对应</strong>: 格洛腾迪克/03-上同调理论/</p>
+<p><strong>对齐度</strong>: <strong>98%</strong></p>
+<blockquote>
+<p>这意味着使用FormalMath学习该课程可以达到极佳的效果。</p>
+</blockquote>
+<hr />
+<h2 id="_54">六、高级搜索功能</h2>
+<h3 id="61">6.1 全文搜索</h3>
+<pre><code class="language-bash"># 搜索特定概念
+grep -r &quot;Sylow定理&quot; docs/ --include=&quot;*.md&quot;
+
+# 搜索多个关键词
+grep -rE &quot;(正规子群|商群)&quot; docs/02-代数结构/群论/
+
+# 显示上下文
+grep -r -C 3 &quot;同态基本定理&quot; docs/
+</code></pre>
+<h3 id="62-msc">6.2 MSC编码搜索</h3>
+<pre><code class="language-bash"># 按MSC主分类搜索
+grep -r &quot;msc_primary: \&quot;20D20\&quot;&quot; docs/
+
+# 按MSC次分类搜索
+grep -r &quot;msc_secondary.*\&quot;16-XX\&quot;&quot; docs/
+</code></pre>
+<h3 id="63">6.3 文件名搜索</h3>
+<pre><code class="language-bash"># 查找所有群论相关文档
+find . -name &quot;*群论*&quot; -type f
+
+# 查找所有深度扩展版文档
+find docs/ -name &quot;*深度扩展版.md&quot;
+</code></pre>
+<h3 id="64">6.4 内容索引使用</h3>
+<p>查阅 <code>00-FormalMath项目内容索引-完整版.md</code>：</p>
+<pre><code>索引结构：
+├── 按MSC分类索引
+│   ├── 00-XX: 一般数学
+│   ├── 01-XX: 数学史与传记
+│   └── ...
+├── 按分支索引
+│   ├── 基础数学
+│   ├── 代数结构
+│   └── ...
+├── 按难度索引
+│   ├── L0: 基础概念
+│   ├── L1: 定义理解
+│   └── ...
+└── 按课程映射索引
+    ├── MIT
+    ├── Harvard
+    └── ...
+</code></pre>
+<hr />
+<p><strong>继续阅读</strong>: <a href="./03-学习路径指南.md">03-学习路径指南.md</a></p>
+<p><em>最后更新: 2026年4月4日</em></p>
+<hr />
+<hr />
+<p>msc_primary: 00A99<br />
+msc_secondary: 97U50<br />
+document_type: user_manual<br />
+version: 1.0</p>
+<hr />
+<h1 id="formalmath_5">FormalMath 学习路径指南</h1>
+<p><strong>版本</strong>: v1.0<br />
+<strong>发布日期</strong>: 2026年4月4日<br />
+<strong>预计阅读时间</strong>: 30分钟</p>
+<hr />
+<h2 id="_55">目录</h2>
+<ol>
+<li><a href="#一路径概览">路径概览</a></li>
+<li><a href="#二路径一代数几何专业">路径一：代数几何专业</a></li>
+<li><a href="#三路径二分析学方向">路径二：分析学方向</a></li>
+<li><a href="#四路径三代数与数论">路径三：代数与数论</a></li>
+<li><a href="#五路径四逻辑与基础">路径四：逻辑与基础</a></li>
+<li><a href="#六路径五应用数学">路径五：应用数学</a></li>
+<li><a href="#七路径六量子计算数学">路径六：量子计算数学</a></li>
+<li><a href="#八四年制完整规划">四年制完整规划</a></li>
+</ol>
+<hr />
+<h2 id="_56">一、路径概览</h2>
+<p>FormalMath 提供六条主要学习路径，覆盖现代数学的核心领域：</p>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>目标</th>
+<th>预计时间</th>
+<th>难度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>代数几何</td>
+<td>掌握现代代数几何基础</td>
+<td>12-18个月</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>分析学</td>
+<td>实分析、复分析、泛函分析</td>
+<td>10-14个月</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>代数与数论</td>
+<td>抽象代数、代数数论</td>
+<td>10-14个月</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>逻辑与基础</td>
+<td>数理逻辑、集合论基础</td>
+<td>8-12个月</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>应用数学</td>
+<td>概率统计、优化算法</td>
+<td>8-12个月</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>量子计算数学</td>
+<td>量子计算数学基础</td>
+<td>6-10个月</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_57">二、路径一：代数几何专业</h2>
+<h3 id="_58">目标</h3>
+<p>掌握现代代数几何基础，达到研究生水平，能够阅读代数几何研究文献。</p>
+<h3 id="_59">预计时间</h3>
+<p>12-18个月（全职学习）</p>
+<h3 id="_60">前置要求</h3>
+<ul>
+<li>线性代数基础</li>
+<li>抽象代数基础（群、环）</li>
+<li>数学分析基础</li>
+</ul>
+<h3 id="_61">学习路径</h3>
+<h4 id="12_1">阶段1：抽象代数基础（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-2</td>
+<td>群论基础</td>
+<td><code>docs/02-代数结构/群论/群论-深度扩展版.md</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>环论基础</td>
+<td><code>docs/02-代数结构/环论/环论-深度扩展版.md</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>模论基础</td>
+<td><code>docs/02-代数结构/模论/模论-深度扩展版.md</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>7-8</td>
+<td>域论与伽罗瓦理论</td>
+<td><code>数学家理念体系/伽罗瓦数学理念/</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="22_1">阶段2：交换代数（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9-10</td>
+<td>诺特环与整闭包</td>
+<td><code>docs/02-代数结构/环论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>11-12</td>
+<td>局部化与赋值环</td>
+<td><code>docs/02-代数结构/环论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>13-14</td>
+<td>维数理论</td>
+<td><code>docs/02-代数结构/环论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>15-16</td>
+<td>平坦性</td>
+<td><code>docs/02-代数结构/环论/</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>国际课程对应</strong>: MIT 18.705, Harvard Math 221</p>
+<h4 id="31_1">阶段3：点集拓扑（1个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17-18</td>
+<td>拓扑空间与连续映射</td>
+<td><code>docs/05-拓扑学/点集拓扑-深度扩展版.md</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>19-20</td>
+<td>连通性与紧性</td>
+<td><code>docs/05-拓扑学/点集拓扑-深度扩展版.md</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="42_1">阶段4：范畴论基础（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21-22</td>
+<td>范畴与函子</td>
+<td><code>数学家理念体系/格洛腾迪克数学理念/01-范畴论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>23-24</td>
+<td>极限与伴随</td>
+<td><code>数学家理念体系/格洛腾迪克数学理念/01-范畴论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>25-26</td>
+<td>Abel范畴</td>
+<td><code>数学家理念体系/格洛腾迪克数学理念/01-范畴论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>27-28</td>
+<td>层论基础</td>
+<td><code>数学家理念体系/格洛腾迪克数学理念/02-概形理论/</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="53">阶段5：概形理论（3个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>29-31</td>
+<td>仿射概形</td>
+<td><code>格洛腾迪克/02-概形理论/01-仿射概形基础.md</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>32-34</td>
+<td>概形的定义与性质</td>
+<td><code>格洛腾迪克/02-概形理论/02-概形定义与构造.md</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>35-37</td>
+<td>态射的性质</td>
+<td><code>格洛腾迪克/02-概形理论/</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>38-40</td>
+<td>除子与线丛</td>
+<td><code>格洛腾迪克/02-概形理论/07-除子与线丛.md</code></td>
+<td>60h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>国际课程对应</strong>: Stanford FOAG Ch 1-13, Harvard Math 232ar</p>
+<h4 id="63_1">阶段6：层上同调（3个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>41-43</td>
+<td>层上同调基础</td>
+<td><code>格洛腾迪克/03-上同调理论/01-层上同调基础.md</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>44-46</td>
+<td>导出函子</td>
+<td><code>docs/15-同调代数/</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>47-49</td>
+<td>凝聚层上同调</td>
+<td><code>格洛腾迪克/03-上同调理论/25-上同调与凝聚层上同调.md</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>50-52</td>
+<td>Grothendieck对偶</td>
+<td><code>格洛腾迪克/03-上同调理论/22-上同调与Grothendieck对偶.md</code></td>
+<td>60h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>国际课程对应</strong>: Harvard Math 232br (98%对应度)</p>
+<h4 id="73">阶段7：曲线与曲面（3个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>53-56</td>
+<td>代数曲线</td>
+<td><code>docs/13-代数几何/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>57-60</td>
+<td>代数曲面</td>
+<td><code>docs/13-代数几何/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>61-64</td>
+<td>高级专题</td>
+<td><code>格洛腾迪克/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_62">关键里程碑</h3>
+<ul>
+<li><strong>第4个月末</strong>: 完成交换代数，能阅读Atiyah-MacDonald</li>
+<li><strong>第8个月末</strong>: 完成概形理论，能阅读Hartshorne第II章</li>
+<li><strong>第12个月末</strong>: 完成层上同调，能阅读Hartshorne第III章</li>
+<li><strong>第18个月末</strong>: 完成曲线与曲面，具备研究基础</li>
+</ul>
+<h3 id="_63">推荐教材对应</h3>
+<table>
+<thead>
+<tr>
+<th>教材</th>
+<th>FormalMath对应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hartshorne</td>
+<td>格洛腾迪克/02-概形理论/ + 03-上同调理论/</td>
+</tr>
+<tr>
+<td>Vakil FOAG</td>
+<td>格洛腾迪克/02-概形理论/</td>
+</tr>
+<tr>
+<td>Liu Qing</td>
+<td>docs/13-代数几何/</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_64">三、路径二：分析学方向</h2>
+<h3 id="_65">目标</h3>
+<p>掌握实分析、复分析、泛函分析，建立严格的分析学基础。</p>
+<h3 id="_66">预计时间</h3>
+<p>10-14个月</p>
+<h3 id="_67">前置要求</h3>
+<ul>
+<li>微积分基础</li>
+<li>线性代数基础</li>
+<li>集合论基础</li>
+</ul>
+<h3 id="_68">学习路径</h3>
+<h4 id="12_2">阶段1：实分析基础（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-2</td>
+<td>实数系统</td>
+<td><code>docs/03-分析学/01-实分析/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>序列与级数</td>
+<td><code>docs/03-分析学/01-实分析/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>连续性</td>
+<td><code>docs/03-分析学/01-实分析/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>7-8</td>
+<td>微分与积分</td>
+<td><code>docs/03-分析学/01-实分析/</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>国际课程对应</strong>: MIT 18.100, Harvard Math 114</p>
+<h4 id="22_2">阶段2：测度论（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9-10</td>
+<td>Lebesgue测度</td>
+<td><code>docs/03-分析学/测度论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>11-12</td>
+<td>可测函数</td>
+<td><code>docs/03-分析学/测度论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>13-14</td>
+<td>Lebesgue积分</td>
+<td><code>docs/03-分析学/测度论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>15-16</td>
+<td>L^p空间</td>
+<td><code>docs/03-分析学/测度论/</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="32_1">阶段3：复分析（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17-19</td>
+<td>复数与解析函数</td>
+<td><code>docs/03-分析学/02-复分析/</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>20-22</td>
+<td>复积分</td>
+<td><code>docs/03-分析学/02-复分析/</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>23-25</td>
+<td>留数定理</td>
+<td><code>docs/03-分析学/02-复分析/</code></td>
+<td>60h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>国际课程对应</strong>: MIT 18.112, Harvard Math 113</p>
+<h4 id="42_2">阶段4：泛函分析（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26-28</td>
+<td>Banach空间</td>
+<td><code>docs/03-分析学/03-泛函分析/</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>29-31</td>
+<td>Hilbert空间</td>
+<td><code>docs/03-分析学/03-泛函分析/</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>32-34</td>
+<td>算子理论</td>
+<td><code>docs/03-分析学/03-泛函分析/</code></td>
+<td>60h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="52">阶段5：微分方程（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>35-37</td>
+<td>常微分方程</td>
+<td><code>docs/03-分析学/04-微分方程/</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>38-40</td>
+<td>偏微分方程基础</td>
+<td><code>docs/03-分析学/04-微分方程/</code></td>
+<td>60h</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_69">四、路径三：代数与数论</h2>
+<h3 id="_70">目标</h3>
+<p>掌握抽象代数、代数数论，理解现代数论的基本框架。</p>
+<h3 id="_71">预计时间</h3>
+<p>10-14个月</p>
+<h3 id="_72">学习路径</h3>
+<h4 id="12_3">阶段1：群论（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-2</td>
+<td>群的基本概念</td>
+<td><code>docs/02-代数结构/群论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>子群与商群</td>
+<td><code>docs/02-代数结构/群论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>群同态与同构</td>
+<td><code>docs/02-代数结构/群论/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>7-8</td>
+<td>Sylow定理</td>
+<td><code>docs/02-代数结构/群论/</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>国际课程对应</strong>: MIT 18.704</p>
+<h4 id="22_3">阶段2：环论与域论（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9-11</td>
+<td>环的基本理论</td>
+<td><code>docs/02-代数结构/环论/</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>12-14</td>
+<td>整环与域</td>
+<td><code>docs/02-代数结构/环论/</code></td>
+<td>60h</td>
+</tr>
+<tr>
+<td>15-16</td>
+<td>多项式环</td>
+<td><code>docs/02-代数结构/环论/</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="32_2">阶段3：模论（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17-20</td>
+<td>模的基本理论</td>
+<td><code>docs/02-代数结构/模论/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>21-24</td>
+<td>模的结构定理</td>
+<td><code>docs/02-代数结构/模论/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="42_3">阶段4：伽罗瓦理论（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25-28</td>
+<td>域扩张</td>
+<td><code>数学家理念体系/伽罗瓦数学理念/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>29-32</td>
+<td>伽罗瓦对应</td>
+<td><code>数学家理念体系/伽罗瓦数学理念/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="52_1">阶段5：代数数论（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>33-36</td>
+<td>代数整数</td>
+<td><code>docs/06-数论/代数数论/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>37-40</td>
+<td>理想类群</td>
+<td><code>docs/06-数论/代数数论/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>国际课程对应</strong>: Harvard Math 223a/b</p>
+<hr />
+<h2 id="_73">五、路径四：逻辑与基础</h2>
+<h3 id="_74">目标</h3>
+<p>掌握数理逻辑、集合论、数学基础。</p>
+<h3 id="_75">预计时间</h3>
+<p>8-12个月</p>
+<h3 id="_76">学习路径</h3>
+<h4 id="11_1">阶段1：命题逻辑（1个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-2</td>
+<td>语法与语义</td>
+<td><code>docs/07-逻辑学/命题逻辑/</code></td>
+<td>40h</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>证明系统</td>
+<td><code>docs/07-逻辑学/命题逻辑/</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="22_4">阶段2：谓词逻辑（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5-8</td>
+<td>一阶语言</td>
+<td><code>docs/07-逻辑学/一阶逻辑/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>9-12</td>
+<td>完备性定理</td>
+<td><code>docs/07-逻辑学/一阶逻辑/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3zfc2">阶段3：ZFC集合论（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13-16</td>
+<td>公理系统</td>
+<td><code>docs/01-基础数学/ZFC公理体系/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>17-20</td>
+<td>序数与基数</td>
+<td><code>docs/01-基础数学/ZFC公理体系/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="42_4">阶段4：模型论（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21-24</td>
+<td>基本理论</td>
+<td><code>docs/10-语义模型/模型论/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>25-28</td>
+<td>紧致性定理</td>
+<td><code>docs/10-语义模型/模型论/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="52_2">阶段5：哥德尔定理（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>29-32</td>
+<td>不完备性定理</td>
+<td><code>数学家理念体系/哥德尔数学理念/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>33-36</td>
+<td>证明论</td>
+<td><code>数学家理念体系/根岑数学理念/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_77">六、路径五：应用数学</h2>
+<h3 id="_78">目标</h3>
+<p>掌握概率论、统计学、优化算法。</p>
+<h3 id="_79">预计时间</h3>
+<p>8-12个月</p>
+<h3 id="_80">学习路径</h3>
+<h4 id="12_4">阶段1：概率论基础（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-4</td>
+<td>概率空间与随机变量</td>
+<td><code>docs/12-应用数学/概率论/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>5-8</td>
+<td>期望与方差</td>
+<td><code>docs/12-应用数学/概率论/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="22_5">阶段2：统计学（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9-12</td>
+<td>参数估计</td>
+<td><code>docs/12-应用数学/统计学/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>13-16</td>
+<td>假设检验</td>
+<td><code>docs/12-应用数学/统计学/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="32_3">阶段3：优化算法（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17-20</td>
+<td>线性规划</td>
+<td><code>docs/08-计算数学/优化算法/</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>21-24</td>
+<td>凸优化</td>
+<td><code>docs/08-计算数学/优化算法/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="42_5">阶段4：机器学习数学（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25-28</td>
+<td>梯度下降</td>
+<td><code>docs/应用案例库/机器学习梯度下降-深度版.md</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>29-32</td>
+<td>神经网络数学</td>
+<td><code>docs/12-应用数学/</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_81">七、路径六：量子计算数学</h2>
+<h3 id="_82">目标</h3>
+<p>掌握量子计算的数学基础。</p>
+<h3 id="_83">预计时间</h3>
+<p>6-10个月</p>
+<h3 id="_84">学习路径</h3>
+<h4 id="11_2">阶段1：量子力学数学基础（1个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-4</td>
+<td>Hilbert空间</td>
+<td><code>docs/18-数学物理/02-量子力学的数学基础-深度版.md</code></td>
+<td>40h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="22_6">阶段2：群论与量子计算（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5-8</td>
+<td>量子门与群表示</td>
+<td><code>docs/02-代数结构/03-应用分析/群论应用/05-群论应用-量子计算版.md</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>9-12</td>
+<td>量子算法</td>
+<td><code>docs/12-应用数学/14-量子计算数学-深化版.md</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<h4 id="32_4">阶段3：线性代数与量子计算（2个月）</h4>
+<table>
+<thead>
+<tr>
+<th>周次</th>
+<th>内容</th>
+<th>文档</th>
+<th>预计时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13-16</td>
+<td>张量积与纠缠</td>
+<td><code>docs/02-代数结构/03-应用分析/线性代数应用/06-线性代数应用-量子计算版.md</code></td>
+<td>80h</td>
+</tr>
+<tr>
+<td>17-20</td>
+<td>量子傅里叶变换</td>
+<td><code>docs/12-应用数学/14-量子计算数学-深化版.md</code></td>
+<td>80h</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_85">八、四年制完整规划</h2>
+<h3 id="_86">本科四年学习规划</h3>
+<pre><code>Year 1: 基础构建
+├── 第一学期
+│   ├── 集合论与逻辑 (L0-L1)
+│   ├── 线性代数 (L0-L1)
+│   └── 实分析入门 (L0-L1)
+└── 第二学期
+    ├── 群论基础 (L1)
+    ├── 多元微积分
+    └── 常微分方程
+
+Year 2: 代数深化
+├── 第一学期
+│   ├── 环论与域论 (L1-L2)
+│   ├── 模论基础 (L1-L2)
+│   └── 复分析 (L1-L2)
+└── 第二学期
+    ├── 伽罗瓦理论 (L2)
+    ├── 交换代数 (L2)
+    └── 点集拓扑 (L1-L2)
+
+Year 3: 分析与几何
+├── 第一学期
+│   ├── 测度论 (L2)
+│   ├── 泛函分析 (L2)
+│   └── 微分几何 (L2)
+└── 第二学期
+    ├── 代数拓扑 (L2-L3)
+    ├── 微分拓扑
+    └── 代数数论 (L2-L3)
+
+Year 4: 现代专题
+├── 第一学期
+│   ├── 概形理论 (L2-L3)
+│   ├── 同调代数 (L2-L3)
+│   └── 表示论 (L2-L3)
+└── 第二学期
+    ├── 层上同调 (L3)
+    ├── 代数几何专题 (L3)
+    └── 毕业论文/研究项目
+</code></pre>
+<h3 id="_87">关键检查点</h3>
+<table>
+<thead>
+<tr>
+<th>时间点</th>
+<th>目标</th>
+<th>检验标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第1年末</td>
+<td>完成基础构建</td>
+<td>能独立证明实分析基本定理</td>
+</tr>
+<tr>
+<td>第2年末</td>
+<td>完成代数深化</td>
+<td>能理解和应用伽罗瓦理论</td>
+</tr>
+<tr>
+<td>第3年末</td>
+<td>完成分析几何</td>
+<td>能阅读代数拓扑教材</td>
+</tr>
+<tr>
+<td>第4年末</td>
+<td>完成现代专题</td>
+<td>能阅读代数几何研究论文</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>继续阅读</strong>: <a href="./04-常见问题解答.md">04-常见问题解答.md</a></p>
+<p><em>最后更新: 2026年4月4日</em></p>
+<hr />
+<hr />
+<p>msc_primary: 00A99<br />
+msc_secondary: 97U50<br />
+document_type: user_manual<br />
+version: 1.0</p>
+<hr />
+<h1 id="formalmath-faq">FormalMath 常见问题解答 (FAQ)</h1>
+<p><strong>版本</strong>: v1.0<br />
+<strong>发布日期</strong>: 2026年4月4日<br />
+<strong>问题数量</strong>: 50+</p>
+<hr />
+<h2 id="_88">目录</h2>
+<ol>
+<li><a href="#一入门问题">入门问题</a></li>
+<li><a href="#二文档使用问题">文档使用问题</a></li>
+<li><a href="#三智能学习系统问题">智能学习系统问题</a></li>
+<li><a href="#四技术问题">技术问题</a></li>
+<li><a href="#五内容问题">内容问题</a></li>
+<li><a href="#六国际课程对齐问题">国际课程对齐问题</a></li>
+</ol>
+<hr />
+<h2 id="_89">一、入门问题</h2>
+<h3 id="q1-formalmath">Q1: 我完全没有任何高等数学基础，可以学习FormalMath吗？</h3>
+<p><strong>A</strong>: 可以！FormalMath 提供从基础到前沿的完整内容。</p>
+<p><strong>推荐起点</strong>：</p>
+<ol>
+<li><code>docs/01-基础数学/集合论/01-集合论基础-国际标准版.md</code></li>
+<li><code>docs/01-基础数学/集合论/02-数系与运算-深度扩展版.md</code></li>
+<li><code>docs/02-代数结构/线性代数/线性代数-深度扩展版.md</code></li>
+</ol>
+<p><strong>学习建议</strong>：从带有 <code>-基础版</code> 或 <code>-国际标准版</code> 后缀的文档开始。</p>
+<hr />
+<h3 id="q2-formalmath">Q2: FormalMath 适合什么水平的学习者？</h3>
+<p><strong>A</strong>: FormalMath 涵盖 L0-L3 四个知识层次：</p>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>适合人群</th>
+<th>内容深度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L0</td>
+<td>高中/大一</td>
+<td>概念介绍、直观理解</td>
+</tr>
+<tr>
+<td>L1</td>
+<td>大二/大三</td>
+<td>形式化定义、基本定理</td>
+</tr>
+<tr>
+<td>L2</td>
+<td>研究生</td>
+<td>复杂证明、综合应用</td>
+</tr>
+<tr>
+<td>L3</td>
+<td>研究者</td>
+<td>前沿内容、开放问题</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="q3-formalmath">Q3: 使用 FormalMath 需要先学习编程吗？</h3>
+<p><strong>A</strong>: 不需要。</p>
+<ul>
+<li><strong>阅读文档</strong>: 完全不需要编程</li>
+<li><strong>形式化证明</strong>: 需要学习 Lean4（可选）</li>
+<li><strong>智能学习系统</strong>: 通过界面使用（无需编程）</li>
+</ul>
+<hr />
+<h3 id="q4">Q4: 我应该从哪里开始学习？</h3>
+<p><strong>A</strong>: 根据您的背景选择：</p>
+<p><strong>情况A：高中毕业生/大一新生</strong></p>
+<pre><code>路径: 集合论 → 线性代数 → 微积分 → 群论
+时间: 约6个月
+</code></pre>
+<p><strong>情况B：大二/大三数学系学生</strong></p>
+<pre><code>路径: 实分析 → 抽象代数 → 拓扑学
+时间: 约4个月
+</code></pre>
+<p><strong>情况C：研究生/研究人员</strong></p>
+<pre><code>路径: 根据研究方向选择专题
+例如: 概形理论 → 层上同调 → 导出范畴
+时间: 约6-12个月
+</code></pre>
+<hr />
+<h3 id="q5">Q5: 每天需要花多少时间学习？</h3>
+<p><strong>A</strong>: 取决于您的目标：</p>
+<table>
+<thead>
+<tr>
+<th>学习目标</th>
+<th>每日时间</th>
+<th>完成基础内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>兴趣学习</td>
+<td>30分钟</td>
+<td>1-2年</td>
+</tr>
+<tr>
+<td>专业提升</td>
+<td>1-2小时</td>
+<td>6-12个月</td>
+</tr>
+<tr>
+<td>全职学习</td>
+<td>4-6小时</td>
+<td>3-6个月</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_90">二、文档使用问题</h2>
+<h3 id="q6">Q6: 文档命名中的后缀是什么意思？</h3>
+<p><strong>A</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>后缀</th>
+<th>含义</th>
+<th>适合人群</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-基础版.md</code></td>
+<td>概念介绍，直观解释</td>
+<td>初学者 (L0)</td>
+</tr>
+<tr>
+<td><code>-增强版.md</code></td>
+<td>定理+例子，应用导向</td>
+<td>中级 (L1)</td>
+</tr>
+<tr>
+<td><code>-深度扩展版.md</code></td>
+<td>完整证明，严格分析</td>
+<td>高级 (L2-L3)</td>
+</tr>
+<tr>
+<td><code>-国际标准版.md</code></td>
+<td>国际课程对齐</td>
+<td>所有层次</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="q7">Q7: 如何找到我需要的文档？</h3>
+<p><strong>A</strong>: 多种方法：</p>
+<p><strong>方法1：使用索引</strong></p>
+<ul>
+<li>查阅 <code>00-FormalMath项目内容索引-完整版.md</code></li>
+</ul>
+<p><strong>方法2：按MSC分类</strong></p>
+<ul>
+<li>代数 → 20-XX</li>
+<li>分析 → 30-XX, 40-XX</li>
+<li>几何 → 51-XX, 53-XX</li>
+</ul>
+<p><strong>方法3：按分支目录</strong></p>
+<ul>
+<li><code>docs/02-代数结构/</code> → 群论、环论、线性代数</li>
+<li><code>docs/03-分析学/</code> → 实分析、复分析、泛函分析</li>
+</ul>
+<p><strong>方法4：全文搜索</strong></p>
+<pre><code class="language-bash">grep -r &quot;Sylow定理&quot; docs/ --include=&quot;*.md&quot;
+</code></pre>
+<hr />
+<h3 id="q8">Q8: 文档中的数学符号看不懂怎么办？</h3>
+<p><strong>A</strong>:</p>
+<ol>
+<li><strong>查阅符号对照表</strong>: <code>docs/00-数学符号对照表.md</code></li>
+<li><strong>查阅符号速查表</strong>: <code>docs/00-数学符号速查表.md</code></li>
+<li><strong>查看文档附录</strong>: 大多数文档末尾有符号说明</li>
+</ol>
+<hr />
+<h3 id="q9">Q9: 为什么有些文档内容重复？</h3>
+<p><strong>A</strong>: 这是设计上的刻意安排：</p>
+<ul>
+<li><strong>不同深度</strong>: 同一主题有基础版、增强版、深度版</li>
+<li><strong>不同视角</strong>: 数学家理念体系与分支文档互相补充</li>
+<li><strong>学习连贯性</strong>: 允许从不同入口进入同一主题</li>
+</ul>
+<hr />
+<h3 id="q10">Q10: 如何打印或导出文档？</h3>
+<p><strong>A</strong>:</p>
+<p><strong>打印</strong>：</p>
+<ul>
+<li>Markdown 文档可直接打印</li>
+<li>或使用 pandoc 转换为 PDF</li>
+</ul>
+<p><strong>导出</strong>：</p>
+<pre><code class="language-bash"># 转换为 PDF
+pandoc input.md -o output.pdf
+
+# 转换为 HTML
+pandoc input.md -o output.html
+
+# 转换为 Word
+pandoc input.md -o output.docx
+</code></pre>
+<hr />
+<h2 id="_91">三、智能学习系统问题</h2>
+<h3 id="q11">Q11: 认知诊断系统是如何工作的？</h3>
+<p><strong>A</strong>: 基于 HCD（层次约束感知认知诊断）框架：</p>
+<ol>
+<li><strong>测试</strong>: 完成30-45分钟的诊断测试</li>
+<li><strong>分析</strong>: 系统分析 L0-L3 各层次表现</li>
+<li><strong>报告</strong>: 生成能力分析和薄弱环节报告</li>
+<li><strong>建议</strong>: 提供个性化学习路径建议</li>
+</ol>
+<p><strong>诊断准确度</strong>: &gt;85%</p>
+<hr />
+<h3 id="q12">Q12: 认知诊断测试需要多长时间？</h3>
+<p><strong>A</strong>:</p>
+<ul>
+<li><strong>默认设置</strong>: 30题，约30-45分钟</li>
+<li><strong>快速诊断</strong>: 15题，约15-20分钟</li>
+<li><strong>深度诊断</strong>: 50题，约60-75分钟</li>
+</ul>
+<hr />
+<h3 id="q13">Q13: 自适应学习路径系统如何生成路径？</h3>
+<p><strong>A</strong>: 使用 A* 算法结合多目标优化：</p>
+<ol>
+<li><strong>分析学习者</strong>: 认知风格、能力水平、可用时间</li>
+<li><strong>知识缺口分析</strong>: 识别达到目标所需的概念</li>
+<li><strong>拓扑排序</strong>: 根据先修关系确定顺序</li>
+<li><strong>路径优化</strong>: 平衡时间、深度、广度、平滑度</li>
+</ol>
+<hr />
+<h3 id="q14">Q14: 学习路径会动态调整吗？</h3>
+<p><strong>A</strong>: 是的，系统会实时监控：</p>
+<table>
+<thead>
+<tr>
+<th>检测指标</th>
+<th>触发条件</th>
+<th>调整策略</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>时间比例</td>
+<td>&gt; 2.0</td>
+<td>降低难度</td>
+</tr>
+<tr>
+<td>错误率</td>
+<td>&gt; 50%</td>
+<td>插入复习节点</td>
+</tr>
+<tr>
+<td>帮助请求</td>
+<td>≥ 3次</td>
+<td>添加支持内容</td>
+</tr>
+<tr>
+<td>掌握度</td>
+<td>≥ 0.9</td>
+<td>提高难度</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="q15">Q15: 评估系统的四个维度是什么意思？</h3>
+<p><strong>A</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>权重</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>知识掌握度</td>
+<td>30%</td>
+<td>概念理解、定理掌握、方法熟练</td>
+</tr>
+<tr>
+<td>技能熟练度</td>
+<td>25%</td>
+<td>计算、证明、建模能力</td>
+</tr>
+<tr>
+<td>问题解决能力</td>
+<td>25%</td>
+<td>分析、策略、验证能力</td>
+</tr>
+<tr>
+<td>创新思维能力</td>
+<td>20%</td>
+<td>发散性、创造性、批判性思维</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="q16">Q16: 如何查看我的学习进度？</h3>
+<p><strong>A</strong>:</p>
+<ol>
+<li><strong>评估系统</strong>: 查看四维能力雷达图</li>
+<li><strong>学习路径</strong>: 查看路径完成百分比</li>
+<li><strong>诊断历史</strong>: 对比多次诊断结果看进步</li>
+</ol>
+<hr />
+<h2 id="_92">四、技术问题</h2>
+<h3 id="q17-lean4">Q17: 如何安装 Lean4 来运行形式化证明？</h3>
+<p><strong>A</strong>:</p>
+<p><strong>步骤1：安装 elan</strong></p>
+<pre><code class="language-bash">curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
+</code></pre>
+<p><strong>步骤2：安装 Lean 4.29.0</strong></p>
+<pre><code class="language-bash">elan toolchain install leanprover/lean4:v4.29.0
+elan default leanprover/lean4:v4.29.0
+</code></pre>
+<p><strong>步骤3：构建项目</strong></p>
+<pre><code class="language-bash">cd docs/09-形式化证明/Lean4/
+lake update
+lake build
+</code></pre>
+<hr />
+<h3 id="q18-lean4">Q18: Lean4 编译失败怎么办？</h3>
+<p><strong>A</strong>: 常见解决方案：</p>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>版本不匹配</td>
+<td>确保使用 Lean 4.29.0</td>
+</tr>
+<tr>
+<td>依赖缺失</td>
+<td>运行 <code>lake update</code></td>
+</tr>
+<tr>
+<td>内存不足</td>
+<td>增加交换空间或关闭其他程序</td>
+</tr>
+<tr>
+<td>网络问题</td>
+<td>配置代理或更换网络</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="q19">Q19: 如何贡献内容或修复错误？</h3>
+<p><strong>A</strong>:</p>
+<ol>
+<li><strong>Fork 仓库</strong>: 在 GitHub 上 fork 项目</li>
+<li><strong>创建分支</strong>: <code>git checkout -b fix/xxx</code></li>
+<li><strong>修改内容</strong>: 编辑相应文件</li>
+<li><strong>提交 PR</strong>: 创建 Pull Request</li>
+</ol>
+<p><strong>贡献指南</strong>: 查阅 <code>CONTRIBUTING.md</code></p>
+<hr />
+<h3 id="q20">Q20: 文档可以在移动设备上阅读吗？</h3>
+<p><strong>A</strong>: 可以。</p>
+<ul>
+<li>Markdown 格式适合所有设备</li>
+<li>建议使用支持 Markdown 的阅读器</li>
+<li>代码块和公式在移动端可能显示较小</li>
+</ul>
+<hr />
+<h3 id="q21-formalmath">Q21: 如何离线使用 FormalMath？</h3>
+<p><strong>A</strong>:</p>
+<ol>
+<li><strong>克隆仓库</strong></li>
+</ol>
+<pre><code class="language-bash">git clone https://github.com/xxx/FormalMath.git
+</code></pre>
+<ol>
+<li>
+<p><strong>本地阅读</strong></p>
+</li>
+<li>
+<p>使用任意 Markdown 阅读器</p>
+</li>
+<li>
+<p>或使用 VS Code + Markdown 扩展</p>
+</li>
+<li>
+<p><strong>搜索功能</strong></p>
+</li>
+</ol>
+<pre><code class="language-bash"># 本地搜索
+grep -r &quot;关键词&quot; FormalMath/docs/
+</code></pre>
+<hr />
+<h2 id="_93">五、内容问题</h2>
+<h3 id="q22-formalmath">Q22: FormalMath 的内容准确性如何保证？</h3>
+<p><strong>A</strong>: 多重保障机制：</p>
+<ol>
+<li><strong>权威来源</strong>: 参考国际权威教材和论文</li>
+<li><strong>专家审核</strong>: 数学专业背景人员审核</li>
+<li><strong>形式化验证</strong>: 核心定理通过 Lean4 验证</li>
+<li><strong>国际对齐</strong>: 与顶尖大学课程对照</li>
+<li><strong>社区反馈</strong>: 持续接收和修复问题</li>
+</ol>
+<hr />
+<h3 id="q23">Q23: 内容多久更新一次？</h3>
+<p><strong>A</strong>:</p>
+<ul>
+<li><strong>核心内容</strong>: 季度更新</li>
+<li><strong>前沿内容</strong>: 月度追踪 arXiv</li>
+<li><strong>国际对齐</strong>: 跟随课程更新</li>
+<li><strong>错误修复</strong>: 实时更新</li>
+</ul>
+<hr />
+<h3 id="q24">Q24: 为什么有些定理没有证明？</h3>
+<p><strong>A</strong>: 根据文档深度等级：</p>
+<ul>
+<li><strong>基础版</strong>: 通常只陈述定理</li>
+<li><strong>增强版</strong>: 给出证明思路</li>
+<li><strong>深度扩展版</strong>: 提供完整证明</li>
+</ul>
+<p>如果某个主题缺少深度版文档，可以通过 Issue 反馈需求。</p>
+<hr />
+<h3 id="q25">Q25: 数学家理念体系有什么用？</h3>
+<p><strong>A</strong>:</p>
+<ol>
+<li><strong>历史视角</strong>: 了解数学概念的发展过程</li>
+<li><strong>思想学习</strong>: 学习大师的研究方法</li>
+<li><strong>动机理解</strong>: 理解为什么要研究某个方向</li>
+<li><strong>研究启发</strong>: 从大师思想中获得灵感</li>
+</ol>
+<hr />
+<h3 id="q26">Q26: 内容与其他教材有冲突怎么办？</h3>
+<p><strong>A</strong>:</p>
+<ol>
+<li><strong>术语差异</strong>: 查阅 <code>00-标准术语表-8语言.md</code></li>
+<li><strong>定义差异</strong>: 查阅 <code>00-Wikipedia/MathWorld对齐报告</code></li>
+<li><strong>符号差异</strong>: 查阅 <code>docs/00-数学符号对照表.md</code></li>
+</ol>
+<p>如有实质性数学错误，请通过 GitHub Issue 反馈。</p>
+<hr />
+<h3 id="q27">Q27: 如何理解文档中的前置引用？</h3>
+<p><strong>A</strong>: 文档中的链接格式：</p>
+<pre><code class="language-markdown">[相关概念](path/to/concept.md)
+</code></pre>
+<p><strong>阅读策略</strong>：</p>
+<ul>
+<li>首次阅读: 可以跳过，先把握主线</li>
+<li>深入理解: 点击链接查看前置知识</li>
+<li>复习巩固: 通过链接建立知识网络</li>
+</ul>
+<hr />
+<h2 id="_94">六、国际课程对齐问题</h2>
+<h3 id="q28-formalmath">Q28: FormalMath 与哪些大学课程对齐？</h3>
+<p><strong>A</strong>: 九所世界顶尖大学：</p>
+<table>
+<thead>
+<tr>
+<th>学校</th>
+<th>课程数</th>
+<th>核心课程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIT</td>
+<td>13门</td>
+<td>18.705/725/726</td>
+</tr>
+<tr>
+<td>Harvard</td>
+<td>14门</td>
+<td>Math 232ar/br</td>
+</tr>
+<tr>
+<td>Stanford</td>
+<td>8门</td>
+<td>Math 216 (FOAG)</td>
+</tr>
+<tr>
+<td>Princeton</td>
+<td>12门</td>
+<td>MAT 345/346/416</td>
+</tr>
+<tr>
+<td>Cambridge</td>
+<td>18门</td>
+<td>Part III AG</td>
+</tr>
+<tr>
+<td>Oxford</td>
+<td>20门</td>
+<td>C2.1/2.2</td>
+</tr>
+<tr>
+<td>ETH Zurich</td>
+<td>11门</td>
+<td>401-3531/3532</td>
+</tr>
+<tr>
+<td>Toronto</td>
+<td>8门</td>
+<td>MAT137/237/347</td>
+</tr>
+<tr>
+<td>NUS</td>
+<td>17门</td>
+<td>MA2108/3210/4201</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="q29">Q29: 如何找到与我想学的课程对应的内容？</h3>
+<p><strong>A</strong>:</p>
+<p><strong>步骤1</strong>: 查阅对应的映射文档</p>
+<ul>
+<li>MIT → <code>project/MIT-course-mapping-detailed.md</code></li>
+<li>Harvard → <code>project/Harvard-course-mapping-detailed.md</code></li>
+</ul>
+<p><strong>步骤2</strong>: 按照映射表顺序阅读</p>
+<p><strong>步骤3</strong>: 结合课程大纲和 FormalMath 文档学习</p>
+<hr />
+<h3 id="q30">Q30: 课程对齐的覆盖率是什么意思？</h3>
+<p><strong>A</strong>: 覆盖率表示 FormalMath 内容与课程大纲的重叠程度：</p>
+<table>
+<thead>
+<tr>
+<th>覆盖率</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>90%+</td>
+<td>可以替代主要教材</td>
+</tr>
+<tr>
+<td>80-89%</td>
+<td>作为主要学习资源，需少量补充</td>
+</tr>
+<tr>
+<td>70-79%</td>
+<td>需要配合其他教材</td>
+</tr>
+<tr>
+<td>&lt;70%</td>
+<td>仅作参考</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="q31-harvard-math-232br">Q31: Harvard Math 232br 的高对齐度意味着什么？</h3>
+<p><strong>A</strong>: 98% 的对齐度意味着：</p>
+<ul>
+<li>FormalMath 格洛腾迪克体系几乎可以完全替代该课程教材</li>
+<li>使用该资源学习能达到极佳效果</li>
+<li>课程中的所有核心内容都有对应文档</li>
+</ul>
+<hr />
+<h2 id="_95">七、其他问题</h2>
+<h3 id="q32">Q32: 我可以将内容用于教学吗？</h3>
+<p><strong>A</strong>: 可以！项目采用开源许可证：</p>
+<ul>
+<li>✅ 个人学习使用</li>
+<li>✅ 课堂教学使用</li>
+<li>✅ 修改和再分发（需遵守许可证）</li>
+<li>✅ 引用和参考</li>
+</ul>
+<hr />
+<h3 id="q33">Q33: 如何反馈问题或建议？</h3>
+<p><strong>A</strong>: 多种渠道：</p>
+<ol>
+<li><strong>GitHub Issues</strong>: 技术问题和内容错误</li>
+<li><strong>邮件</strong>: support@formalmath.org</li>
+<li><strong>文档反馈</strong>: 直接在文档页面提交评论</li>
+</ol>
+<hr />
+<h3 id="q34">Q34: 项目是完全免费的吗？</h3>
+<p><strong>A</strong>: 是的，FormalMath 是开源免费项目。</p>
+<ul>
+<li>所有文档免费获取</li>
+<li>所有工具免费使用</li>
+<li>欢迎贡献，无付费墙</li>
+</ul>
+<hr />
+<h3 id="q35">Q35: 是否有学习社群或讨论区？</h3>
+<p><strong>A</strong>:</p>
+<ul>
+<li>GitHub Discussions: 技术讨论</li>
+<li>邮件列表: 定期更新和讨论</li>
+<li>敬请期待更多社群功能</li>
+</ul>
+<hr />
+<h3 id="q36">Q36: 如何跟踪我的学习历史？</h3>
+<p><strong>A</strong>: 目前方式：</p>
+<ol>
+<li><strong>手动记录</strong>: 维护个人学习日志</li>
+<li><strong>智能系统</strong>: 使用评估系统记录进度</li>
+<li><strong>Git</strong>: 如果使用 Git 克隆，可查看阅读历史</li>
+</ol>
+<hr />
+<h3 id="q37">Q37: 内容支持多语言吗？</h3>
+<p><strong>A</strong>: 主要语言：</p>
+<ul>
+<li><strong>文档内容</strong>: 中文</li>
+<li><strong>术语对照</strong>: <code>00-标准术语表-8语言.md</code> 提供英、日、德、法、俄、西、葡对照</li>
+</ul>
+<hr />
+<h3 id="q38">Q38: 如何快速了解某个数学家的贡献？</h3>
+<p><strong>A</strong>:</p>
+<ol>
+<li>进入 <code>数学家理念体系/[姓名]数学理念/</code></li>
+<li>阅读 <code>01-基础信息/</code> 了解背景</li>
+<li>阅读 <code>02-数学内容深度分析/</code> 了解贡献</li>
+<li>查看 <code>03-方法论与思想体系/</code> 学习方法</li>
+</ol>
+<hr />
+<h3 id="q39">Q39: 学习过程中如何保持动力？</h3>
+<p><strong>A</strong>: 建议：</p>
+<ol>
+<li><strong>设定小目标</strong>: 每周完成一个章节</li>
+<li><strong>使用成就系统</strong>: 智能学习系统的成就激励</li>
+<li><strong>学习伙伴</strong>: 寻找学习伙伴互相督促</li>
+<li><strong>联系实际</strong>: 寻找数学在实际中的应用</li>
+<li><strong>回顾进步</strong>: 定期查看诊断报告看进步</li>
+</ol>
+<hr />
+<h3 id="q40">Q40: 有没有推荐的阅读顺序？</h3>
+<p><strong>A</strong>: 对于系统学习，推荐：</p>
+<pre><code>基础阶段: 集合论 → 线性代数 → 微积分
+代数阶段: 群论 → 环论 → 模论 → 交换代数
+分析阶段: 实分析 → 测度论 → 复分析 → 泛函分析
+几何阶段: 点集拓扑 → 微分几何 → 代数拓扑
+现代阶段: 同调代数 → 代数几何 → 表示论
+</code></pre>
+<hr />
+<p><strong>继续阅读</strong>: <a href="./05-故障排除指南.md">05-故障排除指南.md</a></p>
+<p><em>最后更新: 2026年4月4日</em></p>
+<hr />
+<hr />
+<p>msc_primary: 00A99<br />
+msc_secondary: 97U50<br />
+document_type: user_manual<br />
+version: 1.0</p>
+<hr />
+<h1 id="formalmath_6">FormalMath 故障排除指南</h1>
+<p><strong>版本</strong>: v1.0<br />
+<strong>发布日期</strong>: 2026年4月4日<br />
+<strong>适用范围</strong>: 所有用户</p>
+<hr />
+<h2 id="_96">目录</h2>
+<ol>
+<li><a href="#一文档访问问题">文档访问问题</a></li>
+<li><a href="#二智能学习系统问题">智能学习系统问题</a></li>
+<li><a href="#三lean4-形式化证明问题">Lean4 形式化证明问题</a></li>
+<li><a href="#四搜索与导航问题">搜索与导航问题</a></li>
+<li><a href="#五内容理解问题">内容理解问题</a></li>
+<li><a href="#六性能问题">性能问题</a></li>
+<li><a href="#七联系支持">联系支持</a></li>
+</ol>
+<hr />
+<h2 id="_97">一、文档访问问题</h2>
+<h3 id="11-markdown">问题1.1: 无法打开 Markdown 文档</h3>
+<p><strong>症状</strong>: 双击 .md 文件无法打开或显示乱码</p>
+<p><strong>解决方案</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>操作步骤</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>方案A</strong></td>
+<td>使用 VS Code 安装 Markdown 扩展</td>
+</tr>
+<tr>
+<td><strong>方案B</strong></td>
+<td>使用 Typora 等专业 Markdown 编辑器</td>
+</tr>
+<tr>
+<td><strong>方案C</strong></td>
+<td>使用浏览器插件（如 Markdown Viewer）</td>
+</tr>
+<tr>
+<td><strong>方案D</strong></td>
+<td>转换为 HTML: <code>pandoc file.md -o file.html</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>推荐工具</strong>:</p>
+<ul>
+<li>Windows: Typora, VS Code</li>
+<li>macOS: Typora, iA Writer</li>
+<li>Linux: ReText, VS Code</li>
+</ul>
+<hr />
+<h3 id="12_5">问题1.2: 文档中的公式显示不正确</h3>
+<p><strong>症状</strong>: LaTeX 公式显示为源代码或乱码</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li><strong>使用支持 MathJax 的阅读器</strong></li>
+<li>VS Code + Markdown Preview Enhanced</li>
+<li>Typora</li>
+<li>
+<p>GitHub/GitLab 网页版</p>
+</li>
+<li>
+<p><strong>在线渲染</strong></p>
+</li>
+</ol>
+<p><code>bash
+   # 使用 pandoc 转换
+   pandoc file.md -o file.html --mathjax</code></p>
+<ol>
+<li><strong>浏览器插件</strong></li>
+<li>Markdown Viewer (Chrome/Firefox)</li>
+<li>开启 MathJax 支持</li>
+</ol>
+<hr />
+<h3 id="13_1">问题1.3: 中文显示乱码</h3>
+<p><strong>症状</strong>: 中文内容显示为乱码或方框</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li><strong>检查文件编码</strong></li>
+</ol>
+<p><code>bash
+   # 确认文件为 UTF-8 编码
+   file -i document.md</code></p>
+<ol>
+<li><strong>转换编码</strong></li>
+</ol>
+<p><code>bash
+   # 使用 iconv 转换
+   iconv -f GBK -t UTF-8 input.md &gt; output.md</code></p>
+<ol>
+<li><strong>编辑器设置</strong></li>
+<li>VS Code: 右下角点击编码 → 通过编码保存 → UTF-8</li>
+<li>Notepad++: 编码 → 转为 UTF-8 编码</li>
+</ol>
+<hr />
+<h3 id="14">问题1.4: 文档链接失效</h3>
+<p><strong>症状</strong>: 点击链接提示"文件不存在"</p>
+<p><strong>原因与解决</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>原因</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>相对路径错误</td>
+<td>从项目根目录打开文档</td>
+</tr>
+<tr>
+<td>文件被移动</td>
+<td>使用搜索功能查找新位置</td>
+</tr>
+<tr>
+<td>文件名更改</td>
+<td>查阅 <code>00-FormalMath项目内容索引-完整版.md</code></td>
+</tr>
+<tr>
+<td>文档未下载</td>
+<td>确保完整克隆/下载仓库</td>
+</tr>
+</tbody>
+</table>
+<p><strong>快速修复</strong>:</p>
+<pre><code class="language-bash"># 在项目根目录搜索
+grep -r &quot;目标文件名&quot; . --include=&quot;*.md&quot;
+</code></pre>
+<hr />
+<h2 id="_98">二、智能学习系统问题</h2>
+<h3 id="21_1">问题2.1: 认知诊断系统无法启动</h3>
+<p><strong>症状</strong>: 运行诊断系统时出错</p>
+<p><strong>排查步骤</strong>:</p>
+<ol>
+<li><strong>检查 Python 版本</strong></li>
+</ol>
+<p><code>bash
+   python --version  # 需要 3.9+</code></p>
+<ol>
+<li><strong>安装依赖</strong></li>
+</ol>
+<p><code>bash
+   pip install -r requirements.txt</code></p>
+<ol>
+<li><strong>检查端口占用</strong></li>
+</ol>
+<p>```bash<br />
+   # Windows<br />
+   netstat -ano | findstr :8000</p>
+<p># macOS/Linux<br />
+   lsof -i :8000<br />
+   ```</p>
+<ol>
+<li><strong>查看日志</strong></li>
+</ol>
+<p><code>bash
+   tail -f logs/diagnosis.log</code></p>
+<hr />
+<h3 id="22_7">问题2.2: 诊断测试提交失败</h3>
+<p><strong>症状</strong>: 完成测试后无法提交</p>
+<p><strong>解决方案</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>可能原因</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网络连接问题</td>
+<td>检查网络，稍后重试</td>
+</tr>
+<tr>
+<td>服务器超时</td>
+<td>分段完成测试</td>
+</tr>
+<tr>
+<td>数据格式错误</td>
+<td>刷新页面重新测试</td>
+</tr>
+<tr>
+<td>浏览器兼容性</td>
+<td>使用 Chrome/Firefox</td>
+</tr>
+</tbody>
+</table>
+<p><strong>数据恢复</strong>:</p>
+<pre><code class="language-javascript">// 在控制台执行恢复数据
+localStorage.getItem('diagnosis_progress')
+</code></pre>
+<hr />
+<h3 id="23_1">问题2.3: 学习路径生成失败</h3>
+<p><strong>症状</strong>: 点击生成路径后无响应或报错</p>
+<p><strong>排查步骤</strong>:</p>
+<ol>
+<li><strong>检查学习者档案</strong></li>
+<li>确保已完成认知诊断</li>
+<li>
+<p>确认学习目标设置正确</p>
+</li>
+<li>
+<p><strong>检查知识图谱</strong></p>
+</li>
+</ol>
+<p><code>bash
+   # 验证 Neo4j 连接
+   curl http://localhost:7474</code></p>
+<ol>
+<li><strong>简化目标</strong></li>
+<li>减少目标概念数量</li>
+<li>
+<p>缩短时间范围</p>
+</li>
+<li>
+<p><strong>查看错误日志</strong></p>
+</li>
+</ol>
+<p><code>bash
+   cat logs/path_generation.log</code></p>
+<hr />
+<h3 id="24">问题2.4: 评估系统显示异常</h3>
+<p><strong>症状</strong>: 雷达图或图表不显示</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li><strong>检查前端依赖</strong></li>
+</ol>
+<p><code>bash
+   cd frontend
+   npm install
+   npm start</code></p>
+<ol>
+<li><strong>清除缓存</strong></li>
+</ol>
+<p><code>bash
+   # 浏览器控制台
+   localStorage.clear()</code></p>
+<ol>
+<li><strong>检查浏览器控制台错误</strong></li>
+<li>F12 打开开发者工具</li>
+<li>查看 Console 错误信息</li>
+</ol>
+<hr />
+<h2 id="lean4_2">三、Lean4 形式化证明问题</h2>
+<h3 id="31-lean">问题3.1: Lean 安装失败</h3>
+<p><strong>症状</strong>: elan 安装命令执行失败</p>
+<p><strong>解决方案</strong>:</p>
+<p><strong>Windows</strong>:</p>
+<pre><code class="language-powershell"># 使用 PowerShell 管理员权限
+Invoke-WebRequest -Uri &quot;https://raw.githubusercontent.com/leanprover/elan/master/elan-init.ps1&quot; -OutFile &quot;elan-init.ps1&quot;
+./elan-init.ps1
+</code></pre>
+<p><strong>macOS/Linux</strong>:</p>
+<pre><code class="language-bash"># 安装依赖
+sudo apt-get install curl git
+
+# 重新安装
+curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
+source $HOME/.elan/env
+</code></pre>
+<hr />
+<h3 id="32-lake-build">问题3.2: lake build 失败</h3>
+<p><strong>症状</strong>: 编译 Lean4 项目时出错</p>
+<p><strong>常见错误与解决</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>错误信息</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>unknown package</code></td>
+<td>运行 <code>lake update</code></td>
+</tr>
+<tr>
+<td><code>toolchain mismatch</code></td>
+<td><code>elan default leanprover/lean4:v4.29.0</code></td>
+</tr>
+<tr>
+<td><code>timeout</code></td>
+<td>增加超时时间或检查网络</td>
+</tr>
+<tr>
+<td><code>out of memory</code></td>
+<td>关闭其他程序或增加交换空间</td>
+</tr>
+<tr>
+<td><code>git clone failed</code></td>
+<td>配置 git 代理</td>
+</tr>
+</tbody>
+</table>
+<p><strong>完整重建步骤</strong>:</p>
+<pre><code class="language-bash">cd docs/09-形式化证明/Lean4/
+rm -rf .lake lake-packages
+lake update
+lake build
+</code></pre>
+<hr />
+<h3 id="33-vs-code-lean">问题3.3: VS Code Lean 扩展不工作</h3>
+<p><strong>症状</strong>: 无语法高亮、无目标视图</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li><strong>安装 Lean4 扩展</strong></li>
+<li>扩展商店搜索 "Lean4"</li>
+<li>
+<p>安装leanprover/lean4</p>
+</li>
+<li>
+<p><strong>检查 Lean 路径</strong></p>
+</li>
+</ol>
+<p><code>bash
+   which lean  # 确认 lean 在 PATH 中</code></p>
+<ol>
+<li><strong>重启 Lean 服务器</strong></li>
+<li>
+<p>Ctrl+Shift+P → "Lean4: Restart Server"</p>
+</li>
+<li>
+<p><strong>检查项目配置</strong></p>
+</li>
+</ol>
+<p><code>bash
+   cat lakefile.lean  # 确认配置正确
+   cat lean-toolchain  # 确认版本正确</code></p>
+<hr />
+<h3 id="34">问题3.4: 证明检查超时</h3>
+<p><strong>症状</strong>: 复杂证明检查时间过长</p>
+<p><strong>优化建议</strong>:</p>
+<ol>
+<li><strong>增加超时时间</strong></li>
+</ol>
+<p><code>lean
+   set_option maxHeartbeats 1000000</code></p>
+<ol>
+<li><strong>简化证明</strong></li>
+<li>分解复杂证明为引理</li>
+<li>
+<p>使用 <code>by</code>  tactic 替代自动化</p>
+</li>
+<li>
+<p><strong>更新 Mathlib</strong></p>
+</li>
+</ol>
+<p><code>bash
+   lake update</code></p>
+<hr />
+<h2 id="_99">四、搜索与导航问题</h2>
+<h3 id="41-grep">问题4.1: grep 搜索无结果</h3>
+<p><strong>症状</strong>: 确认存在的内容搜索不到</p>
+<p><strong>排查步骤</strong>:</p>
+<ol>
+<li><strong>检查搜索范围</strong></li>
+</ol>
+<p>```bash<br />
+   # 确保在正确目录<br />
+   pwd</p>
+<p># 扩大搜索范围<br />
+   grep -r "关键词" /path/to/FormalMath/<br />
+   ```</p>
+<ol>
+<li><strong>检查文件编码</strong></li>
+</ol>
+<p><code>bash
+   # 使用 -a 选项处理二进制文件
+   grep -a "关键词" file.md</code></p>
+<ol>
+<li><strong>忽略大小写</strong></li>
+</ol>
+<p><code>bash
+   grep -ri "关键词" docs/</code></p>
+<ol>
+<li><strong>使用正则表达式</strong></li>
+</ol>
+<p><code>bash
+   grep -rE "(关键词1|关键词2)" docs/</code></p>
+<hr />
+<h3 id="42_6">问题4.2: 文档索引加载缓慢</h3>
+<p><strong>症状</strong>: 打开内容索引文档卡顿</p>
+<p><strong>优化方案</strong>:</p>
+<ol>
+<li><strong>使用轻量编辑器</strong></li>
+<li>避免使用重型 IDE</li>
+<li>
+<p>推荐使用 VS Code 或 Sublime Text</p>
+</li>
+<li>
+<p><strong>分页加载</strong></p>
+</li>
+<li>不要一次性打开整个索引</li>
+<li>
+<p>使用搜索定位到具体章节</p>
+</li>
+<li>
+<p><strong>生成子索引</strong></p>
+</li>
+</ol>
+<p><code>bash
+   # 提取特定分支的索引
+   grep -A 5 "02-代数结构" 00-FormalMath项目内容索引-完整版.md &gt; algebra_index.md</code></p>
+<hr />
+<h3 id="43_1">问题4.3: 无法找到相关文档</h3>
+<p><strong>症状</strong>: 知道概念存在但找不到文档</p>
+<p><strong>解决策略</strong>:</p>
+<ol>
+<li><strong>多关键词搜索</strong></li>
+</ol>
+<p><code>bash
+   # 尝试不同表达
+   grep -r "正规子群" docs/
+   grep -r "normal subgroup" docs/
+   grep -r "不变子群" docs/</code></p>
+<ol>
+<li><strong>查看概念映射</strong></li>
+<li>查阅 <code>multilang_concept_table.json</code></li>
+<li>
+<p>使用术语对照表</p>
+</li>
+<li>
+<p><strong>按 MSC 分类查找</strong></p>
+</li>
+<li>确定概念的 MSC 编码</li>
+<li>查找对应分类的文档</li>
+</ol>
+<hr />
+<h2 id="_100">五、内容理解问题</h2>
+<h3 id="51_1">问题5.1: 前置知识不足</h3>
+<p><strong>症状</strong>: 阅读文档时遇到不熟悉的概念</p>
+<p><strong>解决策略</strong>:</p>
+<ol>
+<li><strong>追溯前置链接</strong></li>
+<li>点击文档中的概念链接</li>
+<li>
+<p>先学习前置内容</p>
+</li>
+<li>
+<p><strong>降低文档深度</strong></p>
+</li>
+<li>切换到 <code>-基础版.md</code></li>
+<li>
+<p>或 <code>-国际标准版.md</code></p>
+</li>
+<li>
+<p><strong>使用认知诊断</strong></p>
+</li>
+<li>运行诊断测试</li>
+<li>
+<p>系统会指出知识缺口</p>
+</li>
+<li>
+<p><strong>查阅外部资源</strong></p>
+</li>
+<li>文档末尾的参考文献</li>
+<li>Wikipedia/MathWorld 对照</li>
+</ol>
+<hr />
+<h3 id="52_3">问题5.2: 证明难以理解</h3>
+<p><strong>症状</strong>: 证明步骤跳跃太大</p>
+<p><strong>建议方法</strong>:</p>
+<ol>
+<li><strong>分步理解</strong></li>
+<li>将证明分解为小步骤</li>
+<li>
+<p>验证每一步的正确性</p>
+</li>
+<li>
+<p><strong>动手验证</strong></p>
+</li>
+<li>用具体例子验证</li>
+<li>
+<p>画图辅助理解</p>
+</li>
+<li>
+<p><strong>寻找替代证明</strong></p>
+</li>
+<li>查阅不同教材的证明</li>
+<li>
+<p>参考数学家理念体系</p>
+</li>
+<li>
+<p><strong>寻求帮助</strong></p>
+</li>
+<li>在讨论区提问</li>
+<li>参考 StackExchange</li>
+</ol>
+<hr />
+<h3 id="53_1">问题5.3: 符号系统混乱</h3>
+<p><strong>症状</strong>: 不同文档使用不同符号</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li><strong>查阅符号对照表</strong></li>
+<li><code>docs/00-数学符号对照表.md</code></li>
+<li>
+<p><code>docs/00-数学符号速查表.md</code></p>
+</li>
+<li>
+<p><strong>查看文档符号说明</strong></p>
+</li>
+<li>大多数文档开头有符号说明</li>
+<li>
+<p>附录中通常有符号汇总</p>
+</li>
+<li>
+<p><strong>理解上下文</strong></p>
+</li>
+<li>符号含义通常在上下文中明确</li>
+<li>注意作者的符号约定</li>
+</ol>
+<hr />
+<h2 id="_101">六、性能问题</h2>
+<h3 id="61_1">问题6.1: 文档打开缓慢</h3>
+<p><strong>症状</strong>: 大型文档打开时间长</p>
+<p><strong>优化建议</strong>:</p>
+<ol>
+<li><strong>使用高效编辑器</strong></li>
+<li>VS Code</li>
+<li>Sublime Text</li>
+<li>
+<p>Vim/Neovim</p>
+</li>
+<li>
+<p><strong>禁用实时预览</strong></p>
+</li>
+<li>关闭自动渲染</li>
+<li>
+<p>手动触发预览</p>
+</li>
+<li>
+<p><strong>分割大文档</strong></p>
+</li>
+</ol>
+<p><code>bash
+   # 使用脚本分割
+   split -l 500 large.md segment_</code></p>
+<hr />
+<h3 id="62">问题6.2: 搜索速度慢</h3>
+<p><strong>症状</strong>: grep 搜索大型仓库缓慢</p>
+<p><strong>优化方案</strong>:</p>
+<ol>
+<li><strong>限制搜索范围</strong></li>
+</ol>
+<p>```bash<br />
+   # 只搜索特定分支<br />
+   grep -r "关键词" docs/02-代数结构/</p>
+<p># 只搜索特定深度<br />
+   find docs/ -name "*深度扩展版.md" -exec grep -l "关键词" {} \;<br />
+   ```</p>
+<ol>
+<li><strong>使用 ripgrep (rg)</strong></li>
+</ol>
+<p><code>bash
+   # rg 比 grep 更快
+   rg "关键词" docs/</code></p>
+<ol>
+<li><strong>建立索引</strong></li>
+</ol>
+<p><code>bash
+   # 使用 ctags 建立索引
+   ctags -R docs/</code></p>
+<hr />
+<h3 id="63_2">问题6.3: 内存占用过高</h3>
+<p><strong>症状</strong>: 打开多个文档后系统变慢</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li><strong>关闭不需要的文档</strong></li>
+<li>一次只打开几个相关文档</li>
+<li>
+<p>及时关闭已读完的文档</p>
+</li>
+<li>
+<p><strong>使用轻量阅读器</strong></p>
+</li>
+<li>避免在浏览器中打开大量标签</li>
+<li>
+<p>使用专用 Markdown 阅读器</p>
+</li>
+<li>
+<p><strong>分页浏览索引</strong></p>
+</li>
+<li>不要一次性加载整个索引</li>
+<li>使用搜索定位</li>
+</ol>
+<hr />
+<h2 id="_102">七、联系支持</h2>
+<h3 id="_103">自助资源</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>位置</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>项目使用指南</td>
+<td><code>00-FormalMath项目使用指南-完整版.md</code></td>
+<td>全面使用说明</td>
+</tr>
+<tr>
+<td>内容索引</td>
+<td><code>00-FormalMath项目内容索引-完整版.md</code></td>
+<td>全文档索引</td>
+</tr>
+<tr>
+<td>术语表</td>
+<td><code>00-标准术语表-8语言.md</code></td>
+<td>多语言术语</td>
+</tr>
+<tr>
+<td>符号表</td>
+<td><code>docs/00-数学符号对照表.md</code></td>
+<td>符号查询</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_104">社区支持</h3>
+<ol>
+<li><strong>GitHub Issues</strong></li>
+<li>技术问题</li>
+<li>内容错误报告</li>
+<li>
+<p>功能建议</p>
+</li>
+<li>
+<p><strong>邮件支持</strong></p>
+</li>
+<li>support@formalmath.org</li>
+<li>
+<p>一般咨询</p>
+</li>
+<li>
+<p><strong>文档反馈</strong></p>
+</li>
+<li>直接在文档页面提交评论</li>
+<li>标记需要改进的部分</li>
+</ol>
+<h3 id="_105">提交有效反馈</h3>
+<p><strong>好的反馈应包含</strong>：</p>
+<ol>
+<li><strong>问题描述</strong></li>
+<li>发生了什么</li>
+<li>
+<p>期望发生什么</p>
+</li>
+<li>
+<p><strong>环境信息</strong></p>
+</li>
+<li>操作系统</li>
+<li>软件版本</li>
+<li>
+<p>相关配置</p>
+</li>
+<li>
+<p><strong>复现步骤</strong></p>
+</li>
+<li>详细的操作步骤</li>
+<li>
+<p>最小复现示例</p>
+</li>
+<li>
+<p><strong>错误信息</strong></p>
+</li>
+<li>完整的错误消息</li>
+<li>相关日志</li>
+</ol>
+<p><strong>反馈模板</strong>:</p>
+<pre><code class="language-markdown">## 问题描述
+[清晰描述问题]
+
+## 环境信息
+- OS: [Windows/macOS/Linux]
+- 软件版本: [版本号]
+- 文档路径: [文件路径]
+
+## 复现步骤
+1. [步骤1]
+2. [步骤2]
+3. [步骤3]
+
+## 预期结果
+[描述期望的行为]
+
+## 实际结果
+[描述实际的行为]
+
+## 错误日志
+</code></pre>
+<p>[粘贴错误日志]</p>
+<pre><code></code></pre>
+<hr />
+<p><strong>相关文档</strong>:</p>
+<ul>
+<li><a href="./01-快速开始指南.md">01-快速开始指南.md</a></li>
+<li><a href="./02-功能使用说明.md">02-功能使用说明.md</a></li>
+<li><a href="./03-学习路径指南.md">03-学习路径指南.md</a></li>
+<li><a href="./04-常见问题解答.md">04-常见问题解答.md</a></li>
+</ul>
+<p><em>最后更新: 2026年4月4日</em></p>
+<hr />
+<div class="footer" style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #999; font-size: 0.9em;">
+<p>FormalMath 项目 | 开源数学教育知识库</p>
+<p>最后更新: 2026年4月4日</p>
+</div>
+</body>
+</html>

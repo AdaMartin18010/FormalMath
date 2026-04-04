@@ -19,9 +19,9 @@ Chern类是复向量丛的最重要示性类，
 - Wells, R.O. "Differential Analysis on Complex Manifolds"
 -/
 
-import Mathlib.DifferentialGeometry.VectorBundle.Basic
-import Mathlib.Geometry.Manifold.IntegralCurve
-import Mathlib.AlgebraicTopology.CechNerve
+import FormalMath.Mathlib.DifferentialGeometry.VectorBundle.Basic
+import FormalMath.Mathlib.Geometry.Manifold.IntegralCurve
+import FormalMath.Mathlib.AlgebraicTopology.CechNerve
 
 namespace ChernClass
 

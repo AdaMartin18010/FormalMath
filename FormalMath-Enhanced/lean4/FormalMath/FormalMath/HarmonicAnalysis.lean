@@ -20,9 +20,9 @@
 - Grafakos, L. "Classical Fourier Analysis"
 -/
 
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.MeasureTheory.Function.LpSpace
-import Mathlib.MeasureTheory.Integral.Bochner
+import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
+import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
+import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
 
 namespace HarmonicAnalysis
 

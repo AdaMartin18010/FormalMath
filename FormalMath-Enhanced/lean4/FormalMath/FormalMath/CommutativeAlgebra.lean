@@ -20,10 +20,10 @@
 - Matsumura, "Commutative Algebra"
 -/
 
-import Mathlib.RingTheory.Ideal.Basic
-import Mathlib.RingTheory.Localization.Basic
-import Mathlib.RingTheory.IntegralClosure.IntegralClosure
-import Mathlib.RingTheory.Noetherian
+import FormalMath.Mathlib.RingTheory.Ideal.Basic
+import FormalMath.Mathlib.RingTheory.Localization.Basic
+import FormalMath.Mathlib.RingTheory.IntegralClosure.IntegralClosure
+import FormalMath.Mathlib.RingTheory.Noetherian
 
 namespace CommutativeAlgebra
 

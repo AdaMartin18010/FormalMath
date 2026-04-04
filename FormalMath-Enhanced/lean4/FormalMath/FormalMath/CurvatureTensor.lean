@@ -19,11 +19,11 @@
 
 -/
 
-import Mathlib.Geometry.Manifold.IntegralCurve
-import Mathlib.Geometry.Manifold.MFDeriv
-import Mathlib.Geometry.RiemannianMetric.Basic
-import Mathlib.Analysis.InnerProductSpace.Basic
-import Mathlib.LinearAlgebra.TensorProduct
+import FormalMath.Mathlib.Geometry.Manifold.IntegralCurve
+import FormalMath.Mathlib.Geometry.Manifold.MFDeriv
+import FormalMath.Mathlib.Geometry.RiemannianMetric.Basic
+import FormalMath.Mathlib.Analysis.InnerProductSpace.Basic
+import FormalMath.Mathlib.LinearAlgebra.TensorProduct
 
 namespace CurvatureTensor
 

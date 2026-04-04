@@ -19,9 +19,9 @@
 - Eisenbud, D. "Commutative Algebra with a View Toward Algebraic Geometry"
 -/
 
-import Mathlib.RingTheory.Noetherian
-import Mathlib.RingTheory.Ideal.Basic
-import Mathlib.RingTheory.Primary
+import FormalMath.Mathlib.RingTheory.Noetherian
+import FormalMath.Mathlib.RingTheory.Ideal.Basic
+import FormalMath.Mathlib.RingTheory.Primary
 
 namespace NoetherianRing
 

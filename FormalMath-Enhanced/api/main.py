@@ -8,6 +8,10 @@ FormalMath API - 高性能FastAPI后端服务
 - 响应压缩和ETag
 - 分页支持
 - 语义搜索（文本嵌入、向量检索、公式搜索）
+- WAF防护
+- 安全响应头
+- 速率限制
+- CORS控制
 """
 import logging
 import os
@@ -140,7 +144,53 @@ app = FastAPI(
 from app.core.error_handlers import register_error_handlers
 register_error_handlers(app)
 
-# ============ 中间件配置 ============
+# ============ 安全中间件配置 ============
+
+# 安全响应头中间件（最先添加，确保所有响应都包含安全头）
+try:
+    from app.security.headers import SecurityHeadersMiddleware
+    from app.security.headers import SecurityHeaders
+    
+    app.add_middleware(
+        SecurityHeadersMiddleware,
+        hsts_max_age=31536000,  # 1年
+        hsts_include_subdomains=True,
+        hsts_preload=True,
+        csp_policy=SecurityHeaders.get_api_csp(),
+        frame_options="DENY",
+        referrer_policy="strict-origin-when-cross-origin"
+    )
+    logger.info("✓ 安全响应头中间件已启用")
+except Exception as e:
+    logger.warning(f"安全响应头中间件加载失败: {e}")
+
+# WAF中间件
+try:
+    from app.security.waf import WAFMiddleware
+    
+    app.add_middleware(
+        WAFMiddleware,
+        max_violations=5,
+        ip_block_duration=3600,  # 1小时
+        enable_logging=True
+    )
+    logger.info("✓ WAF中间件已启用")
+except Exception as e:
+    logger.warning(f"WAF中间件加载失败: {e}")
+
+# 输入验证中间件
+try:
+    from app.security.validation import InputValidationMiddleware
+    
+    app.add_middleware(
+        InputValidationMiddleware,
+        max_body_size=10 * 1024 * 1024,  # 10MB
+        max_json_depth=10,
+        max_string_length=10000
+    )
+    logger.info("✓ 输入验证中间件已启用")
+except Exception as e:
+    logger.warning(f"输入验证中间件加载失败: {e}")
 
 # CORS中间件 - 生产环境应限制来源
 app.add_middleware(
@@ -150,6 +200,20 @@ app.add_middleware(
     allow_methods=settings.CORS_ALLOW_METHODS,
     allow_headers=settings.CORS_ALLOW_HEADERS,
 )
+
+# CORS验证中间件（生产环境）
+if not settings.DEBUG:
+    try:
+        from app.security.cors import CORSValidatorMiddleware
+        
+        app.add_middleware(
+            CORSValidatorMiddleware,
+            allowed_origins=settings.CORS_ORIGINS,
+            log_violations=True
+        )
+        logger.info("✓ CORS验证中间件已启用")
+    except Exception as e:
+        logger.warning(f"CORS验证中间件加载失败: {e}")
 
 # 速率限制中间件（可选，基于内存实现）
 try:
@@ -232,6 +296,14 @@ async def root():
             "qa_system",
             "hybrid_search"
         ])
+    
+    # 安全功能
+    features.extend([
+        "waf_protection",
+        "rate_limiting",
+        "security_headers",
+        "input_validation"
+    ])
     
     return {
         "name": settings.APP_NAME,

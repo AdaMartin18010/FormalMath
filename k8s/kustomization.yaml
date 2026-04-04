@@ -1,0 +1,33 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: formalmath-prod
+
+resources:
+  - 01-namespace.yaml
+  - 02-configmap.yaml
+  - 03-secret.yaml
+  - 04-backend-deployment.yaml
+  - 05-frontend-deployment.yaml
+  - 06-service.yaml
+  - 07-ingress.yaml
+  - 08-hpa.yaml
+  - 09-monitoring.yaml
+
+commonLabels:
+  app.kubernetes.io/part-of: formalmath
+  app.kubernetes.io/managed-by: kustomize
+
+images:
+  - name: formalmath/backend
+    newTag: latest
+  - name: formalmath/frontend
+    newTag: latest
+
+# 可选：添加前缀或后缀
+# namePrefix: prod-
+# nameSuffix: -v1
+
+# 可选：配置补丁
+# patchesStrategicMerge:
+#   - patches/production-resources.yaml

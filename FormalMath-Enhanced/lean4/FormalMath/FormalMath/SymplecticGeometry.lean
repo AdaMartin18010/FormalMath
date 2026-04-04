@@ -22,9 +22,9 @@
 - Arnold, V.I. "Mathematical Methods of Classical Mechanics"
 -/
 
-import Mathlib.Geometry.Manifold.DifferentialForm
-import Mathlib.Geometry.Manifold.Morse.Basic
-import Mathlib.Analysis.InnerProductSpace.PiL2
+import FormalMath.Mathlib.Geometry.Manifold.DifferentialForm
+import FormalMath.Mathlib.Geometry.Manifold.Morse.Basic
+import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
 
 namespace SymplecticGeometry
 

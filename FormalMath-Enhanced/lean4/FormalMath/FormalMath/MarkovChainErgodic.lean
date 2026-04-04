@@ -23,10 +23,10 @@
 
 -/
 
-import Mathlib.Probability.MarkovChain
-import Mathlib.Dynamics.Ergodic.Ergodic
-import Mathlib.MeasureTheory.Integral.Average
-import Mathlib.Topology.MetricSpace.Basic
+import FormalMath.Mathlib.Probability.MarkovChain
+import FormalMath.Mathlib.Dynamics.Ergodic.Ergodic
+import FormalMath.Mathlib.MeasureTheory.Integral.Average
+import FormalMath.Mathlib.Topology.MetricSpace.Basic
 
 namespace MarkovChainErgodic
 

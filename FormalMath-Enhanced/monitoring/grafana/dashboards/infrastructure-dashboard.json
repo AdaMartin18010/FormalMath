@@ -1,0 +1,177 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": "formalmath-infra",
+    "title": "基础设施监控",
+    "tags": ["infrastructure", "system", "formalmath"],
+    "timezone": "Asia/Shanghai",
+    "schemaVersion": 38,
+    "version": 1,
+    "refresh": "30s",
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "templating": {
+      "list": [
+        {
+          "name": "instance",
+          "type": "query",
+          "query": "label_values(node_uname_info, instance)",
+          "multi": true,
+          "includeAll": true
+        }
+      ]
+    },
+    "panels": [
+      {
+        "id": 1,
+        "title": "CPU 使用率",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "100 - (avg by (instance) (irate(node_cpu_seconds_total{mode=\"idle\",instance=~\"$instance\"}[5m])) * 100)",
+            "legendFormat": "{{instance}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "min": 0,
+            "max": 100,
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": null},
+                {"color": "yellow", "value": 70},
+                {"color": "red", "value": 90}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "内存使用率",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "(node_memory_MemTotal_bytes{instance=~\"$instance\"} - node_memory_MemAvailable_bytes{instance=~\"$instance\"}) / node_memory_MemTotal_bytes{instance=~\"$instance\"} * 100",
+            "legendFormat": "{{instance}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "min": 0,
+            "max": 100,
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": null},
+                {"color": "yellow", "value": 80},
+                {"color": "red", "value": 95}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "磁盘使用率",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "(node_filesystem_size_bytes{mountpoint=\"/\",instance=~\"$instance\"} - node_filesystem_avail_bytes{mountpoint=\"/\",instance=~\"$instance\"}) / node_filesystem_size_bytes{mountpoint=\"/\",instance=~\"$instance\"} * 100",
+            "legendFormat": "{{instance}} - /"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "min": 0,
+            "max": 100,
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": null},
+                {"color": "yellow", "value": 85},
+                {"color": "red", "value": 95}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "网络流量",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(node_network_receive_bytes_total{instance=~\"$instance\",device=\"eth0\"}[5m])",
+            "legendFormat": "{{instance}} - 接收"
+          },
+          {
+            "expr": "rate(node_network_transmit_bytes_total{instance=~\"$instance\",device=\"eth0\"}[5m])",
+            "legendFormat": "{{instance}} - 发送"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "Bps"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "系统负载",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "node_load1{instance=~\"$instance\"}",
+            "legendFormat": "{{instance}} - 1分钟"
+          },
+          {
+            "expr": "node_load5{instance=~\"$instance\"}",
+            "legendFormat": "{{instance}} - 5分钟"
+          },
+          {
+            "expr": "node_load15{instance=~\"$instance\"}",
+            "legendFormat": "{{instance}} - 15分钟"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 16}
+      },
+      {
+        "id": 6,
+        "title": "容器状态",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "cadvisor_container_cpu_usage_seconds_total",
+            "format": "table",
+            "instant": true
+          }
+        ],
+        "transformations": [
+          {
+            "id": "organize",
+            "options": {
+              "includeByName": {
+                "name": true,
+                "Value": true
+              }
+            }
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 16}
+      }
+    ]
+  }
+}

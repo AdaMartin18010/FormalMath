@@ -19,12 +19,12 @@
 
 -/
 
-import Mathlib.Probability.Distributions.Gaussian
-import Mathlib.Probability.CentralLimitTheorem
-import Mathlib.Probability.Moments
-import Mathlib.Probability.Variance
-import Mathlib.MeasureTheory.Integral.Bochner
-import Mathlib.Analysis.SpecialFunctions.Gaussian
+import FormalMath.Mathlib.Probability.Distributions.Gaussian
+import FormalMath.Mathlib.Probability.CentralLimitTheorem
+import FormalMath.Mathlib.Probability.Moments
+import FormalMath.Mathlib.Probability.Variance
+import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
+import FormalMath.Mathlib.Analysis.SpecialFunctions.Gaussian
 
 namespace CentralLimitTheorem
 

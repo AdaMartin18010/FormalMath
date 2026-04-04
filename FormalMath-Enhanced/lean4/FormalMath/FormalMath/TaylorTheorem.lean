@@ -22,11 +22,11 @@ f(x) = f(a) + f'(a)(x-a) + f''(a)(x-a)²/2! + ... + f⁽ⁿ⁾(a)(x-a)ⁿ/n! + R
 4. 通过归纳法得到一般形式
 -/
 
-import Mathlib.Analysis.Calculus.Taylor
-import Mathlib.Analysis.Calculus.Deriv.Basic
-import Mathlib.Analysis.Calculus.ContDiff.Defs
-import Mathlib.Data.Real.Basic
-import Mathlib.Algebra.Polynomial.Basic
+import FormalMath.Mathlib.Analysis.Calculus.Taylor
+import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
+import FormalMath.Mathlib.Analysis.Calculus.ContDiff.Defs
+import FormalMath.Mathlib.Data.Real.Basic
+import FormalMath.Mathlib.Algebra.Polynomial.Basic
 
 namespace TaylorTheorem
 

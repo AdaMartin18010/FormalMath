@@ -22,9 +22,9 @@ Yang-Mills理论是规范场论的几何框架，
 - Jost, J. "Riemannian Geometry and Geometric Analysis"
 -/
 
-import Mathlib.Geometry.Manifold.VectorBundle.Basic
-import Mathlib.DifferentialGeometry.Connection.Basic
-import Mathlib.Analysis.Calculus.DifferentialForms
+import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
+import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
+import FormalMath.Mathlib.Analysis.Calculus.DifferentialForms
 
 namespace YangMillsTheory
 

@@ -6,6 +6,10 @@ msc_primary: 00A99
 
 **数学形式化与数学家理念体系的综合性教育知识库**
 
+[![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=build)](https://github.com/formalmath/formalmath/actions/workflows/build.yml)
+[![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=test)](https://github.com/formalmath/formalmath/actions/workflows/test.yml)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=deploy)](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml)
+[![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=security)](https://github.com/formalmath/formalmath/actions/workflows/security.yml)
 [![完成度](https://img.shields.io/badge/完成度-100%25-brightgreen)](./00-FormalMath项目完成状态报告-2026年4月.md)
 [![文档数](https://img.shields.io/badge/文档-6573%2B-blue)](./docs/00-项目统计总览.md)
 [![数学家](https://img.shields.io/badge/数学家-62位-orange)](./数学家理念体系/)
@@ -79,6 +83,7 @@ docs/15-同调代数/导出范畴-深度扩展版.md
 | ⭐⭐☆☆☆ 基础级 | 35位 | 阿蒂亚、塞尔、德利涅等 |
 
 **深度之最**：
+
 - 🏆 格洛腾迪克：493篇深度文档，182.4万字
 - 🥈 庞加莱：200篇深度文档，108万字
 - 🥉 希尔伯特：96篇深度文档，45.1万字
@@ -163,6 +168,21 @@ docs/15-同调代数/导出范畴-深度扩展版.md
 
 ---
 
+## 🚀 CI/CD
+
+项目使用 GitHub Actions 实现完整的自动化流程：
+
+| 流程 | 状态 | 说明 |
+|------|------|------|
+| [Build](.github/workflows/build.yml) | [![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=)](https://github.com/formalmath/formalmath/actions/workflows/build.yml) | 前端、Python 工具、Lean4 构建 |
+| [Test](.github/workflows/test.yml) | [![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=)](https://github.com/formalmath/formalmath/actions/workflows/test.yml) | 单元测试、集成测试、E2E 测试 |
+| [Deploy](.github/workflows/deploy.yml) | [![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=)](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml) | 自动部署到测试/生产环境 |
+| [Security](.github/workflows/security.yml) | [![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=)](https://github.com/formalmath/formalmath/actions/workflows/security.yml) | 漏洞扫描、密钥检测 |
+
+📖 **[CI/CD 完整指南](.github/CI_CD_GUIDE.md)** | 📊 [工作流状态](.github/WORKFLOW_STATUS.md)
+
+---
+
 ## 🤝 贡献与参考
 
 - **[CREDITS.md](./CREDITS.md)** - 项目贡献者与参考资源
@@ -177,6 +197,6 @@ docs/15-同调代数/导出范畴-深度扩展版.md
 
 ---
 
-**最后更新**: 2026年4月3日  
-**项目状态**: ✅ 100%完成（第九批最终交付）  
+**最后更新**: 2026年4月3日
+**项目状态**: ✅ 100%完成（第九批最终交付）
 **版本**: v1.0

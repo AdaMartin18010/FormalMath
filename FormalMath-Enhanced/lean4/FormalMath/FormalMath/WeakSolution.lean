@@ -21,8 +21,8 @@
 - Brezis, H. "Functional Analysis, Sobolev Spaces and PDEs"
 -/
 
-import Mathlib.SobolevSpace
-import Mathlib.MeasureTheory.Function.LpSpace
+import FormalMath.Mathlib.SobolevSpace
+import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
 
 namespace WeakSolution
 

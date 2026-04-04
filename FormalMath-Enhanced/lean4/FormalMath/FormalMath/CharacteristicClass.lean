@@ -37,9 +37,9 @@
 4. Wu公式：Sq(w_k E)与低阶类的关系
 -/
 
-import Mathlib.Topology.VectorBundle.Basic
-import Mathlib.AlgebraicTopology.CechNerve
-import Mathlib.Analysis.Calculus.DifferentialForms
+import FormalMath.Mathlib.Topology.VectorBundle.Basic
+import FormalMath.Mathlib.AlgebraicTopology.CechNerve
+import FormalMath.Mathlib.Analysis.Calculus.DifferentialForms
 
 namespace CharacteristicClass
 

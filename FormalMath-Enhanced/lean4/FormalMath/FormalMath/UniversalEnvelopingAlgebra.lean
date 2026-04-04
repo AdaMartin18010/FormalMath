@@ -20,9 +20,9 @@
 - Dixmier, J. "Enveloping Algebras"
 -/
 
-import Mathlib.Algebra.Lie.UniversalEnveloping
-import Mathlib.Algebra.Lie.OfAssociative
-import Mathlib.RingTheory.TensorProduct
+import FormalMath.Mathlib.Algebra.Lie.UniversalEnveloping
+import FormalMath.Mathlib.Algebra.Lie.OfAssociative
+import FormalMath.Mathlib.RingTheory.TensorProduct
 
 namespace UniversalEnvelopingAlgebra
 

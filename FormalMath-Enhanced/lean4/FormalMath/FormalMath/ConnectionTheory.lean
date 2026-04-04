@@ -20,9 +20,9 @@
 - Spivak, M. "A Comprehensive Introduction to Differential Geometry"
 -/
 
-import Mathlib.Geometry.Manifold.VectorBundle.Basic
-import Mathlib.DifferentialGeometry.Connection.Basic
-import Mathlib.DifferentialGeometry.MyersSteenrod
+import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
+import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
+import FormalMath.Mathlib.DifferentialGeometry.MyersSteenrod
 
 namespace ConnectionTheory
 

@@ -21,9 +21,9 @@
 - Evans, L.C. "Partial Differential Equations" (Chapter 8)
 -/
 
-import Mathlib.Analysis.Calculus.Deriv.Basic
-import Mathlib.Analysis.Calculus.Gradient.Basic
-import Mathlib.Analysis.InnerProductSpace.PiL2
+import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
+import FormalMath.Mathlib.Analysis.Calculus.Gradient.Basic
+import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
 
 namespace CalculusOfVariations
 

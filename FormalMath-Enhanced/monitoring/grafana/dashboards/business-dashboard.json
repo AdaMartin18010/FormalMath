@@ -1,0 +1,185 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": "formalmath-business",
+    "title": "业务指标监控",
+    "tags": ["business", "formalmath", "learning"],
+    "timezone": "Asia/Shanghai",
+    "schemaVersion": 38,
+    "version": 1,
+    "refresh": "1m",
+    "time": {
+      "from": "now-24h",
+      "to": "now"
+    },
+    "panels": [
+      {
+        "id": 1,
+        "title": "活跃用户",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(user_sessions_active)",
+            "legendFormat": "活跃用户"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short",
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": null},
+                {"color": "yellow", "value": 100},
+                {"color": "green", "value": 500}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 4, "w": 6, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "学习路径生成数",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(increase(learning_path_generation_total[1h]))",
+            "legendFormat": "过去1小时"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 6, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "认知诊断数",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(increase(cognitive_diagnosis_total[1h]))",
+            "legendFormat": "过去1小时"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 12, "y": 0}
+      },
+      {
+        "id": 4,
+        "title": "Lean4 编译成功数",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(increase(lean4_compilation_total{status=\"success\"}[1h]))",
+            "legendFormat": "过去1小时"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 18, "y": 0}
+      },
+      {
+        "id": 5,
+        "title": "用户活动趋势",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sum(rate(user_sessions_total[1h]))",
+            "legendFormat": "会话数/小时"
+          },
+          {
+            "expr": "sum(rate(user_logins_total[1h]))",
+            "legendFormat": "登录数/小时"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 4}
+      },
+      {
+        "id": 6,
+        "title": "学习路径成功率",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sum(rate(learning_path_generation_total{status=\"success\"}[10m])) / sum(rate(learning_path_generation_total[10m]))",
+            "legendFormat": "成功率"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percentunit",
+            "min": 0,
+            "max": 1
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 4}
+      },
+      {
+        "id": 7,
+        "title": "IMO 题目访问统计",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sum(rate(imo_problem_views_total[1h])) by (year)",
+            "legendFormat": "{{year}}年题目"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 12}
+      },
+      {
+        "id": 8,
+        "title": "AI 形式化统计",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sum(rate(ai_formalization_total{status=\"success\"}[10m]))",
+            "legendFormat": "成功"
+          },
+          {
+            "expr": "sum(rate(ai_formalization_total{status=\"error\"}[10m]))",
+            "legendFormat": "失败"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 12}
+      },
+      {
+        "id": 9,
+        "title": "推荐系统效果",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "recommendation_click_rate",
+            "format": "table",
+            "instant": true
+          },
+          {
+            "expr": "recommendation_conversion_rate",
+            "format": "table",
+            "instant": true
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 20}
+      },
+      {
+        "id": 10,
+        "title": "定理覆盖进度",
+        "type": "gauge",
+        "targets": [
+          {
+            "expr": "msc_coded_theorems / total_theorems",
+            "legendFormat": "MSC 编码覆盖率"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percentunit",
+            "min": 0,
+            "max": 1,
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": null},
+                {"color": "yellow", "value": 0.8},
+                {"color": "green", "value": 0.95}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 20}
+      }
+    ]
+  }
+}

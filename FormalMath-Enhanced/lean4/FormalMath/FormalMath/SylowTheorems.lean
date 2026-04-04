@@ -18,12 +18,12 @@ Sylow定理是有限群论中最基本的结果之一。
 本文件基于Mathlib4中已证明的Sylow定理，建立符合教学需求的定理表述。
 -/"
 
-import Mathlib.GroupTheory.Sylow
-import Mathlib.GroupTheory.PGroup
-import Mathlib.GroupTheory.Subgroup.Basic
-import Mathlib.GroupTheory.Coset
-import Mathlib.GroupTheory.GroupAction.Basic
-import Mathlib.Data.Nat.Factors
+import FormalMath.Mathlib.GroupTheory.Sylow
+import FormalMath.Mathlib.GroupTheory.PGroup
+import FormalMath.Mathlib.GroupTheory.Subgroup.Basic
+import FormalMath.Mathlib.GroupTheory.Coset
+import FormalMath.Mathlib.GroupTheory.GroupAction.Basic
+import FormalMath.Mathlib.Data.Nat.Factors
 
 namespace SylowTheorems
 

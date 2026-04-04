@@ -1,0 +1,1474 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FormalMath API",
+    "version": "2.0.0",
+    "description": "高性能数学学习平台API，提供知识图谱查询、学习路径生成、认知诊断、语义搜索、个性化推荐等功能。",
+    "contact": {
+      "name": "FormalMath Team",
+      "email": "api@formalmath.org"
+    },
+    "license": {
+      "name": "MIT License",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "x-api-version": "2.0.0",
+    "x-release-date": "2026-04-04",
+    "x-documentation-url": "https://docs.formalmath.org/api"
+  },
+  "servers": [
+    {
+      "url": "https://api.formalmath.org/api/v1",
+      "description": "生产环境"
+    },
+    {
+      "url": "https://staging-api.formalmath.org/api/v1",
+      "description": "预发布环境"
+    },
+    {
+      "url": "http://localhost:8000/api/v1",
+      "description": "本地开发环境"
+    }
+  ],
+  "tags": [
+    {
+      "name": "健康检查",
+      "description": "系统和组件健康状态检查"
+    },
+    {
+      "name": "知识图谱",
+      "description": "数学知识图谱查询和浏览"
+    },
+    {
+      "name": "学习路径",
+      "description": "个性化学习路径创建和管理"
+    },
+    {
+      "name": "异步任务",
+      "description": "异步任务状态和结果查询"
+    },
+    {
+      "name": "语义搜索",
+      "description": "语义搜索、公式搜索和问答"
+    },
+    {
+      "name": "推荐系统",
+      "description": "个性化推荐服务"
+    },
+    {
+      "name": "个性化学习引擎2.0",
+      "description": "AI驱动的个性化学习引擎"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": ["健康检查"],
+        "summary": "基础健康检查",
+        "description": "返回API服务基本健康状态，适用于负载均衡健康检查",
+        "operationId": "healthCheck",
+        "responses": {
+          "200": {
+            "description": "服务健康",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthStatus"
+                },
+                "example": {
+                  "status": "healthy",
+                  "timestamp": "2026-04-04T15:30:00Z",
+                  "version": "2.0.0"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "服务不可用",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health/detailed": {
+      "get": {
+        "tags": ["健康检查"],
+        "summary": "详细系统状态检查",
+        "description": "返回API、数据库、Redis、Celery等组件的详细状态",
+        "operationId": "detailedHealthCheck",
+        "responses": {
+          "200": {
+            "description": "系统状态详情",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SystemStatus"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health/database": {
+      "get": {
+        "tags": ["健康检查"],
+        "summary": "数据库健康检查",
+        "operationId": "databaseHealth",
+        "responses": {
+          "200": {
+            "description": "数据库健康"
+          },
+          "503": {
+            "description": "数据库不可用"
+          }
+        }
+      }
+    },
+    "/health/redis": {
+      "get": {
+        "tags": ["健康检查"],
+        "summary": "Redis健康检查",
+        "operationId": "redisHealth",
+        "responses": {
+          "200": {
+            "description": "Redis健康"
+          },
+          "503": {
+            "description": "Redis不可用"
+          }
+        }
+      }
+    },
+    "/health/celery": {
+      "get": {
+        "tags": ["健康检查"],
+        "summary": "Celery健康检查",
+        "operationId": "celeryHealth",
+        "responses": {
+          "200": {
+            "description": "Celery健康"
+          },
+          "503": {
+            "description": "Celery不可用"
+          }
+        }
+      }
+    },
+    "/health/pool": {
+      "get": {
+        "tags": ["健康检查"],
+        "summary": "数据库连接池状态",
+        "operationId": "connectionPoolStatus",
+        "responses": {
+          "200": {
+            "description": "连接池状态"
+          }
+        }
+      }
+    },
+    "/concepts": {
+      "get": {
+        "tags": ["知识图谱"],
+        "summary": "获取概念列表",
+        "description": "分页获取数学概念列表，支持按分支、难度和关键词过滤",
+        "operationId": "listConcepts",
+        "parameters": [
+          {
+            "name": "branch",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "学科分支过滤 (algebra, geometry, analysis, etc.)"
+          },
+          {
+            "name": "difficulty",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": ["basic", "intermediate", "advanced", "research"]
+            },
+            "description": "难度过滤"
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "搜索关键词"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1
+            },
+            "description": "页码"
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 20,
+              "minimum": 1,
+              "maximum": 100
+            },
+            "description": "每页数量"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "概念列表",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConceptListResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/concepts/{concept_id}": {
+      "get": {
+        "tags": ["知识图谱"],
+        "summary": "获取概念详情",
+        "operationId": "getConcept",
+        "parameters": [
+          {
+            "name": "concept_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "概念唯一标识符"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "概念详情",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConceptResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "概念不存在"
+          }
+        }
+      }
+    },
+    "/concepts/{concept_id}/relations": {
+      "get": {
+        "tags": ["知识图谱"],
+        "summary": "获取概念关系",
+        "operationId": "getConceptRelations",
+        "parameters": [
+          {
+            "name": "concept_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "relation_type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "关系类型过滤"
+          },
+          {
+            "name": "direction",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "both",
+              "enum": ["in", "out", "both"]
+            },
+            "description": "关系方向"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "概念关系列表"
+          }
+        }
+      }
+    },
+    "/concepts/{concept_id}/prerequisites": {
+      "get": {
+        "tags": ["知识图谱"],
+        "summary": "获取前置依赖",
+        "description": "获取概念的前置依赖，支持多级递归查询",
+        "operationId": "getConceptPrerequisites",
+        "parameters": [
+          {
+            "name": "concept_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "depth",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1,
+              "maximum": 5
+            },
+            "description": "递归深度"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "前置依赖列表"
+          }
+        }
+      }
+    },
+    "/graph/stats": {
+      "get": {
+        "tags": ["知识图谱"],
+        "summary": "获取图谱统计信息",
+        "operationId": "getGraphStats",
+        "parameters": [
+          {
+            "name": "branch",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "指定分支"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "图谱统计",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GraphStats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/learning-paths": {
+      "post": {
+        "tags": ["学习路径"],
+        "summary": "创建学习路径",
+        "description": "创建个性化学习路径，支持同步和异步模式",
+        "operationId": "createLearningPath",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePathRequest"
+              },
+              "example": {
+                "user_id": 123,
+                "target_concepts": ["linear_algebra", "matrix_theory"],
+                "algorithm": "astar",
+                "constraints": {
+                  "max_time": 3600,
+                  "difficulty_range": [0.3, 0.8]
+                },
+                "async_mode": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "任务已提交",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/learning-paths/user/{user_id}": {
+      "get": {
+        "tags": ["学习路径"],
+        "summary": "获取用户学习路径列表",
+        "operationId": "getUserLearningPaths",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": ["active", "completed", "paused"]
+            },
+            "description": "状态过滤"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "路径列表"
+          }
+        }
+      }
+    },
+    "/learning-paths/{path_id}": {
+      "get": {
+        "tags": ["学习路径"],
+        "summary": "获取学习路径详情",
+        "operationId": "getLearningPathDetail",
+        "parameters": [
+          {
+            "name": "path_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "路径详情"
+          },
+          "404": {
+            "description": "路径不存在"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["学习路径"],
+        "summary": "删除学习路径",
+        "operationId": "deleteLearningPath",
+        "parameters": [
+          {
+            "name": "path_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "删除成功"
+          }
+        }
+      }
+    },
+    "/learning-paths/{path_id}/optimize": {
+      "post": {
+        "tags": ["学习路径"],
+        "summary": "优化学习路径",
+        "operationId": "optimizePath",
+        "parameters": [
+          {
+            "name": "path_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "optimization_type",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "difficulty",
+              "enum": ["difficulty", "time", "balance"]
+            },
+            "description": "优化类型"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "优化任务已提交"
+          }
+        }
+      }
+    },
+    "/learning-paths/{path_id}/progress": {
+      "put": {
+        "tags": ["学习路径"],
+        "summary": "更新学习进度",
+        "operationId": "updatePathProgress",
+        "parameters": [
+          {
+            "name": "path_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "completed_nodes",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "description": "已完成节点数"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "进度已更新"
+          }
+        }
+      }
+    },
+    "/tasks/{task_id}": {
+      "get": {
+        "tags": ["异步任务"],
+        "summary": "获取任务状态",
+        "operationId": "getTaskInfo",
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "任务ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "任务信息",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tasks/{task_id}/result": {
+      "get": {
+        "tags": ["异步任务"],
+        "summary": "获取任务结果",
+        "operationId": "getTaskResult",
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "任务结果"
+          },
+          "400": {
+            "description": "任务尚未完成"
+          }
+        }
+      }
+    },
+    "/tasks/{task_id}/progress": {
+      "get": {
+        "tags": ["异步任务"],
+        "summary": "获取任务进度",
+        "operationId": "getTaskProgress",
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "任务进度"
+          }
+        }
+      }
+    },
+    "/tasks/{task_id}/revoke": {
+      "post": {
+        "tags": ["异步任务"],
+        "summary": "撤销任务",
+        "operationId": "revokeTask",
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "terminate",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            },
+            "description": "是否强制终止"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "任务已撤销"
+          }
+        }
+      }
+    },
+    "/tasks": {
+      "get": {
+        "tags": ["异步任务"],
+        "summary": "列出活跃任务",
+        "operationId": "listTasks",
+        "parameters": [
+          {
+            "name": "state",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "状态过滤"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 50,
+              "minimum": 1,
+              "maximum": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "任务列表"
+          }
+        }
+      }
+    },
+    "/tasks/workers/status": {
+      "get": {
+        "tags": ["异步任务"],
+        "summary": "获取Worker状态",
+        "operationId": "getWorkersStatus",
+        "responses": {
+          "200": {
+            "description": "Worker状态"
+          }
+        }
+      }
+    },
+    "/search/search": {
+      "post": {
+        "tags": ["语义搜索"],
+        "summary": "执行搜索",
+        "description": "支持语义搜索、关键词搜索、混合搜索和公式搜索",
+        "operationId": "search",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchQuery"
+              },
+              "example": {
+                "query": "线性代数的基本定理",
+                "search_type": "hybrid",
+                "k": 10,
+                "rerank": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "搜索结果"
+          }
+        }
+      },
+      "get": {
+        "tags": ["语义搜索"],
+        "summary": "执行搜索（GET方式）",
+        "operationId": "searchGet",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "搜索查询"
+          },
+          {
+            "name": "search_type",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "hybrid"
+            }
+          },
+          {
+            "name": "k",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "搜索结果"
+          }
+        }
+      }
+    },
+    "/search/formula": {
+      "post": {
+        "tags": ["语义搜索"],
+        "summary": "公式搜索",
+        "description": "搜索数学公式，支持LaTeX格式",
+        "operationId": "searchFormula",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FormulaSearchQuery"
+              },
+              "example": {
+                "latex": "E = mc^2",
+                "k": 10,
+                "match_type": "all"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "公式搜索结果"
+          }
+        }
+      }
+    },
+    "/search/ask": {
+      "post": {
+        "tags": ["语义搜索"],
+        "summary": "数学问答",
+        "description": "基于知识库的数学问答系统",
+        "operationId": "askQuestion",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuestionRequest"
+              },
+              "example": {
+                "question": "什么是特征值？",
+                "use_multi_hop": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "问答结果"
+          }
+        }
+      }
+    },
+    "/recommendations/recommend": {
+      "post": {
+        "tags": ["推荐系统"],
+        "summary": "获取个性化推荐",
+        "description": "支持多种推荐算法：协同过滤、知识图谱、强化学习、内容、混合",
+        "operationId": "getRecommendations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecommendationRequest"
+              },
+              "example": {
+                "user_id": 123,
+                "n_recommendations": 10,
+                "recommendation_type": "hybrid"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "推荐结果",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RecommendationResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/recommendations/feedback": {
+      "post": {
+        "tags": ["推荐系统"],
+        "summary": "提交推荐反馈",
+        "description": "用于强化学习模型的更新",
+        "operationId": "submitFeedback",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeedbackRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "反馈已接收"
+          }
+        }
+      }
+    },
+    "/learning-engine/users/initialize": {
+      "post": {
+        "tags": ["个性化学习引擎2.0"],
+        "summary": "初始化用户学习档案",
+        "operationId": "initializeUser",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InitializeUserRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "初始化成功"
+          }
+        }
+      }
+    },
+    "/learning-engine/interactions/record": {
+      "post": {
+        "tags": ["个性化学习引擎2.0"],
+        "summary": "记录学习交互",
+        "operationId": "recordInteraction",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LearningInteractionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "记录成功"
+          }
+        }
+      }
+    },
+    "/learning-engine/users/{user_id}/next-steps": {
+      "get": {
+        "tags": ["个性化学习引擎2.0"],
+        "summary": "获取下一步学习建议",
+        "operationId": "getNextSteps",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "current_concept",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "学习建议"
+          }
+        }
+      }
+    },
+    "/learning-engine/paths/generate": {
+      "post": {
+        "tags": ["个性化学习引擎2.0"],
+        "summary": "生成个性化学习路径",
+        "operationId": "generateLearningPath",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GeneratePathRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "学习路径"
+          }
+        }
+      }
+    },
+    "/learning-engine/users/{user_id}/analytics": {
+      "get": {
+        "tags": ["个性化学习引擎2.0"],
+        "summary": "获取用户学习分析",
+        "operationId": "getUserAnalytics",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "学习分析"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HealthStatus": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["healthy", "unhealthy"]
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "version": {
+            "type": "string"
+          }
+        },
+        "required": ["status", "timestamp", "version"]
+      },
+      "SystemStatus": {
+        "type": "object",
+        "properties": {
+          "api": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string"
+              },
+              "timestamp": {
+                "type": "string"
+              }
+            }
+          },
+          "database": {
+            "type": "object"
+          },
+          "redis": {
+            "type": "object"
+          },
+          "celery": {
+            "type": "object"
+          }
+        }
+      },
+      "ConceptResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "branch": {
+            "type": "string"
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": ["basic", "intermediate", "advanced", "research"]
+          },
+          "description": {
+            "type": "string"
+          },
+          "prerequisites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["id", "name", "branch", "difficulty"]
+      },
+      "ConceptListResponse": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConceptResponse"
+            }
+          },
+          "total": {
+            "type": "integer"
+          },
+          "page": {
+            "type": "integer"
+          },
+          "page_size": {
+            "type": "integer"
+          },
+          "pages": {
+            "type": "integer"
+          },
+          "has_next": {
+            "type": "boolean"
+          },
+          "has_prev": {
+            "type": "boolean"
+          }
+        },
+        "required": ["items", "total", "page", "page_size"]
+      },
+      "GraphStats": {
+        "type": "object",
+        "properties": {
+          "total_nodes": {
+            "type": "integer"
+          },
+          "total_edges": {
+            "type": "integer"
+          },
+          "branches": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          },
+          "difficulty_distribution": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          }
+        },
+        "required": ["total_nodes", "total_edges", "branches", "difficulty_distribution"]
+      },
+      "CreatePathRequest": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "integer"
+          },
+          "target_concepts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "algorithm": {
+            "type": "string",
+            "enum": ["astar", "dijkstra", "dp"],
+            "default": "astar"
+          },
+          "constraints": {
+            "type": "object"
+          },
+          "async_mode": {
+            "type": "boolean",
+            "default": true
+          }
+        },
+        "required": ["user_id", "target_concepts"]
+      },
+      "TaskResponse": {
+        "type": "object",
+        "properties": {
+          "task_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "required": ["task_id", "status", "message"]
+      },
+      "TaskInfo": {
+        "type": "object",
+        "properties": {
+          "task_id": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": ["PENDING", "STARTED", "PROGRESS", "SUCCESS", "FAILURE", "RETRY", "REVOKED"]
+          },
+          "status": {
+            "type": "string"
+          },
+          "result": {
+            "type": "object"
+          },
+          "error": {
+            "type": "string"
+          },
+          "progress": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "message": {
+            "type": "string"
+          },
+          "date_done": {
+            "type": "string"
+          },
+          "runtime": {
+            "type": "number"
+          }
+        },
+        "required": ["task_id", "state", "status"]
+      },
+      "SearchQuery": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "search_type": {
+            "type": "string",
+            "enum": ["semantic", "keyword", "hybrid", "formula"],
+            "default": "hybrid"
+          },
+          "k": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 10
+          },
+          "rerank": {
+            "type": "boolean",
+            "default": true
+          },
+          "filter_metadata": {
+            "type": "object"
+          }
+        },
+        "required": ["query"]
+      },
+      "FormulaSearchQuery": {
+        "type": "object",
+        "properties": {
+          "latex": {
+            "type": "string",
+            "minLength": 1
+          },
+          "k": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "default": 10
+          },
+          "match_type": {
+            "type": "string",
+            "enum": ["all", "exact", "structural", "variable_independent"],
+            "default": "all"
+          }
+        },
+        "required": ["latex"]
+      },
+      "QuestionRequest": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "use_multi_hop": {
+            "type": "boolean",
+            "default": true
+          }
+        },
+        "required": ["question"]
+      },
+      "RecommendationRequest": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "integer"
+          },
+          "n_recommendations": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "default": 10
+          },
+          "recommendation_type": {
+            "type": "string",
+            "enum": ["collaborative", "knowledge_graph", "reinforcement_learning", "content", "hybrid"],
+            "default": "hybrid"
+          },
+          "context": {
+            "type": "object"
+          }
+        },
+        "required": ["user_id"]
+      },
+      "RecommendationItem": {
+        "type": "object",
+        "properties": {
+          "concept_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "branch": {
+            "type": "string"
+          },
+          "score": {
+            "type": "number"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number"
+          },
+          "component_scores": {
+            "type": "object"
+          }
+        }
+      },
+      "RecommendationResponse": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "integer"
+          },
+          "recommendations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RecommendationItem"
+            }
+          },
+          "total_count": {
+            "type": "integer"
+          },
+          "recommendation_type": {
+            "type": "string"
+          }
+        }
+      },
+      "FeedbackRequest": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "integer"
+          },
+          "concept_id": {
+            "type": "string"
+          },
+          "reward": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "action": {
+            "type": "string",
+            "default": "study"
+          },
+          "metrics": {
+            "type": "object"
+          }
+        },
+        "required": ["user_id", "concept_id", "reward"]
+      },
+      "InitializeUserRequest": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "initial_assessment": {
+            "type": "object"
+          }
+        },
+        "required": ["user_id"]
+      },
+      "LearningInteractionRequest": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "concept_id": {
+            "type": "string"
+          },
+          "interaction_type": {
+            "type": "string"
+          },
+          "result": {
+            "type": "object"
+          },
+          "context": {
+            "type": "object"
+          }
+        },
+        "required": ["user_id", "concept_id", "interaction_type", "result"]
+      },
+      "GeneratePathRequest": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "target_concepts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "constraints": {
+            "type": "object"
+          }
+        },
+        "required": ["user_id", "target_concepts"]
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "default": false
+          },
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "error_id": {
+                "type": "string"
+              },
+              "timestamp": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "details": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "description": "JWT认证令牌"
+      },
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key",
+        "description": "API密钥"
+      }
+    }
+  },
+  "security": [
+    {
+      "BearerAuth": []
+    }
+  ]
+}

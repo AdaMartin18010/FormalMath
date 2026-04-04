@@ -19,10 +19,10 @@
 
 -/
 
-import Mathlib.Geometry.RiemannianMetric.Geodesic
-import Mathlib.Geometry.Manifold.IntegralCurve
-import Mathlib.Analysis.ODE.PicardLindelof
-import Mathlib.Geometry.RiemannianMetric.ExponentialMap
+import FormalMath.Mathlib.Geometry.RiemannianMetric.Geodesic
+import FormalMath.Mathlib.Geometry.Manifold.IntegralCurve
+import FormalMath.Mathlib.Analysis.ODE.PicardLindelof
+import FormalMath.Mathlib.Geometry.RiemannianMetric.ExponentialMap
 
 namespace GeodesicEquation
 

@@ -1,0 +1,109 @@
+{
+  "scan_time": "2026-04-04T15:44:13.112970",
+  "project_path": "..",
+  "total_issues": 10,
+  "severity_counts": {
+    "critical": 1,
+    "high": 6,
+    "medium": 3,
+    "low": 0,
+    "info": 0
+  },
+  "category_counts": {
+    "sensitive_data": 1,
+    "insecure_code": 8,
+    "configuration": 1
+  },
+  "issues": [
+    {
+      "severity": "high",
+      "category": "sensitive_data",
+      "file": "tests\\reliability\\test_api_functional.py",
+      "line": 31,
+      "message": "发现可能的credential泄露",
+      "recommendation": "使用环境变量或密钥管理服务存储敏感信息",
+      "code_snippet": "SQLALCHEMY_DATABASE_URL = \"sqlite:///:memory:\""
+    },
+    {
+      "severity": "high",
+      "category": "insecure_code",
+      "file": "security\\security_scanner.py",
+      "line": 307,
+      "message": "发现不安全的yaml使用",
+      "recommendation": "使用yaml.safe_load()替代yaml.load()",
+      "code_snippet": "'yaml': '使用yaml.safe_load()替代yaml.load()',"
+    },
+    {
+      "severity": "medium",
+      "category": "insecure_code",
+      "file": "security\\security_scanner.py",
+      "line": 260,
+      "message": "发现不安全的debug使用",
+      "recommendation": "生产环境禁用DEBUG模式",
+      "code_snippet": "if 'DEBUG = True' in content or 'DEBUG=True' in content:"
+    },
+    {
+      "severity": "medium",
+      "category": "insecure_code",
+      "file": "security\\security_scanner.py",
+      "line": 260,
+      "message": "发现不安全的debug使用",
+      "recommendation": "生产环境禁用DEBUG模式",
+      "code_snippet": "if 'DEBUG = True' in content or 'DEBUG=True' in content:"
+    },
+    {
+      "severity": "high",
+      "category": "insecure_code",
+      "file": "app\\cache\\redis_cache.py",
+      "line": 93,
+      "message": "发现不安全的pickle使用",
+      "recommendation": "避免对不可信数据使用pickle，使用JSON替代",
+      "code_snippet": "return pickle.loads(value)"
+    },
+    {
+      "severity": "critical",
+      "category": "insecure_code",
+      "file": "app\\recommendation\\knowledge_embedding.py",
+      "line": 480,
+      "message": "发现不安全的eval使用",
+      "recommendation": "避免使用eval()，使用ast.literal_eval()替代或重新设计代码",
+      "code_snippet": "self.model.eval()"
+    },
+    {
+      "severity": "high",
+      "category": "insecure_code",
+      "file": "app\\services\\vector_store.py",
+      "line": 157,
+      "message": "发现不安全的pickle使用",
+      "recommendation": "避免对不可信数据使用pickle，使用JSON替代",
+      "code_snippet": "self.doc_ids = pickle.load(f)"
+    },
+    {
+      "severity": "high",
+      "category": "insecure_code",
+      "file": "app\\services\\vector_store.py",
+      "line": 213,
+      "message": "发现不安全的pickle使用",
+      "recommendation": "避免对不可信数据使用pickle，使用JSON替代",
+      "code_snippet": "self.embeddings = pickle.load(f)"
+    },
+    {
+      "severity": "high",
+      "category": "insecure_code",
+      "file": "app\\services\\vector_store.py",
+      "line": 481,
+      "message": "发现不安全的pickle使用",
+      "recommendation": "避免对不可信数据使用pickle，使用JSON替代",
+      "code_snippet": "self.documents = pickle.load(f)"
+    },
+    {
+      "severity": "medium",
+      "category": "configuration",
+      "file": "",
+      "line": 0,
+      "message": "未找到Nginx SSL配置文件",
+      "recommendation": "配置HTTPS以确保通信安全",
+      "code_snippet": null
+    }
+  ]
+}

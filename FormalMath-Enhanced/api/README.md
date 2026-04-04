@@ -45,8 +45,16 @@ celery -A app.tasks.celery_app worker --loglevel=info
 
 ### 访问API文档
 
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
+- **OpenAPI JSON**: http://localhost:8000/openapi.json
+
+## 文档目录
+
+- [API使用指南](docs/API_GUIDE.md) - 完整的API使用示例和最佳实践
+- [错误码说明](docs/ERROR_CODES.md) - 详细的错误码参考
+- [速率限制说明](docs/RATE_LIMIT.md) - 速率限制规则和限制
+- [变更日志](CHANGELOG.md) - API版本变更历史
 
 ## API端点
 

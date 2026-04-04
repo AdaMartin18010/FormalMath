@@ -1213,6 +1213,10 @@ concepts:
   - concept_id: "category_theory"
     name: "范畴论"
     category: "代数学"
+    msc_codes:
+      primary: "18A"
+      secondary: ["18B", "18C", "18D", "18E"]
+      description: "范畴、函子、自然变换"
     prerequisites:
       - concept_id: "set_theory"
         level: "L0"
@@ -1255,6 +1259,301 @@ concepts:
         relation: "被依赖"
     difficulty: 5
     estimated_hours: 50
+
+  # ---------- 基础群论概念（MSC编码补充） ----------
+  - concept_id: "subgroup"
+    name: "子群"
+    category: "代数学"
+    msc_primary: "20A05"
+    msc_secondary: ["20D30"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "normal_subgroup"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "quotient_group"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "quotient_group"
+    name: "商群"
+    category: "代数学"
+    msc_primary: "20A05"
+    msc_secondary: ["20D35"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "subgroup"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "normal_subgroup"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "group_homomorphism"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "simple_group"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "group_homomorphism"
+    name: "群同态"
+    category: "代数学"
+    msc_primary: "20A05"
+    msc_secondary: ["18A22"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "function"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "quotient_group"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "group_isomorphism"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "simple_group"
+    name: "有限单群"
+    category: "代数学"
+    msc_primary: "20D05"
+    msc_secondary: ["20E32"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "quotient_group"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "normal_subgroup"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "finite_group_classification"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "free_group"
+    name: "自由群"
+    category: "代数学"
+    msc_primary: "20E05"
+    msc_secondary: ["20F05"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "set_theory"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "group_presentation"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "combinatorial_group_theory"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "representation_theory"
+    name: "表示论"
+    category: "代数学"
+    msc_primary: "20Cxx"
+    msc_secondary: ["16Gxx", "22E47"]
+    prerequisites:
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "character_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "lie_group"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  # ---------- 环论概念（MSC编码补充） ----------
+  - concept_id: "integral_domain"
+    name: "整环"
+    category: "代数学"
+    msc_primary: "13G05"
+    msc_secondary: ["13Bxx"]
+    prerequisites:
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "commutative_ring"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "field"
+        level: "L1"
+        relation: "被依赖"
+      - concept_id: "principal_ideal_domain"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
+
+  - concept_id: "principal_ideal_domain"
+    name: "PID"
+    category: "代数学"
+    msc_primary: "13F15"
+    msc_secondary: ["13Gxx"]
+    prerequisites:
+      - concept_id: "integral_domain"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "ideal"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "euclidean_domain"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "unique_factorization_domain"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "noetherian_ring"
+    name: "诺特环"
+    category: "代数学"
+    msc_primary: "13E05"
+    msc_secondary: ["16P40"]
+    prerequisites:
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "ideal"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "commutative_algebra"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "algebraic_geometry"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  # ---------- 域论概念（MSC编码补充） ----------
+  - concept_id: "field_extension"
+    name: "域扩张"
+    category: "代数学"
+    msc_primary: "12F05"
+    msc_secondary: ["12Fxx"]
+    prerequisites:
+      - concept_id: "field"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "polynomial_ring"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "algebraic_extension"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "galois_theory"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "algebraic_extension"
+    name: "代数扩张"
+    category: "代数学"
+    msc_primary: "12F05"
+    msc_secondary: ["11Rxx"]
+    prerequisites:
+      - concept_id: "field_extension"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "algebraic_number"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "galois_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "algebraic_closure"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "galois_theory"
+    name: "Galois理论"
+    category: "代数学"
+    msc_primary: "12F10"
+    msc_secondary: ["12Gxx", "20B35"]
+    prerequisites:
+      - concept_id: "field_extension"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "algebraic_extension"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "group"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "galois_representation"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "inverse_galois_problem"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "finite_field"
+    name: "有限域"
+    category: "代数学"
+    msc_primary: "12E20"
+    msc_secondary: ["11Txx", "94A60"]
+    prerequisites:
+      - concept_id: "field"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "polynomial_ring"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "coding_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "cryptography"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
 
 
 # ============================================================================
@@ -1355,6 +1654,28 @@ concepts:
         relation: "被依赖"
     difficulty: 2
     estimated_hours: 12
+
+  - concept_id: "separation_axioms"
+    name: "分离公理"
+    category: "几何拓扑"
+    msc_primary: "54D10"
+    msc_secondary: ["54D15", "54A05"]
+    prerequisites:
+      - concept_id: "topological_space"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "continuous_map"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "normal_space"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "urysohn_lemma"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
 
   - concept_id: "homotopy"
     name: "同伦"
@@ -1912,6 +2233,10 @@ concepts:
   - concept_id: "congruence"
     name: "同余"
     category: "数论逻辑"
+    msc_codes:
+      primary: "11A07"
+      secondary: ["11A15"]
+      description: "同余式、模运算"
     prerequisites:
       - concept_id: "divisibility"
         level: "L1"
@@ -1958,6 +2283,10 @@ concepts:
   - concept_id: "quadratic_residue"
     name: "二次剩余"
     category: "数论逻辑"
+    msc_codes:
+      primary: "11A15"
+      secondary: ["11R11", "11E16"]
+      description: "二次剩余、Legendre符号、互反律"
     prerequisites:
       - concept_id: "congruence"
         level: "L1"
@@ -2050,6 +2379,10 @@ concepts:
   - concept_id: "elliptic_curve"
     name: "椭圆曲线"
     category: "数论逻辑"
+    msc_codes:
+      primary: "11G05"
+      secondary: ["14H52", "11G07", "11Fxx"]
+      description: "椭圆曲线的算术理论"
     prerequisites:
       - concept_id: "algebraic_curve"
         level: "L3"
@@ -2076,6 +2409,10 @@ concepts:
   - concept_id: "modular_form"
     name: "模形式"
     category: "数论逻辑"
+    msc_codes:
+      primary: "11F11"
+      secondary: ["11F12", "11F25", "11F66"]
+      description: "模形式与模函数"
     prerequisites:
       - concept_id: "complex_analysis"
         level: "L3"
@@ -2216,6 +2553,10 @@ concepts:
   - concept_id: "propositional_logic"
     name: "命题逻辑"
     category: "数论逻辑"
+    msc_codes:
+      primary: "03B05"
+      secondary: ["03B20", "03B22"]
+      description: "经典命题逻辑"
     prerequisites:
       - concept_id: "set_theory"
         level: "L0"
@@ -2239,6 +2580,10 @@ concepts:
   - concept_id: "predicate_logic"
     name: "谓词逻辑"
     category: "数论逻辑"
+    msc_codes:
+      primary: "03B10"
+      secondary: ["03C07", "03F03"]
+      description: "一阶谓词逻辑"
     prerequisites:
       - concept_id: "propositional_logic"
         level: "L1"
@@ -2262,6 +2607,10 @@ concepts:
   - concept_id: "proof_theory"
     name: "证明论"
     category: "数论逻辑"
+    msc_codes:
+      primary: "03F"
+      secondary: ["03F03", "03F05", "03F30"]
+      description: "证明的数学分析"
     prerequisites:
       - concept_id: "propositional_logic"
         level: "L1"
@@ -2285,6 +2634,10 @@ concepts:
   - concept_id: "model_theory"
     name: "模型论"
     category: "数论逻辑"
+    msc_codes:
+      primary: "03C"
+      secondary: ["03C07", "03C10", "03C45"]
+      description: "一阶逻辑模型论"
     prerequisites:
       - concept_id: "predicate_logic"
         level: "L1"
@@ -2308,6 +2661,10 @@ concepts:
   - concept_id: "recursion_theory"
     name: "递归论"
     category: "数论逻辑"
+    msc_codes:
+      primary: "03D"
+      secondary: ["03D10", "03D25", "03D30"]
+      description: "可计算性与不可判定性"
     prerequisites:
       - concept_id: "predicate_logic"
         level: "L1"
@@ -2328,6 +2685,10 @@ concepts:
   - concept_id: "set_theory"
     name: "集合论"
     category: "数论逻辑"
+    msc_codes:
+      primary: "03E"
+      secondary: ["03E30", "03E35", "03E55"]
+      description: "公理集合论"
     prerequisites:
       - concept_id: "logic"
         level: "L0"
@@ -2351,6 +2712,10 @@ concepts:
   - concept_id: "forcing"
     name: "forcing"
     category: "数论逻辑"
+    msc_codes:
+      primary: "03E40"
+      secondary: ["03E25", "03E35", "03E50"]
+      description: "集合论强制方法"
     prerequisites:
       - concept_id: "set_theory"
         level: "L2"
@@ -2374,6 +2739,10 @@ concepts:
   - concept_id: "large_cardinal"
     name: "大基数"
     category: "数论逻辑"
+    msc_codes:
+      primary: "03E55"
+      secondary: ["03E35", "03E60"]
+      description: "大基数公理层次"
     prerequisites:
       - concept_id: "set_theory"
         level: "L2"
@@ -2398,6 +2767,10 @@ concepts:
   - concept_id: "computability"
     name: "可计算性"
     category: "数论逻辑"
+    msc_codes:
+      primary: "03D"
+      secondary: ["03D10", "68Q05"]
+      description: "可计算函数与不可计算性"
     prerequisites:
       - concept_id: "recursion_theory"
         level: "L2"
@@ -2460,6 +2833,142 @@ concepts:
         relation: "被依赖"
     difficulty: 4
     estimated_hours: 45
+
+  # ---------- MSC编码补充概念 ----------
+  - concept_id: "algebraic_number_theory"
+    name: "代数数论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11Rxx"
+      secondary: ["11Sxx", "12Fxx"]
+      description: "代数数域、整数环、理想类群"
+    prerequisites:
+      - concept_id: "field_extension"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "ring"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "ideal"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "class_field_theory"
+        level: "L5"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 55
+
+  - concept_id: "analytic_number_theory"
+    name: "解析数论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11Mxx"
+      secondary: ["11Nxx", "11Pxx"]
+      description: "解析方法研究数论问题"
+    prerequisites:
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "prime_numbers"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "l_function"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "zeta_function"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 60
+
+  - concept_id: "zeta_function"
+    name: "黎曼ζ函数"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "11M06"
+      secondary: ["11M26", "11M36", "11R42"]
+      description: "Riemann zeta函数与相关L函数"
+    prerequisites:
+      - concept_id: "complex_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "analytic_number_theory"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "riemann_hypothesis"
+        level: "L5"
+        relation: "被依赖"
+      - concept_id: "prime_number_theorem"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 5
+    estimated_hours: 50
+
+  - concept_id: "type_theory"
+    name: "类型论"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03B15"
+      secondary: ["03B40", "68N18", "03F50"]
+      description: "高阶逻辑与类型论"
+    prerequisites:
+      - concept_id: "lambda_calculus"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "predicate_logic"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "formalized_proof"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 40
+
+  - concept_id: "modal_logic"
+    name: "模态逻辑"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03B45"
+      secondary: ["03B42", "03B44", "03F45"]
+      description: "模态、时态、认知逻辑"
+    prerequisites:
+      - concept_id: "propositional_logic"
+        level: "L1"
+        relation: "依赖"
+      - concept_id: "model_theory"
+        level: "L3"
+        relation: "依赖"
+    successors: []
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "zfc_axioms"
+    name: "ZFC公理"
+    category: "数论逻辑"
+    msc_codes:
+      primary: "03E30"
+      secondary: ["03E25", "03E35"]
+      description: "Zermelo-Fraenkel集合论"
+    prerequisites:
+      - concept_id: "set_theory"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "first_order_logic"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "forcing"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "large_cardinal"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 35
 
 # ============================================================================
 # 统计信息
@@ -2880,6 +3389,7 @@ concepts:
   - concept_id: "gradient_descent"
     name: "梯度下降法"
     category: "最优化"
+    msc_code: "90C30"
     prerequisites:
       - concept_id: "gradient"
         level: "L2"
@@ -2931,6 +3441,7 @@ concepts:
   - concept_id: "lagrange_multiplier"
     name: "拉格朗日乘子"
     category: "最优化"
+    msc_code: "90C46"
     prerequisites:
       - concept_id: "optimization_problem"
         level: "L2"
@@ -2965,6 +3476,7 @@ concepts:
   - concept_id: "linear_programming"
     name: "线性规划"
     category: "最优化"
+    msc_code: "90C05"
     prerequisites:
       - concept_id: "optimization_problem"
         level: "L2"
@@ -2996,6 +3508,7 @@ concepts:
   - concept_id: "convex_optimization"
     name: "凸优化"
     category: "最优化"
+    msc_code: "90C25"
     prerequisites:
       - concept_id: "convex_function"
         level: "L2"
@@ -5018,6 +5531,7 @@ concepts:
   - concept_id: "numerical_integration"
     name: "数值积分"
     category: "计算数学"
+    msc_code: "65D30"
     prerequisites:
       - concept_id: "riemann_integral"
         level: "L2"
@@ -5120,6 +5634,7 @@ concepts:
   - concept_id: "numerical_linear_algebra"
     name: "数值线性代数"
     category: "计算数学"
+    msc_code: "65Fxx"
     prerequisites:
       - concept_id: "linear_algebra"
         level: "L2"
@@ -5689,6 +6204,7 @@ concepts:
   - concept_id: "deep_learning"
     name: "深度学习"
     category: "数据科学"
+    msc_code: "68T07"
     prerequisites:
       - concept_id: "backpropagation"
         level: "L3"
@@ -5893,6 +6409,136 @@ concepts:
     difficulty: 4
     estimated_hours: 50
 
+# ============================================================================
+# 应用数学概念MSC编码补充 (2026-04-04)
+# 补充概念: 插值、线性方程组求解、特征值计算、机器学习、统计学习理论、期望方差
+# ============================================================================
+
+  # ---------- 计算数学补充 ----------
+  - concept_id: "interpolation"
+    name: "插值"
+    category: "计算数学"
+    msc_code: "65D05"
+    prerequisites:
+      - concept_id: "numerical_analysis"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "numerical_integration"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "spline_interpolation"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 20
+
+  - concept_id: "linear_system_solver"
+    name: "线性方程组求解"
+    category: "计算数学"
+    msc_code: "65F10"
+    prerequisites:
+      - concept_id: "numerical_linear_algebra"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "matrix"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "sparse_linear_system"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "eigenvalue_computation"
+    name: "特征值计算"
+    category: "计算数学"
+    msc_code: "65F15"
+    prerequisites:
+      - concept_id: "numerical_linear_algebra"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "eigenvalue"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "spectral_clustering"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  # ---------- 数据科学补充 ----------
+  - concept_id: "machine_learning"
+    name: "机器学习"
+    category: "数据科学"
+    msc_code: "68T05"
+    prerequisites:
+      - concept_id: "statistics"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "optimization"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "deep_learning"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "supervised_learning"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 40
+
+  - concept_id: "statistical_learning_theory"
+    name: "统计学习理论"
+    category: "数据科学"
+    msc_code: "62G99"
+    prerequisites:
+      - concept_id: "machine_learning"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "probability_theory"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "statistical_inference"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "vc_dimension"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 45
+
+  # ---------- 概率统计补充 ----------
+  - concept_id: "expectation_variance"
+    name: "期望方差"
+    category: "概率统计"
+    msc_code: "62J99"
+    prerequisites:
+      - concept_id: "expectation"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "variance"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "covariance"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "regression_analysis"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 2
+    estimated_hours: 15
 
 
 metadata:

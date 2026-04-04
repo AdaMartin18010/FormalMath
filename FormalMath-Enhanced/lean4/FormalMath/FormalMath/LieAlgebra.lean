@@ -21,10 +21,10 @@
 - Serre, J.P. "Lie Algebras and Lie Groups"
 -/
 
-import Mathlib.Algebra.Lie.Basic
-import Mathlib.Algebra.Lie.Killing
-import Mathlib.Algebra.Lie.CartanSubalgebra
-import Mathlib.LinearAlgebra.Trace
+import FormalMath.Mathlib.Algebra.Lie.Basic
+import FormalMath.Mathlib.Algebra.Lie.Killing
+import FormalMath.Mathlib.Algebra.Lie.CartanSubalgebra
+import FormalMath.Mathlib.LinearAlgebra.Trace
 
 namespace LieAlgebra
 

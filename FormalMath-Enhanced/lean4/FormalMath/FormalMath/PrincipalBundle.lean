@@ -21,9 +21,9 @@
 - Dupont, J. "Fibre Bundles and Chern-Weil Theory"
 -/
 
-import Mathlib.Geometry.Manifold.VectorBundle.Basic
-import Mathlib.DifferentialGeometry.Connection.Basic
-import Mathlib.Topology.Homotopy.Basic
+import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
+import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
+import FormalMath.Mathlib.Topology.Homotopy.Basic
 
 namespace PrincipalBundle
 

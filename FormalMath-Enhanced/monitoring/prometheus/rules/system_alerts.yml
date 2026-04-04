@@ -1,0 +1,186 @@
+# 系统级告警规则
+# 定义基础设施和系统资源相关的监控告警
+
+groups:
+  - name: system_resources
+    interval: 30s
+    rules:
+      # CPU 使用率告警
+      - alert: HighCPUUsage
+        expr: |
+          100 - (avg by (instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+          team: infrastructure
+        annotations:
+          summary: "服务器 {{ $labels.instance }} CPU 使用率过高"
+          description: "CPU 使用率持续 5 分钟超过 80%，当前值: {{ $value | humanizePercentage }}"
+
+      # 内存使用率告警
+      - alert: HighMemoryUsage
+        expr: |
+          (
+            node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes
+          ) / node_memory_MemTotal_bytes * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          team: infrastructure
+        annotations:
+          summary: "服务器 {{ $labels.instance }} 内存使用率过高"
+          description: "内存使用率持续 5 分钟超过 85%，当前值: {{ $value | humanizePercentage }}"
+
+      # 磁盘使用率告警
+      - alert: HighDiskUsage
+        expr: |
+          (
+            node_filesystem_size_bytes{mountpoint="/"} - node_filesystem_avail_bytes{mountpoint="/"}
+          ) / node_filesystem_size_bytes{mountpoint="/"} * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+          team: infrastructure
+        annotations:
+          summary: "服务器 {{ $labels.instance }} 磁盘使用率过高"
+          description: "根分区使用率超过 85%，当前值: {{ $value | humanizePercentage }}"
+
+      # 磁盘即将满告警（临界）
+      - alert: CriticalDiskUsage
+        expr: |
+          (
+            node_filesystem_size_bytes{mountpoint="/"} - node_filesystem_avail_bytes{mountpoint="/"}
+          ) / node_filesystem_size_bytes{mountpoint="/"} * 100 > 95
+        for: 2m
+        labels:
+          severity: critical
+          team: infrastructure
+        annotations:
+          summary: "服务器 {{ $labels.instance }} 磁盘即将满"
+          description: "根分区使用率超过 95%，当前值: {{ $value | humanizePercentage }}"
+
+      # 磁盘 inode 使用率告警
+      - alert: HighInodeUsage
+        expr: |
+          node_filesystem_files_free{mountpoint="/"} / node_filesystem_files{mountpoint="/"} * 100 < 10
+        for: 5m
+        labels:
+          severity: warning
+          team: infrastructure
+        annotations:
+          summary: "服务器 {{ $labels.instance }} inode 使用率过高"
+          description: "可用 inode 少于 10%"
+
+  - name: network_health
+    interval: 30s
+    rules:
+      # 网络丢包告警
+      - alert: HighNetworkPacketLoss
+        expr: |
+          (
+            rate(node_network_receive_drop_total[5m]) +
+            rate(node_network_transmit_drop_total[5m])
+          ) > 0.01
+        for: 3m
+        labels:
+          severity: warning
+          team: infrastructure
+        annotations:
+          summary: "服务器 {{ $labels.instance }} 网络丢包严重"
+          description: "网络丢包率超过 1%"
+
+      # 网络带宽使用率告警
+      - alert: HighNetworkBandwidth
+        expr: |
+          (
+            rate(node_network_receive_bytes_total[5m]) +
+            rate(node_network_transmit_bytes_total[5m])
+          ) / 125000000 > 0.8
+        for: 5m
+        labels:
+          severity: warning
+          team: infrastructure
+        annotations:
+          summary: "服务器 {{ $labels.instance }} 网络带宽使用率高"
+          description: "网络带宽使用率超过 80%"
+
+  - name: container_health
+    interval: 30s
+    rules:
+      # 容器重启告警
+      - alert: ContainerRestartingFrequently
+        expr: |
+          rate(container_start_time_seconds[10m]) > 0
+        for: 5m
+        labels:
+          severity: warning
+          team: infrastructure
+        annotations:
+          summary: "容器 {{ $labels.name }} 频繁重启"
+          description: "容器在过去 10 分钟内发生重启"
+
+      # 容器内存限制告警
+      - alert: ContainerMemoryNearLimit
+        expr: |
+          (
+            container_memory_usage_bytes{image!=""} /
+            container_spec_memory_limit_bytes{image!=""}
+          ) > 0.9
+        for: 2m
+        labels:
+          severity: critical
+          team: infrastructure
+        annotations:
+          summary: "容器 {{ $labels.name }} 内存接近限制"
+          description: "容器内存使用达到限制的 {{ $value | humanizePercentage }}"
+
+      # 容器 CPU 节流告警
+      - alert: ContainerCPUThrottling
+        expr: |
+          rate(container_cpu_cfs_throttled_seconds_total[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          team: infrastructure
+        annotations:
+          summary: "容器 {{ $labels.name }} CPU 被节流"
+          description: "容器 CPU 被节流的持续时间异常"
+
+  - name: database_health
+    interval: 30s
+    rules:
+      # PostgreSQL 连接数告警
+      - alert: PostgreSQLTooManyConnections
+        expr: |
+          pg_stat_activity_count > 150
+        for: 5m
+        labels:
+          severity: warning
+          team: database
+        annotations:
+          summary: "PostgreSQL 连接数过高"
+          description: "活跃连接数: {{ $value }}"
+
+      # PostgreSQL 慢查询告警
+      - alert: PostgreSQLSlowQueries
+        expr: |
+          pg_stat_activity_max_tx_duration > 300
+        for: 5m
+        labels:
+          severity: warning
+          team: database
+        annotations:
+          summary: "PostgreSQL 存在长时间运行的事务"
+          description: "最慢事务已运行 {{ $value }} 秒"
+
+      # PostgreSQL 复制延迟告警
+      - alert: PostgreSQLReplicationLag
+        expr: |
+          pg_replication_lag > 60
+        for: 2m
+        labels:
+          severity: critical
+          team: database
+        annotations:
+          summary: "PostgreSQL 复制延迟"
+          description: "复制延迟: {{ $value }} 秒"

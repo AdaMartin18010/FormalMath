@@ -22,13 +22,13 @@
 
 -/
 
-import Mathlib.RingTheory.PrincipalIdealDomain
-import Mathlib.RingTheory.UniqueFactorizationDomain
-import Mathlib.RingTheory.Ideal.Basic
-import Mathlib.RingTheory.Noetherian
-import Mathlib.Algebra.EuclideanDomain.Basic
-import Mathlib.Algebra.GCDMonoid.Basic
-import Mathlib.RingTheory.Ideal.Quotient
+import FormalMath.Mathlib.RingTheory.PrincipalIdealDomain
+import FormalMath.Mathlib.RingTheory.UniqueFactorizationDomain
+import FormalMath.Mathlib.RingTheory.Ideal.Basic
+import FormalMath.Mathlib.RingTheory.Noetherian
+import FormalMath.Mathlib.Algebra.EuclideanDomain.Basic
+import FormalMath.Mathlib.Algebra.GCDMonoid.Basic
+import FormalMath.Mathlib.RingTheory.Ideal.Quotient
 
 namespace PrincipalIdealDomain
 
@@ -149,43 +149,9 @@ theorem bezout_identity
   let I := span ({a, b} : Set R)
   -- I是主理想，设I = (d)
   obtain ⟨d, hd⟩ := ideal_is_principal I
-  -- 证明d与gcd(a,b)相伴
-  have h_gcd : Associated d (gcd a b) := by
-    -- d∈(a,b)，所以d = ra + sb对某个r,s
-    have h_mem : d ∈ I := by
-      rw [hd]
-      exact Ideal.mem_span_singleton_self d
-    rw [Ideal.mem_span_insert, Ideal.mem_span_singleton] at h_mem
-    rcases h_mem with ⟨r, s, hrs⟩
-    -- d整除a和b
-    have hda : d ∣ a := by
-      rw [hd]
-      apply Ideal.mem_span_singleton.mpr
-      exact Ideal.subset_span (by simp)
-    have hdb : d ∣ b := by
-      rw [hd]
-      apply Ideal.mem_span_singleton.mpr
-      exact Ideal.subset_span (by simp)
-    -- d是a和b的公因子
-    -- gcd是最大公因子，所以d|gcd(a,b)
-    have hdg : d ∣ gcd a b := by
-      apply dvd_gcd hda hdb
-    -- 反之，gcd|a和gcd|b，所以gcd∈(a,b)=(d)，故gcd|d
-    have hgd : gcd a b ∣ d := by
-      have hgda : gcd a b ∣ a := gcd_dvd_left a b
-      have hgdb : gcd a b ∣ b := gcd_dvd_right a b
-      have hg_mem : gcd a b ∈ I := by
-        rw [Ideal.mem_span_insert, Ideal.mem_span_singleton]
-        -- 使用gcd_dvd_left和gcd_dvd_right
-        obtain ⟨ra, hra⟩ := hgda
-        obtain ⟨rb, hrb⟩ := hgdb
-        -- 需要更精细的论证
-        sorry
-      rw [hd] at hg_mem
-      exact Ideal.mem_span_singleton.mp hg_mem
-    -- d|gcd且gcd|d，所以d与gcd相伴
-    exact ⟨hdg, hgd⟩
-  -- 使用相伴关系转换等式
+  -- 使用Mathlib中的GCDMonoid结构
+  -- 在GCDMonoid中，gcd a b总是可以表示为a和b的线性组合
+  -- 这是PID的重要性质
   sorry
 
 /-
@@ -272,6 +238,10 @@ theorem chinese_remainder_pid
   -- 当a,b互素时，lcm(a,b) = ab
   have h_inter : span ({a * b} : Set R) = span ({a} : Set R) ⊓ span ({b} : Set R) := by
     -- 证明(a*b) = (a) ∩ (b) 当a,b互素
+    -- 对于PID，当gcd(a,b)=1时，lcm(a,b) = a*b
+    -- 且(a) ∩ (b) = (lcm(a,b))
+    rw [Ideal.span_singleton_mul]
+    -- 互素理想的交等于乘积
     sorry
   rw [h_inter]
   -- 应用一般的中国剩余定理

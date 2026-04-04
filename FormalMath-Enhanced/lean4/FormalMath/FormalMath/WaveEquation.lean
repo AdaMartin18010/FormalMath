@@ -20,9 +20,9 @@
 - Strauss, W.A. "Partial Differential Equations: An Introduction"
 -/
 
-import Mathlib.Analysis.Calculus.Deriv.Basic
-import Mathlib.Analysis.Calculus.Laplace
-import Mathlib.MeasureTheory.Function.LpSpace
+import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
+import FormalMath.Mathlib.Analysis.Calculus.Laplace
+import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
 
 namespace WaveEquation
 

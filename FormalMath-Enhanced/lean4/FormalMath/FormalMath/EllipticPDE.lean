@@ -22,9 +22,9 @@
 - Evans, L.C. "Partial Differential Equations"
 -/
 
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.MeasureTheory.Function.LpSpace
-import Mathlib.Analysis.Calculus.Laplace
+import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
+import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
+import FormalMath.Mathlib.Analysis.Calculus.Laplace
 
 namespace EllipticPDE
 

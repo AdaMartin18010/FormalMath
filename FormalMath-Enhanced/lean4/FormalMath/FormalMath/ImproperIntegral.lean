@@ -19,11 +19,11 @@
 
 -/
 
-import Mathlib.MeasureTheory.Integral.IntervalIntegral
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
-import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
-import Mathlib.MeasureTheory.Function.L1Space
-import Mathlib.Analysis.Calculus.Deriv.Pow
+import FormalMath.Mathlib.MeasureTheory.Integral.IntervalIntegral
+import FormalMath.Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+import FormalMath.Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+import FormalMath.Mathlib.MeasureTheory.Function.L1Space
+import FormalMath.Mathlib.Analysis.Calculus.Deriv.Pow
 
 namespace ImproperIntegral
 

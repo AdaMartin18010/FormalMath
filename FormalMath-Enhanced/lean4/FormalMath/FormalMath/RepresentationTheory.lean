@@ -21,14 +21,15 @@
 - Serre, J.P. "Linear Representations of Finite Groups"
 -/
 
-import Mathlib.RepresentationTheory.Basic
-import Mathlib.RepresentationTheory.Character
-import Mathlib.RepresentationTheory.Maschke
-import Mathlib.RepresentationTheory.FdRep
+import FormalMath.Mathlib.RepresentationTheory.Basic
+import FormalMath.Mathlib.RepresentationTheory.Character
+import FormalMath.Mathlib.RepresentationTheory.Maschke
+import FormalMath.Mathlib.RepresentationTheory.FdRep
+import FormalMath.Mathlib.RepresentationTheory.GroupCohomology.Basic
 
 namespace RepresentationTheory
 
-open Representation CategoryTheory MonoidAlgebra
+open Representation CategoryTheory MonoidAlgebra LinearMap
 
 variable (G : Type*) [Group G] (k : Type*) [Field k]
 
@@ -38,7 +39,7 @@ variable (G : Type*) [Group G] (k : Type*) [Field k]
 群G在k-向量空间V上的表示是一个群同态
 ρ : G → GL(V)。
 -/
-def Representation (V : Type*) [AddCommGroup V] [Module k V] : Type _ :=
+def Representation' (V : Type*) [AddCommGroup V] [Module k V] : Type _ :=
   Representation k G V
 
 /-
@@ -46,7 +47,7 @@ def Representation (V : Type*) [AddCommGroup V] [Module k V] : Type _ :=
 
 对象是表示，态射是等变线性映射。
 -/
-def Rep : Type _ :=
+def Rep' : Type _ :=
   FdRep k G
 
 /-
@@ -81,7 +82,8 @@ theorem maschke_theorem [Finite G] (h_char : ringChar k = 0 ∨
       W ⊓ W' = ⊥ ∧ W ⊔ W' = ⊤ := by
   -- Maschke定理的证明
   -- 利用平均算子构造补表示
-  sorry -- 这是表示论的基本定理
+  -- 这是表示论的基本定理
+  sorry
 
 /-
 ## 特征标
@@ -102,13 +104,14 @@ notation:max "χ_" ρ => character ρ
 对于有限群G，不可约特征标满足：
 (1/|G|) Σ_g χ_i(g) χ_j(g⁻¹) = δ_{ij}
 -/
-theorem character_orthogonality [Finite G] (V W : Rep k G)
+theorem character_orthogonality [Finite G] (V W : FdRep k G)
     (hV : IsIrreducible V.ρ) (hW : IsIrreducible W.ρ) :
     (1 / Fintype.card G : k) * ∑ g : G, χ_V.ρ g * χ_W.ρ g⁻¹ = 
     if Nonempty (V ≅ W) then 1 else 0 := by
   -- 特征标正交关系的证明
-  -- 利用Schur引理
-  sorry -- 这是特征标理论的核心
+  -- 利用Schur引理和Maschke定理
+  -- 这是特征标理论的核心
+  sorry
 
 /-
 ## 正则表示
@@ -128,12 +131,16 @@ def RegularRepresentation : Representation k G (G → k) where
 -/
 theorem regular_representation_decomposition [Finite G] [IsAlgClosed k]
     (h_char : ringChar k = 0 ∨ ¬(Fintype.card G : k) = 0) :
-    let Vᵢ := sorry -- 所有不可约表示
+    ∃ (decomp : ∀ V : IrreducibleRepresentations G k, 
+      ℕ × (Representation k G V.1)),
+    -- 正则表示同构于所有不可约表示的直和
+    -- 每个不可约表示V以其维数dim(V)重复出现
     RegularRepresentation G k ≅ 
       ⊕ᶠ (V : IrreducibleRepresentations G k), 
         (finrank k V.1)^(⊕ finrank k V.1) := by
   -- 正则表示的分解
-  sorry -- 这是表示论的优美结果
+  -- 利用特征标的正交关系
+  sorry
 
 /-
 ## 诱导表示
@@ -141,8 +148,10 @@ theorem regular_representation_decomposition [Finite G] [IsAlgClosed k]
 对于子群H ≤ G和H-表示W，诱导表示Ind_H^G(W)是：
 k[G] ⊗_{k[H]} W
 -/
-def InducedRepresentation {H : Subgroup G} (W : Rep k H) : Rep k G :=
-  sorry -- 诱导表示的构造
+def InducedRepresentation {H : Subgroup G} (W : FdRep k H) : FdRep k G :=
+  -- 诱导表示的构造
+  -- 使用张量积k[G] ⊗_{k[H]} W
+  sorry
 
 notation:max "Ind_" H "^" G W => InducedRepresentation (H := H) (G := G) W
 
@@ -151,10 +160,12 @@ notation:max "Ind_" H "^" G W => InducedRepresentation (H := H) (G := G) W
 
 Hom_G(Ind_H^G(W), V) ≅ Hom_H(W, Res_H^G(V))
 -/
-theorem frobenius_reciprocity {H : Subgroup G} (W : Rep k H) (V : Rep k G) :
+theorem frobenius_reciprocity {H : Subgroup G} (W : FdRep k H) (V : FdRep k G) :
     (Ind_H^G W ⟶ V) ≃ (W ⟶ Res_H^G V) := by
   -- Frobenius互反性的证明
-  sorry -- 这是诱导表示的基本性质
+  -- 利用张量积的泛性质
+  -- 这是诱导表示的基本性质
+  sorry
 
 /-
 ## Mackey分解
@@ -162,11 +173,12 @@ theorem frobenius_reciprocity {H : Subgroup G} (W : Rep k H) (V : Rep k G) :
 限制诱导表示的分解。
 -/
 theorem mackey_decomposition {H K : Subgroup G} [Finite G] 
-    (W : Rep k H) :
+    (W : FdRep k H) :
     Res_K^G (Ind_H^G W) ≅ 
       ⊕_{g ∈ DoubleCoset H G K} Ind_{K ∩ gHg⁻¹}^K (Res_{K ∩ gHg⁻¹}^{gHg⁻¹} (g • W)) := by
   -- Mackey分解定理
-  sorry -- 这是诱导表示理论的重要结果
+  -- 这是诱导表示理论的重要结果
+  sorry
 
 /-
 ## Burnside定理
@@ -177,8 +189,9 @@ theorem burnside_pa_qb_theorem [Finite G] (p q : ℕ) (hp : Nat.Prime p)
     (hq : Nat.Prime q) (a b : ℕ) (h_order : Fintype.card G = p^a * q^b) :
     IsSolvable G := by
   -- Burnside定理的证明
-  -- 利用特征标理论
-  sorry -- 这是表示论在群论中的应用
+  -- 利用特征标理论证明
+  -- 这是表示论在群论中的经典应用
+  sorry
 
 /-
 ## 张量积表示
@@ -213,16 +226,33 @@ theorem dimension_divides_order [Finite G] [IsAlgClosed k]
     [FiniteDimensional k V] (ρ : Representation k G V) 
     (h_irr : IsIrreducible ρ) :
     finrank k V ∣ Fintype.card G := by
-  -- 利用代数整数理论
-  sorry -- 这是表示论的深刻结果
+  -- 利用代数整数理论证明
+  -- 这是表示论的深刻结果，由Frobenius证明
+  sorry
 
 /- 辅助定义 -/
-def IsAlgClosed (k : Type*) [Field k] : Prop := sorry
 
-def Res_H^G {H : Subgroup G} (V : Rep k G) : Rep k H := sorry
+-- 不可约表示的类型
+def IrreducibleRepresentations (G k : Type*) [Group G] [Field k] : Type _ :=
+  { V : FdRep k G // IsIrreducible V.ρ }
 
-def DoubleCoset {G : Type*} [Group G] (H K : Subgroup G) : Type _ := sorry
+-- 双陪集
+def DoubleCoset {G : Type*} [Group G] (H K : Subgroup G) : Type _ :=
+  Quotient (H : Set G) (K : Set G)
 
-def IrreducibleRepresentations (G k : Type*) [Group G] [Field k] : Type _ := sorry
+-- 群在表示上的作用
+def gAction {H : Subgroup G} {W : FdRep k H} (g : G) : 
+    Representation k (g⁻¹ * H * g) W.1 :=
+  sorry
+
+-- 限制表示
+notation:max "Res_" H "^" G V => 
+  (FdRep.res H V : FdRep k H)
+
+-- 表示的同构记号
+notation:50 V " ≅ " W => Nonempty (V ≅ W)
+
+-- 有限直和
+notation:max "⊕ᶠ " binders ", " r:(scoped f => iSup f) => r
 
 end RepresentationTheory

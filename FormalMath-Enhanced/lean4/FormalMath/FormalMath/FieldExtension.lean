@@ -20,13 +20,13 @@
 
 -/
 
-import Mathlib.FieldTheory.Extension
-import Mathlib.FieldTheory.Minpoly.Basic
-import Mathlib.FieldTheory.Adjoin
-import Mathlib.FieldTheory.IntermediateField
-import Mathlib.RingTheory.Algebraic
-import Mathlib.LinearAlgebra.FiniteDimensional
-import Mathlib.FieldTheory.PrimitiveElement
+import FormalMath.Mathlib.FieldTheory.Extension
+import FormalMath.Mathlib.FieldTheory.Minpoly.Basic
+import FormalMath.Mathlib.FieldTheory.Adjoin
+import FormalMath.Mathlib.FieldTheory.IntermediateField
+import FormalMath.Mathlib.RingTheory.Algebraic
+import FormalMath.Mathlib.LinearAlgebra.FiniteDimensional
+import FormalMath.Mathlib.FieldTheory.PrimitiveElement
 
 namespace FieldExtension
 
