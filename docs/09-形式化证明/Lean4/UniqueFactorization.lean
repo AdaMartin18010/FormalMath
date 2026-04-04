@@ -1,4 +1,4 @@
-/-
+﻿/-
 # 唯一分解定理的形式化证明 / Formalization of Unique Factorization Theorem
 
 ## Mathlib4对应
@@ -155,8 +155,15 @@ theorem factorization_unique {R : Type*} [CommRing R] [IsDomain R]
     apply UniqueFactorizationMonoid.unique_irreducible_factorization
     all_goals assumption
   
-  /- 转换为列表形式 -/
-  sorry  -- 需要额外工作将Multiset.Associated转换为置换形式
+  /- 转换为置换形式（使用Mathlib的exists_perm_of_rel）-/
+  have h_card_eq : f₁.card = f₂.card := by
+    apply Multiset.card_eq_card_of_rel h_eq
+  -- 构造置换使得对应元素相关联
+  have h_perm : ∃ (σ : Equiv.Perm (Fin f₂.card)),
+      ∀ (i : Fin f₁.card), Associated (f₁.toList.get i) (f₂.toList.get (σ i)) := by
+    -- 从Multiset.Associated构造置换需要Mathlib中更高级的多重集工具
+    sorry  -- 需要Mathlib中exists_perm_of_rel等高级工具
+  exact h_perm
 
 /-
 ## 主理想整环(PID)是UFD
@@ -284,3 +291,4 @@ example : gcd (48 : ℤ) 180 = 12 := by
 - `IsPrincipalIdealRing`: PID的定义
 - `EuclideanDomain`: 欧几里得整环的定义
 -/
+

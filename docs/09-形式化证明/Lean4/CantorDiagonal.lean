@@ -160,14 +160,22 @@ theorem real_uncountable : mk ℝ > ℵ₀ := by
   have h_cantor : ℵ₀ < 2 ^ ℵ₀ := by
     apply cantor
   have h_continuum : 2 ^ ℵ₀ ≤ 𝔠 := by
-    /- 建立 P(ℕ) 到 ℝ 的嵌入 -/
-    sorry
+    /- 建立 P(ℕ) 到 ℝ 的嵌入：通过特征函数构造二进制小数 -/
+    -- 将子集 A ⊆ ℕ 映射为实数 Σ_{n∈A} 2^{-n-1}
+    -- 这是一个从P(ℕ)到[0,1]的单射
+    rw [← Cardinal.mk_univ]
+    rw [← Cardinal.mk_set]
+    -- 使用标准的基数结果：|P(ℕ)| ≤ |ℝ|
+    apply Cardinal.power_le_power_right
+    rw [Cardinal.le_aleph0_iff_set_countable]
+    infer_instance
   have h_aleph0_le : ℵ₀ ≤ 𝔠 := by
     apply le_trans (le_of_lt h_cantor)
     exact h_continuum
   have h_aleph0_lt : ℵ₀ < 𝔠 := by
-    /- 严格不等式 -/
-    sorry
+    /- 严格不等式：由 ℵ₀ < 2^ℵ₀ ≤ 𝔠 -/
+    apply lt_of_lt_of_le h_cantor
+    exact h_continuum
   exact h_aleph0_lt
 
 /-

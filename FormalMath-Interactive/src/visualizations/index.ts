@@ -34,6 +34,7 @@ export type {
 
 // 组件
 export { D3Graph } from './D3Graph';
+export { Graph3D } from './Graph3D';
 export { InteractiveTree } from './InteractiveTree';
 export { MatrixTable } from './MatrixTable';
 export { MermaidChart } from './MermaidChart';

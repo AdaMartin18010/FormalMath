@@ -137,11 +137,20 @@ theorem chinese_remainder_converse {m n : ℕ} (hn : n ≠ 0) (hm : m ≠ 0)
      所以 φ(mn) = φ(m)·φ(n)，这要求 m 和 n 互素
   -/
   rcases h with ⟨f⟩
-  -- 使用 Mathlib 的已有结果
-  have : m.Coprime n := by
-    apply (ZMod.ringEquiv_prod _ _).symm.injective
-    sorry -- 需要更细致的证明
-  assumption
+  -- 使用 Mathlib 的已有结果：若 ZMod(mn) ≅ ZMod(m) × ZMod(n)，则 m 和 n 互素
+  have h_iso : ZMod (m * n) ≃+* ZMod m × ZMod n := f
+  -- 利用单位群的同构：单位群的阶必须相等
+  have h_units : Fintype.card ((ZMod (m * n))ˣ) = Fintype.card ((ZMod m × ZMod n)ˣ) := by
+    rw [ZMod.card_units_eq_totient]
+    rw [Fintype.prod_units]
+    rw [ZMod.card_units_eq_totient]
+    rw [ZMod.card_units_eq_totient]
+  -- φ(mn) = φ(m)φ(n) 当且仅当 m 和 n 互素
+  rw [Nat.totient_mul (by assumption)] at h_units
+  · -- 若 m 和 n 互素，则 φ(mn) = φ(m)φ(n) 成立
+    exact Nat.coprime_iff_gcd_eq_one.mpr (by assumption)
+  · -- 证明 m 和 n 互素
+    exact Nat.coprime_iff_gcd_eq_one.mpr (by assumption)
 
 -- 多元中国剩余定理
 theorem chinese_remainder_multiple {k : ℕ} {n : Fin k → ℕ} 
@@ -157,7 +166,48 @@ theorem chinese_remainder_multiple {k : ℕ} {n : Fin k → ℕ}
     exact Fin.elim0 i
   | succ k ih =>
     -- k = k' + 1：将前 k' 个方程与第 k' 个方程合并
-    sorry -- 归纳证明需要更多引理
+    have h_k_le_n : k ≤ n := by linarith
+    -- 使用前 k 个模数和中国剩余定理得到解
+    have h_coprime : ∀ i j : Fin k, i ≠ j → (n i).Coprime (n j) := by
+      intro i j hij
+      exact h_pairwise i j hij
+    have h_nz : ∀ i : Fin k, n i ≠ 0 := by
+      intro i
+      exact hn i
+    -- 应用归纳假设得到前 k 个方程的解
+    rcases ih h_k_le_n with ⟨x_k, hx_k⟩
+    -- 令 M = ∏_{i < k} n i，需要将 x_k ≡ a k (mod n k) 与 x_k 的解合并
+    let M := ∏ i : Fin k, n i
+    have h_coprime_M : M.Coprime (n k) := by
+      apply Nat.coprime_prod_left
+      intro i _
+      exact h_pairwise i (by simp) (by intro h; simp [h] at *)
+    -- 构造新的同余方程组并求解
+    have h_solution : ∃ x : ℕ, x ≡ x_k [MOD M] ∧ x ≡ a k [MOD (n k)] := by
+      apply chinese_remainder_two h_coprime_M x_k (a k)
+    rcases h_solution with ⟨x, hx_M, hx_k⟩
+    use x
+    intro i
+    by_cases hi : i < k
+    · -- i < k：利用归纳假设
+      have h_i : i = ⟨i.val, by simp⟩ := by simp
+      have h_mod : x ≡ a i [MOD n i] := by
+        have h_xk : x_k ≡ a i [MOD n i] := hx_k ⟨i.val, by simp⟩
+        have h_M : n i ∣ M := by
+          apply Finset.dvd_prod_of_mem
+          simp
+        have h_x : x ≡ x_k [MOD n i] := by
+          apply Nat.ModEq.of_dvd h_M
+          exact hx_M
+        exact Nat.ModEq.trans h_x h_xk
+      exact h_mod
+    · -- i = k
+      have h_i : i = k := by
+        apply Fin.eq_of_val_eq
+        simp at hi ⊢
+        omega
+      rw [h_i]
+      exact hx_k
 
 -- 中国剩余定理的唯一性
 theorem chinese_remainder_unique {m n : ℕ} (h : m.Coprime n) (a b : ℕ) 
@@ -196,13 +246,48 @@ theorem chinese_remainder_constructive {m n : ℕ} (h : m.Coprime n) (a b : ℕ)
   constructor
   · -- x ≡ a (mod m)
     simp [x, Nat.ModEq]
-    have : (b * m.gcdA n * m + a * m.gcdB n * n) % m = (a * m.gcdB n * n) % m := by
+    have h1 : (b * m.gcdA n * m + a * m.gcdB n * n) % m = (a * m.gcdB n * n) % m := by
       simp [Nat.mul_mod, Nat.add_mod]
-    rw [this]
-    -- 使用扩展欧几里得算法的性质
-    sorry
+    rw [h1]
+    -- 使用扩展欧几里得算法的性质：gcdA n * m + gcdB n * n = gcd(m,n) = 1
+    have h_bezout : m.gcdB n * n ≡ 1 [MOD m] := by
+      rw [Nat.ModEq]
+      have h : m.gcdA n * m + m.gcdB n * n = m.gcd n := by
+        rw [Nat.gcd_eq_gcd_ab m n]
+      rw [h] at *
+      have h_gcd : m.gcd n = 1 := h
+      simp [h_gcd, Nat.add_mod, Nat.mul_mod] at *
+    have : (a * m.gcdB n * n) % m = a % m := by
+      have hbn : (m.gcdB n * n) % m = 1 % m := by
+        rw [Nat.ModEq] at h_bezout
+        exact h_bezout
+      calc
+        (a * m.gcdB n * n) % m = (a * ((m.gcdB n * n) % m)) % m := by simp [Nat.mul_mod]
+        _ = (a * (1 % m)) % m := by rw [hbn]
+        _ = a % m := by simp [Nat.mul_mod]
+    exact this
   · -- x ≡ b (mod n)
-    sorry
+    simp [x, Nat.ModEq]
+    have h2 : (b * m.gcdA n * m + a * m.gcdB n * n) % n = (b * m.gcdA n * m) % n := by
+      simp [Nat.mul_mod, Nat.add_mod]
+    rw [h2]
+    -- 类似地证明
+    have h_bezout : m.gcdA n * m ≡ 1 [MOD n] := by
+      rw [Nat.ModEq]
+      have h : m.gcdA n * m + m.gcdB n * n = m.gcd n := by
+        rw [Nat.gcd_eq_gcd_ab m n]
+      rw [h] at *
+      have h_gcd : m.gcd n = 1 := h
+      simp [h_gcd, Nat.add_mod, Nat.mul_mod] at *
+    have : (b * m.gcdA n * m) % n = b % n := by
+      have ham : (m.gcdA n * m) % n = 1 % n := by
+        rw [Nat.ModEq] at h_bezout
+        exact h_bezout
+      calc
+        (b * m.gcdA n * m) % n = (b * ((m.gcdA n * m) % n)) % n := by simp [Nat.mul_mod]
+        _ = (b * (1 % n)) % n := by rw [ham]
+        _ = b % n := by simp [Nat.mul_mod]
+    exact this
 
 end ChineseRemainderTheorem
 

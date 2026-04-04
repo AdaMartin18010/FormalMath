@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Network, Filter, Download, RefreshCw, Info } from 'lucide-react';
+import { Network, Filter, Download, RefreshCw, Info, Box, Layers, AlertCircle } from 'lucide-react';
 import { D3Graph } from '@visualizations/D3Graph';
+import { Graph3D } from '@visualizations/Graph3D';
 import { Sidebar } from '@components/Sidebar';
 import { Loading } from '@components/Loading';
 import { cn } from '@utils/classNames';
 import type { GraphData, GraphNode, GraphEdge, ViewConfig } from '@types';
+
+// 视图模式类型
+type ViewMode = '2d' | '3d';
 
 // 模拟数据
 const mockData: GraphData = {
@@ -25,7 +29,7 @@ const mockData: GraphData = {
   edges: [
     { id: 'e1', source: '1', target: '2', type: 'depends_on', label: '包含' },
     { id: 'e2', source: '1', target: '3', type: 'depends_on', label: '包含' },
-    { id: 'e3', source: '4', source: '4', target: '2', type: 'proves', label: '证明' },
+    { id: 'e3', source: '4', target: '2', type: 'proves', label: '证明' },
     { id: 'e4', source: '4', target: '3', type: 'proves' },
     { id: 'e5', source: '2', target: '5', type: 'depends_on', label: '基于' },
     { id: 'e6', source: '6', target: '5', type: 'depends_on', label: '基于' },
@@ -38,12 +42,47 @@ const mockData: GraphData = {
   ],
 };
 
+// 生成大规模测试数据
+const generateLargeDataset = (nodeCount: number): GraphData => {
+  const nodes: GraphNode[] = [];
+  const edges: GraphEdge[] = [];
+  const types: Array<GraphNode['type']> = ['concept', 'theorem', 'mathematician'];
+  
+  for (let i = 0; i < nodeCount; i++) {
+    nodes.push({
+      id: `node-${i}`,
+      label: `节点 ${i + 1}`,
+      type: types[i % 3],
+      status: 'verified',
+      description: `这是节点 ${i + 1} 的描述信息`,
+    });
+    
+    // 创建随机连接
+    if (i > 0) {
+      const targetCount = Math.min(3, i);
+      for (let j = 0; j < targetCount; j++) {
+        const targetIndex = Math.floor(Math.random() * i);
+        edges.push({
+          id: `edge-${i}-${j}`,
+          source: `node-${i}`,
+          target: `node-${targetIndex}`,
+          type: 'depends_on',
+        });
+      }
+    }
+  }
+  
+  return { nodes, edges };
+};
+
 export const KnowledgeGraph: React.FC = () => {
   const [data, setData] = useState<GraphData>(mockData);
   const [loading, setLoading] = useState(true);
+  const [viewMode, setViewMode] = useState<ViewMode>('2d');
   const [selectedNodes, setSelectedNodes] = useState<string[]>([]);
   const [highlightPath, setHighlightPath] = useState<string[]>([]);
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
+  const [viewError, setViewError] = useState<Error | null>(null);
   const [viewConfig, setViewConfig] = useState<Partial<ViewConfig>>({
     layout: 'force',
     showLabels: true,
@@ -59,6 +98,11 @@ export const KnowledgeGraph: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // 切换视图模式时重置错误
+  useEffect(() => {
+    setViewError(null);
+  }, [viewMode]);
+
   const handleNodeClick = (node: GraphNode) => {
     setSelectedNodes([node.id]);
     setSelectedNode(node);
@@ -73,6 +117,11 @@ export const KnowledgeGraph: React.FC = () => {
     // 这里可以实现实际的过滤逻辑
   };
 
+  const handleViewError = (error: Error) => {
+    console.error('View error:', error);
+    setViewError(error);
+  };
+
   const exportGraph = () => {
     const dataStr = JSON.stringify(data, null, 2);
     const blob = new Blob([dataStr], { type: 'application/json' });
@@ -82,6 +131,27 @@ export const KnowledgeGraph: React.FC = () => {
     link.download = 'knowledge-graph.json';
     link.click();
     URL.revokeObjectURL(url);
+  };
+
+  // 加载大规模测试数据
+  const loadLargeDataset = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setData(generateLargeDataset(200));
+      setLoading(false);
+    }, 500);
+  };
+
+  // 重置数据
+  const resetData = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setData(mockData);
+      setSelectedNodes([]);
+      setSelectedNode(null);
+      setHighlightPath([]);
+      setLoading(false);
+    }, 300);
   };
 
   if (loading) {
@@ -108,9 +178,50 @@ export const KnowledgeGraph: React.FC = () => {
             <div className="text-sm text-gray-500">
               {data.nodes.length} 节点 · {data.edges.length} 连接
             </div>
+            
+            {/* 视图模式切换 */}
+            <div className="h-4 w-px bg-gray-300 mx-2" />
+            <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-1">
+              <button
+                onClick={() => setViewMode('2d')}
+                className={cn(
+                  "flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-md transition-all",
+                  viewMode === '2d' 
+                    ? 'bg-white text-blue-600 shadow-sm' 
+                    : 'text-gray-600 hover:text-gray-900'
+                )}
+                title="2D视图"
+              >
+                <Layers className="w-4 h-4" />
+                2D
+              </button>
+              <button
+                onClick={() => setViewMode('3d')}
+                className={cn(
+                  "flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-md transition-all",
+                  viewMode === '3d' 
+                    ? 'bg-white text-blue-600 shadow-sm' 
+                    : 'text-gray-600 hover:text-gray-900'
+                )}
+                title="3D视图"
+              >
+                <Box className="w-4 h-4" />
+                3D
+              </button>
+            </div>
           </div>
           
           <div className="flex items-center gap-2">
+            {/* 测试数据按钮 */}
+            <button
+              onClick={loadLargeDataset}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-purple-600 hover:bg-purple-50 rounded-lg transition-colors"
+              title="加载200个节点用于性能测试"
+            >
+              <Maximize className="w-4 h-4" />
+              测试数据
+            </button>
+            
             <button
               onClick={exportGraph}
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
@@ -120,7 +231,7 @@ export const KnowledgeGraph: React.FC = () => {
             </button>
             <button
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
-              onClick={() => setData(mockData)}
+              onClick={resetData}
             >
               <RefreshCw className="w-4 h-4" />
               刷新
@@ -129,19 +240,54 @@ export const KnowledgeGraph: React.FC = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 flex">
+        <div className="flex-1 flex relative">
+          {/* 错误提示 */}
+          {viewError && (
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 bg-red-50 border border-red-200 rounded-lg px-4 py-3 flex items-center gap-3 shadow-lg">
+              <AlertCircle className="w-5 h-5 text-red-600" />
+              <div>
+                <p className="text-sm font-medium text-red-800">视图加载失败</p>
+                <p className="text-xs text-red-600">{viewError.message}</p>
+              </div>
+              <button
+                onClick={() => {
+                  setViewError(null);
+                  setViewMode('2d');
+                }}
+                className="ml-2 px-3 py-1 bg-red-600 text-white text-xs rounded hover:bg-red-700 transition-colors"
+              >
+                切换到2D
+              </button>
+            </div>
+          )}
+
           <div className="flex-1 p-4">
-            <D3Graph
-              data={data}
-              width={800}
-              height={600}
-              config={viewConfig}
-              onNodeClick={handleNodeClick}
-              onEdgeClick={handleEdgeClick}
-              selectedNodes={selectedNodes}
-              highlightPath={highlightPath}
-              className="w-full h-full"
-            />
+            {viewMode === '2d' ? (
+              <D3Graph
+                data={data}
+                width={800}
+                height={600}
+                config={viewConfig}
+                onNodeClick={handleNodeClick}
+                onEdgeClick={handleEdgeClick}
+                selectedNodes={selectedNodes}
+                highlightPath={highlightPath}
+                className="w-full h-full"
+              />
+            ) : (
+              <Graph3D
+                data={data}
+                width={800}
+                height={600}
+                config={viewConfig}
+                onNodeClick={handleNodeClick}
+                onEdgeClick={handleEdgeClick}
+                selectedNodes={selectedNodes}
+                highlightPath={highlightPath}
+                onError={handleViewError}
+                className="w-full h-full"
+              />
+            )}
           </div>
 
           {/* Right Panel - Node Details */}

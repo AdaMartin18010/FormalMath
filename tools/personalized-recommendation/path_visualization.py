@@ -877,7 +877,8 @@ if __name__ == "__main__":
     print("=== 可视化组件测试 ===\n")
     
     # 导入测试数据
-    from recommendation_engine import create_sample_graph, RecommendationEngine
+    from recommendation_engine import create_sample_graph, RecommendationEngine, PathStrategy
+    from user_profile import LearningStyle
     
     # 创建概念图
     graph = create_sample_graph()

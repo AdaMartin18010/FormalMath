@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==================== Base Styles ==================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==================== Custom Scrollbar ==================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* ==================== Selection ==================== */
+
+::selection {
+  background: rgba(59, 130, 246, 0.2);
+  color: inherit;
+}
+
+/* ==================== Focus Styles ==================== */
+
+*:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* ==================== Mermaid Chart Styles ==================== */
+
+.mermaid-chart svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.mermaid-chart .node rect,
+.mermaid-chart .node circle,
+.mermaid-chart .node ellipse,
+.mermaid-chart .node polygon,
+.mermaid-chart .node path {
+  transition: all 0.2s ease;
+}
+
+.mermaid-chart .node:hover rect,
+.mermaid-chart .node:hover circle,
+.mermaid-chart .node:hover ellipse,
+.mermaid-chart .node:hover polygon,
+.mermaid-chart .node:hover path {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.mermaid-chart .edgePath .path {
+  stroke-width: 2px;
+}
+
+/* ==================== D3 Graph Styles ==================== */
+
+.d3-graph .node {
+  cursor: pointer;
+}
+
+.d3-graph .node:hover circle {
+  filter: brightness(1.1);
+}
+
+.d3-graph .link {
+  transition: stroke-width 0.2s ease;
+}
+
+.d3-graph .link:hover {
+  stroke-width: 3px !important;
+}
+
+/* ==================== Animation Utilities ==================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ==================== Tooltip Styles ==================== */
+
+.tooltip {
+  position: absolute;
+  z-index: 50;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* ==================== Code Block Styles ==================== */
+
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ==================== Print Styles ==================== */
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+  }
+}
+
+/* ==================== Responsive Utilities ==================== */
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* ==================== Component Utilities ==================== */
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2 bg-white text-gray-700 font-medium rounded-lg border border-gray-300 hover:bg-gray-50 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl border border-gray-200 shadow-sm;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-lg hover:border-gray-300 transition-all duration-300;
+  }
+}
+
+/* ==================== Layer Utilities ==================== */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

@@ -31,7 +31,7 @@ const MASTERY_OPACITY: Record<MasteryLevel, number> = {
   2: 1.0,
   3: 0.7,
   4: 0.4,
-} };
+};
 
 const NODE_SIZES: Record<MasteryLevel, number> = {
   0: 40,

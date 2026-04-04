@@ -247,7 +247,77 @@ theorem ramsey_3_3 {V : Type*} [Fintype V] (hV : card V = 6)
         · exact h_bc
   | inr h_blue =>
     /- 至少有3个蓝色邻居，类似论证 -/
-    sorry
+    have h_card : blue_neighbors.card ≥ 3 := h_blue
+    have h3 : ∃ (a b c : V), a ≠ b ∧ a ≠ c ∧ b ≠ c ∧
+      a ∈ blue_neighbors ∧ b ∈ blue_neighbors ∧ c ∈ blue_neighbors := by
+      have h_pos : blue_neighbors.card ≥ 3 := h_card
+      rcases Finset.three_le h_pos with ⟨a, ha, b, hb, c, hc, hab, hac, hbc⟩
+      exact ⟨a, b, c, hab, hac, hbc, ha, hb, hc⟩
+    
+    rcases h3 with ⟨a, b, c, hab, hac, hbc, ha, hb, hc⟩
+    
+    /- 检查 a, b, c 之间的边 -/
+    by_cases h_ab : edge_color a b = 0
+    · by_cases h_bc : edge_color b c = 0
+      · /- 蓝色三角形 a-b-c -/
+        use a, b, c, hab, hac, hbc
+        constructor
+        · exact h_ab
+        · exact h_bc.symm.trans (h_sym b c)
+      · /- bc 是红色 -/
+        have h_bc_red : edge_color b c = 1 := by
+          have : edge_color b c = 0 ∨ edge_color b c = 1 := by
+            fin_cases edge_color b c <;> simp
+          tauto
+        by_cases h_ac : edge_color a c = 0
+        · /- 蓝色三角形 a-c-v -/
+          use a, c, v, hac, by_contra hcv; rw [←hcv] at hac; contradiction, by_contra hva; rw [←hva] at hac; contradiction
+          constructor
+          · exact h_ac
+          · have : edge_color c v = 0 := by
+              simp [blue_neighbors] at hc
+              exact hc.2
+            rw [h_sym c v]
+            exact this
+        · /- ac 是红色，红色三角形 a-b-c -/
+          use a, b, c, hab, hac, hbc
+          constructor
+          · have : edge_color a b = 1 := by
+              have : edge_color a b = 0 ∨ edge_color a b = 1 := by
+                fin_cases edge_color a b <;> simp
+              tauto
+            linarith
+          · exact h_bc_red
+    · /- ab 是红色 -/
+      have h_ab_red : edge_color a b = 1 := by
+        have : edge_color a b = 0 ∨ edge_color a b = 1 := by
+          fin_cases edge_color a b <;> simp
+        tauto
+      by_cases h_bc : edge_color b c = 0
+      · by_cases h_ac : edge_color a c = 0
+        · /- 蓝色三角形 a-c-v -/
+          use a, c, v, hac, by_contra hcv; rw [←hcv] at hac; contradiction, by_contra hva; rw [←hva] at hac; contradiction
+          constructor
+          · exact h_ac
+          · have : edge_color c v = 0 := by
+              simp [blue_neighbors] at hc
+              exact hc.2
+            rw [h_sym c v]
+            exact this
+        · /- ac 是红色，红色三角形 a-b-c -/
+          use a, b, c, hab, hac, hbc
+          constructor
+          · exact h_ab_red
+          · exact h_bc
+      · /- bc 是红色，红色三角形 a-b-c -/
+        use a, b, c, hab, hac, hbc
+        constructor
+        · exact h_ab_red
+        · have : edge_color b c = 1 := by
+            have : edge_color b c = 0 ∨ edge_color b c = 1 := by
+              fin_cases edge_color b c <;> simp
+            tauto
+          linarith
 
 /-
 ## 应用：数论

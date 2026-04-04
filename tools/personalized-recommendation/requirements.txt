@@ -1,0 +1,19 @@
+# 个性化学习路径推荐系统依赖
+
+# 核心依赖
+networkx>=3.0
+numpy>=1.24.0
+
+# API服务依赖（可选）
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# 数据验证（可选）
+pydantic>=2.0.0
+
+# 测试依赖
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# 类型提示
+typing-extensions>=4.0.0
