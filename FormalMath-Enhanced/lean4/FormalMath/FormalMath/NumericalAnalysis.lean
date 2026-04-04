@@ -40,7 +40,6 @@
 import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
 import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
 import FormalMath.Mathlib.Analysis.NormedSpace.Basic
-import FormalMath.Mathlib.LinearAlgebra.Matrix.Basic
 
 namespace NumericalAnalysis
 

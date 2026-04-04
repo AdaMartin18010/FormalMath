@@ -1,0 +1,384 @@
+/-
+# 泛函分析进阶 (Functional Analysis - Advanced)
+
+## 数学背景
+
+泛函分析研究无限维向量空间及其上的线性算子，
+是分析学、微分方程、量子力学、优化理论的数学基础。
+
+它将有限维线性代数推广到无限维，
+引入了范数、内积、弱拓扑等新概念。
+
+## 核心定理
+- Hahn-Banach定理
+- 一致有界原理（Banach-Steinhaus）
+- 开映射定理与闭图像定理
+- Riesz表示定理
+- Alaoglu定理
+- Krein-Milman定理
+- 不动点定理
+
+## 参考
+- Rudin, "Functional Analysis"
+- Conway, "A Course in Functional Analysis"
+- Reed & Simon, "Methods of Modern Mathematical Physics"
+- 张恭庆, 《泛函分析讲义》
+- 夏道行, 《实变函数论与泛函分析》
+
+## 历史背景
+泛函分析起源于变分法和积分方程的研究。
+Hilbert在1906年研究了无限维空间（Hilbert空间）。
+Banach在1932年的专著奠定了Banach空间理论的基础。
+Hahn、Banach、Steinhaus等人在1930年代证明了核心定理。
+-/
+
+import Mathlib.Analysis.NormedSpace.Basic
+import Mathlib.Analysis.InnerProductSpace.Basic
+import Mathlib.Topology.Algebra.Module.Basic
+
+namespace FunctionalAnalysisAdvanced
+
+open Topology Filter NormedSpace InnerProductSpace
+
+universe u v
+
+/-
+## Banach空间
+
+完备的赋范向量空间称为Banach空间。
+完备性是泛函分析中许多重要定理的基础。
+-/
+
+/-- Banach空间：完备的赋范空间 -/
+class BanachSpace (E : Type u) extends NormedAddCommGroup E, Module ℝ E where
+  complete : CompleteSpace E
+
+/-- Hilbert空间：完备的内积空间 -/
+class HilbertSpace (E : Type u) extends InnerProductSpace ℝ E, BanachSpace E where
+
+/-
+## Hahn-Banach定理
+
+这是泛函分析最重要的定理之一。
+
+几何形式：若A、B是Banach空间中不相交的非空凸集，
+A开，则存在超平面分离A和B。
+
+分析形式：赋范空间上的有界线性泛函可以保范延拓。
+-/
+
+/-- 超平面分离 -/
+theorem hahn_banach_geometric {E : Type*} [NormedAddCommGroup E] [Module ℝ E]
+    [TopologicalSpace E] {A B : Set E} (hA : Convex ℝ A) (hB : Convex ℝ B)
+    (hA_nonempty : A.Nonempty) (hB_nonempty : B.Nonempty)
+    (hA_open : IsOpen A) (h_disjoint : A ∩ B = ∅) :
+    ∃ (f : E →L[ℝ] ℝ) (c : ℝ), ∀ a ∈ A, ∀ b ∈ B, f a < c ∧ f b ≥ c := by
+  -- 证明思路：
+  -- 1. 构造Minkowski泛函
+  -- 2. 利用Zorn引理延拓线性泛函
+  -- 3. 验证分离性质
+  sorry
+
+/-- Hahn-Banach延拓定理 -/
+theorem hahn_banach_extension {E : Type*} [NormedAddCommGroup E] [Module ℝ E]
+    [TopologicalSpace E] {p : Submodule ℝ E} {f : p →L[ℝ] ℝ} :
+    ∃ g : E →L[ℝ] ℝ, (∀ x : p, g x = f x) ∧ ‖g‖ = ‖f‖ := by
+  -- 证明：利用Zorn引理
+  -- 逐步延拓到整个空间
+  sorry
+
+/-
+## 一致有界原理 (Banach-Steinhaus定理)
+
+若一族有界线性算子点点有界，则它们一致有界。
+
+形式地，若{ T_α }是一族Banach空间到赋范空间的
+有界线性算子，且对每个x，{ ‖T_α x‖ }有界，
+则{ ‖T_α‖ }有界。
+-/
+
+theorem uniform_boundedness_principle {E F : Type*} [BanachSpace E] 
+    [NormedAddCommGroup F] [Module ℝ F] {ι : Type*} {T : ι → E →L[ℝ] F}
+    (h_pointwise : ∀ x, ∃ C, ∀ i, ‖T i x‖ ≤ C) :
+    ∃ C, ∀ i, ‖T i‖ ≤ C := by
+  -- 证明：利用Baire纲定理
+  -- 1. 定义集合E_n = { x : ∀i, ‖T_i x‖ ≤ n }
+  -- 2. 证明某个E_n有内点
+  -- 3. 利用线性性得到一致有界
+  sorry
+
+/-
+## 开映射定理 (Open Mapping Theorem)
+
+Banach空间之间的满射有界线性算子是开映射。
+
+这是泛函分析的核心定理，有许多重要推论。
+-/
+
+theorem open_mapping_theorem {E F : Type*} [BanachSpace E] [BanachSpace F]
+    {T : E →L[ℝ] F} (h_surjective : Function.Surjective T) :
+    IsOpenMap T := by
+  -- 证明：利用Baire纲定理
+  -- 证明T将开集映为开集
+  sorry
+
+/-- 逆算子定理：Banach空间之间的双射有界线性算子的逆也是有界的 -/
+theorem bounded_inverse_theorem {E F : Type*} [BanachSpace E] [BanachSpace F]
+    {T : E →L[ℝ] F} (h_bijective : Function.Bijective T) :
+    Continuous (Function.invFun T) := by
+  -- 这是开映射定理的推论
+  sorry
+
+/-
+## 闭图像定理 (Closed Graph Theorem)
+
+若T : E → F是Banach空间之间的线性算子，
+其图像是闭的，则T是有界的。
+
+这提供了一个判断算子有界性的实用准则。
+-/
+
+/-- 算子的图像 -/
+def Graph {E F : Type*} (T : E → F) : Set (E × F) :=
+  { (x, T x) | x : E }
+
+/-- 闭图像定理 -/
+theorem closed_graph_theorem {E F : Type*} [BanachSpace E] [BanachSpace F]
+    {T : E → F} (h_linear : IsLinearMap ℝ T) (h_closed : IsClosed (Graph T)) :
+    Continuous T := by
+  -- 证明：将图像视为Banach空间
+  -- 利用投影的连续性
+  sorry
+
+/-
+## Riesz表示定理
+
+Hilbert空间上的每个有界线性泛函都可以表示为
+与某个固定向量的内积。
+
+形式地，∀f ∈ H*, ∃!y ∈ H, ∀x ∈ H, f(x) = ⟨x, y⟩
+
+这是Hilbert空间理论的核心定理。
+-/
+
+theorem riesz_representation {H : Type*} [HilbertSpace H] {f : H →L[ℝ] ℝ} :
+    ∃! y : H, ∀ x, f x = inner x y := by
+  -- 证明：
+  -- 1. 若f=0，取y=0
+  -- 2. 若f≠0，ker(f)是闭子空间
+  -- 3. 取ker(f)^⊥中的单位向量
+  -- 4. 验证y满足条件
+  sorry
+
+/-- Riesz表示给出的向量 -/
+def RieszRepresentative {H : Type*} [HilbertSpace H] (f : H →L[ℝ] ℝ) : H :=
+  Classical.choose (riesz_representation (f := f))
+
+/-
+## Lax-Milgram定理
+
+这是研究椭圆型偏微分方程的重要工具。
+
+设H是Hilbert空间，a : H×H → ℝ是有界、强制的双线性形式，
+则对任意f ∈ H*，存在唯一的u ∈ H使得
+a(u, v) = f(v) 对所有v ∈ H成立。
+-/
+
+/-- 双线性形式 -/
+structure BilinearForm (H : Type*) [HilbertSpace H] where
+  toFun : H → H → ℝ
+  linear_left : ∀ y, IsLinearMap ℝ (fun x ↦ toFun x y)
+  linear_right : ∀ x, IsLinearMap ℝ (toFun x)
+
+/-- 有界双线性形式 -/
+def BoundedBilinearForm {H : Type*} [HilbertSpace H] (a : BilinearForm H) : Prop :=
+  ∃ C > 0, ∀ x y, |a.toFun x y| ≤ C * ‖x‖ * ‖y‖
+
+/-- 强制双线性形式 -/
+def CoerciveBilinearForm {H : Type*} [HilbertSpace H] (a : BilinearForm H) : Prop :=
+  ∃ α > 0, ∀ x, a.toFun x x ≥ α * ‖x‖ ^ 2
+
+/-- Lax-Milgram定理 -/
+theorem lax_milgram {H : Type*} [HilbertSpace H] {a : BilinearForm H}
+    (h_bounded : BoundedBilinearForm a)
+    (h_coercive : CoerciveBilinearForm a)
+    {f : H →L[ℝ] ℝ} :
+    ∃! u : H, ∀ v, a.toFun u v = f v := by
+  -- 证明：利用Riesz表示定理和Banach不动点定理
+  sorry
+
+/-
+## Alaoglu定理
+
+赋范空间的对偶空间中的闭单位球是弱*紧的。
+
+这是弱拓扑中最重要的紧性定理。
+-/
+
+/-- 弱*拓扑 -/
+def WeakStarTopology (E : Type*) [NormedAddCommGroup E] [Module ℝ E] 
+    [TopologicalSpace E] : TopologicalSpace (E →L[ℝ] ℝ) :=
+  -- 逐点收敛的拓扑
+  sorry
+
+/-- Alaoglu定理 -/
+theorem alaoglu_theorem {E : Type*} [NormedAddCommGroup E] [Module ℝ E]
+    [TopologicalSpace E] :
+    let B := {f : E →L[ℝ] ℝ | ‖f‖ ≤ 1}
+    IsCompact B := by
+  -- 证明：利用Tychonoff定理
+  -- 将闭单位球嵌入到乘积空间中
+  sorry
+
+/-
+## Krein-Milman定理
+
+局部凸拓扑向量空间中的紧凸集是其极值点的闭凸包。
+
+这是凸分析的基本定理。
+-/
+
+/-- 极值点 -/
+def ExtremePoint {E : Type*} [Module ℝ E] {K : Set E} (x : E) : Prop :=
+  x ∈ K ∧ ∀ y z ∈ K, ∀ t ∈ Set.Ioo 0 1,
+    x = t • y + (1 - t) • z → y = x ∧ z = x
+
+/-- Krein-Milman定理 -/
+theorem krein_milman {E : Type*} [TopologicalSpace E] [Module ℝ E]
+    [TopologicalAddGroup E] [ContinuousSMul ℝ E] {K : Set E}
+    (hK_compact : IsCompact K) (hK_convex : Convex ℝ K) :
+    K = closure (convexHull ℝ {x | ExtremePoint x}) := by
+  -- 证明：利用Hahn-Banach分离定理
+  -- 证明若x不是极值点的凸组合，则存在分离超平面
+  sorry
+
+/-
+## Banach不动点定理 (压缩映射原理)
+
+完备度量空间上的压缩映射有唯一不动点。
+
+这是证明方程解存在唯一性的重要工具。
+-/
+
+/-- 压缩映射 -/
+def Contraction {X : Type*} [MetricSpace X] (f : X → X) : Prop :=
+  ∃ k < 1, ∀ x y, dist (f x) (f y) ≤ k * dist x y
+
+/-- Banach不动点定理 -/
+theorem banach_fixed_point {X : Type*} [MetricSpace X] [CompleteSpace X]
+    {f : X → X} (hf : Contraction f) :
+    ∃! x : X, f x = x := by
+  -- 证明：迭代法
+  -- 任取x₀，构造序列x_{n+1} = f(x_n)
+  -- 证明这是Cauchy列，收敛到不动点
+  sorry
+
+/-
+## Schauder不动点定理
+
+Banach空间中紧凸集上的连续映射有不动点。
+
+这是Brouwer不动点定理的无限维推广。
+-/
+
+theorem schauder_fixed_point {E : Type*} [BanachSpace E] {K : Set E}
+    (hK_compact : IsCompact K) (hK_convex : Convex ℝ K)
+    {f : E → E} (hf_continuous : Continuous f) (hf_image : Set.MapsTo f K K) :
+    ∃ x ∈ K, f x = x := by
+  -- 证明：利用有限维逼近
+  -- 构造有限维近似，应用Brouwer不动点定理
+  sorry
+
+/-
+## 谱理论基本概念
+
+对于Banach空间上的有界线性算子，
+可以定义谱、预解集等概念。
+
+这是泛函分析的核心内容。
+-/
+
+/-- 谱 -/
+def Spectrum {E : Type*} [BanachSpace E] (T : E →L[ℝ] E) : Set ℂ :=
+  {λ : ℂ | ¬ Invertible (T - λ • ContinuousLinearMap.id ℝ E)}
+
+/-- 预解集 -/
+def ResolventSet {E : Type*} [BanachSpace E] (T : E →L[ℝ] E) : Set ℂ :=
+  (Spectrum T)ᶜ
+
+/-- 谱半径公式 -/
+theorem spectral_radius_formula {E : Type*} [BanachSpace E] {T : E →L[ℝ] E} :
+    let r := sSup {‖λ‖ | λ ∈ Spectrum T}
+    r = limsup (fun n ↦ ‖T ^ n‖ ^ (1 / n : ℝ)) atTop := by
+  -- Gelfand谱半径公式
+  sorry
+
+/-
+## 弱收敛与强收敛
+
+在无限维空间中，弱收敛比强收敛更常见。
+
+弱收敛：∀f ∈ E*, f(x_n) → f(x)
+强收敛：‖x_n - x‖ → 0
+-/
+
+/-- 弱收敛 -/
+def ConvergesWeakly {E : Type*} [NormedAddCommGroup E] [Module ℝ E]
+    [TopologicalSpace E] (x : ℕ → E) (x₀ : E) : Prop :=
+  ∀ f : E →L[ℝ] ℝ, Tendsto (fun n ↦ f (x n)) atTop (𝓝 (f x₀))
+
+/-- 自反Banach空间的有界序列有弱收敛子列 -/
+theorem eberlein_smulyan {E : Type*} [BanachSpace E] [ReflexiveSpace E]
+    {x : ℕ → E} (h_bounded : Bornology.IsBounded (Set.range x)) :
+    ∃ φ : ℕ → ℕ, StrictMono φ ∧ ∃ x₀, ConvergesWeakly (x ∘ φ) x₀ := by
+  -- Eberlein-Šmulian定理
+  sorry
+
+/-- 自反空间 -/
+class ReflexiveSpace (E : Type*) [BanachSpace E] : Prop where
+  reflexive : ∀ x : (E →L[ℝ] ℝ) →L[ℝ] ℝ, ∃ y : E, ∀ f, x f = f y
+
+/-
+## 投影定理与正交分解
+
+在Hilbert空间中，闭子空间上的正交投影存在唯一。
+
+这是Hilbert空间几何的基础。
+-/
+
+/-- 正交投影 -/
+def OrthogonalProjection {H : Type*} [HilbertSpace H] (M : Submodule ℝ H) 
+    (hM_closed : IsClosed (M : Set H)) : H → H :=
+  fun x ↦ Classical.choose (exists_projection x M hM_closed)
+
+/-- 投影存在性 -/
+theorem exists_projection {H : Type*} [HilbertSpace H] (x : H) 
+    (M : Submodule ℝ H) (hM_closed : IsClosed (M : Set H)) :
+    ∃! y ∈ M, ∀ z ∈ M, ‖x - y‖ ≤ ‖x - z‖ := by
+  -- 证明：利用平行四边形法则
+  -- 证明极小化序列是Cauchy列
+  sorry
+
+/-- 正交分解 -/
+theorem orthogonal_decomposition {H : Type*} [HilbertSpace H] 
+    (M : Submodule ℝ H) (hM_closed : IsClosed (M : Set H)) (x : H) :
+    ∃! y ∈ M, ∃! z ∈ Mᗮ, x = y + z := by
+  -- y是x在M上的投影，z = x - y
+  sorry
+
+/-- 正交补 -/
+def OrthogonalComplement {H : Type*} [HilbertSpace H] 
+    (M : Submodule ℝ H) : Submodule ℝ H :=
+  { carrier := {x | ∀ y ∈ M, inner x y = 0}
+    zero_mem' := by simp
+    add_mem' := by
+      intro x y hx hy z hz
+      simp [inner_add_left, hx z hz, hy z hz]
+    smul_mem' := by
+      intro c x hx y hy
+      simp [inner_smul_left, hx y hy]
+  }
+
+notation M "ᗮ" => OrthogonalComplement M
+
+end FunctionalAnalysisAdvanced

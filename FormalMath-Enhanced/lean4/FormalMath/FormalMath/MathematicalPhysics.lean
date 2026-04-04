@@ -37,7 +37,7 @@ import FormalMath.CalculusOfVariations
 import FormalMath.WaveEquation
 import FormalMath.YangMillsTheory
 import FormalMath.Mathlib.Analysis.InnerProductSpace.Basic
-import FormalMath.Mathlib.LinearAlgebra.Basic
+import FormalMath.Mathlib.LinearAlgebra.TensorProduct
 
 namespace MathematicalPhysics
 

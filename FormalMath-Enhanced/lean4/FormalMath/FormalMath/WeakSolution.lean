@@ -33,7 +33,6 @@
 import FormalMath.Mathlib.SobolevSpace
 import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
 import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.LinearAlgebra.Matrix
 import FormalMath.Mathlib.MeasureTheory.Function.L2Space
 
 namespace WeakSolution

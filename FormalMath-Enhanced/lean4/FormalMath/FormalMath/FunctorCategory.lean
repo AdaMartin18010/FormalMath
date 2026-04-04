@@ -28,8 +28,6 @@ import FormalMath.Mathlib.CategoryTheory.Limits.Types
 import FormalMath.Mathlib.CategoryTheory.Limits.Shapes.Products
 import FormalMath.Mathlib.CategoryTheory.Limits.Shapes.Equalizers
 import FormalMath.Mathlib.CategoryTheory.Yoneda
-import FormalMath.Mathlib.Topology.Sheaves.Sheaf
-import FormalMath.Mathlib.Topology.Sheaves.SheafCondition.Sites
 import FormalMath.Mathlib.Topology.Sheaves.Stalks
 
 namespace FunctorCategory

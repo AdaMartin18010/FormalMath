@@ -26,7 +26,7 @@
 -/
 
 import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
-import FormalMath.Mathlib.DifferentialGeometry.Connections.Basic
+import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
 import FormalMath.Mathlib.Topology.Homotopy.Basic
 import FormalMath.Mathlib.Algebra.Lie.Basic
 import FormalMath.Mathlib.Algebra.Category.ModuleCat.Basic

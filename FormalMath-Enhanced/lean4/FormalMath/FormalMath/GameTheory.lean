@@ -18,11 +18,8 @@
 
 -/
 
-import FormalMath.Mathlib.Topology.Basic
-import FormalMath.Mathlib.Analysis.Convex.Basic
 import FormalMath.Mathlib.Analysis.NormedSpace.Basic
 import FormalMath.Mathlib.Data.Real.Basic
-import FormalMath.Mathlib.Topology.FixedPoint.Basic
 
 namespace GameTheory
 

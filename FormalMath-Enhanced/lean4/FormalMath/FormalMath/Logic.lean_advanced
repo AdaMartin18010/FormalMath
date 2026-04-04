@@ -1,0 +1,329 @@
+/-
+# 数理逻辑进阶
+
+## 数学背景
+
+本文件包含数理逻辑中的高级主题，包括：
+1. 哥德尔不完备性定理
+2. 紧致性定理及其应用
+3. 洛文海姆-斯科伦定理
+4. 可计算性理论（停机问题、递归函数）
+5. 模型论基本定理
+
+这些定理构成了现代数理逻辑的基础。
+
+## Mathlib4对应
+- `Mathlib.Logic.Basic`
+- `Mathlib.ModelTheory.Basic`
+- `Mathlib.Computability`
+
+注：由于哥德尔定理的复杂性，本文件主要提供
+详细的数学框架和部分形式化。
+
+-/
+
+import Mathlib.Logic.Basic
+import Mathlib.ModelTheory.Basic
+import Mathlib.ModelTheory.Encoding
+import Mathlib.Computability.TuringMachine
+import Mathlib.Computability.Partrec
+import Mathlib.Computability.Halting
+import Mathlib.SetTheory.Cardinal.Basic
+
+namespace LogicAdvanced
+
+open FirstOrder Language Structure Cardinal
+
+/-
+## 哥德尔不完备性定理
+
+### 第一不完备性定理
+
+**定理陈述**：任何足够强的一致形式系统，
+都存在在该系统中既不能证明也不能否证的命题。
+
+**关键概念**：
+- 形式系统：皮亚诺算术PA或策梅洛-弗兰克尔集合论ZF
+- 哥德尔编码：将语法对象编码为自然数
+- 自指命题："本命题不可证"
+
+**证明思路**：
+1. 建立哥德尔编码系统
+2. 构造对角线引理
+3. 定义"可证性"谓词
+4. 构造自指命题G
+5. 证明G和¬G都不可证
+-/
+
+/-
+**定义**：哥德尔编码
+
+将公式、证明等语法对象编码为自然数。
+-/
+structure GödelEncoding where
+  encodeFormula : ℕ → ℕ  -- 将公式编码为哥德尔数
+  encodeProof : ℕ → ℕ    -- 将证明编码为哥德尔数
+  decodable : ∀ n, ∃! f, encodeFormula f = n  -- 可解码性
+
+/-
+**定理**：对角线引理（Diagonal Lemma）
+
+设T是包含皮亚诺算术的理论，φ(x)是一个公式，
+则存在句子G使得：
+\[
+T \vdash G \leftrightarrow \varphi(\ulcorner G \urcorner)
+\]
+
+其中\(\ulcorner G \urcorner\)是G的哥德尔数。
+-/
+theorem diagonal_lemma {T : Theory ℒ} 
+    (hT : ∀ n : ℕ, T ⊢' sentenceOfNat n)  -- T包含PA
+    (φ : ℒ.Formula (Fin 1)) :  -- 一元公式
+    ∃ G : ℒ.Sentence,  -- 存在句子G
+      T ⊢' (G ⇔ φ.subst (fun _ => termOfNat (encode G))) := by
+  -- 对角线引理的证明
+  -- 步骤1：定义替换函数
+  -- 步骤2：构造对角线公式
+  -- 步骤3：验证等价性
+  sorry
+
+/-
+**定义**：可证性谓词
+
+Prov(n)表示"哥德尔数为n的公式可证"。
+-/
+def ProvabilityPredicate (T : Theory ℒ) (Prov : ℒ.Formula (Fin 1)) : Prop :=
+  -- 可证性谓词应满足Hilbert-Bernays-Löb条件
+  (∀ {φ : ℒ.Sentence}, T ⊢' φ → T ⊢' Prov.subst (fun _ => termOfNat (encode φ))) ∧
+  (∀ {φ ψ : ℒ.Sentence}, 
+    T ⊢' Prov.subst (fun _ => termOfNat (encode (φ ⇒ ψ))) ⇒
+         Prov.subst (fun _ => termOfNat (encode φ)) ⇒
+         Prov.subst (fun _ => termOfNat (encode ψ))) ∧
+  (∀ {φ : ℒ.Sentence}, 
+    T ⊢' Prov.subst (fun _ => termOfNat (encode φ)) ⇒
+         Prov.subst (fun _ => termOfNat (encode (Prov.subst 
+           (fun _ => termOfNat (encode φ))))))
+
+/-
+**定理**：哥德尔第一不完备性定理
+
+设T是一致的形式系统，包含皮亚诺算术，
+则存在命题G使得T既不能证明G也不能证明¬G。
+-/
+theorem godel_first_incompleteness {T : Theory ℒ}
+    (hconsistent : Consistent T)
+    (hPA : ∀ n : ℕ, T ⊢' sentenceOfNat n)
+    (Prov : ℒ.Formula (Fin 1))
+    (hProv : ProvabilityPredicate T Prov) :
+    ∃ G : ℒ.Sentence, 
+      ¬(T ⊢' G) ∧ ¬(T ⊢' (∼G)) := by
+  -- 哥德尔第一不完备性定理的证明
+  -- 步骤1：应用对角线引理于¬Prov(x)
+  obtain ⟨G, hG⟩ := diagonal_lemma hPA (∼Prov)
+  
+  -- 步骤2：G表示"本命题不可证"
+  -- T ⊢ G ↔ ¬Prov(⌜G⌝)
+  
+  -- 步骤3：假设T ⊢ G，导出矛盾
+  -- 由可证性条件，T ⊢ Prov(⌜G⌝)
+  -- 但G ↔ ¬Prov(⌜G⌝)，矛盾
+  
+  -- 步骤4：假设T ⊢ ¬G，导出矛盾
+  -- 由对角线引理，T ⊢ Prov(⌜G⌝)
+  -- 由一致性，T不能同时证明G和¬G
+  
+  sorry
+
+/-
+### 第二不完备性定理
+
+**定理陈述**：一致的形式系统不能证明自身的一致性。
+-/
+
+def ConsistencySentence (T : Theory ℒ) (Prov : ℒ.Formula (Fin 1)) : 
+    ℒ.Sentence :=
+  ∼(Prov.subst (fun _ => termOfNat (encode (⊥ : ℒ.Sentence))))
+
+/-
+**定理**：哥德尔第二不完备性定理
+
+设T是一致的形式系统，包含皮亚诺算术，
+则T不能证明自身的一致性。
+-/
+theorem godel_second_incompleteness {T : Theory ℒ}
+    (hconsistent : Consistent T)
+    (hPA : ∀ n : ℕ, T ⊢' sentenceOfNat n)
+    (Prov : ℒ.Formula (Fin 1))
+    (hProv : ProvabilityPredicate T Prov) :
+    ¬(T ⊢' ConsistencySentence T Prov) := by
+  -- 哥德尔第二不完备性定理的证明
+  -- 利用第一不完备性定理中的G
+  -- 证明：T ⊢ Con(T) → G
+  -- 若T ⊢ Con(T)，则T ⊢ G，矛盾
+  sorry
+
+/-
+## 紧致性定理
+
+**定理陈述**：一个一阶理论有模型当且仅当
+它的每个有限子集都有模型。
+
+**等价形式**：理论T是一致的当且仅当
+每个有限子集是一致的。
+
+**数学意义**：紧致性定理是模型论的基本工具。
+-/
+
+/-
+**定理**：紧致性定理
+-/
+theorem compactness_theorem {L : Language} (T : Theory L) :
+    Satisfiable T ↔ ∀ T' : Finset L.Sentence, (T' : Set L.Sentence) ⊆ T → 
+      Satisfiable (T' : Set L.Sentence) := by
+  -- 紧致性定理的证明
+  -- 方向1：⇒（显然）
+  -- 方向2：⇐（使用超积或完全性定理）
+  sorry
+
+/-
+**应用**：非标准算术模型
+
+利用紧致性定理，可以构造自然数的非标准模型，
+其中包含无限大元素。
+-/
+theorem nonstandard_model_exists :
+    ∃ (N* : Type*) [L.structure N*], 
+      N* ⊨ theoryOf ℕ ∧ 
+      ∃ c : N*, ∀ n : ℕ, N* ⊨ (c > n) := by
+  -- 构造非标准模型
+  -- 步骤1：添加新常数c和公理{c > n | n ∈ ℕ}
+  -- 步骤2：证明每个有限子集有模型（标准模型即可）
+  -- 步骤3：应用紧致性定理
+  sorry
+
+/-
+## 洛文海姆-斯科伦定理
+
+### 下降洛文海姆-斯科伦定理
+
+**定理陈述**：若理论T有无穷模型，则对任意无穷基数κ ≥ |L|，
+T有基数为κ的模型。
+
+**推论**：若理论T有无穷模型，则T有可数模型。
+-/
+theorem downward_lowenheim_skolem {L : Language} (T : Theory L)
+    (M : Type*) [L.Structure M] (hM : M ⊨ T)
+    (hM_infinite : Infinite M) (A : Set M) :
+    ∃ N : Set M, A ⊆ N ∧ 
+      ∃ (_ : L.Substructure N), 
+        #(↑N : Type _) ≤ max ℵ₀ #L + #A := by
+  -- 下降洛文海姆-斯科伦定理
+  -- 使用Tarski-Vaught测试构造初等子结构
+  sorry
+
+/-
+### 上升洛文海姆-斯科伦定理
+
+**定理陈述**：若理论T有无穷模型，则对任意基数κ ≥ |M|，
+T有基数为κ的模型。
+-/
+theorem upward_lowenheim_skolem {L : Language} (T : Theory L)
+    (M : Type*) [L.Structure M] (hM : M ⊨ T)
+    (hM_infinite : Infinite M) (κ : Cardinal)
+    (hκ : #M ≤ κ) :
+    ∃ N : Type*, N ⊨ T ∧ #N = κ := by
+  -- 上升洛文海姆-斯科伦定理
+  -- 使用超积或紧致性定理
+  sorry
+
+/-
+**悖论**：Skolem悖论
+
+ZFC有可数模型，但它能证明不可数集存在。
+
+**解释**："可数"是相对于模型的外部观察，
+模型内部不能看到自身的双射。
+-/
+
+/-
+## 可计算性理论
+
+### 停机问题
+
+**定理陈述**：不存在判定任意程序是否在任意输入上停机的算法。
+-/
+
+/-
+**定理**：停机问题不可判定
+-/
+theorem halting_problem_undecidable :
+    ¬∃ f : ℕ → ℕ → Bool, 
+      ∀ (p i : ℕ), 
+        f p i = true ↔ Halts p i := by
+  -- 停机问题的不可判定性证明
+  -- 使用对角线论证
+  -- 假设存在停机判定器，构造自指程序
+  sorry
+
+/-
+### 递归函数与图灵机等价
+
+**丘奇-图灵论题**：可计算的直观概念与图灵机可计算等价。
+-/
+
+/-
+**定理**：通用图灵机的存在性
+
+存在一个图灵机，它可以模拟任何其他图灵机。
+-/
+theorem universal_turing_machine_exists :
+    ∃ U : TuringMachine, 
+      ∀ (M : TuringMachine) (input : Tape), 
+        U (encode M, input) = M input := by
+  -- 通用图灵机的构造
+  -- 存储被模拟机器的状态和转移函数
+  -- 逐步模拟执行
+  sorry
+
+/-
+### Rice定理
+
+**定理陈述**：任何关于程序行为的非平凡性质都是不可判定的。
+-/
+def SemanticProperty : Type := 
+  (ℕ →. ℕ) → Prop  -- 部分函数的谓词
+
+theorem rice_theorem (P : SemanticProperty)
+    (hnontrivial : ∃ f g, P f ∧ ¬P g)
+    (hextensional : ∀ f g, (∀ x, f x = g x) → (P f ↔ P g)) :
+    ¬DecidablePred P := by
+  -- Rice定理的证明
+  -- 利用停机问题的归约
+  -- 或直接使用对角线论证
+  sorry
+
+/-
+## 模型论应用：量词消去
+
+**定义**：理论T允许量词消去，如果每个公式都等价于
+一个无量词公式。
+-/
+def HasQuantifierElimination {L : Language} (T : Theory L) : Prop :=
+  ∀ (φ : L.Formula (Fin n)), 
+    ∃ (ψ : L.Formula (Fin n)), 
+      ψ.IsQF ∧ T ⊢' φ ⇔ ψ
+
+/-
+**定理**：代数闭域允许量词消去
+
+ACF（代数闭域理论）允许量词消去。
+
+**推论**：ACF是完备的（对于固定特征）。
+-/
+theorem ACF_quantifier_elimination :
+    HasQuantifierElimination (Theory.ACF ℤ) := by
+  -- 利用Steinitz的代数闭域理论
+  -- 或模型论方法
+  sorry
+
+end LogicAdvanced

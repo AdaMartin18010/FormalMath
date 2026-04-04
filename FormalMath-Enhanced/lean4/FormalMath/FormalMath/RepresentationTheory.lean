@@ -33,9 +33,6 @@ import FormalMath.Mathlib.RepresentationTheory.Character
 import FormalMath.Mathlib.RepresentationTheory.Maschke
 import FormalMath.Mathlib.RepresentationTheory.FdRep
 import FormalMath.Mathlib.RepresentationTheory.GroupCohomology.Basic
-import FormalMath.Mathlib.RepresentationTheory.Basic
-import FormalMath.Mathlib.RepresentationTheory.Maschke
-import FormalMath.Mathlib.RepresentationTheory.Character
 
 namespace RepresentationTheory
 

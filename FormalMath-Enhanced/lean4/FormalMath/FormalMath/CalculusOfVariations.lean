@@ -43,7 +43,7 @@ import FormalMath.Mathlib.Analysis.Calculus.Gradient.Basic
 import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
 import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
 import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
-import FormalMath.Mathlib.Geometry.Manifold.Basic
+import FormalMath.Mathlib.Geometry.Manifold.ChartedSpace
 
 namespace CalculusOfVariations
 

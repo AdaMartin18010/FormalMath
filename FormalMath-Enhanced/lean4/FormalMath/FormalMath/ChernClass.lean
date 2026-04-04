@@ -27,7 +27,7 @@ Chern类是复向量丛的最重要示性类，
 -/
 
 import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
-import FormalMath.Mathlib.DifferentialGeometry.Connections.Basic
+import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
 import FormalMath.Mathlib.AlgebraicTopology.CechNerve
 import FormalMath.Mathlib.Geometry.Manifold.IntegralCurve
 

@@ -40,8 +40,6 @@ Yang-Mills理论起源于1954年杨振宁和Mills的论文，
 import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
 import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
 import FormalMath.Mathlib.Analysis.Calculus.DifferentialForms
-import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
-import FormalMath.Mathlib.DifferentialGeometry.Connections
 
 namespace YangMillsTheory
 

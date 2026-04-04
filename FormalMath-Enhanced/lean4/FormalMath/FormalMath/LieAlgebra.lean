@@ -29,9 +29,6 @@ Lie代数库，补充关键定理的证明框架。
 import FormalMath.Mathlib.Algebra.Lie.Basic
 import FormalMath.Mathlib.Algebra.Lie.Killing
 import FormalMath.Mathlib.Algebra.Lie.CartanSubalgebra
-import FormalMath.Mathlib.Algebra.Lie.Semisimple
-import FormalMath.Mathlib.Algebra.Lie.Solvable
-import FormalMath.Mathlib.Algebra.Lie.Nilpotent
 import FormalMath.Mathlib.LinearAlgebra.Trace
 
 namespace LieAlgebra

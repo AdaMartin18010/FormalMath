@@ -43,7 +43,6 @@ import FormalMath.Mathlib.Data.Complex.Exponential
 import FormalMath.Mathlib.Analysis.Fourier.FourierTransform
 import FormalMath.Mathlib.MeasureTheory.Function.L2Space
 import FormalMath.Mathlib.Analysis.SpecialFunctions.Gaussian
-import FormalMath.Mathlib.Analysis.InnerProductSpace.Calculus
 
 namespace FourierTransform
 

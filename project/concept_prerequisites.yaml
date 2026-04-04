@@ -209,6 +209,8 @@ concepts:
       - concept_id: "complex_analysis"
         level: "L2"
         relation: "被依赖"
+    msc_primary: "42Bxx"
+    msc_secondary: ["42A38"]
     difficulty: 3
     estimated_hours: 25
 
@@ -425,6 +427,8 @@ concepts:
       - concept_id: "riemann_surfaces"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "43Axx"
+    msc_secondary: ["42Bxx", "22E30"]
     difficulty: 3
     estimated_hours: 35
 
@@ -519,6 +523,8 @@ concepts:
       - concept_id: "functional_analysis"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "37Axx"
+    msc_secondary: ["28Dxx", "60G10"]
     difficulty: 3
     estimated_hours: 35
 
@@ -542,6 +548,8 @@ concepts:
       - concept_id: "fourier_analysis"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "03E20"
+    msc_secondary: ["03Exx"]
     difficulty: 3
     estimated_hours: 30
 
@@ -652,6 +660,8 @@ concepts:
       - concept_id: "spectral_theory"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "46E35"
+    msc_secondary: ["46Fxx", "35Sxx"]
     difficulty: 4
     estimated_hours: 45
 
@@ -728,6 +738,8 @@ concepts:
       - concept_id: "c_star_algebras"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "81Qxx"
+    msc_secondary: ["81Pxx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -825,6 +837,8 @@ concepts:
       - concept_id: "finite_element_method"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "49Jxx"
+    msc_secondary: ["49Kxx", "58E05"]
     difficulty: 4
     estimated_hours: 35
 
@@ -848,6 +862,8 @@ concepts:
       - concept_id: "dynamical_systems"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "49N10"
+    msc_secondary: ["93Cxx", "49J15"]
     difficulty: 3
     estimated_hours: 30
 
@@ -931,6 +947,8 @@ concepts:
       - concept_id: "lie_group"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "22E15"
+    msc_secondary: ["22Exx"]
     difficulty: 2
     estimated_hours: 25
 
@@ -1036,6 +1054,8 @@ concepts:
       - concept_id: "multilinear_algebra"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "18Gxx"
+    msc_secondary: ["13Dxx", "16Exx"]
     difficulty: 2
     estimated_hours: 30
 
@@ -1059,6 +1079,8 @@ concepts:
       - concept_id: "tensor_product"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "15Axx"
+    msc_secondary: ["15A09", "65Fxx"]
     difficulty: 2
     estimated_hours: 20
 
@@ -1108,6 +1130,8 @@ concepts:
       - concept_id: "principal_component_analysis"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "65Fxx"
+    msc_secondary: ["65Y05"]
     difficulty: 2
     estimated_hours: 15
 
@@ -1210,6 +1234,8 @@ concepts:
       - concept_id: "lie_group"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "18Axx"
+    msc_secondary: ["18Bxx", "18Cxx"]
     difficulty: 3
     estimated_hours: 35
 
@@ -1230,6 +1256,8 @@ concepts:
       - concept_id: "burnside_theorem"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "20C15"
+    msc_secondary: ["20Cxx"]
     difficulty: 3
     estimated_hours: 25
 
@@ -1300,6 +1328,8 @@ concepts:
       - concept_id: "simple_group"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "20F16"
+    msc_secondary: ["20D10", "20Exx"]
     difficulty: 3
     estimated_hours: 20
 
@@ -1346,6 +1376,8 @@ concepts:
       - concept_id: "root_system"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "17Bxx"
+    msc_secondary: ["22E60", "17Bxx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -2035,6 +2067,8 @@ concepts:
       - concept_id: "algebraic_topology"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "55Nxx"
+    msc_secondary: ["55Mxx"]
     difficulty: 3
     estimated_hours: 35
 
@@ -2188,6 +2222,8 @@ concepts:
       - concept_id: "index_theorem"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "58C35"
+    msc_secondary: ["58A10", "58Axx"]
     difficulty: 3
     estimated_hours: 20
 
@@ -2343,6 +2379,8 @@ concepts:
       - concept_id: "topological_quantum_field"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "81T13"
+    msc_secondary: ["53C07", "81Txx"]
     difficulty: 5
     estimated_hours: 50
 
@@ -2367,6 +2405,8 @@ concepts:
       - concept_id: "floer_homology"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "58E05"
+    msc_secondary: ["57R70", "58Exx"]
     difficulty: 4
     estimated_hours: 35
 
@@ -2413,6 +2453,8 @@ concepts:
       - concept_id: "gromov_witten"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "53D05"
+    msc_secondary: ["37Jxx", "53Dxx"]
     difficulty: 4
     estimated_hours: 45
 
@@ -2436,6 +2478,8 @@ concepts:
       - concept_id: "k3_surface"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "32Qxx"
+    msc_secondary: ["32Cxx", "53C55"]
     difficulty: 4
     estimated_hours: 45
 
@@ -2488,6 +2532,8 @@ concepts:
       - concept_id: "gcd"
         level: "L1"
         relation: "被依赖"
+    msc_primary: "11A05"
+    msc_secondary: ["11Axx"]
     difficulty: 1
     estimated_hours: 10
 
@@ -2538,6 +2584,8 @@ concepts:
       - concept_id: "cryptography"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "11A07"
+    msc_secondary: ["11Axx"]
     difficulty: 2
     estimated_hours: 15
 
@@ -2586,6 +2634,8 @@ concepts:
       - concept_id: "ideal"
         level: "L2"
         relation: "被依赖"
+    msc_primary: "11R04"
+    msc_secondary: ["11Rxx"]
     difficulty: 3
     estimated_hours: 25
 
@@ -2634,6 +2684,8 @@ concepts:
       - concept_id: "regulator"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "11R29"
+    msc_secondary: ["11Rxx", "11Sxx"]
     difficulty: 4
     estimated_hours: 35
 
@@ -2664,6 +2716,8 @@ concepts:
       - concept_id: "cryptography_elliptic"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "11G05"
+    msc_secondary: ["11Gxx", "14H52"]
     difficulty: 4
     estimated_hours: 50
 
@@ -2714,6 +2768,8 @@ concepts:
       - concept_id: "bch_conjecture"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "11M06"
+    msc_secondary: ["11Mxx", "11F66"]
     difficulty: 5
     estimated_hours: 55
 
@@ -2738,6 +2794,8 @@ concepts:
       - concept_id: "arakelov_theory"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "11G35"
+    msc_secondary: ["11Gxx", "14Gxx"]
     difficulty: 5
     estimated_hours: 60
 
@@ -2807,6 +2865,8 @@ concepts:
       - concept_id: "trace_formula"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "11D41"
+    msc_secondary: ["11F80", "11G05"]
     difficulty: 5
     estimated_hours: 60
 
@@ -2835,6 +2895,8 @@ concepts:
       - concept_id: "circuit_complexity"
         level: "L2"
         relation: "被依赖"
+    msc_primary: "03B05"
+    msc_secondary: ["03Bxx"]
     difficulty: 1
     estimated_hours: 15
 
@@ -2889,6 +2951,8 @@ concepts:
       - concept_id: "proof_complexity"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "03Cxx"
+    msc_secondary: ["03C07"]
     difficulty: 3
     estimated_hours: 35
 
@@ -2967,6 +3031,8 @@ concepts:
       - concept_id: "descriptive_set"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "03D10"
+    msc_secondary: ["03Dxx", "68Q05"]
     difficulty: 2
     estimated_hours: 30
 
@@ -3186,6 +3252,8 @@ concepts:
       - concept_id: "formalized_proof"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "11N05"
+    msc_secondary: ["11M26"]
     difficulty: 4
     estimated_hours: 40
 
@@ -3256,6 +3324,8 @@ concepts:
       - concept_id: "bayes_theorem"
         level: "L2"
         relation: "被依赖"
+    msc_primary: "03B10"
+    msc_secondary: ["03Bxx", "03Cxx"]
     difficulty: 3
     estimated_hours: 25
 
@@ -3288,6 +3358,8 @@ concepts:
       - concept_id: "central_limit_theorem"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "60E05"
+    msc_secondary: ["62Exx"]
     difficulty: 2
     estimated_hours: 18
 
@@ -3320,6 +3392,8 @@ concepts:
       - concept_id: "bayes_theorem"
         level: "L2"
         relation: "被依赖"
+    msc_primary: "60A99"
+    msc_secondary: ["60Axx"]
     difficulty: 2
     estimated_hours: 15
 
@@ -3355,6 +3429,10 @@ concepts:
       - concept_id: "martingale"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "60Gxx"
+    msc_secondary: ["60G07"]
+    msc_primary: "60J10"
+    msc_secondary: ["60Jxx"]
     difficulty: 3
     estimated_hours: 35
 
@@ -3400,6 +3478,8 @@ concepts:
       - concept_id: "stochastic_calculus"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "60J65"
+    msc_secondary: ["60Jxx", "60Hxx"]
     difficulty: 4
     estimated_hours: 35
 
@@ -3447,6 +3527,8 @@ concepts:
       - concept_id: "hypothesis_testing"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "62F25"
+    msc_secondary: ["62Fxx"]
     difficulty: 3
     estimated_hours: 30
 
@@ -3461,6 +3543,8 @@ concepts:
       - concept_id: "maximum_likelihood"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "62F03"
+    msc_secondary: ["62Fxx", "62G10"]
     difficulty: 3
     estimated_hours: 25
 
@@ -3475,6 +3559,8 @@ concepts:
       - concept_id: "p_value"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "62F10"
+    msc_secondary: ["62Fxx", "62Jxx"]
     difficulty: 3
     estimated_hours: 25
 
@@ -3492,6 +3578,8 @@ concepts:
       - concept_id: "time_series_analysis"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "62J05"
+    msc_secondary: ["62Jxx", "62F10"]
     difficulty: 3
     estimated_hours: 30
 
@@ -3509,6 +3597,8 @@ concepts:
       - concept_id: "kalman_filter"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "93E11"
+    msc_secondary: ["60G35"]
     difficulty: 3
     estimated_hours: 35
 
@@ -3526,6 +3616,8 @@ concepts:
       - concept_id: "forecasting"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "93E11"
+    msc_secondary: ["60G35", "62M20"]
     difficulty: 4
     estimated_hours: 40
 
@@ -3576,6 +3668,8 @@ concepts:
       - concept_id: "gradient_descent"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "90Cxx"
+    msc_secondary: ["49Kxx"]
     difficulty: 2
     estimated_hours: 15
 
@@ -3590,6 +3684,8 @@ concepts:
       - concept_id: "convex_function"
         level: "L2"
         relation: "被依赖"
+    msc_primary: "52Axx"
+    msc_secondary: ["90C25"]
     difficulty: 2
     estimated_hours: 18
 
@@ -3627,6 +3723,8 @@ concepts:
       - concept_id: "newton_method"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "26B05"
+    msc_secondary: ["90C52"]
     difficulty: 2
     estimated_hours: 15
 
@@ -3644,6 +3742,8 @@ concepts:
       - concept_id: "newton_method"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "26B05"
+    msc_secondary: ["90C30"]
     difficulty: 3
     estimated_hours: 18
 
@@ -3696,6 +3796,8 @@ concepts:
       - concept_id: "preconditioned_cg"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "90C52"
+    msc_secondary: ["65F10", "65K05"]
     difficulty: 3
     estimated_hours: 25
 
@@ -3714,6 +3816,8 @@ concepts:
       - concept_id: "kkt_conditions"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "49K99"
+    msc_secondary: ["90C46"]
     difficulty: 3
     estimated_hours: 25
 
@@ -3749,6 +3853,8 @@ concepts:
       - concept_id: "simplex_method"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "90C05"
+    msc_secondary: ["90Cxx"]
     difficulty: 3
     estimated_hours: 30
 
@@ -3801,6 +3907,8 @@ concepts:
       - concept_id: "primal_dual_method"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "90C22"
+    msc_secondary: ["90Cxx", "15Axx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -3815,6 +3923,8 @@ concepts:
       - concept_id: "branch_and_bound"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "90C10"
+    msc_secondary: ["90Cxx", "90C57"]
     difficulty: 4
     estimated_hours: 35
 
@@ -3835,6 +3945,8 @@ concepts:
       - concept_id: "optimal_control"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "49Lxx"
+    msc_secondary: ["90C39", "93Cxx"]
     difficulty: 3
     estimated_hours: 30
 
@@ -3906,6 +4018,8 @@ concepts:
       - concept_id: "sequential_quadratic"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "90C30"
+    msc_secondary: ["90Cxx"]
     difficulty: 3
     estimated_hours: 32
 
@@ -3927,6 +4041,8 @@ concepts:
       - concept_id: "state_space"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "93Bxx"
+    msc_secondary: ["93Cxx"]
     difficulty: 2
     estimated_hours: 20
 
@@ -3967,6 +4083,8 @@ concepts:
       - concept_id: "observability"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "93C05"
+    msc_secondary: ["93Bxx"]
     difficulty: 3
     estimated_hours: 25
 
@@ -3987,6 +4105,8 @@ concepts:
       - concept_id: "stability_analysis"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "93B52"
+    msc_secondary: ["93Cxx"]
     difficulty: 2
     estimated_hours: 20
 
@@ -4021,6 +4141,8 @@ concepts:
       - concept_id: "pid_tuning"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "93D05"
+    msc_secondary: ["34D20", "37C75"]
     difficulty: 3
     estimated_hours: 25
 
@@ -4072,6 +4194,8 @@ concepts:
       - concept_id: "robust_control"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "93D10"
+    msc_secondary: ["93Cxx"]
     difficulty: 4
     estimated_hours: 30
 
@@ -4089,6 +4213,8 @@ concepts:
       - concept_id: "state_feedback"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "93B05"
+    msc_secondary: ["93Cxx"]
     difficulty: 3
     estimated_hours: 20
 
@@ -4231,6 +4357,8 @@ concepts:
       - concept_id: "feedback_linearization"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "93C10"
+    msc_secondary: ["93Cxx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -4248,6 +4376,8 @@ concepts:
       - concept_id: "model_reference"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "93C40"
+    msc_secondary: ["93Cxx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -4280,6 +4410,8 @@ concepts:
       - concept_id: "shannon_entropy"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94A15"
+    msc_secondary: ["94Axx"]
     difficulty: 2
     estimated_hours: 15
 
@@ -4317,6 +4449,8 @@ concepts:
       - concept_id: "channel_capacity"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94A17"
+    msc_secondary: ["94Axx"]
     difficulty: 3
     estimated_hours: 20
 
@@ -4354,6 +4488,8 @@ concepts:
       - concept_id: "arithmetic_coding"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94A29"
+    msc_secondary: ["94Axx", "68P30"]
     difficulty: 3
     estimated_hours: 25
 
@@ -4391,6 +4527,8 @@ concepts:
       - concept_id: "channel_capacity"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94Bxx"
+    msc_secondary: ["94Axx"]
     difficulty: 3
     estimated_hours: 30
 
@@ -4428,6 +4566,8 @@ concepts:
       - concept_id: "bch_code"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "94B15"
+    msc_secondary: ["94Bxx", "11T71"]
     difficulty: 4
     estimated_hours: 35
 
@@ -4445,6 +4585,8 @@ concepts:
       - concept_id: "turbo_code"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "94B05"
+    msc_secondary: ["94Bxx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -4462,6 +4604,8 @@ concepts:
       - concept_id: "lossy_compression"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94A29"
+    msc_secondary: ["68P30"]
     difficulty: 3
     estimated_hours: 25
 
@@ -4521,6 +4665,8 @@ concepts:
       - concept_id: "lossy_compression"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94A34"
+    msc_secondary: ["94Axx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -4552,6 +4698,8 @@ concepts:
       - concept_id: "zero_knowledge_proof"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["94A62"]
     difficulty: 4
     estimated_hours: 40
 
@@ -4569,6 +4717,8 @@ concepts:
       - concept_id: "quantum_channel"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "81P45"
+    msc_secondary: ["94A40", "81Pxx"]
     difficulty: 5
     estimated_hours: 50
 
@@ -4621,6 +4771,8 @@ concepts:
       - concept_id: "block_cipher"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["11T71", "14G50"]
     difficulty: 3
     estimated_hours: 30
 
@@ -4658,6 +4810,10 @@ concepts:
       - concept_id: "diffie_hellman"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["11T71", "14G50"]
+    msc_primary: "94A60"
+    msc_secondary: ["11Axx"]
     difficulty: 3
     estimated_hours: 35
 
@@ -4709,6 +4865,8 @@ concepts:
       - concept_id: "ecc_protocols"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["11G20", "14H52"]
     difficulty: 4
     estimated_hours: 45
 
@@ -4726,6 +4884,8 @@ concepts:
       - concept_id: "merkle_tree"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["68P05"]
     difficulty: 3
     estimated_hours: 25
 
@@ -4743,6 +4903,8 @@ concepts:
       - concept_id: "ecdsa"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "94A62"
+    msc_secondary: ["94A60"]
     difficulty: 3
     estimated_hours: 30
 
@@ -4760,6 +4922,8 @@ concepts:
       - concept_id: "hmac"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "94A62"
+    msc_secondary: ["94A60"]
     difficulty: 3
     estimated_hours: 25
 
@@ -4811,6 +4975,8 @@ concepts:
       - concept_id: "fully_homomorphic"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["11T71"]
     difficulty: 5
     estimated_hours: 55
 
@@ -4828,6 +4994,8 @@ concepts:
       - concept_id: "quantum_key_distribution"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "81P94"
+    msc_secondary: ["94A60"]
     difficulty: 4
     estimated_hours: 50
 
@@ -4896,6 +5064,8 @@ concepts:
       - concept_id: "power_analysis"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "94A60"
+    msc_secondary: ["68P25"]
     difficulty: 4
     estimated_hours: 40
 
@@ -4996,6 +5166,8 @@ concepts:
       - concept_id: "sde"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "60H05"
+    msc_secondary: ["60Hxx", "91Gxx"]
     difficulty: 5
     estimated_hours: 45
 
@@ -5047,6 +5219,8 @@ concepts:
       - concept_id: "option_pricing"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "65C05"
+    msc_secondary: ["91G60", "65Cxx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -5067,6 +5241,8 @@ concepts:
       - concept_id: "fundamental_theorem"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "91G20"
+    msc_secondary: ["60Hxx", "91Gxx"]
     difficulty: 4
     estimated_hours: 35
 
@@ -5101,6 +5277,8 @@ concepts:
       - concept_id: "risk_management"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "91G20"
+    msc_secondary: ["91Gxx", "60Hxx"]
     difficulty: 3
     estimated_hours: 25
 
@@ -5135,6 +5313,8 @@ concepts:
       - concept_id: "local_volatility"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "91G20"
+    msc_secondary: ["91Gxx", "60Hxx"]
     difficulty: 4
     estimated_hours: 30
 
@@ -5254,6 +5434,8 @@ concepts:
       - concept_id: "yield_curve"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "91G30"
+    msc_secondary: ["91Gxx", "60Hxx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -5271,6 +5453,8 @@ concepts:
       - concept_id: "cdo_pricing"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "91G40"
+    msc_secondary: ["91Gxx"]
     difficulty: 4
     estimated_hours: 35
 
@@ -5305,6 +5489,8 @@ concepts:
       - concept_id: "stress_testing"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "91G10"
+    msc_secondary: ["91Gxx"]
     difficulty: 4
     estimated_hours: 35
 
@@ -5323,6 +5509,8 @@ concepts:
       - concept_id: "logistic_growth"
         level: "L2"
         relation: "被依赖"
+    msc_primary: "91G70"
+    msc_secondary: ["91Gxx", "62P05"]
     difficulty: 2
     estimated_hours: 25
 
@@ -5357,6 +5545,8 @@ concepts:
       - concept_id: "lotka_volterra"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "92D25"
+    msc_secondary: ["34Cxx", "34Dxx"]
     difficulty: 3
     estimated_hours: 25
 
@@ -5394,6 +5584,8 @@ concepts:
       - concept_id: "epidemic_control"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "92D30"
+    msc_secondary: ["34Cxx", "92Dxx"]
     difficulty: 3
     estimated_hours: 30
 
@@ -5425,6 +5617,8 @@ concepts:
       - concept_id: "turing_pattern"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "35K57"
+    msc_secondary: ["92Cxx", "35Bxx"]
     difficulty: 4
     estimated_hours: 45
 
@@ -5459,6 +5653,8 @@ concepts:
       - concept_id: "replicator_dynamics"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "92D15"
+    msc_secondary: ["91A22", "92Dxx"]
     difficulty: 4
     estimated_hours: 40
 
@@ -5510,6 +5706,8 @@ concepts:
       - concept_id: "maximum_likelihood_phylogeny"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "92D15"
+    msc_secondary: ["92B10", "05C05"]
     difficulty: 3
     estimated_hours: 35
 
@@ -5578,6 +5776,8 @@ concepts:
       - concept_id: "hodgkin_huxley"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "92C20"
+    msc_secondary: ["37N25", "92B20"]
     difficulty: 4
     estimated_hours: 45
 
@@ -5647,6 +5847,8 @@ concepts:
       - concept_id: "finite_difference_pde"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "65M06"
+    msc_secondary: ["65N06", "65Mxx"]
     difficulty: 3
     estimated_hours: 30
 
@@ -5664,6 +5866,8 @@ concepts:
       - concept_id: "fem_implementation"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "65N30"
+    msc_secondary: ["65M60", "65Mxx"]
     difficulty: 4
     estimated_hours: 50
 
@@ -5681,6 +5885,8 @@ concepts:
       - concept_id: "cfd"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "65M08"
+    msc_secondary: ["65N08", "65Mxx"]
     difficulty: 4
     estimated_hours: 45
 
@@ -5698,6 +5904,8 @@ concepts:
       - concept_id: "pseudospectral"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "65M70"
+    msc_secondary: ["65N35", "65Mxx"]
     difficulty: 4
     estimated_hours: 45
 
@@ -5715,6 +5923,8 @@ concepts:
       - concept_id: "sparse_solver"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "65F50"
+    msc_secondary: ["65Fxx", "65Y05"]
     difficulty: 3
     estimated_hours: 25
 
@@ -5735,6 +5945,8 @@ concepts:
       - concept_id: "gauss_seidel"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "65F10"
+    msc_secondary: ["65Fxx"]
     difficulty: 3
     estimated_hours: 30
 
@@ -5752,6 +5964,8 @@ concepts:
       - concept_id: "preconditioned_cg"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "65F10"
+    msc_secondary: ["65Fxx"]
     difficulty: 3
     estimated_hours: 30
 
@@ -5769,6 +5983,8 @@ concepts:
       - concept_id: "algebraic_multigrid"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "65N55"
+    msc_secondary: ["65F10", "65M55"]
     difficulty: 4
     estimated_hours: 45
 
@@ -5786,6 +6002,8 @@ concepts:
       - concept_id: "ilu_preconditioner"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "65F08"
+    msc_secondary: ["65Fxx"]
     difficulty: 4
     estimated_hours: 35
 
@@ -5804,6 +6022,8 @@ concepts:
       - concept_id: "gaussian_quadrature"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "65D30"
+    msc_secondary: ["65Dxx"]
     difficulty: 2
     estimated_hours: 25
 
@@ -5821,6 +6041,8 @@ concepts:
       - concept_id: "runge_kutta"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "65L05"
+    msc_secondary: ["65Lxx"]
     difficulty: 3
     estimated_hours: 35
 
@@ -5855,6 +6077,8 @@ concepts:
       - concept_id: "cfd"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "65M06"
+    msc_secondary: ["65Nxx", "65Mxx"]
     difficulty: 4
     estimated_hours: 50
 
@@ -5889,6 +6113,8 @@ concepts:
       - concept_id: "fft_application"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "65T50"
+    msc_secondary: ["42A38", "65Txx"]
     difficulty: 3
     estimated_hours: 25
 
@@ -5924,6 +6150,8 @@ concepts:
       - concept_id: "schwarz_method"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "65F15"
+    msc_secondary: ["65Fxx"]
     difficulty: 4
     estimated_hours: 45
 
@@ -5976,6 +6204,8 @@ concepts:
       - concept_id: "lagrangian"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "70Fxx"
+    msc_secondary: ["37Jxx"]
     difficulty: 3
     estimated_hours: 40
 
@@ -6010,6 +6240,8 @@ concepts:
       - concept_id: "hamiltonian_system"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "70H05"
+    msc_secondary: ["37Jxx", "70Fxx"]
     difficulty: 4
     estimated_hours: 45
 
@@ -6061,6 +6293,8 @@ concepts:
       - concept_id: "quantum_harmonic"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "81Q05"
+    msc_secondary: ["35J10", "81Qxx"]
     difficulty: 4
     estimated_hours: 45
 
@@ -6078,6 +6312,8 @@ concepts:
       - concept_id: "quantum_field_theory"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "81S40"
+    msc_secondary: ["81Txx", "58D30"]
     difficulty: 5
     estimated_hours: 60
 
@@ -6112,6 +6348,8 @@ concepts:
       - concept_id: "einstein_equation"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "83Cxx"
+    msc_secondary: ["53C50", "83Exx"]
     difficulty: 5
     estimated_hours: 65
 
@@ -6129,6 +6367,8 @@ concepts:
       - concept_id: "phase_transition"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "82Bxx"
+    msc_secondary: ["60K35", "82Cxx"]
     difficulty: 4
     estimated_hours: 50
 
@@ -6163,6 +6403,8 @@ concepts:
       - concept_id: "electrodynamics"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "81T17"
+    msc_secondary: ["81Txx", "82B28"]
     difficulty: 3
     estimated_hours: 40
 
@@ -6248,6 +6490,8 @@ concepts:
       - concept_id: "string_theory"
         level: "L5"
         relation: "被依赖"
+    msc_primary: "81T40"
+    msc_secondary: ["81Rxx", "81Txx"]
     difficulty: 5
     estimated_hours: 65
 
@@ -6317,6 +6561,8 @@ concepts:
       - concept_id: "feature_engineering"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "62Nxx"
+    msc_secondary: ["68T05"]
     difficulty: 2
     estimated_hours: 20
 
@@ -6354,6 +6600,8 @@ concepts:
       - concept_id: "dimension_reduction"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "62H25"
+    msc_secondary: ["62Hxx", "15A18"]
     difficulty: 3
     estimated_hours: 25
 
@@ -6371,6 +6619,8 @@ concepts:
       - concept_id: "svm_kernel"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "68T05"
+    msc_secondary: ["62H30", "90C90"]
     difficulty: 3
     estimated_hours: 35
 
@@ -6388,6 +6638,8 @@ concepts:
       - concept_id: "random_forest"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "68T05"
+    msc_secondary: ["62H30", "62-07"]
     difficulty: 2
     estimated_hours: 25
 
@@ -6422,6 +6674,8 @@ concepts:
       - concept_id: "xgboost"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "68T05"
+    msc_secondary: ["62H30", "62-07"]
     difficulty: 3
     estimated_hours: 35
 
@@ -6442,6 +6696,8 @@ concepts:
       - concept_id: "backpropagation"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "68T07"
+    msc_secondary: ["92B20", "68T05"]
     difficulty: 3
     estimated_hours: 40
 
@@ -6480,6 +6736,8 @@ concepts:
       - concept_id: "rnn"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "68T07"
+    msc_secondary: ["68T05", "94A08"]
     difficulty: 4
     estimated_hours: 50
 
@@ -6531,6 +6789,8 @@ concepts:
       - concept_id: "attention"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "68T07"
+    msc_secondary: ["68T05", "93C57"]
     difficulty: 4
     estimated_hours: 40
 
@@ -6565,6 +6825,8 @@ concepts:
       - concept_id: "bert"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "68T50"
+    msc_secondary: ["68T07", "68T05"]
     difficulty: 4
     estimated_hours: 45
 
@@ -6650,6 +6912,8 @@ concepts:
       - concept_id: "conditional_gan"
         level: "L4"
         relation: "被依赖"
+    msc_primary: "68T07"
+    msc_secondary: ["68T05", "94A08"]
     difficulty: 4
     estimated_hours: 50
 
@@ -6667,6 +6931,8 @@ concepts:
       - concept_id: "q_learning"
         level: "L3"
         relation: "被依赖"
+    msc_primary: "68T05"
+    msc_secondary: ["93E35", "91A80"]
     difficulty: 4
     estimated_hours: 50
 

@@ -40,9 +40,7 @@
 import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
 import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
 import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
-import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
 import FormalMath.Mathlib.Analysis.Fourier.FourierTransform
-import FormalMath.Mathlib.MeasureTheory.Covering.VitaliFamily
 
 namespace HarmonicAnalysis
 

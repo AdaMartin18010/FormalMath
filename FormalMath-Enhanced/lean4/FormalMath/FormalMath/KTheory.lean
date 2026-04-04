@@ -30,7 +30,6 @@ Atiyah和Hirzebruch将其推广到拓扑空间。
 import FormalMath.Mathlib.Topology.VectorBundle.Basic
 import FormalMath.Mathlib.AlgebraicTopology.CechNerve
 import FormalMath.Mathlib.LinearAlgebra.CliffordAlgebra.Basic
-import FormalMath.Mathlib.Topology.Category.TopCommRing
 
 namespace KTheory
 
