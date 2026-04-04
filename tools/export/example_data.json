@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated_date": "2024-04-04T10:00:00",
+    "source": "FormalMath Project",
+    "description": "示例知识图谱数据"
+  },
+  "nodes": [
+    {
+      "id": "algebra_001",
+      "name": "线性代数基础",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "description": "向量空间、矩阵运算、线性变换",
+      "msc_code": "15-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "algebra_002",
+      "name": "群论",
+      "category": "代数学",
+      "difficulty": 4,
+      "estimated_hours": 30,
+      "description": "群的定义、子群、同态",
+      "msc_code": "20-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "analysis_001",
+      "name": "微积分基础",
+      "category": "分析学",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "description": "极限、导数、积分",
+      "msc_code": "26-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "analysis_002",
+      "name": "实变函数",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 35,
+      "description": "勒贝格积分、测度论",
+      "msc_code": "28-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "geometry_001",
+      "name": "欧几里得几何",
+      "category": "几何拓扑",
+      "difficulty": 1,
+      "estimated_hours": 10,
+      "description": "平面几何、立体几何",
+      "msc_code": "51-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "geometry_002",
+      "name": "拓扑学基础",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 40,
+      "description": "拓扑空间、连续性、连通性",
+      "msc_code": "54-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "probability_001",
+      "name": "概率论基础",
+      "category": "概率统计",
+      "difficulty": 2,
+      "estimated_hours": 18,
+      "description": "随机变量、概率分布",
+      "msc_code": "60-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "statistics_001",
+      "name": "数理统计",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "description": "参数估计、假设检验",
+      "msc_code": "62-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "number_001",
+      "name": "初等数论",
+      "category": "数论逻辑",
+      "difficulty": 2,
+      "estimated_hours": 15,
+      "description": "整除性、同余、素数",
+      "msc_code": "11-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "logic_001",
+      "name": "数理逻辑",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 22,
+      "description": "命题逻辑、谓词逻辑",
+      "msc_code": "03-01",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "optimization_001",
+      "name": "线性规划",
+      "category": "最优化",
+      "difficulty": 3,
+      "estimated_hours": 20,
+      "description": "单纯形法、对偶理论",
+      "msc_code": "90C05",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "crypto_001",
+      "name": "密码学基础",
+      "category": "密码学",
+      "difficulty": 3,
+      "estimated_hours": 28,
+      "description": "对称加密、公钥加密",
+      "msc_code": "94A60",
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": "algebra_001",
+      "target": "algebra_002",
+      "relation_type": "先修",
+      "level": "L1"
+    },
+    {
+      "source": "analysis_001",
+      "target": "analysis_002",
+      "relation_type": "先修",
+      "level": "L1"
+    },
+    {
+      "source": "algebra_001",
+      "target": "analysis_002",
+      "relation_type": "相关",
+      "level": "L2"
+    },
+    {
+      "source": "geometry_001",
+      "target": "geometry_002",
+      "relation_type": "先修",
+      "level": "L1"
+    },
+    {
+      "source": "probability_001",
+      "target": "statistics_001",
+      "relation_type": "先修",
+      "level": "L1"
+    },
+    {
+      "source": "analysis_001",
+      "target": "probability_001",
+      "relation_type": "相关",
+      "level": "L2"
+    },
+    {
+      "source": "number_001",
+      "target": "crypto_001",
+      "relation_type": "相关",
+      "level": "L2"
+    },
+    {
+      "source": "algebra_001",
+      "target": "optimization_001",
+      "relation_type": "相关",
+      "level": "L2"
+    },
+    {
+      "source": "logic_001",
+      "target": "crypto_001",
+      "relation_type": "相关",
+      "level": "L3"
+    },
+    {
+      "source": "analysis_001",
+      "target": "optimization_001",
+      "relation_type": "相关",
+      "level": "L2"
+    }
+  ]
+}

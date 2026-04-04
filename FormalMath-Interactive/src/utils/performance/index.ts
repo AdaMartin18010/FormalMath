@@ -8,7 +8,27 @@ export {
 } from './performanceMonitor';
 
 export { default as cache, createCache } from './cache';
-export { lazyLoad, prefetchComponent, preloadComponent } from './lazyLoad';
+export { 
+  lazyLoad, 
+  prefetchComponent, 
+  preloadComponent,
+  setupRoutePrefetch,
+  useImageLazyLoad,
+  dynamicImport,
+  preloadResources,
+} from './lazyLoad';
+
+export {
+  dedupeRequest,
+  cachedRequest,
+  smartRetry,
+  debounceRequest,
+  RequestBatcher,
+  RequestQueue,
+  optimisticUpdate,
+  createOptimizedClient,
+  optimizedClient,
+} from './apiOptimizer';
 
 // 节流函数
 export function throttle<T extends (...args: unknown[]) => unknown>(
@@ -178,3 +198,176 @@ export function observeLongTasks(callback: (duration: number) => void): () => vo
     return () => {};
   }
 }
+
+// Web Worker 包装器
+export class WorkerPool {
+  private workers: Worker[] = [];
+  private queue: Array<{
+    id: string;
+    data: unknown;
+    resolve: (value: unknown) => void;
+    reject: (reason: unknown) => void;
+  }> = [];
+  private taskMap = new Map<string, {
+    resolve: (value: unknown) => void;
+    reject: (reason: unknown) => void;
+  }>();
+  
+  constructor(
+    private workerScript: string,
+    private poolSize = navigator.hardwareConcurrency || 4
+  ) {
+    this.init();
+  }
+  
+  private init(): void {
+    for (let i = 0; i < this.poolSize; i++) {
+      const worker = new Worker(this.workerScript);
+      worker.onmessage = (e) => this.handleMessage(e);
+      worker.onerror = (e) => this.handleError(e);
+      this.workers.push(worker);
+    }
+  }
+  
+  private handleMessage(e: MessageEvent): void {
+    const { id, result, error } = e.data;
+    const handlers = this.taskMap.get(id);
+    
+    if (handlers) {
+      if (error) {
+        handlers.reject(new Error(error));
+      } else {
+        handlers.resolve(result);
+      }
+      this.taskMap.delete(id);
+    }
+    
+    this.processQueue();
+  }
+  
+  private handleError(e: ErrorEvent): void {
+    console.error('Worker error:', e);
+  }
+  
+  private processQueue(): void {
+    if (this.queue.length === 0) return;
+    
+    const availableWorker = this.workers.find(w => !this.isWorkerBusy(w));
+    if (!availableWorker) return;
+    
+    const task = this.queue.shift();
+    if (task) {
+      this.taskMap.set(task.id, {
+        resolve: task.resolve,
+        reject: task.reject,
+      });
+      availableWorker.postMessage({ id: task.id, data: task.data });
+    }
+  }
+  
+  private isWorkerBusy(worker: Worker): boolean {
+    // 简化实现，实际应该跟踪worker状态
+    return false;
+  }
+  
+  execute<T>(data: unknown): Promise<T> {
+    return new Promise((resolve, reject) => {
+      const id = Math.random().toString(36).substring(7);
+      this.queue.push({
+        id,
+        data,
+        resolve: resolve as (value: unknown) => void,
+        reject,
+      });
+      this.processQueue();
+    });
+  }
+  
+  terminate(): void {
+    this.workers.forEach(w => w.terminate());
+    this.workers = [];
+    this.queue = [];
+    this.taskMap.forEach((handlers) => {
+      handlers.reject(new Error('Worker pool terminated'));
+    });
+    this.taskMap.clear();
+  }
+}
+
+// 资源加载优先级管理
+export function setResourcePriority(
+  element: HTMLImageElement | HTMLScriptElement | HTMLLinkElement,
+  priority: 'high' | 'low' | 'auto'
+): void {
+  if ('fetchPriority' in element) {
+    (element as any).fetchPriority = priority;
+  }
+}
+
+// 首屏加载优化
+export function optimizeFirstPaint(): void {
+  // 延迟非关键资源
+  const deferNonCritical = () => {
+    // 延迟加载非关键图片
+    document.querySelectorAll('img[data-src]').forEach((img) => {
+      const image = img as HTMLImageElement;
+      scheduleIdleCallback(() => {
+        image.src = image.dataset.src!;
+        image.removeAttribute('data-src');
+      });
+    });
+    
+    // 延迟加载非关键脚本
+    document.querySelectorAll('script[data-src]').forEach((script) => {
+      scheduleIdleCallback(() => {
+        const newScript = document.createElement('script');
+        newScript.src = script.getAttribute('data-src')!;
+        document.body.appendChild(newScript);
+        script.remove();
+      });
+    });
+  };
+  
+  if (document.readyState === 'complete') {
+    deferNonCritical();
+  } else {
+    window.addEventListener('load', deferNonCritical);
+  }
+}
+
+// 性能标记
+export function markPerformance(name: string): void {
+  if ('performance' in window && 'mark' in performance) {
+    performance.mark(name);
+  }
+}
+
+export function measurePerformance(
+  name: string,
+  startMark: string,
+  endMark: string
+): void {
+  if ('performance' in window && 'measure' in performance) {
+    try {
+      performance.measure(name, startMark, endMark);
+    } catch (e) {
+      console.warn(`Failed to measure ${name}:`, e);
+    }
+  }
+}
+
+// 导出所有性能工具
+export default {
+  throttle,
+  debounce,
+  rafThrottle,
+  scheduleIdleCallback,
+  batchProcess,
+  calculateVirtualList,
+  getMemoryUsage,
+  observeLongTasks,
+  setResourcePriority,
+  optimizeFirstPaint,
+  markPerformance,
+  measurePerformance,
+};

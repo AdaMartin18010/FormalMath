@@ -1,0 +1,89 @@
+# ============================================
+# FormalMath - SSL/TLS 证书资源配置
+# 证书将由cert-manager自动申请和续期
+# ============================================
+
+# 主域名证书
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: formalmath-main-cert
+  namespace: formalmath-prod
+  labels:
+    app.kubernetes.io/name: formalmath
+    app.kubernetes.io/component: tls
+spec:
+  # 证书Secret名称
+  secretName: formalmath-tls-secret
+  # 证书颁发者
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  # DNS名称列表
+  dnsNames:
+    - formalmath.org
+    - www.formalmath.org
+    - api.formalmath.org
+  # 证书有效期（默认90天，自动续期）
+  duration: 2160h  # 90天
+  # 续期提前期（30天）
+  renewBefore: 720h  # 30天
+  # 私钥配置
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+  # 用途
+  usages:
+    - digital signature
+    - key encipherment
+  # 存储配置
+  secretTemplate:
+    annotations:
+      reloader.stakater.com/auto: "true"
+---
+# 子域名证书（通配符）
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: formalmath-wildcard-cert
+  namespace: formalmath-prod
+  labels:
+    app.kubernetes.io/name: formalmath
+    app.kubernetes.io/component: tls
+spec:
+  secretName: formalmath-wildcard-tls-secret
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  dnsNames:
+    - "*.formalmath.org"
+  duration: 2160h
+  renewBefore: 720h
+  privateKey:
+    algorithm: RSA
+    size: 2048
+---
+# 内部服务证书（自签名）
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: formalmath-internal-cert
+  namespace: formalmath-prod
+  labels:
+    app.kubernetes.io/name: formalmath
+    app.kubernetes.io/component: tls-internal
+spec:
+  secretName: formalmath-internal-tls-secret
+  issuerRef:
+    name: selfsigned-issuer
+    kind: ClusterIssuer
+  dnsNames:
+    - backend.formalmath-prod.svc.cluster.local
+    - redis.formalmath-prod.svc.cluster.local
+    - postgres.formalmath-prod.svc.cluster.local
+  duration: 8760h  # 1年
+  renewBefore: 720h  # 30天
+  privateKey:
+    algorithm: ECDSA
+    size: 256

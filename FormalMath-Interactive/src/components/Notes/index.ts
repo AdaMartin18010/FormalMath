@@ -7,6 +7,8 @@ export { NoteAIAssistant } from './NoteAIAssistant';
 export { NoteShare } from './NoteShare';
 export { NoteConceptGraph } from './NoteConceptGraph';
 export { NotesPage } from './NotesPage';
+export { NoteTemplates, defaultTemplates } from './NoteTemplates';
+export { LaTeXToolbar } from './LaTeXToolbar';
 
 // 默认导出
 export { default } from './NotesPage';

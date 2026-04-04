@@ -9,7 +9,7 @@ groups:
       - alert: APIHighErrorRate
         expr: |
           (
-            sum(rate(http_requests_total{status=~"5..'}[5m])) by (service)
+            sum(rate(http_requests_total{status=~"5.."}[5m])) by (service)
             /
             sum(rate(http_requests_total[5m])) by (service)
           ) > 0.05
@@ -19,8 +19,8 @@ groups:
           team: backend
         annotations:
           summary: "API {{ $labels.service }} 错误率过高"
-          description: '服务 {{ $labels.service }} 的错误率超过 5%，当前值: {{ $value | humanizePercentage }}"
-          runbook_url: "https://wiki.internal/formalmath/runbooks/api-high-error-rate'
+          description: "服务 {{ $labels.service }} 的错误率超过 5%，当前值: {{ $value | humanizePercentage }}"
+          runbook_url: "https://wiki.internal/formalmath/runbooks/api-high-error-rate"
 
       # API 响应时间告警
       - alert: APIHighLatency
@@ -34,18 +34,18 @@ groups:
           team: backend
         annotations:
           summary: "API {{ $labels.service }} 响应延迟过高"
-          description: '服务 {{ $labels.service }} 的 P95 响应时间超过 1s，当前值: {{ $value | humanizeDuration }}"
+          description: "服务 {{ $labels.service }} 的 P95 响应时间超过 1s，当前值: {{ $value | humanizeDuration }}"
 
       # API 完全不可用告警
       - alert: APIDown
-        expr: up{job=~"formalmath-api|adaptive-learning-backend|cognitive-diagnosis|evaluation-system'} == 0
+        expr: up{job=~"formalmath-api|adaptive-learning-backend|cognitive-diagnosis|evaluation-system"} == 0
         for: 1m
         labels:
           severity: critical
           team: backend
         annotations:
           summary: "API 服务 {{ $labels.instance }} 宕机"
-          description: '服务 {{ $labels.job }} ({{ $labels.instance }}) 已经连续 1 分钟无响应"
+          description: "服务 {{ $labels.job }} ({{ $labels.instance }}) 已经连续 1 分钟无响应"
 
   - name: api_performance
     interval: 30s
@@ -63,7 +63,7 @@ groups:
           severity: warning
           team: backend
         annotations:
-          summary: "API {{ $labels.service }} 流量骤降'
+          summary: "API {{ $labels.service }} 流量骤降"
           description: "服务 {{ $labels.service }} 的请求量降至平均值的 30% 以下"
 
       # 数据库连接池告警
@@ -75,8 +75,8 @@ groups:
           severity: warning
           team: backend
         annotations:
-          summary: '数据库连接池使用率过高"
-          description: "数据库连接池使用率达到 {{ $value | humanizePercentage }}'
+          summary: "数据库连接池使用率过高"
+          description: "数据库连接池使用率达到 {{ $value | humanizePercentage }}"
 
       # Redis 连接告警
       - alert: RedisConnectionFailed
@@ -87,7 +87,7 @@ groups:
           team: backend
         annotations:
           summary: "Redis 连接失败"
-          description: '无法连接到 Redis 服务器"
+          description: "无法连接到 Redis 服务器"
 
   - name: api_security
     interval: 30s
@@ -101,7 +101,7 @@ groups:
           severity: warning
           team: security
         annotations:
-          summary: "来自 {{ $labels.remote_ip }} 的高频请求'
+          summary: "来自 {{ $labels.remote_ip }} 的高频请求"
           description: "IP {{ $labels.remote_ip }} 的请求频率异常高"
 
       # 401/403 错误率告警（认证失败）
@@ -117,5 +117,5 @@ groups:
           severity: warning
           team: security
         annotations:
-          summary: "认证失败率过高'
+          summary: "认证失败率过高"
           description: "认证失败率达到 {{ $value | humanizePercentage }}"

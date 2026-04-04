@@ -9,6 +9,8 @@ import 'katex/dist/katex.min.css';
 import { useNoteStore } from '../../stores/noteStore';
 import { aiAssistant, autoSaveNote, updateNote } from '../../services/noteService';
 import type { NoteAIChatMessage, NoteAIRequest } from '../../types/notes';
+import { LaTeXToolbar } from './LaTeXToolbar';
+import { NoteTemplates, defaultTemplates } from './NoteTemplates';
 import {
   Save,
   Eye,
@@ -38,6 +40,12 @@ import {
   Loader2,
   Check,
   AlertCircle,
+  Calculator,
+  Layout,
+  FileText,
+  X,
+  Sigma,
+  FunctionSquare,
 } from 'lucide-react';
 
 interface NoteEditorProps {
@@ -88,6 +96,8 @@ export const NoteEditor: React.FC<NoteEditorProps> = ({ noteId, className = '' }
   const [aiChatInput, setAiChatInput] = useState('');
   const [localChatHistory, setLocalChatHistory] = useState<NoteAIChatMessage[]>([]);
   const [isAIProcessing, setIsAIProcessing] = useState(false);
+  const [showLaTeXToolbar, setShowLaTeXToolbar] = useState(false);
+  const [showTemplates, setShowTemplates] = useState(false);
   
   const {
     editor,
@@ -97,12 +107,13 @@ export const NoteEditor: React.FC<NoteEditorProps> = ({ noteId, className = '' }
     setEditorSaving,
     setEditorViewMode,
     setSelectedText,
+    addNote,
   } = useNoteStore();
 
   const { currentNote, isDirty, isSaving, viewMode, autoSaveEnabled, selectedText } = editor;
 
   // 自动保存定时器
-  const autoSaveTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const autoSaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // 格式化时间
   const formatTime = useCallback((date: string) => {
@@ -146,7 +157,44 @@ export const NoteEditor: React.FC<NoteEditorProps> = ({ noteId, className = '' }
     quote: () => insertMarkdown('\n> '),
     heading1: () => insertMarkdown('\n# '),
     heading2: () => insertMarkdown('\n## '),
+    inlineMath: () => insertMarkdown('$', '$'),
+    blockMath: () => insertMarkdown('$$\n', '\n$$'),
   };
+
+  // 插入LaTeX公式
+  const insertLaTeX = useCallback((latex: string) => {
+    const textarea = textareaRef.current;
+    if (!textarea) return;
+
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const text = currentNote?.content || '';
+    
+    // 检查是否需要行内或块级公式
+    const isBlock = latex.includes('\\begin') || latex.includes('\\frac') || latex.includes('\\sum') || latex.includes('\\int');
+    const wrapper = isBlock ? '$$' : '$';
+    
+    const newContent = text.substring(0, start) + wrapper + latex + wrapper + text.substring(end);
+    updateEditorContent(newContent);
+    
+    setTimeout(() => {
+      textarea.focus();
+      const newCursorPos = start + wrapper.length + latex.length + wrapper.length;
+      textarea.setSelectionRange(newCursorPos, newCursorPos);
+    }, 0);
+  }, [currentNote?.content, updateEditorContent]);
+
+  // 应用模板
+  const handleApplyTemplate = useCallback((template: any) => {
+    if (!currentNote) return;
+    
+    if (template.id === 'blank') {
+      updateEditorContent('');
+    } else {
+      updateEditorContent(template.content);
+    }
+    setShowTemplates(false);
+  }, [currentNote, updateEditorContent]);
 
   // 保存笔记
   const handleSave = useCallback(async () => {
@@ -410,6 +458,17 @@ export const NoteEditor: React.FC<NoteEditorProps> = ({ noteId, className = '' }
             label="图片"
             onClick={toolbarActions.image}
           />
+          <ToolbarDivider />
+          <ToolbarButton
+            icon={<Sigma size={18} />}
+            label="行内公式"
+            onClick={toolbarActions.inlineMath}
+          />
+          <ToolbarButton
+            icon={<FunctionSquare size={18} />}
+            label="公式块"
+            onClick={toolbarActions.blockMath}
+          />
         </div>
 
         {/* 右侧控制 */}
@@ -437,6 +496,21 @@ export const NoteEditor: React.FC<NoteEditorProps> = ({ noteId, className = '' }
           </div>
 
           <ToolbarDivider />
+
+          {/* 模板按钮 */}
+          <ToolbarButton
+            icon={<Layout size={18} />}
+            label="模板"
+            onClick={() => setShowTemplates(true)}
+          />
+
+          {/* LaTeX工具栏按钮 */}
+          <ToolbarButton
+            icon={<Calculator size={18} />}
+            label="LaTeX公式"
+            onClick={() => setShowLaTeXToolbar(!showLaTeXToolbar)}
+            active={showLaTeXToolbar}
+          />
 
           {/* AI助手按钮 */}
           <ToolbarButton
@@ -558,6 +632,13 @@ export const NoteEditor: React.FC<NoteEditorProps> = ({ noteId, className = '' }
           </div>
         )}
 
+        {/* LaTeX工具栏 */}
+        {showLaTeXToolbar && (
+          <div className="absolute top-16 right-4 z-10 w-96">
+            <LaTeXToolbar onInsert={insertLaTeX} />
+          </div>
+        )}
+
         {/* AI助手侧边栏 */}
         {showAIAssistant && (
           <div className="w-80 border-l border-gray-200 bg-gray-50 flex flex-col">
@@ -670,6 +751,17 @@ export const NoteEditor: React.FC<NoteEditorProps> = ({ noteId, className = '' }
           </div>
         )}
       </div>
+
+      {/* 模板选择弹窗 */}
+      {showTemplates && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <NoteTemplates
+            onSelectTemplate={handleApplyTemplate}
+            onClose={() => setShowTemplates(false)}
+            className="w-[800px] max-h-[80vh]"
+          />
+        </div>
+      )}
     </div>
   );
 };

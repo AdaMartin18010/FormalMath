@@ -1,0 +1,19 @@
+# FormalMath 知识图谱导出功能依赖
+# 基础依赖（必须）
+pyyaml>=6.0
+
+# PDF导出依赖（推荐）
+reportlab>=4.0.0
+weasyprint>=60.0
+
+# 图片导出依赖（推荐）
+Pillow>=10.0.0
+cairosvg>=2.7.0
+pycairo>=1.24.0
+
+# 高级PDF导出（可选）
+playwright>=1.40.0
+
+# 开发依赖
+pytest>=7.4.0
+black>=23.0.0

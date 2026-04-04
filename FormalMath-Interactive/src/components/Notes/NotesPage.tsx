@@ -77,7 +77,7 @@ export const NotesPage: React.FC = () => {
         if (notesRes.success) setNotes(notesRes.data || []);
         if (tagsRes.success) setTags(tagsRes.data || []);
         if (foldersRes.success) setFolders(foldersRes.data || []);
-        if (statsRes.success) setStatistics(statsRes.data);
+        if (statsRes.success && statsRes.data) setStatistics(statsRes.data);
       } catch (error) {
         console.error('Failed to load notes data:', error);
       } finally {

@@ -74,7 +74,7 @@ export const NoteSearch: React.FC<NoteSearchProps> = ({
   const [showTagManager, setShowTagManager] = useState(false);
   const [newTagName, setNewTagName] = useState('');
   const [newTagColor, setNewTagColor] = useState('#3B82F6');
-  const searchTimeoutRef = useRef<NodeJS.Timeout>();
+  const searchTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // 预设颜色
   const presetColors = [

@@ -1,0 +1,105 @@
+# ============================================
+# FormalMath - 负载测试环境配置
+# 用于验证1000并发用户支持能力
+# ============================================
+
+version: '3.8'
+
+services:
+  # Locust Master - 负载测试主控
+  locust-master:
+    image: locustio/locust:latest
+    container_name: formalmath-locust-master
+    ports:
+      - "8089:8089"  # Web UI
+    volumes:
+      - ./load_test.py:/mnt/locust/locustfile.py:ro
+      - ./reports:/mnt/locust/reports
+    command: >
+      locust 
+      -f /mnt/locust/locustfile.py
+      --master
+      --host=http://nginx
+      --web-host=0.0.0.0
+      --web-port=8089
+      --csv=/mnt/locust/reports/load_test
+      --html=/mnt/locust/reports/report.html
+    networks:
+      - formalmath-network
+    depends_on:
+      - nginx
+
+  # Locust Worker - 负载测试工作节点
+  locust-worker:
+    image: locustio/locust:latest
+    deploy:
+      replicas: 4
+    volumes:
+      - ./load_test.py:/mnt/locust/locustfile.py:ro
+    command: >
+      locust 
+      -f /mnt/locust/locustfile.py
+      --worker
+      --master-host=locust-master
+    networks:
+      - formalmath-network
+    depends_on:
+      - locust-master
+    environment:
+      - LOCUST_MASTER_HOST=locust-master
+
+  # Prometheus - 监控负载测试指标
+  prometheus-load-test:
+    image: prom/prometheus:latest
+    container_name: formalmath-prometheus-loadtest
+    volumes:
+      - ./prometheus-loadtest.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-loadtest-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=1d'
+    networks:
+      - formalmath-network
+
+  # Grafana - 负载测试可视化
+  grafana-load-test:
+    image: grafana/grafana:latest
+    container_name: formalmath-grafana-loadtest
+    ports:
+      - "3010:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana-loadtest-data:/var/lib/grafana
+      - ./grafana-dashboards:/etc/grafana/provisioning/dashboards:ro
+    networks:
+      - formalmath-network
+    depends_on:
+      - prometheus-load-test
+
+  # 性能监控 - cAdvisor
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: formalmath-cadvisor
+    privileged: true
+    devices:
+      - /dev/kmsg:/dev/kmsg
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /etc/machine-id:/etc/machine-id:ro
+    networks:
+      - formalmath-network
+
+networks:
+  formalmath-network:
+    external: true
+
+volumes:
+  prometheus-loadtest-data:
+  grafana-loadtest-data:

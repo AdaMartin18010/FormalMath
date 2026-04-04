@@ -16,9 +16,10 @@ import type {
   NoteAIResponse,
   NoteShareSettings,
   NoteComment,
-  ApiResponse,
   NoteAttachment,
+  NoteConceptLink,
 } from '../types/notes';
+import type { ApiResponse } from '../types';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
@@ -367,7 +368,7 @@ export const aiAssistant = async (request: NoteAIRequest): Promise<ApiResponse<N
 
 export const suggestConceptLinks = async (
   noteId: string
-): Promise<ApiResponse<Note['aiAnalysis']['conceptLinks']>> => {
+): Promise<ApiResponse<NoteConceptLink[]>> => {
   try {
     const response = await api.get(`/${noteId}/suggest-links`);
     return response.data;
@@ -585,7 +586,7 @@ export const deleteAttachment = async (
 export const linkNoteToConcept = async (
   noteId: string,
   conceptId: string,
-  relationType: Note['aiAnalysis']['conceptLinks'][0]['relationType']
+  relationType: NoteConceptLink['relationType']
 ): Promise<ApiResponse<void>> => {
   try {
     const response = await api.post(`/${noteId}/concepts`, { conceptId, relationType });

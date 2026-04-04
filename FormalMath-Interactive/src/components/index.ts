@@ -83,6 +83,20 @@ export {
   SEOHead,
 } from './SEO';
 
+// 笔记系统组件
+export {
+  NoteEditor,
+  NoteList,
+  NoteSearch,
+  NoteAIAssistant,
+  NoteShare,
+  NoteConceptGraph,
+  NotesPage,
+  NoteTemplates,
+  defaultTemplates,
+  LaTeXToolbar,
+} from './Notes';
+
 // 视频播放器组件
 export {
   VideoPlayer,

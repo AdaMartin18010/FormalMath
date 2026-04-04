@@ -34,13 +34,13 @@
 证明以详细框架+数学注释呈现。
 -/
 
-import FormalMath.Mathlib.Geometry.Manifold.DifferentialForm
-import FormalMath.Mathlib.Geometry.Manifold.Morse.Basic
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
+import Mathlib.Geometry.Manifold.DifferentialForm
+import Mathlib.Geometry.Manifold.Morse.Basic
+import Mathlib.Analysis.InnerProductSpace.PiL2
 
 namespace SymplecticGeometry
 
-open Manifold DifferentialForm
+open Manifold
 
 variable {M : Type*} [TopologicalSpace M] {n : ℕ}
   [ChartedSpace (EuclideanSpace ℝ (Fin (2 * n))) M]
@@ -65,11 +65,11 @@ p是动量，q是位置。
 -/
 structure SymplecticForm where
   /-- 辛形式作为2-形式 -/
-  toForm : DifferentialForm M 2 ℝ
+  toForm : Ω^2(M; ℝ)
   /-- 闭条件: dω = 0 -/
-  h_closed : ExteriorDerivative toForm = 0
+  is_closed : d toForm = 0
   /-- 非退化条件: 在每点给出非退化双线性形式 -/
-  h_nondegenerate : ∀ x : M, NondegenerateBilinearForm (toForm x)
+  is_nondegenerate : ∀ x : M, NondegenerateBilinearForm (toForm x)
 
 /-
 ## 辛流形 (Symplectic Manifold)
@@ -87,7 +87,7 @@ structure SymplecticForm where
 - 辛流形: 局部像(ℝ^{2n}, ω_0)，有辛同胚
 - Darboux定理表明辛流形没有局部不变量（与复流形不同）
 -/
-class SymplecticManifold : Type _ where
+class SymplecticManifold : Prop where
   /-- 辛形式 -/
   form : SymplecticForm M
 
@@ -116,10 +116,11 @@ class SymplecticManifold : Type _ where
 - 辛拓扑关注整体不变量（如Gromov-Witten不变量）
 -/
 theorem darboux_theorem [SymplecticManifold M] (x : M) :
-    let ω := SymplecticManifold.form
-    ∃ (U : Opens M) (hU : x ∈ U) (φ : PartialHomeomorph M (EuclideanSpace ℝ (Fin (2 * n)))),
-      ∀ y ∈ U, (PullbackDifferentialForm φ ω.toForm) y = 
-        ∑ i : Fin n, differential (fun y ↦ y (n + i)) y ∧ differential (fun y ↦ y i) y := by
+    ∃ (U : Opens M) (hU : x ∈ U) 
+      (φ : PartialHomeomorph M (EuclideanSpace ℝ (Fin (2 * n)))),
+      ∀ y ∈ U, 
+        (φ pullback (SymplecticManifold.form (M := M)).toForm) y = 
+        ∑ i : Fin n, (d (fun y ↦ y (n + i))) y ∧ (d (fun y ↦ y i)) y := by
   /- 证明框架（Moser技巧）:
      
      【步骤1】线性化
@@ -157,7 +158,9 @@ theorem darboux_theorem [SymplecticManifold M] (x : M) :
      解ODE dφ_t/dt = X_t(φ_t)，φ_0 = Id
      则φ_1*ω = ω_0，即φ_1是所需的Darboux坐标
   -/
-  sorry -- Moser技巧需要ODE理论和Poincaré引理
+  /- Moser技巧需要ODE理论和Poincaré引理。
+     这是辛几何最基本的定理之一。 -/
+  sorry -- 需要Moser技巧和ODE理论
 
 /-
 ## 辛体积 (Symplectic Volume)
@@ -177,9 +180,9 @@ theorem darboux_theorem [SymplecticManifold M] (x : M) :
 经典力学: 辛体积对应于相空间中的"态数"，
 在统计力学中尤为重要（Liouville测度）。
 -/
-def SymplecticVolume [SymplecticManifold M] : DifferentialForm M (2 * n) ℝ :=
-  let ω := SymplecticManifold.form.toForm
-  (ω ^ n) / Nat.factorial n
+def SymplecticVolume [SymplecticManifold M] : Ω^(2*n)(M; ℝ) :=
+  let ω := SymplecticManifold.form (M := M) |>.toForm
+  (ω ^ n) / n.factorial
 
 /-
 ## Liouville定理
@@ -212,7 +215,9 @@ theorem liouville_theorem [SymplecticManifold M] (H : M → ℝ)
      
      3. 因此辛体积形式在Hamilton流下不变
   -/
-  sorry -- 需要Lie导数的性质
+  /- 这是经典力学的基本定理。
+     相空间体积守恒是统计力学的基础。 -/
+  sorry -- 需要Lie导数的Leibniz法则
 
 /-
 ## Hamilton向量场 (Hamiltonian Vector Field)
@@ -236,7 +241,7 @@ i_{X_H}ω = dH
 -/
 def HamiltonianVectorField [SymplecticManifold M] (H : M → ℝ) :
     VectorField M :=
-  Classical.choose (SymplecticManifold.form.h_nondegenerate H)
+  Classical.choose (SymplecticManifold.form.is_nondegenerate H)
 
 /-- Hamilton向量场的记号 -/
 notation:max "X_" H => HamiltonianVectorField H
@@ -311,7 +316,9 @@ theorem poisson_jacobi [SymplecticManifold M] (f g h : M → ℝ) :
         X_f(ω(X_g, X_h)) + 循环 = ω([X_f,X_g], X_h) + 循环
      4. 整理即得Jacobi恒等式
   -/
-  sorry -- 需要外微分的详细计算
+  /- Jacobi恒等式使C^∞(M)成为Lie代数，
+     这是经典力学的深层结构。 -/
+  sorry -- 需要外微分和Lie括号的详细计算
 
 /-
 ## 动量映射 (Momentum Map)
@@ -344,7 +351,9 @@ def MomentumMap [SymplecticManifold M] (G : Type*) [LieGroup G]
      4. 在单连通情形，存在H_ξ使得dH_ξ = i_{ξ_M}ω
      5. 定义μ(x)(ξ) = H_ξ(x)
   -/
-  sorry -- 需要上同调理论
+  /- 动量映射是辛几何中对称性的关键表述。
+     需要上同调理论构造。 -/
+  sorry -- 需要Lie群作用和de Rham上同调
 
 /-
 ## Noether定理（辛版本）
@@ -379,7 +388,9 @@ theorem noether_theorem_symplectic [SymplecticManifold M] (G : Type*)
      6. = -ξ_M(H)（由Hamilton向量场定义）
      7. = 0（因为H在G作用下不变）
   -/
-  sorry -- 需要Lie群作用的性质
+  /- 这是Noether定理的辛几何版本，
+     "对称性给出守恒量"的精确表述。 -/
+  sorry -- 需要Lie群作用的不变性
 
 /-
 ## Lagrangian子流形 (Lagrangian Submanifold)
@@ -399,8 +410,8 @@ theorem noether_theorem_symplectic [SymplecticManifold M] (G : Type*)
 - 镜像对称: SYZ猜想中Lagrangian纤维化
 -/
 def IsLagrangianSubmanifold [SymplecticManifold M] (L : Submanifold M n) : Prop :=
-  ∀ x ∈ L, ∀ v w ∈ TangentSpace L x, 
-    SymplecticManifold.form.toForm x v w = 0
+  ∀ x ∈ L, ∀ v w : TangentSpace L x, 
+    SymplecticManifold.form.toForm x (tangentInclusion v) (tangentInclusion w) = 0
 
 /-
 ## 余切丛的典范辛结构
@@ -424,21 +435,25 @@ def IsLagrangianSubmanifold [SymplecticManifold M] (L : Submanifold M n) : Prop 
 因为Darboux定理表明所有辛流形局部都是余切丛。
 -/
 def CanonicalSymplecticForm {Q : Type*} [TopologicalSpace Q] 
-    [Manifold Q] : SymplecticForm (CotangentBundle Q) where
-  toForm := by
-    /- Liouville 1-形式: θ_α(v) = α(dπ(v))
-       其中α ∈ T*Q, v ∈ T_α(T*Q)
+    [SmoothManifold Q] : SymplecticForm (TangentBundle Q)ᵒᵈ where
+  /- Liouville 1-形式: θ_α(v) = α(dπ(v))
+     其中α ∈ T*Q, v ∈ T_α(T*Q)
+  -/
+  toForm := 
+    /- 构造Liouville形式：
+       在点α ∈ T*Q，对于v ∈ T_α(T*Q)，
+       θ_α(v) = α(dπ_α(v))，其中π: T*Q → Q是投影
     -/
     sorry -- 需要余切丛的详细构造
-  h_closed := by
+  is_closed := by
     /- ω = -dθ，所以dω = -d²θ = 0 -/
-    sorry
-  h_nondegenerate := by
+    sorry -- 由外微分的幂零性
+  is_nondegenerate := by
     /- 在典范坐标(q,p)中，θ = Σ pᵢdqᵢ，
        ω = -dθ = Σ dqᵢ ∧ dpᵢ
        这是非退化的
     -/
-    sorry
+    sorry -- 需要局部坐标的验证
 
 /-
 ## Weinstein Lagrangian邻域定理
@@ -460,9 +475,9 @@ def CanonicalSymplecticForm {Q : Type*} [TopologicalSpace Q]
 theorem weinstein_lagrangian_neighborhood [SymplecticManifold M]
     (L : Submanifold M n) (h_lag : IsLagrangianSubmanifold L) :
     ∃ (U : Opens M) (hU : ∀ x ∈ L, x ∈ U) 
-      (V : Opens (CotangentBundle L)) 
-      (φ : PartialEquiv M (CotangentBundle L)),
-      SymplecticEquivOn (φ.restrict U V) := by
+      (V : Opens (TangentBundle L)) 
+      (φ : PartialEquiv M (TangentBundle L)),
+      IsSymplectomorphism (φ.restrict U V) := by
   /- 证明框架（Weinstein）:
      
      【步骤1】 tubular邻域
@@ -482,6 +497,8 @@ theorem weinstein_lagrangian_neighborhood [SymplecticManifold M]
      f*ω_canonical = ψ*ω
      所以φ = f⁻¹ ∘ ψ是所需的辛同胚
   -/
+  /- Weinstein定理是Darboux定理的相对版本，
+     表明Lagrangian子流形没有局部不变量。 -/
   sorry -- Weinstein定理需要tubular邻域和Moser技巧
 
 /-
@@ -504,8 +521,8 @@ Hamiltonian Floer同调用于研究其拓扑。
 -/
 def SymplectomorphismGroup [SymplecticManifold M] : Subgroup (Homeomorph M M) where
   carrier := {φ | Continuous φ ∧ Continuous φ.symm ∧ 
-    ∀ x, (PullbackDifferentialForm φ.toFun SymplecticManifold.form.toForm) x = 
-      SymplecticManifold.form.toForm x}
+    ∀ x, (φ pullback (SymplecticManifold.form (M := M)).toForm) x = 
+      (SymplecticManifold.form (M := M)).toForm x}
   one_mem' := by simp
   mul_mem' := by 
     intro φ ψ hφ hψ
@@ -515,7 +532,8 @@ def SymplectomorphismGroup [SymplecticManifold M] : Subgroup (Homeomorph M M) wh
     · exact Continuous.comp hψ.2.1 hφ.2.1
     · intro x
       -- 拉回的形式相容性
-      sorry
+      /- (φ ∘ ψ)*ω = ψ*(φ*ω) = ψ*ω = ω -/
+      sorry -- 需要拉回的结合性
   inv_mem' := by
     intro φ hφ
     constructor
@@ -524,7 +542,8 @@ def SymplectomorphismGroup [SymplecticManifold M] : Subgroup (Homeomorph M M) wh
     · exact hφ.1
     · intro x
       -- 逆映射保持辛形式
-      sorry
+      /- (φ⁻¹)*ω = (φ*)⁻¹ω = ω，因为φ*ω = ω -/
+      sorry -- 需要拉回与逆的关系
 
 /-
 ## Hamilton微分同胚群
@@ -544,16 +563,16 @@ Banyaga定理: Ham(M)是单群（在适当条件下）。
 -/
 def HamiltonianDiffeomorphismGroup [SymplecticManifold M] [CompactSpace M] :
     Subgroup SymplectomorphismGroup M where
-  carrier := {φ | ∃ H : ℝ × M → ℝ, 
+  carrier := {φ | ∃ H : ℝ → M → ℝ, 
     φ = TimeOneMap (HamiltonianFlow H)}
   one_mem' := by
-    -- 恒等映射由H=0生成
+    /- 恒等映射由H=0生成 -/
     sorry
   mul_mem' := by
-    -- Hamilton流的复合对应于Hamilton函数的和（适当规范）
+    /- Hamilton流的复合对应于Hamilton函数的和（适当规范） -/
     sorry
   inv_mem' := by
-    -- Hamilton流的逆对应于-H
+    /- Hamilton流的逆对应于-H -/
     sorry
 
 /-
@@ -610,6 +629,8 @@ theorem arnold_conjecture_weak [SymplecticManifold M] [CompactSpace M]
      
      实际上可以证明更强的不等式
   -/
+  /- Arnold猜想是辛拓扑的核心问题。
+     Floer的解决开创了Floer同调理论。 -/
   sorry -- Floer同调需要大量分析准备
 
 /-
@@ -618,7 +639,7 @@ theorem arnold_conjecture_weak [SymplecticManifold M] [CompactSpace M]
 定理 (Gromov, 1985):
 设f: B^{2n}(r) → Z^{2n}(R)是辛嵌入，
 其中B是球，Z是圆柱，
-如果r < R，则不可能有辛嵌入。
+如果r > R，则不可能有辛嵌入。
 
 即辛嵌入保持"辛宽度"。
 
@@ -635,10 +656,10 @@ theorem arnold_conjecture_weak [SymplecticManifold M] [CompactSpace M]
 - 嵌入问题的可计算不变量
 -/
 theorem gromov_non_squeezing [SymplecticManifold M] [SymplecticManifold N]
-    (f : M → N) (hf : SymplecticEmbedding f) (r R : ℝ) (hr : r < R) :
+    (f : M → N) (hf : SymplecticEmbedding f) (r R : ℝ) (hr : r > R) :
     let ball := SymplecticBall M r
     let cylinder := SymplecticCylinder N R
-    ¬(ball ⊆ f ⁻¹' cylinder) := by
+    ¬(Set.range f ⊆ cylinder) := by
   /- 证明框架（Gromov的伪全纯曲线方法）:
      
      【步骤1】 构造辛容量
@@ -659,6 +680,8 @@ theorem gromov_non_squeezing [SymplecticManifold M] [SymplecticManifold N]
      
      关键技术: 伪全纯曲线（J-全纯曲线）的紧性定理
   -/
+  /- Gromov非挤压定理是辛拓扑诞生的标志。
+     它表明辛条件比保体积条件更强。 -/
   sorry -- Gromov定理需要伪全纯曲线理论
 
 /- ==========================================
@@ -666,41 +689,76 @@ theorem gromov_non_squeezing [SymplecticManifold M] [SymplecticManifold N]
    ========================================== -/
 
 /-- 非退化双线性形式 -/
-def NondegenerateBilinearForm {V : Type*} [AddCommGroup V] [Module ℝ V]
-    (B : V → V → ℝ) : Prop := sorry
+class NondegenerateBilinearForm {V : Type*} [AddCommGroup V] [Module ℝ V]
+    (B : V → V → ℝ) : Prop where
+  /-- 非退化: 若B(v,w)=0对所有w，则v=0 -/
+  nondegenerate : ∀ v : V, (∀ w : V, B v w = 0) → v = 0
+
+/-- k-形式 -/
+def Ω^k(M; ℝ) : Type _ :=
+  sorry
+
+/-- 外微分 -/
+def d {k : ℕ} : Ω^k(M; ℝ) → Ω^(k+1)(M; ℝ) :=
+  sorry
 
 /-- 向量场 -/
 def VectorField (M : Type*) [TopologicalSpace M] {n : ℕ}
-    [ChartedSpace (EuclideanSpace ℝ (Fin n)) M] : Type _ := sorry
+    [ChartedSpace (EuclideanSpace ℝ (Fin n)) M] : Type _ :=
+  sorry
 
 /-- Lie导数 -/
 def LieDerivative {M : Type*} [TopologicalSpace M] {n : ℕ}
     [ChartedSpace (EuclideanSpace ℝ (Fin n)) M]
-    (X : VectorField M) (ω : DifferentialForm M k) : DifferentialForm M k := sorry
+    (X : VectorField M) (ω : Ω^k(M; ℝ)) : Ω^k(M; ℝ) :=
+  sorry
 
 /-- 子流形 -/
-def Submanifold (M : Type*) [TopologicalSpace M] (n : ℕ) : Type _ := sorry
+structure Submanifold (M : Type*) [TopologicalSpace M] (n : ℕ) where
+  carrier : Set M
+  isSubmanifold : True
 
-/-- 余切丛 -/
-def CotangentBundle (Q : Type*) [TopologicalSpace Q] : Type _ := sorry
+/-- 余切丛（带反向辛结构） -/
+def TangentBundle (Q : Type*) [TopologicalSpace Q] : Type _ :=
+  sorry
+
+notation Q "ᵒᵈ" => TangentBundle Q
 
 /-- Lie群 -/
-def LieGroup (G : Type*) : Prop := sorry
+class LieGroup (G : Type*) : Prop where
+  /-- 群结构 -/
+  group : Group G
+  /-- 流形结构 -/
+  manifold : SmoothManifold G
 
 /-- Lie代数 -/
-def LieAlgebra (G : Type*) [LieGroup G] : Type _ := sorry
+def LieAlgebra (G : Type*) [LieGroup G] : Type _ :=
+  sorry
+
+/-- 对偶空间 -/
+def Dual (V : Type*) [AddCommGroup V] [Module ℝ V] : Type _ :=
+  V →ₗ[ℝ] ℝ
 
 /-- 辛作用 -/
-def IsSymplecticAction (G M : Type*) [TopologicalSpace M] 
-    [LieGroup G] [MulAction G M] : Prop := sorry
+class IsSymplecticAction (G M : Type*) [TopologicalSpace M] 
+    [LieGroup G] [MulAction G M] : Prop where
+  /-- 作用保持辛形式 -/
+  preserves : ∀ g : G, 
+    (g • ·) pullback (SymplecticManifold.form (M := M)).toForm = 
+    (SymplecticManifold.form (M := M)).toForm
 
-/-- 部分辛同胚 -/
-def SymplecticEquivOn {M N : Type*} [TopologicalSpace M] [TopologicalSpace N]
-    [SymplecticManifold M] [SymplecticManifold N] (φ : PartialEquiv M N) : Prop := sorry
+/-- 辛同胚 -/
+structure IsSymplectomorphism {M N : Type*} [TopologicalSpace M] [TopologicalSpace N]
+    [SymplecticManifold M] [SymplecticManifold N] (φ : PartialEquiv M N) : Prop where
+  /-- 保持辛形式 -/
+  preserves : φ pullback (SymplecticManifold.form (M := N)).toForm = 
+              (SymplecticManifold.form (M := M)).toForm
 
 /-- Hamilton流 -/
 def HamiltonianFlow {M : Type*} [TopologicalSpace M] [SymplecticManifold M]
-    (H : ℝ × M → ℝ) : ℝ → M → M := sorry
+    (H : ℝ → M → ℝ) : ℝ → M → M :=
+  /- 解Hamilton方程得到的流 -/
+  sorry
 
 /-- 时间1映射 -/
 def TimeOneMap {M : Type*} [TopologicalSpace M] (flow : ℝ → M → M) : M → M := 
@@ -711,23 +769,64 @@ def FixedPoint {M : Type*} [TopologicalSpace M] (f : M → M) (x : M) : Prop :=
   f x = x
 
 /-- 辛嵌入 -/
-def SymplecticEmbedding {M N : Type*} [TopologicalSpace M] [TopologicalSpace N]
-    [SymplecticManifold M] [SymplecticManifold N] (f : M → N) : Prop := sorry
+structure SymplecticEmbedding {M N : Type*} [TopologicalSpace M] [TopologicalSpace N]
+    [SymplecticManifold M] [SymplecticManifold N] (f : M → N) : Prop where
+  /-- 嵌入 -/
+  isEmbedding : OpenEmbedding f
+  /-- 保持辛形式 -/
+  preserves : f pullback (SymplecticManifold.form (M := N)).toForm = 
+              (SymplecticManifold.form (M := M)).toForm
 
 /-- 辛球 -/
 def SymplecticBall {M : Type*} [TopologicalSpace M] [SymplecticManifold M]
-    (r : ℝ) : Set M := sorry
+    (r : ℝ) : Set M :=
+  sorry
 
 /-- 辛圆柱 -/
 def SymplecticCylinder {M : Type*} [TopologicalSpace M] [SymplecticManifold M]
-    (R : ℝ) : Set M := sorry
+    (R : ℝ) : Set M :=
+  sorry
 
 /-- Betti数 -/
-def BettiNumber (M : Type*) [TopologicalSpace M] (i : ℕ) : ℕ := sorry
+def BettiNumber (M : Type*) [TopologicalSpace M] (i : ℕ) : ℕ :=
+  sorry
 
 /-- 拉回微分形式 -/
-def PullbackDifferentialForm {M N : Type*} [TopologicalSpace M] 
-    [TopologicalSpace N] {k : ℕ} (f : M → N) (ω : DifferentialForm N k) :
-    DifferentialForm M k := sorry
+def pullback {M N : Type*} [TopologicalSpace M] 
+    [TopologicalSpace N] {k : ℕ} (f : M → N) (ω : Ω^k(N; ℝ)) :
+    Ω^k(M; ℝ) :=
+  sorry
+
+infixl:70 " pullback " => pullback
+
+/-- 导数 -/
+def deriv {M : Type*} [TopologicalSpace M] (γ : ℝ → M) (t : ℝ) : TangentSpace M (γ t) :=
+  sorry
+
+/-- 切空间 -/
+def TangentSpace {M : Type*} [TopologicalSpace M] (x : M) : Type _ :=
+  sorry
+
+/-- 切包含 -/
+def tangentInclusion {M : Type*} [TopologicalSpace M] {L : Submanifold M n} 
+    {x : L.carrier} : TangentSpace L x → TangentSpace M x :=
+  sorry
+
+/-- 微分 -/
+def differential {M N : Type*} [TopologicalSpace M] [TopologicalSpace N]
+    (f : M → N) (x : M) : TangentSpace M x → TangentSpace N (f x) :=
+  sorry
+
+/-- 行列式 -/
+noncomputable def det {V : Type*} [AddCommGroup V] [Module ℝ V] 
+    (f : V → V) : ℝ :=
+  sorry
+
+/-- 开嵌入 -/
+structure OpenEmbedding {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]
+    (f : X → Y) : Prop
+
+/-- 光滑流形 -/
+class SmoothManifold (M : Type*) : Prop
 
 end SymplecticGeometry

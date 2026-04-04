@@ -470,6 +470,10 @@ python tools/contributor-workflow/pre_commit_check.py --lean
 
 ### 行为准则
 
+请阅读并遵守我们的 **[社区行为准则 (CODE_OF_CONDUCT.md)](./CODE_OF_CONDUCT.md)**。
+
+核心原则：
+
 1. **尊重**：尊重所有社区成员，无论经验水平
 2. **包容**：欢迎多样性观点和背景
 3. **建设性**：提供建设性的反馈和建议

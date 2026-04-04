@@ -1,0 +1,79 @@
+# =============================================================================
+# FormalMath API 目录 .gitignore
+# Python FastAPI后端特定配置
+# =============================================================================
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# 分发/打包
+*.egg-info/
+dist/
+build/
+
+# 测试和覆盖率
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# 日志
+*.log
+logs/
+
+# 环境变量（保护敏感信息）
+.env
+.env.local
+.env.production
+!.env.example
+!.env.production.example
+
+# 临时文件
+*.tmp
+tmp/
+temp/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# Alembic迁移（可选，取决于策略）
+# alembic/versions/*.py
+# !alembic/versions/.gitkeep
+
+# 上传文件目录
+uploads/
+media/
+
+# 静态文件收集
+collected_static/
+
+# Docker volumes
+postgres_data/
+redis_data/
+
+# Celery beat schedule文件
+celerybeat-schedule
+celerybeat.pid
+
+# Pytest
+.pytest_cache/
+
+# 本地开发配置
+local_settings.py

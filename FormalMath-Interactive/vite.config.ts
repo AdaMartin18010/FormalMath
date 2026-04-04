@@ -6,7 +6,14 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      // 优化 React 编译
+      babel: {
+        plugins: [
+          ['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }],
+        ],
+      },
+    }),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
@@ -136,7 +143,7 @@ export default defineConfig({
             options: {
               cacheName: 'images-cache',
               expiration: {
-                maxEntries: 50,
+                maxEntries: 100,
                 maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
               }
             }
@@ -147,7 +154,7 @@ export default defineConfig({
             options: {
               cacheName: 'static-resources',
               expiration: {
-                maxEntries: 60,
+                maxEntries: 100,
                 maxAgeSeconds: 60 * 60 * 24 * 7 // 7 days
               }
             }
@@ -158,7 +165,7 @@ export default defineConfig({
             options: {
               cacheName: 'api-cache',
               expiration: {
-                maxEntries: 100,
+                maxEntries: 200,
                 maxAgeSeconds: 60 * 60 * 24 // 24 hours
               },
               networkTimeoutSeconds: 10
@@ -167,7 +174,10 @@ export default defineConfig({
         ],
         skipWaiting: true,
         clientsClaim: true,
-        cleanupOutdatedCaches: true
+        cleanupOutdatedCaches: true,
+        // 预缓存策略优化
+        navigateFallback: '/index.html',
+        navigateFallbackDenylist: [/^\/api/, /^\/admin/],
       },
       devOptions: {
         enabled: true,
@@ -196,11 +206,29 @@ export default defineConfig({
       external: ['framer-motion'],
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          'react-query': ['react-query'],
-          d3: ['d3', 'd3-selection', 'd3-scale', 'd3-hierarchy', 'd3-force-3d'],
-          mermaid: ['mermaid'],
-          three: ['three', '@react-three/fiber', '@react-three/drei'],
+          // 核心框架
+          'vendor-core': ['react', 'react-dom'],
+          'vendor-router': ['react-router-dom', 'react-helmet-async'],
+          
+          // 状态管理与数据获取
+          'vendor-state': ['zustand', 'react-query'],
+          
+          // 可视化库
+          'vendor-d3': ['d3', 'd3-selection', 'd3-scale', 'd3-hierarchy', 'd3-force-3d'],
+          'vendor-three': ['three', '@react-three/fiber', '@react-three/drei'],
+          'vendor-mermaid': ['mermaid'],
+          
+          // 工具库
+          'vendor-utils': ['axios', 'clsx', 'tailwind-merge'],
+          'vendor-markdown': ['react-markdown', 'rehype-katex', 'remark-math'],
+          'vendor-icons': ['lucide-react'],
+          
+          // 编辑器与协作
+          'vendor-collab': ['yjs', 'y-websocket', 'y-protocols'],
+          
+          // 数学渲染
+          'vendor-math': ['katex'],
+          'vendor-syntax': ['react-syntax-highlighter'],
         },
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split('.')
@@ -211,10 +239,19 @@ export default defineConfig({
           if (/\.(woff2?|ttf|otf|eot)$/i.test(assetInfo.name)) {
             return 'assets/fonts/[name]-[hash][extname]'
           }
+          if (/\.(css)$/i.test(assetInfo.name)) {
+            return 'assets/css/[name]-[hash][extname]'
+          }
           return 'assets/[name]-[hash][extname]'
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
+        
+        // 优化 chunk 加载
+        inlineDynamicImports: false,
+        
+        // 控制 chunk 大小
+        experimentalMinChunkSize: 20000,
       },
     },
     target: 'es2020',
@@ -223,10 +260,30 @@ export default defineConfig({
       compress: {
         drop_console: true,
         drop_debugger: true,
+        pure_funcs: ['console.log', 'console.info', 'console.debug'],
+        passes: 2,
+      },
+      mangle: {
+        safari10: true,
+      },
+      format: {
+        comments: false,
       },
     },
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1000,
+    
+    // CSS 优化
+    cssMinify: true,
+    cssCodeSplit: true,
+    
+    // 资源内联阈值
+    assetsInlineLimit: 4096,
+    
+    // 模块预加载
+    modulePreload: {
+      polyfill: true,
+    },
   },
   base: '/FormalMath/',
   server: {
@@ -240,6 +297,10 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
+    // 启用压缩
+    fs: {
+      strict: true,
+    },
   },
   preview: {
     port: 4173,
@@ -247,8 +308,42 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true,
+    // PostCSS 配置已在单独文件中
   },
   optimizeDeps: {
-    include: ['react', 'react-dom', 'd3', 'mermaid'],
+    include: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+      'd3',
+      'mermaid',
+      'zustand',
+      'react-query',
+      'lucide-react',
+    ],
+    exclude: ['framer-motion'],
+    // 强制预构建
+    force: true,
+  },
+  
+  // 实验性功能
+  experimental: {
+    // 启用 renderBuiltUrl 以支持 CDN
+    renderBuiltUrl(filename, { hostType }) {
+      if (hostType === 'js') {
+        return { relative: true }
+      }
+      return { relative: true }
+    },
+  },
+  
+  // 依赖优化
+  json: {
+    stringify: true,
+  },
+  
+  // 构建时清除 console
+  esbuild: {
+    drop: process.env.NODE_ENV === 'production' ? ['console', 'debugger'] : [],
   },
 })

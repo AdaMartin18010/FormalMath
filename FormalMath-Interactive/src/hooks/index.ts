@@ -94,3 +94,16 @@ export {
   useMistakeBook,
   useExerciseSession,
 } from './useExercise';
+
+// 笔记系统 hooks
+export {
+  useNotes,
+  useNotesList,
+  useNoteCRUD,
+  useNoteSearch,
+  useNoteTemplates,
+  useNoteAI,
+  useNoteShare,
+  useNoteImportExport,
+  useNoteAutoSave,
+} from './useNotes';

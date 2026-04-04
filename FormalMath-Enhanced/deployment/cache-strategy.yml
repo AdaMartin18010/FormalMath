@@ -1,0 +1,121 @@
+# ============================================
+# FormalMath - 缓存策略优化配置
+# 多层缓存架构：浏览器缓存 -> CDN -> Nginx -> Redis -> 应用缓存
+# ============================================
+
+version: '3.8'
+
+services:
+  # Redis Cluster 配置 - 高可用缓存
+  redis-cluster:
+    image: redis:7-alpine
+    container_name: formalmath-redis-cluster
+    restart: unless-stopped
+    command: >
+      redis-server
+      --appendonly yes
+      --appendfsync everysec
+      --maxmemory 4gb
+      --maxmemory-policy allkeys-lru
+      --requirepass ${REDIS_PASSWORD}
+      --tcp-keepalive 60
+      --timeout 0
+      --maxclients 10000
+      --cluster-enabled yes
+      --cluster-config-file nodes.conf
+      --cluster-node-timeout 5000
+      --save 900 1
+      --save 300 10
+      --save 60 10000
+      --activedefrag yes
+    volumes:
+      - redis-cluster-data:/data
+    networks:
+      - formalmath-network
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 4G
+        reservations:
+          cpus: '1.0'
+          memory: 2G
+    sysctls:
+      - net.core.somaxconn=65535
+      - vm.overcommit_memory=1
+
+  # Redis Sentinel - 高可用监控
+  redis-sentinel:
+    image: redis:7-alpine
+    container_name: formalmath-redis-sentinel
+    restart: unless-stopped
+    command: >
+      redis-sentinel /usr/local/etc/redis/sentinel.conf
+    volumes:
+      - ./redis/sentinel.conf:/usr/local/etc/redis/sentinel.conf:ro
+      - redis-sentinel-data:/data
+    networks:
+      - formalmath-network
+    depends_on:
+      - redis
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+
+  # Memcached - 对象缓存层
+  memcached:
+    image: memcached:alpine
+    container_name: formalmath-memcached
+    restart: unless-stopped
+    command: >
+      memcached
+      -m 512
+      -c 4096
+      -t 4
+      -I 4m
+      -o modern
+    networks:
+      - formalmath-network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+
+  # Varnish - HTTP缓存加速器
+  varnish:
+    image: varnish:stable
+    container_name: formalmath-varnish
+    restart: unless-stopped
+    tmpfs:
+      - /var/lib/varnish:exec,size=1g
+    environment:
+      - VARNISH_SIZE=1G
+      - VARNISH_TTL=120s
+      - VARNISH_GRACE=24h
+      - VARNISH_KEEP=7d
+    volumes:
+      - ./varnish/default.vcl:/etc/varnish/default.vcl:ro
+    networks:
+      - formalmath-network
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+networks:
+  formalmath-network:
+    driver: bridge
+
+volumes:
+  redis-cluster-data:
+  redis-sentinel-data:

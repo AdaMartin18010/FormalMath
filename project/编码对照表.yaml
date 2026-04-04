@@ -1,0 +1,1931 @@
+msc_encoding_table:
+- concept_id: limit
+  name: 极限
+  category: 分析学
+  msc_primary: 26A03
+  msc_secondary: 40A05
+- concept_id: continuity
+  name: 连续性
+  category: 分析学
+  msc_primary: 26A15
+  msc_secondary: 26A03, 54C05
+- concept_id: derivative
+  name: 导数
+  category: 分析学
+  msc_primary: 26A24
+  msc_secondary: 26A27, 58C20
+- concept_id: riemann_integral
+  name: 积分
+  category: 分析学
+  msc_primary: 26A42
+  msc_secondary: 26B15, 28A25
+- concept_id: infinite_series
+  name: 级数
+  category: 分析学
+  msc_primary: 40A05
+  msc_secondary: 40A10, 40A25
+- concept_id: uniform_convergence
+  name: 一致收敛
+  category: 分析学
+  msc_primary: 40A30
+  msc_secondary: 26A03, 30A10
+- concept_id: fourier_analysis
+  name: Fourier分析
+  category: 分析学
+  msc_primary: 42Bxx
+  msc_secondary: 42A38, 42Cxx
+- concept_id: complex_analysis
+  name: 复分析
+  category: 分析学
+  msc_primary: 30Cxx
+  msc_secondary: 30Dxx, 30Exx
+- concept_id: residue_theory
+  name: 留数
+  category: 分析学
+  msc_primary: 30E20
+  msc_secondary: 30D30, 30Cxx
+- concept_id: conformal_mapping
+  name: 共形映射
+  category: 分析学
+  msc_primary: 30C35
+  msc_secondary: 30C20, 30D99
+- concept_id: harmonic_analysis
+  name: 调和分析
+  category: 分析学
+  msc_primary: 43Axx
+  msc_secondary: 42Bxx, 22E30
+- concept_id: measure_theory
+  name: 测度论
+  category: 分析学
+  msc_primary: 28Axx
+  msc_secondary: 28Cxx, 60A10
+- concept_id: lebesgue_integral
+  name: Lebesgue积分
+  category: 分析学
+  msc_primary: 28A25
+  msc_secondary: 26A42, 46E30
+- concept_id: lp_spaces
+  name: Lp空间
+  category: 分析学
+  msc_primary: 46E30
+  msc_secondary: 46B25, 42A38
+- concept_id: functional_analysis
+  name: 泛函分析
+  category: 分析学
+  msc_primary: 46Axx
+  msc_secondary: 46Bxx, 46Cxx
+- concept_id: banach_space
+  name: Banach空间
+  category: 分析学
+  msc_primary: 46B25
+  msc_secondary: 46Axx, 47Axx
+- concept_id: hilbert_space
+  name: Hilbert空间
+  category: 分析学
+  msc_primary: 46C05
+  msc_secondary: 46C15, 47Axx
+- concept_id: operator_theory
+  name: 算子理论
+  category: 分析学
+  msc_primary: 47Axx
+  msc_secondary: 47Bxx, 47Cxx
+- concept_id: spectral_theory
+  name: 谱理论
+  category: 分析学
+  msc_primary: 47A10
+  msc_secondary: 47A05, 47B15
+- concept_id: distribution_theory
+  name: 分布理论
+  category: 分析学
+  msc_primary: 46Fxx
+  msc_secondary: 46F10, 35Dxx
+- concept_id: sobolev_spaces
+  name: Sobolev空间
+  category: 分析学
+  msc_primary: 46E35
+  msc_secondary: 46Fxx, 35Sxx
+- concept_id: variational_methods
+  name: 变分法
+  category: 分析学
+  msc_primary: 49Jxx
+  msc_secondary: 49Kxx, 58E05
+- concept_id: differential_equations
+  name: 微分方程
+  category: 分析学
+  msc_primary: 34Axx
+  msc_secondary: 34Bxx, 34Cxx
+- concept_id: partial_differential_equations
+  name: 偏微分方程
+  category: 分析学
+  msc_primary: 35Jxx
+  msc_secondary: 35Kxx, 35Lxx
+- concept_id: asymptotic_analysis
+  name: 渐近分析
+  category: 分析学
+  msc_primary: 41A60
+  msc_secondary: 30E15, 34E05
+- concept_id: group
+  name: 群
+  category: 代数学
+  msc_primary: 20A05
+  msc_secondary: 20Bxx, 20Cxx
+- concept_id: ring
+  name: 环
+  category: 代数学
+  msc_primary: 16Y60
+  msc_secondary: 13Axx, 16Exx
+- concept_id: field
+  name: 域
+  category: 代数学
+  msc_primary: 12F99
+  msc_secondary: 12E99, 12Fxx
+- concept_id: module
+  name: 模
+  category: 代数学
+  msc_primary: 13C99
+  msc_secondary: 16Dxx, 18F99
+- concept_id: linear_algebra
+  name: 线性代数
+  category: 代数学
+  msc_primary: 15Axx
+  msc_secondary: 15A03, 15A06
+- concept_id: vector_space
+  name: 向量空间
+  category: 代数学
+  msc_primary: 15A03
+  msc_secondary: 46Axx, 15Axx
+- concept_id: matrix
+  name: 矩阵
+  category: 代数学
+  msc_primary: 15Axx
+  msc_secondary: 15A09, 65Fxx
+- concept_id: eigenvalue
+  name: 特征值
+  category: 代数学
+  msc_primary: 15A18
+  msc_secondary: 15Axx, 65F15
+- concept_id: jordan_normal_form
+  name: Jordan标准形
+  category: 代数学
+  msc_primary: 15A21
+  msc_secondary: 15Axx
+- concept_id: tensor_product
+  name: 张量积
+  category: 代数学
+  msc_primary: 15A69
+  msc_secondary: 16D20, 18D10
+- concept_id: homological_algebra
+  name: 同调代数
+  category: 代数学
+  msc_primary: 18Gxx
+  msc_secondary: 13Dxx, 16Exx
+- concept_id: group_representation
+  name: 群表示
+  category: 代数学
+  msc_primary: 20Cxx
+  msc_secondary: 20G05, 22Exx
+- concept_id: character_theory
+  name: 特征标理论
+  category: 表示论
+  msc_primary: 20C15
+  msc_secondary: 20Cxx
+- concept_id: group_action
+  name: 群作用
+  category: 代数学
+  msc_primary: 20Bxx
+  msc_secondary: 20Cxx, 57Sxx
+- concept_id: sylow_theory
+  name: Sylow理论
+  category: 代数学
+  msc_primary: 20D20
+  msc_secondary: 20D15, 20F50
+- concept_id: solvable_group
+  name: 可解群
+  category: 代数学
+  msc_primary: 20F16
+  msc_secondary: 20D10, 20Exx
+- concept_id: lie_group
+  name: Lie群
+  category: 代数学
+  msc_primary: 22E15
+  msc_secondary: 22Exx, 20Gxx
+- concept_id: lie_algebra
+  name: Lie代数
+  category: 代数学
+  msc_primary: 17Bxx
+  msc_secondary: 22E60, 17Bxx
+- concept_id: commutative_algebra
+  name: 交换代数
+  category: 代数学
+  msc_primary: 13Axx
+  msc_secondary: 13Cxx, 13Hxx
+- concept_id: algebraic_geometry
+  name: 代数几何
+  category: 代数学
+  msc_primary: 14Axx
+  msc_secondary: 14Fxx, 14Hxx
+- concept_id: scheme
+  name: 概形
+  category: 代数学
+  msc_primary: 14A15
+  msc_secondary: 14A20, 14Fxx
+- concept_id: sheaf
+  name: 层
+  category: 代数学
+  msc_primary: 14F05
+  msc_secondary: 18F20, 32C35
+- concept_id: cohomology_sheaf
+  name: 上同调
+  category: 代数学
+  msc_primary: 14Fxx
+  msc_secondary: 18G40, 32C35
+- concept_id: category_theory
+  name: 范畴论
+  category: 代数学
+  msc_primary: 18Axx
+  msc_secondary: 18Bxx, 18Cxx
+- concept_id: homotopy_algebra
+  name: 同伦代数
+  category: 代数学
+  msc_primary: 18G55
+  msc_secondary: 55U35, 18Gxx
+- concept_id: topological_space
+  name: 拓扑空间
+  category: 几何拓扑
+  msc_primary: 54A05
+  msc_secondary: 54Axx, 54Bxx
+- concept_id: continuous_map
+  name: 连续映射
+  category: 几何拓扑
+  msc_primary: 54C05
+  msc_secondary: 54C10, 54C20
+- concept_id: compactness
+  name: 紧致性
+  category: 几何拓扑
+  msc_primary: 54D30
+  msc_secondary: 54D20, 54E35
+- concept_id: connectedness
+  name: 连通性
+  category: 几何拓扑
+  msc_primary: 54D05
+  msc_secondary: 54D10, 54F15
+- concept_id: homotopy
+  name: 同伦
+  category: 几何拓扑
+  msc_primary: 55Pxx
+  msc_secondary: 55P10, 55P15
+- concept_id: fundamental_group
+  name: 基本群
+  category: 几何拓扑
+  msc_primary: 55Q05
+  msc_secondary: 55Q07, 57M05
+- concept_id: covering_space
+  name: 覆叠空间
+  category: 几何拓扑
+  msc_primary: 57M10
+  msc_secondary: 55R05, 14E20
+- concept_id: homology_group
+  name: 同调群
+  category: 几何拓扑
+  msc_primary: 55Nxx
+  msc_secondary: 55U15, 18Gxx
+- concept_id: cohomology
+  name: 上同调
+  category: 几何拓扑
+  msc_primary: 55Nxx
+  msc_secondary: 55U15, 18Gxx
+- concept_id: manifold
+  name: 流形
+  category: 几何拓扑
+  msc_primary: 57N99
+  msc_secondary: 57R99, 53A99
+- concept_id: tangent_space
+  name: 切空间
+  category: 几何拓扑
+  msc_primary: 53B05
+  msc_secondary: 58A05, 53A45
+- concept_id: tensor_field
+  name: 张量场
+  category: 几何拓扑
+  msc_primary: 53A45
+  msc_secondary: 58A10, 15A72
+- concept_id: differential_form
+  name: 微分形式
+  category: 几何拓扑
+  msc_primary: 58A10
+  msc_secondary: 53C65, 58Axx
+- concept_id: stokes_theorem
+  name: Stokes定理
+  category: 几何拓扑
+  msc_primary: 58C35
+  msc_secondary: 58A10, 58Axx
+- concept_id: riemannian_metric
+  name: 黎曼度量
+  category: 几何拓扑
+  msc_primary: 53B20
+  msc_secondary: 53C20, 53A35
+- concept_id: curvature
+  name: 曲率
+  category: 几何拓扑
+  msc_primary: 53A04
+  msc_secondary: 53B20, 53C21
+- concept_id: geodesic
+  name: 测地线
+  category: 几何拓扑
+  msc_primary: 53C22
+  msc_secondary: 53B05, 58E10
+- concept_id: connection
+  name: 联络
+  category: 几何拓扑
+  msc_primary: 53B05
+  msc_secondary: 53C05, 58A05
+- concept_id: fiber_bundle
+  name: 纤维丛
+  category: 几何拓扑
+  msc_primary: 55R10
+  msc_secondary: 57R22, 53C05
+- concept_id: characteristic_class
+  name: 示性类
+  category: 几何拓扑
+  msc_primary: 57R20
+  msc_secondary: 55R40, 57Rxx
+- concept_id: morse_theory
+  name: Morse理论
+  category: 几何拓扑
+  msc_primary: 58E05
+  msc_secondary: 57R70, 58Exx
+- concept_id: index_theorem
+  name: 指标定理
+  category: 几何拓扑
+  msc_primary: 58J20
+  msc_secondary: 19K56, 58Jxx
+- concept_id: symplectic_geometry
+  name: 辛几何
+  category: 动力系统
+  msc_primary: 53D05
+  msc_secondary: 37Jxx, 53Dxx
+- concept_id: complex_geometry
+  name: 复几何
+  category: 几何拓扑
+  msc_primary: 32Qxx
+  msc_secondary: 32Cxx, 53C55
+- concept_id: algebraic_topology
+  name: 代数拓扑
+  category: 几何拓扑
+  msc_primary: 55Nxx
+  msc_secondary: 55Mxx, 55Pxx
+- concept_id: divisibility
+  name: 整除
+  category: 数论逻辑
+  msc_primary: 11A05
+  msc_secondary: 11Axx
+- concept_id: congruence
+  name: 同余
+  category: 数论逻辑
+  msc_primary: 11A07
+  msc_secondary: 11Axx, 11B50
+- concept_id: primitive_root
+  name: 原根
+  category: 数论逻辑
+  msc_primary: 11A07
+  msc_secondary: 11Axx
+- concept_id: quadratic_residue
+  name: 二次剩余
+  category: 数论逻辑
+  msc_primary: 11A15
+  msc_secondary: 11Axx
+- concept_id: algebraic_integer
+  name: 代数整数
+  category: 数论逻辑
+  msc_primary: 11R04
+  msc_secondary: 11Rxx
+- concept_id: ideal
+  name: 理想
+  category: 数论逻辑
+  msc_primary: 13A15
+  msc_secondary: 11R29, 16D25
+- concept_id: class_number
+  name: 类数
+  category: 数论逻辑
+  msc_primary: 11R29
+  msc_secondary: 11Rxx, 11Sxx
+- concept_id: elliptic_curve
+  name: 椭圆曲线
+  category: 数论高级
+  msc_primary: 11G05
+  msc_secondary: 11Gxx, 14H52
+- concept_id: modular_form
+  name: 模形式
+  category: 数论高级
+  msc_primary: 11F11
+  msc_secondary: 11Fxx
+- concept_id: l_function
+  name: L函数
+  category: 数论高级
+  msc_primary: 11M06
+  msc_secondary: 11Mxx, 11F66
+- concept_id: arithmetic_geometry
+  name: 算术几何
+  category: 数论高级
+  msc_primary: 11G35
+  msc_secondary: 11Gxx, 14Gxx
+- concept_id: p_adic_numbers
+  name: p进数
+  category: 数论逻辑
+  msc_primary: 11Sxx
+  msc_secondary: 11S15, 11S20
+- concept_id: galois_representation
+  name: Galois表示
+  category: 数论逻辑
+  msc_primary: 11F80
+  msc_secondary: 11R39
+- concept_id: automorphic_form
+  name: 自守形式
+  category: 数论高级
+  msc_primary: 11Fxx
+  msc_secondary: 11F70
+- concept_id: propositional_logic
+  name: 命题逻辑
+  category: 数论逻辑
+  msc_primary: 03B05
+  msc_secondary: 03Bxx
+- concept_id: predicate_logic
+  name: 谓词逻辑
+  category: 数论逻辑
+  msc_primary: 03B10
+  msc_secondary: 03C07, 03F03
+- concept_id: proof_theory
+  name: 证明论
+  category: 数理逻辑
+  msc_primary: 03F03
+  msc_secondary: 03Fxx
+- concept_id: model_theory
+  name: 模型论
+  category: 数论逻辑
+  msc_primary: 03Cxx
+  msc_secondary: 03C07, 03C64
+- concept_id: recursion_theory
+  name: 递归论
+  category: 数理逻辑
+  msc_primary: 03Dxx
+  msc_secondary: 03D10, 68Qxx
+- concept_id: set_theory
+  name: 集合论
+  category: 数论逻辑
+  msc_primary: 03E20
+  msc_secondary: 03Exx
+- concept_id: forcing
+  name: 力迫法
+  category: 数理逻辑
+  msc_primary: 03E35
+  msc_secondary: 03E40, 03E45
+- concept_id: large_cardinal
+  name: 大基数
+  category: 数理逻辑
+  msc_primary: 03E55
+  msc_secondary: 03E35, 03E60
+- concept_id: computability
+  name: 可计算性
+  category: 数论逻辑
+  msc_primary: 03Dxx
+  msc_secondary: 03D10, 68Q05
+- concept_id: complexity
+  name: 复杂度
+  category: 数论逻辑
+  msc_primary: 68Q15
+  msc_secondary: 03D15, 68Q17
+- concept_id: formalized_proof
+  name: 形式化证明
+  category: 数论逻辑
+  msc_primary: 03Fxx
+  msc_secondary: 03B35, 68V15
+- concept_id: probability_measure
+  name: 概率测度
+  category: 概率统计
+  msc_primary: 60A10
+  msc_secondary: 28Axx, 60Axx
+- concept_id: random_variable
+  name: 随机变量
+  category: 概率统计
+  msc_primary: 60A10
+  msc_secondary: 60Exx
+- concept_id: probability_distribution
+  name: 概率分布
+  category: 概率统计
+  msc_primary: 60E05
+  msc_secondary: 62Exx
+- concept_id: expectation
+  name: 期望
+  category: 概率统计
+  msc_primary: 60A10
+  msc_secondary: 60Exx
+- concept_id: conditional_probability
+  name: 条件概率
+  category: 概率统计
+  msc_primary: 60A99
+  msc_secondary: 60Axx
+- concept_id: bayes_theorem
+  name: 贝叶斯定理
+  category: 概率统计
+  msc_primary: 60A99
+  msc_secondary: 62F15, 62C10
+- concept_id: stochastic_process
+  name: 随机过程
+  category: 概率统计
+  msc_primary: 60Gxx
+  msc_secondary: 60G07
+- concept_id: markov_chain
+  name: 马尔可夫链
+  category: 概率统计
+  msc_primary: 60J10
+  msc_secondary: 60Jxx
+- concept_id: martingale
+  name: 鞅
+  category: 概率统计
+  msc_primary: 60G42
+  msc_secondary: 60Gxx, 60Hxx
+- concept_id: brownian_motion
+  name: 布朗运动
+  category: 概率统计
+  msc_primary: 60J65
+  msc_secondary: 60Jxx, 60Hxx
+- concept_id: law_of_large_numbers
+  name: 大数定律
+  category: 概率统计
+  msc_primary: 60F05
+  msc_secondary: 60Fxx
+- concept_id: central_limit_theorem
+  name: 中心极限定理
+  category: 概率统计
+  msc_primary: 60F05
+  msc_secondary: 60Fxx, 62E20
+- concept_id: statistical_inference
+  name: 统计推断
+  category: 概率统计
+  msc_primary: 62Fxx
+  msc_secondary: 62Jxx, 62Gxx
+- concept_id: parameter_estimation
+  name: 参数估计
+  category: 概率统计
+  msc_primary: 62F10
+  msc_secondary: 62F12, 62J05
+- concept_id: hypothesis_testing
+  name: 假设检验
+  category: 概率统计
+  msc_primary: 62F03
+  msc_secondary: 62Fxx, 62G10
+- concept_id: regression_analysis
+  name: 回归分析
+  category: 概率统计
+  msc_primary: 62J05
+  msc_secondary: 62Jxx, 62F10
+- concept_id: bayesian_inference
+  name: 贝叶斯推断
+  category: 概率统计
+  msc_primary: 62F15
+  msc_secondary: 62C10, 62Fxx
+- concept_id: time_series_analysis
+  name: 时间序列分析
+  category: 概率统计
+  msc_primary: 62M10
+  msc_secondary: 62M20, 91B84
+- concept_id: variance
+  name: 方差
+  category: 概率统计
+  msc_primary: 60A10
+  msc_secondary: 62E10
+- concept_id: maximum_likelihood
+  name: 最大似然估计
+  category: 概率统计
+  msc_primary: 62F10
+  msc_secondary: 62Fxx, 62Jxx
+- concept_id: optimization_problem
+  name: 最优化问题
+  category: 最优化
+  msc_primary: 90Cxx
+  msc_secondary: 49Kxx
+- concept_id: convex_set
+  name: 凸集
+  category: 最优化
+  msc_primary: 52Axx
+  msc_secondary: 90C25
+- concept_id: convex_function
+  name: 凸函数
+  category: 最优化
+  msc_primary: 26A51
+  msc_secondary: 90C25
+- concept_id: gradient
+  name: 梯度
+  category: 最优化
+  msc_primary: 26B05
+  msc_secondary: 90C52
+- concept_id: hessian_matrix
+  name: Hessian矩阵
+  category: 最优化
+  msc_primary: 26B05
+  msc_secondary: 90C30
+- concept_id: gradient_descent
+  name: 梯度下降法
+  category: 最优化
+  msc_primary: 90C52
+  msc_secondary: 90C30, 65K05
+- concept_id: newton_method
+  name: 牛顿法
+  category: 最优化
+  msc_primary: 65H10
+  msc_secondary: 90C53
+- concept_id: conjugate_gradient
+  name: 共轭梯度法
+  category: 最优化
+  msc_primary: 90C52
+  msc_secondary: 65F10, 65K05
+- concept_id: lagrange_multiplier
+  name: 拉格朗日乘子
+  category: 最优化
+  msc_primary: 49K99
+  msc_secondary: 90C46
+- concept_id: kkt_conditions
+  name: KKT条件
+  category: 最优化
+  msc_primary: 90C46
+  msc_secondary: 49Kxx, 90C30
+- concept_id: linear_programming
+  name: 线性规划
+  category: 最优化
+  msc_primary: 90C05
+  msc_secondary: 90Cxx
+- concept_id: simplex_method
+  name: 单纯形法
+  category: 最优化
+  msc_primary: 90C05
+  msc_secondary: 90Cxx
+- concept_id: convex_optimization
+  name: 凸优化
+  category: 最优化
+  msc_primary: 90C25
+  msc_secondary: 90Cxx, 49J53
+- concept_id: interior_point_method
+  name: 内点法
+  category: 最优化
+  msc_primary: 90C51
+  msc_secondary: 90C05, 65K05
+- concept_id: integer_programming
+  name: 整数规划
+  category: 最优化
+  msc_primary: 90C10
+  msc_secondary: 90Cxx, 90C57
+- concept_id: dynamic_programming
+  name: 动态规划
+  category: 最优化
+  msc_primary: 49Lxx
+  msc_secondary: 90C39, 93Cxx
+- concept_id: stochastic_optimization
+  name: 随机优化
+  category: 最优化
+  msc_primary: 90C15
+  msc_secondary: 90Cxx
+- concept_id: optimal_control
+  name: 最优控制
+  category: 最优化
+  msc_primary: 49N10
+  msc_secondary: 93Cxx, 49J15
+- concept_id: quadratic_programming
+  name: 二次规划
+  category: 最优化
+  msc_primary: 90C20
+  msc_secondary: 90C25, 65K05
+- concept_id: nonlinear_programming
+  name: 非线性规划
+  category: 最优化
+  msc_primary: 90C30
+  msc_secondary: 90Cxx
+- concept_id: control_system
+  name: 控制系统
+  category: 控制论
+  msc_primary: 93Bxx
+  msc_secondary: 93Cxx
+- concept_id: transfer_function
+  name: 传递函数
+  category: 控制论
+  msc_primary: 93C05
+  msc_secondary: 93Bxx
+- concept_id: state_space
+  name: 状态空间
+  category: 控制论
+  msc_primary: 93C05
+  msc_secondary: 93Bxx
+- concept_id: feedback_control
+  name: 反馈控制
+  category: 控制论
+  msc_primary: 93B52
+  msc_secondary: 93Cxx
+- concept_id: stability_analysis
+  name: 稳定性分析
+  category: 控制论
+  msc_primary: 93Dxx
+  msc_secondary: 93Cxx, 34D20
+- concept_id: pid_controller
+  name: PID控制器
+  category: 控制论
+  msc_primary: 93C35
+  msc_secondary: 93B52
+- concept_id: root_locus
+  name: 根轨迹法
+  category: 控制论
+  msc_primary: 93C05
+  msc_secondary: 93Bxx
+- concept_id: bode_plot
+  name: Bode图
+  category: 控制论
+  msc_primary: 93C05
+  msc_secondary: 93Bxx
+- concept_id: nyquist_criterion
+  name: Nyquist判据
+  category: 控制论
+  msc_primary: 93D10
+  msc_secondary: 93Cxx
+- concept_id: controllability
+  name: 能控性
+  category: 控制论
+  msc_primary: 93B05
+  msc_secondary: 93Cxx
+- concept_id: observability
+  name: 能观性
+  category: 控制论
+  msc_primary: 93B07
+  msc_secondary: 93Cxx
+- concept_id: state_feedback
+  name: 状态反馈
+  category: 控制论
+  msc_primary: 93B52
+  msc_secondary: 93Cxx
+- concept_id: state_observer
+  name: 状态观测器
+  category: 控制论
+  msc_primary: 93B07
+  msc_secondary: 93Cxx
+- concept_id: kalman_filter
+  name: Kalman滤波
+  category: 控制论
+  msc_primary: 93E11
+  msc_secondary: 60G35, 62M20
+- concept_id: lqr_control
+  name: LQR控制
+  category: 控制论
+  msc_primary: 93B36
+  msc_secondary: 49N10, 93C05
+- concept_id: mpc
+  name: 安全多方计算
+  category: 密码学
+  msc_primary: 93C30
+  msc_secondary: 93Bxx, 49Mxx
+- concept_id: robust_control
+  name: 鲁棒控制
+  category: 控制论
+  msc_primary: 93B35
+  msc_secondary: 93D09, 93Cxx
+- concept_id: nonlinear_control
+  name: 非线性控制
+  category: 控制论
+  msc_primary: 93C10
+  msc_secondary: 93Cxx
+- concept_id: adaptive_control
+  name: 自适应控制
+  category: 控制论
+  msc_primary: 93C40
+  msc_secondary: 93Cxx
+- concept_id: system_identification
+  name: 系统辨识
+  category: 控制论
+  msc_primary: 93B30
+  msc_secondary: 93E12, 62F10
+- concept_id: information
+  name: 信息
+  category: 信息论
+  msc_primary: 94A15
+  msc_secondary: 94Axx
+- concept_id: shannon_entropy
+  name: 香农熵
+  category: 信息论
+  msc_primary: 94A17
+  msc_secondary: 94Axx, 60A10
+- concept_id: mutual_information
+  name: 互信息
+  category: 信息论
+  msc_primary: 94A17
+  msc_secondary: 94Axx
+- concept_id: kl_divergence
+  name: KL散度
+  category: 信息论
+  msc_primary: 94A17
+  msc_secondary: 62B10, 94Axx
+- concept_id: source_coding
+  name: 信源编码
+  category: 信息论
+  msc_primary: 94A29
+  msc_secondary: 94Axx, 68P30
+- concept_id: channel_capacity
+  name: 信道容量
+  category: 信息论
+  msc_primary: 94A40
+  msc_secondary: 94Axx
+- concept_id: channel_coding
+  name: 信道编码
+  category: 信息论
+  msc_primary: 94Bxx
+  msc_secondary: 94Axx
+- concept_id: error_correction
+  name: 纠错编码
+  category: 信息论
+  msc_primary: 94B35
+  msc_secondary: 94Bxx
+- concept_id: reed_solomon
+  name: Reed-Solomon码
+  category: 信息论
+  msc_primary: 94B15
+  msc_secondary: 94Bxx, 11T71
+- concept_id: ldpc_code
+  name: LDPC码
+  category: 信息论
+  msc_primary: 94B05
+  msc_secondary: 94B35, 94B65
+- concept_id: data_compression
+  name: 数据压缩
+  category: 信息论
+  msc_primary: 94A29
+  msc_secondary: 68P30
+- concept_id: huffman_coding
+  name: Huffman编码
+  category: 信息论
+  msc_primary: 94A29
+  msc_secondary: 68P30
+- concept_id: arithmetic_coding
+  name: 算术编码
+  category: 信息论
+  msc_primary: 94A29
+  msc_secondary: 68P30
+- concept_id: lossy_compression
+  name: 有损压缩
+  category: 信息论
+  msc_primary: 94A34
+  msc_secondary: 94A08
+- concept_id: rate_distortion
+  name: 率失真理论
+  category: 信息论
+  msc_primary: 94A34
+  msc_secondary: 94Axx
+- concept_id: network_information
+  name: 网络信息论
+  category: 信息论
+  msc_primary: 94A15
+  msc_secondary: 94Axx
+- concept_id: cryptographic_protocol
+  name: 密码学协议
+  category: 信息论
+  msc_primary: 94A62
+  msc_secondary: 94A60, 68P25
+- concept_id: quantum_information
+  name: 量子信息
+  category: 信息论
+  msc_primary: 81P45
+  msc_secondary: 94A40, 81P15
+- concept_id: algorithmic_information
+  name: 算法信息论
+  category: 信息论
+  msc_primary: 68Q30
+  msc_secondary: 94A15
+- concept_id: differential_privacy
+  name: 差分隐私
+  category: 信息论
+  msc_primary: 68P25
+  msc_secondary: 94A60
+- concept_id: symmetric_encryption
+  name: 对称加密
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 11T71, 14G50
+- concept_id: aes
+  name: AES
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 68P25
+- concept_id: public_key
+  name: 公钥密码学
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 11T71, 14G50
+- concept_id: rsa
+  name: RSA
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 11Axx, 11T71
+- concept_id: diffie_hellman
+  name: Diffie-Hellman
+  category: 密码学
+  msc_primary: 94A62
+  msc_secondary: 11T71, 14G50
+- concept_id: elliptic_curve_crypto
+  name: 椭圆曲线密码
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 11G20, 14H52
+- concept_id: hash_function
+  name: 哈希函数
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 68P05
+- concept_id: digital_signature
+  name: 数字签名
+  category: 密码学
+  msc_primary: 94A62
+  msc_secondary: 94A60
+- concept_id: mac
+  name: 消息认证码
+  category: 密码学
+  msc_primary: 94A62
+  msc_secondary: 94A60
+- concept_id: zero_knowledge_proof
+  name: 零知识证明
+  category: 密码学
+  msc_primary: 94A62
+  msc_secondary: 68Qxx
+- concept_id: zk_snarks
+  name: zk-SNARKs
+  category: 密码学
+  msc_primary: 94A62
+  msc_secondary: 68P25, 11T71
+- concept_id: homomorphic_encryption
+  name: 同态加密
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 11T71
+- concept_id: quantum_crypto
+  name: 量子密码
+  category: 密码学
+  msc_primary: 81P94
+  msc_secondary: 94A60
+- concept_id: post_quantum
+  name: 后量子密码
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 81P94, 11T71
+- concept_id: blockchain_consensus
+  name: 区块链共识
+  category: 密码学
+  msc_primary: 68M14
+  msc_secondary: 94A62, 91A80
+- concept_id: side_channel
+  name: 侧信道攻击
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 68P25
+- concept_id: provable_security
+  name: 可证明安全
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 68P25, 03Fxx
+- concept_id: lattice_based_crypto
+  name: 格密码
+  category: 密码学
+  msc_primary: 94A60
+  msc_secondary: 11Hxx, 68P25
+- concept_id: identity_based
+  name: 基于身份的加密
+  category: 密码学
+  msc_primary: 94A62
+  msc_secondary: 11T71, 14G50
+- concept_id: stochastic_calculus
+  name: 随机分析
+  category: 金融数学
+  msc_primary: 60Hxx
+  msc_secondary: 91Gxx
+- concept_id: ito_calculus
+  name: Itô微积分
+  category: 金融数学
+  msc_primary: 60H05
+  msc_secondary: 60Hxx, 91Gxx
+- concept_id: ito_lemma
+  name: Itô引理
+  category: 金融数学
+  msc_primary: 60H05
+  msc_secondary: 60Hxx, 91Gxx
+- concept_id: sde
+  name: 随机微分方程
+  category: 金融数学
+  msc_primary: 60H10
+  msc_secondary: 60Hxx, 91Gxx
+- concept_id: black_scholes
+  name: Black-Scholes模型
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 60Hxx, 91Gxx
+- concept_id: risk_neutral
+  name: 风险中性定价
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 60Hxx, 91Gxx
+- concept_id: option_pricing
+  name: 期权定价
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 91Gxx, 60Hxx
+- concept_id: greeks
+  name: 希腊字母
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 91Gxx, 60Hxx
+- concept_id: implied_volatility
+  name: 隐含波动率
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 91Gxx, 60Hxx
+- concept_id: volatility_smile
+  name: 波动率微笑
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 91Gxx, 60Hxx
+- concept_id: stochastic_volatility
+  name: 随机波动率模型
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 60H10, 91G80
+- concept_id: heston_model
+  name: Heston模型
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 60H10, 60J70
+- concept_id: monte_carlo_simulation
+  name: 蒙特卡洛模拟
+  category: 金融数学
+  msc_primary: 65C05
+  msc_secondary: 91G60, 65Cxx
+- concept_id: american_option
+  name: 美式期权定价
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 60G40, 35R35
+- concept_id: binomial_tree
+  name: 二叉树模型
+  category: 金融数学
+  msc_primary: 91G20
+  msc_secondary: 60J80, 65C05
+- concept_id: fundamental_theorem
+  name: 资产定价基本定理
+  category: 金融数学
+  msc_primary: 91G10
+  msc_secondary: 60G44, 91G20
+- concept_id: interest_rate_model
+  name: 利率模型
+  category: 金融数学
+  msc_primary: 91G30
+  msc_secondary: 91Gxx, 60Hxx
+- concept_id: credit_risk
+  name: 信用风险模型
+  category: 金融数学
+  msc_primary: 91G40
+  msc_secondary: 91Gxx
+- concept_id: portfolio_optimization
+  name: 投资组合优化
+  category: 金融数学
+  msc_primary: 91G10
+  msc_secondary: 90C90, 49N15
+- concept_id: risk_management
+  name: 风险管理
+  category: 金融数学
+  msc_primary: 91G70
+  msc_secondary: 62P05, 91G40
+- concept_id: population_dynamics
+  name: 种群动力学
+  category: 生物数学
+  msc_primary: 92D25
+  msc_secondary: 34Cxx, 92Dxx
+- concept_id: logistic_growth
+  name: Logistic增长
+  category: 生物数学
+  msc_primary: 92D25
+  msc_secondary: 34Cxx, 92Dxx
+- concept_id: predator_prey
+  name: 捕食者-猎物模型
+  category: 生物数学
+  msc_primary: 92D25
+  msc_secondary: 34Cxx, 34Dxx
+- concept_id: lotka_volterra
+  name: Lotka-Volterra方程
+  category: 生物数学
+  msc_primary: 92D25
+  msc_secondary: 34Cxx, 92Dxx
+- concept_id: sir_model
+  name: SIR模型
+  category: 生物数学
+  msc_primary: 92D30
+  msc_secondary: 34Cxx, 92Dxx
+- concept_id: seir_model
+  name: SEIR模型
+  category: 生物数学
+  msc_primary: 92D30
+  msc_secondary: 34Cxx, 92Dxx
+- concept_id: reaction_diffusion
+  name: 反应扩散方程
+  category: 生物数学
+  msc_primary: 35K57
+  msc_secondary: 92Cxx, 35Bxx
+- concept_id: turing_pattern
+  name: Turing模式
+  category: 生物数学
+  msc_primary: 92C15
+  msc_secondary: 35K57, 92Cxx
+- concept_id: evolutionary_dynamics
+  name: 进化动力学
+  category: 生物数学
+  msc_primary: 92D15
+  msc_secondary: 91A22, 92Dxx
+- concept_id: replicator_dynamics
+  name: 复制动力学
+  category: 生物数学
+  msc_primary: 91A22
+  msc_secondary: 92D15, 37N40
+- concept_id: ess
+  name: 进化稳定策略
+  category: 生物数学
+  msc_primary: 92D15
+  msc_secondary: 91A22, 91Axx
+- concept_id: phylogenetics
+  name: 系统发生学
+  category: 生物数学
+  msc_primary: 92D15
+  msc_secondary: 92B10, 05C05
+- concept_id: population_genetics
+  name: 群体遗传学
+  category: 生物数学
+  msc_primary: 92D10
+  msc_secondary: 92D15, 92Bxx
+- concept_id: coalescent_theory
+  name: 溯祖理论
+  category: 生物数学
+  msc_primary: 92D15
+  msc_secondary: 92D10, 60J70
+- concept_id: biological_oscillator
+  name: 生物振荡器
+  category: 生物数学
+  msc_primary: 92C20
+  msc_secondary: 34C15, 37N25
+- concept_id: neural_dynamics
+  name: 神经动力学
+  category: 生物数学
+  msc_primary: 92B20
+  msc_secondary: 37N25, 34Dxx
+- concept_id: hodgkin_huxley
+  name: Hodgkin-Huxley模型
+  category: 生物数学
+  msc_primary: 92C20
+  msc_secondary: 34Cxx, 37N25
+- concept_id: chemotaxis
+  name: 趋化性模型
+  category: 生物数学
+  msc_primary: 92C17
+  msc_secondary: 35K57, 35Q92
+- concept_id: morphogenesis
+  name: 形态发生
+  category: 生物数学
+  msc_primary: 92C15
+  msc_secondary: 35K57, 92B05
+- concept_id: finite_difference
+  name: 有限差分法
+  category: 计算数学
+  msc_primary: 65M06
+  msc_secondary: 65N06, 65Mxx
+- concept_id: finite_element
+  name: 有限元方法
+  category: 计算数学
+  msc_primary: 65N30
+  msc_secondary: 65M60, 65Mxx
+- concept_id: finite_volume
+  name: 有限体积法
+  category: 计算数学
+  msc_primary: 65M08
+  msc_secondary: 65N08, 65Mxx
+- concept_id: spectral_method
+  name: 谱方法
+  category: 计算数学
+  msc_primary: 65M70
+  msc_secondary: 65N35, 65Mxx
+- concept_id: sparse_matrix
+  name: 稀疏矩阵
+  category: 计算数学
+  msc_primary: 65F50
+  msc_secondary: 65Fxx, 65Y05
+- concept_id: iterative_method
+  name: 迭代法
+  category: 计算数学
+  msc_primary: 65F10
+  msc_secondary: 65Fxx
+- concept_id: conjugate_gradient_method
+  name: 共轭梯度法
+  category: 计算数学
+  msc_primary: 65F10
+  msc_secondary: 65Fxx
+- concept_id: multigrid
+  name: 多重网格法
+  category: 计算数学
+  msc_primary: 65N55
+  msc_secondary: 65F10, 65M55
+- concept_id: preconditioner
+  name: 预条件子
+  category: 计算数学
+  msc_primary: 65F08
+  msc_secondary: 65Fxx
+- concept_id: numerical_integration
+  name: 数值积分
+  category: 计算数学
+  msc_primary: 65D30
+  msc_secondary: 65Dxx
+- concept_id: numerical_ode
+  name: 常微分方程数值解
+  category: 计算数学
+  msc_primary: 65L05
+  msc_secondary: 65Lxx
+- concept_id: runge_kutta
+  name: Runge-Kutta方法
+  category: 计算数学
+  msc_primary: 65L06
+  msc_secondary: 65L05, 65Lxx
+- concept_id: numerical_pde
+  name: 偏微分方程数值解
+  category: 计算数学
+  msc_primary: 65M06
+  msc_secondary: 65Nxx, 65Mxx
+- concept_id: monte_carlo_numerical
+  name: 蒙特卡洛数值方法
+  category: 计算数学
+  msc_primary: 65C05
+  msc_secondary: 65Dxx, 60H35
+- concept_id: fast_fourier_transform
+  name: 快速傅里叶变换
+  category: 计算数学
+  msc_primary: 65T50
+  msc_secondary: 42A38, 65Txx
+- concept_id: numerical_linear_algebra
+  name: 数值线性代数
+  category: 计算数学
+  msc_primary: 65Fxx
+  msc_secondary: 65Y05, 15Axx
+- concept_id: domain_decomposition
+  name: 区域分解
+  category: 计算数学
+  msc_primary: 65M55
+  msc_secondary: 65N55, 65Y05
+- concept_id: adaptive_mesh
+  name: 自适应网格
+  category: 计算数学
+  msc_primary: 65M50
+  msc_secondary: 65N50, 65D17
+- concept_id: uncertainty_quantification
+  name: 不确定性量化
+  category: 计算数学
+  msc_primary: 65Cxx
+  msc_secondary: 60H35, 65Mxx
+- concept_id: classical_mechanics
+  name: 经典力学
+  category: 物理数学
+  msc_primary: 70Fxx
+  msc_secondary: 37Jxx
+- concept_id: lagrangian
+  name: 拉格朗日力学
+  category: 物理数学
+  msc_primary: 70H03
+  msc_secondary: 37Jxx, 70Fxx
+- concept_id: hamiltonian
+  name: 哈密顿力学
+  category: 物理数学
+  msc_primary: 70H05
+  msc_secondary: 37Jxx, 70Fxx
+- concept_id: hamiltonian_system
+  name: 哈密顿系统
+  category: 动力系统
+  msc_primary: 37Jxx
+  msc_secondary: 70Hxx, 53Dxx
+- concept_id: quantum_mechanics
+  name: 量子力学
+  category: 物理数学
+  msc_primary: 81Qxx
+  msc_secondary: 81Pxx
+- concept_id: schrodinger_equation
+  name: 薛定谔方程
+  category: 物理数学
+  msc_primary: 81Q05
+  msc_secondary: 35J10, 81Qxx
+- concept_id: path_integral
+  name: 路径积分
+  category: 物理数学
+  msc_primary: 81S40
+  msc_secondary: 81Txx, 58D30
+- concept_id: gauge_theory
+  name: 规范理论
+  category: 物理数学
+  msc_primary: 81T13
+  msc_secondary: 53C07, 81Txx
+- concept_id: general_relativity
+  name: 广义相对论
+  category: 物理数学
+  msc_primary: 83Cxx
+  msc_secondary: 53C50, 83Exx
+- concept_id: statistical_mechanics
+  name: 统计力学
+  category: 物理数学
+  msc_primary: 82Bxx
+  msc_secondary: 60K35, 82Cxx
+- concept_id: phase_transition
+  name: 相变理论
+  category: 物理数学
+  msc_primary: 82B26
+  msc_secondary: 82B27, 82Bxx
+- concept_id: electromagnetism
+  name: 电磁学
+  category: 物理数学
+  msc_primary: 78Axx
+  msc_secondary: 35Q61, 35Q60
+- concept_id: fluid_dynamics
+  name: 流体动力学
+  category: 物理数学
+  msc_primary: 76Dxx
+  msc_secondary: 35Q30, 76D05
+- concept_id: turbulence
+  name: 湍流理论
+  category: 物理数学
+  msc_primary: 76Fxx
+  msc_secondary: 76F05, 76F20
+- concept_id: quantum_field_theory
+  name: 量子场论
+  category: 物理数学
+  msc_primary: 81Txx
+  msc_secondary: 81T08, 81T10
+- concept_id: renormalization
+  name: 重整化群
+  category: 物理数学
+  msc_primary: 81T17
+  msc_secondary: 81Txx, 82B28
+- concept_id: conformal_field_theory
+  name: 共形场论
+  category: 物理数学
+  msc_primary: 81T40
+  msc_secondary: 81Rxx, 81Txx
+- concept_id: string_theory
+  name: 弦理论
+  category: 物理数学
+  msc_primary: 81T30
+  msc_secondary: 81Txx, 83E30
+- concept_id: supersymmetry
+  name: 超对称
+  category: 物理数学
+  msc_primary: 81T60
+  msc_secondary: 14D21, 58A50
+- concept_id: integrable_system
+  name: 可积系统
+  category: 物理数学
+  msc_primary: 37Kxx
+  msc_secondary: 35Q51, 58J72
+- concept_id: data_preprocessing
+  name: 数据预处理
+  category: 数据科学
+  msc_primary: 62Nxx
+  msc_secondary: 68T05
+- concept_id: feature_engineering
+  name: 特征工程
+  category: 数据科学
+  msc_primary: 62Hxx
+  msc_secondary: 68T05, 62-07
+- concept_id: pca
+  name: 主成分分析
+  category: 数据科学
+  msc_primary: 62H25
+  msc_secondary: 62Hxx, 15A18
+- concept_id: svm
+  name: 支持向量机
+  category: 数据科学
+  msc_primary: 68T05
+  msc_secondary: 62H30, 90C90
+- concept_id: decision_tree
+  name: 决策树
+  category: 数据科学
+  msc_primary: 68T05
+  msc_secondary: 62H30, 62-07
+- concept_id: random_forest
+  name: 随机森林
+  category: 数据科学
+  msc_primary: 68T05
+  msc_secondary: 62H30, 62-07
+- concept_id: gradient_boosting
+  name: 梯度提升
+  category: 数据科学
+  msc_primary: 68T05
+  msc_secondary: 62H30, 62-07
+- concept_id: neural_network
+  name: 神经网络
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 92B20, 68T05
+- concept_id: backpropagation
+  name: 反向传播
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 68T05, 90C26
+- concept_id: deep_learning
+  name: 深度学习
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 68T05, 94A08
+- concept_id: cnn
+  name: 卷积神经网络
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 68T45, 68U10
+- concept_id: rnn
+  name: 循环神经网络
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 68T05, 93C57
+- concept_id: lstm
+  name: 长短期记忆网络
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 68T05, 93C57
+- concept_id: attention
+  name: 注意力机制
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 68T05, 94A12
+- concept_id: transformer
+  name: Transformer
+  category: 数据科学
+  msc_primary: 68T50
+  msc_secondary: 68T07, 68T05
+- concept_id: adam_optimizer
+  name: Adam优化器
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 90C26
+- concept_id: batch_normalization
+  name: 批归一化
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 68T05
+- concept_id: dropout
+  name: Dropout正则化
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 68T05
+- concept_id: autoencoder
+  name: 自编码器
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 62H30, 68T05
+- concept_id: gan
+  name: 生成对抗网络
+  category: 数据科学
+  msc_primary: 68T07
+  msc_secondary: 68T05, 94A08
+- concept_id: reinforcement_learning
+  name: 强化学习
+  category: 数据科学
+  msc_primary: 68T05
+  msc_secondary: 93E35, 91A80
+- concept_id: higher_category
+  name: 高阶范畴
+  category: 范畴论
+  msc_primary: 18Nxx
+  msc_secondary: 18D05, 55U35
+- concept_id: infinity_category
+  name: 无穷范畴
+  category: 范畴论
+  msc_primary: 18N60
+  msc_secondary: 55U35, 18G55
+- concept_id: model_category
+  name: 模型范畴
+  category: 范畴论
+  msc_primary: 18N40
+  msc_secondary: 55U35, 18G30
+- concept_id: simplicial_set
+  name: 单纯形集
+  category: 范畴论
+  msc_primary: 18N50
+  msc_secondary: 55U10, 18G30
+- concept_id: monoidal_category
+  name: 幺半范畴
+  category: 范畴论
+  msc_primary: 18M05
+  msc_secondary: 18D10, 16T05
+- concept_id: abelian_category
+  name: Abel范畴
+  category: 范畴论
+  msc_primary: 18E10
+  msc_secondary: 18G50, 16Exx
+- concept_id: triangulated_category
+  name: 三角范畴
+  category: 范畴论
+  msc_primary: 18G80
+  msc_secondary: 14F08, 16E35
+- concept_id: topos
+  name: 拓扑斯
+  category: 范畴论
+  msc_primary: 18F10
+  msc_secondary: 03G30, 14F20
+- concept_id: adjoint_functor
+  name: 伴随函子
+  category: 范畴论
+  msc_primary: 18A40
+  msc_secondary: 18A25, 18A30
+- concept_id: kan_extension
+  name: Kan扩张
+  category: 范畴论
+  msc_primary: 18A25
+  msc_secondary: 18A40, 18G10
+- concept_id: enriched_category
+  name: 富范畴
+  category: 范畴论
+  msc_primary: 18D20
+  msc_secondary: 18D15, 18Mxx
+- concept_id: 2_category
+  name: 2-范畴
+  category: 范畴论
+  msc_primary: 18N10
+  msc_secondary: 18D05, 18A25
+- concept_id: fibered_category
+  name: 纤维范畴
+  category: 范畴论
+  msc_primary: 18F20
+  msc_secondary: 14A20, 18D30
+- concept_id: stack_category
+  name: 堆叠范畴
+  category: 范畴论
+  msc_primary: 14A20
+  msc_secondary: 18F20, 14D23
+- concept_id: derived_functor_cat
+  name: 导出函子（范畴论）
+  category: 范畴论
+  msc_primary: 18G10
+  msc_secondary: 18G80, 18E10
+- concept_id: limits_colimits
+  name: 极限与余极限
+  category: 范畴论
+  msc_primary: 18A30
+  msc_secondary: 18A35, 18A40
+- concept_id: yoneda_lemma
+  name: 米田引理
+  category: 范畴论
+  msc_primary: 18A25
+  msc_secondary: 18A30, 18F20
+- concept_id: representable_functor
+  name: 可表函子
+  category: 范畴论
+  msc_primary: 18A25
+  msc_secondary: 18A30, 18F20
+- concept_id: groupoid
+  name: 广群
+  category: 范畴论
+  msc_primary: 18B40
+  msc_secondary: 20L05, 18D35
+- concept_id: bicategory
+  name: 双范畴
+  category: 范畴论
+  msc_primary: 18N10
+  msc_secondary: 18D05, 18A25
+- concept_id: derived_category
+  name: 导出范畴
+  category: 同调代数
+  msc_primary: 18G80
+  msc_secondary: 14F08, 16E35
+- concept_id: spectral_sequence
+  name: 谱序列
+  category: 同调代数
+  msc_primary: 18G40
+  msc_secondary: 55Txx, 18G10
+- concept_id: tor_functor
+  name: Tor函子
+  category: 同调代数
+  msc_primary: 18G15
+  msc_secondary: 13D07, 16E30
+- concept_id: ext_functor
+  name: Ext函子
+  category: 同调代数
+  msc_primary: 18G15
+  msc_secondary: 13D09, 16E30
+- concept_id: group_cohomology
+  name: 群上同调
+  category: 同调代数
+  msc_primary: 20J06
+  msc_secondary: 18Gxx, 55N91
+- concept_id: sheaf_cohomology
+  name: 层上同调
+  category: 同调代数
+  msc_primary: 14F25
+  msc_secondary: 18F20, 32C35
+- concept_id: local_cohomology
+  name: 局部上同调
+  category: 同调代数
+  msc_primary: 13D45
+  msc_secondary: 14B15, 32C36
+- concept_id: hypercohomology
+  name: 超上同调
+  category: 同调代数
+  msc_primary: 14F40
+  msc_secondary: 18G40, 32C35
+- concept_id: duality_cohomology
+  name: 对偶定理（上同调）
+  category: 同调代数
+  msc_primary: 14Fxx
+  msc_secondary: 18Gxx, 14B15
+- concept_id: perfect_complex
+  name: 完美复形
+  category: 同调代数
+  msc_primary: 14F08
+  msc_secondary: 18E30, 13D09
+- concept_id: tilting_theory
+  name: 倾斜理论
+  category: 同调代数
+  msc_primary: 16E35
+  msc_secondary: 18E30, 14F08
+- concept_id: t_structure
+  name: t-结构
+  category: 同调代数
+  msc_primary: 18G80
+  msc_secondary: 14F08, 16E35
+- concept_id: perverse_sheaf
+  name: 反常层
+  category: 同调代数
+  msc_primary: 32S60
+  msc_secondary: 14F17, 14F43
+- concept_id: intersection_cohomology
+  name: 相交上同调
+  category: 同调代数
+  msc_primary: 14F43
+  msc_secondary: 32S60, 55N33
+- concept_id: koszul_duality
+  name: Koszul对偶
+  category: 同调代数
+  msc_primary: 16S37
+  msc_secondary: 18Gxx, 17Bxx
+- concept_id: motive
+  name: Motive
+  category: 代数几何
+  msc_primary: 14C15
+  msc_secondary: 14F42, 19E15
+- concept_id: algebraic_stack
+  name: 代数堆叠
+  category: 代数几何
+  msc_primary: 14D23
+  msc_secondary: 14A20, 18F20
+- concept_id: deligne_mumford
+  name: Deligne-Mumford堆叠
+  category: 代数几何
+  msc_primary: 14D22
+  msc_secondary: 14D23, 14H10
+- concept_id: moduli_space
+  name: 模空间
+  category: 代数几何
+  msc_primary: 14D20
+  msc_secondary: 14H10, 14J10
+- concept_id: moduli_stack
+  name: 模堆叠
+  category: 代数几何
+  msc_primary: 14D23
+  msc_secondary: 14D20, 14A20
+- concept_id: etale_cohomology
+  name: 平展上同调
+  category: 代数几何
+  msc_primary: 14F20
+  msc_secondary: 14F30, 18F20
+- concept_id: crystalline_cohomology
+  name: 晶体上同调
+  category: 代数几何
+  msc_primary: 14F30
+  msc_secondary: 14F20, 14G22
+- concept_id: de_rham_cohomology
+  name: de Rham上同调
+  category: 代数几何
+  msc_primary: 14F40
+  msc_secondary: 32C35, 58A12
+- concept_id: intersection_theory
+  name: 相交理论
+  category: 代数几何
+  msc_primary: 14C17
+  msc_secondary: 14C15, 14Nxx
+- concept_id: chow_ring
+  name: Chow环
+  category: 代数几何
+  msc_primary: 14C15
+  msc_secondary: 14C17, 14F43
+- concept_id: hodge_theory
+  name: Hodge理论
+  category: 代数几何
+  msc_primary: 14C30
+  msc_secondary: 32S35, 32G20
+- concept_id: biration_geometry
+  name: 双有理几何
+  category: 代数几何
+  msc_primary: 14E05
+  msc_secondary: 14E30, 14J40
+- concept_id: minimal_model
+  name: 极小模型理论
+  category: 代数几何
+  msc_primary: 14E30
+  msc_secondary: 14J40, 14E05
+- concept_id: derived_algebraic_geometry
+  name: 导出代数几何
+  category: 代数几何
+  msc_primary: 14A30
+  msc_secondary: 18G80, 14F08
+- concept_id: representation_lie_algebra
+  name: 李代数表示论
+  category: 表示论
+  msc_primary: 17B10
+  msc_secondary: 20C33, 22E47
+- concept_id: highest_weight
+  name: 最高权理论
+  category: 表示论
+  msc_primary: 17B10
+  msc_secondary: 22E47, 05E10
+- concept_id: category_O
+  name: 范畴O
+  category: 表示论
+  msc_primary: 17B10
+  msc_secondary: 16Gxx, 20C08
+- concept_id: geometric_representation
+  name: 几何表示论
+  category: 表示论
+  msc_primary: 20G05
+  msc_secondary: 14M15, 17B10
+- concept_id: modular_representation
+  name: 模表示论
+  category: 表示论
+  msc_primary: 20C20
+  msc_secondary: 20C33, 16Gxx
+- concept_id: induced_representation
+  name: 诱导表示
+  category: 表示论
+  msc_primary: 20C05
+  msc_secondary: 20C35, 22D30
+- concept_id: mackey_theory
+  name: Mackey理论
+  category: 表示论
+  msc_primary: 20C05
+  msc_secondary: 22D30, 20C35
+- concept_id: weight_theory
+  name: 权理论
+  category: 表示论
+  msc_primary: 17B10
+  msc_secondary: 22E47, 20G05
+- concept_id: borel_weil
+  name: Borel-Weil定理
+  category: 表示论
+  msc_primary: 22E47
+  msc_secondary: 14M15, 32L10
+- concept_id: class_field_theory
+  name: 类域论
+  category: 数论高级
+  msc_primary: 11R37
+  msc_secondary: 11R23
+- concept_id: langlands_program
+  name: Langlands纲领
+  category: 数论高级
+  msc_primary: 11R39
+  msc_secondary: 11F70, 22E55
+- concept_id: abelian_variety
+  name: Abel簇
+  category: 数论高级
+  msc_primary: 14Kxx
+  msc_secondary: 11G10, 14H40
+- concept_id: p_adic_number
+  name: p进数
+  category: 数论高级
+  msc_primary: 11Sxx
+  msc_secondary: 11R23, 11F85
+- concept_id: valuation
+  name: 赋值论
+  category: 数论高级
+  msc_primary: 12J20
+  msc_secondary: 11Sxx, 13A18
+- concept_id: local_global
+  name: 局部-整体原理
+  category: 数论高级
+  msc_primary: 11G30
+  msc_secondary: 14G05, 11Dxx
+- concept_id: diophantine_geometry
+  name: 丢番图几何
+  category: 数论高级
+  msc_primary: 11Gxx
+  msc_secondary: 14Gxx, 11Dxx
+- concept_id: weil_conjecture
+  name: Weil猜想
+  category: 数论高级
+  msc_primary: 14F20
+  msc_secondary: 14G10, 11M38
+- concept_id: zeta_function
+  name: Zeta函数
+  category: 数论高级
+  msc_primary: 11M41
+  msc_secondary: 11M06, 14G10
+- concept_id: symplectic_manifold
+  name: 辛流形
+  category: 动力系统
+  msc_primary: 53D05
+  msc_secondary: 37Jxx, 53Dxx
+- concept_id: ergodic_theory
+  name: 遍历理论
+  category: 动力系统
+  msc_primary: 37Axx
+  msc_secondary: 28Dxx, 60G10
+- concept_id: chaos_theory
+  name: 混沌理论
+  category: 动力系统
+  msc_primary: 37D45
+  msc_secondary: 37Cxx, 37Nxx
+- concept_id: nonlinear_dynamics
+  name: 非线性动力学
+  category: 动力系统
+  msc_primary: 37Nxx
+  msc_secondary: 34Cxx, 34Dxx
+- concept_id: bifurcation_theory
+  name: 分岔理论
+  category: 动力系统
+  msc_primary: 37Gxx
+  msc_secondary: 34C23, 34K18
+- concept_id: k_theory_dynamics
+  name: 动力系统K理论
+  category: 动力系统
+  msc_primary: 37B05
+  msc_secondary: 19Lxx, 55N15
+- concept_id: conley_index
+  name: Conley指数
+  category: 动力系统
+  msc_primary: 37B30
+  msc_secondary: 55Nxx, 37B35
+- concept_id: symbolic_dynamics
+  name: 符号动力学
+  category: 动力系统
+  msc_primary: 37B10
+  msc_secondary: 37B40, 68R15
+- concept_id: descriptive_set_theory
+  name: 描述集合论
+  category: 数理逻辑
+  msc_primary: 03E15
+  msc_secondary: 03Exx
+- concept_id: type_theory
+  name: 类型论
+  category: 数理逻辑
+  msc_primary: 03B15
+  msc_secondary: 03B40, 68N18
+- concept_id: homotopy_type_theory
+  name: 同伦类型论
+  category: 数理逻辑
+  msc_primary: 03B38
+  msc_secondary: 55U35, 68V20
+- concept_id: constructive_mathematics
+  name: 构造数学
+  category: 数理逻辑
+  msc_primary: 03F50
+  msc_secondary: 03F55, 03B20
+- concept_id: intuitionistic_logic
+  name: 直觉主义逻辑
+  category: 数理逻辑
+  msc_primary: 03B20
+  msc_secondary: 03F55, 03C90
+- concept_id: modal_logic
+  name: 模态逻辑
+  category: 数理逻辑
+  msc_primary: 03B45
+  msc_secondary: 03B42, 03B44
+- concept_id: reverse_math
+  name: 逆数学
+  category: 数理逻辑
+  msc_primary: 03B30
+  msc_secondary: 03F35, 03D80
+- concept_id: ordinal_analysis
+  name: 序数分析
+  category: 数理逻辑
+  msc_primary: 03F15
+  msc_secondary: 03F05, 03E10
+- concept_id: categorical_logic
+  name: 范畴逻辑
+  category: 数理逻辑
+  msc_primary: 03G30
+  msc_secondary: 18B25, 03B45
+- concept_id: real_numbers
+  name: 实数
+  category: 分析学
+  msc_primary: 26A03
+  msc_secondary: 11A99
+- concept_id: logic
+  name: 逻辑
+  category: 数论逻辑
+  msc_primary: 03Bxx
+  msc_secondary: 03B05, 03B10
+- concept_id: integers
+  name: 整数
+  category: 数论逻辑
+  msc_primary: 11A99
+  msc_secondary: 11A41, 13A99
+- concept_id: euclidean_space
+  name: 欧几里得空间
+  category: 几何拓扑
+  msc_primary: 51M05
+  msc_secondary: 51N20, 54E35

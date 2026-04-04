@@ -23,6 +23,13 @@ import FormalMath.UniformConvergence
 import FormalMath.FourierSeries
 import FormalMath.GammaFunction
 
+-- 分析学不等式（5个）- 第13批新增（定理61-65）
+import FormalMath.YoungInequality
+import FormalMath.HolderInequality
+import FormalMath.MinkowskiInequality
+import FormalMath.BorelCantelli
+import FormalMath.StrongLawOfLargeNumbers
+
 -- 分析学进阶（10个）- 第8批新增
 import FormalMath.SobolevSpace
 import FormalMath.DistributionTheory
@@ -70,6 +77,13 @@ import FormalMath.ArithmeticGeometry
 import FormalMath.LanglandsProgram
 import FormalMath.MotiveTheory
 
+-- 算术几何经典定理（5个）- 第13批新增（定理86-90）
+import FormalMath.WeilConjectures
+import FormalMath.MordellWeil
+import FormalMath.FaltingsTheorem
+import FormalMath.TaniyamaShimura
+import FormalMath.PoincareConjecture
+
 -- 代数学应用（10个）- 矩阵与李代数
 -- (将在后续批次补充)
 
@@ -97,8 +111,25 @@ import FormalMath.SymplecticGeometry
 -- 几何与拓扑应用（10个）
 -- (将在后续批次补充)
 
+-- ==================== 数理逻辑基础（5个）====================
+
+-- 集合论、模型论、证明论、可计算性理论、类型论 - 第14批新增（定理66-70）
+import FormalMath.SetTheory
+import FormalMath.ModelTheory
+import FormalMath.ProofTheory
+import FormalMath.ComputabilityTheory
+import FormalMath.TypeTheory
+
 -- ==================== 统计与数据科学（10个）====================
 -- (将在后续批次补充)
+
+-- ==================== 高阶数学与基础（5个）====================
+-- 第14批新增（定理96-100）- 最终批次
+import FormalMath.p-adicHodgeTheory
+import FormalMath.PerfectoidSpaces
+import FormalMath.HigherCategoryTheory
+import FormalMath.HomotopyTypeTheory
+import FormalMath.UnivalentFoundations
 
 -- 库版本信息
 def version := "4.20.0"

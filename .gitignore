@@ -1,0 +1,256 @@
+# =============================================================================
+# FormalMath 项目全局 .gitignore
+# 此文件定义整个项目中应被Git忽略的文件和目录
+# =============================================================================
+
+# =============================================================================
+# Lean4 编译产物
+# =============================================================================
+*.olean
+*.ilean
+lakefile.olean
+lean_packages/
+.lake/
+/build/
+!build/.gitkeep
+
+# =============================================================================
+# Python 缓存和虚拟环境
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.venv/
+.python-version
+
+# Python 测试和覆盖率
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+*.cover
+.hypothesis/
+.pytype/
+
+# =============================================================================
+# Node.js / JavaScript
+# =============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.pnpm-store/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 构建输出
+dist/
+dist-ssr/
+build/
+*.local
+*.tsbuildinfo
+.cache/
+.parcel-cache
+.eslintcache
+.stylelintcache
+
+# =============================================================================
+# IDE 和编辑器配置
+# =============================================================================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Vim/Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# =============================================================================
+# 操作系统文件
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.nfs*
+.directory
+
+# =============================================================================
+# 日志文件
+# =============================================================================
+*.log
+logs/
+log/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =============================================================================
+# 环境配置文件（包含敏感信息）
+# =============================================================================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+!.env.example
+!.env.*.example
+
+# =============================================================================
+# 临时文件
+# =============================================================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+tmp/
+temp/
+.tmp/
+.temp/
+
+# =============================================================================
+# 数据库文件
+# =============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# =============================================================================
+# 容器和部署
+# =============================================================================
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes secrets（防止意外提交）
+*-secret.yaml
+*-secrets.yaml
+!*-secret.yaml.example
+!*-secrets.yaml.example
+
+# =============================================================================
+# 文档生成
+# =============================================================================
+docs/generated/*
+!docs/generated/.gitkeep
+
+# =============================================================================
+# 项目特定输出目录
+# =============================================================================
+output/temp/
+output/cache/
+search_index/temp/
+vector_store/temp/
+
+# =============================================================================
+# 备份文件
+# =============================================================================
+*.backup
+*.bak
+*.orig
+*.rej
+*~.nib
+
+# =============================================================================
+# 其他
+# =============================================================================
+# 本地配置文件
+*.local
+local/
+
+# 测试输出
+test-output/
+test-results/
+results/
+
+# 缓存
+.cache/

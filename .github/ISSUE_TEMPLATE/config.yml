@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 社区行为准则
+    url: https://github.com/formalmath/formalmath/blob/main/CODE_OF_CONDUCT.md
+    about: 请阅读我们的社区行为准则，了解如何友好地参与社区。
+  - name: 项目文档
+    url: https://github.com/formalmath/formalmath/blob/main/00-FormalMath项目使用指南-完整版.md
+    about: 查看项目使用指南，了解如何开始使用本项目。
+  - name: 贡献指南
+    url: https://github.com/formalmath/formalmath/blob/main/CONTRIBUTING.md
+    about: 了解如何为 FormalMath 项目做出贡献。

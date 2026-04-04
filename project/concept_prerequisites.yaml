@@ -118,6 +118,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 40A05
+  msc_secondary:
+  - 40A10
+  - 40A25
 - concept_id: uniform_convergence
   name: 一致收敛
   category: 分析学
@@ -140,6 +144,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 20
+  msc_primary: 40A30
+  msc_secondary:
+  - 26A03
+  - 30A10
 - concept_id: fourier_analysis
   name: Fourier分析
   category: 分析学
@@ -208,6 +216,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 20
+  msc_primary: 30E20
+  msc_secondary:
+  - 30D30
+  - 30Cxx
 - concept_id: conformal_mapping
   name: 共形映射
   category: 分析学
@@ -221,6 +233,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 25
+  msc_primary: 30C35
+  msc_secondary:
+  - 30C20
+  - 30D99
 - concept_id: harmonic_analysis
   name: 调和分析
   category: 分析学
@@ -312,6 +328,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 46E30
+  msc_secondary:
+  - 46B25
+  - 42A38
 - concept_id: functional_analysis
   name: 泛函分析
   category: 分析学
@@ -360,6 +380,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 30
+  msc_primary: 46B25
+  msc_secondary:
+  - 46Axx
+  - 47Axx
 - concept_id: hilbert_space
   name: Hilbert空间
   category: 分析学
@@ -382,6 +406,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 35
+  msc_primary: 46C05
+  msc_secondary:
+  - 46C15
+  - 47Axx
 - concept_id: operator_theory
   name: 算子理论
   category: 分析学
@@ -421,6 +449,10 @@ concepts:
   successors: []
   difficulty: 5
   estimated_hours: 45
+  msc_primary: 47A10
+  msc_secondary:
+  - 47A05
+  - 47B15
 - concept_id: distribution_theory
   name: 分布理论
   category: 分析学
@@ -437,6 +469,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 35
+  msc_primary: 46Fxx
+  msc_secondary:
+  - 46F10
+  - 35Dxx
 - concept_id: sobolev_spaces
   name: Sobolev空间
   category: 分析学
@@ -628,6 +664,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 13C99
+  msc_secondary:
+  - 16Dxx
+  - 18F99
 - concept_id: linear_algebra
   name: 线性代数
   category: 代数学
@@ -746,6 +786,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 15A69
+  msc_secondary:
+  - 16D20
+  - 18D10
 - concept_id: homological_algebra
   name: 同调代数
   category: 代数学
@@ -834,6 +878,10 @@ concepts:
     relation: 被依赖
   difficulty: 2
   estimated_hours: 15
+  msc_primary: 20Bxx
+  msc_secondary:
+  - 20Cxx
+  - 57Sxx
 - concept_id: sylow_theory
   name: Sylow理论
   category: 代数学
@@ -850,6 +898,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 20
+  msc_primary: 20D20
+  msc_secondary:
+  - 20D15
+  - 20F50
 - concept_id: solvable_group
   name: 可解群
   category: 代数学
@@ -969,6 +1021,10 @@ concepts:
     relation: 被依赖
   difficulty: 5
   estimated_hours: 55
+  msc_primary: 14A15
+  msc_secondary:
+  - 14A20
+  - 14Fxx
 - concept_id: sheaf
   name: 层
   category: 代数学
@@ -985,6 +1041,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 14F05
+  msc_secondary:
+  - 18F20
+  - 32C35
 - concept_id: cohomology_sheaf
   name: 上同调
   category: 代数学
@@ -1004,6 +1064,10 @@ concepts:
     relation: 被依赖
   difficulty: 5
   estimated_hours: 50
+  msc_primary: 14Fxx
+  msc_secondary:
+  - 18G40
+  - 32C35
 - concept_id: category_theory
   name: 范畴论
   category: 代数学
@@ -1092,6 +1156,10 @@ concepts:
     relation: 被依赖
   difficulty: 2
   estimated_hours: 15
+  msc_primary: 54C05
+  msc_secondary:
+  - 54C10
+  - 54C20
 - concept_id: compactness
   name: 紧致性
   category: 几何拓扑
@@ -1105,6 +1173,10 @@ concepts:
   successors: []
   difficulty: 2
   estimated_hours: 15
+  msc_primary: 54D30
+  msc_secondary:
+  - 54D20
+  - 54E35
 - concept_id: connectedness
   name: 连通性
   category: 几何拓扑
@@ -1121,6 +1193,10 @@ concepts:
     relation: 被依赖
   difficulty: 2
   estimated_hours: 12
+  msc_primary: 54D05
+  msc_secondary:
+  - 54D10
+  - 54F15
 - concept_id: homotopy
   name: 同伦
   category: 几何拓扑
@@ -1160,6 +1236,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 55Q05
+  msc_secondary:
+  - 55Q07
+  - 57M05
 - concept_id: covering_space
   name: 覆叠空间
   category: 几何拓扑
@@ -1173,6 +1253,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 57M10
+  msc_secondary:
+  - 55R05
+  - 14E20
 - concept_id: homology_group
   name: 同调群
   category: 几何拓扑
@@ -1189,6 +1273,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 35
+  msc_primary: 55Nxx
+  msc_secondary:
+  - 55U15
+  - 18Gxx
 - concept_id: cohomology
   name: 上同调
   category: 几何拓扑
@@ -1211,6 +1299,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 55Nxx
+  msc_secondary:
+  - 55U15
+  - 18Gxx
 - concept_id: manifold
   name: 流形
   category: 几何拓扑
@@ -1233,6 +1325,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 35
+  msc_primary: 57N99
+  msc_secondary:
+  - 57R99
+  - 53A99
 - concept_id: tangent_space
   name: 切空间
   category: 几何拓扑
@@ -1255,6 +1351,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 53B05
+  msc_secondary:
+  - 58A05
+  - 53A45
 - concept_id: tensor_field
   name: 张量场
   category: 几何拓扑
@@ -1277,6 +1377,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 30
+  msc_primary: 53A45
+  msc_secondary:
+  - 58A10
+  - 15A72
 - concept_id: differential_form
   name: 微分形式
   category: 几何拓扑
@@ -1342,6 +1446,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 30
+  msc_primary: 53B20
+  msc_secondary:
+  - 53C20
+  - 53A35
 - concept_id: curvature
   name: 曲率
   category: 几何拓扑
@@ -1358,6 +1466,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 53A04
+  msc_secondary:
+  - 53B20
+  - 53C21
 - concept_id: geodesic
   name: 测地线
   category: 几何拓扑
@@ -1371,6 +1483,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 53C22
+  msc_secondary:
+  - 53B05
+  - 58E10
 - concept_id: connection
   name: 联络
   category: 几何拓扑
@@ -1387,6 +1503,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 35
+  msc_primary: 53B05
+  msc_secondary:
+  - 53C05
+  - 58A05
 - concept_id: fiber_bundle
   name: 纤维丛
   category: 几何拓扑
@@ -1406,6 +1526,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 45
+  msc_primary: 55R10
+  msc_secondary:
+  - 57R22
+  - 53C05
 - concept_id: characteristic_class
   name: 示性类
   category: 几何拓扑
@@ -1630,6 +1754,10 @@ concepts:
     relation: 被依赖
   difficulty: 2
   estimated_hours: 18
+  msc_primary: 13A15
+  msc_secondary:
+  - 11R29
+  - 16D25
 - concept_id: class_number
   name: 类数
   category: 数论逻辑
@@ -1831,6 +1959,10 @@ concepts:
     relation: 被依赖
   difficulty: 2
   estimated_hours: 20
+  msc_primary: 03B10
+  msc_secondary:
+  - 03C07
+  - 03F03
 - concept_id: proof_theory
   name: 证明论
   name_en: Proof Theory
@@ -1954,6 +2086,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 30
+  msc_primary: 03Dxx
+  msc_secondary:
+  - 03D10
+  - 68Q05
 - concept_id: complexity
   name: 复杂度
   category: 数论逻辑
@@ -1964,6 +2100,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 35
+  msc_primary: 68Q15
+  msc_secondary:
+  - 03D15
+  - 68Q17
 - concept_id: formalized_proof
   name: 形式化证明
   category: 数论逻辑
@@ -1980,6 +2120,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 45
+  msc_primary: 03Fxx
+  msc_secondary:
+  - 03B35
+  - 68V15
 - concept_id: probability_measure
   name: 概率测度
   category: 概率统计
@@ -2196,6 +2340,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 30
+  msc_primary: 62Fxx
+  msc_secondary:
+  - 62Jxx
+  - 62Gxx
 - concept_id: parameter_estimation
   name: 参数估计
   category: 概率统计
@@ -2209,6 +2357,10 @@ concepts:
     relation: 被依赖
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 62F10
+  msc_secondary:
+  - 62F12
+  - 62J05
 - concept_id: hypothesis_testing
   name: 假设检验
   category: 概率统计
@@ -2276,6 +2428,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 62M10
+  msc_secondary:
+  - 62M20
+  - 91B84
 - concept_id: variance
   name: 方差
   category: 概率统计
@@ -2552,6 +2708,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 90C51
+  msc_secondary:
+  - 90C05
+  - 65K05
 - concept_id: integer_programming
   name: 整数规划
   category: 最优化
@@ -2632,6 +2792,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 28
+  msc_primary: 90C20
+  msc_secondary:
+  - 90C25
+  - 65K05
 - concept_id: nonlinear_programming
   name: 非线性规划
   category: 最优化
@@ -2994,6 +3158,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 35
+  msc_primary: 93B30
+  msc_secondary:
+  - 93E12
+  - 62F10
 - concept_id: information
   name: 信息
   category: 信息论
@@ -3161,6 +3329,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 94B05
+  msc_secondary:
+  - 94B35
+  - 94B65
 - concept_id: data_compression
   name: 数据压缩
   category: 信息论
@@ -3264,6 +3436,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 94A62
+  msc_secondary:
+  - 94A60
+  - 68P25
 - concept_id: quantum_information
   name: 量子信息
   category: 信息论
@@ -3277,6 +3453,10 @@ concepts:
   successors: []
   difficulty: 5
   estimated_hours: 50
+  msc_primary: 81P45
+  msc_secondary:
+  - 94A40
+  - 81P15
 - concept_id: algorithmic_information
   name: 算法信息论
   category: 信息论
@@ -3466,6 +3646,10 @@ concepts:
   successors: []
   difficulty: 5
   estimated_hours: 60
+  msc_primary: 94A62
+  msc_secondary:
+  - 68P25
+  - 11T71
 - concept_id: homomorphic_encryption
   name: 同态加密
   category: 密码学
@@ -3508,6 +3692,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 55
+  msc_primary: 94A60
+  msc_secondary:
+  - 81P94
+  - 11T71
 - concept_id: blockchain_consensus
   name: 区块链共识
   category: 密码学
@@ -3521,6 +3709,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 40
+  msc_primary: 68M14
+  msc_secondary:
+  - 94A62
+  - 91A80
 - concept_id: side_channel
   name: 侧信道攻击
   category: 密码学
@@ -3547,6 +3739,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 45
+  msc_primary: 94A60
+  msc_secondary:
+  - 68P25
+  - 03Fxx
 - concept_id: lattice_based_crypto
   name: 格密码
   category: 密码学
@@ -3554,6 +3750,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 50
+  msc_primary: 94A60
+  msc_secondary:
+  - 11Hxx
+  - 68P25
 - concept_id: identity_based
   name: 基于身份的加密
   category: 密码学
@@ -3564,6 +3764,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 45
+  msc_primary: 94A62
+  msc_secondary:
+  - 11T71
+  - 14G50
 - concept_id: stochastic_calculus
   name: 随机分析
   category: 金融数学
@@ -3776,6 +3980,10 @@ concepts:
     relation: 被依赖
   difficulty: 5
   estimated_hours: 50
+  msc_primary: 91G20
+  msc_secondary:
+  - 60H10
+  - 91G80
 - concept_id: heston_model
   name: Heston模型
   category: 金融数学
@@ -3786,6 +3994,10 @@ concepts:
   successors: []
   difficulty: 5
   estimated_hours: 45
+  msc_primary: 91G20
+  msc_secondary:
+  - 60H10
+  - 60J70
 - concept_id: monte_carlo_simulation
   name: 蒙特卡洛模拟
   category: 金融数学
@@ -3819,6 +4031,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 35
+  msc_primary: 91G20
+  msc_secondary:
+  - 60G40
+  - 35R35
 - concept_id: binomial_tree
   name: 二叉树模型
   category: 金融数学
@@ -3832,6 +4048,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 25
+  msc_primary: 91G20
+  msc_secondary:
+  - 60J80
+  - 65C05
 - concept_id: fundamental_theorem
   name: 资产定价基本定理
   category: 金融数学
@@ -3842,6 +4062,10 @@ concepts:
   successors: []
   difficulty: 5
   estimated_hours: 45
+  msc_primary: 91G10
+  msc_secondary:
+  - 60G44
+  - 91G20
 - concept_id: interest_rate_model
   name: 利率模型
   category: 金融数学
@@ -3879,6 +4103,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 91G10
+  msc_secondary:
+  - 90C90
+  - 49N15
 - concept_id: risk_management
   name: 风险管理
   category: 金融数学
@@ -3889,6 +4117,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 35
+  msc_primary: 91G70
+  msc_secondary:
+  - 62P05
+  - 91G40
 - concept_id: population_dynamics
   name: 种群动力学
   category: 生物数学
@@ -4125,6 +4357,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 92C20
+  msc_secondary:
+  - 34C15
+  - 37N25
 - concept_id: neural_dynamics
   name: 神经动力学
   category: 生物数学
@@ -4141,6 +4377,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 45
+  msc_primary: 92B20
+  msc_secondary:
+  - 37N25
+  - 34Dxx
 - concept_id: hodgkin_huxley
   name: Hodgkin-Huxley模型
   category: 生物数学
@@ -4151,6 +4391,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 92C20
+  msc_secondary:
+  - 34Cxx
+  - 37N25
 - concept_id: chemotaxis
   name: 趋化性模型
   category: 生物数学
@@ -4161,6 +4405,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 92C17
+  msc_secondary:
+  - 35K57
+  - 35Q92
 - concept_id: morphogenesis
   name: 形态发生
   category: 生物数学
@@ -4171,6 +4419,10 @@ concepts:
   successors: []
   difficulty: 5
   estimated_hours: 50
+  msc_primary: 92C15
+  msc_secondary:
+  - 35K57
+  - 92B05
 - concept_id: finite_difference
   name: 有限差分法
   category: 计算数学
@@ -4364,6 +4616,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 35
+  msc_primary: 65C05
+  msc_secondary:
+  - 65Dxx
+  - 60H35
 - concept_id: fast_fourier_transform
   name: 快速傅里叶变换
   category: 计算数学
@@ -4388,6 +4644,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 40
+  msc_primary: 65Fxx
+  msc_secondary:
+  - 65Y05
+  - 15Axx
 - concept_id: domain_decomposition
   name: 区域分解
   category: 计算数学
@@ -4395,6 +4655,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 45
+  msc_primary: 65M55
+  msc_secondary:
+  - 65N55
+  - 65Y05
 - concept_id: adaptive_mesh
   name: 自适应网格
   category: 计算数学
@@ -4405,6 +4669,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 45
+  msc_primary: 65M50
+  msc_secondary:
+  - 65N50
+  - 65D17
 - concept_id: uncertainty_quantification
   name: 不确定性量化
   category: 计算数学
@@ -4412,6 +4680,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 45
+  msc_primary: 65Cxx
+  msc_secondary:
+  - 60H35
+  - 65Mxx
 - concept_id: classical_mechanics
   name: 经典力学
   category: 物理数学
@@ -4608,6 +4880,10 @@ concepts:
   successors: []
   difficulty: 3
   estimated_hours: 40
+  msc_primary: 78Axx
+  msc_secondary:
+  - 35Q61
+  - 35Q60
 - concept_id: fluid_dynamics
   name: 流体动力学
   category: 物理数学
@@ -4717,6 +4993,10 @@ concepts:
   successors: []
   difficulty: 5
   estimated_hours: 60
+  msc_primary: 81T60
+  msc_secondary:
+  - 14D21
+  - 58A50
 - concept_id: integrable_system
   name: 可积系统
   category: 物理数学
@@ -4730,6 +5010,10 @@ concepts:
   successors: []
   difficulty: 4
   estimated_hours: 50
+  msc_primary: 37Kxx
+  msc_secondary:
+  - 35Q51
+  - 58J72
 - concept_id: data_preprocessing
   name: 数据预处理
   category: 数据科学
@@ -4954,6 +5238,10 @@ concepts:
     relation: 被依赖
   difficulty: 4
   estimated_hours: 40
+  msc_primary: 68T07
+  msc_secondary:
+  - 68T05
+  - 94A12
 - concept_id: transformer
   name: Transformer
   category: 数据科学
@@ -5065,6 +5353,10 @@ concepts:
     stacks: 07K6
     arxiv: math.CT
   successors: []
+  msc_primary: 18Nxx
+  msc_secondary:
+  - 18D05
+  - 55U35
 - concept_id: infinity_category
   name: 无穷范畴
   name_en: Infinity-Category
@@ -5083,6 +5375,10 @@ concepts:
     kerodon: https://kerodon.net/tag/002Y
     arxiv: math.AT
   successors: []
+  msc_primary: 18N60
+  msc_secondary:
+  - 55U35
+  - 18G55
 - concept_id: model_category
   name: 模型范畴
   name_en: Model Category
@@ -5101,6 +5397,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/model+category
     kerodon: https://kerodon.net/tag/002Z
     arxiv: math.AT
+  msc_primary: 18N40
+  msc_secondary:
+  - 55U35
+  - 18G30
 - concept_id: simplicial_set
   name: 单纯形集
   name_en: Simplicial Set
@@ -5123,6 +5423,10 @@ concepts:
     kerodon: https://kerodon.net/tag/0009
     stacks: 014A
     arxiv: math.AT
+  msc_primary: 18N50
+  msc_secondary:
+  - 55U10
+  - 18G30
 - concept_id: monoidal_category
   name: 幺半范畴
   name_en: Monoidal Category
@@ -5140,6 +5444,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/monoidal+category
     arxiv: math.CT
   successors: []
+  msc_primary: 18M05
+  msc_secondary:
+  - 18D10
+  - 16T05
 - concept_id: abelian_category
   name: Abel范畴
   name_en: Abelian Category
@@ -5161,6 +5469,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/abelian+category
     stacks: 0109
     arxiv: math.CT
+  msc_primary: 18E10
+  msc_secondary:
+  - 18G50
+  - 16Exx
 - concept_id: triangulated_category
   name: 三角范畴
   name_en: Triangulated Category
@@ -5182,6 +5494,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/triangulated+category
     stacks: 05QI
     arxiv: math.CT
+  msc_primary: 18G80
+  msc_secondary:
+  - 14F08
+  - 16E35
 - concept_id: topos
   name: 拓扑斯
   name_en: Topos
@@ -5197,6 +5513,10 @@ concepts:
     stacks: 03A0
     arxiv: math.CT
   successors: []
+  msc_primary: 18F10
+  msc_secondary:
+  - 03G30
+  - 14F20
 - concept_id: adjoint_functor
   name: 伴随函子
   name_en: Adjoint Functor
@@ -5208,6 +5528,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/adjoint+functor
     arxiv: math.CT
   successors: []
+  msc_primary: 18A40
+  msc_secondary:
+  - 18A25
+  - 18A30
 - concept_id: kan_extension
   name: Kan扩张
   name_en: Kan Extension
@@ -5222,6 +5546,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/Kan+extension
     arxiv: math.CT
   successors: []
+  msc_primary: 18A25
+  msc_secondary:
+  - 18A40
+  - 18G10
 - concept_id: enriched_category
   name: 富范畴
   name_en: Enriched Category
@@ -5239,6 +5567,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/enriched+category
     arxiv: math.CT
   successors: []
+  msc_primary: 18D20
+  msc_secondary:
+  - 18D15
+  - 18Mxx
 - concept_id: 2_category
   name: 2-范畴
   name_en: 2-Category
@@ -5257,6 +5589,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/2-category
     kerodon: https://kerodon.net/tag/0030
     arxiv: math.CT
+  msc_primary: 18N10
+  msc_secondary:
+  - 18D05
+  - 18A25
 - concept_id: fibered_category
   name: 纤维范畴
   name_en: Fibered Category
@@ -5275,6 +5611,10 @@ concepts:
     stacks: 02XR
     arxiv: math.CT
   successors: []
+  msc_primary: 18F20
+  msc_secondary:
+  - 14A20
+  - 18D30
 - concept_id: stack_category
   name: 堆叠范畴
   name_en: Stack (Category Theory)
@@ -5290,6 +5630,10 @@ concepts:
     stacks: 02ZI
     arxiv: math.AG
   successors: []
+  msc_primary: 14A20
+  msc_secondary:
+  - 18F20
+  - 14D23
 - concept_id: derived_functor_cat
   name: 导出函子（范畴论）
   name_en: Derived Functor
@@ -5308,6 +5652,10 @@ concepts:
     stacks: 010M
     arxiv: math.CT
   successors: []
+  msc_primary: 18G10
+  msc_secondary:
+  - 18G80
+  - 18E10
 - concept_id: limits_colimits
   name: 极限与余极限
   name_en: Limits and Colimits
@@ -5326,6 +5674,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/limit
     stacks: 002E
     arxiv: math.CT
+  msc_primary: 18A30
+  msc_secondary:
+  - 18A35
+  - 18A40
 - concept_id: yoneda_lemma
   name: 米田引理
   name_en: Yoneda Lemma
@@ -5341,6 +5693,10 @@ concepts:
     stacks: 001P
     arxiv: math.CT
   successors: []
+  msc_primary: 18A25
+  msc_secondary:
+  - 18A30
+  - 18F20
 - concept_id: representable_functor
   name: 可表函子
   name_en: Representable Functor
@@ -5356,6 +5712,10 @@ concepts:
     stacks: 001Q
     arxiv: math.CT
   successors: []
+  msc_primary: 18A25
+  msc_secondary:
+  - 18A30
+  - 18F20
 - concept_id: groupoid
   name: 广群
   name_en: Groupoid
@@ -5373,6 +5733,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/groupoid
     arxiv: math.CT
   successors: []
+  msc_primary: 18B40
+  msc_secondary:
+  - 20L05
+  - 18D35
 - concept_id: bicategory
   name: 双范畴
   name_en: Bicategory
@@ -5393,6 +5757,10 @@ concepts:
   resources:
     nlab: https://ncatlab.org/nlab/show/bicategory
     arxiv: math.CT
+  msc_primary: 18N10
+  msc_secondary:
+  - 18D05
+  - 18A25
 - concept_id: derived_category
   name: 导出范畴
   name_en: Derived Category
@@ -5411,6 +5779,10 @@ concepts:
     stacks: 05QI
     arxiv: math.CT
   successors: []
+  msc_primary: 18G80
+  msc_secondary:
+  - 14F08
+  - 16E35
 - concept_id: spectral_sequence
   name: 谱序列
   name_en: Spectral Sequence
@@ -5426,6 +5798,10 @@ concepts:
     stacks: 011N
     arxiv: math.AT
   successors: []
+  msc_primary: 18G40
+  msc_secondary:
+  - 55Txx
+  - 18G10
 - concept_id: tor_functor
   name: Tor函子
   name_en: Tor Functor
@@ -5444,6 +5820,10 @@ concepts:
     stacks: 00LZ
     arxiv: math.CT
   successors: []
+  msc_primary: 18G15
+  msc_secondary:
+  - 13D07
+  - 16E30
 - concept_id: ext_functor
   name: Ext函子
   name_en: Ext Functor
@@ -5462,6 +5842,10 @@ concepts:
     stacks: 00LV
     arxiv: math.CT
   successors: []
+  msc_primary: 18G15
+  msc_secondary:
+  - 13D09
+  - 16E30
 - concept_id: group_cohomology
   name: 群上同调
   name_en: Group Cohomology
@@ -5480,6 +5864,10 @@ concepts:
     stacks: 01FP
     arxiv: math.GR
   successors: []
+  msc_primary: 20J06
+  msc_secondary:
+  - 18Gxx
+  - 55N91
 - concept_id: sheaf_cohomology
   name: 层上同调
   name_en: Sheaf Cohomology
@@ -5495,6 +5883,10 @@ concepts:
     stacks: 01FQ
     arxiv: math.AG
   successors: []
+  msc_primary: 14F25
+  msc_secondary:
+  - 18F20
+  - 32C35
 - concept_id: local_cohomology
   name: 局部上同调
   name_en: Local Cohomology
@@ -5513,6 +5905,10 @@ concepts:
     stacks: 0A39
     arxiv: math.AG
   successors: []
+  msc_primary: 13D45
+  msc_secondary:
+  - 14B15
+  - 32C36
 - concept_id: hypercohomology
   name: 超上同调
   name_en: Hypercohomology
@@ -5531,6 +5927,10 @@ concepts:
     stacks: 01FZ
     arxiv: math.AG
   successors: []
+  msc_primary: 14F40
+  msc_secondary:
+  - 18G40
+  - 32C35
 - concept_id: duality_cohomology
   name: 对偶定理（上同调）
   name_en: Cohomological Duality
@@ -5549,6 +5949,10 @@ concepts:
     stacks: 0G1F
     arxiv: math.AG
   successors: []
+  msc_primary: 14Fxx
+  msc_secondary:
+  - 18Gxx
+  - 14B15
 - concept_id: perfect_complex
   name: 完美复形
   name_en: Perfect Complex
@@ -5564,6 +5968,10 @@ concepts:
     stacks: 08FS
     arxiv: math.AG
   successors: []
+  msc_primary: 14F08
+  msc_secondary:
+  - 18E30
+  - 13D09
 - concept_id: tilting_theory
   name: 倾斜理论
   name_en: Tilting Theory
@@ -5581,6 +5989,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/tilting+theory
     arxiv: math.RT
   successors: []
+  msc_primary: 16E35
+  msc_secondary:
+  - 18E30
+  - 14F08
 - concept_id: t_structure
   name: t-结构
   name_en: t-Structure
@@ -5599,6 +6011,10 @@ concepts:
     stacks: 0148
     arxiv: math.AG
   successors: []
+  msc_primary: 18G80
+  msc_secondary:
+  - 14F08
+  - 16E35
 - concept_id: perverse_sheaf
   name: 反常层
   name_en: Perverse Sheaf
@@ -5617,6 +6033,10 @@ concepts:
     stacks: 0G4H
     arxiv: math.AG
   successors: []
+  msc_primary: 32S60
+  msc_secondary:
+  - 14F17
+  - 14F43
 - concept_id: intersection_cohomology
   name: 相交上同调
   name_en: Intersection Cohomology
@@ -5634,6 +6054,10 @@ concepts:
   resources:
     nlab: https://ncatlab.org/nlab/show/intersection+cohomology
     arxiv: math.AG
+  msc_primary: 14F43
+  msc_secondary:
+  - 32S60
+  - 55N33
 - concept_id: koszul_duality
   name: Koszul对偶
   name_en: Koszul Duality
@@ -5651,6 +6075,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/Koszul+duality
     arxiv: math.RT
   successors: []
+  msc_primary: 16S37
+  msc_secondary:
+  - 18Gxx
+  - 17Bxx
 - concept_id: motive
   name: Motive
   name_en: Motive
@@ -5671,6 +6099,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/motive
     arxiv: math.AG
   successors: []
+  msc_primary: 14C15
+  msc_secondary:
+  - 14F42
+  - 19E15
 - concept_id: algebraic_stack
   name: 代数堆叠
   name_en: Algebraic Stack
@@ -5689,6 +6121,10 @@ concepts:
     stacks: 04YA
     arxiv: math.AG
   successors: []
+  msc_primary: 14D23
+  msc_secondary:
+  - 14A20
+  - 18F20
 - concept_id: deligne_mumford
   name: Deligne-Mumford堆叠
   name_en: Deligne-Mumford Stack
@@ -5704,6 +6140,10 @@ concepts:
     stacks: 04YW
     arxiv: math.AG
   successors: []
+  msc_primary: 14D22
+  msc_secondary:
+  - 14D23
+  - 14H10
 - concept_id: moduli_space
   name: 模空间
   name_en: Moduli Space
@@ -5721,6 +6161,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/moduli+space
     arxiv: math.AG
   successors: []
+  msc_primary: 14D20
+  msc_secondary:
+  - 14H10
+  - 14J10
 - concept_id: moduli_stack
   name: 模堆叠
   name_en: Moduli Stack
@@ -5738,6 +6182,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/moduli+stack
     arxiv: math.AG
   successors: []
+  msc_primary: 14D23
+  msc_secondary:
+  - 14D20
+  - 14A20
 - concept_id: etale_cohomology
   name: 平展上同调
   name_en: Etale Cohomology
@@ -5756,6 +6204,10 @@ concepts:
     stacks: 03N1
     arxiv: math.AG
   successors: []
+  msc_primary: 14F20
+  msc_secondary:
+  - 14F30
+  - 18F20
 - concept_id: crystalline_cohomology
   name: 晶体上同调
   name_en: Crystalline Cohomology
@@ -5774,6 +6226,10 @@ concepts:
     stacks: 07GI
     arxiv: math.AG
   successors: []
+  msc_primary: 14F30
+  msc_secondary:
+  - 14F20
+  - 14G22
 - concept_id: de_rham_cohomology
   name: de Rham上同调
   name_en: de Rham Cohomology
@@ -5791,6 +6247,10 @@ concepts:
   resources:
     nlab: https://ncatlab.org/nlab/show/de+Rham+cohomology
     arxiv: math.AG
+  msc_primary: 14F40
+  msc_secondary:
+  - 32C35
+  - 58A12
 - concept_id: intersection_theory
   name: 相交理论
   name_en: Intersection Theory
@@ -5808,6 +6268,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/intersection+theory
     arxiv: math.AG
   successors: []
+  msc_primary: 14C17
+  msc_secondary:
+  - 14C15
+  - 14Nxx
 - concept_id: chow_ring
   name: Chow环
   name_en: Chow Ring
@@ -5828,6 +6292,10 @@ concepts:
   resources:
     nlab: https://ncatlab.org/nlab/show/Chow+ring
     arxiv: math.AG
+  msc_primary: 14C15
+  msc_secondary:
+  - 14C17
+  - 14F43
 - concept_id: hodge_theory
   name: Hodge理论
   name_en: Hodge Theory
@@ -5842,6 +6310,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/Hodge+theory
     arxiv: math.AG
   successors: []
+  msc_primary: 14C30
+  msc_secondary:
+  - 32S35
+  - 32G20
 - concept_id: biration_geometry
   name: 双有理几何
   name_en: Birational Geometry
@@ -5859,6 +6331,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/birational+geometry
     arxiv: math.AG
   successors: []
+  msc_primary: 14E05
+  msc_secondary:
+  - 14E30
+  - 14J40
 - concept_id: minimal_model
   name: 极小模型理论
   name_en: Minimal Model Program
@@ -5876,6 +6352,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/minimal+model+program
     arxiv: math.AG
   successors: []
+  msc_primary: 14E30
+  msc_secondary:
+  - 14J40
+  - 14E05
 - concept_id: derived_algebraic_geometry
   name: 导出代数几何
   name_en: Derived Algebraic Geometry
@@ -5896,6 +6376,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/derived+algebraic+geometry
     arxiv: math.AG
   successors: []
+  msc_primary: 14A30
+  msc_secondary:
+  - 18G80
+  - 14F08
 - concept_id: representation_lie_algebra
   name: 李代数表示论
   name_en: Representation of Lie Algebras
@@ -5910,6 +6394,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/representation+of+a+Lie+algebra
     arxiv: math.RT
   successors: []
+  msc_primary: 17B10
+  msc_secondary:
+  - 20C33
+  - 22E47
 - concept_id: highest_weight
   name: 最高权理论
   name_en: Highest Weight Theory
@@ -5924,6 +6412,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/highest+weight
     arxiv: math.RT
   successors: []
+  msc_primary: 17B10
+  msc_secondary:
+  - 22E47
+  - 05E10
 - concept_id: category_O
   name: 范畴O
   name_en: Category O
@@ -5941,6 +6433,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/category+O
     arxiv: math.RT
   successors: []
+  msc_primary: 17B10
+  msc_secondary:
+  - 16Gxx
+  - 20C08
 - concept_id: geometric_representation
   name: 几何表示论
   name_en: Geometric Representation Theory
@@ -5955,6 +6451,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/geometric+representation+theory
     arxiv: math.RT
   successors: []
+  msc_primary: 20G05
+  msc_secondary:
+  - 14M15
+  - 17B10
 - concept_id: modular_representation
   name: 模表示论
   name_en: Modular Representation Theory
@@ -5966,6 +6466,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/modular+representation+theory
     arxiv: math.RT
   successors: []
+  msc_primary: 20C20
+  msc_secondary:
+  - 20C33
+  - 16Gxx
 - concept_id: induced_representation
   name: 诱导表示
   name_en: Induced Representation
@@ -5980,6 +6484,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/induced+representation
     arxiv: math.RT
   successors: []
+  msc_primary: 20C05
+  msc_secondary:
+  - 20C35
+  - 22D30
 - concept_id: mackey_theory
   name: Mackey理论
   name_en: Mackey Theory
@@ -5997,6 +6505,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/Mackey+functor
     arxiv: math.RT
   successors: []
+  msc_primary: 20C05
+  msc_secondary:
+  - 22D30
+  - 20C35
 - concept_id: weight_theory
   name: 权理论
   name_en: Weight Theory
@@ -6011,6 +6523,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/weight+%28representation+theory%29
     arxiv: math.RT
   successors: []
+  msc_primary: 17B10
+  msc_secondary:
+  - 22E47
+  - 20G05
 - concept_id: borel_weil
   name: Borel-Weil定理
   name_en: Borel-Weil Theorem
@@ -6025,6 +6541,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/Borel-Weil+theorem
     arxiv: math.RT
   successors: []
+  msc_primary: 22E47
+  msc_secondary:
+  - 14M15
+  - 32L10
 - concept_id: class_field_theory
   name: 类域论
   name_en: Class Field Theory
@@ -6078,6 +6598,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/abelian+variety
     stacks: 00PB
     arxiv: math.AG
+  msc_primary: 14Kxx
+  msc_secondary:
+  - 11G10
+  - 14H40
 - concept_id: p_adic_number
   name: p进数
   name_en: p-adic Number
@@ -6093,6 +6617,10 @@ concepts:
     stacks: 0J61
     arxiv: math.NT
   successors: []
+  msc_primary: 11Sxx
+  msc_secondary:
+  - 11R23
+  - 11F85
 - concept_id: valuation
   name: 赋值论
   name_en: Valuation Theory
@@ -6113,6 +6641,10 @@ concepts:
   resources:
     nlab: https://ncatlab.org/nlab/show/valuation
     arxiv: math.NT
+  msc_primary: 12J20
+  msc_secondary:
+  - 11Sxx
+  - 13A18
 - concept_id: local_global
   name: 局部-整体原理
   name_en: Local-Global Principle
@@ -6127,6 +6659,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/local-global+principle
     arxiv: math.NT
   successors: []
+  msc_primary: 11G30
+  msc_secondary:
+  - 14G05
+  - 11Dxx
 - concept_id: diophantine_geometry
   name: 丢番图几何
   name_en: Diophantine Geometry
@@ -6144,6 +6680,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/Diophantine+geometry
     arxiv: math.NT
   successors: []
+  msc_primary: 11Gxx
+  msc_secondary:
+  - 14Gxx
+  - 11Dxx
 - concept_id: weil_conjecture
   name: Weil猜想
   name_en: Weil Conjectures
@@ -6161,6 +6701,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/Weil+conjecture
     arxiv: math.AG
   successors: []
+  msc_primary: 14F20
+  msc_secondary:
+  - 14G10
+  - 11M38
 - concept_id: zeta_function
   name: Zeta函数
   name_en: Zeta Function
@@ -6178,6 +6722,10 @@ concepts:
   resources:
     nlab: https://ncatlab.org/nlab/show/zeta+function
     arxiv: math.NT
+  msc_primary: 11M41
+  msc_secondary:
+  - 11M06
+  - 14G10
 - concept_id: symplectic_manifold
   name: 辛流形
   name_en: Symplectic Manifold
@@ -6249,6 +6797,10 @@ concepts:
   resources:
     nlab: https://ncatlab.org/nlab/show/nonlinear+dynamics
     arxiv: math.DS
+  msc_primary: 37Nxx
+  msc_secondary:
+  - 34Cxx
+  - 34Dxx
 - concept_id: bifurcation_theory
   name: 分岔理论
   name_en: Bifurcation Theory
@@ -6263,6 +6815,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/bifurcation+theory
     arxiv: math.DS
   successors: []
+  msc_primary: 37Gxx
+  msc_secondary:
+  - 34C23
+  - 34K18
 - concept_id: k_theory_dynamics
   name: 动力系统K理论
   name_en: K-Theory in Dynamics
@@ -6274,6 +6830,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/K-theory
     arxiv: math.DS
   successors: []
+  msc_primary: 37B05
+  msc_secondary:
+  - 19Lxx
+  - 55N15
 - concept_id: conley_index
   name: Conley指数
   name_en: Conley Index
@@ -6288,6 +6848,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/Conley+index
     arxiv: math.DS
   successors: []
+  msc_primary: 37B30
+  msc_secondary:
+  - 55Nxx
+  - 37B35
 - concept_id: symbolic_dynamics
   name: 符号动力学
   name_en: Symbolic Dynamics
@@ -6299,6 +6863,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/symbolic+dynamics
     arxiv: math.DS
   successors: []
+  msc_primary: 37B10
+  msc_secondary:
+  - 37B40
+  - 68R15
 - concept_id: descriptive_set_theory
   name: 描述集合论
   name_en: Descriptive Set Theory
@@ -6327,6 +6895,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/type+theory
     arxiv: math.LO
   successors: []
+  msc_primary: 03B15
+  msc_secondary:
+  - 03B40
+  - 68N18
 - concept_id: homotopy_type_theory
   name: 同伦类型论
   name_en: Homotopy Type Theory
@@ -6344,6 +6916,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/homotopy+type+theory
     arxiv: math.LO
   successors: []
+  msc_primary: 03B38
+  msc_secondary:
+  - 55U35
+  - 68V20
 - concept_id: constructive_mathematics
   name: 构造数学
   name_en: Constructive Mathematics
@@ -6358,6 +6934,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/constructive+mathematics
     arxiv: math.LO
   successors: []
+  msc_primary: 03F50
+  msc_secondary:
+  - 03F55
+  - 03B20
 - concept_id: intuitionistic_logic
   name: 直觉主义逻辑
   name_en: Intuitionistic Logic
@@ -6375,6 +6955,10 @@ concepts:
   resources:
     nlab: https://ncatlab.org/nlab/show/intuitionistic+logic
     arxiv: math.LO
+  msc_primary: 03B20
+  msc_secondary:
+  - 03F55
+  - 03C90
 - concept_id: modal_logic
   name: 模态逻辑
   name_en: Modal Logic
@@ -6389,6 +6973,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/modal+logic
     arxiv: math.LO
   successors: []
+  msc_primary: 03B45
+  msc_secondary:
+  - 03B42
+  - 03B44
 - concept_id: reverse_math
   name: 逆数学
   name_en: Reverse Mathematics
@@ -6403,6 +6991,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/reverse+mathematics
     arxiv: math.LO
   successors: []
+  msc_primary: 03B30
+  msc_secondary:
+  - 03F35
+  - 03D80
 - concept_id: ordinal_analysis
   name: 序数分析
   name_en: Ordinal Analysis
@@ -6417,6 +7009,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/ordinal+analysis
     arxiv: math.LO
   successors: []
+  msc_primary: 03F15
+  msc_secondary:
+  - 03F05
+  - 03E10
 - concept_id: categorical_logic
   name: 范畴逻辑
   name_en: Categorical Logic
@@ -6434,6 +7030,10 @@ concepts:
     nlab: https://ncatlab.org/nlab/show/categorical+logic
     arxiv: math.LO
   successors: []
+  msc_primary: 03G30
+  msc_secondary:
+  - 18B25
+  - 03B45
 - concept_id: real_numbers
   name: 实数
   category: 分析学
@@ -6441,6 +7041,9 @@ concepts:
   estimated_hours: 10
   prerequisites: []
   successors: []
+  msc_primary: 26A03
+  msc_secondary:
+  - 11A99
 - concept_id: logic
   name: 逻辑
   category: 数论逻辑
@@ -6448,6 +7051,10 @@ concepts:
   estimated_hours: 15
   prerequisites: []
   successors: []
+  msc_primary: 03Bxx
+  msc_secondary:
+  - 03B05
+  - 03B10
 - concept_id: integers
   name: 整数
   category: 数论逻辑
@@ -6455,6 +7062,10 @@ concepts:
   estimated_hours: 5
   prerequisites: []
   successors: []
+  msc_primary: 11A99
+  msc_secondary:
+  - 11A41
+  - 13A99
 - concept_id: euclidean_space
   name: 欧几里得空间
   category: 几何拓扑
@@ -6462,3 +7073,7 @@ concepts:
   estimated_hours: 10
   prerequisites: []
   successors: []
+  msc_primary: 51M05
+  msc_secondary:
+  - 51N20
+  - 54E35
