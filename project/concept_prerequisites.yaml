@@ -12,6 +12,8 @@ concepts:
   - concept_id: "limit"
     name: "极限"
     category: "分析学"
+    msc_primary: "26A03"
+    msc_secondary: ["40A05"]
     prerequisites:
       - concept_id: "real_numbers"
         level: "L0"
@@ -38,6 +40,8 @@ concepts:
   - concept_id: "continuity"
     name: "连续性"
     category: "分析学"
+    msc_primary: "26A15"
+    msc_secondary: ["26A03", "54C05"]
     prerequisites:
       - concept_id: "limit"
         level: "L1"
@@ -61,6 +65,8 @@ concepts:
   - concept_id: "derivative"
     name: "导数"
     category: "分析学"
+    msc_primary: "26A24"
+    msc_secondary: ["26A27", "58C20"]
     prerequisites:
       - concept_id: "limit"
         level: "L1"
@@ -84,6 +90,8 @@ concepts:
   - concept_id: "riemann_integral"
     name: "积分"
     category: "分析学"
+    msc_primary: "26A42"
+    msc_secondary: ["26B15", "28A25"]
     prerequisites:
       - concept_id: "limit"
         level: "L1"
@@ -110,6 +118,8 @@ concepts:
   - concept_id: "infinite_series"
     name: "级数"
     category: "分析学"
+    msc_primary: "40A05"
+    msc_secondary: ["40A10", "40A25"]
     prerequisites:
       - concept_id: "limit"
         level: "L1"
@@ -133,6 +143,8 @@ concepts:
   - concept_id: "uniform_convergence"
     name: "一致收敛"
     category: "分析学"
+    msc_primary: "40A30"
+    msc_secondary: ["26A03", "30A10"]
     prerequisites:
       - concept_id: "limit"
         level: "L1"
@@ -212,6 +224,8 @@ concepts:
   - concept_id: "residue_theory"
     name: "留数"
     category: "分析学"
+    msc_primary: "30E20"
+    msc_secondary: ["30D30", "30Cxx"]
     prerequisites:
       - concept_id: "complex_analysis"
         level: "L2"
@@ -383,6 +397,8 @@ concepts:
   - concept_id: "banach_space"
     name: "Banach空间"
     category: "分析学"
+    msc_primary: "46B25"
+    msc_secondary: ["46Axx", "47Axx"]
     prerequisites:
       - concept_id: "functional_analysis"
         level: "L3"
@@ -406,6 +422,8 @@ concepts:
   - concept_id: "hilbert_space"
     name: "Hilbert空间"
     category: "分析学"
+    msc_primary: "46C15"
+    msc_secondary: ["46C05", "47Axx"]
     prerequisites:
       - concept_id: "functional_analysis"
         level: "L3"
@@ -455,6 +473,8 @@ concepts:
   - concept_id: "spectral_theory"
     name: "谱理论"
     category: "分析学"
+    msc_primary: "47A10"
+    msc_secondary: ["47Axx", "46H30"]
     prerequisites:
       - concept_id: "operator_theory"
         level: "L4"
@@ -479,6 +499,8 @@ concepts:
   - concept_id: "distribution_theory"
     name: "分布理论"
     category: "分析学"
+    msc_primary: "46Fxx"
+    msc_secondary: ["46E35", "35Dxx"]
     prerequisites:
       - concept_id: "functional_analysis"
         level: "L3"
@@ -623,6 +645,8 @@ concepts:
   - concept_id: "group"
     name: "群"
     category: "代数学"
+    msc_primary: "20A05"
+    msc_secondary: ["20-XX"]
     prerequisites:
       - concept_id: "set_theory"
         level: "L0"
@@ -652,6 +676,8 @@ concepts:
   - concept_id: "ring"
     name: "环"
     category: "代数学"
+    msc_primary: "16S50"
+    msc_secondary: ["13-XX"]
     prerequisites:
       - concept_id: "group"
         level: "L1"
@@ -678,6 +704,8 @@ concepts:
   - concept_id: "field"
     name: "域"
     category: "代数学"
+    msc_primary: "12F99"
+    msc_secondary: ["12E99"]
     prerequisites:
       - concept_id: "ring"
         level: "L1"
@@ -701,6 +729,8 @@ concepts:
   - concept_id: "module"
     name: "模"
     category: "代数学"
+    msc_primary: "13Cxx"
+    msc_secondary: ["16Dxx"]
     prerequisites:
       - concept_id: "ring"
         level: "L1"
@@ -846,6 +876,8 @@ concepts:
   - concept_id: "tensor_product"
     name: "张量积"
     category: "代数学"
+    msc_primary: "15A69"
+    msc_secondary: ["18D10"]
     prerequisites:
       - concept_id: "vector_space"
         level: "L2"
@@ -943,6 +975,8 @@ concepts:
   - concept_id: "group_action"
     name: "群作用"
     category: "代数学"
+    msc_primary: "20B05"
+    msc_secondary: ["20C05"]
     prerequisites:
       - concept_id: "group"
         level: "L1"
@@ -966,6 +1000,8 @@ concepts:
   - concept_id: "sylow_theory"
     name: "Sylow理论"
     category: "代数学"
+    msc_primary: "20D20"
+    msc_secondary: ["20D05"]
     prerequisites:
       - concept_id: "group_action"
         level: "L2"
@@ -1102,6 +1138,8 @@ concepts:
   - concept_id: "scheme"
     name: "概形"
     category: "代数学"
+    msc_primary: "14A15"
+    msc_secondary: ["14A20", "14F20"]
     prerequisites:
       - concept_id: "algebraic_geometry"
         level: "L3"
@@ -1125,6 +1163,8 @@ concepts:
   - concept_id: "sheaf"
     name: "层"
     category: "代数学"
+    msc_primary: "14F05"
+    msc_secondary: ["14F06", "18F20"]
     prerequisites:
       - concept_id: "topology_basic"
         level: "L2"
@@ -1146,8 +1186,10 @@ concepts:
     estimated_hours: 40
 
   - concept_id: "cohomology_sheaf"
-    name: "上同调"
+    name: "层上同调"
     category: "代数学"
+    msc_primary: "14Fxx"
+    msc_secondary: ["14F25", "18G40"]
     prerequisites:
       - concept_id: "sheaf"
         level: "L4"
@@ -1223,6 +1265,8 @@ concepts:
   - concept_id: "topological_space"
     name: "拓扑空间"
     category: "几何拓扑"
+    msc_primary: "54A05"
+    msc_secondary: ["54-01", "54B05"]
     prerequisites:
       - concept_id: "set_theory"
         level: "L0"
@@ -1246,6 +1290,8 @@ concepts:
   - concept_id: "continuous_map"
     name: "连续映射"
     category: "几何拓扑"
+    msc_primary: "54C05"
+    msc_secondary: ["54C10", "54C15"]
     prerequisites:
       - concept_id: "topological_space"
         level: "L1"
@@ -1269,6 +1315,8 @@ concepts:
   - concept_id: "compactness"
     name: "紧致性"
     category: "几何拓扑"
+    msc_primary: "54D30"
+    msc_secondary: ["54D20", "54E45"]
     prerequisites:
       - concept_id: "topological_space"
         level: "L1"
@@ -1289,6 +1337,8 @@ concepts:
   - concept_id: "connectedness"
     name: "连通性"
     category: "几何拓扑"
+    msc_primary: "54D05"
+    msc_secondary: ["54D10", "54C05"]
     prerequisites:
       - concept_id: "topological_space"
         level: "L1"
@@ -1309,6 +1359,8 @@ concepts:
   - concept_id: "homotopy"
     name: "同伦"
     category: "几何拓扑"
+    msc_primary: "55Pxx"
+    msc_secondary: ["55Qxx", "55U35"]
     prerequisites:
       - concept_id: "continuous_map"
         level: "L1"
@@ -1332,6 +1384,8 @@ concepts:
   - concept_id: "fundamental_group"
     name: "基本群"
     category: "几何拓扑"
+    msc_primary: "55Q05"
+    msc_secondary: ["55P05", "57M05"]
     prerequisites:
       - concept_id: "homotopy"
         level: "L2"
@@ -1355,6 +1409,8 @@ concepts:
   - concept_id: "covering_space"
     name: "覆叠空间"
     category: "几何拓扑"
+    msc_primary: "57M10"
+    msc_secondary: ["55R05", "55Q52"]
     prerequisites:
       - concept_id: "fundamental_group"
         level: "L2"
@@ -1375,6 +1431,8 @@ concepts:
   - concept_id: "homology_group"
     name: "同调群"
     category: "几何拓扑"
+    msc_primary: "55N10"
+    msc_secondary: ["55N07", "55U15"]
     prerequisites:
       - concept_id: "homotopy"
         level: "L2"
@@ -1401,6 +1459,8 @@ concepts:
   - concept_id: "cohomology"
     name: "上同调"
     category: "几何拓扑"
+    msc_primary: "55N10"
+    msc_secondary: ["55N30", "55N91"]
     prerequisites:
       - concept_id: "homology_group"
         level: "L2"
@@ -1425,6 +1485,8 @@ concepts:
   - concept_id: "manifold"
     name: "流形"
     category: "几何拓扑"
+    msc_primary: "57Rxx"
+    msc_secondary: ["58A05", "58Axx"]
     prerequisites:
       - concept_id: "topological_space"
         level: "L1"
@@ -1451,6 +1513,8 @@ concepts:
   - concept_id: "tangent_space"
     name: "切空间"
     category: "几何拓扑"
+    msc_primary: "58A05"
+    msc_secondary: ["58A10", "53B05"]
     prerequisites:
       - concept_id: "manifold"
         level: "L2"
@@ -1477,6 +1541,8 @@ concepts:
   - concept_id: "tensor_field"
     name: "张量场"
     category: "几何拓扑"
+    msc_primary: "53A45"
+    msc_secondary: ["15A72", "58A10"]
     prerequisites:
       - concept_id: "tangent_space"
         level: "L3"
@@ -1547,6 +1613,8 @@ concepts:
   - concept_id: "riemannian_metric"
     name: "黎曼度量"
     category: "几何拓扑"
+    msc_primary: "53B20"
+    msc_secondary: ["53B21", "53C20"]
     prerequisites:
       - concept_id: "manifold"
         level: "L2"
@@ -1573,6 +1641,8 @@ concepts:
   - concept_id: "curvature"
     name: "曲率"
     category: "几何拓扑"
+    msc_primary: "53B21"
+    msc_secondary: ["53B20", "53C21"]
     prerequisites:
       - concept_id: "riemannian_metric"
         level: "L3"
@@ -1599,6 +1669,8 @@ concepts:
   - concept_id: "geodesic"
     name: "测地线"
     category: "几何拓扑"
+    msc_primary: "53C22"
+    msc_secondary: ["53B05", "58E10"]
     prerequisites:
       - concept_id: "riemannian_metric"
         level: "L3"
@@ -1622,6 +1694,8 @@ concepts:
   - concept_id: "connection"
     name: "联络"
     category: "几何拓扑"
+    msc_primary: "53B05"
+    msc_secondary: ["53C05", "58A05"]
     prerequisites:
       - concept_id: "riemannian_metric"
         level: "L3"
@@ -1645,6 +1719,8 @@ concepts:
   - concept_id: "fiber_bundle"
     name: "纤维丛"
     category: "几何拓扑"
+    msc_primary: "55R10"
+    msc_secondary: ["55R25", "57R22"]
     prerequisites:
       - concept_id: "manifold"
         level: "L2"
@@ -1925,7 +2001,9 @@ concepts:
 
   - concept_id: "ideal"
     name: "理想"
-    category: "数论逻辑"
+    category: "代数学"
+    msc_primary: "13Axx"
+    msc_secondary: ["16Dxx"]
     prerequisites:
       - concept_id: "ring"
         level: "L1"
@@ -2396,6 +2474,7 @@ concepts:
   - concept_id: "probability_measure"
     name: "概率测度"
     category: "概率统计"
+    msc_code: "60A10"
     prerequisites:
       - concept_id: "measure_theory"
         level: "L3"
@@ -2413,6 +2492,7 @@ concepts:
   - concept_id: "random_variable"
     name: "随机变量"
     category: "概率统计"
+    msc_code: "60A99"
     prerequisites:
       - concept_id: "probability_measure"
         level: "L3"
@@ -2444,6 +2524,7 @@ concepts:
   - concept_id: "expectation"
     name: "期望"
     category: "概率统计"
+    msc_code: "60A99"
     prerequisites:
       - concept_id: "random_variable"
         level: "L2"
@@ -2489,6 +2570,7 @@ concepts:
   - concept_id: "stochastic_process"
     name: "随机过程"
     category: "概率统计"
+    msc_code: "60G07"
     prerequisites:
       - concept_id: "random_variable"
         level: "L2"
@@ -2509,6 +2591,7 @@ concepts:
   - concept_id: "markov_chain"
     name: "马尔可夫链"
     category: "概率统计"
+    msc_code: "60J10"
     prerequisites:
       - concept_id: "stochastic_process"
         level: "L3"
@@ -2523,6 +2606,7 @@ concepts:
   - concept_id: "martingale"
     name: "鞅"
     category: "概率统计"
+    msc_code: "60G48"
     prerequisites:
       - concept_id: "stochastic_process"
         level: "L3"
@@ -2537,6 +2621,7 @@ concepts:
   - concept_id: "brownian_motion"
     name: "布朗运动"
     category: "概率统计"
+    msc_code: "60J65"
     prerequisites:
       - concept_id: "stochastic_process"
         level: "L3"
@@ -2551,6 +2636,7 @@ concepts:
   - concept_id: "law_of_large_numbers"
     name: "大数定律"
     category: "概率统计"
+    msc_code: "60F15"
     prerequisites:
       - concept_id: "expectation"
         level: "L2"
@@ -2565,6 +2651,7 @@ concepts:
   - concept_id: "central_limit_theorem"
     name: "中心极限定理"
     category: "概率统计"
+    msc_code: "60F05"
     prerequisites:
       - concept_id: "probability_distribution"
         level: "L2"
@@ -2675,6 +2762,7 @@ concepts:
   - concept_id: "variance"
     name: "方差"
     category: "概率统计"
+    msc_code: "60A99"
     prerequisites:
       - concept_id: "expectation"
         level: "L2"

@@ -1,0 +1,84 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: formalmath-ingress
+  namespace: formalmath-prod
+  labels:
+    app.kubernetes.io/name: formalmath
+    app.kubernetes.io/component: ingress
+  annotations:
+    # NGINX Ingress Controller 配置
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    
+    # 超时配置
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "60"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "60"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "60"
+    
+    # 请求体大小限制
+    nginx.ingress.kubernetes.io/proxy-body-size: "50m"
+    
+    # 速率限制
+    nginx.ingress.kubernetes.io/limit-rps: "100"
+    nginx.ingress.kubernetes.io/limit-connections: "50"
+    
+    # CORS配置
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://formalmath.example.com"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET, POST, PUT, DELETE, OPTIONS"
+    nginx.ingress.kubernetes.io/cors-allow-headers: "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization"
+    
+    # 证书管理（使用 cert-manager）
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    
+    # 重写配置
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    
+    # 日志配置
+    nginx.ingress.kubernetes.io/log-format-escape-json: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - formalmath.example.com
+        - api.formalmath.example.com
+      secretName: formalmath-tls-secret
+  rules:
+    # 主域名 - 前端
+    - host: formalmath.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: frontend-service
+                port:
+                  number: 80
+    # API 子域名 - 后端
+    - host: api.formalmath.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: backend-service
+                port:
+                  number: 3000
+---
+# 可选：使用证书管理器的证书资源
+# apiVersion: cert-manager.io/v1
+# kind: Certificate
+# metadata:
+#   name: formalmath-cert
+#   namespace: formalmath-prod
+# spec:
+#   secretName: formalmath-tls-secret
+#   issuerRef:
+#     name: letsencrypt-prod
+#     kind: ClusterIssuer
+#   dnsNames:
+#     - formalmath.example.com
+#     - api.formalmath.example.com

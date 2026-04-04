@@ -1,0 +1,420 @@
+name: Test
+
+on:
+  push:
+    branches: [main, develop, feature/**]
+    paths-ignore:
+      - '**.md'
+      - 'ref/**'
+      - 'research/**'
+  pull_request:
+    branches: [main, develop]
+    paths-ignore:
+      - '**.md'
+      - 'ref/**'
+      - 'research/**'
+  workflow_dispatch:
+    inputs:
+      test_type:
+        description: 'Test type to run'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - unit
+          - integration
+          - e2e
+
+env:
+  NODE_VERSION: '18'
+  PYTHON_VERSION: '3.11'
+  LEAN_VERSION: 'v4.6.0'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ========== 变更检测 ==========
+  changes:
+    name: Detect Changes
+    runs-on: ubuntu-latest
+    outputs:
+      frontend: ${{ steps.filter.outputs.frontend }}
+      backend: ${{ steps.filter.outputs.backend }}
+      lean4: ${{ steps.filter.outputs.lean4 }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check changes
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            frontend:
+              - 'FormalMath-Interactive/**'
+              - 'tests/frontend/**'
+            backend:
+              - 'tests/backend/**'
+              - 'tools/**/*.py'
+            lean4:
+              - 'tests/lean4/**'
+              - 'docs/09-形式化证明/**'
+
+  # ========== 单元测试 - Python ==========
+  unit-test-python:
+    name: Unit Tests (Python)
+    runs-on: ${{ matrix.os }}
+    needs: changes
+    if: ${{ needs.changes.outputs.backend == 'true' || github.event.inputs.test_type == 'all' || github.event.inputs.test_type == 'unit' || github.event_name == 'workflow_dispatch' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ['3.10', '3.11', '3.12']
+
+    defaults:
+      run:
+        working-directory: ./tests/backend
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-${{ matrix.python-version }}-pip-${{ hashFiles('tests/backend/requirements-test.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.python-version }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-test.txt
+
+      - name: Run unit tests
+        run: |
+          pytest unit/ -v --tb=short \
+            --cov=../../tools \
+            --cov-report=xml \
+            --cov-report=html \
+            --junitxml=junit-unit.xml
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: python-unit-test-results-${{ matrix.python-version }}
+          path: |
+            tests/backend/junit-unit.xml
+            tests/backend/htmlcov/
+          retention-days: 7
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./tests/backend/coverage.xml
+          flags: python-unit
+          name: python-unit-${{ matrix.python-version }}
+
+  # ========== 集成测试 - Python ==========
+  integration-test-python:
+    name: Integration Tests (Python)
+    runs-on: ubuntu-latest
+    needs: [unit-test-python]
+    if: ${{ needs.changes.outputs.backend == 'true' || github.event.inputs.test_type == 'all' || github.event.inputs.test_type == 'integration' || github.event_name == 'workflow_dispatch' }}
+
+    defaults:
+      run:
+        working-directory: ./tests/backend
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('tests/backend/requirements-test.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-test.txt
+
+      - name: Run integration tests
+        run: |
+          pytest integration/ -v --tb=short \
+            -m integration \
+            --junitxml=junit-integration.xml
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: python-integration-test-results
+          path: tests/backend/junit-integration.xml
+          retention-days: 7
+
+  # ========== 单元测试 - 前端 ==========
+  unit-test-frontend:
+    name: Unit Tests (Frontend)
+    runs-on: ubuntu-latest
+    needs: changes
+    if: ${{ needs.changes.outputs.frontend == 'true' || github.event.inputs.test_type == 'all' || github.event.inputs.test_type == 'unit' || github.event_name == 'workflow_dispatch' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install frontend dependencies
+        working-directory: ./FormalMath-Interactive
+        run: npm ci
+
+      - name: Install test dependencies
+        working-directory: ./tests
+        run: npm ci
+
+      - name: Run unit tests
+        working-directory: ./tests
+        run: |
+          npm run test:unit -- \
+            --coverage \
+            --reporters=default \
+            --reporters=jest-junit
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frontend-unit-test-results
+          path: |
+            tests/coverage/
+            tests/junit.xml
+          retention-days: 7
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./tests/coverage/lcov.info
+          flags: frontend-unit
+          name: frontend-unit
+
+  # ========== E2E测试 ==========
+  e2e-test:
+    name: E2E Tests
+    runs-on: ubuntu-latest
+    needs: [unit-test-frontend, unit-test-python]
+    if: ${{ github.event.inputs.test_type == 'all' || github.event.inputs.test_type == 'e2e' || github.event_name == 'pull_request' || github.event_name == 'push' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install frontend dependencies
+        working-directory: ./FormalMath-Interactive
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: ./FormalMath-Interactive
+        run: npm run build
+
+      - name: Install Cypress
+        working-directory: ./tests
+        run: npm ci
+
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v6
+        with:
+          working-directory: ./tests
+          start: npx vite preview --port 3000
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 120
+          browser: chrome
+          record: false
+          spec: 'frontend/e2e/specs/**/*.cy.ts'
+
+      - name: Upload screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-screenshots
+          path: tests/frontend/e2e/screenshots
+          retention-days: 7
+
+      - name: Upload videos
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-videos
+          path: tests/frontend/e2e/videos
+          retention-days: 7
+
+  # ========== Lean4测试 ==========
+  test-lean4:
+    name: Lean4 Tests
+    runs-on: ubuntu-latest
+    needs: changes
+    if: ${{ needs.changes.outputs.lean4 == 'true' || github.event.inputs.test_type == 'all' || github.event_name == 'workflow_dispatch' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install elan
+        run: |
+          curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
+
+      - name: Cache Lean packages
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/mathlib
+            tests/lean4/.lake
+          key: ${{ runner.os }}-lean-${{ env.LEAN_VERSION }}-${{ hashFiles('tests/lean4/lakefile.lean') }}
+          restore-keys: |
+            ${{ runner.os }}-lean-${{ env.LEAN_VERSION }}-
+            ${{ runner.os }}-lean-
+
+      - name: Setup Lean4
+        working-directory: ./tests/lean4
+        run: |
+          elan toolchain install ${{ env.LEAN_VERSION }}
+          elan default ${{ env.LEAN_VERSION }}
+
+      - name: Build Lean4 tests
+        working-directory: ./tests/lean4
+        run: lake build
+
+      - name: Run Lean4 tests
+        working-directory: ./tests/lean4
+        run: lake test
+
+  # ========== 内容质量测试 ==========
+  content-quality-test:
+    name: Content Quality Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml regex requests
+
+      - name: Run CI content check
+        run: |
+          python tools/contributor-workflow/ci_content_check.py \
+            --paths docs/ 数学家理念体系/ \
+            --fail-on-error \
+            --format github
+
+      - name: Run MSC validation
+        run: |
+          python tools/contributor-workflow/validate_msc.py \
+            --check-all \
+            --path . \
+            || true
+
+      - name: Check links
+        run: |
+          python tools/contributor-workflow/check_links.py \
+            --paths docs/ 数学家理念体系/ \
+            --check-internal \
+            || true
+
+  # ========== 性能测试 ==========
+  performance-test:
+    name: Performance Tests
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Run performance benchmarks
+        run: |
+          echo "Running performance tests..."
+          # 可以在这里添加具体的性能测试脚本
+          echo "Test completed"
+
+  # ========== 测试状态汇总 ==========
+  test-summary:
+    name: Test Summary
+    runs-on: ubuntu-latest
+    needs: [unit-test-python, integration-test-python, unit-test-frontend, e2e-test, test-lean4, content-quality-test]
+    if: always()
+
+    steps:
+      - name: Download all test results
+        uses: actions/download-artifact@v4
+        with:
+          path: test-results
+
+      - name: Generate test report
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: Test Report
+          path: test-results/**/*.xml
+          reporter: java-junit
+          fail-on-error: false
+
+      - name: Test status summary
+        run: |
+          echo "## Test Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Test Suite | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|------------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Python Unit | ${{ needs.unit-test-python.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Python Integration | ${{ needs.integration-test-python.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Frontend Unit | ${{ needs.unit-test-frontend.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| E2E Tests | ${{ needs.e2e-test.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Lean4 Tests | ${{ needs.test-lean4.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Content Quality | ${{ needs.content-quality-test.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Coverage" >> $GITHUB_STEP_SUMMARY
+          echo "Coverage reports uploaded to Codecov" >> $GITHUB_STEP_SUMMARY

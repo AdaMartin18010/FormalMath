@@ -24,10 +24,17 @@ import Mathlib.CategoryTheory.Category.Basic
 import Mathlib.CategoryTheory.Functor.Basic
 import Mathlib.CategoryTheory.NatTrans
 import Mathlib.CategoryTheory.Limits.Shapes.Terminal
+import Mathlib.CategoryTheory.Limits.Shapes.Products
+import Mathlib.CategoryTheory.Limits.Shapes.Equalizers
+import Mathlib.CategoryTheory.Adjunction.Basic
+import Mathlib.CategoryTheory.Equivalence
+import Mathlib.CategoryTheory.Yoneda
+import Mathlib.CategoryTheory.Monoidal.Category
+import Mathlib.CategoryTheory.Abelian.Basic
 
 namespace CategoryTheory
 
-open CategoryTheory Category Functor
+open CategoryTheory Category Functor Limits
 
 /-
 ## 范畴的定义
@@ -95,8 +102,26 @@ Nat(Hom(-,X), F) ≅ F(X)
 theorem yoneda_lemma {C : Type*} [Category C] (F : Cᵒᵖ ⥤ Type v₁) (X : C) :
     (yoneda.obj X ⟶ F) ≃ F.obj (Opposite.op X) := by
   -- Yoneda引理的证明
-  -- 构造显式同构
-  sorry -- 这是范畴论的核心定理
+  -- 构造前向映射：自然变换 → F(X)
+  refine Equiv.mk 
+    (fun η ↦ η.app (Opposite.op X) (𝟙 X)) 
+    (fun x ↦ ⟨fun Y f ↦ F.map f x, ?_⟩) 
+    ?_ 
+    ?_
+  · -- 证明自然性条件
+    intros Y Z f
+    funext g
+    simp [Functor.map_comp]
+  · -- 证明右逆
+    funext x
+    simp [yoneda_obj_obj]
+  · -- 证明左逆
+    funext η
+    ext Y f
+    have h_nat := η.naturality f
+    simp [yoneda_obj_obj] at h_nat ⊢
+    rw [←h_nat]
+    simp
 
 /-
 ## Yoneda嵌入
@@ -106,8 +131,18 @@ y : C → [Cᵒᵖ, Set], X ↦ Hom(-,X)
 -/
 theorem yoneda_embedding_fully_faithful {C : Type*} [Category C] :
     FullyFaithful (yoneda : C ⥤ Cᵒᵖ ⥤ Type v₁) := by
-  -- 利用Yoneda引理
-  sorry -- 这是Yoneda引理的直接推论
+  -- 利用Yoneda引理证明Yoneda嵌入是满忠实的
+  refine ⟨fun X Y ↦ ⟨?_, ?_, ?_⟩⟩
+  · -- 前向映射
+    intro f
+    exact yoneda.map f
+  · -- 左逆
+    intro f
+    ext X g
+    simp [yoneda]
+  · -- 右逆  
+    intro f
+    simp [yoneda]
 
 /-
 ## 极限
@@ -172,8 +207,24 @@ def adjunction_counit {F : C ⥤ D} {G : D ⥤ C} (adj : F ⊣ G) :
 -/
 theorem right_adjoint_unique {F : C ⥤ D} {G G' : D ⥤ C}
     (adj₁ : F ⊣ G) (adj₂ : F ⊣ G') : G ≅ G' := by
-  -- 利用Yoneda引理
-  sorry -- 这是伴随函子的性质
+  -- 利用Yoneda引理证明右伴随的唯一性
+  refine NatIso.ofComponents (fun Y ↦ ?_) ?_
+  · -- 构造G(Y) ≅ G'(Y)
+    refine ⟨adj₂.homEquiv _ Y (adj₁.counit.app Y), 
+            adj₁.homEquiv _ Y (adj₂.counit.app Y), ?_, ?_⟩
+    · -- 证明右逆
+      simp [Adjunction.homEquiv_unit, Adjunction.homEquiv_counit]
+      rw [← adj₁.h_triangle₂, Functor.map_comp, Category.assoc]
+      simp
+    · -- 证明左逆
+      simp [Adjunction.homEquiv_unit, Adjunction.homEquiv_counit]
+      rw [← adj₂.h_triangle₂, Functor.map_comp, Category.assoc]
+      simp
+  · -- 证明自然性
+    intros Y Z f
+    simp [Adjunction.homEquiv_unit, Adjunction.homEquiv_counit]
+    rw [← Category.assoc, ← Functor.map_comp]
+    simp
 
 /-
 ## 单态射与满态射
@@ -215,6 +266,14 @@ class MonoidalCategory (C : Type*) extends Category C where
   leftUnitor : ∀ X : C, tensorObj (tensorUnit : C) X ≅ X
   rightUnitor : ∀ X : C, tensorObj X tensorUnit ≅ X
   tensorUnit : C
+  -- 满足结合律和么元律的相容性条件（pentagon和triangle等式）
+  pentagon : ∀ W X Y Z : C, 
+    (tensorHom (associator W X Y).hom (𝟙 Z)) ≫ (associator W (tensorObj X Y) Z).hom ≫ 
+    (tensorHom (𝟙 W) (associator X Y Z).hom) = 
+    (associator (tensorObj W X) Y Z).hom ≫ (associator W X (tensorObj Y Z)).hom
+  triangle : ∀ X Y : C,
+    (associator X tensorUnit Y).hom ≫ tensorHom (𝟙 X) (leftUnitor Y).hom = 
+    tensorHom (rightUnitor X).hom (𝟙 Y)
 
 /-
 ## Abel范畴
