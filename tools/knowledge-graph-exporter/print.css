@@ -1,0 +1,294 @@
+/**
+ * FormalMath 知识图谱打印优化样式
+ * Print-Optimized Stylesheet for Knowledge Graph
+ * 
+ * 使用方法:
+ * 1. 在HTML中引入: <link rel="stylesheet" href="print.css" media="print">
+ * 2. 或在PDF生成时使用此样式
+ */
+
+/* ========== 基础打印设置 ========== */
+@media print {
+    @page {
+        size: A4;
+        margin: 2cm;
+        
+        @top-center {
+            content: "FormalMath 知识图谱";
+            font-size: 10pt;
+            color: #666;
+        }
+        
+        @bottom-center {
+            content: counter(page);
+            font-size: 10pt;
+        }
+    }
+    
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+    
+    body {
+        font-family: "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+        font-size: 11pt;
+        line-height: 1.6;
+        color: #333;
+    }
+}
+
+/* ========== 页面布局 ========== */
+.kg-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.kg-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #1a73e8;
+}
+
+.kg-header h1 {
+    font-size: 24pt;
+    color: #1a73e8;
+    margin: 0 0 10px 0;
+}
+
+.kg-meta {
+    font-size: 10pt;
+    color: #666;
+}
+
+/* ========== 统计表格样式 ========== */
+.kg-stats {
+    margin: 20px 0;
+    page-break-inside: avoid;
+}
+
+.kg-stats table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.kg-stats th {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.kg-stats td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.kg-stats tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* ========== 概念列表样式 ========== */
+.kg-concepts {
+    margin: 20px 0;
+}
+
+.kg-concept-item {
+    page-break-inside: avoid;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.kg-concept-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.kg-concept-name {
+    font-size: 14pt;
+    font-weight: 600;
+    color: #333;
+    margin-right: 15px;
+}
+
+.kg-concept-category {
+    font-size: 9pt;
+    padding: 3px 10px;
+    border-radius: 12px;
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.kg-concept-meta {
+    font-size: 10pt;
+    color: #666;
+    margin-top: 5px;
+}
+
+.kg-difficulty {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.kg-difficulty-star {
+    color: #ffc107;
+}
+
+.kg-difficulty-star-empty {
+    color: #e0e0e0;
+}
+
+/* ========== 图谱可视化样式 ========== */
+.kg-graph {
+    page-break-before: always;
+    page-break-inside: avoid;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.kg-graph svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ========== 图例样式 ========== */
+.kg-legend {
+    page-break-inside: avoid;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.kg-legend-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 12pt;
+}
+
+.kg-legend-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.kg-legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 8px;
+    border: 1px solid #999;
+}
+
+/* ========== 关系图样式 ========== */
+.kg-relations {
+    margin: 20px 0;
+}
+
+.kg-relation-item {
+    page-break-inside: avoid;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+.kg-relation-source,
+.kg-relation-target {
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.kg-relation-arrow {
+    margin: 0 15px;
+    color: #666;
+}
+
+.kg-relation-type {
+    font-size: 9pt;
+    padding: 2px 8px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+/* ========== 分页控制 ========== */
+.page-break {
+    page-break-before: always;
+}
+
+.page-break-after {
+    page-break-after: always;
+}
+
+.no-break {
+    page-break-inside: avoid;
+}
+
+/* ========== 类别颜色定义 ========== */
+.category-analysis { background-color: #E3F2FD; color: #1565C0; }
+.category-algebra { background-color: #F3E5F5; color: #7B1FA2; }
+.category-geometry { background-color: #E8F5E9; color: #2E7D32; }
+.category-number { background-color: #FBE9E7; color: #D84315; }
+.category-probability { background-color: #FFF8E1; color: #F9A825; }
+.category-optimization { background-color: #E0F2F1; color: #00695C; }
+.category-control { background-color: #E1F5FE; color: #0277BD; }
+.category-information { background-color: #F3E5F5; color: #6A1B9A; }
+.category-crypto { background-color: #ECEFF1; color: #455A64; }
+
+/* ========== 响应式调整 ========== */
+@media print and (max-width: 210mm) {
+    .kg-concept-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .kg-legend-item {
+        display: flex;
+        margin-bottom: 5px;
+    }
+}
+
+/* ========== 链接处理 ========== */
+@media print {
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #666;
+    }
+    
+    a[href^="#"]:after {
+        content: "";
+    }
+}
+
+/* ========== 代码和公式 ========== */
+.kg-code {
+    font-family: "Consolas", "Monaco", monospace;
+    font-size: 9pt;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.kg-formula {
+    font-family: "Latin Modern Math", "Cambria Math", serif;
+    font-style: italic;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}

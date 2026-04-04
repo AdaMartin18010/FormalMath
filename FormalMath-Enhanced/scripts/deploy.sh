@@ -11,7 +11,7 @@ BLUE='\033[0;34m'
 NC='\033[0m'
 
 # 配置
-COMPOSE_FILE="docker-compose.yml"
+COMPOSE_FILE="docker-compose.production.yml"
 ENV_FILE="api/.env"
 BACKUP_DIR="backups/$(date +%Y%m%d_%H%M%S)"
 

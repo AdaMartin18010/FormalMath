@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="id" for="node" attr.name="id" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="category" for="node" attr.name="category" attr.type="string"/>
+  <key id="difficulty" for="node" attr.name="difficulty" attr.type="int"/>
+  <key id="estimated_hours" for="node" attr.name="estimated_hours" attr.type="float"/>
+  <key id="color" for="node" attr.name="color" attr.type="string"/>
+  <key id="edge_label" for="edge" attr.name="label" attr.type="string"/>
+  <key id="edge_level" for="edge" attr.name="level" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="C001">
+      <data key="label">集合论</data>
+      <data key="category">基础数学</data>
+      <data key="difficulty">1</data>
+      <data key="estimated_hours">10</data>
+      <data key="color">#F5F5F5</data>
+    </node>
+    <node id="C002">
+      <data key="label">群论</data>
+      <data key="category">代数学</data>
+      <data key="difficulty">2</data>
+      <data key="estimated_hours">20</data>
+      <data key="color">#F3E5F5</data>
+    </node>
+    <node id="C003">
+      <data key="label">环论</data>
+      <data key="category">代数学</data>
+      <data key="difficulty">3</data>
+      <data key="estimated_hours">25</data>
+      <data key="color">#F3E5F5</data>
+    </node>
+    <node id="C004">
+      <data key="label">实分析</data>
+      <data key="category">分析学</data>
+      <data key="difficulty">3</data>
+      <data key="estimated_hours">40</data>
+      <data key="color">#E3F2FD</data>
+    </node>
+    <node id="C005">
+      <data key="label">拓扑学</data>
+      <data key="category">几何拓扑</data>
+      <data key="difficulty">3</data>
+      <data key="estimated_hours">35</data>
+      <data key="color">#E8F5E9</data>
+    </node>
+    <node id="C006">
+      <data key="label">泛函分析</data>
+      <data key="category">分析学</data>
+      <data key="difficulty">4</data>
+      <data key="estimated_hours">50</data>
+      <data key="color">#E3F2FD</data>
+    </node>
+    <node id="C007">
+      <data key="label">概率论</data>
+      <data key="category">概率统计</data>
+      <data key="difficulty">2</data>
+      <data key="estimated_hours">25</data>
+      <data key="color">#FFF8E1</data>
+    </node>
+    <node id="C008">
+      <data key="label">数理统计</data>
+      <data key="category">概率统计</data>
+      <data key="difficulty">3</data>
+      <data key="estimated_hours">30</data>
+      <data key="color">#FFF8E1</data>
+    </node>
+    <node id="C009">
+      <data key="label">数论</data>
+      <data key="category">数论逻辑</data>
+      <data key="difficulty">3</data>
+      <data key="estimated_hours">35</data>
+      <data key="color">#FBE9E7</data>
+    </node>
+    <node id="C010">
+      <data key="label">数理逻辑</data>
+      <data key="category">数论逻辑</data>
+      <data key="difficulty">3</data>
+      <data key="estimated_hours">30</data>
+      <data key="color">#FBE9E7</data>
+    </node>
+    <node id="C011">
+      <data key="label">微分几何</data>
+      <data key="category">几何拓扑</data>
+      <data key="difficulty">4</data>
+      <data key="estimated_hours">45</data>
+      <data key="color">#E8F5E9</data>
+    </node>
+    <node id="C012">
+      <data key="label">代数拓扑</data>
+      <data key="category">几何拓扑</data>
+      <data key="difficulty">4</data>
+      <data key="estimated_hours">50</data>
+      <data key="color">#E8F5E9</data>
+    </node>
+    <edge id="e0" source="C001" target="C002">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e1" source="C001" target="C004">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e2" source="C001" target="C005">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e3" source="C002" target="C003">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e4" source="C004" target="C006">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e5" source="C004" target="C005">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L2</data>
+    </edge>
+    <edge id="e6" source="C005" target="C006">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L2</data>
+    </edge>
+    <edge id="e7" source="C005" target="C011">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e8" source="C005" target="C012">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e9" source="C002" target="C012">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L2</data>
+    </edge>
+    <edge id="e10" source="C001" target="C007">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e11" source="C007" target="C008">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e12" source="C001" target="C009">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+    <edge id="e13" source="C001" target="C010">
+      <data key="edge_label">依赖</data>
+      <data key="edge_level">L1</data>
+    </edge>
+  </graph>
+</graphml>

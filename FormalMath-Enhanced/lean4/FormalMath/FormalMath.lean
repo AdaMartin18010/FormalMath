@@ -63,6 +63,13 @@ import FormalMath.CharacterTheory
 import FormalMath.LieAlgebra
 import FormalMath.UniversalEnvelopingAlgebra
 
+-- 代数学前沿（5个）- 第12批新增（定理86-90）
+import FormalMath.AlgebraicNumberTheory
+import FormalMath.AnalyticNumberTheory
+import FormalMath.ArithmeticGeometry
+import FormalMath.LanglandsProgram
+import FormalMath.MotiveTheory
+
 -- 代数学应用（10个）- 矩阵与李代数
 -- (将在后续批次补充)
 

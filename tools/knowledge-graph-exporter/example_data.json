@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated_date": "2026-04-04T12:00:00",
+    "source": "FormalMath Concept Graph"
+  },
+  "nodes": [
+    {
+      "id": "C001",
+      "label": "集合论",
+      "category": "基础数学",
+      "difficulty": 1,
+      "estimated_hours": 10,
+      "description": "数学基础理论",
+      "msc_code": "03EXX"
+    },
+    {
+      "id": "C002",
+      "label": "群论",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "description": "代数结构的基础",
+      "msc_code": "20-XX"
+    },
+    {
+      "id": "C003",
+      "label": "环论",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "description": "环和域的代数结构",
+      "msc_code": "13-XX"
+    },
+    {
+      "id": "C004",
+      "label": "实分析",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 40,
+      "description": "实数系统的严格分析",
+      "msc_code": "26-XX"
+    },
+    {
+      "id": "C005",
+      "label": "拓扑学",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "description": "空间性质的研究",
+      "msc_code": "54-XX"
+    },
+    {
+      "id": "C006",
+      "label": "泛函分析",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "description": "无限维空间分析",
+      "msc_code": "46-XX"
+    },
+    {
+      "id": "C007",
+      "label": "概率论",
+      "category": "概率统计",
+      "difficulty": 2,
+      "estimated_hours": 25,
+      "description": "随机现象的数学理论",
+      "msc_code": "60-XX"
+    },
+    {
+      "id": "C008",
+      "label": "数理统计",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "description": "数据分析的数学方法",
+      "msc_code": "62-XX"
+    },
+    {
+      "id": "C009",
+      "label": "数论",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "description": "整数性质的研究",
+      "msc_code": "11-XX"
+    },
+    {
+      "id": "C010",
+      "label": "数理逻辑",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "description": "数学推理的形式化",
+      "msc_code": "03-XX"
+    },
+    {
+      "id": "C011",
+      "label": "微分几何",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "description": "曲线和曲面的研究",
+      "msc_code": "53-XX"
+    },
+    {
+      "id": "C012",
+      "label": "代数拓扑",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "description": "拓扑空间的代数不变量",
+      "msc_code": "55-XX"
+    }
+  ],
+  "edges": [
+    {
+      "from": "C001",
+      "to": "C002",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C001",
+      "to": "C004",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C001",
+      "to": "C005",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C002",
+      "to": "C003",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C004",
+      "to": "C006",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C004",
+      "to": "C005",
+      "label": "依赖",
+      "level": "L2"
+    },
+    {
+      "from": "C005",
+      "to": "C006",
+      "label": "依赖",
+      "level": "L2"
+    },
+    {
+      "from": "C005",
+      "to": "C011",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C005",
+      "to": "C012",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C002",
+      "to": "C012",
+      "label": "依赖",
+      "level": "L2"
+    },
+    {
+      "from": "C001",
+      "to": "C007",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C007",
+      "to": "C008",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C001",
+      "to": "C009",
+      "label": "依赖",
+      "level": "L1"
+    },
+    {
+      "from": "C001",
+      "to": "C010",
+      "label": "依赖",
+      "level": "L1"
+    }
+  ]
+}

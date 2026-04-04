@@ -1,0 +1,230 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated_date": "2026-04-04T12:00:00",
+    "source": "FormalMath Concept Graph",
+    "export_date": "2026-04-04T16:52:04.984756",
+    "total_nodes": 12,
+    "total_edges": 14
+  },
+  "nodes": [
+    {
+      "id": "C001",
+      "name": "集合论",
+      "category": "基础数学",
+      "difficulty": 1,
+      "estimated_hours": 10,
+      "description": "数学基础理论",
+      "msc_code": "03EXX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C002",
+      "name": "群论",
+      "category": "代数学",
+      "difficulty": 2,
+      "estimated_hours": 20,
+      "description": "代数结构的基础",
+      "msc_code": "20-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C003",
+      "name": "环论",
+      "category": "代数学",
+      "difficulty": 3,
+      "estimated_hours": 25,
+      "description": "环和域的代数结构",
+      "msc_code": "13-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C004",
+      "name": "实分析",
+      "category": "分析学",
+      "difficulty": 3,
+      "estimated_hours": 40,
+      "description": "实数系统的严格分析",
+      "msc_code": "26-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C005",
+      "name": "拓扑学",
+      "category": "几何拓扑",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "description": "空间性质的研究",
+      "msc_code": "54-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C006",
+      "name": "泛函分析",
+      "category": "分析学",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "description": "无限维空间分析",
+      "msc_code": "46-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C007",
+      "name": "概率论",
+      "category": "概率统计",
+      "difficulty": 2,
+      "estimated_hours": 25,
+      "description": "随机现象的数学理论",
+      "msc_code": "60-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C008",
+      "name": "数理统计",
+      "category": "概率统计",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "description": "数据分析的数学方法",
+      "msc_code": "62-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C009",
+      "name": "数论",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 35,
+      "description": "整数性质的研究",
+      "msc_code": "11-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C010",
+      "name": "数理逻辑",
+      "category": "数论逻辑",
+      "difficulty": 3,
+      "estimated_hours": 30,
+      "description": "数学推理的形式化",
+      "msc_code": "03-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C011",
+      "name": "微分几何",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 45,
+      "description": "曲线和曲面的研究",
+      "msc_code": "53-XX",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "C012",
+      "name": "代数拓扑",
+      "category": "几何拓扑",
+      "difficulty": 4,
+      "estimated_hours": 50,
+      "description": "拓扑空间的代数不变量",
+      "msc_code": "55-XX",
+      "x": 0.0,
+      "y": 0.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "C001",
+      "target": "C002",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C001",
+      "target": "C004",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C001",
+      "target": "C005",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C002",
+      "target": "C003",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C004",
+      "target": "C006",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C004",
+      "target": "C005",
+      "relation_type": "依赖",
+      "level": "L2"
+    },
+    {
+      "source": "C005",
+      "target": "C006",
+      "relation_type": "依赖",
+      "level": "L2"
+    },
+    {
+      "source": "C005",
+      "target": "C011",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C005",
+      "target": "C012",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C002",
+      "target": "C012",
+      "relation_type": "依赖",
+      "level": "L2"
+    },
+    {
+      "source": "C001",
+      "target": "C007",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C007",
+      "target": "C008",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C001",
+      "target": "C009",
+      "relation_type": "依赖",
+      "level": "L1"
+    },
+    {
+      "source": "C001",
+      "target": "C010",
+      "relation_type": "依赖",
+      "level": "L1"
+    }
+  ]
+}

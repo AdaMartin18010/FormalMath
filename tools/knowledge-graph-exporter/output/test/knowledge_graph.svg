@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+        </marker>
+    </defs>
+    <rect width="100%" height="100%" fill="#fafafa"/>
+    <text x="600.0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+        FormalMath 知识图谱
+    </text>
+    <text x="600.0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+        12 概念 | 14 关系 | 生成于 2026-04-04
+    </text>
+    <line x1="553.6222419526757" y1="383.65430059528893" x2="300.22835503741686" y2="246.9446981920696" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="553.6222419526757" y1="383.65430059528893" x2="575.4310932279759" y2="186.80959448966007" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="553.6222419526757" y1="383.65430059528893" x2="469.2191960734144" y2="350.15654074445865" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="300.22835503741686" y1="246.9446981920696" x2="102.34945590423276" y2="257.2694706323791" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="575.4310932279759" y1="186.80959448966007" x2="437.2693477180401" y2="150" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="575.4310932279759" y1="186.80959448966007" x2="469.2191960734144" y2="350.15654074445865" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="469.2191960734144" y1="350.15654074445865" x2="437.2693477180401" y2="150" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="469.2191960734144" y1="350.15654074445865" x2="741.2224675744519" y2="450.1268184703819" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="469.2191960734144" y1="350.15654074445865" x2="272.714324082835" y2="392.4295454480949" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="300.22835503741686" y1="246.9446981920696" x2="272.714324082835" y2="392.4295454480949" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="553.6222419526757" y1="383.65430059528893" x2="402.37152195067165" y2="538.1883621464873" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="402.37152195067165" y1="538.1883621464873" x2="213.9766128241937" y2="587.5412591094799" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="553.6222419526757" y1="383.65430059528893" x2="592.9001426682017" y2="583.5079879723911" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <line x1="553.6222419526757" y1="383.65430059528893" x2="757.5241885636449" y2="254.67714449135215" 
+        stroke="#999" stroke-width="1.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+    <circle cx="553.6222419526757" cy="383.65430059528893" r="10" 
+        fill="#F5F5F5" stroke="#333" stroke-width="1.5"/>
+    <text x="553.6222419526757" y="408.65430059528893" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">集合论</text>
+    <circle cx="300.22835503741686" cy="246.9446981920696" r="12" 
+        fill="#F3E5F5" stroke="#333" stroke-width="1.5"/>
+    <text x="300.22835503741686" y="273.9446981920696" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">群论</text>
+    <circle cx="102.34945590423276" cy="257.2694706323791" r="14" 
+        fill="#F3E5F5" stroke="#333" stroke-width="1.5"/>
+    <text x="102.34945590423276" y="286.2694706323791" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">环论</text>
+    <circle cx="575.4310932279759" cy="186.80959448966007" r="14" 
+        fill="#E3F2FD" stroke="#333" stroke-width="1.5"/>
+    <text x="575.4310932279759" y="215.80959448966007" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">实分析</text>
+    <circle cx="469.2191960734144" cy="350.15654074445865" r="14" 
+        fill="#E8F5E9" stroke="#333" stroke-width="1.5"/>
+    <text x="469.2191960734144" y="379.15654074445865" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">拓扑学</text>
+    <circle cx="437.2693477180401" cy="150" r="16" 
+        fill="#E3F2FD" stroke="#333" stroke-width="1.5"/>
+    <text x="437.2693477180401" y="181" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">泛函分析</text>
+    <circle cx="402.37152195067165" cy="538.1883621464873" r="12" 
+        fill="#FFF8E1" stroke="#333" stroke-width="1.5"/>
+    <text x="402.37152195067165" y="565.1883621464873" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">概率论</text>
+    <circle cx="213.9766128241937" cy="587.5412591094799" r="14" 
+        fill="#FFF8E1" stroke="#333" stroke-width="1.5"/>
+    <text x="213.9766128241937" y="616.5412591094799" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">数理统计</text>
+    <circle cx="592.9001426682017" cy="583.5079879723911" r="14" 
+        fill="#FBE9E7" stroke="#333" stroke-width="1.5"/>
+    <text x="592.9001426682017" y="612.5079879723911" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">数论</text>
+    <circle cx="757.5241885636449" cy="254.67714449135215" r="14" 
+        fill="#FBE9E7" stroke="#333" stroke-width="1.5"/>
+    <text x="757.5241885636449" y="283.6771444913521" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">数理逻辑</text>
+    <circle cx="741.2224675744519" cy="450.1268184703819" r="16" 
+        fill="#E8F5E9" stroke="#333" stroke-width="1.5"/>
+    <text x="741.2224675744519" y="481.1268184703819" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">微分几何</text>
+    <circle cx="272.714324082835" cy="392.4295454480949" r="16" 
+        fill="#E8F5E9" stroke="#333" stroke-width="1.5"/>
+    <text x="272.714324082835" y="423.4295454480949" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="10" fill="#333">代数拓扑</text>
+    <rect x="1010" y="75" width="170" height="290" 
+        fill="white" stroke="#ddd" stroke-width="1" rx="5"/>
+    <text x="1020" y="95" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">类别图例</text>
+    <circle cx="1030" cy="100" r="8" fill="#E3F2FD" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="104" font-family="Arial, sans-serif" font-size="10" fill="#333">分析学</text>
+    <circle cx="1030" cy="125" r="8" fill="#F3E5F5" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="129" font-family="Arial, sans-serif" font-size="10" fill="#333">代数学</text>
+    <circle cx="1030" cy="150" r="8" fill="#E8F5E9" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="154" font-family="Arial, sans-serif" font-size="10" fill="#333">几何拓扑</text>
+    <circle cx="1030" cy="175" r="8" fill="#FBE9E7" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="179" font-family="Arial, sans-serif" font-size="10" fill="#333">数论逻辑</text>
+    <circle cx="1030" cy="200" r="8" fill="#FFF8E1" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="204" font-family="Arial, sans-serif" font-size="10" fill="#333">概率统计</text>
+    <circle cx="1030" cy="225" r="8" fill="#E0F2F1" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="229" font-family="Arial, sans-serif" font-size="10" fill="#333">最优化</text>
+    <circle cx="1030" cy="250" r="8" fill="#E1F5FE" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="254" font-family="Arial, sans-serif" font-size="10" fill="#333">控制论</text>
+    <circle cx="1030" cy="275" r="8" fill="#F3E5F5" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="279" font-family="Arial, sans-serif" font-size="10" fill="#333">信息论</text>
+    <circle cx="1030" cy="300" r="8" fill="#ECEFF1" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="304" font-family="Arial, sans-serif" font-size="10" fill="#333">密码学</text>
+    <circle cx="1030" cy="325" r="8" fill="#F5F5F5" stroke="#333" stroke-width="1"/>
+    <text x="1045" y="329" font-family="Arial, sans-serif" font-size="10" fill="#333">基础数学</text>
+</svg>

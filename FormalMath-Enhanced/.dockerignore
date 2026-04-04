@@ -95,3 +95,59 @@ temp/
 # OS files
 Thumbs.db
 .DS_Store
+
+# Production files
+.env.production
+secrets/
+*.pem
+*.key
+*.crt
+
+# Backup files
+backups/
+*.backup
+*.bak
+
+# Log files
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test files
+tests/
+test/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Local development
+docker-compose.override.yml
+.env.local
+.env.*.local

@@ -1,209 +1,250 @@
+import React, { lazy, Suspense, ComponentType } from 'react';
+
 /**
- * 懒加载工具函数
- * 性能优化：延迟加载非关键资源
+ * 懒加载工具
+ * 提供组件懒加载和预加载功能
  */
 
-import { lazy, ComponentType, LazyExoticComponent } from 'react';
+// 预加载标记
+const preloadedComponents = new Set<string>();
 
-interface LazyLoadOptions {
-  /** 加载超时时间（毫秒） */
-  timeout?: number;
-  /** 重试次数 */
-  retries?: number;
-  /** 重试延迟（毫秒） */
-  retryDelay?: number;
-  /** 加载失败时的回退组件 */
-  fallback?: ComponentType;
-  /** 预加载优先级 */
-  priority?: 'auto' | 'high' | 'low';
+/**
+ * 带重试的懒加载
+ */
+export function lazyLoad<T extends ComponentType<unknown>>(
+  factory: () => Promise<{ default: T }>,
+  retries = 3,
+  retryDelay = 1000
+): React.LazyExoticComponent<T> {
+  return lazy(() => retryLoad(factory, retries, retryDelay));
 }
 
 /**
- * 智能懒加载组件
- * 支持超时、重试和预加载
+ * 重试加载
  */
-export function lazyLoad<T extends ComponentType<any>>(
+async function retryLoad<T extends ComponentType<unknown>>(
   factory: () => Promise<{ default: T }>,
-  options: LazyLoadOptions = {}
-): LazyExoticComponent<T> {
-  const {
-    timeout = 10000,
-    retries = 2,
-    retryDelay = 1000,
-  } = options;
-
-  let attempts = 0;
-
-  const loadComponent = async (): Promise<{ default: T }> => {
-    try {
-      // 创建超时Promise
-      const timeoutPromise = new Promise<never>((_, reject) => {
-        setTimeout(() => reject(new Error('Component load timeout')), timeout);
-      });
-
-      // 竞争加载
-      const result = await Promise.race([factory(), timeoutPromise]);
-      return result;
-    } catch (error) {
-      attempts++;
-      
-      if (attempts <= retries) {
-        // 延迟后重试
-        await new Promise(resolve => setTimeout(resolve, retryDelay));
-        return loadComponent();
-      }
-      
+  retries: number,
+  delay: number
+): Promise<{ default: T }> {
+  try {
+    return await factory();
+  } catch (error) {
+    if (retries === 0) {
       throw error;
     }
-  };
+    
+    await sleep(delay);
+    return retryLoad(factory, retries - 1, delay * 1.5);
+  }
+}
 
-  return lazy(loadComponent);
+/**
+ * 延迟工具
+ */
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 /**
  * 预加载组件
- * 在需要前提前加载组件
  */
-export function preloadComponent<T extends ComponentType<any>>(
+export function prefetchComponent<T extends ComponentType<unknown>>(
+  factory: () => Promise<{ default: T }>
+): void {
+  const key = factory.toString();
+  
+  if (preloadedComponents.has(key)) {
+    return;
+  }
+
+  preloadedComponents.add(key);
+
+  // 使用 requestIdleCallback 在空闲时预加载
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(() => {
+      factory().catch(() => {}); // 忽略预加载错误
+    });
+  } else {
+    setTimeout(() => {
+      factory().catch(() => {});
+    }, 100);
+  }
+}
+
+/**
+ * 预加载并缓存组件
+ */
+export function preloadComponent<T extends ComponentType<unknown>>(
   factory: () => Promise<{ default: T }>
 ): Promise<{ default: T }> {
+  const key = factory.toString();
+  
+  if (preloadedComponents.has(key)) {
+    return factory();
+  }
+
+  preloadedComponents.add(key);
   return factory();
 }
 
 /**
- * 创建可预加载的懒加载组件
+ * 图片懒加载 Hook
  */
-export function createLazyComponent<T extends ComponentType<any>>(
-  factory: () => Promise<{ default: T }>,
-  options: LazyLoadOptions = {}
-) {
-  const LazyComponent = lazyLoad(factory, options);
-  let preloadPromise: Promise<void> | null = null;
+export function useLazyImage(src: string): {
+  src: string | undefined;
+  isLoaded: boolean;
+  error: Error | null;
+} {
+  const [imageSrc, setImageSrc] = React.useState<string | undefined>(undefined);
+  const [isLoaded, setIsLoaded] = React.useState(false);
+  const [error, setError] = React.useState<Error | null>(null);
 
-  const preload = () => {
-    if (!preloadPromise) {
-      preloadPromise = factory().then(() => undefined);
-    }
-    return preloadPromise;
-  };
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setImageSrc(src);
+            observer.disconnect();
+          }
+        });
+      },
+      { rootMargin: '50px' }
+    );
 
-  return {
-    Component: LazyComponent,
-    preload,
-  };
+    const img = new Image();
+    observer.observe(img);
+
+    return () => observer.disconnect();
+  }, [src]);
+
+  React.useEffect(() => {
+    if (!imageSrc) return;
+
+    const img = new Image();
+    
+    img.onload = () => {
+      setIsLoaded(true);
+    };
+    
+    img.onerror = () => {
+      setError(new Error(`Failed to load image: ${src}`));
+    };
+
+    img.src = imageSrc;
+  }, [imageSrc, src]);
+
+  return { src: imageSrc, isLoaded, error };
 }
 
 /**
- * 图片懒加载
- * 使用 Intersection Observer API
+ * 图片预加载
  */
-export function createLazyImageLoader(options: IntersectionObserverInit = {}) {
-  const imageMap = new Map<HTMLImageElement, string>();
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const img = entry.target as HTMLImageElement;
-        const src = imageMap.get(img);
-        
-        if (src) {
-          img.src = src;
-          imageMap.delete(img);
-          observer.unobserve(img);
-        }
-      }
-    });
-  }, {
-    rootMargin: '50px',
-    ...options,
-  });
-
-  return {
-    observe: (img: HTMLImageElement, src: string) => {
-      imageMap.set(img, src);
-      observer.observe(img);
-    },
-    disconnect: () => observer.disconnect(),
-  };
-}
-
-/**
- * 动态导入Polyfill
- */
-export async function loadPolyfill(feature: string, url: string): Promise<void> {
-  if ((window as any)[feature]) {
-    return;
-  }
-
+export function preloadImage(src: string): Promise<void> {
   return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = url;
-    script.async = true;
-    
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error(`Failed to load polyfill: ${feature}`));
-    
-    document.head.appendChild(script);
+    const img = new Image();
+    img.onload = () => resolve();
+    img.onerror = reject;
+    img.src = src;
   });
 }
 
 /**
- * 分块加载数据
- * 用于大量数据的渐进加载
+ * 批量预加载图片
  */
-export async function* chunkedLoad<T>(
-  fetcher: (offset: number, limit: number) => Promise<T[]>,
-  chunkSize: number = 20
-): AsyncGenerator<T[], void, unknown> {
-  let offset = 0;
-  let hasMore = true;
-
-  while (hasMore) {
-    const chunk = await fetcher(offset, chunkSize);
-    
-    if (chunk.length === 0) {
-      hasMore = false;
-    } else {
-      yield chunk;
-      offset += chunk.length;
-      hasMore = chunk.length === chunkSize;
-    }
-  }
+export function preloadImages(srcs: string[]): Promise<void> {
+  return Promise.all(srcs.map(preloadImage)).then(() => undefined);
 }
 
 /**
- * 虚拟列表计算
+ * 观察元素可见性
  */
-export interface VirtualListConfig {
-  itemHeight: number;
-  overscan?: number;
-  containerHeight: number;
+export function useIntersectionObserver(
+  callback: (isIntersecting: boolean) => void,
+  options?: IntersectionObserverInit
+): (node: Element | null) => void {
+  const observerRef = React.useRef<IntersectionObserver | null>(null);
+
+  return React.useCallback(
+    (node: Element | null) => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+
+      if (node) {
+        observerRef.current = new IntersectionObserver(([entry]) => {
+          callback(entry.isIntersecting);
+        }, options);
+
+        observerRef.current.observe(node);
+      }
+    },
+    [callback, options]
+  );
 }
 
-export interface VirtualListRange {
-  startIndex: number;
-  endIndex: number;
-  startOffset: number;
-  totalHeight: number;
-}
+/**
+ * 动态导入组件
+ */
+export function dynamicImport<T extends ComponentType<unknown>>(
+  importer: () => Promise<{ default: T }>,
+  fallback?: React.ReactNode
+): React.FC {
+  const LazyComponent = lazy(importer);
 
-export function calculateVirtualRange(
-  scrollTop: number,
-  itemCount: number,
-  config: VirtualListConfig
-): VirtualListRange {
-  const { itemHeight, overscan = 3, containerHeight } = config;
-  
-  const startIndex = Math.max(0, Math.floor(scrollTop / itemHeight) - overscan);
-  const visibleCount = Math.ceil(containerHeight / itemHeight);
-  const endIndex = Math.min(itemCount - 1, startIndex + visibleCount + overscan * 2);
-  
-  return {
-    startIndex,
-    endIndex,
-    startOffset: startIndex * itemHeight,
-    totalHeight: itemCount * itemHeight,
+  return function DynamicComponent(props: React.ComponentProps<T>) {
+    return React.createElement(
+      Suspense,
+      { fallback: fallback || React.createElement('div', null, 'Loading...') },
+      React.createElement(LazyComponent, props)
+    );
   };
 }
+
+/**
+ * 优先级加载队列
+ */
+class LoadQueue {
+  private queue: Array<() => Promise<void>> = [];
+  private running = false;
+  private concurrency: number;
+
+  constructor(concurrency = 3) {
+    this.concurrency = concurrency;
+  }
+
+  add<T>(loader: () => Promise<T>): Promise<T> {
+    return new Promise((resolve, reject) => {
+      this.queue.push(async () => {
+        try {
+          const result = await loader();
+          resolve(result);
+        } catch (error) {
+          reject(error);
+        }
+      });
+
+      this.process();
+    });
+  }
+
+  private async process(): Promise<void> {
+    if (this.running || this.queue.length === 0) {
+      return;
+    }
+
+    this.running = true;
+    const batch = this.queue.splice(0, this.concurrency);
+    
+    await Promise.all(batch.map(loader => loader()));
+    
+    this.running = false;
+    this.process();
+  }
+}
+
+// 全局加载队列
+export const loadQueue = new LoadQueue();
 
 export default lazyLoad;

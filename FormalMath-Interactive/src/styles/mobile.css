@@ -1,87 +1,67 @@
-/* ==================== Mobile Optimizations ==================== */
+/**
+ * 移动端优化样式
+ */
 
-/* 移动端基础优化 */
-@media (max-width: 640px) {
-  html {
-    font-size: 14px;
-    -webkit-text-size-adjust: 100%;
-  }
-
-  body {
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-y: contain;
+/* 触摸反馈优化 */
+@media (hover: none) {
+  .touch-feedback:active {
+    transform: scale(0.97);
   }
 }
 
-/* 触摸优化 */
-.touch-manipulation {
+/* 防止双击缩放 */
+button,
+a,
+[role="button"] {
   touch-action: manipulation;
 }
 
-.touch-pan-y {
-  touch-action: pan-y;
+/* 滑动惯性滚动 */
+.scroll-touch {
+  -webkit-overflow-scrolling: touch;
 }
 
-.touch-none {
-  touch-action: none;
-}
-
-/* 安全区域支持 */
-.safe-area-inset-top {
-  padding-top: env(safe-area-inset-top, 0px);
-}
-
-.safe-area-inset-bottom {
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-}
-
-.safe-area-inset-left {
-  padding-left: env(safe-area-inset-left, 0px);
-}
-
-.safe-area-inset-right {
-  padding-right: env(safe-area-inset-right, 0px);
-}
-
-/* 底部导航安全区域 */
-.pb-safe-area {
-  padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));
-}
-
-/* 触摸目标尺寸 */
-.touch-target {
-  min-height: 44px;
-  min-width: 44px;
-}
-
-.touch-target-large {
-  min-height: 48px;
-  min-width: 48px;
-}
-
-/* 防止文本选择 */
+/* 禁用文本选择（按钮） */
 .no-select {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
-/* 允许文本选择 */
-.allow-select {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
+/* 离线状态样式 */
+body.offline {
+  filter: grayscale(0.5);
 }
 
-/* 移动端滚动优化 */
-.scroll-smooth {
-  scroll-behavior: smooth;
+body.offline::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #ef4444;
+  z-index: 9999;
+  animation: offline-pulse 2s ease-in-out infinite;
 }
 
-.scroll-momentum {
-  -webkit-overflow-scrolling: touch;
+@keyframes offline-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* 移动端底部安全区域 */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  .mb-safe {
+    margin-bottom: env(safe-area-inset-bottom);
+  }
 }
 
 /* 隐藏滚动条但保持滚动功能 */
@@ -94,150 +74,53 @@
   display: none;
 }
 
-/* 细滚动条 */
-.scrollbar-thin::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+/* 移动端触摸高亮 */
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
-.scrollbar-thin::-webkit-scrollbar-track {
-  background: transparent;
+/* 输入框焦点优化 */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  -webkit-appearance: none;
 }
 
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
-  border-radius: 2px;
+/* 禁用默认样式 */
+input[type="search"] {
+  -webkit-appearance: none;
 }
 
-.dark .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #475569;
+/* 修复 iOS 上的圆角问题 */
+input,
+textarea,
+select {
+  border-radius: 0;
 }
 
-/* 点击效果 */
-.active-scale {
-  transition: transform 0.1s ease;
+/* 防止字体调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
-.active-scale:active {
-  transform: scale(0.97);
+/* 性能优化：will-change */
+.will-change-transform {
+  will-change: transform;
 }
 
-/* 点击波纹效果 */
-.ripple {
-  position: relative;
-  overflow: hidden;
+.will-change-opacity {
+  will-change: opacity;
 }
 
-.ripple::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 0.3s ease, height 0.3s ease;
+/* 硬件加速 */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
-.ripple:active::after {
-  width: 200%;
-  height: 200%;
-}
-
-/* 手势提示动画 */
-@keyframes gesture-hint {
-  0%, 100% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  20%, 80% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.gesture-hint {
-  animation: gesture-hint 3s ease-in-out;
-}
-
-/* 下拉刷新动画 */
-@keyframes pull-indicator {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* 数学公式移动端优化 */
-@media (max-width: 640px) {
-  .katex {
-    font-size: 0.95em;
-  }
-
-  .katex-display {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    padding: 0.5em 0;
-  }
-
-  .katex-display::-webkit-scrollbar {
-    height: 3px;
-  }
-
-  .katex-display::-webkit-scrollbar-thumb {
-    background: #c1c1c1;
-    border-radius: 2px;
-  }
-}
-
-/* 图表移动端优化 */
-@media (max-width: 640px) {
-  .d3-graph-container {
-    cursor: grab;
-  }
-
-  .d3-graph-container:active {
-    cursor: grabbing;
-  }
-
-  .d3-graph-controls {
-    opacity: 0.8;
-  }
-}
-
-/* PWA 独立运行模式优化 */
-@media (display-mode: standalone) {
-  body {
-    /* 防止 iOS 橡皮筋效果 */
-    overscroll-behavior-y: none;
-  }
-
-  /* 调整头部高度以适应状态栏 */
-  .pwa-header {
-    padding-top: env(safe-area-inset-top, 20px);
-  }
-
-  /* 底部安全区域 */
-  .pwa-footer {
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-  }
-}
-
-/* 深色模式优化 */
-@media (prefers-color-scheme: dark) {
-  @media (max-width: 640px) {
-    ::-webkit-scrollbar-thumb {
-      background: #475569;
-    }
-  }
-}
-
-/* 减少动画偏好 */
+/* 动画优化 */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -249,112 +132,23 @@
   }
 }
 
-/* 横向模式优化 */
-@media (orientation: landscape) and (max-height: 500px) {
-  .mobile-bottom-nav {
-    display: none;
-  }
-
-  .mobile-side-nav {
-    display: flex;
-  }
+/* 触摸目标大小优化 */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
 }
 
-/* 焦点样式优化 */
-@media (hover: none) {
-  *:focus {
-    outline: none;
-  }
-
-  *:focus-visible {
-    outline: 2px solid #3b82f6;
-    outline-offset: 2px;
-  }
-
-  button:focus,
-  a:focus {
-    outline: none;
-  }
-}
-
-/* 防止双击缩放 */
-button,
-a,
-[role="button"] {
-  touch-action: manipulation;
-}
-
-/* 禁用文本缩放 */
-input,
-textarea,
-select {
-  font-size: 16px;
-}
-
-@media (min-width: 641px) {
-  input,
-  textarea,
-  select {
-    font-size: inherit;
-  }
-}
-
-/* 输入框在 iOS 上的样式优化 */
-input[type="text"],
-input[type="search"],
-input[type="number"],
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0.375rem;
-}
-
-/* 搜索框取消按钮样式 */
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239CA3AF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E") center no-repeat;
-  cursor: pointer;
-}
-
-/* 移动端模态框优化 */
+/* Toast 位置适配 */
 @media (max-width: 640px) {
-  .mobile-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 50;
-    display: flex;
-    align-items: flex-end;
+  .toast-container {
+    left: 1rem;
+    right: 1rem;
+    max-width: none;
   }
-
-  .mobile-modal-content {
-    width: 100%;
-    max-height: 90vh;
-    border-radius: 1rem 1rem 0 0;
-    animation: slide-up 0.3s ease-out;
-  }
-
-  @keyframes slide-up {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-}
-
-/* 虚拟列表优化 */
-.virtual-list-container {
-  will-change: transform;
-  transform: translateZ(0);
 }
 
 /* 骨架屏动画 */
-@keyframes shimmer {
+@keyframes skeleton-shimmer {
   0% {
     background-position: -200% 0;
   }
@@ -366,21 +160,47 @@ input[type="search"]::-webkit-search-cancel-button {
 .skeleton-shimmer {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0) 100%
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
   );
   background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
+  animation: skeleton-shimmer 1.5s infinite;
 }
 
-.dark .skeleton-shimmer {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+/* 涟漪效果动画 */
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 0.6s linear;
+  width: 100px;
+  height: 100px;
+}
+
+/* 页面过渡动画 */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
 }
 
 /* 加载动画 */
@@ -390,103 +210,96 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-.animate-spin-slow {
-  animation: spin 2s linear infinite;
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 /* 脉冲动画 */
-@keyframes pulse-ring {
-  0% {
-    transform: scale(0.8);
-    opacity: 0.5;
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
   }
-  100% {
-    transform: scale(2);
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* 弹跳动画 */
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 1s ease-in-out infinite;
+}
+
+/* 渐入动画 */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.3s ease-out;
+}
+
+/* Toast 进入动画 */
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
     opacity: 0;
   }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.pulse-ring::before {
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s ease-out;
+}
+
+/* 加载进度条 */
+.loading-progress {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-progress::after {
   content: '';
   position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: inherit;
-  animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: progress-shimmer 1.5s infinite;
 }
 
-/* 浮动操作按钮优化 */
-.fab {
-  position: fixed;
-  right: 1rem;
-  bottom: calc(80px + env(safe-area-inset-bottom, 0px));
-  z-index: 40;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.fab.hidden {
-  transform: scale(0);
-  opacity: 0;
-}
-
-/* Toast 消息在移动端的位置调整 */
-@media (max-width: 640px) {
-  .toast-container {
-    top: auto;
-    bottom: calc(80px + env(safe-area-inset-bottom, 0px));
-    left: 1rem;
-    right: 1rem;
-    transform: none;
+@keyframes progress-shimmer {
+  0% {
+    transform: translateX(-100%);
   }
-}
-
-/* 代码块在移动端的优化 */
-@media (max-width: 640px) {
-  pre {
-    font-size: 12px;
-    padding: 0.75rem;
-  }
-
-  code {
-    word-break: break-word;
-    white-space: pre-wrap;
-  }
-}
-
-/* 表格在移动端的横向滚动 */
-.table-container {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-@media (max-width: 640px) {
-  .table-container table {
-    min-width: 640px;
-  }
-}
-
-/* 图片在移动端的自适应 */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* 视频在移动端的自适应 */
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-/* iframe 在移动端的自适应 */
-iframe {
-  max-width: 100%;
-}
-
-/* 打印样式 */
-@media print {
-  .mobile-bottom-nav,
-  .fab,
-  .toast-container {
-    display: none !important;
+  100% {
+    transform: translateX(100%);
   }
 }
