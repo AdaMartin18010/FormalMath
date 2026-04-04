@@ -233,3 +233,9 @@ export interface ErrorProps extends BaseComponentProps {
 
 // ==================== 协作类型重导出 ====================
 export * from './collaboration';
+
+// ==================== 学习类型重导出 ====================
+export * from './learning';
+
+// ==================== 游戏化类型重导出 ====================
+export * from './gamification';

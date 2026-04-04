@@ -1,0 +1,76 @@
+{
+  "graph": {
+    "title": "数学发展脉络图谱",
+    "description": "数学各分支的起源、发展与相互关系",
+    "nodes": [
+      {"id": "arithmetic", "name": "算术", "period": "史前", "origin": "计数需求"},
+      {"id": "geometry", "name": "几何学", "period": "古埃及/巴比伦", "origin": "土地测量"},
+      {"id": "greek_geometry", "name": "希腊几何", "period": "公元前6世纪", "origin": "泰勒斯、毕达哥拉斯"},
+      {"id": "euclidean", "name": "欧几里得几何", "period": "公元前300年", "origin": "《几何原本》"},
+      {"id": "algebra", "name": "代数学", "period": "伊斯兰黄金时代", "origin": "花拉子米"},
+      {"id": "analytic_geo", "name": "解析几何", "period": "1637年", "origin": "笛卡尔、费马"},
+      {"id": "calculus", "name": "微积分", "period": "1665-1675", "origin": "牛顿、莱布尼茨"},
+      {"id": "analysis", "name": "分析学", "period": "18-19世纪", "origin": "欧拉、柯西、魏尔斯特拉斯"},
+      {"id": "non_euclidean", "name": "非欧几何", "period": "1829-1854", "origin": "罗巴切夫斯基、鲍耶、黎曼"},
+      {"id": "group_theory", "name": "群论", "period": "1832", "origin": "伽罗瓦"},
+      {"id": "topology", "name": "拓扑学", "period": "1895", "origin": "庞加莱"},
+      {"id": "set_theory", "name": "集合论", "period": "1874", "origin": "康托尔"},
+      {"id": "abstract_algebra", "name": "抽象代数", "period": "1920年代", "origin": "诺特、阿廷"},
+      {"id": "category_theory", "name": "范畴论", "period": "1945", "origin": "埃伦贝格、麦克莱恩"},
+      {"id": "probability", "name": "概率论", "period": "1654-1713", "origin": "帕斯卡、费马、伯努利"},
+      {"id": "number_theory", "name": "数论", "period": "古代-现代", "origin": "费马、高斯、黎曼"},
+      {"id": "algebraic_geometry", "name": "代数几何", "period": "19-20世纪", "origin": "黎曼、诺特、格罗滕迪克"},
+      {"id": "differential_geometry", "name": "微分几何", "period": "19世纪", "origin": "高斯、黎曼、嘉当"},
+      {"id": "logic", "name": "数理逻辑", "period": "19-20世纪", "origin": "布尔、弗雷格、哥德尔"}
+    ],
+    "edges": [
+      {"from": "arithmetic", "to": "algebra", "relation": "发展"},
+      {"from": "geometry", "to": "greek_geometry", "relation": "希腊化"},
+      {"from": "greek_geometry", "to": "euclidean", "relation": "系统化"},
+      {"from": "euclidean", "to": "non_euclidean", "relation": "否定/扩展"},
+      {"from": "algebra", "to": "analytic_geo", "relation": "与几何结合"},
+      {"from": "analytic_geo", "to": "calculus", "relation": "奠定基础"},
+      {"from": "calculus", "to": "analysis", "relation": "系统化"},
+      {"from": "analysis", "to": "topology", "relation": "影响"},
+      {"from": "group_theory", "to": "abstract_algebra", "relation": "一般化"},
+      {"from": "set_theory", "to": "topology", "relation": "基础"},
+      {"from": "set_theory", "to": "abstract_algebra", "relation": "基础"},
+      {"from": "abstract_algebra", "to": "category_theory", "relation": "进一步抽象"},
+      {"from": "algebra", "to": "number_theory", "relation": "应用"},
+      {"from": "analysis", "to": "number_theory", "relation": "解析数论"},
+      {"from": "algebra", "to": "algebraic_geometry", "relation": "几何化"},
+      {"from": "geometry", "to": "differential_geometry", "relation": "分析化"},
+      {"from": "topology", "to": "differential_geometry", "relation": "结合"},
+      {"from": "logic", "to": "set_theory", "relation": "基础"},
+      {"from": "arithmetic", "to": "probability", "relation": "应用"},
+      {"from": "analysis", "to": "probability", "relation": "严格化"}
+    ],
+    "clusters": [
+      {
+        "name": "古代数学",
+        "nodes": ["arithmetic", "geometry"],
+        "period": "史前-公元前500年"
+      },
+      {
+        "name": "古典时期",
+        "nodes": ["greek_geometry", "euclidean", "number_theory"],
+        "period": "公元前500-500年"
+      },
+      {
+        "name": "近代革命",
+        "nodes": ["analytic_geo", "calculus", "analysis", "probability"],
+        "period": "1600-1900年"
+      },
+      {
+        "name": "现代结构",
+        "nodes": ["group_theory", "non_euclidean", "topology", "set_theory", "abstract_algebra"],
+        "period": "1800-1950年"
+      },
+      {
+        "name": "当代融合",
+        "nodes": ["category_theory", "algebraic_geometry", "differential_geometry", "logic"],
+        "period": "1950年至今"
+      }
+    ]
+  }
+}

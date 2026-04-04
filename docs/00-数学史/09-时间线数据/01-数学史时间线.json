@@ -1,0 +1,91 @@
+{
+  "timeline": {
+    "title": "数学历史发展时间线",
+    "description": "从古代到当代的数学发展大事记",
+    "eras": [
+      {
+        "name": "古代数学",
+        "period": "公元前3000年 - 公元1200年",
+        "events": [
+          {"year": "-3000", "event": "埃及象形数字系统", "civilization": "埃及"},
+          {"year": "-2000", "event": "巴比伦六十进制位值制", "civilization": "巴比伦"},
+          {"year": "-585", "event": "泰勒斯出生，演绎证明之始", "civilization": "希腊"},
+          {"year": "-530", "event": "毕达哥拉斯学派建立", "civilization": "希腊"},
+          {"year": "-300", "event": "欧几里得《几何原本》", "civilization": "希腊"},
+          {"year": "-287", "event": "阿基米德出生", "civilization": "希腊"},
+          {"year": "-212", "event": "阿基米德去世", "civilization": "希腊"},
+          {"year": "-200", "event": "《九章算术》成书", "civilization": "中国"},
+          {"year": "-100", "event": "《周髀算经》勾股定理", "civilization": "中国"},
+          {"year": "263", "event": "刘徽割圆术", "civilization": "中国"},
+          {"year": "499", "event": "阿里亚哈塔《历数书》", "civilization": "印度"},
+          {"year": "628", "event": "婆罗摩笈多《修正历数书》", "civilization": "印度"},
+          {"year": "820", "event": "花拉子米《代数学》", "civilization": "伊斯兰"},
+          {"year": "850", "event": "花拉子米去世", "civilization": "伊斯兰"}
+        ]
+      },
+      {
+        "name": "中世纪与文艺复兴",
+        "period": "1200年 - 1600年",
+        "events": [
+          {"year": "1202", "event": "斐波那契《算经》", "civilization": "欧洲"},
+          {"year": "1545", "event": "卡尔达诺《大术》发表三次方程解法", "civilization": "欧洲"},
+          {"year": "1572", "event": "邦贝利《代数学》系统处理复数", "civilization": "欧洲"}
+        ]
+      },
+      {
+        "name": "近代数学",
+        "period": "1600年 - 1800年",
+        "events": [
+          {"year": "1614", "event": "纳皮尔发明对数", "civilization": "欧洲"},
+          {"year": "1637", "event": "笛卡尔《几何学》解析几何诞生", "civilization": "欧洲"},
+          {"year": "1654", "event": "帕斯卡-费马通信创立概率论", "civilization": "欧洲"},
+          {"year": "1665", "event": "牛顿发明流数术", "civilization": "欧洲"},
+          {"year": "1675", "event": "莱布尼茨发明微积分符号", "civilization": "欧洲"},
+          {"year": "1687", "event": "牛顿《自然哲学的数学原理》", "civilization": "欧洲"},
+          {"year": "1748", "event": "欧拉《无穷分析引论》", "civilization": "欧洲"},
+          {"year": "1770", "event": "拉格朗日置换理论", "civilization": "欧洲"},
+          {"year": "1799", "event": "高斯证明代数基本定理", "civilization": "欧洲"}
+        ]
+      },
+      {
+        "name": "现代数学",
+        "period": "1800年 - 1900年",
+        "events": [
+          {"year": "1801", "event": "高斯《算术研究》出版", "civilization": "欧洲"},
+          {"year": "1821", "event": "柯西《分析教程》严格化分析", "civilization": "欧洲"},
+          {"year": "1824", "event": "阿贝尔证明五次方程不可解", "civilization": "欧洲"},
+          {"year": "1829", "event": "罗巴切夫斯基发表非欧几何", "civilization": "欧洲"},
+          {"year": "1832", "event": "伽罗瓦群论论文", "civilization": "欧洲"},
+          {"year": "1854", "event": "黎曼《关于几何基础中的假设》", "civilization": "欧洲"},
+          {"year": "1872", "event": "克莱因埃尔朗根纲领", "civilization": "欧洲"},
+          {"year": "1872", "event": "戴德金分割定义实数", "civilization": "欧洲"},
+          {"year": "1874", "event": "康托尔创立集合论", "civilization": "Europe"},
+          {"year": "1895", "event": "庞加莱《位置分析》代数拓扑", "civilization": "欧洲"},
+          {"year": "1899", "event": "希尔伯特《几何基础》公理化", "civilization": "欧洲"}
+        ]
+      },
+      {
+        "name": "当代数学",
+        "period": "1900年 - 至今",
+        "events": [
+          {"year": "1900", "event": "希尔伯特在巴黎ICM提出23个问题", "civilization": "全球"},
+          {"year": "1905", "event": "爱因斯坦相对论发表", "civilization": "全球"},
+          {"year": "1931", "event": "哥德尔不完备定理", "civilization": "欧洲/美国"},
+          {"year": "1934", "event": "布尔巴基学派成立", "civilization": "法国"},
+          {"year": "1945", "event": "埃伦贝格-麦克莱恩创立范畴论", "civilization": "美国"},
+          {"year": "1955", "event": "谷山-志村猜想提出", "civilization": "日本"},
+          {"year": "1963", "event": "阿蒂亚-辛格指标定理", "civilization": "英国/美国"},
+          {"year": "1963", "event": "科恩力迫法证明CH独立性", "civilization": "美国"},
+          {"year": "1994", "event": "怀尔斯证明费马大定理", "civilization": "英国"},
+          {"year": "2003", "event": "佩雷尔曼证明庞加莱猜想", "civilization": "俄罗斯"},
+          {"year": "2011", "event": "Scholze引入完美oid空间", "civilization": "德国"}
+        ]
+      }
+    ],
+    "statistics": {
+      "total_events": 55,
+      "civilizations": ["埃及", "巴比伦", "希腊", "中国", "印度", "伊斯兰", "欧洲", "全球"],
+      "time_span": "约5000年"
+    }
+  }
+}
