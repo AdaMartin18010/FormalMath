@@ -1,0 +1,86 @@
+name: 内容请求
+description: 请求新增或完善数学内容
+title: '[内容] '
+labels: ['content request', 'triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您提出内容请求！请填写以下信息帮助我们理解您的需求。
+
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: 内容类型
+      description: 您希望添加什么类型的内容？
+      options:
+        - 新数学概念/定理
+        - 现有内容完善
+        - 错误修正
+        - 翻译工作
+        - 应用案例
+        - Lean4 形式化
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: target_branch
+    attributes:
+      label: 目标分支
+      description: 属于哪个数学分支？
+      placeholder: 例如：代数几何、实分析、群论...
+    validations:
+      required: true
+
+  - type: textarea
+    id: content_description
+    attributes:
+      label: 内容描述
+      description: 请详细描述您希望添加的内容
+      placeholder: |
+        例如：
+        - 希望添加希尔伯特零点定理的完整证明
+        - 需要补充代数几何中的层论基础概念
+        - 发现群论部分关于 Sylow 定理的笔误
+    validations:
+      required: true
+
+  - type: dropdown
+    id: content_level
+    attributes:
+      label: 内容层次
+      description: 适合哪个知识层次？
+      options:
+        - L0 - 直观经验层（初学者）
+        - L1 - 形式化定义层（本科生）
+        - L2 - 定理证明层（高年级本科生）
+        - L3 - 理论建构层（研究生）
+        - L4 - 前沿研究层（研究者）
+        - 不确定
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考资料
+      description: 如果有参考资料，请在此列出
+      placeholder: |
+        - 教材：Hartshorne, Algebraic Geometry, Chapter II
+        - 课程：MIT 18.705
+        - 论文：arXiv:xxxx.xxxxx
+
+  - type: checkboxes
+    id: willing_to_contribute
+    attributes:
+      label: 贡献意愿
+      description: 您是否愿意自己贡献这部分内容？
+      options:
+        - label: 我愿意自己贡献这部分内容
+        - label: 我可以协助审核
+        - label: 我需要他人来完成
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 补充说明
+      description: 任何其他相关信息

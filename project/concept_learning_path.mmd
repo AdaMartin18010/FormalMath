@@ -1,0 +1,89 @@
+graph TD
+    %% 学习路径推荐图 - 从基础到高级的学习路线
+
+    subgraph 数学分析之路[数学分析之路]
+        style 数学分析之路 fill:#C8E6C9
+        limit(["极限<br/>D2"])
+        continuity(["连续性<br/>D2"])
+        derivative(["导数<br/>D2"])
+        riemann_integral(["Riemann积分<br/>D2"])
+        infinite_series[["级数<br/>D3"]]
+        measure_theory[["测度论<br/>D3"]]
+        lebesgue_integral[["Lebesgue积分<br/>D3"]]
+        functional_analysis[["泛函分析<br/>D4"]]
+    end
+
+    subgraph 代数结构之路[代数结构之路]
+        style 代数结构之路 fill:#BBDEFB
+        set_theory(["集合论<br/>D1"])
+        group(["群论<br/>D2"])
+        ring(["环论<br/>D2"])
+        field(["域论<br/>D2"])
+        vector_space(["向量空间<br/>D2"])
+        linear_algebra(["线性代数<br/>D2"])
+        module[["模论<br/>D3"]]
+        commutative_algebra[["交换代数<br/>D3"]]
+        algebraic_geometry[["代数几何<br/>D4"]]
+    end
+
+    subgraph 几何拓扑之路[几何拓扑之路]
+        style 几何拓扑之路 fill:#FFE0B2
+        topological_space(["拓扑空间<br/>D2"])
+        continuous_map(["连续映射<br/>D2"])
+        compactness(["紧致性<br/>D2"])
+        manifold[["流形<br/>D3"]]
+        riemannian_metric[["黎曼度量<br/>D3"]]
+        curvature[["曲率<br/>D3"]]
+        symplectic_geometry[["辛几何<br/>D4"]]
+    end
+
+    subgraph 数论探索之路[数论探索之路]
+        style 数论探索之路 fill:#F8BBD9
+        divisibility(["整除理论<br/>D1"])
+        congruence(["同余理论<br/>D2"])
+        quadratic_residue(["二次剩余<br/>D2"])
+        primitive_root(["原根<br/>D2"])
+        elliptic_curve[["椭圆曲线<br/>D3"]]
+        modular_form[["模形式<br/>D4"]]
+        langlands_program(("Langlands纲领<br/>D5"))
+    end
+
+    %% 分析路径内部连接
+    limit --> continuity
+    continuity --> derivative
+    derivative --> riemann_integral
+    riemann_integral --> infinite_series
+    infinite_series --> measure_theory
+    measure_theory --> lebesgue_integral
+    lebesgue_integral --> functional_analysis
+
+    %% 代数路径内部连接
+    set_theory --> group
+    group --> ring
+    ring --> field
+    field --> vector_space
+    vector_space --> linear_algebra
+    linear_algebra --> module
+    module --> commutative_algebra
+    commutative_algebra --> algebraic_geometry
+
+    %% 几何拓扑路径内部连接
+    topological_space --> continuous_map
+    continuous_map --> compactness
+    compactness --> manifold
+    manifold --> riemannian_metric
+    riemannian_metric --> curvature
+
+    %% 数论路径内部连接
+    divisibility --> congruence
+    congruence --> quadratic_residue
+    quadratic_residue --> primitive_root
+    primitive_root --> elliptic_curve
+    elliptic_curve --> modular_form
+    modular_form --> langlands_program
+
+    %% 跨路径连接（虚线表示推荐关联学习）
+    functional_analysis -.->algebraic_geometry
+    curvature -.->functional_analysis
+    langlands_program -.->algebraic_geometry
+    linear_algebra -.->topological_space

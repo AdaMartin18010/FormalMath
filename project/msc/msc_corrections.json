@@ -1,0 +1,306 @@
+[
+  {
+    "file": "concept\\核心概念\\00-关系-三视角版.md",
+    "name": "关系",
+    "action": "add_primary",
+    "value": "03E20",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\01-集合-三视角版.md",
+    "name": "集合",
+    "action": "add_primary",
+    "value": "03E99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\02-函数-三视角版.md",
+    "name": "函数",
+    "action": "add_primary",
+    "value": "03E20",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\03-自然数-三视角版.md",
+    "name": "自然数",
+    "action": "add_primary",
+    "value": "11A99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\04-整数-三视角版.md",
+    "name": "整数",
+    "action": "add_primary",
+    "value": "11A99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\05-有理数-三视角版.md",
+    "name": "有理数",
+    "action": "add_primary",
+    "value": "11A99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\06-实数-三视角版.md",
+    "name": "实数",
+    "action": "add_primary",
+    "value": "26A03",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\07-复数-三视角版.md",
+    "name": "复数",
+    "action": "add_primary",
+    "value": "30A99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\08-群-三视角版.md",
+    "name": "群",
+    "action": "add_primary",
+    "value": "20A05",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\09-环-三视角版.md",
+    "name": "环",
+    "action": "add_primary",
+    "value": "13A99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\10-域-三视角版.md",
+    "name": "域",
+    "action": "add_primary",
+    "value": "12F99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\11-向量空间-三视角版.md",
+    "name": "向量空间",
+    "action": "add_primary",
+    "value": "15A03",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\12-线性映射-三视角版.md",
+    "name": "线性映射",
+    "action": "add_primary",
+    "value": "15A04",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\13-极限-三视角版.md",
+    "name": "极限",
+    "action": "add_primary",
+    "value": "26A03",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\14-连续-三视角版.md",
+    "name": "连续",
+    "action": "add_primary",
+    "value": "26A15",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\15-导数-三视角版.md",
+    "name": "导数",
+    "action": "add_primary",
+    "value": "26A24",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\16-积分-三视角版.md",
+    "name": "积分",
+    "action": "add_primary",
+    "value": "26A42",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\17-级数-三视角版.md",
+    "name": "级数",
+    "action": "add_primary",
+    "value": "40A05",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\18-流形-三视角版.md",
+    "name": "流形",
+    "action": "add_primary",
+    "value": "57N99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\19-黎曼流形-三视角版.md",
+    "name": "流形",
+    "action": "add_primary",
+    "value": "57N99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\20-曲率-三视角版.md",
+    "name": "曲率",
+    "action": "add_primary",
+    "value": "53A04",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\21-概形-三视角版.md",
+    "name": "概形",
+    "action": "add_primary",
+    "value": "14A15",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\22-层-三视角版.md",
+    "name": "层",
+    "action": "add_primary",
+    "value": "14F05",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\23-拓扑空间-三视角版.md",
+    "name": "拓扑空间",
+    "action": "add_primary",
+    "value": "54A05",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\24-同伦-三视角版.md",
+    "name": "同伦",
+    "action": "add_primary",
+    "value": "55P99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\25-同调-三视角版.md",
+    "name": "同调",
+    "action": "add_primary",
+    "value": "55N99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\26-素数-三视角版.md",
+    "name": "素数",
+    "action": "add_primary",
+    "value": "11A41",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\27-同余-三视角版.md",
+    "name": "同余",
+    "action": "add_primary",
+    "value": "11A07",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\28-L函数-三视角版.md",
+    "name": "函数",
+    "action": "add_primary",
+    "value": "03E20",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\28-L函数.md",
+    "name": "函数",
+    "action": "add_primary",
+    "value": "03E20",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\29-图-三视角版.md",
+    "name": "图",
+    "action": "add_primary",
+    "value": "05C99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\29-图.md",
+    "name": "图",
+    "action": "add_primary",
+    "value": "05C99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\30-组合数-三视角版.md",
+    "name": "组合数",
+    "action": "add_primary",
+    "value": "05A10",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\30-组合数.md",
+    "name": "组合数",
+    "action": "add_primary",
+    "value": "05A10",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\31-算法-三视角版.md",
+    "name": "算法",
+    "action": "add_primary",
+    "value": "68W01",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\31-算法.md",
+    "name": "算法",
+    "action": "add_primary",
+    "value": "68W01",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\32-表示-三视角版.md",
+    "name": "表示",
+    "action": "add_primary",
+    "value": "20C99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\32-表示.md",
+    "name": "表示",
+    "action": "add_primary",
+    "value": "20C99",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\33-朗兰兹纲领-三视角版.md",
+    "name": "朗兰兹纲领",
+    "action": "add_primary",
+    "value": "11R39",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\33-朗兰兹纲领.md",
+    "name": "朗兰兹纲领",
+    "action": "add_primary",
+    "value": "11R39",
+    "reason": "补充缺失的主分类"
+  },
+  {
+    "file": "concept\\核心概念\\03-自然数.md",
+    "name": "自然数",
+    "action": "update_primary",
+    "old_value": "03E99",
+    "new_value": "11A99",
+    "reason": "主分类不匹配: 当前03E99, 期望11A99"
+  },
+  {
+    "file": "concept\\核心概念\\18-流形.md",
+    "name": "流形",
+    "action": "update_primary",
+    "old_value": "57R99",
+    "new_value": "57N99",
+    "reason": "主分类不匹配: 当前57R99, 期望57N99"
+  },
+  {
+    "file": "concept\\核心概念\\19-黎曼流形.md",
+    "name": "流形",
+    "action": "update_primary",
+    "old_value": "53C20",
+    "new_value": "57N99",
+    "reason": "主分类不匹配: 当前53C20, 期望57N99"
+  }
+]

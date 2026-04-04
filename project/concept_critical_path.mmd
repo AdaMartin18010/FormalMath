@@ -1,0 +1,65 @@
+graph LR
+    %% 关键路径图 - 核心概念依赖链
+
+    subgraph 分析学核心[分析学核心路径]
+        style 分析学核心 fill:#E3F2FD
+        limit["极限"]
+        continuity["连续性"]
+        derivative["导数"]
+        riemann_integral["积分"]
+        infinite_series["级数"]
+        measure_theory["测度论"]
+        functional_analysis["泛函分析"]
+    end
+
+    subgraph 代数学核心[代数学核心路径]
+        style 代数学核心 fill:#E8F5E9
+        group["群"]
+        ring["环"]
+        field["域"]
+        vector_space["向量空间"]
+        linear_algebra["线性代数"]
+        module["模"]
+        homological_algebra["同调代数"]
+    end
+
+    subgraph 几何拓扑核心[几何拓扑核心路径]
+        style 几何拓扑核心 fill:#FFF3E0
+        topological_space["拓扑空间"]
+        manifold["流形"]
+        riemannian_metric["黎曼度量"]
+        curvature["曲率"]
+    end
+
+    subgraph 数论高级核心[数论高级核心路径]
+        style 数论高级核心 fill:#FCE4EC
+        set_theory["集合论"]
+        congruence["同余"]
+        elliptic_curve["椭圆曲线"]
+        modular_form["模形式"]
+        langlands_program["Langlands纲领"]
+    end
+
+    %% 关键路径连接
+    limit --> continuity
+    continuity --> derivative
+    derivative --> riemann_integral
+    limit --> infinite_series
+    riemann_integral --> measure_theory
+    measure_theory --> functional_analysis
+    group --> ring
+    ring --> field
+    field --> vector_space
+    vector_space --> linear_algebra
+    module --> homological_algebra
+    topological_space --> manifold
+    manifold --> riemannian_metric
+    riemannian_metric --> curvature
+    congruence --> elliptic_curve
+    elliptic_curve --> modular_form
+    modular_form --> langlands_program
+
+    %% 跨分支连接
+    functional_analysis -.-> linear_algebra
+    curvature -.-> functional_analysis
+    homological_algebra -.-> langlands_program

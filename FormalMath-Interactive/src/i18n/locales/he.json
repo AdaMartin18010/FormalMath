@@ -1,0 +1,103 @@
+{
+  "common": {
+    "appName": "פורמל מת",
+    "loading": "טוען...",
+    "error": "שגיאה",
+    "success": "הצלחה",
+    "cancel": "ביטול",
+    "confirm": "אישור",
+    "save": "שמירה",
+    "delete": "מחיקה",
+    "edit": "עריכה",
+    "create": "יצירה",
+    "search": "חיפוש",
+    "filter": "סינון",
+    "sort": "מיון",
+    "close": "סגירה",
+    "back": "חזרה",
+    "next": "הבא",
+    "previous": "הקודם",
+    "submit": "שליחה",
+    "reset": "איפוס",
+    "view": "צפייה",
+    "more": "עוד",
+    "less": "פחות",
+    "all": "הכל",
+    "none": "אין",
+    "select": "בחירה",
+    "deselect": "ביטול בחירה",
+    "expand": "הרחבה",
+    "collapse": "כיווץ",
+    "refresh": "רענון",
+    "retry": "ניסיון חוזר"
+  },
+  "navigation": {
+    "home": "דף הבית",
+    "knowledgeGraph": "גרף ידע",
+    "reasoningTree": "עץ היגיון",
+    "mindMap": "מפת חשיבה",
+    "comparison": "השוואה",
+    "decisionTree": "עץ החלטות",
+    "evolution": "התפתחות",
+    "settings": "הגדרות",
+    "profile": "פרופיל",
+    "help": "עזרה"
+  },
+  "accessibility": {
+    "skipToMain": "דלג לתוכן הראשי",
+    "mainNavigation": "ניווג ראשי",
+    "breadcrumb": "ניווג פירורי לחם",
+    "searchButton": "פתח חיפוש",
+    "menuButton": "פתח תפריט",
+    "closeButton": "סגור",
+    "toggleTheme": "החלף מצב כהה",
+    "toggleLanguage": "שנה שפה",
+    "loading": "התוכן בטעינה",
+    "error": "אירעה שגיאה",
+    "newWindow": "נפתח בחלון חדש",
+    "externalLink": "קישור חיצוני"
+  },
+  "home": {
+    "title": "ברוכים הבאים לפורמל מת",
+    "subtitle": "גרף ידע מתמטי אינטראקטיבי",
+    "description": "חקור מושגים מתמטיים באמצעות הדמיות אינטראקטיביות",
+    "getStarted": "התחל עכשיו",
+    "exploreGraph": "חקור את גרף הידע"
+  },
+  "knowledgeGraph": {
+    "title": "גרף ידע",
+    "searchPlaceholder": "חפש מושגים...",
+    "filterByCategory": "סנן לפי קטגוריה",
+    "zoomIn": "הגדל",
+    "zoomOut": "הקטן",
+    "resetView": "אפס תצוגה",
+    "fullscreen": "החלף מסך מלא",
+    "nodeCount": "{{count}} צמתים",
+    "edgeCount": "{{count}} חיבורים"
+  },
+  "errors": {
+    "404": {
+      "title": "הדף לא נמצא",
+      "message": "הדף שאתה מחפש אינו קיים או הועבר",
+      "returnHome": "חזור לדף הבית"
+    },
+    "500": {
+      "title": "שגיאת שרת",
+      "message": "אירעה שגיאה בלתי צפויה. אנא נסה שוב מאוחר יותר"
+    },
+    "network": {
+      "title": "שגיאת רשת",
+      "message": "לא ניתן להתחבר לשרת. אנא בדוק את חיבור האינטרנט"
+    }
+  },
+  "gamification": {
+    "achievements": "הישגים",
+    "points": "נקודות",
+    "level": "רמה",
+    "streak": "רצף ימים",
+    "badges": "תגים",
+    "leaderboard": "טבלת מובילים",
+    "challenges": "אתגרים",
+    "progress": "התקדמות"
+  }
+}

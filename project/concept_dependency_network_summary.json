@@ -1,0 +1,2191 @@
+{
+  "metadata": {
+    "version": "3.0",
+    "generated_date": "2026-04-04",
+    "total_concepts": 382,
+    "total_dependencies": 568,
+    "max_level": 13
+  },
+  "statistics": {
+    "total_concepts": 382,
+    "total_edges": 568,
+    "avg_out_degree": 1.49,
+    "level_distribution": {
+      "0": 33,
+      "1": 24,
+      "2": 33,
+      "3": 21,
+      "4": 27,
+      "5": 51,
+      "6": 60,
+      "7": 39,
+      "8": 33,
+      "9": 22,
+      "10": 17,
+      "11": 9,
+      "12": 3,
+      "13": 2
+    },
+    "basic_concepts_count": 33,
+    "max_depth": 13
+  },
+  "concepts_by_level": {
+    "L0": [
+      {
+        "id": "limit",
+        "name": "极限",
+        "category": "分析学"
+      },
+      {
+        "id": "type_theory",
+        "name": "类型论",
+        "category": "数理逻辑"
+      },
+      {
+        "id": "general_relativity",
+        "name": "广义相对论",
+        "category": "物理数学"
+      },
+      {
+        "id": "finite_volume",
+        "name": "有限体积法",
+        "category": "计算数学"
+      },
+      {
+        "id": "divisibility",
+        "name": "整除",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "supersymmetry",
+        "name": "超对称",
+        "category": "物理数学"
+      },
+      {
+        "id": "lattice_based_crypto",
+        "name": "格密码",
+        "category": "密码学"
+      },
+      {
+        "id": "symplectic_manifold",
+        "name": "辛流形",
+        "category": "动力系统"
+      },
+      {
+        "id": "symbolic_dynamics",
+        "name": "符号动力学",
+        "category": "动力系统"
+      },
+      {
+        "id": "p_adic_numbers",
+        "name": "p进数",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "public_key",
+        "name": "公钥密码学",
+        "category": "密码学"
+      },
+      {
+        "id": "modular_representation",
+        "name": "模表示论",
+        "category": "表示论"
+      },
+      {
+        "id": "set_theory",
+        "name": "集合论",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "group",
+        "name": "群",
+        "category": "代数学"
+      },
+      {
+        "id": "domain_decomposition",
+        "name": "区域分解",
+        "category": "计算数学"
+      },
+      {
+        "id": "topological_space",
+        "name": "拓扑空间",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "decision_tree",
+        "name": "决策树",
+        "category": "数据科学"
+      },
+      {
+        "id": "uncertainty_quantification",
+        "name": "不确定性量化",
+        "category": "计算数学"
+      },
+      {
+        "id": "adjoint_functor",
+        "name": "伴随函子",
+        "category": "范畴论"
+      },
+      {
+        "id": "class_field_theory",
+        "name": "类域论",
+        "category": "数论高级"
+      },
+      {
+        "id": "measure_theory",
+        "name": "测度论",
+        "category": "分析学"
+      },
+      {
+        "id": "k_theory_dynamics",
+        "name": "动力系统K理论",
+        "category": "动力系统"
+      },
+      {
+        "id": "data_preprocessing",
+        "name": "数据预处理",
+        "category": "数据科学"
+      },
+      {
+        "id": "electromagnetism",
+        "name": "电磁学",
+        "category": "物理数学"
+      },
+      {
+        "id": "gradient",
+        "name": "梯度",
+        "category": "最优化"
+      },
+      {
+        "id": "channel_coding",
+        "name": "信道编码",
+        "category": "信息论"
+      },
+      {
+        "id": "hash_function",
+        "name": "哈希函数",
+        "category": "密码学"
+      },
+      {
+        "id": "propositional_logic",
+        "name": "命题逻辑",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "svm",
+        "name": "支持向量机",
+        "category": "数据科学"
+      },
+      {
+        "id": "biological_oscillator",
+        "name": "生物振荡器",
+        "category": "生物数学"
+      },
+      {
+        "id": "monte_carlo_numerical",
+        "name": "蒙特卡洛数值方法",
+        "category": "计算数学"
+      },
+      {
+        "id": "statistical_mechanics",
+        "name": "统计力学",
+        "category": "物理数学"
+      },
+      {
+        "id": "post_quantum",
+        "name": "后量子密码",
+        "category": "密码学"
+      }
+    ],
+    "L1": [
+      {
+        "id": "continuity",
+        "name": "连续性",
+        "category": "分析学"
+      },
+      {
+        "id": "infinite_series",
+        "name": "级数",
+        "category": "分析学"
+      },
+      {
+        "id": "continuous_map",
+        "name": "连续映射",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "congruence",
+        "name": "同余",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "rsa",
+        "name": "RSA",
+        "category": "密码学"
+      },
+      {
+        "id": "diffie_hellman",
+        "name": "Diffie-Hellman",
+        "category": "密码学"
+      },
+      {
+        "id": "digital_signature",
+        "name": "数字签名",
+        "category": "密码学"
+      },
+      {
+        "id": "identity_based",
+        "name": "基于身份的加密",
+        "category": "密码学"
+      },
+      {
+        "id": "descriptive_set_theory",
+        "name": "描述集合论",
+        "category": "数理逻辑"
+      },
+      {
+        "id": "ring",
+        "name": "环",
+        "category": "代数学"
+      },
+      {
+        "id": "group_action",
+        "name": "群作用",
+        "category": "代数学"
+      },
+      {
+        "id": "category_theory",
+        "name": "范畴论",
+        "category": "代数学"
+      },
+      {
+        "id": "symmetric_encryption",
+        "name": "对称加密",
+        "category": "密码学"
+      },
+      {
+        "id": "induced_representation",
+        "name": "诱导表示",
+        "category": "表示论"
+      },
+      {
+        "id": "manifold",
+        "name": "流形",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "random_forest",
+        "name": "随机森林",
+        "category": "数据科学"
+      },
+      {
+        "id": "probability_measure",
+        "name": "概率测度",
+        "category": "概率统计"
+      },
+      {
+        "id": "ergodic_theory",
+        "name": "遍历理论",
+        "category": "动力系统"
+      },
+      {
+        "id": "feature_engineering",
+        "name": "特征工程",
+        "category": "数据科学"
+      },
+      {
+        "id": "error_correction",
+        "name": "纠错编码",
+        "category": "信息论"
+      },
+      {
+        "id": "predicate_logic",
+        "name": "谓词逻辑",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "intuitionistic_logic",
+        "name": "直觉主义逻辑",
+        "category": "数理逻辑"
+      },
+      {
+        "id": "modal_logic",
+        "name": "模态逻辑",
+        "category": "数理逻辑"
+      },
+      {
+        "id": "phase_transition",
+        "name": "相变理论",
+        "category": "物理数学"
+      }
+    ],
+    "L2": [
+      {
+        "id": "derivative",
+        "name": "导数",
+        "category": "分析学"
+      },
+      {
+        "id": "uniform_convergence",
+        "name": "一致收敛",
+        "category": "分析学"
+      },
+      {
+        "id": "sylow_theory",
+        "name": "Sylow理论",
+        "category": "代数学"
+      },
+      {
+        "id": "primitive_root",
+        "name": "原根",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "groupoid",
+        "name": "广群",
+        "category": "范畴论"
+      },
+      {
+        "id": "compactness",
+        "name": "紧致性",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "connectedness",
+        "name": "连通性",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "homotopy",
+        "name": "同伦",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "mac",
+        "name": "消息认证码",
+        "category": "密码学"
+      },
+      {
+        "id": "blockchain_consensus",
+        "name": "区块链共识",
+        "category": "密码学"
+      },
+      {
+        "id": "proof_theory",
+        "name": "证明论",
+        "category": "数理逻辑"
+      },
+      {
+        "id": "quadratic_residue",
+        "name": "二次剩余",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "field",
+        "name": "域",
+        "category": "代数学"
+      },
+      {
+        "id": "module",
+        "name": "模",
+        "category": "代数学"
+      },
+      {
+        "id": "algebraic_integer",
+        "name": "代数整数",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "ideal",
+        "name": "理想",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "homomorphic_encryption",
+        "name": "同态加密",
+        "category": "密码学"
+      },
+      {
+        "id": "sheaf",
+        "name": "层",
+        "category": "代数学"
+      },
+      {
+        "id": "model_category",
+        "name": "模型范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "topos",
+        "name": "拓扑斯",
+        "category": "范畴论"
+      },
+      {
+        "id": "2_category",
+        "name": "2-范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "limits_colimits",
+        "name": "极限与余极限",
+        "category": "范畴论"
+      },
+      {
+        "id": "yoneda_lemma",
+        "name": "米田引理",
+        "category": "范畴论"
+      },
+      {
+        "id": "categorical_logic",
+        "name": "范畴逻辑",
+        "category": "数理逻辑"
+      },
+      {
+        "id": "aes",
+        "name": "AES",
+        "category": "密码学"
+      },
+      {
+        "id": "random_variable",
+        "name": "随机变量",
+        "category": "概率统计"
+      },
+      {
+        "id": "conditional_probability",
+        "name": "条件概率",
+        "category": "概率统计"
+      },
+      {
+        "id": "information",
+        "name": "信息",
+        "category": "信息论"
+      },
+      {
+        "id": "differential_privacy",
+        "name": "差分隐私",
+        "category": "信息论"
+      },
+      {
+        "id": "reed_solomon",
+        "name": "Reed-Solomon码",
+        "category": "信息论"
+      },
+      {
+        "id": "ldpc_code",
+        "name": "LDPC码",
+        "category": "信息论"
+      },
+      {
+        "id": "model_theory",
+        "name": "模型论",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "constructive_mathematics",
+        "name": "构造数学",
+        "category": "数理逻辑"
+      }
+    ],
+    "L3": [
+      {
+        "id": "riemann_integral",
+        "name": "积分",
+        "category": "分析学"
+      },
+      {
+        "id": "finite_difference",
+        "name": "有限差分法",
+        "category": "计算数学"
+      },
+      {
+        "id": "valuation",
+        "name": "赋值论",
+        "category": "数论高级"
+      },
+      {
+        "id": "solvable_group",
+        "name": "可解群",
+        "category": "代数学"
+      },
+      {
+        "id": "homological_algebra",
+        "name": "同调代数",
+        "category": "代数学"
+      },
+      {
+        "id": "fundamental_group",
+        "name": "基本群",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "homology_group",
+        "name": "同调群",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "stochastic_process",
+        "name": "随机过程",
+        "category": "概率统计"
+      },
+      {
+        "id": "formalized_proof",
+        "name": "形式化证明",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "reverse_math",
+        "name": "逆数学",
+        "category": "数理逻辑"
+      },
+      {
+        "id": "ordinal_analysis",
+        "name": "序数分析",
+        "category": "数理逻辑"
+      },
+      {
+        "id": "vector_space",
+        "name": "向量空间",
+        "category": "代数学"
+      },
+      {
+        "id": "commutative_algebra",
+        "name": "交换代数",
+        "category": "代数学"
+      },
+      {
+        "id": "class_number",
+        "name": "类数",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "kan_extension",
+        "name": "Kan扩张",
+        "category": "范畴论"
+      },
+      {
+        "id": "representable_functor",
+        "name": "可表函子",
+        "category": "范畴论"
+      },
+      {
+        "id": "probability_distribution",
+        "name": "概率分布",
+        "category": "概率统计"
+      },
+      {
+        "id": "expectation",
+        "name": "期望",
+        "category": "概率统计"
+      },
+      {
+        "id": "bayes_theorem",
+        "name": "贝叶斯定理",
+        "category": "概率统计"
+      },
+      {
+        "id": "quantum_crypto",
+        "name": "量子密码",
+        "category": "密码学"
+      },
+      {
+        "id": "forcing",
+        "name": "力迫法",
+        "category": "数理逻辑"
+      }
+    ],
+    "L4": [
+      {
+        "id": "complex_analysis",
+        "name": "复分析",
+        "category": "分析学"
+      },
+      {
+        "id": "lebesgue_integral",
+        "name": "Lebesgue积分",
+        "category": "分析学"
+      },
+      {
+        "id": "differential_equations",
+        "name": "微分方程",
+        "category": "分析学"
+      },
+      {
+        "id": "numerical_integration",
+        "name": "数值积分",
+        "category": "计算数学"
+      },
+      {
+        "id": "homotopy_algebra",
+        "name": "同伦代数",
+        "category": "代数学"
+      },
+      {
+        "id": "abelian_category",
+        "name": "Abel范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "covering_space",
+        "name": "覆叠空间",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "morse_theory",
+        "name": "Morse理论",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "tensor_product",
+        "name": "张量积",
+        "category": "代数学"
+      },
+      {
+        "id": "cohomology",
+        "name": "上同调",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "ext_functor",
+        "name": "Ext函子",
+        "category": "同调代数"
+      },
+      {
+        "id": "p_adic_number",
+        "name": "p进数",
+        "category": "数论高级"
+      },
+      {
+        "id": "markov_chain",
+        "name": "马尔可夫链",
+        "category": "概率统计"
+      },
+      {
+        "id": "martingale",
+        "name": "鞅",
+        "category": "概率统计"
+      },
+      {
+        "id": "brownian_motion",
+        "name": "布朗运动",
+        "category": "概率统计"
+      },
+      {
+        "id": "shannon_entropy",
+        "name": "香农熵",
+        "category": "信息论"
+      },
+      {
+        "id": "linear_algebra",
+        "name": "线性代数",
+        "category": "代数学"
+      },
+      {
+        "id": "matrix",
+        "name": "矩阵",
+        "category": "代数学"
+      },
+      {
+        "id": "tangent_space",
+        "name": "切空间",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "convex_set",
+        "name": "凸集",
+        "category": "最优化"
+      },
+      {
+        "id": "algebraic_geometry",
+        "name": "代数几何",
+        "category": "代数学"
+      },
+      {
+        "id": "statistical_inference",
+        "name": "统计推断",
+        "category": "概率统计"
+      },
+      {
+        "id": "credit_risk",
+        "name": "信用风险模型",
+        "category": "金融数学"
+      },
+      {
+        "id": "population_genetics",
+        "name": "群体遗传学",
+        "category": "生物数学"
+      },
+      {
+        "id": "law_of_large_numbers",
+        "name": "大数定律",
+        "category": "概率统计"
+      },
+      {
+        "id": "variance",
+        "name": "方差",
+        "category": "概率统计"
+      },
+      {
+        "id": "large_cardinal",
+        "name": "大基数",
+        "category": "数理逻辑"
+      }
+    ],
+    "L5": [
+      {
+        "id": "fourier_analysis",
+        "name": "Fourier分析",
+        "category": "分析学"
+      },
+      {
+        "id": "residue_theory",
+        "name": "留数",
+        "category": "分析学"
+      },
+      {
+        "id": "complex_geometry",
+        "name": "复几何",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "zeta_function",
+        "name": "Zeta函数",
+        "category": "数论高级"
+      },
+      {
+        "id": "lp_spaces",
+        "name": "Lp空间",
+        "category": "分析学"
+      },
+      {
+        "id": "population_dynamics",
+        "name": "种群动力学",
+        "category": "生物数学"
+      },
+      {
+        "id": "neural_dynamics",
+        "name": "神经动力学",
+        "category": "生物数学"
+      },
+      {
+        "id": "numerical_ode",
+        "name": "常微分方程数值解",
+        "category": "计算数学"
+      },
+      {
+        "id": "nonlinear_dynamics",
+        "name": "非线性动力学",
+        "category": "动力系统"
+      },
+      {
+        "id": "triangulated_category",
+        "name": "三角范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "derived_functor_cat",
+        "name": "导出函子（范畴论）",
+        "category": "范畴论"
+      },
+      {
+        "id": "tor_functor",
+        "name": "Tor函子",
+        "category": "同调代数"
+      },
+      {
+        "id": "algebraic_topology",
+        "name": "代数拓扑",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "group_representation",
+        "name": "群表示",
+        "category": "代数学"
+      },
+      {
+        "id": "tensor_field",
+        "name": "张量场",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "monoidal_category",
+        "name": "幺半范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "scheme",
+        "name": "概形",
+        "category": "代数学"
+      },
+      {
+        "id": "cohomology_sheaf",
+        "name": "上同调",
+        "category": "代数学"
+      },
+      {
+        "id": "spectral_sequence",
+        "name": "谱序列",
+        "category": "同调代数"
+      },
+      {
+        "id": "group_cohomology",
+        "name": "群上同调",
+        "category": "同调代数"
+      },
+      {
+        "id": "sheaf_cohomology",
+        "name": "层上同调",
+        "category": "同调代数"
+      },
+      {
+        "id": "motive",
+        "name": "Motive",
+        "category": "代数几何"
+      },
+      {
+        "id": "de_rham_cohomology",
+        "name": "de Rham上同调",
+        "category": "代数几何"
+      },
+      {
+        "id": "chow_ring",
+        "name": "Chow环",
+        "category": "代数几何"
+      },
+      {
+        "id": "local_global",
+        "name": "局部-整体原理",
+        "category": "数论高级"
+      },
+      {
+        "id": "bayesian_inference",
+        "name": "贝叶斯推断",
+        "category": "概率统计"
+      },
+      {
+        "id": "phylogenetics",
+        "name": "系统发生学",
+        "category": "生物数学"
+      },
+      {
+        "id": "stochastic_calculus",
+        "name": "随机分析",
+        "category": "金融数学"
+      },
+      {
+        "id": "risk_neutral",
+        "name": "风险中性定价",
+        "category": "金融数学"
+      },
+      {
+        "id": "mutual_information",
+        "name": "互信息",
+        "category": "信息论"
+      },
+      {
+        "id": "source_coding",
+        "name": "信源编码",
+        "category": "信息论"
+      },
+      {
+        "id": "data_compression",
+        "name": "数据压缩",
+        "category": "信息论"
+      },
+      {
+        "id": "quantum_information",
+        "name": "量子信息",
+        "category": "信息论"
+      },
+      {
+        "id": "functional_analysis",
+        "name": "泛函分析",
+        "category": "分析学"
+      },
+      {
+        "id": "regression_analysis",
+        "name": "回归分析",
+        "category": "概率统计"
+      },
+      {
+        "id": "optimization_problem",
+        "name": "最优化问题",
+        "category": "最优化"
+      },
+      {
+        "id": "conjugate_gradient",
+        "name": "共轭梯度法",
+        "category": "最优化"
+      },
+      {
+        "id": "control_system",
+        "name": "控制系统",
+        "category": "控制论"
+      },
+      {
+        "id": "iterative_method",
+        "name": "迭代法",
+        "category": "计算数学"
+      },
+      {
+        "id": "numerical_linear_algebra",
+        "name": "数值线性代数",
+        "category": "计算数学"
+      },
+      {
+        "id": "eigenvalue",
+        "name": "特征值",
+        "category": "代数学"
+      },
+      {
+        "id": "hessian_matrix",
+        "name": "Hessian矩阵",
+        "category": "最优化"
+      },
+      {
+        "id": "sparse_matrix",
+        "name": "稀疏矩阵",
+        "category": "计算数学"
+      },
+      {
+        "id": "differential_form",
+        "name": "微分形式",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "convex_function",
+        "name": "凸函数",
+        "category": "最优化"
+      },
+      {
+        "id": "abelian_variety",
+        "name": "Abel簇",
+        "category": "数论高级"
+      },
+      {
+        "id": "parameter_estimation",
+        "name": "参数估计",
+        "category": "概率统计"
+      },
+      {
+        "id": "hypothesis_testing",
+        "name": "假设检验",
+        "category": "概率统计"
+      },
+      {
+        "id": "side_channel",
+        "name": "侧信道攻击",
+        "category": "密码学"
+      },
+      {
+        "id": "coalescent_theory",
+        "name": "溯祖理论",
+        "category": "生物数学"
+      },
+      {
+        "id": "central_limit_theorem",
+        "name": "中心极限定理",
+        "category": "概率统计"
+      }
+    ],
+    "L6": [
+      {
+        "id": "conformal_mapping",
+        "name": "共形映射",
+        "category": "分析学"
+      },
+      {
+        "id": "asymptotic_analysis",
+        "name": "渐近分析",
+        "category": "分析学"
+      },
+      {
+        "id": "harmonic_analysis",
+        "name": "调和分析",
+        "category": "分析学"
+      },
+      {
+        "id": "spectral_method",
+        "name": "谱方法",
+        "category": "计算数学"
+      },
+      {
+        "id": "fast_fourier_transform",
+        "name": "快速傅里叶变换",
+        "category": "计算数学"
+      },
+      {
+        "id": "derived_category",
+        "name": "导出范畴",
+        "category": "同调代数"
+      },
+      {
+        "id": "logistic_growth",
+        "name": "Logistic增长",
+        "category": "生物数学"
+      },
+      {
+        "id": "sir_model",
+        "name": "SIR模型",
+        "category": "生物数学"
+      },
+      {
+        "id": "evolutionary_dynamics",
+        "name": "进化动力学",
+        "category": "生物数学"
+      },
+      {
+        "id": "hodgkin_huxley",
+        "name": "Hodgkin-Huxley模型",
+        "category": "生物数学"
+      },
+      {
+        "id": "runge_kutta",
+        "name": "Runge-Kutta方法",
+        "category": "计算数学"
+      },
+      {
+        "id": "chaos_theory",
+        "name": "混沌理论",
+        "category": "动力系统"
+      },
+      {
+        "id": "bifurcation_theory",
+        "name": "分岔理论",
+        "category": "动力系统"
+      },
+      {
+        "id": "simplicial_set",
+        "name": "单纯形集",
+        "category": "范畴论"
+      },
+      {
+        "id": "conley_index",
+        "name": "Conley指数",
+        "category": "动力系统"
+      },
+      {
+        "id": "linear_programming",
+        "name": "线性规划",
+        "category": "最优化"
+      },
+      {
+        "id": "jordan_normal_form",
+        "name": "Jordan标准形",
+        "category": "代数学"
+      },
+      {
+        "id": "state_space",
+        "name": "状态空间",
+        "category": "控制论"
+      },
+      {
+        "id": "character_theory",
+        "name": "特征标理论",
+        "category": "表示论"
+      },
+      {
+        "id": "lie_group",
+        "name": "Lie群",
+        "category": "代数学"
+      },
+      {
+        "id": "galois_representation",
+        "name": "Galois表示",
+        "category": "数论逻辑"
+      },
+      {
+        "id": "riemannian_metric",
+        "name": "黎曼度量",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "enriched_category",
+        "name": "富范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "bicategory",
+        "name": "双范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "intersection_theory",
+        "name": "相交理论",
+        "category": "代数几何"
+      },
+      {
+        "id": "biration_geometry",
+        "name": "双有理几何",
+        "category": "代数几何"
+      },
+      {
+        "id": "moduli_space",
+        "name": "模空间",
+        "category": "代数几何"
+      },
+      {
+        "id": "etale_cohomology",
+        "name": "平展上同调",
+        "category": "代数几何"
+      },
+      {
+        "id": "crystalline_cohomology",
+        "name": "晶体上同调",
+        "category": "代数几何"
+      },
+      {
+        "id": "intersection_cohomology",
+        "name": "相交上同调",
+        "category": "同调代数"
+      },
+      {
+        "id": "hodge_theory",
+        "name": "Hodge理论",
+        "category": "代数几何"
+      },
+      {
+        "id": "pca",
+        "name": "主成分分析",
+        "category": "数据科学"
+      },
+      {
+        "id": "ito_calculus",
+        "name": "Itô微积分",
+        "category": "金融数学"
+      },
+      {
+        "id": "fundamental_theorem",
+        "name": "资产定价基本定理",
+        "category": "金融数学"
+      },
+      {
+        "id": "channel_capacity",
+        "name": "信道容量",
+        "category": "信息论"
+      },
+      {
+        "id": "huffman_coding",
+        "name": "Huffman编码",
+        "category": "信息论"
+      },
+      {
+        "id": "arithmetic_coding",
+        "name": "算术编码",
+        "category": "信息论"
+      },
+      {
+        "id": "banach_space",
+        "name": "Banach空间",
+        "category": "分析学"
+      },
+      {
+        "id": "hilbert_space",
+        "name": "Hilbert空间",
+        "category": "分析学"
+      },
+      {
+        "id": "distribution_theory",
+        "name": "分布理论",
+        "category": "分析学"
+      },
+      {
+        "id": "time_series_analysis",
+        "name": "时间序列分析",
+        "category": "概率统计"
+      },
+      {
+        "id": "lagrange_multiplier",
+        "name": "拉格朗日乘子",
+        "category": "最优化"
+      },
+      {
+        "id": "convex_optimization",
+        "name": "凸优化",
+        "category": "最优化"
+      },
+      {
+        "id": "dynamic_programming",
+        "name": "动态规划",
+        "category": "最优化"
+      },
+      {
+        "id": "stochastic_optimization",
+        "name": "随机优化",
+        "category": "最优化"
+      },
+      {
+        "id": "nonlinear_programming",
+        "name": "非线性规划",
+        "category": "最优化"
+      },
+      {
+        "id": "transfer_function",
+        "name": "传递函数",
+        "category": "控制论"
+      },
+      {
+        "id": "nonlinear_control",
+        "name": "非线性控制",
+        "category": "控制论"
+      },
+      {
+        "id": "adaptive_control",
+        "name": "自适应控制",
+        "category": "控制论"
+      },
+      {
+        "id": "system_identification",
+        "name": "系统辨识",
+        "category": "控制论"
+      },
+      {
+        "id": "conjugate_gradient_method",
+        "name": "共轭梯度法",
+        "category": "计算数学"
+      },
+      {
+        "id": "multigrid",
+        "name": "多重网格法",
+        "category": "计算数学"
+      },
+      {
+        "id": "preconditioner",
+        "name": "预条件子",
+        "category": "计算数学"
+      },
+      {
+        "id": "newton_method",
+        "name": "牛顿法",
+        "category": "最优化"
+      },
+      {
+        "id": "stokes_theorem",
+        "name": "Stokes定理",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "symplectic_geometry",
+        "name": "辛几何",
+        "category": "动力系统"
+      },
+      {
+        "id": "gradient_descent",
+        "name": "梯度下降法",
+        "category": "最优化"
+      },
+      {
+        "id": "kl_divergence",
+        "name": "KL散度",
+        "category": "信息论"
+      },
+      {
+        "id": "elliptic_curve",
+        "name": "椭圆曲线",
+        "category": "数论高级"
+      },
+      {
+        "id": "maximum_likelihood",
+        "name": "最大似然估计",
+        "category": "概率统计"
+      }
+    ],
+    "L7": [
+      {
+        "id": "koszul_duality",
+        "name": "Koszul对偶",
+        "category": "同调代数"
+      },
+      {
+        "id": "t_structure",
+        "name": "t-结构",
+        "category": "同调代数"
+      },
+      {
+        "id": "local_cohomology",
+        "name": "局部上同调",
+        "category": "同调代数"
+      },
+      {
+        "id": "hypercohomology",
+        "name": "超上同调",
+        "category": "同调代数"
+      },
+      {
+        "id": "duality_cohomology",
+        "name": "对偶定理（上同调）",
+        "category": "同调代数"
+      },
+      {
+        "id": "perfect_complex",
+        "name": "完美复形",
+        "category": "同调代数"
+      },
+      {
+        "id": "tilting_theory",
+        "name": "倾斜理论",
+        "category": "同调代数"
+      },
+      {
+        "id": "predator_prey",
+        "name": "捕食者-猎物模型",
+        "category": "生物数学"
+      },
+      {
+        "id": "seir_model",
+        "name": "SEIR模型",
+        "category": "生物数学"
+      },
+      {
+        "id": "replicator_dynamics",
+        "name": "复制动力学",
+        "category": "生物数学"
+      },
+      {
+        "id": "operator_theory",
+        "name": "算子理论",
+        "category": "分析学"
+      },
+      {
+        "id": "simplex_method",
+        "name": "单纯形法",
+        "category": "最优化"
+      },
+      {
+        "id": "integer_programming",
+        "name": "整数规划",
+        "category": "最优化"
+      },
+      {
+        "id": "feedback_control",
+        "name": "反馈控制",
+        "category": "控制论"
+      },
+      {
+        "id": "root_locus",
+        "name": "根轨迹法",
+        "category": "控制论"
+      },
+      {
+        "id": "controllability",
+        "name": "能控性",
+        "category": "控制论"
+      },
+      {
+        "id": "observability",
+        "name": "能观性",
+        "category": "控制论"
+      },
+      {
+        "id": "lie_algebra",
+        "name": "Lie代数",
+        "category": "代数学"
+      },
+      {
+        "id": "fiber_bundle",
+        "name": "纤维丛",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "connection",
+        "name": "联络",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "higher_category",
+        "name": "高阶范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "minimal_model",
+        "name": "极小模型理论",
+        "category": "代数几何"
+      },
+      {
+        "id": "weil_conjecture",
+        "name": "Weil猜想",
+        "category": "数论高级"
+      },
+      {
+        "id": "ito_lemma",
+        "name": "Itô引理",
+        "category": "金融数学"
+      },
+      {
+        "id": "sde",
+        "name": "随机微分方程",
+        "category": "金融数学"
+      },
+      {
+        "id": "network_information",
+        "name": "网络信息论",
+        "category": "信息论"
+      },
+      {
+        "id": "sobolev_spaces",
+        "name": "Sobolev空间",
+        "category": "分析学"
+      },
+      {
+        "id": "kkt_conditions",
+        "name": "KKT条件",
+        "category": "最优化"
+      },
+      {
+        "id": "quadratic_programming",
+        "name": "二次规划",
+        "category": "最优化"
+      },
+      {
+        "id": "rate_distortion",
+        "name": "率失真理论",
+        "category": "信息论"
+      },
+      {
+        "id": "optimal_control",
+        "name": "最优控制",
+        "category": "最优化"
+      },
+      {
+        "id": "reinforcement_learning",
+        "name": "强化学习",
+        "category": "数据科学"
+      },
+      {
+        "id": "bode_plot",
+        "name": "Bode图",
+        "category": "控制论"
+      },
+      {
+        "id": "gradient_boosting",
+        "name": "梯度提升",
+        "category": "数据科学"
+      },
+      {
+        "id": "neural_network",
+        "name": "神经网络",
+        "category": "数据科学"
+      },
+      {
+        "id": "adam_optimizer",
+        "name": "Adam优化器",
+        "category": "数据科学"
+      },
+      {
+        "id": "modular_form",
+        "name": "模形式",
+        "category": "数论高级"
+      },
+      {
+        "id": "arithmetic_geometry",
+        "name": "算术几何",
+        "category": "数论高级"
+      },
+      {
+        "id": "elliptic_curve_crypto",
+        "name": "椭圆曲线密码",
+        "category": "密码学"
+      }
+    ],
+    "L8": [
+      {
+        "id": "perverse_sheaf",
+        "name": "反常层",
+        "category": "同调代数"
+      },
+      {
+        "id": "lotka_volterra",
+        "name": "Lotka-Volterra方程",
+        "category": "生物数学"
+      },
+      {
+        "id": "ess",
+        "name": "进化稳定策略",
+        "category": "生物数学"
+      },
+      {
+        "id": "spectral_theory",
+        "name": "谱理论",
+        "category": "分析学"
+      },
+      {
+        "id": "stability_analysis",
+        "name": "稳定性分析",
+        "category": "控制论"
+      },
+      {
+        "id": "state_feedback",
+        "name": "状态反馈",
+        "category": "控制论"
+      },
+      {
+        "id": "state_observer",
+        "name": "状态观测器",
+        "category": "控制论"
+      },
+      {
+        "id": "characteristic_class",
+        "name": "示性类",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "gauge_theory",
+        "name": "规范理论",
+        "category": "物理数学"
+      },
+      {
+        "id": "quantum_mechanics",
+        "name": "量子力学",
+        "category": "物理数学"
+      },
+      {
+        "id": "interior_point_method",
+        "name": "内点法",
+        "category": "最优化"
+      },
+      {
+        "id": "pid_controller",
+        "name": "PID控制器",
+        "category": "控制论"
+      },
+      {
+        "id": "representation_lie_algebra",
+        "name": "李代数表示论",
+        "category": "表示论"
+      },
+      {
+        "id": "fibered_category",
+        "name": "纤维范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "curvature",
+        "name": "曲率",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "geodesic",
+        "name": "测地线",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "infinity_category",
+        "name": "无穷范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "black_scholes",
+        "name": "Black-Scholes模型",
+        "category": "金融数学"
+      },
+      {
+        "id": "stochastic_volatility",
+        "name": "随机波动率模型",
+        "category": "金融数学"
+      },
+      {
+        "id": "monte_carlo_simulation",
+        "name": "蒙特卡洛模拟",
+        "category": "金融数学"
+      },
+      {
+        "id": "interest_rate_model",
+        "name": "利率模型",
+        "category": "金融数学"
+      },
+      {
+        "id": "variational_methods",
+        "name": "变分法",
+        "category": "分析学"
+      },
+      {
+        "id": "partial_differential_equations",
+        "name": "偏微分方程",
+        "category": "分析学"
+      },
+      {
+        "id": "portfolio_optimization",
+        "name": "投资组合优化",
+        "category": "金融数学"
+      },
+      {
+        "id": "lossy_compression",
+        "name": "有损压缩",
+        "category": "信息论"
+      },
+      {
+        "id": "mpc",
+        "name": "安全多方计算",
+        "category": "密码学"
+      },
+      {
+        "id": "nyquist_criterion",
+        "name": "Nyquist判据",
+        "category": "控制论"
+      },
+      {
+        "id": "backpropagation",
+        "name": "反向传播",
+        "category": "数据科学"
+      },
+      {
+        "id": "batch_normalization",
+        "name": "批归一化",
+        "category": "数据科学"
+      },
+      {
+        "id": "dropout",
+        "name": "Dropout正则化",
+        "category": "数据科学"
+      },
+      {
+        "id": "autoencoder",
+        "name": "自编码器",
+        "category": "数据科学"
+      },
+      {
+        "id": "l_function",
+        "name": "L函数",
+        "category": "数论高级"
+      },
+      {
+        "id": "diophantine_geometry",
+        "name": "丢番图几何",
+        "category": "数论高级"
+      }
+    ],
+    "L9": [
+      {
+        "id": "geometric_representation",
+        "name": "几何表示论",
+        "category": "表示论"
+      },
+      {
+        "id": "lqr_control",
+        "name": "LQR控制",
+        "category": "控制论"
+      },
+      {
+        "id": "kalman_filter",
+        "name": "Kalman滤波",
+        "category": "控制论"
+      },
+      {
+        "id": "index_theorem",
+        "name": "指标定理",
+        "category": "几何拓扑"
+      },
+      {
+        "id": "path_integral",
+        "name": "路径积分",
+        "category": "物理数学"
+      },
+      {
+        "id": "finite_element",
+        "name": "有限元方法",
+        "category": "计算数学"
+      },
+      {
+        "id": "highest_weight",
+        "name": "最高权理论",
+        "category": "表示论"
+      },
+      {
+        "id": "mackey_theory",
+        "name": "Mackey理论",
+        "category": "表示论"
+      },
+      {
+        "id": "automorphic_form",
+        "name": "自守形式",
+        "category": "数论高级"
+      },
+      {
+        "id": "stack_category",
+        "name": "堆叠范畴",
+        "category": "范畴论"
+      },
+      {
+        "id": "derived_algebraic_geometry",
+        "name": "导出代数几何",
+        "category": "代数几何"
+      },
+      {
+        "id": "homotopy_type_theory",
+        "name": "同伦类型论",
+        "category": "数理逻辑"
+      },
+      {
+        "id": "option_pricing",
+        "name": "期权定价",
+        "category": "金融数学"
+      },
+      {
+        "id": "heston_model",
+        "name": "Heston模型",
+        "category": "金融数学"
+      },
+      {
+        "id": "american_option",
+        "name": "美式期权定价",
+        "category": "金融数学"
+      },
+      {
+        "id": "classical_mechanics",
+        "name": "经典力学",
+        "category": "物理数学"
+      },
+      {
+        "id": "reaction_diffusion",
+        "name": "反应扩散方程",
+        "category": "生物数学"
+      },
+      {
+        "id": "numerical_pde",
+        "name": "偏微分方程数值解",
+        "category": "计算数学"
+      },
+      {
+        "id": "schrodinger_equation",
+        "name": "薛定谔方程",
+        "category": "物理数学"
+      },
+      {
+        "id": "fluid_dynamics",
+        "name": "流体动力学",
+        "category": "物理数学"
+      },
+      {
+        "id": "robust_control",
+        "name": "鲁棒控制",
+        "category": "控制论"
+      },
+      {
+        "id": "deep_learning",
+        "name": "深度学习",
+        "category": "数据科学"
+      }
+    ],
+    "L10": [
+      {
+        "id": "borel_weil",
+        "name": "Borel-Weil定理",
+        "category": "表示论"
+      },
+      {
+        "id": "quantum_field_theory",
+        "name": "量子场论",
+        "category": "物理数学"
+      },
+      {
+        "id": "adaptive_mesh",
+        "name": "自适应网格",
+        "category": "计算数学"
+      },
+      {
+        "id": "category_O",
+        "name": "范畴O",
+        "category": "表示论"
+      },
+      {
+        "id": "weight_theory",
+        "name": "权理论",
+        "category": "表示论"
+      },
+      {
+        "id": "langlands_program",
+        "name": "Langlands纲领",
+        "category": "数论高级"
+      },
+      {
+        "id": "algebraic_stack",
+        "name": "代数堆叠",
+        "category": "代数几何"
+      },
+      {
+        "id": "greeks",
+        "name": "希腊字母",
+        "category": "金融数学"
+      },
+      {
+        "id": "implied_volatility",
+        "name": "隐含波动率",
+        "category": "金融数学"
+      },
+      {
+        "id": "binomial_tree",
+        "name": "二叉树模型",
+        "category": "金融数学"
+      },
+      {
+        "id": "lagrangian",
+        "name": "拉格朗日力学",
+        "category": "物理数学"
+      },
+      {
+        "id": "turing_pattern",
+        "name": "Turing模式",
+        "category": "生物数学"
+      },
+      {
+        "id": "chemotaxis",
+        "name": "趋化性模型",
+        "category": "生物数学"
+      },
+      {
+        "id": "turbulence",
+        "name": "湍流理论",
+        "category": "物理数学"
+      },
+      {
+        "id": "cnn",
+        "name": "卷积神经网络",
+        "category": "数据科学"
+      },
+      {
+        "id": "rnn",
+        "name": "循环神经网络",
+        "category": "数据科学"
+      },
+      {
+        "id": "gan",
+        "name": "生成对抗网络",
+        "category": "数据科学"
+      }
+    ],
+    "L11": [
+      {
+        "id": "renormalization",
+        "name": "重整化群",
+        "category": "物理数学"
+      },
+      {
+        "id": "conformal_field_theory",
+        "name": "共形场论",
+        "category": "物理数学"
+      },
+      {
+        "id": "deligne_mumford",
+        "name": "Deligne-Mumford堆叠",
+        "category": "代数几何"
+      },
+      {
+        "id": "moduli_stack",
+        "name": "模堆叠",
+        "category": "代数几何"
+      },
+      {
+        "id": "risk_management",
+        "name": "风险管理",
+        "category": "金融数学"
+      },
+      {
+        "id": "volatility_smile",
+        "name": "波动率微笑",
+        "category": "金融数学"
+      },
+      {
+        "id": "hamiltonian",
+        "name": "哈密顿力学",
+        "category": "物理数学"
+      },
+      {
+        "id": "morphogenesis",
+        "name": "形态发生",
+        "category": "生物数学"
+      },
+      {
+        "id": "lstm",
+        "name": "长短期记忆网络",
+        "category": "数据科学"
+      }
+    ],
+    "L12": [
+      {
+        "id": "string_theory",
+        "name": "弦理论",
+        "category": "物理数学"
+      },
+      {
+        "id": "hamiltonian_system",
+        "name": "哈密顿系统",
+        "category": "动力系统"
+      },
+      {
+        "id": "attention",
+        "name": "注意力机制",
+        "category": "数据科学"
+      }
+    ],
+    "L13": [
+      {
+        "id": "integrable_system",
+        "name": "可积系统",
+        "category": "物理数学"
+      },
+      {
+        "id": "transformer",
+        "name": "Transformer",
+        "category": "数据科学"
+      }
+    ]
+  },
+  "hub_concepts": [
+    {
+      "id": "category_theory",
+      "name": "范畴论",
+      "category": "代数学",
+      "connectivity": 19
+    },
+    {
+      "id": "group",
+      "name": "群",
+      "category": "代数学",
+      "connectivity": 16
+    },
+    {
+      "id": "complex_analysis",
+      "name": "复分析",
+      "category": "分析学",
+      "connectivity": 13
+    },
+    {
+      "id": "differential_equations",
+      "name": "微分方程",
+      "category": "分析学",
+      "connectivity": 12
+    },
+    {
+      "id": "linear_algebra",
+      "name": "线性代数",
+      "category": "代数学",
+      "connectivity": 12
+    },
+    {
+      "id": "algebraic_geometry",
+      "name": "代数几何",
+      "category": "代数学",
+      "connectivity": 12
+    },
+    {
+      "id": "cohomology",
+      "name": "上同调",
+      "category": "几何拓扑",
+      "connectivity": 12
+    },
+    {
+      "id": "modular_form",
+      "name": "模形式",
+      "category": "数论高级",
+      "connectivity": 11
+    },
+    {
+      "id": "shannon_entropy",
+      "name": "香农熵",
+      "category": "信息论",
+      "connectivity": 11
+    },
+    {
+      "id": "derived_category",
+      "name": "导出范畴",
+      "category": "同调代数",
+      "connectivity": 10
+    },
+    {
+      "id": "functional_analysis",
+      "name": "泛函分析",
+      "category": "分析学",
+      "connectivity": 9
+    },
+    {
+      "id": "vector_space",
+      "name": "向量空间",
+      "category": "代数学",
+      "connectivity": 9
+    },
+    {
+      "id": "homological_algebra",
+      "name": "同调代数",
+      "category": "代数学",
+      "connectivity": 9
+    },
+    {
+      "id": "scheme",
+      "name": "概形",
+      "category": "代数学",
+      "connectivity": 9
+    },
+    {
+      "id": "manifold",
+      "name": "流形",
+      "category": "几何拓扑",
+      "connectivity": 9
+    }
+  ],
+  "basic_concepts": [
+    {
+      "id": "limit",
+      "name": "极限",
+      "category": "分析学"
+    },
+    {
+      "id": "type_theory",
+      "name": "类型论",
+      "category": "数理逻辑"
+    },
+    {
+      "id": "general_relativity",
+      "name": "广义相对论",
+      "category": "物理数学"
+    },
+    {
+      "id": "finite_volume",
+      "name": "有限体积法",
+      "category": "计算数学"
+    },
+    {
+      "id": "divisibility",
+      "name": "整除",
+      "category": "数论逻辑"
+    },
+    {
+      "id": "supersymmetry",
+      "name": "超对称",
+      "category": "物理数学"
+    },
+    {
+      "id": "lattice_based_crypto",
+      "name": "格密码",
+      "category": "密码学"
+    },
+    {
+      "id": "symplectic_manifold",
+      "name": "辛流形",
+      "category": "动力系统"
+    },
+    {
+      "id": "symbolic_dynamics",
+      "name": "符号动力学",
+      "category": "动力系统"
+    },
+    {
+      "id": "p_adic_numbers",
+      "name": "p进数",
+      "category": "数论逻辑"
+    },
+    {
+      "id": "public_key",
+      "name": "公钥密码学",
+      "category": "密码学"
+    },
+    {
+      "id": "modular_representation",
+      "name": "模表示论",
+      "category": "表示论"
+    },
+    {
+      "id": "set_theory",
+      "name": "集合论",
+      "category": "数论逻辑"
+    },
+    {
+      "id": "group",
+      "name": "群",
+      "category": "代数学"
+    },
+    {
+      "id": "domain_decomposition",
+      "name": "区域分解",
+      "category": "计算数学"
+    },
+    {
+      "id": "topological_space",
+      "name": "拓扑空间",
+      "category": "几何拓扑"
+    },
+    {
+      "id": "decision_tree",
+      "name": "决策树",
+      "category": "数据科学"
+    },
+    {
+      "id": "uncertainty_quantification",
+      "name": "不确定性量化",
+      "category": "计算数学"
+    },
+    {
+      "id": "adjoint_functor",
+      "name": "伴随函子",
+      "category": "范畴论"
+    },
+    {
+      "id": "class_field_theory",
+      "name": "类域论",
+      "category": "数论高级"
+    },
+    {
+      "id": "measure_theory",
+      "name": "测度论",
+      "category": "分析学"
+    },
+    {
+      "id": "k_theory_dynamics",
+      "name": "动力系统K理论",
+      "category": "动力系统"
+    },
+    {
+      "id": "data_preprocessing",
+      "name": "数据预处理",
+      "category": "数据科学"
+    },
+    {
+      "id": "electromagnetism",
+      "name": "电磁学",
+      "category": "物理数学"
+    },
+    {
+      "id": "gradient",
+      "name": "梯度",
+      "category": "最优化"
+    },
+    {
+      "id": "channel_coding",
+      "name": "信道编码",
+      "category": "信息论"
+    },
+    {
+      "id": "hash_function",
+      "name": "哈希函数",
+      "category": "密码学"
+    },
+    {
+      "id": "propositional_logic",
+      "name": "命题逻辑",
+      "category": "数论逻辑"
+    },
+    {
+      "id": "svm",
+      "name": "支持向量机",
+      "category": "数据科学"
+    },
+    {
+      "id": "biological_oscillator",
+      "name": "生物振荡器",
+      "category": "生物数学"
+    },
+    {
+      "id": "monte_carlo_numerical",
+      "name": "蒙特卡洛数值方法",
+      "category": "计算数学"
+    },
+    {
+      "id": "statistical_mechanics",
+      "name": "统计力学",
+      "category": "物理数学"
+    },
+    {
+      "id": "post_quantum",
+      "name": "后量子密码",
+      "category": "密码学"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "common": {
+    "appName": "فورمال ماث",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجاح",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "create": "إنشاء",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "submit": "إرسال",
+    "reset": "إعادة تعيين",
+    "view": "عرض",
+    "more": "المزيد",
+    "less": "أقل",
+    "all": "الكل",
+    "none": "لا شيء",
+    "select": "اختيار",
+    "deselect": "إلغاء الاختيار",
+    "expand": "توسيع",
+    "collapse": "طي",
+    "refresh": "تحديث",
+    "retry": "إعادة المحاولة"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "knowledgeGraph": "رسم المعرفة",
+    "reasoningTree": "شجرة الاستدلال",
+    "mindMap": "خريطة الذهن",
+    "comparison": "مقارنة",
+    "decisionTree": "شجرة القرار",
+    "evolution": "التطور",
+    "settings": "الإعدادات",
+    "profile": "الملف الشخصي",
+    "help": "مساعدة"
+  },
+  "accessibility": {
+    "skipToMain": "انتقل إلى المحتوى الرئيسي",
+    "mainNavigation": "التنقل الرئيسي",
+    "breadcrumb": "التنقل التفصيلي",
+    "searchButton": "فتح البحث",
+    "menuButton": "فتح القائمة",
+    "closeButton": "إغلاق",
+    "toggleTheme": "تبديل الوضع الداكن",
+    "toggleLanguage": "تغيير اللغة",
+    "loading": "جاري تحميل المحتوى",
+    "error": "حدث خطأ",
+    "newWindow": "يفتح في نافذة جديدة",
+    "externalLink": "رابط خارجي"
+  },
+  "home": {
+    "title": "مرحباً بك في فورمال ماث",
+    "subtitle": "رسم المعرفة الرياضية التفاعلي",
+    "description": "استكشف المفاهيم الرياضية من خلال التصورات التفاعلية",
+    "getStarted": "ابدأ الآن",
+    "exploreGraph": "استكشف رسم المعرفة"
+  },
+  "knowledgeGraph": {
+    "title": "رسم المعرفة",
+    "searchPlaceholder": "البحث في المفاهيم...",
+    "filterByCategory": "تصفية حسب الفئة",
+    "zoomIn": "تكبير",
+    "zoomOut": "تصغير",
+    "resetView": "إعادة تعيين العرض",
+    "fullscreen": "تبديل ملء الشاشة",
+    "nodeCount": "{{count}} عقدة",
+    "edgeCount": "{{count}} اتصال"
+  },
+  "errors": {
+    "404": {
+      "title": "الصفحة غير موجودة",
+      "message": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها",
+      "returnHome": "العودة إلى الرئيسية"
+    },
+    "500": {
+      "title": "خطأ في الخادم",
+      "message": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقاً"
+    },
+    "network": {
+      "title": "خطأ في الشبكة",
+      "message": "تعذر الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت"
+    }
+  },
+  "gamification": {
+    "achievements": "الإنجازات",
+    "points": "النقاط",
+    "level": "المستوى",
+    "streak": "أيام متتالية",
+    "badges": "الشارات",
+    "leaderboard": "لوحة المتصدرين",
+    "challenges": "التحديات",
+    "progress": "التقدم"
+  }
+}

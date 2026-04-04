@@ -1,0 +1,802 @@
+{
+  "03E99": {
+    "primary": [
+      {
+        "name": "集合",
+        "file": "concept\\核心概念\\01-集合.md"
+      },
+      {
+        "name": "函数",
+        "file": "concept\\核心概念\\02-函数.md"
+      },
+      {
+        "name": "自然数",
+        "file": "concept\\核心概念\\03-自然数.md"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "整数",
+        "file": "concept\\核心概念\\04-整数.md"
+      }
+    ]
+  },
+  "03E": {
+    "primary": [
+      {
+        "name": "集合",
+        "file": "concept\\核心概念\\01-集合.md"
+      },
+      {
+        "name": "函数",
+        "file": "concept\\核心概念\\02-函数.md"
+      },
+      {
+        "name": "自然数",
+        "file": "concept\\核心概念\\03-自然数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "03": {
+    "primary": [
+      {
+        "name": "集合",
+        "file": "concept\\核心概念\\01-集合.md"
+      },
+      {
+        "name": "函数",
+        "file": "concept\\核心概念\\02-函数.md"
+      },
+      {
+        "name": "自然数",
+        "file": "concept\\核心概念\\03-自然数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "00A05": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "集合",
+        "file": "concept\\核心概念\\01-集合.md"
+      }
+    ]
+  },
+  "26A99": {
+    "primary": [
+      {
+        "name": "实数",
+        "file": "concept\\核心概念\\06-实数.md"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "函数",
+        "file": "concept\\核心概念\\02-函数.md"
+      }
+    ]
+  },
+  "11A99": {
+    "primary": [
+      {
+        "name": "整数",
+        "file": "concept\\核心概念\\04-整数.md"
+      },
+      {
+        "name": "有理数",
+        "file": "concept\\核心概念\\05-有理数.md"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "自然数",
+        "file": "concept\\核心概念\\03-自然数.md"
+      }
+    ]
+  },
+  "11A": {
+    "primary": [
+      {
+        "name": "整数",
+        "file": "concept\\核心概念\\04-整数.md"
+      },
+      {
+        "name": "有理数",
+        "file": "concept\\核心概念\\05-有理数.md"
+      },
+      {
+        "name": "素数",
+        "file": "concept\\核心概念\\26-素数.md"
+      },
+      {
+        "name": "同余",
+        "file": "concept\\核心概念\\27-同余.md"
+      }
+    ],
+    "secondary": []
+  },
+  "11": {
+    "primary": [
+      {
+        "name": "整数",
+        "file": "concept\\核心概念\\04-整数.md"
+      },
+      {
+        "name": "有理数",
+        "file": "concept\\核心概念\\05-有理数.md"
+      },
+      {
+        "name": "素数",
+        "file": "concept\\核心概念\\26-素数.md"
+      },
+      {
+        "name": "同余",
+        "file": "concept\\核心概念\\27-同余.md"
+      }
+    ],
+    "secondary": []
+  },
+  "12F99": {
+    "primary": [
+      {
+        "name": "域",
+        "file": "concept\\核心概念\\10-域.md"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "有理数",
+        "file": "concept\\核心概念\\05-有理数.md"
+      }
+    ]
+  },
+  "26A": {
+    "primary": [
+      {
+        "name": "实数",
+        "file": "concept\\核心概念\\06-实数.md"
+      },
+      {
+        "name": "极限",
+        "file": "concept\\核心概念\\13-极限.md"
+      },
+      {
+        "name": "连续",
+        "file": "concept\\核心概念\\14-连续.md"
+      },
+      {
+        "name": "导数",
+        "file": "concept\\核心概念\\15-导数.md"
+      },
+      {
+        "name": "积分",
+        "file": "concept\\核心概念\\16-积分.md"
+      }
+    ],
+    "secondary": []
+  },
+  "26": {
+    "primary": [
+      {
+        "name": "实数",
+        "file": "concept\\核心概念\\06-实数.md"
+      },
+      {
+        "name": "极限",
+        "file": "concept\\核心概念\\13-极限.md"
+      },
+      {
+        "name": "连续",
+        "file": "concept\\核心概念\\14-连续.md"
+      },
+      {
+        "name": "导数",
+        "file": "concept\\核心概念\\15-导数.md"
+      },
+      {
+        "name": "积分",
+        "file": "concept\\核心概念\\16-积分.md"
+      }
+    ],
+    "secondary": []
+  },
+  "12D99": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "实数",
+        "file": "concept\\核心概念\\06-实数.md"
+      },
+      {
+        "name": "复数",
+        "file": "concept\\核心概念\\07-复数.md"
+      }
+    ]
+  },
+  "30A99": {
+    "primary": [
+      {
+        "name": "复数",
+        "file": "concept\\核心概念\\07-复数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "30A": {
+    "primary": [
+      {
+        "name": "复数",
+        "file": "concept\\核心概念\\07-复数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "30": {
+    "primary": [
+      {
+        "name": "复数",
+        "file": "concept\\核心概念\\07-复数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "20A05": {
+    "primary": [
+      {
+        "name": "群",
+        "file": "concept\\核心概念\\08-群.md"
+      }
+    ],
+    "secondary": []
+  },
+  "20A": {
+    "primary": [
+      {
+        "name": "群",
+        "file": "concept\\核心概念\\08-群.md"
+      }
+    ],
+    "secondary": []
+  },
+  "20": {
+    "primary": [
+      {
+        "name": "群",
+        "file": "concept\\核心概念\\08-群.md"
+      }
+    ],
+    "secondary": []
+  },
+  "20D99": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "群",
+        "file": "concept\\核心概念\\08-群.md"
+      }
+    ]
+  },
+  "13A99": {
+    "primary": [
+      {
+        "name": "环",
+        "file": "concept\\核心概念\\09-环.md"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "概形",
+        "file": "concept\\核心概念\\21-概形.md"
+      }
+    ]
+  },
+  "13A": {
+    "primary": [
+      {
+        "name": "环",
+        "file": "concept\\核心概念\\09-环.md"
+      }
+    ],
+    "secondary": []
+  },
+  "13": {
+    "primary": [
+      {
+        "name": "环",
+        "file": "concept\\核心概念\\09-环.md"
+      }
+    ],
+    "secondary": []
+  },
+  "16B99": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "环",
+        "file": "concept\\核心概念\\09-环.md"
+      }
+    ]
+  },
+  "12F": {
+    "primary": [
+      {
+        "name": "域",
+        "file": "concept\\核心概念\\10-域.md"
+      }
+    ],
+    "secondary": []
+  },
+  "12": {
+    "primary": [
+      {
+        "name": "域",
+        "file": "concept\\核心概念\\10-域.md"
+      }
+    ],
+    "secondary": []
+  },
+  "12E99": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "域",
+        "file": "concept\\核心概念\\10-域.md"
+      }
+    ]
+  },
+  "15A03": {
+    "primary": [
+      {
+        "name": "向量空间",
+        "file": "concept\\核心概念\\11-向量空间.md"
+      }
+    ],
+    "secondary": []
+  },
+  "15A": {
+    "primary": [
+      {
+        "name": "向量空间",
+        "file": "concept\\核心概念\\11-向量空间.md"
+      },
+      {
+        "name": "线性映射",
+        "file": "concept\\核心概念\\12-线性映射.md"
+      }
+    ],
+    "secondary": []
+  },
+  "15": {
+    "primary": [
+      {
+        "name": "向量空间",
+        "file": "concept\\核心概念\\11-向量空间.md"
+      },
+      {
+        "name": "线性映射",
+        "file": "concept\\核心概念\\12-线性映射.md"
+      }
+    ],
+    "secondary": []
+  },
+  "46A99": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "向量空间",
+        "file": "concept\\核心概念\\11-向量空间.md"
+      }
+    ]
+  },
+  "15A04": {
+    "primary": [
+      {
+        "name": "线性映射",
+        "file": "concept\\核心概念\\12-线性映射.md"
+      }
+    ],
+    "secondary": []
+  },
+  "47A05": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "线性映射",
+        "file": "concept\\核心概念\\12-线性映射.md"
+      }
+    ]
+  },
+  "26A03": {
+    "primary": [
+      {
+        "name": "极限",
+        "file": "concept\\核心概念\\13-极限.md"
+      }
+    ],
+    "secondary": []
+  },
+  "54A20": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "极限",
+        "file": "concept\\核心概念\\13-极限.md"
+      }
+    ]
+  },
+  "26A15": {
+    "primary": [
+      {
+        "name": "连续",
+        "file": "concept\\核心概念\\14-连续.md"
+      }
+    ],
+    "secondary": []
+  },
+  "54C05": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "连续",
+        "file": "concept\\核心概念\\14-连续.md"
+      }
+    ]
+  },
+  "26A24": {
+    "primary": [
+      {
+        "name": "导数",
+        "file": "concept\\核心概念\\15-导数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "26A42": {
+    "primary": [
+      {
+        "name": "积分",
+        "file": "concept\\核心概念\\16-积分.md"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "导数",
+        "file": "concept\\核心概念\\15-导数.md"
+      },
+      {
+        "name": "级数",
+        "file": "concept\\核心概念\\17-级数.md"
+      }
+    ]
+  },
+  "28A25": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "积分",
+        "file": "concept\\核心概念\\16-积分.md"
+      }
+    ]
+  },
+  "40A05": {
+    "primary": [
+      {
+        "name": "级数",
+        "file": "concept\\核心概念\\17-级数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "40A": {
+    "primary": [
+      {
+        "name": "级数",
+        "file": "concept\\核心概念\\17-级数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "40": {
+    "primary": [
+      {
+        "name": "级数",
+        "file": "concept\\核心概念\\17-级数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "57R99": {
+    "primary": [
+      {
+        "name": "流形",
+        "file": "concept\\核心概念\\18-流形.md"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "流形",
+        "file": "concept\\核心概念\\19-黎曼流形.md"
+      }
+    ]
+  },
+  "57R": {
+    "primary": [
+      {
+        "name": "流形",
+        "file": "concept\\核心概念\\18-流形.md"
+      }
+    ],
+    "secondary": []
+  },
+  "57": {
+    "primary": [
+      {
+        "name": "流形",
+        "file": "concept\\核心概念\\18-流形.md"
+      }
+    ],
+    "secondary": []
+  },
+  "58A05": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "流形",
+        "file": "concept\\核心概念\\18-流形.md"
+      }
+    ]
+  },
+  "53C20": {
+    "primary": [
+      {
+        "name": "流形",
+        "file": "concept\\核心概念\\19-黎曼流形.md"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "曲率",
+        "file": "concept\\核心概念\\20-曲率.md"
+      }
+    ]
+  },
+  "53C": {
+    "primary": [
+      {
+        "name": "流形",
+        "file": "concept\\核心概念\\19-黎曼流形.md"
+      }
+    ],
+    "secondary": []
+  },
+  "53": {
+    "primary": [
+      {
+        "name": "流形",
+        "file": "concept\\核心概念\\19-黎曼流形.md"
+      },
+      {
+        "name": "曲率",
+        "file": "concept\\核心概念\\20-曲率.md"
+      }
+    ],
+    "secondary": []
+  },
+  "53A04": {
+    "primary": [
+      {
+        "name": "曲率",
+        "file": "concept\\核心概念\\20-曲率.md"
+      }
+    ],
+    "secondary": []
+  },
+  "53A": {
+    "primary": [
+      {
+        "name": "曲率",
+        "file": "concept\\核心概念\\20-曲率.md"
+      }
+    ],
+    "secondary": []
+  },
+  "14A15": {
+    "primary": [
+      {
+        "name": "概形",
+        "file": "concept\\核心概念\\21-概形.md"
+      }
+    ],
+    "secondary": []
+  },
+  "14A": {
+    "primary": [
+      {
+        "name": "概形",
+        "file": "concept\\核心概念\\21-概形.md"
+      }
+    ],
+    "secondary": []
+  },
+  "14": {
+    "primary": [
+      {
+        "name": "概形",
+        "file": "concept\\核心概念\\21-概形.md"
+      },
+      {
+        "name": "层",
+        "file": "concept\\核心概念\\22-层.md"
+      }
+    ],
+    "secondary": []
+  },
+  "14F05": {
+    "primary": [
+      {
+        "name": "层",
+        "file": "concept\\核心概念\\22-层.md"
+      }
+    ],
+    "secondary": []
+  },
+  "14F": {
+    "primary": [
+      {
+        "name": "层",
+        "file": "concept\\核心概念\\22-层.md"
+      }
+    ],
+    "secondary": []
+  },
+  "18F20": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "层",
+        "file": "concept\\核心概念\\22-层.md"
+      }
+    ]
+  },
+  "54A05": {
+    "primary": [
+      {
+        "name": "拓扑空间",
+        "file": "concept\\核心概念\\23-拓扑空间.md"
+      }
+    ],
+    "secondary": []
+  },
+  "54A": {
+    "primary": [
+      {
+        "name": "拓扑空间",
+        "file": "concept\\核心概念\\23-拓扑空间.md"
+      }
+    ],
+    "secondary": []
+  },
+  "54": {
+    "primary": [
+      {
+        "name": "拓扑空间",
+        "file": "concept\\核心概念\\23-拓扑空间.md"
+      }
+    ],
+    "secondary": []
+  },
+  "54B99": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "拓扑空间",
+        "file": "concept\\核心概念\\23-拓扑空间.md"
+      }
+    ]
+  },
+  "55P99": {
+    "primary": [
+      {
+        "name": "同伦",
+        "file": "concept\\核心概念\\24-同伦.md"
+      }
+    ],
+    "secondary": []
+  },
+  "55P": {
+    "primary": [
+      {
+        "name": "同伦",
+        "file": "concept\\核心概念\\24-同伦.md"
+      }
+    ],
+    "secondary": []
+  },
+  "55": {
+    "primary": [
+      {
+        "name": "同伦",
+        "file": "concept\\核心概念\\24-同伦.md"
+      },
+      {
+        "name": "同调",
+        "file": "concept\\核心概念\\25-同调.md"
+      }
+    ],
+    "secondary": []
+  },
+  "55Q05": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "同伦",
+        "file": "concept\\核心概念\\24-同伦.md"
+      }
+    ]
+  },
+  "55N99": {
+    "primary": [
+      {
+        "name": "同调",
+        "file": "concept\\核心概念\\25-同调.md"
+      }
+    ],
+    "secondary": []
+  },
+  "55N": {
+    "primary": [
+      {
+        "name": "同调",
+        "file": "concept\\核心概念\\25-同调.md"
+      }
+    ],
+    "secondary": []
+  },
+  "18G99": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "同调",
+        "file": "concept\\核心概念\\25-同调.md"
+      }
+    ]
+  },
+  "11A41": {
+    "primary": [
+      {
+        "name": "素数",
+        "file": "concept\\核心概念\\26-素数.md"
+      }
+    ],
+    "secondary": []
+  },
+  "11N05": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "素数",
+        "file": "concept\\核心概念\\26-素数.md"
+      }
+    ]
+  },
+  "11A07": {
+    "primary": [
+      {
+        "name": "同余",
+        "file": "concept\\核心概念\\27-同余.md"
+      }
+    ],
+    "secondary": []
+  },
+  "11N99": {
+    "primary": [],
+    "secondary": [
+      {
+        "name": "同余",
+        "file": "concept\\核心概念\\27-同余.md"
+      }
+    ]
+  }
+}

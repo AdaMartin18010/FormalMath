@@ -1,0 +1,36 @@
+{
+  "concepts": [
+    {
+      "id": "group-theory",
+      "name": "群论",
+      "category": "代数",
+      "description": "研究群的代数结构",
+      "difficulty": "intermediate",
+      "dependencies": ["set-theory", "binary-operations"]
+    },
+    {
+      "id": "ring-theory",
+      "name": "环论",
+      "category": "代数",
+      "description": "研究环的代数结构",
+      "difficulty": "advanced",
+      "dependencies": ["group-theory", "abelian-group"]
+    },
+    {
+      "id": "topology",
+      "name": "拓扑学",
+      "category": "几何",
+      "description": "研究空间的连续性质",
+      "difficulty": "advanced",
+      "dependencies": ["set-theory", "real-analysis"]
+    }
+  ],
+  "edges": [
+    {"source": "set-theory", "target": "group-theory"},
+    {"source": "binary-operations", "target": "group-theory"},
+    {"source": "group-theory", "target": "ring-theory"},
+    {"source": "abelian-group", "target": "ring-theory"},
+    {"source": "set-theory", "target": "topology"},
+    {"source": "real-analysis", "target": "topology"}
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "name": "MSC2020",
+  "children": [
+    {
+      "name": "03 - 数理逻辑与基础",
+      "code": "03",
+      "children": [
+        {
+          "name": "集合",
+          "file": "concept\\核心概念\\01-集合.md",
+          "type": "concept"
+        },
+        {
+          "name": "函数",
+          "file": "concept\\核心概念\\02-函数.md",
+          "type": "concept"
+        },
+        {
+          "name": "自然数",
+          "file": "concept\\核心概念\\03-自然数.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "11 - 数论",
+      "code": "11",
+      "children": [
+        {
+          "name": "整数",
+          "file": "concept\\核心概念\\04-整数.md",
+          "type": "concept"
+        },
+        {
+          "name": "有理数",
+          "file": "concept\\核心概念\\05-有理数.md",
+          "type": "concept"
+        },
+        {
+          "name": "素数",
+          "file": "concept\\核心概念\\26-素数.md",
+          "type": "concept"
+        },
+        {
+          "name": "同余",
+          "file": "concept\\核心概念\\27-同余.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "12 - 域论与多项式",
+      "code": "12",
+      "children": [
+        {
+          "name": "域",
+          "file": "concept\\核心概念\\10-域.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "13 - 交换代数",
+      "code": "13",
+      "children": [
+        {
+          "name": "环",
+          "file": "concept\\核心概念\\09-环.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "14 - 代数几何",
+      "code": "14",
+      "children": [
+        {
+          "name": "概形",
+          "file": "concept\\核心概念\\21-概形.md",
+          "type": "concept"
+        },
+        {
+          "name": "层",
+          "file": "concept\\核心概念\\22-层.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "15 - 线性代数与矩阵论",
+      "code": "15",
+      "children": [
+        {
+          "name": "向量空间",
+          "file": "concept\\核心概念\\11-向量空间.md",
+          "type": "concept"
+        },
+        {
+          "name": "线性映射",
+          "file": "concept\\核心概念\\12-线性映射.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "20 - 群论及其推广",
+      "code": "20",
+      "children": [
+        {
+          "name": "群",
+          "file": "concept\\核心概念\\08-群.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "26 - 实函数",
+      "code": "26",
+      "children": [
+        {
+          "name": "实数",
+          "file": "concept\\核心概念\\06-实数.md",
+          "type": "concept"
+        },
+        {
+          "name": "极限",
+          "file": "concept\\核心概念\\13-极限.md",
+          "type": "concept"
+        },
+        {
+          "name": "连续",
+          "file": "concept\\核心概念\\14-连续.md",
+          "type": "concept"
+        },
+        {
+          "name": "导数",
+          "file": "concept\\核心概念\\15-导数.md",
+          "type": "concept"
+        },
+        {
+          "name": "积分",
+          "file": "concept\\核心概念\\16-积分.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "30 - 单复变函数",
+      "code": "30",
+      "children": [
+        {
+          "name": "复数",
+          "file": "concept\\核心概念\\07-复数.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "40 - 序列、级数、可求和性",
+      "code": "40",
+      "children": [
+        {
+          "name": "级数",
+          "file": "concept\\核心概念\\17-级数.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "53 - 微分几何",
+      "code": "53",
+      "children": [
+        {
+          "name": "流形",
+          "file": "concept\\核心概念\\19-黎曼流形.md",
+          "type": "concept"
+        },
+        {
+          "name": "曲率",
+          "file": "concept\\核心概念\\20-曲率.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "54 - 一般拓扑学",
+      "code": "54",
+      "children": [
+        {
+          "name": "拓扑空间",
+          "file": "concept\\核心概念\\23-拓扑空间.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "55 - 代数拓扑",
+      "code": "55",
+      "children": [
+        {
+          "name": "同伦",
+          "file": "concept\\核心概念\\24-同伦.md",
+          "type": "concept"
+        },
+        {
+          "name": "同调",
+          "file": "concept\\核心概念\\25-同调.md",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "name": "57 - 流形与胞腔复形",
+      "code": "57",
+      "children": [
+        {
+          "name": "流形",
+          "file": "concept\\核心概念\\18-流形.md",
+          "type": "concept"
+        }
+      ]
+    }
+  ]
+}

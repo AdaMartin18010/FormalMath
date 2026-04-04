@@ -10,7 +10,7 @@ msc_primary: 00A99
 [![文档数](https://img.shields.io/badge/文档-6573%2B-blue)](./docs/00-项目统计总览.md)
 [![数学家](https://img.shields.io/badge/数学家-62位-orange)](./数学家理念体系/)
 [![定理数](https://img.shields.io/badge/Lean4定理-20个-9cf)](./docs/09-形式化证明/)
-[![课程映射](https://img.shields.io/badge/国际课程-96%2B门-purple)](./project/00-国际课程与机构对齐对照表-2026年4月.md)
+[![课程映射](https://img.shields.io/badge/国际课程-121%2B门-purple)](./project/00-国际课程与机构对齐对照表-2026年4月.md)
 
 ---
 
@@ -20,7 +20,7 @@ FormalMath 是一个面向数学教育的综合性知识库，致力于：
 
 - 🎯 **建立完整知识体系**：从基础数学到现代数学前沿的结构化内容
 - 🧠 **数学家理念体系**：62位数学家的思想、贡献与现代影响深度分析
-- 🌍 **国际权威对齐**：与MIT、Harvard、Stanford、Princeton、ETH、Cambridge、Oxford等七校96+门课程详细对应
+- 🌍 **国际权威对齐**：与MIT、Harvard、Stanford、Princeton、ETH、Cambridge、Oxford、Toronto、NUS等九校121+门课程详细对应
 - 💻 **形式化证明**：20个Lean4定理形式化，与Mathlib4 v4.29.0对齐
 - 🤖 **智能学习系统**：认知诊断、学习评估、自适应学习路径三大系统
 
@@ -91,7 +91,7 @@ docs/15-同调代数/导出范畴-深度扩展版.md
 
 **示例定理**：拉格朗日定理、Sylow第一定理、Bolzano-Weierstrass定理、Gödel不完备性定理等
 
-### 3. 国际课程对齐（七校96+门）
+### 3. 国际课程对齐（九校121+门）
 
 | 学校 | 课程数 | 核心课程 |
 |------|--------|----------|
@@ -102,6 +102,8 @@ docs/15-同调代数/导出范畴-深度扩展版.md
 | Princeton | 12门 | MAT 345/346/416 |
 | Cambridge | 18门 | Part III AG |
 | Oxford | 20门 | C2.1/2.2 |
+| Toronto | 8门 | MAT137/237/347 |
+| NUS | 17门 | MA2108/3210/4201 |
 
 ### 4. 智能学习系统
 
