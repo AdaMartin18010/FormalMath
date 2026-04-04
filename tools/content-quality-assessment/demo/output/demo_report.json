@@ -1,0 +1,5888 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-04T12:39:36.963334",
+    "version": "1.0.0",
+    "total_files": 53
+  },
+  "summary": {
+    "total_files": 53,
+    "average_score": 53.56888257658215,
+    "min_score": 31.007406293623216,
+    "max_score": 80.34399233988786,
+    "quality_distribution": {
+      "POOR": 3,
+      "GOOD": 1,
+      "ACCEPTABLE": 8,
+      "NEEDS_IMPROVEMENT": 41
+    },
+    "high_priority_issues": 5
+  },
+  "results": [
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\01-集合论基础-国际标准版.md",
+      "file_name": "01-集合论基础-国际标准版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3333333333333333,
+        "theorem_count": 15,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论基础---国际标准版--set-theory-foundation---international-standard-edition",
+          "#目录",
+          "#概述",
+          "#1-基本概念",
+          "#11-集合的定义",
+          "#12-元素关系",
+          "#2-zfc公理系统",
+          "#21-存在性公理",
+          "#22-构造性公理",
+          "#23-分离公理模式",
+          "#24-替换公理模式",
+          "#25-无穷公理",
+          "#26-正则公理",
+          "#27-选择公理",
+          "#3-集合运算",
+          "#31-基本运算",
+          "#32-笛卡尔积",
+          "#4-关系与函数",
+          "#41-关系",
+          "#42-函数",
+          "#5-序数与基数",
+          "#51-序数",
+          "#52-基数",
+          "#6-形式化实现",
+          "#61-lean-4-实现",
+          "#62-haskell-实现",
+          "#7-参考文献",
+          "#经典教材",
+          "#现代教材",
+          "#课程资源"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 54.273972602739725,
+        "avg_paragraph_length": 2.92,
+        "complex_word_ratio": 0.24850299401197604,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.38243006993006995,
+        "formula_density": 10.314685314685315
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 238,
+        "mastery_probability": 0.02622377622377622,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.25
+      },
+      "overall_score": 45.20960983664331,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有15个定理，0个证明）",
+        "缩短句子长度，提高可读性",
+        "增加不同类型的练习（证明、计算、应用等）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均54.3字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\01-集合论基础-增强版.md",
+      "file_name": "01-集合论基础-增强版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.5,
+        "theorem_count": 4,
+        "proof_count": 0,
+        "example_count": 3,
+        "missing_elements": [
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 1,
+        "citation_errors": 0,
+        "broken_links": [
+          "#1-集合论基础--set-theory-foundations",
+          "#目录",
+          "#11-概述--overview",
+          "#111-核心地位",
+          "#112-基本思想",
+          "#12-历史发展--historical-development",
+          "#121-发展时间线",
+          "#122-重要人物贡献",
+          "#123-理论发展脉络",
+          "#13-基本概念--basic-concepts",
+          "#131-集合的定义--definition-of-set",
+          "#132-元素关系--element-relation",
+          "#133-集合的表示方法--set-representation",
+          "#14-zfc公理系统--zfc-axiom-system",
+          "#141-公理系统概述",
+          "#142-外延公理--axiom-of-extensionality",
+          "#143-空集公理--axiom-of-empty-set",
+          "#144-配对公理--axiom-of-pairing",
+          "#145-并集公理--axiom-of-union",
+          "#146-幂集公理--axiom-of-power-set",
+          "#15-集合运算--set-operations",
+          "#151-子集关系--subset-relation",
+          "#152-交集--intersection",
+          "#153-差集--set-difference",
+          "#154-对称差--symmetric-difference",
+          "#16-关系与函数--relations-and-functions",
+          "#161-关系--relations",
+          "#162-函数--functions",
+          "#17-应用实例--application-examples",
+          "#171-计算机科学应用",
+          "#172-逻辑学应用",
+          "#173-概率论应用",
+          "#18-思维过程--thinking-process",
+          "#181-问题解决流程",
+          "#182-证明思维过程",
+          "#183-概念理解过程",
+          "#19-总结--summary",
+          "#191-核心要点",
+          "#192-知识关联",
+          "#193-进一步学习",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 56.0188679245283,
+        "avg_paragraph_length": 2.864864864864865,
+        "complex_word_ratio": 0.2799188640973631,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.13608880959460798,
+        "formula_density": 13.876499157498264
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 283,
+        "mastery_probability": 0.049558925562493805,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 56.198023665672636,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有4个定理，0个证明）",
+        "修复1处公式语法错误",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "accuracy",
+          "severity": "high",
+          "description": "发现1处公式语法错误",
+          "suggestion": "检查公式中的括号匹配"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均56.0字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\01-集合论基础-深度扩展版.md",
+      "file_name": "01-集合论基础-深度扩展版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.4444444444444444,
+        "theorem_count": 50,
+        "proof_count": 1,
+        "example_count": 0,
+        "missing_elements": [
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论基础---深度扩展版",
+          "#目录",
+          "#-概述",
+          "#️-历史发展脉络",
+          "#早期发展-1850-1900",
+          "#康托尔集合论的革命性突破",
+          "#戴德金分割的历史意义",
+          "#现代发展-1900-1950",
+          "#策梅洛-弗兰克尔公理系统",
+          "#选择公理的争议",
+          "#当代发展-1950-至今",
+          "#大基数理论的发展",
+          "#️-核心概念与深度论证",
+          "#集合论的基本框架",
+          "#集合的定义与哲学意义",
+          "#集合运算的代数结构",
+          "#基本定理的深度论证",
+          "#康托尔定理的完整证明",
+          "#策梅洛-弗兰克尔公理系统的深度分析",
+          "#选择公理的独立性证明",
+          "#-思维过程表征",
+          "#集合论问题解决的思维模式",
+          "#1-构造性思维模式",
+          "#2-抽象化思维模式",
+          "#3-反证法思维模式",
+          "#集合论证明的思维过程",
+          "#1-理解问题阶段",
+          "#2-构造证明阶段",
+          "#3-反思总结阶段",
+          "#-深入论证与哲学分析",
+          "#1-集合论的哲学基础",
+          "#数学实在论与反实在论",
+          "#无限概念的哲学分析",
+          "#2-集合论的方法论意义",
+          "#公理化方法的价值",
+          "#构造性方法的重要性",
+          "#3-集合论的应用价值",
+          "#在数学中的应用",
+          "#在计算机科学中的应用",
+          "#-技术实现表征",
+          "#1-lean-4-形式化实现",
+          "#2-haskell-函数式实现",
+          "#3-python-算法实现",
+          "#-历史发展时间线",
+          "#-重要人物贡献表",
+          "#-总结",
+          "#主要成果",
+          "#应用领域",
+          "#未来发展方向"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 40.76635514018692,
+        "avg_paragraph_length": 1.312883435582822,
+        "complex_word_ratio": 0.41103017689906346,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.5681188290316993,
+        "formula_density": 1.5589814654425775
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 146,
+        "mastery_probability": 0.02165252035336913,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 50.504998261942575,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有50个定理，1个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均40.8字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\01-集合论基础.md",
+      "file_name": "01-集合论基础.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.6666666666666666,
+        "theorem_count": 12,
+        "proof_count": 0,
+        "example_count": 32,
+        "missing_elements": []
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#11-集合论基础--set-theory-foundations",
+          "#目录",
+          "#11-概述--overview-编号-b010101",
+          "#12-基本概念--basic-concepts-编号-b010102",
+          "#121-集合的定义--definition-of-set",
+          "#-概念深度分析集合--deep-concept-analysis-set",
+          "#1-概念内涵--concept-intension",
+          "#11-本质属性--essential-properties",
+          "#12-定义方式--definition-methods",
+          "#13-条件分析--condition-analysis",
+          "#2-概念外延--concept-extension",
+          "#21-直接外延--direct-extension",
+          "#22-间接外延--indirect-extension",
+          "#23-边界情况--boundary-cases",
+          "#24-反例--counterexamples",
+          "#3-概念属性--concept-properties",
+          "#31-固有属性--intrinsic-properties",
+          "#32-关系属性--relational-properties",
+          "#33-功能属性--functional-properties",
+          "#4-概念关系--concept-relations",
+          "#41-层次关系--hierarchical-relations",
+          "#42-并列关系--coordinate-relations",
+          "#43-交叉关系--intersection-relations",
+          "#44-对立关系--opposition-relations",
+          "#5-概念应用--concept-applications",
+          "#51-应用领域--application-domains",
+          "#52-应用场景--application-scenarios",
+          "#53-应用价值--application-value",
+          "#6-概念发展--concept-development",
+          "#61-历史发展--historical-development",
+          "#62-现代发展--modern-development",
+          "#7-形式化表述--formal-representation",
+          "#71-数学符号--mathematical-notation",
+          "#72-形式化定义--formal-definition",
+          "#73-形式化实现--formal-implementation",
+          "#122-元素关系--element-relation",
+          "#13-zfc公理系统--zfc-axiom-system-编号-b010103",
+          "#131-外延公理--axiom-of-extensionality",
+          "#132-空集公理--axiom-of-empty-set",
+          "#-概念深度分析空集--deep-concept-analysis-empty-set",
+          "#1-概念内涵--concept-intension-1",
+          "#11-本质属性--essential-properties-1",
+          "#12-定义方式--definition-methods-1",
+          "#13-条件分析--condition-analysis-1",
+          "#2-概念外延--concept-extension-1",
+          "#21-直接外延--direct-extension-1",
+          "#22-间接外延--indirect-extension-1",
+          "#23-边界情况--boundary-cases-1",
+          "#24-反例--counterexamples-1",
+          "#3-概念属性--concept-properties-1",
+          "#31-固有属性--intrinsic-properties-1",
+          "#32-关系属性--relational-properties-1",
+          "#33-功能属性--functional-properties-1",
+          "#4-概念关系--concept-relations-1",
+          "#41-层次关系--hierarchical-relations-1",
+          "#42-并列关系--coordinate-relations-1",
+          "#43-交叉关系--intersection-relations-1",
+          "#44-对立关系--opposition-relations-1",
+          "#5-概念应用--concept-applications-1",
+          "#51-应用领域--application-domains-1",
+          "#52-应用场景--application-scenarios-1",
+          "#53-应用价值--application-value-1",
+          "#6-概念发展--concept-development-1",
+          "#61-历史发展--historical-development-1",
+          "#62-现代发展--modern-development-1",
+          "#7-形式化表述--formal-representation-1",
+          "#71-数学符号--mathematical-notation-1",
+          "#72-形式化定义--formal-definition-1",
+          "#73-形式化实现--formal-implementation-1",
+          "#133-配对公理--axiom-of-pairing",
+          "#134-并集公理--axiom-of-union",
+          "#135-幂集公理--axiom-of-power-set",
+          "#-概念深度分析幂集--deep-concept-analysis-power-set",
+          "#1-概念内涵--concept-intension-2",
+          "#11-本质属性--essential-properties-2",
+          "#12-定义方式--definition-methods-2",
+          "#13-条件分析--condition-analysis-2",
+          "#2-概念外延--concept-extension-2",
+          "#21-直接外延--direct-extension-2",
+          "#22-间接外延--indirect-extension-2",
+          "#23-边界情况--boundary-cases-2",
+          "#24-反例--counterexamples-2",
+          "#3-概念属性--concept-properties-2",
+          "#31-固有属性--intrinsic-properties-2",
+          "#32-关系属性--relational-properties-2",
+          "#33-功能属性--functional-properties-2",
+          "#4-概念关系--concept-relations-2",
+          "#41-层次关系--hierarchical-relations-2",
+          "#42-并列关系--coordinate-relations-2",
+          "#43-交叉关系--intersection-relations-2",
+          "#44-对立关系--opposition-relations-2",
+          "#5-概念应用--concept-applications-2",
+          "#51-应用领域--application-domains-2",
+          "#52-应用场景--application-scenarios-2",
+          "#53-应用价值--application-value-2",
+          "#6-概念发展--concept-development-2",
+          "#61-历史发展--historical-development-2",
+          "#62-现代发展--modern-development-2",
+          "#7-形式化表述--formal-representation-2",
+          "#71-数学符号--mathematical-notation-2",
+          "#72-形式化定义--formal-definition-2",
+          "#73-形式化实现--formal-implementation-2",
+          "#14-集合运算--set-operations-编号-b010104",
+          "#141-子集关系--subset-relation",
+          "#-概念深度分析子集--deep-concept-analysis-subset",
+          "#1-概念内涵--concept-intension-3",
+          "#11-本质属性--essential-properties-3",
+          "#12-定义方式--definition-methods-3",
+          "#13-条件分析--condition-analysis-3",
+          "#2-概念外延--concept-extension-3",
+          "#21-直接外延--direct-extension-3",
+          "#22-间接外延--indirect-extension-3",
+          "#23-边界情况--boundary-cases-3",
+          "#24-反例--counterexamples-3",
+          "#3-概念属性--concept-properties-3",
+          "#31-固有属性--intrinsic-properties-3",
+          "#32-关系属性--relational-properties-3",
+          "#33-功能属性--functional-properties-3",
+          "#4-概念关系--concept-relations-3",
+          "#41-层次关系--hierarchical-relations-3",
+          "#42-并列关系--coordinate-relations-3",
+          "#43-交叉关系--intersection-relations-3",
+          "#44-对立关系--opposition-relations-3",
+          "#5-概念应用--concept-applications-3",
+          "#51-应用领域--application-domains-3",
+          "#52-应用场景--application-scenarios-3",
+          "#53-应用价值--application-value-3",
+          "#6-概念发展--concept-development-3",
+          "#61-历史发展--historical-development-3",
+          "#62-现代发展--modern-development-3",
+          "#7-形式化表述--formal-representation-3",
+          "#71-数学符号--mathematical-notation-3",
+          "#72-形式化定义--formal-definition-3",
+          "#73-形式化实现--formal-implementation-3",
+          "#142-并集--union",
+          "#-概念深度分析并集--deep-concept-analysis-union",
+          "#1-概念内涵--concept-intension-4",
+          "#11-本质属性--essential-properties-4",
+          "#12-定义方式--definition-methods-4",
+          "#13-条件分析--condition-analysis-4",
+          "#2-概念外延--concept-extension-4",
+          "#21-直接外延--direct-extension-4",
+          "#22-间接外延--indirect-extension-4",
+          "#23-边界情况--boundary-cases-4",
+          "#24-反例--counterexamples-4",
+          "#3-概念属性--concept-properties-4",
+          "#31-固有属性--intrinsic-properties-4",
+          "#32-关系属性--relational-properties-4",
+          "#33-功能属性--functional-properties-4",
+          "#4-概念关系--concept-relations-4",
+          "#41-层次关系--hierarchical-relations-4",
+          "#42-并列关系--coordinate-relations-4",
+          "#43-交叉关系--intersection-relations-4",
+          "#44-对立关系--opposition-relations-4",
+          "#5-概念应用--concept-applications-4",
+          "#51-应用领域--application-domains-4",
+          "#52-应用场景--application-scenarios-4",
+          "#53-应用价值--application-value-4",
+          "#6-概念发展--concept-development-4",
+          "#61-历史发展--historical-development-4",
+          "#62-现代发展--modern-development-4",
+          "#7-形式化表述--formal-representation-4",
+          "#71-数学符号--mathematical-notation-4",
+          "#72-形式化定义--formal-definition-4",
+          "#73-形式化实现--formal-implementation-4",
+          "#143-交集--intersection",
+          "#-概念深度分析交集--deep-concept-analysis-intersection",
+          "#1-概念内涵--concept-intension-5",
+          "#11-本质属性--essential-properties-5",
+          "#12-定义方式--definition-methods-5",
+          "#13-条件分析--condition-analysis-5",
+          "#2-概念外延--concept-extension-5",
+          "#21-直接外延--direct-extension-5",
+          "#22-间接外延--indirect-extension-5",
+          "#23-边界情况--boundary-cases-5",
+          "#24-反例--counterexamples-5",
+          "#3-概念属性--concept-properties-5",
+          "#31-固有属性--intrinsic-properties-5",
+          "#32-关系属性--relational-properties-5",
+          "#33-功能属性--functional-properties-5",
+          "#4-概念关系--concept-relations-5",
+          "#41-层次关系--hierarchical-relations-5",
+          "#42-并列关系--coordinate-relations-5",
+          "#43-交叉关系--intersection-relations-5",
+          "#44-对立关系--opposition-relations-5",
+          "#5-概念应用--concept-applications-5",
+          "#51-应用领域--application-domains-5",
+          "#52-应用场景--application-scenarios-5",
+          "#53-应用价值--application-value-5",
+          "#6-概念发展--concept-development-5",
+          "#61-历史发展--historical-development-5",
+          "#62-现代发展--modern-development-5",
+          "#7-形式化表述--formal-representation-5",
+          "#71-数学符号--mathematical-notation-5",
+          "#72-形式化定义--formal-definition-5",
+          "#73-形式化实现--formal-implementation-5",
+          "#144-差集--set-difference",
+          "#145-对称差--symmetric-difference",
+          "#15-笛卡尔积--cartesian-product-编号-b010105",
+          "#151-有序对--ordered-pair",
+          "#152-笛卡尔积定义--cartesian-product-definition",
+          "#-概念深度分析笛卡尔积--deep-concept-analysis-cartesian-product",
+          "#1-概念内涵--concept-intension-6",
+          "#11-本质属性--essential-properties-6",
+          "#12-定义方式--definition-methods-6",
+          "#13-条件分析--condition-analysis-6",
+          "#2-概念外延--concept-extension-6",
+          "#21-直接外延--direct-extension-6",
+          "#22-间接外延--indirect-extension-6",
+          "#23-边界情况--boundary-cases-6",
+          "#24-反例--counterexamples-6",
+          "#3-概念属性--concept-properties-6",
+          "#31-固有属性--intrinsic-properties-6",
+          "#32-关系属性--relational-properties-6",
+          "#33-功能属性--functional-properties-6",
+          "#4-概念关系--concept-relations-6",
+          "#41-层次关系--hierarchical-relations-6",
+          "#42-并列关系--coordinate-relations-6",
+          "#43-交叉关系--intersection-relations-6",
+          "#44-对立关系--opposition-relations-6",
+          "#5-概念应用--concept-applications-6",
+          "#51-应用领域--application-domains-6",
+          "#52-应用场景--application-scenarios-6",
+          "#53-应用价值--application-value-6",
+          "#6-概念发展--concept-development-6",
+          "#61-历史发展--historical-development-6",
+          "#62-现代发展--modern-development-6",
+          "#7-形式化表述--formal-representation-6",
+          "#71-数学符号--mathematical-notation-6",
+          "#72-形式化定义--formal-definition-6",
+          "#73-形式化实现--formal-implementation-6",
+          "#16-关系与函数--relations-and-functions-编号-b010106",
+          "#161-关系--relations",
+          "#162-函数--functions",
+          "#17-等价关系--equivalence-relations-编号-b010107",
+          "#171-等价关系定义--equivalence-relation-definition",
+          "#172-等价类--equivalence-classes",
+          "#18-形式化代码示例--formal-code-examples-编号-b010108",
+          "#181-lean-4-实现--lean-4-implementation",
+          "#182-haskell-实现--haskell-implementation",
+          "#19-应用实例--applications",
+          "#191-集合论在计算机科学中的应用--applications-in-computer-science",
+          "#192-集合论在数据库理论中的应用--applications-in-database-theory",
+          "#193-集合论在逻辑学中的应用--applications-in-logic",
+          "#194-集合论在数学中的应用--applications-in-mathematics",
+          "#110-总结--summary",
+          "#111-历史发展--historical-development",
+          "#1111-集合论发展历史--historical-development-of-set-theory",
+          "#古代数学时期",
+          "#现代集合论发展",
+          "#公理化发展",
+          "#现代发展",
+          "#1112-重要人物贡献--important-figures-and-contributions",
+          "#格奥尔格康托尔-1845-1918",
+          "#恩斯特策梅洛-1871-1953",
+          "#亚伯拉罕弗兰克尔-1891-1965",
+          "#库尔特哥德尔-1906-1978",
+          "#保罗科恩-1934-2007",
+          "#1113-重要事件--important-events",
+          "#19世纪重要事件",
+          "#20世纪重要事件",
+          "#21世纪重要事件",
+          "#112-相关概念--related-concepts",
+          "#1121-基础数学关联--basic-mathematics-connections",
+          "#数系",
+          "#函数",
+          "#关系",
+          "#1122-高级数学关联--advanced-mathematics-connections",
+          "#范畴论",
+          "#模型论",
+          "#递归论",
+          "#1123-应用领域关联--application-domain-connections",
+          "#计算机科学",
+          "#逻辑学",
+          "#哲学",
+          "#113-参考文献--references",
+          "#经典教材--classic-textbooks",
+          "#现代教材--modern-textbooks",
+          "#前沿文献--frontier-literature",
+          "#历史文献--historical-literature",
+          "#中文教材--chinese-textbooks",
+          "#在线资源--online-resources",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [
+          "emptyset: ['\\\\\\\\emptyset', '\\\\\\\\varnothing']"
+        ],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 84.37335834896811,
+        "avg_paragraph_length": 2.149193548387097,
+        "complex_word_ratio": 0.33778801843317974,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.06337853890318748,
+        "formula_density": 7.325282122352009
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 1397,
+        "mastery_probability": 0.006186893684418927,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 55.71523510838027,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有12个定理，0个证明）",
+        "统一数学符号使用",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "accuracy",
+          "severity": "low",
+          "description": "符号不一致: emptyset: ['\\\\\\\\emptyset', '\\\\\\\\varnothing']",
+          "suggestion": "统一使用一种符号表示"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均84.4字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\01-集合论基础1.md",
+      "file_name": "01-集合论基础1.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3888888888888889,
+        "theorem_count": 17,
+        "proof_count": 1,
+        "example_count": 0,
+        "missing_elements": [
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论基础",
+          "#目录",
+          "#概述",
+          "#历史背景",
+          "#集合论的起源",
+          "#公理化发展",
+          "#现代发展",
+          "#当代应用",
+          "#公理化定义",
+          "#基本概念",
+          "#集合定义",
+          "#集合的表示方法",
+          "#zfc公理系统",
+          "#基本公理",
+          "#分离公理模式",
+          "#替换公理模式",
+          "#选择公理",
+          "#正则公理",
+          "#集合运算",
+          "#基本运算",
+          "#笛卡尔积",
+          "#幂集",
+          "#关系",
+          "#二元关系",
+          "#关系类型",
+          "#基本性质",
+          "#集合运算性质",
+          "#交换律",
+          "#结合律",
+          "#分配律",
+          "#de-morgan律",
+          "#基数理论",
+          "#基数定义",
+          "#可数集",
+          "#不可数集",
+          "#序数理论",
+          "#序数定义",
+          "#序数运算",
+          "#形式化证明",
+          "#集合相等证明",
+          "#集合运算证明",
+          "#基数证明",
+          "#序数证明",
+          "#应用实例",
+          "#数学基础应用",
+          "#数系构造",
+          "#函数构造",
+          "#逻辑学应用",
+          "#模型论",
+          "#证明论",
+          "#计算机科学应用",
+          "#数据结构",
+          "#算法分析",
+          "#人工智能应用",
+          "#知识表示",
+          "#机器学习",
+          "#与其他主题的关联",
+          "#前置知识",
+          "#后续发展",
+          "#交叉联系",
+          "#参考文献",
+          "#经典文献",
+          "#1现代发展",
+          "#在线资源",
+          "#术语对照表--terminology-table--tableau-des-termes--terminologietabelle",
+          "#交互与补充资源--interactive--supplementary-resources",
+          "#交互式图表增强",
+          "#定理证明补充",
+          "#反例与特殊情况补充",
+          "#历史背景补充"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 63.736486486486484,
+        "avg_paragraph_length": 0.6757990867579908,
+        "complex_word_ratio": 0.20965189873417722,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 32,
+        "mastery_probability": 0.05133997330321388,
+        "prerequisite_clarity": 1.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 50.86001585800586,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有17个定理，1个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均63.7字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\02-函数与映射1.md",
+      "file_name": "02-函数与映射1.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3333333333333333,
+        "theorem_count": 15,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#函数与映射",
+          "#目录",
+          "#概述",
+          "#历史背景",
+          "#函数的起源",
+          "#函数理论的发展",
+          "#现代发展",
+          "#当代应用",
+          "#公理化定义",
+          "#基本概念",
+          "#函数定义",
+          "#函数类型",
+          "#函数运算",
+          "#复合运算",
+          "#逆函数",
+          "#限制和延拓",
+          "#函数空间",
+          "#函数集合",
+          "#函数代数",
+          "#特殊函数",
+          "#多项式函数",
+          "#指数函数",
+          "#对数函数",
+          "#基本性质",
+          "#函数性质",
+          "#单调性",
+          "#周期性",
+          "#奇偶性",
+          "#连续性",
+          "#连续性定义",
+          "#间断点",
+          "#可微性",
+          "#导数定义",
+          "#微分运算",
+          "#形式化证明",
+          "#函数性质证明",
+          "#复合函数证明",
+          "#连续性证明",
+          "#可微性证明",
+          "#应用实例",
+          "#数学分析应用",
+          "#函数逼近",
+          "#函数优化",
+          "#代数学应用",
+          "#函数方程",
+          "#函数变换",
+          "#几何学应用",
+          "#参数曲线",
+          "#函数图像",
+          "#物理学应用",
+          "#运动学",
+          "#波动学",
+          "#工程学应用",
+          "#信号处理",
+          "#控制系统",
+          "#与其他主题的关联",
+          "#前置知识",
+          "#后续发展",
+          "#交叉联系",
+          "#参考文献",
+          "#经典文献",
+          "#1现代发展",
+          "#在线资源",
+          "#术语对照表--terminology-table--tableau-des-termes--terminologietabelle",
+          "#交互与补充资源--interactive--supplementary-resources",
+          "#交互式图表增强",
+          "#定理证明补充",
+          "#反例与特殊情况补充",
+          "#历史背景补充"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 85.55,
+        "avg_paragraph_length": 0.5194805194805194,
+        "complex_word_ratio": 0.16312056737588654,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 34,
+        "mastery_probability": 0.0476462740613684,
+        "prerequisite_clarity": 1.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 50.79057162301844,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有15个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均85.5字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\02-数系与运算-增强版.md",
+      "file_name": "02-数系与运算-增强版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3888888888888889,
+        "theorem_count": 11,
+        "proof_count": 0,
+        "example_count": 4,
+        "missing_elements": [
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#2-数系与运算--number-systems-and-operations",
+          "#目录",
+          "#21-概述--overview",
+          "#211-数系发展脉络",
+          "#212-数系层次结构",
+          "#22-历史发展--historical-development",
+          "#221-数系发展时间线",
+          "#222-重要人物贡献",
+          "#223-理论发展脉络",
+          "#23-自然数系统--natural-numbers",
+          "#231-皮亚诺公理系统",
+          "#232-自然数运算",
+          "#24-整数系统--integer-system",
+          "#241-整数构造",
+          "#242-整数运算",
+          "#25-有理数系统--rational-numbers",
+          "#251-有理数构造",
+          "#252-有理数性质",
+          "#26-实数系统--real-numbers",
+          "#261-实数构造方法",
+          "#262-实数完备性",
+          "#27-复数系统--complex-numbers",
+          "#271-复数定义",
+          "#272-复数几何表示",
+          "#273-代数基本定理",
+          "#28-应用实例--application-examples",
+          "#281-计算机科学应用",
+          "#282-物理学应用",
+          "#283-工程应用",
+          "#29-思维过程--thinking-process",
+          "#291-数系扩展思维",
+          "#292-证明思维过程",
+          "#293-概念理解过程",
+          "#210-总结--summary",
+          "#2101-核心要点",
+          "#2102-知识关联",
+          "#2103-进一步学习",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 38.801587301587304,
+        "avg_paragraph_length": 2.135593220338983,
+        "complex_word_ratio": 0.21411483253588517,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.2123971065103517,
+        "formula_density": 9.47867298578199
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 174,
+        "mastery_probability": 0.062359690695934146,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 57.90451424600994,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有11个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均38.8字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\02-数系与运算-深度扩展版.md",
+      "file_name": "02-数系与运算-深度扩展版.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2222222222222222,
+        "theorem_count": 16,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#数系与运算-深度扩展版",
+          "#目录",
+          "#概述",
+          "#1-超实数系统",
+          "#11-超实数的构造",
+          "#12-无穷小分析",
+          "#13-非标准分析基础",
+          "#2-数系的代数结构",
+          "#21-域扩张理论",
+          "#22-超越数理论",
+          "#23-p进数系统",
+          "#3-序结构与格论",
+          "#31-全序与偏序",
+          "#32-格论基础",
+          "#33-布尔代数",
+          "#4-数系的拓扑结构",
+          "#41-度量空间",
+          "#42-拓扑群",
+          "#5-数系的范畴论观点",
+          "#51-数系作为范畴",
+          "#52-数系的函子性",
+          "#6-数系在数学各分支中的应用",
+          "#61-代数几何中的应用",
+          "#62-分析学中的应用",
+          "#63-数论中的应用",
+          "#7-形式化实现",
+          "#71-lean-4-实现",
+          "#72-haskell-实现",
+          "#73-rust-实现",
+          "#8-历史发展与现代应用",
+          "#81-历史发展",
+          "#82-现代应用",
+          "#9-前沿研究方向",
+          "#91-非标准分析的发展",
+          "#92-数系的范畴化",
+          "#93-计算数系",
+          "#10-总结",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 25.404907975460123,
+        "avg_paragraph_length": 1.8522727272727273,
+        "complex_word_ratio": 0.13350449293966624,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.2038412755934046,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 18,
+        "mastery_probability": 0.054357673491574554,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 42.65741889054874,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有16个定理，0个证明）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\02-数系与运算.md",
+      "file_name": "02-数系与运算.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": false,
+        "has_examples": true,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3333333333333333,
+        "theorem_count": 8,
+        "proof_count": 0,
+        "example_count": 3,
+        "missing_elements": [
+          "定理证明"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#12-数系与运算--number-systems-and-operations",
+          "#目录",
+          "#121-概述--overview-编号-b010201",
+          "#122-自然数--natural-numbers-编号-b010202",
+          "#1221-皮亚诺公理--peano-axioms",
+          "#1222-自然数运算--natural-number-operations",
+          "#123-整数--integers-编号-b010203",
+          "#1231-整数构造--construction-of-integers",
+          "#1232-整数运算--integer-operations",
+          "#124-有理数--rational-numbers-编号-b010204",
+          "#1241-有理数构造--construction-of-rational-numbers",
+          "#1242-有理数运算--rational-operations",
+          "#125-实数--real-numbers-编号-b010205",
+          "#1251-戴德金分割--dedekind-cuts",
+          "#1252-实数运算--real-number-operations",
+          "#126-复数--complex-numbers-编号-b010206",
+          "#1261-复数定义--definition-of-complex-numbers",
+          "#1262-复数运算--complex-operations",
+          "#127-数系扩展--number-system-extensions-编号-b010207",
+          "#1271-代数数--algebraic-numbers",
+          "#1272-超越数--transcendental-numbers",
+          "#128-形式化代码示例--formal-code-examples-编号-b010208",
+          "#1281-lean-4-实现--lean-4-implementation",
+          "#1282-haskell-实现--haskell-implementation",
+          "#129-数系关系--relationships-between-number-systems",
+          "#1291-包含关系--inclusion-relations",
+          "#1292-代数性质--algebraic-properties",
+          "#1210-应用与扩展--applications-and-extensions",
+          "#12101-计算机科学应用--computer-science-applications",
+          "#12102-物理应用--physics-applications",
+          "#12103-工程应用--engineering-applications",
+          "#1211-总结--summary",
+          "#1212-历史发展--historical-development",
+          "#12121-数系发展历史--historical-development-of-number-systems",
+          "#古代数学时期",
+          "#中世纪发展",
+          "#文艺复兴时期",
+          "#现代发展",
+          "#12122-重要人物贡献--important-figures-and-contributions",
+          "#朱塞佩皮亚诺-1858-1932",
+          "#理查德戴德金-1831-1916",
+          "#格奥尔格康托尔-1845-1918",
+          "#卡尔魏尔斯特拉斯-1815-1897",
+          "#奥古斯丁路易柯西-1789-1857",
+          "#12123-重要事件--important-events",
+          "#古代重要事件",
+          "#中世纪重要事件",
+          "#现代重要事件",
+          "#1213-相关概念--related-concepts",
+          "#12131-基础数学关联--basic-mathematics-connections",
+          "#集合论",
+          "#代数",
+          "#分析",
+          "#12132-高级数学关联--advanced-mathematics-connections",
+          "#代数数论",
+          "#解析数论",
+          "#几何数论",
+          "#12133-应用领域关联--application-domain-connections",
+          "#计算机科学",
+          "#物理学",
+          "#工程学",
+          "#1214-参考文献--references",
+          "#经典教材--classic-textbooks",
+          "#数论教材--number-theory-textbooks",
+          "#代数教材--algebra-textbooks",
+          "#历史文献--historical-literature",
+          "#中文教材--chinese-textbooks",
+          "#现代发展文献--modern-development-literature",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 34.474114441416894,
+        "avg_paragraph_length": 3.110169491525424,
+        "complex_word_ratio": 0.3047566371681416,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.1920831271647699,
+        "formula_density": 6.976744186046512
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 321,
+        "mastery_probability": 0.014844136566056407,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 50.74992174475442,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有8个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\03-关系与等价1.md",
+      "file_name": "03-关系与等价1.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3333333333333333,
+        "theorem_count": 17,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#关系与等价",
+          "#目录",
+          "#概述",
+          "#历史背景",
+          "#关系的起源",
+          "#等价关系的发展",
+          "#现代发展",
+          "#当代应用",
+          "#公理化定义",
+          "#基本概念",
+          "#关系定义",
+          "#关系类型",
+          "#等价关系",
+          "#等价关系定义",
+          "#等价关系的性质",
+          "#偏序关系",
+          "#偏序关系定义",
+          "#偏序集的性质",
+          "#函数关系",
+          "#函数作为关系",
+          "#函数关系的性质",
+          "#基本性质",
+          "#关系运算",
+          "#关系复合",
+          "#关系幂",
+          "#关系闭包",
+          "#等价关系性质",
+          "#等价类的性质",
+          "#商集的性质",
+          "#偏序关系性质",
+          "#偏序集的链和反链",
+          "#偏序集的格结构",
+          "#形式化证明",
+          "#等价关系证明",
+          "#偏序关系证明",
+          "#关系复合证明",
+          "#等价闭包证明",
+          "#应用实例",
+          "#代数学应用",
+          "#同余关系",
+          "#群论中的等价关系",
+          "#拓扑学应用",
+          "#同伦关系",
+          "#同胚关系",
+          "#逻辑学应用",
+          "#逻辑等价",
+          "#证明等价",
+          "#计算机科学应用",
+          "#程序等价",
+          "#状态等价",
+          "#经济学应用",
+          "#偏好关系",
+          "#社会选择",
+          "#与其他主题的关联",
+          "#前置知识",
+          "#后续发展",
+          "#交叉联系",
+          "#参考文献",
+          "#经典文献",
+          "#1现代发展",
+          "#在线资源",
+          "#术语对照表--terminology-table--tableau-des-termes--terminologietabelle",
+          "#交互与补充资源--interactive--supplementary-resources",
+          "#交互式图表增强",
+          "#定理证明补充",
+          "#反例与特殊情况补充",
+          "#历史背景补充"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 73.24285714285715,
+        "avg_paragraph_length": 0.625,
+        "complex_word_ratio": 0.2137784090909091,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 35,
+        "mastery_probability": 0.04752851711026616,
+        "prerequisite_clarity": 1.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 49.086752946127945,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有17个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均73.2字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\03-函数与映射-增强版.md",
+      "file_name": "03-函数与映射-增强版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": false,
+        "has_examples": true,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.16666666666666666,
+        "theorem_count": 0,
+        "proof_count": 0,
+        "example_count": 3,
+        "missing_elements": [
+          "定理证明"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 1,
+        "citation_errors": 0,
+        "broken_links": [
+          "#3-函数与映射--functions-and-mappings",
+          "#目录",
+          "#31-概述--overview",
+          "#311-函数概念体系",
+          "#312-函数分类体系",
+          "#32-历史发展--historical-development",
+          "#321-函数概念发展时间线",
+          "#322-重要人物贡献",
+          "#323-理论发展脉络",
+          "#33-基本概念--basic-concepts",
+          "#331-函数定义",
+          "#332-函数表示方法",
+          "#333-函数图像",
+          "#34-函数性质--function-properties",
+          "#341-单射性",
+          "#342-满射性",
+          "#343-双射性",
+          "#344-函数性质总结",
+          "#35-特殊函数--special-functions",
+          "#351-初等函数",
+          "#352-多项式函数",
+          "#353-有理函数",
+          "#354-超越函数",
+          "#36-函数运算--function-operations",
+          "#361-函数复合",
+          "#362-函数运算",
+          "#363-逆函数",
+          "#37-应用实例--application-examples",
+          "#371-物理学应用",
+          "#372-经济学应用",
+          "#373-计算机科学应用",
+          "#38-思维过程--thinking-process",
+          "#381-函数分析思维",
+          "#382-函数构造思维",
+          "#383-函数应用思维",
+          "#39-总结--summary",
+          "#391-核心要点",
+          "#392-知识关联",
+          "#393-进一步学习",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 49.432432432432435,
+        "avg_paragraph_length": 2.5813953488372094,
+        "complex_word_ratio": 0.2129817444219067,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.19183895538628945,
+        "formula_density": 11.31664853101197
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 220,
+        "mastery_probability": 0.0544069640914037,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 50.41671106103037,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "修复1处公式语法错误",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "accuracy",
+          "severity": "high",
+          "description": "发现1处公式语法错误",
+          "suggestion": "检查公式中的括号匹配"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均49.4字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\03-函数与映射-深度扩展版.md",
+      "file_name": "03-函数与映射-深度扩展版.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": false,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.1111111111111111,
+        "theorem_count": 19,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "定理证明",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#函数与映射-深度扩展版",
+          "#目录",
+          "#概述",
+          "#1-函数论深度理论",
+          "#11-函数空间理论",
+          "#12-函数逼近理论",
+          "#13-函数变换理论",
+          "#2-泛函分析基础",
+          "#21-赋范空间",
+          "#22-希尔伯特空间",
+          "#23-对偶空间",
+          "#3-算子理论",
+          "#31-线性算子",
+          "#32-紧算子",
+          "#33-自伴算子",
+          "#4-函数空间的结构",
+          "#41-索伯列夫空间",
+          "#42-赫尔德空间",
+          "#5-函数分析的现代发展",
+          "#51-分布理论",
+          "#52-伪微分算子",
+          "#6-函数论在数学各分支中的应用",
+          "#61-偏微分方程中的应用",
+          "#62-调和分析中的应用",
+          "#63-几何分析中的应用",
+          "#7-形式化实现",
+          "#71-lean-4-实现",
+          "#72-haskell-实现",
+          "#73-rust-实现",
+          "#8-历史发展与现代应用",
+          "#81-历史发展",
+          "#82-现代应用",
+          "#9-前沿研究方向",
+          "#91-非线性泛函分析",
+          "#92-随机分析",
+          "#93-量子场论",
+          "#10-总结",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 24.97714285714286,
+        "avg_paragraph_length": 1.9230769230769231,
+        "complex_word_ratio": 0.12771084337349398,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.2151920148874979,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 19,
+        "mastery_probability": 0.050752833699881574,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.5
+      },
+      "overall_score": 37.71624125153443,
+      "quality_level": "POOR",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有19个定理，0个证明）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\03-函数与映射.md",
+      "file_name": "03-函数与映射.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.5,
+        "theorem_count": 10,
+        "proof_count": 0,
+        "example_count": 7,
+        "missing_elements": []
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 1,
+        "citation_errors": 0,
+        "broken_links": [
+          "#13-函数与映射--functions-and-mappings",
+          "#目录",
+          "#131-概述--overview-编号-b010301",
+          "#132-函数的基本定义--basic-definition-of-function-编号-b010302",
+          "#1321-函数定义--function-definition",
+          "#-概念深度分析函数--deep-concept-analysis-function",
+          "#1-概念内涵--concept-intension",
+          "#11-本质属性--essential-properties",
+          "#12-定义方式--definition-methods",
+          "#13-条件分析--condition-analysis",
+          "#2-概念外延--concept-extension",
+          "#21-直接外延--direct-extension",
+          "#22-间接外延--indirect-extension",
+          "#23-边界情况--boundary-cases",
+          "#24-反例--counterexamples",
+          "#3-概念属性--concept-properties",
+          "#31-固有属性--intrinsic-properties",
+          "#32-关系属性--relational-properties",
+          "#33-功能属性--functional-properties",
+          "#4-概念关系--concept-relations",
+          "#41-层次关系--hierarchical-relations",
+          "#42-并列关系--coordinate-relations",
+          "#43-交叉关系--intersection-relations",
+          "#44-对立关系--opposition-relations",
+          "#5-概念应用--concept-applications",
+          "#51-应用领域--application-domains",
+          "#52-应用场景--application-scenarios",
+          "#53-应用价值--application-value",
+          "#6-概念发展--concept-development",
+          "#61-历史发展--historical-development",
+          "#62-现代发展--modern-development",
+          "#7-形式化表述--formal-representation",
+          "#71-数学符号--mathematical-notation",
+          "#72-形式化定义--formal-definition",
+          "#73-形式化实现--formal-implementation",
+          "#1322-函数表示--function-representation",
+          "#133-函数的性质--properties-of-functions-编号-b010303",
+          "#1331-单射满射双射--injective-surjective-bijective",
+          "#1332-函数的运算性质--operational-properties",
+          "#134-复合函数--composition-of-functions-编号-b010304",
+          "#1341-复合函数定义--definition-of-composition",
+          "#1342-复合函数性质--properties-of-composition",
+          "#135-逆函数--inverse-functions-编号-b010305",
+          "#1351-逆函数定义--definition-of-inverse-function",
+          "#1352-逆函数性质--properties-of-inverse-functions",
+          "#136-特殊函数类--special-classes-of-functions-编号-b010306",
+          "#1361-恒等函数--identity-function",
+          "#1362-常函数--constant-function",
+          "#1363-特征函数--characteristic-function",
+          "#137-函数族与序列--function-families-and-sequences-编号-b010307",
+          "#1371-函数族--function-families",
+          "#1372-序列--sequences",
+          "#138-函数的连续性--continuity-of-functions-编号-b010308",
+          "#1381-连续函数定义--definition-of-continuous-function",
+          "#1382-连续函数性质--properties-of-continuous-functions",
+          "#139-函数的可微性--differentiability-of-functions-编号-b010309",
+          "#1391-导数定义--definition-of-derivative",
+          "#1392-微分法则--differentiation-rules",
+          "#1310-形式化代码示例--formal-code-examples-编号-b010310",
+          "#13101-lean-4-实现--lean-4-implementation",
+          "#13102-haskell-实现--haskell-implementation",
+          "#1311-函数的应用--applications-of-functions-编号-b010311",
+          "#13111-数学分析应用--mathematical-analysis-applications",
+          "#13112-代数应用--algebraic-applications",
+          "#13113-拓扑应用--topological-applications",
+          "#13114-计算机科学应用--computer-science-applications",
+          "#13115-物理学应用--physics-applications",
+          "#13116-工程学应用--engineering-applications",
+          "#1312-总结--summary-编号-b010312",
+          "#1313-历史发展--historical-development",
+          "#13131-函数概念发展--historical-development-of-function-concept",
+          "#古代数学时期",
+          "#17-18世纪发展",
+          "#19世纪严格化",
+          "#20世纪现代发展",
+          "#13132-重要人物贡献--important-figures-and-contributions",
+          "#勒内笛卡尔-1596-1650",
+          "#莱昂哈德欧拉-1707-1783",
+          "#奥古斯丁路易柯西-1789-1857",
+          "#卡尔魏尔斯特拉斯-1815-1897",
+          "#理查德戴德金-1831-1916",
+          "#13133-重要事件--important-events",
+          "#17-18世纪重要事件",
+          "#19世纪重要事件",
+          "#20世纪重要事件",
+          "#1314-相关概念--related-concepts",
+          "#13141-基础数学关联--basic-mathematics-connections",
+          "#集合论",
+          "#关系",
+          "#数系",
+          "#13142-高级数学关联--advanced-mathematics-connections",
+          "#分析",
+          "#代数",
+          "#拓扑",
+          "#13143-应用领域关联--application-domain-connections",
+          "#计算机科学",
+          "#物理学",
+          "#工程学",
+          "#1315-参考文献--references",
+          "#经典教材--classic-textbooks",
+          "#函数论教材--function-theory-textbooks",
+          "#分析学教材--analysis-textbooks",
+          "#历史文献--historical-literature",
+          "#中文教材--chinese-textbooks",
+          "#现代发展文献--modern-development-literature",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 54.44502617801047,
+        "avg_paragraph_length": 2.0760869565217392,
+        "complex_word_ratio": 0.34602194787379975,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.14852752880921896,
+        "formula_density": 8.194622279129321
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 661,
+        "mastery_probability": 0.014226774790155073,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 56.68887693727738,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有10个定理，0个证明）",
+        "修复1处公式语法错误",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "accuracy",
+          "severity": "high",
+          "description": "发现1处公式语法错误",
+          "suggestion": "检查公式中的括号匹配"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均54.4字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\04-关系与等价-增强版.md",
+      "file_name": "04-关系与等价-增强版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": false,
+        "has_examples": true,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.16666666666666666,
+        "theorem_count": 0,
+        "proof_count": 0,
+        "example_count": 3,
+        "missing_elements": [
+          "定理证明"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#4-关系与等价--relations-and-equivalence",
+          "#目录",
+          "#41-概述--overview",
+          "#411-关系概念体系",
+          "#412-关系分类体系",
+          "#42-历史发展--historical-development",
+          "#421-关系理论发展时间线",
+          "#422-重要人物贡献",
+          "#423-理论发展脉络",
+          "#43-基本概念--basic-concepts",
+          "#431-关系定义",
+          "#432-关系表示方法",
+          "#433-关系运算",
+          "#44-关系性质--relation-properties",
+          "#441-自反性",
+          "#442-对称性",
+          "#443-传递性",
+          "#444-反对称性",
+          "#445-关系性质总结",
+          "#45-等价关系--equivalence-relations",
+          "#451-等价关系定义",
+          "#452-等价类",
+          "#453-商集",
+          "#454-等价关系性质",
+          "#46-序关系--order-relations",
+          "#461-偏序关系",
+          "#462-全序关系",
+          "#463-良序关系",
+          "#464-序关系层次",
+          "#47-闭包运算--closure-operations",
+          "#471-自反闭包",
+          "#472-对称闭包",
+          "#473-传递闭包",
+          "#474-闭包运算性质",
+          "#48-应用实例--application-examples",
+          "#481-计算机科学应用",
+          "#482-代数应用",
+          "#483-几何应用",
+          "#484-逻辑学应用",
+          "#49-思维过程--thinking-process",
+          "#491-关系分析思维",
+          "#492-等价关系构造思维",
+          "#493-序关系分析思维",
+          "#410-总结--summary",
+          "#4101-核心要点",
+          "#4102-知识关联",
+          "#4103-进一步学习",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 42.25925925925926,
+        "avg_paragraph_length": 2.547169811320755,
+        "complex_word_ratio": 0.25366876310272535,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.2477072550621992,
+        "formula_density": 11.622627803504948
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 264,
+        "mastery_probability": 0.027240533914464723,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 50.71004542278127,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均42.3字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\04-关系与等价-深度扩展版.md",
+      "file_name": "04-关系与等价-深度扩展版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2777777777777778,
+        "theorem_count": 44,
+        "proof_count": 0,
+        "example_count": 1,
+        "missing_elements": []
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#关系与等价-深度扩展版",
+          "#目录",
+          "#概述",
+          "#国际标准对标",
+          "#构造性关系论的核心概念",
+          "#1-关系论深度理论",
+          "#11-关系的构造性定义",
+          "#12-关系代数",
+          "#13-关系的性质分类",
+          "#14-关系闭包理论",
+          "#15-关系的操作和构造",
+          "#16-关系分解理论",
+          "#17-关系的自指语义",
+          "#18-关系的形式化表示",
+          "#19-关系的计算复杂性",
+          "#2-序理论",
+          "#21-偏序集",
+          "#22-序结构的性质",
+          "#23-序数理论",
+          "#3-格论基础",
+          "#31-格的定义",
+          "#32-分配格",
+          "#33-模格",
+          "#4-布尔代数",
+          "#41-布尔代数的定义",
+          "#42-布尔代数的表示",
+          "#43-布尔函数",
+          "#5-范畴论观点",
+          "#51-关系作为范畴",
+          "#52-序结构作为范畴",
+          "#6-关系论在数学各分支中的应用",
+          "#61-代数中的应用",
+          "#62-拓扑学中的应用",
+          "#63-逻辑学中的应用",
+          "#7-形式化实现",
+          "#71-lean-4-实现",
+          "#72-haskell-实现",
+          "#73-rust-实现",
+          "#8-历史发展与现代应用",
+          "#81-历史发展",
+          "#82-现代应用",
+          "#9-前沿研究方向",
+          "#91-范畴化序理论",
+          "#92-量子序理论",
+          "#93-高阶关系论",
+          "#10-总结",
+          "#多表征方式与图建模",
+          "#关系论的多表征系统",
+          "#思维导图关系论的核心概念",
+          "#术语对照表--terminology-table",
+          "#补充关系与等价的国际对齐与多表征精炼版",
+          "#a-对齐要点",
+          "#b-关系代数入门要点",
+          "#c-多表征",
+          "#d-示例练习"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 31.725988700564972,
+        "avg_paragraph_length": 2.0113636363636362,
+        "complex_word_ratio": 0.1380952380952381,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.6554884277500511,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 114,
+        "mastery_probability": 0.014593001196626099,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 53.30045508216412,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有44个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": []
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\04-关系与等价.md",
+      "file_name": "04-关系与等价.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3888888888888889,
+        "theorem_count": 4,
+        "proof_count": 0,
+        "example_count": 8,
+        "missing_elements": [
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#14-关系与等价--relations-and-equivalence",
+          "#目录--table-of-contents",
+          "#141-概述--overview-编号-b010401",
+          "#142-基本概念--basic-concepts-编号-b010402",
+          "#1421-关系的定义--definition-of-relation",
+          "#-概念深度分析关系--deep-concept-analysis-relation",
+          "#1-概念内涵--concept-intension",
+          "#11-本质属性--essential-properties",
+          "#12-定义方式--definition-methods",
+          "#13-条件分析--condition-analysis",
+          "#2-概念外延--concept-extension",
+          "#21-直接外延--direct-extension",
+          "#22-间接外延--indirect-extension",
+          "#23-边界情况--boundary-cases",
+          "#24-反例--counterexamples",
+          "#3-概念属性--concept-properties",
+          "#31-固有属性--intrinsic-properties",
+          "#32-关系属性--relational-properties",
+          "#33-功能属性--functional-properties",
+          "#4-概念关系--concept-relations",
+          "#41-层次关系--hierarchical-relations",
+          "#42-并列关系--coordinate-relations",
+          "#43-交叉关系--intersection-relations",
+          "#44-对立关系--opposition-relations",
+          "#5-概念应用--concept-applications",
+          "#51-应用领域--application-domains",
+          "#52-应用场景--application-scenarios",
+          "#53-应用价值--application-value",
+          "#6-概念发展--concept-development",
+          "#61-历史发展--historical-development",
+          "#62-现代发展--modern-development",
+          "#7-形式化表述--formal-representation",
+          "#71-数学符号--mathematical-notation",
+          "#72-形式化定义--formal-definition",
+          "#73-形式化实现--formal-implementation",
+          "#1422-关系的性质--properties-of-relations",
+          "#143-等价关系--equivalence-relations-编号-b010403",
+          "#1431-等价关系的定义--definition-of-equivalence-relation",
+          "#-概念深度分析等价关系--deep-concept-analysis-equivalence-relation",
+          "#1-概念内涵--concept-intension-1",
+          "#11-本质属性--essential-properties-1",
+          "#12-定义方式--definition-methods-1",
+          "#13-条件分析--condition-analysis-1",
+          "#2-概念外延--concept-extension-1",
+          "#21-直接外延--direct-extension-1",
+          "#22-间接外延--indirect-extension-1",
+          "#23-边界情况--boundary-cases-1",
+          "#24-反例--counterexamples-1",
+          "#3-概念属性--concept-properties-1",
+          "#31-固有属性--intrinsic-properties-1",
+          "#32-关系属性--relational-properties-1",
+          "#33-功能属性--functional-properties-1",
+          "#4-概念关系--concept-relations-1",
+          "#41-层次关系--hierarchical-relations-1",
+          "#42-并列关系--coordinate-relations-1",
+          "#43-交叉关系--intersection-relations-1",
+          "#44-对立关系--opposition-relations-1",
+          "#5-概念应用--concept-applications-1",
+          "#51-应用领域--application-domains-1",
+          "#52-应用场景--application-scenarios-1",
+          "#53-应用价值--application-value-1",
+          "#6-概念发展--concept-development-1",
+          "#61-历史发展--historical-development-1",
+          "#62-现代发展--modern-development-1",
+          "#7-形式化表述--formal-representation-1",
+          "#71-数学符号--mathematical-notation-1",
+          "#72-形式化定义--formal-definition-1",
+          "#73-形式化实现--formal-implementation-1",
+          "#1432-等价类--equivalence-classes",
+          "#1433-商集--quotient-set",
+          "#144-序关系--order-relations-编号-b010404",
+          "#1441-偏序关系--partial-order",
+          "#1442-全序关系--total-order",
+          "#1443-良序关系--well-order",
+          "#145-特殊元素--special-elements-编号-b010405",
+          "#1451-最大元素与最小元素--maximal-and-minimal-elements",
+          "#1452-上界与下界--upper-and-lower-bounds",
+          "#1453-上确界与下确界--supremum-and-infimum",
+          "#146-关系的运算--operations-on-relations-编号-b010406",
+          "#1461-关系的复合--composition-of-relations",
+          "#1462-关系的逆--inverse-of-relation",
+          "#1463-关系的幂--power-of-relation",
+          "#147-关系的闭包--closure-of-relations-编号-b010407",
+          "#1471-自反闭包--reflexive-closure",
+          "#1472-对称闭包--symmetric-closure",
+          "#1473-传递闭包--transitive-closure",
+          "#148-形式化实现--formal-implementation-编号-b010408",
+          "#1481-lean-4-实现--lean-4-implementation",
+          "#1482-haskell-实现--haskell-implementation",
+          "#149-应用实例--applications",
+          "#1491-模同余关系--modular-congruence",
+          "#1492-集合的包含关系--set-inclusion",
+          "#1493-整除关系--divisibility-relation",
+          "#1494-等价关系在代数中的应用--equivalence-relations-in-algebra",
+          "#1495-序关系在计算机科学中的应用--order-relations-in-computer-science",
+          "#1496-等价关系在逻辑学中的应用--equivalence-relations-in-logic",
+          "#1497-关系在数据库理论中的应用--relations-in-database-theory",
+          "#1410-总结--summary",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 54.18493150684932,
+        "avg_paragraph_length": 6.083333333333333,
+        "complex_word_ratio": 0.33346503358356383,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.09720332577475435,
+        "formula_density": 10.34013605442177
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 740,
+        "mastery_probability": 0.015117157974300832,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 55.06321453817079,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有4个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均54.2字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\05-基数与序数-国际标准版.md",
+      "file_name": "05-基数与序数-国际标准版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.4444444444444444,
+        "theorem_count": 46,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#基数与序数理论---国际标准版--cardinal-and-ordinal-theory---international-standard-edition",
+          "#目录",
+          "#概述",
+          "#1-序数理论",
+          "#11-序数的定义",
+          "#12-序数的构造",
+          "#13-序数运算",
+          "#2-基数理论",
+          "#21-基数的定义",
+          "#22-基数比较",
+          "#23-阿列夫数",
+          "#24-基数运算",
+          "#25-连续统假设",
+          "#3-大基数理论",
+          "#31-不可达基数",
+          "#32-马洛基数",
+          "#33-可测基数",
+          "#34-紧致基数",
+          "#4-基数与序数的关系",
+          "#41-基数作为序数",
+          "#42-共尾性",
+          "#43-奇异基数假设",
+          "#5-形式化实现",
+          "#51-lean-4-实现",
+          "#52-haskell-实现",
+          "#6-参考文献--references",
+          "#经典教材--classic-textbooks",
+          "#现代教材--modern-textbooks",
+          "#前沿文献--frontier-literature",
+          "#在线资源--online-resources"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 68.07377049180327,
+        "avg_paragraph_length": 2.0,
+        "complex_word_ratio": 0.31158238172920066,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.41822957709482533,
+        "formula_density": 11.9779353821907
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 513,
+        "mastery_probability": 0.015760441292356184,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.25
+      },
+      "overall_score": 43.04747814587335,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有46个定理，0个证明）",
+        "缩短句子长度，提高可读性",
+        "增加不同类型的练习（证明、计算、应用等）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均68.1字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\05-基数与序数-增强版.md",
+      "file_name": "05-基数与序数-增强版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.5555555555555556,
+        "theorem_count": 28,
+        "proof_count": 0,
+        "example_count": 3,
+        "missing_elements": [
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#5-基数与序数--cardinals-and-ordinals",
+          "#目录",
+          "#51-概述--overview",
+          "#511-基数与序数概念体系",
+          "#512-无穷层次结构",
+          "#52-历史发展--historical-development",
+          "#521-基数与序数发展时间线",
+          "#522-重要人物贡献",
+          "#523-理论发展脉络",
+          "#53-基数理论--cardinal-theory",
+          "#531-等势关系",
+          "#532-基数定义",
+          "#533-基数运算",
+          "#534-基数比较",
+          "#54-序数理论--ordinal-theory",
+          "#541-良序集",
+          "#542-序数定义",
+          "#543-序数运算",
+          "#544-序数分类",
+          "#55-康托尔定理--cantors-theorems",
+          "#551-康托尔定理",
+          "#552-康托尔-伯恩斯坦定理",
+          "#553-对角线法",
+          "#56-选择公理--axiom-of-choice",
+          "#561-选择公理",
+          "#562-等价形式",
+          "#563-选择公理的影响",
+          "#57-连续统假设--continuum-hypothesis",
+          "#571-连续统假设",
+          "#572-广义连续统假设",
+          "#573-独立性结果",
+          "#58-应用实例--application-examples",
+          "#581-数学分析应用",
+          "#582-代数应用",
+          "#583-拓扑学应用",
+          "#584-计算机科学应用",
+          "#59-思维过程--thinking-process",
+          "#591-基数分析思维",
+          "#592-序数分析思维",
+          "#593-无穷思维过程",
+          "#510-总结--summary",
+          "#5101-核心要点",
+          "#5102-知识关联",
+          "#5103-进一步学习",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 46.6793893129771,
+        "avg_paragraph_length": 2.4716981132075473,
+        "complex_word_ratio": 0.27044025157232704,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.17069275304451986,
+        "formula_density": 10.381313635456179
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 237,
+        "mastery_probability": 0.049910161708923935,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 57.184495263903784,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有28个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均46.7字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\05-基数与序数-深化扩展版.md",
+      "file_name": "05-基数与序数-深化扩展版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3888888888888889,
+        "theorem_count": 78,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#基数与序数理论深化扩展版",
+          "#目录",
+          "#概述",
+          "#1-基数论深度理论",
+          "#11-基数的严格定义",
+          "#12-阿列夫数系统",
+          "#13-基数运算的深入理论",
+          "#14-基数不变量",
+          "#2-序数论深化",
+          "#21-序数的严格构造",
+          "#22-序数运算的深入理论",
+          "#23-极限序数与正则序数",
+          "#24-序数不变量",
+          "#3-选择公理与基数理论",
+          "#31-选择公理的等价形式",
+          "#32-选择公理与基数运算",
+          "#33-选择公理的独立性",
+          "#4-大基数理论深化",
+          "#41-大基数的层次结构",
+          "#42-大基数的一致性强度",
+          "#43-大基数与描述集合论",
+          "#5-基数与序数的高级关系",
+          "#51-共尾性与奇异基数",
+          "#52-基数不变量理论",
+          "#53-基数与序数的对偶性",
+          "#6-基数论在现代数学中的深层应用",
+          "#61-拓扑学中的基数应用",
+          "#62-代数中的基数应用",
+          "#63-分析学中的基数应用",
+          "#64-计算机科学中的基数应用",
+          "#7-形式化实现深化",
+          "#71-lean-4-深度实现",
+          "#72-haskell-高级实现",
+          "#73-rust-系统级实现",
+          "#8-历史发展与哲学思考",
+          "#81-历史发展脉络",
+          "#82-哲学问题探讨",
+          "#83-数学实在性问题",
+          "#9-前沿研究方向",
+          "#91-大基数公理系统",
+          "#92-基数与计算复杂性",
+          "#93-基数与量子计算",
+          "#10-总结与展望",
+          "#101-主要成果",
+          "#102-理论意义",
+          "#103-未来展望",
+          "#104-结论",
+          "#补充基数与序数的国际对齐与多表征精炼版",
+          "#a-国际对齐要点",
+          "#b-多表征",
+          "#c-示例练习"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 25.150724637681158,
+        "avg_paragraph_length": 1.7079207920792079,
+        "complex_word_ratio": 0.19137818419333769,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.516812673765934,
+        "formula_density": 0.10491528091066464
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 67,
+        "mastery_probability": 0.02622882022766616,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 52.13035300391836,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有78个定理，0个证明）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\05-基数与序数-深度扩展版.md",
+      "file_name": "05-基数与序数-深度扩展版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3333333333333333,
+        "theorem_count": 18,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#基数与序数-深度扩展版",
+          "#目录",
+          "#概述",
+          "#1-基数论深度理论",
+          "#11-基数的定义",
+          "#12-阿列夫数",
+          "#13-基数运算",
+          "#2-序数论",
+          "#21-序数的定义",
+          "#22-序数运算",
+          "#23-极限序数",
+          "#3-大基数理论",
+          "#31-不可达基数",
+          "#32-马洛基数",
+          "#33-弱紧致基数",
+          "#34-可测基数",
+          "#4-基数与序数的关系",
+          "#41-基数作为序数",
+          "#42-共尾性",
+          "#43-奇异基数假设",
+          "#5-基数论在数学各分支中的应用",
+          "#51-拓扑学中的应用",
+          "#52-代数中的应用",
+          "#53-分析学中的应用",
+          "#6-形式化实现",
+          "#61-lean-4-实现",
+          "#62-haskell-实现",
+          "#63-rust-实现",
+          "#7-历史发展与现代应用",
+          "#71-历史发展",
+          "#72-现代应用",
+          "#8-前沿研究方向",
+          "#81-大基数公理",
+          "#82-基数不变量",
+          "#83-基数与计算",
+          "#9-基数论的哲学问题",
+          "#91-连续统假设",
+          "#92-大基数的存在性",
+          "#93-基数与实在性",
+          "#10-总结",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 23.24878048780488,
+        "avg_paragraph_length": 1.7982456140350878,
+        "complex_word_ratio": 0.12035010940919037,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.28200056513139304,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 23,
+        "mastery_probability": 0.07064142413111048,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 49.55089400047711,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有18个定理，0个证明）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\05-基数与序数.md",
+      "file_name": "05-基数与序数.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.7222222222222222,
+        "theorem_count": 26,
+        "proof_count": 0,
+        "example_count": 8,
+        "missing_elements": [
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#15-基数与序数--cardinal-and-ordinal-numbers",
+          "#目录",
+          "#151-概述--overview-编号-b010501",
+          "#152-基数理论--cardinal-theory-编号-b010502",
+          "#1521-等势关系--equinumerosity",
+          "#1522-基数的定义--definition-of-cardinal",
+          "#-概念深度分析基数--deep-concept-analysis-cardinal-number",
+          "#1-概念内涵--concept-intension",
+          "#11-本质属性--essential-properties",
+          "#12-定义方式--definition-methods",
+          "#13-条件分析--condition-analysis",
+          "#2-概念外延--concept-extension",
+          "#21-直接外延--direct-extension",
+          "#22-间接外延--indirect-extension",
+          "#23-边界情况--boundary-cases",
+          "#24-反例--counterexamples",
+          "#3-概念属性--concept-properties",
+          "#31-固有属性--intrinsic-properties",
+          "#32-关系属性--relational-properties",
+          "#33-功能属性--functional-properties",
+          "#4-概念关系--concept-relations",
+          "#41-层次关系--hierarchical-relations",
+          "#42-并列关系--coordinate-relations",
+          "#43-交叉关系--intersection-relations",
+          "#44-对立关系--opposition-relations",
+          "#5-概念应用--concept-applications",
+          "#51-应用领域--application-domains",
+          "#52-应用场景--application-scenarios",
+          "#53-应用价值--application-value",
+          "#6-概念发展--concept-development",
+          "#61-历史发展--historical-development",
+          "#62-现代发展--modern-development",
+          "#7-形式化表述--formal-representation",
+          "#71-数学符号--mathematical-notation",
+          "#72-形式化定义--formal-definition",
+          "#73-形式化实现--formal-implementation",
+          "#1523-基数的比较--comparison-of-cardinals",
+          "#1524-基数的运算--operations-on-cardinals",
+          "#153-康托尔定理--cantors-theorem-编号-b010503",
+          "#1531-幂集的基数--cardinality-of-power-set",
+          "#1532-连续统假设--continuum-hypothesis",
+          "#154-序数理论--ordinal-theory-编号-b010504",
+          "#1541-良序集--well-ordered-sets",
+          "#1542-序数的定义--definition-of-ordinal",
+          "#-概念深度分析序数--deep-concept-analysis-ordinal-number",
+          "#1-概念内涵--concept-intension-1",
+          "#11-本质属性--essential-properties-1",
+          "#12-定义方式--definition-methods-1",
+          "#13-条件分析--condition-analysis-1",
+          "#2-概念外延--concept-extension-1",
+          "#21-直接外延--direct-extension-1",
+          "#22-间接外延--indirect-extension-1",
+          "#23-边界情况--boundary-cases-1",
+          "#24-反例--counterexamples-1",
+          "#3-概念属性--concept-properties-1",
+          "#31-固有属性--intrinsic-properties-1",
+          "#32-关系属性--relational-properties-1",
+          "#33-功能属性--functional-properties-1",
+          "#4-概念关系--concept-relations-1",
+          "#41-层次关系--hierarchical-relations-1",
+          "#42-并列关系--coordinate-relations-1",
+          "#43-交叉关系--intersection-relations-1",
+          "#44-对立关系--opposition-relations-1",
+          "#5-概念应用--concept-applications-1",
+          "#51-应用领域--application-domains-1",
+          "#52-应用场景--application-scenarios-1",
+          "#53-应用价值--application-value-1",
+          "#6-概念发展--concept-development-1",
+          "#61-历史发展--historical-development-1",
+          "#62-现代发展--modern-development-1",
+          "#7-形式化表述--formal-representation-1",
+          "#71-数学符号--mathematical-notation-1",
+          "#72-形式化定义--formal-definition-1",
+          "#73-形式化实现--formal-implementation-1",
+          "#1543-序数的构造--construction-of-ordinals",
+          "#1544-序数的运算--operations-on-ordinals",
+          "#155-基数与序数的关系--relationship-between-cardinals-and-ordinals-编号-b010505",
+          "#1551-初始序数--initial-ordinals",
+          "#1552-阿列夫数--aleph-numbers",
+          "#156-选择公理与基数理论--axiom-of-choice-and-cardinal-theory-编号-b010506",
+          "#1561-选择公理--axiom-of-choice",
+          "#1562-选择公理的等价形式--equivalent-forms-of-ac",
+          "#1563-基数理论中的选择公理--ac-in-cardinal-theory",
+          "#157-形式化实现--formal-implementation-编号-b010507",
+          "#1571-lean-4-实现--lean-4-implementation",
+          "#1572-haskell-实现--haskell-implementation",
+          "#158-应用实例--applications-编号-b010508",
+          "#1581-可数集--countable-sets",
+          "#1582-不可数集--uncountable-sets",
+          "#1583-序数在集合论中的应用--applications-of-ordinals",
+          "#1584-基数在测度论中的应用--applications-of-cardinals-in-measure-theory",
+          "#1585-序数在拓扑学中的应用--applications-of-ordinals-in-topology",
+          "#1586-基数在模型论中的应用--applications-of-cardinals-in-model-theory",
+          "#1587-序数在类型论中的应用--applications-of-ordinals-in-type-theory",
+          "#1588-基数在密码学中的应用--applications-of-cardinals-in-cryptography",
+          "#159-总结--summary-编号-b010509",
+          "#术语对照表--terminology-table"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 53.49662162162162,
+        "avg_paragraph_length": 6.040816326530612,
+        "complex_word_ratio": 0.356457242582897,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.12841969745735435,
+        "formula_density": 10.357842993826258
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.6666666666666666,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 731,
+        "mastery_probability": 0.014629721742692454,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 55.84930786602751,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有26个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均53.5字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\FormalMath集合论项目100%完成报告-2025年1月.md",
+      "file_name": "FormalMath集合论项目100%完成报告-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": false,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.16666666666666666,
+        "theorem_count": 0,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "定理证明",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 66.76315789473684,
+        "avg_paragraph_length": 0.48717948717948717,
+        "complex_word_ratio": 0.42424242424242425,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 8,
+        "mastery_probability": 0.19149751053236308,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 54.55170156354367,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均66.8字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\FormalMath集合论项目最终完成报告-2025年1月.md",
+      "file_name": "FormalMath集合论项目最终完成报告-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2222222222222222,
+        "theorem_count": 0,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 79.2,
+        "avg_paragraph_length": 0.46875,
+        "complex_word_ratio": 0.38786279683377306,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 12,
+        "mastery_probability": 0.13694878115584772,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 57.51469764894622,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均79.2字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\Lean4形式化实现-基数序数理论.md",
+      "file_name": "Lean4形式化实现-基数序数理论.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.5,
+        "theorem_count": 51,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#lean-4形式化实现---基数序数理论",
+          "#目录",
+          "#-概述",
+          "#-实现目标",
+          "#核心目标",
+          "#质量标准",
+          "#-基础定义",
+          "#基数定义",
+          "#序数定义",
+          "#-运算实现",
+          "#基数运算",
+          "#序数运算",
+          "#-定理证明",
+          "#基数定理",
+          "#序数定理",
+          "#-选择公理",
+          "#️-大基数理论",
+          "#-应用实现",
+          "#类型论应用",
+          "#程序验证应用",
+          "#模型论应用",
+          "#-测试和验证",
+          "#单元测试",
+          "#性能测试",
+          "#-质量评估",
+          "#代码质量",
+          "#功能完整性",
+          "#-使用指南",
+          "#基本使用",
+          "#高级使用",
+          "#-总结",
+          "#主要成果",
+          "#技术特点",
+          "#教育价值"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 108.57142857142857,
+        "avg_paragraph_length": 0.45652173913043476,
+        "complex_word_ratio": 0.13991769547325103,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.8287570121051078,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 45,
+        "mastery_probability": 0.022143489813994683,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 46.113548935408836,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有51个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均108.6字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\Lean4形式化实现-集合论基础-国际标准版.md",
+      "file_name": "Lean4形式化实现-集合论基础-国际标准版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.4444444444444444,
+        "theorem_count": 35,
+        "proof_count": 0,
+        "example_count": 15,
+        "missing_elements": [
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#概述",
+          "#1-基础定义",
+          "#2-zfc公理系统",
+          "#3-集合运算",
+          "#4-关系与函数",
+          "#5-序数与基数",
+          "#6-性能测试",
+          "#7-验证测试"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 40.07692307692308,
+        "avg_paragraph_length": 0.9629629629629629,
+        "complex_word_ratio": 0.2926829268292683,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.9174457177322075,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 44,
+        "mastery_probability": 0.022617611580217127,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.5
+      },
+      "overall_score": 63.78152780673106,
+      "quality_level": "ACCEPTABLE",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有35个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均40.1字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\Lean4形式化实现-集合论基础.md",
+      "file_name": "Lean4形式化实现-集合论基础.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.4444444444444444,
+        "theorem_count": 30,
+        "proof_count": 0,
+        "example_count": 13,
+        "missing_elements": [
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论基础---lean4形式化实现--set-theory-foundation---lean4-formal-implementation",
+          "#目录",
+          "#-概述--overview",
+          "#️-1-基础定义--basic-definitions",
+          "#11-集合类型定义--set-type-definition",
+          "#12-基本集合定义--basic-set-definitions",
+          "#-2-集合运算--set-operations",
+          "#21-基本运算--basic-operations",
+          "#22-高级运算--advanced-operations",
+          "#-3-集合关系--set-relations",
+          "#31-包含关系--inclusion-relations",
+          "#32-相等关系--equality-relations",
+          "#-4-集合公理--set-axioms",
+          "#41-zfc公理实现--zfc-axiom-implementation",
+          "#42-分离公理模式--axiom-schema-of-separation",
+          "#-5-重要定理--important-theorems",
+          "#51-德摩根律--de-morgans-laws",
+          "#52-分配律--distributive-laws",
+          "#53-吸收律--absorption-laws",
+          "#-6-验证测试--verification-tests",
+          "#61-编译测试--compilation-tests",
+          "#62-证明验证--proof-verification",
+          "#-7-性能测试--performance-tests",
+          "#71-计算性能--computational-performance",
+          "#-8-应用实例--application-examples",
+          "#81-实际问题解决--real-problem-solving",
+          "#-9-总结--summary",
+          "#91-实现成果--implementation-achievements",
+          "#92-质量保证--quality-assurance"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 62.193548387096776,
+        "avg_paragraph_length": 1.5121951219512195,
+        "complex_word_ratio": 0.3169734151329243,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.784595228997216,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 61,
+        "mastery_probability": 0.027294066269992905,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 49.37935424994904,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有30个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均62.2字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\关系论专门扩展总结.md",
+      "file_name": "关系论专门扩展总结.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": true,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2777777777777778,
+        "theorem_count": 6,
+        "proof_count": 0,
+        "example_count": 1,
+        "missing_elements": []
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#关系论专门扩展总结",
+          "#目录",
+          "#项目概述",
+          "#国际标准对标",
+          "#对标机构",
+          "#核心概念对齐",
+          "#关系论的核心构造性内容",
+          "#1-关系的构造性定义",
+          "#11-二元关系-binary-relation",
+          "#12-关系的自指语义",
+          "#2-关系代数系统",
+          "#21-基本运算",
+          "#22-代数结构",
+          "#3-关系的性质分类",
+          "#31-基本性质",
+          "#32-关系类型",
+          "#4-关系闭包理论",
+          "#41-闭包定义",
+          "#42-算法实现",
+          "#5-关系的操作和构造",
+          "#51-基本操作",
+          "#52-关系分解",
+          "#6-关系的自指语义",
+          "#61-自指关系",
+          "#62-不动点理论",
+          "#63-归纳定义",
+          "#7-关系的形式化表示",
+          "#71-逻辑表示",
+          "#72-代数表示",
+          "#73-范畴表示",
+          "#8-关系的计算复杂性",
+          "#81-性质验证",
+          "#82-操作复杂度",
+          "#83-分解问题",
+          "#多表征系统实现",
+          "#1-代数表征",
+          "#2-几何表征",
+          "#3-组合表征",
+          "#4-拓扑表征",
+          "#5-批判性论证",
+          "#51-本体论层面的批判",
+          "#52-认识论层面的批判",
+          "#53-方法论层面的批判",
+          "#54-伦理学层面的批判",
+          "#6-历史发展",
+          "#61-历史发展时间线",
+          "#62-重要历史人物及其贡献",
+          "#7-思维导图",
+          "#71-关系论核心概念思维导图",
+          "#72-关系论发展历程思维导图",
+          "#应用领域",
+          "#1-集合论",
+          "#2-序理论",
+          "#3-图论",
+          "#4-代数",
+          "#5-逻辑学",
+          "#6-计算机科学",
+          "#现代发展",
+          "#1-范畴化",
+          "#2-高阶理论",
+          "#3-量子关系",
+          "#4-机器学习",
+          "#质量保证",
+          "#1-学术严谨性",
+          "#2-国际标准对齐",
+          "#3-实用性",
+          "#4-教育价值",
+          "#总结",
+          "#多表征演示代码",
+          "#python实现示例",
+          "#术语对照表--terminology-table",
+          "#工作完成总结",
+          "#已完成的工作",
+          "#质量保证1",
+          "#文件一致性检查",
+          "#最终成果"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 69.08108108108108,
+        "avg_paragraph_length": 0.9296482412060302,
+        "complex_word_ratio": 0.21756601607347875,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.41444543828264757,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 74,
+        "mastery_probability": 0.022361359570661897,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 52.21747560484654,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "为所有定理提供证明（当前有6个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均69.1字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\基数序数理论-深度扩展版.md",
+      "file_name": "基数序数理论-深度扩展版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.5,
+        "theorem_count": 23,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#基数序数理论---深度扩展版",
+          "#目录",
+          "#-概述",
+          "#-学习目标",
+          "#核心目标",
+          "#质量标准",
+          "#-理论基础",
+          "#基数理论",
+          "#基数定义",
+          "#基数运算",
+          "#连续统假设",
+          "#序数理论",
+          "#序数定义",
+          "#序数运算",
+          "#选择公理",
+          "#选择公理的形式",
+          "#广义连续统假设",
+          "#构造性宇宙",
+          "#大基数理论",
+          "#不可达基数",
+          "#马洛基数",
+          "#弱紧致基数",
+          "#集合论模型",
+          "#内模型",
+          "#外模型",
+          "#-形式化实现",
+          "#lean-4实现",
+          "#haskell实现",
+          "#-应用案例",
+          "#计算机科学应用",
+          "#类型论应用",
+          "#程序验证应用",
+          "#逻辑学应用",
+          "#模型论应用",
+          "#证明论应用",
+          "#哲学应用",
+          "#数学哲学应用",
+          "#逻辑哲学应用",
+          "#经济学应用",
+          "#选择理论应用",
+          "#博弈论应用",
+          "#物理学应用",
+          "#量子力学应用",
+          "#相对论应用",
+          "#-质量评估",
+          "#完成度评估",
+          "#质量标准评估",
+          "#-总结",
+          "#主要成果",
+          "#创新点",
+          "#教育价值"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 49.10606060606061,
+        "avg_paragraph_length": 0.8761061946902655,
+        "complex_word_ratio": 0.15090543259557343,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.29399051868377024,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 47,
+        "mastery_probability": 0.03485778025655326,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 47.254503821894446,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有23个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均49.1字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\基数序数理论应用案例.md",
+      "file_name": "基数序数理论应用案例.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3888888888888889,
+        "theorem_count": 0,
+        "proof_count": 1,
+        "example_count": 20,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 2,
+        "citation_errors": 0,
+        "broken_links": [
+          "#基数序数理论应用案例",
+          "#目录",
+          "#-概述",
+          "#-应用目标",
+          "#核心目标",
+          "#质量标准",
+          "#-计算机科学应用",
+          "#案例1类型论中的基数应用",
+          "#案例2程序终止性证明",
+          "#-逻辑学应用",
+          "#案例3模型论中的基数应用",
+          "#案例4证明论中的序数应用",
+          "#️-哲学应用",
+          "#案例5数学哲学中的基数应用",
+          "#案例6逻辑哲学中的序数应用",
+          "#-经济学应用",
+          "#案例7选择理论中的基数应用",
+          "#案例8博弈论中的序数应用",
+          "#️-物理学应用",
+          "#案例9量子力学中的基数应用",
+          "#案例10相对论中的序数应用",
+          "#-质量评估",
+          "#应用案例评估",
+          "#质量标准评估",
+          "#-总结",
+          "#主要成果",
+          "#创新点",
+          "#教育价值"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 57.95,
+        "avg_paragraph_length": 0.7272727272727273,
+        "complex_word_ratio": 0.39606126914660833,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.7242566869475376,
+        "formula_density": 1.0331764435770865
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 94,
+        "mastery_probability": 0.028699345654919068,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 39.8086409561209,
+      "quality_level": "POOR",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "修复2处公式语法错误",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "accuracy",
+          "severity": "high",
+          "description": "发现2处公式语法错误",
+          "suggestion": "检查公式中的括号匹配"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均58.0字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\基数序数理论证明深化-2025年1月.md",
+      "file_name": "基数序数理论证明深化-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.4444444444444444,
+        "theorem_count": 23,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 102.2258064516129,
+        "avg_paragraph_length": 1.3478260869565217,
+        "complex_word_ratio": 0.3333333333333333,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.11292008961911874,
+        "formula_density": 18.371919342793127
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 244,
+        "mastery_probability": 0.04480955937266617,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.5
+      },
+      "overall_score": 65.15848094471284,
+      "quality_level": "ACCEPTABLE",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有23个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均102.2字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\术语修正说明.md",
+      "file_name": "术语修正说明.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": false,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.16666666666666666,
+        "theorem_count": 0,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "定理证明",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#术语修正说明",
+          "#目录",
+          "#修正内容",
+          "#修正前",
+          "#修正后",
+          "#修正的文件",
+          "#1-主要关系论文件",
+          "#2-zfc公理体系文件",
+          "#修正的具体位置",
+          "#1-关系性质定义",
+          "#2-关系类型定义",
+          "#3-思维导图",
+          "#4-python代码变量名",
+          "#5-证明文本",
+          "#术语一致性说明",
+          "#英文术语保持不变",
+          "#中文术语统一",
+          "#修正理由",
+          "#影响范围",
+          "#验证结果"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 61.125,
+        "avg_paragraph_length": 0.5581395348837209,
+        "complex_word_ratio": 0.2413793103448276,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.29213483146067415,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 7,
+        "mastery_probability": 0.14044943820224717,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.25
+      },
+      "overall_score": 31.007406293623216,
+      "quality_level": "POOR",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "缩短句子长度，提高可读性",
+        "增加不同类型的练习（证明、计算、应用等）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均61.1字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\术语标准化词典-集合论.md",
+      "file_name": "术语标准化词典-集合论.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": false,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2777777777777778,
+        "theorem_count": 0,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "定理证明",
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论术语标准化词典",
+          "#目录",
+          "#概述",
+          "#1-基础概念术语",
+          "#2-zfc公理系统术语",
+          "#3-集合运算术语",
+          "#4-关系与函数术语",
+          "#5-基数与序数术语",
+          "#6-应用领域术语",
+          "#7-形式化术语",
+          "#8-参考文献",
+          "#经典教材",
+          "#现代教材",
+          "#前沿文献",
+          "#中文教材"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 83.31428571428572,
+        "avg_paragraph_length": 2.1875,
+        "complex_word_ratio": 0.2493368700265252,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 19,
+        "mastery_probability": 0.05029337803855826,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 42.552541793561915,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均83.3字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论交互式内容增强-2025年1月.md",
+      "file_name": "集合论交互式内容增强-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": false,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.0,
+        "theorem_count": 0,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "定理证明",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 3,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 43.916666666666664,
+        "avg_paragraph_length": 0.5454545454545454,
+        "complex_word_ratio": 0.3389830508474576,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.9267639576917928,
+        "formula_density": 0.4016601954746285
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 30,
+        "mastery_probability": 0.06694336591243807,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.5
+      },
+      "overall_score": 51.630118986474926,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "修复3处公式语法错误",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "accuracy",
+          "severity": "high",
+          "description": "发现3处公式语法错误",
+          "suggestion": "检查公式中的括号匹配"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均43.9字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论代码质量提升报告-2025年1月.md",
+      "file_name": "集合论代码质量提升报告-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3333333333333333,
+        "theorem_count": 5,
+        "proof_count": 0,
+        "example_count": 9,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 62.51428571428571,
+        "avg_paragraph_length": 0.4861111111111111,
+        "complex_word_ratio": 0.20155038759689922,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.2509188105579686,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 9,
+        "mastery_probability": 0.1670564650851988,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 65.99927125630614,
+      "quality_level": "ACCEPTABLE",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有5个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均62.5字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论前沿内容完善-2025年1月.md",
+      "file_name": "集合论前沿内容完善-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": false,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2222222222222222,
+        "theorem_count": 7,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "定理证明",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 44.56521739130435,
+        "avg_paragraph_length": 0.6052631578947368,
+        "complex_word_ratio": 0.3805309734513274,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.6062962962962963,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 9,
+        "mastery_probability": 0.18518518518518517,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.5
+      },
+      "overall_score": 63.32475072258761,
+      "quality_level": "ACCEPTABLE",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有7个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均44.6字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论单元测试增强-2025年1月.md",
+      "file_name": "集合论单元测试增强-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": false,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.05555555555555555,
+        "theorem_count": 0,
+        "proof_count": 0,
+        "example_count": 12,
+        "missing_elements": [
+          "概念定义",
+          "定理证明",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 35.357142857142854,
+        "avg_paragraph_length": 0.7368421052631579,
+        "complex_word_ratio": 0.19047619047619047,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.7686134641105662,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 7,
+        "mastery_probability": 0.13374944271065536,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.25
+      },
+      "overall_score": 58.87393251647638,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "缩短句子长度，提高可读性",
+        "增加不同类型的练习（证明、计算、应用等）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均35.4字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论同行评议报告-2025年1月.md",
+      "file_name": "集合论同行评议报告-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3888888888888889,
+        "theorem_count": 13,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论同行评议报告---2025年1月",
+          "#目录",
+          "#概述",
+          "#1-评议专家团队",
+          "#11-核心评议专家",
+          "#专家1-prof-thomas-jech",
+          "#专家2-prof-kenneth-kunen",
+          "#专家3-prof-akihiro-kanamori",
+          "#专家4-prof-joan-bagaria",
+          "#专家5-prof-sy-friedman",
+          "#12-辅助评议专家",
+          "#专家6-prof-hugh-woodin",
+          "#专家7-prof-saharon-shelah",
+          "#专家8-prof-ronald-jensen",
+          "#2-评议内容",
+          "#21-zfc公理系统评议",
+          "#22-基数理论评议",
+          "#23-形式化实现评议",
+          "#24-应用案例评议",
+          "#25-教育应用评议",
+          "#3-评议结果",
+          "#31-总体评分",
+          "#32-质量等级",
+          "#33-专家共识",
+          "#4-改进建议",
+          "#41-理论深化建议",
+          "#prof-thomas-jech建议",
+          "#prof-kenneth-kunen建议",
+          "#42-技术改进建议",
+          "#prof-joan-bagaria建议",
+          "#prof-sy-friedman建议",
+          "#43-教育优化建议",
+          "#prof-akihiro-kanamori建议",
+          "#5-专家认可",
+          "#51-学术认可",
+          "#52-教学认可",
+          "#53-研究认可",
+          "#总结",
+          "#评议结论",
+          "#专家建议",
+          "#最终推荐"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 33.05844155844156,
+        "avg_paragraph_length": 1.673913043478261,
+        "complex_word_ratio": 0.19540229885057472,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.25056465273856576,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 23,
+        "mastery_probability": 0.07058159232072275,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 46.97678073541392,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有13个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论国际标准对齐报告-2025年1月.md",
+      "file_name": "集合论国际标准对齐报告-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2777777777777778,
+        "theorem_count": 18,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#概述",
+          "#1-国际名校课程标准",
+          "#2-内容对齐分析",
+          "#3-质量标准对比",
+          "#4-对齐度评估",
+          "#5-改进建议"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 43.19230769230769,
+        "avg_paragraph_length": 0.6419753086419753,
+        "complex_word_ratio": 0.21107266435986158,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.7615589198036007,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 32,
+        "mastery_probability": 0.051145662847790506,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 65.25985740198543,
+      "quality_level": "ACCEPTABLE",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有18个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均43.2字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论学习路径优化-2025年1月.md",
+      "file_name": "集合论学习路径优化-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2222222222222222,
+        "theorem_count": 14,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 44.80769230769231,
+        "avg_paragraph_length": 0.5531914893617021,
+        "complex_word_ratio": 0.1925925925925926,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.8375504710632571,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 24,
+        "mastery_probability": 0.06729475100942127,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 69.80662898304743,
+      "quality_level": "ACCEPTABLE",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有14个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均44.8字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论应用案例-深度扩展版.md",
+      "file_name": "集合论应用案例-深度扩展版.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3888888888888889,
+        "theorem_count": 3,
+        "proof_count": 0,
+        "example_count": 2,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论应用案例-深度扩展版",
+          "#目录",
+          "#-概述",
+          "#-1-计算机科学深度应用",
+          "#11-数据库理论中的集合论",
+          "#12-人工智能中的集合论",
+          "#13-软件工程中的集合论",
+          "#-2-逻辑学深度应用",
+          "#21-模型论中的集合论",
+          "#22-证明论中的集合论",
+          "#-3-哲学深度应用",
+          "#31-数学哲学中的集合论",
+          "#32-逻辑哲学中的集合论",
+          "#-4-经济学深度应用",
+          "#41-微观经济学中的集合论",
+          "#42-博弈论中的集合论",
+          "#️-5-物理学深度应用",
+          "#51-量子力学中的集合论",
+          "#52-相对论中的集合论",
+          "#-6-质量评估与改进建议",
+          "#61-应用广度评估",
+          "#62-技术实现评估",
+          "#63-理论深度评估",
+          "#-7-后续发展计划",
+          "#71-短期目标1-2个月",
+          "#72-中期目标3-6个月",
+          "#73-长期目标6-12个月"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 37.95238095238095,
+        "avg_paragraph_length": 0.9767441860465116,
+        "complex_word_ratio": 0.3638888888888889,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.7832263086203541,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 51,
+        "mastery_probability": 0.03243173120581177,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 46.93078831877281,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有3个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均38.0字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论应用案例库-深化扩展版.md",
+      "file_name": "集合论应用案例库-深化扩展版.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3333333333333333,
+        "theorem_count": 11,
+        "proof_count": 2,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论应用案例库---深化扩展版",
+          "#目录",
+          "#概述",
+          "#1-计算机科学应用",
+          "#11-数据库理论",
+          "#12-算法分析",
+          "#13-编程语言理论",
+          "#14-人工智能",
+          "#2-逻辑学应用",
+          "#21-模型论",
+          "#22-证明论",
+          "#23-递归论",
+          "#24-描述复杂性",
+          "#3-哲学应用",
+          "#31-数学哲学",
+          "#32-语言哲学",
+          "#33-认知科学",
+          "#34-形而上学",
+          "#4-数学应用",
+          "#41-拓扑学",
+          "#42-代数",
+          "#43-分析学",
+          "#44-组合数学",
+          "#5-形式化实现",
+          "#51-python实现",
+          "#52-haskell实现",
+          "#53-coq实现",
+          "#6-总结与展望",
+          "#61-主要成果",
+          "#62-应用价值",
+          "#63-未来展望",
+          "#64-结论"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 29.411428571428573,
+        "avg_paragraph_length": 1.2152777777777777,
+        "complex_word_ratio": 0.17676767676767677,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.7590970049172999,
+        "formula_density": 0.7152436298614215
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 106,
+        "mastery_probability": 0.022351363433169423,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 50.384930375180375,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有11个定理，2个证明）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论应用案例扩展-2025年1月.md",
+      "file_name": "集合论应用案例扩展-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": false,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.0,
+        "theorem_count": 4,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "定理证明",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 70.58333333333333,
+        "avg_paragraph_length": 0.35294117647058826,
+        "complex_word_ratio": 0.3163265306122449,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.6307495741056218,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 7,
+        "mastery_probability": 0.21294718909710392,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.5
+      },
+      "overall_score": 55.67987194877951,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有4个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均70.6字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论持续改进机制-2025年1月.md",
+      "file_name": "集合论持续改进机制-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": false,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.1111111111111111,
+        "theorem_count": 0,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "定理证明",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 86.25,
+        "avg_paragraph_length": 0.4745762711864407,
+        "complex_word_ratio": 0.0967741935483871,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 8,
+        "mastery_probability": 0.203334688897926,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 56.27756093527462,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少定理证明",
+          "suggestion": "请添加定理证明部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均86.2字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论改进执行计划-2025年1月.md",
+      "file_name": "集合论改进执行计划-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2222222222222222,
+        "theorem_count": 2,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#概述",
+          "#第一阶段基础理论修正1-2个月",
+          "#第二阶段形式化实现改进2-3个月",
+          "#第三阶段应用案例深化3-4个月",
+          "#第四阶段质量保证和验证1-2个月",
+          "#进度跟踪"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 62.90909090909091,
+        "avg_paragraph_length": 0.5445544554455446,
+        "complex_word_ratio": 0.2589928057553957,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 11,
+        "mastery_probability": 0.14068655036578503,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 53.90224254839553,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有2个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均62.9字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论教育应用优化-国际标准版.md",
+      "file_name": "集合论教育应用优化-国际标准版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.4444444444444444,
+        "theorem_count": 9,
+        "proof_count": 1,
+        "example_count": 2,
+        "missing_elements": [
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#概述",
+          "#1-学习路径设计",
+          "#2-练习题和解答",
+          "#3-教学建议",
+          "#4-交互式内容",
+          "#5-评估体系"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 50.09090909090909,
+        "avg_paragraph_length": 0.4489795918367347,
+        "complex_word_ratio": 0.13013698630136986,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.8492052980132451,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 50,
+        "mastery_probability": 0.033112582781456956,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 71.3902255399646,
+      "quality_level": "ACCEPTABLE",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有9个定理，1个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均50.1字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论真实应用案例库-国际标准版.md",
+      "file_name": "集合论真实应用案例库-国际标准版.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.16666666666666666,
+        "theorem_count": 4,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#概述",
+          "#1-计算机科学应用",
+          "#2-逻辑学应用",
+          "#3-数学应用",
+          "#4-参考文献"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 63.69565217391305,
+        "avg_paragraph_length": 0.6571428571428571,
+        "complex_word_ratio": 0.3641304347826087,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.5637777137921106,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 11,
+        "mastery_probability": 0.14396775122372588,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 57.488998159650336,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有4个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均63.7字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论真实应用案例库-深化扩展版.md",
+      "file_name": "集合论真实应用案例库-深化扩展版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": true,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3888888888888889,
+        "theorem_count": 6,
+        "proof_count": 1,
+        "example_count": 0,
+        "missing_elements": [
+          "示例"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论真实应用案例库---深化扩展版",
+          "#目录",
+          "#概述",
+          "#1-计算机科学应用",
+          "#11-数据库理论",
+          "#12-算法分析",
+          "#13-编程语言理论",
+          "#14-人工智能应用",
+          "#2-逻辑学应用",
+          "#21-模型论",
+          "#22-证明论",
+          "#3-数学应用",
+          "#31-拓扑学",
+          "#32-代数",
+          "#33-分析学",
+          "#4-哲学应用",
+          "#41-数学哲学",
+          "#42-语言哲学",
+          "#5-认知科学应用",
+          "#51-认知建模",
+          "#6-实际项目案例",
+          "#61-google搜索算法",
+          "#62-facebook社交网络",
+          "#63-amazon推荐系统",
+          "#总结",
+          "#应用价值",
+          "#未来展望"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 84.37254901960785,
+        "avg_paragraph_length": 0.4180327868852459,
+        "complex_word_ratio": 0.23669724770642203,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.5847336941042438,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 35,
+        "mastery_probability": 0.028481913984619765,
+        "prerequisite_clarity": 0.0,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 42.334327866995686,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有6个定理，1个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均84.4字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论练习题系统-2025年1月.md",
+      "file_name": "集合论练习题系统-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3333333333333333,
+        "theorem_count": 7,
+        "proof_count": 3,
+        "example_count": 1,
+        "missing_elements": [
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 31.392857142857142,
+        "avg_paragraph_length": 0.7777777777777778,
+        "complex_word_ratio": 0.14925373134328357,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.680939226519337,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.3333333333333333,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "intermediate",
+        "estimated_study_time": 9,
+        "mastery_probability": 0.17265193370165746,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 80.34399233988786,
+      "quality_level": "GOOD",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有7个定理，3个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论证明细节完善-2025年1月.md",
+      "file_name": "集合论证明细节完善-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.3333333333333333,
+        "theorem_count": 12,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 47.416666666666664,
+        "avg_paragraph_length": 0.5454545454545454,
+        "complex_word_ratio": 0.3870967741935484,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.6432465172622653,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 5,
+        "mastery_probability": 0.18170805572380375,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.25
+      },
+      "overall_score": 62.905463234495485,
+      "quality_level": "ACCEPTABLE",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有12个定理，0个证明）",
+        "缩短句子长度，提高可读性",
+        "增加不同类型的练习（证明、计算、应用等）"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均47.4字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论质量评估报告-2025年1月-更新版.md",
+      "file_name": "集合论质量评估报告-2025年1月-更新版.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2777777777777778,
+        "theorem_count": 1,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#概述",
+          "#1-最新改进成果总结",
+          "#2-质量评估结果",
+          "#3-国际标准对齐情况",
+          "#4-改进建议",
+          "#5-后续计划"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 62.375,
+        "avg_paragraph_length": 0.8,
+        "complex_word_ratio": 0.21325051759834368,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 13,
+        "mastery_probability": 0.1223091976516634,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 57.51919235488076,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有1个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均62.4字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论质量评估报告-2025年1月-最终版.md",
+      "file_name": "集合论质量评估报告-2025年1月-最终版.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2777777777777778,
+        "theorem_count": 1,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#概述",
+          "#1-最终改进成果总结",
+          "#2-质量评估结果",
+          "#3-国际标准对齐情况",
+          "#4-项目完成度评估",
+          "#5-未来发展规划"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 85.640625,
+        "avg_paragraph_length": 0.7111111111111111,
+        "complex_word_ratio": 0.21238938053097345,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": false,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 18,
+        "mastery_probability": 0.08970218873340509,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 54.845859281110016,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有1个定理，0个证明）",
+        "缩短句子长度，提高可读性",
+        "添加关键术语的英文对照"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均85.6字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论质量评估报告-2025年1月.md",
+      "file_name": "集合论质量评估报告-2025年1月.md",
+      "completeness": {
+        "has_concept_definition": false,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.2777777777777778,
+        "theorem_count": 1,
+        "proof_count": 0,
+        "example_count": 0,
+        "missing_elements": [
+          "概念定义",
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#概述",
+          "#1-改进成果总结",
+          "#2-质量评估结果",
+          "#3-国际标准对齐情况",
+          "#4-改进建议",
+          "#5-后续计划"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 58.171875,
+        "avg_paragraph_length": 0.8,
+        "complex_word_ratio": 0.18461538461538463,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.0,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 12,
+        "mastery_probability": 0.13092432573972243,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 0.75
+      },
+      "overall_score": 58.22585618471035,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "添加清晰的概念定义部分",
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有1个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少概念定义",
+          "suggestion": "请添加概念定义部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均58.2字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    },
+    {
+      "file_path": "G:\\_src\\FormalMath\\docs\\01-基础数学\\集合论\\集合论跨学科应用深化-国际标准版.md",
+      "file_name": "集合论跨学科应用深化-国际标准版.md",
+      "completeness": {
+        "has_concept_definition": true,
+        "has_theorem_proof": true,
+        "has_examples": false,
+        "has_references": false,
+        "has_msc_code": true,
+        "concept_coverage_score": 0.5,
+        "theorem_count": 11,
+        "proof_count": 0,
+        "example_count": 4,
+        "missing_elements": [
+          "示例",
+          "参考文献"
+        ]
+      },
+      "accuracy": {
+        "math_formula_syntax_errors": 0,
+        "citation_errors": 0,
+        "broken_links": [
+          "#集合论跨学科应用深化---国际标准版",
+          "#目录",
+          "#概述",
+          "#1-哲学深度应用",
+          "#11-数学哲学基础",
+          "#12-语言哲学应用",
+          "#13-形而上学应用",
+          "#2-认知科学深度应用",
+          "#21-概念形成理论",
+          "#22-分类认知",
+          "#23-学习理论",
+          "#3-计算机科学深度应用",
+          "#31-人工智能基础",
+          "#32-数据库理论深化",
+          "#33-编程语言理论",
+          "#4-语言学深度应用",
+          "#41-形式语义学",
+          "#42-句法学",
+          "#5-经济学深度应用",
+          "#51-博弈论",
+          "#52-社会选择理论",
+          "#6-物理学深度应用",
+          "#61-量子力学",
+          "#62-统计力学",
+          "#总结",
+          "#跨学科价值",
+          "#未来发展方向"
+        ],
+        "inconsistent_notations": [],
+        "logic_gaps": []
+      },
+      "readability": {
+        "avg_sentence_length": 71.45098039215686,
+        "avg_paragraph_length": 0.4811320754716981,
+        "complex_word_ratio": 0.27543424317617865,
+        "heading_structure_score": 1.0,
+        "code_block_ratio": 0.6857021996615905,
+        "formula_density": 0.0
+      },
+      "internationalization": {
+        "has_english_terms": true,
+        "term_consistency_score": 1.0,
+        "cultural_adaptation_score": 0.0,
+        "translation_completeness": 1.0,
+        "inconsistent_translations": []
+      },
+      "learning_effect": {
+        "estimated_difficulty": "beginner",
+        "estimated_study_time": 39,
+        "mastery_probability": 0.04230118443316413,
+        "prerequisite_clarity": 0.5,
+        "exercise_diversity": 1.0
+      },
+      "overall_score": 48.375112494862954,
+      "quality_level": "NEEDS_IMPROVEMENT",
+      "recommendations": [
+        "增加具体示例以帮助理解",
+        "为所有定理提供证明（当前有11个定理，0个证明）",
+        "缩短句子长度，提高可读性"
+      ],
+      "issues": [
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少示例",
+          "suggestion": "请添加示例部分"
+        },
+        {
+          "type": "completeness",
+          "severity": "medium",
+          "description": "缺少参考文献",
+          "suggestion": "请添加参考文献部分"
+        },
+        {
+          "type": "readability",
+          "severity": "medium",
+          "description": "句子过长（平均71.5字）",
+          "suggestion": "将长句拆分为短句"
+        }
+      ]
+    }
+  ]
+}

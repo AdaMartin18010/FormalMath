@@ -7,14 +7,17 @@ FormalMath API - 高性能FastAPI后端服务
 - Celery异步任务
 - 响应压缩和ETag
 - 分页支持
+- 语义搜索（文本嵌入、向量检索、公式搜索）
 """
 import logging
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.core.config import settings
 from app.core.database import db_manager, init_db
@@ -22,6 +25,13 @@ from app.cache.redis_cache import cache
 from app.api.router import api_router
 from app.middleware.compression import ConditionalCompressionMiddleware
 from app.middleware.etag import ETagMiddleware, CacheControlMiddleware
+
+# 语义搜索相关导入
+try:
+    from app.services.semantic_search_service import get_semantic_search_service
+    SEMANTIC_SEARCH_AVAILABLE = True
+except ImportError:
+    SEMANTIC_SEARCH_AVAILABLE = False
 
 # 配置日志
 logging.basicConfig(
@@ -65,6 +75,12 @@ async def lifespan(app: FastAPI):
         logger.info(f"数据库池大小: {settings.DATABASE_POOL_SIZE}")
         logger.info(f"Redis主机: {settings.REDIS_HOST}:{settings.REDIS_PORT}")
         logger.info(f"Celery Broker: {settings.CELERY_BROKER_URL.split('@')[-1] if '@' in settings.CELERY_BROKER_URL else 'configured'}")
+        
+        # 初始化语义搜索服务
+        if SEMANTIC_SEARCH_AVAILABLE:
+            logger.info("正在初始化语义搜索服务...")
+            search_service = get_semantic_search_service()
+            logger.info("✓ 语义搜索服务初始化完成")
         
         logger.info("=" * 50)
         logger.info("FormalMath API 启动成功！")
@@ -160,6 +176,14 @@ app.add_middleware(
     }
 )
 
+# ============ 静态文件服务 ============
+
+# 挂载搜索前端页面
+static_dir = os.path.join(os.path.dirname(__file__), "app", "static")
+if os.path.exists(static_dir):
+    app.mount("/static", StaticFiles(directory=static_dir), name="static")
+    logger.info(f"✓ 静态文件服务已挂载: {static_dir}")
+
 # ============ 路由注册 ============
 
 # 注册API路由
@@ -174,20 +198,31 @@ app.include_router(
 @app.get("/")
 async def root():
     """根路径 - 服务信息"""
+    features = [
+        "redis_cache",
+        "connection_pool",
+        "celery_tasks",
+        "response_compression",
+        "etag_cache",
+        "pagination"
+    ]
+    
+    if SEMANTIC_SEARCH_AVAILABLE:
+        features.extend([
+            "semantic_search",
+            "formula_search",
+            "qa_system",
+            "hybrid_search"
+        ])
+    
     return {
         "name": settings.APP_NAME,
         "version": settings.APP_VERSION,
         "status": "running",
         "docs_url": "/docs",
+        "search_ui": "/static/search.html",
         "api_prefix": settings.API_PREFIX,
-        "features": [
-            "redis_cache",
-            "connection_pool",
-            "celery_tasks",
-            "response_compression",
-            "etag_cache",
-            "pagination"
-        ]
+        "features": features
     }
 
 

@@ -23,338 +23,108 @@ class ReportGenerator:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
-    def generate_html_report(self, results: List[QualityAssessmentResult], 
-                            summary: Dict[str, Any], 
-                            output_file: str = "quality_report.html") -> str:
-        """生成HTML格式的质量报告"""
-        
-        html_template = """<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FormalMath 内容质量评估报告</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+    def _get_css_styles(self) -> str:
+        """获取CSS样式（使用字符串拼接避免format冲突）"""
+        styles = """
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f7fa;
-            padding: 20px;
+            line-height: 1.6; color: #333; background: #f5f7fa; padding: 20px;
         }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
+        .container { max-width: 1400px; margin: 0 auto; }
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: white; padding: 40px; border-radius: 12px;
+            margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .header .meta {
-            opacity: 0.9;
-            font-size: 1.1em;
-        }
-        
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header .meta { opacity: 0.9; font-size: 1.1em; }
         .summary-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px; margin-bottom: 30px;
         }
-        
         .summary-card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
+            background: white; padding: 25px; border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: transform 0.2s;
         }
-        
-        .summary-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .summary-card .value {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 5px;
-        }
-        
-        .summary-card .label {
-            color: #666;
-            font-size: 0.95em;
-        }
-        
+        .summary-card:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .summary-card .value { font-size: 2.5em; font-weight: bold; color: #667eea; margin-bottom: 5px; }
+        .summary-card .label { color: #666; font-size: 0.95em; }
         .chart-section {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            background: white; padding: 30px; border-radius: 12px;
+            margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        
-        .chart-section h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-        
-        .quality-distribution {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        
-        .quality-badge {
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-weight: 500;
-            color: white;
-        }
-        
+        .chart-section h2 { margin-bottom: 20px; color: #333; }
+        .quality-distribution { display: flex; gap: 10px; flex-wrap: wrap; }
+        .quality-badge { padding: 10px 20px; border-radius: 20px; font-weight: 500; color: white; }
         .quality-EXCELLENT { background: #10b981; }
         .quality-GOOD { background: #3b82f6; }
         .quality-ACCEPTABLE { background: #f59e0b; }
         .quality-NEEDS_IMPROVEMENT { background: #f97316; }
         .quality-POOR { background: #ef4444; }
-        
         .files-section {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
+            background: white; padding: 30px; border-radius: 12px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        
         .file-card {
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 15px;
-            transition: all 0.2s;
+            border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px;
+            margin-bottom: 15px; transition: all 0.2s;
         }
-        
-        .file-card:hover {
-            border-color: #667eea;
-            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
-        }
-        
+        .file-card:hover { border-color: #667eea; box-shadow: 0 2px 8px rgba(102,126,234,0.1); }
         .file-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: flex; justify-content: space-between; align-items: center;
             margin-bottom: 15px;
         }
-        
-        .file-name {
-            font-weight: 600;
-            color: #1f2937;
-            font-size: 1.1em;
-        }
-        
-        .score-badge {
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-weight: 600;
-            font-size: 0.9em;
-        }
-        
+        .file-name { font-weight: 600; color: #1f2937; font-size: 1.1em; }
+        .score-badge { padding: 5px 15px; border-radius: 15px; font-weight: 600; font-size: 0.9em; }
         .metrics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 15px;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px; margin-bottom: 15px;
         }
-        
-        .metric-item {
-            background: #f9fafb;
-            padding: 12px;
-            border-radius: 6px;
-        }
-        
-        .metric-name {
-            font-size: 0.85em;
-            color: #6b7280;
-            margin-bottom: 4px;
-        }
-        
-        .metric-value {
-            font-weight: 600;
-            color: #1f2937;
-        }
-        
-        .progress-bar {
-            height: 6px;
-            background: #e5e7eb;
-            border-radius: 3px;
-            margin-top: 8px;
-            overflow: hidden;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            border-radius: 3px;
-            transition: width 0.3s ease;
-        }
-        
+        .metric-item { background: #f9fafb; padding: 12px; border-radius: 6px; }
+        .metric-name { font-size: 0.85em; color: #6b7280; margin-bottom: 4px; }
+        .metric-value { font-weight: 600; color: #1f2937; }
+        .progress-bar { height: 6px; background: #e5e7eb; border-radius: 3px; margin-top: 8px; overflow: hidden; }
+        .progress-fill { height: 100%; border-radius: 3px; transition: width 0.3s ease; }
         .progress-fill.high { background: #10b981; }
         .progress-fill.medium { background: #f59e0b; }
         .progress-fill.low { background: #ef4444; }
-        
-        .issues-section {
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid #e5e7eb;
-        }
-        
-        .issue-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            padding: 8px 0;
-        }
-        
+        .issues-section { margin-top: 15px; padding-top: 15px; border-top: 1px solid #e5e7eb; }
+        .issue-item { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; }
         .issue-severity {
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.75em;
-            font-weight: 600;
-            text-transform: uppercase;
+            padding: 2px 8px; border-radius: 4px; font-size: 0.75em;
+            font-weight: 600; text-transform: uppercase;
         }
-        
         .severity-high { background: #fee2e2; color: #dc2626; }
         .severity-medium { background: #fef3c7; color: #d97706; }
         .severity-low { background: #dbeafe; color: #2563eb; }
-        
-        .issue-content {
-            flex: 1;
-        }
-        
-        .issue-description {
-            color: #374151;
-            margin-bottom: 2px;
-        }
-        
-        .issue-suggestion {
-            color: #6b7280;
-            font-size: 0.9em;
-        }
-        
+        .issue-content { flex: 1; }
+        .issue-description { color: #374151; margin-bottom: 2px; }
+        .issue-suggestion { color: #6b7280; font-size: 0.9em; }
         .recommendations {
-            margin-top: 15px;
-            padding: 15px;
-            background: #f0fdf4;
-            border-radius: 6px;
-            border-left: 4px solid #10b981;
+            margin-top: 15px; padding: 15px; background: #f0fdf4;
+            border-radius: 6px; border-left: 4px solid #10b981;
         }
+        .recommendations h4 { color: #166534; margin-bottom: 10px; }
+        .recommendations ul { list-style: none; padding-left: 0; }
+        .recommendations li { padding: 5px 0; padding-left: 20px; position: relative; color: #15803d; }
+        .recommendations li::before { content: "→"; position: absolute; left: 0; color: #22c55e; }
+        .footer { text-align: center; padding: 30px; color: #6b7280; margin-top: 30px; }
+        @media print { body { background: white; } .file-card { break-inside: avoid; } }
+        """
+        return styles
+    
+    def generate_html_report(self, results: List[QualityAssessmentResult], 
+                            summary: Dict[str, Any], 
+                            output_file: str = "quality_report.html") -> str:
+        """生成HTML格式的质量报告"""
         
-        .recommendations h4 {
-            color: #166534;
-            margin-bottom: 10px;
-        }
-        
-        .recommendations ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .recommendations li {
-            padding: 5px 0;
-            padding-left: 20px;
-            position: relative;
-            color: #15803d;
-        }
-        
-        .recommendations li::before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: #22c55e;
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: #6b7280;
-            margin-top: 30px;
-        }
-        
-        @media print {
-            body {
-                background: white;
-            }
-            .file-card {
-                break-inside: avoid;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>📊 FormalMath 内容质量评估报告</h1>
-            <div class="meta">
-                <p>生成时间: {timestamp}</p>
-                <p>评估文件数: {total_files}</p>
-            </div>
-        </div>
-        
-        <div class="summary-cards">
-            <div class="summary-card">
-                <div class="value">{avg_score:.1f}</div>
-                <div class="label">平均质量分</div>
-            </div>
-            <div class="summary-card">
-                <div class="value">{max_score:.1f}</div>
-                <div class="label">最高分</div>
-            </div>
-            <div class="summary-card">
-                <div class="value">{min_score:.1f}</div>
-                <div class="label">最低分</div>
-            </div>
-            <div class="summary-card">
-                <div class="value">{high_priority_issues}</div>
-                <div class="label">高优先级问题</div>
-            </div>
-        </div>
-        
-        <div class="chart-section">
-            <h2>📈 质量分布</h2>
-            <div class="quality-distribution">
-                {quality_distribution}
-            </div>
-        </div>
-        
-        <div class="files-section">
-            <h2>📁 详细评估结果</h2>
-            {file_details}
-        </div>
-        
-        <div class="footer">
-            <p>由 FormalMath 内容质量评估系统自动生成</p>
-            <p>FormalMath Content Quality Assessment System v1.0</p>
-        </div>
-    </div>
-</body>
-</html>"""
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        total_files = summary.get('total_files', len(results))
+        avg_score = summary.get('average_score', 0)
+        max_score = summary.get('max_score', 0)
+        min_score = summary.get('min_score', 0)
+        high_priority_issues = summary.get('high_priority_issues', 0)
         
         # 生成质量分布HTML
         quality_dist_html = ""
@@ -366,17 +136,48 @@ class ReportGenerator:
         for result in results:
             file_details_html += self._generate_file_card(result)
         
-        # 填充模板
-        html_content = html_template.format(
-            timestamp=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            total_files=summary.get('total_files', 0),
-            avg_score=summary.get('average_score', 0),
-            max_score=summary.get('max_score', 0),
-            min_score=summary.get('min_score', 0),
-            high_priority_issues=summary.get('high_priority_issues', 0),
-            quality_distribution=quality_dist_html,
-            file_details=file_details_html
-        )
+        # 构建HTML内容（使用字符串拼接而非format）
+        html_parts = [
+            '<!DOCTYPE html>',
+            '<html lang="zh-CN">',
+            '<head>',
+            '    <meta charset="UTF-8">',
+            '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+            '    <title>FormalMath 内容质量评估报告</title>',
+            '    <style>',
+            self._get_css_styles(),
+            '    </style>',
+            '</head>',
+            '<body>',
+            '    <div class="container">',
+            '        <div class="header">',
+            '            <h1>📊 FormalMath 内容质量评估报告</h1>',
+            f'            <div class="meta"><p>生成时间: {timestamp}</p><p>评估文件数: {total_files}</p></div>',
+            '        </div>',
+            '        <div class="summary-cards">',
+            f'            <div class="summary-card"><div class="value">{avg_score:.1f}</div><div class="label">平均质量分</div></div>',
+            f'            <div class="summary-card"><div class="value">{max_score:.1f}</div><div class="label">最高分</div></div>',
+            f'            <div class="summary-card"><div class="value">{min_score:.1f}</div><div class="label">最低分</div></div>',
+            f'            <div class="summary-card"><div class="value">{high_priority_issues}</div><div class="label">高优先级问题</div></div>',
+            '        </div>',
+            '        <div class="chart-section">',
+            '            <h2>📈 质量分布</h2>',
+            f'            <div class="quality-distribution">{quality_dist_html}</div>',
+            '        </div>',
+            '        <div class="files-section">',
+            '            <h2>📁 详细评估结果</h2>',
+            file_details_html,
+            '        </div>',
+            '        <div class="footer">',
+            '            <p>由 FormalMath 内容质量评估系统自动生成</p>',
+            '            <p>FormalMath Content Quality Assessment System v1.0</p>',
+            '        </div>',
+            '    </div>',
+            '</body>',
+            '</html>'
+        ]
+        
+        html_content = '\n'.join(html_parts)
         
         output_path = self.output_dir / output_file
         output_path.write_text(html_content, encoding='utf-8')
@@ -396,79 +197,61 @@ class ReportGenerator:
             score_class = "low"
             score_color = "#ef4444"
         
-        card_html = f"""
-        <div class="file-card">
-            <div class="file-header">
-                <span class="file-name">{result.file_name}</span>
-                <span class="score-badge" style="background: {score_color}20; color: {score_color};">
-                    {result.overall_score:.1f}分
-                </span>
-            </div>
-            
-            <div class="metrics-grid">
+        card_parts = [
+            '<div class="file-card">',
+            '    <div class="file-header">',
+            f'        <span class="file-name">{result.file_name}</span>',
+            f'        <span class="score-badge" style="background: {score_color}20; color: {score_color};">{result.overall_score:.1f}分</span>',
+            '    </div>',
+            '    <div class="metrics-grid">',
+        ]
+        
+        # 添加各维度指标
+        metrics = [
+            ('完整性', result.completeness.overall_score),
+            ('准确性', result.accuracy.overall_score),
+            ('可读性', result.readability.overall_score),
+            ('国际化', result.internationalization.overall_score),
+            ('学习效果', result.learning_effect.overall_score),
+        ]
+        
+        for name, score in metrics:
+            card_parts.append(f'''
                 <div class="metric-item">
-                    <div class="metric-name">完整性</div>
-                    <div class="metric-value">{result.completeness.overall_score:.1f}</div>
+                    <div class="metric-name">{name}</div>
+                    <div class="metric-value">{score:.1f}</div>
                     <div class="progress-bar">
-                        <div class="progress-fill {score_class}" style="width: {result.completeness.overall_score}%"></div>
+                        <div class="progress-fill {score_class}" style="width: {score}%"></div>
                     </div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-name">准确性</div>
-                    <div class="metric-value">{result.accuracy.overall_score:.1f}</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill {score_class}" style="width: {result.accuracy.overall_score}%"></div>
-                    </div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-name">可读性</div>
-                    <div class="metric-value">{result.readability.overall_score:.1f}</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill {score_class}" style="width: {result.readability.overall_score}%"></div>
-                    </div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-name">国际化</div>
-                    <div class="metric-value">{result.internationalization.overall_score:.1f}</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill {score_class}" style="width: {result.internationalization.overall_score}%"></div>
-                    </div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-name">学习效果</div>
-                    <div class="metric-value">{result.learning_effect.overall_score:.1f}</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill {score_class}" style="width: {result.learning_effect.overall_score}%"></div>
-                    </div>
-                </div>
-            </div>
-        """
+                </div>''')
+        
+        card_parts.append('    </div>')
         
         # 添加问题列表
         if result.issues:
-            card_html += '<div class="issues-section"><h4>发现的问题</h4>'
+            card_parts.append('    <div class="issues-section"><h4>发现的问题</h4>')
             for issue in result.issues[:5]:  # 最多显示5个问题
                 severity_class = f"severity-{issue['severity']}"
-                card_html += f"""
+                card_parts.append(f'''
                 <div class="issue-item">
                     <span class="issue-severity {severity_class}">{issue['severity']}</span>
                     <div class="issue-content">
                         <div class="issue-description">{issue['description']}</div>
                         <div class="issue-suggestion">建议: {issue['suggestion']}</div>
                     </div>
-                </div>
-                """
-            card_html += '</div>'
+                </div>''')
+            card_parts.append('    </div>')
         
         # 添加建议
         if result.recommendations:
-            card_html += '<div class="recommendations"><h4>改进建议</h4><ul>'
+            card_parts.append('    <div class="recommendations"><h4>改进建议</h4><ul>')
             for rec in result.recommendations[:3]:  # 最多显示3条建议
-                card_html += f'<li>{rec}</li>'
-            card_html += '</ul></div>'
+                card_parts.append(f'        <li>{rec}</li>')
+            card_parts.append('    </ul></div>')
         
-        card_html += '</div>'
-        return card_html
+        card_parts.append('</div>')
+        
+        return '\n'.join(card_parts)
     
     def generate_markdown_report(self, results: List[QualityAssessmentResult],
                                  summary: Dict[str, Any],
@@ -479,7 +262,7 @@ class ReportGenerator:
             "# FormalMath 内容质量评估报告",
             "",
             f"**生成时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
-            f"**评估文件数**: {summary.get('total_files', 0)}",
+            f"**评估文件数**: {summary.get('total_files', len(results))}",
             "",
             "## 📊 评估摘要",
             "",
@@ -594,7 +377,7 @@ class ReportGenerator:
             'metadata': {
                 'generated_at': datetime.now().isoformat(),
                 'version': '1.0.0',
-                'total_files': summary.get('total_files', 0)
+                'total_files': summary.get('total_files', len(results))
             },
             'summary': summary,
             'results': [asdict(r) for r in results]

@@ -1,0 +1,23 @@
+# FormalMath 内容质量评估系统依赖
+# Content Quality Assessment System Requirements
+
+# 核心功能仅使用Python标准库，无需额外依赖
+# 以下依赖仅用于可选功能
+
+# 报告生成增强（可选）
+# jinja2>=3.0.0          # HTML模板渲染
+
+# 数据分析（可选）
+# pandas>=1.3.0          # CSV/数据分析
+# matplotlib>=3.4.0      # 图表生成
+
+# Web界面（可选）
+# flask>=2.0.0           # Web服务器
+
+# 测试依赖
+# pytest>=6.0.0          # 测试框架
+# pytest-cov>=2.12.0     # 覆盖率
+
+# 开发工具
+# black>=21.0.0          # 代码格式化
+# flake8>=3.9.0          # 代码检查
