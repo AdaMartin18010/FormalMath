@@ -27,3 +27,25 @@ export {
   ProofConstructionService,
   proofConstructionService,
 } from './proofConstruction';
+
+// 离线学习服务
+export {
+  offlineService,
+  preloadForOffline,
+  isContentAvailableOffline,
+  type OfflineContent,
+  type LearningProgress,
+  type OfflineQueueItem,
+} from './offlineService';
+
+// 智能提醒服务
+export {
+  reminderService,
+  reminderTemplates,
+  type Reminder,
+  type ReminderType,
+  type ReminderFrequency,
+  type ReminderLog,
+  type LearningGoal,
+  type LearningStats,
+} from './reminderService';
