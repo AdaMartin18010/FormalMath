@@ -1,0 +1,22 @@
+# FormalMath 语义搜索系统依赖
+# 安装命令: pip install -r requirements-search.txt
+
+# 向量检索 (必需其一)
+faiss-cpu>=1.7.4; platform_machine != "arm64"
+faiss-cpu>=1.7.4; sys_platform != "darwin"
+
+# 嵌入模型
+sentence-transformers>=2.2.2
+transformers>=4.30.0
+torch>=2.0.0
+
+# 文本处理
+nltk>=3.8.1
+jieba>=0.42.1
+
+# 科学计算
+numpy>=1.24.0
+scipy>=1.10.0
+
+# 可选：GPU加速
+# faiss-gpu>=1.7.4; platform_machine != "arm64"

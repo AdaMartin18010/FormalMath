@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-04-04T12:39:36.963334",
+    "generated_at": "2026-04-04T12:39:58.529559",
     "version": "1.0.0",
     "total_files": 53
   },
@@ -10,10 +10,10 @@
     "min_score": 31.007406293623216,
     "max_score": 80.34399233988786,
     "quality_distribution": {
-      "POOR": 3,
-      "GOOD": 1,
       "ACCEPTABLE": 8,
-      "NEEDS_IMPROVEMENT": 41
+      "POOR": 3,
+      "NEEDS_IMPROVEMENT": 41,
+      "GOOD": 1
     },
     "high_priority_issues": 5
   },

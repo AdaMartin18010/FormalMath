@@ -496,18 +496,34 @@ class IssueExtractor:
         else:
             output_path = Path(output_path)
         
+        # 自定义序列化函数，处理set类型
+        def serialize_obj(obj):
+            if isinstance(obj, set):
+                return list(obj)
+            raise TypeError(f'Object of type {obj.__class__.__name__} is not JSON serializable')
+        
+        # 转换categories，将set转为list
+        categories_dict = {}
+        for k, v in self.categories.items():
+            cat_dict = asdict(v)
+            cat_dict['affected_files'] = list(cat_dict['affected_files'])
+            categories_dict[k] = cat_dict
+        
         data = {
             'metadata': {
                 'generated_at': datetime.now().isoformat(),
                 'total_issues': len(self.issues),
-                'categories': {k: asdict(v) for k, v in self.categories.items()}
+                'categories': categories_dict
             },
             'issues': [asdict(i) for i in self.issues],
             'analysis': self.analyze_patterns(),
             'action_plan': self.generate_action_plan()
         }
         
-        output_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
+        output_path.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2, default=serialize_obj),
+            encoding='utf-8'
+        )
         return str(output_path)
     
     def get_fix_checklist(self) -> List[Dict]:
