@@ -1,6 +1,6 @@
 # FormalMath 核心数学概念前置关系数据库
-# 版本: 3.0
-# 概念数量: 300个
+# 版本: 3.1
+# 概念数量: 311个 (新增11个分析学概念MSC编码)
 # 分类: 分析学(25) | 代数学(25) | 几何拓扑(25) | 数论逻辑(25) | 概率统计(20) | 最优化(20) | 控制论(20) | 信息论(20) | 密码学(20) | 金融数学(20) | 生物数学(20) | 计算数学(20) | 物理数学(20) | 数据科学(20)
 
 # ============================================================================
@@ -115,6 +115,78 @@ concepts:
     difficulty: 2
     estimated_hours: 20
 
+  - concept_id: "improper_integral"
+    name: "反常积分"
+    category: "分析学"
+    msc_primary: "40A10"
+    msc_secondary: ["26A42", "26A33"]
+    prerequisites:
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "limit"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "lebesgue_integral"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "gamma_function"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 15
+
+  - concept_id: "multivariable_calculus"
+    name: "多元微积分"
+    category: "分析学"
+    msc_primary: "26B12"
+    msc_secondary: ["26B15", "58C20"]
+    prerequisites:
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "linear_algebra"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "implicit_function_theorem"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "partial_differential_equations"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "differential_geometry"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 30
+
+  - concept_id: "implicit_function_theorem"
+    name: "隐函数定理"
+    category: "分析学"
+    msc_primary: "26B10"
+    msc_secondary: ["26B12", "58C15"]
+    prerequisites:
+      - concept_id: "multivariable_calculus"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "differential_geometry"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "manifold"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
   - concept_id: "infinite_series"
     name: "级数"
     category: "分析学"
@@ -166,6 +238,141 @@ concepts:
     estimated_hours: 20
 
   # ---------- 复分析与调和分析 ----------
+  - concept_id: "power_series"
+    name: "幂级数"
+    category: "分析学"
+    msc_primary: "30B10"
+    msc_secondary: ["40A30", "32A05"]
+    prerequisites:
+      - concept_id: "infinite_series"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "complex_numbers"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "analytic_function"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "complex_analysis"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "fourier_series"
+    name: "傅里叶级数"
+    category: "分析学"
+    msc_primary: "42A16"
+    msc_secondary: ["42A20", "42A32"]
+    prerequisites:
+      - concept_id: "infinite_series"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "uniform_convergence"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "riemann_integral"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "fourier_analysis"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "signal_processing"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "analytic_function"
+    name: "解析函数"
+    category: "分析学"
+    msc_primary: "30A99"
+    msc_secondary: ["30B10", "30Cxx"]
+    prerequisites:
+      - concept_id: "power_series"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "complex_numbers"
+        level: "L0"
+        relation: "依赖"
+    successors:
+      - concept_id: "holomorphic_function"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "cauchy_integral_theorem"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 25
+
+  - concept_id: "holomorphic_function"
+    name: "全纯函数"
+    category: "分析学"
+    msc_primary: "30A99"
+    msc_secondary: ["30Cxx", "32A10"]
+    prerequisites:
+      - concept_id: "analytic_function"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "derivative"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "complex_analysis"
+        level: "L2"
+        relation: "被依赖"
+      - concept_id: "cauchy_integral_theorem"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "cauchy_integral_theorem"
+    name: "柯西积分定理"
+    category: "分析学"
+    msc_primary: "30E20"
+    msc_secondary: ["30B10", "30Cxx"]
+    prerequisites:
+      - concept_id: "holomorphic_function"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "contour_integration"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "residue_theorem"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "complex_analysis"
+        level: "L2"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "residue_theorem"
+    name: "留数定理"
+    category: "分析学"
+    msc_primary: "30E20"
+    msc_secondary: ["30D30", "30Cxx"]
+    prerequisites:
+      - concept_id: "cauchy_integral_theorem"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "holomorphic_function"
+        level: "L2"
+        relation: "依赖"
+    successors:
+      - concept_id: "residue_theory"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "conformal_mapping"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
   - concept_id: "fourier_analysis"
     name: "Fourier分析"
     category: "分析学"
@@ -246,6 +453,8 @@ concepts:
   - concept_id: "conformal_mapping"
     name: "共形映射"
     category: "分析学"
+    msc_primary: "30C35"
+    msc_secondary: ["30C20", "30D99"]
     prerequisites:
       - concept_id: "complex_analysis"
         level: "L2"
@@ -336,9 +545,61 @@ concepts:
     difficulty: 3
     estimated_hours: 30
 
+  - concept_id: "normed_space"
+    name: "赋范空间"
+    category: "分析学"
+    msc_primary: "46B25"
+    msc_secondary: ["46Axx", "46Exx"]
+    prerequisites:
+      - concept_id: "vector_space"
+        level: "L2"
+        relation: "依赖"
+      - concept_id: "metric_space"
+        level: "L1"
+        relation: "依赖"
+    successors:
+      - concept_id: "lp_spaces"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "banach_space"
+        level: "L3"
+        relation: "被依赖"
+      - concept_id: "hilbert_space"
+        level: "L3"
+        relation: "被依赖"
+    difficulty: 3
+    estimated_hours: 20
+
+  - concept_id: "linear_operator"
+    name: "线性算子"
+    category: "分析学"
+    msc_primary: "47A05"
+    msc_secondary: ["46B25", "47Axx"]
+    prerequisites:
+      - concept_id: "functional_analysis"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "banach_space"
+        level: "L3"
+        relation: "依赖"
+      - concept_id: "hilbert_space"
+        level: "L3"
+        relation: "依赖"
+    successors:
+      - concept_id: "operator_theory"
+        level: "L4"
+        relation: "被依赖"
+      - concept_id: "spectral_theory"
+        level: "L4"
+        relation: "被依赖"
+    difficulty: 4
+    estimated_hours: 30
+
   - concept_id: "lp_spaces"
     name: "Lp空间"
     category: "分析学"
+    msc_primary: "46E30"
+    msc_secondary: ["46B25", "28A25"]
     prerequisites:
       - concept_id: "lebesgue_integral"
         level: "L3"

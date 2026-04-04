@@ -40,6 +40,7 @@
 import FormalMath.Mathlib.Topology.VectorBundle.Basic
 import FormalMath.Mathlib.AlgebraicTopology.CechNerve
 import FormalMath.Mathlib.Analysis.Calculus.DifferentialForms
+import FormalMath.Mathlib.Topology.VectorBundle.Basic
 
 namespace CharacteristicClass
 
@@ -47,8 +48,8 @@ open TopologicalSpace Bundle
 
 variable {B : Type*} [TopologicalSpace B]
 
-/-
-## 向量丛基础
+/-! 
+## 向量丛基础 (Vector Bundle Basics)
 
 E → B是秩为n的向量丛，每根纤维E_x ≅ ℝⁿ（或ℂⁿ）。
 向量丛由以下数据组成：
@@ -58,12 +59,13 @@ E → B是秩为n的向量丛，每根纤维E_x ≅ ℝⁿ（或ℂⁿ）。
 
 示性类通过分类映射从万有丛拉回得到。
 对于实向量丛，分类空间是BO(n)（无限Grassmannian）。
-对于复向量丛，分类空间是BU(n)。
--/ 
+对于复向量丛，分类空间是BU(n）。
+-/
+
 variable {E : Type*} [TopologicalSpace E]
 
-/-
-## Stiefel-Whitney类
+/-! 
+## Stiefel-Whitney类 (Stiefel-Whitney Classes)
 
 对于实向量丛E → B，第i个Stiefel-Whitney类
 w_i(E) ∈ H^i(B; ℤ/2) 度量了丛的"扭曲"。
@@ -77,7 +79,8 @@ w_i(E) ∈ H^i(B; ℤ/2) 度量了丛的"扭曲"。
 - w_1(E) = 0 ⟺ E可定向
 - w_2(E) 与自旋结构相关
 - 高阶类度量更高维的扭曲
--/ 
+-/
+
 def StiefelWhitneyClass {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) (i : ℕ) :
     CohomologyGroup B i (ZMod 2) :=
   -- 通过分类映射 f : B → BO(n) 从万有类拉回
@@ -86,10 +89,10 @@ def StiefelWhitneyClass {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) (i : 
 
 notation:max "w_" i "(" E ")" => StiefelWhitneyClass E i
 
-/-
+/-! 
 ## Stiefel-Whitney类的基本性质
 
-这些性质唯一确定了Stiefel-Whitney类。
+这些性质唯一确定了StiefelWhitney类。
 它们可以从万有丛的性质和分类映射的自然性导出。
 
 ### 性质列表
@@ -97,13 +100,15 @@ notation:max "w_" i "(" E ")" => StiefelWhitneyClass E i
 2. w_i(E) = 0 对于i > rank(E)
 3. 自然性：f*(w(E)) = w(f*E)
 4. Whitney和公式：w(E⊕F) = w(E)⌣w(F)
--/ 
+-/
 
 /-- Stiefel-Whitney类的零阶性质：w_0(E) = 1
 
 这是示性类的归一化条件。
 在万有丛上，w_0对应于H^0(BO(n); ℤ/2)中的单位元。
 通过拉回，这一性质传递到所有向量丛。
+
+**数学意义**：零阶类总是1，类似于Euler类的正规化。
 -/
 theorem stiefel_whitney_zero {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) :
     w_0(E) = 1 := by
@@ -119,6 +124,9 @@ theorem stiefel_whitney_zero {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) 
 
 这反映了丛的秩限制了可能的"扭曲"维度。
 Grassmannian G_n(ℝ^∞)的上同调在维数>n时由w_1,...,w_n生成。
+
+**几何解释**：高维的Stiefel-Whitney类在秩不足时消失，
+因为不存在足够的"空间"来容纳高维扭曲。
 -/
 theorem stiefel_whitney_rank {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) (i : ℕ)
     (hi : i > n) : w_i(E) = 0 := by
@@ -133,8 +141,10 @@ theorem stiefel_whitney_rank {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) 
 对于连续映射f : X → Y，有f*(w_i(E)) = w_i(f*E)。
 这是示性类的定义特征之一：它们与丛的拉回相容。
 
-证明思路：
-分类映射满足 naturality：classifying_map(f*E) = classifying_map(E) ∘ f
+**数学意义**：示性类是丛的函子不变量。
+
+**证明思路**：
+分类映射满足naturality：classifying_map(f*E) = classifying_map(E) ∘ f
 因此拉回操作相容。
 -/
 theorem stiefel_whitney_natural {X Y : Type*} [TopologicalSpace X] 
@@ -158,10 +168,12 @@ theorem stiefel_whitney_natural {X Y : Type*} [TopologicalSpace X]
 从分量形式看：
 w_k(E⊕F) = Σ_{i=0}^k w_i(E)⌣w_{k-i}(F)
 
-证明依赖于：
+**证明依赖于**：
 1. 分类映射的乘积性质
 2. H*(BO(n)×BO(m))的结构
 3. Künneth公式
+
+**几何意义**：Whitney和公式反映了丛的直和与示性类的乘积之间的关系。
 -/
 theorem whitney_sum_formula {n m : ℕ} 
     (E : VectorBundle ℝ (Fin n → ℝ) B)
@@ -176,8 +188,8 @@ theorem whitney_sum_formula {n m : ℕ}
   -- 应用万有丛的Whitney和公式
   exact UniversalWhitneySum n m k (ClassifyingMap E) (ClassifyingMap F)
 
-/-
-## Pontryagin类
+/-! 
+## Pontryagin类 (Pontryagin Classes)
 
 对于实向量丛E，Pontryagin类通过复化定义：
 p_i(E) ∈ H^{4i}(B; ℤ)
@@ -195,13 +207,14 @@ E ⊗ ℂ ≅ E ⊗ ℂ的共轭
 ### 几何意义
 Pontryagin类与曲率相关，在指标定理中起关键作用。
 -/
+
 def PontryaginClass {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) (i : ℕ) :
     CohomologyGroup B (4 * i) ℤ :=
   (-1 : ℤ)^i * ChernClass (Complexification E) (2 * i)
 
 notation:max "p_" i "(" E ")" => PontryaginClass E i
 
-/-
+/-! 
 ## Pontryagin类的性质
 
 1. p_0(E) = 1
@@ -225,8 +238,22 @@ theorem pontryagin_rank {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) (i : 
   rw [this]
   simp
 
-/-
-## Euler类
+/-- Pontryagin类的Whitney和公式（模挠）
+
+由于整系数的复杂性，通常在有理系数下使用更简洁的公式。
+-/
+theorem pontryagin_whitney_sum {n m : ℕ} 
+    (E : VectorBundle ℝ (Fin n → ℝ) B)
+    (F : VectorBundle ℝ (Fin m → ℝ) B) (k : ℕ) :
+    p_k(DirectSumBundle E F) = ∑ i in Finset.range (k + 1), 
+      CupProduct (p_i(E)) (p_{k - i}(F)) := by
+  -- 在有理系数下成立
+  -- 证明使用Chern类的Whitney和公式
+  -- 并注意奇数Chern类的抵消
+  sorry -- 需要Chern类的详细性质
+
+/-! 
+## Euler类 (Euler Class)
 
 对于定向实向量丛E（秩为n），Euler类
 e(E) ∈ H^n(B; ℤ) 是Poincaré对偶于零截面的自交。
@@ -239,7 +266,8 @@ e(E) ∈ H^n(B; ℤ) 是Poincaré对偶于零截面的自交。
 - e(E) = 0 如果n是奇数（定向反演改变符号）
 - e(E) 度量了处处非零截面的存在阻碍
 - 对于球面丛，e(E)与Gysin序列相关
--/ 
+-/
+
 def EulerClass {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) 
     [OrientedBundle E] : CohomologyGroup B n ℤ :=
   -- 通过Thom同构定义
@@ -250,7 +278,7 @@ def EulerClass {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B)
 
 notation:max "e(" E ")" => EulerClass E
 
-/-
+/-! 
 ## Euler类与Euler示性数
 
 对于闭定向流形M，有：
@@ -263,6 +291,8 @@ e(TM) ⌢ [M] = χ(M)
 
 这就是经典的Poincaré-Hopf定理：
 向量场零点的指标和等于Euler示性数。
+
+**几何解释**：Euler类度量了切向量场零点的"代数个数"。
 -/
 theorem euler_class_euler_characteristic {M : Type*} 
     [TopologicalSpace M] [CompactSpace M] [Orientable M]
@@ -279,8 +309,8 @@ theorem euler_class_euler_characteristic {M : Type*}
   intro TM
   exact PoincareHopfTheorem M TM
 
-/-
-## Chern类
+/-! 
+## Chern类 (Chern Classes)
 
 对于复向量丛E → B（秩为n），Chern类
 c_i(E) ∈ H^{2i}(B; ℤ) 是最重要的示性类。
@@ -294,7 +324,8 @@ c_i(E) ∈ H^{2i}(B; ℤ) 是最重要的示性类。
 - c_1(E) 与行列式线丛相关
 - c_n(E) = e(E_ℝ)（最高Chern类等于Euler类）
 - 全Chern类c(E) = ∏(1 + x_i) 其中x_i是形式陈根
--/ 
+-/
+
 def ChernClass {n : ℕ} (E : VectorBundle ℂ (Fin n → ℂ) B) (i : ℕ) :
     CohomologyGroup B (2 * i) ℤ :=
   -- 通过复Grassmannian BU(n)的分类映射
@@ -329,14 +360,27 @@ theorem chern_natural {X Y : Type*} [TopologicalSpace X]
   rw [h_nat]
   exact CohomologyPullBack_comp (ComplexClassifyingMap E) f (UniversalChernClass n i)
 
-/-
-## 全Chern类
+/-- Chern类的Whitney和公式
+
+这是Chern类的核心性质，与Stiefel-Whitney类的公式形式相同。
+-/
+theorem chern_whitney_sum {n m : ℕ} 
+    (E : VectorBundle ℂ (Fin n → ℂ) B)
+    (F : VectorBundle ℂ (Fin m → ℂ) B) (k : ℕ) :
+    c_k(DirectSumComplexBundle E F) = ∑ i in Finset.range (k + 1), 
+      CupProduct (c_i(E)) (c_{k - i}(F)) := by
+  -- 与Stiefel-Whitney类类似的证明
+  sorry -- 需要万有丛的Whitney和公式
+
+/-! 
+## 全Chern类 (Total Chern Class)
 
 c(E) = 1 + c₁(E) + c₂(E) + ...
 
 这是形式幂级数，乘积公式简化为：
 c(E⊕F) = c(E)⌣c(F)
 -/
+
 def TotalChernClass {n : ℕ} (E : VectorBundle ℂ (Fin n → ℂ) B) :
     DirectSum (fun i ↦ CohomologyGroup B (2 * i) ℤ) :=
   DirectSum.of fun i ↦ c_i(E)
@@ -351,7 +395,7 @@ theorem total_chern_mul {n m : ℕ}
   -- 证明使用分裂原理和线丛的乘积
   sorry -- 依赖于线丛情形的乘积公式
 
-/-
+/-! 
 ## 分裂原理 (Splitting Principle)
 
 这是计算示性类的基本工具。
@@ -366,6 +410,8 @@ theorem total_chern_mul {n m : ℕ}
 - ch(E) = Σ exp(c₁(Lᵢ))
 
 这使得计算示性类成为多项式代数问题。
+
+**证明思路**：F = Flag(E)是B上的完备旗流形丛。
 -/
 theorem splitting_principle {n : ℕ} (E : VectorBundle ℂ (Fin n → ℂ) B) :
     ∃ (F : Type*) [TopologicalSpace F] (p : F → B) (hp : Continuous p),
@@ -387,8 +433,8 @@ theorem splitting_principle {n : ℕ} (E : VectorBundle ℂ (Fin n → ℂ) B) :
     use FlagBundleLineBundles E
     exact FlagBundleSplitting E
 
-/-
-## Todd类
+/-! 
+## Todd类 (Todd Class)
 
 Todd类与Riemann-Roch定理密切相关。
 
@@ -403,7 +449,8 @@ Td(E) = 1 + (1/2)c₁ + (1/12)(c₁² + c₂) + (1/24)c₁c₂ + ...
 - Hirzebruch-Riemann-Roch定理：
   χ(X,E) = ∫ ch(E)Td(TX)
 - 指标定理中的特征类
--/ 
+-/
+
 def ToddClass {n : ℕ} (E : VectorBundle ℂ (Fin n → ℂ) B) :
     DirectSum (fun i ↦ CohomologyGroup B (2 * i) ℚ) :=
   -- 使用分裂原理定义
@@ -412,7 +459,7 @@ def ToddClass {n : ℕ} (E : VectorBundle ℂ (Fin n → ℂ) B) :
   -- 应用乘积公式
   ∏ i, ToddLineBundle (split.lineBundles i)
 
-/-
+/-! 
 ## Chern特征 (Chern Character)
 
 ch(E) = rank(E) + c₁(E) + (c₁(E)²-2c₂(E))/2 + ...
@@ -425,7 +472,11 @@ ch(E) = Σ exp(xᵢ) = Σ (1 + xᵢ + xᵢ²/2! + ...)
 2. ch(E⊗F) = ch(E)⌣ch(F)（乘法）
 
 这使得ch: K(X) → H*(X; ℚ)成为环同态。
--/ 
+
+**数学意义**：Chern特征将Grothendieck群（K-理论）
+映射到有理上同调，是指标定理的核心。
+-/
+
 def ChernCharacter {n : ℕ} (E : VectorBundle ℂ (Fin n → ℂ) B) :
     DirectSum (fun i ↦ CohomologyGroup B (2 * i) ℚ) :=
   -- 使用分裂原理
@@ -462,8 +513,8 @@ theorem chern_character_mul {n m : ℕ}
   rw [SplittingPrincipleMul E F]
   simp [ChernCharLineBundle_mul]
 
-/-
-## Wu公式
+/-! 
+## Wu公式 (Wu Formula)
 
 这是Stiefel-Whitney类与Steenrod运算的深刻关系。
 
@@ -477,6 +528,9 @@ Sqᵏ(w_{n-k}) = w_k⌣w_{n-k} + 低阶项
 
 更精确的版本（对于切丛）：
 Sq(w_k) = Σ_{i=0}^k C(n-k+i-1, i) w_{k-i}⌣w_i
+
+**数学意义**：Wu公式联系了示性类与Steenrod运算，
+是计算Stiefel-Whitney类的重要工具。
 -/
 theorem wu_formula {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) (k : ℕ) :
     Sq (w_k E) = ∑ i in Finset.range (k + 1), 
@@ -488,7 +542,10 @@ theorem wu_formula {n : ℕ} (E : VectorBundle ℝ (Fin n → ℝ) B) (k : ℕ) 
   -- 4. 组合恒等式给出结果
   sorry -- 这是代数拓扑中的深刻结果
 
-/- 辅助定义 -/
+/-! 
+## 辅助定义
+-/
+
 def CohomologyGroup (B : Type*) [TopologicalSpace B] (i : ℕ) 
     (R : Type*) [CommRing R] : Type _ := 
   -- 使用Čech上同调或奇异上同调

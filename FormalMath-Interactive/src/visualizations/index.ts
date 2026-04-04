@@ -139,8 +139,15 @@ export type {
 } from './optimized';
 
 // ============================================
+// 增强版组件 v4.0
+// ============================================
+
+export { EnhancedD3Graph } from './EnhancedD3Graph';
+
+// ============================================
 // 默认导出
 // ============================================
 
 export { default } from './D3Graph';
 export { OptimizedD3Graph as OptimizedGraph } from './optimized';
+export { EnhancedD3Graph as EnhancedGraph } from './EnhancedD3Graph';

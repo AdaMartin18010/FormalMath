@@ -77,3 +77,39 @@ export {
   PuzzleSolver,
   TutorWidget,
 } from './Gamification';
+
+// SEO 组件
+export {
+  SEOHead,
+} from './SEO';
+
+// 视频播放器组件
+export {
+  VideoPlayer,
+  VideoPlayerContainer,
+  VideoPlayerPage,
+  ChapterMarker,
+  SubtitleDisplay,
+  SubtitleSelector,
+  SubtitleSearch,
+  VideoNotes,
+  VideoRecommendations,
+  CompactRecommendations,
+  VideoControls,
+  VideoProgressBar,
+  VideoPlaylist,
+  MiniPlaylist,
+  VideoManagement,
+  PlaybackStatsView,
+  PlaybackHeatmap,
+  RetentionCurve,
+  type VideoPlayerProps,
+  type VideoPlayerContainerProps,
+  type ChapterMarkerProps,
+  type SubtitleDisplayProps,
+  type VideoNotesProps,
+  type VideoRecommendationsProps,
+  type VideoControlsProps,
+  type VideoProgressBarProps,
+  type VideoPlaylistProps,
+} from './VideoPlayer';

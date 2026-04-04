@@ -1,15 +1,18 @@
 import React, { Suspense, useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { HelmetProvider } from 'react-helmet-async';
 import { Header } from '@components/Header';
 import { Footer } from '@components/Footer';
 import { PageLoading } from '@components/Loading';
+import { SEOHead } from '@components/SEO';
 import { MobileBottomNav } from '@mobile/MobileBottomNav';
 import { MobileDrawer } from '@mobile/MobileDrawer';
 import { PWAInstallPrompt } from '@mobile/PWAInstallPrompt';
 import { useMobileDetect } from '@hooks/mobile/useMobileDetect';
 import { useShakeDetection } from '@hooks/mobile/useMobileDetect';
 import { useDarkMode } from '@hooks/mobile/useDarkMode';
+import { preconnectDomain } from '@utils/seo';
 
 // Lazy load pages for better performance
 const Home = React.lazy(() => import('@pages/Home'));
@@ -22,6 +25,9 @@ const Evolution = React.lazy(() => import('@pages/Evolution'));
 const VisualizationGallery = React.lazy(() => import('@pages/VisualizationGallery'));
 const Analytics = React.lazy(() => import('@pages/Analytics'));
 const ProofAssistant = React.lazy(() => import('@pages/ProofAssistant'));
+const Community = React.lazy(() => import('@pages/Community'));
+const CommunityAdmin = React.lazy(() => import('@pages/Admin/CommunityAdmin'));
+const Exercise = React.lazy(() => import('@pages/Exercise'));
 
 // Create Query Client with mobile optimizations
 const queryClient = new QueryClient({
@@ -35,6 +41,14 @@ const queryClient = new QueryClient({
     },
   },
 });
+
+// SEO预连接优化
+const SEO_OPTIMIZATION = {
+  preconnectDomains: [
+    'https://fonts.googleapis.com',
+    'https://fonts.gstatic.com',
+  ],
+};
 
 // Layout wrapper for pages with header only
 const SimpleLayout: React.FC<{ 
@@ -125,6 +139,14 @@ function App() {
   const { isDark } = useDarkMode();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // SEO预连接优化
+  useEffect(() => {
+    SEO_OPTIMIZATION.preconnectDomains.forEach(domain => {
+      preconnectDomain(domain, domain.includes('gstatic'));
+    });
+  }, []);
 
   // 移除初始加载器
   useEffect(() => {
@@ -160,9 +182,18 @@ function App() {
     },
   });
 
+  // 获取当前页面key
+  const getPageKey = () => {
+    const path = location.pathname.replace('/FormalMath', '').replace(/^\//, '');
+    return path || 'home';
+  };
+
   return (
+    <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <ErrorBoundary>
+        {/* SEO Head 组件 */}
+        <SEOHead pageKey={getPageKey()} />
         <div className={cn(
           "min-h-screen transition-colors",
           isDark ? "dark bg-slate-900" : "bg-white"
@@ -276,6 +307,40 @@ function App() {
               }
             />
 
+            {/* Community Page */}
+            <Route
+              path="/community"
+              element={
+                <SimpleLayout isMobile={isMobile}>
+                  <Suspense fallback={<PageLoading title="正在加载学习社区" />}>
+                    <Community />
+                  </Suspense>
+                </SimpleLayout>
+              }
+            />
+
+            {/* Community Admin Page */}
+            <Route
+              path="/admin/community"
+              element={
+                <Suspense fallback={<PageLoading title="正在加载管理后台" />}>
+                  <CommunityAdmin />
+                </Suspense>
+              }
+            />
+
+            {/* Exercise Page */}
+            <Route
+              path="/exercise"
+              element={
+                <SimpleLayout isMobile={isMobile}>
+                  <Suspense fallback={<PageLoading title="正在加载练习系统" />}>
+                    <Exercise />
+                  </Suspense>
+                </SimpleLayout>
+              }
+            />
+
             {/* Visualization Gallery Page */}
             <Route
               path="/visualization-gallery"
@@ -328,6 +393,7 @@ function App() {
         </div>
       </ErrorBoundary>
     </QueryClientProvider>
+    </HelmetProvider>
   );
 }
 

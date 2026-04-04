@@ -1,0 +1,42 @@
+{
+  "e3fd47fc8692": {
+    "document_id": "e3fd47fc8692",
+    "document_path": "G:\\_src\\FormalMath\\tools\\content-review-workflow\\demo\\example_document.md",
+    "submitter": "demo_user",
+    "submit_time": "2026-04-04T16:21:59.405372",
+    "current_status": "published",
+    "assigned_reviewer": "auto",
+    "review_level": "level_1_auto",
+    "events": [
+      {
+        "timestamp": "2026-04-04T16:21:59.405372",
+        "status": "pending",
+        "reviewer": null,
+        "comment": "文档提交，等待审核",
+        "action": "submit"
+      },
+      {
+        "timestamp": "2026-04-04T16:22:26.966329",
+        "status": "in_review",
+        "reviewer": "auto",
+        "comment": "自动审核中，质量得分: 97",
+        "action": "status_change"
+      },
+      {
+        "timestamp": "2026-04-04T16:22:26.968026",
+        "status": "approved",
+        "reviewer": "auto",
+        "comment": "自动审核通过，质量得分: 97",
+        "action": "status_change"
+      },
+      {
+        "timestamp": "2026-04-04T16:22:26.968733",
+        "status": "published",
+        "reviewer": null,
+        "comment": "文档已发布",
+        "action": "status_change"
+      }
+    ],
+    "metadata": {}
+  }
+}

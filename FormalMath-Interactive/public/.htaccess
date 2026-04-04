@@ -1,0 +1,113 @@
+# Apache .htaccess for FormalMath Interactive
+# SEO优化配置
+
+# 启用RewriteEngine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /FormalMath/
+
+  # 强制HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 移除www前缀
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # SPA路由支持 - 所有请求指向index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [QSA,L]
+</IfModule>
+
+# 启用压缩
+<IfModule mod_deflate.c>
+  # 压缩文本、HTML、JavaScript、CSS、XML
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  
+  # 移除浏览器bug
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+# 浏览器缓存控制
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # 图片缓存1年
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  
+  # 字体缓存1年
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+  
+  # CSS/JS缓存1个月
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/json "access plus 1 month"
+  
+  # HTML不缓存
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# 安全头部
+<IfModule mod_headers.c>
+  # X-Frame-Options
+  Header always set X-Frame-Options "SAMEORIGIN"
+  
+  # X-Content-Type-Options
+  Header always set X-Content-Type-Options "nosniff"
+  
+  # X-XSS-Protection
+  Header always set X-XSS-Protection "1; mode=block"
+  
+  # Referrer-Policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # Permissions-Policy
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  
+  # 为静态资源添加缓存控制头部
+  <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|webp|js|css|swf|woff2|woff|ttf|svg)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+</IfModule>
+
+# 默认字符集
+AddDefaultCharset UTF-8
+
+# 错误页面
+ErrorDocument 404 /FormalMath/
+ErrorDocument 500 /FormalMath/
+
+# 禁用目录浏览
+Options -Indexes
+
+# 保护敏感文件
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(md|log|ini|json|lock|yaml|yml)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>

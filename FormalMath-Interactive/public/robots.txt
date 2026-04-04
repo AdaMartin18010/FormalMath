@@ -1,0 +1,49 @@
+# robots.txt for FormalMath Interactive
+# 搜索引擎爬虫配置
+
+User-agent: *
+Allow: /
+
+# 禁止爬虫访问的目录
+Disallow: /api/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /*?*
+
+# 允许访问重要页面
+Allow: /knowledge-graph
+Allow: /reasoning-tree
+Allow: /mind-map
+Allow: /comparison
+Allow: /decision-tree
+Allow: /evolution
+Allow: /analytics
+Allow: /proof-assistant
+Allow: /visualization-gallery
+
+# 爬虫延迟（秒）
+Crawl-delay: 1
+
+# Sitemap位置
+Sitemap: https://formalmath.example.com/sitemap.xml
+
+# 特定爬虫配置
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# 禁止特定爬虫
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

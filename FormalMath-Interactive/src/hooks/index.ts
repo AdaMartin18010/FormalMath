@@ -8,6 +8,11 @@ export { useDiagnosis } from './useDiagnosis';
 export { useEvaluation } from './useEvaluation';
 export { useProgressTracking } from './useProgressTracking';
 
+// 数据分析 hooks
+export { useRealtimeAnalytics, useDataChanges } from './useRealtimeAnalytics';
+export { useDataExport } from './useDataExport';
+export { useCustomReport } from './useCustomReport';
+
 // 协作 hooks
 export {
   useConnectionState,
@@ -65,3 +70,27 @@ export {
   useNotificationPermission,
   useLearningTracker,
 } from './useReminder';
+
+// SEO hooks
+export {
+  useSEO,
+  usePageSEO,
+  useConceptSEO,
+  usePreloadAssets,
+} from './useSEO';
+
+// 视频播放器 hooks
+export {
+  useVideoPlayer,
+  useVideoNotes,
+  useSubtitles,
+  useVideoChapters,
+  usePlaybackProgress,
+} from './useVideo';
+
+// 练习系统 hooks
+export {
+  useExercise,
+  useMistakeBook,
+  useExerciseSession,
+} from './useExercise';

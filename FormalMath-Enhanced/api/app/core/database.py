@@ -117,6 +117,32 @@ class DatabaseManager:
                 ON user_activities(user_id, activity_type, created_at DESC)
             """))
             
+            # 反馈系统索引
+            conn.execute(text("""
+                CREATE INDEX IF NOT EXISTS idx_feedback_status_created
+                ON user_feedbacks(status, created_at DESC)
+            """))
+            
+            conn.execute(text("""
+                CREATE INDEX IF NOT EXISTS idx_feedback_type_priority
+                ON user_feedbacks(feedback_type, priority)
+            """))
+            
+            conn.execute(text("""
+                CREATE INDEX IF NOT EXISTS idx_feedback_user_created
+                ON user_feedbacks(user_id, created_at DESC)
+            """))
+            
+            conn.execute(text("""
+                CREATE INDEX IF NOT EXISTS idx_feedback_assigned
+                ON user_feedbacks(assigned_to, status)
+            """))
+            
+            conn.execute(text("""
+                CREATE INDEX IF NOT EXISTS idx_feedback_analytics_period
+                ON feedback_analytics(period_type, period_start)
+            """))
+            
             conn.commit()
         
         logger.info("数据库索引创建完成")

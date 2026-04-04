@@ -4,7 +4,7 @@ import { Trophy, Medal, Crown, Flame, Target, Clock, TrendingUp, ChevronDown, Ch
 type LeaderboardType = 'weekly' | 'monthly' | 'all-time' | 'streak' | 'problems';
 type LeaderboardScope = 'global' | 'friends' | 'group';
 
-interface LeaderboardEntry {
+export interface LeaderboardEntry {
   rank: number;
   userId: string;
   name: string;
@@ -21,7 +21,7 @@ interface LeaderboardEntry {
   isCurrentUser?: boolean;
 }
 
-interface LeaderboardProps {
+export interface LeaderboardProps {
   type?: LeaderboardType;
   scope?: LeaderboardScope;
   entries: LeaderboardEntry[];

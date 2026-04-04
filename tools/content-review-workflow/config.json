@@ -1,0 +1,51 @@
+{
+  "auto_approve_threshold": 90,
+  "auto_reject_threshold": 30,
+  "notification_enabled": true,
+  "review_levels": {
+    "level_1_auto": {
+      "name": "一级自动审核",
+      "description": "全自动审核，无需人工干预",
+      "auto": true,
+      "min_score": 80
+    },
+    "level_2_semi": {
+      "name": "二级半自动审核",
+      "description": "自动审核+人工确认",
+      "auto": false,
+      "min_approvers": 1
+    },
+    "level_3_manual": {
+      "name": "三级人工审核",
+      "description": "完全人工审核",
+      "auto": false,
+      "min_approvers": 2
+    }
+  },
+  "notifications": {
+    "channels": ["email", "webhook", "internal_message"],
+    "events": {
+      "review_assigned": {
+        "enabled": true,
+        "urgency": "normal"
+      },
+      "review_completed": {
+        "enabled": true,
+        "urgency": "normal"
+      },
+      "revision_required": {
+        "enabled": true,
+        "urgency": "high"
+      },
+      "content_published": {
+        "enabled": true,
+        "urgency": "low"
+      }
+    }
+  },
+  "storage": {
+    "records_path": "data/review_records.json",
+    "backup_enabled": true,
+    "backup_interval_days": 7
+  }
+}

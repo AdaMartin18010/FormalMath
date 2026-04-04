@@ -17,7 +17,7 @@
 - `Mathlib.Analysis.NormedSpace.Basic`
 
 本文件建立一致收敛的核心定理，包括连续性、积分和微分的极限交换。
--/"
+-/
 
 import FormalMath.Mathlib.Topology.UniformSpace.UniformConvergence
 import FormalMath.Mathlib.Topology.Sequences

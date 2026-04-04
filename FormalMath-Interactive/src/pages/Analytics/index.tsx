@@ -1,15 +1,27 @@
 /**
- * FormalMath 数据分析仪表板页面
- * 整合学习进度、概念掌握、效率分析、知识网络和预测分析
+ * FormalMath 数据分析仪表板页面（优化版）
+ * 
+ * 新增功能：
+ * - 实时数据更新
+ * - 优化的图表交互体验
+ * - 数据导出功能
+ * - 自定义报表
+ * - 移动端适配
  */
 
-import React, { useEffect, useState, useCallback } from 'react';
-import { analyticsApi } from '@api/analytics';
-import { ProgressDashboard } from './components/ProgressDashboard';
-import { MasteryHeatmap } from './components/MasteryHeatmap';
-import { EfficiencyAnalysis } from './components/EfficiencyAnalysis';
-import { KnowledgeNetwork } from './components/KnowledgeNetwork';
-import { PredictionAnalysis } from './components/PredictionAnalysis';
+import React, { useEffect, useState, useCallback, useMemo } from 'react';
+import { useRealtimeAnalytics } from '@hooks/useRealtimeAnalytics';
+import { useMobileDetect } from '@hooks/mobile/useMobileDetect';
+import { 
+  ProgressDashboard, 
+  MasteryHeatmap, 
+  EfficiencyAnalysis, 
+  KnowledgeNetwork, 
+  PredictionAnalysis,
+  ExportPanel,
+  CustomReportBuilder,
+  RealtimeIndicator,
+} from './components';
 import type {
   LearningProgressData,
   MasteryHeatmapData,
@@ -17,15 +29,19 @@ import type {
   KnowledgeNetworkData,
   PredictionData,
 } from '@types/analytics';
-import { Download, RefreshCw, Filter } from 'lucide-react';
+import { 
+  Download, RefreshCw, Filter, LayoutGrid, 
+  Settings, ChevronLeft, ChevronRight, Menu, X,
+  FileText, BarChart3, PieChart, TrendingUp, Network, Sparkles
+} from 'lucide-react';
 
 type DashboardSection = 'progress' | 'heatmap' | 'efficiency' | 'network' | 'prediction';
 
-// 模拟数据生成器 - 用于演示
+// ==================== 模拟数据生成器 ====================
+
 const generateMockData = (userId: string) => {
   const now = new Date().toISOString();
   
-  // 学习进度数据
   const progressData: LearningProgressData = {
     userId,
     generatedAt: now,
@@ -55,7 +71,6 @@ const generateMockData = (userId: string) => {
         targetConcepts: 50,
         completedConcepts: 45,
         progress: 90,
-        achievedAt: undefined,
         deadline: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
         status: 'in_progress',
       },
@@ -81,20 +96,9 @@ const generateMockData = (userId: string) => {
         progress: 75,
         status: 'active',
       },
-      {
-        id: '2',
-        title: '每周学习时间',
-        description: '每周至少学习8小时',
-        targetValue: 480,
-        currentValue: 360,
-        unit: '分钟',
-        progress: 75,
-        status: 'active',
-      },
     ],
   };
 
-  // 热力图数据
   const categories = [
     { id: 'algebra', name: '代数', color: '#3b82f6', conceptCount: 40 },
     { id: 'geometry', name: '几何', color: '#22c55e', conceptCount: 35 },
@@ -131,7 +135,6 @@ const generateMockData = (userId: string) => {
     },
   };
 
-  // 效率分析数据
   const efficiencyData: EfficiencyAnalysisData = {
     userId,
     generatedAt: now,
@@ -161,21 +164,15 @@ const generateMockData = (userId: string) => {
     },
     learningPatterns: [
       { id: '1', name: '晨间学习', description: '上午9-11点学习效率最高', frequency: 5, avgEfficiency: 88, trend: 'improving' },
-      { id: '2', name: '短时高频', description: '多次短时间学习', frequency: 7, avgEfficiency: 75, trend: 'stable' },
     ],
     optimalConditions: [
       { factor: '学习时段', optimalValue: '上午9-11点', impact: 15, confidence: 0.85 },
-      { factor: '单次时长', optimalValue: '60-90分钟', impact: 12, confidence: 0.78 },
-      { factor: '休息间隔', optimalValue: '每30分钟休息5分钟', impact: 8, confidence: 0.72 },
     ],
     recommendations: [
       { id: '1', type: 'schedule', title: '调整学习时间', description: '将重要概念学习安排在上午9-11点', expectedImprovement: 15, priority: 'high' },
-      { id: '2', type: 'time', title: '控制单次学习时长', description: '单次学习控制在60-90分钟', expectedImprovement: 10, priority: 'medium' },
-      { id: '3', type: 'break', title: '增加休息频率', description: '每学习30分钟休息5分钟', expectedImprovement: 8, priority: 'medium' },
     ],
   };
 
-  // 知识网络数据
   const networkData: KnowledgeNetworkData = {
     userId,
     generatedAt: now,
@@ -219,11 +216,9 @@ const generateMockData = (userId: string) => {
     bridges: [
       { conceptId: 'concept-5', conceptName: '函数', betweenness: 0.85, connectsCommunities: ['代数', '分析'], importance: 'critical' },
       { conceptId: 'concept-15', conceptName: '证明方法', betweenness: 0.72, connectsCommunities: ['逻辑', '几何'], importance: 'important' },
-      { conceptId: 'concept-25', conceptName: '集合论', betweenness: 0.65, connectsCommunities: ['逻辑', '代数'], importance: 'important' },
     ],
   };
 
-  // 预测数据
   const predictionData: PredictionData = {
     userId,
     generatedAt: now,
@@ -257,15 +252,12 @@ const generateMockData = (userId: string) => {
       overallRisk: 'medium',
       riskFactors: [
         { type: 'time', severity: 'medium', description: '最近一周学习时间有所下降', probability: 0.6 },
-        { type: 'difficulty', severity: 'low', description: '即将进入高难度内容区域', probability: 0.4 },
       ],
       atRiskConcepts: [
         { conceptId: 'c1', conceptName: '实数完备性', riskLevel: 'medium', reason: '前置概念掌握不足' },
-        { conceptId: 'c2', conceptName: '一致连续', riskLevel: 'low', reason: '学习时间较少' },
       ],
       mitigationStrategies: [
         { targetRisk: '学习时间下降', action: '设置每日学习提醒', expectedEffect: '提高学习规律性', priority: 'high' },
-        { targetRisk: '难度适应', action: '增加前置知识复习', expectedEffect: '降低学习难度', priority: 'medium' },
       ],
     },
     adaptiveSuggestions: [
@@ -278,13 +270,19 @@ const generateMockData = (userId: string) => {
   return { progressData, heatmapData, efficiencyData, networkData, predictionData };
 };
 
-/**
- * 数据分析仪表板页面
- */
+// ==================== 主组件 ====================
+
 const AnalyticsPage: React.FC = () => {
   const [activeSection, setActiveSection] = useState<DashboardSection>('progress');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [showExportPanel, setShowExportPanel] = useState(false);
+  const [showCustomReport, setShowCustomReport] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  // 检测移动端
+  const { isMobile, isTablet } = useMobileDetect();
+  const isSmallScreen = isMobile || isTablet;
   
   // 数据状态
   const [progressData, setProgressData] = useState<LearningProgressData | null>(null);
@@ -292,6 +290,12 @@ const AnalyticsPage: React.FC = () => {
   const [efficiencyData, setEfficiencyData] = useState<EfficiencyAnalysisData | null>(null);
   const [networkData, setNetworkData] = useState<KnowledgeNetworkData | null>(null);
   const [predictionData, setPredictionData] = useState<PredictionData | null>(null);
+  
+  // 实时数据（模拟）
+  const { lastUpdate, isConnected, connectionStatus, refresh } = useRealtimeAnalytics('user-1', {
+    enabled: true,
+    interval: 30000,
+  });
 
   // 加载数据
   const loadData = useCallback(async () => {
@@ -299,15 +303,7 @@ const AnalyticsPage: React.FC = () => {
     setError(null);
 
     try {
-      // 实际项目中这里应该调用真实的API
-      // const progress = await analyticsApi.getLearningProgress('user-1');
-      // const heatmap = await analyticsApi.getMasteryHeatmap('user-1');
-      // ...
-
-      // 使用模拟数据
       const mock = generateMockData('user-1');
-      
-      // 模拟网络延迟
       await new Promise(resolve => setTimeout(resolve, 800));
 
       setProgressData(mock.progressData);
@@ -326,11 +322,14 @@ const AnalyticsPage: React.FC = () => {
     loadData();
   }, [loadData]);
 
-  // 导出报告
-  const handleExport = async () => {
-    // 实际项目中调用导出API
-    console.log('导出报告...');
-  };
+  // 导航配置
+  const sections = useMemo(() => [
+    { key: 'progress' as DashboardSection, label: '学习进度', icon: BarChart3, color: 'blue' },
+    { key: 'heatmap' as DashboardSection, label: '掌握热力图', icon: PieChart, color: 'orange' },
+    { key: 'efficiency' as DashboardSection, label: '效率分析', icon: TrendingUp, color: 'green' },
+    { key: 'network' as DashboardSection, label: '知识网络', icon: Network, color: 'purple' },
+    { key: 'prediction' as DashboardSection, label: '预测分析', icon: Sparkles, color: 'pink' },
+  ], []);
 
   // 渲染内容
   const renderContent = () => {
@@ -358,7 +357,7 @@ const AnalyticsPage: React.FC = () => {
     }
 
     return (
-      <div className="space-y-6">
+      <div className="space-y-6 animate-fadeIn">
         {activeSection === 'progress' && progressData && (
           <ProgressDashboard 
             data={progressData} 
@@ -388,74 +387,175 @@ const AnalyticsPage: React.FC = () => {
     );
   };
 
-  const sections: { key: DashboardSection; label: string; icon: string }[] = [
-    { key: 'progress', label: '学习进度', icon: '📊' },
-    { key: 'heatmap', label: '掌握热力图', icon: '🔥' },
-    { key: 'efficiency', label: '效率分析', icon: '⚡' },
-    { key: 'network', label: '知识网络', icon: '🕸️' },
-    { key: 'prediction', label: '预测分析', icon: '🔮' },
-  ];
+  // 移动端底部导航
+  const MobileNav = () => (
+    <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-800 border-t border-gray-200 dark:border-slate-700 z-40">
+      <div className="flex justify-around p-2">
+        {sections.map((section) => {
+          const Icon = section.icon;
+          const isActive = activeSection === section.key;
+          return (
+            <button
+              key={section.key}
+              onClick={() => setActiveSection(section.key)}
+              className={`flex flex-col items-center p-2 rounded-lg transition-colors ${
+                isActive 
+                  ? `text-${section.color}-600 bg-${section.color}-50 dark:bg-${section.color}-900/20` 
+                  : 'text-gray-500 dark:text-gray-400'
+              }`}
+            >
+              <Icon className="w-5 h-5" />
+              <span className="text-xs mt-1">{section.label.slice(0, 2)}</span>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-slate-900 py-6 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* 页面头部 */}
-        <div className="mb-8">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                学习数据分析仪表板
-              </h1>
-              <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                深入了解您的学习进度、效率和知识掌握情况
-              </p>
+    <div className="min-h-screen bg-gray-50 dark:bg-slate-900 pb-20 md:pb-6">
+      {/* 顶部导航栏 - 移动端优化 */}
+      <header className="sticky top-0 z-30 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-gray-200 dark:border-slate-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            {/* 左侧：标题 */}
+            <div className="flex items-center gap-3">
+              {isSmallScreen && (
+                <button
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                  className="p-2 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-lg"
+                >
+                  {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+                </button>
+              )}
+              <div>
+                <h1 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
+                  数据分析仪表板
+                </h1>
+                <p className="hidden sm:block text-xs text-gray-500 dark:text-gray-400">
+                  深入了解您的学习进度和效率
+                </p>
+              </div>
             </div>
-            <div className="flex gap-2">
+
+            {/* 右侧：操作按钮 */}
+            <div className="flex items-center gap-2">
+              {/* 实时状态指示器 - 桌面端显示 */}
+              {!isSmallScreen && (
+                <RealtimeIndicator
+                  isConnected={isConnected}
+                  lastUpdate={lastUpdate}
+                  connectionStatus={connectionStatus}
+                  onRefresh={refresh}
+                  isRefreshing={loading}
+                />
+              )}
+
               <button
-                onClick={loadData}
-                disabled={loading}
-                className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 border border-gray-300 dark:border-slate-600 
-                         text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 
-                         transition-colors disabled:opacity-50"
+                onClick={() => setShowCustomReport(true)}
+                className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-gray-700 
+                         dark:text-gray-300 bg-white dark:bg-slate-700 border border-gray-300 
+                         dark:border-slate-600 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-600
+                         transition-colors"
               >
-                <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
-                刷新
+                <LayoutGrid className="w-4 h-4" />
+                <span className="hidden sm:inline">自定义报表</span>
               </button>
+
               <button
-                onClick={handleExport}
-                className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg 
-                         hover:bg-blue-700 transition-colors"
+                onClick={() => setShowExportPanel(true)}
+                className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-white 
+                         bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 <Download className="w-4 h-4" />
-                导出报告
+                <span className="hidden sm:inline">导出</span>
               </button>
             </div>
           </div>
         </div>
 
-        {/* 导航标签 */}
-        <div className="mb-6 overflow-x-auto">
-          <div className="flex gap-2 min-w-max">
-            {sections.map((section) => (
-              <button
-                key={section.key}
-                onClick={() => setActiveSection(section.key)}
-                className={`flex items-center gap-2 px-4 py-3 rounded-lg font-medium transition-all ${
-                  activeSection === section.key
-                    ? 'bg-blue-600 text-white shadow-md'
-                    : 'bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700'
-                }`}
-              >
-                <span>{section.icon}</span>
-                <span>{section.label}</span>
-              </button>
-            ))}
+        {/* 移动端菜单 */}
+        {isSmallScreen && mobileMenuOpen && (
+          <div className="border-t border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800">
+            <div className="px-4 py-3">
+              <RealtimeIndicator
+                isConnected={isConnected}
+                lastUpdate={lastUpdate}
+                connectionStatus={connectionStatus}
+                onRefresh={refresh}
+                isRefreshing={loading}
+              />
+            </div>
+          </div>
+        )}
+      </header>
+
+      {/* 桌面端导航标签 */}
+      {!isSmallScreen && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+            {sections.map((section) => {
+              const Icon = section.icon;
+              const isActive = activeSection === section.key;
+              return (
+                <button
+                  key={section.key}
+                  onClick={() => setActiveSection(section.key)}
+                  className={`flex items-center gap-2 px-4 py-2.5 rounded-lg font-medium 
+                           whitespace-nowrap transition-all ${
+                    isActive
+                      ? 'bg-blue-600 text-white shadow-md shadow-blue-600/20'
+                      : 'bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700'
+                  }`}
+                >
+                  <Icon className="w-4 h-4" />
+                  {section.label}
+                </button>
+              );
+            })}
           </div>
         </div>
+      )}
 
-        {/* 主要内容 */}
+      {/* 主内容区 */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         {renderContent()}
-      </div>
+      </main>
+
+      {/* 移动端底部导航 */}
+      {isSmallScreen && <MobileNav />}
+
+      {/* 导出面板 */}
+      {showExportPanel && (
+        <ExportPanel
+          data={{ progress: progressData, heatmap: heatmapData, efficiency: efficiencyData, network: networkData, prediction: predictionData }}
+          onClose={() => setShowExportPanel(false)}
+        />
+      )}
+
+      {/* 自定义报表构建器 */}
+      {showCustomReport && (
+        <CustomReportBuilder onClose={() => setShowCustomReport(false)} />
+      )}
+
+      {/* 添加全局动画样式 */}
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </div>
   );
 };

@@ -42,7 +42,7 @@ interface StudyGroup {
   };
 }
 
-interface StudyGroupProps {
+export interface StudyGroupProps {
   group: StudyGroup;
   members: GroupMember[];
   currentUserId: string;

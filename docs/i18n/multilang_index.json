@@ -1,0 +1,136 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-04-04",
+  "languages": ["zh", "en", "de", "fr", "ja"],
+  "concepts": [
+    {
+      "concept_id": "group",
+      "category": "algebra",
+      "msc": "20-XX",
+      "translations": {
+        "zh": {
+          "name": "群",
+          "path": "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+        },
+        "en": {
+          "name": "Group",
+          "path": "docs/i18n/en/core/Group.md"
+        },
+        "de": {
+          "name": "Gruppe",
+          "path": "docs/i18n/de/core/Gruppe.md"
+        },
+        "fr": {
+          "name": "Groupe",
+          "path": "docs/i18n/fr/core/Groupe.md"
+        },
+        "ja": {
+          "name": "群",
+          "path": "docs/i18n/ja/core/群.md"
+        }
+      },
+      "status": "completed"
+    },
+    {
+      "concept_id": "ring",
+      "category": "algebra",
+      "msc": "16-XX",
+      "translations": {
+        "zh": {
+          "name": "环",
+          "path": "docs/02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md"
+        },
+        "en": {
+          "name": "Ring",
+          "path": "docs/i18n/en/core/Ring.md"
+        },
+        "de": {
+          "name": "Ring",
+          "path": "docs/i18n/de/core/Ring.md"
+        },
+        "fr": {
+          "name": "Anneau",
+          "path": "docs/i18n/fr/core/Anneau.md"
+        },
+        "ja": {
+          "name": "環",
+          "path": "docs/i18n/ja/core/環.md"
+        }
+      },
+      "status": "completed"
+    },
+    {
+      "concept_id": "field",
+      "category": "algebra",
+      "msc": "12-XX",
+      "translations": {
+        "zh": {
+          "name": "域",
+          "path": "docs/02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md"
+        },
+        "en": {
+          "name": "Field",
+          "path": "docs/i18n/en/core/Field.md"
+        },
+        "de": {
+          "name": "Körper",
+          "path": "docs/i18n/de/core/Körper.md"
+        },
+        "fr": {
+          "name": "Corps",
+          "path": "docs/i18n/fr/core/Corps.md"
+        },
+        "ja": {
+          "name": "体",
+          "path": "docs/i18n/ja/core/体.md"
+        }
+      },
+      "status": "completed"
+    },
+    {
+      "concept_id": "limit",
+      "category": "analysis",
+      "msc": "26-XX",
+      "translations": {
+        "zh": {
+          "name": "极限",
+          "path": "docs/01-基础数学/集合论/01-集合论基础-国际标准版.md"
+        },
+        "en": {
+          "name": "Limit",
+          "path": "docs/i18n/en/core/Limit.md"
+        },
+        "de": {
+          "name": "Grenzwert",
+          "path": "docs/i18n/de/core/Grenzwert.md"
+        },
+        "fr": {
+          "name": "Limite",
+          "path": "docs/i18n/fr/core/Limite.md"
+        },
+        "ja": {
+          "name": "極限",
+          "path": "docs/i18n/ja/core/極限.md"
+        }
+      },
+      "status": "completed"
+    }
+  ],
+  "statistics": {
+    "total_concepts": 4,
+    "completed": 4,
+    "in_progress": 0,
+    "planned": 0,
+    "by_language": {
+      "zh": 4,
+      "en": 4,
+      "de": 4,
+      "fr": 4,
+      "ja": 4
+    },
+    "by_category": {
+      "algebra": 3,
+      "analysis": 1
+    }
+  }
+}

@@ -1,0 +1,358 @@
+/-
+# 复分析进阶 (Complex Analysis - Advanced)
+
+## 数学背景
+
+复分析研究复变函数的性质，是数学的核心分支之一。
+它连接了分析、几何、代数等多个领域。
+
+## 核心定理
+- Cauchy积分定理与公式
+- 留数定理
+- Riemann映射定理
+- Picard定理
+- 全纯函数的零点分布
+- 最大模原理
+
+## 参考
+- Ahlfors, "Complex Analysis"
+- Conway, "Functions of One Complex Variable"
+- Stein & Shakarchi, "Complex Analysis"
+- 龚昇, 《简明复分析》
+- 钟玉泉, 《复变函数论》
+
+## 历史背景
+复分析起源于18世纪Euler和d'Alembert的工作，
+由Cauchy、Riemann、Weierstrass在19世纪发展为现代形式。
+Cauchy的积分理论、Riemann的几何观点、Weierstrass的级数方法
+构成了复分析的三大支柱。
+-/
+
+import Mathlib.Analysis.Complex.Basic
+import Mathlib.Analysis.Calculus.ContDiff.Basic
+import Mathlib.MeasureTheory.Integral.IntervalIntegral
+
+namespace ComplexAnalysisAdvanced
+
+open Complex Filter Topology
+
+universe u v
+
+/-
+## 全纯函数 (Holomorphic Functions)
+
+复变函数在某点全纯，如果它在该点复可微。
+全纯函数具有惊人的正则性：一旦复可微，就无限次可微，
+且在其定义域内解析（可展开为幂级数）。
+
+这是复分析与实分析的根本区别。
+-/
+
+/-- 函数在一点全纯 -/
+def HolomorphicAt {U : Set ℂ} (f : ℂ → ℂ) (z₀ : ℂ) : Prop :=
+  DifferentiableAt ℂ f z₀
+
+/-- 函数在区域上全纯 -/
+def HolomorphicOn {U : Set ℂ} (f : ℂ → ℂ) : Prop :=
+  DifferentiableOn ℂ f U
+
+/-- 解析函数：可展开为幂级数 -/
+def AnalyticAt (f : ℂ → ℂ) (z₀ : ℂ) : Prop :=
+  ∃ (r : ℝ) (hr : r > 0) (a : ℕ → ℂ), ∀ z ∈ Metric.ball z₀ r,
+    f z = ∑' n : ℕ, a n * (z - z₀) ^ n
+
+/-
+## Cauchy-Riemann方程
+
+f(z) = u(x,y) + iv(x,y) 全纯当且仅当满足Cauchy-Riemann方程：
+∂u/∂x = ∂v/∂y, ∂u/∂y = -∂v/∂x
+
+这是判断函数全纯性的基本准则。
+-/
+
+/-- Cauchy-Riemann方程 -/
+structure CauchyRiemannEquations (u v : ℝ → ℝ → ℝ) : Prop where
+  ux_eq_vy : ∀ x y, deriv (u x) y = deriv (fun x' ↦ v x' y) x
+  uy_eq_neg_vx : ∀ x y, deriv (fun y' ↦ u x y') y = -deriv (v y) x
+
+/-- 全纯性与Cauchy-Riemann方程的等价性 -/
+theorem holomorphic_iff_cauchy_riemann (f : ℂ → ℂ) (z₀ : ℂ) :
+    HolomorphicAt f z₀ ↔ 
+    let u := fun x y ↦ (f (x + I * y)).re
+    let v := fun x y ↦ (f (x + I * y)).im
+    CauchyRiemannEquations u v := by
+  -- 证明：这是复可微的等价刻画
+  -- (⇒) 若f全纯，则方向导数沿实轴和虚轴满足C-R方程
+  -- (⇐) 若满足C-R方程，且u,v可微，则f复可微
+  sorry
+
+/-
+## Cauchy积分定理 (Cauchy's Integral Theorem)
+
+若f在单连通区域D内全纯，γ是D内的闭曲线，则
+∮_γ f(z) dz = 0
+
+这是复分析最基本、最重要的定理。
+-/
+
+/-- 复积分：沿曲线的积分 -/
+def ComplexIntegral {γ : ℝ → ℂ} (hγ : Differentiable ℝ γ) 
+    (f : ℂ → ℂ) : ℂ :=
+  -- ∫₀¹ f(γ(t)) γ'(t) dt
+  sorry
+
+/-- Cauchy积分定理 -/
+theorem cauchy_integral_theorem {U : Set ℂ} (hU : IsOpen U) 
+    (h_connected : SimplyConnected U) {f : ℂ → ℂ} 
+    (hf : HolomorphicOn f U) {γ : ℝ → ℂ} (hγ : Differentiable ℝ γ)
+    (hγ_image : ∀ t, γ t ∈ U) (hγ_closed : γ 0 = γ 1) :
+    ComplexIntegral hγ f = 0 := by
+  -- 证明思路：
+  -- 1. 利用Green定理（将复积分转化为二重积分）
+  -- 2. 利用Cauchy-Riemann方程，被积函数为0
+  -- 3. 或者直接利用原函数的存在性
+  sorry
+
+/-
+## Cauchy积分公式 (Cauchy's Integral Formula)
+
+若f在闭圆盘|z-z₀|≤r上全纯，则对|z-z₀|<r内的任意点：
+f(z) = (1/2πi) ∮_{|ζ-z₀|=r} f(ζ)/(ζ-z) dζ
+
+这表明全纯函数在圆盘内的值完全由边界值决定。
+-/
+
+/-- Cauchy积分公式 -/
+theorem cauchy_integral_formula {f : ℂ → ℂ} {z₀ : ℂ} {r : ℝ} (hr : r > 0)
+    (hf : HolomorphicOn f (Metric.closedBall z₀ r)) (z : ℂ) 
+    (hz : z ∈ Metric.ball z₀ r) :
+    f z = (1 / (2 * π * I)) * ∮ (ζ : ℂ) in Metric.sphere z₀ r, 
+      f ζ / (ζ - z) := by
+  -- 证明：构造辅助函数g(ζ) = (f(ζ)-f(z))/(ζ-z)，应用Cauchy积分定理
+  -- 利用留数或直接计算
+  sorry
+
+/-
+## 全纯函数的幂级数展开
+
+全纯函数局部可展开为幂级数。
+这是全纯函数最重要的性质之一。
+-/
+
+/-- 全纯函数的Taylor展开 -/
+theorem holomorphic_taylor_expansion {f : ℂ → ℂ} {z₀ : ℂ} 
+    (hf : HolomorphicAt f z₀) :
+    ∃ (r : ℝ) (hr : r > 0) (a : ℕ → ℂ), ∀ z ∈ Metric.ball z₀ r,
+      f z = ∑' n : ℕ, a n * (z - z₀) ^ n := by
+  -- 证明：利用Cauchy积分公式
+  -- f(z) = (1/2πi) ∮ f(ζ)/(ζ-z) dζ
+  -- 对1/(ζ-z)在z₀处展开为几何级数
+  -- 逐项积分
+  sorry
+
+/-
+## 留数定理 (Residue Theorem)
+
+若f在区域D内除有限个奇点外全纯，γ是D内的闭曲线，则
+∮_γ f(z) dz = 2πi × (留数之和)
+
+留数定理是计算复积分的强大工具，也是计算实积分的有力方法。
+-/
+
+/-- 孤立奇点 -/
+structure IsolatedSingularity (f : ℂ → ℂ) (z₀ : ℂ) : Prop where
+  punctured_neighborhood : ∃ r > 0, ∀ z ∈ Metric.ball z₀ r \ {z₀}, 
+    DifferentiableAt ℂ f z
+
+/-- 奇点的类型 -/
+inductive SingularityType (f : ℂ → ℂ) (z₀ : ℂ)
+  | removable : SingularityType f z₀
+  | pole (order : ℕ) : SingularityType f z₀
+  | essential : SingularityType f z₀
+
+/-- 留数：洛朗展开中(z-z₀)^(-1)的系数 -/
+def Residue (f : ℂ → ℂ) (z₀ : ℂ) : ℂ :=
+  -- (1/2πi) ∮_{|z-z₀|=r} f(z) dz
+  sorry
+
+/-- 留数定理 -/
+theorem residue_theorem {U : Set ℂ} (hU : IsOpen U) {f : ℂ → ℂ} 
+    (S : Finset ℂ) (hS : ↑S ⊆ U)
+    (hf : ∀ z ∈ U \ S, DifferentiableAt ℂ f z)
+    {γ : ℝ → ℂ} (hγ : Differentiable ℝ γ)
+    (hγ_image : ∀ t, γ t ∈ U) (hγ_closed : γ 0 = γ 1)
+    (hγ_winding : ∀ z ∈ S, windingNumber γ z = 1) :
+    ComplexIntegral hγ f = 2 * π * I * ∑ z ∈ S, Residue f z := by
+  -- 证明：在每个奇点周围作小圆周，利用Cauchy积分定理
+  -- 大积分等于各小圆周积分之和
+  -- 每个小圆周积分等于2πi × 留数
+  sorry
+
+/-
+## 最大模原理 (Maximum Modulus Principle)
+
+非常数的全纯函数在区域内部不能取得最大模。
+
+这是全纯函数的刚性性质的体现。
+-/
+
+/-- 最大模原理 -/
+theorem maximum_modulus_principle {U : Set ℂ} (hU : IsOpen U) 
+    (hU_connected : IsConnected U) {f : ℂ → ℂ} 
+    (hf : HolomorphicOn f U) (hf_nonconst : ¬∃ c, ∀ z ∈ U, f z = c)
+    (z₀ : ℂ) (hz₀ : z₀ ∈ U) :
+    ¬IsMaxOn (fun z ↦ ‖f z‖) U z₀ := by
+  -- 证明思路：
+  -- 1. 若|f|在z₀处取极大，则在z₀附近|f|为常数
+  -- 2. 由Cauchy-Riemann方程，f在z₀附近为常数
+  -- 3. 由唯一性定理，f在整个区域为常数，矛盾
+  sorry
+
+/-
+## Liouville定理
+
+有界整函数必为常数。
+
+这是最大模原理的简单推论，但有着深刻的应用（如代数基本定理的证明）。
+-/
+
+/-- Liouville定理 -/
+theorem liouville_theorem {f : ℂ → ℂ} (hf : HolomorphicOn f Set.univ)
+    (hbounded : Bornology.IsBounded (Set.range f)) :
+    ∃ c, ∀ z, f z = c := by
+  -- 证明：利用Cauchy估计
+  -- |f'(z)| ≤ M/R，令R→∞，得f'=0
+  sorry
+
+/-
+## 代数基本定理 (Fundamental Theorem of Algebra)
+
+每个非常数的复系数多项式至少有一个复根。
+
+这是Liouville定理的经典应用。
+-/
+
+/-- 代数基本定理 -/
+theorem fundamental_theorem_algebra (P : Polynomial ℂ) 
+    (hdeg : P.degree > 0) :
+    ∃ z : ℂ, P.eval z = 0 := by
+  -- 证明：反证法
+  -- 若P无零点，则1/P是整函数
+  -- 当|z|→∞时，|1/P(z)|→0，故1/P有界
+  -- 由Liouville定理，1/P为常数，矛盾
+  sorry
+
+/-
+## Riemann映射定理 (Riemann Mapping Theorem)
+
+任何单连通真子集D ⊂ ℂ（D ≠ ℂ）都共形等价于单位圆盘。
+
+这是复几何的里程碑定理。
+-/
+
+/-- 共形映射（全纯双射） -/
+def ConformalMap (f : ℂ → ℂ) (U V : Set ℂ) : Prop :=
+  HolomorphicOn f U ∧ Set.BijOn f U V ∧ 
+  ∀ z ∈ U, deriv f z ≠ 0
+
+/-- Riemann映射定理 -/
+theorem riemann_mapping_theorem {U : Set ℂ} (hU : IsOpen U) 
+    (hU_connected : IsConnected U) (hU_simply : SimplyConnected U)
+    (hU_proper : U ≠ Set.univ) (z₀ : ℂ) (hz₀ : z₀ ∈ U) :
+    ∃ (f : ℂ → ℂ), ConformalMap f U (Metric.ball 0 1) ∧ f z₀ = 0 := by
+  -- 证明：这是深刻的定理
+  -- 1. 证明满足f(z₀)=0, f'(z₀)>0的共形映射族非空
+  -- 2. 利用正规族理论，证明存在极值函数
+  -- 3. 证明该极值函数将U映满单位圆盘
+  sorry
+
+/-
+## Picard定理 (Picard's Theorems)
+
+小Picard定理：非常数的整函数取到所有复数值，最多一个例外。
+
+大Picard定理：若f在穿孔圆盘0<|z-z₀|<r上全纯，且z₀是本性奇点，
+则f取到所有复数值，最多一个例外，无穷多次。
+
+这是复分析最深刻的定理之一。
+-/
+
+/-- 小Picard定理 -/
+theorem picard_little {f : ℂ → ℂ} (hf : HolomorphicOn f Set.univ)
+    (hf_nonconst : ¬∃ c, ∀ z, f z = c) (a b : ℂ) (ha : a ≠ b) :
+    (∃ z, f z = a) ∨ (∃ z, f z = b) := by
+  -- 证明需要椭圆模函数或正规族理论
+  -- 这是深刻的结果
+  sorry
+
+/-- 大Picard定理 -/
+theorem picard_great {f : ℂ → ℂ} {z₀ : ℂ} {r : ℝ} (hr : r > 0)
+    (hf : ∀ z ∈ Metric.ball z₀ r \ {z₀}, DifferentiableAt ℂ f z)
+    (h_essential : SingularityType f z₀ = SingularityType.essential)
+    (a b : ℂ) (ha : a ≠ b) :
+    {z ∈ Metric.ball z₀ r \ {z₀} | f z = a}.Infinite ∨ 
+    {z ∈ Metric.ball z₀ r \ {z₀} | f z = b}.Infinite := by
+  -- 证明需要Montel正规族理论
+  -- 这是复分析的高级结果
+  sorry
+
+/-
+## 全纯函数的唯一性定理 (Uniqueness Theorem)
+
+若两个全纯函数在具有聚点的集合上相等，则它们处处相等。
+
+这体现了全纯函数的刚性。
+-/
+
+/-- 唯一性定理 -/
+theorem uniqueness_holomorphic {U : Set ℂ} (hU : IsOpen U) 
+    (hU_connected : IsConnected U) {f g : ℂ → ℂ} 
+    (hf : HolomorphicOn f U) (hg : HolomorphicOn g U)
+    {S : Set ℂ} (hS : S ⊆ U) (hS_acc : ∃ z₀ ∈ U, AccPt z₀ (𝓟 S))
+    (h_eq : ∀ z ∈ S, f z = g z) :
+    ∀ z ∈ U, f z = g z := by
+  -- 证明：考虑h = f - g，h在S上为0
+  -- 利用幂级数展开，h在聚点附近的幂级数全为0
+  -- 故h在聚点附近恒为0
+  -- 由连通性，h在整个U上为0
+  sorry
+
+/-
+## Schwarz引理 (Schwarz Lemma)
+
+若f : 𝔻 → 𝔻全纯，f(0)=0，则|f(z)| ≤ |z|且|f'(0)| ≤ 1。
+等号成立当且仅当f(z) = e^{iθ}z。
+
+这是研究单位圆盘上全纯函数的基本工具。
+-/
+
+/-- Schwarz引理 -/
+theorem schwarz_lemma {f : ℂ → ℂ} (hf : HolomorphicOn f (Metric.ball 0 1))
+    (hf_unit : ∀ z ∈ Metric.ball 0 1, ‖f z‖ < 1)
+    (hf0 : f 0 = 0) (z : ℂ) (hz : z ∈ Metric.ball 0 1) :
+    ‖f z‖ ≤ ‖z‖ ∧ ‖deriv f 0‖ ≤ 1 := by
+  -- 证明：考虑g(z) = f(z)/z，补充定义g(0) = f'(0)
+  -- 应用最大模原理于g
+  -- 等号情况分析
+  sorry
+
+/-
+## 辅助定义
+-/
+
+/-- 绕数 -/
+def windingNumber (γ : ℝ → ℂ) (z : ℂ) : ℤ :=
+  -- (1/2πi) ∮_γ dζ/(ζ-z)
+  sorry
+
+/-- 单连通 -/
+def SimplyConnected (U : Set ℂ) : Prop :=
+  IsConnected U ∧ ∀ γ : ℝ → ℂ, Differentiable ℝ γ → 
+    (∀ t, γ t ∈ U) → γ 0 = γ 1 → 
+    ∃ F : ℝ × ℝ → ℂ, Continuous F ∧ 
+      F 0 = γ ∧ ∀ s, F 1 s = F 0 0
+
+/-- 曲线积分（占位符） -/
+notation "∮" x "in" S "," f => sorry
+
+end ComplexAnalysisAdvanced

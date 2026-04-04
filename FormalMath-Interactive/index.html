@@ -3,17 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
-    <meta name="description" content="FormalMath交互式可视化界面框架 - 数学知识图谱与推理可视化" />
+    
+    <!-- 基础SEO Meta标签 -->
+    <title>FormalMath Interactive - 交互式数学可视化平台</title>
+    <meta name="description" content="FormalMath是一个现代化的数学知识图谱可视化平台，提供交互式数学概念探索、推理树可视化、证明助手等功能，助力数学学习与教学。" />
+    <meta name="keywords" content="数学可视化,知识图谱,数学教育,交互式学习,数学证明,FormalMath,数学概念,数学推理,数学工具,在线教育" />
+    <meta name="author" content="FormalMath Team" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="baiduspider" content="index, follow" />
+    
+    <!-- 主题色设置 -->
     <meta name="theme-color" content="#2563eb" />
     <meta name="msapplication-TileColor" content="#2563eb" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-navbutton-color" content="#2563eb" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="FormalMath" />
+    
+    <!-- PWA设置 -->
     <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="FormalMath" />
     <meta name="application-name" content="FormalMath" />
     <meta name="msapplication-TileImage" content="/FormalMath/icons/icon-144x144.png" />
     
-    <!-- iOS Splash Screens -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://formalmath.example.com/" />
+    <meta property="og:title" content="FormalMath Interactive - 交互式数学可视化平台" />
+    <meta property="og:description" content="探索数学之美，可视化数学知识图谱，交互式学习体验" />
+    <meta property="og:image" content="https://formalmath.example.com/FormalMath/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="FormalMath Interactive" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://formalmath.example.com/" />
+    <meta name="twitter:title" content="FormalMath Interactive - 交互式数学可视化平台" />
+    <meta name="twitter:description" content="探索数学之美，可视化数学知识图谱" />
+    <meta name="twitter:image" content="https://formalmath.example.com/FormalMath/images/twitter-image.png" />
+    <meta name="twitter:image:alt" content="FormalMath数学可视化平台预览" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://formalmath.example.com/" />
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/" />
+    <link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/" />
+    <link rel="alternate" hreflang="ja" href="https://formalmath.example.com/ja/" />
+    <link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/" />
+    
+    <!-- iOS图标 -->
     <link rel="apple-touch-icon" href="/FormalMath/icons/icon-192x192.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/FormalMath/icons/icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/FormalMath/icons/icon-192x192.png" />
@@ -22,24 +65,24 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="mask-icon" href="/vite.svg" color="#2563eb" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     
-    <!-- Preconnect for performance -->
+    <!-- 预连接优化 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     
-    <!-- Fonts with display=swap for performance -->
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="/src/main.tsx" as="script" type="module" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" as="style" />
+    
+    <!-- 字体加载 -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
-    <!-- Preload critical assets -->
-    <link rel="preload" href="/src/main.tsx" as="script" type="module" />
-    
-    <title>FormalMath Interactive - 交互式数学可视化平台</title>
-    
-    <!-- Critical CSS for faster first paint -->
+    <!-- 关键CSS内联 - 首屏渲染优化 -->
     <style>
-      /* Critical loading styles */
+      /* 关键加载样式 */
       html {
         background-color: #f9fafb;
       }
@@ -48,11 +91,12 @@
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
       }
       #root {
         min-height: 100vh;
       }
-      /* Loading skeleton */
+      /* Loading骨架屏 */
       .skeleton {
         background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
         background-size: 200% 100%;
@@ -62,15 +106,23 @@
         0% { background-position: 200% 0; }
         100% { background-position: -200% 0; }
       }
-      /* Prevent FOUC */
+      /* 防止FOUC */
       .no-fouc {
         visibility: hidden;
       }
+      /* 减少动画偏好支持 */
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
     </style>
     
-    <!-- Dark mode support -->
+    <!-- 暗色模式检测 -->
     <script>
-      // Check for saved theme preference or prefer-color-scheme
+      // 检测保存的主题偏好或系统偏好
       (function() {
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -81,10 +133,75 @@
         }
       })();
     </script>
+    
+    <!-- 结构化数据 - Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://formalmath.example.com/#website",
+          "url": "https://formalmath.example.com/",
+          "name": "FormalMath Interactive",
+          "description": "交互式数学可视化平台",
+          "publisher": {
+            "@id": "https://formalmath.example.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://formalmath.example.com/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://formalmath.example.com/#organization",
+          "name": "FormalMath",
+          "url": "https://formalmath.example.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://formalmath.example.com/#logo",
+            "url": "https://formalmath.example.com/FormalMath/icons/icon-192x192.png",
+            "contentUrl": "https://formalmath.example.com/FormalMath/icons/icon-192x192.png",
+            "width": 192,
+            "height": 192,
+            "caption": "FormalMath Logo"
+          },
+          "image": {
+            "@id": "https://formalmath.example.com/#logo"
+          },
+          "sameAs": [
+            "https://github.com/formalmath",
+            "https://twitter.com/formalmath"
+          ]
+        },
+        {
+          "@type": "LearningResource",
+          "@id": "https://formalmath.example.com/#learningresource",
+          "name": "FormalMath Interactive",
+          "description": "交互式数学学习与可视化平台",
+          "educationalLevel": "高等教育",
+          "learningResourceType": "交互式应用",
+          "interactivityType": "active",
+          "url": "https://formalmath.example.com/",
+          "author": {
+            "@type": "Organization",
+            "name": "FormalMath Team"
+          },
+          "educationalUse": ["自主学习", "课堂教学", "研究辅助"],
+          "teaches": ["数学概念", "数学证明", "逻辑推理"]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root">
-      <!-- Initial loading state -->
+      <!-- 初始加载状态 -->
       <div id="initial-loader" style="
         position: fixed;
         inset: 0;

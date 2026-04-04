@@ -2,6 +2,7 @@
 @import 'katex/dist/katex.min.css';
 @import './styles/rtl.css';
 @import './styles/accessibility.css';
+@import './styles/mobile.css';
 
 @tailwind base;
 @tailwind components;

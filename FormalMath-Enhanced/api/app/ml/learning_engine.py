@@ -3,7 +3,7 @@
 整合所有组件的统一接口
 """
 import numpy as np
-from typing import Dict, List, Optional, Tuple, Any
+from typing import Dict, List, Optional, Tuple, Any, Set
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 
@@ -11,6 +11,13 @@ from datetime import datetime, timedelta
 from .dnc_knowledge_tracing import DNCKnowledgeTracer, MultiHeadKnowledgeTracer
 from .forgetting_curve import ForgettingCurveModel, SpacedRepetitionScheduler
 from .individual_differences import IndividualDifferenceModel, LearningStyleProfile
+
+# 导入优化模块
+from .knowledge_graph_embedding import KnowledgeGraphEmbedder
+from .path_planner import AStarPathPlanner, AdaptivePathPlanner, PathOptimizationGoal
+from .goal_based_recommender import GoalBasedRecommender, GoalType
+from .dynamic_adapter import DynamicRecommender, DifficultyAdjuster
+from .path_evaluator import PathEvaluator, PathMetrics
 
 
 @dataclass
@@ -49,9 +56,28 @@ class PersonalizedLearningEngine:
         self.spaced_repetition = SpacedRepetitionScheduler(self.forgetting_model)
         self.individual_model = IndividualDifferenceModel()
         
+        # 知识图谱与路径规划
+        self.knowledge_graph = KnowledgeGraphEmbedder(embedding_dim=64)
+        self.path_planner = AStarPathPlanner(self.knowledge_graph)
+        self.adaptive_planner = AdaptivePathPlanner(self.path_planner)
+        
+        # 目标导向推荐
+        self.goal_recommender = GoalBasedRecommender(
+            self.knowledge_graph, 
+            self.path_planner
+        )
+        
+        # 动态调整
+        self.dynamic_recommender: Optional[DynamicRecommender] = None
+        self.difficulty_adjuster = DifficultyAdjuster()
+        
+        # 路径评估
+        self.path_evaluator = PathEvaluator(self.knowledge_graph)
+        
         # 学习历史
         self.session_history: Dict[str, List[LearningSession]] = {}
         self.user_states: Dict[str, Dict] = {}
+        self.active_paths: Dict[str, Any] = {}
     
     def initialize_user(
         self,
@@ -492,6 +518,330 @@ class PersonalizedLearningEngine:
         # 恢复用户状态
         if 'user_state' in data:
             self.user_states[user_id] = data['user_state']
+    
+    # ========== 新增优化方法 ==========
+    
+    def add_concept_to_graph(self, concept_data: Dict[str, Any]):
+        """添加概念到知识图谱"""
+        self.knowledge_graph.add_concept(concept_data)
+    
+    def add_relation_to_graph(self, relation_data: Dict[str, Any]):
+        """添加关系到知识图谱"""
+        self.knowledge_graph.add_relation(relation_data)
+    
+    def build_knowledge_embeddings(self, epochs: int = 100):
+        """构建知识嵌入"""
+        self.knowledge_graph.fit_embeddings(epochs=epochs)
+    
+    def create_learning_goal(
+        self,
+        user_id: str,
+        goal_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """
+        创建学习目标
+        
+        Args:
+            user_id: 用户ID
+            goal_data: 目标数据
+                {
+                    'title': str,
+                    'description': str,
+                    'goal_type': str,
+                    'target_concepts': List[str],
+                    'target_mastery': float,
+                    'deadline': str (ISO format),
+                    'priority': int,
+                    'max_daily_time': int
+                }
+        
+        Returns:
+            创建的目标信息
+        """
+        goal = self.goal_recommender.create_goal(user_id, goal_data)
+        
+        # 分析目标可行性
+        user_profile = self._build_user_profile(user_id)
+        analysis = self.goal_recommender.goal_analyzer.analyze_goal(goal, user_profile)
+        
+        return {
+            'goal': goal.to_dict(),
+            'analysis': analysis
+        }
+    
+    def _build_user_profile(self, user_id: str) -> Dict[str, Any]:
+        """构建用户画像"""
+        # 获取已知概念
+        known_concepts = set()
+        if user_id in self.user_states:
+            known_concepts = set(self.user_states[user_id].get('known_concepts', []))
+        
+        # 从知识追踪器获取
+        for tracer in self.knowledge_tracer.tracers:
+            for cid, state in tracer.knowledge_states.items():
+                if state.mastery_level >= 0.6:
+                    known_concepts.add(cid)
+        
+        # 获取能力水平
+        current_level = 0.5
+        if user_id in self.user_states:
+            current_level = self.user_states[user_id].get('current_level', 0.5)
+        
+        return {
+            'user_id': user_id,
+            'known_concepts': list(known_concepts),
+            'current_level': current_level,
+            'daily_available_time': 60
+        }
+    
+    def get_goal_based_recommendations(
+        self,
+        user_id: str,
+        goal_id: Optional[str] = None,
+        context: Optional[Dict] = None
+    ) -> Dict[str, Any]:
+        """
+        获取基于目标的推荐
+        
+        Args:
+            user_id: 用户ID
+            goal_id: 目标ID（可选）
+            context: 当前上下文
+        
+        Returns:
+            推荐结果
+        """
+        # 构建上下文
+        if context is None:
+            context = self._build_learning_context(user_id)
+        
+        return self.goal_recommender.get_recommendations(
+            user_id=user_id,
+            goal_id=goal_id,
+            current_context=context
+        )
+    
+    def _build_learning_context(self, user_id: str) -> Dict[str, Any]:
+        """构建学习上下文"""
+        # 获取最近完成的
+        completed = []
+        mastery = {}
+        
+        for tracer in self.knowledge_tracer.tracers:
+            for cid, state in tracer.knowledge_states.items():
+                if state.mastery_level >= 0.8:
+                    completed.append(cid)
+                mastery[cid] = state.mastery_level
+        
+        # 获取总学习时间
+        total_time = 0
+        if user_id in self.user_states:
+            total_time = self.user_states[user_id].get('total_study_time', 0)
+        
+        return {
+            'completed_concepts': completed,
+            'concept_mastery': mastery,
+            'session_time': total_time
+        }
+    
+    def generate_optimized_learning_path(
+        self,
+        user_id: str,
+        target_concepts: List[str],
+        goal: PathOptimizationGoal = PathOptimizationGoal.BALANCED,
+        constraints: Optional[Dict] = None
+    ) -> Dict[str, Any]:
+        """
+        生成优化的学习路径
+        
+        Args:
+            user_id: 用户ID
+            target_concepts: 目标概念
+            goal: 优化目标
+            constraints: 约束条件
+        
+        Returns:
+            学习路径
+        """
+        # 获取已知概念
+        user_profile = self._build_user_profile(user_id)
+        known_concepts = set(user_profile.get('known_concepts', []))
+        
+        # 生成路径
+        path = self.path_planner.plan_path(
+            user_id=user_id,
+            start_concepts=known_concepts,
+            target_concepts=set(target_concepts),
+            goal=goal,
+            constraints=constraints
+        )
+        
+        if path is None:
+            return {'error': '无法生成路径'}
+        
+        # 应用个体差异调整
+        if user_id in self.individual_model.learning_styles:
+            style = self.individual_model.learning_styles[user_id]
+            adapted_nodes = self.individual_model.get_learning_path_adaptation(
+                user_id, [n.to_dict() for n in path.nodes]
+            )
+            path.nodes = adapted_nodes
+        
+        # 保存活跃路径
+        self.active_paths[user_id] = path
+        
+        return path.to_dict()
+    
+    def adapt_learning_path(
+        self,
+        user_id: str,
+        progress_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """
+        根据进度调整学习路径
+        
+        Args:
+            user_id: 用户ID
+            progress_data: 进度数据
+        
+        Returns:
+            调整后的路径
+        """
+        if user_id not in self.active_paths:
+            return {'error': '没有活跃的学习路径'}
+        
+        current_path = self.active_paths[user_id]
+        
+        # 调整路径
+        adapted_path = self.adaptive_planner.adapt_path(current_path, progress_data)
+        
+        # 更新活跃路径
+        self.active_paths[user_id] = adapted_path
+        
+        return adapted_path.to_dict()
+    
+    def process_learning_interaction_with_adaptation(
+        self,
+        user_id: str,
+        interaction: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """
+        处理学习交互并进行动态调整
+        
+        Args:
+            user_id: 用户ID
+            interaction: 交互数据
+        
+        Returns:
+            处理结果和调整建议
+        """
+        # 初始化动态推荐器
+        if self.dynamic_recommender is None:
+            self.dynamic_recommender = DynamicRecommender(
+                self.knowledge_graph,
+                self.path_planner,
+                self.goal_recommender
+            )
+        
+        # 处理交互
+        result = self.dynamic_recommender.process_interaction(user_id, interaction)
+        
+        # 动态调整难度
+        concept_id = interaction.get('concept_id')
+        if concept_id:
+            performance_history = self._get_performance_history(user_id, concept_id)
+            adjusted_difficulty = self.difficulty_adjuster.adjust_difficulty(
+                user_id, concept_id,
+                base_difficulty=interaction.get('difficulty', 0.5),
+                performance_history=performance_history
+            )
+            result['adjusted_difficulty'] = adjusted_difficulty
+        
+        return result
+    
+    def _get_performance_history(self, user_id: str, concept_id: str) -> List[float]:
+        """获取历史表现"""
+        history = []
+        
+        # 从知识追踪器获取
+        for tracer in self.knowledge_tracer.tracers:
+            if concept_id in tracer.knowledge_states:
+                state = tracer.knowledge_states[concept_id]
+                for interaction in state.interaction_history:
+                    result = interaction.get('result', 'incorrect')
+                    if result == 'correct':
+                        history.append(1.0)
+                    elif result == 'partial':
+                        history.append(0.5)
+                    else:
+                        history.append(0.0)
+        
+        return history
+    
+    def evaluate_learning_path(
+        self,
+        user_id: str,
+        execution_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """
+        评估学习路径效果
+        
+        Args:
+            user_id: 用户ID
+            execution_data: 执行数据
+        
+        Returns:
+            评估指标
+        """
+        if user_id not in self.active_paths:
+            return {'error': '没有活跃的学习路径'}
+        
+        path = self.active_paths[user_id]
+        
+        # 评估
+        metrics = self.path_evaluator.evaluate_path(path, execution_data)
+        
+        return metrics.to_dict()
+    
+    def get_path_analytics(self, user_id: str) -> Dict[str, Any]:
+        """
+        获取路径分析
+        
+        Args:
+            user_id: 用户ID
+        
+        Returns:
+            路径分析数据
+        """
+        if user_id not in self.active_paths:
+            return {'error': '没有活跃的学习路径'}
+        
+        path = self.active_paths[user_id]
+        
+        return {
+            'path_id': path.path_id,
+            'target_concepts': path.target_concepts,
+            'total_nodes': len(path.nodes),
+            'total_time': path.total_time,
+            'total_difficulty': path.total_difficulty,
+            'expected_mastery': path.expected_mastery,
+            'optimization_goal': path.optimization_goal.value,
+            'remaining_nodes': [
+                n.concept_id for n in path.nodes
+                if n.concept_id not in self._get_completed_concepts(user_id)
+            ]
+        }
+    
+    def _get_completed_concepts(self, user_id: str) -> Set[str]:
+        """获取已完成的概念"""
+        completed = set()
+        
+        for tracer in self.knowledge_tracer.tracers:
+            for cid, state in tracer.knowledge_states.items():
+                if state.mastery_level >= 0.8:
+                    completed.add(cid)
+        
+        return completed
 
 
 # 全局引擎实例

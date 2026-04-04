@@ -11,9 +11,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'FormalMath Interactive',
+        name: 'FormalMath Interactive - 交互式数学可视化平台',
         short_name: 'FormalMath',
-        description: '数学知识图谱与推理可视化平台',
+        description: 'FormalMath是一个现代化的数学知识图谱可视化平台，提供交互式数学概念探索、推理树可视化、证明助手等功能，助力数学学习与教学。',
         theme_color: '#2563eb',
         background_color: '#ffffff',
         display: 'standalone',
@@ -186,6 +186,7 @@ export default defineConfig({
       '@visualizations': path.resolve(__dirname, './src/visualizations'),
       '@mobile': path.resolve(__dirname, './src/mobile'),
       '@stores': path.resolve(__dirname, './src/stores'),
+      '@config': path.resolve(__dirname, './src/config'),
     },
   },
   build: {

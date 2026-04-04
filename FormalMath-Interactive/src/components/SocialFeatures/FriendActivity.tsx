@@ -23,7 +23,7 @@ type ActivityType =
   | 'joined_group';
 
 // 好友活动
-interface FriendActivity {
+export interface FriendActivity {
   id: string;
   userId: string;
   userName: string;
@@ -52,7 +52,7 @@ interface FriendRequest {
   sentAt: string;
 }
 
-interface FriendActivityProps {
+export interface FriendActivityProps {
   activities: FriendActivity[];
   requests?: FriendRequest[];
   onAcceptRequest?: (requestId: string) => void;

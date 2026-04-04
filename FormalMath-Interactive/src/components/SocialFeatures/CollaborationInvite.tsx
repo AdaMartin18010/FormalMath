@@ -11,7 +11,7 @@ import {
   X
 } from 'lucide-react';
 
-interface CollaborationInviteProps {
+export interface CollaborationInviteProps {
   groupId: string;
   groupName: string;
   inviteLink: string;

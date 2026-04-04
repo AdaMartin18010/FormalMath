@@ -21,6 +21,7 @@ export interface GraphNode {
   y?: number;
   radius?: number;
   color?: string;
+  importance?: number; // 0-1 重要性分数
 }
 
 // 基础边接口
@@ -245,3 +246,12 @@ export * from './analytics';
 
 // ==================== 证明助手类型重导出 ====================
 export * from './proofAssistant';
+
+// ==================== 练习系统类型重导出 ====================
+export * from './exercise';
+
+// ==================== 视频类型重导出 ====================
+export * from './video';
+
+// ==================== 社区类型重导出 ====================
+export * from './community';

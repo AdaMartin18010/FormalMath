@@ -16,7 +16,7 @@ Sylow定理是有限群论中最基本的结果之一。
 - `Mathlib.GroupTheory.PGroup`
 
 本文件基于Mathlib4中已证明的Sylow定理，建立符合教学需求的定理表述。
--/"
+-/
 
 import FormalMath.Mathlib.GroupTheory.Sylow
 import FormalMath.Mathlib.GroupTheory.PGroup

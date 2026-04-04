@@ -17,6 +17,7 @@ celery_app = Celery(
         "app.tasks.path_tasks",
         "app.tasks.diagnosis_tasks",
         "app.tasks.graph_tasks",
+        "app.notifications.email_tasks",
     ]
 )
 
@@ -47,6 +48,7 @@ celery_app.conf.update(
         Queue('path_calculation', Exchange('path_calculation'), routing_key='path.calculation'),
         Queue('diagnosis', Exchange('diagnosis'), routing_key='diagnosis'),
         Queue('graph_analysis', Exchange('graph_analysis'), routing_key='graph.analysis'),
+        Queue('email_notifications', Exchange('email_notifications'), routing_key='email.notifications'),
     ),
     
     # 路由配置
@@ -54,6 +56,7 @@ celery_app.conf.update(
         'app.tasks.path_tasks.*': {'queue': 'path_calculation'},
         'app.tasks.diagnosis_tasks.*': {'queue': 'diagnosis'},
         'app.tasks.graph_tasks.*': {'queue': 'graph_analysis'},
+        'app.notifications.email_tasks.*': {'queue': 'email_notifications'},
     },
     
     # 重试配置

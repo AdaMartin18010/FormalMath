@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- 首页 -->
+  <url>
+    <loc>https://formalmath.example.com/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://formalmath.example.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://formalmath.example.com/FormalMath/images/og-image.png</image:loc>
+      <image:title>FormalMath Interactive - 交互式数学可视化平台</image:title>
+    </image:image>
+  </url>
+
+  <!-- 知识图谱 -->
+  <url>
+    <loc>https://formalmath.example.com/knowledge-graph</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/knowledge-graph"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/knowledge-graph"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/knowledge-graph"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 推理树 -->
+  <url>
+    <loc>https://formalmath.example.com/reasoning-tree</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/reasoning-tree"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/reasoning-tree"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/reasoning-tree"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 思维导图 -->
+  <url>
+    <loc>https://formalmath.example.com/mind-map</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/mind-map"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/mind-map"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/mind-map"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 对比分析 -->
+  <url>
+    <loc>https://formalmath.example.com/comparison</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/comparison"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/comparison"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/comparison"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 决策树 -->
+  <url>
+    <loc>https://formalmath.example.com/decision-tree</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/decision-tree"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/decision-tree"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/decision-tree"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 演化历史 -->
+  <url>
+    <loc>https://formalmath.example.com/evolution</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/evolution"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/evolution"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/evolution"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 数据分析 -->
+  <url>
+    <loc>https://formalmath.example.com/analytics</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/analytics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/analytics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/analytics"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 证明助手 -->
+  <url>
+    <loc>https://formalmath.example.com/proof-assistant</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/proof-assistant"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/proof-assistant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/proof-assistant"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 可视化库 -->
+  <url>
+    <loc>https://formalmath.example.com/visualization-gallery</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://formalmath.example.com/visualization-gallery"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://formalmath.example.com/en/visualization-gallery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://formalmath.example.com/visualization-gallery"/>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,89 @@
+# FormalMath API - 生产环境优化Dockerfile
+# 优化策略：多阶段构建、最小化镜像、安全加固
+# 基础镜像：python:3.11-slim-bookworm
+
+# ========== 构建阶段 ==========
+FROM python:3.11-slim-bookworm AS builder
+
+# 设置构建环境变量
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PIP_DEFAULT_TIMEOUT=100
+
+# 安装构建依赖（最小化）
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
+
+# 创建虚拟环境（隔离依赖）
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+# 复制依赖文件并安装
+COPY api/requirements.txt /tmp/requirements.txt
+RUN pip install --upgrade pip setuptools wheel && \
+    pip install --no-cache-dir -r /tmp/requirements.txt && \
+    pip install --no-cache-dir gunicorn uvicorn[standard]
+
+# 清理不必要的文件
+RUN find /opt/venv -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true && \
+    find /opt/venv -type f -name "*.pyc" -delete && \
+    find /opt/venv -type f -name "*.pyo" -delete && \
+    find /opt/venv -type d -name "tests" -exec rm -rf {} + 2>/dev/null || true && \
+    find /opt/venv -type d -name "test" -exec rm -rf {} + 2>/dev/null || true
+
+# ========== 生产阶段 ==========
+FROM python:3.11-slim-bookworm AS production
+
+# 设置生产环境变量
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONFAULTHANDLER=1 \
+    PYTHONHASHSEED=random \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PATH="/opt/venv/bin:$PATH" \
+    APP_HOME=/app
+
+# 安装运行时依赖（最小化）
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libpq5 \
+    curl \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean \
+    && apt-get autoremove -y
+
+# 从构建阶段复制虚拟环境
+COPY --from=builder /opt/venv /opt/venv
+
+# 创建非root用户（安全加固）
+RUN groupadd -r formalmath --gid=1000 && \
+    useradd -r -g formalmath --uid=1000 formalmath
+
+# 创建工作目录并设置权限
+WORKDIR ${APP_HOME}
+RUN chown formalmath:formalmath ${APP_HOME}
+
+# 复制应用代码（使用非root用户）
+COPY --chown=formalmath:formalmath api/ ${APP_HOME}/
+
+# 创建数据目录并设置权限
+RUN mkdir -p ${APP_HOME}/data ${APP_HOME}/logs && \
+    chown -R formalmath:formalmath ${APP_HOME}
+
+# 切换到非root用户
+USER formalmath
+
+# 暴露端口
+EXPOSE 8000
+
+# 健康检查（非root用户可执行）
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=5)" || exit 1
+
+# 使用Gunicorn作为WSGI服务器，Uvicorn作为ASGI工作进程
+CMD ["gunicorn", "main:app", "--workers", "4", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--access-logfile", "-", "--error-logfile", "-", "--capture-output", "--enable-stdio-inheritance"]
