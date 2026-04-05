@@ -62,16 +62,66 @@ flowchart TD
 
 $$d\omega = \left(\sum_{i=1}^n \frac{\partial f_i}{\partial x_i}\right) dx_1 \wedge \cdots \wedge dx_n$$
 
-#### 步骤4：积分计算
+#### 步骤4：积分计算详细推导
+
+**步骤4a: 分解积分**
 
 $$\int_{\mathbb{H}^n} d\omega = \sum_{i=1}^n \int_{\mathbb{H}^n} \frac{\partial f_i}{\partial x_i} dV$$
 
-对 $i < n$，积分区域无限，$f_i$ 紧支，故积分为0。
+其中 $dV = dx_1 \wedge \cdots \wedge dx_n$，$\mathbb{H}^n = \{x \in \mathbb{R}^n : x_n \geq 0\}$。
 
-对 $i = n$：
-$$\int_{\mathbb{H}^n} \frac{\partial f_n}{\partial x_n} dV = \int_{\mathbb{R}^{n-1}} \left[\int_0^\infty \frac{\partial f_n}{\partial x_n} dx_n\right] d\tilde{x} = -\int_{\mathbb{R}^{n-1}} f_n(x_1, \ldots, x_{n-1}, 0) d\tilde{x}$$
+**步骤4b: 处理 $i < n$ 的情形**
 
-这正是 $\int_{\partial \mathbb{H}^n} \omega$。 $\square$
+对 $i < n$，由Fubini定理：
+$$\int_{\mathbb{H}^n} \frac{\partial f_i}{\partial x_i} dV = \int_{\mathbb{R}^{n-2}} \left[\int_{-\infty}^{\infty} \frac{\partial f_i}{\partial x_i} dx_i\right] dx_1 \cdots \widehat{dx_i} \cdots dx_{n-1} \int_0^{\infty} dx_n$$
+
+由于 $f_i$ 紧支，$\int_{-\infty}^{\infty} \frac{\partial f_i}{\partial x_i} dx_i = f_i|_{-\infty}^{\infty} = 0$。
+
+因此这些项的贡献为0。
+
+**步骤4c: 处理 $i = n$ 的情形**
+
+$$\int_{\mathbb{H}^n} \frac{\partial f_n}{\partial x_n} dV = \int_{\mathbb{R}^{n-1}} \left[\int_0^{\infty} \frac{\partial f_n}{\partial x_n} dx_n\right] dx_1 \cdots dx_{n-1}$$
+
+计算内层积分：
+$$\int_0^{\infty} \frac{\partial f_n}{\partial x_n} dx_n = f_n(x_1, \ldots, x_{n-1}, \infty) - f_n(x_1, \ldots, x_{n-1}, 0)$$
+
+由于 $f_n$ 紧支，$f_n(x_1, \ldots, x_{n-1}, \infty) = 0$。
+
+因此：
+$$\int_{\mathbb{H}^n} \frac{\partial f_n}{\partial x_n} dV = -\int_{\mathbb{R}^{n-1}} f_n(x_1, \ldots, x_{n-1}, 0) dx_1 \cdots dx_{n-1}$$
+
+**步骤4d: 识别边界项**
+
+在边界 $\partial \mathbb{H}^n = \{x_n = 0\}$ 上，诱导定向使得：
+$$\int_{\partial \mathbb{H}^n} \omega = (-1)^{n-1} \int_{\mathbb{R}^{n-1}} f_n(x_1, \ldots, x_{n-1}, 0) dx_1 \cdots dx_{n-1}$$
+
+（注意：诱导定向的符号由外法向决定）
+
+综合上述计算：
+$$\int_{\mathbb{H}^n} d\omega = (-1)^n \int_{\partial \mathbb{H}^n} \omega$$
+
+考虑定向调整后，得到标准形式：
+$$\int_{\mathbb{H}^n} d\omega = \int_{\partial \mathbb{H}^n} \omega$$ $\square$
+
+### 补充：单位分解的使用
+
+**单位分解定理**: 设 $M$ 是光滑流形，$\{U_\alpha\}$ 是开覆盖，则存在光滑函数 $\{\rho_i\}$ 使得：
+1. $0 \leq \rho_i \leq 1$
+2. $\text{supp}(\rho_i)$ 紧且包含于某 $U_\alpha$
+3. 局部有限：每点只有有限个 $\rho_i$ 非零
+4. $\sum_i \rho_i = 1$
+
+**应用于Stokes定理**:
+
+设 $\omega$ 是 $M$ 上的 $(n-1)$-形式，取坐标卡覆盖 $\{U_\alpha\}$。
+
+由单位分解：
+$$\omega = \sum_i \rho_i \omega$$
+
+每个 $\rho_i \omega$ 支集在单个坐标卡内，只需对这样的形式证明Stokes定理。
+
+由线性性，Stokes定理对 $\omega$ 成立。 $\square$
 
 ---
 

@@ -44,14 +44,14 @@ processed_at: '2026-04-05'
 
 - **Leray 与谱序列**：Stacks 01FP, 01FQ, 01E0, 015Z
 - **教材**：Godement *Topologie algébrique*；Weibel *An Introduction to Homological Algebra* Ch.5；Hartshorne III.8
-- **项目内**：[00-国际课程与机构对齐对照表](../../../project/00-国际课程与机构对齐对照表-2026年2月.md)、[09-Grothendieck谱序列](./09-Grothendieck谱序列.md)、[23-上同调与Leray谱序列应用](./23-上同调与Leray谱序列应用.md)
+- **项目内**：[00-国际课程与机构对齐对照表](./../../../../project/00-国际课程与机构对齐对照表-2026年2月.md)、[09-Grothendieck谱序列](./09-Grothendieck谱序列.md)、[23-上同调与Leray谱序列应用](./23-上同调与Leray谱序列应用.md)
 
 ---
 
 ## 四、建议与已落实
 
 - 已落实：主文已添加历史与渊源（对齐）与姊妹篇与网络资源；本报告权威对齐已扩展至 8 条并含课程/讲义对应。
-- 建议：与 [01-层上同调基础](./01-层上同调基础.md)、[09-Grothendieck谱序列](./09-Grothendieck谱序列.md)、[00-推荐阅读顺序](../../00-推荐阅读顺序.md) 配合使用。
+- 建议：与 [01-层上同调基础](./01-层上同调基础.md)、[09-Grothendieck谱序列](./09-Grothendieck谱序列.md)、[00-推荐阅读顺序](./../00-推荐阅读顺序.md) 配合使用。
 
 ---
 
