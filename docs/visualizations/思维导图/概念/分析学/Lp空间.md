@@ -280,4 +280,4 @@ Lp空间是现代分析的骨架，它统一了多种函数空间（可积函数
 ---
 
 *创建日期：2026年4月*  
-*相关概念：[Lebesgue测度](Lebesgue测度.md)、[Sobolev空间](Sobolev空间.md)、[Hilbert空间](Hilbert空间.md)*
+*相关概念：[Lebesgue测度](Lebesgue测度.md)、[Sobolev空间](Sobolev空间.md)、[Hilbert空间](./../../../../00-未解决问题/02-Hilbert问题.md)*

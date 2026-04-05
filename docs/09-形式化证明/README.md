@@ -97,7 +97,7 @@ msc_secondary: ['03B35', '68T15']
 | 文档 | 说明 |
 |------|------|
 | [Lean4入门指南](Lean4/Lean4入门指南.md) | Lean4基础教程 |
-| [Mathlib4概述](00-Mathlib4概述.md) | 数学库介绍 |
+| [Mathlib4概述](./00-Mathlib4概念映射索引.md) | 数学库介绍 |
 | [Mathlib4对齐状态](00-Mathlib4对齐状态报告.md) | 概念映射状态 |
 | [Mathlib4概念映射](00-Mathlib4概念映射索引.md) | 62个概念对应表 |
 | [学习路径](00-从FormalMath到Mathlib4学习路径.md) | 迁移指南 |

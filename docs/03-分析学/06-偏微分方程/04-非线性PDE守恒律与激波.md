@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [1 引言 / Introduction](#1-引言--introduction)
+- [1 引言 / Introduction](#1-引言-introduction)
 - [2 标量守恒律与特征线方法](#2-标量守恒律与特征线方法)
   - [2.1 守恒形式与弱解](#21-守恒形式与弱解)
   - [2.2 Burgers方程与激波形成](#22-burgers方程与激波形成)
@@ -30,8 +30,8 @@ processed_at: '2026-04-05'
   - [4.2 Riemann不变量与简单波](#42-riemann不变量与简单波)
   - [4.3 接触间断与膨胀波](#43-接触间断与膨胀波)
 - [5 数值方法简介](#5-数值方法简介)
-- [6 例子 / Examples](#6-例子--examples)
-- [7 参考文献 / References](#7-参考文献--references)
+- [6 例子 / Examples](#6-例子-examples)
+- [7 参考文献 / References](#7-参考文献-references)
 
 ---
 

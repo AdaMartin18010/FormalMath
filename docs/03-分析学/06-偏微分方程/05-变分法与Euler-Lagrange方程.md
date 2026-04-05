@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [1 引言 / Introduction](#1-引言--introduction)
+- [1 引言 / Introduction](#1-引言-introduction)
 - [2 经典变分法：Euler–Lagrange方程](#2-经典变分法eulerlagrange方程)
   - [2.1 第一变分与EL方程](#21-第一变分与el方程)
   - [2.2 自然边界条件](#22-自然边界条件)
@@ -33,8 +33,8 @@ processed_at: '2026-04-05'
   - [5.1 调和映射](#51-调和映射)
   - [5.2 极小曲面与Plateau问题](#52-极小曲面与plateau问题)
   - [5.3 Mountain Pass定理](#53-mountain-pass定理)
-- [6 例子 / Examples](#6-例子--examples)
-- [7 参考文献 / References](#7-参考文献--references)
+- [6 例子 / Examples](#6-例子-examples)
+- [7 参考文献 / References](#7-参考文献-references)
 
 ---
 

@@ -61,7 +61,7 @@ Groups have applications in:
 
 ## Related Concepts
 
-- [Subgroup](./Subgroup.md)
+- [Subgroup](./Group.md)
 - [Normal Subgroup](./Normal-Subgroup.md)
 - [Quotient Group](./Quotient-Group.md)
 - [Group Homomorphism](./Homomorphism.md)

@@ -210,7 +210,7 @@ $$\sum_i p_i \xi_i - \eta F = \text{const}$$
 ## 相关主题
 
 - [最优控制](./optimal-control.md)
-- [变分法与PDE](./../research/pde-calculus-of-variations.md)
+- [变分法与PDE](./calculus-of-variations.md)
 - [应用数学思维导图索引](./00-应用数学思维导图索引.md)
 
 ## 参考资源

@@ -9,16 +9,16 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [Lean4形式化实现：域论](#lean4形式化实现域论--lean4-formalization-field-theory)
+- [Lean4形式化实现：域论](#lean4形式化实现域论-lean4-formalization-field-theory)
   - [目录](#目录)
-  - [概述](#概述--overview)
-  - [域的基本定义](#域的基本定义--basic-definitions-of-fields)
-  - [域扩张](#域扩张--field-extensions)
-  - [伽罗瓦理论](#伽罗瓦理论--galois-theory)
-  - [有限域](#有限域--finite-fields)
-  - [代数数论](#代数数论--algebraic-number-theory)
-  - [应用案例](#应用案例--application-cases)
-  - [总结](#总结--summary)
+  - [概述](#概述-overview)
+  - [域的基本定义](#域的基本定义-basic-definitions-of-fields)
+  - [域扩张](#域扩张-field-extensions)
+  - [伽罗瓦理论](#伽罗瓦理论-galois-theory)
+  - [有限域](#有限域-finite-fields)
+  - [代数数论](#代数数论-algebraic-number-theory)
+  - [应用案例](#应用案例-application-cases)
+  - [总结](#总结-summary)
 
 ## 概述 / Overview
 

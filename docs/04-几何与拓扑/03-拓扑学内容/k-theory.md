@@ -17,13 +17,13 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [K理论初步 / Introduction to K-Theory](#k理论初步--introduction-to-k-theory)
-  - [1. 基础概念 / Basic Concepts](#1-基础概念--basic-concepts)
-  - [2. Bott周期性 / Bott Periodicity](#2-bott周期性--bott-periodicity)
-  - [3. 高阶K群与谱序列 / Higher K-Groups and Spectral Sequences](#3-高阶k群与谱序列--higher-k-groups-and-spectral-sequences)
-  - [4. 核心定理 / Core Theorems](#4-核心定理--core-theorems)
-  - [5. 实战问题 / Practical Problems](#5-实战问题--practical-problems)
-  - [6. 参考文献 / References](#6-参考文献--references)
+- [K理论初步 / Introduction to K-Theory](#k理论初步-introduction-to-k-theory)
+  - [1. 基础概念 / Basic Concepts](#1-基础概念-basic-concepts)
+  - [2. Bott周期性 / Bott Periodicity](#2-bott周期性-bott-periodicity)
+  - [3. 高阶K群与谱序列 / Higher K-Groups and Spectral Sequences](#3-高阶k群与谱序列-higher-k-groups-and-spectral-sequences)
+  - [4. 核心定理 / Core Theorems](#4-核心定理-core-theorems)
+  - [5. 实战问题 / Practical Problems](#5-实战问题-practical-problems)
+  - [6. 参考文献 / References](#6-参考文献-references)
 
 ---
 

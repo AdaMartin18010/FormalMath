@@ -18,13 +18,13 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [5.6 上同调环与Poincaré对偶 / Cohomology Ring and Poincaré Duality](#56-上同调环与poincaré对偶--cohomology-ring-and-poincaré-duality)
-  - [5.6.1 引言 / Introduction](#561-引言--introduction)
-  - [5.6.2 奇异上同调与杯积 / Singular Cohomology and Cup Product](#562-奇异上同调与杯积--singular-cohomology-and-cup-product)
-  - [5.6.3 Künneth公式与上同调环 / Künneth Formula and Cohomology Rings](#563-künneth公式与上同调环--künneth-formula-and-cohomology-rings)
-  - [5.6.4 Poincaré对偶 / Poincaré Duality](#564-poincaré对偶--poincaré-duality)
-  - [5.6.5 应用实例 / Application Examples](#565-应用实例--application-examples)
-  - [5.6.6 参考文献 / References](#566-参考文献--references)
+- [5.6 上同调环与Poincaré对偶 / Cohomology Ring and Poincaré Duality](#56-上同调环与poincaré对偶-cohomology-ring-and-poincaré-duality)
+  - [5.6.1 引言 / Introduction](#561-引言-introduction)
+  - [5.6.2 奇异上同调与杯积 / Singular Cohomology and Cup Product](#562-奇异上同调与杯积-singular-cohomology-and-cup-product)
+  - [5.6.3 Künneth公式与上同调环 / Künneth Formula and Cohomology Rings](#563-künneth公式与上同调环-künneth-formula-and-cohomology-rings)
+  - [5.6.4 Poincaré对偶 / Poincaré Duality](#564-poincaré对偶-poincaré-duality)
+  - [5.6.5 应用实例 / Application Examples](#565-应用实例-application-examples)
+  - [5.6.6 参考文献 / References](#566-参考文献-references)
 
 ---
 

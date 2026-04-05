@@ -59,12 +59,62 @@ flowchart TD
 - **固定子域映射**：对 $H \leq G$，定义 $K^H = \{x \in K \mid \sigma(x) = x, \forall \sigma \in H\}$
 - **固定群映射**：对中间域 $E$，定义 $\text{Gal}(K/E) = \{\sigma \in G \mid \sigma|_E = \text{id}\}$
 
-#### 步骤2：Artin引理
+#### 步骤2：Artin引理详细证明
 
-**引理**：$[K:K^H] = |H|$
+**引理（Artin）**: 设 $K$ 是域，$H$ 是 $K$ 的自同构群的有限子群，$K^H = \{x \in K : \sigma(x) = x, \forall \sigma \in H\}$ 是固定子域，则：
+$$[K : K^H] = |H|$$
 
-*证明要点*：设 $H = \{\sigma_1, \ldots, \sigma_m\}$，证明 $K$ 中任意 $m+1$ 个元素在 $K^H$ 上线性相关。
-利用Dedekind无关性引理：不同的域嵌入 $K \to \overline{K}$ 在 $K$ 上线性无关。
+*证明*:
+
+设 $H = \{\sigma_1, \ldots, \sigma_m\}$，$m = |H|$，其中 $\sigma_1 = \text{id}$。
+
+**步骤2a: 证明 $[K : K^H] \leq m$**
+
+假设存在 $m+1$ 个元素 $u_1, \ldots, u_{m+1} \in K$ 在 $K^H$ 上线性无关。
+
+考虑线性方程组（未知数 $x_1, \ldots, x_{m+1} \in K$）：
+$$\sum_{j=1}^{m+1} \sigma_i(u_j) x_j = 0, \quad i = 1, \ldots, m$$
+
+这是 $m$ 个方程、$m+1$ 个未知元的齐次线性方程组，有非零解。
+
+在所有非零解中，选取非零分量个数最少的一个，设为 $(a_1, \ldots, a_{m+1})$。
+
+不妨设 $a_1 \neq 0$，通过缩放可设 $a_1 = 1$。
+
+**步骤2b: 导出矛盾**
+
+对任意 $\sigma \in H$，作用在方程组上：
+$$\sum_{j=1}^{m+1} \sigma(\sigma_i(u_j)) \sigma(a_j) = 0$$
+
+由于 $H$ 是群，$\sigma \circ \sigma_i$ 遍历 $H$，故 $(\sigma(a_1), \ldots, \sigma(a_{m+1}))$ 也是解。
+
+因此 $(a_1 - \sigma(a_1), \ldots, a_{m+1} - \sigma(a_{m+1}))$ 也是解。
+
+由于 $a_1 = 1$，$\sigma(a_1) = 1$，故第一个分量为0。
+
+由最小性假设，$a_j - \sigma(a_j) = 0$ 对所有 $j$，即 $a_j \in K^H$。
+
+回到原方程组的第一个方程（$i=1$，$\sigma_1 = \text{id}$）：
+$$\sum_{j=1}^{m+1} u_j a_j = 0$$
+
+其中 $a_j \in K^H$ 不全为零，这与 $u_1, \ldots, u_{m+1}$ 在 $K^H$ 上线性无关矛盾。
+
+因此 $[K : K^H] \leq m$。
+
+**步骤2c: 证明 $[K : K^H] \geq m$**
+
+由本原元定理（因为 $K/K^H$ 是可分扩张，$H$ 固定 $K^H$），存在 $\alpha \in K$ 使得 $K = K^H(\alpha)$。
+
+考虑多项式：
+$$f(x) = \prod_{i=1}^m (x - \sigma_i(\alpha))$$
+
+对任意 $\sigma \in H$，$\sigma$ 置换 $\{\sigma_1(\alpha), \ldots, \sigma_m(\alpha)\}$，故 $\sigma(f) = f$。
+
+因此 $f \in K^H[x]$，且 $f(\alpha) = 0$。
+
+$\alpha$ 在 $K^H$ 上的极小多项式整除 $f$，故 $[K : K^H] = [K^H(\alpha) : K^H] \leq \deg(f) = m$。
+
+实际上，由可分性，不同 $\sigma_i(\alpha)$ 的个数等于 $m$，故 $[K : K^H] = m$。 $\square$
 
 #### 步骤3：双射验证
 

@@ -17,13 +17,13 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [同伦论基础 / Foundations of Homotopy Theory](#同伦论基础--foundations-of-homotopy-theory)
-  - [1. 基础概念 / Basic Concepts](#1-基础概念--basic-concepts)
-  - [2. 同伦群 / Homotopy Groups](#2-同伦群--homotopy-groups)
-  - [3. 纤维化与余纤维化 / Fibrations and Cofibrations](#3-纤维化与余纤维化--fibrations-and-cofibrations)
-  - [4. 核心定理 / Core Theorems](#4-核心定理--core-theorems)
-  - [5. 实战问题 / Practical Problems](#5-实战问题--practical-problems)
-  - [6. 参考文献 / References](#6-参考文献--references)
+- [同伦论基础 / Foundations of Homotopy Theory](#同伦论基础-foundations-of-homotopy-theory)
+  - [1. 基础概念 / Basic Concepts](#1-基础概念-basic-concepts)
+  - [2. 同伦群 / Homotopy Groups](#2-同伦群-homotopy-groups)
+  - [3. 纤维化与余纤维化 / Fibrations and Cofibrations](#3-纤维化与余纤维化-fibrations-and-cofibrations)
+  - [4. 核心定理 / Core Theorems](#4-核心定理-core-theorems)
+  - [5. 实战问题 / Practical Problems](#5-实战问题-practical-problems)
+  - [6. 参考文献 / References](#6-参考文献-references)
 
 ---
 

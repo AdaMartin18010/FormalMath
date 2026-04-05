@@ -9,16 +9,16 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [Python实现：域论算法](#python实现域论算法--python-implementation-field-theory-algorithms)
+- [Python实现：域论算法](#python实现域论算法-python-implementation-field-theory-algorithms)
   - [目录](#目录)
-  - [概述](#概述--overview)
-  - [域的基本实现](#域的基本实现--basic-field-implementation)
-  - [域扩张算法](#域扩张算法--field-extension-algorithms)
-  - [伽罗瓦理论算法](#伽罗瓦理论算法--galois-theory-algorithms)
-  - [有限域算法](#有限域算法--finite-field-algorithms)
-  - [代数数论算法](#代数数论算法--algebraic-number-theory-algorithms)
-  - [应用案例](#应用案例--application-cases)
-  - [总结](#总结--summary)
+  - [概述](#概述-overview)
+  - [域的基本实现](#域的基本实现-basic-field-implementation)
+  - [域扩张算法](#域扩张算法-field-extension-algorithms)
+  - [伽罗瓦理论算法](#伽罗瓦理论算法-galois-theory-algorithms)
+  - [有限域算法](#有限域算法-finite-field-algorithms)
+  - [代数数论算法](#代数数论算法-algebraic-number-theory-algorithms)
+  - [应用案例](#应用案例-application-cases)
+  - [总结](#总结-summary)
 
 ## 概述 / Overview
 

@@ -48,9 +48,9 @@ $(\mathbb{Q}^*, \times)$ 是一个群，其中：
 
 ## 参见
 
-- [半群](semigroup.md)
-- [环](ring.md)
-- [域](field.md)
+- [半群](./../../../FormalMath-Interactive/node_modules/@typescript-eslint/eslint-plugin/docs/rules/semi.md)
+- [环](./../../../docs/i18n/de/core/Ring.md)
+- [域](./../../../docs/i18n/en/core/Field.md)
 
 ## 参考文献
 
