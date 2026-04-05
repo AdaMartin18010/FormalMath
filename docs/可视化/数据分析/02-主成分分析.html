@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主成分分析(PCA)可视化</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { text-align: center; color: #fff; margin-bottom: 10px; font-size: 2.5em; }
+        .subtitle { text-align: center; color: #aaa; margin-bottom: 30px; }
+        .main-content { display: grid; grid-template-columns: 300px 1fr; gap: 20px; }
+        @media (max-width: 900px) { .main-content { grid-template-columns: 1fr; } }
+        .controls {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .control-group { margin-bottom: 20px; }
+        .control-group label { display: block; font-weight: bold; color: #555; margin-bottom: 8px; }
+        .control-group input { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd; }
+        button {
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+            color: white; border: none; padding: 12px; border-radius: 8px;
+            cursor: pointer; transition: all 0.3s; width: 100%; margin-bottom: 10px;
+        }
+        button:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 184, 148, 0.4); }
+        .canvas-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px; padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .canvas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        canvas { border: 2px solid #e0e0e0; border-radius: 10px; display: block; margin: 0 auto; background: #fafafa; }
+        .eigen-panel {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .eigen-panel h4 { color: #00b894; margin-bottom: 10px; }
+        .eigen-bar { display: flex; align-items: center; margin-bottom: 8px; }
+        .eigen-label { width: 80px; font-size: 0.9em; }
+        .eigen-progress { flex: 1; height: 20px; background: #e0e0e0; border-radius: 10px; overflow: hidden; margin: 0 10px; }
+        .eigen-fill { height: 100%; background: linear-gradient(90deg, #00b894, #00cec9); border-radius: 10px; transition: width 0.5s; }
+        .eigen-value { width: 60px; text-align: right; font-family: monospace; font-size: 0.9em; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .info-card { background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .info-card h3 { color: #00b894; margin-bottom: 15px; border-bottom: 2px solid #00b894; padding-bottom: 10px; }
+        .info-card ul { margin-left: 20px; line-height: 1.8; }
+        .highlight { background: #d5f5e3; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+        .formula { background: #f8f9fa; padding: 15px; border-radius: 8px; font-family: 'Times New Roman', serif; text-align: center; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>主成分分析(PCA)可视化</h1>
+        <p class="subtitle">降维与方差最大化的几何解释</p>
+
+        <div class="main-content">
+            <div class="controls">
+                <div class="control-group">
+                    <label>数据点数量</label>
+                    <input type="range" id="dataPoints" min="20" max="200" value="100">
+                    <div style="color: #00b894; font-family: monospace;">100</div>
+                </div>
+                <div class="control-group">
+                    <label>相关性强度</label>
+                    <input type="range" id="correlation" min="0" max="100" value="80">
+                    <div style="color: #00b894; font-family: monospace;">0.8</div>
+                </div>
+                <button onclick="generateData()">生成数据</button>
+                <button onclick="computePCA()">计算PCA</button>
+                <button onclick="toggleProjection()">切换投影</button>
+
+                <div class="eigen-panel">
+                    <h4>特征值与方差贡献</h4>
+                    <div class="eigen-bar">
+                        <div class="eigen-label">PC1</div>
+                        <div class="eigen-progress"><div class="eigen-fill" id="pc1Bar" style="width: 70%"></div></div>
+                        <div class="eigen-value" id="pc1Value">70%</div>
+                    </div>
+                    <div class="eigen-bar">
+                        <div class="eigen-label">PC2</div>
+                        <div class="eigen-progress"><div class="eigen-fill" id="pc2Bar" style="width: 30%"></div></div>
+                        <div class="eigen-value" id="pc2Value">30%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="canvas-container">
+                <div class="canvas-grid">
+                    <canvas id="originalCanvas" width="450" height="450"></canvas>
+                    <canvas id="pcaCanvas" width="450" height="450"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>PCA核心思想</h3>
+                <div class="formula">max Var(wᵀx) s.t. ||w|| = 1</div>
+                <ul>
+                    <li>寻找数据方差最大的方向</li>
+                    <li>主成分是协方差矩阵的特征向量</li>
+                    <li>特征值表示各主成分解释的方差</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>计算步骤</h3>
+                <ul>
+                    <li><span class="highlight">1. 标准化</span>：零均值，单位方差</li>
+                    <li><span class="highlight">2. 协方差矩阵</span>：Σ = XᵀX/(n-1)</li>
+                    <li><span class="highlight">3. 特征分解</span>：Σw = λw</li>
+                    <li><span class="highlight">4. 投影</span>：Z = XW</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>应用场景</h3>
+                <ul>
+                    <li>高维数据可视化</li>
+                    <li>噪声过滤</li>
+                    <li>特征提取</li>
+                    <li>图像压缩</li>
+                    <li>人脸识别(Eigenfaces)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const origCanvas = document.getElementById('originalCanvas');
+        const pcaCanvas = document.getElementById('pcaCanvas');
+        const origCtx = origCanvas.getContext('2d');
+        const pcaCtx = pcaCanvas.getContext('2d');
+        
+        let data = [];
+        let pcaResult = null;
+        let showProjection = true;
+
+        function generateData() {
+            const n = parseInt(document.getElementById('dataPoints').value);
+            const corr = parseInt(document.getElementById('correlation').value) / 100;
+            
+            data = [];
+            for (let i = 0; i < n; i++) {
+                const x = (Math.random() - 0.5) * 10;
+                const noise = (Math.random() - 0.5) * 4 * (1 - Math.abs(corr));
+                const y = corr * x + Math.sqrt(1 - corr * corr) * noise;
+                data.push({x, y});
+            }
+            
+            drawOriginal();
+            computePCA();
+        }
+
+        function mean(arr) {
+            return arr.reduce((a, b) => a + b, 0) / arr.length;
+        }
+
+        function std(arr) {
+            const m = mean(arr);
+            return Math.sqrt(arr.reduce((sum, v) => sum + (v - m) ** 2, 0) / arr.length);
+        }
+
+        function computePCA() {
+            if (data.length === 0) return;
+            
+            // 中心化
+            const meanX = mean(data.map(d => d.x));
+            const meanY = mean(data.map(d => d.y));
+            const centered = data.map(d => ({x: d.x - meanX, y: d.y - meanY}));
+            
+            // 协方差矩阵
+            const n = centered.length;
+            let covXX = 0, covYY = 0, covXY = 0;
+            centered.forEach(d => {
+                covXX += d.x * d.x;
+                covYY += d.y * d.y;
+                covXY += d.x * d.y;
+            });
+            covXX /= (n - 1);
+            covYY /= (n - 1);
+            covXY /= (n - 1);
+            
+            // 特征值和特征向量（2x2矩阵解析解）
+            const trace = covXX + covYY;
+            const det = covXX * covYY - covXY * covXY;
+            const eigenvalue1 = (trace + Math.sqrt(trace * trace - 4 * det)) / 2;
+            const eigenvalue2 = (trace - Math.sqrt(trace * trace - 4 * det)) / 2;
+            
+            // 特征向量
+            const eigenvec1 = {x: eigenvalue1 - covYY, y: covXY};
+            const eigenvec2 = {x: eigenvalue1 - covXX, y: -covXY};
+            
+            // 归一化
+            const len1 = Math.sqrt(eigenvec1.x ** 2 + eigenvec1.y ** 2);
+            const len2 = Math.sqrt(eigenvec2.x ** 2 + eigenvec2.y ** 2);
+            eigenvec1.x /= len1; eigenvec1.y /= len1;
+            eigenvec2.x /= len2; eigenvec2.y /= len2;
+            
+            pcaResult = {
+                eigenvalues: [eigenvalue1, eigenvalue2],
+                eigenvectors: [eigenvec1, eigenvec2],
+                meanX, meanY,
+                centered
+            };
+            
+            // 更新UI
+            const total = eigenvalue1 + eigenvalue2;
+            document.getElementById('pc1Bar').style.width = (eigenvalue1 / total * 100) + '%';
+            document.getElementById('pc2Bar').style.width = (eigenvalue2 / total * 100) + '%';
+            document.getElementById('pc1Value').textContent = (eigenvalue1 / total * 100).toFixed(1) + '%';
+            document.getElementById('pc2Value').textContent = (eigenvalue2 / total * 100).toFixed(1) + '%';
+            
+            drawOriginal();
+            drawPCA();
+        }
+
+        function drawOriginal() {
+            const ctx = origCtx;
+            const w = origCanvas.width, h = origCanvas.height;
+            ctx.clearRect(0, 0, w, h);
+            
+            // 背景
+            ctx.fillStyle = '#fafafa';
+            ctx.fillRect(0, 0, w, h);
+            
+            const margin = 50;
+            const scale = 30;
+            const cx = w / 2, cy = h / 2;
+            
+            // 网格
+            ctx.strokeStyle = '#e0e0e0';
+            for (let i = -10; i <= 10; i++) {
+                ctx.beginPath();
+                ctx.moveTo(cx + i * scale, margin);
+                ctx.lineTo(cx + i * scale, h - margin);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(margin, cy + i * scale);
+                ctx.lineTo(w - margin, cy + i * scale);
+                ctx.stroke();
+            }
+            
+            // 坐标轴
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(margin, cy);
+            ctx.lineTo(w - margin, cy);
+            ctx.moveTo(cx, margin);
+            ctx.lineTo(cx, h - margin);
+            ctx.stroke();
+            
+            // 数据点
+            data.forEach(d => {
+                ctx.fillStyle = '#00b894';
+                ctx.beginPath();
+                ctx.arc(cx + d.x * scale, cy - d.y * scale, 4, 0, 2 * Math.PI);
+                ctx.fill();
+            });
+            
+            // 绘制主成分方向
+            if (pcaResult && showProjection) {
+                const ev1 = pcaResult.eigenvectors[0];
+                const ev2 = pcaResult.eigenvectors[1];
+                const ev1Len = Math.sqrt(pcaResult.eigenvalues[0]) * scale * 2;
+                const ev2Len = Math.sqrt(pcaResult.eigenvalues[1]) * scale * 2;
+                
+                ctx.strokeStyle = '#e74c3c';
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(cx, cy);
+                ctx.lineTo(cx + ev1.x * ev1Len, cy - ev1.y * ev1Len);
+                ctx.stroke();
+                
+                ctx.strokeStyle = '#3498db';
+                ctx.beginPath();
+                ctx.moveTo(cx, cy);
+                ctx.lineTo(cx + ev2.x * ev2Len, cy - ev2.y * ev2Len);
+                ctx.stroke();
+                
+                // 标注
+                ctx.fillStyle = '#e74c3c';
+                ctx.font = 'bold 14px Arial';
+                ctx.fillText('PC1', cx + ev1.x * ev1Len + 10, cy - ev1.y * ev1Len);
+                ctx.fillStyle = '#3498db';
+                ctx.fillText('PC2', cx + ev2.x * ev2Len + 10, cy - ev2.y * ev2Len);
+            }
+            
+            ctx.fillStyle = '#333';
+            ctx.font = '16px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('原始数据空间', w / 2, 30);
+        }
+
+        function drawPCA() {
+            const ctx = pcaCtx;
+            const w = pcaCanvas.width, h = pcaCanvas.height;
+            ctx.clearRect(0, 0, w, h);
+            
+            if (!pcaResult) return;
+            
+            ctx.fillStyle = '#fafafa';
+            ctx.fillRect(0, 0, w, h);
+            
+            const margin = 50;
+            const scale = 30;
+            const cx = w / 2, cy = h / 2;
+            
+            // 网格
+            ctx.strokeStyle = '#e0e0e0';
+            for (let i = -10; i <= 10; i++) {
+                ctx.beginPath();
+                ctx.moveTo(cx + i * scale, margin);
+                ctx.lineTo(cx + i * scale, h - margin);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(margin, cy + i * scale);
+                ctx.lineTo(w - margin, cy + i * scale);
+                ctx.stroke();
+            }
+            
+            // 坐标轴
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(margin, cy);
+            ctx.lineTo(w - margin, cy);
+            ctx.moveTo(cx, margin);
+            ctx.lineTo(cx, h - margin);
+            ctx.stroke();
+            
+            // 投影后的数据
+            const ev1 = pcaResult.eigenvectors[0];
+            const ev2 = pcaResult.eigenvectors[1];
+            
+            pcaResult.centered.forEach(d => {
+                const pc1 = d.x * ev1.x + d.y * ev1.y;
+                const pc2 = d.x * ev2.x + d.y * ev2.y;
+                
+                ctx.fillStyle = '#00b894';
+                ctx.beginPath();
+                ctx.arc(cx + pc1 * scale, cy - pc2 * scale, 4, 0, 2 * Math.PI);
+                ctx.fill();
+            });
+            
+            ctx.fillStyle = '#333';
+            ctx.font = '16px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('PCA投影空间', w / 2, 30);
+        }
+
+        function toggleProjection() {
+            showProjection = !showProjection;
+            drawOriginal();
+        }
+
+        // 事件监听
+        document.getElementById('dataPoints').addEventListener('input', function() {
+            this.nextElementSibling.textContent = this.value;
+        });
+
+        document.getElementById('correlation').addEventListener('input', function() {
+            this.nextElementSibling.textContent = (this.value / 100).toFixed(2);
+        });
+
+        // 初始化
+        generateData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动力系统 - 相图分析</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #eee;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { text-align: center; color: #fff; margin-bottom: 10px; font-size: 2.5em; }
+        .subtitle { text-align: center; color: #aaa; margin-bottom: 30px; }
+        .main-content { display: grid; grid-template-columns: 300px 1fr; gap: 20px; }
+        @media (max-width: 900px) { .main-content { grid-template-columns: 1fr; } }
+        .controls {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(100, 200, 255, 0.2);
+        }
+        .control-group { margin-bottom: 20px; }
+        .control-group label { display: block; color: #64c8ff; margin-bottom: 8px; font-weight: bold; }
+        .control-group select, .control-group input { width: 100%; padding: 8px; border-radius: 5px; border: 1px solid rgba(100, 200, 255, 0.3); background: rgba(0, 0, 0, 0.3); color: #fff; }
+        button {
+            background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+            color: white; border: none; padding: 12px; border-radius: 8px; cursor: pointer;
+            transition: all 0.3s; width: 100%; margin-bottom: 10px;
+        }
+        button:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(0, 180, 219, 0.4); }
+        .canvas-container {
+            background: rgba(0, 0, 0, 0.2); border-radius: 15px; padding: 20px;
+            border: 1px solid rgba(100, 200, 255, 0.2); text-align: center;
+        }
+        canvas { border: 2px solid rgba(100, 200, 255, 0.3); border-radius: 10px; background: #0a0a15; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .info-card { background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 10px; border: 1px solid rgba(100, 200, 255, 0.2); }
+        .info-card h3 { color: #64c8ff; margin-bottom: 15px; border-bottom: 1px solid rgba(100, 200, 255, 0.3); padding-bottom: 10px; }
+        .info-card ul { margin-left: 20px; line-height: 1.8; color: #ccc; }
+        .highlight { color: #64c8ff; font-weight: bold; }
+        .equilibrium { background: rgba(0, 180, 219, 0.1); padding: 10px; border-radius: 5px; margin-top: 10px; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>相图与向量场分析</h1>
+        <p class="subtitle">探索微分方程的几何行为与平衡点性质</p>
+
+        <div class="main-content">
+            <div class="controls">
+                <div class="control-group">
+                    <label>系统类型</label>
+                    <select id="systemType">
+                        <option value="linear">线性系统</option>
+                        <option value="pendulum">单摆</option>
+                        <option value="predator">捕食者-猎物模型</option>
+                        <option value="vanDerPol">Van der Pol振子</option>
+                        <option value="saddle">鞍点</option>
+                        <option value="center">中心点</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label>显示向量场</label>
+                    <select id="showField">
+                        <option value="true">显示</option>
+                        <option value="false">隐藏</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label>流线密度</label>
+                    <input type="range" id="streamDensity" min="10" max="50" value="25">
+                </div>
+                <button onclick="drawPhasePortrait()">绘制相图</button>
+                <button onclick="clearCanvas()">清除</button>
+                <p style="margin-top: 15px; font-size: 0.85em; color: #888;">点击画布添加轨迹</p>
+                <div class="equilibrium" id="equilibriumInfo">
+                    平衡点: (0, 0)<br>
+                    类型: 稳定结点
+                </div>
+            </div>
+            <div class="canvas-container">
+                <canvas id="phaseCanvas" width="950" height="650"></canvas>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>相图基础</h3>
+                <ul>
+                    <li>相空间: 状态变量的几何表示</li>
+                    <li>轨迹: 系统状态随时间的演化路径</li>
+                    <li>向量场: 各点处的速度方向</li>
+                    <li><span class="highlight">平衡点</span>: 速度为零的点</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>平衡点分类</h3>
+                <ul>
+                    <li><span class="highlight">结点</span>: 实特征值同号</li>
+                    <li><span class="highlight">鞍点</span>: 实特征值异号</li>
+                    <li><span class="highlight">焦点</span>: 复特征值实部非零</li>
+                    <li><span class="highlight">中心</span>: 纯虚特征值</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>稳定性分析</h3>
+                <ul>
+                    <li>李雅普诺夫稳定性定义</li>
+                    <li>线性化方法(Hartman-Grobman定理)</li>
+                    <li>李雅普诺夫函数法</li>
+                    <li>极限环与周期解</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('phaseCanvas');
+        const ctx = canvas.getContext('2d');
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const scale = 40;
+        let trajectories = [];
+
+        function toCanvas(x, y) {
+            return { x: centerX + x * scale, y: centerY - y * scale };
+        }
+
+        function fromCanvas(cx, cy) {
+            return { x: (cx - centerX) / scale, y: (centerY - cy) / scale };
+        }
+
+        function getSystem(type) {
+            switch(type) {
+                case 'linear':
+                    return {
+                        f: (x, y) => -0.5 * x - y,
+                        g: (x, y) => x - 0.5 * y,
+                        equilibrium: '(0, 0)',
+                        type: '稳定焦点'
+                    };
+                case 'saddle':
+                    return {
+                        f: (x, y) => x + 2 * y,
+                        g: (x, y) => 3 * x + 2 * y,
+                        equilibrium: '(0, 0)',
+                        type: '鞍点'
+                    };
+                case 'center':
+                    return {
+                        f: (x, y) => -y,
+                        g: (x, y) => x,
+                        equilibrium: '(0, 0)',
+                        type: '中心点'
+                    };
+                case 'pendulum':
+                    return {
+                        f: (x, y) => y,
+                        g: (x, y) => -Math.sin(x) - 0.1 * y,
+                        equilibrium: '(k*pi, 0)',
+                        type: '阻尼摆'
+                    };
+                case 'predator':
+                    return {
+                        f: (x, y) => x * (1 - x/5) - 0.5 * x * y,
+                        g: (x, y) => 0.3 * x * y - 0.2 * y,
+                        equilibrium: '(0,0), (5,0), (2/3, 26/15)',
+                        type: 'Lotka-Volterra'
+                    };
+                case 'vanDerPol':
+                    return {
+                        f: (x, y) => y,
+                        g: (x, y) => 0.5 * (1 - x * x) * y - x,
+                        equilibrium: '(0, 0)',
+                        type: '不稳定焦点(极限环)'
+                    };
+                default:
+                    return { f: (x, y) => -x, g: (x, y) => -y, equilibrium: '(0,0)', type: '稳定结点' };
+            }
+        }
+
+        function drawGrid() {
+            ctx.fillStyle = '#0a0a15';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.strokeStyle = 'rgba(100, 200, 255, 0.1)';
+            ctx.lineWidth = 1;
+            for (let i = -10; i <= 10; i++) {
+                const pos = toCanvas(i, 0);
+                ctx.beginPath();
+                ctx.moveTo(pos.x, 0);
+                ctx.lineTo(pos.x, canvas.height);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(0, pos.y);
+                ctx.lineTo(canvas.width, pos.y);
+                ctx.stroke();
+            }
+
+            ctx.strokeStyle = 'rgba(100, 200, 255, 0.5)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(0, centerY);
+            ctx.lineTo(canvas.width, centerY);
+            ctx.moveTo(centerX, 0);
+            ctx.lineTo(centerX, canvas.height);
+            ctx.stroke();
+
+            ctx.fillStyle = '#64c8ff';
+            ctx.font = '12px Arial';
+            ctx.textAlign = 'center';
+            for (let i = -10; i <= 10; i++) {
+                if (i === 0) continue;
+                const pos = toCanvas(i, 0);
+                ctx.fillText(i.toString(), pos.x, centerY + 20);
+                ctx.fillText(i.toString(), centerX - 20, pos.y + 4);
+            }
+            ctx.fillText('x', canvas.width - 30, centerY - 10);
+            ctx.fillText('y', centerX + 20, 20);
+        }
+
+        function drawVectorField(system) {
+            const density = parseInt(document.getElementById('streamDensity').value);
+            const showField = document.getElementById('showField').value === 'true';
+            if (!showField) return;
+
+            for (let i = -density; i <= density; i++) {
+                for (let j = -density; j <= density; j++) {
+                    const x = i * 10 / density;
+                    const y = j * 10 / density;
+                    const dx = system.f(x, y);
+                    const dy = system.g(x, y);
+                    const len = Math.sqrt(dx * dx + dy * dy);
+                    if (len > 0.001) {
+                        const ux = dx / len * 0.3;
+                        const uy = dy / len * 0.3;
+                        const start = toCanvas(x, y);
+                        const end = toCanvas(x + ux, y + uy);
+                        
+                        ctx.strokeStyle = `rgba(100, 200, 255, ${Math.min(len * 0.3, 0.5)})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(start.x, start.y);
+                        ctx.lineTo(end.x, end.y);
+                        ctx.stroke();
+                        
+                        // 箭头
+                        const angle = Math.atan2(end.y - start.y, end.x - start.x);
+                        ctx.beginPath();
+                        ctx.moveTo(end.x, end.y);
+                        ctx.lineTo(end.x - 5 * Math.cos(angle - 0.3), end.y - 5 * Math.sin(angle - 0.3));
+                        ctx.lineTo(end.x - 5 * Math.cos(angle + 0.3), end.y - 5 * Math.sin(angle + 0.3));
+                        ctx.fillStyle = ctx.strokeStyle;
+                        ctx.fill();
+                    }
+                }
+            }
+        }
+
+        function drawTrajectory(x0, y0, system, color) {
+            const dt = 0.01;
+            const maxSteps = 5000;
+            let x = x0, y = y0;
+            const points = [];
+            
+            for (let i = 0; i < maxSteps; i++) {
+                const k1x = system.f(x, y);
+                const k1y = system.g(x, y);
+                const k2x = system.f(x + 0.5 * dt * k1x, y + 0.5 * dt * k1y);
+                const k2y = system.g(x + 0.5 * dt * k1x, y + 0.5 * dt * k1y);
+                const k3x = system.f(x + 0.5 * dt * k2x, y + 0.5 * dt * k2y);
+                const k3y = system.g(x + 0.5 * dt * k2x, y + 0.5 * dt * k2y);
+                const k4x = system.f(x + dt * k3x, y + dt * k3y);
+                const k4y = system.g(x + dt * k3x, y + dt * k3y);
+                
+                x += (dt / 6) * (k1x + 2 * k2x + 2 * k3x + k4x);
+                y += (dt / 6) * (k1y + 2 * k2y + 2 * k3y + k4y);
+                
+                if (Math.abs(x) > 15 || Math.abs(y) > 15) break;
+                
+                const pos = toCanvas(x, y);
+                points.push(pos);
+                
+                if (Math.abs(system.f(x, y)) < 0.01 && Math.abs(system.g(x, y)) < 0.01) break;
+            }
+            
+            if (points.length > 1) {
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(points[0].x, points[0].y);
+                for (let i = 1; i < points.length; i++) {
+                    ctx.lineTo(points[i].x, points[i].y);
+                }
+                ctx.stroke();
+                
+                // 起点标记
+                ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.arc(points[0].x, points[0].y, 4, 0, 2 * Math.PI);
+                ctx.fill();
+            }
+        }
+
+        function drawPhasePortrait() {
+            const type = document.getElementById('systemType').value;
+            const system = getSystem(type);
+            
+            document.getElementById('equilibriumInfo').innerHTML = 
+                `平衡点: ${system.equilibrium}<br>类型: ${system.type}`;
+            
+            drawGrid();
+            drawVectorField(system);
+            
+            // 绘制示例轨迹
+            const colors = ['#ff6b6b', '#4ecdc4', '#ffe66d', '#95e1d3', '#f38181'];
+            for (let i = 0; i < 5; i++) {
+                const angle = (i / 5) * 2 * Math.PI;
+                const r = 3;
+                const x0 = r * Math.cos(angle);
+                const y0 = r * Math.sin(angle);
+                drawTrajectory(x0, y0, system, colors[i]);
+            }
+        }
+
+        function clearCanvas() {
+            drawGrid();
+            trajectories = [];
+        }
+
+        canvas.addEventListener('click', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const pos = fromCanvas(x, y);
+            const type = document.getElementById('systemType').value;
+            const system = getSystem(type);
+            const hue = Math.random() * 360;
+            drawTrajectory(pos.x, pos.y, system, `hsl(${hue}, 70%, 60%)`);
+        });
+
+        drawPhasePortrait();
+    </script>
+</body>
+</html>
