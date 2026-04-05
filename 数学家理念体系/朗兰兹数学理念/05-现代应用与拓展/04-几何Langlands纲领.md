@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [几何Langlands纲领：Langlands纲领的几何化](#几何langlands纲领langlands纲领的几何化)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、几何Langlands纲领概述](#一、几何langlands纲领概述)
     - [1.1 几何Langlands纲领](#1.1-几何langlands纲领)
     - [1.2 几何Langlands纲领的重要性](#1.2-几何langlands纲领的重要性)

@@ -24,7 +24,7 @@ msc_secondary: ['11Axx', '03E30', '03E15']
 
 - [ZFC公理体系完整形式化 - 自然数构造详细版](#zfc公理体系完整形式化---自然数构造详细版)
   - [Table of Contents](#Table of Contents)
-  - [📚 概述](#-概述)
+  - [📚 概述](#概述)
   - [🏗️ 自然数的构造](#️-自然数的构造)
     - [1. 冯·诺伊曼序数](#1-冯诺伊曼序数)
       - [1.1 序数的递归Definition](#11-序数的递归Definition)
@@ -54,7 +54,7 @@ msc_secondary: ['11Axx', '03E30', '03E15']
     - [数学归纳法形式化](#数学归纳法形式化)
     - [皮亚诺公理形式化](#皮亚诺公理形式化)
     - [应用案例：自然数在计算机科学中的应用](#应用案例自然数在计算机科学中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
   - [References / References](#References--references)
 
 ## 📚 概述

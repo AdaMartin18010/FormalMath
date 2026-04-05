@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Galois表示的定义：Langlands纲领的基础](#galois表示的定义langlands纲领的基础)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、Galois表示概述](#一、galois表示概述)
     - [1.1 Galois表示的历史](#1.1-galois表示的历史)
     - [1.2 Galois表示的重要性](#1.2-galois表示的重要性)

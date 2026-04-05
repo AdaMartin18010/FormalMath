@@ -13,7 +13,7 @@ msc_secondary: ['11Axx', '62Fxx', '01Axx']
 
 - [FormalMath术语词典 - 数论](#formalmath术语词典---数论)
   - [统一数论术语标准定义](#统一数论术语标准定义)
-  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📑 目录 / Table of Contents](#目录)
   - [📋 词典概述](#-词典概述)
   - [🗺️ 数论核心概念思维导图](#️-数论核心概念思维导图)
   - [📊 数论核心概念多维知识矩阵](#-数论核心概念多维知识矩阵)

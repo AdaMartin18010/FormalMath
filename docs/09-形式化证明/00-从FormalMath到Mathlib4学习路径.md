@@ -23,7 +23,7 @@ last_updated: "2026-04-03"
 ## 📚 目录
 
 - [从FormalMath到Mathlib4学习路径](#从formalmath到mathlib4学习路径)
-  - [📚 目录](#-目录)
+  - [📚 目录](#目录)
   - [前言](#前言)
     - [学习哲学](#学习哲学)
   - [一、Lean4安装配置](#一lean4安装配置)

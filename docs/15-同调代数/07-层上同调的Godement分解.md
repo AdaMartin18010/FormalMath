@@ -14,7 +14,7 @@ msc_secondary: ['14F05', '18G15', '32L10']
 ## 目录 / Table of Contents
 
 - [15.7 层上同调的Godement分解 / Godement Resolution in Sheaf Cohomology](#157-层上同调的godement分解--godement-resolution-in-sheaf-cohomology)
-  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [目录 / Table of Contents](#目录)
   - [15.7.1 引言 / Introduction](#1571-引言--introduction)
   - [15.7.2 松软层与内射层 / Flabby and Injective Sheaves](#1572-松软层与内射层--flabby-and-injective-sheaves)
     - [松软层的定义与性质 / Definition and Properties of Flabby Sheaves](#松软层的定义与性质--definition-and-properties-of-flabby-sheaves)

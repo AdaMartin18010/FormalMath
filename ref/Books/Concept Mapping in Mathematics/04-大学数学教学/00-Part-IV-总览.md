@@ -19,7 +19,7 @@ Part IV: University Mathematics Teaching and Learning - Overview
 ## 📑 目录 / Table of Contents
 
 - [Part IV: 大学数学教学与学习 - 总览](#part-iv-大学数学教学与学习---总览)
-  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📑 目录 / Table of Contents](#目录)
   - [📋 一、概述 / Overview](#-一概述--overview)
     - [1.1 Part IV 目标 / Part IV Objectives](#11-part-iv-目标--part-iv-objectives)
     - [1.2 研究范围 / Research Scope](#12-研究范围--research-scope)

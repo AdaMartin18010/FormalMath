@@ -24,7 +24,7 @@ msc_secondary: ['03E30', '03E15', '11-XX']
 
 - [ZFC公理体系完整形式化 - 第五部分：复数构造](#zfc公理体系完整形式化---第五部分复数构造)
   - [Table of Contents](#Table of Contents)
-  - [📚 概述](#-概述)
+  - [📚 概述](#概述)
   - [🏗️ 复数的构造](#️-复数的构造)
     - [1. 复数的Definition](#1-复数的Definition)
       - [1.1 复数作为有序对](#11-复数作为有序对)
@@ -64,7 +64,7 @@ msc_secondary: ['03E30', '03E15', '11-XX']
     - [复数几何性质形式化](#复数几何性质形式化)
     - [代数基本Theorem形式化](#代数基本Theorem形式化)
     - [应用案例：复数在分析中的应用](#应用案例复数在分析中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
   - [References / References](#References--references)
 
 ## 📚 概述

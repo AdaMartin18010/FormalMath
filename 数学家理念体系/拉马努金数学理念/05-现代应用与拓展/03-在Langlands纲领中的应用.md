@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [拉马努金在Langlands纲领中的应用](#拉马努金在langlands纲领中的应用)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、Langlands纲领概述](#一、langlands纲领概述)
     - [1.1 Langlands纲领](#1.1-langlands纲领)
     - [1.2 核心思想](#1.2-核心思想)

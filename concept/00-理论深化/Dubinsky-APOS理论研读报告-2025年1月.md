@@ -14,7 +14,7 @@ msc_primary: "00A99"
 ## 📑 目录 / Table of Contents
 
 - [Dubinsky APOS理论研读报告](#dubinsky-apos理论研读报告)
-  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📑 目录 / Table of Contents](#目录)
   - [📋 执行摘要](#-执行摘要)
   - [🎯 一、理论核心 (编号: C.THEORY.02.01)](#-一理论核心-编号-ctheory0201)
     - [1.1 理论提出者](#11-理论提出者)

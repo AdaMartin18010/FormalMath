@@ -14,7 +14,7 @@ msc_secondary: ["11G40", "11G07", "14H52"]
 ## 目录 / Table of Contents
 
 - [椭圆曲线与BSD猜想 - 深度扩展版 / Elliptic Curves and BSD Conjecture - Deep Extension](#椭圆曲线与bsd猜想---深度扩展版--elliptic-curves-and-bsd-conjecture---deep-extension)
-  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [目录 / Table of Contents](#目录)
   - [1. 椭圆曲线的算术基础](#1-椭圆曲线的算术基础)
     - [1.1 Weierstrass方程与群结构](#11-weierstrass方程与群结构)
     - [1.2 挠子群与判别式](#12-挠子群与判别式)

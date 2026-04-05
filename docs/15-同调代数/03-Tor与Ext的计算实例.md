@@ -14,7 +14,7 @@ msc_secondary: ['16E30', '13D07', '18G10']
 ## 目录 / Table of Contents
 
 - [15.3 Tor与Ext的计算实例 / Computational Examples of Tor and Ext](#153-tor与ext的计算实例--computational-examples-of-tor-and-ext)
-  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [目录 / Table of Contents](#目录)
   - [15.3.1 引言 / Introduction](#1531-引言--introduction)
   - [15.3.2 Tor函子的定义与基本性质 / Definition and Basic Properties of Tor](#1532-tor函子的定义与基本性质--definition-and-basic-properties-of-tor)
     - [作为导出张量积 / Tor as Derived Tensor Product](#作为导出张量积--tor-as-derived-tensor-product)

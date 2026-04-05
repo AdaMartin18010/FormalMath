@@ -10,7 +10,7 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [Python实现：域论算法](#python实现域论算法--python-implementation-field-theory-algorithms)
-  - [目录](#目录--table-of-contents)
+  - [目录](#目录)
   - [概述](#概述--overview)
   - [域的基本实现](#域的基本实现--basic-field-implementation)
   - [域扩张算法](#域扩张算法--field-extension-algorithms)

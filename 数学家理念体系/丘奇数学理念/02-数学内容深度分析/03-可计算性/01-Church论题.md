@@ -20,7 +20,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Church-Turing论题：可计算性的数学基础](#church-turing论题可计算性的数学基础)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、历史背景与问题提出](#一历史背景与问题提出)
     - [1.1 Hilbert的挑战与Entscheidungsproblem](#11-hilbert的挑战与entscheidungsproblem)
     - [1.2 1936年：可计算性理论的诞生](#12-1936年可计算性理论的诞生)

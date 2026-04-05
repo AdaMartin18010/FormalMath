@@ -19,7 +19,7 @@ msc_secondary: "01A99"
 ## 📑 目录 / Table of Contents
 
 - [数学中的概念映射：全面梳理与多维表征系统](#数学中的概念映射全面梳理与多维表征系统)
-  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📑 目录 / Table of Contents](#目录)
   - [📋 一、概述 / Overview](#-一概述--overview)
     - [1.1 书籍信息 / Book Information](#11-书籍信息--book-information)
     - [1.2 核心目标 / Core Objectives](#12-核心目标--core-objectives)

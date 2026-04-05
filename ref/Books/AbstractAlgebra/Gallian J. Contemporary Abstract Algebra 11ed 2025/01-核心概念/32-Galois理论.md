@@ -14,7 +14,7 @@ msc_secondary: "01A99"
 ## 📑 目录
 
 - [Galois理论 (Galois Theory)](#galois理论-galois-theory)
-  - [📑 目录](#-目录)
+  - [📑 目录](#目录)
   - [一、引言](#一引言)
   - [二、基本定义](#二基本定义)
     - [2.1 自同构 (Automorphism)](#21-自同构-automorphism)

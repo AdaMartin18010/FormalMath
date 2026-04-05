@@ -10,7 +10,7 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [Lean4形式化实现-模论 / Lean 4 Formalization - Module Theory](#lean4形式化实现-模论--lean-4-formalization---module-theory)
-  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [目录 / Table of Contents](#目录)
   - [1. 基本模论形式化 / Basic Module Theory Formalization](#1-基本模论形式化--basic-module-theory-formalization)
     - [1.1 模的基本定义 / Basic Module Definitions](#11-模的基本定义--basic-module-definitions)
     - [1.2 自由模与投射模 / Free and Projective Modules](#12-自由模与投射模--free-and-projective-modules)

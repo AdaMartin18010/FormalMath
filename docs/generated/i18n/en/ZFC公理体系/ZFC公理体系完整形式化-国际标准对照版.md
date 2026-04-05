@@ -49,7 +49,7 @@ msc_primary: "03E35"
     - [基础概念 / Basic Concepts / Concepts de base / Grundbegriffe](#基础概念--basic-concepts--concepts-de-base--grundbegriffe)
     - [公理名称 / Axiom Names / Noms d'axiomes / Axiomnamen](#公理名称--axiom-names--noms-daxiomes--axiomnamen)
   - [🎯 结论 / Conclusion / Conclusion / Schlussfolgerung](#-结论--conclusion--conclusion--schlussfolgerung)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
   - [References / References](#References--references)
 
 ## 📚 概述 / Overview / Aperçu / Übersicht

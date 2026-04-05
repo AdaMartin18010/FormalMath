@@ -46,7 +46,7 @@ processed_at: '2026-04-05'
   - [🔮 发展前景](#-发展前景)
     - [理论发展](#理论发展)
     - [应用发展](#应用发展)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
 
 ## 📚 文档导航
 

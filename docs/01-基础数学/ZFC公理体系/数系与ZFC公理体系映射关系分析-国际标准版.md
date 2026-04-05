@@ -12,7 +12,7 @@ processed_at: '2026-04-05'
 - [数系与ZFC公理体系映射关系分析 - 国际标准版](#数系与zfc公理体系映射关系分析---国际标准版)
   - [目录](#目录)
   - [Number Systems and ZFC Axiom System Mapping Analysis - International Standard Version](#number-systems-and-zfc-axiom-system-mapping-analysis---international-standard-version)
-  - [📚 概述 / Overview](#-概述--overview)
+  - [📚 概述 / Overview](#概述)
   - [🏗️ 1. 数系与ZFC公理体系的映射关系 / Mapping Relationship Between Number Systems and ZFC Axiom System](#️-1-数系与zfc公理体系的映射关系--mapping-relationship-between-number-systems-and-zfc-axiom-system)
     - [1.1 映射关系总览 / Mapping Relationship Overview](#11-映射关系总览--mapping-relationship-overview)
     - [1.2 自然数构造的ZFC映射 / ZFC Mapping for Natural Number Construction](#12-自然数构造的zfc映射--zfc-mapping-for-natural-number-construction)

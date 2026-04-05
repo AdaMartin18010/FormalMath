@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Galois表示与自守形式的对应：Langlands纲领的核心](#galois表示与自守形式的对应langlands纲领的核心)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、Galois表示](#一、galois表示)
     - [1.1 Galois表示的定义](#1.1-galois表示的定义)
     - [1.2 Galois表示的分类](#1.2-galois表示的分类)

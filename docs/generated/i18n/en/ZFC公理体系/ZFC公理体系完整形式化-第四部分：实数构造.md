@@ -24,7 +24,7 @@ msc_secondary: ['03E30', '03E15', '28-XX']
 
 - [ZFC公理体系完整形式化 - 第四部分：实数构造](#zfc公理体系完整形式化---第四部分实数构造)
   - [Table of Contents](#Table of Contents)
-  - [📚 概述](#-概述)
+  - [📚 概述](#概述)
   - [🏗️ 实数的构造](#️-实数的构造)
     - [1. 戴德金分割方法](#1-戴德金分割方法)
       - [1.1 戴德金分割的Definition](#11-戴德金分割的Definition)
@@ -63,7 +63,7 @@ msc_secondary: ['03E30', '03E15', '28-XX']
     - [实数序关系形式化](#实数序关系形式化)
     - [实数完备性形式化](#实数完备性形式化)
     - [应用案例：实数在分析中的应用](#应用案例实数在分析中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
   - [References / References](#References--references)
 
 ## 📚 概述

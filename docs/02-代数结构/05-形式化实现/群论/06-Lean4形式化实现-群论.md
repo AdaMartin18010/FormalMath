@@ -10,7 +10,7 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [Lean4形式化实现-群论 / Lean4 Formalization of Group Theory](#lean4形式化实现-群论--lean4-formalization-of-group-theory)
-  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [目录 / Table of Contents](#目录)
   - [概述](#概述)
     - [核心目标](#核心目标)
     - [技术特色](#技术特色)

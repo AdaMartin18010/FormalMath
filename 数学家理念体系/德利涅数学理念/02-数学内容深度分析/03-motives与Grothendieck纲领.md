@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Deligne与Motives：Grothendieck梦想的现实化](#deligne与motivesgrothendieck梦想的现实化)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [摘要](#摘要)
   - [一、引言：Grothendieck的Motives梦想](#一引言grothendieck的motives梦想)
     - [1.1 上同调理论的统一](#11-上同调理论的统一)

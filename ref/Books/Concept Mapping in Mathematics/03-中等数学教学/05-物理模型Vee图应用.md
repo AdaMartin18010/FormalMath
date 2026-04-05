@@ -21,7 +21,7 @@ Using Concept Maps and Gowin's Vee to Understand Mathematical Models of Physical
 ## 📑 目录 / Table of Contents
 
 - [使用概念映射和Gowin的Vee理解物理现象的数学模型](#使用概念映射和gowin的vee理解物理现象的数学模型)
-  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📑 目录 / Table of Contents](#目录)
   - [📋 一、概述 / Overview](#-一概述--overview)
     - [1.1 研究目标 / Research Objectives](#11-研究目标--research-objectives)
     - [1.2 核心内容 / Core Content](#12-核心内容--core-content)

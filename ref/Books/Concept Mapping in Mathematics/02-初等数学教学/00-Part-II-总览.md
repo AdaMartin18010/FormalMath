@@ -19,7 +19,7 @@ Part II: Primary Mathematics Teaching and Learning - Overview
 ## 📑 目录 / Table of Contents
 
 - [Part II: 初等数学教学与学习 - 总览](#part-ii-初等数学教学与学习---总览)
-  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📑 目录 / Table of Contents](#目录)
   - [📋 一、概述 / Overview](#-一概述--overview)
     - [1.1 Part II 目标 / Part II Objectives](#11-part-ii-目标--part-ii-objectives)
     - [1.2 研究范围 / Research Scope](#12-研究范围--research-scope)

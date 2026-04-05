@@ -24,7 +24,7 @@ msc_secondary: ['16-XX', '11Axx', '03E30']
 
 - [ZFC公理体系完整形式化 - 第二部分：整数构造](#zfc公理体系完整形式化---第二部分整数构造)
   - [Table of Contents](#Table of Contents)
-  - [📚 概述](#-概述)
+  - [📚 概述](#概述)
   - [🏗️ 整数的构造](#️-整数的构造)
     - [1. 整数的Definition](#1-整数的Definition)
       - [1.1 整数作为等价类](#11-整数作为等价类)
@@ -59,7 +59,7 @@ msc_secondary: ['16-XX', '11Axx', '03E30']
     - [整数Ring结构形式化](#整数Ring结构形式化)
     - [整数Number Theory性质形式化](#整数Number Theory性质形式化)
     - [应用案例：整数在Number Theory中的应用](#应用案例整数在Number Theory中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
   - [References / References](#References--references)
 
 ## 📚 概述

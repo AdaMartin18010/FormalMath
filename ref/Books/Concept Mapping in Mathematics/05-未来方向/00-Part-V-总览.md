@@ -19,7 +19,7 @@ Part V: Future Directions - Overview
 ## 📑 目录 / Table of Contents
 
 - [Part V: 未来方向 - 总览](#part-v-未来方向---总览)
-  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📑 目录 / Table of Contents](#目录)
   - [📋 一、概述 / Overview](#-一概述--overview)
     - [1.1 Part V 目标 / Part V Objectives](#11-part-v-目标--part-v-objectives)
     - [1.2 核心内容 / Core Content](#12-核心内容--core-content)

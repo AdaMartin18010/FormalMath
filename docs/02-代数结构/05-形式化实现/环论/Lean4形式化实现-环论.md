@@ -10,8 +10,8 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [环论 - Lean4形式化实现](#环论---lean4形式化实现)
-  - [目录 / Table of Contents](#目录--table-of-contents)
-  - [📚 概述](#-概述)
+  - [目录 / Table of Contents](#目录)
+  - [📚 概述](#概述)
   - [🔧 1. 基础环论形式化](#-1-基础环论形式化)
     - [1.1 环的基本定义](#11-环的基本定义)
     - [1.2 理想理论](#12-理想理论)

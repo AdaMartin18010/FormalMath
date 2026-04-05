@@ -17,7 +17,7 @@ msc_secondary: ['00-XX']
 
 - [ZFC公理体系完整形式化 - 序关系构造详细版](#zfc公理体系完整形式化---序关系构造详细版)
   - [目录](#目录)
-  - [📚 概述](#-概述)
+  - [📚 概述](#概述)
   - [🏗️ 序关系的构造](#️-序关系的构造)
     - [1. 关系的基本概念](#1-关系的基本概念)
       - [1.1 关系的定义](#11-关系的定义)
@@ -44,7 +44,7 @@ msc_secondary: ['00-XX']
       - [7.1 乘积序](#71-乘积序)
       - [7.2 字典序](#72-字典序)
     - [8. 结论](#8-结论)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
   - [参考文献 / References](#参考文献--references)
   - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
     - [关系基本概念形式化](#关系基本概念形式化)

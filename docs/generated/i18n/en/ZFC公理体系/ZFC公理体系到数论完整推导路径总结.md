@@ -30,7 +30,7 @@ msc_primary: "03E35"
 
 - [ZFC公理体系到Number Theory完整推导路径Summary](#zfc公理体系到Number Theory完整推导路径Summary)
   - [Table of Contents](#Table of Contents)
-  - [📚 概述](#-概述)
+  - [📚 概述](#概述)
   - [🏗️ 完整推导路径](#️-完整推导路径)
     - [第一阶段：ZFC公理体系基础](#第一阶段zfc公理体系基础)
       - [1.1 ZFC公理系统](#11-zfc公理系统)
@@ -79,7 +79,7 @@ msc_primary: "03E35"
     - [理论扩展](#理论扩展)
     - [应用扩展](#应用扩展)
   - [📝 结论](#-结论)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
 
 ## 📚 概述
 

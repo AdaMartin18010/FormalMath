@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [莫尔斯理论 / Morse Theory](#莫尔斯理论--morse-theory)
-  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [目录 / Table of Contents](#目录)
   - [1. 基础概念 / Basic Concepts](#1-基础概念--basic-concepts)
     - [1.1 莫尔斯函数 / Morse Functions](#11-莫尔斯函数--morse-functions)
     - [1.2 临界点的几何意义 / Geometric Meaning](#12-临界点的几何意义--geometric-meaning)

@@ -11,7 +11,7 @@ msc_secondary: ['03Bxx', '22E47', '16-XX']
 ## 目录 / Table of Contents
 
 - [FormalMath知识关联图谱系统](#formalmath知识关联图谱系统)
-  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [目录 / Table of Contents](#目录)
   - [概述](#概述)
   - [1. 知识图谱架构](#1-知识图谱架构)
     - [1.1 核心概念节点](#11-核心概念节点)

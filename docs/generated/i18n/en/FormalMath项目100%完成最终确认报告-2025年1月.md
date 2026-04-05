@@ -24,7 +24,7 @@ msc_secondary: ['97-XX', '00-XX', '01Axx']
 
 - [FormalMath项目100%完成最终确认报告 - 2025年1月 / FormalMath Project 100% Completion Final Confirmation Report - January 2025](#formalmath项目100完成最终确认报告---2025年1月--formalmath-project-100-completion-final-confirmation-report---january-2025)
   - [Table of Contents](#Table of Contents)
-  - [📚 概述 / Overview](#-概述--overview)
+  - [📚 概述 / Overview](#概述)
   - [✅ 1. 完成状态确认 / Completion Status Confirmation](#-1-完成状态确认--completion-status-confirmation)
     - [1.1 第一阶段完成确认：基础标准化 / Phase 1 Completion Confirmation: Basic Standardization](#11-第一阶段完成确认基础标准化--phase-1-completion-confirmation-basic-standardization)
     - [1.2 第二阶段完成确认：国际标准对齐 / Phase 2 Completion Confirmation: International Standard Alignment](#12-第二阶段完成确认国际标准对齐--phase-2-completion-confirmation-international-standard-alignment)

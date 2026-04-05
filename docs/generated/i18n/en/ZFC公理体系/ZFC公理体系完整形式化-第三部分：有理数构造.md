@@ -24,7 +24,7 @@ msc_secondary: ['03E30', '11-XX', '68Vxx']
 
 - [ZFC公理体系完整形式化 - 第三部分：有理数构造](#zfc公理体系完整形式化---第三部分有理数构造)
   - [Table of Contents](#Table of Contents)
-  - [📚 概述](#-概述)
+  - [📚 概述](#概述)
   - [🏗️ 有理数的构造](#️-有理数的构造)
     - [1. 有理数的Definition](#1-有理数的Definition)
       - [1.1 有理数作为等价类](#11-有理数作为等价类)
@@ -59,7 +59,7 @@ msc_secondary: ['03E30', '11-XX', '68Vxx']
     - [有理数序关系形式化](#有理数序关系形式化)
     - [有理数Field结构形式化](#有理数Field结构形式化)
     - [应用案例：有理数在Number Theory中的应用](#应用案例有理数在Number Theory中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
   - [References / References](#References--references)
 
 ## 📚 概述

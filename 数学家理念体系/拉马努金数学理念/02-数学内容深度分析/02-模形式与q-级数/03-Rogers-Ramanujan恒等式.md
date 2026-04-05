@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Rogers-Ramanujan恒等式：组合数学的经典](#rogers-ramanujan恒等式组合数学的经典)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、Rogers-Ramanujan恒等式的定义](#一、rogers-ramanujan恒等式的定义)
     - [1.1 第一个恒等式](#1.1-第一个恒等式)
     - [1.2 第二个恒等式](#1.2-第二个恒等式)

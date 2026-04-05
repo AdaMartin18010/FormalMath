@@ -14,7 +14,7 @@ msc_secondary: "01A99"
 ## 📑 目录
 
 - [Yoneda引理 (Yoneda Lemma)](#yoneda引理-yoneda-lemma)
-  - [📑 目录](#-目录)
+  - [📑 目录](#目录)
   - [一、Yoneda引理的数学表述](#一yoneda引理的数学表述)
     - [1.1 协变Yoneda引理](#11-协变yoneda引理)
     - [1.2 反变Yoneda引理](#12-反变yoneda引理)

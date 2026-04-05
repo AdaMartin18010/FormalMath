@@ -24,7 +24,7 @@ msc_secondary: ['11Axx', '03E30', '03E15']
 
 - [ZFC公理体系完整形式化 - 第六部分：Number Theory基础构造](#zfc公理体系完整形式化---第六部分Number Theory基础构造)
   - [Table of Contents](#Table of Contents)
-  - [📚 概述](#-概述)
+  - [📚 概述](#概述)
   - [🏗️ Number Theory基础构造](#️-Number Theory基础构造)
     - [1. 自然数的基本性质](#1-自然数的基本性质)
       - [1.1 自然数的序结构](#11-自然数的序结构)

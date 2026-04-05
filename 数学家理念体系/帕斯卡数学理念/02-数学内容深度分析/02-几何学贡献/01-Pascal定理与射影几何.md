@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Pascal定理与射影几何：从Essay pour les coniques到现代射影几何](#pascal定理与射影几何从essay-pour-les-coniques到现代射影几何)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、历史背景：Essay pour les coniques (1640)](#一历史背景essay-pour-les-coniques-1640)
     - [1.1 16岁的天才之作](#11-16岁的天才之作)
     - [1.2 与Desargues的师承关系](#12-与desargues的师承关系)

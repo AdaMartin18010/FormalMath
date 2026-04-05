@@ -24,7 +24,7 @@ msc_secondary: ['11Axx', '03E30', '03E15']
 
 - [ZFC公理体系完整形式化 - 第一部分：基础公理系统](#zfc公理体系完整形式化---第一部分基础公理系统)
   - [Table of Contents](#Table of Contents)
-  - [📚 概述](#-概述)
+  - [📚 概述](#概述)
   - [🏗️ ZFC公理系统完整形式化](#️-zfc公理系统完整形式化)
     - [1. 形式化语言Definition](#1-形式化语言Definition)
       - [1.1 一阶逻辑语言](#11-一阶逻辑语言)
@@ -56,7 +56,7 @@ msc_secondary: ['11Axx', '03E30', '03E15']
     - [ZFC公理系统形式化](#zfc公理系统形式化)
     - [基本Theorem形式化](#基本Theorem形式化)
     - [应用案例：ZFC公理体系在类型理论中的应用](#应用案例zfc公理体系在类型理论中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
+  - [术语对照表 / Terminology Table](#术语对照表)
   - [References / References](#References--references)
     - [经典教材 / Classic Textbooks](#经典教材--classic-textbooks)
     - [现代教材 / Modern Textbooks](#现代教材--modern-textbooks)

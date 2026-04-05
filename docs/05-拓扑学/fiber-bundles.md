@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [纤维丛理论 / Fiber Bundle Theory](#纤维丛理论--fiber-bundle-theory)
-  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [目录 / Table of Contents](#目录)
   - [1. 基础概念 / Basic Concepts](#1-基础概念--basic-concepts)
     - [1.1 纤维丛的定义 / Definition of Fiber Bundles](#11-纤维丛的定义--definition-of-fiber-bundles)
     - [1.2 丛映射 / Bundle Maps](#12-丛映射--bundle-maps)

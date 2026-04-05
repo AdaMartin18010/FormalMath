@@ -13,7 +13,7 @@ msc_secondary: ['14A15', '18F20', '14-XX']
 ## 目录 / Table of Contents
 
 - [Lean4形式化实现-代数几何 / Lean 4 Formalization - Algebraic Geometry](#lean4形式化实现-代数几何--lean-4-formalization---algebraic-geometry)
-  - [目录 / Table of Contents](#目录--table-of-contents)
+  - [目录 / Table of Contents](#目录)
   - [1. 基本代数几何形式化 / Basic Algebraic Geometry Formalization](#1-基本代数几何形式化--basic-algebraic-geometry-formalization)
     - [1.1 代数簇 / Algebraic Varieties](#11-代数簇--algebraic-varieties)
     - [1.2 代数曲线 / Algebraic Curves](#12-代数曲线--algebraic-curves)

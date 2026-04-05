@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [拉马努金与Littlewood的对比](#拉马努金与littlewood的对比)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、Littlewood简介](#一、littlewood简介)
     - [1.1 Littlewood的生平](#1.1-littlewood的生平)
     - [1.2 Littlewood的数学风格](#1.2-littlewood的数学风格)
