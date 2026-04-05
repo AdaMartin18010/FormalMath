@@ -17,18 +17,18 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [椭圆曲线与BSD猜想 - 深度扩展版 / Elliptic Curves and BSD Conjecture - Deep Extension](#椭圆曲线与bsd猜想---深度扩展版--elliptic-curves-and-bsd-conjecture---deep-extension)
-  - [目录 / Table of Contents](#目录)
-  - [1. 椭圆曲线的算术基础](#1-椭圆曲线的算术基础)
+- 椭圆曲线与BSD猜想 - 深度扩展版 / Elliptic Curves and BSD Conjecture - Deep Extension
+  - 目录 / Table of Contents
+  - 1. 椭圆曲线的算术基础
     - [1.1 Weierstrass方程与群结构](#11-weierstrass方程与群结构)
     - [1.2 挠子群与判别式](#12-挠子群与判别式)
-  - [2. Mordell-Weil定理](#2-mordell-weil定理)
+  - 2. Mordell-Weil定理
     - [2.1 有理点群的有限生成性](#21-有理点群的有限生成性)
     - [2.2 高度函数与下降法](#22-高度函数与下降法)
-  - [3. BSD猜想的陈述](#3-bsd猜想的陈述)
+  - 3. BSD猜想的陈述
     - [3.1 解析秩与代数秩](#31-解析秩与代数秩)
     - [3.2 精细BSD公式](#32-精细bsd公式)
-  - [4. BSD猜想的进展](#4-bsd猜想的进展)
+  - 4. BSD猜想的进展
     - [4.1 Coates-Wiles定理](#41-coates-wiles定理)
     - [4.2 Gross-Zagier与Kolyvagin](#42-gross-zagier与kolyvagin)
   - [参考文献](#参考文献)

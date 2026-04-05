@@ -376,7 +376,7 @@ h (Right y) = g y
 **参考资源**：
 
 - Wikipedia: [范畴论](https://zh.wikipedia.org/wiki/%E8%8C%83%E7%95%B4%E8%AE%BA)
-- Haskell Wiki: [Category Theory](https://wiki.haskell.org/Category_theory)
+- Haskell Wiki: [Category Theory](https://wiki.haskell.org/Category_theory)[需更新]
 - MIT 18.701: Abstract Algebra
 - Stanford CS242: Programming Languages
 

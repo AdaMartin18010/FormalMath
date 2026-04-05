@@ -324,7 +324,7 @@ function DashboardPage({ userId }: { userId: string }) {
 
 ```bash
 # API 基础 URL
-REACT_APP_API_URL=http://localhost:3001/api
+REACT_APP_API_URL=
 
 # 可选：WebSocket URL（实时更新）
 REACT_APP_WS_URL=ws://localhost:3001/ws

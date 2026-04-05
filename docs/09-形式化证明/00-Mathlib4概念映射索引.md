@@ -73,9 +73,9 @@ next_review: "2026-07-03"
 
 **Mathlib4资源链接**:
 
-- [Mathlib4官方文档](https://leanprover-community.github.io/mathlib4_docs/)
+- [Mathlib4官方文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新]
 - [Mathlib4 GitHub仓库](https://github.com/leanprover-community/mathlib4)
-- [Mathlib4 API搜索](https://leanprover-community.github.io/mathlib4_docs/search.html)
+- [Mathlib4 API搜索](https://leanprover-community.github.io/mathlib4_docs/search.html)[需更新][需更新]
 
 ---
 
@@ -634,14 +634,14 @@ example (M : Type*) [TopologicalSpace M] [ChartedSpace (EuclideanSpace ℝ (Fin 
 
 ### 官方文档
 
-- [Mathlib4官方文档](https://leanprover-community.github.io/mathlib4_docs/)
+- [Mathlib4官方文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新]
 - [Lean4官方文档](https://lean-lang.org/doc/)
 - [Mathlib4 GitHub](https://github.com/leanprover-community/mathlib4)
 
 ### 社区资源
 
-- [Lean Zulip社区](https://leanprover.zulipchat.com/)
-- [Mathlib4贡献指南](https://leanprover-community.github.io/contribute/)
+- [Lean Zulip社区](https://leanprover.zulipchat.com/)[需更新][需更新]
+- [Mathlib4贡献指南](https://leanprover-community.github.io/contribute/)[需更新][需更新]
 - [Lean4教程](https://leanprover.github.io/theorem_proving_in_lean4/)
 
 ---

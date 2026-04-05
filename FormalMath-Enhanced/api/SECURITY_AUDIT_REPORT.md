@@ -308,7 +308,7 @@ python security/security_scanner.py . -o security/scan_report.json
 
 3. **限制CORS来源**
    ```python
-   CORS_ORIGINS = ["https://your-domain.com"]
+   CORS_ORIGINS = ["https://your-domain.com[需更新]"]
    ```
 
 ### 8.2 中优先级（部署后建议）

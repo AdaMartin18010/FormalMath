@@ -113,11 +113,11 @@ end Nakayama
 
 ## 相关概念
 
-- [Jacobson根 (Jacobson Radical)](./jacobson-radical.md)：所有极大理想的交
-- [局部环 (Local Ring)](./local-ring.md)：唯一极大环
-- [有限生成模 (Finitely Generated Module)](./fg-module.md)：模的有限生成性
-- [投射模 (Projective Module)](./projective-module.md)：直和项模
-- [完备化 (Completion)](./completion.md)：拓扑代数结构
+- Jacobson根 (Jacobson Radical)：所有极大理想的交
+- 局部环 (Local Ring)：唯一极大环
+- 有限生成模 (Finitely Generated Module)：模的有限生成性
+- 投射模 (Projective Module)：直和项模
+- 完备化 (Completion)：拓扑代数结构
 
 ## 参考
 
@@ -132,8 +132,8 @@ end Nakayama
 
 ### 在线资源
 
-- [Mathlib4 文档 - Jacobson](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Basic.html)
-- [Stacks Project - 00DV](https://stacks.math.columbia.edu/tag/00DV)
+- [Mathlib4 文档 - Jacobson](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Basic.html)[需更新]
+- [Stacks Project - 00DV](https://stacks.math.columbia.edu/tag/00DV)[需更新]
 
 ---
 

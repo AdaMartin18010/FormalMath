@@ -100,11 +100,11 @@ $\Omega X \to LX \to X$ 是纤维丛。
 
 ## 相关概念
 
-- [谱序列基础](./spectral-sequence-basics.md)：Leray-Serre的理论基础
-- [纤维丛](./fibre-bundle.md)：谱序列的几何对象
-- [局部系数](./local-coefficient.md)：$E_2$页的系数系统
-- [边缘同态](./transgression.md)：特殊的微分映射
-- [Grothendieck谱序列](./grothendieck-spectral-sequence.md)：代数版本
+- 谱序列基础：Leray-Serre的理论基础
+- 纤维丛：谱序列的几何对象
+- 局部系数：$E_2$页的系数系统
+- 边缘同态：特殊的微分映射
+- Grothendieck谱序列：代数版本
 
 ## 参考
 

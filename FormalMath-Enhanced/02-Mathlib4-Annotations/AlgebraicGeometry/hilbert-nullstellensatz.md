@@ -111,11 +111,11 @@ $I \neq (1)$ 但 $V(I) = \emptyset$（在 $\mathbb{R}$ 中）。
 
 ## 相关概念
 
-- [仿射簇 (Affine Variety)](./affine-variety.md)：多项式方程的解集
-- [根理想 (Radical Ideal)](./radical-ideal.md)：等于其根的理想
-- [代数闭域 (Algebraically Closed Field)](./algebraically-closed-field.md)：所有多项式有根
-- [Noether正规化 (Noether Normalization)](./noether-normalization.md)：代数的结构定理
-- [Zariski拓扑 (Zariski Topology)](./zariski-topology.md)：代数几何的拓扑
+- 仿射簇 (Affine Variety)：多项式方程的解集
+- 根理想 (Radical Ideal)：等于其根的理想
+- 代数闭域 (Algebraically Closed Field)：所有多项式有根
+- Noether正规化 (Noether Normalization)：代数的结构定理
+- Zariski拓扑 (Zariski Topology)：代数几何的拓扑
 
 ## 参考
 
@@ -130,8 +130,8 @@ $I \neq (1)$ 但 $V(I) = \emptyset$（在 $\mathbb{R}$ 中）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Nullstellensatz](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Nullstellensatz.html)
-- [Stacks Project - 00FV](https://stacks.math.columbia.edu/tag/00FV)
+- [Mathlib4 文档 - Nullstellensatz](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Nullstellensatz.html)[需更新]
+- [Stacks Project - 00FV](https://stacks.math.columbia.edu/tag/00FV)[需更新]
 
 ---
 

@@ -20,21 +20,21 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Church-Turing论题：可计算性的数学基础](#church-turing论题可计算性的数学基础)
-  - [📋 目录](../../README.md#目录)
+  - [📋 目录](../../README.md)
   - [一、历史背景与问题提出](#一历史背景与问题提出)
     - [1.1 Hilbert的挑战与Entscheidungsproblem](#11-hilbert的挑战与entscheidungsproblem)
     - [1.2 1936年：可计算性理论的诞生](#12-1936年可计算性理论的诞生)
   - [二、可计算性的三种形式化](#二可计算性的三种形式化)
-    - [2.1 λ可定义函数（Church, 1936）](#21-λ可定义函数church-1936)
+    - 2.1 λ可定义函数（Church, 1936）
     - [2.2 图灵可计算函数（Turing, 1936）](#22-图灵可计算函数turing-1936)
     - [2.3 一般递归函数（Kleene, 1936）](#23-一般递归函数kleene-1936)
   - [三、Church-Turing论题的陈述](#三church-turing论题的陈述)
     - [3.1 论题的两种形式](#31-论题的两种形式)
     - [3.2 定理：三种形式化的等价性](#32-定理三种形式化的等价性)
   - [四、等价性证明思路](#四等价性证明思路)
-    - [4.1 从λ演算到图灵机](#41-从λ演算到图灵机)
+    - 4.1 从λ演算到图灵机
     - [4.2 从图灵机到递归函数](#42-从图灵机到递归函数)
-    - [4.3 从递归函数到λ演算](#43-从递归函数到λ演算)
+    - 4.3 从递归函数到λ演算
   - [五、论题的哲学地位](#五论题的哲学地位)
     - [5.1 数学定理还是经验假设？](#51-数学定理还是经验假设)
     - [5.2 支持证据](#52-支持证据)
@@ -365,7 +365,7 @@ def natToChurch : Nat → ChurchNat
 
 ### 在线资源
 
-1. Stanford Encyclopedia of Philosophy. *The Church-Turing Thesis*. https://plato.stanford.edu/entries/church-turing/
+1. Stanford Encyclopedia of Philosophy. *The Church-Turing Thesis*. https://plato.stanford.edu/entries/church-turing/[需更新]
    - 关于Church-Turing论题的哲学讨论
 
 2. nLab. *Church-Turing thesis*. https://ncatlab.org/nlab/show/Church-Turing+thesis

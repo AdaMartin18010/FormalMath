@@ -120,10 +120,10 @@ $$MD \cdot MP = MB^2 = MC^2$$
 
 ### 与FormalMath主项目的链接
 
-- [三角形几何基础](../../concept/geometry/triangle-basics.md)
-- [圆的性质](../../concept/geometry/circle-properties.md)
-- [调和分割](../../concept/geometry/harmonic-division.md)
-- [极点极线理论](../../concept/geometry/pole-polar.md)
+- 三角形几何基础
+- 圆的性质
+- 调和分割
+- 极点极线理论
 
 ## 变体与推广
 
@@ -141,8 +141,8 @@ $$MD \cdot MP = MB^2 = MC^2$$
 
 ## 参考
 
-- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101488p572820)
+- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101488p572820)[需更新]
 - 相关定理：Feuerbach定理、欧拉线性质
 
 ---

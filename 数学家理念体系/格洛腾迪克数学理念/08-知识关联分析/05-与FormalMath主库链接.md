@@ -48,7 +48,7 @@ processed_at: '2026-04-05'
 | docs/05-拓扑学（点集拓扑、代数拓扑） | 01-层上同调（拓扑空间上层）；04-Topos（拓扑与 topos） |
 | docs/07-逻辑学 | 04-Topos理论（内部逻辑、几何逻辑） |
 
-*注：docs 下具体文档众多，上表为分支级对应；细粒度链接可借助 [project/links/cross-branch-links.yaml](../../project/links/cross-branch-links.yaml) 与后续维护补充。*
+*注：docs 下具体文档众多，上表为分支级对应；细粒度链接可借助 project/links/cross-branch-links.yaml 与后续维护补充。*
 
 ---
 

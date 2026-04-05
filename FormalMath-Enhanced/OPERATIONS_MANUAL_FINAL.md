@@ -102,8 +102,8 @@ docker-compose -f docker-compose.production.yml logs backend > backend.log
 
 # ========== 健康检查 ==========
 # 系统健康检查
-curl http://localhost/health
-curl http://localhost/api/v1/health
+curl 
+curl 
 
 # 完整健康检查脚本
 ./scripts/health-check.sh
@@ -117,17 +117,17 @@ curl http://localhost/api/v1/health
 
 # ========== 监控访问 ==========
 # Grafana
-open http://localhost:3000  # admin/admin
+open   # admin/admin
 
 # Prometheus
-open http://localhost:9090
+open 
 
 # ========== 性能测试 ==========
 # 运行负载测试
 cd testing && docker-compose -f docker-compose.load-test.yml up -d
 
 # 访问Locust
-open http://localhost:8089
+open 
 
 # ========== 安全扫描 ==========
 # 运行安全检查
@@ -168,8 +168,8 @@ free -h
 docker-compose -f docker-compose.production.yml logs --tail=100 | grep -i error
 
 # 4. 检查健康状态（5分钟）
-curl -f http://localhost/health
-curl -f http://localhost/api/v1/health
+curl -f 
+curl -f 
 
 # 5. 检查备份状态（5分钟）
 ls -la /opt/formalmath-enhanced/backups/
@@ -326,7 +326,7 @@ tcp-keepalive 60
 watch -n 1 'docker stats --no-stream'
 
 # 查询性能分析
-curl http://localhost:9090/api/v1/query?query=rate(http_requests_total[5m])
+curl ])
 
 # 慢查询分析
 docker-compose logs backend | grep "Slow query"
@@ -518,7 +518,7 @@ docker-compose -f docker-compose.production.yml up -d
 ./scripts/disaster-recovery.sh total
 
 # 2. 验证恢复
-curl http://localhost/health
+curl 
 ./scripts/health-check.sh
 ```
 

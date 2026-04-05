@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [概形的对偶理论与Serre对偶：几何对偶的高级形式](#概形的对偶理论与serre对偶几何对偶的高级形式)
-  - [📋 目录](../../README.md#目录)
+  - [📋 目录](../../README.md)
   - [一、Serre对偶](#一serre对偶)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -286,7 +286,7 @@ Grothendieck的贡献：
 
 - **本目录**：[12-微分形式与对偶层](./12-微分形式与对偶层.md)、[31-概形的层理论与层范畴](./31-概形的层理论与层范畴.md)、[33-概形的平坦性与Tor函子](./33-概形的平坦性与Tor函子.md)。
 - **03-上同调理论**：[21-上同调与Serre对偶](../03-上同调理论/21-上同调与Serre对偶.md)、[22-上同调与Grothendieck对偶](../03-上同调理论/22-上同调与Grothendieck对偶.md)、[11-上同调与对偶理论](../03-上同调理论/11-上同调与对偶理论.md)。
-- **网络资源**：Stacks Project [0B54 Serre duality](https://stacks.math.columbia.edu/tag/0B54)、[0A7E Grothendieck duality](https://stacks.math.columbia.edu/tag/0A7E)；Hartshorne *Algebraic Geometry* Ch. III。
+- **网络资源**：Stacks Project [0B54 Serre duality](https://stacks.math.columbia.edu/tag/0B54)[需更新]、[0A7E Grothendieck duality](https://stacks.math.columbia.edu/tag/0A7E)[需更新]；Hartshorne *Algebraic Geometry* Ch. III。
 
 ---
 

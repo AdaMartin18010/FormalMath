@@ -99,10 +99,10 @@ Cohen力迫：$\mathbb{P} = \text{Fn}(\aleph_2 \times \omega, 2)$。
 ## 相关概念
 
 - [力迫法](./forcing.md)：证明CH独立性的工具
-- [可构成宇宙](./constructible-universe.md)：Gödel构造的内模型
-- [基数算术](./cardinal-arithmetic.md)：CH的表述语言
-- [大基数](./large-cardinal.md)：可能"决定"CH的公理
-- [决定性公理](./axiom-of-determinacy.md)：与CH互斥的替代公理
+- 可构成宇宙：Gödel构造的内模型
+- 基数算术：CH的表述语言
+- 大基数：可能"决定"CH的公理
+- 决定性公理：与CH互斥的替代公理
 
 ## 参考
 

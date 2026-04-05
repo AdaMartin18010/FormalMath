@@ -173,8 +173,8 @@ processed_at: '2026-04-05'
 
 ### 在线资源
 
-- 🌐 [MacTutor传记](http://mathshistory.st-andrews.ac.uk/Biographies/Brouwer.html)
-- 🌐 [Stanford哲学百科：直觉主义](https://plato.stanford.edu/entries/intuitionism/)
+- 🌐 [MacTutor传记](http://mathshistory.st-andrews.ac.uk/Biographies/Brouwer.html)[需更新]
+- 🌐 [Stanford哲学百科：直觉主义](https://plato.stanford.edu/entries/intuitionism/)[需更新]
 - 🌐 [nLab：直觉主义](https://ncatlab.org/nlab/show/intuitionism)
 
 ### 推荐视频
@@ -255,7 +255,7 @@ https://github.com/[项目地址]/布劳威尔数学理念
 
 - 📁 [希尔伯特数学理念](../希尔伯特数学理念/README.md) - 对比：形式主义vs直觉主义
 - 📁 [庞加莱数学理念](../庞加莱数学理念/README.md) - 对比：直觉vs约定
-- 📁 [Klein数学理念](../../Klein数学理念/) - 已完成85%
+- 📁 Klein数学理念 - 已完成85%
 
 ---
 

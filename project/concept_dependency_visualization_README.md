@@ -102,7 +102,7 @@ processed_at: '2026-04-05'
 
 1. **GitHub**: 直接在浏览器中打开.mmd文件
 2. **VS Code**: 安装Mermaid插件后预览
-3. **在线编辑器**: 复制内容到 [Mermaid Live Editor](https://mermaid.live/)
+3. **在线编辑器**: 复制内容到 [Mermaid Live Editor](https://mermaid.live/)[需更新]
 4. **Typora/Obsidian**: 直接渲染显示
 
 ### 使用JSON数据

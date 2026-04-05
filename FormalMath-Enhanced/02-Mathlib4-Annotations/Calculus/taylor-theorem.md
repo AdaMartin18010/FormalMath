@@ -82,10 +82,10 @@ $\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + R_n(x)$
 
 ## 相关概念
 
-- [Taylor级数](./taylor-series.md)：无穷级数展开
-- [Maclaurin级数](./maclaurin-series.md)：在0点的Taylor展开
-- [解析函数](./analytic-function.md)：可展开为Taylor级数的函数
-- [Padé逼近](./pade-approximation.md)：有理函数逼近
+- Taylor级数：无穷级数展开
+- Maclaurin级数：在0点的Taylor展开
+- 解析函数：可展开为Taylor级数的函数
+- Padé逼近：有理函数逼近
 
 ## 参考
 
@@ -100,7 +100,7 @@ $\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + R_n(x)$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Taylor](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Taylor.html)
+- [Mathlib4 文档 - Taylor](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Taylor.html)[需更新]
 
 ---
 

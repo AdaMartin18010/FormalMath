@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [几何分析与PDE：流形的分析方法](#几何分析与pde流形的分析方法)
-  - [📋 目录](../../README.md#目录)
+  - [📋 目录](../../README.md)
   - [一、几何PDE](#一几何pde)
     - [1.1 定义](#11-定义)
     - [1.2 Laplace-Beltrami算子](#12-laplace-beltrami算子)

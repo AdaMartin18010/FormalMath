@@ -112,11 +112,11 @@ $U, V$ 是各自圆锥，$U \cap V = \{\text{点}\}$。
 
 ## 相关概念
 
-- [同调群 (Homology Group)](./homology-group.md)：拓扑不变量
-- [长正合列 (Long Exact Sequence)](./long-exact-sequence.md)：同调代数工具
+- 同调群 (Homology Group)：拓扑不变量
+- 长正合列 (Long Exact Sequence)：同调代数工具
 - [切除定理 (Excision Theorem)](./excision-theorem.md)：同调的局部化
-- [相对同调 (Relative Homology)](./relative-homology.md)：空间对的同调
-- [正合性 (Exactness)](./exactness.md)：核等于像
+- 相对同调 (Relative Homology)：空间对的同调
+- 正合性 (Exactness)：核等于像
 
 ## 参考
 
@@ -132,8 +132,8 @@ $U, V$ 是各自圆锥，$U \cap V = \{\text{点}\}$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Homology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/HomotopyGroup.html)
-- [Hatcher - Homology](https://pi.math.cornell.edu/~hatcher/AT/ATch2.pdf)
+- [Mathlib4 文档 - Homology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/HomotopyGroup.html)[需更新]
+- [Hatcher - Homology](https://pi.math.cornell.edu/~hatcher/AT/ATch2.pdf)[需更新]
 
 ---
 

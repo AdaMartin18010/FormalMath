@@ -633,9 +633,9 @@ end
 
 ### 学习资源
 
-1. **Julia文档**: https://docs.julialang.org/
-2. **SciML教程**: https://tutorials.sciml.ai/
-3. **DiffEqFlux文档**: https://diffeqflux.sciml.ai/
+1. **Julia文档**: https://docs.julialang.org/[需更新]
+2. **SciML教程**: https://tutorials.sciml.ai/[需更新]
+3. **DiffEqFlux文档**: https://diffeqflux.sciml.ai/[需更新]
 4. **课程网站**: https://github.com/mitmath/18337
 
 ---

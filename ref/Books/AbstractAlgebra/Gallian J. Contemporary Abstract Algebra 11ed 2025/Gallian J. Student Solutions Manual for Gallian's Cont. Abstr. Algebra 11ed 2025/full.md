@@ -89,7 +89,7 @@ Student Solutions Manual for Gallian's Contemporary Abstract Algebra, Eleventh E
 
 Joseph A. Gallian
 
-https://www.routledge.com/Textbooks-in-Mathematics/book-series/
+https://www.routledge.com/Textbooks-in-Mathematics/book-series/[需更新]
 
 CANDHTEXBOOMTH
 

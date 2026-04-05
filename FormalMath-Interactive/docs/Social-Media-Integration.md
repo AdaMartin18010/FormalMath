@@ -65,7 +65,7 @@ import { ShareButtons } from './components/SocialFeatures';
 function ConceptPage() {
   return (
     <ShareButtons
-      url="https://formalmath.example.com/concept/algebra"
+      url="https://formalmath.example.com/concept/algebra[需更新]"
       title="代数 - FormalMath"
       description="学习代数的基本概念"
       hashtags={['数学', '代数', 'FormalMath']}
@@ -162,7 +162,7 @@ function ConceptPage({ concept }) {
       <OpenGraphMeta
         title={concept.name}
         description={concept.description}
-        url={`https://formalmath.example.com/concept/${concept.id}`}
+        url={`https://formalmath.example.com/concept/${concept.id}[需更新]`}
         image={concept.image}
         imageWidth={1200}
         imageHeight={630}
@@ -192,7 +192,7 @@ function ConceptPage({ concept }) {
   const { share, generateShareUrl } = useSocialMeta({
     title: concept.name,
     description: concept.description,
-    url: `https://formalmath.example.com/concept/${concept.id}`,
+    url: `https://formalmath.example.com/concept/${concept.id}[需更新]`,
     image: concept.image,
     type: 'article',
     keywords: ['数学', '代数'],
@@ -230,7 +230,7 @@ const meta = generateConceptMeta(
     category: '基础数学',
     image: '/images/algebra.png',
   },
-  'https://formalmath.example.com'
+  'https://formalmath.example.com[需更新]'
 );
 ```
 
@@ -291,7 +291,7 @@ import { ContentEmbed } from './components/SocialFeatures';
 function SharePage() {
   return (
     <ContentEmbed
-      url="https://formalmath.example.com/concept/algebra"
+      url="https://formalmath.example.com/concept/algebra[需更新]"
       title="代数概念"
       description="学习代数的基本概念"
       thumbnail="/images/algebra-thumb.png"
@@ -347,9 +347,9 @@ GET /oembed?url={encoded_url}&format=json&maxwidth=800&maxheight=600
   "version": "1.0",
   "title": "代数概念",
   "author_name": "FormalMath",
-  "author_url": "https://formalmath.example.com",
+  "author_url": "https://formalmath.example.com[需更新]",
   "provider_name": "FormalMath",
-  "provider_url": "https://formalmath.example.com",
+  "provider_url": "https://formalmath.example.com[需更新]",
   "html": "<iframe...></iframe>",
   "width": 800,
   "height": 600
@@ -373,7 +373,7 @@ VITE_WEIBO_CLIENT_ID=your_weibo_client_id
 VITE_APPLE_CLIENT_ID=your_apple_client_id
 
 # 站点配置
-VITE_SITE_URL=https://formalmath.example.com
+VITE_SITE_URL=https://formalmath.example.com[需更新]
 VITE_SITE_NAME=FormalMath
 VITE_TWITTER_HANDLE=@formalmath
 ```
@@ -498,7 +498,7 @@ function OAuthCallback() {
 
 ```tsx
 const { counts, loading, error, refresh } = useShareCount(
-  'https://example.com/page',
+  'https://example.com/page[需更新]',
   ['facebook', 'pinterest']
 );
 

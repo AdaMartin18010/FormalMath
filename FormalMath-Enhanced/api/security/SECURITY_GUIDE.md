@@ -74,7 +74,7 @@ uvicorn.run("main:app", host="0.0.0.0", port=443, **config)
 
 ```env
 # 生产环境 - 明确指定允许的源
-CORS_ORIGINS=["https://formalmath.example.com", "https://app.formalmath.example.com"]
+CORS_ORIGINS=["https://formalmath.example.com[需更新]", "https://app.formalmath.example.com[需更新]"]
 CORS_ALLOW_CREDENTIALS=true
 CORS_ALLOW_METHODS=["GET", "POST", "PUT", "DELETE", "OPTIONS"]
 CORS_ALLOW_HEADERS=["Content-Type", "Authorization", "X-Request-ID"]
@@ -124,7 +124,7 @@ limit_req_zone $binary_remote_addr zone=api_limit:10m rate=10r/s;
 # 应用限速
 location / {
     limit_req zone=api_limit burst=20 nodelay;
-    proxy_pass http://backend;
+    proxy_pass ;
 }
 ```
 
@@ -354,7 +354,7 @@ pip install -U package_name
 docker-compose -f docker-compose.security.yml restart
 
 # 3. 验证更新
-curl -s https://api.formalmath.example.com/health
+curl -s https://api.formalmath.example.com/health[需更新]
 
 # 4. 监控日志
 docker logs -f formalmath_api

@@ -19,7 +19,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Cayley定理：群作为置换群的表示](#cayley定理群作为置换群的表示)
-  - [📋 目录](../../README.md#目录)
+  - [📋 目录](../../README.md)
   - [一、历史背景：从抽象群到置换群](#一历史背景从抽象群到置换群)
     - [1.1 群论的诞生](#11-群论的诞生)
     - [1.2 凯莱的三篇开创性论文](#12-凯莱的三篇开创性论文)
@@ -490,7 +490,7 @@ $$E = \{(g, gs) : g \in G, s \in S\}$$
 
 1. **Holt, D. F., Eick, B., & O'Brien, E. A.** (2005). *Handbook of Computational Group Theory*. Chapman & Hall/CRC.
 
-2. **The GAP Group.** (2023). *GAP - Groups, Algorithms, and Programming*, Version 4.12.2. https://www.gap-system.org
+2. **The GAP Group.** (2023). *GAP - Groups, Algorithms, and Programming*, Version 4.12.2. https://www.gap-system.org[需更新]
 
 ### 几何群论
 

@@ -105,11 +105,11 @@ $$Cf(z) = \frac{1}{2\pi i} \int_\Gamma \frac{f(\zeta)}{\zeta - z} d\zeta$$
 
 ## 相关概念
 
-- [傅里叶积分算子](./fourier-integral-operator.md)：更一般的振荡积分
-- [微局部分析](./microlocal-analysis.md)：波前集和奇性分析
-- [Sobolev空间](./sobolev-space.md)：伪微分算子的自然定义域
-- [椭圆算子](./elliptic-operator.md)：可逆的伪微分算子
-- [拟微分算子](./singular-integral-operator.md)：实变量理论
+- 傅里叶积分算子：更一般的振荡积分
+- 微局部分析：波前集和奇性分析
+- Sobolev空间：伪微分算子的自然定义域
+- 椭圆算子：可逆的伪微分算子
+- 拟微分算子：实变量理论
 
 ## 参考
 

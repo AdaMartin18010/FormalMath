@@ -20,7 +20,7 @@ processed_at: '2026-04-05'
   - November 18, 2017 draft PDF: `https://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf`
   - July 27, 2024 draft PDF: `https://math.stanford.edu/~vakil/216blog/FOAGjul2724public.pdf`
 - **HTML Table of Contents** (third-party mirror with Vakil's official structure):
-  `https://wanminliu.github.io/Ravi_AG/Ravi_AG.html`
+  `https://wanminliu.github.io/Ravi_AG/Ravi_AG.html[需更新]`
 
 These sources provided the canonical Part / Chapter / Section hierarchy (Chapters 1–29, Parts I–VI) as well as the exact wording of chapter titles and section headers.
 

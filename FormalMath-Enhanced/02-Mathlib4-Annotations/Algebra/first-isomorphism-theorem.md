@@ -93,11 +93,11 @@ $$G / \ker(\varphi) \cong \text{im}(\varphi)$$
 
 ## 相关概念
 
-- [群同态 (Group Homomorphism)](./group-homomorphism.md)：保持群结构的映射
-- [正规子群 (Normal Subgroup)](./normal-subgroup.md)：作为核的子群
-- [商群 (Quotient Group)](./quotient-group.md)：通过正规子群构造的群
-- [第二同构定理 (Second Isomorphism Theorem)](./second-isomorphism-theorem.md)
-- [第三同构定理 (Third Isomorphism Theorem)](./third-isomorphism-theorem.md)
+- 群同态 (Group Homomorphism)：保持群结构的映射
+- 正规子群 (Normal Subgroup)：作为核的子群
+- 商群 (Quotient Group)：通过正规子群构造的群
+- 第二同构定理 (Second Isomorphism Theorem)
+- 第三同构定理 (Third Isomorphism Theorem)
 
 ## 参考
 
@@ -112,7 +112,7 @@ $$G / \ker(\varphi) \cong \text{im}(\varphi)$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - QuotientGroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup.html)
+- [Mathlib4 文档 - QuotientGroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup.html)[需更新]
 
 ---
 

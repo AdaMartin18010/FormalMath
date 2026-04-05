@@ -102,11 +102,11 @@ $$\text{Res}(f, i) = \frac{e^{-a}}{2i}$$
 
 ## 相关概念
 
-- [孤立奇点 (Isolated Singularity)](./isolated-singularity.md)：函数不解析但周围解析的点
-- [洛朗级数 (Laurent Series)](./laurent-series.md)：带负幂的幂级数展开
-- [极点 (Pole)](./pole.md)：洛朗展开有限个负幂的奇点
-- [本质奇点 (Essential Singularity)](./essential-singularity.md)：洛朗展开无限负幂的奇点
-- [柯西主值 (Cauchy Principal Value)](./cauchy-principal-value.md)：发散积分的正则化
+- 孤立奇点 (Isolated Singularity)：函数不解析但周围解析的点
+- 洛朗级数 (Laurent Series)：带负幂的幂级数展开
+- 极点 (Pole)：洛朗展开有限个负幂的奇点
+- 本质奇点 (Essential Singularity)：洛朗展开无限负幂的奇点
+- 柯西主值 (Cauchy Principal Value)：发散积分的正则化
 
 ## 参考
 
@@ -121,7 +121,7 @@ $$\text{Res}(f, i) = \frac{e^{-a}}{2i}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Residue](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Residue.html)
+- [Mathlib4 文档 - Residue](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Residue.html)[需更新]
 
 ---
 

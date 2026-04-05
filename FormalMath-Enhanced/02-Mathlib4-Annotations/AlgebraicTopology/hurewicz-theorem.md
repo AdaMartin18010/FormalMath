@@ -102,11 +102,11 @@ $\mathbb{CP}^n$ 的胞腔分解：$e^0 \cup e^2 \cup e^4 \cup \cdots \cup e^{2n}
 
 ## 相关概念
 
-- [同伦群](./homotopy-group.md)：Hurewicz定理的源
-- [奇异同调](./singular-homology.md)：Hurewicz定理的目标
+- 同伦群：Hurewicz定理的源
+- 奇异同调：Hurewicz定理的目标
 - [Whitehead定理](./whitehead-theorem.md)：Hurewicz定理的应用
-- [Eilenberg-MacLane空间](./eilenberg-maclane-space.md)：Hurewicz定理的逆
-- [Blakers-Massey定理](./blakers-massey-theorem.md)：相对Hurewicz的推广
+- Eilenberg-MacLane空间：Hurewicz定理的逆
+- Blakers-Massey定理：相对Hurewicz的推广
 
 ## 参考
 

@@ -76,13 +76,13 @@ $$\vec{AM} = \vec{XE} \text{ 且 } \vec{AX} = \vec{ME}$$
 
 ## 相关概念
 
-- [螺旋相似](../../concept/螺旋相似.md)
-- [等腰三角形性质](../../concept/等腰三角形.md)
-- [共点线定理](../../concept/共点线.md)
-- [复数法解几何题](../../concept/复数几何.md)
+- 螺旋相似
+- 等腰三角形性质
+- 共点线定理
+- 复数法解几何题
 
 ## 参考
 
 - IMO 2016 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1263912p6575270
+- AoPS Community: https://artofproblemsolving.com/community/c6h1263912p6575270[需更新]
 - Evan Chen's Solution Notes

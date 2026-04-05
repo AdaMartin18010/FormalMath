@@ -36,8 +36,8 @@ $$\frac{a}{b+c} + \frac{b}{c+a} + \frac{c}{a+b} \geq \frac{3}{2}$$
 [类似题目或推广]
 
 ## 参考资源
-- [IMO官方解答](https://www.imo-official.org/problems/IMO2011SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h)
+- [IMO官方解答](https://www.imo-official.org/problems/IMO2011SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h)[需更新]
 
 ---
 

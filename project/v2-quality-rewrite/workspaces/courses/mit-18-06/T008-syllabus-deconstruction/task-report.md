@@ -36,8 +36,8 @@ The output covers:
 | MIT OCW 18.06 Syllabus (Spring 2010) | `https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/syllabus/` | Course goals, meeting times, textbook info, 10-topic goal list. |
 | MIT OCW 18.06 Video Lectures | `https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/video_galleries/video-lectures/` | **Complete 34-lecture sequence** used to define the 8 units and topic ordering. |
 | MIT OCW 18.06 Assignments | `https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/assignments/` | **Exact problem-set listings** for PS1–PS10, including section numbers and problem numbers from Strang's *Introduction to Linear Algebra* (4th ed.). |
-| MIT 18.06 PSets Archive (Spring 2010) | `https://web.mit.edu/18.06/www/Spring10/psets.html` | Due dates and PDF availability confirmation. |
-| Axler LADR (4e) PDF / Springer | `https://linear.axler.net/LADR4e.pdf` | **Table of contents and chapter summaries** used to cross-map abstract topics (invariant subspaces, upper-triangular matrices, spectral theorem, polar decomposition, multilinear algebra) onto the 18.06 structure. |
+| MIT 18.06 PSets Archive (Spring 2010) | `https://web.mit.edu/18.06/www/Spring10/psets.html[需更新]` | Due dates and PDF availability confirmation. |
+| Axler LADR (4e) PDF / Springer | `https://linear.axler.net/LADR4e.pdf[需更新]` | **Table of contents and chapter summaries** used to cross-map abstract topics (invariant subspaces, upper-triangular matrices, spectral theorem, polar decomposition, multilinear algebra) onto the 18.06 structure. |
 | Studocu / GitHub mirrors | Various | Supplementary confirmation of exam questions and problem-set solutions (used only for cross-checking, not as primary source). |
 
 ### 2.2 Internal FormalMath Sources

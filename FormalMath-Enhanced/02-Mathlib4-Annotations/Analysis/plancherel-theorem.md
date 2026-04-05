@@ -117,10 +117,10 @@ $\|f\|_{L^2}^2 = 2a$，$\|\hat{f}\|_{L^2}^2 = 2a$（Parseval等式）。
 ## 相关概念
 
 - [Fourier变换 (Fourier Transform)](./fourier-transform.md)：时频转换
-- [Parseval等式 (Parseval's Identity)](./parseval-identity.md)：Plancherel的特例
-- [Schwartz空间 (Schwartz Space)](./schwartz-space.md)：速降函数空间
-- [酉算子 (Unitary Operator)](./unitary-operator.md)：保持内积的算子
-- [卷积定理 (Convolution Theorem)](./convolution-theorem.md)：Fourier变换的性质
+- Parseval等式 (Parseval's Identity)：Plancherel的特例
+- Schwartz空间 (Schwartz Space)：速降函数空间
+- 酉算子 (Unitary Operator)：保持内积的算子
+- 卷积定理 (Convolution Theorem)：Fourier变换的性质
 
 ## 参考
 
@@ -135,7 +135,7 @@ $\|f\|_{L^2}^2 = 2a$，$\|\hat{f}\|_{L^2}^2 = 2a$（Parseval等式）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Plancherel](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/Plancherel.html)
+- [Mathlib4 文档 - Plancherel](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/Plancherel.html)[需更新]
 - [Wikipedia - Plancherel Theorem](https://en.wikipedia.org/wiki/Plancherel_theorem)
 
 ---

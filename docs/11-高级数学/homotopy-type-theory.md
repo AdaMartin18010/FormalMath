@@ -11,32 +11,32 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [同伦类型论深度版 / Homotopy Type Theory - In Depth](#同伦类型论深度版--homotopy-type-theory---in-depth)
+- 同伦类型论深度版 / Homotopy Type Theory - In Depth
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
-    - [1.1 类型作为空间 / Types as Spaces](#11-类型作为空间--types-as-spaces)
-    - [1.2 恒等类型的几何解释 / Geometric Interpretation of Identity Types](#12-恒等类型的几何解释--geometric-interpretation-of-identity-types)
-    - [1.3 高阶归纳类型 / Higher Inductive Types](#13-高阶归纳类型--higher-inductive-types)
-    - [1.4 单值公理的深层含义 / Deep Meaning of Univalence](#14-单值公理的深层含义--deep-meaning-of-univalence)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
-    - [2.1 ∞-范畴视角 / ∞-Category Perspective](#21-∞-范畴视角--∞-category-perspective)
-    - [2.2 合成同伦论 / Synthetic Homotopy Theory](#22-合成同伦论--synthetic-homotopy-theory)
-    - [2.3 立方类型论 / Cubical Type Theory](#23-立方类型论--cubical-type-theory)
-    - [2.4 模态同伦类型论 / Modal Homotopy Type Theory](#24-模态同伦类型论--modal-homotopy-type-theory)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
-    - [3.1 计算化同伦类型论 / Computational HoTT](#31-计算化同伦类型论--computational-hott)
-    - [3.2 凝聚类型论 / Cohesive Type Theory](#32-凝聚类型论--cohesive-type-theory)
-    - [3.3 定向类型论 / Directed Type Theory](#33-定向类型论--directed-type-theory)
-    - [3.4 高阶归纳-归纳类型 / Higher Inductive-Inductive Types](#34-高阶归纳-归纳类型--higher-inductive-inductive-types)
-  - [4. 应用前沿 / Frontier Applications](#4-应用前沿--frontier-applications)
-    - [4.1 形式化数学 / Formalized Mathematics](#41-形式化数学--formalized-mathematics)
-    - [4.2 计算机辅助证明 / Computer-Assisted Proofs](#42-计算机辅助证明--computer-assisted-proofs)
-    - [4.3 量子同伦类型论 / Quantum Homotopy Type Theory](#43-量子同伦类型论--quantum-homotopy-type-theory)
-  - [5. 参考文献 / References](#5-参考文献--references)
-    - [5.1 经典文献 / Classical Works](#51-经典文献--classical-works)
-    - [5.2 现代专著 / Modern Monographs](#52-现代专著--modern-monographs)
-    - [5.3 前沿论文 / Frontier Papers](#53-前沿论文--frontier-papers)
-    - [5.4 在线资源 / Online Resources](#54-在线资源--online-resources)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
+    - [1.1 类型作为空间 / Types as Spaces](#11-类型作为空间-types-as-spaces)
+    - [1.2 恒等类型的几何解释 / Geometric Interpretation of Identity Types](#12-恒等类型的几何解释-geometric-interpretation-of-identity-types)
+    - [1.3 高阶归纳类型 / Higher Inductive Types](#13-高阶归纳类型-higher-inductive-types)
+    - [1.4 单值公理的深层含义 / Deep Meaning of Univalence](#14-单值公理的深层含义-deep-meaning-of-univalence)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
+    - 2.1 ∞-范畴视角 / ∞-Category Perspective
+    - [2.2 合成同伦论 / Synthetic Homotopy Theory](#22-合成同伦论-synthetic-homotopy-theory)
+    - [2.3 立方类型论 / Cubical Type Theory](#23-立方类型论-cubical-type-theory)
+    - [2.4 模态同伦类型论 / Modal Homotopy Type Theory](#24-模态同伦类型论-modal-homotopy-type-theory)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
+    - [3.1 计算化同伦类型论 / Computational HoTT](#31-计算化同伦类型论-computational-hott)
+    - [3.2 凝聚类型论 / Cohesive Type Theory](#32-凝聚类型论-cohesive-type-theory)
+    - [3.3 定向类型论 / Directed Type Theory](#33-定向类型论-directed-type-theory)
+    - [3.4 高阶归纳-归纳类型 / Higher Inductive-Inductive Types](#34-高阶归纳-归纳类型-higher-inductive-inductive-types)
+  - [4. 应用前沿 / Frontier Applications](#4-应用前沿-frontier-applications)
+    - [4.1 形式化数学 / Formalized Mathematics](#41-形式化数学-formalized-mathematics)
+    - [4.2 计算机辅助证明 / Computer-Assisted Proofs](#42-计算机辅助证明-computer-assisted-proofs)
+    - [4.3 量子同伦类型论 / Quantum Homotopy Type Theory](#43-量子同伦类型论-quantum-homotopy-type-theory)
+  - [5. 参考文献 / References](#5-参考文献-references)
+    - [5.1 经典文献 / Classical Works](#51-经典文献-classical-works)
+    - [5.2 现代专著 / Modern Monographs](#52-现代专著-modern-monographs)
+    - [5.3 前沿论文 / Frontier Papers](#53-前沿论文-frontier-papers)
+    - [5.4 在线资源 / Online Resources](#54-在线资源-online-resources)
 
 ---
 
@@ -521,7 +521,7 @@ HoTT为计算机辅助证明提供了新的工具和方法。
    - *Homotopy Type Theory: Univalent Foundations of Mathematics*
    - The Univalent Foundations Program, Institute for Advanced Study
    - 同伦类型论的奠基性著作
-   - 在线版本: https://homotopytypetheory.org/book/
+   - 在线版本: https://homotopytypetheory.org/book/[需更新[需更新]]
 
 2. **Voevodsky, V.** (2006-2014)
    - 系列关于单值基础的工作
@@ -589,7 +589,7 @@ HoTT为计算机辅助证明提供了新的工具和方法。
 ### 5.4 在线资源 / Online Resources
 
 14. **Homotopy Type Theory Website**
-    - https://homotopytypetheory.org/
+    - https://homotopytypetheory.org/[需更新[需更新]]
     - 社区主页，包含博客、论文和讨论
 
 15. **nLab**
@@ -597,11 +597,11 @@ HoTT为计算机辅助证明提供了新的工具和方法。
     - 数学物理wiki，包含大量HoTT相关条目
 
 16. **Lean Community**
-    - https://leanprover-community.github.io/
+    - https://leanprover-community.github.io/[需更新[需更新]]
     - Lean证明助手社区，包含HoTT相关内容
 
 17. **Cubical Agda Documentation**
-    - https://agda.readthedocs.io/en/v2.6.1/language/cubical.html
+    - https://agda.readthedocs.io/en/v2.6.1/language/cubical.html[需更新[需更新]]
     - 立方类型论实现的官方文档
 
 18. **UniMath Repository**

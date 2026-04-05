@@ -78,14 +78,14 @@ FormalMath/
 
 本项目的现代数学前沿模块涵盖2020-2025年最重要的数学发展方向：
 
-- [凝聚数学](docs/modern-frontiers/01-凝聚数学.md) - 代数与分析的统一
-- [∞-范畴论](docs/modern-frontiers/02-无穷范畴论.md) - 高维结构的严格化
-- [粗糙分析](docs/modern-frontiers/03-粗糙分析.md) - 随机分析的新框架
-- [科学机器学习](docs/modern-frontiers/04-科学机器学习.md) - 数学与AI的融合
-- [Langlands纲领](docs/modern-frontiers/05-Langlands纲领.md) - 数论与几何的统一
-- [同伦类型论](docs/modern-frontiers/06-同伦类型论.md) - 数学基础的新范式
+- 凝聚数学 - 代数与分析的统一
+- ∞-范畴论 - 高维结构的严格化
+- 粗糙分析 - 随机分析的新框架
+- 科学机器学习 - 数学与AI的融合
+- Langlands纲领 - 数论与几何的统一
+- 同伦类型论 - 数学基础的新范式
 
-[查看完整前沿专题 →](docs/modern-frontiers/00-现代数学前沿总览.md)
+查看完整前沿专题 →
 ```
 
 #### 2. 概念库链接
@@ -97,7 +97,7 @@ FormalMath/
 ```markdown
 ## 相关前沿专题
 
-- [∞-范畴论](../../docs/modern-frontiers/02-无穷范畴论.md) - 范畴论的高维推广
+- ∞-范畴论 - 范畴论的高维推广
 ```
 
 **示例 - concept/topology/homotopy.md**:
@@ -105,8 +105,8 @@ FormalMath/
 ```markdown
 ## 相关前沿专题
 
-- [同伦类型论](../../docs/modern-frontiers/06-同伦类型论.md) - 同伦论的类型论基础
-- [∞-范畴论](../../docs/modern-frontiers/02-无穷范畴论.md) - 空间的代数模型
+- 同伦类型论 - 同伦论的类型论基础
+- ∞-范畴论 - 空间的代数模型
 ```
 
 ### 从前沿模块到主项目
@@ -119,9 +119,9 @@ FormalMath/
 ## 前置知识
 
 学习本专题前，建议先掌握：
-- [层论](../concept/algebra/sheaf.md)
-- [范畴论基础](../concept/algebra/category.md)
-- [代数拓扑](../concept/topology/algebraic.md)
+- 层论
+- 范畴论基础
+- 代数拓扑
 ```
 
 #### 2. 概念深化链接
@@ -131,7 +131,7 @@ FormalMath/
 ```markdown
 ### 层论基础
 
-详见[层与景的概念](../concept/algebra/sheaf.md)。
+详见层与景的概念。
 ```
 
 ---
@@ -398,7 +398,7 @@ git checkout -b feature/condensed-sets
 - **概念库**: `FormalMath/concept/`
 - **Mathlib4**: https://github.com/leanprover-community/mathlib4
 - **Lean4**: https://lean-lang.org/
-- **HoTT Book**: https://homotopytypetheory.org/book/
+- **HoTT Book**: https://homotopytypetheory.org/book/[需更新]
 
 ### 联系方式
 

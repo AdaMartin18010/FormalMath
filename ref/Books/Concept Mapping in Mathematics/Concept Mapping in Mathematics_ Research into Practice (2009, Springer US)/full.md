@@ -302,7 +302,7 @@ Already indicated above are ways in which the sharing of individual and team kno
 
 # In Conclusion
 
-Our objective in this chapter was to provide a brief history of the development of the concept mapping tool, including the development of the computer software, Cmap-Tools, designed to facilitate concept map making and to provide new opportunities for individual and collaborative learning. Although the research to date supports the value of concept mapping to facilitate meaningful learning (Coffey et al., 2003), very little research has been done in the field of mathematics education. It is our hope this book will encourage such research. We also hope to see studies in mathematics learning that will utilize what we call a New Model for Education, and that libraries of "expert skeleton concept maps" in mathematics will be posted on web sites. We observed an increase in the number of papers dealing with mathematics education presented at international conferences on concept mapping from 2004 to 2008 (Cañas, Novak, et al., 2004; Cañas & Novak, 2006; Cañas et al., 2008) and we are hopeful that even more and improved studies will be presented at following conferences (see http://cmc.ihmc.us).
+Our objective in this chapter was to provide a brief history of the development of the concept mapping tool, including the development of the computer software, Cmap-Tools, designed to facilitate concept map making and to provide new opportunities for individual and collaborative learning. Although the research to date supports the value of concept mapping to facilitate meaningful learning (Coffey et al., 2003), very little research has been done in the field of mathematics education. It is our hope this book will encourage such research. We also hope to see studies in mathematics learning that will utilize what we call a New Model for Education, and that libraries of "expert skeleton concept maps" in mathematics will be posted on web sites. We observed an increase in the number of papers dealing with mathematics education presented at international conferences on concept mapping from 2004 to 2008 (Cañas, Novak, et al., 2004; Cañas & Novak, 2006; Cañas et al., 2008) and we are hopeful that even more and improved studies will be presented at following conferences (see http://cmc.ihmc.us[需更新]).
 
 # References
 
@@ -552,21 +552,21 @@ Afamasaga-Fuata'i, K. (1998). Learning to solve mathematics problems through con
 Afamasaga-Fuata'i, K. (2004, September 14-17). Concept maps and vee diagrams as tools for learning new mathematics topics. In A. J. Canas, J. D. Novak, & F. Gonázales (Eds.), *Concept maps: Theory, methodology, technology.* Proceedings of the first international conference on concept mapping (pp. 13-20). Spain: Dirección de Publicaciones de la Universidad Pública de Navarra.
 Afamasaga-Fuata'i, K. (2005, January 17-21). Students' conceptual understanding and critical thinking? A case for concept maps and vee diagrams in mathematics problem solving. In M. Coupland, J. Anderson, & T. Spencer, (Eds.), Making mathematics vital. Proceedings of the twentieth biennial conference of the Australian Association of Mathematics Teachers (AAMT) (pp. 43-52). Sydney, Australia: University of Technology.
 Afamasaga-Fuata'i, K. (2006). Innovatively developing a teaching sequence using concept maps. In A. Canas & J. Novak (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the second international conference on concept mapping (Vol. 1, pp. 272-279). San Jose, Costa Rica: Universidad de Costa Rica.
-Afamasaga-Fuata'i, K. (2007a). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th annual conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania. Australia, MERGA. Also available from http://www.merga.net.au/documents/RP12007.pdf
+Afamasaga-Fuata'i, K. (2007a). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th annual conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania. Australia, MERGA. Also available from http://www.merga.net.au/documents/RP12007.pdf[需更新]
 Afamasaga-Fuata'i, K. (2007b). Using concept maps and vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia, AAMT.
-Afamasaga-Fuata'i, K., & Reading, C. (2007). Using concept maps to assess preservice teachers' understanding of connections between statistical concepts. Published on IASE site, http://www.swinburne.edu.au/lss/statistics/IASE/CD`Assessment/papers/IASE`SAT`07` Afamasaga`Reading.pdf
-Australian Association of Mathematics Teachers (AAMT). (2006). Standard for excellence in teaching mathematics in Australian schools. Retrieved February 12, 2006, from http://www.aamt.edu.au/standards/standxtm.pdf
+Afamasaga-Fuata'i, K., & Reading, C. (2007). Using concept maps to assess preservice teachers' understanding of connections between statistical concepts. Published on IASE site, http://www.swinburne.edu.au/lss/statistics/IASE/CD[需更新]`Assessment/papers/IASE`SAT`07` Afamasaga`Reading.pdf
+Australian Association of Mathematics Teachers (AAMT). (2006). Standard for excellence in teaching mathematics in Australian schools. Retrieved February 12, 2006, from http://www.aamt.edu.au/standards/standxtm.pdf[需更新]
 Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht; Boston: Kluwer Academic Publishers.
 Brahier, D. J. (2005). Teaching secondary and middle school mathematics (2nd ed.). New York: Pearson Education, Inc.
 Brown, D. S. (2000). The effect of individual and group concept mapping on students' conceptual understanding of photosynthesis and cellular respiration in three different levels of biology classes. Dissertation Abstracts International AADAA-I9970734, University of Missouri, Kansas City.
 Chang, T. (1994). Taiwanese students' epistemological commitments and research knowledge construction (Chinese). Dissertation Abstracts International AAD94-16683, Cornell University, New York.
-Hannson, O. (2005). Preservice teachers' views on  $y = x + 5$  and  $y = \pi x^2$  expressed through the utilization of concept maps: A study of the concept of function. Retrieved March 3, 2008, from http://www.emis.de/proceedings/PME29/PME29RRPapers/PME29Vol3Hansson.pdf
+Hannson, O. (2005). Preservice teachers' views on  $y = x + 5$  and  $y = \pi x^2$  expressed through the utilization of concept maps: A study of the concept of function. Retrieved March 3, 2008, from http://www.emis.de/proceedings/PME29/PME29RRPapers/PME29Vol3Hansson.pdf[需更新]
 Liyanage, S., & Thomas, M. (2002, July 7-10). Characterising secondary school mathematics lessons using teachers' pedagogical concept maps. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25) (pp. 425-432). New Zealand: University of Auckland.
 
 Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.) (2000). Assessing science understanding: a human constructivist view. San Diego, California, London: Academic.
 New South Wales Board of Studies (NSWBOS). (2002).  $K-6$  mathematics syllabus. Sydney, Australia: NSWBOS.
 Novak, J. D., & Canas, A. J. (2004). Building on new constructivist ideas and the CmapTools to create a new model for education. In A. J. Canas, J. D. Novak, & F.M. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping. Pamplona, Spain: Universidad Publica de Navarra.
-Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them (Technical Report IHMC CmapTools 2006-01). Florida Institute for Human and Machine Cognition, 2006. Available at http://cmap.ihmc.us/publications/ ResearchPapers/TheoryUnderlyingConceptMaps.pdf
+Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them (Technical Report IHMC CmapTools 2006-01). Florida Institute for Human and Machine Cognition, 2006. Available at http://cmap.ihmc.us/publications/[需更新] ResearchPapers/TheoryUnderlyingConceptMaps.pdf
 Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.
 Williams, C. G. (1998). Using concept maps to assess conceptual knowledge of function. Journal for Research in Mathematics Education, 29 (4), 414-421.
 
@@ -929,21 +929,21 @@ Findings from this case study contributes empirical data to the literature on th
 
 # References
 
-Australian Association of Mathematics Teachers (AAMT). (2007). AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved October 6, 2007, from http://www.aamt.edu.au/standards
+Australian Association of Mathematics Teachers (AAMT). (2007). AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved October 6, 2007, from http://www.aamt.edu.au/standards[需更新]
 Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht, Boston: Kluwer Academic Publishers.
 Baroody, A. J., Feil, Y., & Johnson, A. R. (2007). Research commentary: An alternative reconceptulization of procedural and conceptual knowledge. Journal for Research in Mathematics Education, 38(2), 115-131.
 Blanton, M., & Kaput, J. (2000, October). Generalizing and progressively formalizing in a third-grade mathematics classroom: Conversations about even and odd numbers. In M. L. Fernandez (Ed.), Proceedings of the 22nd annual meeting of the North American chapter of the International Group for Psychology of Mathematics Education (Vol. 1, pp. 115-119). Columbus, OH: The ERIC Clearinghouse for Science, Mathematics, and Environmental Education.
 Bruner, J. (1990). Acts of meaning. Cambridge, MA: Harvard University Press.
 Ellis, A. B. (2007). Connections between generalizing and justifying: Students' reasoning with linear relationships. Journal for Research in Mathematics Education, 38(3), 194-229.
-Feldman, A. (1996). Enhancing the practice of physics teachers: Mechanisms for the generation and sharing of knowledge. Retrieved October 2, 2007 from http://www.unix.oit.umass.edu/~afeldman/ActionResearchPapers/Feldman1996.PDF
+Feldman, A. (1996). Enhancing the practice of physics teachers: Mechanisms for the generation and sharing of knowledge. Retrieved October 2, 2007 from http://www.unix.oit.umass.edu/~afeldman/ActionResearchPapers/Feldman1996.PDF[需更新]
 Hiebert, J., & Lefevre, P. (1986). Conceptual and procedural knowledge in mathematics: An introductory analysis. In J. Hiebert (Ed.), Conceptual and procedural knowledge: The case of mathematics (pp. 1-27). Hillsdale, NJ: Lawrence Erlbaum Associates.
 Hierbert, J., & Wearne, D. (1986). Procedures over concepts: The acquisition of decimal number knowledge. In J. Hierbert (Ed.), Conceptual and procedural knowledge: The case of mathematics (pp. 199-223). Hillsdale, NJ: Erlbaum.
 Jiygel, K., & Afamasaga-Fuata'i, K. (2007). Students' conceptions of models of fractions and equivalence. The Australian Mathematics Teacher, 63(4), 17-25.
-National Council of Teachers of Mathematics (NCTM). (2007). Executive summary. Principles and standards for school mathematics. Retrieved October 4, 2007 from http://standards.nctm.org/document/chapter3/index.htm
+National Council of Teachers of Mathematics (NCTM). (2007). Executive summary. Principles and standards for school mathematics. Retrieved October 4, 2007 from http://standards.nctm.org/document/chapter3/index.htm[需更新]
 New South Wales Board of Studies (NSWBOS). (2002). K-10 Mathematics syllabus. Sydney, Australia: NSWBOS.
 
 Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.
-Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them (Technical Report IHMC Cmap Tools 2006-01). Florida Institute for Human and Machine Cognition, 2006, available at http://cmap.ihmc.us/publications/ResearchPapers/ TheoryUnderlyingConceptMaps.pdf
+Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them (Technical Report IHMC Cmap Tools 2006-01). Florida Institute for Human and Machine Cognition, 2006, available at http://cmap.ihmc.us/publications/ResearchPapers/[需更新] TheoryUnderlyingConceptMaps.pdf
 Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge, UK: Cambridge University Press.
 Shulman, L. S. (1986). Those who understand: Knowledge growth in teaching. Educational Researcher, 15(2 February), 4-14.
 
@@ -2365,16 +2365,16 @@ Novak's and Gowin's heuristic tools have been applied for more than twenty years
 
 Afamasaga-Fuata'i, K. (2006). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping and Vee diagrams. *Focus on Learning Problems in Mathematics*, Summer, 28(3 & 4), 58-89.
 Bunge, M. (1997) Teoria y Realidad. Barcelona: Ariel.
-Cañas, A. J., Safayeni, F., & Derbentseva, N. (2004). Concept maps: A theoretical note on concepts and the need for cyclic concept maps. Retrieved December 10, 2004, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmap.ihmc.us/Publications/ResearchPapers/Cyclic%20Concept%20Maps.pdf
+Cañas, A. J., Safayeni, F., & Derbentseva, N. (2004). Concept maps: A theoretical note on concepts and the need for cyclic concept maps. Retrieved December 10, 2004, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmap.ihmc.us/Publications/ResearchPapers/Cyclic%20Concept%20Maps.pdf[需更新]
 Feynman, R. (1970). Lectures on physics. Massachusetts: Adison-Wesley.
-First International Congress on Concept Mapping (CMC) (2004) Proceedings of the CMC. Retrieved January 09, 2005, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/CMC2004Programa.html
+First International Congress on Concept Mapping (CMC) (2004) Proceedings of the CMC. Retrieved January 09, 2005, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/CMC2004Programa.html[需更新]
 Hertz, H. (1900) The principles of mechanics presented in a new form. USA: Dover.
 Novak, J. D., & Gowin, D. B. (1988). Aprendiendo a(APRENDER). Barcelona: Martínez Roca.
 Ramírez de M. M. (2005). El Mapa Conceptual como Herramienta Heurística para fácilar el Aprendizaje. San Cristóbal: Unet Fondo Editorial.
 Ramírez de M. M., Aspeé, M., & Sanabria, I. (2006). Concept maps: An essential tool for teaching and learning to learn science. *Focus on Learning Problems in Mathematics*, Summer, 28 (3 & 4), 32-57.
-Ramírez de M. M., & Sanabria I. (2004). *El Mapa Conceptual como Elemento Fundamental en el Proceso de Enseñanza-Aprendizaje de la Física a Nivel Universitario*. Retrieved December 03, 2004, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/papers/cmc2004-086.pdf
+Ramírez de M. M., & Sanabria I. (2004). *El Mapa Conceptual como Elemento Fundamental en el Proceso de Enseñanza-Aprendizaje de la Física a Nivel Universitario*. Retrieved December 03, 2004, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/papers/cmc2004-086.pdf[需更新]
 Sanabria, I., & Ramírez de M. M. (2006). Una estrategia instruccional para el laboratorio de española I usingla "V de Gowin". Revista Mexicana de Fisica S, 52(3), 22-25.
-Second International Congress on Concept Mapping (CMC) (2006). Proceedings of the CMC. Retrieved February 02, 2008, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/CMC2004Programa.html
+Second International Congress on Concept Mapping (CMC) (2006). Proceedings of the CMC. Retrieved February 02, 2008, from University of West Florida, Institute for Human and Machine Cognition Web site: http://cmc.ihmc.us/CMC2004Programa.html[需更新]
 
 # Chapter 11 Applying Concept Mapping to Algebra I
 
@@ -2870,7 +2870,7 @@ Afamasaga-Fuata'i, K. (2005b). Students' conceptual understanding and critical t
 Afamasaga-Fuata'i, K. (2006). Developing a more conceptual understanding of matrices and systems of linear equations through concept mapping. *Focus on Learning Problems in Mathematics*, 28(3 & 4), 58-89.
 Afamasaga-Fuata'i, K. (2007). Using concept maps and Vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia: AAMT.
 Afamasaga-Fuata'i, K., Meyer, P., & Falo, N. (2007). Primary students' diagnosed mathematical competence in semester one of their studies. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 83-92). University of Tasmania, Australia: MERGA.
-Afamasaga-Fuata'i, K., Meyer, P., Falo, N., & Sufia, P. (2007). Future teachers' developing numeracy and mathematical competence as assessed by two diagnostic tests. Published on AARE's website: http://www.aare.edu.au/06pap/afa06011.pdf
+Afamasaga-Fuata'i, K., Meyer, P., Falo, N., & Sufia, P. (2007). Future teachers' developing numeracy and mathematical competence as assessed by two diagnostic tests. Published on AARE's website: http://www.aare.edu.au/06pap/afa06011.pdf[需更新]
 Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht: Kluwer Academic.
 Ball, D. (1993). With an eye on the mathematical horizon: Dilemmas of teaching elementary school mathematics. The Elementary School Journal, 93(4), 373-397.
 Balacheff, N. (November, 1990). Beyond a psychological approach: The psychology of mathematics education. For the Learning of Mathematics, 10(3), 2-8.
@@ -2879,14 +2879,14 @@ Ernest, P. (1999). Forms of knowledge in mathematics and mathematics education: 
 Gowin, D. B. (1981). Educating. Ithaca, NY: Cornell University Press.
 Knuth, E., & Peressini, D. (2001). A theoretical framework for examining discourse in mathematics classrooms. *Focus on Learning Problems in Mathematics*, 23(2 & 3), 5-22.
 Lesh, R. (2000). Beyond constructivism: identifying mathematical abilities that are most needed for success beyond school in an age of information. Mathematics Education Research Journal, 12(3), 177-195.
-National Council of Teachers of Mathematics (NCTM) (2007). 2000 principles and standards. Retrieved on July 28, 2007 from http://my.nctm.org/standards/document/index.htm
+National Council of Teachers of Mathematics (NCTM) (2007). 2000 principles and standards. Retrieved on July 28, 2007 from http://my.nctm.org/standards/document/index.htm[需更新]
 New South Wales Board of Studies (NSW BOS) (2002). K-10 Mathematics Syllabus. Sydney, Australia: NSW BOS
 Novak, J. D. (1985). Metalearning and metaknowledge strategies to help students learn how to learn. In L. H. West & A. L. Pines (Eds.), Cognitive structure and conceptual change (pp. 189-209). Orlando, FL: Academic Press.
 Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Academic Press.
 Novak, J. (2002). Meaningful learning: the essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.
 
 Novak, J. D. (2004). A science education research program that led to the development of the concept mapping tool and new model for education. In A. J. Canas, J. D. Novak, & F. M. Gonzáales (Eds.), *Concept maps: Theory, methodology, technology*. Proceedings of the First International Conference on Concept Mapping September 14–17, 2004 (pp. 457–467). Dirección de Publications de la Universidad Pública de Navarra: Spain.
-Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them. Technical Report IHMC Cmap Tools 2006-01, Florida Institute for Human and Machine Cognition, 2006, available at: http://cmap.ihmc.us/publications/ResearchPapers/TheoryUnderlyingConceptMaps.pdf
+Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them. Technical Report IHMC Cmap Tools 2006-01, Florida Institute for Human and Machine Cognition, 2006, available at: http://cmap.ihmc.us/publications/ResearchPapers/TheoryUnderlyingConceptMaps.pdf[需更新]
 Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge: Cambridge University Press.
 Pfannkuch, M. (2001). Assessment of school mathematics: Teachers' perceptions and practices. Mathematics Education Research Journal, 13(3), 185-203.
 Richards, J. (1991). Mathematical discussions. In E. von Glaserfeld (Ed.), Radical constructivism in mathematics education (pp. 13-51). London: Kluwer Academic Publishers.
@@ -2894,7 +2894,7 @@ Schell, V. (2001). Introduction: Language issues in the learning of mathematics.
 Thompson, A. G. (1984). The relationship of teachers' conceptions of mathematics and mathematics teaching to instructional practice. Educational Studies in Mathematics, 15:105-127.
 Schoenfeld, A. H. (1996). In fostering communities of inquiry, must it matter that the teacher knows "the answer". For the Learning of Mathematics, 16(3), 569-600.
 Steffe, L. P., & D'Ambrosio, B. S. (1996). Using teaching experiments to enhance understanding of students' mathematics. In D. F. Treagust, R. Duit, & B. F. Fraser (Eds.), Improving teaching and learning in science and mathematics (pp. 65-76). New York: Teachers College Press, Columbia University.
-The Australian Association of Mathematics Teachers (AAMT) (2007). The AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved from http://www.aamt.edu.au/standards, on July 18, 2007.
+The Australian Association of Mathematics Teachers (AAMT) (2007). The AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved from http://www.aamt.edu.au/standards[需更新], on July 18, 2007.
 Schoenfeld, A. H. (1991). What's all the fuss about problem solving? Zentralblatt Für Didaktik der Mathematik, 91(1), 4-8.
 Wood, T. (1999). Creating a context for argument in mathematics class. Journal for Research in Mathematics Education, 30(2), 171-191.
 
@@ -3019,7 +3019,7 @@ Figure 13.7 gives a useful map entitled "Real numbers". In the lower part there 
 From the point of view of Bruner and the theory of learning by discovery, starting from an enactive system (facts, examples and experiences) up to a symbolic system (concepts) passing through an iconic system (images) learning by discovery happens permitting the development of inductive processes (Bruner, 1988). The question of real numbers is important for the study of calculus. The concept map the student can create on this topic, after hearing the presentation and explanations of the teacher, in addition to setting in motion thought processes, represents an image that can be stored easily by the student to which he can return when necessary during his studies for the solution of problems.
 
 ![](images/a6241cdfeebc62bbc202603089be4836bda1a667799365a87017351bc57945f9.jpg)
-Fig. 13.7 Concept map: "Real numbers" - Taken from http://canek.azc.uam.mx
+Fig. 13.7 Concept map: "Real numbers" - Taken from http://canek.azc.uam.mx[需更新]
 
 # "Displacement of Functions" Concept Map
 
@@ -3030,7 +3030,7 @@ On occasions, presentations or university courses begin from generalities. An ex
 But in mathematics there are not only concepts. The exercises and problems that naturally imply the handling of concepts are a part of the mathematical content too. Following the ideas and characteristics of concept maps, structures and networks can be constructed that contain information on the procedures to resolve exercises or part of them, where generalities or concepts appear as previously explained and learnt (see Figs. 13.9 and 13.10). It is common that at times one should wish to
 
 ![](images/0a925d22d2d9ffd4da3e056b68f95d0f8c73692c9a97bae06c68bd5d5b971d9d.jpg)
-Fig. 13.8 Concept map: "Displacements of functions" - graphs taken from http://canek.azc.uam.mx
+Fig. 13.8 Concept map: "Displacements of functions" - graphs taken from http://canek.azc.uam.mx[需更新]
 
 proceed in the lecture hall in one way or another, emphasizing certain aspects, in regard to the experiences and particular difficulties appreciated during the resolution of problems and exercises.
 
@@ -3096,7 +3096,7 @@ To speak of the auto-concept is to speak of the image the subject has of himself
 
 Teachers through strategies in the classroom have a great task so that the students learn to control feelings such as anxiety, fear, despair, and perplexity that limit the cognitive processes. Developing auto-concept can be understood as developing the capacity of a student for knowledge, control and gestation of feelings. Anxiety and despair can appear at a moment of cognitive conflict, which presents the student with two options: control of his feelings or abandoning the task or activity. Every effort related to improving the learning processes represents a way of achieving educational equity.
 
-The university domain needs new research that contemplates the learning and teaching processes. Research for the enhancement of pedagogical knowledge includes: students, teachers contents and technology. Currently in the Universidad Autónoma Metropolitana of Mexico City, Mathematics teachers are constructing, backed by the courses, a mathematics portal in Internet called "CANEK" to be found at http://canek.uam.mx. There is material online for which concept maps are being created and gradually introduced. At present theory and problems can be found in the page offering learning support; in the future it is hoped that all this online material with its concept maps will represent an element for further educational research to contribute to pedagogical knowledge in the field of the technology of information.
+The university domain needs new research that contemplates the learning and teaching processes. Research for the enhancement of pedagogical knowledge includes: students, teachers contents and technology. Currently in the Universidad Autónoma Metropolitana of Mexico City, Mathematics teachers are constructing, backed by the courses, a mathematics portal in Internet called "CANEK" to be found at http://canek.uam.mx.[需更新] There is material online for which concept maps are being created and gradually introduced. At present theory and problems can be found in the page offering learning support; in the future it is hoped that all this online material with its concept maps will represent an element for further educational research to contribute to pedagogical knowledge in the field of the technology of information.
 
 # References
 
@@ -3118,7 +3118,7 @@ Polya, G. (1981). Como plantar y resolver problemas. México: Ed. Trillas.
 Román, M. (2005). Sociedad del conocimiento y refundación de la escuela desde el aula. Madrid: EOS.
 Román, M., & Díez, E. (1998). Aprendizaje y-curriculum. Disenos curriculares aplicados. Santiago de Chile: FIDE.
 Román, M., & Díez, E. (1999). Currúculum y evaluación: Disenós curriculares aplicados. Madrid: Complutense.
-Sanz, A. P. (n.d.) In memoriam Miguel de Guzmán. Elultimate pitagórico. Retrieved on November 29, 2007 from http://platea.pntic.mec.es/aperez4/miguel/Miguel%20de%20Guzm%E1n.htm
+Sanz, A. P. (n.d.) In memoriam Miguel de Guzmán. Elultimate pitagórico. Retrieved on November 29, 2007 from http://platea.pntic.mec.es/aperez4/miguel/Miguel%20de%20Guzm%E1n.htm[需更新]
 Usabiaga, C., Fernandez, J., & Cerezuela, M. (1984). Aproximacióndidáctica al métodocientífico. Madrid: Narcea
 Vygotsky, L. S. (1979). El descarrrollo de los procesos psicológicos superiores. Barcelona: Crítica.
 
@@ -3401,7 +3401,7 @@ Hansson, O. (2005). Preservice teachers' view on  $y = x + 5$  and  $y = \pi r^2
 Knuth, E., & Peressini, D. (2001). A theoretical framework for examining discourse in mathematics classrooms. *Focus on Learning Problems in Mathematics*, 23(2 & 3), 5-22.
 Liyanage, S., & Thomas, M. (2002). Characterising secondary school mathematics lessons using teachers' pedagogical concept maps. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 425–432). New Zealand: University of Auckland.
 Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.). (1998). Teaching science for understanding. A human constructivistic view. San Diego, CA, London: Academic Press.
-Moschkovitch, J. (2004). Using two languages when learning mathematics. Retrieved on February 20, 2008 from http://math.arizona.edu/~cemela/spanish/content/workingpapers/UsingTwoLanguages.pdf
+Moschkovitch, J. (2004). Using two languages when learning mathematics. Retrieved on February 20, 2008 from http://math.arizona.edu/~cemela/spanish/content/workingpapers/UsingTwoLanguages.pdf[需更新]
 
 Novak, J. D. (1985). Metalearning and metaknowledge strategies to help students learn how to learn. In L. H. West & A. L. Pines (Eds.), Cognitive structure and conceptual change (pp. 189-209). Orlando, FL: Academic Press.
 Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Academic Press.
@@ -3677,8 +3677,8 @@ Afamasaga-Fuata'i, K. (2007). Communicating Students' Understanding of undergrad
 Afamasaga-Fuata'i, K. (2007a). Using concept maps and Vee diagrams to interpret "area" syllabus outcomes and problems. In K. Milton, H. Reeves, & T. Spencer (Eds.), Mathematics essential for learning, essential for life. Proceedings of the 21st biennial conference of the Australian Association of Mathematics Teachers, Inc. (pp. 102-111). University of Tasmania, Australia: AAMT.
 Afamasaga-Fuata'i, K. (2007b). Communicating students' understanding of undergraduate mathematics using concept maps. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 73-82). University of Tasmania, Australia: MERGA.
 Afamasaga-Fuata'i, K., Meyer, P., & Falo, N. (2007). Primary students' diagnosed mathematical competence in semester one of their studies. In J. Watson & K. Beswick (Eds.), Mathematics: Essential research, essential practice. Proceedings of the 30th Annual Conference of the Mathematics Education Research Group of Australasia (Vol. 1, pp. 83-92). University of Tasmania, Australia: MERGA.
-Afamasaga-Fuata'i, K., Meyer, P., Falo, N., & Sufia, P. (2007). Future teachers' developing numeracy and mathematical competence as assessed by two diagnostic tests. Published on AARE's website. http://www.aare.edu.au/06pap/afa06011.pdf
-Australian Association of Mathematics Teachers (AAMT) (2007). The AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved from http://www.aamt.edu.au/standards, on July 18, 2007.
+Afamasaga-Fuata'i, K., Meyer, P., Falo, N., & Sufia, P. (2007). Future teachers' developing numeracy and mathematical competence as assessed by two diagnostic tests. Published on AARE's website. http://www.aare.edu.au/06pap/afa06011.pdf[需更新]
+Australian Association of Mathematics Teachers (AAMT) (2007). The AAMT standards for excellence in teaching mathematics in Australian schools. Retrieved from http://www.aamt.edu.au/standards[需更新], on July 18, 2007.
 Ausubel, D. P. (2000). The acquisition and retention of knowledge: A cognitive view. Dordrecht, Boston: Kluwer Academic Publishers.
 Baroody, A. J., & Bartel, B. H. (2000). Using concept maps to link mathematical ideas. Mathematics Teaching in Middle Schools, 5(9), 604-609.
 Baroody, A. J., Feil, Y., & Johnson, A. R. (2007). An alternative reconceptualization of procedural and conceptual knowledge. Journal of Research in Mathematics Education, 38(2), 115-131.
@@ -3689,14 +3689,14 @@ Hansson, O. (2005). Preservice teachers' view on  $y = x + 5$  and  $y = \pi r^2
 Hatano, G. (2003). Foreword. In A. J. Baroody & A. Dowker (Eds.), The development of arithmetic concepts and skills: Constructing adaptive expertise (pp. 11-13). Mahwah, NJ: Erlbaum.
 Hiebert, J., & Carpenter, T. P. (1992). Learning and teaching with understanding. In D. G Grouws (Ed.), Handbook of research in mathematics teaching and learning (pp. 65-97). New York: Macmillan.
 Liyanage, S., & Thomas, M. (2002). Characterising secondary school mathematics lessons using teachers' pedagogical concept maps. In B. Barton, K. C. Irwin, M. Pfannkuch, & M. O. J. Thomas (Eds.), Mathematics education in the South Pacific. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 425–432). New Zealand: University of Auckland.
-Marsh, G. E., & Ketterer, J. K. (2005). Situating the zone of proximal development. Online Journal of Distance Learning Administration, Volume VIII, Number II Summer, 2005, University of West Georgia, Distance Education Center. Retrieved on August 20, 2007 from http://www.westga.edu/~distance/objda/summer82/marsh82.htm
+Marsh, G. E., & Ketterer, J. K. (2005). Situating the zone of proximal development. Online Journal of Distance Learning Administration, Volume VIII, Number II Summer, 2005, University of West Georgia, Distance Education Center. Retrieved on August 20, 2007 from http://www.westga.edu/~distance/objda/summer82/marsh82.htm[需更新]
 Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.). (2000). Assessing science understanding: A human constructivist view. San Diego, CA, London: Academic.
-National Council of Teachers of Mathematics (NCTM) (2007). 2000 Principles and Standards. Retrieved on July 28, 2007 from http://my.nctm.org/standards/document/index.htm
+National Council of Teachers of Mathematics (NCTM) (2007). 2000 Principles and Standards. Retrieved on July 28, 2007 from http://my.nctm.org/standards/document/index.htm[需更新]
 Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (LIPHs) leading to empowerment of learners. Science Education, 86(4), 548-571.
-Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them. Technical Report IHMC Map Tools 2006-01, Florida Institute for Human and Machine Cognition, 2006, available at: http://cmap.ihmc.us/publications/ResearchPapers/ TheoryUnderlyingConceptMaps.pdf
+Novak, J. D., & Canas, A. J. (2006). The theory underlying concept maps and how to construct them. Technical Report IHMC Map Tools 2006-01, Florida Institute for Human and Machine Cognition, 2006, available at: http://cmap.ihmc.us/publications/ResearchPapers/[需更新] TheoryUnderlyingConceptMaps.pdf
 Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. Cambridge: Cambridge University Press.
 Piaget, J. (1969). Science of education and the psychology of the child. New York: Grossman Publishers.
-Pratt, N., & Kelly, P. (2005). Mapping mathematical communities: Classrooms, research communities and master classes. Retrieved on August 20, 2007 from http://orgs.man.ac.uk/projects/include/experiment/communities.htm
+Pratt, N., & Kelly, P. (2005). Mapping mathematical communities: Classrooms, research communities and master classes. Retrieved on August 20, 2007 from http://orgs.man.ac.uk/projects/include/experiment/communities.htm[需更新]
 Richards, J. (1991). Mathematical discussions. In E. von Glaserfeld (Ed.), Radical constructivism in mathematics education (pp. 13-51). London: Kluwer Academic Publishers.
 Ruiz-Primo, M. (2004). Examining concept maps as an assessment tool. In A. J. Canas, J. D. Novak, & F. M. Gonázales (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the First International Conference on Concept Mapping September 14–17, 2004 (pp. 555–562). Navarra: Dirección de Publicaciones de la Universidad Pública de Navarra, Spain.
 Schoenfeld, A. H. (1996). In fostering communities of inquiry, must it matter that the teacher knows "the answer." For the Learning of Mathematics, 16(3), 569-600.
@@ -3760,7 +3760,7 @@ Whilst the chapters in this book reported on research of a minute part of the pl
 
 Ellis, A. B. (2007). Connections between generalizing and justifying: Students' reasoning with linear relationships. Journal for Research in Mathematics Education, 38(3), 194-229.
 Guskey, T. (1985). Staff development and teacher change. Educational Leadership, 42, 57-60.
-Pratt, N., & Kelly, (2005). Mapping mathematical communities: Classrooms, research communities and master classes. Retrieved on August 20, 2007 from http://orgs.man.ac.uk/projects/include/experiment/communities.htm.
+Pratt, N., & Kelly, (2005). Mapping mathematical communities: Classrooms, research communities and master classes. Retrieved on August 20, 2007 from http://orgs.man.ac.uk/projects/include/experiment/communities.htm.[需更新]
 
 # A
 

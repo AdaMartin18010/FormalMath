@@ -110,18 +110,18 @@ lean 00-Mathlib4示例集/01-群论示例.lean
 
 ### 官方资源
 
-- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)
+- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新]
 - [Mathlib4 GitHub](https://github.com/leanprover-community/mathlib4)
 - [Lean4官方文档](https://lean-lang.org/doc/)
 
 ### 学习资源
 
 - [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
-- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)
+- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)[需更新][需更新]
 
 ### 社区
 
-- [Lean Zulip](https://leanprover.zulipchat.com/)
+- [Lean Zulip](https://leanprover.zulipchat.com/)[需更新][需更新]
 
 ---
 

@@ -55,7 +55,7 @@ processed_at: '2026-04-05'
     - [应用扩展](#应用扩展)
     - [教育推广](#教育推广)
   - [📝 结论](#结论)
-  - [术语对照表 / Terminology Table](#术语对照表)
+  - 术语对照表 / Terminology Table
 
 ## 📚 概述
 

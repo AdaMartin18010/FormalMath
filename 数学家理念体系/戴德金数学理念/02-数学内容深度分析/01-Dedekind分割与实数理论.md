@@ -19,7 +19,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Dedekind分割：严格实数分析的奠基](#dedekind分割严格实数分析的奠基)
-  - [📋 目录](../README.md#目录)
+  - [📋 目录](../README.md)
   - [摘要](#摘要)
   - [一、引言：分析的严格化需求](#一引言分析的严格化需求)
     - [1.1 18世纪分析学的困境](#11-18世纪分析学的困境)
@@ -203,7 +203,7 @@ Dedekind分割仍是实数构造的标准方法之一，出现在数学分析教
 ### 在线资源
 
 6. **MacTutor History of Mathematics**: Richard Dedekind biography
-   - https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/
+   - https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/[需更新]
 
 7. **MathOverflow**: Dedekind cuts vs Cauchy sequences
    - 两种实数构造方法的比较讨论

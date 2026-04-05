@@ -100,11 +100,11 @@ Martin证明：可测基数蕴含 $\Pi^1_1$-决定性。
 
 ## 相关概念
 
-- [大基数层级](./large-cardinal-hierarchy.md)：可测基数的位置
-- [超滤](./ultrafilter.md)：可测基数的定义工具
-- [初等嵌入](./elementary-embedding.md)：可测基数的内省视角
+- 大基数层级：可测基数的位置
+- 超滤：可测基数的定义工具
+- 初等嵌入：可测基数的内省视角
 - [不可达基数](./inaccessible-cardinal.md)：可测基数的必要条件
-- [决定性公理](./axiom-of-determinacy.md)：可测基数的推论
+- 决定性公理：可测基数的推论
 
 ## 参考
 

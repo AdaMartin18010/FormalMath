@@ -24,10 +24,10 @@ msc_secondary: ['11Axx', '03E30', '03E15']
 
 ## Table of Contents
 
-- [ZFC公理体系完整形式化 - 第六部分：Number Theory基础构造](#zfc公理体系完整形式化---第六部分Number Theory基础构造)
-  - [Table of Contents](#Table of Contents)
+- ZFC公理体系完整形式化 - 第六部分：Number Theory基础构造
+  - Table of Contents
   - [📚 概述](#概述)
-  - [🏗️ Number Theory基础构造](#️-Number Theory基础构造)
+  - 🏗️ Number Theory基础构造
     - [1. 自然数的基本性质](#1-自然数的基本性质)
       - [1.1 自然数的序结构](#11-自然数的序结构)
       - [1.2 数学归纳法](#12-数学归纳法)
@@ -45,23 +45,23 @@ msc_secondary: ['11Axx', '03E30', '03E15']
     - [5. 二次剩余理论](#5-二次剩余理论)
       - [5.1 二次剩余](#51-二次剩余)
       - [5.2 勒让德符号](#52-勒让德符号)
-    - [6. Number Theory函数](#6-Number Theory函数)
+    - 6. Number Theory函数
       - [6.1 欧拉函数](#61-欧拉函数)
       - [6.2 莫比乌斯函数](#62-莫比乌斯函数)
-    - [7. Number Theory的应用](#7-Number Theory的应用)
+    - 7. Number Theory的应用
       - [7.1 在密码学中的应用](#71-在密码学中的应用)
       - [7.2 在编码理论中的应用](#72-在编码理论中的应用)
       - [7.3 在算法设计中的应用](#73-在算法设计中的应用)
       - [7.4 在组合数学中的应用](#74-在组合数学中的应用)
       - [7.5 在计算机科学中的应用](#75-在计算机科学中的应用)
     - [8. 结论](#8-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
+  - 💻 Lean4形式化实现 / Lean4 Formal Implementation
     - [整除理论形式化](#整除理论形式化)
     - [素数理论形式化](#素数理论形式化)
     - [同余理论形式化](#同余理论形式化)
     - [二次剩余理论形式化](#二次剩余理论形式化)
-    - [Number Theory函数形式化](#Number Theory函数形式化)
-    - [应用案例：Number Theory在密码学中的应用](#应用案例Number Theory在密码学中的应用)
+    - Number Theory函数形式化
+    - 应用案例：Number Theory在密码学中的应用
 
 ## 📚 概述
 

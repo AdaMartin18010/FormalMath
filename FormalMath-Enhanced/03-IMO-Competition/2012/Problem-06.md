@@ -36,8 +36,8 @@ $$\frac{1}{2^{a_1}} + \frac{1}{2^{a_2}} + \cdots + \frac{1}{2^{a_n}} = \frac{1}{
 [类似题目或推广]
 
 ## 参考资源
-- [IMO官方解答](https://www.imo-official.org/problems/IMO2012SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h)
+- [IMO官方解答](https://www.imo-official.org/problems/IMO2012SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h)[需更新]
 
 ---
 

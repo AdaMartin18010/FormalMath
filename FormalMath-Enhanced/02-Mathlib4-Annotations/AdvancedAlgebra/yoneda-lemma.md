@@ -102,10 +102,10 @@ $$\text{Hom}_{\mathbf{Top}}(X, BG) \cong \{\text{主$G$-丛在$X$上}\}$$
 ## 相关概念
 
 - [可表示函子](./representable-functor.md)：Yoneda引理的核心对象
-- [泛性质](./universal-property.md)：与表示对象等价
+- 泛性质：与表示对象等价
 - [伴随函子](./adjoint-functor.md)：Yoneda引理的应用
-- [极限](./limit.md)：可表示性的特例
-- [余极限](./colimit.md)：对偶的Yoneda引理
+- 极限：可表示性的特例
+- 余极限：对偶的Yoneda引理
 
 ## 参考
 

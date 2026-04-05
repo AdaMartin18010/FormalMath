@@ -56,10 +56,10 @@ Gruppen finden Anwendung in:
 
 ## Verwandte Konzepte
 
-- [Untergruppe](./Untergruppe.md)
-- [Normalteiler](./Normalteiler.md)
-- [Faktorgruppe](./Faktorgruppe.md)
-- [Gruppenhomomorphismus](./Homomorphismus.md)
+- Untergruppe
+- Normalteiler
+- Faktorgruppe
+- Gruppenhomomorphismus
 
 ---
 

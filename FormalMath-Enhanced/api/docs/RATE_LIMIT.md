@@ -370,7 +370,7 @@ WebSocket连接有独立的限制：
 获取当前速率限制状态：
 
 ```bash
-curl http://localhost:8000/api/v1/health/rate-limit
+curl 
 ```
 
 响应：

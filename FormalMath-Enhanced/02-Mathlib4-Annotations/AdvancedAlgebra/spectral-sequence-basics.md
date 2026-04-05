@@ -97,10 +97,10 @@ $$E^{p,q}_2 = H^p(B, \mathcal{H}^q(F)) \Rightarrow H^{p+q}(E)$$
 ## 相关概念
 
 - [导出函子](./derived-functor.md)：谱序列的主要计算对象
-- [Leray-Serre谱序列](./leray-serre-spectral-sequence.md)：拓扑学应用
-- [Grothendieck谱序列](./grothendieck-spectral-sequence.md)：函子复合
-- [滤过结构](./filtration.md)：谱序列的收敛基础
-- [双复形](./double-complex.md)：谱序列的来源
+- Leray-Serre谱序列：拓扑学应用
+- Grothendieck谱序列：函子复合
+- 滤过结构：谱序列的收敛基础
+- 双复形：谱序列的来源
 
 ## 参考
 

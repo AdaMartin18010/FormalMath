@@ -32,7 +32,7 @@ processed_at: '2026-04-05'
   - [3.1 MAT 330/335: 复分析](#31-mat-330335-复分析)
   - [3.2 MAT 345/346: 代数I/II](#32-mat-345346-代数iii)
 - [四、高级课程详细映射](#四高级课程详细映射)
-  - [4.1 MAT 416: 代数几何（Kollar）- 详细分析](#41-mat-416-代数几何kollar---详细分析)
+  - [4.1 MAT 416: 代数几何（Kollar）- 详细分析](#mat-416-代数几何kollar---详细分析)
   - [4.2 MAT 447: 交换代数](#42-mat-447-交换代数)
 - [五、前置课程关系图](#五前置课程关系图)
 - [六、学习路径建议](#六学习路径建议)
@@ -451,7 +451,7 @@ Princeton 的本科培养体系高度重视**独立研究能力**的培养，Jun
 | **FormalMath 对应** | `docs/00-评估系统/` 的文献阅读与报告标准；`数学家理念体系/` 的历史与传记文档 |
 
 **推荐资源**：
-- Princeton Math Junior Seminar 主页：https://www.math.princeton.edu/undergraduate/junior-seminar
+- Princeton Math Junior Seminar 主页：https://www.math.princeton.edu/undergraduate/junior-seminar[需更新]
 - 历年主题与讲义：以当学年 Department 公布为准
 
 ### 7.2 Senior Thesis（毕业论文）
@@ -464,8 +464,8 @@ Princeton 的本科培养体系高度重视**独立研究能力**的培养，Jun
 | **FormalMath 对应** | 项目中的 `docs/参考文献标准/` 与 `思维表征.md` 的写作规范可作为论文写作参考 |
 
 **推荐资源**：
-- Princeton Senior Thesis 指南：https://www.math.princeton.edu/undergraduate/senior-thesis
-- 历年优秀论文库（Math Library）：https://www.math.princeton.edu/undergraduate/honors
+- Princeton Senior Thesis 指南：https://www.math.princeton.edu/undergraduate/senior-thesis[需更新]
+- 历年优秀论文库（Math Library）：https://www.math.princeton.edu/undergraduate/honors[需更新]
 
 ### 7.3 研究型学习路径
 
@@ -551,9 +551,9 @@ Senior Year
 
 ### 8.1 官方资源链接
 
-- **Princeton Math**: https://www.math.princeton.edu/
-- **Undergraduate**: https://www.math.princeton.edu/undergraduate
-- **János Kollár**: https://web.math.princeton.edu/~kollar/
+- **Princeton Math**: https://www.math.princeton.edu/[需更新]
+- **Undergraduate**: https://www.math.princeton.edu/undergraduate[需更新]
+- **János Kollár**: https://web.math.princeton.edu/~kollar/[需更新]
 
 ### 8.2 参考文献
 

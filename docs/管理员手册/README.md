@@ -105,9 +105,9 @@ sudo systemctl {start|stop|restart|status} formalmath-assessment
 sudo systemctl {start|stop|restart|status} formalmath-adaptive
 
 # 健康检查
-curl http://localhost:8001/health
-curl http://localhost:8002/health
-curl http://localhost:8003/health
+curl 
+curl 
+curl 
 
 # 日志查看
 sudo journalctl -u formalmath-cognitive -f

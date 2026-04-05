@@ -795,7 +795,7 @@ theorem quaternion_group_non_abelian :
 ### Lean4相关
 
 1. The Lean 4 Theorem Prover. <https://leanprover.github.io/>
-2. Mathematics in Lean. <https://leanprover-community.github.io/mathematics_in_lean/>
+2. Mathematics in Lean. <https://leanprover-community.github.io/mathematics_in_lean/[需更新[需更新]]>
 
 ### 群论教材
 

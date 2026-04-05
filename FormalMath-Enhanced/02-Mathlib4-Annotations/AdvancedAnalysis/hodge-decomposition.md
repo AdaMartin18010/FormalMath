@@ -102,10 +102,10 @@ Hodge数：$h^{0,0} = h^{1,1} = 1$，$h^{1,0} = h^{0,1} = 0$。
 ## 相关概念
 
 - [Kähler几何](./kahler-geometry.md)：Hodge理论的强化版本
-- [de Rham上同调](./de-rham-cohomology.md)：Hodge理论的目标
-- [Laplace算子](./laplace-operator.md)：Hodge理论的核心算子
-- [椭圆算子](./elliptic-operator.md)：分析基础
-- [周期积分](./period-integral.md)：Hodge理论的应用
+- de Rham上同调：Hodge理论的目标
+- Laplace算子：Hodge理论的核心算子
+- 椭圆算子：分析基础
+- 周期积分：Hodge理论的应用
 
 ## 参考
 

@@ -109,9 +109,9 @@ $$\sigma(M^{4k}) = \langle L_k(p_1, \ldots, p_k), [M] \rangle$$
 
 - [Chern类](./chern-class.md)：复丛的基础示性类
 - [Stiefel-Whitney类](./stiefel-whitney-class.md)：模2系数的实丛示性类
-- [Hirzebruch L-类](./hirzebruch-l-class.md)：符号定理中的多项式
-- [A-帽类](./a-hat-class.md)：Dirac算子的指标
-- [Todd类](./todd-class.md)：复几何中的相关类
+- Hirzebruch L-类：符号定理中的多项式
+- A-帽类：Dirac算子的指标
+- Todd类：复几何中的相关类
 
 ## 参考
 

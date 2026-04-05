@@ -18,21 +18,21 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [算术几何深度版 / Arithmetic Geometry (Advanced)](#算术几何深度版--arithmetic-geometry-advanced)
+- [算术几何深度版 / Arithmetic Geometry (Advanced)](#算术几何深度版-arithmetic-geometry-advanced)
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
     - [1.1 算术概形的基础理论](#11-算术概形的基础理论)
-    - [1.2 Weil猜想与étale上同调](#12-weil猜想与étale上同调)
+    - 1.2 Weil猜想与étale上同调
     - [1.3 L函数的特殊值](#13-l函数的特殊值)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
     - [2.1 动机理论](#21-动机理论)
     - [2.2 非交换算术几何](#22-非交换算术几何)
     - [2.3 高维算术几何](#23-高维算术几何)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
     - [3.1 p进Hodge理论的革命](#31-p进hodge理论的革命)
     - [3.2 完美胚空间与刚性几何](#32-完美胚空间与刚性几何)
     - [3.3 BSD猜想进展](#33-bsd猜想进展)
-  - [4. 参考文献 / References](#4-参考文献--references)
+  - [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 

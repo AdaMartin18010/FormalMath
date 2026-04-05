@@ -233,7 +233,7 @@ async def test():
     result = await trigger.send_welcome_email(
         user_email="test@example.com",
         username="测试用户",
-        verification_link="https://formalmath.edu/verify/abc123",
+        verification_link="https://formalmath.edu/verify/abc123[需更新]",
     )
     print(result)
 
@@ -244,7 +244,7 @@ asyncio.run(test())
 
 ### 发送邮件
 ```bash
-curl -X POST http://localhost:8000/api/v1/notifications/send \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "to_addresses": ["user@example.com"],
@@ -256,14 +256,14 @@ curl -X POST http://localhost:8000/api/v1/notifications/send \
 
 ### 使用模板
 ```bash
-curl -X POST http://localhost:8000/api/v1/notifications/send-template \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "to_addresses": ["user@example.com"],
     "template_name": "welcome",
     "template_variables": {
       "username": "张三",
-      "verification_link": "https://..."
+      "verification_link": "https://...[需更新]"
     }
   }'
 ```
@@ -271,10 +271,10 @@ curl -X POST http://localhost:8000/api/v1/notifications/send-template \
 ### 查看统计
 ```bash
 # 实时统计
-curl http://localhost:8000/api/v1/notifications/stats/realtime
+curl 
 
 # 汇总统计
-curl "http://localhost:8000/api/v1/notifications/stats/summary?days=7"
+curl ""
 ```
 
 ## 监控指标

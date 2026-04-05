@@ -115,11 +115,11 @@ Chebyshev得到：$0.92 < \frac{\pi(x)\log x}{x} < 1.11$（对大 $x$）。
 
 ## 相关概念
 
-- [素数计数函数 (Prime Counting Function)](./prime-counting-function.md)：$\pi(x)$
-- [von Mangoldt函数 (von Mangoldt Function)](./von-mangoldt-function.md)：$\Lambda(n)$
+- 素数计数函数 (Prime Counting Function)：$\pi(x)$
+- von Mangoldt函数 (von Mangoldt Function)：$\Lambda(n)$
 - [素数定理 (Prime Number Theorem)](./prime-number-theorem.md)：$\pi(x)$ 的渐近公式
-- [Bertrand假设 (Bertrand's Postulate)](./bertrands-postulate.md)：区间内必有素数
-- [Stirling公式 (Stirling's Formula)](./stirling-formula.md)：阶乘的渐近
+- Bertrand假设 (Bertrand's Postulate)：区间内必有素数
+- Stirling公式 (Stirling's Formula)：阶乘的渐近
 
 ## 参考
 
@@ -134,7 +134,7 @@ Chebyshev得到：$0.92 < \frac{\pi(x)\log x}{x} < 1.11$（对大 $x$）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - PrimeCounting](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PrimeCounting.html)
+- [Mathlib4 文档 - PrimeCounting](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PrimeCounting.html)[需更新]
 - [Wikipedia - Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem)
 
 ---

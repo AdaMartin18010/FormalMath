@@ -443,12 +443,12 @@ end Constructive
 
 - **Theorem Proving in Lean4**: https://leanprover.github.io/theorem_proving_in_lean4/
 - **Functional Programming in Lean**: https://lean-lang.org/functional_programming_in_lean/
-- **Mathlib4文档**: https://leanprover-community.github.io/mathlib4_docs/
+- **Mathlib4文档**: https://leanprover-community.github.io/mathlib4_docs/[需更新]
 
 **HoTT相关**:
 
-- **HoTT Book**: https://homotopytypetheory.org/book/
-- **Cubical Agda文档**: https://agda.readthedocs.io/en/latest/language/cubical.html
+- **HoTT Book**: https://homotopytypetheory.org/book/[需更新]
+- **Cubical Agda文档**: https://agda.readthedocs.io/en/latest/language/cubical.html[需更新]
 
 ### 6.2 从HoTT到Lean4的转换指南
 

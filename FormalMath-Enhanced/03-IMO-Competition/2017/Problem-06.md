@@ -88,11 +88,11 @@ $$Q(x_i, y_i) = P(x_i, y_i)^M - C \cdot y_i \cdot 0 = 1^M = 1$$
 本题是**代数几何**中**希尔伯特零点定理**的离散版本。在**计算代数几何**中，这类问题涉及**理想成员问题**。在**格密码**中，理解格上的多项式函数是基础。
 
 ## 相关概念
-- [齐次多项式](../../concept/齐次多项式.md)
-- [SL(2,Z)](../../concept/SL2Z.md)
-- [中国剩余定理](../../concept/中国剩余定理.md)
-- [多项式插值](../../concept/多项式插值.md)
+- 齐次多项式
+- SL(2,Z)
+- 中国剩余定理
+- 多项式插值
 
 ## 参考
 - IMO 2017 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1480151p8633220
+- AoPS Community: https://artofproblemsolving.com/community/c6h1480151p8633220[需更新]

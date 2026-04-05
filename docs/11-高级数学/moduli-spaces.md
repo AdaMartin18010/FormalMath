@@ -17,21 +17,21 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [模空间深度版 / Moduli Spaces - Deep Dive](#模空间深度版--moduli-spaces---deep-dive)
+- 模空间深度版 / Moduli Spaces - Deep Dive
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
     - [1.1 模问题的本质](#11-模问题的本质)
     - [1.2 精细模空间与粗模空间](#12-精细模空间与粗模空间)
     - [1.3 稳定性与几何不变量理论](#13-稳定性与几何不变量理论)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
     - [2.1 栈的观点](#21-栈的观点)
     - [2.2 导出模空间](#22-导出模空间)
     - [2.3 非交换模空间](#23-非交换模空间)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
     - [3.1 紧致化与边界几何](#31-紧致化与边界几何)
     - [3.2 壁交叉与双有理几何](#32-壁交叉与双有理几何)
     - [3.3 SYZ镜像对称](#33-syz镜像对称)
-  - [4. 参考文献 / References](#4-参考文献--references)
+  - [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 
@@ -342,8 +342,8 @@ $(X, D)$是log Calabi-Yau如果$K_X + D = 0$。其模空间与组合几何（clu
 
 ### 在线资源
 
-- [Stacks Project](https://stacks.math.columbia.edu/) - 第87-109章模空间
-- [MSRI Moduli Spaces Program](https://www.msri.org/programs/31906) - 视频与讲义
+- [Stacks Project](https://stacks.math.columbia.edu/)[需更新][需更新] - 第87-109章模空间
+- [MSRI Moduli Spaces Program](https://www.msri.org/programs/31906)[需更新][需更新] - 视频与讲义
 - [Mirror Symmetry Seminar](http://math.mit.edu/~auroux/) - Auroux的镜像对称讲义
 
 ---

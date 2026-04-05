@@ -134,9 +134,9 @@ $$\frac{1/t^4}{(1-t^2)^2/t^4} = \frac{1}{(1-t^2)^2}$$
 ## 相关定理与概念
 
 - **对称不等式** - $uvw$ 方法
-- [不等式技巧](../../concept/algebra/inequalities.md)
-- [有理数逼近](../../concept/number-theory/rational-approximation.md)
-- [椭圆曲线](../../concept/number-theory/elliptic-curves.md)
+- 不等式技巧
+- 有理数逼近
+- 椭圆曲线
 
 ## 变体问题
 
@@ -150,6 +150,6 @@ $$\frac{1/t^4}{(1-t^2)^2/t^4} = \frac{1}{(1-t^2)^2}$$
 
 ## 参考资源
 
-- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216647p1191681)
+- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216647p1191681)[需更新]
 - Evan Chen's Solution Notes

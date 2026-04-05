@@ -76,7 +76,7 @@ pip install pyyaml
 pip install coverage
 
 # 可选: 安装Lean4工具链
-curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
+curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh[需更新] -sSf | sh
 ```
 
 ## 🚀 快速开始
@@ -431,7 +431,7 @@ JSON报告包含机器可读的结构化数据：
 **解决**:
 ```bash
 # 安装Lean4工具链
-curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
+curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh[需更新] -sSf | sh
 source ~/.elan/env
 ```
 

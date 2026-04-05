@@ -79,10 +79,10 @@ $$G'(x) = f(x)$$
 
 ## 相关概念
 
-- [不定积分 (Indefinite Integral)](./indefinite-integral.md)：原函数族
-- [定积分 (Definite Integral)](./definite-integral.md)：区间上的积分
-- [牛顿-莱布尼茨公式](./newton-leibniz-formula.md)：基本定理的另一种表述
-- [格林定理](../Geometry/green-theorem.md)：二维推广
+- 不定积分 (Indefinite Integral)：原函数族
+- 定积分 (Definite Integral)：区间上的积分
+- 牛顿-莱布尼茨公式：基本定理的另一种表述
+- 格林定理：二维推广
 
 ## 参考
 
@@ -98,7 +98,7 @@ $$G'(x) = f(x)$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - IntervalIntegral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/IntervalIntegral.html)
+- [Mathlib4 文档 - IntervalIntegral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/IntervalIntegral.html)[需更新]
 
 ---
 

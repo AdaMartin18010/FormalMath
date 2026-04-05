@@ -235,7 +235,7 @@ final_score = 0.25 × cf_score +
 ### 获取推荐
 
 ```bash
-curl -X POST "http://api.example.com/api/v1/recommendations/recommend" \
+curl -X POST "" \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": 123,
@@ -247,7 +247,7 @@ curl -X POST "http://api.example.com/api/v1/recommendations/recommend" \
 ### 提交反馈
 
 ```bash
-curl -X POST "http://api.example.com/api/v1/recommendations/feedback" \
+curl -X POST "" \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": 123,

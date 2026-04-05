@@ -62,10 +62,10 @@ Groups have applications in:
 ## Related Concepts
 
 - [Subgroup](./Group.md)
-- [Normal Subgroup](./Normal-Subgroup.md)
-- [Quotient Group](./Quotient-Group.md)
-- [Group Homomorphism](./Homomorphism.md)
-- [Group Action](./Group-Action.md)
+- Normal Subgroup
+- Quotient Group
+- Group Homomorphism
+- Group Action
 
 ---
 

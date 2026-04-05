@@ -55,7 +55,7 @@ Thomas Studer, Institute of Computer Science and Applied Mathematics, University
 
 Cesare Tinelli, The University of Iowa, Iowa City, USA
 
-Computer Science Foundations and Applied Logic is a growing series that focuses on the foundations of computing and their interaction with applied logic, including how science overall is driven by this. Thus, applications of computer science to mathematical logic, as well as applications of mathematical logic to computer science, will yield many topics of interest. Among other areas, it will cover combinations of logical reasoning and machine learning as applied to AI, mathematics, physics, as well as other areas of science and engineering. The series (previously known as Progress in Computer Science and Applied Logic, https://www.springer.com/series/4814) welcomes proposals for research monographs, textbooks and polished lectures, and professional text/references. The scientific content will be of strong interest to both computer scientists and logicians.
+Computer Science Foundations and Applied Logic is a growing series that focuses on the foundations of computing and their interaction with applied logic, including how science overall is driven by this. Thus, applications of computer science to mathematical logic, as well as applications of mathematical logic to computer science, will yield many topics of interest. Among other areas, it will cover combinations of logical reasoning and machine learning as applied to AI, mathematics, physics, as well as other areas of science and engineering. The series (previously known as Progress in Computer Science and Applied Logic, https://www.springer.com/series/4814[需更新]) welcomes proposals for research monographs, textbooks and polished lectures, and professional text/references. The scientific content will be of strong interest to both computer scientists and logicians.
 
 Shuichi Yukita
 
@@ -1297,7 +1297,7 @@ We can test this mapping monotone functions in the same way.
 # References
 
 1. Mac Lane S (1998) Categories for the working mathematician, Graduate texts in mathematics, vol 5, 2nd edn. Springer  
-2. Haskell WH https://wiki.haskell.org/Hask
+2. Haskell WH https://wiki.haskell.org/Hask[需更新]
 
 # Equivalence of Categories
 
@@ -7458,7 +7458,7 @@ $$
 
 # Reference
 
-1. Moggi E, Notions of computation and monads. https://person.dibris.unige.it/moggi-eugenio/ftp/ic91.pdf
+1. Moggi E, Notions of computation and monads. https://person.dibris.unige.it/moggi-eugenio/ftp/ic91.pdf[需更新]
 
 # Representable Functors
 
@@ -8536,8 +8536,8 @@ It says that left adjoint functors preserve colimits.
 
 # References
 
-1. Milewski B, Understanding yoneda. https://www.schoolofhaskell.com/user/bartosz/understanding-yoneda  
-2. Piponi D (2006) Reverse engineering machine with the yoneda lemma. Weblog entry, A Neighborhood of Infinity. http://blog.sigfpe.com/2006/11/yoneda-lemma.html
+1. Milewski B, Understanding yoneda. https://www.schoolofhaskell.com/user/bartosz/understanding-yoneda[需更新]  
+2. Piponi D (2006) Reverse engineering machine with the yoneda lemma. Weblog entry, A Neighborhood of Infinity. http://blog.sigfpe.com/2006/11/yoneda-lemma.html[需更新]
 
 # Monoidal Categories and Coherence
 

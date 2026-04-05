@@ -154,10 +154,10 @@ $$= -(a^2 - 6ab + b^2) - 1 = -((a-3b)^2 - 8b^2) - 1 = 8b^2 - (a-3b)^2 - 1$$
 
 ### 与FormalMath主项目的链接
 
-- [整除理论](../../concept/number-theory/divisibility.md)
-- [同余与模运算](../../concept/number-theory/congruence.md)
-- [丢番图方程](../../concept/number-theory/diophantine-equations.md)
-- [Vieta跳跃技巧](../../concept/number-theory/vieta-jumping.md)
+- 整除理论
+- 同余与模运算
+- 丢番图方程
+- Vieta跳跃技巧
 
 ## 变体与推广
 
@@ -175,8 +175,8 @@ $$= -(a^2 - 6ab + b^2) - 1 = -((a-3b)^2 - 8b^2) - 1 = 8b^2 - (a-3b)^2 - 1$$
 
 ## 参考
 
-- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159842p893691)
+- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159842p893691)[需更新]
 - 相关技巧：Vieta跳跃、极小反例法
 - 类似问题：1988 IMO Problem 6（经典Vieta跳跃问题）
 

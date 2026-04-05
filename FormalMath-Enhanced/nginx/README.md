@@ -26,7 +26,7 @@ cd FormalMath-Enhanced/nginx
 docker-compose up -d
 
 # 测试访问
-curl http://localhost/nginx-health
+curl 
 ```
 
 ## 配置结构
@@ -47,6 +47,6 @@ curl http://localhost/nginx-health
 
 | 端点 | 说明 |
 |------|------|
-| `http://localhost:8080/nginx_status` | Nginx 状态 |
-| `http://localhost/nginx-health` | 健康检查 |
-| `https://formalmath.example.com/health` | 应用健康检查 |
+| `` | Nginx 状态 |
+| `` | 健康检查 |
+| `https://formalmath.example.com/health[需更新]` | 应用健康检查 |

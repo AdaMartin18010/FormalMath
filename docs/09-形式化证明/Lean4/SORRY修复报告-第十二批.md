@@ -181,9 +181,9 @@ Mathlib4依赖关系复杂，完整编译需要：
 
 ## 参考资源
 
-- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)
+- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新]
 - [定理证明器Lean教程](https://leanprover.github.io/theorem_proving_in_lean4/)
-- [形式化数学项目](https://formalizedmath.com/)
+- [形式化数学项目](https://formalizedmath.com/)[需更新][需更新]
 
 ---
 

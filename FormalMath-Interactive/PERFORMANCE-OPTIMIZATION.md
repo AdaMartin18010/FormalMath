@@ -282,8 +282,8 @@ experimental: {
     // 生产环境使用 CDN
     if (process.env.NODE_ENV === 'production') {
       return {
-        js: `https://cdn.example.com/js/${filename}`,
-        css: `https://cdn.example.com/css/${filename}`,
+        js: `https://cdn.example.com/js/${filename}[需更新]`,
+        css: `https://cdn.example.com/css/${filename}[需更新]`,
       }[hostType];
     }
     return { relative: true };

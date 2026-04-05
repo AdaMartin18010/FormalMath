@@ -103,11 +103,11 @@ Kontsevich的稳定映射紧化给出了 $
 
 ## 相关概念
 
-- [几何不变量理论](./geometric-invariant-theory.md)：模空间构造方法
-- [代数叠](./algebraic-stack.md)：带自同构的模空间
-- [形变理论](./deformation-theory.md)：模空间的切空间
-- [稳定曲线](./stable-curve.md)：模空间紧化
-- [相交理论](./intersection-theory.md)：模空间上的计算
+- 几何不变量理论：模空间构造方法
+- 代数叠：带自同构的模空间
+- 形变理论：模空间的切空间
+- 稳定曲线：模空间紧化
+- 相交理论：模空间上的计算
 
 ## 参考
 

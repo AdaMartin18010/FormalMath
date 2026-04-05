@@ -137,10 +137,10 @@ $KA = KL = KM$ 得证。
 
 ### 与FormalMath主项目的链接
 
-- [三角形几何](../../concept/geometry/triangle-basics.md)
-- [角平分线定理](../../concept/geometry/angle-bisector-theorem.md)
-- [圆的性质](../../concept/geometry/circle-properties.md)
-- [共圆点](../../concept/geometry/cyclic-quadrilaterals.md)
+- 三角形几何
+- 角平分线定理
+- 圆的性质
+- 共圆点
 
 ## 变体与推广
 
@@ -158,8 +158,8 @@ $KA = KL = KM$ 得证。
 
 ## 参考
 
-- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159841p893690)
+- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159841p893690)[需更新]
 - 相关定理：角平分线定理、圆周角定理、外心性质
 
 ---

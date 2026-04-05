@@ -122,11 +122,11 @@ $\alpha = \sqrt[p]{t}$ 满足 $x^p - t = 0$，但 $x^p - t = (x - \alpha)^p$ 有
 
 ## 相关概念
 
-- [伽罗瓦扩张 (Galois Extension)](./galois-extension.md)：正规可分扩张
-- [形式导数 (Formal Derivative)](./formal-derivative.md)：多项式的代数导数
-- [本原元定理 (Primitive Element Theorem)](./primitive-element-theorem.md)：单生成元存在性
-- [完美域 (Perfect Field)](./perfect-field.md)：所有扩张可分的域
-- [不可分次数 (Inseparable Degree)](./inseparable-degree.md)：扩张的不可分程度
+- 伽罗瓦扩张 (Galois Extension)：正规可分扩张
+- 形式导数 (Formal Derivative)：多项式的代数导数
+- 本原元定理 (Primitive Element Theorem)：单生成元存在性
+- 完美域 (Perfect Field)：所有扩张可分的域
+- 不可分次数 (Inseparable Degree)：扩张的不可分程度
 
 ## 参考
 
@@ -141,8 +141,8 @@ $\alpha = \sqrt[p]{t}$ 满足 $x^p - t = 0$，但 $x^p - t = (x - \alpha)^p$ 有
 
 ### 在线资源
 
-- [Mathlib4 文档 - Separable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Separable.html)
-- [Keith Conrad - Separability](https://kconrad.math.uconn.edu/blurbs/galoistheory/separable.pdf)
+- [Mathlib4 文档 - Separable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Separable.html)[需更新]
+- [Keith Conrad - Separability](https://kconrad.math.uconn.edu/blurbs/galoistheory/separable.pdf)[需更新]
 
 ---
 

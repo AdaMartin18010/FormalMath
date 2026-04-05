@@ -121,11 +121,11 @@ $X = [0,1]$，$\Lambda(f) = \sum_{n=1}^{\infty} 2^{-n} f(q_n)$，其中 $\{q_n\}
 
 ## 相关概念
 
-- [正则Borel测度 (Regular Borel Measure)](./regular-borel-measure.md)：内外正则的测度
-- [紧支撑函数 (Compact Support Function)](./compact-support-function.md)：在紧集外为零的函数
-- [正线性泛函 (Positive Linear Functional)](./positive-linear-functional.md)：保持序结构的泛函
-- [Urysohn引理 (Urysohn's Lemma)](./urysohn-lemma.md)：连续函数的分离
-- [Carathéodory延拓 (Carathéodory Extension)](./caratheodory-extension.md)：测度构造方法
+- 正则Borel测度 (Regular Borel Measure)：内外正则的测度
+- 紧支撑函数 (Compact Support Function)：在紧集外为零的函数
+- 正线性泛函 (Positive Linear Functional)：保持序结构的泛函
+- Urysohn引理 (Urysohn's Lemma)：连续函数的分离
+- Carathéodory延拓 (Carathéodory Extension)：测度构造方法
 
 ## 参考
 
@@ -141,7 +141,7 @@ $X = [0,1]$，$\Lambda(f) = \sum_{n=1}^{\infty} 2^{-n} f(q_n)$，其中 $\{q_n\}
 
 ### 在线资源
 
-- [Mathlib4 文档 - RieszRepresentation](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/RieszRepresentation.html)
+- [Mathlib4 文档 - RieszRepresentation](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/RieszRepresentation.html)[需更新]
 - [Wikipedia - Riesz Representation Theorem](https://en.wikipedia.org/wiki/Riesz%E2%80%93Markov%E2%80%93Kakutani_representation_theorem)
 
 ---

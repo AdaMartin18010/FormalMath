@@ -93,8 +93,8 @@ processed_at: '2026-04-05'
 - [ ] Grafana已配置
 - [ ] 健康检查端点正常
   ```bash
-  curl http://localhost/health
-  curl http://localhost/api/v1/health
+  curl 
+  curl 
   ```
 
 #### 4.2 告警规则
@@ -150,12 +150,12 @@ cd testing
 docker-compose -f docker-compose.load-test.yml up -d
 
 # 访问Locust Web界面
-open http://localhost:8089
+open 
 
 # 设置参数：
 # - Number of users: 1000
 # - Spawn rate: 100
-# - Host: http://nginx
+# - Host: http://nginx[需更新]
 ```
 
 #### 6.3 测试结果检查
@@ -245,11 +245,11 @@ docker-compose -f docker-compose.production.yml ps
 ./scripts/health-check.sh
 
 # 2. API测试
-curl -f http://localhost/api/v1/health
-curl -f http://localhost/api/v1/concepts
+curl -f 
+curl -f 
 
 # 3. 前端测试
-curl -f http://localhost/
+curl -f 
 
 # 4. 日志检查
 docker-compose -f docker-compose.production.yml logs --tail=100
@@ -261,7 +261,7 @@ docker-compose -f docker-compose.production.yml logs --tail=100
 docker stats --no-stream
 
 # 2. 检查告警状态
-# 访问 Grafana: http://localhost:3000
+# 访问 Grafana: 
 
 # 3. 检查日志
 ./scripts/log-rotate.sh report

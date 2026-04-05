@@ -101,11 +101,11 @@ $$\frac{\ln(1 + x) - 0}{x - 0} = \frac{1}{1 + c}$$
 
 ## 相关概念
 
-- [罗尔定理 (Rolle's Theorem)](./rolle-theorem.md)：端点值相等的中值定理特例
-- [柯西中值定理 (Cauchy Mean Value Theorem)](./cauchy-mean-value-theorem.md)：两个函数版本的中值定理
-- [泰勒定理 (Taylor's Theorem)](./taylor-theorem.md)：高阶中值定理
-- [达布定理 (Darboux's Theorem)](./darboux-theorem.md)：导数的介值性质
-- [利普希茨连续性 (Lipschitz Continuity)](./lipschitz-continuity.md)：由导数有界性导出
+- 罗尔定理 (Rolle's Theorem)：端点值相等的中值定理特例
+- 柯西中值定理 (Cauchy Mean Value Theorem)：两个函数版本的中值定理
+- 泰勒定理 (Taylor's Theorem)：高阶中值定理
+- 达布定理 (Darboux's Theorem)：导数的介值性质
+- 利普希茨连续性 (Lipschitz Continuity)：由导数有界性导出
 
 ## 参考
 
@@ -120,7 +120,7 @@ $$\frac{\ln(1 + x) - 0}{x - 0} = \frac{1}{1 + c}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - MeanValue](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Calculus/MeanValue.html)
+- [Mathlib4 文档 - MeanValue](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Calculus/MeanValue.html)[需更新]
 
 ---
 

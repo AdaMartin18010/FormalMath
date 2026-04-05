@@ -90,10 +90,10 @@ $f(x) = |x|$ 在 $[-1, 1]$ 上，可用多项式逼近。
 
 ## 相关概念
 
-- [Bernstein多项式](./bernstein-polynomial.md)：构造性逼近工具
+- Bernstein多项式：构造性逼近工具
 - [Stone-Weierstrass定理](./stone-weierstrass-theorem.md)：拓扑推广
-- [Chebyshev多项式](./chebyshev-polynomial.md)：最优一致逼近
-- [Fourier级数](./fourier-series.md)：三角多项式逼近
+- Chebyshev多项式：最优一致逼近
+- Fourier级数：三角多项式逼近
 
 ## 参考
 
@@ -109,7 +109,7 @@ $f(x) = |x|$ 在 $[-1, 1]$ 上，可用多项式逼近。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Polynomial](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousFunction/Polynomial.html)
+- [Mathlib4 文档 - Polynomial](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousFunction/Polynomial.html)[需更新]
 
 ---
 

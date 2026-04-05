@@ -121,8 +121,8 @@ project/
 """arXiv追踪器配置文件"""
 
 # arXiv API设置
-ARXIV_API_BASE = "http://export.arxiv.org/api/query"
-ARXIV_RSS_BASE = "http://export.arxiv.org/rss/"
+ARXIV_API_BASE = "http://export.arxiv.org/api/query[需更新]"
+ARXIV_RSS_BASE = "http://export.arxiv.org/rss/[需更新]"
 
 # 追踪的数学分类
 TRACKED_CATEGORIES = {

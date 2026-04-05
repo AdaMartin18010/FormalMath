@@ -76,13 +76,13 @@ $$2S = \left|\sum_{i=1}^{k}(x_iy_{i+1} - x_{i+1}y_i)\right|$$
 
 ## 相关概念
 
-- [格点多边形](../../concept/格点多边形.md)
-- [圆内接多边形](../../concept/圆内接多边形.md)
-- [皮克定理](../../concept/皮克定理.md)
-- [反演变换](../../concept/反演变换.md)
+- 格点多边形
+- 圆内接多边形
+- 皮克定理
+- 反演变换
 
 ## 参考
 
 - IMO 2016 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1263914p6575280
+- AoPS Community: https://artofproblemsolving.com/community/c6h1263914p6575280[需更新]
 - Evan Chen's Solution Notes

@@ -71,11 +71,11 @@ $$\angle(FG, AB) = \angle(DE, AB)$$
 本题展示了**欧几里得几何**中的经典技巧。在**复几何**中，可以通过**复数**表示点，利用**复数模**的条件表达垂直平分线。在**射影几何**中，这类问题可以用**交比**处理。
 
 ## 相关概念
-- [垂直平分线](../../concept/垂直平分线.md)
-- [圆周角定理](../../concept/圆周角定理.md)
-- [等腰三角形](../../concept/等腰三角形.md)
-- [平行线判定](../../concept/平行线.md)
+- 垂直平分线
+- 圆周角定理
+- 等腰三角形
+- 平行线判定
 
 ## 参考
 - IMO 2018 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1664175p10570910
+- AoPS Community: https://artofproblemsolving.com/community/c6h1664175p10570910[需更新]

@@ -85,16 +85,16 @@ title: IMO 竞赛数学模块
 ## 相关资源
 
 ### 官方资源
-- [IMO官方网站](https://www.imo-official.org/)
-- [IMO题目档案](https://www.imo-official.org/problems.aspx)
+- [IMO官方网站](https://www.imo-official.org/)[需更新]
+- [IMO题目档案](https://www.imo-official.org/problems.aspx)[需更新]
 
 ### 社区资源
-- [Art of Problem Solving (AoPS)](https://artofproblemsolving.com/)
-- [AoPS IMO论坛](https://artofproblemsolving.com/community/c6_high_school_olympiads)
+- [Art of Problem Solving (AoPS)](https://artofproblemsolving.com/)[需更新]
+- [AoPS IMO论坛](https://artofproblemsolving.com/community/c6_high_school_olympiads)[需更新]
 
 ### FormalMath链接
-- [主项目文档](../README.md)
-- [数学概念体系](../concept/)
+- 主项目文档
+- 数学概念体系
 
 ## 贡献指南
 

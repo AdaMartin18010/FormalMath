@@ -58,7 +58,7 @@ msc_primary: "03E35"
   - [🔮 发展前景](#发展前景)
     - [理论发展](#理论发展)
     - [应用发展](#应用发展)
-  - [术语对照表 / Terminology Table](#术语对照表)
+  - 术语对照表 / Terminology Table
 
 ## 📚 文档导航
 

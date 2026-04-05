@@ -114,11 +114,11 @@ $p: S^1 \to S^1$，$p(z) = z^2$。
 
 ## 相关概念
 
-- [覆盖空间 (Covering Space)](./covering-space.md)：局部同胚的纤维丛
-- [万有覆盖 (Universal Cover)](./universal-cover.md)：单连通的覆盖
-- [Deck变换 (Deck Transformation)](./deck-transformation.md)：覆盖的自同构
-- [纤维 (Fiber)](./fiber.md)：点的原像
-- [覆叠群 (Covering Group)](./covering-group.md)：覆盖的同构类
+- 覆盖空间 (Covering Space)：局部同胚的纤维丛
+- 万有覆盖 (Universal Cover)：单连通的覆盖
+- Deck变换 (Deck Transformation)：覆盖的自同构
+- 纤维 (Fiber)：点的原像
+- 覆叠群 (Covering Group)：覆盖的同构类
 
 ## 参考
 
@@ -134,8 +134,8 @@ $p: S^1 \to S^1$，$p(z) = z^2$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Covering](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Covering/Basic.html)
-- [Hatcher - Covering Spaces](https://pi.math.cornell.edu/~hatcher/AT/ATch1.pdf)
+- [Mathlib4 文档 - Covering](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Covering/Basic.html)[需更新]
+- [Hatcher - Covering Spaces](https://pi.math.cornell.edu/~hatcher/AT/ATch1.pdf)[需更新]
 
 ---
 

@@ -7,15 +7,15 @@ processed_at: '2026-04-05'
 
 **数学形式化与数学家理念体系的综合性教育知识库**
 
-[![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=build)](https://github.com/formalmath/formalmath/actions/workflows/build.yml)
-[![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=test)](https://github.com/formalmath/formalmath/actions/workflows/test.yml)
-[![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=deploy)](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml)
-[![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=security)](https://github.com/formalmath/formalmath/actions/workflows/security.yml)
-[![完成度](https://img.shields.io/badge/完成度-100%25-brightgreen)](./00-FormalMath项目完成状态报告-2026年4月.md)
-[![文档数](https://img.shields.io/badge/文档-6573%2B-blue)](./docs/00-项目统计总览.md)
-[![数学家](https://img.shields.io/badge/数学家-62位-orange)](./数学家理念体系/)
-[![定理数](https://img.shields.io/badge/Lean4定理-20个-9cf)](./docs/09-形式化证明/)
-[![课程映射](https://img.shields.io/badge/国际课程-121%2B门-purple)](./project/00-国际课程与机构对齐对照表-2026年4月.md)
+[![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=build)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/build.yml)
+[![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=test)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/test.yml)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=deploy)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml)
+[![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=security)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/security.yml)
+[![完成度](https://img.shields.io/badge/完成度-100%25-brightgreen)[需更新]](./00-FormalMath项目完成状态报告-2026年4月.md)
+[![文档数](https://img.shields.io/badge/文档-6573%2B-blue)[需更新]](./docs/00-项目统计总览.md)
+[![数学家](https://img.shields.io/badge/数学家-62位-orange)[需更新]](./数学家理念体系/)
+[![定理数](https://img.shields.io/badge/Lean4定理-20个-9cf)[需更新]](./docs/09-形式化证明/)
+[![课程映射](https://img.shields.io/badge/国际课程-121%2B门-purple)[需更新]](./project/00-国际课程与机构对齐对照表-2026年4月.md)
 
 ---
 
@@ -49,25 +49,25 @@ FormalMath 是一个面向数学教育的综合性知识库，致力于：
 
 | 分支 | 路径 | 核心内容 | 难度 |
 |------|------|----------|------|
-| **基础数学** | [docs/01-基础数学/](docs/01-基础数学/) | 集合论、ZFC公理、数理逻辑 | ⭐⭐ |
+| **基础数学** | docs/01-基础数学/ | 集合论、ZFC公理、数理逻辑 | ⭐⭐ |
 | **代数结构** | [docs/02-代数结构/](docs/02-代数结构/README.md) | 群论、环论、域论、李代数、表示论 | ⭐⭐⭐ |
-| **分析学** | [docs/03-分析学/](docs/03-分析学/) | 实分析、复分析、泛函分析、调和分析 | ⭐⭐⭐ |
-| **几何学** | [docs/04-几何与拓扑/](docs/04-几何与拓扑/) | 欧几里得几何、解析几何、微分几何 | ⭐⭐⭐ |
-| **拓扑学** | [docs/04-几何与拓扑/](docs/04-几何与拓扑/) | 点集拓扑、代数拓扑、微分拓扑 | ⭐⭐⭐⭐ |
-| **数论** | [docs/05-数论/](docs/05-数论/) | 初等数论、代数数论、解析数论 | ⭐⭐⭐ |
-| **逻辑学** | [docs/07-数理逻辑/](docs/07-数理逻辑/) | 命题逻辑、谓词逻辑、模态逻辑 | ⭐⭐⭐ |
-| **计算数学** | [docs/08-计算数学/](docs/08-计算数学/) | 数值分析、科学计算 | ⭐⭐⭐ |
-| **形式化证明** | [docs/09-形式化证明/](docs/09-形式化证明/) | Lean4、Mathlib4、定理证明器 | ⭐⭐⭐⭐ |
-| **语义模型** | [docs/10-语义模型/](docs/10-语义模型/) | 代数语义、范畴语义 | ⭐⭐⭐⭐ |
-| **高级数学** | [docs/11-高级数学/](docs/11-高级数学/) | 高等专题与前沿内容 | ⭐⭐⭐⭐⭐ |
-| **应用数学** | [docs/10-应用数学/](docs/10-应用数学/) | 各类应用场景分析 | ⭐⭐⭐ |
-| **代数几何** | [docs/13-代数几何/](docs/13-代数几何/) | 概形理论、层与上同调 | ⭐⭐⭐⭐⭐ |
-| **微分几何** | [docs/04-几何与拓扑/](docs/04-几何与拓扑/) | 黎曼几何、辛几何 | ⭐⭐⭐⭐ |
-| **同调代数** | [docs/15-同调代数/](docs/15-同调代数/) | 导出范畴、谱序列 | ⭐⭐⭐⭐⭐ |
+| **分析学** | docs/03-分析学/ | 实分析、复分析、泛函分析、调和分析 | ⭐⭐⭐ |
+| **几何学** | docs/04-几何与拓扑/ | 欧几里得几何、解析几何、微分几何 | ⭐⭐⭐ |
+| **拓扑学** | docs/04-几何与拓扑/ | 点集拓扑、代数拓扑、微分拓扑 | ⭐⭐⭐⭐ |
+| **数论** | docs/05-数论/ | 初等数论、代数数论、解析数论 | ⭐⭐⭐ |
+| **逻辑学** | docs/07-数理逻辑/ | 命题逻辑、谓词逻辑、模态逻辑 | ⭐⭐⭐ |
+| **计算数学** | docs/08-计算数学/ | 数值分析、科学计算 | ⭐⭐⭐ |
+| **形式化证明** | docs/09-形式化证明/ | Lean4、Mathlib4、定理证明器 | ⭐⭐⭐⭐ |
+| **语义模型** | docs/10-语义模型/ | 代数语义、范畴语义 | ⭐⭐⭐⭐ |
+| **高级数学** | docs/11-高级数学/ | 高等专题与前沿内容 | ⭐⭐⭐⭐⭐ |
+| **应用数学** | docs/10-应用数学/ | 各类应用场景分析 | ⭐⭐⭐ |
+| **代数几何** | docs/13-代数几何/ | 概形理论、层与上同调 | ⭐⭐⭐⭐⭐ |
+| **微分几何** | docs/04-几何与拓扑/ | 黎曼几何、辛几何 | ⭐⭐⭐⭐ |
+| **同调代数** | docs/15-同调代数/ | 导出范畴、谱序列 | ⭐⭐⭐⭐⭐ |
 
 ### 2️⃣ 数学家理念体系（~3,800篇）
 
-[数学家理念体系/](数学家理念体系/) — 62位数学家深度分析
+数学家理念体系/ — 62位数学家深度分析
 
 | 深度等级 | 数学家数量 | 代表数学家 |
 |----------|------------|------------|
@@ -80,7 +80,7 @@ FormalMath 是一个面向数学教育的综合性知识库，致力于：
 - 🥈 **庞加莱**：200篇深度文档，108万字
 - 🥉 **希尔伯特**：96篇深度文档，45.1万字
 
-完整索引：[数学家索引](数学家理念体系/00-数学家索引-2025年12月.md)
+完整索引：数学家索引
 
 ### 3️⃣ 形式化证明（20个定理）
 
@@ -92,7 +92,7 @@ FormalMath 是一个面向数学教育的综合性知识库，致力于：
 | 逻辑 | Gödel不完备性定理 | ✅ |
 | 拓扑 | Brouwer不动点定理 | ✅ |
 
-代码位置：[docs/09-形式化证明/Lean4/](docs/09-形式化证明/Lean4/)
+代码位置：docs/09-形式化证明/Lean4/
 
 ---
 
@@ -110,7 +110,7 @@ docs/03-分析学/01-实分析/01-实分析.md
 
 **快速入口**：
 - [集合论基础](docs/01-基础数学/集合论/01-集合论基础-国际标准版.md)
-- [线性代数](docs/02-代数结构/02-核心理论/线性代数与矩阵理论/)
+- 线性代数
 - [实分析入门](docs/03-分析学/01-实分析/01-实分析.md)
 
 ### 中级学习者（大二/大三水平）
@@ -125,9 +125,9 @@ docs/03-分析学/02-复分析/
 ```
 
 **快速入口**：
-- [群论深度版](docs/02-代数结构/02-核心理论/群论/)
+- 群论深度版
 - [实分析深度版](docs/03-分析学/01-实分析/01-实分析-深度扩展版.md)
-- [点集拓扑](docs/04-几何与拓扑/)
+- 点集拓扑
 
 ### 高级学习者（研究生水平）
 
@@ -141,9 +141,9 @@ docs/06-数论/02-代数数论-深度版.md
 ```
 
 **快速入口**：
-- [格洛腾迪克理念](数学家理念体系/格洛腾迪克数学理念/)
-- [概形理论](docs/13-代数几何/)
-- [导出范畴](docs/15-同调代数/)
+- 格洛腾迪克理念
+- 概形理论
+- 导出范畴
 
 ---
 
@@ -220,7 +220,7 @@ docs/06-数论/02-代数数论-深度版.md
 - [MIT课程内容对齐报告](00-MIT课程内容对齐报告.md)
 - [Harvard课程内容对齐报告](00-Harvard课程内容对齐报告.md)
 - [Stanford课程内容对齐报告](00-Stanford课程内容对齐报告.md)
-- [更多...](project/)
+- 更多...
 
 ---
 
@@ -228,10 +228,10 @@ docs/06-数论/02-代数数论-深度版.md
 
 | 流程 | 状态 | 说明 |
 |------|------|------|
-| [Build](.github/workflows/build.yml) | [![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=)](https://github.com/formalmath/formalmath/actions/workflows/build.yml) | 前端、Python工具、Lean4构建 |
-| [Test](.github/workflows/test.yml) | [![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=)](https://github.com/formalmath/formalmath/actions/workflows/test.yml) | 单元测试、集成测试、E2E测试 |
-| [Deploy](.github/workflows/deploy.yml) | [![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=)](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml) | 自动部署到测试/生产环境 |
-| [Security](.github/workflows/security.yml) | [![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=)](https://github.com/formalmath/formalmath/actions/workflows/security.yml) | 漏洞扫描、密钥检测 |
+| [Build](.github/workflows/build.yml) | [![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/build.yml) | 前端、Python工具、Lean4构建 |
+| [Test](.github/workflows/test.yml) | [![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/test.yml) | 单元测试、集成测试、E2E测试 |
+| [Deploy](.github/workflows/deploy.yml) | [![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml) | 自动部署到测试/生产环境 |
+| [Security](.github/workflows/security.yml) | [![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/security.yml) | 漏洞扫描、密钥检测 |
 
 📖 [CI/CD完整指南](.github/CI_CD_GUIDE.md) | 📊 [工作流状态](.github/WORKFLOW_STATUS.md)
 

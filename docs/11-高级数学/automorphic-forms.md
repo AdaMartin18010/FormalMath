@@ -18,19 +18,19 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+- [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
   - [1.1 自守形式的解析理论](#11-自守形式的解析理论)
   - [1.2 表示论视角](#12-表示论视角)
   - [1.3 Hecke算子与L函数](#13-hecke算子与l函数)
-- [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+- [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
   - [2.1 自守表示的范畴论](#21-自守表示的范畴论)
   - [2.2 几何自守形式](#22-几何自守形式)
   - [2.3 p进自守形式](#23-p进自守形式)
-- [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+- [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
   - [3.1 高秩群的自守形式](#31-高秩群的自守形式)
   - [3.2 自守形式与算术](#32-自守形式与算术)
   - [3.3 计算自守形式](#33-计算自守形式)
-- [4. 参考文献 / References](#4-参考文献--references)
+- [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 

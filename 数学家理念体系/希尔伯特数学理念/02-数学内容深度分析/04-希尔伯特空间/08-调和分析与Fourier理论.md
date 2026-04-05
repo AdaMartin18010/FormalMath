@@ -15,7 +15,7 @@ processed_at: '2026-04-05'
 - [调和分析与Fourier理论：希尔伯特空间的经典应用](#调和分析与fourier理论希尔伯特空间的经典应用)
   - [一、Fourier级数](#一fourier级数)
     - [1.1 历史起源](#11-历史起源)
-    - [1.2 L²理论](#12-l²理论)
+    - 1.2 L²理论
   - [二、Fourier变换](#二fourier变换)
     - [2.1 定义](#21-定义)
     - [2.2 Plancherel定理](#22-plancherel定理)

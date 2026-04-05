@@ -134,9 +134,9 @@ FormalMath项目Lean4代码库包含经典数学定理的形式化证明。
 
 ## 参考资源
 
-- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)
+- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新]
 - [Lean4定理证明](https://leanprover.github.io/theorem_proving_in_lean4/)
-- [形式化数学](https://formalizedmath.com/)
+- [形式化数学](https://formalizedmath.com/)[需更新][需更新]
 
 ## 更新日志
 

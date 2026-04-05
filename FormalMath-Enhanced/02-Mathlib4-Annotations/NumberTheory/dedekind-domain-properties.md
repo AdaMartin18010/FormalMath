@@ -116,11 +116,11 @@ $k[x]$（$k$ 域）是Dedekind整环。
 
 ## 相关概念
 
-- [理想类群 (Ideal Class Group)](./ideal-class-group.md)：分式理想模主理想
-- [分式理想 (Fractional Ideal)](./fractional-ideal.md)：理想的推广
-- [DVR (Discrete Valuation Ring)](./dvr.md)：局部Dedekind整环
-- [整闭性 (Integral Closure)](./integral-closure.md)：代数整元的封闭性
-- [类数 (Class Number)](./class-number.md)：类群的阶
+- 理想类群 (Ideal Class Group)：分式理想模主理想
+- 分式理想 (Fractional Ideal)：理想的推广
+- DVR (Discrete Valuation Ring)：局部Dedekind整环
+- 整闭性 (Integral Closure)：代数整元的封闭性
+- 类数 (Class Number)：类群的阶
 
 ## 参考
 
@@ -135,7 +135,7 @@ $k[x]$（$k$ 域）是Dedekind整环。
 
 ### 在线资源
 
-- [Mathlib4 文档 - DedekindDomain](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/DedekindDomain/Basic.html)
+- [Mathlib4 文档 - DedekindDomain](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/DedekindDomain/Basic.html)[需更新]
 - [Wikipedia - Dedekind Domain](https://en.wikipedia.org/wiki/Dedekind_domain)
 
 ---

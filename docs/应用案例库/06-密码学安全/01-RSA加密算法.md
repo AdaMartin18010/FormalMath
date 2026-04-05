@@ -215,8 +215,8 @@ def mod_inverse(e, phi):
 - [2] Boneh, D., & Shoup, V. (2023). *A Graduate Course in Applied Cryptography*.
 
 ### 在线资源
-- [RFC 8017](https://tools.ietf.org/html/rfc8017): RSA Cryptography Specifications Version 2.2
-- [NIST SP 800-56B](https://csrc.nist.gov/publications/detail/sp/800-56b/rev-2/final): Recommendation for Pair-Wise Key Establishment Schemes
+- [RFC 8017](https://tools.ietf.org/html/rfc8017)[需更新][需更新]: RSA Cryptography Specifications Version 2.2
+- [NIST SP 800-56B](https://csrc.nist.gov/publications/detail/sp/800-56b/rev-2/final)[需更新][需更新]: Recommendation for Pair-Wise Key Establishment Schemes
 
 ### 工具
 - OpenSSL: `openssl genrsa`, `openssl rsa`

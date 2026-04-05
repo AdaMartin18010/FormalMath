@@ -50,9 +50,9 @@ celery -A app.tasks.celery_app worker --loglevel=info
 
 ### 访问API文档
 
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
-- **OpenAPI JSON**: http://localhost:8000/openapi.json
+- **Swagger UI**: 
+- **ReDoc**: 
+- **OpenAPI JSON**: 
 
 ## 文档目录
 

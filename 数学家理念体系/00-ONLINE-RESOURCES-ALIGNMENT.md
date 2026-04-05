@@ -19,30 +19,30 @@ processed_at: '2026-04-05'
 **核心文献在线版本**:
 
 - 📚 **Grundlagen der Geometrie (1899)**
-  - Archive.org: <https://archive.org/details/grundlagendergeo00hilb>
-  - Project Gutenberg: <https://www.gutenberg.org/ebooks/author/8514>
+  - Archive.org: <https://archive.org/details/grundlagendergeo00hilb[需更新]>
+  - Project Gutenberg: <https://www.gutenberg.org/ebooks/author/8514[需更新]>
   - Google Books: 搜索"Hilbert Foundations of Geometry"
 
 - 📚 **Über das Unendliche (1925)**
-  - SpringerLink: <https://link.springer.com/article/10.1007/BF01206605>
+  - SpringerLink: <https://link.springer.com/article/10.1007/BF01206605[需更新]>
   - 英文翻译：van Heijenoort (1967) *From Frege to Gödel*
 
 - 📚 **Grundlagen der Mathematik I & II (1934, 1939)**
-  - Springer官方版：<https://www.springer.com/gp/book/9783642867668>
+  - Springer官方版：<https://www.springer.com/gp/book/9783642867668[需更新]>
 
 **学术数据库**:
 
 - MathSciNet检索: "Hilbert, David"
   - <https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=215744>
-- zbMATH: <https://zbmath.org/?q=au:Hilbert+David>
-- Google Scholar: <https://scholar.google.com/scholar?q=David+Hilbert>
+- zbMATH: <https://zbmath.org/?q=au:Hilbert+David[需更新]>
+- Google Scholar: <https://scholar.google.com/scholar?q=David+Hilbert[需更新]>
 
 **权威传记与研究**:
 
 - Constance Reid传记: *Hilbert* (1970)
   - 部分章节: <https://www.maa.org/press/maa-reviews/hilbert>
-- MacTutor传记: <http://mathshistory.st-andrews.ac.uk/Biographies/Hilbert.html>
-- 斯坦福哲学百科: <https://plato.stanford.edu/entries/hilbert-program/>
+- MacTutor传记: <http://mathshistory.st-andrews.ac.uk/Biographies/Hilbert.html[需更新]>
+- 斯坦福哲学百科: <https://plato.stanford.edu/entries/hilbert-program/[需更新]>
 
 **现代研究与评论**:
 
@@ -59,9 +59,9 @@ processed_at: '2026-04-05'
 
 #### 机构档案
 
-- 哥廷根大学数字档案: <https://gdz.sub.uni-goettingen.de/>
-- 德国国家图书馆: <https://www.dnb.de/>
-- Fields Institute视频库: <http://www.fields.utoronto.ca/video-archive>
+- 哥廷根大学数字档案: <https://gdz.sub.uni-goettingen.de/[需更新]>
+- 德国国家图书馆: <https://www.dnb.de/[需更新]>
+- Fields Institute视频库: <http://www.fields.utoronto.ca/video-archive[需更新]>
 
 ---
 
@@ -72,49 +72,49 @@ processed_at: '2026-04-05'
 **核心文献在线版本**:
 
 - 📚 **Über die Hypothesen, welche der Geometrie zu Grunde liegen (1854)**
-  - 德文原版: <https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Geom/>
+  - 德文原版: <https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Geom/[需更新]>
   - 英文翻译: Clifford翻译版 (1873)
   - 现代解读: Spivak *A Comprehensive Introduction to Differential Geometry* Vol. 2
 
 - 📚 **Theorie der Abel'schen Functionen (1857)**
-  - Crelle's Journal原版: <https://www.digizeitschriften.de/>
+  - Crelle's Journal原版: <https://www.digizeitschriften.de/[需更新]>
   - 英文综述: Farkas & Kra *Riemann Surfaces* (1992)
 
 - 📚 **Über die Anzahl der Primzahlen unter einer gegebenen Größe (1859)**
-  - 黎曼假设原始论文: <https://www.claymath.org/millennium-problems/riemann-hypothesis>
+  - 黎曼假设原始论文: <https://www.claymath.org/millennium-problems/riemann-hypothesis[需更新]>
   - 英文翻译+注释: Edwards *Riemann's Zeta Function* (1974)
 
 **学术数据库**:
 
-- MacTutor黎曼专页: <http://mathshistory.st-andrews.ac.uk/Biographies/Riemann.html>
+- MacTutor黎曼专页: <http://mathshistory.st-andrews.ac.uk/Biographies/Riemann.html[需更新]>
 - MathSciNet: 搜索"Riemann surfaces" / "Riemann hypothesis"
 - arXiv: "Riemann geometry" / "Riemann zeta"
 
 **权威研究著作**:
 
 - Bottazzini & Gray: *Hidden Harmony - Geometric Fantasies* (2013)
-  - SpringerLink: <https://link.springer.com/book/10.1007/978-1-4614-5725-1>
+  - SpringerLink: <https://link.springer.com/book/10.1007/978-1-4614-5725-1[需更新]>
 - Laugwitz: *Bernhard Riemann 1826-1866: Turning Points in the Conception of Mathematics* (1999)
 
 **现代应用**:
 
 - Clay数学研究所：黎曼假设千禧年大奖问题
-  - <https://www.claymath.org/millennium-problems/riemann-hypothesis>
+  - <https://www.claymath.org/millennium-problems/riemann-hypothesis[需更新]>
 - 广义相对论数学基础：Einstein 1915论文
-  - <https://einsteinpapers.press.princeton.edu/>
+  - <https://einsteinpapers.press.princeton.edu/[需更新]>
 
 **教育资源**:
 
 - 3Blue1Brown: "Visualizing the Riemann zeta function"
-  - <https://www.youtube.com/watch?v=sD0NjbwqlYw>
+  - <https://www.youtube.com/watch?v=sD0NjbwqlYw[需更新]>
 - Numberphile: "The Riemann Hypothesis"
 - MIT OpenCourseWare: 18.965 Geometry of Manifolds
 
 #### 物理学应用
 
 - Living Reviews in Relativity: 广义相对论综述
-  - <https://link.springer.com/journal/41114>
-- LIGO引力波探测: <https://www.ligo.caltech.edu/>
+  - <https://link.springer.com/journal/41114[需更新]>
+- LIGO引力波探测: <https://www.ligo.caltech.edu/[需更新]>
 
 ---
 
@@ -125,36 +125,36 @@ processed_at: '2026-04-05'
 **核心文献在线版本**:
 
 - 📚 **Analysis Situs (1895)**
-  - 法文原版: <http://www.numdam.org/> (法国数字数学文库)
+  - 法文原版: <http://www.numdam.org/[需更新]> (法国数字数学文库)
   - 英文翻译节选: Papers on Topology, AMS出版
 
 - 📚 **La Science et l'Hypothèse (1902)**
-  - 法文免费版: <https://fr.wikisource.org/wiki/La_Science_et_l%E2%80%99Hypoth%C3%A8se>
+  - 法文免费版: <https://fr.wikisource.org/wiki/La_Science_et_l%E2%80%99Hypoth%C3%A8se[需更新]>
   - 英文翻译: *Science and Hypothesis* (Dover, 1952)
   - 中文版: 商务印书馆《科学与假设》
 
 - 📚 **三体问题获奖论文 (1889)**
-  - Acta Mathematica原版: <https://projecteuclid.org/journals/acta-mathematica>
+  - Acta Mathematica原版: <https://projecteuclid.org/journals/acta-mathematica[需更新]>
   - 现代解读: Diacu & Holmes *Celestial Encounters* (1996)
 
 **学术数据库**:
 
-- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Poincare.html>
+- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Poincare.html[需更新]>
 - MathSciNet: 搜索"Poincaré conjecture" / "chaos theory"
 - zbMATH: "Poincare" (5000+结果)
 
 **权威研究**:
 
 - Gray: *Henri Poincaré: A Scientific Biography* (2013)
-  - Princeton U Press: <https://press.princeton.edu/books/hardcover/9780691151007/henri-poincare>
+  - Princeton U Press: <https://press.princeton.edu/books/hardcover/9780691151007/henri-poincare[需更新]>
 - 斯坦福哲学百科: "Poincaré's Philosophy of Mathematics"
-  - <https://plato.stanford.edu/entries/poincare/>
+  - <https://plato.stanford.edu/entries/poincare/[需更新]>
 
 **现代验证**:
 
 - 佩雷尔曼证明庞加莱猜想 (2003)
   - arXiv: <https://arxiv.org/abs/math/0211159>
-  - Clay官方确认: <https://www.claymath.org/poincare-conjecture>
+  - Clay官方确认: <https://www.claymath.org/poincare-conjecture[需更新]>
 - 混沌理论文献: Strogatz *Nonlinear Dynamics and Chaos* (2015)
 
 **教育资源**:
@@ -166,7 +166,7 @@ processed_at: '2026-04-05'
 #### 哲学与科学史
 
 - Internet Encyclopedia of Philosophy: Poincaré
-  - <https://iep.utm.edu/poincare/>
+  - <https://iep.utm.edu/poincare/[需更新]>
 - 拓扑学历史: Dieudonné *A History of Algebraic and Differential Topology*
 
 ---
@@ -178,7 +178,7 @@ processed_at: '2026-04-05'
 **核心文献在线版本**:
 
 - 📚 **Éléments de géométrie algébrique (EGA) I-IV (1960-1967)**
-  - Numdam免费版: <http://www.numdam.org/numdam-bin/recherche?au=Grothendieck>
+  - Numdam免费版: <http://www.numdam.org/numdam-bin/recherche?au=Grothendieck[需更新]>
   - Springer官方版: EGA I-IV完整版
 
 - 📚 **Séminaire de Géométrie Algébrique (SGA) 1-7**
@@ -186,11 +186,11 @@ processed_at: '2026-04-05'
   - 官方再版: Springer/SMF完整版
 
 - 📚 **Récoltes et Semailles (1985-1986)**
-  - 法文原版PDF: <https://agrothendieck.github.io/>
-  - 英文翻译进行中: <https://www.grothendieckcircle.org/>
+  - 法文原版PDF: <https://agrothendieck.github.io/[需更新]>
+  - 英文翻译进行中: <https://www.grothendieckcircle.org/[需更新]>
 
 - 📚 **Pursuing Stacks (1983)**
-  - 完整打字稿: <https://thescrivener.github.io/PursuingStacks/>
+  - 完整打字稿: <https://thescrivener.github.io/PursuingStacks/[需更新]>
 
 **学术数据库**:
 
@@ -201,16 +201,16 @@ processed_at: '2026-04-05'
 **权威研究**:
 
 - Scharlau: *Who is Alexander Grothendieck?* (3卷)
-  - 免费下载: <https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/>
+  - 免费下载: <https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/[需更新]>
 - Cartier等: *The Grothendieck Festschrift* (3卷, Birkhäuser)
 
 **现代实现**:
 
 - Lurie: *Higher Topos Theory* (2009)
-  - 免费版: <https://www.math.ias.edu/~lurie/papers/HTT.pdf>
+  - 免费版: <https://www.math.ias.edu/~lurie/papers/HTT.pdf[需更新]>
 - Scholze: *Lectures on Condensed Mathematics* (2019)
   - arXiv: <https://arxiv.org/abs/1909.06791>
-- Lean形式化项目: <https://leanprover-community.github.io/>
+- Lean形式化项目: <https://leanprover-community.github.io/[需更新]>
 
 **教育资源**:
 
@@ -220,9 +220,9 @@ processed_at: '2026-04-05'
 
 #### 专门网站
 
-- Grothendieck Circle: <https://www.grothendieckcircle.org/>
+- Grothendieck Circle: <https://www.grothendieckcircle.org/[需更新]>
   - 包含所有未发表手稿、通信集
-- Stacks Project: <https://stacks.math.columbia.edu/>
+- Stacks Project: <https://stacks.math.columbia.edu/[需更新]>
   - EGA/SGA的现代化重写
 
 **形变理论专项对齐**：代数几何形变理论与网络权威信息的对照、批判性意见及分层推进计划见
@@ -237,11 +237,11 @@ processed_at: '2026-04-05'
 #### 核心资源
 
 - **Disquisitiones Arithmeticae (1801)**:
-  - Latin原版: <https://archive.org/details/disquisitionesa00gausgoog>
+  - Latin原版: <https://archive.org/details/disquisitionesa00gausgoog[需更新]>
   - 英文翻译: Yale U Press (Clarke, 1966)
 - **General Investigations of Curved Surfaces (1827)**:
   - 英文版: Dover *General Investigations...*
-- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Gauss.html>
+- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Gauss.html[需更新]>
 
 #### 现代研究
 
@@ -258,7 +258,7 @@ processed_at: '2026-04-05'
   - Mathematische Annalen原版: SpringerLink
 - **Noether's Theorem (1915)**:
   - 物理学应用: *Transport Theory and Statistical Physics* (1971)
-- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Noether_Emmy.html>
+- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Noether_Emmy.html[需更新]>
 
 #### 现代研究
 
@@ -274,8 +274,8 @@ processed_at: '2026-04-05'
 - **Contributions to the Founding of the Theory of Transfinite Numbers (1915)**:
   - Dover再版: 免费预览Google Books
 - **On Infinite Linear Point-Manifolds (1879-1884)**:
-  - 德文原版: <https://www.digizeitschriften.de/>
-- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Cantor.html>
+  - 德文原版: <https://www.digizeitschriften.de/[需更新]>
+- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Cantor.html[需更新]>
 
 #### 现代研究
 
@@ -292,13 +292,13 @@ processed_at: '2026-04-05'
   - Bulletin AMS原版: <https://www.ams.org/journals/bull/>
 - **On the Foundations of Mathematics (1907)**:
   - 英文翻译: *Collected Works* Vol. 1
-- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Brouwer.html>
+- MacTutor: <http://mathshistory.st-andrews.ac.uk/Biographies/Brouwer.html[需更新]>
 
 #### 现代研究
 
 - van Dalen: *L.E.J. Brouwer: Topologist, Intuitionist, Philosopher* (2013)
 - 斯坦福哲学百科: "Brouwer's Intuitionism"
-  - <https://plato.stanford.edu/entries/brouwer/>
+  - <https://plato.stanford.edu/entries/brouwer/[需更新]>
 
 ---
 
@@ -309,14 +309,14 @@ processed_at: '2026-04-05'
 #### 核心资源
 
 - **FAC (1955)**: *Faisceaux algébriques cohérents*
-  - Annales ENS: <http://www.numdam.org/>
+  - Annales ENS: <http://www.numdam.org/[需更新]>
 - **GAGA (1956)**: *Géométrie algébrique et géométrie analytique*
   - 英文翻译: Springer *Algebraic Geometry and Analytic Geometry*
-- Abel Prize官方页面: <https://abelprize.no/abel-prize-laureates/2003>
+- Abel Prize官方页面: <https://abelprize.no/abel-prize-laureates/2003[需更新]>
 
 #### 现代研究
 
-- Serre主页: <https://www.college-de-france.fr/site/jean-pierre-serre/>
+- Serre主页: <https://www.college-de-france.fr/site/jean-pierre-serre/[需更新]>
 - MathSciNet: 15000+引用
 
 ---
@@ -326,15 +326,15 @@ processed_at: '2026-04-05'
 #### 核心资源
 
 - **韦伊猜想I (1974)**: *La conjecture de Weil. I*
-  - Publications IHÉS: <http://www.ihes.fr/~deligne/>
+  - Publications IHÉS: <http://www.ihes.fr/~deligne/[需更新]>
 - **混合Hodge结构 (1971)**: *Théorie de Hodge*
   - Publications IHES Vol. 40
-- Abel Prize: <https://abelprize.no/abel-prize-laureates/2013>
+- Abel Prize: <https://abelprize.no/abel-prize-laureates/2013[需更新]>
 
 #### 现代研究
 
-- IAS个人主页: <https://www.ias.edu/scholars/pierre-deligne>
-- Fields Medal官方: <https://www.mathunion.org/imu-awards/fields-medal>
+- IAS个人主页: <https://www.ias.edu/scholars/pierre-deligne[需更新]>
+- Fields Medal官方: <https://www.mathunion.org/imu-awards/fields-medal[需更新]>
 
 ---
 
@@ -342,16 +342,16 @@ processed_at: '2026-04-05'
 
 **Jacob Lurie (1977-)**:
 
-- 主页: <https://www.math.ias.edu/~lurie/>
+- 主页: <https://www.math.ias.edu/~lurie/[需更新]>
 - *Higher Topos Theory*免费PDF
 - *Higher Algebra*免费PDF
 - YouTube讲座: IAS视频
 
 **Peter Scholze (1987-)**:
 
-- Bonn大学主页: <https://www.math.uni-bonn.de/people/scholze/>
+- Bonn大学主页: <https://www.math.uni-bonn.de/people/scholze/[需更新]>
 - *Condensed Mathematics*: arXiv:1909.06791
-- Fields Medal 2018: <https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2018>
+- Fields Medal 2018: <https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2018[需更新]>
 - YouTube讲座: Breakthrough Prize, ICM
 
 ---
@@ -362,14 +362,14 @@ processed_at: '2026-04-05'
 
 **广义相对论（黎曼几何应用）**:
 
-- Einstein Papers Project: <https://einsteinpapers.press.princeton.edu/>
-- Living Reviews in Relativity: <https://link.springer.com/journal/41114>
-- LIGO科学合作组织: <https://www.ligo.caltech.edu/>
+- Einstein Papers Project: <https://einsteinpapers.press.princeton.edu/[需更新]>
+- Living Reviews in Relativity: <https://link.springer.com/journal/41114[需更新]>
+- LIGO科学合作组织: <https://www.ligo.caltech.edu/[需更新]>
 
 **规范场论（克莱因对称性）**:
 
 - Yang-Mills理论: CERN文档
-- 标准模型: Particle Data Group <https://pdg.lbl.gov/>
+- 标准模型: Particle Data Group <https://pdg.lbl.gov/[需更新]>
 
 **量子力学（希尔伯特空间）**:
 
@@ -379,7 +379,7 @@ processed_at: '2026-04-05'
 **弦论（黎曼面、格洛腾迪克）**:
 
 - Polchinski: *String Theory* (Cambridge, 1998)
-- Witten在IAS的讲座: <https://www.ias.edu/video>
+- Witten在IAS的讲座: <https://www.ias.edu/video[需更新]>
 
 ---
 
@@ -387,19 +387,19 @@ processed_at: '2026-04-05'
 
 **形式化验证（希尔伯特遗产）**:
 
-- Lean Community: <https://leanprover-community.github.io/>
-- Coq官方: <https://coq.inria.fr/>
-- Isabelle/HOL: <https://isabelle.in.tum.de/>
+- Lean Community: <https://leanprover-community.github.io/[需更新]>
+- Coq官方: <https://coq.inria.fr/[需更新]>
+- Isabelle/HOL: <https://isabelle.in.tum.de/[需更新]>
 
 **类型论（格洛腾迪克范畴论）**:
 
-- HoTT Book免费版: <https://homotopytypetheory.org/book/>
+- HoTT Book免费版: <https://homotopytypetheory.org/book/[需更新]>
 - nLab: <https://ncatlab.org/nlab/show/homotopy+type+theory>
 
 **算法复杂性（庞加莱不可判定性）**:
 
-- Complexity Zoo: <https://complexityzoo.net/>
-- SODA/STOC会议论文: <https://dl.acm.org/>
+- Complexity Zoo: <https://complexityzoo.net/[需更新]>
+- SODA/STOC会议论文: <https://dl.acm.org/[需更新]>
 
 ---
 
@@ -413,9 +413,9 @@ processed_at: '2026-04-05'
 
 **可视化工具**:
 
-- GeoGebra: <https://www.geogebra.org/>
-- Desmos: <https://www.desmos.com/>
-- Mathematica Demonstrations: <https://demonstrations.wolfram.com/>
+- GeoGebra: <https://www.geogebra.org/[需更新]>
+- Desmos: <https://www.desmos.com/[需更新]>
+- Mathematica Demonstrations: <https://demonstrations.wolfram.com/[需更新]>
 
 **互动学习**:
 
@@ -429,13 +429,13 @@ processed_at: '2026-04-05'
 
 ### 学术文献管理
 
-- **Zotero** (开源): <https://www.zotero.org/>
+- **Zotero** (开源): <https://www.zotero.org/[需更新]>
   - 浏览器插件自动抓取文献
   - 支持Markdown输出
-- **Mendeley**: <https://www.mendeley.com/>
+- **Mendeley**: <https://www.mendeley.com/[需更新]>
   - 内置PDF阅读器
   - 学术社交网络
-- **Google Scholar**: <https://scholar.google.com/>
+- **Google Scholar**: <https://scholar.google.com/[需更新]>
   - 引用追踪
   - 自动提醒新文献
 
@@ -444,7 +444,7 @@ processed_at: '2026-04-05'
 - **MathSciNet** (需订阅): <https://mathscinet.ams.org/>
   - 最权威数学评论数据库
   - 大学图书馆通常有访问权限
-- **zbMATH Open** (免费): <https://zbmath.org/>
+- **zbMATH Open** (免费): <https://zbmath.org/[需更新]>
   - 德国数学文献数据库
   - 2021年开放免费访问
 - **arXiv** (免费): <https://arxiv.org/archive/math>

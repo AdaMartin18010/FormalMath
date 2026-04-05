@@ -15,19 +15,19 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+- [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
   - [1.1 完美胚环](#11-完美胚环)
   - [1.2 完美胚空间的定义](#12-完美胚空间的定义)
   - [1.3 tilting等价](#13-tilting等价)
-- [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+- [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
   - [2.1 钻石理论](#21-钻石理论)
   - [2.2 与adic空间的联系](#22-与adic空间的联系)
   - [2.3 棱镜上同调](#23-棱镜上同调)
-- [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+- [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
   - [3.1 Fargues-Fontaine曲线](#31-fargues-fontaine曲线)
   - [3.2 几何Langlands的几何化](#32-几何langlands的几何化)
   - [3.3 完美胚空间的计算应用](#33-完美胚空间的计算应用)
-- [4. 参考文献 / References](#4-参考文献--references)
+- [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 

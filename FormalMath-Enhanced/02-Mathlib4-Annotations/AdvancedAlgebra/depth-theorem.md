@@ -101,9 +101,9 @@ $R$ 是正则局部环，维数为3。$x, y, z$ 构成正则序列：
 ## 相关概念
 
 - [Cohen-Macaulay环](./cohen-macaulay-ring.md)：深度等于维数的环
-- [投射维数](./projective-dimension.md)：Auslander-Buchsbaum公式的组成部分
-- [正则序列](./regular-sequence.md)：深度的构造工具
-- [局部上同调](./local-cohomology.md)：深度的另一种刻画
+- 投射维数：Auslander-Buchsbaum公式的组成部分
+- 正则序列：深度的构造工具
+- 局部上同调：深度的另一种刻画
 - [Krull维数](./krull-dimension.md)：与深度的基本不等式
 
 ## 参考
@@ -121,7 +121,7 @@ $R$ 是正则局部环，维数为3。$x, y, z$ 构成正则序列：
 ### 在线资源
 
 - [Depth (Ring Theory) Wikipedia](https://en.wikipedia.org/wiki/Depth_(ring_theory))
-- [Stacks Project - Depth](https://stacks.math.columbia.edu/tag/00LF)
+- [Stacks Project - Depth](https://stacks.math.columbia.edu/tag/00LF)[需更新]
 
 ---
 

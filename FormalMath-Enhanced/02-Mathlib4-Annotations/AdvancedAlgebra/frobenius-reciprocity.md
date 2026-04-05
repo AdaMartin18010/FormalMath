@@ -92,8 +92,8 @@ $$\text{Res}_K^G \text{Ind}_H^G W = \bigoplus_{g \in K \backslash G / H} \text{I
 - [Maschke定理](./maschke-theorem.md)：表示的完全可约性
 - [特征标正交性](./character-orthogonality.md)：特征标的内积理论
 - [诱导表示](./induced-representation.md)：从子群构造母群表示
-- [Mackey理论](./mackey-theory.md)：诱导与限制的交互
-- [Nakayama关系](./nakayama-relation.md)：模论版本的互反律
+- Mackey理论：诱导与限制的交互
+- Nakayama关系：模论版本的互反律
 
 ## 参考
 
@@ -110,7 +110,7 @@ $$\text{Res}_K^G \text{Ind}_H^G W = \bigoplus_{g \in K \backslash G / H} \text{I
 ### 在线资源
 
 - [Frobenius Reciprocity Wikipedia](https://en.wikipedia.org/wiki/Frobenius_reciprocity)
-- [Groupprops - Frobenius reciprocity](https://groupprops.subwiki.org/wiki/Frobenius_reciprocity)
+- [Groupprops - Frobenius reciprocity](https://groupprops.subwiki.org/wiki/Frobenius_reciprocity)[需更新]
 
 ---
 

@@ -221,7 +221,7 @@ confidence = 0.5 + (最佳类型得分 / 总得分) × 0.5
 标题: {title}
 提交时间: {created_at}
 
-查看详情: https://admin.example.com/feedback/{id}
+查看详情: https://admin.example.com/feedback/{id}[需更新]
 ```
 
 ---
@@ -308,7 +308,7 @@ import requests
 
 # 用户发现搜索功能有问题
 response = requests.post(
-    "https://api.example.com/api/v1/feedback/feedbacks",
+    "https://api.example.com/api/v1/feedback/feedbacks[需更新]",
     json={
         "title": "搜索功能无法使用",
         "content": "在搜索框输入关键词后，页面一直显示加载中",
@@ -338,7 +338,7 @@ result = response.json()
 ```python
 # 1. 获取待处理的高优先级反馈
 response = requests.get(
-    "https://api.example.com/api/v1/feedback/feedbacks",
+    "https://api.example.com/api/v1/feedback/feedbacks[需更新]",
     params={
         "status": "pending",
         "priority": "high",
@@ -348,12 +348,12 @@ response = requests.get(
 
 # 2. 查看反馈详情
 detail = requests.get(
-    "https://api.example.com/api/v1/feedback/feedbacks/123"
+    "https://api.example.com/api/v1/feedback/feedbacks/123[需更新]"
 ).json()
 
 # 3. 分配给开发人员处理
 requests.put(
-    "https://api.example.com/api/v1/feedback/feedbacks/123",
+    "https://api.example.com/api/v1/feedback/feedbacks/123[需更新]",
     json={
         "status": "in_progress",
         "assigned_to": 5,  # 开发人员ID
@@ -363,7 +363,7 @@ requests.put(
 
 # 4. 添加回复通知用户
 requests.post(
-    "https://api.example.com/api/v1/feedback/feedbacks/123/responses",
+    "https://api.example.com/api/v1/feedback/feedbacks/123/responses[需更新]",
     json={
         "content": "感谢您的反馈，问题已修复，请刷新页面重试",
         "responder_id": 5,
@@ -373,7 +373,7 @@ requests.post(
 
 # 5. 标记已解决
 requests.put(
-    "https://api.example.com/api/v1/feedback/feedbacks/123",
+    "https://api.example.com/api/v1/feedback/feedbacks/123[需更新]",
     json={
         "status": "resolved",
         "resolution_notes": "修复了搜索API的超时问题"
@@ -386,18 +386,18 @@ requests.put(
 ```python
 # 获取仪表板摘要
 dashboard = requests.get(
-    "https://api.example.com/api/v1/feedback/dashboard/summary"
+    "https://api.example.com/api/v1/feedback/dashboard/summary[需更新]"
 ).json()
 
 # 获取本周趋势
 trends = requests.get(
-    "https://api.example.com/api/v1/feedback/trends",
+    "https://api.example.com/api/v1/feedback/trends[需更新]",
     params={"days": 7, "group_by": "day"}
 ).json()
 
 # 获取月度统计
 stats = requests.get(
-    "https://api.example.com/api/v1/feedback/statistics",
+    "https://api.example.com/api/v1/feedback/statistics[需更新]",
     params={"days": 30}
 ).json()
 ```

@@ -117,11 +117,11 @@ $n_2 = 3$（验证：$3 \equiv 1 \pmod{2}$ 且 $3 \mid 3$）。
 
 ## 相关概念
 
-- [西罗 $p$-子群 (Sylow p-Subgroup)](./sylow-p-subgroup.md)：最大 $p$-子群
-- [$p$-群 (p-Group)](./p-group.md)：阶为素数幂的群
-- [共轭类 (Conjugacy Class)](./conjugacy-class.md)：共轭元素的集合
-- [正规化子 (Normalizer)](./normalizer.md)：保持子群不变的元素
-- [群作用 (Group Action)](./group-action.md)：群在集合上的作用
+- 西罗 $p$-子群 (Sylow p-Subgroup)：最大 $p$-子群
+- $p$-群 (p-Group)：阶为素数幂的群
+- 共轭类 (Conjugacy Class)：共轭元素的集合
+- 正规化子 (Normalizer)：保持子群不变的元素
+- 群作用 (Group Action)：群在集合上的作用
 
 ## 参考
 
@@ -136,7 +136,7 @@ $n_2 = 3$（验证：$3 \equiv 1 \pmod{2}$ 且 $3 \mid 3$）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Sylow](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Sylow.html)
+- [Mathlib4 文档 - Sylow](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Sylow.html)[需更新]
 
 ---
 

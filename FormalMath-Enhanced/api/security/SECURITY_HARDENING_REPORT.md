@@ -67,8 +67,8 @@ add_header Strict-Transport-Security "max-age=63072000; includeSubDomains; prelo
 ```python
 # 生产环境推荐配置
 PRODUCTION_ORIGINS = [
-    "https://formalmath.example.com",
-    "https://app.formalmath.example.com",
+    "https://formalmath.example.com[需更新]",
+    "https://app.formalmath.example.com[需更新]",
 ]
 ALLOWED_METHODS = ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
 ALLOWED_HEADERS = [
@@ -269,7 +269,7 @@ docker-compose -f docker-compose.security.yml up -d
 1. **环境变量配置** (`.env`):
 ```env
 DEBUG=false
-CORS_ORIGINS=["https://yourdomain.com"]
+CORS_ORIGINS=["https://yourdomain.com[需更新]"]
 REDIS_PASSWORD=your_secure_password
 DATABASE_URL=postgresql://user:pass@localhost/db
 ```
@@ -355,9 +355,9 @@ api/
 
 ### 9.2 参考文档
 
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- [FastAPI Security](https://fastapi.tiangolo.com/tutorial/security/)
-- [Mozilla Web Security Guidelines](https://infosec.mozilla.org/guidelines/web_security)
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)[需更新]
+- [FastAPI Security](https://fastapi.tiangolo.com/tutorial/security/)[需更新]
+- [Mozilla Web Security Guidelines](https://infosec.mozilla.org/guidelines/web_security)[需更新]
 
 ---
 

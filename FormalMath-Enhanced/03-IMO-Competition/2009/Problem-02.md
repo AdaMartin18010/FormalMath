@@ -104,7 +104,7 @@ $\angle CAB = 60°$ 或 $90°$。
 - **等腰三角形** - 两边相等的三角形性质
 - **内心** - 三条角平分线的交点
 - **角平分线定理** - 角平分线分对边的比例
-- [三角形几何](../../concept/geometry/triangle-basics.md)
+- 三角形几何
 
 ## 变体问题
 
@@ -115,5 +115,5 @@ $\angle CAB = 60°$ 或 $90°$。
 求使 $\angle BEK = 30°$ 的 $\alpha$ 值。
 
 ## 参考资源
-- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289114p1558436)
+- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289114p1558436)[需更新]

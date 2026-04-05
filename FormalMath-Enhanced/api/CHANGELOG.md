@@ -7,7 +7,7 @@ processed_at: '2026-04-05'
 
 所有重要的变更都记录在此文件中。
 
-格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
+格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)[需更新]，版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)[需更新]。
 
 ---
 
@@ -376,7 +376,7 @@ processed_at: '2026-04-05'
 3. 更新错误处理逻辑
 4. 测试所有集成点
 
-详细升级指南：[UPGRADE_GUIDE.md](UPGRADE_GUIDE.md)
+详细升级指南：UPGRADE_GUIDE.md
 
 ---
 
@@ -419,7 +419,7 @@ processed_at: '2026-04-05'
 
 ```markdown
 ### 新增/改进/修复/变更/废弃/移除/安全性
-- 简短描述 ([#PR编号](链接))
+- 简短描述 (#PR编号)
 ```
 
 ---
@@ -429,7 +429,7 @@ processed_at: '2026-04-05'
 - [API文档](docs/API_GUIDE.md)
 - [错误码说明](docs/ERROR_CODES.md)
 - [速率限制说明](docs/RATE_LIMIT.md)
-- [贡献指南](../CONTRIBUTING.md)
+- 贡献指南
 
 ---
 

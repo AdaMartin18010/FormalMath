@@ -123,11 +123,11 @@ $\text{Area}(M) = 2\pi(2g - 2) = -2\pi \chi(M)$。
 
 ## 相关概念
 
-- [高斯曲率 (Gaussian Curvature)](./gaussian-curvature.md)：曲面的内在曲率
-- [欧拉示性数 (Euler Characteristic)](./euler-characteristic.md)：拓扑不变量
-- [亏格 (Genus)](./genus.md)：洞的个数
-- [测地曲率 (Geodesic Curvature)](./geodesic-curvature.md)：边界的弯曲
-- [三角剖分 (Triangulation)](./triangulation.md)：曲面的分割
+- 高斯曲率 (Gaussian Curvature)：曲面的内在曲率
+- 欧拉示性数 (Euler Characteristic)：拓扑不变量
+- 亏格 (Genus)：洞的个数
+- 测地曲率 (Geodesic Curvature)：边界的弯曲
+- 三角剖分 (Triangulation)：曲面的分割
 
 ## 参考
 
@@ -143,7 +143,7 @@ $\text{Area}(M) = 2\pi(2g - 2) = -2\pi \chi(M)$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - GaussBonnet](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Curvature/GaussBonnet.html)
+- [Mathlib4 文档 - GaussBonnet](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Curvature/GaussBonnet.html)[需更新]
 - [Wikipedia - Gauss-Bonnet Theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Bonnet_theorem)
 
 ---

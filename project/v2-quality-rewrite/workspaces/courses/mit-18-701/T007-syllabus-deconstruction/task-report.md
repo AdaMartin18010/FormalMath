@@ -27,7 +27,7 @@ processed_at: '2026-04-05'
    - Table of contents confirmed via multiple sources (Pearson preview, solution sites, bookstores) showing 18.701 covers Chapters 1–9.
 
 3. **Supplementary Lecture Notes**
-   - Stanford student notes (Fall 2018): https://web.stanford.edu/~lindrew/18.701.pdf — provided detailed theorem/definition coverage for sessions on group actions, conjugation, isometries, class equation.
+   - Stanford student notes (Fall 2018): https://web.stanford.edu/~lindrew/18.701.pdf[需更新] — provided detailed theorem/definition coverage for sessions on group actions, conjugation, isometries, class equation.
    - MIT RES.18-011 Fall 2021 lecture notes (Jakin Ng et al.): confirmed topic ordering and key examples (e.g., GL_n, Pauli matrices, SU_2 double cover).
 
 4. **FormalMath Project Docs**

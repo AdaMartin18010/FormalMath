@@ -100,9 +100,9 @@ $$\text{End}_{\mathbb{C}[S_3]}(V) \cong \mathbb{C}$$
 
 - [Maschke定理](./maschke-theorem.md)：表示的完全可约性
 - [特征标正交性](./character-orthogonality.md)：依赖Schur引理
-- [Jacobson密度定理](./jacobson-density.md)：Schur引理的推广
-- [Brauer群](./brauer-group.md)：中心单代数的分类
-- [Morita等价](./morita-equivalence.md)：基于Schur引理的等价理论
+- Jacobson密度定理：Schur引理的推广
+- Brauer群：中心单代数的分类
+- Morita等价：基于Schur引理的等价理论
 
 ## 参考
 

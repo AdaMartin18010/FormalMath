@@ -12,7 +12,7 @@ processed_at: '2026-04-05'
 - [数系与ZFC公理体系映射关系论证 - 国际标准版](#数系与zfc公理体系映射关系论证---国际标准版)
   - [目录](#目录)
   - [Number Systems and ZFC Axiom System Mapping Relationship Argumentation - International Standard Version](#number-systems-and-zfc-axiom-system-mapping-relationship-argumentation---international-standard-version)
-  - [📚 概述 / Overview](#概述)
+  - 📚 概述 / Overview
   - [🏗️ 1. ZFC公理体系基础 / ZFC Axiom System Foundation](#1-zfc公理体系基础-zfc-axiom-system-foundation)
     - [1.1 ZFC公理系统 / ZFC Axiom System](#11-zfc公理系统-zfc-axiom-system)
     - [1.2 集合论基本概念 / Basic Set Theory Concepts](#12-集合论基本概念-basic-set-theory-concepts)

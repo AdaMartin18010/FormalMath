@@ -93,10 +93,10 @@ $$P = \sum_{k=0}^n (-1)^k \binom{n}{k} \left(1 - \frac{k}{n}\right)^n$$
 
 ## 相关概念
 
-- [Möbius反演](./mobius-inversion.md)：偏序集上的反演技术
-- [生成函数](./generating-function.md)：计数的代数方法
-- [错位排列](./derangement.md)：无不动点排列
-- [Euler's totient函数](./euler-totient.md)：数论函数
+- Möbius反演：偏序集上的反演技术
+- 生成函数：计数的代数方法
+- 错位排列：无不动点排列
+- Euler's totient函数：数论函数
 
 ## 参考
 
@@ -107,7 +107,7 @@ $$P = \sum_{k=0}^n (-1)^k \binom{n}{k} \left(1 - \frac{k}{n}\right)^n$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Inclusion Exclusion](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/InclusionExclusion.html)
+- [Mathlib4 文档 - Inclusion Exclusion](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/InclusionExclusion.html)[需更新]
 
 ---
 

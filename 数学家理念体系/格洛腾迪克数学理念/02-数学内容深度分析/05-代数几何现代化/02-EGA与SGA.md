@@ -16,20 +16,20 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [EGA与SGA：格洛腾迪克的经典著作](#ega与sga格洛腾迪克的经典著作)
-  - [📋 目录](../../README.md#目录)
-  - [一、Éléments de géométrie algébrique (EGA)](#一éléments-de-géométrie-algébrique-ega)
+  - [📋 目录](../../README.md)
+  - 一、Éléments de géométrie algébrique (EGA)
     - [1.1 EGA的历史背景与地位](#11-ega的历史背景与地位)
     - [1.2 EGA I：概形语言与基本定义](#12-ega-i概形语言与基本定义)
     - [1.3 EGA II：概形的局部研究与相对概形](#13-ega-ii概形的局部研究与相对概形)
     - [1.4 EGA III：上同调研究与凝聚层](#14-ega-iii上同调研究与凝聚层)
     - [1.5 EGA IV：概形的局部性质](#15-ega-iv概形的局部性质)
-  - [二、Séminaire de géométrie algébrique (SGA)](#二séminaire-de-géométrie-algébrique-sga)
+  - 二、Séminaire de géométrie algébrique (SGA)
     - [2.1 SGA的历史背景与地位](#21-sga的历史背景与地位)
     - [2.2 SGA 1：覆盖与基本群](#22-sga-1覆盖与基本群)
     - [2.3 SGA 2：凝聚层的局部上同调](#23-sga-2凝聚层的局部上同调)
     - [2.4 SGA 3：群概形](#24-sga-3群概形)
-    - [2.5 SGA 4：Topos理论与étale上同调](#25-sga-4topos理论与étale上同调)
-    - [2.6 SGA 5：ℓ进上同调与L函数](#26-sga-5ℓ进上同调与l函数)
+    - 2.5 SGA 4：Topos理论与étale上同调
+    - 2.6 SGA 5：ℓ进上同调与L函数
     - [2.7 SGA 6：相交理论与Riemann-Roch定理](#27-sga-6相交理论与riemann-roch定理)
     - [2.8 SGA 7：单值化群](#28-sga-7单值化群)
   - [三、EGA与SGA的历史意义](#三ega与sga的历史意义)
@@ -44,7 +44,7 @@ processed_at: '2026-04-05'
     - [5.1 对代数几何的影响](#51-对代数几何的影响)
     - [5.2 对数论几何的影响](#52-对数论几何的影响)
     - [5.3 对其他领域的影响](#53-对其他领域的影响)
-  - [六、Récoltes et Semailles：格洛腾迪克的反思](#六récoltes-et-semailles格洛腾迪克的反思)
+  - 六、Récoltes et Semailles：格洛腾迪克的反思
     - [6.1 自传体反思](#61-自传体反思)
     - [6.2 数学哲学与方法论](#62-数学哲学与方法论)
   - [七、现代发展与后续研究](#七现代发展与后续研究)

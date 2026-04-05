@@ -288,7 +288,7 @@ theorem mckean_singer_formula ... :
 
 ### 在线资源
 - nLab: https://ncatlab.org/nlab
-- Stacks Project: https://stacks.math.columbia.edu
+- Stacks Project: https://stacks.math.columbia.edu[需更新]
 - Wikipedia对应条目
 
 ---

@@ -20,7 +20,7 @@ processed_at: '2026-04-05'
 - [ZFC公理体系完整形式化 - 第一部分：基础公理系统](#zfc公理体系完整形式化---第一部分基础公理系统)
   - [目录](#目录)
   - [📚 概述](#概述)
-  - [🏗️ ZFC公理系统完整形式化](#️-zfc公理系统完整形式化)
+  - 🏗️ ZFC公理系统完整形式化
     - [1. 形式化语言定义](#1-形式化语言定义)
       - [1.1 一阶逻辑语言](#11-一阶逻辑语言)
       - [1.2 公式的递归定义](#12-公式的递归定义)
@@ -47,16 +47,16 @@ processed_at: '2026-04-05'
       - [5.3 在计算机科学中的应用](#53-在计算机科学中的应用)
       - [5.4 在哲学中的应用](#54-在哲学中的应用)
     - [6. 结论](#6-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
+  - 💻 Lean4形式化实现 / Lean4 Formal Implementation
     - [ZFC公理系统形式化](#zfc公理系统形式化)
     - [基本定理形式化](#基本定理形式化)
     - [应用案例：ZFC公理体系在类型理论中的应用](#应用案例zfc公理体系在类型理论中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表)
-  - [参考文献 / References](#参考文献--references)
-    - [经典教材 / Classic Textbooks](#经典教材--classic-textbooks)
-    - [现代教材 / Modern Textbooks](#现代教材--modern-textbooks)
-    - [前沿文献 / Frontier Literature](#前沿文献--frontier-literature)
-    - [在线资源 / Online Resources](#在线资源--online-resources)
+  - 术语对照表 / Terminology Table
+  - 参考文献 / References
+    - 经典教材 / Classic Textbooks
+    - 现代教材 / Modern Textbooks
+    - 前沿文献 / Frontier Literature
+    - 在线资源 / Online Resources
 
 ## 📚 概述
 

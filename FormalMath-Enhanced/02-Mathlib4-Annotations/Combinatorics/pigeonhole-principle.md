@@ -91,8 +91,8 @@ end PigeonholePrinciple
 
 - [Ramsey定理](./ramsey-theorem.md)：鸽巢原理的图论推广
 - [Erdős–Szekeres定理](./erdos-szekeres-theorem.md)：单调子序列存在性
-- [Dirichlet逼近定理](../NumberTheory/dirichlet-approximation.md)：数论应用
-- [Erdős–Ginzburg–Ziv定理](./erdos-ginzburg-ziv-theorem.md)：零和子序列
+- Dirichlet逼近定理：数论应用
+- Erdős–Ginzburg–Ziv定理：零和子序列
 
 ## 参考
 
@@ -103,7 +103,7 @@ end PigeonholePrinciple
 
 ### 在线资源
 
-- [Mathlib4 文档 - Pigeonhole](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Pigeonhole.html)
+- [Mathlib4 文档 - Pigeonhole](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Pigeonhole.html)[需更新]
 
 ---
 

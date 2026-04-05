@@ -39,8 +39,8 @@ title: IMO 2013 Problem 03
 
 ## 参考资源
 
-- [IMO官方解答](https://www.imo-official.org/problems/IMO2013SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h)
+- [IMO官方解答](https://www.imo-official.org/problems/IMO2013SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h)[需更新]
 
 ---
 

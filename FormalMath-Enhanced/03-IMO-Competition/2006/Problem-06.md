@@ -88,10 +88,10 @@ $$\sqrt{a+b-c} = \sqrt{2a - (a+b+c) + 2b + 2c - 2b - 2c + a+b-c}...$$
 
 ### 与FormalMath主项目的链接
 
-- [三角形不等式](../../concept/algebra/triangle-inequalities.md)
-- [Ravi代换](../../concept/algebra/ravi-substitution.md)
-- [Jensen不等式](../../concept/algebra/jensen-inequality.md)
-- [凸函数与凹函数](../../concept/analysis/convex-functions.md)
+- 三角形不等式
+- Ravi代换
+- Jensen不等式
+- 凸函数与凹函数
 
 ## 变体与推广
 
@@ -110,8 +110,8 @@ $$(a+b-c)^p + (b+c-a)^p + (c+a-b)^p \leq a^p + b^p + c^p$$
 
 ## 参考
 
-- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101493p572827)
+- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101493p572827)[需更新]
 - 相关技巧：Ravi代换、三角形边长不等式
 
 ---

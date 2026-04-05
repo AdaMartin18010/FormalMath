@@ -533,14 +533,14 @@ class ProofSuggestionService:
 
 ### 技术参考
 
-- [MLOps最佳实践](https://ml-ops.org/)
-- [LLM应用架构指南](https://www.promptingguide.ai/)
+- [MLOps最佳实践](https://ml-ops.org/)[需更新]
+- [LLM应用架构指南](https://www.promptingguide.ai/)[需更新]
 - [Lean 4系统架构](https://lean-lang.org/lean4/doc/dev/)
 
 ### 项目管理
 
-- [敏捷开发指南](https://www.agilealliance.org/)
-- [技术路线图模板](https://www.productplan.com/)
+- [敏捷开发指南](https://www.agilealliance.org/)[需更新]
+- [技术路线图模板](https://www.productplan.com/)[需更新]
 
 ---
 

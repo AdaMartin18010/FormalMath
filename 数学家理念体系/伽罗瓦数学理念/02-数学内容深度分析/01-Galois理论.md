@@ -19,7 +19,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Galois理论：代数方程的群论解决](#galois理论代数方程的群论解决)
-  - [📋 目录](../README.md#目录)
+  - [📋 目录](../README.md)
   - [摘要](#摘要)
   - [一、引言：Galois的传奇人生](#一引言galois的传奇人生)
   - [二、Galois对应](#二galois对应)

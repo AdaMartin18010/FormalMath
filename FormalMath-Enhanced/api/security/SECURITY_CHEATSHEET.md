@@ -23,7 +23,7 @@ openssl x509 -in /etc/ssl/certs/formalmath.crt -noout -dates
 python security/security_scanner.py . --format text
 
 # 5. 测试HTTPS
-curl -I https://api.yourdomain.com/health
+curl -I https://api.yourdomain.com/health[需更新]
 ```
 
 ## 常用命令
@@ -113,7 +113,7 @@ docker logs formalmath_api | grep "blocked"
 
 ```bash
 # 检查CORS配置
-curl -H "Origin: https://example.com" -I https://api.yourdomain.com/
+curl -H "Origin: https://example.com[需更新]" -I https://api.yourdomain.com/[需更新]
 
 # 查看响应头中的CORS信息
 ```

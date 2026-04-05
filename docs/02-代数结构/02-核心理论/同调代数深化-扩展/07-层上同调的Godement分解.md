@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [15.7 层上同调的Godement分解 / Godement Resolution in Sheaf Cohomology](#157-层上同调的godement分解-godement-resolution-in-sheaf-cohomology)
-  - [目录 / Table of Contents](#目录)
+  - 目录 / Table of Contents
   - [15.7.1 引言 / Introduction](#1571-引言-introduction)
   - [15.7.2 松软层与内射层 / Flabby and Injective Sheaves](#1572-松软层与内射层-flabby-and-injective-sheaves)
     - [松软层的定义与性质 / Definition and Properties of Flabby Sheaves](#松软层的定义与性质-definition-and-properties-of-flabby-sheaves)
@@ -296,13 +296,13 @@ $$
 ### 在线资源 / Online Resources
 
 5. **Stacks Project**, Tag 01D9 — Flabby Sheaves, Chapter 20.
-   - `https://stacks.math.columbia.edu/tag/01D9`
+   - `https://stacks.math.columbia.edu/tag/01D9[需更新[需更新]]`
 
 6. **Stacks Project**, Tag 01DF — Godement Resolution, Chapter 20.
-   - `https://stacks.math.columbia.edu/tag/01DF`
+   - `https://stacks.math.columbia.edu/tag/01DF[需更新[需更新]]`
 
 7. **Stacks Project**, Tag 01E1 — Cohomology of Sheaves as Derived Functors.
-   - `https://stacks.math.columbia.edu/tag/01E1`
+   - `https://stacks.math.columbia.edu/tag/01E1[需更新[需更新]]`
 
 ### 中文参考 / Chinese References
 

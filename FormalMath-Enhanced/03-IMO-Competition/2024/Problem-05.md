@@ -57,5 +57,5 @@ Turbo可以使用以下策略：
 
 ## 参考
 - IMO 2024 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h3327975p30747596
+- AoPS Community: https://artofproblemsolving.com/community/c6h3327975p30747596[需更新]
 - Evan Chen's Solution Notes

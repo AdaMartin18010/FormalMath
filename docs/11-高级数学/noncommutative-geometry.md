@@ -8,32 +8,32 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [非交换几何深度版 / Noncommutative Geometry - In Depth](#非交换几何深度版--noncommutative-geometry---in-depth)
+- 非交换几何深度版 / Noncommutative Geometry - In Depth
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
-    - [1.1 空间的代数重构 / Algebraic Reconstruction of Space](#11-空间的代数重构--algebraic-reconstruction-of-space)
-    - [1.2 循环同调与上同调 / Cyclic Homology and Cohomology](#12-循环同调与上同调--cyclic-homology-and-cohomology)
-    - [1.3 谱三元组与度量结构 / Spectral Triples and Metric Structure](#13-谱三元组与度量结构--spectral-triples-and-metric-structure)
-    - [1.4 量子群与形变 / Quantum Groups and Deformations](#14-量子群与形变--quantum-groups-and-deformations)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
-    - [2.1 导出非交换几何 / Derived Noncommutative Geometry](#21-导出非交换几何--derived-noncommutative-geometry)
-    - [2.2 非交换动机理论 / Noncommutative Motives](#22-非交换动机理论--noncommutative-motives)
-    - [2.3 非交换Hodge理论 / Noncommutative Hodge Theory](#23-非交换hodge理论--noncommutative-hodge-theory)
-    - [2.4 非交换辛几何 / Noncommutative Symplectic Geometry](#24-非交换辛几何--noncommutative-symplectic-geometry)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
-    - [3.1 非交换解析几何 / Noncommutative Analytic Geometry](#31-非交换解析几何--noncommutative-analytic-geometry)
-    - [3.2 非交换算术几何 / Noncommutative Arithmetic Geometry](#32-非交换算术几何--noncommutative-arithmetic-geometry)
-    - [3.3 粗糙几何与指标理论 / Coarse Geometry and Index Theory](#33-粗糙几何与指标理论--coarse-geometry-and-index-theory)
-    - [3.4 KK-理论与双变量K-理论 / KK-Theory and Bivariant K-Theory](#34-kk-理论与双变量k-理论--kk-theory-and-bivariant-k-theory)
-  - [4. 应用前沿 / Frontier Applications](#4-应用前沿--frontier-applications)
-    - [4.1 粒子物理的标准模型 / Standard Model of Particle Physics](#41-粒子物理的标准模型--standard-model-of-particle-physics)
-    - [4.2 量子霍尔效应与拓扑材料 / Quantum Hall Effect and Topological Materials](#42-量子霍尔效应与拓扑材料--quantum-hall-effect-and-topological-materials)
-    - [4.3 信息几何与熵 / Information Geometry and Entropy](#43-信息几何与熵--information-geometry-and-entropy)
-  - [5. 参考文献 / References](#5-参考文献--references)
-    - [5.1 奠基性著作 / Foundational Works](#51-奠基性著作--foundational-works)
-    - [5.2 现代专著 / Modern Monographs](#52-现代专著--modern-monographs)
-    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文--frontier-research-papers)
-    - [5.4 在线资源 / Online Resources](#54-在线资源--online-resources)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
+    - [1.1 空间的代数重构 / Algebraic Reconstruction of Space](#11-空间的代数重构-algebraic-reconstruction-of-space)
+    - [1.2 循环同调与上同调 / Cyclic Homology and Cohomology](#12-循环同调与上同调-cyclic-homology-and-cohomology)
+    - [1.3 谱三元组与度量结构 / Spectral Triples and Metric Structure](#13-谱三元组与度量结构-spectral-triples-and-metric-structure)
+    - [1.4 量子群与形变 / Quantum Groups and Deformations](#14-量子群与形变-quantum-groups-and-deformations)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
+    - [2.1 导出非交换几何 / Derived Noncommutative Geometry](#21-导出非交换几何-derived-noncommutative-geometry)
+    - [2.2 非交换动机理论 / Noncommutative Motives](#22-非交换动机理论-noncommutative-motives)
+    - [2.3 非交换Hodge理论 / Noncommutative Hodge Theory](#23-非交换hodge理论-noncommutative-hodge-theory)
+    - [2.4 非交换辛几何 / Noncommutative Symplectic Geometry](#24-非交换辛几何-noncommutative-symplectic-geometry)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
+    - [3.1 非交换解析几何 / Noncommutative Analytic Geometry](#31-非交换解析几何-noncommutative-analytic-geometry)
+    - [3.2 非交换算术几何 / Noncommutative Arithmetic Geometry](#32-非交换算术几何-noncommutative-arithmetic-geometry)
+    - [3.3 粗糙几何与指标理论 / Coarse Geometry and Index Theory](#33-粗糙几何与指标理论-coarse-geometry-and-index-theory)
+    - [3.4 KK-理论与双变量K-理论 / KK-Theory and Bivariant K-Theory](#34-kk-理论与双变量k-理论-kk-theory-and-bivariant-k-theory)
+  - [4. 应用前沿 / Frontier Applications](#4-应用前沿-frontier-applications)
+    - [4.1 粒子物理的标准模型 / Standard Model of Particle Physics](#41-粒子物理的标准模型-standard-model-of-particle-physics)
+    - [4.2 量子霍尔效应与拓扑材料 / Quantum Hall Effect and Topological Materials](#42-量子霍尔效应与拓扑材料-quantum-hall-effect-and-topological-materials)
+    - [4.3 信息几何与熵 / Information Geometry and Entropy](#43-信息几何与熵-information-geometry-and-entropy)
+  - [5. 参考文献 / References](#5-参考文献-references)
+    - [5.1 奠基性著作 / Foundational Works](#51-奠基性著作-foundational-works)
+    - [5.2 现代专著 / Modern Monographs](#52-现代专著-modern-monographs)
+    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文-frontier-research-papers)
+    - [5.4 在线资源 / Online Resources](#54-在线资源-online-resources)
 
 ---
 
@@ -795,7 +795,7 @@ Connes和Chamseddine的观察：
 
 ### 5.4 在线资源 / Online Resources
 
-24. **Connes' Website** - http://www.alainconnes.org/
+24. **Connes' Website** - http://www.alainconnes.org/[需更新[需更新]]
     - Alain Connes的论文和讲义
 
 25. **Noncommutative Geometry Blog** - Various contributors
@@ -819,7 +819,7 @@ Connes和Chamseddine的观察：
 31. **Operator Algebras Resources** - Various university websites
     - 算子代数和C*-代数的学习资源
 
-32. **Noncommutative Geometry Network** - https://www.noncommutativegeometry.net/
+32. **Noncommutative Geometry Network** - https://www.noncommutativegeometry.net/[需更新[需更新]]
     - 非交换几何研究网络
 
 ---

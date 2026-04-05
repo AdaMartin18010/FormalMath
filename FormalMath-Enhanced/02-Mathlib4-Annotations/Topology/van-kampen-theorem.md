@@ -124,11 +124,11 @@ $\pi_1(S^2) = 0 *_{\mathbb{Z}} 0 = 0$（平凡群）。
 
 ## 相关概念
 
-- [基本群 (Fundamental Group)](./fundamental-group.md)：环路同伦类
-- [自由积 (Free Product)](./free-product.md)：群的自由并
-- [融合积 (Amalgamated Product)](./amalgamated-product.md)：带粘合的自由积
-- [道路连通 (Path Connected)](./path-connected.md)：基本群定义的前提
-- [同伦 (Homotopy)](./homotopy.md)：连续变形
+- 基本群 (Fundamental Group)：环路同伦类
+- 自由积 (Free Product)：群的自由并
+- 融合积 (Amalgamated Product)：带粘合的自由积
+- 道路连通 (Path Connected)：基本群定义的前提
+- 同伦 (Homotopy)：连续变形
 
 ## 参考
 
@@ -144,8 +144,8 @@ $\pi_1(S^2) = 0 *_{\mathbb{Z}} 0 = 0$（平凡群）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - VanKampen](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/FundamentalGroupoid/VanKampen.html)
-- [Hatcher - Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf)
+- [Mathlib4 文档 - VanKampen](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/FundamentalGroupoid/VanKampen.html)[需更新]
+- [Hatcher - Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf)[需更新]
 
 ---
 

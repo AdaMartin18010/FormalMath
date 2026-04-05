@@ -160,9 +160,9 @@ $$\boxed{(x, y, z) = (0, 0, 0)}$$
 
 ### 与FormalMath主项目的链接
 
-- [方程组求解](../../concept/algebra/system-equations.md)
-- [对称多项式](../../concept/algebra/symmetric-polynomials.md)
-- [因式分解技巧](../../concept/algebra/factorization.md)
+- 方程组求解
+- 对称多项式
+- 因式分解技巧
 
 ## 变体与推广
 
@@ -177,8 +177,8 @@ $$\boxed{(x, y, z) = (0, 0, 0)}$$
 
 ## 参考
 
-- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101491p572825)
+- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101491p572825)[需更新]
 - 相关技巧：对称多项式、结式、Gröbner基
 
 ---

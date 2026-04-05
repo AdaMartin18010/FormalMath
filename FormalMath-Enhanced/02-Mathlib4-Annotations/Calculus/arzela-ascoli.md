@@ -88,9 +88,9 @@ Arzelà-Ascoli定理告诉我们：**在紧致空间上，一致有界且"同步
 ## 相关概念
 
 - [Ascoli-Arzelà定理](./ascoli-arzela-theorem.md)：同一定理的等价表述
-- [等度连续性](./equicontinuity.md)：函数族同步变化的条件
-- [紧性 (Compactness)](./compactness.md)：拓扑空间的基本性质
-- [相对紧致](./relatively-compact.md)：闭包紧致的概念
+- 等度连续性：函数族同步变化的条件
+- 紧性 (Compactness)：拓扑空间的基本性质
+- 相对紧致：闭包紧致的概念
 
 ## 参考
 
@@ -105,7 +105,7 @@ Arzelà-Ascoli定理告诉我们：**在紧致空间上，一致有界且"同步
 
 ### 在线资源
 
-- [Mathlib4 文档 - Compactness](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactness/Compact.html)
+- [Mathlib4 文档 - Compactness](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactness/Compact.html)[需更新]
 
 ---
 

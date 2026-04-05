@@ -110,11 +110,11 @@ $\mathbb{R}^2 \setminus \{0\}$：不完备（到0的序列不收敛）。
 
 ## 相关概念
 
-- [测地完备 (Geodesically Complete)](./geodesically-complete.md)：测地线可无限延伸
-- [度量完备 (Metrically Complete)](./metrically-complete.md)：Cauchy序列收敛
-- [指数映射 (Exponential Map)](./exponential-map.md)：测地线的参数化
-- [最短测地线 (Minimizing Geodesic)](./minimizing-geodesic.md)：距离最小化曲线
-- [Arzelà-Ascoli定理 (Arzelà-Ascoli Theorem)](./arzela-ascoli-theorem.md)：函数列紧性
+- 测地完备 (Geodesically Complete)：测地线可无限延伸
+- 度量完备 (Metrically Complete)：Cauchy序列收敛
+- 指数映射 (Exponential Map)：测地线的参数化
+- 最短测地线 (Minimizing Geodesic)：距离最小化曲线
+- Arzelà-Ascoli定理 (Arzelà-Ascoli Theorem)：函数列紧性
 
 ## 参考
 
@@ -129,7 +129,7 @@ $\mathbb{R}^2 \setminus \{0\}$：不完备（到0的序列不收敛）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - HopfRinow](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/RiemannianManifold/HopfRinow.html)
+- [Mathlib4 文档 - HopfRinow](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/RiemannianManifold/HopfRinow.html)[需更新]
 - [Wikipedia - Hopf-Rinow Theorem](https://en.wikipedia.org/wiki/Hopf%E2%80%93Rinow_theorem)
 
 ---

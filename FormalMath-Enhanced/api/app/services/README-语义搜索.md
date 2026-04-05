@@ -119,7 +119,7 @@ POST /api/v1/search/save            - 保存索引
 import requests
 
 # 执行搜索
-response = requests.post("http://localhost:8000/api/v1/search/search", json={
+response = requests.post("", json={
     "query": "黎曼猜想",
     "search_type": "hybrid",
     "k": 10,
@@ -133,7 +133,7 @@ results = response.json()["data"]["results"]
 
 ```python
 # 索引单个文档
-response = requests.post("http://localhost:8000/api/v1/search/index", json={
+response = requests.post("", json={
     "doc_id": "math_001",
     "content": "黎曼猜想是关于黎曼ζ函数零点分布的猜想...",
     "metadata": {
@@ -148,7 +148,7 @@ response = requests.post("http://localhost:8000/api/v1/search/index", json={
 
 ```python
 # 搜索相似公式
-response = requests.post("http://localhost:8000/api/v1/search/formula", json={
+response = requests.post("", json={
     "latex": "\\frac{a+b}{c}",
     "k": 10,
     "match_type": "all"
@@ -161,7 +161,7 @@ formulas = response.json()["data"]["results"]
 
 ```python
 # 提问
-response = requests.post("http://localhost:8000/api/v1/search/ask", json={
+response = requests.post("", json={
     "question": "什么是黎曼猜想？",
     "use_multi_hop": True
 })

@@ -110,11 +110,11 @@ $\left(\frac{17}{13}\right) = \left(\frac{4}{13}\right) = \left(\frac{2}{13}\rig
 
 ## 相关概念
 
-- [勒让德符号 (Legendre Symbol)](./legendre-symbol.md)：二次剩余的记号
-- [雅可比符号 (Jacobi Symbol)](./jacobi-symbol.md)：勒让德符号的推广
-- [高斯和 (Gauss Sum)](./gauss-sum.md)：指数和与二次特征
-- [有限域 (Finite Field)](./finite-field.md)：$\mathbb{F}_p$ 上的二次方程
-- [代数整数 (Algebraic Integer)](./algebraic-integer.md)：二次互反律的代数数论视角
+- 勒让德符号 (Legendre Symbol)：二次剩余的记号
+- 雅可比符号 (Jacobi Symbol)：勒让德符号的推广
+- 高斯和 (Gauss Sum)：指数和与二次特征
+- 有限域 (Finite Field)：$\mathbb{F}_p$ 上的二次方程
+- 代数整数 (Algebraic Integer)：二次互反律的代数数论视角
 
 ## 参考
 
@@ -129,7 +129,7 @@ $\left(\frac{17}{13}\right) = \left(\frac{4}{13}\right) = \left(\frac{2}{13}\rig
 
 ### 在线资源
 
-- [Mathlib4 文档 - QuadraticReciprocity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.html)
+- [Mathlib4 文档 - QuadraticReciprocity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.html)[需更新]
 
 ---
 

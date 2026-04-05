@@ -107,11 +107,11 @@ $f: [0, 1] \to [0, 1]$ 连续。
 
 ## 相关概念
 
-- [紧致性 (Compactness)](./compactness.md)：拓扑空间的关键性质
-- [凸集 (Convex Set)](./convex-set.md)：包含所有连线的集合
-- [收缩映射 (Retraction)](./retraction.md)：$r: X \to A$ 满足 $r|_A = \text{id}_A$
-- [角谷不动点定理 (Kakutani Fixed-Point Theorem)](./kakutani-fixed-point.md)：集值映射版本
-- [莱夫谢茨不动点定理 (Lefschetz Fixed-Point Theorem)](./lefschetz-fixed-point.md)：代数拓扑推广
+- 紧致性 (Compactness)：拓扑空间的关键性质
+- 凸集 (Convex Set)：包含所有连线的集合
+- 收缩映射 (Retraction)：$r: X \to A$ 满足 $r|_A = \text{id}_A$
+- 角谷不动点定理 (Kakutani Fixed-Point Theorem)：集值映射版本
+- 莱夫谢茨不动点定理 (Lefschetz Fixed-Point Theorem)：代数拓扑推广
 
 ## 参考
 
@@ -126,7 +126,7 @@ $f: [0, 1] \to [0, 1]$ 连续。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Fixed Point](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/FixedPoint.html)
+- [Mathlib4 文档 - Fixed Point](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/FixedPoint.html)[需更新]
 
 ---
 

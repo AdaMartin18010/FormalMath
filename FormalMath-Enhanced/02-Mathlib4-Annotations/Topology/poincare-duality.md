@@ -109,11 +109,11 @@ $\mathbb{C}P^2$：$H_0 = H_2 = H_4 = \mathbb{Z}$。
 
 ## 相关概念
 
-- [基本类 (Fundamental Class)](./fundamental-class.md)：定向的最高维同调
-- [帽积 (Cap Product)](./cap-product.md)：同调-上同调运算
-- [杯积 (Cup Product)](./cup-product.md)：上同调的乘法
-- [相交形式 (Intersection Form)](./intersection-form.md)：中间维度的配对
-- [定向 (Orientation)](./orientation.md)：流形的一致性定向
+- 基本类 (Fundamental Class)：定向的最高维同调
+- 帽积 (Cap Product)：同调-上同调运算
+- 杯积 (Cup Product)：上同调的乘法
+- 相交形式 (Intersection Form)：中间维度的配对
+- 定向 (Orientation)：流形的一致性定向
 
 ## 参考
 
@@ -128,7 +128,7 @@ $\mathbb{C}P^2$：$H_0 = H_2 = H_4 = \mathbb{Z}$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Cohomology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/Cohomology.html)
+- [Mathlib4 文档 - Cohomology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/Cohomology.html)[需更新]
 - [Wikipedia - Poincaré Duality](https://en.wikipedia.org/wiki/Poincar%C3%A9_duality)
 
 ---

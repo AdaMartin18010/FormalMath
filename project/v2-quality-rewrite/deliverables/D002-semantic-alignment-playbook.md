@@ -21,7 +21,7 @@ processed_at: '2026-04-05'
 4. [L5 习题对齐的判定标准](#4-l5-习题对齐的判定标准)
 5. [L6 思想方法对齐的判定标准](#5-l6-思想方法对齐的判定标准)
 6. [验证签字模板](#6-验证签字模板)
-7. [完整示例：MIT 18.100A Bolzano-Weierstrass 定理](#7-完整示例mit-18100a-bolzanoweierstrass-定理)
+7. [完整示例：MIT 18.100A Bolzano-Weierstrass 定理](#完整示例mit-18100a-bolzanoweierstrass-定理)
 
 ---
 

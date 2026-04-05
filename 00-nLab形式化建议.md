@@ -689,7 +689,7 @@ jobs:
 
 ### Lean 4/Mathlib4资源
 
-1. Mathlib4文档: https://leanprover-community.github.io/mathlib4_docs/
+1. Mathlib4文档: https://leanprover-community.github.io/mathlib4_docs/[需更新]
 2. Mathlib4 GitHub: https://github.com/leanprover-community/mathlib4
 3. Theorem Proving in Lean 4: https://leanprover.github.io/theorem_proving_in_lean4/
 

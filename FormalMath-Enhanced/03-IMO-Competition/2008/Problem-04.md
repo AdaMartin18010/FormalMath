@@ -117,7 +117,7 @@ LHS = $\frac{w^{-2} + x^{-2}}{y^{-2} + z^{-2}} = \frac{\frac{w^2+x^2}{w^2x^2}}{\
 ## 相关定理与概念
 - **函数方程** - 通过代入特定值求解
 - **柯西方程** - $f(x+y) = f(x) + f(y)$ 的解
-- [函数方程基础](../../concept/algebra/functional-equations.md)
+- 函数方程基础
 
 ## 变体问题
 
@@ -128,6 +128,6 @@ LHS = $\frac{w^{-2} + x^{-2}}{y^{-2} + z^{-2}} = \frac{\frac{w^2+x^2}{w^2x^2}}{\
 求所有连续函数满足原方程。
 
 ## 参考资源
-- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216649p1191683)
+- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216649p1191683)[需更新]
 - Evan Chen's Solution Notes

@@ -25,9 +25,9 @@ msc_secondary: ['03E30', '11-XX', '68Vxx']
 ## Table of Contents
 
 - [ZFC公理体系完整形式化 - 第三部分：有理数构造](#zfc公理体系完整形式化---第三部分有理数构造)
-  - [Table of Contents](#Table of Contents)
+  - Table of Contents
   - [📚 概述](#概述)
-  - [🏗️ 有理数的构造](#️-有理数的构造)
+  - 🏗️ 有理数的构造
     - [1. 有理数的Definition](#1-有理数的Definition)
       - [1.1 有理数作为等价类](#11-有理数作为等价类)
       - [1.2 有理数的表示](#12-有理数的表示)
@@ -50,19 +50,19 @@ msc_secondary: ['03E30', '11-XX', '68Vxx']
       - [7.1 有理数的完备性](#71-有理数的完备性)
       - [7.2 有理数的Connected性](#72-有理数的Connected性)
     - [8. 有理数的应用](#8-有理数的应用)
-      - [8.1 在Number Theory中的应用](#81-在Number Theory中的应用)
+      - 8.1 在Number Theory中的应用
       - [8.2 在分析中的应用](#82-在分析中的应用)
       - [8.3 在计算机科学中的应用](#83-在计算机科学中的应用)
     - [9. 结论](#9-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
+  - 💻 Lean4形式化实现 / Lean4 Formal Implementation
     - [有理数等价关系形式化](#有理数等价关系形式化)
     - [有理数类型Definition](#有理数类型Definition)
     - [有理数运算形式化](#有理数运算形式化)
     - [有理数序关系形式化](#有理数序关系形式化)
     - [有理数Field结构形式化](#有理数Field结构形式化)
-    - [应用案例：有理数在Number Theory中的应用](#应用案例有理数在Number Theory中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表)
-  - [References / References](#References--references)
+    - 应用案例：有理数在Number Theory中的应用
+  - 术语对照表 / Terminology Table
+  - References / References
 
 ## 📚 概述
 

@@ -254,12 +254,12 @@ cd testing
 docker-compose -f docker-compose.load-test.yml up -d
 
 # 访问Locust Web界面
-open http://localhost:8089
+open 
 
 # 设置测试参数
 # - Number of users: 1000
 # - Spawn rate: 100
-# - Host: http://nginx
+# - Host: http://nginx[需更新]
 ```
 
 ---
@@ -377,7 +377,7 @@ docker-compose -f docker-compose.production.yml up -d
 cd testing && docker-compose -f docker-compose.load-test.yml up -d
 
 # 7. 监控检查
-open http://localhost:3000  # Grafana
+open   # Grafana
 ```
 
 ---

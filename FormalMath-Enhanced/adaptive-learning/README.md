@@ -114,9 +114,9 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-后端服务将在 http://localhost:8000 启动
+后端服务将在  启动
 
-API文档: http://localhost:8000/docs
+API文档: 
 
 ### 前端启动
 
@@ -130,7 +130,7 @@ npm install
 npm run dev
 ```
 
-前端服务将在 http://localhost:3000 启动
+前端服务将在  启动
 
 ## API 端点
 

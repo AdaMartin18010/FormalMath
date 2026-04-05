@@ -387,18 +387,18 @@ lake build
 
 ### Resources
 
-- 📖 [Documentation](link)
-- 🚀 [Quick Start Guide](output/release-v1.0/QUICK-START-GUIDE.md)
-- 📋 [Release Notes](output/release-v1.0/RELEASE-NOTES.md)
-- 🤝 [Contributing Guide](CONTRIBUTING.md)
+- 📖 Documentation
+- 🚀 Quick Start Guide
+- 📋 Release Notes
+- 🤝 Contributing Guide
 
 ### License
 
-MIT License - See [LICENSE](LICENSE) for details.
+MIT License - See LICENSE for details.
 
 ---
 
-**Full Changelog**: [CHANGELOG.md](CHANGELOG.md)
+**Full Changelog**: CHANGELOG.md
 ```
 
 ---

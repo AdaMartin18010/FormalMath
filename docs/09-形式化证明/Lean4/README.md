@@ -303,8 +303,8 @@ theorem detailed_proof : ... := by
 
 ### Mathlib4资源
 
-- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)
-- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)
+- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新]
+- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)[需更新][需更新]
 - [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
 
 ### 数学参考

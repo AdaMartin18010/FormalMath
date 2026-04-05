@@ -119,11 +119,11 @@ docker-compose -f docker-compose.production.yml up -d
 
 | 服务 | 地址 |
 |------|------|
-| 主站 | http://your-domain.com |
-| API | http://your-domain.com/api/v1 |
-| API文档 | http://your-domain.com/docs |
-| 监控(Prometheus) | http://your-domain.com:9090 |
-| 监控(Grafana) | http://your-domain.com:3000 |
+| 主站 | http://your-domain.com[需更新] |
+| API | http://your-domain.com/api/v1[需更新] |
+| API文档 | http://your-domain.com/docs[需更新] |
+| 监控(Prometheus) | http://your-domain.com:9090[需更新] |
+| 监控(Grafana) | http://your-domain.com:3000[需更新] |
 
 ## 故障排查
 

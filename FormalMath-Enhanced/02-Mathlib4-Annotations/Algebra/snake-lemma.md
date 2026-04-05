@@ -125,11 +125,11 @@ $$\cdots \to H_n(A) \to H_n(B) \to H_n(C) \xrightarrow{\partial} H_{n-1}(A) \to 
 
 ## 相关概念
 
-- [长正合列 (Long Exact Sequence)](./long-exact-sequence.md)：同调的基本工具
-- [导出函子 (Derived Functor)](./derived-functor.md)：同调代数的核心构造
-- [正合列 (Exact Sequence)](./exact-sequence.md)：核等于像的序列
-- [Ext函子 (Ext Functor)](./ext-functor.md)：扩张的分类
-- [Tor函子 (Tor Functor)](./tor-functor.md)：张量积的左导出
+- 长正合列 (Long Exact Sequence)：同调的基本工具
+- 导出函子 (Derived Functor)：同调代数的核心构造
+- 正合列 (Exact Sequence)：核等于像的序列
+- Ext函子 (Ext Functor)：扩张的分类
+- Tor函子 (Tor Functor)：张量积的左导出
 
 ## 参考
 
@@ -144,8 +144,8 @@ $$\cdots \to H_n(A) \to H_n(B) \to H_n(C) \xrightarrow{\partial} H_{n-1}(A) \to 
 
 ### 在线资源
 
-- [Mathlib4 文档 - Homology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Homology/ShortComplex/Basic.html)
-- [Stacks Project - 010J](https://stacks.math.columbia.edu/tag/010J)
+- [Mathlib4 文档 - Homology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Homology/ShortComplex/Basic.html)[需更新]
+- [Stacks Project - 010J](https://stacks.math.columbia.edu/tag/010J)[需更新]
 
 ---
 

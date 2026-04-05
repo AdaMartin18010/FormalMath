@@ -15,19 +15,19 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+- [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
   - [1.1 p进周期环](#11-p进周期环)
   - [1.2 比较定理](#12-比较定理)
   - [1.3 (phi, Gamma)-模](#13-phi-gamma-模)
-- [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+- [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
   - [2.1 相对p进Hodge理论](#21-相对p进hodge理论)
   - [2.2 完美胚空间与p进Hodge理论](#22-完美胚空间与p进hodge理论)
   - [2.3 无穷范畴视角](#23-无穷范畴视角)
-- [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+- [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
   - [3.1 p进Simpson对应](#31-p进simpson对应)
   - [3.2 黎曼-Hilbert对应](#32-黎曼-hilbert对应)
   - [3.3 与Langlands纲领的联系](#33-与langlands纲领的联系)
-- [4. 参考文献 / References](#4-参考文献--references)
+- [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 

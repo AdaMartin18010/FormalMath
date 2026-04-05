@@ -99,9 +99,9 @@ $m$ 红、$n-m$ 蓝的染色数：展开 $Z_{C_n}(r+b, r^2+b^2, ...)$ 的系数
 ## 相关概念
 
 - [Burnside引理](./burnside-lemma.md)：基础版本
-- [循环指标](./cycle-index.md)：群的结构不变量
+- 循环指标：群的结构不变量
 - [生成函数](./generating-function-theorem.md)：计数工具
-- [对称群](./symmetric-group.md)：常见作用群
+- 对称群：常见作用群
 
 ## 参考
 
@@ -116,7 +116,7 @@ $m$ 红、$n-m$ 蓝的染色数：展开 $Z_{C_n}(r+b, r^2+b^2, ...)$ 的系数
 
 ### 在线资源
 
-- [Mathlib4 文档 - Group Action](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Basic.html)
+- [Mathlib4 文档 - Group Action](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Basic.html)[需更新]
 
 ---
 

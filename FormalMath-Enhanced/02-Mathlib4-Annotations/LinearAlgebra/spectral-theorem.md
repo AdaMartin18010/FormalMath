@@ -111,11 +111,11 @@ $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
 
 ## 相关概念
 
-- [正规算子 (Normal Operator)](./normal-operator.md)：$T^*T = TT^*$
-- [厄米特算子 (Hermitian Operator)](./hermitian-operator.md)：$T = T^*$
-- [酉算子 (Unitary Operator)](./unitary-operator.md)：$T^*T = TT^* = I$
-- [特征值与特征向量 (Eigenvalue and Eigenvector)](./eigenvalue-eigenvector.md)
-- [函数演算 (Functional Calculus)](./functional-calculus.md)：算子的函数
+- 正规算子 (Normal Operator)：$T^*T = TT^*$
+- 厄米特算子 (Hermitian Operator)：$T = T^*$
+- 酉算子 (Unitary Operator)：$T^*T = TT^* = I$
+- 特征值与特征向量 (Eigenvalue and Eigenvector)
+- 函数演算 (Functional Calculus)：算子的函数
 
 ## 参考
 
@@ -131,7 +131,7 @@ $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - SpectralTheorem](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/SpectralTheorem.html)
+- [Mathlib4 文档 - SpectralTheorem](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/SpectralTheorem.html)[需更新]
 
 ---
 

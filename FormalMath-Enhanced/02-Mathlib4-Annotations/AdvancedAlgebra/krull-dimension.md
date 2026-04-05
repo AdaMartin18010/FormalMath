@@ -101,11 +101,11 @@ $$(0) \subsetneq (x) \subsetneq (x, y) \subsetneq (x, y, z)$$
 
 ## 相关概念
 
-- [高度与深度](./height-depth.md)：素理想的局部维数
+- 高度与深度：素理想的局部维数
 - [Noether正规化](./noether-normalization.md)：维数计算工具
-- [正则局部环](./regular-local-ring.md)：维数与正则序列的关系
+- 正则局部环：维数与正则序列的关系
 - [Cohen-Macaulay环](./cohen-macaulay-ring.md)：维数与深度的相等
-- [射影维数](./projective-dimension.md)：模的维数概念
+- 射影维数：模的维数概念
 
 ## 参考
 
@@ -121,7 +121,7 @@ $$(0) \subsetneq (x) \subsetneq (x, y) \subsetneq (x, y, z)$$
 ### 在线资源
 
 - [Krull Dimension Wikipedia](https://en.wikipedia.org/wiki/Krull_dimension)
-- [Stacks Project - Dimension Theory](https://stacks.math.columbia.edu/tag/00KD)
+- [Stacks Project - Dimension Theory](https://stacks.math.columbia.edu/tag/00KD)[需更新]
 
 ---
 

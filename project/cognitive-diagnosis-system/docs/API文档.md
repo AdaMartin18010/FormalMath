@@ -171,14 +171,14 @@ import requests
 
 # 开始诊断
 response = requests.post(
-    "http://localhost:8000/api/v1/diagnosis/start",
+    "",
     json={"question_count": 30}
 )
 data = response.json()
 
 # 获取结果
 result = requests.get(
-    f"http://localhost:8000/api/v1/diagnosis/{test_id}/result"
+    f""
 )
 ```
 

@@ -320,7 +320,7 @@ processed_at: '2026-04-05'
 ### 文章（轻松读物）
 
 - 📖 **维基百科（英文）**：[L.E.J. Brouwer](https://en.wikipedia.org/wiki/L._E._J._Brouwer)
-- 📖 **Stanford Encyclopedia**：[Intuitionism](https://plato.stanford.edu/entries/intuitionism/)
+- 📖 **Stanford Encyclopedia**：[Intuitionism](https://plato.stanford.edu/entries/intuitionism/)[需更新]
 - 📖 **Quanta Magazine**：搜索"Constructive Mathematics"
 
 ### 书籍（入门级）

@@ -113,7 +113,7 @@ FormalMath-Interactive/
 import { ShareButtons } from './components/SocialFeatures';
 
 <ShareButtons
-  url="https://example.com/page"
+  url="https://example.com/page[需更新]"
   title="页面标题"
   description="页面描述"
   platforms={['twitter', 'facebook', 'linkedin', 'copy']}
@@ -128,7 +128,7 @@ import { OpenGraphMeta } from './components/SocialFeatures';
 <OpenGraphMeta
   title="代数基础概念"
   description="学习代数的基本概念"
-  url="https://example.com/concept/algebra"
+  url="https://example.com/concept/algebra[需更新]"
   image="/preview.png"
   type="article"
   twitterCard="summary_large_image"
@@ -151,7 +151,7 @@ import { SocialLogin } from './components/SocialFeatures';
 import { ContentEmbed } from './components/SocialFeatures';
 
 <ContentEmbed
-  url="https://example.com/concept/algebra"
+  url="https://example.com/concept/algebra[需更新]"
   title="代数概念"
   config={{ size: 'responsive', theme: 'auto' }}
 />
@@ -172,7 +172,7 @@ VITE_WEIBO_CLIENT_ID=your_weibo_client_id
 VITE_APPLE_CLIENT_ID=your_apple_client_id
 
 # 站点配置
-VITE_SITE_URL=https://formalmath.example.com
+VITE_SITE_URL=https://formalmath.example.com[需更新]
 VITE_SITE_NAME=FormalMath
 VITE_TWITTER_HANDLE=@formalmath
 ```

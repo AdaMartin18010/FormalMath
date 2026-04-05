@@ -133,10 +133,10 @@ $b = -\frac{1 \cdot 2\sqrt{2}}{4} = -\frac{\sqrt{2}}{2}$
 
 ### 与FormalMath主项目的链接
 
-- [优化理论](../../concept/analysis/optimization.md)
-- [Lagrange乘数法](../../concept/analysis/lagrange-multipliers.md)
-- [对称多项式](../../concept/algebra/symmetric-polynomials.md)
-- [Newton恒等式](../../concept/algebra/newton-identities.md)
+- 优化理论
+- Lagrange乘数法
+- 对称多项式
+- Newton恒等式
 
 ## 变体与推广
 
@@ -154,8 +154,8 @@ $b = -\frac{1 \cdot 2\sqrt{2}}{4} = -\frac{\sqrt{2}}{2}$
 
 ## 参考
 
-- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159839p893686)
+- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159839p893686)[需更新]
 - 相关技巧：Lagrange乘数法、对称性假设
 
 ---

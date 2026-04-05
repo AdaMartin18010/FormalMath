@@ -80,7 +80,7 @@ CELERY_BROKER_URL=redis://redis:6379/1
 CELERY_RESULT_BACKEND=redis://redis:6379/2
 
 # CORS配置（生产环境限制来源）
-CORS_ORIGINS=["https://yourdomain.com"]
+CORS_ORIGINS=["https://yourdomain.com[需更新]"]
 ```
 
 ### 3. 构建和启动服务
@@ -103,13 +103,13 @@ docker-compose logs -f
 
 ```bash
 # 健康检查
-curl http://localhost/health
+curl 
 
 # API文档
-curl http://localhost/docs
+curl 
 
 # 前端页面
-open http://localhost
+open http://localhost[需更新]
 ```
 
 ## 🔧 高级配置
@@ -172,10 +172,10 @@ services:
 # 启动包含Prometheus和Grafana的服务
 docker-compose --profile monitoring up -d
 
-# 访问 Grafana: http://localhost:3000
+# 访问 Grafana: 
 # 默认账号: admin/admin
 
-# 访问 Prometheus: http://localhost:9090
+# 访问 Prometheus: 
 ```
 
 ### 日志管理
@@ -210,7 +210,7 @@ docker-compose up -d --no-deps --build backend
 docker-compose up -d --no-deps --build frontend
 
 # 4. 验证新版本
-curl http://localhost/health
+curl 
 ```
 
 ### 数据备份
@@ -326,10 +326,10 @@ docker scan formalmath-frontend:latest
 
 ## 📚 相关文档
 
-- [FastAPI部署文档](https://fastapi.tiangolo.com/deployment/)
-- [Docker Compose文档](https://docs.docker.com/compose/)
-- [Nginx配置指南](https://nginx.org/en/docs/)
-- [Redis持久化](https://redis.io/docs/manual/persistence/)
+- [FastAPI部署文档](https://fastapi.tiangolo.com/deployment/)[需更新]
+- [Docker Compose文档](https://docs.docker.com/compose/)[需更新]
+- [Nginx配置指南](https://nginx.org/en/docs/)[需更新]
+- [Redis持久化](https://redis.io/docs/manual/persistence/)[需更新]
 
 ## 🤝 支持
 

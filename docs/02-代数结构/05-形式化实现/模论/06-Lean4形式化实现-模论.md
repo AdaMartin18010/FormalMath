@@ -664,7 +664,7 @@ Lean4形式化实现-模论提供了：
 **参考文献 / References**:
 
 1. Lean 4 Documentation. <https://leanprover.github.io/lean4/doc/>
-2. Mathematics in Lean. <https://leanprover-community.github.io/mathematics_in_lean/>
+2. Mathematics in Lean. <https://leanprover-community.github.io/mathematics_in_lean/[需更新[需更新]]>
 3. Dummit, D. S., & Foote, R. M. (2004). *Abstract Algebra*. John Wiley & Sons.
 4. Lang, S. (2002). *Algebra*. Springer-Verlag.
 5. Atiyah, M. F., & Macdonald, I. G. (1969). *Introduction to Commutative Algebra*. Addison-Wesley.

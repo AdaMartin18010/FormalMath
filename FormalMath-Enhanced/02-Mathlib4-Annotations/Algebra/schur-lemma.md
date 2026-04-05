@@ -122,11 +122,11 @@ $\text{End}_k(M) \cong k$，Schur引理显然成立。
 
 ## 相关概念
 
-- [单模 (Simple Module)](./simple-module.md)：无真非零子模的模
-- [半单模 (Semisimple Module)](./semisimple-module.md)：单模的直和
+- 单模 (Simple Module)：无真非零子模的模
+- 半单模 (Semisimple Module)：单模的直和
 - [Maschke定理 (Maschke's Theorem)](./maschke-theorem.md)：表示的完全可约性
-- [除环 (Division Ring)](./division-ring.md)：非零元可逆的环
-- [表示论 (Representation Theory)](./representation-theory.md)：群作用的线性化
+- 除环 (Division Ring)：非零元可逆的环
+- 表示论 (Representation Theory)：群作用的线性化
 
 ## 参考
 
@@ -141,8 +141,8 @@ $\text{End}_k(M) \cong k$，Schur引理显然成立。
 
 ### 在线资源
 
-- [Mathlib4 文档 - SimpleModule](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/SimpleModule.html)
-- [Groupprops - Schur's lemma](https://groupprops.subwiki.org/wiki/Schur%27s_lemma)
+- [Mathlib4 文档 - SimpleModule](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/SimpleModule.html)[需更新]
+- [Groupprops - Schur's lemma](https://groupprops.subwiki.org/wiki/Schur%27s_lemma)[需更新]
 
 ---
 

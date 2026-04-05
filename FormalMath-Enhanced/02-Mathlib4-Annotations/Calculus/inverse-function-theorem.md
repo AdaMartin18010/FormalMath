@@ -87,10 +87,10 @@ $f(z) = e^z$，导数 $f'(z) = e^z \neq 0$
 
 ## 相关概念
 
-- [隐函数定理](./implicit-function-theorem.md)：密切相关的结果
-- [微分同胚 (Diffeomorphism)](./diffeomorphism.md)：光滑可逆映射
-- [雅可比行列式](./jacobian-determinant.md)：体积变换因子
-- [秩定理 (Rank Theorem)](./rank-theorem.md)：更一般的定理
+- 隐函数定理：密切相关的结果
+- 微分同胚 (Diffeomorphism)：光滑可逆映射
+- 雅可比行列式：体积变换因子
+- 秩定理 (Rank Theorem)：更一般的定理
 
 ## 参考
 
@@ -101,7 +101,7 @@ $f(z) = e^z$，导数 $f'(z) = e^z \neq 0$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Inverse Function](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Inverse.html)
+- [Mathlib4 文档 - Inverse Function](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Inverse.html)[需更新]
 
 ---
 

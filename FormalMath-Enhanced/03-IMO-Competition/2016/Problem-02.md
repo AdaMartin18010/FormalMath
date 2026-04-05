@@ -70,11 +70,11 @@ $$\frac{a_1}{a_2}, \frac{a_3}{a_4}, \frac{a_1}{a_5}, \frac{a_2}{a_3}, \frac{a_4}
 
 ## 相关概念
 
-- [鸽巢原理](../../concept/鸽巢原理.md)
-- [极值原理](../../concept/极值原理.md)
-- [不等式优化](../../concept/不等式优化.md)
+- 鸽巢原理
+- 极值原理
+- 不等式优化
 
 ## 参考
 
 - IMO 2016 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1263913p6575275
+- AoPS Community: https://artofproblemsolving.com/community/c6h1263913p6575275[需更新]

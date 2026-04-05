@@ -87,11 +87,11 @@ $$0 \to R \xrightarrow{\begin{pmatrix} y \\ -x \end{pmatrix}} R^2 \xrightarrow{\
 
 ## 相关概念
 
-- [投射维数](./projective-dimension.md)：合冲长度的上界
-- [正则局部环](./regular-local-ring.md)：Hilbert定理的推广
-- [整体维数](./global-dimension.md)：环的同调维数
-- [Koszul复形](./koszul-complex.md)：Hilbert定理证明的核心工具
-- [有限自由分解](./finite-free-resolution.md)：合冲的构造
+- 投射维数：合冲长度的上界
+- 正则局部环：Hilbert定理的推广
+- 整体维数：环的同调维数
+- Koszul复形：Hilbert定理证明的核心工具
+- 有限自由分解：合冲的构造
 
 ## 参考
 

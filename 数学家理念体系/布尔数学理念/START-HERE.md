@@ -252,12 +252,12 @@ processed_at: '2026-04-05'
 
 **传记资源**：
 
-- [MacTutor History: Boole Biography](https://mathshistory.st-andrews.ac.uk/Biographies/Boole/) - 详细的数学传记
+- [MacTutor History: Boole Biography](https://mathshistory.st-andrews.ac.uk/Biographies/Boole/)[需更新] - 详细的数学传记
 
 **视频资源**：
 
 - [MIT OpenCourseWare: Computation Structures](https://ocw.mit.edu/) - 相关课程
-- [Stanford CS103: Introduction to Logic](https://web.stanford.edu/class/cs103/) - 逻辑课程
+- [Stanford CS103: Introduction to Logic](https://web.stanford.edu/class/cs103/)[需更新] - 逻辑课程
 
 ### 推荐阅读
 

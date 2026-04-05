@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [15.3 Tor与Ext的计算实例 / Computational Examples of Tor and Ext](#153-tor与ext的计算实例-computational-examples-of-tor-and-ext)
-  - [目录 / Table of Contents](#目录)
+  - 目录 / Table of Contents
   - [15.3.1 引言 / Introduction](#1531-引言-introduction)
   - [15.3.2 Tor函子的定义与基本性质 / Definition and Basic Properties of Tor](#1532-tor函子的定义与基本性质-definition-and-basic-properties-of-tor)
     - [作为导出张量积 / Tor as Derived Tensor Product](#作为导出张量积-tor-as-derived-tensor-product)
@@ -381,10 +381,10 @@ $$
 ### 在线资源 / Online Resources
 
 5. **Stacks Project**, Tag 00LY — Tor groups, Chapter 15.
-   - `https://stacks.math.columbia.edu/tag/00LY`
+   - `https://stacks.math.columbia.edu/tag/00LY[需更新[需更新]]`
 
 6. **Stacks Project**, Tag 00O0 — Ext groups, Chapter 15.
-   - `https://stacks.math.columbia.edu/tag/00O0`
+   - `https://stacks.math.columbia.edu/tag/00O0[需更新[需更新]]`
 
 ### 中文参考 / Chinese References
 

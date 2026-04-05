@@ -90,11 +90,11 @@ $$|G| = [G:H] \cdot |H|$$
 
 ## 相关概念
 
-- [子群 (Subgroup)](./subgroup.md)：群的子集构成的群
-- [陪集 (Coset)](./coset.md)：子群的平移副本
-- [指数 (Index)](./index.md)：陪集的个数
-- [正规子群 (Normal Subgroup)](./normal-subgroup.md)：左右陪集相等的子群
-- [商群 (Quotient Group)](./quotient-group.md)：由正规子群构造的新群
+- 子群 (Subgroup)：群的子集构成的群
+- 陪集 (Coset)：子群的平移副本
+- 指数 (Index)：陪集的个数
+- 正规子群 (Normal Subgroup)：左右陪集相等的子群
+- 商群 (Quotient Group)：由正规子群构造的新群
 
 ## 参考
 
@@ -109,8 +109,8 @@ $$|G| = [G:H] \cdot |H|$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Subgroup/Basic.html)
-- [Groupprops - Lagrange's theorem](https://groupprops.subwiki.org/wiki/Lagrange%27s_theorem)
+- [Mathlib4 文档 - Subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Subgroup/Basic.html)[需更新]
+- [Groupprops - Lagrange's theorem](https://groupprops.subwiki.org/wiki/Lagrange%27s_theorem)[需更新]
 
 ---
 

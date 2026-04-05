@@ -123,9 +123,9 @@ python run.py
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-后端服务将运行在 http://localhost:8000
+后端服务将运行在 
 
-API 文档：http://localhost:8000/docs
+API 文档：
 
 ### 前端启动
 
@@ -140,7 +140,7 @@ npm install
 npm start
 ```
 
-前端服务将运行在 http://localhost:3000
+前端服务将运行在 
 
 ### Docker 部署
 

@@ -119,11 +119,11 @@ $V$ 成为 $k[x]$-模，$x \cdot v = T(v)$。
 
 ## 相关概念
 
-- [PID (Principal Ideal Domain)](./pid.md)：主理想整环
-- [Smith标准形 (Smith Normal Form)](./smith-normal-form.md)：矩阵对角化
-- [挠模 (Torsion Module)](./torsion-module.md)：被非零元零化的元素
-- [不变因子 (Invariant Factor)](./invariant-factor.md)：分解中的整除序列
-- [初等因子 (Elementary Divisor)](./elementary-divisor.md)：素幂分解
+- PID (Principal Ideal Domain)：主理想整环
+- Smith标准形 (Smith Normal Form)：矩阵对角化
+- 挠模 (Torsion Module)：被非零元零化的元素
+- 不变因子 (Invariant Factor)：分解中的整除序列
+- 初等因子 (Elementary Divisor)：素幂分解
 
 ## 参考
 
@@ -138,8 +138,8 @@ $V$ 成为 $k[x]$-模，$x \cdot v = T(v)$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Module PID](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/PID.html)
-- [Keith Conrad - Modules over PIDs](https://kconrad.math.uconn.edu/blurbs/linmultialg/modulesoverpids.pdf)
+- [Mathlib4 文档 - Module PID](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/PID.html)[需更新]
+- [Keith Conrad - Modules over PIDs](https://kconrad.math.uconn.edu/blurbs/linmultialg/modulesoverpids.pdf)[需更新]
 
 ---
 

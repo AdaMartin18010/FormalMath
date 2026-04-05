@@ -119,11 +119,11 @@ $f(z) = \frac{z-a}{1-\bar{a}z}$，其中 $|a| < 1$。
 
 ## 相关概念
 
-- [单位圆盘 (Unit Disc)](./unit-disc.md)：复平面的开单位球
+- 单位圆盘 (Unit Disc)：复平面的开单位球
 - [最大模原理 (Maximum Modulus Principle)](./maximum-modulus-principle.md)：全纯函数的约束
-- [Möbius变换 (Möbius Transformation)](./mobius-transformation.md)：分式线性变换
-- [双曲几何 (Hyperbolic Geometry)](./hyperbolic-geometry.md)：非欧几何
-- [Poincaré度量 (Poincaré Metric)](./poincare-metric.md)：双曲空间的度量
+- Möbius变换 (Möbius Transformation)：分式线性变换
+- 双曲几何 (Hyperbolic Geometry)：非欧几何
+- Poincaré度量 (Poincaré Metric)：双曲空间的度量
 
 ## 参考
 
@@ -138,7 +138,7 @@ $f(z) = \frac{z-a}{1-\bar{a}z}$，其中 $|a| < 1$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - SchwarzLemma](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/SchwarzLemma.html)
+- [Mathlib4 文档 - SchwarzLemma](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/SchwarzLemma.html)[需更新]
 - [Wikipedia - Schwarz Lemma](https://en.wikipedia.org/wiki/Schwarz_lemma)
 
 ---

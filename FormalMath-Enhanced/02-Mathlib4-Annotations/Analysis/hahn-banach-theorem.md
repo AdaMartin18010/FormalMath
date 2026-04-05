@@ -120,11 +120,11 @@ $A$ 中 $f < 1.5$，$B$ 中 $f = 2 > 1.5$。
 
 ## 相关概念
 
-- [对偶空间 (Dual Space)](./dual-space.md)：连续线性泛函空间
-- [次线性泛函 (Sublinear Functional)](./sublinear-functional.md)：凸正齐次函数
-- [分离超平面 (Separating Hyperplane)](./separating-hyperplane.md)：凸集分离
-- [Minkowski泛函 (Minkowski Functional)](./minkowski-functional.md)：范数的推广
-- [凸集 (Convex Set)](./convex-set.md)：线段包含性
+- 对偶空间 (Dual Space)：连续线性泛函空间
+- 次线性泛函 (Sublinear Functional)：凸正齐次函数
+- 分离超平面 (Separating Hyperplane)：凸集分离
+- Minkowski泛函 (Minkowski Functional)：范数的推广
+- 凸集 (Convex Set)：线段包含性
 
 ## 参考
 
@@ -140,7 +140,7 @@ $A$ 中 $f < 1.5$，$B$ 中 $f = 2 > 1.5$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - HahnBanach](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/NormedSpace/HahnBanach/Extension.html)
+- [Mathlib4 文档 - HahnBanach](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/NormedSpace/HahnBanach/Extension.html)[需更新]
 - [Wikipedia - Hahn-Banach Theorem](https://en.wikipedia.org/wiki/Hahn%E2%80%93Banach_theorem)
 
 ---

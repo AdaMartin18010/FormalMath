@@ -84,9 +84,9 @@ processed_at: '2026-04-05'
 **形式化验证标准更新** / **Formal Verification Standards Updates**:
 
 - ✅ Lean 4 URL: `<https://leanprover.github.io/>`
-- ✅ Coq URL: `<https://coq.inria.fr/>`
-- ✅ Isabelle/HOL URL: `<https://isabelle.in.tum.de/>`
-- ✅ Agda URL: `<https://agda.readthedocs.io/>`
+- ✅ Coq URL: `<https://coq.inria.fr/[需更新[需更新]]>`
+- ✅ Isabelle/HOL URL: `<https://isabelle.in.tum.de/[需更新[需更新]]>`
+- ✅ Agda URL: `<https://agda.readthedocs.io/[需更新[需更新]]>`
 
 **国际标准对齐检查清单更新** / **International Standard Alignment Checklist Updates**:
 

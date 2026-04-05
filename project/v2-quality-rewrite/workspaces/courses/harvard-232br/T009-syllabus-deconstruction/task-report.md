@@ -14,17 +14,17 @@ processed_at: '2026-04-05'
 
 ### 官方来源
 1. **Harvard Math 官方网站 — Mathematics 232BR 课程页面**
-   - URL: https://www.math.harvard.edu/course/mathematics-232br/
+   - URL: https://www.math.harvard.edu/course/mathematics-232br/[需更新]
    - 内容：课程官方描述，明确指出 232br 是 232ar 的延续，聚焦 **coherent sheaves, cohomology, and their applications to the theory of curves and surfaces**。偶尔涉及 Hodge structures、Lefschetz theorems 或 deformations。
    - 2026 Spring 授课教师：Aaron Landesman。
 
 2. **Harvard Math 官方网站 — Mathematics 232AR 课程页面（Mandy Cheung, 2024 Fall）**
-   - URL: https://people.math.harvard.edu/~mwcheung/AG1.html
+   - URL: https://people.math.harvard.edu/~mwcheung/AG1.html[需更新]
    - 内容：232ar 的详细课程安排、教材列表、5 次 Problem Set 的具体题目来源（Harris + Hartshorne + Gathmann）。这部分构成了 Module 0（232ar Review）的核心依据。
    - 教材列表：Gathmann notes, Atiyah-MacDonald, Harris *Algebraic Geometry: A First Course*, Shafarevich, Hartshorne, Arapura。
 
 3. **Harvard 课程目录 PDF（2018–2019）**
-   - URL: https://www.math.harvard.edu/media/2018-2019.pdf
+   - URL: https://www.math.harvard.edu/media/2018-2019.pdf[需更新]
    - 内容：提供了 232a / 232br 的历史版本信息。2019 Spring 由 Man-Wai Cheung 讲授时，232br 的主题为 **classification of complex algebraic surfaces**。
 
 ### 教材与讲义来源
@@ -36,15 +36,15 @@ processed_at: '2026-04-05'
    - 内容：232br 的理论 backbone。Chapter II（Schemes）、Chapter III（Cohomology）、Chapter IV（Curves）、Chapter V（Surfaces）分别对应本大纲的 Module 1–4。
 
 6. **Akhil Mathew 的课堂笔记 — *Geometry of Algebraic Curves* (Joe Harris, Fall 2011, Harvard Math 287y)**
-   - URL: https://math.uchicago.edu/~amathew/287y.pdf
+   - URL: https://math.uchicago.edu/~amathew/287y.pdf[需更新]
    - 内容：提供了曲线理论的详细讲授顺序，包括 Riemann-Roch、Brill-Noether、Abel's theorem、Castelnuovo bound、scrolls、Weierstrass points 等。用于丰富 Module 3 的内容。
 
 7. **Henry Liu 的课堂笔记 — *Arithmetic and Algebraic Geometry* (Johan de Jong, Columbia)**
-   - URL: https://people.maths.ox.ac.uk/liu/notes/s17-algebraic-geometry.pdf
+   - URL: https://people.maths.ox.ac.uk/liu/notes/s17-algebraic-geometry.pdf[需更新]
    - 内容：提供了 sheaf cohomology、derived functors、Cech cohomology、Serre duality、higher direct images、curves 的清晰结构，用于校验 Module 1–3 的模块划分。
 
 8. **UCI 建议大纲 — Math 233 A-B-C Algebraic Geometry**
-   - URL: https://www.math.uci.edu/syllabus/math233ABC.pdf
+   - URL: https://www.math.uci.edu/syllabus/math233ABC.pdf[需更新]
    - 内容：提供了三学期代数几何课程的模块划分参考，特别是 Quarter 2（Schemes, Sheaves, Divisors, Cohomology）和 Quarter 3（Curves and Surfaces）与本课程内容的对应关系。
 
 ---

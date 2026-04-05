@@ -110,9 +110,9 @@ Massey证明了 $\mathbb{RP}^n$ 浸入 $\mathbb{R}^{2n - \alpha(n)}$ 其中 $\al
 
 - [Chern类](./chern-class.md)：复丛的版本
 - [Pontryagin类](./pontryagin-class.md)：整数系数的实丛不变量
-- [Wu类](./wu-class.md)：Steenrod平方与SW类的关系
-- [Thom类](./thom-class.md)：SW类的构造
-- [Euler类](./euler-class.md)：最高SW类（定向情形）
+- Wu类：Steenrod平方与SW类的关系
+- Thom类：SW类的构造
+- Euler类：最高SW类（定向情形）
 
 ## 参考
 

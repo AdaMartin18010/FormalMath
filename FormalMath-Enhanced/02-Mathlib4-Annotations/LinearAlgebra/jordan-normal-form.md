@@ -101,11 +101,11 @@ $$A^k = (2I + N)^k = 2^k I + k \cdot 2^{k-1} N = \begin{pmatrix} 2^k & k \cdot 2
 
 ## 相关概念
 
-- [特征值与特征向量 (Eigenvalue and Eigenvector)](./eigenvalue-eigenvector.md)
-- [代数重数与几何重数 (Algebraic and Geometric Multiplicity)](./multiplicity.md)
-- [广义特征向量 (Generalized Eigenvector)](./generalized-eigenvector.md)
-- [极小多项式 (Minimal Polynomial)](./minimal-polynomial.md)
-- [有理标准型 (Rational Canonical Form)](./rational-canonical-form.md)
+- 特征值与特征向量 (Eigenvalue and Eigenvector)
+- 代数重数与几何重数 (Algebraic and Geometric Multiplicity)
+- 广义特征向量 (Generalized Eigenvector)
+- 极小多项式 (Minimal Polynomial)
+- 有理标准型 (Rational Canonical Form)
 
 ## 参考
 
@@ -120,7 +120,7 @@ $$A^k = (2I + N)^k = 2^k I + k \cdot 2^{k-1} N = \begin{pmatrix} 2^k & k \cdot 2
 
 ### 在线资源
 
-- [Mathlib4 文档 - JordanNormalForm](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/JordanNormalForm.html)
+- [Mathlib4 文档 - JordanNormalForm](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/JordanNormalForm.html)[需更新]
 
 ---
 

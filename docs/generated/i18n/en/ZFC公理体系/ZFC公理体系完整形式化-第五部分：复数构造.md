@@ -25,9 +25,9 @@ msc_secondary: ['03E30', '03E15', '11-XX']
 ## Table of Contents
 
 - [ZFC公理体系完整形式化 - 第五部分：复数构造](#zfc公理体系完整形式化---第五部分复数构造)
-  - [Table of Contents](#Table of Contents)
+  - Table of Contents
   - [📚 概述](#概述)
-  - [🏗️ 复数的构造](#️-复数的构造)
+  - 🏗️ 复数的构造
     - [1. 复数的Definition](#1-复数的Definition)
       - [1.1 复数作为有序对](#11-复数作为有序对)
       - [1.2 复数的表示](#12-复数的表示)
@@ -59,15 +59,15 @@ msc_secondary: ['03E30', '03E15', '11-XX']
       - [9.1 指数函数](#91-指数函数)
       - [9.2 三角函数](#92-三角函数)
     - [10. 结论](#10-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
+  - 💻 Lean4形式化实现 / Lean4 Formal Implementation
     - [复数类型Definition](#复数类型Definition)
     - [复数运算形式化](#复数运算形式化)
     - [复数Field结构形式化](#复数Field结构形式化)
     - [复数几何性质形式化](#复数几何性质形式化)
     - [代数基本Theorem形式化](#代数基本Theorem形式化)
     - [应用案例：复数在分析中的应用](#应用案例复数在分析中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表)
-  - [References / References](#References--references)
+  - 术语对照表 / Terminology Table
+  - References / References
 
 ## 📚 概述
 

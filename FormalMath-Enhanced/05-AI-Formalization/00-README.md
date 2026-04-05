@@ -105,7 +105,7 @@ title: AI形式化数学对接模块
 - [Lean 4 官方文档](https://lean-lang.org/lean4/doc/)
 - [Mathlib 4](https://github.com/leanprover-community/mathlib4)
 - [arXiv 形式化数学](https://arxiv.org/list/cs.LO/recent)
-- [IMO Grand Challenge](https://imo-grand-challenge.github.io/)
+- [IMO Grand Challenge](https://imo-grand-challenge.github.io/)[需更新]
 
 ---
 

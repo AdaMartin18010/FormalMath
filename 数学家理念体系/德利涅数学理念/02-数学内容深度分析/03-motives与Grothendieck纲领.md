@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Deligne与Motives：Grothendieck梦想的现实化](#deligne与motivesgrothendieck梦想的现实化)
-  - [📋 目录](../README.md#目录)
+  - [📋 目录](../README.md)
   - [摘要](#摘要)
   - [一、引言：Grothendieck的Motives梦想](#一引言grothendieck的motives梦想)
     - [1.1 上同调理论的统一](#11-上同调理论的统一)
@@ -25,21 +25,9 @@ processed_at: '2026-04-05'
   - [二、Motives的基本概念](#二motives的基本概念)
     - [2.1 纯Motives](#21-纯motives)
     - [2.2 代数闭链与等价关系](#22-代数闭链与等价关系)
-    - [2.3 Motives的范畴](../README.md#23-motives的范畴
-  - [三、Hodge实现与l-adic实现](#三hodge实现与l-adic实现)
-    - [3.1 Hodge实现函子](../README.md#31-hodge实现函子
-    - [3.2 l-adic实现](#32-l-adic实现
-    - [3.3 相容性系统](#33-相容性系统
-  - [四、Tannakian范畴与Motivic Galois群](#四tannakian范畴与motivic-galois群)
-    - [4.1 Tannakian形式](../README.md#41-tannakian形式
-    - [4.2 Motivic Galois群](#42-motivic-galois群
-    - [4.3 与经典Galois群的联系](#43-与经典galois群的联系
-  - [五、Deligne的绝对Hodge类](#五deligne的绝对hodge类
-    - [5.1 定义与性质](#51-定义与性质
-    - [5.2 Deligne的猜想](#52-deligne的猜想
-    - [5.3 与Hodge猜想的关系](#53-与hodge猜想的关系
-  - [六、现代发展与应用](#六现代发展与应用
-  六、参考文献](#六参考文献)
+    - [2.3 Motives的范畴](../README.md)
+    - [3.1 Hodge实现函子](../README.md)
+    - [4.1 Tannakian形式](../README.md)
 
 ---
 
@@ -347,10 +335,10 @@ Motives与自守表示的联系是Langlands纲领的核心，Deligne的l-adic实
 ### 在线资源
 
 9. **MacTutor History of Mathematics**: Pierre Deligne biography
-   - https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/
+   - https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/[需更新]
 
 10. **Grothendieck Circle**: Motives
-    - http://www.grothendieck-circle.org/
+    - http://www.grothendieck-circle.org/[需更新]
 
 11. **MathOverflow**: What are motives?
     - Motives概念的解释和讨论

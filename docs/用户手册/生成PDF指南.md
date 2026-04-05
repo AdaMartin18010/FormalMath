@@ -20,7 +20,7 @@ processed_at: '2026-04-05'
 choco install pandoc
 
 # 或使用 msi 安装包
-# 下载地址: https://pandoc.org/installing.html
+# 下载地址: https://pandoc.org/installing.html[需更新[需更新]]
 ```
 
 **macOS**:
@@ -87,7 +87,7 @@ pandoc *.md -o 用户手册.pdf --pdf-engine=wkhtmltopdf
 
 ### 安装 wkhtmltopdf
 
-下载地址: https://wkhtmltopdf.org/downloads.html
+下载地址: https://wkhtmltopdf.org/downloads.html[需更新[需更新]]
 
 ### 生成步骤
 
@@ -223,7 +223,7 @@ print("PDF 生成完成！")
    - 在线生成 PDF
 
 2. **Pandoc Try**
-   - https://pandoc.org/try/
+   - https://pandoc.org/try/[需更新[需更新]]
    - 在线测试转换效果
 
 ---

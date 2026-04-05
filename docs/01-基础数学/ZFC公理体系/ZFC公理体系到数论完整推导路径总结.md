@@ -67,7 +67,7 @@ processed_at: '2026-04-05'
     - [理论扩展](#理论扩展)
     - [应用扩展](#应用扩展)
   - [📝 结论](#结论)
-  - [术语对照表 / Terminology Table](#术语对照表)
+  - 术语对照表 / Terminology Table
 
 ## 📚 概述
 

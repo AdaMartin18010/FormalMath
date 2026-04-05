@@ -106,9 +106,9 @@ Arrow-Debreu一般均衡存在性证明使用Brouwer定理：
 ## 相关概念
 
 - [Brouwer不动点定理（一般形式）](../Topology/brouwer-fixed-point.md)：拓扑版本
-- [紧致性 (Compactness)](./compactness.md)：定理的关键条件
-- [凸集 (Convex Set)](./convex-set.md)：等价表述中的条件
-- [Schauder不动点定理](./schauder-fixed-point.md)：无限维推广
+- 紧致性 (Compactness)：定理的关键条件
+- 凸集 (Convex Set)：等价表述中的条件
+- Schauder不动点定理：无限维推广
 
 ## 参考
 
@@ -123,7 +123,7 @@ Arrow-Debreu一般均衡存在性证明使用Brouwer定理：
 
 ### 在线资源
 
-- [Mathlib4 文档 - Fixed Point](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/FixedPoint.html)
+- [Mathlib4 文档 - Fixed Point](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/FixedPoint.html)[需更新]
 
 ---
 

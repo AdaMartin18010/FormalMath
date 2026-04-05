@@ -289,7 +289,7 @@ $$\pi_4(S^3) \cong \mathbb{Z}/2\mathbb{Z}$$
 
 ### 在线资源 / Online Resources
 
-- Hatcher's Algebraic Topology (免费下载): <https://pi.math.cornell.edu/~hatcher/AT/AT.pdf>
+- Hatcher's Algebraic Topology (免费下载): <https://pi.math.cornell.edu/~hatcher/AT/AT.pdf[需更新[需更新]]>
 - MIT OpenCourseWare: 18.905 Algebraic Topology I
 - nLab: Homotopy Theory
 

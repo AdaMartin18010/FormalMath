@@ -263,7 +263,7 @@ processed_at: '2026-04-05'
 ### ETH 官方资源
 
 - ETH Zurich Department of Mathematics: https://math.ethz.ch/
-- ETH Course Catalogue: https://www.ethz.ch/studies/application/bachelor/entry-requirements/course-catalogue.html
+- ETH Course Catalogue: https://www.ethz.ch/studies/application/bachelor/entry-requirements/course-catalogue.html[需更新]
 
 ### 核心教材版本（2026年4月复核）
 

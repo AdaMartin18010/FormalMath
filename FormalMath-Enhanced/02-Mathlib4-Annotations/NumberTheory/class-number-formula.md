@@ -102,11 +102,11 @@ $K = \mathbb{Q}(\sqrt{5})$：$h = 1$，调节子 $R = \log \frac{1+\sqrt{5}}{2}$
 
 ## 相关概念
 
-- [Dedekind Zeta函数 (Dedekind Zeta Function)](./dedekind-zeta-function.md)：数域的zeta函数
-- [调节子 (Regulator)](./regulator.md)：对数单位的行列式
-- [理想类群 (Ideal Class Group)](./ideal-class-group.md)：理想模主理想
-- [Minkowski理论 (Minkowski Theory)](./minkowski-theory.md)：格的几何
-- [L函数 (L-function)](./l-function.md)：Dirichlet特征的特征和
+- Dedekind Zeta函数 (Dedekind Zeta Function)：数域的zeta函数
+- 调节子 (Regulator)：对数单位的行列式
+- 理想类群 (Ideal Class Group)：理想模主理想
+- Minkowski理论 (Minkowski Theory)：格的几何
+- L函数 (L-function)：Dirichlet特征的特征和
 
 ## 参考
 
@@ -117,7 +117,7 @@ $K = \mathbb{Q}(\sqrt{5})$：$h = 1$，调节子 $R = \log \frac{1+\sqrt{5}}{2}$
 
 ### 在线资源
 
-- [Mathlib4 文档 - ClassNumber](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/ClassNumber.html)
+- [Mathlib4 文档 - ClassNumber](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/ClassNumber.html)[需更新]
 - [Wikipedia - Class Number Formula](https://en.wikipedia.org/wiki/Class_number_formula)
 
 ---

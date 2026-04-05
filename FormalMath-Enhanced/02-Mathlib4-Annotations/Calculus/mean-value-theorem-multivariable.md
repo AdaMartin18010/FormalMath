@@ -90,10 +90,10 @@ $$\|f(y) - f(x)\| \leq L \|y - x\|$$
 
 ## 相关概念
 
-- [单变量中值定理](./mean-value-theorem.md)：一维版本
+- 单变量中值定理：一维版本
 - [Taylor定理](./taylor-theorem.md)：中值定理的高阶推广
-- [Lipschitz连续性](./lipschitz-continuity.md)：函数光滑性度量
-- [Gateaux导数](./gateaux-derivative.md)：方向导数概念
+- Lipschitz连续性：函数光滑性度量
+- Gateaux导数：方向导数概念
 
 ## 参考
 
@@ -104,7 +104,7 @@ $$\|f(y) - f(x)\| \leq L \|y - x\|$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Mean Value](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/MeanValue.html)
+- [Mathlib4 文档 - Mean Value](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/MeanValue.html)[需更新]
 
 ---
 

@@ -106,9 +106,9 @@ $$\text{Hom}_R(N \otimes_R M, P) \cong \text{Hom}_R(N, \text{Hom}_R(M, P))$$
 
 - [Yoneda引理](./yoneda-lemma.md)：伴随的理论基础
 - [可表示函子](./representable-functor.md)：伴随的特例
-- [单子](./monad.md)：伴随诱导的代数结构
-- [极限](./limit.md)：对角函子的右伴随
-- [余极限](./colimit.md)：对角函子的左伴随
+- 单子：伴随诱导的代数结构
+- 极限：对角函子的右伴随
+- 余极限：对角函子的左伴随
 
 ## 参考
 

@@ -274,7 +274,7 @@ $$\text{ind}(D) = \langle \text{ch}([\sigma(D)]) \smile \text{Td}(T^*M), [M] \ra
 
 ### 在线资源 / Online Resources
 
-- Hatcher's VBKT: <https://pi.math.cornell.edu/~hatcher/VBKT/VB.pdf>
+- Hatcher's VBKT: <https://pi.math.cornell.edu/~hatcher/VBKT/VB.pdf[需更新[需更新]]>
 - nLab: Topological K-Theory
 - Wikipedia: K-theory
 

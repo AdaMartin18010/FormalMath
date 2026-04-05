@@ -104,9 +104,9 @@ $$d(f(x), f(y)) \leq q \cdot d(x, y), \quad \forall x, y \in X$$
 ## 相关概念
 
 - [Banach不动点定理](./banach-fixed-point.md)：同一定理的不同命名
-- [Lipschitz连续性](./lipschitz-continuity.md)：压缩映射的条件
-- [完备度量空间](./complete-metric-space.md)：定理成立的空间条件
-- [迭代法收敛性](./iterative-method-convergence.md)：数值分析应用
+- Lipschitz连续性：压缩映射的条件
+- 完备度量空间：定理成立的空间条件
+- 迭代法收敛性：数值分析应用
 
 ## 参考
 
@@ -121,7 +121,7 @@ $$d(f(x), f(y)) \leq q \cdot d(x, y), \quad \forall x, y \in X$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Contracting](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Contracting.html)
+- [Mathlib4 文档 - Contracting](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Contracting.html)[需更新]
 
 ---
 

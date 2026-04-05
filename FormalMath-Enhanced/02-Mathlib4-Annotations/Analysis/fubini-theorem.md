@@ -124,11 +124,11 @@ Fubini定理：$E[XY] = \int\int xy f_X(x)f_Y(y) dx dy = E[X]E[Y]$。
 
 ## 相关概念
 
-- [乘积测度 (Product Measure)](./product-measure.md)：测度空间的乘积
-- [Tonelli定理 (Tonelli's Theorem)](./tonelli-theorem.md)：非负函数的Fubini定理
-- [累次积分 (Iterated Integral)](./iterated-integral.md)：积分的积分
-- [单调类定理 (Monotone Class Theorem)](./monotone-class-theorem.md)：测度延拓工具
-- [σ-有限测度 (Sigma-Finite Measure)](./sigma-finite-measure.md)：Fubini的条件
+- 乘积测度 (Product Measure)：测度空间的乘积
+- Tonelli定理 (Tonelli's Theorem)：非负函数的Fubini定理
+- 累次积分 (Iterated Integral)：积分的积分
+- 单调类定理 (Monotone Class Theorem)：测度延拓工具
+- σ-有限测度 (Sigma-Finite Measure)：Fubini的条件
 
 ## 参考
 
@@ -144,8 +144,8 @@ Fubini定理：$E[XY] = \int\int xy f_X(x)f_Y(y) dx dy = E[X]E[Y]$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Prod Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Prod.html)
-- [Terry Tao - Fubini](https://terrytao.wordpress.com/2010/01/09/254a-notes-0a-an-alternate-approach-to-the-product-measure-extension-theorem/)
+- [Mathlib4 文档 - Prod Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Prod.html)[需更新]
+- [Terry Tao - Fubini](https://terrytao.wordpress.com/2010/01/09/254a-notes-0a-an-alternate-approach-to-the-product-measure-extension-theorem/)[需更新]
 
 ---
 

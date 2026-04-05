@@ -396,9 +396,9 @@ function MonitoredGraph() {
 ### 8.2 参考资源
 
 - [D3.js Performance Tips](https://d3js.org/
-- [Three.js Optimization](https://threejs.org/docs/#manual/en/introduction/How-to-dispose-of-objects)
-- [React Performance](https://react.dev/learn/render-and-commit)
-- [Web Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+- [Three.js Optimization](https://threejs.org/docs/#manual/en/introduction/How-to-dispose-of-objects)[需更新]
+- [React Performance](https://react.dev/learn/render-and-commit)[需更新]
+- [Web Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)[需更新]
 
 ---
 

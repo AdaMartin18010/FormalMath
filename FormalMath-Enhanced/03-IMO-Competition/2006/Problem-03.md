@@ -103,10 +103,10 @@ $$a^3+b^3+c^3+3abc \geq a^2b+ab^2+b^2c+bc^2+c^2a+ca^2$$
 
 ### 与FormalMath主项目的链接
 
-- [不等式基础](../../concept/algebra/inequalities-basics.md)
-- [Schur不等式](../../concept/algebra/schur-inequality.md)
-- [对称多项式](../../concept/algebra/symmetric-polynomials.md)
-- [Muirhead不等式](../../concept/algebra/muirhead-inequality.md)
+- 不等式基础
+- Schur不等式
+- 对称多项式
+- Muirhead不等式
 
 ## 变体与推广
 
@@ -127,9 +127,9 @@ $$\sum a_i^k + x\prod a_i \geq f(\sum a_i, \sum a_i^{k-1})$$
 
 ## 参考
 
-- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101490p572824)
-- [《不等式的秘密》](https://www.amazon.com/Secrets-Inequalities-Pham-Kim-Hung/dp/0982770404) - Pham Kim Hung
+- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101490p572824)[需更新]
+- [《不等式的秘密》](https://www.amazon.com/Secrets-Inequalities-Pham-Kim-Hung/dp/0982770404)[需更新] - Pham Kim Hung
 - 相关不等式：Schur不等式、Muirhead不等式、AM-GM不等式
 
 ---

@@ -123,10 +123,10 @@ Lebesgue控制收敛定理由Henri Lebesgue在1910年左右证明，是测度论
 ## 相关概念
 
 - [Fatou引理 (Fatou's Lemma)](./fatou-lemma.md)：积分的下半连续性
-- [单调收敛定理 (Monotone Convergence Theorem)](./monotone-convergence.md)：单调序列的收敛
-- [一致可积性 (Uniform Integrability)](./uniform-integrability.md)：积分的紧性条件
-- [Vitali收敛定理 (Vitali Convergence Theorem)](./vitali-convergence.md)：控制定理的推广
-- [Bochner积分 (Bochner Integral)](./bochner-integral.md)：向量值函数的积分
+- 单调收敛定理 (Monotone Convergence Theorem)：单调序列的收敛
+- 一致可积性 (Uniform Integrability)：积分的紧性条件
+- Vitali收敛定理 (Vitali Convergence Theorem)：控制定理的推广
+- Bochner积分 (Bochner Integral)：向量值函数的积分
 
 ## 参考
 
@@ -141,8 +141,8 @@ Lebesgue控制收敛定理由Henri Lebesgue在1910年左右证明，是测度论
 
 ### 在线资源
 
-- [Mathlib4 文档 - Bochner Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Bochner.html)
-- [Terry Tao - Dominated Convergence](https://terrytao.wordpress.com/2009/01/11/the-dominated-convergence-theorem/)
+- [Mathlib4 文档 - Bochner Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Bochner.html)[需更新]
+- [Terry Tao - Dominated Convergence](https://terrytao.wordpress.com/2009/01/11/the-dominated-convergence-theorem/)[需更新]
 
 ---
 

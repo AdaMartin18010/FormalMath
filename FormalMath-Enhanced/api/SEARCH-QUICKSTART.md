@@ -29,16 +29,16 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 ## 3. 访问服务
 
-- API文档: http://localhost:8000/docs
-- 搜索界面: http://localhost:8000/static/search.html
-- 服务状态: http://localhost:8000/
+- API文档: 
+- 搜索界面: 
+- 服务状态: 
 
 ## 4. 快速测试
 
 ### 4.1 索引测试文档
 
 ```bash
-curl -X POST "http://localhost:8000/api/v1/search/index" \
+curl -X POST "" \
   -H "Content-Type: application/json" \
   -d '{
     "doc_id": "test_001",
@@ -50,7 +50,7 @@ curl -X POST "http://localhost:8000/api/v1/search/index" \
 ### 4.2 执行搜索
 
 ```bash
-curl -X POST "http://localhost:8000/api/v1/search/search" \
+curl -X POST "" \
   -H "Content-Type: application/json" \
   -d '{
     "query": "黎曼猜想",
@@ -62,7 +62,7 @@ curl -X POST "http://localhost:8000/api/v1/search/search" \
 ### 4.3 公式搜索
 
 ```bash
-curl -X POST "http://localhost:8000/api/v1/search/formula" \
+curl -X POST "" \
   -H "Content-Type: application/json" \
   -d '{
     "latex": "\\\\frac{a+b}{c}",
@@ -73,7 +73,7 @@ curl -X POST "http://localhost:8000/api/v1/search/formula" \
 ### 4.4 数学问答
 
 ```bash
-curl -X POST "http://localhost:8000/api/v1/search/ask" \
+curl -X POST "" \
   -H "Content-Type: application/json" \
   -d '{
     "question": "什么是黎曼猜想？"
@@ -91,16 +91,16 @@ docs = [
     {"id": "doc2", "content": "勾股定理...", "metadata": {"type": "定理"}},
 ]
 
-requests.post("http://localhost:8000/api/v1/search/index/batch",
+requests.post("",
               json={"documents": docs})
 
 # 搜索
-response = requests.post("http://localhost:8000/api/v1/search/search",
+response = requests.post("",
                         json={"query": "定理证明", "k": 10})
 results = response.json()["data"]["results"]
 
 # 问答
-response = requests.post("http://localhost:8000/api/v1/search/ask",
+response = requests.post("",
                         json={"question": "什么是费马大定理？"})
 answer = response.json()["data"]["answer"]
 ```
@@ -149,7 +149,7 @@ conda install faiss-cpu -c pytorch
 **解决**: 确保已索引文档
 
 ```bash
-curl http://localhost:8000/api/v1/search/stats
+curl 
 ```
 
 ## 9. API端点列表

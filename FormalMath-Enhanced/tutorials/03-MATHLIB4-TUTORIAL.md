@@ -45,7 +45,7 @@ title: Mathlib4 学习教程
     - [4.2 创建验证项目](#42-创建验证项目)
     - [4.3 验证定理](#43-验证定理)
     - [4.4 常见验证方法](#44-常见验证方法)
-      - [使用native\_decide验证具体数值](#使用native_decide验证具体数值)
+      - 使用native\_decide验证具体数值
       - [使用simp简化表达式](#使用simp简化表达式)
       - [使用linarith处理不等式](#使用linarith处理不等式)
     - [4.5 调试技巧](#45-调试技巧)
@@ -200,8 +200,8 @@ theorem name (参数 : 类型) : 结论
 
 ## 相关定理
 
-- [相关定理1](link)
-- [相关定理2](link)
+- 相关定理1
+- 相关定理2
 
 ## 练习
 
@@ -383,7 +383,7 @@ theorem LinearMap.IsNormal.exists_orthonormalBasis_eigenvectors
 
 ```powershell
 # 使用elan安装器
-curl -O https://raw.githubusercontent.com/leanprover/elan/master/elan-init.ps1
+curl -O https://raw.githubusercontent.com/leanprover/elan/master/elan-init.ps1[需更新]
 powershell -ExecutionPolicy Bypass -f elan-init.ps1
 ```
 
@@ -548,10 +548,10 @@ example (n : ℕ) : n + 0 = n := by
 
 | 资源 | 链接 | 说明 |
 |------|------|------|
-| Mathlib4文档 | https://leanprover-community.github.io/mathlib4_docs/ | API文档 |
+| Mathlib4文档 | https://leanprover-community.github.io/mathlib4_docs/[需更新] | API文档 |
 | Lean 4手册 | https://lean-lang.org/lean4/doc/ | 官方文档 |
-| Mathematics in Lean | https://leanprover-community.github.io/mathematics_in_lean/ | 教程书籍 |
-| Lean Zulip | https://leanprover.zulipchat.com/ | 社区讨论 |
+| Mathematics in Lean | https://leanprover-community.github.io/mathematics_in_lean/[需更新] | 教程书籍 |
+| Lean Zulip | https://leanprover.zulipchat.com/[需更新] | 社区讨论 |
 
 #### 进阶主题
 

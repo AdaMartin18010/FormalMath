@@ -104,10 +104,10 @@ Laplace算子是一致椭圆的（系数为恒等矩阵）。
 ## 相关概念
 
 - [Sobolev嵌入](./sobolev-embedding.md)：正则性理论的函数空间
-- [Schauder估计](./schauder-estimate.md)：先验估计技术
-- [Harnack不等式](./harnack-inequality.md)：椭圆方程的性质
-- [极大值原理](./maximum-principle.md)：椭圆方程的工具
-- [分布解](./distribution-solution.md)：弱解概念
+- Schauder估计：先验估计技术
+- Harnack不等式：椭圆方程的性质
+- 极大值原理：椭圆方程的工具
+- 分布解：弱解概念
 
 ## 参考
 

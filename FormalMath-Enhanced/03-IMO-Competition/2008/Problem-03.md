@@ -123,8 +123,8 @@ $$n^2 + 1 = kp$$
 - **高斯整数** - 环 $\mathbb{Z}[i]$ 的唯一分解
 - **费马平方和定理** - 素数 $p \equiv 1 \pmod{4}$ 可表为两平方和
 - **狄利克雷定理** - 算术级数中有无穷多素数
-- [模运算](../../concept/number-theory/modular-arithmetic.md)
-- [素数分布](../../concept/number-theory/prime-distribution.md)
+- 模运算
+- 素数分布
 
 ## 变体问题
 
@@ -142,6 +142,6 @@ $$n^2 + 1 = kp$$
 
 ## 参考资源
 
-- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216648p1191678)
+- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216648p1191678)[需更新]
 - Iwaniec 关于 $n^2+1$ 几乎素数的结果

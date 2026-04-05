@@ -25,9 +25,9 @@ msc_secondary: ['03E30', '03E15', '03E10']
 ## Table of Contents
 
 - [ZFC公理体系完整形式化 - 序关系构造详细版](#zfc公理体系完整形式化---序关系构造详细版)
-  - [Table of Contents](#Table of Contents)
+  - Table of Contents
   - [📚 概述](#概述)
-  - [🏗️ 序关系的构造](#️-序关系的构造)
+  - 🏗️ 序关系的构造
     - [1. 关系的基本概念](#1-关系的基本概念)
       - [1.1 关系的Definition](#11-关系的Definition)
     - [2. 等价关系](#2-等价关系)
@@ -44,7 +44,7 @@ msc_secondary: ['03E30', '03E15', '03E10']
       - [5.2 良序Theorem](#52-良序Theorem)
       - [5.3 序数](#53-序数)
     - [6. 序关系的应用](#6-序关系的应用)
-      - [6.1 在Set Theory中的应用](#61-在Set Theory中的应用)
+      - 6.1 在Set Theory中的应用
       - [6.2 在代数中的应用](#62-在代数中的应用)
       - [6.3 在拓扑中的应用](#63-在拓扑中的应用)
       - [6.4 在计算机科学中的应用](#64-在计算机科学中的应用)
@@ -53,9 +53,9 @@ msc_secondary: ['03E30', '03E15', '03E10']
       - [7.1 乘积序](#71-乘积序)
       - [7.2 字典序](#72-字典序)
     - [8. 结论](#8-结论)
-  - [术语对照表 / Terminology Table](#术语对照表)
-  - [References / References](#References--references)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
+  - 术语对照表 / Terminology Table
+  - References / References
+  - 💻 Lean4形式化实现 / Lean4 Formal Implementation
     - [关系基本概念形式化](#关系基本概念形式化)
     - [等价关系形式化](#等价关系形式化)
     - [偏序关系形式化](#偏序关系形式化)

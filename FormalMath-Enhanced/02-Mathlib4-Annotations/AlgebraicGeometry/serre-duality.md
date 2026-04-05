@@ -100,10 +100,10 @@ Euler示性数：$\chi(\mathcal{O}_X) = 1 - q + p_g$，其中 $q = h^1(X, \mathc
 ## 相关概念
 
 - [层上同调](./sheaf-cohomology.md)：Serre对偶的对象
-- [典则层](./canonical-sheaf.md)：对偶性中的关键层
-- [Grothendieck对偶](./grothendieck-duality.md)：Serre对偶的推广
+- 典则层：对偶性中的关键层
+- Grothendieck对偶：Serre对偶的推广
 - [Riemann-Roch定理](./riemann-roch-theorem.md)：Serre对偶的应用
-- [Kodaira消失定理](./kodaira-vanishing.md)：Serre对偶的推论
+- Kodaira消失定理：Serre对偶的推论
 
 ## 参考
 
@@ -120,7 +120,7 @@ Euler示性数：$\chi(\mathcal{O}_X) = 1 - q + p_g$，其中 $q = h^1(X, \mathc
 ### 在线资源
 
 - [Serre Duality Wikipedia](https://en.wikipedia.org/wiki/Serre_duality)
-- [Stacks Project - Duality](https://stacks.math.columbia.edu/tag/0A7B)
+- [Stacks Project - Duality](https://stacks.math.columbia.edu/tag/0A7B)[需更新]
 
 ---
 

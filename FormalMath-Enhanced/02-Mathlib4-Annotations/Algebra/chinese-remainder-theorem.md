@@ -115,11 +115,11 @@ $f = 2 \cdot x + 1 \cdot (-(x-1)) = 2x - x + 1 = x + 1$
 
 ## 相关概念
 
-- [互素理想 (Coprime Ideals)](./coprime-ideals.md)：和为整个环的理想
-- [商环 (Quotient Ring)](./quotient-ring.md)：环模理想的商
-- [同余 (Congruence)](./congruence.md)：模运算等价关系
-- [贝祖恒等式 (Bézout's Identity)](./bezout-identity.md)：线性组合表示最大公因子
-- [直积 (Direct Product)](./direct-product.md)：代数结构的笛卡尔积
+- 互素理想 (Coprime Ideals)：和为整个环的理想
+- 商环 (Quotient Ring)：环模理想的商
+- 同余 (Congruence)：模运算等价关系
+- 贝祖恒等式 (Bézout's Identity)：线性组合表示最大公因子
+- 直积 (Direct Product)：代数结构的笛卡尔积
 
 ## 参考
 
@@ -135,7 +135,7 @@ $f = 2 \cdot x + 1 \cdot (-(x-1)) = 2x - x + 1 = x + 1$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Ideal.Quotient](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Quotient.html)
+- [Mathlib4 文档 - Ideal.Quotient](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Quotient.html)[需更新]
 - [Wikipedia - Chinese remainder theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
 
 ---

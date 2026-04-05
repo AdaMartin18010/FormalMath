@@ -19,14 +19,14 @@ processed_at: '2026-04-05'
   - [2. Stanford课程体系概述](#2-stanford课程体系概述)
     - [2.1 核心课程序列](#21-核心课程序列)
     - [2.2 荣誉课程序列](#22-荣誉课程序列)
-    - [2.3 高级专题课程](#23-高级专题课程)
+    - [2.3 高级专题课程](#高级专题课程)
   - [3. 课程内容详细分析](#3-课程内容详细分析)
     - [3.1 MATH 51/52/53: 线性代数与多变量微积分](#31-math-515253-线性代数与多变量微积分)
     - [3.2 MATH 61CM/62CM/63CM: 现代数学连续方法](#32-math-61cm62cm63cm-现代数学连续方法)
     - [3.3 MATH 113: 线性代数与矩阵理论](#33-math-113-线性代数与矩阵理论)
     - [3.4 MATH 115: 实变量函数](#34-math-115-实变量函数)
-    - [3.5 MATH 120: 现代代数](#35-math-120-现代代数)
-    - [3.6 MATH 171: 分析学基本概念](#36-math-171-分析学基本概念)
+    - [3.5 MATH 120: 现代代数](#math-120-现代代数)
+    - [3.6 MATH 171: 分析学基本概念](#math-171-分析学基本概念)
     - [3.7 EE 364: 凸优化](#37-ee-364-凸优化)
     - [3.8 CS 229: 机器学习](#38-cs-229-机器学习)
   - [4. FormalMath内容与Stanford课程对比分析](#4-formalmath内容与stanford课程对比分析)
@@ -653,15 +653,15 @@ gantt
 
 ### A.1 MATH 51 完整大纲
 
-详见: https://web.stanford.edu/class/math51/
+详见: https://web.stanford.edu/class/math51/[需更新]
 
 ### A.2 EE 364A 完整大纲
 
-详见: https://ee364a.stanford.edu/
+详见: https://ee364a.stanford.edu/[需更新]
 
 ### A.3 CS 229 数学先修大纲
 
-详见: https://cs229.stanford.edu/
+详见: https://cs229.stanford.edu/[需更新]
 
 ---
 
@@ -669,10 +669,10 @@ gantt
 
 ### Stanford课程参考
 
-1. Stanford Math 51 Course Website. https://web.stanford.edu/class/math51/
-2. Stanford EE 364A Convex Optimization. https://ee364a.stanford.edu/
-3. Stanford CS 229 Machine Learning. https://cs229.stanford.edu/
-4. Stanford Math 61CM Syllabus. https://web.stanford.edu/~jluk/math61CMautumn19/
+1. Stanford Math 51 Course Website. https://web.stanford.edu/class/math51/[需更新]
+2. Stanford EE 364A Convex Optimization. https://ee364a.stanford.edu/[需更新]
+3. Stanford CS 229 Machine Learning. https://cs229.stanford.edu/[需更新]
+4. Stanford Math 61CM Syllabus. https://web.stanford.edu/~jluk/math61CMautumn19/[需更新]
 
 ### 教材参考
 

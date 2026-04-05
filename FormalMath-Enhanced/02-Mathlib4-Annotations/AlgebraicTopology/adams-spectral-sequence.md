@@ -100,10 +100,10 @@ Adams证明不存在更高维的Hopf不变量1元。
 ## 相关概念
 
 - [Leray-Serre谱序列](./leray-serre-spectral-sequence.md)：同调版本
-- [Steenrod代数](./steenrod-algebra.md)：Adams谱序列的基础
-- [Ext函子](./ext-functor.md)：$E_2$页的代数结构
-- [稳定同伦群](./stable-homotopy-group.md)：收敛目标
-- [Adams-Novikov谱序列](./adams-novikov-spectral-sequence.md)：推广版本
+- Steenrod代数：Adams谱序列的基础
+- Ext函子：$E_2$页的代数结构
+- 稳定同伦群：收敛目标
+- Adams-Novikov谱序列：推广版本
 
 ## 参考
 

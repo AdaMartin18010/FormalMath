@@ -11,32 +11,32 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [无穷范畴深度版 / Infinity-Categories - In Depth](#无穷范畴深度版--infinity-categories---in-depth)
+- 无穷范畴深度版 / Infinity-Categories - In Depth
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
-    - [1.1 从范畴到无穷范畴 / From Categories to Infinity-Categories](#11-从范畴到无穷范畴--from-categories-to-infinity-categories)
-    - [1.2 拟范畴与无穷范畴 / Quasicategories and Infinity-Categories](#12-拟范畴与无穷范畴--quasicategories-and-infinity-categories)
-    - [1.3 高维结构与单纯集 / Higher Structures and Simplicial Sets](#13-高维结构与单纯集--higher-structures-and-simplicial-sets)
-    - [1.4 同伦相干性与复合 / Homotopy Coherence and Composition](#14-同伦相干性与复合--homotopy-coherence-and-composition)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
-    - [2.1 模型独立方法 / Model-Independent Approach](#21-模型独立方法--model-independent-approach)
-    - [2.2 无穷Topos理论 / Infinity-Topos Theory](#22-无穷topos理论--infinity-topos-theory)
-    - [2.3 稳定无穷范畴 / Stable Infinity-Categories](#23-稳定无穷范畴--stable-infinity-categories)
-    - [2.4 导出与谱代数几何 / Derived and Spectral Algebraic Geometry](#24-导出与谱代数几何--derived-and-spectral-algebraic-geometry)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
-    - [3.1 无穷范畴的计算机形式化 / Formalization of Infinity-Categories](#31-无穷范畴的计算机形式化--formalization-of-infinity-categories)
-    - [3.2 凝聚无穷Topos / Cohesive Infinity-Toposes](#32-凝聚无穷topos--cohesive-infinity-toposes)
-    - [3.3 高阶代数结构 / Higher Algebraic Structures](#33-高阶代数结构--higher-algebraic-structures)
-    - [3.4 几何表示论 / Geometric Representation Theory](#34-几何表示论--geometric-representation-theory)
-  - [4. 应用前沿 / Frontier Applications](#4-应用前沿--frontier-applications)
-    - [4.1 代数K-理论与拓扑循环同调 / Algebraic K-Theory and TC](#41-代数k-理论与拓扑循环同调--algebraic-k-theory-and-tc)
-    - [4.2 椭圆上同调与拓扑模形式 / Elliptic Cohomology and TMFs](#42-椭圆上同调与拓扑模形式--elliptic-cohomology-and-tmfs)
-    - [4.3 朗兰兹纲领的几何化 / Geometrization of Langlands](#43-朗兰兹纲领的几何化--geometrization-of-langlands)
-  - [5. 参考文献 / References](#5-参考文献--references)
-    - [5.1 奠基性著作 / Foundational Works](#51-奠基性著作--foundational-works)
-    - [5.2 现代专著 / Modern Monographs](#52-现代专著--modern-monographs)
-    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文--frontier-research-papers)
-    - [5.4 在线资源与工具 / Online Resources and Tools](#54-在线资源与工具--online-resources-and-tools)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
+    - [1.1 从范畴到无穷范畴 / From Categories to Infinity-Categories](#11-从范畴到无穷范畴-from-categories-to-infinity-categories)
+    - [1.2 拟范畴与无穷范畴 / Quasicategories and Infinity-Categories](#12-拟范畴与无穷范畴-quasicategories-and-infinity-categories)
+    - [1.3 高维结构与单纯集 / Higher Structures and Simplicial Sets](#13-高维结构与单纯集-higher-structures-and-simplicial-sets)
+    - [1.4 同伦相干性与复合 / Homotopy Coherence and Composition](#14-同伦相干性与复合-homotopy-coherence-and-composition)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
+    - [2.1 模型独立方法 / Model-Independent Approach](#21-模型独立方法-model-independent-approach)
+    - [2.2 无穷Topos理论 / Infinity-Topos Theory](#22-无穷topos理论-infinity-topos-theory)
+    - [2.3 稳定无穷范畴 / Stable Infinity-Categories](#23-稳定无穷范畴-stable-infinity-categories)
+    - [2.4 导出与谱代数几何 / Derived and Spectral Algebraic Geometry](#24-导出与谱代数几何-derived-and-spectral-algebraic-geometry)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
+    - [3.1 无穷范畴的计算机形式化 / Formalization of Infinity-Categories](#31-无穷范畴的计算机形式化-formalization-of-infinity-categories)
+    - [3.2 凝聚无穷Topos / Cohesive Infinity-Toposes](#32-凝聚无穷topos-cohesive-infinity-toposes)
+    - [3.3 高阶代数结构 / Higher Algebraic Structures](#33-高阶代数结构-higher-algebraic-structures)
+    - [3.4 几何表示论 / Geometric Representation Theory](#34-几何表示论-geometric-representation-theory)
+  - [4. 应用前沿 / Frontier Applications](#4-应用前沿-frontier-applications)
+    - [4.1 代数K-理论与拓扑循环同调 / Algebraic K-Theory and TC](#41-代数k-理论与拓扑循环同调-algebraic-k-theory-and-tc)
+    - [4.2 椭圆上同调与拓扑模形式 / Elliptic Cohomology and TMFs](#42-椭圆上同调与拓扑模形式-elliptic-cohomology-and-tmfs)
+    - [4.3 朗兰兹纲领的几何化 / Geometrization of Langlands](#43-朗兰兹纲领的几何化-geometrization-of-langlands)
+  - [5. 参考文献 / References](#5-参考文献-references)
+    - [5.1 奠基性著作 / Foundational Works](#51-奠基性著作-foundational-works)
+    - [5.2 现代专著 / Modern Monographs](#52-现代专著-modern-monographs)
+    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文-frontier-research-papers)
+    - [5.4 在线资源与工具 / Online Resources and Tools](#54-在线资源与工具-online-resources-and-tools)
 
 ---
 
@@ -724,16 +724,16 @@ Gaitsgory发展的量子版本：
 21. **nLab** - https://ncatlab.org/nlab/show/higher+category+theory
     - 关于高阶范畴论的综合wiki
 
-22. **Kerodon** - https://kerodon.net/
+22. **Kerodon** - https://kerodon.net/[需更新[需更新]]
     - Jacob Lurie维护的无穷-范畴论在线资源
 
 23. **MathOverflow** - https://mathoverflow.net/questions/tagged/higher-category-theory
     - 高阶范畴论相关问题讨论
 
-24. **Lurie's Website** - https://www.math.ias.edu/~lurie/
+24. **Lurie's Website** - https://www.math.ias.edu/~lurie/[需更新[需更新]]
     - 所有论文和著作的原始版本
 
-25. **Riehl's Website** - https://math.jhu.edu/~eriehl/
+25. **Riehl's Website** - https://math.jhu.edu/~eriehl/[需更新[需更新]]
     - Emily Riehl的讲义和补充材料
 
 26. **GitHub: agda-unimath** - https://github.com/UniMath/agda-unimath

@@ -36,8 +36,8 @@ $$1 + \frac{2^k - 1}{n} = \left(1 + \frac{1}{m_1}\right)\left(1 + \frac{1}{m_2}\
 [类似题目或推广]
 
 ## 参考资源
-- [IMO官方解答](https://www.imo-official.org/problems/IMO2013SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h)
+- [IMO官方解答](https://www.imo-official.org/problems/IMO2013SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h)[需更新]
 
 ---
 

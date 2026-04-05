@@ -84,10 +84,10 @@ Ascoli-Arzelà定理告诉我们：**在紧致空间上，一致有界且"同步
 
 ## 相关概念
 
-- [等度连续性](./equicontinuity.md)：函数族"同步连续"的概念
-- [紧性 (Compactness)](./compactness.md)：拓扑空间的基本性质
-- [函数空间](./function-space.md)：连续函数构成的空间
-- [Montel定理](./montel-theorem.md)：全纯函数的紧性判别
+- 等度连续性：函数族"同步连续"的概念
+- 紧性 (Compactness)：拓扑空间的基本性质
+- 函数空间：连续函数构成的空间
+- Montel定理：全纯函数的紧性判别
 
 ## 参考
 
@@ -103,7 +103,7 @@ Ascoli-Arzelà定理告诉我们：**在紧致空间上，一致有界且"同步
 
 ### 在线资源
 
-- [Mathlib4 文档 - Equicontinuity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/UniformSpace/Equicontinuity.html)
+- [Mathlib4 文档 - Equicontinuity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/UniformSpace/Equicontinuity.html)[需更新]
 
 ---
 

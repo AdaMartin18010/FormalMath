@@ -17,21 +17,21 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [交截理论深度版 / Intersection Theory - Deep Dive](#交截理论深度版--intersection-theory---deep-dive)
+- 交截理论深度版 / Intersection Theory - Deep Dive
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
     - [1.1 交截问题的发展历程](#11-交截问题的发展历程)
     - [1.2 周环与有理等价](#12-周环与有理等价)
     - [1.3 陈类与示性类](#13-陈类与示性类)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
     - [2.1 导出交截](#21-导出交截)
     - [2.2 虚拟基本类](#22-虚拟基本类)
     - [2.3 同调动机理论](#23-同调动机理论)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
     - [3.1 量子交截理论](#31-量子交截理论)
     - [3.2 对数Gromov-Witten理论](#32-对数gromov-witten理论)
     - [3.3 高阶代数几何中的交截](#33-高阶代数几何中的交截)
-  - [4. 参考文献 / References](#4-参考文献--references)
+  - [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 
@@ -333,7 +333,7 @@ Levine-Morel的代数cobordism理论$\Omega^*$：
 
 ### 在线资源
 
-- [Stacks Project](https://stacks.math.columbia.edu/) - 第41-43章交截理论
+- [Stacks Project](https://stacks.math.columbia.edu/)[需更新][需更新] - 第41-43章交截理论
 - [Virtual Fundamental Classes](https://math.mit.edu/~abrahmc/) - Abramovich的课程讲义
 - [Tropical Geometry and Mirror Symmetry](https://math.berkeley.edu/~bernd/) - Bernd Sturmfels的资源
 

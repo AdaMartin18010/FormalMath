@@ -227,9 +227,9 @@ Faltings 的工作横跨 **代数几何** 与 **数论** 两大分支，与 Form
 
 ### 官方与新闻来源
 
-- **Abel Prize 2026 官方公告**：https://abelprize.no/
-- **IAS 新闻报道**：https://www.ias.edu/news/2026-abel-prize-awarded-past-member-gerd-faltings
-- **Max Planck Society 新闻**：https://www.mpg.de/
+- **Abel Prize 2026 官方公告**：https://abelprize.no/[需更新[需更新]]
+- **IAS 新闻报道**：https://www.ias.edu/news/2026-abel-prize-awarded-past-member-gerd-faltings[需更新[需更新]]
+- **Max Planck Society 新闻**：https://www.mpg.de/[需更新[需更新]]
 
 ### 核心数学文献
 

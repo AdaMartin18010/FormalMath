@@ -97,11 +97,11 @@ $$\int_{-\infty}^{\infty} e^{-2\pi x^2} dx = \frac{1}{\sqrt{2}}$$
 
 ## 相关概念
 
-- [Fourier变换](./fourier-transform.md)：Plancherel定理的对象
-- [Haar测度](./haar-measure.md)：局部紧群的测度
-- [调和分析](./harmonic-analysis.md)：Plancherel定理的领域
-- [不确定性原理](./uncertainty-principle.md)：Plancherel定理的推论
-- [Pontryagin对偶](./pontryagin-duality.md)：局部紧Abel群的对偶理论
+- Fourier变换：Plancherel定理的对象
+- Haar测度：局部紧群的测度
+- 调和分析：Plancherel定理的领域
+- 不确定性原理：Plancherel定理的推论
+- Pontryagin对偶：局部紧Abel群的对偶理论
 
 ## 参考
 

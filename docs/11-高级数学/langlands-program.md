@@ -15,21 +15,21 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [Langlands纲领深度版 / Langlands Program (Advanced)](#langlands纲领深度版--langlands-program-advanced)
+- [Langlands纲领深度版 / Langlands Program (Advanced)](#langlands纲领深度版-langlands-program-advanced)
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
     - [1.1 核心数学结构](#11-核心数学结构)
     - [1.2 自守表示的精细理论](#12-自守表示的精细理论)
     - [1.3 动机与L函数](#13-动机与l函数)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
     - [2.1 范畴论视角](#21-范畴论视角)
     - [2.2 几何Langlands对应](#22-几何langlands对应)
     - [2.3 p进Langlands纲领](#23-p进langlands纲领)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
     - [3.1 几何Langlands的突破](#31-几何langlands的突破)
     - [3.2 函子性猜想进展](#32-函子性猜想进展)
     - [3.3 与物理学的联系](#33-与物理学的联系)
-  - [4. 参考文献 / References](#4-参考文献--references)
+  - [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 

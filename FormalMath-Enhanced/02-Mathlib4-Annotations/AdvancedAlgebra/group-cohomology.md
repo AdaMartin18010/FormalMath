@@ -108,9 +108,9 @@ H^1(G, Z) = Hom(G, Z)（群同态）
 
 - [导出函子](./derived-functor.md)：群上同调的理论基础
 - [Ext函子](./ext-functor.md)：群上同调的等价定义
-- [Galois上同调](./galois-cohomology.md)：绝对Galois群的上同调
-- [群扩张](./group-extension.md)：H^2 的分类对象
-- [Tate上同调](./tate-cohomology.md)：有限群的上同调变体
+- Galois上同调：绝对Galois群的上同调
+- 群扩张：H^2 的分类对象
+- Tate上同调：有限群的上同调变体
 
 ## 参考
 

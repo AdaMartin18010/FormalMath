@@ -310,7 +310,7 @@ title: 🎓 学习路径推荐
 
 | 序号 | 内容 | 资源 | 难度 |
 |------|------|------|------|
-| 1 | Mathlib4 结构概览 | [Mathlib4 官网](https://leanprover-community.github.io/mathlib4/) | ⭐⭐⭐ |
+| 1 | Mathlib4 结构概览 | [Mathlib4 官网](https://leanprover-community.github.io/mathlib4/)[需更新] | ⭐⭐⭐ |
 | 2 | 阅读简单证明 | [拉格朗日定理](./02-Mathlib4-Annotations/Algebra/lagrange-theorem.md) | ⭐⭐⭐ |
 | 3 | 理解复杂证明 | [西罗定理](./02-Mathlib4-Annotations/Algebra/sylow-theorem.md) | ⭐⭐⭐⭐ |
 | 4 | 分析证明策略 | [素数定理](./02-Mathlib4-Annotations/NumberTheory/prime-number-theorem.md) | ⭐⭐⭐⭐⭐ |

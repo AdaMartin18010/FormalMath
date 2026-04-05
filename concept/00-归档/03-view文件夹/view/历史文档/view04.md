@@ -1097,15 +1097,15 @@ learn_with_transfer(migration_path, duration_weeks=3)
 
 ```bash
 # 1. 安装Anki（集合论层）
-# Windows: https://apps.ankiweb.net/
+# Windows: https://apps.ankiweb.net/[需更新[需更新]]
 # Mac: brew install anki
 # Linux: sudo apt install anki
 
 # 2. 安装Lean 4（代数层）
-# https://leanprover-community.github.io/get_started.html
+# https://leanprover-community.github.io/get_started.html[需更新[需更新]]
 
 # 3. 安装Obsidian（范畴层）
-# https://obsidian.md/
+# https://obsidian.md/[需更新[需更新]]
 
 # 4. 安装Python环境（可选，用于自动化）
 pip install anki-connect obsidian-md

@@ -93,10 +93,10 @@ $$|f'(z_0)| = \left|\frac{1}{2\pi i} \oint_{|z-z_0|=R} \frac{f(z)}{(z-z_0)^2} dz
 
 ## 相关概念
 
-- [全纯函数 (Holomorphic Function)](./holomorphic-function.md)：复可微函数
-- [柯西积分定理 (Cauchy's Integral Theorem)](./cauchy-integral-theorem.md)：闭路积分为零
+- 全纯函数 (Holomorphic Function)：复可微函数
+- 柯西积分定理 (Cauchy's Integral Theorem)：闭路积分为零
 - [留数定理 (Residue Theorem)](./residue-theorem.md)：极点处留数的应用
-- [刘维尔定理 (Liouville's Theorem)](./liouville-theorem.md)：有界整函数必为常数
+- 刘维尔定理 (Liouville's Theorem)：有界整函数必为常数
 - [最大模原理 (Maximum Modulus Principle)](./maximum-modulus-principle.md)：全纯函数的模在内部无极大值
 
 ## 参考
@@ -112,7 +112,7 @@ $$|f'(z_0)| = \left|\frac{1}{2\pi i} \oint_{|z-z_0|=R} \frac{f(z)}{(z-z_0)^2} dz
 
 ### 在线资源
 
-- [Mathlib4 文档 - CauchyIntegral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/CauchyIntegral.html)
+- [Mathlib4 文档 - CauchyIntegral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/CauchyIntegral.html)[需更新]
 
 ---
 

@@ -16,7 +16,7 @@ Mayer-Vietoris序列在代数拓扑、流形理论、计算拓扑等领域有重
 ## 📋 目录
 
 - [Mayer-Vietoris序列：同调的计算工具](#mayer-vietoris序列同调的计算工具)
-  - [📋 目录](../../README.md#目录)
+  - [📋 目录](../../README.md)
   - [一、Mayer-Vietoris序列的基本概念](#一mayer-vietoris序列的基本概念)
     - [1.1 设置](#11-设置)
     - [1.2 序列](#12-序列)

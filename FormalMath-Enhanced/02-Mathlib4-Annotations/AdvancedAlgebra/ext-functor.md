@@ -107,9 +107,9 @@ $$\text{Ext}^1_R(M, N) \cong \{\text{短正合列 } 0 \to N \to E \to M \to 0\} 
 
 - [Tor函子](./tor-functor.md)：张量积的导出函子
 - [导出函子](./derived-functor.md)：Ext的一般框架
-- [Yoneda Ext](./yoneda-ext.md)：Ext的公理化定义
-- [投射分解](./projective-resolution.md)：计算Ext的方法
-- [内射分解](./injective-resolution.md)：另一种计算方法
+- Yoneda Ext：Ext的公理化定义
+- 投射分解：计算Ext的方法
+- 内射分解：另一种计算方法
 
 ## 参考
 
@@ -125,7 +125,7 @@ $$\text{Ext}^1_R(M, N) \cong \{\text{短正合列 } 0 \to N \to E \to M \to 0\} 
 ### 在线资源
 
 - [Ext Functor Wikipedia](https://en.wikipedia.org/wiki/Ext_functor)
-- [Stacks Project - Ext](https://stacks.math.columbia.edu/tag/00HR)
+- [Stacks Project - Ext](https://stacks.math.columbia.edu/tag/00HR)[需更新]
 
 ---
 

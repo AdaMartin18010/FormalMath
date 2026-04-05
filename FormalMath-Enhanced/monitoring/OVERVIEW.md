@@ -87,10 +87,10 @@ make status
 
 | 服务 | 地址 | 用途 |
 |------|------|------|
-| **Grafana** | http://localhost:3000 | 可视化仪表盘 |
-| **Prometheus** | http://localhost:9090 | 指标查询和告警状态 |
-| **Alertmanager** | http://localhost:9093 | 告警管理和静默 |
-| **Kibana** | http://localhost:5601 | 日志搜索和分析 |
+| **Grafana** |  | 可视化仪表盘 |
+| **Prometheus** |  | 指标查询和告警状态 |
+| **Alertmanager** |  | 告警管理和静默 |
+| **Kibana** |  | 日志搜索和分析 |
 
 ## 📈 预置仪表盘
 
@@ -264,9 +264,9 @@ groups:
 
 - [详细使用文档](docs/README.md)
 - [故障排查指南](docs/TROUBLESHOOTING.md)
-- [Prometheus 文档](https://prometheus.io/docs/)
-- [Grafana 文档](https://grafana.com/docs/)
-- [ELK Stack 文档](https://www.elastic.co/guide/index.html)
+- [Prometheus 文档](https://prometheus.io/docs/)[需更新]
+- [Grafana 文档](https://grafana.com/docs/)[需更新]
+- [ELK Stack 文档](https://www.elastic.co/guide/index.html)[需更新]
 
 ## ⚠️ 注意事项
 

@@ -13,13 +13,13 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Grothendieck群理论：向量丛的K理论](#grothendieck群理论向量丛的k理论)
-  - [📋 目录](../../README.md#目录)
-  - [一、Grothendieck群K\_0](#一grothendieck群k_0)
+  - [📋 目录](../../README.md)
+  - 一、Grothendieck群K\_0
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
   - [二、Picard群](#二picard群)
     - [2.1 定义](#21-定义)
-    - [2.2 与K\_0的关系](#22-与k_0的关系)
+    - 2.2 与K\_0的关系
   - [三、Chern特征](#三chern特征)
     - [3.1 定义](#31-定义)
     - [3.2 性质](#32-性质)
@@ -27,10 +27,10 @@ processed_at: '2026-04-05'
     - [4.1 Riemann-Roch公式](#41-riemann-roch公式)
     - [4.2 应用](#42-应用)
   - [五、高K群](#五高k群)
-    - [5.1 K\_1群](#51-k_1群)
+    - 5.1 K\_1群
     - [5.2 高K群](#52-高k群)
   - [六、Grothendieck的贡献](#六grothendieck的贡献)
-    - [6.1 K\_0的引入](#61-k_0的引入)
+    - 6.1 K\_0的引入
     - [6.2 影响](#62-影响)
   - [七、现代发展](#七现代发展)
     - [7.1 代数K理论](#71-代数k理论)
@@ -38,8 +38,8 @@ processed_at: '2026-04-05'
   - [八、总结](#八总结)
     - [Grothendieck群理论的意义](#grothendieck群理论的意义)
   - [九、Grothendieck群的详细数学表述](#九grothendieck群的详细数学表述)
-    - [9.1 K\_0群的严格构造](#91-k_0群的严格构造)
-    - [9.2 Picard群与K\_0的关系](#92-picard群与k_0的关系)
+    - 9.1 K\_0群的严格构造
+    - 9.2 Picard群与K\_0的关系
     - [9.3 Chern特征的严格定义](#93-chern特征的严格定义)
     - [9.4 Riemann-Roch中的K理论](#94-riemann-roch中的k理论)
   - [十、Grothendieck群理论的应用](#十grothendieck群理论的应用)

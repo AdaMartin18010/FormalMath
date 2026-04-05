@@ -239,6 +239,6 @@ redis-cli -p 6379 CLUSTER INFO
 ## 参考文档
 
 - [完整数据库文档](../docs/DATABASE_PRODUCTION.md)
-- [PostgreSQL官方文档](https://www.postgresql.org/docs/16/)
-- [Redis Cluster文档](https://redis.io/docs/management/scaling/)
-- [SQLAlchemy文档](https://docs.sqlalchemy.org/)
+- [PostgreSQL官方文档](https://www.postgresql.org/docs/16/)[需更新]
+- [Redis Cluster文档](https://redis.io/docs/management/scaling/)[需更新]
+- [SQLAlchemy文档](https://docs.sqlalchemy.org/)[需更新]

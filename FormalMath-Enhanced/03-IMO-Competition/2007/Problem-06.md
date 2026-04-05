@@ -143,10 +143,10 @@ $z$ 可以取任意值 $0, 1, \ldots, n$。
 
 ### 与FormalMath主项目的链接
 
-- [格点几何](../../concept/geometry/lattice-points.md)
-- [整数解计数](../../concept/combinatorics/integer-solutions.md)
-- [离散几何](../../concept/combinatorics/discrete-geometry.md)
-- [极值组合](../../concept/combinatorics/extremal-combinatorics.md)
+- 格点几何
+- 整数解计数
+- 离散几何
+- 极值组合
 
 ## 变体与推广
 
@@ -164,8 +164,8 @@ $z$ 可以取任意值 $0, 1, \ldots, n$。
 
 ## 参考
 
-- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159843p893692)
+- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159843p893692)[需更新]
 - 相关技巧：格点计数、离散几何
 
 ---

@@ -231,9 +231,9 @@ class Settings(BaseSettings):
     
     # CORS配置 - 生产环境应限制来源
     CORS_ORIGINS: List[str] = [
-        "https://formalmath.app",
-        "https://app.formalmath.com",
-        "http://localhost:3000",  # 开发环境
+        "https://formalmath.app[需更新]",
+        "https://app.formalmath.com[需更新]",
+        "",  # 开发环境
     ]
 ```
 
@@ -314,9 +314,9 @@ class Settings(BaseSettings):
 - **缓存**: Redis 7+ (可选)
 
 ### B. 参考文档
-- [FastAPI安全文档](https://fastapi.tiangolo.com/tutorial/security/)
-- [OWASP API安全Top 10](https://owasp.org/www-project-api-security/)
-- [Python性能优化指南](https://docs.python.org/3/howto/performance.html)
+- [FastAPI安全文档](https://fastapi.tiangolo.com/tutorial/security/)[需更新]
+- [OWASP API安全Top 10](https://owasp.org/www-project-api-security/)[需更新]
+- [Python性能优化指南](https://docs.python.org/3/howto/performance.html)[需更新]
 
 ### C. 联系方式
 如有问题，请联系后端开发团队。

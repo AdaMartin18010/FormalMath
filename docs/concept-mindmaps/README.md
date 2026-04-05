@@ -111,7 +111,7 @@ processed_at: '2026-04-05'
 1. **GitHub/GitLab**: 直接在线查看Markdown文件，Mermaid图表会自动渲染
 2. **VS Code**: 安装Mermaid插件后本地预览
 3. **Typora/MarkText**: 支持Mermaid的Markdown编辑器
-4. **在线工具**: 使用[Mermaid Live Editor](https://mermaid.live)粘贴代码
+4. **在线工具**: 使用[Mermaid Live Editor](https://mermaid.live)[需更新][需更新]粘贴代码
 
 ### 思维导图特点
 

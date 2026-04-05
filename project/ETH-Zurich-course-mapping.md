@@ -68,7 +68,7 @@ Introduction to linear algebra: vector spaces, systems of linear equations, base
 | 4 | `docs/02-代数结构/02-核心理论/线性代数与矩阵理论/` | 线性映射、矩阵表示 | 6小时 |
 | 5 | `docs/02-代数结构/02-核心理论/线性代数与矩阵理论/` | 行列式、特征值、特征向量 | 8小时 |
 
-**课程官网**: [ETH Course Catalogue](https://www.ethz.ch/content/dam/ethz/special-interest/mavt/department-averoes/documents/Studium/Bachelor/Studienplan_BSc_MAVT_2023.pdf)
+**课程官网**: [ETH Course Catalogue](https://www.ethz.ch/content/dam/ethz/special-interest/mavt/department-averoes/documents/Studium/Bachelor/Studienplan_BSc_MAVT_2023.pdf)[需更新]
 
 ---
 
@@ -533,7 +533,7 @@ Local fields, p-adic numbers, valuation theory, ramification theory, zeta functi
 ## 🔗 相关链接
 
 - [ETH Zurich Department of Mathematics](https://math.ethz.ch/)
-- [ETH Zurich Course Catalogue](https://www.ethz.ch/studies/application/bachelor/entry-requirements/course-catalogue.html)
+- [ETH Zurich Course Catalogue](https://www.ethz.ch/studies/application/bachelor/entry-requirements/course-catalogue.html)[需更新]
 - [FormalMath 项目主页](../README.md)
 - [FormalMath MIT课程映射](MIT-course-mapping-detailed.md)
 - [FormalMath Harvard课程映射](Harvard-course-mapping-detailed.md)

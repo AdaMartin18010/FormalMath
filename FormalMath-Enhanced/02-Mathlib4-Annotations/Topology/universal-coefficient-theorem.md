@@ -109,11 +109,11 @@ Tor项捕捉 $p$-挠的结构。
 
 ## 相关概念
 
-- [Tor函子 (Tor Functor)](./tor-functor.md)：张量积的左导出
-- [Ext函子 (Ext Functor)](./ext-functor.md)：Hom的右导出
-- [张量积 (Tensor Product)](./tensor-product.md)：模的双线性运算
-- [链复形 (Chain Complex)](./chain-complex.md)：同调代数基础
-- [分裂正合列 (Split Exact Sequence)](./split-exact-sequence.md)：直和分解
+- Tor函子 (Tor Functor)：张量积的左导出
+- Ext函子 (Ext Functor)：Hom的右导出
+- 张量积 (Tensor Product)：模的双线性运算
+- 链复形 (Chain Complex)：同调代数基础
+- 分裂正合列 (Split Exact Sequence)：直和分解
 
 ## 参考
 
@@ -124,7 +124,7 @@ Tor项捕捉 $p$-挠的结构。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Homology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Homology/Homology.html)
+- [Mathlib4 文档 - Homology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Homology/Homology.html)[需更新]
 - [Wikipedia - Universal Coefficient Theorem](https://en.wikipedia.org/wiki/Universal_coefficient_theorem)
 
 ---

@@ -104,11 +104,11 @@ $$\pi_{a,m}(x) \sim \frac{1}{\varphi(m)} \cdot \frac{x}{\ln x}$$
 
 ## 相关概念
 
-- [狄利克雷特征 (Dirichlet Character)](./dirichlet-character.md)：模 $m$ 的群同态
-- [狄利克雷 $L$-函数 (Dirichlet L-function)](./dirichlet-l-function.md)：推广黎曼 $\zeta$ 函数
-- [欧拉函数 (Euler's Totient Function)](./euler-totient.md)：$(\mathbb{Z}/m\mathbb{Z})^\times$ 的阶
+- 狄利克雷特征 (Dirichlet Character)：模 $m$ 的群同态
+- 狄利克雷 $L$-函数 (Dirichlet L-function)：推广黎曼 $\zeta$ 函数
+- 欧拉函数 (Euler's Totient Function)：$(\mathbb{Z}/m\mathbb{Z})^\times$ 的阶
 - [类数公式 (Class Number Formula)](./class-number-formula.md)：$L(1, \chi)$ 的代数解释
-- [格林-陶定理 (Green-Tao Theorem)](./green-tao-theorem.md)：任意长素数等差数列
+- 格林-陶定理 (Green-Tao Theorem)：任意长素数等差数列
 
 ## 参考
 
@@ -123,7 +123,7 @@ $$\pi_{a,m}(x) \sim \frac{1}{\varphi(m)} \cdot \frac{x}{\ln x}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - DirichletTheorem](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/DirichletTheorem.html)
+- [Mathlib4 文档 - DirichletTheorem](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/DirichletTheorem.html)[需更新]
 
 ---
 

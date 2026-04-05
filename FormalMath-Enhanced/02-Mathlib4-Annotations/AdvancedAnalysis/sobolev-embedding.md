@@ -100,10 +100,10 @@ $n=2$，$p=2$，$k=2$，满足 $k > n/p$（即 $2 > 1$）。
 ## 相关概念
 
 - [椭圆正则性](./elliptic-regularity.md)：PDE解的光滑性
-- [Sobolev空间](./sobolev-space.md)：函数空间理论
-- [Hölder空间](./holder-space.md)：目标嵌入空间
-- [紧算子](./compact-operator.md)：紧嵌入的意义
-- [分布理论](./distribution-theory.md)：弱导数的基础
+- Sobolev空间：函数空间理论
+- Hölder空间：目标嵌入空间
+- 紧算子：紧嵌入的意义
+- 分布理论：弱导数的基础
 
 ## 参考
 

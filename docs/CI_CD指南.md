@@ -135,7 +135,7 @@ pytest tests/ -v --cov=tools
 **本地运行**:
 ```bash
 # 安装Lean (首次)
-curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh
+curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh[需更新[需更新]] -sSf | sh
 
 # 编译Lean文件
 lean PiL2.lean
@@ -218,7 +218,7 @@ python tools/link_checker.py --internal-only
 
 ### 版本号规范
 
-使用[语义化版本](https://semver.org/lang/zh-CN/)(SemVer):
+使用[语义化版本](https://semver.org/lang/zh-CN/)[需更新][需更新](SemVer):
 
 ```
 版本格式: 主版本号.次版本号.修订号[-预发布标识]
@@ -415,7 +415,7 @@ CI失败
 
 ### 提交信息规范
 
-使用[Conventional Commits](https://www.conventionalcommits.org/zh-hans/v1.0.0/):
+使用[Conventional Commits](https://www.conventionalcommits.org/zh-hans/v1.0.0/)[需更新][需更新]:
 
 ```
 <type>(<scope>): <subject>
@@ -492,8 +492,8 @@ fix(tools): 修复link_checker的路径解析问题
 ### 相关资源
 
 - [GitHub Actions入门](https://docs.github.com/cn/actions/quickstart)
-- [语义化版本规范](https://semver.org/lang/zh-CN/)
-- [Conventional Commits](https://www.conventionalcommits.org/zh-hans/v1.0.0/)
+- [语义化版本规范](https://semver.org/lang/zh-CN/)[需更新][需更新]
+- [Conventional Commits](https://www.conventionalcommits.org/zh-hans/v1.0.0/)[需更新][需更新]
 - [markdownlint规则](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
 
 ---

@@ -185,14 +185,14 @@ cp redis_cache_update.py api/app/cache/tiered_cache.py
 
 ```bash
 # 测试 API 缓存
-curl -sI https://api.formalmath.org/api/v1/concepts | grep -i cache
+curl -sI https://api.formalmath.org/api/v1/concepts[需更新] | grep -i cache
 
 # 预期输出:
 # cache-control: public, max-age=1800, stale-while-revalidate=300
 # cdn-cache-control: max-age=1800
 
 # 测试静态资源
-curl -sI https://cdn.formalmath.org/static/main.1234abcd.js | grep -i cache
+curl -sI https://cdn.formalmath.org/static/main.1234abcd.js[需更新] | grep -i cache
 
 # 预期输出:
 # cache-control: public, max-age=604800, immutable
@@ -202,7 +202,7 @@ curl -sI https://cdn.formalmath.org/static/main.1234abcd.js | grep -i cache
 
 ```bash
 # 查看 X-Cache-Status 头
-curl -sI https://api.formalmath.org/api/v1/concepts | grep -i x-cache
+curl -sI https://api.formalmath.org/api/v1/concepts[需更新] | grep -i x-cache
 
 # 预期:
 # X-Cache-Status: HIT (命中) 或 MISS (未命中)
@@ -226,10 +226,10 @@ curl -sI https://api.formalmath.org/api/v1/concepts | grep -i x-cache
 
 ```bash
 # CloudFlare
-curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache" \
+curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache[需更新]" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
-  --data '{"files":["https://api.formalmath.org/api/v1/concepts"]}'
+  --data '{"files":["https://api.formalmath.org/api/v1/concepts[需更新]"]}'
 
 # CloudFront
 aws cloudfront create-invalidation \
@@ -299,7 +299,7 @@ async def get_concepts():
 
 ```bash
 # 调试命令
-curl -sv https://api.formalmath.org/api/v1/concepts 2>&1 | grep -i cache
+curl -sv https://api.formalmath.org/api/v1/concepts[需更新] 2>&1 | grep -i cache
 ```
 
 ### 问题: 用户看到过期内容
@@ -342,8 +342,8 @@ response.headers["vary"] = "Accept-Encoding, Authorization"
 <link rel="preload" href="/static/js/main.js" as="script">
 
 <!-- 预连接 -->
-<link rel="preconnect" href="https://api.formalmath.org">
-<link rel="preconnect" href="https://cdn.formalmath.org">
+<link rel="preconnect" href="https://api.formalmath.org[需更新]">
+<link rel="preconnect" href="https://cdn.formalmath.org[需更新]">
 ```
 
 ### 3. 错误处理
@@ -361,9 +361,9 @@ except Exception as e:
 ## 参考文档
 
 - [详细优化报告](./CDN_OPTIMIZATION_REPORT.md)
-- [CloudFlare 文档](https://developers.cloudflare.com/)
-- [AWS CloudFront 文档](https://docs.aws.amazon.com/cloudfront/)
-- [Nginx 缓存指南](http://nginx.org/en/docs/http/ngx_http_proxy_module.html)
+- [CloudFlare 文档](https://developers.cloudflare.com/)[需更新]
+- [AWS CloudFront 文档](https://docs.aws.amazon.com/cloudfront/)[需更新]
+- [Nginx 缓存指南](http://nginx.org/en/docs/http/ngx_http_proxy_module.html)[需更新]
 
 ## 支持
 

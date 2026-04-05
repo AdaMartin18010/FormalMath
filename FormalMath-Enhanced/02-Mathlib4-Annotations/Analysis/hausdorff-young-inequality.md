@@ -107,11 +107,11 @@ $\|f\|_{4/3} = (\int e^{-4\pi x^2/3} dx)^{3/4} = (3/4)^{3/4} (2)^{-1/2}$
 
 ## 相关概念
 
-- [Riesz-Thorin插值 (Riesz-Thorin Interpolation)](./riesz-thorin-interpolation.md)：复插值方法
+- Riesz-Thorin插值 (Riesz-Thorin Interpolation)：复插值方法
 - [Fourier变换 (Fourier Transform)](./fourier-transform.md)：时频转换
-- [Lp空间 (Lp Space)](./lp-space.md)：可积函数空间
+- Lp空间 (Lp Space)：可积函数空间
 - [Plancherel定理 (Plancherel Theorem)](./plancherel-theorem.md)：$L^2$ 等距性
-- [不确定性原理 (Uncertainty Principle)](./uncertainty-principle.md)：时频约束
+- 不确定性原理 (Uncertainty Principle)：时频约束
 
 ## 参考
 
@@ -127,7 +127,7 @@ $\|f\|_{4/3} = (\int e^{-4\pi x^2/3} dx)^{3/4} = (3/4)^{3/4} (2)^{-1/2}$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Fourier](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/FourierTransform.html)
+- [Mathlib4 文档 - Fourier](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/FourierTransform.html)[需更新]
 - [Wikipedia - Hausdorff-Young Inequality](https://en.wikipedia.org/wiki/Hausdorff%E2%80%93Young_inequality)
 
 ---

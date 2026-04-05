@@ -1318,9 +1318,9 @@ processed_at: '2026-04-05'
 
 ## 参考资源
 
-1. **波恩大学数学系**: https://www.mathematics.uni-bonn.de/
-2. **Hausdorff数学中心**: https://www.hcm.uni-bonn.de/
-3. **Max Planck数学研究所**: https://www.mpim-bonn.mpg.de/
+1. **波恩大学数学系**: https://www.mathematics.uni-bonn.de/[需更新]
+2. **Hausdorff数学中心**: https://www.hcm.uni-bonn.de/[需更新]
+3. **Max Planck数学研究所**: https://www.mpim-bonn.mpg.de/[需更新]
 4. **德语数学词汇参考**: Gerd Fischer, *Lineare Algebra* (Springer)
 5. **双语教材**: Forster, O. *Analysis* (Vieweg)
 

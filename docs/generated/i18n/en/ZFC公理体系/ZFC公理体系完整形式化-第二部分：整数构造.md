@@ -25,9 +25,9 @@ msc_secondary: ['16-XX', '11Axx', '03E30']
 ## Table of Contents
 
 - [ZFC公理体系完整形式化 - 第二部分：整数构造](#zfc公理体系完整形式化---第二部分整数构造)
-  - [Table of Contents](#Table of Contents)
+  - Table of Contents
   - [📚 概述](#概述)
-  - [🏗️ 整数的构造](#️-整数的构造)
+  - 🏗️ 整数的构造
     - [1. 整数的Definition](#1-整数的Definition)
       - [1.1 整数作为等价类](#11-整数作为等价类)
       - [1.2 整数的表示](#12-整数的表示)
@@ -48,21 +48,21 @@ msc_secondary: ['16-XX', '11Axx', '03E30']
       - [6.1 整数的因子分解](#61-整数的因子分解)
       - [6.2 同余理论](#62-同余理论)
     - [7. 整数的应用](#7-整数的应用)
-      - [7.1 在Number Theory中的应用](#71-在Number Theory中的应用)
+      - 7.1 在Number Theory中的应用
       - [7.2 在代数学中的应用](#72-在代数学中的应用)
       - [7.3 在计算机科学中的应用](#73-在计算机科学中的应用)
       - [7.4 在物理学中的应用](#74-在物理学中的应用)
     - [8. 结论](#8-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
+  - 💻 Lean4形式化实现 / Lean4 Formal Implementation
     - [整数等价关系形式化](#整数等价关系形式化)
     - [整数类型Definition](#整数类型Definition)
     - [整数运算形式化](#整数运算形式化)
     - [整数序关系形式化](#整数序关系形式化)
     - [整数Ring结构形式化](#整数Ring结构形式化)
-    - [整数Number Theory性质形式化](#整数Number Theory性质形式化)
-    - [应用案例：整数在Number Theory中的应用](#应用案例整数在Number Theory中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表)
-  - [References / References](#References--references)
+    - 整数Number Theory性质形式化
+    - 应用案例：整数在Number Theory中的应用
+  - 术语对照表 / Terminology Table
+  - References / References
 
 ## 📚 概述
 

@@ -106,10 +106,10 @@ $x$ 不是零因子，但在 $R/(x) = k[y,z]/(0)$ 中，任何元素都是零因
 ## 相关概念
 
 - [Krull维数](./krull-dimension.md)：CM定义的核心
-- [正则序列](./regular-sequence.md)：CM环的基本工具
-- [深度](./depth.md)：同调不变量
-- [Gorenstein环](./gorenstein-ring.md)：CM的特殊子类
-- [正则局部环](./regular-local-ring.md)：CM且正则参数系生成极大理想
+- 正则序列：CM环的基本工具
+- 深度：同调不变量
+- Gorenstein环：CM的特殊子类
+- 正则局部环：CM且正则参数系生成极大理想
 
 ## 参考
 
@@ -126,7 +126,7 @@ $x$ 不是零因子，但在 $R/(x) = k[y,z]/(0)$ 中，任何元素都是零因
 ### 在线资源
 
 - [Cohen-Macaulay Ring Wikipedia](https://en.wikipedia.org/wiki/Cohen%E2%80%93Macaulay_ring)
-- [Stacks Project - Cohen-Macaulay Rings](https://stacks.math.columbia.edu/tag/00N7)
+- [Stacks Project - Cohen-Macaulay Rings](https://stacks.math.columbia.edu/tag/00N7)[需更新]
 
 ---
 

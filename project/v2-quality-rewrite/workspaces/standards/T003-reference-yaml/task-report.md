@@ -41,7 +41,7 @@ processed_at: '2026-04-05'
 4. **编写了 Stacks Project Tag 引用规范**
    - 明确了 Tag 的 4 位字母数字格式。
    - 区分了 Tag 级、Section 级、Chapter 级三种引用精度。
-   - 规定了 URL 构造规则：`https://stacks.math.columbia.edu/tag/{identifier}`。
+   - 规定了 URL 构造规则：`https://stacks.math.columbia.edu/tag/{identifier}[需更新]`。
 
 5. **提供了自动化建议**
    - DOI → BibTeX：Crossref API 使用示例。

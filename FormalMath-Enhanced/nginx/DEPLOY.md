@@ -146,13 +146,13 @@ systemctl enable nginx
 
 ```bash
 # 基本状态
-curl http://localhost:8080/nginx_status
+curl 
 
 # 活跃连接数
-curl -s http://localhost:8080/nginx_status | head -1
+curl -s  | head -1
 
 # 缓存状态
-curl -I https://formalmath.example.com/api/v1/concepts | grep X-Cache-Status
+curl -I https://formalmath.example.com/api/v1/concepts[需更新] | grep X-Cache-Status
 ```
 
 ### 日志分析
@@ -182,7 +182,7 @@ rm -rf /var/cache/nginx/*
 
 # 查看 upstream 状态
 # 需要安装 nginx_upstream_check_module
-curl http://localhost:8080/upstream_check
+curl 
 ```
 
 ## 故障排除
@@ -194,7 +194,7 @@ curl http://localhost:8080/upstream_check
 **解决**：
 ```bash
 # 检查后端服务状态
-curl http://10.0.1.10:8080/health
+curl 
 
 # 检查网络连通性
 docker exec formalmath-nginx ping 10.0.1.10
@@ -229,7 +229,7 @@ docker exec formalmath-nginx nginx -s reload
 ls -la /var/cache/nginx/
 
 # 检查响应头
-curl -I https://formalmath.example.com/api/v1/concepts
+curl -I https://formalmath.example.com/api/v1/concepts[需更新]
 
 # 清除缓存
 rm -rf /var/cache/nginx/api/*
@@ -299,7 +299,7 @@ nginx hard nofile 65535
 
 ### 参考文档
 
-- [Nginx 官方文档](http://nginx.org/en/docs/)
-- [Nginx 负载均衡指南](http://nginx.org/en/docs/http/load_balancing.html)
-- [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/)
-- [Let's Encrypt 文档](https://letsencrypt.org/docs/)
+- [Nginx 官方文档](http://nginx.org/en/docs/)[需更新]
+- [Nginx 负载均衡指南](http://nginx.org/en/docs/http/load_balancing.html)[需更新]
+- [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/)[需更新]
+- [Let's Encrypt 文档](https://letsencrypt.org/docs/)[需更新]

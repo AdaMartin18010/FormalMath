@@ -107,11 +107,11 @@ $$0 \to \ker f \to V \to \text{im } f \to 0$$
 
 ## 相关概念
 
-- [核空间 (Kernel/Nullspace)](./kernel.md)：映射到零的向量集合
-- [像空间 (Image/Range)](./image.md)：映射的所有输出
-- [维数 (Dimension)](./dimension.md)：向量空间的"大小"
-- [同构定理 (Isomorphism Theorems)](./isomorphism-theorems.md)：线性代数基本定理
-- [弗雷德霍姆选择 (Fredholm Alternative)](./fredholm-alternative.md)：解的存在性理论
+- 核空间 (Kernel/Nullspace)：映射到零的向量集合
+- 像空间 (Image/Range)：映射的所有输出
+- 维数 (Dimension)：向量空间的"大小"
+- 同构定理 (Isomorphism Theorems)：线性代数基本定理
+- 弗雷德霍姆选择 (Fredholm Alternative)：解的存在性理论
 
 ## 参考
 
@@ -126,7 +126,7 @@ $$0 \to \ker f \to V \to \text{im } f \to 0$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - FiniteDimensional](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/FiniteDimensional.html)
+- [Mathlib4 文档 - FiniteDimensional](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/FiniteDimensional.html)[需更新]
 
 ---
 

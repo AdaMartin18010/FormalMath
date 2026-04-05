@@ -10,7 +10,7 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [Lean4形式化实现：域论](#lean4形式化实现域论-lean4-formalization-field-theory)
-  - [目录](#目录)
+  - 目录
   - [概述](#概述-overview)
   - [域的基本定义](#域的基本定义-basic-definitions-of-fields)
   - [域扩张](#域扩张-field-extensions)

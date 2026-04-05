@@ -115,11 +115,11 @@ $U = \{z : 0 < \text{Im } z < \pi\}$
 
 ## 相关概念
 
-- [共形映射 (Conformal Map)](./conformal-map.md)：保持角度的映射
-- [单连通 (Simply Connected)](./simply-connected.md)：无洞的区域
-- [Montel定理 (Montel's Theorem)](./montel-theorem.md)：全纯函数族的紧性
+- 共形映射 (Conformal Map)：保持角度的映射
+- 单连通 (Simply Connected)：无洞的区域
+- Montel定理 (Montel's Theorem)：全纯函数族的紧性
 - [Schwarz引理 (Schwarz Lemma)](./schwarz-lemma.md)：圆盘上的约束
-- [Carathéodory定理 (Carathéodory's Theorem)](./caratheodory-theorem.md)：边界对应
+- Carathéodory定理 (Carathéodory's Theorem)：边界对应
 
 ## 参考
 
@@ -135,7 +135,7 @@ $U = \{z : 0 < \text{Im } z < \pi\}$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Conformal](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Conformal/Basic.html)
+- [Mathlib4 文档 - Conformal](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Conformal/Basic.html)[需更新]
 - [Wikipedia - Riemann Mapping Theorem](https://en.wikipedia.org/wiki/Riemann_mapping_theorem)
 
 ---

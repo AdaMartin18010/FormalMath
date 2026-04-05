@@ -103,9 +103,9 @@ $Q$ 是无界自伴算子（在适当定义域上）。
 
 - [C*-代数](./c-star-algebra.md)：谱定理的代数框架
 - [von Neumann代数](./von-neumann-algebra.md)：无界算子的谱理论
-- [谱测度](./spectral-measure.md)：谱定理的核心工具
-- [正规算子](./normal-operator.md)：谱定理的适用对象
-- [函数演算](./functional-calculus.md)：谱定理的应用
+- 谱测度：谱定理的核心工具
+- 正规算子：谱定理的适用对象
+- 函数演算：谱定理的应用
 
 ## 参考
 

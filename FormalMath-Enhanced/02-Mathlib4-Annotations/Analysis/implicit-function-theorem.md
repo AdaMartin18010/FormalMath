@@ -100,11 +100,11 @@ $$Dg(x) = -\left(\frac{\partial F}{\partial y}\right)^{-1} \frac{\partial F}{\pa
 
 ## 相关概念
 
-- [逆函数定理 (Inverse Function Theorem)](./inverse-function-theorem.md)：局部可逆性条件
-- [秩定理 (Rank Theorem)](./rank-theorem.md)：一般形式的隐函数定理
-- [子流形 (Submanifold)](./submanifold.md)：隐函数定义的曲面
-- [拉格朗日乘子 (Lagrange Multipliers)](./lagrange-multipliers.md)：约束优化的工具
-- [比较静态 (Comparative Statics)](./comparative-statics.md)：经济学分析工具
+- 逆函数定理 (Inverse Function Theorem)：局部可逆性条件
+- 秩定理 (Rank Theorem)：一般形式的隐函数定理
+- 子流形 (Submanifold)：隐函数定义的曲面
+- 拉格朗日乘子 (Lagrange Multipliers)：约束优化的工具
+- 比较静态 (Comparative Statics)：经济学分析工具
 
 ## 参考
 
@@ -119,7 +119,7 @@ $$Dg(x) = -\left(\frac{\partial F}{\partial y}\right)^{-1} \frac{\partial F}{\pa
 
 ### 在线资源
 
-- [Mathlib4 文档 - Implicit](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Implicit.html)
+- [Mathlib4 文档 - Implicit](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Implicit.html)[需更新]
 
 ---
 

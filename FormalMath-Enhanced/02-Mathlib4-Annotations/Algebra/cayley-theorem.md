@@ -102,10 +102,10 @@ $\mathbb{Z}_4$ 同构于由 4-循环生成的 $S_4$ 的子群。
 
 ## 相关概念
 
-- [置换群 (Permutation Group)](./permutation-group.md)：由置换构成的群
-- [群作用 (Group Action)](./group-action.md)：群在集合上的作用
-- [正则表示 (Regular Representation)](./regular-representation.md)：左乘和右乘作用
-- [忠实作用 (Faithful Action)](./faithful-action.md)：核为平凡的群作用
+- 置换群 (Permutation Group)：由置换构成的群
+- 群作用 (Group Action)：群在集合上的作用
+- 正则表示 (Regular Representation)：左乘和右乘作用
+- 忠实作用 (Faithful Action)：核为平凡的群作用
 
 ## 参考
 
@@ -120,7 +120,7 @@ $\mathbb{Z}_4$ 同构于由 4-循环生成的 $S_4$ 的子群。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Perm](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Perm/Basic.html)
+- [Mathlib4 文档 - Perm](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Perm/Basic.html)[需更新]
 - [nLab - Cayley's theorem](https://ncatlab.org/nlab/show/Cayley%27s+theorem)
 
 ---

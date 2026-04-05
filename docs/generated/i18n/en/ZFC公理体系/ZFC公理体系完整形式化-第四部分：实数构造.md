@@ -25,9 +25,9 @@ msc_secondary: ['03E30', '03E15', '28-XX']
 ## Table of Contents
 
 - [ZFC公理体系完整形式化 - 第四部分：实数构造](#zfc公理体系完整形式化---第四部分实数构造)
-  - [Table of Contents](#Table of Contents)
+  - Table of Contents
   - [📚 概述](#概述)
-  - [🏗️ 实数的构造](#️-实数的构造)
+  - 🏗️ 实数的构造
     - [1. 戴德金分割方法](#1-戴德金分割方法)
       - [1.1 戴德金分割的Definition](#11-戴德金分割的Definition)
       - [1.2 实数的Definition](#12-实数的Definition)
@@ -57,7 +57,7 @@ msc_secondary: ['03E30', '03E15', '28-XX']
       - [9.4 在物理学中的应用](#94-在物理学中的应用)
       - [9.5 在计算机科学中的应用](#95-在计算机科学中的应用)
     - [10. 结论](#10-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
+  - 💻 Lean4形式化实现 / Lean4 Formal Implementation
     - [戴德金分割形式化](#戴德金分割形式化)
     - [实数类型Definition](#实数类型Definition)
     - [柯西序列形式化](#柯西序列形式化)
@@ -65,8 +65,8 @@ msc_secondary: ['03E30', '03E15', '28-XX']
     - [实数序关系形式化](#实数序关系形式化)
     - [实数完备性形式化](#实数完备性形式化)
     - [应用案例：实数在分析中的应用](#应用案例实数在分析中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表)
-  - [References / References](#References--references)
+  - 术语对照表 / Terminology Table
+  - References / References
 
 ## 📚 概述
 

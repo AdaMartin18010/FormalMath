@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Langlands纲领：数论与表示论的大统一](#langlands纲领数论与表示论的大统一)
-  - [📋 目录](../README.md#目录)
+  - [📋 目录](../README.md)
   - [摘要](#摘要)
   - [一、引言：从类域论到Langlands纲领](#一引言从类域论到langlands纲领)
     - [1.1 类域论的历史背景](#11-类域论的历史背景)
@@ -24,7 +24,7 @@ processed_at: '2026-04-05'
     - [1.3 Langlands的洞察](#13-langlands的洞察)
   - [二、自守表示与L-函数](#二自守表示与l-函数)
     - [2.1 自守形式基础](#21-自守形式基础)
-    - [2.2  adele 环](../README.md#22-adele-环)
+    - [2.2  adele 环](../README.md)
     - [2.3 自守L-函数](#23-自守l-函数)
   - [三、Langlands对应的核心](#三langlands对应的核心)
     - [3.1 原始形式](#31-原始形式)
@@ -274,7 +274,7 @@ S-对偶在拓扑场论中实现几何Langlands对应。
 ### 在线资源
 
 7. **IAS**: Langlands Program
-   - https://www.math.ias.edu/langlands/
+   - https://www.math.ias.edu/langlands/[需更新]
 
 8. **MathOverflow**: Langlands program for beginners
    - 初学者指南

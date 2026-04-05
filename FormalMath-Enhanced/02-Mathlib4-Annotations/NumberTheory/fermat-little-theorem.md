@@ -109,11 +109,11 @@ $2^{340} = (2^{10})^{34} \equiv 1^{34} = 1 \pmod{341}$
 
 ## 相关概念
 
-- [欧拉定理 (Euler's Theorem)](./euler-theorem.md)：费马小定理的推广
-- [欧拉函数 (Euler's Totient Function)](./euler-totient.md)：计算缩系的元素个数
-- [原根 (Primitive Root)](./primitive-root.md)：阶恰好为 $p-1$ 的元素
-- [卡迈克尔数 (Carmichael Number)](./carmichael-number.md)：伪素数
-- [离散对数 (Discrete Logarithm)](./discrete-logarithm.md)：密码学中的困难问题
+- 欧拉定理 (Euler's Theorem)：费马小定理的推广
+- 欧拉函数 (Euler's Totient Function)：计算缩系的元素个数
+- 原根 (Primitive Root)：阶恰好为 $p-1$ 的元素
+- 卡迈克尔数 (Carmichael Number)：伪素数
+- 离散对数 (Discrete Logarithm)：密码学中的困难问题
 
 ## 参考
 
@@ -129,7 +129,7 @@ $2^{340} = (2^{10})^{34} \equiv 1^{34} = 1 \pmod{341}$
 
 ### 在线资源
 
-- [Mathlib4 文档 - ZMod](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/Basic.html)
+- [Mathlib4 文档 - ZMod](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/Basic.html)[需更新]
 
 ---
 

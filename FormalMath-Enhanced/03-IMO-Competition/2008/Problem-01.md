@@ -88,8 +88,8 @@ $A_1, A_2$ 在直线 $BC$ 上，且 $|\vec{a_1} - \vec{m_a}| = |\vec{h} - \vec{m
 - **外心** - 三角形三边垂直平分线的交点，外接圆圆心
 - **欧拉线** - 外心 $O$、重心 $G$、垂心 $H$ 共线，且 $OG:GH = 1:2$
 - **九点圆** - 三角形中九点共圆，包括三边中点、三垂足、三顶点与垂心连线的中点
-- [三角形几何基础](../../concept/geometry/triangle-basics.md)
-- [圆的性质](../../concept/geometry/circle-properties.md)
+- 三角形几何基础
+- 圆的性质
 
 ## 变体问题
 
@@ -107,6 +107,6 @@ $A_1, A_2$ 在直线 $BC$ 上，且 $|\vec{a_1} - \vec{m_a}| = |\vec{h} - \vec{m
 
 ## 参考资源
 
-- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216645p1191685)
-- Evan Chen's Solution Notes: https://web.evanchen.cc/exams/IMO-2008-notes.pdf
+- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216645p1191685)[需更新]
+- Evan Chen's Solution Notes: https://web.evanchen.cc/exams/IMO-2008-notes.pdf[需更新]

@@ -369,7 +369,7 @@ $$\text{几何Langlands} \times \text{∞-范畴论} \to \text{同伦Langlands}$
 
 - **MathOverflow**: 标签 `langlands-conjectures`
 - **nLab**: Langlands纲领相关内容
-- **Glossary of Langlands**: https://www.math.ias.edu/glossary/
+- **Glossary of Langlands**: https://www.math.ias.edu/glossary/[需更新]
 
 ---
 

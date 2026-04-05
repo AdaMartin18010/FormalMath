@@ -98,11 +98,11 @@ $0^\#$ 存在当且仅当 $L$ 中有不可达基数。
 
 ## 相关概念
 
-- [正则基数](./regular-cardinal.md)：不可达的第一条件
-- [强极限基数](./strong-limit-cardinal.md)：不可达的第二条件
+- 正则基数：不可达的第一条件
+- 强极限基数：不可达的第二条件
 - [可测基数](./measurable-cardinal.md)：更强的大基数
-- [可构造宇宙](./constructible-universe.md)：不可达基数的内模型
-- [Grothendieck宇宙](./grothendieck-universe.md)：不可达的应用
+- 可构造宇宙：不可达基数的内模型
+- Grothendieck宇宙：不可达的应用
 
 ## 参考
 

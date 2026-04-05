@@ -321,9 +321,9 @@ docs/
 
 ### A. Mathlib4资源链接
 
-- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)
+- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新]
 - [Mathlib4 GitHub](https://github.com/leanprover-community/mathlib4)
-- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)
+- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)[需更新][需更新]
 - [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
 
 ### B. 术语对照表

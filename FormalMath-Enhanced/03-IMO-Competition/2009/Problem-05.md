@@ -110,7 +110,7 @@ title: IMO 2009 Problem 5
 - **三角不等式** - 三角形存在的充要条件
 - **函数方程** - 通过函数性质确定函数形式
 - **对合** - 满足 $f(f(x)) = x$ 的函数
-- [函数方程基础](../../concept/algebra/functional-equations.md)
+- 函数方程基础
 
 ## 变体问题
 
@@ -121,5 +121,5 @@ title: IMO 2009 Problem 5
 求所有函数使得对某固定的 $k$，边长 $a, f(b), f(b+f(a)-k)$ 构成三角形。
 
 ## 参考资源
-- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289116p1558455)
+- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289116p1558455)[需更新]

@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 
 本文档收集和整理Harvard大学的数学课程资源，为FormalMath概念体系提供权威的大学数学教育课程参考。
 
-**资源来源**：Harvard University (<https://www.harvard.edu/>)
+**资源来源**：Harvard University (<https://www.harvard.edu/[需更新[需更新]]>)
 
 **收集原则**：
 
@@ -38,7 +38,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Calculus
-- **资源链接**：<https://www.math.harvard.edu/undergraduate/>
+- **资源链接**：<https://www.math.harvard.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -71,7 +71,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Multivariable Calculus
-- **资源链接**：<https://www.math.harvard.edu/undergraduate/>
+- **资源链接**：<https://www.math.harvard.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -107,7 +107,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Linear Algebra
-- **资源链接**：<https://www.math.harvard.edu/undergraduate/>
+- **资源链接**：<https://www.math.harvard.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -142,7 +142,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Abstract Algebra
-- **资源链接**：<https://www.math.harvard.edu/undergraduate/>
+- **资源链接**：<https://www.math.harvard.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -176,7 +176,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Real Analysis
-- **资源链接**：<https://www.math.harvard.edu/undergraduate/>
+- **资源链接**：<https://www.math.harvard.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -215,7 +215,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Probability Theory
-- **资源链接**：<https://www.math.harvard.edu/undergraduate/>
+- **资源链接**：<https://www.math.harvard.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -246,7 +246,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Statistics
-- **资源链接**：<https://www.math.harvard.edu/undergraduate/>
+- **资源链接**：<https://www.math.harvard.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -279,7 +279,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Topology
-- **资源链接**：<https://www.math.harvard.edu/undergraduate/>
+- **资源链接**：<https://www.math.harvard.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -314,7 +314,7 @@ processed_at: '2026-04-05'
 
 - **级别**：研究生
 - **课程名称**：Algebraic Geometry
-- **资源链接**：<https://www.math.harvard.edu/graduate/>
+- **资源链接**：<https://www.math.harvard.edu/graduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -352,7 +352,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Number Theory
-- **资源链接**：<https://www.math.harvard.edu/undergraduate/>
+- **资源链接**：<https://www.math.harvard.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 

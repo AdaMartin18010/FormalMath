@@ -144,9 +144,9 @@ title: FormalMath 国际课程深度对齐模块
 
 - [MIT OCW Mathematics](https://ocw.mit.edu/courses/mathematics/)
 - [Harvard Math Department](https://math.harvard.edu/)
-- [Stanford Math Department](https://mathematics.stanford.edu/)
+- [Stanford Math Department](https://mathematics.stanford.edu/)[需更新]
 - [Vakil FOAG](http://math.stanford.edu/~vakil/216blog/)
-- [Stacks Project](https://stacks.math.columbia.edu/)
+- [Stacks Project](https://stacks.math.columbia.edu/)[需更新]
 
 ---
 

@@ -103,10 +103,10 @@ $M_n(\mathbb{C})$ 是有限维的，因此自动弱闭。
 ## 相关概念
 
 - [C*-代数](./c-star-algebra.md)：von Neumann代数的更广泛框架
-- [双交换子定理](./double-commutant-theorem.md)：von Neumann代数的刻画
-- [因子分类](./factor-classification.md)：Murray-von Neumann分类
-- [Tomita-Takesaki理论](./tomita-takesaki-theory.md)：模自同构群
-- [循环向量](./cyclic-vector.md)：标准形式的构造
+- 双交换子定理：von Neumann代数的刻画
+- 因子分类：Murray-von Neumann分类
+- Tomita-Takesaki理论：模自同构群
+- 循环向量：标准形式的构造
 
 ## 参考
 

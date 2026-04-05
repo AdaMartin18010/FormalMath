@@ -85,10 +85,10 @@ docker-compose logs -f elasticsearch
 
 | 服务 | 地址 | 默认凭据 |
 |------|------|---------|
-| Grafana | http://localhost:3000 | admin / (配置文件中设置) |
-| Prometheus | http://localhost:9090 | - |
-| Alertmanager | http://localhost:9093 | - |
-| Kibana | http://localhost:5601 | - |
+| Grafana |  | admin / (配置文件中设置) |
+| Prometheus |  | - |
+| Alertmanager |  | - |
+| Kibana |  | - |
 
 ## 监控组件详解
 
@@ -211,7 +211,7 @@ user_id: 12345
 
 ```bash
 export SMTP_PASSWORD="your_smtp_password"
-export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/..."
+export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/...[需更新]"
 export PAGERDUTY_SERVICE_KEY="your_pagerduty_key"
 ```
 
@@ -278,7 +278,7 @@ docker-compose restart prometheus
 docker-compose restart alertmanager
 
 # 热加载 Prometheus 配置
-curl -X POST http://localhost:9090/-/reload
+curl -X POST 
 ```
 
 ### 清理旧数据
@@ -318,7 +318,7 @@ promtool check rules prometheus/rules/*.yml
 
 3. 验证 Prometheus 健康状态：
    ```bash
-   curl http://localhost:9090/-/healthy
+   curl 
    ```
 
 ### Elasticsearch 无法启动
@@ -412,7 +412,7 @@ groups:
 
 ## 参考资料
 
-- [Prometheus 文档](https://prometheus.io/docs/)
-- [Grafana 文档](https://grafana.com/docs/)
-- [ELK Stack 文档](https://www.elastic.co/guide/index.html)
-- [Alertmanager 文档](https://prometheus.io/docs/alerting/latest/alertmanager/)
+- [Prometheus 文档](https://prometheus.io/docs/)[需更新]
+- [Grafana 文档](https://grafana.com/docs/)[需更新]
+- [ELK Stack 文档](https://www.elastic.co/guide/index.html)[需更新]
+- [Alertmanager 文档](https://prometheus.io/docs/alerting/latest/alertmanager/)[需更新]

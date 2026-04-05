@@ -533,7 +533,7 @@ processed_at: '2026-04-05'
 
 ```bash
 # 提交反馈
-curl -X POST "http://api.example.com/api/v1/feedback/feedbacks" \
+curl -X POST "" \
   -H "Content-Type: application/json" \
   -d '{
     "title": "建议增加公式导出功能",
@@ -547,13 +547,13 @@ curl -X POST "http://api.example.com/api/v1/feedback/feedbacks" \
 ### 示例2：查询待处理的紧急反馈
 
 ```bash
-curl "http://api.example.com/api/v1/feedback/feedbacks?status=pending&priority=critical"
+curl ""
 ```
 
 ### 示例3：获取近7天趋势
 
 ```bash
-curl "http://api.example.com/api/v1/feedback/trends?days=7&group_by=day"
+curl ""
 ```
 
 ---

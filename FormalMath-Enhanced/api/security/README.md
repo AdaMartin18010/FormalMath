@@ -33,7 +33,7 @@ security/
 
 ```env
 DEBUG=false
-CORS_ORIGINS=["https://yourdomain.com"]
+CORS_ORIGINS=["https://yourdomain.com[需更新]"]
 ```
 
 ### 3. 配置HTTPS
@@ -137,7 +137,7 @@ sudo ls -la /etc/ssl/private/
 
 ```python
 # 查看当前配置
-curl https://api.yourdomain.com/ | jq
+curl https://api.yourdomain.com/[需更新] | jq
 ```
 
 ### 问题：WAF误拦截

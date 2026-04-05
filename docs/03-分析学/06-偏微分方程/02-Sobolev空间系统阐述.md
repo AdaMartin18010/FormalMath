@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [1 引言 / Introduction](#1-引言--introduction)
+- 1 引言 / Introduction
 - [2 Sobolev空间的定义与基本性质](#2-sobolev空间的定义与基本性质)
   - [2.1 弱导数](#21-弱导数)
   - [2.2 $W^{k,p}(\Omega)$ 的构造](#22-wkpoomega-的构造)
@@ -27,11 +27,11 @@ processed_at: '2026-04-05'
   - [3.3 迹定理与Sobolev嵌入边界](#33-迹定理与sobolev嵌入边界)
 - [4 嵌入定理与紧性](#4-嵌入定理与紧性)
   - [4.1 Sobolev嵌入](#41-sobolev嵌入)
-  - [4.2 Rellich–Kondrachov定理](#42-rellihckondrachov定理)
+  - 4.2 Rellich–Kondrachov定理
   - [4.3 Morrey嵌入与Hölder连续性](#43-morrey嵌入与hölder连续性)
 - [5 对偶空间与负指数空间](#5-对偶空间与负指数空间)
-- [6 例子 / Examples](#6-例子--examples)
-- [7 参考文献 / References](#7-参考文献--references)
+- 6 例子 / Examples
+- 7 参考文献 / References
 
 ---
 
@@ -278,7 +278,7 @@ $$
 5. **Tartar, L.** (2007). *An Introduction to Sobolev Spaces and Interpolation Spaces*. Springer.
 6. **Maz'ya, V.** (2011). *Sobolev Spaces with Applications to Elliptic Partial Differential Equations*. Springer.
 7. **DiBenedetto, E.** (2002). *Real Analysis*. Birkhäuser.
-8. **Mathlib4 Documentation**. https://leanprover-community.github.io/mathlib4_docs/ (泛函分析与Sobolev空间形式化)
+8. **Mathlib4 Documentation**. https://leanprover-community.github.io/mathlib4_docs/[需更新[需更新]] (泛函分析与Sobolev空间形式化)
 
 ### 中文参考
 

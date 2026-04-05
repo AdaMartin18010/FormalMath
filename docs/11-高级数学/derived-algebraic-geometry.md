@@ -17,21 +17,21 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [导出代数几何深度版 / Derived Algebraic Geometry - Deep Dive](#导出代数几何深度版--derived-algebraic-geometry---deep-dive)
+- 导出代数几何深度版 / Derived Algebraic Geometry - Deep Dive
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
     - [1.1 导出代数的起源与动机](#11-导出代数的起源与动机)
     - [1.2 同伦代数结构](#12-同伦代数结构)
     - [1.3 导出概形与导出栈](#13-导出概形与导出栈)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
     - [2.1 无穷范畴框架](#21-无穷范畴框架)
     - [2.2 几何Langlands纲领](#22-几何langlands纲领)
     - [2.3 导出辛几何](#23-导出辛几何)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
     - [3.1 凝聚态数学](#31-凝聚态数学)
     - [3.2 完全相交上的矩阵因子化](#32-完全相交上的矩阵因子化)
     - [3.3 高阶代数群与表示](#33-高阶代数群与表示)
-  - [4. 参考文献 / References](#4-参考文献--references)
+  - [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 
@@ -383,7 +383,7 @@ $$\text{MF}(W) \simeq D_{\text{sing}}^b(W^{-1}(0))$$
 
 ### 在线资源
 
-- [Kerodon](https://kerodon.net/) - Jacob Lurie的高阶代数资源
+- [Kerodon](https://kerodon.net/)[需更新][需更新] - Jacob Lurie的高阶代数资源
 - [Geometric Langlands Seminar](https://math.mit.edu/research/pure/applied-sem-future.html) - 几何Langlands讲义
 - [Derived Algebraic Geometry Seminar](https://math.berkeley.edu/~arinkin/) - Arinkin的DAG研讨班
 

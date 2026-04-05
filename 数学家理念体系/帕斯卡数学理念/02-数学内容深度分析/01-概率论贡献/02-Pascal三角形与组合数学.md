@@ -17,9 +17,9 @@ processed_at: '2026-04-05'
 
 ## 📋 目录
 
-- [Pascal三角形与组合数学：从Traité du Triangle Arithmétique到现代组合学](#pascal三角形与组合数学从traité-du-triangle-arithmétique到现代组合学)
-  - [📋 目录](../../README.md#目录)
-  - [一、历史背景：Traité du Triangle Arithmétique (1665)](#一历史背景traité-du-triangle-arithmétique-1665)
+- Pascal三角形与组合数学：从Traité du Triangle Arithmétique到现代组合学
+  - [📋 目录](../../README.md)
+  - 一、历史背景：Traité du Triangle Arithmétique (1665)
     - [1.1 著作的写作与出版](#11-著作的写作与出版)
     - [1.2 帕斯卡的创新](#12-帕斯卡的创新)
   - [二、Pascal三角形的构造与性质](#二pascal三角形的构造与性质)

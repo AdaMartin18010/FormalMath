@@ -51,7 +51,7 @@ python scripts/init_feedback_system.py --all
 
 #### 提交反馈
 ```bash
-curl -X POST "http://localhost:8000/api/v1/feedback/feedbacks" \
+curl -X POST "" \
   -H "Content-Type: application/json" \
   -d '{
     "title": "搜索功能无法使用",
@@ -62,12 +62,12 @@ curl -X POST "http://localhost:8000/api/v1/feedback/feedbacks" \
 
 #### 获取反馈列表
 ```bash
-curl "http://localhost:8000/api/v1/feedback/feedbacks?page=1&page_size=10"
+curl ""
 ```
 
 #### 仪表板数据
 ```bash
-curl "http://localhost:8000/api/v1/feedback/dashboard/summary"
+curl ""
 ```
 
 ## 项目结构
@@ -241,7 +241,7 @@ SMTP_PORT=587
 SMTP_USER=user@example.com
 SMTP_PASSWORD=password
 
-SLACK_WEBHOOK_URL=https://hooks.slack.com/...
+SLACK_WEBHOOK_URL=https://hooks.slack.com/...[需更新]
 ```
 
 ### 分类规则自定义

@@ -51,10 +51,10 @@ processed_at: '2026-04-05'
 {
   "@type": "WebSite",
   "name": "FormalMath Interactive",
-  "url": "https://formalmath.example.com/",
+  "url": "https://formalmath.example.com/[需更新]",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://formalmath.example.com/search?q={search_term_string}"
+    "target": "https://formalmath.example.com/search?q={search_term_string}[需更新]"
   }
 }
 ```
@@ -64,8 +64,8 @@ processed_at: '2026-04-05'
 {
   "@type": "Organization",
   "name": "FormalMath",
-  "logo": "https://formalmath.example.com/FormalMath/icons/icon-192x192.png",
-  "sameAs": ["https://github.com/formalmath", "https://twitter.com/formalmath"]
+  "logo": "https://formalmath.example.com/FormalMath/icons/icon-192x192.png[需更新]",
+  "sameAs": ["https://github.com/formalmath", "https://twitter.com/formalmath[需更新]"]
 }
 ```
 
@@ -133,7 +133,7 @@ Disallow: /api/
 Disallow: /private/
 Disallow: /admin/
 Crawl-delay: 1
-Sitemap: https://formalmath.example.com/sitemap.xml
+Sitemap: https://formalmath.example.com/sitemap.xml[需更新]
 ```
 
 特点：
@@ -146,8 +146,8 @@ Sitemap: https://formalmath.example.com/sitemap.xml
 
 #### 6.1 预连接优化
 ```html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com[需更新]">
+<link rel="preconnect" href="https://fonts.gstatic.com[需更新]" crossorigin>
 ```
 
 #### 6.2 预加载关键资源

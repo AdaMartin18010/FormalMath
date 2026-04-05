@@ -159,7 +159,7 @@ To groups, rings, fields, and teaching. I've loved them all.
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # Contents
 
@@ -444,7 +444,7 @@ Index 537
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # Preface
 
@@ -468,7 +468,7 @@ Over 300 worked-out examples ranging from routine computations to quite challeng
 Motivational and humorous quotations  
 - Hundreds of figures, photographs, and tables
 
-The Student Solutions Manual is available from CRC Press (ISBN: 9781032779577). It has detailed solutions for all odd-numbered exercises and every other even-numbered exercise. Instructor resources are available from CRC Press for qualified adopters. Please go to https://www.routledge.com/ Contemporary-Abstract-Algebra/Gallian/p/book/9781032778914.
+The Student Solutions Manual is available from CRC Press (ISBN: 9781032779577). It has detailed solutions for all odd-numbered exercises and every other even-numbered exercise. Instructor resources are available from CRC Press for qualified adopters. Please go to https://www.routledge.com/[需更新] Contemporary-Abstract-Algebra/Gallian/p/book/9781032778914.
 
 The website www.d.umn.edu/\~jgallian also offers a wealth of additional online resources supporting the book, including:
 
@@ -1001,7 +1001,7 @@ has the property  $(a_{1}, a_{2}, \ldots, a_{10}) \cdot (10, 9, 8, 7, 6, 5, 4, 3
 51. Complete the proof of Theorem 0.7 by showing that  $\sim$  is an equivalence relation on  $S$ .  
 52. Prove that 3, 5, and 7 are the only three consecutive odd integers that are prime.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for access to interactive software that detects certain errors in identification numbers encoded by the methods discussed in this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for access to interactive software that detects certain errors in identification numbers encoded by the methods discussed in this chapter.
 
 # 1 Introduction to Groups
 
@@ -1202,7 +1202,7 @@ Courtesy of George V. Kelvin
 
 ![](images/324d318341827296f61c1076db1434b4e3bad2279daab8a0849bd7759a65c6e6.jpg)
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for Chapters 0 and 1.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for Chapters 0 and 1.
 
 # Niels Abel
 
@@ -1223,7 +1223,7 @@ In recognition of the fact that there is no Nobel Prize for mathematics, in 2002
 
 Abel prize winners John Thompson and Andrew Wiles are profiled in this book.
 
-To find more information about Abel, visit: https://mathhistory.st-andrews.ac.uk/\Biographies/Abel/
+To find more information about Abel, visit: https://mathhistory.st-andrews.ac.uk/\Biographies/Abel/[需更新]
 
 # 2
 
@@ -1602,10 +1602,10 @@ Prove that in a group,  $(ab)^{-2} = b^{-2}a^{-2}$  if and only if  $ab = ba$ .
 
 <table><tr><td></td><td>e</td><td>a</td><td>b</td><td>c</td><td>d</td></tr><tr><td>e</td><td>e</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>a</td><td>—</td><td>b</td><td>—</td><td>—</td><td>e</td></tr><tr><td>b</td><td>—</td><td>c</td><td>d</td><td>e</td><td>—</td></tr><tr><td>c</td><td>—</td><td>d</td><td>—</td><td>a</td><td>b</td></tr><tr><td>d</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr></table>
 
-Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.   
+Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.[需更新]   
 html for software that calculates the inverses of elements in  $U(n)$  and  $GL(2,Z_p)$  and for software that provides data about the  $|U(p^n)|$  and  $|U(2p^n)|$  where  $p$  is an odd
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # References
 
@@ -1619,7 +1619,7 @@ J. Mehra and H. Rechenberg, The Historical Development of Quantum Theory, Vol. 3
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 3 Finite Groups; Subgroups
 
@@ -2000,10 +2000,10 @@ a.  $\{1, -1\}$ , b.  $\left\{\left[ \begin{array}{cc}1 & 0\\ 0 & 1 \end{array} 
 89. Let  $H$  be a nontrivial subgroup of the group of rational numbers under addition. Prove that  $H$  has a nontrivial proper subgroup.  
 90. Prove that a group of order  $n$  greater than 2 cannot have a subgroup of order  $n - 1$ .
 
-Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.   
+Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.[需更新]   
 html for interactive software that provides data about the relationship between  $|a|$ $|b|$  , and the  $|ab|$  for the purpose of making conjectures about these values.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for Chapter 3.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for Chapter 3.
 
 # 4 Cyclic Groups
 
@@ -2476,9 +2476,9 @@ c.  $\langle a^{18}\rangle = \langle a^k\rangle$
 
 86. Let  $\phi$  be the Euler  $\phi$ -function. For any positive integer  $n$  prove that  $|U(|U(n)|) = \phi(\phi(n))$ .
 
-Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html for interactive software that provides data about when  $U(n)$  is cyclic, the generators of  $Z_{n}$  and the number of elements  $a$  in a group of order  $d$ . For each of these the user is asked to make conjectures about these values.
+Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html[需更新] for interactive software that provides data about when  $U(n)$  is cyclic, the generators of  $Z_{n}$  and the number of elements  $a$  in a group of order  $d$ . For each of these the user is asked to make conjectures about these values.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for Chapter 4.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for Chapter 4.
 
 I really love my subject.
 
@@ -2495,7 +2495,7 @@ He also founded the American Journal of Mathematics, the first journal in Americ
 
 For more information about Sylvester, visit:
 
-https://mathhistory.st-andrews.ac.uk/\Biographies/Sylvester/
+https://mathhistory.st-andrews.ac.uk/\Biographies/Sylvester/[需更新]
 
 ![](images/dfcb0bf2557dd5e9ec0fb3158a7fca03717b36b035bcd1b07bc3b7587af56125.jpg)
 
@@ -2503,7 +2503,7 @@ https://mathhistory.st-andrews.ac.uk/\Biographies/Sylvester/
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 5
 
@@ -2972,7 +2972,7 @@ Enigma machines were cipher devices used by the Germans in World War II (1939-19
 
 The Rubik's Cube made from 48 cubes called "facets" is the quintessential example of a group theory puzzle. It was invented in 1974 by the Hungarian Errő Rubik. By 2009 more than 350 million Rubik's Cubes had been sold. In 2020 the record time for solving it is under 4 seconds; under 17 seconds blindfolded. Although it was proved in 1995 that there was a starting configuration that required at least 20 moves to solve, it was not until 2010
 
-that it was determined that every cube could be solved in at most 20 moves. This computer calculation utilized about 35 CPU-years donated by Google to complete. In early discussions about the minimum number of moves to solve the cube in the worst possible case, someone called it "God's number," and the name stuck. A history of the quest to find God's number is given at the website at http://www.cube20.org/.
+that it was determined that every cube could be solved in at most 20 moves. This computer calculation utilized about 35 CPU-years donated by Google to complete. In early discussions about the minimum number of moves to solve the cube in the worst possible case, someone called it "God's number," and the name stuck. A history of the quest to find God's number is given at the website at http://www.cube20.org/.[需更新]
 
 The set of all configurations of the Rubik's Cube form a group of permutations of order 43,252,003,274,489,856,000. This order can be computed using GAP by labeling the faces of the cube as shown here.
 
@@ -3181,9 +3181,9 @@ e. (1243)(3521)
 75. The message VAADENWCNHREDEYA was encrypted using the permutation  $\alpha = \begin{bmatrix} 1 & 2 & 3 & 4 \\ 2 & 4 & 1 & 3 \end{bmatrix}$ . Decrypt it.  
 76. Encrypt the message ATTACK POSTPONED using the permutation  $\alpha = \begin{bmatrix} 1 & 2 & 3 & 4 & 5 \\ 2 & 1 & 5 & 3 & 4 \end{bmatrix}$ .
 
-Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html for software that provides data for about when the permutations  $(1x)(123\cdots n)$  generate  $S_{n}$ . The user is asked to make a conjecture about which  $x$  and  $n$  make this true.
+Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html[需更新] for software that provides data for about when the permutations  $(1x)(123\cdots n)$  generate  $S_{n}$ . The user is asked to make a conjecture about which  $x$  and  $n$  make this true.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for Chapter 5.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for Chapter 5.
 
 # Augustin Cauchy
 
@@ -3203,7 +3203,7 @@ the whole of mathematics as known at their time, and both made important contrib
 
 For more information about Cauchy, visit:
 
-https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
+https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/[需更新]
 
 # Alan Turing
 
@@ -3223,7 +3223,7 @@ widely honored for his fundamental contributions to computer science and his rol
 
 In 2013, Queen Elizabeth II granted Turing a pardon and issued a statement saying Turing's treatment was unjust and "Turing was an exceptional man with a brilliant mind who deserves to be remembered and recognized for his fantastic contribution to the war effort and his legacy to science."
 
-For more information about Turing, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Turing/
+For more information about Turing, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Turing/[需更新]
 
 # 6 Isomorphisms
 
@@ -3687,7 +3687,7 @@ Prove that  $\mathbf{C}$  and  $M$  are isomorphic under addition and that  $\ma
 74. Prove or disprove that  $Q^{*}$  under multiplication is isomorphic to  $Q^{+}$  under multiplication.  
 75. For all  $n \geq 1$ , prove that  $S_{n}$  is isomorphic to a subgroup of  $A_{n+2}$ . Why does this not contradict Theorem 5.5? This exercise is referred to in Chapter 24.
 
-Visit https://www.d.umn.edu/\~jgallian/JavafixB.html
+Visit https://www.d.umn.edu/\~jgallian/JavafixB.html[需更新]
 
 for true/false questions for this chapter.
 
@@ -3708,7 +3708,7 @@ Cayley's collected works comprise 13 volumes, each about 600 pages in length. He
 
 For more information about Cayley, visit:
 
-https://mathhistory.st-andrews.ac.
+https://mathhistory.st-andrews.ac.[需更新]
 
 uk/\Biographies/Cayley/
 
@@ -4109,10 +4109,10 @@ d. The group of rotations of a regular icosahedron (a solid with 20 congruent eq
 
 77. Prove that the eight-element set in the proof of Theorem 7.5 is a group.
 
-Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.   
+Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.[需更新]   
 html for interactive software that provides data for when  $Z_{pq}$  , where  $p$  and  $q$  are distinct primes, is the unique of order  $pq$  (one example is 15). Based on that data the user is asked to conjecture a necessary and sufficient condition when this is true.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter
 
 ![](images/759254fee23e4829c6e201ad03616522145dc68e1174ff90b4c6172d862e8389.jpg)  
 World History Archive / Alamy
@@ -4127,7 +4127,7 @@ Lagrange was a very careful writer with a clear and elegant style. At the age of
 
 For more information about Lagrange, visit:
 
-https://mathshistory.st-andrews.ac.uk/\Biographies/Lagrange/
+https://mathshistory.st-andrews.ac.uk/\Biographies/Lagrange/[需更新]
 
 # 8
 
@@ -4379,7 +4379,7 @@ Unlike auctions such as those on eBay, where each bid is known by everyone, a si
 
 To present a simple example that nevertheless illustrates the principal features of the method, say we wish to send the message "YES." We convert the message into a string of digits by replacing A by 01, B by 02, ..., Z by 26, and a blank by 00. So, the message YES becomes 250519. To keep the numbers involved from becoming too unwieldy, we send the message in blocks of four digits and fill in with blanks when needed. Thus, the message YES is represented by the two blocks 2505 and 1900. The person to whom the message is to be sent has picked two primes  $p$  and  $q$ , say  $p = 37$  and  $q = 73$ , and a number  $e$  that has no prime divisors in common with  $\operatorname{lcm}(p - 1, q - 1) = 72$ , say  $e = 5$ , and has published  $n = 37 \cdot 73 = 2701$  and  $e = 5$  in a public forum. We will send the "scrambled" numbers  $(2505)^{5} \mod 2701$  and  $(1900)^{5} \mod 2701$  rather than 2505 and 1900, and the receiver will unscramble them. We show the work involved for us and the receiver only for the block 2505. We determine  $(2505)^{5} \mod 2701 = 2415$  by using a modular arithmetic calculator such as the one at planetcalc.com/8326/.<sup>2</sup>
 
-Thus, the number 2415 is sent to the receiver. Now the receiver must take this number and convert it back to 2505. To do so, the receiver takes the two factors of 2701,  $p = 37$  and  $q = 73$ , and calculates the least common multiple of  $p - 1 = 36$  and  $q - 1 = 72$ , which is 72. (This is where the knowledge of  $p$  and  $q$  is necessary.) Next, the receiver must find  $e^{-1} = d$  (called the decryption exponent) in  $U(72)$ —that is, solve the equation  $5 \cdot d = 1 \mod 72$ . This number is 29. See https://www.dcode.fr/modular-inverse or use a Google search box to compute  $5^k$  for each divisor  $k$  of  $|U(72)| = \phi(9) \cdot \phi(8) = 24$  starting with 2 until we reach  $5^k \mod 72 = 1$ . Doing so, we obtain  $5^6 \mod 72 = 1$ , which implies that  $5^5 \mod 72 = 29$  is  $5^{-1}$  in  $U(72)$ .
+Thus, the number 2415 is sent to the receiver. Now the receiver must take this number and convert it back to 2505. To do so, the receiver takes the two factors of 2701,  $p = 37$  and  $q = 73$ , and calculates the least common multiple of  $p - 1 = 36$  and  $q - 1 = 72$ , which is 72. (This is where the knowledge of  $p$  and  $q$  is necessary.) Next, the receiver must find  $e^{-1} = d$  (called the decryption exponent) in  $U(72)$ —that is, solve the equation  $5 \cdot d = 1 \mod 72$ . This number is 29. See https://www.dcode.fr/modular-inverse[需更新] or use a Google search box to compute  $5^k$  for each divisor  $k$  of  $|U(72)| = \phi(9) \cdot \phi(8) = 24$  starting with 2 until we reach  $5^k \mod 72 = 1$ . Doing so, we obtain  $5^6 \mod 72 = 1$ , which implies that  $5^5 \mod 72 = 29$  is  $5^{-1}$  in  $U(72)$ .
 
 Then the receiver takes the number received, 2415, and calculates  $(2415)^{29}$  mod  $2701 = 2505$ , the encoded number. Thus, the receiver correctly determines the code for "YE." On the other hand, without knowing how  $pq$  factors, one cannot find the modulus (in our case, 72) that is needed to determine the decryption exponent  $d$ .
 
@@ -4590,9 +4590,9 @@ Use the results presented in this chapter to prove that  $U(144)$  is isomorphic
 92. Using the RSA scheme with  $p = 37$ ,  $q = 73$ ,  $e = 5$ , and replacing the letters A, B, ..., Z by 01, 02, ..., 26, what number would be sent for the message "RL"?  
 93. Explain why the message YES cannot be sent using RSA scheme with  $p = 31$  and  $q = 73$  using blocks of length 4.
 
-Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.html for interactive software that provides data about the relationship between  $|U(n)|, |U(n)^k|$  and  $k$ . Other interactive software expresses  $U(n)$  as an external direct product of groups of the form  $Z_{k}$ . Also included is an interactive version of the RSA public key cryptography scheme.
+Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.html[需更新] for interactive software that provides data about the relationship between  $|U(n)|, |U(n)^k|$  and  $k$ . Other interactive software expresses  $U(n)$  as an external direct product of groups of the form  $Z_{k}$ . Also included is an interactive version of the RSA public key cryptography scheme.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 For their ingenious contribution for making public-key cryptography useful in practice.
 
@@ -4611,7 +4611,7 @@ Among his many honors are: the Association for Computing Machinery A. M. Turing 
 
 Adleman's current position is the Henry Salvatori Distinguished Chair in Computer Science and Professor of Computer Science and Biological Sciences at the University of Southern California, where he has been since 1980.
 
-For more information about Adleman, visit: https://mathshistory.st-andrews.ac.uk/\Biographies/Adleman/
+For more information about Adleman, visit: https://mathshistory.st-andrews.ac.uk/\Biographies/Adleman/[需更新]
 
 ![](images/cefbc736e84588f4603e50ffec1227d20b8f1b68f8f933a707efb012993b7ddc.jpg)
 
@@ -4619,7 +4619,7 @@ For more information about Adleman, visit: https://mathshistory.st-andrews.ac.uk
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 9
 
@@ -5167,7 +5167,7 @@ has order 8 or 16. What can you say about the order of  $gH$  in  $G / H$  if  $
 90. Let  $G$  be a group. Prove that  $\operatorname{Inn}(G)$  is normal in  $\operatorname{Aut}(G)$ .  
 91. Let  $G$  be an Abelian group of order  $2^n$  for some positive integer  $n$ . Prove that  $G$  is cyclic if and only if  $G$  has exactly one element of order 2. What is the appropriate generalization when 2 is replaced by any prime  $p$ ?
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # Évariste Galois
 
@@ -5190,7 +5190,7 @@ French Academy of Sciences. The paper was given to Fourier who died shortly ther
 
 Among the many concepts introduced by Galois are normal subgroups, isomorphisms, simple groups, finite fields, and Galois theory. His work provided a method for disposing of several famous constructability problems, such as trisecting an arbitrary angle and doubling a cube. In his book Love and Math Edward Frenkel wrote "His [Galois's] brilliant insight has forever changed the way people think about numbers and equations." Galois's entire works fill only 60 pages.
 
-For more information on Galois, visit: https://mathhistory.st-andrews.ac.uk\Biographies/Galois/
+For more information on Galois, visit: https://mathhistory.st-andrews.ac.uk\Biographies/Galois/[需更新]
 
 ![](images/a0519de2dc060c2cf8b9b20ae4194bad77125992122fc8834ae690a93fa08ed2.jpg)
 
@@ -5198,7 +5198,7 @@ For more information on Galois, visit: https://mathhistory.st-andrews.ac.uk\Biog
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 10
 
@@ -5600,11 +5600,11 @@ is a group homomorphism. What is the kernel of the homomorphism?
 
 81. If  $\phi$  is a homomorphism from  $Z_{24}$  to  $Z_{9}$ , what are the possibilities for  $\phi(1)$ ?
 
-Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html
+Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html[需更新]
 
 for interactive software that provides data about the number of homomorphisms from  $Z_{m}$  to  $Z_{n}$ . Based on that data the user is asked to deduce a formula for this number.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # Camille Jordan
 
@@ -5619,7 +5619,7 @@ CAMILLE JORDAN was born into a well-todo family on January 5, 1838, in Lyons, Fr
 
 Jordan-Hölder Theorem from group theory. His classic book Traité des substitutions, published in 1870, was the first to be devoted solely to group theory and its applications to other branches of mathematics. Another book that had great influence and set a new standard for rigor was his Cours d'analyse. This book gave the first clear definitions of the notions of volume and multiple integral. Nearly 100 years after this book appeared, the distinguished mathematician and mathematical historian B. L. van der Waerden wrote, "For me, every single chapter of the Cours d'analyse is a pleasure to read." Jordan died in Paris on January 22, 1922.
 
-For more information on Jordan, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Jordan/
+For more information on Jordan, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Jordan/[需更新]
 
 # 11
 
@@ -5881,9 +5881,9 @@ e.  $n = p^r$  and  $m = p^{r}q^{2}$  , where  $p$  and  $q$  are distinct prime
 47. Verify the assertion made after Example 2 that the isomorphism class of the group in Example 2 can be determined by calculating only the orders of 8, 12, 18, 21 and 27.  
 48. Give an isomorphism class characterization of all finite Abelian groups with the property that every subgroup of the group is cyclic.
 
-Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html for interactive programs that provide data about Abelian groups that have various properties from which the user is asked to make conjectures.
+Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html[需更新] for interactive programs that provide data about Abelian groups that have various properties from which the user is asked to make conjectures.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # Georg Frobenius
 
@@ -5904,7 +5904,7 @@ Frobenius died August 3, 1917 in Berlin.
 
 For more information on Frobenius, visit:
 
-https://mathhistory.st-andrews.ac.
+https://mathhistory.st-andrews.ac.[需更新]
 
 uk\Biographies/Frobenius/
 
@@ -5914,7 +5914,7 @@ uk\Biographies/Frobenius/
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 12
 
@@ -6196,9 +6196,9 @@ b. Determine all positive integers  $n$  such that  $x^3 = x$  for all  $x$  in 
 69. Let  $R = \left\{\left[ \begin{array}{cc}a & b\\ c & 0 \end{array} \right]\bigg{|}a,b,c\in Z\right\}$ . Prove or disprove that  $R$  is a sub-ring of  $M(Z)$ .  
 70. Let  $R = \left\{\left[ \begin{array}{cc}a & b\\ c & d \end{array} \right]\bigg{|}a,b,c,d\in 2Z\right\}$ . Prove or disprove that  $R$  is a subring of  $M_2(Z)$ . Is your argument valid when  $2Z$  is replaced by  $kZ$  for any positive integer  $k$ ?
 
-Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html for interactive software that finds the group of units of the ring of  $Z_{n}[i]$ , the Gaussian integers modulo  $n$ , and the order of each element of the group. On the basis of the orders of the elements of the group of units for various cases of  $n$ , the user is asked to try to guess the isomorphism class of this group. Another program determines the order of the group of units in the ring of  $2 \times 2$  matrices with entries from  $Z_{n}$ . The user is asked to make conjectures about the relationship between  $|SL(2,m)|$  and  $SL(2,n)|$  and between  $|GL(2,m)|$  and  $|GL(2,n)|$  for certain special cases of  $n$ .
+Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html[需更新] for interactive software that finds the group of units of the ring of  $Z_{n}[i]$ , the Gaussian integers modulo  $n$ , and the order of each element of the group. On the basis of the orders of the elements of the group of units for various cases of  $n$ , the user is asked to try to guess the isomorphism class of this group. Another program determines the order of the group of units in the ring of  $2 \times 2$  matrices with entries from  $Z_{n}$ . The user is asked to make conjectures about the relationship between  $|SL(2,m)|$  and  $SL(2,n)|$  and between  $|GL(2,m)|$  and  $|GL(2,n)|$  for certain special cases of  $n$ .
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # I. N. Herstein
 
@@ -6213,7 +6213,7 @@ I. N. HERSTEIN was born on March 28, 1923, in Poland. His family moved to Canada
 
 University of Pennsylvania, and Cornell University. Herstein wrote more than 100 research papers and a dozen books. Although his principal interest was noncommutative ring theory, he also wrote papers on finite groups, linear algebra, and mathematical economics. His textbook Topics in Algebra, first published in 1964, dominated the field for 20 years and has become a classic. Herstein had great influence through his teaching and his collaboration with colleagues. He had 29 Ph.D. students, and traveled and lectured widely. His nonmathematical interests included languages and art. He spoke Italian, Hebrew, Polish, and Portuguese. Herstein died on February 9, 1988, after a long battle with cancer.
 
-For more information on Herstein, visit: https://mathhistory.st-andrews.ac.uk\Biographies/Herstein/
+For more information on Herstein, visit: https://mathhistory.st-andrews.ac.uk\Biographies/Herstein/[需更新]
 
 ![](images/16d70783562b510f8b71807148dd791d5b67874ba0c226ef9aea1bf4259c8d0b.jpg)
 
@@ -6221,7 +6221,7 @@ For more information on Herstein, visit: https://mathhistory.st-andrews.ac.uk\Bi
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 13
 
@@ -6497,9 +6497,9 @@ d. Find all solutions of this equation in  $Z_{14}$
 79. Let  $p$  be an odd prime. Use Fermat's theorem from number theory that says that when  $p = 1 \mod 4$ , there are integers  $a$  and  $b$  such that  $a^2 + b^2 = p$  to prove that the ring  $Z_p[i] = \{a + bi \mid a, b \in Z_p\}$  is a field if and only if  $p = 3 \mod 4$ .  
 80. Let  $p$  be a prime and  $n$  a positive integer. Prove that if  $a$  is a zero-divisor in  $Z_{p^n}$ , then  $a$  is nilpotent.
 
-Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html for interactive programs that count the number of idempotent elements and the number of nilpotent elements in  $Z_{n}$  and  $Z_{n}[i]$ . The user is asked to make conjectures about these numbers.
+Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html[需更新] for interactive programs that count the number of idempotent elements and the number of nilpotent elements in  $Z_{n}$  and  $Z_{n}[i]$ . The user is asked to make conjectures about these numbers.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.htmlm for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.htmlm[需更新] for true/false questions for this chapter.
 
 # B. L. van der Waerden
 
@@ -6516,7 +6516,7 @@ After nearly 100 years, a translation of his algebra book is still in print. In 
 
 Beyond his classic book, van der Waerden made important contributions to the history of mathematics and science, and had more than 2300 academic descendants. van der Waerden died on January 12 1996 at age 92 in Zürich, Switzerland.
 
-For more information on Van der Waerden, visit: https://mathhistory.st-andrews.ac.uk/\Biographies/Vander_Waerden/
+For more information on Van der Waerden, visit: https://mathhistory.st-andrews.ac.uk/\Biographies/Vander_Waerden/[需更新]
 
 # 14
 
@@ -6835,7 +6835,7 @@ Express  $I$  in the form  $\langle f_1(x),f_2(x)\rangle$  where  $f_{1}(x)$  an
 86. Give an example of a commutative ring with unity  $R$  and an ideal  $I$  of  $R$  such that  $R$  is not an integral domain but  $R / I$  is a field.  
 87. Redo Example 16 by showing each nonzero  $ax + b$  has an inverse.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # Richard Dedekind
 
@@ -6852,7 +6852,7 @@ akg-images/Newscom
 
 Although this school was less than university level, Dedekind remained there for the next 50 years. He died in Brunswick in 1916. During his career, Dedekind made numerous fundamental contributions to mathematics. His treatment of irrational numbers, "Dedekind cuts," put analysis on a firm, logical foundation. His work on unique factorization led to the modern theory of algebraic numbers. He was a pioneer in the theory of rings and fields. The notion of ideals as well as the term itself are attributed to Dedekind. Mathematics historian Morris Kline has called him "the effective founder of abstract algebra."
 
-For more information on Dedekind, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Dedekind/
+For more information on Dedekind, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Dedekind/[需更新]
 
 # Emmy Noether
 
@@ -6873,7 +6873,7 @@ It was not until she was 38 that Noether's true genius revealed itself. Over the
 
 With the rise of Hitler in 1933, Noether, a Jew, fled to the United States and took a position at Bryn Mawr College. She died suddenly on April 14, 1935, following an operation.
 
-For more information on Noether, visit: https://mathhistory.st-andrews.ac.uk\Biographies/Dedekind/
+For more information on Noether, visit: https://mathhistory.st-andrews.ac.uk\Biographies/Dedekind/[需更新]
 
 ![](images/ad05d47337c68a7c54d6623ce71f780d674d3a526707af6119a0bc549129ac3c.jpg)
 
@@ -6881,7 +6881,7 @@ For more information on Noether, visit: https://mathhistory.st-andrews.ac.uk\Bio
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 15
 
@@ -7243,7 +7243,7 @@ e. Is Ker  $\phi$  a maximal ideal?
 78. Find a ring homomorphism  $\phi$  from  $Z_{12}$  to  $Z_{6}$  such that  $\phi(Z_{12})$  has order 3. Is there more than one?  
 79. Let  $2Z$  denote the ring of all even integers. Determine all ring homomorphisms from  $2Z$  to  $2Z$ . Can your proof be adapted to work for determining all ring homomorphisms from  $nZ$  to  $nZ$  for all positive integers  $n$ .
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 For Artin, to be a mathematician meant to participate in a great common effort, to continue work begun thousands of years ago, to shed new light on old discoveries, to seek new ways to prepare the developments of the future. Whatever standards we use, he was a great mathematician.
 
@@ -7258,7 +7258,7 @@ logy and the theory of braids—a field he invented. Artin received the American
 
 For more information about Artin, visit:
 
-https://mathhistory.st-andrews.ac.
+https://mathhistory.st-andrews.ac.[需更新]
 
 uk\Biographies/Artin/
 
@@ -7268,7 +7268,7 @@ uk\Biographies/Artin/
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 16
 
@@ -7663,7 +7663,7 @@ in  $Z_{p}[x]$
 78. Find the remainder when  $x^{51}$  is divided by  $x + 4$  in  $Z_7[x]$ .  
 79. Let  $F$  be a field. Show that there exist  $a, b \in F$  with the property that  $x^{2} + x + 1$  divides  $x^{43} + ax + b$ .
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 The 1986 Steele Prize for cumulative influence is awarded to Saunders Mac Lane for his many contributions to algebra and algebraic topology, and in particular for his pioneering work in homological and categorical algebra.
 
@@ -7678,7 +7678,7 @@ Much of Mac Lane's work focuses on the interconnections among algebra, topology,
 
 For more information on Mac Lane, visit:
 
-https://mathshistory.st-andrews.ac.uk\Biographies/MacLane/
+https://mathshistory.st-andrews.ac.uk\Biographies/MacLane/[需更新]
 
 ![](images/2ec0ec09f583caff0201392fdaa198fcdf1725e2d888e88bc1e43e5b795a8678.jpg)
 
@@ -7686,7 +7686,7 @@ https://mathshistory.st-andrews.ac.uk\Biographies/MacLane/
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 17
 
@@ -8072,9 +8072,9 @@ and  $a_{n} \neq 0$ . Prove that if  $r$  and  $s$  are relatively prime integer
 
 52. Let  $f(x)$  and  $g(x)$  belong to  $F[x]$ , where  $F$  is a field. If  $f(x) = g(x)$  for  $x = 1, 2$ , and 3 and these three are distinct, what can you say about the degree of  $f(x) - g(x)$ ?
 
-Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.html this interactive software implements the "Mod  $p$  Irreducibility Test."
+Visit https://www.d.umn.edu/\~jgallian/msproject06/project_xukai7.html[需更新] this interactive software implements the "Mod  $p$  Irreducibility Test."
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # Serge Lang
 
@@ -8091,7 +8091,7 @@ Lang made significant contributions to number theory, algebraic geometry, differ
 
 more than 120 research articles and 60 books. His most famous and influential book was his graduate-level Algebra. Lang was a prize-winning teacher known for his extraordinary devotion to students. Lang often got into heated discussions about mathematics, the arts, and politics. In one incident, he threatened to hit a fellow mathematician with a bronze bust for not conceding it was self-evident that the Beatles were greater musicians than Beethoven. Among Lang's honors were the Steele Prize for Mathematical Exposition from the American Mathematical Society, the Cole Prize in Algebra (see Chapter 24), and election to the National Academy of Sciences. Lang died on September 25, 2005, at the age of 78.
 
-For more information on Lang, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Lang/
+For more information on Lang, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Lang/[需更新]
 
 # 18
 
@@ -8469,9 +8469,9 @@ Thomas Mann, The Magic Mountain
 45. Prove that for every field  $F$ , there are infinitely many irreducible elements in  $F[x]$ .  
 46. Prove that  $Z[\sqrt{-2}]$  and  $Z[\sqrt{2}]$  are unique factorization domains. (Hint: Mimic Example 7 in Chapter 18.)
 
-Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html This interactive software determines when a positive integer is a prime in  $Z_{n}[i]$ .
+Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html[需更新] This interactive software determines when a positive integer is a prime in  $Z_{n}[i]$ .
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # Sophie Germain
 
@@ -8492,7 +8492,7 @@ Germain is best known for her work on Fermat's Last Theorem. She died on June 27
 
 For more information on Germain, visit:
 
-https://mathshistory.st-andrews.ac.uk\Biographies/Germain/
+https://mathshistory.st-andrews.ac.uk\Biographies/Germain/[需更新]
 
 For spectacular contributions to number theory and related fields, for major advances on fundamental conjectures, and for settling Fermat's Last Theorem.
 
@@ -8513,7 +8513,7 @@ The bubble soon burst when experts had an opportunity to scrutinize Wiles's manu
 
 Wiles was born in 1953 in Cambridge, England. He obtained his bachelor's degree at Oxford and his doctoral degree at Cambridge University in 1980. In 2011 he rejoined Oxford. Among his many high honors are the Cole Prize, the Fermat Prize, the Abel Prize, the Copley Medal, and a knighthood. In 2018 he was the first person ever appointed as a Regius Professor of Mathematics at Oxford.
 
-For more information on Wiles, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Wiles/
+For more information on Wiles, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Wiles/[需更新]
 
 This theorem [Fermat's Little Theorem] is one of the great tools of modern number theory.
 
@@ -8526,7 +8526,7 @@ PIERRE DE FERMAT (pronounced Fair-mah) was born in Beaumont-de-Lomagne, France i
 
 Addressing Fermat's contributions to number theory André Weil wrote that "...what we possess of his methods for dealing with curves of genus 1 is remarkably coherent; it is still the foundation for the modern theory of such curves." A Wikipedia article on Fermat concluded with the statement "Fermat essentially created the modern theory of numbers." Beyond his contributions to number theory, Fermat found a law of optics and is considered as one of the founders of analytic geometry and probability theory. In 1989 the Institut de Mathétiques de Toulouse in France established the Fermat prize for research in fields in which Fermat made majors contributions. Among the recipients are Andrew Wiles and Richard Taylor.
 
-For more information on Fermat, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Fermat/
+For more information on Fermat, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Fermat/[需更新]
 
 ![](images/ffaa0f5e171097b14aa12e4049816728a01d86034fa1fec68ec86e6d5ebbca5a.jpg)
 
@@ -8534,7 +8534,7 @@ For more information on Fermat, visit: https://mathhistory.st-andrews.ac.uk/Biog
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 19
 
@@ -8953,7 +8953,7 @@ If the factorization of  $f(x)$  into irreducibles over  $F$  has the form  $x(x
 
 56. Let  $F$  be a field and  $f(x) \in F$ . If  $0 = f(a) = f'(a) = f''(a)$ , what can you say about  $a$ ?
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # Leopold Kronecker
 
@@ -8976,7 +8976,7 @@ Kronecker died on December 29, 1891, at the age of 68.
 
 For more information on Kronecker, visit:
 
-https://mathshistory.st-andrews.ac.uk\Biographies/Kronecker//
+https://mathshistory.st-andrews.ac.uk\Biographies/Kronecker//[需更新]
 
 # 20
 
@@ -9342,7 +9342,7 @@ Edgar Guest
 59. Let  $a$  be a zero of an irreducible polynomial  $c_{d-1}x^{d-1} + c_{d-2}x^{d-2} + \dots + c_1x + c_0$  over a field  $F$ . Write  $a^{-1}$  as linear combination of the basis elements  $a, a, a^2, \ldots, a^{d-1}$  with scalars in  $F$ .  
 60. Let  $F$  be a field and  $K$  a splitting field for some nonconstant polynomial over  $F$ . Show that  $K$  is a finite extension of  $F$ .
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 One cannot overestimate the importance of this paper [by Steinitz]. The appearance of this paper marks a turning point in the history of algebra of the 20th century.
 
@@ -9355,7 +9355,7 @@ ERNST STEINITZ was born in Laurahtte, Silesia, Germany (now Poland) on June 13, 
 
 "Every algebraist should have read at least once this basic original paper on field theory." In his book on the history of mathematics, Bourbaki describes Steinitz's paper on fields as "a fundamental work which may be considered as the origin of today's concept of algebra." In addition to field theory Steinitz made important contributions to theory of polyhedra, module theory, linear algebra, algebraic geometry and graph theory. Two of his famous theorems are the Steinitz replacement theorem for vector spaces and the Primitive Element Theorem. He died on September 29, 1928 in Kiel, Germany.
 
-For more information on Steinitz, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Steinitz/
+For more information on Steinitz, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Steinitz/[需更新]
 
 ![](images/fe3b59e9cf8de9a555bfcffc8cec8ea3df52234505b3b8d8a6d4e528843bb4f9.jpg)
 
@@ -9363,7 +9363,7 @@ For more information on Steinitz, visit: https://mathshistory.st-andrews.ac.uk\B
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 21
 
@@ -9727,7 +9727,7 @@ Mary Case
 76. Let  $p$  be a prime. If  $p(x)$  is an irreducible polynomial of degree  $d$  over  $Z_p$  and  $a$  is a zero of  $p(x)$  in some extension field of  $Z_p$ , write  $p(x)$  as a product of linear polynomials over  $Z_p(a)$ .  
 77. Let  $p$  be a prime and let  $\operatorname{GF}(p^n) = Z_p(a)$  for some  $a$  in  $\operatorname{GF}(p^n)$ . Write  $x^n - x$  as a product of linear polynomials over  $Z_p(a)$ .
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 One of the books [written by L. E. Dickson] is his major, three-volume History of the Theory of Numbers which would be a life's work by itself for a more ordinary man.
 
@@ -9744,7 +9744,7 @@ number theory is unsullied by any applications."
 
 He also had a sense of humor. Dickson would often mention his honeymoon: "It was a great success," he said, "except that I only got two research papers written." Dickson received many honors in his career. He was the first to be awarded the prize from the American Association for the Advancement of Science for the most notable contribution to the advancement of science, and the first to receive the Cole Prize in algebra from the American Mathematical Society. The University of Chicago has research instructorships named after him. Dickson died on January 17, 1954.
 
-For more information on Dickson, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Dickson/
+For more information on Dickson, visit: https://mathshistory.st-andrews.ac.uk\Biographies/Dickson/[需更新]
 
 # E. H. Moore
 
@@ -9759,7 +9759,7 @@ E. H. Moore (Eliakim Hastings Moore) was born on January 26, 1862 in Marietta, O
 
 producer of Ph.D.'s in mathematics and the premier institution for research in mathematics. He was elected President of the American Mathematical Society and the National Academy of Science, as were four of his many Ph.D. students. He made significant contributions to field theory, algebraic geometry, and number theory. He served as President of American Association for the Advancement of Science and received six honorary degrees. In 2002, the American Mathematical Society established a research prize in his honor. He died on December 30, 1932.
 
-For more information on Moore, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Moore_Eliakim/
+For more information on Moore, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Moore_Eliakim/[需更新]
 
 ![](images/be0e036e8a1de2102b5b39338ab923ed5e2f449c8e7eb28f65eadfb7d9cd408c.jpg)
 
@@ -9767,7 +9767,7 @@ For more information on Moore, visit: https://mathhistory.st-andrews.ac.uk/Biogr
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 22
 
@@ -9893,7 +9893,7 @@ Spoken by a member of the audience after De Morgan gave a lecture on the impossi
 
 21. If  $a, b$ , and  $c$  are constructible, show that the real roots of  $ax^2 + bx + c$  are constructible.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 ![](images/db0a245037e220fd71fd7c580c58391d179749050ea8f53e47817d5829737962.jpg)
 
@@ -9901,7 +9901,7 @@ Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 23
 
@@ -10299,9 +10299,9 @@ c.  $G$  has a cyclic subgroup of order 30.
 66. Let  $H$  be a Sylow 5-subgroup of  $A_5$ . Prove that  $N(H)$  is isomorphic to  $D_5$ .  
 67. In  $A_{5}$ , find an element of order 2 in the  $N(\langle (123) \rangle)$ .
 
-https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html This interactive software uses a counter to keep track of how many integers Theorem 25.1 eliminates in any given interval of integers. Another interactive program keeps track of how many integers the Index Theorem eliminates in any given interval of integers.
+https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html[需更新] This interactive software uses a counter to keep track of how many integers Theorem 25.1 eliminates in any given interval of integers. Another interactive program keeps track of how many integers the Index Theorem eliminates in any given interval of integers.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 Sylow's Theorem is 100 years old. In the course of a century this remarkable theorem has been the basis for the construction of numerous theories.
 
@@ -10318,7 +10318,7 @@ In 1902, Sylow and Elling Holst published Abel's correspondence. Sylow's spectac
 
 In 1869, Sylow was offered a professorship at Christiania University but turned it down. Upon Sylow's retirement from high school teaching at age 65, Lie mounted a successful campaign to establish a chair for Sylow at Christiania University. Sylow held this position until his death on September 7, 1918.
 
-For more information on Sylow, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Sylow/
+For more information on Sylow, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Sylow/[需更新]
 
 ![](images/a0adfc592aea9806393101dec837a6b75375dceef1922ac9dd379ae586bef24f.jpg)
 
@@ -10326,7 +10326,7 @@ For more information on Sylow, visit: https://mathhistory.st-andrews.ac.uk/Biogr
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 24
 
@@ -10449,7 +10449,7 @@ At the annual meeting of the American Mathematical Society in 1981, Gorenstein a
 
 Several people who played a central role in the classification are working on a "second generation" proof that will be much shorter and more comprehensible.
 
-The Herculean undertaking by group theorists from the 1950s through the mid 2010s to discover and classify the finite simple groups has parallels in both chemistry and physics. The end result is analogous to the completion of the periodic table for chemical elements and the effort is reminiscent of the quest of physicists from the 1920s through the 1970s to develop quantum field theory. An image "periodic table" for finite simple groups is available at https://irandrus.files.wordpress.com/2012/06/periodic-table-of-groups.pdf
+The Herculean undertaking by group theorists from the 1950s through the mid 2010s to discover and classify the finite simple groups has parallels in both chemistry and physics. The end result is analogous to the completion of the periodic table for chemical elements and the effort is reminiscent of the quest of physicists from the 1920s through the 1970s to develop quantum field theory. An image "periodic table" for finite simple groups is available at https://irandrus.files.wordpress.com/2012/06/periodic-table-of-groups.pdf[需更新]
 
 # Nonsimplicity Tests
 
@@ -10586,7 +10586,7 @@ The Fields Medal
 
 Three-minute video clips of the recipients of the 2014 and 2018 Fields medal winners talking about their work are available at:
 
-https://www.youtube.com/results?search_query=2018+fields+ medalists
+https://www.youtube.com/results?search_query=2018+fields+[需更新] medalists
 
 # The Cole Prize
 
@@ -10648,7 +10648,7 @@ Herbert V. Prochnow
 
 34. Use the techniques from this chapter to prove that a group of order 36 has a normal subgroup of order 3 or a normal subgroup of order 9. Does your argument generalize to prove the statement: A group of order  $4p^n$  where  $p$  is an odd prime has a normal subgroup of order  $p^{n-1}$  or a normal subgroup of order  $p^n$ ?
 
-Visit https://www.d.umn.edu/\~{}jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/\~{}jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 Fresh out of graduate school, he [Aschbacher] had just entered the field, and from that moment he became the driving force behind my program. In rapid succession he proved one astonishing theorem after another. Although there were many other major contributors to this final assault, Aschbacher alone was responsible for shrinking my projected 30-year timetable to a mere 10 years.
 
@@ -10669,7 +10669,7 @@ Aschbacher's dissertation work in the area of combinatorial geometries had led h
 
 For more information on Aschbacher, visit:
 
-https://mathshistory.st-andrews.ac.uk/Biographies/Aschbacher/
+https://mathshistory.st-andrews.ac.uk/Biographies/Aschbacher/[需更新]
 
 Gorenstein was one of the most influential mathematicians of the last few decades.
 
@@ -10690,7 +10690,7 @@ Through his pioneering research papers, his dynamic lectures, his numerous perso
 
 Among the honors received by Gorenstein are the Steele Prize from the American Mathematical Society and election to membership in the National Academy of Sciences and the American Academy of Arts and Sciences.
 
-For more information on Gorenstein, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Gorenstein/
+For more information on Gorenstein, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Gorenstein/[需更新]
 
 There seemed to be no limit to his power.
 
@@ -10711,7 +10711,7 @@ Among Thompson's many honors are the Cole Prize in algebra and the Fields Medal.
 
 For more information on Thompson, visit:
 
-https://mathhistory.st-andrews.
+https://mathhistory.st-andrews.[需更新]
 
 ac.uk/Biographies/Thompson_John/
 
@@ -11068,7 +11068,7 @@ b. Express  $b^3 abab^3 a$  in the form  $b^i a^j$ .
 31. Referring to Example 7 in this chapter, show as many letters as you can that are equivalent to  $\theta$ .  
 32. Suppose that a group of order 8 has exactly five elements of order 2. Identify the group.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # References
 
@@ -11089,7 +11089,7 @@ Courtesy of Jonathan Hall
 
 are classics. His mathematical legacy includes more than 120 research papers on group theory, coding theory, and design theory. His 1943 paper on projective planes ranks among the most cited papers in mathematics. Several fundamental concepts as well as a sporadic simple group are identified with Hall's name. One of Hall's most celebrated results is his solution to the "Burnside Problem" for exponent 6—that is, his proof that a finitely generated group in which the order of every element divides 6 must be finite. Hall influenced both John Thompson and Michael Aschbacher, two of finite group theory's greatest contributors. It was Hall who suggested Thompson's Ph.D. dissertation problem. Hall's Ph.D. students at Caltech included Donald Knuth and Robert McEliece.
 
-For more information on Hall, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Hall.Marshall/
+For more information on Hall, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Hall.Marshall/[需更新]
 
 ![](images/a89e04eef6ed0b3f6079985763c38a5ff377d99cdcd854ab606674ad2c1d2a94.jpg)
 
@@ -11097,7 +11097,7 @@ For more information on Hall, visit: https://mathshistory.st-andrews.ac.uk/Biogr
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 26
 
@@ -11250,7 +11250,7 @@ What defines the categories?
 19. Suppose that an isometry of a plane fixes exactly one point. What type of isometry must it be?  
 20. Suppose that  $A$  and  $B$  are rotations of  $180^{\circ}$  about the points  $a$  and  $b$ , respectively. What is  $A$  followed by  $B$ ? How is the composite motion related to the points  $a$  and  $b$ ?
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 ![](images/f2e59450080aa8bd7da23f5409644a9685de4831eb10c3915321342efe93d1c3.jpg)
 
@@ -11258,7 +11258,7 @@ Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # Symmetry and Counting
 
@@ -11445,13 +11445,13 @@ Epicurus
 14. Let  $G$  be a finite group, let  $H$  be a subgroup of  $G$ , and let  $S$  be the set of left cosets of  $H$  in  $G$ . For each  $g$  in  $G$ , let  $\gamma_g$  denote the element of  $\operatorname{sym}(S)$  defined by  $\gamma_g(xH) = gxH$ . Show that  $G$  acts on  $S$  under the action  $g \to \gamma_g$ .  
 15. For a fixed square, let  $L_{1}$  be the perpendicular bisector of the top and bottom of the square and let  $L_{2}$  be the perpendicular bisector of the left and right sides. Show that  $D_{4}$  acts on  $\{L_{1}, L_{2}\}$  and determine the kernel of the mapping  $g \to \gamma_{g}$ .
 
-Visit https://www.d.umn.edu/\~jgallian/JavafixB.html
+Visit https://www.d.umn.edu/\~jgallian/JavafixB.html[需更新]
 
 for true/false questions for this chapter.
 
 Burnside wrote more than 150 research papers in many fields. He is best remembered, however, for his pioneering work in group theory and his classic book *Theory of Groups*, which first appeared in 1897. Because of Burnside's emphasis on the abstract approach, many consider him to be the first pure group theorist.
 
-For more information on Burnside, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Burnside/
+For more information on Burnside, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Burnside/[需更新]
 
 # William Burnside
 
@@ -11470,7 +11470,7 @@ areas of research for future generations. Here, Burnside excelled. It was he who
 
 Burnside was elected a Fellow of the Royal Society and awarded two Royal Medals. He served as president of the Council of the London Mathematical Society and received its De Morgan Medal. Burnside died on August 21, 1927.
 
-For more information on Burnside, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Burnside/
+For more information on Burnside, visit: https://mathhistory.st-andrews.ac.uk/Biographies/Burnside/[需更新]
 
 ![](images/f4ee7c9890be496a9d4b213f2d05f9fceab883d10474aab4e522402666dfb23f.jpg)
 
@@ -11478,7 +11478,7 @@ For more information on Burnside, visit: https://mathhistory.st-andrews.ac.uk/Bi
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # 28
 
@@ -11871,7 +11871,7 @@ In his later years, Hamilton was plagued by alcoholism. He died on September 2, 
 
 For more information on Hamilton, visit:
 
-https://mathshistory.st-andrews.ac.uk/Biographies/Hamilton/
+https://mathshistory.st-andrews.ac.uk/Biographies/Hamilton/[需更新]
 
 Paul Erdős is a socially helpless Hungarian who has thought about more mathematical problems than anyone else in history.
 
@@ -11890,7 +11890,7 @@ All that he owned he carried with him in a medium-sized suitcase, frequently vis
 
 Erdős received the Cole Prize in number theory from the American Mathematical Society, the Wolf Prize for lifelong contributions, and was elected to the U.S. National Academy of Sciences. Erdős died of a heart attack on September 20, 1996.
 
-For more information on Erd|Hos, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/
+For more information on Erd|Hos, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/[需更新]
 
 # 29
 
@@ -12448,7 +12448,7 @@ Determine the row that contains 100001.
 
 35. Let  $C$  be an  $(n, k)$  linear code. For each  $i$  with  $1 \leq i \leq n$ , let  $C_i = \{v \in C | \text{the } i \text{th component of } v \text{ is } 0\}$ . Show that  $C_i$  is a subcode of  $C$ .
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 For introduction of error-correcting codes, pioneering work in operating systems and programming languages, and the advancement of numerical computation.
 
@@ -12467,7 +12467,7 @@ Hamming received numerous prestigious awards, including the Turing Prize from th
 
 For more information on Hamming, visit:
 
-https://mathshistory.st-andrews.ac.uk/Biographies/Hamming/
+https://mathshistory.st-andrews.ac.uk/Biographies/Hamming/[需更新]
 
 She was a mathematician who was instrumental in developing the mathematical theory of error-correcting codes from its early development and whose Ph.D. thesis includes one of the most powerful theorems in coding theory.
 
@@ -12497,7 +12497,7 @@ When she decided to work full-time, she found that women were not welcome at mos
 
 During her career, Pless wrote more than 100 research papers, authored a widely used textbook on coding theory, and had 12 Ph. D. students. Pless died on March 2, 2020 at the age of 88.
 
-For more information on Pless, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Pless/
+For more information on Pless, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Pless/[需更新]
 
 # 30
 
@@ -12861,7 +12861,7 @@ such that  $H_{i + 1} / H_i$  has prime order.
 
 36. Show that the polynomial  $x^{5} - 6x + 3$  over  $Q$  is not solvable by radicals.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
 # 31
 
@@ -13057,11 +13057,11 @@ B. C. Forbes
 21. If  $p > 2$  is a prime of the form  $2^m + 1$ , prove that  $m$  is a power of 2.  
 22. Let  $\omega = \cos(2\pi/15) - i\sin(2\pi/15)$ . Find the three elements of  $\operatorname{Gal}(Q(\omega)/Q)$  of order 2.
 
-Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html This interactive program returns the  $n$ -th cyclotomic polynomial, where  $n$  is a product of distinct primes.
+Visit https://www.d.umn.edu/~jgallian/msproject06/project_xukai7.html[需更新] This interactive program returns the  $n$ -th cyclotomic polynomial, where  $n$  is a product of distinct primes.
 
-Visit https://www.d.umn.edu/~jgallian/JavafixB.html for true/false questions for this chapter.
+Visit https://www.d.umn.edu/~jgallian/JavafixB.html[需更新] for true/false questions for this chapter.
 
-For more information on Gauss, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
+For more information on Gauss, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/[需更新]
 
 He [Gauss] lives everywhere in mathematics.
 
@@ -13078,7 +13078,7 @@ and, in fact, made enemies of many of them. Young mathematicians who sought enco
 
 Gauss died in Göttingen at the age of 77 on February 23, 1855. At Brunswick, there is a statue of him. Appropriately, the base is in the shape of a 17-point star. In 1989, Germany issued a bank note (see Chapter 5) depicting Gauss and the Gaussian distribution.
 
-For more information on Gauss visit: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
+For more information on Gauss visit: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/[需更新]
 
 # Manjul Bhargava
 
@@ -13097,7 +13097,7 @@ Among Bhargava's many awards are the Blumenthal Award for the Advancement of Res
 
 In addition to doing mathematics, Bhargava is an accomplished tabla player who has studied with the world's most distinguished tabla masters. He performs extensively in the New York and Boston areas. To hear him play the tabla, visit
 
-http://www.npr.org/template/story/story.php?storyId=4111253
+http://www.npr.org/template/story/story.php?storyId=4111253[需更新]
 
 For more information on Bhargava visit: https://en.wikipedia.org/wiki/ Manjul_Bhargava
 

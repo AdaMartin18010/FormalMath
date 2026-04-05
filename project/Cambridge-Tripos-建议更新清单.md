@@ -315,7 +315,7 @@ title: FormalMath与Cambridge Tripos对齐建议更新清单
 ### 在线资源
 
 - [Cambridge Tripos Past Papers](https://www.maths.cam.ac.uk/undergrad/pastpapers/)
-- [Stacks Project](https://stacks.math.columbia.edu/)
+- [Stacks Project](https://stacks.math.columbia.edu/)[需更新]
 - [nLab](https://ncatlab.org/)
 - [MathOverflow](https://mathoverflow.net/)
 

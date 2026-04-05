@@ -229,7 +229,7 @@ msc_primary: "11Mxx"
 ## 八、参考资源
 
 1. [AMS MSC2020 官方文档](https://www.ams.org/msc/)
-2. [zbMATH MSC2020 分类](https://zbmath.org/classification/)
+2. [zbMATH MSC2020 分类](https://zbmath.org/classification/)[需更新]
 3. FormalMath MSC子集: `project/msc/msc2020-subset.yaml`
 4. 主配置文件: `project/concept_prerequisites.yaml`
 

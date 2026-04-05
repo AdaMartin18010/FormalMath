@@ -110,11 +110,11 @@ $y^2 = f(x)$，$\deg(f) = 2g + 1$。
 
 ## 相关概念
 
-- [除子 (Divisor)](./divisor.md)：形式和的点
-- [线丛 (Line Bundle)](./line-bundle.md)：局部自由的秩1层
-- [典范除子 (Canonical Divisor)](./canonical-divisor.md)：微分形式的除子
+- 除子 (Divisor)：形式和的点
+- 线丛 (Line Bundle)：局部自由的秩1层
+- 典范除子 (Canonical Divisor)：微分形式的除子
 - [Serre对偶 (Serre Duality)](./serre-duality.md)：上同调配对
-- [亏格 (Genus)](./genus.md)：曲线的拓扑不变量
+- 亏格 (Genus)：曲线的拓扑不变量
 
 ## 参考
 
@@ -130,7 +130,7 @@ $y^2 = f(x)$，$\deg(f) = 2g + 1$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - RiemannRoch](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicGeometry/RiemannRoch.html)
+- [Mathlib4 文档 - RiemannRoch](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicGeometry/RiemannRoch.html)[需更新]
 - [Wikipedia - Riemann-Roch Theorem](https://en.wikipedia.org/wiki/Riemann%E2%80%93Roch_theorem)
 
 ---

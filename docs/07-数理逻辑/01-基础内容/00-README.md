@@ -288,7 +288,7 @@ processed_at: '2026-04-05'
 
 - [MIT OpenCourseWare - 6.042J](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/)
 - [MIT OpenCourseWare - 18.404](https://ocw.mit.edu/courses/mathematics/18-404j-theory-of-computation-fall-2020/)
-- [Stanford Encyclopedia of Philosophy - Logic](https://plato.stanford.edu/entries/logic/)
+- [Stanford Encyclopedia of Philosophy - Logic](https://plato.stanford.edu/entries/logic/)[需更新][需更新]
 - [Lean 4 Theorem Prover](https://leanprover.github.io/)
 
 ---

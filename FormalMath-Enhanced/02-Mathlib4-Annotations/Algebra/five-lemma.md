@@ -138,11 +138,11 @@ Hₙ(B) → Hₙ(Y) → Hₙ(Y,B) → Hₙ₋₁(B) → Hₙ₋₁(Y)
 
 ## 相关概念
 
-- [短五引理 (Short Five Lemma)](./short-five-lemma.md)：三个对象的版本
-- [四引理 (Four Lemma)](./four-lemma.md)：四个对象的部分结果
-- [九引理 (Nine Lemma)](./nine-lemma.md)：$3 \times 3$ 交换图的结果
-- [追图法 (Diagram Chasing)](./diagram-chasing.md)：证明技术
-- [正合列 (Exact Sequence)](./exact-sequence.md)：同调代数基础
+- 短五引理 (Short Five Lemma)：三个对象的版本
+- 四引理 (Four Lemma)：四个对象的部分结果
+- 九引理 (Nine Lemma)：$3 \times 3$ 交换图的结果
+- 追图法 (Diagram Chasing)：证明技术
+- 正合列 (Exact Sequence)：同调代数基础
 
 ## 参考
 
@@ -157,8 +157,8 @@ Hₙ(B) → Hₙ(Y) → Hₙ(Y,B) → Hₙ₋₁(B) → Hₙ₋₁(Y)
 
 ### 在线资源
 
-- [Mathlib4 文档 - Five](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Abelian/Five.html)
-- [Stacks Project - 010M](https://stacks.math.columbia.edu/tag/010M)
+- [Mathlib4 文档 - Five](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Abelian/Five.html)[需更新]
+- [Stacks Project - 010M](https://stacks.math.columbia.edu/tag/010M)[需更新]
 
 ---
 

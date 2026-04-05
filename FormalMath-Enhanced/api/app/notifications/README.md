@@ -111,7 +111,7 @@ Content-Type: application/json
   "template_name": "welcome",
   "template_variables": {
     "username": "张三",
-    "verification_link": "https://..."
+    "verification_link": "https://...[需更新]"
   },
   "language": "zh_CN"
 }
@@ -123,7 +123,7 @@ Content-Type: application/json
 POST /api/v1/notifications/trigger/welcome
 ?user_email=user@example.com
 &username=张三
-&verification_link=https://...
+&verification_link=https://...[需更新]
 ```
 
 ### 查看统计
@@ -167,7 +167,7 @@ trigger = get_notification_trigger()
 await trigger.send_welcome_email(
     user_email="user@example.com",
     username="张三",
-    verification_link="https://...",
+    verification_link="https://...[需更新]",
     language="zh_CN",
 )
 
@@ -241,7 +241,7 @@ record = await stats_manager.get_send_record(tracking_id)
 await stats_manager.record_open_event(tracking_id)
 
 # 记录点击事件
-await stats_manager.record_click_event(tracking_id, "https://...")
+await stats_manager.record_click_event(tracking_id, "https://...[需更新]")
 ```
 
 ## 邮件追踪
@@ -249,14 +249,14 @@ await stats_manager.record_click_event(tracking_id, "https://...")
 在 HTML 模板中添加追踪像素：
 
 ```html
-<img src="https://api.formalmath.edu/api/v1/notifications/track/open/{tracking_id}" 
+<img src="https://api.formalmath.edu/api/v1/notifications/track/open/{tracking_id}[需更新]" 
      width="1" height="1" alt="" />
 ```
 
 添加点击追踪：
 
 ```html
-<a href="https://api.formalmath.edu/api/v1/notifications/track/click/{tracking_id}?url=https://...">
+<a href="https://api.formalmath.edu/api/v1/notifications/track/click/{tracking_id}?url=https://...[需更新]">
   点击这里
 </a>
 ```

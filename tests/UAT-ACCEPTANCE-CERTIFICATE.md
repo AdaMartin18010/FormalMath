@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 
 ---
 
-<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='55' fill='%234CAF50' stroke='%232E7D32' stroke-width='3'/%3E%3Cpath d='M35 60 L50 75 L85 40' stroke='white' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" alt="验收通过" width="120">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg[需更新]' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='55' fill='%234CAF50' stroke='%232E7D32' stroke-width='3'/%3E%3Cpath d='M35 60 L50 75 L85 40' stroke='white' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" alt="验收通过" width="120">
 
 ---
 

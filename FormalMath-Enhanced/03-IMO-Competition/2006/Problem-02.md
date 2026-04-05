@@ -102,10 +102,10 @@ $P$ 的边也是好对角线。
 
 ### 与FormalMath主项目的链接
 
-- [多边形几何](../../concept/geometry/polygons.md)
-- [三角剖分](../../concept/combinatorics/triangulation.md)
-- [Catalan数](../../concept/combinatorics/catalan-numbers.md)
-- [极值组合](../../concept/combinatorics/extremal-combinatorics.md)
+- 多边形几何
+- 三角剖分
+- Catalan数
+- 极值组合
 
 ## 变体与推广
 
@@ -123,8 +123,8 @@ $P$ 的边也是好对角线。
 
 ## 参考
 
-- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101489p572822)
+- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101489p572822)[需更新]
 - 相关概念：多边形剖分、组合计数
 
 ---

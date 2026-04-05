@@ -422,8 +422,8 @@ solve(x^5 - x + 1 = 0)  # 一般五次方程无根式解
 
 - [串行 vs 并行计算](18-计算方法-串行vs并行.md)
 - [确定性 vs 随机算法](19-计算方法-确定性vs随机.md)
-- [浮点算术标准](./../../FormalMath-Interactive/node_modules/@typescript-eslint/eslint-plugin/docs/rules/no-floating-promises.md)
-- [计算机代数系统](../concept/cas.md)
+- 浮点算术标准
+- 计算机代数系统
 
 ### 推荐资源
 

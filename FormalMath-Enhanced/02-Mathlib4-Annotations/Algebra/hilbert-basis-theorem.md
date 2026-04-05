@@ -109,11 +109,11 @@ $$V = \{(x_1,\ldots,x_n) \in \mathbb{A}^n : f_1(x) = \cdots = f_m(x) = 0\}$$
 
 ## 相关概念
 
-- [诺特环 (Noetherian Ring)](./noetherian-ring.md)：满足升链条件的环
-- [多项式环 (Polynomial Ring)](./polynomial-ring.md)：环上的多项式
-- [Gröbner基 (Gröbner Basis)](./groebner-basis.md)：多项式理想的计算工具
-- [仿射簇 (Affine Variety)](./affine-variety.md)：多项式方程组的解集
-- [升链条件 (ACC)](./ascending-chain-condition.md)：诺特性的等价表述
+- 诺特环 (Noetherian Ring)：满足升链条件的环
+- 多项式环 (Polynomial Ring)：环上的多项式
+- Gröbner基 (Gröbner Basis)：多项式理想的计算工具
+- 仿射簇 (Affine Variety)：多项式方程组的解集
+- 升链条件 (ACC)：诺特性的等价表述
 
 ## 参考
 
@@ -128,8 +128,8 @@ $$V = \{(x_1,\ldots,x_n) \in \mathbb{A}^n : f_1(x) = \cdots = f_m(x) = 0\}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Polynomial Noetherian](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/Basic.html)
-- [Stacks Project - 00FM](https://stacks.math.columbia.edu/tag/00FM)
+- [Mathlib4 文档 - Polynomial Noetherian](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/Basic.html)[需更新]
+- [Stacks Project - 00FM](https://stacks.math.columbia.edu/tag/00FM)[需更新]
 
 ---
 

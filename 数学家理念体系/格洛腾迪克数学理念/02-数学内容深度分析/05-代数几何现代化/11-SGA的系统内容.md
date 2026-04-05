@@ -19,7 +19,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [SGA的系统内容：Grothendieck的研讨会](#sga的系统内容grothendieck的研讨会)
-  - [📋 目录](../../README.md#目录)
+  - [📋 目录](../../README.md)
   - [一、历史背景](#一历史背景)
     - [1.1 SGA的起源](#11-sga的起源)
     - [1.2 Grothendieck的研讨会](#12-grothendieck的研讨会)
@@ -28,7 +28,7 @@ processed_at: '2026-04-05'
     - [2.2 SGA 2：局部上同调](#22-sga-2局部上同调)
     - [2.3 SGA 3：群概形](#23-sga-3群概形)
     - [2.4 SGA 4：Topos理论](#24-sga-4topos理论)
-    - [2.5 SGA 4½：étale上同调](../../README.md#25-sga-4étale上同调)
+    - [2.5 SGA 4½：étale上同调](../../README.md)
     - [2.6 SGA 5：l进上同调](#26-sga-5l进上同调)
     - [2.7 SGA 6：相交理论](#27-sga-6相交理论)
     - [2.8 SGA 7：单值群](#28-sga-7单值群)

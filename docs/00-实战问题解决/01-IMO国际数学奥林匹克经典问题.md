@@ -353,7 +353,7 @@ $$\sum_{i=1}^{n} \frac{x_i}{i} = \sum_{i \in S^+} \frac{x_i}{i} - \sum_{i \in S^
 
 ## 参考资源
 
-- [IMO官方题库](https://www.imo-official.org/problems.aspx)
+- [IMO官方题库](https://www.imo-official.org/problems.aspx)[需更新][需更新]
 - 《数学奥林匹克小丛书》
 - 《走向IMO：数学奥林匹克试题集锦》
 

@@ -642,13 +642,13 @@ class IMOEducationalPlatform:
 
 - [Mathlib 4](https://github.com/leanprover-community/mathlib4) - 基础数学库
 - [Lean 4](https://lean-lang.org/) - 形式化语言
-- [IMO官方](https://www.imo-official.org/) - 国际数学奥林匹克
+- [IMO官方](https://www.imo-official.org/)[需更新] - 国际数学奥林匹克
 
 ### 评测基准
 
 - [miniF2F](https://github.com/openai/miniF2F) - 形式化数学评测基准
 - [ProofNet](https://github.com/zhangir-azerbayev/ProofNet) - 大学水平数学评测
-- [LeanDojo Benchmark](https://leandojo.org/) - 交互式证明评测
+- [LeanDojo Benchmark](https://leandojo.org/)[需更新] - 交互式证明评测
 
 ---
 

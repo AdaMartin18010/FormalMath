@@ -77,11 +77,11 @@ $$T \cdot \begin{pmatrix} a_k \\ b_k \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end
 本题与**代数几何**中的**希尔伯特第17问题**（正定有理函数表示为有理函数平方和）有关。在**计算代数**中，这类问题涉及**多项式插值**和**理想论**。在**密码学**中，格上的困难问题（如SVP、CVP）是后量子密码的基础。
 
 ## 相关概念
-- [齐次多项式](../../concept/齐次多项式.md)
-- [贝祖定理](../../concept/贝祖定理.md)
-- [SL(2,Z)变换](../../concept/模群.md)
-- [多项式插值](../../concept/多项式插值.md)
+- 齐次多项式
+- 贝祖定理
+- SL(2,Z)变换
+- 多项式插值
 
 ## 参考
 - IMO 2017 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1480148p8633202
+- AoPS Community: https://artofproblemsolving.com/community/c6h1480148p8633202[需更新]

@@ -253,9 +253,9 @@ Alice      Bob       Carol
 - [2] Joux, A. (2000). A one round protocol for tripartite Diffie–Hellman. *ANTS-IV*.
 
 ### 标准文档
-- [RFC 8446](https://tools.ietf.org/html/rfc8446): TLS 1.3
-- [RFC 7748](https://tools.ietf.org/html/rfc7748): Elliptic Curves for Security
-- [RFC 7919](https://tools.ietf.org/html/rfc7919): Negotiated Finite Field Diffie-Hellman Ephemeral Parameters
+- [RFC 8446](https://tools.ietf.org/html/rfc8446)[需更新][需更新]: TLS 1.3
+- [RFC 7748](https://tools.ietf.org/html/rfc7748)[需更新][需更新]: Elliptic Curves for Security
+- [RFC 7919](https://tools.ietf.org/html/rfc7919)[需更新][需更新]: Negotiated Finite Field Diffie-Hellman Ephemeral Parameters
 
 ### 教材
 - [1] Hoffstein, J., Pipher, J., & Silverman, J. H. (2008). *An Introduction to Mathematical Cryptography*. Springer.

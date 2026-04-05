@@ -101,11 +101,11 @@ $$f(1-f(x)) = f(f(f(x))) = f(x)$$
 函数方程是**数学 olympiad** 的核心主题之一。在**分析学**中，这类问题与**柯西方程**和**函数迭代理论**有关。在**动力系统**中，研究函数的迭代行为是重要的研究方向。
 
 ## 相关概念
-- [函数方程](../../concept/函数方程.md)
-- [柯西方程](../../concept/柯西方程.md)
-- [函数迭代](../../concept/函数迭代.md)
-- [单射与满射](../../concept/映射性质.md)
+- 函数方程
+- 柯西方程
+- 函数迭代
+- 单射与满射
 
 ## 参考
 - IMO 2017 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1480147p8633196
+- AoPS Community: https://artofproblemsolving.com/community/c6h1480147p8633196[需更新]

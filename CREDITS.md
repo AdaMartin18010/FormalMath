@@ -82,29 +82,29 @@ FormalMath项目由一支致力于数学教育的团队开发和维护。
 #### University of Oxford
 - **Mathematics** 本科与研究生课程
 - 重点参考：Prelims、Part A/B/C 系列
-- 网站：https://www.maths.ox.ac.uk/
+- 网站：https://www.maths.ox.ac.uk/[需更新]
 
 #### University of Bonn
 - **Mathematics** 研究生课程
 - 重点参考：代数几何、算术几何
-- 网站：https://www.math.uni-bonn.de/
+- 网站：https://www.math.uni-bonn.de/[需更新]
 
 #### Sorbonne Université (Paris 6/7)
 - **Mathématiques** 课程
 - 重点参考：代数几何、拓扑、同调
-- 网站：https://www.sorbonne-universite.fr/
+- 网站：https://www.sorbonne-universite.fr/[需更新]
 
 #### Universität Duisburg-Essen
 - **Mathematics** 课程
 - 重点参考：Pro-étale上同调
-- 网站：https://www.uni-due.de/
+- 网站：https://www.uni-due.de/[需更新]
 
 ### 亚洲
 
 #### 東京大学 (University of Tokyo)
 - **数学** 课程
 - 重点参考：(Pro)Étale Cohomology
-- 网站：https://www.ms.u-tokyo.ac.jp/
+- 网站：https://www.ms.u-tokyo.ac.jp/[需更新]
 
 ### 课程对齐统计
 
@@ -237,7 +237,7 @@ FormalMath项目由一支致力于数学教育的团队开发和维护。
 
 #### Stacks Project
 - **项目**: 代数几何综合参考
-- **网站**: https://stacks.math.columbia.edu/
+- **网站**: https://stacks.math.columbia.edu/[需更新]
 - **统计**: 7641页 / 765808行 / 21394 tags（2026年1月）
 - **用途**: 代数几何权威参考
 
@@ -248,7 +248,7 @@ FormalMath项目由一支致力于数学教育的团队开发和维护。
 
 #### Milne Lecture Notes
 - **作者**: James S. Milne
-- **网站**: https://www.jmilne.org/math/CourseNotes/
+- **网站**: https://www.jmilne.org/math/CourseNotes/[需更新]
 - **重点**: Étale Cohomology (LEC)
 - **用途**: 上同调理论学习
 
@@ -308,7 +308,7 @@ FormalMath项目采用 **Apache License 2.0**。
 ```
                                  Apache License
                            Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                        http://www.apache.org/licenses/[需更新]
 
    Copyright 2025-2026 FormalMath项目组
 
@@ -316,7 +316,7 @@ FormalMath项目采用 **Apache License 2.0**。
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       http://www.apache.org/licenses/LICENSE-2.0[需更新]
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,

@@ -236,7 +236,7 @@ processed_at: '2026-04-05'
 ## 七、参考资源
 
 1. [AMS MSC2020 官方文档](https://www.ams.org/msc/)
-2. [zbMATH MSC2020 分类](https://zbmath.org/classification/)
+2. [zbMATH MSC2020 分类](https://zbmath.org/classification/)[需更新]
 3. FormalMath 项目 MSC2020 子集定义：`project/msc/msc2020-subset.yaml`
 4. 概念前置关系主文件：`project/concept_prerequisites.yaml`
 

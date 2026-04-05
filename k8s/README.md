@@ -68,7 +68,7 @@ processed_at: '2026-04-05'
 
 ```bash
 # 安装 NGINX Ingress Controller
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml[需更新]
 
 # 安装 Metrics Server
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
@@ -288,7 +288,7 @@ kubectl describe ingress formalmath-ingress -n formalmath-prod
 ```bash
 kubectl run test --rm -it --image=curlimages/curl --restart=Never -- sh
 # 在容器内
-curl http://backend-service:3000/api/v1/health
+curl 
 ```
 
 ### HPA 不工作

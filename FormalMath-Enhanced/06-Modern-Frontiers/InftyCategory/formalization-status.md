@@ -413,7 +413,7 @@ AlgebraicGeometry/
 
 ### 8.1 内部资源
 
-- **Mathlib4文档**: https://leanprover-community.github.io/mathlib4_docs/
+- **Mathlib4文档**: https://leanprover-community.github.io/mathlib4_docs/[需更新]
 - **API参考**: `Mathlib/CategoryTheory/InfinityCategory/`
 - **示例文件**: `Mathlib/CategoryTheory/InfinityCategory/Examples.lean`
 

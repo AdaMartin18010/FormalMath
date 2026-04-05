@@ -103,11 +103,11 @@ $S^2$ 有标准辛结构（面积形式）。
 
 ## 相关概念
 
-- [辛形式 (Symplectic Form)](./symplectic-form.md)：闭的非退化2-形式
-- [辛流形 (Symplectic Manifold)](./symplectic-manifold.md)：带辛结构的流形
-- [Moser同痕 (Moser Isotopy)](./moser-isotopy.md)：辛形式变形技巧
-- [Liouville形式 (Liouville Form)](./liouville-form.md)：余切丛的典则1-形式
-- [辛同构 (Symplectomorphism)](./symplectomorphism.md)：辛结构的同构
+- 辛形式 (Symplectic Form)：闭的非退化2-形式
+- 辛流形 (Symplectic Manifold)：带辛结构的流形
+- Moser同痕 (Moser Isotopy)：辛形式变形技巧
+- Liouville形式 (Liouville Form)：余切丛的典则1-形式
+- 辛同构 (Symplectomorphism)：辛结构的同构
 
 ## 参考
 
@@ -122,7 +122,7 @@ $S^2$ 有标准辛结构（面积形式）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Symplectic](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Symplectic/Basic.html)
+- [Mathlib4 文档 - Symplectic](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Symplectic/Basic.html)[需更新]
 - [Wikipedia - Darboux's Theorem](https://en.wikipedia.org/wiki/Darboux%27s_theorem)
 
 ---

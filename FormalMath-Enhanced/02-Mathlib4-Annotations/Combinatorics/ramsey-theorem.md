@@ -100,9 +100,9 @@ $K_5$ 可以避免：五边形的边染红，五角星的边染蓝。
 ## 相关概念
 
 - [鸽巢原理](./pigeonhole-principle.md)：证明工具
-- [van der Waerden定理](./vanderwaerden-theorem.md)：算术级数版本
+- van der Waerden定理：算术级数版本
 - [Erdős–Szekeres定理](./erdos-szekeres-theorem.md)：几何Ramsey理论
-- [图的团](./graph-clique.md)：完全子图
+- 图的团：完全子图
 
 ## 参考
 
@@ -117,7 +117,7 @@ $K_5$ 可以避免：五边形的边染红，五角星的边染蓝。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Simple Graph](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Basic.html)
+- [Mathlib4 文档 - Simple Graph](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Basic.html)[需更新]
 
 ---
 

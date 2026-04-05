@@ -98,7 +98,7 @@ $$\frac{N}{M} = 2^{k-n}$$
 - **组合计数** - 乘法原理
 - **双射原理** - 通过建立双射计数
 - **生成函数** - 可选的高级方法
-- [组合计数基础](../../concept/combinatorics/counting.md)
+- 组合计数基础
 
 ## 变体问题
 
@@ -109,6 +109,6 @@ $$\frac{N}{M} = 2^{k-n}$$
 推广到 $m$ 组灯，每组 $n$ 盏。
 
 ## 参考资源
-- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216650p1191679)
+- [IMO 2008 Official Solutions](https://www.imo-official.org/problems/IMO2008SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h216650p1191679)[需更新]
 - Evan Chen's Solution Notes

@@ -110,10 +110,10 @@ $$\omega_{FS} = \frac{i}{2\pi} \partial \bar{\partial} \log(|z_0|^2 + \cdots + |
 ## 相关概念
 
 - [Hodge分解](./hodge-decomposition.md)：Kähler流形上的精细结构
-- [复结构](./complex-structure.md)：Kähler几何的基础
-- [辛几何](./symplectic-geometry.md)：与Kähler几何的联系
-- [Calabi-Yau流形](./calabi-yau-manifold.md)：Ricci平坦Kähler流形
-- [Kähler-Einstein度量](./kahler-einstein-metric.md)：特殊Kähler度量
+- 复结构：Kähler几何的基础
+- 辛几何：与Kähler几何的联系
+- Calabi-Yau流形：Ricci平坦Kähler流形
+- Kähler-Einstein度量：特殊Kähler度量
 
 ## 参考
 

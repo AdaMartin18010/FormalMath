@@ -97,7 +97,7 @@ title: 📊 按难度分级索引
 1. 系统学习相关国际课程（MIT OCW）
 2. 深入理解定理证明的每个步骤
 3. 尝试在 Lean4 中形式化简单命题
-4. 阅读 [04-International-Alignment](./04-International-Alignment/) 的对照文档
+4. 阅读 04-International-Alignment 的对照文档
 
 ---
 
@@ -199,7 +199,7 @@ title: 📊 按难度分级索引
 1. 阅读原始研究论文和专著
 2. 参与相关学术会议和讨论
 3. 使用 AI 形式化工具辅助研究
-4. 关注 [06-Modern-Frontiers](./06-Modern-Frontiers/) 的最新进展
+4. 关注 06-Modern-Frontiers 的最新进展
 
 ---
 

@@ -31,9 +31,9 @@ msc_secondary: ['03E30', '03E10', '03-XX']
 ## Table of Contents
 
 - [ZFC公理体系-深度扩展版](#zfc公理体系-深度扩展版)
-  - [Table of Contents](#Table of Contents)
+  - Table of Contents
   - [📚 概述 (编号: B.01.10.01)](#概述-编号-b011001)
-  - [🏗️ 1. ZFC公理系统深化理论 (编号: B.01.10.02)](#️-1-zfc公理系统深化理论-编号-b011002)
+  - 🏗️ 1. ZFC公理系统深化理论 (编号: B.01.10.02)
     - [1.1 公理的独立性Proof](#11-公理的独立性Proof)
       - [1.1.1 选择公理(AC)的独立性](#111-选择公理ac的独立性)
       - [1.1.2 Continuous统假设(CH)的独立性](#112-Continuous统假设ch的独立性)

@@ -92,7 +92,7 @@ $n = 2$：设 $a_1 < a_2$，$M = \{m\}$。
 - **鸽巢原理** - 组合存在性证明的基本工具
 - **数学归纳法** - 证明与自然数相关命题的方法
 - **极值原理** - 选择极端元素简化问题
-- [组合策略](../../concept/combinatorics/strategies.md)
+- 组合策略
 
 ## 历史背景
 
@@ -107,6 +107,6 @@ $n = 2$：设 $a_1 < a_2$，$M = \{m\}$。
 如果跳跃可以向左或向右，结论如何？
 
 ## 参考资源
-- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289117p1558473)
+- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289117p1558473)[需更新]
 - Terry Tao的博客文章关于此问题

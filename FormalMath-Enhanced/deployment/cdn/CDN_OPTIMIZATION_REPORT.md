@@ -282,13 +282,13 @@ X-Edge-Location: SJC
 ```bash
 # CloudFlare 清理
 # 1. 按URL清理
-curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache" \
+curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache[需更新]" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
-  --data '{"files":["https://formalmath.org/api/v1/concepts"]}'
+  --data '{"files":["https://formalmath.org/api/v1/concepts[需更新]"]}'
 
 # 2. 全部清理
-curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache" \
+curl -X POST "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache[需更新]" \
   -H "Authorization: Bearer {token}" \
   --data '{"purge_everything":true}'
 

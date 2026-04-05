@@ -173,8 +173,8 @@ $$a(n) \leq \sum_{i=1}^{k} 2^{s_i} a(2^{u_i}) \leq \sum_{i=1}^{k} 2^{s_i} \cdot 
 ### 与FormalMath主项目的链接
 
 - [序列与级数](../../concept/analysis/sequences-series.md)
-- [不等式技巧](../../concept/algebra/inequalities.md)
-- [二进制与数论](../../concept/number-theory/binary-representation.md)
+- 不等式技巧
+- 二进制与数论
 
 ## 变体与推广
 
@@ -194,8 +194,8 @@ $$a(n) \leq \sum_{i=1}^{k} 2^{s_i} a(2^{u_i}) \leq \sum_{i=1}^{k} 2^{s_i} \cdot 
 
 ## 参考
 
-- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h163343p909372)
+- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h163343p909372)[需更新]
 - 相关主题：次可加序列、Fekete引理
 - 参考文献：G. Polya, G. Szegö - Problems and Theorems in Analysis
 

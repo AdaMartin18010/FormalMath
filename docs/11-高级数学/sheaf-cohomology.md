@@ -17,21 +17,21 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [层上同调深度版 / Sheaf Cohomology - Deep Dive](#层上同调深度版--sheaf-cohomology---deep-dive)
+- 层上同调深度版 / Sheaf Cohomology - Deep Dive
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
     - [1.1 层的历史起源与本质](#11-层的历史起源与本质)
     - [1.2 上同调作为阻碍空间](#12-上同调作为阻碍空间)
     - [1.3 导出函子的统一框架](#13-导出函子的统一框架)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
     - [2.1 导出范畴观点](#21-导出范畴观点)
     - [2.2 六函子形式体系](#22-六函子形式体系)
     - [2.3 动机与混合结构](#23-动机与混合结构)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
     - [3.1 $p$-adic Hodge理论](#31-p-adic-hodge理论)
     - [3.2 反常层与相交上同调](#32-反常层与相交上同调)
     - [3.3 导出代数几何中的上同调](#33-导出代数几何中的上同调)
-  - [4. 参考文献 / References](#4-参考文献--references)
+  - [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 
@@ -319,8 +319,8 @@ $$Rf_*\text{IC}_X \cong \bigoplus_i \text{IC}_{Y_i}(L_i)[d_i]$$
 
 ### 在线资源
 
-- [Stacks Project](https://stacks.math.columbia.edu/) - 第20, 21章层上同调
-- [Kerodon](https://kerodon.net/) - 高阶层论
+- [Stacks Project](https://stacks.math.columbia.edu/)[需更新][需更新] - 第20, 21章层上同调
+- [Kerodon](https://kerodon.net/)[需更新][需更新] - 高阶层论
 - [Notes on Perverse Sheaves](https://math.berkeley.edu/~arinkin/) - Arinkin的讲义
 
 ---

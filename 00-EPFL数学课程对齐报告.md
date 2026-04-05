@@ -666,10 +666,10 @@ docs/07-概率论/
 ### B. 参考文献
 
 **EPFL官方资源:**
-1. EPFL Course Book: https://edu.epfl.ch/coursebook
-2. EPFL Mathematics Section: https://www.epfl.ch/schools/sb/sma/
-3. EPFL Bachelor in Mathematics: https://www.epfl.ch/education/bachelor/programs/mathematics/
-4. EPFL Master in Mathematics: https://www.epfl.ch/education/master/programs/mathematics/
+1. EPFL Course Book: https://edu.epfl.ch/coursebook[需更新]
+2. EPFL Mathematics Section: https://www.epfl.ch/schools/sb/sma/[需更新]
+3. EPFL Bachelor in Mathematics: https://www.epfl.ch/education/bachelor/programs/mathematics/[需更新]
+4. EPFL Master in Mathematics: https://www.epfl.ch/education/master/programs/mathematics/[需更新]
 
 **Bourbaki学派相关:**
 1. Bourbaki, N. Éléments de mathématique

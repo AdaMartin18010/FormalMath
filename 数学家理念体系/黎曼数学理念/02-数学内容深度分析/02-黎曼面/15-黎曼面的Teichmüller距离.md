@@ -15,12 +15,12 @@ processed_at: '2026-04-05'
 
 ## 📋 目录
 
-- [黎曼面的Teichmüller距离：模空间的度量](#黎曼面的teichmüller距离模空间的度量)
-  - [📋 目录](../../README.md#目录)
-  - [一、Teichmüller空间](#一teichmüller空间)
+- 黎曼面的Teichmüller距离：模空间的度量
+  - [📋 目录](../../README.md)
+  - 一、Teichmüller空间
     - [1.1 定义](#11-定义)
     - [1.2 坐标系统](#12-坐标系统)
-  - [二、Teichmüller距离](#二teichmüller距离)
+  - 二、Teichmüller距离
     - [2.1 定义](#21-定义)
     - [2.2 极值映射](#22-极值映射)
   - [三、几何性质](#三几何性质)

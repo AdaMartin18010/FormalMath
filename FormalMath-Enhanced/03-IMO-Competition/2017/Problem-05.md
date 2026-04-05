@@ -89,11 +89,11 @@ title: IMO 2017 Problem 5
 本题与**组合优化**中的**匹配理论**有关。在**算法设计**中，这是典型的**贪心算法**成功案例。在**概率论**中，类似问题研究随机排列中的模式出现。
 
 ## 相关概念
-- [鸽巢原理](../../concept/鸽巢原理.md)
-- [归纳法](../../concept/归纳法.md)
-- [匹配理论](../../concept/匹配理论.md)
-- [排列模式](../../concept/排列模式.md)
+- 鸽巢原理
+- 归纳法
+- 匹配理论
+- 排列模式
 
 ## 参考
 - IMO 2017 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1480150p8633214
+- AoPS Community: https://artofproblemsolving.com/community/c6h1480150p8633214[需更新]

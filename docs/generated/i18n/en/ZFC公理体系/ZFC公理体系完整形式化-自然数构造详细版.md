@@ -25,9 +25,9 @@ msc_secondary: ['11Axx', '03E30', '03E15']
 ## Table of Contents
 
 - [ZFC公理体系完整形式化 - 自然数构造详细版](#zfc公理体系完整形式化---自然数构造详细版)
-  - [Table of Contents](#Table of Contents)
+  - Table of Contents
   - [📚 概述](#概述)
-  - [🏗️ 自然数的构造](#️-自然数的构造)
+  - 🏗️ 自然数的构造
     - [1. 冯·诺伊曼序数](#1-冯诺伊曼序数)
       - [1.1 序数的递归Definition](#11-序数的递归Definition)
       - [1.2 自然数的基本性质](#12-自然数的基本性质)
@@ -44,20 +44,20 @@ msc_secondary: ['11Axx', '03E30', '03E15']
       - [5.1 皮亚诺公理](#51-皮亚诺公理)
       - [5.2 自然数系统的唯一性](#52-自然数系统的唯一性)
     - [6. 自然数的应用](#6-自然数的应用)
-      - [6.1 在Set Theory中的应用](#61-在Set Theory中的应用)
-      - [6.2 在Number Theory中的应用](#62-在Number Theory中的应用)
+      - 6.1 在Set Theory中的应用
+      - 6.2 在Number Theory中的应用
       - [6.3 在逻辑学中的应用](#63-在逻辑学中的应用)
       - [6.4 在计算机科学中的应用](#64-在计算机科学中的应用)
       - [6.5 在组合数学中的应用](#65-在组合数学中的应用)
     - [7. 结论](#7-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
+  - 💻 Lean4形式化实现 / Lean4 Formal Implementation
     - [冯·诺伊曼序数形式化](#冯诺伊曼序数形式化)
     - [自然数运算形式化](#自然数运算形式化)
     - [数学归纳法形式化](#数学归纳法形式化)
     - [皮亚诺公理形式化](#皮亚诺公理形式化)
     - [应用案例：自然数在计算机科学中的应用](#应用案例自然数在计算机科学中的应用)
-  - [术语对照表 / Terminology Table](#术语对照表)
-  - [References / References](#References--references)
+  - 术语对照表 / Terminology Table
+  - References / References
 
 ## 📚 概述
 

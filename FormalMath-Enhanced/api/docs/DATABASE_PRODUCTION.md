@@ -355,7 +355,7 @@ redis-cli -p 26379 SENTINEL failover formalmath-master
 
 ## 参考文档
 
-- [PostgreSQL官方文档](https://www.postgresql.org/docs/)
-- [Redis Cluster教程](https://redis.io/topics/cluster-tutorial)
-- [SQLAlchemy文档](https://docs.sqlalchemy.org/)
-- [Alembic文档](https://alembic.sqlalchemy.org/)
+- [PostgreSQL官方文档](https://www.postgresql.org/docs/)[需更新]
+- [Redis Cluster教程](https://redis.io/topics/cluster-tutorial)[需更新]
+- [SQLAlchemy文档](https://docs.sqlalchemy.org/)[需更新]
+- [Alembic文档](https://alembic.sqlalchemy.org/)[需更新]

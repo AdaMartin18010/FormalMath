@@ -94,11 +94,11 @@ $$\frac{\partial \hat{u}}{\partial t} = -4\pi^2 \xi^2 \hat{u}$$
 
 ## 相关概念
 
-- [傅里叶级数 (Fourier Series)](./fourier-series.md)：周期函数的离散频率分解
-- [卷积 (Convolution)](./convolution.md)：时域乘积对应频域卷积
-- [不确定性原理 (Uncertainty Principle)](./uncertainty-principle.md)：时频局域化的限制
-- [快速傅里叶变换 (FFT)](./fast-fourier-transform.md)：离散傅里叶变换的高效算法
-- [分布理论 (Distribution Theory)](./distribution-theory.md)：广义函数的傅里叶变换
+- 傅里叶级数 (Fourier Series)：周期函数的离散频率分解
+- 卷积 (Convolution)：时域乘积对应频域卷积
+- 不确定性原理 (Uncertainty Principle)：时频局域化的限制
+- 快速傅里叶变换 (FFT)：离散傅里叶变换的高效算法
+- 分布理论 (Distribution Theory)：广义函数的傅里叶变换
 
 ## 参考
 
@@ -113,7 +113,7 @@ $$\frac{\partial \hat{u}}{\partial t} = -4\pi^2 \xi^2 \hat{u}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - FourierTransform](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/FourierTransform.html)
+- [Mathlib4 文档 - FourierTransform](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/FourierTransform.html)[需更新]
 
 ---
 

@@ -19,34 +19,34 @@ processed_at: '2026-04-05'
 
 - [ZFC公理体系完整形式化 - 抽象代数结构构造](#zfc公理体系完整形式化---抽象代数结构构造)
   - [目录](#目录)
-  - [📚 概述 / Overview / Aperçu / Übersicht](#概述--overview--aperçu--übersicht)
-  - [🏗️ 代数结构的基础构造 / Basic Construction of Algebraic Structures / Construction de base des structures algébriques / Grundlegende Konstruktion algebraischer Strukturen](#️-代数结构的基础构造--basic-construction-of-algebraic-structures--construction-de-base-des-structures-algébriques--grundlegende-konstruktion-algebraischer-strukturen)
-    - [1. 二元运算的定义 / Definition of Binary Operations / Définition des opérations binaires / Definition binärer Operationen](#1-二元运算的定义--definition-of-binary-operations--définition-des-opérations-binaires--definition-binärer-operationen)
-      - [1.1 二元运算 / Binary Operation / Opération binaire / Binäre Operation](#11-二元运算--binary-operation--opération-binaire--binäre-operation)
-      - [1.2 运算的性质 / Properties of Operations / Propriétés des opérations / Eigenschaften von Operationen](#12-运算的性质--properties-of-operations--propriétés-des-opérations--eigenschaften-von-operationen)
-    - [2. 群论构造 / Group Theory Construction / Construction de la théorie des groupes / Konstruktion der Gruppentheorie](#2-群论构造--group-theory-construction--construction-de-la-théorie-des-groupes--konstruktion-der-gruppentheorie)
-      - [2.1 群的定义 / Definition of Group / Définition de groupe / Definition der Gruppe](#21-群的定义--definition-of-group--définition-de-groupe--definition-der-gruppe)
-      - [2.2 子群 / Subgroup / Sous-groupe / Untergruppe](#22-子群--subgroup--sous-groupe--untergruppe)
-    - [3. 环论构造 / Ring Theory Construction / Construction de la théorie des anneaux / Konstruktion der Ringtheorie](#3-环论构造--ring-theory-construction--construction-de-la-théorie-des-anneaux--konstruktion-der-ringtheorie)
-      - [3.1 环的定义 / Definition of Ring / Définition d'anneau / Definition des Rings](#31-环的定义--definition-of-ring--définition-danneau--definition-des-rings)
-      - [3.2 交换环 / Commutative Ring / Anneau commutatif / Kommutativer Ring](#32-交换环--commutative-ring--anneau-commutatif--kommutativer-ring)
-      - [3.3 单位环 / Ring with Unity / Anneau unitaire / Ring mit Eins](#33-单位环--ring-with-unity--anneau-unitaire--ring-mit-eins)
-    - [4. 域论构造 / Field Theory Construction / Construction de la théorie des corps / Konstruktion der Körpertheorie](#4-域论构造--field-theory-construction--construction-de-la-théorie-des-corps--konstruktion-der-körpertheorie)
-      - [4.1 域的定义 / Definition of Field / Définition de corps / Definition des Körpers](#41-域的定义--definition-of-field--définition-de-corps--definition-des-körpers)
-    - [5. 从数系到代数结构的构造 / Construction from Number Systems to Algebraic Structures / Construction des systèmes de nombres vers les structures algébriques / Konstruktion von Zahlensystemen zu algebraischen Strukturen](#5-从数系到代数结构的构造--construction-from-number-systems-to-algebraic-structures--construction-des-systèmes-de-nombres-vers-les-structures-algébriques--konstruktion-von-zahlensystemen-zu-algebraischen-strukturen)
-      - [5.1 整数环 / Ring of Integers / Anneau des entiers / Ring der ganzen Zahlen](#51-整数环--ring-of-integers--anneau-des-entiers--ring-der-ganzen-zahlen)
-      - [5.2 有理数域 / Field of Rational Numbers / Corps des rationnels / Körper der rationalen Zahlen](#52-有理数域--field-of-rational-numbers--corps-des-rationnels--körper-der-rationalen-zahlen)
-      - [5.3 实数域 / Field of Real Numbers / Corps des réels / Körper der reellen Zahlen](#53-实数域--field-of-real-numbers--corps-des-réels--körper-der-reellen-zahlen)
-    - [6. 代数结构在数论中的应用 / Applications of Algebraic Structures in Number Theory / Applications des structures algébriques en théorie des nombres / Anwendungen algebraischer Strukturen in der Zahlentheorie](#6-代数结构在数论中的应用--applications-of-algebraic-structures-in-number-theory--applications-des-structures-algébriques-en-théorie-des-nombres--anwendungen-algebraischer-strukturen-in-der-zahlentheorie)
-      - [6.1 模运算群 / Modular Arithmetic Groups / Groupes d'arithmétique modulaire / Modulare Arithmetikgruppen](#61-模运算群--modular-arithmetic-groups--groupes-darithmétique-modulaire--modulare-arithmetikgruppen)
-      - [6.2 乘法群 / Multiplicative Group / Groupe multiplicatif / Multiplikative Gruppe](#62-乘法群--multiplicative-group--groupe-multiplicatif--multiplikative-gruppe)
-  - [🔗 国际标准对照 / International Standard Comparison / Comparaison des standards internationaux / Internationaler Standardvergleich](#国际标准对照--international-standard-comparison--comparaison-des-standards-internationaux--internationaler-standardvergleich)
-    - [与Wikipedia数学标准的对照 / Comparison with Wikipedia Mathematical Standards / Comparaison avec les standards mathématiques de Wikipedia / Vergleich mit Wikipedia-Mathematikstandards](#与wikipedia数学标准的对照--comparison-with-wikipedia-mathematical-standards--comparaison-avec-les-standards-mathématiques-de-wikipedia--vergleich-mit-wikipedia-mathematikstandards)
-    - [与著名大学教程的对照 / Comparison with Famous University Courses / Comparaison avec les cours d'universités célèbres / Vergleich mit berühmten Universitätskursen](#与著名大学教程的对照--comparison-with-famous-university-courses--comparaison-avec-les-cours-duniversités-célèbres--vergleich-mit-berühmten-universitätskursen)
-  - [📚 多语言术语对照 / Multilingual Terminology Comparison / Comparaison terminologique multilingue / Mehrsprachiger Terminologievergleich](#多语言术语对照--multilingual-terminology-comparison--comparaison-terminologique-multilingue--mehrsprachiger-terminologievergleich)
-    - [代数结构概念 / Algebraic Structure Concepts / Concepts de structure algébrique / Algebraische Strukturbegriffe](#代数结构概念--algebraic-structure-concepts--concepts-de-structure-algébrique--algebraische-strukturbegriffe)
-    - [运算性质 / Operation Properties / Propriétés d'opération / Operationseigenschaften](#运算性质--operation-properties--propriétés-dopération--operationseigenschaften)
-  - [🎯 结论 / Conclusion / Conclusion / Schlussfolgerung](#结论--conclusion--conclusion--schlussfolgerung)
+  - 📚 概述 / Overview / Aperçu / Übersicht
+  - 🏗️ 代数结构的基础构造 / Basic Construction of Algebraic Structures / Construction de base des structures algébriques / Grundlegende Konstruktion algebraischer Strukturen
+    - 1. 二元运算的定义 / Definition of Binary Operations / Définition des opérations binaires / Definition binärer Operationen
+      - 1.1 二元运算 / Binary Operation / Opération binaire / Binäre Operation
+      - 1.2 运算的性质 / Properties of Operations / Propriétés des opérations / Eigenschaften von Operationen
+    - 2. 群论构造 / Group Theory Construction / Construction de la théorie des groupes / Konstruktion der Gruppentheorie
+      - 2.1 群的定义 / Definition of Group / Définition de groupe / Definition der Gruppe
+      - 2.2 子群 / Subgroup / Sous-groupe / Untergruppe
+    - 3. 环论构造 / Ring Theory Construction / Construction de la théorie des anneaux / Konstruktion der Ringtheorie
+      - 3.1 环的定义 / Definition of Ring / Définition d'anneau / Definition des Rings
+      - 3.2 交换环 / Commutative Ring / Anneau commutatif / Kommutativer Ring
+      - 3.3 单位环 / Ring with Unity / Anneau unitaire / Ring mit Eins
+    - 4. 域论构造 / Field Theory Construction / Construction de la théorie des corps / Konstruktion der Körpertheorie
+      - 4.1 域的定义 / Definition of Field / Définition de corps / Definition des Körpers
+    - 5. 从数系到代数结构的构造 / Construction from Number Systems to Algebraic Structures / Construction des systèmes de nombres vers les structures algébriques / Konstruktion von Zahlensystemen zu algebraischen Strukturen
+      - 5.1 整数环 / Ring of Integers / Anneau des entiers / Ring der ganzen Zahlen
+      - 5.2 有理数域 / Field of Rational Numbers / Corps des rationnels / Körper der rationalen Zahlen
+      - 5.3 实数域 / Field of Real Numbers / Corps des réels / Körper der reellen Zahlen
+    - 6. 代数结构在数论中的应用 / Applications of Algebraic Structures in Number Theory / Applications des structures algébriques en théorie des nombres / Anwendungen algebraischer Strukturen in der Zahlentheorie
+      - 6.1 模运算群 / Modular Arithmetic Groups / Groupes d'arithmétique modulaire / Modulare Arithmetikgruppen
+      - 6.2 乘法群 / Multiplicative Group / Groupe multiplicatif / Multiplikative Gruppe
+  - 🔗 国际标准对照 / International Standard Comparison / Comparaison des standards internationaux / Internationaler Standardvergleich
+    - 与Wikipedia数学标准的对照 / Comparison with Wikipedia Mathematical Standards / Comparaison avec les standards mathématiques de Wikipedia / Vergleich mit Wikipedia-Mathematikstandards
+    - 与著名大学教程的对照 / Comparison with Famous University Courses / Comparaison avec les cours d'universités célèbres / Vergleich mit berühmten Universitätskursen
+  - 📚 多语言术语对照 / Multilingual Terminology Comparison / Comparaison terminologique multilingue / Mehrsprachiger Terminologievergleich
+    - 代数结构概念 / Algebraic Structure Concepts / Concepts de structure algébrique / Algebraische Strukturbegriffe
+    - 运算性质 / Operation Properties / Propriétés d'opération / Operationseigenschaften
+  - 🎯 结论 / Conclusion / Conclusion / Schlussfolgerung
 
 ## 📚 概述 / Overview / Aperçu / Übersicht
 

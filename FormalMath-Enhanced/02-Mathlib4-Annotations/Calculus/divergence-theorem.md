@@ -86,8 +86,8 @@ $\nabla \cdot F = 3$
 
 - [Stokes定理](../Geometry/stokes-theorem.md)：旋度版本的类似定理
 - [Green定理](./green-theorem.md)：二维版本
-- [通量 (Flux)](./flux.md)：向量场穿过曲面的量
-- [散度 (Divergence)](./divergence.md)：场的"源"密度
+- 通量 (Flux)：向量场穿过曲面的量
+- 散度 (Divergence)：场的"源"密度
 
 ## 参考
 
@@ -102,7 +102,7 @@ $\nabla \cdot F = 3$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Vector Calculus](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/FDeriv/Basic.html)
+- [Mathlib4 文档 - Vector Calculus](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/FDeriv/Basic.html)[需更新]
 
 ---
 

@@ -115,11 +115,11 @@ $$S_4 \triangleright A_4 \triangleright V_4 \triangleright \mathbb{Z}_2 \triangl
 
 ## 相关概念
 
-- [单群 (Simple Group)](./simple-group.md)：没有非平凡正规子群的群
+- 单群 (Simple Group)：没有非平凡正规子群的群
 - [可解群 (Solvable Group)](./solvable-group.md)：合成因子为循环群
-- [正规列 (Normal Series)](./normal-series.md)：正规子群的降链
-- [Schreier定理 (Schreier's Theorem)](./schreier-theorem.md)：正规列的细化
-- [合成因子 (Composition Factor)](./composition-factor.md)：单群因子
+- 正规列 (Normal Series)：正规子群的降链
+- Schreier定理 (Schreier's Theorem)：正规列的细化
+- 合成因子 (Composition Factor)：单群因子
 
 ## 参考
 
@@ -135,8 +135,8 @@ $$S_4 \triangleright A_4 \triangleright V_4 \triangleright \mathbb{Z}_2 \triangl
 
 ### 在线资源
 
-- [Mathlib4 文档 - CompositionSeries](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/CompositionSeries.html)
-- [Groupprops - Composition series](https://groupprops.subwiki.org/wiki/Composition_series)
+- [Mathlib4 文档 - CompositionSeries](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/CompositionSeries.html)[需更新]
+- [Groupprops - Composition series](https://groupprops.subwiki.org/wiki/Composition_series)[需更新]
 
 ---
 

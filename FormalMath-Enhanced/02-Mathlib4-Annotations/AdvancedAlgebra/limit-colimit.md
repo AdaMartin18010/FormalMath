@@ -102,10 +102,10 @@ end CategoryTheory.Limits
 ## 相关概念
 
 - [伴随函子](./adjoint-functor.md)：对角函子的（余）极限伴随
-- [完备范畴](./complete-category.md)：所有小极限存在的范畴
-- [连续函子](./continuous-functor.md)：保持极限的函子
-- [Kan扩张](./kan-extension.md)：极限的推广
-- [导出极限](./derived-limit.md)：同调代数中的应用
+- 完备范畴：所有小极限存在的范畴
+- 连续函子：保持极限的函子
+- Kan扩张：极限的推广
+- 导出极限：同调代数中的应用
 
 ## 参考
 

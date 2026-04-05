@@ -99,9 +99,9 @@ $$L^2(S^2) = \widehat{\bigoplus}_{l=0}^{\infty}} \mathcal{H}_l$$
 
 - [Maschke定理](./maschke-theorem.md)：有限群版本
 - [特征标正交性](./character-orthogonality.md)：离散情形
-- [Plancherel定理](./plancherel-theorem.md)：傅里叶变换的等距性
+- Plancherel定理：傅里叶变换的等距性
 - [Frobenius互反律](./frobenius-reciprocity.md)：诱导表示理论
-- [Tannaka对偶](./tannaka-duality.md)：从表示重构群
+- Tannaka对偶：从表示重构群
 
 ## 参考
 

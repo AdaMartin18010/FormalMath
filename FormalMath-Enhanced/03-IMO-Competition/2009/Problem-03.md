@@ -106,7 +106,7 @@ $s_{s_{n+1}+1} - s_{s_n+1} = \sum_{i=s_n+1}^{s_{n+1}} t_i = d_2$
 - **等差数列** - 相邻项差为常数的序列
 - **子序列** - 保持顺序的子集
 - **递归序列** - 由递归关系定义的序列
-- [序列与级数](../../concept/analysis/sequences.md)
+- 序列与级数
 
 ## 变体问题
 
@@ -117,5 +117,5 @@ $s_{s_{n+1}+1} - s_{s_n+1} = \sum_{i=s_n+1}^{s_{n+1}} t_i = d_2$
 对于三个子序列 $s_{s_n}, s_{s_n+1}, s_{s_n+2}$ 都是等差数列的情况。
 
 ## 参考资源
-- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289115p1558446)
+- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289115p1558446)[需更新]

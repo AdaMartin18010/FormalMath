@@ -16,7 +16,7 @@ title: AI形式化数学代码示例与工具链接
 ```bash
 # Windows安装Lean 4
 # 方法1：使用elan（推荐）
-curl -O --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.ps1
+curl -O --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.ps1[需更新]
 powershell -ExecutionPolicy Bypass -f elan-init.ps1
 
 # 方法2：使用VS Code插件
@@ -167,7 +167,7 @@ from typing import Optional
 class DeepSeekAPIClient:
     """DeepSeek API客户端"""
 
-    def __init__(self, api_key: str, base_url: str = "https://api.deepseek.com"):
+    def __init__(self, api_key: str, base_url: str = "https://api.deepseek.com[需更新]"):
         self.api_key = api_key
         self.base_url = base_url
         self.headers = {
@@ -946,7 +946,7 @@ if __name__ == "__main__":
 |------|------|------|
 | Lean 4官网 | https://lean-lang.org/ | 官方文档和下载 |
 | Mathlib 4 | https://github.com/leanprover-community/mathlib4 | 数学库 |
-| Lean Zulip | https://leanprover.zulipchat.com/ | 社区讨论 |
+| Lean Zulip | https://leanprover.zulipchat.com/[需更新] | 社区讨论 |
 | Lean 4 API文档 | https://lean-lang.org/api/lean4/ | API参考 |
 
 #### AI形式化项目
@@ -954,7 +954,7 @@ if __name__ == "__main__":
 | 项目 | 链接 | 说明 |
 |------|------|------|
 | DeepSeek | https://github.com/deepseek-ai | DeepSeek系列模型 |
-| LeanDojo | https://leandojo.org/ | Lean交互环境 |
+| LeanDojo | https://leandojo.org/[需更新] | Lean交互环境 |
 | ReProver | https://github.com/lean-dojo/ReProver | 检索增强证明器 |
 | IMO Lean | https://github.com/jsm28/IMOLean | IMO题目形式化 |
 
@@ -1002,7 +1002,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # 安装elan (Lean工具链管理器)
-RUN curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y
+RUN curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh[需更新] -sSf | sh -s -- -y
 ENV PATH="/root/.elan/bin:${PATH}"
 
 # 设置工作目录
@@ -1094,7 +1094,7 @@ pip install transformers==4.36.0
 
 # 问题3: 模型下载慢
 # 解决: 使用镜像或设置HF_ENDPOINT
-export HF_ENDPOINT=https://hf-mirror.com
+export HF_ENDPOINT=https://hf-mirror.com[需更新]
 ```
 
 ---
@@ -1105,7 +1105,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 
 - [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/) - 官方教程
 - [Functional Programming in Lean](https://leanprover.github.io/functional_programming_in_lean/) - 函数式编程
-- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/) - 数学证明
+- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)[需更新] - 数学证明
 
 ### 论文
 

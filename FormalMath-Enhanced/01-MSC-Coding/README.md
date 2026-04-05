@@ -122,7 +122,7 @@ keywords:                    # 关键词（3-8个）
 
 ## 参考资源
 
-- **官方MSC2020网站**: https://msc2020.org/
+- **官方MSC2020网站**: https://msc2020.org/[需更新]
 - **AMS MSC查询**: https://mathscinet.ams.org/mathscinet/msc/msc2020.html
 - **PDF版本**: https://mathscinet.ams.org/msnhtml/msc2020.pdf
 

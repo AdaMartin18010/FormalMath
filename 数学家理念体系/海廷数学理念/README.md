@@ -175,8 +175,8 @@ Brouwer-Heyting-Kolmogorov解释为直觉主义逻辑提供了语义基础，连
 
 ### 在线资源
 
-- 🌐 [MacTutor传记](http://mathshistory.st-andrews.ac.uk/Biographies/Heyting.html)
-- 🌐 [Stanford哲学百科：直觉主义逻辑](https://plato.stanford.edu/entries/logic-intuitionistic/)
+- 🌐 [MacTutor传记](http://mathshistory.st-andrews.ac.uk/Biographies/Heyting.html)[需更新]
+- 🌐 [Stanford哲学百科：直觉主义逻辑](https://plato.stanford.edu/entries/logic-intuitionistic/)[需更新]
 - 🌐 [nLab：直觉主义逻辑](https://ncatlab.org/nlab/show/intuitionistic+logic)
 
 ### 推荐视频
@@ -259,7 +259,7 @@ https://github.com/[项目地址]/海廷数学理念
 
 - 📁 [布劳威尔数学理念](../布劳威尔数学理念/README.md) - 海廷的老师，直觉主义的创始人
 - 📁 [希尔伯特数学理念](../希尔伯特数学理念/README.md) - 对比：形式主义vs直觉主义
-- 📁 [Martin-Löf类型论](../../Books/TypeTheory/) - 海廷思想的现代发展
+- 📁 Martin-Löf类型论 - 海廷思想的现代发展
 
 ---
 

@@ -29,8 +29,8 @@ msc_primary: "03E35"
 
 ## Table of Contents
 
-- [ZFC公理体系到Number Theory推导Index](#zfc公理体系到Number Theory推导Index)
-  - [Table of Contents](#Table of Contents)
+- ZFC公理体系到Number Theory推导Index
+  - Table of Contents
   - [📚 文档导航](#文档导航)
   - [📖 文档列表](#文档列表)
     - [第一部分：ZFC公理体系基础](#第一部分zfc公理体系基础)
@@ -40,7 +40,7 @@ msc_primary: "03E35"
     - [第五部分：有理数构造](#第五部分有理数构造)
     - [第六部分：实数构造](#第六部分实数构造)
     - [第七部分：复数构造](#第七部分复数构造)
-    - [第八部分：Number Theory基础构造](#第八部分Number Theory基础构造)
+    - 第八部分：Number Theory基础构造
     - [Summary文档](#Summary文档)
   - [🔗 学习路径](#学习路径)
     - [推荐学习顺序](#推荐学习顺序)
@@ -60,7 +60,7 @@ msc_primary: "03E35"
   - [🔮 发展前景](#发展前景)
     - [理论发展](#理论发展)
     - [应用发展](#应用发展)
-  - [术语对照表 / Terminology Table](#术语对照表)
+  - 术语对照表 / Terminology Table
 
 ## 📚 文档导航
 

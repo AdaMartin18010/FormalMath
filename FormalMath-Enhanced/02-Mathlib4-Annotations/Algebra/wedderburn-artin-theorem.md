@@ -116,11 +116,11 @@ $k \times k \times k$ 是交换半单Artin环。
 
 ## 相关概念
 
-- [半单环 (Semisimple Ring)](./semisimple-ring.md)：半单模上的环
-- [Artin环 (Artinian Ring)](./artinian-ring.md)：满足降链条件的环
-- [单环 (Simple Ring)](./simple-ring.md)：无非平凡双边理想的环
-- [半素环 (Semiprime Ring)](./semiprime-ring.md)：无幂零理想的环
-- [本原幂等元 (Primitive Idempotent)](./primitive-idempotent.md)：不可分解的幂等元
+- 半单环 (Semisimple Ring)：半单模上的环
+- Artin环 (Artinian Ring)：满足降链条件的环
+- 单环 (Simple Ring)：无非平凡双边理想的环
+- 半素环 (Semiprime Ring)：无幂零理想的环
+- 本原幂等元 (Primitive Idempotent)：不可分解的幂等元
 
 ## 参考
 
@@ -136,8 +136,8 @@ $k \times k \times k$ 是交换半单Artin环。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Artinian](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Artinian.html)
-- [Stacks Project - 0744](https://stacks.math.columbia.edu/tag/0744)
+- [Mathlib4 文档 - Artinian](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Artinian.html)[需更新]
+- [Stacks Project - 0744](https://stacks.math.columbia.edu/tag/0744)[需更新]
 
 ---
 

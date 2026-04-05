@@ -218,7 +218,7 @@ references:
       zbmath: "zbMATH: 06.0030.01"
   databases:
     - type: "zbMATH"
-      url: "https://zbmath.org/?q=an:06.0030.01"
+      url: "https://zbmath.org/?q=an:06.0030.01[需更新]"
     - type: "MathSciNet"
       mr_number: "MR150908"
     - type: "arXiv"

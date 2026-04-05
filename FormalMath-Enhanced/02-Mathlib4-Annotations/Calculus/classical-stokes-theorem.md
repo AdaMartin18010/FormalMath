@@ -88,8 +88,8 @@ $\nabla \times F = (0, 0, 2)$，曲面积分 $= 2 \cdot \pi = 2\pi$。
 ## 相关概念
 
 - [Stokes定理（一般形式）](../Geometry/stokes-theorem.md)：微分形式版本
-- [旋度 (Curl)](./curl.md)：向量场的旋转程度
-- [环量 (Circulation)](./circulation.md)：沿闭曲线的线积分
+- 旋度 (Curl)：向量场的旋转程度
+- 环量 (Circulation)：沿闭曲线的线积分
 - [Green定理](./green-theorem.md)：二维版本
 
 ## 参考
@@ -101,7 +101,7 @@ $\nabla \times F = (0, 0, 2)$，曲面积分 $= 2 \cdot \pi = 2\pi$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Manifold](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html)
+- [Mathlib4 文档 - Manifold](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html)[需更新]
 
 ---
 

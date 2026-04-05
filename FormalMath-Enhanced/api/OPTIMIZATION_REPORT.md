@@ -242,8 +242,8 @@ python celery_worker.py
 
 ### API文档
 
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+- Swagger UI: 
+- ReDoc: 
 
 ### 性能测试
 

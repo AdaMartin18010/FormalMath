@@ -116,10 +116,10 @@ $e^z$ 在全平面全纯，无界，故在紧集上最大值在边界。
 ## 相关概念
 
 - [开映射定理 (Open Mapping Theorem)](./open-mapping-theorem.md)：全纯函数的开性
-- [平均值性质 (Mean Value Property)](./mean-value-property.md)：调和函数的特性
-- [恒等定理 (Identity Theorem)](./identity-theorem.md)：全纯函数的唯一性
+- 平均值性质 (Mean Value Property)：调和函数的特性
+- 恒等定理 (Identity Theorem)：全纯函数的唯一性
 - [Schwarz引理 (Schwarz Lemma)](./schwarz-lemma.md)：单位圆盘上的约束
-- [调和函数 (Harmonic Function)](./harmonic-function.md)：Laplace方程的解
+- 调和函数 (Harmonic Function)：Laplace方程的解
 
 ## 参考
 
@@ -134,7 +134,7 @@ $e^z$ 在全平面全纯，无界，故在紧集上最大值在边界。
 
 ### 在线资源
 
-- [Mathlib4 文档 - MaximumModulus](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/MaximumModulus.html)
+- [Mathlib4 文档 - MaximumModulus](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/MaximumModulus.html)[需更新]
 - [Wikipedia - Maximum Modulus Principle](https://en.wikipedia.org/wiki/Maximum_modulus_principle)
 
 ---

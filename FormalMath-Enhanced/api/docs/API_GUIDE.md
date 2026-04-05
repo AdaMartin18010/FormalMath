@@ -29,8 +29,8 @@ processed_at: '2026-04-05'
 ### 基础URL
 
 ```
-生产环境: https://api.formalmath.org/api/v1
-本地环境: http://localhost:8000/api/v1
+生产环境: https://api.formalmath.org/api/v1[需更新]
+本地环境: 
 ```
 
 ### 请求格式
@@ -44,9 +44,9 @@ Accept: application/json
 
 ### API文档端点
 
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
-- **OpenAPI JSON**: http://localhost:8000/openapi.json
+- **Swagger UI**: 
+- **ReDoc**: 
+- **OpenAPI JSON**: 
 
 ---
 
@@ -58,14 +58,14 @@ Accept: application/json
 
 ```bash
 curl -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-     https://api.formalmath.org/api/v1/concepts
+     https://api.formalmath.org/api/v1/concepts[需更新]
 ```
 
 ### API Key
 
 ```bash
 curl -H "X-API-Key: YOUR_API_KEY" \
-     https://api.formalmath.org/api/v1/concepts
+     https://api.formalmath.org/api/v1/concepts[需更新]
 ```
 
 ---
@@ -77,7 +77,7 @@ curl -H "X-API-Key: YOUR_API_KEY" \
 #### 基础健康检查
 
 ```bash
-curl http://localhost:8000/health
+curl 
 ```
 
 响应：
@@ -92,7 +92,7 @@ curl http://localhost:8000/health
 #### 详细系统状态
 
 ```bash
-curl http://localhost:8000/api/v1/health/detailed
+curl 
 ```
 
 响应：
@@ -132,13 +132,13 @@ curl http://localhost:8000/api/v1/health/detailed
 
 ```bash
 # 基础请求
-curl "http://localhost:8000/api/v1/concepts?page=1&page_size=10"
+curl ""
 
 # 带过滤条件
-curl "http://localhost:8000/api/v1/concepts?branch=algebra&difficulty=intermediate&page=1"
+curl ""
 
 # 搜索
-curl "http://localhost:8000/api/v1/concepts?search=线性代数&page=1"
+curl ""
 ```
 
 响应：
@@ -166,7 +166,7 @@ curl "http://localhost:8000/api/v1/concepts?search=线性代数&page=1"
 #### 获取概念详情
 
 ```bash
-curl http://localhost:8000/api/v1/concepts/linear_algebra
+curl 
 ```
 
 响应：
@@ -185,13 +185,13 @@ curl http://localhost:8000/api/v1/concepts/linear_algebra
 
 ```bash
 # 获取所有关系
-curl http://localhost:8000/api/v1/concepts/linear_algebra/relations
+curl 
 
 # 仅入边
-curl "http://localhost:8000/api/v1/concepts/linear_algebra/relations?direction=in"
+curl ""
 
 # 按类型过滤
-curl "http://localhost:8000/api/v1/concepts/linear_algebra/relations?relation_type=prerequisite"
+curl ""
 ```
 
 响应：
@@ -215,10 +215,10 @@ curl "http://localhost:8000/api/v1/concepts/linear_algebra/relations?relation_ty
 
 ```bash
 # 获取直接前置依赖
-curl http://localhost:8000/api/v1/concepts/linear_algebra/prerequisites
+curl 
 
 # 获取多级前置依赖（深度为3）
-curl "http://localhost:8000/api/v1/concepts/linear_algebra/prerequisites?depth=3"
+curl ""
 ```
 
 响应：
@@ -250,10 +250,10 @@ curl "http://localhost:8000/api/v1/concepts/linear_algebra/prerequisites?depth=3
 
 ```bash
 # 全部统计
-curl http://localhost:8000/api/v1/graph/stats
+curl 
 
 # 按分支统计
-curl "http://localhost:8000/api/v1/graph/stats?branch=algebra"
+curl ""
 ```
 
 响应：
@@ -284,7 +284,7 @@ curl "http://localhost:8000/api/v1/graph/stats?branch=algebra"
 #### 创建学习路径
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/learning-paths \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": 123,
@@ -311,10 +311,10 @@ curl -X POST http://localhost:8000/api/v1/learning-paths \
 
 ```bash
 # 全部路径
-curl http://localhost:8000/api/v1/learning-paths/user/123
+curl 
 
 # 按状态过滤
-curl "http://localhost:8000/api/v1/learning-paths/user/123?status=active"
+curl ""
 ```
 
 响应：
@@ -335,7 +335,7 @@ curl "http://localhost:8000/api/v1/learning-paths/user/123?status=active"
 #### 获取学习路径详情
 
 ```bash
-curl http://localhost:8000/api/v1/learning-paths/1
+curl 
 ```
 
 响应：
@@ -367,7 +367,7 @@ curl http://localhost:8000/api/v1/learning-paths/1
 #### 优化学习路径
 
 ```bash
-curl -X POST "http://localhost:8000/api/v1/learning-paths/1/optimize?optimization_type=difficulty"
+curl -X POST ""
 ```
 
 响应：
@@ -382,7 +382,7 @@ curl -X POST "http://localhost:8000/api/v1/learning-paths/1/optimize?optimizatio
 #### 更新学习进度
 
 ```bash
-curl -X PUT "http://localhost:8000/api/v1/learning-paths/1/progress?completed_nodes=5"
+curl -X PUT ""
 ```
 
 响应：
@@ -403,7 +403,7 @@ curl -X PUT "http://localhost:8000/api/v1/learning-paths/1/progress?completed_no
 #### 获取任务状态
 
 ```bash
-curl http://localhost:8000/api/v1/tasks/abc123-def456-ghi789
+curl 
 ```
 
 响应：
@@ -427,7 +427,7 @@ curl http://localhost:8000/api/v1/tasks/abc123-def456-ghi789
 #### 获取任务结果
 
 ```bash
-curl http://localhost:8000/api/v1/tasks/abc123-def456-ghi789/result
+curl 
 ```
 
 响应：
@@ -446,7 +446,7 @@ curl http://localhost:8000/api/v1/tasks/abc123-def456-ghi789/result
 #### 获取任务进度
 
 ```bash
-curl http://localhost:8000/api/v1/tasks/abc123-def456-ghi789/progress
+curl 
 ```
 
 响应：
@@ -463,10 +463,10 @@ curl http://localhost:8000/api/v1/tasks/abc123-def456-ghi789/progress
 
 ```bash
 # 正常撤销
-curl -X POST http://localhost:8000/api/v1/tasks/abc123-def456-ghi789/revoke
+curl -X POST 
 
 # 强制终止
-curl -X POST "http://localhost:8000/api/v1/tasks/abc123-def456-ghi789/revoke?terminate=true"
+curl -X POST ""
 ```
 
 响应：
@@ -482,7 +482,7 @@ curl -X POST "http://localhost:8000/api/v1/tasks/abc123-def456-ghi789/revoke?ter
 #### 获取Worker状态
 
 ```bash
-curl http://localhost:8000/api/v1/tasks/workers/status
+curl 
 ```
 
 响应：
@@ -510,7 +510,7 @@ curl http://localhost:8000/api/v1/tasks/workers/status
 #### 执行搜索
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/search/search \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "query": "线性代数的基本定理",
@@ -556,7 +556,7 @@ curl -X POST http://localhost:8000/api/v1/search/search \
 #### 公式搜索
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/search/formula \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "latex": "E = mc^2",
@@ -587,7 +587,7 @@ curl -X POST http://localhost:8000/api/v1/search/formula \
 #### 数学问答
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/search/ask \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "question": "什么是特征值？",
@@ -619,7 +619,7 @@ curl -X POST http://localhost:8000/api/v1/search/ask \
 #### 获取个性化推荐
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/recommendations/recommend \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": 123,
@@ -655,7 +655,7 @@ curl -X POST http://localhost:8000/api/v1/recommendations/recommend \
 #### 提交推荐反馈
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/recommendations/feedback \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": 123,
@@ -676,7 +676,7 @@ curl -X POST http://localhost:8000/api/v1/recommendations/feedback \
 #### 初始化用户
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/learning-engine/users/initialize \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": "user_123",
@@ -690,7 +690,7 @@ curl -X POST http://localhost:8000/api/v1/learning-engine/users/initialize \
 #### 记录学习交互
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/learning-engine/interactions/record \
+curl -X POST  \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": "user_123",
@@ -710,7 +710,7 @@ curl -X POST http://localhost:8000/api/v1/learning-engine/interactions/record \
 #### 获取下一步学习建议
 
 ```bash
-curl "http://localhost:8000/api/v1/learning-engine/users/user_123/next-steps?current_concept=linear_algebra"
+curl ""
 ```
 
 响应：
@@ -732,7 +732,7 @@ curl "http://localhost:8000/api/v1/learning-engine/users/user_123/next-steps?cur
 #### 获取用户学习分析
 
 ```bash
-curl http://localhost:8000/api/v1/learning-engine/users/user_123/analytics
+curl 
 ```
 
 响应：
@@ -870,7 +870,7 @@ page = 1
 
 while True:
     response = requests.get(
-        "http://localhost:8000/api/v1/concepts",
+        "",
         params={"page": page, "page_size": 100}
     )
     data = response.json()
@@ -993,7 +993,7 @@ session.mount('https://', adapter)
 session.mount('http://', adapter)
 
 # 使用 session 发送请求
-response = session.get("http://localhost:8000/api/v1/concepts")
+response = session.get("")
 ```
 
 ---
@@ -1054,6 +1054,6 @@ const task = await client.learningPaths.create({
 
 ## 支持和反馈
 
-- **API文档**: https://docs.formalmath.org/api
+- **API文档**: https://docs.formalmath.org/api[需更新]
 - **问题反馈**: https://github.com/formalmath/api/issues
 - **技术支持**: support@formalmath.org

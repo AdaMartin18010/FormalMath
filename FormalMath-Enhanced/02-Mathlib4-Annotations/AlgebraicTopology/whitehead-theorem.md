@@ -102,11 +102,11 @@ Whitehead定理说明它们同伦等价当且仅当 $qq' \equiv \pm m^2 \pmod{p}
 
 ## 相关概念
 
-- [同伦群](./homotopy-group.md)：Whitehead定理的核心不变量
+- 同伦群：Whitehead定理的核心不变量
 - [Hurewicz定理](./hurewicz-theorem.md)：同伦群与同调群的联系
-- [CW复形](./cw-complex.md)：Whitehead定理的适用空间
-- [弱同伦等价](./weak-homotopy-equivalence.md)：诱导同伦群同构的映射
-- [胞腔逼近定理](./cellular-approximation.md)：证明的关键工具
+- CW复形：Whitehead定理的适用空间
+- 弱同伦等价：诱导同伦群同构的映射
+- 胞腔逼近定理：证明的关键工具
 
 ## 参考
 

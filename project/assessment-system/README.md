@@ -115,9 +115,9 @@ pip install -r requirements.txt
 python main.py
 ```
 
-后端服务将运行在 `http://localhost:8000`
+后端服务将运行在 ``
 
-API文档: `http://localhost:8000/docs`
+API文档: ``
 
 ### 2. 启动前端服务
 
@@ -131,7 +131,7 @@ npm install
 npm run dev
 ```
 
-前端服务将运行在 `http://localhost:3000`
+前端服务将运行在 ``
 
 ## API 接口
 

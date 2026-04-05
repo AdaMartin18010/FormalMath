@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 
 本文档收集和整理Stanford大学的数学课程资源，为FormalMath概念体系提供权威的大学数学教育课程参考。
 
-**资源来源**：Stanford University (<https://www.stanford.edu/>)
+**资源来源**：Stanford University (<https://www.stanford.edu/[需更新[需更新]]>)
 
 **收集原则**：
 
@@ -38,7 +38,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Calculus
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -71,7 +71,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Linear Algebra and Differential Calculus of Several Variables
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -107,7 +107,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Linear Algebra
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -142,7 +142,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Groups, Rings, and Fields
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -176,7 +176,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Real Analysis
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -215,7 +215,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Probability Theory
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -246,7 +246,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科
 - **课程名称**：Statistics
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -279,7 +279,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Topology
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -314,7 +314,7 @@ processed_at: '2026-04-05'
 
 - **级别**：研究生
 - **课程名称**：Algebraic Geometry
-- **资源链接**：<https://mathematics.stanford.edu/graduate/>
+- **资源链接**：<https://mathematics.stanford.edu/graduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -352,7 +352,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Number Theory
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -388,7 +388,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Complex Analysis
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -422,7 +422,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Stochastic Processes / Theory of Probability
-- **资源链接**：<https://mathematics.stanford.edu/graduate/>
+- **资源链接**：<https://mathematics.stanford.edu/graduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -456,7 +456,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Applied Group Theory
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -485,7 +485,7 @@ processed_at: '2026-04-05'
 
 - **级别**：研究生
 - **课程名称**：Group Theory
-- **资源链接**：<https://mathematics.stanford.edu/graduate/>
+- **资源链接**：<https://mathematics.stanford.edu/graduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -518,7 +518,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Applied Number Theory
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -552,7 +552,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Mathematics of Computation
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -585,7 +585,7 @@ processed_at: '2026-04-05'
 
 - **级别**：研究生
 - **课程名称**：Lebesgue Integration and Fourier Analysis
-- **资源链接**：<https://mathematics.stanford.edu/graduate/>
+- **资源链接**：<https://mathematics.stanford.edu/graduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -614,7 +614,7 @@ processed_at: '2026-04-05'
 
 - **级别**：研究生
 - **课程名称**：Real Analysis
-- **资源链接**：<https://mathematics.stanford.edu/graduate/>
+- **资源链接**：<https://mathematics.stanford.edu/graduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -648,7 +648,7 @@ processed_at: '2026-04-05'
 
 - **级别**：研究生
 - **课程名称**：Algebraic Topology
-- **资源链接**：<https://mathematics.stanford.edu/graduate/>
+- **资源链接**：<https://mathematics.stanford.edu/graduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -682,7 +682,7 @@ processed_at: '2026-04-05'
 
 - **级别**：研究生
 - **课程名称**：Differential Geometry
-- **资源链接**：<https://mathematics.stanford.edu/graduate/>
+- **资源链接**：<https://mathematics.stanford.edu/graduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -716,7 +716,7 @@ processed_at: '2026-04-05'
 
 - **级别**：研究生
 - **课程名称**：Topics in Algebraic Geometry
-- **资源链接**：<https://mathematics.stanford.edu/graduate/>
+- **资源链接**：<https://mathematics.stanford.edu/graduate/[需更新[需更新]]>
 
 **核心内容**：
 
@@ -749,7 +749,7 @@ processed_at: '2026-04-05'
 
 - **级别**：本科/研究生
 - **课程名称**：Set Theory
-- **资源链接**：<https://mathematics.stanford.edu/undergraduate/>
+- **资源链接**：<https://mathematics.stanford.edu/undergraduate/[需更新[需更新]]>
 
 **核心内容**：
 

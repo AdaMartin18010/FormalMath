@@ -101,11 +101,11 @@ $(y_2 - z)^2 = x y$ 给出 $z$ 的二次整方程。
 
 ## 相关概念
 
-- [整扩张 (Integral Extension)](./integral-extension.md)：满足首一多项式的扩张
-- [Krull维数 (Krull Dimension)](./krull-dimension.md)：素理想链的最大长度
-- [代数无关 (Algebraic Independence)](./algebraic-independence.md)：超越基的概念
-- [希尔伯特零点定理 (Nullstellensatz)](./nullstellensatz.md)：代数几何基本定理
-- [仿射代数 (Affine Algebra)](./affine-algebra.md)：有限生成代数
+- 整扩张 (Integral Extension)：满足首一多项式的扩张
+- Krull维数 (Krull Dimension)：素理想链的最大长度
+- 代数无关 (Algebraic Independence)：超越基的概念
+- 希尔伯特零点定理 (Nullstellensatz)：代数几何基本定理
+- 仿射代数 (Affine Algebra)：有限生成代数
 
 ## 参考
 
@@ -120,8 +120,8 @@ $(y_2 - z)^2 = x y$ 给出 $z$ 的二次整方程。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Algebra Finiteness](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Finiteness.html)
-- [Stacks Project - 00OW](https://stacks.math.columbia.edu/tag/00OW)
+- [Mathlib4 文档 - Algebra Finiteness](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Finiteness.html)[需更新]
+- [Stacks Project - 00OW](https://stacks.math.columbia.edu/tag/00OW)[需更新]
 
 ---
 

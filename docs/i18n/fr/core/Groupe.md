@@ -56,10 +56,10 @@ Les groupes trouvent des applications en:
 
 ## Concepts liés
 
-- [Sous-groupe](./Sous-groupe.md)
-- [Sous-groupe distingué](./Sous-groupe-distingué.md)
-- [Groupe quotient](./Groupe-quotient.md)
-- [Homomorphisme de groupes](./Homomorphisme.md)
+- Sous-groupe
+- Sous-groupe distingué
+- Groupe quotient
+- Homomorphisme de groupes
 
 ---
 

@@ -118,11 +118,11 @@ $\mathbb{Z}_2 \otimes_\mathbb{Z} \mathbb{Z}_3 = 0$（因为 $a \otimes b = 3(a \
 
 ## 相关概念
 
-- [Tor函子 (Tor Functor)](./tor-functor.md)：张量积的左导出
-- [平坦模 (Flat Module)](./flat-module.md)：保持正合性的模
-- [Hom与张量积 (Hom-Tensor Adjunction)](./hom-tensor-adjunction.md)：伴随关系
-- [对称代数 (Symmetric Algebra)](./symmetric-algebra.md)：张量积的对称化
-- [外代数 (Exterior Algebra)](./exterior-algebra.md)：反对称张量积
+- Tor函子 (Tor Functor)：张量积的左导出
+- 平坦模 (Flat Module)：保持正合性的模
+- Hom与张量积 (Hom-Tensor Adjunction)：伴随关系
+- 对称代数 (Symmetric Algebra)：张量积的对称化
+- 外代数 (Exterior Algebra)：反对称张量积
 
 ## 参考
 
@@ -137,8 +137,8 @@ $\mathbb{Z}_2 \otimes_\mathbb{Z} \mathbb{Z}_3 = 0$（因为 $a \otimes b = 3(a \
 
 ### 在线资源
 
-- [Mathlib4 文档 - TensorProduct](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/TensorProduct/Basic.html)
-- [Keith Conrad - Tensor Products](https://kconrad.math.uconn.edu/blurbs/linmultialg/tensorprod.pdf)
+- [Mathlib4 文档 - TensorProduct](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/TensorProduct/Basic.html)[需更新]
+- [Keith Conrad - Tensor Products](https://kconrad.math.uconn.edu/blurbs/linmultialg/tensorprod.pdf)[需更新]
 
 ---
 

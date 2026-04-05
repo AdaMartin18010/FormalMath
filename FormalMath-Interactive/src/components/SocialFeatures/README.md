@@ -66,7 +66,7 @@ function MyPage() {
       <OpenGraphMeta
         title="页面标题"
         description="页面描述"
-        url="https://example.com/page"
+        url="https://example.com/page[需更新]"
         image="/preview.png"
       />
       

@@ -113,10 +113,10 @@ Mertens第三定理给出了部分乘积的精确渐近。
 
 ## 相关概念
 
-- [Mertens常数 (Mertens Constant)](./mertens-constant.md)：$M \approx 0.261497$
-- [Euler-Mascheroni常数 (Euler-Mascheroni Constant)](./euler-mascheroni-constant.md)：$\gamma \approx 0.577$
-- [Abel求和 (Abel Summation)](./abel-summation.md)：分部求和技巧
-- [Chebyshev函数 (Chebyshev Function)](./chebyshev-function.md)：$\vartheta(x)$
+- Mertens常数 (Mertens Constant)：$M \approx 0.261497$
+- Euler-Mascheroni常数 (Euler-Mascheroni Constant)：$\gamma \approx 0.577$
+- Abel求和 (Abel Summation)：分部求和技巧
+- Chebyshev函数 (Chebyshev Function)：$\vartheta(x)$
 - [素数定理 (Prime Number Theorem)](./prime-number-theorem.md)：$\pi(x)$ 的渐近
 
 ## 参考
@@ -132,7 +132,7 @@ Mertens第三定理给出了部分乘积的精确渐近。
 
 ### 在线资源
 
-- [Mathlib4 文档 - ArithmeticFunction](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/ArithmeticFunction.html)
+- [Mathlib4 文档 - ArithmeticFunction](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/ArithmeticFunction.html)[需更新]
 - [Wikipedia - Mertens' Theorems](https://en.wikipedia.org/wiki/Mertens%27_theorems)
 
 ---

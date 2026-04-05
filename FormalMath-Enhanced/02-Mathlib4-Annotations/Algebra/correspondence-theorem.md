@@ -104,11 +104,11 @@ $G/N \cong S_3$。$S_3$ 的子群对应 $S_4$ 中包含 $V_4$ 的子群：
 
 ## 相关概念
 
-- [正规子群 (Normal Subgroup)](./normal-subgroup.md)：左右陪集相等的子群
-- [商群 (Quotient Group)](./quotient-group.md)：由正规子群构造的新群
-- [同构定理 (Isomorphism Theorem)](./isomorphism-theorem.md)：群论基本同构结果
-- [子群格 (Subgroup Lattice)](./subgroup-lattice.md)：群的所有子群构成的格
-- [伽罗瓦对应 (Galois Correspondence)](./galois-correspondence.md)：域论中的对应定理
+- 正规子群 (Normal Subgroup)：左右陪集相等的子群
+- 商群 (Quotient Group)：由正规子群构造的新群
+- 同构定理 (Isomorphism Theorem)：群论基本同构结果
+- 子群格 (Subgroup Lattice)：群的所有子群构成的格
+- 伽罗瓦对应 (Galois Correspondence)：域论中的对应定理
 
 ## 参考
 
@@ -123,8 +123,8 @@ $G/N \cong S_3$。$S_3$ 的子群对应 $S_4$ 中包含 $V_4$ 的子群：
 
 ### 在线资源
 
-- [Mathlib4 文档 - QuotientGroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Basic.html)
-- [Groupprops - Correspondence theorem](https://groupprops.subwiki.org/wiki/Correspondence_theorem)
+- [Mathlib4 文档 - QuotientGroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Basic.html)[需更新]
+- [Groupprops - Correspondence theorem](https://groupprops.subwiki.org/wiki/Correspondence_theorem)[需更新]
 
 ---
 

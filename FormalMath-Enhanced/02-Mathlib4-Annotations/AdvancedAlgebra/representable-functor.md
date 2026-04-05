@@ -99,9 +99,9 @@ $$\text{Hom}_{\mathbf{Alg}}(T(V), A) \cong \text{Hom}_{\mathbf{Vect}}(V, U(A))$$
 
 - [Yoneda引理](./yoneda-lemma.md)：可表示性的理论基础
 - [伴随函子](./adjoint-functor.md)：可表示性的推广
-- [泛性质](./universal-property.md)：表示对象的刻画
-- [模空间](./moduli-space.md)：几何中的可表示函子
-- [分类空间](./classifying-space.md)：拓扑中的表示对象
+- 泛性质：表示对象的刻画
+- 模空间：几何中的可表示函子
+- 分类空间：拓扑中的表示对象
 
 ## 参考
 

@@ -8,32 +8,32 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [随机矩阵理论深度版 / Random Matrix Theory - In Depth](#随机矩阵理论深度版--random-matrix-theory---in-depth)
+- 随机矩阵理论深度版 / Random Matrix Theory - In Depth
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
-    - [1.1 随机矩阵系综的分类 / Classification of Random Matrix Ensembles](#11-随机矩阵系综的分类--classification-of-random-matrix-ensembles)
-    - [1.2 谱分布与特征值统计 / Spectral Distributions and Eigenvalue Statistics](#12-谱分布与特征值统计--spectral-distributions-and-eigenvalue-statistics)
-    - [1.3 正交多项式与Riemann-Hilbert问题 / Orthogonal Polynomials and Riemann-Hilbert Problems](#13-正交多项式与riemann-hilbert问题--orthogonal-polynomials-and-riemann-hilbert-problems)
-    - [1.4 行列式点过程 / Determinantal Point Processes](#14-行列式点过程--determinantal-point-processes)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
-    - [2.1 自由概率论 / Free Probability Theory](#21-自由概率论--free-probability-theory)
-    - [2.2 矩阵模型与拓扑递归 / Matrix Models and Topological Recursion](#22-矩阵模型与拓扑递归--matrix-models-and-topological-recursion)
-    - [2.3 通用性现象 / Universality Phenomena](#23-通用性现象--universality-phenomena)
-    - [2.4 多尺度分析与局部统计 / Multiscale Analysis and Local Statistics](#24-多尺度分析与局部统计--multiscale-analysis-and-local-statistics)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
-    - [3.1 非厄米特随机矩阵 / Non-Hermitian Random Matrices](#31-非厄米特随机矩阵--non-hermitian-random-matrices)
-    - [3.2 随机矩阵与可积系统 / Random Matrices and Integrable Systems](#32-随机矩阵与可积系统--random-matrices-and-integrable-systems)
-    - [3.3 高维统计与机器学习 / High-Dimensional Statistics and Machine Learning](#33-高维统计与机器学习--high-dimensional-statistics-and-machine-learning)
-    - [3.4 随机矩阵与数论 / Random Matrices and Number Theory](#34-随机矩阵与数论--random-matrices-and-number-theory)
-  - [4. 应用前沿 / Frontier Applications](#4-应用前沿--frontier-applications)
-    - [4.1 量子混沌与量子引力 / Quantum Chaos and Quantum Gravity](#41-量子混沌与量子引力--quantum-chaos-and-quantum-gravity)
-    - [4.2 无线通信与信号处理 / Wireless Communications and Signal Processing](#42-无线通信与信号处理--wireless-communications-and-signal-processing)
-    - [4.3 神经网络与深度学习 / Neural Networks and Deep Learning](#43-神经网络与深度学习--neural-networks-and-deep-learning)
-  - [5. 参考文献 / References](#5-参考文献--references)
-    - [5.1 经典与奠基性著作 / Classical and Foundational Works](#51-经典与奠基性著作--classical-and-foundational-works)
-    - [5.2 现代专著 / Modern Monographs](#52-现代专著--modern-monographs)
-    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文--frontier-research-papers)
-    - [5.4 在线资源 / Online Resources](#54-在线资源--online-resources)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
+    - [1.1 随机矩阵系综的分类 / Classification of Random Matrix Ensembles](#11-随机矩阵系综的分类-classification-of-random-matrix-ensembles)
+    - [1.2 谱分布与特征值统计 / Spectral Distributions and Eigenvalue Statistics](#12-谱分布与特征值统计-spectral-distributions-and-eigenvalue-statistics)
+    - [1.3 正交多项式与Riemann-Hilbert问题 / Orthogonal Polynomials and Riemann-Hilbert Problems](#13-正交多项式与riemann-hilbert问题-orthogonal-polynomials-and-riemann-hilbert-problems)
+    - [1.4 行列式点过程 / Determinantal Point Processes](#14-行列式点过程-determinantal-point-processes)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
+    - [2.1 自由概率论 / Free Probability Theory](#21-自由概率论-free-probability-theory)
+    - [2.2 矩阵模型与拓扑递归 / Matrix Models and Topological Recursion](#22-矩阵模型与拓扑递归-matrix-models-and-topological-recursion)
+    - [2.3 通用性现象 / Universality Phenomena](#23-通用性现象-universality-phenomena)
+    - [2.4 多尺度分析与局部统计 / Multiscale Analysis and Local Statistics](#24-多尺度分析与局部统计-multiscale-analysis-and-local-statistics)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
+    - [3.1 非厄米特随机矩阵 / Non-Hermitian Random Matrices](#31-非厄米特随机矩阵-non-hermitian-random-matrices)
+    - [3.2 随机矩阵与可积系统 / Random Matrices and Integrable Systems](#32-随机矩阵与可积系统-random-matrices-and-integrable-systems)
+    - [3.3 高维统计与机器学习 / High-Dimensional Statistics and Machine Learning](#33-高维统计与机器学习-high-dimensional-statistics-and-machine-learning)
+    - [3.4 随机矩阵与数论 / Random Matrices and Number Theory](#34-随机矩阵与数论-random-matrices-and-number-theory)
+  - [4. 应用前沿 / Frontier Applications](#4-应用前沿-frontier-applications)
+    - [4.1 量子混沌与量子引力 / Quantum Chaos and Quantum Gravity](#41-量子混沌与量子引力-quantum-chaos-and-quantum-gravity)
+    - [4.2 无线通信与信号处理 / Wireless Communications and Signal Processing](#42-无线通信与信号处理-wireless-communications-and-signal-processing)
+    - [4.3 神经网络与深度学习 / Neural Networks and Deep Learning](#43-神经网络与深度学习-neural-networks-and-deep-learning)
+  - [5. 参考文献 / References](#5-参考文献-references)
+    - [5.1 经典与奠基性著作 / Classical and Foundational Works](#51-经典与奠基性著作-classical-and-foundational-works)
+    - [5.2 现代专著 / Modern Monographs](#52-现代专著-modern-monographs)
+    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文-frontier-research-papers)
+    - [5.4 在线资源 / Online Resources](#54-在线资源-online-resources)
 
 ---
 
@@ -771,10 +771,10 @@ Jackiw-Teitelboim引力：
 23. **Random Matrix Theory Website** - Various universities
     - 多个大学的随机矩阵课程主页
 
-24. **Brunel University: Random Matrix Theory** - http://www.brunel.ac.uk/randommatrix/
+24. **Brunel University: Random Matrix Theory** - http://www.brunel.ac.uk/randommatrix/[需更新[需更新]]
     - Brunel大学的随机矩阵研究中心
 
-25. **IAS School of Math: Random Matrix Theory** - https://www.math.ias.edu/
+25. **IAS School of Math: Random Matrix Theory** - https://www.math.ias.edu/[需更新[需更新]]
     - 高等研究院的随机矩阵相关资料
 
 26. **ArXiv Tag: Probability** - https://arxiv.org/list/math.PR/recent
@@ -783,7 +783,7 @@ Jackiw-Teitelboim引力：
 27. **ArXiv Tag: Mathematical Physics** - https://arxiv.org/list/math-ph/recent
     - 数学物理最新论文
 
-28. **AIM Problem Lists: Random Matrix Theory** - https://aimpl.org/randommatrix/
+28. **AIM Problem Lists: Random Matrix Theory** - https://aimpl.org/randommatrix/[需更新[需更新]]
     - 美国数学研究所的开放问题列表
 
 29. **Brunel Moodle: Random Matrix Theory Course**

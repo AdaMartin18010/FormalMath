@@ -106,11 +106,11 @@ $$H^q(X, \Omega_X^p) = H^{p,q}_{\bar{\partial}}(X)$$
 
 ## 相关概念
 
-- [导出函子](./derived-functor.md)：层上同调的理论基础
-- [Čech上同调](./cech-cohomology.md)：计算方法
-- [局部上同调](./local-cohomology.md)：支撑在闭子集的上同调
+- 导出函子：层上同调的理论基础
+- Čech上同调：计算方法
+- 局部上同调：支撑在闭子集的上同调
 - [Serre对偶](./serre-duality.md)：层上同调的对偶性
-- [Hilbert多项式](./hilbert-polynomial.md)：射影概形的Euler示性数
+- Hilbert多项式：射影概形的Euler示性数
 
 ## 参考
 
@@ -127,7 +127,7 @@ $$H^q(X, \Omega_X^p) = H^{p,q}_{\bar{\partial}}(X)$$
 ### 在线资源
 
 - [Sheaf Cohomology Wikipedia](https://en.wikipedia.org/wiki/Sheaf_cohomology)
-- [Stacks Project - Cohomology of Sheaves](https://stacks.math.columbia.edu/tag/01E2)
+- [Stacks Project - Cohomology of Sheaves](https://stacks.math.columbia.edu/tag/01E2)[需更新]
 
 ---
 

@@ -87,11 +87,11 @@ $$\sum x_k a_k = s - t, \quad \sum x_k b_k = 1 - s - t$$
 本题与**离散调和分析**和**布尔函数**有关。在**计算机科学**中，这类问题涉及阈值函数和决策树复杂度。在**概率论**中，这与随机游走的偏差问题相关。
 
 ## 相关概念
-- [布尔函数](../../concept/布尔函数.md)
-- [组合优化](../../concept/组合优化.md)
-- [离散傅里叶分析](../../concept/离散傅里叶分析.md)
-- [符号选择问题](../../concept/符号选择.md)
+- 布尔函数
+- 组合优化
+- 离散傅里叶分析
+- 符号选择问题
 
 ## 参考
 - IMO 2016 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1263917p6575295
+- AoPS Community: https://artofproblemsolving.com/community/c6h1263917p6575295[需更新]

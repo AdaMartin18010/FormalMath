@@ -120,7 +120,7 @@ Elements of Algebraic Topology, Second Edition
 
 James R. Munkres, Steven G. Krantz, and Harold R. Parks
 
-https://www.routledge.com/Textbooks-in-Mathematics/book-series/CANDHTEXBOOMTH
+https://www.routledge.com/Textbooks-in-Mathematics/book-series/CANDHTEXBOOMTH[需更新]
 
 # Abstract Algebra An Interactive Approach Third Edition
 
@@ -168,7 +168,7 @@ by KnowledgeWorks Global Ltd.
 
 Publisher's note: This book has been prepared from camera-ready copy provided by the authors.
 
-Access support material at https://www.routledge.com/9781032985404
+Access support material at https://www.routledge.com/9781032985404[需更新]
 
 # Contents
 
@@ -419,7 +419,7 @@ Chapter 11: Integral Domains and Fields. The book culminates with applications o
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # Acknowledgments
 
@@ -433,7 +433,7 @@ I also must express my thanks to Shashi Kumar at the IATEX help desk, who helped
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # About the Author
 
@@ -449,7 +449,7 @@ Dr. Paulsen lives in Harrisburg, Arkansas with his wife Cynthia, and their three
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # Symbol Description
 
@@ -671,7 +671,7 @@ and unzip it to get the files in the math folder. Then you will have to make sur
 
 Mathematica is not free, but price information can be obtained from
 
-http://www.wolfram.com
+http://www.wolfram.com[需更新]
 
 However, one can obtain a 30-day Mathematica product trial.
 
@@ -765,7 +765,7 @@ which will displace the current version of the program, if it is installed. If i
 
 Now can use GNU wget to download the latest version of Google Chrome:
 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64deb[需更新]
 
 Note that this must be entered on a single line. This command will put the downloaded file into your Linux home folder. We can then use the dpkg tool to install Google Chrome from this file.
 
@@ -16357,7 +16357,7 @@ CircleGraph(H, Mult(sqrt(3) + I/2))
 
 Taylor & Francis Group
 
-http://taylorandfrancis.com
+http://taylorandfrancis.com[需更新]
 
 # Bibliography
 
@@ -16387,7 +16387,7 @@ The following list not only gives the books and articles mentioned in the text b
 # Other sources
 
 13. J. H. Conway, R. T. Curtis, S. P. Norton, R. A. Parker, and R. A. Wilson, Atlas of Finite Groups, Clarendon Press, Oxford (1985).
-14. The GAP Group, GAP Reference Manual, Release 4.4.12, http://www.gap-system.org.
+14. The GAP Group, GAP Reference Manual, Release 4.4.12, http://www.gap-system.org.[需更新]
 15. I. S. Reed and G. Solomon, “Polynomial Codes over Certain Finite Fields,” SIAM Journal of Applied Math., 8 (1960) pp. 300–304.
 16. "Reed-Solomon error correction," Wikipedia, the free encyclopedia, http://en.wikipedia.org.
 17. W. Paulsen, “Calkin-Wilf Sequences for Irrational Numbers,” The Fibonacci Quarterly, 61:1 (2023) pp. 51-57.

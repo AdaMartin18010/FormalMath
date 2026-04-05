@@ -100,10 +100,10 @@ $$|X/G| = \frac{1}{|G|} \sum_{g \in G} |X^g|$$
 
 ## 相关概念
 
-- [群作用](./group-action.md)：数学结构
-- [轨道-稳定子定理](./orbit-stabilizer-theorem.md)：群论基本定理
+- 群作用：数学结构
+- 轨道-稳定子定理：群论基本定理
 - [Pólya计数定理](./polya-counting-theorem.md)：Burnside引理的推广
-- [对称群](./symmetric-group.md)：常见的作用群
+- 对称群：常见的作用群
 
 ## 参考
 
@@ -118,7 +118,7 @@ $$|X/G| = \frac{1}{|G|} \sum_{g \in G} |X^g|$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Group Action](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Basic.html)
+- [Mathlib4 文档 - Group Action](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Basic.html)[需更新]
 
 ---
 

@@ -121,11 +121,11 @@ $F = (-y, x, 0)$，$\nabla \times F = (0, 0, 2)$。
 
 ## 相关概念
 
-- [外微分 (Exterior Derivative)](./exterior-derivative.md)：微分形式的外微分
-- [微分形式 (Differential Form)](./differential-form.md)：流形上的反对称张量场
-- [de Rham上同调 (de Rham Cohomology)](./de-rham-cohomology.md)：拓扑不变量
-- [流形 (Manifold)](./manifold.md)：局部像欧氏空间的空间
-- [定向 (Orientation)](./orientation.md)：流形的一致性定向
+- 外微分 (Exterior Derivative)：微分形式的外微分
+- 微分形式 (Differential Form)：流形上的反对称张量场
+- de Rham上同调 (de Rham Cohomology)：拓扑不变量
+- 流形 (Manifold)：局部像欧氏空间的空间
+- 定向 (Orientation)：流形的一致性定向
 
 ## 参考
 
@@ -140,7 +140,7 @@ $F = (-y, x, 0)$，$\nabla \times F = (0, 0, 2)$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Manifold](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html)
+- [Mathlib4 文档 - Manifold](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html)[需更新]
 - [Wikipedia - Stokes' Theorem](https://en.wikipedia.org/wiki/Stokes%27_theorem)
 
 ---

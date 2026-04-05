@@ -17,7 +17,7 @@ msc_secondary: ['00-XX']
 
 ### API文档
 - [API索引](api/index.md)
-- [模块文档](api/modules/)
+- 模块文档
 - [HTML参考](api/api_reference.html)
 - [JSON数据](api/api_reference.json)
 
@@ -42,15 +42,15 @@ msc_secondary: ['00-XX']
 - [语言导航](i18n/language_nav.md)
 - [术语对照](i18n/bilingual_glossary.md)
 - [翻译数据](i18n/translations.json)
-- [中文版](i18n/zh/)
-- [英文版](i18n/en/)
+- 中文版
+- 英文版
 
 ### 导出格式
-- [Markdown合集](export/formalmath_complete.md)
-- [HTML合集](export/formalmath_complete.html)
-- [JSON数据](export/formalmath_data.json)
-- [PDF导出指南](export/pdf_export_guide.md)
-- [DOCX导出指南](export/docx_export_guide.md)
+- Markdown合集
+- HTML合集
+- JSON数据
+- PDF导出指南
+- DOCX导出指南
 
 ## 生成统计
 

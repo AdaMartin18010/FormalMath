@@ -85,7 +85,7 @@ $P = 0, Q = x$，则 $\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
 - [Stokes定理](../Geometry/stokes-theorem.md)：三维推广
 - [散度定理](./divergence-theorem.md)：Green定理的三维形式
 - [Cauchy积分定理](../Analysis/cauchy-integral-formula.md)：复分析版本
-- [单连通区域](./simply-connected-domain.md)：Green定理适用的区域类型
+- 单连通区域：Green定理适用的区域类型
 
 ## 参考
 
@@ -100,7 +100,7 @@ $P = 0, Q = x$，则 $\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
 
 ### 在线资源
 
-- [Mathlib4 文档 - Complex Cauchy Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/CauchyIntegral.html)
+- [Mathlib4 文档 - Complex Cauchy Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/CauchyIntegral.html)[需更新]
 
 ---
 

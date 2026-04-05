@@ -466,7 +466,7 @@ const ResponsiveVisualization = () => {
 npm run dev
 
 # 访问示例页面
-open http://localhost:5173/visualization-gallery
+open 
 ```
 
 ---

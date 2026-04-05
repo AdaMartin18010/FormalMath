@@ -702,10 +702,10 @@ project/
 
 | 资源 | 链接 |
 |------|------|
-| Prelims 2024-25 | https://www.maths.ox.ac.uk/system/files/attachments/Prelims%20Mathematics%20Synopses%202024-25.pdf |
-| Part A 2024-25 | https://www.maths.ox.ac.uk/system/files/attachments/Part%20A%20Mathematics%20Synopses%202024-25.pdf |
-| Part B 2024-25 | https://www.maths.ox.ac.uk/system/files/attachments/Part%20B%20Mathematics%20Synopses%202024-25.pdf |
-| Part C 2024-25 | https://www.maths.ox.ac.uk/system/files/attachments/Draft%20Part%20C%202024-25%20Synopses.pdf |
+| Prelims 2024-25 | https://www.maths.ox.ac.uk/system/files/attachments/Prelims%20Mathematics%20Synopses%202024-25.pdf[需更新] |
+| Part A 2024-25 | https://www.maths.ox.ac.uk/system/files/attachments/Part%20A%20Mathematics%20Synopses%202024-25.pdf[需更新] |
+| Part B 2024-25 | https://www.maths.ox.ac.uk/system/files/attachments/Part%20B%20Mathematics%20Synopses%202024-25.pdf[需更新] |
+| Part C 2024-25 | https://www.maths.ox.ac.uk/system/files/attachments/Draft%20Part%20C%202024-25%20Synopses.pdf[需更新] |
 
 ### 附录B: FormalMath相关资源
 

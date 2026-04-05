@@ -110,11 +110,11 @@ $A_5$ 是单群且非交换，故 $A_5^{(1)} = A_5$
 
 ## 相关概念
 
-- [换位子群 (Commutator Subgroup)](./commutator-subgroup.md)：由换位子生成的子群
-- [导列 (Derived Series)](./derived-series.md)：群的递减正规列
-- [正规列 (Normal Series)](./normal-series.md)：子群的正规降链
-- [幂零群 (Nilpotent Group)](./nilpotent-group.md)：比可解群更强的条件
-- [单群 (Simple Group)](./simple-group.md)：没有非平凡正规子群的群
+- 换位子群 (Commutator Subgroup)：由换位子生成的子群
+- 导列 (Derived Series)：群的递减正规列
+- 正规列 (Normal Series)：子群的正规降链
+- 幂零群 (Nilpotent Group)：比可解群更强的条件
+- 单群 (Simple Group)：没有非平凡正规子群的群
 
 ## 参考
 
@@ -129,8 +129,8 @@ $A_5$ 是单群且非交换，故 $A_5^{(1)} = A_5$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Solvable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Solvable.html)
-- [Groupprops - Solvable group](https://groupprops.subwiki.org/wiki/Solvable_group)
+- [Mathlib4 文档 - Solvable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Solvable.html)[需更新]
+- [Groupprops - Solvable group](https://groupprops.subwiki.org/wiki/Solvable_group)[需更新]
 
 ---
 

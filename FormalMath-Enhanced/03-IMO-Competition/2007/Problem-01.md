@@ -117,10 +117,10 @@ $$|x_i - a_i| \leq \max\left(\frac{L_i - R_i}{2}, \frac{L_i - R_i}{2}\right) = \
 
 ### 与FormalMath主项目的链接
 
-- [序列分析](../../concept/analysis/sequences.md)
-- [逼近理论](../../concept/analysis/approximation-theory.md)
-- [极值原理](../../concept/analysis/extremal-principles.md)
-- [中位数与分位数](../../concept/statistics/quantiles.md)
+- 序列分析
+- 逼近理论
+- 极值原理
+- 中位数与分位数
 
 ## 变体与推广
 
@@ -135,8 +135,8 @@ $$|x_i - a_i| \leq \max\left(\frac{L_i - R_i}{2}, \frac{L_i - R_i}{2}\right) = \
 
 ## 参考
 
-- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159838p893685)
+- [IMO 2007 Official Solutions](https://www.imo-official.org/problems/IMO2007SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h159838p893685)[需更新]
 - 相关概念：保序回归（Isotonic Regression）、Pool Adjacent Violators算法
 
 ---

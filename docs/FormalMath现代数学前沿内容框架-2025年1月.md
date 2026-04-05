@@ -171,7 +171,7 @@ processed_at: '2026-04-05'
 **参考文献**:
 
 - Lurie, J. Higher Topos Theory[M]. Princeton: Princeton University Press, 2009.
-- Lurie, J. Higher Algebra[EB/OL]. [2025-01-XX]. <https://www.math.ias.edu/~lurie/papers/HA.pdf>
+- Lurie, J. Higher Algebra[EB/OL]. [2025-01-XX]. <https://www.math.ias.edu/~lurie/papers/HA.pdf[需更新[需更新]]>
 
 ### 2.2 形式化实现计划
 

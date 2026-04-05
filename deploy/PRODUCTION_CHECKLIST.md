@@ -245,10 +245,10 @@ kubectl logs <pod_name> -n formalmath-prod
 
 | 系统 | 链接 |
 |------|------|
-| Grafana | https://grafana.formalmath.org |
-| Kibana | https://kibana.formalmath.org |
-| Prometheus | https://prometheus.formalmath.org |
-| Alertmanager | https://alerts.formalmath.org |
+| Grafana | https://grafana.formalmath.org[需更新] |
+| Kibana | https://kibana.formalmath.org[需更新] |
+| Prometheus | https://prometheus.formalmath.org[需更新] |
+| Alertmanager | https://alerts.formalmath.org[需更新] |
 
 ### C. 联系信息
 

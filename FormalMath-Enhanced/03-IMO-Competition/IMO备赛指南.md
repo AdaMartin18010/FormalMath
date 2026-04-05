@@ -493,18 +493,18 @@ title: IMO 备赛指南
 ### 7.2 在线资源
 
 #### 官方网站
-- [IMO Official](https://www.imo-official.org/) - 官方题目与结果
-- [IMO Shortlist](https://www.imo-official.org/problems.aspx) - 备用题库
+- [IMO Official](https://www.imo-official.org/)[需更新] - 官方题目与结果
+- [IMO Shortlist](https://www.imo-official.org/problems.aspx)[需更新] - 备用题库
 
 #### 论坛与社区
-- [AoPS](https://artofproblemsolving.com/) - 最活跃的数学竞赛社区
-- [AoPS IMO Forum](https://artofproblemsolving.com/community/c6_high_school_olympiads) - IMO专题讨论
+- [AoPS](https://artofproblemsolving.com/)[需更新] - 最活跃的数学竞赛社区
+- [AoPS IMO Forum](https://artofproblemsolving.com/community/c6_high_school_olympiads)[需更新] - IMO专题讨论
 - [Math StackExchange](https://math.stackexchange.com/) - 数学问答
 
 #### 视频资源
-- [Evan Chen's YouTube](https://www.youtube.com/c/vEnhance) - 几何与组合
-- [Brilliant](https://brilliant.org/) - 交互式学习
-- [3Blue1Brown](https://www.youtube.com/c/3blue1brown) - 直观数学
+- [Evan Chen's YouTube](https://www.youtube.com/c/vEnhance)[需更新] - 几何与组合
+- [Brilliant](https://brilliant.org/)[需更新] - 交互式学习
+- [3Blue1Brown](https://www.youtube.com/c/3blue1brown)[需更新] - 直观数学
 
 ### 7.3 备考工具
 

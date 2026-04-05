@@ -253,12 +253,12 @@ processed_at: '2026-04-05'
 
 **传记资源**：
 
-- [MacTutor History: Atiyah Biography](https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/) - 详细的数学传记
-- [Abel Prize: Atiyah](https://www.abelprize.no/laureates/2004) - Abel奖官方页面
+- [MacTutor History: Atiyah Biography](https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/)[需更新] - 详细的数学传记
+- [Abel Prize: Atiyah](https://www.abelprize.no/laureates/2004)[需更新] - Abel奖官方页面
 
 **视频资源**：
 
-- [Fields Institute: Atiyah Lectures](https://www.fields.utoronto.ca/) - 相关讲座视频
+- [Fields Institute: Atiyah Lectures](https://www.fields.utoronto.ca/)[需更新] - 相关讲座视频
 - [MIT OpenCourseWare: Geometry of Manifolds](https://ocw.mit.edu/) - 相关课程
 
 ### 推荐阅读

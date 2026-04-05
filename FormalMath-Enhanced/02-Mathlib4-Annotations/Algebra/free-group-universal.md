@@ -111,11 +111,11 @@ G ------> G
 
 ## 相关概念
 
-- [自由积 (Free Product)](./free-product.md)：群的自由并
-- [群表示 (Group Presentation)](./group-presentation.md)：生成元与关系
-- [字问题 (Word Problem)](./word-problem.md)：群的算法判定问题
-- [自由阿贝尔群 (Free Abelian Group)](./free-abelian-group.md)：交换版本的自由群
-- [生成元与关系 (Generators and Relations)](./generators-relations.md)：群的结构描述
+- 自由积 (Free Product)：群的自由并
+- 群表示 (Group Presentation)：生成元与关系
+- 字问题 (Word Problem)：群的算法判定问题
+- 自由阿贝尔群 (Free Abelian Group)：交换版本的自由群
+- 生成元与关系 (Generators and Relations)：群的结构描述
 
 ## 参考
 
@@ -130,8 +130,8 @@ G ------> G
 
 ### 在线资源
 
-- [Mathlib4 文档 - FreeGroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/FreeGroup/Basic.html)
-- [Groupprops - Free group](https://groupprops.subwiki.org/wiki/Free_group)
+- [Mathlib4 文档 - FreeGroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/FreeGroup/Basic.html)[需更新]
+- [Groupprops - Free group](https://groupprops.subwiki.org/wiki/Free_group)[需更新]
 
 ---
 

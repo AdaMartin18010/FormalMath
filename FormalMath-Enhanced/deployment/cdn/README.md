@@ -221,10 +221,10 @@ api_response_time:
 
 ```bash
 # 检查缓存头
-curl -sI https://api.formalmath.org/api/v1/concepts | grep -i cache
+curl -sI https://api.formalmath.org/api/v1/concepts[需更新] | grep -i cache
 
 # 测试缓存命中
-curl -sI https://api.formalmath.org/api/v1/concepts | grep -i x-cache
+curl -sI https://api.formalmath.org/api/v1/concepts[需更新] | grep -i x-cache
 
 # 查看 Nginx 缓存状态
 grep "cache" /var/log/nginx/access.log | tail -20

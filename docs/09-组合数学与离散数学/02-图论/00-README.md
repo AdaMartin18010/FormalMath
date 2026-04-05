@@ -338,8 +338,8 @@ PageRank算法：
 ### 在线资源
 
 - [OEIS - 在线整数序列百科全书](https://oeis.org/)
-- [Graph Theory Resources](https://people.math.gatech.edu/~thomas/FC/)
-- [The Combinatorial Object Server](http://www.combos.org/)
+- [Graph Theory Resources](https://people.math.gatech.edu/~thomas/FC/)[需更新][需更新]
+- [The Combinatorial Object Server](http://www.combos.org/)[需更新][需更新]
 
 ---
 

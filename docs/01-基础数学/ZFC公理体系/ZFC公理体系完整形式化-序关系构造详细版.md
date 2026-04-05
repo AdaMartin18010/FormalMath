@@ -38,7 +38,7 @@ processed_at: '2026-04-05'
       - [7.1 乘积序](#71-乘积序)
       - [7.2 字典序](#72-字典序)
     - [8. 结论](#8-结论)
-  - [术语对照表 / Terminology Table](#术语对照表)
+  - 术语对照表 / Terminology Table
   - [参考文献 / References](#参考文献-references)
   - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现-lean4-formal-implementation)
     - [关系基本概念形式化](#关系基本概念形式化)

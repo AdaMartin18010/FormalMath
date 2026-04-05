@@ -89,12 +89,12 @@ $$
 
 ## 相关概念
 
-- [中国剩余定理](../../concept/中国剩余定理.md)
-- [最大公约数](../../concept/GCD.md)
-- [图论建模](../../concept/图论建模.md)
-- [多项式数论](../../concept/多项式数论.md)
+- 中国剩余定理
+- 最大公约数
+- 图论建模
+- 多项式数论
 
 ## 参考
 
 - IMO 2016 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1263915p6575285
+- AoPS Community: https://artofproblemsolving.com/community/c6h1263915p6575285[需更新]

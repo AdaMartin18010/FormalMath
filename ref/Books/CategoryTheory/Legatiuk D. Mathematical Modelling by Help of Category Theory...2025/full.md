@@ -4280,7 +4280,7 @@ Both approaches have been discussed and illustrated with examples, leading to th
 9. Gurlebeck, K., Hofmann, D., & Legatiuk, D. (2017). Categorical approach to modelling and to coupling of models. Mathematical Methods in the Applied Sciences, 40(3), 523-534.
 10. Gurlebeck, K., Legatiuk, D., Nilsson, H., & Smarsly, K. (2019). Conceptual modelling: Towards detecting modelling errors in engineering applications. Mathematical Methods in the Applied Sciences, 43(3), 1243-1252.
 11. Hughes, G. E., & Cresswell, M. J. (1984). A companion to modal logic. Methuen & Co. Ltd.
-12. Jhala, R., Seidel, E., & Vazou, N. (2017). Programming with refinement types. An introduction to LiquidHaskell. https://ucsd-progsys.github.io/liquidhaskell-blog/
+12. Jhala, R., Seidel, E., & Vazou, N. (2017). Programming with refinement types. An introduction to LiquidHaskell. https://ucsd-progsys.github.io/liquidhaskell-blog/[需更新]
 13. Korkmaz, S. (2011). A review of active structural control: Challenges for engineering informatics. Computers and Structures, 89(23), 2113-2132.
 14. Kroening, D., & Strichman, O. (2008). Decision procedures. An algorithmic point of view. Springer.
 15. Legatiuk, D., & Luckey, D. (2023). Formalising autonomous construction sites by help of abstract mathematics. Eng, 4(1), 799-815.

@@ -53,13 +53,13 @@ lsof -i :9090
 **排查：**
 ```bash
 # 检查目标状态
-curl http://localhost:9090/api/v1/targets | jq
+curl  | jq
 
 # 直接测试端点
-curl http://api:8000/metrics
+curl http://api:8000/metrics[需更新]
 
 # 检查网络连通性
-docker exec formalmath-prometheus wget -O- http://api:8000/metrics
+docker exec formalmath-prometheus wget -O- http://api:8000/metrics[需更新]
 ```
 
 ### 2. Grafana 问题
@@ -69,7 +69,7 @@ docker exec formalmath-prometheus wget -O- http://api:8000/metrics
 **排查：**
 ```bash
 # 从 Grafana 容器测试连接
-docker exec formalmath-grafana wget -O- http://prometheus:9090/api/v1/status/targets
+docker exec formalmath-grafana wget -O- http://prometheus:9090/api/v1/status/targets[需更新]
 
 # 检查数据源配置
 docker-compose logs grafana | grep "datasource"
@@ -85,10 +85,10 @@ docker-compose logs grafana | grep "datasource"
 **排查：**
 ```bash
 # 检查 Prometheus 是否有数据
-curl 'http://localhost:9090/api/v1/query?query=up'
+curl ''
 
 # 检查时间范围
-curl 'http://localhost:9090/api/v1/query_range?query=up&start=2024-01-01T00:00:00Z&end=2024-01-02T00:00:00Z&step=1h'
+curl ''
 ```
 
 ### 3. Elasticsearch 问题
@@ -283,13 +283,13 @@ docker-compose exec filebeat filebeat -e -d "*"
 
 ```bash
 # 测试服务指标
-curl -s http://localhost:8000/metrics | head -20
+curl -s  | head -20
 
 # 测试 Node Exporter
-curl -s http://localhost:9100/metrics | grep node_cpu
+curl -s  | grep node_cpu
 
 # 测试 cAdvisor
-curl -s http://localhost:8080/metrics | grep container_cpu
+curl -s  | grep container_cpu
 ```
 
 ### 查看原始日志

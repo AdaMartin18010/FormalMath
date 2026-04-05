@@ -461,22 +461,22 @@ János Kollár是当代最杰出的代数几何学家之一，专长于：
 
 ### 8.1 Princeton数学系官网
 
-- **Department Homepage**: https://www.math.princeton.edu/
-- **Undergraduate Program**: https://www.math.princeton.edu/undergraduate
-- **Course Offerings**: https://www.math.princeton.edu/undergraduate/courses
-- **Course Catalog**: https://ua.princeton.edu/fields-study/departmental-majors-degree-bachelor-arts/mathematics
+- **Department Homepage**: https://www.math.princeton.edu/[需更新]
+- **Undergraduate Program**: https://www.math.princeton.edu/undergraduate[需更新]
+- **Course Offerings**: https://www.math.princeton.edu/undergraduate/courses[需更新]
+- **Course Catalog**: https://ua.princeton.edu/fields-study/departmental-majors-degree-bachelor-arts/mathematics[需更新]
 
 ### 8.2 教授主页
 
-- **János Kollár**: https://web.math.princeton.edu/~kollar/
-- **Faculty Directory**: https://www.math.princeton.edu/people/faculty
+- **János Kollár**: https://web.math.princeton.edu/~kollar/[需更新]
+- **Faculty Directory**: https://www.math.princeton.edu/people/faculty[需更新]
 
 ### 8.3 相关课程链接
 
 | 课程 | 链接 |
 |------|------|
-| MAT 215 | https://www.math.princeton.edu/undergraduate/courses |
-| MAT 416 | https://web.math.princeton.edu/~kollar/ |
+| MAT 215 | https://www.math.princeton.edu/undergraduate/courses[需更新] |
+| MAT 416 | https://web.math.princeton.edu/~kollar/[需更新] |
 
 ---
 

@@ -81,7 +81,7 @@ python run_performance_tests.py --load-test-only
 python run_performance_tests.py --users 200 --duration 600
 
 # 使用Locust Web界面
-locust -f load_test.py --host=http://localhost:8000
+locust -f load_test.py --host=
 ```
 
 ### 🔥 压力测试 (Stress Test)
@@ -100,7 +100,7 @@ locust -f load_test.py --host=http://localhost:8000
 python run_performance_tests.py --stress-test
 
 # 或直接使用Locust
-locust -f stress_test.py --host=http://localhost:8000 --class-picker
+locust -f stress_test.py --host= --class-picker
 ```
 
 ### 🔌 API性能测试
@@ -176,16 +176,16 @@ npx cypress open
 # config.py
 ENVIRONMENTS = {
     "development": {
-        "base_url": "http://localhost:3000",
-        "api_url": "http://localhost:8000"
+        "base_url": "",
+        "api_url": ""
     },
     "staging": {
-        "base_url": "https://staging.formalmath.org",
-        "api_url": "https://api-staging.formalmath.org"
+        "base_url": "https://staging.formalmath.org[需更新]",
+        "api_url": "https://api-staging.formalmath.org[需更新]"
     },
     "production": {
-        "base_url": "https://formalmath.org",
-        "api_url": "https://api.formalmath.org"
+        "base_url": "https://formalmath.org[需更新]",
+        "api_url": "https://api.formalmath.org[需更新]"
     }
 }
 ```
@@ -432,11 +432,11 @@ python run_performance_tests.py --api-test-only
 
 ## 📚 参考资源
 
-- [Locust文档](https://docs.locust.io/)
-- [pytest-benchmark文档](https://pytest-benchmark.readthedocs.io/)
-- [Cypress性能测试](https://docs.cypress.io/guides/references/best-practices)
-- [Web Vitals](https://web.dev/vitals/)
-- [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+- [Locust文档](https://docs.locust.io/)[需更新]
+- [pytest-benchmark文档](https://pytest-benchmark.readthedocs.io/)[需更新]
+- [Cypress性能测试](https://docs.cypress.io/guides/references/best-practices)[需更新]
+- [Web Vitals](https://web.dev/vitals/)[需更新]
+- [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)[需更新]
 
 ## 🤝 贡献
 

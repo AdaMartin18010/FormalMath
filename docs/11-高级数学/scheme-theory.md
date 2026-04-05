@@ -17,21 +17,21 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [概形理论深度版 / Scheme Theory - Deep Dive](#概形理论深度版--scheme-theory---deep-dive)
+- 概形理论深度版 / Scheme Theory - Deep Dive
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
     - [1.1 概形的本质与动机](#11-概形的本质与动机)
     - [1.2 局部环化空间的深层结构](#12-局部环化空间的深层结构)
     - [1.3 概形的分类与层次](#13-概形的分类与层次)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
     - [2.1 函子观点](#21-函子观点)
     - [2.2 层论观点](#22-层论观点)
     - [2.3 拓扑观点](#23-拓扑观点)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
     - [3.1 相对概形理论](#31-相对概形理论)
     - [3.2 形式概形与刚性几何](#32-形式概形与刚性几何)
     - [3.3 对数概形](#33-对数概形)
-  - [4. 参考文献 / References](#4-参考文献--references)
+  - [4. 参考文献 / References](#4-参考文献-references)
 
 ---
 
@@ -281,8 +281,8 @@ Peter Scholze引入的革命性框架：
 
 ### 在线资源
 
-- [Stacks Project](https://stacks.math.columbia.edu/) - 开放源码的代数几何百科全书
-- [Kerodon](https://kerodon.net/) - Jacob Lurie的高阶代数几何资源
+- [Stacks Project](https://stacks.math.columbia.edu/)[需更新][需更新] - 开放源码的代数几何百科全书
+- [Kerodon](https://kerodon.net/)[需更新][需更新] - Jacob Lurie的高阶代数几何资源
 - [MathOverflow](https://mathoverflow.net/) - 研究级别的问答社区
 
 ---

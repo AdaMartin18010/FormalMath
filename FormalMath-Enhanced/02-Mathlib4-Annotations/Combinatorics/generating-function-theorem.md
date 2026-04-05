@@ -99,10 +99,10 @@ $$\hat{B}(x) = e^{e^x - 1}$$
 
 ## 相关概念
 
-- [形式幂级数](./formal-power-series.md)：代数基础
-- [解析组合学](./analytic-combinatorics.md)： asymptotic方法
-- [Cauchy积分公式](./cauchy-integral-formula.md)：系数提取
-- [Laplace变换](./laplace-transform.md)：连续版本
+- 形式幂级数：代数基础
+- 解析组合学： asymptotic方法
+- Cauchy积分公式：系数提取
+- Laplace变换：连续版本
 
 ## 参考
 
@@ -114,7 +114,7 @@ $$\hat{B}(x) = e^{e^x - 1}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Power Series](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/PowerSeries/Basic.html)
+- [Mathlib4 文档 - Power Series](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/PowerSeries/Basic.html)[需更新]
 
 ---
 

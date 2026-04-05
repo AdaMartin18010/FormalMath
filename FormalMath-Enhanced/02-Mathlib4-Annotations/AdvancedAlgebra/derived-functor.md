@@ -99,8 +99,8 @@ $\Gamma(X, -)$ 是左正合的。其右导出函子 $H^n(X, \mathcal{F}) = R^n \
 - [Ext函子](./ext-functor.md)：Hom的导出函子
 - [Tor函子](./tor-functor.md)：张量积的导出函子
 - [群上同调](./group-cohomology.md)：导出函子的特例
-- [谱序列](./spectral-sequence.md)：计算导出函子的工具
-- [Yoneda Ext](./yoneda-ext.md)：Ext的公理化描述
+- 谱序列：计算导出函子的工具
+- Yoneda Ext：Ext的公理化描述
 
 ## 参考
 
@@ -116,7 +116,7 @@ $\Gamma(X, -)$ 是左正合的。其右导出函子 $H^n(X, \mathcal{F}) = R^n \
 
 ### 在线资源
 
-- [Stacks Project - Derived Functors](https://stacks.math.columbia.edu/tag/010N)
+- [Stacks Project - Derived Functors](https://stacks.math.columbia.edu/tag/010N)[需更新]
 - [nLab - Derived Functor](https://ncatlab.org/nlab/show/derived+functor)
 
 ---

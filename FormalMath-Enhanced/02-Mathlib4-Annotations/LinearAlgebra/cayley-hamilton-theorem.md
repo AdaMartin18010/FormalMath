@@ -115,11 +115,11 @@ $$A^2 - 5A - 2I = \begin{pmatrix} 7 & 10 \\ 15 & 22 \end{pmatrix} - \begin{pmatr
 
 ## 相关概念
 
-- [特征多项式 (Characteristic Polynomial)](./characteristic-polynomial.md)：$\det(\lambda I - A)$
-- [最小多项式 (Minimal Polynomial)](./minimal-polynomial.md)：使 $p(A) = 0$ 的最低次首一多项式
+- 特征多项式 (Characteristic Polynomial)：$\det(\lambda I - A)$
+- 最小多项式 (Minimal Polynomial)：使 $p(A) = 0$ 的最低次首一多项式
 - [若尔当标准型 (Jordan Normal Form)](./jordan-normal-form.md)：矩阵的相似标准型
-- [有理标准型 (Rational Canonical Form)](./rational-canonical-form.md)：不变因子理论
-- [伴随矩阵 (Companion Matrix)](./companion-matrix.md)：给定多项式的矩阵实现
+- 有理标准型 (Rational Canonical Form)：不变因子理论
+- 伴随矩阵 (Companion Matrix)：给定多项式的矩阵实现
 
 ## 参考
 
@@ -135,7 +135,7 @@ $$A^2 - 5A - 2I = \begin{pmatrix} 7 & 10 \\ 15 & 22 \end{pmatrix} - \begin{pmatr
 
 ### 在线资源
 
-- [Mathlib4 文档 - Charpoly](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Charpoly/Basic.html)
+- [Mathlib4 文档 - Charpoly](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Charpoly/Basic.html)[需更新]
 
 ---
 

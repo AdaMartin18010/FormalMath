@@ -104,11 +104,11 @@ $(R, \mathfrak{m})$ 上有限生成模 $M$ 平坦当且仅当自由。
 
 ## 相关概念
 
-- [Jacobson根](./jacobson-radical.md)：Nakayama引理中的关键理想
-- [局部环](./local-ring.md)：Nakayama引理最常用的场景
-- [有限生成模](./finitely-generated-module.md)：引理的适用范围
-- [完备化](./completion.md)：Nakayama引理的拓扑应用
-- [Krull定理](./krull-intersection-theorem.md)：Nakayama引理的推论
+- Jacobson根：Nakayama引理中的关键理想
+- 局部环：Nakayama引理最常用的场景
+- 有限生成模：引理的适用范围
+- 完备化：Nakayama引理的拓扑应用
+- Krull定理：Nakayama引理的推论
 
 ## 参考
 
@@ -125,7 +125,7 @@ $(R, \mathfrak{m})$ 上有限生成模 $M$ 平坦当且仅当自由。
 ### 在线资源
 
 - [Nakayama's Lemma Wikipedia](https://en.wikipedia.org/wiki/Nakayama%27s_lemma)
-- [Stacks Project - Nakayama's Lemma](https://stacks.math.columbia.edu/tag/00DV)
+- [Stacks Project - Nakayama's Lemma](https://stacks.math.columbia.edu/tag/00DV)[需更新]
 
 ---
 

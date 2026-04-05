@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Grothendieck Topos：广义集合论](#grothendieck-topos广义集合论)
-  - [📋 目录](../../README.md#目录)
+  - [📋 目录](../../README.md)
   - [一、Topos的定义](#一topos的定义)
     - [1.1 基本要求](#11-基本要求)
     - [1.2 例子](#12-例子)
@@ -34,7 +34,7 @@ processed_at: '2026-04-05'
     - [6.2 例子](#62-例子)
   - [七、现代发展](#七现代发展)
     - [7.1 同伦类型论](#71-同伦类型论)
-    - [7.2 ∞-Topos](#72--topos)
+    - 7.2 ∞-Topos
   - [八、总结](#八总结)
     - [Grothendieck Topos的意义](#grothendieck-topos的意义)
   - [九、数学公式总结](#九数学公式总结)

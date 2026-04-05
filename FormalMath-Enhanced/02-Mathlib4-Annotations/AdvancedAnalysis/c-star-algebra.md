@@ -104,10 +104,10 @@ $\mathcal{K}(H)$ 是 $B(H)$（有界算子代数）的闭理想。
 ## 相关概念
 
 - [von Neumann代数](./von-neumann-algebra.md)：C*-代数的强化
-- [Gelfand表示](./gelfand-representation.md)：交换C*-代数的结构
+- Gelfand表示：交换C*-代数的结构
 - [谱定理](./spectral-theorem-operator.md)：正规算子的函数演算
-- [AF代数](./af-algebra.md)：近似有限维C*-代数
-- [K-理论](./k-theory-algebra.md)：C*-代数的不变量
+- AF代数：近似有限维C*-代数
+- K-理论：C*-代数的不变量
 
 ## 参考
 

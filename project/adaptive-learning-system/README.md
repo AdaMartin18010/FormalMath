@@ -135,8 +135,8 @@ npm start
 
 ### 访问系统
 
-- **API文档**: http://localhost:8000/docs
-- **前端界面**: http://localhost:3000
+- **API文档**: 
+- **前端界面**: 
 
 ---
 
@@ -255,7 +255,7 @@ def generate_learning_path(learner_profile, goal_concepts):
 ## 📖 文档
 
 - [使用指南](docs/00-自适应学习路径系统使用指南.md)
-- [API文档](http://localhost:8000/docs) (启动服务后访问)
+- API文档 (启动服务后访问)
 
 ---
 

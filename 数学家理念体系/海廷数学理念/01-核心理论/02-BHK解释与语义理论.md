@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [BHK解释与语义理论：直觉主义逻辑的语义基础](#bhk解释与语义理论直觉主义逻辑的语义基础)
-  - [📋 目录](../README.md#目录)
+  - [📋 目录](../README.md)
   - [一、BHK解释的历史背景](#一bhk解释的历史背景)
     - [1.1 直觉主义逻辑的语义问题](#11-直觉主义逻辑的语义问题)
     - [1.2 BHK解释的建立](#12-bhk解释的建立)
@@ -496,7 +496,7 @@ Curry-Howard对应建立了：
 
 ### 在线资源
 
-1. Stanford Encyclopedia of Philosophy: [Intuitionistic Logic](https://plato.stanford.edu/entries/logic-intuitionistic/)
+1. Stanford Encyclopedia of Philosophy: [Intuitionistic Logic](https://plato.stanford.edu/entries/logic-intuitionistic/)[需更新]
 
 2. nLab: [BHK Interpretation](https://ncatlab.org/nlab/show/BHK+interpretation)
 

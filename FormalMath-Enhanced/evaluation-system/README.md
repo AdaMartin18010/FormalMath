@@ -122,7 +122,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 # 访问 API 文档
-# http://localhost:8000/api/docs
+# 
 ```
 
 ### 前端运行
@@ -142,7 +142,7 @@ npm start
 yarn start
 
 # 访问应用
-# http://localhost:3000
+# 
 ```
 
 ## 功能特性

@@ -60,7 +60,7 @@ FormalMath-Enhanced/
 sudo apt update && sudo apt upgrade -y
 
 # 安装Docker
-curl -fsSL https://get.docker.com | sh
+curl -fsSL https://get.docker.com[需更新] | sh
 sudo usermod -aG docker $USER
 
 # 安装Docker Compose
@@ -240,10 +240,10 @@ docker-compose logs -f backend
 ### 查看监控
 ```bash
 # Prometheus
-http://localhost:9090
+
 
 # Grafana
-http://localhost:3000
+
 # 默认账号: admin/admin
 ```
 

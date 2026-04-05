@@ -739,26 +739,26 @@ if __name__ == "__main__":
 
 ### 官方资源
 
-- **DeepMind博客**: [AlphaProof achieves silver medal level in IMO](https://deepmind.google/discover/blog/alphaproof-achieves-silver-medal-level-in-imo/)
+- **DeepMind博客**: [AlphaProof achieves silver medal level in IMO](https://deepmind.google/discover/blog/alphaproof-achieves-silver-medal-level-in-imo/)[需更新]
 - **技术报告**: Nature论文（预计2025年发表）
 - **演示视频**: IMO 2024问题解决过程可视化
 
 ### 技术分析
 
-- **AlphaGo论文**: [Mastering the game of Go](https://www.nature.com/articles/nature16961)（AlphaProof技术基础）
+- **AlphaGo论文**: [Mastering the game of Go](https://www.nature.com/articles/nature16961)[需更新]（AlphaProof技术基础）
 - **AlphaZero论文**: [Mastering Chess and Shogi](https://arxiv.org/abs/1712.01815)
 - **形式化证明综述**: [Machine Learning for Theorem Proving](https://arxiv.org/abs/2109.04573)
 
 ### 相关项目
 
 - [AlphaGeometry](https://github.com/google-deepmind/alphageometry) - 神经符号几何证明系统
-- [LeanDojo](https://leandojo.org/) - Lean证明环境交互
+- [LeanDojo](https://leandojo.org/)[需更新] - Lean证明环境交互
 - [DSP](https://arxiv.org/abs/2210.00683) - Draft, Sketch, and Prove方法
 
 ### 新闻报道
 
-- **Nature**: [Google AI solves International Mathematical Olympiad problems at silver-medal level](https://www.nature.com/articles/d41586-024-02345-w)
-- **Quanta Magazine**: [AI Reaches the IMO Silver Medal Level](https://www.quantamagazine.org/)
+- **Nature**: [Google AI solves International Mathematical Olympiad problems at silver-medal level](https://www.nature.com/articles/d41586-024-02345-w)[需更新]
+- **Quanta Magazine**: [AI Reaches the IMO Silver Medal Level](https://www.quantamagazine.org/)[需更新]
 - **IMO官方**: 2024 IMO结果公告
 
 ---

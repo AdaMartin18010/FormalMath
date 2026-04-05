@@ -11,32 +11,32 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [辛几何与镜像对称深度版 / Symplectic Geometry and Mirror Symity - In Depth](#辛几何与镜像对称深度版--symplectic-geometry-and-mirror-symmetry---in-depth)
+- 辛几何与镜像对称深度版 / Symplectic Geometry and Mirror Symity - In Depth
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
-    - [1.1 辛流形的现代观点 / Modern Perspectives on Symplectic Manifolds](#11-辛流形的现代观点--modern-perspectives-on-symplectic-manifolds)
-    - [1.2 Fukaya范畴的深层结构 / Deep Structure of Fukaya Categories](#12-fukaya范畴的深层结构--deep-structure-of-fukaya-categories)
-    - [1.3 导出范畴与相干性 / Derived Categories and Coherence](#13-导出范畴与相干性--derived-categories-and-coherence)
-    - [1.4 特殊拉格朗日子流形 / Special Lagrangian Submanifolds](#14-特殊拉格朗日子流形--special-lagrangian-submanifolds)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
-    - [2.1 同调镜像对称 / Homological Mirror Symmetry](#21-同调镜像对称--homological-mirror-symmetry)
-    - [2.2 SYZ猜想的几何 / Geometry of SYZ Conjecture](#22-syz猜想的几何--geometry-of-syz-conjecture)
-    - [2.3 热带几何与退化的镜 / Tropical Geometry and Degenerating Mirrors](#23-热带几何与退化的镜--tropical-geometry-and-degenerating-mirrors)
-    - [2.4 Landau-Ginzburg模型 / Landau-Ginzburg Models](#24-landau-ginzburg模型--landau-ginzburg-models)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
-    - [3.1 一般型流形的镜像 / Mirrors of General Type](#31-一般型流形的镜像--mirrors-of-general-type)
-    - [3.2 非交换几何与矩阵分解 / NC Geometry and Matrix Factorizations](#32-非交换几何与矩阵分解--nc-geometry-and-matrix-factorizations)
-    - [3.3 量子上同调的深层结构 / Deep Structure of Quantum Cohomology](#33-量子上同调的深层结构--deep-structure-of-quantum-cohomology)
-    - [3.4 Floer理论与开弦 / Floer Theory and Open Strings](#34-floer理论与开弦--floer-theory-and-open-strings)
-  - [4. 应用前沿 / Frontier Applications](#4-应用前沿--frontier-applications)
-    - [4.1 弦论与数学物理 / String Theory and Mathematical Physics](#41-弦论与数学物理--string-theory-and-mathematical-physics)
-    - [4.2 计数几何与Gromov-Witten理论 / Enumerative Geometry and GW Theory](#42-计数几何与gromov-witten理论--enumerative-geometry-and-gw-theory)
-    - [4.3 规范理论与低维拓扑 / Gauge Theory and Low-Dimensional Topology](#43-规范理论与低维拓扑--gauge-theory-and-low-dimensional-topology)
-  - [5. 参考文献 / References](#5-参考文献--references)
-    - [5.1 经典与奠基性著作 / Classical and Foundational Works](#51-经典与奠基性著作--classical-and-foundational-works)
-    - [5.2 现代专著 / Modern Monographs](#52-现代专著--modern-monographs)
-    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文--frontier-research-papers)
-    - [5.4 在线资源 / Online Resources](#54-在线资源--online-resources)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
+    - [1.1 辛流形的现代观点 / Modern Perspectives on Symplectic Manifolds](#11-辛流形的现代观点-modern-perspectives-on-symplectic-manifolds)
+    - [1.2 Fukaya范畴的深层结构 / Deep Structure of Fukaya Categories](#12-fukaya范畴的深层结构-deep-structure-of-fukaya-categories)
+    - [1.3 导出范畴与相干性 / Derived Categories and Coherence](#13-导出范畴与相干性-derived-categories-and-coherence)
+    - [1.4 特殊拉格朗日子流形 / Special Lagrangian Submanifolds](#14-特殊拉格朗日子流形-special-lagrangian-submanifolds)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
+    - [2.1 同调镜像对称 / Homological Mirror Symmetry](#21-同调镜像对称-homological-mirror-symmetry)
+    - [2.2 SYZ猜想的几何 / Geometry of SYZ Conjecture](#22-syz猜想的几何-geometry-of-syz-conjecture)
+    - [2.3 热带几何与退化的镜 / Tropical Geometry and Degenerating Mirrors](#23-热带几何与退化的镜-tropical-geometry-and-degenerating-mirrors)
+    - [2.4 Landau-Ginzburg模型 / Landau-Ginzburg Models](#24-landau-ginzburg模型-landau-ginzburg-models)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
+    - [3.1 一般型流形的镜像 / Mirrors of General Type](#31-一般型流形的镜像-mirrors-of-general-type)
+    - [3.2 非交换几何与矩阵分解 / NC Geometry and Matrix Factorizations](#32-非交换几何与矩阵分解-nc-geometry-and-matrix-factorizations)
+    - [3.3 量子上同调的深层结构 / Deep Structure of Quantum Cohomology](#33-量子上同调的深层结构-deep-structure-of-quantum-cohomology)
+    - [3.4 Floer理论与开弦 / Floer Theory and Open Strings](#34-floer理论与开弦-floer-theory-and-open-strings)
+  - [4. 应用前沿 / Frontier Applications](#4-应用前沿-frontier-applications)
+    - [4.1 弦论与数学物理 / String Theory and Mathematical Physics](#41-弦论与数学物理-string-theory-and-mathematical-physics)
+    - [4.2 计数几何与Gromov-Witten理论 / Enumerative Geometry and GW Theory](#42-计数几何与gromov-witten理论-enumerative-geometry-and-gw-theory)
+    - [4.3 规范理论与低维拓扑 / Gauge Theory and Low-Dimensional Topology](#43-规范理论与低维拓扑-gauge-theory-and-low-dimensional-topology)
+  - [5. 参考文献 / References](#5-参考文献-references)
+    - [5.1 经典与奠基性著作 / Classical and Foundational Works](#51-经典与奠基性著作-classical-and-foundational-works)
+    - [5.2 现代专著 / Modern Monographs](#52-现代专著-modern-monographs)
+    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文-frontier-research-papers)
+    - [5.4 在线资源 / Online Resources](#54-在线资源-online-resources)
 
 ---
 
@@ -812,7 +812,7 @@ Abouzaid和Smith等人的工作：
 26. **nLab: Mirror Symmetry** - https://ncatlab.org/nlab/show/mirror+symmetry
     - 镜像对称的wiki页面
 
-27. **String Wiki** - http://www.stringwiki.org/
+27. **String Wiki** - http://www.stringwiki.org/[需更新[需更新]]
     - 弦论wiki中的镜像对称资源
 
 28. **ArXiv Tag: Symplectic Geometry** - https://arxiv.org/list/math.SG/recent
@@ -821,7 +821,7 @@ Abouzaid和Smith等人的工作：
 29. **ArXiv Tag: Algebraic Geometry** - https://arxiv.org/list/math.AG/recent
     - 代数几何最新论文（含镜像对称）
 
-30. **Clay Mathematics Institute: Mirror Symmetry** - https://www.claymath.org/
+30. **Clay Mathematics Institute: Mirror Symmetry** - https://www.claymath.org/[需更新[需更新]]
     - Clay数学研究所的相关资源
 
 ---

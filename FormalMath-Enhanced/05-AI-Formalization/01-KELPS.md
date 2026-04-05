@@ -257,7 +257,7 @@ class KELPSClient:
 # 使用示例
 if __name__ == "__main__":
     client = KELPSClient(
-        api_endpoint="https://api.kelps.example.com/v1",
+        api_endpoint="https://api.kelps.example.com/v1[需更新]",
         api_key="your-api-key"
     )
 
@@ -386,7 +386,7 @@ Codex (2022)          ████████████████          
 
 - [DeepSeek-Math](02-DeepSeek-Math.md)
 - [Lean 4](https://lean-lang.org/)
-- [Isabelle/HOL](https://isabelle.in.tum.de/)
+- [Isabelle/HOL](https://isabelle.in.tum.de/)[需更新]
 
 ---
 

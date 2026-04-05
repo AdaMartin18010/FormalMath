@@ -322,7 +322,7 @@ processed_at: '2026-04-05'
 
 ### 内部关联
 
-- [项目索引](../../../INDEX.md) - 完整的项目文档索引
+- 项目索引 - 完整的项目文档索引
 - [文档格式规范](../README.md) - 文档格式规范
 - [03-分析学](./00-README.md) - 分析学基础（数值分析先修）
 - [02-线性代数](./00-README.md) - 线性代数（优化与数值分析先修）
@@ -333,9 +333,9 @@ processed_at: '2026-04-05'
 ### 外部资源
 
 - [MIT OpenCourseWare - 18.085](https://ocw.mit.edu/courses/mathematics/18-085-computational-science-and-engineering-i-fall-2008/)
-- [Stanford CME Courses](https://explorecourses.stanford.edu/)
-- [NEOS Optimization Server](https://neos-server.org/neos/)
-- [Netlib Repository](https://www.netlib.org/)
+- [Stanford CME Courses](https://explorecourses.stanford.edu/)[需更新][需更新]
+- [NEOS Optimization Server](https://neos-server.org/neos/)[需更新][需更新]
+- [Netlib Repository](https://www.netlib.org/)[需更新][需更新]
 
 ---
 

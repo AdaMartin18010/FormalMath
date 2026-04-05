@@ -61,11 +61,11 @@ $$= \angle TSA$$
 本题是**欧几里得几何**的经典问题，展示了**综合几何**的强大力量。在**射影几何**中，这类问题可以通过**交比**和**调和分割**更优雅地处理。在**复几何**中，可以使用**莫比乌斯变换**。
 
 ## 相关概念
-- [雷姆定理](../../concept/雷姆定理.md)
-- [弦切角定理](../../concept/弦切角定理.md)
-- [圆幂定理](../../concept/圆幂定理.md)
-- [平行四边形性质](../../concept/平行四边形.md)
+- 雷姆定理
+- 弦切角定理
+- 圆幂定理
+- 平行四边形性质
 
 ## 参考
 - IMO 2017 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1480149p8633208
+- AoPS Community: https://artofproblemsolving.com/community/c6h1480149p8633208[需更新]

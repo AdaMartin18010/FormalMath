@@ -23,7 +23,7 @@ processed_at: '2026-04-05'
 // 服务器端 Socket.io 配置示例
 const io = require('socket.io')(server, {
   cors: {
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: process.env.CLIENT_URL || "",
     methods: ["GET", "POST"]
   },
   transports: ['websocket', 'polling']

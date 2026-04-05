@@ -23,63 +23,63 @@ Using Concept Maps and Gowin's Vee to Understand Mathematical Models of Physical
 ## 📑 目录 / Table of Contents
 
 - [使用概念映射和Gowin的Vee理解物理现象的数学模型](#使用概念映射和gowin的vee理解物理现象的数学模型)
-  - [📑 目录 / Table of Contents](#目录)
-  - [📋 一、概述 / Overview](#一概述--overview)
-    - [1.1 研究目标 / Research Objectives](#11-研究目标--research-objectives)
-    - [1.2 核心内容 / Core Content](#12-核心内容--core-content)
-  - [🔬 二、研究方法 / Research Methodology](#二研究方法--research-methodology)
-    - [2.1 研究设计 / Research Design](#21-研究设计--research-design)
-    - [2.2 数据收集 / Data Collection](#22-数据收集--data-collection)
-  - [📐 三、物理现象数学模型深度分析 / Deep Analysis of Mathematical Models of Physical Phenomena](#三物理现象数学模型深度分析--deep-analysis-of-mathematical-models-of-physical-phenomena)
-    - [3.1 数学建模的数学基础 / Mathematical Foundation of Mathematical Modeling](#31-数学建模的数学基础--mathematical-foundation-of-mathematical-modeling)
-      - [3.1.1 数学模型的定义 / Definition of Mathematical Models](#311-数学模型的定义--definition-of-mathematical-models)
-      - [3.1.2 建模过程的数学结构 / Mathematical Structure of Modeling Process](#312-建模过程的数学结构--mathematical-structure-of-modeling-process)
-    - [3.2 常见物理现象的数学模型 / Mathematical Models of Common Physical Phenomena](#32-常见物理现象的数学模型--mathematical-models-of-common-physical-phenomena)
-      - [3.2.1 运动学模型 / Kinematics Models](#321-运动学模型--kinematics-models)
-      - [3.2.2 动力学模型 / Dynamics Models](#322-动力学模型--dynamics-models)
-      - [3.2.3 能量模型 / Energy Models](#323-能量模型--energy-models)
-    - [3.3 数学函数在物理中的应用 / Application of Mathematical Functions in Physics](#33-数学函数在物理中的应用--application-of-mathematical-functions-in-physics)
-      - [3.3.1 线性函数 / Linear Functions](#331-线性函数--linear-functions)
-      - [3.3.2 二次函数 / Quadratic Functions](#332-二次函数--quadratic-functions)
-      - [3.3.3 指数函数 / Exponential Functions](#333-指数函数--exponential-functions)
-      - [3.3.4 三角函数 / Trigonometric Functions](#334-三角函数--trigonometric-functions)
-    - [3.4 建模过程的数学结构 / Mathematical Structure of Modeling Process](#34-建模过程的数学结构--mathematical-structure-of-modeling-process)
-      - [3.4.1 模型建立 / Model Construction](#341-模型建立--model-construction)
-      - [3.4.2 模型求解 / Model Solution](#342-模型求解--model-solution)
-      - [3.4.3 模型验证 / Model Validation](#343-模型验证--model-validation)
-    - [3.5 物理模型数学内容典型例题 / Typical Examples of Physical Model Mathematical Content](#35-物理模型数学内容典型例题--typical-examples-of-physical-model-mathematical-content)
-      - [3.5.1 匀加速运动模型 / Uniformly Accelerated Motion Model](#351-匀加速运动模型--uniformly-accelerated-motion-model)
-      - [3.5.2 简谐运动模型 / Simple Harmonic Motion Model](#352-简谐运动模型--simple-harmonic-motion-model)
-      - [3.5.3 指数衰减模型 / Exponential Decay Model](#353-指数衰减模型--exponential-decay-model)
-    - [3.6 跨主题关联小结 / Cross-Topic Association Summary](#36-跨主题关联小结--cross-topic-association-summary)
-      - [3.6.1 物理模型与微积分的关联 / Association Between Physical Models and Calculus](#361-物理模型与微积分的关联--association-between-physical-models-and-calculus)
-      - [3.6.2 物理模型与函数类型的关联 / Association Between Physical Models and Function Types](#362-物理模型与函数类型的关联--association-between-physical-models-and-function-types)
-  - [📚 四、概念映射应用 / Concept Map Application](#四概念映射应用--concept-map-application)
-    - [3.1 概念映射构建指南 / Concept Map Construction Guidelines](#31-概念映射构建指南--concept-map-construction-guidelines)
-    - [3.2 物理现象概念映射示例 / Physical Phenomena Concept Map Examples](#32-物理现象概念映射示例--physical-phenomena-concept-map-examples)
-    - [3.3 数学函数概念映射 / Mathematical Function Concept Maps](#33-数学函数概念映射--mathematical-function-concept-maps)
-  - [📊 四、Vee图应用 / Vee Diagram Application](#四vee图应用--vee-diagram-application)
-    - [4.1 Vee图构建指南 / Vee Diagram Construction Guidelines](#41-vee图构建指南--vee-diagram-construction-guidelines)
-    - [4.2 物理现象Vee图示例 / Physical Phenomena Vee Diagram Examples](#42-物理现象vee图示例--physical-phenomena-vee-diagram-examples)
-    - [4.3 数学建模Vee图 / Mathematical Modeling Vee Diagrams](#43-数学建模vee图--mathematical-modeling-vee-diagrams)
-    - [4.4 Vee图具体应用案例与建模过程 / Specific Vee Diagram Application Cases and Modeling Process](#44-vee图具体应用案例与建模过程--specific-vee-diagram-application-cases-and-modeling-process)
-      - [4.4.1 案例1：匀加速直线运动的Vee图建模 / Case 1: Vee Diagram Modeling of Uniformly Accelerated Linear Motion](#441-案例1匀加速直线运动的vee图建模--case-1-vee-diagram-modeling-of-uniformly-accelerated-linear-motion)
-      - [4.4.2 案例2：简谐运动的Vee图建模 / Case 2: Vee Diagram Modeling of Simple Harmonic Motion](#442-案例2简谐运动的vee图建模--case-2-vee-diagram-modeling-of-simple-harmonic-motion)
-      - [4.4.3 学生建模活动的具体描述 / Specific Description of Student Modeling Activities](#443-学生建模活动的具体描述--specific-description-of-student-modeling-activities)
-  - [💡 五、跨学科理解 / Cross-Disciplinary Understanding](#五跨学科理解--cross-disciplinary-understanding)
-    - [5.1 数学-物理连接 / Mathematics-Physics Connections](#51-数学-物理连接--mathematics-physics-connections)
-    - [5.2 概念映射的作用 / Role of Concept Mapping](#52-概念映射的作用--role-of-concept-mapping)
-    - [5.3 Vee图的作用 / Role of Vee Diagrams](#53-vee图的作用--role-of-vee-diagrams)
-    - [5.4 概念映射在建模中的应用 / Application of Concept Mapping in Modeling](#54-概念映射在建模中的应用--application-of-concept-mapping-in-modeling)
-      - [5.4.1 概念映射与Vee图的互补关系 / Complementary Relationship Between Concept Maps and Vee Diagrams](#541-概念映射与vee图的互补关系--complementary-relationship-between-concept-maps-and-vee-diagrams)
-      - [5.4.2 概念映射在建模各阶段的应用 / Application of Concept Maps in Various Modeling Stages](#542-概念映射在建模各阶段的应用--application-of-concept-maps-in-various-modeling-stages)
-  - [📈 六、思维表征方式 / Representation Methods](#六思维表征方式--representation-methods)
-    - [6.1 物理模型思维导图 / Physical Model Mind Map](#61-物理模型思维导图--physical-model-mind-map)
-    - [6.2 建模过程决策树 / Modeling Process Decision Tree](#62-建模过程决策树--modeling-process-decision-tree)
-    - [6.3 跨学科理解证明树 / Cross-Disciplinary Understanding Proof Tree](#63-跨学科理解证明树--cross-disciplinary-understanding-proof-tree)
-  - [📚 七、参考文献 / References](#七参考文献--references)
-    - [7.1 主要参考文献 / Main References](#71-主要参考文献--main-references)
-    - [7.2 相关研究 / Related Research](#72-相关研究--related-research)
+  - 📑 目录 / Table of Contents
+  - 📋 一、概述 / Overview
+    - 1.1 研究目标 / Research Objectives
+    - 1.2 核心内容 / Core Content
+  - 🔬 二、研究方法 / Research Methodology
+    - 2.1 研究设计 / Research Design
+    - 2.2 数据收集 / Data Collection
+  - 📐 三、物理现象数学模型深度分析 / Deep Analysis of Mathematical Models of Physical Phenomena
+    - 3.1 数学建模的数学基础 / Mathematical Foundation of Mathematical Modeling
+      - 3.1.1 数学模型的定义 / Definition of Mathematical Models
+      - 3.1.2 建模过程的数学结构 / Mathematical Structure of Modeling Process
+    - 3.2 常见物理现象的数学模型 / Mathematical Models of Common Physical Phenomena
+      - 3.2.1 运动学模型 / Kinematics Models
+      - 3.2.2 动力学模型 / Dynamics Models
+      - 3.2.3 能量模型 / Energy Models
+    - 3.3 数学函数在物理中的应用 / Application of Mathematical Functions in Physics
+      - 3.3.1 线性函数 / Linear Functions
+      - 3.3.2 二次函数 / Quadratic Functions
+      - 3.3.3 指数函数 / Exponential Functions
+      - 3.3.4 三角函数 / Trigonometric Functions
+    - 3.4 建模过程的数学结构 / Mathematical Structure of Modeling Process
+      - 3.4.1 模型建立 / Model Construction
+      - 3.4.2 模型求解 / Model Solution
+      - 3.4.3 模型验证 / Model Validation
+    - 3.5 物理模型数学内容典型例题 / Typical Examples of Physical Model Mathematical Content
+      - 3.5.1 匀加速运动模型 / Uniformly Accelerated Motion Model
+      - 3.5.2 简谐运动模型 / Simple Harmonic Motion Model
+      - 3.5.3 指数衰减模型 / Exponential Decay Model
+    - 3.6 跨主题关联小结 / Cross-Topic Association Summary
+      - 3.6.1 物理模型与微积分的关联 / Association Between Physical Models and Calculus
+      - 3.6.2 物理模型与函数类型的关联 / Association Between Physical Models and Function Types
+  - 📚 四、概念映射应用 / Concept Map Application
+    - 3.1 概念映射构建指南 / Concept Map Construction Guidelines
+    - 3.2 物理现象概念映射示例 / Physical Phenomena Concept Map Examples
+    - 3.3 数学函数概念映射 / Mathematical Function Concept Maps
+  - 📊 四、Vee图应用 / Vee Diagram Application
+    - 4.1 Vee图构建指南 / Vee Diagram Construction Guidelines
+    - 4.2 物理现象Vee图示例 / Physical Phenomena Vee Diagram Examples
+    - 4.3 数学建模Vee图 / Mathematical Modeling Vee Diagrams
+    - 4.4 Vee图具体应用案例与建模过程 / Specific Vee Diagram Application Cases and Modeling Process
+      - 4.4.1 案例1：匀加速直线运动的Vee图建模 / Case 1: Vee Diagram Modeling of Uniformly Accelerated Linear Motion
+      - 4.4.2 案例2：简谐运动的Vee图建模 / Case 2: Vee Diagram Modeling of Simple Harmonic Motion
+      - 4.4.3 学生建模活动的具体描述 / Specific Description of Student Modeling Activities
+  - 💡 五、跨学科理解 / Cross-Disciplinary Understanding
+    - 5.1 数学-物理连接 / Mathematics-Physics Connections
+    - 5.2 概念映射的作用 / Role of Concept Mapping
+    - 5.3 Vee图的作用 / Role of Vee Diagrams
+    - 5.4 概念映射在建模中的应用 / Application of Concept Mapping in Modeling
+      - 5.4.1 概念映射与Vee图的互补关系 / Complementary Relationship Between Concept Maps and Vee Diagrams
+      - 5.4.2 概念映射在建模各阶段的应用 / Application of Concept Maps in Various Modeling Stages
+  - 📈 六、思维表征方式 / Representation Methods
+    - 6.1 物理模型思维导图 / Physical Model Mind Map
+    - 6.2 建模过程决策树 / Modeling Process Decision Tree
+    - 6.3 跨学科理解证明树 / Cross-Disciplinary Understanding Proof Tree
+  - 📚 七、参考文献 / References
+    - 7.1 主要参考文献 / Main References
+    - 7.2 相关研究 / Related Research
 
 ---
 

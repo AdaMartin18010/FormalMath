@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 目录 / Table of Contents
 
 - [示性类入门 / Introduction to Characteristic Classes](#示性类入门-introduction-to-characteristic-classes)
-  - [目录 / Table of Contents](#目录)
+  - 目录 / Table of Contents
   - [1. 基础概念 / Basic Concepts](#1-基础概念-basic-concepts)
     - [1.1 示性类的直观理解 / Intuition](#11-示性类的直观理解-intuition)
     - [1.2 分裂原理 / Splitting Principle](#12-分裂原理-splitting-principle)
@@ -290,7 +290,7 @@ $$c(E) = \prod_{i=1}^n (1 + f(x_i))$$
 
 ### 在线资源 / Online Resources
 
-- Hatcher's Vector Bundles and K-Theory: <https://pi.math.cornell.edu/~hatcher/VBKT/VB.pdf>
+- Hatcher's Vector Bundles and K-Theory: <https://pi.math.cornell.edu/~hatcher/VBKT/VB.pdf[需更新[需更新]]>
 - nLab: Characteristic Class
 - Wikipedia: Characteristic Class
 

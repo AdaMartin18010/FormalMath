@@ -87,7 +87,7 @@ npm install
 npm run dev
 ```
 
-应用将在 http://localhost:3000 启动
+应用将在  启动
 
 ### 生产构建
 
@@ -184,7 +184,7 @@ const { data, error } = await fetchKnowledgeGraph();
 复制 `.env.example` 为 `.env` 并修改：
 
 ```
-VITE_API_BASE_URL=http://localhost:8080/api
+VITE_API_BASE_URL=
 VITE_ENABLE_ANALYTICS=false
 ```
 

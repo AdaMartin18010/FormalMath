@@ -167,7 +167,7 @@ example : True := by
 ## 🔗 相关链接
 
 - [Lean4官网](https://lean-lang.org/)
-- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)
+- [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新]
 - [FormalMath项目](https://github.com/FormalMath)
 
 ## 📄 许可证

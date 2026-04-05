@@ -145,4 +145,4 @@ Markdownlint 规则配置（项目根目录）：
 ## 📚 参考文档
 
 - [Markdownlint 规则列表](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
-- [VSCode Markdown 支持](https://code.visualstudio.com/docs/languages/markdown)
+- [VSCode Markdown 支持](https://code.visualstudio.com/docs/languages/markdown)[需更新]

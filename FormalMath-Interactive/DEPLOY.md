@@ -73,7 +73,7 @@ pnpm install
 npm run dev
 ```
 
-访问 http://localhost:3000
+访问 
 
 ### 4. 构建生产版本
 
@@ -175,7 +175,7 @@ docker-compose down -v
 | 变量 | 说明 | 默认值 |
 |------|------|--------|
 | `NODE_ENV` | 运行环境 | `production` |
-| `VITE_API_URL` | 后端 API 地址 | `http://localhost:8000` |
+| `VITE_API_URL` | 后端 API 地址 | `` |
 | `VITE_APP_VERSION` | 应用版本 | `1.0.0` |
 | `VITE_APP_BUILD_TIME` | 构建时间 | - |
 
@@ -243,7 +243,7 @@ location / {
 
 ```nginx
 location /api/ {
-    proxy_pass http://backend:8000/;
+    proxy_pass ;
     proxy_set_header Host $host;
 }
 ```

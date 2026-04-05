@@ -16,26 +16,19 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Deligne证明Weil猜想：20世纪数学的里程碑](#deligne证明weil猜想20世纪数学的里程碑)
-  - [📋 目录](../README.md#目录)
+  - [📋 目录](../README.md)
   - [摘要](#摘要)
   - [一、引言：Weil猜想的起源](#一引言weil猜想的起源)
     - [1.1 有限域上代数簇的Zeta函数](#11-有限域上代数簇的zeta函数)
     - [1.2 Weil的原始猜想 (1949)](#12-weil的原始猜想-1949)
     - [1.3 通往证明的道路](#13-通往证明的道路)
   - [二、Grothendieck的上同调理论](#二grothendieck的上同调理论)
-    - [2.1 étale拓扑](#21-étale拓扑)
-    - [2.2 l进上同调](../README.md#22-l进上同调
-    - [2.3 Grothendieck的迹公式](#23-grothendieck的迹公式)
+    - 2.1 étale拓扑
+    - [2.2 l进上同调](../README.md)
   - [三、Deligne的证明策略](#三deligne的证明策略)
-    - [3.1 Riemann假设的关键难点](../README.md#31-riemann假设的关键难点
-    - [3.2 混合层与权理论](#32-混合层与权理论
-    - [3.3 证明的核心步骤](#33-证明的核心步骤)
+    - [3.1 Riemann假设的关键难点](../README.md)
   - [四、Riemann假设的证明详解](#四riemann假设的证明详解)
-    - [4.1 一般Lefschetz铅笔](../README.md#41-一般lefschetz铅笔
-    - [4.2 单值群分析](#42-单值群分析
-    - [4.3 Rankin-Selberg方法](#43-rankin-selberg方法
-  - [五、Weil猜想的深远影响](#五weil猜想的深远影响
-  - [六、参考文献](#六参考文献)
+    - [4.1 一般Lefschetz铅笔](../README.md)
 
 ---
 
@@ -357,10 +350,10 @@ $H^{n-1}(X_t)$ 分解为不变部分和vanishing cycle生成的子空间。
 ### 在线资源
 
 9. **MacTutor History of Mathematics**: Pierre Deligne biography
-   - https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/
+   - https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/[需更新]
 
 10. **Institut des Hautes Études Scientifiques**: Deligne's publications
-    - https://www.ihes.fr/deligne/
+    - https://www.ihes.fr/deligne/[需更新]
 
 11. **MathOverflow**: Weil conjectures
     - Weil猜想的讨论和应用

@@ -108,9 +108,9 @@ $n=1$ 时，$c_1(TM) = \chi(M) \cdot [\text{pt}]$。
 
 - [Stiefel-Whitney类](./stiefel-whitney-class.md)：实丛的版本
 - [Pontryagin类](./pontryagin-class.md)：实丛的复化
-- [Euler类](./euler-class.md)：最高陈类的特例
-- [陈特征](./chern-character.md)：K-理论的同构
-- [Todd类](./todd-class.md)：Riemann-Roch定理中的修正
+- Euler类：最高陈类的特例
+- 陈特征：K-理论的同构
+- Todd类：Riemann-Roch定理中的修正
 
 ## 参考
 

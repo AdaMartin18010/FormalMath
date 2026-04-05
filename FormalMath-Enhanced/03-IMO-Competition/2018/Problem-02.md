@@ -105,11 +105,11 @@ $$h\left(\frac{p^2}{q^2}\right) = \left(\frac{p^2}{q^2}+1\right)h\left(\frac{p}{
 函数方程是**分析学**的重要组成部分。在**调和分析**中，类似的方程研究**卷积**和**傅里叶变换**的性质。在**数论**中，**积性函数**满足类似的函数关系。
 
 ## 相关概念
-- [函数方程](../../concept/函数方程.md)
-- [柯西方程](../../concept/柯西方程.md)
-- [积性函数](../../concept/积性函数.md)
-- [有理数域](../../concept/有理数域.md)
+- 函数方程
+- 柯西方程
+- 积性函数
+- 有理数域
 
 ## 参考
 - IMO 2018 Official Solutions
-- AoPS Community: https://artofproblemsolving.com/community/c6h1664176p10570915
+- AoPS Community: https://artofproblemsolving.com/community/c6h1664176p10570915[需更新]

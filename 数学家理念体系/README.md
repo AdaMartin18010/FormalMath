@@ -269,11 +269,11 @@ processed_at: '2026-04-05'
 
 **从已完成项目开始**
 
-- ✅ [Klein数学理念](../Klein数学理念/) - 群论、爱尔朗根纲领、高观点方法
+- ✅ Klein数学理念 - 群论、爱尔朗根纲领、高观点方法
 
 **预览view文件夹的综合分析**
 
-- [math_concept00-06.md](../view/) - 包含5位核心数学家的深度论证
+- math_concept00-06.md - 包含5位核心数学家的深度论证
 
 **当前进展**（2025年12月15日）
 
@@ -371,20 +371,20 @@ processed_at: '2026-04-05'
 
 **文档编写**
 
-- [Obsidian](https://obsidian.md/) - 支持双向链接的Markdown编辑器
-- [Typora](https://typora.io/) - 所见即所得Markdown编辑
-- [Visual Studio Code](https://code.visualstudio.com/) - 适合程序员的编辑器
+- [Obsidian](https://obsidian.md/)[需更新] - 支持双向链接的Markdown编辑器
+- [Typora](https://typora.io/)[需更新] - 所见即所得Markdown编辑
+- [Visual Studio Code](https://code.visualstudio.com/)[需更新] - 适合程序员的编辑器
 
 **文献管理**
 
-- [Zotero](https://www.zotero.org/) - 开源文献管理器
-- [Google Scholar](https://scholar.google.com/) - 学术搜索与引用追踪
+- [Zotero](https://www.zotero.org/)[需更新] - 开源文献管理器
+- [Google Scholar](https://scholar.google.com/)[需更新] - 学术搜索与引用追踪
 
 **可视化**
 
-- [draw.io](https://www.draw.io/) - 免费在线图表工具
-- [XMind](https://www.xmind.net/) - 思维导图工具
-- [GeoGebra](https://www.geogebra.org/) - 数学可视化
+- [draw.io](https://www.draw.io/)[需更新] - 免费在线图表工具
+- [XMind](https://www.xmind.net/)[需更新] - 思维导图工具
+- [GeoGebra](https://www.geogebra.org/)[需更新] - 数学可视化
 
 ### 核心资源
 
@@ -392,18 +392,18 @@ processed_at: '2026-04-05'
 
 - [arXiv](https://arxiv.org/archive/math) - 数学预印本
 - [MathSciNet](https://mathscinet.ams.org/) - 数学评论数据库（需订阅）
-- [zbMATH](https://zbmath.org/) - 开放数学文献数据库
+- [zbMATH](https://zbmath.org/)[需更新] - 开放数学文献数据库
 
 **历史资源**
 
-- [MacTutor](http://mathshistory.st-andrews.ac.uk/) - 数学史权威网站
-- [Archive.org](https://archive.org/) - 经典著作扫描版
-- [Numdam](http://www.numdam.org/) - 法国数学文献（免费）
+- [MacTutor](http://mathshistory.st-andrews.ac.uk/)[需更新] - 数学史权威网站
+- [Archive.org](https://archive.org/)[需更新] - 经典著作扫描版
+- [Numdam](http://www.numdam.org/)[需更新] - 法国数学文献（免费）
 
 **教育视频**
 
-- [3Blue1Brown](https://www.youtube.com/c/3blue1brown) - 数学可视化
-- [Numberphile](https://www.youtube.com/user/numberphile) - 数学科普
+- [3Blue1Brown](https://www.youtube.com/c/3blue1brown)[需更新] - 数学可视化
+- [Numberphile](https://www.youtube.com/user/numberphile)[需更新] - 数学科普
 - [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/) - MIT开放课程
 
 详见：[00-ONLINE-RESOURCES-ALIGNMENT.md](./00-ONLINE-RESOURCES-ALIGNMENT.md)

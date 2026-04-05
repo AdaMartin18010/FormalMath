@@ -33,33 +33,33 @@ processed_at: '2026-04-05'
 
 ## 📖 目录
 
-- [形式化证明与AI / Formal Proof and AI](#形式化证明与ai--formal-proof-and-ai)
+- 形式化证明与AI / Formal Proof and AI
   - [📚 概述](#概述)
   - [🎯 学习目标](#学习目标)
   - [📖 目录](#目录)
-  - [1. 自动形式化最新进展](#1-自动形式化最新进展)
+  - 1. 自动形式化最新进展
     - [1.1 KELPS系统详解](#11-kelps系统详解)
     - [1.2 FormalMATH基准测试](#12-formalmath基准测试)
     - [1.3 多语言自动形式化](#13-多语言自动形式化)
-  - [2. 神经定理证明系统](#2-神经定理证明系统)
+  - 2. 神经定理证明系统
     - [2.1 AlphaProof深度解析](#21-alphaproof深度解析)
     - [2.2 LeanDojo架构](#22-leandojo架构)
     - [2.3 HyperTree Proof Search](#23-hypertree-proof-search)
-  - [3. LLM辅助形式化证明](#3-llm辅助形式化证明)
+  - 3. LLM辅助形式化证明
     - [3.1 提示工程策略](#31-提示工程策略)
     - [3.2 检索增强生成 (RAG)](#32-检索增强生成-rag)
     - [3.3 多智能体协作证明](#33-多智能体协作证明)
-  - [4. Lean4 + AI集成](#4-lean4--ai集成)
+  - 4. Lean4 + AI集成
     - [4.1 Lean Copilot](#41-lean-copilot)
     - [4.2 Mathlib4智能扩展](#42-mathlib4智能扩展)
     - [4.3 实时证明建议](#43-实时证明建议)
-  - [5. 工具与实现](#5-工具与实现)
+  - 5. 工具与实现
     - [5.1 Python实现示例](#51-python实现示例)
     - [5.2 Lean 4 API集成](#52-lean-4-api集成)
-  - [6. 开放问题与未来方向](#6-开放问题与未来方向)
-    - [开放问题](#开放问题)
-    - [未来方向](#未来方向)
-  - [7. 参考文献](#7-参考文献)
+  - 6. 开放问题与未来方向
+    - 开放问题
+    - 未来方向
+  - 7. 参考文献
     - [关键论文](#关键论文)
     - [在线资源](#在线资源)
     - [相关会议](#相关会议)
@@ -1230,7 +1230,7 @@ theorem complex_theorem {α : Type*} [CompleteLattice α]
 
 6. **van Doorn, F.** (2025). "The Carleson Project." *形式化证明会议*.
 
-7. **Mathlib社区** (2025). "Mathlib4统计和路线图." https://leanprover-community.github.io/mathlib_stats.html
+7. **Mathlib社区** (2025). "Mathlib4统计和路线图." https://leanprover-community.github.io/mathlib_stats.html[需更新[需更新]]
 
 ### AI与数学
 
@@ -1244,7 +1244,7 @@ theorem complex_theorem {α : Type*} [CompleteLattice α]
 - **Lean Prover**: https://lean-lang.org/
 - **FLT Project**: https://github.com/ImperialCollegeLondon/FLT
 - **Carleson Project**: https://github.com/fpvandoorn/carleson
-- **Lean Zulip**: https://leanprover.zulipchat.com/
+- **Lean Zulip**: https://leanprover.zulipchat.com/[需更新[需更新]]
 
 ---
 

@@ -109,8 +109,8 @@ $a_i a_{i+1} \equiv a_i \equiv a_i^2 \pmod{n}$
 ## 相关定理与概念
 - **整除性** - $a \mid b$ 的基本性质
 - **同余运算** - 模运算的代数性质
-- [模运算基础](../../concept/number-theory/modular-arithmetic.md)
-- [整除理论](../../concept/number-theory/divisibility.md)
+- 模运算基础
+- 整除理论
 
 ## 变体问题
 
@@ -121,5 +121,5 @@ $a_i a_{i+1} \equiv a_i \equiv a_i^2 \pmod{n}$
 对于哪些 $n$，存在长度为 $n$ 的满足条件的序列？
 
 ## 参考资源
-- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)
-- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289113p1558432)
+- [IMO 2009 Official Solutions](https://www.imo-official.org/problems/IMO2009SL.pdf)[需更新]
+- [AoPS讨论链接](https://artofproblemsolving.com/community/c6h289113p1558432)[需更新]

@@ -30,10 +30,10 @@ msc_primary: "03E35"
 
 ## Table of Contents
 
-- [ZFC公理体系到Number Theory完整推导路径Summary](#zfc公理体系到Number Theory完整推导路径Summary)
-  - [Table of Contents](#Table of Contents)
+- ZFC公理体系到Number Theory完整推导路径Summary
+  - Table of Contents
   - [📚 概述](#概述)
-  - [🏗️ 完整推导路径](#️-完整推导路径)
+  - 🏗️ 完整推导路径
     - [第一阶段：ZFC公理体系基础](#第一阶段zfc公理体系基础)
       - [1.1 ZFC公理系统](#11-zfc公理系统)
       - [1.2 基本Theorem](#12-基本Theorem)
@@ -63,12 +63,12 @@ msc_primary: "03E35"
       - [7.1 复数Definition](#71-复数Definition)
       - [7.2 复数运算](#72-复数运算)
       - [7.3 复数性质](#73-复数性质)
-    - [第八阶段：Number Theory基础](#第八阶段Number Theory基础)
+    - 第八阶段：Number Theory基础
       - [8.1 整除理论](#81-整除理论)
       - [8.2 素数理论](#82-素数理论)
       - [8.3 同余理论](#83-同余理论)
       - [8.4 二次剩余理论](#84-二次剩余理论)
-      - [8.5 Number Theory函数](#85-Number Theory函数)
+      - 8.5 Number Theory函数
   - [🔗 推导关系图](#推导关系图)
   - [📊 形式化程度分析](#形式化程度分析)
     - [完全形式化的部分](#完全形式化的部分)
@@ -81,7 +81,7 @@ msc_primary: "03E35"
     - [理论扩展](#理论扩展)
     - [应用扩展](#应用扩展)
   - [📝 结论](#结论)
-  - [术语对照表 / Terminology Table](#术语对照表)
+  - 术语对照表 / Terminology Table
 
 ## 📚 概述
 

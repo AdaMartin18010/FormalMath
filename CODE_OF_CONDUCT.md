@@ -167,14 +167,14 @@ n- 项目相关的线上或线下活动
 ## 协议
 
 本行为准则改编自 [Contributor Covenant][homepage]，版本 2.1，
-可在 https://www.contributor-covenant.org/version/2/1/code_of_conduct.html 查看。
+可在 https://www.contributor-covenant.org/version/2/1/code_of_conduct.html[需更新] 查看。
 
 社区影响力指南的灵感来自 [Mozilla 的行为准则执行阶梯](https://github.com/mozilla/diversity)。
 
-[homepage]: https://www.contributor-covenant.org
+[homepage]: https://www.contributor-covenant.org[需更新]
 
-有关本行为准则的常见问题的答案，请参阅 https://www.contributor-covenant.org/faq。
-翻译版本可在 https://www.contributor-covenant.org/translations 查看。
+有关本行为准则的常见问题的答案，请参阅 https://www.contributor-covenant.org/faq。[需更新]
+翻译版本可在 https://www.contributor-covenant.org/translations[需更新] 查看。
 
 ---
 

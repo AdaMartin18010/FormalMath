@@ -102,11 +102,11 @@ $$\pi(x) = \text{Li}(x) + O\left(x e^{-c\sqrt{\ln x}}\right)$$
 
 ## 相关概念
 
-- [切比雪夫函数 (Chebyshev Functions)](./chebyshev-functions.md)：$\psi(x)$ 和 $\vartheta(x)$
-- [黎曼假设 (Riemann Hypothesis)](./riemann-hypothesis.md)：关于 $\zeta$ 函数零点的著名猜想
+- 切比雪夫函数 (Chebyshev Functions)：$\psi(x)$ 和 $\vartheta(x)$
+- 黎曼假设 (Riemann Hypothesis)：关于 $\zeta$ 函数零点的著名猜想
 - [算术级数中的素数 (Primes in Arithmetic Progression)](./dirichlet-theorem.md)：狄利克雷定理
-- [孪生素数猜想 (Twin Prime Conjecture)](./twin-prime-conjecture.md)：无限多对 $p, p+2$ 都是素数
-- [梅森素数 (Mersenne Primes)](./mersenne-primes.md)：形如 $2^p - 1$ 的素数
+- 孪生素数猜想 (Twin Prime Conjecture)：无限多对 $p, p+2$ 都是素数
+- 梅森素数 (Mersenne Primes)：形如 $2^p - 1$ 的素数
 
 ## 参考
 
@@ -122,7 +122,7 @@ $$\pi(x) = \text{Li}(x) + O\left(x e^{-c\sqrt{\ln x}}\right)$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - PrimeCounting](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PrimeCounting.html)
+- [Mathlib4 文档 - PrimeCounting](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PrimeCounting.html)[需更新]
 
 ---
 

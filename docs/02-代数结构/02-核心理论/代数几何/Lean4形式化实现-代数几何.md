@@ -16,7 +16,7 @@ msc_secondary: ['14A15', '18F20', '14-XX']
 ## 目录 / Table of Contents
 
 - [Lean4形式化实现-代数几何 / Lean 4 Formalization - Algebraic Geometry](#lean4形式化实现-代数几何-lean-4-formalization---algebraic-geometry)
-  - [目录 / Table of Contents](#目录)
+  - 目录 / Table of Contents
   - [1. 基本代数几何形式化 / Basic Algebraic Geometry Formalization](#一基本代数几何形式化-basic-algebraic-geometry-formalization)
     - [1.1 代数簇 / Algebraic Varieties](#11-代数簇-algebraic-varieties)
     - [1.2 代数曲线 / Algebraic Curves](#12-代数曲线-algebraic-curves)
@@ -417,7 +417,7 @@ Lean4形式化实现-代数几何提供了：
 **参考文献 / References**:
 
 1. Lean 4 Documentation. <https://leanprover.github.io/lean4/doc/>
-2. Mathematics in Lean. <https://leanprover-community.github.io/mathematics_in_lean/>
+2. Mathematics in Lean. <https://leanprover-community.github.io/mathematics_in_lean/[需更新[需更新]]>
 3. Hartshorne, R. (1977). *Algebraic Geometry*. Springer-Verlag.
 4. Fulton, W. (1989). *Algebraic Curves: An Introduction to Algebraic Geometry*. Addison-Wesley.
 5. Mumford, D. (1999). *The Red Book of Varieties and Schemes*. Springer-Verlag.

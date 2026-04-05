@@ -178,9 +178,9 @@ $$\boxed{\text{至多有 } n \text{ 个整数 } t \text{ 使得 } Q(t) = t}$$
 
 ### 与FormalMath主项目的链接
 
-- [多项式基础](../../concept/algebra/polynomial-basics.md)
-- [整系数多项式性质](../../concept/number-theory/polynomial-integer.md)
-- [不动点理论](../../concept/analysis/fixed-point.md)
+- 多项式基础
+- 整系数多项式性质
+- 不动点理论
 
 ## 变体与推广
 
@@ -198,8 +198,8 @@ $$\boxed{\text{至多有 } n \text{ 个整数 } t \text{ 使得 } Q(t) = t}$$
 
 ## 参考
 
-- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101493p572829)
+- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)[需更新]
+- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101493p572829)[需更新]
 - 相关结果：Putnam 2000 Problem B6
 - 参考文献：R. L. Graham, D. E. Knuth, O. Patashnik - Concrete Mathematics
 

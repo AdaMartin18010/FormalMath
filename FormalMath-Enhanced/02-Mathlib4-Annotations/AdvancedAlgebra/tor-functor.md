@@ -104,9 +104,9 @@ $S^{-1}R \otimes_R M \cong S^{-1}M$，且局部化是正合函子，因此 $S^{-
 ## 相关概念
 
 - [Ext函子](./ext-functor.md)：Hom的导出函子
-- [张量积](./tensor-product.md)：Tor的基础函子
-- [平坦模](./flat-module.md)：Tor消失的模
-- [投射模](./projective-module.md)：Tor消失的条件
+- 张量积：Tor的基础函子
+- 平坦模：Tor消失的模
+- 投射模：Tor消失的条件
 - [导出函子](./derived-functor.md)：Tor的一般框架
 
 ## 参考
@@ -123,7 +123,7 @@ $S^{-1}R \otimes_R M \cong S^{-1}M$，且局部化是正合函子，因此 $S^{-
 ### 在线资源
 
 - [Tor Functor Wikipedia](https://en.wikipedia.org/wiki/Tor_functor)
-- [Stacks Project - Tor](https://stacks.math.columbia.edu/tag/00DW)
+- [Stacks Project - Tor](https://stacks.math.columbia.edu/tag/00DW)[需更新]
 
 ---
 

@@ -305,7 +305,7 @@ import { SocialShare, ShareButton } from '@/components/SocialFeatures';
   data={{
     title: '我完成了今日学习目标',
     description: '学习了 2 小时，解决了 10 道题目',
-    url: 'https://formalmath.com/share/xxx',
+    url: 'https://formalmath.com/share/xxx[需更新]',
     image: '/share-image.png',
   }}
 />
@@ -376,7 +376,7 @@ import { CollaborationInvite, QuickInviteButton } from '@/components/SocialFeatu
 <CollaborationInvite
   groupId="group-1"
   groupName="数学分析学习组"
-  inviteLink="https://formalmath.com/invite/xxx"
+  inviteLink="https://formalmath.com/invite/xxx[需更新]"
 />
 
 <QuickInviteButton
@@ -396,7 +396,7 @@ const { share, copyToClipboard } = useSocialShare();
 await share({
   title: '我的学习成果',
   text: '今天学习了 2 小时',
-  url: 'https://formalmath.com',
+  url: 'https://formalmath.com[需更新]',
 });
 ```
 

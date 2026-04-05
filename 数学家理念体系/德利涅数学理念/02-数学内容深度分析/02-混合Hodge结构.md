@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Deligne的混合Hodge理论：复代数簇的上同调](#deligne的混合hodge理论复代数簇的上同调)
-  - [📋 目录](../README.md#目录)
+  - [📋 目录](../README.md)
   - [摘要](#摘要)
   - [一、引言：从紧流形到一般代数簇](#一引言从紧流形到一般代数簇)
     - [1.1 经典Hodge理论回顾](#11-经典hodge理论回顾)
@@ -24,21 +24,11 @@ processed_at: '2026-04-05'
     - [1.3 Deligne的突破](#13-deligne的突破)
   - [二、混合Hodge结构的定义](#二混合hodge结构的定义)
     - [2.1 权与Hodge滤过](#21-权与hodge滤过)
-    - [2.2 混合Hodge结构的公理](../README.md#22-混合hodge结构的公理
-    - [2.3 典范例子](#23-典范例子)
+    - [2.2 混合Hodge结构的公理](../README.md)
   - [三、Deligne的主要定理](#三deligne的主要定理)
-    - [3.1 光滑簇的定理](../README.md#31-光滑簇的定理
-    - [3.2 紧化与对数形变](#32-紧化与对数形变
-    - [3.3 奇异簇的定理](#33-奇异簇的定理
-  - [四、证明技术详解](#四证明技术详解)
-    - [4.1 超截面方法](../README.md#41-超截面方法
-    - [4.2 混合Hodge复形](#42-混合hodge复形
-    - [4.3 下降理论](#43-下降理论
-  - [五、应用与推广](#五应用与推广)
-    - [5.1 Hodge猜想与动机](../README.md#51-hodge猜想与动机
-    - [5.2 周期映射](#52-周期映射
-    - [5.3 现代发展](#53-现代发展
-  - [六、参考文献](#六参考文献)
+    - [3.1 光滑簇的定理](../README.md)
+    - [4.1 超截面方法](../README.md)
+    - [5.1 Hodge猜想与动机](../README.md)
 
 ---
 
@@ -319,7 +309,7 @@ Scholze的p进Hodge理论（perfectoid空间）可以视为混合Hodge理论的p
 ### 在线资源
 
 9. **MacTutor History of Mathematics**: Pierre Deligne biography
-   - https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/
+   - https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/[需更新]
 
 10. **Clay Mathematics Institute**: Hodge Theory
     - Hodge理论的现代发展

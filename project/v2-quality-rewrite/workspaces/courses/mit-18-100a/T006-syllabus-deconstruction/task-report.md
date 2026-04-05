@@ -22,7 +22,7 @@ processed_at: '2026-04-05'
 
 ### 1.2 Secondary Sources (Problem-Set Transcriptions)
 - **Learner's Guide (learn.dafuzhu.com):** Detailed transcriptions and solutions for Assignments 1–10 and 12. This was the only publicly available source that listed individual problem statements and topics for each assignment.
-  - https://learn.dafuzhu.com/docs/mit18100a/a1.html through a12.html
+  - https://learn.dafuzhu.com/docs/mit18100a/a1.html[需更新] through a12.html
 
 ### 1.3 FormalMath Project Documentation
 - `docs/03-分析学/01-实分析/01-实分析.md`

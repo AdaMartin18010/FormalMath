@@ -32,7 +32,7 @@ processed_at: '2026-04-05'
     - [3.2 Proper Forcing的条件](#32-proper-forcing的条件)
     - [3.3 Proper Forcing的性质](#33-proper-forcing的性质)
   - [四、Proper Forcing的优势](#四proper-forcing的优势)
-    - [4.1 保持$\omega_1$](#41-保持omega_1)
+    - [4.1 保持$\omega_1$](#41-保持omega-1)
     - [4.2 迭代性质](#42-迭代性质)
     - [4.3 应用范围](#43-应用范围)
   - [五、Proper Forcing的应用](#五proper-forcing的应用)
@@ -40,7 +40,7 @@ processed_at: '2026-04-05'
     - [5.2 在独立性证明中的应用](#52-在独立性证明中的应用)
     - [5.3 在现代集合论中的应用](#53-在现代集合论中的应用)
   - [六、总结](#六总结)
-  - [🔗 相关文档](../README.md#相关文档)
+  - [🔗 相关文档](../README.md)
     - [核心理论](#核心理论)
     - [关联项目](#关联项目)
 
@@ -48,7 +48,7 @@ processed_at: '2026-04-05'
 ## 📑 目录
 
 - [Proper Forcing基础](#proper-forcing基础)
-  - [📑 目录](../README.md#目录)
+  - [📑 目录](../README.md)
   - [一、引言：Proper Forcing的创立](#一引言proper-forcing的创立)
     - [1.1 历史背景：从Forcing到Proper Forcing](#11-历史背景从forcing到proper-forcing)
     - [1.2 谢拉的贡献（1980s）](#12-谢拉的贡献1980s)
@@ -62,7 +62,7 @@ processed_at: '2026-04-05'
     - [3.2 Proper Forcing的条件](#32-proper-forcing的条件)
     - [3.3 Proper Forcing的性质](#33-proper-forcing的性质)
   - [四、Proper Forcing的优势](#四proper-forcing的优势)
-    - [4.1 保持$\omega_1$](#41-保持omega_1)
+    - [4.1 保持$\omega_1$](#41-保持omega-1)
     - [4.2 迭代性质](#42-迭代性质)
     - [4.3 应用范围](#43-应用范围)
   - [五、Proper Forcing的应用](#五proper-forcing的应用)
@@ -70,7 +70,7 @@ processed_at: '2026-04-05'
     - [5.2 在独立性证明中的应用](#52-在独立性证明中的应用)
     - [5.3 在现代集合论中的应用](#53-在现代集合论中的应用)
   - [六、总结](#六总结)
-  - [🔗 相关文档](../README.md#相关文档)
+  - [🔗 相关文档](../README.md)
 
 ---
 

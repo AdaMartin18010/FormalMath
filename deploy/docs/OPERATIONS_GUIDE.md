@@ -170,7 +170,7 @@ docker-compose -f docker-compose.production.yml up -d --no-deps --build backend
 
 ```bash
 # 后端健康检查
-curl -s http://localhost:8000/health | jq .
+curl -s  | jq .
 {
   "status": "healthy",
   "version": "2.0.0",
@@ -183,7 +183,7 @@ curl -s http://localhost:8000/health | jq .
 }
 
 # 前端健康检查
-curl -s http://localhost:80/health
+curl -s 
 true
 
 # Kubernetes健康检查

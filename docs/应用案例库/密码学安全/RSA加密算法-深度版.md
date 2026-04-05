@@ -585,18 +585,18 @@ $$\text{Shor算法时间复杂度: } O((\log N)^3)$$
 ### 标准教材
 
 - [1] Katz, J., & Lindell, Y. (2014). *Introduction to Modern Cryptography* (2nd ed.). CRC Press.
-- [2] Boneh, D., & Shoup, V. (2023). *A Graduate Course in Applied Cryptography*. [在线版本](https://toc.cryptobook.us/)
+- [2] Boneh, D., & Shoup, V. (2023). *A Graduate Course in Applied Cryptography*. [在线版本](https://toc.cryptobook.us/)[需更新][需更新]
 - [3] Menezes, A. J., van Oorschot, P. C., & Vanstone, S. A. (1996). *Handbook of Applied Cryptography*. CRC Press.
 
 ### 标准文档
 
-- [RFC 8017](https://tools.ietf.org/html/rfc8017): RSA Cryptography Specifications Version 2.2
-- [NIST FIPS 186-5](https://csrc.nist.gov/publications/detail/fips/186/5/final): Digital Signature Standard (DSS)
+- [RFC 8017](https://tools.ietf.org/html/rfc8017)[需更新][需更新]: RSA Cryptography Specifications Version 2.2
+- [NIST FIPS 186-5](https://csrc.nist.gov/publications/detail/fips/186/5/final)[需更新][需更新]: Digital Signature Standard (DSS)
 
 ### 在线资源
 
-- [Cryptool](https://www.cryptool.org/): 密码学教学软件
-- [SageMath](https://www.sagemath.org/): 数论和密码学计算
+- [Cryptool](https://www.cryptool.org/)[需更新][需更新]: 密码学教学软件
+- [SageMath](https://www.sagemath.org/)[需更新][需更新]: 数论和密码学计算
 
 ---
 
