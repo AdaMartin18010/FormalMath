@@ -6,10 +6,31 @@ msc_primary: 00A99
 
 **数学形式化与数学家理念体系的综合性教育知识库**
 
-[![完成度](https://img.shields.io/badge/完成度-100%25-brightgreen)[需更新]](#)
-[![文档数](https://img.shields.io/badge/文档-6573%2B-blue)[需更新]](#)
-[![数学家](https://img.shields.io/badge/数学家-62位-orange)[需更新]](#)
-[![版本](https://img.shields.io/badge/版本-v1.0--final-9cf)[需更新]](#)
+[![完成度](https://img.shields.io/badge/完成度-100%25-brightgreen)](./00-FormalMath项目完成状态报告-2026年4月.md)
+[![文档数](https://img.shields.io/badge/文档-6573%2B-blue)](./docs/00-项目统计总览.md)
+[![数学家](https://img.shields.io/badge/数学家-62位-orange)](./数学家理念体系/)
+[![版本](https://img.shields.io/badge/版本-v1.0--final-9cf)](./README.md)
+
+---
+
+## 🚀 快速开始
+
+新用户建议按以下步骤开始：
+
+| 步骤 | 操作 | 目标 |
+|------|------|------|
+| 1️⃣ | 阅读 [项目主介绍](README.md) | 了解项目全貌 |
+| 2️⃣ | 浏览 [快速开始指南](docs/00-快速开始指南.md) | 5分钟上手 |
+| 3️⃣ | 选择 [学习路径](docs/00-从入门到精通学习路径.md) | 找到适合自己的路径 |
+| 4️⃣ | 查看 [文档中心](docs/README.md) | 浏览数学分支 |
+| 5️⃣ | 参考 [完整内容索引](00-FormalMath项目内容索引-完整版.md) | 搜索特定主题 |
+
+**按角色快速入口**:
+- 🎓 **学习者** → [学习路径](docs/00-从入门到精通学习路径.md)
+- 🔬 **研究者** → [数学家理念体系](数学家理念体系/)
+- 👨‍🏫 **教师** → [课程对照表](project/00-国际课程与机构对齐对照表-2026年4月.md)
+- 💻 **开发者** → [形式化证明](docs/09-形式化证明/)
+- 🤝 **贡献者** → [贡献指南](../CONTRIBUTING.md)
 
 ---
 
@@ -57,7 +78,7 @@ msc_primary: 00A99
 | **研究者** | [数学家理念体系](数学家理念体系/README.md) | 数学家索引 |
 | **教师** | [国际课程对照表](project/00-国际课程与机构对齐对照表-2026年4月.md) | 课程映射文档 |
 | **开发者** | 形式化证明 | Lean4代码 |
-| **贡献者** | [CONTRIBUTING.md](CONTRIBUTING.md) | 开发文档 |
+| **贡献者** | [CONTRIBUTING.md](../CONTRIBUTING.md) | 开发文档与贡献规范 |
 
 ---
 

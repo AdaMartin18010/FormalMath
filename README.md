@@ -7,15 +7,15 @@ processed_at: '2026-04-05'
 
 **数学形式化与数学家理念体系的综合性教育知识库**
 
-[![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=build)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/build.yml)
-[![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=test)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/test.yml)
-[![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=deploy)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml)
-[![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=security)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/security.yml)
-[![完成度](https://img.shields.io/badge/完成度-100%25-brightgreen)[需更新]](./00-FormalMath项目完成状态报告-2026年4月.md)
-[![文档数](https://img.shields.io/badge/文档-6573%2B-blue)[需更新]](./docs/00-项目统计总览.md)
-[![数学家](https://img.shields.io/badge/数学家-62位-orange)[需更新]](./数学家理念体系/)
-[![定理数](https://img.shields.io/badge/Lean4定理-20个-9cf)[需更新]](./docs/09-形式化证明/)
-[![课程映射](https://img.shields.io/badge/国际课程-121%2B门-purple)[需更新]](./project/00-国际课程与机构对齐对照表-2026年4月.md)
+[![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=build)](https://github.com/formalmath/formalmath/actions/workflows/build.yml)
+[![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=test)](https://github.com/formalmath/formalmath/actions/workflows/test.yml)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=deploy)](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml)
+[![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=security)](https://github.com/formalmath/formalmath/actions/workflows/security.yml)
+[![完成度](https://img.shields.io/badge/完成度-100%25-brightgreen)](./00-FormalMath项目完成状态报告-2026年4月.md)
+[![文档数](https://img.shields.io/badge/文档-6573%2B-blue)](./docs/00-项目统计总览.md)
+[![数学家](https://img.shields.io/badge/数学家-62位-orange)](./数学家理念体系/)
+[![定理数](https://img.shields.io/badge/Lean4定理-20个-9cf)](./docs/09-形式化证明/)
+[![课程映射](https://img.shields.io/badge/国际课程-121%2B门-purple)](./project/00-国际课程与机构对齐对照表-2026年4月.md)
 
 ---
 
@@ -80,7 +80,7 @@ FormalMath 是一个面向数学教育的综合性知识库，致力于：
 - 🥈 **庞加莱**：200篇深度文档，108万字
 - 🥉 **希尔伯特**：96篇深度文档，45.1万字
 
-完整索引：数学家索引
+完整索引：[数学家理念体系](数学家理念体系/)
 
 ### 3️⃣ 形式化证明（20个定理）
 
@@ -186,6 +186,62 @@ docs/06-数论/02-代数数论-深度版.md
 
 ---
 
+## 🚀 安装与使用
+
+### 快速浏览
+
+无需安装，直接通过GitHub在线浏览所有文档：
+
+```bash
+# 浏览项目主文档
+open README.md
+
+# 浏览完整索引
+open INDEX.md
+
+# 浏览文档中心
+open docs/README.md
+```
+
+### 本地克隆
+
+```bash
+# 克隆仓库
+git clone https://github.com/formalmath/formalmath.git
+cd formalmath
+
+# 使用任意Markdown阅读器查看文档
+# 或使用VS Code等IDE获得更好的阅读体验
+```
+
+### Lean4形式化代码运行
+
+```bash
+# 进入Lean4项目目录
+cd docs/09-形式化证明/Lean4
+
+# 使用Lake构建
+lake build
+
+# 运行测试
+lake test
+```
+
+---
+
+## 💡 项目亮点
+
+| 特性 | 描述 |
+|------|------|
+| **🎓 教育导向** | 从高中到研究级的完整学习路径 |
+| **🌍 国际对齐** | 与MIT、Harvard等九校121+门课程映射 |
+| **🧠 深度分析** | 62位数学家理念体系，总计3800+篇文档 |
+| **💻 形式化证明** | 20个Lean4定理，与Mathlib4对齐 |
+| **🤖 智能系统** | 认知诊断、评估、自适应学习三大系统 |
+| **📚 多版本文档** | 基础版/增强版/深度扩展版/国际标准版 |
+
+---
+
 ## 📦 项目统计速览
 
 | 指标 | 数值 |
@@ -228,29 +284,42 @@ docs/06-数论/02-代数数论-深度版.md
 
 | 流程 | 状态 | 说明 |
 |------|------|------|
-| [Build](.github/workflows/build.yml) | [![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/build.yml) | 前端、Python工具、Lean4构建 |
-| [Test](.github/workflows/test.yml) | [![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/test.yml) | 单元测试、集成测试、E2E测试 |
-| [Deploy](.github/workflows/deploy.yml) | [![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml) | 自动部署到测试/生产环境 |
-| [Security](.github/workflows/security.yml) | [![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=)[需更新]](https://github.com/formalmath/formalmath/actions/workflows/security.yml) | 漏洞扫描、密钥检测 |
+| [Build](.github/workflows/build.yml) | [![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=)](https://github.com/formalmath/formalmath/actions/workflows/build.yml) | 前端、Python工具、Lean4构建 |
+| [Test](.github/workflows/test.yml) | [![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=)](https://github.com/formalmath/formalmath/actions/workflows/test.yml) | 单元测试、集成测试、E2E测试 |
+| [Deploy](.github/workflows/deploy.yml) | [![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=)](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml) | 自动部署到测试/生产环境 |
+| [Security](.github/workflows/security.yml) | [![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=)](https://github.com/formalmath/formalmath/actions/workflows/security.yml) | 漏洞扫描、密钥检测 |
 
 📖 [CI/CD完整指南](.github/CI_CD_GUIDE.md) | 📊 [工作流状态](.github/WORKFLOW_STATUS.md)
 
 ---
 
-## 🤝 贡献与参考
+## 🤝 贡献与社区
 
-- **[CONTRIBUTING.md](CONTRIBUTING.md)** - 贡献指南与规范
-- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** - 社区行为准则
-- **[SECURITY.md](SECURITY.md)** - 安全策略与漏洞报告
-- **[CREDITS.md](CREDITS.md)** - 项目贡献者与参考资源
-- **[LICENSE](LICENSE)** - Apache License 2.0
+我们欢迎各种形式的贡献！无论您是：
 
----
+- 🐛 **报告问题** - 发现错误或内容问题
+- 📝 **改进文档** - 修正、补充或翻译文档
+- 💡 **提出建议** - 新功能或内容建议
+- 🔧 **提交代码** - Lean4形式化证明或工具脚本
 
-## 📞 联系方式
+### 贡献指南
 
-- **项目反馈**：通过GitHub Issue系统
-- **维护周期**：按需更新，季度复核
+| 资源 | 说明 |
+|------|------|
+| **[CONTRIBUTING.md](CONTRIBUTING.md)** | 详细的贡献流程和规范 |
+| **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** | 社区行为准则 |
+| **[SECURITY.md](SECURITY.md)** | 安全策略与漏洞报告 |
+| **[CREDITS.md](CREDITS.md)** | 项目贡献者与参考资源 |
+
+### 许可证
+
+本项目采用 **[Apache License 2.0](LICENSE)** 开源协议。
+
+### 社区交流
+
+- 💬 **讨论区**: 使用GitHub Discussions进行一般性讨论
+- 🐛 **Issue追踪**: 使用GitHub Issues报告问题和建议
+- 📧 **维护周期**: 项目按需更新，季度复核
 
 ---
 
