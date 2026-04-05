@@ -1,12 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-title: "06 Lean4形式化实现 群论"
-msc_primary: ["68V20"]
-msc_secondary: ["20A05", "03B35"]
+title: "Lean4形式化实现-群论 / Lean4 Formalization of Group Theory"
+msc_primary: "20A05"
+msc_secondary: ["20B99", "20D99", "20C99"]
+processed_at: '2026-04-05'
 ---
 
 # Lean4形式化实现-群论 / Lean4 Formalization of Group Theory

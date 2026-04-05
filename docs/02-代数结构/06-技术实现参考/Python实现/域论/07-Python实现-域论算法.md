@@ -1,12 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-title: "07 Python实现 域论算法"
-msc_primary: ["68W30"]
-msc_secondary: ["12F99"]
+title: "Python实现：域论算法 / Python Implementation: Field Theory Algorithms"
+msc_primary: "12F99"
+msc_secondary: ["12E99", "11R99", "12G99"]
+processed_at: '2026-04-05'
 ---
 
 # Python实现：域论算法 / Python Implementation: Field Theory Algorithms

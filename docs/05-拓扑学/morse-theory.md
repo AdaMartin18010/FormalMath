@@ -1,8 +1,9 @@
 ---
-msc_primary: "57R70"
-msc_secondary: ["57-XX", "58E05"]
+msc_primary: 57R70
+msc_secondary:
+- 57-XX
+- 58E05
 ---
-
 # 莫尔斯理论 / Morse Theory
 
 **主题编号**: B.05.16

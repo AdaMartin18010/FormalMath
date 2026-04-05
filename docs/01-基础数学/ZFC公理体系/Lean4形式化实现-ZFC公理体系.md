@@ -1,6 +1,8 @@
 ---
-msc_primary: "03E20"
-msc_secondary: ['03E30', '03E15', '03E10']
+title: "ZFC公理体系 - Lean4形式化实现"
+msc_primary: "03B35"
+msc_secondary: ['68T15', '03B70']
+processed_at: '2026-04-05'
 ---
 
 # ZFC公理体系 - Lean4形式化实现

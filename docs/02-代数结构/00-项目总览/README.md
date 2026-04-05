@@ -3,10 +3,6 @@ msc_primary: "00A99"
 msc_secondary: ['00-XX']
 ---
 
-﻿---
-msc_primary: "20A99"
----
-
 # 代数结构知识梳理与全面分析项目
 
 ## 欢迎

@@ -1,10 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-msc_primary: "20A99"
+title: "ZFC到抽象代数结构完整论证"
+msc_primary: "03E99"
+msc_secondary: ["08A99", "12F99", "13A99"]
+processed_at: '2026-04-05'
 ---
 
 # ZFC到抽象代数结构完整论证 - 国际标准版

@@ -2,9 +2,6 @@
 msc_primary: "51Mxx"
 msc_secondary: ['90Cxx', '51Nxx', '68Vxx']
 ---
-msc_primary: "51Mxx"
-msc_secondary: ['90Cxx', '51Nxx', '68Vxx']
----
 
 # 欧几里得几何 - Lean4形式化实现 / Euclidean Geometry - Lean4 Formalization
 

@@ -1,8 +1,9 @@
 ---
-msc_primary: "57R20"
-msc_secondary: ["55R25", "55R40"]
+msc_primary: 57R20
+msc_secondary:
+- 55R25
+- 55R40
 ---
-
 # 示性类入门 / Introduction to Characteristic Classes
 
 **主题编号**: B.05.14

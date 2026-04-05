@@ -1,6 +1,6 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['35-XX', '12Exx', '13Cxx']
+msc_primary: "65-XX"
+msc_secondary: ["68-XX", "90-XX"]
 ---
 
 # 计算数学 / Computational Mathematics

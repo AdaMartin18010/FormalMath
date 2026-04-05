@@ -1,10 +1,8 @@
 ---
+title: "数系与ZFC公理体系映射关系分析 - 国际标准版"
 msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-msc_primary: "03E35"
+msc_secondary: ['00A05', '97A99']
+processed_at: '2026-04-05'
 ---
 
 # 数系与ZFC公理体系映射关系分析 - 国际标准版

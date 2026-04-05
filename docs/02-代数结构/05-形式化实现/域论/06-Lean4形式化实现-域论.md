@@ -1,12 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-title: "06 Lean4形式化实现 域论"
-msc_primary: ["68V20"]
-msc_secondary: ["12F99", "03B35"]
+title: "Lean4形式化实现：域论 / Lean4 Formalization: Field Theory"
+msc_primary: "12F99"
+msc_secondary: ["12E99", "11R99", "12G99"]
+processed_at: '2026-04-05'
 ---
 
 # Lean4形式化实现：域论 / Lean4 Formalization: Field Theory

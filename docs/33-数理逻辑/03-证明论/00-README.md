@@ -1,9 +1,6 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: "03Fxx"
+msc_secondary: ["03F05", "03F15", "03F30", "03F35"]
 ---
 
 # 证明论 (Proof Theory)

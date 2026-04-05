@@ -1,10 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-msc_primary: "20A99"
+title: "README"
+msc_primary: "68V20"
+msc_secondary: ["08A99", "03B35", "68T99"]
+processed_at: '2026-04-05'
 ---
 
 # 教学资源

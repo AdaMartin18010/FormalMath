@@ -1,9 +1,6 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: "03Cxx"
+msc_secondary: ["03C07", "03C10", "03C35", "03C45", "03C64"]
 ---
 
 # 模型论 (Model Theory)

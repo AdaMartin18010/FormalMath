@@ -1,6 +1,8 @@
 ---
+title: "ZFC公理体系-深度扩展版"
 msc_primary: "03E30"
-msc_secondary: ['03E30', '03E10', '03-XX']
+msc_secondary: ['03E15', '03B30', '00A30']
+processed_at: '2026-04-05'
 ---
 
 # ZFC公理体系-深度扩展版

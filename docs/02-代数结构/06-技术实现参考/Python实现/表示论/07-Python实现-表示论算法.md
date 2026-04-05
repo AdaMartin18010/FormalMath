@@ -1,12 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-title: "07 Python实现 表示论算法"
-msc_primary: ["68W30"]
-msc_secondary: ["20C99"]
+title: "表示论算法Python实现"
+msc_primary: "20A05"
+msc_secondary: ["20B99", "20D99", "20C99"]
+processed_at: '2026-04-05'
 ---
 
 # 表示论算法Python实现 - 国际标准版

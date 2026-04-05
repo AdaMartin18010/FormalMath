@@ -1,9 +1,6 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: "03E30"
+msc_secondary: ["03E25", "03E35", "03E55", "03E60"]
 ---
 
 # 集合论 (Set Theory)

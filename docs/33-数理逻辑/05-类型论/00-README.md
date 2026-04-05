@@ -1,9 +1,6 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: "03B15"
+msc_secondary: ["03B38", "03B40", "03B70", "68N18", "68V20"]
 ---
 
 # 类型论 (Type Theory)

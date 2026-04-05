@@ -1,9 +1,6 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: "03Dxx"
+msc_secondary: ["03D05", "03D10", "03D15", "03D25", "03D30", "68Q15"]
 ---
 
 # 可计算性理论 (Computability Theory)

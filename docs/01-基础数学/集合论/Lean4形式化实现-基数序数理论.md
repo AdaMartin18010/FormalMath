@@ -1,9 +1,8 @@
 ---
-msc_primary: "00A05"
-msc_secondary: ['03E30', '00-XX', '03E10']
----
-msc_primary: "00A05"
-msc_secondary: ['03E30', '00-XX', '03E10']
+title: "Lean 4形式化实现 - 基数序数理论"
+msc_primary: "03B35"
+msc_secondary: ['68T15', '03B70']
+processed_at: '2026-04-05'
 ---
 
 # Lean 4形式化实现 - 基数序数理论

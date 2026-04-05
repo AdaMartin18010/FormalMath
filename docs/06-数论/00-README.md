@@ -1,6 +1,6 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['11Sxx', '12Exx', '11Axx']
+msc_primary: "11-XX"
+msc_secondary: ["11Axx", "11Rxx", "11Mxx", "11Bxx", "11Yxx"]
 ---
 
 # 数论 / Number Theory

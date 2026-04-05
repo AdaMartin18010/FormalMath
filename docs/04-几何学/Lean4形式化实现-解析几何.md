@@ -1,9 +1,6 @@
 ---
-msc_primary: "14-XX"
-msc_secondary: ['53A04', '14Nxx', '14Cxx']
----
-msc_primary: "14-XX"
-msc_secondary: ['53A04', '14Nxx', '14Cxx']
+msc_primary: "51N20"
+msc_secondary: ['51Nxx', '51-XX', '14Nxx', '68Vxx']
 ---
 
 # Lean4形式化实现-解析几何 / Lean4 Formal Implementation - Analytic Geometry

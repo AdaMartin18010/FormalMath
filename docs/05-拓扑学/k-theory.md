@@ -1,8 +1,9 @@
 ---
-msc_primary: "19Lxx"
-msc_secondary: ["55N15", "55R50"]
+msc_primary: 19Lxx
+msc_secondary:
+- 55N15
+- 55R50
 ---
-
 # K理论初步 / Introduction to K-Theory
 
 **主题编号**: B.05.15

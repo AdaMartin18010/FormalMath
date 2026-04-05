@@ -1,9 +1,8 @@
 ---
-msc_primary: "03F30"
-msc_secondary: ['11Axx', '03E30', '03E15']
----
-msc_primary: "03F30"
-msc_secondary: ['11Axx', '03E30', '03E15']
+title: "ZFC公理体系完整形式化 - 第一部分：基础公理系统"
+msc_primary: "03E30"
+msc_secondary: ['03E15', '03B30', '00A30']
+processed_at: '2026-04-05'
 ---
 
 # ZFC公理体系完整形式化 - 第一部分：基础公理系统

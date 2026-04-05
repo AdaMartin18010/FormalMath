@@ -1,8 +1,9 @@
 ---
-msc_primary: "55R10"
-msc_secondary: ["55-XX", "57R22"]
+msc_primary: 55R10
+msc_secondary:
+- 55-XX
+- 57R22
 ---
-
 # 纤维丛理论 / Fiber Bundle Theory
 
 **主题编号**: B.05.13

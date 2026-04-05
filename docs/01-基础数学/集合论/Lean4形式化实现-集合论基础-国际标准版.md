@@ -1,10 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-msc_primary: "03E99"
+title: "集合论基础 - Lean4形式化实现（国际标准版）"
+msc_primary: "03B35"
+msc_secondary: ['68T15', '03B70']
+processed_at: '2026-04-05'
 ---
 
 # 集合论基础 - Lean4形式化实现（国际标准版）

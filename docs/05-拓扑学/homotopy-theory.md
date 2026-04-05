@@ -1,8 +1,9 @@
 ---
-msc_primary: "55Q05"
-msc_secondary: ["55-XX", "55Pxx"]
+msc_primary: 55Q05
+msc_secondary:
+- 55-XX
+- 55Pxx
 ---
-
 # 同伦论基础 / Foundations of Homotopy Theory
 
 **主题编号**: B.05.12

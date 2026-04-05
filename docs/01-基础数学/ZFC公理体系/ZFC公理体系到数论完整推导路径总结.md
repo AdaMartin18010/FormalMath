@@ -1,10 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-msc_primary: "03E35"
+title: "ZFC公理体系到数论完整推导路径总结"
+msc_primary: "03E30"
+msc_secondary: ['03E15', '03B30', '00A30']
+processed_at: '2026-04-05'
 ---
 
 # ZFC公理体系到数论完整推导路径总结

@@ -1,12 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-title: "Lean4形式化实现 环论"
-msc_primary: ["68V20"]
-msc_secondary: ["13A99", "03B35"]
+title: "环论 - Lean4形式化实现"
+msc_primary: "13A99"
+msc_secondary: ["13B99", "13C99", "16A99"]
+processed_at: '2026-04-05'
 ---
 
 # 环论 - Lean4形式化实现

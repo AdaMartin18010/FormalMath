@@ -1,8 +1,9 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['16-XX', '54Bxx', '55-XX']
+msc_primary: 54-XX
+msc_secondary:
+- 55-XX
+- 57-XX
 ---
-
 # 拓扑学
 
 **最后更新**: 2025年12月31日

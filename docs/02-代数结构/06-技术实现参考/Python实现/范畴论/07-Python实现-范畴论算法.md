@@ -1,12 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-title: "07 Python实现 范畴论算法"
-msc_primary: ["68W30"]
-msc_secondary: ["18A99"]
+title: "范畴论算法Python实现"
+msc_primary: "18A99"
+msc_secondary: ["18B99", "18G99", "18N99"]
+processed_at: '2026-04-05'
 ---
 
 # 范畴论算法Python实现 - 国际标准版

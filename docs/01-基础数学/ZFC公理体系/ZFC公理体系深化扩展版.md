@@ -1,9 +1,8 @@
 ---
-msc_primary: "03E20"
-msc_secondary: ['03E30', '03E15', '03-XX']
----
-msc_primary: "03E20"
-msc_secondary: ['03E30', '03E15', '03-XX']
+title: "ZFC公理体系深化扩展版"
+msc_primary: "03E99"
+msc_secondary: ['03E30', '03B30']
+processed_at: '2026-04-05'
 ---
 
 # ZFC公理体系深化扩展版

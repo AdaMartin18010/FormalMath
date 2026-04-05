@@ -95,6 +95,7 @@ import FormalMath.ManifoldDefinition
 import FormalMath.CurvatureTensor
 import FormalMath.GeodesicEquation
 import FormalMath.DeRhamCohomology
+import FormalMath.StokesTheorem
 
 -- 几何与拓扑进阶（10个）- 第8批新增
 import FormalMath.CharacteristicClass

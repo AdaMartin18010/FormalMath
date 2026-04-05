@@ -1,9 +1,6 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: "03-XX"
+msc_secondary: ["03Axx", "03Bxx", "03Cxx", "03Dxx", "03Exx", "03Fxx", "03Gxx"]
 ---
 
 # 33-数理逻辑 (Mathematical Logic)

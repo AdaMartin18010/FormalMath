@@ -1,12 +1,8 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-
-﻿---
-title: "07 Python实现 李代数算法"
-msc_primary: ["68W30"]
-msc_secondary: ["17B99"]
+title: "Python实现：李代数算法 / Python Implementation: Lie Algebra Algorithms"
+msc_primary: "17B99"
+msc_secondary: ["17B20", "17B30", "22E60"]
+processed_at: '2026-04-05'
 ---
 
 # Python实现：李代数算法 / Python Implementation: Lie Algebra Algorithms
