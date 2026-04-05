@@ -10,7 +10,7 @@ processed_at: '2026-04-05'
 # étale Topos与平展上同调：思维表征与可复用模板
 
 **文档类型**：思维表征 · 概念矩阵 · 决策树 · 概念树 · 公理–定理树 · 术语表
-**关联文档**：[04-étale Topos与平展上同调](./04-étale%20Topos与平展上同调.md) · [04-étale Topos与平展上同调-网络对齐与批判性意见报告](./04-étale%20Topos与平展上同调-网络对齐与批判性意见报告.md)
+**关联文档**：[04-étale Topos与平展上同调](../../README.md) · [04-étale Topos与平展上同调-网络对齐与批判性意见报告](../../README.md)
 **创建日期**：2026年01月31日
 
 ---
@@ -105,9 +105,9 @@ A2. 平展上同调: H^i_et(X, F) = R^i Gamma(X_et, F)，F 为 Abel 层.
 
 ## 六、使用说明与复用
 
-- **正文**：概念与证明以 [04-étale Topos与平展上同调](./04-étale%20Topos与平展上同调.md) 为准；本页为配套思维表征与检索用。
-- **对齐与批判**：见 [04-étale Topos与平展上同调-网络对齐与批判性意见报告](./04-étale%20Topos与平展上同调-网络对齐与批判性意见报告.md)。
-- **交叉引用**：[01-Grothendieck Topos](./01-Grothendieck%20Topos.md)；[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)；03-上同调理论/etale、韦伊猜想。
+- **正文**：概念与证明以 [04-étale Topos与平展上同调](../../README.md) 为准；本页为配套思维表征与检索用。
+- **对齐与批判**：见 [04-étale Topos与平展上同调-网络对齐与批判性意见报告](../../README.md)。
+- **交叉引用**：[01-Grothendieck Topos](../../README.md)；[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)；03-上同调理论/etale、韦伊猜想。
 
 **文档状态**：思维表征独立页 v1
 **最后更新**：2026年01月31日

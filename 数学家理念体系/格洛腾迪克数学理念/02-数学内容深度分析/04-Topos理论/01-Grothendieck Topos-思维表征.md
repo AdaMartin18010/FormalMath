@@ -10,7 +10,7 @@ processed_at: '2026-04-05'
 # Grothendieck Topos：思维表征与可复用模板
 
 **文档类型**：思维表征 · 概念矩阵 · 决策树 · 概念树 · 公理–定理树 · 术语表
-**关联文档**：[01-Grothendieck Topos](./01-Grothendieck%20Topos.md) · [01-Grothendieck Topos-网络对齐与批判性意见报告](./01-Grothendieck%20Topos-网络对齐与批判性意见报告.md)
+**关联文档**：[01-Grothendieck Topos](../../README.md) · [01-Grothendieck Topos-网络对齐与批判性意见报告](../../README.md)
 **创建日期**：2026年01月31日
 
 ---
@@ -46,7 +46,7 @@ processed_at: '2026-04-05'
 | 层范畴 | $\mathrm{Sh}(C,J)$，对覆盖粘合 | 基本定义 |
 | 等价刻画 | 有限极限 + 余极限 + $\Omega$ + $P(A)$ | 公理化 |
 | 几何态射 | 拉回层、保持有限极限 | 与 [03-几何态射与逻辑态射](./03-几何态射与逻辑态射.md) |
-| 应用 | étale 上同调、韦伊猜想 | 见 [04-étale Topos与平展上同调](./04-étale%20Topos与平展上同调.md) |
+| 应用 | étale 上同调、韦伊猜想 | 见 [04-étale Topos与平展上同调](../../README.md) |
 
 ---
 
@@ -113,9 +113,9 @@ A2. 子对象分类器: Hom(-, Ω) ≅ Sub(-)；幂对象 Hom(A×B, Ω) ≅ Hom(
 
 ## 六、使用说明与复用
 
-- **正文**：概念与证明以 [01-Grothendieck Topos](./01-Grothendieck%20Topos.md) 为准；本页为配套思维表征与检索用。
-- **对齐与批判**：见 [01-Grothendieck Topos-网络对齐与批判性意见报告](./01-Grothendieck%20Topos-网络对齐与批判性意见报告.md)。
-- **交叉引用**：[04-étale Topos与平展上同调](./04-étale%20Topos与平展上同调.md)；[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)；[03-几何态射与逻辑态射](./03-几何态射与逻辑态射.md)。
+- **正文**：概念与证明以 [01-Grothendieck Topos](../../README.md) 为准；本页为配套思维表征与检索用。
+- **对齐与批判**：见 [01-Grothendieck Topos-网络对齐与批判性意见报告](../../README.md)。
+- **交叉引用**：[04-étale Topos与平展上同调](../../README.md)；[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)；[03-几何态射与逻辑态射](./03-几何态射与逻辑态射.md)。
 
 **文档状态**：思维表征独立页 v1
 **最后更新**：2026年01月31日

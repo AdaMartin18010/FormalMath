@@ -420,7 +420,7 @@ $$\text{Sh}(C, J) \simeq \text{Grothendieck Topos}$$
 
 ## 姊妹篇与网络资源
 
-- **本目录**：[01-Grothendieck Topos](./01-Grothendieck%20Topos.md)、[04-etale Topos与平展上同调](./04-étale%20Topos与平展上同调.md)、[06-平滑Topos与晶体Topos](./06-平滑Topos与晶体Topos.md)。
+- **本目录**：[01-Grothendieck Topos](../../README.md)、[04-etale Topos与平展上同调](../../README.md)、[06-平滑Topos与晶体Topos](./06-平滑Topos与晶体Topos.md)。
 - **网络资源**：Stacks Project tag 00VG、00TY、00TR；SGA 4；nLab Grothendieck topology、sheaf。
 
 ---

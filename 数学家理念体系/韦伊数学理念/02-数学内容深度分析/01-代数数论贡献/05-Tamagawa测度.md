@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Tamagawa测度理论](#tamagawa测度理论)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、Tamagawa测度的定义](#一tamagawa测度的定义)
     - [1.0 Tamagawa测度理论网络图](#10-tamagawa测度理论网络图)
     - [1.1 历史背景](#11-历史背景)

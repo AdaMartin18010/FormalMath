@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [分类定理与Topos分类：Grothendieck的拓扑分类](#分类定理与topos分类grothendieck的拓扑分类)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、分类定理](#一分类定理)
     - [1.1 Grothendieck分类定理](#11-grothendieck分类定理)
     - [1.2 性质](#12-性质)
@@ -406,7 +406,7 @@ $$\text{Grothendieck Topos} \leftrightarrow \{\text{范畴-拓扑对}\}/\sim$$
 
 ## 姊妹篇与网络资源
 
-- **本目录**：[10-分类Topos与几何点](./10-分类Topos与几何点.md)、[08-逻辑分类与模型理论](./08-逻辑分类与模型理论.md)、[01-Grothendieck Topos](./01-Grothendieck%20Topos.md)。
+- **本目录**：[10-分类Topos与几何点](./10-分类Topos与几何点.md)、[08-逻辑分类与模型理论](./08-逻辑分类与模型理论.md)、[01-Grothendieck Topos](../../README.md)。
 - **网络资源**：Stacks Project tag 00TY、04DZ；Johnstone Sketches of an Elephant；nLab classifying topos。
 
 ---

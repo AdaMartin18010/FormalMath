@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Hard Lefschetz定理的应用](#hard-lefschetz定理的应用)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、Hard Lefschetz定理的陈述](#一hard-lefschetz定理的陈述)
     - [1.1 定理内容](#11-定理内容)
     - [1.2 几何意义](#12-几何意义)

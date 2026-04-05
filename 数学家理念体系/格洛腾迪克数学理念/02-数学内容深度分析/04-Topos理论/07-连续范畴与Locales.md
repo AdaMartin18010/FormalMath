@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [连续范畴与Locales：Topos的几何化](#连续范畴与localestopos的几何化)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、Locales](#一locales)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -421,7 +421,7 @@ $$\text{连续范畴 } \subset \text{Grothendieck Topos}$$
 
 ## 姊妹篇与网络资源
 
-- **本目录**：[01-Grothendieck Topos](./01-Grothendieck%20Topos.md)、[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)、[10-分类Topos与几何点](./10-分类Topos与几何点.md)。
+- **本目录**：[01-Grothendieck Topos](../../README.md)、[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)、[10-分类Topos与几何点](./10-分类Topos与几何点.md)。
 - **网络资源**：Stacks Project tag 07AD；Johnstone Sketches of an Elephant；nLab locale、continuous category。
 
 ---

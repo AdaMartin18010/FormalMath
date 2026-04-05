@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Grothendieck群理论：向量丛的K理论](#grothendieck群理论向量丛的k理论)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、Grothendieck群K\_0](#一grothendieck群k_0)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)

@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [上同调与Mayer-Vietoris序列：覆盖的上同调](#上同调与mayer-vietoris序列覆盖的上同调)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、Mayer-Vietoris序列](#一mayer-vietoris序列)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)

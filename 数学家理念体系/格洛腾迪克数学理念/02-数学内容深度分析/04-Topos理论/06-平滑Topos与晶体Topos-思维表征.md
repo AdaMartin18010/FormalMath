@@ -108,7 +108,7 @@ A2. 晶体 topos: (X/S)_cris 由 X 在 S 上的无穷小邻域、晶体层定义
 
 - **正文**：概念与证明以 [06-平滑Topos与晶体Topos](./06-平滑Topos与晶体Topos.md) 为准；本页为配套思维表征与检索用。
 - **对齐与批判**：见 [06-平滑Topos与晶体Topos-网络对齐与批判性意见报告](./06-平滑Topos与晶体Topos-网络对齐与批判性意见报告.md)。
-- **交叉引用**：[04-étale Topos与平展上同调](./04-étale%20Topos与平展上同调.md)；[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)；03-上同调理论/晶体、de Rham。
+- **交叉引用**：[04-étale Topos与平展上同调](../../README.md)；[05-层的范畴与Grothendieck拓扑](./05-层的范畴与Grothendieck拓扑.md)；03-上同调理论/晶体、de Rham。
 
 **文档状态**：思维表征独立页 v1
 **最后更新**：2026年01月31日

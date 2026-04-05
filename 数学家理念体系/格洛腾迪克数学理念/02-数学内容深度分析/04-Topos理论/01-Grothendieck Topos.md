@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Grothendieck Topos：广义集合论](#grothendieck-topos广义集合论)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、Topos的定义](#一topos的定义)
     - [1.1 基本要求](#11-基本要求)
     - [1.2 例子](#12-例子)

@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Tannaka范畴方法](#tannaka范畴方法)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、Tannaka范畴的引入](#一tannaka范畴的引入)
     - [1.1 历史背景](#11-历史背景)
     - [1.2 Tannaka范畴的定义](#12-tannaka范畴的定义)

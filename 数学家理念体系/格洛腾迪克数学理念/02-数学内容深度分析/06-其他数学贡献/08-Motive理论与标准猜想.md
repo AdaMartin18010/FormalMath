@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Motive理论与标准猜想：Grothendieck的梦想](#motive理论与标准猜想grothendieck的梦想)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、Motive的动机](#一motive的动机)
     - [1.1 上同调的统一](#11-上同调的统一)
     - [1.2 Grothendieck的愿景](#12-grothendieck的愿景)

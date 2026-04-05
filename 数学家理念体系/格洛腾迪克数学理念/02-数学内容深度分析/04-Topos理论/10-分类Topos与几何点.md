@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [分类Topos与几何点：Topos的几何结构](#分类topos与几何点topos的几何结构)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、分类Topos](#一分类topos)
     - [1.1 定义](#11-定义)
     - [1.2 性质](#12-性质)
@@ -418,7 +418,7 @@ $$\text{分类Topos的几何点对应原始结构的点}$$
 
 ## 姊妹篇与网络资源
 
-- **本目录**：[08-逻辑分类与模型理论](./08-逻辑分类与模型理论.md)、[11-分类定理与Topos分类](./11-分类定理与Topos分类.md)、[01-Grothendieck Topos](./01-Grothendieck%20Topos.md)。
+- **本目录**：[08-逻辑分类与模型理论](./08-逻辑分类与模型理论.md)、[11-分类定理与Topos分类](./11-分类定理与Topos分类.md)、[01-Grothendieck Topos](../../README.md)。
 - **网络资源**：Stacks Project tag 04DU、020M；Johnstone Sketches of an Elephant；nLab classifying topos、point of a topos。
 
 ---

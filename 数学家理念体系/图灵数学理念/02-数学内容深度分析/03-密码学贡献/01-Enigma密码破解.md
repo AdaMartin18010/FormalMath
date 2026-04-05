@@ -18,7 +18,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Enigma密码破解：图灵的密码分析贡献](#enigma密码破解图灵的密码分析贡献)
-  - [📋 目录](#目录)
+  - [📋 目录](../../README.md#目录)
   - [一、Enigma密码机](#一enigma密码机)
     - [1.1 Enigma机的结构](#11-enigma机的结构)
     - [1.2 Enigma的弱点](#12-enigma的弱点)

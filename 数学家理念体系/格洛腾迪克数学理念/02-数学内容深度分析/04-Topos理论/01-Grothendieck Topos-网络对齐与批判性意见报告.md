@@ -9,7 +9,7 @@ processed_at: '2026-04-05'
 
 # Grothendieck Topos：网络对齐与批判性意见报告
 
-**关联文档**：[01-Grothendieck Topos](./01-Grothendieck%20Topos.md) · 同名思维表征
+**关联文档**：[01-Grothendieck Topos](../../README.md) · 同名思维表征
 **创建日期**：2026年01月31日
 
 ## 一、权威对齐
