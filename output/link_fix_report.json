@@ -1,0 +1,14 @@
+{
+  "fix_time": "2026-04-05T10:03:24.697786",
+  "statistics": {
+    "total_issues": 56212,
+    "processed": 56212,
+    "suggestions_made": 56212,
+    "file_path_fixes": 851,
+    "anchor_fixes": 4409,
+    "removed_links": 15641,
+    "manual_review_needed": 35311,
+    "fixed_issues": 0,
+    "modified_files": 0
+  }
+}

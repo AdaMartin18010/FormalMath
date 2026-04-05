@@ -14,7 +14,7 @@ msc_secondary: [00A05, 00A06, 00A35]
 ## 📋 目录
 
 - [FormalMath与Wolfram MathWorld对齐报告](#formalmath与wolfram-mathworld对齐报告)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [执行摘要](#执行摘要)
   - [1. 对齐概述](#1-对齐概述)
     - [1.1 研究范围](#11-研究范围)

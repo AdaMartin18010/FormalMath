@@ -9,7 +9,7 @@
 ## 📋 目录
 
 - [Wikipedia代数学对齐报告](#wikipedia代数学对齐报告)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [1. 概述](#1-概述)
   - [2. Wikipedia代数学条目结构分析](#2-wikipedia代数学条目结构分析)
     - [2.1 Abstract Algebra (抽象代数)](#21-abstract-algebra-抽象代数)

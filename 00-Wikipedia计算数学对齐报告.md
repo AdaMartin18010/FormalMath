@@ -10,7 +10,7 @@
 ## 📋 目录
 
 - [Wikipedia计算数学对齐报告](#wikipedia计算数学对齐报告)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [1. 概述](#1-概述)
   - [2. Wikipedia计算数学条目结构分析](#2-wikipedia计算数学条目结构分析)
     - [2.1 Numerical Linear Algebra (数值线性代数)](#21-numerical-linear-algebra-数值线性代数)

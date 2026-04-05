@@ -18,23 +18,26 @@ de Rham上同调是微分流形的拓扑不变量，
 - Poincaré引理
 - de Rham定理
 
-## Mathlib4对应
-- `Mathlib.Geometry.Manifold.Algebra.LeftInvariantDerivation`
-- `Mathlib.Analysis.Calculus.DifferentialForms`
+## 参考
+- Bott & Tu "Differential Forms in Algebraic Topology"
+- Warner "Foundations of Differentiable Manifolds and Lie Groups"
+- 对应Mathlib4: `Mathlib.Geometry.Manifold`
+- 对应Mathlib4: `Mathlib.Analysis.DifferentialForm`
+-/ 
 
--/
-
-import FormalMath.Mathlib.Geometry.Manifold.Algebra.LeftInvariantDerivation
-import FormalMath.Mathlib.Analysis.Calculus.DifferentialForms
-import FormalMath.Mathlib.Algebra.Homology.ShortComplex
-import FormalMath.Mathlib.Topology.Sheaves.Stalks
-import FormalMath.Mathlib.Algebra.Module.ExteriorPower
+import Mathlib.Geometry.Manifold.Algebra.LeftInvariantDerivation
+import Mathlib.Geometry.Manifold.DifferentialForm
+import Mathlib.Algebra.Homology.ShortComplex
+import Mathlib.Topology.Sheaves.Stalks
+import Mathlib.LinearAlgebra.ExteriorAlgebra
 
 namespace DeRhamCohomology
 
-open Manifold DifferentialForm ExteriorAlgebra Homology
+open Manifold DifferentialForm ExteriorAlgebra Homology Topology
 
-variable {M : Type*} [TopologicalSpace M] {n : ℕ}
+universe u v
+
+variable {M : Type u} [TopologicalSpace M] {n : ℕ}
 variable [ChartedSpace (EuclideanSpace ℝ (Fin n)) M] 
 variable [SmoothManifoldWithCorners (𝓡 n) M]
 
@@ -45,25 +48,28 @@ variable [SmoothManifoldWithCorners (𝓡 n) M]
 
 微分形式是流形上的反对称多重线性函数场。
 -/
-def DifferentialForms (k : ℕ) : Type _ :=
-  {ω : ∀ p : M, ExteriorPower k (TangentSpace M p)* // Smooth ω}
+
+/-- 微分k-形式空间 -/
+def DifferentialForms (k : ℕ) : Type u :=
+  -- Ω^k(M) = Γ(Λ^k T*M)
+  -- 光滑截面空间
+  SmoothSection (Λ^k (TangentBundle 𝓡 n M)) M
 
 notation:max "Ω^" k "(" M ")" => DifferentialForms (k := k) M
 
-instance : AddCommGroup (Ω^k(M)) := by
+-- 简化表示法：全局使用n维流形结构
+local notation "Ω" => DifferentialForms (M := M) (n := n)
+
+/-- 微分形式是实向量空间 -/
+instance : AddCommGroup (DifferentialForms (n := n) (k := k) M) := by
   -- 逐点加法构成阿贝尔群
   unfold DifferentialForms
-  apply Subtype.addCommGroup
-  · -- 零形式是光滑的
-    sorry
-  · -- 光滑形式的和是光滑的
-    sorry
-  · -- 光滑形式的负是光滑的
-    sorry
+  -- 光滑截面的加法群结构
+  sorry -- 需要Mathlib中光滑截面的群结构
 
-instance : Module ℝ (Ω^k(M)) := by
+instance : Module ℝ (DifferentialForms (n := n) (k := k) M) := by
   -- 逐点数乘构成实向量空间
-  sorry
+  sorry -- 需要Mathlib中光滑截面的模结构
 
 /-
 ## 外微分
@@ -74,8 +80,13 @@ d : Ωᵏ(M) → Ωᵏ⁺¹(M)满足：
 
 外微分是de Rham上同调的核心算子。
 -/
+
+/-- 外微分算子 -/
 def ExteriorDerivative {k : ℕ} : Ω^k(M) →ₗ[ℝ] Ω^(k+1)(M) :=
-  ⟨fun ω ↦ ⟨fun p ↦ sorry, sorry⟩, sorry, sorry⟩
+  ⟨fun ω ↦ sorry, sorry, sorry⟩
+  -- 在局部坐标下定义：
+  -- 若ω = Σ f_I dx^I，则 dω = Σ df_I ∧ dx^I
+  -- 其中df = Σ (∂f/∂x^i) dx^i
 
 notation:max "d" ω => ExteriorDerivative ω
 
@@ -106,9 +117,12 @@ theorem exterior_derivative_squared_zero
 恰当形式一定是闭形式（d² = 0的推论），但逆命题一般不成立。
 上同调测量闭形式"偏离"恰当形式的程度。
 -/
+
+/-- 闭形式（dω = 0） -/
 def IsClosed {k : ℕ} (ω : Ω^k(M)) : Prop :=
   d ω = 0
 
+/-- 恰当形式（∃ η, dη = ω） -/
 def IsExact {k : ℕ} (ω : Ω^k(M)) : Prop :=
   ∃ η : Ω^(k-1)(M), d η = ω
 
@@ -131,13 +145,17 @@ Hᵏ_{dR}(M) = ker(d_k) / im(d_{k-1})
 
 这是流形M的拓扑不变量。
 -/
-def DeRhamCohomologyGroup (k : ℕ) : Type _ :=
-  LinearMap.ker (@ExteriorDerivative M _ n _ _ (k+1)) ⧸ 
-  LinearMap.range (@ExteriorDerivative M _ n _ _ k)
+
+/-- de Rham上同调群 -/
+def DeRhamCohomologyGroup (k : ℕ) : Type u :=
+  -- H^k_{dR}(M) = ker(d: Ω^k → Ω^{k+1}) / im(d: Ω^{k-1} → Ω^k)
+  LinearMap.ker (@ExteriorDerivative M _ n _ _ k) ⧸ 
+  LinearMap.range (@ExteriorDerivative M _ n _ _ (k-1))
 
 notation:max "H^" k "_{dR}(" M ")" => DeRhamCohomologyGroup (k := k) M
 
-instance : AddCommGroup (H^k_{dR}(M)) := by
+instance : AddCommGroup (DeRhamCohomologyGroup (n := n) k M) := by
+  -- 商群的阿贝尔群结构
   infer_instance
 
 /-
@@ -149,8 +167,26 @@ instance : AddCommGroup (H^k_{dR}(M)) := by
 
 这是de Rham理论的基本引理，是同伦不变性的关键步骤。
 -/
+
+/-- 可缩空间 -/
+class ContractibleSpace (X : Type u) [TopologicalSpace X] : Prop where
+  -- 恒等映射同伦于常值映射
+  contractible : ∃ (x₀ : X), ContinuousMap.Homotopy 
+    (ContinuousMap.id X) (ContinuousMap.const X x₀)
+
+/-- 开集结构 -/
+abbrev Opens (M : Type u) [TopologicalSpace M] :=
+  { U : Set M // IsOpen U }
+
+/-- 开子流形 -/
+instance {U : Opens M} : TopologicalSpace U :=
+  inferInstanceAs (TopologicalSpace {x // x ∈ U.1})
+
+instance {U : Opens M} : ChartedSpace (EuclideanSpace ℝ (Fin n)) U :=
+  sorry -- 需要子流形结构
+
 theorem poincare_lemma 
-    {U : Opens M} (h_contractible : ContractibleSpace U) 
+    {U : Opens M} [ContractibleSpace U] 
     {k : ℕ} (hk : k > 0) (ω : Ω^k(U)) (h_closed : IsClosed ω) :
     IsExact ω := by
   -- Poincaré引理的证明
@@ -159,7 +195,7 @@ theorem poincare_lemma
   -- 步骤2：定义同伦算子h(ω) = ∫₀¹ ι_{∂/∂t} H*ω dt
   -- 步骤3：验证dh + hd = id（Cartan魔法公式）
   -- 步骤4：若dω = 0，则d(hω) = ω，即ω是恰当的
-  sorry -- 这是de Rham理论的基本引理，需要同伦理论
+  sorry -- 这是de Rham理论的基本引理
 
 /-
 ## 零阶上同调
@@ -168,6 +204,7 @@ H⁰_{dR}(M)反映M的连通分支数量。
 
 对于连通流形，闭的0-形式就是常数函数。
 -/
+
 theorem h0_dR 
     [ConnectedSpace M] :
     H^0_{dR}(M) ≃ ℝ := by
@@ -175,7 +212,7 @@ theorem h0_dR
   -- 闭的0-形式 = 局部常数函数
   -- 连通流形上局部常数 = 常数
   -- 因此H⁰ = {常数函数} ≅ ℝ
-  sorry -- 需要连通性的性质
+  sorry -- 需要连通性和局部常数函数的性质
 
 /-
 ## 最高阶上同调
@@ -184,6 +221,18 @@ theorem h0_dR
 
 这是通过积分映射实现的：ω ↦ ∫_M ω
 -/
+
+/-- 定向流形 -/
+class Orientable (M : Type u) [TopologicalSpace M] 
+    [ChartedSpace (EuclideanSpace ℝ (Fin n)) M] : Prop where
+  -- 定向结构：处处非零的n-形式
+  orientation : ∃ ω : Ω^n(M), sorry -- ω处处非零
+
+/-- 紧支集 -/
+class CompactSupport {k : ℕ} (ω : Ω^k(M)) : Prop where
+  -- 支集是紧集
+  compact_support : IsCompact (Function.support ω)
+
 theorem hn_dR 
     [CompactSpace M] [Orientable M] :
     H^n_{dR}(M) ≃ ℝ := by
@@ -200,9 +249,19 @@ theorem hn_dR
 
 这是拉回形式的诱导映射。
 -/
-def PullbackMap {N : Type*} [TopologicalSpace N] 
-    [ChartedSpace (EuclideanSpace ℝ (Fin n)) N]
-    [SmoothManifoldWithCorners (𝓡 n) N]
+
+variable {N : Type v} [TopologicalSpace N]
+  [ChartedSpace (EuclideanSpace ℝ (Fin n)) N]
+  [SmoothManifoldWithCorners (𝓡 n) N]
+
+/-- 形式拉回 f*: Ω^k(N) → Ω^k(M) -/
+def FormPullback (f : M → N) (hf : Smooth f) {k : ℕ} : 
+    Ω^k(N) →ₗ[ℝ] Ω^k(M) :=
+  -- 拉回形式 (f*ω)_p(v_1, ..., v_k) = ω_{f(p)}(df_p(v_1), ..., df_p(v_k))
+  sorry -- 需要微分形式的拉回构造
+
+/-- 上同调拉回映射 -/
+def PullbackMap 
     (f : M → N) (hf : Smooth f) (k : ℕ) :
     H^k_{dR}(N) → H^k_{dR}(M) := by
   -- 通过形式的拉回诱导
@@ -210,7 +269,31 @@ def PullbackMap {N : Type*} [TopologicalSpace N]
   -- 步骤2：验证f*与d交换：f*(dω) = d(f*ω)
   -- 步骤3：因此f*保持闭形式和恰当形式
   -- 步骤4：诱导上同调之间的映射
-  sorry -- 需要形式的拉回理论
+  sorry -- 需要验证拉回与d交换
+
+/-- 拉回与外微分交换 -/
+theorem pullback_commutes_d 
+    (f : M → N) (hf : Smooth f) {k : ℕ} (ω : Ω^k(N)) :
+    FormPullback f hf (d ω) = d (FormPullback f hf ω) := by
+  -- 这是上同调函子性的关键
+  -- 外微分在局部坐标中定义，拉回保持此结构
+  sorry -- 需要验证局部坐标计算
+
+/-- 恒等映射诱导恒等映射 -/
+theorem pullback_id (k : ℕ) :
+    PullbackMap (id : M → M) (smooth_id) k = id := by
+  -- 显然的，因为id*(ω) = ω
+  sorry
+
+/-- 复合映射的拉回 -/
+theorem pullback_comp {P : Type w} [TopologicalSpace P]
+    [ChartedSpace (EuclideanSpace ℝ (Fin n)) P]
+    [SmoothManifoldWithCorners (𝓡 n) P]
+    (f : M → N) (hf : Smooth f)
+    (g : N → P) (hg : Smooth g) (k : ℕ) :
+    PullbackMap (g ∘ f) (hg.comp hf) k = PullbackMap f hf k ∘ PullbackMap g hg k := by
+  -- (g ∘ f)* = f* ∘ g*
+  sorry
 
 /-
 ## 同伦不变性
@@ -219,18 +302,36 @@ def PullbackMap {N : Type*} [TopologicalSpace N]
 
 这是de Rham上同调作为拓扑不变量的关键。
 -/
+
+/-- 同伦 -/
+structure Homotopy {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]
+    (f g : X → Y) where
+  toFun : X × ℝ → Y
+  continuous_toFun : Continuous toFun
+  map_zero_left : ∀ x, toFun (x, 0) = f x
+  map_one_left : ∀ x, toFun (x, 1) = g x
+
 theorem homotopy_invariance 
-    {N : Type*} [TopologicalSpace N]
-    [ChartedSpace (EuclideanSpace ℝ (Fin n)) N]
-    [SmoothManifoldWithCorners (𝓡 n) N]
     (f g : M → N) (hf : Smooth f) (hg : Smooth g)
     (H : Homotopy f g) (k : ℕ) :
     PullbackMap f hf k = PullbackMap g hg k := by
   -- 利用同伦算子证明链同伦
   -- 步骤1：从同伦H: M × [0,1] → N构造链同伦
-  -- 步骤2：证明f* - g* = dh + hd
+  -- 步骤2：证明f* - g* = dh + hd（链同伦公式）
   -- 步骤3：因此在上同调上f* = g*
-  sorry -- 需要同伦理论和链同伦
+  -- 这是Poincaré引理的推广
+  sorry -- 需要同伦算子的详细构造
+
+/-- 同伦等价诱导上同调同构 -/
+theorem homotopy_equivalence_iso 
+    (f : M → N) (hf : Smooth f)
+    (g : N → M) (hg : Smooth g)
+    (h1 : Homotopy (f ∘ g) id)
+    (h2 : Homotopy (g ∘ f) id) (k : ℕ) :
+    H^k_{dR}(M) ≃ H^k_{dR}(N) := by
+  -- 同伦等价诱导同调同构
+  -- f*和g*互为逆映射
+  sorry
 
 /-
 ## Mayer-Vietoris序列
@@ -240,11 +341,12 @@ theorem homotopy_invariance
 
 这是计算上同调的有力工具。
 -/
+
 theorem mayer_vietoris 
-    (U V : Opens M) (hUV : U ∪ V = ⊤) (k : ℕ) :
-    Exact (PullbackMap (Set.inclusion sorry) sorry k)
-          (Prod.map (PullbackMap (Set.inclusion sorry) sorry k) 
-                    (PullbackMap (Set.inclusion sorry) sorry k)) := by
+    (U V : Opens M) (hUV : U.1 ∪ V.1 = ⊤) (k : ℕ) :
+    Exact (PullbackMap (fun x : U.1 => x.1) sorry k) 
+          (Prod.map (PullbackMap (fun x : (U.1 ∩ V.1) => ⟨x.1, x.2.1⟩) sorry k)
+                    (PullbackMap (fun x : (U.1 ∩ V.1) => ⟨x.1, x.2.2⟩) sorry k)) := by
   -- Mayer-Vietoris序列
   -- 步骤1：构造短正合序列
   -- 0 → Ω*(M) → Ω*(U) ⊕ Ω*(V) → Ω*(U∩V) → 0
@@ -259,10 +361,8 @@ Hᵏ_{dR}(M × N) ≅ ⊕_{i+j=k} Hⁱ_{dR}(M) ⊗ Hʲ_{dR}(N)
 
 这是计算乘积空间上同调的公式。
 -/
+
 theorem kunneth_formula 
-    {N : Type*} [TopologicalSpace N]
-    [ChartedSpace (EuclideanSpace ℝ (Fin n)) N]
-    [SmoothManifoldWithCorners (𝓡 n) N]
     [CompactSpace M] [CompactSpace N] (k : ℕ) :
     H^k_{dR}(M × N) ≃ 
     DirectSum (fun p : {p : ℕ × ℕ // p.1 + p.2 = k} ↦ 
@@ -280,8 +380,25 @@ theorem kunneth_formula
 
 这是Stokes定理的基础。
 -/
+
+/-- 微分形式积分 -/
 def Integral {n : ℕ} (ω : Ω^n(M)) [CompactSupport ω] : ℝ :=
-  sorry -- 需要积分理论
+  -- 在定向流形上积分n-形式
+  -- 使用单位分解和局部坐标
+  sorry -- 需要完整的积分理论
+
+/-- 带边流形 -/
+class HasBoundary (M : Type u) [TopologicalSpace M] 
+    [ChartedSpace (EuclideanSpace ℝ (Fin n)) M] : Prop where
+  -- 边界结构
+  boundary : Set M
+  -- 局部模型：半空间
+  boundary_chart : ∀ x ∈ boundary, sorry
+
+/-- 形式在边界上的限制 -/
+def BoundaryRestriction {n : ℕ} (ω : Ω^(n-1)(M)) [HasBoundary M] : Ω^(n-1)(HasBoundary.boundary M) :=
+  -- 边界拉回
+  sorry
 
 /-
 ## Stokes定理
@@ -311,6 +428,7 @@ Hᵏ_{dR}(M) ≅ (Hⁿ⁻ᵏ_{dR}(M))*
 
 这是de Rham理论的核心定理。
 -/
+
 theorem poincare_duality 
     [CompactSpace M] [Orientable M] (k : ℕ) :
     H^k_{dR}(M) ≃ Module.Dual ℝ H^(n-k)_{dR}(M) := by
@@ -318,7 +436,7 @@ theorem poincare_duality
   -- 步骤1：定义配对<ω, η> = ∫_M ω ∧ η
   -- 步骤2：证明这是非退化的（利用Hodge理论）
   -- 步骤3：得到同构Hᵏ ≅ (Hⁿ⁻ᵏ)*
-  sorry -- 这是de Rham理论的核心定理，需要Hodge理论
+  sorry -- 这是de Rham理论的核心定理
 
 /-
 ## de Rham定理
@@ -328,8 +446,14 @@ Hᵏ_{dR}(M) ≅ Hᵏ_{sing}(M; ℝ)
 
 这是微分拓扑与代数拓扑的桥梁，是20世纪数学的重大成就。
 -/
+
+/-- 奇异上同调（参考定义） -/
+def SingularCohomology (k : ℕ) (M : Type u) [TopologicalSpace M] (R : Type v) [CommRing R] : Type (max u v) :=
+  -- 奇异上链复形的上同调
+  sorry -- 需要与CohomologyTheory.SingularCohomology一致
+
 theorem de_rham_theorem (k : ℕ) :
-    H^k_{dR}(M) ≃ TopologicalSpace.SingularCohomology k M ℝ := by
+    H^k_{dR}(M) ≃ SingularCohomology k M ℝ := by
   -- de Rham定理的证明概要
   -- 方法1：利用层上同调
   --   - 常值层ℝ有分解：0 → ℝ → Ω⁰ → Ω¹ → ...
@@ -337,7 +461,7 @@ theorem de_rham_theorem (k : ℕ) :
   --   - 因此Hᵏ_{dR} = Hᵏ(M; ℝ) = Hᵏ_{sing}(M; ℝ)
   -- 方法2：直接构造同构（Weil的方法）
   --   - 利用好的覆盖和Mayer-Vietoris
-  sorry -- 这是深刻的数学定理，需要层上同调或谱序列
+  sorry -- 这是深刻的数学定理
 
 /-
 ## 上同调环
@@ -346,6 +470,8 @@ theorem de_rham_theorem (k : ℕ) :
 
 这使得上同调比同调具有更丰富的代数结构。
 -/
+
+/-- 杯积（通过楔积诱导） -/
 def CupProduct {i j : ℕ} 
     (α : H^i_{dR}(M)) (β : H^j_{dR}(M)) : H^(i+j)_{dR}(M) :=
   -- 通过楔积诱导
@@ -354,7 +480,29 @@ def CupProduct {i j : ℕ}
   -- 步骤3：验证这个类不依赖于代表元的选取
   sorry -- 需要上同调类的乘法
 
-instance : Ring (DirectSum ℕ H^·_{dR}(M)) := by
+/-- 楔积 -/
+def WedgeProduct {i j : ℕ} : Ω^i(M) →ₗ[ℝ] Ω^j(M) →ₗ[ℝ] Ω^(i+j)(M) :=
+  -- 形式的楔积
+  sorry
+
+/-- 杯积性质 -/
+theorem cup_product_assoc' {i j k : ℕ}
+    (α : H^i_{dR}(M)) (β : H^j_{dR}(M)) (γ : H^k_{dR}(M)) :
+    CupProduct (CupProduct α β) γ = CupProduct α (CupProduct β γ) := by
+  -- 楔积的结合性诱导杯积的结合性
+  sorry
+
+theorem cup_product_comm' {i j : ℕ}
+    (α : H^i_{dR}(M)) (β : H^j_{dR}(M)) :
+    CupProduct α β = (-1 : ℝ)^(i * j) • CupProduct β α := by
+  -- 楔积的分次交换性
+  sorry
+
+/-- 上同调环（分次环） -/
+def DeRhamCohomologyRing : Type u :=
+  DirectSum ℕ (fun k => H^k_{dR}(M))
+
+instance : Ring (DeRhamCohomologyRing (M := M) (n := n)) := by
   -- 分次环结构
   sorry
 

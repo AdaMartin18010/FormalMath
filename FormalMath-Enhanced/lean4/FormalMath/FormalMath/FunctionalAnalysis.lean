@@ -74,23 +74,79 @@ Hilbert空间上的每个连续线性泛函都可由内积表示。
 theorem riesz_representation (f : H →L[ℂ] ℂ) :
     ∃! y : H, ∀ x, f x = ⟪y, x⟫_ℂ := by
   -- Riesz表示定理的证明：
-  -- 1. 若f=0，取y=0
-  -- 2. 若f≠0，ker(f)是真闭子空间
-  -- 3. ker(f)ᗮ是一维的
-  -- 4. 取ker(f)ᗮ中的单位向量z
-  -- 5. 令y = f(z)̄ · z
-  sorry
+  -- 
+  -- 步骤1：若f = 0，取y = 0，显然满足
+  by_cases h : ∀ x, f x = 0
+  · use 0
+    constructor
+    · -- 验证0满足条件
+      intro x
+      simp [h x]
+    · -- 验证唯一性
+      intro y hy
+      have : ⟪y, y⟫_ℂ = 0 := by
+        specialize hy y
+        simp [h y] at hy
+        exact hy.symm
+      simpa using this
+  -- 
+  -- 步骤2：若f ≠ 0，ker(f)是真闭子空间
+  · -- ker(f)是闭的（f连续）且不等于整个空间
+    have h_ker : ∃ x, f x ≠ 0 := by
+      push_neg at h
+      exact h
+    -- 
+    -- 步骤3：ker(f)ᗮ是一维的
+    -- ker(f)ᗮ非零，因为存在x使得f(x)≠0
+    -- 
+    -- 步骤4：取ker(f)ᗮ中的非零向量z
+    -- 对任意x ∈ H，可以分解为 x = x₁ + x₂，其中x₁ ∈ ker(f), x₂ ∈ ker(f)ᗮ
+    -- 
+    -- 步骤5：令y = f(z)̄ / ‖z‖² · z
+    -- 验证f(x) = ⟪y, x⟫_ℂ对所有x成立
+    -- 
+    -- 步骤6：唯一性由正定性保证
+    sorry
 
 /-- 正交投影定理 -/
 theorem orthogonal_projection (M : Subspace ℂ H) [CompleteSpace M] :
     ∀ x : H, ∃! y : M, ∀ z : M, ‖x - y‖ ≤ ‖x - z‖ := by
-  -- 正交投影存在唯一
+  -- 正交投影存在唯一的证明：
+  -- 
+  -- 步骤1：构造距离下确界
+  -- d = inf{‖x - z‖ | z ∈ M}
+  -- 
+  -- 步骤2：构造极小化序列
+  -- 取{z_n}使得‖x - z_n‖ → d
+  -- 
+  -- 步骤3：利用平行四边形法则证明{z_n}是Cauchy列
+  -- ‖z_m - z_n‖² = 2‖x - z_m‖² + 2‖x - z_n‖² - 4‖x - (z_m+z_n)/2‖²
+  --             ≤ 2‖x - z_m‖² + 2‖x - z_n‖² - 4d² → 0
+  -- 
+  -- 步骤4：由完备性，z_n → y ∈ M
+  -- 
+  -- 步骤5：验证‖x - y‖ = d（极小性）
+  -- 
+  -- 步骤6：验证正交性：x - y ⊥ M
+  -- 
+  -- 步骤7：唯一性由严格凸性保证
   sorry
 
 /-- 正交分解 -/
 theorem orthogonal_decomposition (M : Subspace ℂ H) [CompleteSpace M] :
     ∀ x : H, ∃! (y : M) (z : Mᗮ), x = y + z := by
-  -- Hilbert空间分解为闭子空间与其正交补的直和
+  -- Hilbert空间分解为闭子空间与其正交补的直和：
+  -- 
+  -- 步骤1：利用正交投影定理
+  -- 取y为x在M上的正交投影
+  -- 
+  -- 步骤2：令z = x - y
+  -- 
+  -- 步骤3：验证z ∈ Mᗮ
+  -- 由投影的极小性质，(x - y) ⊥ M
+  -- 
+  -- 步骤4：验证唯一性
+  -- 若x = y₁ + z₁ = y₂ + z₂，则y₁ - y₂ = z₂ - z₁ ∈ M ∩ Mᗮ = {0}
   sorry
 
 /-! 
@@ -123,11 +179,25 @@ Banach-Steinhaus定理：点态有界的算子族一致有界。
 theorem uniform_boundedness {ι : Type*} {T : ι → X →L[ℂ] Y}
     (h_pointwise : ∀ x, ∃ C, ∀ i, ‖T i x‖ ≤ C) :
     ∃ C, ∀ i, ‖T i‖ ≤ C := by
-  -- 一致有界原理的证明：
-  -- 1. 定义A_n = {x | ∀ i, ‖T_i x‖ ≤ n}
-  -- 2. 由假设，∪ A_n = X
-  -- 3. 由Baire纲定理，某个A_n有内点
-  -- 4. 由此得到一致界
+  -- 一致有界原理（Banach-Steinhaus定理）证明：
+  -- 
+  -- 步骤1：定义集合序列
+  -- A_n = {x | ∀ i, ‖T_i x‖ ≤ n}
+  -- 
+  -- 步骤2：由点态有界性，∪ A_n = X
+  intro x
+  obtain ⟨C, hC⟩ := h_pointwise x
+  -- 每个x属于某个A_n
+  -- 
+  -- 步骤3：由Baire纲定理，某个A_n有内点
+  -- A_n是闭集（T_i连续），且∪ A_n = X是完备度量空间
+  -- 因此某个A_n包含一个开球
+  -- 
+  -- 步骤4：由此得到一致界
+  -- 若B(x₀, r) ⊂ A_n，则对任意‖x‖ ≤ 1，
+  -- x₀ + rx ∈ B(x₀, r)，所以‖T_i(x₀ + rx)‖ ≤ n
+  -- 因此‖T_i x‖ ≤ (n + ‖T_i x₀‖)/r
+  -- 再利用点态有界性得到一致界
   sorry
 
 /-- 开映射定理
@@ -136,7 +206,20 @@ Banach空间之间的满射有界线性算子是开映射。
 -/ 
 theorem open_mapping (T : X →L[ℂ] Y) (h_surj : Surjective T) :
     IsOpenMap T := by
-  -- 开映射定理的证明
+  -- 开映射定理证明：
+  -- 
+  -- 步骤1：证明0是B_Y = {y | ‖y‖ < 1}的内点
+  -- 即存在r > 0使得B(0, r) ⊂ T(B_X)
+  -- 
+  -- 步骤2：利用Baire纲定理
+  -- Y = ∪_n n·T(B_X)的闭包
+  -- 某个n·T(B_X)的闭包有内点
+  -- 
+  -- 步骤3：由线性性，T(B_X)的闭包有内点
+  -- 
+  -- 步骤4：证明T(B_X)包含0的某个邻域
+  -- 
+  -- 步骤5：推广到任意开集
   sorry
 
 /-- 闭图像定理
@@ -147,7 +230,16 @@ theorem open_mapping (T : X →L[ℂ] Y) (h_surj : Surjective T) :
 theorem closed_graph (T : X → Y) (h_linear : IsLinearMap ℂ T)
     (h_closed : IsClosed {p : X × Y | p.2 = T p.1}) :
     Continuous T := by
-  -- 闭图像定理的证明
+  -- 闭图像定理证明：
+  -- 
+  -- 步骤1：在图像G(T) = {(x, Tx)}上定义投影π(x, Tx) = x
+  -- 
+  -- 步骤2：π是连续双射
+  -- 
+  -- 步骤3：由开映射定理，π⁻¹也连续
+  -- 
+  -- 步骤4：因此T = π₂ ∘ π⁻¹连续
+  -- 其中π₂(x, Tx) = Tx
   sorry
 
 /-! 
@@ -167,7 +259,15 @@ class IsCompactOperator (T : X →L[ℂ] Y) : Prop where
 /-- 有限秩算子是紧的 -/
 theorem finite_rank_compact {T : X →L[ℂ] Y} (h_finite : FiniteDimensional ℂ (LinearMap.range T)) :
     IsCompactOperator T := by
-  -- 有限维空间中，有界闭集是紧的
+  -- 有限秩算子是紧算子的证明：
+  -- 
+  -- 步骤1：有限维空间中，有界闭集是紧的（Heine-Borel）
+  -- 
+  -- 步骤2：T(S) ⊂ range(T)，range(T)是有限维的
+  -- 
+  -- 步骤3：若S有界，则T(S)在range(T)中有界
+  -- 
+  -- 步骤4：closure(T(S))是有界闭集，因此在有限维空间中紧
   sorry
 
 /-- Fredholm算子 -/
@@ -188,14 +288,29 @@ def FredholmIndex (T : FredholmOperator X Y) : ℤ :=
 theorem fredholm_compact_perturbation (T : FredholmOperator X Y) 
     (K : X →L[ℂ] Y) [IsCompactOperator K] :
     FredholmOperator X Y := by
-  -- Atkinson定理
+  -- Atkinson定理：
+  -- T是Fredholm当且仅当存在S使得ST - I和TS - I是紧算子
+  -- 
+  -- 紧扰动不改变Fredholm性：
+  -- 若T是Fredholm，则存在S使得ST - I和TS - I紧
+  -- 则S(T+K) - I = (ST - I) + SK 也是紧的（紧算子之和）
+  -- 同理(T+K)S - I紧
+  -- 因此T+K是Fredholm
   sorry
 
 /-- Fredholm指标的稳定性 -/
 theorem fredholm_index_stability (T : FredholmOperator X Y)
     (K : X →L[ℂ] Y) [IsCompactOperator K] :
     FredholmIndex T = FredholmIndex {T with toFun := T.toFun + K} := by
-  -- 紧扰动不改变Fredholm指标
+  -- 紧扰动不改变Fredholm指标的证明：
+  -- 
+  -- 步骤1：构造同伦T + tK, t ∈ [0,1]
+  -- 
+  -- 步骤2：证明对所有t，T + tK是Fredholm
+  -- 
+  -- 步骤3：Fredholm指标是局部常数
+  -- 
+  -- 步骤4：因此在连通集[0,1]上指标不变
   sorry
 
 /-! 
@@ -227,13 +342,34 @@ def Spectrum (T : X →L[ℂ] X) : Set ℂ :=
 /-- 谱是非空紧集 -/
 theorem spectrum_nonempty_compact : 
     (Spectrum T).Nonempty ∧ IsCompact (Spectrum T) := by
-  -- 谱理论的基本结果
+  -- 谱理论的基本结果：
+  -- 
+  -- 谱是紧集：
+  -- 步骤1：证明预解集是开集
+  -- 若(T - λI)⁻¹存在，则对充分接近λ的μ，(T - μI)⁻¹也存在
+  -- 步骤2：证明谱是有界的（‖λ‖ ≤ ‖T‖时λ在预解集中）
+  -- 
+  -- 谱非空：
+  -- 利用Liouville定理或Gelfand-Mazur定理
+  -- 若谱为空，则预解函数是整函数且在∞处趋于0
+  -- 由Liouville定理，预解函数恒为0，矛盾
   sorry
 
 /-- 谱半径公式 -/
 theorem spectral_radius_formula :
     ⨆ λ ∈ Spectrum T, ‖λ‖ = limₙ ‖T^n‖^(1/n : ℝ) := by
-  -- Gelfand谱半径公式
+  -- Gelfand谱半径公式证明：
+  -- 
+  -- 步骤1：定义谱半径r(T) = sup{|λ| : λ ∈ σ(T)}
+  -- 
+  -- 步骤2：证明r(T) ≤ liminf ‖T^n‖^{1/n}
+  -- 利用：若|λ| > limsup ‖T^n‖^{1/n}，则λ ∈ ρ(T)
+  -- 通过Neumann级数展开
+  -- 
+  -- 步骤3：证明r(T) ≥ limsup ‖T^n‖^{1/n}
+  -- 利用Cauchy估计或谱映射定理
+  -- 
+  -- 结论：r(T) = lim ‖T^n‖^{1/n}
   sorry
 
 /-! 
@@ -256,7 +392,16 @@ class IsSelfAdjoint (T : H →L[ℂ] H) : Prop where
 /-- 自伴算子的谱是实的 -/
 theorem self_adjoint_spectrum_real {T : H →L[ℂ] H} [IsSelfAdjoint T] :
     ∀ λ ∈ Spectrum T, λ.im = 0 := by
-  -- 自伴算子谱的实性
+  -- 自伴算子谱的实性证明：
+  -- 
+  -- 步骤1：证明自伴算子的所有特征值是实的
+  -- 若Tx = λx，则λ⟪x,x⟫ = ⟪Tx,x⟫ = ⟪x,Tx⟫ = λ̄⟪x,x⟫
+  -- 因此λ = λ̄，即λ是实的
+  -- 
+  -- 步骤2：推广到整个谱
+  -- 利用近似点谱的概念
+  -- 对任意λ ∈ σ(T)，存在序列{x_n}使得‖(T-λI)x_n‖ → 0
+  -- 利用自伴性证明λ是实的
   sorry
 
 /-- 紧自伴算子的谱分解 -/
@@ -265,7 +410,21 @@ theorem compact_self_adjoint_spectral (T : H →L[ℂ] H)
     ∃ (λ : ℕ → ℝ) (e : ℕ → H),
       OrthonormalBasis ℂ (range e) ∧
       ∀ x, T x = ∑' n, λ n * ⟪e n, x⟫_ℂ • e n := by
-  -- Hilbert-Schmidt谱定理
+  -- Hilbert-Schmidt谱定理（紧自伴算子的谱分解）：
+  -- 
+  -- 步骤1：证明非零谱由特征值组成
+  -- 紧算子的非零谱都是特征值，且只有可数个
+  -- 
+  -- 步骤2：特征值趋于0（紧算子性质）
+  -- 
+  -- 步骤3：对每个特征值λ_n，取特征空间的标准正交基
+  -- 由于自伴性，不同特征值的特征向量正交
+  -- 
+  -- 步骤4：所有特征向量构成H的标准正交基（或ker(T)的补空间）
+  -- 
+  -- 步骤5：谱分解公式
+  -- Tx = Σ_n λ_n P_n x = Σ_n λ_n ⟪e_n, x⟫ e_n
+  -- 其中P_n是正交投影到特征空间
   sorry
 
 /-! 
@@ -300,7 +459,22 @@ theorem stone_theorem {U : ℝ → (H →L[ℂ] H)}
     (h_continuous : Continuous U) :
     ∃ (A : UnboundedOperator H), IsSelfAdjointUnbounded A ∧
       ∀ t, U t = exp (t • A) := by
-  -- Stone定理：量子力学的基础
+  -- Stone定理证明：
+  -- 
+  -- 步骤1：定义生成元
+  -- Aψ = lim_{t→0} (U(t)ψ - ψ)/t
+  -- 
+  -- 步骤2：证明A是稠密定义的
+  -- 利用酉群的连续性
+  -- 
+  -- 步骤3：证明A是对称的
+  -- 利用U(t)是酉算子
+  -- 
+  -- 步骤4：证明A是自伴的
+  -- 利用酉群性质证明A没有真对称扩张
+  -- 
+  -- 步骤5：验证U(t) = exp(itA)
+  -- 这是量子力学的基本定理
   sorry
 
 /-! 
@@ -333,6 +507,8 @@ def DiracDelta (x₀ : Fin n → ℝ) : Distribution Ω where
   toFun := fun φ => φ x₀
   cont := by
     -- 在测试函数拓扑上连续
+    -- 需要证明：若φ_n → φ在测试函数拓扑中，则φ_n(x₀) → φ(x₀)
+    -- 这是逐点收敛，由一致收敛性保证
     sorry
   map_add' := by simp
   map_smul' := by simp
@@ -340,9 +516,17 @@ def DiracDelta (x₀ : Fin n → ℝ) : Distribution Ω where
 /-- 分布的导数 -/
 def DistributionDeriv (T : Distribution Ω) (i : Fin n) : Distribution Ω where
   toFun := fun φ => -T (fun x => partialDeriv i φ x)
-  cont := sorry
-  map_add' := sorry
-  map_smul' := sorry
+  cont := by
+    -- 连续性证明：
+    -- 若φ_n → φ，则∂φ_n/∂x_i → ∂φ/∂x_i
+    -- 这是测试函数拓扑的定义
+    sorry
+  map_add' := by 
+    intro φ ψ
+    simp [map_add]
+  map_smul' := by
+    intro c φ
+    simp [map_smul, mul_comm]
 
 /-- 分布的局部结构定理
 
@@ -352,7 +536,19 @@ def DistributionDeriv (T : Distribution Ω) (i : Fin n) : Distribution Ω where
 theorem distribution_local_structure (T : Distribution Ω) (x₀ : Fin n → ℝ) :
     ∃ U, IsOpen U ∧ x₀ ∈ U ∧ ∃ f : ContinuousMap U ℂ, ∃ α,
       ∀ φ ∈ TestFunction U, T φ = ∫ x, f x * partialDeriv α φ x := by
-  -- 分布的局部结构
+  -- 分布的局部结构定理证明：
+  -- 
+  -- 步骤1：利用分布的定义
+  -- T在测试函数空间上连续
+  -- 
+  -- 步骤2：存在整数k使得T可以被k阶导数控制
+  -- |T(φ)| ≤ C Σ_{|α|≤k} sup |∂^α φ|
+  -- 
+  -- 步骤3：利用Hahn-Banach定理或构造性方法
+  -- 构造连续函数f使得
+  -- T(φ) = ∫ f ∂^α φ
+  -- 
+  -- 步骤4：这是分布作为"广义函数"的数学表述
   sorry
 
 /-! 
@@ -384,7 +580,10 @@ def GelfandSpectrum : Set (A → ℂ) :=
 /-- Gelfand表示 -/
 def GelfandTransform (a : A) : C(GelfandSpectrum, ℂ) where
   toFun := fun χ => χ a
-  continuous_toFun := sorry
+  continuous_toFun := by
+    -- 证明Gelfand变换的连续性
+    -- 利用Gelfand谱的弱*拓扑
+    sorry
 
 /-- Gelfand-Naimark定理（交换情形）
 
@@ -395,7 +594,24 @@ theorem gelfand_naimark_commutative [CStarRing A] [CommRing A] :
     ∃ (X : Type u) [TopologicalSpace X] [CompactSpace X] [T2Space X],
       ∃ φ : A ≃⋆ₐ[ℂ] C(X, ℂ), 
         ∀ a, ‖φ a‖ = ‖a‖ := by
-  -- Gelfand-Naimark定理
+  -- Gelfand-Naimark定理证明：
+  -- 
+  -- 步骤1：取X为Gelfand谱
+  -- X = {χ : A → ℂ | χ是非零代数同态}
+  -- 
+  -- 步骤2：在X上定义Gelfand拓扑（弱*拓扑）
+  -- 
+  -- 步骤3：证明X是紧Hausdorff空间
+  -- 
+  -- 步骤4：定义Gelfand变换
+  -- ĝ(a)(χ) = χ(a)
+  -- 
+  -- 步骤5：证明ĝ是等距的C*-代数同态
+  -- - 代数同态：ĝ(ab) = ĝ(a)ĝ(b)
+  -- - 保对合：ĝ(a*) = ĝ(a)̄
+  -- - 等距：‖ĝ(a)‖ = ‖a‖（利用C*恒等式）
+  -- 
+  -- 步骤6：证明ĝ是满射（Stone-Weierstrass定理）
   sorry
 
 /-! 
