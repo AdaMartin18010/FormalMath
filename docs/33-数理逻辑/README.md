@@ -1,6 +1,8 @@
 ---
+title: "33-数理逻辑 (Mathematical Logic)"
 msc_primary: "03-XX"
 msc_secondary: ["03Axx", "03Bxx", "03Cxx", "03Dxx", "03Exx", "03Fxx", "03Gxx"]
+processed_at: '2026-04-05'
 ---
 
 # 33-数理逻辑 (Mathematical Logic)

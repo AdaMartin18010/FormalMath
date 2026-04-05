@@ -1,9 +1,9 @@
 ---
+title: "Erlangen纲领核心思想：几何学的群论统一"
 msc_primary: "01A55"
-msc_secondary: "51-03, 53-03"
-keywords: ["Erlangen纲领", "变换群", "几何不变量", "几何分类", "Felix Klein"]
+msc_secondary: ["51-03, 53-03"]
+processed_at: '2026-04-05'
 ---
-
 # Erlangen纲领核心思想：几何学的群论统一
 
 > **文档状态**: ✅ 教学级完成

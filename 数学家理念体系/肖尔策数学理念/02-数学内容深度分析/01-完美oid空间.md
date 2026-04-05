@@ -1,8 +1,9 @@
 ---
+title: "Peter Scholze的完美oid空间：p进几何的革命"
 msc_primary: "14G22"
 msc_secondary: ["11S15", "14G20", "13F35"]
+processed_at: '2026-04-05'
 ---
-
 # Peter Scholze的完美oid空间：p进几何的革命
 
 > **文档状态**: ✅ 教学级深度文档

@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: Riemann-Roch定理：格洛腾迪克的推广
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Riemann-Roch定理：格洛腾迪克的推广

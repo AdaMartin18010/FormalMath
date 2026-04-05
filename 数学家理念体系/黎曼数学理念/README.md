@@ -1,8 +1,9 @@
 ---
+title: "黎曼数学理念体系"
 msc_primary: "01A55"
-msc_secondary: ["30-03","53-03","11Mxx"]
+msc_secondary: ["30-03", "53-03", "11Mxx"]
+processed_at: '2026-04-05'
 ---
-
 # 黎曼数学理念体系
 
 ## 项目简介

@@ -1,8 +1,9 @@
 ---
+title: "交截理论深度版 / Intersection Theory - Deep Dive"
 msc_primary: "14Cxx"
-msc_secondary: ['14Nxx', '14Mxx', '19Exx']
+msc_secondary: ["14Nxx", "14Mxx", "19Exx"]
+processed_at: '2026-04-05'
 ---
-
 # 交截理论深度版 / Intersection Theory - Deep Dive
 
 **主题编号**: B.11.D03

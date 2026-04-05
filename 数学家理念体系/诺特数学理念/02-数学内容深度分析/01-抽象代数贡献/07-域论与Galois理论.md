@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 域论与Galois理论：诺特的代数化视角
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 域论与Galois理论：诺特的代数化视角

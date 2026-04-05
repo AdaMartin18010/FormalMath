@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A99"
+---
+title: Deligne-Mumford紧化：模空间的完整理论
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Deligne-Mumford紧化：模空间的完整理论

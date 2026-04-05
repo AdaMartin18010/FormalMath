@@ -1,8 +1,9 @@
 ---
+title: "模空间深度版 / Moduli Spaces - Deep Dive"
 msc_primary: "14Dxx"
-msc_secondary: ['14Hxx', '14Jxx', '32Gxx']
+msc_secondary: ["14Hxx", "14Jxx", "32Gxx"]
+processed_at: '2026-04-05'
 ---
-
 # 模空间深度版 / Moduli Spaces - Deep Dive
 
 **主题编号**: B.11.D04

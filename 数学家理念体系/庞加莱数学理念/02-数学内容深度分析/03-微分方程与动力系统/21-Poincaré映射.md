@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: Poincaré映射：周期轨道的横截截面
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Poincaré映射：周期轨道的横截截面

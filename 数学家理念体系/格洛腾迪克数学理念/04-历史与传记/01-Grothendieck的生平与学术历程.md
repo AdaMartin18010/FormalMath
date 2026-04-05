@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: Grothendieck的生平与学术历程：传奇数学家的一生
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Grothendieck的生平与学术历程：传奇数学家的一生

@@ -1,6 +1,8 @@
 ---
+title: "Lean4形式化实现-代数几何 / Lean 4 Formalization - Algebraic Geometry"
 msc_primary: "14Hxx"
-msc_secondary: ['14A15', '18F20', '14-XX']
+msc_secondary: ["14A15", "18F20", "14-XX"]
+processed_at: '2026-04-05'
 ---
 msc_primary: "14Hxx"
 msc_secondary: ['14A15', '18F20', '14-XX']

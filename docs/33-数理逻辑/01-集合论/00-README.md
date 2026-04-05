@@ -1,6 +1,8 @@
 ---
+title: "集合论 (Set Theory)"
 msc_primary: "03E30"
 msc_secondary: ["03E25", "03E35", "03E55", "03E60"]
+processed_at: '2026-04-05'
 ---
 
 # 集合论 (Set Theory)

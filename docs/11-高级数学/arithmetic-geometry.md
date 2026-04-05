@@ -1,8 +1,9 @@
 ---
+title: "算术几何深度版 / Arithmetic Geometry (Advanced)"
 msc_primary: "14Gxx"
-msc_secondary: ['11Gxx', '14Fxx', '11R39']
+msc_secondary: ["11Gxx", "14Fxx", "11R39"]
+processed_at: '2026-04-05'
 ---
-
 # 算术几何深度版 / Arithmetic Geometry (Advanced)
 
 **主题编号**: B.11.ADV.02  

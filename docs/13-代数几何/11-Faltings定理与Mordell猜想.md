@@ -1,8 +1,9 @@
 ---
+title: "11 Faltings定理与Mordell猜想 / Faltings' Theorem and the Mordell Conjecture"
 msc_primary: "11G30"
-msc_secondary: ['14G05', '14H25', '11D41']
+msc_secondary: ["14G05", "14H25", "11D41"]
+processed_at: '2026-04-05'
 ---
-
 # 11 Faltings定理与Mordell猜想 / Faltings' Theorem and the Mordell Conjecture
 
 **主题编号**: B.13.11  

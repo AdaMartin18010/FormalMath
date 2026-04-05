@@ -1,8 +1,9 @@
 ---
+title: "Topos理论：改变逻辑的几何"
 msc_primary: "18B25"
-msc_secondary: ["03G30","18F10"]
+msc_secondary: ["03G30", "18F10"]
+processed_at: '2026-04-05'
 ---
-
 # Topos理论：改变逻辑的几何
 
 

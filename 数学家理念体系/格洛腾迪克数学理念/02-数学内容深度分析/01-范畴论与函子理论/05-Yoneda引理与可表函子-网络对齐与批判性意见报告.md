@@ -1,8 +1,9 @@
 ---
+title: "Yoneda引理与可表函子：网络对齐与批判性意见报告"
 msc_primary: "18-XX"
-msc_secondary: ["18Axx","18Fxx"]
+msc_secondary: ["18Axx", "18Fxx"]
+processed_at: '2026-04-05'
 ---
-
 # Yoneda引理与可表函子：网络对齐与批判性意见报告
 
 **关联文档**：[05-Yoneda引理与可表函子](./05-Yoneda引理与可表函子.md) · 同名思维表征

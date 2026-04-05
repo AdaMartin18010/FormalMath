@@ -1,9 +1,9 @@
 ---
+title: "亚瑟·凯莱（Arthur Cayley）数学理念体系"
 msc_primary: "01A70"
 msc_secondary: ["15-03", "20-03", "14-03", "01A55"]
-concept_keywords: ["矩阵代数", "群论", "不变量理论", "代数几何", "凯莱-哈密顿定理", "凯莱表"]
+processed_at: '2026-04-05'
 ---
-
 # 亚瑟·凯莱（Arthur Cayley）数学理念体系
 
 ## 概述

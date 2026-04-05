@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: Cech上同调与层上同调：计算的两种方法
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Cech上同调与层上同调：计算的两种方法

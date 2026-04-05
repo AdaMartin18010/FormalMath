@@ -1,8 +1,9 @@
 ---
+title: "同伦类型论深度版 / Homotopy Type Theory - In Depth"
 msc_primary: "55Pxx"
-msc_secondary: ['03Bxx', '18G55', '68Vxx']
+msc_secondary: ["03Bxx", "18G55", "68Vxx"]
+processed_at: '2026-04-05'
 ---
-
 # 同伦类型论深度版 / Homotopy Type Theory - In Depth
 
 ## 目录
@@ -82,7 +83,11 @@ msc_secondary: ['03Bxx', '18G55', '68Vxx']
 
 这形成了自然的∞-群胚结构：
 
-$$A ightsquigarrow 	ext{Id}_A ightsquigarrow 	ext{Id}_{	ext{Id}_A} ightsquigarrow 	ext{Id}_{	ext{Id}_{	ext{Id}_A}} ightsquigarrow \
+$$A 
+ightsquigarrow 	ext{Id}_A 
+ightsquigarrow 	ext{Id}_{	ext{Id}_A} 
+ightsquigarrow 	ext{Id}_{	ext{Id}_{	ext{Id}_A}} 
+ightsquigarrow \
 cdots$$
 
 **圆圈的构造**:

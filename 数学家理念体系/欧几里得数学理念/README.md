@@ -1,8 +1,9 @@
 ---
+title: "欧几里得数学理念体系"
 msc_primary: "51-XX"
-msc_secondary: ["51Mxx","01A20"]
+msc_secondary: ["51Mxx", "01A20"]
+processed_at: '2026-04-05'
 ---
-
 # 欧几里得数学理念体系
 
 **项目名称**：欧几里得数学理念体系

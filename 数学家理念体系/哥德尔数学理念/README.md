@@ -1,8 +1,9 @@
 ---
+title: "哥德尔数学理念体系"
 msc_primary: "01A60"
-msc_secondary: ["03Fxx","03-03"]
+msc_secondary: ["03Fxx", "03-03"]
+processed_at: '2026-04-05'
 ---
-
 # 哥德尔数学理念体系
 
 **项目名称**：哥德尔数学理念体系

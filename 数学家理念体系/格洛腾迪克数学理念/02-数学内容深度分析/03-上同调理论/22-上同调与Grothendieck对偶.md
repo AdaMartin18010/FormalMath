@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 上同调与Grothendieck对偶：对偶理论的高级形式
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 上同调与Grothendieck对偶：对偶理论的高级形式

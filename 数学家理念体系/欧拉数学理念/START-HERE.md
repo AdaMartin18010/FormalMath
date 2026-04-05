@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A50"
+---
+title: 从这里开始：10分钟了解欧拉
+msc_primary: 01A45
+msc_secondary:
+- 01A50
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 从这里开始：10分钟了解欧拉

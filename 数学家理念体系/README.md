@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A99"
+---
+title: 数学家理念体系建设项目
+msc_primary: 01-XX
+msc_secondary:
+- 01Axx
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 数学家理念体系建设项目

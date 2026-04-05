@@ -1,8 +1,9 @@
 ---
+title: "层上同调深度版 / Sheaf Cohomology - Deep Dive"
 msc_primary: "14Fxx"
-msc_secondary: ['18Gxx', '32C35', '55N30']
+msc_secondary: ["18Gxx", "32C35", "55N30"]
+processed_at: '2026-04-05'
 ---
-
 # 层上同调深度版 / Sheaf Cohomology - Deep Dive
 
 **主题编号**: B.11.D02

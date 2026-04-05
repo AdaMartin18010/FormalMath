@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 分类Topos与几何点：Topos的几何结构
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 分类Topos与几何点：Topos的几何结构

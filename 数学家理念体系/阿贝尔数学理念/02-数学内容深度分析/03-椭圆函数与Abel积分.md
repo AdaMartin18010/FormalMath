@@ -1,8 +1,9 @@
 ---
+title: "Abel的椭圆函数：复分析的先驱"
 msc_primary: "33E05"
 msc_secondary: ["14H52", "01A55", "30F10"]
+processed_at: '2026-04-05'
 ---
-
 # Abel的椭圆函数：复分析的先驱
 
 > **文档状态**: ✅ 教学级深度文档

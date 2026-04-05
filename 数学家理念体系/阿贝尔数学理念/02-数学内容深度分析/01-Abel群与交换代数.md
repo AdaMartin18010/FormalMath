@@ -1,8 +1,9 @@
 ---
+title: "Abel与Abel群：交换代数的起源"
 msc_primary: "20K01"
 msc_secondary: ["01A55", "20-03", "13C99"]
+processed_at: '2026-04-05'
 ---
-
 # Abel与Abel群：交换代数的起源
 
 > **文档状态**: ✅ 教学级深度文档

@@ -1,8 +1,9 @@
 ---
+title: "36. Langlands纲领最新进展 (2024-2025)"
 msc_primary: "11F70"
-msc_secondary: ['11R39', '14D24', '22E50', '11S37']
+msc_secondary: ["11R39", "14D24", "22E50", "11S37"]
+processed_at: '2026-04-05'
 ---
-
 # 36. Langlands纲领最新进展 (2024-2025)
 
 **文档编号**: A.11.36

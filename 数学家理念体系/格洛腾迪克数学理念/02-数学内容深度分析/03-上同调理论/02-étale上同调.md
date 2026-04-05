@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: étale上同调：拓扑方法进入代数几何
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # étale上同调：拓扑方法进入代数几何

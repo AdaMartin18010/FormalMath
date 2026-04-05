@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 随机分析与随机PDE：Hilbert空间的概率扩展
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 随机分析与随机PDE：Hilbert空间的概率扩展

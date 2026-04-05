@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 同伦类型论（HoTT）：庞加莱直觉的现代实现
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 同伦类型论（HoTT）：庞加莱直觉的现代实现

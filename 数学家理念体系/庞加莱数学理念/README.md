@@ -1,8 +1,9 @@
 ---
+title: "庞加莱数学理念体系"
 msc_primary: "01A55"
-msc_secondary: ["55-03","37-03"]
+msc_secondary: ["55-03", "37-03"]
+processed_at: '2026-04-05'
 ---
-
 # 庞加莱数学理念体系
 
 ## 项目概述

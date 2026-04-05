@@ -1,6 +1,8 @@
 ---
+title: "代数几何：Serre 对偶 - 深度扩展"
 msc_primary: "20Cxx"
-msc_secondary: ['13Dxx', '20-XX', '22E47']
+msc_secondary: ["13Dxx", "20-XX", "22E47"]
+processed_at: '2026-04-05'
 ---
 msc_primary: "20Cxx"
 msc_secondary: ['13Dxx', '20-XX', '22E47']

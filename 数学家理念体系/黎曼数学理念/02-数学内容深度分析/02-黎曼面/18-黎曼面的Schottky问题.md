@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A99"
+---
+title: 黎曼面的Schottky问题：周期矩阵的分类
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 黎曼面的Schottky问题：周期矩阵的分类

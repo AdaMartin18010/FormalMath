@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A99"
+---
+title: Einstein流形与特殊几何：黎曼几何的分类
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Einstein流形与特殊几何：黎曼几何的分类

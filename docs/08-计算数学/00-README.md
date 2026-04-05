@@ -1,6 +1,8 @@
 ---
+title: "计算数学"
 msc_primary: "65-XX"
 msc_secondary: ["68-XX", "90-XX"]
+processed_at: '2026-04-05'
 ---
 
 # 计算数学 / Computational Mathematics

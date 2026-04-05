@@ -1,8 +1,9 @@
 ---
+title: "自守形式深度版 / Automorphic Forms (Advanced)"
 msc_primary: "11Fxx"
-msc_secondary: ['22E50', '11R39', '14D24']
+msc_secondary: ["22E50", "11R39", "14D24"]
+processed_at: '2026-04-05'
 ---
-
 # 自守形式深度版 / Automorphic Forms (Advanced)
 
 **主题编号**: B.11.ADV.03  

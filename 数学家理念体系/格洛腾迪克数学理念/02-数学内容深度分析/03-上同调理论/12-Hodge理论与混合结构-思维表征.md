@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: Hodge理论与混合结构：思维表征与可复用模板
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Hodge理论与混合结构：思维表征与可复用模板

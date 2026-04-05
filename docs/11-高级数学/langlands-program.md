@@ -1,8 +1,9 @@
 ---
+title: "Langlands纲领深度版 / Langlands Program (Advanced)"
 msc_primary: "11R39"
-msc_secondary: ['14D24', '22E50', '11F70']
+msc_secondary: ["14D24", "22E50", "11F70"]
+processed_at: '2026-04-05'
 ---
-
 # Langlands纲领深度版 / Langlands Program (Advanced)
 
 **主题编号**: B.11.ADV.01  

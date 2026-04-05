@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A45"
+---
+title: 费马数学理念 - 快速入门指南
+msc_primary: 01A40
+msc_secondary:
+- 01A45
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 费马数学理念 - 快速入门指南

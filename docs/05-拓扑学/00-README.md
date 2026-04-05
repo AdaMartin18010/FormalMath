@@ -1,8 +1,8 @@
 ---
-msc_primary: 54-XX
-msc_secondary:
-- 55-XX
-- 57-XX
+title: "拓扑学"
+msc_primary: "54-XX"
+msc_secondary: ["55-XX", "57-XX"]
+processed_at: '2026-04-05'
 ---
 # 拓扑学
 

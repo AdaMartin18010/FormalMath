@@ -1,8 +1,9 @@
 ---
+title: "概形理论深度版 / Scheme Theory - Deep Dive"
 msc_primary: "14Axx"
-msc_secondary: ['14Bxx', '14Cxx', '14Fxx']
+msc_secondary: ["14Bxx", "14Cxx", "14Fxx"]
+processed_at: '2026-04-05'
 ---
-
 # 概形理论深度版 / Scheme Theory - Deep Dive
 
 **主题编号**: B.11.D01

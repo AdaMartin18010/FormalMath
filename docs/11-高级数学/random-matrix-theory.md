@@ -1,8 +1,9 @@
 ---
+title: "随机矩阵理论深度版 / Random Matrix Theory - In Depth"
 msc_primary: "60B20"
-msc_secondary: ['15B52', '82B44', '15A18']
+msc_secondary: ["15B52", "82B44", "15A18"]
+processed_at: '2026-04-05'
 ---
-
 # 随机矩阵理论深度版 / Random Matrix Theory - In Depth
 
 ## 目录

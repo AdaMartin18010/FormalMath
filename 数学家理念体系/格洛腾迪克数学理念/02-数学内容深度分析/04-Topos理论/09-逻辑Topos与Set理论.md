@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 逻辑Topos与Set理论：集合论基础
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 逻辑Topos与Set理论：集合论基础

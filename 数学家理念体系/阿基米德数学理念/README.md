@@ -1,8 +1,9 @@
 ---
+title: "阿基米德数学理念体系"
 msc_primary: "01A20"
-msc_secondary: ["51Mxx","53Axx"]
+msc_secondary: ["51Mxx", "53Axx"]
+processed_at: '2026-04-05'
 ---
-
 # 阿基米德数学理念体系
 
 **项目名称**：阿基米德数学理念体系

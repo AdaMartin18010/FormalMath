@@ -1,10 +1,9 @@
 ---
+title: "皮埃尔-西蒙·拉普拉斯 (Pierre-Simon Laplace, 1749-1827)"
 msc_primary: "01A50"
 msc_secondary: ["60-03", "70-03", "34-03", "44-03"]
-status: research-level
-completeness: 95%
+processed_at: '2026-04-05'
 ---
-
 # 皮埃尔-西蒙·拉普拉斯 (Pierre-Simon Laplace, 1749-1827)
 
 ## 理念体系研究级文档

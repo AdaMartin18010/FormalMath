@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A99"
+---
+title: 几何分析与PDE：流形的分析方法
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 几何分析与PDE：流形的分析方法

@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A65"
+---
+title: Motive的构造
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Motive的构造

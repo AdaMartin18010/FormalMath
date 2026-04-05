@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: Kleinian群：高维自守函数
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Kleinian群：高维自守函数

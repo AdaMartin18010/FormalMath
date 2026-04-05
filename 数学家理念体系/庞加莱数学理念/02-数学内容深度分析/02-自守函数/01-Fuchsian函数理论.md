@@ -1,15 +1,9 @@
 ---
+title: "Fuchsian函数理论：庞加莱与克莱因的数学竞赛"
 msc_primary: "30F35"
-msc_secondary: "32N10"
-author: "Henri Poincaré (1854-1912)"
-references:
-  - "Poincaré, H. Mémoire sur les fonctions fuchsiennes. Acta Mathematica, 1882"
-  - "Poincaré, H. Théorie des groupes fuchsiens. Acta Mathematica, 1882"
-  - "Stillwell, J. (trans.) Papers on Fuchsian Functions. Springer, 1985"
-  - "Lehner, J. Discontinuous Groups and Automorphic Functions. AMS, 1964"
-level: "教学级/研究级"
+msc_secondary: ["32N10"]
+processed_at: '2026-04-05'
 ---
-
 # Fuchsian函数理论：庞加莱与克莱因的数学竞赛
 
 **数学分类**: 复分析/自守函数 (MSC: 30F35, 32N10)

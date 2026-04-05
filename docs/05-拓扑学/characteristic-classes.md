@@ -1,8 +1,8 @@
 ---
-msc_primary: 57R20
-msc_secondary:
-- 55R25
-- 55R40
+title: "示性类入门"
+msc_primary: "57R20"
+msc_secondary: ["55R25", "55R40"]
+processed_at: '2026-04-05'
 ---
 # 示性类入门 / Introduction to Characteristic Classes
 

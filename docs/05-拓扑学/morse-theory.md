@@ -1,8 +1,8 @@
 ---
-msc_primary: 57R70
-msc_secondary:
-- 57-XX
-- 58E05
+title: "莫尔斯理论"
+msc_primary: "57R70"
+msc_secondary: ["57-XX", "58E05"]
+processed_at: '2026-04-05'
 ---
 # 莫尔斯理论 / Morse Theory
 

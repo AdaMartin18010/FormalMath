@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: Galois表示与自守形式的对应：Langlands纲领的核心
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Galois表示与自守形式的对应：Langlands纲领的核心

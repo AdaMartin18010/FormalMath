@@ -1,9 +1,9 @@
 ---
+title: "伯恩哈德·黎曼（Bernhard Riemann）数学理念体系"
 msc_primary: "01A55"
 msc_secondary: ["30-03", "53-03", "11Mxx", "14-03"]
-concept_keywords: ["黎曼几何", "黎曼曲面", "黎曼假设", "内蕴几何", "复分析", "哥廷根学派"]
+processed_at: '2026-04-05'
 ---
-
 # 伯恩哈德·黎曼（Bernhard Riemann）数学理念体系
 
 ## 概述

@@ -1,8 +1,9 @@
 ---
+title: "Abel范畴与同调代数：网络对齐与批判性意见报告"
 msc_primary: "18Gxx"
-msc_secondary: ["13Dxx","16Exx"]
+msc_secondary: ["13Dxx", "16Exx"]
+processed_at: '2026-04-05'
 ---
-
 # Abel范畴与同调代数：网络对齐与批判性意见报告
 
 **关联文档**：[06-Abel范畴与同调代数](./06-Abel范畴与同调代数.md) · 同名思维表征

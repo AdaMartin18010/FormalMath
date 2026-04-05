@@ -24,6 +24,8 @@ import Mathlib.Tactic
 
 namespace CompletenessTheorem
 
+noncomputable section
+
 open Classical
 
 /-! ## 一阶逻辑的基础定义 -/
@@ -68,12 +70,11 @@ noncomputable def evalTerm {L : Language} {V : Type} (M : Structure L) (a : Assi
   | Term.app f args => M.funInterp f (fun i => evalTerm M a (args i))
 
 /-- 更新赋值 -/
-def updateAssignment {L : Language} {V : Type} {M : Structure L} (a : Assignment L V M) 
+noncomputable def updateAssignment {L : Language} {V : Type} {M : Structure L} (a : Assignment L V M) 
     (x : V) (m : M.Domain) : Assignment L V M :=
   fun v => if v = x then m else a v
 
 /-- 满足关系 M ⊨ φ[a]：在赋值a下，公式φ在结构M中为真 -/
-@[simp]
 noncomputable def Satisfies {L : Language} {V : Type} (M : Structure L) (a : Assignment L V M) :
     Formula L V → Prop
   | Formula.eq t₁ t₂ => evalTerm M a t₁ = evalTerm M a t₂
@@ -95,7 +96,6 @@ noncomputable def substitute {L : Language} {V : Type} (φ : Formula L V) (x : V
 /-! ## 语法推导系统（希尔伯特式公理系统）-/ 
 
 /-- 语法可证 ⊢：公理、假言推理(MP) -/
-noncomputable
 inductive Provable {L : Language} {V : Type} (T : Set (Formula L V)) : Formula L V → Prop
   /-- 公理：来自理论T -/
   | ax {φ} (h : φ ∈ T) : Provable T φ
@@ -177,9 +177,7 @@ theorem soundness {L : Language} {V : Type} {T : Set (Formula L V)} {φ : Formul
   | ax3 => 
     -- 公理3：(¬φ→¬ψ)→(ψ→φ)
     simp [Satisfies]
-    intro h₁ h₂
-    by_contra h₃
-    exact h₁ (fun _ => h₃) h₂
+    aesop
   | ui => 
     -- 全称实例化
     simp [Satisfies, substitute]
@@ -305,8 +303,8 @@ theorem completeness_equivalent {L : Language} {V : Type} [Encodable (Formula L 
     rw [Consistent]
     push Not
     intro φ hφ hNegφ
-    have h₁ := soundness hφ M a hSatisfy
-    have h₂ := soundness hNegφ M a hSatisfy
+    have h₁ := soundness (φ := φ) hφ M a hSatisfy
+    have h₂ := soundness (φ := Formula.neg φ) hNegφ M a hSatisfy
     simp [Satisfies] at h₁ h₂
     contradiction
 
@@ -390,5 +388,7 @@ theorem robinsonPrinciple {L : Language} {V : Type} {T₁ T₂ : Set (Formula L 
 
 完备性定理建立了语法与语义之间的桥梁，是数理逻辑的基石结果之一。
 -/ 
+
+end
 
 end CompletenessTheorem

@@ -1,8 +1,9 @@
 ---
+title: "Scholze与p进Hodge理论的现代发展"
 msc_primary: "14F30"
 msc_secondary: ["11G25", "14G22", "14F20"]
+processed_at: '2026-04-05'
 ---
-
 # Scholze与p进Hodge理论的现代发展
 
 > **文档状态**: ✅ 教学级深度文档

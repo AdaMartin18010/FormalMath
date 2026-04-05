@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: Seifert-van Kampen定理：基本群的计算
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Seifert-van Kampen定理：基本群的计算

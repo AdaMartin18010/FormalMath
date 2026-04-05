@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A99"
+---
+title: 雅可比簇与Abel定理：黎曼面的代数结构
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 雅可比簇与Abel定理：黎曼面的代数结构

@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 谱序列与Leray谱序列：上同调的计算工具
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 谱序列与Leray谱序列：上同调的计算工具

@@ -1,6 +1,8 @@
 ---
+title: "逻辑学"
 msc_primary: "00A99"
 msc_secondary: ['03B20', '12Exx', '22E47']
+processed_at: '2026-04-05'
 ---
 
 # 逻辑学 / Logic

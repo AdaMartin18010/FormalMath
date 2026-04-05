@@ -1,7 +1,9 @@
-﻿---
-msc_primary: "01A60"
 ---
-
+title: "01-lambda演算：概念总览（简化版）"
+msc_primary: "01A60"
+msc_secondary: []
+processed_at: '2026-04-05'
+---
 # 01-lambda演算：概念总览（简化版）
 
 **文档类型**：简化版一页纸（篇目 × 核心概念 × 先修）

@@ -1,6 +1,8 @@
 ---
+title: "证明论 (Proof Theory)"
 msc_primary: "03Fxx"
 msc_secondary: ["03F05", "03F15", "03F30", "03F35"]
+processed_at: '2026-04-05'
 ---
 
 # 证明论 (Proof Theory)

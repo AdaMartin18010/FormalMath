@@ -1,5 +1,9 @@
-﻿---
-msc_primary: "01A99"
+---
+title: 与Zermelo的关系
+msc_primary: 01A60
+msc_secondary:
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 与Zermelo的关系

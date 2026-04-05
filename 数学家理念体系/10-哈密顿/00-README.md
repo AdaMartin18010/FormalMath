@@ -1,10 +1,9 @@
 ---
+title: "威廉·罗恩·哈密顿 (William Rowan Hamilton) 数学理念体系"
 msc_primary: "01A55"
 msc_secondary: ["15A33", "70H05", "78A05", "05C45"]
-status: "research-level"
-completeness: "100%"
+processed_at: '2026-04-05'
 ---
-
 # 威廉·罗恩·哈密顿 (William Rowan Hamilton) 数学理念体系
 
 ## 数学家档案

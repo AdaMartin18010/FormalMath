@@ -1,4 +1,5 @@
 ---
+title: "数论"
 msc_primary: "11-XX"
 msc_secondary: ["11Axx", "11Rxx", "11Mxx", "11Bxx", "11Yxx"]
 processed_at: '2026-04-05'

@@ -1,8 +1,9 @@
 ---
+title: "布莱兹·帕斯卡 (Blaise Pascal, 1623-1662)"
 msc_primary: "01A45"
-msc_secondary: "60-03, 51-03, 01A70"
+msc_secondary: ["60-03, 51-03, 01A70"]
+processed_at: '2026-04-05'
 ---
-
 # 布莱兹·帕斯卡 (Blaise Pascal, 1623-1662)
 
 **MSC分类**: 01A45 (17世纪数学史), 60-03 (概率论历史), 51-03 (几何学历史)

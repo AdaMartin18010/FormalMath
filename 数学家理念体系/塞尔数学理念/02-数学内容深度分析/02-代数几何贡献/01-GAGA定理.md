@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: GAGA定理：复解析几何与代数几何的等价
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # GAGA定理：复解析几何与代数几何的等价

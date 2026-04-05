@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 自守形式的Hecke理论：算子与L函数
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 自守形式的Hecke理论：算子与L函数

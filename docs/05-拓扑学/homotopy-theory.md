@@ -1,8 +1,8 @@
 ---
-msc_primary: 55Q05
-msc_secondary:
-- 55-XX
-- 55Pxx
+title: "同伦论基础"
+msc_primary: "55Q05"
+msc_secondary: ["55-XX", "55Pxx"]
+processed_at: '2026-04-05'
 ---
 # 同伦论基础 / Foundations of Homotopy Theory
 

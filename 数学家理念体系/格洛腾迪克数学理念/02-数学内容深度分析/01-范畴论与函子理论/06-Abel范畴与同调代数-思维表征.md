@@ -1,8 +1,9 @@
 ---
+title: "Abel范畴与同调代数：思维表征与可复用模板"
 msc_primary: "18Gxx"
-msc_secondary: ["13Dxx","16Exx"]
+msc_secondary: ["13Dxx", "16Exx"]
+processed_at: '2026-04-05'
 ---
-
 # Abel范畴与同调代数：思维表征与可复用模板
 
 **文档类型**：思维表征 · 概念矩阵 · 决策树 · 概念树 · 公理–定理树 · 术语表

@@ -1,8 +1,9 @@
 ---
+title: "代数几何"
 msc_primary: "00A99"
-msc_secondary: ['14Nxx', '16-XX', '97-XX']
+msc_secondary: ["14Nxx", "16-XX", "97-XX"]
+processed_at: '2026-04-05'
 ---
-
 # 代数几何
 
 **最后更新**: 2025年12月31日

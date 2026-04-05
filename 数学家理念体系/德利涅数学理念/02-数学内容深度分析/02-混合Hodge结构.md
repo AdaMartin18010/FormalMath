@@ -1,8 +1,9 @@
 ---
+title: "Deligne的混合Hodge理论：复代数簇的上同调"
 msc_primary: "14C30"
 msc_secondary: ["32S35", "14D07", "32G20"]
+processed_at: '2026-04-05'
 ---
-
 # Deligne的混合Hodge理论：复代数簇的上同调
 
 > **文档状态**: ✅ 教学级深度文档

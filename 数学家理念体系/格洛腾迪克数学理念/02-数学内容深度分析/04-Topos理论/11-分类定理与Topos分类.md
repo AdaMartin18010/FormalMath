@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 分类定理与Topos分类：Grothendieck的拓扑分类
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 分类定理与Topos分类：Grothendieck的拓扑分类

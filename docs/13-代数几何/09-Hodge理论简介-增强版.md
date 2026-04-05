@@ -1,8 +1,9 @@
 ---
+title: "13.9 Hodge理论简介 - 增强版 / Introduction to Hodge Theory - Enhanced"
 msc_primary: "14C30"
-msc_secondary: ['14D07', '32G20', '32S35', '58A14']
+msc_secondary: ["14D07", "32G20", "32S35", "58A14"]
+processed_at: '2026-04-05'
 ---
-
 # 13.9 Hodge理论简介 - 增强版 / Introduction to Hodge Theory - Enhanced
 
 **主题编号**: B.13.09  

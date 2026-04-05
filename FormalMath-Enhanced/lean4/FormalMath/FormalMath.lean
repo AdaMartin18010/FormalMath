@@ -110,6 +110,7 @@ import FormalMath.IndexTheorem
 import FormalMath.SymplecticGeometry
 
 -- 几何与拓扑应用（10个）
+import FormalMath.RamseyTheorem
 -- (将在后续批次补充)
 
 -- ==================== 数理逻辑基础（5个）====================

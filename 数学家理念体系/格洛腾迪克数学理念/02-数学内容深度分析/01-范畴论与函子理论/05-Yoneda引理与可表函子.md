@@ -1,8 +1,9 @@
 ---
+title: "Yoneda引理与可表函子：范畴论的基石"
 msc_primary: "18-XX"
-msc_secondary: ["18Axx","18Fxx"]
+msc_secondary: ["18Axx", "18Fxx"]
+processed_at: '2026-04-05'
 ---
-
 # Yoneda引理与可表函子：范畴论的基石
 
 

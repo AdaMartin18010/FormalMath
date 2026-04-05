@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A50"
+---
+title: Zeta函数与Basel问题：解析数论的开端
+msc_primary: 01A45
+msc_secondary:
+- 01A50
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Zeta函数与Basel问题：解析数论的开端

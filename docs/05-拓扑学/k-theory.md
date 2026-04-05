@@ -1,8 +1,8 @@
 ---
-msc_primary: 19Lxx
-msc_secondary:
-- 55N15
-- 55R50
+title: "K理论初步"
+msc_primary: "19Lxx"
+msc_secondary: ["55N15", "55R50"]
+processed_at: '2026-04-05'
 ---
 # K理论初步 / Introduction to K-Theory
 

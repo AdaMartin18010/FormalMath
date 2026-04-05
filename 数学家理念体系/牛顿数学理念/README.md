@@ -1,8 +1,9 @@
 ---
+title: "牛顿数学理念体系"
 msc_primary: "01A45"
-msc_secondary: ["70-03","00A99"]
+msc_secondary: ["70-03", "00A99"]
+processed_at: '2026-04-05'
 ---
-
 # 牛顿数学理念体系
 
 > **微积分的奠基者，经典力学的开创者**

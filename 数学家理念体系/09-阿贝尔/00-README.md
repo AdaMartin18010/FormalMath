@@ -1,8 +1,9 @@
 ---
+title: "Niels Henrik Abel 数学理念体系"
 msc_primary: "01A55"
 msc_secondary: ["12-03", "14-03", "20-03", "33-03"]
+processed_at: '2026-04-05'
 ---
-
 # Niels Henrik Abel 数学理念体系
 
 > **"在我看来，一个人如果想要在数学上有所成就，他首先要学会做一个好的计算者。"** —— Niels Henrik Abel

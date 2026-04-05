@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A55"
+---
+title: 柯西数学理念 - 快速入门指南
+msc_primary: 01A45
+msc_secondary:
+- 01A50
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 柯西数学理念 - 快速入门指南

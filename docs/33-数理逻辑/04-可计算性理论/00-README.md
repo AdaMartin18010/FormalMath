@@ -1,6 +1,8 @@
 ---
+title: "可计算性理论 (Computability Theory)"
 msc_primary: "03Dxx"
 msc_secondary: ["03D05", "03D10", "03D15", "03D25", "03D30", "68Q15"]
+processed_at: '2026-04-05'
 ---
 
 # 可计算性理论 (Computability Theory)

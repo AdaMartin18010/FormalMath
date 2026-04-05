@@ -1,8 +1,9 @@
 ---
+title: "13.6 Riemann-Roch定理 - 深度版 / Riemann-Roch Theorem - Deep Version"
 msc_primary: "14Hxx"
-msc_secondary: ['14C40', '14F05', '14C17', '19E20']
+msc_secondary: ["14C40", "14F05", "14C17", "19E20"]
+processed_at: '2026-04-05'
 ---
-
 # 13.6 Riemann-Roch定理 - 深度版 / Riemann-Roch Theorem - Deep Version
 
 **主题编号**: B.13.06  

@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A99"
+---
+title: 黎曼数学理念体系 - 从这里开始
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 黎曼数学理念体系 - 从这里开始

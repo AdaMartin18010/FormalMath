@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: Tarski几何公理系统：希尔伯特几何的简化
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # Tarski几何公理系统：希尔伯特几何的简化

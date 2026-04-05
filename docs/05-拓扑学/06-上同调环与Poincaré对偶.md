@@ -1,9 +1,8 @@
 ---
-msc_primary: 55N45
-msc_secondary:
-- 55M05
-- 57P10
-- 55-01
+title: "5.6 上同调环与Poincaré对偶"
+msc_primary: "55N45"
+msc_secondary: ["55M05", "57P10", "55-01"]
+processed_at: '2026-04-05'
 ---
 # 5.6 上同调环与Poincaré对偶 / Cohomology Ring and Poincaré Duality
 

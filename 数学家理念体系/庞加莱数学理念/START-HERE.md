@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 庞加莱数学理念 - 快速导航
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 庞加莱数学理念 - 快速导航

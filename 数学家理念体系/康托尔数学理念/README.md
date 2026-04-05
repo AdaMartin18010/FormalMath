@@ -1,8 +1,9 @@
 ---
+title: "康托尔数学理念体系"
 msc_primary: "01A55"
-msc_secondary: ["03E20","03-03"]
+msc_secondary: ["03E20", "03-03"]
+processed_at: '2026-04-05'
 ---
-
 # 康托尔数学理念体系
 
 **项目名称**：康托尔数学理念体系

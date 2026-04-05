@@ -1,8 +1,9 @@
 ---
+title: "Langlands纲领：数论与表示论的大统一"
 msc_primary: "11R39"
 msc_secondary: ["22E55", "14D24", "11F70"]
+processed_at: '2026-04-05'
 ---
-
 # Langlands纲领：数论与表示论的大统一
 
 > **文档状态**: ✅ 教学级深度文档

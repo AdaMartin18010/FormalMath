@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 自守形式与Langlands：现代数论的核心
+msc_primary: 01A50
+msc_secondary:
+- 01A55
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 自守形式与Langlands：现代数论的核心

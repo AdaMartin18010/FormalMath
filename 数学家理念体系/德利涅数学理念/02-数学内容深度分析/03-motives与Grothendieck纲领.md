@@ -1,8 +1,9 @@
 ---
+title: "Deligne与Motives：Grothendieck梦想的现实化"
 msc_primary: "14C15"
 msc_secondary: ["14F42", "19E15", "11G09"]
+processed_at: '2026-04-05'
 ---
-
 # Deligne与Motives：Grothendieck梦想的现实化
 
 > **文档状态**: ✅ 教学级深度文档

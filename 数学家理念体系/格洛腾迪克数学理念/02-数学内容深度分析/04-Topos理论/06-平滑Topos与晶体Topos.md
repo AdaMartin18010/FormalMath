@@ -1,5 +1,10 @@
-﻿---
-msc_primary: "01A60"
+---
+title: 平滑Topos与晶体Topos：特殊的Topos
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
 ---
 
 # 平滑Topos与晶体Topos：特殊的Topos
