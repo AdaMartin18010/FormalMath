@@ -335,7 +335,7 @@ path = generator.generate_path(["C017"], DifficultyLevel.INTERMEDIATE)
 
 ## 📚 相关文档
 
-- [核心概念索引](../concept/核心概念/00-核心概念索引.md)
+- [核心概念索引](./concept/核心概念/00-核心概念索引.md)
 - [项目使用指南](00-FormalMath项目使用指南-完整版.md)
 - [全局文档索引](docs/00-全局文档索引-2025年12月.md)
 

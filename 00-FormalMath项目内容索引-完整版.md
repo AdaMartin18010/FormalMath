@@ -518,7 +518,7 @@ title: FormalMath项目内容索引 - 完整版
 - [项目根目录](./README.md)
 - [docs目录](docs/README.md)
 - [数学家理念体系](数学家理念体系/README.md)
-- [project目录](project/README.md)
+- [project目录](./concept/README.md)
 - [ref目录](ref/README.md)
 
 ---

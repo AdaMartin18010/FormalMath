@@ -22,7 +22,7 @@ msc_secondary: ['00-XX']
 - [JSON数据](api/api_reference.json)
 
 ### 概念图谱
-- [概念总图](concepts/overview.md)
+- [概念总图](./concepts/concepts/overview.md)
 - [统计报告](concepts/statistics.md)
 - [学习路径](concepts/learning_paths.md)
 - [可视化数据](concepts/visualization/concept_graph.json)

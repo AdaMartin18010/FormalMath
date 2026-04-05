@@ -53,4 +53,4 @@ $$\forall \varepsilon > 0: \exists N \in \mathbb{N}: \forall m, n \geq N: |a_m -
 
 ---
 
-**Language Versions**: [Deutsch](../de/core/Grenzwert.md) | [Français](../fr/core/Limite.md) | [日本語](../ja/core/極限.md) | [中文](../../../01-基础数学/集合论/01-集合论基础-国际标准版.md)
+**Language Versions**: [Deutsch](./../../de/core/Grenzwert.md) | [Français](./../../fr/core/Limite.md) | [日本語](./../../ja/core/極限.md) | [中文](../../../01-基础数学/集合论/01-集合论基础-国际标准版.md)

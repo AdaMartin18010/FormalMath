@@ -8,7 +8,7 @@ processed_at: '2026-04-05'
 ---
 <div class="language-switcher">
 
-**Languages**: **🇨🇳 中文** | [🇬🇧 English](./en/FormalMath项目100%完成最终确认报告-2025年1月-更新版.md)
+**Languages**: **🇨🇳 中文** | [🇬🇧 English](./FormalMath项目100%完成最终确认报告-2025年1月-更新版.md)
 
 </div>
 

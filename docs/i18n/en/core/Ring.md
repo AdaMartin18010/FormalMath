@@ -75,4 +75,4 @@ with operations:
 
 ---
 
-**Language Versions**: [Deutsch](../de/core/Ring.md) | [Français](../fr/core/Anneau.md) | [日本語](../ja/core/環.md) | [中文](../../../02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md)
+**Language Versions**: [Deutsch](./Ring.md) | [Français](./../../fr/core/Anneau.md) | [日本語](./../../ja/core/環.md) | [中文](../../../02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md)

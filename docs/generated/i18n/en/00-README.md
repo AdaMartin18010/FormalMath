@@ -7,7 +7,7 @@ processed_at: '2026-04-05'
 ---
 <div class="language-switcher">
 
-**Languages**: [🇨🇳 中文](./zh/00-README.md) | **🇬🇧 English**
+**Languages**: [🇨🇳 中文](./00-README.md) | **🇬🇧 English**
 
 </div>
 
@@ -41,7 +41,7 @@ Set Theory、数系、序关系等基础数学内容
 ## 📚 相关文档
 
 - [项目Index](../项目Index.md) - 完整的项目文档Index
-- [文档格式规范](../FormalMath文档格式规范-2025年12月.md) - 文档格式规范
+- [文档格式规范](./../../../FormalMath文档格式规范-2025年12月.md) - 文档格式规范
 
 ---
 

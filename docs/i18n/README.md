@@ -107,7 +107,7 @@ date: 2026-04-04
 ```markdown
 ---
 
-**Sprachversionen**: [English](../en/core/Group.md) | [Français](../fr/core/Groupe.md) | [日本語](../ja/core/群.md) | [中文](../../../02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md)
+**Sprachversionen**: [English](./en/core/Group.md) | [Français](./fr/core/Groupe.md) | [日本語](./ja/core/群.md) | [中文](./../02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md)
 ```
 
 ---

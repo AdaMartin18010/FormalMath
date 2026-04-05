@@ -7,7 +7,7 @@ processed_at: '2026-04-05'
 ---
 <div class="language-switcher">
 
-**Languages**: [🇨🇳 中文](../zh/ZFC公理体系\ZFC公理体系完整形式化-自然数构造详细版.md) | **🇬🇧 English**
+**Languages**: [🇨🇳 中文](./ZFC公理体系完整形式化-自然数构造详细版.md) | **🇬🇧 English**
 
 </div>
 

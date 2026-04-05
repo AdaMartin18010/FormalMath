@@ -63,4 +63,4 @@ Les groupes trouvent des applications en:
 
 ---
 
-**Versions linguistiques**: [English](../en/core/Group.md) | [Deutsch](../de/core/Gruppe.md) | [日本語](../ja/core/群.md) | [中文](../../../02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md)
+**Versions linguistiques**: [English](./../../en/core/Group.md) | [Deutsch](./../../de/core/Gruppe.md) | [日本語](./../../ja/core/群.md) | [中文](../../../02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md)

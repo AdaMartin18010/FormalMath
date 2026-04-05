@@ -460,7 +460,7 @@ Modal Logic
 
 - [FormalMath项目使用指南](00-FormalMath项目使用指南-完整版.md)
 - [项目内容索引](00-FormalMath项目内容索引-完整版.md)
-- [逻辑学README](docs/07-逻辑学/00-README.md)
+- [逻辑学README](./docs/00-核心概念理解三问/00-README.md)
 - [集合论基础](docs/01-基础数学/集合论/01-集合论基础-国际标准版.md)
 - [模型论基础](docs/10-语义模型/模型论/01-模型论基础.md)
 

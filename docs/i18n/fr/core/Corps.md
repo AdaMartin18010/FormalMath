@@ -63,4 +63,4 @@ Pour toute puissance de nombre premier $q = p^n$, il existe à isomorphisme prè
 
 ---
 
-**Versions linguistiques**: [English](../en/core/Field.md) | [Deutsch](../de/core/Körper.md) | [日本語](../ja/core/体.md) | [中文](../../../02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md)
+**Versions linguistiques**: [English](./../../en/core/Field.md) | [Deutsch](./../../de/core/Körper.md) | [日本語](./../../ja/core/体.md) | [中文](../../../02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md)

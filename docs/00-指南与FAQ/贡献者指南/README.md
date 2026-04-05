@@ -207,8 +207,8 @@ msc_secondary: ["97U99"]
 - [用户指南索引](../用户指南/README.md) - 用户相关指南
 - [FAQ索引](../FAQ/README.md) - 常见问题解答
 - [项目README](../../README.md) - 项目主页
-- [CONTRIBUTING](../../CONTRIBUTING.md) - 详细贡献规范
-- [CODE_OF_CONDUCT](../../CODE_OF_CONDUCT.md) - 行为准则
+- [CONTRIBUTING](./../../../CONTRIBUTING.md) - 详细贡献规范
+- [CODE_OF_CONDUCT](./../../../CODE_OF_CONDUCT.md) - 行为准则
 
 ---
 

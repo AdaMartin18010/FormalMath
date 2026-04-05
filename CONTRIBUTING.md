@@ -787,7 +787,7 @@ Closes #789
 如果发现安全漏洞，请：
 1. **不要** 在公开 Issue 中报告
 2. 发送邮件至: security@formalmath.org
-3. 使用 [安全建议模板](.github/SECURITY.md)
+3. 使用 [安全建议模板](./SECURITY.md)
 
 ---
 

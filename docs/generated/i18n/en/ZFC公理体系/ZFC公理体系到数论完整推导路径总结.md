@@ -7,7 +7,7 @@ processed_at: '2026-04-05'
 ---
 <div class="language-switcher">
 
-**Languages**: [🇨🇳 中文](../zh/ZFC公理体系\ZFC公理体系到数论完整推导路径总结.md) | **🇬🇧 English**
+**Languages**: [🇨🇳 中文](./ZFC公理体系到数论完整推导路径总结.md) | **🇬🇧 English**
 
 </div>
 

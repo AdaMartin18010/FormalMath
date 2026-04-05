@@ -160,7 +160,7 @@ processed_at: '2026-04-05'
 - [FAQ索引](../FAQ/README.md) - 常见问题解答
 - [贡献者指南索引](../贡献者指南/README.md) - 贡献者相关指南
 - [项目README](../../README.md) - 项目主页
-- [CHANGELOG](../../CHANGELOG.md) - 版本历史
+- [CHANGELOG](./../../../CHANGELOG.md) - 版本历史
 
 ---
 

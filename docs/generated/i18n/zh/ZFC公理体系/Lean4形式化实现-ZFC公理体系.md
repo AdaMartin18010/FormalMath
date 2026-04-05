@@ -7,7 +7,7 @@ processed_at: '2026-04-05'
 ---
 <div class="language-switcher">
 
-**Languages**: **🇨🇳 中文** | [🇬🇧 English](../en/ZFC公理体系\Lean4形式化实现-ZFC公理体系.md)
+**Languages**: **🇨🇳 中文** | [🇬🇧 English](./Lean4形式化实现-ZFC公理体系.md)
 
 </div>
 

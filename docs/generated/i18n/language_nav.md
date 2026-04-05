@@ -24,11 +24,11 @@ msc_secondary: ['00-XX']
 
 ### 中文
 
-- [中文 文档索引](zh/index.md)
+- [中文 文档索引](./../index.md)
 
 ### English
 
-- [English 文档索引](en/index.md)
+- [English 文档索引](./../index.md)
 
 
 ## 翻译说明

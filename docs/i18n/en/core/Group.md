@@ -69,4 +69,4 @@ Groups have applications in:
 
 ---
 
-**Language Versions**: [Deutsch](../de/core/Gruppe.md) | [Français](../fr/core/Groupe.md) | [日本語](../ja/core/群.md) | [中文](../../../02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md)
+**Language Versions**: [Deutsch](./../../de/core/Gruppe.md) | [Français](./../../fr/core/Groupe.md) | [日本語](./../../ja/core/群.md) | [中文](../../../02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md)

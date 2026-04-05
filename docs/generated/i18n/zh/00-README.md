@@ -7,7 +7,7 @@ processed_at: '2026-04-05'
 ---
 <div class="language-switcher">
 
-**Languages**: **🇨🇳 中文** | [🇬🇧 English](./en/00-README.md)
+**Languages**: **🇨🇳 中文** | [🇬🇧 English](./00-README.md)
 
 </div>
 
@@ -33,8 +33,8 @@ processed_at: '2026-04-05'
 
 ## 📚 相关文档
 
-- [项目索引](../项目索引.md) - 完整的项目文档索引
-- [文档格式规范](../FormalMath文档格式规范-2025年12月.md) - 文档格式规范
+- [项目索引](./../../../项目索引.md) - 完整的项目文档索引
+- [文档格式规范](./../../../FormalMath文档格式规范-2025年12月.md) - 文档格式规范
 
 ---
 

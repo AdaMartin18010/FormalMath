@@ -80,4 +80,4 @@ There is a bijective correspondence between subgroups of $\operatorname{Gal}(L/K
 
 ---
 
-**Language Versions**: [Deutsch](../de/core/Körper.md) | [Français](../fr/core/Corps.md) | [日本語](../ja/core/体.md) | [中文](../../../02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md)
+**Language Versions**: [Deutsch](./../../de/core/Körper.md) | [Français](./../../fr/core/Corps.md) | [日本語](./../../ja/core/体.md) | [中文](../../../02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md)

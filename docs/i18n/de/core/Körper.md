@@ -63,4 +63,4 @@ Für jede Primzahlpotenz $q = p^n$ existiert bis auf Isomorphie genau ein endlic
 
 ---
 
-**Sprachversionen**: [English](../en/core/Field.md) | [Français](../fr/core/Corps.md) | [日本語](../ja/core/体.md) | [中文](../../../02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md)
+**Sprachversionen**: [English](./../../en/core/Field.md) | [Français](./../../fr/core/Corps.md) | [日本語](./../../ja/core/体.md) | [中文](../../../02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md)

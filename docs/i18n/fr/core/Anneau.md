@@ -65,4 +65,4 @@ avec les opérations:
 
 ---
 
-**Versions linguistiques**: [English](../en/core/Ring.md) | [Deutsch](../de/core/Ring.md) | [日本語](../ja/core/環.md) | [中文](../../../02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md)
+**Versions linguistiques**: [English](./../../de/core/Ring.md) | [Deutsch](./../../de/core/Ring.md) | [日本語](./../../ja/core/環.md) | [中文](../../../02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md)
