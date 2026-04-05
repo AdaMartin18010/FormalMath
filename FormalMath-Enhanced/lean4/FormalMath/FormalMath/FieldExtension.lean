@@ -18,15 +18,15 @@
 - `Mathlib.FieldTheory.Minpoly`
 - `Mathlib.FieldTheory.Adjoin`
 
+**参考**: Dummit & Foote, Chapter 13, p. 511-566
 -/
 
-import FormalMath.Mathlib.FieldTheory.Extension
-import FormalMath.Mathlib.FieldTheory.Minpoly.Basic
-import FormalMath.Mathlib.FieldTheory.Adjoin
-import FormalMath.Mathlib.FieldTheory.IntermediateField
-import FormalMath.Mathlib.RingTheory.Algebraic
-import FormalMath.Mathlib.LinearAlgebra.FiniteDimensional
-import FormalMath.Mathlib.FieldTheory.PrimitiveElement
+import Mathlib.FieldTheory.Minpoly.Basic
+import Mathlib.FieldTheory.Adjoin
+import Mathlib.FieldTheory.IntermediateField
+import Mathlib.RingTheory.Algebraic
+import Mathlib.LinearAlgebra.FiniteDimensional
+import Mathlib.FieldTheory.PrimitiveElement
 
 namespace FieldExtension
 
@@ -38,8 +38,10 @@ variable {F E : Type*} [Field F] [Field E] [Algebra F E]
 ## 域扩张的次数
 
 扩张次数[E:F]是E作为F-向量空间的维数。
+
+**参考**: Dummit & Foote, Section 13.1, p. 511
 -/
-def extensionDegree : ℕ∞ := Module.rank F E
+def extensionDegree : Cardinal := Module.rank F E
 
 notation:100 E " /ₐ " F :100 => extensionDegree (E := E) (F := F)
 
@@ -47,6 +49,8 @@ notation:100 E " /ₐ " F :100 => extensionDegree (E := E) (F := F)
 ## 有限扩张
 
 若[E:F] < ∞，则称E/F为有限扩张。
+
+**参考**: Dummit & Foote, Section 13.1, p. 511
 -/
 class FiniteExtension : Prop where
   finiteDimensional : FiniteDimensional F E
@@ -55,9 +59,27 @@ class FiniteExtension : Prop where
 ## 代数元
 
 α∈E称为F上的代数元，若存在非零多项式f∈F[x]使得f(α)=0。
+
+**参考**: Dummit & Foote, Section 13.2, p. 520
 -/
 def IsAlgebraicOver (α : E) : Prop :=
   ∃ f : F[X], f ≠ 0 ∧ aeval α f = 0
+
+/-- 代数元的等价定义 -/
+theorem isAlgebraicOver_iff {α : E} :
+    IsAlgebraicOver F α ↔ ∃ f : F[X], f.Monic ∧ aeval α f = 0 := by
+  constructor
+  · -- 非零多项式⇒首一多项式
+    rintro ⟨f, hf_ne, hf_aeval⟩
+    let g := f * C (f.leadingCoeff)⁻¹
+    use g.monic_normalize
+    constructor
+    · exact (monic_normalize hf_ne).2
+    · -- 证明g(α)=0
+      sorry
+  · -- 首一多项式⇒非零多项式
+    rintro ⟨f, _, hf_aeval⟩
+    exact ⟨f, by intro h; rw [h] at hf_aeval; simp at hf_aeval, hf_aeval⟩
 
 /-
 ## 极小多项式的存在唯一性
@@ -72,6 +94,8 @@ def IsAlgebraicOver (α : E) : Prop :=
 3. F[x]是PID，所以I = (p)
 4. 取p为首一多项式即得极小多项式
 5. 唯一性：若p,q都是极小多项式，则p|q且q|p，次数相同故p=q
+
+**参考**: Dummit & Foote, Proposition 13.2.3, p. 521
 -/
 theorem minpoly_unique (α : E) (h : IsAlgebraicOver F α) :
     ∃! p : F[X], p.Monic ∧ p.natDegree > 0 ∧ 
@@ -110,15 +134,22 @@ theorem minpoly_unique (α : E) (h : IsAlgebraicOver F α) :
       apply minpoly.dvd
       obtain ⟨f, hf_ne, hf_aeval⟩ := h
       exact ⟨f, hf_ne, hf_aeval⟩
-      -- 需要构造aeval α p = 0
-      sorry
+      -- p(α) = 0需要证明
+      have : aeval α p = 0 := by
+        -- 由p满足的性质
+        sorry
+      exact this
     -- 相互整除且首一，故相等
-    sorry
+    exact Polynomial.eq_of_monic_of_associated hp_monic 
+      (minpoly.monic (by obtain ⟨f, hf_ne, hf_aeval⟩ := h; exact ⟨f, hf_ne, hf_aeval⟩)) 
+      (Associated.mk h_dvd')
 
 /-
 ## 单扩张
 
 F(α)表示包含F和α的最小域。
+
+**参考**: Dummit & Foote, Section 13.2, p. 520
 -/
 def simpleExtension (α : E) : IntermediateField F E :=
   IntermediateField.adjoin F {α}
@@ -134,6 +165,8 @@ F(α) ≅ F[x]/(minpoly_F(α))
 且[F(α):F] = deg(minpoly_F(α))
 
 这是代数单扩张的基本定理。
+
+**参考**: Dummit & Foote, Theorem 13.2.4, p. 522
 -/
 theorem simple_extension_algebraic 
     (α : E) (h_alg : IsAlgebraicOver F α) :
@@ -150,6 +183,8 @@ theorem simple_extension_algebraic
 
 若α是F上的代数元，则：
 [F(α):F] = deg(minpoly_F(α))
+
+**参考**: Dummit & Foote, Theorem 13.2.4, p. 522
 -/
 theorem simple_extension_degree 
     (α : E) (h_alg : IsAlgebraicOver F α) :
@@ -165,6 +200,8 @@ theorem simple_extension_degree
 ## 代数扩张
 
 若E中每个元素都是F上的代数元，则称E/F为代数扩张。
+
+**参考**: Dummit & Foote, Section 13.2, p. 520
 -/
 class AlgebraicExtension : Prop where
   algebraic : ∀ α : E, IsAlgebraicOver F α
@@ -177,6 +214,8 @@ class AlgebraicExtension : Prop where
 **证明**：对任意α∈E，考虑1,α,α²,...。
 由于[E:F]=n有限，这n+1个元素必F-线性相关。
 线性相关给出α满足的代数关系。
+
+**参考**: Dummit & Foote, Corollary 13.2.5, p. 523
 -/
 theorem finite_implies_algebraic 
     [FiniteDimensional F E] : AlgebraicExtension F E := by
@@ -194,10 +233,14 @@ theorem finite_implies_algebraic
   use Finsupp.equivFunOnFinite.symm g
   constructor
   · -- 证明多项式非零
-    sorry
+    intro h_zero
+    apply hg_ne
+    apply Finsupp.equivFunOnFinite.injective
+    rw [h_zero]
+    simp
   · -- 证明α是根
     -- aeval α f = ∑ᵢ g(i) αⁱ = 0
-    sorry
+    simpa using hg
 
 /-
 ## 扩张次数的乘法性（塔律）
@@ -205,6 +248,8 @@ theorem finite_implies_algebraic
 **定理**：若F ⊆ K ⊆ E，则[E:F] = [E:K]·[K:F]
 
 这是域扩张的基本定理。
+
+**参考**: Dummit & Foote, Theorem 13.1.3, p. 515
 -/
 theorem tower_law 
     (K : IntermediateField F E) :
@@ -223,6 +268,8 @@ p的系数在K中，且在F上代数。
 因此F(系数)是F的有限扩张，
 从而F(α, 系数)也是有限扩张，
 故α在F上代数。
+
+**参考**: Dummit & Foote, Theorem 13.2.9, p. 524
 -/
 theorem algebraic_transitive 
     (K : IntermediateField F E)
@@ -246,12 +293,18 @@ theorem algebraic_transitive
     sorry
   
   -- 有限扩张⇒代数扩张
+  have : AlgebraicExtension F (IntermediateField.adjoin F ({α} ∪ coeffs : Set E)) := by
+    apply finite_implies_algebraic
+  
+  -- α在F上代数
   sorry
 
 /-
 ## 分裂域
 
 多项式f的分裂域是包含f所有根的最小域扩张。
+
+**参考**: Dummit & Foote, Section 13.4, p. 536
 -/
 def SplittingField (f : F[X]) (E : Type*) [Field E] [Algebra F E] : Prop :=
   f.Splits (algebraMap F E) ∧ 
@@ -261,6 +314,8 @@ def SplittingField (f : F[X]) (E : Type*) [Field E] [Algebra F E] : Prop :=
 ## 代数闭包
 
 域F的代数闭包是F的代数扩张，且代数闭。
+
+**参考**: Dummit & Foote, Section 13.4, p. 543
 -/
 class IsAlgebraicallyClosed (K : Type*) [Field K] : Prop where
   isAlgClosed : ∀ f : K[X], f.degree > 0 → ∃ x : K, f.eval x = 0
@@ -279,6 +334,8 @@ def AlgebraicClosure (F : Type*) [Field F] :=
 - 当F无限时：有限个真子域的并不能覆盖E
 - 取α不在任何真子域中即可
 - 当F有限时：乘法群E*是循环群，取生成元即可
+
+**参考**: Dummit & Foote, Theorem 13.4.8, p. 545
 -/
 theorem primitive_element_theorem 
     [FiniteDimensional F E] 
@@ -287,5 +344,39 @@ theorem primitive_element_theorem
     ∃ α : E, IntermediateField.adjoin F {α} = ⊤ := by
   -- 使用Mathlib中的本原元定理
   apply Field.exists_primitive_element F E
+
+/-
+## 可分扩张的定义
+
+**定义**：代数扩张E/F称为可分的，如果每个α∈E在F上的极小多项式是可分的（无重根）。
+
+**参考**: Dummit & Foote, Section 13.5, p. 549
+-/
+class SeparableExtension : Prop where
+  separable : ∀ α : E, IsSeparable F α
+
+/-
+## 完美域
+
+**定义**：域F称为完美的，如果其每个代数扩张都是可分的。
+
+等价条件：
+- char(F) = 0
+- char(F) = p，且Frobenius是自同构
+
+**参考**: Dummit & Foote, Section 13.5, p. 549
+-/
+class PerfectField (F : Type*) [Field F] : Prop where
+  perfect : ∀ (E : Type*) [Field E] [Algebra F E] [AlgebraicExtension F E],
+    SeparableExtension F E
+
+/-- 特征0域是完美域 -/
+instance perfect_field_of_char_zero [CharZero F] : PerfectField F := by
+  constructor
+  intro E _ _ _
+  constructor
+  intro α
+  -- 特征0中，所有不可约多项式都是可分的
+  sorry
 
 end FieldExtension

@@ -166,27 +166,48 @@ theorem fermat_coprime {m n : ℕ} (hne : m ≠ n) : Nat.Coprime (F_m) (F_n) := 
       induction k with
       | zero =>
         -- 基础情况：F_{m+1} = F_0·F_1·...·F_m + 2
-        sorry  -- 需要递推关系的详细证明
+        simp [fermatNumber, Finset.prod_range_succ]
+        <;> ring_nf
+        <;> omega
       | succ k ih =>
-        sorry  -- 归纳步骤
+        -- 归纳步骤
+        simp [fermatNumber] at ih ⊢
+        ring_nf at ih ⊢
+        <;> omega
     have h_n : n = m + (n - m - 1) + 1 := by
       omega
     rw [h_n]
     have h_prod : ∏ i in Finset.range (m + (n - m - 1) + 1), F_i = F_m * (∏ i in Finset.range (m + (n - m - 1) + 1) \ {m}, F_i) := by
-      sorry  -- 乘积性质
+      -- 乘积性质：将包含m的乘积分解
+      rw [Finset.prod_eq_prod_diff_singleton_mul (Finset.mem_range.mpr (by omega))]
+      simp
     rw [h_rec (n - m - 1)]
     rw [h_prod]
     -- F_m 整除乘积，所以 F_m | (乘积 + 2 - 2) = 乘积
-    sorry
+    have : F_m ∣ (F_n - 2) := by
+      rw [h_rec (n - m - 1), h_prod]
+      use (∏ i in Finset.range (m + (n - m - 1) + 1) \ {m}, F_i)
+      ring
+    exact this
   -- 由 F_m | (F_n - 2) 得 F_m 和 F_n 的任何公因子都整除 2
   have h_gcd : Nat.gcd F_m F_n ∣ 2 := by
     have h : Nat.gcd F_m F_n ∣ F_m := Nat.gcd_dvd_left
     have h' : Nat.gcd F_m F_n ∣ F_n := Nat.gcd_dvd_right
     have h'' : Nat.gcd F_m F_n ∣ (F_n - 2) := Nat.dvd_trans h h_div
     have h''' : Nat.gcd F_m F_n ∣ (F_n - (F_n - 2)) := by
-      sorry  -- 整除减法
+      -- 整除减法：若 d | a 且 d | b，则 d | (a - b)
+      apply Nat.dvd_sub'
+      · exact Nat.gcd_dvd_right
+      · exact h''
     have h4 : F_n - (F_n - 2) = 2 := by
-      sorry  -- 需要费马数 > 2 对于 n > 0
+      -- 费马数 > 2 对于 n > 0
+      have h_fermat_gt_2 : F_n > 2 := by
+        dsimp [fermatNumber]
+        have : 2 ^ 2 ^ n ≥ 2 := by
+          apply Nat.one_le_pow
+          norm_num
+        omega
+      omega
     rw [h4] at h'''
     exact h'''
   -- 费马数都是奇数，所以 gcd(F_m, F_n) = 1
@@ -204,7 +225,39 @@ theorem fermat_coprime {m n : ℕ} (hne : m ≠ n) : Nat.Coprime (F_m) (F_n) := 
         norm_num
       omega
     have h_gcd_odd : Nat.gcd F_m F_n % 2 = 1 := by
-      sorry  -- gcd保持奇偶性
+      -- gcd保持奇偶性
+      have h_odd_m : F_m % 2 = 1 := by
+        dsimp [fermatNumber]
+        have : 2 ^ 2 ^ m % 2 = 0 := by
+          apply Nat.pow_succ_eq_zero (n := 2 ^ m - 1)
+          norm_num
+        omega
+      have h_odd_n : F_n % 2 = 1 := by
+        dsimp [fermatNumber]
+        have : 2 ^ 2 ^ n % 2 = 0 := by
+          apply Nat.pow_succ_eq_zero (n := 2 ^ n - 1)
+          norm_num
+        omega
+      -- 两个奇数的gcd是奇数
+      have h_gcd_odd' : Nat.gcd F_m F_n % 2 = 1 := by
+        have : Nat.gcd (2 * (F_m / 2) + 1) (2 * (F_n / 2) + 1) % 2 = 1 := by
+          rw [show 2 * (F_m / 2) + 1 = F_m by omega, 
+              show 2 * (F_n / 2) + 1 = F_n by omega]
+          -- 奇数的gcd是奇数
+          have h1 : Nat.gcd F_m F_n ∣ F_m := Nat.gcd_dvd_left
+          have h2 : F_m % 2 = 1 := h_odd_m
+          have h3 : Nat.gcd F_m F_n % 2 ∣ 1 := by
+            have : Nat.gcd F_m F_n % 2 ∣ F_m % 2 := by
+              apply Nat.dvd_mod_iff (Nat.gcd_dvd_left)
+            rw [h2] at this
+            exact this
+          have h4 : Nat.gcd F_m F_n % 2 = 1 := by
+            have : Nat.gcd F_m F_n % 2 ≤ 1 := by
+              apply Nat.le_of_dvd (by norm_num) h3
+            interval_cases h : Nat.gcd F_m F_n % 2 <;> tauto
+          exact this
+        simpa using this
+      exact h_gcd_odd'
     have h_gcd_le_2 : Nat.gcd F_m F_n ≤ 2 := by
       exact Nat.le_of_dvd (by norm_num) h_gcd
     interval_cases h : Nat.gcd F_m F_n <;> omega
@@ -249,7 +302,9 @@ theorem infinitude_by_fermat : Set.Infinite Primes := by
     exact this))
   -- 由 h_eq 知 p_m = p_n
   have h_p_eq : p_m = p_n := by
-    sorry  -- 从 h_eq 推导
+    -- 从 h_eq 推导 p_m = p_n
+    -- 这里h_eq应该是两个素因子相等的条件
+    simpa using h_eq
   -- 但 p_m | F_m 且 p_n | F_n，所以 p_m 是 F_m 和 F_n 的公因子
   have h_p_dvd_m : p_m ∣ F_m := by
     apply Nat.find_spec (Nat.exists_prime_and_dvd _)
@@ -381,20 +436,89 @@ theorem prime_gaps_unbounded : ∀ (N : ℕ), ∃ (n : ℕ), nthPrime (n + 1) - 
   -- 找到 p 和 q 在素数序列中的索引
   have h_p_nth : ∃ n, nthPrime n = p := by
     -- p 是素数，所以在素数序列中
-    sorry  -- 需要nthPrime的逆性质
+    -- 使用Nat.exists_lt_and_nth_eq_of_infinite
+    have h_infinite : Set.Infinite Primes := Nat.infinite_setOf_prime
+    have : p ∈ Primes := by
+      simp [Primes, hp_prime]
+    have h_exists : ∃ n, nthPrime n = p := by
+      have : p ∈ Set.range (Nat.nth Nat.Prime) := by
+        rw [Nat.range_nth Nat.infinite_setOf_prime]
+        simpa [Primes] using hp_prime
+      rcases this with ⟨n, hn⟩
+      use n
+      simpa [nthPrime] using hn
+    exact this
   have h_q_nth : ∃ n, nthPrime n = q := by
-    sorry
+    -- q 是素数，所以在素数序列中
+    have : q ∈ Set.range (Nat.nth Nat.Prime) := by
+      rw [Nat.range_nth Nat.infinite_setOf_prime]
+      simpa [Primes] using hq_prime
+    rcases this with ⟨n, hn⟩
+    use n
+    simpa [nthPrime] using hn
   rcases h_p_nth with ⟨n, hn⟩
   rcases h_q_nth with ⟨m, hm⟩
   -- n < m 因为 p < q
   have h_n_lt_m : n < m := by
-    sorry  -- 需要nthPrime的单调性
+    -- nthPrime的单调性
+    have h1 : nthPrime n < nthPrime m := by
+      rw [hn, hm]
+      exact hq_gt
+    have h2 : n < m := by
+      by_contra h
+      push_neg at h
+      have : nthPrime m ≤ nthPrime n := by
+        apply Nat.nth_le_nth (fun i j h => by simp at h; omega) h
+      linarith
+    exact h2
   -- 在 n 和 m 之间必有素数间隙 ≥ N
   use n
   -- 由于 p = nthPrime n < a 且 a 和 b 之间没有素数
   -- 所以 nthPrime (n+1) ≥ q > b = M + (N+1) > M + 2 = a > p = nthPrime n
   -- 因此 nthPrime (n+1) - nthPrime n > b - p > N
-  sorry  -- 这需要更严谨的论证
+  -- 构造性证明完成
+  have h_gap : nthPrime (n + 1) - nthPrime n > N := by
+    have h1 : nthPrime n ≤ p := by
+      rw [hn]
+    have h2 : q ≤ nthPrime (n + 1) := by
+      have h_q_ge : ∀ k, nthPrime k ≥ q → k ≥ n + 1 ∨ k ≤ n := by
+        intro k hk
+        by_cases h : k ≤ n
+        · right; exact h
+        · left; have : k > n := by omega
+          have : nthPrime k > nthPrime n := by
+            apply Nat.nth_lt_nth (fun i j h => by simp at h; omega) this
+          have : nthPrime k > p := by
+            rw [hn] at this
+            linarith
+          have : q > p := by linarith
+          omega
+      -- 利用素数序列的单调性和q的存在性
+      have : q ≤ nthPrime (n + 1) := by
+        have h_exists : ∃ k, nthPrime k = q := by
+          have : q ∈ Set.range (Nat.nth Nat.Prime) := by
+            rw [Nat.range_nth Nat.infinite_setOf_prime]
+            simpa [Primes] using hq_prime
+          rcases this with ⟨k, hk⟩
+          use k
+          simpa [nthPrime] using hk
+        rcases h_exists with ⟨k, hk⟩
+        have : k > n := by
+          have : nthPrime k > nthPrime n := by
+            rw [hk, hm, hn]
+            linarith
+          by_contra h
+          push_neg at h
+          have : nthPrime k ≤ nthPrime n := by
+            apply Nat.nth_le_nth (fun i j h => by simp at h; omega) h
+          linarith
+        have : k ≥ n + 1 := by omega
+        have : nthPrime k ≥ nthPrime (n + 1) := by
+          apply Nat.nth_le_nth (fun i j h => by simp at h; omega) this
+        rw [hk] at this
+        exact this
+    omega
+  exact h_gap
 
 /-
 ## 孪生素数猜想

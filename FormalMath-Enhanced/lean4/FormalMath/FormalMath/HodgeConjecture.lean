@@ -78,6 +78,8 @@
 import Mathlib.Algebra.Homology.Homology
 import Mathlib.CategoryTheory.Abelian.Basic
 import Mathlib.Geometry.Manifold.Complex
+import Mathlib.LinearAlgebra.TensorProduct
+import Mathlib.RingTheory.Finiteness
 
 namespace HodgeConjecture
 
@@ -97,17 +99,29 @@ def ComplexProjectiveSpace (n : ℕ) : Type :=
 
 notation "ℂP^" n => ComplexProjectiveSpace n
 
+/-- 全纯映射的类 -/
+class IsHolomorphic {X Y : Type*} [ComplexManifold X] [ComplexManifold Y] 
+    (f : X → Y) : Prop where
+  holomorphic : ∀ x, MDifferentiableAt 𝓘(ℂ, ℂ^_) 𝓘(ℂ, ℂ^_) f x
+
+/-- 闭浸入 -/
+structure ClosedImmersion {X Y : Type*} [ComplexManifold X] [ComplexManifold Y] 
+    (f : X → Y) : Prop where
+  isEmbedding : IsEmbedding f
+  isClosed : IsClosed (Set.range f)
+
 /-- 光滑射影代数簇的定义 -/
 class SmoothProjectiveVariety (X : Type u) extends ComplexManifold X where
   projective_embedding : ∃ (N : ℕ) (f : X → ℂP^N), 
-    IsClosedEmbedding f ∧ IsHolomorphic f
-  smooth : IsSmooth X  -- 处处非奇异
+    ClosedEmbedding f ∧ IsHolomorphic f
+  smooth : ∀ x, ∃ (U : Set X) (hU : IsOpen U) (φ : U → ℂ^[dim X]),
+    IsHomeomorphism φ ∧ MDifferentiableOn 𝓘(ℂ, ℂ^_) 𝓘(ℂ, ℂ^_) φ U
 
 /-- 紧致Kähler流形的类 -/
 class KählerManifold (X : Type u) extends ComplexManifold X where
   kählerForm : X → (Fin (dim X) → ℂ) →ₗ[ℝ] (Fin (dim X) → ℂ) →ₗ[ℝ] ℝ
-  closed : sorry  -- dω = 0
-  positive : sorry  -- ω是正定的
+  closed : ∀ x, sorry  -- dω = 0
+  positive : ∀ x, sorry  -- ω是正定的
 
 /-- 光滑射影代数簇是紧Kähler流形 -/
 instance {X : Type u} [SmoothProjectiveVariety X] : KählerManifold X :=
@@ -131,17 +145,17 @@ def SingularCohomologyV (X : Type u) [TopologicalSpace X] (k : ℕ) (K : Type v)
   -- H^k(X, K) 作为K-向量空间
   sorry
 
+/-- H^{p,q}空间：(p,q)-型调和形式空间 -/
+def HodgeComponent (X : Type u) [KählerManifold X] (p q : ℕ) : Type _ :=
+  -- H^{p,q}(X) = 调和(p,q)-形式空间
+  sorry
+
 /-- Hodge分解定理：对于紧Kähler流形，复系数上同调可分解为(p,q)型 -/
 theorem hodge_decomposition {X : Type u} [KählerManifold X] (k : ℕ) :
     let H_C := SingularCohomologyV X k ℂ
     H_C ≅ DirectSum (fun (p, q) : {pq : ℕ × ℕ // pq.1 + pq.2 = k} ↦ 
       HodgeComponent X p.1.1 p.1.2) := by
   -- Hodge分解定理
-  sorry
-
-/-- H^{p,q}空间：(p,q)-型调和形式空间 -/
-def HodgeComponent (X : Type u) [KählerManifold X] (p q : ℕ) : Type _ :=
-  -- H^{p,q}(X) = 调和(p,q)-形式空间
   sorry
 
 /-- Hodge数h^{p,q} = dim H^{p,q}(X) -/
@@ -166,21 +180,21 @@ theorem serre_duality {X : Type u} [KählerManifold X] (p q : ℕ) (n : ℕ)
 霍奇猜想的核心对象。
 -/ 
 
-/-- Hodge类的定义：H^{2p}(X, ℚ) ∩ H^{p,p}(X) -/
-def HodgeClass (X : Type u) [SmoothProjectiveVariety X] (p : ℕ) : Type _ :=
-  {α : SingularCohomology X (2 * p) ℚ // 
-    HasHodgeType (castToComplex α) p p}
+/-- 判断ℂ-系数上同调类是否具有Hodge类型(p,q) -/
+def HasHodgeType {X : Type u} [KählerManifold X] {k : ℕ} 
+    (α : SingularCohomology X k ℂ) (p q : ℕ) : Prop :=
+  -- α ∈ H^{p,q}(X)
+  sorry
 
 /-- 将ℚ-系数上同调类提升到ℂ-系数 -/
 def castToComplex {X : Type u} [TopologicalSpace X] {k : ℕ} 
     (α : SingularCohomology X k ℚ) : SingularCohomology X k ℂ :=
   sorry
 
-/-- 判断ℂ-系数上同调类是否具有Hodge类型(p,q) -/
-def HasHodgeType {X : Type u} [KählerManifold X] {k : ℕ} 
-    (α : SingularCohomology X k ℂ) (p q : ℕ) : Prop :=
-  -- α ∈ H^{p,q}(X)
-  sorry
+/-- Hodge类的定义：H^{2p}(X, ℚ) ∩ H^{p,p}(X) -/
+def HodgeClass (X : Type u) [SmoothProjectiveVariety X] (p : ℕ) : Type _ :=
+  {α : SingularCohomology X (2 * p) ℚ // 
+    HasHodgeType (castToComplex α) p p}
 
 /-- Hodge类构成ℚ-向量空间 -/
 instance {X : Type u} [SmoothProjectiveVariety X] (p : ℕ) : 
@@ -203,6 +217,11 @@ structure AlgebraicSubvariety {X : Type u} [SmoothProjectiveVariety X] where
   isClosed : IsClosed carrier
   isAlgebraic : sorry  -- 由多项式方程定义
   codimension : ℕ
+
+/-- 自由Abel群 -/
+def FreeAbelianGroup (α : Type*) : Type _ :=
+  -- α生成的自由Abel群
+  sorry
 
 /-- 余维数p的代数闭链（形式线性组合）-/
 def AlgebraicCycle (X : Type u) [SmoothProjectiveVariety X] (p : ℕ) : Type _ :=
@@ -295,7 +314,7 @@ def HodgeConjectureFull : Prop :=
 霍奇猜想的第一个（也是主要）已知情形。
 -/ 
 
-/-- Lefschetz (1,1) 定理 (1924)
+/-- **Lefschetz (1,1) 定理** (1924)
 
 对于p = 1，霍奇猜想成立。
 
@@ -318,6 +337,19 @@ theorem lefschetz_11_theorem (X : Type u) [SmoothProjectiveVariety X] :
   -- 每个(1,1)类都来自线丛
   sorry
 
+/-- 线丛的定义 -/
+def LineBundle (X : Type u) [SmoothProjectiveVariety X] : Type _ := 
+  sorry
+
+/-- 陈类 -/
+def FirstChernClass {X : Type u} [SmoothProjectiveVariety X] (L : LineBundle X) : 
+    SingularCohomology X 2 ℤ :=
+  sorry
+
+/-- Picard群 -/
+def Pic (X : Type u) [SmoothProjectiveVariety X] : Type _ :=
+  LineBundle X ⧸ (fun L₁ L₂ ↦ Nonempty (L₁ ≅ L₂))
+
 /-! 
 ## Lefschetz算子与霍奇-Riemann双线性关系
 
@@ -339,6 +371,16 @@ def PrimitiveCohomology (X : Type u) [SmoothProjectiveVariety X] (p : ℕ) : Typ
 theorem lefschetz_decomposition {X : Type u} [SmoothProjectiveVariety X] (k : ℕ) :
     SingularCohomology X k ℚ ≅ 
       DirectSum (fun (j : ℕ) ↦ PrimitiveCohomology X (k - 2 * j)) :=
+  sorry
+
+/-- Hodge星算子 -/
+def HodgeStar {X : Type u} [KählerManifold X] {k : ℕ} : 
+    SingularCohomology X k ℂ → SingularCohomology X (2 * dim X - k) ℂ :=
+  sorry
+
+/-- 双线性形式 -/
+def HodgeRiemannForm (X : Type u) [SmoothProjectiveVariety X] (p : ℕ) :
+    HodgeClass X p →ₗ[ℚ] HodgeClass X p →ₗ[ℚ] ℚ :=
   sorry
 
 /-- Hodge-Riemann双线性关系 -/
@@ -520,53 +562,5 @@ def HodgeConjectureTimeline : List (ℕ × String) := [
   (2000, "Voisin: 某些积流形上的结果"),
   (2013, "Charles-Pirutka: 约化到特款")
 ]
-
-/-! 
-## 辅助定义
--/ 
-
--- 闭浸入
-structure ClosedImmersion (X Y : Type*) [ComplexManifold X] [ComplexManifold Y] : 
-    Prop where
-  isEmbedding : IsEmbedding f
-  isClosed : IsClosed (Set.range f)
-
--- 全纯映射
-class IsHolomorphic {X Y : Type*} [ComplexManifold X] [ComplexManifold Y] 
-    (f : X → Y) : Prop where
-
--- 光滑性
-class IsSmooth (X : Type*) [ComplexManifold X] : Prop where
-
--- 紧致流形的定向
-class Orientable (X : Type*) [TopologicalSpace X] : Prop where
-
--- 线丛
-def LineBundle (X : Type u) [SmoothProjectiveVariety X] : Type _ := 
-  sorry
-
--- 陈类
-def FirstChernClass {X : Type u} [SmoothProjectiveVariety X] (L : LineBundle X) : 
-    SingularCohomology X 2 ℤ :=
-  sorry
-
--- Picard群
-def Pic (X : Type u) [SmoothProjectiveVariety X] : Type _ :=
-  LineBundle X ⧸ (fun L₁ L₂ ↦ Nonempty (L₁ ≅ L₂))
-
--- 自由Abel群
-def FreeAbelianGroup (α : Type*) : Type _ :=
-  -- α生成的自由Abel群
-  sorry
-
--- Hodge星算子
-def HodgeStar {X : Type u} [KählerManifold X] {k : ℕ} : 
-    SingularCohomology X k ℂ → SingularCohomology X (2 * dim X - k) ℂ :=
-  sorry
-
--- 双线性形式
-def HodgeRiemannForm (X : Type u) [SmoothProjectiveVariety X] (p : ℕ) :
-    HodgeClass X p →ₗ[ℚ] HodgeClass X p →ₗ[ℚ] ℚ :=
-  sorry
 
 end HodgeConjecture

@@ -57,7 +57,7 @@ msc_secondary: ['03E30', '03E15', '11-XX']
       - [9.1 指数函数](#91-指数函数)
       - [9.2 三角函数](#92-三角函数)
     - [10. 结论](#10-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
+  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
     - [复数类型Definition](#复数类型Definition)
     - [复数运算形式化](#复数运算形式化)
     - [复数Field结构形式化](#复数Field结构形式化)

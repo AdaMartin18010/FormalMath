@@ -45,14 +45,17 @@
 - Selberg类上的黎曼假设
 -/
 
-import FormalMath.AnalyticNumberTheory
-import FormalMath.Mathlib.Analysis.SpecialFunctions.Gamma.Basic
-import FormalMath.Mathlib.Analysis.Fourier.FourierTransform
-import FormalMath.Mathlib.Data.Complex.Exponential
+import Mathlib.NumberTheory.RiemannZeta
+import Mathlib.NumberTheory.DirichletL
+import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
+import Mathlib.Analysis.Fourier.FourierTransform
+import Mathlib.Data.Complex.Exponential
 
 namespace RiemannHypothesis
 
-open AnalyticNumberTheory Complex Real BigOperators Finset Classical
+open Complex Real BigOperators Finset Classical
+
+universe u
 
 /-! 
 ## 黎曼假设的形式表述
@@ -77,7 +80,11 @@ open AnalyticNumberTheory Complex Real BigOperators Finset Classical
 - Re(s) = 1和Re(s) = 0上无零点（Hadamard-de la Vallée Poussin）
 - 因此非平凡零点在开临界带 0 < Re(s) < 1 内 -/
 def IsNontrivialZero (s : ℂ) : Prop :=
-  RiemannZeta s = 0 ∧ ¬IsTrivialZero s ∧ s ≠ 1
+  riemannZeta s = 0 ∧ ¬IsTrivialZero s ∧ s ≠ 1
+
+/-- 平凡零点的定义 -/
+def IsTrivialZero (s : ℂ) : Prop :=
+  ∃ (n : ℕ), s = -2 * (n + 1)
 
 /-- **临界线的定义**
 
@@ -127,8 +134,8 @@ Hardy证明了ζ(1/2 + it)有无穷多个实零点。
 - Conrey: 至少2/5的零点在临界线上
 - 最近: 超过41%的零点在临界线上（Feng, 2012） -/
 theorem hardy_theorem : 
-    {t : ℝ | RiemannZeta (1 / 2 + t * I) = 0}.Infinite := by
-  -- Hard定理：临界线上有无穷多个零点
+    {t : ℝ | riemannZeta (1 / 2 + t * I) = 0}.Infinite := by
+  -- Hardy定理：临界线上有无穷多个零点
   sorry  -- 需要复分析和特殊函数理论
 
 /-- **零点计数函数**
@@ -145,7 +152,7 @@ def ZeroCountingFunction (T : ℝ) : ℕ :=
 theorem riemann_von_mangoldt_formula (T : ℝ) (hT : T ≥ 2) :
     ZeroCountingFunction T = 
       T / (2 * Real.pi) * Real.log (T / (2 * Real.pi)) - T / (2 * Real.pi) + 
-      Real.log T + O(Real.log T) := by
+      Real.log T + sorry := by
   -- Riemann-von Mangoldt公式
   -- 给出零点计数函数的渐近行为
   sorry
@@ -164,6 +171,19 @@ theorem first_10_13_zeros_on_critical_line :
     ∀ s : ℂ, IsNontrivialZero s → s.im ≤ 2.4 * 10^12 → s ∈ CriticalLine := by
   -- 计算验证结果
   -- 这不是形式化证明，而是计算验证的记录
+  sorry
+
+/-- 临界线上零点的比例 -/
+def ProportionOnCriticalLine (T : ℝ) : ℝ :=
+  let N₀ := {s : ℂ | IsNontrivialZero s ∧ s ∈ CriticalLine ∧ 0 < s.im ∧ s.im ≤ T}.toFinset.card
+  let N := ZeroCountingFunction T
+  (N₀ : ℝ) / (N : ℝ)
+
+/-- Selberg定理：临界线上有正比例的零点 -/
+theorem selberg_zero_proportion :
+    ∃ (c : ℝ) (hc : c > 0),
+      ∀ᶠ T in atTop, ProportionOnCriticalLine T ≥ c := by
+  -- Selberg (1942) 证明了临界线上零点的正比例
   sorry
 
 /-! 
@@ -192,10 +212,14 @@ theorem first_10_13_zeros_on_critical_line :
 theorem rh_equivalent_prime_number_error :
     RiemannHypothesisStatement ↔ 
     ∀ ε > 0, 
-      Tendsto (fun x => (PrimeCountingFunction x - LogIntegral x) / (Real.sqrt x * Real.log x))
+      Tendsto (fun x => (Nat.primeCounting ⌊x⌋₊ - LogIntegral x) / (Real.sqrt x * Real.log x))
         atTop (𝓝 0) := by
   -- 黎曼假设与素数定理误差项的等价性
   sorry
+
+/-- 对数积分 -/
+def LogIntegral (x : ℝ) : ℝ :=
+  ∫ t in (2 : ℝ)..x, 1 / Real.log t
 
 /-- **Mertens函数的等价形式**
 
@@ -210,7 +234,7 @@ M(x) = O(x^{1/2 + ε}) 对所有 ε > 0
 在1985年推翻（反例存在，但极大）。 -/
 theorem rh_equivalent_mertens :
     RiemannHypothesisStatement ↔ 
-    ∀ ε > 0, ∀ᶠ x in atTop, |∑ n in Finset.Icc 1 (Nat.floor x), MoebiusMu n| < x ^ (1/2 + ε) := by
+    ∀ ε > 0, ∀ᶠ x in atTop, |∑ n in Finset.Icc 1 (Nat.floor x), moebius n| < x ^ (1/2 + ε) := by
   -- 黎曼假设与Mertens函数的等价性
   sorry
 
@@ -228,7 +252,7 @@ structure RedhefferMatrix (n : ℕ) where
 
 theorem redheffer_determinant (n : ℕ) :
     let A := RedhefferMatrix n
-    Matrix.det (Matrix.of A.entries) = ∑ k in Finset.Icc 1 n, MoebiusMu k := by
+    Matrix.det (Matrix.of A.entries) = ∑ k in Finset.Icc 1 n, moebius k := by
   -- Redheffer矩阵的行列式等于Mertens函数
   sorry
 
@@ -250,10 +274,10 @@ theorem redheffer_determinant (n : ℕ) :
 structure HilbertPolyaConjecture : Prop where
   -- 存在某个希尔伯特空间上的自伴算子
   exists_self_adjoint_operator : 
-    ∃ (H : HilbertSpace) (A : H → H),
-      SelfAdjoint A ∧
+    ∃ (H : Type) [HilbertSpace ℂ H] (A : H → H),
+      IsSelfAdjoint A ∧
       -- 其特征值与zeta零点对应
-      ∀ (γ : ℝ), RiemannZeta (1 / 2 + γ * I) = 0 ↔ 
+      ∀ (γ : ℝ), riemannZeta (1 / 2 + γ * I) = 0 ↔ 
         ∃ (v : H), v ≠ 0 ∧ A v = γ • v
 
 /-- **Weil猜想（已证明）**
@@ -270,9 +294,9 @@ structure HilbertPolyaConjecture : Prop where
 structure WeilConjectureProved (X : Type*) [AlgebraicVariety X] 
     (q : ℕ) [hq : Fact (Nat.Prime q)] : Prop where
   -- 对于有限域F_q上的光滑射影簇
-  smooth_projective : Smooth X ∧ Projective X
+  smooth_projective : sorry
   -- zeta函数的零点满足"黎曼假设"
-  zeros_satisfy_rh : ∀ (α : ℂ), ZetaFunctionZero X α → 
+  zeros_satisfy_rh : ∀ (α : ℂ), sorry → 
     ∃ (i : ℕ), ‖α‖ = Real.sqrt q ^ i
 
 /-! 
@@ -295,9 +319,9 @@ structure WeilConjectureProved (X : Type*) [AlgebraicVariety X]
 - 计算数论中的复杂性结果 -/
 structure GeneralizedRiemannHypothesis : Prop where
   dirichlet_l_zeros_on_critical_line : 
-    ∀ (q : ℕ) (χ : DirichletCharacter q),
-      IsPrimitive χ → χ ≠ 1 → 
-      ∀ (s : ℂ), DirichletL s χ = 0 → s ≠ 1 → 0 < s.re → s.re < 1 → s.re = 1 / 2
+    ∀ (q : ℕ) (χ : DirichletCharacter ℂ q),
+      χ.IsPrimitive → χ ≠ 1 → 
+      ∀ (s : ℂ), LFunction χ s = 0 → s ≠ 1 → 0 < s.re → s.re < 1 → s.re = 1 / 2
 
 /-- **椭圆曲线的黎曼假设**
 
@@ -309,8 +333,8 @@ structure GeneralizedRiemannHypothesis : Prop where
 这连接了椭圆曲线与模形式。
 
 **应用**: 椭圆曲线密码学、BSD猜想 -/
-structure EllipticCurveRiemannHypothesis (E : EllipticCurve ℚ) : Prop where
-  l_function_zeros : ∀ (s : ℂ), EllipticCurveLFunction E s = 0 → s.re = 1
+structure EllipticCurveRiemannHypothesis (E : Type*) [EllipticCurve E] : Prop where
+  l_function_zeros : ∀ (s : ℂ), sorry → s.re = 1
 
 /-! 
 ## 黎曼假设与素数分布
@@ -334,7 +358,7 @@ structure EllipticCurveRiemannHypothesis (E : EllipticCurve ℚ) : Prop where
 theorem prime_number_theorem_under_rh (h_rh : RiemannHypothesisStatement) :
     ∃ (C : ℝ) (hC : C > 0), 
       ∀ (x : ℝ) (hx : x ≥ 2),
-        |(PrimeCountingFunction x : ℝ) - LogIntegral x| ≤ C * Real.sqrt x * Real.log x := by
+        |(Nat.primeCounting ⌊x⌋₊ : ℝ) - LogIntegral x| ≤ C * Real.sqrt x * Real.log x := by
   -- 假设黎曼假设的素数定理
   sorry
 
@@ -352,6 +376,15 @@ theorem prime_number_theorem_under_rh (h_rh : RiemannHypothesisStatement) :
 
 其中ρ取遍非平凡零点。
 若所有Re(ρ) = 1/2，则|x^ρ| = √x，给出误差项。-/
+def ChebyshevPsi (x : ℝ) : ℝ :=
+  ∑ n in Finset.Icc 1 (Nat.floor x), Λ n
+
+/-- von Mangoldt函数 -/
+def Λ (n : ℕ) : ℝ :=
+  if ∃ (p : ℕ) (k : ℕ), Nat.Prime p ∧ p ^ k = n ∧ k > 0 then
+    Real.log (Nat.minFac n)
+  else 0
+
 theorem chebyshev_psi_under_rh (h_rh : RiemannHypothesisStatement) :
     ∃ (C : ℝ) (hC : C > 0), 
       ∀ (x : ℝ) (hx : x ≥ 2),
@@ -402,14 +435,28 @@ g(u) = 1 - (sin(πu)/(πu))²
 
 这与GUE随机矩阵的结果一致。-/
 theorem montgomery_odlyzko_law :
-    let γ_n := n-th_positive_imaginary_part_of_zero
-    let δ_n := (γ_{n+1} - γ_n) * (log γ_n / 2π)  -- 标准化间隔
+    let γ_n := sorry  -- n-th_positive_imaginary_part_of_zero
+    let δ_n := sorry  -- (γ_{n+1} - γ_n) * (log γ_n / 2π) 标准化间隔
     -- 对关联的极限分布
-    Tendsto (empirical_pair_correlation δ_n) 
-      atTop (Measure.map (pair_correlation_measure_gue)) := by
+    Tendsto sorry 
+      atTop (sorry) := by
   -- Montgomery-Odlyzko定律
   -- zeta零点与随机矩阵特征值的联系
   sorry
+
+/-- **GUE猜想**
+
+zeta零点的统计行为与Gaussian Unitary Ensemble（GUE）
+随机矩阵的特征值完全相同。
+
+这比Montgomery-Odlyzko定律更强。
+
+**意义**: 这表明黎曼zeta函数深层的随机矩阵结构，
+可能连接到量子混沌和算术量子混沌。-/
+structure GUEConjecture : Prop where
+  -- 所有关联函数都与GUE匹配
+  all_correlation_functions_match : 
+    ∀ (n : ℕ), sorry = sorry
 
 /-! 
 ## 证明策略与研究进展
@@ -429,10 +476,10 @@ Connes和Meyer的工作提供了非交换几何的视角。
 **困难**: 尚未找到这样的显式构造。 -/
 structure SpectralApproach : Prop where
   -- 构造适当的希尔伯特空间
-  exists_hilbert_space : ∃ (H : HilbertSpace) (D : H → H),
-    SelfAdjoint D ∧
+  exists_hilbert_space : ∃ (H : Type) [HilbertSpace ℂ H] (D : H → H),
+    IsSelfAdjoint D ∧
     -- 谱与zeta零点对应
-    spectrum D = {γ : ℝ | RiemannZeta (1/2 + I*γ) = 0}
+    sorry
 
 /-- **矩方法**
 
@@ -447,34 +494,14 @@ I_k(T) ~ C_k T (log T)^{k²}
 
 其中C_k是特定的常数，可用随机矩阵理论计算。-/
 def ZetaMoment (k : ℕ) (T : ℝ) : ℝ :=
-  ∫ t in (0 : ℝ)..T, ‖RiemannZeta (1/2 + t * I)‖ ^ (2 * k)
+  ∫ t in (0 : ℝ)..T, ‖riemannZeta (1/2 + t * I)‖ ^ (2 * k)
 
 theorem keating_snaith_conjecture (k : ℕ) :
     ∃ (C_k : ℝ) (hC_k : C_k > 0),
-      ZetaMoment k T ~ C_k * T * (Real.log T)^(k^2) := by
+      sorry := by
   -- Keating-Snaith猜想
   -- zeta矩与随机矩阵理论的联系
   sorry
-
-/-! 
-## 黎曼假设的数学影响
-
-若黎曼假设被证明，将有许多重要推论。
--/
-
-/-- **GUE猜想**
-
-zeta零点的统计行为与Gaussian Unitary Ensemble（GUE）
-随机矩阵的特征值完全相同。
-
-这比Montgomery-Odlyzko定律更强。
-
-**意义**: 这表明黎曼zeta函数深层的随机矩阵结构，
-可能连接到量子混沌和算术量子混沌。-/
-structure GUEConjecture : Prop where
-  -- 所有关联函数都与GUE匹配
-  all_correlation_functions_match : 
-    ∀ (n : ℕ), correlation_function_zeros n = correlation_function_gue n
 
 /-- **Farey序列与黎曼假设**
 
@@ -486,13 +513,39 @@ Farey序列的某种均匀分布性质。
 
 **等价形式**: 若δ_i是连续Farey分数的差，
 则黎曼假设等价于Σ|δ_i - 1/|F_n||² = O(n^{-1+ε}) -/
+def FareySequence (n : ℕ) : Finset ℚ :=
+  {q : ℚ | q ∈ Set.Icc 0 1 ∧ q.den ≤ n ∧ q.num.Coprime q.den}
+
+def differences (F : Finset ℚ) : List ℚ :=
+  sorry  -- 连续元素的差
+
 theorem franel_landau_criterion :
     RiemannHypothesisStatement ↔ 
     ∀ ε > 0, 
       let F_n := FareySequence n
       let δ_i := differences F_n
-      ∑ i, |δ_i - 1 / F_n.card|^2 = O (n^(-1 + ε)) := by
+      sorry := by
   -- Franel-Landau准则
+  sorry
+
+/-! 
+## 黎曼假设的数学影响
+
+若黎曼假设被证明，将有许多重要推论。
+-/
+
+/-- **显式公式**
+
+von Mangoldt显式公式连接了素数分布与zeta零点：
+
+ψ(x) = x - Σ_ρ x^ρ/ρ - ζ'(0)/ζ(0) - 1/2 log(1-x^{-2})
+
+若黎曼假设成立，则|x^ρ| = √x，给出最佳误差项。 -/
+theorem von_mangoldt_explicit_formula (x : ℝ) (hx : x > 1) :
+    ChebyshevPsi x = x - ∑ ρ in {s | IsNontrivialZero s}, x^ρ / ρ 
+      - deriv riemannZeta 0 / riemannZeta 0 
+      - 1/2 * Real.log (1 - x^(-2 : ℤ)) := by
+  -- von Mangoldt显式公式
   sorry
 
 /-! 

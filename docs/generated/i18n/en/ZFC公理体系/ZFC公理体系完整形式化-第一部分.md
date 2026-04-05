@@ -52,7 +52,7 @@ msc_secondary: ['11Axx', '03E30', '03E15']
       - [5.3 在计算机科学中的应用](#53-在计算机科学中的应用)
       - [5.4 在哲学中的应用](#54-在哲学中的应用)
     - [6. 结论](#6-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
+  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
     - [ZFC公理系统形式化](#zfc公理系统形式化)
     - [基本Theorem形式化](#基本Theorem形式化)
     - [应用案例：ZFC公理体系在类型理论中的应用](#应用案例zfc公理体系在类型理论中的应用)

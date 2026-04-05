@@ -40,7 +40,7 @@ processed_at: '2026-04-05'
       - [7.4 在组合数学中的应用](#74-在组合数学中的应用)
       - [7.5 在计算机科学中的应用](#75-在计算机科学中的应用)
     - [8. 结论](#8-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
+  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
     - [整除理论形式化](#整除理论形式化)
     - [素数理论形式化](#素数理论形式化)
     - [同余理论形式化](#同余理论形式化)

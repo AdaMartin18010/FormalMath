@@ -12,7 +12,7 @@ processed_at: '2026-04-05'
 - [ZFC到抽象代数结构完整论证 - 国际标准版](#zfc到抽象代数结构完整论证---国际标准版)
   - [目录](#目录)
   - [Complete Argumentation from ZFC to Abstract Algebraic Structures - International Standard Version](#complete-argumentation-from-zfc-to-abstract-algebraic-structures---international-standard-version)
-  - [📚 概述 / Overview](#概述)
+  - [📚 概述 / Overview](#-概述--overview)
   - [🏗️ 1. 从ZFC到代数运算的构造 / Construction from ZFC to Algebraic Operations](#️-1-从zfc到代数运算的构造--construction-from-zfc-to-algebraic-operations)
     - [1.1 ZFC公理体系回顾 / ZFC Axiom System Review](#11-zfc公理体系回顾--zfc-axiom-system-review)
     - [1.2 二元运算的构造 / Construction of Binary Operations](#12-二元运算的构造--construction-of-binary-operations)
@@ -42,7 +42,7 @@ processed_at: '2026-04-05'
     - [8.3 经典数学文献 / Classical Mathematical Literature](#83-经典数学文献--classical-mathematical-literature)
     - [8.4 形式化数学文献 / Formal Mathematics Literature](#84-形式化数学文献--formal-mathematics-literature)
   - [🔗 相关链接 / Related Links](#-相关链接--related-links)
-  - [术语对照表 / Terminology Table](#术语对照表)
+  - [术语对照表 / Terminology Table](#术语对照表--terminology-table)
 
 ## Complete Argumentation from ZFC to Abstract Algebraic Structures - International Standard Version
 

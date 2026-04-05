@@ -177,6 +177,14 @@ def divergence {n : ℕ} (u : ℝⁿ n → ℝⁿ n) (x : ℝⁿ n) : ℝ :=
 def gradient {n : ℕ} (f : ℝⁿ n → ℝ) (x : ℝⁿ n) : ℝⁿ n :=
   fun i ↦ fderiv ℝ f x (Pi.single i 1)
 
+/-- 旋度（涡量）-/
+def curl (u : ℝⁿ 3 → ℝⁿ 3) (x : ℝⁿ 3) : ℝⁿ 3 :=
+  fun i ↦ match i with
+  | 0 => fderiv ℝ (u · 2) x (Pi.single 1 1) - fderiv ℝ (u · 1) x (Pi.single 2 1)
+  | 1 => fderiv ℝ (u · 0) x (Pi.single 2 1) - fderiv ℝ (u · 2) x (Pi.single 0 1)
+  | 2 => fderiv ℝ (u · 1) x (Pi.single 0 1) - fderiv ℝ (u · 0) x (Pi.single 1 1)
+  | _ => 0
+
 /-! 
 ## 千禧年问题的精确陈述
 
@@ -316,6 +324,13 @@ theorem leray_existence_theorem :
   -- 弱解的存在性
   sorry
 
+/-- 能量等式（光滑解）-/
+theorem energy_equality {n : ℕ} (ns : NavierStokesSystem n)
+    (sol : ClassicalSolution ns) (t : ℝ) (ht : t > 0) :
+    1/2 * ‖fun x ↦ sol.u x t‖_{L^2}^2 + ns.ν * sorry =
+    1/2 * ‖ns.u₀‖_{L^2}^2 :=
+  sorry
+
 /-! 
 ## 部分正则性理论
 
@@ -432,21 +447,13 @@ theorem beale_kato_majda_criterion :
           ν := 1, hν := by norm_num,
           f := fun _ _ ↦ 0, u₀ := u₀, domain := Set.univ
         }
-        ClassicalSolution ns →
+        ClassicalSolution ns u p →
         ∀ (T : ℝ) (hT : T > 0),
           (∫ t in (0:ℝ)..T, ‖curl (u · t)‖_{L^∞}) < ⊤ →
           -- 解保持光滑
           ∀ t ∈ Set.Icc 0 T, ContDiff ℝ ⊤ (u · t) := by
   -- Beale-Kato-Majda正则性准则
   sorry
-
-/-- 旋度（涡量）-/
-def curl (u : ℝⁿ 3 → ℝⁿ 3) (x : ℝⁿ 3) : ℝⁿ 3 :=
-  fun i ↦ match i with
-  | 0 => fderiv ℝ (u · 2) x (Pi.single 1 1) - fderiv ℝ (u · 1) x (Pi.single 2 1)
-  | 1 => fderiv ℝ (u · 0) x (Pi.single 2 1) - fderiv ℝ (u · 2) x (Pi.single 0 1)
-  | 2 => fderiv ℝ (u · 1) x (Pi.single 0 1) - fderiv ℝ (u · 0) x (Pi.single 1 1)
-  | _ => 0
 
 /-! 
 ## 尺度分析与临界空间
@@ -512,6 +519,13 @@ theorem small_data_global_existence :
   -- 小初值整体存在性
   sorry
 
+/-- L^p空间 -/
+def LpSpace (p : ℝ) (I : Set ℝ) : Type :=
+  {f : ℝ → ℝ | sorry}  -- f在L^p(I)中
+
+instance : Membership (ℝ → ℝ) (LpSpace p I) :=
+  ⟨fun f ↦ sorry⟩
+
 /-! 
 ## 二维纳维-斯托克斯方程
 
@@ -542,6 +556,18 @@ theorem two_dimensional_global_regularity :
         }
         ClassicalSolution ns u p := by
   -- 二维整体正则性
+  sorry
+
+/-- 二维涡量方程 -/
+theorem vorticity_equation_2d (u₀ : ℝⁿ 2 → ℝⁿ 2) 
+    (u : VelocityField 2) (p : PressureField 2)
+    (ns : NavierStokesSystem 2)
+    (h : ClassicalSolution ns u p) :
+    ∀ x t, 
+      let ω := curl (fun y ↦ ⟨u y t 0, u y t 1, 0⟩) ⟨x 0, x 1, 0⟩ 2
+      timeDerivative (fun y s ↦ ω) x t + 
+        sorry = 
+      ns.ν * sorry :=
   sorry
 
 /-! 
@@ -620,12 +646,5 @@ def NavierStokesTimeline : List (ℕ × String) := [
   (2003, "Escauriaza-Seregin-Šverák: L³正则性"),
   (2014, "Tao: 平均化NS方程的爆破")
 ]
-
-/-- L^p空间 -/
-def LpSpace (p : ℝ) (I : Set ℝ) : Type :=
-  {f : ℝ → ℝ | sorry}  -- f在L^p(I)中
-
-instance : Membership (ℝ → ℝ) (LpSpace p I) :=
-  ⟨fun f ↦ sorry⟩
 
 end NavierStokes

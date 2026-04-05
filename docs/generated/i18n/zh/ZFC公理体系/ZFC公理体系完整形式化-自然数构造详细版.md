@@ -41,7 +41,7 @@ msc_secondary: ['00-XX']
       - [6.4 在计算机科学中的应用](#64-在计算机科学中的应用)
       - [6.5 在组合数学中的应用](#65-在组合数学中的应用)
     - [7. 结论](#7-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
+  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
     - [冯·诺伊曼序数形式化](#冯诺伊曼序数形式化)
     - [自然数运算形式化](#自然数运算形式化)
     - [数学归纳法形式化](#数学归纳法形式化)

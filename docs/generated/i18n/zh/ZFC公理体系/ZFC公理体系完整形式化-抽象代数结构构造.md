@@ -17,7 +17,7 @@ msc_secondary: ['00-XX']
 
 - [ZFC公理体系完整形式化 - 抽象代数结构构造](#zfc公理体系完整形式化---抽象代数结构构造)
   - [目录](#目录)
-  - [📚 概述 / Overview / Aperçu / Übersicht](#-概述--overview--aperçu--übersicht)
+  - [📚 概述 / Overview / Aperçu / Übersicht](#概述--overview--aperçu--übersicht)
   - [🏗️ 代数结构的基础构造 / Basic Construction of Algebraic Structures / Construction de base des structures algébriques / Grundlegende Konstruktion algebraischer Strukturen](#️-代数结构的基础构造--basic-construction-of-algebraic-structures--construction-de-base-des-structures-algébriques--grundlegende-konstruktion-algebraischer-strukturen)
     - [1. 二元运算的定义 / Definition of Binary Operations / Définition des opérations binaires / Definition binärer Operationen](#1-二元运算的定义--definition-of-binary-operations--définition-des-opérations-binaires--definition-binärer-operationen)
       - [1.1 二元运算 / Binary Operation / Opération binaire / Binäre Operation](#11-二元运算--binary-operation--opération-binaire--binäre-operation)
@@ -38,13 +38,13 @@ msc_secondary: ['00-XX']
     - [6. 代数结构在数论中的应用 / Applications of Algebraic Structures in Number Theory / Applications des structures algébriques en théorie des nombres / Anwendungen algebraischer Strukturen in der Zahlentheorie](#6-代数结构在数论中的应用--applications-of-algebraic-structures-in-number-theory--applications-des-structures-algébriques-en-théorie-des-nombres--anwendungen-algebraischer-strukturen-in-der-zahlentheorie)
       - [6.1 模运算群 / Modular Arithmetic Groups / Groupes d'arithmétique modulaire / Modulare Arithmetikgruppen](#61-模运算群--modular-arithmetic-groups--groupes-darithmétique-modulaire--modulare-arithmetikgruppen)
       - [6.2 乘法群 / Multiplicative Group / Groupe multiplicatif / Multiplikative Gruppe](#62-乘法群--multiplicative-group--groupe-multiplicatif--multiplikative-gruppe)
-  - [🔗 国际标准对照 / International Standard Comparison / Comparaison des standards internationaux / Internationaler Standardvergleich](#-国际标准对照--international-standard-comparison--comparaison-des-standards-internationaux--internationaler-standardvergleich)
+  - [🔗 国际标准对照 / International Standard Comparison / Comparaison des standards internationaux / Internationaler Standardvergleich](#国际标准对照--international-standard-comparison--comparaison-des-standards-internationaux--internationaler-standardvergleich)
     - [与Wikipedia数学标准的对照 / Comparison with Wikipedia Mathematical Standards / Comparaison avec les standards mathématiques de Wikipedia / Vergleich mit Wikipedia-Mathematikstandards](#与wikipedia数学标准的对照--comparison-with-wikipedia-mathematical-standards--comparaison-avec-les-standards-mathématiques-de-wikipedia--vergleich-mit-wikipedia-mathematikstandards)
     - [与著名大学教程的对照 / Comparison with Famous University Courses / Comparaison avec les cours d'universités célèbres / Vergleich mit berühmten Universitätskursen](#与著名大学教程的对照--comparison-with-famous-university-courses--comparaison-avec-les-cours-duniversités-célèbres--vergleich-mit-berühmten-universitätskursen)
-  - [📚 多语言术语对照 / Multilingual Terminology Comparison / Comparaison terminologique multilingue / Mehrsprachiger Terminologievergleich](#-多语言术语对照--multilingual-terminology-comparison--comparaison-terminologique-multilingue--mehrsprachiger-terminologievergleich)
+  - [📚 多语言术语对照 / Multilingual Terminology Comparison / Comparaison terminologique multilingue / Mehrsprachiger Terminologievergleich](#多语言术语对照--multilingual-terminology-comparison--comparaison-terminologique-multilingue--mehrsprachiger-terminologievergleich)
     - [代数结构概念 / Algebraic Structure Concepts / Concepts de structure algébrique / Algebraische Strukturbegriffe](#代数结构概念--algebraic-structure-concepts--concepts-de-structure-algébrique--algebraische-strukturbegriffe)
     - [运算性质 / Operation Properties / Propriétés d'opération / Operationseigenschaften](#运算性质--operation-properties--propriétés-dopération--operationseigenschaften)
-  - [🎯 结论 / Conclusion / Conclusion / Schlussfolgerung](#-结论--conclusion--conclusion--schlussfolgerung)
+  - [🎯 结论 / Conclusion / Conclusion / Schlussfolgerung](#结论--conclusion--conclusion--schlussfolgerung)
 
 ## 📚 概述 / Overview / Aperçu / Übersicht
 

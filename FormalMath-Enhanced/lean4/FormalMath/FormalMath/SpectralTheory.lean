@@ -29,11 +29,11 @@
 von Neumann将其应用于量子力学的数学基础。
 -/
 
-import FormalMath.Mathlib.Analysis.InnerProductSpace.Adjoint
-import FormalMath.Mathlib.Analysis.NormedSpace.CompactOperator
-import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
-import FormalMath.Mathlib.Analysis.InnerProductSpace.Basic
-import FormalMath.Mathlib.Analysis.Calculus.ContDiff.Basic
+import Mathlib.Analysis.InnerProductSpace.Adjoint
+import Mathlib.Analysis.NormedSpace.CompactOperator
+import Mathlib.Analysis.Calculus.Deriv.Basic
+import Mathlib.Analysis.InnerProductSpace.Basic
+import Mathlib.Analysis.Calculus.ContDiff.Basic
 
 namespace SpectralTheory
 
@@ -110,7 +110,8 @@ theorem resolvent_equation {H : Type*} [HilbertSpace ℂ H] {T : H →L[ℂ] H}
   -- (T-λI)⁻¹ - (T-μI)⁻¹ = (T-λI)⁻¹[(T-μI)-(T-λI)](T-μI)⁻¹
   --                        = (T-λI)⁻¹(λ-μ)I(T-μI)⁻¹
   --                        = (λ-μ)(T-λI)⁻¹(T-μI)⁻¹
-  sorry -- 需要Mathlib中逆算子的详细性质
+  -- 核心定理，需要详细证明
+  sorry
 
 /-! 
 ## 谱的非空性 (Spectrum is Non-empty)
@@ -133,7 +134,8 @@ theorem spectrum_nonempty {H : Type*} [HilbertSpace ℂ H] [Nontrivial H]
   -- 考虑预解式在无穷远处的行为
   -- 当|λ|→∞时，‖R(λ,T)‖→0
   -- 由Liouville定理，R(λ,T) = 0，矛盾
-  sorry -- 需要Liouville定理的算子版本
+  -- 这是谱理论的经典结果
+  sorry
 
 /-! 
 ## 谱半径 (Spectral Radius)
@@ -166,7 +168,8 @@ theorem gelfand_spectral_radius {H : Type*} [HilbertSpace ℂ H]
   --    利用预解式的Laurent展开
   -- 2. r(T) ≥ limsup ‖Tⁿ‖^{1/n}
   --    利用谱映射定理
-  sorry -- 这是深刻的分析结果，需要详尽的证明
+  -- 这是深刻的分析结果，需要详尽的证明
+  sorry
 
 /-! 
 ## 自伴算子 (Self-Adjoint Operators)
@@ -198,7 +201,8 @@ theorem selfadjoint_spectrum_real {H : Type*} [HilbertSpace ℂ H]
   -- 利用T的自伴性
   -- ‖(T-λI)x‖² = ‖(T-aI)x‖² + b²‖x‖² ≥ b²‖x‖²
   -- 故T-λI有有界逆
-  sorry -- 需要详细的内积计算
+  -- 核心定理，需要详细证明
+  sorry
 
 /-! 
 ## 紧算子 (Compact Operators)
@@ -239,7 +243,8 @@ theorem compact_selfadjoint_spectral {H : Type*} [HilbertSpace ℂ H]
   -- 2. 利用极值原理：sup{‖Tx‖ : ‖x‖=1}在特征向量处达到
   -- 3. 对正交补递归应用，得到正交特征基
   -- 4. 利用紧性证明特征值趋于0
-  sorry -- 这是谱理论的经典结果
+  -- 这是谱理论的经典结果
+  sorry
 
 /-! 
 ## 无界自伴算子 (Unbounded Self-Adjoint Operators)
@@ -303,7 +308,8 @@ theorem spectral_theorem_selfadjoint {H : Type*} [HilbertSpace ℂ H]
   -- 1. 构造C(σ(T))到B(H)的等距*同态
   -- 2. 利用Riesz-Markov定理延拓到L∞
   -- 3. 定义谱测度E(S) = χ_S(T)
-  sorry -- 这是深刻的泛函分析结果
+  -- 这是深刻的泛函分析结果
+  sorry
 
 /-! 
 ## 正规算子 (Normal Operators)
@@ -334,7 +340,8 @@ theorem spectral_theorem_normal {H : Type*} [HilbertSpace ℂ H]
   -- 对于正规算子T，构造自伴算子U = (T-iI)(T+iI)⁻¹（Cayley变换）
   -- U是酉算子，应用酉算子的谱定理
   -- 然后逆变换回来
-  sorry -- 这是自伴谱定理的推论
+  -- 这是自伴谱定理的推论
+  sorry
 
 /-! 
 ## 连续泛函演算 (Continuous Functional Calculus)
@@ -349,7 +356,8 @@ def ContinuousFunctionalCalculus {H : Type*} [HilbertSpace ℂ H]
     (f : C(Spectrum T, ℂ)) : H →L[ℂ] H :=
   -- 通过谱积分定义
   -- f(T) = ∫_{σ(T)} f(λ) dE(λ)
-  sorry -- 依赖于谱测度的构造
+  -- 依赖于谱测度的构造
+  sorry
 
 /-! 
 ## 泛函演算的同态性质 (Functional Calculus is a *-Homomorphism)
@@ -367,7 +375,8 @@ theorem functional_calculus_homomorphism {H : Type*} [HilbertSpace ℂ H]
     ContinuousFunctionalCalculus h_selfadj g := by
   -- 验证同态性质
   -- 利用谱积分的乘性
-  sorry -- 依赖于谱积分的性质
+  -- 依赖于谱积分的性质
+  sorry
 
 /-! 
 ## 离散谱与本质谱 (Discrete and Essential Spectrum)
@@ -407,7 +416,8 @@ theorem weyl_criterion {H : Type*} [HilbertSpace ℂ H]
   -- (⇒) λ在本质谱中，则T-λI不是Fredholm算子
   --     可以构造近似零空间的序列
   -- (⇐) 假设存在Weyl序列，证明λ不是离散谱点
-  sorry -- 这是本质谱的特征刻画
+  -- 这是本质谱的特征刻画
+  sorry
 
 /-! 
 ## 本质谱的稳定性 (Stability of Essential Spectrum)
@@ -423,7 +433,8 @@ theorem essential_spectrum_stability {H : Type*} [HilbertSpace ℂ H]
   -- 证明：利用Weyl判别准则
   -- 对于λ ∈ σ_ess(T)，构造T+K的Weyl序列
   -- 利用K的紧性，Ku_n → 0
-  sorry -- 这是Weyl-von Neumann定理
+  -- 这是Weyl-von Neumann定理
+  sorry
 
 /-! 
 ## 辅助定义
@@ -458,7 +469,7 @@ def BorelFunctionalCalculus {H : Type*} [HilbertSpace ℂ H]
     {T : H →L[ℂ] H} (h_selfadj : IsSelfAdjoint T)
     (f : Spectrum T → ℂ) (hf : Measurable f) : H →L[ℂ] H :=
   -- 通过谱积分定义
-  sorry -- 依赖于谱测度
+  sorry
 
 /-! 
 ## 谱映射定理 (Spectral Mapping Theorem)
@@ -472,6 +483,7 @@ theorem spectral_mapping {H : Type*} [HilbertSpace ℂ H]
     Spectrum (ContinuousFunctionalCalculus h_selfadj f) = 
     f '' Spectrum T := by
   -- 这是泛函演算的核心性质
-  sorry -- 需要泛函演算的详细构造
+  -- 需要泛函演算的详细构造
+  sorry
 
 end SpectralTheory

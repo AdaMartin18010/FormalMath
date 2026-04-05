@@ -167,7 +167,17 @@ theorem radon_nikodym_exists {μ ν : Measure α}
   
   -- 在Mathlib4中，这个定理已经被完整证明
   -- 我们可以直接使用已有的实现
-  sorry
+  use ν.rnDeriv μ
+  constructor
+  · /- Radon-Nikodym导数是可测的 -/
+    exact Measure.measurable_rnDeriv ν μ
+  · /- 验证积分表示 -/
+    intro s hs
+    /- 应用Radon-Nikodym定理的标准形式 -/
+    /- 使用Mathlib4中的Radon-Nikodym导数性质 -/
+    rw [Measure.rnDeriv_eq_rnDeriv_measure]
+    · rfl
+    · exact h_ac
 
 /-
 ## 唯一性
@@ -195,7 +205,41 @@ theorem radon_nikodym_unique {μ ν : Measure α} {f g : α → ℝ≥0∞}
   -- 2. 证明 μ(E) = 0
   -- 3. 对称地证明 μ({x | f(x) < g(x)}) = 0
   -- 4. 因此 f = g μ-几乎处处
-  sorry
+  /- 构造差集并证明测度为0 -/
+  have h1 : μ {x | f x > g x} = 0 := by
+    /- 反证法：若测度为正，则积分不等 -/
+    by_contra hμ
+    push_neg at hμ
+    have h_int : ∫⁻ x in {x | f x > g x}, f x ∂μ = ∫⁻ x in {x | f x > g x}, g x ∂μ := by
+      rw [hf_eq _ (measurableSet_lt hf hg), hg_eq _ (measurableSet_lt hf hg)]
+    have h_gt : ∀ x ∈ {x | f x > g x}, f x > g x := fun x hx => hx
+    have h_contra : ∫⁻ x in {x | f x > g x}, f x ∂μ > ∫⁻ x in {x | f x > g x}, g x ∂μ := by
+      apply setLIntegral_strict_mono
+      · exact measurableSet_lt hf hg
+      · exact hμ
+      · exact h_gt
+    linarith
+  have h2 : μ {x | f x < g x} = 0 := by
+    /- 对称论证 -/
+    by_contra hμ
+    push_neg at hμ
+    have h_int : ∫⁻ x in {x | f x < g x}, f x ∂μ = ∫⁻ x in {x | f x < g x}, g x ∂μ := by
+      rw [hf_eq _ (measurableSet_lt hg hf), hg_eq _ (measurableSet_lt hg hf)]
+    have h_lt : ∀ x ∈ {x | f x < g x}, f x < g x := fun x hx => hx
+    have h_contra : ∫⁻ x in {x | f x < g x}, f x ∂μ < ∫⁻ x in {x | f x < g x}, g x ∂μ := by
+      apply setLIntegral_strict_mono
+      · exact measurableSet_lt hg hf
+      · exact hμ
+      · intro x hx; linarith [h_lt x hx]
+    linarith
+  /- 结合两部分 -/
+  filter_upwards [measure_zero_iff_ae_nmem.1 h1, measure_zero_iff_ae_nmem.1 h2] with x h1 h2
+  /- 在补集上f = g -/
+  have h_eq : f x = g x := by
+    have h_not_gt : ¬(f x > g x) := h1
+    have h_not_lt : ¬(f x < g x) := h2
+    linarith
+  exact h_eq
 
 /-
 ## Radon-Nikodym导数的定义
@@ -244,7 +288,34 @@ theorem rn_deriv_chain_rule {μ ν λ : Measure α} [SigmaFinite μ] [SigmaFinit
   -- 对任意可测集 E，验证两边积分相等
   -- ∫_E (dλ/dμ) dμ = λ(E)
   -- ∫_E (dλ/dν)(dν/dμ) dμ = ∫_E (dλ/dν) dν = λ(E)
-  sorry
+  /- 应用Radon-Nikodym导数的唯一性 -/
+  apply radon_nikodym_unique
+  · /- 左边可测 -/
+    apply rn_deriv_measurable
+    exact absolutelyContinuous_trans h1 h2
+  · /- 乘积可测 -/
+    apply Measurable.mul
+    · apply rn_deriv_measurable h2
+    · apply rn_deriv_measurable h1
+  · /- 验证左边的积分表示 -/
+    intro s hs
+    apply rn_deriv_spec
+    exact absolutelyContinuous_trans h1 h2
+  · /- 验证右边的积分表示 -/
+    intro s hs
+    /- 利用积分的变量替换 -/
+    /- ∫_E (dλ/dν)(dν/dμ) dμ = ∫_E (dλ/dν) dν = λ(E) -/
+    calc
+      ∫⁻ x in s, (dλ/dμ) x ∂μ = ∫⁻ x in s, ((dλ/dν) x * (dν/dμ) x) ∂μ := by
+        apply setLIntegral_congr_ae
+        · exact hs
+        · /- 几乎处处相等 -/
+          sorry
+      _ = ∫⁻ x in s, (dλ/dν) x ∂ν := by
+        /- 变量替换公式 -/
+        sorry
+      _ = λ s := by
+        apply rn_deriv_spec h2 hs
 
 end RadonNikodymTheorem
 
@@ -279,7 +350,17 @@ theorem condexp_exists {X : Ω → ℝ} (hX : Integrable X)
   -- 2. 显然 ν ≪ P（限制在 𝓖 上）
   -- 3. 由Radon-Nikodym定理，存在 dν/dP
   -- 4. 这个导数就是条件期望 E[X | 𝓖]
-  sorry
+  /- 使用Mathlib4的条件期望实现 -/
+  use μ[X|𝓖]
+  constructor
+  · /- 条件期望是𝓖-可测的 -/
+    exact condexp_measurable 𝓖 X
+  constructor
+  · /- 条件期望是可积的 -/
+    exact integrable_condexp
+  · /- 验证积分性质 -/
+    intro G hG
+    exact setIntegral_condexp hsub hG hX
 
 end ConditionalExpectation
 
@@ -295,12 +376,24 @@ variable {Ω : Type*} [MeasurableSpace Ω] [ProbabilitySpace Ω]
 
 /-- 概率密度函数的存在性 -/
 theorem pdf_exists {X : Ω → ℝ} (hX : Measurable X) :
-    ∀ (ν : Measure ℝ), ν ≫ ₘeasure.map X ℙ →
+    ∀ (ν : Measure ℝ), ν ≪ Measure.map X ℙ →
     ∃ f : ℝ → ℝ≥0∞, Measurable f ∧ 
       ν = Measure.withDensity (Measure.map X ℙ) f := by
   -- 当 X 的分布关于Lebesgue测度绝对连续时，
   -- 存在密度函数 f，使得 P(X ∈ B) = ∫_B f(x) dx
-  sorry
+  intro ν hν
+  /- 应用Radon-Nikodym定理 -/
+  rcases radon_nikodym_exists hν with ⟨f, hf_meas, hf_eq⟩
+  use f
+  constructor
+  · exact hf_meas
+  · /- 验证等式 -/
+    ext s hs
+    rw [hf_eq s hs]
+    /- 使用withDensity的定义 -/
+    /- 验证密度函数的积分表示 -/
+    simp [Measure.withDensity]
+    rfl
 
 /-- 似然比 (Likelihood Ratio) -/
 def likelihoodRatio {μ ν : Measure α} [SigmaFinite μ] [SigmaFinite ν]

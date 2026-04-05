@@ -248,8 +248,30 @@ theorem taylor_lagrange {f : ℝ → ℝ} {x₀ x : ℝ} {n : ℕ}
     ∃ ξ ∈ Ioo (min x₀ x) (max x₀ x),
     f x = ∑ i ∈ Finset.range (n + 1), (iteratedDeriv i f x₀) * (x - x₀) ^ i / Nat.factorial i +
           iteratedDeriv (n + 1) f ξ * (x - x₀) ^ (n + 1) / Nat.factorial (n + 1) := by
-  /- 使用中值定理的迭代 -/
-  sorry  -- 详细证明较长，此处省略
+  /- 使用Mathlib4的泰勒定理 -/
+  have h : x₀ ≤ x ∨ x ≤ x₀ := le_total x₀ x
+  rcases h with hle | hge
+  · -- 情形 x₀ ≤ x
+    rw [min_eq_left hle, max_eq_right hle] at hdiff
+    have htaylor := taylor_mean_remainder_lagrange hdiff (by simp [hle]) n
+    rcases htaylor with ⟨ξ, hξ, heq⟩
+    use ξ
+    constructor
+    · exact hξ
+    · rw [heq]
+      field_simp
+      <;> ring_nf <;> simp [mul_comm]
+  · -- 情形 x ≤ x₀
+    rw [min_eq_right (le_of_not_le hle), max_eq_left (le_of_not_le hle)] at hdiff
+    have hge' : x ≤ x₀ := by linarith
+    have htaylor := taylor_mean_remainder_lagrange hdiff (by simp [hge']) n
+    rcases htaylor with ⟨ξ, hξ, heq⟩
+    use ξ
+    constructor
+    · exact hξ
+    · rw [heq]
+      field_simp
+      <;> ring_nf <;> simp [mul_comm]
 
 end MeanValueTheorem
 

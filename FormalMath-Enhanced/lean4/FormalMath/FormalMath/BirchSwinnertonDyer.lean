@@ -210,6 +210,11 @@ theorem mordell_theorem (E : EllipticCurve) :
   -- Mordell-Weil定理
   sorry
 
+/-- 弱Mordell-Weil定理：E(Q)/nE(Q)有限 -/
+theorem weak_mordell_weil (E : EllipticCurve) (n : ℕ) (hn : n > 0) :
+    Fintype (RationalPoints E ⧸ (nsmul n ⊤)) :=
+  sorry
+
 /-! 
 ## L-函数与Hasse-Weil猜想
 
@@ -269,6 +274,17 @@ def leadingCoefficient (f : ℂ → ℂ) (z₀ : ℂ) (n : ℕ) : ℂ :=
   -- L(f,s)在s=z₀处n阶零点的主导系数
   sorry
 
+/-- 权k的Eisenstein级数 -/
+structure EisensteinSeries (k N : ℕ) where
+  weight : k
+  level : N
+  -- 其他性质
+  sorry
+
+/-- 模形式的L-函数 -/
+def ModularLFunction (f : EisensteinSeries 2 N) (s : ℂ) : ℂ :=
+  sorry
+
 /-- 模性定理 (Wiles, Taylor-Wiles, Breuil-Conrad-Diamond-Taylor)
 
 每条有理椭圆曲线都是模的。
@@ -286,15 +302,8 @@ theorem modularity_theorem (E : EllipticCurve) :
   -- 模性定理
   sorry
 
-/-- 权k的Eisenstein级数 -/
-structure EisensteinSeries (k N : ℕ) where
-  weight : k
-  level : N
-  -- 其他性质
-  sorry
-
-/-- 模形式的L-函数 -/
-def ModularLFunction (f : EisensteinSeries 2 N) (s : ℂ) : ℂ :=
+/-- 导子（conductor）-/
+def Conductor (E : EllipticCurve) : ℕ :=
   sorry
 
 /-! 
@@ -344,6 +353,10 @@ def BSDConjectureFull : Prop :=
 强BSD公式中的各项。
 -/ 
 
+/-- 最大实根 -/
+def greatestRealRoot (f : ℝ → ℝ) : ℝ :=
+  sorry
+
 /-- 实周期
 
 Ω_E = ∫_{E(R)} |dx/y|
@@ -357,10 +370,6 @@ def RealPeriod (E : EllipticCurve) : ℝ :=
   -- 计算实周期积分
   let α := greatestRealRoot (fun x ↦ x^3 + E.a4 * x + E.a6)
   ∫ x in Set.Ioi α, 1 / Real.sqrt (x^3 + E.a4 * x + E.a6)
-
-/-- 最大实根 -/
-def greatestRealRoot (f : ℝ → ℝ) : ℝ :=
-  sorry
 
 /-- Néron-Tate高度
 
@@ -377,6 +386,11 @@ def greatestRealRoot (f : ℝ → ℝ) : ℝ :=
 **高度配对**: ⟨P,Q⟩ = 1/2(ĥ(P+Q) - ĥ(P) - ĥ(Q)) -/
 def CanonicalHeight (E : EllipticCurve) (P : RationalPoints E) : ℝ :=
   -- 定义典范高度
+  sorry
+
+/-- E(Q)的一组基 -/
+def basisOfRationalPoints (E : EllipticCurve) (hr : Rank E > 0) : 
+    Fin (Rank E) → RationalPoints E :=
   sorry
 
 /-- 调节子
@@ -402,11 +416,6 @@ def Regulator (E : EllipticCurve) : ℝ :=
       let heightPj := CanonicalHeight E Pj
       (heightSum - heightPi - heightPj) / 2)
     height_matrix.det
-
-/-- E(Q)的一组基 -/
-def basisOfRationalPoints (E : EllipticCurve) (hr : Rank E > 0) : 
-    Fin (Rank E) → RationalPoints E :=
-  sorry
 
 /-- Tate-Shafarevich群
 
@@ -452,16 +461,16 @@ def TamagawaNumber (E : EllipticCurve) (p : ℕ) : ℕ :=
 尽管BSD猜想尚未完全解决，有许多重要的部分结果。
 -/ 
 
+/-- 虚二次域 -/
+structure ImaginaryQuadraticField where
+  d : ℤ
+  hd : d < 0 ∧ Squarefree d
+
 /-- 复乘椭圆曲线 -/
 class HasComplexMultiplication (E : EllipticCurve) : Prop where
   -- 具有复乘
   exists_cm_field : ∃ (K : ImaginaryQuadraticField), 
     sorry
-
-/-- 虚二次域 -/
-structure ImaginaryQuadraticField where
-  d : ℤ
-  hd : d < 0 ∧ Squarefree d
 
 /-- 自同态环 -/
 def EndomorphismRing (E : EllipticCurve) : Type :=
@@ -575,6 +584,15 @@ theorem bhargava_shankar_average_rank :
   -- Bhargava-Shankar平均秩定理
   sorry
 
+/-- Selmer群 -/
+def SelmerGroup (E : EllipticCurve) (n : ℕ) : Type :=
+  sorry
+
+/-- 2-Selmer秩与真实秩的关系 -/
+theorem selmer_rank_bound (E : EllipticCurve) :
+    Rank E ≤ Fintype.card (SelmerGroup E 2) :=
+  sorry
+
 /-! 
 ## 高维推广
 
@@ -589,11 +607,6 @@ structure AbelVariety (K : Type u) [Field K] (g : ℕ) where
   [projective : IsProjective carrier]
   dimension : g
 
-/-- Abel簇上的BSD猜想 -/
-structure BSDForAbelVariety {g : ℕ} (A : AbelVariety ℚ g) : Prop where
-  order_equals_rank : sorry  -- 零点阶等于秩
-  exact_formula : sorry  -- 类似公式
-
 /-- Abel簇的L-函数 -/
 def AbelVarietyLFunction {g : ℕ} (A : AbelVariety ℚ g) (s : ℂ) : ℂ :=
   sorry
@@ -601,6 +614,11 @@ def AbelVarietyLFunction {g : ℕ} (A : AbelVariety ℚ g) (s : ℂ) : ℂ :=
 /-- Abel簇的秩 -/
 def AbelVarietyRank {g : ℕ} (A : AbelVariety ℚ g) : ℕ :=
   sorry
+
+/-- Abel簇上的BSD猜想 -/
+structure BSDForAbelVariety {g : ℕ} (A : AbelVariety ℚ g) : Prop where
+  order_equals_rank : sorry  -- 零点阶等于秩
+  exact_formula : sorry  -- 类似公式
 
 /-! 
 ## 总结

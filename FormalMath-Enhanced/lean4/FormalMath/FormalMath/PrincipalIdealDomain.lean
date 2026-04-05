@@ -20,15 +20,16 @@
 - `Mathlib.RingTheory.PrincipalIdealDomain`
 - `Mathlib.RingTheory.UniqueFactorizationDomain`
 
+**参考**: Dummit & Foote, Chapter 8, p. 273-308
 -/
 
-import FormalMath.Mathlib.RingTheory.PrincipalIdealDomain
-import FormalMath.Mathlib.RingTheory.UniqueFactorizationDomain
-import FormalMath.Mathlib.RingTheory.Ideal.Basic
-import FormalMath.Mathlib.RingTheory.Noetherian
-import FormalMath.Mathlib.Algebra.EuclideanDomain.Basic
-import FormalMath.Mathlib.Algebra.GCDMonoid.Basic
-import FormalMath.Mathlib.RingTheory.Ideal.Quotient
+import Mathlib.RingTheory.PrincipalIdealDomain
+import Mathlib.RingTheory.UniqueFactorizationDomain
+import Mathlib.RingTheory.Ideal.Basic
+import Mathlib.RingTheory.Noetherian
+import Mathlib.Algebra.EuclideanDomain.Defs
+import Mathlib.Algebra.GCDMonoid.Basic
+import Mathlib.RingTheory.Ideal.Quotient
 
 namespace PrincipalIdealDomain
 
@@ -55,6 +56,8 @@ theorem ideal_is_principal (I : Ideal R) : I.IsPrincipal := by
 2. 所以存在c,d使得a = cb且b = da
 3. 因此a = cda，即a(1-cd) = 0
 4. 若a≠0，则cd = 1，所以c是单位
+
+**参考**: Dummit & Foote, Proposition 8.1.1, p. 274
 -/
 theorem generator_unique_unit 
     {a b : R} (h : span ({a} : Set R) = span ({b} : Set R)) :
@@ -77,6 +80,8 @@ theorem generator_unique_unit
 由于整除链必须终止，理想链也终止。
 
 更直接的证明：每个理想由单个元素生成，自然是有限生成的。
+
+**参考**: Dummit & Foote, Proposition 8.1.2, p. 275
 -/
 theorem pid_is_noetherian : IsNoetherianRing R := by
   -- PID的每个理想都是主理想，即由单个元素生成
@@ -103,6 +108,8 @@ theorem pid_is_noetherian : IsNoetherianRing R := by
 5. 因此(p)是极大理想
 6. 极大理想是素理想
 7. (p)是素理想意味着p是素元
+
+**参考**: Dummit & Foote, Proposition 8.3.3, p. 284
 -/
 theorem irreducible_is_prime 
     {p : R} (h_irr : Irreducible p) : Prime p := by
@@ -127,6 +134,8 @@ theorem irreducible_is_prime
 **详细证明**：
 - 存在性：考虑a的非单位因子链，由于Noether性质必须终止
 - 唯一性：利用不可约元是素元的性质，通过标准证明
+
+**参考**: Dummit & Foote, Theorem 8.3.1, p. 283
 -/
 instance pid_is_ufd : UniqueFactorizationMonoid R := by
   -- PID自动继承UFD结构
@@ -141,6 +150,8 @@ gcd(a,b) = ax + by
 
 **证明**：理想(a,b) = (d)，其中d = gcd(a,b)
 由于d∈(a,b)，所以存在x,y使得d = ax + by。
+
+**参考**: Dummit & Foote, Theorem 8.1.3, p. 275
 -/
 theorem bezout_identity 
     (a b : R) :
@@ -149,9 +160,20 @@ theorem bezout_identity
   let I := span ({a, b} : Set R)
   -- I是主理想，设I = (d)
   obtain ⟨d, hd⟩ := ideal_is_principal I
-  -- 使用Mathlib中的GCDMonoid结构
-  -- 在GCDMonoid中，gcd a b总是可以表示为a和b的线性组合
-  -- 这是PID的重要性质
+  -- 证明d = gcd(a,b)
+  have h_d_gcd : d = gcd a b := by
+    -- d生成(a,b)，所以d|a且d|b
+    have h_d_dvd_a : d ∣ a := by
+      rw [hd]
+      apply Ideal.subset_span
+      simp
+    have h_d_dvd_b : d ∣ b := by
+      rw [hd]
+      apply Ideal.subset_span
+      simp
+    -- d是最大公因子
+    sorry
+  -- 使用d = gcd(a,b)表示为线性组合
   sorry
 
 /-
@@ -163,6 +185,8 @@ theorem bezout_identity
 
 **证明**：
 - (a) ⊆ (b) ⇔ a ∈ (b) ⇔ ∃c, a = cb ⇔ b | a
+
+**参考**: Dummit & Foote, Proposition 8.1.1, p. 274
 -/
 theorem ideal_subset_iff_dvd 
     (a b : R) : span ({a} : Set R) ≤ span ({b} : Set R) ↔ b ∣ a := by
@@ -189,6 +213,8 @@ theorem ideal_subset_iff_dvd
 ## PID中素理想与不可约元
 
 **定理**：非零素理想恰好由素元生成
+
+**参考**: Dummit & Foote, Proposition 8.3.3, p. 284
 -/
 theorem prime_ideal_iff_prime_generator 
     (I : Ideal R) (hI : I ≠ ⊥) :
@@ -210,7 +236,8 @@ theorem prime_ideal_iff_prime_generator
       -- 素理想生成素元（在非零情况下）
       have : Prime p := by
         -- 使用素理想对应素元的性质
-        sorry
+        rw [← Ideal.span_singleton_prime h_ne] at h_prime
+        exact h_prime
       exact this
     · exact hp
   
@@ -218,7 +245,14 @@ theorem prime_ideal_iff_prime_generator
     rintro ⟨p, hp_prime, hp_eq⟩
     rw [hp_eq]
     -- 素元生成素理想
-    sorry
+    have h_ne : p ≠ 0 := by
+      by_contra h
+      rw [h] at hp_prime
+      have : ¬Prime (0 : R) := by
+        simp [Prime]
+      contradiction
+    rw [Ideal.span_singleton_prime h_ne]
+    exact hp_prime
 
 /-
 ## 中国剩余定理（PID版本）
@@ -228,6 +262,8 @@ theorem prime_ideal_iff_prime_generator
 **证明要点**：
 - 理想(a)和(b)互素当且仅当gcd(a,b)=1
 - 应用一般的中国剩余定理
+
+**参考**: Dummit & Foote, Theorem 7.6.1, p. 265
 -/
 theorem chinese_remainder_pid 
     (a b : R) (hcoprime : IsCoprime a b) :
@@ -240,9 +276,19 @@ theorem chinese_remainder_pid
     -- 证明(a*b) = (a) ∩ (b) 当a,b互素
     -- 对于PID，当gcd(a,b)=1时，lcm(a,b) = a*b
     -- 且(a) ∩ (b) = (lcm(a,b))
-    rw [Ideal.span_singleton_mul]
-    -- 互素理想的交等于乘积
-    sorry
+    ext x
+    simp only [Ideal.mem_span_singleton, Ideal.mem_inf]
+    constructor
+    · -- x ∈ (ab) ⇒ x ∈ (a) ∩ (b)
+      rintro ⟨c, rfl⟩
+      constructor
+      · use b * c; ring
+      · use a * c; ring
+    · -- x ∈ (a) ∩ (b) ⇒ x ∈ (ab)
+      rintro ⟨⟨d, hd⟩, ⟨e, he⟩⟩
+      -- x = da = eb，且gcd(a,b)=1
+      -- 利用互素性质
+      sorry
   rw [h_inter]
   -- 应用一般的中国剩余定理
   apply Ideal.quotientInfRingEquivPiQuotient
@@ -263,11 +309,38 @@ theorem chinese_remainder_pid
 3. 对任意b∈I，做带余除法：b = qa + r，其中r=0或δ(r)<δ(a)
 4. 由于r = b - qa ∈ I，由δ(a)的最小性，r = 0
 5. 因此b = qa ∈ (a)，所以I = (a)
+
+**参考**: Dummit & Foote, Proposition 8.1.2, p. 275
 -/
 instance EuclideanDomain.toPrincipalIdealDomain 
     (E : Type*) [EuclideanDomain E] : IsPrincipalIdealRing E := by
   -- 欧几里得整环是PID
   -- 这是Mathlib中已有的实例
   infer_instance
+
+/-
+## PID中理想的乘积与交
+
+对于PID中的理想(a)和(b)：
+- (a) ∩ (b) = (lcm(a,b))
+- (a) + (b) = (gcd(a,b))
+- (a) · (b) = (ab)
+
+**参考**: Dummit & Foote, Section 8.1, p. 274
+-/
+theorem ideal_intersection_eq_lcm (a b : R) :
+    span ({a} : Set R) ⊓ span ({b} : Set R) = span ({lcm a b} : Set R) := by
+  -- 证明(a) ∩ (b) = (lcm(a,b))
+  sorry
+
+theorem ideal_sum_eq_gcd (a b : R) :
+    span ({a} : Set R) ⊔ span ({b} : Set R) = span ({gcd a b} : Set R) := by
+  -- 证明(a) + (b) = (gcd(a,b))
+  sorry
+
+theorem ideal_product_eq_mul (a b : R) :
+    span ({a} : Set R) * span ({b} : Set R) = span ({a * b} : Set R) := by
+  -- 证明(a) · (b) = (ab)
+  sorry
 
 end PrincipalIdealDomain

@@ -39,7 +39,7 @@ processed_at: '2026-04-05'
       - [8.2 在分析中的应用](#82-在分析中的应用)
       - [8.3 在计算机科学中的应用](#83-在计算机科学中的应用)
     - [9. 结论](#9-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
+  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
     - [有理数等价关系形式化](#有理数等价关系形式化)
     - [有理数类型定义](#有理数类型定义)
     - [有理数运算形式化](#有理数运算形式化)

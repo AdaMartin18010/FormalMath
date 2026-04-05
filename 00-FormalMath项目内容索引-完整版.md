@@ -515,11 +515,11 @@ processed_at: '2026-04-03'
 
 ### B. 快速导航
 
-- [项目根目录](.)
-- [docs目录](docs/)
-- [数学家理念体系](数学家理念体系/)
-- [project目录](project/)
-- [ref目录](ref/)
+- [项目根目录](./README.md)
+- [docs目录](docs/README.md)
+- [数学家理念体系](数学家理念体系/README.md)
+- [project目录](project/README.md)
+- [ref目录](ref/README.md)
 
 ---
 

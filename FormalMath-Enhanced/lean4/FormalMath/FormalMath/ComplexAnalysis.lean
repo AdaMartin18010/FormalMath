@@ -32,9 +32,11 @@
 1900年：Picard定理的多种证明
 -/ 
 
-import FormalMath.Mathlib.Analysis.Complex.Basic
-import FormalMath.Mathlib.Analysis.Calculus.ContDiff.Basic
-import FormalMath.Mathlib.MeasureTheory.Integral.CircleIntegral
+import Mathlib.Analysis.Complex.Basic
+import Mathlib.Analysis.Calculus.ContDiff.Basic
+import Mathlib.MeasureTheory.Integral.CircleIntegral
+import Mathlib.Analysis.Complex.CauchyIntegral
+import Mathlib.Analysis.Analytic.Basic
 
 namespace ComplexAnalysis
 
@@ -73,10 +75,48 @@ def IsAnalyticAt (f : ℂ → ℂ) (z₀ : ℂ) : Prop :=
 /-- 全纯函数是解析的 -/
 theorem holomorphic_iff_analytic {f : ℂ → ℂ} {z₀ : ℂ} :
     IsHolomorphicAt f z₀ ↔ IsAnalyticAt f z₀ := by
-  -- 证明思路：
-  -- (⇒) 全纯⇒解析：利用Cauchy积分公式展开为幂级数
-  -- (⇐) 解析⇒全纯：幂级数在收敛圆内可逐项求导
-  sorry -- 这是复分析的核心定理
+  -- 在Mathlib中，全纯性与解析性等价
+  -- 这是一个基本定理，需要利用Cauchy积分公式
+  constructor
+  · -- 全纯⇒解析：利用幂级数展开
+    intro h
+    obtain ⟨f', hf'⟩ := h
+    -- 利用Cauchy积分公式的推论：全纯函数可展开为幂级数
+    use 1, by norm_num, fun n ↦ f z₀ / Nat.factorial n
+    intro z hz
+    constructor
+    · -- 证明级数可和
+      simp at hz
+      have : ‖z - z₀‖ < 1 := by simpa using hz
+      apply summable_of_norm_bounded_eventually_nat (fun n ↦ ‖f z₀‖ / Nat.factorial n)
+      · -- 证明1/n!可和
+        have : Summable (fun (n : ℕ) ↦ ‖f z₀‖ / Nat.factorial n) := by
+          rw [summable_mul_left_iff]
+          exact Real.summable_inv_natCast_pow (by norm_num)
+          simp
+        exact this
+      · -- 证明每一项有界
+        simp
+        intro n
+        rw [norm_mul, norm_div, norm_pow]
+        have h1 : ‖(z - z₀) ^ n‖ ≤ 1 := by
+          rw [norm_pow]
+          have h2 : ‖z - z₀‖ < 1 := by simpa using hz
+          have h3 : ‖z - z₀‖ ^ n ≤ (1 : ℝ) ^ n := by
+            apply pow_le_pow_left
+            · exact norm_nonneg (z - z₀)
+            · linarith
+          simp at h3
+          exact h3
+        gcongr
+    · -- 幂级数展开
+      -- 这需要完整的Cauchy积分公式证明
+      sorry -- 核心定理，需要详细证明
+  · -- 解析⇒全纯：幂级数在收敛圆内可逐项求导
+    rintro ⟨r, hr_pos, a, ha⟩
+    -- 解析函数在收敛圆内是全纯的
+    -- 幂级数在收敛圆内可逐项求导
+    sorry -- 核心定理，需要详细证明
 
 /-! 
 ## Cauchy积分定理
@@ -124,7 +164,8 @@ theorem cauchy_goursat {f : ℂ → ℂ} {Ω : Set ℂ}
   --
   -- 步骤4：极限论证
   -- 令三角形大小趋于0，得证
-  sorry -- 这是复分析的基础定理
+  -- 这是一个核心定理，完整的证明需要大量分析
+  sorry
 
 /-! 
 ## Cauchy积分公式
@@ -157,7 +198,8 @@ theorem cauchy_integral_formula {f : ℂ → ℂ} {Ω : Set ℂ}
   --
   -- 步骤4：分离积分
   -- ∮_γ f(z)/(z-z₀) dz = f(z₀) ∮_γ 1/(z-z₀) dz = 2πi f(z₀)
-  sorry -- 这是复分析的核心工具
+  -- 核心定理，需要详细证明
+  sorry
 
 /-! 
 ## 留数定理 (Residue Theorem)
@@ -178,12 +220,16 @@ def IsIsolatedSingularity (f : ℂ → ℂ) (a : ℂ) : Prop :=
 def PrincipalPart (f : ℂ → ℂ) (a : ℂ) : ℂ → ℂ :=
   -- Laurent展开：f(z) = Σ_{n=-∞}^∞ c_n (z-a)^n
   -- 主要部分：Σ_{n=-∞}^{-1} c_n (z-a)^n
-  sorry
+  fun z ↦ 0 -- 占位符
 
 /-- 留数（Laurent级数中(z-a)^(-1)的系数） -/
-def Residue (f : ℂ → ℂ) (a : ℂ) : ℂ :=
+noncomputable def Residue (f : ℂ → ℂ) (a : ℂ) : ℂ :=
   -- c_{-1} = (1/2πi) ∮_{|z-a|=r} f(z) dz
-  sorry
+  (1 / (2 * Real.pi * I)) * ∮_(Contour.mk 
+    (fun t ↦ a + Real.exp (2 * Real.pi * I * t)) 
+    (by simp [Complex.exp_two_pi_mul_I]) 
+    (by sorry) 
+    (by sorry)), f
 
 /-- 留数定理 -/
 theorem residue_theorem {f : ℂ → ℂ} {Ω : Set ℂ} {γ : Contour}
@@ -205,7 +251,8 @@ theorem residue_theorem {f : ℂ → ℂ} {Ω : Set ℂ} {γ : Contour}
   -- ∮_{C_a} f(z) dz = 2πi · Res(f, a)
   --
   -- 步骤4：求和得证
-  sorry -- 这是计算围道积分的核心定理
+  -- 核心定理，需要详细证明
+  sorry
 
 /-! 
 ## 最大模原理 (Maximum Modulus Principle)
@@ -233,7 +280,8 @@ theorem maximum_modulus_principle {f : ℂ → ℂ} {Ω : Set ℂ}
   -- 等号成立当且仅当f在圆周上为常数
   --
   -- 步骤4：由恒等定理，f在Ω上为常数，矛盾
-  sorry -- 这是全纯函数的基本性质
+  -- 核心定理，需要详细证明
+  sorry
 
 /-! 
 ## Liouville定理
@@ -263,7 +311,13 @@ theorem liouville_theorem {f : ℂ → ℂ}
   -- 步骤3：因此f'(z₀) = 0对所有z₀成立
   --
   -- 步骤4：f是常数
-  sorry -- 这是复分析的经典结果
+  obtain ⟨M, hM⟩ := h_bounded
+  -- 利用Cauchy估计，f' = 0
+  use f 0
+  intro z
+  -- 证明f在整个复平面上为常数
+  -- 这需要利用全纯函数的恒等定理
+  sorry
 
 /-! 
 ## Riemann映射定理
@@ -296,7 +350,8 @@ theorem riemann_mapping_theorem {Ω : Set ℂ}
   --
   -- 步骤4：证明极值映射是满射
   -- 若w∉f(Ω)，构造映射使|g'(z₀)|>|f'(z₀)|，矛盾
-  sorry -- 这是复分析的里程碑定理
+  -- 这是复分析的里程碑定理
+  sorry
 
 /-! 
 ## 调和函数 (Harmonic Functions)
@@ -324,7 +379,8 @@ theorem real_part_harmonic {f : ℂ → ℂ} {Ω : Set ℂ}
     IsHarmonic u {(x, y) | x + I * y ∈ Ω} := by
   -- 证明：Cauchy-Riemann方程蕴含Laplace方程
   -- ∂²u/∂x² + ∂²u/∂y² = 0
-  sorry -- 这是全纯函数与调和函数联系的基础
+  -- 核心定理，需要详细证明
+  sorry
 
 /-! 
 ## Picard定理
@@ -362,7 +418,8 @@ theorem little_picard_theorem {f : ℂ → ℂ}
   -- 步骤4：矛盾
   -- g是有界全纯函数（Im(g)>0），由Liouville定理g为常数
   -- 因此f为常数，矛盾
-  sorry -- 这是值分布理论的经典结果
+  -- 这是值分布理论的经典结果
+  sorry
 
 /-- 大Picard定理 -/
 theorem great_picard_theorem {f : ℂ → ℂ} {a : ℂ}
@@ -372,7 +429,8 @@ theorem great_picard_theorem {f : ℂ → ℂ} {a : ℂ}
       ∃ (zₙ : ℕ → ℂ), Tendsto zₙ atTop (𝓝 a) ∧ ∀ n, f (zₙ n) = w := by
   -- 大Picard定理
   -- 证明需要更深刻的工具（如正规族理论、Montel定理）
-  sorry -- 这是复分析的深刻定理
+  -- 这是复分析的深刻定理
+  sorry
 
 /-! 
 ## Schwarz引理
@@ -405,6 +463,7 @@ theorem schwarz_lemma {f : ℂ → ℂ}
   --
   -- 步骤4：若在某内点等号成立，则g为常数
   -- g(z) = e^{iθ}，因此f(z) = e^{iθ}z
-  sorry -- 这是几何函数论的基础
+  -- 这是几何函数论的基础
+  sorry
 
 end ComplexAnalysis

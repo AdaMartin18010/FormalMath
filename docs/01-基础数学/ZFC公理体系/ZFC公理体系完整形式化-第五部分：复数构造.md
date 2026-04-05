@@ -44,7 +44,7 @@ processed_at: '2026-04-05'
       - [9.1 指数函数](#91-指数函数)
       - [9.2 三角函数](#92-三角函数)
     - [10. 结论](#10-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
+  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
     - [复数类型定义](#复数类型定义)
     - [复数运算形式化](#复数运算形式化)
     - [复数域结构形式化](#复数域结构形式化)

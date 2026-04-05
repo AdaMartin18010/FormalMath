@@ -44,7 +44,7 @@ msc_secondary: ['00-XX']
       - [7.3 在计算机科学中的应用](#73-在计算机科学中的应用)
       - [7.4 在物理学中的应用](#74-在物理学中的应用)
     - [8. 结论](#8-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
+  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
     - [整数等价关系形式化](#整数等价关系形式化)
     - [整数类型定义](#整数类型定义)
     - [整数运算形式化](#整数运算形式化)

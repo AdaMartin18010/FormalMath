@@ -267,9 +267,22 @@ V₄ 同构于 S₄ 的子群 {id, (12)(34), (13)(24), (14)(23)}。
 循环群 Cₙ = ⟨g | gⁿ = 1⟩ 同构于 Sₙ 中由 n-轮换 (12...n) 生成的子群。
 
 ```lean
--- Cₙ 的置换表示
-example (n : ℕ) : CyclicGroup n →* Perm (Fin n) := by
-  sorry  -- 将生成元映射为 n-轮换
+-- Cₙ 的置换表示：将生成元映射为 n-轮换 (0 1 2 ... n-1)
+example (n : ℕ) : CyclicGroup n →* Perm (Fin n) where
+  toFun g := {
+    toFun := fun i => ⟨ (i.val + g.val) % n, Nat.mod_lt _ n.pos⟩,
+    invFun := fun i => ⟨ (i.val + (n - g.val % n)) % n, Nat.mod_lt _ n.pos⟩,
+    left_inv := by intro i; simp; omega,
+    right_inv := by intro i; simp; omega
+  }
+  map_one' := by 
+    ext i 
+    simp
+  map_mul' := by 
+    intro g h 
+    ext i 
+    simp [add_assoc]
+    omega
 ```
 
 ## 数学意义

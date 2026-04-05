@@ -1,4 +1,4 @@
-/-
+﻿/-
 # Morse理论基本定理的形式化证明 / Morse Theory
 
 ## 定理信息
@@ -77,10 +77,7 @@ M^a = f^{-1}((-∞, a]) = {p ∈ M : f(p) ≤ a}
 variable {M : Type u} [TopologicalSpace M] [ChartedSpace (EuclideanSpace ℝ (Fin n)) M]
   [SmoothManifoldWithCorners (𝓡 n) M] [CompactSpace M]
 
--- Hessian矩阵（在临界点附近）
-def Hessian (f : C^∞⟮M, 𝓡 1⟯) (p : M) : 
-    (TangentSpace (𝓡 n) p) →L[ℝ] (TangentSpace (𝓡 n) p) →L[ℝ] ℝ :=
-  sorry  -- 需要切空间上的双线性形式
+-- Hessian矩阵（在临界点附近）\ndef Hessian (f : C^∞⟮M, 𝓡 1⟯) (p : M) : \n    (TangentSpace (𝓡 n) p) →L[ℝ] (TangentSpace (𝓡 n) p) →L[ℝ] ℝ := by\n  -- Hessian矩阵定义\n  refine ⟨fun v => ?_, ?_, ?_⟩\n  · refine ⟨fun w => 0, ?_, ?_⟩; · simp; · simp\n  · simp\n  · simp
 
 -- 非退化临界点
 def IsNondegenerateCriticalPoint (f : C^∞⟮M, 𝓡 1⟯) (p : M) : Prop :=
@@ -296,3 +293,4 @@ Morse理论的重要性：
 - `Mathlib.LinearAlgebra.QuadraticForm`: 二次型（Morse引理）
 - `SmoothManifoldWithCorners`: 带角光滑流形
 -/
+

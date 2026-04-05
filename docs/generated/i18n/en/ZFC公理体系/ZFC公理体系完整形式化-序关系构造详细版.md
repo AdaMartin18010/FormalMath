@@ -53,7 +53,7 @@ msc_secondary: ['03E30', '03E15', '03E10']
     - [8. 结论](#8-结论)
   - [术语对照表 / Terminology Table](#术语对照表)
   - [References / References](#References--references)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
+  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
     - [关系基本概念形式化](#关系基本概念形式化)
     - [等价关系形式化](#等价关系形式化)
     - [偏序关系形式化](#偏序关系形式化)

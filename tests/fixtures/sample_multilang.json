@@ -1,0 +1,52 @@
+[
+  {
+    "concept_id": "TEST-001",
+    "multilang": {
+      "zh": {
+        "title": "测试概念",
+        "definition": "测试定义"
+      },
+      "en": {
+        "title": "Test Concept",
+        "definition": "Test definition"
+      },
+      "de": {
+        "title": "Testkonzept",
+        "definition": "Testdefinition"
+      },
+      "fr": {
+        "title": "Concept de test",
+        "definition": "Définition du test"
+      },
+      "ja": {
+        "title": "テスト概念",
+        "definition": "テスト定義"
+      }
+    }
+  },
+  {
+    "concept_id": "TEST-002",
+    "multilang": {
+      "zh": {
+        "title": "另一个测试",
+        "definition": "另一个测试定义"
+      },
+      "en": {
+        "title": "Another Test",
+        "definition": "Another test definition"
+      },
+      "de": {
+        "title": "Ein weiterer Test",
+        "definition": "Eine weitere Testdefinition"
+      },
+      "fr": {
+        "title": "Un autre test",
+        "definition": "Une autre définition de test"
+      },
+      "ja": {
+        "title": "別のテスト",
+        "definition": "別のテスト定義"
+      }
+    }
+  }
+]

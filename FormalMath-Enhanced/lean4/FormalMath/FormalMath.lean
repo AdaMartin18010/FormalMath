@@ -57,6 +57,9 @@ import FormalMath.PrincipalIdealDomain
 import FormalMath.FieldExtension
 import FormalMath.GaloisGroup
 import FormalMath.ModuleTheory
+import FormalMath.ClassFieldTheory
+import FormalMath.EllipticCurve
+import FormalMath.ModularForm
 
 -- 代数学进阶（10个）- 第8批新增
 import FormalMath.CategoryTheory

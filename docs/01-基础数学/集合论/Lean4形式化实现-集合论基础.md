@@ -11,7 +11,7 @@ processed_at: '2026-04-05'
 
 - [集合论基础 - Lean4形式化实现 / Set Theory Foundation - Lean4 Formal Implementation](#集合论基础---lean4形式化实现--set-theory-foundation---lean4-formal-implementation)
   - [目录](#目录)
-  - [📚 概述 / Overview](#概述)
+  - [📚 概述 / Overview](#-概述--overview)
   - [🏗️ 1. 基础定义 / Basic Definitions](#️-1-基础定义--basic-definitions)
     - [1.1 集合类型定义 / Set Type Definition](#11-集合类型定义--set-type-definition)
     - [1.2 基本集合定义 / Basic Set Definitions](#12-基本集合定义--basic-set-definitions)

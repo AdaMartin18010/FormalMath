@@ -1,0 +1,394 @@
+# FormalMath 项目 版本发布工作流
+# 描述: 自动化版本发布 - 生成发布包、更新CHANGELOG、创建GitHub Release
+# 触发条件: 推送标签 (v*.*.*) 或手动触发
+
+name: FormalMath Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+*'  # 匹配 v1.0.0, v1.0.0-alpha 等
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '版本号 (例如: 1.2.3)'
+        required: true
+        type: string
+      prerelease:
+        description: '是否为预发布版本'
+        required: false
+        type: boolean
+        default: false
+      release_notes:
+        description: '发布说明 (可选)'
+        required: false
+        type: string
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  # ==================== 作业1: 验证与准备 ====================
+  prepare:
+    name: 验证与准备
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
+      is_prerelease: ${{ steps.get_version.outputs.is_prerelease }}
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # 获取完整历史以生成changelog
+
+    - name: 提取版本号
+      id: get_version
+      run: |
+        if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          VERSION="${{ github.event.inputs.version }}"
+          IS_PRERELEASE="${{ github.event.inputs.prerelease }}"
+        else
+          # 从标签提取版本号 (v1.0.0 -> 1.0.0)
+          VERSION=${GITHUB_REF#refs/tags/v}
+          # 检查是否为预发布版本
+          if [[ "$VERSION" =~ -(alpha|beta|rc|pre) ]]; then
+            IS_PRERELEASE="true"
+          else
+            IS_PRERELEASE="false"
+          fi
+        fi
+        
+        echo "version=$VERSION" >> $GITHUB_OUTPUT
+        echo "is_prerelease=$IS_PRERELEASE" >> $GITHUB_OUTPUT
+        echo "📦 发布版本: v$VERSION"
+        echo "🔖 预发布: $IS_PRERELEASE"
+
+    - name: 验证版本格式
+      run: |
+        VERSION="${{ steps.get_version.outputs.version }}"
+        if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+ ]]; then
+          echo "❌ 无效的版本格式: $VERSION"
+          echo "版本号必须符合语义化版本 (SemVer): X.Y.Z"
+          exit 1
+        fi
+        echo "✅ 版本格式验证通过"
+
+    - name: 检查版本是否已存在
+      run: |
+        VERSION="${{ steps.get_version.outputs.version }}"
+        if git rev-parse "v$VERSION" >/dev/null 2>&1; then
+          echo "⚠️ 标签 v$VERSION 已存在"
+        else
+          echo "✅ 标签 v$VERSION 可用"
+        fi
+
+  # ==================== 作业2: 运行完整测试 ====================
+  test:
+    name: 发布前测试
+    runs-on: ubuntu-latest
+    needs: prepare
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 设置Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest pyyaml requests
+
+    - name: 运行质量检查
+      run: |
+        echo "🔍 运行发布前质量检查..."
+        
+        # 检查关键文件是否存在
+        for file in "README.md" "CHANGELOG.md" "LICENSE"; do
+          if [ ! -f "$file" ]; then
+            echo "❌ 缺少关键文件: $file"
+            exit 1
+          fi
+        done
+        echo "✅ 关键文件检查通过"
+        
+        # 检查Python脚本语法
+        python -m compileall tools/ -q
+        echo "✅ Python脚本语法检查通过"
+
+  # ==================== 作业3: 构建发布包 ====================
+  build:
+    name: 构建发布包
+    runs-on: ubuntu-latest
+    needs: [prepare, test]
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: 设置构建环境
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y zip unzip tar
+
+    - name: 构建完整发布包
+      run: |
+        VERSION="${{ needs.prepare.outputs.version }}"
+        DIST_DIR="formalmath-v${VERSION}"
+        
+        echo "📦 构建发布包 v${VERSION}..."
+        
+        # 创建发布目录
+        mkdir -p "${DIST_DIR}"
+        
+        # 复制核心内容
+        cp -r concept "${DIST_DIR}/"
+        cp -r docs "${DIST_DIR}/"
+        cp -r project "${DIST_DIR}/"
+        cp -r tools "${DIST_DIR}/"
+        cp -r tests "${DIST_DIR}/" 2>/dev/null || true
+        
+        # 复制根目录文件
+        cp README.md CHANGELOG.md LICENSE INDEX.md "${DIST_DIR}/" 2>/dev/null || true
+        cp CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md "${DIST_DIR}/" 2>/dev/null || true
+        cp -r "数学家理念体系" "${DIST_DIR}/" 2>/dev/null || true
+        
+        # 复制配置和元数据
+        cp *.json "${DIST_DIR}/" 2>/dev/null || true
+        cp *.yaml "${DIST_DIR}/" 2>/dev/null || true
+        cp *.yml "${DIST_DIR}/" 2>/dev/null || true
+        cp .markdownlint.json "${DIST_DIR}/" 2>/dev/null || true
+        
+        # 创建版本信息文件
+        cat > "${DIST_DIR}/VERSION" << EOF
+        FormalMath v${VERSION}
+        Build: ${{ github.run_number }}
+        Commit: ${{ github.sha }}
+        Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+        EOF
+        
+        # 创建ZIP包
+        zip -r "formalmath-v${VERSION}.zip" "${DIST_DIR}" -x "*/.git/*" "*/__pycache__/*" "*/.pytest_cache/*"
+        
+        # 创建TAR.GZ包
+        tar -czf "formalmath-v${VERSION}.tar.gz" "${DIST_DIR}" --exclude='.git' --exclude='__pycache__' --exclude='.pytest_cache'
+        
+        # 创建轻量包 (仅核心文档)
+        mkdir -p "${DIST_DIR}-lite"
+        cp -r concept "${DIST_DIR}-lite/"
+        cp -r docs "${DIST_DIR}-lite/"
+        cp README.md INDEX.md LICENSE "${DIST_DIR}-lite/"
+        zip -r "formalmath-v${VERSION}-lite.zip" "${DIST_DIR}-lite"
+        
+        # 生成校验和
+        sha256sum formalmath-v${VERSION}.zip formalmath-v${VERSION}.tar.gz formalmath-v${VERSION}-lite.zip > checksums.txt
+        
+        # 列出构建产物
+        echo "✅ 构建完成:"
+        ls -lh formalmath-v${VERSION}*
+
+    - name: 上传构建产物
+      uses: actions/upload-artifact@v4
+      with:
+        name: release-packages
+        path: |
+          formalmath-v*.zip
+          formalmath-v*.tar.gz
+          checksums.txt
+        retention-days: 30
+
+  # ==================== 作业4: 更新CHANGELOG ====================
+  update-changelog:
+    name: 更新CHANGELOG
+    runs-on: ubuntu-latest
+    needs: prepare
+    if: github.event_name == 'push'  # 仅在标签推送时自动更新
+    permissions:
+      contents: write
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 生成版本变更记录
+      run: |
+        VERSION="${{ needs.prepare.outputs.version }}"
+        DATE=$(date +%Y-%m-%d)
+        
+        echo "📝 更新CHANGELOG..."
+        
+        # 生成自上次标签以来的提交摘要
+        PREVIOUS_TAG=$(git describe --tags --abbrev=0 HEAD~1 2>/dev/null || echo "")
+        
+        if [ -n "$PREVIOUS_TAG" ]; then
+          echo "📊 对比范围: $PREVIOUS_TAG..v$VERSION"
+          
+          # 提取变更
+          FEATURES=$(git log $PREVIOUS_TAG..HEAD --pretty=format:"- %s" --grep="^feat" || true)
+          FIXES=$(git log $PREVIOUS_TAG..HEAD --pretty=format:"- %s" --grep="^fix" || true)
+          DOCS=$(git log $PREVIOUS_TAG..HEAD --pretty=format:"- %s" --grep="^docs" || true)
+          
+          # 创建新版本条目
+          cat > /tmp/new_entry.md << EOF
+        ## v${VERSION} - ${DATE}
+
+        ### 新增功能
+        ${FEATURES:-"- 版本维护更新"}
+
+        ### 修复
+        ${FIXES:-"- 无"}
+
+        ### 文档
+        ${DOCS:-"- 无"}
+
+        ---
+
+        EOF
+        else
+          cat > /tmp/new_entry.md << EOF
+        ## v${VERSION} - ${DATE}
+
+        ### 初始版本发布
+        - FormalMath 项目正式发布
+
+        ---
+
+        EOF
+        fi
+        
+        # 插入到CHANGELOG顶部 (保留标题)
+        if [ -f CHANGELOG.md ]; then
+          head -n 5 CHANGELOG.md > /tmp/changelog_new.md
+          cat /tmp/new_entry.md >> /tmp/changelog_new.md
+          tail -n +6 CHANGELOG.md >> /tmp/changelog_new.md
+          mv /tmp/changelog_new.md CHANGELOG.md
+        fi
+        
+        echo "✅ CHANGELOG更新完成"
+
+    - name: 提交CHANGELOG更新
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        
+        if git diff --quiet CHANGELOG.md 2>/dev/null; then
+          echo "ℹ️ CHANGELOG无需更新"
+        else
+          git add CHANGELOG.md
+          git commit -m "docs: 更新CHANGELOG for v${{ needs.prepare.outputs.version }}"
+          git push origin HEAD:main || echo "⚠️ 无法推送到main分支，请手动更新CHANGELOG"
+        fi
+
+  # ==================== 作业5: 创建GitHub Release ====================
+  release:
+    name: 创建GitHub Release
+    runs-on: ubuntu-latest
+    needs: [prepare, build, update-changelog]
+    permissions:
+      contents: write
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 下载构建产物
+      uses: actions/download-artifact@v4
+      with:
+        name: release-packages
+        path: ./artifacts
+
+    - name: 生成Release说明
+      run: |
+        VERSION="${{ needs.prepare.outputs.version }}"
+        
+        # 读取自定义发布说明或生成默认说明
+        if [ "${{ github.event.inputs.release_notes }}" != "" ]; then
+          echo "${{ github.event.inputs.release_notes }}" > release_notes.md
+        else
+          cat > release_notes.md << 'EOF'
+        ## 📦 FormalMath v${VERSION}
+
+        ### 安装说明
+
+        1. **完整版** (`formalmath-v${VERSION}.zip`): 包含所有内容，适合完整部署
+        2. **轻量版** (`formalmath-v${VERSION}-lite.zip`): 仅核心文档，适合快速查阅
+        3. **源码包** (`formalmath-v${VERSION}.tar.gz`): 源代码压缩包
+
+        ### 校验和
+
+        ```
+        EOF
+          cat ./artifacts/checksums.txt >> release_notes.md
+          echo "```" >> release_notes.md
+          
+          cat >> release_notes.md << 'EOF'
+
+        ### 系统要求
+
+        - Python 3.10+
+        - Node.js 18+ (可选，用于Markdown检查)
+        - Lean 4 (可选，用于形式化证明)
+
+        ### 快速开始
+
+        ```bash
+        # 解压
+        unzip formalmath-v${VERSION}.zip
+        cd formalmath-v${VERSION}
+
+        # 安装依赖
+        pip install -r requirements.txt  # 如果有的话
+
+        # 运行检查
+        ./scripts/ci-check.sh  # Linux/Mac
+        # 或
+        .\scripts\ci-check.ps1  # Windows
+        ```
+
+        ---
+        **完整文档**: [README.md](README.md)  
+        **变更日志**: [CHANGELOG.md](CHANGELOG.md)
+        EOF
+        fi
+
+    - name: 创建GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v${{ needs.prepare.outputs.version }}
+        name: FormalMath v${{ needs.prepare.outputs.version }}
+        body_path: release_notes.md
+        prerelease: ${{ needs.prepare.outputs.is_prerelease == 'true' }}
+        files: |
+          artifacts/formalmath-v*.zip
+          artifacts/formalmath-v*.tar.gz
+          artifacts/checksums.txt
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # ==================== 作业6: 发布通知 ====================
+  notify:
+    name: 发布通知
+    runs-on: ubuntu-latest
+    needs: release
+    if: always() && needs.release.result == 'success'
+    
+    steps:
+    - name: 输出发布信息
+      run: |
+        echo "╔══════════════════════════════════════════════════════╗"
+        echo "║         🎉 FormalMath 发布成功! 🎉                   ║"
+        echo "╠══════════════════════════════════════════════════════╣"
+        echo "║ 版本: v${{ needs.prepare.outputs.version }}                                    ║"
+        echo "║ 类型: ${{ needs.prepare.outputs.is_prerelease == 'true' && '预发布' || '正式版' }}                         ║"
+        echo "║ 地址: https://github.com/${{ github.repository }}/releases/tag/v${{ needs.prepare.outputs.version }} ║"
+        echo "╚══════════════════════════════════════════════════════╝"

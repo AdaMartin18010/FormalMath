@@ -112,7 +112,52 @@ theorem maschke_theorem [Finite G] (h_char : ringChar k = 0 ∨
   -- 2. 定义平均算子：π̃(v) = (1/|G|) Σ_{g∈G} ρ(g)π(ρ(g⁻¹)v)
   -- 3. 验证π̃是G-等变的
   -- 4. 取W' = ker(π̃)，则W'是补子表示
-  sorry -- 这是表示论的基本定理
+  -- 这是Maschke定理的标准证明
+  have h_inv : (Fintype.card G : k) ≠ 0 := by
+    rcases h_char with h | h
+    · rw [h]; norm_num
+    · exact h
+  -- 取线性投影
+  have h_proj : ∃ π : V →ₗ[k] W, ∀ w ∈ W, π w = w := by
+    -- 利用有限维向量空间的投影定理
+    -- W是子空间，存在线性投影
+    sorry
+  rcases h_proj with ⟨π, hπ⟩
+  -- 定义平均算子
+  let π_avg : V →ₗ[k] W := {
+    toFun := fun v => (Fintype.card G : k)⁻¹ • ∑ g : G, π (ρ g⁻¹ v),
+    map_add' := by
+      intro v w
+      simp [Finset.sum_add_distrib, smul_add]
+      ring
+    map_smul' := by
+      intro r v
+      simp [Finset.smul_sum]
+      rw [←smul_assoc]
+      ring_nf
+  }
+  -- 验证π_avg是G-等变的
+  have h_equivariant : ∀ (g : G) (v : V), π_avg (ρ g v) = ρ g (π_avg v) := by
+    intro g v
+    simp [π_avg]
+    -- 利用重排求和
+    -- 由G的有限性，可以重排求和顺序
+    sorry
+  -- 构造补子表示
+  use LinearMap.ker π_avg
+  constructor
+  · -- W'是子表示
+    intro g v hv
+    simp [IsSubrepresentation]
+    rw [h_equivariant]
+    simp [hv]
+  constructor
+  · -- W ∩ W' = ⊥
+    -- 验证投影的核与像的交为零
+    sorry
+  · -- W ⊔ W' = ⊤
+    -- 验证投影的核与像的和为整个空间
+    sorry
 
 /-! 
 ## 特征标 (Character)
@@ -152,7 +197,19 @@ theorem character_orthogonality [Finite G] {V W : Type*} [AddCommGroup V] [Modul
   -- 证明：利用Schur引理
   -- Hom_G(V,W)是除环（由Schur引理），故维数为0或1
   -- 通过计算内积⟨χ_ρ, χ_σ⟩ = dim Hom_G(V,W)
-  sorry -- 这是特征标理论的核心
+  -- 这是第一正交关系
+  have h_hom : finrank k (RepHom ρ σ) = if Nonempty (RepHom ρ σ) then 1 else 0 := by
+    -- 利用Schur引理：不可约表示间的非零同态是同构
+    -- 故Hom空间维数为0或1
+    sorry
+  -- 计算特征标的内积
+  calc
+    (1 / Fintype.card G : k) * ∑ g : G, χ_ρ g * χ_σ g⁻¹
+        = (finrank k (RepHom ρ σ) : k) := by
+          -- 利用Hom空间的维数公式
+          -- ⟨χ_ρ, χ_σ⟩ = dim Hom_G(V,W)
+          sorry
+    _ = if Nonempty (RepHom ρ σ) then 1 else 0 := by rw [h_hom]
 
 /-! 
 ## Schur引理 (Schur's Lemma)
@@ -172,7 +229,40 @@ theorem schur_lemma [IsAlgClosed k] {V W : Type*} [AddCommGroup V] [Module k V]
   -- 1. ker(f)是子表示，故ker(f) = 0 或 V
   -- 2. 若ker(f) = V，则f = 0
   -- 3. 若ker(f) = 0，则f单射；im(f)是子表示，故im(f) = W
-  sorry -- 这是表示论的基本引理
+  -- 首先验证ker(f)是子表示
+  have h_ker_subrep : IsSubrepresentation ρ (LinearMap.ker f) := by
+    intro g x hx
+    simp [IsSubrepresentation] at *
+    rw [h_equiv g]
+    simp [hx]
+  -- 利用不可约性
+  have h_ker : LinearMap.ker f = ⊥ ∨ LinearMap.ker f = ⊤ := hV (LinearMap.ker f) h_ker_subrep
+  rcases h_ker with h_ker | h_ker
+  · -- ker(f) = ⊥，即f单射
+    have h_inj : Function.Injective f := by
+      rw [← LinearMap.ker_eq_bot]
+      exact h_ker
+    -- 验证im(f)是子表示
+    have h_im_subrep : IsSubrepresentation σ (LinearMap.range f) := by
+      intro g y hy
+      rcases hy with ⟨x, rfl⟩
+      use ρ g x
+      rw [h_equiv]
+    -- 利用σ的不可约性
+    have h_im : LinearMap.range f = ⊥ ∨ LinearMap.range f = ⊤ := hW (LinearMap.range f) h_im_subrep
+    rcases h_im with h_im | h_im
+    · -- im(f) = ⊥，则f = 0
+      left
+      rw [LinearMap.range_eq_bot] at h_im
+      exact h_im
+    · -- im(f) = ⊤，则f满射
+      right
+      rw [← LinearMap.range_eq_top]
+      exact h_im
+  · -- ker(f) = ⊤，即f = 0
+    left
+    rw [LinearMap.ker_eq_top] at h_ker
+    exact h_ker
 
 /-! 
 ## 正则表示 (Regular Representation)
@@ -213,7 +303,9 @@ theorem regular_representation_decomposition [Finite G] [IsAlgClosed k]
   -- 证明：利用特征标的正交关系
   -- χ_{reg}(g) = |G| 若g=1，否则0
   -- ⟨χ_{reg}, χ_{V}⟩ = dim(V)
-  sorry -- 这是正则表示的基本性质
+  -- 利用Maschke定理和正交关系
+  -- 这是正则表示分解定理
+  sorry
 
 /-! 
 ## 诱导表示 (Induced Representation)
@@ -228,8 +320,19 @@ def InducedRepresentation {H : Subgroup G} [Finite G] [Finite H]
     (W : Representation k H (W_carrier : Type*)) [AddCommGroup W_carrier] 
     [Module k W_carrier] : Representation k G (G → W_carrier) where
   toFun g f h := W (Classical.choose (h⁻¹ * g ∈ H)) (f (g⁻¹ * h))
-  map_one' := sorry
-  map_mul' := sorry
+  map_one' := by
+    ext f h
+    simp
+    -- 利用单位元性质
+    -- 验证1·f = f
+    sorry
+  map_mul' := by
+    intro g₁ g₂
+    ext f h
+    simp
+    -- 利用乘法结合性
+    -- 验证(g₁g₂)·f = g₁·(g₂·f)
+    sorry
 
 notation:max "Ind_" H "^" G W => InducedRepresentation (H := H) (G := G) W
 
@@ -252,7 +355,24 @@ theorem frobenius_reciprocity {H : Subgroup G} [Finite G] [Finite H]
   -- 证明：
   -- 1. 构造映射：利用张量积的泛性质
   -- 2. 验证是线性同构
-  sorry -- 这是诱导表示的基本性质
+  -- Frobenius互反性的标准证明
+  refine ⟨?_, ?_, ?_, ?_, ?_, ?_⟩
+  · -- 向前映射：利用张量积的泛性质
+    intro f
+    -- 构造从W到Res(V)的映射
+    sorry
+  · -- 向后映射：利用诱导表示的泛性质
+    intro g
+    -- 构造从Ind(W)到V的映射
+    sorry
+  · -- 左逆验证
+    sorry
+  · -- 右逆验证
+    sorry
+  · -- 线性性1
+    sorry
+  · -- 线性性2
+    sorry
 
 /-! 
 ## 限制表示 (Restricted Representation)
@@ -284,7 +404,9 @@ theorem mackey_decomposition {H K : Subgroup G} [Finite G] [Finite H] [Finite K]
       InducedRepresentation (conjugateRepresentation W g) := by
   -- 证明：考虑G = ⊔ HgK（双陪集分解）
   -- 对每个双陪集，分析其贡献
-  sorry -- 这是诱导表示理论的重要结果
+  -- 这是Mackey分解定理
+  -- 利用双陪集分解和诱导表示的性质
+  sorry
 
 /-! 
 ## 双陪集关系 (Double Coset Relation)
@@ -292,7 +414,18 @@ theorem mackey_decomposition {H K : Subgroup G} [Finite G] [Finite H] [Finite K]
 
 def doubleCosetRel (H K : Subgroup G) : Setoid G where
   r g₁ g₂ := ∃ h ∈ H, ∃ k ∈ K, g₁ = h * g₂ * k
-  iseqv := sorry
+  iseqv := {
+    refl := fun g => ⟨1, by simp, 1, by simp, by simp⟩
+    symm := fun ⟨h, hh, k, hk, heq⟩ => ⟨h⁻¹, by simp [hh], k⁻¹, by simp [hk], by
+      rw [heq]
+      group
+      ⟩
+    trans := fun ⟨h₁, hh₁, k₁, hk₁, heq₁⟩ ⟨h₂, hh₂, k₂, hk₂, heq₂⟩ => ⟨h₁ * h₂, by
+      simp [hh₁, hh₂], k₂ * k₁, by simp [hk₂, hk₁], by
+      rw [heq₁, heq₂]
+      group
+      ⟩
+  }
 
 /-! 
 ## 共轭表示 (Conjugate Representation)
@@ -303,8 +436,22 @@ def doubleCosetRel (H K : Subgroup G) : Setoid G where
 def conjugateRepresentation {H : Subgroup G} 
     {W_carrier : Type*} [AddCommGroup W_carrier] [Module k W_carrier]
     (W : Representation k H W_carrier) (g : G) : 
-    Representation k (Subgroup.map (MulEquiv.toMonoidHom (conjugation g)) H) W_carrier :=
-  sorry
+    Representation k (Subgroup.map (MulEquiv.toMonoidHom (conjugation g)) H) W_carrier where
+  toFun := fun ⟨h', hh'⟩ =>
+    -- 共轭作用：h' = ghg⁻¹
+    W ⟨g⁻¹ * h' * g, by
+      rcases hh' with ⟨h, hh, rfl⟩
+      simp [conjugation, hh]
+      ⟩
+  map_one' := by
+    simp
+    exact W.map_one'
+  map_mul' := by
+    rintro ⟨h₁', hh₁'⟩ ⟨h₂', hh₂'⟩
+    simp
+    -- 验证乘法保持性
+    -- (gh₁g⁻¹)(gh₂g⁻¹) = gh₁h₂g⁻¹
+    sorry
 
 /-! 
 ## Burnside定理 (Burnside's p^a q^b Theorem)
@@ -324,7 +471,16 @@ theorem burnside_pa_qb_theorem [Finite G] (p q : ℕ) (hp : Nat.Prime p)
   -- 2. 若G单，导出矛盾：
   --    证明存在非平凡特征标次数为p的幂
   --    利用类方程导出矛盾
-  sorry -- 这是表示论在群论中的经典应用
+  -- 这是Burnside的p^a q^b定理
+  by_cases h : Nontrivial (center G)
+  · -- 中心非平凡，对G/Z(G)用归纳
+    -- |G/Z(G)| < |G|，由归纳假设G/Z(G)可解
+    -- 可解群的中心扩张可解
+    sorry
+  · -- 中心平凡，导出矛盾
+    -- 利用表示论证明存在非平凡特征标次数为p的幂
+    -- 利用类方程导出矛盾
+    sorry
 
 /-! 
 ## 张量积表示 (Tensor Product Representation)
@@ -355,7 +511,9 @@ theorem character_tensor_product {V W : Type*} [AddCommGroup V] [Module k V]
     (ρ : Representation k G V) (σ : Representation k G W) (g : G) :
     χ_(TensorProductRepresentation ρ σ) g = χ_ρ g * χ_σ g := by
   -- 利用trace(A⊗B) = trace(A)·trace(B)
-  sorry -- 这是张量积表示的基本性质
+  simp [character, TensorProductRepresentation]
+  rw [LinearMap.trace_tensorProduct]
+  -- 这是张量积表示的基本性质
 
 /-! 
 ## 对偶表示 (Dual Representation)
@@ -393,7 +551,25 @@ theorem dimension_divides_order [Finite G] [IsAlgClosed k]
   -- 2. 证明(|G|/n)是代数整数
   --    利用χ(g)/n的特征值是单位根
   -- 3. 利用代数整数的整性，证明n | |G|
-  sorry -- 这是表示论的深刻结果
+  -- 这是Frobenius的维数定理
+  let n := finrank k V
+  let χ := character ρ
+  -- 证明(|G|/n)是代数整数
+  have h_alg_int : IsAlgebraicInteger ((Fintype.card G : k) / n) := by
+    -- 利用特征标的性质
+    -- 证明|G|/n是代数整数
+    -- 利用特征标的正交关系
+    sorry
+  -- 利用代数整数的整性
+  have h_int : ∃ m : ℤ, (Fintype.card G : k) / n = m := by
+    -- 代数整数的分式必须是整数
+    sorry
+  rcases h_int with ⟨m, hm⟩
+  use m.natAbs
+  rw [hm]
+  field_simp
+  -- 整理得到n | |G|
+  sorry
 
 /-! 
 ## 表示论基本定理总结

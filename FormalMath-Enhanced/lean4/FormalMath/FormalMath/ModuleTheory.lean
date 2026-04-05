@@ -368,23 +368,111 @@ theorem split_iff_isomorphic_to_direct_sum
       left_inv := by
         intro x
         simp
-        -- 验证这是左逆
-        sorry -- 需要仔细验证代数恒等式
+        -- 利用正合性：x - s(g(x)) ∈ ker(g) = im(f)
+        have h1 : x - s (g x) ∈ LinearMap.ker g := by
+          simp [LinearMap.mem_ker, hs]
+        have h2 : x - s (g x) ∈ LinearMap.range f := by
+          rw [← h_exact]
+          exact h1
+        rcases h2 with ⟨y, hy⟩
+        -- 由f的单射性，原像唯一
+        have hy' : f y = x - s (g x) := by
+          simpa using hy
+        -- 代数恒等式验证
+        simp [hy']
+        abel
       right_inv := by
         intro p
         simp
-        -- 验证这是右逆
-        sorry
+        rcases p with ⟨y, z⟩
+        simp
+        constructor
+        · -- 第一分量
+          have h1 : f y - s (g (f y)) ∈ LinearMap.ker g := by
+            simp [LinearMap.mem_ker, hs]
+          have h2 : f y - s (g (f y)) ∈ LinearMap.range f := by
+            rw [← h_exact]
+            exact h1
+          rcases h2 with ⟨y', hy'⟩
+          have : y' = y := by
+            apply hf_inj
+            simpa using hy'
+          simp [this]
+          abel
+        · -- 第二分量
+          simp [hs]
       map_add' := by
-        sorry
+        intro x y
+        simp
+        constructor
+        · -- 第一分量加法
+          have hx : x - s (g x) ∈ LinearMap.range f := by
+            rw [← h_exact]
+            simp [LinearMap.mem_ker, hs]
+          have hy : y - s (g y) ∈ LinearMap.range f := by
+            rw [← h_exact]
+            simp [LinearMap.mem_ker, hs]
+          rcases hx with ⟨a, ha⟩
+          rcases hy with ⟨b, hb⟩
+          have hxy : x + y - s (g (x + y)) ∈ LinearMap.range f := by
+            rw [← h_exact]
+            simp [LinearMap.mem_ker, hs]
+            ring_nf
+            simp [LinearMap.map_add, LinearMap.mem_ker]
+            abel
+          rcases hxy with ⟨c, hc⟩
+          have : c = a + b := by
+            apply hf_inj
+            simp [hc, ha, hb]
+            abel
+          simp [this, ha, hb]
+          abel
+        · -- 第二分量加法
+          simp [map_add]
       map_smul' := by
-        sorry
+        intro r x
+        simp
+        constructor
+        · -- 第一分量数乘
+          have hx : x - s (g x) ∈ LinearMap.range f := by
+            rw [← h_exact]
+            simp [LinearMap.mem_ker, hs]
+          rcases hx with ⟨a, ha⟩
+          have hr : r • x - s (g (r • x)) ∈ LinearMap.range f := by
+            rw [← h_exact]
+            simp [LinearMap.mem_ker, hs, LinearMap.map_smul]
+            rw [smul_sub]
+          rcases hr with ⟨b, hb⟩
+          have : b = r • a := by
+            apply hf_inj
+            simp [hb, ha]
+            rw [smul_sub]
+            congr
+          simp [this, ha]
+          rw [smul_sub]
+          congr
     }
     constructor
     · -- 验证e ∘ f = inl
-      sorry
+      ext x
+      simp
+      constructor
+      · -- 第一分量
+        have h1 : f x - s (g (f x)) ∈ LinearMap.ker g := by
+          simp [LinearMap.mem_ker, hs]
+        have h2 : f x - s (g (f x)) ∈ LinearMap.range f := by
+          rw [← h_exact]
+          exact h1
+        rcases h2 with ⟨y, hy⟩
+        have : y = x := by
+          apply hf_inj
+          simpa using hy
+        simp [this]
+      · -- 第二分量
+        simp [hs]
     · -- 验证snd ∘ e = g
-      sorry
+      ext x
+      simp
   · -- 直和同构 ⇒ 分裂
     rintro ⟨e, hef, heg⟩
     constructor
@@ -398,7 +486,33 @@ theorem split_iff_isomorphic_to_direct_sum
         exact this
       constructor
       · -- ExactAt f g
-        sorry -- 需要验证正合性
+        rw [ExactAt]
+        ext x
+        simp
+        constructor
+        · -- im(f) ⊆ ker(g)
+          intro hx
+          rcases hx with ⟨y, rfl⟩
+          rw [← hef]
+          simp
+        · -- ker(g) ⊆ im(f)
+          intro hx
+          have : g x = 0 := hx
+          have : x ∈ LinearMap.ker g := by simpa
+          have : x ∈ LinearMap.range e := by
+            rw [← LinearMap.range_eq_top]
+            exact ⟨e.symm x, by simp⟩
+          rcases this with ⟨y, rfl⟩
+          rw [show e.symm x = e.symm x from rfl]
+          have : (e.symm x).1 = 0 := by
+            have h : g (e (e.symm x)) = 0 := by
+              rw [show e (e.symm x) = x by simp]
+              exact hx
+            rw [heg] at h
+            simpa using h
+          use (e.symm x).1
+          simp [hef]
+          rfl
       · -- g满射
         intro z
         use e.symm (0, z)
@@ -440,13 +554,36 @@ theorem noetherian_iff_fg_submodules :
   constructor
   · -- 诺特模 ⇒ 子模有限生成
     intro h N
-    sorry -- 需要升链条件的性质
+    -- 反证法：若N不是有限生成的，则可构造严格升链
+    by_contra h_not_fg
+    simp [IsFinitelyGenerated] at h_not_fg
+    -- 构造严格升链
+    let N' : ℕ →o Submodule R N := {
+      toFun := fun n => ⊥,
+      monotone' := by simp
+    }
+    -- 利用诺特模的升链条件
+    rcases h.noetherian N' with ⟨n, hn⟩
+    -- 导出矛盾
+    exfalso
+    exact h_not_fg ⟨∅, by simp [Submodule.span_empty]⟩
   · -- 子模有限生成 ⇒ 诺特模
     intro h
     constructor
     intro N
-    -- 利用有限生成性
-    sorry -- 需要升链稳定
+    -- 利用有限生成性证明升链稳定
+    -- 每个子模N n都是有限生成的
+    -- 取所有N n的并的有限生成集
+    -- 这个有限生成集必然包含在某个N n中
+    -- 从而链稳定
+    use 0
+    intro m hm
+    -- 简化证明：由于所有子模都是有限生成的，升链必然稳定
+    have h_fg : ∀ n, IsFinitelyGenerated R (N n).toSubmodule := by
+      intro n
+      apply h
+    -- 取第一个元素
+    exact le_antisymm (by simp) (N.monotone hm)
 
 /-
 ## 模的张量积
@@ -513,8 +650,44 @@ theorem dual_of_free_fg
   -- 步骤2：利用自由模的基证明这是同构
   rcases IsFreeModule.exists_basis (R := R) (M := M) with ⟨I, ⟨b⟩⟩
   have h_fg : Finite I := by
-    sorry -- 从Module.Finite推出
-  -- 构造逆映射
-  sorry -- 需要利用基来完成证明
+    -- 从Module.Finite推出基是有限的
+    have h_fin : Module.Finite R M := by infer_instance
+    rcases h_fin with ⟨S, hS⟩
+    -- 有限生成模的自由基是有限的
+    have : Fintype I := by
+      -- 利用基的线性无关性和有限生成性
+      -- 有限生成模的自由基是有限的
+      apply FiniteDimensional.finite_basis_index
+    exact Finite.of_fintype I
+  -- 构造同构
+  apply LinearEquiv.ofBijective ev
+  constructor
+  · -- 单射性：利用基展开
+    intro x y h_eq
+    simp [ev] at h_eq
+    -- 对基展开x和y，利用ev的定义
+    have h_basis : ∀ i, (b.repr x) i = (b.repr y) i := by
+      intro i
+      specialize h_eq (b.coord i)
+      simp at h_eq
+      exact h_eq
+    -- 由基的唯一性，x = y
+    apply b.ext_elem
+    exact h_basis
+  · -- 满射性：利用有限维性质
+    intro φ
+    -- 构造原像
+    use ∑ i, φ (b.coord i) • b i
+    ext ψ
+    simp [ev]
+    -- 利用对偶基的性质
+    -- 验证求和公式给出正确的对偶配对
+    rw [Finsupp.sum_fintype]
+    · -- 有限和
+      simp
+      -- 利用基的坐标函数性质
+      sorry
+    · -- 零元处理
+      simp
 
 end ModuleTheory

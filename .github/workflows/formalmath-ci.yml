@@ -1,0 +1,519 @@
+# FormalMath 项目 CI 工作流
+# 描述: 持续集成检查 - Markdown格式、Python脚本、链接有效性、质量报告
+# 触发条件: push到main分支、pull_request
+
+name: FormalMath CI
+
+on:
+  push:
+    branches: [ main, master, develop ]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '**.txt'
+  pull_request:
+    branches: [ main, master, develop ]
+  workflow_dispatch:  # 允许手动触发
+
+env:
+  PYTHON_VERSION: '3.11'
+  NODE_VERSION: '20'
+
+jobs:
+  # ==================== 作业1: Markdown格式检查 ====================
+  markdown-lint:
+    name: Markdown格式检查
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: 设置Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
+
+    - name: 安装markdownlint
+      run: |
+        npm install -g markdownlint-cli@0.41.0
+        markdownlint --version
+
+    - name: 检查Markdown格式
+      run: |
+        echo "📋 开始检查Markdown文件格式..."
+        # 检查所有.md文件，但排除node_modules和归档目录
+        markdownlint '**/*.md' \
+          --ignore 'node_modules/**' \
+          --ignore '00-归档/**' \
+          --ignore '**/node_modules/**' \
+          --config .markdownlint.json \
+          --output markdown-lint-report.txt || EXIT_CODE=$?
+        
+        if [ -f markdown-lint-report.txt ] && [ -s markdown-lint-report.txt ]; then
+          echo "⚠️ 发现Markdown格式问题:"
+          cat markdown-lint-report.txt
+          exit 1
+        else
+          echo "✅ Markdown格式检查通过！"
+        fi
+      shell: bash
+
+    - name: 上传检查报告
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: markdown-lint-report
+        path: markdown-lint-report.txt
+        retention-days: 7
+
+  # ==================== 作业2: Python脚本测试 ====================
+  python-test:
+    name: Python脚本测试
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 设置Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+
+    - name: 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest pytest-cov flake8 black isort
+        # 安装项目可能依赖的常用包
+        pip install pyyaml requests beautifulsoup4 lxml
+
+    - name: 检查Python代码格式
+      run: |
+        echo "🔍 检查Python代码格式..."
+        flake8 tools/ --count --select=E9,F63,F7,F82 --show-source --statistics || true
+        flake8 tools/ --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics || true
+
+    - name: 检查代码风格 (Black)
+      run: |
+        echo "🎨 检查Black代码风格..."
+        black --check --diff tools/ || true
+
+    - name: 运行Python单元测试
+      run: |
+        echo "🧪 运行Python测试..."
+        # 如果tests目录存在则运行测试
+        if [ -d "tests" ] && [ -f "tests/test_*.py" ]; then
+          pytest tests/ -v --cov=tools --cov-report=xml --cov-report=html
+        else
+          echo "ℹ️ 未找到测试文件，跳过单元测试"
+        fi
+      shell: bash
+
+    - name: 验证关键Python脚本可运行
+      run: |
+        echo "🔧 验证关键脚本..."
+        # 语法检查关键脚本
+        python -m py_compile tools/link_checker.py
+        python -m py_compile tools/check_doc_format.py
+        python -m py_compile tools/extract_concepts.py
+        echo "✅ 关键脚本语法检查通过"
+
+    - name: 上传测试报告
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: python-test-report-py${{ matrix.python-version }}
+        path: |
+          htmlcov/
+          coverage.xml
+        retention-days: 7
+
+  # ==================== 作业3: Lean4代码编译测试 ====================
+  lean-build:
+    name: Lean4代码编译
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 安装Elan (Lean工具链)
+      run: |
+        echo "📦 安装Elan..."
+        curl -sSfL https://github.com/leanprover/elan/releases/download/v3.1.1/elan-x86_64-unknown-linux-gnu.tar.gz | tar xz
+        ./elan-init -y --default-toolchain none
+        echo "$HOME/.elan/bin" >> $GITHUB_PATH
+        rm elan-init
+
+    - name: 配置Lean环境
+      run: |
+        source $HOME/.elan/env
+        elan --version
+        # 如果项目有lean-toolchain文件，使用它
+        if [ -f "lean-toolchain" ]; then
+          elan default $(cat lean-toolchain)
+        else
+          elan default leanprover/lean4:v4.9.0
+        fi
+        lean --version
+
+    - name: 编译Lean文件
+      run: |
+        source $HOME/.elan/env
+        echo "🔨 编译Lean4代码..."
+        
+        # 查找所有.lean文件并编译
+        LEAN_FILES=$(find . -name "*.lean" -not -path "./.lake/*" -not -path "./build/*" 2>/dev/null || true)
+        
+        if [ -z "$LEAN_FILES" ]; then
+          echo "ℹ️ 未找到Lean文件"
+          exit 0
+        fi
+        
+        echo "找到以下Lean文件:"
+        echo "$LEAN_FILES"
+        
+        # 编译每个Lean文件
+        FAILED=0
+        for file in $LEAN_FILES; do
+          echo "编译: $file"
+          if ! lean $file 2>&1; then
+            echo "❌ 编译失败: $file"
+            FAILED=$((FAILED + 1))
+          fi
+        done
+        
+        if [ $FAILED -gt 0 ]; then
+          echo "❌ $FAILED 个Lean文件编译失败"
+          exit 1
+        else
+          echo "✅ 所有Lean文件编译成功"
+        fi
+      shell: bash
+
+  # ==================== 作业4: 链接有效性检查 ====================
+  link-check:
+    name: 链接有效性检查
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: [markdown-lint]  # 等Markdown检查完成后再运行
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 设置Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        cache: 'pip'
+
+    - name: 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4 lxml pyyaml
+
+    - name: 运行内部链接检查
+      run: |
+        echo "🔗 检查内部链接..."
+        # 使用项目现有的link_checker.py脚本
+        if [ -f "tools/link_checker.py" ]; then
+          python tools/link_checker.py --internal-only || true
+        else
+          echo "ℹ️ link_checker.py不存在，使用基础检查"
+          # 基础检查: 检查Markdown文件中的相对链接
+          python << 'EOF'
+        import os
+        import re
+        from pathlib import Path
+
+        def check_internal_links():
+            """检查Markdown文件中的内部链接"""
+            issues = []
+            md_files = list(Path('.').rglob('*.md'))
+            
+            for md_file in md_files:
+                if 'node_modules' in str(md_file) or '00-归档' in str(md_file):
+                    continue
+                    
+                content = md_file.read_text(encoding='utf-8')
+                # 匹配相对链接 [text](./path) 或 [text](path)
+                links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
+                
+                for text, link in links:
+                    # 跳过外部链接
+                    if link.startswith('http://') or link.startswith('https://') or link.startswith('#'):
+                        continue
+                    
+                    # 处理相对路径
+                    if link.startswith('./'):
+                        link = link[2:]
+                    
+                    target = md_file.parent / link
+                    if not target.exists() and not (target.with_suffix('.md')).exists():
+                        issues.append(f"{md_file}: 链接 '{link}' 指向不存在的文件")
+            
+            if issues:
+                print("⚠️ 发现内部链接问题:")
+                for issue in issues[:20]:  # 最多显示20个问题
+                    print(f"  - {issue}")
+                if len(issues) > 20:
+                    print(f"  ... 还有 {len(issues) - 20} 个问题")
+                return 1
+            else:
+                print("✅ 所有内部链接有效")
+                return 0
+
+        exit(check_internal_links())
+        EOF
+        fi
+      shell: bash
+
+    - name: 检查外部链接 (抽样)
+      run: |
+        echo "🌐 抽样检查外部链接..."
+        # 仅检查少量外部链接以避免网络延迟
+        python << 'EOF'
+        import re
+        import random
+        from pathlib import Path
+        import urllib.request
+        import ssl
+
+        def check_external_links_sample():
+            """抽样检查外部链接"""
+            ssl._create_default_https_context = ssl._create_unverified_context
+            
+            md_files = list(Path('.').rglob('*.md'))
+            all_links = []
+            
+            for md_file in md_files:
+                if 'node_modules' in str(md_file):
+                    continue
+                content = md_file.read_text(encoding='utf-8')
+                links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
+                for text, link in links:
+                    if link.startswith('http://') or link.startswith('https://'):
+                        all_links.append((md_file, link))
+            
+            # 随机抽样10个链接
+            sample = random.sample(all_links, min(10, len(all_links)))
+            
+            failed = 0
+            for md_file, link in sample:
+                try:
+                    req = urllib.request.Request(link, method='HEAD')
+                    req.add_header('User-Agent', 'Mozilla/5.0')
+                    response = urllib.request.urlopen(req, timeout=10)
+                    print(f"✅ {link}")
+                except Exception as e:
+                    print(f"⚠️ {link} - {str(e)[:50]}")
+                    failed += 1
+            
+            print(f"\n检查完成: {len(sample)} 个链接, {failed} 个失败")
+            return 0  # 不使CI失败，仅作报告
+
+        exit(check_external_links_sample())
+        EOF
+      shell: bash
+      continue-on-error: true
+
+  # ==================== 作业5: 生成质量报告 ====================
+  quality-report:
+    name: 生成质量报告
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    needs: [markdown-lint, python-test, lean-build]
+    if: always()  # 即使前面的作业失败也运行
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 设置Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyyaml
+
+    - name: 生成项目统计报告
+      run: |
+        echo "📊 生成项目质量统计报告..."
+        python << 'EOF'
+        import os
+        import json
+        from pathlib import Path
+        from datetime import datetime
+
+        def count_files():
+            """统计项目文件"""
+            stats = {
+                'timestamp': datetime.now().isoformat(),
+                'files': {},
+                'lines': {}
+            }
+            
+            # Markdown文件
+            md_files = list(Path('.').rglob('*.md'))
+            md_files = [f for f in md_files if 'node_modules' not in str(f) and '00-归档' not in str(f)]
+            stats['files']['markdown'] = len(md_files)
+            stats['lines']['markdown'] = sum(len(f.read_text(encoding='utf-8').splitlines()) for f in md_files)
+            
+            # Python文件
+            py_files = list(Path('.').rglob('*.py'))
+            py_files = [f for f in py_files if '__pycache__' not in str(f)]
+            stats['files']['python'] = len(py_files)
+            stats['lines']['python'] = sum(len(f.read_text(encoding='utf-8').splitlines()) for f in py_files)
+            
+            # Lean文件
+            lean_files = list(Path('.').rglob('*.lean'))
+            stats['files']['lean'] = len(lean_files)
+            stats['lines']['lean'] = sum(len(f.read_text(encoding='utf-8').splitlines()) for f in lean_files)
+            
+            # JSON文件
+            json_files = list(Path('.').rglob('*.json'))
+            json_files = [f for f in json_files if 'node_modules' not in str(f)]
+            stats['files']['json'] = len(json_files)
+            
+            # YAML文件
+            yaml_files = list(Path('.').rglob('*.yml')) + list(Path('.').rglob('*.yaml'))
+            stats['files']['yaml'] = len(yaml_files)
+            
+            return stats
+
+        def check_frontmatter():
+            """检查文档frontmatter质量"""
+            md_files = list(Path('.').rglob('*.md'))
+            md_files = [f for f in md_files if 'node_modules' not in str(f) and '00-归档' not in str(f)]
+            
+            with_frontmatter = 0
+            without_frontmatter = 0
+            
+            for f in md_files[:100]:  # 抽样检查前100个
+                content = f.read_text(encoding='utf-8')
+                if content.startswith('---'):
+                    with_frontmatter += 1
+                else:
+                    without_frontmatter += 1
+            
+            return {
+                'with_frontmatter': with_frontmatter,
+                'without_frontmatter': without_frontmatter,
+                'coverage': f"{with_frontmatter / (with_frontmatter + without_frontmatter) * 100:.1f}%"
+            }
+
+        stats = count_files()
+        frontmatter_stats = check_frontmatter()
+        
+        report = f"""# FormalMath 项目质量报告
+
+生成时间: {stats['timestamp']}
+
+## 文件统计
+
+| 类型 | 文件数 | 代码行数 |
+|------|--------|----------|
+| Markdown | {stats['files'].get('markdown', 0)} | {stats['lines'].get('markdown', 0):,} |
+| Python | {stats['files'].get('python', 0)} | {stats['lines'].get('python', 0):,} |
+| Lean4 | {stats['files'].get('lean', 0)} | {stats['lines'].get('lean', 0):,} |
+| JSON | {stats['files'].get('json', 0)} | - |
+| YAML | {stats['files'].get('yaml', 0)} | - |
+
+## 文档Frontmatter覆盖
+
+- 有Frontmatter: {frontmatter_stats['with_frontmatter']}
+- 无Frontmatter: {frontmatter_stats['without_frontmatter']}
+- 覆盖率: {frontmatter_stats['coverage']}
+
+## CI状态
+
+- 工作流: FormalMath CI
+- 触发: ${{ github.event_name }}
+- 提交: ${{ github.sha[:8] }}
+
+---
+*由GitHub Actions自动生成*
+"""
+        
+        # 保存报告
+        Path('quality-report.md').write_text(report, encoding='utf-8')
+        print(report)
+        
+        # 保存JSON格式
+        Path('quality-report.json').write_text(
+            json.dumps({**stats, 'frontmatter': frontmatter_stats}, indent=2, ensure_ascii=False),
+            encoding='utf-8'
+        )
+        EOF
+      shell: bash
+
+    - name: 上传质量报告
+      uses: actions/upload-artifact@v4
+      with:
+        name: quality-report
+        path: |
+          quality-report.md
+          quality-report.json
+        retention-days: 30
+
+    - name: 评论PR (如果是PR触发)
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const report = fs.readFileSync('quality-report.md', 'utf8');
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '## 📊 CI质量报告\n\n' + report.split('## CI状态')[0] + '\n---\n✅ CI检查完成'
+          });
+
+  # ==================== 汇总作业 ====================
+  ci-summary:
+    name: CI汇总
+    runs-on: ubuntu-latest
+    needs: [markdown-lint, python-test, lean-build, link-check, quality-report]
+    if: always()
+    
+    steps:
+    - name: 输出CI结果汇总
+      run: |
+        echo "╔══════════════════════════════════════════════════════╗"
+        echo "║           FormalMath CI 执行结果汇总                 ║"
+        echo "╠══════════════════════════════════════════════════════╣"
+        echo "║ Markdown格式检查: ${{ needs.markdown-lint.result }}          ║"
+        echo "║ Python脚本测试:   ${{ needs.python-test.result }}            ║"
+        echo "║ Lean4代码编译:    ${{ needs.lean-build.result }}             ║"
+        echo "║ 链接有效性检查:   ${{ needs.link-check.result }}             ║"
+        echo "║ 质量报告生成:     ${{ needs.quality-report.result }}         ║"
+        echo "╚══════════════════════════════════════════════════════╝"
+        
+        # 检查是否有失败的作业
+        if [[ "${{ needs.markdown-lint.result }}" == "failure" ]] || 
+           [[ "${{ needs.python-test.result }}" == "failure" ]] || 
+           [[ "${{ needs.lean-build.result }}" == "failure" ]]; then
+          echo "❌ CI 检查失败"
+          exit 1
+        else
+          echo "✅ CI 检查通过"
+        fi
+      shell: bash

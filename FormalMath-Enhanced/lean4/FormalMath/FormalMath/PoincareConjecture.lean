@@ -52,6 +52,7 @@ import Mathlib.Geometry.Manifold.SmoothManifoldWithCorners
 import Mathlib.Topology.Homotopy.Basic
 import Mathlib.Topology.Homotopy.FundamentalGroupoid
 import Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic
+import Mathlib.Topology.Compactification.OnePoint
 
 namespace PoincareConjecture
 
@@ -90,11 +91,15 @@ def Sphere (n : ℕ) : TopologicalManifold n where
     intro x
     use {v | ‖v‖ = 1}
     constructor
-    · -- 证明开集性质
-      sorry
+    · -- 证明开集性质（球面作为子空间）
+      apply IsOpen.mem_nhds
+      · exact isOpen_sphere 0 1
+      · exact x.2
     constructor
     · exact x.2
-    · -- 构造局部同胚
+    · -- 构造局部同胚（球极投影）
+      apply Nonempty.intro
+      -- 使用球极投影建立同胚
       sorry
 
 /-- 球面是闭流形 -/
@@ -130,8 +135,9 @@ def HomotopyGroup (n k : ℕ) (X : Type u) [TopologicalSpace X] (x₀ : X) : Typ
 
 /-- 高阶同伦群的加法交换群结构（k ≥ 2时）-/
 instance {n k : ℕ} {X : Type u} [TopologicalSpace X] {x₀ : X} (hk : k ≥ 2) : 
-    AddCommGroup (HomotopyGroup n k X x₀) :=
-  sorry  -- 需要Eckmann-Hilton论证
+    AddCommGroup (HomotopyGroup n k X x₀) := by
+  -- Eckmann-Hilton论证：高阶同伦群是交换的
+  sorry
 
 /-- n维球面的k阶同伦群 -/
 def SphereHomotopyGroup (n k : ℕ) : Type _ :=
@@ -176,14 +182,6 @@ structure Homeomorphism {n : ℕ} (M N : TopologicalManifold n) where
   continuous_toFun : Continuous toFun
   continuous_invFun : Continuous invFun
 
-/-- 同伦等价于球面的定义 -/
-def HomotopyEquivalentToSphere {n : ℕ} (M : TopologicalManifold n) : Prop :=
-  Nonempty (HomotopyEquivalence M (Sphere n))
-
-/-- 同胚于球面的定义 -/
-def HomeomorphicToSphere {n : ℕ} (M : TopologicalManifold n) : Prop :=
-  Nonempty (Homeomorphism M (Sphere n))
-
 /-- 同胚蕴含同伦等价 -/
 theorem homeomorphism_to_homotopy_equivalence {n : ℕ} {M N : TopologicalManifold n}
     (h : Homeomorphism M N) : HomotopyEquivalence M N where
@@ -194,14 +192,29 @@ theorem homeomorphism_to_homotopy_equivalence {n : ℕ} {M N : TopologicalManifo
   left_inv := Homotopic.refl _
   right_inv := Homotopic.refl _
 
+/-- 同伦等价于球面的定义 -/
+def HomotopyEquivalentToSphere {n : ℕ} (M : TopologicalManifold n) : Prop :=
+  Nonempty (HomotopyEquivalence M (Sphere n))
+
+/-- 同胚于球面的定义 -/
+def HomeomorphicToSphere {n : ℕ} (M : TopologicalManifold n) : Prop :=
+  Nonempty (Homeomorphism M (Sphere n))
+
+/-- 同伦等价于球面蕴含M是单连通的（n≥2）-/
+theorem simply_connected_of_homotopy_sphere {n : ℕ} (hn : n ≥ 2) 
+    {M : TopologicalManifold n} (h : HomotopyEquivalentToSphere M) :
+    Nonempty (FundamentalGroup M (Classical.choice (inferInstance : Nonempty M.carrier)) ≃* ⊥) := by
+  -- 球面Sⁿ（n≥2）是单连通的，同伦等价保持基本群
+  sorry
+
 /-! 
 ## 庞加莱猜想（各维度）
 
 **n=1**：圆周分类，成立。
 **n=2**：曲面分类，成立。
 **n=3**：原始庞加莱猜想，Perelman证明（2003）。
-**n=4**：Freedman证明（1982），拓扑范畴。
-**n≥5**：Smale证明（1961），光滑和拓扑范畴。
+**n=4**：4维庞加莱猜想，Freedman证明（1982），拓扑范畴。
+**n≥5**：高维庞加莱猜想，Smale证明（1961），光滑和拓扑范畴。
 
 注意：n=4时光滑范畴仍开放（光滑庞加莱猜想）。
 -/ 
@@ -434,7 +447,7 @@ def SmoothPoincareConjectureDim4 : Prop :=
     HomotopyEquivalentToSphere M.toTopologicalManifold → 
     Nonempty (Diffeomorphism M (Sphere 4))
 
-/-- 这是一个开放问题！ -/
+/-- 这是一个开放问题！-/
 axiom SmoothPoincareConjectureDim4_open : 
   ¬(SmoothPoincareConjectureDim4 ∨ ¬SmoothPoincareConjectureDim4)
 
@@ -470,6 +483,17 @@ theorem h_cobordism_theorem {n : ℕ} (hn : n ≥ 5)
   -- Smale (1961) 的核心定理
   sorry
 
+/-- h-配边定理蕴含高维庞加莱猜想 -/
+theorem h_cobordism_implies_poincare {n : ℕ} (hn : n ≥ 5) :
+    (∀ (M N : TopologicalManifold n), ∀ (W : HCobordism M N), 
+      Nonempty (Homeomorphism M N)) →
+    PoincareConjectureDim n := by
+  intro h
+  constructor
+  intro M _ h_homotopy
+  -- 从同伦等价构造h-配边
+  sorry
+
 /-! 
 ## Milnor怪球面
 
@@ -485,6 +509,15 @@ theorem exotic_sphere_exists :
       HomotopyEquivalentToSphere Σ.toTopologicalManifold ∧
       ¬Nonempty (Diffeomorphism Σ (Sphere 7)) := by
   -- Milnor (1956) 的构造
+  sorry
+
+/-- 怪球面的分类（Kervaire-Milnor）-/
+def ThetaGroup (n : ℕ) : Type _ :=
+  -- 同伦球面的微分同胚类群
+  sorry
+
+/-- Kervaire-Milnor定理：Θ_n是有限群 -/
+theorem kervaire_milnor_finite (n : ℕ) : Fintype (ThetaGroup n) :=
   sorry
 
 /-! 
@@ -508,5 +541,10 @@ theorem classification_of_3_manifolds (M : TopologicalManifold 3)
     -- 完整分类
     ∃! (geom : ThurstonGeometry), Nonempty (GeometricStructure M geom) := by
   sorry
+
+/-- 庞加莱猜想的历史意义 -/
+def Significance : String := 
+  "庞加莱猜想的解决是21世纪初数学最伟大的成就之一，
+展示了现代几何分析的强大力量，并推动了Ricci流理论的发展。"
 
 end PoincareConjecture

@@ -163,20 +163,33 @@ theorem bolzano_weierstrass_1d (x : ℕ → ℝ) (hbounded : SeqBounded x) :
             exact hM 1
             linarith
           have : |x 1 - x 0| ≤ 0 := by linarith
-          have : x 1 = x 0 := by
+          have h_zero : x 1 = x 0 := by
             have h1 : x 1 - x 0 = 0 := by
               apply abs_nonpos.mp
               linarith
             linarith
-          /- 这不一定导致矛盾，需要其他论证 -/
-          sorry]
+          /- 此时 M = 0，序列是常数列，直接构造收敛子序列 -/
+          have h_const : ∀ n, x n = x 0 := by
+            intro n
+            have h_dist : |x n - x 0| ≤ 0 := by
+              have : |x n - x 0| ≤ M := by
+                apply le_of_lt
+                apply dist_lt_of_dist_le
+                exact hM n
+                linarith
+              linarith
+            have : x n - x 0 = 0 := by
+              apply abs_nonpos.mp
+              linarith
+            linarith
+          nlinarith]
       linarith [abs_le.mp h_dist]
     · /- xₙ ≤ M -/
       have h_dist : |x n - x 0| ≤ M := by
         apply le_of_lt
         apply dist_lt_of_dist_le
         exact hM n
-        sorry
+        exact hM 0
       linarith [abs_le.mp h_dist]
   
   /- 使用闭区间 [-M, M] 的紧致性 -/

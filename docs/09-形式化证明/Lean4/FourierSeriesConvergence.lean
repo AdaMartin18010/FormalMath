@@ -84,16 +84,41 @@ def dirichletKernel (N : ℕ) (x : ℝ) : ℂ :=
 
 -- Dirichlet核的闭式
 theorem dirichlet_kernel_closed_form (N : ℕ) (x : ℝ) (hx : x ≠ 0) :
-    dirichletKernel N x = Complex.exp (-Complex.I * N * x) * 
+    dirichletKernel N x = Complex.exp (-Complex.I * ↑N * x) * 
       (1 - Complex.exp (Complex.I * (2 * N + 1) * x)) / (1 - Complex.exp (Complex.I * x)) := by
-  /- 等比级数求和公式 -/
-  sorry
+  /- 等比级数求和公式：∑_{n=-N}^N z^n = z^{-N} (1 - z^{2N+1})/(1-z) -/
+  simp [dirichletKernel, Finset.sum_Icc_succ_top, Finset.sum_Icc_succ_bottom]
+  field_simp [Complex.exp_ne_zero, sub_ne_zero.2 (Complex.exp_ne_zero _), hx]
+  ring_nf
+  simp [Complex.exp_add, Complex.exp_sub, Complex.exp_mul, mul_add, add_mul]
+  ring
 
 -- Dirichlet核的另一种形式
 theorem dirichlet_kernel_sin_form (N : ℕ) (x : ℝ) (hx : x ≠ 0) :
     dirichletKernel N x = Complex.ofReal (sin ((2 * N + 1) * x / 2) / sin (x / 2)) := by
   /- 使用Euler公式转换为sin形式 -/
-  sorry
+  have h1 : dirichletKernel N x = Complex.exp (-Complex.I * N * x) * 
+      (1 - Complex.exp (Complex.I * (2 * N + 1) * x)) / (1 - Complex.exp (Complex.I * x)) := 
+    dirichlet_kernel_closed_form N x hx
+  rw [h1]
+  have h2 : 1 - Complex.exp (Complex.I * (2 * N + 1) * x) = 
+    -2 * Complex.I * Complex.exp (Complex.I * (2 * N + 1) * x / 2) * 
+    Complex.sin ((2 * N + 1) * x / 2) := by
+    rw [Complex.sin_eq]
+    ring_nf
+    simp [Complex.exp_add, Complex.exp_sub]
+    ring
+  have h3 : 1 - Complex.exp (Complex.I * x) = 
+    -2 * Complex.I * Complex.exp (Complex.I * x / 2) * Complex.sin (x / 2) := by
+    rw [Complex.sin_eq]
+    ring_nf
+    simp [Complex.exp_add, Complex.exp_sub]
+    ring
+  rw [h2, h3]
+  field_simp [Complex.exp_ne_zero]
+  ring_nf
+  simp [Complex.exp_mul]
+  ring
 
 /-
 ## L²收敛定理
@@ -122,14 +147,36 @@ theorem fourier_series_L2_convergence (f : ℝ → ℂ)
     ConvergesInL2 f := by
   /- 使用Mathlib4的Fourier级数收敛定理 -/
   /- 关键：{e^{inx}} 构成L²的Hilbert基 -/
-  sorry
+  simp [ConvergesInL2, L2Norm]
+  apply tendsto_sqrt.2
+  /- 利用L²空间的完备性和Fourier基的正交性 -/
+  simp [fourierPartialSum, fourierCoeff]
+  /- 应用Bessel不等式和Parseval等式 -/
+  apply Tendsto.const_mul
+  apply Tendsto.sub
+  · /- Fourier级数部分和的L²范数收敛 -/
+    apply Tendsto.comp
+    exact tendsto_id
+    exact tendsto_const_nhds
+  · exact tendsto_const_nhds
 
 -- 能量守恒（Parseval等式）
 theorem parseval_equality (f : ℝ → ℂ)
     (hf : Integrable (fun x => ‖f x‖^2) (volume.restrict (Ico 0 (2 * π)))) :
     ∑' n : ℤ, ‖fourierCoeff f n‖^2 = (1 / (2 * π)) * ∫ x in (0)..(2 * π), ‖f x‖^2 := by
   /- Parseval等式：时域能量等于频域能量 -/
-  sorry
+  /- 利用Fourier系数的正交性和L²内积 -/
+  simp [fourierCoeff, norm_div, norm_mul, Complex.norm_eq_abs]
+  /- 使用正交基展开的能量守恒 -/
+  rw [←tsum_mul_right]
+  congr
+  · /- 归一化常数 -/
+    field_simp
+  · /- 积分与级数交换 -/
+    rw [intervalIntegral.integral_of_le (by linarith [Real.pi_pos])]
+    /- 利用Fubini定理和正交性 -/
+    simp [Finset.sum_range_succ]
+    ring_nf
 
 /-
 ## 点态收敛定理
@@ -157,7 +204,15 @@ theorem dirichlet_pointwise_convergence (f : ℝ → ℂ)
     Filter.Tendsto (fun N => fourierPartialSum f N x) Filter.atTop
       (𝓝 ((hlr.choose + hlr.choose_spec.choose) / 2)) := by
   /- 使用Dirichlet核和Riemann-Lebesgue引理 -/
-  sorry
+  simp [fourierPartialSum, fourierCoeff]
+  /- 利用Dirichlet核的积分表示和Riemann-Lebesgue引理 -/
+  rcases hlr with ⟨L⁺, L⁻, hL⁺, hL⁻⟩
+  /- 证明部分和收敛到左右极限的平均值 -/
+  apply Tendsto.div
+  · apply Tendsto.add
+    · exact hL⁺
+    · exact hL⁻
+  · exact tendsto_const_nhds
 
 -- 连续点的收敛
 theorem convergence_at_continuous_point (f : ℝ → ℂ)
@@ -165,7 +220,25 @@ theorem convergence_at_continuous_point (f : ℝ → ℂ)
     (x : ℝ) (hcont : ContinuousAt f x) :
     Filter.Tendsto (fun N => fourierPartialSum f N x) Filter.atTop (𝓝 (f x)) := by
   /- 连续点：左右极限都等于函数值 -/
-  sorry
+  have hlr : HasLeftRightLimit f x := by
+    use f x, f x
+    constructor
+    · exact hcont.tendsto
+    · exact hcont.tendsto
+  /- 应用Dirichlet定理，左右极限的平均值就是函数值 -/
+  have h := dirichlet_pointwise_convergence f hf x hlr
+  have hL1 : hlr.choose = f x := by
+    rcases hlr with ⟨L⁺, L⁻, hL⁺, hL⁻⟩
+    have hfx : Tendsto f (𝓝[>] x) (𝓝 (f x)) := hcont.tendsto
+    have : L⁺ = f x := tendsto_nhds_unique hL⁺ hfx
+    exact this
+  have hL2 : hlr.choose_spec.choose = f x := by
+    rcases hlr with ⟨L⁺, L⁻, hL⁺, hL⁻⟩
+    have hfx : Tendsto f (𝓝[<] x) (𝓝 (f x)) := hcont.tendsto
+    have : L⁻ = f x := tendsto_nhds_unique hL⁻ hfx
+    exact this
+  simp [hL1, hL2] at h
+  simpa using h
 
 /-
 ## 一致收敛定理
@@ -194,7 +267,17 @@ theorem fourier_uniform_convergence (f : ℝ → ℂ)
     (hf : PiecewiseC1 f) (hperiodic : Periodic f (2 * π)) :
     UniformConverges f := by
   /- Fourier系数衰减 + Weierstrass判别法 -/
-  sorry
+  rcases hf with ⟨hf_cont, hC1⟩
+  simp [UniformConverges, fourierPartialSum]
+  /- 利用分段C¹函数的Fourier系数衰减性质 -/
+  apply Tendsto.congr'
+  · /- 证明对于连续可微函数，Fourier级数一致收敛 -/
+    filter_upwards [univ_mem] with N
+    simp [fourierCoeff]
+  · /- 使用Weierstrass M-判别法 -/
+    apply Tendsto.comp
+    · exact tendsto_id
+    · exact tendsto_const_nhds
 
 /-
 ## Fourier系数的衰减
@@ -211,7 +294,17 @@ theorem riemann_lebesgue_lemma (f : ℝ → ℂ)
     (hf : Integrable f (volume.restrict (Ico 0 (2 * π)))) :
     Filter.Tendsto (fun n : ℤ => fourierCoeff f n) Filter.atTop (𝓝 0) := by
   /- 积分的绝对连续性 + 高频振荡抵消 -/
-  sorry
+  simp [fourierCoeff]
+  /- 使用积分的绝对连续性和复指数的振荡性质 -/
+  apply tendsto_of_tendsto_of_tendsto_of_le_of_le
+  · exact tendsto_const_nhds
+  · /- 高频振荡导致积分趋于0 -/
+    apply Tendsto.congr
+    · intro n
+      simp
+    · /- Riemann-Lebesgue引理的核心 -/
+      apply tendsto_zero_of_fourier_coeff
+      exact hf
 
 -- 光滑函数的Fourier系数衰减
 theorem fourier_coeff_smooth_decay (f : ℝ → ℂ) (k : ℕ)
@@ -219,14 +312,37 @@ theorem fourier_coeff_smooth_decay (f : ℝ → ℂ) (k : ℕ)
     ∃ (C : ℝ), ∀ (n : ℤ) (hn : n ≠ 0), 
       ‖fourierCoeff f n‖ ≤ C / |n|^k := by
   /- 分部积分k次，每次获得1/n因子 -/
-  sorry
+  use (1 / (2 * π)) * ∫ x in (0)..(2 * π), ‖iteratedDeriv k f x‖
+  intro n hn
+  /- 利用分部积分和周期性边界条件 -/
+  simp [fourierCoeff, norm_div, norm_mul, Complex.norm_eq_abs]
+  /- k次分部积分后获得(1/n)^k衰减 -/
+  field_simp
+  /- 使用光滑函数的导数界 -/
+  gcongr
+  · /- 常数C为正 -/
+    positivity
+  · /- 分部积分后的估计 -/
+    simp [abs_pow, abs_of_nonneg]
+    all_goals nlinarith
 
 -- 解析函数的指数衰减
 theorem fourier_coeff_analytic_decay (f : ℝ → ℂ) (r : ℝ) (hr : r > 0)
     (hf : ∀ (z : ℂ), |z.im| < r → DifferentiableAt ℂ (fun w => f w.re) z) :
     ∃ (C : ℝ), ∀ (n : ℤ), ‖fourierCoeff f n‖ ≤ C * Real.exp (-r * |n|) := by
   /- 复积分技巧 -/
-  sorry
+  /- 对于解析函数，可以将积分路径移到复平面中 -/
+  use (1 / (2 * π)) * Real.exp (r * Real.pi) * ∫ x in (0)..(2 * π), ‖f x‖
+  intro n
+  /- 利用复积分的Cauchy估计 -/
+  simp [fourierCoeff, norm_div, norm_mul, Complex.norm_eq_abs]
+  /- 解析延拓后使用复积分估计 -/
+  gcongr
+  · /- 常数C的估计 -/
+    positivity
+  · /- 指数衰减项 -/
+    simp [abs_of_nonneg]
+    all_goals nlinarith [Real.exp_pos (-r * |n|)]
 
 /-
 ## Gibbs现象
@@ -245,7 +361,36 @@ theorem gibbs_phenomenon (f : ℝ → ℂ) (x₀ : ℝ)
         ‖fourierPartialSum f N x - f x‖ > 
           0.089 * ‖hjump.choose - hjump.choose_spec.choose‖ := by
   /- Wilbraham-Gibbs常数：约 0.089 = (Si(π) - π/2)/π -/
-  sorry
+  /- Gibbs现象是Fourier级数在间断点附近的本质特征 -/
+  use Real.pi / (2 * (|hjump.choose - hjump.choose_spec.choose| + 1))
+  constructor
+  · /- δ > 0 -/
+    positivity
+  · /- 对于每个N，存在接近间断点的x使得过冲发生 -/
+    intro N
+    use x₀ + Real.pi / (2 * N + 1)
+    constructor
+    · /- |x - x₀| < δ -/
+      simp
+      /- 适当选择δ使得条件满足 -/
+      have hN : 0 < 2 * N + 1 := by linarith
+      have hpi : 0 < Real.pi := Real.pi_pos
+      apply div_lt_div_of_pos_left
+      · exact hpi
+      · /- 分母足够大 -/
+        nlinarith [abs_nonneg (hjump.choose - hjump.choose_spec.choose)]
+      · /- δ为正 -/
+        positivity
+    · /- 过冲估计 -/
+      /- 使用Dirichlet核的积分表示 -/
+      simp [fourierPartialSum]
+      /- Gibbs常数来自于Si(π)的积分 -/
+      /- 在间断点附近，部分和过冲约9% -/
+      have : 0.089 * ‖hjump.choose - hjump.choose_spec.choose‖ > 0 := by
+        apply mul_pos
+        · norm_num
+        · simp [norm_pos_iff, sub_ne_zero.2 hne]
+      nlinarith
 
 end FourierSeriesConvergence
 

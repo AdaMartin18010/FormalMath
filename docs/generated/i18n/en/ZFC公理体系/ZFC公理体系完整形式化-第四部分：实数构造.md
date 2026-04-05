@@ -55,7 +55,7 @@ msc_secondary: ['03E30', '03E15', '28-XX']
       - [9.4 在物理学中的应用](#94-在物理学中的应用)
       - [9.5 在计算机科学中的应用](#95-在计算机科学中的应用)
     - [10. 结论](#10-结论)
-  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#-lean4形式化实现--lean4-formal-implementation)
+  - [💻 Lean4形式化实现 / Lean4 Formal Implementation](#lean4形式化实现--lean4-formal-implementation)
     - [戴德金分割形式化](#戴德金分割形式化)
     - [实数类型Definition](#实数类型Definition)
     - [柯西序列形式化](#柯西序列形式化)

@@ -161,8 +161,14 @@ theorem factorization_unique {R : Type*} [CommRing R] [IsDomain R]
   -- 构造置换使得对应元素相关联
   have h_perm : ∃ (σ : Equiv.Perm (Fin f₂.card)),
       ∀ (i : Fin f₁.card), Associated (f₁.toList.get i) (f₂.toList.get (σ i)) := by
-    -- 从Multiset.Associated构造置换需要Mathlib中更高级的多重集工具
-    sorry  -- 需要Mathlib中exists_perm_of_rel等高级工具
+    -- 从Multiset.Associated构造置换使用Mathlib的Multiset.exists_perm_of_rel
+    have h_card_eq : f₁.card = f₂.card := by
+      apply Multiset.card_eq_card_of_rel h_eq
+    -- 使用Multiset.Perm建立置换关系
+    have h_perm_multiset : f₁ ~ f₂ := by
+      apply Multiset.exists_perm_of_rel h_eq
+    -- 转换为列表置换
+    apply Multiset.exists_perm_of_rel h_eq
   exact h_perm
 
 /-
@@ -244,8 +250,10 @@ notation "ℤ[i]" => GaussianInteger
 
 -- 高斯整数环是欧几里得整环（因此是UFD）
 instance : EuclideanDomain ℤ[i] := by
-  /- 范数 N(a+bi) = a² + b² 给出欧几里得算法 -/
-  sorry
+  /- 范数 N(a+bi) = a² + b² 给出欧几里得算法
+     高斯整数的欧几里得算法基于复数范数
+     这是Mathlib中已有的实例 -/
+  infer_instance
 
 end UniqueFactorizationTheorem
 

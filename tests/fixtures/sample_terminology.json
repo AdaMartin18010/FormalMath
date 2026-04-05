@@ -1,0 +1,30 @@
+{
+  "terminology": {
+    "命题逻辑": {
+      "en": "Propositional Logic",
+      "de": "Aussagenlogik",
+      "fr": "Logique propositionnelle",
+      "ja": "命題論理",
+      "section": "数理逻辑"
+    },
+    "群论": {
+      "en": "Group Theory",
+      "de": "Gruppentheorie",
+      "fr": "Théorie des groupes",
+      "ja": "群論",
+      "section": "代数学"
+    },
+    "拓扑空间": {
+      "en": "Topological Space",
+      "de": "Topologischer Raum",
+      "fr": "Espace topologique",
+      "ja": "位相空間",
+      "section": "拓扑学"
+    }
+  },
+  "mappings": {
+    "03B05": "命题逻辑",
+    "20B05": "群论",
+    "54A05": "拓扑空间"
+  }
+}
