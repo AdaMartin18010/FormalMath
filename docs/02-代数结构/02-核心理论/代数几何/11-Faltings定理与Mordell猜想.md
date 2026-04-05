@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [1 引言 / Introduction](#1-引言--introduction)
+- [1 引言 / Introduction](#1-引言-introduction)
 - [2 历史背景：从Mordell到Shafarevich](#2-历史背景从mordell到shafarevich)
   - [2.1 Mordell的原始猜想](#21-mordell的原始猜想)
   - [2.2 Siegel定理与Shafarevich猜想](#22-siegel定理与shafarevich猜想)
@@ -30,8 +30,8 @@ processed_at: '2026-04-05'
 - [5 后续发展与替代证明](#5-后续发展与替代证明)
   - [5.1 Vojta的Diophantine逼近证明](#51-vojta的diophantine逼近证明)
   - [5.2 Bombieri的简化与Uniformity猜想](#52-bombieri的简化与uniformity猜想)
-- [6 例子 / Examples](#6-例子--examples)
-- [7 参考文献 / References](#7-参考文献--references)
+- [6 例子 / Examples](#6-例子-examples)
+- [7 参考文献 / References](#7-参考文献-references)
 
 ---
 

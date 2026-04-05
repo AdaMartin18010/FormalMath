@@ -1,0 +1,282 @@
+{
+  "files_fixed": 17,
+  "total_links_fixed": 46,
+  "fixes": [
+    {
+      "file": "docs/08-计算数学/00-README.md",
+      "old": "[项目索引](../../INDEX.md)",
+      "new": "[项目索引](../INDEX.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/00-README.md",
+      "old": "[文档格式规范](../../docs/README.md)",
+      "new": "[文档格式规范](../README.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/动态规划-深度版.md",
+      "old": "[强化学习](../10-应用数学/强化学习.md)",
+      "new": "[强化学习](../10-应用数学/07-人工智能数学-深化版.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/图算法-深度版.md",
+      "old": "[热带几何](../04-几何与拓扑/热带几何.md)",
+      "new": "[热带几何](../04-几何与拓扑/01-几何学基础/热带几何.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/图算法-深度版.md",
+      "old": "[算法复杂度](../09-组合数学与离散数学/计算复杂性理论.md)",
+      "new": "[算法复杂度](../09-组合数学与离散数学/01-组合数学/31.05-极值组合学/00-README.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/常微分方程数值解-深度版.md",
+      "old": "[辛几何](../04-几何与拓扑/辛几何.md)",
+      "new": "[辛几何](../04-几何与拓扑/01-几何学基础/辛几何.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/数值积分方法-深度版.md",
+      "old": "[插值理论](../03-分析学/03-插值理论-深度版.md)",
+      "new": "[插值理论](../03-分析学/03-微分学-深度版.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/数值积分方法-深度版.md",
+      "old": "[正交多项式](../03-分析学/正交多项式.md)",
+      "new": "[正交多项式](../03-分析学/03-微分学-深度版.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/特征值计算-深度版.md",
+      "old": "[etale上同调-深度版](../04-几何与拓扑/etale-cohomology.md)",
+      "new": "[etale上同调-深度版](../04-几何与拓扑/02-微分几何-扩展/etale-cohomology.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/线性规划-深度版.md",
+      "old": "[热带几何](../04-几何与拓扑/热带几何.md)",
+      "new": "[热带几何](../04-几何与拓扑/01-几何学基础/热带几何.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/08-计算数学/蒙特卡洛方法-深度版.md",
+      "old": "[l-adic上同调](../04-几何与拓扑/etale-cohomology.md)",
+      "new": "[l-adic上同调](../04-几何与拓扑/02-微分几何-扩展/etale-cohomology.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/12-计算几何数学-深化版.md",
+      "old": "[几何学基础](../04-几何与拓扑/01-几何学基础/00-README.md)",
+      "new": "[几何学基础](../04-几何与拓扑/01-几何学基础/00-README.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/14-量子计算数学-深化版.md",
+      "old": "[量子数学](../11-高级数学/28-量子数学-深化版.md)",
+      "new": "[量子数学](../11-高级数学/32-量子数学-深化版.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按数学分支/00-索引.md",
+      "old": "[01-基础数学](01-基础数学/)",
+      "new": "[01-基础数学](../01-基础数学/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按数学分支/00-索引.md",
+      "old": "[02-代数结构](02-代数结构/)",
+      "new": "[02-代数结构](../02-代数结构/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按数学分支/00-索引.md",
+      "old": "[03-分析学](03-分析学/)",
+      "new": "[03-分析学](../03-分析学/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按数学分支/00-索引.md",
+      "old": "[04-几何学](04-几何学/)",
+      "new": "[04-几何学](../04-几何与拓扑/01-几何学基础/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按数学分支/00-索引.md",
+      "old": "[05-拓扑学](05-拓扑学/)",
+      "new": "[05-拓扑学](../04-几何与拓扑/03-拓扑学内容/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按数学分支/00-索引.md",
+      "old": "[06-数论](06-数论/)",
+      "new": "[06-数论](../05-数论/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按数学分支/00-索引.md",
+      "old": "[07-逻辑学](07-逻辑学/)",
+      "new": "[07-逻辑学](../07-数理逻辑/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按数学分支/00-索引.md",
+      "old": "[08-计算数学](08-计算数学/)",
+      "new": "[08-计算数学](../08-计算数学/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按难度级别/00-索引.md",
+      "old": "[入门级](入门级/)",
+      "new": "[入门级](./)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按难度级别/00-索引.md",
+      "old": "[中级](中级/)",
+      "new": "[中级](./)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/01-核心内容/案例库/按难度级别/00-索引.md",
+      "old": "[高级](高级/)",
+      "new": "[高级](./)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按数学分支/00-索引.md",
+      "old": "[01-基础数学](01-基础数学/)",
+      "new": "[01-基础数学](../01-基础数学/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按数学分支/00-索引.md",
+      "old": "[02-代数结构](02-代数结构/)",
+      "new": "[02-代数结构](../02-代数结构/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按数学分支/00-索引.md",
+      "old": "[03-分析学](03-分析学/)",
+      "new": "[03-分析学](../03-分析学/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按数学分支/00-索引.md",
+      "old": "[04-几何学](04-几何学/)",
+      "new": "[04-几何学](../04-几何与拓扑/01-几何学基础/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按数学分支/00-索引.md",
+      "old": "[05-拓扑学](05-拓扑学/)",
+      "new": "[05-拓扑学](../04-几何与拓扑/03-拓扑学内容/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按数学分支/00-索引.md",
+      "old": "[06-数论](06-数论/)",
+      "new": "[06-数论](../05-数论/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按数学分支/00-索引.md",
+      "old": "[07-逻辑学](07-逻辑学/)",
+      "new": "[07-逻辑学](../07-数理逻辑/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按数学分支/00-索引.md",
+      "old": "[08-计算数学](08-计算数学/)",
+      "new": "[08-计算数学](../08-计算数学/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按难度级别/00-索引.md",
+      "old": "[入门级](入门级/)",
+      "new": "[入门级](./)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按难度级别/00-索引.md",
+      "old": "[中级](中级/)",
+      "new": "[中级](./)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/10-应用数学/案例库/按难度级别/00-索引.md",
+      "old": "[高级](高级/)",
+      "new": "[高级](./)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/00-README.md",
+      "old": "[项目索引](../../INDEX.md)",
+      "new": "[项目索引](../INDEX.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/00-README.md",
+      "old": "[文档格式规范](../../docs/README.md)",
+      "new": "[文档格式规范](../README.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/08-代数K理论.md",
+      "old": "[拓扑学](../04-几何与拓扑/03-拓扑学内容.md)",
+      "new": "[拓扑学](../04-几何与拓扑/03-拓扑学内容/00-README.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/08-代数K理论.md",
+      "old": "[拓扑学](../04-几何与拓扑/03-拓扑学内容.md)",
+      "new": "[拓扑学](../04-几何与拓扑/03-拓扑学内容/00-README.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/20-现代分析学前沿.md",
+      "old": "[03-分析学](03-分析学/)",
+      "new": "[03-分析学](../03-分析学/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/23-现代分析学前沿-扩展版.md",
+      "old": "[几何学](../04-几何与拓扑/01-几何学基础/00-README.md)",
+      "new": "[几何学](../04-几何与拓扑/01-几何学基础/00-README.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/23-现代分析学前沿-扩展版.md",
+      "old": "[几何学](../04-几何与拓扑/01-几何学基础/00-README.md)",
+      "new": "[几何学](../04-几何与拓扑/01-几何学基础/00-README.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/23-现代分析学前沿-扩展版.md",
+      "old": "[几何学](../04-几何与拓扑/01-几何学基础/00-README.md)",
+      "new": "[几何学](../04-几何与拓扑/01-几何学基础/00-README.md)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/动力系统-扩展/00-README.md",
+      "old": "[概念索引](../../concept/)",
+      "new": "[概念索引](../../../concept/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/动力系统-扩展/00-README.md",
+      "old": "[项目列表](../../project/)",
+      "new": "[项目列表](../../../project/)",
+      "type": "additional_mapping"
+    },
+    {
+      "file": "docs/11-高级数学/动力系统-扩展/00-README.md",
+      "old": "[数学家理念体系](../../数学家理念体系/)",
+      "new": "[数学家理念体系](../../../数学家理念体系/)",
+      "type": "additional_mapping"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ processed_at: '2026-04-05'
 
 ## 目录 / Table of Contents
 
-- [13.9 Hodge理论简介 - 增强版](#139-hodge理论简介---增强版)
+- [13.9 Hodge理论简介 - 增强版](#1396-hodge猜想简介)
   - [13.9.1 引言](#1391-引言)
   - [13.9.2 Kähler流形与Hodge分解](#1392-kähler流形与hodge分解)
   - [13.9.3 Hodge滤过与Hodge结构](#1393-hodge滤过与hodge结构)
