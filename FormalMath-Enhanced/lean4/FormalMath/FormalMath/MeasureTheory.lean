@@ -101,25 +101,40 @@ Lebesgue测度是ℝⁿ上的标准测度，
 def LebesgueMeasure : Measure ℝ :=
   -- 由Carathéodory扩张定理，从区间长度构造
   -- λ([a,b]) = b - a
-  sorry
+  -- Mathlib中已实现标准Lebesgue测度
+  { measure := fun E ↦ ENNReal.ofReal (Real.vol E)
+    measure_empty := by simp
+    measure_countable_union := by
+      intro f h_meas h_disjoint
+      -- 利用Carathéodory扩张定理保证的可数可加性
+      sorry }
 
 /-- Lebesgue测度的平移不变性 -/
 theorem lebesgue_measure_translation_invariant {E : Set ℝ} 
     (hE : MeasurableSet E) (x : ℝ) :
     let translated := (fun y ↦ y + x) ⁻¹' E
     LebesgueMeasure.toMeasure.measure translated = LebesgueMeasure.toMeasure.measure E := by
-  -- 平移不变性证明
-  -- 1. 对区间直接验证
-  -- 2. 利用Carathéodory扩张的唯一性
-  sorry -- 这是Lebesgue测度的基本性质
+  -- 平移不变性证明：
+  -- 步骤1: 对区间 [a,b] 直接验证
+  --   (fun y ↦ y + x) ⁻¹' [a,b] = [a-x, b-x]
+  --   测度 = (b-x) - (a-x) = b - a = 原测度
+  -- 步骤2: 对开集利用区间的可数并
+  -- 步骤3: 对一般可测集利用Carathéodory扩张的唯一性
+  -- 步骤4: 外测度的平移不变性推广到所有可测集
+  sorry
 
 /-- Lebesgue测度的完备性 -/
 theorem lebesgue_measure_complete {E : Set ℝ} {F : Set ℝ}
     (hE : LebesgueMeasure.toMeasure.measure E = 0) (hF_sub : F ⊆ E) :
     MeasurableSet F := by
   -- Lebesgue测度是完备测度
-  -- 零测集的子集可测
-  sorry -- 完备性是Lebesgue测度的重要性质
+  -- 证明：零测集的子集可测
+  -- 步骤1: Lebesgue外测度定义为开覆盖的下确界
+  -- 步骤2: 若E的测度为0，则对任意ε>0，存在开集U⊃E使得|U|<ε
+  -- 步骤3: F⊆E⊆U，因此F的外测度也为0
+  -- 步骤4: Lebesgue可测集的刻画：Carathéodory条件
+  -- 步骤5: 外测度为0的集合满足Carathéodory条件
+  sorry
 
 /-! 
 ## 可测函数 (Measurable Functions)
@@ -159,8 +174,8 @@ Lebesgue积分是Riemann积分的推广，
 /-- 非负可测函数的积分（简单函数逼近的上确界） -/
 def LebesgueIntegralNonneg {α : Type*} [MeasurableSpace α] (μ : Measure α) 
     (f : α → ℝ≥0) : ℝ≥0∞ :=
-  ⨆ (g : α → ℝ≥0) (_ : SimpleFunction (fun x ↦ (g x : ℝ))) 
-    (_ : ∀ x, g x ≤ f x), SimpleFunctionIntegral (fun x ↦ (g x : ℝ)) sorry
+  ⨆ (g : α → ℝ≥0) (hg : SimpleFunction (fun x ↦ (g x : ℝ))) 
+    (_ : ∀ x, g x ≤ f x), SimpleFunctionIntegral (fun x ↦ (g x : ℝ)) hg
 
 /-- Lebesgue积分的定义 -/
 def LebesgueIntegral {α : Type*} [MeasurableSpace α] (μ : Measure α) 
@@ -171,8 +186,8 @@ def LebesgueIntegral {α : Type*} [MeasurableSpace α] (μ : Measure α)
   -- 3. 一般可测函数的积分（正部负部分开）
   let f_pos := fun x ↦ max (f x) 0
   let f_neg := fun x ↦ max (-f x) 0
-  (LebesgueIntegralNonneg μ (fun x ↦ ⟨f_pos x, by sorry⟩)).toReal - 
-  (LebesgueIntegralNonneg μ (fun x ↦ ⟨f_neg x, by sorry⟩)).toReal
+  (LebesgueIntegralNonneg μ (fun x ↦ ⟨f_pos x, le_max_right (f x) 0⟩)).toReal - 
+  (LebesgueIntegralNonneg μ (fun x ↦ ⟨f_neg x, le_max_right (-f x) 0⟩)).toReal
 
 /-- 积分记号 -/
 notation "∫" x "in" X "," f "d" μ => LebesgueIntegral μ (fun x ↦ f)
@@ -194,23 +209,26 @@ theorem monotone_convergence {α : Type*} [MeasurableSpace α] {μ : Measure α}
     (hf_mono : ∀ x, Monotone (fun n ↦ f n x))
     (f_lim : α → ℝ) (hf_lim : ∀ x, Tendsto (fun n ↦ f n x) atTop (𝓝 (f_lim x))) :
     ∫ x in α, f_lim x dμ = Tendsto (fun n ↦ ∫ x in α, f n x dμ) atTop (𝓝 _) := by
-  -- 单调收敛定理证明
-  --
-  -- 步骤1：由单调性，f_lim = sup_n f_n
-  --
+  -- 单调收敛定理证明：
+  -- 
+  -- 步骤1：由单调性，f_lim = sup_n f_n 几乎处处
+  -- 
   -- 步骤2：对简单函数证明（直接计算）
   -- 若f_n是简单函数，积分和sup可交换
-  --
+  -- 
   -- 步骤3：一般情形用简单函数逼近
   -- 对任意ε>0，存在简单函数g ≤ f_lim使得
   -- ∫g > ∫f_lim - ε
-  --
+  -- 
   -- 步骤4：利用单调性
   -- 当n足够大时，f_n ≥ g（在大部分区域）
   -- 因此lim ∫f_n ≥ ∫g > ∫f_lim - ε
-  --
+  -- 
   -- 步骤5：结合反向不等式（由f_n ≤ f_lim）
-  sorry -- 这是Lebesgue积分的核心收敛定理
+  -- limsup ∫f_n ≤ ∫f_lim
+  -- 
+  -- 结论：lim ∫f_n = ∫f_lim
+  sorry
 
 /-! 
 ## Fatou引理
@@ -229,24 +247,24 @@ theorem fatou_lemma {α : Type*} [MeasurableSpace α] {μ : Measure α}
     (hf_nonneg : ∀ n x, f n x ≥ 0) :
     ∫ x in α, (liminf (fun n ↦ f n x) atTop) dμ ≤ 
     liminf (fun n ↦ ∫ x in α, f n x dμ) atTop := by
-  -- Fatou引理证明
-  --
+  -- Fatou引理证明：
+  -- 
   -- 步骤1：构造辅助函数
   -- g_n = inf_{k≥n} f_k
-  --
+  -- 
   -- 步骤2：验证性质
   -- g_n单调递增收敛到liminf f_n
-  --
+  -- 
   -- 步骤3：应用单调收敛定理于g_n
   -- ∫lim g_n = lim ∫g_n
-  --
+  -- 
   -- 步骤4：估计
   -- g_n ≤ f_k 对所有k≥n
   -- 因此∫g_n ≤ inf_{k≥n} ∫f_k
-  --
+  -- 
   -- 步骤5：取极限
   -- lim ∫g_n ≤ liminf ∫f_n
-  sorry -- 这是测度论的基本引理
+  sorry
 
 /-! 
 ## 控制收敛定理 (Dominated Convergence Theorem)
@@ -266,23 +284,23 @@ theorem dominated_convergence {α : Type*} [MeasurableSpace α] {μ : Measure α
     (hg : Integrable g μ.toMeasure.measure)
     (h_bound : ∀ n, ∀ᵐ x ∂μ.toMeasure.measure, |f n x| ≤ g x) :
     Tendsto (fun n ↦ ∫ x in α, f n x dμ) atTop (𝓝 (∫ x in α, f_lim x dμ)) := by
-  -- 控制收敛定理证明
-  --
+  -- 控制收敛定理证明：
+  -- 
   -- 步骤1：转化为Fatou引理的应用
-  -- 考虑g + f_n和g - f_n
-  --
+  -- 考虑g + f_n和g - f_n（均为非负）
+  -- 
   -- 步骤2：应用Fatou引理于g + f_n
   -- ∫(g + f) ≤ liminf ∫(g + f_n) = ∫g + liminf ∫f_n
   -- 因此∫f ≤ liminf ∫f_n
-  --
+  -- 
   -- 步骤3：应用Fatou引理于g - f_n
   -- ∫(g - f) ≤ liminf ∫(g - f_n) = ∫g - limsup ∫f_n
   -- 因此∫f ≥ limsup ∫f_n
-  --
+  -- 
   -- 步骤4：结合
   -- limsup ∫f_n ≤ ∫f ≤ liminf ∫f_n
   -- 因此lim ∫f_n = ∫f
-  sorry -- 这是分析中最强大的收敛定理
+  sorry
 
 /-! 
 ## L^p空间 (L^p Spaces)
@@ -310,20 +328,20 @@ theorem holder_inequality {α : Type*} [MeasurableSpace α] {μ : Measure α}
     {p q : ℝ≥0∞} (hpq : 1/p.toReal + 1/q.toReal = 1) (hp : p > 1)
     {f g : α → ℝ} (hf : f ∈ LpSpace μ p) (hg : g ∈ LpSpace μ q) :
     ∫ x in α, |f x * g x| dμ ≤ LpNorm f hf * LpNorm g hg := by
-  -- Hölder不等式证明
-  --
+  -- Hölder不等式证明：
+  -- 
   -- 步骤1：利用Young不等式
   -- 对a,b≥0，有ab ≤ a^p/p + b^q/q
-  --
+  -- 
   -- 步骤2：标准化
-  -- 设‖f‖_p = ‖g‖_q = 1
-  --
+  -- 设‖f‖_p = ‖g‖_q = 1（一般情况通过齐次性归约）
+  -- 
   -- 步骤3：应用Young不等式
   -- |fg| ≤ |f|^p/p + |g|^q/q
-  --
+  -- 
   -- 步骤4：积分
   -- ∫|fg| ≤ (∫|f|^p)/p + (∫|g|^q)/q = 1/p + 1/q = 1
-  sorry -- 这是L^p空间理论的基础
+  sorry
 
 /-- Minkowski不等式（三角不等式） -/
 theorem minkowski_inequality {α : Type*} [MeasurableSpace α] {μ : Measure α}
@@ -334,11 +352,24 @@ theorem minkowski_inequality {α : Type*} [MeasurableSpace α] {μ : Measure α}
     let hh : h ∈ LpSpace μ p := by
       constructor
       · exact h_measurable
-      · sorry
+      · -- 证明f+g ∈ L^p
+        sorry
     LpNorm h hh ≤ LpNorm f hf + LpNorm g hg := by
-  -- Minkowski不等式证明
+  -- Minkowski不等式证明：
   -- 利用Hölder不等式
-  sorry -- 这是L^p范数三角不等式
+  -- 
+  -- ‖f+g‖_p^p = ∫|f+g|^p
+  --          = ∫|f+g|·|f+g|^{p-1}
+  --          ≤ ∫|f|·|f+g|^{p-1} + ∫|g|·|f+g|^{p-1}
+  -- 
+  -- 对每一项应用Hölder不等式：
+  -- ∫|f|·|f+g|^{p-1} ≤ ‖f‖_p · (∫|f+g|^{(p-1)q})^{1/q}
+  -- 其中1/p + 1/q = 1，即q = p/(p-1)
+  -- 因此(p-1)q = p
+  -- 
+  -- 整理得：‖f+g‖_p^p ≤ (‖f‖_p + ‖g‖_p) · ‖f+g‖_p^{p-1}
+  -- 即‖f+g‖_p ≤ ‖f‖_p + ‖g‖_p
+  sorry
 
 /-! 
 ## Radon-Nikodym定理
@@ -365,26 +396,26 @@ theorem radon_nikodym {α : Type*} [MeasurableSpace α] {ν μ : Measure α}
     (h_ac : ν ≪ μ) :
     ∃ f : α → ℝ≥0∞, Measurable f ∧ 
       ∀ s, MeasurableSet s → ν.measure s = ∫⁻ x in s, f x ∂μ.toMeasure.measure := by
-  -- Radon-Nikodym定理证明概要
-  --
+  -- Radon-Nikodym定理证明概要：
+  -- 
   -- 步骤1：Hahn分解
   -- 将空间分解为正集和负集
-  --
+  -- 
   -- 步骤2：构造极大元
   -- 考虑集合{f : ∫_E f dμ ≤ ν(E) 对所有E}
   -- 取上确界
-  --
+  -- 
   -- 步骤3：验证等式
   -- 证明构造的f满足ν(E) = ∫_E f dμ
-  --
+  -- 
   -- 步骤4：唯一性
   -- 证明f在μ-几乎处处意义下唯一
-  sorry -- 这是测度论的核心定理
+  sorry
 
 /-- Radon-Nikodym导数 -/
 def RadonNikodymDerivative {α : Type*} [MeasurableSpace α] {ν μ : Measure α}
     (h_ac : ν ≪ μ) : α → ℝ≥0∞ :=
-  Classical.choose (radon_nikodym sorry sorry h_ac)
+  Classical.choose (radon_nikodym (by assumption) (by assumption) h_ac)
 
 notation "d" ν "/d" μ => RadonNikodymDerivative (by assumption)
 
@@ -422,17 +453,19 @@ theorem hahn_decomposition {α : Type*} [MeasurableSpace α]
     (ν : SignedMeasure α) :
     ∃ A B, PositiveSet ν A ∧ NegativeSet ν B ∧ 
       A ∪ B = Set.univ ∧ A ∩ B = ∅ := by
-  -- Hahn分解定理证明
-  --
+  -- Hahn分解定理证明：
+  -- 
   -- 步骤1：构造极大负集
   -- 考虑所有负集的并
-  --
+  -- 
   -- 步骤2：定义正集
   -- A = Bᶜ
-  --
+  -- 
   -- 步骤3：验证A是正集
   -- 若A包含负测度子集，可构造更大的负集，矛盾
-  sorry -- 这是测度论的结构定理
+  -- 
+  -- 步骤4：验证不交并分解
+  sorry
 
 /-! 
 ## Fubini定理与乘积测度
@@ -459,6 +492,12 @@ def ProductMeasure {α β : Type*} [MeasurableSpace α] [MeasurableSpace β]
   measure_countable_union := by
     -- 验证可数可加性
     -- 利用积分的线性性和测度的可数可加性
+    intro f h_meas h_disj
+    -- 对每个x，截面{y | (x,y) ∈ ⋃_n f_n} = ⋃_n {y | (x,y) ∈ f_n}
+    -- 由于f_n不交，截面也不交
+    -- 由ν的可数可加性
+    -- ν({y | (x,y) ∈ ⋃_n f_n}) = ∑' n, ν({y | (x,y) ∈ f_n})
+    -- 再由积分的可数可加性（单调收敛定理）
     sorry
 
 /-- Fubini定理 -/
@@ -467,19 +506,19 @@ theorem fubini {α β : Type*} [MeasurableSpace α] [MeasurableSpace β]
     (hf : Measurable f) (hf_integrable : Integrable f (ProductMeasure μ ν).toMeasure.measure) :
     ∫ z in α × β, f z d(ProductMeasure μ ν) =
     ∫ x in α, (∫ y in β, f (x, y) dν) dμ := by
-  -- Fubini定理证明概要
-  --
+  -- Fubini定理证明概要：
+  -- 
   -- 步骤1：对指示函数证明
   -- 由乘积测度的定义直接验证
-  --
+  -- 
   -- 步骤2：对简单函数证明
   -- 利用积分的线性性
-  --
+  -- 
   -- 步骤3：利用单调收敛定理推广到非负函数
   -- 用简单函数逼近
-  --
+  -- 
   -- 步骤4：分解为正负部，得到一般情况
-  sorry -- 这是多重积分理论的核心
+  sorry
 
 /-! 
 ## 概率论中的测度论应用

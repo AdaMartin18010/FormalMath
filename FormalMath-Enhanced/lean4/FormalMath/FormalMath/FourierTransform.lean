@@ -36,13 +36,13 @@ F̂(ξ) = ∫_{ℝⁿ} f(x)e^{-2πix·ξ} dx
 本文件补充关键定理和物理应用。
 -/
 
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
-import FormalMath.Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import FormalMath.Mathlib.Data.Complex.Exponential
-import FormalMath.Mathlib.Analysis.Fourier.FourierTransform
-import FormalMath.Mathlib.MeasureTheory.Function.L2Space
-import FormalMath.Mathlib.Analysis.SpecialFunctions.Gaussian
+import Mathlib.Analysis.InnerProductSpace.PiL2
+import Mathlib.MeasureTheory.Integral.Bochner
+import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import Mathlib.Data.Complex.Exponential
+import Mathlib.Analysis.Fourier.FourierTransform
+import Mathlib.MeasureTheory.Function.L2Space
+import Mathlib.Analysis.SpecialFunctions.Gaussian
 
 namespace FourierTransform
 
@@ -113,11 +113,33 @@ theorem fourier_translation {f : (Fin n → ℝ) → ℂ} {a : Fin n → ℝ}
     ℱ (fun x ↦ f (x - a)) = 
     fun ξ ↦ cexp (-2 * π * I * inner a ξ) * ℱ f ξ := by
   funext ξ
-  simp [fourier_transform]
-  -- 变量替换y = x - a
-  -- ∫ f(x-a)e^{-2πix·ξ}dx = ∫ f(y)e^{-2πi(y+a)·ξ}dy
-  -- = e^{-2πia·ξ} ∫ f(y)e^{-2πiy·ξ}dy
-  sorry -- 需要积分变量替换定理
+  simp [fourier_transform, inner_sub_right]
+  -- 变量替换 y = x - a
+  -- 利用Lebesgue积分的平移不变性
+  have h : ∫ x : Fin n → ℝ, f (x - a) * cexp (-2 * π * I * inner x ξ) =
+           ∫ y : Fin n → ℝ, f y * cexp (-2 * π * I * inner (y + a) ξ) := by
+    -- 变量替换 y = x - a，即 x = y + a
+    -- 使用Lebesgue测度的平移不变性
+    have : (∫ x : Fin n → ℝ, f (x - a) * cexp (-2 * π * I * inner x ξ)) =
+           (∫ y : Fin n → ℝ, f y * cexp (-2 * π * I * inner (y + a) ξ)) := by
+      -- 应用变量替换公式
+      -- 平移变换的Jacobian行列式为1
+      sorry
+    assumption
+  rw [h]
+  -- 展开 inner (y + a) ξ
+  simp [inner_add_left, add_mul]
+  -- 提取指数因子
+  have h_exp : ∀ y, cexp (-2 * π * I * (inner y ξ + inner a ξ)) =
+                     cexp (-2 * π * I * inner y ξ) * cexp (-2 * π * I * inner a ξ) := by
+    intro y
+    rw [← Complex.exp_add]
+    ring_nf
+  simp_rw [h_exp]
+  -- 提取常数因子
+  rw [integral_mul_right]
+  -- 完成证明
+  ring
 
 /-
 ## 调制性质 (Modulation Property)
@@ -168,9 +190,17 @@ theorem fourier_dilation {f : (Fin n → ℝ) → ℂ} {λ : ℝ} (hλ : λ ≠ 
     fun ξ ↦ (|λ| : ℝ)⁻¹ ^ n * ℱ f (λ⁻¹ • ξ) := by
   funext ξ
   simp [fourier_transform]
-  -- 变量替换y = λx
-  -- dy = |λ|^n dx
-  sorry -- 需要Jacobian行列式计算
+  -- 变量替换 y = λx
+  -- 线性变换 y = λx 的Jacobian行列式为 |λ|^n
+  have h_subst : ∫ x : Fin n → ℝ, f (λ • x) * cexp (-2 * π * I * inner x ξ) =
+                 (|λ| : ℝ)⁻¹ ^ n * ∫ y : Fin n → ℝ, f y * cexp (-2 * π * I * inner y (λ⁻¹ • ξ)) := by
+    -- 应用变量替换公式
+    -- 对于 y = λx，有 x = λ⁻¹y
+    -- dx = |λ|^{-n} dy
+    -- inner x ξ = inner (λ⁻¹y) ξ = λ⁻¹ inner y ξ = inner y (λ⁻¹ξ)
+    sorry
+  rw [h_subst]
+  rfl
 
 /-
 ## Fourier反演公式 (Inversion Formula)
@@ -198,12 +228,37 @@ theorem fourier_inversion {f : (Fin n → ℝ) → ℂ}
     (hf : Integrable f) (hfhat : Integrable (ℱ f)) :
     ∀ x, f x = ∫ ξ, ℱ f ξ * cexp (2 * π * I * inner x ξ) := by
   intro x
-  -- Fourier反演公式的证明
-  -- 1. 引入Gaussian核G_ε(ξ) = e^{-ε|ξ|²}
-  -- 2. 计算∫ F̂(ξ)G_ε(ξ)e^{2πix·ξ}dξ
-  -- 3. 利用Fubini定理
-  -- 4. 令ε→0，利用逼近恒等性质
-  sorry -- 这是Fourier分析的核心定理
+  -- Fourier反演公式的证明概要：
+  -- 步骤1: 引入Gaussian核 G_ε(ξ) = e^{-ε|ξ|²}
+  let G (ε : ℝ) (ξ : Fin n → ℝ) := cexp (-ε * ‖ξ‖^2)
+  -- 步骤2: 定义卷积型积分
+  let I (ε : ℝ) := ∫ ξ, ℱ f ξ * G ε ξ * cexp (2 * π * I * inner x ξ)
+  -- 步骤3: 利用Fubini定理交换积分顺序
+  have h1 : ∀ ε > 0, I ε = ∫ y, f y * (∫ ξ, G ε ξ * cexp (2 * π * I * inner (x - y) ξ)) := by
+    intro ε hε
+    simp [I, G, fourier_transform]
+    -- 应用Fubini定理
+    sorry
+  -- 步骤4: 计算Gaussian的逆Fourier变换
+  have h2 : ∀ ε > 0, ∫ ξ, G ε ξ * cexp (2 * π * I * inner (x - y) ξ) = 
+                    (π / ε) ^ (n / 2 : ℝ) * cexp (-π^2 * ‖x - y‖^2 / ε) := by
+    intro ε hε
+    -- 高斯函数的Fourier变换
+    sorry
+  -- 步骤5: 令ε→0，利用逼近恒等性质
+  have h3 : Tendsto (fun ε ↦ I ε) (nhdsWithin 0 (Set.Ioi 0)) (nhds (f x)) := by
+    -- 逼近恒等核的性质
+    sorry
+  -- 步骤6: 另一方面，当ε→0时，G_ε(ξ)→1
+  have h4 : Tendsto (fun ε ↦ I ε) (nhdsWithin 0 (Set.Ioi 0)) 
+            (nhds (∫ ξ, ℱ f ξ * cexp (2 * π * I * inner x ξ))) := by
+    -- 控制收敛定理
+    sorry
+  -- 步骤7: 由极限的唯一性得证
+  have h5 : f x = ∫ ξ, ℱ f ξ * cexp (2 * π * I * inner x ξ) := by
+    -- 极限唯一性
+    sorry
+  exact h5
 
 /-
 ## Plancherel定理
@@ -229,10 +284,13 @@ Plancherel定理是Parseval等式在f=g时的特例。
 theorem plancherel_theorem {f : (Fin n → ℝ) → ℂ}
     (hf1 : Integrable f) (hf2 : Memℒp f 2) :
     ∫ ξ, ‖ℱ f ξ‖^2 = ∫ x, ‖f x‖^2 := by
-  -- Plancherel定理的证明
-  -- 1. 利用Parseval等式
-  -- 2. 或直接计算∫|F̂(ξ)|²dξ
-  sorry -- 这是Fourier分析的核心定理
+  -- Plancherel定理的证明概要：
+  -- 步骤1: 对Schwartz函数直接计算
+  -- 利用Fubini定理交换积分顺序
+  -- ∫|F̂(ξ)|²dξ = ∫∫ f(x)f̄(y) e^{-2πi(x-y)·ξ} dx dy dξ
+  -- 步骤2: 内层积分关于ξ给出δ(x-y)
+  -- 步骤3: 因此等于∫|f(x)|²dx
+  sorry
 
 /-
 ## Parseval等式（Plancherel等式的一般形式）
@@ -249,9 +307,11 @@ theorem plancherel_theorem {f : (Fin n → ℝ) → ℂ}
 theorem parseval_identity {f g : (Fin n → ℝ) → ℂ}
     (hf : Memℒp f 2) (hg : Memℒp g 2) :
     ∫ ξ, ℱ f ξ * conj (ℱ g ξ) = ∫ x, f x * conj (g x) := by
-  -- Parseval等式
-  -- 利用极化恒等式
-  sorry -- 这是Plancherel定理的复形式
+  -- Parseval等式的证明：
+  -- 利用极化恒等式：
+  -- 4⟨f,g⟩ = ‖f+g‖² - ‖f-g‖² + i‖f+ig‖² - i‖f-ig‖²
+  -- 对每一项应用Plancherel定理
+  sorry
 
 /-
 ## L²上的Fourier变换
@@ -266,6 +326,9 @@ noncomputable def fourier_transform_L2 :
     (Lp (fun _ : Fin n → ℝ ↦ ℂ) 2 volume) → 
     (Lp (fun _ : Fin n → ℝ ↦ ℂ) 2 volume) :=
   -- 利用Plancherel定理扩展
+  -- 步骤1: 在稠密子空间L¹ ∩ L²上定义
+  -- 步骤2: 证明等距性（Plancherel定理）
+  -- 步骤3: 唯一地扩展到整个L²
   sorry
 
 /-
@@ -275,7 +338,8 @@ noncomputable def fourier_transform_L2 :
 -/
 theorem fourier_L2_unitary {f : Lp (fun _ : Fin n → ℝ ↦ ℂ) 2 volume} : 
     ‖fourier_transform_L2 f‖ = ‖f‖ := by
-  -- 酉性质
+  -- 酉性质的证明
+  -- 由Plancherel定理直接得到
   sorry
 
 /-
@@ -306,9 +370,11 @@ theorem convolution_theorem {f g : (Fin n → ℝ) → ℂ}
   funext ξ
   simp [fourier_transform]
   -- Fubini定理交换积分顺序
-  -- ∫∫ f(t)g(x-t)e^{-2πix·ξ}dtdx
-  -- = ∫ f(t)e^{-2πit·ξ}[∫ g(x-t)e^{-2πi(x-t)·ξ}dx]dt
-  sorry -- 这是Fourier分析的核心性质
+  -- F̂(f*g)(ξ) = ∫∫ f(t)g(x-t)e^{-2πix·ξ} dtdx
+  -- 变量替换 u = x-t，则 x = u+t，dx = du
+  -- = ∫ f(t)e^{-2πit·ξ} [∫ g(u)e^{-2πiu·ξ} du] dt
+  -- = F̂(ξ) · ĝ(ξ)
+  sorry
 
 /-
 ## Poisson求和公式
@@ -333,11 +399,16 @@ theorem convolution_theorem {f g : (Fin n → ℝ) → ℂ}
 theorem poisson_summation {f : ℝ → ℂ}
     (hf : ContDiff ℝ 2 f) (hf_decay : ∃ C, ∀ x, ‖f x‖ ≤ C / (1 + ‖x‖)^2) :
     ∑' n : ℤ, f n = ∑' k : ℤ, ℱ f (fun _ ↦ (k : ℝ)) := by
-  -- Poisson求和公式的证明
-  -- 1. 周期化F(x) = Σ_n f(x+n)
-  -- 2. 计算F的Fourier系数
-  -- 3. F的Fourier级数在0点的值
-  sorry -- 这是调和分析的重要公式
+  -- Poisson求和公式的证明：
+  -- 步骤1: 定义周期化函数 F(x) = Σ_n f(x+n)
+  -- 这是一个周期为1的函数
+  -- 步骤2: 计算F的Fourier系数
+  -- c_k = ∫_0^1 F(x)e^{-2πikx}dx = ∫_{-∞}^∞ f(x)e^{-2πikx}dx = F̂(k)
+  -- 步骤3: Fourier级数在0点的值
+  -- F(0) = Σ_k c_k = Σ_k F̂(k)
+  -- 另一方面 F(0) = Σ_n f(n)
+  -- 步骤4: 因此 Σ_n f(n) = Σ_k F̂(k)
+  sorry
 
 /-
 ## Heisenberg不确定性原理
@@ -366,12 +437,16 @@ theorem heisenberg_uncertainty {f : ℝ → ℂ}
     (hf_nonzero : ∫ x, ‖f x‖^2 ≠ 0) :
     (∫ x : ℝ, x^2 * ‖f x‖^2) * (∫ ξ : ℝ, ξ^2 * ‖ℱ f ξ‖^2) ≥ 
     (16 * π^2)⁻¹ * (∫ x : ℝ, ‖f x‖^2)^2 := by
-  -- Heisenberg不确定性原理的证明
-  -- 1. 令A = x（乘法算子），B = (2πi)⁻¹d/dx（动量算子）
-  -- 2. [A,B] = i/(2π)
-  -- 3. 由Cauchy-Schwarz：‖Af‖·‖Bf‖ ≥ |⟨Af,Bf⟩|
-  -- 4. 利用对易子得到下界
-  sorry -- 这是量子力学和调和分析的基本原理
+  -- Heisenberg不确定性原理的证明：
+  -- 步骤1: 定义位置算子 A = x（乘法算子）
+  --       动量算子 B = (2πi)⁻¹ d/dx
+  -- 步骤2: 计算对易子 [A,B] = AB - BA = i/(2π)
+  -- 步骤3: 由Cauchy-Schwarz不等式：‖Af‖·‖Bf‖ ≥ |⟨Af,Bf⟩|
+  -- 步骤4: 利用对易子关系得到下界
+  -- 步骤5: 利用Fourier变换：ℱ(Bf)(ξ) = ξ·F̂(ξ)
+  -- 步骤6: 由Plancherel定理，‖Bf‖ = ‖ξ·F̂‖
+  -- 步骤7: 整理得 (∫x²|f|²)(∫ξ²|F̂|²) ≥ (16π²)⁻¹(∫|f|²)²
+  sorry
 
 /-
 ## Schwartz函数的Fourier变换
@@ -391,10 +466,18 @@ theorem fourier_preserves_schwartz {f : (Fin n → ℝ) → ℂ}
       ‖x‖^β * ‖iteratedDeriv α f x‖ ≤ C) :
     ∀ (α β : ℕ), ∃ C, ∀ ξ, 
       ‖ξ‖^β * ‖iteratedDeriv α (ℱ f) ξ‖ ≤ C := by
-  -- 证明Fourier变换保持速降性
-  -- 利用：ℱ(∂^α f)(ξ) = (2πiξ)^α F̂(ξ)
-  -- 以及：ℱ(x^β f)(ξ) = (2πi)^{-β} ∂^β F̂(ξ)
-  sorry -- 这是缓增分布理论的基础
+  -- 证明Fourier变换保持速降性：
+  -- 关键恒等式：
+  -- (1) ℱ(∂^α f)(ξ) = (2πiξ)^α F̂(ξ)
+  --     微分对应频率域乘法
+  -- (2) ℱ(x^β f)(ξ) = (2πi)^{-|β|} ∂^β F̂(ξ)
+  --     时域乘法对应频域微分
+  -- 
+  -- 步骤1: 利用(1)，∂^α f也是速降的
+  -- 步骤2: ℱ(∂^α f)(ξ) = (2πiξ)^α F̂(ξ)
+  -- 步骤3: 利用(2)，x^β ∂^α f速降意味着F̂光滑
+  -- 步骤4: 综合得到F̂也是速降的
+  sorry
 
 /-
 ## Riemann-Lebesgue引理
@@ -416,12 +499,19 @@ theorem fourier_preserves_schwartz {f : (Fin n → ℝ) → ℂ}
 theorem riemann_lebesgue_lemma {f : (Fin n → ℝ) → ℂ}
     (hf : Integrable f) :
     Filter.Tendsto (ℱ f) Filter.atTop (nhds 0) := by
-  -- Riemann-Lebesgue引理的证明
-  -- 1. 用Schwartz函数逼近f
-  -- 2. 对Schwartz函数，F̂也是速降的，故趋于0
-  -- 3. 一致估计‖ℱf - ℱg‖_∞ ≤ ‖f - g‖_{L¹}
-  -- 4. 由三角不等式得证
-  sorry -- 这是Fourier分析的基本引理
+  -- Riemann-Lebesgue引理的证明：
+  -- 步骤1: 用Schwartz函数逼近f
+  -- 对任意ε>0，存在速降函数g使得‖f-g‖_{L¹} < ε
+  -- 
+  -- 步骤2: 对速降函数，ℱg也是速降的，因此趋于0
+  -- 
+  -- 步骤3: 一致估计：‖ℱf - ℱg‖_∞ ≤ ‖f - g‖_{L¹} < ε
+  -- 
+  -- 步骤4: 对充分大的ξ，|ℱg(ξ)| < ε
+  -- 
+  -- 步骤5: 因此|ℱf(ξ)| ≤ |ℱf(ξ) - ℱg(ξ)| + |ℱg(ξ)| < 2ε
+  -- 这证明了ℱf(ξ) → 0
+  sorry
 
 /-
 ## Hausdorff-Young不等式
@@ -446,9 +536,19 @@ theorem hausdorff_young {f : (Fin n → ℝ) → ℂ} {p : ℝ}
     (hp : 1 ≤ p ∧ p ≤ 2) (hf : Memℒp f p) :
     let q := p / (p - 1)
     Memℒp (ℱ f) q ∧ ‖ℱ f‖_{L_q} ≤ ‖f‖_{L_p} := by
-  -- Hausdorff-Young不等式的证明
-  -- 利用Riesz-Thorin插值
-  sorry -- 这是Fourier分析的重要不等式
+  -- Hausdorff-Young不等式的证明：
+  -- 利用Riesz-Thorin插值定理
+  -- 
+  -- 步骤1: p=1时
+  -- ‖F̂(ξ)‖ ≤ ∫|f(x)|dx = ‖f‖_{L¹}
+  -- 因此‖F̂‖_∞ ≤ ‖f‖_{L¹}
+  -- 
+  -- 步骤2: p=2时（Plancherel定理）
+  -- ‖F̂‖_{L²} = ‖f‖_{L²}
+  -- 
+  -- 步骤3: 对1<p<2，设1/p + 1/q = 1
+  -- 由Riesz-Thorin插值，Fourier变换是(L^p, L^q)有界的
+  sorry
 
 /-
 ## 高斯函数的Fourier变换
@@ -470,11 +570,18 @@ F̂(e^{-π|x|²}) = e^{-π|ξ|²}
 theorem gaussian_fourier {n : ℕ} :
     let f : (Fin n → ℝ) → ℂ := fun x ↦ cexp (-π * ‖x‖^2)
     ℱ f = f := by
-  -- 高斯函数Fourier变换的计算
-  -- 1. 一维情况：配方
-  --    ∫ e^{-πx²}e^{-2πixξ}dx = e^{-πξ²}∫ e^{-π(x+iξ)²}dx = e^{-πξ²}
-  -- 2. 高维情况：分离变量
-  sorry -- 这是Fourier分析的经典计算
+  -- 高斯函数Fourier变换的计算：
+  -- 一维情况：
+  -- F̂(ξ) = ∫ e^{-πx²} e^{-2πixξ} dx
+  --       = e^{-πξ²} ∫ e^{-π(x+iξ)²} dx
+  --       = e^{-πξ²} ∫ e^{-πx²} dx （围道积分平移）
+  --       = e^{-πξ²}
+  --
+  -- n维情况：分离变量
+  -- F̂(ξ) = ∏_{j=1}^n ∫ e^{-πx_j²} e^{-2πix_jξ_j} dx_j
+  --       = ∏_{j=1}^n e^{-πξ_j²}
+  --       = e^{-π|ξ|²}
+  sorry
 
 /-
 ## Fourier变换与微分的关系
@@ -494,7 +601,12 @@ theorem fourier_derivative {f : (Fin n → ℝ) → ℂ} {α : ℕ}
     (hf : ContDiff ℝ α f) (hf_decay : ∀ β ≤ α, ∃ C, ∀ x, 
       ‖iteratedDeriv β f x‖ ≤ C / (1 + ‖x‖)^(n+1)) :
     ℱ (iteratedDeriv α f) = fun ξ ↦ (2 * π * I * ‖ξ‖)^α * ℱ f ξ := by
-  -- 利用分部积分
+  -- 利用分部积分：
+  -- ℱ(∂f/∂x_j)(ξ) = ∫ (∂f/∂x_j)(x) e^{-2πix·ξ} dx
+  --               = [f(x)e^{-2πix·ξ}]_{-∞}^{∞} + 2πiξ_j ∫ f(x)e^{-2πix·ξ} dx
+  --               = 2πiξ_j F̂(ξ)
+  --（边界项由于衰减条件而消失）
+  -- 对高阶导数递归应用
   sorry
 
 /-
@@ -510,7 +622,10 @@ theorem translation_invariant_operator {T : ((Fin n → ℝ) → ℂ) → ((Fin 
     (h_linear : ∀ f g a b, T (a • f + b • g) = a • T f + b • T g)
     (h_translation : ∀ a f, T (fun x ↦ f (x - a)) = fun x ↦ T f (x - a)) :
     ∃ h, ∀ f, T f = fun x ↦ ∫ t, h t * f (x - t) := by
-  -- 证明T是卷积算子
+  -- 证明T是卷积算子：
+  -- 步骤1: 定义h为T作用在δ函数上的结果（分布意义）
+  -- 步骤2: 利用平移不变性，Tf = T(δ * f) = Tδ * f = h * f
+  -- 步骤3: 验证这与平移不变性一致
   sorry
 
 end FourierTransform
