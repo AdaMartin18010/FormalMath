@@ -1,8 +1,11 @@
 ---
-msc_primary: "26B05"
-msc_secondary: ["54E45", "97I40"]
+msc_primary: 26B05
+msc_secondary:
+- 54E45
+- 97I40
+title: Heine-Borel 定理
+processed_at: '2026-04-05'
 ---
-
 # Heine-Borel 定理
 
 **定理编号**: L2-AN003  

@@ -1,3 +1,8 @@
+---
+title: FormalMath项目Frontmatter格式统一化报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath项目Frontmatter格式统一化报告
 
 **处理日期**: 2026-04-05  

@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: "97A99"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+title: FormalMath项目进度报告目录
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目进度报告目录
 
 **创建日期**: 2025年12月1日

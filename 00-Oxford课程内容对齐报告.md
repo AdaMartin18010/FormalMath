@@ -1,10 +1,13 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ["97A99", "97B99"]
-date: "2026-04-04"
-version: "v1.0"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+- 97B99
+date: '2026-04-04'
+version: v1.0
+title: Oxford数学课程内容深度对齐报告
+processed_at: '2026-04-05'
 ---
-
 # Oxford数学课程内容深度对齐报告
 
 **文档类型**: 国际课程对齐分析  

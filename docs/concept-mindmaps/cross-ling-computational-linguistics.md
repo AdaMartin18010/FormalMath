@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: 数学×语言学：计算语言学的统计模型
+processed_at: '2026-04-05'
 ---
-
 # 数学×语言学：计算语言学的统计模型
 
 ## 概述

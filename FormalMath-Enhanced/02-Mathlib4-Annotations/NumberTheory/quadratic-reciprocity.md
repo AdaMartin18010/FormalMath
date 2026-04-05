@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 二次互反律 (Quadratic Reciprocity)
 ---
-
 # 二次互反律 (Quadratic Reciprocity)
 
 ## Mathlib4 引用

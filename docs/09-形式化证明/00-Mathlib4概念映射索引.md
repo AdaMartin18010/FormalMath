@@ -1,11 +1,16 @@
 ---
-msc_primary: "68V20"
-msc_secondary: ['03B35', '68T99', '00A99']
-mathlib4_version: "v4.29.0"
-mathlib4_latest: "v4.29.0"
-lean4_version: "v4.29.0"
-last_updated: "2026-04-03"
-next_review: "2026-07-03"
+msc_primary: 68V20
+msc_secondary:
+- 03B35
+- 68T99
+- 00A99
+mathlib4_version: v4.29.0
+mathlib4_latest: v4.29.0
+lean4_version: v4.29.0
+last_updated: '2026-04-03'
+next_review: '2026-07-03'
+title: Mathlib4概念映射索引
+processed_at: '2026-04-05'
 ---
 msc_primary: "68V20"
 msc_secondary: ['03B35', '68T99', '00A99']

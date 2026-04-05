@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['26A42', '55-XX', '97-XX']
+msc_primary: 00A99
+msc_secondary:
+- 26A42
+- 55A99
+- 97A99
+title: FormalMath全面批判性分析报告推进更新 - 2025年1月
+processed_at: '2026-04-05'
 ---
-
 # FormalMath全面批判性分析报告推进更新 - 2025年1月
 
 ## 📋 推进概述

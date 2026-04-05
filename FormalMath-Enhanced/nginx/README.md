@@ -1,3 +1,8 @@
+---
+title: FormalMath Nginx 负载均衡配置
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Nginx 负载均衡配置
 
 生产级 Nginx 负载均衡配置，支持高并发、健康检查、会话保持、SSL终止和智能缓存。

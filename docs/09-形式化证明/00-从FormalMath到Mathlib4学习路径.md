@@ -1,8 +1,12 @@
 ---
-msc_primary: "68V20"
-msc_secondary: ['03B35', '97U50']
-mathlib4_version: "v4.29.0"
-last_updated: "2026-04-03"
+msc_primary: 68V20
+msc_secondary:
+- 03B35
+- 97U50
+mathlib4_version: v4.29.0
+last_updated: '2026-04-03'
+title: 从FormalMath到Mathlib4学习路径
+processed_at: '2026-04-05'
 ---
 msc_primary: "68V20"
 msc_secondary: ['03B35', '97U50']

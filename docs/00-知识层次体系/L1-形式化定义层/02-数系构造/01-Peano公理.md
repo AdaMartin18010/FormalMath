@@ -1,12 +1,24 @@
 ---
-msc_primary: "03F30"
-msc_secondary: ["11B83", "97F40"]
+msc_primary: 03F30
+msc_secondary:
+- 11B83
+- 97F40
 level: L1-Formal
 domain: 数论
 concept: Peano公理
-prerequisites: ["集合与元素", "函数与映射"]
-next_level: ["数学归纳法", "整数构造"]
-tags: ["数系构造", "公理系统", "自然数", "形式化定义"]
+prerequisites:
+- 集合与元素
+- 函数与映射
+next_level:
+- 数学归纳法
+- 整数构造
+tags:
+- 数系构造
+- 公理系统
+- 自然数
+- 形式化定义
+title: 'L1: 自然数的Peano公理 (Peano Axioms)'
+processed_at: '2026-04-05'
 ---
 msc_primary: "03F30"
 msc_secondary: ["11B83", "97F40"]

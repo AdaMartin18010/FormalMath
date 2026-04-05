@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: FormalMath T2.2 评估系统
 ---
-
 # FormalMath T2.2 评估系统
 
 基于五维评估模型的完整评估系统，包含过程性评价、增值评价、表现性评价和发散思维评价。

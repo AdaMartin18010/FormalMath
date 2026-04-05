@@ -1,3 +1,8 @@
+---
+title: FormalMath v2.0 质量重写总控中心
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath v2.0 质量重写总控中心
 
 **项目代号**: `v2-quality-rewrite`  

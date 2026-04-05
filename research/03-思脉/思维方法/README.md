@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00A35"
+msc_primary: 97A99
+msc_secondary:
+- 00A35
+title: 思维方法
+processed_at: '2026-04-05'
 ---
-
 # 思维方法
 
 ## 目录说明

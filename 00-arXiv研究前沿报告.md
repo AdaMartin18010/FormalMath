@@ -1,8 +1,15 @@
 ---
-msc_primary: "00A30"
-msc_secondary: ['01A67', '14-XX', '55-XX', '53-XX', '11-XX', '60-XX']
+msc_primary: 00A30
+msc_secondary:
+- 01A67
+- 14A99
+- 55A99
+- 53A99
+- 11A99
+- 60A99
+title: arXiv数学研究前沿报告
+processed_at: '2026-04-05'
 ---
-
 # arXiv数学研究前沿报告
 
 **文档版本**: v1.0  

@@ -1,8 +1,12 @@
 ---
-msc_primary: "16-XX"
-msc_secondary: ['16-XX', '13-XX', '14-XX']
+msc_primary: 16A99
+msc_secondary:
+- 16A99
+- 13A99
+- 14A99
+title: Nakayama引理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Nakayama引理 - 五种表征
 
 **创建日期**: 2025年12月1日

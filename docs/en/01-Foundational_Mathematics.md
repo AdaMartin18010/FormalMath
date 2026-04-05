@@ -1,3 +1,8 @@
+---
+title: Foundational Mathematics (基础数学)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Foundational Mathematics (基础数学)
 
 This document provides bilingual (English-Chinese) definitions, notations, and examples for 20 core concepts in foundational mathematics.

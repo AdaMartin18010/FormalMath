@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 同伦类型论与Lean4的联系
 ---
-
 # 同伦类型论与Lean4的联系
 
 > HoTT核心概念在Lean4中的表达、单值公理的实现以及高阶归纳类型的例子

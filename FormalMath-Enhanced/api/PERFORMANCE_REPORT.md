@@ -1,3 +1,8 @@
+---
+title: FormalMath API 性能测试报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API 性能测试报告
 
 ## 测试环境

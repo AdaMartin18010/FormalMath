@@ -1,3 +1,8 @@
+---
+title: FormalMath 内容质量评估报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 内容质量评估报告
 
 **生成时间**: 2026-04-04 12:39:58

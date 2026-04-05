@@ -1,11 +1,14 @@
 ---
 name: 💡 功能请求
 about: 建议新功能或改进现有功能
-title: '[Feature] '
-labels: ['enhancement', 'needs-triage']
+title: '[Feature]'
+labels:
+- enhancement
+- needs-triage
 assignees: []
+msc_primary: 00A99
+processed_at: '2026-04-05'
 ---
-
 ## 💡 功能描述
 
 <!-- 清晰简洁地描述你想要的功能 -->

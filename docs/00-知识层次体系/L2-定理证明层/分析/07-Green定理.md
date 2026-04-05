@@ -1,8 +1,12 @@
 ---
-msc_primary: "26B20"
-msc_secondary: ["58C35", "53A04", "97I55"]
+msc_primary: 26B20
+msc_secondary:
+- 58C35
+- 53A04
+- 97I55
+title: Green 定理
+processed_at: '2026-04-05'
 ---
-
 # Green 定理
 
 **定理编号**: L2-AN007  

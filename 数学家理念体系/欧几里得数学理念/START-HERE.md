@@ -1,13 +1,12 @@
 ---
 title: 欧几里得数学理念体系 - 快速入门
-msc_primary: 01-XX
+msc_primary: 01A99
 msc_secondary:
 - 01A05
 - 01A20
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 欧几里得数学理念体系 - 快速入门
 
 **欢迎来到欧几里得数学理念体系项目！**

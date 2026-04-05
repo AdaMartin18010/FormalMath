@@ -1,3 +1,8 @@
+---
+title: FormalMath Lean4 最佳实践示例
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Lean4 最佳实践示例
 
 本文档展示Lean4形式化数学的最佳实践，以TaylorTheorem.lean为标杆。

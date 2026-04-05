@@ -1,3 +1,8 @@
+---
+title: FormalMath 内容质量评估系统
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 内容质量评估系统
 
 ## 概述

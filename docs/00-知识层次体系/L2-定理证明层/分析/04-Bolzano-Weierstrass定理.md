@@ -1,8 +1,11 @@
 ---
-msc_primary: "40A05"
-msc_secondary: ["54E45", "97I30"]
+msc_primary: 40A05
+msc_secondary:
+- 54E45
+- 97I30
+title: Bolzano-Weierstrass 定理
+processed_at: '2026-04-05'
 ---
-
 # Bolzano-Weierstrass 定理
 
 **定理编号**: L2-AN004  

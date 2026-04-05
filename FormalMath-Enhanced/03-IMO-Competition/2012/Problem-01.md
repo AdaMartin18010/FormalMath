@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: IMO 2012 Problem 01
 ---
-
 # IMO 2012 Problem 01
 
 ## 题目

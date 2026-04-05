@@ -1,3 +1,8 @@
+---
+title: CI/CD 工作流状态
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # CI/CD 工作流状态
 
 ## 工作流状态徽章

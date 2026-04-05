@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 经典Stokes定理 (Classical Stokes' Theorem)
 ---
-
 # 经典Stokes定理 (Classical Stokes' Theorem)
 
 ## Mathlib4 引用

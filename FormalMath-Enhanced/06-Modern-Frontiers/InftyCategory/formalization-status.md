@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: ∞-范畴论：Mathlib4形式化状态
 ---
-
 # ∞-范畴论：Mathlib4形式化状态
 
 > Mathlib4中∞-范畴论相关定义的当前状态和路线图

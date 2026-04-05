@@ -1,9 +1,11 @@
 ---
 msc_primary: 00A99
-msc_secondary: 97A30
+msc_secondary:
+- 97A30
 date: 2026-04-04
+title: FormalMath与Harvard数学课程内容深度对齐报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与Harvard数学课程内容深度对齐报告
 
 **版本**: v1.0  

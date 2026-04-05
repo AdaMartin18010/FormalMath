@@ -1,7 +1,8 @@
 ---
 msc_primary: 68N99
+title: FormalMath 贡献者工作流工具
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 贡献者工作流工具
 
 本目录包含用于支持贡献者工作流的自动化工具。

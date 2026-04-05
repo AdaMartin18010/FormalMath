@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['03Bxx', '13Cxx', '03-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 03E99
+title: FormalMath项目持续改进推进报告 - ZFC公理体系第一部分完善
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目持续改进推进报告 - ZFC公理体系第一部分完善
 
 ## 📋 报告概述

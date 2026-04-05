@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: de Rham定理 (de Rham's Theorem)
 ---
-
 # de Rham定理 (de Rham's Theorem)
 
 ## Mathlib4 引用

@@ -1,3 +1,8 @@
+---
+title: FormalMath-Enhanced 监控与日志系统 - 概览
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath-Enhanced 监控与日志系统 - 概览
 
 ## 📊 系统总览

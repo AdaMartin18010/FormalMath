@@ -1,8 +1,12 @@
 ---
-msc_primary: "54D15"
-msc_secondary: ["54C30", "54E35", "97I55"]
+msc_primary: 54D15
+msc_secondary:
+- 54C30
+- 54E35
+- 97I55
+title: Urysohn 引理
+processed_at: '2026-04-05'
 ---
-
 # Urysohn 引理
 
 **定理编号**: L2-T001  

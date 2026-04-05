@@ -1,3 +1,8 @@
+---
+title: 全局概念依赖图
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 全局概念依赖图
 
 ```mermaid

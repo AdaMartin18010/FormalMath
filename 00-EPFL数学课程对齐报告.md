@@ -1,9 +1,12 @@
 ---
 msc_primary: 00A99
-msc_secondary: 97B40, 97D30
+msc_secondary:
+- 97B40
+- 97D30
 generated_at: '2026-04-04'
+title: FormalMath与EPFL数学课程对齐报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与EPFL数学课程对齐报告
 
 **版本**: v1.0  

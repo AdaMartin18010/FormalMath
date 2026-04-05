@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: Conceptual Mathematics, 2nd Edition
+processed_at: '2026-04-05'
 ---
-
 # Conceptual Mathematics, 2nd Edition
 
 A first introduction to categories

@@ -1,3 +1,8 @@
+---
+title: nLab范畴论与高阶代数对齐报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # nLab范畴论与高阶代数对齐报告
 
 **文档编号**: FM-ALIGN-NLAB-2026-04  

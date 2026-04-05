@@ -1,8 +1,10 @@
 ---
-msc_primary: "97D20"
-msc_secondary: "97C70"
+msc_primary: 97D20
+msc_secondary:
+- 97C70
+title: 教学方法
+processed_at: '2026-04-05'
 ---
-
 # 教学方法
 
 ## 目录说明

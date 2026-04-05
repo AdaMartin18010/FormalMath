@@ -1,3 +1,8 @@
+---
+title: FormalMath 知识图谱多格式导出工具
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 知识图谱多格式导出工具
 
 强大的知识图谱导出工具，支持多种格式导出，便于分享、打印和进一步分析。

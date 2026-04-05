@@ -1,3 +1,8 @@
+---
+title: MIT 18.100A Real Analysis 定义对齐手册 (L3 语义对齐)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # MIT 18.100A Real Analysis 定义对齐手册 (L3 语义对齐)
 
 **文档编号**: D016  

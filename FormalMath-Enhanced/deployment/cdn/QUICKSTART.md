@@ -1,3 +1,8 @@
+---
+title: FormalMath CDN 快速入门指南
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath CDN 快速入门指南
 
 ## 概述

@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['14Nxx', '11Axx', '13Cxx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 00A99
+title: FormalMath第一阶段核心目标达成确认书 - 2025年1月
+processed_at: '2026-04-05'
 ---
-
 # FormalMath第一阶段核心目标达成确认书 - 2025年1月
 
 ## 📋 确认书概述

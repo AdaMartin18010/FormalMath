@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 诱导表示
 ---
-
 # 诱导表示
 
 ## Mathlib4 引用

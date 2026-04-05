@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Schwarz引理 (Schwarz Lemma)
 ---
-
 # Schwarz引理 (Schwarz Lemma)
 
 ## Mathlib4 引用

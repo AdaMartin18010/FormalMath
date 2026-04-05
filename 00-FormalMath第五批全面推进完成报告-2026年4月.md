@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: FormalMath第五批全面推进完成报告
 ---
-
 # FormalMath第五批全面推进完成报告
 
 **报告日期**: 2026年4月3日

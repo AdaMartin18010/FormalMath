@@ -1,3 +1,8 @@
+---
+title: FormalMath-Enhanced 快速入门指南
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath-Enhanced 快速入门指南
 
 **预计阅读时间**: 15分钟  

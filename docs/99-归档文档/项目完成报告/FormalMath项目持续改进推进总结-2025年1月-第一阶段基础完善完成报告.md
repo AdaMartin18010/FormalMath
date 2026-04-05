@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['11Axx', '11-XX', '03-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 11A99
+- 03E99
+title: FormalMath项目持续改进推进总结 - 第一阶段基础完善完成报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目持续改进推进总结 - 第一阶段基础完善完成报告
 
 ## 📋 报告概述

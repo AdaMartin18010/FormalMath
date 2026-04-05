@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: 外部资源 / External Resources
+processed_at: '2026-04-05'
 ---
-
 # 外部资源 / External Resources
 
 FormalMath 项目的外部参考资料与衍生分析文档。

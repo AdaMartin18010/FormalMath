@@ -1,3 +1,8 @@
+---
+title: FormalMath Internationalization (i18n)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Internationalization (i18n)
 
 FormalMath 多语言支持系统

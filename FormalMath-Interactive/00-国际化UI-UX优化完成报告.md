@@ -1,3 +1,8 @@
+---
+title: 国际化UI/UX优化完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 国际化UI/UX优化完成报告
 
 ## 完成时间

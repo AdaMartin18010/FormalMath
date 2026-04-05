@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 切除定理 (Excision Theorem)
 ---
-
 # 切除定理 (Excision Theorem)
 
 ## Mathlib4 引用

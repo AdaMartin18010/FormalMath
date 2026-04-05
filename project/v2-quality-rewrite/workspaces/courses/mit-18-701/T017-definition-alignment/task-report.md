@@ -1,3 +1,8 @@
+---
+title: 'T017: MIT 18.701 Definition Alignment — Task Report'
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T017: MIT 18.701 Definition Alignment — Task Report
 
 **Task ID**: T017-definition-alignment  

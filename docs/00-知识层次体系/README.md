@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: FormalMath L0-L4 数学知识层次定义标准体系
+processed_at: '2026-04-05'
 ---
-
 # FormalMath L0-L4 数学知识层次定义标准体系
 
 ## 体系概述

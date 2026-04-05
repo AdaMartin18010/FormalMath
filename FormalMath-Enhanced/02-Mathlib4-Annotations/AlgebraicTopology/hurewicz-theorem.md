@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Hurewicz定理
 ---
-
 # Hurewicz定理
 
 ## Mathlib4 引用

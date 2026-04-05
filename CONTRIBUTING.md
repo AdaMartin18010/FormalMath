@@ -1,7 +1,8 @@
 ---
 msc_primary: 00A99
+title: FormalMath 项目贡献指南
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 项目贡献指南
 
 > 🎯 **愿景**：建立全球最大的开源数学教育知识库

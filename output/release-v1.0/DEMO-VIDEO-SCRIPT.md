@@ -2,8 +2,9 @@
 msc_primary: 00A99
 release_version: v1.0
 video_type: 产品介绍视频
+title: FormalMath v1.0 演示视频脚本
+processed_at: '2026-04-05'
 ---
-
 # FormalMath v1.0 演示视频脚本
 
 **视频时长**: 5-7分钟  

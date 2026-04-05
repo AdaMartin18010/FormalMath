@@ -1,3 +1,8 @@
+---
+title: 视频播放器组件
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 视频播放器组件
 
 FormalMath-Interactive 的视频播放器组件系统，提供完整的视频播放、管理、统计功能。

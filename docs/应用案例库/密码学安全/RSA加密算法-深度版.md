@@ -1,8 +1,12 @@
 ---
-msc_primary: "11T71"
-msc_secondary: ['94A60', '11A41', '68P25']
+msc_primary: 11T71
+msc_secondary:
+- 94A60
+- 11A41
+- 68P25
+title: RSA加密算法：从数论基础到现代密码学实践（深度教学版）
+processed_at: '2026-04-05'
 ---
-
 # RSA加密算法：从数论基础到现代密码学实践（深度教学版）
 
 ---

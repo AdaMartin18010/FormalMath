@@ -1,8 +1,12 @@
 ---
-msc_primary: "20-XX"
-msc_secondary: ['16-XX', '20Cxx', '20-XX']
+msc_primary: 20A99
+msc_secondary:
+- 16A99
+- 00A99
+- 20A99
+title: FormalMath学习路径推荐
+processed_at: '2026-04-05'
 ---
-
 # FormalMath学习路径推荐
 
 **创建日期**: 2025年12月1日

@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: MIT Course 18 详细对照表
 ---
-
 # MIT Course 18 详细对照表
 
 **版本**: v1.0

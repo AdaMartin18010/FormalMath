@@ -1,10 +1,13 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ["97A99", "97B99"]
-date: "2026-04-04"
-version: "v1.0"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+- 97B99
+date: '2026-04-04'
+version: v1.0
+title: Oxford数学课程详细映射表
+processed_at: '2026-04-05'
 ---
-
 # Oxford数学课程详细映射表
 
 **文档类型**: 详细课程映射  

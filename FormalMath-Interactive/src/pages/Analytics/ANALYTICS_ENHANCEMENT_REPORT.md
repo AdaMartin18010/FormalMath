@@ -1,3 +1,8 @@
+---
+title: FormalMath 数据分析仪表板功能增强报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 数据分析仪表板功能增强报告
 
 ## 概述

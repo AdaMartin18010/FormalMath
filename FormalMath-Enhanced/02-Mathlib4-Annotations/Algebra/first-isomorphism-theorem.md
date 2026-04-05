@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 群同态基本定理 (First Isomorphism Theorem)
 ---
-
 # 群同态基本定理 (First Isomorphism Theorem)
 
 ## Mathlib4 引用

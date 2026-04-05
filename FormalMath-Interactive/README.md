@@ -1,3 +1,8 @@
+---
+title: FormalMath Interactive
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Interactive
 
 FormalMath 交互式可视化界面框架 - 基于 React + D3.js + Mermaid.js 构建的数学知识可视化平台。

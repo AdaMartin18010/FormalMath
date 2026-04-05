@@ -1,3 +1,8 @@
+---
+title: FormalMath 性能测试套件
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 性能测试套件
 
 FormalMath 项目的全面性能测试解决方案，包括负载测试、压力测试、API性能测试和前端性能测试。

@@ -1,3 +1,8 @@
+---
+title: FormalMath项目Lean4形式化证明完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath项目Lean4形式化证明完成报告
 
 ## 实分析与测度论核心定理

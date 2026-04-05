@@ -1,3 +1,8 @@
+---
+title: FormalMath API 安全快速参考
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API 安全快速参考
 
 ## 安全配置检查表

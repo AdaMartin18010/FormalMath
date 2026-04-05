@@ -1,7 +1,9 @@
 ---
-title: "计算机械Pascaline：机械计算时代的开创者"
-msc_primary: "60A99"
-msc_secondary: ["05A10, 51A05"]
+title: 计算机械Pascaline：机械计算时代的开创者
+msc_primary: 60A99
+msc_secondary:
+- 05A10
+- 51A05
 processed_at: '2026-04-05'
 ---
 # 计算机械Pascaline：机械计算时代的开创者

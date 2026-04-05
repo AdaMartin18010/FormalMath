@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['35-XX', '12Exx', '13Cxx']
+msc_primary: 00A99
+msc_secondary:
+- 35A99
+- 00A99
+- 00A99
+title: Black-Scholes期权定价模型
+processed_at: '2026-04-05'
 ---
-
 # Black-Scholes期权定价模型
 
 ## 应用领域

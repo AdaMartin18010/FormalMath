@@ -1,3 +1,8 @@
+---
+title: FormalMath 概念依赖网络可视化
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 概念依赖网络可视化
 
 本目录包含 FormalMath 项目概念依赖关系的可视化图表和分析报告。

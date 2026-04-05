@@ -1,8 +1,11 @@
 ---
-msc_primary: "97B10"
-msc_secondary: ['97B40', '00A99']
+msc_primary: 97B10
+msc_secondary:
+- 97B40
+- 00A99
+title: FormalMath与ANU数学课程概念映射表
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与ANU数学课程概念映射表
 
 ## 使用说明

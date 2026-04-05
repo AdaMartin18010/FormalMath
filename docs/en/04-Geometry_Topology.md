@@ -1,3 +1,8 @@
+---
+title: Geometry and Topology (几何拓扑)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Geometry and Topology (几何拓扑)
 
 This document provides bilingual (English-Chinese) definitions, notations, and examples for 15 core concepts in geometry and topology.

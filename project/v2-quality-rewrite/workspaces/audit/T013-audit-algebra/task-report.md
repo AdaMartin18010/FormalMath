@@ -1,3 +1,8 @@
+---
+title: T013 代数结构模块盲审任务执行报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T013 代数结构模块盲审任务执行报告
 
 > **任务编号**：T013-audit-algebra

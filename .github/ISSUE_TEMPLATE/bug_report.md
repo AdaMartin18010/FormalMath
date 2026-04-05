@@ -1,11 +1,14 @@
 ---
 name: 🐛 错误报告
 about: 创建报告以帮助我们改进项目
-title: '[Bug] '
-labels: ['bug', 'needs-triage']
+title: '[Bug]'
+labels:
+- bug
+- needs-triage
 assignees: []
+msc_primary: 00A99
+processed_at: '2026-04-05'
 ---
-
 ## 🐛 错误描述
 
 <!-- 清晰简洁地描述错误 -->

@@ -1,8 +1,10 @@
 ---
-msc_primary: "03E25"
-msc_secondary: ["06A06"]
+msc_primary: 03E25
+msc_secondary:
+- 06A06
+title: Zorn引理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Zorn引理 - 五种表征
 
 **创建日期**: 2025年12月1日

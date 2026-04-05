@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['03Bxx', '16-XX', '03-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 16A99
+- 03E99
+title: FormalMath项目第二阶段执行进度报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目第二阶段执行进度报告
 
 ## 📊 执行概况

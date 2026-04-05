@@ -1,12 +1,26 @@
 ---
-msc_primary: "26A03"
-msc_secondary: ["26E35", "97I30"]
+msc_primary: 26A03
+msc_secondary:
+- 26E35
+- 97I30
 level: L1-Formal
 domain: 分析学
 concept: 极限的ε-δ定义
-prerequisites: ["实数构造", "绝对值", "量词逻辑"]
-next_level: ["连续性定义", "导数定义", "Bolzano-Weierstrass定理"]
-tags: ["分析学", "极限", "epsilon-delta", "形式化定义"]
+prerequisites:
+- 实数构造
+- 绝对值
+- 量词逻辑
+next_level:
+- 连续性定义
+- 导数定义
+- Bolzano-Weierstrass定理
+tags:
+- 分析学
+- 极限
+- epsilon-delta
+- 形式化定义
+title: 'L1: 极限的ε-δ定义 (ε-δ Definition of Limit)'
+processed_at: '2026-04-05'
 ---
 msc_primary: "26A03"
 msc_secondary: ["26E35", "97I30"]

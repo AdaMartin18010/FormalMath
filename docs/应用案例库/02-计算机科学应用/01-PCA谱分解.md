@@ -1,8 +1,12 @@
 ---
-msc_primary: "12Fxx"
-msc_secondary: ['12Exx', '22E47', '13Cxx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 22E47
+- 00A99
+title: 主成分分析(PCA)的谱分解原理
+processed_at: '2026-04-05'
 ---
-
 # 主成分分析(PCA)的谱分解原理
 
 ## 应用领域

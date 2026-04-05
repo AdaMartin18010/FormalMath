@@ -1,8 +1,12 @@
 ---
-msc_primary: "01A70"
-msc_secondary: ['14F10', '17B37', '22E46']
+msc_primary: 01A70
+msc_secondary:
+- 14F10
+- 17B37
+- 22E46
+title: 数学家传记：Masaki Kashiwara（柏原正树）
+processed_at: '2026-04-05'
 ---
-
 # 数学家传记：Masaki Kashiwara（柏原正树）
 
 **Abel Prize 2025获奖者**

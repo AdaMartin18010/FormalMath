@@ -1,7 +1,9 @@
 ---
-title: "牛顿数学理念体系"
-msc_primary: "01A45"
-msc_secondary: ["70-03", "00A99"]
+title: 牛顿数学理念体系
+msc_primary: 01A45
+msc_secondary:
+- 00A99
+- 00A99
 processed_at: '2026-04-05'
 ---
 # 牛顿数学理念体系

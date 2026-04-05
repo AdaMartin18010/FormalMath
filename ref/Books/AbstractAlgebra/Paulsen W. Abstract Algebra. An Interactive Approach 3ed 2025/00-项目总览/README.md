@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: 'Abstract Algebra: An Interactive Approach 项目总览'
+processed_at: '2026-04-05'
 ---
-
 # Abstract Algebra: An Interactive Approach 项目总览
 
 **创建日期**: 2025年12月11日

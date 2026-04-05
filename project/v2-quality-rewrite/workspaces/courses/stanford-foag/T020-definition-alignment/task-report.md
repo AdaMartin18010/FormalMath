@@ -1,3 +1,8 @@
+---
+title: T020-definition-alignment / Task Report
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T020-definition-alignment / Task Report
 
 **任务名称**: Stanford FOAG 定义对齐（L3 语义对齐）  

@@ -1,3 +1,8 @@
+---
+title: FormalMath 语义搜索服务 - 优化版本
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 语义搜索服务 - 优化版本
 
 本文档描述优化后的语义搜索服务架构和使用方法。

@@ -1,8 +1,13 @@
 ---
-msc_primary: "97D50"
-msc_secondary: ['26-XX', '15-XX', '11-XX', '05-XX']
+msc_primary: 97D50
+msc_secondary:
+- 26A99
+- 15A99
+- 11A99
+- 05A99
+title: Putnam竞赛准备
+processed_at: '2026-04-05'
 ---
-
 # Putnam竞赛准备
 
 **最后更新**: 2026年4月4日

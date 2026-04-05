@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['22E47', '16-XX', '57R22']
+msc_primary: 00A99
+msc_secondary:
+- 22E47
+- 16A99
+- 57R22
+title: FormalMath现代数学前沿内容框架 - 2025年1月
+processed_at: '2026-04-05'
 ---
-
 # FormalMath现代数学前沿内容框架 - 2025年1月
 
 ## 📋 概述

@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: "97A99"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+title: MIT数学课程先修依赖关系图
+processed_at: '2026-04-05'
 ---
-
 # MIT数学课程先修依赖关系图
 
 > **说明**: 本图展示MIT数学课程的依赖关系，以及FormalMath资源如何支持这些依赖。

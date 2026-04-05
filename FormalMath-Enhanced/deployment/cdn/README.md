@@ -1,3 +1,8 @@
+---
+title: FormalMath CDN 与缓存配置
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath CDN 与缓存配置
 
 ## 项目概述

@@ -1,8 +1,12 @@
 ---
-msc_primary: "20-XX"
-msc_secondary: ['35-XX', '12Exx', '13Cxx']
+msc_primary: 20A99
+msc_secondary:
+- 35A99
+- 00A99
+- 00A99
+title: SIR传染病模型的传播动力学
+processed_at: '2026-04-05'
 ---
-
 # SIR传染病模型的传播动力学
 
 ## 应用领域

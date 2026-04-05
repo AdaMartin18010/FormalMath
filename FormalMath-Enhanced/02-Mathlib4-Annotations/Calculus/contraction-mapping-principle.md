@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 压缩映射原理 (Contraction Mapping Principle)
 ---
-
 # 压缩映射原理 (Contraction Mapping Principle)
 
 ## Mathlib4 引用

@@ -1,3 +1,8 @@
+---
+title: FormalMath Interactive - 部署文档
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Interactive - 部署文档
 
 ## 📋 目录

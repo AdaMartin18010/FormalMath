@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 'LeanAgent: 终身学习形式定理证明'
 ---
-
 # LeanAgent: 终身学习形式定理证明
 
 ## 概述

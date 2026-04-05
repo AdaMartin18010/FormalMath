@@ -1,3 +1,8 @@
+---
+title: FormalMath 贡献者排行榜
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 贡献者排行榜
 
 **最后更新**: 2026年4月4日

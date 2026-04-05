@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: 'Part III: 中等数学教学与学习 - 总览'
+processed_at: '2026-04-05'
 ---
-
 # Part III: 中等数学教学与学习 - 总览
 
 Part III: Secondary Mathematics Teaching and Learning - Overview

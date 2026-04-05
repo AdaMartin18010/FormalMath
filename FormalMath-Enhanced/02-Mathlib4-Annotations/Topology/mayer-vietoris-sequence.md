@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Mayer-Vietoris序列 (Mayer-Vietoris Sequence)
 ---
-
 # Mayer-Vietoris序列 (Mayer-Vietoris Sequence)
 
 ## Mathlib4 引用

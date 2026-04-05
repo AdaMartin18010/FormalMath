@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['16-XX', '68Qxx', '26A42']
+msc_primary: 00A99
+msc_secondary:
+- 16A99
+- 00A99
+- 26A42
+title: FormalMath项目持续改进推进报告 - 函数与映射完善
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目持续改进推进报告 - 函数与映射完善
 
 ## 📋 报告概述

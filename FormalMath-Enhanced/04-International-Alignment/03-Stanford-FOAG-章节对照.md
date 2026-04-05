@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Stanford FOAG 章节对照表
 ---
-
 # Stanford FOAG 章节对照表
 
 **版本**: v1.0  

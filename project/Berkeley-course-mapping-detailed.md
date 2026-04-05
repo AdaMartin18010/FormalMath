@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00-01"
+msc_primary: 97A99
+msc_secondary:
+- 00A05
+title: FormalMath与UC Berkeley数学课程深度映射表
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与UC Berkeley数学课程深度映射表
 
 > **版本**: 2026年4月

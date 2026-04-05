@@ -1,3 +1,8 @@
+---
+title: FormalMath Interactive SEO优化实施报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Interactive SEO优化实施报告
 
 ## 概述

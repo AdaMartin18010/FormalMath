@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 生成函数基本定理 (Generating Function Theorem)
 ---
-
 # 生成函数基本定理 (Generating Function Theorem)
 
 ## Mathlib4 引用

@@ -1,8 +1,10 @@
 ---
-msc_primary: "03F40"
-msc_secondary: ["03B10"]
+msc_primary: 03F40
+msc_secondary:
+- 03B10
+title: Gödel不完备定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Gödel不完备定理 - 五种表征
 
 **创建日期**: 2025年12月1日

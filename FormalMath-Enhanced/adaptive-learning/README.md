@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: FormalMath 自适应学习路径系统
 ---
-
 # FormalMath 自适应学习路径系统
 
 T3.1 自适应学习路径系统的完整实现，基于 FastAPI + React + 知识图谱。

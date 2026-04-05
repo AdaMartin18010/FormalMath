@@ -1,7 +1,10 @@
 ---
-title: "Dedekind分割：严格实数分析的奠基"
-msc_primary: "26A03"
-msc_secondary: ["03E99", "01A55", "26-03"]
+title: Dedekind分割：严格实数分析的奠基
+msc_primary: 26A03
+msc_secondary:
+- 03E99
+- 01A55
+- 00A99
 processed_at: '2026-04-05'
 ---
 # Dedekind分割：严格实数分析的奠基

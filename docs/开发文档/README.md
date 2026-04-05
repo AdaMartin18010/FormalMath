@@ -4,8 +4,8 @@ title: FormalMath 开发文档
 created_date: 2026-04-04
 version: 1.0.0
 author: FormalMath 开发团队
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 开发文档
 
 > 本文档集合为 FormalMath 项目的技术开发者提供完整的开发指南。

@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: FormalMath 参考文献系统
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 参考文献系统
 
 本目录包含FormalMath项目的完整参考文献数据库和相关指南。

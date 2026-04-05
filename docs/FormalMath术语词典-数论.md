@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['11Axx', '62Fxx', '01Axx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 00A99
+title: FormalMath术语词典 - 数论
+processed_at: '2026-04-05'
 ---
-
 # FormalMath术语词典 - 数论
 
 ## 统一数论术语标准定义

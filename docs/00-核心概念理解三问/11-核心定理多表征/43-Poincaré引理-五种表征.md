@@ -1,8 +1,12 @@
 ---
-msc_primary: "12Fxx"
-msc_secondary: ['28-XX', '53-XX', '55Nxx']
+msc_primary: 00A99
+msc_secondary:
+- 28A99
+- 53A99
+- 00A99
+title: Poincaré引理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Poincaré引理 - 五种表征
 
 **创建日期**: 2025年12月1日

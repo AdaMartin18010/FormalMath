@@ -1,3 +1,8 @@
+---
+title: 智能笔记系统 (Intelligent Note System)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 智能笔记系统 (Intelligent Note System)
 
 ## 概述

@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 闭图像定理 (Closed Graph Theorem)
 ---
-
 # 闭图像定理 (Closed Graph Theorem)
 
 ## Mathlib4 引用

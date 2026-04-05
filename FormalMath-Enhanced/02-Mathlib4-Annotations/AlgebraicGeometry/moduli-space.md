@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 模空间基础
 ---
-
 # 模空间基础
 
 ## Mathlib4 引用

@@ -1,8 +1,12 @@
 ---
-msc_primary: "94Axx"
-msc_secondary: ['60-XX', '68P30', '94Bxx']
+msc_primary: 00A99
+msc_secondary:
+- 60A99
+- 68P30
+- 00A99
+title: 信息论 / Information Theory
+processed_at: '2026-04-05'
 ---
-
 # 信息论 / Information Theory
 
 **最后更新**: 2026年4月4日

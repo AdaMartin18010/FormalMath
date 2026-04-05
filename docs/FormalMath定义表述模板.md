@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['22E47', '13Cxx', '03Exx']
+msc_primary: 00A99
+msc_secondary:
+- 22E47
+- 00A99
+- 00A99
+title: FormalMath定义表述模板
+processed_at: '2026-04-05'
 ---
-
 # FormalMath定义表述模板
 
 ## 标准化数学定义表述格式指南

@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: IMO 备赛教程
 ---
-
 # IMO 备赛教程
 
 **预计阅读时间**: 60分钟

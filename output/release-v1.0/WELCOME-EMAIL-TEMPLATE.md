@@ -2,8 +2,9 @@
 msc_primary: 00A99
 release_version: v1.0
 email_type: 用户欢迎邮件
+title: FormalMath 用户欢迎邮件模板
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 用户欢迎邮件模板
 
 ---

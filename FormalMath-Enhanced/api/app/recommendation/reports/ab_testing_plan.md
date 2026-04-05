@@ -1,3 +1,8 @@
+---
+title: 推荐系统A/B测试方案
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 推荐系统A/B测试方案
 
 ## 概述

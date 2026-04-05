@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: 德国数学传统分析 (German Mathematical Tradition Analysis)
+processed_at: '2026-04-05'
 ---
-
 # 德国数学传统分析 (German Mathematical Tradition Analysis)
 
 > **文档主题**: 德国数学传统的历史演变与波恩大学学派特征  

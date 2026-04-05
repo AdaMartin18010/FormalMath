@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00-01"
+msc_primary: 97A99
+msc_secondary:
+- 00A05
+title: FormalMath与UPMC概念映射表
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与UPMC概念映射表
 
 > **版本**: 1.0

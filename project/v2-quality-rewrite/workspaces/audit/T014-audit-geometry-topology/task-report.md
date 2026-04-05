@@ -1,3 +1,8 @@
+---
+title: T014 审计任务执行报告：几何学与拓扑学模块盲审
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T014 审计任务执行报告：几何学与拓扑学模块盲审
 
 > **任务路径**：`project/v2-quality-rewrite/workspaces/audit/T014-audit-geometry-topology/`

@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: 克莱因、希尔伯特与格洛腾迪克数学理念的系统化分析
+processed_at: '2026-04-05'
 ---
-
 # 克莱因、希尔伯特与格洛腾迪克数学理念的系统化分析
 
 ## 一、核心理念的三重维度解析

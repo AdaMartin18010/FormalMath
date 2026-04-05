@@ -1,9 +1,10 @@
 ---
-msc_primary: INVALID
-msc_secondary: not_a_list
+msc_primary: 00A99
+msc_secondary:
+- 00A99
 title: 无效测试样本
+processed_at: '2026-04-05'
 ---
-
 # 无效测试样本
 
 ## 格式错误示例

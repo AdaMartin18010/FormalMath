@@ -1,8 +1,12 @@
 ---
-msc_primary: "20-XX"
-msc_secondary: ['12Exx', '11Axx', '13Cxx']
+msc_primary: 20A99
+msc_secondary:
+- 00A99
+- 00A99
+- 00A99
+title: Diffie-Hellman密钥交换
+processed_at: '2026-04-05'
 ---
-
 # Diffie-Hellman密钥交换
 
 ## 概述

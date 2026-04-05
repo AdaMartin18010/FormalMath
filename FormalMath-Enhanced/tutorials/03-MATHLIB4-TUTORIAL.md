@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Mathlib4 学习教程
 ---
-
 # Mathlib4 学习教程
 
 **预计阅读时间**: 45分钟

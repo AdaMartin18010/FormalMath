@@ -1,8 +1,12 @@
 ---
-msc_primary: "62Rxx"
-msc_secondary: ['68Txx', '62Hxx', '68Qxx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 00A99
+title: 数据科学 / Data Science
+processed_at: '2026-04-05'
 ---
-
 # 数据科学 / Data Science
 
 **最后更新**: 2026年4月4日

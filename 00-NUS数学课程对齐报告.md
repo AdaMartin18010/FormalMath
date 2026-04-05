@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: "97A99"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+title: NUS数学课程对齐报告
+processed_at: '2026-04-05'
 ---
-
 # NUS数学课程对齐报告
 
 **文档类型**：权威对齐 · 国际课程映射  

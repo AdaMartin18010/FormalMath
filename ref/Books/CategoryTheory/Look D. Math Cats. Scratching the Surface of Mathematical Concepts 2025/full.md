@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: MATHS
+processed_at: '2026-04-05'
 ---
-
 ![](images/5f6c2925a2d1da77ab823222ad6d93a432de16d009caebcf03c5e4ccca32e3c1.jpg)
 
 ![](images/f260786167f5bb2d2c17dece0d0371370ff4f71a31f973f7e3f7d70d01c43c71.jpg)

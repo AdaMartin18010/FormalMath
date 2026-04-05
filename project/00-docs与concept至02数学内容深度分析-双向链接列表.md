@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: "97A99"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+title: docs/concept 与 02-数学内容深度分析 双向链接列表
+processed_at: '2026-04-05'
 ---
-
 # docs/concept 与 02-数学内容深度分析 双向链接列表
 
 **文档类型**：维护清单 · 双向链接记录  

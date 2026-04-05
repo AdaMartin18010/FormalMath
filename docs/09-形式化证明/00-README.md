@@ -1,10 +1,14 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX', '03B35', '68V20']
-mathlib4_version: "v4.29.0"
-last_updated: "2026-04-03"
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 03B35
+- 68V20
+mathlib4_version: v4.29.0
+last_updated: '2026-04-03'
+title: 形式化证明
+processed_at: '2026-04-05'
 ---
-
 # 形式化证明
 
 **最后更新**: 2026年4月3日

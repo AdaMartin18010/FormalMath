@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['12Exx', '03-XX', '03Exx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 03E99
+- 00A99
+title: Zorn 与极大元 - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # Zorn 与极大元 - 工作示例
 
 **类型**: 概念理解 **领域**: 集合论 **难度**: L2 **创建日期**: 2026年2月2日

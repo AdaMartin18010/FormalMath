@@ -1,8 +1,10 @@
 ---
-msc_primary: "00-01"
-msc_secondary: "97A99"
+msc_primary: 00A05
+msc_secondary:
+- 97A99
+title: '**数学认知压缩系统：人脑神经架构与数学知识的最优接口**'
+processed_at: '2026-04-05'
 ---
-
 # **数学认知压缩系统：人脑神经架构与数学知识的最优接口**
 
 ---

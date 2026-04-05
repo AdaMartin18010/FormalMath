@@ -1,8 +1,12 @@
 ---
-msc_primary: "16-XX"
-msc_secondary: ['16-XX', '13-XX', '90Cxx']
+msc_primary: 16A99
+msc_secondary:
+- 16A99
+- 13A99
+- 00A99
+title: Krull主理想定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Krull主理想定理 - 五种表征
 
 **创建日期**: 2025年12月1日

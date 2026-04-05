@@ -1,3 +1,8 @@
+---
+title: FormalMath 移动端功能增强
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 移动端功能增强
 
 本文档介绍 FormalMath-Interactive 项目的移动端功能增强模块。

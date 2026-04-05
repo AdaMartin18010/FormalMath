@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['03B20', '12Exx', '22E47']
+msc_primary: 00A99
+msc_secondary:
+- 03B20
+- 00A99
+- 22E47
+title: FormalMath第一阶段执行进度报告 - 2025年1月
+processed_at: '2026-04-05'
 ---
-
 # FormalMath第一阶段执行进度报告 - 2025年1月
 
 ## 术语标准化工作组执行进度总结

@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A69"
-msc_secondary: "68P99"
+msc_primary: 00A69
+msc_secondary:
+- 68P99
+title: arXiv数学前沿追踪自动化方案
+processed_at: '2026-04-05'
 ---
-
 # arXiv数学前沿追踪自动化方案
 
 **文档版本**: v1.0

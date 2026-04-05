@@ -1,3 +1,8 @@
+---
+title: FormalMath API 可靠性验证完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API 可靠性验证完成报告
 
 **项目**: FormalMath后端API可靠性验证  

@@ -1,3 +1,8 @@
+---
+title: FormalMath API v2.0
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API v2.0
 
 高性能FastAPI后端服务，为FormalMath提供知识图谱查询、学习路径生成、认知诊断等功能。

@@ -1,8 +1,12 @@
 ---
-msc_primary: "54H25"
-msc_secondary: ["47H10", "55M20", "97I55"]
+msc_primary: 54H25
+msc_secondary:
+- 47H10
+- 55M20
+- 97I55
+title: Brouwer 不动点定理
+processed_at: '2026-04-05'
 ---
-
 # Brouwer 不动点定理
 
 **定理编号**: L2-T003  

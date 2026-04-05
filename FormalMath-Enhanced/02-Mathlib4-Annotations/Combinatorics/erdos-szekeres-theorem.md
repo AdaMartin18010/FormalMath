@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Erdős–Szekeres定理 (Erdős–Szekeres Theorem)
 ---
-
 # Erdős–Szekeres定理 (Erdős–Szekeres Theorem)
 
 ## Mathlib4 引用

@@ -1,7 +1,8 @@
 ---
-msc_primary: "00A99"
+msc_primary: 00A99
+title: FormalMath 第十一批任务完成报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 第十一批任务完成报告
 
 ## 全局依赖图与拓扑排序系统

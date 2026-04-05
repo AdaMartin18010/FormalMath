@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: 风险中性定价理论推导链
+processed_at: '2026-04-05'
 ---
-
 # 风险中性定价理论推导链
 
 ## 概述

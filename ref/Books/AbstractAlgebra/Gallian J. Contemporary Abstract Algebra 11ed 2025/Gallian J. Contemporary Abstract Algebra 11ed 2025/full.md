@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: CONTEMPORARY ABSTRACT ALGEBRA
+processed_at: '2026-04-05'
 ---
-
 # CONTEMPORARY ABSTRACT ALGEBRA
 
 ELEVENTH EDITION

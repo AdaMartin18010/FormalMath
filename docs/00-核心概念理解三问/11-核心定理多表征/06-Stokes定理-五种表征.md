@@ -1,8 +1,11 @@
 ---
-msc_primary: "58A10"
-msc_secondary: ["26B20", "57R35"]
+msc_primary: 58A10
+msc_secondary:
+- 26B20
+- 57R35
+title: Stokes定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Stokes定理 - 五种表征
 
 **创建日期**: 2025年12月1日

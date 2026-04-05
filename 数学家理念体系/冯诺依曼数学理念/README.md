@@ -1,7 +1,9 @@
 ---
-title: "冯·诺依曼数学理念体系"
-msc_primary: "01A60"
-msc_secondary: ["46-03", "68-03"]
+title: 冯·诺依曼数学理念体系
+msc_primary: 01A60
+msc_secondary:
+- 00A99
+- 00A99
 processed_at: '2026-04-05'
 ---
 # 冯·诺依曼数学理念体系

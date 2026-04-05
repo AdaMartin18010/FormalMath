@@ -1,6 +1,11 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['03Bxx', '22E47', '16-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 22E47
+- 16A99
+title: FormalMath知识关联图谱系统
+processed_at: '2026-04-05'
 ---
 msc_primary: "00A99"
 msc_secondary: ['03Bxx', '22E47', '16-XX']

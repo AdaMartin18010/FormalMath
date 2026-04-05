@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: 示例：分子动力学与连续介质耦合
+processed_at: '2026-04-05'
 ---
-
 这是一个涉及数学哲学和应用数学的深刻问题。我们可以从多个维度来评价和论证离散数学与连续数学刻画真实世界的能力：
 
 ---

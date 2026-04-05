@@ -1,3 +1,8 @@
+---
+title: FormalMath 运维手册
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 运维手册
 
 ## 目录

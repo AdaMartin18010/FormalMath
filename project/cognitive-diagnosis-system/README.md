@@ -1,8 +1,10 @@
 ---
-msc_primary: "97C30"
-msc_secondary: "91E10"
+msc_primary: 97C30
+msc_secondary:
+- 91E10
+title: FormalMath 认知诊断系统
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 认知诊断系统
 
 基于HCD（层次约束感知认知诊断）框架的数学认知诊断系统。

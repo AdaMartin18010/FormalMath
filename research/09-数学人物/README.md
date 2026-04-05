@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00A35"
+msc_primary: 97A99
+msc_secondary:
+- 00A35
+title: 09-数学人物
+processed_at: '2026-04-05'
 ---
-
 # 09-数学人物
 
 ## 目录说明

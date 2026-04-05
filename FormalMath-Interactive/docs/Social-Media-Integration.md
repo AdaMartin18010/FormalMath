@@ -1,3 +1,8 @@
+---
+title: 社交媒体集成指南
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 社交媒体集成指南
 
 本文档介绍 FormalMath Interactive 的社交媒体集成功能，包括社交分享、Open Graph 标签、Twitter Cards、社交登录和内容嵌入。

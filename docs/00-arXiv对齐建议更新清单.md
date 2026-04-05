@@ -1,8 +1,11 @@
 ---
-msc_primary: "00A30"
-msc_secondary: ['01A67', '68P99']
+msc_primary: 00A30
+msc_secondary:
+- 01A67
+- 68P99
+title: FormalMath与arXiv对齐建议更新清单
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与arXiv对齐建议更新清单
 
 **文档版本**: v1.0  

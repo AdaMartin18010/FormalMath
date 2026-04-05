@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: Putnam 数学竞赛经典问题
+processed_at: '2026-04-05'
 ---
-
 # Putnam 数学竞赛经典问题
 
 > 本问题集收录20道Putnam竞赛经典问题，涵盖代数、分析、几何、数论、组合等领域。

@@ -1,9 +1,10 @@
 ---
 msc_primary: 00A99
-version: "1.0"
-date: "2026-04-04"
+version: '1.0'
+date: '2026-04-04'
+title: FormalMath 项目用户验收测试用例
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 项目用户验收测试用例
 
 ## 测试概述

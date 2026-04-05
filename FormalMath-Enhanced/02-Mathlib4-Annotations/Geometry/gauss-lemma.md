@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Gauss引理 (Gauss's Lemma)
 ---
-
 # Gauss引理 (Gauss's Lemma)
 
 ## Mathlib4 引用

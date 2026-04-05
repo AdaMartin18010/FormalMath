@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: IMO 2024 Problem 5 - Turbo the Snail
 ---
-
 # IMO 2024 Problem 5 - Turbo the Snail
 
 ## 题目

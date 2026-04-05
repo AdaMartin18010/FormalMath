@@ -1,3 +1,8 @@
+---
+title: T003 任务报告：参考文献硬链接 YAML 规范
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T003 任务报告：参考文献硬链接 YAML 规范
 
 ## 任务概述

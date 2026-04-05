@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['22E47', '03Exx', '97-XX']
+msc_primary: 00A99
+msc_secondary:
+- 22E47
+- 00A99
+- 97A99
+title: FormalMath符号使用规范
+processed_at: '2026-04-05'
 ---
-
 # FormalMath符号使用规范
 
 ## LaTeX数学符号标准化使用指南

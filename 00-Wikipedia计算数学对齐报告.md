@@ -1,3 +1,8 @@
+---
+title: Wikipedia计算数学对齐报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Wikipedia计算数学对齐报告
 
 **报告编号**: ALIGN.CM.001  

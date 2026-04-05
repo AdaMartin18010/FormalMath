@@ -1,8 +1,10 @@
 ---
-msc_primary: "00-01"
-msc_secondary: "97A99"
+msc_primary: 00A05
+msc_secondary:
+- 97A99
+title: '**三层数学认知框架的实践整合：从理论到系统的完整实现路径**'
+processed_at: '2026-04-05'
 ---
-
 # **三层数学认知框架的实践整合：从理论到系统的完整实现路径**
 
 ---

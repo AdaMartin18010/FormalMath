@@ -1,8 +1,12 @@
 ---
-msc_primary: "12Fxx"
-msc_secondary: ['65Lxx', '12Exx', '03B40']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 03B40
+title: Newton 法求根 - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # Newton 法求根 - 工作示例
 
 **类型**: 应用示例 **领域**: 数值分析 **难度**: L1 **创建日期**: 2026年2月2日

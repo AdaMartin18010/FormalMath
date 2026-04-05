@@ -1,3 +1,8 @@
+---
+title: FormalMath MSC2020 编码体系
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath MSC2020 编码体系
 
 ## 项目概述

@@ -1,3 +1,8 @@
+---
+title: FormalMath 项目变更日志
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 项目变更日志
 
 **版本格式**: 批次号 + 日期  

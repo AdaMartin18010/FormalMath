@@ -1,9 +1,11 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00-01, 01-01"
-processed_at: "2026-04-04"
+msc_primary: 97A99
+msc_secondary:
+- 00A05
+- 00A99
+processed_at: '2026-04-04'
+title: FormalMath与以色列理工学院(Technion)数学课程对齐报告
 ---
-
 # FormalMath与以色列理工学院(Technion)数学课程对齐报告
 
 > **版本**: v1.0  

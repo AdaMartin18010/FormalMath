@@ -1,8 +1,12 @@
 ---
-msc_primary: "15A18"
-msc_secondary: ['68P10', '60J10', '05C50']
+msc_primary: 15A18
+msc_secondary:
+- 68P10
+- 60J10
+- 05C50
+title: PageRank算法：马尔可夫链视角下的网络重要性度量（深度教学版）
+processed_at: '2026-04-05'
 ---
-
 # PageRank算法：马尔可夫链视角下的网络重要性度量（深度教学版）
 
 ---

@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 'AlphaProof: DeepMind自动证明系统'
 ---
-
 # AlphaProof: DeepMind自动证明系统
 
 ## 概述

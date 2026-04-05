@@ -1,3 +1,8 @@
+---
+title: FormalMath 分析学模块深度扩展版文档质量审计报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 分析学模块深度扩展版文档质量审计报告
 
 > **文档编号**：D012

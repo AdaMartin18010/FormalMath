@@ -1,8 +1,12 @@
 ---
-msc_primary: "12Fxx"
-msc_secondary: ['12Exx', '03B35', '03B40']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 03B35
+- 03B40
+title: Lagrange 中值定理 - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # Lagrange 中值定理 - 工作示例
 
 **类型**: 证明示例 **领域**: 实分析 **难度**: L1 **创建日期**: 2026年2月2日

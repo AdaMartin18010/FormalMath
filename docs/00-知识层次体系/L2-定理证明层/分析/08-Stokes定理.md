@@ -1,8 +1,12 @@
 ---
-msc_primary: "58C35"
-msc_secondary: ["26B20", "53A45", "97I55"]
+msc_primary: 58C35
+msc_secondary:
+- 26B20
+- 53A45
+- 97I55
+title: Stokes 定理
+processed_at: '2026-04-05'
 ---
-
 # Stokes 定理
 
 **定理编号**: L2-AN008  

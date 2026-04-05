@@ -1,3 +1,8 @@
+---
+title: Analysis and Differential Equations (分析与微分方程)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Analysis and Differential Equations (分析与微分方程)
 
 This document provides bilingual (English-Chinese) definitions, notations, and examples for 50 core concepts in analysis and differential equations.

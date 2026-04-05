@@ -1,7 +1,11 @@
 ---
-title: "Cayley定理：群作为置换群的表示"
-msc_primary: "20Bxx"
-msc_secondary: ["20B05", "20Cxx", "20C05", "20E22"]
+title: Cayley定理：群作为置换群的表示
+msc_primary: 00A99
+msc_secondary:
+- 20B05
+- 00A99
+- 20C05
+- 20E22
 processed_at: '2026-04-05'
 ---
 # Cayley定理：群作为置换群的表示

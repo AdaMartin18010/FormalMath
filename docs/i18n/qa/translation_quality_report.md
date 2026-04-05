@@ -1,3 +1,8 @@
+---
+title: FormalMath Translation Quality Report
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Translation Quality Report
 
 **Generated**: 2026-04-04 16:20:00

@@ -1,3 +1,8 @@
+---
+title: FormalMath API 可靠性测试
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API 可靠性测试
 
 本目录包含FormalMath后端API的全面可靠性验证测试套件。

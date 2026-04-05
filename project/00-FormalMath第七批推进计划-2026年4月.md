@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: "97A99"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+title: FormalMath第七批推进计划
+processed_at: '2026-04-05'
 ---
-
 # FormalMath第七批推进计划
 
 **编制日期**: 2026年4月3日

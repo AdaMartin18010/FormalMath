@@ -1,3 +1,8 @@
+---
+title: Advanced Geometry and Topology (高级几何拓扑)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Advanced Geometry and Topology (高级几何拓扑)
 
 This document provides bilingual (English-Chinese) definitions, notations, and examples for 50 core concepts in advanced geometry and topology.

@@ -1,3 +1,8 @@
+---
+title: Wikipedia多语言概念对齐报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Wikipedia多语言概念对齐报告
 
 **生成日期**: 2026年04月04日

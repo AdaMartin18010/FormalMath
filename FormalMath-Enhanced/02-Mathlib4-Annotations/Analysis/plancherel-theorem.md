@@ -1,8 +1,8 @@
 ---
 msc_primary: 97U50
 processed_at: '2026-04-03'
+title: Plancherel定理 (Plancherel Theorem)
 ---
-
 # Plancherel定理 (Plancherel Theorem)
 
 ## Mathlib4 引用

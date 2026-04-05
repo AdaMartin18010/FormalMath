@@ -1,3 +1,8 @@
+---
+title: '{{ module_name }}'
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # {{ module_name }}
 
 **源文件**: `{{ source_file }}`

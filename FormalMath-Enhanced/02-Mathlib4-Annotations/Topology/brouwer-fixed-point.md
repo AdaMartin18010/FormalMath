@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 布劳威尔不动点定理 (Brouwer Fixed-Point Theorem)
 ---
-
 # 布劳威尔不动点定理 (Brouwer Fixed-Point Theorem)
 
 ## Mathlib4 引用

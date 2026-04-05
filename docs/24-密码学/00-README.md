@@ -1,8 +1,12 @@
 ---
-msc_primary: "94A60"
-msc_secondary: ['11T71', '14G50', '68P25']
+msc_primary: 94A60
+msc_secondary:
+- 11T71
+- 14G50
+- 68P25
+title: 密码学 / Cryptography
+processed_at: '2026-04-05'
 ---
-
 # 密码学 / Cryptography
 
 **最后更新**: 2026年4月4日

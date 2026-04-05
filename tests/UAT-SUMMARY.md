@@ -1,9 +1,10 @@
 ---
 msc_primary: 00A99
-version: "1.0"
-date: "2026-04-04"
+version: '1.0'
+date: '2026-04-04'
+title: FormalMath 项目UAT执行摘要
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 项目UAT执行摘要
 
 ## 执行结果速览

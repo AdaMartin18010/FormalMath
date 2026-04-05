@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00A35"
+msc_primary: 97A99
+msc_secondary:
+- 00A35
+title: 语义结构
+processed_at: '2026-04-05'
 ---
-
 # 语义结构
 
 ## 目录说明

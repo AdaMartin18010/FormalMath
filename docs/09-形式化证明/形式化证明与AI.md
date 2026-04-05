@@ -1,8 +1,12 @@
 ---
-msc_primary: "68V15"
-msc_secondary: ['68T07', '03B35', '03B70']
+msc_primary: 68V15
+msc_secondary:
+- 68T07
+- 03B35
+- 03B70
+title: 形式化证明与AI / Formal Proof and AI
+processed_at: '2026-04-05'
 ---
-
 # 形式化证明与AI / Formal Proof and AI
 
 **文档编号**: B.09.AI

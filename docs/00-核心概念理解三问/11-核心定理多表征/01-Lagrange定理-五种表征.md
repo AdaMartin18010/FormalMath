@@ -1,8 +1,10 @@
 ---
-msc_primary: "20A05"
-msc_secondary: ["20D99"]
+msc_primary: 20A05
+msc_secondary:
+- 20D99
+title: Lagrange定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Lagrange定理 - 五种表征
 
 **创建日期**: 2025年12月1日

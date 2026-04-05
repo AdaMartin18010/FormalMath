@@ -1,8 +1,12 @@
 ---
-msc_primary: "20-XX"
-msc_secondary: ['35-XX', '12Exx', '13Cxx']
+msc_primary: 20A99
+msc_secondary:
+- 35A99
+- 00A99
+- 00A99
+title: Lotka-Volterra捕食者-猎物模型
+processed_at: '2026-04-05'
 ---
-
 # Lotka-Volterra捕食者-猎物模型
 
 ## 应用领域

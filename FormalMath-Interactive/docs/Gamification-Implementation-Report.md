@@ -1,3 +1,8 @@
+---
+title: FormalMath 游戏化模块实现报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 游戏化模块实现报告
 
 ## 项目概述

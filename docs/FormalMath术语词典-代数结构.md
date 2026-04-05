@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['12Exx', '13Cxx', '16-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 16A99
+title: FormalMath术语词典 - 代数结构
+processed_at: '2026-04-05'
 ---
-
 # FormalMath术语词典 - 代数结构
 
 ## 统一代数结构术语标准定义

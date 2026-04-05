@@ -1,3 +1,8 @@
+---
+title: FormalMath 生产部署优化总结
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 生产部署优化总结
 
 ## 优化完成项

@@ -1,3 +1,8 @@
+---
+title: Algebraic Structures (代数结构)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Algebraic Structures (代数结构)
 
 This document provides bilingual (English-Chinese) definitions, notations, and examples for 25 core concepts in algebraic structures.

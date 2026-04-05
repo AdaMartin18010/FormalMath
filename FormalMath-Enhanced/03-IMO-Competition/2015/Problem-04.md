@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: IMO 2015 Problem 04
 ---
-
 # IMO 2015 Problem 04
 
 ## 题目

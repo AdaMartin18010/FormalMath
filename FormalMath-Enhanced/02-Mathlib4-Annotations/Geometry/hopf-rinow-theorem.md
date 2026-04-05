@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Hopf-Rinow定理 (Hopf-Rinow Theorem)
 ---
-
 # Hopf-Rinow定理 (Hopf-Rinow Theorem)
 
 ## Mathlib4 引用

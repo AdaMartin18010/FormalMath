@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: 希尔伯特的形式主义：纯粹形式系统的逻辑建构
+processed_at: '2026-04-05'
 ---
-
 # 希尔伯特的形式主义：纯粹形式系统的逻辑建构
 
 ## **一、核心立场的确立：数学作为符号形式的科学**

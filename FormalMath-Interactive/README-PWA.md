@@ -1,3 +1,8 @@
+---
+title: FormalMath PWA 使用指南
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath PWA 使用指南
 
 ## 什么是 PWA？

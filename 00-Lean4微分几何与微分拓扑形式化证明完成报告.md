@@ -1,3 +1,8 @@
+---
+title: FormalMath项目Lean4微分几何与微分拓扑形式化证明完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath项目Lean4微分几何与微分拓扑形式化证明完成报告
 
 **生成日期**: 2026年4月5日

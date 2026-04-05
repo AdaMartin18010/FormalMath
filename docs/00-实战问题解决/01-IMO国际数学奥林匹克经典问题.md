@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: IMO 国际数学奥林匹克经典问题
+processed_at: '2026-04-05'
 ---
-
 # IMO 国际数学奥林匹克经典问题
 
 > 本问题集收录20道IMO经典问题，涵盖代数、几何、数论、组合四大领域。

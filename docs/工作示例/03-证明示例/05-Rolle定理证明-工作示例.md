@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['03B20', '12Exx', '26A42']
+msc_primary: 00A99
+msc_secondary:
+- 03B20
+- 00A99
+- 26A42
+title: Rolle 定理证明 - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # Rolle 定理证明 - 工作示例
 
 **类型**: 证明示例

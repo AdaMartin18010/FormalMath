@@ -1,8 +1,10 @@
 ---
-msc_primary: "00-01"
-msc_secondary: "97A99"
+msc_primary: 00A05
+msc_secondary:
+- 97A99
+title: Harvard数学课程资源索引
+processed_at: '2026-04-05'
 ---
-
 # Harvard数学课程资源索引
 
 **主题编号**: C.RES.05

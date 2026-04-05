@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A05"
-msc_secondary: ['12Exx', '22E47', '13Cxx']
+msc_primary: 00A05
+msc_secondary:
+- 00A99
+- 22E47
+- 00A99
+title: RSA加密算法
+processed_at: '2026-04-05'
 ---
-
 # RSA加密算法
 
 ## 概述

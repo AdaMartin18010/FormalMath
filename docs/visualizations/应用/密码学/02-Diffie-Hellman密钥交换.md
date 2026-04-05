@@ -1,8 +1,12 @@
 ---
-msc_primary: "94A60"
-msc_secondary: ['11T71', '11Y16']
-concept_type: "应用可视化"
-visualization_type: "交互流程图、协议序列"
+msc_primary: 94A60
+msc_secondary:
+- 11T71
+- 11Y16
+concept_type: 应用可视化
+visualization_type: 交互流程图、协议序列
+title: Diffie-Hellman密钥交换可视化
+processed_at: '2026-04-05'
 ---
 msc_primary: "94A60"
 msc_secondary: ['11T71', '11Y16']

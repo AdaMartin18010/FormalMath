@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: Navier-Stokes方程存在性与光滑性 - 思维导图
+processed_at: '2026-04-05'
 ---
-
 # Navier-Stokes方程存在性与光滑性 - 思维导图
 
 ## 概述

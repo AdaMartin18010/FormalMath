@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: 逻辑几何Topos理论
+processed_at: '2026-04-05'
 ---
-
 # 逻辑几何Topos理论
 
 > **逻辑 ↔ 几何：直觉主义逻辑、层语义与Topos的深层统一**

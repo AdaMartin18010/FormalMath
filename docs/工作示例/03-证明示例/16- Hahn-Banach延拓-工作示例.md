@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['12Exx', '03B35', '15Axx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 03B35
+- 00A99
+title: Hahn–Banach 延拓 - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # Hahn–Banach 延拓 - 工作示例
 
 **类型**: 证明示例 **领域**: 泛函分析 **难度**: L2 **前置知识**: 赋范空间、线性泛函、子空间  

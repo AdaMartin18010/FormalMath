@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: AI形式化数学工具使用说明
 ---
-
 # AI形式化数学工具使用说明
 
 ## 工具概览

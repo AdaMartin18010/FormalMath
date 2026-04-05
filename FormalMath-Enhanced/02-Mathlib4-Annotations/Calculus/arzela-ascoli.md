@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Arzelà-Ascoli定理 (Arzelà-Ascoli Theorem)
 ---
-
 # Arzelà-Ascoli定理 (Arzelà-Ascoli Theorem)
 
 ## Mathlib4 引用

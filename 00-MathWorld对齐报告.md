@@ -1,8 +1,12 @@
 ---
 msc_primary: 00A99
-msc_secondary: [00A05, 00A06, 00A35]
+msc_secondary:
+- 00A05
+- 00A06
+- 00A35
+title: FormalMath与Wolfram MathWorld对齐报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与Wolfram MathWorld对齐报告
 
 **报告日期**: 2026年4月4日  

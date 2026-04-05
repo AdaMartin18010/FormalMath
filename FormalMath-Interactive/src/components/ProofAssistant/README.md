@@ -1,3 +1,8 @@
+---
+title: 定理证明助手系统 (Theorem Proof Assistant)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 定理证明助手系统 (Theorem Proof Assistant)
 
 基于 Lean4 的交互式定理证明辅助系统，提供直观的可视化界面和智能策略推荐。

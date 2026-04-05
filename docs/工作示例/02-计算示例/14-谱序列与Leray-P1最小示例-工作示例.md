@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A05"
-msc_secondary: ['14Nxx', '12Exx', '16-XX']
+msc_primary: 00A05
+msc_secondary:
+- 00A99
+- 00A99
+- 16A99
+title: 谱序列与 Leray 谱序列：P^1 最小可运行示例
+processed_at: '2026-04-05'
 ---
-
 # 谱序列与 Leray 谱序列：P^1 最小可运行示例
 
 **类型**: 计算示例  

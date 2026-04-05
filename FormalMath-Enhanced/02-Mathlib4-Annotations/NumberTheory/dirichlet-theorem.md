@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 狄利克雷定理 (Dirichlet's Theorem)
 ---
-
 # 狄利克雷定理 (Dirichlet's Theorem)
 
 ## Mathlib4 引用

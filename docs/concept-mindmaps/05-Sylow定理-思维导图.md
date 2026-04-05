@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: Sylow定理 - 思维导图
+processed_at: '2026-04-05'
 ---
-
 # Sylow定理 - 思维导图
 
 ## 概述

@@ -1,8 +1,12 @@
 ---
-msc_primary: "12Fxx"
-msc_secondary: ['28-XX', '65Dxx', '26-XX']
+msc_primary: 00A99
+msc_secondary:
+- 28A99
+- 00A99
+- 26A99
+title: Rolle定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Rolle定理 - 五种表征
 
 **创建日期**: 2025年12月1日

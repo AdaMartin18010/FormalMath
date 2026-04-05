@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Mathlib4 教育注释索引
 ---
-
 # Mathlib4 教育注释索引
 
 本索引汇总了所有已创建的定理教育注释，便于快速查找和导航。

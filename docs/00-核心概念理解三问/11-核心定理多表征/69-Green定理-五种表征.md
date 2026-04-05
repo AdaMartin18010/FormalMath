@@ -1,8 +1,12 @@
 ---
-msc_primary: "16-XX"
-msc_secondary: ['16-XX', '28-XX', '65Dxx']
+msc_primary: 16A99
+msc_secondary:
+- 16A99
+- 28A99
+- 00A99
+title: Green定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Green定理 - 五种表征
 
 **创建日期**: 2025年12月1日

@@ -1,3 +1,8 @@
+---
+title: '{{ theorem_name }}'
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # {{ theorem_name }}
 
 ## 定理陈述

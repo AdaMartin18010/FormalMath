@@ -1,3 +1,8 @@
+---
+title: Lean4定理11-15证明完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Lean4定理11-15证明完成报告
 
 ## 任务概述

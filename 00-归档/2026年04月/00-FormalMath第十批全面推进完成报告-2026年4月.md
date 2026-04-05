@@ -1,3 +1,8 @@
+---
+title: FormalMath第十批全面推进完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath第十批全面推进完成报告
 
 **报告日期**: 2026年4月3日  

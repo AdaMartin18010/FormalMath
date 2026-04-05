@@ -1,7 +1,10 @@
 ---
-title: "同伦类型论深度版 / Homotopy Type Theory - In Depth"
-msc_primary: "55Pxx"
-msc_secondary: ["03Bxx", "18G55", "68Vxx"]
+title: 同伦类型论深度版 / Homotopy Type Theory - In Depth
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 18G55
+- 00A99
 processed_at: '2026-04-05'
 ---
 # 同伦类型论深度版 / Homotopy Type Theory - In Depth

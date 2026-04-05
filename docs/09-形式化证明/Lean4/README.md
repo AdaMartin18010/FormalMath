@@ -1,6 +1,10 @@
 ---
-msc_primary: "68V20"
-msc_secondary: ["03B35", "03B70"]
+msc_primary: 68V20
+msc_secondary:
+- 03B35
+- 03B70
+title: FormalMath - Mathlib4对齐形式化证明库
+processed_at: '2026-04-05'
 ---
 msc_primary: "68V20"
 msc_secondary: ["03B35", "03B70"]

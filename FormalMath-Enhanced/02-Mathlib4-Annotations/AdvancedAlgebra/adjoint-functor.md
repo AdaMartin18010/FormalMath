@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 伴随函子
 ---
-
 # 伴随函子
 
 ## Mathlib4 引用

@@ -1,7 +1,9 @@
 ---
-title: "帕斯卡 Wager 的数学建模"
-msc_primary: "60A99"
-msc_secondary: ["05A10, 51A05"]
+title: 帕斯卡 Wager 的数学建模
+msc_primary: 60A99
+msc_secondary:
+- 05A10
+- 51A05
 processed_at: '2026-04-05'
 ---
 # 帕斯卡 Wager 的数学建模

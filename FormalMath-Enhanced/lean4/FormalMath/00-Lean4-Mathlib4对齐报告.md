@@ -1,3 +1,8 @@
+---
+title: FormalMath Lean4与Mathlib4对齐优化报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Lean4与Mathlib4对齐优化报告
 
 **生成日期**: 2026年4月4日  

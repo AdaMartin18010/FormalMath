@@ -1,3 +1,8 @@
+---
+title: FormalMath 生产环境检查清单
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 生产环境检查清单
 
 ## 部署前检查

@@ -1,8 +1,10 @@
 ---
-msc_primary: "58A12"
-msc_secondary: ["55N05"]
+msc_primary: 58A12
+msc_secondary:
+- 55N05
+title: de Rham定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # de Rham定理 - 五种表征
 
 **创建日期**: 2025年12月1日

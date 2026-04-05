@@ -1,3 +1,8 @@
+---
+title: 'T006: MIT 18.100A Syllabus Deconstruction — Task Report'
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T006: MIT 18.100A Syllabus Deconstruction — Task Report
 
 **Course:** MIT 18.100A — Introduction to Real Analysis (Fall 2020, Dr. Casey Rodriguez)  

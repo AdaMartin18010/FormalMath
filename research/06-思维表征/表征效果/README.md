@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00A35"
+msc_primary: 97A99
+msc_secondary:
+- 00A35
+title: 表征效果
+processed_at: '2026-04-05'
 ---
-
 # 表征效果
 
 ## 目录说明

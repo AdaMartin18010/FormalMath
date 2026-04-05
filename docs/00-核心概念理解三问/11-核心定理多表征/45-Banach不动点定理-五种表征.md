@@ -1,8 +1,12 @@
 ---
-msc_primary: "12Fxx"
-msc_secondary: ['46-XX', '90Cxx', '46Axx']
+msc_primary: 00A99
+msc_secondary:
+- 46A99
+- 00A99
+- 00A99
+title: Banach不动点定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Banach不动点定理 - 五种表征
 
 **创建日期**: 2025年12月1日

@@ -1,8 +1,10 @@
 ---
-msc_primary: "54C30"
-msc_secondary: ["54A05"]
+msc_primary: 54C30
+msc_secondary:
+- 54A05
+title: Urysohn引理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Urysohn引理 - 五种表征
 
 **创建日期**: 2025年12月1日

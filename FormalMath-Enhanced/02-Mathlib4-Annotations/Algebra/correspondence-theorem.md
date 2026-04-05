@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 正规子群对应定理 (Correspondence Theorem)
 ---
-
 # 正规子群对应定理 (Correspondence Theorem)
 
 ## Mathlib4 引用

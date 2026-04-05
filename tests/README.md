@@ -1,3 +1,8 @@
+---
+title: FormalMath 自动化测试套件
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 自动化测试套件
 
 FormalMath项目的综合自动化测试解决方案，支持文档格式验证、Lean4代码测试和内容一致性检查。

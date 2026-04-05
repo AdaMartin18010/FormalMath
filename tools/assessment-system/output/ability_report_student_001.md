@@ -1,8 +1,10 @@
 ---
-msc_primary: "68N15"
-msc_secondary: "68-04"
+msc_primary: 68N15
+msc_secondary:
+- 00A99
+title: ABILITY 报告
+processed_at: '2026-04-05'
 ---
-
 # ABILITY 报告
 
 **学习者**: 李四  

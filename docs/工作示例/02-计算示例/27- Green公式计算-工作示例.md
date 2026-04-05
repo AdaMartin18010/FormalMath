@@ -1,8 +1,12 @@
 ---
-msc_primary: "12Fxx"
-msc_secondary: ['12Exx', '26A42', '03B40']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 26A42
+- 03B40
+title: Green 公式计算 - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # Green 公式计算 - 工作示例
 
 **类型**: 计算示例 **领域**: 向量分析 **难度**: L1 **创建日期**: 2026年2月2日

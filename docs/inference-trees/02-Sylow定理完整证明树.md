@@ -1,8 +1,11 @@
 ---
-msc_primary: "20D20"
-msc_secondary: ['20D15', '20B05']
+msc_primary: 20D20
+msc_secondary:
+- 20D15
+- 20B05
+title: Sylow定理完整证明树
+processed_at: '2026-04-05'
 ---
-
 # Sylow定理完整证明树
 
 ## 定理陈述

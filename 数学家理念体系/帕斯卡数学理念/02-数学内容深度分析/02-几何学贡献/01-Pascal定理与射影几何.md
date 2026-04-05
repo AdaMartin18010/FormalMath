@@ -1,7 +1,9 @@
 ---
-title: "Pascal定理与射影几何：从Essay pour les coniques到现代射影几何"
-msc_primary: "60A99"
-msc_secondary: ["05A10, 51A05"]
+title: Pascal定理与射影几何：从Essay pour les coniques到现代射影几何
+msc_primary: 60A99
+msc_secondary:
+- 05A10
+- 51A05
 processed_at: '2026-04-05'
 ---
 # Pascal定理与射影几何：从Essay pour les coniques到现代射影几何

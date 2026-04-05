@@ -1,8 +1,12 @@
 ---
-msc_primary: "12F10"
-msc_secondary: ["12F05", "20B25", "97H40"]
+msc_primary: 12F10
+msc_secondary:
+- 12F05
+- 20B25
+- 97H40
+title: Galois 基本定理
+processed_at: '2026-04-05'
 ---
-
 # Galois 基本定理
 
 **定理编号**: L2-A008  

@@ -1,3 +1,8 @@
+---
+title: FormalMath 项目 CI/CD 指南
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 项目 CI/CD 指南
 
 本文档详细介绍FormalMath项目的持续集成/持续部署(CI/CD)流程，帮助贡献者理解和使用自动化工作流。

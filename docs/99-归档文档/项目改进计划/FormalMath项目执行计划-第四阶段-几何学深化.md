@@ -1,8 +1,10 @@
 ---
-msc_primary: "00-01"
-msc_secondary: "01A99"
+msc_primary: 00A05
+msc_secondary:
+- 01A99
+title: FormalMath项目执行计划-第四阶段-几何学深化
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目执行计划-第四阶段-几何学深化
 
 ## 📋 执行概况

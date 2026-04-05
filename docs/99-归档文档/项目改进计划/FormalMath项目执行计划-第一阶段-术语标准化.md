@@ -1,8 +1,10 @@
 ---
-msc_primary: "00-01"
-msc_secondary: "01A99"
+msc_primary: 00A05
+msc_secondary:
+- 01A99
+title: FormalMath项目执行计划 - 第一阶段：术语标准化
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目执行计划 - 第一阶段：术语标准化
 
 ## 2025年1月 - 术语标准化工作组执行计划

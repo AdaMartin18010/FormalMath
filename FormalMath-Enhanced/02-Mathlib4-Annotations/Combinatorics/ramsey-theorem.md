@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Ramsey定理 (Ramsey's Theorem)
 ---
-
 # Ramsey定理 (Ramsey's Theorem)
 
 ## Mathlib4 引用

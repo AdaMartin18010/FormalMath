@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: "97A99"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+title: 文档深化目录说明
+processed_at: '2026-04-05'
 ---
-
 # 文档深化目录说明
 
 **创建日期**: 2025年12月1日

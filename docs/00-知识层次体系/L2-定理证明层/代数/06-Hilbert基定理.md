@@ -1,8 +1,12 @@
 ---
-msc_primary: "13E05"
-msc_secondary: ["13F20", "14A05", "97H40"]
+msc_primary: 13E05
+msc_secondary:
+- 13F20
+- 14A05
+- 97H40
+title: Hilbert 基定理
+processed_at: '2026-04-05'
 ---
-
 # Hilbert 基定理
 
 **定理编号**: L2-A006  

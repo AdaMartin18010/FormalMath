@@ -1,9 +1,10 @@
 ---
 msc_primary: 00A99
-msc_secondary: 97A99
+msc_secondary:
+- 97A99
 processed_at: '2026-04-04'
+title: FormalMath与Cambridge数学课程内容深度对齐报告
 ---
-
 # FormalMath与Cambridge数学课程内容深度对齐报告
 
 > **版本**: 2026年4月

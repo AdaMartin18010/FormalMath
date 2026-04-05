@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: Hilbert的23个问题
+processed_at: '2026-04-05'
 ---
-
 # Hilbert的23个问题
 
 > **概述**: 1900年8月8日，David Hilbert在巴黎国际数学家大会上提出了23个问题，成为20世纪数学研究的指路明灯。

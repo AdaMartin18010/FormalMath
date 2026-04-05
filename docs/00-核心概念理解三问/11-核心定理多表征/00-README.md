@@ -1,8 +1,10 @@
 ---
-msc_primary: "00-01"
-msc_secondary: "01A99"
+msc_primary: 00A05
+msc_secondary:
+- 01A99
+title: 核心定理多表征框架
+processed_at: '2026-04-05'
 ---
-
 # 核心定理多表征框架
 
 **创建日期**: 2025年12月1日

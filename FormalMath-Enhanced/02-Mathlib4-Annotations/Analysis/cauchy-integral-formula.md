@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 柯西积分公式 (Cauchy's Integral Formula)
 ---
-
 # 柯西积分公式 (Cauchy's Integral Formula)
 
 ## Mathlib4 引用

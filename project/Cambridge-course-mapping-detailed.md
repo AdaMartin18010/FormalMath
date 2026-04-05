@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: FormalMath与Cambridge数学课程深度映射表
 ---
-
 # FormalMath与Cambridge数学课程深度映射表
 
 > **版本**: 2026年4月

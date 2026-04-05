@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['12Exx', '16-XX', '03B40']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 16A99
+- 03B40
+title: 特征多项式与 Cayley–Hamilton - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # 特征多项式与 Cayley–Hamilton - 工作示例
 
 **类型**: 应用示例 **领域**: 线性代数 **难度**: L2 **创建日期**: 2026年2月2日

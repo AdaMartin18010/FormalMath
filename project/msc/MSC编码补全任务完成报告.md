@@ -1,3 +1,8 @@
+---
+title: FormalMath 数论与逻辑概念 MSC2020 编码补全任务完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 数论与逻辑概念 MSC2020 编码补全任务完成报告
 
 **任务日期**: 2026-04-04

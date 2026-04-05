@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['62Fxx', '01Axx', '52-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 52A99
+title: FormalMath术语词典 - 几何学
+processed_at: '2026-04-05'
 ---
-
 # FormalMath术语词典 - 几何学
 
 ## 统一几何学术语标准定义

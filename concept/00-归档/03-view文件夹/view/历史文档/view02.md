@@ -1,8 +1,10 @@
 ---
-msc_primary: "00-01"
-msc_secondary: "97A99"
+msc_primary: 00A05
+msc_secondary:
+- 97A99
+title: '**数学知识压缩纲领：三层结构作为元重构引擎**'
+processed_at: '2026-04-05'
 ---
-
 # **数学知识压缩纲领：三层结构作为元重构引擎**
 
 ---

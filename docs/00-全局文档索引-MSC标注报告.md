@@ -1,6 +1,11 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['14Nxx', '03C90', '62Fxx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 03C90
+- 00A99
+title: FormalMath项目MSC编码标注报告
+processed_at: '2026-04-05'
 ---
 msc_primary: "00A99"
 msc_secondary: ['14Nxx', '03C90', '62Fxx']

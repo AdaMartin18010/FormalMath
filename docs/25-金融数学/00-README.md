@@ -1,8 +1,12 @@
 ---
-msc_primary: "91Gxx"
-msc_secondary: ['60Hxx', '60Gxx', '91Bxx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 00A99
+title: 金融数学 / Mathematical Finance
+processed_at: '2026-04-05'
 ---
-
 # 金融数学 / Mathematical Finance
 
 **最后更新**: 2026年4月4日

@@ -1,3 +1,8 @@
+---
+title: FormalMath API 安全加固确认书
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API 安全加固确认书
 
 **确认日期**: 2026-04-04  

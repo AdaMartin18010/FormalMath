@@ -1,8 +1,12 @@
 ---
-msc_primary: "12Fxx"
-msc_secondary: ['68Vxx', '12Fxx', '34-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 34A99
+title: Picard-Lindelöf定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Picard-Lindelöf定理 - 五种表征
 
 **创建日期**: 2025年12月1日

@@ -1,8 +1,9 @@
 ---
 msc_primary: 00A99
 release_version: v1.0
+title: FormalMath 快速开始指南
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 快速开始指南
 
 **版本**: v1.0  

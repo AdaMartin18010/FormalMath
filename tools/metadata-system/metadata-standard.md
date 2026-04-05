@@ -1,3 +1,8 @@
+---
+title: FormalMath 元数据标准规范 v1.0
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 元数据标准规范 v1.0
 
 ## 1. 概述

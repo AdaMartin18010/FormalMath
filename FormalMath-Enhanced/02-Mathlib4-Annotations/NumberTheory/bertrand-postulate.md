@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Bertrand假设 (Bertrand's Postulate)
 ---
-
 # Bertrand假设 (Bertrand's Postulate)
 
 ## Mathlib4 引用

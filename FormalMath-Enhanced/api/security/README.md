@@ -1,3 +1,8 @@
+---
+title: FormalMath API 安全模块
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API 安全模块
 
 本目录包含 FormalMath API 的完整安全加固方案。

@@ -1,3 +1,8 @@
+---
+title: Dubinsky APOS理论研读报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 ﻿---
 msc_primary: "00A99"
 ---

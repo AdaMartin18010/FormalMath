@@ -1,8 +1,12 @@
 ---
-msc_primary: "08-XX"
-msc_secondary: ['12Exx', '13Cxx', '13Dxx']
+msc_primary: 08A99
+msc_secondary:
+- 00A99
+- 00A99
+- 00A99
+title: 导出函子与 Ext 计算（Z-模） - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # 导出函子与 Ext 计算（Z-模） - 工作示例
 
 **类型**: 计算示例

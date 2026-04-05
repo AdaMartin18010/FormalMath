@@ -1,3 +1,8 @@
+---
+title: MSC2020 标注示例文档
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # MSC2020 标注示例文档
 
 本文件展示FormalMath项目中数学文档的MSC2020分类标注格式。

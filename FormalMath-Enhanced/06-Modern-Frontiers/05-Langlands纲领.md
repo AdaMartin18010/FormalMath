@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Langlands纲领最新进展 (2020-2025)
 ---
-
 # Langlands纲领最新进展 (2020-2025)
 
 > **历史地位**: "数学的大统一理论"

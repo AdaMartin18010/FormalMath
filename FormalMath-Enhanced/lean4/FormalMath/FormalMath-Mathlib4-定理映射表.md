@@ -1,3 +1,8 @@
+---
+title: FormalMath与Mathlib4定理映射表
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath与Mathlib4定理映射表
 
 **版本**: Mathlib4 v4.20.0  

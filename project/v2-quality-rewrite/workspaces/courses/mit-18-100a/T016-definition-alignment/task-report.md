@@ -1,3 +1,8 @@
+---
+title: T016-definition-alignment / Task Report
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T016-definition-alignment / Task Report
 
 ## 任务概述

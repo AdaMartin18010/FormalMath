@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00-01"
+msc_primary: 97A99
+msc_secondary:
+- 00A05
+title: Princeton University数学课程与FormalMath对齐映射表
+processed_at: '2026-04-05'
 ---
-
 # Princeton University数学课程与FormalMath对齐映射表
 
 > **文档类型**: 国际权威课程对齐 · 顶级数学课程体系

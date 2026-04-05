@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['14Nxx', '68Qxx', '03C90']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 03C90
+title: FormalMath项目文档目录
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目文档目录
 
 **最后更新**: 2026年4月4日

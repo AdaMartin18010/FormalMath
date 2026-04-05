@@ -1,7 +1,8 @@
 ---
 msc_primary: 00A99
+title: FormalMath 社区行为准则
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 社区行为准则
 
 > 🌍 **我们的承诺**：建立一个开放、包容、尊重的数学学习社区

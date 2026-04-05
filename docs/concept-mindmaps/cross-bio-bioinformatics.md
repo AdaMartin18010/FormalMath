@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: 数学×生物学：生物信息学的组合统计
+processed_at: '2026-04-05'
 ---
-
 # 数学×生物学：生物信息学的组合统计
 
 ## 概述

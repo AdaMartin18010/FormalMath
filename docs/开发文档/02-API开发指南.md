@@ -4,8 +4,8 @@ title: FormalMath API 开发指南
 created_date: 2026-04-04
 version: 1.0.0
 author: FormalMath 开发团队
+processed_at: '2026-04-05'
 ---
-
 # FormalMath API 开发指南
 
 > 本文档描述 FormalMath 项目各系统的 API 接口规范、使用方法和开发实践。

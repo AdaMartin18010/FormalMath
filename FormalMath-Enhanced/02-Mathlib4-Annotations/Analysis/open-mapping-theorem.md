@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 开映射定理 (Open Mapping Theorem)
 ---
-
 # 开映射定理 (Open Mapping Theorem)
 
 ## Mathlib4 引用

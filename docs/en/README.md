@@ -1,3 +1,8 @@
+---
+title: FormalMath Core Concepts - English Translations
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Core Concepts - English Translations
 
 This directory contains bilingual (English-Chinese) documentation for core mathematical concepts in the FormalMath project.

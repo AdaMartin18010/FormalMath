@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['11Axx', '22E47', '13Cxx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 22E47
+- 00A99
+title: FormalMath项目风格统一完成报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目风格统一完成报告
 
 ## 项目概述

@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: IMO竞赛数学模块完成报告
 ---
-
 # IMO竞赛数学模块完成报告
 
 ## 📊 最终统计

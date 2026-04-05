@@ -1,3 +1,8 @@
+---
+title: 代数学概念MSC编码补全任务完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 代数学概念MSC编码补全任务完成报告
 
 **任务编号**: MSC-ALG-001

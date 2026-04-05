@@ -1,3 +1,8 @@
+---
+title: FormalMath Lean4形式化质量验证报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Lean4形式化质量验证报告
 
 ## 报告概要

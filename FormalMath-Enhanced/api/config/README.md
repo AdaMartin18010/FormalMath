@@ -1,3 +1,8 @@
+---
+title: FormalMath API - 生产数据库配置
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API - 生产数据库配置
 
 ## 配置文件清单

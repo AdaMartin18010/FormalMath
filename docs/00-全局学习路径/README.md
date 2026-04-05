@@ -1,7 +1,8 @@
 ---
-msc_primary: "00A99"
+msc_primary: 00A99
+title: 全局学习路径
+processed_at: '2026-04-05'
 ---
-
 # 全局学习路径
 
 **目录编号**: DOC.GLP  

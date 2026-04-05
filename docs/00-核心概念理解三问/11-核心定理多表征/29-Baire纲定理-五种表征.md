@@ -1,8 +1,10 @@
 ---
-msc_primary: "54E52"
-msc_secondary: ["46B99"]
+msc_primary: 54E52
+msc_secondary:
+- 46B99
+title: Baire纲定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Baire纲定理 - 五种表征
 
 **创建日期**: 2025年12月1日

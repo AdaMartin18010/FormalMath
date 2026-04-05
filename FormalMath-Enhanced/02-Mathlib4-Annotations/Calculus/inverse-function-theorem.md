@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 逆函数定理 (Inverse Function Theorem)
 ---
-
 # 逆函数定理 (Inverse Function Theorem)
 
 ## Mathlib4 引用

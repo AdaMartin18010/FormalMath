@@ -1,3 +1,8 @@
+---
+title: FormalMath 语义搜索系统
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 语义搜索系统
 
 ## 系统架构

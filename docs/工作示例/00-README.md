@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['03B20', '12Exx', '13Cxx']
+msc_primary: 00A99
+msc_secondary:
+- 03B20
+- 00A99
+- 00A99
+title: FormalMath 工作示例库
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 工作示例库
 
 **创建日期**: 2026年2月2日

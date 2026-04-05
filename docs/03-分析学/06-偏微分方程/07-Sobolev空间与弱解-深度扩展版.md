@@ -1,7 +1,11 @@
 ---
-title: "Sobolev空间与弱解 - 深度扩展版"
-msc_primary: "35D30"
-msc_secondary: ['46E35', '35J20', '35A15', '35Dxx']
+title: Sobolev空间与弱解 - 深度扩展版
+msc_primary: 35D30
+msc_secondary:
+- 46E35
+- 35J20
+- 35A15
+- 00A99
 processed_at: '2026-04-05'
 ---
 # Sobolev空间与弱解 - 深度扩展版

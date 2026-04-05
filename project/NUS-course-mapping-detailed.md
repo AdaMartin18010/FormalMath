@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: "97A99"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+title: NUS数学课程详细概念映射表
+processed_at: '2026-04-05'
 ---
-
 # NUS数学课程详细概念映射表
 
 **文档类型**：详细映射 · 概念级对应  

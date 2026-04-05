@@ -1,7 +1,10 @@
 ---
-title: "Galois理论：代数方程的群论解决"
-msc_primary: "12F10"
-msc_secondary: ["01A55", "20B35", "12-03"]
+title: Galois理论：代数方程的群论解决
+msc_primary: 12F10
+msc_secondary:
+- 01A55
+- 20B35
+- 00A99
 processed_at: '2026-04-05'
 ---
 # Galois理论：代数方程的群论解决

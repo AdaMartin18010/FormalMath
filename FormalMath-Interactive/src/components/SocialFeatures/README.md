@@ -1,3 +1,8 @@
+---
+title: SocialFeatures 社交功能模块
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # SocialFeatures 社交功能模块
 
 FormalMath Interactive 的社交媒体集成模块，提供完整的社交分享、登录和嵌入功能。

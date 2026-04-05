@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: FormalMath-Enhanced 项目总览
 ---
-
 # FormalMath-Enhanced 项目总览
 
 **启动日期**: 2026年4月3日

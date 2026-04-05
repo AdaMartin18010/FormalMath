@@ -1,3 +1,8 @@
+---
+title: FormalMath - 生产部署配置
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath - 生产部署配置
 
 本目录包含FormalMath项目生产环境的完整部署配置和运维文档。

@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Noether正规化定理
 ---
-
 # Noether正规化定理
 
 ## Mathlib4 引用

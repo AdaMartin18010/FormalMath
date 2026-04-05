@@ -1,8 +1,12 @@
 ---
-msc_primary: "20-XX"
-msc_secondary: ['11Axx', '12Exx', '03B35']
+msc_primary: 20A99
+msc_secondary:
+- 00A99
+- 00A99
+- 03B35
+title: Fermat 小定理 - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # Fermat 小定理 - 工作示例
 
 **类型**: 证明示例 **领域**: 数论 **难度**: L1 **创建日期**: 2026年2月2日

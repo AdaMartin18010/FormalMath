@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['16-XX', '03C90', '03B35']
+msc_primary: 00A99
+msc_secondary:
+- 16A99
+- 03C90
+- 03B35
+title: FormalMath项目全面批判性分析报告 - 2025年11月12日深度版
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目全面批判性分析报告 - 2025年11月12日深度版
 
 ## 📋 执行摘要 / Executive Summary

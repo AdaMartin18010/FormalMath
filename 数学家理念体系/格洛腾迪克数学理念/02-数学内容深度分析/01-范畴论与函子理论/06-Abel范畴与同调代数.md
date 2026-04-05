@@ -1,7 +1,9 @@
 ---
-title: "Abel范畴与同调代数：范畴论的应用"
-msc_primary: "18Gxx"
-msc_secondary: ["13Dxx", "16Exx"]
+title: Abel范畴与同调代数：范畴论的应用
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
 processed_at: '2026-04-05'
 ---
 # Abel范畴与同调代数：范畴论的应用

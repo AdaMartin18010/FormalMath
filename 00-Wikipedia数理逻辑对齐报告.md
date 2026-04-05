@@ -1,8 +1,15 @@
 ---
-msc_primary: "03-XX"
-msc_secondary: ["03Bxx", "03Cxx", "03Dxx", "03Exx", "03Fxx", "03Gxx"]
+msc_primary: 03E99
+msc_secondary:
+- 00A99
+- 00A99
+- 00A99
+- 00A99
+- 00A99
+- 00A99
+title: Wikipedia数理逻辑对齐报告
+processed_at: '2026-04-05'
 ---
-
 # Wikipedia数理逻辑对齐报告
 
 **报告日期**: 2026年4月4日  

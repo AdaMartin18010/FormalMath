@@ -1,7 +1,9 @@
 ---
-title: "图灵数学理念体系"
-msc_primary: "01A60"
-msc_secondary: ["68Qxx", "03Dxx"]
+title: 图灵数学理念体系
+msc_primary: 01A60
+msc_secondary:
+- 00A99
+- 00A99
 processed_at: '2026-04-05'
 ---
 # 图灵数学理念体系

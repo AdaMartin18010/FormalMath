@@ -1,3 +1,8 @@
+---
+title: FormalMath API 生产环境安全加固完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API 生产环境安全加固完成报告
 
 **报告日期**: 2026-04-04  

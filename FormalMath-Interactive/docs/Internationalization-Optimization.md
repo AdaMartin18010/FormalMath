@@ -1,3 +1,8 @@
+---
+title: 国际化UI/UX优化文档
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 国际化UI/UX优化文档
 
 ## 概述

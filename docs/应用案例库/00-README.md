@@ -1,8 +1,12 @@
+﻿---
+msc_primary: 00A99
+msc_secondary:
+- 68Qxx
+- 62Fxx
+- 26A42
+title: 数学应用案例库 / Mathematical Applications Library
+processed_at: '2026-04-05'
 ---
-msc_primary: "00A99"
-msc_secondary: ['68Qxx', '62Fxx', '26A42']
----
-
 # 数学应用案例库 / Mathematical Applications Library
 
 **最后更新**: 2026年4月3日
@@ -134,7 +138,7 @@ msc_secondary: ['68Qxx', '62Fxx', '26A42']
 
 - [项目索引](../项目索引.md) - 完整的项目文档索引
 - [MSC索引](../../project/msc/00-MSC索引.md) - MSC数学分类索引
-- [06-数论](../06-数论/) - 数论基础（密码学先修）
+- [06-数论](../05-数论/) - 数论基础（密码学先修）
 - [02-线性代数](../02-线性代数/) - 线性代数（机器学习先修）
 - [03-分析学](../03-分析学/) - 分析学基础（物理应用先修）
 - [08-计算数学](../08-计算数学/) - 数值方法与优化

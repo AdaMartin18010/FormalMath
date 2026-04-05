@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: Haskell编程应用
+processed_at: '2026-04-05'
 ---
-
 # Haskell编程应用
 
 **创建日期**: 2025年12月11日

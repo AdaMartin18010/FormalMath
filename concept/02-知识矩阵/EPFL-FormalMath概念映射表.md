@@ -1,9 +1,12 @@
 ---
 msc_primary: 97B40
-msc_secondary: 00A99, 97D30
+msc_secondary:
+- 00A99
+- 97D30
 generated_at: '2026-04-04'
+title: EPFL-FormalMath 概念映射表
+processed_at: '2026-04-05'
 ---
-
 # EPFL-FormalMath 概念映射表
 
 **版本**: v1.0  

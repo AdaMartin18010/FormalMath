@@ -2,8 +2,9 @@
 msc_primary: 00A99
 release_version: v1.0
 release_date: '2026-04-04'
+title: FormalMath v1.0 发布说明
+processed_at: '2026-04-05'
 ---
-
 # FormalMath v1.0 发布说明
 
 **正式发布日期**: 2026年4月4日  

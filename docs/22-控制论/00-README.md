@@ -1,8 +1,12 @@
 ---
-msc_primary: "93-XX"
-msc_secondary: ['49-XX', '34Hxx', '34K35']
+msc_primary: 93A99
+msc_secondary:
+- 49A99
+- 00A99
+- 34K35
+title: 控制论 / Control Theory
+processed_at: '2026-04-05'
 ---
-
 # 控制论 / Control Theory
 
 **最后更新**: 2026年4月4日

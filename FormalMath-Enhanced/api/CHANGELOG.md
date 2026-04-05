@@ -1,3 +1,8 @@
+---
+title: FormalMath API 变更日志
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API 变更日志
 
 所有重要的变更都记录在此文件中。

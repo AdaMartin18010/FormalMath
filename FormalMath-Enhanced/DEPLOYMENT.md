@@ -1,3 +1,8 @@
+---
+title: FormalMath - Docker生产环境部署指南
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath - Docker生产环境部署指南
 
 本文档描述了如何使用Docker和Docker Compose部署FormalMath项目到生产环境。

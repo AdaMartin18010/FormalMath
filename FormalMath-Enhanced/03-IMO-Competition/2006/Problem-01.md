@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: IMO 2006 Problem 1
 ---
-
 # IMO 2006 Problem 1
 
 ## 题目

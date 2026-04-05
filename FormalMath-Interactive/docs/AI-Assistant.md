@@ -1,3 +1,8 @@
+---
+title: AI智能助手集成文档
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # AI智能助手集成文档
 
 本文档介绍如何在FormalMath-Interactive项目中使用AI智能助手组件。

@@ -1,7 +1,10 @@
 ---
-title: "Atiyah-Singer指标定理：几何、拓扑与分析的统一"
-msc_primary: "58J20"
-msc_secondary: ["19K56", "53C27", "35Jxx"]
+title: Atiyah-Singer指标定理：几何、拓扑与分析的统一
+msc_primary: 58J20
+msc_secondary:
+- 19K56
+- 53C27
+- 00A99
 processed_at: '2026-04-05'
 ---
 # Atiyah-Singer指标定理：几何、拓扑与分析的统一

@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: Jordan标准形推导
+processed_at: '2026-04-05'
 ---
-
 # Jordan标准形推导
 
 ## 核心定理陈述

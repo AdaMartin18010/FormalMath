@@ -1,3 +1,8 @@
+---
+title: T019 Definition Alignment — Task Report
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T019 Definition Alignment — Task Report
 
 **Course**: Harvard Math 232br (Curves, Surfaces, Varieties / Cohomology)  

@@ -1,8 +1,11 @@
 ---
 msc_primary: 00A99
-msc_secondary: [00A35, 97U50]
+msc_secondary:
+- 00A35
+- 97U50
+title: FormalMath与MathWorld对齐改进建议清单
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与MathWorld对齐改进建议清单
 
 **文档版本**: v1.0  

@@ -1,8 +1,10 @@
 ---
-msc_primary: "00-01"
-msc_secondary: "97Axx"
+msc_primary: 00A05
+msc_secondary:
+- 00A99
+title: FormalMath项目持续改进推进报告 - 集合论基础完善
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目持续改进推进报告 - 集合论基础完善
 
 ## 📋 报告概述

@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: Category Theory Using Haskell
+processed_at: '2026-04-05'
 ---
-
 Shuichi Yukita
 
 # Category Theory Using Haskell

@@ -1,8 +1,10 @@
 ---
-msc_primary: "97D20"
-msc_secondary: "97C70"
+msc_primary: 97D20
+msc_secondary:
+- 97C70
+title: 04-教育
+processed_at: '2026-04-05'
 ---
-
 # 04-教育
 
 ## 目录说明

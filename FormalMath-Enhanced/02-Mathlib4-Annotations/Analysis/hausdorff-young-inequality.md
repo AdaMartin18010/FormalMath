@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Hausdorff-Young不等式 (Hausdorff-Young Inequality)
 ---
-
 # Hausdorff-Young不等式 (Hausdorff-Young Inequality)
 
 ## Mathlib4 引用

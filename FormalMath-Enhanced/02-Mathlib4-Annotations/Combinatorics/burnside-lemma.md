@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Burnside引理 (Burnside's Lemma)
 ---
-
 # Burnside引理 (Burnside's Lemma)
 
 ## Mathlib4 引用

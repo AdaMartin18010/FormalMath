@@ -1,3 +1,8 @@
+---
+title: Number Theory and Advanced Algebra (数论与高等代数)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Number Theory and Advanced Algebra (数论与高等代数)
 
 This document provides bilingual (English-Chinese) definitions, notations, and examples for 50 core concepts in number theory and advanced algebra.

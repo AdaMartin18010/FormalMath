@@ -1,3 +1,8 @@
+---
+title: 分析 领域依赖图
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # 分析 领域依赖图
 
 ```mermaid

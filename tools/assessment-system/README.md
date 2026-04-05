@@ -1,8 +1,10 @@
 ---
-msc_primary: "68N15"
-msc_secondary: "68-04"
+msc_primary: 68N15
+msc_secondary:
+- 00A99
+title: FormalMath 评估系统
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 评估系统
 
 FormalMath Assessment System - 面向形式化数学知识库的多维度评估系统

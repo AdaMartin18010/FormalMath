@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: "97A99"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+title: MSC 按编码文档列表（自动生成）
+processed_at: '2026-04-05'
 ---
-
 # MSC 按编码文档列表（自动生成）
 
 **生成时间**: 2026-02-15 08:29

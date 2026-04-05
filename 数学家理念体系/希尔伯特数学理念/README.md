@@ -1,7 +1,9 @@
 ---
-title: "希尔伯特数学理念体系"
-msc_primary: "01A60"
-msc_secondary: ["03-03", "46-03"]
+title: 希尔伯特数学理念体系
+msc_primary: 01A60
+msc_secondary:
+- 00A99
+- 00A99
 processed_at: '2026-04-05'
 ---
 # 希尔伯特数学理念体系

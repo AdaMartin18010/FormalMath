@@ -1,8 +1,9 @@
 ---
 msc_primary: 00A99
 release_version: v1.0
+title: FormalMath 社交媒体发布内容
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 社交媒体发布内容
 
 ---

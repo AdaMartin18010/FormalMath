@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Jordan-Hölder定理 (Jordan-Hölder Theorem)
 ---
-
 # Jordan-Hölder定理 (Jordan-Hölder Theorem)
 
 ## Mathlib4 引用

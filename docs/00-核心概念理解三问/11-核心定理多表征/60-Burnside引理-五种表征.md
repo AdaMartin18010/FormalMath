@@ -1,8 +1,12 @@
 ---
-msc_primary: "20-XX"
-msc_secondary: ['20-XX', '62-XX', '68Vxx']
+msc_primary: 20A99
+msc_secondary:
+- 20A99
+- 62A99
+- 00A99
+title: Burnside引理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Burnside引理 - 五种表征
 
 **创建日期**: 2025年12月1日

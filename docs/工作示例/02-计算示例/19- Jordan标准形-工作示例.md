@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['12Exx', '16-XX', '52-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 16A99
+- 52A99
+title: Jordan 标准形 - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # Jordan 标准形 - 工作示例
 
 **类型**: 计算示例

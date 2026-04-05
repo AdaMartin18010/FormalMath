@@ -1,8 +1,11 @@
 ---
-msc_primary: "20D99"
-msc_secondary: ["20A05", "97H40"]
+msc_primary: 20D99
+msc_secondary:
+- 20A05
+- 97H40
+title: Lagrange 定理
+processed_at: '2026-04-05'
 ---
-
 # Lagrange 定理
 
 **定理编号**: L2-A001

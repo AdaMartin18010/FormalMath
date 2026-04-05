@@ -1,7 +1,9 @@
 ---
-title: "诺特数学理念体系"
-msc_primary: "01A60"
-msc_secondary: ["13-03", "16-03"]
+title: 诺特数学理念体系
+msc_primary: 01A60
+msc_secondary:
+- 00A99
+- 00A99
 processed_at: '2026-04-05'
 ---
 # 诺特数学理念体系

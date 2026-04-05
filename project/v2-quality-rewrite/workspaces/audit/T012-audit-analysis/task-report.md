@@ -1,3 +1,8 @@
+---
+title: T012 分析学模块盲审评分 - 任务执行报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T012 分析学模块盲审评分 - 任务执行报告
 
 > **任务编号**：T012-audit-analysis

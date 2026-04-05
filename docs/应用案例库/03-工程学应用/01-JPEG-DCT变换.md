@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['12Exx', '22E47', '13Cxx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 22E47
+- 00A99
+title: JPEG图像压缩的DCT变换
+processed_at: '2026-04-05'
 ---
-
 # JPEG图像压缩的DCT变换
 
 ## 应用领域

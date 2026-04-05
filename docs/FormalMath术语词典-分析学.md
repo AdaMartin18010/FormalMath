@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['62Fxx', '01Axx', '34-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 34A99
+title: FormalMath术语词典 - 分析学
+processed_at: '2026-04-05'
 ---
-
 # FormalMath术语词典 - 分析学
 
 ## 统一分析学术语标准定义

@@ -1,3 +1,8 @@
+---
+title: MIT 18.701 Algebra I — L3 定义对齐手册
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # MIT 18.701 Algebra I — L3 定义对齐手册
 
 **文档编号**: D017  

@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Sard定理 (Sard's Theorem)
 ---
-
 # Sard定理 (Sard's Theorem)
 
 ## Mathlib4 引用

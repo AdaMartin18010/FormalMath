@@ -1,7 +1,9 @@
 ---
-title: "阿基米德数学理念体系"
-msc_primary: "01A20"
-msc_secondary: ["51Mxx", "53Axx"]
+title: 阿基米德数学理念体系
+msc_primary: 01A20
+msc_secondary:
+- 00A99
+- 00A99
 processed_at: '2026-04-05'
 ---
 # 阿基米德数学理念体系

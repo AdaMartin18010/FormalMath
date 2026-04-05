@@ -1,3 +1,8 @@
+---
+title: Stanford课程差异分析表
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Stanford课程差异分析表
 
 **文档版本**: 1.0  

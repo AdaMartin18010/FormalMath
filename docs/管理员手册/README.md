@@ -2,8 +2,9 @@
 msc_primary: 00A99
 version: v1.0
 doc_type: 管理员手册
+title: FormalMath 管理员手册
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 管理员手册
 
 **版本**: v1.0  

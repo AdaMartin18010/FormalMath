@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00-01"
+msc_primary: 97A99
+msc_secondary:
+- 00A05
+title: MIT数学课程详细学习计划
+processed_at: '2026-04-05'
 ---
-
 # MIT数学课程详细学习计划
 
 本目录包含MIT数学各门课程的详细自学路径，使学习者可以参照MIT课程体系使用FormalMath资源进行自学。

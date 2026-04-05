@@ -1,8 +1,10 @@
 ---
-msc_primary: "55Q52"
-msc_secondary: ["55P99"]
+msc_primary: 55Q52
+msc_secondary:
+- 55P99
+title: van Kampen定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # van Kampen定理 - 五种表征
 
 **创建日期**: 2025年12月1日

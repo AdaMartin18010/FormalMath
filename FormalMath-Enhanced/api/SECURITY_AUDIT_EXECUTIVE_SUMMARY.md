@@ -1,3 +1,8 @@
+---
+title: FormalMath API 安全审计执行摘要
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath API 安全审计执行摘要
 
 **审计完成时间**: 2026-04-04 16:45  

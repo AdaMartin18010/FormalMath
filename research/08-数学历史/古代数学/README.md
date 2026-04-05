@@ -1,8 +1,10 @@
 ---
-msc_primary: "01A99"
-msc_secondary: "97A30"
+msc_primary: 01A99
+msc_secondary:
+- 97A30
+title: 古代数学
+processed_at: '2026-04-05'
 ---
-
 # 古代数学
 
 ## 目录说明

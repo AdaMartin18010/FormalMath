@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A69"
-msc_secondary: "97Mxx"
+msc_primary: 00A69
+msc_secondary:
+- 00A99
+title: FormalMath项目持续改进推进报告 - 计算几何与网络科学数学应用扩展
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目持续改进推进报告 - 计算几何与网络科学数学应用扩展
 
 ## 📋 报告概述

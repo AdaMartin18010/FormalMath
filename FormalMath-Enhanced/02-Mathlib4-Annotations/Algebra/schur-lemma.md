@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Schur引理 (Schur's Lemma)
 ---
-
 # Schur引理 (Schur's Lemma)
 
 ## Mathlib4 引用

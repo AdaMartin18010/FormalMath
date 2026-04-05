@@ -1,3 +1,8 @@
+---
+title: nLab高阶概念映射表
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # nLab高阶概念映射表
 
 **文档编号**: FM-ALIGN-NLAB-MAP-2026-04  

@@ -1,3 +1,8 @@
+---
+title: FormalMath 可视化组件库 v2.0
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 可视化组件库 v2.0
 
 FormalMath Interactive 高级可视化组件库，基于 React + TypeScript + D3.js 构建。

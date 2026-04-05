@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: FormalMath项目MSC编码标注冲刺 - 最终报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目MSC编码标注冲刺 - 最终报告
 
 **报告生成时间**: 2026年4月3日

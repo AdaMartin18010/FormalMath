@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: Motive理论对比矩阵
+processed_at: '2026-04-05'
 ---
-
 # Motive理论对比矩阵
 
 > **摘要**：本文档系统对比motive理论中的各类构造，包括Grothendieck motive、Chow motive、Nori motive、Voevodsky motive等，从构造方法、性质、关系和应用等多维度进行分析，帮助读者理解这一深刻统一理论的核心思想。

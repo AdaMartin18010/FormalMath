@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: How to Think about ABSTRACT ALGEBRA
+processed_at: '2026-04-05'
 ---
-
 # How to Think about ABSTRACT ALGEBRA
 
 ![](images/aac4751dcfcfc5454ab5843471404b08f18840a3b32a7b8709287c712027728a.jpg)

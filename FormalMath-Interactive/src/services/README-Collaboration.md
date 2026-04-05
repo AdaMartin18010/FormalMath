@@ -1,3 +1,8 @@
+---
+title: FormalMath-Interactive 协作功能 API 文档
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath-Interactive 协作功能 API 文档
 
 ## 概述

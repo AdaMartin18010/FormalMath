@@ -1,3 +1,8 @@
+---
+title: EnhancedD3Graph - 增强版知识图谱可视化组件
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # EnhancedD3Graph - 增强版知识图谱可视化组件
 
 高性能、可交互的知识图谱可视化组件，支持 5000+ 节点流畅渲染。

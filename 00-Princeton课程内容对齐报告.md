@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00-01"
+msc_primary: 97A99
+msc_secondary:
+- 00A05
+title: Princeton数学课程内容深度对齐报告
+processed_at: '2026-04-05'
 ---
-
 # Princeton数学课程内容深度对齐报告
 
 > **文档类型**: 国际权威课程深度对齐 · Princeton传统专项分析

@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['97-XX', '00-XX', '16-XX']
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+- 00A99
+- 16A99
+title: FormalMath参考文献格式标准 - 2025年1月
+processed_at: '2026-04-05'
 ---
-
 # FormalMath参考文献格式标准 - 2025年1月
 
 ## 📋 概述

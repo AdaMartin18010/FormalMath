@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['12Exx', '03-XX', '03Exx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 03E99
+- 00A99
+title: FormalMath项目全面改进推进报告 - 2025年11月12日第十四周进展
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目全面改进推进报告 - 2025年11月12日第十四周进展
 
 ## 📋 报告概述

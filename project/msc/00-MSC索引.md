@@ -1,3 +1,8 @@
+---
+title: FormalMath MSC 编码导航索引
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath MSC 编码导航索引
 
 **创建日期**: 2026年2月2日

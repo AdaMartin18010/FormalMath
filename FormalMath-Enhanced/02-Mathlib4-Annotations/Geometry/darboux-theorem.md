@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Darboux定理 (Darboux's Theorem)
 ---
-
 # Darboux定理 (Darboux's Theorem)
 
 ## Mathlib4 引用

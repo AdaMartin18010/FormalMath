@@ -1,8 +1,12 @@
 ---
-msc_primary: "20-XX"
-msc_secondary: ['16-XX', '20-XX', '55Nxx']
+msc_primary: 20A99
+msc_secondary:
+- 16A99
+- 20A99
+- 00A99
+title: Poincaré对偶 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Poincaré对偶 - 五种表征
 
 **创建日期**: 2025年12月1日

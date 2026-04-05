@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: ZFC公理体系 - Lean4形式化实现
+processed_at: '2026-04-05'
 ---
-
 <div class="language-switcher">
 
 **Languages**: **🇨🇳 中文** | [🇬🇧 English](../en/ZFC公理体系\Lean4形式化实现-ZFC公理体系.md)

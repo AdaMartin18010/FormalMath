@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 覆盖空间提升性质 (Covering Space Lifting Property)
 ---
-
 # 覆盖空间提升性质 (Covering Space Lifting Property)
 
 ## Mathlib4 引用

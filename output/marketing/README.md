@@ -1,7 +1,8 @@
 ---
 msc_primary: 00A99
+title: FormalMath 营销材料包
+processed_at: '2026-04-05'
 ---
-
 # FormalMath 营销材料包
 
 ## 📦 材料清单

@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: 'Part V: 未来方向 - 总览'
+processed_at: '2026-04-05'
 ---
-
 # Part V: 未来方向 - 总览
 
 Part V: Future Directions - Overview

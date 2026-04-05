@@ -1,3 +1,8 @@
+---
+title: FormalMath 安全策略
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 安全策略
 
 > 🔒 **我们重视安全**：如果您发现了安全问题，请负责任的披露

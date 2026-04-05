@@ -1,3 +1,8 @@
+---
+title: FormalMath 用户反馈系统
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 用户反馈系统
 
 ## 系统概述

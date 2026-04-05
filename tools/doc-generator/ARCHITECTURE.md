@@ -1,3 +1,8 @@
+---
+title: FormalMath 文档自动生成系统架构
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 文档自动生成系统架构
 
 ## 系统概述

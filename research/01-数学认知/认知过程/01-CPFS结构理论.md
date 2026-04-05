@@ -1,8 +1,10 @@
 ---
-msc_primary: "97C30"
-msc_secondary: "91E40"
+msc_primary: 97C30
+msc_secondary:
+- 91E40
+title: CPFS结构理论
+processed_at: '2026-04-05'
 ---
-
 # CPFS结构理论
 
 **创建日期**: 2025年12月1日

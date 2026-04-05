@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Lebesgue控制收敛定理 (Lebesgue Dominated Convergence Theorem)
 ---
-
 # Lebesgue控制收敛定理 (Lebesgue Dominated Convergence Theorem)
 
 ## Mathlib4 引用

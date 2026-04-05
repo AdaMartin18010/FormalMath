@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['12Exx', '26A42', '52-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 26A42
+- 52A99
+title: Stokes 定理求面积 - 工作示例
+processed_at: '2026-04-05'
 ---
-
 # Stokes 定理求面积 - 工作示例
 
 **类型**: 应用示例

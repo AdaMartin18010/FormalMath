@@ -1,7 +1,9 @@
 ---
-title: "Erlangen纲领核心思想：几何学的群论统一"
-msc_primary: "01A55"
-msc_secondary: ["51-03, 53-03"]
+title: Erlangen纲领核心思想：几何学的群论统一
+msc_primary: 01A55
+msc_secondary:
+- 00A99
+- 00A99
 processed_at: '2026-04-05'
 ---
 # Erlangen纲领核心思想：几何学的群论统一

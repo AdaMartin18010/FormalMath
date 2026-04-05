@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Cohen-Macaulay环
 ---
-
 # Cohen-Macaulay环
 
 ## Mathlib4 引用

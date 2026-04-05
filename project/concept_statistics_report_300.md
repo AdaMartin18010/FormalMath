@@ -1,3 +1,8 @@
+---
+title: FormalMath 概念图谱统计报告 (300概念)
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 概念图谱统计报告 (300概念)
 
 **生成日期**: 2026-04-04

@@ -1,3 +1,8 @@
+---
+title: Wikipedia离散数学对齐报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # Wikipedia离散数学对齐报告
 
 **创建日期**: 2026年4月4日  

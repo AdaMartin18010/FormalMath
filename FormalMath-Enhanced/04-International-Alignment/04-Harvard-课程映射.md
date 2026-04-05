@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Harvard 课程映射表
 ---
-
 # Harvard 课程映射表
 
 **版本**: v1.0

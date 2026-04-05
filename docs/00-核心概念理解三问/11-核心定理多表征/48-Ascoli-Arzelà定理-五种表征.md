@@ -1,8 +1,12 @@
 ---
-msc_primary: "12Fxx"
-msc_secondary: ['46-XX', '46Axx', '68Vxx']
+msc_primary: 00A99
+msc_secondary:
+- 46A99
+- 00A99
+- 00A99
+title: Ascoli-Arzelà定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Ascoli-Arzelà定理 - 五种表征
 
 **创建日期**: 2025年12月1日

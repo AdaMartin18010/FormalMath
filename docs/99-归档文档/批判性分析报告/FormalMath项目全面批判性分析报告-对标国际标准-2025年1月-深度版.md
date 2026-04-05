@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['03C90', '97-XX', '52-XX']
+msc_primary: 00A99
+msc_secondary:
+- 03C90
+- 97A99
+- 52A99
+title: 🎯 国际标准对齐分析
+processed_at: '2026-04-05'
 ---
-
 # 🎯 国际标准对齐分析
 
 ---

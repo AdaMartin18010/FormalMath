@@ -1,8 +1,10 @@
 ---
-msc_primary: "97C30"
-msc_secondary: "91E40"
+msc_primary: 97C30
+msc_secondary:
+- 91E40
+title: 01-数学认知
+processed_at: '2026-04-05'
 ---
-
 # 01-数学认知
 
 ## 目录说明

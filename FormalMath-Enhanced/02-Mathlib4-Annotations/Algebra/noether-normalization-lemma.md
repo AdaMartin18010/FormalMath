@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Noether正规化引理 (Noether Normalization Lemma)
 ---
-
 # Noether正规化引理 (Noether Normalization Lemma)
 
 ## Mathlib4 引用

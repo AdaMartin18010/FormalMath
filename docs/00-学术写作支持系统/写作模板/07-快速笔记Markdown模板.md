@@ -1,7 +1,8 @@
 ---
-msc_primary: "97U50"
+msc_primary: 97U50
+title: 快速笔记模板
+processed_at: '2026-04-05'
 ---
-
 # 快速笔记模板
 
 ## 元信息

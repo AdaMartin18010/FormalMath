@@ -1,3 +1,8 @@
+---
+title: FormalMath MSC2020编码补全报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath MSC2020编码补全报告
 
 ## 执行摘要

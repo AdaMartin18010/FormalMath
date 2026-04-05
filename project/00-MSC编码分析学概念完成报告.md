@@ -1,3 +1,8 @@
+---
+title: FormalMath 分析学概念MSC编码补全完成报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 分析学概念MSC编码补全完成报告
 
 **生成时间**: 2026-04-04  

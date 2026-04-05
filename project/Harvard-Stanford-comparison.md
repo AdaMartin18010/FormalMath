@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A99"
-msc_secondary: "97A99"
+msc_primary: 00A99
+msc_secondary:
+- 97A99
+title: Harvard与Stanford数学课程风格对比与FormalMath学习指南
+processed_at: '2026-04-05'
 ---
-
 # Harvard与Stanford数学课程风格对比与FormalMath学习指南
 
 **文档类型**：国际名校课程风格分析 · 个性化学习建议  

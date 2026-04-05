@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 最大模原理 (Maximum Modulus Principle)
 ---
-
 # 最大模原理 (Maximum Modulus Principle)
 
 ## Mathlib4 引用

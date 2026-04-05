@@ -1,12 +1,15 @@
 ---
-msc_primary: 26-XX
-msc_secondary: ['26A03', '40A05']
+msc_primary: 26A99
+msc_secondary:
+- 26A03
+- 40A05
 lang: de
 translation_status: completed
 translator: FormalMath i18n System
 date: 2026-04-04
+title: Grenzwert (Folge)
+processed_at: '2026-04-05'
 ---
-
 # Grenzwert (Folge)
 
 ## Definition

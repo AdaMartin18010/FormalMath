@@ -1,8 +1,10 @@
 ---
-msc_primary: "28A33"
-msc_secondary: ["46E30"]
+msc_primary: 28A33
+msc_secondary:
+- 46E30
+title: Radon-Nikodym定理 - 五种表征
+processed_at: '2026-04-05'
 ---
-
 # Radon-Nikodym定理 - 五种表征
 
 **创建日期**: 2025年12月1日

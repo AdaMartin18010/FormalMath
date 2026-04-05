@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: FormalMath 国际课程深度对齐模块
 ---
-
 # FormalMath 国际课程深度对齐模块
 
 **版本**: v1.0

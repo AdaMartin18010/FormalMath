@@ -1,8 +1,11 @@
 ---
-msc_primary: "26-XX"
-msc_secondary: "30-XX, 35-XX"
+msc_primary: 26A99
+msc_secondary:
+- 30A99
+- 35A99
+title: '**view00.md 文档结构全面分析**'
+processed_at: '2026-04-05'
 ---
-
 # **view00.md 文档结构全面分析**
 
 ---

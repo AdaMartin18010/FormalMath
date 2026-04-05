@@ -1,8 +1,10 @@
 ---
-msc_primary: "97C30"
-msc_secondary: "91E40"
+msc_primary: 97C30
+msc_secondary:
+- 91E40
+title: LIDA认知架构
+processed_at: '2026-04-05'
 ---
-
 # LIDA认知架构
 
 **创建日期**: 2025年12月1日

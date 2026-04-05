@@ -1,3 +1,8 @@
+---
+title: FormalMath - 生产部署检查清单
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath - 生产部署检查清单
 
 **版本**: v2.0.0  

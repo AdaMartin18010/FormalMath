@@ -1,3 +1,8 @@
+---
+title: FormalMath Kubernetes 部署文档
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Kubernetes 部署文档
 
 本文档描述如何在 Kubernetes 集群上部署 FormalMath 应用。

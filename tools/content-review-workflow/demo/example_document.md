@@ -5,8 +5,10 @@ category: 代数学
 subcategory: 群论
 created_date: 2024-01-15
 author: demo_author
+title: 群 (Group)
+msc_primary: 00A99
+processed_at: '2026-04-05'
 ---
-
 # 群 (Group)
 
 ## 定义

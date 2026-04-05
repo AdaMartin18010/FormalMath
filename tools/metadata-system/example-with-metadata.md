@@ -2,21 +2,43 @@
 title: 群论基础概念
 created_date: 2025-01-15
 version: 1.2.0
-msc_primary: 20-01
-msc_secondary: [20A05, 20B30]
+msc_primary: 00A99
+msc_secondary:
+- 20A05
+- 20B30
 category: 代数结构
 difficulty: L2
 depth_level: 深度扩展版
 author: FormalMath Team
-reviewers: [Senior Reviewer]
+reviewers:
+- Senior Reviewer
 status: published
 quality_score: 95
 completeness: complete
-related_concepts: [群, 子群, 同态, 同构, 正规子群, 商群]
-prerequisites: [集合论, 二元运算, 等价关系]
-next_topics: [Sylow定理, 群作用, 可解群]
-related_mathematicians: [伽罗瓦, 阿贝尔, 凯莱, 诺特]
-courses_mapped: [MIT 18.701, Harvard Math 122, Princeton MAT 345]
+related_concepts:
+- 群
+- 子群
+- 同态
+- 同构
+- 正规子群
+- 商群
+prerequisites:
+- 集合论
+- 二元运算
+- 等价关系
+next_topics:
+- Sylow定理
+- 群作用
+- 可解群
+related_mathematicians:
+- 伽罗瓦
+- 阿贝尔
+- 凯莱
+- 诺特
+courses_mapped:
+- MIT 18.701
+- Harvard Math 122
+- Princeton MAT 345
 word_count: 5200
 reading_time: 25
 has_proofs: true
@@ -24,20 +46,20 @@ has_examples: true
 has_exercises: true
 has_lean4: true
 has_visualization: false
-last_modified: 2025-04-03T10:30:00Z
+last_modified: 2025-04-03 10:30:00+00:00
 modification_history:
-  - date: 2025-01-15
-    version: 1.0.0
-    changes: 初始创建
-    author: FormalMath Team
-  - date: 2025-03-10
-    version: 1.1.0
-    changes: 添加Lean4形式化实现
-    author: FormalMath Team
-  - date: 2025-04-03
-    version: 1.2.0
-    changes: 补充证明细节，添加更多例子
-    author: FormalMath Team
+- date: 2025-01-15
+  version: 1.0.0
+  changes: 初始创建
+  author: FormalMath Team
+- date: 2025-03-10
+  version: 1.1.0
+  changes: 添加Lean4形式化实现
+  author: FormalMath Team
+- date: 2025-04-03
+  version: 1.2.0
+  changes: 补充证明细节，添加更多例子
+  author: FormalMath Team
 git_commit: a1b2c3d
 quality_checks:
   content_completeness: true
@@ -50,8 +72,8 @@ quality_checks:
   terminology_standard: true
 validated_by: Senior Reviewer
 validated_date: 2025-04-01
+processed_at: '2026-04-05'
 ---
-
 # 群论基础概念
 
 本文档介绍群论的基本概念，包括群的定义、子群、同态和同构等核心内容。

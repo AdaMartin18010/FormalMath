@@ -1,8 +1,10 @@
 ---
-msc_primary: ["00-01"]
-msc_secondary: ["97A99"]
+msc_primary: 00A05
+msc_secondary:
+- 97A99
+title: FormalMath与MIT OCW课程内容对齐任务完成总结
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与MIT OCW课程内容对齐任务完成总结
 
 **任务编号**: TASK-MIT-ALIGN-2026-04  

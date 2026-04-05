@@ -1,8 +1,12 @@
 ---
-msc_primary: "90Cxx"
-msc_secondary: ['49-XX', '65Kxx', '90-XX']
+msc_primary: 00A99
+msc_secondary:
+- 49A99
+- 00A99
+- 90A99
+title: 最优化 / Optimization
+processed_at: '2026-04-05'
 ---
-
 # 最优化 / Optimization
 
 **最后更新**: 2026年4月4日

@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00A35"
+msc_primary: 97A99
+msc_secondary:
+- 00A35
+title: 03-思脉
+processed_at: '2026-04-05'
 ---
-
 # 03-思脉
 
 ## 目录说明

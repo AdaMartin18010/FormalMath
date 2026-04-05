@@ -1,8 +1,12 @@
 ---
-msc_primary: "68V20"
-msc_secondary: ["03B35", "03B70", "68-XX"]
+msc_primary: 68V20
+msc_secondary:
+- 03B35
+- 03B70
+- 68A99
+title: FormalMath与Mathlib4对齐状态报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与Mathlib4对齐状态报告
 
 **报告日期**: 2026年4月3日  

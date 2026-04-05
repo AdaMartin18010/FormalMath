@@ -1,3 +1,8 @@
+---
+title: nLab对齐形式化建议
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # nLab对齐形式化建议
 
 **文档编号**: FM-ALIGN-NLAB-FORMAL-2026-04  

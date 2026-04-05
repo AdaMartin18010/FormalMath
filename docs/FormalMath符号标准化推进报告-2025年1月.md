@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['14Nxx', '26A42', '97-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 26A42
+- 97A99
+title: FormalMath符号标准化推进报告 - 2025年1月
+processed_at: '2026-04-05'
 ---
-
 # FormalMath符号标准化推进报告 - 2025年1月
 
 ## 📊 推进概况

@@ -1,8 +1,9 @@
 ---
 msc_primary: 00A99
 release_version: v1.0
+title: FormalMath v1.0 发布材料包
+processed_at: '2026-04-05'
 ---
-
 # FormalMath v1.0 发布材料包
 
 **发布日期**: 2026年4月4日  

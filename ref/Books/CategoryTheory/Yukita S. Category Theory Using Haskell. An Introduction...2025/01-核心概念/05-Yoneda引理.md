@@ -1,8 +1,10 @@
 ---
-msc_primary: "00A15"
-msc_secondary: "01A99"
+msc_primary: 00A15
+msc_secondary:
+- 01A99
+title: Yoneda引理 (Yoneda Lemma)
+processed_at: '2026-04-05'
 ---
-
 # Yoneda引理 (Yoneda Lemma)
 
 **创建日期**: 2025年12月11日

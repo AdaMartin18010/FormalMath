@@ -1,11 +1,14 @@
 ---
 name: 📚 文档改进
 about: 建议改进文档、添加新文档或修正文档错误
-title: '[Docs] '
-labels: ['documentation', 'needs-triage']
+title: '[Docs]'
+labels:
+- documentation
+- needs-triage
 assignees: []
+msc_primary: 00A99
+processed_at: '2026-04-05'
 ---
-
 ## 📚 文档改进类型
 
 <!-- 请选择文档改进的类型 -->

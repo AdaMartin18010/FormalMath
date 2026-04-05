@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 认知诊断系统 (Cognitive Diagnosis System)
 ---
-
 # 认知诊断系统 (Cognitive Diagnosis System)
 
 FormalMath 项目 T2.1 组件 - 基于 HCD（层级认知诊断）框架的智能诊断系统。

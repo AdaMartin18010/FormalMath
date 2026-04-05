@@ -1,3 +1,8 @@
+---
+title: FormalMath Translation Workflow
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath Translation Workflow
 
 翻译协作流程指南

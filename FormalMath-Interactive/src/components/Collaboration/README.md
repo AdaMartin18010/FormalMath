@@ -1,3 +1,8 @@
+---
+title: FormalMath-Interactive 实时协作编辑功能
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath-Interactive 实时协作编辑功能
 
 ## 功能概述

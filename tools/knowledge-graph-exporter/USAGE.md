@@ -1,3 +1,8 @@
+---
+title: FormalMath 知识图谱导出工具使用文档
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 知识图谱导出工具使用文档
 
 ## 概述

@@ -1,8 +1,11 @@
 ---
 msc_primary: 00A99
-msc_secondary: [00A05, 00A06]
+msc_secondary:
+- 00A05
+- 00A06
+title: FormalMath与MathWorld概念定义差异表
+processed_at: '2026-04-05'
 ---
-
 # FormalMath与MathWorld概念定义差异表
 
 **文档版本**: v1.0  

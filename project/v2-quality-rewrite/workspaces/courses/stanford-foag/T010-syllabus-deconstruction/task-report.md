@@ -1,3 +1,8 @@
+---
+title: 'T010: Stanford FOAG Syllabus Deconstruction — Task Report'
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # T010: Stanford FOAG Syllabus Deconstruction — Task Report
 
 **Task:** Complete structural deconstruction of Ravi Vakil's *Foundations of Algebraic Geometry* (FOAG) into a structured YAML syllabus.

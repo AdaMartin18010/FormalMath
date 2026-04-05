@@ -1,3 +1,8 @@
+---
+title: FormalMath - Lean4形式化数学库
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath - Lean4形式化数学库
 
 FormalMath项目是一个系统性的数学定理形式化工程，使用Lean4/Mathlib4构建。

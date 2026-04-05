@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: 特征标正交性定理
 ---
-
 # 特征标正交性定理
 
 ## Mathlib4 引用

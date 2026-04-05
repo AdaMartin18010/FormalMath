@@ -1,3 +1,8 @@
+---
+title: FormalMath实战问题更新建议
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath实战问题更新建议
 
 **基于Math Stack Exchange高赞问答分析的改进建议**  

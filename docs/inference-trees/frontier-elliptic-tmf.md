@@ -1,6 +1,9 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+title: 椭圆上同调：拓扑模形式推理树
+processed_at: '2026-04-05'
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-XX']

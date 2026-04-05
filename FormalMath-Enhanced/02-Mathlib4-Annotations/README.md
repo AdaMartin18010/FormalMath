@@ -1,8 +1,8 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-03'
+title: Mathlib4 教育注释模块
 ---
-
 # Mathlib4 教育注释模块
 
 ## 项目简介

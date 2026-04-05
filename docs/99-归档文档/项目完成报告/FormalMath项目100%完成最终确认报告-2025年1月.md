@@ -1,8 +1,12 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['14Nxx', '12Exx', '13Cxx']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 00A99
+- 00A99
+title: FormalMath项目100%完成最终确认报告
+processed_at: '2026-04-05'
 ---
-
 # FormalMath项目100%完成最终确认报告
 
 ## 📊 项目完成概况

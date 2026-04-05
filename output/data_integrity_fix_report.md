@@ -1,3 +1,8 @@
+---
+title: FormalMath 数据完整性修复报告
+msc_primary: 00A99
+processed_at: '2026-04-05'
+---
 # FormalMath 数据完整性修复报告
 
 **修复时间**: 2026-04-05 09:17:49

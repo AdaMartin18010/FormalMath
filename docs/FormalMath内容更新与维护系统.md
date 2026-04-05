@@ -1,6 +1,11 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['12Exx', '03B35', '03B40']
+msc_primary: 00A99
+msc_secondary:
+- 00A99
+- 03B35
+- 03B40
+title: FormalMath内容更新与维护系统
+processed_at: '2026-04-05'
 ---
 msc_primary: "00A99"
 msc_secondary: ['12Exx', '03B35', '03B40']

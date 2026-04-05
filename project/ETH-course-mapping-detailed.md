@@ -1,8 +1,10 @@
 ---
-msc_primary: "97A99"
-msc_secondary: "00-01"
+msc_primary: 97A99
+msc_secondary:
+- 00A05
+title: ETH Zurich 核心课程与 FormalMath 逐章节详细映射
+processed_at: '2026-04-05'
 ---
-
 # ETH Zurich 核心课程与 FormalMath 逐章节详细映射
 
 **文档类型**：国际权威课程对齐 · 章节级详细对应
