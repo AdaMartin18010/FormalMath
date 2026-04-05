@@ -1,19 +1,11 @@
 {
-  "total_links": 7898,
-  "broken_links": 274,
+  "total_links": 7682,
+  "broken_links": 160,
   "links": [
     {
       "type": "markdown",
-      "text": "../05-数论/",
-      "url": "../05-数论/",
-      "line": 149,
-      "file": "docs/05-数论\\07-深度扩展\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "../04-抽象代数/",
-      "url": "../04-抽象代数/",
+      "text": "../02-代数结构/",
+      "url": "../02-代数结构/",
       "line": 150,
       "file": "docs/05-数论\\07-深度扩展\\00-README.md",
       "status": "not_found"
@@ -28,32 +20,16 @@
     },
     {
       "type": "markdown",
-      "text": "../02-代数结构/02-核心理论/代数几何/",
-      "url": "../02-代数结构/02-核心理论/代数几何/",
+      "text": "../04-几何与拓扑/",
+      "url": "../04-几何与拓扑/02-代数拓扑/",
       "line": 152,
       "file": "docs/05-数论\\07-深度扩展\\00-README.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "07-概率论在数学中的应用-深度扩展版.md",
-      "url": "./06-概率论与统计/01-概率论基础在数学中的应用-深度扩展版.md",
-      "line": 263,
-      "file": "docs/06-概率论与统计\\01-概率论基础\\05-布朗运动与随机微积分-深度扩展版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "07-概率论在数学中的应用-深度扩展版.md",
-      "url": "./06-概率论与统计/01-概率论基础在数学中的应用-深度扩展版.md",
-      "line": 244,
-      "file": "docs/06-概率论与统计\\01-概率论基础\\06-极限定理-深度扩展版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "09-形式化证明",
-      "url": "../09-形式化证明/",
+      "url": "../07-数理逻辑/",
       "line": 111,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -61,7 +37,7 @@
     {
       "type": "markdown",
       "text": "10-语义模型",
-      "url": "../10-语义模型/",
+      "url": "../07-数理逻辑/",
       "line": 112,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -69,7 +45,7 @@
     {
       "type": "markdown",
       "text": "00-数学基础",
-      "url": "../00-数学基础/",
+      "url": "../07-数理逻辑/",
       "line": 232,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -77,7 +53,7 @@
     {
       "type": "markdown",
       "text": "13-图论",
-      "url": "../13-图论/",
+      "url": "../09-组合数学与离散数学/02-图论/",
       "line": 240,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -85,7 +61,7 @@
     {
       "type": "markdown",
       "text": "05-拓扑学",
-      "url": "../04-几何与拓扑/03-拓扑学内容/",
+      "url": "../04-几何与拓扑/",
       "line": 241,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -93,7 +69,7 @@
     {
       "type": "markdown",
       "text": "09-形式化证明/",
-      "url": "../09-形式化证明/",
+      "url": "../07-数理逻辑/",
       "line": 248,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -101,7 +77,7 @@
     {
       "type": "markdown",
       "text": "04-抽象代数/",
-      "url": "../04-抽象代数/",
+      "url": "../02-代数结构/",
       "line": 256,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -109,7 +85,7 @@
     {
       "type": "markdown",
       "text": "11-概率论",
-      "url": "../11-概率论/",
+      "url": "../06-概率论与统计/",
       "line": 257,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -117,7 +93,7 @@
     {
       "type": "markdown",
       "text": "项目索引",
-      "url": "../项目索引.md",
+      "url": "../../INDEX.md",
       "line": 280,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -125,7 +101,7 @@
     {
       "type": "markdown",
       "text": "文档格式规范",
-      "url": "../FormalMath文档格式规范-2025年12月.md",
+      "url": "../../docs/README.md",
       "line": 281,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -133,7 +109,7 @@
     {
       "type": "markdown",
       "text": "09-形式化证明",
-      "url": "../09-形式化证明/",
+      "url": "../07-数理逻辑/",
       "line": 282,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -141,7 +117,7 @@
     {
       "type": "markdown",
       "text": "10-语义模型",
-      "url": "../10-语义模型/",
+      "url": "../07-数理逻辑/",
       "line": 283,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -149,7 +125,7 @@
     {
       "type": "markdown",
       "text": "14-自动机理论",
-      "url": "../14-自动机理论/",
+      "url": "../09-组合数学与离散数学/",
       "line": 284,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
@@ -157,23 +133,15 @@
     {
       "type": "markdown",
       "text": "应用案例库",
-      "url": "../应用案例库/",
+      "url": "../00-README.md",
       "line": 285,
       "file": "docs/07-数理逻辑\\01-基础内容\\00-README.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "t_1, \\ldots, t_n",
-      "url": "s",
-      "line": 193,
-      "file": "docs/07-数理逻辑\\01-基础内容\\02-谓词逻辑.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "集合论基础",
-      "url": "../01-基础数学/集合论/01-集合论基础.md",
+      "url": "../07-数理逻辑/01-集合论/01-基础概念.md",
       "line": 344,
       "file": "docs/07-数理逻辑\\01-基础内容\\04-直觉逻辑.md",
       "status": "not_found"
@@ -181,7 +149,7 @@
     {
       "type": "markdown",
       "text": "类型论",
-      "url": "../10-语义模型/05-类型论语义.md",
+      "url": "../07-数理逻辑/05-类型论/00-README.md",
       "line": 349,
       "file": "docs/07-数理逻辑\\01-基础内容\\04-直觉逻辑.md",
       "status": "not_found"
@@ -189,7 +157,7 @@
     {
       "type": "markdown",
       "text": "构造性数学",
-      "url": "../11-高级数学/构造性数学.md",
+      "url": "../07-数理逻辑/01-基础内容/04-直觉逻辑.md",
       "line": 350,
       "file": "docs/07-数理逻辑\\01-基础内容\\04-直觉逻辑.md",
       "status": "not_found"
@@ -197,7 +165,7 @@
     {
       "type": "markdown",
       "text": "集合论基础",
-      "url": "../01-基础数学/集合论/01-集合论基础.md",
+      "url": "../07-数理逻辑/01-集合论/01-基础概念.md",
       "line": 372,
       "file": "docs/07-数理逻辑\\01-基础内容\\05-多值逻辑.md",
       "status": "not_found"
@@ -205,7 +173,7 @@
     {
       "type": "markdown",
       "text": "概率论",
-      "url": "../12-应用数学/概率论.md",
+      "url": "../06-概率论与统计/00-README.md",
       "line": 377,
       "file": "docs/07-数理逻辑\\01-基础内容\\05-多值逻辑.md",
       "status": "not_found"
@@ -213,135 +181,23 @@
     {
       "type": "markdown",
       "text": "人工智能数学",
-      "url": "../11-高级数学/人工智能数学.md",
+      "url": "../11-高级数学/33-人工智能数学-深化版.md",
       "line": 378,
       "file": "docs/07-数理逻辑\\01-基础内容\\05-多值逻辑.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "02-线性代数/",
-      "url": "../02-线性代数/",
-      "line": 256,
+      "text": "应用案例库",
+      "url": "../00-README.md",
+      "line": 331,
       "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "12-应用数学/",
-      "url": "../12-应用数学/",
-      "line": 257,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "02-线性代数/",
-      "url": "../02-线性代数/",
-      "line": 264,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "11-概率论/",
-      "url": "../11-概率论/",
-      "line": 267,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "07-算法与数据结构/",
-      "url": "../07-算法与数据结构/",
-      "line": 273,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "02-线性代数/",
-      "url": "../02-线性代数/",
-      "line": 275,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "11-概率论/",
-      "url": "../11-概率论/",
-      "line": 283,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "07-算法与数据结构/",
-      "url": "../07-算法与数据结构/",
-      "line": 290,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "04-抽象代数/",
-      "url": "../04-抽象代数/",
-      "line": 299,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "07-算法与数据结构/",
-      "url": "../07-算法与数据结构/",
-      "line": 301,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "02-线性代数",
-      "url": "../02-线性代数/",
-      "line": 328,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "12-应用数学",
-      "url": "../12-应用数学/",
-      "line": 329,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "07-算法与数据结构",
-      "url": "../07-算法与数据结构/",
-      "line": 330,
-      "file": "docs/08-计算数学\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "x_0, x_1",
-      "url": "x - x_0",
-      "line": 249,
-      "file": "docs/08-计算数学\\01-数值分析.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "x_0, \\ldots, x_n",
-      "url": "x - x_0",
-      "line": 249,
-      "file": "docs/08-计算数学\\01-数值分析.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
       "text": "线性代数",
-      "url": "../02-代数结构/线性代数.md",
+      "url": "../02-代数结构/03-线性代数/00-README.md",
       "line": 504,
       "file": "docs/08-计算数学\\03-优化算法.md",
       "status": "not_found"
@@ -349,71 +205,15 @@
     {
       "type": "markdown",
       "text": "微积分",
-      "url": "../03-分析学/微积分.md",
+      "url": "../03-分析学/01-实分析/00-README.md",
       "line": 505,
       "file": "docs/08-计算数学\\03-优化算法.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "机器学习数学",
-      "url": "../11-高级数学/机器学习数学.md",
-      "line": 511,
-      "file": "docs/08-计算数学\\03-优化算法.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "算法理论",
-      "url": "../11-高级数学/算法理论.md",
-      "line": 478,
-      "file": "docs/08-计算数学\\04-并行计算.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "量子计算",
-      "url": "../11-高级数学/量子计算.md",
-      "line": 483,
-      "file": "docs/08-计算数学\\04-并行计算.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "分布式系统",
-      "url": "../12-应用数学/分布式系统.md",
-      "line": 484,
-      "file": "docs/08-计算数学\\04-并行计算.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "代数结构",
-      "url": "../02-代数结构/代数结构.md",
-      "line": 701,
-      "file": "docs/08-计算数学\\05-符号计算.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "人工智能数学",
-      "url": "../11-高级数学/人工智能数学.md",
-      "line": 706,
-      "file": "docs/08-计算数学\\05-符号计算.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "计算机代数",
-      "url": "../11-高级数学/计算机代数.md",
-      "line": 707,
-      "file": "docs/08-计算数学\\05-符号计算.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "层论基础-深度版",
-      "url": "层论基础-深度版.md",
+      "url": "../11-高级数学/层论基础-深度版.md",
       "line": 281,
       "file": "docs/08-计算数学\\偏微分方程数值解-深度版.md",
       "status": "not_found"
@@ -421,7 +221,7 @@
     {
       "type": "markdown",
       "text": "导出代数几何-深度版",
-      "url": "导出代数几何-深度版.md",
+      "url": "../11-高级数学/导出代数几何.md",
       "line": 282,
       "file": "docs/08-计算数学\\偏微分方程数值解-深度版.md",
       "status": "not_found"
@@ -429,55 +229,23 @@
     {
       "type": "markdown",
       "text": "强化学习",
-      "url": "强化学习.md",
+      "url": "../10-应用数学/强化学习.md",
       "line": 261,
       "file": "docs/08-计算数学\\动态规划-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "最优控制",
-      "url": "最优控制.md",
-      "line": 262,
-      "file": "docs/08-计算数学\\动态规划-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "层论基础-深度版",
-      "url": "层论基础-深度版.md",
+      "url": "../11-高级数学/层论基础-深度版.md",
       "line": 265,
       "file": "docs/08-计算数学\\动态规划-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "无穷范畴-深度版",
-      "url": "无穷范畴-深度版.md",
-      "line": 266,
-      "file": "docs/08-计算数学\\动态规划-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "组合优化",
-      "url": "组合优化.md",
-      "line": 289,
-      "file": "docs/08-计算数学\\图算法-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "网络流理论",
-      "url": "网络流理论.md",
-      "line": 290,
-      "file": "docs/08-计算数学\\图算法-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "算法复杂度",
-      "url": "../01-基础数学/算法复杂度理论.md",
+      "url": "../09-组合数学与离散数学/计算复杂性理论.md",
       "line": 291,
       "file": "docs/08-计算数学\\图算法-深度版.md",
       "status": "not_found"
@@ -485,23 +253,15 @@
     {
       "type": "markdown",
       "text": "热带几何",
-      "url": "../04-几何与拓扑/01-几何学基础/热带几何.md",
+      "url": "../04-几何与拓扑/热带几何.md",
       "line": 294,
       "file": "docs/08-计算数学\\图算法-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "概形理论-深度版",
-      "url": "概形理论-深度版.md",
-      "line": 295,
-      "file": "docs/08-计算数学\\图算法-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "辛几何",
-      "url": "../04-几何与拓扑/01-几何学基础/辛几何-增强版.md",
+      "url": "../04-几何与拓扑/辛几何.md",
       "line": 346,
       "file": "docs/08-计算数学\\常微分方程数值解-深度版.md",
       "status": "not_found"
@@ -509,7 +269,7 @@
     {
       "type": "markdown",
       "text": "导出代数几何-深度版",
-      "url": "导出代数几何-深度版.md",
+      "url": "../11-高级数学/导出代数几何.md",
       "line": 349,
       "file": "docs/08-计算数学\\常微分方程数值解-深度版.md",
       "status": "not_found"
@@ -517,31 +277,15 @@
     {
       "type": "markdown",
       "text": "层论基础-深度版",
-      "url": "层论基础-深度版.md",
+      "url": "../11-高级数学/层论基础-深度版.md",
       "line": 350,
       "file": "docs/08-计算数学\\常微分方程数值解-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "多项式计算",
-      "url": "多项式计算.md",
-      "line": 272,
-      "file": "docs/08-计算数学\\快速傅里叶变换-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "量子计算",
-      "url": "量子计算基础.md",
-      "line": 273,
-      "file": "docs/08-计算数学\\快速傅里叶变换-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "有限域理论",
-      "url": "../05-数论/有限域理论.md",
+      "url": "../05-数论/有限域.md",
       "line": 276,
       "file": "docs/08-计算数学\\快速傅里叶变换-深度版.md",
       "status": "not_found"
@@ -549,7 +293,7 @@
     {
       "type": "markdown",
       "text": "层论基础-深度版",
-      "url": "层论基础-深度版.md",
+      "url": "../11-高级数学/层论基础-深度版.md",
       "line": 277,
       "file": "docs/08-计算数学\\快速傅里叶变换-深度版.md",
       "status": "not_found"
@@ -557,7 +301,7 @@
     {
       "type": "markdown",
       "text": "插值理论",
-      "url": "插值理论-深度版.md",
+      "url": "../03-分析学/03-插值理论-深度版.md",
       "line": 287,
       "file": "docs/08-计算数学\\数值积分方法-深度版.md",
       "status": "not_found"
@@ -565,7 +309,7 @@
     {
       "type": "markdown",
       "text": "正交多项式",
-      "url": "../02-代数结构/02-核心理论/正交多项式理论.md",
+      "url": "../03-分析学/正交多项式.md",
       "line": 289,
       "file": "docs/08-计算数学\\数值积分方法-深度版.md",
       "status": "not_found"
@@ -573,63 +317,31 @@
     {
       "type": "markdown",
       "text": "层论基础-深度版",
-      "url": "层论基础-深度版.md",
+      "url": "../11-高级数学/层论基础-深度版.md",
       "line": 292,
       "file": "docs/08-计算数学\\数值积分方法-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "概形理论-深度版",
-      "url": "概形理论-深度版.md",
-      "line": 293,
-      "file": "docs/08-计算数学\\数值积分方法-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "QR分解与算法",
-      "url": "qr分解与算法.md",
-      "line": 252,
-      "file": "docs/08-计算数学\\特征值计算-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "量子力学中的谱理论",
-      "url": "量子力学谱理论.md",
+      "url": "../03-分析学/02-泛函分析/00-README.md",
       "line": 253,
       "file": "docs/08-计算数学\\特征值计算-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "概形理论-深度版",
-      "url": "概形理论-深度版.md",
-      "line": 256,
-      "file": "docs/08-计算数学\\特征值计算-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "etale上同调-深度版",
-      "url": "etale上同调-深度版.md",
+      "url": "../04-几何与拓扑/etale-cohomology.md",
       "line": 257,
       "file": "docs/08-计算数学\\特征值计算-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "稀疏矩阵技术",
-      "url": "稀疏矩阵技术.md",
-      "line": 279,
-      "file": "docs/08-计算数学\\矩阵计算-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "层论基础-深度版",
-      "url": "层论基础-深度版.md",
+      "url": "../11-高级数学/层论基础-深度版.md",
       "line": 282,
       "file": "docs/08-计算数学\\矩阵计算-深度版.md",
       "status": "not_found"
@@ -637,255 +349,119 @@
     {
       "type": "markdown",
       "text": "导出代数几何-深度版",
-      "url": "导出代数几何-深度版.md",
+      "url": "../11-高级数学/导出代数几何.md",
       "line": 283,
       "file": "docs/08-计算数学\\矩阵计算-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "凸优化理论",
-      "url": "凸优化理论.md",
-      "line": 274,
-      "file": "docs/08-计算数学\\线性规划-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "整数规划",
-      "url": "整数规划.md",
-      "line": 275,
-      "file": "docs/08-计算数学\\线性规划-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "热带几何",
-      "url": "../04-几何与拓扑/01-几何学基础/热带几何.md",
+      "url": "../04-几何与拓扑/热带几何.md",
       "line": 278,
       "file": "docs/08-计算数学\\线性规划-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "概形理论-深度版",
-      "url": "概形理论-深度版.md",
-      "line": 279,
-      "file": "docs/08-计算数学\\线性规划-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "统计物理应用",
-      "url": "统计物理数值方法.md",
-      "line": 264,
-      "file": "docs/08-计算数学\\蒙特卡洛方法-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "l-adic上同调",
-      "url": "etale上同调-深度版.md",
+      "url": "../04-几何与拓扑/etale-cohomology.md",
       "line": 267,
       "file": "docs/08-计算数学\\蒙特卡洛方法-深度版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "随机矩阵理论",
-      "url": "../02-代数结构/随机矩阵理论.md",
-      "line": 268,
-      "file": "docs/08-计算数学\\蒙特卡洛方法-深度版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "y^{n-1}",
-      "url": "1+y",
-      "line": 63,
-      "file": "docs/09-组合数学与离散数学\\01-组合数学\\31.01-计数组合学\\02-核心定理.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "x^{10}",
-      "url": "-x^4",
-      "line": 91,
-      "file": "docs/09-组合数学与离散数学\\01-组合数学\\31.01-计数组合学\\03-实战问题.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "x^{10}",
-      "url": "-x^5",
-      "line": 92,
-      "file": "docs/09-组合数学与离散数学\\01-组合数学\\31.01-计数组合学\\03-实战问题.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "x^{10}",
-      "url": "-x^6",
-      "line": 93,
-      "file": "docs/09-组合数学与离散数学\\01-组合数学\\31.01-计数组合学\\03-实战问题.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "随机过程",
-      "url": "03-随机过程.md",
-      "line": 634,
-      "file": "docs/10-应用数学\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "数理统计",
-      "url": "04-数理统计.md",
-      "line": 635,
-      "file": "docs/10-应用数学\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "时间序列分析",
-      "url": "05-时间序列分析.md",
+      "url": "../06-概率论与统计/04-时间序列分析/00-README.md",
       "line": 636,
       "file": "docs/10-应用数学\\01-概率论.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "随机过程",
-      "url": "03-随机过程.md",
-      "line": 744,
-      "file": "docs/10-应用数学\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "数理统计",
-      "url": "04-数理统计.md",
-      "line": 745,
-      "file": "docs/10-应用数学\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "时间序列分析",
-      "url": "05-时间序列分析.md",
+      "url": "../06-概率论与统计/04-时间序列分析/00-README.md",
       "line": 746,
       "file": "docs/10-应用数学\\02-统计学.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "S",
-      "url": "t",
-      "line": 193,
-      "file": "docs/10-应用数学\\02-药物动力学数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "S",
-      "url": "t",
-      "line": 193,
-      "file": "docs/10-应用数学\\02-药物动力学数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "S",
-      "url": "t",
-      "line": 193,
-      "file": "docs/10-应用数学\\02-药物动力学数学-深化版.md",
+      "text": "微分方程",
+      "url": "../03-分析学/03-微分方程/00-README.md",
+      "line": 699,
+      "file": "docs/10-应用数学\\04-控制论.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
       "text": "线性代数",
-      "url": "../02-代数结构/环论/02-环论.md",
+      "url": "../02-代数结构/02-环论/00-README.md",
       "line": 701,
       "file": "docs/10-应用数学\\04-控制论.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
+      "text": "微分方程",
+      "url": "../03-分析学/03-微分方程/00-README.md",
+      "line": 720,
+      "file": "docs/10-应用数学\\04-控制论.md",
+      "status": "not_found"
+    },
+    {
+      "type": "markdown",
       "text": "线性代数",
-      "url": "../02-代数结构/环论/02-环论.md",
+      "url": "../02-代数结构/02-环论/00-README.md",
       "line": 722,
       "file": "docs/10-应用数学\\04-控制论.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "随机过程",
-      "url": "03-随机过程.md",
-      "line": 677,
-      "file": "docs/10-应用数学\\06-机器学习数学基础.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "数理统计",
-      "url": "04-数理统计.md",
-      "line": 678,
-      "file": "docs/10-应用数学\\06-机器学习数学基础.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "时间序列分析",
-      "url": "05-时间序列分析.md",
+      "url": "../06-概率论与统计/04-时间序列分析/00-README.md",
       "line": 679,
       "file": "docs/10-应用数学\\06-机器学习数学基础.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "-1",
-      "url": "x",
-      "line": 1120,
-      "file": "docs/10-应用数学\\06-机器学习数学基础.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s, a",
-      "url": "R(s, a, s'",
-      "line": 343,
+      "text": "深度学习基础",
+      "url": "../03-分析学/01-实分析/00-README.md",
+      "line": 1139,
       "file": "docs/10-应用数学\\07-人工智能数学-深化版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "s'|s, a",
-      "url": "R(s, a, s'",
-      "line": 346,
-      "file": "docs/10-应用数学\\07-人工智能数学-深化版.md",
+      "text": "图论基础",
+      "url": "../04-几何与拓扑/03-拓扑学/00-README.md",
+      "line": 1344,
+      "file": "docs/10-应用数学\\09-网络科学数学-深化版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "s'|s, a",
-      "url": "R(s, a, s'",
-      "line": 357,
-      "file": "docs/10-应用数学\\07-人工智能数学-深化版.md",
+      "text": "拓扑学基础",
+      "url": "../04-几何与拓扑/03-拓扑学/00-README.md",
+      "line": 1551,
+      "file": "docs/10-应用数学\\12-计算几何数学-深化版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "-E_a/k_B T",
-      "url": "1 - \\exp(-\\Delta G/k_B T",
-      "line": 1233,
-      "file": "docs/10-应用数学\\11-物理数学-深化版.md",
+      "text": "自动定理证明",
+      "url": "../07-数理逻辑/可计算性理论/00-README.md",
+      "line": 1081,
+      "file": "docs/10-应用数学\\14-量子计算数学-深化版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
       "text": "项目索引",
-      "url": "../项目索引.md",
+      "url": "../../INDEX.md",
       "line": 29,
       "file": "docs/10-应用数学\\01-核心内容\\00-README.md",
       "status": "not_found"
@@ -893,7 +469,7 @@
     {
       "type": "markdown",
       "text": "文档格式规范",
-      "url": "../FormalMath文档格式规范-2025年12月.md",
+      "url": "../../docs/README.md",
       "line": 30,
       "file": "docs/10-应用数学\\01-核心内容\\00-README.md",
       "status": "not_found"
@@ -901,7 +477,7 @@
     {
       "type": "markdown",
       "text": "随机过程",
-      "url": "03-随机过程.md",
+      "url": "../06-概率论与统计/02-随机过程/00-README.md",
       "line": 634,
       "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
       "status": "not_found"
@@ -909,7 +485,7 @@
     {
       "type": "markdown",
       "text": "数理统计",
-      "url": "04-数理统计.md",
+      "url": "../06-概率论与统计/03-数理统计/00-README.md",
       "line": 635,
       "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
       "status": "not_found"
@@ -917,111 +493,15 @@
     {
       "type": "markdown",
       "text": "时间序列分析",
-      "url": "05-时间序列分析.md",
+      "url": "../06-概率论与统计/04-时间序列分析/00-README.md",
       "line": 636,
       "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "概率分布可视化",
-      "url": "../交互式图表增强-2025年1月.md#概率分布可视化器",
-      "line": 837,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "随机过程模拟器",
-      "url": "../交互式图表增强-2025年1月.md#随机过程模拟器",
-      "line": 838,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "蒙特卡洛实验",
-      "url": "../交互式图表增强-2025年1月.md#蒙特卡洛实验器",
-      "line": 839,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "大数定律证明",
-      "url": "../定理证明补充-2025年1月.md#大数定律证明",
-      "line": 843,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "中心极限定理证明",
-      "url": "../定理证明补充-2025年1月.md#中心极限定理证明",
-      "line": 844,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "贝叶斯定理证明",
-      "url": "../定理证明补充-2025年1月.md#贝叶斯定理证明",
-      "line": 845,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "大数定律失效反例",
-      "url": "../反例与特殊情况补充-2025年1月.md#大数定律失效反例",
-      "line": 849,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "病态概率分布构造",
-      "url": "../反例与特殊情况补充-2025年1月.md#病态概率分布构造",
-      "line": 850,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "随机过程反例",
-      "url": "../反例与特殊情况补充-2025年1月.md#随机过程反例",
-      "line": 851,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "概率论发展史",
-      "url": "../历史背景补充-2025年1月.md#概率论发展史",
-      "line": 855,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "重要数学家贡献",
-      "url": "../历史背景补充-2025年1月.md#概率论重要人物",
-      "line": 856,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "现代概率论发展",
-      "url": "../历史背景补充-2025年1月.md#现代概率论发展",
-      "line": 857,
-      "file": "docs/10-应用数学\\01-核心内容\\01-概率论.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "随机过程",
-      "url": "03-随机过程.md",
+      "url": "../06-概率论与统计/02-随机过程/00-README.md",
       "line": 744,
       "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
       "status": "not_found"
@@ -1029,7 +509,7 @@
     {
       "type": "markdown",
       "text": "数理统计",
-      "url": "04-数理统计.md",
+      "url": "../06-概率论与统计/03-数理统计/00-README.md",
       "line": 745,
       "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
       "status": "not_found"
@@ -1037,135 +517,15 @@
     {
       "type": "markdown",
       "text": "时间序列分析",
-      "url": "05-时间序列分析.md",
+      "url": "../06-概率论与统计/04-时间序列分析/00-README.md",
       "line": 746,
       "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "统计分布可视化",
-      "url": "../交互式图表增强-2025年1月.md#统计分布可视化器",
-      "line": 803,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "假设检验演示器",
-      "url": "../交互式图表增强-2025年1月.md#假设检验演示器",
-      "line": 804,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "回归分析工具",
-      "url": "../交互式图表增强-2025年1月.md#回归分析工具",
-      "line": 805,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "中心极限定理证明",
-      "url": "../定理证明补充-2025年1月.md#中心极限定理证明",
-      "line": 809,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "Fisher信息量定理",
-      "url": "../定理证明补充-2025年1月.md#Fisher信息量定理",
-      "line": 810,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "Neyman-Pearson引理",
-      "url": "../定理证明补充-2025年1月.md#Neyman-Pearson引理",
-      "line": 811,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "统计推断失效反例",
-      "url": "../反例与特殊情况补充-2025年1月.md#统计推断失效反例",
-      "line": 815,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "病态数据分布构造",
-      "url": "../反例与特殊情况补充-2025年1月.md#病态数据分布构造",
-      "line": 816,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "假设检验错误案例",
-      "url": "../反例与特殊情况补充-2025年1月.md#假设检验错误案例",
-      "line": 817,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "统计学发展史",
-      "url": "../历史背景补充-2025年1月.md#统计学发展史",
-      "line": 821,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "重要统计学家贡献",
-      "url": "../历史背景补充-2025年1月.md#统计学重要人物",
-      "line": 822,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "现代统计学发展",
-      "url": "../历史背景补充-2025年1月.md#现代统计学发展",
-      "line": 823,
-      "file": "docs/10-应用数学\\01-核心内容\\02-统计学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "S",
-      "url": "t",
-      "line": 193,
-      "file": "docs/10-应用数学\\01-核心内容\\02-药物动力学数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "S",
-      "url": "t",
-      "line": 193,
-      "file": "docs/10-应用数学\\01-核心内容\\02-药物动力学数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "S",
-      "url": "t",
-      "line": 193,
-      "file": "docs/10-应用数学\\01-核心内容\\02-药物动力学数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "优化理论",
-      "url": "../08-计算数学/02-优化理论.md",
+      "url": "../08-计算数学/02-优化理论-增强版.md",
       "line": 784,
       "file": "docs/10-应用数学\\01-核心内容\\03-运筹学.md",
       "status": "not_found"
@@ -1173,7 +533,7 @@
     {
       "type": "markdown",
       "text": "优化理论",
-      "url": "../08-计算数学/02-优化理论.md",
+      "url": "../08-计算数学/02-优化理论-增强版.md",
       "line": 805,
       "file": "docs/10-应用数学\\01-核心内容\\03-运筹学.md",
       "status": "not_found"
@@ -1181,7 +541,7 @@
     {
       "type": "markdown",
       "text": "微分方程",
-      "url": "../03-分析学/05-微分方程/05-微分方程.md",
+      "url": "../03-分析学/03-微分方程/00-README.md",
       "line": 699,
       "file": "docs/10-应用数学\\01-核心内容\\04-控制论.md",
       "status": "not_found"
@@ -1189,7 +549,7 @@
     {
       "type": "markdown",
       "text": "优化理论",
-      "url": "../08-计算数学/02-优化理论.md",
+      "url": "../08-计算数学/02-优化理论-增强版.md",
       "line": 700,
       "file": "docs/10-应用数学\\01-核心内容\\04-控制论.md",
       "status": "not_found"
@@ -1197,7 +557,7 @@
     {
       "type": "markdown",
       "text": "线性代数",
-      "url": "../02-代数结构/环论/02-环论.md",
+      "url": "../02-代数结构/02-环论/00-README.md",
       "line": 701,
       "file": "docs/10-应用数学\\01-核心内容\\04-控制论.md",
       "status": "not_found"
@@ -1205,7 +565,7 @@
     {
       "type": "markdown",
       "text": "微分方程",
-      "url": "../03-分析学/05-微分方程/05-微分方程.md",
+      "url": "../03-分析学/03-微分方程/00-README.md",
       "line": 720,
       "file": "docs/10-应用数学\\01-核心内容\\04-控制论.md",
       "status": "not_found"
@@ -1213,7 +573,7 @@
     {
       "type": "markdown",
       "text": "优化理论",
-      "url": "../08-计算数学/02-优化理论.md",
+      "url": "../08-计算数学/02-优化理论-增强版.md",
       "line": 721,
       "file": "docs/10-应用数学\\01-核心内容\\04-控制论.md",
       "status": "not_found"
@@ -1221,7 +581,7 @@
     {
       "type": "markdown",
       "text": "线性代数",
-      "url": "../02-代数结构/环论/02-环论.md",
+      "url": "../02-代数结构/02-环论/00-README.md",
       "line": 722,
       "file": "docs/10-应用数学\\01-核心内容\\04-控制论.md",
       "status": "not_found"
@@ -1229,7 +589,7 @@
     {
       "type": "markdown",
       "text": "随机过程",
-      "url": "03-随机过程.md",
+      "url": "../06-概率论与统计/02-随机过程/00-README.md",
       "line": 677,
       "file": "docs/10-应用数学\\01-核心内容\\06-机器学习数学基础.md",
       "status": "not_found"
@@ -1237,7 +597,7 @@
     {
       "type": "markdown",
       "text": "数理统计",
-      "url": "04-数理统计.md",
+      "url": "../06-概率论与统计/03-数理统计/00-README.md",
       "line": 678,
       "file": "docs/10-应用数学\\01-核心内容\\06-机器学习数学基础.md",
       "status": "not_found"
@@ -1245,47 +605,15 @@
     {
       "type": "markdown",
       "text": "时间序列分析",
-      "url": "05-时间序列分析.md",
+      "url": "../06-概率论与统计/04-时间序列分析/00-README.md",
       "line": 679,
       "file": "docs/10-应用数学\\01-核心内容\\06-机器学习数学基础.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "-1",
-      "url": "x",
-      "line": 1120,
-      "file": "docs/10-应用数学\\01-核心内容\\06-机器学习数学基础.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s, a",
-      "url": "R(s, a, s'",
-      "line": 343,
-      "file": "docs/10-应用数学\\01-核心内容\\07-人工智能数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s, a",
-      "url": "R(s, a, s'",
-      "line": 346,
-      "file": "docs/10-应用数学\\01-核心内容\\07-人工智能数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s, a",
-      "url": "R(s, a, s'",
-      "line": 357,
-      "file": "docs/10-应用数学\\01-核心内容\\07-人工智能数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "深度学习基础",
-      "url": "../03-分析学/01-实分析/01-实分析.md",
+      "url": "../03-分析学/01-实分析/00-README.md",
       "line": 1139,
       "file": "docs/10-应用数学\\01-核心内容\\07-人工智能数学-深化版.md",
       "status": "not_found"
@@ -1293,7 +621,7 @@
     {
       "type": "markdown",
       "text": "优化理论",
-      "url": "../08-计算数学/02-优化理论.md",
+      "url": "../08-计算数学/02-优化理论-增强版.md",
       "line": 1141,
       "file": "docs/10-应用数学\\01-核心内容\\07-人工智能数学-深化版.md",
       "status": "not_found"
@@ -1301,23 +629,15 @@
     {
       "type": "markdown",
       "text": "图论基础",
-      "url": "../04-几何与拓扑/03-拓扑学内容/01-点集拓扑.md",
+      "url": "../04-几何与拓扑/03-拓扑学/00-README.md",
       "line": 1344,
       "file": "docs/10-应用数学\\01-核心内容\\09-网络科学数学-深化版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "-E_a/k_B T",
-      "url": "1 - \\exp(-\\Delta G/k_B T",
-      "line": 1233,
-      "file": "docs/10-应用数学\\01-核心内容\\11-物理数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "几何学基础",
-      "url": "../04-几何与拓扑/01-几何学基础/01-欧几里得几何.md",
+      "url": "../04-几何与拓扑/01-几何学基础/00-README.md",
       "line": 1550,
       "file": "docs/10-应用数学\\01-核心内容\\12-计算几何数学-深化版.md",
       "status": "not_found"
@@ -1325,7 +645,7 @@
     {
       "type": "markdown",
       "text": "拓扑学基础",
-      "url": "../04-几何与拓扑/03-拓扑学内容/01-点集拓扑.md",
+      "url": "../04-几何与拓扑/03-拓扑学/00-README.md",
       "line": 1551,
       "file": "docs/10-应用数学\\01-核心内容\\12-计算几何数学-深化版.md",
       "status": "not_found"
@@ -1333,7 +653,7 @@
     {
       "type": "markdown",
       "text": "优化理论",
-      "url": "../08-计算数学/02-优化理论.md",
+      "url": "../08-计算数学/02-优化理论-增强版.md",
       "line": 1552,
       "file": "docs/10-应用数学\\01-核心内容\\12-计算几何数学-深化版.md",
       "status": "not_found"
@@ -1349,7 +669,7 @@
     {
       "type": "markdown",
       "text": "自动定理证明",
-      "url": "../09-形式化证明/02-自动定理证明-深化版.md",
+      "url": "../07-数理逻辑/可计算性理论/00-README.md",
       "line": 1081,
       "file": "docs/10-应用数学\\01-核心内容\\14-量子计算数学-深化版.md",
       "status": "not_found"
@@ -1421,7 +741,7 @@
     {
       "type": "markdown",
       "text": "应用案例库",
-      "url": "../../应用案例库/00-README.md",
+      "url": "../00-README.md",
       "line": 46,
       "file": "docs/10-应用数学\\01-核心内容\\案例库\\按数学分支\\00-索引.md",
       "status": "not_found"
@@ -1453,7 +773,7 @@
     {
       "type": "markdown",
       "text": "应用案例库",
-      "url": "../../应用案例库/00-README.md",
+      "url": "../00-README.md",
       "line": 103,
       "file": "docs/10-应用数学\\01-核心内容\\案例库\\按难度级别\\00-索引.md",
       "status": "not_found"
@@ -1461,7 +781,7 @@
     {
       "type": "markdown",
       "text": "信息论数学-深化版",
-      "url": "../12-应用数学/10-信息论数学-深化版.md",
+      "url": "../10-应用数学/10-信息论数学-深化版.md",
       "line": 136,
       "file": "docs/10-应用数学\\03-补充内容2\\00-README.md",
       "status": "not_found"
@@ -1469,7 +789,7 @@
     {
       "type": "markdown",
       "text": "区块链数学-深化版",
-      "url": "../12-应用数学/13-区块链数学-深化版.md",
+      "url": "../10-应用数学/13-区块链数学-深化版.md",
       "line": 137,
       "file": "docs/10-应用数学\\03-补充内容2\\00-README.md",
       "status": "not_found"
@@ -1477,17 +797,9 @@
     {
       "type": "markdown",
       "text": "量子计算数学-深化版",
-      "url": "../12-应用数学/14-量子计算数学-深化版.md",
+      "url": "../10-应用数学/14-量子计算数学-深化版.md",
       "line": 138,
       "file": "docs/10-应用数学\\03-补充内容2\\00-README.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "public_key",
-      "url": "12:",
-      "line": 516,
-      "file": "docs/10-应用数学\\03-补充内容2\\01-密码学数学基础-深度版.md",
       "status": "not_found"
     },
     {
@@ -1557,7 +869,7 @@
     {
       "type": "markdown",
       "text": "应用案例库",
-      "url": "../../应用案例库/00-README.md",
+      "url": "../00-README.md",
       "line": 46,
       "file": "docs/10-应用数学\\案例库\\按数学分支\\00-索引.md",
       "status": "not_found"
@@ -1589,7 +901,7 @@
     {
       "type": "markdown",
       "text": "应用案例库",
-      "url": "../../应用案例库/00-README.md",
+      "url": "../00-README.md",
       "line": 103,
       "file": "docs/10-应用数学\\案例库\\按难度级别\\00-索引.md",
       "status": "not_found"
@@ -1597,7 +909,7 @@
     {
       "type": "markdown",
       "text": "范畴论",
-      "url": "../02-代数结构/范畴论/06-范畴论.md",
+      "url": "../02-代数结构/02-范畴论/00-README.md",
       "line": 264,
       "file": "docs/11-高级数学\\01-代数几何高级主题.md",
       "status": "not_found"
@@ -1605,7 +917,7 @@
     {
       "type": "markdown",
       "text": "范畴论",
-      "url": "../02-代数结构/范畴论/06-范畴论.md",
+      "url": "../02-代数结构/02-范畴论/00-README.md",
       "line": 289,
       "file": "docs/11-高级数学\\01-代数几何高级主题.md",
       "status": "not_found"
@@ -1613,7 +925,7 @@
     {
       "type": "markdown",
       "text": "范畴论",
-      "url": "../02-代数结构/范畴论/06-范畴论.md",
+      "url": "../02-代数结构/02-范畴论/00-README.md",
       "line": 286,
       "file": "docs/11-高级数学\\02-同伦论高级主题.md",
       "status": "not_found"
@@ -1621,7 +933,7 @@
     {
       "type": "markdown",
       "text": "范畴论",
-      "url": "../02-代数结构/范畴论/06-范畴论.md",
+      "url": "../02-代数结构/02-范畴论/00-README.md",
       "line": 306,
       "file": "docs/11-高级数学\\02-同伦论高级主题.md",
       "status": "not_found"
@@ -1629,7 +941,7 @@
     {
       "type": "markdown",
       "text": "代数数论",
-      "url": "../05-数论/02-代数数论.md",
+      "url": "../05-数论/02-代数数论/00-README.md",
       "line": 299,
       "file": "docs/11-高级数学\\03-数论几何高级主题.md",
       "status": "not_found"
@@ -1637,7 +949,7 @@
     {
       "type": "markdown",
       "text": "解析数论",
-      "url": "../05-数论/03-解析数论.md",
+      "url": "../05-数论/03-解析数论/00-README.md",
       "line": 301,
       "file": "docs/11-高级数学\\03-数论几何高级主题.md",
       "status": "not_found"
@@ -1645,7 +957,7 @@
     {
       "type": "markdown",
       "text": "代数数论",
-      "url": "../05-数论/02-代数数论.md",
+      "url": "../05-数论/02-代数数论/00-README.md",
       "line": 319,
       "file": "docs/11-高级数学\\03-数论几何高级主题.md",
       "status": "not_found"
@@ -1653,7 +965,7 @@
     {
       "type": "markdown",
       "text": "解析数论",
-      "url": "../05-数论/03-解析数论.md",
+      "url": "../05-数论/03-解析数论/00-README.md",
       "line": 321,
       "file": "docs/11-高级数学\\03-数论几何高级主题.md",
       "status": "not_found"
@@ -1661,7 +973,7 @@
     {
       "type": "markdown",
       "text": "李代数",
-      "url": "../02-代数结构/05-李代数.md",
+      "url": "../02-代数结构/04-李群与李代数/00-README.md",
       "line": 307,
       "file": "docs/11-高级数学\\04-数学物理高级主题.md",
       "status": "not_found"
@@ -1669,7 +981,7 @@
     {
       "type": "markdown",
       "text": "李代数",
-      "url": "../02-代数结构/05-李代数.md",
+      "url": "../02-代数结构/04-李群与李代数/00-README.md",
       "line": 327,
       "file": "docs/11-高级数学\\04-数学物理高级主题.md",
       "status": "not_found"
@@ -1677,7 +989,7 @@
     {
       "type": "markdown",
       "text": "数论",
-      "url": "../05-数论.md",
+      "url": "../05-数论/00-README.md",
       "line": 769,
       "file": "docs/11-高级数学\\08-代数K理论.md",
       "status": "not_found"
@@ -1693,7 +1005,7 @@
     {
       "type": "markdown",
       "text": "数论",
-      "url": "../05-数论.md",
+      "url": "../05-数论/00-README.md",
       "line": 789,
       "file": "docs/11-高级数学\\08-代数K理论.md",
       "status": "not_found"
@@ -1716,56 +1028,56 @@
     },
     {
       "type": "markdown",
-      "text": "量子计算",
-      "url": "../08-计算数学/03-量子计算.md",
-      "line": 709,
+      "text": "拓扑学基础",
+      "url": "../04-几何与拓扑/03-拓扑学/00-README.md",
+      "line": 638,
+      "file": "docs/11-高级数学\\22-现代拓扑学前沿-扩展版.md",
+      "status": "not_found"
+    },
+    {
+      "type": "markdown",
+      "text": "实分析",
+      "url": "../03-分析学/01-实分析/00-README.md",
+      "line": 704,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "生物数学",
-      "url": "../05-数论/05-生物数学.md",
-      "line": 710,
+      "text": "微分方程",
+      "url": "../03-分析学/03-微分方程/00-README.md",
+      "line": 708,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "金融数学",
-      "url": "../08-计算数学/04-金融数学.md",
-      "line": 711,
+      "text": "实分析",
+      "url": "../03-分析学/01-实分析/00-README.md",
+      "line": 1300,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "量子计算",
-      "url": "../08-计算数学/03-量子计算.md",
-      "line": 1305,
+      "text": "微分方程",
+      "url": "../03-分析学/03-微分方程/00-README.md",
+      "line": 1304,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "生物数学",
-      "url": "../05-数论/05-生物数学.md",
-      "line": 1306,
-      "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "金融数学",
-      "url": "../08-计算数学/04-金融数学.md",
-      "line": 1307,
+      "text": "拓扑学",
+      "url": "../04-几何与拓扑/03-拓扑学/00-README.md",
+      "line": 1308,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
       "text": "代数学",
-      "url": "../02-代数结构/群论/01-群论.md",
+      "url": "../02-代数结构/01-群论/00-README.md",
       "line": 1309,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
@@ -1773,7 +1085,7 @@
     {
       "type": "markdown",
       "text": "概率论",
-      "url": "../05-数论/06-概率论.md",
+      "url": "../06-概率论与统计/00-README.md",
       "line": 1311,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
@@ -1781,47 +1093,39 @@
     {
       "type": "markdown",
       "text": "范畴论",
-      "url": "../02-代数结构/范畴论/06-范畴论.md",
+      "url": "../02-代数结构/02-范畴论/00-README.md",
       "line": 1312,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "K理论",
-      "url": "../02-代数结构/08-K理论.md",
-      "line": 1314,
+      "text": "实分析",
+      "url": "../03-分析学/01-实分析/00-README.md",
+      "line": 1904,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "量子计算",
-      "url": "../08-计算数学/03-量子计算.md",
-      "line": 1909,
+      "text": "微分方程",
+      "url": "../03-分析学/03-微分方程/00-README.md",
+      "line": 1908,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "生物数学",
-      "url": "../05-数论/05-生物数学.md",
-      "line": 1910,
-      "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "金融数学",
-      "url": "../08-计算数学/04-金融数学.md",
-      "line": 1911,
+      "text": "拓扑学",
+      "url": "../04-几何与拓扑/03-拓扑学/00-README.md",
+      "line": 1912,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
       "text": "代数学",
-      "url": "../02-代数结构/群论/01-群论.md",
+      "url": "../02-代数结构/01-群论/00-README.md",
       "line": 1913,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
@@ -1829,7 +1133,7 @@
     {
       "type": "markdown",
       "text": "概率论",
-      "url": "../05-数论/06-概率论.md",
+      "url": "../06-概率论与统计/00-README.md",
       "line": 1915,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
@@ -1837,47 +1141,39 @@
     {
       "type": "markdown",
       "text": "范畴论",
-      "url": "../02-代数结构/范畴论/06-范畴论.md",
+      "url": "../02-代数结构/02-范畴论/00-README.md",
       "line": 1916,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "K理论",
-      "url": "../02-代数结构/08-K理论.md",
-      "line": 1918,
+      "text": "实分析",
+      "url": "../03-分析学/01-实分析/00-README.md",
+      "line": 2508,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "量子计算",
-      "url": "../08-计算数学/03-量子计算.md",
-      "line": 2513,
+      "text": "微分方程",
+      "url": "../03-分析学/03-微分方程/00-README.md",
+      "line": 2512,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "生物数学",
-      "url": "../05-数论/05-生物数学.md",
-      "line": 2514,
-      "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "金融数学",
-      "url": "../08-计算数学/04-金融数学.md",
-      "line": 2515,
+      "text": "拓扑学",
+      "url": "../04-几何与拓扑/03-拓扑学/00-README.md",
+      "line": 2516,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
       "text": "代数学",
-      "url": "../02-代数结构/群论/01-群论.md",
+      "url": "../02-代数结构/01-群论/00-README.md",
       "line": 2517,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
@@ -1885,7 +1181,7 @@
     {
       "type": "markdown",
       "text": "概率论",
-      "url": "../05-数论/06-概率论.md",
+      "url": "../06-概率论与统计/00-README.md",
       "line": 2519,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
@@ -1893,47 +1189,23 @@
     {
       "type": "markdown",
       "text": "范畴论",
-      "url": "../02-代数结构/范畴论/06-范畴论.md",
+      "url": "../02-代数结构/02-范畴论/00-README.md",
       "line": 2520,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "K理论",
-      "url": "../02-代数结构/08-K理论.md",
-      "line": 2522,
-      "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "谱序列理论",
-      "url": "../04-几何与拓扑/03-拓扑学内容/07-谱序列理论.md",
+      "url": "../04-几何与拓扑/02-代数拓扑/02-核心定理.md",
       "line": 2525,
       "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "导出范畴论",
-      "url": "../02-代数结构/09-导出范畴论.md",
-      "line": 2526,
-      "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "无穷范畴论",
-      "url": "../02-代数结构/10-无穷范畴论.md",
-      "line": 2527,
-      "file": "docs/11-高级数学\\23-现代分析学前沿-扩展版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "群论",
-      "url": "../02-代数结构/群论/01-群论.md",
+      "url": "../02-代数结构/01-群论/00-README.md",
       "line": 435,
       "file": "docs/11-高级数学\\24-量子数学.md",
       "status": "not_found"
@@ -1941,63 +1213,23 @@
     {
       "type": "markdown",
       "text": "李代数",
-      "url": "../02-代数结构/05-李代数.md",
+      "url": "../02-代数结构/04-李群与李代数/00-README.md",
       "line": 436,
       "file": "docs/11-高级数学\\24-量子数学.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
-      "text": "量子群论高级主题",
-      "url": "./量子群论高级主题.md",
-      "line": 444,
+      "text": "拓扑学",
+      "url": "../04-几何与拓扑/03-拓扑学/00-README.md",
+      "line": 438,
       "file": "docs/11-高级数学\\24-量子数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "非交换几何高级主题",
-      "url": "./非交换几何高级主题.md",
-      "line": 445,
-      "file": "docs/11-高级数学\\24-量子数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "量子拓扑高级主题",
-      "url": "./量子拓扑高级主题.md",
-      "line": 446,
-      "file": "docs/11-高级数学\\24-量子数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "量子计算高级主题",
-      "url": "./量子计算高级主题.md",
-      "line": 447,
-      "file": "docs/11-高级数学\\24-量子数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "概率论",
-      "url": "../12-应用数学/01-概率论.md",
-      "line": 462,
-      "file": "docs/11-高级数学\\25-机器学习数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "统计学",
-      "url": "../12-应用数学/02-统计学.md",
-      "line": 463,
-      "file": "docs/11-高级数学\\25-机器学习数学.md",
       "status": "not_found"
     },
     {
       "type": "markdown",
       "text": "线性代数",
-      "url": "../02-代数结构/环论/02-环论.md",
+      "url": "../02-代数结构/02-环论/00-README.md",
       "line": 465,
       "file": "docs/11-高级数学\\25-机器学习数学.md",
       "status": "not_found"
@@ -2012,54 +1244,6 @@
     },
     {
       "type": "markdown",
-      "text": "深度学习理论高级主题",
-      "url": "./深度学习理论高级主题.md",
-      "line": 471,
-      "file": "docs/11-高级数学\\25-机器学习数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "优化理论高级主题",
-      "url": "./优化理论高级主题.md",
-      "line": 472,
-      "file": "docs/11-高级数学\\25-机器学习数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "概率图模型高级主题",
-      "url": "./概率图模型高级主题.md",
-      "line": 473,
-      "file": "docs/11-高级数学\\25-机器学习数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "信息几何高级主题",
-      "url": "./信息几何高级主题.md",
-      "line": 474,
-      "file": "docs/11-高级数学\\25-机器学习数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "统计学",
-      "url": "../12-应用数学/02-统计学.md",
-      "line": 437,
-      "file": "docs/11-高级数学\\26-数据科学数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "概率论",
-      "url": "../12-应用数学/01-概率论.md",
-      "line": 438,
-      "file": "docs/11-高级数学\\26-数据科学数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
       "text": "图论",
       "url": "../01-基础数学/图论基础.md",
       "line": 440,
@@ -2069,105 +1253,9 @@
     {
       "type": "markdown",
       "text": "线性代数",
-      "url": "../02-代数结构/环论/02-环论.md",
+      "url": "../02-代数结构/02-环论/00-README.md",
       "line": 441,
       "file": "docs/11-高级数学\\26-数据科学数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "统计学习理论高级主题",
-      "url": "./统计学习理论高级主题.md",
-      "line": 446,
-      "file": "docs/11-高级数学\\26-数据科学数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "高维统计高级主题",
-      "url": "./高维统计高级主题.md",
-      "line": 447,
-      "file": "docs/11-高级数学\\26-数据科学数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "随机矩阵理论高级主题",
-      "url": "./随机矩阵理论高级主题.md",
-      "line": 448,
-      "file": "docs/11-高级数学\\26-数据科学数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "网络科学高级主题",
-      "url": "./网络科学高级主题.md",
-      "line": 449,
-      "file": "docs/11-高级数学\\26-数据科学数学.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "f * g",
-      "url": "n",
-      "line": 135,
-      "file": "docs/11-高级数学\\29-机器学习数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s,a",
-      "url": "R(s,a",
-      "line": 420,
-      "file": "docs/11-高级数学\\29-机器学习数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s,a",
-      "url": "R(s,a",
-      "line": 421,
-      "file": "docs/11-高级数学\\29-机器学习数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s,a",
-      "url": "R(s,a",
-      "line": 422,
-      "file": "docs/11-高级数学\\29-机器学习数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s,a",
-      "url": "R(s,a,s'",
-      "line": 346,
-      "file": "docs/11-高级数学\\33-人工智能数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s,a",
-      "url": "R(s,a,s'",
-      "line": 347,
-      "file": "docs/11-高级数学\\33-人工智能数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s,a",
-      "url": "R(s,a,s'",
-      "line": 355,
-      "file": "docs/11-高级数学\\33-人工智能数学-深化版.md",
-      "status": "not_found"
-    },
-    {
-      "type": "markdown",
-      "text": "s'|s,a",
-      "url": "R(s,a,s'",
-      "line": 364,
-      "file": "docs/11-高级数学\\33-人工智能数学-深化版.md",
       "status": "not_found"
     },
     {

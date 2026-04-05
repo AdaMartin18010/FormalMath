@@ -104,7 +104,15 @@ def get_file_age_days(filepath):
 
 def main():
     root_dir = Path('.')
-    md_files = list(root_dir.rglob('*.md'))
+    all_md_files = list(root_dir.rglob('*.md'))
+    
+    # 排除依赖和缓存目录
+    exclude_dirs = ['node_modules', '__pycache__', '.git', 'venv', '.venv', 'vector_store']
+    md_files = []
+    for f in all_md_files:
+        parts = f.parts
+        if not any(excluded in parts for excluded in exclude_dirs):
+            md_files.append(f)
     
     print(f"找到 {len(md_files)} 个Markdown文件")
     
@@ -164,100 +172,97 @@ def generate_report(all_files, placeholder_files, to_delete, to_replace):
     """生成Markdown格式的报告"""
     now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     
-    report = f"""# FormalMath项目纯占位符清理报告
-
-**生成时间**: {now}
-
-## 执行摘要
-
-| 指标 | 数量 |
-|------|------|
-| 扫描文件总数 | {len(all_files)} |
-| 纯占位符文件 | {len(placeholder_files)} |
-| 建议删除（>30天） | {len(to_delete)} |
-| 建议替换为说明 | {len(to_replace)} |
-
-## 详细清单
-
-### 一、建议删除的纯占位符文件（超过30天）
-
-共 **{len(to_delete)}** 个文件：
-
-"""
+    lines = []
+    lines.append("# FormalMath项目纯占位符清理报告")
+    lines.append("")
+    lines.append(f"**生成时间**: {now}")
+    lines.append("")
+    lines.append("## 执行摘要")
+    lines.append("")
+    lines.append("| 指标 | 数量 |")
+    lines.append("|------|------|")
+    lines.append(f"| 扫描文件总数 | {len(all_files)} |")
+    lines.append(f"| 纯占位符文件 | {len(placeholder_files)} |")
+    lines.append(f"| 建议删除（>30天） | {len(to_delete)} |")
+    lines.append(f"| 建议替换为说明 | {len(to_replace)} |")
+    lines.append("")
+    lines.append("## 详细清单")
+    lines.append("")
+    lines.append("### 一、建议删除的纯占位符文件（超过30天）")
+    lines.append("")
+    lines.append(f"共 **{len(to_delete)}** 个文件：")
+    lines.append("")
     
     if to_delete:
         for pf in to_delete:
-            report += f"""#### {pf['filepath']}
-
-- **文件路径**: `{pf['filepath']}`
-- **占位符类型**: {pf['type']}
-- **具体原因**: {pf['reason']}
-- **文件年龄**: {pf['age_days']}天
-
-"""
+            lines.append(f"#### {pf['filepath']}")
+            lines.append("")
+            lines.append(f"- **文件路径**: `{pf['filepath']}`")
+            lines.append(f"- **占位符类型**: {pf['type']}")
+            lines.append(f"- **具体原因**: {pf['reason']}")
+            lines.append(f"- **文件年龄**: {pf['age_days']}天")
+            lines.append("")
     else:
-        report += "无\n\n"
+        lines.append("无")
+        lines.append("")
     
-    report += f"""### 二、建议替换为说明文档的文件
-
-共 **{len(to_replace)}** 个文件：
-
-"""
+    lines.append("### 二、建议替换为说明文档的文件")
+    lines.append("")
+    lines.append(f"共 **{len(to_replace)}** 个文件：")
+    lines.append("")
     
     if to_replace:
         for pf in to_replace:
-            report += f"""#### {pf['filepath']}
-
-- **文件路径**: `{pf['filepath']}`
-- **占位符类型**: {pf['type']}
-- **具体原因**: {pf['reason']}
-- **文件年龄**: {pf['age_days']}天
-
-"""
+            lines.append(f"#### {pf['filepath']}")
+            lines.append("")
+            lines.append(f"- **文件路径**: `{pf['filepath']}`")
+            lines.append(f"- **占位符类型**: {pf['type']}")
+            lines.append(f"- **具体原因**: {pf['reason']}")
+            lines.append(f"- **文件年龄**: {pf['age_days']}天")
+            lines.append("")
     else:
-        report += "无\n\n"
+        lines.append("无")
+        lines.append("")
     
-    report += """## 占位符类型说明
-
-| 类型 | 说明 |
-|------|------|
-| empty | 完全空文件 |
-| placeholder_text | 只有占位符文本（如"待补充"、"TODO"等） |
-| only_frontmatter | 只有Frontmatter元数据，没有正文内容 |
-| only_titles | 只有标题行，没有实质内容段落 |
-
-## 处理建议
-
-### 删除确认
-
-以下文件建议**直接删除**：
-- 纯占位符内容
-- 创建超过30天
-- 无历史价值
-
-### 替换为说明文档
-
-以下文件建议**保留并替换为说明文档**：
-- 位于重要目录结构中的占位符
-- 需要保留文件位置作为占位
-- 应替换为说明该位置用途的文档
-
-## 执行命令参考
-
-```bash
-# 删除确认后的文件
-"""
+    lines.append("## 占位符类型说明")
+    lines.append("")
+    lines.append("| 类型 | 说明 |")
+    lines.append("|------|------|")
+    lines.append("| empty | 完全空文件 |")
+    lines.append("| placeholder_text | 只有占位符文本（如'待补充'、'TODO'等） |")
+    lines.append("| only_frontmatter | 只有Frontmatter元数据，没有正文内容 |")
+    lines.append("| only_titles | 只有标题行，没有实质内容段落 |")
+    lines.append("")
+    lines.append("## 处理建议")
+    lines.append("")
+    lines.append("### 删除确认")
+    lines.append("")
+    lines.append("以下文件建议**直接删除**：")
+    lines.append("- 纯占位符内容")
+    lines.append("- 创建超过30天")
+    lines.append("- 无历史价值")
+    lines.append("")
+    lines.append("### 替换为说明文档")
+    lines.append("")
+    lines.append("以下文件建议**保留并替换为说明文档**：")
+    lines.append("- 位于重要目录结构中的占位符")
+    lines.append("- 需要保留文件位置作为占位")
+    lines.append("- 应替换为说明该位置用途的文档")
+    lines.append("")
+    lines.append("## 执行命令参考")
+    lines.append("")
+    lines.append("```bash")
+    lines.append("# 删除确认后的文件")
     
     for pf in to_delete:
-        report += f"""rm \"{pf['filepath']}\""" + "\n"
+        lines.append('rm "' + pf['filepath'] + '"')
     
-    report += """```
-
----
-*报告由占位符扫描脚本自动生成*
-"""
+    lines.append("```")
+    lines.append("")
+    lines.append("---")
+    lines.append("*报告由占位符扫描脚本自动生成*")
     
-    return report
+    return "\n".join(lines)
 
 if __name__ == '__main__':
     main()

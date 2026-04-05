@@ -36,7 +36,7 @@ FormalMath 项目目前处于积极维护阶段。以下版本接收安全更新
 
 | 方式 | 联系方式 | 响应时间 |
 |------|----------|----------|
-| GitHub 安全建议 | [Security Advisories](../../security/advisories) | 48小时内 |
+| GitHub 安全建议 | [Security Advisories](https://github.com/formalmath/formalmath/security/advisories) | 48小时内 |
 | 私密邮件 | security@formalmath.example.com | 48小时内 |
 
 ### 报告内容
