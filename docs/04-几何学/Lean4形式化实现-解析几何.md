@@ -1,8 +1,9 @@
 ---
+title: "Lean4形式化实现-解析几何"
 msc_primary: "51N20"
 msc_secondary: ['51Nxx', '51-XX', '14Nxx', '68Vxx']
+processed_at: '2026-04-05'
 ---
-
 # Lean4形式化实现-解析几何 / Lean4 Formal Implementation - Analytic Geometry
 
 ## 📊 执行概况

@@ -5,9 +5,9 @@
 concept:
   id: "ideal'
   name:
-    zh: "理想"
+    zh: '理想'
     en: 'Ideal"
-  msc_codes: ["13A15', "16D25"]
+  msc_codes: ['13A15', "16D25']
   
   # ===== 定义层 =====
   definition:
@@ -26,7 +26,7 @@ concept:
       I 是极大理想，若 I ≠ R 且 I 不真包含于任何真理想。
       
     informal: |
-      理想是环中'可以整除的部分"。
+      理想是环中'可以整除的部分'。
       
       想象整数环 ℤ：
       - (3) = {..., -6, -3, 0, 3, 6, ...} 是理想
@@ -64,7 +64,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: "整数理想"
+    - type: "整数理想'
       content: |
         ℤ的所有理想：
         
@@ -73,7 +73,7 @@ concept:
                   
         (n) = nℤ = n的所有倍数
         
-    - type: '多项式理想"
+    - type: '多项式理想'
       content: |
         k[x]的理想：
         
@@ -86,76 +86,76 @@ concept:
   examples:
     basic:
       - name: "零理想 (0)'
-        description: "只含0"
-        in_ring: '任意环"
+        description: '只含0"
+        in_ring: '任意环'
         
-      - name: "单位理想 R'
+      - name: '单位理想 R'
         description: "整个环"
-        in_ring: '任意环"
+        in_ring: '任意环'
         
-      - name: "(n) = nℤ'
-        description: "n的所有倍数"
+      - name: '(n) = nℤ'
+        description: "n的所有倍数'
         in_ring: 'ℤ"
         
     prime_ideals:
-      - name: "(p) 其中p是素数'
-        in_ring: "ℤ"
+      - name: '(p) 其中p是素数'
+        in_ring: 'ℤ"
         quotient: 'ℤ/pℤ = 𝔽_p (域)"
         
-      - name: "(x)'
-        in_ring: "k[x]"
-        quotient: 'k[x]/(x) ≅ k"
+      - name: '(x)'
+        in_ring: 'k[x]"
+        quotient: 'k[x]/(x) ≅ k'
         
     maximal_ideals:
       - name: "(p) 其中p是素数'
-        in_ring: "ℤ"
+        in_ring: 'ℤ'
         note: '在ℤ中素理想=极大理想"
         
       - name: "(x - a)'
-        in_ring: "k[x]"
+        in_ring: 'k[x]'
         quotient: 'k[x]/(x-a) ≅ k"
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "ring'
-        description: "理想定义在环上"
-      - id: 'subgroup"
+      - id: 'ring'
+        description: "理想定义在环上'
+      - id: 'subgroup'
         description: "理想是加法子群'
         
     generalizes:
-      - id: "divisibility"
-        description: '(n)对应整除性"
+      - id: "divisibility'
+        description: '(n)对应整除性'
         
     specialized_by:
       - id: "prime-ideal'
-        description: "素理想"
-      - id: 'maximal-ideal"
-        description: "极大理想'
+        description: '素理想"
+      - id: 'maximal-ideal'
+        description: '极大理想'
       - id: "principal-ideal"
-        description: '主理想"
+        description: '主理想'
         
     related_to:
-      - id: "quotient-ring'
-        description: "R/I 商环"
+      - id: 'quotient-ring'
+        description: "R/I 商环'
       - id: 'algebraic-variety"
-        description: "代数几何对应'
+        description: '代数几何对应'
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "correspondence-theorem"
+    - id: 'correspondence-theorem"
       statement: 'R的包含I的理想 ↔ R/I的理想"
       importance: 5
       
-    - id: "maximal-is-prime'
-      statement: "极大理想是素理想"
+    - id: 'maximal-is-prime'
+      statement: '极大理想是素理想"
       importance: 4
       
-    - id: 'quotient-by-maximal-is-field"
+    - id: 'quotient-by-maximal-is-field'
       statement: "R/M是域 ⟺ M是极大理想'
       importance: 5
       
-    - id: "hilbert-nullstellensatz"
+    - id: 'hilbert-nullstellensatz'
       statement: 'I(V(I)) = √I"
       importance: 5
       
@@ -166,19 +166,19 @@ concept:
     
     prerequisites:
       - "ring'
-      - "subgroup"
+      - 'subgroup'
       
     leads_to:
       - 'algebraic-geometry"
-      - "commutative-algebra'
-      - "scheme-theory"
+      - 'commutative-algebra'
+      - "scheme-theory'
       
     history:
       first_appearance: 1871
-      context: 'Dedekind理想整数"
+      context: 'Dedekind理想整数'
       
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.RingTheory.Ideal.Basic'
-    name: "Ideal"
+    name: "Ideal'
     coverage: 'complete"

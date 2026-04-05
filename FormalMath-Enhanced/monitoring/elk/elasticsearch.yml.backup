@@ -1,7 +1,7 @@
 # Elasticsearch 配置文件
 # 用于日志存储和检索
 
-cluster.name: "formalmath-logs"
+cluster.name: "formalmath-logs'
 node.name: "${HOSTNAME}"
 network.host: 0.0.0.0
 http.port: 9200
@@ -36,7 +36,7 @@ logger.org.elasticsearch: INFO
 rootLogger: ${es.logger.level}, console
 
 # 快照仓库路径
-path.repo: ["/usr/share/elasticsearch/backup"]
+path.repo: ['/usr/share/elasticsearch/backup"]
 
 # CORS 配置（用于 Grafana 访问）
 http.cors.enabled: true

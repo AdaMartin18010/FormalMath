@@ -5,9 +5,9 @@
 theorem:
   id: "dominated-convergence-theorem'
   name:
-    zh: "控制收敛定理"
+    zh: '控制收敛定理"
     en: 'Dominated Convergence Theorem (DCT)"
-  msc_codes: ["28A20', "28A25"]
+  msc_codes: ['28A20', "28A25"]
   
   # ===== 陈述层 =====
   statement:
@@ -24,7 +24,7 @@ theorem:
     informal: |
       如果一列函数：
       1. 逐点收敛到某函数
-      2. 被一个可积函数'控制"（压住）
+      2. 被一个可积函数'控制'（压住）
       
       那么积分和极限可以交换顺序。
       
@@ -44,27 +44,27 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: "Fatou引理 + 上下界估计"
+    main_strategy: "Fatou引理 + 上下界估计'
     
     key_ideas:
       - '用Fatou引理处理极限下界"
       - "利用控制条件得到上界'
-      - "夹逼得到结论"
+      - '夹逼得到结论"
       
     steps:
       - step: 1
         content: '证明f可测"
-        detail: "可测函数的极限可测'
+        detail: '可测函数的极限可测'
         
       - step: 2
         content: "|f| ≤ g a.e.，所以f可积"
         
       - step: 3
-        content: '下界：应用Fatou引理于 g + fₙ ≥ 0"
+        content: '下界：应用Fatou引理于 g + fₙ ≥ 0'
         formula: "∫f ≤ liminf ∫fₙ'
         
       - step: 4
-        content: "上界：应用Fatou引理于 g - fₙ ≥ 0"
+        content: "上界：应用Fatou引理于 g - fₙ ≥ 0'
         formula: 'limsup ∫fₙ ≤ ∫f"
         
       - step: 5
@@ -90,9 +90,9 @@ theorem:
               └── limsup ∫fₙ ≤ ∫f
               
     techniques:
-      - "Fatou引理"
+      - 'Fatou引理"
       - '夹逼定理"
-      - "控制函数技巧'
+      - '控制函数技巧'
       
   # ===== 五种表征 =====
   representations:
@@ -119,7 +119,7 @@ theorem:
            │╱           ╲
            └─────────────────→ x
            
-      所有fₙ都在g的'帽子"下
+      所有fₙ都在g的'帽子'下
       积分面积被∫g控制
       
     intuitive: |
@@ -134,7 +134,7 @@ theorem:
       为什么需要控制？
       - 没有控制：每个fₙ可能在不同位置有尖峰
       - 尖峰面积可能不收敛
-      - 控制函数限制了"尖峰"的可能性
+      - 控制函数限制了"尖峰'的可能性
       
     computational: |
       【计算表征】
@@ -166,7 +166,7 @@ theorem:
       从泛函分析观点：
       - L¹(μ) 是Banach空间
       - DCT给出了序列收敛的条件
-      - 这是"弱收敛'和"范数收敛"的桥梁
+      - 这是"弱收敛'和'范数收敛"的桥梁
       
       态射层面：
       - 积分是从L¹到ℝ的连续线性泛函
@@ -175,40 +175,40 @@ theorem:
   # ===== 应用层 =====
   applications:
     - domain: '概率论"
-      description: "期望的收敛'
+      description: '期望的收敛'
       detail: "E[Xₙ] → E[X] 当 Xₙ → X 且有可积控制"
       
-    - domain: 'Fourier分析"
+    - domain: 'Fourier分析'
       description: "Fourier级数收敛'
       
-    - domain: "微分方程"
+    - domain: "微分方程'
       description: '参数积分的可微性"
       detail: "证明∫f(x,t)dt对t可微'
       
-    - domain: "数值分析"
+    - domain: '数值分析"
       description: '数值积分的收敛性证明"
       
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "lebesgue-integral'
+      - id: 'lebesgue-integral'
         role: "积分概念"
-      - id: 'measure"
+      - id: 'measure'
         role: "测度概念'
-      - id: "measurable-function"
+      - id: "measurable-function'
         role: '被积函数"
         
     uses_theorems:
       - id: "fatou-lemma'
-        role: "证明工具"
+        role: '证明工具"
         
     implies:
       - id: 'bounded-convergence"
-        description: "有界收敛定理（特例）'
+        description: '有界收敛定理（特例）'
         
     related_to:
       - id: "monotone-convergence"
-        description: '单调收敛定理（另一种交换条件）"
+        description: '单调收敛定理（另一种交换条件）'
         
   # ===== 元数据层 =====
   metadata:
@@ -216,14 +216,14 @@ theorem:
     importance: 5
     
     prerequisites:
-      concepts: ["lebesgue-integral', "measure", 'almost-everywhere"]
+      concepts: ["lebesgue-integral', "measure', 'almost-everywhere"]
       theorems: ["fatou-lemma']
       
     year_proved: 1908
-    provers: ["lebesgue"]
+    provers: ['lebesgue"]
     
   # ===== Mathlib对齐 =====
   mathlib:
     path: 'Mathlib.MeasureTheory.Integral.Lebesgue"
-    main_theorem: "tendsto_integral_of_dominated_convergence'
+    main_theorem: 'tendsto_integral_of_dominated_convergence'
     coverage: "complete"

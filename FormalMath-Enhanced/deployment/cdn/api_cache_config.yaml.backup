@@ -4,7 +4,7 @@
 # ============ 全局API缓存配置 ============
 default:
   enabled: true
-  cache_control: "no-cache"  # 默认不缓存API响应
+  cache_control: "no-cache'  # 默认不缓存API响应
   etag: true
   vary: "Accept-Encoding, Authorization"
 
@@ -12,8 +12,8 @@ default:
 endpoints:
   # 知识图谱查询 - 可缓存较长时间
   knowledge_graph:
-    path: "/api/v1/concept-graph"
-    methods: ["GET"]
+    path: '/api/v1/concept-graph"
+    methods: ["GET']
     cache_control:
       public: true
       max_age: 3600  # 1小时
@@ -21,19 +21,19 @@ endpoints:
     cdn:
       edge_ttl: 3600
       cache_key_query_params:
-        include: ["branch", "depth", "format"]
+        include: ["branch", 'depth", "format']
         exclude: ["callback"]
     redis:
       ttl: 7200  # 2小时
-      prefix: "api:kg"
+      prefix: 'api:kg"
     invalidate_on:
-      - "concept_updated"
+      - "concept_updated'
       - "new_theorem"
       
   # 概念列表 - 中等缓存
   concepts_list:
-    path: "/api/v1/concepts"
-    methods: ["GET"]
+    path: '/api/v1/concepts"
+    methods: ["GET']
     cache_control:
       public: true
       max_age: 1800  # 30分钟
@@ -41,14 +41,14 @@ endpoints:
     cdn:
       edge_ttl: 1800
       cache_key_query_params:
-        include: ["page", "per_page", "category", "sort"]
+        include: ["page", 'per_page", "category', "sort"]
     redis:
       ttl: 3600  # 1小时
-      prefix: "api:concepts"
+      prefix: 'api:concepts"
       
   # 单个概念详情
   concept_detail:
-    path: "/api/v1/concepts/{id}"
+    path: "/api/v1/concepts/{id}'
     methods: ["GET"]
     cache_control:
       public: true
@@ -57,14 +57,14 @@ endpoints:
       edge_ttl: 3600
     redis:
       ttl: 7200  # 2小时
-      prefix: "api:concept"
+      prefix: 'api:concept"
     invalidate_on:
-      - "concept:{id}_updated"
+      - "concept:{id}_updated'
       
   # 搜索API - 短缓存
   search:
     path: "/api/v1/search"
-    methods: ["GET"]
+    methods: ['GET"]
     cache_control:
       public: true
       max_age: 60  # 1分钟
@@ -72,10 +72,10 @@ endpoints:
     cdn:
       edge_ttl: 60
       cache_key_query_params:
-        include: ["q", "type", "category"]
+        include: ["q', "type", 'category"]
     redis:
       ttl: 300  # 5分钟
-      prefix: "api:search"
+      prefix: "api:search'
     rate_limit:
       requests: 30
       window: 60  # 60秒内30次请求
@@ -83,7 +83,7 @@ endpoints:
   # 语义搜索 - 中等缓存（计算成本高）
   semantic_search:
     path: "/api/v1/search/semantic"
-    methods: ["POST"]
+    methods: ['POST"]
     cache_control:
       public: true
       max_age: 300  # 5分钟
@@ -91,13 +91,13 @@ endpoints:
       enabled: false  # POST请求不经过CDN缓存
     redis:
       ttl: 1800  # 30分钟
-      prefix: "api:semantic"
+      prefix: "api:semantic'
       hash_body: true  # 对请求体哈希作为缓存键
       
   # 公式搜索
   formula_search:
     path: "/api/v1/search/formula"
-    methods: ["GET", "POST"]
+    methods: ['GET", "POST']
     cache_control:
       public: true
       max_age: 600  # 10分钟
@@ -109,8 +109,8 @@ endpoints:
       
   # 学习路径
   learning_paths:
-    path: "/api/v1/learning-paths"
-    methods: ["GET"]
+    path: '/api/v1/learning-paths"
+    methods: ["GET']
     cache_control:
       private: true  # 用户特定
       max_age: 300  # 5分钟
@@ -123,8 +123,8 @@ endpoints:
       
   # 学习进度
   user_progress:
-    path: "/api/v1/progress"
-    methods: ["GET"]
+    path: '/api/v1/progress"
+    methods: ["GET']
     cache_control:
       private: true
       max_age: 60  # 1分钟
@@ -139,8 +139,8 @@ endpoints:
       
   # 推荐系统
   recommendations:
-    path: "/api/v1/recommendations"
-    methods: ["GET"]
+    path: '/api/v1/recommendations"
+    methods: ["GET']
     cache_control:
       private: true
       max_age: 300  # 5分钟
@@ -153,8 +153,8 @@ endpoints:
       
   # 题目数据
   problems:
-    path: "/api/v1/problems"
-    methods: ["GET"]
+    path: '/api/v1/problems"
+    methods: ["GET']
     cache_control:
       public: true
       max_age: 3600  # 1小时
@@ -166,8 +166,8 @@ endpoints:
       
   # IMO题目详情
   imo_problem:
-    path: "/api/v1/problems/imo/{year}/{number}"
-    methods: ["GET"]
+    path: '/api/v1/problems/imo/{year}/{number}"
+    methods: ["GET']
     cache_control:
       public: true
       max_age: 86400  # 1天（IMO题目不会变）
@@ -179,8 +179,8 @@ endpoints:
       
   # 定理详情
   theorem_detail:
-    path: "/api/v1/theorems/{id}"
-    methods: ["GET"]
+    path: '/api/v1/theorems/{id}"
+    methods: ["GET']
     cache_control:
       public: true
       max_age: 3600  # 1小时
@@ -192,8 +192,8 @@ endpoints:
       
   # Mathlib4引用
   mathlib_refs:
-    path: "/api/v1/references/mathlib4"
-    methods: ["GET"]
+    path: '/api/v1/references/mathlib4"
+    methods: ["GET']
     cache_control:
       public: true
       max_age: 7200  # 2小时
@@ -205,8 +205,8 @@ endpoints:
       
   # 健康检查 - 不缓存
   health:
-    path: "/health"
-    methods: ["GET"]
+    path: '/health"
+    methods: ["GET']
     cache_control:
       no_cache: true
       no_store: true
@@ -219,7 +219,7 @@ endpoints:
   # 统计信息
   stats:
     path: "/api/v1/stats"
-    methods: ["GET"]
+    methods: ['GET"]
     cache_control:
       public: true
       max_age: 300  # 5分钟
@@ -227,12 +227,12 @@ endpoints:
       edge_ttl: 300
     redis:
       ttl: 600  # 10分钟
-      prefix: "api:stats"
+      prefix: "api:stats'
       
   # 用户认证 - 不缓存
   auth:
     path: "/api/v1/auth/*"
-    methods: ["POST", "PUT", "DELETE"]
+    methods: ['POST", "PUT', "DELETE"]
     cache_control:
       no_store: true
       no_cache: true
@@ -243,8 +243,8 @@ endpoints:
       
   # WebSocket 握手
   websocket:
-    path: "/api/v1/ws/*"
-    methods: ["GET"]
+    path: '/api/v1/ws/*"
+    methods: ["GET']
     cache_control:
       no_store: true
     cdn:
@@ -257,38 +257,38 @@ cache_key:
   # 默认包含所有查询参数
   default:
     include_params: "*"
-    exclude_params: ["callback", "_", "timestamp"]
+    exclude_params: ['callback", "_', "timestamp"]
     
   # 特定端点的缓存键配置
   custom:
-    - path: "/api/v1/search"
+    - path: '/api/v1/search"
       normalize: true  # 规范化查询词
       max_query_length: 100
       
-    - path: "/api/v1/search/semantic"
+    - path: "/api/v1/search/semantic'
       hash_body: true
-      body_fields: ["query", "embedding_model", "top_k"]
+      body_fields: ["query", 'embedding_model", "top_k']
 
 # ============ 缓存失效策略 ============
 invalidation:
   # 事件驱动失效
   events:
     - name: "concept_updated"
-      patterns: ["api:concept:*", "api:kg:*"]
+      patterns: ['api:concept:*", "api:kg:*']
       
     - name: "new_theorem"
-      patterns: ["api:theorem:*", "api:kg:*", "api:mathlib:*"]
+      patterns: ['api:theorem:*", "api:kg:*', "api:mathlib:*"]
       
-    - name: "user_progress_updated"
-      patterns: ["api:progress:{user_id}*", "api:paths:{user_id}*"]
+    - name: 'user_progress_updated"
+      patterns: ["api:progress:{user_id}*', "api:paths:{user_id}*"]
       
-    - name: "daily_stats"
-      patterns: ["api:stats:*"]
+    - name: 'daily_stats"
+      patterns: ["api:stats:*']
       schedule: "0 0 * * *"  # 每天午夜
       
   # API触发失效
   api_invalidation:
-    endpoint: "/api/v1/admin/cache/invalidate"
+    endpoint: '/api/v1/admin/cache/invalidate"
     auth_required: true
     rate_limit:
       requests: 10
@@ -299,19 +299,19 @@ warmup:
   enabled: true
   # 高优先级端点
   high_priority:
-    - endpoint: "/api/v1/concepts"
-      params: { "page": 1, "per_page": 20 }
+    - endpoint: "/api/v1/concepts'
+      params: { "page": 1, 'per_page": 20 }
       
-    - endpoint: "/api/v1/concept-graph"
-      params: { "branch": "main", "depth": 2 }
+    - endpoint: "/api/v1/concept-graph'
+      params: { "branch": 'main", "depth': 2 }
       
     - endpoint: "/api/v1/problems"
-      params: { "category": "algebra", "page": 1 }
+      params: { 'category": "algebra', "page": 1 }
       
   # 预热调度
   schedule:
-    - time: "0 3 * * *"  # 每天凌晨3点
-      endpoints: ["high_priority"]
+    - time: '0 3 * * *"  # 每天凌晨3点
+      endpoints: ["high_priority']
       
     - time: "0 */6 * * *"  # 每6小时
-      endpoints: ["/api/v1/stats"]
+      endpoints: ['/api/v1/stats"]

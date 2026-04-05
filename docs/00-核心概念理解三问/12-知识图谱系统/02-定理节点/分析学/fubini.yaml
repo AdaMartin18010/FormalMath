@@ -5,9 +5,9 @@
 theorem:
   id: "fubini'
   name:
-    zh: "Fubini定理"
+    zh: 'Fubini定理"
     en: 'Fubini's Theorem"
-  msc_codes: ["28A35']
+  msc_codes: ['28A35']
   
   # ===== 陈述层 =====
   statement:
@@ -65,7 +65,7 @@ theorem:
       
       ∫∫ f d(μ×ν) = ∫(∫f dν)dμ = ∫(∫f dμ)dν
       
-      积分符号可以'穿过"
+      积分符号可以'穿过'
       
     geometric: |
       【几何表征】
@@ -108,22 +108,22 @@ theorem:
   # ===== 应用层 =====
   applications:
     - description: "计算多重积分'
-    - description: "交换积分和求和顺序"
+    - description: "交换积分和求和顺序'
     - description: '卷积的计算"
     - description: "概率论中的期望计算'
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "measure"
+      - id: 'measure"
         role: '测度论基础"
-      - id: "product-measure'
+      - id: 'product-measure'
         role: "乘积测度"
         
     related_to:
-      - id: 'tonelli"
+      - id: 'tonelli'
         description: "非负情形'
-      - id: "dominated-convergence"
+      - id: "dominated-convergence'
         description: '都是积分交换定理"
         
   # ===== 元数据层 =====
@@ -135,5 +135,5 @@ theorem:
       year: 1907
       
   mathlib:
-    path: "Mathlib.MeasureTheory.Constructions.Prod.Integral"
+    path: 'Mathlib.MeasureTheory.Constructions.Prod.Integral"
     name: 'MeasureTheory.integral_prod"

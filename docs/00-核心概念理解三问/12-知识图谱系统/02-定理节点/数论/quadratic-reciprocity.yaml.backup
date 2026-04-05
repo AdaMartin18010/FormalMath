@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "quadratic-reciprocity"
+  id: "quadratic-reciprocity'
   name:
     zh: "二次互反律"
-    en: "Quadratic Reciprocity"
-  msc_codes: ["11A15"]
+    en: 'Quadratic Reciprocity"
+  msc_codes: ["11A15']
   
   # ===== 陈述层 =====
   statement:
@@ -40,13 +40,13 @@ theorem:
           
   # ===== 证明层 =====
   proof:
-    main_strategy: "多种证明方法"
+    main_strategy: '多种证明方法"
     
     approaches:
-      - name: "Gauss引理"
+      - name: "Gauss引理'
       - name: "Gauss和"
-      - name: "Eisenstein证明（几何）"
-      - name: "类域论（概念性最强）"
+      - name: 'Eisenstein证明（几何）"
+      - name: "类域论（概念性最强）'
       
   # ===== 五种表征 =====
   representations:
@@ -68,25 +68,25 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - description: "判断二次剩余"
-    - description: "因数分解算法"
+    - description: '判断二次剩余"
+    - description: "因数分解算法'
     - description: "密码学应用"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "prime-number"
-      - id: "modular-arithmetic"
+      - id: 'prime-number"
+      - id: "modular-arithmetic'
         
     related_to:
       - id: "class-field-theory"
-        description: "高次互反律"
+        description: '高次互反律"
         
   # ===== 元数据层 =====
   metadata:
     difficulty: 4
     importance: 5
     history:
-      discoverer: "Gauss"
+      discoverer: "Gauss'
       year: 1796
       note: "Gauss称之为'黄金定理'"

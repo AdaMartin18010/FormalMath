@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "gauss-bonnet-theorem"
+  id: "gauss-bonnet-theorem'
   name:
     zh: "Gauss-Bonnet定理"
-    en: "Gauss-Bonnet Theorem"
-  msc_codes: ["53A05", "53C20"]
+    en: 'Gauss-Bonnet Theorem"
+  msc_codes: ["53A05', "53C20"]
   
   # ===== 陈述层 =====
   statement:
@@ -41,12 +41,12 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: "三角剖分 + 局部计算 + 整体求和"
+    main_strategy: '三角剖分 + 局部计算 + 整体求和"
     
     key_ideas:
-      - "将曲面三角剖分"
+      - "将曲面三角剖分'
       - "每个三角形应用局部Gauss-Bonnet"
-      - "内部边贡献抵消，得到全局结果"
+      - '内部边贡献抵消，得到全局结果"
       
     proof_tree: |
       Gauss-Bonnet定理
@@ -96,7 +96,7 @@ theorem:
       气球类比：
       - 吹大气球（球面）：处处正曲率
       - 捏成甜甜圈（环面）：正负曲率抵消
-      - 曲率总量是"拓扑不变量"
+      - 曲率总量是"拓扑不变量'
       
       三角形角和：
       - 球面三角形：角和 > π（正曲率）
@@ -132,46 +132,46 @@ theorem:
   # ===== 应用层 =====
   applications:
     - domain: "拓扑"
-      description: "计算Euler示性数"
+      description: '计算Euler示性数"
       
-    - domain: "几何"
+    - domain: "几何'
       description: "曲率约束"
-      detail: "正曲率曲面必须是球面型"
+      detail: '正曲率曲面必须是球面型"
       
-    - domain: "物理"
+    - domain: "物理'
       description: "膜的拓扑"
-      detail: "DNA环的链接数"
+      detail: 'DNA环的链接数"
       
-    - domain: "图论"
+    - domain: "图论'
       description: "平面图的Euler公式"
       
   # ===== 推广 =====
   generalizations:
-    - id: "chern-gauss-bonnet"
-      statement: "高维版本：∫Pf(Ω) = (2π)ⁿχ(M)"
+    - id: 'chern-gauss-bonnet"
+      statement: "高维版本：∫Pf(Ω) = (2π)ⁿχ(M)'
       description: "偶数维流形"
       
-    - id: "atiyah-singer"
-      statement: "一般指标定理"
+    - id: 'atiyah-singer"
+      statement: "一般指标定理'
       description: "椭圆算子指标公式"
       
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "curvature"
-        role: "核心概念"
+      - id: 'curvature"
+        role: "核心概念'
       - id: "manifold"
-        role: "定理对象"
-      - id: "euler-characteristic"
+        role: '定理对象"
+      - id: "euler-characteristic'
         role: "拓扑不变量"
         
     uses_theorems:
-      - id: "euler-formula"
-        role: "V - E + F = 2"
+      - id: 'euler-formula"
+        role: "V - E + F = 2'
         
     implies:
       - id: "hairy-ball-theorem"
-        description: "毛球定理（χ(S²) ≠ 0）"
+        description: '毛球定理（χ(S²) ≠ 0）"
         
   # ===== 元数据层 =====
   metadata:
@@ -179,15 +179,15 @@ theorem:
     importance: 5
     
     prerequisites:
-      concepts: ["curvature", "manifold", "surface"]
-      theorems: ["euler-formula"]
+      concepts: ["curvature', "manifold", 'surface"]
+      theorems: ["euler-formula']
       
     year_proved: "1848"
-    provers: ["bonnet"]
-    earlier_work: "Gauss (1827)"
+    provers: ['bonnet"]
+    earlier_work: "Gauss (1827)'
     
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Geometry.Manifold"
-    main_theorem: "Not yet fully formalized"
+    main_theorem: 'Not yet fully formalized"
     coverage: "partial"

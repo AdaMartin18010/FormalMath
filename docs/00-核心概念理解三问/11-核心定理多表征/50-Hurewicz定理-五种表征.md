@@ -43,7 +43,7 @@ h: πₙ(X) → Hₙ(X)
 -- Hurewicz定理（概念性）
 theorem hurewicz {X : Type*} [TopologicalSpace X] [PathConnected X]
     (n : ℕ) (hn : n ≥ 2) (hX : ∀ k < n, π k X = 0) :
-    π n X ≃ H n X := by
+    π n X ≅ H n X := by
   sorry  -- 需要详细的代数拓扑形式化
 
 ```

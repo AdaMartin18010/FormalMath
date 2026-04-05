@@ -1,559 +1,559 @@
 course:
-  code: "MIT 18.701"
+  code: "MIT 18.701'
   name: "Algebra I"
-  source_url: "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/"
-  textbook: "Michael Artin, Algebra, 2nd Edition"
+  source_url: 'https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/"
+  textbook: "Michael Artin, Algebra, 2nd Edition'
   instructor: "Prof. Michael Artin"
-  term: "Fall 2010"
+  term: 'Fall 2010"
   description: >
     Undergraduate level Algebra I covering groups, vector spaces,
     linear transformations, symmetry groups, bilinear forms, and linear groups.
     The course follows Chapters 1–9 of Artin's Algebra (2nd Edition).
 
 units:
-  - title: "Matrices (Review)"
+  - title: "Matrices (Review)'
     artin_chapters: ["1"]
-    mit_sessions: ["1 (pre-class review)"]
+    mit_sessions: ['1 (pre-class review)"]
     topics:
-      - name: "Matrix Operations and GL_n"
+      - name: "Matrix Operations and GL_n'
         definitions:
           - term: "General Linear Group GL_n"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - term: "Invertible Matrix"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: "Invertible Matrix'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
         theorems:
-          - name: "A 2×2 matrix with rational entries has finite order 1, 2, 3, 4, or 6"
-            formal_math_path: ""
+          - name: 'A 2×2 matrix with rational entries has finite order 1, 2, 3, 4, or 6"
+            formal_math_path: "'
         examples:
           - "GL_2(R) and the order-6 matrix [[1,1],[-1,0]]"
-          - "Invertible integer matrices (GL_n(Z))"
+          - 'Invertible integer matrices (GL_n(Z))"
         problem_sets:
-          - source: "PS1"
+          - source: "PS1'
             problems:
               - number: "1"
-                type: "proof"
-                topic: "Chapter 1, Exercise 6.2 — invertible integer matrices"
+                type: 'proof"
+                topic: "Chapter 1, Exercise 6.2 — invertible integer matrices'
               - number: "2"
-                type: "proof"
-                topic: "Chapter 1, Exercise M.8 — an exercise in logic"
+                type: 'proof"
+                topic: "Chapter 1, Exercise M.8 — an exercise in logic'
               - number: "3"
-                type: "proof"
-                topic: "Chapter 1, Exercise M.11 — the discrete Dirichlet problem"
+                type: 'proof"
+                topic: "Chapter 1, Exercise M.11 — the discrete Dirichlet problem'
               - number: "4"
-                type: "proof"
-                topic: "Chapter 1, Exercise 4.8b — generating SL_n(R)"
+                type: 'proof"
+                topic: "Chapter 1, Exercise 4.8b — generating SL_n(R)'
 
   - title: "Groups"
-    artin_chapters: ["2"]
-    mit_sessions: ["1", "2", "3", "4", "5", "6", "7"]
+    artin_chapters: ['2"]
+    mit_sessions: ["1', "2", '3", "4', "5", '6", "7']
     topics:
       - name: "Groups and Subgroups"
         definitions:
-          - term: "Group"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Group"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
           - term: "Subgroup"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: "Cyclic Group'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Cyclic Group"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Order of an Element"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Order of an Element"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
           - term: "Symmetric Group S_n"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Alternating Group A_n"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: "Alternating Group A_n'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
         theorems:
-          - name: "Subgroup Test"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - name: 'Subgroup Test"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
           - name: "Lagrange's Theorem"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
         examples:
-          - "S_3 as the symmetry group of a triangle"
+          - "S_3 as the symmetry group of a triangle'
           - "Subgroups of Z+ (the additive integers)"
-          - "Generators of A_n"
-      - name: "Homomorphisms, Isomorphisms, and Quotients"
+          - 'Generators of A_n"
+      - name: "Homomorphisms, Isomorphisms, and Quotients'
         definitions:
           - term: "Group Homomorphism"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: "Group Isomorphism'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Group Isomorphism"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Kernel of a Homomorphism"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Kernel of a Homomorphism"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
           - term: "Coset"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: "Normal Subgroup'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Normal Subgroup"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Quotient Group"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Quotient Group"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
           - term: "Product Group"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
         theorems:
-          - name: "First Isomorphism Theorem"
+          - name: "First Isomorphism Theorem'
             formal_math_path: "docs/09-形式化证明/Lean4/FirstIsomorphismTheorem.lean"
-          - name: "Correspondence Theorem"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - name: 'Correspondence Theorem"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
         examples:
           - "The homophonic group (optional)"
-          - "Quotient of Z by nZ yielding Z/nZ"
+          - 'Quotient of Z by nZ yielding Z/nZ"
         problem_sets:
-          - source: "PS1"
+          - source: "PS1'
             problems:
               - number: "5"
-                type: "proof"
-                topic: "Chapter 2, Exercise 4.11b — generating A_n"
+                type: 'proof"
+                topic: "Chapter 2, Exercise 4.11b — generating A_n'
               - number: "6"
-                type: "proof"
-                topic: "Chapter 2, Exercise M.16 (optional) — the homophonic group"
+                type: 'proof"
+                topic: "Chapter 2, Exercise M.16 (optional) — the homophonic group'
           - source: "PS2"
             problems:
-              - number: "1"
-                type: "proof"
+              - number: '1"
+                type: "proof'
                 topic: "Chapter 2, Exercise 2.1 — laws of composition"
-              - number: "2"
-                type: "proof"
+              - number: '2"
+                type: "proof'
                 topic: "Chapter 2, Exercise 2.4 — subgroups"
-              - number: "3"
-                type: "proof"
+              - number: '3"
+                type: "proof'
                 topic: "Chapter 2, Exercise 4.1 — homomorphisms"
-              - number: "4"
-                type: "proof"
+              - number: '4"
+                type: "proof'
                 topic: "Chapter 2, Exercise 4.3 — kernels and images"
-              - number: "5"
-                type: "proof"
+              - number: '5"
+                type: "proof'
                 topic: "Chapter 2, Exercise 4.4 — isomorphisms"
-              - number: "6"
-                type: "proof"
+              - number: '6"
+                type: "proof'
                 topic: "Chapter 2, Exercise 4.7 — automorphism group of Z/nZ"
-              - number: "7"
-                type: "proof"
+              - number: '7"
+                type: "proof'
                 topic: "Chapter 2, Exercise 6.1 — cosets and Lagrange"
-              - number: "8"
-                type: "proof"
+              - number: '8"
+                type: "proof'
                 topic: "Chapter 2, Exercise 6.3 — index of subgroups"
 
-  - title: "Vector Spaces"
-    artin_chapters: ["3"]
-    mit_sessions: ["8", "9", "10", "11"]
+  - title: 'Vector Spaces"
+    artin_chapters: ["3']
+    mit_sessions: ["8", '9", "10', "11"]
     topics:
-      - name: "Fields and Vector Spaces"
+      - name: 'Fields and Vector Spaces"
         definitions:
-          - term: "Field"
+          - term: "Field'
             formal_math_path: "docs/02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md"
-          - term: "Vector Space"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: 'Vector Space"
+            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md'
           - term: "Subspace"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: "Linear Independence'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - term: "Linear Independence"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - term: "Basis"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: 'Basis"
+            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md'
           - term: "Dimension"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
         theorems:
-          - name: "Every vector space has a basis (finite-dimensional case)"
+          - name: "Every vector space has a basis (finite-dimensional case)'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - name: "Invariance of Dimension"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - name: 'Invariance of Dimension"
+            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md'
           - name: "Dimension Formula for Subspaces"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
         examples:
-          - "F^n as the standard vector space over a field F"
+          - "F^n as the standard vector space over a field F'
           - "Space of m×n matrices over F"
-          - "Symmetric matrices as a subspace"
-      - name: "Computation with Bases"
+          - 'Symmetric matrices as a subspace"
+      - name: "Computation with Bases'
         definitions:
           - term: "Coordinate Vector"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: "Change of Basis Matrix'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - term: "Change of Basis Matrix"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - term: "Direct Sum"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: 'Direct Sum"
+            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md'
         theorems:
           - name: "Row reduction preserves row space"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
         examples:
-          - "Finding a basis for the space of n×n symmetric matrices"
+          - "Finding a basis for the space of n×n symmetric matrices'
           - "Change of basis in R^2 and R^3"
         problem_sets:
-          - source: "PS3"
+          - source: 'PS3"
             problems:
-              - number: "1"
+              - number: "1'
                 type: "proof"
-                topic: "Chapter 3, Exercise 3.1 — subspaces and bases"
-              - number: "2"
+                topic: 'Chapter 3, Exercise 3.1 — subspaces and bases"
+              - number: "2'
                 type: "proof"
-                topic: "Chapter 3, Exercise 3.3 — linear independence of functions"
-              - number: "3"
+                topic: 'Chapter 3, Exercise 3.3 — linear independence of functions"
+              - number: "3'
                 type: "proof"
-                topic: "Chapter 3, Exercise 3.4 — row operations and row space"
-              - number: "4"
+                topic: 'Chapter 3, Exercise 3.4 — row operations and row space"
+              - number: "4'
                 type: "proof"
-                topic: "Chapter 3, Exercise 3.5 — subspaces as solution sets"
-              - number: "5"
+                topic: 'Chapter 3, Exercise 3.5 — subspaces as solution sets"
+              - number: "5'
                 type: "proof"
-                topic: "Chapter 3, Exercise 3.7 — basis for matrix spaces"
-              - number: "6"
+                topic: 'Chapter 3, Exercise 3.7 — basis for matrix spaces"
+              - number: "6'
                 type: "proof"
-                topic: "Chapter 3, Exercise 5.1 — computation with bases"
-              - number: "7"
+                topic: 'Chapter 3, Exercise 5.1 — computation with bases"
+              - number: "7'
                 type: "proof"
-                topic: "Chapter 3, Exercise 5.3 — dimension formula"
+                topic: 'Chapter 3, Exercise 5.3 — dimension formula"
 
-  - title: "Linear Operators"
-    artin_chapters: ["4", "5"]
-    mit_sessions: ["12", "13", "14", "15", "16"]
+  - title: "Linear Operators'
+    artin_chapters: ["4", '5"]
+    mit_sessions: ["12', "13", '14", "15', "16"]
     topics:
-      - name: "Linear Transformations and Eigenvectors"
+      - name: 'Linear Transformations and Eigenvectors"
         definitions:
-          - term: "Linear Operator"
+          - term: "Linear Operator'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - term: "Matrix of a Linear Transformation"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: 'Matrix of a Linear Transformation"
+            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md'
           - term: "Kernel (Nullspace)"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: "Image (Range)'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - term: "Image (Range)"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - term: "Eigenvector and Eigenvalue"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: 'Eigenvector and Eigenvalue"
+            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md'
           - term: "Characteristic Polynomial"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
         theorems:
-          - name: "Rank-Nullity Theorem (Dimension Formula)"
+          - name: "Rank-Nullity Theorem (Dimension Formula)'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - name: "Eigenvectors with distinct eigenvalues are linearly independent"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - name: 'Eigenvectors with distinct eigenvalues are linearly independent"
+            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md'
           - name: "Cayley-Hamilton Theorem"
-            formal_math_path: "docs/09-形式化证明/Lean4/CayleyHamilton.lean"
-          - name: "Jordan Form Theorem (existence over algebraically closed fields)"
+            formal_math_path: 'docs/09-形式化证明/Lean4/CayleyHamilton.lean"
+          - name: "Jordan Form Theorem (existence over algebraically closed fields)'
             formal_math_path: "docs/00-核心概念理解三问/11-核心定理多表征/39-Jordan标准形-五种表征.md"
         examples:
-          - "Matrix of T: M ↦ AMB on M_2(F)"
-          - "Jordan form of a nilpotent matrix"
+          - 'Matrix of T: M ↦ AMB on M_2(F)"
+          - "Jordan form of a nilpotent matrix'
           - "Eigenvalues of rotation matrices"
-      - name: "Rotations and Orthogonal Matrices"
+      - name: 'Rotations and Orthogonal Matrices"
         definitions:
-          - term: "Orthogonal Matrix"
+          - term: "Orthogonal Matrix'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-          - term: "Rotation Matrix"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: 'Rotation Matrix"
+            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md'
         theorems:
           - name: "Orthogonal matrices in O_2 are rotations or reflections"
-            formal_math_path: ""
+            formal_math_path: '"
         examples:
-          - "SO_2 as the group of plane rotations"
+          - "SO_2 as the group of plane rotations'
           - "Using continuity to classify path-components of GL_n(R)"
         problem_sets:
-          - source: "PS4"
+          - source: 'PS4"
+            problems:
+              - number: "1'
+                type: "proof"
+                topic: 'Chapter 4, Exercise 2.1 — matrix of a linear transformation on M_2(F)"
+              - number: "2'
+                type: "proof"
+                topic: 'Chapter 4, Exercise 2.2 — right multiplication operator"
+              - number: "3'
+                type: "proof"
+                topic: 'Chapter 4, Exercise 4.1 — eigenvectors and eigenvalues"
+              - number: "4'
+                type: "proof"
+                topic: 'Chapter 4, Exercise 5.1 — characteristic polynomial"
+              - number: "5'
+                type: "proof"
+                topic: 'Chapter 4, Exercise 6.1 — triangular and diagonal forms"
+              - number: "6'
+                type: "proof"
+                topic: 'Chapter 4, Exercise 7.1 — Jordan form"
+          - source: "PS5'
             problems:
               - number: "1"
-                type: "proof"
-                topic: "Chapter 4, Exercise 2.1 — matrix of a linear transformation on M_2(F)"
+                type: 'proof"
+                topic: "Chapter 5, Exercise 1.1 — orthogonal matrices and rotations'
               - number: "2"
-                type: "proof"
-                topic: "Chapter 4, Exercise 2.2 — right multiplication operator"
+                type: 'proof"
+                topic: "Chapter 5, Exercise 1.3 — classification of orthogonal operators in R^3'
               - number: "3"
-                type: "proof"
-                topic: "Chapter 4, Exercise 4.1 — eigenvectors and eigenvalues"
+                type: 'proof"
+                topic: "Chapter 5, Exercise 2.1 — using continuity (path components)'
               - number: "4"
-                type: "proof"
-                topic: "Chapter 4, Exercise 5.1 — characteristic polynomial"
-              - number: "5"
-                type: "proof"
-                topic: "Chapter 4, Exercise 6.1 — triangular and diagonal forms"
-              - number: "6"
-                type: "proof"
-                topic: "Chapter 4, Exercise 7.1 — Jordan form"
-          - source: "PS5"
-            problems:
-              - number: "1"
-                type: "proof"
-                topic: "Chapter 5, Exercise 1.1 — orthogonal matrices and rotations"
-              - number: "2"
-                type: "proof"
-                topic: "Chapter 5, Exercise 1.3 — classification of orthogonal operators in R^3"
-              - number: "3"
-                type: "proof"
-                topic: "Chapter 5, Exercise 2.1 — using continuity (path components)"
-              - number: "4"
-                type: "proof"
-                topic: "Chapter 5, Exercise 4.1 — matrix exponential"
+                type: 'proof"
+                topic: "Chapter 5, Exercise 4.1 — matrix exponential'
 
   - title: "Symmetry"
-    artin_chapters: ["6"]
-    mit_sessions: ["17", "18", "19", "20", "21", "22"]
+    artin_chapters: ['6"]
+    mit_sessions: ["17', "18", '19", "20', "21", '22"]
     topics:
-      - name: "Isometries and Discrete Groups"
+      - name: "Isometries and Discrete Groups'
         definitions:
           - term: "Isometry"
-            formal_math_path: "docs/02-代数结构/03-应用分析/群论应用/02-群论应用-物理化学版.md"
-          - term: "Glide Reflection"
+            formal_math_path: 'docs/02-代数结构/03-应用分析/群论应用/02-群论应用-物理化学版.md"
+          - term: "Glide Reflection'
             formal_math_path: ""
-          - term: "Crystallographic Restriction"
-            formal_math_path: ""
+          - term: 'Crystallographic Restriction"
+            formal_math_path: "'
           - term: "Group Operation (Action)"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: "Orbit'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Orbit"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Stabilizer"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Stabilizer"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
         theorems:
           - name: "Counting Formula |O| = |G| / |Stab(x)|"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - name: "Classification of finite subgroups of the rotation group SO_3"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - name: "Classification of finite subgroups of the rotation group SO_3'
             formal_math_path: ""
         examples:
-          - "Dihedral group D_n as symmetries of a regular n-gon"
-          - "Plane crystallographic groups"
+          - 'Dihedral group D_n as symmetries of a regular n-gon"
+          - "Plane crystallographic groups'
           - "Finite rotation groups (cyclic, dihedral, tetrahedral, octahedral, icosahedral)"
-      - name: "Group Operations and Permutation Representations"
+      - name: 'Group Operations and Permutation Representations"
         definitions:
-          - term: "Permutation Representation"
+          - term: "Permutation Representation'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Coset Operation"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Coset Operation"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
         theorems:
           - name: "Cayley's Theorem"
-            formal_math_path: "docs/09-形式化证明/Lean4/CayleyTheorem.lean"
+            formal_math_path: 'docs/09-形式化证明/Lean4/CayleyTheorem.lean"
         examples:
-          - "The icosahedral group A_5"
+          - "The icosahedral group A_5'
           - "Action of G on itself by left multiplication"
-          - "Action of G on itself by conjugation"
+          - 'Action of G on itself by conjugation"
         problem_sets:
-          - source: "PS6"
+          - source: "PS6'
             problems:
               - number: "1"
-                type: "proof"
-                topic: "Chapter 6, Exercise 1.1 — symmetries of plane figures"
+                type: 'proof"
+                topic: "Chapter 6, Exercise 1.1 — symmetries of plane figures'
               - number: "2"
-                type: "proof"
-                topic: "Chapter 6, Exercise 2.1 — isometries of the plane"
+                type: 'proof"
+                topic: "Chapter 6, Exercise 2.1 — isometries of the plane'
               - number: "3"
-                type: "proof"
-                topic: "Chapter 6, Exercise 4.1 — finite groups of orthogonal operators"
+                type: 'proof"
+                topic: "Chapter 6, Exercise 4.1 — finite groups of orthogonal operators'
               - number: "4"
-                type: "proof"
-                topic: "Chapter 6, Exercise 5.1 — discrete groups of isometries"
+                type: 'proof"
+                topic: "Chapter 6, Exercise 5.1 — discrete groups of isometries'
               - number: "5"
-                type: "proof"
-                topic: "Chapter 6, Exercise 7.1 — group operations"
+                type: 'proof"
+                topic: "Chapter 6, Exercise 7.1 — group operations'
               - number: "6"
-                type: "proof"
-                topic: "Chapter 6, Exercise 9.1 — counting formula"
+                type: 'proof"
+                topic: "Chapter 6, Exercise 9.1 — counting formula'
           - source: "PS7"
             problems:
-              - number: "1"
-                type: "proof"
+              - number: '1"
+                type: "proof'
                 topic: "Chapter 6, Exercise 11.1 — permutation representations"
-              - number: "2"
-                type: "proof"
+              - number: '2"
+                type: "proof'
                 topic: "Chapter 6, Exercise 12.1 — finite subgroups of SO_3"
-              - number: "3"
-                type: "proof"
+              - number: '3"
+                type: "proof'
                 topic: "Chapter 6, Exercise M.1 — plane crystallographic groups"
 
-  - title: "More Group Theory"
-    artin_chapters: ["7"]
-    mit_sessions: ["23", "24", "25", "26"]
+  - title: 'More Group Theory"
+    artin_chapters: ["7']
+    mit_sessions: ["23", '24", "25', "26"]
     topics:
-      - name: "Conjugation, Class Equation, and Sylow Theorems"
+      - name: 'Conjugation, Class Equation, and Sylow Theorems"
         definitions:
-          - term: "Conjugacy Class"
+          - term: "Conjugacy Class'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Normalizer"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Normalizer"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
           - term: "Centralizer"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: "p-Group'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "p-Group"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Sylow p-Subgroup"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Sylow p-Subgroup"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
         theorems:
           - name: "Class Equation"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - name: "Sylow Theorems (existence, conjugacy, count)'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - name: "Sylow Theorems (existence, conjugacy, count)"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - name: "Cauchy's Theorem (for abelian groups)"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - name: 'Cauchy's Theorem (for abelian groups)"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
         examples:
           - "Class equation of S_5 and S_6"
-          - "Class equation of the icosahedral group A_5"
-          - "Groups of order 12"
+          - 'Class equation of the icosahedral group A_5"
+          - "Groups of order 12'
       - name: "Generators and Relations"
         definitions:
-          - term: "Free Group"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Free Group"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
           - term: "Presentation of a Group"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Todd-Coxeter Algorithm"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: "Todd-Coxeter Algorithm'
             formal_math_path: ""
         theorems:
-          - name: "Todd-Coxeter Algorithm terminates for finite-index subgroups"
-            formal_math_path: ""
+          - name: 'Todd-Coxeter Algorithm terminates for finite-index subgroups"
+            formal_math_path: "'
         examples:
           - "The free group on two generators"
-          - "Presentation of the dihedral group D_n = <r,s | r^n=s^2=1, srs=r^{-1}>"
-          - "Presentation of the icosahedral group"
+          - 'Presentation of the dihedral group D_n = <r,s | r^n=s^2=1, srs=r^{-1}>"
+          - "Presentation of the icosahedral group'
         problem_sets:
           - source: "PS8"
             problems:
-              - number: "1"
-                type: "proof"
+              - number: '1"
+                type: "proof'
                 topic: "Chapter 7, Exercise 1.1 — Cayley's theorem"
-              - number: "2"
-                type: "proof"
+              - number: '2"
+                type: "proof'
                 topic: "Chapter 7, Exercise 2.1 — class equation"
-              - number: "3"
-                type: "proof"
+              - number: '3"
+                type: "proof'
                 topic: "Chapter 7, Exercise 2.3 — p-groups"
-              - number: "4"
-                type: "proof"
+              - number: '4"
+                type: "proof'
                 topic: "Chapter 7, Exercise 4.1 — class equation of the icosahedral group"
-              - number: "5"
-                type: "proof"
+              - number: '5"
+                type: "proof'
                 topic: "Chapter 7, Exercise 5.1 — conjugation in S_n"
-              - number: "6"
-                type: "proof"
+              - number: '6"
+                type: "proof'
                 topic: "Chapter 7, Exercise 7.1 — Sylow theorems"
-              - number: "7"
-                type: "proof"
+              - number: '7"
+                type: "proof'
                 topic: "Chapter 7, Exercise 8.1 — groups of order 12"
 
-  - title: "Bilinear Forms"
-    artin_chapters: ["8"]
-    mit_sessions: ["27", "28", "29", "30", "31"]
+  - title: 'Bilinear Forms"
+    artin_chapters: ["8']
+    mit_sessions: ["27", '28", "29', "30", '31"]
     topics:
-      - name: "Bilinear and Hermitian Forms"
+      - name: "Bilinear and Hermitian Forms'
         definitions:
           - term: "Bilinear Form"
+            formal_math_path: '"
+          - term: "Symmetric Form'
             formal_math_path: ""
-          - term: "Symmetric Form"
-            formal_math_path: ""
-          - term: "Hermitian Form"
-            formal_math_path: ""
+          - term: 'Hermitian Form"
+            formal_math_path: "'
           - term: "Positive Definite Form"
-            formal_math_path: ""
-          - term: "Orthogonal Complement"
+            formal_math_path: '"
+          - term: "Orthogonal Complement'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
         theorems:
-          - name: "Spectral Theorem for Hermitian Operators"
-            formal_math_path: "docs/00-核心概念理解三问/11-核心定理多表征/40-谱定理-五种表征.md"
+          - name: 'Spectral Theorem for Hermitian Operators"
+            formal_math_path: "docs/00-核心概念理解三问/11-核心定理多表征/40-谱定理-五种表征.md'
           - name: "Spectral Theorem for Real Symmetric Matrices"
-            formal_math_path: "docs/00-核心概念理解三问/11-核心定理多表征/40-谱定理-五种表征.md"
-          - name: "Projection Formula"
+            formal_math_path: 'docs/00-核心概念理解三问/11-核心定理多表征/40-谱定理-五种表征.md"
+          - name: "Projection Formula'
             formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
         examples:
-          - "Standard dot product on R^n"
-          - "Hermitian form <v,w> = v* w on C^n"
+          - 'Standard dot product on R^n"
+          - "Hermitian form <v,w> = v* w on C^n'
           - "Trace form on the space of 2×2 matrices"
-      - name: "Quadrics and Skew-Symmetric Forms"
+      - name: 'Quadrics and Skew-Symmetric Forms"
         definitions:
-          - term: "Quadric"
+          - term: "Quadric'
             formal_math_path: ""
-          - term: "Skew-Symmetric (Alternating) Form"
-            formal_math_path: ""
+          - term: 'Skew-Symmetric (Alternating) Form"
+            formal_math_path: "'
         theorems:
           - name: "Classification of conics and quadrics over R and C"
-            formal_math_path: ""
+            formal_math_path: '"
         examples:
-          - "Diagonalization of a real quadratic form"
+          - "Diagonalization of a real quadratic form'
           - "Classifying conics by signature"
         problem_sets:
-          - source: "PS9"
+          - source: 'PS9"
             problems:
-              - number: "1"
+              - number: "1'
                 type: "proof"
-                topic: "Chapter 8, Exercise 1.1 — bilinear forms"
-              - number: "2"
+                topic: 'Chapter 8, Exercise 1.1 — bilinear forms"
+              - number: "2'
                 type: "proof"
-                topic: "Chapter 8, Exercise 2.1 — symmetric forms"
-              - number: "3"
+                topic: 'Chapter 8, Exercise 2.1 — symmetric forms"
+              - number: "3'
                 type: "proof"
-                topic: "Chapter 8, Exercise 3.1 — Hermitian forms"
-              - number: "4"
+                topic: 'Chapter 8, Exercise 3.1 — Hermitian forms"
+              - number: "4'
                 type: "proof"
-                topic: "Chapter 8, Exercise 4.1 — orthogonality"
-              - number: "5"
+                topic: 'Chapter 8, Exercise 4.1 — orthogonality"
+              - number: "5'
                 type: "proof"
-                topic: "Chapter 8, Exercise 4.3 — projection formula"
-              - number: "6"
+                topic: 'Chapter 8, Exercise 4.3 — projection formula"
+              - number: "6'
                 type: "proof"
-                topic: "Chapter 8, Exercise 6.1 — spectral theorem"
-              - number: "7"
+                topic: 'Chapter 8, Exercise 6.1 — spectral theorem"
+              - number: "7'
                 type: "proof"
-                topic: "Chapter 8, Exercise 7.1 — conics and quadrics"
+                topic: 'Chapter 8, Exercise 7.1 — conics and quadrics"
 
-  - title: "Linear Groups"
+  - title: "Linear Groups'
     artin_chapters: ["9"]
-    mit_sessions: ["32", "33", "34", "35", "36", "37", "38"]
+    mit_sessions: ['32", "33', "34", '35", "36', "37", '38"]
     topics:
-      - name: "Classical Linear Groups"
+      - name: "Classical Linear Groups'
         definitions:
           - term: "Classical Group"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Special Unitary Group SU_2"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: "Special Unitary Group SU_2'
             formal_math_path: ""
-          - term: "Rotation Group SO_3"
-            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+          - term: 'Rotation Group SO_3"
+            formal_math_path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md'
           - term: "One-Parameter Subgroup"
-            formal_math_path: ""
-          - term: "Lie Algebra of a Linear Group"
+            formal_math_path: '"
+          - term: "Lie Algebra of a Linear Group'
             formal_math_path: "docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md"
-          - term: "Exponential Map"
-            formal_math_path: ""
+          - term: 'Exponential Map"
+            formal_math_path: "'
         theorems:
           - name: "SU_2 double-covers SO_3 via the adjoint representation"
-            formal_math_path: ""
-          - name: "The Lie algebra of SU_2 is isomorphic to R^3 with the cross product"
+            formal_math_path: '"
+          - name: "The Lie algebra of SU_2 is isomorphic to R^3 with the cross product'
             formal_math_path: "docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md"
         examples:
-          - "The Pauli matrices as a basis for su_2"
-          - "The Hopf fibration S^3 → S^2"
+          - 'The Pauli matrices as a basis for su_2"
+          - "The Hopf fibration S^3 → S^2'
           - "One-parameter groups of rotations in SO_3"
-      - name: "Simple Groups and Normal Subgroups"
+      - name: 'Simple Groups and Normal Subgroups"
         definitions:
-          - term: "Simple Group"
+          - term: "Simple Group'
             formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
-          - term: "Normal Subgroup"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+          - term: 'Normal Subgroup"
+            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
           - term: "Commutator Subgroup"
-            formal_math_path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+            formal_math_path: 'docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
         theorems:
-          - name: "PSL_2(F) is simple for |F| ≥ 4"
+          - name: "PSL_2(F) is simple for |F| ≥ 4'
             formal_math_path: ""
-          - name: "Normal subgroups of SL_2(Z)"
-            formal_math_path: ""
+          - name: 'Normal subgroups of SL_2(Z)"
+            formal_math_path: "'
         examples:
           - "Simplicity of A_n for n ≥ 5"
-          - "The icosahedral group A_5 is simple"
-          - "Normal subgroups of SL_2 and congruence subgroups"
+          - 'The icosahedral group A_5 is simple"
+          - "Normal subgroups of SL_2 and congruence subgroups'
         problem_sets:
           - source: "PS10"
             problems:
-              - number: "1"
-                type: "proof"
+              - number: '1"
+                type: "proof'
                 topic: "Chapter 9, Exercise 1.1 — the classical groups"
-              - number: "2"
-                type: "proof"
+              - number: '2"
+                type: "proof'
                 topic: "Chapter 9, Exercise 3.1 — SU_2"
-              - number: "3"
-                type: "proof"
+              - number: '3"
+                type: "proof'
                 topic: "Chapter 9, Exercise 4.1 — SO_3"
-              - number: "4"
-                type: "proof"
+              - number: '4"
+                type: "proof'
                 topic: "Chapter 9, Exercise 5.1 — one-parameter groups"
-              - number: "5"
-                type: "proof"
+              - number: '5"
+                type: "proof'
                 topic: "Chapter 9, Exercise 6.1 — the Lie algebra"
-          - source: "PS11"
+          - source: 'PS11"
             problems:
-              - number: "1"
+              - number: "1'
                 type: "proof"
-                topic: "Chapter 9, Exercise 7.1 — translation in a group"
-              - number: "2"
+                topic: 'Chapter 9, Exercise 7.1 — translation in a group"
+              - number: "2'
                 type: "proof"
-                topic: "Chapter 9, Exercise 8.1 — normal subgroups of SL_2"
-              - number: "3"
+                topic: 'Chapter 9, Exercise 8.1 — normal subgroups of SL_2"
+              - number: "3'
                 type: "proof"
-                topic: "Chapter 9, Exercise M.1 — the special linear group over finite fields"
+                topic: 'Chapter 9, Exercise M.1 — the special linear group over finite fields"
 
 formal_math_mappings:
   notes: >
@@ -561,33 +561,33 @@ formal_math_mappings:
     to existing FormalMath v2.0 documentation and Lean 4 formalizations.
     Paths are relative to the project root.
   key_documents:
-    - path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"
+    - path: "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md'
       coverage: "Group definitions, subgroups, homomorphisms, quotient groups, Sylow theorems"
-    - path: "docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
-      coverage: "Vector spaces, linear operators, eigenvalues, spectral theorem"
+    - path: 'docs/02-代数结构/02-核心理论/线性代数与矩阵理论/01-线性代数与矩阵理论-国际标准深度扩展版.md"
+      coverage: "Vector spaces, linear operators, eigenvalues, spectral theorem'
     - path: "docs/02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md"
-      coverage: "Fields, field extensions"
-    - path: "docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md"
+      coverage: 'Fields, field extensions"
+    - path: "docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md'
       coverage: "Lie algebras, su_2, so_3"
-    - path: "docs/09-形式化证明/Lean4/FirstIsomorphismTheorem.lean"
-      coverage: "First Isomorphism Theorem for groups"
+    - path: 'docs/09-形式化证明/Lean4/FirstIsomorphismTheorem.lean"
+      coverage: "First Isomorphism Theorem for groups'
     - path: "docs/09-形式化证明/Lean4/CayleyTheorem.lean"
-      coverage: "Cayley's Theorem"
-    - path: "docs/09-形式化证明/Lean4/CayleyHamilton.lean"
+      coverage: 'Cayley's Theorem"
+    - path: "docs/09-形式化证明/Lean4/CayleyHamilton.lean'
       coverage: "Cayley-Hamilton Theorem"
-    - path: "docs/00-核心概念理解三问/11-核心定理多表征/39-Jordan标准形-五种表征.md"
-      coverage: "Jordan Normal Form"
+    - path: 'docs/00-核心概念理解三问/11-核心定理多表征/39-Jordan标准形-五种表征.md"
+      coverage: "Jordan Normal Form'
     - path: "docs/00-核心概念理解三问/11-核心定理多表征/40-谱定理-五种表征.md"
-      coverage: "Spectral Theorem"
+      coverage: 'Spectral Theorem"
 
 # Downstream task guidance
 alignment_quality:
-  level: "semantic"
+  level: "semantic'
   gaps_identified:
     - "Bilinear forms: project docs cover spectral theorem but not general bilinear/Hermitian form axioms in depth."
-    - "Linear groups (SU_2, SO_3, Lie algebras): coverage exists in 李代数 docs but could be strengthened for undergraduate context."
-    - "Symmetry/Isometries/Crystallographic groups: application docs exist but formal definition layer is thin."
+    - 'Linear groups (SU_2, SO_3, Lie algebras): coverage exists in 李代数 docs but could be strengthened for undergraduate context."
+    - "Symmetry/Isometries/Crystallographic groups: application docs exist but formal definition layer is thin.'
   recommended_actions:
     - "Create or enhance docs for bilinear forms under docs/02-代数结构."
-    - "Link SU_2/SO_3 content more explicitly to the linear-algebra curriculum path."
+    - 'Link SU_2/SO_3 content more explicitly to the linear-algebra curriculum path."
     - "Add a symmetry-and-isometries concept sheet bridging group actions and geometry."

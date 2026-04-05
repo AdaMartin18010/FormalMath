@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "quotient-group"
+  id: "quotient-group'
   name:
-    zh: "商群"
-    en: "Quotient Group"
-  msc_codes: ["20A05"]
+    zh: '商群"
+    en: 'Quotient Group"
+  msc_codes: ['20A05']
   
   # ===== 定义层 =====
   definition:
@@ -41,8 +41,8 @@ concept:
   intuition:
     geometric: |
       【几何直觉】折叠/粘合
-      - 把空间按照等价关系"折叠"
-      - 陪集是"被粘在一起"的点
+      - 把空间按照等价关系'折叠'
+      - 陪集是"被粘在一起'的点
       - 商群是折叠后的结构
       
     algebraic: |
@@ -53,43 +53,43 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: "ℤ/nℤ"
-      description: "整数模n，n阶循环群"
-      generator: "[1]"
+    - name: "ℤ/nℤ'
+      description: '整数模n，n阶循环群"
+      generator: "[1]'
       
-    - name: "ℝ/ℤ"
-      description: "圆群，同构于S¹"
+    - name: 'ℝ/ℤ"
+      description: '圆群，同构于S¹"
       
-    - name: "GL(n)/SL(n)"
+    - name: 'GL(n)/SL(n)'
       description: "同构于ℝ*（非零实数乘法群）"
       
-    - name: "Sₙ/Aₙ"
-      description: "同构于ℤ/2ℤ"
+    - name: 'Sₙ/Aₙ'
+      description: "同构于ℤ/2ℤ'
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "first-isomorphism"
-      statement: "G/ker(φ) ≅ im(φ)"
+    - id: "first-isomorphism'
+      statement: 'G/ker(φ) ≅ im(φ)"
       
-    - id: "lagrange"
-      statement: "|G/N| = |G|/|N|"
+    - id: "lagrange'
+      statement: '|G/N| = |G|/|N|"
       
-    - id: "correspondence"
-      statement: "子群一一对应"
+    - id: 'correspondence"
+      statement: '子群一一对应'
       
   # ===== 关系层 =====
   relations:
     requires:
       - id: "normal-subgroup"
-        description: "需要正规子群"
-      - id: "coset"
-        description: "元素是陪集"
+        description: '需要正规子群'
+      - id: "coset'
+        description: "元素是陪集'
         
     related_to:
-      - id: "first-isomorphism-theorem"
-        description: "基本同构定理"
-      - id: "simple-group"
-        description: "没有非平凡商群"
+      - id: 'first-isomorphism-theorem"
+        description: "基本同构定理'
+      - id: 'simple-group"
+        description: '没有非平凡商群"
         
   # ===== 元数据层 =====
   metadata:
@@ -97,5 +97,5 @@ concept:
     importance: 5
     
   mathlib:
-    path: "Mathlib.GroupTheory.QuotientGroup"
+    path: 'Mathlib.GroupTheory.QuotientGroup'
     name: "QuotientGroup"

@@ -35,7 +35,7 @@ groups:
       - alert: HighDiskUsage
         expr: |
           (
-            node_filesystem_size_bytes{mountpoint="/"} - node_filesystem_avail_bytes{mountpoint="/"}
+            node_filesystem_size_bytes{mountpoint="/"} - node_filesystem_avail_bytes{mountpoint="/"
           ) / node_filesystem_size_bytes{mountpoint="/"} * 100 > 85
         for: 5m
         labels:
@@ -49,7 +49,7 @@ groups:
       - alert: CriticalDiskUsage
         expr: |
           (
-            node_filesystem_size_bytes{mountpoint="/"} - node_filesystem_avail_bytes{mountpoint="/"}
+            node_filesystem_size_bytes{mountpoint="/"} - node_filesystem_avail_bytes{mountpoint="/"
           ) / node_filesystem_size_bytes{mountpoint="/"} * 100 > 95
         for: 2m
         labels:
@@ -144,7 +144,7 @@ groups:
           team: infrastructure
         annotations:
           summary: "容器 {{ $labels.name }} CPU 被节流"
-          description: "容器 CPU 被节流的持续时间异常"
+          description: "容器 CPU 被节流的持续时间异常'
 
   - name: database_health
     interval: 30s
@@ -159,7 +159,7 @@ groups:
           team: database
         annotations:
           summary: "PostgreSQL 连接数过高"
-          description: "活跃连接数: {{ $value }}"
+          description: '活跃连接数: {{ $value }}"
 
       # PostgreSQL 慢查询告警
       - alert: PostgreSQLSlowQueries
@@ -170,7 +170,7 @@ groups:
           severity: warning
           team: database
         annotations:
-          summary: "PostgreSQL 存在长时间运行的事务"
+          summary: "PostgreSQL 存在长时间运行的事务'
           description: "最慢事务已运行 {{ $value }} 秒"
 
       # PostgreSQL 复制延迟告警

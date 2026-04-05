@@ -1,9 +1,6 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
----
-msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_primary: "03B45"
+msc_secondary: ["03A05", "03B42", "03B44", "03B60", "68T27"]
 ---
 
 # 模态逻辑与哲学逻辑

@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "functor"
+  id: "functor'
   name:
     zh: "函子"
-    en: "Functor"
-  msc_codes: ["18A22"]
+    en: 'Functor"
+  msc_codes: ["18A22']
   
   # ===== 定义层 =====
   definition:
@@ -44,8 +44,8 @@ concept:
   intuition:
     structural: |
       【结构直觉】保结构映射
-      - 函子保持"箭头如何组合"
-      - 是范畴论中的"同态"
+      - 函子保持'箭头如何组合"
+      - 是范畴论中的"同态'
       - 类比：群同态保运算
       
     categorical: |
@@ -57,28 +57,28 @@ concept:
   # ===== 例子层 =====
   examples:
     - name: "恒等函子 Id_C"
-      description: "C → C，什么都不变"
+      description: 'C → C，什么都不变"
       
-    - name: "遗忘函子 Grp → Set"
+    - name: "遗忘函子 Grp → Set'
       description: "群映到其底集合"
       
-    - name: "自由函子 Set → Grp"
-      description: "集合映到自由群"
+    - name: '自由函子 Set → Grp"
+      description: "集合映到自由群'
       
     - name: "Hom函子"
-      description: "Hom(A,-): C → Set"
-      property: "协变"
+      description: 'Hom(A,-): C → Set"
+      property: "协变'
       
     - name: "基本群函子"
-      description: "π₁: Top* → Grp"
+      description: 'π₁: Top* → Grp"
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "yoneda-lemma"
+    - id: "yoneda-lemma'
       statement: "Nat(Hom(A,-), F) ≅ F(A)"
       
-    - id: "adjoint-functor"
-      statement: "伴随函子的存在性"
+    - id: 'adjoint-functor"
+      statement: "伴随函子的存在性'
       
   # ===== 关系层 =====
   relations:
@@ -86,8 +86,8 @@ concept:
       - id: "category"
         
     leads_to:
-      - id: "natural-transformation"
-      - id: "adjoint-functor"
+      - id: 'natural-transformation"
+      - id: "adjoint-functor'
       - id: "limit"
         
   # ===== 元数据层 =====
@@ -96,5 +96,5 @@ concept:
     importance: 5
     
   mathlib:
-    path: "Mathlib.CategoryTheory.Functor.Basic"
+    path: 'Mathlib.CategoryTheory.Functor.Basic"
     name: "CategoryTheory.Functor"

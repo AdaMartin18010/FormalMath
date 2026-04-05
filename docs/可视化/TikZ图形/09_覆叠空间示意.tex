@@ -1,0 +1,150 @@
+% 覆叠空间示意 (Covering Space)
+% 描述: 展示覆叠空间的结构、层变换和提升性质
+% 数学概念: 覆叠空间、覆叠映射、层变换、单值群
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0
+]
+
+% ============= 左侧: 覆叠空间图示 =============
+\begin{scope}[xshift=-5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {覆叠空间 $p: \tilde{X} \to X$};
+    
+    % 覆叠空间 (螺旋线表示)
+    \foreach \y in {-1.5, 0, 1.5} {
+        \draw[color=green!60!black, line width=1pt] 
+            (-2, \y) -- (2, \y);
+    }
+    
+    % 覆叠空间层标记
+    \foreach \y/\n in {-1.5/-1, 0/0, 1.5/1} {
+        \node[color=green!60!black, font=\tiny, left] at (-2.1, \y) {$\tilde{X}_{\n}$};
+    }
+    
+    % 覆叠空间中的点
+    \foreach \x in {-1, 0, 1} {
+        \foreach \y in {-1.5, 0, 1.5} {
+            \fill[green!70!black] (\x, \y) circle (2pt);
+        }
+    }
+    
+    % 层变换箭头
+    \draw[<->, color=orange!80!black, line width=1pt] (-2.3, -1.3) -- (-2.3, 1.3);
+    \node[color=orange!80!black, font=\scriptsize, rotate=90] at (-2.6, 0) {$\tau$};
+    
+    % 覆叠空间标签
+    \node[color=green!60!black, font=\small] at (0, 2.2) {$\tilde{X}$ (3层覆叠)};
+    
+    % 投影箭头
+    \draw[->, color=purple!70!black, line width=1.5pt] (0, -2) -- (0, -2.8);
+    \node[color=purple!70!black, font=\small, right] at (0.1, -2.4) {$p$};
+    
+    % 底空间
+    \draw[color=blue!60!black, line width=2pt] (-2, -3.5) -- (2, -3.5);
+    \node[color=blue!60!black, font=\small] at (2.3, -3.5) {$X$};
+    
+    % 底空间中的点
+    \foreach \x in {-1, 0, 1} {
+        \fill[blue!70!black] (\x, -3.5) circle (3pt);
+    }
+    
+    % 开集标记
+    \draw[color=red!70!black, line width=1pt, decorate, decoration={brace, amplitude=5pt}]
+        (0.3, -3.8) -- (1.3, -3.8);
+    \node[color=red!70!black, font=\tiny, below] at (0.8, -4) {$U$};
+\end{scope}
+
+% ============= 中间: 圆周覆叠 =============
+\begin{scope}[xshift=1cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {万有覆叠 $p: \mathbb{R} \to S^1$};
+    
+    % 实直线 (覆叠空间)
+    \draw[color=green!60!black, line width=1.5pt, ->] (-2.2, 1.5) -- (2.2, 1.5);
+    \foreach \x in {-2, -1, 0, 1, 2} {
+        \fill[green!70!black] (\x, 1.5) circle (2pt);
+    }
+    \node[color=green!60!black, font=\small] at (2.4, 1.5) {$\mathbb{R}$};
+    
+    % 整数标记
+    \node[color=green!60!black, font=\tiny, below] at (-2, 1.3) {$-2$};
+    \node[color=green!60!black, font=\tiny, below] at (-1, 1.3) {$-1$};
+    \node[color=green!60!black, font=\tiny, below] at (0, 1.3) {$0$};
+    \node[color=green!60!black, font=\tiny, below] at (1, 1.3) {$1$};
+    \node[color=green!60!black, font=\tiny, below] at (2, 1.3) {$2$};
+    
+    % 投影线
+    \draw[color=gray!50, line width=0.5pt] (-2, 1.3) -- (-1.5, 0.3);
+    \draw[color=gray!50, line width=0.5pt] (-1, 1.3) -- (-0.8, 0.3);
+    \draw[color=gray!50, line width=0.5pt] (0, 1.3) -- (0, 0.3);
+    \draw[color=gray!50, line width=0.5pt] (1, 1.3) -- (0.8, 0.3);
+    \draw[color=gray!50, line width=0.5pt] (2, 1.3) -- (1.5, 0.3);
+    
+    % 圆周 (底空间)
+    \draw[color=blue!60!black, line width=2pt] (0, -0.8) circle (1);
+    \node[color=blue!60!black, font=\small] at (1.3, -0.8) {$S^1$};
+    
+    % 基点
+    \fill[red!70!black] (1, -0.8) circle (3pt);
+    \node[right, color=red!70!black, font=\small] at (1.1, -0.8) {$x_0$};
+    
+    % 投影公式
+    \node[anchor=north, font=\scriptsize] at (0, -2.2) {$p(t) = e^{2\pi i t}$};
+    \node[anchor=north, font=\scriptsize, text width=5cm, align=center] 
+        at (0, -2.8) {$p^{-1}(x_0) = \mathbb{Z}$ (纤维)};
+\end{scope}
+
+% ============= 右侧: 层变换 =============
+\begin{scope}[xshift=5.5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {层变换 (Deck变换)};
+    
+    % 覆叠空间
+    \draw[color=green!60!black, line width=1pt] (-1.5, 1) -- (1.5, 1);
+    \draw[color=green!60!black, line width=1pt] (-1.5, -0.5) -- (1.5, -0.5);
+    
+    % 层变换箭头
+    \draw[->, color=orange!80!black, line width=1.5pt] 
+        (-0.5, 0.8) -- (0.5, -0.3);
+    \node[color=orange!80!black, font=\small, right] at (0.2, 0.3) {$\tau_n$};
+    
+    % 点映射
+    \fill[green!70!black] (-0.5, 1) circle (2pt);
+    \fill[green!70!black] (0.5, -0.5) circle (2pt);
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize, text width=4.5cm, align=center] 
+        at (0, -1.2) {$\tau_n: \tilde{X} \to \tilde{X}$\\[3pt]
+                       满足 $p \circ \tau_n = p$\\[3pt]
+                       对$\mathbb{R} \to S^1$: \\
+                       $\tau_n(t) = t + n$};
+    
+    % 层变换群
+    \node[anchor=north, draw=purple!30, fill=purple!5, rounded corners, inner sep=5pt, font=\scriptsize] 
+        at (0, -3.2) {Deck变换群 $G(\tilde{X}) \cong \pi_1(X)$};
+\end{scope}
+
+% ============= 底部: 覆叠空间分类 =============
+\node[anchor=north, font=\small, draw=purple!30, fill=purple!5, rounded corners, inner sep=10pt] 
+    at (4, -4.5) {
+    \begin{tabular}{ll}
+        \textbf{覆叠空间分类定理:} & \\
+        覆叠 $p: (\tilde{X}, \tilde{x}_0) \to (X, x_0)$ \\
+        $\Leftrightarrow$ \\
+        子群 $H = p_*(\pi_1(\tilde{X})) \subset \pi_1(X)$ \\
+        \\[3pt]
+        万有覆叠: $\tilde{X}$单连通 $\Leftrightarrow H = \{1\}$ \\
+        正则覆叠: $H \triangleleft \pi_1(X)$ \\ 
+        层变换群: $G(\tilde{X}) \cong N(H)/H$
+    \end{tabular}
+};
+
+\end{tikzpicture}
+\end{document}

@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "fundamental-group"
+  id: "fundamental-group'
   name:
-    zh: "基本群"
-    en: "Fundamental Group"
-  msc_codes: ["55Q05"]
+    zh: '基本群"
+    en: 'Fundamental Group"
+  msc_codes: ['55Q05']
   
   # ===== 定义层 =====
   definition:
@@ -29,7 +29,7 @@ concept:
       - 圆盘上的圈可以收缩成点
       - 圆环上绕洞一圈不能收缩
       
-      基本群记录了有多少种"本质不同"的圈。
+      基本群记录了有多少种'本质不同'的圈。
       
     lean: |
       -- 道路同伦类
@@ -40,8 +40,8 @@ concept:
   intuition:
     geometric: |
       【几何直觉】绕洞
-      - π₁ = 0 意味着"没有一维洞"
-      - π₁ = ℤ 意味着"有一个洞可以绕"
+      - π₁ = 0 意味着"没有一维洞'
+      - π₁ = ℤ 意味着"有一个洞可以绕'
       - 绕的方向和圈数很重要
       
     algebraic: |
@@ -52,51 +52,51 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: "ℝⁿ 或凸集"
-      group: "π₁ = 0（平凡）"
-      reason: "任何圈都可收缩"
+    - name: 'ℝⁿ 或凸集"
+      group: "π₁ = 0（平凡）'
+      reason: '任何圈都可收缩"
       
-    - name: "圆 S¹"
-      group: "π₁(S¹) ≅ ℤ"
+    - name: '圆 S¹"
+      group: 'π₁(S¹) ≅ ℤ'
       generator: "绕一圈"
       
-    - name: "环面 T²"
-      group: "π₁(T²) ≅ ℤ × ℤ"
-      generators: "经线圈和纬线圈"
+    - name: '环面 T²'
+      group: "π₁(T²) ≅ ℤ × ℤ'
+      generators: "经线圈和纬线圈'
       
-    - name: "射影平面 ℝP²"
-      group: "π₁(ℝP²) ≅ ℤ/2ℤ"
+    - name: '射影平面 ℝP²"
+      group: "π₁(ℝP²) ≅ ℤ/2ℤ'
       
-    - name: "八字形 S¹ ∨ S¹"
-      group: "π₁ ≅ F₂（自由群）"
+    - name: '八字形 S¹ ∨ S¹"
+      group: 'π₁ ≅ F₂（自由群）"
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "van-kampen"
+    - id: 'van-kampen'
       statement: "计算并集的基本群"
       
-    - id: "covering-space-correspondence"
-      statement: "覆盖空间 ↔ π₁的子群"
+    - id: 'covering-space-correspondence'
+      statement: "覆盖空间 ↔ π₁的子群'
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "topological-space"
-        description: "定义空间"
-      - id: "path"
-        description: "道路概念"
-      - id: "group"
-        description: "群结构"
+      - id: "topological-space'
+        description: '定义空间"
+      - id: "path'
+        description: '道路概念"
+      - id: 'group"
+        description: '群结构'
         
     related_to:
       - id: "homology"
-        description: "π₁^{ab} ≅ H₁"
-      - id: "higher-homotopy"
-        description: "πₙ (n > 1)"
+        description: 'π₁^{ab} ≅ H₁'
+      - id: "higher-homotopy'
+        description: "πₙ (n > 1)'
         
   # ===== 元数据层 =====
   metadata:
     difficulty: 3
     importance: 5
-    prerequisites: ["topological-space", "group"]
-    leads_to: ["higher-homotopy", "covering-spaces"]
+    prerequisites: ['topological-space", "group']
+    leads_to: ['higher-homotopy", 'covering-spaces"]

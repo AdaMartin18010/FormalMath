@@ -5,9 +5,9 @@
 theorem:
   id: "quadratic-reciprocity'
   name:
-    zh: "二次互反律"
+    zh: '二次互反律"
     en: 'Quadratic Reciprocity"
-  msc_codes: ["11A15']
+  msc_codes: ['11A15']
   
   # ===== 陈述层 =====
   statement:
@@ -40,11 +40,11 @@ theorem:
           
   # ===== 证明层 =====
   proof:
-    main_strategy: '多种证明方法"
+    main_strategy: '多种证明方法'
     
     approaches:
       - name: "Gauss引理'
-      - name: "Gauss和"
+      - name: "Gauss和'
       - name: 'Eisenstein证明（几何）"
       - name: "类域论（概念性最强）'
       
@@ -62,24 +62,24 @@ theorem:
     intuitive: |
       【直觉表征】
       
-      二次剩余的"对称性"：
+      二次剩余的'对称性"：
       p是q的二次剩余 ⟺ q是p的二次剩余
       （除非p≡q≡3 (mod 4)时翻转）
       
   # ===== 应用层 =====
   applications:
     - description: '判断二次剩余"
-    - description: "因数分解算法'
+    - description: '因数分解算法'
     - description: "密码学应用"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: 'prime-number"
+      - id: 'prime-number'
       - id: "modular-arithmetic'
         
     related_to:
-      - id: "class-field-theory"
+      - id: "class-field-theory'
         description: '高次互反律"
         
   # ===== 元数据层 =====
@@ -89,4 +89,4 @@ theorem:
     history:
       discoverer: "Gauss'
       year: 1796
-      note: "Gauss称之为'黄金定理'"
+      note: 'Gauss称之为'黄金定理'"

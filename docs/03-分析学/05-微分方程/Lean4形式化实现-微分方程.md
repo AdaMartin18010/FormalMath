@@ -1,6 +1,8 @@
 ---
+title: "微分方程 - Lean4形式化实现"
 msc_primary: "35-XX"
 msc_secondary: ['35Bxx', '35-XX', '60Gxx']
+processed_at: '2026-04-05'
 ---
 msc_primary: "35-XX"
 msc_secondary: ['35Bxx', '35-XX', '60Gxx']

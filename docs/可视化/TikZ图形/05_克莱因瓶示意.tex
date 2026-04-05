@@ -1,0 +1,137 @@
+% 克莱因瓶示意 (Klein Bottle)
+% 描述: 展示克莱因瓶的构造，强调其无边界且不可定向的性质
+% 数学概念: 克莱因瓶、闭曲面、不可定向、商空间、浸入
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0
+]
+
+% ============= 左侧: 二维商空间表示 =============
+\begin{scope}[xshift=-5cm, yshift=0.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {商空间构造};
+    
+    % 矩形
+    \fill[cyan!15] (-2, -1.5) rectangle (2, 1.5);
+    \draw[line width=1.5pt, color=blue!60!black] (-2, -1.5) rectangle (2, 1.5);
+    
+    % 水平边 (反向)
+    \draw[color=green!60!black, line width=2pt, ->] (-1.8, 1.5) -- (-0.2, 1.5);
+    \draw[color=green!60!black, line width=2pt, ->] (0.2, 1.5) -- (1.8, 1.5);
+    \draw[color=green!60!black, line width=2pt, ->] (-1.8, -1.5) -- (-0.2, -1.5);
+    \draw[color=green!60!black, line width=2pt, ->] (0.2, -1.5) -- (1.8, -1.5);
+    \node[color=green!60!black, above] at (0, 1.5) {$a$};
+    \node[color=green!60!black, below] at (0, -1.5) {$a^{-1}$};
+    
+    % 垂直边 (反向)
+    \draw[color=red!70!black, line width=2pt, ->] (-2, -1.3) -- (-2, 1.3);
+    \draw[color=red!70!black, line width=2pt, ->] (2, 1.3) -- (2, -1.3);
+    \node[color=red!70!black, left] at (-2, 0) {$b$};
+    \node[color=red!70!black, right] at (2, 0) {$b^{-1}$};
+    
+    % 扭曲标记
+    \node[font=\scriptsize, color=orange!80!black] at (0, 0) {\textbf{两边都反向粘合}};
+    
+    % 公式
+    \node[anchor=north, font=\small] at (0, -2.2) {$K = I \times I / \sim$};
+    \node[anchor=north, font=\scriptsize, text width=5cm, align=center] 
+        at (0, -2.8) {$(0, t) \sim (1, t)$, $(s, 0) \sim (1-s, 1)$};
+\end{scope}
+
+% ============= 中间: "8字形"浸入表示 =============
+\begin{scope}[xshift=0.5cm, yshift=0.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {浸入 $\mathbb{R}^3$};
+    
+    % 克莱因瓶的简化表示 (类似两个莫比乌斯带粘合)
+    % 底部大圆
+    \draw[color=blue!60!black, line width=1.5pt] 
+        (0, -1.5) ellipse (1.5 and 0.4);
+    
+    % 瓶身扭曲上升
+    \draw[color=blue!60!black, line width=1pt, fill=cyan!15, opacity=0.7]
+        (-1.5, -1.5) .. controls (-1.8, -0.5) and (-1.5, 0.5) .. (-0.8, 0.8)
+                     .. controls (0, 1.1) and (0.8, 0.8) .. (1.5, 0.5)
+                     .. controls (1.8, 0.2) and (1.5, -0.5) .. (1.5, -1.5);
+    
+    % 瓶颈穿过自身
+    \draw[color=blue!60!black, line width=1pt, dashed, opacity=0.5]
+        (-0.3, 0.3) .. controls (0, 0.5) .. (0.3, 0.3);
+    
+    % 顶部小圆 (瓶口)
+    \draw[color=blue!60!black, line width=1.5pt] 
+        (0, 0.8) ellipse (0.8 and 0.25);
+    
+    % 指示箭头
+    \draw[->, color=orange!80!black, line width=1.2pt] 
+        (1.8, -0.5) arc (-30:30:1 and 0.8);
+    \node[color=orange!80!black, font=\scriptsize, right] at (2.2, -0.2) {自交};
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize, text width=5cm, align=center] 
+        at (0, -2.5) {无法无自交地嵌入$\mathbb{R}^3$，\\
+                       但可以嵌入$\mathbb{R}^4$};
+\end{scope}
+
+% ============= 右侧: 两个莫比乌斯带 =============
+\begin{scope}[xshift=5.5cm, yshift=0.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {分解结构};
+    
+    % 两个莫比乌斯带示意图
+    % 第一个莫比乌斯带
+    \fill[purple!20, opacity=0.6] (-1.5, 0.5) ellipse (1.2 and 0.6);
+    \draw[color=purple!70!black, line width=1pt] (-1.5, 0.5) ellipse (1.2 and 0.6);
+    \node[font=\scriptsize, color=purple!70!black] at (-1.5, 0.5) {$M_1$};
+    
+    % 第二个莫比乌斯带
+    \fill[orange!20, opacity=0.6] (0.8, 0.5) ellipse (1.2 and 0.6);
+    \draw[color=orange!70!black, line width=1pt] (0.8, 0.5) ellipse (1.2 and 0.6);
+    \node[font=\scriptsize, color=orange!70!black] at (0.8, 0.5) {$M_2$};
+    
+    % 粘合指示
+    \draw[<->, line width=1.5pt, color=red!70!black] 
+        (-0.3, 0.5) -- (0.2, 0.5);
+    \node[color=red!70!black, font=\scriptsize, above] at (-0.05, 0.6) {沿边界粘合};
+    
+    % 等式
+    \node[anchor=north, font=\small] at (0, -0.8) {$K = M_1 \cup_{\partial} M_2$};
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize, text width=5cm, align=center] 
+        at (0, -1.5) {克莱因瓶是两个莫比乌斯带\\沿边界粘合而成};
+\end{scope}
+
+% ============= 底部: 数学性质 =============
+\node[anchor=north, font=\small, draw=cyan!30, fill=cyan!5, rounded corners, inner sep=10pt] 
+    at (4, -4.5) {
+    \begin{tabular}{ll}
+        \textbf{拓扑性质:} & \\
+        边界: & $\partial K = \emptyset$ (闭曲面) \\
+        可定向性: & 不可定向 \\
+        亏格: & 不可定向亏格 2 \\
+        Euler示性数: & $\chi(K) = 0$ \\
+        基本群: & $\pi_1(K) = \langle a, b \mid aba^{-1}b = 1 \rangle$ \\
+        分类: & 不可定向闭曲面
+    \end{tabular}
+};
+
+% ============= 基本群图示 =============
+\begin{scope}[xshift=-5cm, yshift=-4.5cm]
+    \node[anchor=north west, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{基本群:} \\
+        $\pi_1(K) = \langle a, b \mid abab^{-1} = 1 \rangle$\\[3pt]
+        非阿贝尔群，\\
+        包含挠元
+    };
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

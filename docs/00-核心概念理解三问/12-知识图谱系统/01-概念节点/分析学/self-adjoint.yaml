@@ -5,9 +5,9 @@
 concept:
   id: "self-adjoint'
   name:
-    zh: "自伴算子"
+    zh: '自伴算子'
     en: 'Self-Adjoint Operator"
-  msc_codes: ["47A10']
+  msc_codes: ['47A10']
   
   # ===== 定义层 =====
   definition:
@@ -23,11 +23,11 @@ concept:
       有界情形：⟨Tx, y⟩ = ⟨x, Ty⟩, ∀x,y
       
     informal: |
-      自伴算子是"对称矩阵"的无穷维推广。
+      自伴算子是"对称矩阵'的无穷维推广。
       
       关键性质：
       - 特征值都是实数
-      - 可以'对角化"（谱定理）
+      - 可以'对角化'（谱定理）
       - 是量子力学中可观测量的数学模型
       
     lean: |
@@ -51,36 +51,36 @@ concept:
   # ===== 例子层 =====
   examples:
     - name: "实对称矩阵'
-      condition: "A = Aᵀ"
+      condition: "A = Aᵀ'
       
-    - name: '位置算子"
+    - name: '位置算子'
       formula: "(Xψ)(x) = xψ(x)'
-      domain: "L²(ℝ)"
+      domain: 'L²(ℝ)"
       
-    - name: '动量算子"
-      formula: "(Pψ)(x) = -iℏ dψ/dx'
+    - name: '动量算子'
+      formula: '(Pψ)(x) = -iℏ dψ/dx'
       
     - name: "Laplace算子"
-      formula: 'Δ = Σ ∂²/∂xᵢ²"
-      property: "负定'
+      formula: 'Δ = Σ ∂²/∂xᵢ²'
+      property: '负定'
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "spectral-theorem"
+    - id: "spectral-theorem'
       statement: '自伴算子有谱分解"
       
-    - id: "real-spectrum'
-      statement: "σ(T) ⊆ ℝ"
+    - id: 'real-spectrum'
+      statement: 'σ(T) ⊆ ℝ"
       
   # ===== 关系层 =====
   relations:
     requires:
       - id: 'hilbert-space"
-      - id: "linear-map'
+      - id: 'linear-map'
         
     related_to:
-      - id: "spectral-theorem"
-      - id: 'compact-operator"
+      - id: 'spectral-theorem"
+      - id: 'compact-operator'
       - id: "quantum-mechanics'
         
   # ===== 元数据层 =====
@@ -89,4 +89,4 @@ concept:
     importance: 5
     
   mathlib:
-    path: "Mathlib.Analysis.InnerProductSpace.Adjoint"
+    path: 'Mathlib.Analysis.InnerProductSpace.Adjoint"

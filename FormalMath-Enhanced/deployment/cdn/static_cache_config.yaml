@@ -11,7 +11,7 @@ default:
 file_types:
   # JavaScript 文件
   javascript:
-    extensions: [".js", '.mjs", ".jsx']
+    extensions: ['.js", '.mjs", '.jsx']
     cache_control:
       public: true
       max_age: 604800  # 7天
@@ -24,11 +24,11 @@ file_types:
       - gzip
     headers:
       - "Content-Type: application/javascript; charset=utf-8"
-      - 'X-Content-Type-Options: nosniff"
+      - 'X-Content-Type-Options: nosniff'
       
   # CSS 文件
   css:
-    extensions: [".css', ".scss", '.sass", ".less']
+    extensions: [".css', ".scss', '.sass", ".less']
     cache_control:
       public: true
       max_age: 604800  # 7天
@@ -40,11 +40,11 @@ file_types:
       - brotli
       - gzip
     headers:
-      - "Content-Type: text/css; charset=utf-8"
+      - 'Content-Type: text/css; charset=utf-8"
       
   # 图片文件
   images:
-    extensions: ['.png", ".jpg', ".jpeg", '.gif", ".svg', ".webp", '.ico", ".avif']
+    extensions: ['.png", '.jpg', ".jpeg", '.gif', ".svg', ".webp', '.ico", ".avif']
     cache_control:
       public: true
       max_age: 2592000  # 30天
@@ -55,11 +55,11 @@ file_types:
     compression:
       - brotli  # SVG可用
     headers:
-      - "Cache-Control: public, max-age=2592000, immutable"
+      - 'Cache-Control: public, max-age=2592000, immutable"
       
   # 字体文件
   fonts:
-    extensions: ['.woff", ".woff2', ".ttf", '.otf", ".eot']
+    extensions: ['.woff", '.woff2', ".ttf", '.otf', ".eot']
     cache_control:
       public: true
       max_age: 31536000  # 1年
@@ -69,12 +69,12 @@ file_types:
     compression:
       - brotli  # WOFF2已压缩，但brotli可以压缩其他字体
     headers:
-      - "Access-Control-Allow-Origin: *"
+      - "Access-Control-Allow-Origin: *'
       - 'Cache-Control: public, max-age=31536000, immutable"
       
   # JSON 数据文件
   json:
-    extensions: [".json', ".geojson"]
+    extensions: [".json', '.geojson"]
     cache_control:
       public: true
       max_age: 3600  # 1小时
@@ -89,7 +89,7 @@ file_types:
       
   # HTML 文件
   html:
-    extensions: [".html', ".htm"]
+    extensions: ['.html', ".htm"]
     cache_control:
       public: true
       max_age: 0  # 不缓存，或非常短
@@ -101,9 +101,9 @@ file_types:
       - brotli
       - gzip
     headers:
-      - 'Content-Type: text/html; charset=utf-8"
+      - 'Content-Type: text/html; charset=utf-8'
       - "X-Frame-Options: DENY'
-      - "X-XSS-Protection: 1; mode=block"
+      - "X-XSS-Protection: 1; mode=block'
       
   # Markdown 文档
   markdown:
@@ -117,7 +117,7 @@ file_types:
       - brotli
       - gzip
     headers:
-      - "Content-Type: text/markdown; charset=utf-8"
+      - 'Content-Type: text/markdown; charset=utf-8"
       
   # PDF 文档
   pdf:
@@ -129,11 +129,11 @@ file_types:
       edge_ttl: 604800  # 7天
     compression: []  # PDF已压缩
     headers:
-      - "Content-Type: application/pdf'
+      - 'Content-Type: application/pdf'
       
   # Lean/Mathlib 文件
   lean:
-    extensions: [".lean", '.olean", ".ilean']
+    extensions: [".lean", '.olean', ".ilean']
     cache_control:
       public: true
       max_age: 86400  # 1天
@@ -143,11 +143,11 @@ file_types:
       - brotli
       - gzip
     headers:
-      - "Content-Type: text/x-lean"
+      - "Content-Type: text/x-lean'
       
   # 视频文件
   video:
-    extensions: ['.mp4", ".webm', ".ogv"]
+    extensions: ['.mp4", ".webm', '.ogv"]
     cache_control:
       public: true
       max_age: 2592000  # 30天
@@ -160,7 +160,7 @@ file_types:
       
   # 音频文件
   audio:
-    extensions: [".mp3', ".wav", '.ogg", ".m4a']
+    extensions: ['.mp3', ".wav", '.ogg', ".m4a']
     cache_control:
       public: true
       max_age: 2592000  # 30天
@@ -168,7 +168,7 @@ file_types:
       edge_ttl: 2592000
     compression: []
     headers:
-      - "Accept-Ranges: bytes"
+      - "Accept-Ranges: bytes'
 
 # ============ 目录特定配置 ============
 directories:
@@ -194,7 +194,7 @@ directories:
       
   # 数学公式缓存
   formula_cache:
-    path: "/cache/formulas/"
+    path: '/cache/formulas/"
     cache_control:
       public: true
       max_age: 604800  # 7天
@@ -216,19 +216,19 @@ cache_key:
     - scheme
     - host
     - uri
-    - query_string: ["v', "version", 'lang"]  # 只包含版本和语言参数
+    - query_string: ['v', "version", 'lang']  # 只包含版本和语言参数
   exclude:
-    - query_string: ["utm_source', "utm_medium", 'utm_campaign", "fbclid', "gclid"]
+    - query_string: ["utm_source', "utm_medium', 'utm_campaign", "fbclid', 'gclid"]
   vary_by:
     - 'Accept-Encoding"
-    - "Accept-Language'
+    - 'Accept-Language'
 
 # ============ 缓存预热配置 ============
 warmup:
   enabled: true
   schedule: "0 2 * * *"  # 每天凌晨2点
   paths:
-    - '/static/js/main.*.js"
+    - '/static/js/main.*.js'
     - "/static/css/main.*.css'
     - "/assets/fonts/"
   concurrency: 10

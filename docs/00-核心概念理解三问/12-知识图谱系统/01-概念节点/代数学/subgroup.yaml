@@ -5,9 +5,9 @@
 concept:
   id: "subgroup'
   name:
-    zh: "子群"
+    zh: '子群'
     en: 'Subgroup"
-  msc_codes: ["20A05']
+  msc_codes: ['20A05']
   
   # ===== 定义层 =====
   definition:
@@ -21,7 +21,7 @@ concept:
       H ≤ G ⟺ ∀a, b ∈ H: a·b⁻¹ ∈ H
       
     informal: |
-      子群是"群中的群"——
+      子群是"群中的群'——
       大群里面一部分元素自己也构成群。
       
       例子：
@@ -47,44 +47,44 @@ concept:
     algebraic: |
       【代数直觉】结构保持
       - 子群继承群运算
-      - 运算表的'子表"
+      - 运算表的'子表'
       - 保持所有群公理
       
   # ===== 例子层 =====
   examples:
     - name: "平凡子群'
-      description: "{e} 和 G 本身"
+      description: "{e} 和 G 本身'
       
-    - name: 'nℤ ≤ ℤ"
+    - name: 'nℤ ≤ ℤ'
       description: "n的倍数是整数的子群'
       
-    - name: "SL(n) ≤ GL(n)"
-      description: '特殊线性群（行列式为1）"
+    - name: 'SL(n) ≤ GL(n)"
+      description: '特殊线性群（行列式为1）'
       
-    - name: "中心 Z(G)'
+    - name: '中心 Z(G)'
       description: "与所有元素交换的元素"
-      formula: 'Z(G) = {z : ∀g, zg = gz}"
+      formula: 'Z(G) = {z : ∀g, zg = gz}'
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "lagrange'
-      statement: "|H| 整除 |G|"
+    - id: 'lagrange'
+      statement: "|H| 整除 |G|'
       
     - id: 'subgroup-criterion"
-      statement: "a·b⁻¹ ∈ H ⟺ H是子群'
+      statement: 'a·b⁻¹ ∈ H ⟺ H是子群'
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "group"
+      - id: 'group"
         description: '子群是群的子结构"
         
     leads_to:
-      - id: "coset'
-        description: "陪集概念"
-      - id: 'normal-subgroup"
+      - id: 'coset'
+        description: '陪集概念"
+      - id: 'normal-subgroup'
         description: "正规子群'
-      - id: "quotient-group"
+      - id: 'quotient-group'
         description: '商群"
         
   # ===== 元数据层 =====
@@ -94,5 +94,5 @@ concept:
     prerequisites: ["group']
     
   mathlib:
-    path: "Mathlib.GroupTheory.Subgroup.Basic"
+    path: 'Mathlib.GroupTheory.Subgroup.Basic'
     name: 'Subgroup"

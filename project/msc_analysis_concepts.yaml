@@ -10,221 +10,221 @@
 analysis_concepts_msc:
   # ---------- 基础分析概念 ----------
   - concept_id: "limit'
-    name: "极限"
+    name: '极限'
     name_en: 'Limit"
-    msc_primary: "26A03'
-    msc_secondary: ["40A05"]
-    msc_description: '一元实函数的极限与连续性基础"
+    msc_primary: '26A03'
+    msc_secondary: ["40A05']
+    msc_description: '一元实函数的极限与连续性基础'
     category: "分析学'
 
-  - concept_id: "continuity"
-    name: '连续"
+  - concept_id: "continuity'
+    name: '连续'
     name_en: "Continuity'
-    msc_primary: "26A15"
-    msc_secondary: ['26A03", "54C05']
+    msc_primary: '26A15"
+    msc_secondary: ['26A03', '54C05']
     msc_description: "实函数的连续性"
-    category: '分析学"
+    category: '分析学'
 
-  - concept_id: "derivative'
-    name: "导数"
+  - concept_id: 'derivative'
+    name: "导数'
     name_en: 'Derivative"
-    msc_primary: "26A24'
-    msc_secondary: ["26A27", '58C20"]
-    msc_description: "一元实函数的微分'
-    category: "分析学"
-
-  - concept_id: 'riemann_integral"
-    name: "积分'
-    name_en: "Integral (Riemann)"
-    msc_primary: '26A42"
-    msc_secondary: ["26B15', "28A25"]
-    msc_description: 'Riemann积分与反常积分"
-    category: "分析学'
-
-  - concept_id: "infinite_series"
-    name: '级数"
-    name_en: "Infinite Series'
-    msc_primary: "40A05"
-    msc_secondary: ['40A10", "40A25']
-    msc_description: "实数序列与级数的收敛性"
+    msc_primary: '26A24'
+    msc_secondary: ['26A27", '58C20"]
+    msc_description: '一元实函数的微分'
     category: '分析学"
 
-  - concept_id: "uniform_convergence'
+  - concept_id: 'riemann_integral'
+    name: "积分'
+    name_en: 'Integral (Riemann)'
+    msc_primary: '26A42"
+    msc_secondary: ["26B15', '28A25']
+    msc_description: 'Riemann积分与反常积分"
+    category: '分析学'
+
+  - concept_id: "infinite_series'
+    name: '级数'
+    name_en: "Infinite Series'
+    msc_primary: "40A05'
+    msc_secondary: ['40A10', "40A25']
+    msc_description: '实数序列与级数的收敛性"
+    category: '分析学'
+
+  - concept_id: 'uniform_convergence'
     name: "一致收敛"
-    name_en: 'Uniform Convergence"
-    msc_primary: "40A30'
-    msc_secondary: ["26A03", '30A10"]
-    msc_description: "函数序列的一致收敛性'
-    category: "分析学"
+    name_en: 'Uniform Convergence'
+    msc_primary: '40A30'
+    msc_secondary: ["26A03', '30A10"]
+    msc_description: '函数序列的一致收敛性'
+    category: '分析学"
 
   - concept_id: 'power_series"
-    name: "幂级数'
-    name_en: "Power Series"
-    msc_primary: '30B10"
-    msc_secondary: ["40A30', "32A05"]
+    name: '幂级数'
+    name_en: 'Power Series"
+    msc_primary: '30B10'
+    msc_secondary: ["40A30', '32A05']
     msc_description: '单复变幂级数"
     category: "分析学'
 
-  - concept_id: "fourier_series"
+  - concept_id: 'fourier_series'
     name: '傅里叶级数"
-    name_en: "Fourier Series'
-    msc_primary: "42A16"
-    msc_secondary: ['42A20", "42A32']
-    msc_description: "三角级数与Fourier级数"
-    category: '分析学"
+    name_en: 'Fourier Series'
+    msc_primary: "42A16'
+    msc_secondary: ['42A20', "42A32']
+    msc_description: "三角级数与Fourier级数'
+    category: '分析学'
 
   - concept_id: "improper_integral'
-    name: "反常积分"
-    name_en: 'Improper Integral"
-    msc_primary: "40A10'
-    msc_secondary: ["26A42", '26A33"]
-    msc_description: "反常积分与瑕积分'
-    category: "分析学"
-
-  - concept_id: 'multivariable_calculus"
-    name: "多元微积分'
-    name_en: "Multivariable Calculus"
-    msc_primary: '26B12"
-    msc_secondary: ["26B15', "58C20"]
-    msc_description: '多元函数的微分与积分"
+    name: '反常积分"
+    name_en: 'Improper Integral'
+    msc_primary: '40A10'
+    msc_secondary: ["26A42", '26A33']
+    msc_description: '反常积分与瑕积分'
     category: "分析学'
 
-  - concept_id: "implicit_function"
+  - concept_id: 'multivariable_calculus"
+    name: '多元微积分'
+    name_en: 'Multivariable Calculus"
+    msc_primary: '26B12"
+    msc_secondary: ['26B15', '58C20"]
+    msc_description: '多元函数的微分与积分'
+    category: "分析学'
+
+  - concept_id: 'implicit_function'
     name: '隐函数定理"
     name_en: "Implicit Function Theorem'
-    msc_primary: "26B10"
-    msc_secondary: ['26B12", "58C15']
-    msc_description: "隐函数与反函数定理"
-    category: '分析学"
+    msc_primary: '26B10'
+    msc_secondary: ['26B12", '58C15']
+    msc_description: "隐函数与反函数定理'
+    category: '分析学'
 
   # ---------- 复分析概念 ----------
   - concept_id: "analytic_function'
-    name: "解析函数"
-    name_en: 'Analytic Function"
+    name: "解析函数'
+    name_en: 'Analytic Function'
     msc_primary: "30A05'
-    msc_secondary: ["30B10", '30Cxx"]
-    msc_description: "单复变解析函数'
+    msc_secondary: ['30B10", '30Cxx']
+    msc_description: '单复变解析函数'
     category: "分析学"
 
-  - concept_id: 'cauchy_theorem"
-    name: "柯西定理'
-    name_en: "Cauchy Theorem"
+  - concept_id: 'cauchy_theorem'
+    name: '柯西定理'
+    name_en: "Cauchy Theorem'
     msc_primary: '30E20"
-    msc_secondary: ["30B10', "30Cxx"]
+    msc_secondary: ['30B10', '30Cxx"]
     msc_description: 'Cauchy积分定理"
-    category: "分析学'
+    category: '分析学'
 
-  - concept_id: "residue_theorem"
-    name: '留数定理"
+  - concept_id: 'residue_theorem"
+    name: '留数定理'
     name_en: "Residue Theorem'
-    msc_primary: "30E20"
+    msc_primary: '30E20'
     msc_secondary: ['30D30", "30Cxx']
-    msc_description: "留数理论与围道积分"
+    msc_description: '留数理论与围道积分'
     category: '分析学"
 
   # ---------- 泛函分析概念 ----------
-  - concept_id: "normed_space'
-    name: "赋范空间"
-    name_en: 'Normed Space"
+  - concept_id: 'normed_space'
+    name: "赋范空间'
+    name_en: 'Normed Space'
     msc_primary: "46Bxx'
-    msc_secondary: ["46Axx", '46Exx"]
+    msc_secondary: ["46Axx', '46Exx']
     msc_description: "赋范线性空间'
-    category: "分析学"
+    category: '分析学"
 
-  - concept_id: 'banach_space"
-    name: "巴拿赫空间'
+  - concept_id: 'banach_space'
+    name: '巴拿赫空间'
     name_en: "Banach Space"
-    msc_primary: '46B25"
-    msc_secondary: ["46Axx', "47Axx"]
+    msc_primary: '46B25'
+    msc_secondary: ['46Axx', "47Axx']
     msc_description: 'Banach空间与对偶空间"
-    category: "分析学'
+    category: '分析学'
 
-  - concept_id: "hilbert_space"
+  - concept_id: 'hilbert_space"
     name: '希尔伯特空间"
-    name_en: "Hilbert Space'
-    msc_primary: "46C15"
-    msc_secondary: ['46C05", "47Axx']
-    msc_description: "Hilbert空间与内积空间"
+    name_en: 'Hilbert Space'
+    msc_primary: '46C15"
+    msc_secondary: ['46C05', "47Axx']
+    msc_description: 'Hilbert空间与内积空间'
     category: '分析学"
 
   - concept_id: "linear_operator'
-    name: "线性算子"
+    name: '线性算子'
     name_en: 'Linear Operator"
-    msc_primary: "47A05'
-    msc_secondary: ["46B25", '47Axx"]
+    msc_primary: '47A05'
+    msc_secondary: ["46B25', '47Axx']
     msc_description: "线性算子的一般理论'
-    category: "分析学"
-
-  - concept_id: 'spectral_theory"
-    name: "谱理论'
-    name_en: "Spectral Theory"
-    msc_primary: '47A10"
-    msc_secondary: ["47Axx', "46H30"]
-    msc_description: '线性算子的谱理论"
     category: "分析学'
 
-  - concept_id: "dual_space"
+  - concept_id: 'spectral_theory'
+    name: "谱理论'
+    name_en: 'Spectral Theory"
+    msc_primary: '47A10'
+    msc_secondary: ['47Axx', "46H30"]
+    msc_description: '线性算子的谱理论'
+    category: '分析学'
+
+  - concept_id: "dual_space'
     name: '对偶空间"
-    name_en: "Dual Space'
-    msc_primary: "46B10"
-    msc_secondary: ['46B25", "46A20']
-    msc_description: "对偶空间与自反性"
-    category: '分析学"
+    name_en: 'Dual Space'
+    msc_primary: '46B10"
+    msc_secondary: ['46B25", '46A20']
+    msc_description: '对偶空间与自反性"
+    category: '分析学'
 
   - concept_id: "distribution_theory'
-    name: "分布理论"
+    name: '分布理论'
     name_en: 'Distribution Theory"
     msc_primary: "46Fxx'
-    msc_secondary: ["46E35", '35Dxx"]
-    msc_description: "广义函数与分布'
-    category: "分析学"
+    msc_secondary: ['46E35', '35Dxx"]
+    msc_description: '广义函数与分布'
+    category: "分析学'
 
 # ============================================================================
 # MSC编码分类说明
 # ============================================================================
 
 msc_classifications:
-  '26A03": "实函数的基础: 极限与连续性'
-  "26A15": '实函数的连续性"
-  "26A24': "实函数的微分"
-  '26A42": "Riemann积分与Stieltjes积分'
-  "26B10": '隐函数定理与反函数定理"
-  "26B12': "多元函数的微积分"
-  '26B15": "多元积分: 线积分、面积分、体积积分'
-  "30A05": '单复变函数: 解析函数"
-  "30B10': "幂级数(包括多变量)"
-  '30E20": "积分表示与积分算子、积分方程'
-  "30D30": '亚纯函数、有理函数"
-  "40A05': "序列、级数、可求和性: 收敛与发散"
-  '40A10": "反常积分、瑕积分'
-  "40A30": '收敛与一致收敛"
-  "42A16': "Fourier系数、Fourier级数"
-  '42A20": "Fourier级数的收敛与绝对收敛'
-  "42A32": '三角级数与Fourier级数的其他性质"
-  "46Axx': "拓扑线性空间"
-  '46Bxx": "赋范线性空间与Banach空间'
-  "46B10": '对偶性与自反性"
-  "46B25': "Banach空间: 经典Banach空间及其对偶"
-  '46C05": "Hilbert空间: 内积空间'
-  "46C15": 'Hilbert空间: 特征值的特征空间"
-  "46Exx': "线性函数空间及其对偶"
+  '26A03': "实函数的基础: 极限与连续性'
+  "26A15': '实函数的连续性'
+  "26A24': '实函数的微分"
+  '26A42': 'Riemann积分与Stieltjes积分'
+  "26B10": '隐函数定理与反函数定理'
+  '26B12': "多元函数的微积分'
+  '26B15": '多元积分: 线积分、面积分、体积积分'
+  '30A05": '单复变函数: 解析函数"
+  '30B10': '幂级数(包括多变量)"
+  '30E20': "积分表示与积分算子、积分方程'
+  '30D30': '亚纯函数、有理函数"
+  "40A05': '序列、级数、可求和性: 收敛与发散'
+  '40A10": '反常积分、瑕积分'
+  "40A30': '收敛与一致收敛'
+  "42A16': "Fourier系数、Fourier级数'
+  '42A20': "Fourier级数的收敛与绝对收敛'
+  '42A32": '三角级数与Fourier级数的其他性质'
+  '46Axx': "拓扑线性空间"
+  '46Bxx': '赋范线性空间与Banach空间'
+  "46B10': '对偶性与自反性"
+  '46B25': 'Banach空间: 经典Banach空间及其对偶"
+  '46C05": 'Hilbert空间: 内积空间'
+  '46C15": 'Hilbert空间: 特征值的特征空间'
+  "46Exx': '线性函数空间及其对偶'
   '46Fxx": "广义函数、分布理论'
-  "46H30": 'Banach代数的泛函演算"
-  "47A05': "线性算子的一般理论: 一般(伴随、共轭积等)"
-  '47A10": "算子谱与数值范围'
-  "47Axx": '单个线性算子的算子理论"
-  "54C05': "连续映射"
-  '58C15": "流形上的隐函数定理与反函数定理'
-  "58C20": '流形上的微分"
+  '46H30': 'Banach代数的泛函演算"
+  '47A05': "线性算子的一般理论: 一般(伴随、共轭积等)'
+  '47A10': "算子谱与数值范围'
+  "47Axx': '单个线性算子的算子理论'
+  "54C05': '连续映射"
+  '58C15': '流形上的隐函数定理与反函数定理'
+  "58C20": '流形上的微分'
 
 # ============================================================================
 # 编码更新日志
 # ============================================================================
 
 changelog:
-  - date: "2026-04-04'
-    version: "1.0"
+  - date: '2026-04-04'
+    version: "1.0'
     changes:
       - '为20个分析学核心概念添加MSC2020编码"
-      - "包含基础分析、复分析、泛函分析三个分支'
-      - "参考msc_corrections.json和MSC2020官方标准"
+      - '包含基础分析、复分析、泛函分析三个分支'
+      - '参考msc_corrections.json和MSC2020官方标准"

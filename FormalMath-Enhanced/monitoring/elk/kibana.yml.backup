@@ -2,7 +2,7 @@
 # 用于日志可视化和搜索
 
 server.name: formalmath-kibana
-server.host: "0.0.0.0"
+server.host: "0.0.0.0'
 server.port: 5601
 
 # Elasticsearch 连接
@@ -35,8 +35,8 @@ xpack.reporting.kibanaServer.hostname: localhost
 xpack.maps.enabled: true
 
 # 默认索引设置
-kibana.index: ".kibana"
-kibana.defaultAppId: "home"
+kibana.index: '.kibana"
+kibana.defaultAppId: "home'
 
 # 日志设置
 logging.root.level: info

@@ -97,7 +97,7 @@ H^i(X, F)∨ ≅ Ext^{n−i}(F, ω_X)。
 - 骨架：
   - 定义 canonical sheaf ω_X（在简单情形抽象为符号对象）。
   - 在曲线情形先实现对偶维数匹配的弱版（维数等式与非退化性分开）。
-  - 目标定理：serre_duality_curve (X L) : dual(H^0(X,L)) ≃ H^1(X, ω⊗L⁻¹)。
+  - 目标定理：serre_duality_curve (X L) : dual(H^0(X,L)) ≅ H^1(X, ω⊗L⁻¹)。
 - 与文档交叉链接：见 `docs/Lean4形式化推进计划.md` 与 `theories/AlgebraicGeometry/SerreDuality.lean`（预留）。
 
 ## 六、关联与应用

@@ -1,0 +1,177 @@
+% 微分形式示意 (Differential Forms)
+% 描述: 展示微分形式的外积、外微分和Stokes定理
+% 数学概念: 微分形式、外积、外微分、Stokes定理、de Rham上同调
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0
+]
+
+% ============= 左上: 0-形式 (函数) =============
+\begin{scope}[xshift=-5.5cm, yshift=2cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {$0$-形式: 函数 $f$};
+    
+    % 流形
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=5pt] 
+        (-1.5, -1) rectangle (1.5, 1);
+    
+    % 等高线
+    \foreach \val/\c in {0.2/red!30, 0.5/red!50, 0.8/red!70} {
+        \draw[color=\c, line width=1pt] 
+            (0, 0) ellipse ({1.2*\val} and {0.8*\val});
+    }
+    
+    % 点
+    \fill[black] (0.5, 0.3) circle (2pt);
+    \node[right] at (0.5, 0.3) {$f(p)$};
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize] at (0, -1.3) {$f: M \to \mathbb{R}$};
+\end{scope}
+
+% ============= 中上: 1-形式 =============
+\begin{scope}[xshift=-1cm, yshift=2cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {$1$-形式: $\omega$};
+    
+    % 流形
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=5pt] 
+        (-1.5, -1) rectangle (1.5, 1);
+    
+    % 1-形式场
+    \foreach \x/\y in {-1/-0.5, -0.3/0.3, 0.5/-0.3, 0.8/0.6, -0.8/0.7} {
+        \draw[color=green!60!black, line width=1.5pt] (\x-0.2, \y) -- (\x+0.2, \y);
+        \draw[->, color=green!60!black, line width=1pt] (\x-0.2, \y) -- (\x-0.2, \y+0.3);
+        \draw[->, color=green!60!black, line width=1pt] (\x+0.2, \y) -- (\x+0.2, \y+0.3);
+    }
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize] at (0, -1.3) {$\omega \in \Omega^1(M)$};
+\end{scope}
+
+% ============= 右上: 2-形式 =============
+\begin{scope}[xshift=3.5cm, yshift=2cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {$2$-形式: $\eta$};
+    
+    % 流形
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=5pt] 
+        (-1.5, -1) rectangle (1.5, 1);
+    
+    % 面积元
+    \foreach \x/\y in {-0.7/-0.3, 0.3/0.3, 0.6/-0.6} {
+        \fill[orange!30, opacity=0.6] (\x, \y) -- (\x+0.4, \y) -- (\x+0.4, \y+0.3) -- (\x, \y+0.3) -- cycle;
+        \draw[color=orange!70!black, line width=0.8pt] (\x, \y) -- (\x+0.4, \y) -- (\x+0.4, \y+0.3) -- (\x, \y+0.3) -- cycle;
+        \draw[->, color=orange!70!black, line width=0.8pt] (\x+0.2, \y+0.15) -- (\x+0.5, \y+0.15);
+    }
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize] at (0, -1.3) {$\eta \in \Omega^2(M)$};
+    \node[anchor=north, font=\tiny] at (0, -1.8) {有向面积元};
+\end{scope}
+
+% ============= 左下: 外微分 =============
+\begin{scope}[xshift=-5.5cm, yshift=-2.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {外微分 $d$};
+    
+    % de Rham复形
+    \node[anchor=west, font=\scriptsize] at (-1.5, 1) {$\Omega^0(M)$};
+    \node[anchor=west, font=\scriptsize] at (-1.5, 0.3) {$\Omega^1(M)$};
+    \node[anchor=west, font=\scriptsize] at (-1.5, -0.4) {$\Omega^2(M)$};
+    \node[anchor=west, font=\scriptsize] at (-1.5, -1.1) {$\Omega^3(M)$};
+    \node[anchor=west, font=\scriptsize] at (-1.5, -1.8) {$\vdots$};
+    
+    % d映射
+    \draw[->, color=red!70!black, line width=1pt] (-0.8, 1) -- (-0.8, 0.5);
+    \draw[->, color=red!70!black, line width=1pt] (-0.8, 0.3) -- (-0.8, -0.2);
+    \draw[->, color=red!70!black, line width=1pt] (-0.8, -0.4) -- (-0.8, -0.9);
+    \draw[->, color=red!70!black, line width=1pt] (-0.8, -1.1) -- (-0.8, -1.6);
+    
+    % d标签
+    \node[color=red!70!black, font=\tiny, right] at (-0.7, 0.75) {$d$};
+    \node[color=red!70!black, font=\tiny, right] at (-0.7, 0.05) {$d$};
+    \node[color=red!70!black, font=\tiny, right] at (-0.7, -0.65) {$d$};
+    
+    % d²=0
+    \node[anchor=north, font=\scriptsize, color=red!70!black] at (0, -2.2) {$d^2 = 0$};
+\end{scope}
+
+% ============= 中下: Stokes定理 =============
+\begin{scope}[xshift=-1cm, yshift=-2.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {Stokes定理};
+    
+    % 区域
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5] 
+        (0, 0) ellipse (1.2 and 0.8);
+    \node[color=blue!60!black, font=\small] at (0, 0) {$M$};
+    
+    % 边界
+    \draw[color=red!70!black, line width=2pt, ->] 
+        (1.2, 0) arc (0:180:1.2 and 0.3);
+    \draw[color=red!70!black, line width=2pt, ->] 
+        (-1.2, 0) arc (180:360:1.2 and 0.3);
+    \node[color=red!70!black, font=\scriptsize, below] at (0, -0.8) {$\partial M$};
+    
+    % 公式
+    \node[anchor=north, font=\small] at (0, -1.5) {$\displaystyle\int_M d\omega = \int_{\partial M} \omega$};
+    
+    % 特例
+    \node[anchor=north, font=\tiny, text width=4cm, align=center] 
+        at (0, -2.3) {Newton-Leibniz\\Green\\Gauss\\Stokes};
+\end{scope}
+
+% ============= 右下: de Rham上同调 =============
+\begin{scope}[xshift=3.5cm, yshift=-2.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {de Rham上同调};
+    
+    % 闭形式
+    \draw[color=green!60!black, line width=1pt, fill=green!10, opacity=0.5, rounded corners=3pt] 
+        (-1.2, 0.8) rectangle (1.2, 1.4);
+    \node[font=\scriptsize, color=green!60!black] at (0, 1.1) {$Z^k = \ker d_k$};
+    
+    % 恰当形式
+    \draw[color=orange!60!black, line width=1pt, fill=orange!10, opacity=0.5, rounded corners=3pt] 
+        (-0.8, 0.3) rectangle (0.8, 0.7);
+    \node[font=\tiny, color=orange!60!black] at (0, 0.5) {$B^k = \text{im } d_{k-1}$};
+    
+    % 包含
+    \node[font=\tiny] at (0, 0.15) {$\subset$};
+    
+    % 上同调群
+    \draw[color=purple!60!black, line width=1.5pt, fill=purple!10, opacity=0.5, rounded corners=3pt] 
+        (-1.2, -0.6) rectangle (1.2, -0.2);
+    \node[font=\scriptsize, color=purple!60!black] at (0, -0.4) {$H^k_{\text{dR}}(M) = Z^k / B^k$};
+    
+    % 箭头
+    \draw[->, color=gray, line width=1pt] (0, 0) -- (0, -0.1);
+    
+    % 说明
+    \node[anchor=north, font=\tiny, text width=4cm, align=center] 
+        at (0, -1) {闭形式 $\omega$, $d\omega = 0$\\
+                     恰当形式 $\omega = d\eta$};
+\end{scope}
+
+% ============= 底部: 外积 =============
+\node[anchor=north, font=\small, draw=orange!30, fill=orange!5, rounded corners, inner sep=10pt] 
+    at (4, -6) {
+    \begin{tabular}{ll}
+        \textbf{外积 (楔积):} & \\
+        $\wedge: \Omega^k(M) \times \Omega^l(M) \to \Omega^{k+l}(M)$ & \\
+        性质: & 1. 双线性 \\
+              & 2. 结合性: $(\alpha \wedge \beta) \wedge \gamma = \alpha \wedge (\beta \wedge \gamma)$ \\
+              & 3. 分次交换: $\alpha \wedge \beta = (-1)^{kl} \beta \wedge \alpha$ \\[5pt]
+        \textbf{外微分:} & $d(\alpha \wedge \beta) = d\alpha \wedge \beta + (-1)^k \alpha \wedge d\beta$
+    \end{tabular}
+};
+
+\end{tikzpicture}
+\end{document}

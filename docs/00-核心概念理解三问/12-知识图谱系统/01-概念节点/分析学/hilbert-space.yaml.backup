@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "hilbert-space"
+  id: "hilbert-space'
   name:
-    zh: "Hilbert空间"
-    en: "Hilbert Space"
-  msc_codes: ["46C05"]
+    zh: 'Hilbert空间"
+    en: 'Hilbert Space"
+  msc_codes: ['46C05']
   
   # ===== 定义层 =====
   definition:
@@ -55,60 +55,60 @@ concept:
   # ===== 例子层 =====
   examples:
     finite_dimensional:
-      - name: "ℂⁿ"
-        inner_product: "⟨x,y⟩ = Σx̄ᵢyᵢ"
+      - name: 'ℂⁿ'
+        inner_product: "⟨x,y⟩ = Σx̄ᵢyᵢ'
         
     infinite_dimensional:
-      - name: "ℓ²"
-        definition: "{(xₙ) : Σ|xₙ|² < ∞}"
-        inner_product: "⟨x,y⟩ = Σx̄ₙyₙ"
+      - name: "ℓ²'
+        definition: '{(xₙ) : Σ|xₙ|² < ∞}"
+        inner_product: "⟨x,y⟩ = Σx̄ₙyₙ'
         
-      - name: "L²(Ω)"
-        definition: "{f : ∫|f|² < ∞}"
-        inner_product: "⟨f,g⟩ = ∫f̄g"
+      - name: 'L²(Ω)"
+        definition: '{f : ∫|f|² < ∞}"
+        inner_product: '⟨f,g⟩ = ∫f̄g'
         
       - name: "Hardy空间 H²"
-        definition: "解析函数的L²边界值"
+        definition: '解析函数的L²边界值'
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "projection-theorem"
-      statement: "到闭凸集的最佳逼近存在唯一"
+    - id: "projection-theorem'
+      statement: "到闭凸集的最佳逼近存在唯一'
       
-    - id: "riesz-representation"
-      statement: "H* ≅ H（共轭线性同构）"
+    - id: 'riesz-representation"
+      statement: "H* ≅ H（共轭线性同构）'
       
-    - id: "orthonormal-basis"
-      statement: "可分Hilbert空间有可数标准正交基"
+    - id: 'orthonormal-basis"
+      statement: '可分Hilbert空间有可数标准正交基"
       
-    - id: "spectral-theorem"
+    - id: 'spectral-theorem'
       statement: "自伴算子的谱分解"
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "inner-product"
-        description: "有内积结构"
-      - id: "completeness"
-        description: "是完备空间"
+      - id: 'inner-product'
+        description: "有内积结构'
+      - id: "completeness'
+        description: '是完备空间"
         
     is_special_case_of:
-      - id: "banach-space"
-        description: "特殊的Banach空间"
+      - id: "banach-space'
+        description: '特殊的Banach空间"
         
     related_to:
-      - id: "quantum-mechanics"
-        description: "量子力学的数学框架"
+      - id: 'quantum-mechanics"
+        description: '量子力学的数学框架'
       - id: "fourier-analysis"
-        description: "L²是Fourier分析的自然空间"
+        description: 'L²是Fourier分析的自然空间'
         
   # ===== 元数据层 =====
   metadata:
     difficulty: 3
     importance: 5
     history:
-      named_after: "David Hilbert"
-      development: "20世纪初"
+      named_after: "David Hilbert'
+      development: "20世纪初'
       
   mathlib:
-    path: "Mathlib.Analysis.InnerProductSpace.Basic"
+    path: 'Mathlib.Analysis.InnerProductSpace.Basic"

@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "van-kampen"
+  id: "van-kampen'
   name:
     zh: "van Kampen定理"
-    en: "Van Kampen Theorem"
-  msc_codes: ["55Q05"]
+    en: 'Van Kampen Theorem"
+  msc_codes: ["55Q05']
   
   # ===== 陈述层 =====
   statement:
@@ -35,7 +35,7 @@ theorem:
         (hconn₁ : IsPathConnected U₁) (hconn₂ : IsPathConnected U₂)
         (hconn₁₂ : IsPathConnected (U₁ ∩ U₂))
         {x₀ : X} (hx₀ : x₀ ∈ U₁ ∩ U₂) :
-        FundamentalGroup X x₀ ≃* 
+        FundamentalGroup X x₀ ≅* 
           (FundamentalGroup U₁ x₀).AmalgamatedProduct (FundamentalGroup U₂ x₀)
             (FundamentalGroup (U₁ ∩ U₂) x₀)
             
@@ -93,20 +93,20 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - description: "计算 π₁(S¹ ∨ S¹) ≅ ℤ * ℤ"
-    - description: "计算 π₁(T²) ≅ ℤ × ℤ"
+    - description: '计算 π₁(S¹ ∨ S¹) ≅ ℤ * ℤ"
+    - description: "计算 π₁(T²) ≅ ℤ × ℤ'
     - description: "计算结图的基本群"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "fundamental-group"
-        role: "核心概念"
+      - id: 'fundamental-group"
+        role: "核心概念'
       - id: "pushout"
-        role: "范畴构造"
+        role: '范畴构造"
         
     related_to:
-      - id: "mayer-vietoris"
+      - id: "mayer-vietoris'
         description: "同调版本"
         
   # ===== 元数据层 =====
@@ -114,5 +114,5 @@ theorem:
     difficulty: 4
     importance: 5
     history:
-      discoverer: "Egbert van Kampen"
+      discoverer: 'Egbert van Kampen"
       year: 1933

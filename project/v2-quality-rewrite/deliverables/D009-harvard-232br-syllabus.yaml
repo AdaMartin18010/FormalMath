@@ -1,475 +1,475 @@
 course:
-  code: "Harvard Math 232br"
+  code: "Harvard Math 232br'
   name: "Curves, Surfaces, Varieties / Cohomology"
-  source_url: "https://www.math.harvard.edu/course/mathematics-232br/"
+  source_url: 'https://www.math.harvard.edu/course/mathematics-232br/"
   instructors:
-    - "Aaron Landesman (2026 Spring)"
+    - "Aaron Landesman (2026 Spring)'
     - "Man-Wai (Mandy) Cheung (2019 Spring)"
   textbooks:
-    - "Joe Harris, Algebraic Geometry: A First Course, GTM 133, Springer, 1992"
-    - "Robin Hartshorne, Algebraic Geometry, GTM 52, Springer, 1977 (Chapters II–V)"
+    - 'Joe Harris, Algebraic Geometry: A First Course, GTM 133, Springer, 1992"
+    - "Robin Hartshorne, Algebraic Geometry, GTM 52, Springer, 1977 (Chapters II–V)'
     - "Andreas Gathmann, Notes for a Class on Algebraic Geometry (Harvard/Brown/TUM)"
-    - "Igor R. Shafarevich, Basic Algebraic Geometry 1: Varieties in Projective Space, 2nd ed., Springer, 1994"
-    - "Phillip Griffiths & Joe Harris, Principles of Algebraic Geometry, Wiley, 1978 (selected chapters)"
+    - 'Igor R. Shafarevich, Basic Algebraic Geometry 1: Varieties in Projective Space, 2nd ed., Springer, 1994"
+    - "Phillip Griffiths & Joe Harris, Principles of Algebraic Geometry, Wiley, 1978 (selected chapters)'
   prerequisites: "Harvard Math 232ar or equivalent knowledge of complex algebraic curves, surfaces, and varieties"
   credit_hours: 4
 
 modules:
-  - title: "Module 0: 232ar Review — Curves, Surfaces, and Varieties"
-    description: "Prerequisite material from Harvard Math 232ar (Introduction to Algebraic Geometry I)."
+  - title: 'Module 0: 232ar Review — Curves, Surfaces, and Varieties"
+    description: "Prerequisite material from Harvard Math 232ar (Introduction to Algebraic Geometry I).'
     topics:
       - name: "Affine and Projective Varieties"
         definitions:
-          - term: "Affine variety"
-            formal_math_path: "docs/13-代数几何/01-代数几何基础.md"
+          - term: 'Affine variety"
+            formal_math_path: "docs/13-代数几何/01-代数几何基础.md'
           - term: "Projective variety"
-            formal_math_path: "docs/13-代数几何/01-代数几何基础.md"
-          - term: "Zariski topology"
+            formal_math_path: 'docs/13-代数几何/01-代数几何基础.md"
+          - term: "Zariski topology'
             formal_math_path: "docs/13-代数几何/02-代数几何增强版.md"
-          - term: "Quasi-projective variety"
-            formal_math_path: "docs/13-代数几何/01-代数几何基础.md"
+          - term: 'Quasi-projective variety"
+            formal_math_path: "docs/13-代数几何/01-代数几何基础.md'
         theorems:
           - name: "Hilbert Nullstellensatz (weak and strong forms)"
-            formal_math_path: "docs/13-代数几何/01-代数几何基础.md"
-          - name: "Projective closure of an affine variety"
+            formal_math_path: 'docs/13-代数几何/01-代数几何基础.md"
+          - name: "Projective closure of an affine variety'
             formal_math_path: "docs/13-代数几何/01-代数几何基础.md"
         examples:
-          - "The twisted cubic in P^3"
-          - "Rational normal curves"
+          - 'The twisted cubic in P^3"
+          - "Rational normal curves'
           - "Plane conics and their parameter space"
-          - "Segre variety P^1 x P^1 in P^3"
-          - "Grassmannian G(1,3) and the Plücker quadric"
+          - 'Segre variety P^1 x P^1 in P^3"
+          - "Grassmannian G(1,3) and the Plücker quadric'
 
       - name: "Morphisms, Rational Maps, and Birational Geometry"
         definitions:
-          - term: "Regular map (morphism of varieties)"
-            formal_math_path: "docs/13-代数几何/02-代数几何增强版.md"
+          - term: 'Regular map (morphism of varieties)"
+            formal_math_path: "docs/13-代数几何/02-代数几何增强版.md'
           - term: "Rational map"
+            formal_math_path: 'docs/13-代数几何/06-双有理几何基础.md"
+          - term: "Birational isomorphism'
             formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
-          - term: "Birational isomorphism"
-            formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
-          - term: "Blow-up of a point/subvariety"
-            formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
+          - term: 'Blow-up of a point/subvariety"
+            formal_math_path: "docs/13-代数几何/06-双有理几何基础.md'
         theorems:
           - name: "Every birational map is a composition of blow-ups and blow-downs (weak factorization, stated)"
-            formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
+            formal_math_path: 'docs/13-代数几何/06-双有理几何基础.md"
         examples:
-          - "Blow-up of A^2 at the origin"
+          - "Blow-up of A^2 at the origin'
           - "Resolution of the node y^2 = x^3 + x^2"
-          - "Cremona transformation on P^2"
+          - 'Cremona transformation on P^2"
 
-      - name: "Dimension, Smoothness, and the Tangent Space"
+      - name: "Dimension, Smoothness, and the Tangent Space'
         definitions:
           - term: "Krull dimension of a variety"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/16-概形的维数理论.md"
-          - term: "Zariski tangent space"
+            formal_math_path: '数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/16-概形的维数理论.md"
+          - term: "Zariski tangent space'
             formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/17-概形的切空间与切丛.md"
-          - term: "Smooth (nonsingular) point"
-            formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md"
+          - term: 'Smooth (nonsingular) point"
+            formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md'
           - term: "Tangent cone"
-            formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md"
+            formal_math_path: 'docs/13-代数几何/03-代数几何深度扩展版.md"
         theorems:
-          - name: "Dimension of intersection of varieties (Bezout, classical form, stated)"
+          - name: "Dimension of intersection of varieties (Bezout, classical form, stated)'
             formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
         examples:
-          - "Node vs. cusp in plane curves"
-          - "Smoothness of the twisted cubic"
+          - 'Node vs. cusp in plane curves"
+          - "Smoothness of the twisted cubic'
           - "Tangent space to the Grassmannian"
 
-      - name: "Hilbert Functions and Hilbert Polynomials"
+      - name: 'Hilbert Functions and Hilbert Polynomials"
         definitions:
-          - term: "Hilbert function of a projective variety"
+          - term: "Hilbert function of a projective variety'
             formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md"
-          - term: "Hilbert polynomial"
-            formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md"
+          - term: 'Hilbert polynomial"
+            formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md'
           - term: "Arithmetic genus"
-            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
+            formal_math_path: 'docs/13-代数几何/07-曲线理论-深度扩展版.md"
         theorems:
-          - name: "Hilbert polynomial exists for any projective variety"
+          - name: "Hilbert polynomial exists for any projective variety'
             formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md"
         examples:
-          - "Hilbert polynomial of P^n"
-          - "Hilbert polynomial of a plane curve of degree d"
+          - 'Hilbert polynomial of P^n"
+          - "Hilbert polynomial of a plane curve of degree d'
           - "Hilbert polynomial of a complete intersection"
 
-      - name: "Divisors and Linear Series on Curves"
+      - name: 'Divisors and Linear Series on Curves"
         definitions:
-          - term: "Weil divisor"
+          - term: "Weil divisor'
             formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
-          - term: "Principal divisor"
-            formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
+          - term: 'Principal divisor"
+            formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md'
           - term: "Linear equivalence of divisors"
-            formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
-          - term: "Linear series g^r_d"
+            formal_math_path: 'docs/13-代数几何/04-除子与线丛的完整理论.md"
+          - term: "Linear series g^r_d'
             formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
-          - term: "Canonical divisor K_X"
-            formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
+          - term: 'Canonical divisor K_X"
+            formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md'
           - term: "Picard group Pic(X)"
-            formal_math_path: "docs/13-代数几何/06-除子与线丛-深度扩展版.md"
+            formal_math_path: 'docs/13-代数几何/06-除子与线丛-深度扩展版.md"
         theorems:
-          - name: "Riemann-Roch theorem for curves"
+          - name: "Riemann-Roch theorem for curves'
             formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
-          - name: "Riemann-Hurwitz formula"
-            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
+          - name: 'Riemann-Hurwitz formula"
+            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md'
         examples:
           - "Genus formula for a smooth plane curve"
-          - "Hyperelliptic curves and their canonical maps"
-          - "Curves of genus 0, 1, 2, 3"
+          - 'Hyperelliptic curves and their canonical maps"
+          - "Curves of genus 0, 1, 2, 3'
           - "The canonical map of a non-hyperelliptic curve"
         problem_sets:
-          - source: "Harris + Hartshorne (Mandy Cheung, Fall 2024)"
+          - source: 'Harris + Hartshorne (Mandy Cheung, Fall 2024)"
             problems:
-              - number: "PS2"
+              - number: "PS2'
                 type: "proof"
-                topic: "Affine varieties, morphisms, Veronese and Segre maps (Harris Ex 1.19; Hartshorne I.2.6, 2.9, 3.1–3.3)"
-              - number: "PS3"
+                topic: 'Affine varieties, morphisms, Veronese and Segre maps (Harris Ex 1.19; Hartshorne I.2.6, 2.9, 3.1–3.3)"
+              - number: "PS3'
                 type: "proof"
-                topic: "Grassmannians, projections, rational maps (Harris Ex 2.12, 2.24, 6.8; Hartshorne I.2.12, 2.15, 3.5, 3.7, 3.17)"
-              - number: "PS4"
+                topic: 'Grassmannians, projections, rational maps (Harris Ex 2.12, 2.24, 6.8; Hartshorne I.2.12, 2.15, 3.5, 3.7, 3.17)"
+              - number: "PS4'
                 type: "proof"
-                topic: "Rational maps, blow-ups, birational geometry (Harris Ex 7.12; Hartshorne I.4.3–4.7)"
-              - number: "PS5"
+                topic: 'Rational maps, blow-ups, birational geometry (Harris Ex 7.12; Hartshorne I.4.3–4.7)"
+              - number: "PS5'
                 type: "proof"
-                topic: "Dimension, smoothness, Hilbert functions, Riemann-Roch (Harris Ex 11.6, 11.19, 13.1; Hartshorne I.5.12; Gathmann Ex 9.22, 12.4, 12.15)"
+                topic: 'Dimension, smoothness, Hilbert functions, Riemann-Roch (Harris Ex 11.6, 11.19, 13.1; Hartshorne I.5.12; Gathmann Ex 9.22, 12.4, 12.15)"
 
-  - title: "Module 1: Sheaves and Coherent Sheaves"
+  - title: "Module 1: Sheaves and Coherent Sheaves'
     description: "Foundations of sheaf theory in algebraic geometry, leading to coherent sheaves on schemes and varieties."
     topics:
-      - name: "Sheaf Theory on Varieties and Schemes"
+      - name: 'Sheaf Theory on Varieties and Schemes"
         definitions:
-          - term: "Presheaf and sheaf"
+          - term: "Presheaf and sheaf'
             formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
-          - term: "Stalk of a sheaf"
-            formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
+          - term: 'Stalk of a sheaf"
+            formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md'
           - term: "Sheafification"
+            formal_math_path: 'docs/13-代数几何/04-层与上同调-深度扩展版.md"
+          - term: "Exact sequences of sheaves'
             formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
-          - term: "Exact sequences of sheaves"
-            formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
-          - term: "Structure sheaf O_X of a scheme"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/00-概形理论-概念总览.md"
+          - term: 'Structure sheaf O_X of a scheme"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/00-概形理论-概念总览.md'
         theorems:
           - name: "Exactness of the sheafification functor"
-            formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
+            formal_math_path: 'docs/13-代数几何/04-层与上同调-深度扩展版.md"
         examples:
-          - "Structure sheaf O_X of P^n"
+          - "Structure sheaf O_X of P^n'
           - "Sheaf of regular functions on a variety"
-          - "Constant sheaf vs. locally constant sheaf"
-          - "Skyscraper sheaf at a point"
+          - 'Constant sheaf vs. locally constant sheaf"
+          - "Skyscraper sheaf at a point'
 
       - name: "Quasi-Coherent and Coherent Sheaves"
         definitions:
-          - term: "O_X-Module"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/31-概形的层理论与层范畴.md"
+          - term: 'O_X-Module"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/31-概形的层理论与层范畴.md'
           - term: "Quasi-coherent sheaf"
+            formal_math_path: '数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/05-拟凝聚层与凝聚层.md"
+          - term: "Coherent sheaf'
             formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/05-拟凝聚层与凝聚层.md"
-          - term: "Coherent sheaf"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/05-拟凝聚层与凝聚层.md"
-          - term: "Locally free sheaf / vector bundle"
-            formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
+          - term: 'Locally free sheaf / vector bundle"
+            formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md'
           - term: "Reflexive sheaf"
-            formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
+            formal_math_path: 'docs/13-代数几何/04-层与上同调-深度扩展版.md"
         theorems:
-          - name: "Serre's criterion for quasi-coherence and coherence"
+          - name: "Serre's criterion for quasi-coherence and coherence'
             formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/05-拟凝聚层与凝聚层.md"
-          - name: "Coherence of direct image under proper morphism (stated)"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/05-拟凝聚层与凝聚层.md"
+          - name: 'Coherence of direct image under proper morphism (stated)"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/05-拟凝聚层与凝聚层.md'
         examples:
           - "Coherent sheaf O_{P^n}(d)"
-          - "Ideal sheaf of a closed subvariety"
-          - "Structure sheaf of a Cartier divisor"
+          - 'Ideal sheaf of a closed subvariety"
+          - "Structure sheaf of a Cartier divisor'
           - "Tangent and cotangent sheaves on a smooth variety"
-          - "Pushforward of a coherent sheaf under a finite morphism"
+          - 'Pushforward of a coherent sheaf under a finite morphism"
 
-      - name: "Divisors and Line Bundles Revisited"
+      - name: "Divisors and Line Bundles Revisited'
         definitions:
           - term: "Cartier divisor"
+            formal_math_path: 'docs/13-代数几何/04-除子与线丛的完整理论.md"
+          - term: "Weil divisor'
             formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
-          - term: "Weil divisor"
-            formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
-          - term: "Line bundle associated to a Cartier divisor O_X(D)"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/07-除子与线丛.md"
+          - term: 'Line bundle associated to a Cartier divisor O_X(D)"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/07-除子与线丛.md'
           - term: "Picard group Pic(X)"
-            formal_math_path: "docs/13-代数几何/06-除子与线丛-深度扩展版.md"
+            formal_math_path: 'docs/13-代数几何/06-除子与线丛-深度扩展版.md"
         theorems:
-          - name: "Equivalence of Cartier and Weil divisors on smooth varieties"
+          - name: "Equivalence of Cartier and Weil divisors on smooth varieties'
             formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
-          - name: "Exact sequence 0 -> O_X^* -> K_X^* -> Cart -> Pic -> 0"
-            formal_math_path: "docs/13-代数几何/06-除子与线丛-深度扩展版.md"
+          - name: 'Exact sequence 0 -> O_X^* -> K_X^* -> Cart -> Pic -> 0"
+            formal_math_path: "docs/13-代数几何/06-除子与线丛-深度扩展版.md'
         examples:
           - "Hyperplane bundle O(1) on P^n"
-          - "Canonical bundle K_X on a smooth projective variety"
-          - "Line bundles on P^1 x P^1"
+          - 'Canonical bundle K_X on a smooth projective variety"
+          - "Line bundles on P^1 x P^1'
 
   - title: "Module 2: Sheaf Cohomology"
-    description: "Cohomology of sheaves, Cech cohomology, and cohomology of coherent sheaves on projective space."
+    description: 'Cohomology of sheaves, Cech cohomology, and cohomology of coherent sheaves on projective space."
     topics:
-      - name: "Derived Functors and Sheaf Cohomology"
+      - name: "Derived Functors and Sheaf Cohomology'
         definitions:
           - term: "Sheaf cohomology H^i(X, F)"
-            formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
-          - term: "Injective resolution"
+            formal_math_path: 'docs/13-代数几何/04-层与上同调-深度扩展版.md"
+          - term: "Injective resolution'
             formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/01-层上同调基础.md"
-          - term: "Flasque (flabby) sheaf"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/01-层上同调基础.md"
+          - term: 'Flasque (flabby) sheaf"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/01-层上同调基础.md'
           - term: "Acyclic resolution"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/01-层上同调基础.md"
+            formal_math_path: '数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/01-层上同调基础.md"
         theorems:
-          - name: "Long exact sequence in cohomology"
+          - name: "Long exact sequence in cohomology'
             formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
-          - name: "Cohomology of flasque sheaves vanishes in positive degree"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/01-层上同调基础.md"
+          - name: 'Cohomology of flasque sheaves vanishes in positive degree"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/01-层上同调基础.md'
         examples:
           - "Cohomology of a constant sheaf on an irreducible variety"
-          - "Cohomology of O_X on an affine scheme"
+          - 'Cohomology of O_X on an affine scheme"
 
-      - name: "Cech Cohomology"
+      - name: "Cech Cohomology'
         definitions:
           - term: "Cech cohomology \check{H}^i(U, F)"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/17-Cech上同调与层上同调.md"
-          - term: "Refinement of an open cover"
+            formal_math_path: '数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/17-Cech上同调与层上同调.md"
+          - term: "Refinement of an open cover'
             formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/17-Cech上同调与层上同调.md"
         theorems:
-          - name: "Comparison theorem: \check{H}^i(X, F) = H^i(X, F) for quasi-coherent sheaves on separated schemes"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/17-Cech上同调与层上同调.md"
+          - name: 'Comparison theorem: \check{H}^i(X, F) = H^i(X, F) for quasi-coherent sheaves on separated schemes"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/17-Cech上同调与层上同调.md'
         examples:
           - "Cech computation for O(1) on P^1"
-          - "Cech computation for the structure sheaf of A^2 minus the origin"
+          - 'Cech computation for the structure sheaf of A^2 minus the origin"
 
-      - name: "Cohomology of Coherent Sheaves on Projective Space"
+      - name: "Cohomology of Coherent Sheaves on Projective Space'
         definitions:
           - term: "Twisting sheaf O_{P^n}(d)"
-            formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
-          - term: "Serre's twisting sheaf"
+            formal_math_path: 'docs/13-代数几何/04-除子与线丛的完整理论.md"
+          - term: "Serre's twisting sheaf'
             formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
         theorems:
-          - name: "Serre's computation of H^i(P^n, O(d))"
-            formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
+          - name: 'Serre's computation of H^i(P^n, O(d))"
+            formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md'
           - name: "Serre vanishing theorem for ample line bundles"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/13-上同调的有限性与消失性.md"
+            formal_math_path: '数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/13-上同调的有限性与消失性.md"
         examples:
-          - "h^i(P^n, O(d)) for all i, n, d"
+          - "h^i(P^n, O(d)) for all i, n, d'
           - "Cohomology of a hypersurface in P^n via the exact sequence 0 -> O(-d) -> O -> O_H -> 0"
-          - "Euler characteristic of O_{P^n}(d)"
+          - 'Euler characteristic of O_{P^n}(d)"
 
-      - name: "Higher Direct Images and Cohomology and Base Change"
+      - name: "Higher Direct Images and Cohomology and Base Change'
         definitions:
           - term: "Higher direct image R^i f_* F"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/15-上同调与函子关系.md"
-          - term: "Flat morphism"
+            formal_math_path: '数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/15-上同调与函子关系.md"
+          - term: "Flat morphism'
             formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/06-平坦性与平滑性.md"
         theorems:
-          - name: "Semicontinuity theorem (Grauert/Grothendieck)"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/10-上同调与基变化.md"
+          - name: 'Semicontinuity theorem (Grauert/Grothendieck)"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/10-上同调与基变化.md'
           - name: "Cohomology and base change theorem"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/10-上同调与基变化.md"
-          - name: "Theorem on formal functions"
+            formal_math_path: '数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/10-上同调与基变化.md"
+          - name: "Theorem on formal functions'
             formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/10-上同调与基变化.md"
         examples:
-          - "Jumping of h^1 in a family of elliptic curves"
-          - "Base change for the family of plane curves"
+          - 'Jumping of h^1 in a family of elliptic curves"
+          - "Base change for the family of plane curves'
 
   - title: "Module 3: Duality and Applications to Curves"
-    description: "Serre duality, Riemann-Roch revisited via cohomology, and applications to the geometry of algebraic curves."
+    description: 'Serre duality, Riemann-Roch revisited via cohomology, and applications to the geometry of algebraic curves."
     topics:
-      - name: "Serre Duality"
+      - name: "Serre Duality'
         definitions:
           - term: "Dualizing sheaf \omega_X"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/12-微分形式与对偶层.md"
-          - term: "Trace map H^n(X, \omega_X) -> k"
+            formal_math_path: '数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/12-微分形式与对偶层.md"
+          - term: "Trace map H^n(X, \omega_X) -> k'
             formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/21-上同调与Serre对偶.md"
         theorems:
-          - name: "Serre duality for projective varieties"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/21-上同调与Serre对偶.md"
+          - name: 'Serre duality for projective varieties"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/21-上同调与Serre对偶.md'
           - name: "Serre duality for curves: H^0(X, L) is dual to H^1(X, K_X \otimes L^{-1})"
-            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
+            formal_math_path: 'docs/13-代数几何/07-曲线理论-深度扩展版.md"
         examples:
-          - "Serre duality on P^1 with L = O(d)"
+          - "Serre duality on P^1 with L = O(d)'
           - "Serre duality on an elliptic curve"
-          - "Dualizing sheaf of a Gorenstein curve"
+          - 'Dualizing sheaf of a Gorenstein curve"
 
-      - name: "Riemann-Roch via Cohomology"
+      - name: "Riemann-Roch via Cohomology'
         definitions:
           - term: "Euler characteristic \chi(F) = \sum (-1)^i h^i(X, F)"
-            formal_math_path: "docs/13-代数几何/04-层与上同调-深度扩展版.md"
-          - term: "Degree of a line bundle on a curve"
+            formal_math_path: 'docs/13-代数几何/04-层与上同调-深度扩展版.md"
+          - term: "Degree of a line bundle on a curve'
             formal_math_path: "docs/13-代数几何/04-除子与线丛的完整理论.md"
         theorems:
-          - name: "Riemann-Roch theorem for curves (cohomological form)"
-            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
+          - name: 'Riemann-Roch theorem for curves (cohomological form)"
+            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md'
           - name: "Clifford's theorem"
-            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
-          - name: "Castelnuovo bound for the genus of a curve in P^r"
+            formal_math_path: 'docs/13-代数几何/07-曲线理论-深度扩展版.md"
+          - name: "Castelnuovo bound for the genus of a curve in P^r'
             formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
         examples:
-          - "Genus 0 curves are isomorphic to P^1"
-          - "Genus 1 curves as plane cubics"
+          - 'Genus 0 curves are isomorphic to P^1"
+          - "Genus 1 curves as plane cubics'
           - "Genus 2 curves are hyperelliptic"
-          - "Canonical model of a genus 3 curve as a plane quartic"
-          - "Canonical model of a genus 4 curve as a complete intersection of a quadric and a cubic"
+          - 'Canonical model of a genus 3 curve as a plane quartic"
+          - "Canonical model of a genus 4 curve as a complete intersection of a quadric and a cubic'
 
       - name: "Special Linear Series and Brill-Noether Theory"
         definitions:
-          - term: "Special divisor"
-            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
+          - term: 'Special divisor"
+            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md'
           - term: "Brill-Noether number \rho(g, r, d) = g - (r+1)(g-d+r)"
-            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
+            formal_math_path: 'docs/13-代数几何/07-曲线理论-深度扩展版.md"
         theorems:
-          - name: "Brill-Noether theorem (existence of g^r_d when \rho \ge 0)"
+          - name: "Brill-Noether theorem (existence of g^r_d when \rho \ge 0)'
             formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
-          - name: "Petri's theorem (stated)"
-            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
+          - name: 'Petri's theorem (stated)"
+            formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md'
         examples:
           - "g^1_2 on a hyperelliptic curve"
-          - "g^2_4 on a genus 3 non-hyperelliptic curve"
-          - "g^3_6 on a genus 4 curve"
+          - 'g^2_4 on a genus 3 non-hyperelliptic curve"
+          - "g^3_6 on a genus 4 curve'
 
       - name: "Jacobians and Abel's Theorem"
         definitions:
-          - term: "Jacobian variety J(X)"
-            formal_math_path: "docs/13-代数几何/08-阿贝尔簇基础.md"
+          - term: 'Jacobian variety J(X)"
+            formal_math_path: "docs/13-代数几何/08-阿贝尔簇基础.md'
           - term: "Abel-Jacobi map"
-            formal_math_path: "docs/13-代数几何/08-阿贝尔簇基础.md"
+            formal_math_path: 'docs/13-代数几何/08-阿贝尔簇基础.md"
         theorems:
-          - name: "Abel's theorem"
+          - name: "Abel's theorem'
             formal_math_path: "docs/13-代数几何/07-曲线理论-深度扩展版.md"
-          - name: "Jacobi inversion theorem"
-            formal_math_path: "docs/13-代数几何/08-阿贝尔簇基础.md"
+          - name: 'Jacobi inversion theorem"
+            formal_math_path: "docs/13-代数几何/08-阿贝尔簇基础.md'
         examples:
           - "Jacobian of an elliptic curve is the curve itself"
-          - "Theta divisor on J(X)"
+          - 'Theta divisor on J(X)"
 
-  - title: "Module 4: Cohomology and the Geometry of Surfaces"
+  - title: "Module 4: Cohomology and the Geometry of Surfaces'
     description: "Applications of sheaf cohomology to the theory of algebraic surfaces, including intersection theory, Riemann-Roch for surfaces, and the classification of complex algebraic surfaces."
     topics:
-      - name: "Intersection Theory on Surfaces"
+      - name: 'Intersection Theory on Surfaces"
         definitions:
-          - term: "Intersection pairing on a smooth surface"
+          - term: "Intersection pairing on a smooth surface'
             formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
-          - term: "Self-intersection number C^2"
-            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
+          - term: 'Self-intersection number C^2"
+            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md'
           - term: "Blow-up of a surface at a point"
-            formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
-          - term: "Exceptional divisor"
+            formal_math_path: 'docs/13-代数几何/06-双有理几何基础.md"
+          - term: "Exceptional divisor'
             formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
         theorems:
-          - name: "Bézout's theorem for surfaces (intersection of curves on a surface)"
-            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
+          - name: 'Bézout's theorem for surfaces (intersection of curves on a surface)"
+            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md'
           - name: "Effect of blow-up on the Picard group: Pic(\tilde{S}) = Pic(S) \oplus Z E"
-            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
-          - name: "Castelnuovo's contraction criterion"
+            formal_math_path: 'docs/13-代数几何/05-曲面的相交理论.md"
+          - name: "Castelnuovo's contraction criterion'
             formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
         examples:
-          - "Intersection theory on P^2 and P^1 x P^1"
-          - "Blow-up of P^2 at points (del Pezzo surfaces)"
+          - 'Intersection theory on P^2 and P^1 x P^1"
+          - "Blow-up of P^2 at points (del Pezzo surfaces)'
           - "(-1)-curves and their contractions"
-          - "Quadric surface in P^3"
+          - 'Quadric surface in P^3"
 
-      - name: "Riemann-Roch for Surfaces"
+      - name: "Riemann-Roch for Surfaces'
         definitions:
           - term: "Arithmetic genus p_a(S)"
+            formal_math_path: 'docs/13-代数几何/05-曲面的相交理论.md"
+          - term: "Geometric genus p_g(S) = h^0(S, K_S)'
             formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
-          - term: "Geometric genus p_g(S) = h^0(S, K_S)"
-            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
-          - term: "Irregularity q = h^1(S, O_S)"
-            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
+          - term: 'Irregularity q = h^1(S, O_S)"
+            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md'
           - term: "Holomorphic Euler characteristic \chi(O_S)"
-            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
+            formal_math_path: 'docs/13-代数几何/05-曲面的相交理论.md"
         theorems:
-          - name: "Noether's formula: \chi(O_S) = (K_S^2 + c_2(S))/12"
+          - name: "Noether's formula: \chi(O_S) = (K_S^2 + c_2(S))/12'
             formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
-          - name: "Hirzebruch-Riemann-Roch for surfaces"
-            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
+          - name: 'Hirzebruch-Riemann-Roch for surfaces"
+            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md'
           - name: "Adjunction formula: 2g(C) - 2 = C.(C + K_S)"
-            formal_math_path: "docs/13-代数几何/05-曲面的相交理论.md"
+            formal_math_path: 'docs/13-代数几何/05-曲面的相交理论.md"
         examples:
-          - "Riemann-Roch on P^2 and P^1 x P^1"
+          - "Riemann-Roch on P^2 and P^1 x P^1'
           - "Canonical bundle of a hypersurface in P^3"
-          - "Surfaces of general type"
+          - 'Surfaces of general type"
 
-      - name: "Classification of Complex Algebraic Surfaces"
+      - name: "Classification of Complex Algebraic Surfaces'
         definitions:
           - term: "Kodaira dimension \kappa(S)"
+            formal_math_path: 'docs/13-代数几何/06-双有理几何基础.md"
+          - term: "Minimal surface'
             formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
-          - term: "Minimal surface"
-            formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
-          - term: "Ruled surface"
-            formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
+          - term: 'Ruled surface"
+            formal_math_path: "docs/13-代数几何/06-双有理几何基础.md'
           - term: "K3 surface"
+            formal_math_path: 'docs/13-代数几何/03-代数几何深度扩展版.md"
+          - term: "Enriques surface'
             formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md"
-          - term: "Enriques surface"
-            formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md"
-          - term: "Abelian surface"
-            formal_math_path: "docs/13-代数几何/08-阿贝尔簇基础.md"
+          - term: 'Abelian surface"
+            formal_math_path: "docs/13-代数几何/08-阿贝尔簇基础.md'
         theorems:
           - name: "Enriques classification of algebraic surfaces"
-            formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
-          - name: "Bogomolov-Miyaoka-Yau inequality (stated)"
+            formal_math_path: 'docs/13-代数几何/06-双有理几何基础.md"
+          - name: "Bogomolov-Miyaoka-Yau inequality (stated)'
             formal_math_path: "docs/13-代数几何/06-双有理几何基础.md"
         examples:
-          - "Rational surfaces: P^2, P^1 x P^1, Hirzebruch surfaces"
-          - "K3 surfaces: quartic surfaces in P^3, Kummer surfaces"
+          - 'Rational surfaces: P^2, P^1 x P^1, Hirzebruch surfaces"
+          - "K3 surfaces: quartic surfaces in P^3, Kummer surfaces'
           - "Abelian surfaces: products of two elliptic curves"
-          - "Enriques surfaces as quotients of K3 surfaces"
-          - "Elliptic surfaces"
+          - 'Enriques surfaces as quotients of K3 surfaces"
+          - "Elliptic surfaces'
 
   - title: "Module 5: Advanced Topics (as time permits)"
-    description: "Occasional coverage of Hodge structures, Lefschetz theorems, or deformations, depending on the semester and instructor focus."
+    description: 'Occasional coverage of Hodge structures, Lefschetz theorems, or deformations, depending on the semester and instructor focus."
     topics:
-      - name: "Hodge Theory and Lefschetz Theorems"
+      - name: "Hodge Theory and Lefschetz Theorems'
         definitions:
           - term: "Hodge decomposition H^k(X, C) = \oplus_{p+q=k} H^{p,q}(X)"
+            formal_math_path: 'docs/13-代数几何/09-霍奇理论入门.md"
+          - term: "Hodge numbers h^{p,q}'
             formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md"
-          - term: "Hodge numbers h^{p,q}"
-            formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md"
-          - term: "Period map"
-            formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md"
+          - term: 'Period map"
+            formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md'
         theorems:
           - name: "Hard Lefschetz theorem"
+            formal_math_path: 'docs/13-代数几何/09-霍奇理论入门.md"
+          - name: "Weak Lefschetz theorem'
             formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md"
-          - name: "Weak Lefschetz theorem"
-            formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md"
-          - name: "Hodge symmetry h^{p,q} = h^{q,p}"
-            formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md"
+          - name: 'Hodge symmetry h^{p,q} = h^{q,p}"
+            formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md'
         examples:
           - "Hodge diamond of a K3 surface"
-          - "Hodge diamond of a quintic threefold"
+          - 'Hodge diamond of a quintic threefold"
 
-      - name: "Deformations of Varieties"
+      - name: "Deformations of Varieties'
         definitions:
           - term: "Kodaira-Spencer map"
-            formal_math_path: "docs/13-代数几何/03-代数几何深度扩展版.md"
-          - term: "Deformation functor"
+            formal_math_path: 'docs/13-代数几何/03-代数几何深度扩展版.md"
+          - term: "Deformation functor'
             formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/25-概形的平坦族与形变理论.md"
-          - term: "First-order deformation"
-            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/25-概形的平坦族与形变理论.md"
+          - term: 'First-order deformation"
+            formal_math_path: "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/25-概形的平坦族与形变理论.md'
         theorems:
           - name: "Semicontinuity of Hodge numbers in a family"
-            formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md"
-          - name: "Noether-Lefschetz theorem (stated)"
+            formal_math_path: 'docs/13-代数几何/09-霍奇理论入门.md"
+          - name: "Noether-Lefschetz theorem (stated)'
             formal_math_path: "docs/13-代数几何/09-霍奇理论入门.md"
         examples:
-          - "Deformations of a plane curve"
-          - "Deformations of a K3 surface"
+          - 'Deformations of a plane curve"
+          - "Deformations of a K3 surface'
 
 formal_math_index:
   grothendieck_paths:
     - "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/"
-    - "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/"
-    - "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/05-代数几何现代化/"
+    - '数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/"
+    - "数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/05-代数几何现代化/'
   algebraic_geometry_docs:
     - "docs/13-代数几何/01-代数几何基础.md"
-    - "docs/13-代数几何/04-层与上同调-深度扩展版.md"
-    - "docs/13-代数几何/04-除子与线丛的完整理论.md"
+    - 'docs/13-代数几何/04-层与上同调-深度扩展版.md"
+    - "docs/13-代数几何/04-除子与线丛的完整理论.md'
     - "docs/13-代数几何/05-曲面的相交理论.md"
-    - "docs/13-代数几何/06-双有理几何基础.md"
-    - "docs/13-代数几何/06-除子与线丛-深度扩展版.md"
+    - 'docs/13-代数几何/06-双有理几何基础.md"
+    - "docs/13-代数几何/06-除子与线丛-深度扩展版.md'
     - "docs/13-代数几何/07-曲线理论-深度扩展版.md"
-    - "docs/13-代数几何/08-阿贝尔簇基础.md"
-    - "docs/13-代数几何/09-霍奇理论入门.md"
+    - 'docs/13-代数几何/08-阿贝尔簇基础.md"
+    - "docs/13-代数几何/09-霍奇理论入门.md'
 
 metadata:
   generated_by: "Kimi Code CLI — Algebraic Geometry Course Analyst"
-  generation_date: "2026-04-04"
-  version: "v2.0-quality-rewrite"
+  generation_date: '2026-04-04"
+  version: "v2.0-quality-rewrite'
   task_id: "T009"
-  deliverable_id: "D009"
+  deliverable_id: 'D009"

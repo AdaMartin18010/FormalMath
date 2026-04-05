@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "tychonoff-theorem"
+  id: "tychonoff-theorem'
   name:
     zh: "Tychonoff定理"
-    en: "Tychonoff's Theorem"
-  msc_codes: ["54D30", "54B10"]
+    en: 'Tychonoff's Theorem"
+  msc_codes: ["54D30', "54B10"]
   
   # ===== 陈述层 =====
   statement:
@@ -19,7 +19,7 @@ theorem:
       即：紧空间的任意乘积是紧的。
       
     informal: |
-      如果你有一堆紧致空间，把它们"捆"在一起（取乘积）
+      如果你有一堆紧致空间，把它们'捆"在一起（取乘积）
       还是紧致的。
       
       紧致性在乘积下保持，这非常神奇：
@@ -34,29 +34,29 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: "Alexander子基定理 + Zorn引理"
+    main_strategy: "Alexander子基定理 + Zorn引理'
     
     key_ideas:
       - "子基定理：只需检验子基的开覆盖"
-      - "乘积拓扑有自然子基（投影的原像）"
-      - "用选择公理构造有限子覆盖"
+      - '乘积拓扑有自然子基（投影的原像）"
+      - "用选择公理构造有限子覆盖'
       
     steps:
       - step: 1
         content: "Alexander子基定理"
-        detail: "空间紧 ⟺ 子基的每个覆盖有有限子覆盖"
+        detail: '空间紧 ⟺ 子基的每个覆盖有有限子覆盖"
         
       - step: 2
-        content: "乘积拓扑的子基"
+        content: "乘积拓扑的子基'
         detail: "S = {πα⁻¹(Uα) : Uα ⊆ Xα 开}"
         
       - step: 3
-        content: "设 𝒰 是子基S的覆盖"
-        detail: "需证明有有限子覆盖"
+        content: '设 𝒰 是子基S的覆盖"
+        detail: "需证明有有限子覆盖'
         
       - step: 4
         content: "Zorn引理构造"
-        detail: "找极大的不能被有限覆盖的集族，导出矛盾"
+        detail: '找极大的不能被有限覆盖的集族，导出矛盾"
         
     proof_tree: |
       Tychonoff定理
@@ -77,16 +77,16 @@ theorem:
                   └── 利用各Xα的紧致性
                   
     techniques:
-      - "子基定理"
+      - "子基定理'
       - "Zorn引理"
-      - "选择公理"
+      - '选择公理"
       
     alternatives:
-      - name: "超滤子证明"
+      - name: "超滤子证明'
         description: "用超滤子的聚点性质"
         
-      - name: "网证明"
-        description: "用网的收敛子网"
+      - name: '网证明"
+        description: "用网的收敛子网'
         
   # ===== 五种表征 =====
   representations:
@@ -120,8 +120,8 @@ theorem:
       
       无限维"盒子"类比：
       - 每个维度都是有界闭区间[0,1]
-      - 无限维乘积 [0,1]^ℕ 还是"有界闭"
-      - 但"有界闭"在无限维需要更精细定义
+      - 无限维乘积 [0,1]^ℕ 还是'有界闭"
+      - 但"有界闭'在无限维需要更精细定义
       
       Tychonoff告诉我们：
       紧致性是"正确的"有界闭推广
@@ -136,7 +136,7 @@ theorem:
       
       # 构造覆盖
       def create_cover(n):
-          """创建[0,1]²的n×n网格覆盖"""
+          '""创建[0,1]²的n×n网格覆盖'""
           eps = 1.5/n
           cover = []
           for i in range(n):
@@ -157,65 +157,65 @@ theorem:
       等价于：紧Hausdorff空间范畴有所有小积
       
       这与Stone对偶相关：
-      CompHaus ≃ Boolᵒᵖ（布尔代数的对偶范畴）
+      CompHaus ≅ Boolᵒᵖ（布尔代数的对偶范畴）
       
   # ===== 应用层 =====
   applications:
-    - domain: "泛函分析"
-      description: "Banach-Alaoglu定理（弱*紧性）"
+    - domain: '泛函分析"
+      description: "Banach-Alaoglu定理（弱*紧性）'
       
     - domain: "代数"
-      description: "pro-有限群的紧性"
+      description: 'pro-有限群的紧性"
       
-    - domain: "逻辑"
+    - domain: "逻辑'
       description: "紧致性定理的拓扑证明"
       
-    - domain: "代数几何"
-      description: "概形的拟紧性"
+    - domain: '代数几何"
+      description: "概形的拟紧性'
       
     - domain: "博弈论"
-      description: "Nash均衡存在性"
+      description: 'Nash均衡存在性"
       
   # ===== 推广与特化 =====
   generalizations:
-    - id: "tychonoff-locale"
+    - id: "tychonoff-locale'
       statement: "locale版本（不需选择公理）"
-      description: "Point-free拓扑学中的推广"
+      description: 'Point-free拓扑学中的推广"
       
   special_cases:
-    - id: "finite-product"
+    - id: "finite-product'
       statement: "有限紧空间的乘积紧"
-      description: "不需选择公理"
+      description: '不需选择公理"
       
-    - id: "cube"
+    - id: "cube'
       statement: "[0,1]^I 紧（任意指标集）"
-      description: "Hilbert立方体"
+      description: 'Hilbert立方体"
       
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "compactness"
+      - id: "compactness'
         role: "定理主题"
-      - id: "product-topology"
-        role: "拓扑结构"
+      - id: 'product-topology"
+        role: "拓扑结构'
       - id: "axiom-of-choice"
-        role: "证明依赖"
+        role: '证明依赖"
         
     uses_theorems:
-      - id: "alexander-subbase"
+      - id: "alexander-subbase'
         description: "子基定理"
-      - id: "zorn-lemma"
-        description: "极大元存在"
+      - id: 'zorn-lemma"
+        description: "极大元存在'
         
     implies:
       - id: "banach-alaoglu"
-        description: "Banach空间对偶单位球弱*紧"
-      - id: "compactness-theorem-logic"
+        description: 'Banach空间对偶单位球弱*紧"
+      - id: "compactness-theorem-logic'
         description: "逻辑紧致性定理"
         
     equivalent_to:
-      - id: "axiom-of-choice"
-        description: "等价于选择公理（Kelley）"
+      - id: 'axiom-of-choice"
+        description: "等价于选择公理（Kelley）'
         
   # ===== 元数据层 =====
   metadata:
@@ -223,11 +223,11 @@ theorem:
     importance: 5
     
     prerequisites:
-      concepts: ["compactness", "product-topology", "filter"]
-      theorems: ["alexander-subbase", "zorn-lemma"]
+      concepts: ["compactness", 'product-topology", "filter']
+      theorems: ["alexander-subbase", 'zorn-lemma"]
       
     year_proved: 1930
-    provers: ["tychonoff"]
+    provers: ["tychonoff']
     
     historical_note: |
       Tychonoff在1930年对可数乘积证明了此定理。
@@ -237,5 +237,5 @@ theorem:
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Topology.Compactness.Compact"
-    main_theorem: "isCompact_pi_infinite"
+    main_theorem: 'isCompact_pi_infinite"
     coverage: "complete"

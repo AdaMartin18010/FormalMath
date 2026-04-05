@@ -5,9 +5,9 @@
 concept:
   id: "riemannian-metric'
   name:
-    zh: "Riemann度量"
+    zh: 'Riemann度量'
     en: 'Riemannian Metric"
-  msc_codes: ["53C20']
+  msc_codes: ['53C20']
   
   # ===== 定义层 =====
   definition:
@@ -45,7 +45,7 @@ concept:
     geometric: |
       【几何直觉】内在测量
       - 不需要嵌入到更高维空间
-      - "蚂蚁在曲面上测量"
+      - "蚂蚁在曲面上测量'
       - 可以定义弯曲但没有方向
       
     physical: |
@@ -56,41 +56,41 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: '欧氏空间 ℝⁿ"
+    - name: '欧氏空间 ℝⁿ'
       metric: "g = dx₁² + ... + dxₙ²'
-      curvature: "平坦（曲率为0）"
+      curvature: "平坦（曲率为0）'
       
-    - name: '球面 S²"
+    - name: '球面 S²'
       metric: "g = dθ² + sin²θ dφ²'
-      curvature: "常正曲率"
+      curvature: '常正曲率"
       
-    - name: '双曲平面 H²"
-      metric: "g = (dx² + dy²)/y² (上半平面模型)'
+    - name: '双曲平面 H²'
+      metric: 'g = (dx² + dy²)/y² (上半平面模型)'
       curvature: "常负曲率"
       
-    - name: '环面 T²"
-      metric: "g = dθ₁² + dθ₂²（平坦环面）'
-      curvature: "平坦"
+    - name: '环面 T²'
+      metric: 'g = dθ₁² + dθ₂²（平坦环面）'
+      curvature: "平坦'
       
   # ===== 关系层 =====
   relations:
     requires:
       - id: 'manifold"
-        description: "底流形'
-      - id: "tangent-bundle"
+        description: '底流形'
+      - id: 'tangent-bundle"
         description: '切丛"
         
     leads_to:
-      - id: "curvature'
-        description: "曲率张量"
-      - id: 'geodesic"
+      - id: 'curvature'
+        description: '曲率张量"
+      - id: 'geodesic'
         description: "测地线'
-      - id: "connection"
+      - id: 'connection'
         description: 'Levi-Civita联络"
         
   # ===== 元数据层 =====
   metadata:
     difficulty: 4
     importance: 5
-    prerequisites: ["manifold', "tangent-bundle"]
-    leads_to: ['curvature", "geodesic', "general-relativity"]
+    prerequisites: ["manifold', 'tangent-bundle']
+    leads_to: ['curvature", 'geodesic', "general-relativity"]

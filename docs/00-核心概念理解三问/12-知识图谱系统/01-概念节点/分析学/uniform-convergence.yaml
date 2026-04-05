@@ -5,9 +5,9 @@
 concept:
   id: "uniform-convergence'
   name:
-    zh: "一致收敛"
+    zh: '一致收敛'
     en: 'Uniform Convergence"
-  msc_codes: ["40A30']
+  msc_codes: ['40A30']
   
   # ===== 定义层 =====
   definition:
@@ -25,7 +25,7 @@ concept:
                   d(fₙ(x), f(x)) < ε
       
     informal: |
-      一致收敛 = "收敛速度与x无关"
+      一致收敛 = "收敛速度与x无关'
       
       逐点收敛：对每个x，fₙ(x) → f(x)
       一致收敛：所有x同时以相同速度收敛
@@ -57,41 +57,41 @@ concept:
   # ===== 例子层 =====
   examples:
     uniform:
-      - name: 'fₙ(x) = xⁿ/n 在 [0,1] 上"
+      - name: 'fₙ(x) = xⁿ/n 在 [0,1] 上'
         limit: "0'
-        reason: "sup|xⁿ/n| = 1/n → 0"
+        reason: "sup|xⁿ/n| = 1/n → 0'
         
     not_uniform:
-      - name: 'fₙ(x) = xⁿ 在 [0,1] 上"
+      - name: 'fₙ(x) = xⁿ 在 [0,1] 上'
         pointwise_limit: "χ_{\\{1\\}}'
-        reason: "在x=1附近收敛速度任意慢"
+        reason: '在x=1附近收敛速度任意慢"
         
-      - name: 'fₙ(x) = nx·e^{-nx²}"
-        pointwise_limit: "0'
+      - name: 'fₙ(x) = nx·e^{-nx²}'
+        pointwise_limit: '0'
         reason: "峰值不趋于0"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: 'limit-of-continuous"
-      statement: "连续函数的一致极限是连续的'
+    - id: 'limit-of-continuous'
+      statement: '连续函数的一致极限是连续的'
       
-    - id: "interchange-limit-integral"
+    - id: "interchange-limit-integral'
       statement: '一致收敛下可以交换极限和积分"
       
-    - id: "weierstrass-m-test'
-      statement: "级数的一致收敛判别"
+    - id: 'weierstrass-m-test'
+      statement: '级数的一致收敛判别"
       
   # ===== 关系层 =====
   relations:
     requires:
       - id: 'sequence"
-        description: "函数序列'
-      - id: "limit"
-        description: '收敛概念"
+        description: '函数序列'
+      - id: 'limit"
+        description: '收敛概念'
         
     implies:
       - id: "pointwise-convergence'
-        description: "一致收敛蕴含逐点收敛"
+        description: '一致收敛蕴含逐点收敛'
         
     related_to:
       - id: 'equicontinuity"
@@ -103,4 +103,4 @@ concept:
     importance: 5
     
   mathlib:
-    path: "Mathlib.Topology.UniformSpace.UniformConvergence"
+    path: 'Mathlib.Topology.UniformSpace.UniformConvergence"

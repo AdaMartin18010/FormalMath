@@ -5,9 +5,9 @@
 concept:
   id: "metric-space'
   name:
-    zh: "度量空间"
+    zh: '度量空间'
     en: 'Metric Space"
-  msc_codes: ["54E35']
+  msc_codes: ['54E35']
   
   # ===== 定义层 =====
   definition:
@@ -19,7 +19,7 @@ concept:
       3. d(x, z) ≤ d(x, y) + d(y, z)（三角不等式）
       
     informal: |
-      度量空间是有"距离"概念的空间。
+      度量空间是有"距离'概念的空间。
       
       距离满足直觉：
       - 自己到自己距离为0
@@ -50,40 +50,40 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: '欧氏空间 ℝⁿ"
+    - name: '欧氏空间 ℝⁿ'
       metric: "d(x,y) = √Σ(xᵢ-yᵢ)²'
       
-    - name: "离散度量"
-      metric: 'd(x,y) = 0 if x=y, 1 otherwise"
+    - name: "离散度量'
+      metric: 'd(x,y) = 0 if x=y, 1 otherwise'
       property: "所有子集开'
       
-    - name: "Lᵖ度量"
-      metric: 'd(f,g) = (∫|f-g|ᵖ)^{1/p}"
+    - name: 'Lᵖ度量"
+      metric: 'd(f,g) = (∫|f-g|ᵖ)^{1/p}'
       
-    - name: "sup度量'
+    - name: 'sup度量'
       metric: "d(f,g) = sup|f(x)-g(x)|"
       
   # ===== 定理层 =====
   key_theorems:
-    - id: 'baire-category"
-      statement: "完备度量空间是Baire空间'
+    - id: 'baire-category'
+      statement: '完备度量空间是Baire空间'
       
-    - id: "metrization"
+    - id: "metrization'
       statement: '正则+第二可数 ⟹ 可度量化"
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "set'
+      - id: 'set'
         
     leads_to:
-      - id: "topological-space"
+      - id: 'topological-space"
         description: '诱导拓扑"
-      - id: "completeness'
-        description: "完备度量空间"
+      - id: 'completeness'
+        description: '完备度量空间"
         
     specializes_to:
-      - id: 'normed-space"
+      - id: 'normed-space'
         description: "范数诱导度量'
         
   # ===== 元数据层 =====
@@ -92,5 +92,5 @@ concept:
     importance: 5
     
   mathlib:
-    path: "Mathlib.Topology.MetricSpace.Basic"
+    path: 'Mathlib.Topology.MetricSpace.Basic'
     name: 'MetricSpace"

@@ -117,7 +117,7 @@ services:
       options:
         max-size: "10m"
         max-file: "5"
-        labels: "service_name,environment"
+        labels: "service_name,environment'
 
   # 前端静态文件服务 - 优化配置
   frontend:

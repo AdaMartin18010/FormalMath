@@ -43,7 +43,7 @@ $$H^k_{dR}(M) \cong H^k(M; \mathbb{R})$$
 -- 完整形式化需要微分形式和同调论的详细构造
 
 theorem de_rham {M : Type*} [SmoothManifold M] (k : ℕ) :
-    deRhamCohomology k M ≃ₗ[ℝ] singularCohomology k M ℝ := by
+    deRhamCohomology k M ≅ₗ[ℝ] singularCohomology k M ℝ := by
   sorry  -- 需要详细的微分拓扑形式化
 
 ```

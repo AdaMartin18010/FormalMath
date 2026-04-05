@@ -1,8 +1,9 @@
 ---
+title: "04 非线性PDE守恒律与激波"
 msc_primary: "35L65"
 msc_secondary: ['35L67', '35L03', '76L05']
+processed_at: '2026-04-05'
 ---
-
 # 04 非线性PDE守恒律与激波 / Conservation Laws and Shock Waves in Nonlinear PDE
 
 **主题编号**: B.03.06.04  

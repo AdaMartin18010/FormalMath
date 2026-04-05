@@ -5,9 +5,9 @@
 concept:
   id: "commutator'
   name:
-    zh: "交换子"
+    zh: '交换子'
     en: 'Commutator"
-  msc_codes: ["20F12']
+  msc_codes: ['20F12']
 
   # ===== 定义层 =====
   definition:
@@ -24,12 +24,12 @@ concept:
       - G 阿贝尔 ⟺ [G,G] = {e}
 
     informal: |
-      交换子衡量"不可交换程度"。
+      交换子衡量"不可交换程度'。
 
       [a,b] = e ⟺ ab = ba（可交换）
       [a,b] ≠ e ⟺ ab ≠ ba（不可交换）
 
-      交换子群收集了所有'不交换"信息。
+      交换子群收集了所有'不交换'信息。
 
     lean: |
       -- 交换子
@@ -54,23 +54,23 @@ concept:
 
   # ===== 例子层 =====
   examples:
-    - name: "GL(n,ℝ)"
-      commutator: '[GL,GL] = SL(n,ℝ)"
+    - name: "GL(n,ℝ)'
+      commutator: '[GL,GL] = SL(n,ℝ)'
 
     - name: "Sₙ (n≥5)'
-      commutator: "[Sₙ,Sₙ] = Aₙ"
+      commutator: '[Sₙ,Sₙ] = Aₙ"
 
-    - name: '自由群 Fₙ"
-      commutator: "[Fₙ,Fₙ] ≠ Fₙ'
+    - name: '自由群 Fₙ'
+      commutator: '[Fₙ,Fₙ] ≠ Fₙ'
 
   # ===== 关系层 =====
   relations:
     requires:
       - id: "group"
-      - id: 'normal-subgroup"
+      - id: 'normal-subgroup'
 
     related_to:
-      - id: "abelianization'
+      - id: 'abelianization'
       - id: "solvable-group"
 
   # ===== 元数据层 =====

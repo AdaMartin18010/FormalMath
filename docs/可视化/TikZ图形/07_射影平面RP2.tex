@@ -1,0 +1,149 @@
+% 射影平面 RP² (Real Projective Plane)
+% 描述: 展示实射影平面的多种表示方法
+% 数学概念: 射影平面、商空间、射影几何、不可定向闭曲面
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0
+]
+
+% ============= 左侧: 商空间构造 =============
+\begin{scope}[xshift=-5cm, yshift=0.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {圆盘商空间};
+    
+    % 圆盘
+    \fill[red!15] (0, 0) circle (1.8);
+    \draw[line width=1.5pt, color=red!60!black] (0, 0) circle (1.8);
+    
+    % 边界箭头 (反向粘合)
+    \foreach \angle in {0, 30, 60, 90, 120, 150} {
+        \draw[->, color=blue!70!black, line width=1pt] 
+            ({1.8*cos(\angle+5)}, {1.8*sin(\angle+5)}) arc (\angle+5:\angle+25:1.8);
+    }
+    \foreach \angle in {180, 210, 240, 270, 300, 330} {
+        \draw[->, color=blue!70!black, line width=1pt] 
+            ({1.8*cos(\angle+25)}, {1.8*sin(\angle+25)}) arc (\angle+25:\angle+5:1.8);
+    }
+    
+    % 中心标记
+    \fill[black] (0, 0) circle (2pt);
+    \node[below right] at (0, 0) {$[0]$};
+    
+    % 对径点标记
+    \fill[red!70!black] (1.8, 0) circle (3pt);
+    \fill[red!70!black] (-1.8, 0) circle (3pt);
+    \node[color=red!70!black, font=\scriptsize, above] at (1.8, 0) {$p$};
+    \node[color=red!70!black, font=\scriptsize, above] at (-1.8, 0) {$-p$};
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize] at (0, -2.5) {$\mathbb{R}P^2 = D^2 / (x \sim -x)$};
+    \node[anchor=north, font=\scriptsize, text width=5cm, align=center] 
+        at (0, -3.2) {边界对径点粘合};
+\end{scope}
+
+% ============= 中间: 球面商空间 =============
+\begin{scope}[xshift=0cm, yshift=0.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {球面商空间};
+    
+    % 球面
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5] 
+        (0, 0) circle (1.8);
+    
+    % 赤道
+    \draw[color=green!60!black, line width=0.8pt] 
+        (0, 0) ellipse (1.8 and 0.5);
+    
+    % 对径点
+    \coordinate (P1) at (1.2, 0.6);
+    \coordinate (P2) at (-1.2, -0.6);
+    \fill[red!70!black] (P1) circle (3pt);
+    \fill[red!70!black] (P2) circle (3pt);
+    
+    % 连接线(通过球心)
+    \draw[dashed, color=orange!80!black, line width=1pt] (P1) -- (P2);
+    \fill[black] (0, 0) circle (1.5pt);
+    
+    % 等价标记
+    \node[color=red!70!black, font=\small, above right] at (P1) {$x$};
+    \node[color=red!70!black, font=\small, below left] at (P2) {$-x$};
+    \draw[<->, line width=1pt, color=purple!70!black] (0.8, 0.4) -- (1.4, 0.8);
+    \node[color=purple!70!black, font=\scriptsize] at (1.8, 1.1) {等同};
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize] at (0, -2.5) {$\mathbb{R}P^2 = S^2 / (x \sim -x)$};
+    \node[anchor=north, font=\scriptsize, text width=5cm, align=center] 
+        at (0, -3.2) {球面对径点粘合\\万有覆叠: $S^2 \to \mathbb{R}P^2$};
+\end{scope}
+
+% ============= 右侧: Boy曲面 (浸入) =============
+\begin{scope}[xshift=5cm, yshift=0.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {浸入 $\mathbb{R}^3$ (Boy曲面)};
+    
+    % Boy曲面的简化表示
+    % 三重对称图形
+    \foreach \angle in {0, 120, 240} {
+        \begin{scope}[rotate=\angle]
+            \draw[color=red!60!black, line width=1pt, fill=red!15, opacity=0.4]
+                (0, 0) .. controls (0.5, 0.8) and (1.2, 0.5) .. (1.5, 0)
+                       .. controls (1.2, -0.5) and (0.5, -0.8) .. (0, 0);
+        \end{scope}
+    }
+    
+    % 中心
+    \fill[black] (0, 0) circle (2pt);
+    
+    % 自交线
+    \draw[color=blue!60!black, line width=1.2pt, dashed] (0, -0.3) -- (0, 1.2);
+    \node[font=\scriptsize, color=blue!60!black, right] at (0.1, 0.5) {自交};
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize, text width=5cm, align=center] 
+        at (0, -2) {Boy曲面是$\mathbb{R}P^2$到\\$\mathbb{R}^3$的光滑浸入};
+\end{scope}
+
+% ============= 底部: 数学性质 =============
+\node[anchor=north, font=\small, draw=red!30, fill=red!5, rounded corners, inner sep=10pt] 
+    at (4, -4.5) {
+    \begin{tabular}{ll}
+        \textbf{拓扑性质:} & \\
+        边界: & $\partial(\mathbb{R}P^2) = \emptyset$ (闭曲面) \\
+        可定向性: & 不可定向 \\
+        Euler示性数: & $\chi = 1$ \\
+        基本群: & $\pi_1(\mathbb{R}P^2) \cong \mathbb{Z}/2\mathbb{Z}$ \\
+        万有覆叠: & $S^2$ \\
+        分类: & 不可定向闭曲面
+    \end{tabular}
+};
+
+% ============= 基本群 =============
+\begin{scope}[xshift=-5cm, yshift=-4cm]
+    \node[anchor=north west, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{同调群:}\\
+        $H_0 = \mathbb{Z}$ \\
+        $H_1 = \mathbb{Z}_2$ \\
+        $H_2 = 0$ (因不可定向)
+    };
+\end{scope}
+
+% ============= 构造公式 =============
+\begin{scope}[xshift=5cm, yshift=-4cm]
+    \node[anchor=north east, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{齐次坐标:}\\
+        $[x:y:z] \sim [\lambda x: \lambda y: \lambda z]$\\
+        $(x, y, z) \in \mathbb{R}^3 \setminus \{0\}$\\
+        $\lambda \in \mathbb{R}^*$
+    };
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

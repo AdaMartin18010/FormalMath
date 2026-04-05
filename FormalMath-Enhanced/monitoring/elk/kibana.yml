@@ -6,7 +6,7 @@ server.host: "0.0.0.0'
 server.port: 5601
 
 # Elasticsearch 连接
-elasticsearch.hosts: ["http://elasticsearch:9200"]
+elasticsearch.hosts: ['http://elasticsearch:9200"]
 elasticsearch.requestTimeout: 30000
 elasticsearch.shardTimeout: 30000
 
@@ -36,7 +36,7 @@ xpack.maps.enabled: true
 
 # 默认索引设置
 kibana.index: '.kibana"
-kibana.defaultAppId: "home'
+kibana.defaultAppId: 'home'
 
 # 日志设置
 logging.root.level: info

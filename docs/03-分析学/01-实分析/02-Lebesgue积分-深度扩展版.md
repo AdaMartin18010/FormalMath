@@ -1,8 +1,9 @@
 ---
+title: "Lebesgue积分 - 深度扩展版"
 msc_primary: "28Axx"
 msc_secondary: ['46Gxx', '46-XX', '46Axx']
+processed_at: '2026-04-05'
 ---
-
 # Lebesgue积分 - 深度扩展版
 
 **创建日期**: 2025年12月1日

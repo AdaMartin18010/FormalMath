@@ -21,7 +21,7 @@ services:
       - ./config/postgresql.conf:/etc/postgresql/postgresql.conf:ro
       - ./scripts/backup:/backup:ro
     ports:
-      - "5432:5432"
+      - "5432:5432'
     command: >
       postgres
       -c config_file=/etc/postgresql/postgresql.conf
@@ -32,7 +32,7 @@ services:
     networks:
       - formalmath-db
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U formalmath"]
+      test: ["CMD-SHELL", 'pg_isready -U formalmath"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -54,13 +54,13 @@ services:
     volumes:
       - postgres_replica1_data:/var/lib/postgresql/data
     ports:
-      - "5433:5432"
+      - "5433:5432'
     networks:
       - formalmath-db
     depends_on:
       - postgres-primary
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U formalmath"]
+      test: ["CMD-SHELL", 'pg_isready -U formalmath"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -72,7 +72,7 @@ services:
           PGPASSWORD=$$REPLICA_PASSWORD pg_basebackup -h $$PRIMARY_HOST -p $$PRIMARY_PORT -U $$REPLICA_USER -D $$PGDATA -Fp -Xs -P -R;
         fi;
         postgres
-      "
+      '
 
   # PostgreSQL 从节点 2
   postgres-replica-2:
@@ -96,7 +96,7 @@ services:
     depends_on:
       - postgres-primary
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U formalmath"]
+      test: ['CMD-SHELL", "pg_isready -U formalmath']
       interval: 10s
       timeout: 5s
       retries: 5
@@ -121,7 +121,7 @@ services:
       - 'REDIS_CLUSTER_CREATOR=yes'
       - 'REDIS_CLUSTER_DYNAMIC_IPS=yes'
     ports:
-      - "6379:6379"
+      - '6379:6379"
     volumes:
       - redis_node0_data:/bitnami/redis/data
     networks:
@@ -136,7 +136,7 @@ services:
       - 'REDIS_CLUSTER_REPLICAS=1'
       - 'REDIS_NODES=redis-node-0,redis-node-1,redis-node-2,redis-node-3,redis-node-4,redis-node-5'
     ports:
-      - "6380:6379"
+      - "6380:6379'
     volumes:
       - redis_node1_data:/bitnami/redis/data
     networks:
@@ -166,7 +166,7 @@ services:
       - 'REDIS_CLUSTER_REPLICAS=1'
       - 'REDIS_NODES=redis-node-0,redis-node-1,redis-node-2,redis-node-3,redis-node-4,redis-node-5'
     ports:
-      - "6382:6379"
+      - '6382:6379"
     volumes:
       - redis_node3_data:/bitnami/redis/data
     networks:
@@ -181,7 +181,7 @@ services:
       - 'REDIS_CLUSTER_REPLICAS=1'
       - 'REDIS_NODES=redis-node-0,redis-node-1,redis-node-2,redis-node-3,redis-node-4,redis-node-5'
     ports:
-      - "6383:6379"
+      - "6383:6379'
     volumes:
       - redis_node4_data:/bitnami/redis/data
     networks:
@@ -212,7 +212,7 @@ services:
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin}
       PGADMIN_CONFIG_SERVER_MODE: 'False'
     ports:
-      - "5050:80"
+      - '5050:80"
     volumes:
       - pgadmin_data:/var/lib/pgadmin
     networks:
@@ -230,7 +230,7 @@ services:
     environment:
       - REDIS_HOSTS=local:redis-node-0:6379:0:${REDIS_PASSWORD:-redis_password}
     ports:
-      - "8081:8081"
+      - "8081:8081'
     networks:
       - formalmath-db
     depends_on:
@@ -255,7 +255,7 @@ services:
       - ./backups:/backup
       - ./scripts/backup:/scripts:ro
     command: >
-      sh -c "
+      sh -c '
         echo '0 2 * * * /scripts/postgresql_backup.sh full >> /var/log/backup.log 2>&1' | crontab - &&
         crond -f
       "

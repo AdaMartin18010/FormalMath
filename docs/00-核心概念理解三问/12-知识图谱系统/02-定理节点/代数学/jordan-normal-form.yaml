@@ -5,9 +5,9 @@
 theorem:
   id: "jordan-normal-form'
   name:
-    zh: "Jordan标准形定理"
+    zh: 'Jordan标准形定理"
     en: 'Jordan Normal Form Theorem"
-  msc_codes: ["15A21']
+  msc_codes: ['15A21']
   
   # ===== 陈述层 =====
   statement:
@@ -40,7 +40,7 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: '广义特征空间分解 + 循环子空间"
+    main_strategy: '广义特征空间分解 + 循环子空间'
     
     proof_tree: |
       Jordan标准形定理
@@ -79,7 +79,7 @@ theorem:
     intuitive: |
       【直觉表征】
       
-      对角化的"最佳近似"：
+      对角化的"最佳近似'：
       - 能对角化就对角化
       - 不能就用Jordan块
       - Jordan块表示'几乎对角"
@@ -100,19 +100,19 @@ theorem:
   # ===== 应用层 =====
   applications:
     - description: "计算矩阵的幂 Aⁿ'
-    - description: "解线性常微分方程组"
+    - description: '解线性常微分方程组"
     - description: '分析线性系统的稳定性"
-    - description: "矩阵函数 f(A) 的计算'
+    - description: '矩阵函数 f(A) 的计算'
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
       - id: "eigenvalue"
-      - id: 'linear-map"
+      - id: 'linear-map'
         
     related_to:
       - id: "spectral-theorem'
-        description: "自伴情形可完全对角化"
+        description: "自伴情形可完全对角化'
       - id: 'cayley-hamilton"
         description: "最小多项式'
         
@@ -121,7 +121,7 @@ theorem:
     difficulty: 4
     importance: 4
     history:
-      discoverer: "Camille Jordan"
+      discoverer: 'Camille Jordan"
       year: 1870
       
   mathlib:

@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "cayley-hamilton"
+  id: "cayley-hamilton'
   name:
     zh: "Cayley-Hamilton定理"
-    en: "Cayley-Hamilton Theorem"
-  msc_codes: ["15A18"]
+    en: 'Cayley-Hamilton Theorem"
+  msc_codes: ["15A18']
   
   # ===== 陈述层 =====
   statement:
@@ -39,10 +39,10 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: "伴随矩阵方法"
+    main_strategy: '伴随矩阵方法"
     
     alternative_methods:
-      - "稠密性论证（代数闭域上可对角化矩阵稠密）"
+      - "稠密性论证（代数闭域上可对角化矩阵稠密）'
       - "最小多项式整除特征多项式"
       
     proof_tree: |
@@ -77,7 +77,7 @@ theorem:
       【直觉表征】
       
       矩阵作用于向量空间，
-      产生有限维的"轨道"。
+      产生有限维的'轨道"。
       
       n维空间中：
       {v, Av, A²v, ..., Aⁿv} 线性相关
@@ -95,24 +95,24 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - description: "计算矩阵的高次幂"
+    - description: "计算矩阵的高次幂'
     - description: "求解矩阵方程"
-    - description: "证明最小多项式的存在"
-    - description: "控制论中的可控性分析"
+    - description: '证明最小多项式的存在"
+    - description: "控制论中的可控性分析'
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
       - id: "eigenvalue"
-        role: "特征多项式"
-      - id: "determinant"
+        role: '特征多项式"
+      - id: "determinant'
         role: "定义"
         
     related_to:
-      - id: "minimal-polynomial"
-        description: "最小多项式整除特征多项式"
+      - id: 'minimal-polynomial"
+        description: "最小多项式整除特征多项式'
       - id: "jordan-form"
-        description: "结构分解"
+        description: '结构分解"
         
   # ===== 元数据层 =====
   metadata:

@@ -24,7 +24,7 @@ spec:
             class: nginx
         selector:
           dnsNames:
-            - "*.staging.formalmath.org"
+            - "*.staging.formalmath.org'
       # DNS-01挑战 (Cloudflare)
       - dns01:
           cloudflare:
@@ -34,12 +34,12 @@ spec:
               key: api-token
         selector:
           dnsNames:
-            - "formalmath.org"
-            - "*.formalmath.org"
-            - "api.formalmath.org"
+            - 'formalmath.org"
+            - '*.formalmath.org"
+            - 'api.formalmath.org'
             - "www.formalmath.org"
-            - "docs.formalmath.org"
-            - "grafana.formalmath.org"
+            - 'docs.formalmath.org'
+            - "grafana.formalmath.org'
 ---
 # Production 环境
 apiVersion: cert-manager.io/v1
@@ -62,7 +62,7 @@ spec:
             class: nginx
         selector:
           dnsZones:
-            - "formalmath.org"
+            - "formalmath.org'
       # DNS-01挑战配置 (Cloudflare)
       - dns01:
           cloudflare:
@@ -72,7 +72,7 @@ spec:
               key: api-token
         selector:
           dnsZones:
-            - "formalmath.org"
+            - 'formalmath.org"
 ---
 # 自签名证书颁发者（用于内部服务）
 apiVersion: cert-manager.io/v1

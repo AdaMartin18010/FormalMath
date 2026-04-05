@@ -1,0 +1,167 @@
+% 复流形示意 (Complex Manifold)
+% 描述: 展示复流形的结构和全纯映射
+% 数学概念: 复流形、全纯函数、复结构、Kähler流形
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0
+]
+
+% ============= 左侧: 复流形结构 =============
+\begin{scope}[xshift=-5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {复流形 $M$};
+    
+    % 复流形
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, decorate, 
+          decoration={random steps, segment length=3pt, amplitude=1pt}] 
+        (0, 0) .. controls (1, 1.5) and (2, 1) .. (2.5, 0)
+              .. controls (2.5, -1) and (1.5, -1.5) .. (0, 0);
+    \node[color=blue!60!black, font=\small] at (2, -0.5) {$M$};
+    
+    % 开集U
+    \draw[color=red!70!black, line width=1pt, fill=red!10, rounded corners=3pt] 
+        (0.5, -0.5) ellipse (0.8 and 0.6);
+    \node[color=red!70!black, font=\tiny] at (0.5, 0.2) {$U$};
+    
+    % 点
+    \fill[black] (0.5, -0.3) circle (2pt);
+    \node[below right] at (0.5, -0.3) {$p$};
+    
+    % 映射箭头
+    \draw[->, color=orange!80!black, line width=1.2pt] (1.4, -0.2) -- (2.5, 0.3);
+    \node[color=orange!80!black, font=\small, above] at (2, 0.3) {$\varphi$};
+    
+    % 复空间
+    \begin{scope}[xshift=3.5cm, yshift=0.2cm]
+        \fill[green!10, rounded corners=3pt] (-0.8, -0.8) rectangle (1.2, 1);
+        \draw[color=green!60!black, line width=0.8pt] (-0.8, -0.8) rectangle (1.2, 1);
+        \draw[step=0.3, color=gray!30, line width=0.5pt] (-0.8, -0.8) grid (1.2, 1);
+        
+        % 坐标轴
+        \draw[->, color=red!70!black, line width=0.8pt] (0, -0.8) -- (0, 1) node[above, font=\tiny] {$\text{Im}$};
+        \draw[->, color=red!70!black, line width=0.8pt] (-0.8, 0) -- (1.2, 0) node[right, font=\tiny] {$\text{Re}$};
+        
+        % 像点
+        \fill[black] (0.3, 0.3) circle (2pt);
+        \node[right, font=\tiny] at (0.3, 0.3) {$(z^1, \ldots, z^n)$};
+        
+        % 标签
+        \node[color=green!60!black, font=\small] at (0.2, 1.2) {$\mathbb{C}^n$};
+    \end{scope}
+    
+    % 维数说明
+    \node[anchor=north, font=\scriptsize] at (0, -2) {$\dim_{\mathbb{C}} M = n$};
+    \node[anchor=north, font=\tiny, text width=5cm, align=center] 
+        at (0, -2.8) {复维数$n$ = 实维数$2n$};
+\end{scope}
+
+% ============= 中间: 全纯映射 =============
+\begin{scope}[xshift=0.5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {全纯映射};
+    
+    % 两个复流形
+    % M
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=5pt] 
+        (-1.5, -1) rectangle (1.5, 1);
+    \node[color=blue!60!black, font=\small] at (1.2, -0.7) {$M$};
+    
+    % 点p
+    \fill[black] (-0.5, 0) circle (2pt);
+    \node[left] at (-0.5, 0) {$p$};
+    
+    % N
+    \draw[color=purple!60!black, line width=1pt, fill=purple!10, opacity=0.5, rounded corners=5pt] 
+        (-1.5, -2.8) rectangle (1.5, -0.8);
+    \node[color=purple!60!black, font=\small] at (1.2, -2.5) {$N$};
+    
+    % 点f(p)
+    \fill[black] (-0.5, -1.8) circle (2pt);
+    \node[left] at (-0.5, -1.8) {$f(p)$};
+    
+    % 映射箭头
+    \draw[->, color=green!60!black, line width=1.5pt] (0, -0.2) -- (0, -1.6);
+    \node[color=green!60!black, font=\small, right] at (0.1, -0.9) {$f$};
+    
+    % 全纯条件
+    \node[anchor=north, font=\scriptsize] at (0, -3) {$\bar{\partial}f = 0$};
+    \node[anchor=north, font=\tiny, text width=4cm, align=center] 
+        at (0, -3.6) {满足Cauchy-Riemann方程\\
+                       保角映射};
+\end{scope}
+
+% ============= 右侧: 复结构 =============
+\begin{scope}[xshift=5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {近复结构 $J$};
+    
+    % 切空间
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.3] 
+        (-1.5, -1.5) rectangle (1.5, 1.5);
+    \node[color=blue!60!black, font=\small] at (1.2, 1.2) {$T_pM$};
+    
+    % 原点
+    \fill[black] (0, 0) circle (2pt);
+    
+    % 向量v
+    \draw[->, color=red!70!black, line width=1.5pt] (0, 0) -- (1, 0.5);
+    \node[color=red!70!black, font=\small, above] at (0.5, 0.25) {$v$};
+    
+    % Jv
+    \draw[->, color=green!60!black, line width=1.5pt] (0, 0) -- (-0.5, 1);
+    \node[color=green!60!black, font=\small, left] at (-0.25, 0.5) {$Jv$};
+    
+    % 直角标记
+    \draw[color=gray, line width=0.5pt] (0.2, 0.1) -- (0.15, 0.25) -- (0, 0.2);
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize] at (0, -1.8) {$J^2 = -I$};
+    \node[anchor=north, font=\tiny, text width=4cm, align=center] 
+        at (0, -2.5) {近复结构可积\\
+                       $\Leftrightarrow$ Nijenhuis张量为零};
+\end{scope}
+
+% ============= 底部: Kähler流形 =============
+\node[anchor=north, font=\small, draw=green!30, fill=green!5, rounded corners, inner sep=10pt] 
+    at (4, -4.5) {
+    \begin{tabular}{ll}
+        \textbf{Kähler流形:} & \\
+        同时具有: & 1. 复结构 $J$ \\
+                 & 2. Riemann度量 $g$ \\
+                 & 3. 辛结构 $\omega$ \\[5pt]
+        相容条件: & $\omega(u, v) = g(Ju, v)$\\
+                  & $g(Ju, Jv) = g(u, v)$ \\[5pt]
+        例子: & $\mathbb{C}P^n$, 代数簇, Calabi-Yau
+    \end{tabular}
+};
+
+% ============= 重要定理 =============
+\begin{scope}[xshift=-5cm, yshift=-4cm]
+    \node[anchor=north west, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{重要定理:}\\
+        - Chow定理: 射影代数簇\\\quad $\Leftrightarrow$ 紧复流形\\
+        - Kodaira嵌入定理\\
+        - Hodge理论
+    };
+\end{scope}
+
+% ============= 维数关系 =============
+\begin{scope}[xshift=5cm, yshift=-4cm]
+    \node[anchor=north east, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{维数关系:}\\
+        $\dim_{\mathbb{R}} M = 2 \dim_{\mathbb{C}} M$\\[5pt]
+        切空间分解:\\
+        $TM \otimes \mathbb{C} = T^{1,0}M \oplus T^{0,1}M$
+    };
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

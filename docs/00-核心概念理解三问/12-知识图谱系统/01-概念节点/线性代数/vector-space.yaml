@@ -5,9 +5,9 @@
 concept:
   id: "vector-space'
   name:
-    zh: "向量空间"
+    zh: '向量空间"
     en: 'Vector Space"
-  msc_codes: ["15A03']
+  msc_codes: ['15A03']
   
   # ===== 定义层 =====
   definition:
@@ -62,7 +62,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: '几何图示"
+    - type: '几何图示'
       content: |
         ℝ²中的向量：
         
@@ -83,79 +83,79 @@ concept:
   # ===== 例子层 =====
   examples:
     finite_dimensional:
-      - name: "ℝⁿ"
+      - name: "ℝⁿ'
         field: 'ℝ"
         dimension: "n'
-        basis: "{e₁, ..., eₙ}"
+        basis: '{e₁, ..., eₙ}"
         
       - name: 'ℂⁿ"
-        field: "ℂ'
+        field: 'ℂ'
         dimension: "n"
         
-      - name: '多项式空间 Pₙ"
+      - name: '多项式空间 Pₙ'
         field: "ℝ或ℂ'
-        dimension: "n+1"
+        dimension: "n+1'
         basis: '{1, x, x², ..., xⁿ}"
         
       - name: "矩阵空间 M_{m×n}'
-        field: "F"
+        field: 'F"
         dimension: 'm·n"
         
     infinite_dimensional:
-      - name: "多项式空间 P'
+      - name: '多项式空间 P'
         field: "ℝ"
-        dimension: '∞"
+        dimension: '∞'
         basis: "{1, x, x², ...}'
         
-      - name: "连续函数 C([0,1])"
+      - name: "连续函数 C([0,1])'
         field: 'ℝ"
         dimension: "∞'
         
-      - name: "ℓ²序列空间"
+      - name: 'ℓ²序列空间"
         field: 'ℝ或ℂ"
-        property: "Hilbert空间'
+        property: 'Hilbert空间'
         
   # ===== 关系层 =====
   relations:
     requires:
       - id: "field"
-        description: '向量空间定义在域上"
+        description: '向量空间定义在域上'
       - id: "abelian-group'
-        description: "加法群结构"
+        description: "加法群结构'
         
     generalizes:
       - id: 'euclidean-space"
         description: "欧氏空间是特例'
         
     specialized_by:
-      - id: "inner-product-space"
+      - id: 'inner-product-space"
         description: '内积空间"
-      - id: "normed-space'
+      - id: 'normed-space'
         description: "赋范空间"
-      - id: 'banach-space"
+      - id: 'banach-space'
         description: "Banach空间'
-      - id: "hilbert-space"
+      - id: "hilbert-space'
         description: 'Hilbert空间"
         
     related_to:
       - id: "linear-map'
-        description: "线性映射"
+        description: '线性映射"
       - id: 'basis"
-        description: "基和维数'
+        description: '基和维数'
       - id: "dual-space"
-        description: '对偶空间"
+        description: '对偶空间'
         
   # ===== 定理层 =====
   key_theorems:
     - id: "dimension-theorem'
-      statement: "所有基有相同基数"
+      statement: "所有基有相同基数'
       importance: 5
       
     - id: 'rank-nullity"
       statement: "dim(ker T) + dim(im T) = dim(V)'
       importance: 5
       
-    - id: "finite-dim-subspace"
+    - id: 'finite-dim-subspace"
       statement: '有限维空间的子空间是有限维的"
       importance: 4
       
@@ -165,13 +165,13 @@ concept:
     importance: 5
     
     prerequisites:
-      - "field'
+      - 'field'
       - "abelian-group"
       
     leads_to:
-      - 'linear-algebra"
+      - 'linear-algebra'
       - "functional-analysis'
-      - "representation-theory"
+      - "representation-theory'
       
     history:
       first_appearance: '19世纪"
@@ -179,6 +179,6 @@ concept:
       
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.Algebra.Module.Basic"
+    path: 'Mathlib.Algebra.Module.Basic"
     name: 'Module"
-    coverage: "complete"
+    coverage: 'complete"

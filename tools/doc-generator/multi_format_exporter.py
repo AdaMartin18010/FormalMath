@@ -196,9 +196,10 @@ class MultiFormatExporter:
         """生成PDF导出指南"""
         output_path = self.export_dir / "pdf_export_guide.md"
         
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         content = f'''# PDF 导出指南
 
-**生成时间**: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+**生成时间**: {timestamp}
 
 ## 推荐的PDF生成方法
 
@@ -244,10 +245,10 @@ with open('formalmath_complete.md', 'r', encoding='utf-8') as f:
 html_content = markdown(md_content, extensions=['tables', 'fenced_code'])
 
 # 添加样式
-css = '''
+css = """
 @page {{ size: A4; margin: 2cm; }}
 body {{ font-family: "Noto Sans CJK SC", sans-serif; }}
-'''
+"""
 
 # 生成PDF
 HTML(string=html_content).write_pdf(

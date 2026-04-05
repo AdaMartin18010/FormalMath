@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "divisibility"
+  id: "divisibility'
   name:
-    zh: "整除"
-    en: "Divisibility"
-  msc_codes: ["11A05"]
+    zh: '整除"
+    en: 'Divisibility"
+  msc_codes: ['11A05']
   
   # ===== 定义层 =====
   definition:
@@ -64,7 +64,7 @@ concept:
            
         3 整除标记点上的所有数
         
-    - type: "整除格"
+    - type: '整除格'
       content: |
         正整数的整除格（部分）：
         
@@ -81,67 +81,67 @@ concept:
   # ===== 例子层 =====
   examples:
     basic:
-      - statement: "6 | 24"
-        reason: "24 = 6 × 4"
+      - statement: "6 | 24'
+        reason: "24 = 6 × 4'
         
-      - statement: "7 ∤ 25"
-        reason: "25 = 7 × 3 + 4"
+      - statement: '7 ∤ 25"
+        reason: "25 = 7 × 3 + 4'
         
-      - statement: "1 | n 对所有 n"
-        reason: "n = 1 × n"
+      - statement: '1 | n 对所有 n"
+        reason: 'n = 1 × n"
         
-      - statement: "n | 0 对所有 n ≠ 0"
+      - statement: 'n | 0 对所有 n ≠ 0'
         reason: "0 = n × 0"
         
     divisibility_tests:
       - number: 2
-        test: "末位是偶数"
+        test: '末位是偶数'
         
       - number: 3
-        test: "各位数字和被3整除"
+        test: "各位数字和被3整除'
         
       - number: 9
-        test: "各位数字和被9整除"
+        test: "各位数字和被9整除'
         
       - number: 11
-        test: "奇位和与偶位和之差被11整除"
+        test: '奇位和与偶位和之差被11整除"
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "integer"
-        description: "整除定义在整数上"
-      - id: "multiplication"
-        description: "用乘法定义"
+      - id: "integer'
+        description: '整除定义在整数上"
+      - id: 'multiplication"
+        description: '用乘法定义'
         
     generalizes:
       - id: "even-odd"
-        description: "奇偶性是2-整除性"
+        description: '奇偶性是2-整除性'
         
     specialized_by:
-      - id: "prime-divisibility"
-        description: "素数整除"
+      - id: "prime-divisibility'
+        description: "素数整除'
         
     related_to:
-      - id: "gcd"
-        description: "最大公约数"
-      - id: "modular-arithmetic"
-        description: "模算术"
-      - id: "factorization"
+      - id: 'gcd"
+        description: "最大公约数'
+      - id: 'modular-arithmetic"
+        description: '模算术"
+      - id: 'factorization'
         description: "因数分解"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "division-algorithm"
-      statement: "∀a,b>0, ∃! q,r: a = bq + r, 0 ≤ r < b"
+    - id: 'division-algorithm'
+      statement: "∀a,b>0, ∃! q,r: a = bq + r, 0 ≤ r < b'
       importance: 5
       
-    - id: "euclidean-algorithm"
-      statement: "gcd计算方法"
+    - id: "euclidean-algorithm'
+      statement: 'gcd计算方法"
       importance: 5
       
-    - id: "bezout-identity"
-      statement: "gcd(a,b) = ax + by 某整数x,y"
+    - id: "bezout-identity'
+      statement: 'gcd(a,b) = ax + by 某整数x,y"
       importance: 4
       
   # ===== 元数据层 =====
@@ -150,20 +150,20 @@ concept:
     importance: 5
     
     prerequisites:
-      - "integer"
-      - "multiplication"
+      - 'integer"
+      - 'multiplication'
       
     leads_to:
       - "prime-number"
-      - "modular-arithmetic"
-      - "number-theory"
+      - 'modular-arithmetic'
+      - "number-theory'
       
     history:
-      first_appearance: "古代"
-      context: "算术的基础"
+      first_appearance: "古代'
+      context: '算术的基础"
       
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.Algebra.Divisibility.Basic"
-    name: "Dvd"
-    coverage: "complete"
+    path: "Mathlib.Algebra.Divisibility.Basic'
+    name: 'Dvd"
+    coverage: 'complete"

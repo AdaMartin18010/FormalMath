@@ -5,9 +5,9 @@
 theorem:
   id: "intermediate-value-theorem'
   name:
-    zh: "介值定理"
+    zh: '介值定理"
     en: 'Intermediate Value Theorem"
-  msc_codes: ["26A06', "26A15"]
+  msc_codes: ['26A06', "26A15"]
   
   # ===== 陈述层 =====
   statement:
@@ -19,7 +19,7 @@ theorem:
       等价表述：连续函数的像是连通集（区间）。
       
     informal: |
-      连续函数不能'跳过"任何中间值。
+      连续函数不能'跳过'任何中间值。
       
       如果你从1楼走到10楼，中间必须经过2到9楼。
       连续函数的图像是一条不断裂的曲线，
@@ -42,32 +42,32 @@ theorem:
     main_strategy: "二分法 + 上确界性质'
     
     key_ideas:
-      - "构造集合 S = {x ∈ [a,b] : f(x) < y}"
+      - "构造集合 S = {x ∈ [a,b] : f(x) < y}'
       - '利用实数完备性取 c = sup S"
       - "利用连续性证明 f(c) = y'
       
     steps:
       - step: 1
-        content: "不妨设 f(a) < y < f(b)"
+        content: '不妨设 f(a) < y < f(b)"
         
       - step: 2
         content: '定义 S = {x ∈ [a,b] : f(x) < y}"
-        detail: "S非空（a ∈ S）且有上界b'
+        detail: 'S非空（a ∈ S）且有上界b'
         
       - step: 3
         content: "令 c = sup S"
-        detail: '由实数完备性，c存在"
+        detail: '由实数完备性，c存在'
         
       - step: 4
         content: "证明 f(c) ≥ y'
-        detail: "若f(c) < y，由连续性，c不是上界，矛盾"
+        detail: "若f(c) < y，由连续性，c不是上界，矛盾'
         
       - step: 5
         content: '证明 f(c) ≤ y"
         detail: "若f(c) > y，由连续性，存在更小的上界，矛盾'
         
       - step: 6
-        content: "结论：f(c) = y"
+        content: '结论：f(c) = y"
         
     proof_tree: |
       介值定理
@@ -90,14 +90,14 @@ theorem:
                           
     techniques:
       - '上确界论证"
-      - "反证法'
+      - '反证法'
       - "ε-δ连续性"
       
     alternatives:
-      - name: '连通性证明"
+      - name: '连通性证明'
         description: "[a,b]连通，连续像连通，区间是ℝ中唯一连通集'
         
-      - name: "二分法证明"
+      - name: "二分法证明'
         description: '构造套区间逼近"
         
   # ===== 五种表征 =====
@@ -148,7 +148,7 @@ theorem:
       二分法找零点：
       
       def bisection(f, a, b, tol=1e-10):
-          "'"找f在[a,b]上的零点"'"
+          "''找f在[a,b]上的零点"'"
           while b - a > tol:
               c = (a + b) / 2
               if f(a) * f(c) < 0:
@@ -172,58 +172,58 @@ theorem:
       - ℝ中连通集是区间
       - ⟹ f([a,b]) 包含所有中间值
       
-      这是"连续函数保结构'的体现
+      这是'连续函数保结构'的体现
       
   # ===== 应用层 =====
   applications:
     - domain: "方程求根"
-      description: '证明方程有解"
+      description: '证明方程有解'
       example: "x⁵ + x = 1在(0,1)有解'
       
-    - domain: "不动点"
+    - domain: "不动点'
       description: '若f: [0,1]→[0,1]连续，则f有不动点"
       detail: "考虑g(x) = f(x) - x'
       
-    - domain: "拓扑"
+    - domain: '拓扑"
       description: '连续函数保持连通性的基础结果"
       
-    - domain: "数值分析'
+    - domain: '数值分析'
       description: "二分法、Newton法的理论基础"
       
   # ===== 推广与特化 =====
   generalizations:
-    - id: 'intermediate-value-general"
+    - id: 'intermediate-value-general'
       statement: "连通集的连续实值函数取所有中间值'
-      description: "推广到一般拓扑空间"
+      description: "推广到一般拓扑空间'
       
     - id: 'darboux-theorem"
       statement: "导函数有介值性质（不需连续）'
-      description: "Darboux定理"
+      description: 'Darboux定理"
       
   special_cases:
     - id: 'bolzano-theorem"
-      statement: "f(a)·f(b) < 0 ⟹ ∃c, f(c) = 0'
+      statement: 'f(a)·f(b) < 0 ⟹ ∃c, f(c) = 0'
       description: "零点存在定理（介值定理特例）"
       
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: 'continuity"
+      - id: 'continuity'
         role: "定理条件'
-      - id: "connectedness"
+      - id: "connectedness'
         role: '拓扑证明的核心"
       - id: "supremum'
-        role: "分析证明的工具"
+        role: '分析证明的工具"
       - id: 'real-completeness"
-        role: "存在性保证'
+        role: '存在性保证'
         
     uses_theorems:
       - id: "supremum-property"
-        description: '实数完备性"
+        description: '实数完备性'
         
     implies:
       - id: "brouwer-1d'
-        description: "一维Brouwer不动点定理"
+        description: "一维Brouwer不动点定理'
       - id: 'bolzano-zero"
         description: "零点存在'
         
@@ -233,11 +233,11 @@ theorem:
     importance: 5
     
     prerequisites:
-      concepts: ["continuity", 'connectedness", "supremum']
+      concepts: ['continuity", 'connectedness", 'supremum']
       theorems: ["supremum-property"]
       
     year_proved: 1817
-    provers: ['bolzano"]
+    provers: ['bolzano']
     
     historical_note: |
       Bolzano在1817年给出了第一个严格证明，
@@ -247,5 +247,5 @@ theorem:
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Topology.Order.IntermediateValue'
-    main_theorem: "intermediate_value_Icc"
+    main_theorem: "intermediate_value_Icc'
     coverage: 'complete"

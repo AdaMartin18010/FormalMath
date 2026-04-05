@@ -1,0 +1,139 @@
+% 莫比乌斯带 (Möbius Strip)
+% 描述: 展示莫比乌斯带的构造和单侧性质
+% 数学概念: 不可定向曲面、单侧曲面、商空间、向量丛
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,3d,patterns,decorations.pathmorphing,decorations.markings}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0,
+    arrow/.style={->, line width=1.2pt, >=Stealth}
+]
+
+% ============= 左侧: 三维透视图 =============
+\begin{scope}[xshift=-4.5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {三维莫比乌斯带};
+    
+    % 莫比乌斯带的主体 (用参数方程近似)
+    % 前半部分
+    \fill[purple!20, opacity=0.7] 
+        plot[smooth, samples=50, domain=0:180] 
+        ({2*cos(\x) + 0.6*cos(\x/2)*cos(\x)}, {2*sin(\x) + 0.6*cos(\x/2)*sin(\x)}, {0.6*sin(\x/2)})
+        --
+        plot[smooth, samples=50, domain=180:0] 
+        ({2*cos(\x) - 0.6*cos(\x/2)*cos(\x)}, {2*sin(\x) - 0.6*cos(\x/2)*sin(\x)}, {-0.6*sin(\x/2)})
+        -- cycle;
+    
+    % 中心圆
+    \draw[color=red!70!black, line width=1.5pt, dashed] 
+        (0, 0) ellipse (2 and 0.8);
+    \draw[color=red!70!black, line width=1.5pt] 
+        (2, 0) arc (0:-180:2 and 0.8);
+    
+    % 边界 (单侧边界)
+    \draw[color=blue!70!black, line width=1.2pt] 
+        plot[smooth, samples=50, domain=0:360] 
+        ({2*cos(\x) + 0.6*cos(\x/2)*cos(\x)}, {0.8*(2*sin(\x) + 0.6*cos(\x/2)*sin(\x))/2 + 0.6*sin(\x/2)});
+    
+    % 箭头表示扭曲
+    \draw[->, color=orange!80!black, line width=1.5pt] 
+        (2.2, 0) arc (0:180:2.2 and 0.5);
+    \node[color=orange!80!black, above] at (0, 0.7) {$180^\circ$};
+    
+    % 法向量演示 (单侧性)
+    \draw[->, line width=1.5pt, color=green!60!black] (0, 0.3) -- (0, 1.3);
+    \node[color=green!60!black, right, font=\small] at (0, 0.8) {$\vec{n}$};
+    
+    % 中心点
+    \fill[black] (0, 0) circle (2pt);
+    \node[below] at (0, 0) {$p$};
+\end{scope}
+
+% ============= 中间: 矩形构造 =============
+\begin{scope}[xshift=1.5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfserter] at (0, 3) {商空间构造};
+    
+    % 矩形
+    \fill[yellow!15] (-2, -1.2) rectangle (2, 1.2);
+    \draw[line width=1.5pt, color=blue!60!black] (-2, -1.2) rectangle (2, 1.2);
+    
+    % 垂直边标记
+    \draw[color=red!70!black, line width=2pt, ->] (-2, -1) -- (-2, 1);
+    \draw[color=red!70!black, line width=2pt, ->] (2, 1) -- (2, -1);
+    \node[color=red!70!black, left] at (-2, 0) {$a$};
+    \node[color=red!70!black, right] at (2, 0) {$a$};
+    
+    % 水平边 (普通)
+    \draw[color=blue!60!black, line width=1pt] (-2, 1.2) -- (2, 1.2);
+    \draw[color=blue!60!black, line width=1pt] (-2, -1.2) -- (2, -1.2);
+    \node[color=blue!60!black, above] at (0, 1.2) {$b$};
+    \node[color=blue!60!black, below] at (0, -1.2) {$b$};
+    
+    % 扭曲指示
+    \node[font=\scriptsize, color=red!70!black] at (0, 0) {\textbf{反向粘合}};
+    \draw[->, color=orange!80!black, line width=1pt] (-1.5, 0) arc (180:0:1.5);
+    \node[color=orange!80!black, font=\tiny, above] at (0, 1.5) {半扭转};
+    
+    % 说明
+    \node[anchor=north, font=\small] at (0, -2) {$M = [0,1] \times [0,1] / \sim$};
+    \node[anchor=north, font=\scriptsize, text width=5cm, align=center] 
+        at (0, -2.8) {$(0, t) \sim (1, 1-t)$};
+\end{scope}
+
+% ============= 右侧: 不可定向性演示 =============
+\begin{scope}[xshift=6.5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {不可定向性演示};
+    
+    % 绘制一个环形表示莫比乌斯带
+    \draw[color=blue!60!black, line width=1pt, fill=blue!5] 
+        (0, 0) ellipse (1.8 and 1.2);
+    
+    % 内边界
+    \draw[color=blue!60!black, line width=1pt, fill=white] 
+        (0, 0) ellipse (1.2 and 0.8);
+    
+    % 起点法向量
+    \draw[->, line width=2pt, color=green!60!black] (1.5, 0) -- (2.3, 0);
+    \fill[red!70!black] (1.5, 0) circle (3pt);
+    \node[color=green!60!black, right] at (2.3, 0) {$\vec{n}_0$};
+    
+    % 路径箭头
+    \draw[->, color=orange!80!black, line width=1.5pt] 
+        (1.5, 0.3) arc (0:120:1.4 and 0.9);
+    
+    % 移动后的法向量 (反向!)
+    \draw[->, line width=2pt, color=green!60!black] (-1.5, 0) -- (-2.3, 0);
+    \fill[red!70!black] (-1.5, 0) circle (3pt);
+    \node[color=green!60!black, left] at (-2.3, 0) {$\vec{n}_1$};
+    
+    % 相等符号显示矛盾
+    \node[color=red!70!black, font=\Large] at (0, -1.8) {$\vec{n}_0 = -\vec{n}_1$?!};
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize, text width=5cm, align=center] 
+        at (0, -3) {沿中心环路平行移动法向量一周，\\
+                     方向反转，说明曲面不可定向};
+\end{scope}
+
+% ============= 底部: 数学性质 =============
+\node[anchor=north, font=\small, draw=purple!30, fill=purple!5, rounded corners, inner sep=10pt] 
+    at (4, -5) {
+    \begin{tabular}{ll}
+        \textbf{拓扑性质:} & \\
+        边界: & $\partial M \cong S^1$ (一条边界曲线) \\
+        不可定向性: & 包含反向同胚的环路 \\
+        基本群: & $\pi_1(M) \cong \mathbb{Z}$ \\
+        同调群: & $H_0 = \mathbb{Z}, \; H_1 = \mathbb{Z}$ \\
+        分类: & 非闭曲面，不可定向 \\
+        重要应用: & 向量丛的实例，传送带设计
+    \end{tabular}
+};
+
+\end{tikzpicture}
+\end{document}

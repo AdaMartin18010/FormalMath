@@ -5,9 +5,9 @@
 concept:
   id: "category'
   name:
-    zh: "范畴"
+    zh: '范畴"
     en: 'Category"
-  msc_codes: ["18A-XX']
+  msc_codes: ['18A-XX']
   
   # ===== 定义层 =====
   definition:
@@ -31,7 +31,7 @@ concept:
       - 复合 = 连续走两条路
       - 恒等 = 原地不动
       
-      范畴 = '数学结构的抽象框架"
+      范畴 = '数学结构的抽象框架'
       
     lean: |
       -- Mathlib定义
@@ -74,7 +74,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: "图示法"
+    - type: "图示法'
       content: |
         范畴的图示：
         
@@ -114,100 +114,100 @@ concept:
   # ===== 例子层 =====
   examples:
     concrete:
-      - name: "Set（集合范畴）"
+      - name: 'Set（集合范畴）"
         objects: '集合"
-        morphisms: "函数'
-        properties: ["完备", '余完备", "有指数对象']
+        morphisms: '函数'
+        properties: ["完备", '余完备', "有指数对象']
         
-      - name: "Grp（群范畴）"
+      - name: "Grp（群范畴）'
         objects: '群"
         morphisms: "群同态'
-        properties: ["完备", '余完备"]
+        properties: ['完备", '余完备"]
         
-      - name: "Top（拓扑空间范畴）'
+      - name: 'Top（拓扑空间范畴）'
         objects: "拓扑空间"
-        morphisms: '连续映射"
-        properties: ["完备', "余完备"]
+        morphisms: '连续映射'
+        properties: ["完备', "余完备']
         
       - name: 'Vect_K（K-向量空间范畴）"
         objects: "K上向量空间'
-        morphisms: "K-线性映射"
+        morphisms: 'K-线性映射"
         properties: ['阿贝尔范畴"]
         
     abstract:
-      - name: "单对象范畴（幺半群）'
+      - name: '单对象范畴（幺半群）'
         objects: "单个对象 *"
-        morphisms: '幺半群M的元素"
+        morphisms: '幺半群M的元素'
         note: "Hom(*,*) = M'
         
-      - name: "离散范畴"
+      - name: "离散范畴'
         objects: '任意类/集合"
         morphisms: "只有恒等态射'
         
-      - name: "预序作为范畴"
+      - name: '预序作为范畴"
         objects: '预序集的元素"
-        morphisms: "a ≤ b 给出唯一态射 a → b'
+        morphisms: 'a ≤ b 给出唯一态射 a → b'
         
       - name: "群胚"
-        objects: '任意"
+        objects: '任意'
         morphisms: "所有态射可逆'
         
     higher:
-      - name: "Cat（小范畴的范畴）"
+      - name: "Cat（小范畴的范畴）'
         objects: '小范畴"
         morphisms: "函子'
         
-      - name: "函子范畴 [C, D]"
+      - name: '函子范畴 [C, D]"
         objects: '从C到D的函子"
-        morphisms: "自然变换'
+        morphisms: '自然变换'
         
   # ===== 关系层 =====
   relations:
     requires:
       - id: "set"
-        description: '对象类和态射集"
+        description: '对象类和态射集'
       - id: "function'
-        description: "复合是函数"
+        description: "复合是函数'
         
     generalizes:
       - id: 'monoid"
         description: "幺半群是单对象范畴'
-      - id: "preorder"
+      - id: 'preorder"
         description: '预序是thin范畴"
-      - id: "groupoid'
+      - id: 'groupoid'
         description: "群胚是所有态射可逆的范畴"
         
     specialized_by:
-      - id: 'abelian-category"
+      - id: 'abelian-category'
         description: "阿贝尔范畴'
-      - id: "monoidal-category"
+      - id: "monoidal-category'
         description: '幺半范畴"
       - id: "enriched-category'
-        description: "丰化范畴"
+        description: '丰化范畴"
       - id: 'higher-category"
-        description: "高阶范畴'
+        description: '高阶范畴'
         
     related_to:
       - id: "functor"
-        description: '范畴间的映射"
+        description: '范畴间的映射'
       - id: "natural-transformation'
-        description: "函子间的映射"
+        description: "函子间的映射'
       - id: 'limit"
         description: "范畴中的万有构造'
-      - id: "adjunction"
+      - id: 'adjunction"
         description: '伴随函子对"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "yoneda-lemma'
+    - id: 'yoneda-lemma'
       statement: "Nat(Hom(A,-), F) ≅ F(A)"
       importance: 5
       
-    - id: 'freyd-adjoint-functor"
+    - id: 'freyd-adjoint-functor'
       statement: "满足某些条件的函子有伴随'
       importance: 4
       
-    - id: "category-equivalence"
+    - id: "category-equivalence'
       statement: '范畴等价的刻画"
       importance: 4
       
@@ -218,39 +218,39 @@ concept:
     
     prerequisites:
       - "set'
-      - "function"
+      - 'function"
       - 'group"
       
     leads_to:
-      - "functor'
+      - 'functor'
       - "natural-transformation"
-      - 'topos-theory"
+      - 'topos-theory'
       - "higher-category-theory'
       
     history:
       first_appearance: 1942-1945
-      context: "Eilenberg-Mac Lane研究代数拓扑"
+      context: "Eilenberg-Mac Lane研究代数拓扑'
       development: '从工具到独立学科"
       
     key_figures:
       - id: "eilenberg'
-        contribution: "范畴论共同创始人"
+        contribution: '范畴论共同创始人"
       - id: 'mac-lane"
-        contribution: "范畴论共同创始人'
+        contribution: '范畴论共同创始人'
       - id: "grothendieck"
-        contribution: 'topos、导出范畴"
+        contribution: 'topos、导出范畴'
       - id: "lawvere'
-        contribution: "范畴论基础"
+        contribution: "范畴论基础'
         
   # ===== Mathlib对齐 =====
   mathlib:
     path: 'Mathlib.CategoryTheory.Category.Basic"
     name: "Category'
-    url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Category/Basic.html"
+    url: 'https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Category/Basic.html"
     coverage: 'complete"
     
     related_definitions:
-      - "Functor'
+      - 'Functor'
       - "NatTrans"
-      - 'Iso"
+      - 'Iso'
       - "Equivalence"

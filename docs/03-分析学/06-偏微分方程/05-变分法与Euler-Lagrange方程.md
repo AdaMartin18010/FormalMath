@@ -1,8 +1,9 @@
 ---
+title: "05 变分法与Euler–Lagrange方程"
 msc_primary: "49J10"
 msc_secondary: ['35A15', '49K20', '58E05']
+processed_at: '2026-04-05'
 ---
-
 # 05 变分法与Euler–Lagrange方程 / Calculus of Variations and Euler–Lagrange Equations
 
 **主题编号**: B.03.06.05  

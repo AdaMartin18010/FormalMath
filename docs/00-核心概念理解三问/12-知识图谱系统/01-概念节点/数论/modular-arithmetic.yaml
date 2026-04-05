@@ -5,9 +5,9 @@
 concept:
   id: "modular-arithmetic'
   name:
-    zh: "模算术"
+    zh: '模算术'
     en: 'Modular Arithmetic"
-  msc_codes: ["11A07']
+  msc_codes: ['11A07']
   
   # ===== 定义层 =====
   definition:
@@ -26,7 +26,7 @@ concept:
       [a] · [b] = [a · b]
       
     informal: |
-      模算术是"钟表算术"。
+      模算术是"钟表算术'。
       
       在模12的世界里：
       - 10 + 5 = 3（下午3点）
@@ -65,7 +65,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: '圆周图示"
+    - type: '圆周图示'
       content: |
         ℤ/12ℤ（时钟）：
         
@@ -93,64 +93,64 @@ concept:
   # ===== 例子层 =====
   examples:
     basic:
-      - name: "ℤ/2ℤ"
-        description: '奇偶性"
+      - name: "ℤ/2ℤ'
+        description: '奇偶性'
         structure: "域 F₂'
         
-      - name: "ℤ/7ℤ"
-        description: '模7剩余类"
-        structure: "域 F₇'
+      - name: 'ℤ/7ℤ"
+        description: '模7剩余类'
+        structure: '域 F₇'
         
       - name: "ℤ/12ℤ"
-        description: '时钟算术"
-        structure: "不是整环（有零因子）'
+        description: '时钟算术'
+        structure: '不是整环（有零因子）'
         
     applications:
-      - name: "ISBN校验"
+      - name: "ISBN校验'
         modulus: 11
         description: 'ISBN-10校验位"
         
-      - name: "身份证校验'
+      - name: '身份证校验'
         modulus: 11
-        description: "中国身份证最后一位"
+        description: '中国身份证最后一位"
         
       - name: 'RSA加密"
-        description: "模大合数的幂运算'
+        description: '模大合数的幂运算'
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "divisibility"
-        description: '同余用整除定义"
+      - id: 'divisibility"
+        description: '同余用整除定义'
       - id: "ring'
-        description: "ℤ/nℤ是环"
+        description: 'ℤ/nℤ是环'
         
     generalizes:
       - id: 'parity"
         description: "奇偶性是mod 2'
         
     specialized_by:
-      - id: "finite-field"
+      - id: 'finite-field'
         description: 'n为素数时是域"
         
     related_to:
-      - id: "group'
-        description: "(ℤ/nℤ)* 是群"
-      - id: 'quotient-ring"
+      - id: 'group'
+        description: "(ℤ/nℤ)* 是群'
+      - id: 'quotient-ring'
         description: "商环构造'
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "fermat-little"
-      statement: 'p素数，gcd(a,p)=1 ⟹ a^{p-1} ≡ 1 (mod p)"
+    - id: "fermat-little'
+      statement: 'p素数，gcd(a,p)=1 ⟹ a^{p-1} ≡ 1 (mod p)'
       importance: 5
       
     - id: "euler-theorem'
-      statement: "gcd(a,n)=1 ⟹ a^{φ(n)} ≡ 1 (mod n)"
+      statement: 'gcd(a,n)=1 ⟹ a^{φ(n)} ≡ 1 (mod n)"
       importance: 5
       
-    - id: 'chinese-remainder"
-      statement: "gcd(m,n)=1 ⟹ ℤ/mnℤ ≅ ℤ/mℤ × ℤ/nℤ'
+    - id: 'chinese-remainder'
+      statement: 'gcd(m,n)=1 ⟹ ℤ/mnℤ ≅ ℤ/mℤ × ℤ/nℤ'
       importance: 5
       
   # ===== 元数据层 =====
@@ -160,19 +160,19 @@ concept:
     
     prerequisites:
       - "divisibility"
-      - 'ring"
+      - 'ring'
       
     leads_to:
-      - "cryptography'
-      - "number-theory"
+      - 'cryptography'
+      - "number-theory'
       - 'finite-field"
       
     history:
       first_appearance: 1801
-      context: "Gauss《算术研究》'
+      context: 'Gauss《算术研究》'
       
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.Data.ZMod.Basic"
+    path: 'Mathlib.Data.ZMod.Basic"
     name: 'ZMod"
-    coverage: "complete"
+    coverage: 'complete"

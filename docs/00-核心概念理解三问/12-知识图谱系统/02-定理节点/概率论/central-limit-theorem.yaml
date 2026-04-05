@@ -5,9 +5,9 @@
 theorem:
   id: "central-limit-theorem'
   name:
-    zh: "中心极限定理"
+    zh: '中心极限定理"
     en: 'Central Limit Theorem"
-  msc_codes: ["60F05']
+  msc_codes: ['60F05']
   
   # ===== 陈述层 =====
   statement:
@@ -104,20 +104,20 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - description: '统计推断中的置信区间"
+    - description: '统计推断中的置信区间'
     - description: "假设检验'
-    - description: "质量控制"
+    - description: "质量控制'
     - description: '金融风险管理"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
       - id: "random-variable'
-      - id: "probability-space"
+      - id: 'probability-space"
         
     related_to:
       - id: 'law-of-large-numbers"
-        description: "CLT给出收敛速度'
+        description: 'CLT给出收敛速度'
       - id: "normal-distribution"
         description: '极限分布"
         

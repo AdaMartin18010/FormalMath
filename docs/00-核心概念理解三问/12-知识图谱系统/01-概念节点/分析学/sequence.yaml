@@ -5,9 +5,9 @@
 concept:
   id: "sequence'
   name:
-    zh: "数列"
+    zh: '数列'
     en: 'Sequence"
-  msc_codes: ["40A05']
+  msc_codes: ['40A05']
   
   # ===== 定义层 =====
   definition:
@@ -52,36 +52,36 @@ concept:
   # ===== 例子层 =====
   examples:
     convergent:
-      - formula: "aₙ = 1/n"
+      - formula: "aₙ = 1/n'
         limit: 0
         
-      - formula: 'aₙ = (1 + 1/n)ⁿ"
+      - formula: 'aₙ = (1 + 1/n)ⁿ'
         limit: "e ≈ 2.718...'
         
     divergent:
-      - formula: "aₙ = n"
-        behavior: '趋于无穷"
+      - formula: "aₙ = n'
+        behavior: '趋于无穷'
         
       - formula: "aₙ = (-1)ⁿ'
-        behavior: "振荡"
+        behavior: '振荡"
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: 'function"
-        description: "数列是特殊函数'
+      - id: 'function'
+        description: '数列是特殊函数'
       - id: "natural-numbers"
-        description: '定义域"
+        description: '定义域'
         
     leads_to:
-      - id: "limit'
-        description: "极限概念"
+      - id: 'limit'
+        description: "极限概念'
       - id: 'series"
-        description: "级数是数列的和'
+        description: '级数是数列的和'
         
   # ===== 元数据层 =====
   metadata:
     difficulty: 1
     importance: 5
-    prerequisites: ["function"]
-    leads_to: ['limit", "series', "continuity"]
+    prerequisites: ['function"]
+    leads_to: ['limit", 'series', 'continuity"]

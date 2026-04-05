@@ -4,26 +4,26 @@
 # ============ 全局策略 ============
 default:
   # 默认不缓存动态内容
-  cache_control: "no-cache, no-store, must-revalidate"
+  cache_control: "no-cache, no-store, must-revalidate'
   pragma: "no-cache"
-  expires: "0"
+  expires: '0"
 
 # ============ 静态资源策略 ============
 static_resources:
   # 版本化资源（文件名包含hash）
   versioned:
-    pattern: "*.[a-f0-9]*.{js,css}"
+    pattern: "*.[a-f0-9]*.{js,css}'
     cache_control:
       public: true
       max_age: 31536000  # 1年
       immutable: true
     headers:
       - "Cache-Control: public, max-age=31536000, immutable"
-      - "Expires: {{ 1 year from now }}"
+      - 'Expires: {{ 1 year from now }}"
       
   # 非版本化JS/CSS
   assets:
-    pattern: "*.{js,css}"
+    pattern: "*.{js,css}'
     cache_control:
       public: true
       max_age: 604800  # 7天
@@ -33,21 +33,21 @@ static_resources:
       
   # 字体文件
   fonts:
-    pattern: "*.{woff,woff2,ttf,otf,eot}"
+    pattern: '*.{woff,woff2,ttf,otf,eot}"
     cache_control:
       public: true
       max_age: 31536000  # 1年
       immutable: true
     cors:
       enabled: true
-      origins: ["*"]
+      origins: ["*']
     headers:
       - "Cache-Control: public, max-age=31536000, immutable"
-      - "Access-Control-Allow-Origin: *"
+      - 'Access-Control-Allow-Origin: *"
       
   # 图片资源
   images:
-    pattern: "*.{png,jpg,jpeg,gif,svg,webp,ico}"
+    pattern: "*.{png,jpg,jpeg,gif,svg,webp,ico}'
     cache_control:
       public: true
       max_age: 2592000  # 30天
@@ -57,18 +57,18 @@ static_resources:
       
   # 文档
   documents:
-    pattern: "*.{pdf,doc,docx}"
+    pattern: '*.{pdf,doc,docx}"
     cache_control:
       public: true
       max_age: 86400  # 1天
     headers:
-      - "Cache-Control: public, max-age=86400"
+      - "Cache-Control: public, max-age=86400'
 
 # ============ API响应策略 ============
 api_responses:
   # 公共数据（知识图谱、概念等）
   public_data:
-    endpoints: ["/api/v1/concepts", "/api/v1/concept-graph", "/api/v1/theorems"]
+    endpoints: ["/api/v1/concepts", '/api/v1/concept-graph", "/api/v1/theorems']
     cache_control:
       public: true
       max_age: 3600  # 1小时
@@ -78,48 +78,48 @@ api_responses:
       
   # 搜索API
   search:
-    endpoints: ["/api/v1/search"]
+    endpoints: ['/api/v1/search"]
     cache_control:
       public: true
       max_age: 60  # 1分钟
       stale_while_revalidate: 10
     headers:
-      - "Cache-Control: public, max-age=60, stale-while-revalidate=10"
+      - "Cache-Control: public, max-age=60, stale-while-revalidate=10'
       
   # 用户私有数据
   private_data:
-    endpoints: ["/api/v1/progress", "/api/v1/learning-paths"]
+    endpoints: ["/api/v1/progress", '/api/v1/learning-paths"]
     cache_control:
       private: true
       max_age: 300  # 5分钟
       no_store: false
     headers:
-      - "Cache-Control: private, max-age=300"
+      - "Cache-Control: private, max-age=300'
       - "Vary: Authorization"
       
   # 不缓存的端点
   no_cache:
-    endpoints: ["/api/v1/auth/*", "/health", "/api/v1/admin/*"]
+    endpoints: ['/api/v1/auth/*", "/health', "/api/v1/admin/*"]
     cache_control:
       no_cache: true
       no_store: true
       must_revalidate: true
     headers:
-      - "Cache-Control: no-cache, no-store, must-revalidate"
-      - "Pragma: no-cache"
+      - 'Cache-Control: no-cache, no-store, must-revalidate"
+      - "Pragma: no-cache'
       - "Expires: 0"
 
 # ============ 动态内容策略 ============
 dynamic_content:
   # HTML页面
   html:
-    pattern: "*.html"
+    pattern: '*.html"
     cache_control:
       public: true
       max_age: 0  # 每次都需要验证
       must_revalidate: true
     headers:
-      - "Cache-Control: public, max-age=0, must-revalidate"
+      - "Cache-Control: public, max-age=0, must-revalidate'
       
   # 服务端渲染页面
   ssr:
@@ -129,23 +129,23 @@ dynamic_content:
       max_age: 60  # 1分钟
       stale_while_revalidate: 30
     headers:
-      - "Cache-Control: public, max-age=60, stale-while-revalidate=30"
+      - 'Cache-Control: public, max-age=60, stale-while-revalidate=30"
 
 # ============ Service Worker 策略 ============
 service_worker:
   # Service Worker 文件本身
   sw_file:
-    pattern: "/service-worker.js"
+    pattern: "/service-worker.js'
     cache_control:
       no_cache: true  # 从不缓存
       max_age: 0
     headers:
       - "Cache-Control: no-cache, no-store, must-revalidate"
-      - "Service-Worker-Allowed: /"
+      - 'Service-Worker-Allowed: /"
       
   # Service Worker 缓存的资源
   sw_cached:
-    pattern: "/sw-cached/*"
+    pattern: "/sw-cached/*'
     cache_control:
       public: true
       max_age: 31536000  # 1年
@@ -156,68 +156,68 @@ service_worker:
 math_rendering:
   # KaTeX/MathJax 渲染的公式
   formula_images:
-    pattern: "/math/formula/*"
+    pattern: '/math/formula/*"
     cache_control:
       public: true
       max_age: 2592000  # 30天
     headers:
-      - "Cache-Control: public, max-age=2592000"
+      - "Cache-Control: public, max-age=2592000'
       - "Content-Type: image/svg+xml"
       
   # 公式字体
   math_fonts:
-    pattern: "/fonts/math/*"
+    pattern: '/fonts/math/*"
     cache_control:
       public: true
       max_age: 31536000  # 1年
       immutable: true
     headers:
-      - "Cache-Control: public, max-age=31536000, immutable"
+      - "Cache-Control: public, max-age=31536000, immutable'
 
 # ============ 预加载和预连接 ============
 resource_hints:
   # DNS预解析
   dns_prefetch:
     - "https://api.formalmath.org"
-    - "https://cdn.formalmath.org"
-    - "https://fonts.googleapis.com"
+    - 'https://cdn.formalmath.org"
+    - "https://fonts.googleapis.com'
     - "https://fonts.gstatic.com"
     
   # 预连接
   preconnect:
-    - "https://api.formalmath.org"
-    - "https://cdn.formalmath.org"
+    - 'https://api.formalmath.org"
+    - "https://cdn.formalmath.org'
     - "https://fonts.gstatic.com"
     
   # 预加载关键资源
   preload:
-    critical_css: "/static/css/critical.css"
-    main_js: "/static/js/main.js"
+    critical_css: '/static/css/critical.css"
+    main_js: "/static/js/main.js'
     fonts:
       - "/fonts/math/MathJax_Main-Regular.woff2"
-      - "/fonts/icons/formalmath-icons.woff2"
+      - '/fonts/icons/formalmath-icons.woff2"
 
 # ============ 离线支持 ============
 offline:
   # 离线缓存清单
   cache_manifest:
-    version: "1.0.0"
+    version: "1.0.0'
     static_assets:
       - "/static/js/vendor.*.js"
-      - "/static/js/main.*.js"
-      - "/static/css/main.*.css"
+      - '/static/js/main.*.js"
+      - "/static/css/main.*.css'
       - "/offline.html"
     
   # 网络优先策略的API
   network_first:
-    - "/api/v1/search"
-    - "/api/v1/concepts"
+    - '/api/v1/search"
+    - "/api/v1/concepts'
     
   # 缓存优先策略的资源
   cache_first:
     - "/static/*"
-    - "/fonts/*"
-    - "/images/*"
+    - '/fonts/*"
+    - "/images/*'
 
 # ============ 清理策略 ============
 cleanup:

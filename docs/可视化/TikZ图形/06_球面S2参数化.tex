@@ -1,0 +1,157 @@
+% 球面 S² 参数化 (Sphere S^2 Parametrization)
+% 描述: 展示二维球面的多种参数化方法
+% 数学概念: 球面、球坐标、立体投影、黎曼球面
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,3d,patterns,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0
+]
+
+% ============= 左侧: 三维球面 =============
+\begin{scope}[xshift=-5cm, yshift=0.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {三维球面 $S^2$};
+    
+    % 球面轮廓
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.6] 
+        (0, 0) circle (2);
+    
+    % 赤道
+    \draw[color=red!70!black, line width=1pt] 
+        (0, 0) ellipse (2 and 0.6);
+    
+    % 经线 (前半)
+    \draw[color=green!60!black, line width=0.8pt] 
+        (0, -2) arc (-90:90:0.4 and 2);
+    \draw[color=green!60!black, line width=0.8pt, dashed] 
+        (0, 2) arc (90:270:0.4 and 2);
+    
+    % 北纬线
+    \draw[color=orange!80!black, line width=0.8pt, dashed] 
+        (0, 1) ellipse (1.73 and 0.52);
+    
+    % 坐标轴
+    \draw[->, line width=0.8pt, color=black!60] (0, 0) -- (2.5, 0) node[right] {$x$};
+    \draw[->, line width=0.8pt, color=black!60] (0, 0) -- (0, 2.5) node[above] {$z$};
+    \draw[->, line width=0.8pt, color=black!60] (0, 0) -- (-0.8, -0.8) node[below left] {$y$};
+    
+    % 点P标注
+    \coordinate (P) at (1.2, 1);
+    \fill[black] (P) circle (2pt);
+    \node[above right, font=\small] at (P) {$P$};
+    
+    % 角度标注
+    \draw[->, color=purple!70!black, line width=0.8pt] (0.8, 0) arc (0:40:0.8);
+    \node[color=purple!70!black, font=\small] at (1, 0.3) {$\theta$};
+    
+    % 半径
+    \draw[dashed, color=gray] (0, 0) -- (P);
+    \node[color=gray, font=\tiny, above left] at (0.6, 0.5) {$r=1$};
+    
+    % 北极标记
+    \fill[black] (0, 2) circle (2pt);
+    \node[above] at (0, 2) {$N$};
+    \fill[black] (0, -2) circle (2pt);
+    \node[below] at (0, -2) {$S$};
+\end{scope}
+
+% ============= 中间: 球坐标参数化 =============
+\begin{scope}[xshift=1cm, yshift=0.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {球坐标参数化};
+    
+    % 参数公式框
+    \draw[rounded corners=5pt, fill=yellow!15, inner sep=10pt] 
+        (-2.2, -1) rectangle (2.2, 2);
+    
+    \node[anchor=north, font=\small, align=center] at (0, 1.8) {
+        $\begin{cases}
+            x = \sin\theta \cos\phi \\
+            y = \sin\theta \sin\phi \\
+            z = \cos\theta
+        \end{cases}$\\[8pt]
+        $\theta \in [0, \pi]$ \\[3pt]
+        $\phi \in [0, 2\pi)$
+    };
+    
+    % 角度说明
+    \node[anchor=north, font=\scriptsize, text width=4.5cm, align=left] 
+        at (0, -1.5) {
+        $\theta$: 极角(与z轴夹角)\\
+        $\phi$: 方位角(xy平面)
+    };
+    
+    % 坐标卡说明
+    \node[anchor=north, font=\scriptsize, text width=4.5cm, align=center, 
+          draw=green!50, fill=green!5, rounded corners, inner sep=5pt] 
+        at (0, -3) {
+        需要两个坐标卡覆盖\\
+        由球极投影给出
+    };
+\end{scope}
+
+% ============= 右侧: 球极投影 =============
+\begin{scope}[xshift=5.5cm, yshift=0.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {球极投影};
+    
+    % 球面简化表示
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.6] 
+        (0, 0) circle (1.5);
+    
+    % 赤道平面
+    \fill[gray!20, opacity=0.5] (-2.5, -1.5) rectangle (2.5, -2.5);
+    \draw[color=gray!60, line width=0.8pt] (-2.5, -1.5) -- (2.5, -1.5);
+    \node[font=\scriptsize, color=gray!60] at (2.2, -1.8) {$\mathbb{C} \cong \mathbb{R}^2$};
+    
+    % 北极
+    \fill[red!70!black] (0, 1.5) circle (3pt);
+    \node[above, color=red!70!black] at (0, 1.5) {$N$};
+    
+    % 球面上一点
+    \coordinate (Q) at (0.9, 0.5);
+    \fill[black] (Q) circle (2pt);
+    \node[above right, font=\small] at (Q) {$z$};
+    
+    % 投影点
+    \coordinate (Qz) at (1.8, -1.5);
+    \fill[black] (Qz) circle (2pt);
+    \node[below, font=\small] at (Qz) {$\pi(z)$};
+    
+    % 投影线
+    \draw[color=orange!80!black, line width=1pt, dashed] (0, 1.5) -- (Qz);
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize] at (0, -3) {
+        $\pi: S^2 \setminus \{N\} \to \mathbb{R}^2$\\[3pt]
+        $\pi(x, y, z) = \left(\frac{x}{1-z}, \frac{y}{1-z}\right)$
+    };
+    
+    % 逆映射
+    \node[anchor=north, font=\tiny, text width=5cm, align=center] 
+        at (0, -4.3) {
+        逆: $\pi^{-1}(u, v) = \frac{(2u, 2v, u^2+v^2-1)}{u^2+v^2+1}$
+    };
+\end{scope}
+
+% ============= 底部: 数学性质 =============
+\node[anchor=north, font=\small, draw=blue!30, fill=blue!5, rounded corners, inner sep=10pt] 
+    at (4, -5) {
+    \begin{tabular}{ll}
+        \textbf{代数拓扑不变量:} & \\
+        基本群: & $\pi_1(S^2) = \{1\}$ (单连通) \\
+        同调群: & $H_0 = \mathbb{Z}, \; H_1 = 0, \; H_2 = \mathbb{Z}$ \\
+        Euler示性数: & $\chi(S^2) = 2$ \\
+        可定向性: & 可定向 \\
+        切丛: & $TS^2$ 非平凡 (毛球定理) \\
+        分类: & 亏格0闭曲面
+    \end{tabular}
+};
+
+\end{tikzpicture}
+\end{document}

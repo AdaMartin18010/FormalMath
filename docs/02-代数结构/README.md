@@ -1,6 +1,8 @@
 ---
+title: "代数结构知识梳理与全面分析项目"
 msc_primary: "00A99"
-msc_secondary: ['12Exx', '22E47', '13Cxx']
+msc_secondary: ["12E99", "22E47", "13C99"]
+processed_at: '2026-04-05'
 ---
 msc_primary: "00A99"
 msc_secondary: ['12Exx', '22E47', '13Cxx']

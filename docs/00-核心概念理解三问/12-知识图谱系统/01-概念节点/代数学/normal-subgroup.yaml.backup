@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "normal-subgroup"
+  id: "normal-subgroup'
   name:
-    zh: "正规子群"
-    en: "Normal Subgroup"
-  msc_codes: ["20A05"]
+    zh: '正规子群"
+    en: 'Normal Subgroup"
+  msc_codes: ['20A05']
   
   # ===== 定义层 =====
   definition:
@@ -48,43 +48,43 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: "阿贝尔群的任何子群"
-      description: "因为 gH = Hg 自动成立"
+    - name: '阿贝尔群的任何子群'
+      description: "因为 gH = Hg 自动成立'
       
-    - name: "中心 Z(G)"
-      description: "总是正规子群"
+    - name: "中心 Z(G)'
+      description: '总是正规子群"
       
-    - name: "交换子群 [G,G]"
-      description: "生成自所有 aba⁻¹b⁻¹"
-      property: "G/[G,G] 是阿贝尔化"
+    - name: "交换子群 [G,G]'
+      description: '生成自所有 aba⁻¹b⁻¹"
+      property: 'G/[G,G] 是阿贝尔化"
       
-    - name: "ker(φ)"
+    - name: 'ker(φ)'
       description: "同态的核"
       
-    - name: "Aₙ ⊴ Sₙ"
-      description: "交错群是对称群的正规子群"
+    - name: 'Aₙ ⊴ Sₙ'
+      description: "交错群是对称群的正规子群'
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "first-isomorphism"
-      statement: "G/ker(φ) ≅ im(φ)"
+    - id: "first-isomorphism'
+      statement: 'G/ker(φ) ≅ im(φ)"
       
-    - id: "correspondence"
-      statement: "G的包含N的子群 ↔ G/N的子群"
+    - id: "correspondence'
+      statement: 'G的包含N的子群 ↔ G/N的子群"
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "subgroup"
-        description: "正规子群首先是子群"
+      - id: 'subgroup"
+        description: '正规子群首先是子群'
       - id: "coset"
-        description: "左右陪集相等"
+        description: '左右陪集相等'
         
     leads_to:
-      - id: "quotient-group"
-        description: "可以构造商群"
-      - id: "simple-group"
-        description: "只有平凡正规子群的群"
+      - id: "quotient-group'
+        description: "可以构造商群'
+      - id: 'simple-group"
+        description: "只有平凡正规子群的群'
         
   # ===== 元数据层 =====
   metadata:
@@ -92,5 +92,5 @@ concept:
     importance: 5
     
   mathlib:
-    path: "Mathlib.GroupTheory.Subgroup.Basic"
-    name: "Subgroup.Normal"
+    path: 'Mathlib.GroupTheory.Subgroup.Basic"
+    name: 'Subgroup.Normal"

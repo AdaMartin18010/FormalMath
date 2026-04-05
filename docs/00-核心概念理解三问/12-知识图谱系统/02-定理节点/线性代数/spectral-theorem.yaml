@@ -5,9 +5,9 @@
 theorem:
   id: "spectral-theorem'
   name:
-    zh: "谱定理"
+    zh: '谱定理"
     en: 'Spectral Theorem"
-  msc_codes: ["15A18', "47A10"]
+  msc_codes: ['15A18', "47A10"]
   
   # ===== 陈述层 =====
   statement:
@@ -26,13 +26,13 @@ theorem:
       T = ∫ λ dE(λ)
       
     informal: |
-      对称矩阵可以'对角化"——
+      对称矩阵可以'对角化'——
       存在特殊的坐标系使矩阵变成对角形式。
       
       物理意义：
       - 对称矩阵描述能量等物理量
       - 特征向量是"主轴方向'
-      - 特征值是"主轴上的尺度"
+      - 特征值是"主轴上的尺度'
       
     lean: |
       -- 谱定理（有限维）
@@ -47,7 +47,7 @@ theorem:
     
     key_ideas:
       - "实对称矩阵特征值是实数'
-      - "不同特征值的特征向量正交"
+      - '不同特征值的特征向量正交"
       - '归纳降维"
       
     proof_tree: |
@@ -136,36 +136,36 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - domain: "量子力学'
+    - domain: '量子力学'
       description: "可观测量的测量值是特征值"
       
-    - domain: '主成分分析"
+    - domain: '主成分分析'
       description: "协方差矩阵的特征分解'
       
-    - domain: "图论"
+    - domain: "图论'
       description: '图的谱分析（邻接矩阵）"
       
     - domain: "振动分析'
-      description: "结构的固有频率和振型"
+      description: '结构的固有频率和振型"
       
   # ===== 关系层 =====
   relations:
     uses_concepts:
       - id: 'linear-map"
-        role: "对称/自伴条件'
+        role: '对称/自伴条件'
       - id: "eigenvalue"
-        role: '核心概念"
+        role: '核心概念'
       - id: "inner-product'
-        role: "正交性"
+        role: "正交性'
         
     uses_theorems:
       - id: 'fundamental-theorem-algebra"
         role: "特征值存在'
         
     implies:
-      - id: "positive-definite-characterization"
+      - id: 'positive-definite-characterization"
         description: '正定 ⟺ 所有特征值 > 0"
-      - id: "singular-value-decomposition'
+      - id: 'singular-value-decomposition'
         description: "SVD的基础"
         
   # ===== 元数据层 =====
@@ -174,7 +174,7 @@ theorem:
     importance: 5
     
     prerequisites:
-      concepts: ['linear-map", "eigenvalue', "inner-product"]
+      concepts: ['linear-map', "eigenvalue', "inner-product']
       
     history:
       finite_dim: 'Cauchy, Jacobi (19世纪)"
@@ -182,6 +182,6 @@ theorem:
       
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.LinearAlgebra.Eigenspace.Basic"
+    path: 'Mathlib.LinearAlgebra.Eigenspace.Basic"
     main_theorem: 'Module.End.eigenspace_diag"
-    coverage: "substantial"
+    coverage: 'substantial"

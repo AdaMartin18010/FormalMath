@@ -5,9 +5,9 @@
 concept:
   id: "hilbert-space'
   name:
-    zh: "Hilbert空间"
+    zh: 'Hilbert空间'
     en: 'Hilbert Space"
-  msc_codes: ["46C05']
+  msc_codes: ['46C05']
   
   # ===== 定义层 =====
   definition:
@@ -22,7 +22,7 @@ concept:
       - 范数满足平行四边形法则
       
     informal: |
-      Hilbert空间是"无穷维的欧氏空间"。
+      Hilbert空间是"无穷维的欧氏空间'。
       
       保留了有限维的几何直觉：
       - 有内积和角度
@@ -55,52 +55,52 @@ concept:
   # ===== 例子层 =====
   examples:
     finite_dimensional:
-      - name: 'ℂⁿ"
+      - name: 'ℂⁿ'
         inner_product: "⟨x,y⟩ = Σx̄ᵢyᵢ'
         
     infinite_dimensional:
-      - name: "ℓ²"
-        definition: '{(xₙ) : Σ|xₙ|² < ∞}"
+      - name: "ℓ²'
+        definition: '{(xₙ) : Σ|xₙ|² < ∞}'
         inner_product: "⟨x,y⟩ = Σx̄ₙyₙ'
         
-      - name: "L²(Ω)"
-        definition: '{f : ∫|f|² < ∞}"
-        inner_product: "⟨f,g⟩ = ∫f̄g'
+      - name: 'L²(Ω)"
+        definition: '{f : ∫|f|² < ∞}'
+        inner_product: '⟨f,g⟩ = ∫f̄g'
         
       - name: "Hardy空间 H²"
-        definition: '解析函数的L²边界值"
+        definition: '解析函数的L²边界值'
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "projection-theorem'
-      statement: "到闭凸集的最佳逼近存在唯一"
+    - id: 'projection-theorem'
+      statement: "到闭凸集的最佳逼近存在唯一'
       
     - id: 'riesz-representation"
-      statement: "H* ≅ H（共轭线性同构）'
+      statement: 'H* ≅ H（共轭线性同构）'
       
-    - id: "orthonormal-basis"
+    - id: 'orthonormal-basis"
       statement: '可分Hilbert空间有可数标准正交基"
       
-    - id: "spectral-theorem'
-      statement: "自伴算子的谱分解"
+    - id: 'spectral-theorem'
+      statement: '自伴算子的谱分解"
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: 'inner-product"
+      - id: 'inner-product'
         description: "有内积结构'
-      - id: "completeness"
+      - id: 'completeness'
         description: '是完备空间"
         
     is_special_case_of:
       - id: "banach-space'
-        description: "特殊的Banach空间"
+        description: '特殊的Banach空间'
         
     related_to:
       - id: 'quantum-mechanics"
-        description: "量子力学的数学框架'
-      - id: "fourier-analysis"
-        description: 'L²是Fourier分析的自然空间"
+        description: '量子力学的数学框架'
+      - id: "fourier-analysis'
+        description: 'L²是Fourier分析的自然空间'
         
   # ===== 元数据层 =====
   metadata:
@@ -108,7 +108,7 @@ concept:
     importance: 5
     history:
       named_after: "David Hilbert'
-      development: "20世纪初"
+      development: "20世纪初'
       
   mathlib:
     path: 'Mathlib.Analysis.InnerProductSpace.Basic"

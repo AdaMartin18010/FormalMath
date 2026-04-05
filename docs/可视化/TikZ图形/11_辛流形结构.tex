@@ -1,0 +1,147 @@
+% 辛流形结构 (Symplectic Manifold)
+% 描述: 展示辛流形的几何结构，辛形式和Hamilton向量场
+% 数学概念: 辛形式、辛流形、Hamilton系统、Poisson括号
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0
+]
+
+% ============= 左侧: 辛形式 =============
+\begin{scope}[xshift=-5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {辛形式 $\omega$};
+    
+    % 辛流形
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=10pt] 
+        (-2, -1.5) rectangle (2, 1.5);
+    \node[color=blue!60!black, font=\small] at (1.6, -1.2) {$M$};
+    
+    % 点
+    \fill[black] (0, 0) circle (2pt);
+    \node[below right] at (0, 0) {$p$};
+    
+    % 切空间中的向量
+    \draw[->, color=red!70!black, line width=1.5pt] (0, 0) -- (1, 0.8);
+    \draw[->, color=green!60!black, line width=1.5pt] (0, 0) -- (-0.3, 1);
+    \node[color=red!70!black, font=\small, above] at (0.5, 0.4) {$v$};
+    \node[color=green!60!black, font=\small, left] at (-0.15, 0.5) {$w$};
+    
+    % 辛面积
+    \fill[yellow!30, opacity=0.5] (0, 0) -- (1, 0.8) -- (0.7, 1.8) -- (-0.3, 1) -- cycle;
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize] at (0, -1.8) {$\omega_p(v, w) \in \mathbb{R}$};
+    \node[anchor=north, font=\tiny, text width=4.5cm, align=center] 
+        at (0, -2.5) {反对称: $\omega(v, w) = -\omega(w, v)$\\
+                       非退化: $\omega(v, \cdot) = 0 \Rightarrow v = 0$};
+\end{scope}
+
+% ============= 中间: 标准辛结构 =============
+\begin{scope}[xshift=0cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {标准辛结构 $\mathbb{R}^{2n}$};
+    
+    % 坐标轴
+    \draw[->, color=red!70!black, line width=1pt] (-1.5, 0) -- (1.5, 0) node[right] {$q^i$};
+    \draw[->, color=green!60!black, line width=1pt] (0, -1.5) -- (0, 1.5) node[above] {$p_i$};
+    
+    % 相空间网格
+    \foreach \x in {-1, 0, 1} {
+        \draw[color=gray!30, line width=0.5pt] (\x, -1.3) -- (\x, 1.3);
+    }
+    \foreach \y in {-1, 0, 1} {
+        \draw[color=gray!30, line width=0.5pt] (-1.3, \y) -- (1.3, \y);
+    }
+    
+    % 面积元
+    \fill[yellow!30, opacity=0.6] (0.3, 0.3) rectangle (0.8, 0.8);
+    \node[font=\tiny] at (0.55, 0.55) {$dq \wedge dp$};
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize] at (0, -1.8) {$\omega = \sum_i dq^i \wedge dp_i$};
+    
+    % 坐标说明
+    \node[anchor=north, font=\tiny, text width=4.5cm, align=center] 
+        at (0, -2.5) {$q$: 广义坐标\\
+                       $p$: 广义动量};
+\end{scope}
+
+% ============= 右侧: Hamilton向量场 =============
+\begin{scope}[xshift=5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {Hamilton向量场};
+    
+    % 能量等值线
+    \foreach \r in {0.5, 1, 1.5} {
+        \draw[color=blue!60!black, line width=0.8pt] (0, 0) circle (\r);
+    }
+    
+    % Hamilton向量场
+    \foreach \a in {0, 45, 90, 135, 180, 225, 270, 315} {
+        \draw[->, color=orange!80!black, line width=1pt] 
+            ({1.2*cos(\a)}, {1.2*sin(\a)}) -- ({1.2*cos(\a+30)}, {1.2*sin(\a+30)});
+    }
+    
+    % 能量函数
+    \node[color=purple!70!black, font=\small] at (1.8, 1.5) {$H$};
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize] at (0, -1.8) {$\iota_{X_H}\omega = dH$};
+    \node[anchor=north, font=\tiny, text width=4.5cm, align=center] 
+        at (0, -2.5) {向量场$X_H$保持辛结构\\
+                       $\mathcal{L}_{X_H}\omega = 0$};
+\end{scope}
+
+% ============= 底部: Darboux定理和性质 =============
+\node[anchor=north, font=\small, draw=purple!30, fill=purple!5, rounded corners, inner sep=10pt] 
+    at (4, -4) {
+    \begin{tabular}{ll}
+        \textbf{辛几何基本定理:} & \\
+        Darboux定理: & 每点有邻域坐标 $(q^i, p_i)$ 使得 \\
+                     & $\omega = \sum dq^i \wedge dp_i$ \\[5pt]
+        Liouville定理: & Hamilton流保持相空间体积 \\
+        Moser定理: & 辛结构的形变分类 \\
+        \\[3pt]
+        \textbf{维数:} & $\dim M = 2n$ 必须偶数 \\
+        \textbf{应用:} & 经典力学、几何光学、量子力学
+    \end{tabular}
+};
+
+% ============= Poisson括号 =============
+\begin{scope}[xshift=-5cm, yshift=-4cm]
+    \node[anchor=north west, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{Poisson括号:}\\[5pt]
+        $\{f, g\} = \omega(X_f, X_g)$\\[5pt]
+        性质:\\
+        - 反对称: $\{f, g\} = -\{g, f\}$\\
+        - Jacobi恒等式\\
+        - Leibniz法则\\[5pt]
+        Hamilton方程:\\
+        $\dot{q}^i = \{q^i, H\}$\\
+        $\dot{p}_i = \{p_i, H\}$
+    };
+\end{scope}
+
+% ============= 典型例子 =============
+\begin{scope}[xshift=5cm, yshift=-4cm]
+    \node[anchor=north east, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{典型辛流形:}\\
+        - $T^*Q$ (余切丛)\\
+        - $\mathbb{C}P^n$ (Kähler)\\
+        - 射影代数簇\\[5pt]
+        \textbf{辛不变量:}\\
+        - Gromov-Witten不变量\\
+        - Fukaya范畴
+    };
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

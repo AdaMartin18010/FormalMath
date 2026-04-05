@@ -11,7 +11,7 @@ services:
     image: locustio/locust:latest
     container_name: formalmath-locust-master
     ports:
-      - "8089:8089"  # Web UI
+      - "8089:8089'  # Web UI
     volumes:
       - ./load_test.py:/mnt/locust/locustfile.py:ro
       - ./reports:/mnt/locust/reports

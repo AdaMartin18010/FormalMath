@@ -5,9 +5,9 @@
 theorem:
   id: "lax-milgram-lemma'
   name:
-    zh: "Lax-Milgram引理"
+    zh: 'Lax-Milgram引理"
     en: 'Lax-Milgram Lemma"
-  msc_codes: ["47A07', "35J25"]
+  msc_codes: ['47A07', "35J25"]
   
   # ===== 陈述层 =====
   statement:
@@ -25,12 +25,12 @@ theorem:
       且 ||u|| ≤ (1/α)||f||_{H*}
       
     informal: |
-      Lax-Milgram引理说：如果双线性形式'足够好"（连续且强制），
+      Lax-Milgram引理说：如果双线性形式'足够好'（连续且强制），
       那么变分方程一定有唯一解。
       
       直观理解：
       - 连续性：形式不会"爆炸'
-      - 强制性：形式"足够强"，能控制范数
+      - 强制性：形式"足够强'，能控制范数
       - 结论：方程一定有解，且解唯一
       
       这是椭圆型PDE弱解存在性的基础。
@@ -59,30 +59,30 @@ theorem:
       - step: '1. 构造算子A"
         description: "定义 Au 使得 a(u,v) = (Au, v)'
         
-      - step: "2. 证明A有界"
+      - step: '2. 证明A有界"
         description: '由连续性，A是连续线性算子"
         
-      - step: "3. 证明A单射'
+      - step: '3. 证明A单射'
         description: "由强制性，||Au|| ≥ α||u||，故A单射"
         
-      - step: '4. 证明A满射"
+      - step: '4. 证明A满射'
         description: "由强制性，A(H)是闭子空间；由单射，A(H) = H'
         
-      - step: "5. 应用Banach逆算子定理"
+      - step: "5. 应用Banach逆算子定理'
         description: 'A是双射，故A⁻¹存在且有界"
         
     techniques:
       - "Riesz表示定理'
-      - "Banach逆算子定理"
+      - 'Banach逆算子定理"
       - '强制性估计"
-      - "闭图像定理'
+      - '闭图像定理'
       
     alternatives:
       - name: "Galerkin方法"
-        description: '通过有限维逼近构造解"
+        description: '通过有限维逼近构造解'
         
       - name: "变分方法'
-        description: "通过能量最小化得到解"
+        description: "通过能量最小化得到解'
         
   # ===== 应用层 =====
   applications:
@@ -99,56 +99,56 @@ theorem:
         故存在唯一弱解 u ∈ H₀¹(Ω)
         
     - domain: "Stokes方程'
-      description: "不可压缩流体的Stokes问题"
+      description: '不可压缩流体的Stokes问题"
       
     - domain: '弹性力学"
-      description: "线性弹性问题的变分形式'
+      description: '线性弹性问题的变分形式'
       
     - domain: "电磁学"
-      description: 'Maxwell方程的变分形式"
+      description: 'Maxwell方程的变分形式'
       
   # ===== 推广层 =====
   generalizations:
     - name: "Babuska-Lax-Milgram'
-      statement: "混合问题的推广"
+      statement: "混合问题的推广'
       description: '处理混合边界条件"
       
     - name: "非线性推广'
-      statement: "单调算子理论"
+      statement: '单调算子理论"
       description: '处理非线性PDE"
       
   special_cases:
-    - name: "Riesz表示定理'
+    - name: 'Riesz表示定理'
       statement: "当 a(u,v) = (u,v) 时"
-      description: 'Lax-Milgram退化为Riesz表示定理"
+      description: 'Lax-Milgram退化为Riesz表示定理'
       
   # ===== 关系层 =====
   relations:
     uses_concepts:
       - id: "hilbert-space'
-        description: "在Hilbert空间中"
+        description: "在Hilbert空间中'
       - id: 'bilinear-form"
         description: "双线性形式'
-      - id: "dual-space"
+      - id: 'dual-space"
         description: '对偶空间"
         
     uses_theorems:
-      - id: "riesz-representation'
+      - id: 'riesz-representation'
         description: "Riesz表示定理"
-      - id: 'banach-inverse"
+      - id: 'banach-inverse'
         description: "Banach逆算子定理'
-      - id: "closed-graph"
+      - id: "closed-graph'
         description: '闭图像定理"
         
     implies:
       - id: "elliptic-existence'
-        description: "椭圆型PDE弱解存在性"
+        description: '椭圆型PDE弱解存在性"
       - id: 'variational-solution"
-        description: "变分问题的解存在性'
+        description: '变分问题的解存在性'
         
     equivalent_to:
       - id: "coercive-bilinear"
-        description: '强制双线性形式的可解性"
+        description: '强制双线性形式的可解性'
         
   # ===== 元数据层 =====
   metadata:
@@ -158,28 +158,28 @@ theorem:
     year_proved: 1954
     provers:
       - id: "lax'
-        contribution: "与Milgram共同证明"
+        contribution: "与Milgram共同证明'
       - id: 'milgram"
         contribution: "与Lax共同证明'
         
     prerequisites:
-      - "hilbert-space"
+      - 'hilbert-space"
       - 'functional-analysis"
-      - "banach-space'
+      - 'banach-space'
       
     leads_to:
       - "pde-weak-solution"
-      - 'finite-element-method"
+      - 'finite-element-method'
       - "variational-method'
       
     history:
-      context: "为椭圆型PDE弱解理论奠定基础"
+      context: "为椭圆型PDE弱解理论奠定基础'
       significance: '现代PDE理论的基石"
       
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Analysis.NormedSpace.Banach'
-    name: "LaxMilgram"
+    name: 'LaxMilgram"
     url: 'https://leanprover-community.github.io/mathlib4_docs/"
-    coverage: "partial'
+    coverage: 'partial'
     note: "Mathlib中可能有相关结果，但可能不完整"

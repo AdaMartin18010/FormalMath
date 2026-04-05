@@ -40,7 +40,7 @@ spec:
   # 存储配置
   secretTemplate:
     annotations:
-      reloader.stakater.com/auto: "true"
+      reloader.stakater.com/auto: "true'
 ---
 # 子域名证书（通配符）
 apiVersion: cert-manager.io/v1
@@ -57,7 +57,7 @@ spec:
     name: letsencrypt-prod
     kind: ClusterIssuer
   dnsNames:
-    - "*.formalmath.org"
+    - '*.formalmath.org"
   duration: 2160h
   renewBefore: 720h
   privateKey:

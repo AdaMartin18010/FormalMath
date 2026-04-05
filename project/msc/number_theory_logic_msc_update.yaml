@@ -27,110 +27,110 @@
 
 number_theory_concepts:
   - concept_id: "prime_numbers'
-    name: "素数"
+    name: '素数"
     name_en: 'Prime Numbers"
-    msc_primary: "11A41'
-    msc_secondary: ["11A51", '11N05"]
+    msc_primary: '11A41'
+    msc_secondary: ["11A51", '11N05']
     msc_description: "素数分布、素性检验'
     msc_details:
-      primary: "11A41 - Primes"
+      primary: "11A41 - Primes'
       secondary:
         - '11A51 - Factorization; primality"
         - "11N05 - Distribution of primes'
-    notes: "初等数论核心概念"
+    notes: '初等数论核心概念"
 
   - concept_id: 'congruence"
-    name: "同余'
+    name: '同余'
     name_en: "Congruence"
-    msc_primary: '11A07"
+    msc_primary: '11A07'
     msc_secondary: ["11A15']
-    msc_description: "同余式、模运算"
+    msc_description: "同余式、模运算'
     msc_details:
       primary: '11A07 - Congruences; primitive roots; residue systems"
       secondary:
         - "11A15 - Power residues, reciprocity'
-    notes: "模运算基础"
+    notes: '模运算基础"
 
   - concept_id: 'quadratic_residue"
-    name: "二次剩余'
+    name: '二次剩余'
     name_en: "Quadratic Residue"
-    msc_primary: '11A15"
-    msc_secondary: ["11R11', "11E16"]
+    msc_primary: '11A15'
+    msc_secondary: ["11R11', "11E16']
     msc_description: '二次剩余、Legendre符号、互反律"
     msc_details:
       primary: "11A15 - Power residues, reciprocity'
       secondary:
-        - "11R11 - Quadratic extensions"
+        - '11R11 - Quadratic extensions"
         - '11E16 - General binary quadratic forms"
-    notes: "二次互反律是核心定理'
+    notes: '二次互反律是核心定理'
 
   - concept_id: "algebraic_number_theory"
-    name: '代数数论"
+    name: '代数数论'
     name_en: "Algebraic Number Theory'
-    msc_primary: "11Rxx"
+    msc_primary: "11Rxx'
     msc_secondary: ['11Sxx", "12Fxx']
-    msc_description: "代数数域、整数环、理想类群"
+    msc_description: '代数数域、整数环、理想类群"
     msc_details:
       primary: '11Rxx - Algebraic number theory: global fields"
       secondary:
-        - "11Sxx - Algebraic number theory: local and p-adic fields'
+        - '11Sxx - Algebraic number theory: local and p-adic fields'
         - "12Fxx - Field extensions"
-    notes: '包含数域、理想、类数理论"
+    notes: '包含数域、理想、类数理论'
 
   - concept_id: "analytic_number_theory'
-    name: "解析数论"
+    name: "解析数论'
     name_en: 'Analytic Number Theory"
     msc_primary: "11Mxx'
-    msc_secondary: ["11Nxx", '11Pxx"]
-    msc_description: "解析方法研究数论问题'
+    msc_secondary: ['11Nxx", '11Pxx"]
+    msc_description: '解析方法研究数论问题'
     msc_details:
       primary: "11Mxx - Zeta and L-functions: analytic theory"
       secondary:
-        - '11Nxx - Multiplicative number theory"
+        - '11Nxx - Multiplicative number theory'
         - "11Pxx - Additive number theory; partitions'
-    notes: "使用复分析和调和分析工具"
+    notes: "使用复分析和调和分析工具'
 
   - concept_id: 'elliptic_curve"
     name: "椭圆曲线'
-    name_en: "Elliptic Curve"
+    name_en: 'Elliptic Curve"
     msc_primary: '11G05"
-    msc_secondary: ["14H52', "11G07", '11Fxx"]
+    msc_secondary: ['14H52', "11G07", '11Fxx']
     msc_description: "椭圆曲线的算术理论'
     msc_details:
-      primary: "11G05 - Elliptic curves over global fields"
+      primary: "11G05 - Elliptic curves over global fields'
       secondary:
         - '14H52 - Elliptic curves (algebraic geometry)"
         - "11G07 - Elliptic curves over local fields'
-        - "11Fxx - Modular and automorphic functions"
+        - '11Fxx - Modular and automorphic functions"
     notes: 'Mordell-Weil定理、BSD猜想"
 
-  - concept_id: "modular_form'
+  - concept_id: 'modular_form'
     name: "模形式"
-    name_en: 'Modular Form"
+    name_en: 'Modular Form'
     msc_primary: "11F11'
-    msc_secondary: ["11F12", '11F25", "11F66']
-    msc_description: "模形式与模函数"
+    msc_secondary: ["11F12', '11F25", "11F66']
+    msc_description: '模形式与模函数"
     msc_details:
       primary: '11F11 - Holomorphic modular forms of integral weight"
       secondary:
-        - "11F12 - Automorphic forms, one variable'
+        - '11F12 - Automorphic forms, one variable'
         - "11F25 - Hecke-Petersson operators, differential operators"
-        - '11F66 - Langlands L-functions"
+        - '11F66 - Langlands L-functions'
     notes: "与椭圆曲线、L函数密切相关'
 
-  - concept_id: "zeta_function"
+  - concept_id: "zeta_function'
     name: '黎曼ζ函数"
     name_en: "Riemann Zeta Function'
-    msc_primary: "11M06"
-    msc_secondary: ['11M26", "11M36', "11R42"]
-    msc_description: 'Riemann zeta函数与相关L函数"
+    msc_primary: '11M06"
+    msc_secondary: ['11M26", '11M36', "11R42"]
+    msc_description: 'Riemann zeta函数与相关L函数'
     msc_details:
       primary: "11M06 - ζ(s) and L(s, χ)'
       secondary:
-        - "11M26 - Nonreal zeros of ζ(s) and L(s, χ); Riemann and other hypotheses"
+        - "11M26 - Nonreal zeros of ζ(s) and L(s, χ); Riemann and other hypotheses'
         - '11M36 - Selberg zeta functions and regularized determinants"
         - "11R42 - Zeta functions and L-functions of number fields'
-    notes: "黎曼猜想是核心问题"
+    notes: '黎曼猜想是核心问题"
 
 # ============================================================================
 # 逻辑概念 MSC 编码 (12个)
@@ -138,180 +138,180 @@ number_theory_concepts:
 
 logic_concepts:
   - concept_id: 'set_theory"
-    name: "集合论'
+    name: '集合论'
     name_en: "Set Theory"
-    msc_primary: '03E"
-    msc_secondary: ["03E30', "03E35", '03E55"]
+    msc_primary: '03E'
+    msc_secondary: ["03E30', "03E35', '03E55"]
     msc_description: "公理集合论'
     msc_details:
-      primary: "03E - Set theory"
+      primary: '03E - Set theory"
       secondary:
         - '03E30 - Axiomatics of classical set theory and its fragments"
-        - "03E35 - Consistency and independence results'
+        - '03E35 - Consistency and independence results'
         - "03E55 - Large cardinals"
-    notes: '数学基础核心"
+    notes: '数学基础核心'
 
   - concept_id: "model_theory'
-    name: "模型论"
+    name: "模型论'
     name_en: 'Model Theory"
     msc_primary: "03C'
-    msc_secondary: ["03C07", '03C10", "03C45']
+    msc_secondary: ['03C07", '03C10", '03C45']
     msc_description: "一阶逻辑模型论"
     msc_details:
-      primary: '03C - Model theory"
+      primary: '03C - Model theory'
       secondary:
         - "03C07 - Basic properties of first-order languages and structures'
-        - "03C10 - Quantifier elimination, model completeness and related topics"
+        - "03C10 - Quantifier elimination, model completeness and related topics'
         - '03C45 - Classification theory, stability and related concepts"
     notes: "结构、满足、完备性'
 
-  - concept_id: "proof_theory"
+  - concept_id: 'proof_theory"
     name: '证明论"
-    name_en: "Proof Theory'
+    name_en: 'Proof Theory'
     msc_primary: "03F"
-    msc_secondary: ['03F03", "03F05', "03F30"]
+    msc_secondary: ['03F03', "03F05', "03F30']
     msc_description: '证明的数学分析"
     msc_details:
       primary: "03F - Proof theory and constructive mathematics'
       secondary:
-        - "03F03 - Proof theory, general (including proof-theoretic semantics)"
+        - '03F03 - Proof theory, general (including proof-theoretic semantics)"
         - '03F05 - Cut-elimination and normal-form theorems"
-        - "03F30 - First-order arithmetic and fragments'
+        - '03F30 - First-order arithmetic and fragments'
     notes: "序数分析、证明复杂性"
 
-  - concept_id: 'recursion_theory"
+  - concept_id: 'recursion_theory'
     name: "递归论'
-    name_en: "Recursion Theory"
+    name_en: "Recursion Theory'
     msc_primary: '03D"
-    msc_secondary: ["03D10', "03D25", '03D30"]
-    msc_description: "可计算性与不可判定性'
+    msc_secondary: ["03D10', '03D25", '03D30"]
+    msc_description: '可计算性与不可判定性'
     msc_details:
       primary: "03D - Computability and recursion theory"
       secondary:
-        - '03D10 - Turing machines and related notions"
+        - '03D10 - Turing machines and related notions'
         - "03D25 - Recursively (computably) enumerable sets and degrees'
-        - "03D30 - Other degrees and reducibilities"
+        - "03D30 - Other degrees and reducibilities'
     notes: '也称可计算性理论"
 
   - concept_id: "type_theory'
-    name: "类型论"
+    name: '类型论"
     name_en: 'Type Theory"
-    msc_primary: "03B15'
-    msc_secondary: ["03B40", '68N18", "03F50']
-    msc_description: "高阶逻辑与类型论"
+    msc_primary: '03B15'
+    msc_secondary: ["03B40", '68N18', "03F50']
+    msc_description: "高阶逻辑与类型论'
     msc_details:
       primary: '03B15 - Higher-order logic and type theory"
       secondary:
         - "03B40 - Combinatory logic and lambda calculus'
-        - "68N18 - Functional programming and lambda calculus"
+        - '68N18 - Functional programming and lambda calculus"
         - '03F50 - Metamathematics of constructive systems"
-    notes: "λ演算、依赖类型、同伦类型论'
+    notes: 'λ演算、依赖类型、同伦类型论'
 
   - concept_id: "category_theory"
-    name: '范畴论"
+    name: '范畴论'
     name_en: "Category Theory'
-    msc_primary: "18A"
-    msc_secondary: ['18B", "18C', "18D", '18E"]
-    msc_description: "范畴、函子、自然变换'
+    msc_primary: "18A'
+    msc_secondary: ['18B", "18C', '18D", '18E"]
+    msc_description: '范畴、函子、自然变换'
     msc_details:
       primary: "18A - General theory of categories and functors"
       secondary:
-        - '18B - Special categories"
+        - '18B - Special categories'
         - "18C - Categories and theories'
-        - "18D - Categories with structure"
+        - "18D - Categories with structure'
         - '18E - Abelian categories"
     notes: "在代数和拓扑中广泛应用'
 
-  - concept_id: "modal_logic"
+  - concept_id: 'modal_logic"
     name: '模态逻辑"
-    name_en: "Modal Logic'
+    name_en: 'Modal Logic'
     msc_primary: "03B45"
-    msc_secondary: ['03B42", "03B44', "03F45"]
+    msc_secondary: ['03B42', "03B44', "03F45']
     msc_description: '模态、时态、认知逻辑"
     msc_details:
       primary: "03B45 - Modal logic (including the logic of norms)'
       secondary:
-        - "03B42 - Logic of knowledge and belief"
+        - '03B42 - Logic of knowledge and belief"
         - '03B44 - Temporal logic"
-        - "03F45 - Provability logics and related algebras'
+        - '03F45 - Provability logics and related algebras'
     notes: "可能世界语义"
 
-  - concept_id: 'zfc_axioms"
+  - concept_id: 'zfc_axioms'
     name: "ZFC公理'
-    name_en: "ZFC Axioms"
+    name_en: "ZFC Axioms'
     msc_primary: '03E30"
-    msc_secondary: ["03E25', "03E35"]
+    msc_secondary: ["03E25', '03E35"]
     msc_description: 'Zermelo-Fraenkel集合论"
     msc_details:
-      primary: "03E30 - Axiomatics of classical set theory and its fragments'
+      primary: '03E30 - Axiomatics of classical set theory and its fragments'
       secondary:
         - "03E25 - Axiom of choice and related propositions"
-        - '03E35 - Consistency and independence results"
+        - '03E35 - Consistency and independence results'
     notes: "ZF+选择公理'
 
-  - concept_id: "large_cardinal"
+  - concept_id: "large_cardinal'
     name: '大基数"
     name_en: "Large Cardinal'
-    msc_primary: "03E55"
-    msc_secondary: ['03E35", "03E60']
+    msc_primary: '03E55"
+    msc_secondary: ['03E35", '03E60']
     msc_description: "大基数公理层次"
     msc_details:
-      primary: '03E55 - Large cardinals"
+      primary: '03E55 - Large cardinals'
       secondary:
         - "03E35 - Consistency and independence results'
-        - "03E60 - Determinacy principles"
+        - "03E60 - Determinacy principles'
     notes: '不可测基数、紧致基数等"
 
   - concept_id: "forcing'
-    name: "forcing"
+    name: 'forcing"
     name_en: 'Forcing"
-    msc_primary: "03E40'
-    msc_secondary: ["03E25", '03E35", "03E50']
-    msc_description: "集合论强制方法"
+    msc_primary: '03E40'
+    msc_secondary: ["03E25", '03E35', "03E50']
+    msc_description: "集合论强制方法'
     msc_details:
       primary: '03E40 - Other aspects of forcing and Boolean-valued models"
       secondary:
         - "03E25 - Axiom of choice and related propositions'
-        - "03E35 - Consistency and independence results"
+        - '03E35 - Consistency and independence results"
         - '03E50 - Continuum hypothesis and Martin's axiom"
-    notes: "Cohen创立的证明独立性方法'
+    notes: 'Cohen创立的证明独立性方法'
 
   - concept_id: "computability"
-    name: '可计算性理论"
+    name: '可计算性理论'
     name_en: "Computability Theory'
-    msc_primary: "03D"
+    msc_primary: "03D'
     msc_secondary: ['03D10", "68Q05']
-    msc_description: "可计算函数与不可计算性"
+    msc_description: '可计算函数与不可计算性"
     msc_details:
       primary: '03D - Computability and recursion theory"
       secondary:
-        - "03D10 - Turing machines and related notions'
+        - '03D10 - Turing machines and related notions'
         - "68Q05 - Models of computation (Turing machines, etc.)"
-    notes: '与递归论等价的概念"
+    notes: '与递归论等价的概念'
 
   - concept_id: "propositional_logic'
-    name: "命题逻辑"
+    name: "命题逻辑'
     name_en: 'Propositional Logic"
     msc_primary: "03B05'
-    msc_secondary: ["03B20", '03B22"]
-    msc_description: "经典命题逻辑'
+    msc_secondary: ['03B20", '03B22"]
+    msc_description: '经典命题逻辑'
     msc_details:
       primary: "03B05 - Classical propositional logic"
       secondary:
-        - '03B20 - Subsystems of classical logic"
+        - '03B20 - Subsystems of classical logic'
         - "03B22 - Abstract deductive systems'
-    notes: "逻辑基础"
+    notes: "逻辑基础'
 
   - concept_id: 'predicate_logic"
     name: "谓词逻辑'
-    name_en: "Predicate Logic"
+    name_en: 'Predicate Logic"
     msc_primary: '03B10"
-    msc_secondary: ["03C07', "03F03"]
-    msc_description: '一阶谓词逻辑"
+    msc_secondary: ['03C07', "03F03"]
+    msc_description: '一阶谓词逻辑'
     msc_details:
       primary: "03B10 - Classical first-order logic'
       secondary:
-        - "03C07 - Basic properties of first-order languages and structures"
+        - "03C07 - Basic properties of first-order languages and structures'
         - '03F03 - Proof theory, general"
     notes: "包含量词的逻辑'
 
@@ -324,23 +324,23 @@ summary:
   number_theory: 8
   logic: 12
   msc_main_classes:
-    - "11 (数论)"
+    - '11 (数论)"
     - '03 (数理逻辑)"
-    - "18 (范畴论)'
+    - '18 (范畴论)'
   coverage:
     number_theory_subfields:
       - "11A - 初等数论"
-      - '11R - 代数数论"
+      - '11R - 代数数论'
       - "11M - 解析数论'
-      - "11F - 模形式"
+      - "11F - 模形式'
       - '11G - 算术几何"
     logic_subfields:
       - "03E - 集合论'
-      - "03C - 模型论"
+      - '03C - 模型论"
       - '03F - 证明论"
-      - "03D - 递归论'
+      - '03D - 递归论'
       - "03B - 一般逻辑"
-      - '18A - 范畴论"
+      - '18A - 范畴论'
 
 # ============================================================================
 # 验证规则

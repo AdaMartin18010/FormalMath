@@ -5,9 +5,9 @@
 concept:
   id: "eigenvalue'
   name:
-    zh: "特征值"
+    zh: '特征值'
     en: 'Eigenvalue"
-  msc_codes: ["15A18']
+  msc_codes: ['15A18']
 
   # ===== 定义层 =====
   definition:
@@ -23,11 +23,11 @@ concept:
       特征多项式：p_T(λ) = det(T - λI)
 
     informal: |
-      特征向量是被线性变换"只拉伸不旋转"的向量。
+      特征向量是被线性变换"只拉伸不旋转'的向量。
       特征值是拉伸的倍数。
 
       想象弹簧系统：
-      - 特征向量是振动的'模态"
+      - 特征向量是振动的'模态'
       - 特征值是频率的平方
 
     lean: |
@@ -55,54 +55,54 @@ concept:
 
   # ===== 例子层 =====
   examples:
-    - name: "旋转矩阵 R_θ"
-      eigenvalues: 'e^{±iθ}（复数）"
+    - name: "旋转矩阵 R_θ'
+      eigenvalues: 'e^{±iθ}（复数）'
       note: "θ ≠ 0, π 时无实特征值'
 
-    - name: "投影矩阵"
-      eigenvalues: '0 和 1"
-      geometric: "投影到某子空间'
+    - name: '投影矩阵"
+      eigenvalues: '0 和 1'
+      geometric: '投影到某子空间'
 
     - name: "对称矩阵"
-      eigenvalues: '全为实数"
-      theorem: "谱定理'
+      eigenvalues: '全为实数'
+      theorem: '谱定理'
 
-    - name: "幂零矩阵"
+    - name: "幂零矩阵'
       eigenvalues: '只有0"
-      example: "[[0,1],[0,0]]'
+      example: '[[0,1],[0,0]]'
 
   # ===== 定理层 =====
   key_theorems:
-    - id: "spectral-theorem"
+    - id: 'spectral-theorem"
       statement: '对称矩阵可正交对角化"
 
-    - id: "cayley-hamilton'
-      statement: "矩阵满足自己的特征多项式"
+    - id: 'cayley-hamilton'
+      statement: '矩阵满足自己的特征多项式"
 
-    - id: 'jordan-normal-form"
+    - id: 'jordan-normal-form'
       statement: "复矩阵的标准形'
 
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "linear-map"
+      - id: 'linear-map'
         description: '线性算子"
       - id: "determinant'
-        description: "特征多项式"
+        description: '特征多项式'
       - id: 'polynomial"
-        description: "代数方程'
+        description: '代数方程'
 
     related_to:
-      - id: "spectral-theorem"
-        description: '谱定理"
+      - id: "spectral-theorem'
+        description: '谱定理'
       - id: "jordan-form'
-        description: "Jordan标准形"
-      - id: 'singular-value"
+        description: "Jordan标准形'
+      - id: 'singular-value'
         description: "奇异值（非方阵）'
 
   # ===== 元数据层 =====
   metadata:
     difficulty: 2
     importance: 5
-    prerequisites: ["linear-map", 'determinant"]
-    leads_to: ["spectral-theorem', "jordan-form", 'quantum-mechanics"]
+    prerequisites: ['linear-map", 'determinant']
+    leads_to: ['spectral-theorem', "jordan-form", 'quantum-mechanics"]

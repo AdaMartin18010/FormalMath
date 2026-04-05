@@ -1,0 +1,151 @@
+% 向量场与积分曲线 (Vector Fields and Integral Curves)
+% 描述: 展示向量场、流、积分曲线和Lie导数
+% 数学概念: 向量场、积分曲线、流、Lie导数、轨道
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathmorphing,decorations.markings}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0
+]
+
+% ============= 左侧: 向量场 =============
+\begin{scope}[xshift=-5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {向量场 $X \in \mathfrak{X}(M)$};
+    
+    % 流形
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=10pt] 
+        (-2, -1.8) rectangle (2, 1.8);
+    \node[color=blue!60!black, font=\small] at (1.6, -1.5) {$M$};
+    
+    % 向量场
+    \foreach \x/\y/\dx/\dy in {-1.2/-0.8/0.4/0.3, -0.5/0.5/0.3/0.4, 0.8/-0.3/0.3/0.3,
+                                1/0.8/0.2/0.4, -0.8/1.2/0.4/0.2, 0/-1.2/0.3/0.4,
+                                1.2/-1/0.3/0.3, -1.5/0/0.4/0.2} {
+        \draw[->, color=red!70!black, line width=1pt] (\x, \y) -- (\x+\dx, \y+\dy);
+    }
+    
+    % 特殊点
+    \fill[black] (0.5, 0) circle (2pt);
+    \node[below right] at (0.5, 0) {$p$};
+    \draw[->, color=red!70!black, line width=2pt] (0.5, 0) -- (1, 0.4);
+    \node[color=red!70!black, font=\small, right] at (1.1, 0.4) {$X_p$};
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize] at (0, -2.2) {$X: M \to TM$, 截面};
+\end{scope}
+
+% ============= 中间: 积分曲线 =============
+\begin{scope}[xshift=0cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {积分曲线};
+    
+    % 流形
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=10pt] 
+        (-2, -1.8) rectangle (2, 1.8);
+    
+    % 积分曲线
+    \draw[color=green!60!black, line width=1.5pt, 
+          decoration={markings, mark=at position 0.5 with {\arrow{>}}},
+          postaction={decorate}]
+        (-1.5, -1.2) .. controls (-0.5, -0.5) and (0.5, -1) .. (1, 0)
+        .. controls (1.5, 1) and (0.5, 1.5) .. (-0.5, 1.2)
+        .. controls (-1.5, 0.9) and (-1.8, 0) .. (-1.5, -1.2);
+    
+    % 曲线上的点
+    \fill[black] (1, 0) circle (2pt);
+    \node[above right] at (1, 0) {$\gamma(t)$};
+    
+    \fill[black] (-1.5, -1.2) circle (2pt);
+    \node[below left] at (-1.5, -1.2) {$p$};
+    
+    % 切向量
+    \draw[->, color=orange!80!black, line width=1.5pt] (1, 0) -- (1.4, 0.5);
+    \node[color=orange!80!black, font=\small, right] at (1.5, 0.3) {$\gamma'(t) = X_{\gamma(t)}$};
+    
+    % 微分方程
+    \node[anchor=north, font=\scriptsize] at (0, -2.2) {$\frac{d\gamma}{dt} = X_{\gamma(t)}$};
+    \node[anchor=north, font=\scriptsize] at (0, -2.8) {$\gamma(0) = p$};
+\end{scope}
+
+% ============= 右侧: 流 (Flow) =============
+\begin{scope}[xshift=5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {流 $\phi_t$};
+    
+    % 时间轴
+    \draw[->, color=gray!60, line width=1pt] (-1.5, -2) -- (1.5, -2) node[right] {$t$};
+    \foreach \t in {-1, 0, 1} {
+        \draw[color=gray!60, line width=0.8pt] (\t, -2.1) -- (\t, -1.9);
+    }
+    \node[font=\tiny] at (-1, -2.3) {$t_1$};
+    \node[font=\tiny] at (0, -2.3) {$0$};
+    \node[font=\tiny] at (1, -2.3) {$t_2$};
+    
+    % 流的演变
+    \foreach \y/\t in {1.2/-1, 0.5/0, -0.3/1} {
+        \draw[color=blue!60!black, line width=0.8pt, fill=blue!5, opacity=0.3, rounded corners=3pt] 
+            (-1.5, \y-0.3) rectangle (1.5, \y+0.3);
+        \fill[black] (0, \y) circle (1.5pt);
+        \draw[->, color=red!70!black, line width=1pt] (0, \y) -- (0.4, \y+0.2);
+    }
+    
+    % 轨道
+    \draw[->, color=purple!70!black, line width=1.5pt, dashed] 
+        (0.2, 1.2) -- (0.2, 0.8);
+    \draw[->, color=purple!70!black, line width=1.5pt, dashed] 
+        (0.2, 0.2) -- (0.2, -0.2);
+    
+    % 流映射
+    \node[color=purple!70!black, font=\small, right] at (0.8, 0.5) {$\phi_t$};
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize] at (0, -3) {$\phi_0 = \text{id}$};
+    \node[anchor=north, font=\scriptsize] at (0, -3.5) {$\phi_{s+t} = \phi_s \circ \phi_t$};
+\end{scope}
+
+% ============= 底部: Lie导数 =============
+\node[anchor=north, font=\small, draw=green!30, fill=green!5, rounded corners, inner sep=10pt] 
+    at (4, -4.5) {
+    \begin{tabular}{ll}
+        \textbf{Lie导数:} & \\
+        定义: & $\mathcal{L}_X Y = \lim_{t \to 0} \frac{(\phi_{-t})_* Y - Y}{t} = [X, Y]$ \\[5pt]
+        性质: & 1. $\mathcal{L}_X f = X(f)$ (方向导数) \\
+              & 2. $\mathcal{L}_X [Y, Z] = [\mathcal{L}_X Y, Z] + [Y, \mathcal{L}_X Z]$ \\[5pt]
+        Cartan公式: & $\mathcal{L}_X = d \circ \iota_X + \iota_X \circ d$
+    \end{tabular}
+};
+
+% ============= 应用 =============
+\begin{scope}[xshift=-5cm, yshift=-4cm]
+    \node[anchor=north west, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{应用:}\\
+        - 动力系统\\
+        - 微分方程\\
+        - 物理:相流\\
+        - 守恒律\\
+        - 遍历理论
+    };
+\end{scope}
+
+% ============= 奇点分类 =============
+\begin{scope}[xshift=5cm, yshift=-4cm]
+    \node[anchor=north east, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{向量场奇点:}\\
+        $X_p = 0$的点称为奇点\\[3pt]
+        类型:\\
+        - 汇 (sink)\\
+        - 源 (source)\\
+        - 鞍点 (saddle)\\
+        - 中心 (center)
+    };
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

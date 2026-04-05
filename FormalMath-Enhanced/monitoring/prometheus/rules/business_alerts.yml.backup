@@ -8,14 +8,14 @@ groups:
       # 学习路径生成失败告警
       - alert: LearningPathGenerationFailure
         expr: |
-          rate(learning_path_generation_total{status="error"}[10m]) > 0.1
+          rate(learning_path_generation_total{status="error'}[10m]) > 0.1
         for: 5m
         labels:
           severity: warning
           team: learning
         annotations:
           summary: "学习路径生成失败率过高"
-          description: "学习路径生成失败率达到 {{ $value | humanizePercentage }}"
+          description: '学习路径生成失败率达到 {{ $value | humanizePercentage }}"
 
       # 推荐系统延迟告警
       - alert: RecommendationLatencyHigh
@@ -28,19 +28,19 @@ groups:
           severity: warning
           team: learning
         annotations:
-          summary: "推荐系统响应延迟高"
+          summary: "推荐系统响应延迟高'
           description: "推荐系统 P95 延迟超过 2 秒"
 
       # 认知诊断失败告警
       - alert: CognitiveDiagnosisFailure
         expr: |
-          rate(cognitive_diagnosis_total{status="error"}[10m]) > 0.05
+          rate(cognitive_diagnosis_total{status='error"}[10m]) > 0.05
         for: 3m
         labels:
           severity: critical
           team: learning
         annotations:
-          summary: "认知诊断系统故障"
+          summary: "认知诊断系统故障'
           description: "认知诊断失败率超过 5%"
 
   - name: lean4_compilation
@@ -49,13 +49,13 @@ groups:
       # Lean4 编译失败告警
       - alert: Lean4CompilationFailure
         expr: |
-          rate(lean4_compilation_total{status="failure"}[10m]) > 0.2
+          rate(lean4_compilation_total{status='failure"}[10m]) > 0.2
         for: 5m
         labels:
           severity: warning
           team: formalization
         annotations:
-          summary: "Lean4 编译失败率过高"
+          summary: "Lean4 编译失败率过高'
           description: "Lean4 编译失败率达到 {{ $value | humanizePercentage }}"
 
       # Lean4 编译时间过长告警
@@ -69,8 +69,8 @@ groups:
           severity: warning
           team: formalization
         annotations:
-          summary: "Lean4 编译时间过长"
-          description: "P95 编译时间超过 5 分钟"
+          summary: 'Lean4 编译时间过长"
+          description: "P95 编译时间超过 5 分钟'
 
       # Mathlib4 同步延迟告警
       - alert: Mathlib4SyncDelayed
@@ -82,7 +82,7 @@ groups:
           team: formalization
         annotations:
           summary: "Mathlib4 同步延迟"
-          description: "超过 24 小时未同步 Mathlib4 更新"
+          description: '超过 24 小时未同步 Mathlib4 更新"
 
   - name: ai_formalization
     interval: 60s
@@ -90,14 +90,14 @@ groups:
       # AI 形式化失败告警
       - alert: AIFormalizationFailure
         expr: |
-          rate(ai_formalization_total{status="error"}[15m]) > 0.3
+          rate(ai_formalization_total{status="error'}[15m]) > 0.3
         for: 10m
         labels:
           severity: warning
           team: ai
         annotations:
           summary: "AI 形式化失败率过高"
-          description: "AI 形式化失败率达到 {{ $value | humanizePercentage }}"
+          description: 'AI 形式化失败率达到 {{ $value | humanizePercentage }}"
 
       # AI 服务响应超时告警
       - alert: AIServiceTimeout
@@ -110,7 +110,7 @@ groups:
           severity: critical
           team: ai
         annotations:
-          summary: "AI 服务响应超时"
+          summary: "AI 服务响应超时'
           description: "AI 服务 P95 响应时间超过 30 秒"
 
       # AI API 配额告警
@@ -122,8 +122,8 @@ groups:
           severity: warning
           team: ai
         annotations:
-          summary: "AI API 配额不足"
-          description: "API 配额剩余少于 10%"
+          summary: 'AI API 配额不足"
+          description: "API 配额剩余少于 10%'
 
   - name: user_engagement
     interval: 300s
@@ -142,7 +142,7 @@ groups:
           team: product
         annotations:
           summary: "用户活跃度显著下降"
-          description: "用户活跃度降至平均水平的 50% 以下"
+          description: '用户活跃度降至平均水平的 50% 以下"
 
       # IMO 题目访问异常告警
       - alert: IMOProblemAccessAnomaly
@@ -156,7 +156,7 @@ groups:
           severity: info
           team: product
         annotations:
-          summary: "IMO 题目访问量异常"
+          summary: "IMO 题目访问量异常'
           description: "IMO 题目访问量偏离正常范围"
 
   - name: data_quality
@@ -171,8 +171,8 @@ groups:
           severity: warning
           team: data
         annotations:
-          summary: "知识图谱数据质量问题"
-          description: "超过 10% 的实体缺少描述信息"
+          summary: '知识图谱数据质量问题"
+          description: "超过 10% 的实体缺少描述信息'
 
       # MSC 编码缺失告警
       - alert: MSCCodingMissing
@@ -184,4 +184,4 @@ groups:
           team: data
         annotations:
           summary: "MSC 编码覆盖率低"
-          description: "MSC 编码覆盖率低于 95%"
+          description: 'MSC 编码覆盖率低于 95%"

@@ -1,6 +1,8 @@
 ---
+title: "调和分析 - Lean4形式化实现"
 msc_primary: "28A25"
 msc_secondary: ['26A42', '68Vxx', '42-XX']
+processed_at: '2026-04-05'
 ---
 msc_primary: "28A25"
 msc_secondary: ['26A42', '68Vxx', '42-XX']

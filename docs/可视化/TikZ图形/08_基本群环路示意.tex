@@ -1,0 +1,218 @@
+% 基本群环路示意 (Fundamental Group Loops)
+% 描述: 展示基本群的环路、同伦和群运算
+% 数学概念: 基本群、同伦、环路、道路提升、单连通性
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,decorations.pathmorphing,decorations.markings}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0,
+    looparrow/.style={
+        postaction={decorate},
+        decoration={
+            markings,
+            mark=at position 0.5 with {\arrow{>}}
+        }
+    }
+]
+
+% ============= 左上: 环路定义 =============
+\begin{scope}[xshift=-5cm, yshift=2cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {基点环路};
+    
+    % 拓扑空间
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=10pt] 
+        (-2, -1.5) rectangle (2, 1.5);
+    \node[color=blue!60!black, font=\small] at (1.5, -1.2) {$X$};
+    
+    % 基点
+    \fill[red!70!black] (0, 0) circle (3pt);
+    \node[below right, color=red!70!black] at (0, 0) {$x_0$};
+    
+    % 环路 γ
+    \draw[color=green!60!black, line width=1.5pt, looparrow]
+        (0, 0) .. controls (-1.5, 1) and (-1.5, -1) .. (0, 0);
+    \node[color=green!60!black, font=\small, above] at (-1, 0.3) {$\gamma$};
+    
+    % 定义
+    \node[anchor=north, font=\scriptsize, text width=4cm, align=center] 
+        at (0, -1.8) {$\gamma: [0, 1] \to X$\\
+                       $\gamma(0) = \gamma(1) = x_0$};
+\end{scope}
+
+% ============= 右上: 环路乘积 =============
+\begin{scope}[xshift=0cm, yshift=2cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {环路连接};
+    
+    % 拓扑空间
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=10pt] 
+        (-2, -1.5) rectangle (2, 1.5);
+    
+    % 基点
+    \fill[red!70!black] (0, 0) circle (3pt);
+    \node[below right, color=red!70!black] at (0, 0) {$x_0$};
+    
+    % 环路 γ1
+    \draw[color=green!60!black, line width=1.5pt, looparrow]
+        (0, 0) .. controls (-1.5, 0.5) and (-1.5, 1.2) .. (-0.5, 1)
+        .. controls (0.5, 0.8) .. (0, 0);
+    \node[color=green!60!black, font=\small] at (-0.8, 1) {$\gamma_1$};
+    
+    % 环路 γ2
+    \draw[color=orange!80!black, line width=1.5pt, looparrow]
+        (0, 0) .. controls (0.5, -0.8) and (1.5, -0.5) .. (1.5, 0)
+        .. controls (1.5, 0.5) .. (0, 0);
+    \node[color=orange!80!black, font=\small] at (1.2, -0.3) {$\gamma_2$};
+    
+    % 乘积公式
+    \node[anchor=north, font=\scriptsize] at (0, -1.8) {$(\gamma_1 * \gamma_2)(t) = 
+        \begin{cases}
+            \gamma_1(2t) & 0 \leq t \leq 1/2 \\
+            \gamma_2(2t-1) & 1/2 \leq t \leq 1
+        \end{cases}$};
+\end{scope}
+
+% ============= 右侧: 同伦等价 =============
+\begin{scope}[xshift=5cm, yshift=2cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {同伦等价};
+    
+    % 空间
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5, rounded corners=10pt] 
+        (-2, -1.5) rectangle (2, 1.5);
+    
+    % 基点
+    \fill[red!70!black] (0, -0.5) circle (3pt);
+    \node[below, color=red!70!black] at (0, -0.5) {$x_0$};
+    
+    % 环路 γ
+    \draw[color=purple!70!black, line width=1.5pt, looparrow]
+        (0, -0.5) .. controls (-1.5, 0) and (-1.5, 1) .. (0, 1)
+        .. controls (1.5, 1) and (1.5, 0) .. (0, -0.5);
+    \node[color=purple!70!black, font=\small] at (0, 1.3) {$\gamma$};
+    
+    % 同伦变形的虚线环路
+    \draw[color=green!60!black, line width=1pt, dashed, looparrow]
+        (0, -0.5) .. controls (-1, 0.2) and (-1, 0.8) .. (0, 0.8)
+        .. controls (1, 0.8) and (1, 0.2) .. (0, -0.5);
+    
+    % 常值环路
+    \draw[color=orange!80!black, line width=2pt] (0, -0.5) circle (0.15);
+    
+    % 同伦箭头
+    \draw[->, color=red!70!black, line width=1pt] (0.3, 0.5) -- (0.3, 0.2);
+    \node[color=red!70!black, font=\tiny, right] at (0.3, 0.35) {$H$};
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize, text width=4cm, align=center] 
+        at (0, -1.8) {$\gamma \sim c_{x_0}$\\
+                       $H: \gamma \simeq c_{x_0}$};
+\end{scope}
+
+% ============= 左下: 圆的基本群 =============
+\begin{scope}[xshift=-5cm, yshift=-3.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {$\pi_1(S^1) \cong \mathbb{Z}$};
+    
+    % 圆
+    \draw[color=blue!60!black, line width=2pt] (0, 0) circle (1.5);
+    
+    % 基点
+    \fill[red!70!black] (1.5, 0) circle (3pt);
+    \node[below right, color=red!70!black] at (1.5, 0) {$x_0$};
+    
+    % 环路 γ (绕一圈)
+    \draw[->, color=green!60!black, line width=1.5pt] 
+        (1.5, 0.2) arc (10:350:1.3);
+    \node[color=green!60!black, font=\small] at (0, 1.7) {$[\gamma] = 1$};
+    
+    % 环路 γ² (绕两圈)
+    \draw[->, color=orange!80!black, line width=1.5pt] 
+        (1.3, -0.2) arc (-10:710:1.1);
+    \node[color=orange!80!black, font=\small] at (0, -1.7) {$[\gamma^2] = 2$};
+    
+    % 常值
+    \draw[color=red!70!black, line width=1.5pt] (1.5, 0) circle (0.2);
+    \node[color=red!70!black, font=\small, right] at (1.8, 0.3) {$[c] = 0$};
+\end{scope}
+
+% ============= 中下: 环面的基本群 =============
+\begin{scope}[xshift=0cm, yshift=-3.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {$\pi_1(T^2) \cong \mathbb{Z}^2$};
+    
+    % 环面轮廓
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.5] 
+        (0, 0) ellipse (1.8 and 1.4);
+    \draw[color=blue!60!black, line width=1pt, fill=white] 
+        (0, 0) ellipse (0.8 and 0.6);
+    
+    % 基点
+    \fill[red!70!black] (1.8, 0) circle (3pt);
+    \node[right, color=red!70!black] at (1.8, 0) {$x_0$};
+    
+    % 经线 a
+    \draw[->, color=green!60!black, line width=1.5pt] 
+        (1.4, 0.3) arc (10:170:0.3 and 1);
+    \node[color=green!60!black, font=\small] at (-0.2, 1.1) {$a$};
+    
+    % 纬线 b
+    \draw[->, color=orange!80!black, line width=1.5pt] 
+        (1.6, -0.2) arc (-20:340:1.2 and 0.3);
+    \node[color=orange!80!black, font=\small] at (0, -1.3) {$b$};
+    
+    % 关系
+    \node[anchor=north, font=\scriptsize] at (0, -1.8) {$aba^{-1}b^{-1} = 1$};
+\end{scope}
+
+% ============= 右下: 提升性质 =============
+\begin{scope}[xshift=5cm, yshift=-3.5cm]
+    % 标题
+    \node[font=\bfseries] at (0, 2) {覆叠提升};
+    
+    % 覆叠空间
+    \draw[color=green!60!black, line width=1pt] (-1.5, 1) -- (1.5, 1);
+    \node[color=green!60!black, font=\small] at (1.7, 1) {$\tilde{X}$};
+    
+    % 底空间
+    \draw[color=blue!60!black, line width=1.5pt] (-1.5, -1) -- (1.5, -1);
+    \node[color=blue!60!black, font=\small] at (1.7, -1) {$X$};
+    
+    % 投影
+    \draw[->, color=purple!70!black, line width=1pt] (0, 0.8) -- (0, -0.8);
+    \node[color=purple!70!black, font=\small, right] at (0.1, 0) {$p$};
+    
+    % 提升的环路
+    \draw[->, color=orange!80!black, line width=1.2pt] 
+        (-1, 1) -- (1, 1);
+    \node[color=orange!80!black, font=\small, above] at (0, 1.1) {$\tilde{\gamma}$};
+    
+    % 底空间的环路
+    \draw[->, color=red!70!black, line width=1.2pt] 
+        (-1, -1) arc (180:0:1);
+    \node[color=red!70!black, font=\small, below] at (0, -1.1) {$\gamma$};
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize, text width=4cm, align=center] 
+        at (0, -1.8) {$p \circ \tilde{\gamma} = \gamma$\\
+                       提升定理};
+\end{scope}
+
+% ============= 底部: 基本群公理 =============
+\node[anchor=north, font=\scriptsize, draw=gray!50, fill=white, rounded corners, inner sep=8pt] 
+    at (4, -6.5) {
+    \begin{tabular}{c}
+        \textbf{基本群性质:} \\
+        单位元: $[c_{x_0}]$ \\[2pt]
+        逆元: $[\gamma]^{-1} = [\bar{\gamma}]$ (逆道路) \\[2pt]
+        结合律: $([\gamma_1] * [\gamma_2]) * [\gamma_3] = [\gamma_1] * ([\gamma_2] * [\gamma_3])$
+    \end{tabular}
+};
+
+\end{tikzpicture}
+\end{document}

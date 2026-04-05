@@ -1,0 +1,154 @@
+% 李群 SO(3) 示意 (Lie Group SO(3))
+% 描述: 展示三维旋转群的多种表示
+% 数学概念: 特殊正交群、旋转、欧拉角、四元数、Bloch球
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,3d,patterns,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0
+]
+
+% ============= 左侧: 旋转作用 =============
+\begin{scope}[xshift=-5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {旋转变换};
+    
+    % 旋转前
+    \draw[color=gray!50, line width=1pt] (-1.5, 1) -- (1.5, 1);
+    \draw[color=gray!50, line width=1pt] (0, 0) -- (0, 2);
+    \draw[color=gray!50, line width=1pt] (-0.8, 0.2) -- (0.8, 1.8);
+    \node[color=gray!50, font=\tiny] at (1.7, 1) {原位置};
+    
+    % 旋转后
+    \begin{scope}[rotate around={45:(0, 1)}]
+        \draw[color=blue!60!black, line width=1.5pt] (-1.5, 1) -- (1.5, 1);
+        \draw[color=green!60!black, line width=1.5pt] (0, 0) -- (0, 2);
+        \draw[color=red!70!black, line width=1.5pt] (-0.8, 0.2) -- (0.8, 1.8);
+    \end{scope}
+    
+    % 旋转中心
+    \fill[black] (0, 1) circle (2pt);
+    
+    % 旋转箭头
+    \draw[->, color=orange!80!black, line width=1.5pt] (0.8, 0.3) arc (-45:45:0.8);
+    \node[color=orange!80!black, font=\small, right] at (1.2, 0.5) {$R$};
+    
+    % 矩阵表示
+    \node[anchor=north, font=\scriptsize] at (0, -0.5) {$R \in SO(3)$};
+    \node[anchor=north, font=\tiny, text width=4cm, align=center] 
+        at (0, -1.2) {$R^T R = I, \; \det R = 1$};
+\end{scope}
+
+% ============= 中间: 欧拉角 =============
+\begin{scope}[xshift=0cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {欧拉角分解};
+    
+    % 坐标系 (初始)
+    \draw[->, color=gray!50, line width=1pt] (-1.5, -1) -- (-0.5, -1) node[right, font=\tiny] {$x$};
+    \draw[->, color=gray!50, line width=1pt] (-1.5, -1) -- (-1.5, 0) node[above, font=\tiny] {$z$};
+    
+    % 旋转步骤
+    \node[anchor=north west, font=\scriptsize, text width=4cm, align=left] 
+        at (-1.8, -0.3) {
+        1. 绕 $z$ 轴旋转 $\phi$ \\
+        2. 绕新 $x'$ 轴旋转 $\theta$ \\
+        3. 绕新 $z''$ 轴旋转 $\psi$
+    };
+    
+    % 最终坐标系 (旋转后)
+    \begin{scope}[rotate around={30:(1, 0.5)}]
+        \draw[->, color=blue!60!black, line width=1pt] (1, 0.5) -- (2, 0.5) node[right, font=\tiny] {$x'''$};
+        \draw[->, color=green!60!black, line width=1pt] (1, 0.5) -- (1, 1.5) node[above, font=\tiny] {$z'''$};
+    \end{scope}
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize] at (0, -2) {$R = R_z(\psi) R_x(\theta) R_z(\phi)$};
+    
+    % 说明
+    \node[anchor=north, font=\tiny, text width=4.5cm, align=center] 
+        at (0, -2.8) {$\phi, \psi \in [0, 2\pi), \theta \in [0, \pi]$};
+\end{scope}
+
+% ============= 右侧: 四元数表示 =============
+\begin{scope}[xshift=5cm, yshift=1cm]
+    % 标题
+    \node[font=\bfseries] at (0, 3) {四元数表示};
+    
+    % 球面 (S³)
+    \draw[color=blue!60!black, line width=1pt, fill=blue!10, opacity=0.3] 
+        (0, 0.5) circle (1.5);
+    
+    % 赤道圆
+    \draw[color=green!60!black, line width=0.8pt] 
+        (0, 0.5) ellipse (1.5 and 0.4);
+    
+    % 四元数点
+    \coordinate (Q) at (0.8, 1.2);
+    \fill[red!70!black] (Q) circle (3pt);
+    \node[color=red!70!black, font=\small, above right] at (Q) {$q$};
+    
+    % 对径点 (等同)
+    \coordinate (Qneg) at (-0.8, -0.2);
+    \fill[red!70!black] (Qneg) circle (3pt);
+    \node[color=red!70!black, font=\small, below left] at (Qneg) {$-q$};
+    
+    % 等同标记
+    \draw[<->, color=orange!80!black, line width=1pt] (0.5, 0.9) -- (-0.5, 0.1);
+    \node[color=orange!80!black, font=\tiny] at (0, 0.9) {等同};
+    
+    % 公式
+    \node[anchor=north, font=\scriptsize] at (0, -1.2) {$q = a + bi + cj + dk$};
+    \node[anchor=north, font=\scriptsize] at (0, -1.8) {$|q| = 1$};
+    
+    % 关系
+    \node[anchor=north, font=\tiny, text width=4.5cm, align=center] 
+        at (0, -2.8) {$SO(3) \cong S^3 / \{q \sim -q\} \cong \mathbb{R}P^3$};
+\end{scope}
+
+% ============= 底部: 李代数结构 =============
+\node[anchor=north, font=\small, draw=blue!30, fill=blue!5, rounded corners, inner sep=10pt] 
+    at (4, -4) {
+    \begin{tabular}{ll}
+        \textbf{SO(3) 的群结构:} & \\
+        流形结构: & 三维实射影空间 $\mathbb{R}P^3$ \\
+        维数: & $\dim SO(3) = 3$ \\
+        李代数: & $\mathfrak{so}(3) \cong (\mathbb{R}^3, \times)$ (叉积) \\
+        指数映射: & $\exp: \mathfrak{so}(3) \to SO(3)$ \\
+        单连通覆叠: & $SU(2) \to SO(3)$ (2:1覆叠) \\
+        基本群: & $\pi_1(SO(3)) \cong \mathbb{Z}_2$
+    \end{tabular}
+};
+
+% ============= 无穷小生成元 =============
+\begin{scope}[xshift=-5cm, yshift=-4cm]
+    \node[anchor=north west, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{无穷小生成元:}\\[5pt]
+        $J_x = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix}$\\[8pt]
+        $J_y = \begin{pmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ -1 & 0 & 0 \end{pmatrix}$\\[8pt]
+        $J_z = \begin{pmatrix} 0 & -1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$
+    };
+\end{scope}
+
+% ============= 物理应用 =============
+\begin{scope}[xshift=5cm, yshift=-4cm]
+    \node[anchor=north east, font=\scriptsize, text width=5cm, align=left] 
+        at (0, 0) {
+        \textbf{物理应用:}\\
+        - 刚体转动 \\
+        - 角动量量子化 \\
+        - 自旋1/2粒子 \\
+        - 陀螺仪导航 \\
+        - 计算机图形学\\[5pt]
+        \textit{Dirac鞋带把戏}\\
+        证明$\pi_1(SO(3)) = \mathbb{Z}_2$
+    };
+\end{scope}
+
+\end{tikzpicture}
+\end{document}

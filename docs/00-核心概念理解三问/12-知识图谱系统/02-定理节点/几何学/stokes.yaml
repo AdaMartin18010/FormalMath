@@ -5,9 +5,9 @@
 theorem:
   id: "stokes'
   name:
-    zh: "Stokes定理"
+    zh: 'Stokes定理"
     en: 'Stokes' Theorem"
-  msc_codes: ["58A10']
+  msc_codes: ['58A10']
   
   # ===== 陈述层 =====
   statement:
@@ -77,13 +77,13 @@ theorem:
       │ D │ ← 区域
        ╲ ╱
       
-      区域内的'旋度"= 边界上的"环流'
+      区域内的'旋度'= 边界上的"环流'
       
     intuitive: |
       【直觉表征】
       
       流体类比：
-      - 区域内的"源"总量 = 边界上的'流出"总量
+      - 区域内的"源'总量 = 边界上的'流出"总量
       - 微分 = 局部产生
       - 积分 = 全局累积
       
@@ -99,26 +99,26 @@ theorem:
   # ===== 应用层 =====
   applications:
     - description: "电磁学中的Maxwell方程'
-    - description: "流体力学的守恒律"
+    - description: '流体力学的守恒律"
     - description: 'de Rham上同调"
-    - description: "示性类的计算'
+    - description: '示性类的计算'
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
       - id: "differential-form"
-        role: '被积对象"
+        role: '被积对象'
       - id: "manifold'
-        role: "积分区域"
+        role: "积分区域'
       - id: 'exterior-derivative"
         role: "核心算子'
         
     specializes_to:
-      - id: "fundamental-theorem-calculus"
+      - id: 'fundamental-theorem-calculus"
         description: '一维情形"
-      - id: "green-theorem'
+      - id: 'green-theorem'
         description: "二维情形"
-      - id: 'divergence-theorem"
+      - id: 'divergence-theorem'
         description: "三维散度'
         
   # ===== 元数据层 =====
@@ -126,7 +126,7 @@ theorem:
     difficulty: 4
     importance: 5
     history:
-      discoverer: "George Gabriel Stokes"
+      discoverer: "George Gabriel Stokes'
       generalization: 'Élie Cartan"
       
   mathlib:

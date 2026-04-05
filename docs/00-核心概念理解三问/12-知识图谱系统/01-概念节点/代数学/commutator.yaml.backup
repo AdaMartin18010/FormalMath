@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "commutator"
+  id: "commutator'
   name:
-    zh: "交换子"
-    en: "Commutator"
-  msc_codes: ["20F12"]
+    zh: '交换子"
+    en: 'Commutator"
+  msc_codes: ['20F12']
 
   # ===== 定义层 =====
   definition:
@@ -29,7 +29,7 @@ concept:
       [a,b] = e ⟺ ab = ba（可交换）
       [a,b] ≠ e ⟺ ab ≠ ba（不可交换）
 
-      交换子群收集了所有"不交换"信息。
+      交换子群收集了所有'不交换'信息。
 
     lean: |
       -- 交换子
@@ -44,7 +44,7 @@ concept:
     geometric: |
       【几何直觉】循环偏差
       - 从e出发：先a再b，vs 先b再a
-      - 两条路径的"差"就是交换子
+      - 两条路径的"差'就是交换子
       - 阿贝尔群中两条路径相同
 
     algebraic: |
@@ -54,23 +54,23 @@ concept:
 
   # ===== 例子层 =====
   examples:
-    - name: "GL(n,ℝ)"
-      commutator: "[GL,GL] = SL(n,ℝ)"
+    - name: "GL(n,ℝ)'
+      commutator: '[GL,GL] = SL(n,ℝ)"
 
-    - name: "Sₙ (n≥5)"
-      commutator: "[Sₙ,Sₙ] = Aₙ"
+    - name: "Sₙ (n≥5)'
+      commutator: '[Sₙ,Sₙ] = Aₙ"
 
-    - name: "自由群 Fₙ"
-      commutator: "[Fₙ,Fₙ] ≠ Fₙ"
+    - name: '自由群 Fₙ"
+      commutator: '[Fₙ,Fₙ] ≠ Fₙ'
 
   # ===== 关系层 =====
   relations:
     requires:
       - id: "group"
-      - id: "normal-subgroup"
+      - id: 'normal-subgroup'
 
     related_to:
-      - id: "abelianization"
+      - id: "abelianization'
       - id: "solvable-group"
 
   # ===== 元数据层 =====

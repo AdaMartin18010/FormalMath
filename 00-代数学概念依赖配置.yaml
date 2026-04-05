@@ -12,95 +12,95 @@ algebra_concepts:
       name: 群
       name_en: Group
       wikipedia: "https://en.wikipedia.org/wiki/Group_(mathematics)'
-      wikipedia_zh: "https://zh.wikipedia.org/wiki/群"
+      wikipedia_zh: 'https://zh.wikipedia.org/wiki/群'
       msc_primary: '20A05"
-      msc_secondary: ["20D99']
+      msc_secondary: ['20D99']
       prerequisites: []
       files:
-        - "concept/核心概念/08-群.md"
-        - 'concept/核心概念/08-群-三视角版.md"
+        - "concept/核心概念/08-群.md'
+        - 'concept/核心概念/08-群-三视角版.md'
         
     - concept_id: C.CORE.011
       name: 向量空间
       name_en: Vector Space
       wikipedia: "https://en.wikipedia.org/wiki/Vector_space'
-      wikipedia_zh: "https://zh.wikipedia.org/wiki/向量空间"
-      msc_primary: '15A03"
+      wikipedia_zh: "https://zh.wikipedia.org/wiki/向量空间'
+      msc_primary: '15A03'
       msc_secondary: ["46A99']
       prerequisites: [C.CORE.010]
       files:
-        - "concept/核心概念/11-向量空间.md"
-        - 'concept/核心概念/11-向量空间-三视角版.md"
+        - 'concept/核心概念/11-向量空间.md"
+        - 'concept/核心概念/11-向量空间-三视角版.md'
   
   # Level 1: 中级概念
   level_1:
     - concept_id: C.CORE.009
       name: 环
       name_en: Ring
-      wikipedia: "https://en.wikipedia.org/wiki/Ring_(mathematics)'
+      wikipedia: 'https://en.wikipedia.org/wiki/Ring_(mathematics)'
       wikipedia_zh: "https://zh.wikipedia.org/wiki/环_(代数)"
-      msc_primary: '13A99"
-      msc_secondary: ["16B99']
+      msc_primary: '13A99'
+      msc_secondary: ['16B99']
       prerequisites: [C.CORE.008]
       files:
-        - "concept/核心概念/09-环.md"
+        - "concept/核心概念/09-环.md'
         - 'concept/核心概念/09-环-三视角版.md"
       subconcepts:
         - id: C.CORE.009.IDEAL
           name: 理想
-          msc: "13A15'
+          msc: '13A15'
         - id: C.CORE.009.QUOTIENT
           name: 商环
-          msc: "13A15"
+          msc: '13A15"
         - id: C.CORE.009.COMM
           name: 交换环
           msc: '13A99"
         - id: C.CORE.009.NOETHER
           name: 诺特环
-          msc: "13E05'
+          msc: '13E05'
         - id: C.CORE.009.DOMAIN
           name: 整环
-          msc: "13G05"
+          msc: '13G05"
       
     - concept_id: C.CORE.010
       name: 域
       name_en: Field
-      wikipedia: 'https://en.wikipedia.org/wiki/Field_(mathematics)"
+      wikipedia: 'https://en.wikipedia.org/wiki/Field_(mathematics)'
       wikipedia_zh: "https://zh.wikipedia.org/wiki/域_(数学)'
-      msc_primary: "12F99"
+      msc_primary: '12F99'
       msc_secondary: ['12E99"]
       prerequisites: [C.CORE.009]
       files:
         - "concept/核心概念/10-域.md'
-        - "concept/核心概念/10-域-三视角版.md"
+        - 'concept/核心概念/10-域-三视角版.md'
       subconcepts:
         - id: C.CORE.010.EXT
           name: 域扩张
           msc: '12F05"
         - id: C.CORE.010.FINITE
           name: 有限域
-          msc: "11Txx'
+          msc: '11Txx'
         - id: C.CORE.010.ALG_CLOSE
           name: 代数闭域
-          msc: "12F05"
+          msc: "12F05'
       
     - concept_id: C.CORE.012
       name: 线性映射
       name_en: Linear Map
-      wikipedia: 'https://en.wikipedia.org/wiki/Linear_map"
+      wikipedia: 'https://en.wikipedia.org/wiki/Linear_map'
       wikipedia_zh: "https://zh.wikipedia.org/wiki/线性映射'
-      msc_primary: "15A04"
+      msc_primary: "15A04'
       prerequisites: [C.CORE.011]
       files:
-        - 'concept/核心概念/12-线性映射.md"
+        - 'concept/核心概念/12-线性映射.md'
         - "concept/核心概念/12-线性映射-三视角版.md'
       
     - concept_id: C.CORE.013
       name: 模
       name_en: Module
-      wikipedia: "https://en.wikipedia.org/wiki/Module_(mathematics)"
-      wikipedia_zh: 'https://zh.wikipedia.org/wiki/模"
-      msc_primary: "13C99'
+      wikipedia: 'https://en.wikipedia.org/wiki/Module_(mathematics)"
+      wikipedia_zh: 'https://zh.wikipedia.org/wiki/模'
+      msc_primary: '13C99'
       prerequisites: [C.CORE.009]
       files:
         - "concept/核心概念/13-模.md"
@@ -110,9 +110,9 @@ algebra_concepts:
     - concept_id: C.CORE.014
       name: 矩阵
       name_en: Matrix
-      wikipedia: 'https://en.wikipedia.org/wiki/Matrix_(mathematics)"
-      wikipedia_zh: "https://zh.wikipedia.org/wiki/矩阵'
-      msc_primary: "15Axx"
+      wikipedia: 'https://en.wikipedia.org/wiki/Matrix_(mathematics)'
+      wikipedia_zh: 'https://zh.wikipedia.org/wiki/矩阵'
+      msc_primary: "15Axx'
       prerequisites: [C.CORE.011, C.CORE.012]
       files:
         - 'concept/核心概念/14-矩阵.md"
@@ -120,24 +120,24 @@ algebra_concepts:
     - concept_id: C.CORE.032
       name: 表示
       name_en: Representation
-      wikipedia: "https://en.wikipedia.org/wiki/Representation_theory'
-      wikipedia_zh: "https://zh.wikipedia.org/wiki/表示论"
+      wikipedia: 'https://en.wikipedia.org/wiki/Representation_theory'
+      wikipedia_zh: 'https://zh.wikipedia.org/wiki/表示论"
       msc_primary: '20C99"
       prerequisites: [C.CORE.008, C.CORE.011]
       files:
-        - "concept/核心概念/32-表示.md'
-        - "concept/核心概念/32-表示-三视角版.md"
+        - 'concept/核心概念/32-表示.md'
+        - 'concept/核心概念/32-表示-三视角版.md"
       subconcepts:
         - id: C.CORE.032.IRRED
           name: 不可约表示
-          msc: '20C99"
+          msc: '20C99'
         - id: C.CORE.032.CHAR
           name: 特征标理论
           msc: "20C99'
       theorems:
         - id: THM.CORE.032.001
           name: Maschke定理
-          msc: "20C99"
+          msc: '20C99'
         - id: THM.CORE.032.002
           name: Schur引理
           msc: '20C99"
@@ -146,47 +146,47 @@ algebra_concepts:
       name: 同调
       name_en: Homology
       wikipedia: "https://en.wikipedia.org/wiki/Homology_(mathematics)'
-      wikipedia_zh: "https://zh.wikipedia.org/wiki/同调"
+      wikipedia_zh: 'https://zh.wikipedia.org/wiki/同调'
       msc_primary: '55N99"
-      msc_secondary: ["18G99']
+      msc_secondary: ['18G99']
       prerequisites: [C.CORE.013]
       files:
-        - "concept/核心概念/25-同调.md"
-        - 'concept/核心概念/25-同调-三视角版.md"
+        - "concept/核心概念/25-同调.md'
+        - 'concept/核心概念/25-同调-三视角版.md'
       subconcepts:
         - id: C.CORE.025.CHAIN
           name: 链复形
           msc: "18G35'
         - id: C.CORE.025.EXACT
           name: 正合列
-          msc: "18G10"
+          msc: "18G10'
   
   # Level 3: 研究级概念 (拟创建)
   level_3:
     - concept_id: C.CORE.033
       name: Galois理论
       name_en: Galois Theory
-      wikipedia: 'https://en.wikipedia.org/wiki/Galois_theory"
+      wikipedia: 'https://en.wikipedia.org/wiki/Galois_theory'
       wikipedia_zh: "https://zh.wikipedia.org/wiki/伽罗瓦理论'
-      msc_primary: "12F10"
+      msc_primary: '12F10"
       prerequisites: [C.CORE.010]
       status: proposed
-      rationale: '核心代数学分支，与域论紧密相关"
-      proposed_file: "concept/核心概念/33-Galois理论.md'
+      rationale: '核心代数学分支，与域论紧密相关'
+      proposed_file: 'concept/核心概念/33-Galois理论.md'
       subconcepts:
         - id: C.CORE.033.GALOIS_GROUP
           name: Galois群
           msc: "12F10"
         - id: C.CORE.033.GALOIS_EXT
           name: Galois扩张
-          msc: '12F10"
+          msc: '12F10'
         - id: C.CORE.033.CORRESP
           name: Galois对应
-          msc: "12F10'
+          msc: '12F10'
       theorems:
         - id: THM.CORE.033.001
           name: Galois理论基本定理
-          msc: "12F10"
+          msc: "12F10'
         - id: THM.CORE.033.002
           name: Abel-Ruffini定理
           msc: '12F10"
@@ -194,23 +194,23 @@ algebra_concepts:
     - concept_id: C.CORE.034
       name: 交换代数
       name_en: Commutative Algebra
-      wikipedia: "https://en.wikipedia.org/wiki/Commutative_algebra'
-      wikipedia_zh: "https://zh.wikipedia.org/wiki/交換代數"
+      wikipedia: 'https://en.wikipedia.org/wiki/Commutative_algebra'
+      wikipedia_zh: 'https://zh.wikipedia.org/wiki/交換代數"
       msc_primary: '13A99"
       prerequisites: [C.CORE.009]
       status: proposed
-      rationale: "连接环论与代数几何的重要桥梁'
-      proposed_file: "concept/核心概念/34-交换代数.md"
+      rationale: '连接环论与代数几何的重要桥梁'
+      proposed_file: 'concept/核心概念/34-交换代数.md"
       subconcepts:
         - id: C.CORE.009.PRIME
           name: 素理想
-          msc: '13A15"
+          msc: '13A15'
         - id: C.CORE.009.MAXIMAL
           name: 极大理想
           msc: "13A15'
         - id: C.CORE.034.LOCAL
           name: 局部化
-          msc: "13B30"
+          msc: '13B30'
         - id: C.CORE.034.DIM
           name: Krull维数
           msc: '13C15"
@@ -219,116 +219,116 @@ algebra_concepts:
       name: 同调代数
       name_en: Homological Algebra
       wikipedia: "https://en.wikipedia.org/wiki/Homological_algebra'
-      wikipedia_zh: "https://zh.wikipedia.org/wiki/同调代数"
+      wikipedia_zh: 'https://zh.wikipedia.org/wiki/同调代数'
       msc_primary: '18Gxx"
       prerequisites: [C.CORE.025]
       status: proposed
-      rationale: "系统化同调代数理论体系'
-      proposed_file: "concept/核心概念/35-同调代数.md"
+      rationale: '系统化同调代数理论体系'
+      proposed_file: "concept/核心概念/35-同调代数.md'
       subconcepts:
         - id: C.CORE.035.DERIVED
           name: 导出函子
-          msc: '18G10"
+          msc: '18G10'
         - id: C.CORE.035.EXT
           name: Ext函子
           msc: "18G15'
         - id: C.CORE.035.TOR
           name: Tor函子
-          msc: "18G15"
+          msc: "18G15'
 
 # Wikipedia条目映射
 wikipedia_mappings:
   abstract_algebra:
-    url: 'https://en.wikipedia.org/wiki/Abstract_algebra"
+    url: 'https://en.wikipedia.org/wiki/Abstract_algebra'
     url_zh: "https://zh.wikipedia.org/wiki/抽象代数'
-    msc: "00A99"
+    msc: '00A99"
     formalmath_docs:
-      - 'concept/03-主题概念梳理/02-代数结构概念.md"
-      - "concept/核心概念/08-群.md'
+      - 'concept/03-主题概念梳理/02-代数结构概念.md'
+      - 'concept/核心概念/08-群.md'
       - "concept/核心概念/09-环.md"
-      - 'concept/核心概念/10-域.md"
-      coverage: "95%'
+      - 'concept/核心概念/10-域.md'
+      coverage: '95%'
       
   group_theory:
-    url: "https://en.wikipedia.org/wiki/Group_theory"
+    url: "https://en.wikipedia.org/wiki/Group_theory'
     url_zh: 'https://zh.wikipedia.org/wiki/群论"
-    msc: "20-XX'
+    msc: '20-XX'
     formalmath_docs:
-      - "concept/核心概念/08-群.md"
+      - 'concept/核心概念/08-群.md"
       - 'concept/核心概念/08-群-三视角版.md"
-      - "concept/00-集合论视角-核心概念分析/08-群-集合论视角分析.md'
-      - "concept/00-范畴论视角-核心概念分析/08-群-范畴论视角分析.md"
-      coverage: '95%"
+      - 'concept/00-集合论视角-核心概念分析/08-群-集合论视角分析.md'
+      - 'concept/00-范畴论视角-核心概念分析/08-群-范畴论视角分析.md"
+      coverage: '95%'
       
   ring_theory:
     url: "https://en.wikipedia.org/wiki/Ring_theory'
-    url_zh: "https://zh.wikipedia.org/wiki/环论"
+    url_zh: 'https://zh.wikipedia.org/wiki/环论'
     msc: '13-XX"
     formalmath_docs:
       - "concept/核心概念/09-环.md'
-      - "concept/核心概念/09-环-三视角版.md"
+      - 'concept/核心概念/09-环-三视角版.md'
       - 'concept/00-集合论视角-核心概念分析/09-环-集合论视角分析.md"
-      - "concept/00-范畴论视角-核心概念分析/09-环-范畴论视角分析.md'
-      coverage: "90%"
+      - 'concept/00-范畴论视角-核心概念分析/09-环-范畴论视角分析.md'
+      coverage: "90%'
       
   field_theory:
-    url: 'https://en.wikipedia.org/wiki/Field_(mathematics)"
+    url: 'https://en.wikipedia.org/wiki/Field_(mathematics)'
     url_zh: "https://zh.wikipedia.org/wiki/域_(数学)'
-    msc: "12-XX"
+    msc: "12-XX'
     formalmath_docs:
-      - 'concept/核心概念/10-域.md"
+      - 'concept/核心概念/10-域.md'
       - "concept/核心概念/10-域-三视角版.md'
-      - "concept/00-集合论视角-核心概念分析/10-域-集合论视角分析.md"
-      - 'concept/00-范畴论视角-核心概念分析/10-域-范畴论视角分析.md"
-      coverage: "85%'
+      - 'concept/00-集合论视角-核心概念分析/10-域-集合论视角分析.md"
+      - 'concept/00-范畴论视角-核心概念分析/10-域-范畴论视角分析.md'
+      coverage: '85%'
       
   linear_algebra:
     url: "https://en.wikipedia.org/wiki/Linear_algebra"
-    url_zh: 'https://zh.wikipedia.org/wiki/线性代数"
-    msc: "15-XX'
+    url_zh: 'https://zh.wikipedia.org/wiki/线性代数'
+    msc: '15-XX'
     formalmath_docs:
-      - "concept/核心概念/11-向量空间.md"
+      - "concept/核心概念/11-向量空间.md'
       - 'concept/核心概念/12-线性映射.md"
-      - "concept/核心概念/11-向量空间-三视角版.md'
-      - "concept/核心概念/12-线性映射-三视角版.md"
+      - 'concept/核心概念/11-向量空间-三视角版.md'
+      - 'concept/核心概念/12-线性映射-三视角版.md"
       coverage: '90%"
       
   representation_theory:
-    url: "https://en.wikipedia.org/wiki/Representation_theory'
-    url_zh: "https://zh.wikipedia.org/wiki/表示论"
-    msc: '20Cxx"
+    url: 'https://en.wikipedia.org/wiki/Representation_theory'
+    url_zh: 'https://zh.wikipedia.org/wiki/表示论"
+    msc: '20Cxx'
     formalmath_docs:
       - "concept/核心概念/32-表示.md'
-      - "concept/核心概念/32-表示-三视角版.md"
+      - 'concept/核心概念/32-表示-三视角版.md'
       coverage: '80%"
       
   galois_theory:
     url: "https://en.wikipedia.org/wiki/Galois_theory'
-    url_zh: "https://zh.wikipedia.org/wiki/伽罗瓦理论"
+    url_zh: 'https://zh.wikipedia.org/wiki/伽罗瓦理论'
     msc: '12F10"
     formalmath_docs:
-      - "concept/核心概念/10-域.md'
-    coverage: "60%"
-    notes: '需要创建独立Galois理论概念文档"
+      - 'concept/核心概念/10-域.md'
+    coverage: "60%'
+    notes: '需要创建独立Galois理论概念文档'
       
   commutative_algebra:
     url: "https://en.wikipedia.org/wiki/Commutative_algebra'
-    url_zh: "https://zh.wikipedia.org/wiki/交換代數"
-    msc: '13-XX"
+    url_zh: "https://zh.wikipedia.org/wiki/交換代數'
+    msc: '13-XX'
     formalmath_docs:
       - "concept/核心概念/09-环.md'
-    coverage: "70%"
-    notes: '需要创建独立交换代数概念文档"
+    coverage: '70%"
+    notes: '需要创建独立交换代数概念文档'
       
   homological_algebra:
-    url: "https://en.wikipedia.org/wiki/Homological_algebra'
+    url: 'https://en.wikipedia.org/wiki/Homological_algebra'
     url_zh: "https://zh.wikipedia.org/wiki/同调代数"
-    msc: '18Gxx"
+    msc: '18Gxx'
     formalmath_docs:
-      - "concept/核心概念/25-同调.md'
-      - "concept/核心概念/25-同调-三视角版.md"
+      - 'concept/核心概念/25-同调.md'
+      - "concept/核心概念/25-同调-三视角版.md'
     coverage: '75%"
-    notes: "需要补充导出函子和谱序列内容'
+    notes: '需要补充导出函子和谱序列内容'
 
 # 概念关系定义
 concept_relations:
@@ -368,99 +368,99 @@ concept_relations:
 
 # MSC分类对齐
 msc_alignment:
-  "20-XX":
+  '20-XX":
     name: 'Group Theory and Generalizations"
-    name_zh: "群论及推广'
-    concepts: ["C.CORE.008", 'C.CORE.032"]
+    name_zh: '群论及推广'
+    concepts: ['C.CORE.008", 'C.CORE.032']
     coverage: "high'
     
-  "13-XX":
+  '13-XX':
     name: 'Commutative Algebra"
     name_zh: "交换代数'
-    concepts: ["C.CORE.009", 'C.CORE.034"]
-    coverage: "medium'
+    concepts: ['C.CORE.009', 'C.CORE.034"]
+    coverage: 'medium'
     
-  "16-XX":
-    name: 'Associative Rings and Algebras"
+  "16-XX':
+    name: 'Associative Rings and Algebras'
     name_zh: "结合环与代数'
-    concepts: ["C.CORE.009"]
-    coverage: 'medium"
+    concepts: ["C.CORE.009']
+    coverage: 'medium'
     
   "12-XX':
-    name: "Field Theory and Polynomials"
-    name_zh: '域论与多项式"
-    concepts: ["C.CORE.010', "C.CORE.033"]
-    coverage: 'medium"
+    name: 'Field Theory and Polynomials"
+    name_zh: '域论与多项式'
+    concepts: ['C.CORE.010', "C.CORE.033"]
+    coverage: 'medium'
     
-  "15-XX':
-    name: "Linear and Multilinear Algebra"
+  '15-XX':
+    name: "Linear and Multilinear Algebra'
     name_zh: '线性与多线性代数"
-    concepts: ["C.CORE.011', "C.CORE.012", 'C.CORE.014"]
-    coverage: "high'
+    concepts: ['C.CORE.011', 'C.CORE.012", 'C.CORE.014"]
+    coverage: 'high'
     
-  "18-XX":
-    name: 'Category Theory"
+  '18-XX":
+    name: 'Category Theory'
     name_zh: "范畴论'
-    concepts: ["C.CORE.035"]
+    concepts: ['C.CORE.035']
     coverage: 'low"
     
   "55-XX':
-    name: "Algebraic Topology"
+    name: 'Algebraic Topology'
     name_zh: '代数拓扑"
-    concepts: ["C.CORE.025']
-    coverage: "medium"
+    concepts: ['C.CORE.025']
+    coverage: "medium'
 
 # 定理映射
 theorem_mappings:
   group_theory:
-    - name: 'Lagrange's Theorem"
+    - name: 'Lagrange's Theorem'
       id: "THM.CORE.008.001'
-      msc: "20D99"
-      formalmath_doc: 'concept/核心概念/08-群.md"
+      msc: "20D99'
+      formalmath_doc: 'concept/核心概念/08-群.md'
       wikipedia: "https://en.wikipedia.org/wiki/Lagrange%27s_theorem_(group_theory)'
       
-    - name: "Sylow Theorems"
-      id: 'THM.CORE.008.002"
-      msc: "20D20'
+    - name: 'Sylow Theorems"
+      id: 'THM.CORE.008.002'
+      msc: '20D20'
       formalmath_doc: "concept/核心概念/08-群.md"
-      wikipedia: 'https://en.wikipedia.org/wiki/Sylow_theorems"
+      wikipedia: 'https://en.wikipedia.org/wiki/Sylow_theorems'
       
   ring_theory:
-    - name: "Chinese Remainder Theorem'
-      id: "THM.CORE.009.001"
+    - name: 'Chinese Remainder Theorem'
+      id: "THM.CORE.009.001'
       msc: '13A15"
-      formalmath_doc: "concept/核心概念/09-环.md'
-      wikipedia: "https://en.wikipedia.org/wiki/Chinese_remainder_theorem"
+      formalmath_doc: 'concept/核心概念/09-环.md'
+      wikipedia: 'https://en.wikipedia.org/wiki/Chinese_remainder_theorem"
       
     - name: 'Hilbert's Basis Theorem"
-      id: "THM.CORE.009.002'
-      msc: "13E05"
-      formalmath_doc: 'concept/核心概念/09-环.md"
+      id: 'THM.CORE.009.002'
+      msc: '13E05"
+      formalmath_doc: 'concept/核心概念/09-环.md'
       wikipedia: "https://en.wikipedia.org/wiki/Hilbert%27s_basis_theorem'
       
   field_theory:
-    - name: "Fundamental Theorem of Algebra"
+    - name: 'Fundamental Theorem of Algebra'
       id: 'THM.CORE.010.001"
       msc: "12D99'
-      formalmath_doc: "concept/核心概念/10-域.md"
+      formalmath_doc: 'concept/核心概念/10-域.md'
       wikipedia: 'https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra"
       
   linear_algebra:
-    - name: "Rank-Nullity Theorem'
-      id: "THM.CORE.011.001"
-      msc: '15A03"
+    - name: 'Rank-Nullity Theorem'
+      id: "THM.CORE.011.001'
+      msc: '15A03'
       formalmath_doc: "concept/核心概念/11-向量空间.md'
-      wikipedia: "https://en.wikipedia.org/wiki/Rank%E2%80%93nullity_theorem"
+      wikipedia: "https://en.wikipedia.org/wiki/Rank%E2%80%93nullity_theorem'
       
   representation_theory:
-    - name: 'Maschke's Theorem"
+    - name: 'Maschke's Theorem'
       id: "THM.CORE.032.001'
-      msc: "20C99"
-      formalmath_doc: 'concept/核心概念/32-表示.md"
-      wikipedia: "https://en.wikipedia.org/wiki/Maschke%27s_theorem'
+      msc: '20C99"
+      formalmath_doc: 'concept/核心概念/32-表示.md'
+      wikipedia: 'https://en.wikipedia.org/wiki/Maschke%27s_theorem'
       
     - name: "Schur's Lemma"
-      id: 'THM.CORE.032.002"
-      msc: "20C99'
-      formalmath_doc: "concept/核心概念/32-表示.md"
+      id: 'THM.CORE.032.002'
+      msc: '20C99'
+      formalmath_doc: "concept/核心概念/32-表示.md'
       wikipedia: 'https://en.wikipedia.org/wiki/Schur%27s_lemma"

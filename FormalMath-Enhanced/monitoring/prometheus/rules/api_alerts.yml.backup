@@ -108,7 +108,7 @@ groups:
       - alert: HighAuthFailureRate
         expr: |
           (
-            sum(rate(http_requests_total{status=~"401|403"}[5m]))
+            sum(rate(http_requests_total{status=~'401|403"}[5m]))
             /
             sum(rate(http_requests_total[5m]))
           ) > 0.1

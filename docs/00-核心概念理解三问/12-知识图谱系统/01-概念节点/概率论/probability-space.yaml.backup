@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "probability-space"
+  id: "probability-space'
   name:
-    zh: "概率空间"
-    en: "Probability Space"
-  msc_codes: ["60A05"]
+    zh: '概率空间"
+    en: 'Probability Space"
+  msc_codes: ['60A05']
   
   # ===== 定义层 =====
   definition:
@@ -41,7 +41,7 @@ concept:
     geometric: |
       【几何直觉】概率分布
       - Ω是"所有可能性的空间"
-      - P给每个区域赋予"权重"
+      - P给每个区域赋予'权重'
       - 总权重为1
       
     algebraic: |
@@ -58,7 +58,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: "韦恩图"
+    - type: "韦恩图'
       content: |
         概率空间的图示：
         
@@ -72,7 +72,7 @@ concept:
         │     └──────────┘     │
         └───────────────────────┘
         
-    - type: "公理系统"
+    - type: "公理系统'
       content: |
         Kolmogorov公理：
         1. P(A) ≥ 0
@@ -82,64 +82,64 @@ concept:
   # ===== 例子层 =====
   examples:
     discrete:
-      - name: "掷硬币"
-        omega: "{H, T}"
-        sigma: "𝒫(Ω)"
-        measure: "P({H}) = P({T}) = 1/2"
+      - name: '掷硬币"
+        omega: "{H, T}'
+        sigma: '𝒫(Ω)"
+        measure: 'P({H}) = P({T}) = 1/2"
         
-      - name: "掷骰子"
+      - name: '掷骰子'
         omega: "{1,2,3,4,5,6}"
-        sigma: "𝒫(Ω)"
-        measure: "P({k}) = 1/6"
+        sigma: '𝒫(Ω)'
+        measure: "P({k}) = 1/6'
         
     continuous:
-      - name: "[0,1]上均匀分布"
-        omega: "[0,1]"
-        sigma: "Borel σ-代数"
-        measure: "P([a,b]) = b - a"
+      - name: "[0,1]上均匀分布'
+        omega: '[0,1]"
+        sigma: "Borel σ-代数'
+        measure: 'P([a,b]) = b - a"
         
-      - name: "正态分布"
-        omega: "ℝ"
+      - name: '正态分布"
+        omega: 'ℝ'
         sigma: "Borel σ-代数"
-        measure: "P = N(μ, σ²)"
-        density: "(2πσ²)^{-1/2} exp(-(x-μ)²/2σ²)"
+        measure: 'P = N(μ, σ²)'
+        density: "(2πσ²)^{-1/2} exp(-(x-μ)²/2σ²)'
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "measure"
-        description: "概率测度是测度的特例"
-      - id: "sigma-algebra"
-        description: "事件形成σ-代数"
+      - id: "measure'
+        description: '概率测度是测度的特例"
+      - id: "sigma-algebra'
+        description: '事件形成σ-代数"
         
     generalizes:
-      - id: "finite-probability"
-        description: "有限概率空间"
+      - id: 'finite-probability"
+        description: '有限概率空间'
         
     specialized_by:
       - id: "discrete-probability"
-        description: "离散概率空间"
-      - id: "continuous-probability"
-        description: "连续概率空间"
+        description: '离散概率空间'
+      - id: "continuous-probability'
+        description: "连续概率空间'
         
     related_to:
-      - id: "random-variable"
-        description: "随机变量定义在概率空间上"
-      - id: "expectation"
-        description: "期望是Lebesgue积分"
+      - id: 'random-variable"
+        description: "随机变量定义在概率空间上'
+      - id: 'expectation"
+        description: '期望是Lebesgue积分"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "law-of-large-numbers"
+    - id: 'law-of-large-numbers'
       statement: "样本均值收敛到期望"
       importance: 5
       
-    - id: "central-limit-theorem"
-      statement: "标准化和分布收敛到正态"
+    - id: 'central-limit-theorem'
+      statement: "标准化和分布收敛到正态'
       importance: 5
       
-    - id: "borel-cantelli"
-      statement: "关于无穷多事件发生的概率"
+    - id: "borel-cantelli'
+      statement: '关于无穷多事件发生的概率"
       importance: 4
       
   # ===== 元数据层 =====
@@ -148,20 +148,20 @@ concept:
     importance: 5
     
     prerequisites:
-      - "measure"
-      - "sigma-algebra"
+      - "measure'
+      - 'sigma-algebra"
       
     leads_to:
-      - "random-variable"
-      - "stochastic-process"
+      - 'random-variable"
+      - 'stochastic-process'
       - "statistical-inference"
       
     history:
       first_appearance: 1933
-      context: "Kolmogorov公理化"
+      context: 'Kolmogorov公理化'
       
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.Probability.ProbabilityMassFunction.Basic"
-    name: "MeasureTheory.IsProbabilityMeasure"
-    coverage: "complete"
+    path: "Mathlib.Probability.ProbabilityMassFunction.Basic'
+    name: "MeasureTheory.IsProbabilityMeasure'
+    coverage: 'complete"

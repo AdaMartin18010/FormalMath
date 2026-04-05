@@ -9,7 +9,7 @@ datasources:
     isDefault: true
     editable: false
     jsonData:
-      timeInterval: "15s"
+      timeInterval: "15s'
       httpMethod: POST
       manageAlerts: true
       prometheusType: Prometheus

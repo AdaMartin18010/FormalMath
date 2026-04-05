@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "inner-product"
+  id: "inner-product'
   name:
-    zh: "内积"
-    en: "Inner Product"
-  msc_codes: ["46C05"]
+    zh: '内积"
+    en: 'Inner Product"
+  msc_codes: ['46C05']
   
   # ===== 定义层 =====
   definition:
@@ -54,42 +54,42 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: "欧氏空间 ℝⁿ"
-      formula: "⟨x, y⟩ = Σ xᵢyᵢ"
+    - name: '欧氏空间 ℝⁿ'
+      formula: "⟨x, y⟩ = Σ xᵢyᵢ'
       
-    - name: "酉空间 ℂⁿ"
-      formula: "⟨x, y⟩ = Σ x̄ᵢyᵢ"
+    - name: "酉空间 ℂⁿ'
+      formula: '⟨x, y⟩ = Σ x̄ᵢyᵢ"
       
-    - name: "L²[a,b]"
-      formula: "⟨f, g⟩ = ∫ₐᵇ f(x)g(x) dx"
+    - name: "L²[a,b]'
+      formula: '⟨f, g⟩ = ∫ₐᵇ f(x)g(x) dx"
       
-    - name: "ℓ²序列空间"
-      formula: "⟨x, y⟩ = Σ xₙȳₙ"
+    - name: 'ℓ²序列空间"
+      formula: '⟨x, y⟩ = Σ xₙȳₙ'
       
   # ===== 定理层 =====
   key_theorems:
     - id: "cauchy-schwarz"
-      statement: "|⟨x, y⟩| ≤ ‖x‖ · ‖y‖"
+      statement: '|⟨x, y⟩| ≤ ‖x‖ · ‖y‖'
       
-    - id: "parallelogram-law"
-      statement: "‖x+y‖² + ‖x-y‖² = 2(‖x‖² + ‖y‖²)"
+    - id: "parallelogram-law'
+      statement: "‖x+y‖² + ‖x-y‖² = 2(‖x‖² + ‖y‖²)'
       
-    - id: "polarization"
-      statement: "内积可从范数恢复"
+    - id: 'polarization"
+      statement: "内积可从范数恢复'
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "vector-space"
-        description: "定义在向量空间上"
+      - id: 'vector-space"
+        description: '定义在向量空间上"
         
     leads_to:
-      - id: "hilbert-space"
+      - id: 'hilbert-space'
         description: "完备内积空间"
-      - id: "orthogonality"
-        description: "正交概念"
-      - id: "projection"
-        description: "正交投影"
+      - id: 'orthogonality'
+        description: "正交概念'
+      - id: "projection'
+        description: '正交投影"
         
   # ===== 元数据层 =====
   metadata:
@@ -97,5 +97,5 @@ concept:
     importance: 5
     
   mathlib:
-    path: "Mathlib.Analysis.InnerProductSpace.Basic"
-    name: "InnerProductSpace"
+    path: "Mathlib.Analysis.InnerProductSpace.Basic'
+    name: 'InnerProductSpace"

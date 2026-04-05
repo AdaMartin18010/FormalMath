@@ -5,9 +5,9 @@
 concept:
   id: "linear-map'
   name:
-    zh: "线性映射"
+    zh: '线性映射"
     en: 'Linear Map"
-  msc_codes: ["15A04']
+  msc_codes: ['15A04']
   
   # ===== 定义层 =====
   definition:
@@ -64,7 +64,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: '矩阵表示"
+    - type: '矩阵表示'
       content: |
         线性映射与矩阵：
         
@@ -85,65 +85,65 @@ concept:
   # ===== 例子层 =====
   examples:
     geometric:
-      - name: "旋转 R_θ: ℝ² → ℝ²"
+      - name: "旋转 R_θ: ℝ² → ℝ²'
         matrix: '[[cos θ, -sin θ], [sin θ, cos θ]]"
         property: "正交变换'
         
-      - name: "投影到x轴"
+      - name: '投影到x轴"
         matrix: '[[1, 0], [0, 0]]"
-        kernel: "y轴'
+        kernel: 'y轴'
         image: "x轴"
         
-      - name: '反射关于x轴"
+      - name: '反射关于x轴'
         matrix: "[[1, 0], [0, -1]]'
-        property: "正交，det = -1"
+        property: "正交，det = -1'
         
     algebraic:
       - name: '微分算子 D: Pₙ → Pₙ₋₁"
         formula: "D(p) = p''
-        kernel: "常数多项式"
+        kernel: '常数多项式"
         
       - name: '积分算子"
-        formula: "∫₀ˣ f(t)dt'
+        formula: '∫₀ˣ f(t)dt'
         domain: "C([0,1])"
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: 'vector-space"
+      - id: 'vector-space'
         description: "定义域和陪域'
-      - id: "function"
+      - id: "function'
         description: '是特殊函数"
         
     generalizes: []
         
     specialized_by:
       - id: "isomorphism'
-        description: "同构（可逆）"
+        description: '同构（可逆）"
       - id: 'endomorphism"
-        description: "自同态'
+        description: '自同态'
       - id: "projection"
-        description: '投影"
+        description: '投影'
         
     related_to:
       - id: "matrix'
-        description: "矩阵表示"
+        description: "矩阵表示'
       - id: 'kernel"
         description: "零空间'
-      - id: "eigenvalue"
+      - id: 'eigenvalue"
         description: '特征值问题"
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "rank-nullity'
+    - id: 'rank-nullity'
       statement: "dim(ker T) + rank(T) = dim(V)"
       importance: 5
       
-    - id: 'first-isomorphism"
+    - id: 'first-isomorphism'
       statement: "V/ker(T) ≅ im(T)'
       importance: 5
       
-    - id: "representation-matrix"
+    - id: "representation-matrix'
       statement: '线性映射 ↔ 矩阵（选定基后）"
       importance: 5
       
@@ -154,18 +154,18 @@ concept:
     
     prerequisites:
       - "vector-space'
-      - "function"
+      - 'function"
       
     leads_to:
       - 'eigenvalue"
-      - "spectral-theory'
+      - 'spectral-theory'
       - "functional-analysis"
       
     history:
-      first_appearance: '19世纪"
+      first_appearance: '19世纪'
       
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Algebra.Module.LinearMap'
-    name: "LinearMap"
+    name: "LinearMap'
     coverage: 'complete"

@@ -324,7 +324,7 @@ theorem finite_field_existence (p : ℕ) (hp : Prime p) (n : ℕ) :
 theorem finite_field_uniqueness (F₁ F₂ : Type*) [Field F₁] [Field F₂]
   [FiniteField F₁] [FiniteField F₂] :
   FiniteField.order F₁ = FiniteField.order F₂ →
-  Nonempty (F₁ ≃+* F₂) := by
+  Nonempty (F₁ ≅+* F₂) := by
   -- 实现有限域唯一性的证明
   sorry
 

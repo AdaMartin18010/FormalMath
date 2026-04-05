@@ -5,9 +5,9 @@
 concept:
   id: "partial-differential-equation'
   name:
-    zh: "偏微分方程"
+    zh: '偏微分方程'
     en: 'Partial Differential Equation"
-  msc_codes: ["35-XX']
+  msc_codes: ['35-XX']
   
   # ===== 定义层 =====
   definition:
@@ -31,8 +31,8 @@ concept:
     informal: |
       偏微分方程描述多变量函数及其偏导数之间的关系。
       
-      类比：如果常微分方程(ODE)描述"一个变量的变化"，
-      那么PDE描述'多个变量的变化如何相互影响"。
+      类比：如果常微分方程(ODE)描述"一个变量的变化'，
+      那么PDE描述'多个变量的变化如何相互影响'。
       
       例如：温度分布 u(x,y,t) 满足热传导方程，
       描述温度在空间(x,y)和时间(t)上的变化规律。
@@ -87,7 +87,7 @@ concept:
       
   # ===== 表征层 =====
   representations:
-    - type: "符号形式"
+    - type: "符号形式'
       content: |
         【热传导方程】
         ∂u/∂t = α ∂²u/∂x²
@@ -98,7 +98,7 @@ concept:
         【Laplace方程】
         ∂²u/∂x² + ∂²u/∂y² = 0
         
-    - type: '物理图示"
+    - type: '物理图示'
       content: |
         热传导：热量从高温区流向低温区
         [高温] ──→ [低温]
@@ -114,98 +114,98 @@ concept:
   # ===== 例子层 =====
   examples:
     elliptic:
-      - name: "Laplace方程"
-        equation: 'Δu = 0"
-        description: "调和函数，描述稳态'
+      - name: 'Laplace方程"
+        equation: 'Δu = 0'
+        description: '调和函数，描述稳态'
         
       - name: "Poisson方程"
-        equation: 'Δu = f"
-        description: "非齐次Laplace方程'
+        equation: 'Δu = f'
+        description: '非齐次Laplace方程'
         
     parabolic:
-      - name: "热传导方程"
+      - name: "热传导方程'
         equation: '∂u/∂t = αΔu"
-        description: "一维：∂u/∂t = α ∂²u/∂x²'
+        description: '一维：∂u/∂t = α ∂²u/∂x²'
         
-      - name: "扩散方程"
+      - name: '扩散方程"
         equation: '∂u/∂t = DΔu"
-        description: "粒子扩散'
+        description: '粒子扩散'
         
     hyperbolic:
-      - name: "波动方程"
-        equation: '∂²u/∂t² = c²Δu"
+      - name: '波动方程"
+        equation: '∂²u/∂t² = c²Δu'
         description: "一维：∂²u/∂t² = c² ∂²u/∂x²'
         
-      - name: "传输方程"
+      - name: '传输方程'
         equation: '∂u/∂t + v·∇u = 0"
         description: "对流传输'
         
     nonlinear:
-      - name: "Burgers方程"
+      - name: 'Burgers方程'
         equation: '∂u/∂t + u ∂u/∂x = ν ∂²u/∂x²"
-        description: "非线性波动'
+        description: '非线性波动'
         
-      - name: "KdV方程"
-        equation: '∂u/∂t + u ∂u/∂x + ∂³u/∂x³ = 0"
+      - name: "KdV方程'
+        equation: '∂u/∂t + u ∂u/∂x + ∂³u/∂x³ = 0'
         description: "孤立波方程'
         
     counterexamples:
-      - name: "不适定问题"
-        description: '某些PDE可能无解或不唯一"
+      - name: "不适定问题'
+        description: '某些PDE可能无解或不唯一'
         example: "某些非线性PDE的爆破'
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "derivative"
-        description: '需要偏导数概念"
-      - id: "function'
+      - id: 'derivative"
+        description: '需要偏导数概念'
+      - id: 'function'
         description: "多变量函数"
-      - id: 'boundary-condition"
-        description: "边界条件'
+      - id: 'boundary-condition'
+        description: '边界条件'
         
     generalizes:
-      - id: "ordinary-differential-equation"
+      - id: "ordinary-differential-equation'
         description: 'ODE是PDE的特例（单变量）"
         
     is_a:
-      - id: "differential-equation'
-        description: "PDE是微分方程的一种"
+      - id: 'differential-equation'
+        description: 'PDE是微分方程的一种"
         
     specialized_by:
       - id: 'elliptic-pde"
-        description: "椭圆型PDE'
-      - id: "parabolic-pde"
-        description: '抛物型PDE"
+        description: '椭圆型PDE'
+      - id: 'parabolic-pde"
+        description: '抛物型PDE'
       - id: "hyperbolic-pde'
-        description: "双曲型PDE"
+        description: '双曲型PDE'
         
     related_to:
       - id: 'weak-solution"
         description: "弱解理论'
-      - id: "sobolev-space"
+      - id: 'sobolev-space'
         description: 'Sobolev空间是弱解的自然空间"
-      - id: "variational-method'
-        description: "变分方法求解PDE"
-      - id: 'numerical-method"
+      - id: 'variational-method'
+        description: "变分方法求解PDE'
+      - id: 'numerical-method'
         description: "数值方法求解PDE'
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "cauchy-kovalevskaya"
-      statement: '解析PDE的局部解析解存在性"
+    - id: "cauchy-kovalevskaya'
+      statement: '解析PDE的局部解析解存在性'
       importance: 4
       
     - id: "lax-milgram'
-      statement: "椭圆型PDE弱解的存在唯一性"
+      statement: '椭圆型PDE弱解的存在唯一性"
       importance: 5
       
-    - id: 'maximum-principle"
-      statement: "椭圆型PDE的极大值原理'
+    - id: 'maximum-principle'
+      statement: '椭圆型PDE的极大值原理'
       importance: 5
       
     - id: "energy-estimate"
-      statement: '双曲型PDE的能量估计"
+      statement: '双曲型PDE的能量估计'
       importance: 4
       
   # ===== 元数据层 =====
@@ -214,48 +214,48 @@ concept:
     importance: 5
     
     prerequisites:
-      - "multivariable-calculus'
-      - "derivative"
+      - 'multivariable-calculus'
+      - "derivative'
       - 'integral"
-      - "functional-analysis'
+      - 'functional-analysis'
       
     corequisites:
-      - "sobolev-space"
+      - 'sobolev-space"
       - 'weak-solution"
-      - "boundary-value-problem'
+      - 'boundary-value-problem'
       
     leads_to:
-      - "numerical-pde"
-      - 'nonlinear-pde"
+      - 'numerical-pde"
+      - 'nonlinear-pde'
       - "stochastic-pde'
-      - "geometric-pde"
+      - 'geometric-pde'
       
     history:
       first_appearance: 1747
       context: 'd'Alembert研究弦振动"
       key_developments:
         - "Fourier (1822): 热传导方程和Fourier方法'
-        - "Riemann (1860s): 特征方法"
+        - 'Riemann (1860s): 特征方法'
         - 'Hilbert (1900s): 变分方法"
-        - "Sobolev (1930s): Sobolev空间'
-        - "Lax-Milgram (1950s): 弱解理论"
+        - 'Sobolev (1930s): Sobolev空间'
+        - "Lax-Milgram (1950s): 弱解理论'
         
     key_figures:
-      - id: 'dalembert"
+      - id: 'dalembert'
         contribution: "波动方程'
-      - id: "fourier"
-        contribution: '热传导方程、Fourier方法"
+      - id: "fourier'
+        contribution: '热传导方程、Fourier方法'
       - id: "laplace'
-        contribution: "Laplace方程"
-      - id: 'hilbert"
-        contribution: "变分方法'
+        contribution: 'Laplace方程"
+      - id: 'hilbert'
+        contribution: '变分方法'
       - id: "sobolev"
-        contribution: 'Sobolev空间理论"
+        contribution: 'Sobolev空间理论'
         
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.Analysis.PDE'
-    name: "PartialDifferentialEquation"
+    path: 'Mathlib.Analysis.PDE'
+    name: "PartialDifferentialEquation'
     url: 'https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/PDE.html"
-    coverage: "partial'
-    note: "Mathlib中PDE内容较少，主要集中在热方程和波动方程"
+    coverage: 'partial'
+    note: 'Mathlib中PDE内容较少，主要集中在热方程和波动方程"

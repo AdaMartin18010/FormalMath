@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "cauchy-integral-formula"
+  id: "cauchy-integral-formula'
   name:
     zh: "Cauchy积分公式"
-    en: "Cauchy Integral Formula"
-  msc_codes: ["30C35"]
+    en: 'Cauchy Integral Formula"
+  msc_codes: ["30C35']
   
   # ===== 陈述层 =====
   statement:
@@ -98,23 +98,23 @@ theorem:
           
   # ===== 应用层 =====
   applications:
-    - description: "证明解析函数无穷可微"
-    - description: "Liouville定理（有界整函数是常数）"
+    - description: '证明解析函数无穷可微"
+    - description: "Liouville定理（有界整函数是常数）'
     - description: "代数基本定理"
-    - description: "留数计算"
+    - description: '留数计算"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "analytic-function"
+      - id: "analytic-function'
         role: "适用对象"
-      - id: "contour-integral"
-        role: "定义方式"
+      - id: 'contour-integral"
+        role: "定义方式'
         
     implies:
       - id: "liouville-theorem"
-      - id: "cauchy-inequality"
-      - id: "taylor-series"
+      - id: 'cauchy-inequality"
+      - id: "taylor-series'
         
   # ===== 元数据层 =====
   metadata:

@@ -1,6 +1,8 @@
 ---
-msc_primary: "18-XX"
-msc_secondary: ['17-XX', '11Rxx', '55Nxx']
+title: "ZFC公理体系到抽象代数结构 - 基础理论"
+msc_primary: "18A99"
+msc_secondary: ["17B99", "11R99", "55N99"]
+processed_at: '2026-04-05'
 ---
 msc_primary: "18-XX"
 msc_secondary: ['17-XX', '11Rxx', '55Nxx']

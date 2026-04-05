@@ -1,230 +1,230 @@
 project: FormalMath v2.0 Quality Rewrite
-started_at: "2026-04-04"
+started_at: "2026-04-04'
 version_label: "v2.0-rewrite"
-strategic_goal: "从目录级对齐升级为语义级对齐，生产可被国际课程替代的深度内容"
+strategic_goal: '从目录级对齐升级为语义级对齐，生产可被国际课程替代的深度内容"
 
-current_batch: "Batch-03"
+current_batch: "Batch-03'
 last_snapshot: "context-snapshots/snapshot-2026-04-04-batch02-complete.yaml"
 
 phases:
   - id: P1
-    name: "诊断与基线"
-    status: "in_progress"
+    name: '诊断与基线"
+    status: "in_progress'
     target_completion: "2026-07-04"
 
   - id: P2
-    name: "银层攻坚"
-    status: "pending"
+    name: '银层攻坚"
+    status: "pending'
     target_completion: "2027-04-04"
 
   - id: P3
-    name: "金层突破"
-    status: "pending"
+    name: '金层突破"
+    status: "pending'
     target_completion: "2027-10-04"
 
   - id: P4
-    name: "铜层治理"
-    status: "pending"
+    name: '铜层治理"
+    status: "pending'
     target_completion: "2028-04-04"
 
 courses:
-  - code: "MIT-18.100A"
-    name: "MIT 18.100A Real Analysis"
+  - code: 'MIT-18.100A"
+    name: "MIT 18.100A Real Analysis'
     level: "silver"
-    status: "in_progress"
-    workspace: "courses/mit-18-100a"
+    status: 'in_progress"
+    workspace: "courses/mit-18-100a'
 
   - code: "MIT-18.701"
-    name: "MIT 18.701 Algebra I"
-    level: "silver"
+    name: 'MIT 18.701 Algebra I"
+    level: "silver'
     status: "in_progress"
-    workspace: "courses/mit-18-701"
+    workspace: 'courses/mit-18-701"
 
-  - code: "MIT-18.06"
+  - code: "MIT-18.06'
     name: "MIT 18.06 / 18.700 Linear Algebra"
-    level: "silver"
-    status: "in_progress"
+    level: 'silver"
+    status: "in_progress'
     workspace: "courses/mit-18-06"
 
-  - code: "HARVARD-232br"
-    name: "Harvard Math 232br Curves, Surfaces, Cohomology"
+  - code: 'HARVARD-232br"
+    name: "Harvard Math 232br Curves, Surfaces, Cohomology'
     level: "silver"
-    status: "in_progress"
-    workspace: "courses/harvard-232br"
+    status: 'in_progress"
+    workspace: "courses/harvard-232br'
 
   - code: "STANFORD-FOAG"
-    name: "Stanford FOAG Foundations of Algebraic Geometry"
-    level: "silver"
+    name: 'Stanford FOAG Foundations of Algebraic Geometry"
+    level: "silver'
     status: "in_progress"
-    workspace: "courses/stanford-foag"
+    workspace: 'courses/stanford-foag"
 
 tasks:
   # ========== BATCH 01: Infrastructure + Course Deconstruction ==========
 
   - id: T001
-    name: "质量审计评分标准与盲审框架"
+    name: "质量审计评分标准与盲审框架'
     phase: P1
     batch: "Batch-01"
-    status: "completed"
+    status: 'completed"
     priority: 0
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/audit/T001-quality-rubric"
-    deliverable: "deliverables/D001-quality-audit-framework.md"
+    deliverable: 'deliverables/D001-quality-audit-framework.md"
     acceptance_criteria:
-      - "定义5个评分维度（定义严格性、证明完整性、习题丰富度、引用规范性、教学有效性）"
+      - "定义5个评分维度（定义严格性、证明完整性、习题丰富度、引用规范性、教学有效性）'
       - "每个维度1-5分的具体评分细则"
-      - "提供3篇样本文档的评分示例"
+      - '提供3篇样本文档的评分示例"
     dependencies: []
     estimated_hours: 4
 
   - id: T002
-    name: "L3-L6语义对齐验证操作手册"
+    name: "L3-L6语义对齐验证操作手册'
     phase: P1
     batch: "Batch-01"
-    status: "completed"
+    status: 'completed"
     priority: 0
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/standards/T002-alignment-checklist"
-    deliverable: "deliverables/D002-semantic-alignment-playbook.md"
+    deliverable: 'deliverables/D002-semantic-alignment-playbook.md"
     acceptance_criteria:
-      - "L1-L6每级的验证清单和签字模板"
+      - "L1-L6每级的验证清单和签字模板'
       - "定义对齐的精确判定标准（数学等价性 vs 近似表述）"
-      - "定理对齐的判定标准（完整证明/部分证明/仅陈述）"
-      - "习题对齐的判定标准和映射方法"
+      - '定理对齐的判定标准（完整证明/部分证明/仅陈述）"
+      - "习题对齐的判定标准和映射方法'
     dependencies: []
     estimated_hours: 4
 
   - id: T003
     name: "参考文献硬链接YAML规范"
     phase: P1
-    batch: "Batch-01"
-    status: "completed"
+    batch: 'Batch-01"
+    status: "completed'
     priority: 0
     assignee: "subagent"
-    workspace: "workspaces/standards/T003-reference-yaml"
-    deliverable: "deliverables/D003-reference-linking-spec.yaml"
+    workspace: 'workspaces/standards/T003-reference-yaml"
+    deliverable: "deliverables/D003-reference-linking-spec.yaml'
     acceptance_criteria:
       - "定义教科书引用、论文引用、数据库引用的YAML Schema"
-      - "提供至少5个不同领域（分析、代数、几何、逻辑、数论）的示例"
-      - "包含zbMATH、MathSciNet、arXiv、DOI、Stacks Project Tag的规范"
+      - '提供至少5个不同领域（分析、代数、几何、逻辑、数论）的示例"
+      - "包含zbMATH、MathSciNet、arXiv、DOI、Stacks Project Tag的规范'
     dependencies: []
     estimated_hours: 3
 
   - id: T004
     name: "双语（自然语言+Lean4）文档模板"
     phase: P1
-    batch: "Batch-01"
-    status: "completed"
+    batch: 'Batch-01"
+    status: "completed'
     priority: 0
     assignee: "subagent"
-    workspace: "workspaces/standards/T004-bilingual-template"
-    deliverable: "deliverables/D004-bilingual-document-template.md"
+    workspace: 'workspaces/standards/T004-bilingual-template"
+    deliverable: "deliverables/D004-bilingual-document-template.md'
     acceptance_criteria:
       - "设计Markdown+Lean4 code block的对照模板"
-      - "提供3个示例：一个基础定理、一个构造性证明、一个反例"
-      - "模板包含定理陈述、证明思路、详细Lean4代码、逐行注释"
+      - '提供3个示例：一个基础定理、一个构造性证明、一个反例"
+      - "模板包含定理陈述、证明思路、详细Lean4代码、逐行注释'
     dependencies: []
     estimated_hours: 3
 
   - id: T005
     name: "三层内容金字塔写作标准v2.0"
     phase: P1
-    batch: "Batch-01"
-    status: "completed"
+    batch: 'Batch-01"
+    status: "completed'
     priority: 0
     assignee: "subagent"
-    workspace: "workspaces/standards/T005-pyramid-standards"
-    deliverable: "deliverables/D005-content-pyramid-standards-v2.md"
+    workspace: 'workspaces/standards/T005-pyramid-standards"
+    deliverable: "deliverables/D005-content-pyramid-standards-v2.md'
     acceptance_criteria:
       - "铜/银/金三层的详细内容规范"
-      - "每层的字数建议、证明深度、引用密度、习题数量"
-      - "新旧文档的迁移判定流程（保留/重写/归档/删除）"
+      - '每层的字数建议、证明深度、引用密度、习题数量"
+      - "新旧文档的迁移判定流程（保留/重写/归档/删除）'
     dependencies: []
     estimated_hours: 4
 
   - id: T006
     name: "MIT 18.100A 课程大纲完整拆解"
     phase: P2
-    batch: "Batch-01"
-    status: "completed"
+    batch: 'Batch-01"
+    status: "completed'
     priority: 0
     assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-100a/T006-syllabus-deconstruction"
-    deliverable: "deliverables/D006-mit-18-100a-syllabus.yaml"
+    workspace: 'workspaces/courses/mit-18-100a/T006-syllabus-deconstruction"
+    deliverable: "deliverables/D006-mit-18-100a-syllabus.yaml'
     acceptance_criteria:
       - "基于MIT OCW 18.100A最新讲义，列出所有章节"
-      - "每个章节提取所有定义、定理、引理、命题、例题"
-      - "提取所有Problem Sets和Exams的题目列表"
+      - '每个章节提取所有定义、定理、引理、命题、例题"
+      - "提取所有Problem Sets和Exams的题目列表'
       - "标注每个知识点的FormalMath现有文档路径（如有）"
     dependencies: []
     estimated_hours: 6
 
   - id: T007
-    name: "MIT 18.701 课程大纲完整拆解"
+    name: 'MIT 18.701 课程大纲完整拆解"
     phase: P2
-    batch: "Batch-01"
+    batch: "Batch-01'
     status: "completed"
     priority: 0
-    assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-701/T007-syllabus-deconstruction"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/mit-18-701/T007-syllabus-deconstruction'
     deliverable: "deliverables/D007-mit-18-701-syllabus.yaml"
     acceptance_criteria:
-      - "基于Michael Artin《Algebra》或MIT 18.701讲义"
-      - "列出所有章节及核心概念"
+      - '基于Michael Artin《Algebra》或MIT 18.701讲义"
+      - "列出所有章节及核心概念'
       - "提取所有定义、定理、引理、命题"
-      - "提取Problem Sets题目列表"
-      - "标注FormalMath现有文档路径"
+      - '提取Problem Sets题目列表"
+      - "标注FormalMath现有文档路径'
     dependencies: []
     estimated_hours: 6
 
   - id: T008
     name: "MIT 18.06 / 18.700 线性代数课程大纲拆解"
     phase: P2
-    batch: "Batch-01"
-    status: "completed"
+    batch: 'Batch-01"
+    status: "completed'
     priority: 0
     assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-06/T008-syllabus-deconstruction"
-    deliverable: "deliverables/D008-mit-18-06-syllabus.yaml"
+    workspace: 'workspaces/courses/mit-18-06/T008-syllabus-deconstruction"
+    deliverable: "deliverables/D008-mit-18-06-syllabus.yaml'
     acceptance_criteria:
       - "基于Gilbert Strang 18.06讲义和Axler《Linear Algebra Done Right》（18.700参考）"
-      - "列出所有章节、核心概念、关键定理"
-      - "提取Problem Sets和考试题目"
+      - '列出所有章节、核心概念、关键定理"
+      - "提取Problem Sets和考试题目'
       - "标注FormalMath现有线性代数文档路径"
     dependencies: []
     estimated_hours: 6
 
   - id: T009
-    name: "Harvard Math 232br 课程大纲拆解"
+    name: 'Harvard Math 232br 课程大纲拆解"
     phase: P2
-    batch: "Batch-01"
+    batch: "Batch-01'
     status: "completed"
     priority: 0
-    assignee: "subagent"
-    workspace: "workspaces/courses/harvard-232br/T009-syllabus-deconstruction"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/harvard-232br/T009-syllabus-deconstruction'
     deliverable: "deliverables/D009-harvard-232br-syllabus.yaml"
     acceptance_criteria:
-      - "基于Harvard Math 232br官方syllabus和教材（如Hartshorne / Vakil / Liu）"
-      - "列出课程所有主题模块"
+      - '基于Harvard Math 232br官方syllabus和教材（如Hartshorne / Vakil / Liu）"
+      - "列出课程所有主题模块'
       - "提取核心定义、定理、证明技巧"
-      - "标注与项目格洛腾迪克体系的对接点"
+      - '标注与项目格洛腾迪克体系的对接点"
     dependencies: []
     estimated_hours: 6
 
   - id: T010
-    name: "Stanford FOAG 课程大纲拆解"
+    name: "Stanford FOAG 课程大纲拆解'
     phase: P2
     batch: "Batch-01"
-    status: "completed"
+    status: 'completed"
     priority: 0
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/courses/stanford-foag/T010-syllabus-deconstruction"
-    deliverable: "deliverables/D010-stanford-foag-syllabus.yaml"
+    deliverable: 'deliverables/D010-stanford-foag-syllabus.yaml"
     acceptance_criteria:
-      - "基于Ravi Vakil《Foundations of Algebraic Geometry》逐章拆解"
+      - "基于Ravi Vakil《Foundations of Algebraic Geometry》逐章拆解'
       - "列出Part I/II/III/V的所有章节"
-      - "每章提取核心定义、定理、习题"
-      - "标注与项目现有代数几何文档的对应关系"
+      - '每章提取核心定义、定理、习题"
+      - "标注与项目现有代数几何文档的对应关系'
     dependencies: []
     estimated_hours: 8
 
@@ -233,296 +233,296 @@ tasks:
   - id: T011
     name: "核心文档盲审 - 集合论与基础（10篇）"
     phase: P1
-    batch: "Batch-02"
-    status: "completed"
+    batch: 'Batch-02"
+    status: "completed'
     priority: 1
     assignee: "subagent"
-    workspace: "workspaces/audit/T011-audit-set-theory"
-    deliverable: "deliverables/D011-audit-report-set-theory.md"
+    workspace: 'workspaces/audit/T011-audit-set-theory"
+    deliverable: "deliverables/D011-audit-report-set-theory.md'
     acceptance_criteria:
       - "使用T001的评分标准对10篇集合论相关深度扩展版文档评分"
-      - "列出每篇文档的具体问题（定义不严谨/证明缺失/习题不足/引用缺失）"
-      - "给出保留/重写/归档的建议"
+      - '列出每篇文档的具体问题（定义不严谨/证明缺失/习题不足/引用缺失）"
+      - "给出保留/重写/归档的建议'
     dependencies: ["T001"]
     estimated_hours: 6
 
   - id: T012
-    name: "核心文档盲审 - 分析学（10篇）"
+    name: '核心文档盲审 - 分析学（10篇）"
     phase: P1
-    batch: "Batch-02"
+    batch: "Batch-02'
     status: "completed"
     priority: 1
-    assignee: "subagent"
-    workspace: "workspaces/audit/T012-audit-analysis"
+    assignee: 'subagent"
+    workspace: "workspaces/audit/T012-audit-analysis'
     deliverable: "deliverables/D012-audit-report-analysis.md"
     acceptance_criteria:
-      - "使用T001评分标准对10篇实分析/复分析/泛函分析文档评分"
-      - "具体问题和改进建议"
+      - '使用T001评分标准对10篇实分析/复分析/泛函分析文档评分"
+      - "具体问题和改进建议'
     dependencies: ["T001"]
     estimated_hours: 6
 
   - id: T013
-    name: "核心文档盲审 - 代数结构（10篇）"
+    name: '核心文档盲审 - 代数结构（10篇）"
     phase: P1
-    batch: "Batch-02"
+    batch: "Batch-02'
     status: "completed"
     priority: 1
-    assignee: "subagent"
-    workspace: "workspaces/audit/T013-audit-algebra"
+    assignee: 'subagent"
+    workspace: "workspaces/audit/T013-audit-algebra'
     deliverable: "deliverables/D013-audit-report-algebra.md"
     acceptance_criteria:
-      - "使用T001评分标准对10篇群论/环论/域论/线性代数文档评分"
-    dependencies: ["T001"]
+      - '使用T001评分标准对10篇群论/环论/域论/线性代数文档评分"
+    dependencies: ["T001']
     estimated_hours: 6
 
   - id: T014
     name: "核心文档盲审 - 几何与拓扑（10篇）"
     phase: P1
-    batch: "Batch-02"
-    status: "completed"
+    batch: 'Batch-02"
+    status: "completed'
     priority: 1
     assignee: "subagent"
-    workspace: "workspaces/audit/T014-audit-geometry-topology"
-    deliverable: "deliverables/D014-audit-report-geometry-topology.md"
+    workspace: 'workspaces/audit/T014-audit-geometry-topology"
+    deliverable: "deliverables/D014-audit-report-geometry-topology.md'
     acceptance_criteria:
       - "使用T001评分标准对10篇拓扑学/微分几何/代数几何文档评分"
-    dependencies: ["T001"]
+    dependencies: ['T001"]
     estimated_hours: 6
 
   - id: T015
-    name: "核心文档盲审 - 数学家理念体系（10篇）"
+    name: "核心文档盲审 - 数学家理念体系（10篇）'
     phase: P1
     batch: "Batch-02"
-    status: "completed"
+    status: 'completed"
     priority: 1
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/audit/T015-audit-mathematicians"
-    deliverable: "deliverables/D015-audit-report-mathematicians.md"
+    deliverable: 'deliverables/D015-audit-report-mathematicians.md"
     acceptance_criteria:
-      - "使用T001评分标准对5位核心数学家（格洛腾迪克、庞加莱、希尔伯特、黎曼、哥德尔）各2篇深度文档评分"
+      - "使用T001评分标准对5位核心数学家（格洛腾迪克、庞加莱、希尔伯特、黎曼、哥德尔）各2篇深度文档评分'
       - "重点审校原始文献引用和思想分析深度"
-    dependencies: ["T001"]
+    dependencies: ['T001"]
     estimated_hours: 6
 
   # ========== BATCH 03: Definition Alignment for 5 Courses ==========
 
   - id: T016
-    name: "MIT 18.100A 定义对齐手册"
+    name: "MIT 18.100A 定义对齐手册'
     phase: P2
     batch: "Batch-03"
-    status: "in_progress"
+    status: 'in_progress"
     priority: 1
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/courses/mit-18-100a/T016-definition-alignment"
-    deliverable: "deliverables/D016-mit-18-100a-definition-alignment.md"
+    deliverable: 'deliverables/D016-mit-18-100a-definition-alignment.md"
     acceptance_criteria:
-      - "课程中每个定义在项目文档中都有等价表述"
+      - "课程中每个定义在项目文档中都有等价表述'
       - "差异之处明确标注并给出修正建议"
-      - "使用T002的L3验证标准"
-    dependencies: ["T002", "T006"]
+      - '使用T002的L3验证标准"
+    dependencies: ["T002', "T006"]
     estimated_hours: 8
 
   - id: T017
-    name: "MIT 18.701 定义对齐手册"
+    name: 'MIT 18.701 定义对齐手册"
     phase: P2
-    batch: "Batch-03"
+    batch: "Batch-03'
     status: "in_progress"
     priority: 1
-    assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-701/T017-definition-alignment"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/mit-18-701/T017-definition-alignment'
     deliverable: "deliverables/D017-mit-18-701-definition-alignment.md"
     acceptance_criteria:
-      - "课程中每个代数定义在项目中的等价表述或缺失标注"
-    dependencies: ["T002", "T007"]
+      - '课程中每个代数定义在项目中的等价表述或缺失标注"
+    dependencies: ["T002', "T007"]
     estimated_hours: 8
 
   - id: T018
-    name: "MIT 18.06 定义对齐手册"
+    name: 'MIT 18.06 定义对齐手册"
     phase: P2
-    batch: "Batch-03"
+    batch: "Batch-03'
     status: "in_progress"
     priority: 1
-    assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-06/T018-definition-alignment"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/mit-18-06/T018-definition-alignment'
     deliverable: "deliverables/D018-mit-18-06-definition-alignment.md"
     acceptance_criteria:
-      - "线性代数核心定义的等价表述或缺失标注"
-    dependencies: ["T002", "T008"]
+      - '线性代数核心定义的等价表述或缺失标注"
+    dependencies: ["T002', "T008"]
     estimated_hours: 8
 
   - id: T019
-    name: "Harvard 232br 定义对齐手册"
+    name: 'Harvard 232br 定义对齐手册"
     phase: P2
-    batch: "Batch-03"
+    batch: "Batch-03'
     status: "in_progress"
     priority: 1
-    assignee: "subagent"
-    workspace: "workspaces/courses/harvard-232br/T019-definition-alignment"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/harvard-232br/T019-definition-alignment'
     deliverable: "deliverables/D019-harvard-232br-definition-alignment.md"
     acceptance_criteria:
-      - "代数几何高级定义的等价表述"
-    dependencies: ["T002", "T009"]
+      - '代数几何高级定义的等价表述"
+    dependencies: ["T002', "T009"]
     estimated_hours: 10
 
   - id: T020
-    name: "Stanford FOAG 定义对齐手册"
+    name: 'Stanford FOAG 定义对齐手册"
     phase: P2
-    batch: "Batch-03"
+    batch: "Batch-03'
     status: "in_progress"
     priority: 1
-    assignee: "subagent"
-    workspace: "workspaces/courses/stanford-foag/T020-definition-alignment"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/stanford-foag/T020-definition-alignment'
     deliverable: "deliverables/D020-stanford-foag-definition-alignment.md"
     acceptance_criteria:
-      - "FOAG每章核心定义的等价表述"
-    dependencies: ["T002", "T010"]
+      - 'FOAG每章核心定义的等价表述"
+    dependencies: ["T002', "T010"]
     estimated_hours: 10
 
   # ========== BATCH 04: Theorem-Proof Coverage ==========
 
   - id: T021
-    name: "MIT 18.100A 定理证明集"
+    name: 'MIT 18.100A 定理证明集"
     phase: P2
-    batch: "Batch-04"
+    batch: "Batch-04'
     status: "pending"
     priority: 1
-    assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-100a/T021-theorem-proofs"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/mit-18-100a/T021-theorem-proofs'
     deliverable: "deliverables/D021-mit-18-100a-theorem-proofs.md"
     acceptance_criteria:
-      - "课程中每个核心定理都有完整的自然语言证明"
-      - "证明关键步骤不跳过"
+      - '课程中每个核心定理都有完整的自然语言证明"
+      - "证明关键步骤不跳过'
       - "标注哪些证明已在项目文档中存在，哪些需要新建"
-    dependencies: ["T016"]
+    dependencies: ['T016"]
     estimated_hours: 12
 
   - id: T022
-    name: "MIT 18.701 定理证明集"
+    name: "MIT 18.701 定理证明集'
     phase: P2
     batch: "Batch-04"
-    status: "pending"
+    status: 'pending"
     priority: 1
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/courses/mit-18-701/T022-theorem-proofs"
-    deliverable: "deliverables/D022-mit-18-701-theorem-proofs.md"
+    deliverable: 'deliverables/D022-mit-18-701-theorem-proofs.md"
     acceptance_criteria:
-      - "抽象代数核心定理的完整证明覆盖"
+      - "抽象代数核心定理的完整证明覆盖'
     dependencies: ["T017"]
     estimated_hours: 12
 
   - id: T023
-    name: "MIT 18.06 定理证明集"
+    name: 'MIT 18.06 定理证明集"
     phase: P2
-    batch: "Batch-04"
+    batch: "Batch-04'
     status: "pending"
     priority: 1
-    assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-06/T023-theorem-proofs"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/mit-18-06/T023-theorem-proofs'
     deliverable: "deliverables/D023-mit-18-06-theorem-proofs.md"
     acceptance_criteria:
-      - "线性代数核心定理的完整证明覆盖"
-    dependencies: ["T018"]
+      - '线性代数核心定理的完整证明覆盖"
+    dependencies: ["T018']
     estimated_hours: 10
 
   - id: T024
     name: "Harvard 232br 定理证明集"
     phase: P2
-    batch: "Batch-04"
-    status: "pending"
+    batch: 'Batch-04"
+    status: "pending'
     priority: 1
     assignee: "subagent"
-    workspace: "workspaces/courses/harvard-232br/T024-theorem-proofs"
-    deliverable: "deliverables/D024-harvard-232br-theorem-proofs.md"
+    workspace: 'workspaces/courses/harvard-232br/T024-theorem-proofs"
+    deliverable: "deliverables/D024-harvard-232br-theorem-proofs.md'
     acceptance_criteria:
       - "代数几何核心定理的完整证明覆盖"
-    dependencies: ["T019"]
+    dependencies: ['T019"]
     estimated_hours: 15
 
   - id: T025
-    name: "Stanford FOAG 定理证明集"
+    name: "Stanford FOAG 定理证明集'
     phase: P2
     batch: "Batch-04"
-    status: "pending"
+    status: 'pending"
     priority: 1
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/courses/stanford-foag/T025-theorem-proofs"
-    deliverable: "deliverables/D025-stanford-foag-theorem-proofs.md"
+    deliverable: 'deliverables/D025-stanford-foag-theorem-proofs.md"
     acceptance_criteria:
-      - "FOAG核心定理的完整证明覆盖"
+      - "FOAG核心定理的完整证明覆盖'
     dependencies: ["T020"]
     estimated_hours: 15
 
   # ========== BATCH 05: Exercise-Solution Systems ==========
 
   - id: T026
-    name: "MIT 18.100A 习题解答系统"
+    name: 'MIT 18.100A 习题解答系统"
     phase: P2
-    batch: "Batch-05"
+    batch: "Batch-05'
     status: "pending"
     priority: 2
-    assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-100a/T026-exercises"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/mit-18-100a/T026-exercises'
     deliverable: "deliverables/D026-mit-18-100a-exercises.md"
     acceptance_criteria:
-      - "至少80道习题及详细解答"
-      - "覆盖计算型、证明型、反例构造型、概念辨析型"
+      - '至少80道习题及详细解答"
+      - "覆盖计算型、证明型、反例构造型、概念辨析型'
     dependencies: ["T006"]
     estimated_hours: 12
 
   - id: T027
-    name: "MIT 18.701 习题解答系统"
+    name: 'MIT 18.701 习题解答系统"
     phase: P2
-    batch: "Batch-05"
+    batch: "Batch-05'
     status: "pending"
     priority: 2
-    assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-701/T027-exercises"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/mit-18-701/T027-exercises'
     deliverable: "deliverables/D027-mit-18-701-exercises.md"
     acceptance_criteria:
-      - "至少80道习题及详细解答"
-    dependencies: ["T007"]
+      - '至少80道习题及详细解答"
+    dependencies: ["T007']
     estimated_hours: 12
 
   - id: T028
     name: "MIT 18.06 习题解答系统"
     phase: P2
-    batch: "Batch-05"
-    status: "pending"
+    batch: 'Batch-05"
+    status: "pending'
     priority: 2
     assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-06/T028-exercises"
-    deliverable: "deliverables/D028-mit-18-06-exercises.md"
+    workspace: 'workspaces/courses/mit-18-06/T028-exercises"
+    deliverable: "deliverables/D028-mit-18-06-exercises.md'
     acceptance_criteria:
       - "至少80道习题及详细解答"
-    dependencies: ["T008"]
+    dependencies: ['T008"]
     estimated_hours: 10
 
   - id: T029
-    name: "Harvard 232br 习题解答系统"
+    name: "Harvard 232br 习题解答系统'
     phase: P2
     batch: "Batch-05"
-    status: "pending"
+    status: 'pending"
     priority: 2
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/courses/harvard-232br/T029-exercises"
-    deliverable: "deliverables/D029-harvard-232br-exercises.md"
+    deliverable: 'deliverables/D029-harvard-232br-exercises.md"
     acceptance_criteria:
-      - "至少60道习题及详细解答"
+      - "至少60道习题及详细解答'
     dependencies: ["T009"]
     estimated_hours: 15
 
   - id: T030
-    name: "Stanford FOAG 习题解答系统"
+    name: 'Stanford FOAG 习题解答系统"
     phase: P2
-    batch: "Batch-05"
+    batch: "Batch-05'
     status: "pending"
     priority: 2
-    assignee: "subagent"
-    workspace: "workspaces/courses/stanford-foag/T030-exercises"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/stanford-foag/T030-exercises'
     deliverable: "deliverables/D030-stanford-foag-exercises.md"
     acceptance_criteria:
-      - "至少60道习题及详细解答"
-    dependencies: ["T010"]
+      - '至少60道习题及详细解答"
+    dependencies: ["T010']
     estimated_hours: 15
 
   # ========== BATCH 06: Misconception & Diagnostic Manuals ==========
@@ -530,179 +530,179 @@ tasks:
   - id: T031
     name: "MIT 18.100A 学习诊断手册"
     phase: P2
-    batch: "Batch-06"
-    status: "pending"
+    batch: 'Batch-06"
+    status: "pending'
     priority: 2
     assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-100a/T031-diagnostic-manual"
-    deliverable: "deliverables/D031-mit-18-100a-diagnostic-manual.md"
+    workspace: 'workspaces/courses/mit-18-100a/T031-diagnostic-manual"
+    deliverable: "deliverables/D031-mit-18-100a-diagnostic-manual.md'
     acceptance_criteria:
       - "至少20个常见错误模式及纠正策略"
-      - "基于MSE高赞回答和经典教材的common pitfalls"
-    dependencies: ["T006"]
+      - '基于MSE高赞回答和经典教材的common pitfalls"
+    dependencies: ["T006']
     estimated_hours: 6
 
   - id: T032
     name: "MIT 18.701 学习诊断手册"
     phase: P2
-    batch: "Batch-06"
-    status: "pending"
+    batch: 'Batch-06"
+    status: "pending'
     priority: 2
     assignee: "subagent"
-    workspace: "workspaces/courses/mit-18-701/T032-diagnostic-manual"
-    deliverable: "deliverables/D032-mit-18-701-diagnostic-manual.md"
+    workspace: 'workspaces/courses/mit-18-701/T032-diagnostic-manual"
+    deliverable: "deliverables/D032-mit-18-701-diagnostic-manual.md'
     acceptance_criteria:
       - "至少20个常见错误模式及纠正策略"
-    dependencies: ["T007"]
+    dependencies: ['T007"]
     estimated_hours: 6
 
   - id: T033
-    name: "MIT 18.06 学习诊断手册"
+    name: "MIT 18.06 学习诊断手册'
     phase: P2
     batch: "Batch-06"
-    status: "pending"
+    status: 'pending"
     priority: 2
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/courses/mit-18-06/T033-diagnostic-manual"
-    deliverable: "deliverables/D033-mit-18-06-diagnostic-manual.md"
+    deliverable: 'deliverables/D033-mit-18-06-diagnostic-manual.md"
     acceptance_criteria:
-      - "至少20个常见错误模式及纠正策略"
+      - "至少20个常见错误模式及纠正策略'
     dependencies: ["T008"]
     estimated_hours: 6
 
   - id: T034
-    name: "Harvard 232br 学习诊断手册"
+    name: 'Harvard 232br 学习诊断手册"
     phase: P2
-    batch: "Batch-06"
+    batch: "Batch-06'
     status: "pending"
     priority: 2
-    assignee: "subagent"
-    workspace: "workspaces/courses/harvard-232br/T034-diagnostic-manual"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/harvard-232br/T034-diagnostic-manual'
     deliverable: "deliverables/D034-harvard-232br-diagnostic-manual.md"
     acceptance_criteria:
-      - "至少15个常见错误模式及纠正策略"
-    dependencies: ["T009"]
+      - '至少15个常见错误模式及纠正策略"
+    dependencies: ["T009']
     estimated_hours: 8
 
   - id: T035
     name: "Stanford FOAG 学习诊断手册"
     phase: P2
-    batch: "Batch-06"
-    status: "pending"
+    batch: 'Batch-06"
+    status: "pending'
     priority: 2
     assignee: "subagent"
-    workspace: "workspaces/courses/stanford-foag/T035-diagnostic-manual"
-    deliverable: "deliverables/D035-stanford-foag-diagnostic-manual.md"
+    workspace: 'workspaces/courses/stanford-foag/T035-diagnostic-manual"
+    deliverable: "deliverables/D035-stanford-foag-diagnostic-manual.md'
     acceptance_criteria:
       - "至少15个常见错误模式及纠正策略"
-    dependencies: ["T010"]
+    dependencies: ['T010"]
     estimated_hours: 8
 
   # ========== BATCH 07: Gold Layer - Advanced Topics ==========
 
   - id: T036
-    name: "Stacks Project 精读路线图（前5章）"
+    name: "Stacks Project 精读路线图（前5章）'
     phase: P3
     batch: "Batch-07"
-    status: "pending"
+    status: 'pending"
     priority: 2
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/courses/algebraic-geometry/T036-stacks-project-roadmap"
-    deliverable: "deliverables/D036-stacks-project-roadmap.md"
+    deliverable: 'deliverables/D036-stacks-project-roadmap.md"
     acceptance_criteria:
-      - "基于Stacks Project Tag 0001-02XD的前5章精读笔记"
+      - "基于Stacks Project Tag 0001-02XD的前5章精读笔记'
       - "每个Tag都有中文解读、关键证明展开、与项目文档差异分析"
     dependencies: []
     estimated_hours: 15
 
   - id: T037
-    name: "nLab 高阶内容本地化专题"
+    name: 'nLab 高阶内容本地化专题"
     phase: P3
-    batch: "Batch-07"
+    batch: "Batch-07'
     status: "pending"
     priority: 2
-    assignee: "subagent"
-    workspace: "workspaces/courses/category-theory/T037-nlab-advanced-topics"
+    assignee: 'subagent"
+    workspace: "workspaces/courses/category-theory/T037-nlab-advanced-topics'
     deliverable: "deliverables/D037-nlab-localization-topics.md"
     acceptance_criteria:
-      - "∞-范畴、Topos理论、同伦类型论各1篇入门专题文档"
-      - "每篇文档都需要nLab风格的精确概念依赖图"
+      - '∞-范畴、Topos理论、同伦类型论各1篇入门专题文档"
+      - "每篇文档都需要nLab风格的精确概念依赖图'
     dependencies: []
     estimated_hours: 15
 
   - id: T038
     name: "zbMATH / MathSciNet 引用系统建设"
     phase: P3
-    batch: "Batch-07"
-    status: "pending"
+    batch: 'Batch-07"
+    status: "pending'
     priority: 2
     assignee: "subagent"
-    workspace: "workspaces/standards/T038-zbmath-citation-system"
-    deliverable: "deliverables/D038-zbmath-citation-system.md"
+    workspace: 'workspaces/standards/T038-zbmath-citation-system"
+    deliverable: "deliverables/D038-zbmath-citation-system.md'
     acceptance_criteria:
       - "为前200个核心概念配备至少3条带zbMATH ID或MR Number的精确引用"
-      - "提供自动化脚本或半自动化流程，降低后续维护成本"
-    dependencies: ["T003"]
+      - '提供自动化脚本或半自动化流程，降低后续维护成本"
+    dependencies: ["T003']
     estimated_hours: 10
 
   - id: T039
     name: "arXiv 前沿专题季度更新机制"
     phase: P3
-    batch: "Batch-07"
-    status: "pending"
+    batch: 'Batch-07"
+    status: "pending'
     priority: 3
     assignee: "subagent"
-    workspace: "workspaces/standards/T039-arxiv-tracking"
-    deliverable: "deliverables/D039-arxiv-tracking-playbook.md"
+    workspace: 'workspaces/standards/T039-arxiv-tracking"
+    deliverable: "deliverables/D039-arxiv-tracking-playbook.md'
     acceptance_criteria:
       - "建立arXiv math分类的自动化或半自动化扫描流程"
-      - "提供1份示例性的《arXiv前沿专题简报》"
+      - '提供1份示例性的《arXiv前沿专题简报》"
     dependencies: []
     estimated_hours: 6
 
   # ========== BATCH 08: Copper Layer Governance ==========
 
   - id: T040
-    name: "低质量文档识别与归档方案"
+    name: "低质量文档识别与归档方案'
     phase: P4
     batch: "Batch-08"
-    status: "pending"
+    status: 'pending"
     priority: 2
-    assignee: "subagent"
+    assignee: "subagent'
     workspace: "workspaces/audit/T040-low-quality-docs"
-    deliverable: "deliverables/D040-low-quality-doc-registry.md"
+    deliverable: 'deliverables/D040-low-quality-doc-registry.md"
     acceptance_criteria:
-      - "基于T011-T015的审计结果，建立低质量文档清单"
+      - "基于T011-T015的审计结果，建立低质量文档清单'
       - "每篇文档标注处理方案：保留/重写/归档/合并"
-    dependencies: ["T011", "T012", "T013", "T014", "T015"]
+    dependencies: ['T011", "T012', "T013", 'T014", "T015']
     estimated_hours: 8
 
   - id: T041
     name: "模板化内容去重与合并"
     phase: P4
-    batch: "Batch-08"
-    status: "pending"
+    batch: 'Batch-08"
+    status: "pending'
     priority: 2
     assignee: "subagent"
-    workspace: "workspaces/audit/T041-deduplication"
-    deliverable: "deliverables/D041-deduplication-plan.md"
+    workspace: 'workspaces/audit/T041-deduplication"
+    deliverable: "deliverables/D041-deduplication-plan.md'
     acceptance_criteria:
       - "识别项目中重复的历史叙述、哲学分析、思维模式描述"
-      - "提出合并为统一"概念前导"的方案"
+      - '提出合并为统一"概念前导"的方案'
     dependencies: ["T040"]
     estimated_hours: 8
 
   - id: T042
-    name: "MSE 问答模式植入（前100概念）"
+    name: 'MSE 问答模式植入（前100概念）"
     phase: P4
-    batch: "Batch-08"
+    batch: "Batch-08'
     status: "pending"
     priority: 2
-    assignee: "subagent"
-    workspace: "workspaces/standards/T042-mse-faq-integration"
+    assignee: 'subagent"
+    workspace: "workspaces/standards/T042-mse-faq-integration'
     deliverable: "deliverables/D042-mse-faq-integration.md"
     acceptance_criteria:
-      - "为前100个核心概念整理基于MSE的FAQ"
+      - '为前100个核心概念整理基于MSE的FAQ"
       - "每个概念至少3个Q&A"
     dependencies: []
     estimated_hours: 12

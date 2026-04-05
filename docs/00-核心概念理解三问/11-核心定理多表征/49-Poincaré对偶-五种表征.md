@@ -43,7 +43,7 @@ $$b_k(M) = b_{n-k}(M)$$
 theorem poincare_duality {M : Type*} [TopologicalManifold M]
     [Compact M] [Orientable M] (n : ℕ) (hn : dim M = n)
     (R : Type*) [CommRing R] (k : ℕ) :
-    H^k(M; R) ≃ H_{n-k}(M; R) := by
+    H^k(M; R) ≅ H_{n-k}(M; R) := by
   sorry  -- 需要详细的代数拓扑形式化
 
 ```

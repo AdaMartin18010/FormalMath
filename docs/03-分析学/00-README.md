@@ -1,8 +1,9 @@
 ---
+title: "分析学"
 msc_primary: "00A99"
 msc_secondary: ['26-XX', '47-XX', '00-XX']
+processed_at: '2026-04-05'
 ---
-
 # 分析学
 
 **最后更新**: 2025年12月31日

@@ -1,0 +1,102 @@
+% 流形局部坐标卡 (Manifold Local Coordinate Chart)
+% 描述: 展示流形M上的局部坐标映射 φ: U → ℝⁿ
+% 数学概念: 微分流形、局部坐标、图册
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,decorations.pathmorphing}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.2,
+    manifold/.style={
+        draw=blue!60!black,
+        fill=blue!5,
+        line width=1pt,
+        decorate,
+        decoration={random steps, segment length=3pt, amplitude=1pt}
+    },
+    openset/.style={
+        draw=red!70!black,
+        fill=red!10,
+        line width=0.8pt,
+        rounded corners=5pt
+    },
+    vector/.style={
+        ->,
+        line width=1.2pt,
+        color=orange!80!black
+    },
+    label/.style={
+        font=\small\bfseries
+    }
+]
+
+% 绘制流形M (不规则形状表示抽象流形)
+\draw[manifold] 
+    (0,0) .. controls (1,2) and (2,3) .. (4,2.5)
+          .. controls (5.5,2) and (5,0.5) .. (4,0)
+          .. controls (3,-0.5) and (1,-1) .. (0,0);
+
+% 流形标签
+\node[label, color=blue!60!black] at (4.5, 1.5) {$M$};
+\node[label, color=blue!60!black] at (2.5, -0.5) {\textit{流形 (Manifold)}};
+
+% 绘制开集U
+\draw[openset] (1.2, 0.8) ellipse (1.3 and 0.9);
+\node[label, color=red!70!black] at (0.3, 1.6) {$U$};
+\node[font=\tiny] at (1.2, 0.8) {开集};
+
+% 绘制点p
+\fill[black] (1.5, 1) circle (2pt);
+\node[label, above right] at (1.5, 1) {$p$};
+
+% 绘制坐标卡映射箭头
+\draw[vector] (2.8, 1.2) .. controls (3.8, 2.2) and (4.5, 2) .. (5.2, 1.3);
+\node[label, color=orange!80!black] at (4.2, 2.3) {$\varphi$};
+
+% 绘制像空间 ℝⁿ
+\begin{scope}[xshift=6cm, yshift=0.2cm]
+    % 坐标网格背景
+    \fill[gray!10, rounded corners=3pt] (-0.3, -0.3) rectangle (3.3, 2.3);
+    \draw[gray!30, step=0.3] (0, 0) grid (3, 2);
+    
+    % 开集V = φ(U)
+    \draw[openset, fill=green!15, draw=green!50!black] 
+        (0.8, 0.5) ellipse (1.2 and 0.7);
+    \node[label, color=green!50!black] at (0.2, 1.3) {$V = \varphi(U)$};
+    
+    % 点φ(p)
+    \fill[black] (1.2, 0.7) circle (2pt);
+    \node[label, above right] at (1.2, 0.7) {$(x^1, \ldots, x^n)$};
+    \node[font=\tiny] at (1.2, 0.4) {$\varphi(p)$};
+    
+    % 坐标轴
+    \draw[->, line width=0.8pt] (0, 0) -- (3, 0) node[right] {$x^1$};
+    \draw[->, line width=0.8pt] (0, 0) -- (0, 2) node[above] {$x^2$};
+    
+    % ℝⁿ标签
+    \node[label] at (2.7, 2.3) {$\mathbb{R}^n$};
+\end{scope}
+
+% 说明文字
+\node[anchor=north, font=\footnotesize, text width=10cm, align=center] 
+    at (5, -1.5) {
+    局部坐标卡: $\varphi: U \subset M \to \mathbb{R}^n$ 是同胚映射\\
+    将流形上点 $p$ 的邻域映射到欧氏空间中的坐标 $(x^1, \ldots, x^n)$
+};
+
+% 图例
+\node[anchor=south west, font=\scriptsize, draw=gray!50, fill=white, rounded corners, inner sep=5pt] 
+    at (-0.5, -2.5) {
+    \begin{tabular}{ll}
+        \textcolor{blue!60!black}{$\blacksquare$} & 流形 $M$ \\
+        \textcolor{red!70!black}{$\blacksquare$} & 开集 $U$ \\
+        \textcolor{green!50!black}{$\blacksquare$} & 像集 $\varphi(U)$ \\
+        \textcolor{orange!80!black}{$\rightarrow$} & 坐标映射 $\varphi$
+    \end{tabular}
+};
+
+\end{tikzpicture}
+\end{document}

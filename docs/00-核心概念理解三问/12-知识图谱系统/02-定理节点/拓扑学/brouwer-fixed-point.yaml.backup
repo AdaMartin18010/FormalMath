@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "brouwer-fixed-point-theorem"
+  id: "brouwer-fixed-point-theorem'
   name:
     zh: "Brouwer不动点定理"
-    en: "Brouwer Fixed-Point Theorem"
-  msc_codes: ["54H25", "55M20"]
+    en: 'Brouwer Fixed-Point Theorem"
+  msc_codes: ["54H25', "55M20"]
   
   # ===== 陈述层 =====
   statement:
@@ -33,33 +33,33 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: "代数拓扑方法（同调论或基本群）"
+    main_strategy: '代数拓扑方法（同调论或基本群）"
     
     key_ideas:
-      - "反证法：假设无不动点"
+      - "反证法：假设无不动点'
       - "构造收缩映射 r: Dⁿ → Sⁿ⁻¹"
-      - "导出矛盾（同调群或基本群）"
+      - '导出矛盾（同调群或基本群）"
       
     steps:
       - step: 1
-        content: "假设 f 无不动点"
+        content: "假设 f 无不动点'
         detail: "∀x: f(x) ≠ x"
         
       - step: 2
-        content: "构造收缩映射 r: Dⁿ → Sⁿ⁻¹"
-        detail: "r(x) = 从f(x)到x的射线与Sⁿ⁻¹的交点"
+        content: '构造收缩映射 r: Dⁿ → Sⁿ⁻¹"
+        detail: "r(x) = 从f(x)到x的射线与Sⁿ⁻¹的交点'
         
       - step: 3
         content: "r 是连续的"
-        detail: "因为f(x) ≠ x，射线方向连续"
+        detail: '因为f(x) ≠ x，射线方向连续"
         
       - step: 4
-        content: "r|_{Sⁿ⁻¹} = id"
+        content: "r|_{Sⁿ⁻¹} = id'
         detail: "边界上的点映到自身"
         
       - step: 5
-        content: "矛盾：Dⁿ到Sⁿ⁻¹没有满足r|_{Sⁿ⁻¹}=id的收缩"
-        detail: "使用同调论或基本群论证"
+        content: '矛盾：Dⁿ到Sⁿ⁻¹没有满足r|_{Sⁿ⁻¹}=id的收缩"
+        detail: "使用同调论或基本群论证'
         
     proof_tree: |
       Brouwer不动点定理
@@ -145,47 +145,47 @@ theorem:
   # ===== 应用层 =====
   applications:
     - domain: "博弈论"
-      description: "Nash均衡存在性"
-      detail: "最优反应映射的不动点"
+      description: 'Nash均衡存在性"
+      detail: "最优反应映射的不动点'
       
     - domain: "经济学"
-      description: "一般均衡存在性"
-      detail: "Kakutani不动点定理（推广）"
+      description: '一般均衡存在性"
+      detail: "Kakutani不动点定理（推广）'
       
     - domain: "微分方程"
-      description: "解的存在性"
-      detail: "Peano存在定理的一种证明"
+      description: '解的存在性"
+      detail: "Peano存在定理的一种证明'
       
     - domain: "数值分析"
-      description: "迭代法收敛性"
+      description: '迭代法收敛性"
       
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "continuity"
+      - id: "continuity'
         role: "映射条件"
-      - id: "compactness"
-        role: "空间条件"
+      - id: 'compactness"
+        role: "空间条件'
       - id: "convexity"
-        role: "空间条件"
+        role: '空间条件"
         
     uses_theorems:
-      - id: "non-retraction-theorem"
+      - id: "non-retraction-theorem'
         role: "等价形式"
         
     implies:
-      - id: "intermediate-value-theorem-1d"
-        description: "一维情况"
+      - id: 'intermediate-value-theorem-1d"
+        description: "一维情况'
       - id: "hairy-ball-theorem"
-        description: "相关结果"
+        description: '相关结果"
         
     generalized_by:
-      - id: "schauder-fixed-point"
+      - id: "schauder-fixed-point'
         description: "无穷维版本"
-      - id: "kakutani-fixed-point"
-        description: "多值映射版本"
+      - id: 'kakutani-fixed-point"
+        description: "多值映射版本'
       - id: "lefschetz-fixed-point"
-        description: "拓扑版本"
+        description: '拓扑版本"
         
   # ===== 元数据层 =====
   metadata:
@@ -193,13 +193,13 @@ theorem:
     importance: 5
     
     prerequisites:
-      concepts: ["continuity", "compactness", "homology"]
+      concepts: ["continuity', "compactness", 'homology"]
       
     year_proved: 1911
-    provers: ["brouwer"]
+    provers: ["brouwer']
     
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.Topology.MetricSpace.Baire"
-    main_theorem: "Not fully formalized yet"
+    main_theorem: 'Not fully formalized yet"
     coverage: "partial"

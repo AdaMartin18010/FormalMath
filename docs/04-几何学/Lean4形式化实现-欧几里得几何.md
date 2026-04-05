@@ -1,8 +1,9 @@
 ---
+title: "欧几里得几何 - Lean4形式化实现"
 msc_primary: "51Mxx"
 msc_secondary: ['90Cxx', '51Nxx', '68Vxx']
+processed_at: '2026-04-05'
 ---
-
 # 欧几里得几何 - Lean4形式化实现 / Euclidean Geometry - Lean4 Formalization
 
 ## 概述 / Overview

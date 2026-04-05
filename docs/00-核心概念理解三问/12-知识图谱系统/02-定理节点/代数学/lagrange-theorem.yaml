@@ -5,9 +5,9 @@
 theorem:
   id: "lagrange-theorem'
   name:
-    zh: "Lagrange定理"
+    zh: 'Lagrange定理"
     en: 'Lagrange's Theorem"
-  msc_codes: ["20A05']
+  msc_codes: ['20A05']
   
   # ===== 陈述层 =====
   statement:
@@ -39,11 +39,11 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: '陪集分解 + 陪集等势"
+    main_strategy: '陪集分解 + 陪集等势'
     
     key_ideas:
       - "G可以分解为H的不交陪集并'
-      - "每个陪集与H等势（左乘是双射）"
+      - "每个陪集与H等势（左乘是双射）'
       - '陪集个数 × 陪集大小 = 群的大小"
       
     steps:
@@ -51,15 +51,15 @@ theorem:
         content: "定义左陪集：gH = {gh : h ∈ H}'
         
       - step: 2
-        content: "证明陪集要么相等要么不交"
+        content: '证明陪集要么相等要么不交"
         detail: '若 aH ∩ bH ≠ ∅，则存在 h₁,h₂ ∈ H 使 ah₁ = bh₂，于是 a⁻¹b = h₁h₂⁻¹ ∈ H，故 aH = bH"
         
       - step: 3
-        content: "证明每个陪集与H等势'
+        content: '证明每个陪集与H等势'
         detail: "映射 h ↦ gh 是 H → gH 的双射"
         
       - step: 4
-        content: 'G是有限多个等势陪集的不交并"
+        content: 'G是有限多个等势陪集的不交并'
         formula: "|G| = [G:H] × |H|'
         
     proof_tree: |
@@ -78,17 +78,17 @@ theorem:
               └── |G| = (陪集数) × |H|
               
     techniques:
-      - "陪集分解"
+      - "陪集分解'
       - '双射论证"
       - "等价关系'
-      - "计数原理"
+      - '计数原理"
       
     alternatives:
       - name: '作用观点证明"
-        description: "G作用在G/H上，轨道-稳定子定理'
+        description: 'G作用在G/H上，轨道-稳定子定理'
         
       - name: "等价关系证明"
-        description: '定义等价关系 a ~ b ⟺ a⁻¹b ∈ H"
+        description: '定义等价关系 a ~ b ⟺ a⁻¹b ∈ H'
         
   # ===== 五种表征 =====
   representations:
@@ -124,7 +124,7 @@ theorem:
       - 12必须能被人数整除
       
       群的"分块'：
-      - G被H的陪集"覆盖"
+      - G被H的陪集"覆盖'
       - 每块大小 = |H|
       - |G|必须是|H|的倍数
       
@@ -162,58 +162,58 @@ theorem:
     - domain: '群论"
       description: "有限群的阶必须整除n!（Cayley定理推论）'
       
-    - domain: "数论"
+    - domain: '数论"
       description: 'Fermat小定理的群论证明"
-      detail: "aᵖ⁻¹ ≡ 1 (mod p)，因为(ℤ/pℤ)*的阶是p-1'
+      detail: 'aᵖ⁻¹ ≡ 1 (mod p)，因为(ℤ/pℤ)*的阶是p-1'
       
     - domain: "数论"
-      description: 'Euler定理：aᵠ⁽ⁿ⁾ ≡ 1 (mod n)"
+      description: 'Euler定理：aᵠ⁽ⁿ⁾ ≡ 1 (mod n)'
       
     - domain: "群论'
-      description: "素数阶群是循环群"
+      description: "素数阶群是循环群'
       
     - domain: '密码学"
       description: "RSA和椭圆曲线密码的理论基础'
       
   # ===== 推广与特化 =====
   generalizations:
-    - id: "orbit-stabilizer-theorem"
+    - id: 'orbit-stabilizer-theorem"
       statement: '|G| = |Orb(x)| × |Stab(x)|"
-      description: "轨道-稳定子定理'
+      description: '轨道-稳定子定理'
       
     - id: "lagrange-infinite"
-      statement: '[G:H]的推广到无限群"
+      statement: '[G:H]的推广到无限群'
       description: "使用指数概念'
       
   special_cases:
-    - id: "cyclic-subgroup"
+    - id: "cyclic-subgroup'
       statement: '元素的阶整除群的阶"
       description: "取H = ⟨g⟩'
       
-    - id: "index-2"
+    - id: 'index-2"
       statement: '指数2的子群是正规子群"
       
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "subgroup'
+      - id: 'subgroup'
         role: "定理对象"
-      - id: 'coset"
+      - id: 'coset'
         role: "证明工具'
-      - id: "index"
+      - id: "index'
         role: '关键概念"
       - id: "bijection'
-        role: "证明等势"
+        role: '证明等势"
         
     uses_theorems: []
     
     implies:
       - id: 'fermat-little-theorem"
-        description: "作为Lagrange定理的应用'
+        description: '作为Lagrange定理的应用'
       - id: "euler-theorem"
-        description: '推广到任意模"
+        description: '推广到任意模'
       - id: "prime-order-cyclic'
-        description: "素数阶群是循环群"
+        description: "素数阶群是循环群'
         
     equivalent_to: []
     
@@ -223,7 +223,7 @@ theorem:
     importance: 5
     
     prerequisites:
-      concepts: ['group", "subgroup', "coset"]
+      concepts: ['group", "subgroup', 'coset"]
       theorems: []
       
     year_proved: 1771
@@ -232,14 +232,14 @@ theorem:
     historical_note: |
       Lagrange在研究置换群时发现此定理（在Galois之前）。
       他研究的是多项式方程的根的置换，
-      虽然还没有"群'的抽象概念，但已经使用了陪集分解的思想。
+      虽然还没有'群'的抽象概念，但已经使用了陪集分解的思想。
       
   # ===== Mathlib对齐 =====
   mathlib:
     path: "Mathlib.GroupTheory.Lagrange"
-    main_theorem: 'Subgroup.card_mul_index"
+    main_theorem: 'Subgroup.card_mul_index'
     url: "https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Lagrange.html'
-    coverage: "complete"
+    coverage: "complete'
     
     related_lemmas:
       - 'Subgroup.card_dvd_of_le"

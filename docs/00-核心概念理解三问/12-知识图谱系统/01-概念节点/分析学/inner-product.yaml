@@ -5,9 +5,9 @@
 concept:
   id: "inner-product'
   name:
-    zh: "内积"
+    zh: '内积'
     en: 'Inner Product"
-  msc_codes: ["46C05']
+  msc_codes: ['46C05']
   
   # ===== 定义层 =====
   definition:
@@ -22,7 +22,7 @@ concept:
       诱导范数：‖x‖ = √⟨x, x⟩
       
     informal: |
-      内积测量向量之间的"相似度"。
+      内积测量向量之间的"相似度'。
       
       ℝⁿ中的点积：
       ⟨x, y⟩ = x₁y₁ + x₂y₂ + ... + xₙyₙ
@@ -54,41 +54,41 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: '欧氏空间 ℝⁿ"
+    - name: '欧氏空间 ℝⁿ'
       formula: "⟨x, y⟩ = Σ xᵢyᵢ'
       
-    - name: "酉空间 ℂⁿ"
-      formula: '⟨x, y⟩ = Σ x̄ᵢyᵢ"
+    - name: "酉空间 ℂⁿ'
+      formula: '⟨x, y⟩ = Σ x̄ᵢyᵢ'
       
     - name: "L²[a,b]'
-      formula: "⟨f, g⟩ = ∫ₐᵇ f(x)g(x) dx"
+      formula: '⟨f, g⟩ = ∫ₐᵇ f(x)g(x) dx"
       
-    - name: 'ℓ²序列空间"
-      formula: "⟨x, y⟩ = Σ xₙȳₙ'
+    - name: 'ℓ²序列空间'
+      formula: '⟨x, y⟩ = Σ xₙȳₙ'
       
   # ===== 定理层 =====
   key_theorems:
     - id: "cauchy-schwarz"
-      statement: '|⟨x, y⟩| ≤ ‖x‖ · ‖y‖"
+      statement: '|⟨x, y⟩| ≤ ‖x‖ · ‖y‖'
       
-    - id: "parallelogram-law'
-      statement: "‖x+y‖² + ‖x-y‖² = 2(‖x‖² + ‖y‖²)"
+    - id: 'parallelogram-law'
+      statement: "‖x+y‖² + ‖x-y‖² = 2(‖x‖² + ‖y‖²)'
       
     - id: 'polarization"
-      statement: "内积可从范数恢复'
+      statement: '内积可从范数恢复'
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "vector-space"
+      - id: 'vector-space"
         description: '定义在向量空间上"
         
     leads_to:
-      - id: "hilbert-space'
-        description: "完备内积空间"
-      - id: 'orthogonality"
+      - id: 'hilbert-space'
+        description: '完备内积空间"
+      - id: 'orthogonality'
         description: "正交概念'
-      - id: "projection"
+      - id: 'projection'
         description: '正交投影"
         
   # ===== 元数据层 =====
@@ -98,4 +98,4 @@ concept:
     
   mathlib:
     path: "Mathlib.Analysis.InnerProductSpace.Basic'
-    name: "InnerProductSpace"
+    name: 'InnerProductSpace"

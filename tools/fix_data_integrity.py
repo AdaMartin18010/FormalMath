@@ -81,10 +81,10 @@ class DataIntegrityFixer:
                     content = f.read()
                     
                 # 修复常见的JSON转义问题
-                # Windows路径中的反斜杠需要转义
-                content = content.replace('\\', '\\\\')
-                # 但不要把已经转义的双反斜杠变成四反斜杠
+                # 先还原已经转义的双反斜杠，避免重复转义（4个反斜杠 -> 2个反斜杠）
                 content = content.replace('\\\\\\\\', '\\\\')
+                # 然后将单反斜杠转义为双反斜杠（2个反斜杠 -> 4个反斜杠，表示1个->2个）
+                content = content.replace('\\\\', '\\\\\\\\')
                 
                 # 尝试解析修复后的内容
                 try:

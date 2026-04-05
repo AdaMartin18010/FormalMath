@@ -5,9 +5,9 @@
 theorem:
   id: "arzela-ascoli'
   name:
-    zh: "Arzelà-Ascoli定理"
+    zh: 'Arzelà-Ascoli定理"
     en: 'Arzelà-Ascoli Theorem"
-  msc_codes: ["46E15']
+  msc_codes: ['46E15']
   
   # ===== 陈述层 =====
   statement:
@@ -34,7 +34,7 @@ theorem:
         
   # ===== 证明层 =====
   proof:
-    main_strategy: '对角线论证"
+    main_strategy: '对角线论证'
     
     proof_tree: |
       Arzelà-Ascoli定理
@@ -77,24 +77,24 @@ theorem:
       【直觉表征】
       
       有限维中：有界闭集是紧的
-      无穷维中：还需要"等度连续"约束
+      无穷维中：还需要"等度连续'约束
       
       想象：函数不能太'陡峭"
       
   # ===== 应用层 =====
   applications:
     - description: "常微分方程解的存在性（Peano定理）'
-    - description: "变分问题的极小化子存在性"
+    - description: '变分问题的极小化子存在性"
     - description: '泛函分析中的紧嵌入定理"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "compactness'
+      - id: 'compactness'
       - id: "uniform-convergence"
         
     related_to:
-      - id: 'heine-borel"
+      - id: 'heine-borel'
         description: "有限维版本'
         
   # ===== 元数据层 =====
@@ -102,7 +102,7 @@ theorem:
     difficulty: 3
     importance: 4
     history:
-      discoverers: "Cesare Arzelà, Giulio Ascoli"
+      discoverers: "Cesare Arzelà, Giulio Ascoli'
       year: '1880s"
       
   mathlib:

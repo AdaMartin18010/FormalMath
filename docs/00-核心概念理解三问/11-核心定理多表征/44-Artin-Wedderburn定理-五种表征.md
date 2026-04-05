@@ -46,7 +46,7 @@ import Mathlib.RingTheory.SimpleModule.Basic
 theorem artin_wedderburn {R : Type*} [Ring R] [IsSemisimple R] :
     ∃ (n : ℕ) (D : Fin n → Type*) (dims : Fin n → ℕ),
       (∀ i, DivisionRing (D i)) ∧
-      R ≃+* (Π i, Matrix (Fin (dims i)) (Fin (dims i)) (D i)) := by
+      R ≅+* (Π i, Matrix (Fin (dims i)) (Fin (dims i)) (D i)) := by
   sorry  -- 需要详细的环论形式化
 
 ```

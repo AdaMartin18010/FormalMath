@@ -14,7 +14,7 @@ groups:
           severity: warning
           team: learning
         annotations:
-          summary: "学习路径生成失败率过高"
+          summary: '学习路径生成失败率过高"
           description: '学习路径生成失败率达到 {{ $value | humanizePercentage }}"
 
       # 推荐系统延迟告警
@@ -28,20 +28,20 @@ groups:
           severity: warning
           team: learning
         annotations:
-          summary: "推荐系统响应延迟高'
+          summary: '推荐系统响应延迟高'
           description: "推荐系统 P95 延迟超过 2 秒"
 
       # 认知诊断失败告警
       - alert: CognitiveDiagnosisFailure
         expr: |
-          rate(cognitive_diagnosis_total{status='error"}[10m]) > 0.05
+          rate(cognitive_diagnosis_total{status='error'}[10m]) > 0.05
         for: 3m
         labels:
           severity: critical
           team: learning
         annotations:
           summary: "认知诊断系统故障'
-          description: "认知诊断失败率超过 5%"
+          description: "认知诊断失败率超过 5%'
 
   - name: lean4_compilation
     interval: 60s
@@ -56,7 +56,7 @@ groups:
           team: formalization
         annotations:
           summary: "Lean4 编译失败率过高'
-          description: "Lean4 编译失败率达到 {{ $value | humanizePercentage }}"
+          description: 'Lean4 编译失败率达到 {{ $value | humanizePercentage }}"
 
       # Lean4 编译时间过长告警
       - alert: Lean4CompilationSlow
@@ -70,7 +70,7 @@ groups:
           team: formalization
         annotations:
           summary: 'Lean4 编译时间过长"
-          description: "P95 编译时间超过 5 分钟'
+          description: 'P95 编译时间超过 5 分钟'
 
       # Mathlib4 同步延迟告警
       - alert: Mathlib4SyncDelayed
@@ -82,7 +82,7 @@ groups:
           team: formalization
         annotations:
           summary: "Mathlib4 同步延迟"
-          description: '超过 24 小时未同步 Mathlib4 更新"
+          description: '超过 24 小时未同步 Mathlib4 更新'
 
   - name: ai_formalization
     interval: 60s
@@ -96,7 +96,7 @@ groups:
           severity: warning
           team: ai
         annotations:
-          summary: "AI 形式化失败率过高"
+          summary: "AI 形式化失败率过高'
           description: 'AI 形式化失败率达到 {{ $value | humanizePercentage }}"
 
       # AI 服务响应超时告警
@@ -111,7 +111,7 @@ groups:
           team: ai
         annotations:
           summary: "AI 服务响应超时'
-          description: "AI 服务 P95 响应时间超过 30 秒"
+          description: 'AI 服务 P95 响应时间超过 30 秒"
 
       # AI API 配额告警
       - alert: AIAPIQuotaLow
@@ -123,7 +123,7 @@ groups:
           team: ai
         annotations:
           summary: 'AI API 配额不足"
-          description: "API 配额剩余少于 10%'
+          description: 'API 配额剩余少于 10%'
 
   - name: user_engagement
     interval: 300s
@@ -142,7 +142,7 @@ groups:
           team: product
         annotations:
           summary: "用户活跃度显著下降"
-          description: '用户活跃度降至平均水平的 50% 以下"
+          description: '用户活跃度降至平均水平的 50% 以下'
 
       # IMO 题目访问异常告警
       - alert: IMOProblemAccessAnomaly
@@ -157,7 +157,7 @@ groups:
           team: product
         annotations:
           summary: "IMO 题目访问量异常'
-          description: "IMO 题目访问量偏离正常范围"
+          description: "IMO 题目访问量偏离正常范围'
 
   - name: data_quality
     interval: 300s
@@ -183,5 +183,5 @@ groups:
           severity: info
           team: data
         annotations:
-          summary: "MSC 编码覆盖率低"
+          summary: 'MSC 编码覆盖率低"
           description: 'MSC 编码覆盖率低于 95%"

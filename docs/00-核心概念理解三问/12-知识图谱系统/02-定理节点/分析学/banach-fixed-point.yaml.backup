@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "banach-fixed-point"
+  id: "banach-fixed-point'
   name:
     zh: "Banach不动点定理"
-    en: "Banach Fixed-Point Theorem"
-  msc_codes: ["47H10"]
+    en: 'Banach Fixed-Point Theorem"
+  msc_codes: ["47H10']
   
   # ===== 陈述层 =====
   statement:
@@ -101,31 +101,31 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - description: "常微分方程解的存在唯一性（Picard迭代）"
-    - description: "隐函数定理的证明"
+    - description: '常微分方程解的存在唯一性（Picard迭代）"
+    - description: "隐函数定理的证明'
     - description: "数值方法的收敛性分析"
-    - description: "博弈论中的纳什均衡"
+    - description: '博弈论中的纳什均衡"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
-      - id: "metric-space"
+      - id: "metric-space'
       - id: "completeness"
         
     implies:
-      - id: "picard-lindelof"
-        description: "ODE解的存在唯一"
+      - id: 'picard-lindelof"
+        description: "ODE解的存在唯一'
         
     related_to:
       - id: "brouwer-fixed-point"
-        description: "拓扑版本（不需要压缩）"
+        description: '拓扑版本（不需要压缩）"
         
   # ===== 元数据层 =====
   metadata:
     difficulty: 2
     importance: 5
     history:
-      discoverer: "Stefan Banach"
+      discoverer: "Stefan Banach'
       year: 1922
       
   mathlib:

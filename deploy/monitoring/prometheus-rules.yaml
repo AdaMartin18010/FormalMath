@@ -21,26 +21,26 @@ spec:
       rules:
         # 服务宕机告警
         - alert: ServiceDown
-          expr: up{job=~"backend|frontend|redis|postgres"} == 0
+          expr: up{job=~"backend|frontend|redis|postgres'} == 0
           for: 1m
           labels:
             severity: critical
             team: ops
           annotations:
-            summary: "服务 {{ $labels.job }} 宕机"
-            description: "服务 {{ $labels.job }} 在 {{ $labels.instance }} 上已经宕机超过1分钟"
-            runbook_url: "https://wiki.formalmath.org/runbooks/service-down"
+            summary: '服务 {{ $labels.job }} 宕机"
+            description: '服务 {{ $labels.job }} 在 {{ $labels.instance }} 上已经宕机超过1分钟"
+            runbook_url: 'https://wiki.formalmath.org/runbooks/service-down'
 
         # 健康检查失败
         - alert: HealthCheckFailed
-          expr: increase(http_requests_total{path="/health",status!="200"}[5m]) > 0
+          expr: increase(http_requests_total{path="/health",status!='200'}[5m]) > 0
           for: 2m
           labels:
             severity: warning
             team: ops
           annotations:
-            summary: "健康检查失败"
-            description: "服务 {{ $labels.service }} 健康检查在过去5分钟内失败"
+            summary: "健康检查失败'
+            description: "服务 {{ $labels.service }} 健康检查在过去5分钟内失败'
 
     # ----------------------------------------
     # 性能告警
@@ -56,19 +56,19 @@ spec:
             severity: warning
             team: backend
           annotations:
-            summary: "API响应时间过高"
-            description: "API 95分位响应时间超过1秒: {{ $value }}s"
+            summary: 'API响应时间过高"
+            description: "API 95分位响应时间超过1秒: {{ $value }}s'
 
         # 错误率高
         - alert: HighErrorRate
-          expr: rate(http_requests_total{status=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.05
+          expr: rate(http_requests_total{status=~'5.."}[5m]) / rate(http_requests_total[5m]) > 0.05
           for: 5m
           labels:
             severity: critical
             team: backend
           annotations:
-            summary: "错误率过高"
-            description: "HTTP 5xx错误率超过5%: {{ $value | humanizePercentage }}"
+            summary: '错误率过高"
+            description: 'HTTP 5xx错误率超过5%: {{ $value | humanizePercentage }}'
 
         # 请求量突增
         - alert: TrafficSpike
@@ -79,7 +79,7 @@ spec:
             team: ops
           annotations:
             summary: "请求量突增"
-            description: "请求量达到 {{ $value }}/秒，可能遭受攻击或流量高峰"
+            description: '请求量达到 {{ $value }}/秒，可能遭受攻击或流量高峰'
 
     # ----------------------------------------
     # 资源告警
@@ -89,47 +89,47 @@ spec:
       rules:
         # CPU使用率高
         - alert: HighCPUUsage
-          expr: rate(container_cpu_usage_seconds_total{pod=~"formalmath-.*"}[5m]) > 0.8
+          expr: rate(container_cpu_usage_seconds_total{pod=~"formalmath-.*'}[5m]) > 0.8
           for: 10m
           labels:
             severity: warning
             team: ops
           annotations:
-            summary: "CPU使用率过高"
-            description: "Pod {{ $labels.pod }} CPU使用率超过80%"
+            summary: "CPU使用率过高'
+            description: 'Pod {{ $labels.pod }} CPU使用率超过80%"
 
         # 内存使用率高
         - alert: HighMemoryUsage
-          expr: container_memory_usage_bytes{pod=~"formalmath-.*"} / container_spec_memory_limit_bytes > 0.85
+          expr: container_memory_usage_bytes{pod=~"formalmath-.*'} / container_spec_memory_limit_bytes > 0.85
           for: 5m
           labels:
             severity: warning
             team: ops
           annotations:
-            summary: "内存使用率过高"
-            description: "Pod {{ $labels.pod }} 内存使用率超过85%"
+            summary: '内存使用率过高"
+            description: 'Pod {{ $labels.pod }} 内存使用率超过85%"
 
         # 磁盘空间不足
         - alert: DiskSpaceLow
-          expr: (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) < 0.1
+          expr: (node_filesystem_avail_bytes{mountpoint='/'} / node_filesystem_size_bytes{mountpoint="/"}) < 0.1
           for: 5m
           labels:
             severity: critical
             team: ops
           annotations:
-            summary: "磁盘空间不足"
-            description: "磁盘使用率超过90%，剩余空间: {{ $value | humanizePercentage }}"
+            summary: '磁盘空间不足'
+            description: "磁盘使用率超过90%，剩余空间: {{ $value | humanizePercentage }}'
 
         # 磁盘即将满
         - alert: DiskSpaceWarning
-          expr: (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) < 0.2
+          expr: (node_filesystem_avail_bytes{mountpoint="/'} / node_filesystem_size_bytes{mountpoint='/"}) < 0.2
           for: 5m
           labels:
             severity: warning
             team: ops
           annotations:
-            summary: "磁盘空间警告"
-            description: "磁盘使用率超过80%，剩余空间: {{ $value | humanizePercentage }}"
+            summary: "磁盘空间警告'
+            description: '磁盘使用率超过80%，剩余空间: {{ $value | humanizePercentage }}"
 
     # ----------------------------------------
     # 数据库告警
@@ -145,8 +145,8 @@ spec:
             severity: warning
             team: dba
           annotations:
-            summary: "数据库连接数高"
-            description: "PostgreSQL活动连接数: {{ $value }}"
+            summary: '数据库连接数高"
+            description: 'PostgreSQL活动连接数: {{ $value }}'
 
         # 数据库慢查询
         - alert: DatabaseSlowQueries
@@ -156,8 +156,8 @@ spec:
             severity: warning
             team: dba
           annotations:
-            summary: "数据库存在慢查询"
-            description: "检测到执行时间超过1秒的查询"
+            summary: '数据库存在慢查询'
+            description: "检测到执行时间超过1秒的查询'
 
         # 复制延迟
         - alert: DatabaseReplicationLag
@@ -167,8 +167,8 @@ spec:
             severity: warning
             team: dba
           annotations:
-            summary: "数据库复制延迟"
-            description: "主从复制延迟超过5分钟: {{ $value }}秒"
+            summary: "数据库复制延迟'
+            description: '主从复制延迟超过5分钟: {{ $value }}秒"
 
     # ----------------------------------------
     # Redis告警
@@ -184,8 +184,8 @@ spec:
             severity: warning
             team: ops
           annotations:
-            summary: "Redis内存使用率过高"
-            description: "Redis内存使用率: {{ $value | humanizePercentage }}"
+            summary: "Redis内存使用率过高'
+            description: 'Redis内存使用率: {{ $value | humanizePercentage }}"
 
         # Redis连接数高
         - alert: RedisHighConnections
@@ -195,8 +195,8 @@ spec:
             severity: warning
             team: ops
           annotations:
-            summary: "Redis连接数高"
-            description: "Redis连接数: {{ $value }}"
+            summary: 'Redis连接数高"
+            description: 'Redis连接数: {{ $value }}'
 
     # ----------------------------------------
     # SSL证书告警
@@ -213,7 +213,7 @@ spec:
             team: ops
           annotations:
             summary: "SSL证书即将过期"
-            description: "证书 {{ $labels.name }} 将在 {{ $value }} 天内过期"
+            description: '证书 {{ $labels.name }} 将在 {{ $value }} 天内过期'
 
         # 证书即将过期（紧急）
         - alert: SSLCertificateExpiringCritical
@@ -223,8 +223,8 @@ spec:
             severity: critical
             team: ops
           annotations:
-            summary: "SSL证书即将过期（紧急）"
-            description: "证书 {{ $labels.name }} 将在 {{ $value }} 天内过期，需要立即处理"
+            summary: "SSL证书即将过期（紧急）'
+            description: "证书 {{ $labels.name }} 将在 {{ $value }} 天内过期，需要立即处理'
 
     # ----------------------------------------
     # 业务指标告警
@@ -240,8 +240,8 @@ spec:
             severity: warning
             team: product
           annotations:
-            summary: "用户注册量异常下降"
-            description: "过去1小时用户注册量异常低"
+            summary: '用户注册量异常下降"
+            description: "过去1小时用户注册量异常低'
 
         # 任务队列堆积
         - alert: CeleryQueueBacklog
@@ -251,8 +251,8 @@ spec:
             severity: warning
             team: backend
           annotations:
-            summary: "Celery任务队列堆积"
-            description: "待处理任务数: {{ $value }}"
+            summary: 'Celery任务队列堆积"
+            description: '待处理任务数: {{ $value }}"
 
         # 备份失败
         - alert: BackupFailed
@@ -262,5 +262,5 @@ spec:
             severity: critical
             team: ops
           annotations:
-            summary: "备份失败"
+            summary: '备份失败'
             description: "距离上次成功备份已超过24小时"

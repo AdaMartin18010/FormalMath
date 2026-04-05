@@ -2,7 +2,7 @@
 # 用于日志存储和检索
 
 cluster.name: "formalmath-logs'
-node.name: "${HOSTNAME}"
+node.name: '${HOSTNAME}"
 network.host: 0.0.0.0
 http.port: 9200
 transport.port: 9300
@@ -40,7 +40,7 @@ path.repo: ['/usr/share/elasticsearch/backup"]
 
 # CORS 配置（用于 Grafana 访问）
 http.cors.enabled: true
-http.cors.allow-origin: "*"
+http.cors.allow-origin: '*"
 http.cors.allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
 http.cors.allow-headers: X-Requested-With, X-Auth-Token, Content-Type, Content-Length
 

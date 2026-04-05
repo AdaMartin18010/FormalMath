@@ -1,0 +1,154 @@
+% 纤维丛结构图 (Fiber Bundle Structure)
+% 描述: 展示纤维丛 E → B 的投影映射，局部平凡化
+% 数学概念: 纤维丛、底空间、全空间、纤维、局部平凡化
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,3d}
+
+\begin{document}
+\begin{tikzpicture}[
+    >=Stealth,
+    scale=1.0,
+    base/.style={
+        draw=blue!60!black,
+        fill=blue!15,
+        line width=1pt,
+        rounded corners=3pt
+    },
+    fiber/.style={
+        draw=red!70!black,
+        fill=red!20,
+        line width=0.8pt
+    },
+    total/.style={
+        draw=purple!70!black,
+        fill=purple!10,
+        line width=1pt,
+        opacity=0.8
+    },
+    projection/.style={
+        ->,
+        line width=1.5pt,
+        color=orange!80!black,
+        dashed
+    },
+    section/.style={
+        line width=1.2pt,
+        color=green!60!black,
+        smooth
+    }
+]
+
+% ============= 底空间 B =============
+% 绘制底空间 (曲面表示)
+\draw[base] 
+    (0,0) .. controls (2,1) and (4,0.5) .. (6,0)
+          .. controls (6.5,-0.5) and (6,-1) .. (5,-1.2)
+          .. controls (3,-1.5) and (1,-1) .. (0,0);
+\node[font=\bfseries, color=blue!60!black] at (3, -1.7) {底空间 $B$};
+
+% 底空间上的点
+\coordinate (b) at (3, -0.3);
+\fill[black] (b) circle (2pt);
+\node[below] at (b) {$b$};
+
+% ============= 全空间 E =============
+% 在全空间区域绘制纤维丛
+\begin{scope}[yshift=2.5cm]
+    % 全空间外轮廓
+    \draw[total] 
+        (-0.5,0) .. controls (1.5,2.5) and (4.5,2) .. (6.5,0)
+              .. controls (7,-1.5) and (5.5,-2.5) .. (4,-2)
+              .. controls (2,-1.5) and (0.5,-1.5) .. (-0.5,0);
+    
+    % 多条纤维 (垂直线段)
+    \foreach \x in {0.5, 1.5, 2.5, 3.5, 4.5, 5.5} {
+        \draw[fiber] (\x, -1.2) -- (\x, 1.5);
+    }
+    
+    % 特殊纤维 F_b (在点b上方)
+    \coordinate (fb_top) at (3, 1.5);
+    \coordinate (fb_bottom) at (3, -1.2);
+    \draw[fiber, line width=2pt, color=red!80!black] (fb_bottom) -- (fb_top);
+    \node[color=red!80!black, right] at (3.1, 0.2) {$F_b = \pi^{-1}(b)$};
+    
+    % 全空间中的点
+    \coordinate (e) at (3, 0.5);
+    \fill[black] (e) circle (2pt);
+    \node[above right] at (e) {$e$};
+    
+    % 全空间标签
+    \node[font=\bfseries, color=purple!70!black] at (5.5, 1.8) {全空间 $E$};
+    
+    % 截面
+    \draw[section] 
+        (0.8, -0.3) .. controls (2, 0.5) and (3, 0.2) .. (4, 0.4) 
+                    .. controls (5, 0.6) .. (5.8, 0.1);
+    \node[color=green!60!black, above] at (5.5, 0.3) {$\sigma$};
+\end{scope}
+
+% ============= 投影映射 =============
+\draw[projection] (e) -- (b);
+\node[color=orange!80!black, right] at (3.3, 1.2) {$\pi$};
+
+% ============= 局部平凡化图示 =============
+\begin{scope}[xshift=8cm, yshift=0cm]
+    % 标题
+    \node[font=\bfseries] at (2, 4) {局部平凡化};
+    
+    % 局部邻域 U
+    \draw[base, fill=blue!10] (0, 0) ellipse (1.5 and 1);
+    \fill[black] (0, 0) circle (1.5pt);
+    \node[below] at (0, -0.1) {$b$};
+    \node[color=blue!60!black] at (0, -1.4) {$U \subset B$};
+    
+    % 映射箭头
+    \draw[->, line width=1.2pt, color=orange!80!black] (1.8, 2.5) -- (2.8, 2.5);
+    \node[color=orange!80!black, above] at (2.3, 2.5) {$\varphi$};
+    
+    % 乘积空间 U × F
+    \begin{scope}[xshift=4cm, yshift=0.5cm]
+        % 矩形背景
+        \fill[gray!15, rounded corners=3pt] (-1.5, -1.2) rectangle (1.5, 2.2);
+        \draw[gray!50, step=0.3] (-1.5, -1.2) grid (1.5, 2.2);
+        
+        % 底边 U
+        \draw[base, line width=2pt] (-1.2, -0.8) -- (1.2, -0.8);
+        \node[color=blue!60!black, below] at (0, -0.9) {$U$};
+        
+        % 垂直纤维
+        \foreach \x in {-0.8, -0.4, 0, 0.4, 0.8} {
+            \draw[fiber, line width=0.6pt] (\x, -0.8) -- (\x, 1.5);
+        }
+        
+        % 标签
+        \node[color=red!70!black, right] at (1, 0.5) {$F$};
+        \node at (0, 2.5) {$U \times F$};
+        
+        % 对应点
+        \fill[black] (0, 0.3) circle (1.5pt);
+        \node[right, font=\small] at (0.1, 0.3) {$(b, f)$};
+    \end{scope}
+    
+    % 说明
+    \node[anchor=north, font=\scriptsize, text width=6cm, align=center] 
+        at (2, -2) {
+        局部平凡化: $\varphi: \pi^{-1}(U) \xrightarrow{\cong} U \times F$\\
+        使得纤维丛局部看起来像乘积空间
+    };
+\end{scope}
+
+% ============= 整体结构公式 =============
+\node[anchor=south, font=\small, draw=gray!50, fill=white, rounded corners, inner sep=8pt] 
+    at (4, -3.5) {
+    \begin{tabular}{c}
+        \textbf{纤维丛结构:} $(E, B, \pi, F)$ \\[3pt]
+        $\pi: E \to B$ 是连续满射，每点 $b \in B$ 有邻域 $U$ 使得 
+        $\pi^{-1}(U) \cong U \times F$ \\[3pt]
+        \textbf{截面:} $\sigma: B \to E$ 满足 $\pi \circ \sigma = \text{id}_B$
+    \end{tabular}
+};
+
+\end{tikzpicture}
+\end{document}

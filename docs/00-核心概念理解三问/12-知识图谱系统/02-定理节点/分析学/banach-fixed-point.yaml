@@ -5,9 +5,9 @@
 theorem:
   id: "banach-fixed-point'
   name:
-    zh: "Banach不动点定理"
+    zh: 'Banach不动点定理"
     en: 'Banach Fixed-Point Theorem"
-  msc_codes: ["47H10']
+  msc_codes: ['47H10']
   
   # ===== 陈述层 =====
   statement:
@@ -101,24 +101,24 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - description: '常微分方程解的存在唯一性（Picard迭代）"
+    - description: '常微分方程解的存在唯一性（Picard迭代）'
     - description: "隐函数定理的证明'
-    - description: "数值方法的收敛性分析"
+    - description: "数值方法的收敛性分析'
     - description: '博弈论中的纳什均衡"
     
   # ===== 关系层 =====
   relations:
     uses_concepts:
       - id: "metric-space'
-      - id: "completeness"
+      - id: 'completeness"
         
     implies:
       - id: 'picard-lindelof"
-        description: "ODE解的存在唯一'
+        description: 'ODE解的存在唯一'
         
     related_to:
       - id: "brouwer-fixed-point"
-        description: '拓扑版本（不需要压缩）"
+        description: '拓扑版本（不需要压缩）'
         
   # ===== 元数据层 =====
   metadata:

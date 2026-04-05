@@ -1,6 +1,8 @@
 ---
+title: "代数结构Python实现教学资源指南"
 msc_primary: "12F10"
-msc_secondary: ['17-XX', '11Rxx', '22Exx']
+msc_secondary: ["17B99", "11R99", "22E60"]
+processed_at: '2026-04-05'
 ---
 
 # 代数结构Python实现教学资源指南

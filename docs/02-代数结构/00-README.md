@@ -1,6 +1,8 @@
 ---
+title: "代数结构"
 msc_primary: "00A99"
-msc_secondary: ['12Exx', '13Cxx', '16-XX']
+msc_secondary: ["12E99", "13C99", "16D99"]
+processed_at: '2026-04-05'
 ---
 
 # 代数结构

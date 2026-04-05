@@ -5,9 +5,9 @@
 concept:
   id: "covering-space'
   name:
-    zh: "覆盖空间"
+    zh: '覆盖空间'
     en: 'Covering Space"
-  msc_codes: ["57M10']
+  msc_codes: ['57M10']
   
   # ===== 定义层 =====
   definition:
@@ -22,12 +22,12 @@ concept:
       E 称为覆盖空间，X 称为底空间。
       
     informal: |
-      覆盖空间是底空间的"多层复制"。
+      覆盖空间是底空间的"多层复制'。
       
       例子：ℝ → S¹, t ↦ e^{2πit}
       - 实数线覆盖圆
       - 每个点有无穷多个原像
-      - 局部看是'多层"
+      - 局部看是'多层'
       
     lean: |
       -- 覆盖映射
@@ -43,7 +43,7 @@ concept:
       【几何直觉】多层
       - 覆盖空间是底空间的"展开'
       - 局部看一样，全局结构不同
-      - 基本群在"楼层"间移动
+      - 基本群在"楼层'间移动
       
     algebraic: |
       【代数直觉】π₁作用
@@ -53,47 +53,47 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: 'ℝ → S¹"
+    - name: 'ℝ → S¹'
       map: "t ↦ e^{2πit}'
-      fiber: "ℤ"
-      description: '万有覆盖"
+      fiber: 'ℤ"
+      description: '万有覆盖'
       
-    - name: "S¹ → S¹ (n重覆盖)'
+    - name: 'S¹ → S¹ (n重覆盖)'
       map: "z ↦ zⁿ"
-      fiber: 'ℤ/nℤ"
+      fiber: 'ℤ/nℤ'
       
-    - name: "S² → ℝP²'
-      map: "对径点映到同一点"
+    - name: 'S² → ℝP²'
+      map: "对径点映到同一点'
       fiber: 'ℤ/2ℤ"
-      description: "万有覆盖（因为π₁(S²) = 0）'
+      description: '万有覆盖（因为π₁(S²) = 0）'
       
-    - name: "T² → K (Klein瓶)"
+    - name: 'T² → K (Klein瓶)"
       description: '环面2重覆盖Klein瓶"
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "galois-correspondence'
-      statement: "覆盖空间 ↔ π₁的子群"
+    - id: 'galois-correspondence'
+      statement: '覆盖空间 ↔ π₁的子群"
       
-    - id: 'lifting-criterion"
+    - id: 'lifting-criterion'
       statement: "映射提升存在的条件'
       
-    - id: "universal-cover"
+    - id: 'universal-cover'
       statement: '单连通覆盖空间存在唯一"
       
   # ===== 关系层 =====
   relations:
     requires:
       - id: "topological-space'
-        description: "底空间和覆盖空间"
+        description: '底空间和覆盖空间'
       - id: 'fundamental-group"
-        description: "分类理论'
+        description: '分类理论'
         
     related_to:
-      - id: "fiber-bundle"
-        description: '覆盖空间是特殊纤维丛"
+      - id: "fiber-bundle'
+        description: '覆盖空间是特殊纤维丛'
       - id: "deck-transformation'
-        description: "覆盖变换群"
+        description: "覆盖变换群'
         
   # ===== 元数据层 =====
   metadata:

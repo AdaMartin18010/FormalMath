@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "metric-space"
+  id: "metric-space'
   name:
-    zh: "度量空间"
-    en: "Metric Space"
-  msc_codes: ["54E35"]
+    zh: '度量空间"
+    en: 'Metric Space"
+  msc_codes: ['54E35']
   
   # ===== 定义层 =====
   definition:
@@ -50,41 +50,41 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: "欧氏空间 ℝⁿ"
-      metric: "d(x,y) = √Σ(xᵢ-yᵢ)²"
+    - name: '欧氏空间 ℝⁿ'
+      metric: "d(x,y) = √Σ(xᵢ-yᵢ)²'
       
-    - name: "离散度量"
-      metric: "d(x,y) = 0 if x=y, 1 otherwise"
-      property: "所有子集开"
+    - name: "离散度量'
+      metric: 'd(x,y) = 0 if x=y, 1 otherwise"
+      property: "所有子集开'
       
-    - name: "Lᵖ度量"
-      metric: "d(f,g) = (∫|f-g|ᵖ)^{1/p}"
+    - name: 'Lᵖ度量"
+      metric: 'd(f,g) = (∫|f-g|ᵖ)^{1/p}"
       
-    - name: "sup度量"
+    - name: 'sup度量'
       metric: "d(f,g) = sup|f(x)-g(x)|"
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "baire-category"
-      statement: "完备度量空间是Baire空间"
+    - id: 'baire-category'
+      statement: "完备度量空间是Baire空间'
       
-    - id: "metrization"
-      statement: "正则+第二可数 ⟹ 可度量化"
+    - id: "metrization'
+      statement: '正则+第二可数 ⟹ 可度量化"
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "set"
+      - id: "set'
         
     leads_to:
-      - id: "topological-space"
-        description: "诱导拓扑"
-      - id: "completeness"
+      - id: 'topological-space"
+        description: '诱导拓扑"
+      - id: 'completeness'
         description: "完备度量空间"
         
     specializes_to:
-      - id: "normed-space"
-        description: "范数诱导度量"
+      - id: 'normed-space'
+        description: "范数诱导度量'
         
   # ===== 元数据层 =====
   metadata:
@@ -92,5 +92,5 @@ concept:
     importance: 5
     
   mathlib:
-    path: "Mathlib.Topology.MetricSpace.Basic"
-    name: "MetricSpace"
+    path: "Mathlib.Topology.MetricSpace.Basic'
+    name: 'MetricSpace"

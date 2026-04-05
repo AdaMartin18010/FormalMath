@@ -23,11 +23,11 @@ services:
       - ./prometheus:/etc/prometheus
       - prometheus_data:/prometheus
     ports:
-      - "9090:9090"
+      - "9090:9090'
     networks:
       - monitoring
     healthcheck:
-      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:9090/-/healthy"]
+      test: ["CMD", 'wget", "--no-verbose', "--tries=1", '--spider", "http://localhost:9090/-/healthy']
       interval: 30s
       timeout: 10s
       retries: 3
@@ -70,7 +70,7 @@ services:
       - /sys:/host/sys:ro
       - /:/rootfs:ro
     ports:
-      - "9100:9100"
+      - '9100:9100"
     networks:
       - monitoring
 
@@ -89,7 +89,7 @@ services:
       - /var/lib/docker:/var/lib/docker:ro
       - /cgroup:/cgroup:ro
     ports:
-      - "8080:8080"
+      - "8080:8080'
     networks:
       - monitoring
 
@@ -117,7 +117,7 @@ services:
       - prometheus
       - elasticsearch
     healthcheck:
-      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:3000/api/health || exit 1"]
+      test: ['CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:3000/api/health || exit 1']
       interval: 30s
       timeout: 10s
       retries: 3
@@ -143,12 +143,12 @@ services:
       - ./elk/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
       - elasticsearch_data:/usr/share/elasticsearch/data
     ports:
-      - "9200:9200"
-      - "9300:9300"
+      - '9200:9200"
+      - "9300:9300'
     networks:
       - monitoring
     healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      test: ["CMD-SHELL", 'curl -f http://localhost:9200/_cluster/health || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5
@@ -166,10 +166,10 @@ services:
       - ./elk/logstash/templates:/usr/share/logstash/templates
       - /var/log/formalmath:/var/log/formalmath:ro
     ports:
-      - "5044:5044"
+      - "5044:5044'
       - "5000:5000/tcp"
-      - "5001:5001/udp"
-      - "9600:9600"
+      - '5001:5001/udp"
+      - "9600:9600'
     networks:
       - monitoring
     depends_on:
@@ -193,7 +193,7 @@ services:
       elasticsearch:
         condition: service_healthy
     healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:5601/api/status || exit 1"]
+      test: ['CMD-SHELL", "curl -f http://localhost:5601/api/status || exit 1']
       interval: 30s
       timeout: 10s
       retries: 5
@@ -242,7 +242,7 @@ services:
     environment:
       - DATA_SOURCE_NAME=postgresql://postgres:password@postgres:5432/postgres?sslmode=disable
     ports:
-      - "9187:9187"
+      - '9187:9187"
     networks:
       - monitoring
     profiles:

@@ -5,9 +5,9 @@
 concept:
   id: "compact-operator'
   name:
-    zh: "紧算子"
+    zh: '紧算子'
     en: 'Compact Operator"
-  msc_codes: ["47B07']
+  msc_codes: ['47B07']
   
   # ===== 定义层 =====
   definition:
@@ -20,11 +20,11 @@ concept:
       3. T 是有限秩算子的极限
       
     informal: |
-      紧算子把有界集映成"几乎有限维"的集合。
+      紧算子把有界集映成"几乎有限维'的集合。
       
       无穷维空间中：
       - 有界集不一定相对紧
-      - 紧算子'压缩"维度
+      - 紧算子'压缩'维度
       - 表现得像有限维
       
     lean: |
@@ -38,7 +38,7 @@ concept:
       【几何直觉】维度压缩
       - 紧算子是有限秩算子的极限
       - 把无穷维"压'成接近有限维
-      - 像在一定意义上是"小"的
+      - 像在一定意义上是"小'的
       
     spectral: |
       【谱论直觉】离散谱
@@ -48,33 +48,33 @@ concept:
       
   # ===== 例子层 =====
   examples:
-    - name: '积分算子"
+    - name: '积分算子'
       formula: "(Tf)(x) = ∫K(x,y)f(y)dy'
-      condition: "K连续，定义域紧"
+      condition: 'K连续，定义域紧"
       
-    - name: 'Hilbert-Schmidt算子"
-      condition: "Σ|⟨Teᵢ,eⱼ⟩|² < ∞'
+    - name: 'Hilbert-Schmidt算子'
+      condition: 'Σ|⟨Teᵢ,eⱼ⟩|² < ∞'
       
     - name: "有限秩算子"
-      description: 'dim(im T) < ∞"
+      description: 'dim(im T) < ∞'
       
   # ===== 定理层 =====
   key_theorems:
-    - id: "spectral-theorem-compact'
-      statement: "紧自伴算子有可数特征值"
+    - id: 'spectral-theorem-compact'
+      statement: "紧自伴算子有可数特征值'
       
     - id: 'fredholm-alternative"
-      statement: "Fredholm择一定理'
+      statement: 'Fredholm择一定理'
       
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "banach-space"
+      - id: 'banach-space"
       - id: 'linear-map"
         
     related_to:
-      - id: "fredholm-operator'
-      - id: "trace-class"
+      - id: 'fredholm-operator'
+      - id: 'trace-class"
         
   # ===== 元数据层 =====
   metadata:

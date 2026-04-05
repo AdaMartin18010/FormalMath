@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "series"
+  id: "series'
   name:
-    zh: "级数"
-    en: "Series"
-  msc_codes: ["40A05"]
+    zh: '级数"
+    en: 'Series"
+  msc_codes: ['40A05']
   
   # ===== 定义层 =====
   definition:
@@ -45,30 +45,30 @@ concept:
   # ===== 例子层 =====
   examples:
     convergent:
-      - name: "几何级数"
-        formula: "Σrⁿ = 1/(1-r), |r| < 1"
+      - name: '几何级数'
+        formula: "Σrⁿ = 1/(1-r), |r| < 1'
         
-      - name: "p-级数"
-        formula: "Σ1/nᵖ, p > 1"
-        sum_p2: "π²/6"
+      - name: "p-级数'
+        formula: 'Σ1/nᵖ, p > 1"
+        sum_p2: "π²/6'
         
     divergent:
-      - name: "调和级数"
-        formula: "Σ1/n"
+      - name: '调和级数"
+        formula: 'Σ1/n"
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: "sequence"
+      - id: 'sequence'
         description: "部分和数列"
-      - id: "limit"
-        description: "收敛性"
+      - id: 'limit'
+        description: "收敛性'
         
     leads_to:
-      - id: "power-series"
-        description: "幂级数"
-      - id: "fourier-series"
-        description: "Fourier级数"
+      - id: "power-series'
+        description: '幂级数"
+      - id: "fourier-series'
+        description: 'Fourier级数"
         
   # ===== 元数据层 =====
   metadata:
