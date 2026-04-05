@@ -19,7 +19,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [SGA的系统内容：Grothendieck的研讨会](#sga的系统内容grothendieck的研讨会)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、历史背景](#一历史背景)
     - [1.1 SGA的起源](#11-sga的起源)
     - [1.2 Grothendieck的研讨会](#12-grothendieck的研讨会)

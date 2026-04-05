@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动力系统 - 奇怪吸引子</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #eee;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 0 0 20px rgba(100, 200, 255, 0.5);
+        }
+        .subtitle { text-align: center; color: #aaa; margin-bottom: 30px; }
+        .main-content { display: grid; grid-template-columns: 280px 1fr; gap: 20px; }
+        @media (max-width: 900px) { .main-content { grid-template-columns: 1fr; } }
+        .controls {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(100, 200, 255, 0.2);
+        }
+        .control-group { margin-bottom: 20px; }
+        .control-group label {
+            display: block;
+            color: #64c8ff;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .control-group select, .control-group input[type="range"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid rgba(100, 200, 255, 0.3);
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+        .value-display { color: #64c8ff; font-family: monospace; margin-top: 5px; font-size: 0.9em; }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4); }
+        .canvas-container {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(100, 200, 255, 0.2);
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid rgba(100, 200, 255, 0.3);
+            border-radius: 10px;
+            max-width: 100%;
+            background: #050510;
+        }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .info-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(100, 200, 255, 0.2);
+        }
+        .info-card h3 { color: #64c8ff; margin-bottom: 15px; border-bottom: 1px solid rgba(100, 200, 255, 0.3); padding-bottom: 10px; }
+        .info-card ul { margin-left: 20px; line-height: 1.8; color: #ccc; }
+        .info-card li { margin-bottom: 8px; }
+        .highlight { color: #64c8ff; font-weight: bold; }
+        .equation-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+            color: #ffaa64;
+        }
+        .params-display {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-family: monospace;
+            font-size: 0.85em;
+        }
+        .params-display div { margin-bottom: 5px; }
+        .status { text-align: center; padding: 10px; background: rgba(100, 200, 255, 0.1); border-radius: 8px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>奇怪吸引子可视化</h1>
+        <p class="subtitle">探索混沌动力系统的几何结构</p>
+
+        <div class="main-content">
+            <div class="controls">
+                <div class="control-group">
+                    <label>吸引子类型</label>
+                    <select id="attractorType">
+                        <option value="lorenz">洛伦兹吸引子</option>
+                        <option value="rossler">Rossler吸引子</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label>粒子数量</label>
+                    <input type="range" id="particleCount" min="1000" max="20000" step="1000" value="5000">
+                    <div class="value-display" id="particleDisplay">5000</div>
+                </div>
+                <div class="control-group">
+                    <label>时间步长</label>
+                    <input type="range" id="timeStep" min="0.001" max="0.05" step="0.001" value="0.01">
+                    <div class="value-display" id="timeStepDisplay">0.01</div>
+                </div>
+                <button onclick="startAnimation()">开始模拟</button>
+                <button onclick="stopAnimation()">暂停</button>
+                <button onclick="resetSimulation()">重置</button>
+                <div class="status" id="status">准备就绪</div>
+                <div class="params-display" id="paramsDisplay">
+                    <div>sigma = 10.0</div>
+                    <div>rho = 28.0</div>
+                    <div>beta = 2.667</div>
+                </div>
+            </div>
+            <div class="canvas-container">
+                <canvas id="attractorCanvas" width="1000" height="700"></canvas>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>洛伦兹吸引子</h3>
+                <div class="equation-box">
+                    dx/dt = sigma(y - x)<br>
+                    dy/dt = x(rho - z) - y<br>
+                    dz/dt = xy - beta*z
+                </div>
+                <ul>
+                    <li>1963年Edward Lorenz发现</li>
+                    <li>天气预报模型的简化</li>
+                    <li>首个被发现的奇怪吸引子</li>
+                    <li><span class="highlight">蝴蝶效应</span>的起源</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>混沌的特征</h3>
+                <ul>
+                    <li><span class="highlight">确定性</span>：无随机因素，完全由方程决定</li>
+                    <li><span class="highlight">敏感依赖性</span>：微小初值差异导致巨大偏差</li>
+                    <li><span class="highlight">非周期性</span>：轨迹永不重复</li>
+                    <li><span class="highlight">有界性</span>：轨迹始终在一定范围内</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('attractorCanvas');
+        const ctx = canvas.getContext('2d');
+        let animationId = null;
+        let particles = [];
+        let time = 0;
+        let currentAttractor = 'lorenz';
+
+        const attractorParams = {
+            lorenz: {sigma: 10, rho: 28, beta: 8/3},
+            rossler: {a: 0.2, b: 0.2, c: 5.7}
+        };
+
+        class Particle {
+            constructor() {
+                this.reset();
+                this.trail = [];
+                this.maxTrailLength = 50;
+                this.hue = Math.random() * 360;
+            }
+
+            reset() {
+                this.x = (Math.random() - 0.5) * 20;
+                this.y = (Math.random() - 0.5) * 20;
+                this.z = (Math.random() - 0.5) * 20;
+                this.trail = [];
+            }
+
+            update(dt) {
+                const params = attractorParams[currentAttractor];
+                let dx, dy, dz;
+
+                if (currentAttractor === 'lorenz') {
+                    dx = params.sigma * (this.y - this.x);
+                    dy = this.x * (params.rho - this.z) - this.y;
+                    dz = this.x * this.y - params.beta * this.z;
+                } else {
+                    dx = -this.y - this.z;
+                    dy = this.x + params.a * this.y;
+                    dz = params.b + this.z * (this.x - params.c);
+                }
+
+                this.x += dx * dt;
+                this.y += dy * dt;
+                this.z += dz * dt;
+
+                this.trail.push({x: this.x, y: this.y, z: this.z});
+                if (this.trail.length > this.maxTrailLength) {
+                    this.trail.shift();
+                }
+                this.hue = (this.hue + 5) % 360;
+            }
+
+            draw(ctx, centerX, centerY, scale, rotation) {
+                if (this.trail.length < 2) return;
+                ctx.beginPath();
+                for (let i = 0; i < this.trail.length; i++) {
+                    const point = this.trail[i];
+                    const cosR = Math.cos(rotation);
+                    const sinR = Math.sin(rotation);
+                    const x = point.x * cosR - point.z * sinR;
+                    const screenX = centerX + x * scale;
+                    const screenY = centerY - point.y * scale;
+                    if (i === 0) ctx.moveTo(screenX, screenY);
+                    else ctx.lineTo(screenX, screenY);
+                }
+                ctx.strokeStyle = `hsla(${this.hue}, 70%, 50%, 0.6)`;
+                ctx.lineWidth = 1.5;
+                ctx.stroke();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            const count = parseInt(document.getElementById('particleCount').value);
+            for (let i = 0; i < count; i++) particles.push(new Particle());
+        }
+
+        function updateParamsDisplay() {
+            const params = attractorParams[currentAttractor];
+            const display = document.getElementById('paramsDisplay');
+            let html = '';
+            for (let key in params) html += `<div>${key} = ${params[key].toFixed(3)}</div>`;
+            display.innerHTML = html;
+        }
+
+        function animate() {
+            const dt = parseFloat(document.getElementById('timeStep').value);
+            time += dt;
+            ctx.fillStyle = 'rgba(5, 5, 16, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const rotation = time * 0.1;
+            let scale = currentAttractor === 'lorenz' ? 12 : 35;
+            particles.forEach(p => {
+                p.update(dt);
+                p.draw(ctx, centerX, centerY, scale, rotation);
+            });
+            animationId = requestAnimationFrame(animate);
+        }
+
+        function startAnimation() {
+            if (animationId) return;
+            document.getElementById('status').textContent = '模拟运行中';
+            animate();
+        }
+
+        function stopAnimation() {
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+                animationId = null;
+                document.getElementById('status').textContent = '已暂停';
+            }
+        }
+
+        function resetSimulation() {
+            stopAnimation();
+            time = 0;
+            ctx.fillStyle = '#050510';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            initParticles();
+            document.getElementById('status').textContent = '准备就绪';
+        }
+
+        document.getElementById('attractorType').addEventListener('change', function() {
+            currentAttractor = this.value;
+            updateParamsDisplay();
+            resetSimulation();
+        });
+
+        document.getElementById('particleCount').addEventListener('input', function() {
+            document.getElementById('particleDisplay').textContent = this.value;
+        });
+
+        updateParamsDisplay();
+        resetSimulation();
+        startAnimation();
+    </script>
+</body>
+</html>

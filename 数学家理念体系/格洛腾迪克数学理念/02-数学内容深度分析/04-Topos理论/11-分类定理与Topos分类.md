@@ -13,7 +13,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [分类定理与Topos分类：Grothendieck的拓扑分类](#分类定理与topos分类grothendieck的拓扑分类)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、分类定理](#一分类定理)
     - [1.1 Grothendieck分类定理](#11-grothendieck分类定理)
     - [1.2 性质](#12-性质)

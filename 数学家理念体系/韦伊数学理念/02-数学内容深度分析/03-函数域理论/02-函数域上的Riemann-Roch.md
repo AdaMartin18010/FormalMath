@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [函数域上的Riemann-Roch定理](#函数域上的riemann-roch定理)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、Riemann-Roch定理的历史](#一riemann-roch定理的历史)
     - [1.0 函数域Riemann-Roch理论网络图](#10-函数域riemann-roch理论网络图)
     - [1.1 经典Riemann-Roch](#11-经典riemann-roch)

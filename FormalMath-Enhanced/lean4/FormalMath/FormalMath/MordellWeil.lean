@@ -19,8 +19,12 @@
 - Serre, J.P. "Lectures on the Mordell-Weil Theorem"
 -/
 
-import Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
-import Mathlib.NumberTheory.NumberField.Basic
+import Mathlib.Data.Nat.Basic
+import Mathlib.Data.Int.Basic
+import Mathlib.Data.Rat.Basic
+import Mathlib.Data.Real.Basic
+import Mathlib.Algebra.Field.Basic
+import Mathlib.Algebra.Group.Basic
 import Mathlib.LinearAlgebra.FiniteDimensional
 
 namespace MordellWeil
@@ -37,7 +41,9 @@ y² = x³ + ax + b，其中4a³ + 27b² ≠ 0
 -/
 
 -- 数域：特征0的有限扩张
-class NumberField (K : Type u) extends Field K, CharZero K, FiniteDimensional ℚ K
+class NumberField (K : Type u) [Field K] : Prop where
+  charZero : CharZero K
+  finiteDimensional : FiniteDimensional ℚ K
 
 -- Weierstrass曲线参数
 structure WeierstrassParams (K : Type u) [Field K] where
@@ -160,32 +166,32 @@ theorem elliptic_curve_group_axioms {K : Type u} [Field K] (E : EllipticCurve K)
 -/
 
 -- Weil高度（简化定义）
-def WeilHeight {K : Type u} [NumberField K] (α : K) : ℝ :=
+def WeilHeight {K : Type u} [Field K] (α : K) : ℝ :=
   if α = 0 then 0
   else 1  -- 简化：实际应计算所有位的贡献
 
 -- 椭圆曲线上的Weil高度
-def EllipticCurve.WeilHeight {K : Type u} [NumberField K] {E : EllipticCurve K}
+def EllipticCurve.WeilHeight {K : Type u} [Field K] {E : EllipticCurve K}
     (P : E.Point) : ℝ :=
   match P with
   | Point.zero => 0
   | Point.affine P' => WeilHeight P'.x + WeilHeight P'.y
 
 -- 规范高度（Néron-Tate高度）
-def CanonicalHeight {K : Type u} [NumberField K] {E : EllipticCurve K}
+def CanonicalHeight {K : Type u} [Field K] {E : EllipticCurve K}
     (P : E.Point) : ℝ :=
   if P = 0 then 0
   else E.WeilHeight P
 
 -- 规范高度的二次性（框架）
-theorem canonical_height_quadratic {K : Type u} [NumberField K] {E : EllipticCurve K}
+theorem canonical_height_quadratic {K : Type u} [Field K] {E : EllipticCurve K}
     (P : E.Point) (m : ℤ) :
     CanonicalHeight (m • P) = m^2 * CanonicalHeight P := by
   -- 这是规范高度的核心性质
   sorry
 
 -- 规范高度为零当且仅当点是挠点
-theorem canonical_height_zero_iff_torsion {K : Type u} [NumberField K] 
+theorem canonical_height_zero_iff_torsion {K : Type u} [Field K] 
     {E : EllipticCurve K} (P : E.Point) :
     CanonicalHeight P = 0 ↔ ∃ n > 0, n • P = 0 := by
   constructor
@@ -215,7 +221,7 @@ def TorsionSubgroup {K : Type u} [Field K] {E : EllipticCurve K} (n : ℕ) : Set
   { P | n • P = 0 }
 
 -- 弱莫德尔-韦伊定理（框架）
-theorem weak_mordell_weil {K : Type u} [NumberField K] {E : EllipticCurve K}
+theorem weak_mordell_weil {K : Type u} [Field K] [NumberField K] {E : EllipticCurve K}
     (n : ℕ) (hn : n ≥ 2) :
     Finite (Set.range (λ (P : E.Point) => n • P)) := by
   -- 证明依赖于：
@@ -231,7 +237,7 @@ theorem weak_mordell_weil {K : Type u} [NumberField K] {E : EllipticCurve K}
 -/
 
 -- 下降引理（框架）
-theorem descent_lemma {K : Type u} [NumberField K] {E : EllipticCurve K}
+theorem descent_lemma {K : Type u} [Field K] [NumberField K] {E : EllipticCurve K}
     (n : ℕ) (hn : n ≥ 2) :
     ∃ (Q : Finset E.Point),
       ∀ P : E.Point, ∃ q ∈ Q, ∃ P' : E.Point, n • P' + q = P := by
@@ -277,13 +283,13 @@ def TorsionSubgroupFull {K : Type u} [Field K] {E : EllipticCurve K} :
       sorry -- 需要证明
 
 -- 挠子群有限（框架）
-theorem torsion_subgroup_finite {K : Type u} [NumberField K] {E : EllipticCurve K} :
+theorem torsion_subgroup_finite {K : Type u} [Field K] [NumberField K] {E : EllipticCurve K} :
     (TorsionSubgroupFull : Set E.Point).Finite := by
   -- 利用约化理论和Nagell-Lutz定理
   sorry
 
 -- 莫德尔-韦伊定理的主表述（框架）
-theorem mordell_weil_theorem {K : Type u} [NumberField K] {E : EllipticCurve K} :
+theorem mordell_weil_theorem {K : Type u} [Field K] [NumberField K] {E : EllipticCurve K} :
     ∃ (r : ℕ) (basis : Fin r → E.Point) (tors : Finset E.Point),
       (∀ P : E.Point, ∃! (n : Fin r → ℤ) (t ∈ tors), 
         P = ∑ i, n i • basis i + t) := by
@@ -294,7 +300,7 @@ theorem mordell_weil_theorem {K : Type u} [NumberField K] {E : EllipticCurve K} 
   sorry
 
 -- 秩的定义
-def Rank {K : Type u} [NumberField K] (E : EllipticCurve K) : ℕ :=
+def Rank {K : Type u} [Field K] [NumberField K] (E : EllipticCurve K) : ℕ :=
   -- 使得E(K) ≅ ℤ^r × E(K)_tors的整数r
   sorry
 
@@ -332,7 +338,7 @@ theorem mazur_torsion_theorem {E : EllipticCurve ℚ} :
 -/
 
 -- 2-下降法计算秩（框架）
-def ComputeRankBy2Descent {K : Type u} [NumberField K] (E : EllipticCurve K) : ℕ :=
+def ComputeRankBy2Descent {K : Type u} [Field K] [NumberField K] (E : EllipticCurve K) : ℕ :=
   -- 计算dim_{𝔽₂} Sel₂(E/K) - dim_{𝔽₂} Ш(E/K)[2]
   sorry
 

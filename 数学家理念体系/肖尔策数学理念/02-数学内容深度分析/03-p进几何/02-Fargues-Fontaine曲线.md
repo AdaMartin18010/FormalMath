@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Fargues-Fontaine曲线](#fargues-fontaine曲线)
-  - [📋 文档信息](#-文档信息)
+  - [📋 文档信息](#文档信息)
   - [一、Fargues-Fontaine曲线的定义](#一fargues-fontaine曲线的定义)
     - [1.1 历史背景](#11-历史背景)
     - [1.2 基本定义](#12-基本定义)
@@ -70,8 +70,8 @@ processed_at: '2026-04-05'
 ## 📑 目录
 
 - [Fargues-Fontaine曲线](#fargues-fontaine曲线)
-  - [📋 文档信息](#-文档信息)
-  - [📑 目录](#-目录)
+  - [📋 文档信息](#文档信息)
+  - [📑 目录](#目录)
   - [一、Fargues-Fontaine曲线的定义](#一fargues-fontaine曲线的定义)
     - [1.1 历史背景](#11-历史背景)
     - [1.2 基本定义](#12-基本定义)

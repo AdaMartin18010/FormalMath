@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [EGA与SGA：格洛腾迪克的经典著作](#ega与sga格洛腾迪克的经典著作)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [一、Éléments de géométrie algébrique (EGA)](#一éléments-de-géométrie-algébrique-ega)
     - [1.1 EGA的历史背景与地位](#11-ega的历史背景与地位)
     - [1.2 EGA I：概形语言与基本定义](#12-ega-i概形语言与基本定义)

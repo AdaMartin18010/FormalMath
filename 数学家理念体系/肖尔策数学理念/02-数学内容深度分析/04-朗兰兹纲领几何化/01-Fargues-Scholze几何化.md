@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Fargues-Scholze几何化](#fargues-scholze几何化)
-  - [📋 文档信息](#-文档信息)
+  - [📋 文档信息](#文档信息)
   - [一、Fargues-Scholze几何化的起源](#一fargues-scholze几何化的起源)
     - [1.1 历史背景](#11-历史背景)
     - [1.2 问题意识](#12-问题意识)
@@ -69,8 +69,8 @@ processed_at: '2026-04-05'
 ## 📑 目录
 
 - [Fargues-Scholze几何化](#fargues-scholze几何化)
-  - [📋 文档信息](#-文档信息)
-  - [📑 目录](#-目录)
+  - [📋 文档信息](#文档信息)
+  - [📑 目录](#目录)
   - [一、Fargues-Scholze几何化的起源](#一fargues-scholze几何化的起源)
     - [1.1 历史背景](#11-历史背景)
     - [1.2 问题意识](#12-问题意识)

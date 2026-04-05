@@ -16,7 +16,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Scholze与p进Hodge理论的现代发展](#scholze与p进hodge理论的现代发展)
-  - [📋 目录](#-目录)
+  - [📋 目录](#目录)
   - [摘要](#摘要)
   - [一、引言：p进Hodge理论的历史](#一引言p进hodge理论的历史)
   - [二、Fontaine的理论框架](#二fontaine的理论框架)
