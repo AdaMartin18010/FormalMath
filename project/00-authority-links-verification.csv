@@ -1,0 +1,18 @@
+File,URL,Status,Accessible,Error
+project/MIT-course-mapping-detailed.md,https://ocw.mit.edu/courses/mathematics/,200,Yes,
+project/MIT-course-mapping-detailed.md,https://math.mit.edu/research/pure/applied.html,404,No,HTTP Error: 404
+project/Harvard-course-mapping-detailed.md,https://math.harvard.edu/courses/,N/A,No,URL Error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+project/Harvard-course-mapping-detailed.md,https://math.harvard.edu/courses/（每学期更新）,N/A,No,URL Error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+project/Stanford-FOAG-mapping-detailed.md,http://math.stanford.edu/~vakil/216blog/,200,Yes,
+project/Stanford-FOAG-mapping-detailed.md,http://math.stanford.edu/~vakil/,200,Yes,
+project/ETH-course-mapping-detailed.md,https://math.ethz.ch/,200,Yes,
+project/ETH-course-mapping-detailed.md,https://www.ethz.ch/studies/application/bachelor/entry-requirements/course-catalogue.html[需更新,200,Yes,
+project/Princeton-course-mapping-detailed.md,https://www.math.princeton.edu/undergraduate/junior-seminar[需更新,404,No,HTTP Error: 404
+project/Princeton-course-mapping-detailed.md,https://www.math.princeton.edu/undergraduate/senior-thesis[需更新,404,No,HTTP Error: 404
+project/Princeton-course-mapping-detailed.md,https://www.math.princeton.edu/undergraduate/honors[需更新,404,No,HTTP Error: 404
+project/Princeton-course-mapping-detailed.md,https://www.math.princeton.edu/[需更新,200,Yes,
+project/Princeton-course-mapping-detailed.md,https://www.math.princeton.edu/undergraduate[需更新,200,Yes,
+project/Princeton-course-mapping-detailed.md,https://web.math.princeton.edu/~kollar/[需更新,200,Yes,
+project/Cambridge-course-mapping-detailed.md,https://www.maths.cam.ac.uk/undergrad/course/,200,Yes,
+project/Cambridge-course-mapping-detailed.md,https://www.maths.cam.ac.uk/,200,Yes,
+project/Cambridge-course-mapping-detailed.md,https://www.maths.cam.ac.uk/postgrad/part-iii,200,Yes,

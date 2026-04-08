@@ -1,3 +1,20 @@
+/* CSS Variables */
+:root {
+  --touch-target-min: 44px;
+  --mobile-padding-xs: 12px;
+  --mobile-padding-sm: 16px;
+  --mobile-padding-md: 20px;
+  --mobile-font-xs: 12px;
+  --mobile-font-sm: 14px;
+  --mobile-font-base: 16px;
+  --mobile-font-lg: 18px;
+  --mobile-font-xl: 20px;
+  --mobile-radius-sm: 8px;
+  --mobile-radius-md: 12px;
+  --mobile-shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --mobile-shadow-md: 0 2px 8px rgba(0,0,0,0.12);
+}
+
 .app-layout {
   min-height: 100vh;
 }
@@ -9,10 +26,16 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  background: #001529;
 }
 
 .logo {
   margin-right: 48px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
 }
 
 .app-menu {
@@ -31,17 +54,398 @@
   background: #f0f2f5;
 }
 
-/* 响应式调整 */
-@media (max-width: 768px) {
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Offline Indicator */
+.offline-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ff9800;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: var(--mobile-font-sm);
+  z-index: 9999;
+}
+
+/* Touch Optimization */
+@media (pointer: coarse) {
+  button, .ant-btn, a, input, select {
+    min-height: var(--touch-target-min);
+  }
+  
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  input, textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+}
+
+input, textarea, select {
+  font-size: 16px;
+}
+
+/* Safe Area Support */
+@supports (padding: max(0px)) {
   .app-header {
-    padding: 0 16px;
+    padding-left: max(24px, env(safe-area-inset-left));
+    padding-right: max(24px, env(safe-area-inset-right));
+    padding-top: max(0, env(safe-area-inset-top));
+  }
+  
+  .app-content {
+    padding-left: max(0, env(safe-area-inset-left));
+    padding-right: max(0, env(safe-area-inset-right));
+  }
+  
+  .app-footer {
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+  }
+}
+
+/* ============================================
+   xs: <576px (手机竖屏)
+   ============================================ */
+@media (max-width: 575.98px) {
+  .app-header {
+    padding: 0 var(--mobile-padding-xs);
+    height: 56px;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .logo h4 {
+    font-size: 16px !important;
+    margin: 0;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  /* Ant Design Mobile Overrides */
+  .ant-layout-header {
+    padding: 0 var(--mobile-padding-xs) !important;
+  }
+  
+  .ant-menu {
+    font-size: var(--mobile-font-base);
+  }
+  
+  .ant-menu-item {
+    height: var(--touch-target-min) !important;
+    line-height: var(--touch-target-min) !important;
+  }
+  
+  .ant-layout-content {
+    padding: var(--mobile-padding-xs) !important;
+  }
+  
+  .ant-card {
+    margin-bottom: var(--mobile-padding-xs);
+  }
+  
+  .ant-card-body {
+    padding: var(--mobile-padding-sm) !important;
+  }
+  
+  .ant-form-item {
+    margin-bottom: var(--mobile-padding-sm);
+  }
+  
+  .ant-btn {
+    min-height: var(--touch-target-min);
+  }
+  
+  .ant-input, .ant-select {
+    min-height: var(--touch-target-min);
+  }
+  
+  .ant-table {
+    font-size: var(--mobile-font-sm);
+  }
+  
+  .ant-table-cell {
+    padding: 8px !important;
+  }
+  
+  /* Graph Container */
+  .graph-container {
+    height: 300px !important;
+  }
+  
+  /* Path Cards */
+  .path-card {
+    padding: var(--mobile-padding-sm);
+  }
+  
+  .path-card h3 {
+    font-size: var(--mobile-font-base);
+  }
+  
+  /* Concept Cards */
+  .concept-card {
+    padding: var(--mobile-padding-sm);
+  }
+  
+  .concept-card h4 {
+    font-size: var(--mobile-font-base);
+  }
+  
+  /* Progress Tracker */
+  .progress-step {
+    padding: var(--mobile-padding-xs);
+  }
+  
+  .progress-step-title {
+    font-size: var(--mobile-font-sm);
+  }
+  
+  /* Resource List */
+  .resource-item {
+    padding: var(--mobile-padding-sm);
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .resource-item .ant-btn {
+    width: 100%;
+  }
+  
+  /* Tabs */
+  .ant-tabs-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .ant-tabs-tab {
+    padding: 8px 12px !important;
+    font-size: var(--mobile-font-sm);
+  }
+  
+  /* Modal */
+  .ant-modal {
+    max-width: calc(100vw - 32px);
+    margin: 16px auto;
+  }
+  
+  .ant-modal-body {
+    padding: var(--mobile-padding-sm) !important;
+  }
+  
+  /* Drawer */
+  .ant-drawer-content-wrapper {
+    width: 80% !important;
+  }
+  
+  /* Page Title */
+  .page-title {
+    font-size: var(--mobile-font-lg) !important;
+    margin-bottom: var(--mobile-padding-sm) !important;
+  }
+  
+  /* Stats Cards */
+  .stat-card {
+    text-align: center;
+  }
+  
+  .stat-value {
+    font-size: 24px !important;
+  }
+  
+  .stat-label {
+    font-size: var(--mobile-font-xs);
+  }
+}
+
+/* ============================================
+   sm: 576px-768px (手机横屏/小平板)
+   ============================================ */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .app-header {
+    padding: 0 var(--mobile-padding-sm);
   }
   
   .logo {
     margin-right: 24px;
   }
   
-  .logo h4 {
-    font-size: 16px !important;
+  .ant-layout-content {
+    padding: var(--mobile-padding-sm) !important;
   }
+  
+  .graph-container {
+    height: 400px !important;
+  }
+  
+  .resource-item {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* ============================================
+   md: 768px-992px (平板)
+   ============================================ */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .app-header {
+    padding: 0 var(--mobile-padding-md);
+  }
+  
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  .ant-layout-content {
+    padding: 24px !important;
+  }
+}
+
+/* ============================================
+   lg+: >992px (桌面)
+   ============================================ */
+@media (min-width: 992px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
+}
+
+/* ============================================
+   Component Specific Styles
+   ============================================ */
+
+/* Path Visualization */
+.path-visualization {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Knowledge Graph */
+.knowledge-graph {
+  touch-action: pan-zoom;
+}
+
+/* Swipe Hints */
+.swipe-hint {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .swipe-hint {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px 0;
+    color: #999;
+    font-size: var(--mobile-font-xs);
+  }
+  
+  .swipe-hint-icon {
+    animation: swipe-hint 1.5s infinite;
+  }
+  
+  @keyframes swipe-hint {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+  }
+}
+
+/* Skeleton Loading */
+.skeleton-card {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: var(--mobile-radius-sm);
+  height: 120px;
+  margin-bottom: var(--mobile-padding-sm);
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Math Formula Mobile */
+.math-formula {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 0;
+}
+
+.math-formula::-webkit-scrollbar {
+  height: 4px;
+}
+
+.math-formula::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.math-formula::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+
+@media (max-width: 575.98px) {
+  .math-formula {
+    font-size: 14px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .app-header,
+  .app-footer,
+  .mobile-menu-toggle,
+  .ant-btn {
+    display: none !important;
+  }
+  
+  .app-content {
+    min-height: auto;
+    padding: 0 !important;
+  }
+  
+  .ant-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+  /* Can be enabled if Ant Design dark theme is configured */
 }

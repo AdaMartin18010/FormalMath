@@ -1,0 +1,334 @@
+# FormalMath arXiv前沿跟踪系统配置文件
+# arXiv API文档: https://arxiv.org/help/api/
+
+# 系统基本信息
+system:
+  name: "FormalMath arXiv Tracker"
+  version: "1.0.0"
+  description: "自动化跟踪arXiv数学前沿进展"
+  
+# arXiv API配置
+arxiv:
+  api_base_url: "http://export.arxiv.org/api/query"
+  rate_limit: 3  # 每秒请求数限制
+  timeout: 30    # 请求超时时间（秒）
+  max_results_per_query: 100  # 每次查询最大结果数
+  retry_attempts: 3  # 重试次数
+  retry_delay: 5     # 重试延迟（秒）
+  
+# 跟踪的数学领域 (与FormalMath项目15+分支对应)
+tracking_categories:
+  - id: "math.AG"
+    name: "Algebraic Geometry"
+    name_zh: "代数几何"
+    formalmath_branch: "分支03-几何与拓扑"
+    priority: 1
+    keywords:
+      - "algebraic geometry"
+      - "algebraic variety"
+      - "scheme"
+      - "sheaf"
+      - "cohomology"
+      - "moduli space"
+    
+  - id: "math.AT"
+    name: "Algebraic Topology"
+    name_zh: "代数拓扑"
+    formalmath_branch: "分支03-几何与拓扑"
+    priority: 1
+    keywords:
+      - "algebraic topology"
+      - "homotopy"
+      - "homology"
+      - "cohomology"
+      - "spectral sequence"
+      - "CW complex"
+    
+  - id: "math.CT"
+    name: "Category Theory"
+    name_zh: "范畴论"
+    formalmath_branch: "分支09-代数"
+    priority: 1
+    keywords:
+      - "category theory"
+      - "functor"
+      - "natural transformation"
+      - "adjunction"
+      - "limit"
+      - "colimit"
+      - "monoidal category"
+    
+  - id: "math.GR"
+    name: "Group Theory"
+    name_zh: "群论"
+    formalmath_branch: "分支09-代数"
+    priority: 1
+    keywords:
+      - "group theory"
+      - "finite group"
+      - "Lie group"
+      - "representation"
+      - "sylow"
+      - "nilpotent"
+      - "solvable"
+    
+  - id: "math.NT"
+    name: "Number Theory"
+    name_zh: "数论"
+    formalmath_branch: "分支01-基础"
+    priority: 1
+    keywords:
+      - "number theory"
+      - "prime number"
+      - "diophantine"
+      - "modular form"
+      - "zeta function"
+      - "elliptic curve"
+      - "langlands"
+    
+  - id: "math.CV"
+    name: "Complex Variables"
+    name_zh: "复分析"
+    formalmath_branch: "分支07-分析"
+    priority: 2
+    keywords:
+      - "complex analysis"
+      - "holomorphic"
+      - "meromorphic"
+      - "riemann surface"
+      - "several complex variables"
+    
+  - id: "math.FA"
+    name: "Functional Analysis"
+    name_zh: "泛函分析"
+    formalmath_branch: "分支07-分析"
+    priority: 2
+    keywords:
+      - "functional analysis"
+      - "banach space"
+      - "hilbert space"
+      - "operator"
+      - "spectral theory"
+      - "C*-algebra"
+    
+  - id: "math.DG"
+    name: "Differential Geometry"
+    name_zh: "微分几何"
+    formalmath_branch: "分支03-几何与拓扑"
+    priority: 1
+    keywords:
+      - "differential geometry"
+      - "riemannian geometry"
+      - "curvature"
+      - "manifold"
+      - "connection"
+      - "geodesic"
+    
+  - id: "math.GT"
+    name: "Geometric Topology"
+    name_zh: "几何拓扑"
+    formalmath_branch: "分支03-几何与拓扑"
+    priority: 1
+    keywords:
+      - "geometric topology"
+      - "knot theory"
+      - "3-manifold"
+      - "4-manifold"
+      - "hyperbolic geometry"
+    
+  - id: "math.LO"
+    name: "Logic"
+    name_zh: "逻辑"
+    formalmath_branch: "分支01-基础"
+    priority: 2
+    keywords:
+      - "mathematical logic"
+      - "model theory"
+      - "proof theory"
+      - "set theory"
+      - "recursion theory"
+      - "formal system"
+    
+  - id: "math.PR"
+    name: "Probability"
+    name_zh: "概率论"
+    formalmath_branch: "分支05-概率统计"
+    priority: 2
+    keywords:
+      - "probability"
+      - "stochastic process"
+      - "martingale"
+      - "markov"
+      - "brownian motion"
+      - "random walk"
+    
+  - id: "math.ST"
+    name: "Statistics"
+    name_zh: "统计"
+    formalmath_branch: "分支05-概率统计"
+    priority: 2
+    keywords:
+      - "statistics"
+      - "statistical inference"
+      - "estimation"
+      - "hypothesis testing"
+      - "regression"
+      - "bayesian"
+    
+  - id: "math.NA"
+    name: "Numerical Analysis"
+    name_zh: "数值分析"
+    formalmath_branch: "分支13-计算数学"
+    priority: 2
+    keywords:
+      - "numerical analysis"
+      - "numerical method"
+      - "finite element"
+      - "finite difference"
+      - "numerical linear algebra"
+    
+  - id: "math.RA"
+    name: "Rings and Algebras"
+    name_zh: "环与代数"
+    formalmath_branch: "分支09-代数"
+    priority: 2
+    keywords:
+      - "ring"
+      - "algebra"
+      - "module"
+      - "homological algebra"
+      - "commutative algebra"
+      - "noncommutative"
+    
+  - id: "math.RT"
+    name: "Representation Theory"
+    name_zh: "表示论"
+    formalmath_branch: "分支09-代数"
+    priority: 2
+    keywords:
+      - "representation theory"
+      - "group representation"
+      - "lie algebra representation"
+      - "character"
+      - "highest weight"
+
+# 相关性评分配置
+relevance_scoring:
+  # 评分阈值
+  high_threshold: 0.7    # 高相关
+  medium_threshold: 0.4  # 中等相关
+  
+  # 权重配置
+  weights:
+    keyword_match: 0.35      # 关键词匹配权重
+    concept_match: 0.30      # 概念匹配权重
+    mathematician_match: 0.15 # 数学家匹配权重
+    msc_match: 0.20          # MSC分类匹配权重
+  
+  # 关键词匹配配置
+  keyword_match:
+    title_weight: 3.0      # 标题中关键词权重
+    abstract_weight: 1.5   # 摘要中关键词权重
+    author_weight: 2.0     # 作者匹配权重
+  
+  # 概念匹配配置
+  concept_match:
+    exact_match: 1.0       # 完全匹配
+    partial_match: 0.5     # 部分匹配
+    synonym_match: 0.7     # 同义词匹配
+
+# 筛选配置
+filter:
+  # 时间范围（天）
+  lookback_days: 7
+  
+  # 最小相关性分数
+  min_relevance_score: 0.3
+  
+  # 排除关键词
+  exclude_keywords:
+    - "erratum"
+    - "corrigendum"
+    - "withdrawn"
+    - "comment on"
+    - "reply to"
+  
+  # 必须包含关键词（可选）
+  require_keywords: []
+
+# 存储配置
+storage:
+  # 数据存储目录
+  data_dir: "./data"
+  
+  # 报告输出目录
+  report_dir: "./reports"
+  
+  # 日志目录
+  log_dir: "./logs"
+  
+  # 文件格式
+  output_format: "json"  # 可选: json, markdown, csv
+  
+  # 历史记录保留天数
+  history_retention_days: 365
+
+# 报告配置
+report:
+  # 报告生成频率
+  frequency: "weekly"  # daily, weekly, monthly
+  
+  # 报告包含内容
+  sections:
+    - "summary"
+    - "high_relevance_papers"
+    - "medium_relevance_papers"
+    - "by_category"
+    - "trending_topics"
+    - "update_suggestions"
+  
+  # 每类论文最大数量
+  max_papers_per_section: 20
+
+# 通知配置
+notification:
+  # 是否启用通知
+  enabled: false
+  
+  # 通知渠道
+  channels:
+    - type: "email"
+      smtp_server: ""
+      smtp_port: 587
+      username: ""
+      password: ""
+      recipients: []
+    
+    - type: "webhook"
+      url: ""
+      method: "POST"
+
+# 调度配置
+scheduler:
+  # 定时任务类型: cron, interval
+  type: "cron"
+  
+  # cron表达式 (每周一上午9点)
+  cron_expression: "0 9 * * 1"
+  
+  # 或者使用间隔（分钟）
+  # interval_minutes: 10080  # 每周
+
+# 知识库集成配置
+knowledge_base:
+  # 概念图谱路径
+  concept_graph_path: "../../multilang_concept_table.json"
+  
+  # 数学家数据路径
+  mathematician_data_path: "../../math_data.json"
+  
+  # MSC分类数据路径
+  msc_data_path: "../../concept_prerequisites_geometry_topology_update.yaml"
+  
+  # 知识库更新建议阈值
+  update_suggestion_threshold: 0.6

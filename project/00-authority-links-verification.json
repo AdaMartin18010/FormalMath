@@ -1,0 +1,127 @@
+{
+  "verification_date": "2026-04-08T13:19:26.229568",
+  "total_links": 17,
+  "accessible_count": 11,
+  "failed_count": 6,
+  "results": [
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "https://ocw.mit.edu/courses/mathematics/",
+      "file": "project/MIT-course-mapping-detailed.md"
+    },
+    {
+      "status": 404,
+      "accessible": false,
+      "error": "HTTP Error: 404",
+      "url": "https://math.mit.edu/research/pure/applied.html",
+      "file": "project/MIT-course-mapping-detailed.md"
+    },
+    {
+      "status": null,
+      "accessible": false,
+      "error": "URL Error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)",
+      "url": "https://math.harvard.edu/courses/",
+      "file": "project/Harvard-course-mapping-detailed.md"
+    },
+    {
+      "status": null,
+      "accessible": false,
+      "error": "URL Error: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)",
+      "url": "https://math.harvard.edu/courses/（每学期更新）",
+      "file": "project/Harvard-course-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "http://math.stanford.edu/~vakil/216blog/",
+      "file": "project/Stanford-FOAG-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "http://math.stanford.edu/~vakil/",
+      "file": "project/Stanford-FOAG-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "https://math.ethz.ch/",
+      "file": "project/ETH-course-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "https://www.ethz.ch/studies/application/bachelor/entry-requirements/course-catalogue.html[需更新",
+      "file": "project/ETH-course-mapping-detailed.md"
+    },
+    {
+      "status": 404,
+      "accessible": false,
+      "error": "HTTP Error: 404",
+      "url": "https://www.math.princeton.edu/undergraduate/junior-seminar[需更新",
+      "file": "project/Princeton-course-mapping-detailed.md"
+    },
+    {
+      "status": 404,
+      "accessible": false,
+      "error": "HTTP Error: 404",
+      "url": "https://www.math.princeton.edu/undergraduate/senior-thesis[需更新",
+      "file": "project/Princeton-course-mapping-detailed.md"
+    },
+    {
+      "status": 404,
+      "accessible": false,
+      "error": "HTTP Error: 404",
+      "url": "https://www.math.princeton.edu/undergraduate/honors[需更新",
+      "file": "project/Princeton-course-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "https://www.math.princeton.edu/[需更新",
+      "file": "project/Princeton-course-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "https://www.math.princeton.edu/undergraduate[需更新",
+      "file": "project/Princeton-course-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "https://web.math.princeton.edu/~kollar/[需更新",
+      "file": "project/Princeton-course-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "https://www.maths.cam.ac.uk/undergrad/course/",
+      "file": "project/Cambridge-course-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "https://www.maths.cam.ac.uk/",
+      "file": "project/Cambridge-course-mapping-detailed.md"
+    },
+    {
+      "status": 200,
+      "accessible": true,
+      "error": null,
+      "url": "https://www.maths.cam.ac.uk/postgrad/part-iii",
+      "file": "project/Cambridge-course-mapping-detailed.md"
+    }
+  ]
+}

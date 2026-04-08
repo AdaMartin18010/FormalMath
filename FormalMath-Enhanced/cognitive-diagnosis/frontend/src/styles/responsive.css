@@ -1,0 +1,544 @@
+/**
+ * Cognitive Diagnosis - Responsive Styles
+ * 移动端响应式设计 - 断点定义
+ * xs: <576px (手机竖屏)
+ * sm: 576px-768px (手机横屏/小平板)
+ * md: 768px-992px (平板)
+ * lg: 992px-1200px (小桌面)
+ * xl: >1200px (大桌面)
+ */
+
+/* ============================================
+   CSS变量定义
+   ============================================ */
+:root {
+  /* 移动端触摸目标最小尺寸 */
+  --touch-target-min: 44px;
+  --touch-target-comfortable: 48px;
+  
+  /* 移动端间距 */
+  --mobile-padding-xs: 12px;
+  --mobile-padding-sm: 16px;
+  --mobile-padding-md: 20px;
+  
+  /* 移动端字体 */
+  --mobile-font-xs: 12px;
+  --mobile-font-sm: 14px;
+  --mobile-font-base: 16px;
+  --mobile-font-lg: 18px;
+  --mobile-font-xl: 20px;
+  --mobile-font-2xl: 24px;
+  
+  /* 移动端圆角 */
+  --mobile-radius-sm: 8px;
+  --mobile-radius-md: 12px;
+  --mobile-radius-lg: 16px;
+  
+  /* 移动端阴影 */
+  --mobile-shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --mobile-shadow-md: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* ============================================
+   基础移动端优化
+   ============================================ */
+
+/* 触摸优化 */
+@media (pointer: coarse) {
+  /* 增大触摸目标 */
+  button, 
+  .btn,
+  a,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  select {
+    min-height: var(--touch-target-min);
+    min-width: var(--touch-target-min);
+  }
+  
+  /* 移除触摸高亮 */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* 禁用文本选择（除输入框） */
+  body {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  input, textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+}
+
+/* 字体大小适配 - 防止iOS缩放 */
+input, textarea, select {
+  font-size: 16px;
+}
+
+/* ============================================
+   xs: <576px (手机竖屏)
+   ============================================ */
+@media (max-width: 575.98px) {
+  /* 导航栏 - 移动端汉堡菜单 */
+  .navbar {
+    padding: var(--mobile-padding-xs);
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .nav-brand a {
+    font-size: var(--mobile-font-lg);
+  }
+  
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: var(--mobile-padding-xs) 0;
+    gap: 0;
+    margin-top: var(--mobile-padding-xs);
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .nav-links li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: var(--mobile-padding-xs);
+    font-size: var(--mobile-font-base);
+  }
+  
+  /* 汉堡菜单按钮 */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s;
+  }
+  
+  .nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* 主内容区 */
+  .main-content {
+    padding: var(--mobile-padding-xs);
+  }
+  
+  /* Hero区域 */
+  .hero {
+    padding: 2rem var(--mobile-padding-xs);
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero h1 {
+    font-size: var(--mobile-font-2xl);
+    margin-bottom: 0.75rem;
+  }
+  
+  .subtitle {
+    font-size: var(--mobile-font-base);
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .btn-large {
+    padding: 0.875rem 1.5rem;
+    font-size: var(--mobile-font-base);
+    width: 100%;
+  }
+  
+  /* 功能卡片网格 */
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: var(--mobile-padding-xs);
+  }
+  
+  .feature-card {
+    padding: var(--mobile-padding-sm);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+  }
+  
+  .feature-card h3 {
+    font-size: var(--mobile-font-lg);
+  }
+  
+  .feature-card p {
+    font-size: var(--mobile-font-sm);
+  }
+  
+  /* 知识层次 */
+  .knowledge-levels {
+    padding: var(--mobile-padding-sm);
+  }
+  
+  .level-item {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--mobile-padding-sm);
+  }
+  
+  .level-badge {
+    width: 40px;
+    height: 40px;
+    font-size: var(--mobile-font-base);
+  }
+  
+  /* 诊断页面 */
+  .diagnosis-container {
+    padding: var(--mobile-padding-xs);
+  }
+  
+  .question-card {
+    padding: var(--mobile-padding-sm);
+  }
+  
+  .question-text {
+    font-size: var(--mobile-font-base);
+    line-height: 1.6;
+  }
+  
+  .options-list {
+    gap: 0.5rem;
+  }
+  
+  .option-item {
+    padding: var(--mobile-padding-sm);
+    font-size: var(--mobile-font-sm);
+  }
+  
+  /* 报告页面 */
+  .report-container {
+    padding: var(--mobile-padding-xs);
+  }
+  
+  .report-header {
+    flex-direction: column;
+    gap: var(--mobile-padding-xs);
+  }
+  
+  .ability-chart-container {
+    height: 250px;
+  }
+  
+  /* 图表容器 */
+  .chart-wrapper {
+    padding: var(--mobile-padding-xs);
+  }
+  
+  /* 按钮组 */
+  .button-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .button-group .btn {
+    width: 100%;
+  }
+  
+  /* 卡片 */
+  .card {
+    padding: var(--mobile-padding-sm);
+    border-radius: var(--mobile-radius-md);
+  }
+  
+  .card-title {
+    font-size: var(--mobile-font-lg);
+  }
+  
+  /* 页脚 */
+  .footer {
+    padding: var(--mobile-padding-sm);
+    font-size: var(--mobile-font-xs);
+  }
+}
+
+/* ============================================
+   sm: 576px-768px (手机横屏/小平板)
+   ============================================ */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar {
+    padding: var(--mobile-padding-sm) var(--mobile-padding-md);
+  }
+  
+  .nav-brand a {
+    font-size: var(--mobile-font-xl);
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .main-content {
+    padding: var(--mobile-padding-sm);
+  }
+  
+  .hero {
+    padding: 3rem var(--mobile-padding-md);
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .btn-large {
+    flex: 1;
+    min-width: 150px;
+  }
+}
+
+/* ============================================
+   md: 768px-992px (平板)
+   ============================================ */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main-content {
+    padding: 1.5rem;
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* ============================================
+   lg+: >992px (桌面)
+   ============================================ */
+@media (min-width: 992px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* ============================================
+   安全区域适配 (iPhone X+)
+   ============================================ */
+@supports (padding: max(0px)) {
+  .navbar {
+    padding-left: max(var(--mobile-padding-xs), env(safe-area-inset-left));
+    padding-right: max(var(--mobile-padding-xs), env(safe-area-inset-right));
+    padding-top: max(var(--mobile-padding-xs), env(safe-area-inset-top));
+  }
+  
+  .main-content {
+    padding-left: max(var(--mobile-padding-xs), env(safe-area-inset-left));
+    padding-right: max(var(--mobile-padding-xs), env(safe-area-inset-right));
+    padding-bottom: max(var(--mobile-padding-xs), env(safe-area-inset-bottom));
+  }
+  
+  .footer {
+    padding-bottom: max(var(--mobile-padding-sm), env(safe-area-inset-bottom));
+  }
+}
+
+/* ============================================
+   离线状态指示器
+   ============================================ */
+.offline-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ff9800;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: var(--mobile-font-sm);
+  z-index: 9999;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+body.offline .offline-indicator {
+  transform: translateY(0);
+}
+
+/* ============================================
+   触摸手势支持
+   ============================================ */
+.swipe-container {
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.swipe-item {
+  touch-action: pan-y pinch-zoom;
+}
+
+/* 滑动指示器 */
+.swipe-hint {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.swipe-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ddd;
+  transition: background 0.3s;
+}
+
+.swipe-dot.active {
+  background: #1976d2;
+}
+
+/* ============================================
+   数学公式移动端优化
+   ============================================ */
+.math-formula {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 0;
+}
+
+.math-formula::-webkit-scrollbar {
+  height: 4px;
+}
+
+.math-formula::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.math-formula::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+
+/* 公式字体大小适配 */
+@media (max-width: 575.98px) {
+  .math-formula {
+    font-size: 14px;
+  }
+  
+  .katex {
+    font-size: 1em;
+  }
+}
+
+/* ============================================
+   图片懒加载占位
+   ============================================ */
+.lazy-image-container {
+  position: relative;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.lazy-image-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #999;
+  font-size: var(--mobile-font-sm);
+}
+
+/* ============================================
+   加载骨架屏
+   ============================================ */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-text {
+  height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.skeleton-title {
+  height: 1.5em;
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.skeleton-card {
+  height: 120px;
+  border-radius: var(--mobile-radius-md);
+}
+
+/* ============================================
+   打印样式
+   ============================================ */
+@media print {
+  .navbar,
+  .nav-toggle,
+  .footer,
+  .btn {
+    display: none !important;
+  }
+  
+  .main-content {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+}

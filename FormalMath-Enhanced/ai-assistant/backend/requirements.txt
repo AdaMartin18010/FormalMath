@@ -1,0 +1,25 @@
+# AI助手服务依赖
+
+# Web框架
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# 配置
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# HTTP客户端
+aiohttp>=3.9.0
+
+# 数据处理
+numpy>=1.24.0
+
+# 工具
+python-dotenv>=1.0.0
+
+# 可选：与主API集成
+# 如果需要与FormalMath-Enhanced/api集成，请取消下面注释
+# sqlalchemy>=2.0.0
+# redis>=5.0.0
+# celery>=5.3.0
