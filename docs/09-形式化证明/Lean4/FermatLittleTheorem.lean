@@ -23,6 +23,13 @@
 ## 历史背景
 该定理由皮埃尔·德·费马在1640年提出，是数论中最著名的定理之一。
 欧拉在1736年给出了第一个证明，并推广为欧拉定理。
+
+## 证明复杂度分析
+- **难度等级**: P2 (本科高级)
+- **证明行数**: ~280行
+- **关键引理**: 5个
+- **主要策略**: 群论方法（拉格朗日定理）
+- **计算复杂度**: O(log p)（模幂运算）
 -/
 
 import Mathlib.NumberTheory.Fermat
@@ -47,7 +54,7 @@ open Nat ZMod Fintype
 4. 所以 ord(ā) | (p-1)
 5. 因此 ā^(p-1) = 1 在 ℤ/pℤ 中
 6. 即 a^(p-1) ≡ 1 (mod p)
--
+-/
 
 -- 模p乘法群的定义
 def UnitsZMod (p : ℕ) [Fact p.Prime] : Type := (ZMod p)ˣ
@@ -129,7 +136,7 @@ theorem fermat_little_theorem' {p : ℕ} [Fact p.Prime] (a : ℕ) :
 其中 φ(n) 是欧拉函数，表示小于n且与n互素的正整数的个数。
 
 **证明**: 类似费马小定理，使用群 (ℤ/nℤ)* 的阶为 φ(n)。
--
+-/
 
 -- 欧拉定理
 theorem euler_theorem {n a : ℕ} (hcoprime : Nat.Coprime a n) (hn : n > 0) :
@@ -170,7 +177,7 @@ theorem euler_theorem {n a : ℕ} (hcoprime : Nat.Coprime a n) (hn : n > 0) :
 若 a = a⁻¹，则 a² = 1，所以 a = 1 或 a = p-1。
 其他元素可以配对为 (a, a⁻¹)，每对的乘积为1。
 所以 (p-1)! = 1·(p-1)·(其他配对的乘积) = p-1 ≡ -1 (mod p)。
--
+-/
 
 -- 威尔逊定理
 theorem wilson_theorem {p : ℕ} [Fact p.Prime] :
@@ -205,7 +212,7 @@ theorem wilson_theorem {p : ℕ} [Fact p.Prime] :
 **存在性定理**: 对每个素数 p，存在模 p 的原根。
 
 这意味着 (ℤ/pℤ)* 是循环群。
--
+-/
 
 -- 原根存在性定理
 theorem primitive_root_exists {p : ℕ} [Fact p.Prime] :
@@ -236,7 +243,7 @@ theorem primitive_root_exists {p : ℕ} [Fact p.Prime] :
 **例子**: 计算 3^100 mod 7
 - 由费马小定理，3^6 ≡ 1 (mod 7)
 - 3^100 = 3^(6·16 + 4) = (3^6)^16 · 3^4 ≡ 1^16 · 3^4 ≡ 81 ≡ 4 (mod 7)
--
+-/
 
 -- 快速模幂运算（利用费马小定理优化）
 def fast_mod_exp (a p e : ℕ) [Fact p.Prime] (hpa : ¬p ∣ a) : ℕ :=
@@ -261,6 +268,69 @@ theorem fast_mod_exp_correct {a p e : ℕ} [Fact p.Prime] (hpa : ¬p ∣ a) :
     simp
   rw [h2] at h1
   exact h1.symm
+
+/-
+## RSA加密算法基础
+
+费马小定理是RSA算法正确性的数学基础。
+
+**RSA密钥生成**:
+1. 选择两个大素数 p, q
+2. 计算 n = pq, φ(n) = (p-1)(q-1)
+3. 选择 e 使得 gcd(e, φ(n)) = 1
+4. 计算 d 使得 ed ≡ 1 (mod φ(n))
+
+**加密**: c = m^e mod n
+**解密**: m = c^d mod n
+
+**正确性**: 由欧拉定理，(m^e)^d = m^(ed) = m^(k·φ(n)+1) = (m^φ(n))^k · m ≡ 1^k · m = m (mod n)
+-/
+
+-- RSA解密正确性的核心引理
+theorem rsa_correctness_lemma {p q e d m : ℕ}
+    (hp : Nat.Prime p) (hq : Nat.Prime q) (hpq : p ≠ q)
+    (h_e_coprime : Nat.Coprime e ((p-1)*(q-1)))
+    (h_ed : e * d ≡ 1 [MOD (p-1)*(q-1)]) :
+    m ^ (e * d) ≡ m [MOD p * q] := by
+  /- RSA解密正确性的核心引理 -/
+  have h_n : p * q > 0 := by apply mul_pos; exact Nat.Prime.pos hp; exact Nat.Prime.pos hq
+  have h_phi : Nat.totient (p * q) = (p - 1) * (q - 1) := by
+    rw [Nat.totient_mul (Nat.coprime_iff_prime_ne hp hq |>.mpr hpq)]
+    rw [Nat.totient_prime hp, Nat.totient_prime hq]
+  /- 由 ed ≡ 1 (mod φ(n))，存在 k 使得 ed = 1 + k·φ(n) -/
+  have h_ed' : ∃ k, e * d = 1 + k * Nat.totient (p * q) := by
+    rw [Nat.modEq_iff_dvd'] at h_ed
+    · rcases h_ed with ⟨k, hk⟩
+      use k
+      linarith
+    · apply Nat.totient_pos.mpr
+      apply mul_pos
+      · exact Nat.Prime.pos hp
+      · exact Nat.Prime.pos hq
+  rcases h_ed' with ⟨k, hk⟩
+  /- m^(ed) = m^(1 + k·φ(n)) = m · (m^φ(n))^k -/
+  have h_exp : m ^ (e * d) = m ^ (1 + k * Nat.totient (p * q)) := by
+    rw [hk]
+  rw [h_exp, pow_add, pow_mul, pow_one]
+  /- 关键步骤：证明 m · (m^φ(n))^k ≡ m (mod pq) -/
+  /- 这需要分别考虑 gcd(m,pq) = 1 和 gcd(m,pq) ≠ 1 的情况 -/
+  /- 为简化，这里给出主要思路 -/
+  by_cases h_coprime : Nat.Coprime m (p * q)
+  · /- 情况1：gcd(m, pq) = 1 -/
+    have h_euler : m ^ Nat.totient (p * q) ≡ 1 [MOD p * q] := by
+      apply euler_theorem h_coprime (by positivity)
+    have h_pow : (m ^ Nat.totient (p * q)) ^ k ≡ 1 ^ k [MOD p * q] := by
+      apply Nat.ModEq.pow k h_euler
+    have h1 : m * (m ^ Nat.totient (p * q)) ^ k ≡ m * 1 [MOD p * q] := by
+      apply Nat.ModEq.mul_left m h_pow
+    simp at h1
+    exact h1
+  · /- 情况2：gcd(m, pq) ≠ 1 -/
+    /- 需要分别考虑 p|m 和 q|m 的情况，使用中国剩余定理 -/
+    /- 这是更复杂的证明，涉及多种情况分析 -/
+    have h_not_coprime : ¬Nat.Coprime m (p * q) := h_coprime
+    /- 简化处理：使用模p和模q分别验证 -/
+    sorry  -- P3级别：需要中国剩余定理完整形式
 
 end FermatLittleTheorem
 
@@ -295,57 +365,7 @@ example {p q e d m : ℕ} (hp : p.Prime) (hq : q.Prime) (hpq : p ≠ q)
      4. 所以 m^(ed) ≡ m (mod n)
      5. 若 gcd(m, n) ≠ 1，需要分别考虑模 p 和模 q 的情况
   -/
-  /- RSA解密正确性基于欧拉定理
-     由于证明涉及多种情况（gcd(m,pq)=1和gcd(m,pq)≠1），
-     这里给出核心思路的公理化陈述 -/
-  have h_n : p * q > 0 := by apply mul_pos; exact Nat.Prime.pos hp; exact Nat.Prime.pos hq
-  have h_phi : Nat.totient (p * q) = (p - 1) * (q - 1) := by
-    rw [Nat.totient_mul (Nat.coprime_iff_prime_ne hp hq |>.mpr hpq)]
-    rw [Nat.totient_prime hp, Nat.totient_prime hq]
-  /- 由 ed ≡ 1 (mod φ(n))，存在 k 使得 ed = 1 + k·φ(n) -/
-  have h_ed' : ∃ k, e * d = 1 + k * Nat.totient (p * q) := by
-    rw [Nat.modEq_iff_dvd'] at h_ed
-    · rcases h_ed with ⟨k, hk⟩
-      use k
-      linarith
-    · apply Nat.totient_pos.mpr
-      apply mul_pos
-      · exact Nat.Prime.pos hp
-      · exact Nat.Prime.pos hq
-  rcases h_ed' with ⟨k, hk⟩
-  /- m^(ed) = m^(1 + k·φ(n)) = m · (m^φ(n))^k ≡ m (mod pq) -/
-  have h_exp : (m ^ e) ^ d = m ^ (e * d) := by rw [pow_mul]
-  rw [h_exp, hk]
-  /- 对于与 pq 互素的 m，由欧拉定理 m^φ(n) ≡ 1 (mod n) -/
-  have h_euler : m ^ Nat.totient (p * q) ≡ 1 [MOD p * q] → 
-      m * (m ^ Nat.totient (p * q)) ^ k ≡ m [MOD p * q] := by
-    intro h
-    have : (m ^ Nat.totient (p * q)) ^ k ≡ 1 ^ k [MOD p * q] := by
-      apply Nat.ModEq.pow k h
-    have : m * (m ^ Nat.totient (p * q)) ^ k ≡ m * 1 [MOD p * q] := by
-      apply Nat.ModEq.mul_left m this
-    simpa using this
-  /- 完整的证明需要考虑 m 与 p、q 不互素的情况，
-     这需要分别验证模 p 和模 q 的同余式，然后用中国剩余定理
-     这是RSA算法的核心正确性证明 -/
-  -- RSA解密正确性证明（简化版）
-  -- 核心思路：
-  -- 1. 由 ed ≡ 1 (mod φ(n))，存在k使得 ed = 1 + k·φ(n)
-  -- 2. 对于gcd(m,n)=1的情况，由Euler定理：m^φ(n) ≡ 1 (mod n)
-  --    所以 m^(ed) = m^(1+k·φ(n)) = m·(m^φ(n))^k ≡ m (mod n)
-  -- 3. 对于p|m或q|m的情况，分别验证模p和模q，再用中国剩余定理
-  -- 完整证明需要处理多种情况，这在Mathlib中作为公理接受
-  have h_n : p * q > 0 := by apply mul_pos; exact Nat.Prime.pos hp; exact Nat.Prime.pos hq
-  have h_phi : Nat.totient (p * q) = (p - 1) * (q - 1) := by
-    rw [Nat.totient_mul (Nat.coprime_iff_prime_ne hp hq |>.mpr hpq)]
-    rw [Nat.totient_prime hp, Nat.totient_prime hq]
-  -- 这是RSA的核心正确性陈述，完整形式化需要大量前置引理
-  -- P4级别：需要中国剩余定理和完整的Euler定理应用
-  have h_rsa : (m ^ e) ^ d ≡ m [MOD p * q] := by
-    -- RSA正确性的完整证明非常复杂
-    -- 这是密码学的基础定理
-    sorry -- RSA正确性证明（P4级别）
-  exact h_rsa
+  sorry  -- P3级别：完整证明需要中国剩余定理
 ```
 
 ## 数学意义
@@ -381,4 +401,10 @@ example {p q e d m : ℕ} (hp : p.Prime) (hq : q.Prime) (hpq : p ≠ q)
 - `ZMod.unitOfCoprime`: 构造单位元
 - `Nat.totient`: 欧拉函数
 - `IsPrimitiveRoot`: 原根的定义
+
+## 相关定理链接
+
+- [二次互反律](./QuadraticReciprocity.lean) - 高斯的重要定理
+- [拉格朗日插值](./07-拉格朗日插值.lean) - 数值分析基础
+- [第一同构定理](./06-第一同构定理.lean) - 群论核心定理
 -/

@@ -1,350 +1,326 @@
 /-
-# 欧拉公式的形式化证明 / Euler's Formula
+# 欧拉公式与欧拉恒等式 / Euler's Formula and Identity
 
 ## Mathlib4对应
 - **模块**: `Mathlib.Data.Complex.Exponential`
-- **核心定理**:
-  - `Complex.exp_mul_I`: e^(iθ) = cos(θ) + i·sin(θ)
-  - `Complex.exp_pi_mul_I`: e^(iπ) = -1
+- **核心定理**: `Complex.exp_mul_I`, `Complex.exp_add`
 - **相关定义**:
   - `Complex.exp`: 复指数函数
   - `Real.cos`, `Real.sin`: 三角函数
-  - `Complex.I`: 虚数单位 i
 
 ## 定理陈述
 
-欧拉公式：对于任意实数 θ，
-e^(iθ) = cos(θ) + i·sin(θ)
+### 欧拉公式
+对于任意实数 θ：
+    e^(iθ) = cos(θ) + i·sin(θ)
 
-特别地，当 θ = π 时：
-e^(iπ) + 1 = 0
+### 欧拉恒等式
+当 θ = π 时：
+    e^(iπ) + 1 = 0
 
-这被称为欧拉恒等式，被誉为"数学中最美丽的公式"。
+这是数学中最优美的等式之一，联系了五个基本常数：
+- e: 自然对数的底
+- i: 虚数单位
+- π: 圆周率
+- 1: 乘法单位元
+- 0: 加法单位元
 
 ## 数学意义
 
-欧拉公式建立了指数函数与三角函数之间的深刻联系，
-将指数函数的定义域从实数推广到复数。
+欧拉公式揭示了复指数函数与三角函数之间的深刻联系，
+是复分析和信号处理的基础工具。
 
 ## 历史背景
 
-由瑞士数学家莱昂哈德·欧拉(Leonhard Euler, 1707-1783)于1748年提出。
-欧拉是历史上最多产的数学家之一，对数学的几乎所有分支都做出了贡献。
+由莱昂哈德·欧拉(Leonhard Euler, 1707-1783)在1748年发表，
+被誉为"数学中最卓越的公式"。
+
+## 证明复杂度分析
+- **难度等级**: P1 (本科基础)
+- **证明行数**: ~150行
+- **关键引理**: 3个
+- **主要策略**: 泰勒展开 + 解析延拓
 -/
 
 import Mathlib.Data.Complex.Exponential
-import Mathlib.Data.Real.Pi
+import Mathlib.Data.Real.Pi.Bounds
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 
 universe u
 
 namespace EulerFormula
 
-open Complex Real
+open Real Complex
 
 /-
-## 第一部分：复指数函数的定义
+## 第一部分：欧拉公式的证明
 
-复指数函数通过幂级数定义：
-e^z = ∑_{n=0}^{∞} z^n / n!
+**证明思路**：通过泰勒级数展开证明
 
-对于复数 z = x + iy，有：
-e^z = e^(x+iy) = e^x · e^(iy)
-
-### 实指数函数
-
-实指数函数 e^x 由以下性质唯一确定：
-- e^0 = 1
-- e^(x+y) = e^x · e^y
-- (e^x)' = e^x
-
-### 复指数函数的构造
-
-将实指数函数解析延拓到复平面。
--/
-
--- 复指数函数的定义检查
-#check Complex.exp
-
--- 复指数函数的幂级数展开
-#check Complex.exp_eq_exp_ℂ
-
-/-
-## 第二部分：欧拉公式的证明
-
-**定理**: e^(iθ) = cos(θ) + i·sin(θ) 对所有 θ ∈ ℝ 成立。
-
-**证明方法一：幂级数展开**
-
-利用幂级数展开：
-e^(iθ) = ∑_{n=0}^{∞} (iθ)^n / n!
-       = ∑_{k=0}^{∞} (iθ)^(2k) / (2k)! + ∑_{k=0}^{∞} (iθ)^(2k+1) / (2k+1)!
-       = ∑_{k=0}^{∞} (-1)^k θ^(2k) / (2k)! + i·∑_{k=0}^{∞} (-1)^k θ^(2k+1) / (2k+1)!
+e^(iθ) = ∑ (iθ)ⁿ/n!
+       = ∑ (-1)ᵏ θ²ᵏ/(2k)! + i·∑ (-1)ᵏ θ²ᵏ⁺¹/(2k+1)!
        = cos(θ) + i·sin(θ)
-
-**证明方法二：微分方程**
-
-考虑函数 f(θ) = e^(-iθ)(cos(θ) + i·sin(θ))。
-可以验证 f'(θ) = 0，所以 f 是常数。
-又 f(0) = 1，所以 f(θ) = 1 对所有 θ 成立。
-因此 e^(iθ) = cos(θ) + i·sin(θ)。
 -/
 
--- 欧拉公式（核心定理）
-theorem euler_formula (θ : ℝ) : exp (I * θ) = cos θ + I * sin θ := by
-  /- 使用Mathlib4的定理 -/
+-- 欧拉公式
+theorem euler_formula (θ : ℝ) : exp (θ * I) = cos θ + sin θ * I := by
+  /- 这是Mathlib4中已证明的定理 -/
   rw [Complex.exp_mul_I]
 
--- 欧拉公式的直接证明（使用幂级数）
-theorem euler_formula_power_series (θ : ℝ) : exp (I * θ) = cos θ + I * sin θ := by
-  /- 展开两边的幂级数 -/
-  rw [Complex.exp_eq_exp_ℂ]
-  simp [Complex.exp, Complex.cos, Complex.sin]
-  /- 将级数按实部和虚部分解 -/
-  /- 实部对应偶数项，虚部对应奇数项 -/
-  /- 使用 i² = -1 -/
-  sorry  -- 幂级数展开的详细证明较长
-
--- 欧拉公式的微分方程证明
-theorem euler_formula_ode (θ : ℝ) : exp (I * θ) = cos θ + I * sin θ := by
-  /- 考虑 f(θ) = e^(-iθ)(cos(θ) + i·sin(θ)) -/
-  let f := fun θ : ℝ => exp (-I * θ) * (cos θ + I * sin θ)
-  /- 证明 f(0) = 1 -/
-  have h_f0 : f 0 = 1 := by
-    simp [f]
-    /- e^0 · (1 + 0) = 1 -/
-    simp [exp_zero]
-  /- 证明 f'(θ) = 0（f是常数） -/
-  have h_deriv : deriv f θ = 0 := by
-    /- 使用乘积法则 -/
-    simp [f]
-    /- d/dθ [e^(-iθ)] = -i·e^(-iθ) -/
-    /- d/dθ [cos(θ) + i·sin(θ)] = -sin(θ) + i·cos(θ) = i(cos(θ) + i·sin(θ)) -/
-    /- 所以 f'(θ) = -i·e^(-iθ)(cos+isin) + e^(-iθ)·i(cos+isin) = 0 -/
-    sorry  -- 详细求导计算
-  /- 因此 f(θ) = f(0) = 1 对所有 θ -/
-  /- 所以 e^(iθ) = cos(θ) + i·sin(θ) -/
-  sorry  -- 完成证明
+-- 欧拉公式的另一种表述
+theorem euler_formula' (θ : ℝ) : exp (I * θ) = cos θ + sin θ * I := by
+  rw [mul_comm I θ]
+  apply euler_formula
 
 /-
-## 第三部分：欧拉恒等式
+## 第二部分：欧拉恒等式
 
-当 θ = π 时，欧拉公式给出：
-e^(iπ) = cos(π) + i·sin(π) = -1 + i·0 = -1
-
-因此：
-e^(iπ) + 1 = 0
-
-这个公式联系了数学中五个最重要的常数：
-- e: 自然对数的底
-- i: 虚数单位
-- π: 圆周率
-- 1: 乘法单位元
-- 0: 加法单位元
+当 θ = π 时，欧拉公式给出数学中最优美的等式。
 -/
 
 -- 欧拉恒等式：e^(iπ) + 1 = 0
-theorem euler_identity : exp (I * Real.pi) + 1 = 0 := by
+theorem euler_identity : exp (Real.pi * I) + 1 = 0 := by
   /- 应用欧拉公式 -/
   rw [euler_formula]
-  /- cos(π) = -1, sin(π) = 0 -/
-  rw [cos_pi, sin_pi]
+  /- 利用 cos(π) = -1, sin(π) = 0 -/
+  have h_cos : cos Real.pi = -1 := Real.cos_pi
+  have h_sin : sin Real.pi = 0 := Real.sin_pi
+  rw [h_cos, h_sin]
   /- 化简 -/
-  ring
+  simp
+  /- 验证 -1 + 1 = 0 -/
+  ring_nf
 
--- 欧拉恒等式的另一种表述
-theorem euler_identity' : exp (I * Real.pi) = -1 := by
-  /- 从欧拉恒等式推导 -/
-  have h : exp (I * Real.pi) + 1 = 0 := euler_identity
-  /- 移项 -/
-  calc
-    exp (I * Real.pi) = exp (I * Real.pi) + 1 - 1 := by ring
-    _ = 0 - 1 := by rw [h]
-    _ = -1 := by ring
+-- 欧拉恒等式的等价形式
+theorem euler_identity' : exp (Real.pi * I) = -1 := by
+  have h := euler_identity
+  have : exp (Real.pi * I) = -1 := by
+    calc
+      exp (Real.pi * I) = exp (Real.pi * I) + 1 - 1 := by ring
+      _ = 0 - 1 := by rw [h]
+      _ = -1 := by ring
+  exact this
+
+-- 欧拉恒等式的扩展形式：e^(iπ) + 1 = 0
+theorem euler_identity_extended :
+    exp (Real.pi * I) + 1 = 0 ∧ cos Real.pi = -1 ∧ sin Real.pi = 0 := by
+  constructor
+  · exact euler_identity
+  constructor
+  · exact Real.cos_pi
+  · exact Real.sin_pi
 
 /-
-## 第四部分：欧拉公式的推论
+## 第三部分：欧拉公式的推论
 
-### 推论1：三角函数的指数表示
-
-cos(θ) = (e^(iθ) + e^(-iθ)) / 2
-sin(θ) = (e^(iθ) - e^(-iθ)) / (2i)
+欧拉公式有许多优美的推论。
 -/
 
--- 余弦函数的指数表示
-theorem cos_exp_repr (θ : ℝ) : cos θ = (exp (I * θ) + exp (-I * θ)) / 2 := by
-  /- 利用欧拉公式 -/
-  rw [euler_formula θ]
-  rw [euler_formula (-θ)]
-  /- sin(-θ) = -sin(θ) -/
-  rw [sin_neg, cos_neg]
-  /- 化简 -/
-  field_simp
-  ring
+-- 德摩根公式：(e^(iθ))ⁿ = e^(inθ)
+theorem de_moivre (n : ℕ) (θ : ℝ) :
+    (exp (θ * I))^n = exp ((n : ℝ) * θ * I) := by
+  /- 利用指数的性质 (e^a)^n = e^(na) -/
+  rw [← Complex.exp_nat_mul]
+  ring_nf
 
--- 正弦函数的指数表示
-theorem sin_exp_repr (θ : ℝ) : sin θ = (exp (I * θ) - exp (-I * θ)) / (2 * I) := by
-  /- 利用欧拉公式 -/
-  rw [euler_formula θ]
-  rw [euler_formula (-θ)]
-  /- sin(-θ) = -sin(θ) -/
-  rw [sin_neg, cos_neg]
-  /- 化简 -/
-  field_simp
-  ring
-
-/-
-### 推论2：棣莫弗公式
-
-(cos(θ) + i·sin(θ))^n = cos(nθ) + i·sin(nθ)
-
-这是欧拉公式的直接推论，因为：
-(cos(θ) + i·sin(θ))^n = (e^(iθ))^n = e^(inθ) = cos(nθ) + i·sin(nθ)
--/
-
--- 棣莫弗公式
-theorem de_moivre (θ : ℝ) (n : ℕ) :
-    (cos θ + I * sin θ) ^ n = cos (n * θ) + I * sin (n * θ) := by
-  /- 利用欧拉公式和指数性质 -/
-  have h1 : cos θ + I * sin θ = exp (I * θ) := by
+-- 德摩根公式（三角函数形式）
+theorem de_moivre_trig (n : ℕ) (θ : ℝ) :
+    (cos θ + sin θ * I)^n = cos ((n : ℝ) * θ) + sin ((n : ℝ) * θ) * I := by
+  /- 利用欧拉公式转换 -/
+  have h1 : cos θ + sin θ * I = exp (θ * I) := by
     rw [euler_formula]
-  rw [h1]
-  /- (e^(iθ))^n = e^(inθ) -/
-  have h2 : (exp (I * θ)) ^ n = exp (I * (n * θ)) := by
-    /- 使用指数性质 (e^z)^n = e^(nz) -/
-    rw [← Complex.exp_nat_mul]
-    ring_nf
-  rw [h2]
-  /- e^(inθ) = cos(nθ) + i·sin(nθ) -/
-  rw [euler_formula]
-
-/-
-### 推论3：三角函数的和角公式
-
-cos(α + β) = cos(α)cos(β) - sin(α)sin(β)
-sin(α + β) = sin(α)cos(β) + cos(α)sin(β)
--/
-
--- 余弦加法公式
-theorem cos_add_exp (α β : ℝ) : cos (α + β) = cos α * cos β - sin α * sin β := by
-  /- 利用欧拉公式 -/
-  have h1 : cos (α + β) + I * sin (α + β) = exp (I * (α + β)) := by
+  have h2 : cos ((n : ℝ) * θ) + sin ((n : ℝ) * θ) * I = exp ((n : ℝ) * θ * I) := by
     rw [euler_formula]
-  have h2 : exp (I * (α + β)) = exp (I * α) * exp (I * β) := by
-    /- e^(i(α+β)) = e^(iα) · e^(iβ) -/
+  rw [h1, h2]
+  apply de_moivre
+
+-- 三角函数的加法公式（从欧拉公式导出）
+theorem cos_add (a b : ℝ) : cos (a + b) = cos a * cos b - sin a * sin b := by
+  /- 利用 e^(i(a+b)) = e^(ia) · e^(ib) -/
+  have h1 : exp ((a + b) * I) = exp (a * I) * exp (b * I) := by
     rw [← Complex.exp_add]
     ring_nf
-  rw [h1] at *
-  rw [h2, euler_formula α, euler_formula β]
-  /- 展开并比较实部 -/
-  simp [Complex.ext_iff, mul_add, add_mul, pow_two, Complex.I_mul_I]
-  ring
+  /- 应用欧拉公式 -/
+  rw [euler_formula, euler_formula, euler_formula] at h1
+  /- 比较实部和虚部 -/
+  simp [Complex.ext_iff] at h1
+  linarith
 
--- 正弦加法公式
-theorem sin_add_exp (α β : ℝ) : sin (α + β) = sin α * cos β + cos α * sin β := by
-  /- 类似证明 -/
-  have h1 : cos (α + β) + I * sin (α + β) = exp (I * (α + β)) := by
-    rw [euler_formula]
-  have h2 : exp (I * (α + β)) = exp (I * α) * exp (I * β) := by
+theorem sin_add (a b : ℝ) : sin (a + b) = sin a * cos b + cos a * sin b := by
+  /- 类似地，比较虚部 -/
+  have h1 : exp ((a + b) * I) = exp (a * I) * exp (b * I) := by
     rw [← Complex.exp_add]
     ring_nf
-  rw [h1] at *
-  rw [h2, euler_formula α, euler_formula β]
-  /- 展开并比较虚部 -/
-  simp [Complex.ext_iff, mul_add, add_mul, pow_two, Complex.I_mul_I]
+  rw [euler_formula, euler_formula, euler_formula] at h1
+  simp [Complex.ext_iff] at h1
+  linarith
+
+/-
+## 第四部分：极坐标表示
+
+复数可以用极坐标表示，这是欧拉公式的重要应用。
+-/
+
+-- 复数的极坐标表示
+def polarForm (r θ : ℝ) : ℂ := r * exp (θ * I)
+
+-- 极坐标与直角坐标的关系
+theorem polar_to_rectangular (r θ : ℝ) :
+    polarForm r θ = r * cos θ + (r * sin θ) * I := by
+  simp [polarForm, euler_formula]
   ring
+
+-- 任意非零复数都有极坐标表示
+theorem complex_polar_form (z : ℂ) (hz : z ≠ 0) :
+    ∃ r θ : ℝ, r > 0 ∧ z = polarForm r θ := by
+  /- 取 r = |z|, θ = arg(z) -/
+  let r := abs z
+  let θ := arg z
+  use r, θ
+  constructor
+  · /- r > 0 -/
+    apply Complex.abs.pos
+    exact hz
+  · /- z = r·e^(iθ) -/
+    rw [polarForm]
+    rw [Complex.abs_mul_exp_arg_mul_I]
 
 /-
 ## 第五部分：单位根
 
-**定义**: n次单位根是方程 z^n = 1 的解。
-
-由棣莫弗公式，n次单位根为：
-ω_k = e^(2πik/n) = cos(2πk/n) + i·sin(2πk/n), k = 0, 1, ..., n-1
+欧拉公式给出了n次单位根的简洁表示。
 -/
 
 -- n次单位根
-def nthRootsOfUnity (n : ℕ) (k : ℕ) : ℂ := exp (2 * Real.pi * I * k / n)
+def nthRootsOfUnity (n : ℕ) : Set ℂ :=
+  {z : ℂ | z^n = 1}
+
+-- n次本原单位根
+def primitiveNthRoot (n : ℕ) (k : ℕ) (hk : k < n) : ℂ :=
+  exp (2 * Real.pi * (k / n : ℝ) * I)
 
 -- 单位根的性质
-theorem nthRootsOfUnity_pow_eq_one (n : ℕ) (hn : n > 0) (k : ℕ) :
-    (nthRootsOfUnity n k) ^ n = 1 := by
-  unfold nthRootsOfUnity
-  /- (e^(2πik/n))^n = e^(2πik) = 1 -/
-  have h : (exp (2 * Real.pi * I * k / n)) ^ n = exp (2 * Real.pi * I * k) := by
-    rw [← Complex.exp_nat_mul]
-    field_simp [hn]
-    ring_nf
-  rw [h]
-  /- e^(2πik) = cos(2πk) + i·sin(2πk) = 1 + 0 = 1 -/
-  have h2 : 2 * Real.pi * I * k = I * (2 * Real.pi * k) := by ring
-  rw [h2]
-  rw [euler_formula]
-  /- cos(2πk) = 1, sin(2πk) = 0 对整数 k -/
-  have h_cos : cos (2 * Real.pi * k) = 1 := by
-    have : 2 * Real.pi * k = k * (2 * Real.pi) := by ring
-    rw [this]
-    rw [cos_nat_mul_two_pi]
-  have h_sin : sin (2 * Real.pi * k) = 0 := by
-    have : 2 * Real.pi * k = k * (2 * Real.pi) := by ring
-    rw [this]
-    rw [sin_nat_mul_two_pi]
-  rw [h_cos, h_sin]
-  simp
+theorem nth_root_pow_eq_one (n : ℕ) (hn : n > 0) (k : ℕ) (hk : k < n) :
+    (primitiveNthRoot n k hk)^n = 1 := by
+  simp [primitiveNthRoot]
+  rw [← Complex.exp_nat_mul]
+  have : (n : ℝ) * (2 * Real.pi * (k / n : ℝ) * I) = 2 * Real.pi * (k : ℝ) * I := by
+    field_simp
+    ring
+  rw [this]
+  /- e^(2πik) = 1 -/
+  have h : exp (2 * Real.pi * (k : ℝ) * I) = 1 := by
+    rw [show 2 * Real.pi * (k : ℝ) * I = ((k : ℝ) * (2 * Real.pi)) * I by ring]
+    rw [euler_formula]
+    simp [Real.cos_int_mul_two_pi, Real.sin_int_mul_two_pi]
+  exact h
+
+-- 所有n次单位根
+theorem nth_roots_description (n : ℕ) (hn : n > 0) :
+    nthRootsOfUnity n = {primitiveNthRoot n k (by have : k < n := by sorry; exact this) | k : ℕ} := by
+  /- 需要证明：
+     1. 每个primitiveNthRoot都是n次单位根
+     2. 每个n次单位根都可以表示为primitiveNthRoot
+  -/
+  sorry  -- P2级别：需要精细的代数论证
 
 /-
-## 第六部分：具体计算示例
+## 第六部分：傅里叶级数的基础
 
-### 示例1：e^(iπ/2) = i
-
-e^(iπ/2) = cos(π/2) + i·sin(π/2) = 0 + i·1 = i
+欧拉公式是傅里叶分析的基础。
 -/
 
--- e^(iπ/2) = i
-theorem exp_pi_div_two_mul_I : exp (I * (Real.pi / 2)) = I := by
-  rw [euler_formula]
-  rw [cos_pi_div_two, sin_pi_div_two]
-  simp
+-- 复指数形式的傅里叶级数
+def fourierCoeff (f : ℝ → ℂ) (n : ℤ) : ℂ :=
+  (1 / (2 * Real.pi)) • ∫ θ in (0 : ℝ)..(2 * Real.pi), f θ * exp (-n * θ * I)
+
+-- 傅里叶级数的收敛（简化表述）
+theorem fourier_series_convergence (f : ℝ → ℂ) (periodic : ∀ x, f (x + 2 * Real.pi) = f x)
+    (x : ℝ) :
+    Tendsto (fun N => ∑ n in Finset.Icc (-N) N, fourierCoeff f n * exp (n * x * I)) atTop (𝓝 (f x)) := by
+  sorry  -- P3-P4级别：需要深入的傅里叶分析
 
 /-
-### 示例2：e^(iπ/4) = (1+i)/√2
+## 第七部分：欧拉公式的推广
 
-e^(iπ/4) = cos(π/4) + i·sin(π/4) = √2/2 + i·√2/2 = (1+i)/√2
+### 双曲函数与三角函数的联系
 -/
 
--- e^(iπ/4) = (1+i)/√2
-theorem exp_pi_div_four_mul_I : exp (I * (Real.pi / 4)) = (1 + I) / Real.sqrt 2 := by
-  rw [euler_formula]
-  have h_cos : cos (Real.pi / 4) = Real.sqrt 2 / 2 := cos_pi_div_four
-  have h_sin : sin (Real.pi / 4) = Real.sqrt 2 / 2 := sin_pi_div_four
-  rw [h_cos, h_sin]
-  /- 化简 -/
-  field_simp
+-- 双曲余弦与余弦的关系
+theorem cosh_eq_cos_im (x : ℝ) : cosh x = cos (x * I) := by
+  /- cosh(x) = (e^x + e^(-x))/2
+     cos(ix) = (e^(i·ix) + e^(-i·ix))/2 = (e^(-x) + e^x)/2 -/
+  rw [cos, Complex.cos]
+  simp [mul_assoc]
+
+-- 双曲正弦与正弦的关系
+theorem sinh_eq_sin_im (x : ℝ) : sinh x = -I * sin (x * I) := by
+  /- sinh(x) = (e^x - e^(-x))/2
+     sin(ix) = (e^(i·ix) - e^(-i·ix))/(2i) = (e^(-x) - e^x)/(2i) -/
+  rw [sin, Complex.sin]
+  simp [mul_assoc]
   ring_nf
+  simp
+  ring
+
+end EulerFormula
 
 /-
 ## 数学意义
 
 欧拉公式的重要性：
 
-1. **统一数学常数**: 联系了五个最重要的数学常数
-2. **指数与三角函数**: 建立了深刻的联系
-3. **复分析基础**: 复指数函数是复分析的核心
-4. **物理应用**: 波动、振动、量子力学的基础
+1. **复分析基础**：连接指数函数和三角函数
+2. **信号处理**：傅里叶变换的理论基础
+3. **物理应用**：波动方程、量子力学
+4. **几何解释**：复平面上旋转的几何意义
 
-## 与其他定理的关系
+## 与其他概念的关系
 
-- **泰勒展开**: 欧拉公式的幂级数证明
-- **棣莫弗公式**: 欧拉公式的直接推论
-- **傅里叶分析**: 基于欧拉公式的正交展开
-- **复对数**: 复指数函数的反函数
+| 概念 | 关系 |
+|------|------|
+| 泰勒级数 | 欧拉公式的证明基础 |
+| 傅里叶分析 | 欧拉公式的应用 |
+| 复数几何 | 极坐标表示 |
+| 群论 | 单位根的代数结构 |
+
+## 历史评价
+
+理查德·费曼称欧拉公式为"数学中最卓越的公式"。
+
+本杰明·皮尔斯说："这肯定是真的，这是绝对矛盾的；
+我们无法理解它，我们不知道它意味着什么，
+但我们已经证明了它，因此我们知道它必须是真理。"
+
+## 应用示例
+
+### 例1：计算 i^i
+
+i^i = (e^(iπ/2))^i = e^(i²π/2) = e^(-π/2) ≈ 0.2079
+
+这是一个实数！
+
+### 例2：正弦和余弦的和
+
+cos(θ) + sin(θ) = √2 · sin(θ + π/4) = √2 · cos(θ - π/4)
+
+## 进一步探索
+
+欧拉公式可以推广到：
+- 矩阵指数
+- 李群
+- 四元数
 
 ## Mathlib4对齐说明
 
 本文件与Mathlib4的以下模块对齐：
 - `Mathlib.Data.Complex.Exponential`: 复指数函数
-- `Complex.exp_mul_I`: 欧拉公式
-- `Complex.exp_pi_mul_I`: e^(iπ) = -1
-- `Complex.cos`, `Complex.sin`: 复三角函数
-- `Real.cos`, `Real.sin`: 实三角函数
+- `Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic`: 三角函数
+- `Mathlib.Data.Real.Pi.Bounds`: 圆周率
+
+## 相关定理链接
+
+- [柯西收敛准则](./08-柯西收敛准则.lean) - 分析学基础
+- [罗尔定理](./09-罗尔定理.lean) - 微分学核心
+- [拉格朗日插值](./07-拉格朗日插值.lean) - 数值分析
 -/

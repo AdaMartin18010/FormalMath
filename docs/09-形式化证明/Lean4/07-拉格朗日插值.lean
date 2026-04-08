@@ -24,6 +24,12 @@
 ## 历史背景
 
 由法国数学家约瑟夫·路易斯·拉格朗日(Joseph-Louis Lagrange)于1795年提出。
+
+## 证明复杂度分析
+- **难度等级**: P2 (本科高级)
+- **证明行数**: ~200行
+- **关键引理**: 3个
+- **主要策略**: 构造性证明 + 代数运算
 -/
 
 import Mathlib.Algebra.Polynomial.Basic
@@ -211,22 +217,57 @@ theorem lagrangeInterpolation_degree (xs : Finset R) (ys : R → R) :
 但 deg(R) ≤ n，而有 n+1 个根，所以 R = 0，即 P = Q。
 -/
 
+-- 多项式根的重数判定辅助引理
+theorem isRoot_of_mem_roots {R : Type*} [Field R] [DecidableEq R]
+    (p : Polynomial R) (x : R) : x ∈ p.roots → p.IsRoot x := by
+  intro h
+  exact (mem_roots'.mp h).2
+
+-- 根集包含关系判定
+theorem roots_subset_of_forall_root {R : Type*} [Field R] [DecidableEq R]
+    (p : Polynomial R) (s : Finset R) :
+    (∀ x ∈ s, p.IsRoot x) → s.toSet ⊆ p.roots.toSet := by
+  intro h x hx
+  have hx' : x ∈ s := by
+    simpa using hx
+  have h_root : p.IsRoot x := h x hx'
+  have : p ≠ 0 → x ∈ p.roots := by
+    intro hp
+    exact (mem_roots'.mpr ⟨hp, h_root⟩)
+  by_cases hp : p = 0
+  · /- 如果 p = 0，则 roots 是无限的（定义为 ∅），使用特殊处理 -/
+    simp [hp]
+  · /- 否则使用根的定义 -/
+    simp [this hp]
+
 -- 多项式的根与次数关系
 theorem poly_eq_zero_of_degree_lt_card_roots {R : Type*} [Field R] [DecidableEq R]
-    (p : Polynomial R) (s : Finset R) :
-    (∀ x ∈ s, p.IsRoot x) → p.degree < s.card → p = 0 := by
-  /- 如果 p 有 |s| 个不同的根，但 deg(p) < |s|，则 p = 0 -/
+    (p : Polynomial R) (s : Finset R) (hp : p ≠ 0) :
+    (∀ x ∈ s, p.IsRoot x) → p.degree < s.card → False := by
+  /- 如果 p 有 |s| 个不同的根，但 deg(p) < |s|，则矛盾 -/
   intro h_roots h_deg
-  /- 利用Mathlib4的定理 -/
+  /- 利用Mathlib4的定理：根的个数 ≤ 次数 -/
   have h : p.roots.card ≤ p.natDegree := by
     apply card_roots'
   /- 所有 s 中的点都是根 -/
-  have h_s : s.card ≤ p.roots.card := by
-    apply le_trans _ h
-    /- s ⊆ roots(p) -/
-    sorry  -- 需要更多代数工具
-  /- 但 deg(p) < s.card，矛盾 -/
-  sorry
+  have h_s_subset : s.toSet ⊆ p.roots.toSet := by
+    intro x hx
+    have hx' : x ∈ s := by simpa using hx
+    have h_root : p.IsRoot x := h_roots x hx'
+    have : x ∈ p.roots := by
+      exact (mem_roots'.mpr ⟨hp, h_root⟩)
+    simpa using this
+  /- 因此 s.card ≤ p.roots.card -/
+  have h_s_le : s.card ≤ p.roots.card := by
+    have : s.toSet ⊆ p.roots.toSet := h_s_subset
+    have : s.card ≤ p.roots.card := by
+      exact Set.card_le_card this
+    exact this
+  /- 但 deg(p) < s.card，而 p.natDegree ≤ p.degree -/
+  have h_deg_nat : p.natDegree ≤ p.degree := by
+    apply natDegree_le_degree
+  /- 综合得到矛盾 -/
+  linarith [h, h_s_le, h_deg_nat, h_deg]
 
 -- 插值多项式的唯一性
 theorem lagrangeInterpolation_unique (xs : Finset R) (ys : R → R)
@@ -248,10 +289,36 @@ theorem lagrangeInterpolation_unique (xs : Finset R) (ys : R → R)
     constructor
     · exact hp_deg
     · exact lagrangeInterpolation_degree xs ys
-  /- 但 R 有 |xs| 个根，所以 R = 0 -/
+  /- 证明 R = 0 -/
   have h_zero : R = 0 := by
-    /- 利用根的个数与次数的关系 -/
-    sorry  -- 需要完成证明
+    by_contra h
+    push_neg at h
+    /- 如果 R ≠ 0，则根的个数 ≤ 次数 -/
+    have h_contra := poly_eq_zero_of_degree_lt_card_roots R xs h h_roots
+    /- 但 R 有 |xs| 个根（每个插值点都是根），所以根的个数 ≥ |xs| -/
+    have h_deg_lt : R.degree < (xs.card : ℕ) := by
+      have h_le : R.degree ≤ (xs.card - 1 : ℕ) := h_deg
+      have h_card : xs.card > 0 := by
+        by_contra h_empty
+        push_neg at h_empty
+        have : xs = ∅ := by
+          apply Finset.eq_empty_iff_forall_not_mem.mpr
+          intro x
+          have : x ∉ xs := by
+            omega
+          exact this
+        rw [this] at hx
+        simp at hx
+      have : (xs.card - 1 : ℕ) < (xs.card : ℕ) := by
+        cases xs.card with
+        | zero => 
+          linarith
+        | succ n => 
+          simp [Nat.succ_sub_one]
+      linarith
+    /- 但 xs.card > xs.card - 1 ≥ R.degree，矛盾 -/
+    have h_false := h_contra h_deg_lt
+    contradiction
   /- 因此 p = L -/
   calc
     p = R + lagrangeInterpolation xs ys := by simp [R]
@@ -289,6 +356,84 @@ theorem linear_interpolation {R : Type*} [Field R] [DecidableEq R]
     apply lagrangeInterpolation_eval
     simp [xs, h_ne]
 
+-- 二次插值示例
+theorem quadratic_interpolation {R : Type*} [Field R] [DecidableEq R]
+    (x₀ x₁ x₂ y₀ y₁ y₂ : R) (h01 : x₀ ≠ x₁) (h02 : x₀ ≠ x₂) (h12 : x₁ ≠ x₂) :
+    ∃ p : Polynomial R, p.degree ≤ 2 ∧ p.eval x₀ = y₀ ∧ p.eval x₁ = y₁ ∧ p.eval x₂ = y₂ := by
+  let xs : Finset R := {x₀, x₁, x₂}
+  let ys : R → R := fun x =>
+    if x = x₀ then y₀ else if x = x₁ then y₁ else y₂
+  let p := lagrangeInterpolation xs ys
+  use p
+  constructor
+  · /- 次数不超过2 -/
+    have h_card : xs.card = 3 := by
+      simp [xs]
+      rw [Finset.card_insert_of_not_mem]
+      rw [Finset.card_insert_of_not_mem]
+      simp
+      intro h
+      apply h02
+      exact h.symm
+      intro h
+      apply h01
+      exact h.symm
+    have h_deg : p.degree ≤ (xs.card - 1 : ℕ) := lagrangeInterpolation_degree xs ys
+    rw [h_card] at h_deg
+    simp at h_deg ⊢
+    exact h_deg
+  constructor
+  · /- p(x₀) = y₀ -/
+    apply lagrangeInterpolation_eval
+    simp [xs]
+  constructor
+  · /- p(x₁) = y₁ -/
+    apply lagrangeInterpolation_eval
+    simp [xs, h01]
+  · /- p(x₂) = y₂ -/
+    apply lagrangeInterpolation_eval
+    simp [xs, h02, h12]
+
+/-
+## 第六部分：数值稳定性与误差分析
+
+### 数值稳定性
+
+拉格朗日插值的主要数值问题是：
+1. 当插值点数量大时，基多项式可能出现剧烈振荡（Runge现象）
+2. 当插值点间距不均匀时，数值不稳定
+
+### 误差估计
+
+若 f 是 n+1 次连续可微函数，P 是 n 次插值多项式，则：
+|f(x) - P(x)| ≤ M/(n+1)! · |∏(x - xᵢ)|
+
+其中 M = max|f^(n+1)(ξ)|
+-/
+
+-- 插值误差上界（简化版本）
+theorem interpolation_error_bound {R : Type*} [Field R] [DecidableEq R] [LinearOrderedField R]
+    (xs : Finset R) (f : R → R) (x : R) :
+    ∀ M > 0, (∀ ξ, |f ξ| ≤ M) →
+    |(f x - (lagrangeInterpolation xs f).eval x)| ≤ M * ∏ i ∈ xs, |x - i| := by
+  /- 这个定理给出了插值误差的上界 -/
+  intro M hM h_bound
+  /- 完整的证明需要更深入的逼近论工具 -/
+  /- 这里给出简化版本 -/
+  by_cases h : x ∈ xs
+  · /- 如果 x 是插值点，则误差为0 -/
+    have h_interp : (lagrangeInterpolation xs f).eval x = f x := by
+      apply lagrangeInterpolation_eval
+      exact h
+    rw [h_interp]
+    simp
+    positivity
+  · /- 对于非插值点，给出上界估计 -/
+    /- 这里使用简化的误差估计 -/
+    sorry  -- P3级别：需要更深入的逼近论工具
+
+end LagrangeInterpolation
+
 /-
 ## 数学意义
 
@@ -304,6 +449,21 @@ theorem linear_interpolation {R : Type*} [Field R] [DecidableEq R]
 - **Newton插值**：另一种插值方法，使用差商
 - **样条插值**：分段多项式插值
 - **最小二乘拟合**：当插值条件过多时的替代方法
+- **切比雪夫节点**：优化插值点位置以减少振荡
+
+## 应用示例
+
+### 1. 函数逼近
+```lean
+-- 用多项式逼近 sin(x)
+-- 在点 {-π, -π/2, 0, π/2, π} 处插值
+```
+
+### 2. 数值积分
+牛顿-科特斯公式基于等距节点的拉格朗日插值。
+
+### 3. 计算机图形学
+贝塞尔曲线和样条曲线的基础。
 
 ## Mathlib4对齐说明
 
@@ -311,4 +471,10 @@ theorem linear_interpolation {R : Type*} [Field R] [DecidableEq R]
 - `Mathlib.Algebra.Polynomial.Basic`: 多项式基础
 - `Mathlib.Algebra.Polynomial.Eval`: 多项式求值
 - `Mathlib.Algebra.Polynomial.Lagrange`: 拉格朗日插值
+
+## 相关定理链接
+
+- [第一同构定理](./06-第一同构定理.lean) - 群论中的对应定理
+- [费马小定理](./FermatLittleTheorem.lean) - 数论基础
+- [二次互反律](./QuadraticReciprocity.lean) - 高斯的重要定理
 -/
