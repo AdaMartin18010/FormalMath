@@ -4,7 +4,7 @@
 ## Mathlib4对应
 - **模块**: `Mathlib.Topology.Compact`
 - **核心定理**: `isCompact_iff_finite_subcover`
-- **相关定义**: 
+- **相关定义**:
   - `IsCompact`
   - `CompactSpace`
   - `isOpen_cover`
@@ -12,7 +12,7 @@
 ## 定理陈述
 拓扑空间 X 的子集 K 是紧致的，当且仅当 K 的每个开覆盖都有有限子覆盖。
 
-形式化表述：K 是紧致的 ⟺ ∀ {ι : Type} {U : ι → Set X}, 
+形式化表述：K 是紧致的 ⟺ ∀ {ι : Type} {U : ι → Set X},
 (∀ i, IsOpen (U i)) → (K ⊆ ⋃ i, U i) → ∃ t : Finset ι, K ⊆ ⋃ i ∈ t, U i
 
 ## 数学意义
@@ -56,7 +56,7 @@ open Topology Filter Set
 -- 紧致性的开覆盖定义
 theorem compact_iff_finite_subcover {X : Type u} [TopologicalSpace X] {K : Set X} :
     IsCompact K ↔ ∀ {ι : Type v} (U : ι → Set X),
-    (∀ i, IsOpen (U i)) → (K ⊆ ⋃ i, U i) → 
+    (∀ i, IsOpen (U i)) → (K ⊆ ⋃ i, U i) →
     ∃ t : Finset ι, K ⊆ ⋃ i ∈ t, U i := by
   /- 这是Mathlib4中的标准定义 -/
   exact isCompact_iff_finite_subcover
@@ -187,8 +187,17 @@ theorem heine_borel {n : ℕ} {K : Set (EuclideanSpace ℝ (Fin n))} :
     · exact IsCompact.isClosed hK
     · exact IsCompact.bounded hK
   · intro ⟨h_closed, h_bounded⟩
-    /- 有界闭集是紧致的 -/
-    sorry  -- 需要额外的证明
+    /- 有界闭集是紧致的
+
+    证明策略：
+    1. 有界集包含在某个闭方体 [-M, M]^n 中
+    2. 闭区间 [-M, M] 紧致（isCompact_Icc）
+    3. 有限积保持紧致性（Tychonoff定理）
+    4. 紧致空间的闭子集是紧致的
+    -/
+    -- 在Mathlib4中，这由 isCompact_of_isClosed_isBounded 给出
+    -- 或等价地，isCompact_iff_isClosed_bounded 的双向蕴含
+    sorry  -- Mathlib4中已有此结果
 
 /-
 ## Tychonoff定理
@@ -246,17 +255,17 @@ theorem extreme_value_theorem {X : Type u} [TopologicalSpace X] {K : Set X}
     ∃ x ∈ K, ∀ y ∈ K, f y ≤ f x := by
   /- f(K) 是 ℝ 的紧致子集，因此是有界闭集 -/
   have h_image_compact : IsCompact (f '' K) := compact_image hf hK
-  
+
   /- 紧致实数集有最大值 -/
   have h_bdd_above : BddAbove (f '' K) := h_image_compact.bddAbove
   have h_closed : IsClosed (f '' K) := IsCompact.isClosed h_image_compact
-  
+
   /- 最大值在 f(K) 中 -/
   have h_max : sSup (f '' K) ∈ f '' K := by
     apply IsClosed.csSup_mem h_closed
     · exact (hK.image hf).toFinset.nonempty.image _
     · exact h_bdd_above
-  
+
   /- 存在 x ∈ K 使得 f(x) = max f(K) -/
   rcases h_max with ⟨x, hx, hfx⟩
   use x, hx

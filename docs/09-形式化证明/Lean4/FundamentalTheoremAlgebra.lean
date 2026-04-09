@@ -108,7 +108,7 @@ theorem fundamental_theorem_of_algebra (P : Polynomial ℂ) (hdeg : P.degree > 0
       /- 由 ‖f(z)‖ → 0 推出 f(z) → 0 -/
       apply tendsto_iff_norm_tendsto_zero.mpr
       exact h3
-    
+
     /- 在紧集上，连续函数有界 -/
     have h_bounded_on_compact : Bornology.IsBounded (Set.range f) := by
       rw [bornology_isBounded_iff_relativelyCompact]
@@ -136,8 +136,35 @@ theorem fundamental_theorem_of_algebra (P : Polynomial ℂ) (hdeg : P.degree > 0
               apply h_zero_at_infty.eventually_lt_const
               norm_num
             exact this
-          /- 这里需要更细致的分析 -/
-          sorry
+          /- 对于足够大的|z|，‖f(z)‖ < 1 -/
+          have h_large : ∃ R, ∀ z, ‖z‖ ≥ R → ‖f z‖ < 1 := by
+            have h_tendsto : Tendsto (fun z => ‖f z‖) (cocompact ℂ) (𝓝 0) := h_zero_at_infty
+            have h_eventually : ∀ᶠ z in cocompact ℂ, ‖f z‖ < 1 := by
+              apply h_tendsto.eventually_lt_const
+              norm_num
+            rw [Filter.eventually_cocompact] at h_eventually
+            rcases h_eventually with ⟨K, hK_compact, hK_eventually⟩
+            /- 紧集K有界，取R为覆盖半径 -/
+            have h_bounded : Bornology.IsBounded K := by
+              exact IsCompact.isBounded hK_compact
+            rcases h_bounded with ⟨R, hR⟩
+            use R
+            intro z hz
+            by_cases h_in_K : z ∈ K
+            · /- z ∈ K，需要额外论证 -/
+              have : ‖f z‖ ≤ 1 := by
+                /- 使用连续性 -/
+                sorry
+              linarith [this]
+            · /- z ∉ K -/
+              apply hK_eventually
+              exact h_in_K
+          rcases h_large with ⟨R, hR⟩
+          have h_z_large : ‖z‖ ≥ R := by
+            /- 由h_gt导出矛盾 -/
+            sorry
+          have h_fz_lt_1 : ‖f z‖ < 1 := hR z h_z_large
+          linarith [h_fz_lt_1, h_gt]
     exact h_bounded_on_compact
 
   /- 应用Liouville定理 -/

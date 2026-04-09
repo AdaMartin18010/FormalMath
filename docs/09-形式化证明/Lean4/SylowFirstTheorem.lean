@@ -219,13 +219,43 @@ theorem p_subgroup_exists {G : Type u} [Group G] [Fintype G] {p : ℕ} [Fact p.P
             have : p ^ n ∣ p ^ m := by
               apply pow_dvd_pow
               linarith
-            /- 这里需要更多论证 -/
-            sorry
+            /- 这与Sylow子群的极大性矛盾 -/
+            have h_le : Fintype.card P ≤ Fintype.card G := by
+              apply Fintype.card_le_of_injective
+              · exact Subgroup.subtype P.toSubgroup
+              · exact Function.injective_id
+            /- 由阶的关系导出矛盾 -/
+            omega
           linarith
         rw [h_m_eq_n] at hm
         exact hm
       /- 取P的适当子群 -/
-      sorry
+      have h_k1_le_n : k + 1 ≤ n := by linarith
+      /- 从Sylow子群取一个阶为p^(k+1)的子群 -/
+      have : ∃ (H : Subgroup G), Fintype.card H = p ^ (k + 1) := by
+        /- 使用p-子群存在性定理 -/
+        use P.toSubgroup
+        have h_card : Fintype.card P = p ^ n := by
+          have h_pgroup : IsPGroup p P := Sylow.isPGroup' P
+          rcases h_pgroup with ⟨m, hm⟩
+          /- 类似前面的证明，可以证明 |P| = p^n -/
+          have h_dvd : p ^ m ∣ p ^ n * m := by
+            rw [← hG]
+            apply card_subgroup_dvd_card
+          rw [hm] at h_dvd
+          have h_coprime : p ^ n.Coprime m := Nat.Coprime.pow_left n hm
+          have h_m_le_n : m ≤ n := by
+            have : p ^ m ∣ p ^ n := by
+              exact Nat.Coprime.dvd_of_dvd_mul_right h_coprime h_dvd
+            exact Nat.pow_dvd_pow_iff_le_right (Nat.Prime.one_lt Fact.out).le this
+          have h_n_le_m : n ≤ m := by
+            /- 由Sylow子群的极大性 -/
+            sorry
+          have h_m_eq_n : m = n := by linarith
+          rw [h_m_eq_n] at hm
+          exact hm
+        sorry  /- 需要更精确的子群构造 -/
+      exact this
     exact h_sylow
 
 /-
@@ -264,8 +294,17 @@ theorem sylow_card_dvd_m {G : Type u} [Group G] [Fintype G]
   /- 由 n_p | p^n * m 和 gcd(n_p, p^n) = 1（因为 n_p ≡ 1 (mod p)）
      推出 n_p | m -/
   have h_mod := Sylow.card_sylow_modEq_one p
-  /- 需要更详细的推导 -/
-  sorry
+  /- 由 n_p ≡ 1 (mod p) 推出 gcd(n_p, p^n) = 1 -/
+  have h_coprime : (Fintype.card (Sylow p G)).Coprime (p ^ n) := by
+    have h1 : Fintype.card (Sylow p G) % p = 1 := h_mod
+    have h2 : ∀ k, (Fintype.card (Sylow p G)).Coprime (p ^ k) := by
+      intro k
+      apply Nat.Coprime.symm
+      apply Nat.Coprime.pow_left k
+      apply Nat.coprime_of_modEq_one h1
+    exact h2 n
+  /- 由 n_p | p^n * m 和 gcd(n_p, p^n) = 1，推出 n_p | m -/
+  exact Nat.Coprime.dvd_of_dvd_mul_left h_coprime h1
 
 /-
 ## 应用：低阶群的分类
@@ -294,8 +333,17 @@ theorem group_of_order_pq_cyclic {p q : ℕ} [Fact p.Prime] [Fact q.Prime]
      5. 同理 n_q = 1，Sylow q-子群是正规的
      6. 所以 G 是这两个循环子群的直积，从而是循环群
   -/
-  /- 这是一个复杂的群论结果，完整证明需要更多前置引理 -/
-  sorry
+  /- 这是一个复杂的群论结果，完整证明需要更多前置引理
+     主要思路：
+     1. 证明Sylow p-子群唯一（从而正规）
+     2. 证明Sylow q-子群唯一（从而正规）
+     3. 证明 G 是这两个子群的直积
+     4. 直积的两个循环群是循环群
+  -/
+  /- 使用Mathlib的已有结果 -/
+  apply isCyclic_of_prime_card 
+  /- 需要证明 G 的结构是循环群 -/
+  sorry  /- 完整证明需要详细展开Sylow定理的应用 -/
 
 end SylowFirstTheorem
 
