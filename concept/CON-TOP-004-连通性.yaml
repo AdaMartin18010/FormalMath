@@ -1,0 +1,143 @@
+---
+# 数学概念本体 - 连通性 (Connectedness)
+# 概念ID: CON-TOP-004
+# 分支: 拓扑学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-TOP-004"
+  name: "连通性"
+  english_name: "Connectedness"
+  aliases: ["连通", "連結", "Connected", "Zusammenhang"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "54D05"
+  msc_secondary: ["54A99", "54F15"]
+  branch: "拓扑学"
+  topic: "一般拓扑学"
+  difficulty: 2
+  importance: 4
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **连通性的定义**：设 (X, τ) 是拓扑空间。
+      
+      **不连通**：若存在非空开集 U, V 使得：
+      - X = U ∪ V
+      - U ∩ V = ∅
+      
+      则称 X 是**不连通的**（或可分离的）。
+      
+      **连通**：若 X 不是不连通的，则称 X 是**连通的**。
+      
+      **等价刻画**：
+      - X 中既开又闭的子集只有 ∅ 和 X
+      - 任意连续映射 f: X → {0, 1}（离散拓扑）是常值的
+      
+      **道路连通**：若 ∀ x, y ∈ X，存在连续映射 γ: [0,1] → X 
+      使得 γ(0) = x, γ(1) = y。
+    intuitive: "连通性描述了空间的'整体性'——空间是否由多块分离的部分组成。连通空间不能被分割成两个非空的开集，类似于实数轴的连续性。道路连通是更强的条件，要求任意两点可以被'路径'连接。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "连续像保持"
+      notation: "f(X) 连通"
+      description: "连通空间的连续像是连通的"
+    - property: "闭包保持"
+      notation: "Ā 连通"
+      description: "连通集的闭包仍连通"
+    - property: "积空间"
+      notation: "X × Y 连通"
+      description: "连通空间的积仍连通"
+    - property: "连通分支"
+      notation: "连通分支"
+      description: "最大的连通子集"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "拓扑性质"
+      - "拓扑不变量"
+    generalizesTo:
+      - "道路连通"
+      - "局部连通"
+      - "弧连通"
+      - "单连通"
+    dependsOn:
+      - "拓扑空间"
+      - "开集"
+      - "闭集"
+    implies:
+      - "介值定理"
+      - "中间值性质"
+    related:
+      - "紧致性"
+      - "分离性"
+      - "同伦"
+      - "基本群"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Bernhard Bolzano, Henri Poincaré"
+    year: 1817
+    context: "Bolzano在研究中间值定理时引入连通性概念，Poincaré在代数拓扑中发展了相关理论"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "General Topology"
+        author: "John L. Kelley"
+        chapter: "4"
+      - title: "Topology"
+        author: "James R. Munkres"
+        chapter: "3.23"
+      - title: "点集拓扑学"
+        author: "熊金城"
+        chapter: "4"
+    stacks_tags:
+      - "004D"  # 连通性
+    nlab:
+      - "https://ncatlab.org/nlab/show/connected+space"
+    mathworld:
+      - "http://mathworld.wolfram.com/ConnectedSpace.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      def IsConnected [TopologicalSpace X] (s : Set X) : Prop :=
+        ∀ u v : Set X, IsOpen u → IsOpen v → s ⊆ u ∪ v → 
+        (s ∩ u) ∩ (s ∩ v) = ∅ → s ⊆ u ∨ s ⊆ v
+      
+      -- 等价定义
+      def IsConnected' [TopologicalSpace X] (s : Set X) : Prop :=
+        ∀ t : Set X, t ⊆ s → IsOpen t → IsClosed t → 
+        t = ∅ ∨ t = s
+      
+      def IsPathConnected [TopologicalSpace X] (s : Set X) : Prop :=
+        ∀ x ∈ s, ∀ y ∈ s, ∃ γ : I → X, Continuous γ ∧ 
+        γ 0 = x ∧ γ 1 = y ∧ ∀ t, γ t ∈ s
+      
+      class ConnectedSpace (X : Type*) [TopologicalSpace X] : Prop where
+        isConnected_univ : IsConnected (Set.univ : Set X)
+    isabelle: |
+      definition connected :: "'a::topological_space set ⇒ bool"
+        where "connected s ≡ ¬(∃A B. open A ∧ open B ∧ 
+          s ⊆ A ∪ B ∧ A ∩ B ∩ s = {} ∧ A ∩ s ≠ {} ∧ B ∩ s ≠ {})"
+      
+      class connected_space = topological_space +
+        assumes connected_univ: "connected UNIV"
+    coq: |
+      Definition connected {X : Type} `{TopologicalSpace X}
+        (A : X -> Prop) : Prop :=
+        forall U V : X -> Prop,
+        open_set U -> open_set V ->
+        (forall x, A x -> U x \/ V x) ->
+        (forall x, A x -> U x -> V x -> False) ->
+        (forall x, A x -> U x) \/ (forall x, A x -> V x).
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/04-几何拓扑/01-点集拓扑/点集拓扑.md"

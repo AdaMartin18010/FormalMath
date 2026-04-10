@@ -1,0 +1,127 @@
+---
+# 数学概念本体 - 积分 (Integral)
+# 概念ID: CON-ANA-004
+# 分支: 分析学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-ANA-004"
+  name: "积分"
+  english_name: "Integral"
+  aliases: ["積分", "Integration", "定积分", "Riemann积分"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "26A42"
+  msc_secondary: ["26A39", "28A25"]
+  branch: "分析学"
+  topic: "积分学"
+  difficulty: 3
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **Riemann积分**：设 f 在 [a, b] 上有界。对于分割 P: a = x₀ < x₁ < ... < xₙ = b，
+      取 ξᵢ ∈ [x_{i-1}, xᵢ]，Riemann和为 S(P, f) = Σᵢ₌₁ⁿ f(ξᵢ)Δxᵢ。
+      
+      若存在 I ∈ ℝ，使得对于任意 ε > 0，存在 δ > 0，当分割的模 ‖P‖ < δ 时，
+      有 |S(P, f) - I| < ε，则称 f 在 [a, b] 上Riemann可积，I 称为定积分，
+      记作 ∫ₐᵇ f(x)dx = I。
+    intuitive: "积分是求和的极限，几何上表示曲线下方的面积，是微积分的另一核心运算，与导数互为逆运算。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "线性性"
+      notation: "∫(af + bg) = a∫f + b∫g"
+      description: "积分是线性泛函"
+    - property: "区间可加性"
+      notation: "∫ₐᵇ + ∫ᵇᶜ = ∫ₐᶜ"
+      description: "积分对积分区间具有可加性"
+    - property: "单调性"
+      notation: "f ≤ g ⇒ ∫f ≤ ∫g"
+      description: "保序性"
+    - property: "积分中值定理"
+      notation: "∃ξ, ∫ₐᵇf = f(ξ)(b-a)"
+      description: "连续函数的积分中值性质"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "线性泛函"
+    generalizesTo:
+      - "Lebesgue积分"
+      - "Riemann-Stieltjes积分"
+      - "反常积分"
+      - "重积分"
+    dependsOn:
+      - "极限"
+      - "连续"
+      - "实数完备性"
+    implies:
+      - "微积分基本定理"
+      - "面积计算"
+      - "体积计算"
+      - "物理应用"
+    related:
+      - "原函数"
+      - "不定积分"
+      - "微分方程"
+      - "概率论"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Bernhard Riemann"
+    year: 1854
+    context: "Riemann在其博士论文中提出，严格化了积分概念"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Principles of Mathematical Analysis"
+        author: "Walter Rudin"
+        chapter: "6"
+      - title: "Calculus"
+        author: "Michael Spivak"
+        chapter: "13"
+      - title: "数学分析"
+        author: "卓里奇"
+        chapter: "6"
+    stacks_tags:
+      - "00A35"
+    nlab:
+      - "https://ncatlab.org/nlab/show/integral"
+    mathworld:
+      - "http://mathworld.wolfram.com/RiemannIntegral.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      structure Partition (a b : ℝ) where
+        points : Finset ℝ
+        mono : ∀ x ∈ points, a ≤ x ∧ x ≤ b
+        endpoints : a ∈ points ∧ b ∈ points
+      
+      def RiemannSum (f : ℝ → ℝ) (P : Partition a b) (ξ : ℝ → ℝ) : ℝ :=
+        ∑ i in P.points, f (ξ i) * (i - P.prev i)
+      
+      def Integrable (f : ℝ → ℝ) (a b : ℝ) : Prop :=
+        ∃ I : ℝ, ∀ ε > 0, ∃ δ > 0, ∀ P, ‖P‖ < δ → |RiemannSum f P ξ - I| < ε
+    isabelle: |
+      definition has_integral :: "(real ⇒ real) ⇒ real ⇒ (real × real) ⇒ bool"
+        where "has_integral f I (a,b) ≡ ∀ε>0. ∃δ>0. ∀p tagged. 
+          p fine δ ⟶ ¦(∑(x,K)∈p. content K * f x) - I¦ < ε"
+    coq: |
+      Definition Riemann_integrable (f : R -> R) (a b : R) : Prop :=
+        exists l : R,
+        forall eps : R, eps > 0 ->
+        exists delta : R, delta > 0 ->
+        forall ptd : partition, 
+        partition_size ptd < delta ->
+        Rabs (Riemann_sum f ptd - l) < eps.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/03-分析学/01-实分析/01-实分析.md"
+    - "concept/核心概念/16-积分-多理论分析示例-2025年1月.md"

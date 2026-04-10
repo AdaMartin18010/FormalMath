@@ -1,0 +1,147 @@
+---
+# 数学概念本体 - 环 (Ring)
+# 概念ID: CON-ALG-002
+# 分支: 代数学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-ALG-002"
+  name: "环"
+  english_name: "Ring"
+  aliases: ["Ring", "抽象环", "环结构", "環"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "16-01"
+  msc_secondary: ["13-01", "16W99"]
+  branch: "代数学"
+  topic: "环论"
+  difficulty: 2
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **环的定义**：环是一个三元组 (R, +, ·)，其中 R 是集合，+ 和 · 是 R 上的二元运算，满足：
+      
+      1. **(R, +) 是阿贝尔群**：
+         - 结合律、交换律
+         - 存在零元 0
+         - 每个元素有加法逆元
+      
+      2. **(R, ·) 是半群**：
+         - 乘法结合律
+      
+      3. **分配律**：
+         - a · (b + c) = a · b + a · c
+         - (a + b) · c = a · c + b · c
+      
+      若存在乘法单位元 1 且 1 ≠ 0，称为**含幺环**。
+      若乘法交换，称为**交换环**。
+    intuitive: "环是具有两种运算（加法和乘法）的代数结构，推广了整数、多项式、矩阵等对象的代数性质。环论是代数学的基石。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "零元性质"
+      notation: "0 · a = a · 0 = 0"
+      description: "零元与任何元素相乘得零"
+    - property: "负元性质"
+      notation: "(-a) · b = -(a · b)"
+      description: "负元的乘法性质"
+    - property: "子环"
+      notation: "S ⊆ R 子环"
+      description: "对运算封闭的子集"
+    - property: "理想"
+      notation: "I ⊆ R 理想"
+      description: "类似于正规子群的概念"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "Abel群 (加法)"
+      - "半群 (乘法)"
+    generalizesTo:
+      - "域"
+      - "代数"
+      - "半环"
+    dependsOn:
+      - "群"
+      - "二元运算"
+    implies:
+      - "整环"
+      - "主理想环"
+      - "唯一分解环"
+      - "模"
+    related:
+      - "多项式环"
+      - "矩阵环"
+      - "群环"
+      - "商环"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "David Hilbert, Abraham Fraenkel"
+    year: 1914
+    context: "Fraenkel首次给出抽象环的公理化定义，Hilbert等人发展了环论基础"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Algebra"
+        author: "Michael Artin"
+        chapter: "11.1"
+      - title: "Abstract Algebra"
+        author: "Dummit & Foote"
+        chapter: "7"
+      - title: "Atiyah-Macdonald交换代数引论"
+        author: "Atiyah, Macdonald"
+        chapter: "1"
+    stacks_tags:
+      - "00G8"  # 环的定义
+    nlab:
+      - "https://ncatlab.org/nlab/show/ring"
+    mathworld:
+      - "http://mathworld.wolfram.com/Ring.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      class Ring (R : Type*) extends Add R, Mul R, Neg R, Zero R where
+        -- 加法Abel群
+        add_assoc : ∀ a b c : R, (a + b) + c = a + (b + c)
+        add_comm : ∀ a b : R, a + b = b + a
+        zero_add : ∀ a : R, 0 + a = a
+        add_zero : ∀ a : R, a + 0 = a
+        add_left_neg : ∀ a : R, -a + a = 0
+        -- 乘法半群
+        mul_assoc : ∀ a b c : R, (a * b) * c = a * (b * c)
+        -- 分配律
+        left_distrib : ∀ a b c : R, a * (b + c) = a * b + a * c
+        right_distrib : ∀ a b c : R, (a + b) * c = a * c + b * c
+      
+      class CommRing (R : Type*) extends Ring R where
+        mul_comm : ∀ a b : R, a * b = b * a
+    isabelle: |
+      locale ring = abelian_group R add zero minus uminus + monoid R mult one
+        for R :: "'a set" and add :: "['a, 'a] ⇒ 'a" (infixl "⊕" 65)
+        and mult :: "['a, 'a] ⇒ 'a" (infixl "⊗" 70)
+        and zero :: 'a ("𝟬") and one :: 'a ("𝟭")
+        and minus :: "['a, 'a] ⇒ 'a" (infixl "⊖" 65)
+        and uminus :: "'a ⇒ 'a" ("⊟ _" [81] 80) +
+        assumes l_distr: "⟦x ∈ R; y ∈ R; z ∈ R⟧ ⟹ (x ⊕ y) ⊗ z = x ⊗ z ⊕ y ⊗ z"
+          and r_distr: "⟦x ∈ R; y ∈ R; z ∈ R⟧ ⟹ z ⊗ (x ⊕ y) = z ⊗ x ⊕ z ⊗ y"
+    coq: |
+      Class Ring (R : Type) := {
+        -- 加法结构
+        ring_add :> AbelianGroup R;
+        -- 乘法结构
+        ring_mul :> Monoid R;
+        -- 分配律
+        distrib_left : forall a b c, mul a (add b c) = add (mul a b) (mul a c);
+        distrib_right : forall a b c, mul (add a b) c = add (mul a c) (mul b c)
+      }.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/02-代数结构/02-核心理论/环论/环论.md"

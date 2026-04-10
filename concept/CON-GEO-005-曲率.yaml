@@ -1,0 +1,168 @@
+---
+# 数学概念本体 - 曲率 (Curvature)
+# 概念ID: CON-GEO-005
+# 分支: 几何学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-GEO-005"
+  name: "曲率"
+  english_name: "Curvature"
+  aliases: ["Curvature", "曲率", "截面曲率", "Ricci曲率", "Scalar曲率"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "53B21"
+  msc_secondary: ["53A04", "53C21"]
+  branch: "几何学"
+  topic: "黎曼几何"
+  difficulty: 5
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **曲率张量的定义**：设 (M, g) 是黎曼流形，∇ 是Levi-Civita联络。
+      
+      **Riemann曲率张量**：
+      - R(X, Y)Z = ∇ₓ∇ᵧZ - ∇ᵧ∇ₓZ - ∇[ₓ,ᵧ]Z
+      
+      在坐标下：Rⁱⱼₖₗ = ∂ₖΓⁱⱼₗ - ∂ₗΓⁱⱼₖ + ΓⁱₘₖΓᵐⱼₗ - ΓⁱₘₗΓᵐⱼₖ
+      
+      **截面曲率**：对于二维平面 σ = span{v, w}，
+      - K(σ) = ⟨R(v, w)w, v⟩ / (|v|²|w|² - ⟨v, w⟩²)
+      
+      **Ricci曲率**：Ric(X, Y) = tr(Z ↦ R(Z, X)Y)，即曲率张量的迹
+      
+      **标量曲率**：S = tr_g(Ric) = gⁱʲRicᵢⱼ
+      
+      **高斯曲率**（曲面）：K = det(II) / det(I)，主曲率的乘积
+    intuitive: "曲率度量了空间偏离欧氏平面的程度。它描述了几何对象的'弯曲'——正曲率如球面(三角形内角和>180°)，负曲率如马鞍面(三角形内角和<180°)。在广义相对论中，曲率描述了引力场；在几何分析中，曲率流(如Ricci流)用于研究流形的拓扑结构。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "对称性"
+      notation: "Rᵢⱼₖₗ = -Rⱼᵢₖₗ = -Rᵢⱼₗₖ"
+      description: "Riemann张量的反对称性"
+    - property: "第一Bianchi恒等式"
+      notation: "R(X,Y)Z + R(Y,Z)X + R(Z,X)Y = 0"
+      description: "曲率张量的代数恒等式"
+    - property: "截面曲率决定曲率"
+      notation: "K 决定 R"
+      description: "截面曲率完全确定Riemann曲率张量"
+    - property: "常曲率空间"
+      notation: "K = 常数"
+      description: "球面、欧氏空间、双曲空间"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "张量场"
+      - "几何不变量"
+    generalizesTo:
+      - "和乐群"
+      - "曲率流"
+      - "测地偏离"
+    dependsOn:
+      - "黎曼度量"
+      - "联络"
+      - "张量分析"
+    implies:
+      - "拓扑限制(如Gauss-Bonnet定理)"
+      - "比较几何"
+      - "Einstein方程"
+    related:
+      - "挠率"
+      - "特征类"
+      - "指标定理"
+      - "几何流"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Carl Gauss, Bernhard Riemann, Elwin Christoffel"
+    year: 1827
+    context: "Gauss研究曲面曲率，Riemann推广到高维，Christoffel引入Christoffel符号，Levi-Civita发展联络理论"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Riemannian Geometry"
+        author: "Manfredo do Carmo"
+        chapter: "4"
+      - title: "Riemannian Geometry"
+        author: "Sylvestre Gallot, et al."
+        chapter: "3"
+      - title: "黎曼几何初步"
+        author: "伍鸿熙, 沈纯理, 虞言林"
+        chapter: "5"
+      - title: "Comparison Theorems in Riemannian Geometry"
+        author: "Jeff Cheeger, David Ebin"
+    papers:
+      - title: "Disquisitiones Generales Circa Superficies Curvas"
+        author: "Carl Friedrich Gauss"
+        year: 1827
+    stacks_tags:
+      - "00AD"  # 曲率
+    nlab:
+      - "https://ncatlab.org/nlab/show/Riemann+curvature+tensor"
+    mathworld:
+      - "http://mathworld.wolfram.com/RiemannTensor.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      -- 曲率张量
+      def CurvatureTensor {M : Type*} [RiemannianManifold M n] :
+        TensorField M (1, 3) :=
+        fun p => fun X Y Z ↦ ∇ₓ(∇ᵧZ) - ∇ᵧ(∇ₓZ) - ∇[ₓ,ᵧ]Z
+      
+      notation "Riem" => CurvatureTensor
+      
+      -- 截面曲率
+      def SectionalCurvature {M : Type*} [RiemannianManifold M n] 
+        {p : M} (σ : Grassmannian 2 (TangentSpace M p)) : ℝ := ...
+      
+      -- Ricci曲率
+      def RicciTensor {M : Type*} [RiemannianManifold M n] :
+        TensorField M (0, 2) :=
+        fun p X Y => Finset.sum univ (fun i => 
+          g p (Riem p (TangentSpace.ι i) X Y) (TangentSpace.ι i))
+      
+      -- 标量曲率
+      def ScalarCurvature {M : Type*} [RiemannianManifold M n] :
+        SmoothFunction M ℝ :=
+        fun p => Finset.sum univ (fun i => 
+          g.inv p (RicciTensor p) (TangentSpace.ι i) (TangentSpace.ι i))
+      
+      -- Gauss-Bonnet定理
+      theorem GaussBonnet {M : Type*} [RiemannianManifold M 2] :
+        ∫ p in M, ScalarCurvature p = 2 * π * EulerCharacteristic M := ...
+    isabelle: |
+      definition riemann_curvature :: "'a::riemannian_manifold ⇒ 
+        'a tangent ⇒ 'a tangent ⇒ 'a tangent ⇒ 'a tangent"
+        where "riemann_curvature p X Y Z ≡ 
+          cov_deriv X (cov_deriv Y Z) - cov_deriv Y (cov_deriv X Z) - 
+          cov_deriv (lie_bracket X Y) Z"
+      
+      definition sectional_curvature :: "'a::riemannian_manifold ⇒ 
+        'a tangent ⇒ 'a tangent ⇒ real"
+        where "sectional_curvature p X Y ≡ ..."
+    coq: |
+      Definition curvature_tensor {n} {M: Type} 
+        `{RiemannianManifold n M} (p: M) : 
+        multilinear_map 4 (tangent_space p) R :=
+        fun X Y Z W => ...
+      
+      Definition ricci_curvature {n} {M: Type}
+        `{RiemannianManifold n M} (p: M) :
+        bilinear_form (tangent_space p) :=
+        fun X Y => trace (fun Z => curvature_tensor p Z X Y).
+      
+      Definition scalar_curvature {n} {M: Type}
+        `{RiemannianManifold n M} (p: M) : R :=
+        trace (ricci_curvature p).
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/04-几何拓扑/02-微分几何/黎曼几何.md"

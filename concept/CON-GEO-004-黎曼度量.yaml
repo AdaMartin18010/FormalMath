@@ -1,0 +1,158 @@
+---
+# 数学概念本体 - 黎曼度量 (Riemannian Metric)
+# 概念ID: CON-GEO-004
+# 分支: 几何学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-GEO-004"
+  name: "黎曼度量"
+  english_name: "Riemannian Metric"
+  aliases: ["Riemannian Metric", "計量", "黎曼度量张量", "Metric Tensor"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "53B20"
+  msc_secondary: ["53A07", "53C20"]
+  branch: "几何学"
+  topic: "黎曼几何"
+  difficulty: 4
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **黎曼度量的定义**：设 M 是 n 维光滑流形。
+      
+      **度量张量**：光滑映射 g，使得 ∀ p ∈ M：
+      - gₚ : TₚM × TₚM → ℝ 是对称双线性形式
+      - gₚ 是正定的：∀ v ≠ 0, gₚ(v, v) > 0
+      
+      即 g 是切丛 TM 上的光滑正定对称 (0,2)-张量场。
+      
+      **局部坐标表示**：在坐标 (x¹, ..., xⁿ) 下，
+      - g = Σᵢ,ⱼ gᵢⱼ dxⁱ ⊗ dxʲ，其中 gᵢⱼ = g(∂ᵢ, ∂ⱼ)
+      - gᵢⱼ 构成正定对称矩阵
+      
+      **诱导范数**：‖v‖² = g(v, v)，使 TₚM 成为内积空间。
+      
+      **黎曼流形**：配备黎曼度量 (M, g) 的流形。
+    intuitive: "黎曼度量赋予流形'距离'和'角度'的概念，使其具有几何结构。它是广义相对论的数学基础——爱因斯坦场方程描述了时空度量的演化。黎曼几何研究曲率、测地线、体积等几何量，是连接分析与几何的桥梁。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "诱导距离"
+      notation: "d(p, q) = inf{∫‖γ'(t)‖dt}"
+      description: "曲线长度的下确界定义距离"
+    - property: "Levi-Civita联络"
+      notation: "∇"
+      description: "与度量相容的无挠联络"
+    - property: "体积形式"
+      notation: "dV = √det(g) dx¹∧...∧dxⁿ"
+      description: "诱导的定向体积元"
+    - property: "等距映射"
+      notation: "φ*g = h"
+      description: "保持度量的微分同胚"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "对称张量场"
+      - "内积结构"
+    generalizesTo:
+      - "伪黎曼度量"
+      - "Finsler度量"
+      - "共形结构"
+      - "子黎曼几何"
+    dependsOn:
+      - "流形"
+      - "切空间"
+      - "张量场"
+      - "对称双线性形式"
+    implies:
+      - "曲率张量"
+      - "测地线"
+      - "Laplace算子"
+      - "热核"
+    related:
+      - "辛结构"
+      - "复结构"
+      - "Kähler结构"
+      - "广义相对论"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Bernhard Riemann"
+    year: 1854
+    context: "Riemann在哥廷根的就职演讲《论几何基础中的假设》中提出，开创了黎曼几何"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Riemannian Geometry"
+        author: "Manfredo do Carmo"
+        chapter: "1"
+      - title: "Riemannian Geometry"
+        author: "Sylvestre Gallot, Dominique Hulin, Jacques Lafontaine"
+        chapter: "2"
+      - title: "黎曼几何初步"
+        author: "伍鸿熙, 沈纯理, 虞言林"
+        chapter: "1"
+      - title: "Gravitation"
+        author: "Misner, Thorne, Wheeler"
+        chapter: "13"
+    stacks_tags:
+      - "00AC"  # 黎曼度量
+    nlab:
+      - "https://ncatlab.org/nlab/show/Riemannian+metric"
+    mathworld:
+      - "http://mathworld.wolfram.com/MetricTensor.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      -- 黎曼度量结构
+      class RiemannianMetric (M : Type*) [SmoothManifold M n] where
+        toTensor : TensorField M (0, 2)  -- (0,2)-张量场
+        symmetric : ∀ p, Symmetric (toTensor p)
+        positive_definite : ∀ p, PositiveDefinite (toTensor p)
+        smooth : Smooth toTensor
+      
+      -- 黎曼流形
+      class RiemannianManifold (M : Type*) (n : ℕ) extends
+        SmoothManifold M n, RiemannianMetric M
+      
+      -- 诱导范数
+      def norm {M : Type*} [RiemannianManifold M n] {p : M} 
+        (v : TangentSpace M p) : ℝ := Real.sqrt (g p v v)
+      
+      -- 距离函数
+      def dist {M : Type*} [RiemannianManifold M n] (p q : M) : ℝ :=
+        ⨅ γ : Path p q, ∫ t, ‖γ'(t)‖
+    isabelle: |
+      typedef 'a riemannian_metric = 
+        "{g::'a::manifold ⇒ 'a tangent ⇒ 'a tangent ⇒ real.
+          ∀p. bilinear (g p) ∧ symmetric (g p) ∧ 
+              positive_definite (g p) ∧ smooth (λp. g p)}"
+      
+      locale riemannian_manifold = manifold + 
+        fixes g :: "'a riemannian_metric"
+        assumes metric_smooth: "smooth_metric g"
+    coq: |
+      Class RiemannianMetric {n: nat} {M: Type} 
+        `{Manifold n M} := {
+        metric_tensor :> TensorField M (0, 2);
+        metric_symmetric : forall p v w,
+          metric_tensor p v w = metric_tensor p w v;
+        metric_positive_definite : forall p v,
+          v <> 0 -> metric_tensor p v v > 0;
+        metric_smooth : Smooth metric_tensor
+      }.
+      
+      Definition RiemannianManifold (n: nat) (M: Type) :=
+        Manifold n M * RiemannianMetric (n:=n) (M:=M).
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/04-几何拓扑/02-微分几何/黎曼几何.md"

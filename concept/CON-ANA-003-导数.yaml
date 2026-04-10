@@ -1,0 +1,117 @@
+---
+# 数学概念本体 - 导数 (Derivative)
+# 概念ID: CON-ANA-003
+# 分支: 分析学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-ANA-003"
+  name: "导数"
+  english_name: "Derivative"
+  aliases: ["微分", "微商", "Derivative", "Differentiation"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "26A24"
+  msc_secondary: ["26A27", "58C20"]
+  branch: "分析学"
+  topic: "微分学"
+  difficulty: 2
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      设函数 f 在点 x₀ 的某邻域内有定义。若极限
+      
+      f'(x₀) = lim_{h→0} [f(x₀ + h) - f(x₀)] / h
+      
+      存在且有限，则称 f 在 x₀ 处可导，该极限值称为 f 在 x₀ 处的导数。
+      
+      等价定义：f'(x₀) = lim_{x→x₀} [f(x) - f(x₀)] / (x - x₀)
+    intuitive: "导数表示函数在某点处的瞬时变化率，几何上对应曲线在该点切线的斜率。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "线性性"
+      notation: "(af + bg)' = af' + bg'"
+      description: "导数运算是线性算子"
+    - property: "乘积法则"
+      notation: "(fg)' = f'g + fg'"
+      description: "乘积的导数公式"
+    - property: "链式法则"
+      notation: "(f ∘ g)' = (f' ∘ g) · g'"
+      description: "复合函数求导法则"
+    - property: "可导必连续"
+      notation: "可导 ⇒ 连续"
+      description: "可导函数必连续，反之不成立"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "微分运算"
+    generalizesTo:
+      - "偏导数"
+      - "方向导数"
+      - "Fréchet导数"
+      - "弱导数"
+    dependsOn:
+      - "极限"
+      - "连续"
+      - "函数"
+    implies:
+      - "微分"
+      - "泰勒展开"
+      - "极值理论"
+      - "中值定理"
+    related:
+      - "高阶导数"
+      - "微分中值定理"
+      - "隐函数定理"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Isaac Newton, Gottfried Wilhelm Leibniz"
+    year: 1684
+    context: "牛顿和莱布尼茨独立发明微积分，导数作为核心概念"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Principles of Mathematical Analysis"
+        author: "Walter Rudin"
+        chapter: "5.1"
+      - title: "Calculus"
+        author: "Michael Spivak"
+        chapter: "9"
+      - title: "数学分析"
+        author: "卓里奇"
+        chapter: "5.1"
+    stacks_tags:
+      - "00A35"
+    nlab:
+      - "https://ncatlab.org/nlab/show/derivative"
+    mathworld:
+      - "http://mathworld.wolfram.com/Derivative.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      def HasDerivAt (f : ℝ → ℝ) (f' : ℝ) (x : ℝ) : Prop :=
+        Tendsto (λ h => (f (x + h) - f x) / h) (𝓝[≠] 0) (𝓝 f')
+      
+      notation "deriv " f " at " x => HasDerivAt f (deriv f x) x
+    isabelle: |
+      definition has_derivative :: "(real ⇒ real) ⇒ real ⇒ real ⇒ bool"
+        where "has_derivative f f' x ≡ 
+          (λh. (f (x + h) - f x) / h) ─0→ f'"
+    coq: |
+      Definition derivable_pt (f : R -> R) (x : R) : Prop :=
+        exists l : R, 
+        limit (fun h => (f (x + h) - f x) / h) 0 l.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/03-分析学/01-实分析/01-实分析.md"
+    - "concept/核心概念/15-导数-多理论分析示例-2025年1月.md"

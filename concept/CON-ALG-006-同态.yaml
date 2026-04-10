@@ -1,0 +1,63 @@
+---
+concept:
+  id: "CON-ALG-006"
+  name: "同态"
+  english_name: "Homomorphism"
+  aliases: ["群同态", "环同态", "结构保持映射"]
+  
+  msc_primary: "20A10"
+  msc_secondary: ["13B10", "18A20"]
+  branch: "代数学"
+  topic: "群论"
+  difficulty: 2
+  importance: 5
+  
+  definition:
+    formal: |
+      设 $(G, \cdot)$ 和 $(H, *)$ 为群。映射 $f: G \to H$ 称为群同态，若对任意 $a, b \in G$：
+      $$f(a \cdot b) = f(a) * f(b)$$
+    intuitive: "保持群运算结构的映射"
+    
+  properties:
+    - property: "保持单位元"
+      description: "$f(e_G) = e_H$"
+    - property: "保持逆元"
+      description: "$f(a^{-1}) = f(a)^{-1}$"
+    - property: "保持幂次"
+      description: "$f(a^n) = f(a)^n$"
+      
+  relationships:
+    isA:
+      - "映射"
+    implies:
+      - "核是正规子群"
+      - "像是子群"
+    related:
+      - "同构"
+      - "单同态"
+      - "满同态"
+      - "自同态"
+      
+  history:
+    first_introduced_by: "Camille Jordan"
+    year: 1870
+    context: "群论的系统化"
+    
+  references:
+    textbooks:
+      - title: "Algebra"
+        author: "Michael Artin"
+        chapter: "2.5"
+    stacks_tags:
+      - "00DV"
+    nlab:
+      - "https://ncatlab.org/nlab/show/group+homomorphism"
+      
+  formalization:
+    lean4: |
+      structure GroupHom (G H : Type*) [Group G] [Group H] where
+        toFun : G → H
+        map_mul : ∀ a b, toFun (a * b) = toFun a * toFun b
+        
+  documents:
+    - "docs/02-代数结构/02-核心理论/群论/群同态.md"

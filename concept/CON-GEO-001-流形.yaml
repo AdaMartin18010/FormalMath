@@ -1,0 +1,148 @@
+---
+# 数学概念本体 - 流形 (Manifold)
+# 概念ID: CON-GEO-001
+# 分支: 几何学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-GEO-001"
+  name: "流形"
+  english_name: "Manifold"
+  aliases: ["Manifold", "多様体", "微分流形", "Differentiable Manifold"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "57N99"
+  msc_secondary: ["53A99", "58A05"]
+  branch: "几何学"
+  topic: "微分几何"
+  difficulty: 4
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **拓扑流形**：Hausdorff拓扑空间 M 称为 **n维拓扑流形**，若：
+      1. **局部欧氏性**：∀ p ∈ M，存在 p 的邻域 U 和同胚 φ: U → V，
+         其中 V ⊆ ℝⁿ 是开集
+      2. **第二可数性**：M 具有可数基
+      
+      **微分流形**：拓扑流形 M 配备**光滑图册** {(Uₐ, φₐ)}ₐ∈ₐ，满足：
+      1. **覆盖性**：∪ₐ Uₐ = M
+      2. **光滑相容性**：∀ α, β，转移映射 φᵦ ∘ φₐ⁻¹ 是光滑的（C^∞）
+      
+      **光滑函数**：f: M → ℝ 光滑，若 ∀ (U, φ)，f ∘ φ⁻¹ 是光滑的。
+    intuitive: "流形是局部看起来像欧氏空间的拓扑空间，是曲线和曲面的高维推广。微分流形是现代几何学和物理学的核心舞台——广义相对论在四维时空流形上展开，规范场论在纤维丛上建立。流形理论统一了分析、几何和拓扑。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "维数"
+      notation: "dim(M) = n"
+      description: "流形的局部维数"
+    - property: "可定向性"
+      notation: "可定向/不可定向"
+      description: "切丛是否可定向"
+    - property: "紧致性"
+      notation: "紧/非紧流形"
+      description: "流形是否紧致"
+    - property: "单连通性"
+      notation: "π₁(M) = 0"
+      description: "基本群平凡"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "拓扑空间"
+      - "Hausdorff空间"
+      - "第二可数空间"
+    generalizesTo:
+      - "带边流形"
+      - "Orbifold"
+      - "层化空间"
+      - "叠(Stack)"
+    dependsOn:
+      - "拓扑空间"
+      - "欧氏空间"
+      - "光滑函数"
+    implies:
+      - "切空间"
+      - "微分形式"
+      - "张量场"
+      - "微分同胚"
+    related:
+      - "纤维丛"
+      - "示性类"
+      - "Morse理论"
+      - "指标定理"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Carl Gauss, Bernhard Riemann, Hermann Weyl"
+    year: 1854
+    context: "Riemann在其就职演讲中奠定流形概念基础，Weyl在《空间·时间·物质》中给出严格定义"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Introduction to Smooth Manifolds"
+        author: "John M. Lee"
+        chapter: "1"
+      - title: "Riemannian Geometry"
+        author: "Manfredo do Carmo"
+        chapter: "0"
+      - title: "微分几何讲义"
+        author: "陈省身, 陈维桓"
+        chapter: "1"
+      - title: " Differentiable Manifolds"
+        author: "Lawrence Conlon"
+    stacks_tags:
+      - "00A9"  # 流形
+    nlab:
+      - "https://ncatlab.org/nlab/show/manifold"
+    mathworld:
+      - "http://mathworld.wolfram.com/Manifold.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      -- 光滑图册
+      structure SmoothAtlas (M : Type*) [TopologicalSpace M] (n : ℕ) where
+        charts : Set (LocalHomeomorph M (EuclideanSpace ℝ (Fin n)))
+        covers : ⋃ c ∈ charts, c.source = Set.univ
+        smooth_transitions : ∀ c₁ ∈ charts, ∀ c₂ ∈ charts,
+          ContDiffOn ℝ ∞ (c₂ ∘ c₁.symm) (c₁.symm ⁻¹' c₂.source)
+      
+      -- 微分流形结构
+      class SmoothManifold (M : Type*) (n : ℕ) where
+        toTopologicalSpace : TopologicalSpace M
+        isHausdorff : T2Space M
+        isSecondCountable : SecondCountableTopology M
+        atlas : SmoothAtlas M n
+    isabelle: |
+      locale manifold =
+        fixes charts :: "('a::topological_space, 'b::euclidean_space) chart set"
+        assumes chart_euclidean: "∀c ∈ charts. domain c ⊆ UNIV"
+          and chart_pairwise_compat: "∀c1 ∈ charts. ∀c2 ∈ charts. 
+            k-smooth_compat c1 c2"
+          and chart_cover: "(⋃c∈charts. domain c) = UNIV"
+    coq: |
+      Record atlas {n: nat} (M: Type) : Type := {
+        chart:> Type;
+        domain: chart -> M -> Prop;
+        map: forall c, domain c -> R^n;
+        map_inv: forall c, R^n -> M;
+        smooth_transition: forall c1 c2, 
+          forall x, domain c1 x -> domain c2 x ->
+          smooth (map c2 ∘ map_inv c1)
+      }.
+      
+      Class Manifold (n: nat) (M: Type) := {
+        atlas_M :> atlas n M;
+        hausdorff :> Hausdorff M;
+        second_countable :> SecondCountable M
+      }.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/04-几何拓扑/02-微分几何/微分几何.md"

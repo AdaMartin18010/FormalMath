@@ -1,0 +1,150 @@
+---
+# 数学概念本体 - 向量空间 (Vector Space)
+# 概念ID: CON-ALG-005
+# 分支: 代数学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-ALG-005"
+  name: "向量空间"
+  english_name: "Vector Space"
+  aliases: ["Vector Space", "线性空间", "Vector Space", "ベクトル空間"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "15A03"
+  msc_secondary: ["15-01", "46A99"]
+  branch: "代数学"
+  topic: "线性代数"
+  difficulty: 2
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **向量空间的定义**：设 F 是域，V 是非空集合。若 V 上有加法运算 + 和数乘运算 ·: F × V → V，满足：
+      
+      **(V, +) 是Abel群**：
+      1. 结合律：u + (v + w) = (u + v) + w
+      2. 交换律：u + v = v + u
+      3. 零元：∃0 ∈ V, ∀v ∈ V: 0 + v = v
+      4. 负元：∀v ∈ V, ∃(-v) ∈ V: v + (-v) = 0
+      
+      **数乘性质**：
+      5. 分配律：a · (u + v) = a·u + a·v
+      6. 分配律：(a + b) · v = a·v + b·v
+      7. 结合律：(ab) · v = a · (b·v)
+      8. 单位元：1 · v = v
+      
+      则称 V 为 F 上的**向量空间**（或线性空间）。
+    intuitive: "向量空间是线性代数的核心概念，推广了平面和空间中向量的代数性质。它提供了研究线性方程组、线性变换、特征值等问题的抽象框架，在物理、工程和计算机科学中有广泛应用。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "基与维数"
+      notation: "dim(V)"
+      description: "线性无关生成集的大小"
+    - property: "子空间"
+      notation: "W ≤ V"
+      description: "对运算封闭的子集"
+    - property: "线性无关"
+      notation: "线性无关集"
+      description: "无冗余的向量集"
+    - property: "直和分解"
+      notation: "V = U ⊕ W"
+      description: "空间的直和分解"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "域上的模"
+      - "Abel群"
+    generalizesTo:
+      - "模"
+      - "拓扑向量空间"
+      - "赋范空间"
+      - "内积空间"
+    dependsOn:
+      - "域"
+      - "群"
+      - "二元运算"
+    implies:
+      - "线性映射"
+      - "矩阵"
+      - "行列式"
+      - "特征值"
+      - "对角化"
+    related:
+      - "仿射空间"
+      - "射影空间"
+      - "格拉斯曼流形"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Hermann Grassmann, Giuseppe Peano"
+    year: 1888
+    context: "Grassmann发展了多维空间理论，Peano给出了向量空间的公理化定义"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Linear Algebra Done Right"
+        author: "Sheldon Axler"
+        chapter: "1"
+      - title: "Algebra"
+        author: "Michael Artin"
+        chapter: "3"
+      - title: "线性代数应该这样学"
+        author: "Sheldon Axler"
+        chapter: "1"
+      - title: "高等代数"
+        author: "丘维声"
+        chapter: "3"
+    stacks_tags:
+      - "00H7"  # 向量空间
+    nlab:
+      - "https://ncatlab.org/nlab/show/vector+space"
+    mathworld:
+      - "http://mathworld.wolfram.com/VectorSpace.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      class VectorSpace (F : Type*) [Field F] (V : Type*) extends AddCommGroup V where
+        smul : F → V → V
+        -- 分配律
+        smul_add : ∀ (a : F) (u v : V), a • (u + v) = a • u + a • v
+        add_smul : ∀ (a b : F) (v : V), (a + b) • v = a • v + b • v
+        -- 结合律
+        mul_smul : ∀ (a b : F) (v : V), (a * b) • v = a • (b • v)
+        -- 单位元
+        one_smul : ∀ v : V, (1 : F) • v = v
+      
+      -- 有限维向量空间
+      structure FiniteDimVectorSpace (F : Type*) [Field F] (n : ℕ) where
+        carrier : Type*
+        is_vector_space : VectorSpace F carrier
+        dim_eq : FiniteDimensional.finrank F carrier = n
+    isabelle: |
+      locale vector_space =
+        fixes scale :: "['a::field, 'b::ab_group_add] ⇒ 'b" (infixr "*s" 75)
+        assumes scale_right_distrib: "a *s (x + y) = a *s x + a *s y"
+          and scale_left_distrib: "(a + b) *s x = a *s x + b *s x"
+          and scale_scale: "a *s (b *s x) = (a * b) *s x"
+          and scale_one: "1 *s x = x"
+    coq: |
+      Class VectorSpace (F : Type) (V : Type) `{Field F} `{AbelianGroup V} := {
+        vsmul : F -> V -> V;
+        vsmul_add_distr : forall a u v,
+          vsmul a (add u v) = add (vsmul a u) (vsmul a v);
+        vsmul_add : forall a b v,
+          vsmul (add a b) v = add (vsmul a v) (vsmul b v);
+        vsmul_mul : forall a b v,
+          vsmul (mul a b) v = vsmul a (vsmul b v);
+        vsmul_one : forall v, vsmul one v = v
+      }.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/02-代数结构/02-核心理论/线性代数/线性代数.md"

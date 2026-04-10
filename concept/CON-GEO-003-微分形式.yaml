@@ -1,0 +1,153 @@
+---
+# 数学概念本体 - 微分形式 (Differential Form)
+# 概念ID: CON-GEO-003
+# 分支: 几何学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-GEO-003"
+  name: "微分形式"
+  english_name: "Differential Form"
+  aliases: ["Differential Form", "微分形式", "外微分形式", "k-形式"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "58A10"
+  msc_secondary: ["53A45", "58A12"]
+  branch: "几何学"
+  topic: "微分几何"
+  difficulty: 4
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **微分形式的定义**：设 M 是 n 维光滑流形。
+      
+      **余切空间**：Tₚ*M = (TₚM)*，即切空间的对偶空间
+      
+      **k-形式**：在 p ∈ M 点的 k-形式是 TₚM 上的 k 重反对称多重线性映射：
+      - ωₚ : TₚM × ... × TₚM (k 次) → ℝ
+      - ωₚ 对每一变量是线性的
+      - ωₚ(..., v, ..., w, ...) = -ωₚ(..., w, ..., v, ...)
+      
+      **光滑k-形式场**：ω: p ↦ ωₚ，使得在局部坐标下系数函数是光滑的。
+      
+      **楔积**：∧ : Ωᵏ(M) × Ωˡ(M) → Ωᵏ⁺ˡ(M)，满足分次交换律。
+    intuitive: "微分形式是流形上积分的自然对象，推广了曲线积分、曲面积分和体积积分。它们是坐标无关的，具有完美的微分运算——外微分，且满足Poincaré引理。Stokes定理统一了微积分基本定理、格林公式、高斯公式和斯托克斯公式。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "外微分"
+      notation: "d: Ωᵏ → Ωᵏ⁺¹"
+      description: "满足 d² = 0 的微分算子"
+    - property: "楔积"
+      notation: "ω ∧ η"
+      description: "分次交换的乘法：ω ∧ η = (-1)ᵏˡ η ∧ ω"
+    - property: "拉回"
+      notation: "f*ω"
+      description: "光滑映射诱导的形式拉回"
+    - property: "Stokes定理"
+      notation: "∫_M dω = ∫_{∂M} ω"
+      description: "微分形式的基本积分定理"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "张量场"
+      - "反对称协变张量"
+    generalizesTo:
+      - "向量值形式"
+      - "Lie代数值形式"
+      - "电流"
+      - "分布"
+    dependsOn:
+      - "流形"
+      - "切空间"
+      - "张量积"
+      - "外代数"
+    implies:
+      - "de Rham上同调"
+      - "Stokes定理"
+      - "陈类"
+      - "曲率形式"
+    related:
+      - "向量场"
+      - "辛几何"
+      - "规范场论"
+      - "指标定理"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Élie Cartan"
+    year: 1899
+    context: "Cartan创立外微分形式理论，统一了多元微积分，为微分几何和现代物理奠定语言基础"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Differential Forms in Algebraic Topology"
+        author: "Raoul Bott, Loring Tu"
+        chapter: "1"
+      - title: "Calculus on Manifolds"
+        author: "Michael Spivak"
+        chapter: "4"
+      - title: "微分几何讲义"
+        author: "陈省身, 陈维桓"
+        chapter: "3"
+      - title: "Geometry, Topology and Physics"
+        author: "Mikio Nakahara"
+        chapter: "5"
+    stacks_tags:
+      - "00AB"  # 微分形式
+    nlab:
+      - "https://ncatlab.org/nlab/show/differential+form"
+    mathworld:
+      - "http://mathworld.wolfram.com/Differentialk-Form.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      -- k-形式丛
+      def AlternatingMap (k : ℕ) (V W : Type*) [AddCommGroup V] [Module ℝ V]
+        [AddCommGroup W] [Module ℝ W] : Type* :=
+        {f : (Fin k → V) → W // ∀ σ : Equiv.Perm (Fin k),
+          f ∘ (fun v => v ∘ σ) = Equiv.sign σ • f}
+      
+      -- 微分形式
+      def DifferentialForm (M : Type*) [SmoothManifold M n] (k : ℕ) : Type* :=
+        ∀ p : M, AlternatingMap k (TangentSpace M p) ℝ
+      
+      notation "Ω^" k "(" M ")" => DifferentialForm M k
+      
+      -- 外微分
+      def exteriorDerivative {k : ℕ} : Ω^k(M) → Ω^(k+1)(M) := ...
+      notation "d" => exteriorDerivative
+      
+      -- Stokes定理
+      theorem StokesTheorem {k : ℕ} (ω : Ω^k M) :
+        ∫ x in M, (d ω) x = ∫ x in ∂M, ω x := ...
+    isabelle: |
+      typedef 'a differential_form = 
+        "{ω::'a::manifold ⇒ ('a tangent) list ⇒ real.
+          ∀p. alternating (ω p) ∧ smooth (λp. ω p)}"
+      
+      definition exterior_derivative :: 
+        "'a differential_form ⇒ 'a differential_form"
+        where "exterior_derivative ω ≡ ..."
+    coq: |
+      Definition k_form {M: Type} `{Manifold n M} (k: nat) :=
+        forall p: M, alternating_map k (tangent_space p) R.
+      
+      Definition exterior_derivative {M: Type} `{Manifold n M}
+        {k: nat} (omega: k_form k) : k_form (S k) :=
+        fun p => ...
+      
+      Theorem Stokes : forall M k (omega: @k_form M _ k),
+        integral M (exterior_derivative omega) =
+        integral (boundary M) omega.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/04-几何拓扑/02-微分几何/微分几何.md"

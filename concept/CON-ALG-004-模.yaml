@@ -1,0 +1,146 @@
+---
+# 数学概念本体 - 模 (Module)
+# 概念ID: CON-ALG-004
+# 分支: 代数学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-ALG-004"
+  name: "模"
+  english_name: "Module"
+  aliases: ["Module", "R-模", "左模", "右模", "加群作用"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "13C99"
+  msc_secondary: ["16D80", "18F99"]
+  branch: "代数学"
+  topic: "模论"
+  difficulty: 3
+  importance: 4
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **左R-模的定义**：设 R 是环，M 是Abel群。若存在映射 R × M → M，记为 (r, m) ↦ r·m，满足：
+      
+      1. **分配律**：
+         - r · (m + n) = r·m + r·n
+         - (r + s) · m = r·m + s·m
+      
+      2. **结合律**：
+         - (rs) · m = r · (s·m)
+      
+      3. **单位元作用**：
+         - 1 · m = m （若 R 含幺）
+      
+      则称 M 为**左R-模**。
+      
+      类似可定义**右R-模**。
+    intuitive: "模是向量空间的推广，其中系数来自环而非域。模论统一了线性代数、表示论和同调代数的核心概念，是现代代数学的通用语言。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "子模"
+      notation: "N ≤ M"
+      description: "对R-作用封闭的子群"
+    - property: "商模"
+      notation: "M/N"
+      description: "模同余类构成的模"
+    - property: "直和"
+      notation: "M ⊕ N"
+      description: "模的直和构造"
+    - property: "自由模"
+      notation: "Rⁿ"
+      description: "具有基的模，类似于向量空间"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "Abel群"
+      - "环作用空间"
+    generalizesTo:
+      - "向量空间"
+      - "表示"
+      - "层"
+    dependsOn:
+      - "环"
+      - "Abel群"
+      - "群作用"
+    implies:
+      - "同调代数"
+      - "Ext/Tor函子"
+      - "投射模/内射模"
+      - "链复形"
+    related:
+      - "代数"
+      - "范畴论"
+      - "同调代数"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Emmy Noether, Wolfgang Krull"
+    year: 1929
+    context: "Noether将模作为研究交换环的理想论和表示论的工具，建立了模论的基础"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Algebra"
+        author: "Michael Artin"
+        chapter: "14.1"
+      - title: "Abstract Algebra"
+        author: "Dummit & Foote"
+        chapter: "10"
+      - title: "Commutative Algebra"
+        author: "Atiyah-Macdonald"
+        chapter: "2"
+      - title: "Homological Algebra"
+        author: "Cartan, Eilenberg"
+    stacks_tags:
+      - "00H6"  # 模的定义
+    nlab:
+      - "https://ncatlab.org/nlab/show/module"
+    mathworld:
+      - "http://mathworld.wolfram.com/Module.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      class Module (R : Type*) [Ring R] (M : Type*) [AddCommGroup M] where
+        smul : R → M → M
+        -- 分配律
+        smul_add : ∀ (r : R) (x y : M), r • (x + y) = r • x + r • y
+        add_smul : ∀ (r s : R) (x : M), (r + s) • x = r • x + s • x
+        -- 结合律
+        mul_smul : ∀ (r s : R) (x : M), (r * s) • x = r • (s • x)
+        -- 单位元
+        one_smul : ∀ x : M, (1 : R) • x = x
+    isabelle: |
+      locale module = ring R add mult zero minus uminus one +
+        abelian_group M addm zerom minusm uminusm
+        for R :: "'a set" and add :: "['a, 'a] ⇒ 'a"
+        and mult :: "['a, 'a] ⇒ 'a" and zero :: 'a
+        and minus :: "['a, 'a] ⇒ 'a" and uminus :: "'a ⇒ 'a"
+        and one :: 'a and M :: "'b set"
+        and addm :: "['b, 'b] ⇒ 'b" and zerom :: 'b
+        and minusm :: "['b, 'b] ⇒ 'b" and uminusm :: "'b ⇒ 'b" +
+        fixes scale :: "['a, 'b] ⇒ 'b" (infixl "⋅" 70)
+        assumes smult_closed: "⟦r ∈ R; m ∈ M⟧ ⟹ r ⋅ m ∈ M"
+          and smult_l_distr: "⟦r ∈ R; x ∈ M; y ∈ M⟧ ⟹ r ⋅ (x ⊕ y) = r ⋅ x ⊕ r ⋅ y"
+    coq: |
+      Class Module (R : Type) (M : Type) `{Ring R} `{AbelianGroup M} := {
+        scalar_mult : R -> M -> M;
+        scalar_mult_add_distr : forall r x y,
+          scalar_mult r (add x y) = add (scalar_mult r x) (scalar_mult r y);
+        scalar_mult_distrib : forall r s x,
+          scalar_mult (add r s) x = add (scalar_mult r x) (scalar_mult s x);
+        scalar_mult_assoc : forall r s x,
+          scalar_mult (mul r s) x = scalar_mult r (scalar_mult s x);
+        scalar_one : forall x, scalar_mult one x = x
+      }.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/02-代数结构/02-核心理论/模论/模论.md"

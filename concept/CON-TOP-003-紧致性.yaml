@@ -1,0 +1,145 @@
+---
+# 数学概念本体 - 紧致性 (Compactness)
+# 概念ID: CON-TOP-003
+# 分支: 拓扑学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-TOP-003"
+  name: "紧致性"
+  english_name: "Compactness"
+  aliases: ["紧致", "紧性", "Compact", "コンパクト", "Kompakt"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "54D30"
+  msc_secondary: ["54A99", "54E45"]
+  branch: "拓扑学"
+  topic: "一般拓扑学"
+  difficulty: 3
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **紧致性的定义**：设 (X, τ) 是拓扑空间。若满足以下等价条件之一：
+      
+      1. **开覆盖定义**：
+         - X 的任意开覆盖有有限子覆盖
+         - 即 ∀ {Uᵢ}ᵢ∈ᵢ ⊆ τ, X = ∪ᵢ∈ᵢ Uᵢ ⇒ ∃有限 J ⊆ I, X = ∪ⱼ∈ᴶ Uⱼ
+      
+      2. **有限交性质定义**：
+         - 具有有限交性质的闭集族有非空交
+      
+      3. **网收敛定义**（Hausdorff空间）：
+         - X 中任意网有收敛子网
+      
+      4. **序列紧致**（可度量化空间）：
+         - X 中任意序列有收敛子列
+      
+      若子集 K ⊆ X 作为子空间是紧的，则称 K 是 X 的**紧子集**。
+    intuitive: "紧致性是拓扑空间最重要的性质之一，推广了有限集和闭区间的优良性质。紧空间具有极值可达性、一致连续性等分析学中至关重要的性质。Heine-Borel定理指出：ℝⁿ的子集紧致当且仅当它是有界闭集。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "闭子集"
+      notation: "Hausdorff空间中紧子集闭"
+      description: "紧子集在Hausdorff空间中是闭的"
+    - property: "连续像"
+      notation: "f(K) 紧致"
+      description: "紧集的连续像是紧的"
+    - property: "Tychonoff定理"
+      notation: "紧空间的积紧致"
+      description: "任意多个紧空间的积空间紧致"
+    - property: "极值定理"
+      notation: "f(K) 有最值"
+      description: "紧集上连续实函数达到最值"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "拓扑性质"
+      - "拓扑不变量"
+    generalizesTo:
+      - "序列紧致"
+      - "可数紧致"
+      - "局部紧致"
+      - "仿紧致"
+    dependsOn:
+      - "拓扑空间"
+      - "开覆盖"
+      - "网/滤子"
+    implies:
+      - "有界性(可度量化)"
+      - "完备性(可度量化)"
+      - "极值可达"
+      - "一致连续性"
+    related:
+      - "连通性"
+      - "分离性"
+      - "紧化"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Maurice Fréchet, Pavel Alexandrov, Pavel Urysohn"
+    year: 1906
+    context: "Fréchet在研究函数空间时引入，Alexandrov和Urysohn系统发展了紧致性理论"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "General Topology"
+        author: "John L. Kelley"
+        chapter: "5"
+      - title: "Topology"
+        author: "James R. Munkres"
+        chapter: "3.26"
+      - title: "General Topology"
+        author: "Ryszard Engelking"
+        chapter: "3"
+    papers:
+      - title: "Sur quelques points du calcul fonctionnel"
+        author: "Maurice Fréchet"
+        year: 1906
+    stacks_tags:
+      - "005J"  # 紧致性
+    nlab:
+      - "https://ncatlab.org/nlab/show/compact+space"
+    mathworld:
+      - "http://mathworld.wolfram.com/CompactSpace.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      def IsCompact [TopologicalSpace X] (s : Set X) : Prop :=
+        ∀ ⦃f⦄, f ≤ 𝓟 s → f ≠ ⊥ → ∃ x ∈ s, ClusterPt x f
+      
+      -- 开覆盖定义
+      def IsCompact' [TopologicalSpace X] (s : Set X) : Prop :=
+        ∀ (ι : Type _) (U : ι → Set X), 
+        s ⊆ ⋃ i, U i → (∀ i, IsOpen (U i)) →
+        ∃ t : Finset ι, s ⊆ ⋃ i ∈ t, U i
+      
+      class CompactSpace (X : Type*) [TopologicalSpace X] : Prop where
+        isCompact_univ : IsCompact (Set.univ : Set X)
+    isabelle: |
+      definition compact :: "'a::topological_space set ⇒ bool"
+        where "compact s ≡ ∀C. (∀c∈C. open c) ∧ s ⊆ ⋃C ⟶ 
+          (∃D⊆C. finite D ∧ s ⊆ ⋃D)"
+      
+      class compact_space = topological_space +
+        assumes compact_univ: "compact UNIV"
+    coq: |
+      Definition compact {X : Type} `{TopologicalSpace X} 
+        (A : X -> Prop) : Prop :=
+        forall U : (X -> Prop) -> Prop,
+        (forall V, U V -> open_set V) ->
+        (forall x, A x -> exists V, U V /\ V x) ->
+        exists U', (forall V, U' V -> U V) /\
+          (exists L, forall V, U' V -> In V L) /\
+          forall x, A x -> exists V, U' V /\ V x.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/04-几何拓扑/01-点集拓扑/点集拓扑.md"

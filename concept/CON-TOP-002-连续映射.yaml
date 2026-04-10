@@ -1,0 +1,141 @@
+---
+# 数学概念本体 - 连续映射 (Continuous Map)
+# 概念ID: CON-TOP-002
+# 分支: 拓扑学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-TOP-002"
+  name: "连续映射"
+  english_name: "Continuous Map"
+  aliases: ["连续映射", "Continuous Function", "连续函数", "位相写像"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "54C05"
+  msc_secondary: ["54C10", "26A15"]
+  branch: "拓扑学"
+  topic: "一般拓扑学"
+  difficulty: 2
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **连续映射的定义**：设 (X, τₓ) 和 (Y, τᵧ) 是拓扑空间，f: X → Y 是映射。若满足以下等价条件之一：
+      
+      1. **开集原像定义**：
+         - ∀ V ∈ τᵧ: f⁻¹(V) ∈ τₓ
+      
+      2. **闭集原像定义**：
+         - ∀ F ⊆ Y 闭: f⁻¹(F) ⊆ X 闭
+      
+      3. **邻域定义**：
+         - ∀ x ∈ X, ∀ V ∈ N(f(x)): ∃ U ∈ N(x): f(U) ⊆ V
+      
+      4. **网收敛定义**：
+         - 若网 xₐ → x，则 f(xₐ) → f(x)
+      
+      则称 f 是**连续映射**。
+      
+      若 f 是双射且 f 和 f⁻¹ 都连续，则称 f 为**同胚**。
+    intuitive: "连续映射是拓扑学中的结构保持映射，它将开集的原像保持为开集。这是分析学中连续函数的推广，在拓扑空间之间建立了'邻近性'的保持关系，是研究空间结构的核心工具。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "复合保持"
+      notation: "g ∘ f 连续"
+      description: "连续映射的复合仍连续"
+    - property: "限制保持"
+      notation: "f|ₐ 连续"
+      description: "连续映射在子空间上的限制仍连续"
+    - property: "粘贴引理"
+      notation: "f|ₐ, f|ᵦ 连续 ⇒ f 连续"
+      description: "闭（开）子空间上连续映射可粘贴"
+    - property: "像的性质"
+      notation: "f(连通) 连通"
+      description: "连通集的连续像是连通的"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "映射"
+      - "函数"
+    generalizesTo:
+      - "同胚"
+      - "覆盖映射"
+      - "商映射"
+      - "开映射"
+    dependsOn:
+      - "拓扑空间"
+      - "开集"
+      - "邻域"
+    implies:
+      - "拓扑不变量保持"
+      - "范畴论态射"
+    related:
+      - "一致连续"
+      - "Lipschitz连续"
+      - "同伦"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Felix Hausdorff, Kazimierz Kuratowski"
+    year: 1922
+    context: "Hausdorff和Kuratowski等人将分析学中的连续性概念推广到拓扑空间"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "General Topology"
+        author: "John L. Kelley"
+        chapter: "3"
+      - title: "Topology"
+        author: "James R. Munkres"
+        chapter: "2.18"
+      - title: "点集拓扑学"
+        author: "熊金城"
+        chapter: "2.6"
+    stacks_tags:
+      - "00BB"  # 连续映射
+    nlab:
+      - "https://ncatlab.org/nlab/show/continuous+map"
+    mathworld:
+      - "http://mathworld.wolfram.com/ContinuousFunction.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      def Continuous [TopologicalSpace X] [TopologicalSpace Y] 
+        (f : X → Y) : Prop :=
+        ∀ s, IsOpen s → IsOpen (f ⁻¹' s)
+      
+      -- 在一点连续
+      def ContinuousAt [TopologicalSpace X] [TopologicalSpace Y] 
+        (f : X → Y) (x : X) : Prop :=
+        ∀ s ∈ 𝓝 (f x), f ⁻¹' s ∈ 𝓝 x
+    isabelle: |
+      definition continuous :: "('a::topological_space ⇒ 'b::topological_space) ⇒ bool"
+        where "continuous f ≡ ∀s. open s ⟶ open (f -` s)"
+      
+      definition continuous_at :: "('a::topological_space ⇒ 'b::topological_space) 
+        ⇒ 'a ⇒ bool"
+        where "continuous_at f x ≡ ∀s. open s ⟶ f x ∈ s 
+          ⟶ (∃t. open t ∧ x ∈ t ∧ f ` t ⊆ s)"
+    coq: |
+      Definition continuous {X Y : Type} 
+        `{TopologicalSpace X} `{TopologicalSpace Y} 
+        (f : X -> Y) : Prop :=
+        forall V : Y -> Prop, open_set V -> open_set (fun x => V (f x)).
+      
+      Definition continuous_at {X Y : Type}
+        `{TopologicalSpace X} `{TopologicalSpace Y}
+        (f : X -> Y) (x : X) : Prop :=
+        forall V : Y -> Prop, open_set V -> V (f x) ->
+        exists U : X -> Prop, open_set U /\ U x /\ 
+          (forall x', U x' -> V (f x')).
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/04-几何拓扑/01-点集拓扑/点集拓扑.md"

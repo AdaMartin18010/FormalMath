@@ -1,0 +1,127 @@
+---
+# 数学概念本体 - 极限 (Limit)
+# 概念ID: CON-ANA-001
+# 分支: 分析学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-ANA-001"
+  name: "极限"
+  english_name: "Limit"
+  aliases: ["極限", "Limit", "收敛", "Convergence"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "26A03"
+  msc_secondary: ["40A05", "26-01"]
+  branch: "分析学"
+  topic: "实分析"
+  difficulty: 1
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      设 {xₙ} 为数列，L ∈ ℝ。若对于任意 ε > 0，存在正整数 N，使得当 n > N 时，
+      有 |xₙ - L| < ε，则称数列 {xₙ} 收敛于 L，记作 limₙ→∞ xₙ = L。
+      
+      对于函数极限：设函数 f 在点 a 的某去心邻域内有定义，L ∈ ℝ。若对于任意 ε > 0，
+      存在 δ > 0，使得当 0 < |x - a| < δ 时，有 |f(x) - L| < ε，
+      则称 limₓ→ₐ f(x) = L。
+    intuitive: "极限描述的是一个变量无限接近某个确定值的过程，是微积分的理论基础。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "唯一性"
+      notation: "lim xₙ = L 唯一"
+      description: "若极限存在，则必唯一"
+    - property: "有界性"
+      notation: "收敛 ⇒ 有界"
+      description: "收敛数列必有界"
+    - property: "保号性"
+      notation: "xₙ ≥ 0 ⇒ lim xₙ ≥ 0"
+      description: "非负数列的极限非负"
+    - property: "夹逼性"
+      notation: "夹逼定理"
+      description: "若 aₙ ≤ bₙ ≤ cₙ 且 lim aₙ = lim cₙ = L，则 lim bₙ = L"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "基本概念"
+    generalizesTo:
+      - "上极限"
+      - "下极限"
+      - "无穷极限"
+    dependsOn:
+      - "实数"
+      - "绝对值"
+      - "不等式"
+    implies:
+      - "连续性"
+      - "导数"
+      - "积分"
+      - "级数"
+    related:
+      - "柯西序列"
+      - "单调收敛"
+      - "完备性"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Augustin-Louis Cauchy"
+    year: 1821
+    context: "《分析教程》中首次给出严格的ε-δ定义"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Principles of Mathematical Analysis"
+        author: "Walter Rudin"
+        chapter: "3.1"
+        publisher: "McGraw-Hill"
+      - title: "数学分析"
+        author: "卓里奇"
+        chapter: "3.1"
+      - title: "Understanding Analysis"
+        author: "Stephen Abbott"
+        chapter: "2.2"
+    papers:
+      - title: "Cours d'Analyse de l'École Royale Polytechnique"
+        author: "Augustin-Louis Cauchy"
+        year: 1821
+    stacks_tags:
+      - "00A35"  # 极限与收敛
+    nlab:
+      - "https://ncatlab.org/nlab/show/limit+of+a+sequence"
+    mathworld:
+      - "http://mathworld.wolfram.com/Limit.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      def Tendsto (f : ℕ → ℝ) (L : ℝ) : Prop :=
+        ∀ ε > 0, ∃ N, ∀ n ≥ N, |f n - L| < ε
+      
+      notation "lim " f " = " L => Tendsto f L
+    isabelle: |
+      definition tendsto :: "(nat ⇒ real) ⇒ real ⇒ bool"
+        where "tendsto f L ≡ ∀ε>0. ∃N. ∀n≥N. ¦f n - L¦ < ε"
+    coq: |
+      Definition limit (f : nat -> R) (L : R) : Prop :=
+        forall eps : R, eps > 0 ->
+        exists N : nat, forall n : nat,
+        (n >= N)%nat -> Rabs (f n - L) < eps.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/03-分析学/01-实分析/01-实分析.md"
+    - "concept/核心概念/13-极限-多理论分析示例-2025年1月.md"
+    
+  # ========== 思维表征 ==========
+  representations:
+    - type: "概念图谱"
+      description: "极限作为分析学基础概念"
+    - type: "学习路径"
+      description: "分析学入门第一概念"

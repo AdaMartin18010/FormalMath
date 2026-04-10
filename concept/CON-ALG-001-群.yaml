@@ -1,0 +1,141 @@
+---
+# 数学概念本体 - 群 (Group)
+# 概念ID: CON-ALG-001
+# 分支: 代数学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-ALG-001"
+  name: "群"
+  english_name: "Group"
+  aliases: ["Group", "抽象群", "群结构", "グループ"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "20A05"
+  msc_secondary: ["20-01", "08A99"]
+  branch: "代数学"
+  topic: "群论"
+  difficulty: 2
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **群的定义**：群是一个有序对 (G, ·)，其中 G 是集合，·: G × G → G 是二元运算，满足：
+      
+      1. **结合律**：∀a, b, c ∈ G: (a · b) · c = a · (b · c)
+      2. **单位元**：∃e ∈ G, ∀a ∈ G: e · a = a · e = a
+      3. **逆元**：∀a ∈ G, ∃a⁻¹ ∈ G: a · a⁻¹ = a⁻¹ · a = e
+      
+      若还满足交换律 ∀a, b ∈ G: a · b = b · a，则称为**阿贝尔群**（或交换群）。
+    intuitive: "群是带有可逆运算的代数结构，描述了对称性的数学抽象。群论是现代数学的核心分支，在物理、化学、密码学等领域有广泛应用。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "阶"
+      notation: "|G| 或 #G"
+      description: "群的元素个数（可能无限）"
+    - property: "交换性"
+      notation: "G 是阿贝尔群"
+      description: "运算满足交换律"
+    - property: "消去律"
+      notation: "ab = ac ⇒ b = c"
+      description: "群运算满足左右消去律"
+    - property: "单位元唯一性"
+      notation: "e 唯一"
+      description: "群的单位元是唯一的"
+    - property: "逆元唯一性"
+      notation: "a⁻¹ 唯一"
+      description: "每个元素的逆元是唯一的"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "magma"
+      - "半群"
+      - "幺半群"
+    generalizesTo:
+      - "环"
+      - "域"
+      - "范畴"
+    dependsOn:
+      - "集合"
+      - "二元运算"
+    implies:
+      - "子群"
+      - "商群"
+      - "群同态"
+      - "表示论"
+    related:
+      - "正规子群"
+      - "陪集"
+      - "Lagrange定理"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Évariste Galois"
+    year: 1830
+    context: "在研究多项式方程可解性时首次引入群的概念"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Algebra"
+        author: "Michael Artin"
+        chapter: "2.1"
+        publisher: "Pearson"
+      - title: "Abstract Algebra"
+        author: "Dummit & Foote"
+        chapter: "1.1"
+      - title: "代数学方法"
+        author: "李文威"
+        chapter: "1.1"
+    papers:
+      - title: "Mémoire sur les conditions de résolubilité des équations par radicaux"
+        author: "Évariste Galois"
+        year: 1830
+    stacks_tags:
+      - "01FN"  # 群的定义
+    nlab:
+      - "https://ncatlab.org/nlab/show/group"
+    mathworld:
+      - "http://mathworld.wolfram.com/Group.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      class Group (G : Type*) extends Mul G, One G, Inv G where
+        mul_assoc : ∀ a b c : G, (a * b) * c = a * (b * c)
+        one_mul : ∀ a : G, 1 * a = a
+        mul_one : ∀ a : G, a * 1 = a
+        inv_mul_cancel : ∀ a : G, a⁻¹ * a = 1
+        mul_inv_cancel : ∀ a : G, a * a⁻¹ = 1
+      
+      class CommGroup (G : Type*) extends Group G where
+        mul_comm : ∀ a b : G, a * b = b * a
+    isabelle: |
+      locale group =
+        fixes G :: "'a set" and mult :: "['a, 'a] ⇒ 'a" (infixl "⊗" 70)
+          and one :: 'a ("𝟙") and inv :: "'a ⇒ 'a"
+        assumes closed: "⟦x ∈ G; y ∈ G⟧ ⟹ x ⊗ y ∈ G"
+          and assoc: "⟦x ∈ G; y ∈ G; z ∈ G⟧ ⟹ (x ⊗ y) ⊗ z = x ⊗ (y ⊗ z)"
+          and identity: "x ∈ G ⟹ 𝟙 ⊗ x = x"
+          and inverse: "x ∈ G ⟹ inv x ⊗ x = 𝟙"
+    coq: |
+      Class Group (G : Type) := {
+        mult : G -> G -> G;
+        one : G;
+        inv : G -> G;
+        assoc : forall a b c, mult (mult a b) c = mult a (mult b c);
+        id_left : forall a, mult one a = a;
+        id_right : forall a, mult a one = a;
+        inv_left : forall a, mult (inv a) a = one;
+        inv_right : forall a, mult a (inv a) = one
+      }.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/02-代数结构/02-核心理论/群论/01-群论.md"
+    - "docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md"

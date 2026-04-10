@@ -1,0 +1,139 @@
+---
+# 数学概念本体 - 拓扑空间 (Topological Space)
+# 概念ID: CON-TOP-001
+# 分支: 拓扑学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-TOP-001"
+  name: "拓扑空间"
+  english_name: "Topological Space"
+  aliases: ["Topological Space", "位相空間", "Topology", "位相"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "54A05"
+  msc_secondary: ["54-01", "54B99"]
+  branch: "拓扑学"
+  topic: "一般拓扑学"
+  difficulty: 2
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **拓扑空间的定义**：设 X 是非空集合，τ ⊆ P(X) 是 X 的子集族。若 τ 满足：
+      
+      1. **空集和全集属于τ**：
+         - ∅ ∈ τ, X ∈ τ
+      
+      2. **任意并封闭**：
+         - 若 {Uᵢ}ᵢ∈ᵢ ⊆ τ，则 ∪ᵢ∈ᵢ Uᵢ ∈ τ
+      
+      3. **有限交封闭**：
+         - 若 U₁, U₂, ..., Uₙ ∈ τ，则 ∩ᵢ₌₁ⁿ Uᵢ ∈ τ
+      
+      则称 (X, τ) 为**拓扑空间**，τ 称为 X 上的**拓扑**，τ 中的元素称为**开集**。
+      
+      **邻域**：若 N ⊆ X 且存在开集 U 使得 x ∈ U ⊆ N，则称 N 为 x 的邻域。
+    intuitive: "拓扑空间是研究连续性、邻域、收敛等概念的抽象框架。它摒弃了距离的概念，只关注'开集'这一核心结构，使得连续性可以在更广泛的背景下研究，包括函数空间、流形等。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "开集"
+      notation: "U ∈ τ"
+      description: "拓扑的基本元素"
+    - property: "闭集"
+      notation: "F = X \\ U"
+      description: "开集的补集"
+    - property: "基"
+      notation: "B ⊆ τ"
+      description: "生成拓扑的开集族"
+    - property: "子空间拓扑"
+      notation: "τ|ₐ"
+      description: "子集继承的拓扑"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "集合"
+      - "结构空间"
+    generalizesTo:
+      - "度量空间"
+      - "流形"
+      - " schemes"
+      - "拓扑斯"
+    dependsOn:
+      - "集合论"
+      - "幂集"
+    implies:
+      - "连续映射"
+      - "紧致性"
+      - "连通性"
+      - "同胚"
+    related:
+      - "可度量性"
+      - "分离公理"
+      - "可数性公理"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Felix Hausdorff"
+    year: 1914
+    context: "Hausdorff在《集论基础》中首次给出拓扑空间的公理化定义，奠定了现代拓扑学的基础"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "General Topology"
+        author: "John L. Kelley"
+        chapter: "1"
+      - title: "Topology"
+        author: "James R. Munkres"
+        chapter: "2.12"
+      - title: "点集拓扑学"
+        author: "熊金城"
+        chapter: "2"
+      - title: "General Topology"
+        author: "Ryszard Engelking"
+    stacks_tags:
+      - "00BA"  # 拓扑空间
+    nlab:
+      - "https://ncatlab.org/nlab/show/topological+space"
+    mathworld:
+      - "http://mathworld.wolfram.com/TopologicalSpace.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      structure TopologicalSpace (X : Type*) where
+        IsOpen : Set X → Prop
+        isOpen_univ : IsOpen Set.univ
+        isOpen_inter : ∀ s t, IsOpen s → IsOpen t → IsOpen (s ∩ t)
+        isOpen_sUnion : ∀ s, (∀ t ∈ s, IsOpen t) → IsOpen (⋃₀ s)
+      
+      -- 开集族
+      def OpenSets (X : Type*) [TopologicalSpace X] : Set (Set X) :=
+        {s | TopologicalSpace.IsOpen s}
+    isabelle: |
+      locale topological_space =
+        fixes X :: "'a set" and T :: "'a set set"
+        assumes open_empty: "{} ∈ T"
+          and open_univ: "X ∈ T"
+          and open_inter: "⟦U ∈ T; V ∈ T⟧ ⟹ U ∩ V ∈ T"
+          and open_union: "∀U ∈ S. U ∈ T ⟹ ⋃S ∈ T"
+    coq: |
+      Class TopologicalSpace (X : Type) := {
+        open_set : (X -> Prop) -> Prop;
+        open_set_empty : open_set (fun _ => False);
+        open_set_full : open_set (fun _ => True);
+        open_set_inter : forall A B, open_set A -> open_set B -> 
+          open_set (fun x => A x /\ B x);
+        open_set_union : forall F, (forall A, F A -> open_set A) ->
+          open_set (fun x => exists A, F A /\ A x)
+      }.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/04-几何拓扑/01-点集拓扑/点集拓扑.md"

@@ -1,0 +1,115 @@
+---
+# 数学概念本体 - 连续 (Continuity)
+# 概念ID: CON-ANA-002
+# 分支: 分析学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-ANA-002"
+  name: "连续"
+  english_name: "Continuity"
+  aliases: ["連続", "Continuous", "连续性"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "26A15"
+  msc_secondary: ["26A03", "54C05"]
+  branch: "分析学"
+  topic: "实分析"
+  difficulty: 2
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      设函数 f: D → ℝ，D ⊆ ℝ，x₀ ∈ D。若对于任意 ε > 0，存在 δ > 0，
+      使得当 x ∈ D 且 |x - x₀| < δ 时，有 |f(x) - f(x₀)| < ε，
+      则称 f 在 x₀ 处连续。
+      
+      等价定义：limₓ→ₓ₀ f(x) = f(x₀)
+      
+      若 f 在 D 的每一点都连续，则称 f 在 D 上连续，记作 f ∈ C(D)。
+    intuitive: "连续描述的是函数图像没有断裂、跳跃，可以一笔画出，且自变量微小变化导致因变量也微小变化。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "局部性"
+      notation: "点态连续"
+      description: "连续是局部性质"
+    - property: "代数运算封闭性"
+      notation: "f, g ∈ C ⇒ f±g, fg, f/g ∈ C"
+      description: "连续函数的和、差、积、商（分母非零）仍连续"
+    - property: "复合保持性"
+      notation: "g ∘ f ∈ C"
+      description: "连续函数的复合仍连续"
+    - property: "介值性"
+      notation: "中间值定理"
+      description: "闭区间上连续函数取遍两端点间所有值"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "局部性质"
+    generalizesTo:
+      - "一致连续"
+      - "绝对连续"
+      - "Lipschitz连续"
+    dependsOn:
+      - "极限"
+      - "函数"
+    implies:
+      - "可积性"
+      - "介值定理"
+      - "最值定理"
+    related:
+      - "间断点"
+      - "一致收敛"
+      - "拓扑连续性"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Augustin-Louis Cauchy"
+    year: 1821
+    context: "在严格化分析学基础过程中建立"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Principles of Mathematical Analysis"
+        author: "Walter Rudin"
+        chapter: "4.5"
+      - title: "数学分析"
+        author: "卓里奇"
+        chapter: "4.1"
+      - title: "Understanding Analysis"
+        author: "Stephen Abbott"
+        chapter: "4.3"
+    stacks_tags:
+      - "00A35"
+    nlab:
+      - "https://ncatlab.org/nlab/show/continuous+function"
+    mathworld:
+      - "http://mathworld.wolfram.com/ContinuousFunction.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      def ContinuousAt (f : ℝ → ℝ) (x₀ : ℝ) : Prop :=
+        ∀ ε > 0, ∃ δ > 0, ∀ x, |x - x₀| < δ → |f x - f x₀| < ε
+      
+      def Continuous (f : ℝ → ℝ) : Prop :=
+        ∀ x₀, ContinuousAt f x₀
+    isabelle: |
+      definition continuous_at :: "(real ⇒ real) ⇒ real ⇒ bool"
+        where "continuous_at f x₀ ≡ ∀ε>0. ∃δ>0. ∀x. ¦x-x₀¦<δ ⟶ ¦f x-f x₀¦<ε"
+    coq: |
+      Definition continuous_at (f : R -> R) (x0 : R) : Prop :=
+        forall eps : R, eps > 0 ->
+        exists delta : R, delta > 0 ->
+        forall x : R, Rabs (x - x0) < delta -> Rabs (f x - f x0) < eps.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/03-分析学/01-实分析/01-实分析.md"
+    - "concept/核心概念/14-连续-多理论分析示例-2025年1月.md"

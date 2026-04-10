@@ -1,0 +1,146 @@
+---
+# 数学概念本体 - 切空间 (Tangent Space)
+# 概念ID: CON-GEO-002
+# 分支: 几何学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-GEO-002"
+  name: "切空间"
+  english_name: "Tangent Space"
+  aliases: ["Tangent Space", "接空間", "切平面", "切向量"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "53B21"
+  msc_secondary: ["58A05", "53A99"]
+  branch: "几何学"
+  topic: "微分几何"
+  difficulty: 4
+  importance: 5
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **几何定义**：设 M 是 n 维光滑流形，p ∈ M。
+      
+      **光滑曲线**：γ: (-ε, ε) → M，γ(0) = p
+      
+      **切向量等价类**：两条曲线 γ₁, γ₂ 在 p 点**相切**，若对某个（从而任意）
+      坐标卡 (U, φ)，有 (φ ∘ γ₁)'(0) = (φ ∘ γ₂)'(0)。
+      
+      **切空间**：TₚM = { 过 p 的光滑曲线相切类 }
+      
+      **导子定义**：切向量也可定义为满足莱布尼茨法则的导子：
+      - v: C^∞(M) → ℝ 是线性的
+      - v(fg) = v(f)g(p) + f(p)v(g)
+      
+      TₚM 构成 n 维实向量空间。
+    intuitive: "切空间是流形在某一点的'最佳线性近似'，推广了曲面的切平面概念。它是将流形局部线性化的工具，使得我们可以在弯曲空间上进行微积分运算。切丛（所有切空间的并）是向量场和微分方程的舞台。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "维数"
+      notation: "dim(TₚM) = dim(M)"
+      description: "切空间维数等于流形维数"
+    - property: "向量空间结构"
+      notation: "TₚM ≅ ℝⁿ"
+      description: "切空间是n维实向量空间"
+    - property: "自然同构"
+      notation: "dφₚ: TₚM → ℝⁿ"
+      description: "坐标卡诱导的同构"
+    - property: "微分映射"
+      notation: "dfₚ: TₚM → T_{f(p)}N"
+      description: "光滑映射诱导的切空间映射"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "向量空间"
+      - "纤维"
+    generalizesTo:
+      - "切丛"
+      - "法空间"
+      - "切锥"
+      - "代数几何中的Zariski切空间"
+    dependsOn:
+      - "流形"
+      - "光滑曲线"
+      - "导子"
+    implies:
+      - "向量场"
+      - "张量场"
+      - "微分形式"
+      - "李导数"
+    related:
+      - "余切空间"
+      - "张量积"
+      - "外代数"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "Carl Gauss, Bernhard Riemann"
+    year: 1827
+    context: "Gauss在研究曲面论时引入切平面概念，Riemann将其推广到高维流形"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Introduction to Smooth Manifolds"
+        author: "John M. Lee"
+        chapter: "3"
+      - title: "Riemannian Geometry"
+        author: "Manfredo do Carmo"
+        chapter: "0"
+      - title: "微分几何讲义"
+        author: "陈省身, 陈维桓"
+        chapter: "2"
+      - title: "A Comprehensive Introduction to Differential Geometry"
+        author: "Michael Spivak"
+        volume: "1"
+    stacks_tags:
+      - "00AA"  # 切空间
+    nlab:
+      - "https://ncatlab.org/nlab/show/tangent+space"
+    mathworld:
+      - "http://mathworld.wolfram.com/TangentSpace.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      -- 切向量作为导子
+      structure TangentVector (M : Type*) [SmoothManifold M n] (p : M) where
+        toFun : (SmoothFunction M ℝ) → ℝ
+        linear : IsLinearMap ℝ toFun
+        leibniz : ∀ (f g : SmoothFunction M ℝ),
+          toFun (f * g) = toFun f * g p + f p * toFun g
+      
+      -- 切空间
+      def TangentSpace (M : Type*) [SmoothManifold M n] (p : M) : Type* :=
+        TangentVector M p
+      
+      notation "T_" p " M" => TangentSpace M p
+      
+      instance : AddCommGroup (TangentSpace M p) := ...
+      instance : Module ℝ (TangentSpace M p) := ...
+    isabelle: |
+      typedef (overloaded) 'a tangent = 
+        "{v::('a::manifold ⇒ real) ⇒ real. 
+          linear v ∧ (∀f g. v (λx. f x * g x) = v f * g arbitrary + f arbitrary * v g)}"
+      
+      definition tangent_space :: "'a::manifold ⇒ 'a tangent set"
+        where "tangent_space p ≡ {v. ∀f. smooth f ⟶ v f = 0}"
+    coq: |
+      Definition derivation {M: Type} `{Manifold n M} (p: M) :=
+        {v : smooth_function M -> R |
+          (forall f g, v (f + g) = v f + v g) /\
+          (forall c f, v (c * f) = c * v f) /\
+          (forall f g, v (f * g) = v f * g p + f p * v g)}.
+      
+      Definition tangent_space {M: Type} `{Manifold n M} (p: M) :=
+        derivation p.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/04-几何拓扑/02-微分几何/微分几何.md"

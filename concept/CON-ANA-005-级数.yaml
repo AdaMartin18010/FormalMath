@@ -1,0 +1,126 @@
+---
+# 数学概念本体 - 级数 (Series)
+# 概念ID: CON-ANA-005
+# 分支: 分析学
+# 创建日期: 2026-04-09
+---
+
+concept:
+  # ========== 标识信息 ==========
+  id: "CON-ANA-005"
+  name: "级数"
+  english_name: "Series"
+  aliases: ["級數", "无穷级数", "Infinite Series", "数项级数"]
+  
+  # ========== 分类信息 ==========
+  msc_primary: "40-XX"
+  msc_secondary: ["40A05", "40A30"]
+  branch: "分析学"
+  topic: "级数理论"
+  difficulty: 3
+  importance: 4
+  
+  # ========== 定义 ==========
+  definition:
+    formal: |
+      **数项级数**：给定数列 {aₙ}，形式和 Σₙ₌₁^∞ aₙ = a₁ + a₂ + a₃ + ... 称为无穷级数。
+      
+      **收敛性**：令 Sₙ = Σₖ₌₁ⁿ aₖ 为部分和。若数列 {Sₙ} 收敛于 S，
+      则称级数 Σₙ₌₁^∞ aₙ 收敛，和为 S，记作 Σₙ₌₁^∞ aₙ = S。
+      
+      **绝对收敛**：若 Σₙ₌₁^∞ |aₙ| 收敛，则称原级数绝对收敛。
+      
+      **条件收敛**：若 Σₙ₌₁^∞ aₙ 收敛但 Σₙ₌₁^∞ |aₙ| 发散，则称条件收敛。
+    intuitive: "级数是无穷多个数的求和，通过部分和序列的极限来定义。收敛级数如同有限和的推广，在近似计算和函数表示中有重要应用。"
+    
+  # ========== 属性 ==========
+  properties:
+    - property: "线性性"
+      notation: "Σ(caₙ + dbₙ) = cΣaₙ + dΣbₙ"
+      description: "收敛级数的线性组合仍收敛"
+    - property: "Cauchy准则"
+      notation: "∀ε>0, ∃N, m>n≥N ⇒ |Σₖ₌ₙ₊₁ᵐ aₖ|<ε"
+      description: "级数收敛的充要条件"
+    - property: "必要条件"
+      notation: "Σaₙ 收敛 ⇒ aₙ → 0"
+      description: "通项趋于零是收敛的必要条件"
+    - property: "重排定理"
+      notation: "Riemann重排定理"
+      description: "条件收敛级数可重排收敛到任意值"
+      
+  # ========== 关系 ==========
+  relationships:
+    isA:
+      - "无穷和"
+    generalizesTo:
+      - "函数项级数"
+      - "幂级数"
+      - "Fourier级数"
+      - "Dirichlet级数"
+    dependsOn:
+      - "极限"
+      - "数列"
+      - "不等式"
+    implies:
+      - "函数展开"
+      - "数值计算"
+      - "解析延拓"
+    related:
+      - "无穷乘积"
+      - "连分数"
+      - "渐近分析"
+      
+  # ========== 历史 ==========
+  history:
+    first_introduced_by: "古代数学家，系统化由Augustin-Louis Cauchy"
+    year: 1821
+    context: "Cauchy在《分析教程》中建立了级数收敛的严格理论"
+    
+  # ========== 参考文献 ==========
+  references:
+    textbooks:
+      - title: "Principles of Mathematical Analysis"
+        author: "Walter Rudin"
+        chapter: "3"
+      - title: "Understanding Analysis"
+        author: "Stephen Abbott"
+        chapter: "2.7"
+      - title: "数学分析"
+        author: "卓里奇"
+        chapter: "3.3"
+    stacks_tags:
+      - "40A05"
+    nlab:
+      - "https://ncatlab.org/nlab/show/series"
+    mathworld:
+      - "http://mathworld.wolfram.com/Series.html"
+      
+  # ========== 形式化 ==========
+  formalization:
+    lean4: |
+      def HasSum (f : ℕ → ℝ) (S : ℝ) : Prop :=
+        Tendsto (λ n => ∑ i in Finset.range n, f i) atTop (𝓝 S)
+      
+      notation "∑' n, " f => HasSum (λ n => f n)
+      
+      def Summable (f : ℕ → ℝ) : Prop :=
+        ∃ S, HasSum f S
+    isabelle: |
+      definition summable :: "(nat ⇒ real) ⇒ bool"
+        where "summable f ≡ ∃s. (λn. ∑i<n. f i) ⇢ s"
+      
+      definition suminf :: "(nat ⇒ real) ⇒ real"
+        where "suminf f ≡ THE s. (λn. ∑i<n. f i) ⇢ s"
+    coq: |
+      Definition infinite_sum (a : nat -> R) (l : R) : Prop :=
+        forall eps : R, eps > 0 ->
+        exists N : nat, forall n : nat,
+        (n >= N)%nat -> Rabs (sum_f_R0 a n - l) < eps.
+      
+      Definition convergent (a : nat -> R) : Prop :=
+        exists l : R, infinite_sum a l.
+      
+  # ========== 文档位置 ==========
+  documents:
+    - "docs/03-分析学/01-实分析/01-实分析.md"
+    - "concept/核心概念/17-级数-多理论分析示例-2025年1月.md"
