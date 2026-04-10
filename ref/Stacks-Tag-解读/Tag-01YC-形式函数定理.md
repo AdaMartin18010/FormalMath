@@ -1,270 +1,406 @@
-# Stacks Project Tag 01YC - 形式函数定理
+# Stacks Project Tag 01YC - 形式函数定理（Theorem on formal functions）
 
 ## 1. Tag基本信息
 
 | 属性 | 内容 |
 |------|------|
 | **Tag编号** | 01YC |
-| **定理名称** | 形式函数定理 (Theorem on Formal Functions) |
-| **所属章节** | Section 30.20 - The Theorem on Formal Functions (Divisors) |
-| **数学领域** | 代数几何、形式概形、上同调理论 |
-| **Stacks Project链接** | https://stacks.math.columbia.edu/tag/01YC |
+| **英文名称** | Theorem on formal functions |
+| **中文名称** | 形式函数定理 |
+| **所属章节** | Chapter 30: Cohomology of Sheaves (层的上同调) |
+| **数学领域** | 代数几何、形式几何、层上同调 |
+| **难度等级** | 高等研究生水平 |
+
+### 1.1 位置信息
+- **URL**: https://stacks.math.columbia.edu/tag/01YC
+- **章节**: 30.21 Theorem on formal functions
+- **前置Tags**: 01YB (上同调与基变换), 01YA (高阶直像), 01X8 (完备化)
+
+---
 
 ## 2. 定理/定义原文
 
-**形式函数定理 (Tag 01YC):**
+### 2.1 形式函数定理（Theorem 30.21.1）
 
-设 $f: X \to S$ 是Noether概形的真态射，$\mathcal{F}$ 是 $X$ 上的凝聚层。设 $s \in S$，$\mathfrak{m}_s$ 是 $\mathcal{O}_{S,s}$ 的极大理想，记完备化 $\hat{\mathcal{O}}_{S,s} = \varprojlim \mathcal{O}_{S,s}/\mathfrak{m}_s^n$。
+**设定**:
+- f: X → S 是紧合态射（proper morphism）
+- S 是局部Noether概形
+- F 是 X 上的凝聚层（coherent sheaf）
+- I ⊂ O_S 是理想层
+- S_n = Spec(O_S/I^{n+1}) 是第 n 个无穷小邻域
+- X_n = X ×_S S_n 是相应的无穷小形变
 
-则有典范同构：
+**定理陈述**:
 
-$$\left(R^p f_* \mathcal{F}\right)_s^\wedge \;\cong\; \varprojlim_n H^p(X_n, \mathcal{F}_n)$$
+对任意 i ≥ 0，存在典范同构：
+
+widehat{(R^i f_* F)_s} ≅ lim_n H^i(X_n, F_n)
 
 其中：
-- $X_n = X \times_S \text{Spec}(\mathcal{O}_{S,s}/\mathfrak{m}_s^n)$ 是第 $n$ 阶形式纤维
-- $\mathcal{F}_n$ 是 $\mathcal{F}$ 在 $X_n$ 上的限制
-- 左侧是茎的 $\mathfrak{m}_s$-adic完备化
+- 左边是 R^i f_* F 在点 s 处关于理想 m_s 的完备化
+- 右边是纤维上同调的射影极限
+- F_n 是 F 在 X_n 上的拉回
 
-**等价表述:**
+### 2.2 推论
 
-考虑形式完备化 $\mathfrak{X} = X_{/X_s}$（沿纤维 $X_s = f^{-1}(s)$ 的形式完备化），则：
+**推论 30.21.2（Stein分解定理的代数版本）**:
 
-$$\left(R^p f_* \mathcal{F}\right)_s^\wedge \;\cong\; H^p(\mathfrak{X}, \hat{\mathcal{F}})$$
+若 f_* O_X = O_S，则对所有 s ∈ S，纤维 X_s 是连通的。
+
+**推论 30.21.3（Zariski连通性原理）**:
+
+设 f: X → S 是紧合态射，S 局部Noether。若 O_S → f_* O_X 是同构，则纤维的连通分支数是上半连续的。
+
+### 2.3 导出版本
+
+**命题 30.21.4**:
+
+在导出范畴框架下，形式函数定理可以表述为：对 K ∈ D_{coh}^b(X)，有：
+
+widehat{(Rf_* K)_s} ≅ Rlim_n RΓ(X_n, K|_{X_n})
+
+---
 
 ## 3. 概念依赖图
 
 ```
-形式函数定理 (Tag 01YC)
-│
-├── 核心前置概念
-│   ├── 真态射 (Tag 01W6)
-│   ├── 凝聚层 (Tag 01BU)
-│   ├── 高直像 R^pf_* (Tag 01E4)
-│   ├── 完备化/形式完备化 (Tag 00M9)
-│   └── adic完备化 (Tag 00MA)
-│
-├── 基变换理论
-│   ├── 上同调与基变换 (Tag 01YB)
-│   ├── 基变换映射 (Tag 01YB)
-│   └── 形式纤维 X_n (Tag 01XX)
-│
-├── 形式几何
-│   ├── 形式概形 (Tag 02H3)
-│   ├── 形式完备化 (Tag 02H4)
-│   └── 凝聚层的完备化 (Tag 087V)
-│
-└── 后继应用
-    ├── Stein分解 (Tag 03H0)
-    ├── Zariski连通性原理 (Tag 03H1)
-    └── 形变理论
+                    ┌─────────────────┐
+                    │  概形 X/S       │
+                    │  紧合态射 f     │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              ▼              ▼              ▼
+       ┌────────────┐ ┌────────────┐ ┌────────────┐
+       │ 凝聚层 F   │ │ 理想层 I  │ │ 高阶直像  │
+       └─────┬──────┘ └─────┬──────┘ └─────┬──────┘
+             │              │              │
+             └──────────────┼──────────────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │  无穷小形变   │
+                    │  X_n = X ×_S S_n│
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │  完备化       │
+                    │  形式概形     │
+                    │  Spf(Ô_{S,s})│
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │ 形式函数定理  │◄────────────┐
+                    │              │             │
+                    │ (R^i f_* F)_s^∧            │
+                    │  ≅ lim H^i(X_n, F_n)       │
+                    └───────┬───────┘             │
+                            │                     │
+              ┌─────────────┼─────────────┐       │
+              ▼             ▼             ▼       │
+       ┌──────────┐  ┌──────────┐  ┌──────────┐   │
+       │ Zariski │  │ Stein   │  │ 形变    │   │
+       │ 连通性  │  │ 分解    │  │ 理论    │   │
+       └──────────┘  └──────────┘  └──────────┘   │
+                                                  │
+                    ┌─────────────────┐           │
+                    │  形式完备化     │───────────┘
+                    │  理论           │
+                    └─────────────────┘
 ```
 
-## 4. 证明概要
+### 3.1 详细依赖链
 
-**证明策略:**
-
-**Step 1: 局部化与约化**
-- 问题局部于 $S$，可设 $S = \text{Spec}(A)$，$s$ 对应理想 $\mathfrak{m}$
-- 需证：$H^p(X, \mathcal{F})^\wedge \cong \varprojlim H^p(X_n, \mathcal{F}_n)$
-
-**Step 2: 关键引理**
-
-**引理 (Mittag-Leffler条件):**
-对于真态射 $f: X \to S$ 和凝聚层 $\mathcal{F}$，系统 $\{H^p(X_n, \mathcal{F}_n)\}$ 满足 Mittag-Leffler 条件。
-
-**证明要点:**
-- 利用上同调的有限性（真态射的 coherence theorem）
-- 证明像的稳定性
-
-**Step 3: 谱序列论证**
-
-考虑 Leray 谱序列的完备化版本：
-
-$$E_2^{p,q} = H^p(S, R^q f_* \mathcal{F} \otimes \mathcal{O}_S/\mathfrak{m}^n) \Rightarrow H^{p+q}(X_n, \mathcal{F}_n)$$
-
-**Step 4: 极限交换**
-
-利用 Mittag-Leffler 条件，证明：
-
-$$\varprojlim_n H^p(X_n, \mathcal{F}_n) = H^p(\varprojlim_n X_n, \varprojlim_n \mathcal{F}_n)$$
-
-**Step 5: 基变换映射的极限**
-
-基变换映射在极限下给出所求同构。
-
-**技术要点:**
-- **关键:** 完备化与上同调的交换性
-- **工具:** 导出完备化函子、Mittag-Leffler系统
-
-## 5. 与FormalMath对应
-
-| Stacks Project概念 | FormalMath对应内容 | 文档路径 |
-|-------------------|-------------------|----------|
-| 真态射 | 代数几何/真态射 | `concept/algebraic_geometry/proper_morphism.md` |
-| 凝聚层 | 代数几何/凝聚层 | `concept/algebraic_geometry/coherent_sheaf.md` |
-| adic完备化 | 交换代数/adic完备化 | `concept/commutative_algebra/adic_completion.md` |
-| 形式概形 | 代数几何/形式概形 | `concept/algebraic_geometry/formal_scheme.md` |
-
-**当前对齐状态:**
-- 🟡 **部分对齐** - 基础概念有文档，但形式函数定理本身待补充
-
-**建议补充内容:**
-```markdown
-## 形式函数定理详解
-
-### 定理陈述
-设 $f: X \to S$ 是Noether概形的真态射，$\mathcal{F}$ 凝聚，$s \in S$：
-
-$$\widehat{(R^p f_* \mathcal{F})_s} \cong \varprojlim_n H^p(X_n, \mathcal{F}_n)$$
-
-### 解释
-- 左侧：高直像在 $s$ 处茎的完备化
-- 右侧：形式纤维上同调的逆向极限
-
-### 证明概览
-1. 利用上同调有限性定理
-2. 验证Mittag-Leffler条件
-3. 极限与上同调交换
-4. 基变换映射的完备化
-
-### 推论: Zariski连通性原理
-若 $R^0 f_* \mathcal{O}_X = \mathcal{O}_S$，则纤维是连通的。
-
-### 应用: Stein分解
-真态射可分解为 $X \to Y \to S$，其中 $X \to Y$ 有连通纤维，$Y \to S$ 有限。
 ```
+概形理论基础
+    ├── 紧合态射 f: X → S
+    ├── 凝聚层理论
+    │       ├── 凝聚层 F
+    │       └── 凝聚层的上推 f_* F
+    └── 形式几何
+            ├── 完备化构造
+            ├── 形式概形
+            └── 无穷小形变
 
-## 6. 应用与重要性
+上同调理论
+    ├── 高阶直像层 R^i f_*
+    ├── 层上同调 H^i(X, F)
+    └── Čech上同调
 
-**核心应用场景:**
-
-### 1. Zariski连通性原理 (Tag 03H1)
-- **定理:** 若 $f: X \to S$ 真且 $f_*\mathcal{O}_X = \mathcal{O}_S$，则 $f$ 有连通纤维
-- 这是形式函数定理在 $p=0$ 时的直接推论
-
-### 2. Stein分解 (Tag 03H0)
-- **结构定理:** 任意真态射可分解为：
-  $$X \xrightarrow{f'} Y \xrightarrow{\pi} S$$
-  其中 $f'$ 有连通纤维，$\pi$ 有限
-- 类似于复几何中的Stein分解
-
-### 3. 形变理论
-- 研究上同调在形变下的变化
-- 比较一般纤维与特殊纤维的上同调
-
-### 4. 代数化的判定
-- Grothendieck存在定理的关键输入
-- 判断形式概形是否代数化
-
-### 5. 奇点消解
-- 研究例外除子上同调
-- 爆破变换的不变量
-
-**重要性评级:** ⭐⭐⭐⭐⭐ (5/5)
-
-形式函数定理是代数几何中最重要的技术性定理之一，连接了代数几何与形式几何两个世界。
-
-## 7. 与其他资源关联
-
-### Stacks Project内部关联
-| 相关Tag | 关联描述 |
-|---------|----------|
-| Tag 01YB | 上同调与基变换（证明工具） |
-| Tag 03H0 | Stein分解（直接应用） |
-| Tag 03H1 | Zariski连通性原理 |
-| Tag 01W6 | 真态射 |
-| Tag 02H3 | 形式概形 |
-| Tag 087V | 凝聚层的完备化 |
-
-### 外部资源
-
-**原始文献:**
-1. **Grothendieck, A.** "Éléments de Géométrie Algébrique III"
-   - §4: Théorème des fonctions formelles
-   - 最原始的系统阐述
-
-2. **Grothendieck, A.** "Séminaire de Géométrie Algébrique 1"
-   - Exposé IX详细证明
-
-**现代教材:**
-1. **Hartshorne, R.** "Algebraic Geometry"
-   - 第三章§11: Theorem on Formal Functions
-
-2. **Liu, Q.** "Algebraic Geometry and Arithmetic Curves"
-   - §5.3.3: Theorem on formal functions
-
-3. **Vakil, R.** "The Rising Sea"
-   - 第29章: $
-abla$ formal functions
-
-**相关理论:**
-- **Formal schemes**: 形式概形理论
-- **Grothendieck Existence Theorem**: 代数化定理
-- **Mittag-Leffler systems**: 逆向极限理论
-
-## 8. Lean4形式化展望
-
-### 形式化难度评估: ⭐⭐⭐⭐⭐ (5/5)
-
-**主要挑战:**
-1. **形式概形** - 需要完整的形式概形理论
-2. **adic完备化** - 交换代数的深入内容
-3. **Mittag-Leffler条件** - 极限范畴的精细控制
-4. **真态射的上同调有限性** - 复杂的有限性定理
-
-**Lean4实现路线:**
-
-```lean4
--- 概念框架（设想）
-import Mathlib
-
--- 形式函数定理设置
-structure FormalFunctionsSetup where
-  X S : Scheme
-  f : X ⟶ S
-  h_proper : Proper f
-  F : CoherentSheaf X
-  s : S
-  h_noetherian : IsNoetherian S
-
--- Mittag-Leffler系统
-structure MittagLefflerSystem (I : Type*) [Preorder I] (A : I → Type*) where
-  transition : ∀ (i j : I), i ≤ j → A j → A i
-  stable : ∀ i, ∃ j ≥ i, ∀ k ≥ j,
-    Set.range (transition i k) = Set.range (transition i j)
-
--- 形式函数定理
-theorem theorem_on_formal_functions (setup : FormalFunctionsSetup) (p : ℕ) :
-    let X_n := setup.X.formalFiber setup.s n
-    let F_n := setup.F.restrict X_n
-    Completion.adic (stalk (R p setup.f_* setup.F) setup.s) ≅
-    limit (fun n => Cohomology p X_n F_n) := by
-  sorry
-  -- 需要：
-  -- 1. Mittag-Leffler条件的验证
-  -- 2. 极限交换定理
-  -- 3. 基变换映射的完备化
-
--- Zariski连通性原理
-theorem zariski_connectedness_principle {X S : Scheme} (f : X ⟶ S)
-    (h_proper : Proper f) (h_iso : f_* 𝒪_X ≅ 𝒪_S) (s : S) :
-    IsConnected (f.fiber s) := by
-  sorry
-  -- 形式函数定理 p=0 的推论
+形式函数定理 ◄── 本Tag
+    ├── 主定理：完备化 ≅ 射影极限
+    ├── Stein分解推论
+    └── Zariski连通性原理
 ```
-
-**Mathlib现状:**
-- 形式概形理论尚未建立
-- adic完备化有基础定义但不够完整
-- Mittag-Leffler系统需要新实现
-
-**形式化优先级:** MEDIUM
-- 是高级代数几何的核心
-- 依赖大量前置理论
-- 建议在形式概形基础完成后推进
 
 ---
 
-**文档编制日期:** 2026年4月  
-**作者:** FormalMath项目团队  
-**版本:** 1.0
+## 4. 证明概要
+
+### 4.1 形式函数定理证明
+
+**核心策略**: 结合Čech上同调与射影极限的交换性
+
+**证明步骤**:
+
+1. **局部化**: 设 S = Spec(A)，I 对应理想 I ⊂ A
+
+2. **Čech复形**: 选取 X 的有限仿射覆盖 U = {U_i}
+   - 由于 f 紧合，纤维有限型，有限覆盖存在
+
+3. **Čech复形计算**:
+   H^i(X, F) = H^i(Čech^•(U, F))
+
+4. **完备化与极限交换**:
+   - 关键观察: Čech复形由 A-模组成
+   - 完备化函子 ^∧ = lim_n (-)/I^{n+1}(-)
+   
+5. **有限性条件**:
+   - 由Grothendieck的凝聚定理，H^i(X, F) 是有限 A-模
+   - 对有限模，完备化与Čech上同调交换
+
+6. **归纳论证**: 对 n 归纳，证明：
+   (R^i f_* F) ⊗_A A/I^{n+1} ≅ H^i(X_n, F_n)
+
+7. **取射影极限**: 得到形式函数定理
+
+### 4.2 Stein分解推论证明
+
+**推论 30.21.2 的证明**:
+
+1. **假设**: f_* O_X = O_S
+
+2. **应用形式函数定理** (i = 0):
+   widehat{O_{S,s}} ≅ lim_n H^0(X_n, O_{X_n})
+
+3. **纤维分析**: 若 X_s 不连通，则 H^0(X_s, O_{X_s}) 是非平凡的直积
+
+4. **矛盾**: 与 widehat{O_{S,s}} 是局部环矛盾
+
+### 4.3 Zariski连通性原理证明
+
+**推论 30.21.3 的证明**:
+
+1. **Stein分解**: 分解 f 为 X → S' → S
+   - π_* O_X = O_{S'}
+   - g 有限态射
+
+2. **纤维连通性**: 由Stein分解，π 的纤维连通
+
+3. **上半连续性**: g 的纤维数上半连续
+
+---
+
+## 5. 与FormalMath对应
+
+### 5.1 对应概念映射
+
+| Stacks Project | FormalMath对应 | 文件路径 |
+|----------------|----------------|----------|
+| 紧合态射 | 紧合态射 | `concept/代数几何/紧合态射.md` |
+| 凝聚层 | 凝聚层 | `concept/代数几何/凝聚层.md` |
+| 高阶直像 | 高阶直像层 | `concept/代数几何/高阶直像层.md` |
+| 完备化 | 完备化 | `concept/交换代数/完备化.md` |
+| 形式概形 | 形式概形 | `concept/代数几何/形式概形.md` |
+| 无穷小形变 | 无穷小形变 | `concept/代数几何/形变理论.md` |
+
+### 5.2 Lean4形式化方向
+
+```lean4
+-- 形式函数定理的Lean4可能形式
+import Mathlib.AlgebraicGeometry.FormalGeometry
+
+-- 形式函数定理
+theorem theorem_on_formal_functions {X S : Scheme} (f : X ⟶ S)
+    [IsProper f] [LocallyNoetherian S]
+    (F : CoherentSheaf X) (s : S) (i : ℕ) :
+    let I := s.asIdeal;
+    Completion I ((R i f_* F).stalk s) ≅
+    lim functor ⋙ (fun n ↦ 
+      Scheme.cohomology i (X.infinitesimalNeighborhoood s n)
+        (F.restrict (X.infinitesimalNeighborhoood s n))) := by
+  sorry
+
+-- Stein分解推论
+theorem stein_factorization_connected_fibers {X S : Scheme} (f : X ⟶ S)
+    [IsProper f] [LocallyNoetherian S]
+    (h : f_* (structureSheaf X) = structureSheaf S) :
+    ∀ (s : S), IsConnected (f.fiber s) := by
+  sorry
+```
+
+### 5.3 在知识体系中的位置
+
+```
+代数几何/概形理论
+    ├── 紧合态射理论
+    │       ├── 紧合态射定义
+    │       ├── 高阶直像层
+    │       └── 形式函数定理 ◄── 本Tag
+    ├── 形式几何
+    │       ├── 完备化构造
+    │       ├── 形式概形
+    │       └── 形式形变
+    └── 复几何类比
+            ├── Stein空间
+            └── 复解析形式函数定理
+```
+
+---
+
+## 6. 应用与重要性
+
+### 6.1 核心应用
+
+1. **连通性原理**
+   - Zariski连通性定理
+   - 纤维连通性的判定
+   - 代数簇族的连通性
+
+2. **Stein分解**
+   - 紧合态射的典范分解
+   - 双有理几何中的应用
+   - 连通纤维的结构分析
+
+3. **形变理论**
+   - 形式形变的控制
+   - 无穷小提升准则
+   - 障碍理论
+
+### 6.2 具体应用实例
+
+| 应用领域 | 具体结果 | 定理引用 |
+|----------|----------|----------|
+| **双有理几何** | 例外轨迹的连通性 | Zariski主定理 |
+| **模空间** | 模空间的紧化 | Deligne-Mumford紧化 |
+| **Abel簇** | 对偶理论 | 对偶Abel簇的构造 |
+| **曲面分类** | 收缩定理 | Castelnuovo-Enriques |
+
+### 6.3 历史发展
+
+- **O. Zariski (1950s)**: 代数曲面的连通性原理
+- **J.-P. Serre (1956)**: GAGA原理中的形式函数
+- **A. Grothendieck (EGA III)**: 一般形式的形式函数定理
+- **H. Hironaka**: 奇点消解中的应用
+
+### 6.4 现代发展
+
+- **p-进Hodge理论**: 完美oid空间中的形式函数
+- **非Archimedean几何**: Berkovich空间的应用
+- **导出代数几何**: 高阶形式函数定理
+
+---
+
+## 7. 与其他资源关联
+
+### 7.1 Stacks Project内部关联
+
+| 相关Tag | 名称 | 关系 |
+|---------|------|------|
+| 01YB | 上同调与基变换 | 密切相关 |
+| 01YA | 高阶直像 | 基础概念 |
+| 01X8 | 完备化 | 基础构造 |
+| 01XS | 平坦态射 | 相关概念 |
+| 013Z | K-内射复形 | 导出范畴工具 |
+
+### 7.2 外部资源
+
+**教科书**:
+- Hartshorne: "Algebraic Geometry" (第三章, §11)
+- Vakil: "The Rising Sea" (第29章)
+- Bosch-Lütkebohmert-Raynaud: "Néron Models" (形式几何)
+
+**原始文献**:
+- Grothendieck: EGA III.4, §4
+- Zariski: "Theory and applications of holomorphic functions..."
+- Serre: "Géométrie algébrique et géométrie analytique"
+
+**现代综述**:
+- Illusie: "Topics in algebraic geometry"
+- Conrad: "Formal GAGA"
+
+### 7.3 计算工具
+
+- **Macaulay2**: 形式幂级数计算
+- **SageMath**: 形式形变计算
+- **Magma**: 代数形变理论
+
+---
+
+## 8. Lean4形式化展望
+
+### 8.1 当前形式化状态
+
+```
+Mathlib4状态:
+✅ 概形基础
+✅ 层论基础
+✅ 完备化构造
+🔄 形式概形 (进行中)
+⬜ 形式函数定理
+⬜ 无穷小形变理论
+```
+
+### 8.2 形式化路线图
+
+**阶段1: 形式几何基础** (预计12个月)
+```lean4
+-- 形式概形的定义
+structure FormalScheme where
+  underlyingTopologicalSpace : TopologicalSpace
+  structureSheaf : SheafOfTopologicalRings
+  -- 形式完备化条件
+```
+
+**阶段2: 无穷小形变** (预计18个月)
+```lean4
+-- 无穷小邻域
+def infinitesimalNeighborhood {X S : Scheme} (f : X ⟶ S)
+    (s : S) (n : ℕ) : Scheme :=
+  pullback f (Spec.map (CommRingCat.ofHom
+    (Ideal.Quotient.mk (s.asIdeal ^ (n + 1)))))
+```
+
+**阶段3: 形式函数定理** (预计30个月)
+```lean4
+-- 形式函数定理完整形式化
+theorem formal_functions_theorem {X S : Scheme} (f : X ⟶ S)
+    [IsProper f] [LocallyNoetherian S] (F : CoherentSheaf X) :
+    ∀ (s : S) (i : ℕ),
+    Completion (R i f_* F).stalk s ≅
+      limit (infinitesimalCohomologyFunctor f F s i) := by
+  -- 基于Čech上同调的证明
+```
+
+### 8.3 技术挑战
+
+1. **完备化函子**: 处理非Noether情形
+2. **射影极限**: 阿贝尔范畴中的可表性
+3. **Čech上同调**: 非仿射覆盖的一般理论
+
+### 8.4 相关形式化项目
+
+- **mathlib4#formal-schemes**: 形式概形理论
+- **mathlib4#deformation**: 形变理论
+- **Condensed Mathematics**: 形式完备化
+
+---
+
+## 附录: 关键公式速查
+
+| 概念 | 公式 |
+|------|------|
+| **形式函数定理** | widehat{(R^i f_* F)_s} ≅ lim_n H^i(X_n, F_n) |
+| **无穷小邻域** | X_n = X ×_S Spec(O_S/I^{n+1}) |
+| **完备化** | widehat{M} = lim_n M/I^{n+1}M |
+| **Čech上同调** | H^i(X, F) = H^i(Čech^•(U, F)) |
+| **Stein条件** | f_* O_X = O_S |
+
+---
+
+**文档版本**: 1.0  
+**创建日期**: 2026-04-10  
+**最后更新**: 2026-04-10  
+**作者**: FormalMath Knowledge System

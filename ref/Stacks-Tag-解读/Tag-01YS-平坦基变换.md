@@ -1,276 +1,415 @@
-# Stacks Project Tag 01YS - 平坦基变换
+# Stacks Project Tag 01YS - 平坦基变换（Flat base change）
 
 ## 1. Tag基本信息
 
 | 属性 | 内容 |
 |------|------|
 | **Tag编号** | 01YS |
-| **定理名称** | 平坦基变换 (Flat Base Change) |
-| **所属章节** | Section 30.5 - Flat Base Change (Divisors) |
-| **数学领域** | 代数几何、层上同调、同调代数 |
-| **Stacks Project链接** | https://stacks.math.columbia.edu/tag/01YS |
+| **英文名称** | Flat base change |
+| **中文名称** | 平坦基变换 |
+| **所属章节** | Chapter 30: Cohomology of Sheaves (层的上同调) |
+| **数学领域** | 代数几何、交换代数、层上同调 |
+| **难度等级** | 研究生水平 |
+
+### 1.1 位置信息
+
+- **URL**: https://stacks.math.columbia.edu/tag/01YS
+- **章节**: 30.18 Flat base change
+- **前置Tags**: 01XS (平坦态射), 01XA (高阶直像), 01XB (Čech上同调)
+
+---
 
 ## 2. 定理/定义原文
 
-**平坦基变换定理 (Tag 01YS):**
+### 2.1 平坦基变换定理（Lemma 30.18.1）
 
-设 $f: X \to S$ 是概形的拟紧分离态射，$\mathcal{F}$ 是 $X$ 上的拟凝聚层。考虑基变换图：
+**设定**:
+考虑Cartesian图表（拉回图表）：
 
-$$
-\xymatrix{
-X' \ar[r]^{g'} \ar[d]_{f'} & X \ar[d]^f \\
-S' \ar[r]^g & S
-}
-$$
+```
+X' ──g'──► X
+│          │
+f'         f
+▼          ▼
+S' ──g───► S
+```
 
-若 $g: S' \to S$ 是**平坦**态射，则对任意 $p \geq 0$，基变换映射
+其中：
 
-$$g^* R^p f_* \mathcal{F} \;\xrightarrow{\;\cong\;}\; R^p f'_* (g')^* \mathcal{F}$$
+- $f: X \to S$ 是概形态射
+- $g: S' \to S$ 是**平坦**态射
+- $X' = X \times_S S'$ 是纤维积
+- $f': X' \to S'$ 是基变换后的态射
 
-是**同构**。
+**定理陈述**:
 
-**等价表述 (仿射情形):**
+对于 $X$ 上的任意拟凝聚层（quasi-coherent sheaf）$\mathcal{F}$，存在典范同构：
 
-设 $S = \text{Spec}(A)$，$S' = \text{Spec}(B)$，$g$ 平坦即 $B$ 是平坦 $A$-模。则：
+$$g^* R^i f_* \mathcal{F} \cong R^i f'_* (g')^* \mathcal{F}$$
 
-$$B \otimes_A H^p(X, \mathcal{F}) \;\cong\; H^p(X', (g')^*\mathcal{F})$$
+对所有 $i \geq 0$ 成立。
+
+等价表述：基变换映射
+$$g^* R^i f_* \mathcal{F} \longrightarrow R^i f'_* (g')^* \mathcal{F}$$
+
+在 $g$ 平坦时是同构。
+
+### 2.2 导出范畴版本
+
+**引理 30.18.2**:
+
+设 $g: S' \to S$ 平坦，$f: X \to S$ 任意，则对 $K \in D_{\text{qc}}(X)$，基变换映射
+
+$$Lg^* Rf_* K \longrightarrow Rf'_* L(g')^* K$$
+
+是同构。
+
+### 2.3 特殊情况
+
+**情形1: 仿射态射**
+
+若 $f$ 是仿射的，则 $R^i f_* \mathcal{F} = 0$ 对 $i > 0$，且：
+$$g^* f_* \mathcal{F} \cong f'_* (g')^* \mathcal{F}$$
+
+这是层条件（sheaf condition）的直接推论。
+
+**情形2: 开浸入**
+
+若 $g$ 是开浸入，则平坦基变换反映了上同调的局部性质。
+
+---
 
 ## 3. 概念依赖图
 
 ```
-平坦基变换 (Tag 01YS)
-│
-├── 核心前置概念
-│   ├── 平坦态射 (Tag 01U4)
-│   ├── 拟紧分离态射 (Tag 01KU)
-│   ├── 拟凝聚层 (Tag 01LA)
-│   ├── 高直像 R^pf_* (Tag 01E4)
-│   └── 基变换映射 (Tag 01YB)
-│
-├── 同调代数基础
-│   ├── 导出函子 (Tag 05R1)
-│   ├── 平坦模 (Tag 00MB)
-│   ├── 内射消解 (Tag 013X)
-│   └── 层上同调 (Tag 01E1)
-│
-├── 导出范畴技术
-│   ├── 导出像 Rf_* (Tag 06YZ)
-│   └── 导出张量积 ⊗^L (Tag 08HP)
-│
-└── 后继应用
-    ├── 上同调与平坦性 (Tag 01YU)
-    ├── 半连续性定理 (Tag 0CCM)
-    └── 形变理论
+                    ┌─────────────────┐
+                    │   概形态射      │
+                    │    f: X→S      │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              ▼              ▼              ▼
+       ┌────────────┐ ┌────────────┐ ┌────────────┐
+       │ 拟凝聚层   │ │ 平坦态射   │ │ 纤维积    │
+       │    ℱ      │ │    g       │ │  X×_S S'  │
+       └─────┬──────┘ └─────┬──────┘ └─────┬──────┘
+             │              │              │
+             └──────────────┼──────────────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │   高阶直像    │
+                    │  R^i f_* ℱ   │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │   拉回层      │
+                    │  g^* R^i f_* ℱ│
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │  平坦基变换   │◄────────────┐
+                    │   定理        │             │
+                    │  g^* R^i f_* ℱ              │
+                    │  ≅ R^i f'_* g'^* ℱ          │
+                    └───────┬───────┘             │
+                            │                     │
+              ┌─────────────┼─────────────┐       │
+              ▼             ▼             ▼       │
+       ┌──────────┐  ┌──────────┐  ┌──────────┐   │
+       │ 导出范畴 │  │ 层上同调 │  │ 上同调   │   │
+       │ 版本     │  │ 与基变换 │  │ 维数不变 │   │
+       └──────────┘  └──────────┘  └──────────┘   │
+                                                  │
+                    ┌─────────────────┐           │
+                    │  平坦性条件     │───────────┘
+                    │  g flat over S │
+                    └─────────────────┘
 ```
 
-## 4. 证明概要
+### 3.1 详细依赖链
 
-**证明策略 (基于Cech上同调):**
-
-**Step 1: 仿射情形**
-设 $X$ 有仿射开覆盖 $\{U_i\}$，考虑Cech复形：
-
-$$\check{C}^\bullet(\mathfrak{U}, \mathcal{F}) : \quad 0 \to \prod_i \mathcal{F}(U_i) \to \prod_{i<j} \mathcal{F}(U_i \cap U_j) \to \cdots$$
-
-**Step 2: 平坦性与张量积**
-由于 $B$ 是平坦 $A$-模，张量积保持正合性：
-
-$$B \otimes_A \check{C}^\bullet(\mathfrak{U}, \mathcal{F}) \;\cong\; \check{C}^\bullet(\mathfrak{U}', (g')^*\mathcal{F})$$
-
-其中 $\mathfrak{U}' = \{(g')^{-1}(U_i)\}$ 是 $X'$ 的开覆盖。
-
-**Step 3: 上同调计算**
-Cech上同调给出层上同调（在分离假设下）：
-
-$$H^p(X, \mathcal{F}) = H^p(\check{C}^\bullet(\mathfrak{U}, \mathcal{F}))$$
-
-由平坦性：
-$$B \otimes_A H^p(X, \mathcal{F}) = H^p(B \otimes_A \check{C}^\bullet(\mathfrak{U}, \mathcal{F}))$$
-
-**Step 4: 一般情形**
-- 局部化约化到仿射情形
-- 层公理保证整体同构
-
-**导出范畴证明 (更现代):**
-
-**关键引理:** 若 $g$ 平坦，则 $Lg^* = g^*$（导出拉回简化为普通拉回）。
-
-**证明:**
-- 构造导出层面的基变换 $Lg^* Rf_* \to Rf'_* L(g')^*$
-- 平坦性保证 $Lg^* = g^*$ 且 $L(g')^* = (g')^*$
-- 取上同调得证
-
-## 5. 与FormalMath对应
-
-| Stacks Project概念 | FormalMath对应内容 | 文档路径 |
-|-------------------|-------------------|----------|
-| 平坦态射 | 代数几何/平坦态射 | `concept/algebraic_geometry/flat_morphism.md` |
-| 高直像 $R^pf_*$ | 代数几何/高直像 | `concept/algebraic_geometry/higher_direct_image.md` |
-| 层上同调 | 代数几何/层上同调 | `concept/algebraic_geometry/sheaf_cohomology.md` |
-| 导出像 $Rf_*$ | 代数几何/导出范畴 | `concept/algebraic_geometry/derived_category.md` |
-
-**当前对齐状态:**
-- 🟡 **部分对齐** - 平坦性理论和层上同调基础已建立，完整定理待补充
-
-**建议补充内容:**
-```markdown
-## 平坦基变换详解
-
-### 定理陈述
-设基变换图：
 ```
-X' --g'--> X
-|          |
-f'         f
-v          v
-S' --g-->  S
+交换代数基础
+    ├── 平坦模 (Flat Module)
+    ├── 平坦环同态
+    └── 张量积正合性
+        ↓
+概形理论
+    ├── 平坦态射定义
+    ├── 拟凝聚层
+    └── 纤维积构造
+        ↓
+层上同调
+    ├── 高阶直像层 R^i f_*
+    ├── Čech上同调
+    └── 层拉回 g^*
+        ↓
+平坦基变换定理 ◄── 本Tag
+    ├── 核心同构: g^* R^i f_* ≅ R^i f'_* g'^*
+    ├── 导出范畴推广
+    └── 上同调与基变换的基础
 ```
-若 $g$ 平坦，则 $g^* R^p f_* \mathcal{F} \xrightarrow{\cong} R^p f'_* (g')^* \mathcal{F}$。
-
-### 证明思路（Cech方法）
-1. 选取 $X$ 的仿射开覆盖 $\{U_i\}$
-2. Cech复形计算上同调
-3. 平坦张量积保持Cech复形结构
-4. 得到同构
-
-### 证明思路（导出方法）
-1. 在导出范畴构造基变换 $Lg^* Rf_* \to Rf'_* L(g')^*$
-2. 平坦性给出 $Lg^* = g^*$
-3. 取上同调即得
-
-### 反例：非平坦情形
-若 $g$ 不平坦，基变换映射通常不是同构。
-**例:** $S' = \text{Spec}(k) \hookrightarrow S = \text{Spec}(k[\epsilon]/\epsilon^2)$
-
-### 应用
-- 几何纤维的上同调计算
-- 半连续性定理的基础
-- 形变理论
-```
-
-## 6. 应用与重要性
-
-**核心应用场景:**
-
-### 1. 几何纤维的上同调
-- **应用:** 计算概形族的几何纤维上同调
-- **方法:** 通过平坦基变换到代数闭包
-- $$H^p(X_{\bar{s}}, \mathcal{F}_{\bar{s}}) = \varinjlim_{k'/k} H^p(X_{k'}, \mathcal{F}_{k'})$$
-
-### 2. 半连续性定理 (Tag 0CCM)
-- 平坦基变换是证明Grauert半连续性定理的关键
-- 保证函数 $s \mapsto \dim H^p(X_s, \mathcal{F}_s)$ 的上半连续性
-
-### 3. 形变理论
-- 研究上同调在形变下的行为
-- 一阶形变：$S' = \text{Spec}(k[\epsilon]/\epsilon^2)$
-
-### 4. 变换技巧
-- 将一般基上的问题约化到更易处理的情形
-- 如：从局部环到剩余域
-
-### 5. 比较定理
-- 复几何与代数几何的比较
-- étale上同调与奇异上同调的比较
-
-**重要性评级:** ⭐⭐⭐⭐⭐ (5/5)
-
-平坦基变换是代数几何中计算上同调的基本工具，其简洁性和普适性使其成为不可或缺的技术。
-
-## 7. 与其他资源关联
-
-### Stacks Project内部关联
-| 相关Tag | 关联描述 |
-|---------|----------|
-| Tag 01YB | 上同调与基变换（一般情形） |
-| Tag 01YU | 上同调与平坦性 |
-| Tag 0CCM | 半连续性定理 |
-| Tag 01U4 | 平坦态射 |
-| Tag 01E4 | 高直像 |
-| Tag 06YZ | 导出像 $Rf_*$ |
-
-### 外部资源
-
-**经典文献:**
-1. **Grothendieck, A.** "Éléments de Géométrie Algébrique III"
-   - §7系统讨论基变换理论
-
-2. **Cartan, H. & Eilenberg, S.** "Homological Algebra"
-   - 平坦模与导出函子的经典处理
-
-**现代教材:**
-1. **Hartshorne, R.** "Algebraic Geometry"
-   - 第三章§9: Flat morphisms and cohomology
-
-2. **Vakil, R.** "The Rising Sea"
-   - 第24、28章详述平坦基变换
-
-3. **Liu, Q.** "Algebraic Geometry and Arithmetic Curves"
-   - §5.2.4: Cohomology and flat base change
-
-**相关技术:**
-- **Smooth base change**: lisse情形的变体
-- **Proper base change**: 真态射的类似定理
-- **Generic flatness**: 平坦性的存在性
-
-## 8. Lean4形式化展望
-
-### 形式化难度评估: ⭐⭐⭐⭐☆ (4/5)
-
-**主要挑战:**
-1. **层上同调计算** - Cech上同调的严格形式化
-2. **平坦性的应用** - 张量积保持正合的精细控制
-3. **导出范畴语言** - 现代证明需要导出层范畴
-4. **拟分离条件** - 技术性的有限性条件
-
-**Lean4实现路线:**
-
-```lean4
--- 概念框架（设想）
-import Mathlib
-
--- 平坦基变换设置
-structure FlatBaseChangeSetup where
-  X S X' S' : Scheme
-  f : X ⟶ S
-  f' : X' ⟶ S'
-  g : S' ⟶ S
-  g' : X' ⟶ X
-  comm : f' ≫ g = g' ≫ f
-  isPullback : IsPullback f' g' f g
-  hg : Flat g
-
--- 平坦基变换定理（仿射情形）
-theorem flat_base_change_affine {A B : CommRingCat} {X : Scheme}
-    (f : X ⟶ Spec A) (h_flat : Flat (Spec.map (CommRingCat.ofHom (algebraMap A B))))
-    (F : QuasiCoherentSheaf X) (p : ℕ) :
-    let X' := pullback (Spec.map (CommRingCat.ofHom (algebraMap A B))) f
-    let F' := pullbackSheaf (Spec.map (CommRingCat.ofHom (algebraMap A B))) F
-    LinearEquiv (RingHom.id B)
-      (B ⊗[A] (HP p f F))
-      (HP p (pullback.snd _ _) F') := by
-  sorry
-  -- 需要Cech上同调的形式化
-
--- 一般情形的平坦基变换
-theorem flat_base_change {setup : FlatBaseChangeSetup} (F : QuasiCoherentSheaf setup.X)
-    (p : ℕ) :
-    IsIso (baseChangeMap setup p F) := by
-  sorry
-  -- 局部化到仿射情形
-```
-
-**Mathlib现状:**
-- `Flat` 类型类已定义
-- 层上同调的基础存在
-- Cech上同调需要更完整的形式化
-
-**形式化优先级:** HIGH
-- 是代数几何计算工具箱的核心
-- 建议在层上同调框架稳固后优先实现
 
 ---
 
-**文档编制日期:** 2026年4月  
-**作者:** FormalMath项目团队  
-**版本:** 1.0
+## 4. 证明概要
+
+### 4.1 经典证明（Čech方法）
+
+**证明步骤**:
+
+1. **仿射化**: 可假设 $S = \text{Spec}(A)$，$S' = \text{Spec}(B)$
+   - $g$ 平坦对应 $A \to B$ 平坦环同态
+
+2. **Čech复形**: 选取 $X$ 的仿射开覆盖 $\mathcal{U} = \{U_i\}$
+
+3. **关键观察**: Čech上同调计算
+   $$H^i(X, \mathcal{F}) = H^i(\check{C}^\bullet(\mathcal{U}, \mathcal{F}))$$
+
+4. **平坦性与张量积**:
+   - 由于 $B$ 在 $A$ 上平坦，张量积 $-\otimes_A B$ 是正合函子
+   - Čech复形与平坦基变换交换
+
+5. **具体计算**:
+
+   ```
+   g^* R^i f_* ℱ = H^i(X, ℱ) ⊗_A B
+                 ≅ H^i(Čech复形 ⊗_A B)
+                 = H^i(Čech复形 of X')
+                 = R^i f'_* g'^* ℱ
+   ```
+
+6. **层化**: 局部构造整体粘合成层同构
+
+### 4.2 导出范畴证明
+
+**引理 30.18.2 的证明**:
+
+1. **基变换映射构造**: 由伴随函子的单位态射
+
+2. **局部验证**: 对仿射概形验证是同构
+
+3. **关键点**: $g$ 平坦意味着 $Lg^* = g^*$（无需导出）
+
+4. **Čech-to-导出**: 证明Čech实现与导出函子一致
+
+### 4.3 与上同调维数的关系
+
+**推论**: 若 $g$ 平坦，则上同调维数满足：
+$$\text{cd}(f') \leq \text{cd}(f)$$
+
+其中 $\text{cd}(f)$ 是 $f$ 的上同调维数。
+
+---
+
+## 5. 与FormalMath对应
+
+### 5.1 对应概念映射
+
+| Stacks Project | FormalMath对应 | 文件路径 |
+|----------------|----------------|----------|
+| 平坦态射 | 平坦态射 | `concept/代数几何/平坦态射.md` |
+| 平坦模 | 平坦模 | `concept/交换代数/平坦模.md` |
+| 拟凝聚层 | 拟凝聚层 | `concept/代数几何/拟凝聚层.md` |
+| 高阶直像 | 高阶直像层 | `concept/代数几何/高阶直像层.md` |
+| 纤维积 | 纤维积/拉回 | `concept/范畴论/纤维积.md` |
+| Čech上同调 | Čech上同调 | `concept/代数拓扑/Čech上同调.md` |
+
+### 5.2 Lean4形式化方向
+
+```lean4
+-- 平坦基变换的Lean4可能形式
+import Mathlib.AlgebraicGeometry.Cohomology
+
+-- 平坦基变换定理
+theorem flat_base_change {X S S' : Scheme} (f : X ⟶ S) (g : S' ⟶ S)
+    [Flat g] (F : QuasiCoherentSheaf X) (i : ℕ) :
+    g ^* (R i f_* F) ≅ (R i (pullback.fst f g).pushforward)
+                        ((pullback.snd f g) ^* F) := by
+  -- 应用Čech上同调方法
+  sorry
+
+-- 导出范畴版本
+noncomputable def flatBaseChangeIso {X S S' : Scheme} (f : X ⟶ S) (g : S' ⟶ S)
+    [Flat g] (K : DerivedCategory.QuasiCoherent X) :
+    g ^* ⋙ f.rightDerivedPushforward K ≅
+    (pullback.fst f g).rightDerivedPushforward ⋙ (pullback.snd f g) ^* K := by
+  sorry
+```
+
+### 5.3 在知识体系中的位置
+
+```
+代数几何/层上同调
+    ├── 基础层论
+    │       ├── 拟凝聚层
+    │       ├── 层拉回与推出
+    │       └── 平坦态射
+    ├── 上同调理论
+    │       ├── 层上同调 H^i
+    │       ├── 高阶直像层 R^i f_*
+    │       └── Čech上同调
+    └── 基变换理论
+            ├── 平坦基变换 ◄── 本Tag
+            ├── 一般基变换映射
+            └── 上同调与基变换
+```
+
+---
+
+## 6. 应用与重要性
+
+### 6.1 核心应用
+
+1. **上同调计算简化**
+   - 通过基变换简化问题到更简单的基概形
+   - 计算相对上同调
+
+2. **层平坦性判定**
+   - 判定 $R^i f_* \mathcal{F}$ 的平坦性
+   - 与上同调与基变换定理结合
+
+3. **导出范畴理论**
+   - 导出像函子的基变换
+   - 六函子形式体系的基础
+
+### 6.2 具体应用场景
+
+| 应用场景 | 说明 |
+|----------|------|
+| **概形的平坦形变** | 研究形变中的上同调不变性 |
+| **族的上同调** | 代数簇族的相对上同调计算 |
+| **平展上同调** | 平展基变换的基本工具 |
+| **fppf拓扑** | fppf下降理论的层论基础 |
+
+### 6.3 历史背景
+
+- **A. Grothendieck (EGA)**: 系统发展了平坦基变换理论
+- **J.-P. Serre**: 层上同调的奠基工作
+- **H. Cartan**: Čech上同调与层上同调的关系
+
+### 6.4 现代发展
+
+- **导出代数几何**: 高阶平坦基变换
+- **刚性解析几何**: 刚性空间中的基变换
+- **完美oid空间**: p-进几何中的推广
+
+---
+
+## 7. 与其他资源关联
+
+### 7.1 Stacks Project内部关联
+
+| 相关Tag | 名称 | 关系 |
+|---------|------|------|
+| 01YB | 上同调与基变换 | 推广版本 |
+| 01YU | 上同调与平坦性 | 相关定理 |
+| 01XS | 平坦态射 | 基础概念 |
+| 01XA | 高阶直像 | 基础概念 |
+| 01XB | Čech上同调 | 证明工具 |
+
+### 7.2 外部资源
+
+**教科书**:
+
+- Hartshorne: "Algebraic Geometry" (第三章, §9)
+- Vakil: "The Rising Sea" (第24章)
+- Liu: "Algebraic Geometry and Arithmetic Curves" (第五章)
+
+**EGA参考文献**:
+
+- EGA III, 1.4: 平坦基变换
+- EGA IV, 2: 平坦性与局部化
+
+**研究论文**:
+
+- Illusie: "Complexe cotangent et déformations"
+- Conrad: "Grothendieck Duality and Base Change"
+
+### 7.3 相关课程与讲义
+
+- **Stanford Math 245C**: 层上同调与基变换
+- **Harvard Math 260X**: 代数几何进阶
+- **MIT 18.726**: 代数几何II
+
+---
+
+## 8. Lean4形式化展望
+
+### 8.1 当前形式化状态
+
+```
+Mathlib4状态:
+✅ 平坦模理论
+✅ 平坦环同态
+✅ 拟凝聚层基础
+🔄 层上同调计算 (进行中)
+⬜ 高阶直像层
+⬜ 平坦基变换定理
+```
+
+### 8.2 形式化路线图
+
+**阶段1: 层上同调基础** (预计12个月)
+
+```lean4
+-- 高阶直像层的完整定义
+def higherDirectImage {X Y : Scheme} (f : X ⟶ Y)
+    (F : Sheaf Ab X) (i : ℕ) : Sheaf Ab Y :=
+  (presheafToSheaf _ (λ U ↦
+    (CochainComplex.homology (Γ (f ⁻¹ᵁ U) F) i)))
+```
+
+**阶段2: Čech上同调** (预计18个月)
+
+- Čech复形的形式化
+- Čech上同调与导出函子的等价性
+
+**阶段3: 平坦基变换** (预计24个月)
+
+```lean4
+-- 平坦基变换定理
+theorem flatBaseChangeTheorem {X S S' : Scheme}
+    (f : X ⟶ S) (g : S' ⟶ S) [Flat g]
+    (F : QuasiCoherentSheaf X) (i : ℕ) :
+    g.pullback (R i f.directImage F) ≅
+      R i (pullback.fst f g).directImage ((pullback.snd f g).pullback F) :=
+  by
+  -- 基于Čech方法的证明
+  apply Čech_cohomology_base_change
+  -- 验证Čech复形与平坦基变换交换
+  apply flat_preserves_Čech_complex
+```
+
+### 8.3 技术挑战
+
+1. **层上同调计算**: 一般概形上的有效计算
+2. **Čech-导出等价**: 严格的形式化证明
+3. **平坦性判定**: 算法化判定方法
+
+### 8.4 相关形式化项目
+
+- **mathlib4#schemes**: 概形理论
+- **mathlib4#sheaf-cohomology**: 层上同调
+- **Liquid Tensor Experiment**: 相关技术
+
+---
+
+## 附录: 关键公式速查
+
+| 概念 | 公式 |
+|------|------|
+| **平坦基变换** | $g^* R^i f_* \mathcal{F} \cong R^i f'_* (g')^* \mathcal{F}$ |
+| **导出版本** | $Lg^* Rf_* K \cong Rf'_* L(g')^* K$ |
+| **Čech复形** | $\check{C}^p(\mathcal{U}, \mathcal{F}) = \prod_{i_0 < \cdots < i_p} \mathcal{F}(U_{i_0} \cap \cdots \cap U_{i_p})$ |
+| **平坦性条件** | $-\otimes_A B$ 正合，当 $A \to B$ 平坦 |
+
+---
+
+**文档版本**: 1.0
+**创建日期**: 2026-04-10
+**最后更新**: 2026-04-10
+**作者**: FormalMath Knowledge System

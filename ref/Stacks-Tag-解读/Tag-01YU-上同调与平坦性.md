@@ -1,262 +1,381 @@
-# Stacks Project Tag 01YU - 上同调与平坦性
+# Stacks Project Tag 01YU - 上同调与平坦性（Cohomology and flatness）
 
 ## 1. Tag基本信息
 
 | 属性 | 内容 |
 |------|------|
 | **Tag编号** | 01YU |
-| **定理名称** | 上同调与平坦性 (Cohomology and Flatness) |
-| **所属章节** | Section 30.7 - Cohomology and Flatness (Divisors) |
-| **数学领域** | 代数几何、同调代数、交换代数 |
-| **Stacks Project链接** | https://stacks.math.columbia.edu/tag/01YU |
+| **英文名称** | Cohomology and flatness |
+| **中文名称** | 上同调与平坦性 |
+| **所属章节** | Chapter 30: Cohomology of Sheaves (层的上同调) |
+| **数学领域** | 代数几何、交换代数 |
+| **难度等级** | 研究生水平 |
+
+### 1.1 位置信息
+
+- **URL**: https://stacks.math.columbia.edu/tag/01YU
+- **章节**: 30.20 Cohomology and flatness
+- **前置Tags**: 01YS (平坦基变换), 01YB (上同调与基变换), 01XS (平坦态射)
+
+---
 
 ## 2. 定理/定义原文
 
-**定理 (Tag 01YU):**
+### 2.1 上同调与平坦性定理
 
-设 $f: X \to S$ 是概形的真态射，$\mathcal{F}$ 是 $X$ 上的凝聚层，且 $\mathcal{F}$ 在 $S$ 上平坦。则：
+**设定**:
 
-**(1)** 高直像层 $R^p f_* \mathcal{F}$ 是 $S$ 上的凝聚层。
+- $f: X \to S$ 是概形态射
+- $\mathcal{F}$ 是 $X$ 上的凝聚层（或更一般的复形）
+- 研究 $R^i f_* \mathcal{F}$ 的平坦性
 
-**(2)** **形成性 (Formation):** 对任意基变换图：
-$$
-\xymatrix{
-X' \ar[r]^{g'} \ar[d]_{f'} & X \ar[d]^f \\
-S' \ar[r]^g & S
-}
-$$
-有典范同构：
-$$g^* R^p f_* \mathcal{F} \;\xrightarrow{\;\cong\;}\; R^p f'_* (g')^* \mathcal{F}$$
+**引理 30.20.4（Cohomology and Flatness - 基本版本）**:
 
-（即使 $g$ 不平坦，此同构也成立！）
+设 $f: X \to S$ 是紧合态射，$S$ 局部Noether，$\mathcal{F}$ 是 $X$ 上的凝聚层且在 $S$ 上平坦。则以下条件等价：
 
-**(3)** **半连续性:** 函数 $s \mapsto \dim_{\kappa(s)} H^p(X_s, \mathcal{F}_s)$ 是上半连续的。
+1. $R^i f_* \mathcal{F}$ 是局部自由的（即向量丛）
+2. 函数 $s \mapsto \dim_{\kappa(s)} H^i(X_s, \mathcal{F}_s)$ 是局部常值的
+3. 基变换映射 $(R^i f_* \mathcal{F})_s \otimes \kappa(s) \to H^i(X_s, \mathcal{F}_s)$ 对所有 $s \in S$ 是同构
+
+### 2.2 复形版本
+
+**定理 30.20.5（Cohomology and Flatness - 复形版本）**:
+
+设 $f: X \to S$ 紧合，$S$ 局部Noether，$K \in D_{\text{coh}}^b(X)$。假设 $K$ 在 $S$ 上具有有限Tor维数。则：
+
+$Rf_* K$ 在 $S$ 上完美（perfect）当且仅当 $K$ 在每个纤维 $X_s$ 上的上同调维数有界。
+
+### 2.3 Tor独立性
+
+**定义 - Tor独立性**:
+
+设 $f: X \to S$ 和 $g: S' \to S$ 是概形态射。称 $f$ 和 $g$ 是**Tor-独立**的，如果对所有 $x \in X$，$s' \in S'$ 使得 $f(x) = g(s') = s$，有：
+
+$$\text{Tor}_i^{\mathcal{O}_{S,s}}(\mathcal{O}_{X,x}, \mathcal{O}_{S',s'}) = 0$$
+
+对所有 $i > 0$ 成立。
+
+**引理**: 若 $g$ 平坦，则 $f$ 和 $g$ 自动Tor-独立。
+
+---
 
 ## 3. 概念依赖图
 
 ```
-上同调与平坦性 (Tag 01YU)
-│
-├── 核心前置概念
-│   ├── 真态射 (Tag 01W6)
-│   ├── 凝聚层 (Tag 01BU)
-│   ├── 层的平坦性 (Tag 01U9)
-│   ├── 高直像 R^pf_* (Tag 01E4)
-│   └── 纤维上同调 (Tag 01XX)
-│
-├── 关键技术
-│   ├── 上同调有限性 (Tag 02O6)
-│   ├── 基变换映射 (Tag 01YB)
-│   ├── 形式函数定理 (Tag 01YC)
-│   └── Nakayama引理 (Tag 00DV)
-│
-├── 导出范畴
-│   ├── 导出像 Rf_* (Tag 06YZ)
-│   └── 完美复形 (Tag 08FT)
-│
-└── 后继应用
-    ├── 半连续性定理 (Tag 0CCM)
-    ├── Hilbert多项式
-    └── 模空间的构造
+                    ┌─────────────────┐
+                    │  概形 X/S       │
+                    │  态射 f: X→S   │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              ▼              ▼              ▼
+       ┌────────────┐ ┌────────────┐ ┌────────────┐
+       │ 凝聚层 ℱ   │ │ 平坦性     │ │ 高阶直像  │
+       │ Flat/S    │ │ 条件       │ │  R^i f_* ℱ│
+       └─────┬──────┘ └─────┬──────┘ └─────┬──────┘
+             │              │              │
+             └──────────────┼──────────────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │  纤维上同调   │
+                    │ H^i(X_s, ℱ_s) │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │ 上同调与      │◄────────────┐
+                    │ 平坦性定理    │             │
+                    │              │             │
+                    │ 等价条件：   │             │
+                    │ 1. R^i f_* ℱ │ 局部自由    │
+                    │ 2. 维数局部常 │             │
+                    │ 3. 基变换同构 │             │
+                    └───────┬───────┘             │
+                            │                     │
+              ┌─────────────┼─────────────┐       │
+              ▼             ▼             ▼       │
+       ┌──────────┐  ┌──────────┐  ┌──────────┐   │
+       │ Grauert  │  │ 局部常值 │  │ 向量丛   │   │
+       │ 定理     │  │ 性定理   │  │ 判定     │   │
+       └──────────┘  └──────────┘  └──────────┘   │
+                                                  │
+                    ┌─────────────────┐           │
+                    │  Tor独立性      │───────────┘
+                    │ Tor_i = 0 (i>0) │
+                    └─────────────────┘
 ```
 
-## 4. 证明概要
+### 3.1 详细依赖链
 
-**证明策略:**
-
-**Step 1: 凝聚性证明**
-- 利用真态射的上同调有限性定理 (Tag 02O6)
-- $R^p f_* \mathcal{F}$ 是凝聚的（无需平坦性假设！）
-
-**Step 2: 形成性证明（核心）**
-
-**关键观察:** 当 $\mathcal{F}$ 在 $S$ 上平坦时：
-
-**引理:** 纤维上的上同调计算可"交换":
-$$H^p(X_s, \mathcal{F}_s) = (R^p f_* \mathcal{F})_s \otimes_{\mathcal{O}_{S,s}} \kappa(s)$$
-
-**证明:**
-1. 利用形式函数定理 (Tag 01YC)
-2. 平坦性保证完备化与张量积的兼容性
-3. 基变换映射在完备化层面是同构
-4. Nakayama引理推出原映射是同构
-
-**Step 3: 半连续性**
-- 由形成性和上同调的有限性
-- 利用Nakayama引理的维数估计
-- 证明函数的上半连续性
-
-**技术要点:**
-
-**关键引理 (局部判别):**
-设 $S = \text{Spec}(A)$，$\mathfrak{p} \in \text{Spec}(A)$，则：
-$$\dim_{k(\mathfrak{p})} H^p(X_{\mathfrak{p}}, \mathcal{F}_{\mathfrak{p}}) \leq r$$
-当且仅当存在 $f \in A \setminus \mathfrak{p}$ 使得 $H^p(X_f, \mathcal{F}_f)$ 可由 $r$ 个元素生成。
-
-## 5. 与FormalMath对应
-
-| Stacks Project概念 | FormalMath对应内容 | 文档路径 |
-|-------------------|-------------------|----------|
-| 真态射 | 代数几何/真态射 | `concept/algebraic_geometry/proper_morphism.md` |
-| 凝聚层 | 代数几何/凝聚层 | `concept/algebraic_geometry/coherent_sheaf.md` |
-| 层的平坦性 | 代数几何/平坦态射 | `concept/algebraic_geometry/flat_morphism.md` |
-| 上同调有限性 | 代数几何/层上同调 | `concept/algebraic_geometry/cohomology_finiteness.md` |
-
-**当前对齐状态:**
-- 🟡 **部分对齐** - 各组件概念存在，但完整定理及其证明待补充
-
-**建议补充内容:**
-```markdown
-## 上同调与平坦性详解
-
-### 定理陈述
-设 $f: X \to S$ 真，$\mathcal{F}$ 凝聚且在 $S$ 上平坦：
-
-1. **凝聚性:** $R^p f_* \mathcal{F}$ 凝聚
-2. **形成性:** 对任意基变换，$g^* R^p f_* \mathcal{F} \cong R^p f'_* (g')^* \mathcal{F}$
-3. **半连续性:** $\dim H^p(X_s, \mathcal{F}_s)$ 上半连续
-
-### 证明要点
-
-**形成性的证明：**
-1. 利用形式函数定理
-2. 平坦性给出完备化-张量积交换
-3. Nakayama引理完成
-
-**半连续性的证明：**
-1. 由形成性，$\dim H^p(X_s, \mathcal{F}_s) = \dim (R^p f_* \mathcal{F})_s \otimes \kappa(s)$
-2. 利用凝聚层的局部自由判别
-3. 秩函数的上半连续性
-
-### 应用：局部自由判别
-$R^p f_* \mathcal{F}$ 局部自由 $\Leftrightarrow$ $\dim H^p(X_s, \mathcal{F}_s)$ 局部常值
-
-### 应用：Hilbert多项式
-平坦族的Euler示性数恒定，Hilbert多项式稳定。
 ```
-
-## 6. 应用与重要性
-
-**核心应用场景:**
-
-### 1. 半连续性定理 (Tag 0CCM)
-- **Grauert定理:** $\dim H^p(X_s, \mathcal{F}_s)$ 的上半连续性
-- 这是上同调与平坦性定理的直接推论
-
-### 2. 局部自由判别
-- **判定准则:** $R^p f_* \mathcal{F}$ 局部自由当且仅当 $\dim H^p(X_s, \mathcal{F}_s)$ 局部常值
-- 这是构造Picard概形、Jacobian簇的基础
-
-### 3. Hilbert多项式的稳定性
-- 平坦族中，纤维的Hilbert多项式恒定
-- Hilbert概形构造的基石
-
-### 4. 模空间理论
-- 判断何时上同调形成向量丛
-- 构造各种模空间的关键工具
-
-### 5. 形变不变量
-- 某些上同调维数是形变不变量
-- Kodaira维数、不规则性的研究
-
-**重要性评级:** ⭐⭐⭐⭐⭐ (5/5)
-
-上同调与平坦性定理是代数几何中研究概形族上同调行为的核心定理，其应用遍及模空间、形变理论、代数曲线等各个领域。
-
-## 7. 与其他资源关联
-
-### Stacks Project内部关联
-| 相关Tag | 关联描述 |
-|---------|----------|
-| Tag 0CCM | 半连续性定理（直接应用） |
-| Tag 01YC | 形式函数定理（证明工具） |
-| Tag 01YB | 上同调与基变换 |
-| Tag 02O6 | 上同调有限性定理 |
-| Tag 01W6 | 真态射 |
-| Tag 01U9 | 层的平坦性 |
-
-### 外部资源
-
-**经典文献:**
-1. **Grothendieck, A.** "Éléments de Géométrie Algébrique III"
-   - §7: Théorèmes de finitude et de changement de base
-
-2. **Mumford, O.** "Abelian Varieties"
-   - §5讨论上同调的半连续性
-
-**现代教材:**
-1. **Hartshorne, R.** "Algebraic Geometry"
-   - 第三章§12: Semicontinuity theorem
-
-2. **Vakil, R.** "The Rising Sea"
-   - 第28章: Cohomology and base change
-
-3. **Lazarsfeld, R.** "Positivity in Algebraic Geometry I"
-   - 第一章: 上同调方法综述
-
-**相关理论:**
-- **Deformation theory:** 形变理论
-- **Moduli theory:** 模空间理论
-- **Hilbert schemes:** Hilbert概形
-
-## 8. Lean4形式化展望
-
-### 形式化难度评估: ⭐⭐⭐⭐⭐ (5/5)
-
-**主要挑战:**
-1. **上同调有限性** - 真态射的上同调有限性定理
-2. **形式函数定理** - 需要完整的形式函数定理
-3. **形成性的精细证明** - 涉及完备化和Nakayama引理
-4. **凝聚层的局部结构** - 秩函数的分析
-
-**Lean4实现路线:**
-
-```lean4
--- 概念框架（设想）
-import Mathlib
-
--- 上同调与平坦性设置
-structure CohomologyFlatnessSetup where
-  X S : Scheme
-  f : X ⟶ S
-  h_proper : Proper f
-  F : CoherentSheaf X
-  h_flat : FlatOver F S
-
--- 凝聚性定理
-theorem higher_direct_image_coherent (setup : CohomologyFlatnessSetup) (p : ℕ) :
-    Coherent (R p setup.f_* setup.F) := by
-  sorry
-  -- 需要上同调有限性定理
-
--- 形成性定理
-theorem cohomology_formation (setup : CohomologyFlatnessSetup)
-    {S' : Scheme} (g : S' ⟶ setup.S) (p : ℕ) :
-    let setup' := baseChange setup g
-    IsIso (baseChangeMap setup' p setup.F) := by
-  sorry
-  -- 需要形式函数定理和Nakayama引理
-
--- 半连续性定理
-theorem semicontinuity (setup : CohomologyFlatnessSetup) (p : ℕ) :
-    UpperSemicontinuous (fun (s : setup.S) =>
-      finrank (ResidueField s) (HP p (fiber setup.f s) (pullbackSheaf setup.F s))) := by
-  sorry
-  -- 需要凝聚层秩函数的理论
+交换代数基础
+    ├── 平坦模与平坦环同态
+    ├── Tor函子
+    └── 局部自由模 = 投射模 = 向量丛
+        ↓
+层论基础
+    ├── 凝聚层的平坦性
+    ├── 层的Tor函子
+    └── 局部自由层
+        ↓
+层上同调
+    ├── 高阶直像层 R^i f_*
+    ├── 纤维上同调 H^i(X_s, ℱ_s)
+    └── 基变换映射
+        ↓
+上同调与平坦性 ◄── 本Tag
+    ├── 平坦性等价条件
+    ├── Grauert定理
+    └── Tor独立性
 ```
-
-**Mathlib现状:**
-- 真态射的定义存在
-- 凝聚层理论正在发展
-- 形式函数定理缺失
-
-**形式化优先级:** MEDIUM-HIGH
-- 是高级代数几何的核心工具
-- 依赖大量前置理论
-- 建议在上同调有限性完成后重点推进
 
 ---
 
-**文档编制日期:** 2026年4月  
-**作者:** FormalMath项目团队  
-**版本:** 1.0
+## 4. 证明概要
+
+### 4.1 基本版本的证明
+
+**引理 30.20.4 的证明**:
+
+**$(1) \Rightarrow (3)$**:
+
+- 若 $R^i f_* \mathcal{F}$ 局部自由，则：
+  $$(R^i f_* \mathcal{F})_s \otimes \kappa(s) \cong H^i(X_s, \mathcal{F}_s)$$
+- 由平坦基变换（01YS），基变换映射是同构
+
+**$(3) \Rightarrow (2)$**:
+
+- 若基变换映射是同构，则：
+  $$\dim H^i(X_s, \mathcal{F}_s) = \text{rank}(R^i f_* \mathcal{F})_s$$
+- 秩函数局部常值
+
+**$(2) \Rightarrow (1)$**:
+
+- 这是最难的部分，使用Nakayama引理
+- 关键点：构造局部自由层的显式生成元
+
+### 4.2 关键引理
+
+**引理（Nakayama型）**:
+
+设 $M$ 是Noether局部环 $(A, \mathfrak{m})$ 上的有限模，且 $M/\mathfrak{m}M$ 是 $A/\mathfrak{m}$ 上 $r$ 维向量空间。则 $M$ 可由 $r$ 个元素生成。
+
+若 $M$ 平坦且维数函数局部常值，则 $M$ 局部自由。
+
+### 4.3 复形版本的证明思路
+
+**定理 30.20.5 的证明策略**:
+
+1. **完美复形**: 局部拟同构于有界局部自由复形
+
+2. **Tor维数条件**: 保证纤维维数有界
+
+3. **归纳法**: 对复形的振幅（amplitude）归纳
+
+4. **关键点**: 结合Künneth公式和Nakayama技术
+
+---
+
+## 5. 与FormalMath对应
+
+### 5.1 对应概念映射
+
+| Stacks Project | FormalMath对应 | 文件路径 |
+|----------------|----------------|----------|
+| 平坦模 | 平坦模 | `concept/交换代数/平坦模.md` |
+| 局部自由层 | 局部自由层/向量丛 | `concept/代数几何/向量丛.md` |
+| Tor函子 | Tor函子 | `concept/同调代数/Tor函子.md` |
+| 高阶直像 | 高阶直像层 | `concept/代数几何/高阶直像层.md` |
+| 完美复形 | 完美复形 | `concept/同调代数/完美复形.md` |
+
+### 5.2 Lean4形式化方向
+
+```lean4
+-- 上同调与平坦性的Lean4可能形式
+import Mathlib.AlgebraicGeometry.Cohomology
+
+-- 纤维上同调维数
+def fiberCohomologyDim {X S : Scheme} (f : X ⟶ S)
+    (F : CoherentSheaf X) (i : ℕ) (s : S) : ℕ :=
+  Module.rank (X.fiber s).residueField
+    (Scheme.cohomology i (X.fiber s) (F.restrict (X.fiber s)))
+
+-- 上同调与平坦性定理
+theorem cohomology_and_flatness {X S : Scheme} (f : X ⟶ S)
+    [IsProper f] [LocallyNoetherian S]
+    (F : CoherentSheaf X) [F.FlatOver S] (i : ℕ) :
+    (∀ (s : S), ∃ (n : ℕ), ∀ (t : S), t ∈ s.neighborhood →
+      fiberCohomologyDim f F i t = n) ↔
+    (IsLocallyFree (R i f.pushforward F)) := by
+  sorry
+```
+
+### 5.3 在知识体系中的位置
+
+```
+代数几何/层上同调
+    ├── 平坦性理论
+    │       ├── 平坦模
+    │       ├── 平坦态射
+    │       └── Tor独立性
+    ├── 层上同调
+    │       ├── 高阶直像层
+    │       └── 纤维上同调
+    └── 上同调与平坦性 ◄── 本Tag
+            ├── Grauert定理
+            ├── 局部自由判定
+            └── 向量丛理论
+```
+
+---
+
+## 6. 应用与重要性
+
+### 6.1 核心应用
+
+1. **向量丛的构造**
+   - 从上同调构造向量丛
+   - Picard概形的局部结构
+
+2. **模空间理论**
+   - 判定模空间的平滑性
+   - 相对维度计算
+
+3. **形变理论**
+   - 上同调群的形变
+   - Hodge理论的应用
+
+### 6.2 具体应用场景
+
+| 应用场景 | 结果 | 重要性 |
+|----------|------|--------|
+| **Hodge丛** | 周期映射的向量丛 | 复几何 |
+| **Determinant bundle** | 行列式线丛 | 模空间理论 |
+| **Picard概形** | Picard群的概形结构 | Abelian簇理论 |
+| **Hilbert概形** | 平坦族的上同调 | 模空间紧化 |
+
+### 6.3 历史背景
+
+- **H. Grauert (1960)**: 复解析情形的半连续性定理
+- **A. Grothendieck (EGA III)**: 代数几何的系统发展
+- **M. Artin**: 代数空间中的应用
+
+### 6.4 现代发展
+
+- **导出代数几何**: 高阶上同调与平坦性
+- **非交换几何**: 矩阵因子范畴中的应用
+- **算术几何**: p-进Hodge理论
+
+---
+
+## 7. 与其他资源关联
+
+### 7.1 Stacks Project内部关联
+
+| 相关Tag | 名称 | 关系 |
+|---------|------|------|
+| 01YS | 平坦基变换 | 基础定理 |
+| 01YB | 上同调与基变换 | 推广版本 |
+| 01XS | 平坦态射 | 基础概念 |
+| 08HP | 导出张量积 | 导出版本工具 |
+| 08H4 | 导出Hom | 相关构造 |
+
+### 7.2 外部资源
+
+**教科书**:
+
+- Hartshorne: "Algebraic Geometry" (第三章, §12)
+- Vakil: "The Rising Sea" (第29章)
+- Le Potier: "Lectures on Vector Bundles"
+
+**原始论文**:
+
+- Grauert, H. "Ein Theorem der analytischen Garbentheorie"
+- Mumford: "Abelian Varieties" (Chapter II)
+
+**现代综述**:
+
+- Huybrechts-Lehn: "The Geometry of Moduli Spaces of Sheaves"
+
+### 7.3 相关软件
+
+- **Macaulay2**: 层上同调与平坦性计算
+- **SageMath**: 代数几何计算
+- **Magma**: 向量丛计算
+
+---
+
+## 8. Lean4形式化展望
+
+### 8.1 当前形式化状态
+
+```
+Mathlib4状态:
+✅ 平坦模理论
+✅ 向量丛基础
+✅ Tor函子
+🔄 层上同调
+⬜ 高阶直像层
+⬜ 上同调与平坦性
+```
+
+### 8.2 形式化路线图
+
+**阶段1: 层上同调计算** (预计18个月)
+
+- 高阶直像层的完整理论
+- 纤维上同调的形式化
+
+**阶段2: Grauert定理** (预计24个月)
+
+```lean4
+-- Grauert半连续性定理
+theorem grauert_semicontinuity {X S : Scheme} (f : X ⟶ S)
+    [IsProper f] [LocallyNoetherian S]
+    (F : CoherentSheaf X) [F.FlatOver S] (i : ℕ) :
+    IsUpperSemicontinuous (fiberCohomologyDim f F i) := by
+  sorry
+```
+
+**阶段3: 局部自由判定** (预计30个月)
+
+```lean4
+-- 局部自由判定准则
+theorem locally_free_criterion {X S : Scheme} (f : X ⟶ S)
+    [IsProper f] [LocallyNoetherian S]
+    (F : CoherentSheaf X) [F.FlatOver S] (i : ℕ) :
+    IsLocallyFree (R i f.pushforward F) ↔
+    (∀ (s : S), IsIso (baseChangeMap f (Spec.map (residueField s)) F i)) := by
+  sorry
+```
+
+### 8.3 技术挑战
+
+1. **上半连续性**: 拓扑空间中函数的上半连续性
+2. **秩函数**: 凝聚层的秩函数的形式化
+3. **局部自由判定**: 有效算法
+
+### 8.4 相关形式化项目
+
+- **mathlib4#vector-bundles**: 向量丛理论
+- **mathlib4#moduli-spaces**: 模空间理论
+- **Hodge Theory Formalization**: Hodge理论
+
+---
+
+## 附录: 关键公式速查
+
+| 概念 | 公式 |
+|------|------|
+| **平坦基变换** | $g^* R^i f_* \mathcal{F} \cong R^i f'_* (g')^* \mathcal{F}$ |
+| **纤维上同调** | $H^i(X_s, \mathcal{F}_s) = (R^i f_* \mathcal{F})_s \otimes \kappa(s)$ |
+| **局部自由等价** | $R^i f_* \mathcal{F}$ 局部自由 $\Leftrightarrow$ $\dim H^i(X_s, \mathcal{F}_s)$ 局部常值 |
+| **Tor独立性** | $\text{Tor}_i^{\mathcal{O}_{S,s}}(\mathcal{O}_{X,x}, \mathcal{O}_{S',s'}) = 0$ ($i > 0$) |
+
+---
+
+**文档版本**: 1.0
+**创建日期**: 2026-04-10
+**最后更新**: 2026-04-10
+**作者**: FormalMath Knowledge System

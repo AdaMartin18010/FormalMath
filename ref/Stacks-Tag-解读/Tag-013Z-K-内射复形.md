@@ -1,212 +1,330 @@
-# Stacks Project Tag 013Z - K-内射复形
+# Stacks Project Tag 013Z - K-内射复形（K-injective complexes）
 
 ## 1. Tag基本信息
 
 | 属性 | 内容 |
 |------|------|
 | **Tag编号** | 013Z |
-| **定理/定义名称** | K-内射复形 (K-injective Complex) |
-| **所属章节** | Section 13.6 - K-内射复形 (Sites and Sheaves) |
-| **数学领域** | 同调代数、代数几何 |
-| **Stacks Project链接** | https://stacks.math.columbia.edu/tag/013Z |
+| **英文名称** | K-injective complexes |
+| **中文名称** | K-内射复形 |
+| **所属章节** | Chapter 13: Derived Categories (导出范畴) |
+| **数学领域** | 同调代数、导出范畴理论 |
+| **难度等级** | 高等研究生水平 |
+
+### 1.1 位置信息
+
+- **URL**: https://stacks.math.columbia.edu/tag/013Z
+- **章节**: 13.14 K-内射复形
+- **前置Tags**: 013M (导出范畴), 013P (拟同构), 013U (截断函子)
+
+---
 
 ## 2. 定理/定义原文
 
-**定义 (Tag 013Z):** 设 $\mathcal{A}$ 是一个Abel范畴，$I^\bullet$ 是 $\mathcal{A}$ 中的复形。
+### 2.1 定义（Definition 13.14.1）
 
-称 $I^\bullet$ 是**K-内射复形**（也称为**同调内射复形**），如果对于任意零调复形 $M^\bullet$（即满足 $H^i(M^\bullet) = 0$ 对所有 $i$），都有：
+设 $\mathcal{A}$ 是一个Abel范畴，$K^\bullet$ 是 $\mathcal{A}$ 中的一个复形。称 $K^\bullet$ 是**K-内射的（K-injective）**，如果对于任意无环复形（acyclic complex）$M^\bullet$，有：
 
-$$\text{Hom}_{K(\mathcal{A})}(M^\bullet, I^\bullet) = 0$$
+$$\text{Hom}_{K(\mathcal{A})}(M^\bullet, K^\bullet) = 0$$
 
-等价地，对于任意复形 $A^\bullet$，映射
+即，从任意无环复形到 $K^\bullet$ 的链同态类只有零映射。
 
-$$\text{Hom}_{K(\mathcal{A})}(A^\bullet, I^\bullet) \longrightarrow \text{Hom}_{D(\mathcal{A})}(A^\bullet, I^\bullet)$$
+等价地，$K^\bullet$ 是K-内射的当且仅当对于任意复形态射 $f: M^\bullet \to N^\bullet$ 诱导拟同构时，诱导映射：
+
+$$\text{Hom}_{K(\mathcal{A})}(N^\bullet, K^\bullet) \longrightarrow \text{Hom}_{K(\mathcal{A})}(M^\bullet, K^\bullet)$$
+
+是同构。
+
+### 2.2 核心性质
+
+**引理 13.14.2**: 设 $K^\bullet$ 是K-内射复形，$M^\bullet$ 是任意复形。则自然映射
+
+$$\text{Hom}_{K(\mathcal{A})}(M^\bullet, K^\bullet) \longrightarrow \text{Hom}_{D(\mathcal{A})}(M^\bullet, K^\bullet)$$
 
 是双射。
 
-**关键性质：**
-- K-内射复形在同伦范畴 $K(\mathcal{A})$ 中充当了"内射对象"的角色
-- 任意复形 $A^\bullet$ 都存在K-内射消解（在足够多的内射假设下）
+**命题 13.14.3**: 设 $0 \to K_1^\bullet \to K_2^\bullet \to K_3^\bullet \to 0$ 是复形的短正合列，其中 $K_3^\bullet$ 是K-内射的。则 $K_1^\bullet$ 是K-内射的当且仅当 $K_2^\bullet$ 是K-内射的。
+
+---
 
 ## 3. 概念依赖图
 
 ```
-K-内射复形 (Tag 013Z)
-│
-├── 核心前置概念
-│   ├── Abel范畴 (Tag 0019)
-│   ├── 复形/链复形 (Tag 0106)
-│   ├── 同伦范畴 K(𝒜) (Tag 0113)
-│   ├── 导出范畴 D(𝒜) (Tag 05QI)
-│   └── 零调复形/正合复形 (Tag 0116)
-│
-├── 密切相关概念
-│   ├── 内射对象 (Tag 013X)
-│   ├── 有界复形 (Tag 0108)
-│   ├── 上同调函子 H^i (Tag 0117)
-│   └── 拟同构 (Tag 05QR)
-│
-└── 后继应用
-    ├── K-内射消解 (Tag 013Y)
-    ├── 导出函子 RF (Tag 05R1)
-    ├── RHom 函子 (Tag 08H4)
-    └── 层上同调 (Tag 01E1)
+                    ┌─────────────────┐
+                    │   Abel范畴 𝒜    │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              ▼              ▼              ▼
+       ┌────────────┐ ┌────────────┐ ┌────────────┐
+       │  复形范畴   │ │  链同伦范畴 │ │ 导出范畴 D(𝒜)│
+       │  C(𝒜)     │ │  K(𝒜)     │ │            │
+       └─────┬──────┘ └─────┬──────┘ └─────┬──────┘
+             │              │              │
+             └──────────────┼──────────────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │   无环复形     │
+                    │  (Acyclic)   │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │  K-内射复形   │◄────────────┐
+                    │ K^• 满足:    │             │
+                    │ Hom_K(M^•,K^•)│=0          │
+                    │ ∀无环M^•     │             │
+                    └───────┬───────┘             │
+                            │                     │
+              ┌─────────────┼─────────────┐       │
+              ▼             ▼             ▼       │
+       ┌──────────┐  ┌──────────┐  ┌──────────┐   │
+       │ 有界复形  │  │ 上有界   │  │ 下有界   │   │
+       │ K^b(𝒜)  │  │ K^-(𝒜)  │  │ K^+(𝒜)  │   │
+       └────┬─────┘  └────┬─────┘  └────┬─────┘   │
+            │             │             │         │
+            └─────────────┴─────────────┘         │
+                          │                       │
+                          ▼                       │
+                  ┌───────────────┐               │
+                  │ K-内射分解存在 │───────────────┘
+                  │ 性定理         │
+                  └───────────────┘
+                          │
+                          ▼
+                  ┌───────────────┐
+                  │ 右导出函子    │
+                  │ RHom, RΓ, ... │
+                  └───────────────┘
 ```
 
-## 4. 证明概要
+### 3.1 依赖链
 
-**存在性定理 (Tag 013Y):**
-
-在 $\mathcal{A}$ 有足够多内射对象的假设下，证明任意复形 $A^\bullet$ 都存在K-内射消解 $A^\bullet \to I^\bullet$。
-
-**证明策略：**
-
-1. **Step 1: 构造内射消解**
-   - 对每个 $A^n$ 选取内射消解 $0 \to A^n \to I^{n,0} \to I^{n,1} \to \cdots$
-
-2. **Step 2: 构建双复形**
-   - 构造双复形 $I^{\bullet,\bullet}$
-   - 使用全复形 $\text{Tot}(I^{\bullet,\bullet})$
-
-3. **Step 3: 验证K-内射性质**
-   - 证明 $\text{Tot}(I^{\bullet,\bullet})$ 满足K-内射的定义
-   - 利用谱序列论证
-
-**关键引理:**
-- 若 $I^\bullet$ 由逐度内射对象组成且有界 below，则 $I^\bullet$ 是K-内射的
-- K-内射复形在同伦范畴中对零调复形"不可见"
-
-## 5. 与FormalMath对应
-
-| Stacks Project概念 | FormalMath对应内容 | 文档路径 |
-|-------------------|-------------------|----------|
-| K-内射复形 | 同调代数/K-内射复形 | `concept/homological_algebra/` |
-| 内射消解 | 同调代数/内射消解 | `concept/homological_algebra/injective_resolution.md` |
-| 导出范畴 | 范畴论/导出范畴 | `concept/category_theory/derived_category.md` |
-| 同伦范畴 | 范畴论/同伦范畴 | `concept/category_theory/homotopy_category.md` |
-
-**当前对齐状态:**
-- ⚠️ **部分对齐** - K-内射复形的理论基础在文档中有概述，但完整的形式化细节待补充
-
-**建议补充内容:**
-```markdown
-## K-内射复形详解
-
-### 定义
-设 $\mathcal{A}$ 为Abel范畴，复形 $I^\bullet$ 称为**K-内射的**，如果：
-$$\forall M^\bullet \text{ 零调}: \text{Hom}_{K(\mathcal{A})}(M^\bullet, I^\bullet) = 0$$
-
-### 判定准则
-**定理**: 设 $I^\bullet$ 是下有界的复形，且每个 $I^n$ 都是内射对象，则 $I^\bullet$ 是K-内射的。
-
-### 存在性定理
-若 $\mathcal{A}$ 有足够多内射对象，则任意复形 $A^\bullet$ 都有K-内射消解。
-
-### 应用
-- 计算右导出函子 $RF$
-- 构造 $R\text{Hom}$ 函子
-- 层上同调的理论基础
 ```
-
-## 6. 应用与重要性
-
-**核心应用场景:**
-
-### 1. 导出函子的计算
-- K-内射复形提供了计算右导出函子的标准方法
-- 比传统内射消解更加灵活
-
-### 2. 层上同调
-- 在代数几何中，K-内射复形用于构造层上同调
-- 允许在导出范畴层面处理层复形
-
-### 3. 形式函数定理 (Tag 01YC)
-- K-内射复形是证明形式函数定理的关键工具
-- 提供了处理完备化上同调的技术框架
-
-### 4. Grothendieck对偶
-- K-内射复形是Grothendieck对偶理论的基石
-- 用于构造对偶化复形
-
-**重要性评级:** ⭐⭐⭐⭐⭐ (5/5)
-
-K-内射复形是现代同调代数的核心概念，是连接经典同调代数与导出范畴理论的桥梁。
-
-## 7. 与其他资源关联
-
-### Stacks Project内部关联
-| 相关Tag | 关联描述 |
-|---------|----------|
-| Tag 013Y | K-内射消解的存在性 |
-| Tag 08H4 | 导出函子 $R\text{Hom}$ 的构造 |
-| Tag 01YC | 形式函数定理 |
-| Tag 05QI | 导出范畴定义 |
-| Tag 05R1 | 导出函子的一般理论 |
-
-### 外部资源
-
-**经典文献:**
-1. **Spaltenstein, N.** "Resolutions of unbounded complexes" (1988)
-   - K-内射复形的开创性工作
-   
-2. **Verdier, J.-L.** "Des catégories dérivées des catégories abéliennes"
-   - 导出范畴的奠基论文
-
-3. **Kashiwara & Schapira** "Sheaves on Manifolds"
-   - 第1章详细讨论K-内射复形
-
-**现代教材:**
-- **Gelfand & Manin** "Methods of Homological Algebra"
-- **Weibel** "An Introduction to Homological Algebra"
-- **Huybrechts** "Fourier-Mukai Transforms in Algebraic Geometry"
-
-## 8. Lean4形式化展望
-
-### 形式化难度评估: ⭐⭐⭐⭐☆ (4/5)
-
-**主要挑战:**
-1. **导出范畴的构造** - 需要局部化范畴的形式化
-2. **同伦范畴的泛性质** - 复杂的范畴论构造
-3. **谱序列技术** - 证明K-内射消解存在性的关键工具
-
-**Lean4实现路线:**
-
-```lean4
--- 概念框架（设想）
-import Mathlib
-
--- K-内射复形的定义
-structure KInjective {𝒜 : Type*} [Category 𝒜] [Abelian 𝒜]
-    (I : CochainComplex 𝒜) : Prop where
-  -- 对任意零调复形，同伦态射集为空
-  acyclic_vanishing : ∀ (M : CochainComplex 𝒜),
-    IsAcyclic M → IsEmpty (HomotopyCategory.Hom M I)
-
--- K-内射消解
-structure KInjectiveResolution {𝒜 : Type*} [Category 𝒜] [Abelian 𝒜]
-    (A : CochainComplex 𝒜) where
-  I : CochainComplex 𝒜
-  k_injective : KInjective I
-  quasiIso : A ⟶ I  -- 拟同构
-  
--- 存在性定理（需要足够多内射对象假设）
-theorem exists_KInjective_resolution {𝒜 : Type*} [Category 𝒜] [Abelian 𝒜]
-    [EnoughInjectives 𝒜] (A : CochainComplex 𝒜) :
-    Nonempty (KInjectiveResolution A) := by
-  sorry -- 需要谱序列和Cartan-Eilenberg消解技术
+Abel范畴 → 复形范畴 C(𝒜) → 链同伦范畴 K(𝒜) → 导出范畴 D(𝒜)
+                     ↓
+              无环复形定义
+                     ↓
+              K-内射复形定义 ←── 内射对象概念
+                     ↓
+              K-内射分解存在性 ←── 有足够内射元
+                     ↓
+              导出函子构造
 ```
-
-**Mathlib现状:**
-- Mathlib已有 `HomotopyCategory` 的基础定义
-- `CochainComplex` 和链复形理论正在发展中
-- 导出范畴的形式化是活跃研究领域
-
-**形式化优先级:** HIGH
-- 是代数几何形式化的基础组件
-- 建议在Mathlib的`Algebra/Homology`模块中逐步构建
 
 ---
 
-**文档编制日期:** 2026年4月  
-**作者:** FormalMath项目团队  
-**版本:** 1.0
+## 4. 证明概要
+
+### 4.1 K-内射复形的基本性质证明
+
+**引理 13.14.2 的证明概要**:
+
+1. **目标**: 证明 $\text{Hom}_{K(\mathcal{A})}(M^\bullet, K^\bullet) \cong \text{Hom}_{D(\mathcal{A})}(M^\bullet, K^\bullet)$
+
+2. **回顾**: 导出范畴 $D(\mathcal{A})$ 是 $K(\mathcal{A})$ 关于拟同构的局部化
+
+3. **关键观察**: 若 $f: M^\bullet \to N^\bullet$ 是拟同构，则Cone($f$) 是无环复形
+
+4. **证明步骤**:
+   - 对于 $\phi \in \text{Hom}_{D(\mathcal{A})}(M^\bullet, K^\bullet)$，存在 $s^{-1}f$ 表示，其中 $s: M^\bullet \to L^\bullet$ 是拟同构
+   - Cone($s$) 无环，故 $\text{Hom}_{K(\mathcal{A})}(\text{Cone}(s)[-1], K^\bullet) = 0$
+   - 由长正合列，$\text{Hom}_{K(\mathcal{A})}(L^\bullet, K^\bullet) \to \text{Hom}_{K(\mathcal{A})}(M^\bullet, K^\bullet)$ 是同构
+   - 因此可以唯一提升 $f \circ s^{-1}$ 到 $K(\mathcal{A})$ 中的映射
+
+### 4.2 K-内射分解存在性
+
+**定理 13.14.5（Spaltenstein定理）**:
+
+设 $\mathcal{A}$ 是有足够内射元的Grothendieck Abel范畴，则每个复形都有K-内射分解。
+
+**证明策略**:
+
+1. **构造**: 对复形 $M^\bullet$ 构造内射分解 $M^\bullet \to I^{\bullet,\bullet}$
+
+2. **全复形**: 取双复形的全复形 $\text{Tot}(I^{\bullet,\bullet})$
+
+3. **Cartan-Eilenberg分解**: 使用柱构造确保得到K-内射复形
+
+4. **拟同构验证**: 证明 $M^\bullet \to \text{Tot}(I^{\bullet,\bullet})$ 是拟同构
+
+---
+
+## 5. 与FormalMath对应
+
+### 5.1 对应概念映射
+
+| Stacks Project | FormalMath对应 | 文件路径 |
+|----------------|----------------|----------|
+| Abel范畴 | 阿贝尔范畴定义 | `concept/范畴论/阿贝尔范畴.md` |
+| 复形范畴 | 链复形定义 | `concept/同调代数/链复形.md` |
+| K-内射复形 | 内射对象 | `concept/同调代数/内射对象.md` |
+| 导出范畴 | 导出范畴 | `concept/同调代数/导出范畴.md` |
+| 拟同构 | 拟同构 | `concept/同调代数/拟同构.md` |
+| 无环复形 | 正合序列 | `concept/同调代数/正合序列.md` |
+
+### 5.2 Lean4对应
+
+```lean4
+-- K-内射复形在Lean4中的可能形式化
+import Mathlib.Algebra.Homology.HomotopyCategory
+
+-- K-内射复形定义
+structure KInjective {C : Type*} [Category C] [Abelian C]
+    (K : CochainComplex C ℤ) : Prop where
+  /-- 对任意无环复形M，Hom_K(M, K) = 0 -/
+  vanish_acyclic : ∀ (M : CochainComplex C ℤ),
+    IsAcyclic M → ∀ (f : M ⟶ K), Homotopy f 0
+```
+
+### 5.3 在FormalMath知识体系中的位置
+
+```
+代数几何/导出范畴
+    ├── 同调代数基础
+    │       ├── 链复形 ──► K-内射复形 ◄── 本Tag
+    │       ├── 导出函子
+    │       └── 正合序列
+    └── 层上同调
+            ├── 导出像函子 Rf_*
+            └── 局部上同调
+```
+
+---
+
+## 6. 应用与重要性
+
+### 6.1 核心应用
+
+1. **导出函子的计算**
+   - K-内射复形提供计算右导出函子的标准方法
+   - 避免使用内射分解的复杂性
+
+2. **层上同调理论**
+   - 在代数几何中，K-内射复形是定义导出像函子 $Rf_*$ 的基础
+   - 上同调与基变换定理依赖此构造
+
+3. **六函子形式体系**
+   - $f^*$, $f_*$, $f^!$, $f_!$ 及其导出版本
+   - Grothendieck对偶性定理
+
+### 6.2 历史重要性
+
+- **N. Spaltenstein (1988)**: 引入K-内射复形概念
+- **B. Keller (1994)**: 导出范畴的代数结构理论
+- **重要性**: 解决了经典同调代数中导出范畴计算困难的问题
+
+### 6.3 现代发展
+
+- **dg-范畴框架**: K-内射复形在微分分次范畴中的应用
+- **导出代数几何**: 高阶导出结构的基础
+- **稳定同伦论**: 谱序列收敛性问题
+
+---
+
+## 7. 与其他资源关联
+
+### 7.1 Stacks Project内部关联
+
+| 相关Tag | 名称 | 关系 |
+|---------|------|------|
+| 013M | 导出范畴 | 基础概念 |
+| 013P | 拟同构 | 定义依赖 |
+| 0143 | Brown可表性 | 应用定理 |
+| 01YC | 形式函数定理 | 应用实例 |
+| 08H4 | 导出Hom (RHom) | 构造应用 |
+| 08HP | 导出张量积 | 构造应用 |
+
+### 7.2 外部资源
+
+**教科书**:
+
+- Gelfand-Manin: "Methods of Homological Algebra" (第二章)
+- Weibel: "An Introduction to Homological Algebra" (第十章)
+- Kashiwara-Shapira: "Categories and Sheaves"
+
+**研究论文**:
+
+- Spaltenstein, N. "Resolutions of unbounded complexes", Compositio Math. 65 (1988)
+- Alonso-Tarrio et al. "Localization in categories of complexes"
+
+**在线资源**:
+
+- nLab: https://ncatlab.org/nlab/show/K-injective+complex
+- Kerodon: https://kerodon.net/
+
+### 7.3 相关数学软件
+
+- **SageMath**: 复形计算
+- **Macaulay2**: 同调代数计算
+- **Lean4/Mathlib4**: 正在发展的形式化
+
+---
+
+## 8. Lean4形式化展望
+
+### 8.1 当前形式化状态
+
+截至2024年，Mathlib4中关于导出范畴和K-内射复形的形式化仍在发展中：
+
+```
+Mathlib4状态:
+✅ 基础同调代数 (链复形、上同调)
+✅ 阿贝尔范畴理论
+🔄 导出范畴 (进行中)
+⬜ K-内射复形 (待实现)
+⬜ 导出函子 (部分实现)
+```
+
+### 8.2 形式化路线图
+
+**阶段1: 基础准备** (预计6个月)
+
+```lean4
+-- 定义K-内射复形的核心结构
+class KInjectiveComplex (C : Type u) [Category.{v} C] [Abelian C]
+    (K : HomologicalComplex C (ComplexShape.up ℤ)) where
+  hom_vanish : ∀ (M : HomologicalComplex C (ComplexShape.up ℤ)),
+    IsAcyclic M → ∀ f : M ⟶ K, Nonempty (Homotopy f 0)
+```
+
+**阶段2: 分解定理** (预计12个月)
+
+- Grothendieck范畴的K-内射分解存在性
+- Spaltenstein定理的完整形式化
+
+**阶段3: 应用** (预计18个月)
+
+- 导出函子的形式化
+- 层上同调的形式化基础
+
+### 8.3 技术挑战
+
+1. **宇宙层次管理**: 导出范畴涉及复杂的范畴论构造
+2. **同伦理论**: 链同伦的形式化需要精细处理
+3. **大范畴**: Grothendieck范畴可能不是小范畴
+
+### 8.4 相关形式化项目
+
+- **mathlib4#homology**: 同调代数库
+- **condensed mathematics**: Clausen-Scholze的凝聚数学形式化
+- **sphere eversion**: 同伦类型论应用
+
+---
+
+## 附录: 关键公式速查
+
+| 概念 | 公式 |
+|------|------|
+| K-内射定义 | $\text{Hom}_{K(\mathcal{A})}(M^\bullet, K^\bullet) = 0$ 对无环 $M^\bullet$ |
+| 导出Hom | $\text{RHom}(M^\bullet, K^\bullet) = \text{Hom}^\bullet(M^\bullet, I^\bullet)$ |
+| 拟同构条件 | $H^n(f): H^n(M^\bullet) \cong H^n(N^\bullet)$ |
+| 无环复形 | $H^n(M^\bullet) = 0$ 对所有 $n$ |
+
+---
+
+**文档版本**: 1.0
+**创建日期**: 2026-04-10
+**最后更新**: 2026-04-10
+**作者**: FormalMath Knowledge System

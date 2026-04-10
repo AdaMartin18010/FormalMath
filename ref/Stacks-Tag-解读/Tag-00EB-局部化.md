@@ -1,256 +1,403 @@
-# Stacks Project Tag 00EB - 局部化
+# Stacks Project Tag 00EB - 局部化（Localization）
 
 ## 1. Tag基本信息
 
 | 属性 | 内容 |
 |------|------|
 | **Tag编号** | 00EB |
-| **定义名称** | 局部化 (Localization) |
-| **所属章节** | Section 10.9 - Localization (Commutative Algebra) |
+| **英文名称** | Localization |
+| **中文名称** | 局部化 |
+| **所属章节** | Chapter 10: Commutative Algebra (交换代数) |
 | **数学领域** | 交换代数、环论 |
-| **Stacks Project链接** | https://stacks.math.columbia.edu/tag/00EB |
+| **难度等级** | 本科高年级/研究生初级 |
+
+### 1.1 位置信息
+
+- **URL**: https://stacks.math.columbia.edu/tag/00EB
+- **章节**: 10.9 Localization
+- **前置Tags**: 00E0 (环), 00E1 (理想)
+
+---
 
 ## 2. 定理/定义原文
 
-**定义 (Tag 00EB):**
+### 2.1 乘闭子集的局部化
 
-设 $R$ 是环（交换幺环），$S \subseteq R$ 是**乘性子集**，即满足：
-- $1 \in S$
-- $s, t \in S \implies st \in S$
+**定义 10.9.1 - 乘闭子集（Multiplicative Subset）**:
 
-则 $R$ 关于 $S$ 的**局部化** $S^{-1}R$ 定义为：
+设 $R$ 是环，子集 $S \subseteq R$ 称为**乘闭的（multiplicative）**，如果：
 
-$$S^{-1}R = \{(r, s) \mid r \in R, s \in S\} / \sim$$
+1. $1 \in S$
+2. 若 $a, b \in S$，则 $ab \in S$
 
-其中等价关系 $\sim$ 定义为：
-$$(r, s) \sim (r', s') \iff \exists t \in S : t(rs' - r's) = 0$$
+**定义 10.9.2 - 局部化环**:
 
-记 $r/s$ 为 $(r, s)$ 的等价类，则 $S^{-1}R$ 构成环，运算为：
-- 加法: $\frac{r}{s} + \frac{r'}{s'} = \frac{rs' + r's}{ss'}$
-- 乘法: $\frac{r}{s} \cdot \frac{r'}{s'} = \frac{rr'}{ss'}$
+设 $R$ 是环，$S \subseteq R$ 是乘闭子集。$R$ 关于 $S$ 的**局部化（localization）**是一个环 $S^{-1}R$ 连同环同态 $R \to S^{-1}R$，满足：
 
-**典范映射:**
+1. **泛性质**: 对任意环 $A$ 和同态 $\phi: R \to A$，若 $\phi(s)$ 在 $A$ 中可逆对所有 $s \in S$，则存在唯一的同态 $S^{-1}R \to A$ 使得图表交换。
 
-$$\phi: R \longrightarrow S^{-1}R, \quad r \mapsto \frac{r}{1}$$
+2. **显式构造**: $S^{-1}R$ 的元素是形式分数 $\frac{r}{s}$（其中 $r \in R, s \in S$），模等价关系：
+   $$\frac{r}{s} = \frac{r'}{s'} \Leftrightarrow \exists t \in S: t(rs' - r's) = 0$$
 
-**万有性质:**
+### 2.2 特殊情形
 
-对任意环同态 $\psi: R \to A$，若 $\psi(S) \subseteq A^\times$（$\psi$ 将 $S$ 中元素映为单位），则存在唯一的 $\bar{\psi}: S^{-1}R \to A$ 使得 $\psi = \bar{\psi} \circ \phi$。
+**情形1: 素理想的局部化**
+
+设 $\mathfrak{p} \subseteq R$ 是素理想，$S = R \setminus \mathfrak{p}$ 是乘闭的。记：
+$$R_{\mathfrak{p}} = S^{-1}R$$
+
+这是 $R$ 在 $\mathfrak{p}$ 处的**局部化**，是一个局部环，极大理想为 $\mathfrak{p}R_{\mathfrak{p}}$。
+
+**情形2: 元素的局部化**
+
+设 $f \in R$，$S = \{f^n \mid n \geq 0\}$。记：
+$$R_f = S^{-1}R$$
+
+这是 $R$ 关于 $f$ 的**局部化**，同构于 $R[x]/(xf - 1)$。
+
+### 2.3 局部化的基本性质
+
+**引理 10.9.3**:
+
+1. $R \to S^{-1}R$ 是同态，$S$ 中元素映到单位
+2. $\ker(R \to S^{-1}R) = \{r \in R \mid \exists s \in S: sr = 0\}$
+3. 若 $R$ 是整环且 $0 \notin S$，则 $R \to S^{-1}R$ 是单射
+4. 若 $S$ 包含所有非零因子，则 $S^{-1}R$ 是 $R$ 的全商环
+
+**引理 10.9.4 - 理想的对应**:
+
+局部化诱导 $R$ 中与 $S$ 不交的素理想和 $S^{-1}R$ 的素理想之间的一一对应：
+$$\{\mathfrak{p} \subseteq R \mid \mathfrak{p} \cap S = \emptyset, \mathfrak{p} \text{ 素}\} \leftrightarrow \{\mathfrak{q} \subseteq S^{-1}R \mid \mathfrak{q} \text{ 素}\}$$
+
+---
 
 ## 3. 概念依赖图
 
 ```
-局部化 (Tag 00EB)
-│
-├── 核心前置概念
-│   ├── 交换环 (Tag 00DT)
-│   ├── 乘性子集 (Tag 00E9)
-│   ├── 单位群 (Tag 00DX)
-│   └── 环同态 (Tag 00E2)
-│
-├── 特殊局部化
-│   ├── 素理想的局部化 (Tag 00E7)
-│   ├── 元素的局部化 R_f (Tag 00E6)
-│   ├── 全商环 (Tag 02C5)
-│   └── 分式域 (Tag 00EW)
-│
-├── 范畴论视角
-│   ├── 泛性质/万有性质 (Tag 0049)
-│   └── 始对象 (Tag 002I)
-│
-└── 后继应用
-    ├── 模的局部化 (Tag 00EC)
-    ├── 局部环 (Tag 07BH)
-    ├── 仿射概形 (Tag 01H8)
-    └── 层论/茎 (Tag 007L)
+                    ┌─────────────────┐
+                    │      环 R       │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┼──────────────┐
+              ▼              ▼              ▼
+       ┌────────────┐ ┌────────────┐ ┌────────────┐
+       │  零因子    │ │  素理想    │ │ 乘闭子集 S │
+       │            │ │    𝔭      │ │ 1∈S, ab∈S │
+       └────────────┘ └─────┬──────┘ └─────┬──────┘
+                            │              │
+                            └──────────────┘
+                                           │
+                                           ▼
+                    ┌───────────────────────┐
+                    │     局部化环 S⁻¹R     │
+                    │                       │
+                    │  元素: r/s, r∈R, s∈S │
+                    │  等价: t(rs'-r's)=0   │
+                    └───────────┬───────────┘
+                                │
+              ┌─────────────────┼─────────────────┐
+              ▼                 ▼                 ▼
+       ┌────────────┐   ┌────────────┐   ┌────────────┐
+       │  素理想𝔭   │   │  元素 f    │   │  全商环   │
+       │  局部化    │   │  局部化    │   │            │
+       │  R_𝔭      │   │  R_f      │   │  Frac(R)  │
+       │ (局部环)  │   │ (仿射开)  │   │ (整环情形)│
+       └─────┬──────┘   └─────┬──────┘   └─────┬──────┘
+             │                │                │
+             └────────────────┴────────────────┘
+                                │
+                                ▼
+                    ┌───────────────────┐
+                    │    局部化性质     │
+                    │  • 理想对应      │
+                    │  • 正合性        │
+                    │  • 平坦性        │
+                    └───────────────────┘
 ```
 
-## 4. 证明概要
+### 3.1 详细依赖链
 
-**验证 $S^{-1}R$ 是环:**
-
-**Step 1: 验证等价关系**
-- **自反性:** $(r,s) \sim (r,s)$，取 $t=1$
-- **对称性:** 若 $t(rs'-r's)=0$，则 $t(r's-rs')=0$
-- **传递性:** 若 $t(rs'-r's)=0$ 且 $t'(r's''-r''s')=0$，则
-  $$tt's''(rs''-r''s) = t's'' \cdot t(rs'-r's) + ts \cdot t'(r's''-r''s') = 0$$
-
-**Step 2: 验证运算良定性**
-- 若 $\frac{r}{s} = \frac{r_1}{s_1}$，$\frac{r'}{s'} = \frac{r'_1}{s'_1}$
-- 需验证 $\frac{rs'+r's}{ss'} = \frac{r_1s'_1+r'_1s_1}{s_1s'_1}$
-- 利用 $t(rs_1-r_1s)=0$ 和 $t'(r's'_1-r'_1s')=0$ 推导
-
-**Step 3: 验证环公理**
-- 结合律、交换律、分配律由 $R$ 继承
-- 零元: $0/1$，单位元: $1/1$
-- 加法逆元: $-\frac{r}{s} = \frac{-r}{s}$
-
-**万有性质的证明:**
-
-**存在性:** 定义 $\bar{\psi}(r/s) = \psi(r)\psi(s)^{-1}$
-- 良定性: 若 $t(rs'-r's)=0$，则 $\psi(t)(\psi(r)\psi(s')-\psi(r')\psi(s))=0$
-- 由于 $\psi(t)$ 可逆，得 $\psi(r)\psi(s)^{-1} = \psi(r')\psi(s')^{-1}$
-
-**唯一性:** 由 $\bar{\psi}(r/1) = \psi(r)$ 和 $\bar{\psi}(1/s) = \psi(s)^{-1}$ 确定
-
-## 5. 与FormalMath对应
-
-| Stacks Project概念 | FormalMath对应内容 | 文档路径 |
-|-------------------|-------------------|----------|
-| 环的局部化 | 交换代数/局部化 | `concept/commutative_algebra/localization.md` |
-| 乘性子集 | 交换代数/乘性子集 | `concept/commutative_algebra/multiplicative_set.md` |
-| 分式域 | 域论/分式域 | `concept/field_theory/field_of_fractions.md` |
-| 局部环 | 交换代数/局部环 | `concept/commutative_algebra/local_ring.md` |
-
-**当前对齐状态:**
-- 🟢 **良好对齐** - 局部化是交换代数的基础内容，FormalMath有完整覆盖
-
-**建议补充内容:**
-```markdown
-## 局部化详解
-
-### 定义
-设 $R$ 交换环，$S$ 乘性子集，$S^{-1}R$ 是 $R$ 关于 $S$ 的局部化：
-$$S^{-1}R = \{r/s : r \in R, s \in S\}/\sim$$
-其中 $r/s \sim r'/s' \Leftrightarrow \exists t \in S: t(rs'-r's)=0$
-
-### 万有性质
-$$
-\xymatrix{
-R \ar[r]^\phi \ar[dr]_\psi & S^{-1}R \ar@{-->}[d]^{\exists! \bar{\psi}} \\
-& A
-}
-$$
-若 $\psi(S) \subseteq A^\times$，则存在唯一的 $\bar{\psi}$ 使图交换。
-
-### 重要例子
-1. **整环的分式域:** $S = R \setminus \{0\}$
-2. **素理想的局部化:** $S = R \setminus \mathfrak{p}$
-3. **元素局部化:** $S = \{f^n : n \geq 0\}$
-
-### 性质
-- $\phi: R \to S^{-1}R$ 是同态
-- $S^{-1}R$ 中 $S$ 的元素成为单位
-- $\ker\phi = \{r : \exists s \in S, sr = 0\}$
 ```
-
-## 6. 应用与重要性
-
-**核心应用场景:**
-
-### 1. 局部环的构造
-- 对素理想 $\mathfrak{p}$，$R_{\mathfrak{p}}$ 是局部环
-- 唯一极大理想: $\mathfrak{p}R_{\mathfrak{p}}$
-- 是代数几何中"在点处局部化"的基础
-
-### 2. 分式域
-- 整环 $R$ 的局部化 $S^{-1}R$（$S = R \setminus \{0\}$）是域
-- 称为 $R$ 的分式域 $\text{Frac}(R)$
-
-### 3. 代数几何
-- **仿射概形:** $\text{Spec}(S^{-1}R) \cong D(S) \subseteq \text{Spec}(R)$
-- **层论:** 结构层的茎是局部化: $\mathcal{O}_{X,x} = \mathcal{O}_X(U)_{\mathfrak{m}_x}$
-
-### 4. 模的局部化 (Tag 00EC)
-- 构造 $S^{-1}M = S^{-1}R \otimes_R M$
-- 正合性: $S^{-1}(-)$ 是正合函子
-
-### 5. 平坦性
-- $S^{-1}R$ 是平坦 $R$-模
-- 局部化是正合函子，保持正合列
-
-**重要性评级:** ⭐⭐⭐⭐⭐ (5/5)
-
-局部化是交换代数中最基本、最常用构造之一，是连接整体与局部性质的桥梁。
-
-## 7. 与其他资源关联
-
-### Stacks Project内部关联
-| 相关Tag | 关联描述 |
-|---------|----------|
-| Tag 00EC | 模的局部化 |
-| Tag 00E6 | 元素局部化 $R_f$ |
-| Tag 00E7 | 素理想的局部化 |
-| Tag 07BH | 局部环 |
-| Tag 02C5 | 全商环 |
-| Tag 00EW | 分式域 |
-
-### 外部资源
-
-**经典教材:**
-1. **Atiyah & Macdonald** "Introduction to Commutative Algebra"
-   - 第3章: Rings and Modules of Fractions
-   - 最经典的处理
-
-2. **Matsumura, H.** "Commutative Ring Theory"
-   - §4: 局部化的深入讨论
-
-3. **Eisenbud, D.** "Commutative Algebra with a View Toward Algebraic Geometry"
-   - 第2章: Localization
-
-**现代教材:**
-- **Dummit & Foote** "Abstract Algebra"
-- **Lang, S.** "Algebra"
-- **Reid, M.** "Undergraduate Commutative Algebra"
-
-### 相关概念
-- **Ore condition**: 非交换局部化的条件
-- **Saturation**: 乘性子集的饱和化
-- **Total quotient ring**: 零因子情形的一般化
-
-## 8. Lean4形式化展望
-
-### 形式化难度评估: ⭐⭐☆☆☆ (2/5)
-
-**主要挑战:**
-1. **等价关系的验证** - 需仔细处理零因子情形
-2. **运算良定性** - 分数运算的良好定义性
-3. **万有性质** - 范畴论层面的泛性质
-
-**Lean4实现路线:**
-
-```lean4
--- Mathlib已有完整实现！
-import Mathlib
-
--- 乘性子集
-variable {R : Type*} [CommRing R]
-
--- 局部化已在Mathlib中完整形式化
-#check Localization  -- 局部化类型构造子
-#check IsLocalization  -- 局部化的类型类
-
--- 使用示例
-def example_localization (S : Submonoid R) :=
-  Localization S
-
--- 万有性质 (Mathlib中)
-#check IsLocalization.lift
--- 若 $f: R \to A$ 将 $S$ 映为单位，则存在唯一的 $\bar{f}: S^{-1}R \to A$
-
--- 分式域 (整环情形)
-def FractionRing (R : Type*) [CommRing R] [IsDomain R] :=
-  FractionRing R
-
--- 素理想的局部化
-example (P : Ideal R) [P.IsPrime] :
-    IsLocalRing (Localization (Ideal.primeCompl P)) := by
-  infer_instance  -- 自动证明
+抽象代数基础
+    ├── 环的定义
+    ├── 理想理论
+    │       ├── 素理想
+    │       ├── 极大理想
+    │       └── 根理想
+    └── 环同态
+        ↓
+局部化理论
+    ├── 乘闭子集定义
+    ├── 局部化环构造
+    │       ├── 泛性质
+    │       └── 显式构造
+    ├── 特殊局部化
+    │       ├── R_𝔭 (素理想局部化)
+    │       ├── R_f (元素局部化)
+    │       └── Frac(R) (分式域)
+    └── 局部化性质 ◄── 本Tag核心
+            ├── 理想对应
+            ├── 正合性
+            └── 平坦性
 ```
-
-**Mathlib现状:**
-- `Localization` 类型构造子已完整实现
-- `IsLocalization` 类型类封装了局部化的特征性质
-- 分式域 `FractionRing` 已有定义
-- 局部环、素理想局部化等推论都已形式化
-
-**形式化优先级:** COMPLETED ✅
-- Mathlib已有完整的局部化理论
-- 可直接使用现有API
-- 建议关注更高层的应用（如层论中的茎）
 
 ---
 
-**文档编制日期:** 2026年4月  
-**作者:** FormalMath项目团队  
-**版本:** 1.0
+## 4. 证明概要
+
+### 4.1 局部化环的存在性证明
+
+**构造**:
+
+1. **集合**: $\{(r, s) \mid r \in R, s \in S\}$
+
+2. **等价关系**: $(r, s) \sim (r', s')$ 当且仅当存在 $t \in S$ 使得 $t(rs' - r's) = 0$
+
+3. **验证等价关系**:
+   - 自反性: 取 $t = 1$
+   - 对称性: 显然
+   - 传递性: 关键步骤
+     - 设 $(r, s) \sim (r', s')$，$(r', s') \sim (r'', s'')$
+     - 则 $t(rs' - r's) = 0$，$t'(r's'' - r''s') = 0$
+     - 则 $t t' s' (r s'' - r'' s) = 0$
+     - 由于 $t t' s' \in S$，得 $(r, s) \sim (r'', s'')$
+
+4. **环结构**: 分数的加法和乘法
+   - $\frac{r}{s} + \frac{r'}{s'} = \frac{rs' + r's}{ss'}$
+   - $\frac{r}{s} \cdot \frac{r'}{s'} = \frac{rr'}{ss'}$
+
+### 4.2 泛性质的证明
+
+**定理**: 局部化 $R \to S^{-1}R$ 满足泛性质。
+
+**证明**:
+
+1. 给定 $\phi: R \to A$ 使得 $\phi(s)$ 可逆对所有 $s \in S$
+
+2. **定义映射** $\psi: S^{-1}R \to A$:
+   $$\psi\left(\frac{r}{s}\right) = \phi(r) \cdot \phi(s)^{-1}$$
+
+3. **良定性**: 若 $\frac{r}{s} = \frac{r'}{s'}$，则 $t(rs' - r's) = 0$
+   - 故 $\phi(t)(\phi(r)\phi(s') - \phi(r')\phi(s)) = 0$
+   - 由于 $\phi(t)$ 可逆，得 $\phi(r)\phi(s)^{-1} = \phi(r')\phi(s')^{-1}$
+
+4. **同态性质**: 直接验证
+
+5. **唯一性**: 由定义唯一确定
+
+### 4.3 理想对应定理证明
+
+**引理 10.9.4 的证明**:
+
+1. **映射构造**:
+   - 对 $R$ 的理想 $I$，定义 $S^{-1}I = \{\frac{a}{s} \mid a \in I, s \in S\}$
+   - 对 $S^{-1}R$ 的理想 $J$，定义 $I = \phi^{-1}(J)$
+
+2. **素理想对应**:
+   - 若 $\mathfrak{p} \subseteq R$ 素且 $\mathfrak{p} \cap S = \emptyset$
+   - 则 $S^{-1}\mathfrak{p}$ 是 $S^{-1}R$ 的素理想
+   - 反之亦然
+
+---
+
+## 5. 与FormalMath对应
+
+### 5.1 对应概念映射
+
+| Stacks Project | FormalMath对应 | 文件路径 |
+|----------------|----------------|----------|
+| 环 | 环 | `concept/抽象代数/环.md` |
+| 素理想 | 素理想 | `concept/交换代数/素理想.md` |
+| 乘闭子集 | 乘闭子集 | `concept/交换代数/局部化.md` |
+| 局部化环 | 局部化 | `concept/交换代数/局部化.md` |
+| 局部环 | 局部环 | `concept/交换代数/局部环.md` |
+| 分式域 | 分式域 | `concept/抽象代数/域.md` |
+
+### 5.2 Lean4形式化
+
+```lean4
+-- 局部化的Lean4形式化（已存在于Mathlib4）
+import Mathlib.RingTheory.Localization.Basic
+
+-- 乘闭子集
+variable {R : Type*} [CommRing R] (S : Submonoid R)
+
+-- 局部化环
+def Localization := Localization S
+
+-- 局部化映射
+def Localization.of : R →+* Localization S :=
+  algebraMap R (Localization S)
+
+-- 泛性质
+def Localization.lift {A : Type*} [CommRing A] (g : R →+* A)
+    (hg : ∀ s ∈ S, IsUnit (g s)) : Localization S →+* A :=
+  IsLocalization.lift hg
+
+-- 素理想局部化
+def Localization.AtPrime {R : Type*} [CommRing R] (P : Ideal R) [P.IsPrime] :
+    Type _ :=
+  Localization (Ideal.primeCompl P)
+```
+
+### 5.3 在知识体系中的位置
+
+```
+代数学/交换代数
+    ├── 环论基础
+    │       ├── 环的定义
+    │       ├── 理想理论
+    │       └── 商环
+    ├── 交换代数核心
+    │       ├── 局部化 ◄── 本Tag
+    │       │       ├── 乘闭子集
+    │       │       ├── 局部化环
+    │       │       └── 性质与应用
+    │       ├── Noether环
+    │       └── 整扩张
+    └── 代数几何基础
+            ├── 仿射概形
+            ├── 层的局部化
+            └── 茎（stalk）
+```
+
+---
+
+## 6. 应用与重要性
+
+### 6.1 核心应用
+
+1. **交换代数**
+   - 局部性质的研究
+   - 支集与维数理论
+   - 相伴素理想
+
+2. **代数几何**
+   - 概形的局部结构
+   - 结构层的茎
+   - 有理函数域
+
+3. **代数数论**
+   - p-进数构造
+   - 赋值理论
+   - Dedekind整环
+
+### 6.2 具体应用实例
+
+| 应用领域 | 具体应用 |
+|----------|----------|
+| **概形理论** | $\text{Spec}(R_f) = D(f) \subseteq \text{Spec}(R)$ |
+| **层论** | 结构层 $\mathcal{O}_{\text{Spec}(R), \mathfrak{p}} = R_{\mathfrak{p}}$ |
+| **有理映射** | 分式域 $\text{Frac}(R)$ 是有理函数域 |
+| **维数理论** | $\dim(R_{\mathfrak{p}}) = \text{ht}(\mathfrak{p})$ |
+
+### 6.3 历史背景
+
+- **E. Noether**: 抽象代数的奠基人
+- **W. Krull**: 局部环理论的系统发展
+- **C. Chevalley**: 局部化在代数几何中的应用
+
+### 6.4 现代发展
+
+- **导出局部化**: 三角范畴的局部化
+- **非交换局部化**: 非交换环的局部化理论
+- **高维代数**: ∞-范畴中的局部化
+
+---
+
+## 7. 与其他资源关联
+
+### 7.1 Stacks Project内部关联
+
+| 相关Tag | 名称 | 关系 |
+|---------|------|------|
+| 00EC | 模的局部化 | 直接推广 |
+| 00E0 | 环 | 基础概念 |
+| 01HS | 概形 | 几何应用 |
+| 01I5 | 结构层 | 层论应用 |
+| 00H7 | 平坦性 | 局部化性质 |
+
+### 7.2 外部资源
+
+**教科书**:
+
+- Atiyah-Macdonald: "Introduction to Commutative Algebra" (第三章)
+- Eisenbud: "Commutative Algebra" (第二章)
+- Matsumura: "Commutative Ring Theory" (第四章)
+
+**在线资源**:
+
+- Keith Conrad: "Expository papers on localization"
+- nLab: https://ncatlab.org/nlab/show/localization+of+a+ring
+
+**课程讲义**:
+
+- Harvard Math 221: Commutative Algebra
+- MIT 18.705: Commutative Algebra
+
+### 7.3 相关计算工具
+
+- **SageMath**: 环的局部化计算
+- **Macaulay2**: 交换代数计算
+- **Singular**: Gröbner基与局部化
+
+---
+
+## 8. Lean4形式化展望
+
+### 8.1 当前形式化状态
+
+```
+Mathlib4状态:
+✅ 环与理想理论
+✅ 局部化基础 (IsLocalization)
+✅ 素理想局部化
+✅ 元素局部化
+✅ 局部化性质
+```
+
+Mathlib4已经有非常完整的局部化理论！
+
+### 8.2 Mathlib4中的关键定义
+
+```lean4
+-- 局部化的泛性质
+class IsLocalization (S : Submonoid R) (Q : Type*) [CommSemiring Q]
+    [Algebra R Q] : Prop where
+  inverts : ∀ s ∈ S, IsUnit (algebraMap R Q s)
+  surj : ∀ q : Q, ∃ r s, q = algebraMap R Q r *
+    (IsUnit.liftRight (inverts s.2) s).unit⁻¹.val
+  exists_of_eq : ∀ r₁ r₂, algebraMap R Q r₁ = algebraMap R Q r₂ →
+    ∃ s ∈ S, s * r₁ = s * r₂
+
+-- 局部化环的构造
+def Localization := OreLocalization (S := S) (R := R) (· * ·)
+```
+
+### 8.3 进一步形式化方向
+
+虽然基础局部化理论已经很完善，仍有扩展空间：
+
+1. **非交换局部化**: Ore条件与局部化
+2. **导出局部化**: 三角范畴的局部化
+3. **高维局部化**: ∞-范畴版本
+
+---
+
+## 附录: 关键公式速查
+
+| 概念 | 公式/定义 |
+|------|-----------|
+| **乘闭子集** | $1 \in S$，$a,b \in S \Rightarrow ab \in S$ |
+| **局部化** | $S^{-1}R = \{r/s \mid r \in R, s \in S\}/\sim$ |
+| **等价关系** | $\frac{r}{s} = \frac{r'}{s'} \Leftrightarrow \exists t \in S: t(rs' - r's) = 0$ |
+| **素理想局部化** | $R_{\mathfrak{p}} = (R \setminus \mathfrak{p})^{-1}R$ |
+| **元素局部化** | $R_f = \{f^n \mid n \geq 0\}^{-1}R$ |
+| **分式域** | $\text{Frac}(R) = (R \setminus \{0\})^{-1}R$（整环情形） |
+
+---
+
+**文档版本**: 1.0
+**创建日期**: 2026-04-10
+**最后更新**: 2026-04-10
+**作者**: FormalMath Knowledge System
