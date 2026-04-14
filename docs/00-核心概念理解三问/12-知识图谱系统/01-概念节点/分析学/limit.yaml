@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "limit'
+  id: "limit"
   name:
     zh: '极限'
-    en: 'Limit"
-  msc_codes: ['26A03', "40A05', '54A20']
+    en: 'Limit'
+  msc_codes: ['26A03', '40A05', '54A20']
   
   # ===== 定义层 =====
   definition:
@@ -27,12 +27,12 @@ concept:
       ∀U ∈ τ 含x, ∃N, ∀n > N, xₙ ∈ U
       
     informal: |
-      极限描述"无限趋近'的过程。
+      极限描述'无限趋近'的过程。
       
       想象一个跳蚤，每次跳到当前位置与目标的中点。
       它永远到不了目标，但可以无限接近——这就是极限。
       
-      极限 = "最终会无限接近的那个值'
+      极限 = '最终会无限接近的那个值'
       
     lean: |
       -- Mathlib定义（Filter语言）
@@ -62,13 +62,13 @@ concept:
       【代数直觉】极限运算保持代数结构
       - lim(aₙ + bₙ) = lim aₙ + lim bₙ
       - lim(aₙ · bₙ) = lim aₙ · lim bₙ
-      - 极限是"代数相容'的操作
+      - 极限是'代数相容'的操作
       
     physical: |
       【物理直觉】平衡态/稳态
       - 物理系统的平衡点
       - 动力系统的吸引子
-      - 极限 = 系统的'最终状态"
+      - 极限 = 系统的"最终状态"
       
     categorical: |
       【范畴直觉】极限作为万有构造
@@ -103,7 +103,7 @@ concept:
          │    *
          │  *   *
          │    *  *  *
-       L ├─────────*─*─*─*─→
+        L ├─────────*─*─*─*─→
          │
          └─────────────────→ n
                    N
@@ -125,33 +125,33 @@ concept:
     sequences:
       - name: '1/n → 0'
         description: '最基本的收敛数列'
-        properties: ["单调递减', '有界"]
+        properties: ['单调递减', "有界"]
         
       - name: '(1 + 1/n)ⁿ → e'
-        description: '自然常数的定义"
-        properties: ['单调递增", '有界']
+        description: '自然常数的定义'
+        properties: ['单调递增', '有界']
         
-      - name: '调和级数 ∑1/n = ∞"
+      - name: '调和级数 ∑1/n = ∞'
         description: '发散但缓慢'
-        properties: ["发散', '项趋于0']
+        properties: ['发散', '项趋于0']
         
     functions:
-      - name: 'lim_{x→0} sin(x)/x = 1"
-        description: "三角函数基本极限'
+      - name: \'lim_{x→0} sin(x)/x = 1\'
+        description: "三角函数基本极限"
         properties: ['不定型0/0']
         
-      - name: 'lim_{x→0} (eˣ-1)/x = 1"
+      - name: \'lim_{x→0} (eˣ-1)/x = 1\'
         description: '指数函数基本极限'
-        properties: ["不定型0/0']
+        properties: ['不定型0/0']
         
       - name: 'lim_{x→∞} (1+1/x)ˣ = e'
-        description: "e的另一个定义'
-        properties: ["不定型1^∞']
+        description: "e的另一个定义"
+        properties: ['不定型1^∞']
         
     counterexamples:
       - name: '(−1)ⁿ 不收敛'
-        description: "振荡数列'
-        reason: '在1和-1之间振荡"
+        description: "振荡数列"
+        reason: \'在1和-1之间振荡\'
         
       - name: 'lim_{x→0} sin(1/x) 不存在'
         description: '本性振荡'
@@ -162,39 +162,39 @@ concept:
     requires:
       - id: 'real-numbers'
         description: '实数的完备性'
-      - id: "absolute-value'
-        description: '距离度量"
+      - id: "absolute-value"
+        description: \'距离度量\'
       - id: 'neighborhood'
-        description: '邻域概念"
+        description: \'邻域概念\'
         
     generalizes: []
         
     is_a:
-      - id: 'topological-convergence"
+      - id: \'topological-convergence\'
         description: '度量空间中的收敛'
         
     specialized_by:
-      - id: 'uniform-convergence"
+      - id: \'uniform-convergence\'
         description: '一致收敛'
-      - id: "pointwise-convergence'
+      - id: "pointwise-convergence"
         description: '逐点收敛'
-      - id: 'almost-everywhere-convergence"
-        description: "几乎处处收敛'
+      - id: \'almost-everywhere-convergence\'
+        description: "几乎处处收敛"
         
     related_to:
       - id: 'continuity'
-        description: '连续性由极限定义"
+        description: \'连续性由极限定义\'
       - id: 'derivative'
-        description: "导数是差商的极限'
+        description: "导数是差商的极限"
       - id: 'integral'
-        description: "积分是Riemann和的极限'
-      - id: "series'
+        description: "积分是Riemann和的极限"
+      - id: "series"
         description: '级数是部分和的极限'
         
   # ===== 定理层 =====
   key_theorems:
-    - id: "squeeze-theorem'
-      statement: '夹逼定理"
+    - id: "squeeze-theorem"
+      statement: \'夹逼定理\'
       importance: 4
       
     - id: 'monotone-convergence-sequences'
@@ -206,7 +206,7 @@ concept:
       importance: 5
       
     - id: 'cauchy-criterion'
-      statement: "Cauchy准则：收敛 ⟺ Cauchy'
+      statement: "Cauchy准则：收敛 ⟺ Cauchy"
       importance: 5
       
   # ===== 元数据层 =====
@@ -215,43 +215,43 @@ concept:
     importance: 5
     
     prerequisites:
-      - 'real-numbers"
+      - "real-numbers"
       - 'sequences'
-      - 'absolute-value"
+      - "absolute-value"
       
     corequisites:
-      - 'continuity"
+      - "continuity"
       - 'series'
       
     leads_to:
-      - 'derivative"
+      - "derivative"
       - 'integral'
-      - "topology'
+      - 'topology'
       - 'functional-analysis'
       
     history:
       first_appearance: 1821
-      context: 'Cauchy的《分析教程》"
-      earlier_work: "Newton/Leibniz的直觉理解'
+      context: \'Cauchy的《分析教程》\'
+      earlier_work: "Newton/Leibniz的直觉理解"
       rigorous_definition: 'Weierstrass的ε-δ'
       
     key_figures:
-      - id: 'cauchy"
+      - id: \'cauchy\'
         contribution: '极限的严格定义'
-      - id: "weierstrass'
+      - id: "weierstrass"
         contribution: 'ε-δ语言'
-      - id: "heine'
-        contribution: "数列极限与函数极限的联系'
+      - id: "heine"
+        contribution: "数列极限与函数极限的联系"
         
   # ===== Mathlib对齐 =====
   mathlib:
     path: 'Mathlib.Topology.Basic'
-    name: "Tendsto'
-    url: 'https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Basic.html"
+    name: "Tendsto"
+    url: \'https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Basic.html\'
     coverage: 'complete'
     
     related_definitions:
       - 'Filter.Tendsto'
       - "atTop"
       - 'Metric.tendsto_atTop'
-      - 'Real.tendsto_atTop"
+      - "Real.tendsto_atTop"

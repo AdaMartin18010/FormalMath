@@ -48,18 +48,21 @@ processed_at: '2026-04-05'
 ## 参考文献
 
 ### 原始文献
+
 - **Turing, A. M.** (1936). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society*, 42(2), 230-265.
 - **Gödel, K.** (1931). Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I. *Monatshefte für Mathematik und Physik*, 38(1), 173-198.
 - **Gödel, K.** (1938). The consistency of the axiom of choice and of the generalized continuum-hypothesis. *Proceedings of the National Academy of Sciences*, 24(12), 556-557.
 - **Gödel, K.** (1940). The consistency of the axiom of choice and of the generalized continuum hypothesis with the axioms of set theory. *Annals of Mathematics Studies*, 3.
 
 ### 现代文献
+
 - **Jech, T.** (2003). *Set Theory: The Third Millennium Edition, Revised and Expanded*. Springer.
 - **Cohen, P. J.** (1963). The independence of the continuum hypothesis. *Proceedings of the National Academy of Sciences*, 50(6), 1143-1148.
 - **Feferman, S.** (2006). The impact of the incompleteness theorems on mathematics. *Notices of the AMS*, 53(4), 434-439.
 - **Smith, P.** (2013). *An Introduction to Gödel's Theorems*. Cambridge University Press.
 
 ### 在线资源
+
 - **Stanford Encyclopedia of Philosophy**: "Gödel's Incompleteness Theorems", "Constructibility", "Russell's Paradox"
 
 ---
@@ -80,6 +83,7 @@ processed_at: '2026-04-05'
 - [08-计算数学](../../../docs/08-计算数学/)
 
 ### 相关概念
+
 - [README](../../../concept/00-归档/03-view文件夹/view/README.md)
 
 - [哥德尔主页面](../README.md)

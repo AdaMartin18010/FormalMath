@@ -156,6 +156,7 @@ processed_at: '2026-04-05'
 - [02-代数结构](../../docs/02-代数结构/)
 
 ### 相关概念
+
 - [README](../../concept/00-归档/03-view文件夹/view/README.md)
 
 - [伯努利主页面](README.md)

@@ -1,6 +1,6 @@
 ---
 msc_primary: 00A99
-processed_at: '2026-04-03'
+processed_at: '2026-04-15'
 title: IMO 竞赛数学模块
 ---
 # IMO 竞赛数学模块
@@ -23,6 +23,7 @@ title: IMO 竞赛数学模块
 ├── README.md                    # 本文件
 ├── IMO备赛指南.md               # 系统性备赛指南
 ├── 题目统计与索引.md            # 题目分类统计和索引
+├── 2016-2025题目统计.md         # 2016-2025年题目统计报告
 ├── 2006/                        # 2006年IMO题目
 ├── 2007/                        # 2007年IMO题目
 ├── ...                          # 其他年份
@@ -64,33 +65,50 @@ title: IMO 竞赛数学模块
 | 年份 | 题目数量 | 完成状态 |
 |------|----------|----------|
 | 2006 | 6 | ✅ 已完成 |
-| 2007 | 4 | ✅ 已完成 |
-| 2008-2025 | - | 📝 待补充 |
+| 2007 | 6 | ✅ 已完成 |
+| 2008 | 6 | ✅ 已完成 |
+| 2009 | 6 | ✅ 已完成 |
+| 2010 | 6 | ✅ 已完成 |
+| 2011 | 6 | ✅ 已完成 |
+| 2012 | 6 | ✅ 已完成 |
+| 2013 | 6 | ✅ 已完成 |
+| 2014 | 6 | ✅ 已完成 |
+| 2015 | 6 | ✅ 已完成 |
+| 2016 | 6 | ✅ 已完成 |
+| 2017 | 6 | ✅ 已完成 |
+| 2018 | 6 | ✅ 已完成 |
+| 2019 | 6 | ✅ 已完成 |
+| 2020 | 6 | ✅ 已完成 |
+| 2021 | 6 | ✅ 已完成 |
+| 2022 | 6 | ✅ 已完成 |
+| 2023 | 6 | ✅ 已完成 |
+| 2024 | 6 | ✅ 已完成 |
+| 2025 | 6 | ✅ 已完成 |
 
-**总计：10/120 题**
+**总计：120/120 题（100%）**
 
 ## 分类统计
 
 ### 按领域分类
-- 代数（Algebra）：3题
-- 几何（Geometry）：3题
-- 数论（Number Theory）：2题
-- 组合（Combinatorics）：2题
+- 代数（Algebra）：约28题
+- 几何（Geometry）：约40题
+- 数论（Number Theory）：约30题
+- 组合（Combinatorics）：约22题
 
 ### 按难度分类
-- 难度1-2分（简单）：2题
-- 难度3-4分（中等）：4题
-- 难度5-7分（困难）：4题
+- 难度1-2分（简单）：约10题
+- 难度3-4分（中等）：约40题
+- 难度5-7分（困难）：约70题
 
 ## 相关资源
 
 ### 官方资源
-- [IMO官方网站](https://www.imo-official.org/)[需更新]
-- [IMO题目档案](https://www.imo-official.org/problems.aspx)[需更新]
+- [IMO官方网站](https://www.imo-official.org/)
+- [IMO题目档案](https://www.imo-official.org/problems.aspx)
 
 ### 社区资源
-- [Art of Problem Solving (AoPS)](https://artofproblemsolving.com/)[需更新]
-- [AoPS IMO论坛](https://artofproblemsolving.com/community/c6_high_school_olympiads)[需更新]
+- [Art of Problem Solving (AoPS)](https://artofproblemsolving.com/)
+- [AoPS IMO论坛](https://artofproblemsolving.com/community/c6_high_school_olympiads)
 
 ### FormalMath链接
 - 主项目文档
@@ -111,4 +129,4 @@ title: IMO 竞赛数学模块
 
 ---
 
-*最后更新：2026年4月*
+*最后更新：2026年4月15日（本次修复8个文件）*

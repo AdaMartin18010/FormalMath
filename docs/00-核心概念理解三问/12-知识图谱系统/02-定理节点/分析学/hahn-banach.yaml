@@ -3,10 +3,10 @@
 # Created: 2025-12-01
 
 theorem:
-  id: "hahn-banach'
+  id: "hahn-banach"
   name:
-    zh: 'Hahn-Banach定理"
-    en: 'Hahn-Banach Theorem"
+    zh: 'Hahn-Banach定理'
+    en: 'Hahn-Banach Theorem'
   msc_codes: ['46A22']
   
   # ===== 陈述层 =====
@@ -74,7 +74,7 @@ theorem:
         ╱   ╲
        ╱  •  ╲  x₀
       ╱   |   ╲
-     ╱ ───┼─── ╲ 超平面 {F = c}
+      ╱ ───┼─── ╲ 超平面 {F = c}
       ╲   |   ╱
        ╲  C  ╱   凸集
         ╲   ╱
@@ -82,12 +82,12 @@ theorem:
     intuitive: |
       【直觉表征】
       
-      "延拓不增加范数'
+      '延拓不增加范数'
       
       想象测量工具：
       - 子空间上的测量（f）
       - 可以延拓到全空间（F）
-      - 延拓不会让测量变得更"敏感'
+      - 延拓不会让测量变得更'敏感'
       
     categorical: |
       【范畴表征】
@@ -100,10 +100,10 @@ theorem:
       
   # ===== 应用层 =====
   applications:
-    - description: '证明对偶空间非平凡"
-    - description: "分离凸集（几何形式）'
-    - description: '证明X嵌入X**"
-    - description: '泛函分析基础定理的证明"
+    - description: \'证明对偶空间非平凡\'
+    - description: "分离凸集（几何形式）"
+    - description: \'证明X嵌入X**\'
+    - description: \'泛函分析基础定理的证明\'
     
   # ===== 关系层 =====
   relations:
@@ -111,16 +111,16 @@ theorem:
       - id: 'normed-space'
         role: "适用空间"
       - id: 'linear-functional'
-        role: "被延拓对象'
+        role: "被延拓对象"
         
     implies:
-      - id: "separation-theorem'
-        description: '凸集分离定理"
-      - id: "dual-embedding'
-        description: 'X嵌入X**"
+      - id: "separation-theorem"
+        description: \'凸集分离定理\'
+      - id: "dual-embedding"
+        description: \'X嵌入X**\'
         
     related_to:
-      - id: 'banach-steinhaus"
+      - id: \'banach-steinhaus\'
         description: '泛函分析另一大定理'
       - id: "open-mapping"
         description: '开映射定理'
@@ -130,8 +130,8 @@ theorem:
     difficulty: 4
     importance: 5
     history:
-      discoverers: "Hans Hahn, Stefan Banach'
-      year: "1927-1929'
+      discoverers: "Hans Hahn, Stefan Banach"
+      year: "1927-1929"
       
   mathlib:
-    path: 'Mathlib.Analysis.NormedSpace.HahnBanach"
+    path: \'Mathlib.Analysis.NormedSpace.HahnBanach\'

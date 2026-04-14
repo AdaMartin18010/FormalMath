@@ -57,6 +57,7 @@ title: FormalMath项目内容索引 - 完整版
   - [附录](#附录)
     - [A. 统计信息](#a-统计信息)
     - [B. 快速导航](#b-快速导航)
+    - [C. 国际对齐验证](#c-国际对齐验证)
 
 ---
 
@@ -539,11 +540,13 @@ title: FormalMath项目内容索引 - 完整版
 | [日英数学术语对照表](00-日英数学术语对照表.md) | 日文术语标准化 | ✅ 已验证 |
 
 **大学课程对齐报告**:
+
 - [MIT](00-MIT课程内容对齐报告.md) | [Harvard](00-Harvard课程内容对齐报告.md) | [Stanford](00-Stanford课程内容对齐报告.md)
 - [Princeton](00-Princeton课程内容对齐报告.md) | [Cambridge](00-Cambridge课程内容对齐报告.md) | [Oxford](00-Oxford课程内容对齐报告.md)
 - [清华大学](00-清华大学数学课程对齐报告.md) | [东京大学](00-东京大学数学课程对齐报告.md) | [其他10所大学...]
 
 **Wikipedia学科对齐报告**:
+
 - [代数学](00-Wikipedia代数学对齐报告.md) | [几何拓扑](00-Wikipedia几何拓扑对齐报告.md) | [分析学](00-Wikipedia分析学对齐报告.md)
 - [概率统计](00-Wikipedia概率统计对齐报告.md) | [数理逻辑](00-Wikipedia数理逻辑对齐报告.md) | [其他6个学科...]
 

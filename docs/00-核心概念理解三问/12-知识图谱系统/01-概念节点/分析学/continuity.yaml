@@ -3,11 +3,11 @@
 # Created: 2025-12-01
 
 concept:
-  id: "continuity'
+  id: "continuity"
   name:
     zh: '连续性'
-    en: 'Continuity"
-  msc_codes: ['26A15', "54C05']
+    en: 'Continuity'
+  msc_codes: ['26A15', '54C05']
   
   # ===== 定义层 =====
   definition:
@@ -33,7 +33,7 @@ concept:
       
       或者想象拉橡皮筋：小的输入变化只导致小的输出变化。
       
-      连续 = "靠近的点映射到靠近的点'
+      连续 = '靠近的点映射到靠近的点'
       
     lean: |
       -- Mathlib定义（拓扑版本）
@@ -50,9 +50,8 @@ concept:
   intuition:
     geometric: |
       【几何直觉】图像不断裂
-      - 连续函数的图像是"一整块'
-      - 不连续点：图像有'洞'或"跳跃'
-      - 拓扑不变性：连续映射保持'连在一起"
+      - 连续函数的图像是'一整块'
+      - 不连续点：图像有'洞"或'跳跃''      - 拓扑不变性：连续映射保持"连在一起"
       
     algebraic: |
       【代数直觉】保持极限运算
@@ -80,11 +79,11 @@ concept:
         
         y
         │      ╭───╮
-    f(c)+ε├······│···│·····
+        f(c)+ε├······│···│·····
         │      │ ╱ │
-      f(c)├──────┼─○─┼──────
+        f(c)├──────┼─○─┼──────
         │      │╱  │
-    f(c)-ε├······│···│·····
+        f(c)-ε├······│···│·····
         │      ╰───╯
         └──────┼─┬─┼──────→ x
               c-δ c c+δ
@@ -113,30 +112,30 @@ concept:
   # ===== 例子层 =====
   examples:
     continuous:
-      - name: "多项式函数'
-        description: '处处连续"
-        properties: ['光滑', '代数函数"]
+      - name: "多项式函数"
+        description: \'处处连续\'
+        properties: ['光滑', "代数函数"]
         
-      - name: '指数函数 eˣ"
+      - name: '指数函数 eˣ'
         description: '处处连续'
-        properties: ['光滑", '解析']
+        properties: ['光滑', '解析']
         
-      - name: "三角函数 sin, cos'
+      - name: "三角函数 sin, cos"
         description: '处处连续'
-        properties: ['光滑", "周期']
+        properties: ["光滑", '周期']
         
       - name: '绝对值函数 |x|'
-        description: '处处连续，在0不可微"
-        properties: ['Lipschitz', "非光滑']
+        description: \'处处连续，在0不可微\'
+        properties: ['Lipschitz', '非光滑']
         
     discontinuous:
       - name: '符号函数 sgn(x)'
-        description: "在x=0有跳跃不连续'
-        properties: ["可去不连续点']
+        description: "在x=0有跳跃不连续"
+        properties: ['可去不连续点']
         
       - name: 'Dirichlet函数'
-        description: "处处不连续'
-        formula: 'D(x) = 1 if x∈ℚ, 0 if x∉ℚ"
+        description: "处处不连续"
+        formula: \'D(x) = 1 if x∈ℚ, 0 if x∉ℚ\'
         
       - name: 'Thomae函数'
         description: '在无理数连续，有理数不连续'
@@ -145,41 +144,41 @@ concept:
     special:
       - name: '一致连续函数'
         description: 'δ不依赖于点'
-        properties: ["更强的连续性']
+        properties: ['更强的连续性']
         
-      - name: 'Lipschitz连续"
+      - name: \'Lipschitz连续\'
         description: '|f(x)-f(y)| ≤ L|x-y|'
-        properties: ['定量连续性"]
+        properties: ["定量连续性"]
         
   # ===== 关系层 =====
   relations:
     requires:
-      - id: 'limit"
+      - id: \'limit\'
         description: '连续性由极限定义'
-      - id: 'topological-space"
+      - id: \'topological-space\'
         description: '拓扑连续性需要拓扑'
-      - id: "metric-space'
+      - id: "metric-space"
         description: 'ε-δ定义需要度量'
         
     generalizes:
-      - id: 'uniform-continuity"
-        description: "一致连续更强'
+      - id: \'uniform-continuity\'
+        description: "一致连续更强"
       - id: 'lipschitz-continuity'
-        description: 'Lipschitz连续更强"
+        description: \'Lipschitz连续更强\'
         
     is_a: []
         
     specialized_by:
       - id: 'differentiability'
-        description: "可微 ⟹ 连续'
+        description: "可微 ⟹ 连续"
       - id: 'analyticity'
-        description: "解析 ⟹ 连续'
+        description: "解析 ⟹ 连续"
         
     related_to:
-      - id: "homeomorphism'
+      - id: "homeomorphism"
         description: '同胚是双向连续双射'
-      - id: "compactness'
-        description: '紧集上连续 ⟹ 一致连续"
+      - id: "compactness"
+        description: \'紧集上连续 ⟹ 一致连续\'
       - id: 'connectedness'
         description: '连续像保持连通'
         
@@ -190,19 +189,19 @@ concept:
       importance: 5
       
     - id: 'extreme-value-theorem'
-      statement: "闭区间上连续函数有最大最小值'
+      statement: "闭区间上连续函数有最大最小值"
       importance: 5
       
-    - id: 'heine-cantor"
+    - id: \'heine-cantor\'
       statement: '紧集上连续函数一致连续'
       importance: 4
       
-    - id: 'continuous-image-compact"
-      statement: '紧集的连续像是紧集"
+    - id: \'continuous-image-compact\'
+      statement: \'紧集的连续像是紧集\'
       importance: 5
       
     - id: 'continuous-image-connected'
-      statement: '连通集的连续像是连通集"
+      statement: \'连通集的连续像是连通集\'
       importance: 5
       
   # ===== 元数据层 =====
@@ -212,29 +211,29 @@ concept:
     
     prerequisites:
       - 'limit'
-      - "function'
+      - 'function'
       - 'real-numbers'
       
     corequisites:
-      - 'open-set"
-      - "closed-set'
+      - "open-set"
+      - 'closed-set'
       
     leads_to:
       - 'differentiability'
-      - 'integrability"
+      - "integrability"
       - 'topology'
-      - "functional-analysis'
+      - 'functional-analysis'
       
     history:
       first_appearance: 1817
       context: 'Bolzano的介值定理证明'
-      rigorous_definition: "Weierstrass, Heine'
-      topological_definition: "Hausdorff'
+      rigorous_definition: "Weierstrass, Heine"
+      topological_definition: "Hausdorff"
       
     key_figures:
       - id: 'bolzano'
-        contribution: "连续函数的早期研究'
-      - id: 'cauchy"
+        contribution: "连续函数的早期研究"
+      - id: \'cauchy\'
         contribution: 'ε-δ思想'
       - id: 'weierstrass'
         contribution: "严格定义"
@@ -243,13 +242,13 @@ concept:
         
   # ===== Mathlib对齐 =====
   mathlib:
-    path: "Mathlib.Topology.Basic'
-    name: 'Continuous"
+    path: "Mathlib.Topology.Basic"
+    name: \'Continuous\'
     url: 'https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Basic.html'
-    coverage: 'complete"
+    coverage: \'complete\'
     
     related_definitions:
-      - 'ContinuousAt"
+      - "ContinuousAt"
       - 'ContinuousOn'
-      - 'UniformContinuous"
-      - 'LipschitzWith"
+      - "UniformContinuous"
+      - "LipschitzWith"
