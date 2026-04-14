@@ -153,7 +153,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
   width = 1000,
   height = 700,
   className,
-  orientation = 'vertical',
+  orientation: initialOrientation = 'vertical',
   onNodeClick,
   onNodeExpand,
   showStepByStep = false,
@@ -169,13 +169,14 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
   const [filterType, setFilterType] = useState<ProofNodeType | 'all'>('all');
   const [zoomLevel, setZoomLevel] = useState(1);
+  const [internalOrientation, setInternalOrientation] = useState<'vertical' | 'horizontal'>(orientation);
 
   // 将树转换为D3层次结构
   const hierarchyData = React.useMemo(() => {
     const convertNode = (node: ProofNode): any => ({
       ...node,
       children: node.children
-        ?.filter(child => expandedNodes.has(node.id))
+        ?.filter(() => expandedNodes.has(node.id))
         .map(convertNode) || [],
     });
     return d3.hierarchy(convertNode(root));
@@ -197,7 +198,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
 
     // 创建树布局
     const treeLayout = d3.tree<ProofNode>()
-      .size(orientation === 'vertical' 
+      .size(internalOrientation === 'vertical' 
         ? [innerWidth, innerHeight] 
         : [innerHeight, innerWidth]
       );
@@ -219,7 +220,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
       })
       .attr('stroke-width', 2)
       .attr('stroke-opacity', 0.6)
-      .attr('d', orientation === 'vertical' 
+      .attr('d', internalOrientation === 'vertical' 
         ? d3.linkVertical<any, any>()
           .x(d => d.x)
           .y(d => d.y)
@@ -234,7 +235,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
       .enter()
       .append('g')
       .attr('class', 'node')
-      .attr('transform', d => orientation === 'vertical'
+      .attr('transform', d => internalOrientation === 'vertical'
         ? `translate(${d.x},${d.y})`
         : `translate(${d.y},${d.x})`
       )
@@ -243,7 +244,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
         event.stopPropagation();
         handleNodeClick(d.data as ProofNode);
       })
-      .on('mouseover', (event, d) => setHoveredNode(d.data.id))
+      .on('mouseover', (_event, d) => setHoveredNode(d.data.id))
       .on('mouseout', () => setHoveredNode(null));
 
     // 节点背景
@@ -311,7 +312,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
       });
 
     // 展开/折叠指示器
-    nodes.filter(d => (d.data as ProofNode).children && (d.data as ProofNode).children!.length > 0)
+    nodes.filter(d => !!(d.data as ProofNode).children && (d.data as ProofNode).children!.length > 0)
       .append('circle')
       .attr('cx', 0)
       .attr('cy', 30)
@@ -358,7 +359,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
 
     svg.call(zoom as any);
 
-  }, [hierarchyData, width, height, orientation, interactive, searchQuery, filterType, expandedNodes, zoomLevel]);
+  }, [hierarchyData, width, height, internalOrientation, interactive, searchQuery, filterType, expandedNodes, zoomLevel]);
 
   // 重绘树
   useEffect(() => {
@@ -496,7 +497,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
             <Minimize2 className="w-4 h-4 text-gray-600" />
           </button>
           <button
-            onClick={() => setOrientation(o => o === 'vertical' ? 'horizontal' : 'vertical')}
+            onClick={() => setInternalOrientation(o => o === 'vertical' ? 'horizontal' : 'vertical')}
             className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
             title="切换方向"
           >

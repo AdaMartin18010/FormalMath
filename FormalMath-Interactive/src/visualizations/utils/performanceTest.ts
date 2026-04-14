@@ -38,7 +38,7 @@ export interface BenchmarkConfig {
 // ============================================
 
 export class PerformanceTester {
-  private results: PerformanceTestResult[] = [];
+  private _results: PerformanceTestResult[] = [];
   private frameCount = 0;
   private lastTime = 0;
   private rafId: number | null = null;
@@ -149,8 +149,8 @@ export class PerformanceTester {
       console.log(`[Benchmark] Result:`, result);
 
       // GC 建议
-      if (globalThis.gc) {
-        globalThis.gc();
+      if ((globalThis as any).gc) {
+        (globalThis as any).gc();
       }
     }
 

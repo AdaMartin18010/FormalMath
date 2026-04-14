@@ -402,12 +402,9 @@ export type VisualizationTheme = {
   };
 };
 
-// D3 Simulation 类型扩展
-declare module 'd3' {
-  interface Simulation<NodeDatum extends GraphNode, LinkDatum extends GraphLink> {
-    stop(): this;
-    restart(): this;
-    tick(): void;
-    on(type: string, listener: (event: any) => void): this;
-  }
+export interface GraphData {
+  nodes: GraphNode[];
+  edges: GraphLink[];
 }
+
+export type GraphEdge = GraphLink;

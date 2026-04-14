@@ -58,7 +58,7 @@ export function generateTestData(nodeCount: number, edgeRatio: number): GraphDat
       id: `node-${i}`,
       label: `节点 ${i}`,
       type: type as any,
-      status: 'verified',
+      data: { status: 'verified' },
       description: `这是节点 ${i} 的描述信息`,
       importance: Math.random(),
       radius: 15 + Math.random() * 15,
@@ -226,7 +226,7 @@ export async function runBenchmark(
       fpsMonitor.start();
       
       const frameTimes: number[] = [];
-      const startFrame = performance.now();
+      const _startFrame = performance.now();
       
       const result = await renderFn(data);
       
