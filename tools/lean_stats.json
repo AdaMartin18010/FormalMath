@@ -1,0 +1,3339 @@
+[
+  {
+    "file": "AlgebraicGeometry.lean",
+    "filename": "AlgebraicGeometry.lean",
+    "theorem_count": 5,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "affine_scheme_equivalence",
+      "serre_vanishing",
+      "hironaka_resolution",
+      "proper_valuative_criterion",
+      "bezout_theorem"
+    ]
+  },
+  {
+    "file": "AlgebraicNumberTheory.lean",
+    "filename": "AlgebraicNumberTheory.lean",
+    "theorem_count": 12,
+    "sorry_count": 17,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "ringOfIntegers_isDedekindDomain",
+      "ringOfIntegers_rank",
+      "ideal_unique_factorization",
+      "ideal_norm_multiplicative",
+      "class_group_finite",
+      "dirichlet_unit_theorem",
+      "sum_ef_eq_degree",
+      "ramification_criterion",
+      "minkowski_bound_property",
+      "cyclotomic_ring_ofIntegers"
+    ]
+  },
+  {
+    "file": "AlgebraicTopology.lean",
+    "filename": "AlgebraicTopology.lean",
+    "theorem_count": 11,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "boundary_squared_zero",
+      "homotopy_invariance_homology",
+      "homotopy_equivalence_induces_iso_homology",
+      "long_exact_sequence_pair",
+      "excision_theorem",
+      "mayer_vietoris_homology",
+      "hurewicz_theorem",
+      "cellular_homology_theorem",
+      "kunneth_formula_homology",
+      "universal_coefficient_cohomology"
+    ]
+  },
+  {
+    "file": "AlgorithmAnalysis.lean",
+    "filename": "AlgorithmAnalysis.lean",
+    "theorem_count": 16,
+    "sorry_count": 17,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "master_theorem_case1",
+      "master_theorem_case2",
+      "master_theorem_case3",
+      "stack_multipop_amortized",
+      "binary_counter_increment_amortized",
+      "dynamic_table_insert_amortized",
+      "comparison_sort_lower_bound",
+      "quicksort_expected_comparisons",
+      "hash_table_search_expected",
+      "universal_hashing_chain_length"
+    ]
+  },
+  {
+    "file": "AM_GM_Inequality.lean",
+    "filename": "AM_GM_Inequality.lean",
+    "theorem_count": 9,
+    "sorry_count": 12,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [
+      "Mathlib.Analysis.MeanInequalities",
+      "Mathlib.Analysis.Convex.SpecificFunctions.Basic"
+    ],
+    "theorem_names": [
+      "am_gm_two",
+      "am_gm_two_eq_iff",
+      "am_gm_n",
+      "am_gm_n_eq_iff",
+      "weighted_am_gm",
+      "young_inequality",
+      "holder_inequality",
+      "ah_inequality",
+      "power_mean_inequality"
+    ]
+  },
+  {
+    "file": "AnalyticNumberTheory.lean",
+    "filename": "AnalyticNumberTheory.lean",
+    "theorem_count": 13,
+    "sorry_count": 13,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "zeta_functional_equation",
+      "prime_number_theorem",
+      "prime_number_theorem_chebyshev",
+      "dirichlet_l_euler_product",
+      "dirichlet_l_nonvanishing",
+      "primes_in_arithmetic_progression",
+      "explicit_formula",
+      "moebius_inversion",
+      "riemann_hypothesis_moebius_equivalence",
+      "large_sieve_inequality"
+    ]
+  },
+  {
+    "file": "ArithmeticGeometry.lean",
+    "filename": "ArithmeticGeometry.lean",
+    "theorem_count": 8,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "northcott_property",
+      "mordell_weil_theorem",
+      "mazur_torsion_theorem",
+      "faltings_theorem",
+      "weil_conjecture_rationality",
+      "weil_conjecture_riemann_hypothesis",
+      "chabauty_coleman",
+      "roth_theorem"
+    ]
+  },
+  {
+    "file": "Biology.lean",
+    "filename": "Biology.lean",
+    "theorem_count": 11,
+    "sorry_count": 9,
+    "category": "C",
+    "domain": "物理/其他应用",
+    "mathlib_refs": [
+      "Mathlib.Dynamics.OrdinaryDifferentialEquation",
+      "Mathlib.Analysis.SpecialFunctions.ExpLog"
+    ],
+    "theorem_names": [
+      "malthus_solution_unique",
+      "logistic_solution",
+      "logistic_convergence",
+      "lv_equilibrium_points",
+      "lv_coexistence_equilibrium",
+      "lv_first_integral",
+      "sir_total_population_constant",
+      "final_size_equation",
+      "epidemic_threshold",
+      "minimal_wave_speed"
+    ]
+  },
+  {
+    "file": "BirchSwinnertonDyer.lean",
+    "filename": "BirchSwinnertonDyer.lean",
+    "theorem_count": 11,
+    "sorry_count": 46,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "mazur_torsion_theorem",
+      "mordell_theorem",
+      "weak_mordell_weil",
+      "hasse_bound",
+      "modularity_theorem",
+      "coates_wiles_theorem",
+      "gross_zagier_formula",
+      "kolyvagin_theorem_rank0",
+      "kolyvagin_theorem_rank1",
+      "bhargava_shankar_average_rank"
+    ]
+  },
+  {
+    "file": "BorelCantelli.lean",
+    "filename": "BorelCantelli.lean",
+    "theorem_count": 7,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [
+      "Mathlib.Probability.Independence",
+      "Mathlib.MeasureTheory.Measure.Limsup",
+      "Mathlib.Probability.StrongLaw"
+    ],
+    "theorem_names": [
+      "borel_cantelli_first",
+      "a_s_convergence_criterion",
+      "borel_cantelli_second",
+      "borel_cantelli_pairwise_independent",
+      "random_series_convergence",
+      "kolmogorov_three_series",
+      "kolmogorov_zero_one_law"
+    ]
+  },
+  {
+    "file": "BrouwerFixedPoint.lean",
+    "filename": "BrouwerFixedPoint.lean",
+    "theorem_count": 6,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [
+      "Mathlib.Topology.BrouwerFixedPoint"
+    ],
+    "theorem_names": [
+      "brouwer_fixed_point_dim1",
+      "no_retraction_sphere",
+      "brouwer_fixed_point",
+      "brouwer_fixed_point_dim2",
+      "nash_equilibrium_exists",
+      "kakutani_fixed_point"
+    ]
+  },
+  {
+    "file": "CalculusOfVariations.lean",
+    "filename": "CalculusOfVariations.lean",
+    "theorem_count": 5,
+    "sorry_count": 16,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "euler_lagrange_equation",
+      "brachistochrone_solution",
+      "minimal_surface_zero_mean_curvature",
+      "noether_theorem",
+      "morse_index_theorem"
+    ]
+  },
+  {
+    "file": "CantorDiagonal.lean",
+    "filename": "CantorDiagonal.lean",
+    "theorem_count": 4,
+    "sorry_count": 4,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "cantor_theorem",
+      "cardinal_cantor",
+      "powerset_nat_uncountable",
+      "real_uncountable"
+    ]
+  },
+  {
+    "file": "CategoryTheory.lean",
+    "filename": "CategoryTheory.lean",
+    "theorem_count": 3,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "范畴论/高级结构",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "yoneda_lemma",
+      "yoneda_embedding_fully_faithful",
+      "right_adjoint_unique"
+    ]
+  },
+  {
+    "file": "CauchySchwarz.lean",
+    "filename": "CauchySchwarz.lean",
+    "theorem_count": 12,
+    "sorry_count": 10,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.LinearAlgebra.Matrix.PosDef"
+    ],
+    "theorem_names": [
+      "cauchy_schwarz_real",
+      "cauchy_schwarz_real_eq_iff",
+      "cauchy_schwarz_complex",
+      "cauchy_schwarz_Rn",
+      "cauchy_schwarz_ell2",
+      "cauchy_schwarz_L2",
+      "triangle_inequality",
+      "projection_length",
+      "bessel_inequality",
+      "gramMatrix_positive_semidef"
+    ]
+  },
+  {
+    "file": "CentralLimitTheorem.lean",
+    "filename": "CentralLimitTheorem.lean",
+    "theorem_count": 8,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [
+      "Mathlib.Probability.Distributions.Gaussian",
+      "Mathlib.Probability.CentralLimitTheorem"
+    ],
+    "theorem_names": [
+      "lindeberg_levy_clt",
+      "levy_continuity",
+      "characteristic_function_taylor",
+      "lindeberg_feller_clt",
+      "lyapunov_sufficient",
+      "berry_esseen",
+      "delta_method",
+      "multivariate_clt"
+    ]
+  },
+  {
+    "file": "CharacteristicClass.lean",
+    "filename": "CharacteristicClass.lean",
+    "theorem_count": 17,
+    "sorry_count": 52,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "stiefel_whitney_zero",
+      "stiefel_whitney_rank",
+      "stiefel_whitney_natural",
+      "whitney_sum_formula",
+      "pontryagin_zero",
+      "pontryagin_rank",
+      "pontryagin_whitney_sum",
+      "euler_class_euler_characteristic",
+      "chern_zero",
+      "chern_rank"
+    ]
+  },
+  {
+    "file": "CharacterTheory.lean",
+    "filename": "CharacterTheory.lean",
+    "theorem_count": 10,
+    "sorry_count": 23,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "irreducible_characters_orthonormal_basis",
+      "representation_iso_iff_character_eq",
+      "character_table_orthogonal",
+      "second_orthogonality_relation",
+      "frobenius_character_formula",
+      "normal_subgroup_from_characters",
+      "solvable_iff_monomial_characters",
+      "artin_theorem",
+      "brauer_induction_theorem",
+      "character_value_is_algebraic_integer"
+    ]
+  },
+  {
+    "file": "ChernClass.lean",
+    "filename": "ChernClass.lean",
+    "theorem_count": 9,
+    "sorry_count": 43,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "chern_form_closed",
+      "chern_form_connection_independent",
+      "first_chern_determinant",
+      "first_chern_curvature",
+      "chern_gauss_bonnet",
+      "hirzebruch_riemann_roch",
+      "grothendieck_riemann_roch",
+      "c1_numerically_effective",
+      "bogomolov_inequality"
+    ]
+  },
+  {
+    "file": "ChineseRemainderTheorem.lean",
+    "filename": "ChineseRemainderTheorem.lean",
+    "theorem_count": 4,
+    "sorry_count": 5,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "chinese_remainder_two",
+      "chinese_remainder_unique",
+      "chinese_remainder_multiple",
+      "chinese_remainder_ring_iso"
+    ]
+  },
+  {
+    "file": "ClassFieldTheory.lean",
+    "filename": "ClassFieldTheory.lean",
+    "theorem_count": 8,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "class_number_finite",
+      "hilbert_class_field_exists",
+      "ray_class_field_exists",
+      "artin_reciprocity_law",
+      "local_artin_reciprocity",
+      "kronecker_weber",
+      "conductor_ramification",
+      "brauer_group_exact_sequence"
+    ]
+  },
+  {
+    "file": "CohomologyTheory.lean",
+    "filename": "CohomologyTheory.lean",
+    "theorem_count": 9,
+    "sorry_count": 40,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [
+      "Mathlib.AlgebraicTopology",
+      "Mathlib.Algebra.Homology",
+      "Mathlib.Topology.Sheaves"
+    ],
+    "theorem_names": [
+      "cup_product_assoc",
+      "cup_product_comm",
+      "poincare_duality_theorem",
+      "universal_coefficient_cohomology",
+      "kuenneth_formula",
+      "thom_isomorphism_theorem",
+      "whitney_sum_formula",
+      "de_rham_theorem",
+      "leray_theorem"
+    ]
+  },
+  {
+    "file": "Combinatorics.lean",
+    "filename": "Combinatorics.lean",
+    "theorem_count": 13,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "组合/图论",
+    "mathlib_refs": [
+      "Mathlib.Combinatorics.Pigeonhole",
+      "Mathlib.Combinatorics.DoubleCounting",
+      "Mathlib.Data.Nat.Choose.Basic",
+      "Mathlib.Combinatorics.SetFamily.Shadow"
+    ],
+    "theorem_names": [
+      "pigeonhole_principle",
+      "pigeonhole_general",
+      "binomial_theorem",
+      "vandermonde_identity",
+      "hockey_stick_identity",
+      "binomial_alternating_sum",
+      "inclusion_exclusion_two",
+      "inclusion_exclusion",
+      "ramsey_3_3",
+      "ramsey_exists"
+    ]
+  },
+  {
+    "file": "CommutativeAlgebra.lean",
+    "filename": "CommutativeAlgebra.lean",
+    "theorem_count": 8,
+    "sorry_count": 11,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "maximal_implies_prime",
+      "krull_maximal_ideal_exists",
+      "zariski_open_is_open",
+      "localization_universal_property",
+      "integral_closure_is_subring",
+      "noether_normalization",
+      "krull_principal_ideal_theorem",
+      "cohen_structure_theorem"
+    ]
+  },
+  {
+    "file": "CompletenessTheorem.lean",
+    "filename": "CompletenessTheorem.lean",
+    "theorem_count": 11,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "soundness",
+      "lindenbaum",
+      "henkinExtension",
+      "maximalConsistentComplete",
+      "termModelSatisfies",
+      "completeness",
+      "gödel_completeness",
+      "completeness_equivalent",
+      "compactness",
+      "loewenheimSkolem"
+    ]
+  },
+  {
+    "file": "ComplexAnalysis.lean",
+    "filename": "ComplexAnalysis.lean",
+    "theorem_count": 11,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "holomorphic_iff_analytic",
+      "cauchy_goursat",
+      "cauchy_integral_formula",
+      "residue_theorem",
+      "maximum_modulus_principle",
+      "liouville_theorem",
+      "riemann_mapping_theorem",
+      "real_part_harmonic",
+      "little_picard_theorem",
+      "great_picard_theorem"
+    ]
+  },
+  {
+    "file": "ComplexExponential.lean",
+    "filename": "ComplexExponential.lean",
+    "theorem_count": 12,
+    "sorry_count": 3,
+    "category": "B",
+    "domain": "分析",
+    "mathlib_refs": [
+      "Mathlib.Data.Complex.Exponential",
+      "Mathlib.Analysis.SpecialFunctions.ExpDeriv"
+    ],
+    "theorem_names": [
+      "euler_formula",
+      "euler_identity",
+      "complex_exp_add",
+      "complex_exp_periodic",
+      "complex_exp_abs",
+      "complex_exp_ne_zero",
+      "complex_exp_I_abs",
+      "complex_exp_deriv",
+      "unit_circle_parametrization",
+      "complex_exp_conj"
+    ]
+  },
+  {
+    "file": "ComputabilityTheory.lean",
+    "filename": "ComputabilityTheory.lean",
+    "theorem_count": 7,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [
+      "Mathlib.Computability.TuringMachine",
+      "Mathlib.Computability.Partrec",
+      "Mathlib.Computability.Halting"
+    ],
+    "theorem_names": [
+      "decidable_iff_semidecidable_and_complement",
+      "halting_problem_undecidable",
+      "halting_problem_semidecidable",
+      "rice_theorem",
+      "reduction_preserves_decidability",
+      "reduction_preserves_undecidability",
+      "halting_problem_re_complete"
+    ]
+  },
+  {
+    "file": "ComputationalComplexity.lean",
+    "filename": "ComputationalComplexity.lean",
+    "theorem_count": 8,
+    "sorry_count": 10,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "P_subset_NP",
+      "cook_levin_theorem",
+      "three_sat_np_complete",
+      "time_hierarchy_theorem",
+      "P_strict_subset_EXP",
+      "savitch_theorem",
+      "karp_lipton_theorem",
+      "tqbf_pspace_complete"
+    ]
+  },
+  {
+    "file": "ConnectionTheory.lean",
+    "filename": "ConnectionTheory.lean",
+    "theorem_count": 5,
+    "sorry_count": 24,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "first_bianchi_identity",
+      "levi_civita_existence_unique",
+      "koszul_formula",
+      "riemann_symmetries",
+      "gauss_lemma"
+    ]
+  },
+  {
+    "file": "ControlTheory.lean",
+    "filename": "ControlTheory.lean",
+    "theorem_count": 7,
+    "sorry_count": 10,
+    "category": "C",
+    "domain": "算法/复杂度",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "kalman_controllability_criterion",
+      "kalman_observability_criterion",
+      "lyapunov_stability_theorem",
+      "pole_placement_theorem",
+      "pontryagin_maximum_principle",
+      "lqr_optimality_theorem",
+      "kalman_filter_optimality"
+    ]
+  },
+  {
+    "file": "CoveringSpace.lean",
+    "filename": "CoveringSpace.lean",
+    "theorem_count": 10,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "Algebra",
+    "mathlib_refs": [
+      "Mathlib.Topology.Covering.Basic",
+      "Mathlib.Topology.Homotopy.Basic"
+    ],
+    "theorem_names": [
+      "covering_is_local_homeo",
+      "covering_is_open_map",
+      "path_lifting",
+      "homotopy_lifting",
+      "covering_injective_induced",
+      "fiber_card_eq_of_path_connected",
+      "universal_cover_exists",
+      "covering_classification",
+      "deck_group_iso_quotient",
+      "borsuk_ulam_sphere"
+    ]
+  },
+  {
+    "file": "Cryptography_advanced.lean",
+    "filename": "Cryptography_advanced.lean",
+    "theorem_count": 7,
+    "sorry_count": 12,
+    "category": "C",
+    "domain": "组合/图论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "prg_existence_from_one_way_function",
+      "ggm_security",
+      "rsa_correctness",
+      "schnorr_completeness",
+      "schnorr_soundness",
+      "schnorr_honest_verifier_zk",
+      "yao_security"
+    ]
+  },
+  {
+    "file": "CurvatureTensor.lean",
+    "filename": "CurvatureTensor.lean",
+    "theorem_count": 9,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "微分几何",
+    "mathlib_refs": [
+      "Mathlib.Geometry.Manifold.IntegralCurve",
+      "Mathlib.Geometry.RiemannianMetric"
+    ],
+    "theorem_names": [
+      "levi_civita_unique",
+      "curvature_antisymmetric",
+      "first_bianchi_identity",
+      "curvature_symmetries",
+      "second_bianchi_identity",
+      "ricci_symmetric",
+      "space_form_classification",
+      "einstein_constant_scalar_curvature",
+      "ricci_identity"
+    ]
+  },
+  {
+    "file": "DeepLearning.lean",
+    "filename": "DeepLearning.lean",
+    "theorem_count": 6,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "算法/复杂度",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "universal_approximation_theorem",
+      "relu_network_piecewise_linear",
+      "depth_separation_theorem",
+      "ntk_training_dynamics",
+      "gradient_descent_global_convergence",
+      "deep_network_rademacher_bound"
+    ]
+  },
+  {
+    "file": "DeRhamCohomology.lean",
+    "filename": "DeRhamCohomology.lean",
+    "theorem_count": 17,
+    "sorry_count": 35,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [
+      "Mathlib.Geometry.Manifold",
+      "Mathlib.Analysis.DifferentialForm"
+    ],
+    "theorem_names": [
+      "exterior_derivative_squared_zero",
+      "exact_implies_closed",
+      "poincare_lemma",
+      "h0_dR",
+      "hn_dR",
+      "pullback_commutes_d",
+      "pullback_id",
+      "pullback_comp",
+      "homotopy_invariance",
+      "homotopy_equivalence_iso"
+    ]
+  },
+  {
+    "file": "DerivedAlgebraicGeometry.lean",
+    "filename": "DerivedAlgebraicGeometry.lean",
+    "theorem_count": 5,
+    "sorry_count": 53,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "lurie_deformation_theorem",
+      "behrend_fantechi_construction",
+      "derived_self_intersection",
+      "derived_geometric_langlands",
+      "orlov_lg_cy_correspondence"
+    ]
+  },
+  {
+    "file": "DerivedFunctor.lean",
+    "filename": "DerivedFunctor.lean",
+    "theorem_count": 5,
+    "sorry_count": 44,
+    "category": "C",
+    "domain": "范畴论/高级结构",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "right_derived_universal",
+      "grothendieck_spectral_sequence",
+      "leray_spectral_sequence",
+      "hilbert_syzygy_theorem",
+      "grothendieck_duality"
+    ]
+  },
+  {
+    "file": "DifferentialTopology.lean",
+    "filename": "DifferentialTopology.lean",
+    "theorem_count": 9,
+    "sorry_count": 5,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "whitney_embedding",
+      "whitney_immersion",
+      "thom_transversality",
+      "tubular_neighborhood_exists",
+      "poincare_hopf",
+      "thom_cobordism_classification",
+      "h_cobordism_theorem",
+      "milnor_exotic_sphere",
+      "exotic_r4_exists"
+    ]
+  },
+  {
+    "file": "DistributionTheory.lean",
+    "filename": "DistributionTheory.lean",
+    "theorem_count": 10,
+    "sorry_count": 45,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "dirac_delta_sifting",
+      "distribution_derivative_agrees",
+      "heaviside_derivative",
+      "support_distribution_closed",
+      "support_locally_integrable",
+      "convolution_smooth",
+      "fourier_transform_inversion",
+      "laplace_fundamental_solution",
+      "distribution_convergence_linear",
+      "distribution_limit_unique"
+    ]
+  },
+  {
+    "file": "DynamicalSystems.lean",
+    "filename": "DynamicalSystems.lean",
+    "theorem_count": 11,
+    "sorry_count": 5,
+    "category": "B",
+    "domain": "动力系统/遍历论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "iterate_zero",
+      "iterate_succ",
+      "periodicPoint_returns",
+      "fixedPoint_periodic_one",
+      "topologicallyConjugate_equivalence",
+      "logisticMap_invariant_unit_interval",
+      "shiftMap_continuous",
+      "shiftMap_chaotic",
+      "henon_area_preserving",
+      "discreteLogistic_equilibria"
+    ]
+  },
+  {
+    "file": "Economics.lean",
+    "filename": "Economics.lean",
+    "theorem_count": 6,
+    "sorry_count": 19,
+    "category": "C",
+    "domain": "物理/其他应用",
+    "mathlib_refs": [
+      "Mathlib.Topology.FixedPoint.Brouwer",
+      "Mathlib.Analysis.Convex.Topology"
+    ],
+    "theorem_names": [
+      "arrow_debreu_existence",
+      "first_welfare_theorem",
+      "second_welfare_theorem",
+      "arrow_impossibility",
+      "ramsey_optimal_path",
+      "value_function_properties"
+    ]
+  },
+  {
+    "file": "EllipticCurve.lean",
+    "filename": "EllipticCurve.lean",
+    "theorem_count": 8,
+    "sorry_count": 12,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "discriminant_ne_zero",
+      "torsion_structure",
+      "hasse_bound",
+      "cm_j_invariant_is_algebraic_integer",
+      "wiles_taylor",
+      "weak_mordell_weil",
+      "mordell_weil",
+      "siegel_theorem"
+    ]
+  },
+  {
+    "file": "EllipticPDE.lean",
+    "filename": "EllipticPDE.lean",
+    "theorem_count": 10,
+    "sorry_count": 15,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "mean_value_property",
+      "strong_maximum_principle",
+      "weak_maximum_principle",
+      "harnack_inequality",
+      "liouville_theorem",
+      "green_representation",
+      "schauder_estimate",
+      "calderon_zygmund_Lp",
+      "de_giorgi_nash",
+      "dirichlet_uniqueness"
+    ]
+  },
+  {
+    "file": "ErgodicTheory.lean",
+    "filename": "ErgodicTheory.lean",
+    "theorem_count": 9,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "动力系统/遍历论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "poincare_recurrence",
+      "birkhoff_ergodic_theorem",
+      "von_neumann_ergodic_theorem",
+      "ergodic_equivalences",
+      "mixing_implies_ergodic",
+      "unique_ergodicity_uniform_convergence",
+      "shannon_mcmillan_breiman",
+      "irrational_rotation_ergodic",
+      "weyl_equidistribution"
+    ]
+  },
+  {
+    "file": "FaltingsTheorem.lean",
+    "filename": "FaltingsTheorem.lean",
+    "theorem_count": 12,
+    "sorry_count": 46,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "faltings_theorem",
+      "faltings_theorem_jacobian",
+      "chabauty_theorem",
+      "coleman_bound",
+      "shafarevich_conjecture",
+      "parshin_construction_properties",
+      "tate_conjecture",
+      "semisimplicity",
+      "function_field_mordell",
+      "masser_wustholz_bound"
+    ]
+  },
+  {
+    "file": "FejersTheorem.lean",
+    "filename": "FejersTheorem.lean",
+    "theorem_count": 11,
+    "sorry_count": 9,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "fejerKernel_nonneg",
+      "fejerKernel_integral",
+      "fejerKernel_even",
+      "fejerSum_convolution",
+      "fejer_theorem",
+      "fejer_theorem_pointwise",
+      "trig_polynomial_dense",
+      "weierstrass_approximation_trig",
+      "fejer_L2_convergence",
+      "fejerKernel_bound"
+    ]
+  },
+  {
+    "file": "FieldExtension.lean",
+    "filename": "FieldExtension.lean",
+    "theorem_count": 8,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [
+      "Mathlib.FieldTheory.Extension",
+      "Mathlib.FieldTheory.Minpoly",
+      "Mathlib.FieldTheory.Adjoin"
+    ],
+    "theorem_names": [
+      "isAlgebraicOver_iff",
+      "minpoly_unique",
+      "simple_extension_algebraic",
+      "simple_extension_degree",
+      "finite_implies_algebraic",
+      "tower_law",
+      "algebraic_transitive",
+      "primitive_element_theorem"
+    ]
+  },
+  {
+    "file": "Finance.lean",
+    "filename": "Finance.lean",
+    "theorem_count": 12,
+    "sorry_count": 11,
+    "category": "C",
+    "domain": "物理/其他应用",
+    "mathlib_refs": [
+      "Mathlib.Probability.Martingale.Basic",
+      "Mathlib.Probability.StochasticProcess"
+    ],
+    "theorem_names": [
+      "gbm_solution_unique",
+      "normalCDF_neg",
+      "normalCDF_zero",
+      "put_call_parity",
+      "girsanov_theorem",
+      "feynman_kac",
+      "capm_formula",
+      "security_market_line",
+      "martingale_representation",
+      "complete_market_hedging"
+    ]
+  },
+  {
+    "file": "FloerTheory.lean",
+    "filename": "FloerTheory.lean",
+    "theorem_count": 6,
+    "sorry_count": 21,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "critical_points_are_periodic_orbits",
+      "energy_action_relation",
+      "floer_boundary_squared",
+      "floer_homology_independence",
+      "pss_isomorphism",
+      "arnold_conjecture_floer"
+    ]
+  },
+  {
+    "file": "FourierSeries.lean",
+    "filename": "FourierSeries.lean",
+    "theorem_count": 8,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [
+      "Mathlib.Analysis.Fourier",
+      "Mathlib.MeasureTheory.Function.L2Space"
+    ],
+    "theorem_names": [
+      "dirichlet_integral",
+      "dirichlet_even",
+      "dirichlet_theorem",
+      "riemann_lebesgue_lemma",
+      "fourier_L2_convergence",
+      "parseval_identity",
+      "dini_criterion",
+      "fejer_theorem"
+    ]
+  },
+  {
+    "file": "FourierTransform.lean",
+    "filename": "FourierTransform.lean",
+    "theorem_count": 17,
+    "sorry_count": 20,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "fourier_linear",
+      "fourier_translation",
+      "fourier_modulation",
+      "fourier_dilation",
+      "fourier_inversion",
+      "plancherel_theorem",
+      "parseval_identity",
+      "fourier_L2_unitary",
+      "convolution_theorem",
+      "poisson_summation"
+    ]
+  },
+  {
+    "file": "FunctionalAnalysis.lean",
+    "filename": "FunctionalAnalysis.lean",
+    "theorem_count": 17,
+    "sorry_count": 19,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "riesz_representation",
+      "orthogonal_projection",
+      "orthogonal_decomposition",
+      "operator_norm_equivalent",
+      "uniform_boundedness",
+      "open_mapping",
+      "closed_graph",
+      "finite_rank_compact",
+      "fredholm_compact_perturbation",
+      "fredholm_index_stability"
+    ]
+  },
+  {
+    "file": "FunctorCategory.lean",
+    "filename": "FunctorCategory.lean",
+    "theorem_count": 7,
+    "sorry_count": 12,
+    "category": "C",
+    "domain": "范畴论/高级结构",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "functorCategory_id",
+      "functorCategory_comp",
+      "representable_object_unique",
+      "exists_sheafification",
+      "sheaf_iso_iff_stalk_iso",
+      "inverse_image_adjoint",
+      "yoneda_fully_faithful"
+    ]
+  },
+  {
+    "file": "FundamentalGroup.lean",
+    "filename": "FundamentalGroup.lean",
+    "theorem_count": 8,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "Algebra",
+    "mathlib_refs": [
+      "Mathlib.Topology.Homotopy.Basic",
+      "Mathlib.Topology.Covering.Basic"
+    ],
+    "theorem_names": [
+      "path_homotopic_equiv",
+      "homotopy_equivalence_induces_iso",
+      "fundamental_group_contractible",
+      "path_lifting_property",
+      "homotopy_lifting_property",
+      "covering_injective_on_pi1",
+      "covering_classification",
+      "seifert_van_kampen"
+    ]
+  },
+  {
+    "file": "GaloisGroup.lean",
+    "filename": "GaloisGroup.lean",
+    "theorem_count": 9,
+    "sorry_count": 13,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "galois_card_eq_degree",
+      "galois_correspondence_K_to_H_to_K",
+      "galois_correspondence_H_to_K_to_H",
+      "normal_subgroup_iff_normal_extension",
+      "quotient_iso",
+      "artin_lemma",
+      "galois_group_embeds_symmetric_group",
+      "primitive_element_theorem",
+      "discriminant_square_iff_subgroup_an"
+    ]
+  },
+  {
+    "file": "GameTheory.lean",
+    "filename": "GameTheory.lean",
+    "theorem_count": 5,
+    "sorry_count": 22,
+    "category": "C",
+    "domain": "物理/其他应用",
+    "mathlib_refs": [
+      "Mathlib.Topology.FixedPoint.Brouwer",
+      "Mathlib.Analysis.Convex.Topology"
+    ],
+    "theorem_names": [
+      "nash_existence_finite",
+      "minimax_theorem",
+      "dominant_strategy_equilibrium",
+      "nash_implies_correlated",
+      "ess_implies_nash"
+    ]
+  },
+  {
+    "file": "GammaFunction.lean",
+    "filename": "GammaFunction.lean",
+    "theorem_count": 8,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [
+      "Mathlib.Analysis.SpecialFunctions.Gamma.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Gamma.BohrMollerup"
+    ],
+    "theorem_names": [
+      "gammaIntegral_convergent",
+      "gamma_recurrence",
+      "gamma_factorial",
+      "gamma_half",
+      "reflection_formula",
+      "legendre_duplication",
+      "bohr_mollerup",
+      "stirling_formula"
+    ]
+  },
+  {
+    "file": "GeneralRelativity.lean",
+    "filename": "GeneralRelativity.lean",
+    "theorem_count": 6,
+    "sorry_count": 23,
+    "category": "C",
+    "domain": "物理/其他应用",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "bianchi_identity",
+      "energy_momentum_conservation",
+      "schwarzschild_solution",
+      "gravitational_wave_speed",
+      "weak_equivalence_principle",
+      "local_inertial_frame"
+    ]
+  },
+  {
+    "file": "GeodesicEquation.lean",
+    "filename": "GeodesicEquation.lean",
+    "theorem_count": 10,
+    "sorry_count": 18,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [
+      "Mathlib.Geometry.RiemannianMetric.Geodesic"
+    ],
+    "theorem_names": [
+      "geodesic_equation_local",
+      "geodesic_existence_uniqueness",
+      "exponential_map_differential",
+      "gauss_lemma",
+      "geodesic_locally_shortest",
+      "hopf_rinow",
+      "jacobi_field_existence",
+      "conjugate_points_not_shortest",
+      "cartan_hadamard",
+      "bonnet_myers"
+    ]
+  },
+  {
+    "file": "GeometricRepresentationTheory.lean",
+    "filename": "GeometricRepresentationTheory.lean",
+    "theorem_count": 6,
+    "sorry_count": 35,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "bruhat_decomposition",
+      "borel_weil_theorem",
+      "springer_representation",
+      "kazhdan_lusztig_positivity",
+      "geometric_satake_equivalence",
+      "nakajima_representation"
+    ]
+  },
+  {
+    "file": "GeometricTopology.lean",
+    "filename": "GeometricTopology.lean",
+    "theorem_count": 10,
+    "sorry_count": 34,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "poincare_conjecture_3d",
+      "poincare_conjecture_hd",
+      "poincare_conjecture_4d_top",
+      "h_cobordism_theorem",
+      "existence_exotic_R4",
+      "morse_inequalities",
+      "cobordism_equiv",
+      "thom_cobordism_theorem",
+      "whitney_embedding",
+      "transversality_theorem"
+    ]
+  },
+  {
+    "file": "GraphTheory.lean",
+    "filename": "GraphTheory.lean",
+    "theorem_count": 13,
+    "sorry_count": 17,
+    "category": "C",
+    "domain": "组合/图论",
+    "mathlib_refs": [
+      "Mathlib.Combinatorics.SimpleGraph.Basic",
+      "Mathlib.Combinatorics.SimpleGraph.Connectivity",
+      "Mathlib.Combinatorics.SimpleGraph.Coloring",
+      "Mathlib.Combinatorics.SimpleGraph.Matching"
+    ],
+    "theorem_names": [
+      "tree_edge_count",
+      "tree_has_leaves",
+      "cayley_formula",
+      "euler_formula",
+      "planar_edge_bound",
+      "K5_nonplanar",
+      "K33_nonplanar",
+      "hall_marriage_theorem",
+      "tutte_theorem",
+      "five_color_theorem"
+    ]
+  },
+  {
+    "file": "HahnBanachTheorem.lean",
+    "filename": "HahnBanachTheorem.lean",
+    "theorem_count": 11,
+    "sorry_count": 18,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "minkowski_sublinear",
+      "hahn_banach_real",
+      "hahn_banach_extension",
+      "hahn_banach_complex",
+      "hahn_banach_separation_open",
+      "hahn_banach_separation",
+      "exists_nontrivial_functional",
+      "norm_dual_representation",
+      "point_convex_separation",
+      "best_approximation_existence"
+    ]
+  },
+  {
+    "file": "HairyBallTheorem.lean",
+    "filename": "HairyBallTheorem.lean",
+    "theorem_count": 10,
+    "sorry_count": 10,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [
+      "Mathlib.Geometry.Manifold.Instances.Sphere"
+    ],
+    "theorem_names": [
+      "poincare_hopf",
+      "euler_characteristic_sphere",
+      "hairy_ball_theorem",
+      "degree_identity",
+      "degree_antipode",
+      "degree_homotopy_invariant",
+      "hairy_ball_theorem_degree_proof",
+      "complex_structure_nowhere_vanishing",
+      "odd_sphere_has_vector_field",
+      "hopf_fiber"
+    ]
+  },
+  {
+    "file": "HarmonicAnalysis.lean",
+    "filename": "HarmonicAnalysis.lean",
+    "theorem_count": 10,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "maximal_weak_type_1_1",
+      "maximal_Lp_bounded",
+      "lebesgue_differentiation",
+      "hilbert_L2_bounded",
+      "hilbert_Lp_bounded",
+      "littlewood_paley_theorem",
+      "H1_atom_decomposition",
+      "H1_BMO_duality",
+      "marcinkiewicz_multiplier",
+      "carleson_theorem"
+    ]
+  },
+  {
+    "file": "HeatEquation.lean",
+    "filename": "HeatEquation.lean",
+    "theorem_count": 10,
+    "sorry_count": 12,
+    "category": "C",
+    "domain": "微分方程",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "heat_kernel_solution",
+      "heat_kernel_integral",
+      "heat_solution_satisfies_ivp",
+      "heat_maximum_principle",
+      "heat_instantaneous_regularization",
+      "energy_dissipation",
+      "heat_longtime_behavior",
+      "parabolic_harnack",
+      "backward_heat_illposed",
+      "heat_kernel_semigroup"
+    ]
+  },
+  {
+    "file": "HigherCategoryTheory.lean",
+    "filename": "HigherCategoryTheory.lean",
+    "theorem_count": 3,
+    "sorry_count": 27,
+    "category": "C",
+    "domain": "范畴论/高级结构",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "homotopy_hypothesis",
+      "dold_kan_correspondence",
+      "stable_infinity_category_spectra"
+    ]
+  },
+  {
+    "file": "HodgeConjecture.lean",
+    "filename": "HodgeConjecture.lean",
+    "theorem_count": 12,
+    "sorry_count": 45,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "hodge_decomposition",
+      "hodge_symmetry",
+      "serre_duality",
+      "cycle_class_is_hodge",
+      "lefschetz_11_theorem",
+      "lefschetz_decomposition",
+      "hodge_riemann_bilinear_relations",
+      "standard_conjectures_imply_hodge",
+      "hodge_for_abelian_varieties",
+      "beauville_voisin_theorem"
+    ]
+  },
+  {
+    "file": "HodgeTheory.lean",
+    "filename": "HodgeTheory.lean",
+    "theorem_count": 22,
+    "sorry_count": 32,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "hodge_star_involutive",
+      "hodge_star_inner_product",
+      "codifferential_adjoint",
+      "hodge_laplacian_self_adjoint",
+      "hodge_laplacian_nonneg",
+      "harmonic_iff_closed_coexact",
+      "hodge_theorem",
+      "hodge_orthogonal_decomposition",
+      "hodge_decomposition",
+      "harmonic_forms_isomorphism_cohomology"
+    ]
+  },
+  {
+    "file": "HolderInequality.lean",
+    "filename": "HolderInequality.lean",
+    "theorem_count": 7,
+    "sorry_count": 18,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [
+      "Mathlib.MeasureTheory.Function.LpSpace",
+      "Mathlib.Analysis.MeanInequalities"
+    ],
+    "theorem_names": [
+      "holder_inequality_nonneg",
+      "holder_inequality_general",
+      "holder_inequality_multiple",
+      "holder_inequality_discrete",
+      "holder_inequality_equality_iff",
+      "reverse_holder_inequality",
+      "weighted_holder_inequality"
+    ]
+  },
+  {
+    "file": "HomologicalAlgebra.lean",
+    "filename": "HomologicalAlgebra.lean",
+    "theorem_count": 6,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "Algebra",
+    "mathlib_refs": [
+      "Mathlib.Algebra.Homology",
+      "Mathlib.CategoryTheory.Abelian",
+      "Mathlib.CategoryTheory.Preadditive.Projective",
+      "Mathlib.CategoryTheory.Preadditive.Injective"
+    ],
+    "theorem_names": [
+      "chain_homotopic_induce_same_homology",
+      "long_exact_sequence_homology",
+      "Ext1_classifies_extensions",
+      "universal_coefficient_cohomology",
+      "exact_iff_homology_zero",
+      "snake_lemma"
+    ]
+  },
+  {
+    "file": "HomotopyTheory.lean",
+    "filename": "HomotopyTheory.lean",
+    "theorem_count": 4,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "拓扑",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "contractible_iff_id_homotopic_const",
+      "hurewicz_theorem",
+      "homotopy_long_exact_sequence",
+      "suspension_loop_adjunction"
+    ]
+  },
+  {
+    "file": "HomotopyTypeTheory.lean",
+    "filename": "HomotopyTypeTheory.lean",
+    "theorem_count": 6,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "fundamental_group_S1",
+      "interval_contractible",
+      "long_exact_sequence_fibration",
+      "hlevel_pi",
+      "hlevel_sigma",
+      "pi3_S2"
+    ]
+  },
+  {
+    "file": "ImproperIntegral.lean",
+    "filename": "ImproperIntegral.lean",
+    "theorem_count": 6,
+    "sorry_count": 6,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "comparison_test",
+      "p_test_convergent",
+      "p_test_divergent",
+      "abs_implies_convergence",
+      "cauchy_criterion",
+      "p_test_singular"
+    ]
+  },
+  {
+    "file": "IndexTheorem.lean",
+    "filename": "IndexTheorem.lean",
+    "theorem_count": 10,
+    "sorry_count": 30,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "atiyah_singer_index_theorem",
+      "de_rham_index",
+      "dolbeault_index",
+      "dirac_index_formula",
+      "hirzebruch_signature_theorem",
+      "gauss_bonnet_theorem",
+      "riemann_roch_curve",
+      "mckean_singer_formula",
+      "heat_kernel_asymptotic_expansion",
+      "local_index_theorem"
+    ]
+  },
+  {
+    "file": "IndexTheory.lean",
+    "filename": "IndexTheory.lean",
+    "theorem_count": 13,
+    "sorry_count": 76,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "index_homotopy_invariant",
+      "elliptic_is_fredholm",
+      "atiyah_singer_index_theorem",
+      "de_rham_index_formula",
+      "hirzebruch_riemann_roch",
+      "a_roof_genus_formula",
+      "mckean_singer_formula",
+      "heat_kernel_asymptotic_expansion",
+      "local_index_theorem",
+      "local_to_global_index"
+    ]
+  },
+  {
+    "file": "InfinitudeOfPrimes.lean",
+    "filename": "InfinitudeOfPrimes.lean",
+    "theorem_count": 5,
+    "sorry_count": 5,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "infinitude_of_primes",
+      "exists_prime_gt",
+      "fermat_odd",
+      "fermat_gt_two",
+      "prime_gaps_unbounded"
+    ]
+  },
+  {
+    "file": "InformationTheory.lean",
+    "filename": "InformationTheory.lean",
+    "theorem_count": 12,
+    "sorry_count": 18,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "entropy_nonneg",
+      "entropy_upper_bound",
+      "chain_rule_entropy",
+      "mutual_information_nonneg",
+      "data_processing_inequality",
+      "gaussian_maximum_entropy",
+      "channel_coding_achievability",
+      "channel_coding_converse",
+      "rate_distortion_achievability",
+      "asymptotic_equipartition_property"
+    ]
+  },
+  {
+    "file": "KnotTheory.lean",
+    "filename": "KnotTheory.lean",
+    "theorem_count": 17,
+    "sorry_count": 39,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "reidemeister_theorem",
+      "wirtinger_presentation_correct",
+      "alexander_invariant",
+      "alexander_symmetry",
+      "jones_skein_relation",
+      "jones_detects_chirality",
+      "homfly_skein",
+      "homfly_to_jones",
+      "homfly_to_alexander",
+      "alexander_braid_representation"
+    ]
+  },
+  {
+    "file": "KTheory.lean",
+    "filename": "KTheory.lean",
+    "theorem_count": 10,
+    "sorry_count": 56,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "k0_decomposition",
+      "chern_character_ring_hom",
+      "chern_character_rational_isomorphism",
+      "bott_periodicity_theorem",
+      "complex_bott_periodicity_explicit",
+      "thom_isomorphism_theorem",
+      "ktheory_long_exact",
+      "atiyah_singer_index_theorem_k",
+      "swan_theorem",
+      "norm_residue_isomorphism"
+    ]
+  },
+  {
+    "file": "LanglandsProgram.lean",
+    "filename": "LanglandsProgram.lean",
+    "theorem_count": 9,
+    "sorry_count": 41,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "langlands_functional_equation",
+      "class_field_theory_langlands_case",
+      "local_langlands_correspondence_GLn",
+      "global_langlands_correspondence_GLn",
+      "lafforgue_theorem",
+      "geometric_langlands",
+      "symmetric_power_functoriality",
+      "arthur_selberg_trace_formula",
+      "eichler_shimura_isomorphism"
+    ]
+  },
+  {
+    "file": "LawOfLargeNumbers.lean",
+    "filename": "LawOfLargeNumbers.lean",
+    "theorem_count": 8,
+    "sorry_count": 6,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [
+      "Mathlib.Probability.Independence",
+      "Mathlib.Probability.IdentDistrib",
+      "Mathlib.Probability.StrongLaw"
+    ],
+    "theorem_names": [
+      "weak_law_chebyshev",
+      "strong_law_kolmogorov",
+      "etemadi_strong_law",
+      "truncation_lemma",
+      "borel_cantelli",
+      "variance_sum_independent",
+      "three_series_theorem",
+      "uniform_integrable_implies_L1_convergence"
+    ]
+  },
+  {
+    "file": "LaxMilgram.lean",
+    "filename": "LaxMilgram.lean",
+    "theorem_count": 11,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "inducedOperator_property",
+      "coercive_implies_bounded_below",
+      "lax_milgram",
+      "lax_milgram_stability",
+      "poincare_inequality",
+      "poisson_weak_solution",
+      "elliptic_weak_solution",
+      "cea_lemma",
+      "galerkin_solution",
+      "stampacchia_theorem"
+    ]
+  },
+  {
+    "file": "LebesgueDifferentiation.lean",
+    "filename": "LebesgueDifferentiation.lean",
+    "theorem_count": 11,
+    "sorry_count": 9,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "continuous_implies_locally_integrable",
+      "lebesguePoint_iff",
+      "maximal_function_weak_11",
+      "maximal_function_strong_pp",
+      "lebesgue_differentiation",
+      "almost_everywhere_lebesgue_point",
+      "monotone_ae_differentiable",
+      "bounded_variation_ae_differentiable",
+      "lebesgue_density_theorem",
+      "lebesgue_ftc"
+    ]
+  },
+  {
+    "file": "LieAlgebra.lean",
+    "filename": "LieAlgebra.lean",
+    "theorem_count": 10,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "lie_bracket_antisymmetric",
+      "jacobi_identity",
+      "killing_form_invariant",
+      "cartan_semisimplicity_criterion",
+      "semisimple_structure",
+      "lie_theorem",
+      "engel_theorem",
+      "cartan_subalgebra_exists",
+      "root_space_decomposition",
+      "highest_weight_representation_exists"
+    ]
+  },
+  {
+    "file": "Logic.lean",
+    "filename": "Logic.lean",
+    "theorem_count": 10,
+    "sorry_count": 13,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "deMorgan",
+      "excludedMiddle",
+      "doubleNegation",
+      "haltingProblemUndecidable",
+      "riceTheorem",
+      "independenceOfCH",
+      "compactnessTheorem",
+      "lowenheimSkolem",
+      "deductionTheorem",
+      "typeSafety"
+    ]
+  },
+  {
+    "file": "LowDimensionalTopology.lean",
+    "filename": "LowDimensionalTopology.lean",
+    "theorem_count": 7,
+    "sorry_count": 18,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "geometrization_conjecture",
+      "mostow_rigidity",
+      "existence_heegaard_splitting",
+      "lickorish_wallace",
+      "donaldson_theorem",
+      "freedman_classification",
+      "kirby_theorem"
+    ]
+  },
+  {
+    "file": "MachineLearning.lean",
+    "filename": "MachineLearning.lean",
+    "theorem_count": 8,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "算法/复杂度",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "erm_consistency",
+      "sauer_shelah_lemma",
+      "rademacher_generalization_bound",
+      "stability_implies_generalization",
+      "gradient_descent_convergence",
+      "online_gradient_descent_regret",
+      "finite_hypothesis_pac_bound",
+      "bias_variance_decomposition"
+    ]
+  },
+  {
+    "file": "ManifoldDefinition.lean",
+    "filename": "ManifoldDefinition.lean",
+    "theorem_count": 6,
+    "sorry_count": 24,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [
+      "Mathlib.Geometry.Manifold.ChartedSpace",
+      "Mathlib.Geometry.Manifold.SmoothManifold"
+    ],
+    "theorem_names": [
+      "manifold_dimension_well_defined",
+      "tangent_space_dimension",
+      "inverse_function_theorem_manifold",
+      "implicit_function_theorem_manifold",
+      "sard_theorem",
+      "compact_surface_classification"
+    ]
+  },
+  {
+    "file": "MarkovChainErgodic.lean",
+    "filename": "MarkovChainErgodic.lean",
+    "theorem_count": 9,
+    "sorry_count": 10,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [
+      "Mathlib.Probability.MarkovChain"
+    ],
+    "theorem_names": [
+      "invariant_measure_integral",
+      "invariant_measure_exists_unique",
+      "markov_chain_ergodic_theorem",
+      "convergence_to_stationary",
+      "foster_lyapunov_implies_geometric",
+      "chernoff_bound_markov",
+      "reversible_iff_self_adjoint",
+      "perron_frobenius_markov",
+      "markov_chain_clt"
+    ]
+  },
+  {
+    "file": "MartingaleConvergence.lean",
+    "filename": "MartingaleConvergence.lean",
+    "theorem_count": 11,
+    "sorry_count": 12,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [
+      "Mathlib.Probability.Martingale.Basic",
+      "Mathlib.Probability.Martingale.Convergence"
+    ],
+    "theorem_names": [
+      "doob_upcrossing_inequality",
+      "doob_martingale_convergence_ae",
+      "uniformly_integrable_martingale_convergence",
+      "Lp_martingale_convergence",
+      "doob_Lp_inequality",
+      "optional_stopping_theorem",
+      "optional_stopping_ui",
+      "levy_upward",
+      "levy_downward",
+      "martingale_representation"
+    ]
+  },
+  {
+    "file": "MathematicalPhilosophy.lean",
+    "filename": "MathematicalPhilosophy.lean",
+    "theorem_count": 7,
+    "sorry_count": 13,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "goedel_first_incompleteness",
+      "goedel_second_incompleteness",
+      "halting_problem_undecidable",
+      "russell_paradox",
+      "independence_of_choice",
+      "independence_of_continuum_hypothesis",
+      "proof_checker_soundness"
+    ]
+  },
+  {
+    "file": "MathematicalPhysics.lean",
+    "filename": "MathematicalPhysics.lean",
+    "theorem_count": 8,
+    "sorry_count": 15,
+    "category": "C",
+    "domain": "物理/其他应用",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "poisson_bracket_antisymmetric",
+      "poisson_bracket_jacobi",
+      "noether_theorem_hamilton",
+      "hamilton_principle",
+      "liouville_theorem",
+      "speed_of_light_formula",
+      "gauge_invariance",
+      "fluctuation_dissipation_classical"
+    ]
+  },
+  {
+    "file": "Mathlib/Data/Finset/Basic.lean",
+    "filename": "Basic.lean",
+    "theorem_count": 8,
+    "sorry_count": 15,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "mem_univ",
+      "filter_card_add_filter_neg_card_eq_card",
+      "card_Ioc",
+      "card_erase_of_mem",
+      "three_le",
+      "dvd_prod_of_mem",
+      "card_image_iff",
+      "card_le_card"
+    ]
+  },
+  {
+    "file": "Mathlib/Data/Nat/ModEq.lean",
+    "filename": "ModEq.lean",
+    "theorem_count": 2,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "trans",
+      "symm"
+    ]
+  },
+  {
+    "file": "Mathlib/Data/Set/Finite.lean",
+    "filename": "Finite.lean",
+    "theorem_count": 1,
+    "sorry_count": 1,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "finite_iUnion"
+    ]
+  },
+  {
+    "file": "Mathlib/Data/ZMod/Basic.lean",
+    "filename": "Basic.lean",
+    "theorem_count": 0,
+    "sorry_count": 1,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": []
+  },
+  {
+    "file": "Mathlib/Logic/Function/Basic.lean",
+    "filename": "Basic.lean",
+    "theorem_count": 0,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": []
+  },
+  {
+    "file": "Mathlib/SetTheory/Cardinal/Basic.lean",
+    "filename": "Basic.lean",
+    "theorem_count": 8,
+    "sorry_count": 20,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "cantor",
+      "sum_lt_prod",
+      "add_eq_max",
+      "mul_eq_max",
+      "mk_univ",
+      "mk_set",
+      "power_le_power_right",
+      "le_aleph0_iff_set_countable"
+    ]
+  },
+  {
+    "file": "MaximumLikelihood.lean",
+    "filename": "MaximumLikelihood.lean",
+    "theorem_count": 10,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [
+      "Mathlib.Probability.Statistics"
+    ],
+    "theorem_names": [
+      "mle_consistency_wald",
+      "kl_divergence_nonneg",
+      "kl_divergence_zero_iff_eq",
+      "cramer_rao_lower_bound",
+      "mle_asymptotic_normality",
+      "wilks_theorem",
+      "mle_asymptotic_efficiency",
+      "m_estimator_consistency",
+      "rao_score_test",
+      "wald_test"
+    ]
+  },
+  {
+    "file": "MeasureTheory.lean",
+    "filename": "MeasureTheory.lean",
+    "theorem_count": 10,
+    "sorry_count": 13,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "lebesgue_measure_translation_invariant",
+      "lebesgue_measure_complete",
+      "monotone_convergence",
+      "fatou_lemma",
+      "dominated_convergence",
+      "holder_inequality",
+      "minkowski_inequality",
+      "radon_nikodym",
+      "hahn_decomposition",
+      "fubini"
+    ]
+  },
+  {
+    "file": "MinkowskiInequality.lean",
+    "filename": "MinkowskiInequality.lean",
+    "theorem_count": 7,
+    "sorry_count": 13,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [
+      "Mathlib.MeasureTheory.Function.LpSpace",
+      "Mathlib.Analysis.NormedSpace.Basic"
+    ],
+    "theorem_names": [
+      "minkowski_inequality",
+      "minkowski_integral_inequality",
+      "minkowski_inequality_discrete",
+      "minkowski_vector_valued",
+      "minkowski_equality_iff",
+      "reverse_minkowski_inequality",
+      "lp_is_banach"
+    ]
+  },
+  {
+    "file": "MirrorSymmetry.lean",
+    "filename": "MirrorSymmetry.lean",
+    "theorem_count": 8,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "微分几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "yau_theorem",
+      "hodge_number_symmetries",
+      "griffiths_transversality",
+      "mirror_hodge_symmetry",
+      "syz_conjecture",
+      "hms_elliptic_curve",
+      "quintic_mirror_prediction",
+      "mirror_theorem_quantum_cohomology"
+    ]
+  },
+  {
+    "file": "ModelTheory.lean",
+    "filename": "ModelTheory.lean",
+    "theorem_count": 3,
+    "sorry_count": 3,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [
+      "Mathlib.ModelTheory.Basic",
+      "Mathlib.ModelTheory.Semantics",
+      "Mathlib.ModelTheory.Satisfiability",
+      "Mathlib.ModelTheory.Types"
+    ],
+    "theorem_names": [
+      "existence_of_nonstandard_models",
+      "completeness_theorem",
+      "isomorphism_preserves_truth"
+    ]
+  },
+  {
+    "file": "ModularForm.lean",
+    "filename": "ModularForm.lean",
+    "theorem_count": 11,
+    "sorry_count": 17,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "fundamental_domain_covers",
+      "eisenstein_converges",
+      "eisenstein_is_modular_form",
+      "fourier_expansion",
+      "hecke_preserves_cusp_forms",
+      "hecke_commute",
+      "petersson_hermitian",
+      "hecke_self_adjoint",
+      "euler_product",
+      "functional_equation"
+    ]
+  },
+  {
+    "file": "ModuleTheory.lean",
+    "filename": "ModuleTheory.lean",
+    "theorem_count": 10,
+    "sorry_count": 1,
+    "category": "B",
+    "domain": "Algebra",
+    "mathlib_refs": [
+      "Mathlib.Algebra.Module.LinearMap",
+      "Mathlib.Algebra.Module.Submodule"
+    ],
+    "theorem_names": [
+      "first_isomorphism_theorem",
+      "submodule_correspondence",
+      "second_isomorphism_theorem",
+      "third_isomorphism_theorem",
+      "direct_sum_universal_property",
+      "free_module_universal_property",
+      "split_iff_isomorphic_to_direct_sum",
+      "noetherian_iff_fg_submodules",
+      "tensor_product_universal_property",
+      "dual_of_free_fg"
+    ]
+  },
+  {
+    "file": "ModuliSpaces.lean",
+    "filename": "ModuliSpaces.lean",
+    "theorem_count": 6,
+    "sorry_count": 59,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "elliptic_curve_complex_torus_equiv",
+      "elliptic_curve_moduli_space",
+      "moduli_curve_dimension",
+      "deligne_mumford_compactification",
+      "moduli_vector_bundle_dimension",
+      "witten_conjecture_kontsevich"
+    ]
+  },
+  {
+    "file": "MordellWeil.lean",
+    "filename": "MordellWeil.lean",
+    "theorem_count": 8,
+    "sorry_count": 16,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "elliptic_curve_group_axioms",
+      "canonical_height_quadratic",
+      "canonical_height_zero_iff_torsion",
+      "weak_mordell_weil",
+      "descent_lemma",
+      "torsion_subgroup_finite",
+      "mordell_weil_theorem",
+      "mazur_torsion_theorem"
+    ]
+  },
+  {
+    "file": "MorseTheory.lean",
+    "filename": "MorseTheory.lean",
+    "theorem_count": 20,
+    "sorry_count": 30,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "morse_function_smooth",
+      "morse_function_nondegenerate",
+      "morse_index_invariant",
+      "morse_index_bound",
+      "morse_lemma",
+      "criticalValue_properties",
+      "crossing_theorem",
+      "finite_critical_points",
+      "weak_morse_inequality",
+      "strong_morse_inequality"
+    ]
+  },
+  {
+    "file": "MotiveTheory.lean",
+    "filename": "MotiveTheory.lean",
+    "theorem_count": 3,
+    "sorry_count": 19,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "universalProperty",
+      "motivic_to_etale",
+      "voevodsky_norm_residue_isomorphism"
+    ]
+  },
+  {
+    "file": "NavierStokes.lean",
+    "filename": "NavierStokes.lean",
+    "theorem_count": 10,
+    "sorry_count": 22,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "leray_existence_theorem",
+      "energy_equality",
+      "caffarelli_kohn_nirenberg_theorem",
+      "serrin_regularity_criterion",
+      "beale_kato_majda_criterion",
+      "scaling_invariance",
+      "small_data_global_existence",
+      "two_dimensional_global_regularity",
+      "vorticity_equation_2d",
+      "tao_averaged_navier_stokes_blowup"
+    ]
+  },
+  {
+    "file": "NoetherianRing.lean",
+    "filename": "NoetherianRing.lean",
+    "theorem_count": 15,
+    "sorry_count": 11,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "noetherian_iff_finite_generated",
+      "hilbert_basis_theorem",
+      "hilbert_basis_theorem_multivar",
+      "finite_algebra_over_noetherian",
+      "isPrimaryIdeal_iff",
+      "primary_decomposition",
+      "associated_primes_unique",
+      "going_up_theorem",
+      "going_down_theorem",
+      "incomparability_theorem"
+    ]
+  },
+  {
+    "file": "NumericalAnalysis.lean",
+    "filename": "NumericalAnalysis.lean",
+    "theorem_count": 7,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "newton_local_convergence",
+      "rk4_convergence",
+      "trapezoidal_error_estimate",
+      "central_difference_error",
+      "condition_number_error_bound",
+      "lu_factorization_existence",
+      "fft_complexity"
+    ]
+  },
+  {
+    "file": "OperationsResearch.lean",
+    "filename": "OperationsResearch.lean",
+    "theorem_count": 10,
+    "sorry_count": 9,
+    "category": "C",
+    "domain": "算法/复杂度",
+    "mathlib_refs": [
+      "Mathlib.Data.Matrix.Notation",
+      "Mathlib.LinearProgramming"
+    ],
+    "theorem_names": [
+      "weak_duality",
+      "strong_duality",
+      "complementary_slackness",
+      "simplex_finite_convergence",
+      "max_flow_min_cut",
+      "steady_state_normalization",
+      "little_formula",
+      "eoq_optimal",
+      "value_iteration_convergence",
+      "optimal_policy_existence"
+    ]
+  },
+  {
+    "file": "Optimization.lean",
+    "filename": "Optimization.lean",
+    "theorem_count": 13,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "算法/复杂度",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "convex_local_is_global",
+      "first_order_necessary",
+      "second_order_necessary",
+      "second_order_sufficient",
+      "gradient_descent_descent_lemma",
+      "gradient_descent_convergence_rate",
+      "newton_local_convergence",
+      "kkt_necessary",
+      "kkt_sufficient_convex",
+      "weak_duality"
+    ]
+  },
+  {
+    "file": "Optimization_advanced.lean",
+    "filename": "Optimization_advanced.lean",
+    "theorem_count": 9,
+    "sorry_count": 10,
+    "category": "C",
+    "domain": "算法/复杂度",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "kkt_necessary_condition",
+      "kkt_sufficient_convex",
+      "weak_duality",
+      "strong_duality_convex",
+      "gradient_descent_convergence_convex",
+      "newton_method_local_convergence",
+      "interior_point_convergence",
+      "subgradient_method_convergence",
+      "sgd_convergence_convex"
+    ]
+  },
+  {
+    "file": "p-adicHodgeTheory.lean",
+    "filename": "p-adicHodgeTheory.lean",
+    "theorem_count": 6,
+    "sorry_count": 33,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "crystalline_implies_semistable",
+      "semistable_implies_deRham",
+      "deRham_implies_hodgeTate",
+      "hodge_tate_decomposition",
+      "p_adic_comparison_theorem",
+      "phigamma_equivalence"
+    ]
+  },
+  {
+    "file": "PDETheory.lean",
+    "filename": "PDETheory.lean",
+    "theorem_count": 7,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "微分方程",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "strong_maximum_principle",
+      "mean_value_property",
+      "heat_solution_representation",
+      "dAlembert_formula",
+      "lax_milgram",
+      "interior_holder_regularity",
+      "energy_estimate"
+    ]
+  },
+  {
+    "file": "PercolationTheory.lean",
+    "filename": "PercolationTheory.lean",
+    "theorem_count": 9,
+    "sorry_count": 20,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "subcritical_phase",
+      "supercritical_phase",
+      "critical_probability_1d",
+      "critical_probability_2d",
+      "infinite_cluster_uniqueness",
+      "subcritical_exponential_decay",
+      "critical_exponent_relation",
+      "cardy_formula",
+      "random_cluster_percolation_limit"
+    ]
+  },
+  {
+    "file": "PerfectoidSpaces.lean",
+    "filename": "PerfectoidSpaces.lean",
+    "theorem_count": 5,
+    "sorry_count": 16,
+    "category": "C",
+    "domain": "代数几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "frobenius_is_ringHom",
+      "tilt_of_perfectoid_is_perfectoid",
+      "tilting_correspondence_fields",
+      "tilting_cohomology_isomorphism",
+      "purity_for_perfectoid_fields"
+    ]
+  },
+  {
+    "file": "PigeonholePrinciple.lean",
+    "filename": "PigeonholePrinciple.lean",
+    "theorem_count": 6,
+    "sorry_count": 6,
+    "category": "C",
+    "domain": "组合/图论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "pigeonhole_simple",
+      "pigeonhole_exists",
+      "pigeonhole_general",
+      "birthday_pigeonhole",
+      "pigeonhole_divisibility",
+      "infinite_pigeonhole"
+    ]
+  },
+  {
+    "file": "PlancherelTheorem.lean",
+    "filename": "PlancherelTheorem.lean",
+    "theorem_count": 11,
+    "sorry_count": 11,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "plancherel_theorem",
+      "parseval_identity",
+      "fourierL2_is_unitary",
+      "fourierL2_surjective",
+      "fourierL2_inversion",
+      "gaussian_fourier_transform",
+      "gaussian_fixed_point",
+      "plancherel_schwartz",
+      "heisenberg_uncertainty",
+      "hausdorff_young"
+    ]
+  },
+  {
+    "file": "PoincareConjecture.lean",
+    "filename": "PoincareConjecture.lean",
+    "theorem_count": 20,
+    "sorry_count": 30,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "homotopy_group_sphere_trivial",
+      "homotopy_group_sphere_top_dimension",
+      "homeomorphism_to_homotopy_equivalence",
+      "simply_connected_of_homotopy_sphere",
+      "poincare_conjecture_dim1",
+      "poincare_conjecture_dim2",
+      "poincare_conjecture_dim3",
+      "poincare_conjecture_dim4",
+      "poincare_conjecture_dim_high",
+      "poincare_conjecture_full"
+    ]
+  },
+  {
+    "file": "PrincipalBundle.lean",
+    "filename": "PrincipalBundle.lean",
+    "theorem_count": 8,
+    "sorry_count": 42,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "associated_bundle_local_triv",
+      "vector_bundle_as_associated",
+      "fundamental_group_BG",
+      "classification_theorem",
+      "ambrose_singer",
+      "reduction_criterion",
+      "reduction_to_maximal_compact",
+      "characteristic_class_from_classifying_map"
+    ]
+  },
+  {
+    "file": "PrincipalIdealDomain.lean",
+    "filename": "PrincipalIdealDomain.lean",
+    "theorem_count": 11,
+    "sorry_count": 6,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [
+      "Mathlib.RingTheory.PrincipalIdealDomain",
+      "Mathlib.RingTheory.UniqueFactorizationDomain"
+    ],
+    "theorem_names": [
+      "ideal_is_principal",
+      "generator_unique_unit",
+      "pid_is_noetherian",
+      "irreducible_is_prime",
+      "bezout_identity",
+      "ideal_subset_iff_dvd",
+      "prime_ideal_iff_prime_generator",
+      "chinese_remainder_pid",
+      "ideal_intersection_eq_lcm",
+      "ideal_sum_eq_gcd"
+    ]
+  },
+  {
+    "file": "ProbabilityTheory.lean",
+    "filename": "ProbabilityTheory.lean",
+    "theorem_count": 11,
+    "sorry_count": 12,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "expectation_linear",
+      "variance_nonneg",
+      "chebyshev_inequality",
+      "conditional_expectation_exists_unique",
+      "characteristic_function_injective",
+      "levy_continuity",
+      "moment_from_mgf",
+      "as_implies_probability",
+      "probability_implies_distribution",
+      "lp_implies_probability"
+    ]
+  },
+  {
+    "file": "ProofTheory.lean",
+    "filename": "ProofTheory.lean",
+    "theorem_count": 5,
+    "sorry_count": 5,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [
+      "Mathlib.Logic.Basic"
+    ],
+    "theorem_names": [
+      "subformula_property",
+      "normalization",
+      "classical_consistency",
+      "curry_howard_correspondence",
+      "cut_elimination_increases_size"
+    ]
+  },
+  {
+    "file": "PvsNP.lean",
+    "filename": "PvsNP.lean",
+    "theorem_count": 9,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "算法/复杂度",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "p_equals_np_verifier_formulation",
+      "p_equals_np_search_formulation",
+      "np_complete_in_p_implies_p_equals_np",
+      "np_problem_not_in_p_implies_p_not_equals_np",
+      "karp_lipton_circuit_formulation",
+      "p_equals_np_implies_derandomization",
+      "p_equals_np_ilp_formulation",
+      "relativization_barrier",
+      "p_equals_np_collapse_ph"
+    ]
+  },
+  {
+    "file": "QuadraticReciprocity.lean",
+    "filename": "QuadraticReciprocity.lean",
+    "theorem_count": 9,
+    "sorry_count": 10,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "euler_criterion",
+      "first_supplement",
+      "first_supplement_mod4",
+      "second_supplement",
+      "second_supplement_mod8",
+      "quadratic_reciprocity",
+      "quadratic_reciprocity_alt",
+      "jacobi_reciprocity",
+      "example_calculation"
+    ]
+  },
+  {
+    "file": "QuantumFieldTheory.lean",
+    "filename": "QuantumFieldTheory.lean",
+    "theorem_count": 8,
+    "sorry_count": 5,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "planeWave_dispersion_relation",
+      "creation_annihilation_commutation",
+      "hamiltonian_particleNumber_commute",
+      "lorentz_algebra_relations",
+      "wick_theorem",
+      "gauge_invariant_fieldStrength",
+      "qcd_asymptotic_freedom",
+      "dirac_plane_wave_solution"
+    ]
+  },
+  {
+    "file": "QuantumMechanics.lean",
+    "filename": "QuantumMechanics.lean",
+    "theorem_count": 10,
+    "sorry_count": 23,
+    "category": "C",
+    "domain": "物理/其他应用",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "expectation_real",
+      "variance_nonneg",
+      "heisenberg_uncertainty",
+      "position_momentum_uncertainty",
+      "unitary_evolution",
+      "harmonic_oscillator_spectrum",
+      "angular_momentum_eigenvalues",
+      "pauli_matrix_relation",
+      "spin_half_eigenvalues",
+      "entanglement_violates_bell"
+    ]
+  },
+  {
+    "file": "RadonNikodym.lean",
+    "filename": "RadonNikodym.lean",
+    "theorem_count": 9,
+    "sorry_count": 2,
+    "category": "B",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "absolutelyContinuous_refl",
+      "absolutelyContinuous_trans",
+      "radon_nikodym_exists",
+      "radon_nikodym_unique",
+      "rn_deriv_measurable",
+      "rn_deriv_spec",
+      "rn_deriv_chain_rule",
+      "condexp_exists",
+      "pdf_exists"
+    ]
+  },
+  {
+    "file": "RamseyTheorem.lean",
+    "filename": "RamseyTheorem.lean",
+    "theorem_count": 9,
+    "sorry_count": 9,
+    "category": "C",
+    "domain": "组合/图论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "ramsey_theorem",
+      "ramsey_symmetry",
+      "ramsey_recurrence",
+      "ramsey_2_n",
+      "ramsey_3_3_eq",
+      "ramsey_upper_bound_binomial",
+      "ramsey_upper_bound_exponential",
+      "schur_theorem",
+      "van_der_waerden_theorem"
+    ]
+  },
+  {
+    "file": "RandomMatrixTheory.lean",
+    "filename": "RandomMatrixTheory.lean",
+    "theorem_count": 8,
+    "sorry_count": 15,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "wigner_semicircle_law",
+      "semicircle_moments",
+      "semicircle_odd_moments_zero",
+      "marchenko_pastur_law",
+      "largest_eigenvalue_tw_limit",
+      "local_universality",
+      "asymptotic_freeness",
+      "circular_law"
+    ]
+  },
+  {
+    "file": "ReinforcementLearning.lean",
+    "filename": "ReinforcementLearning.lean",
+    "theorem_count": 9,
+    "sorry_count": 9,
+    "category": "C",
+    "domain": "算法/复杂度",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "bellman_expectation_equation",
+      "bellman_optimality_equation",
+      "bellman_operator_contraction",
+      "value_iteration_convergence",
+      "policy_iteration_convergence",
+      "q_learning_convergence",
+      "policy_gradient_theorem",
+      "ucb_regret_bound",
+      "lqr_optimal_policy"
+    ]
+  },
+  {
+    "file": "RepresentationTheory.lean",
+    "filename": "RepresentationTheory.lean",
+    "theorem_count": 9,
+    "sorry_count": 22,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "maschke_theorem",
+      "character_orthogonality",
+      "schur_lemma",
+      "regular_representation_decomposition",
+      "frobenius_reciprocity",
+      "mackey_decomposition",
+      "burnside_pa_qb_theorem",
+      "character_tensor_product",
+      "dimension_divides_order"
+    ]
+  },
+  {
+    "file": "RiemannHypothesis.lean",
+    "filename": "RiemannHypothesis.lean",
+    "theorem_count": 14,
+    "sorry_count": 28,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "hardy_theorem",
+      "riemann_von_mangoldt_formula",
+      "first_10_13_zeros_on_critical_line",
+      "selberg_zero_proportion",
+      "rh_equivalent_prime_number_error",
+      "rh_equivalent_mertens",
+      "redheffer_determinant",
+      "prime_number_theorem_under_rh",
+      "chebyshev_psi_under_rh",
+      "prime_gap_under_rh"
+    ]
+  },
+  {
+    "file": "RieszRepresentation.lean",
+    "filename": "RieszRepresentation.lean",
+    "theorem_count": 9,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "riesz_representation_hilbert",
+      "riesz_norm_equality",
+      "riesz_map_isometric",
+      "riesz_map_antilinear_isomorphism",
+      "riesz_markov_kakutani",
+      "exists_urysohn_for_open",
+      "riesz_representation_Lp",
+      "variational_solution_exists",
+      "lax_milgram"
+    ]
+  },
+  {
+    "file": "RootsOfUnity.lean",
+    "filename": "RootsOfUnity.lean",
+    "theorem_count": 8,
+    "sorry_count": 14,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [
+      "Mathlib.RingTheory.RootsOfUnity",
+      "Mathlib.NumberTheory.Cyclotomic"
+    ],
+    "theorem_names": [
+      "exp_two_pi_i_div_n_is_root",
+      "nth_roots_distinct",
+      "is_primitive_root_iff_coprime",
+      "count_primitive_roots",
+      "roots_of_unity_cyclic",
+      "cyclotomic_degree",
+      "sum_nth_roots",
+      "cyclotomic_field_degree"
+    ]
+  },
+  {
+    "file": "SetTheory.lean",
+    "filename": "SetTheory.lean",
+    "theorem_count": 11,
+    "sorry_count": 2,
+    "category": "B",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [
+      "Mathlib.SetTheory.Ordinal.Basic",
+      "Mathlib.SetTheory.Cardinal.Basic",
+      "Mathlib.SetTheory.ZFC.Basic",
+      "Mathlib.Data.Set.Basic"
+    ],
+    "theorem_names": [
+      "union_distrib_inter",
+      "inter_distrib_union",
+      "demorgan_union",
+      "demorgan_inter",
+      "powerset_mono",
+      "powerset_card_finite",
+      "equiv_classes_disjoint",
+      "ordinal_induction",
+      "cardinal_le_iff_injective",
+      "schroeder_bernstein"
+    ]
+  },
+  {
+    "file": "SobolevSpace.lean",
+    "filename": "SobolevSpace.lean",
+    "theorem_count": 12,
+    "sorry_count": 20,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "Multiindex",
+      "weak_derivative_unique",
+      "sobolev_mono",
+      "sobolev_norm_pos_def",
+      "sobolev_space_is_banach",
+      "poincare_inequality",
+      "sobolev_embedding",
+      "rellich_compactness",
+      "W0Space_characterization",
+      "trace_theorem"
+    ]
+  },
+  {
+    "file": "SpectralTheory.lean",
+    "filename": "SpectralTheory.lean",
+    "theorem_count": 11,
+    "sorry_count": 13,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "resolvent_equation",
+      "spectrum_nonempty",
+      "gelfand_spectral_radius",
+      "selfadjoint_spectrum_real",
+      "compact_selfadjoint_spectral",
+      "spectral_theorem_selfadjoint",
+      "spectral_theorem_normal",
+      "functional_calculus_homomorphism",
+      "weyl_criterion",
+      "essential_spectrum_stability"
+    ]
+  },
+  {
+    "file": "StatisticalMechanics.lean",
+    "filename": "StatisticalMechanics.lean",
+    "theorem_count": 10,
+    "sorry_count": 18,
+    "category": "C",
+    "domain": "物理/其他应用",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "entropy_extensive",
+      "internalEnergy_formula",
+      "entropy_thermodynamic_relation",
+      "particle_number_fluctuation_compressibility",
+      "ideal_gas_law",
+      "equipartition_theorem",
+      "boltzmann_gibbs_equivalence",
+      "rushbrooke_identity",
+      "widom_identity",
+      "birkhoff_ergodic"
+    ]
+  },
+  {
+    "file": "Statistics.lean",
+    "filename": "Statistics.lean",
+    "theorem_count": 5,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "neyman_pearson_lemma",
+      "ols_unbiased",
+      "gauss_markov",
+      "bayes_theorem",
+      "fisher_neyman_factorization"
+    ]
+  },
+  {
+    "file": "StochasticProcessesAdvanced.lean",
+    "filename": "StochasticProcessesAdvanced.lean",
+    "theorem_count": 9,
+    "sorry_count": 18,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "levy_characterization",
+      "ito_isometry",
+      "ito_formula",
+      "girsanov_theorem",
+      "levy_ito_decomposition",
+      "kolmogorov_continuity",
+      "feynman_kac_formula",
+      "sde_existence_uniqueness",
+      "tanaka_formula"
+    ]
+  },
+  {
+    "file": "StokesTheorem.lean",
+    "filename": "StokesTheorem.lean",
+    "theorem_count": 13,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "exterior_derivative_add",
+      "exterior_derivative_smul",
+      "exterior_derivative_squared_eq_zero",
+      "stokes_theorem_local",
+      "stokes_theorem",
+      "fundamental_theorem_calculus",
+      "green_theorem",
+      "divergence_theorem",
+      "classical_stokes_theorem",
+      "integral_of_exact_form_closed_manifold"
+    ]
+  },
+  {
+    "file": "StringTheory.lean",
+    "filename": "StringTheory.lean",
+    "theorem_count": 8,
+    "sorry_count": 6,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "string_solution_decomposition",
+      "massless_excitations",
+      "virasoro_algebra",
+      "T_duality",
+      "mirror_symmetry_hodge",
+      "superstring_critical_dimension",
+      "ads_cft_correspondence",
+      "geometric_langlands_from_string"
+    ]
+  },
+  {
+    "file": "StrongLawOfLargeNumbers.lean",
+    "filename": "StrongLawOfLargeNumbers.lean",
+    "theorem_count": 14,
+    "sorry_count": 11,
+    "category": "C",
+    "domain": "概率统计",
+    "mathlib_refs": [
+      "Mathlib.Probability.StrongLaw"
+    ],
+    "theorem_names": [
+      "sampleMean_eq",
+      "strong_law_kolmogorov",
+      "etemadi_strong_law",
+      "weak_law_chebyshev",
+      "truncated_bounded",
+      "truncated_converges",
+      "kolmogorov_convergence_criterion",
+      "kronecker_lemma",
+      "variance_sum_independent",
+      "three_series_theorem"
+    ]
+  },
+  {
+    "file": "SylowTheorems.lean",
+    "filename": "SylowTheorems.lean",
+    "theorem_count": 8,
+    "sorry_count": 11,
+    "category": "C",
+    "domain": "其他",
+    "mathlib_refs": [
+      "Mathlib.GroupTheory.Sylow",
+      "Mathlib.GroupTheory.PGroup"
+    ],
+    "theorem_names": [
+      "sylow_first_theorem",
+      "sylow_card",
+      "sylow_second_theorem",
+      "sylow_third_theorem_mod",
+      "sylow_third_theorem_div",
+      "p_group_solvable",
+      "pq_group_cyclic",
+      "frattini_argument"
+    ]
+  },
+  {
+    "file": "SymplecticGeometry.lean",
+    "filename": "SymplecticGeometry.lean",
+    "theorem_count": 7,
+    "sorry_count": 32,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "darboux_theorem",
+      "liouville_theorem",
+      "poisson_jacobi",
+      "noether_theorem_symplectic",
+      "weinstein_lagrangian_neighborhood",
+      "arnold_conjecture_weak",
+      "gromov_non_squeezing"
+    ]
+  },
+  {
+    "file": "SymplecticGeometry_advanced.lean",
+    "filename": "SymplecticGeometry_advanced.lean",
+    "theorem_count": 6,
+    "sorry_count": 25,
+    "category": "C",
+    "domain": "微分几何",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "compatible_acs_exists",
+      "gromov_compactness",
+      "gw_fundamental_class_axiom",
+      "quantum_product_associative",
+      "fukaya_ainfinity_relation",
+      "hofer_metric_nondegenerate"
+    ]
+  },
+  {
+    "file": "TaniyamaShimura.lean",
+    "filename": "TaniyamaShimura.lean",
+    "theorem_count": 10,
+    "sorry_count": 43,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "elliptic_lfunction_euler_product",
+      "elliptic_lfunction_analytic_continuation",
+      "modularity_theorem",
+      "wiles_modularity_theorem",
+      "ribet_level_lowering",
+      "fermat_last_theorem",
+      "eichler_shimura_isomorphism",
+      "modular_parameterization_exists",
+      "deuring_theorem",
+      "gross_zagier"
+    ]
+  },
+  {
+    "file": "TaylorTheorem.lean",
+    "filename": "TaylorTheorem.lean",
+    "theorem_count": 3,
+    "sorry_count": 0,
+    "category": "A",
+    "domain": "分析",
+    "mathlib_refs": [
+      "Mathlib.Analysis.Calculus.Taylor",
+      "Mathlib.Analysis.Calculus.Deriv",
+      "Mathlib.Analysis.Calculus.ContDiff"
+    ],
+    "theorem_names": [
+      "taylor_theorem_lagrange",
+      "taylor_theorem_integral",
+      "taylor_series_convergence"
+    ]
+  },
+  {
+    "file": "ToposTheory.lean",
+    "filename": "ToposTheory.lean",
+    "theorem_count": 5,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "subobject_classifier_property",
+      "power_object_exists",
+      "geometric_morphism_adjoint",
+      "points_correspond_to_geometric_morphisms",
+      "sheafification_exact"
+    ]
+  },
+  {
+    "file": "TychonoffTheorem.lean",
+    "filename": "TychonoffTheorem.lean",
+    "theorem_count": 7,
+    "sorry_count": 15,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [
+      "Mathlib.Topology.Product",
+      "Mathlib.Topology.Compactness",
+      "Mathlib.Topology.Ultrafilter"
+    ],
+    "theorem_names": [
+      "compact_iff_ultrafilter",
+      "tychonoff_theorem",
+      "alexander_subbase",
+      "tychonoff_theorem_FIP",
+      "Tychonoff_implies_AC",
+      "banach_alaoglu",
+      "heine_borel_Rn"
+    ]
+  },
+  {
+    "file": "TypeTheory.lean",
+    "filename": "TypeTheory.lean",
+    "theorem_count": 9,
+    "sorry_count": 3,
+    "category": "B",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [
+      "Mathlib.Logic.Function.Basic",
+      "Mathlib.Data.Sigma.Basic",
+      "Mathlib.Data.Sum.Basic",
+      "Mathlib.Data.Prod.Basic"
+    ],
+    "theorem_names": [
+      "sigma_pi_duality",
+      "nat_induction",
+      "prod_induction",
+      "sum_induction",
+      "universe_hierarchy",
+      "prop_is_subsingleton",
+      "axiomK_equiv_uip",
+      "funext_subst",
+      "pi1_circle_is_Z"
+    ]
+  },
+  {
+    "file": "UniformConvergence.lean",
+    "filename": "UniformConvergence.lean",
+    "theorem_count": 5,
+    "sorry_count": 13,
+    "category": "C",
+    "domain": "分析",
+    "mathlib_refs": [
+      "Mathlib.Topology.UniformSpace.Basic",
+      "Mathlib.Topology.UniformSpace.UniformConvergence",
+      "Mathlib.Analysis.NormedSpace.Basic"
+    ],
+    "theorem_names": [
+      "uniform_cauchy_iff_uniform_convergence",
+      "uniform_limit_continuous",
+      "uniform_limit_integral",
+      "uniform_limit_deriv",
+      "dini_theorem"
+    ]
+  },
+  {
+    "file": "UnivalentFoundations.lean",
+    "filename": "UnivalentFoundations.lean",
+    "theorem_count": 6,
+    "sorry_count": 8,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "univalence_implies_equiv_eq",
+      "structure_identity_principle",
+      "group_structure_identity",
+      "set_level_mathematics",
+      "zfc_interpretation",
+      "hundred_theorems_completed"
+    ]
+  },
+  {
+    "file": "UniversalEnvelopingAlgebra.lean",
+    "filename": "UniversalEnvelopingAlgebra.lean",
+    "theorem_count": 10,
+    "sorry_count": 31,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "universal_property",
+      "pbw_theorem",
+      "adjointAction_restricts_to_ad",
+      "exists_basis_orthogonal",
+      "exists_dual_basis",
+      "casimir_in_center",
+      "center_isomorphism_symmetric_invariants",
+      "harish_chandra_isomorphism",
+      "central_character_same_iff_weyl_conjugate",
+      "verma_universal_property"
+    ]
+  },
+  {
+    "file": "UrysohnLemma.lean",
+    "filename": "UrysohnLemma.lean",
+    "theorem_count": 6,
+    "sorry_count": 23,
+    "category": "C",
+    "domain": "拓扑",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "urysohn_lemma",
+      "tietze_extension",
+      "urysohn_metrization",
+      "stone_weierstrass",
+      "partition_of_unity",
+      "exists_urysohn_type"
+    ]
+  },
+  {
+    "file": "VertexOperatorAlgebras.lean",
+    "filename": "VertexOperatorAlgebras.lean",
+    "theorem_count": 6,
+    "sorry_count": 28,
+    "category": "C",
+    "domain": "Algebra",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "borcherds_identity",
+      "lattice_voa_construction",
+      "modular_tensor_category",
+      "monster_voa_construction",
+      "monstrous_moonshine",
+      "c2_cofinite_implies_rational"
+    ]
+  },
+  {
+    "file": "WaveEquation.lean",
+    "filename": "WaveEquation.lean",
+    "theorem_count": 8,
+    "sorry_count": 13,
+    "category": "C",
+    "domain": "微分方程",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "dalembert_satisfies_wave_1d",
+      "kirchhoff_satisfies_wave_3d",
+      "euler_poisson_darboux",
+      "energy_conservation",
+      "finite_propagation_speed",
+      "huygens_principle_odd",
+      "wave_uniqueness",
+      "wave_decay"
+    ]
+  },
+  {
+    "file": "WeakSolution.lean",
+    "filename": "WeakSolution.lean",
+    "theorem_count": 8,
+    "sorry_count": 10,
+    "category": "C",
+    "domain": "微分方程",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "garding_inequality",
+      "lax_milgram",
+      "dirichlet_weak_solution_exists",
+      "energy_estimate",
+      "galerkin_convergence",
+      "weak_solution_regularity",
+      "minty_browder",
+      "direct_method"
+    ]
+  },
+  {
+    "file": "WeilConjectures.lean",
+    "filename": "WeilConjectures.lean",
+    "theorem_count": 10,
+    "sorry_count": 27,
+    "category": "C",
+    "domain": "数论",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "weil_conjecture_rationality",
+      "dwork_rationality",
+      "etale_cohomology_finite_dimensional",
+      "lefschetz_trace_formula",
+      "weil_conjecture_functional_equation",
+      "deligne_riemann_hypothesis",
+      "weil_conjecture_betti_numbers",
+      "hasse_weil_bound",
+      "ramanujan_petersson_conjecture",
+      "function_field_langlands"
+    ]
+  },
+  {
+    "file": "YangMillsTheory.lean",
+    "filename": "YangMillsTheory.lean",
+    "theorem_count": 4,
+    "sorry_count": 35,
+    "category": "C",
+    "domain": "物理/其他应用",
+    "mathlib_refs": [],
+    "theorem_names": [
+      "bianchi_identity",
+      "self_dual_implies_yang_mills",
+      "atiyah_ward_correspondence",
+      "adhm_construction"
+    ]
+  },
+  {
+    "file": "YoungInequality.lean",
+    "filename": "YoungInequality.lean",
+    "theorem_count": 7,
+    "sorry_count": 3,
+    "category": "B",
+    "domain": "分析",
+    "mathlib_refs": [
+      "Mathlib.Analysis.MeanInequalities",
+      "Mathlib.Data.Real.ConjExponents"
+    ],
+    "theorem_names": [
+      "conjugate_exponents_iff",
+      "young_inequality",
+      "young_inequality_weighted",
+      "young_convolution_inequality",
+      "young_discrete_convolution",
+      "young_inequality_equality_iff",
+      "young_inequality_general"
+    ]
+  },
+  {
+    "file": "ZornsLemma.lean",
+    "filename": "ZornsLemma.lean",
+    "theorem_count": 7,
+    "sorry_count": 7,
+    "category": "C",
+    "domain": "逻辑与基础",
+    "mathlib_refs": [
+      "Mathlib.Order.Zorn"
+    ],
+    "theorem_names": [
+      "zorn_lemma",
+      "AC_implies_Zorn",
+      "Zorn_implies_AC",
+      "well_ordering_theorem",
+      "vector_space_has_basis",
+      "ideal_contained_in_maximal",
+      "transfinite_recursion"
+    ]
+  }
+]

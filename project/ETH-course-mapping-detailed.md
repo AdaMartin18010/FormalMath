@@ -58,11 +58,11 @@ processed_at: '2026-04-05'
 
 | 课程 | ETH 课程代码 | 学期 | 学分 | 教材倾向 |
 |------|-------------|------|------|----------|
-| 交换代数 | 401-XXXX（模块课程） | 秋季/春季 | 8 ECTS | Atiyah–Macdonald, *Introduction to Commutative Algebra* |
-| 代数几何 I | 401-3531-00L | 秋季 | 8 ECTS | Hartshorne Ch. I–II; Vakil FOAG |
-| 代数几何 II | 401-3532-00L | 春季 | 8 ECTS | Hartshorne Ch. III–IV; Liu |
-| 代数数论 | 401-4145-21L / 401-4146-21L | 秋+春 | 8+8 ECTS | Neukirch, *Algebraic Number Theory* |
-| 泛函分析 | 401-3461-00L | 全年 | 10 ECTS | Brezis, *Functional Analysis*; Rudin |
+| [交换代数](../docs/02-代数结构/) | 401-XXXX（模块课程） | 秋季/春季 | 8 ECTS | Atiyah–Macdonald, *Introduction to [Commutative Algebra](../docs/02-代数结构/)* |
+| [代数几何](../docs/13-代数几何/) I | 401-3531-00L | 秋季 | 8 ECTS | Hartshorne Ch. I–II; Vakil FOAG |
+| [代数几何](../docs/13-代数几何/) II | 401-3532-00L | 春季 | 8 ECTS | Hartshorne Ch. III–IV; Liu |
+| [代数数论](../docs/05-数论/) | 401-4145-21L / 401-4146-21L | 秋+春 | 8+8 ECTS | Neukirch, *[Algebraic [Number Theory](../docs/05-数论/)](../docs/05-数论/)* |
+| [泛函分析](../docs/03-分析学/) | 401-3461-00L | 全年 | 10 ECTS | Brezis, *[Functional Analysis](../docs/03-分析学/)*; Rudin |
 
 **标注说明**：
 
@@ -248,11 +248,11 @@ processed_at: '2026-04-05'
 
 | 课程 | ETH Zurich | MIT | Harvard | Princeton |
 |------|------------|-----|---------|-----------|
-| **交换代数** | 德式严格，维数理论强 | 18.705，Atiyah–Macdonald | Math 221 | MAT 447 |
-| **代数几何 I** | 苏黎世传统，Hartshorne | 18.725/726，Vakil FOAG | **Math 232ar** | MAT 416 (Kollár) |
-| **代数几何 II** | 凝聚层上同调、Serre 对偶 | 18.726 | **Math 232br** | MAT 416 (Kollár) |
-| **代数数论** | 类域论传统强 | 18.782/783 | Math 223 | MAT 419 |
-| **泛函分析** | 谱理论、算子代数 | 18.102 | Math 212 | MAT 425 |
+| **[交换代数](../docs/02-代数结构/)** | 德式严格，维数理论强 | 18.705，Atiyah–Macdonald | Math 221 | MAT 447 |
+| **[代数几何](../docs/13-代数几何/) I** | 苏黎世传统，Hartshorne | 18.725/726，Vakil FOAG | **Math 232ar** | MAT 416 (Kollár) |
+| **[代数几何](../docs/13-代数几何/) II** | 凝聚层上同调、Serre 对偶 | 18.726 | **Math 232br** | MAT 416 (Kollár) |
+| **[代数数论](../docs/05-数论/)** | 类域论传统强 | 18.782/783 | Math 223 | MAT 419 |
+| **[泛函分析](../docs/03-分析学/)** | 谱理论、算子代数 | 18.102 | Math 212 | MAT 425 |
 
 **ETH 与 FormalMath 总体对应度**：约 85%（代数几何 I/II 因曲面分类等高级主题略低，其余课程对应度 88–95%）。
 
@@ -269,11 +269,11 @@ processed_at: '2026-04-05'
 
 | 教材 | 当前版本/推荐章节 | 状态 |
 |------|------------------|------|
-| Hartshorne, *Algebraic Geometry* | Ch. I–IV | ✅ 经典标准 |
+| Hartshorne, *[Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/)* | Ch. I–IV | ✅ 经典标准 |
 | Vakil, *FOAG* | **Oct 21, 2025** | ✅ 已对齐 |
-| Atiyah–Macdonald, *Introduction to Commutative Algebra* | 全本 | ✅ 经典标准 |
-| Neukirch, *Algebraic Number Theory* | 全本 | ✅ 经典标准 |
-| Brezis, *Functional Analysis* | 全本 | ✅ 经典标准 |
+| Atiyah–Macdonald, *Introduction to [Commutative Algebra](../docs/02-代数结构/)* | 全本 | ✅ 经典标准 |
+| Neukirch, *[Algebraic [Number Theory](../docs/05-数论/)](../docs/05-数论/)* | 全本 | ✅ 经典标准 |
+| Brezis, *[Functional Analysis](../docs/03-分析学/)* | 全本 | ✅ 经典标准 |
 
 ### 版本记录
 

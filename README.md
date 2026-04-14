@@ -12,7 +12,7 @@ processed_at: '2026-04-08'
 [![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=deploy)](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml)
 [![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=security)](https://github.com/formalmath/formalmath/actions/workflows/security.yml)
 [![完成度](https://img.shields.io/badge/完成度-100%25-brightgreen)](./00-FormalMath项目最终验收报告.md)
-[![文档数](https://img.shields.io/badge/文档-8200%2B-blue)](./docs/00-项目统计总览.md)
+[![文档数](https://img.shields.io/badge/文档-9200%2B-blue)](./docs/00-项目统计总览-v2.md)
 [![数学家](https://img.shields.io/badge/数学家-62位-orange)](./数学家理念体系/)
 [![定理数](https://img.shields.io/badge/Lean4定理-62个-9cf)](./docs/09-形式化证明/)
 [![课程映射](https://img.shields.io/badge/国际课程-121%2B门-purple)](./project/00-国际课程与机构对齐对照表-2026年4月.md)

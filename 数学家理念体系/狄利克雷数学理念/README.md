@@ -156,3 +156,16 @@ processed_at: '2026-04-05'
 
 **最后更新**: 2025年12月11日
 **维护者**: FormalMath项目组
+
+
+## 相关链接
+
+- [03-分析学](../../docs/03-分析学/)
+- [05-数论](../../docs/05-数论/)
+
+### 相关概念
+- [README](../../concept/00-归档/03-view文件夹/view/README.md)
+
+- [狄利克雷主页面](README.md)
+- [FormalMath 总索引](../../INDEX.md)
+- [核心概念库](../../concept/)

@@ -78,8 +78,8 @@ Harvard数学系2025-2026学年课程与FormalMath项目内容的对应关系非
 
 | Harvard课程 | 课程主题 | FormalMath对应 | 对应度 |
 |-------------|----------|----------------|--------|
-| **Math 232ar** | Algebraic Geometry: Curves, Surfaces, and Varieties | 02-概形理论（射影概形、代数曲线） | 95% |
-| **Math 232br** | Algebraic Geometry: Coherent Sheaves and Cohomology | **03-上同调理论/25-上同调与凝聚层上同调** | **98%** |
+| **Math 232ar** | [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/): Curves, Surfaces, and Varieties | 02-概形理论（射影概形、代数曲线） | 95% |
+| **Math 232br** | [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/): Coherent Sheaves and Cohomology | **03-上同调理论/25-上同调与凝聚层上同调** | **98%** |
 
 这一发现证明了：
 
@@ -191,7 +191,7 @@ Harvard数学系2025-2026学年课程与FormalMath项目内容的对应关系非
 | 项目 | 内容 |
 |------|------|
 | **课程信息** | Math 131, Fall 2025 |
-| **先修要求** | 点集拓扑、抽象代数 |
+| **先修要求** | 点集拓扑、[抽象代数](../docs/02-代数结构/) |
 | **对应项目** | `docs/05-拓扑学/02-代数拓扑.md` 及 `03-代数拓扑核心-深度扩展版.md` |
 
 **详细映射表**：
@@ -212,8 +212,8 @@ Harvard数学系2025-2026学年课程与FormalMath项目内容的对应关系非
 
 | 项目 | 内容 |
 |------|------|
-| **课程信息** | Math 132 (微分几何), Math 136 (几何流形) |
-| **先修要求** | 多元微积分、线性代数 |
+| **课程信息** | Math 132 ([微分几何](../docs/04-几何与拓扑/)), Math 136 (几何流形) |
+| **先修要求** | 多元微积分、[线性代数](../docs/02-代数结构/) |
 | **对应项目** | `docs/14-微分几何/` |
 
 **详细映射表**：
@@ -357,7 +357,7 @@ Harvard数学系2025-2026学年课程与FormalMath项目内容的对应关系非
 | 项目 | 内容 |
 |------|------|
 | **课程信息** | Math 229, 研究生 |
-| **先修要求** | 复分析、Fourier分析 |
+| **先修要求** | [复分析](../docs/03-分析学/)、[Fourier分析](../docs/03-分析学/) |
 | **对应项目** | `docs/06-数论/03-解析数论.md` 及增强版 |
 
 **详细映射表**：
@@ -639,24 +639,24 @@ Harvard数学系特别重视学生的**说明性数学写作（Expository Writin
 
 | Harvard课程 | Princeton对应 | MIT对应 | ETH对应 | 对应程度 |
 |-------------|---------------|---------|---------|----------|
-| Math 114 Real Analysis | MAT 215 | 18.100 | 401-1261/1262 | ⭐⭐⭐⭐⭐ |
-| Math 113 Complex Analysis | MAT 330/335 | 18.112 | 401-3302 | ⭐⭐⭐⭐⭐ |
+| Math 114 [Real Analysis](../docs/03-分析学/) | MAT 215 | 18.100 | 401-1261/1262 | ⭐⭐⭐⭐⭐ |
+| Math 113 [Complex Analysis](../docs/03-分析学/) | MAT 330/335 | 18.112 | 401-3302 | ⭐⭐⭐⭐⭐ |
 | Math 122/123 Algebra | MAT 345/346 | 18.704/715 | 401-2284/2285 | ⭐⭐⭐⭐⭐ |
-| Math 131 Algebraic Topology | MAT 365 | 18.905 | 401-3001 | ⭐⭐⭐⭐⭐ |
-| Math 132/136 Diff Geometry | MAT 355 | 18.950 | 401-3002 | ⭐⭐⭐⭐⭐ |
-| Math 137 Algebraic Geometry | MAT 416 (部分) | 18.721/725 | 401-3531 | ⭐⭐⭐⭐ |
-| Math 221 Commutative Algebra | MAT 447 | 18.705 | 交换代数模块 | ⭐⭐⭐⭐⭐ |
+| Math 131 [Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/) | MAT 365 | 18.905 | 401-3001 | ⭐⭐⭐⭐⭐ |
+| Math 132/136 Diff [Geometry](../docs/04-几何与拓扑/) | MAT 355 | 18.950 | 401-3002 | ⭐⭐⭐⭐⭐ |
+| Math 137 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) | MAT 416 (部分) | 18.721/725 | 401-3531 | ⭐⭐⭐⭐ |
+| Math 221 [Commutative Algebra](../docs/02-代数结构/) | MAT 447 | 18.705 | 交换代数模块 | ⭐⭐⭐⭐⭐ |
 | **Math 232ar** | **MAT 416** | **18.725** | **401-3531** | ⭐⭐⭐⭐⭐ |
 | **Math 232br** | **MAT 416 (II)** | **18.726** | **401-3532** | ⭐⭐⭐⭐⭐ |
-| Math 223 Number Theory | MAT 419 | 18.782 | 401-4145/4146 | ⭐⭐⭐⭐⭐ |
-| Math 230 Differential Geometry | MAT 455 | - | 高级微分几何 | ⭐⭐⭐⭐ |
+| Math 223 [Number Theory](../docs/05-数论/) | MAT 419 | 18.782 | 401-4145/4146 | ⭐⭐⭐⭐⭐ |
+| Math 230 [Differential [Geometry](../docs/04-几何与拓扑/)](../docs/04-几何与拓扑/) | MAT 455 | - | 高级微分几何 | ⭐⭐⭐⭐ |
 
 ### Harvard与Princeton对比
 
 | 维度 | Harvard | Princeton |
 |------|---------|-----------|
 | **入门分析** | Math 114 (说明性写作导向) | MAT 215 (纯证明导向) |
-| **代数几何** | Math 232ar/br (系统全面) | MAT 416 (Kollar双有理几何) |
+| **[代数几何](../docs/13-代数几何/)** | Math 232ar/br (系统全面) | MAT 416 (Kollar双有理几何) |
 | **教学风格** | 说明性论文写作 | 严格形式化 |
 | **课程分级** | 100/200 level | 200/300/400 level |
 | **与FormalMath对应** | **98%** (232br) | 75% (MAT 416) |
@@ -667,18 +667,18 @@ Harvard数学系特别重视学生的**说明性数学写作（Expository Writin
 
 | Harvard课程 | ETH对应课程 | 对应程度 | 备注 |
 |-------------|-------------|----------|------|
-| Math 114 Real Analysis | 401-1261/1262 Analysis I/II | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| Math 113 Complex Analysis | 401-3302 Complex Analysis | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| Math 122/123 Algebra | 401-2284/2285 Algebra I/II | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| Math 131 Algebraic Topology | 401-3001 Algebraic Topology | ⭐⭐⭐⭐⭐ | **苏黎世强项** |
-| Math 132/136 Differential Geometry | 401-3002 Differential Geometry | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| Math 137 Algebraic Geometry | 401-3531 Algebraic Geometry I (部分) | ⭐⭐⭐⭐ | ETH更深入 |
-| Math 221 Commutative Algebra | 交换代数模块 | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| **Math 232ar** | **401-3531 Algebraic Geometry I** | ⭐⭐⭐⭐⭐ | **完美对应** |
-| **Math 232br** | **401-3532 Algebraic Geometry II** | ⭐⭐⭐⭐⭐ | **凝聚层上同调对应** |
-| Math 223a/b Number Theory | 401-4145/4146 Number Theory I/II | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| Math 230a/b Differential Geometry | 高级微分几何 | ⭐⭐⭐⭐ | ETH Riemann几何深入 |
-| Math 231a/b Algebraic Topology | 高级代数拓扑 | ⭐⭐⭐⭐⭐ | 同调技术深入 |
+| Math 114 [Real Analysis](../docs/03-分析学/) | 401-1261/1262 Analysis I/II | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| Math 113 [Complex Analysis](../docs/03-分析学/) | 401-3302 [Complex Analysis](../docs/03-分析学/) | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| Math 122/123 Algebra | 401-2284/2285 [Algebra I](../docs/02-代数结构/)/II | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| Math 131 [Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/) | 401-3001 [Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/) | ⭐⭐⭐⭐⭐ | **苏黎世强项** |
+| Math 132/136 [Differential [Geometry](../docs/04-几何与拓扑/)](../docs/04-几何与拓扑/) | 401-3002 [Differential [Geometry](../docs/04-几何与拓扑/)](../docs/04-几何与拓扑/) | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| Math 137 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) | 401-3531 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I (部分) | ⭐⭐⭐⭐ | ETH更深入 |
+| Math 221 [Commutative Algebra](../docs/02-代数结构/) | 交换代数模块 | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| **Math 232ar** | **401-3531 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I** | ⭐⭐⭐⭐⭐ | **完美对应** |
+| **Math 232br** | **401-3532 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) II** | ⭐⭐⭐⭐⭐ | **凝聚层上同调对应** |
+| Math 223a/b [Number Theory](../docs/05-数论/) | 401-4145/4146 [Number Theory](../docs/05-数论/) I/II | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| Math 230a/b [Differential [Geometry](../docs/04-几何与拓扑/)](../docs/04-几何与拓扑/) | 高级微分几何 | ⭐⭐⭐⭐ | ETH Riemann几何深入 |
+| Math 231a/b [Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/) | 高级代数拓扑 | ⭐⭐⭐⭐⭐ | 同调技术深入 |
 
 ### 🎯 关键发现：Harvard 232br = ETH 401-3532 = FormalMath格洛腾迪克体系
 
@@ -686,7 +686,7 @@ Harvard数学系特别重视学生的**说明性数学写作（Expository Writin
 
 | Harvard | ETH Zurich | FormalMath |
 |---------|------------|------------|
-| Math 232br: Coherent Sheaves and Cohomology | 401-3532: Algebraic Geometry II | 格洛腾迪克/03-上同调理论/ |
+| Math 232br: Coherent Sheaves and Cohomology | 401-3532: [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) II | 格洛腾迪克/03-上同调理论/ |
 | 凝聚层上同调 | 凝聚层上同调 | 层上同调基础 |
 | Grothendieck对偶 | Serre对偶/Grothendieck对偶 | Grothendieck对偶 |
 | Riemann-Roch | Riemann-Roch | Riemann-Roch定理 |
@@ -701,11 +701,11 @@ Harvard数学系特别重视学生的**说明性数学写作（Expository Writin
 | 维度 | Harvard | ETH Zurich |
 |------|---------|------------|
 | **教学语言** | 英语 | 德语/英语 |
-| **代数几何** | Math 232ar/br，FOAG导向 | 苏黎世学派，Hartshorne导向 |
+| **[代数几何](../docs/13-代数几何/)** | Math 232ar/br，FOAG导向 | 苏黎世学派，Hartshorne导向 |
 | **说明性写作** | 强调Expository Writing | 强调严格证明 |
 | **课程结构** | 100/200 level分级 | 基础/进阶/高级模块化 |
-| **代数拓扑** | 几何直观导向 | 同调代数严格导向 |
-| **数论** | 算术几何、解析数论 | 代数数论、类域论 |
+| **[代数拓扑](../docs/12-代数拓扑/)** | 几何直观导向 | 同调代数严格导向 |
+| **[数论](../docs/05-数论/)** | 算术几何、[解析数论](../docs/05-数论/) | [代数数论](../docs/05-数论/)、类域论 |
 
 ### 三校联合学习路径（Harvard + MIT + ETH）
 
@@ -761,15 +761,15 @@ Harvard数学系特别重视学生的**说明性数学写作（Expository Writin
 
 | 课程领域 | MIT覆盖 | Harvard覆盖 | ETH覆盖 | Princeton覆盖 | 综合评估 |
 |----------|---------|-------------|---------|---------------|----------|
-| 线性代数 | 90% | 90% | 90% | 92% | ⭐⭐⭐⭐⭐ |
-| 实分析 | 88% | 88% | 90% | 88% | ⭐⭐⭐⭐⭐ |
-| 复分析 | 85% | 88% | 88% | 85% | ⭐⭐⭐⭐⭐ |
-| 抽象代数 | 92% | 90% | 90% | 90% | ⭐⭐⭐⭐⭐ |
-| 交换代数 | 82% | 85% | 85% | 85% | ⭐⭐⭐⭐⭐ |
-| 代数拓扑 | 85% | 88% | 88% | 85% | ⭐⭐⭐⭐⭐ |
-| 微分几何 | 80% | 82% | 82% | 78% | ⭐⭐⭐⭐⭐ |
-| **代数几何** | 75% | **98%** | 78% | 75% | ⭐⭐⭐⭐⭐ |
-| 数论 | 80% | 85% | 80% | 70% | ⭐⭐⭐⭐⭐ |
+| [线性代数](../docs/02-代数结构/) | 90% | 90% | 90% | 92% | ⭐⭐⭐⭐⭐ |
+| [实分析](../docs/03-分析学/) | 88% | 88% | 90% | 88% | ⭐⭐⭐⭐⭐ |
+| [复分析](../docs/03-分析学/) | 85% | 88% | 88% | 85% | ⭐⭐⭐⭐⭐ |
+| [抽象代数](../docs/02-代数结构/) | 92% | 90% | 90% | 90% | ⭐⭐⭐⭐⭐ |
+| [交换代数](../docs/02-代数结构/) | 82% | 85% | 85% | 85% | ⭐⭐⭐⭐⭐ |
+| [代数拓扑](../docs/12-代数拓扑/) | 85% | 88% | 88% | 85% | ⭐⭐⭐⭐⭐ |
+| [微分几何](../docs/04-几何与拓扑/) | 80% | 82% | 82% | 78% | ⭐⭐⭐⭐⭐ |
+| **[代数几何](../docs/13-代数几何/)** | 75% | **98%** | 78% | 75% | ⭐⭐⭐⭐⭐ |
+| [数论](../docs/05-数论/) | 80% | 85% | 80% | 70% | ⭐⭐⭐⭐⭐ |
 
 **结论**: FormalMath内容已达到国际顶尖大学研究生教学标准，四校覆盖度均在70%以上。
 

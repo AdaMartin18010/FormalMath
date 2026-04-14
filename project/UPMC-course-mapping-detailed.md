@@ -61,7 +61,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Analyse Réelle I (Real Analysis I) |
+| **课程名称** | Analyse Réelle I ([Real Analysis](../docs/03-分析学/) I) |
 | **学分** | 6 ECTS |
 | **先修要求** | 无 |
 | **UPMC教材** | Gourdon, *Analyse*; Ramis, *Cours de mathématiques pures et appliquées* |
@@ -88,10 +88,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algèbre Linéaire I (Linear Algebra I) |
+| **课程名称** | Algèbre Linéaire I ([Linear Algebra](../docs/02-代数结构/) I) |
 | **学分** | 6 ECTS |
 | **先修要求** | 无 |
-| **UPMC教材** | Godement, *Cours d'algèbre*; Friedberg等, *Linear Algebra* |
+| **UPMC教材** | Godement, *Cours d'algèbre*; Friedberg等, *[Linear Algebra](../docs/02-代数结构/)* |
 | **学期** | L1 S1 (秋季) |
 | **覆盖度** | 🟢 完整覆盖 (92%) |
 
@@ -115,7 +115,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Théorie des Ensembles (Set Theory) |
+| **课程名称** | Théorie des Ensembles ([Set Theory](../docs/01-基础数学/)) |
 | **学分** | 3 ECTS |
 | **先修要求** | 无 |
 | **UPMC教材** | Bourbaki, *Théorie des Ensembles* |
@@ -137,7 +137,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Analyse Réelle II (Real Analysis II) |
+| **课程名称** | Analyse Réelle II ([Real Analysis](../docs/03-分析学/) II) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM101 |
 | **学期** | L1 S2 (春季) |
@@ -158,7 +158,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algèbre Linéaire II (Linear Algebra II) |
+| **课程名称** | Algèbre Linéaire II ([Linear Algebra](../docs/02-代数结构/) II) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM102 |
 | **学期** | L1 S2 (春季) |
@@ -184,7 +184,7 @@ processed_at: '2026-04-05'
 | **课程名称** | Algèbre Générale (General Algebra) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM105 |
-| **UPMC教材** | Artin, *Algebra*; Dummit & Foote, *Abstract Algebra* |
+| **UPMC教材** | Artin, *Algebra*; Dummit & Foote, *[Abstract Algebra](../docs/02-代数结构/)* |
 | **学期** | L2 S1 (秋季) |
 | **覆盖度** | 🟢 完整覆盖 (92%) |
 
@@ -203,10 +203,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Topologie (Topology) |
+| **课程名称** | Topologie ([Topology](../docs/04-几何与拓扑/)) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM104 |
-| **UPMC教材** | Gamelin, *Introduction to Topology*; Munkres, *Topology* |
+| **UPMC教材** | Gamelin, *Introduction to [Topology](../docs/04-几何与拓扑/)*; Munkres, *[Topology](../docs/04-几何与拓扑/)* |
 | **学期** | L2 S1 (秋季) |
 | **覆盖度** | 🟢 完整覆盖 (90%) |
 
@@ -230,7 +230,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Calcul Différentiel (Differential Calculus) |
+| **课程名称** | Calcul Différentiel (Differential [Calculus](../docs/03-分析学/)) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM201, LM202 |
 | **学期** | L2 S2 (春季) |
@@ -254,7 +254,7 @@ processed_at: '2026-04-05'
 | **课程名称** | Intégration (Integration Theory) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM203 |
-| **UPMC教材** | Mazet, *Intégration*; Rudin, *Real and Complex Analysis* |
+| **UPMC教材** | Mazet, *Intégration*; Rudin, *Real and [Complex Analysis](../docs/03-分析学/)* |
 | **学期** | L2 S2 (春季) |
 | **覆盖度** | 🟢 完整覆盖 (88%) |
 
@@ -262,7 +262,7 @@ processed_at: '2026-04-05'
 
 | 主题 | UPMC内容 | FormalMath文档 | 对齐度 |
 |------|----------|----------------|--------|
-| 测度论 | σ-代数, 测度 | `docs/03-分析学/01-实分析/02-Lebesgue积分-深度扩展版.md` | 90% |
+| [测度论](../docs/03-分析学/) | σ-代数, 测度 | `docs/03-分析学/01-实分析/02-Lebesgue积分-深度扩展版.md` | 90% |
 | Lebesgue积分 | 可测函数, 积分构造 | `docs/03-分析学/01-实分析/02-Lebesgue积分-深度扩展版.md` | 90% |
 | 收敛定理 | 单调收敛, 控制收敛 | `docs/03-分析学/01-实分析/02-Lebesgue积分-深度扩展版.md` | 88% |
 | L^p空间 | 范数, 完备性 | `docs/03-分析学/01-实分析/02-Lebesgue积分-深度扩展版.md` | 85% |
@@ -280,7 +280,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Analyse Complexe (Complex Analysis) |
+| **课程名称** | Analyse Complexe ([Complex Analysis](../docs/03-分析学/)) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM203, LM204 |
 | **学期** | L3 S1 (秋季) |
@@ -301,10 +301,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algèbre Commutative (Commutative Algebra) |
+| **课程名称** | Algèbre Commutative ([Commutative Algebra](../docs/02-代数结构/)) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM201 |
-| **UPMC教材** | Atiyah-Macdonald, *Introduction to Commutative Algebra* |
+| **UPMC教材** | Atiyah-Macdonald, *Introduction to [Commutative Algebra](../docs/02-代数结构/)* |
 | **学期** | L3 S1 (秋季) |
 | **覆盖度** | 🟢 完整覆盖 (85%) |
 
@@ -313,7 +313,7 @@ processed_at: '2026-04-05'
 | 主题 | UPMC内容 | FormalMath文档 | 对齐度 |
 |------|----------|----------------|--------|
 | 局部化 | 分式环, 局部环 | `docs/02-代数结构/02-核心理论/交换代数/01-交换代数核心-深度扩展版.md` | 90% |
-| 模论 | 模, 张量积 | `docs/02-代数结构/02-核心理论/模论/01-模论-国际标准深度扩展版.md` | 88% |
+| [模论](../docs/02-代数结构/) | 模, 张量积 | `docs/02-代数结构/02-核心理论/模论/01-模论-国际标准深度扩展版.md` | 88% |
 | Noether环 | ACC, 准素分解 | `docs/02-代数结构/02-核心理论/交换代数/04-Noether环深入-深度扩展版.md` | 85% |
 | 整扩张 | 整闭包, 正规化 | `docs/02-代数结构/02-核心理论/交换代数/01-交换代数核心-深度扩展版.md` | 85% |
 
@@ -323,7 +323,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Géométrie Différentielle (Differential Geometry) |
+| **课程名称** | Géométrie Différentielle ([Differential [Geometry](../docs/04-几何与拓扑/)](../docs/04-几何与拓扑/)) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM203 |
 | **学期** | L3 S2 (春季) |
@@ -344,7 +344,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Théorie de Galois (Galois Theory) |
+| **课程名称** | Théorie de Galois ([Galois Theory](../docs/02-代数结构/)) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM302 |
 | **学期** | L3 S2 (春季) |
@@ -369,10 +369,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Topologie Algébrique (Algebraic Topology) |
+| **课程名称** | Topologie Algébrique ([Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/)) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM302, LM303 |
-| **UPMC教材** | Hatcher, *Algebraic Topology*; Spanier, *Algebraic Topology* |
+| **UPMC教材** | Hatcher, *[Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/)*; Spanier, *[Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/)* |
 | **学期** | M1 S1 |
 | **覆盖度** | 🟢 完整覆盖 (88%) |
 
@@ -391,10 +391,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Analyse Fonctionnelle (Functional Analysis) |
+| **课程名称** | Analyse Fonctionnelle ([Functional Analysis](../docs/03-分析学/)) |
 | **学分** | 6 ECTS |
 | **先修要求** | LM204 |
-| **UPMC教材** | Brezis, *Analyse fonctionnelle*; Rudin, *Functional Analysis* |
+| **UPMC教材** | Brezis, *Analyse fonctionnelle*; Rudin, *[Functional Analysis](../docs/03-分析学/)* |
 | **学期** | M1 S1 |
 | **覆盖度** | 🟢 完整覆盖 (85%) |
 
@@ -418,10 +418,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Géométrie Algébrique I (Algebraic Geometry I) |
+| **课程名称** | Géométrie Algébrique I ([Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I) |
 | **学分** | 6 ECTS |
 | **先修要求** | MM101 |
-| **UPMC教材** | Hartshorne, *Algebraic Geometry*; Liu, *Algebraic Geometry and Arithmetic Curves* |
+| **UPMC教材** | Hartshorne, *[Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/)*; Liu, *[Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) and Arithmetic Curves* |
 | **学期** | M1 S2 |
 | **覆盖度** | 🟡 部分覆盖 (78%) |
 
@@ -447,7 +447,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Théorie des Nombres (Number Theory) |
+| **课程名称** | Théorie des Nombres ([Number Theory](../docs/05-数论/)) |
 | **学分** | 6 ECTS |
 | **先修要求** | MM103 |
 | **学期** | M2 S1 |
@@ -468,7 +468,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Géométrie Algébrique II (Algebraic Geometry II) |
+| **课程名称** | Géométrie Algébrique II ([Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) II) |
 | **学分** | 6 ECTS |
 | **先修要求** | MM103 |
 | **学期** | M2 S1 |
@@ -489,7 +489,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Représentations et Théorie de Lie (Representation Theory and Lie Theory) |
+| **课程名称** | Représentations et Théorie de Lie ([Representation Theory](../docs/02-代数结构/) and Lie Theory) |
 | **学分** | 6 ECTS |
 | **先修要求** | MM101 |
 | **学期** | M2 S2 |
@@ -499,9 +499,9 @@ processed_at: '2026-04-05'
 
 | 主题 | UPMC内容 | FormalMath文档 | 对齐度 |
 |------|----------|----------------|--------|
-| 李代数 | 结构理论, 分类 | `docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md` | 90% |
+| [李代数](../docs/02-代数结构/) | 结构理论, 分类 | `docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md` | 90% |
 | 根系 | Cartan矩阵, Dynkin图 | `docs/02-代数结构/02-核心理论/李代数/05-根系理论-深度扩展版.md` | 88% |
-| 表示论 | 最高权, Weyl特征标 | `docs/02-代数结构/02-核心理论/李代数/07-有限维表示-深度扩展版.md` | 85% |
+| [表示论](../docs/02-代数结构/) | 最高权, Weyl特征标 | `docs/02-代数结构/02-核心理论/李代数/07-有限维表示-深度扩展版.md` | 85% |
 | 李群 | 指数映射, 紧致群 | `docs/02-代数结构/03-应用分析/李代数应用/02-李代数应用-数学物理版.md` | 75% |
 
 ---
@@ -512,7 +512,7 @@ processed_at: '2026-04-05'
 
 | 维度 | Bourbaki风格 | FormalMath对应 |
 |------|--------------|----------------|
-| **基础** | 集合论+公理化 | `docs/01-基础数学/ZFC公理体系/` |
+| **基础** | [集合论](../docs/01-基础数学/)+公理化 | `docs/01-基础数学/ZFC公理体系/` |
 | **结构观** | 三大母结构 | `docs/00-概念关联图谱/` |
 | **严格性** | 无图、极严格 | `docs/00-核心概念理解三问/` |
 | **统一性** | 跨分支统一 | `docs/00-跨分支概念映射/` |

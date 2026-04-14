@@ -44,7 +44,7 @@ ETH Zurich Department of Mathematics是世界顶级数学研究中心之一：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Linear Algebra I |
+| **课程名称** | [Linear Algebra](../docs/02-代数结构/) I |
 | **学分** | 7 ECTS |
 | **学期** | 秋季学期（Herbstsemester）|
 | **授课语言** | 德语（Deutsch）|
@@ -76,10 +76,10 @@ Introduction to linear algebra: vector spaces, systems of linear equations, base
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Linear Algebra II |
+| **课程名称** | [Linear Algebra](../docs/02-代数结构/) II |
 | **学分** | 7 ECTS |
 | **学期** | 春季学期（Frühlingssemester）|
-| **先修要求** | Linear Algebra I |
+| **先修要求** | [Linear Algebra](../docs/02-代数结构/) I |
 | **ETH教材** | G. Fischer, *Lineare Algebra*; Halmos, *Finite-Dimensional Vector Spaces* |
 | **覆盖度** | 🟢 完整覆盖 (88%) |
 
@@ -167,10 +167,10 @@ Multidimensional analysis: differential calculus in several variables, implicit 
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebra I |
+| **课程名称** | [Algebra I](../docs/02-代数结构/) |
 | **学分** | 8 ECTS |
 | **学期** | 秋季学期 |
-| **先修要求** | Linear Algebra I/II |
+| **先修要求** | [Linear Algebra](../docs/02-代数结构/) I/II |
 | **ETH教材** | S. Lang, *Algebra*; J. Rotman, *Advanced Modern Algebra* |
 | **覆盖度** | 🟢 完整覆盖 (90%) |
 
@@ -199,10 +199,10 @@ Groups: subgroups, quotient groups, homomorphism theorems, group actions, Sylow 
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebra II |
+| **课程名称** | [Algebra II](../docs/02-代数结构/) |
 | **学分** | 8 ECTS |
 | **学期** | 春季学期 |
-| **先修要求** | Algebra I |
+| **先修要求** | [Algebra I](../docs/02-代数结构/) |
 | **ETH教材** | S. Lang, *Algebra*; M. Artin, *Algebra* |
 | **覆盖度** | 🟢 完整覆盖 (85%) |
 
@@ -220,7 +220,7 @@ Field extensions, algebraic and transcendental elements, finite fields, Galois t
 | 2 | `docs/02-代数结构/02-核心理念/域论/` | 有限域 | 4小时 |
 | 3 | `docs/02-代数结构/02-核心理论/域论/` | Galois理论、Galois群 | 10小时 |
 | 4 | `docs/02-代数结构/02-核心理论/域论/` | 根式可解性 | 6小时 |
-| 5 | `docs/02-代数结构/02-核心理论/模论/01-模论-国际标准深度扩展版.md` | 模论、PID上的模 | 8小时 |
+| 5 | `docs/02-代数结构/02-核心理论/模论/01-模论-国际标准深度扩展版.md` | [模论](../docs/02-代数结构/)、PID上的模 | 8小时 |
 
 ---
 
@@ -228,12 +228,12 @@ Field extensions, algebraic and transcendental elements, finite fields, Galois t
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Complex Analysis |
+| **课程名称** | [Complex Analysis](../docs/03-分析学/) |
 | **学分** | 6 ECTS |
 | **学期** | 秋季学期 |
 | **授课语言** | 英语 |
 | **先修要求** | Analysis I/II |
-| **ETH教材** | Ahlfors, *Complex Analysis*; Stein-Shakarchi, *Complex Analysis* |
+| **ETH教材** | Ahlfors, *[Complex Analysis](../docs/03-分析学/)*; Stein-Shakarchi, *[Complex Analysis](../docs/03-分析学/)* |
 | **覆盖度** | 🟢 完整覆盖 (88%) |
 
 **课程描述（英文原文）**:
@@ -257,12 +257,12 @@ Field extensions, algebraic and transcendental elements, finite fields, Galois t
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Functional Analysis |
+| **课程名称** | [Functional Analysis](../docs/03-分析学/) |
 | **学分** | 10 ECTS |
 | **学期** | 全年课程 |
 | **授课语言** | 德语/英语 |
-| **先修要求** | Analysis I/II, Linear Algebra I/II |
-| **ETH教材** | Haim Brezis, *Functional Analysis*; Rudin, *Functional Analysis* |
+| **先修要求** | Analysis I/II, [Linear Algebra](../docs/02-代数结构/) I/II |
+| **ETH教材** | Haim Brezis, *[Functional Analysis](../docs/03-分析学/)*; Rudin, *[Functional Analysis](../docs/03-分析学/)* |
 | **覆盖度** | 🟢 完整覆盖 (85%) |
 
 **课程描述（德文原文）**:
@@ -291,12 +291,12 @@ Banach spaces, Hilbert spaces, linear operators, uniform boundedness principle, 
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebraic Topology |
+| **课程名称** | [Algebraic Topology](../docs/12-代数拓扑/) |
 | **学分** | 8 ECTS |
 | **学期** | 秋季学期 |
 | **授课语言** | 英语 |
-| **先修要求** | Algebra I/II, Analysis I/II |
-| **ETH教材** | Hatcher, *Algebraic Topology*; Bredon, *Topology and Geometry* |
+| **先修要求** | [Algebra I](../docs/02-代数结构/)/II, Analysis I/II |
+| **ETH教材** | Hatcher, *[Algebraic Topology](../docs/12-代数拓扑/)*; Bredon, *[Topology](../docs/04-几何与拓扑/) and [Geometry](../docs/04-几何与拓扑/)* |
 | **覆盖度** | 🟢 完整覆盖 (88%) |
 | **ETH特色** | 🏆 **苏黎世学派强项** |
 
@@ -320,12 +320,12 @@ Banach spaces, Hilbert spaces, linear operators, uniform boundedness principle, 
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Differential Geometry |
+| **课程名称** | [Differential Geometry](../docs/04-几何与拓扑/) |
 | **学分** | 8 ECTS |
 | **学期** | 春季学期 |
 | **授课语言** | 英语 |
-| **先修要求** | Analysis I/II, Linear Algebra I/II |
-| **ETH教材** | Lee, *Riemannian Manifolds*; do Carmo, *Riemannian Geometry* |
+| **先修要求** | Analysis I/II, [Linear Algebra](../docs/02-代数结构/) I/II |
+| **ETH教材** | Lee, *Riemannian Manifolds*; do Carmo, *[Riemannian [Geometry](../docs/04-几何与拓扑/)](../docs/04-几何与拓扑/)* |
 | **覆盖度** | 🟢 完整覆盖 (82%) |
 
 **课程描述（英文原文）**:
@@ -349,12 +349,12 @@ Banach spaces, Hilbert spaces, linear operators, uniform boundedness principle, 
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebraic Geometry I |
+| **课程名称** | [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I |
 | **学分** | 8 ECTS |
 | **学期** | 秋季学期 |
 | **授课语言** | 英语 |
-| **先修要求** | Algebra I/II, Commutative Algebra |
-| **ETH教材** | Hartshorne, *Algebraic Geometry* Ch. I-II; Vakil, *FOAG* |
+| **先修要求** | [Algebra I](../docs/02-代数结构/)/II, [Commutative Algebra](../docs/02-代数结构/) |
+| **ETH教材** | Hartshorne, *[Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/)* Ch. I-II; Vakil, *FOAG* |
 | **覆盖度** | 🟡 部分覆盖 (78%) |
 | **ETH特色** | 🏆 **苏黎世学派核心课程** |
 
@@ -386,12 +386,12 @@ Banach spaces, Hilbert spaces, linear operators, uniform boundedness principle, 
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebraic Geometry II |
+| **课程名称** | [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) II |
 | **学分** | 8 ECTS |
 | **学期** | 春季学期 |
 | **授课语言** | 英语 |
-| **先修要求** | Algebraic Geometry I |
-| **ETH教材** | Hartshorne, Ch. III-IV; Liu, *Algebraic Geometry and Arithmetic Curves* |
+| **先修要求** | [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I |
+| **ETH教材** | Hartshorne, Ch. III-IV; Liu, *[Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) and Arithmetic Curves* |
 | **覆盖度** | 🟡 部分覆盖 (75%) |
 | **ETH特色** | 🏆 **苏黎世学派核心课程** |
 
@@ -423,12 +423,12 @@ Banach spaces, Hilbert spaces, linear operators, uniform boundedness principle, 
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Number Theory I |
+| **课程名称** | [Number Theory](../docs/05-数论/) I |
 | **学分** | 8 ECTS |
 | **学期** | 秋季学期 |
 | **授课语言** | 德语/英语 |
-| **先修要求** | Algebra I/II |
-| **ETH教材** | Neukirch, *Algebraic Number Theory*; Marcus, *Number Fields* |
+| **先修要求** | [Algebra I](../docs/02-代数结构/)/II |
+| **ETH教材** | Neukirch, *[Algebraic [Number Theory](../docs/05-数论/)](../docs/05-数论/)*; Marcus, *Number Fields* |
 | **覆盖度** | 🟢 完整覆盖 (85%) |
 | **ETH特色** | 🏆 **苏黎世数论传统** |
 
@@ -455,12 +455,12 @@ Algebraic number fields, rings of integers, discriminant, norm, Dedekind domains
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Number Theory II |
+| **课程名称** | [Number Theory](../docs/05-数论/) II |
 | **学分** | 8 ECTS |
 | **学期** | 春季学期 |
 | **授课语言** | 德语/英语 |
-| **先修要求** | Number Theory I |
-| **ETH教材** | Neukirch, *Algebraic Number Theory*; Serre, *Local Fields* |
+| **先修要求** | [Number Theory](../docs/05-数论/) I |
+| **ETH教材** | Neukirch, *[Algebraic [Number Theory](../docs/05-数论/)](../docs/05-数论/)*; Serre, *Local Fields* |
 | **覆盖度** | 🟡 部分覆盖 (72%) |
 
 **课程描述（德文原文）**:
@@ -492,20 +492,20 @@ Local fields, p-adic numbers, valuation theory, ramification theory, zeta functi
 
 | 课程代码 | 课程名称 | 覆盖度 | 状态 | 苏黎世特色 |
 |----------|----------|--------|------|-----------|
-| 401-1151-00L | Linear Algebra I | 90% | 🟢 | 基础扎实 |
-| 401-1152-00L | Linear Algebra II | 88% | 🟢 | 基础扎实 |
+| 401-1151-00L | [Linear Algebra](../docs/02-代数结构/) I | 90% | 🟢 | 基础扎实 |
+| 401-1152-00L | [Linear Algebra](../docs/02-代数结构/) II | 88% | 🟢 | 基础扎实 |
 | 401-1261-07L | Analysis I | 92% | 🟢 | 分析严格 |
 | 401-1262-07L | Analysis II | 85% | 🟢 | 多元分析 |
-| 401-2284-00L | Algebra I | 90% | 🟢 | 代数基础 |
-| 401-2285-00L | Algebra II | 85% | 🟢 | Galois理论 |
-| 401-3302-71L | Complex Analysis | 88% | 🟢 | 经典分析 |
-| 401-3461-00L | Functional Analysis | 85% | 🟢 | 泛函基础 |
-| 401-3001-61L | Algebraic Topology | 88% | 🟢 | 🏆 强项 |
-| 401-3002-62L | Differential Geometry | 82% | 🟢 | 几何传统 |
-| 401-3531-00L | Algebraic Geometry I | 78% | 🟡 | 🏆 强项 |
-| 401-3532-00L | Algebraic Geometry II | 75% | 🟡 | 🏆 强项 |
-| 401-4145-21L | Number Theory I | 85% | 🟢 | 数论传统 |
-| 401-4146-21L | Number Theory II | 72% | 🟡 | 类域论 |
+| 401-2284-00L | [Algebra I](../docs/02-代数结构/) | 90% | 🟢 | 代数基础 |
+| 401-2285-00L | [Algebra II](../docs/02-代数结构/) | 85% | 🟢 | Galois理论 |
+| 401-3302-71L | [Complex Analysis](../docs/03-分析学/) | 88% | 🟢 | 经典分析 |
+| 401-3461-00L | [Functional Analysis](../docs/03-分析学/) | 85% | 🟢 | 泛函基础 |
+| 401-3001-61L | [Algebraic Topology](../docs/12-代数拓扑/) | 88% | 🟢 | 🏆 强项 |
+| 401-3002-62L | [Differential Geometry](../docs/04-几何与拓扑/) | 82% | 🟢 | 几何传统 |
+| 401-3531-00L | [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I | 78% | 🟡 | 🏆 强项 |
+| 401-3532-00L | [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) II | 75% | 🟡 | 🏆 强项 |
+| 401-4145-21L | [Number Theory](../docs/05-数论/) I | 85% | 🟢 | 数论传统 |
+| 401-4146-21L | [Number Theory](../docs/05-数论/) II | 72% | 🟡 | 类域论 |
 
 ---
 
@@ -515,10 +515,10 @@ Local fields, p-adic numbers, valuation theory, ramification theory, zeta functi
 
 | 数学领域 | ETH传统 | FormalMath对应 | 重要性 |
 |----------|---------|----------------|--------|
-| **代数拓扑** | 欧洲领先 | `docs/05-拓扑学/` | ⭐⭐⭐⭐⭐ |
-| **代数几何** | 苏黎世学派 | `数学家理念体系/格洛腾迪克/` | ⭐⭐⭐⭐⭐ |
-| **微分几何** | 经典强项 | `docs/14-微分几何/` | ⭐⭐⭐⭐ |
-| **数论** | 悠久传统 | `docs/06-数论/` | ⭐⭐⭐⭐ |
+| **[代数拓扑](../docs/12-代数拓扑/)** | 欧洲领先 | `docs/05-拓扑学/` | ⭐⭐⭐⭐⭐ |
+| **[代数几何](../docs/13-代数几何/)** | 苏黎世学派 | `数学家理念体系/格洛腾迪克/` | ⭐⭐⭐⭐⭐ |
+| **[微分几何](../docs/04-几何与拓扑/)** | 经典强项 | `docs/14-微分几何/` | ⭐⭐⭐⭐ |
+| **[数论](../docs/05-数论/)** | 悠久传统 | `docs/06-数论/` | ⭐⭐⭐⭐ |
 
 ### 著名ETH数学家的贡献
 

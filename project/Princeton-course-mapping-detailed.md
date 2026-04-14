@@ -447,7 +447,7 @@ Princeton 的本科培养体系高度重视**独立研究能力**的培养，Jun
 |------|------|
 | **性质** | 小班研讨课，通常由资深教授主持 |
 | **目标** | 训练学生阅读原始文献、进行口头报告与学术写作 |
-| **典型主题** | 代数几何前沿、模形式、动力系统、组合数学等（随教授轮换） |
+| **典型主题** | 代数几何前沿、模形式、[动力系统](../docs/10-应用数学/)、组合数学等（随教授轮换） |
 | **FormalMath 对应** | `docs/00-评估系统/` 的文献阅读与报告标准；`数学家理念体系/` 的历史与传记文档 |
 
 **推荐资源**：
@@ -494,16 +494,16 @@ Senior Year
 
 | 课程 | 核心教材 | 作者 | 出版社/版本 | 与 FormalMath 配套使用建议 |
 |------|---------|------|------------|---------------------------|
-| **MAT 215** | *Principles of Mathematical Analysis* | W. Rudin | McGraw-Hill, 3rd ed. | 配合 `docs/03-分析学/01-实分析/` 深度扩展版使用 |
-| **MAT 217** | *Linear Algebra Done Right* | S. Axler | Springer, 4th ed. | 配合 `docs/02-代数结构/02-核心理论/线性代数/` 系列 |
+| **MAT 215** | *Principles of [Mathematical Analysis](../docs/03-分析学/)* | W. Rudin | McGraw-Hill, 3rd ed. | 配合 `docs/03-分析学/01-实分析/` 深度扩展版使用 |
+| **MAT 217** | *[Linear Algebra](../docs/02-代数结构/) Done Right* | S. Axler | Springer, 4th ed. | 配合 `docs/02-代数结构/02-核心理论/线性代数/` 系列 |
 | **MAT 218** | *Analysis on Manifolds* | J. Munkres | Addison-Wesley | 配合 `docs/14-微分几何/` 与 `03-分析学/01-实分析/` |
-| **MAT 330/335** | *Complex Analysis* | E. Stein & R. Shakarchi | Princeton Lectures in Analysis, Vol. 2 | 配合 `docs/03-分析学/02-复分析/` 全套 |
+| **MAT 330/335** | *[Complex Analysis](../docs/03-分析学/)* | E. Stein & R. Shakarchi | Princeton Lectures in Analysis, Vol. 2 | 配合 `docs/03-分析学/02-复分析/` 全套 |
 | **MAT 345** | *Algebra* | M. Artin | Pearson, 2nd ed. | 配合 `docs/02-代数结构/02-核心理论/群论/` |
-| **MAT 346** | *Galois Theory* | I. Stewart | CRC Press, 4th ed. | 配合 `docs/02-代数结构/02-核心理论/域论/` |
-| **MAT 355** | *Riemannian Geometry* | M. do Carmo | Birkhäuser | 配合 `docs/14-微分几何/04-黎曼几何-深度扩展版.md` |
-| **MAT 365** | *Algebraic Topology* | A. Hatcher | Cambridge, 2002 (免费电子版) | 配合 `docs/05-拓扑学/02-代数拓扑.md` 及深度扩展版 |
-| **MAT 416** | *Algebraic Geometry* | R. Hartshorne | Springer, GTM 52 | 配合 `格洛腾迪克/02-概形理论/` 与 `03-上同调理论/` |
-| **MAT 447** | *Introduction to Commutative Algebra* | M. Atiyah & I. Macdonald | Addison-Wesley | 配合 `docs/02-代数结构/02-核心理论/交换代数/` |
+| **MAT 346** | *[Galois Theory](../docs/02-代数结构/)* | I. Stewart | CRC Press, 4th ed. | 配合 `docs/02-代数结构/02-核心理论/域论/` |
+| **MAT 355** | *[Riemannian [Geometry](../docs/04-几何与拓扑/)](../docs/04-几何与拓扑/)* | M. do Carmo | Birkhäuser | 配合 `docs/14-微分几何/04-黎曼几何-深度扩展版.md` |
+| **MAT 365** | *[Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/)* | A. Hatcher | Cambridge, 2002 (免费电子版) | 配合 `docs/05-拓扑学/02-代数拓扑.md` 及深度扩展版 |
+| **MAT 416** | *[Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/)* | R. Hartshorne | Springer, GTM 52 | 配合 `格洛腾迪克/02-概形理论/` 与 `03-上同调理论/` |
+| **MAT 447** | *Introduction to [Commutative Algebra](../docs/02-代数结构/)* | M. Atiyah & I. Macdonald | Addison-Wesley | 配合 `docs/02-代数结构/02-核心理论/交换代数/` |
 
 **附加推荐**：
 - **MAT 416 补充**：R. Vakil, *Foundations of Algebraic Geometry* (FOAG, Oct 2025)。与 Hartshorne 形成互补，FOAG 更注重直观与例子。
@@ -540,8 +540,8 @@ Senior Year
 |------|-----------|-----|---------|------------|
 | **入门分析严格性** | 🏆 最严格 | 平衡 | 平衡 | 🏆 最严格 |
 | **线性代数抽象性** | 🏆 最抽象 | 高 | 中-高 | 高 |
-| **代数几何** | 双有理几何强 | 全面对应 | 🏆 凝聚层上同调 | 苏黎世传统 |
-| **数论** | 强 | 强 | 🏆 最强 | 类域论传统 |
+| **[代数几何](../docs/13-代数几何/)** | 双有理几何强 | 全面对应 | 🏆 凝聚层上同调 | 苏黎世传统 |
+| **[数论](../docs/05-数论/)** | 强 | 强 | 🏆 最强 | 类域论传统 |
 | **教学灵活性** | 低 | 高 | 高 | 中 |
 | **FormalMath总体覆盖** | 82% | 85% | 88% | 85% |
 

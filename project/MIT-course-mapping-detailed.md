@@ -40,10 +40,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Set Theory and Logic |
+| **课程名称** | [Set Theory and Logic](../docs/07-数理逻辑/) |
 | **学分** | 12 |
 | **先修要求** | 无 |
-| **MIT教材** | Enderton, *Elements of Set Theory*; Hamilton, *Logic for Mathematicians* |
+| **MIT教材** | Enderton, *Elements of [Set Theory](../docs/01-基础数学/)*; Hamilton, *[Logic](../docs/07-数理逻辑/) for Mathematicians* |
 | **建议学期** | 大一秋季 |
 | **覆盖度** | 🟢 完整覆盖 (85%) |
 
@@ -96,10 +96,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Linear Algebra (Honors) |
+| **课程名称** | [Linear Algebra](../docs/02-代数结构/) (Honors) |
 | **学分** | 12/门 |
 | **先修要求** | 18.090 或同等集合论基础 |
-| **MIT教材** | Axler, *Linear Algebra Done Right*; Strang, *Introduction to Linear Algebra* |
+| **MIT教材** | Axler, *[Linear Algebra](../docs/02-代数结构/) Done Right*; Strang, *Introduction to [Linear Algebra](../docs/02-代数结构/)* |
 | **建议学期** | 大一全年 |
 | **覆盖度** | 🟢 完整覆盖 (90%) |
 
@@ -157,10 +157,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Real Analysis |
+| **课程名称** | [Real Analysis](../docs/03-分析学/) |
 | **学分** | 12 |
 | **先修要求** | 18.090, 18.700 |
-| **MIT教材** | Rudin, *Principles of Mathematical Analysis*; Tao, *Analysis I/II* |
+| **MIT教材** | Rudin, *Principles of [Mathematical Analysis](../docs/03-分析学/)*; Tao, *Analysis I/II* |
 | **建议学期** | 大二秋季 |
 | **覆盖度** | 🟢 完整覆盖 (88%) |
 
@@ -217,10 +217,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Group Theory (Honors) |
+| **课程名称** | [Group Theory](../docs/02-代数结构/) (Honors) |
 | **学分** | 12 |
 | **先修要求** | 18.100, 18.700 |
-| **MIT教材** | Dummit & Foote, *Abstract Algebra* Ch.1-6; Artin, *Algebra* |
+| **MIT教材** | Dummit & Foote, *[Abstract Algebra](../docs/02-代数结构/)* Ch.1-6; Artin, *Algebra* |
 | **建议学期** | 大二春季 |
 | **覆盖度** | 🟢 完整覆盖 (92%) |
 
@@ -277,10 +277,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Ring Theory (Honors) |
+| **课程名称** | [Ring Theory](../docs/02-代数结构/) (Honors) |
 | **学分** | 12 |
 | **先修要求** | 18.704 |
-| **MIT教材** | Dummit & Foote, *Abstract Algebra* Ch.7-16; Atiyah-Macdonald |
+| **MIT教材** | Dummit & Foote, *[Abstract Algebra](../docs/02-代数结构/)* Ch.7-16; Atiyah-Macdonald |
 | **建议学期** | 大三秋季 |
 | **覆盖度** | 🟢 完整覆盖 (85%) |
 
@@ -336,7 +336,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Introduction to Algebraic Geometry |
+| **课程名称** | Introduction to [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) |
 | **状态** | ⚠️ 2025-2026学年不开设 |
 | **替代方案** | 参考18.725或使用FOAG自学 |
 | **覆盖度** | 🟡 部分覆盖 (60%) |
@@ -365,10 +365,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Number Theory |
+| **课程名称** | [Number Theory](../docs/05-数论/) |
 | **学分** | 12 |
 | **先修要求** | 18.100, 18.704 |
-| **MIT教材** | Niven, *Introduction to Number Theory*; Ireland & Rosen |
+| **MIT教材** | Niven, *Introduction to [Number Theory](../docs/05-数论/)*; Ireland & Rosen |
 | **建议学期** | 大三秋季 |
 | **覆盖度** | 🟢 完整覆盖 (80%) |
 
@@ -424,10 +424,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Commutative Algebra |
+| **课程名称** | [Commutative Algebra](../docs/02-代数结构/) |
 | **学分** | 12 |
 | **先修要求** | 18.715, 18.100 |
-| **MIT教材** | Atiyah-Macdonald, *Introduction to Commutative Algebra*; Eisenbud |
+| **MIT教材** | Atiyah-Macdonald, *Introduction to [Commutative Algebra](../docs/02-代数结构/)*; Eisenbud |
 | **建议学期** | 大三春季/大四秋季 |
 | **覆盖度** | 🟢 完整覆盖 (82%) |
 
@@ -482,10 +482,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebraic Geometry I |
+| **课程名称** | [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I |
 | **学分** | 12 |
 | **先修要求** | 18.705 (或同时修) |
-| **MIT教材** | Hartshorne, Ch.II-III; Vakil, *Foundations of Algebraic Geometry* |
+| **MIT教材** | Hartshorne, Ch.II-III; Vakil, *Foundations of [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/)* |
 | **建议学期** | 大四秋季 |
 | **覆盖度** | 🟡 部分覆盖 (75%) |
 
@@ -550,7 +550,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebraic Geometry II |
+| **课程名称** | [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) II |
 | **学分** | 12 |
 | **先修要求** | 18.725 |
 | **MIT教材** | Hartshorne, Ch.III-IV; Vakil, *FOAG* Ch.21-30 |
@@ -659,10 +659,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Lie Groups and Lie Algebras |
+| **课程名称** | Lie Groups and [Lie Algebras](../docs/02-代数结构/) |
 | **学分** | 12 |
 | **先修要求** | 18.100, 18.700, 18.704 |
-| **MIT教材** | Fulton & Harris; Humphreys, *Introduction to Lie Algebras* |
+| **MIT教材** | Fulton & Harris; Humphreys, *Introduction to [Lie Algebras](../docs/02-代数结构/)* |
 | **建议学期** | 大四秋季/春季 |
 | **覆盖度** | 🟢 完整覆盖 (78%) |
 
@@ -673,7 +673,7 @@ processed_at: '2026-04-05'
 | 序号 | 文档路径 | 主题 | 学习时间 |
 |------|----------|------|----------|
 | 1 | `docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md` | 李代数定义、例子 | 5小时 |
-| 2 | `docs/02-代数结构/02-核心理论/李代数/02-表示论基础-深度扩展版.md` | 伴随表示、表示论 | 5小时 |
+| 2 | `docs/02-代数结构/02-核心理论/李代数/02-表示论基础-深度扩展版.md` | 伴随表示、[表示论](../docs/02-代数结构/) | 5小时 |
 | 3 | `docs/02-代数结构/02-核心理念/李代数/03-幂零与可解-深度扩展版.md` | Engel定理、Lie定理 | 5小时 |
 
 **模块2: 半单李代数** (Week 5-8)
@@ -717,7 +717,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Representation Theory |
+| **课程名称** | [Representation Theory](../docs/02-代数结构/) |
 | **学分** | 12 |
 | **先修要求** | 18.704, 18.745 (可同时修) |
 | **MIT教材** | Fulton & Harris; Serre, *Linear Representations of Finite Groups* |
@@ -774,7 +774,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Topics in Number Theory |
+| **课程名称** | Topics in [Number Theory](../docs/05-数论/) |
 | **学分** | 12 |
 | **先修要求** | 18.782, 18.705 |
 | **MIT教材** | Silverman, *Arithmetic of Elliptic Curves*; Diamond-Shurman |
@@ -829,25 +829,25 @@ processed_at: '2026-04-05'
 
 | MIT课程 | Princeton对应 | Harvard对应 | ETH对应 | 对应程度 |
 |---------|---------------|-------------|---------|----------|
-| 18.090 Set Theory & Logic | PHI 323 | 基础数学 | 基础数学模块 | ⭐⭐⭐⭐ |
-| 18.700-703 Linear Algebra | MAT 217 | Math 21/23/25 | 401-1151/1152 | ⭐⭐⭐⭐⭐ |
-| 18.100 Real Analysis | MAT 215 | Math 114 | 401-1261/1262 | ⭐⭐⭐⭐⭐ |
-| 18.704 Group Theory | MAT 345 | Math 122 | 401-2284 | ⭐⭐⭐⭐⭐ |
-| 18.715 Ring Theory | MAT 346 | Math 123 | 401-2285 | ⭐⭐⭐⭐⭐ |
-| 18.782 Number Theory | MAT 419 | Math 223 | 401-4145/4146 | ⭐⭐⭐⭐ |
-| 18.705 Commutative Algebra | MAT 447 | Math 221 | 交换代数模块 | ⭐⭐⭐⭐⭐ |
-| **18.725 Algebraic Geometry I** | **MAT 416** | **Math 232ar** | **401-3531** | ⭐⭐⭐⭐⭐ |
-| **18.726 Algebraic Geometry II** | **MAT 416 (II)** | **Math 232br** | **401-3532** | ⭐⭐⭐⭐⭐ |
+| 18.090 [Set Theory](../docs/01-基础数学/) & [Logic](../docs/07-数理逻辑/) | PHI 323 | 基础数学 | 基础数学模块 | ⭐⭐⭐⭐ |
+| 18.700-703 [Linear Algebra](../docs/02-代数结构/) | MAT 217 | Math 21/23/25 | 401-1151/1152 | ⭐⭐⭐⭐⭐ |
+| 18.100 [Real Analysis](../docs/03-分析学/) | MAT 215 | Math 114 | 401-1261/1262 | ⭐⭐⭐⭐⭐ |
+| 18.704 [Group Theory](../docs/02-代数结构/) | MAT 345 | Math 122 | 401-2284 | ⭐⭐⭐⭐⭐ |
+| 18.715 [Ring Theory](../docs/02-代数结构/) | MAT 346 | Math 123 | 401-2285 | ⭐⭐⭐⭐⭐ |
+| 18.782 [Number Theory](../docs/05-数论/) | MAT 419 | Math 223 | 401-4145/4146 | ⭐⭐⭐⭐ |
+| 18.705 [Commutative Algebra](../docs/02-代数结构/) | MAT 447 | Math 221 | 交换代数模块 | ⭐⭐⭐⭐⭐ |
+| **18.725 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I** | **MAT 416** | **Math 232ar** | **401-3531** | ⭐⭐⭐⭐⭐ |
+| **18.726 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) II** | **MAT 416 (II)** | **Math 232br** | **401-3532** | ⭐⭐⭐⭐⭐ |
 | 18.745 Lie Groups | MAT 451/455 | 研究生课程 | 李群选修 | ⭐⭐⭐⭐ |
-| 18.755 Representation Theory | MAT 345内容 | Math 122/123 | 表示论选修 | ⭐⭐⭐⭐ |
+| 18.755 [Representation Theory](../docs/02-代数结构/) | MAT 345内容 | Math 122/123 | 表示论选修 | ⭐⭐⭐⭐ |
 
 ### MIT与Princeton对比
 
 | 维度 | MIT | Princeton |
 |------|-----|-----------|
 | **入门分析** | 18.100 (证明与应用平衡) | MAT 215 (纯证明导向) |
-| **线性代数** | 18.700系列 (灵活多样) | MAT 217 (严格抽象) |
-| **代数几何** | Vakil FOAG导向 | Kollár双有理几何导向 |
+| **[线性代数](../docs/02-代数结构/)** | 18.700系列 (灵活多样) | MAT 217 (严格抽象) |
+| **[代数几何](../docs/13-代数几何/)** | Vakil FOAG导向 | Kollár双有理几何导向 |
 | **教学风格** | 直观与严格并重 | 严格形式化优先 |
 | **课程选择** | 多样灵活 | 精简深入 |
 
@@ -860,17 +860,17 @@ processed_at: '2026-04-05'
 
 | MIT课程 | ETH对应课程 | 对应程度 | 主要差异 |
 |---------|-------------|----------|----------|
-| 18.090 Set Theory & Logic | 基础数学模块 | ⭐⭐⭐⭐ | ETH更强调德式形式化 |
-| 18.700-703 Linear Algebra | 401-1151/1152 Linear Algebra I/II | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| 18.100 Real Analysis | 401-1261/1262 Analysis I/II | ⭐⭐⭐⭐⭐ | ETH Analysis II包含更多流形内容 |
-| 18.704 Group Theory | 401-2284 Algebra I | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| 18.715 Ring Theory | 401-2285 Algebra II (部分) | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| 18.782 Number Theory | 401-4145/4146 Number Theory I/II | ⭐⭐⭐⭐ | ETH强调类域论 |
-| 18.705 Commutative Algebra | 交换代数模块 | ⭐⭐⭐⭐⭐ | 内容高度一致 |
-| **18.725 Algebraic Geometry I** | **401-3531 Algebraic Geometry I** | ⭐⭐⭐⭐⭐ | **ETH苏黎世学派特色** |
-| **18.726 Algebraic Geometry II** | **401-3532 Algebraic Geometry II** | ⭐⭐⭐⭐⭐ | **凝聚层上同调** |
+| 18.090 [Set Theory](../docs/01-基础数学/) & [Logic](../docs/07-数理逻辑/) | 基础数学模块 | ⭐⭐⭐⭐ | ETH更强调德式形式化 |
+| 18.700-703 [Linear Algebra](../docs/02-代数结构/) | 401-1151/1152 [Linear Algebra](../docs/02-代数结构/) I/II | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| 18.100 [Real Analysis](../docs/03-分析学/) | 401-1261/1262 Analysis I/II | ⭐⭐⭐⭐⭐ | ETH Analysis II包含更多流形内容 |
+| 18.704 [Group Theory](../docs/02-代数结构/) | 401-2284 [Algebra I](../docs/02-代数结构/) | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| 18.715 [Ring Theory](../docs/02-代数结构/) | 401-2285 [Algebra II](../docs/02-代数结构/) (部分) | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| 18.782 [Number Theory](../docs/05-数论/) | 401-4145/4146 [Number Theory](../docs/05-数论/) I/II | ⭐⭐⭐⭐ | ETH强调类域论 |
+| 18.705 [Commutative Algebra](../docs/02-代数结构/) | 交换代数模块 | ⭐⭐⭐⭐⭐ | 内容高度一致 |
+| **18.725 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I** | **401-3531 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) I** | ⭐⭐⭐⭐⭐ | **ETH苏黎世学派特色** |
+| **18.726 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) II** | **401-3532 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) II** | ⭐⭐⭐⭐⭐ | **凝聚层上同调** |
 | 18.745 Lie Groups | 李群选修 | ⭐⭐⭐⭐ | 内容相似 |
-| 18.755 Representation Theory | 表示论选修 | ⭐⭐⭐⭐ | 内容相似 |
+| 18.755 [Representation Theory](../docs/02-代数结构/) | 表示论选修 | ⭐⭐⭐⭐ | 内容相似 |
 
 ### MIT与ETH教学特色对比
 
@@ -878,9 +878,9 @@ processed_at: '2026-04-05'
 |------|-----|------------|
 | **教学语言** | 英语 | 德语（基础）/英语（高级） |
 | **基础课程** | 灵活多样，18.01-18.03等选择 | 统一的Linear Algebra/Analysis序列 |
-| **代数几何** | Vakil FOAG导向 | Hartshorne + 苏黎世学派传统 |
-| **代数拓扑** | Hatcher体系 | Harker体系 + 苏黎世同调代数传统 |
-| **数论** | 椭圆曲线、模形式 | 代数数论、类域论传统 |
+| **[代数几何](../docs/13-代数几何/)** | Vakil FOAG导向 | Hartshorne + 苏黎世学派传统 |
+| **[代数拓扑](../docs/12-代数拓扑/)** | Hatcher体系 | Harker体系 + 苏黎世同调代数传统 |
+| **[数论](../docs/05-数论/)** | 椭圆曲线、模形式 | [代数数论](../docs/05-数论/)、类域论传统 |
 | **严谨性** | 强调直观与证明并重 | 德式严格形式化 |
 
 ### ETH苏黎世学派特色
@@ -889,10 +889,10 @@ processed_at: '2026-04-05'
 
 | 领域 | ETH传统 | FormalMath对应 | 优势 |
 |------|---------|----------------|------|
-| **代数几何** | 欧洲概形理论传统 | `格洛腾迪克/02-概形理论/` | 与Harvard 232ar/br完美对应 |
-| **代数拓扑** | 同调代数严格训练 | `docs/05-拓扑学/` | 系统性同调理论 |
-| **微分几何** | Riemann几何经典 | `docs/14-微分几何/` | 完整黎曼几何 |
-| **数论** | 类域论传统 | `docs/06-数论/02-代数数论/` | 代数方法深入 |
+| **[代数几何](../docs/13-代数几何/)** | 欧洲概形理论传统 | `格洛腾迪克/02-概形理论/` | 与Harvard 232ar/br完美对应 |
+| **[代数拓扑](../docs/12-代数拓扑/)** | 同调代数严格训练 | `docs/05-拓扑学/` | 系统性同调理论 |
+| **[微分几何](../docs/04-几何与拓扑/)** | Riemann几何经典 | `docs/14-微分几何/` | 完整黎曼几何 |
+| **[数论](../docs/05-数论/)** | 类域论传统 | `docs/06-数论/02-代数数论/` | 代数方法深入 |
 
 **四校联合学习路径（MIT + Princeton + Harvard + ETH）**:
 
@@ -962,18 +962,18 @@ MIT + ETH 联合路径
 
 | 课程 | 覆盖度 | 状态 | 建议使用 |
 |------|--------|------|----------|
-| 18.090 集合论与逻辑 | 85% | 🟢 | 完全可以作为主要资源 |
+| 18.090 [集合论与逻辑](../docs/07-数理逻辑/) | 85% | 🟢 | 完全可以作为主要资源 |
 | 18.700-703 线性代数序列 | 90% | 🟢 | 完全可以作为主要资源 |
-| 18.100 实分析 | 88% | 🟢 | 完全可以作为主要资源 |
-| 18.704 群论 | 92% | 🟢 | 完全可以作为主要资源 |
-| 18.715 环论 | 85% | 🟢 | 完全可以作为主要资源 |
-| 18.721 代数几何 | 60% | 🟡 | 建议参考18.725 |
-| 18.782 数论 | 80% | 🟢 | 完全可以作为主要资源 |
-| 18.705 交换代数 | 82% | 🟢 | 完全可以作为主要资源 |
+| 18.100 [实分析](../docs/03-分析学/) | 88% | 🟢 | 完全可以作为主要资源 |
+| 18.704 [群论](../docs/02-代数结构/) | 92% | 🟢 | 完全可以作为主要资源 |
+| 18.715 [环论](../docs/02-代数结构/) | 85% | 🟢 | 完全可以作为主要资源 |
+| 18.721 [代数几何](../docs/13-代数几何/) | 60% | 🟡 | 建议参考18.725 |
+| 18.782 [数论](../docs/05-数论/) | 80% | 🟢 | 完全可以作为主要资源 |
+| 18.705 [交换代数](../docs/02-代数结构/) | 82% | 🟢 | 完全可以作为主要资源 |
 | 18.725 代数几何I | 75% | 🟡 | 需要补充Vakil/Hartshorne |
 | 18.726 代数几何II | 70% | 🟡 | 需要补充原始文献 |
 | 18.745 李群 | 78% | 🟢 | 完全可以作为主要资源 |
-| 18.755 表示论 | 72% | 🟡 | 需要补充Fulton-Harris |
+| 18.755 [表示论](../docs/02-代数结构/) | 72% | 🟡 | 需要补充Fulton-Harris |
 | 18.783 数论高级 | 65% | 🟡 | 需要大量外部资源 |
 
 ---

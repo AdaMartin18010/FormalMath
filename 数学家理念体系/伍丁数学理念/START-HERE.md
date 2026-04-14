@@ -124,3 +124,14 @@ $$\forall A \forall F \exists B \forall y (y \in B \leftrightarrow \exists x (x 
 ---
 
 *最后更新：2026年01月15日*
+
+
+## 相关链接
+
+- [07-数理逻辑](../../docs/07-数理逻辑/)
+- [03-分析学](../../docs/03-分析学/)
+- [01-基础数学](../../docs/01-基础数学/)
+
+- [伍丁主页面](README.md)
+- [FormalMath 总索引](../../INDEX.md)
+- [核心概念库](../../concept/)

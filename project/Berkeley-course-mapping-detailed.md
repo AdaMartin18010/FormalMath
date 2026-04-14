@@ -45,7 +45,7 @@ processed_at: '2026-04-05'
 | **课程名称** | Honors Introduction to Analysis |
 | **学分** | 4 |
 | **先修要求** | MATH 53, 54 |
-| **Berkeley教材** | Ross, *Elementary Analysis*; Rudin, *Principles of Mathematical Analysis* |
+| **Berkeley教材** | Ross, *Elementary Analysis*; Rudin, *Principles of [Mathematical Analysis](../docs/03-分析学/)* |
 | **建议学期** | 大二 |
 | **覆盖度** | 🟢 完整覆盖 (90%) |
 
@@ -65,7 +65,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Honors Introduction to Abstract Algebra |
+| **课程名称** | Honors Introduction to [Abstract Algebra](../docs/02-代数结构/) |
 | **学分** | 4 |
 | **先修要求** | MATH H104 或相当 |
 | **Berkeley教材** | Artin, *Algebra*; Dummit & Foote |
@@ -88,10 +88,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Elementary Algebraic Topology |
+| **课程名称** | Elementary [Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/) |
 | **学分** | 4 |
 | **先修要求** | MATH 104, 110 |
-| **Berkeley教材** | Hatcher, *Algebraic Topology* (选读) |
+| **Berkeley教材** | Hatcher, *[Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/)* (选读) |
 | **建议学期** | 大三 |
 | **覆盖度** | 🟢 完整覆盖 (82%) |
 
@@ -110,10 +110,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Elementary Algebraic Geometry |
+| **课程名称** | Elementary [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) |
 | **学分** | 4 |
 | **先修要求** | MATH 113 或 H113 |
-| **Berkeley教材** | Reid, *Undergraduate Algebraic Geometry*; Fulton's Algebraic Curves |
+| **Berkeley教材** | Reid, *Undergraduate [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/)*; Fulton's Algebraic Curves |
 | **建议学期** | 大三/大四 |
 | **覆盖度** | 🟡 部分覆盖 (70%) |
 
@@ -134,10 +134,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Introduction to Topology and Analysis |
+| **课程名称** | Introduction to [Topology](../docs/04-几何与拓扑/) and Analysis |
 | **学分** | 4/门 |
 | **先修要求** | 本科分析、代数 |
-| **Berkeley教材** | Folland, *Real Analysis*; Munkres, *Topology* |
+| **Berkeley教材** | Folland, *[Real Analysis](../docs/03-分析学/)*; Munkres, *[Topology](../docs/04-几何与拓扑/)* |
 | **建议学期** | 研一 |
 | **覆盖度** | 🟢 完整覆盖 (85%) |
 
@@ -222,10 +222,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Commutative Algebra |
+| **课程名称** | [Commutative Algebra](../docs/02-代数结构/) |
 | **学分** | 4 |
 | **先修要求** | MATH 250A |
-| **Berkeley教材** | Atiyah-Macdonald; Eisenbud, *Commutative Algebra* |
+| **Berkeley教材** | Atiyah-Macdonald; Eisenbud, *[Commutative Algebra](../docs/02-代数结构/)* |
 | **建议学期** | 研一春季 |
 | **覆盖度** | 🟢 完整覆盖 (85%) |
 
@@ -248,7 +248,7 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Ring Theory |
+| **课程名称** | [Ring Theory](../docs/02-代数结构/) |
 | **学分** | 4 |
 | **先修要求** | MATH 250B |
 | **Berkeley教材** | Lam, *A First Course in Noncommutative Rings* |
@@ -269,10 +269,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Representation Theory |
+| **课程名称** | [Representation Theory](../docs/02-代数结构/) |
 | **学分** | 4 |
 | **先修要求** | MATH 250A |
-| **Berkeley教材** | Fulton & Harris, *Representation Theory*; Serre |
+| **Berkeley教材** | Fulton & Harris, *[Representation Theory](../docs/02-代数结构/)*; Serre |
 | **建议学期** | 研一/研二 |
 | **覆盖度** | 🟢 完整覆盖 (78%) |
 
@@ -282,7 +282,7 @@ processed_at: '2026-04-05'
 |------|----------|---------------------|----------|
 | 1 | `docs/02-代数结构/02-核心理论/表示论/01-表示论基础.md` | Ch.1-2: 有限群表示 | 6小时 |
 | 2 | `docs/02-代数结构/02-核心理论/表示论/03-特征标理论-深度扩展版.md` | Ch.2: 特征标理论 | 6小时 |
-| 3 | `docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md` | Ch.7-10: 李代数 | 6小时 |
+| 3 | `docs/02-代数结构/02-核心理论/李代数/01-李代数-国际标准深度扩展版.md` | Ch.7-10: [李代数](../docs/02-代数结构/) | 6小时 |
 | 4 | `docs/02-代数结构/02-核心理论/李代数/05-根系理论-深度扩展版.md` | Ch.21-22: 根系 | 6小时 |
 | 5 | `docs/02-代数结构/02-核心理论/李代数/07-有限维表示-深度扩展版.md` | Ch.23-25: 最高权理论 | 6小时 |
 
@@ -292,10 +292,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Homological Algebra |
+| **课程名称** | [Homological Algebra](../docs/15-同调代数/) |
 | **学分** | 4 |
 | **先修要求** | MATH 250B |
-| **Berkeley教材** | Weibel, *An Introduction to Homological Algebra* |
+| **Berkeley教材** | Weibel, *An Introduction to [Homological Algebra](../docs/15-同调代数/)* |
 | **建议学期** | 研二 |
 | **覆盖度** | 🟡 部分覆盖 (72%) |
 
@@ -315,10 +315,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Number Theory |
+| **课程名称** | [Number Theory](../docs/05-数论/) |
 | **学分** | 4/门 |
 | **先修要求** | MATH 250A |
-| **Berkeley教材** | Neukirch, *Algebraic Number Theory*; Marcus |
+| **Berkeley教材** | Neukirch, *[Algebraic [Number Theory](../docs/05-数论/)](../docs/05-数论/)*; Marcus |
 | **建议学期** | 研一全年 |
 | **覆盖度** | 🟢 完整覆盖 (80%) |
 
@@ -370,10 +370,10 @@ processed_at: '2026-04-05'
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebraic Geometry |
+| **课程名称** | [Algebraic Geometry](../docs/13-代数几何/) |
 | **学分** | 4/门 |
 | **先修要求** | MATH 250B (可同时修256A) |
-| **Berkeley教材** | Hartshorne, *Algebraic Geometry*; Vakil, *FOAG* |
+| **Berkeley教材** | Hartshorne, *[Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/)*; Vakil, *FOAG* |
 | **建议学期** | 研一全年 |
 | **覆盖度** | 🟡 部分覆盖 (76%) |
 
@@ -468,17 +468,17 @@ processed_at: '2026-04-05'
 |------|--------|------|----------|
 | MATH H104 Honors Analysis | 90% | 🟢 | 完全可以作为主要资源 |
 | MATH H113 Honors Algebra | 88% | 🟢 | 完全可以作为主要资源 |
-| MATH 142 Algebraic Topology | 82% | 🟢 | 完全可以作为主要资源 |
-| MATH 143 Algebraic Geometry | 70% | 🟡 | 需要补充Fulton/Reid |
-| MATH 202A/B Topology & Analysis | 85% | 🟢 | 完全可以作为主要资源 |
+| MATH 142 [Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/) | 82% | 🟢 | 完全可以作为主要资源 |
+| MATH 143 [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) | 70% | 🟡 | 需要补充Fulton/Reid |
+| MATH 202A/B [Topology](../docs/04-几何与拓扑/) & Analysis | 85% | 🟢 | 完全可以作为主要资源 |
 | MATH 250A Groups, Rings, Fields | 88% | 🟢 | 完全可以作为主要资源 |
-| MATH 250B Commutative Algebra | 85% | 🟢 | 完全可以作为主要资源 |
-| MATH 251 Ring Theory | 60% | 🟡 | 需要补充Lam |
-| MATH 252 Representation Theory | 78% | 🟢 | 完全可以作为主要资源 |
-| MATH 253 Homological Algebra | 72% | 🟡 | 需要补充Weibel |
-| MATH 254A/B Number Theory | 80% | 🟢 | 完全可以作为主要资源 |
+| MATH 250B [Commutative Algebra](../docs/02-代数结构/) | 85% | 🟢 | 完全可以作为主要资源 |
+| MATH 251 [Ring Theory](../docs/02-代数结构/) | 60% | 🟡 | 需要补充Lam |
+| MATH 252 [Representation Theory](../docs/02-代数结构/) | 78% | 🟢 | 完全可以作为主要资源 |
+| MATH 253 [Homological Algebra](../docs/15-同调代数/) | 72% | 🟡 | 需要补充Weibel |
+| MATH 254A/B [Number Theory](../docs/05-数论/) | 80% | 🟢 | 完全可以作为主要资源 |
 | MATH 255 Algebraic Curves | 70% | 🟡 | 需要补充Fulton |
-| MATH 256A/B Algebraic Geometry | 76% | 🟡 | 需要补充Hartshorne/Vakil |
+| MATH 256A/B [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) | 76% | 🟡 | 需要补充Hartshorne/Vakil |
 | MATH 270 Hot Topics | 30-50% | 🟠 | 高度依赖主题 |
 
 ---

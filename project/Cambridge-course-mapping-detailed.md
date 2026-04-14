@@ -51,7 +51,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 | **课程名称** | Numbers and Sets |
 | **学时** | 24讲 |
 | **先修要求** | 无 |
-| **Cambridge教材** | Goldrei, *Classic Set Theory*; 系内讲义 |
+| **Cambridge教材** | Goldrei, *Classic [Set Theory](../docs/01-基础数学/)*; 系内讲义 |
 | **建议学期** | Michaelmas Term |
 | **覆盖度** | 🟢 **完整覆盖 (92%)** |
 
@@ -93,7 +93,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Differential Equations |
+| **课程名称** | [Differential Equations](../docs/05-微分方程/) |
 | **学时** | 24讲 |
 | **先修要求** | 无 |
 | **Cambridge教材** | 系内讲义 |
@@ -117,7 +117,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 | **课程名称** | Analysis I |
 | **学时** | 24讲 |
 | **先修要求** | 无 |
-| **Cambridge教材** | Apostol, *Mathematical Analysis*; Spivak |
+| **Cambridge教材** | Apostol, *[Mathematical Analysis](../docs/03-分析学/)*; Spivak |
 | **建议学期** | Michaelmas/Lent |
 | **覆盖度** | 🟢 **完整覆盖 (90%)** |
 
@@ -137,7 +137,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Probability |
+| **课程名称** | [Probability](../docs/06-概率论与统计/) |
 | **学时** | 24讲 |
 | **先修要求** | Analysis I |
 | **Cambridge教材** | Grimmett & Welsh |
@@ -160,7 +160,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Linear Algebra |
+| **课程名称** | [Linear Algebra](../docs/02-代数结构/) |
 | **学时** | 24讲 |
 | **先修要求** | IA Vectors and Matrices |
 | **Cambridge教材** | Kaye & Wilson; 系内讲义 |
@@ -182,7 +182,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Groups, Rings and Modules |
+| **课程名称** | Groups, [Rings and Modules](../docs/02-代数结构/) |
 | **学时** | 24讲 |
 | **先修要求** | IA Groups |
 | **Cambridge教材** | Allenby; Cohn, *Algebra* |
@@ -206,10 +206,10 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Analysis and Topology |
+| **课程名称** | Analysis and [Topology](../docs/04-几何与拓扑/) |
 | **学时** | 24讲 |
 | **先修要求** | IA Analysis I |
-| **Cambridge教材** | Sutherland, *Introduction to Metric and Topological Spaces* |
+| **Cambridge教材** | Sutherland, *Introduction to [Metric and Topological Spaces](../docs/04-几何与拓扑/)* |
 | **建议学期** | Lent |
 | **覆盖度** | 🟢 **完整覆盖 (85%)** |
 
@@ -228,7 +228,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Complex Analysis |
+| **课程名称** | [Complex Analysis](../docs/03-分析学/) |
 | **学时** | 24讲 |
 | **先修要求** | IA Analysis I |
 | **Cambridge教材** | 系内讲义 |
@@ -250,7 +250,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Geometry |
+| **课程名称** | [Geometry](../docs/04-几何与拓扑/) |
 | **学时** | 24讲 |
 | **先修要求** | IA Vectors and Matrices |
 | **Cambridge教材** | 系内讲义 |
@@ -273,10 +273,10 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebraic Topology |
+| **课程名称** | [Algebraic Topology](../docs/12-代数拓扑/) |
 | **学时** | 24讲 (D-course) |
-| **先修要求** | IB Analysis and Topology |
-| **Cambridge教材** | Hatcher, *Algebraic Topology* |
+| **先修要求** | IB Analysis and [Topology](../docs/04-几何与拓扑/) |
+| **Cambridge教材** | Hatcher, *[Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/)* |
 | **建议学期** | Michaelmas |
 | **覆盖度** | 🟡 **部分覆盖 (75%)** |
 
@@ -297,7 +297,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 |------|------|
 | **课程名称** | Number Fields |
 | **学时** | 24讲 |
-| **先修要求** | IB Groups, Rings and Modules |
+| **先修要求** | IB Groups, [Rings and Modules](../docs/02-代数结构/) |
 | **Cambridge教材** | Marcus, *Number Fields*; Stewart & Tall |
 | **建议学期** | Michaelmas |
 | **覆盖度** | 🟢 **完整覆盖 (85%)** |
@@ -317,10 +317,10 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebraic Geometry |
+| **课程名称** | [Algebraic Geometry](../docs/13-代数几何/) |
 | **学时** | 24讲 (Lent Term) |
-| **先修要求** | IB Groups, Rings and Modules |
-| **Cambridge教材** | Reid, *Undergraduate Algebraic Geometry*; Kirwan |
+| **先修要求** | IB Groups, [Rings and Modules](../docs/02-代数结构/) |
+| **Cambridge教材** | Reid, *Undergraduate [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/)*; Kirwan |
 | **建议学期** | Lent |
 | **覆盖度** | 🟡 **部分覆盖 (78%)** |
 
@@ -339,9 +339,9 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Differential Geometry |
+| **课程名称** | [Differential Geometry](../docs/04-几何与拓扑/) |
 | **学时** | 24讲 (D-course) |
-| **先修要求** | IB Analysis and Topology |
+| **先修要求** | IB Analysis and [Topology](../docs/04-几何与拓扑/) |
 | **Cambridge教材** | do Carmo; Pressley |
 | **建议学期** | Michaelmas |
 | **覆盖度** | 🟢 **完整覆盖 (82%)** |
@@ -361,10 +361,10 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Logic and Set Theory |
+| **课程名称** | [Logic](../docs/07-数理逻辑/) and [Set Theory](../docs/01-基础数学/) |
 | **学时** | 24讲 (D-course) |
 | **先修要求** | IA Numbers and Sets |
-| **Cambridge教材** | Goldrei, *Classic Set Theory*; Enderton |
+| **Cambridge教材** | Goldrei, *Classic [Set Theory](../docs/01-基础数学/)*; Enderton |
 | **建议学期** | Michaelmas |
 | **覆盖度** | 🟢 **完整覆盖 (88%)** |
 
@@ -372,8 +372,8 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 序号 | 文档路径 | Cambridge主题 | 覆盖率 | 关键概念 |
 |------|----------|---------------|--------|----------|
-| 1 | `docs/07-逻辑学/命题逻辑-深度扩展版.md` | 命题逻辑 | 90% | 真值表、完备性 |
-| 2 | `docs/07-逻辑学/一阶逻辑-深度扩展版.md` | 一阶逻辑 | 90% | 量词、结构、可满足性 |
+| 1 | `docs/07-逻辑学/命题逻辑-深度扩展版.md` | [命题逻辑](../docs/07-数理逻辑/) | 90% | 真值表、完备性 |
+| 2 | `docs/07-逻辑学/一阶逻辑-深度扩展版.md` | [一阶逻辑](../docs/07-数理逻辑/) | 90% | 量词、结构、可满足性 |
 | 3 | `docs/01-基础数学/集合论/05-基数与序数-深度扩展版.md` | 基数算术 | 85% | 基数运算、连续统假设 |
 | 4 | `docs/01-基础数学/ZFC公理体系/ZFC公理体系完整形式化-国际标准对照版.md` | ZFC公理 | 85% | 选择公理、正则公理 |
 | 5 | `docs/07-逻辑学/证明理论-深度扩展版.md` | 完备性、紧致性 | 85% | Gödel完备性定理 |
@@ -386,9 +386,9 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 
 | 属性 | 内容 |
 |------|------|
-| **课程名称** | Algebraic Geometry (Advanced) |
+| **课程名称** | [Algebraic Geometry](../docs/13-代数几何/) (Advanced) |
 | **学时** | 24讲 |
-| **先修要求** | Part II Algebraic Geometry |
+| **先修要求** | Part II [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) |
 | **Cambridge教材** | Hartshorne; Vakil, *FOAG* |
 | **建议学期** | Michaelmas |
 | **覆盖度** | 🟡 **部分覆盖 (80%)** |
@@ -410,7 +410,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 |------|------|
 | **课程名称** | Homotopy Theory |
 | **学时** | 24讲 |
-| **先修要求** | Part II Algebraic Topology |
+| **先修要求** | Part II [Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/) |
 | **Cambridge教材** | Hatcher; May |
 | **建议学期** | Lent |
 | **覆盖度** | 🟡 **部分覆盖 (70%)** |
@@ -453,7 +453,7 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 |------|------|
 | **课程名称** | Moduli Spaces |
 | **学时** | 16-24讲 |
-| **先修要求** | Part III Advanced Algebraic Geometry |
+| **先修要求** | Part III Advanced [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) |
 | **Cambridge教材** | 系内讲义 |
 | **建议学期** | Lent |
 | **覆盖度** | 🟡 **部分覆盖 (68%)** |
@@ -475,23 +475,23 @@ Cambridge数学系采用独特的**Tripos考试系统**，分为四个层级：
 | **Part IA** | | | |
 | IA Numbers and Sets | 92% | 🟢 | 完全可以作为主要资源 |
 | IA Groups | 90% | 🟢 | 完全可以作为主要资源 |
-| IA Differential Equations | 70% | 🟡 | 需要补充材料 |
+| IA [Differential Equations](../docs/05-微分方程/) | 70% | 🟡 | 需要补充材料 |
 | IA Analysis I | 90% | 🟢 | 完全可以作为主要资源 |
-| IA Probability | 68% | 🟡 | 需要补充材料 |
+| IA [Probability](../docs/06-概率论与统计/) | 68% | 🟡 | 需要补充材料 |
 | **Part IB** | | | |
-| IB Linear Algebra | 88% | 🟢 | 完全可以作为主要资源 |
-| IB Groups, Rings and Modules | 88% | 🟢 | 完全可以作为主要资源 |
-| IB Analysis and Topology | 85% | 🟢 | 完全可以作为主要资源 |
-| IB Complex Analysis | 88% | 🟢 | 完全可以作为主要资源 |
-| IB Geometry | 80% | 🟢 | 完全可以作为主要资源 |
+| IB [Linear Algebra](../docs/02-代数结构/) | 88% | 🟢 | 完全可以作为主要资源 |
+| IB Groups, [Rings and Modules](../docs/02-代数结构/) | 88% | 🟢 | 完全可以作为主要资源 |
+| IB Analysis and [Topology](../docs/04-几何与拓扑/) | 85% | 🟢 | 完全可以作为主要资源 |
+| IB [Complex Analysis](../docs/03-分析学/) | 88% | 🟢 | 完全可以作为主要资源 |
+| IB [Geometry](../docs/04-几何与拓扑/) | 80% | 🟢 | 完全可以作为主要资源 |
 | **Part II** | | | |
-| Part II Algebraic Topology | 75% | 🟡 | 需要补充Hatcher |
+| Part II [Algebraic [Topology](../docs/04-几何与拓扑/)](../docs/12-代数拓扑/) | 75% | 🟡 | 需要补充Hatcher |
 | Part II Number Fields | 85% | 🟢 | 完全可以作为主要资源 |
-| Part II Algebraic Geometry | 78% | 🟢 | 完全可以作为主要资源 |
-| Part II Differential Geometry | 82% | 🟢 | 完全可以作为主要资源 |
-| Part II Logic and Set Theory | 88% | 🟢 | 完全可以作为主要资源 |
+| Part II [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) | 78% | 🟢 | 完全可以作为主要资源 |
+| Part II [Differential [Geometry](../docs/04-几何与拓扑/)](../docs/04-几何与拓扑/) | 82% | 🟢 | 完全可以作为主要资源 |
+| Part II [Logic](../docs/07-数理逻辑/) and [Set Theory](../docs/01-基础数学/) | 88% | 🟢 | 完全可以作为主要资源 |
 | **Part III** | | | |
-| Part III Advanced Algebraic Geometry | 80% | 🟢 | 完全可以作为主要资源 |
+| Part III Advanced [Algebraic [Geometry](../docs/04-几何与拓扑/)](../docs/13-代数几何/) | 80% | 🟢 | 完全可以作为主要资源 |
 | Part III Homotopy Theory | 70% | 🟡 | 需要补充May |
 | Part III Elliptic Curves | 75% | 🟡 | 需要补充Silverman |
 | Part III Moduli Spaces | 68% | 🟡 | 需要补充材料 |
@@ -540,9 +540,9 @@ Part III (研究生)
 
 | 特征 | Cambridge | Oxford |
 |------|-----------|--------|
-| **代数几何** | Reid → Hartshorne (Part II/III) | Fulton → Hartshorne (B5/C3.1) |
-| **李代数** | Part II Representation Theory (部分) | **B2.1/C2.1 (专门课程)** |
-| **同调代数** | Part III Commutative Algebra (部分) | **C2.2 (专门课程)** |
+| **[代数几何](../docs/13-代数几何/)** | Reid → Hartshorne (Part II/III) | Fulton → Hartshorne (B5/C3.1) |
+| **[李代数](../docs/02-代数结构/)** | Part II [Representation Theory](../docs/02-代数结构/) (部分) | **B2.1/C2.1 (专门课程)** |
+| **[同调代数](../docs/15-同调代数/)** | Part III [Commutative Algebra](../docs/02-代数结构/) (部分) | **C2.2 (专门课程)** |
 | **考试系统** | Tripos | 期末考试 |
 | **问题集** | Example Sheets | Problem Sheets |
 
