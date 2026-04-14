@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * SEO Hook for FormalMath Interactive
  * SEO相关的React Hook

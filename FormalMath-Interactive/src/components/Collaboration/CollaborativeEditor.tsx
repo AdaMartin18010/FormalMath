@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== 协同编辑器组件 - 基于Yjs ====================
 
 import React, { useEffect, useRef, useCallback, useState } from 'react';

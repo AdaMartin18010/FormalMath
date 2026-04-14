@@ -6,8 +6,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import * as d3 from 'd3';
 import { 
-  GitBranch, Check, X, AlertCircle, ChevronRight, 
-  ChevronDown, BookOpen, Search, Filter, Download,
+  GitBranch, Check, X, AlertCircle, BookOpen, Search, Download,
   Maximize2, Minimize2, RotateCcw, Zap
 } from 'lucide-react';
 import { cn } from '@utils/classNames';
@@ -153,7 +152,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
   width = 1000,
   height = 700,
   className,
-  orientation: initialOrientation = 'vertical',
+  orientation: _initialOrientation = 'vertical',
   onNodeClick,
   onNodeExpand,
   showStepByStep = false,
@@ -169,7 +168,11 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
   const [filterType, setFilterType] = useState<ProofNodeType | 'all'>('all');
   const [zoomLevel, setZoomLevel] = useState(1);
-  const [internalOrientation, setInternalOrientation] = useState<'vertical' | 'horizontal'>(orientation);
+  const [internalOrientation, setInternalOrientation] = useState<'vertical' | 'horizontal'>(_initialOrientation);
+
+  useEffect(() => {
+    setInternalOrientation(_initialOrientation);
+  }, [_initialOrientation]);
 
   // 将树转换为D3层次结构
   const hierarchyData = React.useMemo(() => {
@@ -321,7 +324,7 @@ export const ProofTreeViz: React.FC<ProofTreeVizProps> = ({
       .attr('stroke', '#9ca3af')
       .attr('stroke-width', 1);
 
-    nodes.filter(d => (d.data as ProofNode).children && (d.data as ProofNode).children!.length > 0)
+    nodes.filter(d => !!(d.data as ProofNode).children && (d.data as ProofNode).children!.length > 0)
       .append('text')
       .attr('x', 0)
       .attr('y', 34)

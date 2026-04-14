@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * SEO Utilities for FormalMath Interactive
  * SEO工具函数

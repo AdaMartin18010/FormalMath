@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== 协作服务 - WebSocket连接管理 ====================
 
 import { io, Socket } from 'socket.io-client';

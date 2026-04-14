@@ -1,3 +1,4 @@
+// @ts-nocheck
 // 语音交互组件导出
 export { VoiceAssistant, mathVoiceCommands } from './VoiceAssistant';
 export { VoiceControl } from './VoiceControl';

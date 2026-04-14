@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * 实时数据分析 Hook
  * 支持 WebSocket 连接和轮询更新

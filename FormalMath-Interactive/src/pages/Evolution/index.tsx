@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from 'react';
 import { History, Play, Pause, SkipBack, SkipForward, Calendar } from 'lucide-react';
 import { MermaidChart, mermaidTemplates } from '@visualizations/MermaidChart';

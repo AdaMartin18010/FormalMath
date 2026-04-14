@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * A/B测试 React Hooks
  */

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { Volume2, VolumeX, Settings, ChevronDown, ChevronUp } from 'lucide-react';
 

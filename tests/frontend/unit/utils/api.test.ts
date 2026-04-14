@@ -1,125 +1,122 @@
-import { 
-  getConcepts, 
-  getConceptById, 
-  searchConcepts,
-  getGraphData 
-} from '../../../FormalMath-Interactive/src/api/graph';
+import {
+  fetchKnowledgeGraph,
+  fetchSubgraphByDomain,
+  fetchNodeNeighbors,
+  searchNodes,
+  fetchNodeDetail,
+  createNode,
+  updateNode,
+  deleteNode,
+  fetchShortestPath,
+  fetchGraphStats,
+  importGraphData,
+  calculateLayout,
+} from '@api/graph';
 
-// Mock fetch
-global.fetch = jest.fn();
+jest.mock('@api/client', () => ({
+  get: jest.fn(),
+  post: jest.fn(),
+  put: jest.fn(),
+  del: jest.fn(),
+}));
 
-describe('API工具函数', () => {
+import { get, post, put, del } from '@api/client';
+
+describe('API图数据工具函数', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  describe('getConcepts', () => {
-    it('应该成功获取概念列表', async () => {
-      const mockConcepts = [
-        { id: '1', name: '群论' },
-        { id: '2', name: '环论' }
-      ];
-      
-      (fetch as jest.Mock).mockResolvedValueOnce({
-        ok: true,
-        json: async () => mockConcepts
-      });
-      
-      const result = await getConcepts();
-      
-      expect(fetch).toHaveBeenCalledWith('/api/concepts');
-      expect(result).toEqual(mockConcepts);
-    });
+  it('fetchKnowledgeGraph 应该调用正确的接口', async () => {
+    const mockData = { nodes: [], edges: [] };
+    (get as jest.Mock).mockResolvedValueOnce({ success: true, data: mockData });
 
-    it('应该处理API错误', async () => {
-      (fetch as jest.Mock).mockResolvedValueOnce({
-        ok: false,
-        status: 500,
-        statusText: 'Internal Server Error'
-      });
-      
-      await expect(getConcepts()).rejects.toThrow('Failed to fetch concepts');
-    });
-
-    it('应该处理网络错误', async () => {
-      (fetch as jest.Mock).mockRejectedValueOnce(new Error('Network error'));
-      
-      await expect(getConcepts()).rejects.toThrow('Network error');
-    });
+    const result = await fetchKnowledgeGraph();
+    expect(get).toHaveBeenCalledWith('/graph/knowledge');
+    expect(result).toEqual({ success: true, data: mockData });
   });
 
-  describe('getConceptById', () => {
-    it('应该成功获取单个概念', async () => {
-      const mockConcept = { id: '1', name: '群论', description: '代数结构' };
-      
-      (fetch as jest.Mock).mockResolvedValueOnce({
-        ok: true,
-        json: async () => mockConcept
-      });
-      
-      const result = await getConceptById('1');
-      
-      expect(fetch).toHaveBeenCalledWith('/api/concepts/1');
-      expect(result).toEqual(mockConcept);
-    });
+  it('fetchSubgraphByDomain 应该传递 domain 和 depth', async () => {
+    const mockData = { nodes: [{ id: '1' }], edges: [] };
+    (get as jest.Mock).mockResolvedValueOnce({ success: true, data: mockData });
 
-    it('应该处理404错误', async () => {
-      (fetch as jest.Mock).mockResolvedValueOnce({
-        ok: false,
-        status: 404,
-        statusText: 'Not Found'
-      });
-      
-      await expect(getConceptById('999')).rejects.toThrow('Concept not found');
-    });
+    await fetchSubgraphByDomain('algebra', 3);
+    expect(get).toHaveBeenCalledWith('/graph/domain/algebra', { params: { depth: 3 } });
   });
 
-  describe('searchConcepts', () => {
-    it('应该成功搜索概念', async () => {
-      const mockResults = [
-        { id: '1', name: '群论', relevance: 0.95 },
-        { id: '2', name: '群同态', relevance: 0.85 }
-      ];
-      
-      (fetch as jest.Mock).mockResolvedValueOnce({
-        ok: true,
-        json: async () => mockResults
-      });
-      
-      const result = await searchConcepts('群');
-      
-      expect(fetch).toHaveBeenCalledWith('/api/concepts/search?q=群');
-      expect(result).toEqual(mockResults);
-    });
+  it('fetchNodeNeighbors 应该传递 nodeId 和 depth', async () => {
+    (get as jest.Mock).mockResolvedValueOnce({ success: true, data: {} });
 
-    it('应该处理空搜索词', async () => {
-      (fetch as jest.Mock).mockResolvedValueOnce({
-        ok: true,
-        json: async () => []
-      });
-      
-      const result = await searchConcepts('');
-      
-      expect(result).toEqual([]);
-    });
+    await fetchNodeNeighbors('node-1', 2);
+    expect(get).toHaveBeenCalledWith('/graph/node/node-1/neighbors', { params: { depth: 2 } });
   });
 
-  describe('getGraphData', () => {
-    it('应该成功获取图谱数据', async () => {
-      const mockGraphData = {
-        nodes: [{ id: '1', name: '群论' }],
-        edges: [{ source: '1', target: '2' }]
-      };
-      
-      (fetch as jest.Mock).mockResolvedValueOnce({
-        ok: true,
-        json: async () => mockGraphData
-      });
-      
-      const result = await getGraphData();
-      
-      expect(fetch).toHaveBeenCalledWith('/api/graph');
-      expect(result).toEqual(mockGraphData);
-    });
+  it('searchNodes 应该调用 post 并传递 filter', async () => {
+    const mockResults = [{ id: '1', label: '群论' }];
+    (post as jest.Mock).mockResolvedValueOnce({ success: true, data: mockResults });
+
+    const filter = { query: '群论', types: ['concept'] };
+    await searchNodes(filter);
+    expect(post).toHaveBeenCalledWith('/graph/search', filter);
+  });
+
+  it('fetchNodeDetail 应该调用 get 并传递 nodeId', async () => {
+    (get as jest.Mock).mockResolvedValueOnce({ success: true, data: {} });
+
+    await fetchNodeDetail('node-1');
+    expect(get).toHaveBeenCalledWith('/graph/nodes/node-1');
+  });
+
+  it('createNode 应该调用 post 并传递 node 数据', async () => {
+    const node = { label: '新节点', type: 'concept' as const, size: 10 };
+    (post as jest.Mock).mockResolvedValueOnce({ success: true, data: { id: 'new-1', ...node } });
+
+    await createNode(node);
+    expect(post).toHaveBeenCalledWith('/graph/nodes', node);
+  });
+
+  it('updateNode 应该调用 put 并传递 updates', async () => {
+    const updates = { label: '更新后的节点' };
+    (put as jest.Mock).mockResolvedValueOnce({ success: true, data: {} });
+
+    await updateNode('node-1', updates);
+    expect(put).toHaveBeenCalledWith('/graph/nodes/node-1', updates);
+  });
+
+  it('deleteNode 应该调用 del 并传递 nodeId', async () => {
+    (del as jest.Mock).mockResolvedValueOnce({ success: true, data: undefined });
+
+    await deleteNode('node-1');
+    expect(del).toHaveBeenCalledWith('/graph/nodes/node-1');
+  });
+
+  it('fetchShortestPath 应该传递 source 和 target', async () => {
+    (get as jest.Mock).mockResolvedValueOnce({ success: true, data: { path: [], distance: 0 } });
+
+    await fetchShortestPath('a', 'b');
+    expect(get).toHaveBeenCalledWith('/graph/path', { params: { source: 'a', target: 'b' } });
+  });
+
+  it('fetchGraphStats 应该调用 /graph/stats', async () => {
+    (get as jest.Mock).mockResolvedValueOnce({ success: true, data: {} });
+
+    await fetchGraphStats();
+    expect(get).toHaveBeenCalledWith('/graph/stats');
+  });
+
+  it('importGraphData 应该调用 post 并传递数据', async () => {
+    const data = { nodes: [], edges: [] };
+    (post as jest.Mock).mockResolvedValueOnce({ success: true, data: { imported: 0, failed: 0 } });
+
+    await importGraphData(data);
+    expect(post).toHaveBeenCalledWith('/graph/import', data);
+  });
+
+  it('calculateLayout 应该调用 post 并传递算法参数', async () => {
+    const data = { nodes: [], edges: [] };
+    (post as jest.Mock).mockResolvedValueOnce({ success: true, data });
+
+    await calculateLayout(data, 'hierarchical');
+    expect(post).toHaveBeenCalledWith('/graph/layout', { data, algorithm: 'hierarchical' });
   });
 });

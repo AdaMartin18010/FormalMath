@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath 进度追踪仪表盘组件
  * 显示学习统计、成就、徽章

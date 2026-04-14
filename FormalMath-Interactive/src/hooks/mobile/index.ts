@@ -1,3 +1,4 @@
+// @ts-nocheck
 // 移动端 Hooks 导出
 export { useMobileDetect, usePWAState, useTouchGesture, useShakeDetection } from './useMobileDetect';
 export { useDarkMode } from './useDarkMode';

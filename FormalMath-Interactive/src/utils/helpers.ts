@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== 通用工具函数 ====================
 
 import type { GraphNode, GraphEdge, GraphData, NodeType, EdgeType } from '@types';

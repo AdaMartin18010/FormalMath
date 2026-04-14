@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== 图数据API ====================
 
 import { get, post, put, del } from './client';

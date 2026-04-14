@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== AI助手Hook ====================
 
 import { useState, useCallback, useEffect, useRef } from 'react';

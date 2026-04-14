@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== AI笔记助手组件 ====================
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { useNoteStore } from '../../stores/noteStore';

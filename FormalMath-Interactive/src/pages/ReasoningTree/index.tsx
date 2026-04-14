@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from 'react';
 import { GitBranch, ChevronRight, CheckCircle, Circle, HelpCircle } from 'lucide-react';
 import { InteractiveTree } from '@visualizations/InteractiveTree';

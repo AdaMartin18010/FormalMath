@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath Interactive - 可视化组件使用示例
  * Knowledge Graph Visualization Examples

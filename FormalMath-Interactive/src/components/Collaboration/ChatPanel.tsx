@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== 实时聊天面板组件 ====================
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';

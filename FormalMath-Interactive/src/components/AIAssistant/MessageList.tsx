@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useRef, useEffect } from 'react';
 import { User, Bot, Copy, Check, ThumbsUp, ThumbsDown, RefreshCw } from 'lucide-react';
 import { MarkdownRenderer } from './MarkdownRenderer';

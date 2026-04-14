@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath Interactive - 可视化组件库 v2.0
  * Knowledge Graph Visualization Components

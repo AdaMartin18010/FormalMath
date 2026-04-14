@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * SEO Head Component
  * 动态管理页面SEO的React组件

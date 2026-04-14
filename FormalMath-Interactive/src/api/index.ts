@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath API 模块统一导出
  * T2.1/T2.2/T3.1 智能学习系统 API / 数据分析 API

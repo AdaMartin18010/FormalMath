@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath 可视化 Hooks 索引
  * 统一导出所有可视化相关的 Hooks

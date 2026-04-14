@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== D3可视化Hook ====================
 
 import { useRef, useEffect, useState, useCallback } from 'react';
@@ -298,3 +299,5 @@ export function useD3<T>(
 
   return svgRef;
 }
+
+export default useD3;

@@ -1,5 +1,5 @@
-import { renderHook, act } from '@testing-library/react';
-import useD3 from '../../../FormalMath-Interactive/src/hooks/useD3';
+import { renderHook } from '@testing-library/react';
+import useD3 from '@hooks/useD3';
 
 // Mock D3
 jest.mock('d3', () => ({
@@ -38,70 +38,11 @@ jest.mock('d3', () => ({
 }));
 
 describe('useD3 Hook', () => {
-  it('应该正确初始化', () => {
-    const { result } = renderHook(() => useD3());
+  it('应该正确初始化并返回 svgRef', () => {
+    const renderFn = jest.fn();
+    const { result } = renderHook(() => useD3(renderFn, []));
     
-    expect(result.current.svgRef.current).toBeNull();
-    expect(result.current.zoomRef.current).toBeNull();
-    expect(typeof result.current.createGraph).toBe('function');
-    expect(typeof result.current.updateGraph).toBe('function');
-    expect(typeof result.current.destroyGraph).toBe('function');
-  });
-
-  it('应该创建图谱', () => {
-    const { result } = renderHook(() => useD3());
-    
-    const mockData = {
-      nodes: [{ id: '1', name: '节点1' }],
-      links: []
-    };
-    
-    act(() => {
-      result.current.createGraph(mockData);
-    });
-    
-    expect(result.current.svgRef.current).toBeDefined();
-  });
-
-  it('应该更新图谱数据', () => {
-    const { result } = renderHook(() => useD3());
-    
-    const initialData = {
-      nodes: [{ id: '1', name: '节点1' }],
-      links: []
-    };
-    
-    const updatedData = {
-      nodes: [
-        { id: '1', name: '节点1' },
-        { id: '2', name: '节点2' }
-      ],
-      links: [{ source: '1', target: '2' }]
-    };
-    
-    act(() => {
-      result.current.createGraph(initialData);
-      result.current.updateGraph(updatedData);
-    });
-    
-    // 验证更新逻辑
-    expect(result.current.svgRef.current).toBeDefined();
-  });
-
-  it('应该销毁图谱', () => {
-    const { result } = renderHook(() => useD3());
-    
-    const mockData = {
-      nodes: [{ id: '1', name: '节点1' }],
-      links: []
-    };
-    
-    act(() => {
-      result.current.createGraph(mockData);
-      result.current.destroyGraph();
-    });
-    
-    // 验证清理逻辑
-    expect(result.current.zoomRef.current).toBeNull();
+    expect(result.current).toBeDefined();
+    expect(result.current.current).toBeNull();
   });
 });

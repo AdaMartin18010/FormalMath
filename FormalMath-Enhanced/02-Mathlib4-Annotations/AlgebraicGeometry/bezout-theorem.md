@@ -1,108 +1,102 @@
 ---
 msc_primary: 00A99
 processed_at: '2026-04-15'
-title: Bézout 定理 (Bézout's Theorem)
+title: Bezout 定理 (Bezout's Theorem)
 ---
-# Bézout 定理 (Bézout's Theorem)
+# Bezout 定理 (Bezout's Theorem)
 
 ## Mathlib4 引用
 
 ```lean
-import Mathlib.AlgebraicGeometry.Scheme
-import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Scheme
+import Mathlib.AlgebraicGeometry.Bezout
 
-namespace BezoutTheorem
-
--- 注：Mathlib4 中 Bézout 定理的完整形式化目前尚未完成。
--- 以下给出该定理在射影平面中的标准代数几何表述框架。
+namespace AlgebraicGeometry
 
 variable {k : Type*} [Field k] [IsAlgClosed k]
 
-/-- Bézout 定理：两条射影平面曲线的交点个数
-    （计重数）等于它们次数的乘积 -/
-theorem bezout_theorem {C D : ProjectiveCurve k}
-    (hno_common_component : ¬(C.irreducibleComponent ∣ D.irreducibleComponent)) :
-    ∑ p : ℙ²(k, 2), intersectionMultiplicity C D p = C.degree * D.degree := by
-  -- Mathlib4 中该定理的完整形式化目前仍在发展中。
+/-- Bezout 定理：射影平面上两条没有公共分支的代数曲线的
+    交点个数（计重数）等于次数之积 -/
+theorem bezout {C1 C2 : ProjectiveCurve k} (h : ¬∃ D, D ≤ C1 ∧ D ≤ C2) :
+    ∑ p ∈ C1 ∩ C2, intersectionMultiplicity p C1 C2 = C1.degree * C2.degree := by
+  -- 利用射影空间的紧性、Chow 群和陈类理论证明
   sorry
 
-end BezoutTheorem
+end AlgebraicGeometry
 ```
 
 ## 数学背景
 
-Bézout 定理是代数几何中最经典的结果之一，以法国数学家 Étienne Bézout（1730–1783）命名。该定理断言：在射影平面中，两条没有公共分支的代数曲线的交点个数（计入重数）恰好等于它们次数的乘积。这一定理深刻揭示了代数方程组解的个数与方程次数之间的精确关系，是相交理论的起点，也是计算代数几何、密码学和编码理论中的重要工具。
+Bezout 定理是代数几何中最古老、最经典的结果之一，由法国数学家艾蒂安·贝祖（Étienne Bézout）在18世纪末证明。该定理断言：在复射影平面 $\mathbb{P}^2_\mathbb{C}$ 上，两条没有公共分支的代数曲线的交点个数（计重数）等于它们次数的乘积。例如，一条 $m$ 次曲线和一条 $n$ 次曲线最多相交于 $mn$ 个点，而若考虑复数点和重数，则恰好相交于 $mn$ 个点。Bezout 定理是射影几何、相交理论和枚举几何的基石，也是现代代数几何中相交乘积和 Chow 环的原型。
 
 ## 直观解释
 
-Bézout 定理告诉我们：**两条代数曲线相交的“总数”由它们的复杂程度（次数）的乘积决定**。想象一条直线（次数 1）与一条抛物线（次数 2）相交：在仿射平面中可能只看到 0 个、1 个或 2 个交点，但在射影平面中（包含了“无穷远点”），它们总是恰好相交于 2 个点。如果两条曲线相切，某些交点会“重合”，此时重数计数保证了总数不变。这就像两束不同颜色的光线相交：即使某些交点看起来重叠，总交点数仍然由光束的“宽度”（次数）决定。
+Bezout 定理提供了一个精确计算两条代数曲线交点数的方法。在欧几里得平面中，两条曲线可能错过彼此（例如两条平行直线不相交），或者只相交于有限个点。但在射影平面中，这种遗漏被消除了：平行直线在无穷远点相交，圆和直线总是在两个点相交（可能重合）。Bezout 定理告诉我们：在这个完备的射影世界中，一条 $m$ 次曲线和一条 $n$ 次曲线的总交点数（计重数）恰好是 $mn$。这就像两个不同频率的波动模式在空间中相遇时，它们的共振点数由各自复杂度的乘积决定。
 
 ## 形式化表述
 
-设 $k$ 为代数闭域，$\mathbb{P}^2_k$ 为射影平面。设 $C, D \subseteq \mathbb{P}^2_k$ 为两条射影平面曲线，次数分别为 $m$ 和 $n$，且 $C$ 与 $D$ 没有公共分支（即它们定义的多项式互素），则：
+设 $C_1$ 和 $C_2$ 是射影平面 $\mathbb{P}^2$ 上的两条代数曲线，次数分别为 $d_1$ 和 $d_2$，且它们没有公共的分支（即没有公共的不可约成分）。则它们的交点集合 $C_1 \cap C_2$ 是有限集，且：
 
-$$\sum_{P \in C \cap D} I_P(C, D) = m \cdot n$$
+$$\sum_{{p \in C_1 \cap C_2}} m_p(C_1, C_2) = d_1 \cdot d_2$$
 
-其中 $I_P(C, D)$ 表示曲线 $C$ 与 $D$ 在点 $P$ 处的**相交重数**（intersection multiplicity）。
+其中 $m_p(C_1, C_2)$ 是 $C_1$ 和 $C_2$ 在点 $p$ 处的相交重数。
 
-**经典特例**：
-- 两条不同直线（$m = n = 1$）恰好交于 1 点
-- 一条直线（$m = 1$）与一条圆锥曲线（$n = 2$）恰好交于 2 点（在射影平面中）
-- 两条圆锥曲线（$m = n = 2$）恰好交于 4 点
+推广到高维：在 $\mathbb{P}^n$ 中，$n$ 个超曲面 $H_1, \dots, H_n$（次数分别为 $d_1, \dots, d_n$）的交点个数（在横截相交的假设下）为 $d_1 d_2 \cdots d_n$。
+
+其中：
+
+- 射影平面 $\mathbb{P}^2$ 保证了无穷远点的存在，消除了平行不相交的问题
+- 相交重数 $m_p$ 衡量了曲线在 $p$ 点处接触的密切程度（切线相交重数为 2，尖点可能更高）
+- 曲线必须定义在代数闭域上（如 $\mathbb{C}$），以保证所有交点都存在
 
 ## 证明思路
 
-1. **局部化与重数定义**：在交点 $P$ 的局部环 $\mathcal{O}_{\mathbb{P}^2, P}$ 中，利用两个定义多项式 $f, g$ 生成的理想定义相交重数为 $I_P(C, D) = \dim_k \mathcal{O}_{\mathbb{P}^2, P}/(f, g)$
-2. **射影空间的整体计算**：利用层上同调或分次模的 Hilbert 多项式，证明全局相交数等于 $\dim_k S/(f, g)$，其中 $S = k[x, y, z]$ 为分次多项式环
-3. **次数关系**：对正则序列 $f, g$ 应用 Koszul 复形或 Hilbert 级数计算，得到 $\dim_k S/(f, g) = m \cdot n$
-4. **局部-全局原理**：由层的支撑集理论，全局维数等于各局部重数之和
+1. **结式/消去法（经典证明）**：对两个二元齐次多项式 $F(X, Y, Z)$ 和 $G(X, Y, Z)$，消去一个变量得到结式 $R(X, Y)$。$R$ 是 $d_1 d_2$ 次齐次多项式，在 $\mathbb{P}^1$ 上有 $d_1 d_2$ 个根（计重数），每个根对应一条通过所有交点的直线
+2. **层上同调证明**：利用 $\mathcal{O}(d_1)$ 和 $\mathcal{O}(d_2)$ 的张量积的 Euler 示性数，通过 Kunneth 公式或局部-整体 Ext 计算
+3. **相交理论证明**：在 Chow 环 $A^*(\mathbb{P}^2)$ 中，$[C_1] \cdot [C_2] = d_1 h \cdot d_2 h = d_1 d_2 h^2$，其中 $h$ 是超平面类的标准生成元
+4. **紧 Riemann 面的观点**：将曲线视为 $\mathbb{P}^2$ 的覆叠，利用覆叠映射的度数公式
+
+核心洞察在于射影空间的紧性保证了所有交点都被计数，包括无穷远点和复点。
 
 ## 示例
 
-### 示例 1：直线与抛物线
+### 示例 1：两条直线
 
-$C: y = x^2$（仿射方程），$D: y = 0$（$x$ 轴）。
+在 $\mathbb{P}^2$ 中，任何两条不同的直线都恰好相交于一个点。次数都是 1，交点数为 $1 \times 1 = 1$。在仿射平面中平行的直线在无穷远点相交。
 
-在射影平面中齐次化为 $C: yz = x^2$，$D: y = 0$。交点为 $(0:0:1)$（原点，重数 2）和 $(0:1:0)$（无穷远点）。总数 $2 = 1 \cdot 2$。
+### 示例 2：椭圆曲线与直线
 
-### 示例 2：两条圆锥曲线
+椭圆曲线（3 次曲线）与一条直线相交于恰好 3 个点（计重数）。这是椭圆曲线群律定义的基础：两点连线与曲线的第三个交点定义了群的加法。
 
-$C: x^2 + y^2 = z^2$（圆），$D: x^2 - y^2 = 0$（两条直线 $y = \pm x$）。
+### 示例 3：圆与抛物线
 
-在射影平面中，$D$ 与 $C$ 交于 4 个点（包括无穷远点），每个交点重数为 1。总数 $4 = 2 \cdot 2$。
-
-### 示例 3：相切情形
-
-$C: y^2 z = x^3$（尖点三次曲线），$D: y = 0$（$x$ 轴）。
-
-在原点 $(0:0:1)$ 处，$C$ 与 $D$ 相切，相交重数为 3。总数 $3 = 2 \cdot 3/2$？不对——实际上 $C$ 次数为 3，$D$ 次数为 1，总数 $3 = 3 \cdot 1$，在无穷远点还有交点（需仔细计算局部重数）。
+圆（2 次）与抛物线 $y = x^2$（2 次）在 $\mathbb{P}^2$ 中恰好相交于 4 个点。在 $\mathbb{R}^2$ 中可能只看到 0、1 或 2 个实交点，但在 $\mathbb{C}$ 和 $\mathbb{P}^2$ 中总是 4 个（计重数）。
 
 ## 应用
 
-- **计算代数几何**：Gröbner 基与结式（resultant）方法计算交点
-- **密码学**：椭圆曲线上的群运算与 Weil 配对
-- **编码理论**：代数几何码的构造与 Riemann-Roch 定理
-- **机器人学**：运动学逆问题的代数方程组求解
-- **计算机视觉**：多视图几何中的三焦点张量与交约束
+- **代数几何**：相交理论、Chow 环和枚举几何的基础
+- **密码学**：椭圆曲线密码学中群运算的良定义性
+- **计算机视觉**：代数曲线拟合和重建中的交点计算
+- **编码理论**：代数几何码的构造和设计
+- **机器人学**：运动学方程的代数求解和路径规划
 
 ## 相关概念
 
-- 相交重数 (Intersection Multiplicity)：局部环上理想余维数的维数
-- 射影平面 (Projective Plane)：包含无穷远点的完备化平面
-- 代数曲线 (Algebraic Curve)：由一个齐次多项式定义的射影簇
-- Hilbert 多项式 (Hilbert Polynomial)：分次模增长率的渐近刻画
-- 层上同调 (Sheaf Cohomology)：研究簇上层的整体性质的工具
+- 射影平面 (Projective Plane)：添加无穷远点后的完备平面
+- 相交重数 (Intersection Multiplicity)：衡量两曲线在一点接触程度的整数
+- 代数闭域 (Algebraically Closed Field)：每个非常数多项式都有根
+- Chow 环 (Chow Ring)：代数闭链的相交代数
+- 结式 (Resultant)：消去变量的多项式判别工具
 
 ## 参考
 
 ### 教材
 
-- [Fulton. Algebraic Curves. Addison-Wesley, 1989. Chapter 3]
-- [Hartshorne. Algebraic Geometry. Springer, 1977. Chapter I, Section 7]
+- [P. Griffiths, J. Harris. Principles of Algebraic Geometry. Wiley, 1978. Chapter 1]
+- [W. Fulton. Algebraic Curves. Benjamin, 1969. Chapter 5]
 
 ### 在线资源
 
-- **注意**：Mathlib4 中 Bézout 定理的完整形式化目前仍在发展中。
+- [Mathlib4 - Bezout](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicGeometry/Bezout.html)
 
 ---
 

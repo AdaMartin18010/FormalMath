@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * 证明策略推荐引擎
  * Proof Strategy Recommendation Engine

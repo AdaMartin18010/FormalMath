@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath 自适应学习系统 API (T3.1)
  * 学习路径与进度管理

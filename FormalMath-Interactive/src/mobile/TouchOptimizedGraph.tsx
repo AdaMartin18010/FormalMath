@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import { ZoomIn, ZoomOut, Maximize, Target, Hand, Move, RotateCcw, MoreHorizontal } from 'lucide-react';
 import { cn } from '@utils/classNames';

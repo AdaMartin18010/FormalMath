@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
-processed_at: '2026-04-03'
-title: 希尔伯特基定理 (Hilbert's Basis Theorem)
+processed_at: '2026-04-15'
+title: Hilbert 基定理 (Hilbert's Basis Theorem)
 ---
-# 希尔伯特基定理 (Hilbert's Basis Theorem)
+# Hilbert 基定理 (Hilbert's Basis Theorem)
 
 ## Mathlib4 引用
 
@@ -11,127 +11,93 @@ title: 希尔伯特基定理 (Hilbert's Basis Theorem)
 import Mathlib.RingTheory.Polynomial.Basic
 import Mathlib.RingTheory.Noetherian
 
-namespace Polynomial
+namespace RingTheory
 
 variable {R : Type*} [CommRing R]
 
-/-- 希尔伯特基定理：R诺特蕴含R[X]诺特 -/
-theorem isNoetherianRing_polynomial (hR : IsNoetherianRing R) :
-    IsNoetherianRing R[X] := by
-  rw [isNoetherianRing_iff_ideal_fg]
-  intro I
-  -- 关键步骤：考虑首项系数理想
-  let lcIdeal : Ideal R := {
-    carrier := {r | ∃ p ∈ I, p.leadingCoeff = r},
-    zero_mem' := ⟨0, I.zero_mem, leadingCoeff_zero⟩
-    add_mem' := sorry
-    smul_mem' := sorry
-  }
-  -- 利用R的诺特性
-  have hlc : lcIdeal.FG := (isNoetherianRing_iff_ideal_fg R).mp hR lcIdeal
-  rcases hlc with ⟨S, hS⟩
-  -- 构造I的有限生成集
+/-- Hilbert 基定理：若 R 是 Noether 环，则多项式环 R[X] 也是 Noether 环 -/
+theorem hilbert_basis [IsNoetherianRing R] : IsNoetherianRing (Polynomial R) := by
+  -- 利用理想的首项系数构造 R 中的升链，由 R 的 ACC 推出 R[X] 的 ACC
   sorry
 
-theorem isNoetherianRing_mvPolynomial {σ : Type*} [Finite σ] (hR : IsNoetherianRing R) :
-    IsNoetherianRing (MvPolynomial σ R) := by
-  cases nonempty_fintype σ
-  induction ‹Fintype σ› using Fintype.induction_subsingleton
-  · -- 单例情形
-    simp [MvPolynomial.pUnitAlgEquiv]
-    infer_instance
-  · -- 归纳步骤
-    simp [MvPolynomial.optionEquivRight]
-    infer_instance
-
-end Polynomial
+end RingTheory
 ```
 
 ## 数学背景
 
-希尔伯特基定理由David Hilbert于1888年在其不变量理论研究中证明。当时Hilbert采用非构造性方法证明了多项式环的理想有限生成性，引发了与Paul Gordan关于"这不是数学，这是神学"的著名争论。这一定理奠定了交换代数的基础，对代数几何的发展产生了深远影响。
+Hilbert 基定理是交换代数中最具影响力的定理之一，由德国数学家大卫·希尔伯特（David Hilbert）于1890年证明。该定理断言：若 $R$ 是 Noether 环（即每个理想都是有限生成的），则一元多项式环 $R[X]$ 也是 Noether 环。由归纳法，多元多项式环 $R[X_1, \dots, X_n]$ 也是 Noether 环。Hilbert 基定理是代数几何的基石之一：它保证了仿射代数簇可以由有限多个多项式方程定义，从而将代数几何从无限的方程组研究中解放出来。这一定理也是证明代数不变量有限生成性的核心工具。
 
 ## 直观解释
 
-希尔伯特基定理告诉我们：**诺特环上的多项式环仍然是诺特环**。换句话说，有限条件在多变量多项式下保持。
-
-想象一个有理数域上的多项式环 $\mathbb{Q}[x,y,z]$。定理说尽管有无穷多个多项式，任何理想（多项式方程组）都可以由有限个多项式"控制"。这就像在无限维空间中有某种"紧致性"——无穷集合可以由有限信息描述。
+Hilbert 基定理解决了一个基本但至关重要的问题：多项式环中的理想是否总是有限生成的？在整数环 $\mathbb{Z}$ 或域 $k$ 上，答案是肯定的。Hilbert 基定理将这个性质优雅地推广到了多项式环：如果基础环 $R$ 的每个理想都是有限生成的，那么 $R[X]$（进而 $R[X_1, \dots, X_n]$）的每个理想也都是有限生成的。在代数几何中，这意味着任何由多项式方程定义的集合（仿射簇）实际上只需要有限多个方程就能描述。例如，三维空间中的任何代数曲面系统，尽管可能涉及无穷多个多项式方程，但 Hilbert 基定理保证其中只有有限个是独立的，其余都可以由这有限个方程导出。
 
 ## 形式化表述
 
-环 $R$ 称为**诺特环**，如果满足以下等价条件之一：
+设 $R$ 是含幺交换环。若 $R$ 是 Noether 环，即 $R$ 的每个理想都是有限生成的，则：
 
-1. 任何理想的升链稳定
-2. 任何理想都是有限生成的
+1. 一元多项式环 $R[X]$ 也是 Noether 环
+2. 由归纳法，多元多项式环 $R[X_1, X_2, \dots, X_n]$ 也是 Noether 环
 
-**希尔伯特基定理**：若 $R$ 是诺特环，则多项式环 $R[X]$ 也是诺特环。
+等价表述：
 
-**推论**：$R[X_1, X_2, \ldots, X_n]$ 也是诺特环。
+$R[X]$ 中的任何理想的升链 $I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots$ 都会稳定化，即存在 $N$ 使得对所有 $n \geq N$ 有 $I_n = I_N$。
 
-**几何解释**：诺特环的谱是诺特拓扑空间（闭集满足降链条件）。
+其中：
+
+- Noether 环是以埃米·诺特（Emmy Noether）命名的环，满足理想的升链条件（ACC）
+- 有限生成理想是指存在有限个元素 $f_1, \dots, f_m$ 使得 $I = (f_1, \dots, f_m)$
+- 该定理对非交换环也有相应版本，但表述更为复杂
 
 ## 证明思路
 
-1. **构造首项系数理想**：对 $R[X]$ 的理想 $I$，考虑其多项式首项系数构成的 $R$ 的理想 $J$
-2. **利用诺特性**：$J$ 有限生成，设生成元对应多项式 $f_1, \ldots, f_m$
-3. **控制次数**：对次数不超过 $N$ 的多项式（$N$ 是 $f_i$ 的最大次数），构造有限生成集
-4. **归纳论证**：证明 $I$ 可由 $\{f_1, \ldots, f_m\}$ 与低次多项式生成
-5. **有限性**：低次多项式可用归纳假设处理
+1. **首项系数的提取**：设 $I \subseteq R[X]$ 是理想。对每个多项式，考虑其首项系数，定义 $J_n \subseteq R$ 为 $I$ 中次数不超过 $n$ 的多项式的首项系数集合
+2. **理想的升链**：$J_0 \subseteq J_1 \subseteq J_2 \subseteq \cdots$ 构成 $R$ 中理想的升链
+3. **ACC 的应用**：由于 $R$ 是 Noether 环，这个升链稳定化：存在 $N$ 使得 $J_N = J_{{N+1}} = \cdots$
+4. **有限生成性**：每个 $J_n$（$n \leq N$）都是有限生成的，对应的生成元可以提升为 $I$ 中的有限个多项式。可以证明这有限个多项式生成整个 $I$
 
-核心洞察是首项系数的"分次"结构允许将无限问题约化为有限层次。
+核心洞察在于多项式环中理想的复杂程度可以被基础环中的理想升链所控制。
 
 ## 示例
 
-### 示例 1：一元多项式
+### 示例 1：仿射簇的有限定义
 
-$\mathbb{Q}[x]$ 是诺特环。任何理想形如 $(f)$，由最大公因式生成。
+设 $k$ 是代数闭域。$k^n$ 中的任何代数集 $V$ 都可以由有限多个多项式方程定义。例如，$k[x, y]$ 中的任何理想都是有限生成的，因此 $k^2$ 中的任何代数曲线系统都只需有限个方程。
 
-例如理想 $I = (x^2-1, x^3-1) = (x-1)$。
+### 示例 2：不变量理论
 
-### 示例 2：二元多项式
+Hilbert 最初证明该定理的动机是解决不变量理论中的问题：设 $G$ 是 $GL_n(k)$ 的子群，作用在多项式环 $k[x_1, \dots, x_n]$ 上。不变量环 $k[x_1, \dots, x_n]^G$ 是有限生成的 $k$-代数。这是 Hilbert 基定理和 Noether 正规化定理的推论。
 
-$\mathbb{Q}[x,y]$ 中理想 $I = (x^2, xy, y^2)$ 有限生成。
+### 示例 3：Grobner 基的计算终止性
 
-注意：虽然理想有限生成，但判断成员归属（理想成员问题）计算复杂。
-
-### 示例 3：仿射簇
-
-设 $V \subseteq \mathbb{A}^n$ 是仿射簇，$I(V) \subseteq k[x_1,\ldots,x_n]$ 是其理想。
-
-由基定理，$I(V) = (f_1, \ldots, f_m)$ 有限生成，故 $V$ 可由有限个方程定义：
-$$V = \{(x_1,\ldots,x_n) \in \mathbb{A}^n : f_1(x) = \cdots = f_m(x) = 0\}$$
+在计算代数中，Buchberger 算法用于计算理想的 Grobner 基。Hilbert 基定理保证了该算法在有限步内终止，因为多项式环中的理想升链必须稳定。
 
 ## 应用
 
-- **代数几何**：仿射簇的有限定义性
-- **不变量理论**：多项式不变量的有限生成性
-- **计算代数**：Gröbner基算法的基础
-- **代数数论**：整数环的诺特性保持
+- **代数几何**：仿射簇的有限定义和坐标环的研究
+- **交换代数**：Noether 环的构造和理想的有限生成性
+- **不变量理论**：群作用下不变量环的有限生成性
+- **计算代数**：Grobner 基和理想成员的判定算法
+- **代数数论**：整数环上多项式环的算术性质
 
 ## 相关概念
 
-- 诺特环 (Noetherian Ring)：满足升链条件的环
-- 多项式环 (Polynomial Ring)：环上的多项式
-- Gröbner基 (Gröbner Basis)：多项式理想的计算工具
-- 仿射簇 (Affine Variety)：多项式方程组的解集
-- 升链条件 (ACC)：诺特性的等价表述
+- Noether 环 (Noetherian Ring)：满足理想升链条件的环
+- 多项式环 (Polynomial Ring)：一个或多个不定元的多项式构成的环
+- 升链条件 (ACC)：任何理想的升链最终稳定
+- 仿射簇 (Affine Variety)：多项式零点集的代数几何对象
+- Grobner 基 (Grobner Basis)：多项式理想的特殊生成集，便于计算
 
 ## 参考
 
 ### 教材
 
-- [Atiyah & Macdonald. Introduction to Commutative Algebra. Addison-Wesley, 1969. Chapter 7]
-- [Dummit & Foote. Abstract Algebra. Wiley, 3rd edition, 2004. Section 9.6]
-
-### 历史文献
-
-- [Hilbert. Über die Theorie der algebraischen Formen. Mathematische Annalen, 1890]
+- [M. F. Atiyah, I. G. Macdonald. Introduction to Commutative Algebra. Addison-Wesley, 1969. Chapter 7]
+- [D. Eisenbud. Commutative Algebra with a View Toward Algebraic Geometry. Springer, 1995. Chapter 1]
 
 ### 在线资源
 
-- [Mathlib4 文档 - Polynomial Noetherian][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/Basic.html](需更新)
-- [Stacks Project - 00FM][https://stacks.math.columbia.edu/tag/00FM](需更新)
+- [Mathlib4 - Noetherian](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Noetherian.html)
 
 ---
 
-*最后更新：2026-04-03 | 版本：v1.0.0*
+*最后更新：2026-04-15 | 版本：v1.0.0*

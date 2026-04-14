@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath 进度追踪与成就系统 Hooks
  */

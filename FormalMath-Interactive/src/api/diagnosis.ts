@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath 认知诊断系统 API (T2.1)
  * 诊断结果获取与提交

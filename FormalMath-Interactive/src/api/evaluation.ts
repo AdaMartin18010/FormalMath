@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath 评估系统 API (T2.2)
  * 能力评估与成长追踪

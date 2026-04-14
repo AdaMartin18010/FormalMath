@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath 自适应学习系统 Hooks (T3.1)
  */

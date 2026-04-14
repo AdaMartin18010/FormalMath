@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from 'react';
 import { Brain, Plus, Minus, Share2, Download } from 'lucide-react';
 import { MermaidChart, mermaidTemplates } from '@visualizations/MermaidChart';

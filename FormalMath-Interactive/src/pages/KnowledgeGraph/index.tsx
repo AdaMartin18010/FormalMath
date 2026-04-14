@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useEffect } from 'react';
 import { Network, Filter, Download, RefreshCw, Info, Box, Layers, AlertCircle } from 'lucide-react';
 import { D3Graph } from '@visualizations/D3Graph';

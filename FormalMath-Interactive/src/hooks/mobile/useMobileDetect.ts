@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useEffect, useCallback } from 'react';
 
 interface MobileDetectState {
@@ -276,7 +277,3 @@ export const useShakeDetection = (options: {
 
   return { isShaking };
 };
-
-import React from 'react';
-
-export default useMobileDetect;

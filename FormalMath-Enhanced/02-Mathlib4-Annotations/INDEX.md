@@ -11,24 +11,24 @@ title: Mathlib4 教育注释索引
 
 | 领域 | 已注释定理数 | 目标数量 |
 |------|------------|----------|
-| 代数学 (Algebra) | 28 | 30 |
-| 分析学 (Analysis) | 23 | 25 |
+| 代数学 (Algebra) | 31 | 30 |
+| 分析学 (Analysis) | 27 | 25 |
 | 数论 (NumberTheory) | 19 | 20 |
 | 线性代数 (LinearAlgebra) | 18 | 20 |
-| 拓扑学 (Topology) | 15 | 15 |
+| 拓扑学 (Topology) | 17 | 15 |
 | 几何学 (Geometry) | 15 | 15 |
 | 高等代数学 (AdvancedAlgebra) | 21 | 25 |
 | 高等分析学 (AdvancedAnalysis) | 12 | 12 |
-| 微积分 (Calculus) | 17 | 18 |
+| 微积分 (Calculus) | 20 | 18 |
 | 组合数学 (Combinatorics) | 8 | 10 |
-| 代数几何 (AlgebraicGeometry) | 10 | 12 |
-| 代数拓扑 (AlgebraicTopology) | 9 | 10 |
+| 代数几何 (AlgebraicGeometry) | 12 | 12 |
+| 代数拓扑 (AlgebraicTopology) | 11 | 10 |
 | 图论 (GraphTheory) | 10 | 10 |
 | 概率论 (Probability) | 10 | 10 |
-| 逻辑基础 (LogicFoundation) | 8 | 10 |
-| **总计** | **223** | **200** |
+| 逻辑基础 (LogicFoundation) | 10 | 10 |
+| **总计** | **241** | **200** |
 
-**当前完成度：111.5%** ✅
+**当前完成度：120.5%** ✅
 
 ---
 
@@ -47,7 +47,7 @@ title: Mathlib4 教育注释索引
 | Noether 正规化 | [noether-normalization.md](./Algebra/noether-normalization.md) | ⭐⭐⭐⭐⭐ | 整扩张、仿射代数 |
 | Artin-Wedderburn 定理 | [artin-wedderburn-theorem.md](./Algebra/artin-wedderburn-theorem.md) | ⭐⭐⭐⭐⭐ | 半单代数、矩阵代数 |
 
-*（及其他 18 个定理）*
+*（及其他 21 个定理）*
 
 ---
 
@@ -64,7 +64,7 @@ title: Mathlib4 教育注释索引
 | Fourier 反演定理 | [fourier-inversion-theorem.md](./Analysis/fourier-inversion-theorem.md) | ⭐⭐⭐⭐ | 傅里叶变换、可积性 |
 | 复分析 Liouville 定理 | [liouville-theorem-complex.md](./Analysis/liouville-theorem-complex.md) | ⭐⭐⭐ | 整函数、有界性 |
 
-*（及其他 15 个定理）*
+*（及其他 19 个定理）*
 
 ---
 

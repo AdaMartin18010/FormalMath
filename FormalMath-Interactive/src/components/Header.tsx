@@ -36,7 +36,11 @@ const navItems: NavItem[] = [
   { path: '/proof-assistant', label: '证明助手', icon: <CheckCircle2 className="w-4 h-4" /> },
 ];
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  onToggleSidebar?: () => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ onToggleSidebar }) => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -47,7 +51,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm">
+    <header data-testid="header" className="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -129,7 +133,11 @@ export const Header: React.FC = () => {
 
             {/* Mobile Menu Toggle */}
             <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              data-testid="menu-button"
+              onClick={() => {
+                setIsMobileMenuOpen(!isMobileMenuOpen);
+                onToggleSidebar?.();
+              }}
               className="lg:hidden p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -155,7 +163,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-white">
+        <div data-testid="mobile-header" className="lg:hidden border-t border-gray-200 bg-white">
           <div className="px-4 py-3 space-y-1">
             {navItems.map((item) => (
               <Link

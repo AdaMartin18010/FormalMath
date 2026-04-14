@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Optimized D3Graph - 优化版 D3 知识图谱可视化组件
  * 

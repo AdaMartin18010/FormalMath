@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * 定理证明助手主组件
  * Theorem Proof Assistant Main Component

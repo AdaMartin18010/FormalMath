@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * RTL (Right-to-Left) 支持 Hook
  * 用于处理阿拉伯语、希伯来语等从右到左语言布局

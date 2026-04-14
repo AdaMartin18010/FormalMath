@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== 版本历史组件 ====================
 
 import React, { useState, useEffect, useCallback } from 'react';

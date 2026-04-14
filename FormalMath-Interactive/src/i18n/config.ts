@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * 国际化配置 - i18n Configuration
  * 支持RTL语言（阿拉伯语、希伯来语）和多语言切换

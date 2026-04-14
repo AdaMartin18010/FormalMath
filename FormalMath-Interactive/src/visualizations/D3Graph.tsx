@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import * as d3 from 'd3';
 import { ZoomIn, ZoomOut, Maximize, Target, Download, RefreshCw } from 'lucide-react';

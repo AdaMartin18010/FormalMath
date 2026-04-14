@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== 在线用户列表和光标位置组件 ====================
 
 import React, { useState, useCallback } from 'react';

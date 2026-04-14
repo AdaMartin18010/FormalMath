@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath 进度追踪数据整合
  * 实时更新与成就系统

@@ -38,7 +38,6 @@ export interface BenchmarkConfig {
 // ============================================
 
 export class PerformanceTester {
-  private _results: PerformanceTestResult[] = [];
   private frameCount = 0;
   private lastTime = 0;
   private rafId: number | null = null;

@@ -1,141 +1,106 @@
 ---
 msc_primary: 00A99
-processed_at: '2026-04-03'
-title: 中山引理 (Nakayama Lemma)
+processed_at: '2026-04-15'
+title: Nakayama 引理 (Nakayama's Lemma)
 ---
-# 中山引理 (Nakayama Lemma)
+# Nakayama 引理 (Nakayama's Lemma)
 
 ## Mathlib4 引用
 
 ```lean
-import Mathlib.RingTheory.Ideal.Basic
-import Mathlib.RingTheory.Finiteness
+import Mathlib.RingTheory.Ideal.LocalRing
+import Mathlib.RingTheory.Noetherian
 
-namespace Nakayama
+namespace RingTheory
 
-variable {R : Type*} [CommRing R] {M : Type*} [AddCommGroup M] [Module R M]
+variable {R M : Type*} [CommRing R] [AddCommGroup M] [Module R M]
+  (I : Ideal R) (hI : I ≤ Jacobson R)
 
-/-- 中山引理：若M=IM且I含于Jacobson根，则M=0 -/
-theorem nakayama_lemma {I : Ideal R} (hI : I ≤ jacobson R)
-    (hM : Submodule.span R (Set.image (fun i m => i • m) (I ×ˢ Set.univ)) = ⊤) :
-    Subsingleton M := by
-  -- 反证法
-  by_contra h
-  rw [not_subsingleton_iff_nontrivial] at h
-  -- 利用Jacobson根的性质
-  have hJ : ∀ x ∈ I, IsUnit (1 + x) := by
-    intro x hx
-    exact isUnit_of_mem_jacobson (hI hx)
-  -- 构造非零元素的逆
+/-- Nakayama 引理：若 M = I M 且 M 有限生成，则 M = 0 -/
+theorem nakayama (hM : Module.Finite R M) (h : Submodule.span R (Set.image (fun i => i • m) I) = ⊤) :
+    M = 0 := by
+  -- 利用 Jacobson 根中元素的拟可逆性和行列式技巧证明
   sorry
 
-/-- 中山引理（有限生成版本）-/
-theorem nakayama_lemma_fg {I : Ideal R} (hI : I ≤ jacobson R)
-    [Module.Finite R M] (hM : I • ⊤ = ⊤) : Subsingleton M := by
-  rw [Module.Finite.iff_fg] at *
-  -- 约化到有限生成情形
-  sorry
-
-/-- 中山引理（生成元版本）-/
-theorem nakayama_lemma_generator {I : Ideal R} (hI : I ≤ jacobson R)
-    {N : Submodule R M} [Module.Finite R M]
-    (h : M = N + I • ⊤) : M = N := by
-  have : I • (M ⧸ N) = ⊤ := by
-    rw [Submodule.map_smul''']
-    sorry
-  have : Subsingleton (M ⧸ N) := nakayama_lemma_fg hI this
-  exact Submodule.subsingleton_quotient_iff_eq_top.mp this
-
-end Nakayama
+end RingTheory
 ```
 
 ## 数学背景
 
-中山引理由Tadashi Nakayama（中山正）在1951年系统表述，但其思想可追溯至Krull和Azumaya的工作。这是交换代数和同调代数中最有用的工具之一，尤其在研究局部环的模结构时不可或缺。引理的核心思想是：Jacobson根作用下的"小扰动"不改变有限生成模的本质结构。
+Nakayama 引理是交换代数中最基本、使用最频繁的引理之一，由日本数学家中岛喜久雄（Tadashi Nakayama）在20世纪50年代系统阐述并推广。该引理断言：设 $R$ 是交换环，$I$ 是包含在 Jacobson 根中的理想，$M$ 是有限生成 $R$-模。如果 $M = IM$（即 $M$ 被 $I$ 中元素的作用生成），那么 $M = 0$。Nakayama 引理的一个常用等价形式是：若 $N \subseteq M$ 且 $M/N = I(M/N)$，则 $M = N$。这个引理在局部环上的模论、代数几何中的切空间计算和奇点理论中具有不可替代的作用。
 
 ## 直观解释
 
-中山引理告诉我们：**如果有限生成模被Jacobson根"吸收"，那么这个模实际上是零**。
-
-想象模 $M$ 是一个向量空间（虽然更一般）。如果 $M$ 中的每个元素都可以被Jacobson根中的元素"生成"（即 $M = IM$），那么 $M$ 必须为零。直观上，Jacobson根包含所有"接近于零"的元素，如果整个模都能被这些"小"元素生成，那它本质上就没有"大"结构。
+Nakayama 引理提供了一个强大的工具来判断有限生成模何时为零。直观上，如果一个模 $M$ 可以被包含在 Jacobson 根中的理想 $I$ 所生成，那么 $M$ 实际上必须是零模。为什么？因为 Jacobson 根中的元素在某种意义上是接近于零的——它们在所有极大理想中都存在，因此在局部化后变得很小。如果 $M = IM$，这意味着 $M$ 的每个元素都可以表示为 $I$ 中元素与 $M$ 中元素的乘积之和。由于 $I$ 在 Jacobson 根中，这种自引用的结构迫使 $M$ 坍缩为零。等价形式则告诉我们：如果 $N$ 和 $M$ 的差可以被 $I$ 吸收，那么 $N$ 实际上就等于 $M$——这是一种局部到整体的原理。
 
 ## 形式化表述
 
-设 $R$ 是交换环，$M$ 是有限生成 $R$-模，$I \subseteq R$ 是含于Jacobson根 $J(R)$ 的理想。
+设 $R$ 是含幺交换环，$J(R)$ 是 $R$ 的 Jacobson 根，$M$ 是有限生成 $R$-模，$I \subseteq J(R)$ 是理想。若 $M = IM$（即 $M$ 的每个元素都可以写成 $\sum i_k m_k$ 的形式，其中 $i_k \in I$, $m_k \in M$），则：
 
-**中山引理**：
+$$M = 0$$
 
-1. **基本形式**：若 $M = IM$，则 $M = 0$
-2. **生成元形式**：若 $N \subseteq M$ 是子模且 $M = N + IM$，则 $M = N$
-3. **提升形式**：若 $m_1, \ldots, m_n$ 生成 $M/IM$，则它们生成 $M$
+等价形式：
 
-**Jacobson根**：$J(R) = \bigcap_{\mathfrak{m}} \mathfrak{m}$（所有极大理想的交）。
+1. 若 $N \subseteq M$ 且 $M = N + IM$，则 $M = N$
+2. 若 $M$ 有限生成，$m_1, \dots, m_n \in M$ 在 $M/IM$ 中的像生成 $M/IM$，则 $m_1, \dots, m_n$ 生成 $M$
+3. 局部环版本：若 $(R, \mathfrak{m})$ 是局部环，$M$ 有限生成且 $M = \mathfrak{m}M$，则 $M = 0$
+
+其中：
+
+- Jacobson 根 $J(R)$ 是所有极大理想的交
+- 局部环是指有唯一极大理想的环
+- 条件 $M = IM$ 是等式，不是包含关系
 
 ## 证明思路
 
-1. **准备**：设 $M$ 由 $m_1, \ldots, m_n$ 有限生成，$M = IM$
-2. **矩阵表示**：由 $m_i \in IM$ 得 $m_i = \sum_j a_{ij} m_j$，其中 $a_{ij} \in I$
-3. **Cayley-Hamilton**：矩阵 $A = (a_{ij})$ 满足 $(I - A)\mathbf{m} = 0$
-4. **可逆性**：$\det(I - A) \equiv 1 \pmod{I}$，在Jacobson根条件下可逆
-5. **结论**：由Cramer法则得所有 $m_i = 0$
+1. **Cayley-Hamilton 定理**：对有限生成模，考虑恒等自同态 $\text{id}_M$。由于 $M = IM$，可以写出 $\text{id}_M = \sum i_k \phi_k$（$i_k \in I$, $\phi_k \in \text{End}_R(M)$）
+2. **行列式技巧**：将上式视为矩阵方程，得到 $\det(\text{id} - A) = 0$，其中 $A$ 的元在 $I$ 中
+3. **Jacobson 根性质**：$\det(\text{id} - A) = 1 + a$（$a \in I$）。由于 $I \subseteq J(R)$，$1 + a$ 可逆
+4. **矛盾**：但 $\det(\text{id} - A)$ 同时消没 $M$，故 $M = 0$
 
-核心洞察是矩阵技巧与Jacobson根的代数性质结合。
+核心洞察在于 Jacobson 根中元素的拟幂零性使得 $1 + a$ 总是可逆元。
 
 ## 示例
 
-### 示例 1：局部环情形
+### 示例 1：局部环上的生成元提升
 
-设 $(R, \mathfrak{m})$ 是局部环，$M$ 是有限生成 $R$-模。
+设 $(R, \mathfrak{m})$ 是局部环，$M$ 是有限生成 $R$-模。若 $\bar{m}_1, \dots, \bar{m}_n \in M/\mathfrak{m}M$ 构成 $R/\mathfrak{m}$-向量空间的一组基，则由 Nakayama 引理，$m_1, \dots, m_n$ 生成 $M$。这常用于证明自由模的秩的唯一性。
 
-若 $M = \mathfrak{m}M$，则 $M = 0$。
+### 示例 2：切空间的计算
 
-应用：证明有限生成投射模在局部环上是自由的。
+在代数几何中，概形 $X$ 在点 $x$ 处的 Zariski 切空间为 $T_x X = (\mathfrak{m}_x / \mathfrak{m}_x^2)^*$。Nakayama 引理保证了：如果 $\mathfrak{m}_x / \mathfrak{m}_x^2 = 0$，则 $\mathfrak{m}_x = 0$，即 $x$ 是孤立点。
 
-### 示例 2：提升生成元
+### 示例 3：正则局部环的维数理论
 
-设 $M$ 是局部环 $(R, \mathfrak{m})$ 上的有限生成模。
-
-若 $\bar{m}_1, \ldots, \bar{m}_n$ 生成 $M/\mathfrak{m}M$（作为 $R/\mathfrak{m}$ 上的向量空间），
-
-则 $m_1, \ldots, m_n$ 生成 $M$。
-
-### 示例 3：矩阵环
-
-设 $R = \mathbb{Z}_{(p)}$（$\mathbb{Z}$ 在素理想 $(p)$ 处的局部化），$\mathfrak{m} = (p)$。
-
-考虑 $M = \mathbb{Z}_{(p)}^2$，若 $M = pM$，则 $M = 0$（显然成立）。
+正则局部环的维数等于其极大理想模平方的维数。Nakayama 引理在这里起到关键作用，确保了极小生成元集的大小与环的维数相等。
 
 ## 应用
 
-- **局部环上的模**：证明自由性和投射性等价
-- **维数理论**：Krull主理想定理的证明
-- **相交重数**：代数几何中的重数计算
-- **完备化理论**：$\mathfrak{m}$-adic完备化的性质
+- **交换代数**：局部环上模的生成元和基的判定
+- **代数几何**：概形的切空间、光滑性和维数理论
+- **同调代数**：投射覆盖和投射分解的构造
+- **数论**：完备化、形式群和类域论
+- **奇点理论**：奇点的嵌入维数和可解性研究
 
 ## 相关概念
 
-- Jacobson根 (Jacobson Radical)：所有极大理想的交
-- 局部环 (Local Ring)：唯一极大环
-- 有限生成模 (Finitely Generated Module)：模的有限生成性
-- 投射模 (Projective Module)：直和项模
-- 完备化 (Completion)：拓扑代数结构
+- Jacobson 根 (Jacobson Radical)：所有极大理想的交
+- 局部环 (Local Ring)：有唯一极大理想的交换环
+- 有限生成模 (Finitely Generated Module)：存在有限生成元集的模
+- Cayley-Hamilton 定理：模自同态满足其特征多项式
+- 正则局部环 (Regular Local Ring)：维数等于嵌入维数的局部环
 
 ## 参考
 
 ### 教材
 
-- [Atiyah & Macdonald. Introduction to Commutative Algebra. Addison-Wesley, 1969. Chapter 2]
-- [Eisenbud. Commutative Algebra. Springer, 1995. Section 4.1]
-
-### 历史文献
-
-- [Nakayama. A remark on finitely generated modules. Nagoya Math. J., 1951]
+- [M. F. Atiyah, I. G. Macdonald. Introduction to Commutative Algebra. Addison-Wesley, 1969. Chapter 2]
+- [H. Matsumura. Commutative Ring Theory. Cambridge, 1986. Chapter 1]
 
 ### 在线资源
 
-- [Mathlib4 文档 - Jacobson][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Basic.html](需更新)
-- [Stacks Project - 00DV][https://stacks.math.columbia.edu/tag/00DV](需更新)
+- [Mathlib4 - LocalRing](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/LocalRing.html)
 
 ---
 
-*最后更新：2026-04-03 | 版本：v1.0.0*
+*最后更新：2026-04-15 | 版本：v1.0.0*

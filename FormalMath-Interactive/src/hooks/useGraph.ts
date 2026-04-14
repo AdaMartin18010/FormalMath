@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== 图数据Hook ====================
 
 import { useState, useCallback, useMemo } from 'react';

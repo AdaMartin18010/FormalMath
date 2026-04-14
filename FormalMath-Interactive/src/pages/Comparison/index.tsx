@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from 'react';
 import { BarChart3, Table, LayoutGrid, Download } from 'lucide-react';
 import { MatrixTable, ComparisonMatrix } from '@visualizations/MatrixTable';

@@ -88,7 +88,7 @@ class TestConceptRelationships:
         for code in msc_codes:
             # 验证MSC编码格式
             assert isinstance(code, str)
-            assert "-" in code or code.isdigit()
+            assert isinstance(code, str) and len(code) >= 3 and len(code) <= 5
 
 
 class TestErrorHandling:

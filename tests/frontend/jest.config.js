@@ -9,6 +9,9 @@ module.exports = {
   // 文件扩展名
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   
+  // 模块解析目录
+  moduleDirectories: ['node_modules', '<rootDir>/node_modules'],
+
   // 模块路径别名
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
@@ -20,6 +23,7 @@ module.exports = {
     '^@visualizations/(.*)$': '<rootDir>/src/visualizations/$1',
     '^@mobile/(.*)$': '<rootDir>/src/mobile/$1',
     '^@stores/(.*)$': '<rootDir>/src/stores/$1',
+    '^@api/(.*)$': '<rootDir>/src/api/$1',
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
     '\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/../tests/frontend/__mocks__/fileMock.js'
   },
@@ -62,6 +66,12 @@ module.exports = {
   coverageDirectory: '<rootDir>/../tests/coverage/frontend',
   coverageReporters: ['text', 'text-summary', 'lcov', 'html'],
   
+  // 搜索根目录
+  roots: [
+    '<rootDir>',
+    '<rootDir>/../tests'
+  ],
+
   // 测试匹配模式
   testMatch: [
     '<rootDir>/../tests/frontend/unit/**/*.test.{ts,tsx}'

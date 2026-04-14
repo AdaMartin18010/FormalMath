@@ -3,12 +3,11 @@
  * 动态展示学习路径的探索和推荐过程
  */
 
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Play, Pause, RotateCcw, FastForward, 
-  Target, Zap, Award, Clock, TrendingUp,
-  ChevronRight, MapPin, CheckCircle, Lock
+  Target, Zap, Award, Clock, MapPin, CheckCircle, Lock
 } from 'lucide-react';
 import { cn } from '@utils/classNames';
 
@@ -55,7 +54,7 @@ export interface PathAnimationProps {
   className?: string;
   autoPlay?: boolean;
   playbackSpeed?: number;
-  showParticles?: boolean;
+  showParticlesProp?: boolean;
   showHeatmap?: boolean;
   onNodeClick?: (node: PathNode) => void;
   onAnimationComplete?: () => void;
@@ -125,7 +124,7 @@ export const PathAnimation: React.FC<PathAnimationProps> = ({
   className,
   autoPlay = false,
   playbackSpeed = 1,
-  showParticles = true,
+  showParticlesProp = true,
   showHeatmap = false,
   onNodeClick,
   onAnimationComplete,
@@ -138,8 +137,8 @@ export const PathAnimation: React.FC<PathAnimationProps> = ({
   const [progress, setProgress] = useState(0);
   const [activeNode, setActiveNode] = useState<string | null>(null);
   const [particles, setParticles] = useState<Array<{ id: string; x: number; y: number; targetX: number; targetY: number }>>([]);
-  const [events, setEvents] = useState<PathEvent[]>([]);
   const [showTrails, setShowTrails] = useState(true);
+  const [showParticles, setShowParticles] = useState(showParticlesProp ?? false);
   const animationRef = useRef<number | null>(null);
   const startTimeRef = useRef<number | null>(null);
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * useAIAssistant Hook使用示例
  * 

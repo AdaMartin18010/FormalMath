@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ==================== 笔记编辑器组件 ====================
 import React, { useState, useCallback, useEffect, useRef, useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';

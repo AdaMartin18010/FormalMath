@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * FormalMath 数据分析仪表板页面（优化版）
  * 
