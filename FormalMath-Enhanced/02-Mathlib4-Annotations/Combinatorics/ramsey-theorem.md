@@ -117,7 +117,7 @@ $K_5$ 可以避免：五边形的边染红，五角星的边染蓝。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Simple Graph](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Basic.html)[需更新]
+- [Mathlib4 文档 - Simple Graph][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Basic.html](需更新)
 
 ---
 

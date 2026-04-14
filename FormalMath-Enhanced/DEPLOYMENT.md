@@ -103,10 +103,10 @@ docker-compose logs -f
 
 ```bash
 # 健康检查
-curl 
+curl
 
 # API文档
-curl 
+curl
 
 # 前端页面
 open http://localhost[需更新]
@@ -117,16 +117,17 @@ open http://localhost[需更新]
 ### SSL/TLS 配置
 
 1. **准备SSL证书：**
+
 ```bash
 mkdir -p ssl
 cp your-cert.pem ssl/cert.pem
 cp your-key.pem ssl/key.pem
 ```
 
-2. **启用HTTPS配置：**
+1. **启用HTTPS配置：**
 编辑 `nginx.conf`，取消HTTPS服务器部分的注释。
 
-3. **HTTP重定向到HTTPS：**
+2. **HTTP重定向到HTTPS：**
 在nginx.conf中取消HTTP服务器中的重定向配置注释。
 
 ### 环境配置文件
@@ -172,10 +173,10 @@ services:
 # 启动包含Prometheus和Grafana的服务
 docker-compose --profile monitoring up -d
 
-# 访问 Grafana: 
+# 访问 Grafana:
 # 默认账号: admin/admin
 
-# 访问 Prometheus: 
+# 访问 Prometheus:
 ```
 
 ### 日志管理
@@ -210,7 +211,7 @@ docker-compose up -d --no-deps --build backend
 docker-compose up -d --no-deps --build frontend
 
 # 4. 验证新版本
-curl 
+curl
 ```
 
 ### 数据备份
@@ -290,6 +291,7 @@ docker-compose up -d --build frontend
 #### Redis性能调优
 
 编辑 `docker-compose.yml` 中的Redis配置：
+
 ```yaml
 command: redis-server --appendonly yes --maxmemory 1gb --maxmemory-policy allkeys-lru
 ```
@@ -326,19 +328,20 @@ docker scan formalmath-frontend:latest
 
 ## 📚 相关文档
 
-- [FastAPI部署文档](https://fastapi.tiangolo.com/deployment/)[需更新]
-- [Docker Compose文档](https://docs.docker.com/compose/)[需更新]
-- [Nginx配置指南](https://nginx.org/en/docs/)[需更新]
-- [Redis持久化](https://redis.io/docs/manual/persistence/)[需更新]
+- [FastAPI部署文档][https://fastapi.tiangolo.com/deployment/](需更新)
+- [Docker Compose文档][https://docs.docker.com/compose/](需更新)
+- [Nginx配置指南][https://nginx.org/en/docs/](需更新)
+- [Redis持久化][https://redis.io/docs/manual/persistence/](需更新)
 
 ## 🤝 支持
 
 如有问题，请查看：
+
 1. 服务日志：`docker-compose logs`
 2. 项目文档：`README.md`
 3. 提交Issue到项目仓库
 
 ---
 
-**版本**: 1.0.0  
+**版本**: 1.0.0
 **最后更新**: 2026-04-04

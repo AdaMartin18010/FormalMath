@@ -8,9 +8,9 @@ title: FormalMath与以色列理工学院(Technion)数学课程对齐报告
 ---
 # FormalMath与以色列理工学院(Technion)数学课程对齐报告
 
-> **版本**: v1.0  
-> **发布日期**: 2026年4月4日  
-> **适用范围**: Technion Faculty of Mathematics 本科及研究生课程体系  
+> **版本**: v1.0
+> **发布日期**: 2026年4月4日
+> **适用范围**: Technion Faculty of Mathematics 本科及研究生课程体系
 > **目标**: 建立FormalMath与Technion数学课程的对齐关系，支持国际数学教育标准化
 
 ---
@@ -548,6 +548,6 @@ GTIIT是Technion在中国的校区，课程完全对标Technion本部：
 
 ---
 
-*报告编制日期: 2026年4月4日*  
-*数据截止日期: 2026年4月*  
+*报告编制日期: 2026年4月4日*
+*数据截止日期: 2026年4月*
 *版本: v1.0*

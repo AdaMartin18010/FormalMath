@@ -61,10 +61,12 @@ Lebesgue控制收敛定理由Henri Lebesgue在1910年左右证明，是测度论
 设 $(X, \mathcal{M}, \mu)$ 是测度空间，$E$ 是Banach空间。
 
 **控制收敛定理**：设 $\{f_n\}$ 是可测函数序列，$F$ 是极限函数，$g$ 是可积函数，满足：
+
 1. **点态收敛**：$f_n(x) \to F(x)$ 几乎处处
 2. **控制条件**：$|f_n(x)| \leq g(x)$ 几乎处处，对所有 $n$
 
 则：
+
 1. $F$ 可积
 2. $\displaystyle \lim_{n \to \infty} \int_X f_n \, d\mu = \int_X F \, d\mu$
 3. $\displaystyle \lim_{n \to \infty} \int_X |f_n - F| \, d\mu = 0$（$L^1$ 收敛）
@@ -141,8 +143,8 @@ Lebesgue控制收敛定理由Henri Lebesgue在1910年左右证明，是测度论
 
 ### 在线资源
 
-- [Mathlib4 文档 - Bochner Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Bochner.html)[需更新]
-- [Terry Tao - Dominated Convergence](https://terrytao.wordpress.com/2009/01/11/the-dominated-convergence-theorem/)[需更新]
+- [Mathlib4 文档 - Bochner Integral][https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Bochner.html](需更新)
+- [Terry Tao - Dominated Convergence][https://terrytao.wordpress.com/2009/01/11/the-dominated-convergence-theorem/](需更新)
 
 ---
 

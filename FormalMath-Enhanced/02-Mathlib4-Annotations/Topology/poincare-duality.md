@@ -128,7 +128,7 @@ $\mathbb{C}P^2$：$H_0 = H_2 = H_4 = \mathbb{Z}$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Cohomology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/Cohomology.html)[需更新]
+- [Mathlib4 文档 - Cohomology][https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/Cohomology.html](需更新)
 - [Wikipedia - Poincaré Duality](https://en.wikipedia.org/wiki/Poincar%C3%A9_duality)
 
 ---

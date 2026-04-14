@@ -60,6 +60,7 @@ end Polynomial
 ## 形式化表述
 
 环 $R$ 称为**诺特环**，如果满足以下等价条件之一：
+
 1. 任何理想的升链稳定
 2. 任何理想都是有限生成的
 
@@ -128,8 +129,8 @@ $$V = \{(x_1,\ldots,x_n) \in \mathbb{A}^n : f_1(x) = \cdots = f_m(x) = 0\}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Polynomial Noetherian](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/Basic.html)[需更新]
-- [Stacks Project - 00FM](https://stacks.math.columbia.edu/tag/00FM)[需更新]
+- [Mathlib4 文档 - Polynomial Noetherian][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Polynomial/Basic.html](需更新)
+- [Stacks Project - 00FM][https://stacks.math.columbia.edu/tag/00FM](需更新)
 
 ---
 

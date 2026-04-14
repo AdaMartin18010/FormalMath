@@ -121,7 +121,7 @@ $$\text{Res}(f, i) = \frac{e^{-a}}{2i}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Residue](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Residue.html)[需更新]
+- [Mathlib4 文档 - Residue][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Residue.html](需更新)
 
 ---
 

@@ -13,22 +13,22 @@ import Mathlib.RingTheory.Depth
 namespace CommutativeAlgebra
 
 /-- 深度的定义 -/
-theorem depth_def 
+theorem depth_def
     {R : Type*} [CommRing R] [IsNoetherianRing R]
     (M : Type*) [AddCommGroup M] [Module R M]
     [IsNoetherianModule M] (I : Ideal R) :
-    depth I M = 
+    depth I M =
       sInf {n | Ext R n (R ⧸ I) M ≠ 0} := by
   -- 深度作为Ext首次非零的指标
   rfl
 
 /-- Auslander-Buchsbaum公式 -/
-theorem auslander_buchsbaum 
+theorem auslander_buchsbaum
     {R : Type*} [CommRing R] [IsNoetherianRing R]
-    [IsLocalRing R] (M : Type*) [AddCommGroup M] 
-    [Module R M] [IsNoetherianModule M] 
+    [IsLocalRing R] (M : Type*) [AddCommGroup M]
+    [Module R M] [IsNoetherianModule M]
     [Module.FinitePresentation R M] :
-    depth (maximalIdeal R) M + projectiveDimension M = 
+    depth (maximalIdeal R) M + projectiveDimension M =
       depth (maximalIdeal R) R := by
   -- 正则局部环上的基本公式
   apply auslander_buchsbaum_formula
@@ -72,6 +72,7 @@ $$\text{depth}(M) + \text{pd}_R(M) = \text{depth}(R)$$
 **解答**：
 
 $R$ 是正则局部环，维数为3。$x, y, z$ 构成正则序列：
+
 - $x$ 不是零因子
 - 在 $R/(x)$ 中，$y$ 不是零因子
 - 在 $R/(x,y)$ 中，$z$ 不是零因子
@@ -121,7 +122,7 @@ $R$ 是正则局部环，维数为3。$x, y, z$ 构成正则序列：
 ### 在线资源
 
 - [Depth (Ring Theory) Wikipedia](https://en.wikipedia.org/wiki/Depth_(ring_theory))
-- [Stacks Project - Depth](https://stacks.math.columbia.edu/tag/00LF)[需更新]
+- [Stacks Project - Depth][https://stacks.math.columbia.edu/tag/00LF](需更新)
 
 ---
 

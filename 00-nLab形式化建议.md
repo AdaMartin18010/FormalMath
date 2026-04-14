@@ -5,8 +5,8 @@ processed_at: '2026-04-05'
 ---
 # nLab对齐形式化建议
 
-**文档编号**: FM-ALIGN-NLAB-FORMAL-2026-04  
-**创建日期**: 2026年4月4日  
+**文档编号**: FM-ALIGN-NLAB-FORMAL-2026-04
+**创建日期**: 2026年4月4日
 **版本**: 1.0
 
 ---
@@ -95,7 +95,7 @@ FormalMath-Lean4/
 #### 文档规范
 
 ```lean
-/-- 
+/--
 # 拟范畴 (Quasi-Category)
 
 ## 定义
@@ -127,23 +127,23 @@ import Mathlib.AlgebraicTopology.SimplicialSet
 
 namespace FormalMath.HigherCategoryTheory
 
-/-! 
+/-!
 ## 拟范畴的形式化
 
 基于nLab定义：https://ncatlab.org/nlab/show/quasi-category
 
 拟范畴是满足内角填充条件的单纯集。
 对于任意 0 < k < n，每个内角 Λ[n,k] → X 可扩展到 n-单形 Δ[n] → X。
--/ 
+-/
 
 open CategoryTheory SimplexCategory SSet
 
 /-- 内角 Λ[n,k] 的定义 -/
-def InnerHorn (n : ℕ) (k : Fin (n + 1)) : SSet := 
+def InnerHorn (n : ℕ) (k : Fin (n + 1)) : SSet :=
   horn n k
 
 /-- 内角包含映射 -/
-def hornInclusion (n : ℕ) (k : Fin (n + 1)) : InnerHorn n k ⟶ Δ[n] := 
+def hornInclusion (n : ℕ) (k : Fin (n + 1)) : InnerHorn n k ⟶ Δ[n] :=
   horn.ι n k
 
 /-- 判断是否为内角 (0 < k < n) -/
@@ -163,7 +163,7 @@ def isInnerHorn (n : ℕ) (k : Fin (n + 1)) : Prop :=
 structure QuasiCategory where
   /-- 基础单纯集 -/
   underlying : SSet
-  
+
   /-- 内角填充条件：
   对任意 0 < k < n，每个内角 Λ[n,k] → X 可扩展到 n-单形 Δ[n] → X -/
   filler : ∀ (n : ℕ) (k : Fin (n + 1)),
@@ -181,9 +181,9 @@ instance : Category QuasiCategory where
   id X := 𝟙 X.underlying
   comp f g := f ≫ g
 
-/-! 
+/-!
 ## 拟范畴的基本构造
--/ 
+-/
 
 /-- 标准n-单形作为拟范畴 -/
 def standardSimplex (n : ℕ) : QuasiCategory where
@@ -201,20 +201,20 @@ def nerveAsQuasiCategory (C : Type*) [Category C] : QuasiCategory where
     -- 范畴的nerve是拟范畴
     sorry  -- TODO: 证明
 
-/-! 
+/-!
 ## 拟范畴的同伦论
 
 基于nLab: https://ncatlab.org/nlab/show/quasi-category#homotopy
--/ 
+-/
 
 /-- 拟范畴中的态射 -/
 def morphism (Q : QuasiCategory) (x y : Q.underlying.obj ⟨0⟩) : Type _ :=
-  { f : Q.underlying.obj ⟨1⟩ // 
+  { f : Q.underlying.obj ⟨1⟩ //
     Q.underlying.map (SimplexCategory.δ 1).op f = x ∧
     Q.underlying.map (SimplexCategory.δ 0).op f = y }
 
 /-- 同伦等价关系 -/
-def homotopic (Q : QuasiCategory) {x y : Q.underlying.obj ⟨0⟩} 
+def homotopic (Q : QuasiCategory) {x y : Q.underlying.obj ⟨0⟩}
   (f g : morphism Q x y) : Prop :=
   -- 存在2-单形连接f和g
   sorry  -- TODO: 定义同伦
@@ -233,13 +233,13 @@ import Mathlib.CategoryTheory.Limits.Shapes.Pullback.Cospan
 
 namespace FormalMath.ToposTheory
 
-/-! 
+/-!
 ## 初等Topos的形式化
 
 基于nLab定义：https://ncatlab.org/nlab/show/topos
 
 初等Topos是具有有限极限、笛卡尔闭结构和子对象分类器的范畴。
--/ 
+-/
 
 open CategoryTheory Limits
 
@@ -263,10 +263,10 @@ variable (C : Type*) [Category C]
 structure SubobjectClassifier where
   /-- 真值对象 -/
   Ω : C
-  
+
   /-- 真值态射 -/
   true : terminal C ⟶ Ω
-  
+
   /-- 特征态射的存在性和唯一性 -/
   characteristic : ∀ {S X : C} (m : S ⟶ X) [Mono m],
     ∃! χ : X ⟶ Ω,
@@ -279,32 +279,32 @@ structure SubobjectClassifier where
 structure ElementaryTopos where
   /-- 基础范畴 -/
   category : Category C
-  
+
   /-- 具有有限极限 -/
   hasFiniteLimits : HasFiniteLimits C
-  
+
   /-- 笛卡尔闭 -/
   cartesianClosed : CartesianClosed C
-  
+
   /-- 子对象分类器 -/
   subobjectClassifier : SubobjectClassifier C
-  
+
   /-- 具有自然数对象（可选） -/
   naturalNumbersObject : Option (NaturalNumbersObject C)
 
-/-! 
+/-!
 ## Grothendieck Topos
 
 基于nLab: https://ncatlab.org/nlab/show/Grothendieck+topos
 
 Grothendieck Topos是景上的层范畴。
--/ 
+-/
 
 /-- 覆盖族 -/
 structure Coverage where
   /-- 覆盖族映射 -/
   covers : ∀ (X : C), Set (Set (Y ⟶ X))
-  
+
   /-- 稳定性条件 -/
   stability : ∀ {X Y : C} (f : Y ⟶ X) (S ∈ covers X),
     ∃ (T ∈ covers Y), ∀ (g : Z ⟶ Y) (_ : g ∈ T),
@@ -314,7 +314,7 @@ structure Coverage where
 structure Site where
   /-- 基础范畴 -/
   category : Category C
-  
+
   /-- 覆盖结构 -/
   coverage : Coverage C
 
@@ -331,18 +331,18 @@ def Sheaf (S : Site C) : Type _ :=
 structure GrothendieckTopos where
   /-- 景 -/
   site : Site C
-  
+
   /-- 层范畴 -/
   sheafCategory : Category (Sheaf site)
-  
+
   /-- 几何态射到Set -/
   globalSections : GeometricMorphism (Sheaf site) (Type _)
 
-/-! 
+/-!
 ## 几何态射
 
 基于nLab: https://ncatlab.org/nlab/show/geometric+morphism
--/ 
+-/
 
 /-- 几何态射
 
@@ -355,22 +355,22 @@ structure GrothendieckTopos where
 structure GeometricMorphism (E F : Type*) [Category E] [Category F] where
   /-- 逆像函子 -/
   inverseImage : F ⥤ E
-  
+
   /-- 正像函子 -/
   directImage : E ⥤ F
-  
+
   /-- 伴随关系 -/
   adjunction : inverseImage ⊣ directImage
-  
+
   /-- 逆像保持有限极限 -/
   preservesFiniteLimits : PreservesFiniteLimits inverseImage
 
 /-- 本质几何态射（具有左伴随的逆像） -/
-structure EssentialGeometricMorphism (E F : Type*) [Category E] [Category F] 
+structure EssentialGeometricMorphism (E F : Type*) [Category E] [Category F]
   extends GeometricMorphism E F where
   /-- 进一步左伴随（非常像） -/
   furtherLeftAdjoint : E ⥤ F
-  
+
   /-- 进一步左伴随是逆像的左伴随 -/
   furtherAdjunction : furtherLeftAdjoint ⊣ inverseImage
 
@@ -385,13 +385,13 @@ import FormalMath.ToposTheory.InfinityTopos
 
 namespace FormalMath.HoTTToposConnection
 
-/-! 
+/-!
 ## 同伦类型论与(∞,1)-Topos的联系
 
 基于nLab: https://ncatlab.org/nlab/show/model+of+type+theory+in+an+(infinity,1)-topos
 
 HoTT可以作为(∞,1)-Topos的内部逻辑。
--/ 
+-/
 
 open CategoryTheory
 
@@ -406,10 +406,10 @@ variable (H : Type*) [Category H] [InfinityTopos H]
 structure TypeUniverse where
   /-- 宇宙对象 -/
   U : H
-  
+
   /-- 通用纤维化 -/
   universalFibration : Over U
-  
+
   /-- 泛性质 -/
   universalProperty : ∀ {X : H} (p : Over X),
     ∃! (classifier : X ⟶ U),
@@ -429,24 +429,24 @@ def TypeEquivalence (A B : HoTTType H) :=
 
 其中类型等价对应于范畴等价，类型相等对应于同构。
 -/
-axiom univalence {A B : HoTTType H} : 
+axiom univalence {A B : HoTTType H} :
   TypeEquivalence H A B ≅ A ≅ B
 
 /-- HoTT的语义解释 -/
 structure HoTTSemantics where
   /-- 类型宇宙 -/
   universe : TypeUniverse H
-  
+
   /-- 依赖类型解释为纤维化 -/
-  dependentTypeInterpretation : ∀ (Γ A : H), 
+  dependentTypeInterpretation : ∀ (Γ A : H),
     (Γ ⟶ universe.U) ≃ (Over Γ)
-  
+
   /-- 恒等类型解释为路径空间 -/
   identityTypeInterpretation : ∀ (A : H) (a b : Over A),
     sorry  -- TODO: 恒等类型 → 路径空间
-  
+
   /-- 单值公理 -/
-  univalenceAxiom : ∀ {A B : HoTTType H}, 
+  univalenceAxiom : ∀ {A B : HoTTType H},
     TypeEquivalence H A B ≅ A ≅ B
 
 end FormalMath.HoTTToposConnection
@@ -459,108 +459,108 @@ import FormalMath.HigherCategoryTheory.InfinityCategory
 
 namespace FormalMath.HigherAlgebra
 
-/-! 
+/-!
 ## 高阶代数基础
 
 基于nLab: https://ncatlab.org/nlab/show/higher+algebra
--/ 
+-/
 
 open CategoryTheory
 
-/-! 
+/-!
 ### 单(∞,1)-范畴
 
 单(∞,1)-范畴是带有张量积结构的(∞,1)-范畴。
--/ 
+-/
 
 structure MonoidalInfinityCategory where
   /-- 基础(∞,1)-范畴 -/
   underlying : InfinityCategory
-  
+
   /-- 张量积 -/
   tensor : Bifunctor underlying.category underlying.category underlying.category
-  
+
   /-- 单位对象 -/
   unit : underlying.category.obj
-  
+
   /-- 结合约束（同伦意义下） -/
   associator : ∀ (X Y Z : underlying.category.obj),
-    (tensor.obj (X, tensor.obj (Y, Z))) ≅ 
+    (tensor.obj (X, tensor.obj (Y, Z))) ≅
     (tensor.obj (tensor.obj (X, Y), Z))
-  
+
   /-- 单位约束 -/
   leftUnitor : ∀ (X : underlying.category.obj),
     tensor.obj (unit, X) ≅ X
-  
+
   /-- 单位约束 -/
   rightUnitor : ∀ (X : underlying.category.obj),
     tensor.obj (X, unit) ≅ X
-  
+
   /-- 五边形恒等式（同伦意义下） -/
   pentagon : sorry  -- TODO: 形式化五边形恒等式
 
-/-! 
+/-!
 ### Operad
 
 基于nLab: https://ncatlab.org/nlab/show/operad
--/ 
+-/
 
 structure Operad where
   /-- 对象集合（通常是单点集或颜色集） -/
   colors : Type*
-  
+
   /-- n元运算集合 -/
   operations : (n : ℕ) → (Fin n → colors) → colors → Type*
-  
+
   /-- 单位运算 -/
   identity : ∀ (c : colors), operations 1 (λ _ => c) c
-  
+
   /-- 复合运算 -/
-  composition : ∀ {n m : ℕ} {c : Fin n → colors} {d : colors} 
+  composition : ∀ {n m : ℕ} {c : Fin n → colors} {d : colors}
     {e : Fin m → colors},
-    operations n c d → 
-    ((i : Fin n) → operations m e (c i)) → 
+    operations n c d →
+    ((i : Fin n) → operations m e (c i)) →
     operations m e d
-  
+
   /-- 结合律 -/
   associativity : sorry  -- TODO: 形式化结合律
-  
+
   /-- 单位律 -/
   unitality : sorry  -- TODO: 形式化单位律
 
-/-! 
+/-!
 ### 谱 (Spectra)
 
 基于nLab: https://ncatlab.org/nlab/show/spectrum
--/ 
+-/
 
 structure Spectrum where
   /-- 空间序列 -/
   spaces : ℕ → Top  -- 拓扑空间
-  
+
   /-- 结构映射 -/
-  structureMaps : ∀ (n : ℕ), 
+  structureMaps : ∀ (n : ℕ),
     (spaces n).toType → (spaces (n + 1)).toType
-  
+
   /-- 弱等价条件 -/
   weakEquivalence : sorry  -- TODO: 形式化弱等价条件
 
-/-! 
+/-!
 ### E-无穷环
 
 基于nLab: https://ncatlab.org/nlab/show/E-infinity+ring
--/ 
+-/
 
 structure EInfinityRing where
   /-- 基础谱 -/
   underlying : Spectrum
-  
+
   /-- 乘法映射（具有E-无穷结构） -/
   multiplication : sorry  -- TODO: 形式化E-无穷乘法
-  
+
   /-- 单位映射 -/
   unit : sorry  -- TODO: 形式化单位
-  
+
   /-- E-无穷代数结构的 coherence条件 -/
   coherence : sorry  -- TODO: 形式化coherence条件
 
@@ -590,7 +590,7 @@ end FormalMath.HigherAlgebra
 namespace CategoryTheory
 
 -- 为拟范畴支持添加实例
-instance simplicialSetCategory : LargeCategory SSet := 
+instance simplicialSetCategory : LargeCategory SSet :=
   inferInstance
 
 -- 添加与无穷范畴相关的类型类
@@ -714,6 +714,6 @@ jobs:
 
 ---
 
-**文档状态**: 完成  
-**下次更新**: 2026年7月  
+**文档状态**: 完成
+**下次更新**: 2026年7月
 **技术负责人**: FormalMath形式化团队

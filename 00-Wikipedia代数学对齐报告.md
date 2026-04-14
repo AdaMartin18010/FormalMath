@@ -5,16 +5,16 @@ processed_at: '2026-04-05'
 ---
 # Wikipedia代数学对齐报告
 
-**报告编号**: ALIGN.ALG.001  
-**创建日期**: 2026年4月4日  
-**最后更新**: 2026年4月4日  
+**报告编号**: ALIGN.ALG.001
+**创建日期**: 2026年4月4日
+**最后更新**: 2026年4月4日
 
 ---
 
 ## 📋 目录
 
 - [Wikipedia代数学对齐报告](#wikipedia代数学对齐报告)
-  - [📋 目录](#目录)
+  - [📋 目录](#-目录)
   - [1. 概述](#1-概述)
   - [2. Wikipedia代数学条目结构分析](#2-wikipedia代数学条目结构分析)
     - [2.1 Abstract Algebra (抽象代数)](#21-abstract-algebra-抽象代数)
@@ -33,7 +33,10 @@ processed_at: '2026-04-05'
   - [4. 对齐分析与建议](#4-对齐分析与建议)
     - [4.1 概念覆盖度分析](#41-概念覆盖度分析)
     - [4.2 对齐建议](#42-对齐建议)
+      - [4.2.1 高优先级扩展](#421-高优先级扩展)
+      - [4.2.2 中优先级扩展](#422-中优先级扩展)
   - [5. 更新后的YAML片段](#5-更新后的yaml片段)
+    - [concept\_prerequisites.yaml (代数学部分)](#concept_prerequisitesyaml-代数学部分)
   - [附录A: 概念结构映射JSON](#附录a-概念结构映射json)
 
 ---
@@ -43,6 +46,7 @@ processed_at: '2026-04-05'
 本报告将FormalMath代数学内容与Wikipedia数学概念结构进行对齐分析，提取Wikipedia代数学条目的概念定义、属性关系和层级结构，创建映射表和对齐文档。
 
 **对齐目标条目**:
+
 - Abstract Algebra (抽象代数)
 - Group Theory (群论)
 - Ring Theory (环论)
@@ -60,6 +64,7 @@ processed_at: '2026-04-05'
 ### 2.1 Abstract Algebra (抽象代数)
 
 **Wikipedia结构**:
+
 ```
 Abstract Algebra
 ├── Definition & Examples (定义与例子)
@@ -83,6 +88,7 @@ Abstract Algebra
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/08-群.md` (C.CORE.008)
 - `concept/核心概念/09-环.md` (C.CORE.009)
 - `concept/核心概念/10-域.md` (C.CORE.010)
@@ -94,6 +100,7 @@ Abstract Algebra
 ### 2.2 Group Theory (群论)
 
 **Wikipedia结构**:
+
 ```
 Group Theory
 ├── Basic Concepts (基本概念)
@@ -124,6 +131,7 @@ Group Theory
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/08-群.md` (C.CORE.008) - 核心群概念
 - `concept/00-集合论视角-核心概念分析/08-群-集合论视角分析.md`
 - `concept/00-范畴论视角-核心概念分析/08-群-范畴论视角分析.md`
@@ -134,6 +142,7 @@ Group Theory
 ### 2.3 Ring Theory (环论)
 
 **Wikipedia结构**:
+
 ```
 Ring Theory
 ├── Basic Concepts (基本概念)
@@ -165,6 +174,7 @@ Ring Theory
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/09-环.md` (C.CORE.009) - 核心环概念
 - `concept/00-集合论视角-核心概念分析/09-环-集合论视角分析.md`
 - `concept/00-范畴论视角-核心概念分析/09-环-范畴论视角分析.md`
@@ -175,6 +185,7 @@ Ring Theory
 ### 2.4 Field Theory (域论)
 
 **Wikipedia结构**:
+
 ```
 Field Theory
 ├── Basic Concepts (基本概念)
@@ -203,6 +214,7 @@ Field Theory
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/10-域.md` (C.CORE.010) - 核心域概念
 - `concept/00-集合论视角-核心概念分析/10-域-集合论视角分析.md`
 - `concept/00-范畴论视角-核心概念分析/10-域-范畴论视角分析.md`
@@ -213,6 +225,7 @@ Field Theory
 ### 2.5 Linear Algebra (线性代数)
 
 **Wikipedia结构**:
+
 ```
 Linear Algebra
 ├── Basic Concepts (基本概念)
@@ -245,6 +258,7 @@ Linear Algebra
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/11-向量空间.md` (C.CORE.011) - 向量空间
 - `concept/核心概念/12-线性映射.md` (C.CORE.012) - 线性映射
 - `concept/核心概念/14-矩阵.md` (C.CORE.014) - 矩阵
@@ -255,6 +269,7 @@ Linear Algebra
 ### 2.6 Representation Theory (表示论)
 
 **Wikipedia结构**:
+
 ```
 Representation Theory
 ├── Basic Concepts (基本概念)
@@ -289,6 +304,7 @@ Representation Theory
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/32-表示.md` (C.CORE.032) - 表示概念
 - `concept/核心概念/32-表示-三视角版.md`
 - `concept/00-集合论视角-核心概念分析/32-表示-集合论视角分析.md`
@@ -299,6 +315,7 @@ Representation Theory
 ### 2.7 Galois Theory (伽罗瓦理论)
 
 **Wikipedia结构**:
+
 ```
 Galois Theory
 ├── Basic Concepts (基本概念)
@@ -326,6 +343,7 @@ Galois Theory
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/10-域.md` (C.CORE.010) - 包含伽罗瓦理论相关内容
 - `concept/03-主题概念梳理/02-代数结构概念.md` - 域论核心概念
 
@@ -334,6 +352,7 @@ Galois Theory
 ### 2.8 Commutative Algebra (交换代数)
 
 **Wikipedia结构**:
+
 ```
 Commutative Algebra
 ├── Basic Concepts (基本概念)
@@ -363,6 +382,7 @@ Commutative Algebra
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/09-环.md` (C.CORE.009) - 环论包含交换环
 - `concept/核心概念/13-模.md` (C.CORE.013) - 模论
 - `concept/03-主题概念梳理/02-代数结构概念.md` - 环论核心概念
@@ -372,6 +392,7 @@ Commutative Algebra
 ### 2.9 Homological Algebra (同调代数)
 
 **Wikipedia结构**:
+
 ```
 Homological Algebra
 ├── Basic Concepts (基本概念)
@@ -399,6 +420,7 @@ Homological Algebra
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/25-同调.md` (C.CORE.025) - 同调概念
 - `concept/核心概念/25-同调-三视角版.md`
 - `concept/00-集合论视角-核心概念分析/25-同调-集合论视角分析.md`
@@ -418,38 +440,38 @@ graph TD
     A --> E[Linear Algebra<br/>线性代数]
     A --> F[Representation Theory<br/>表示论]
     A --> G[Homological Algebra<br/>同调代数]
-    
+
     B --> B1[Group<br/>群]
     B --> B2[Subgroup<br/>子群]
     B --> B3[Normal Subgroup<br/>正规子群]
     B --> B4[Quotient Group<br/>商群]
     B --> B5[Group Homomorphism<br/>群同态]
-    
+
     C --> C1[Ring<br/>环]
     C --> C2[Ideal<br/>理想]
     C --> C3[Quotient Ring<br/>商环]
     C --> C4[Commutative Ring<br/>交换环]
     C --> C5[Noetherian Ring<br/>诺特环]
-    
+
     D --> D1[Field<br/>域]
     D --> D2[Field Extension<br/>域扩张]
     D --> D3[Finite Field<br/>有限域]
     D --> D4[Galois Theory<br/>伽罗瓦理论]
-    
+
     E --> E1[Vector Space<br/>向量空间]
     E --> E2[Linear Map<br/>线性映射]
     E --> E3[Matrix<br/>矩阵]
     E --> E4[Basis<br/>基]
-    
+
     F --> F1[Group Representation<br/>群表示]
     F --> F2[Irreducible Representation<br/>不可约表示]
     F --> F3[Character Theory<br/>特征标理论]
-    
+
     G --> G1[Chain Complex<br/>链复形]
     G --> G2[Homology Group<br/>同调群]
     G --> G3[Exact Sequence<br/>正合列]
     G --> G4[Derived Functor<br/>导出函子]
-    
+
     style A fill:#e8f5e9
     style B fill:#fff4e1
     style C fill:#fff4e1
@@ -486,7 +508,7 @@ graph LR
     H -->|群上同调| A
     D -->|交换环| I[交换代数]
     I -->|概形| J[代数几何]
-    
+
     style A fill:#e1f5ff
     style B fill:#fff4e1
     style C fill:#f3e5f5
@@ -571,13 +593,13 @@ algebra_concepts:
       wikipedia: "https://en.wikipedia.org/wiki/Group_(mathematics)"
       msc_primary: "20A05"
       prerequisites: []
-      
+
     - concept_id: C.CORE.011
       name: 向量空间
       wikipedia: "https://en.wikipedia.org/wiki/Vector_space"
       msc_primary: "15A03"
       prerequisites: [C.CORE.010]
-  
+
   # Level 1: 中级概念
   level_1:
     - concept_id: C.CORE.009
@@ -585,25 +607,25 @@ algebra_concepts:
       wikipedia: "https://en.wikipedia.org/wiki/Ring_(mathematics)"
       msc_primary: "13A99"
       prerequisites: [C.CORE.008]
-      
+
     - concept_id: C.CORE.010
       name: 域
       wikipedia: "https://en.wikipedia.org/wiki/Field_(mathematics)"
       msc_primary: "12F99"
       prerequisites: [C.CORE.009]
-      
+
     - concept_id: C.CORE.012
       name: 线性映射
       wikipedia: "https://en.wikipedia.org/wiki/Linear_map"
       msc_primary: "15A04"
       prerequisites: [C.CORE.011]
-      
+
     - concept_id: C.CORE.013
       name: 模
       wikipedia: "https://en.wikipedia.org/wiki/Module_(mathematics)"
       msc_primary: "13C99"
       prerequisites: [C.CORE.009]
-  
+
   # Level 2: 高级概念
   level_2:
     - concept_id: C.CORE.014
@@ -611,19 +633,19 @@ algebra_concepts:
       wikipedia: "https://en.wikipedia.org/wiki/Matrix_(mathematics)"
       msc_primary: "15Axx"
       prerequisites: [C.CORE.011, C.CORE.012]
-      
+
     - concept_id: C.CORE.032
       name: 表示
       wikipedia: "https://en.wikipedia.org/wiki/Representation_theory"
       msc_primary: "20C99"
       prerequisites: [C.CORE.008, C.CORE.011]
-      
+
     - concept_id: C.CORE.025
       name: 同调
       wikipedia: "https://en.wikipedia.org/wiki/Homology_(mathematics)"
       msc_primary: "55N99"
       prerequisites: [C.CORE.013]
-  
+
   # Level 3: 研究级概念
   level_3:
     - concept_id: C.CORE.033
@@ -632,14 +654,14 @@ algebra_concepts:
       msc_primary: "12F10"
       prerequisites: [C.CORE.010]
       status: proposed
-      
+
     - concept_id: C.CORE.034
       name: 交换代数
       wikipedia: "https://en.wikipedia.org/wiki/Commutative_algebra"
       msc_primary: "13A99"
       prerequisites: [C.CORE.009]
       status: proposed
-      
+
     - concept_id: C.CORE.035
       name: 同调代数
       wikipedia: "https://en.wikipedia.org/wiki/Homological_algebra"
@@ -656,47 +678,47 @@ wikipedia_mappings:
       - "concept/核心概念/08-群.md"
       - "concept/核心概念/09-环.md"
       - "concept/核心概念/10-域.md"
-      
+
   group_theory:
     url: "https://en.wikipedia.org/wiki/Group_theory"
     formalmath_docs:
       - "concept/核心概念/08-群.md"
       - "concept/核心概念/08-群-三视角版.md"
-      
+
   ring_theory:
     url: "https://en.wikipedia.org/wiki/Ring_theory"
     formalmath_docs:
       - "concept/核心概念/09-环.md"
       - "concept/核心概念/09-环-三视角版.md"
-      
+
   field_theory:
     url: "https://en.wikipedia.org/wiki/Field_(mathematics)"
     formalmath_docs:
       - "concept/核心概念/10-域.md"
       - "concept/核心概念/10-域-三视角版.md"
-      
+
   linear_algebra:
     url: "https://en.wikipedia.org/wiki/Linear_algebra"
     formalmath_docs:
       - "concept/核心概念/11-向量空间.md"
       - "concept/核心概念/12-线性映射.md"
-      
+
   representation_theory:
     url: "https://en.wikipedia.org/wiki/Representation_theory"
     formalmath_docs:
       - "concept/核心概念/32-表示.md"
       - "concept/核心概念/32-表示-三视角版.md"
-      
+
   galois_theory:
     url: "https://en.wikipedia.org/wiki/Galois_theory"
     formalmath_docs:
       - "concept/核心概念/10-域.md"
-      
+
   commutative_algebra:
     url: "https://en.wikipedia.org/wiki/Commutative_algebra"
     formalmath_docs:
       - "concept/核心概念/09-环.md"
-      
+
   homological_algebra:
     url: "https://en.wikipedia.org/wiki/Homological_algebra"
     formalmath_docs:
@@ -714,7 +736,7 @@ concept_relations:
     - [Abstract Algebra, Representation Theory]
     - [Ring Theory, Commutative Algebra]
     - [Field Theory, Galois Theory]
-    
+
   # 依赖关系
   depends_on:
     - [Ring, Group]
@@ -725,7 +747,7 @@ concept_relations:
     - [Representation, Vector Space]
     - [Homology, Module]
     - [Galois Theory, Field]
-    
+
   # 应用领域
   applied_in:
     - [Group Theory, Physics]

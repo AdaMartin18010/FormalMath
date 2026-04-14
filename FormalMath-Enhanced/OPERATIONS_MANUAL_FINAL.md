@@ -5,13 +5,14 @@ processed_at: '2026-04-05'
 ---
 # FormalMath 运维手册 - 生产环境最终版
 
-**版本**: v2.0.0  
-**更新日期**: 2026-04-04  
+**版本**: v2.0.0
+**更新日期**: 2026-04-04
 **适用环境**: Production
 
 ---
 
 ## 目录
+
 1. [系统架构](#系统架构)
 2. [快速参考](#快速参考)
 3. [日常运维](#日常运维)
@@ -27,6 +28,7 @@ processed_at: '2026-04-05'
 ## 系统架构
 
 ### 架构概览
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                         用户层                               │
@@ -59,6 +61,7 @@ processed_at: '2026-04-05'
 ```
 
 ### 服务规格
+
 | 服务 | 实例数 | CPU限制 | 内存限制 | 端口 |
 |------|--------|---------|----------|------|
 | Nginx | 2 | 1.0 | 512M | 80/443 |
@@ -102,8 +105,8 @@ docker-compose -f docker-compose.production.yml logs backend > backend.log
 
 # ========== 健康检查 ==========
 # 系统健康检查
-curl 
-curl 
+curl
+curl
 
 # 完整健康检查脚本
 ./scripts/health-check.sh
@@ -120,14 +123,14 @@ curl
 open   # admin/admin
 
 # Prometheus
-open 
+open
 
 # ========== 性能测试 ==========
 # 运行负载测试
 cd testing && docker-compose -f docker-compose.load-test.yml up -d
 
 # 访问Locust
-open 
+open
 
 # ========== 安全扫描 ==========
 # 运行安全检查
@@ -138,6 +141,7 @@ docker run --rm aquasec/trivy image formalmath-backend:latest
 ```
 
 ### 关键文件路径
+
 ```
 项目目录:     /opt/formalmath-enhanced
 配置文件:     /opt/formalmath-enhanced/.env.production
@@ -168,8 +172,8 @@ free -h
 docker-compose -f docker-compose.production.yml logs --tail=100 | grep -i error
 
 # 4. 检查健康状态（5分钟）
-curl -f 
-curl -f 
+curl -f
+curl -f
 
 # 5. 检查备份状态（5分钟）
 ls -la /opt/formalmath-enhanced/backups/
@@ -271,11 +275,11 @@ receivers:
   - name: 'default'
     email_configs:
       - to: 'ops@example.com'
-  
+
   - name: 'pagerduty'
     pagerduty_configs:
       - service_key: '<pagerduty-key>'
-  
+
   - name: 'email'
     email_configs:
       - to: 'team@example.com'
@@ -297,6 +301,7 @@ receivers:
 ### 性能调优参数
 
 #### Nginx优化
+
 ```nginx
 worker_processes auto;
 worker_rlimit_nofile 65535;
@@ -305,6 +310,7 @@ keepalive_requests 1000;
 ```
 
 #### Backend优化
+
 ```python
 WORKERS = 8
 WORKER_CONNECTIONS = 1000
@@ -312,6 +318,7 @@ KEEPALIVE_TIMEOUT = 65
 ```
 
 #### Redis优化
+
 ```bash
 maxmemory 4gb
 maxmemory-policy allkeys-lru
@@ -348,6 +355,7 @@ docker-compose logs backend | grep "Slow query"
 ### 常见故障处理
 
 #### 服务无法启动
+
 ```bash
 # 1. 检查日志
 docker-compose logs <service>
@@ -366,6 +374,7 @@ docker-compose restart <service>
 ```
 
 #### 数据库连接失败
+
 ```bash
 # 1. 检查数据库状态
 docker-compose ps
@@ -381,6 +390,7 @@ ls -la data/
 ```
 
 #### 高CPU使用率
+
 ```bash
 # 1. 查看进程
 htop
@@ -396,6 +406,7 @@ docker-compose logs <service> | grep -i error
 ```
 
 #### 内存不足
+
 ```bash
 # 1. 查看内存使用
 free -h
@@ -507,22 +518,25 @@ docker-compose -f docker-compose.production.yml up -d
 ### 灾难恢复计划
 
 #### RTO/RPO目标
+
 - **RTO (恢复时间目标)**: < 30分钟
 - **RPO (恢复点目标)**: < 24小时
 
 #### 恢复场景
 
 ##### 场景1: 完整系统故障
+
 ```bash
 # 1. 执行恢复脚本
 ./scripts/disaster-recovery.sh total
 
 # 2. 验证恢复
-curl 
+curl
 ./scripts/health-check.sh
 ```
 
 ##### 场景2: 数据库损坏
+
 ```bash
 # 1. 停止相关服务
 docker-compose stop backend
@@ -535,6 +549,7 @@ docker-compose start backend
 ```
 
 ##### 场景3: 配置错误
+
 ```bash
 # 1. 恢复配置
 git checkout <previous-commit>

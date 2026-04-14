@@ -12,6 +12,7 @@ processed_at: '2026-04-05'
 > **最后更新**: 2026年4月4日
 > **权威来源**: Princeton University Department of Mathematics（2024-2025学年课程表）
 > **关联文档**:
+>
 > - [Princeton-course-mapping.md](project/Princeton-course-mapping.md)
 > - [Princeton-course-mapping-detailed.md](project/Princeton-course-mapping-detailed.md)
 > - [00-国际课程与机构对齐对照表-2026年4月.md](project/00-国际课程与机构对齐对照表-2026年4月.md)
@@ -20,21 +21,42 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- [一、Princeton数学传统概述](#一princeton数学传统概述)
-  - [1.1 分析学传统（Stein学派）](#11-分析学传统stein学派)
-  - [1.2 代数几何优势](#12-代数几何优势)
-  - [1.3 数论研究深度](#13-数论研究深度)
-- [二、核心课程深度映射](#二核心课程深度映射)
-  - [2.1 MAT 215/217/218: Honors分析序列](#21-mat-215217218-honors分析序列)
-  - [2.2 MAT 325/330: 复分析](#22-mat-325330-复分析)
-  - [2.3 MAT 345: Algebra I](#23-mat-345-algebra-i)
-  - [2.4 MAT 355: Introduction to Differential Geometry](#24-mat-355-introduction-to-differential-geometry)
-  - [2.5 MAT 365: Topology](#25-mat-365-topology)
-  - [2.6 MAT 377: Combinatorial Mathematics](#26-mat-377-combinatorial-mathematics)
-  - [2.7 MAT 478: Topics in Number Theory](#27-mat-478-topics-in-number-theory)
-- [三、Princeton Lectures in Analysis（Stein教材）专项对齐](#三princeton-lectures-in-analysisstein教材专项对齐)
-- [四、内容差距与更新建议](#四内容差距与更新建议)
-- [五、学习路径建议](#五学习路径建议)
+- [Princeton数学课程内容深度对齐报告](#princeton数学课程内容深度对齐报告)
+  - [目录](#目录)
+  - [一、Princeton数学传统概述](#一princeton数学传统概述)
+    - [1.1 分析学传统（Stein学派）](#11-分析学传统stein学派)
+    - [1.2 代数几何优势](#12-代数几何优势)
+    - [1.3 数论研究深度](#13-数论研究深度)
+  - [二、核心课程深度映射](#二核心课程深度映射)
+    - [2.1 MAT 215/217/218: Honors分析序列](#21-mat-215217218-honors分析序列)
+      - [MAT 215: Single Variable Analysis](#mat-215-single-variable-analysis)
+      - [MAT 217: Honors Linear Algebra](#mat-217-honors-linear-algebra)
+      - [MAT 216/218: Multivariable Analysis and Linear Algebra I/II](#mat-216218-multivariable-analysis-and-linear-algebra-iii)
+    - [2.2 MAT 325/330: 复分析](#22-mat-325330-复分析)
+      - [MAT 325: Analysis I: Fourier Series and Partial Differential Equations](#mat-325-analysis-i-fourier-series-and-partial-differential-equations)
+      - [MAT 330: Complex Analysis with Applications](#mat-330-complex-analysis-with-applications)
+      - [MAT 335: Analysis II: Complex Analysis](#mat-335-analysis-ii-complex-analysis)
+    - [2.3 MAT 345: Algebra I](#23-mat-345-algebra-i)
+    - [2.4 MAT 355: Introduction to Differential Geometry](#24-mat-355-introduction-to-differential-geometry)
+    - [2.5 MAT 365: Topology](#25-mat-365-topology)
+    - [2.6 MAT 377: Combinatorial Mathematics](#26-mat-377-combinatorial-mathematics)
+    - [2.7 MAT 478: Topics in Number Theory](#27-mat-478-topics-in-number-theory)
+  - [三、Princeton Lectures in Analysis（Stein教材）专项对齐](#三princeton-lectures-in-analysisstein教材专项对齐)
+    - [Stein四卷本深度对应](#stein四卷本深度对应)
+  - [四、内容差距与更新建议](#四内容差距与更新建议)
+    - [4.1 分析学内容映射差距](#41-分析学内容映射差距)
+    - [4.2 代数几何方向差距](#42-代数几何方向差距)
+    - [4.3 数论深度差距](#43-数论深度差距)
+    - [4.4 组合数学差距](#44-组合数学差距)
+    - [4.5 推荐新增文档清单](#45-推荐新增文档清单)
+  - [五、学习路径建议](#五学习路径建议)
+    - [5.1 基于Stein传统的分析学路径](#51-基于stein传统的分析学路径)
+    - [5.2 Princeton代数几何路径](#52-princeton代数几何路径)
+    - [5.3 Princeton数论路径](#53-princeton数论路径)
+  - [六、总结](#六总结)
+    - [6.1 对齐评估总表](#61-对齐评估总表)
+    - [6.2 Stein传统的核心价值](#62-stein传统的核心价值)
+    - [6.3 后续行动建议](#63-后续行动建议)
 
 ---
 
@@ -137,6 +159,7 @@ Princeton数论研究的特色：
 | 双线性型与二次型 | `02-代数结构/02-核心理论/线性代数/` | 二次型理论 |
 
 **教材对比**:
+
 - Princeton: Axler *Linear Algebra Done Right* (强调抽象结构)
 - MIT: 18.700/701 (理论与应用平衡)
 - Harvard: Math 21/23 (应用导向vs理论导向)
@@ -292,7 +315,8 @@ Princeton数论研究的特色：
 | 曲面的单值化 | `04-几何学/08-微分几何核心-深度扩展版.md` | 共形结构 |
 | **接触几何初步** | `04-几何学/03-微分几何.md` | 接触流形 |
 
-**内容差距**: 
+**内容差距**:
+
 - ⚠️ 接触几何内容需要补充
 - ⚠️ 极小曲面的更多例子和最新进展
 
@@ -348,11 +372,13 @@ Princeton数论研究的特色：
 | 多面体与超平面配置 | `04-几何学/` | 离散几何 |
 
 **Alon教授特色**:
+
 - 概率方法的系统应用
 - 组合Nullstellensatz
 - 代数与组合的联系
 
 **内容差距**:
+
 - ⚠️ 概率方法的深度内容需要补充
 - ⚠️ 组合Nullstellensatz专题
 - ⚠️ 极值组合的更多最新结果
@@ -382,11 +408,13 @@ Princeton数论研究的特色：
 | 类域论基础 | `07-数论/07-代数数论深化-类域论基础.md` | 互反律 |
 
 **Bhargava教授特色**:
+
 - 高阶 composition laws
 - 椭圆曲线平均秩
 - 数论几何方法
 
 **内容差距**:
+
 - ⚠️ Bhargava的高阶composition laws
 - ⚠️ 椭圆曲线的现代算术理论
 - ⚠️ 模形式的计算方面
@@ -616,8 +644,8 @@ Princeton的Stein分析传统对FormalMath的核心启示：
 
 ---
 
-**文档状态**: v1.0（2026年4月）  
-**维护建议**: 每学年复核Princeton课程表更新  
+**文档状态**: v1.0（2026年4月）
+**维护建议**: 每学年复核Princeton课程表更新
 **下次复核**: 2026年9月
 
 ---

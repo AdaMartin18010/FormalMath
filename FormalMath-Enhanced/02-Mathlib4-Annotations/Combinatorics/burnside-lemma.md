@@ -118,7 +118,7 @@ $$|X/G| = \frac{1}{|G|} \sum_{g \in G} |X^g|$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Group Action](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Basic.html)[需更新]
+- [Mathlib4 文档 - Group Action][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Basic.html](需更新)
 
 ---
 

@@ -64,6 +64,7 @@ end Nakayama
 设 $R$ 是交换环，$M$ 是有限生成 $R$-模，$I \subseteq R$ 是含于Jacobson根 $J(R)$ 的理想。
 
 **中山引理**：
+
 1. **基本形式**：若 $M = IM$，则 $M = 0$
 2. **生成元形式**：若 $N \subseteq M$ 是子模且 $M = N + IM$，则 $M = N$
 3. **提升形式**：若 $m_1, \ldots, m_n$ 生成 $M/IM$，则它们生成 $M$
@@ -132,8 +133,8 @@ end Nakayama
 
 ### 在线资源
 
-- [Mathlib4 文档 - Jacobson](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Basic.html)[需更新]
-- [Stacks Project - 00DV](https://stacks.math.columbia.edu/tag/00DV)[需更新]
+- [Mathlib4 文档 - Jacobson][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Basic.html](需更新)
+- [Stacks Project - 00DV][https://stacks.math.columbia.edu/tag/00DV](需更新)
 
 ---
 

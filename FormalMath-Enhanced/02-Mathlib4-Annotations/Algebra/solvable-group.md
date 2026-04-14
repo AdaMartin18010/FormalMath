@@ -129,8 +129,8 @@ $A_5$ 是单群且非交换，故 $A_5^{(1)} = A_5$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Solvable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Solvable.html)[需更新]
-- [Groupprops - Solvable group](https://groupprops.subwiki.org/wiki/Solvable_group)[需更新]
+- [Mathlib4 文档 - Solvable][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Solvable.html](需更新)
+- [Groupprops - Solvable group][https://groupprops.subwiki.org/wiki/Solvable_group](需更新)
 
 ---
 

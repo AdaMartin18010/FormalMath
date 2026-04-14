@@ -130,8 +130,8 @@ G ------> G
 
 ### 在线资源
 
-- [Mathlib4 文档 - FreeGroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/FreeGroup/Basic.html)[需更新]
-- [Groupprops - Free group](https://groupprops.subwiki.org/wiki/Free_group)[需更新]
+- [Mathlib4 文档 - FreeGroup][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/FreeGroup/Basic.html](需更新)
+- [Groupprops - Free group][https://groupprops.subwiki.org/wiki/Free_group](需更新)
 
 ---
 

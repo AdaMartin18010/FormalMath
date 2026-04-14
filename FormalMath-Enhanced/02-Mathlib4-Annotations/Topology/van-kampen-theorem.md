@@ -58,6 +58,7 @@ $$\pi_1(X, x_0) \cong \pi_1(U, x_0) *_{\pi_1(U \cap V, x_0)} \pi_1(V, x_0)$$
 即 **自由积 with amalgamation**（融合积）。
 
 **群的表现**：若
+
 - $\pi_1(U) = \langle A_U | R_U \rangle$
 - $\pi_1(V) = \langle A_V | R_V \rangle$
 - $\pi_1(U \cap V)$ 的生成元映射到两边
@@ -69,15 +70,15 @@ $$\pi_1(X, x_0) \cong \pi_1(U, x_0) *_{\pi_1(U \cap V, x_0)} \pi_1(V, x_0)$$
 1. **环路分解**：
    - 将 $X$ 中环路分解为交替的 $U$ 和 $V$ 中路径
    - 利用Lebesgue数引理保证细分存在
-   
+
 2. **同伦类对应**：
    - 证明这种分解在同伦意义下良定义
    - 重叠区域保证转移的连续性
-   
+
 3. **泛性质**：
    - 验证融合积的泛性质
    - 任何到群 $G$ 的同态可由 $U$ 和 $V$ 诱导
-   
+
 4. **同构构造**：
    - 显式构造同态及其逆
    - 验证互逆
@@ -144,8 +145,8 @@ $\pi_1(S^2) = 0 *_{\mathbb{Z}} 0 = 0$（平凡群）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - VanKampen](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/FundamentalGroupoid/VanKampen.html)[需更新]
-- [Hatcher - Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf)[需更新]
+- [Mathlib4 文档 - VanKampen][https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/FundamentalGroupoid/VanKampen.html](需更新)
+- [Hatcher - Algebraic Topology][https://pi.math.cornell.edu/~hatcher/AT/AT.pdf](需更新)
 
 ---
 

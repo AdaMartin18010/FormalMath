@@ -313,8 +313,8 @@ MSC2020是数学文献的标准分类体系。
 ### 8.1 项目资源
 
 - **GitHub仓库**: [FormalMath](https://github.com/formalmath)
-- **在线文档**: [docs.formalmath.org](https://docs.formalmath.org)[需更新]
-- **学习系统**: [learning.formalmath.org](https://learning.formalmath.org)[需更新]
+- **在线文档**: [docs.formalmath.org][https://docs.formalmath.org](需更新)
+- **学习系统**: [learning.formalmath.org][https://learning.formalmath.org](需更新)
 
 ### 8.2 参考文献
 
@@ -325,7 +325,7 @@ MSC2020是数学文献的标准分类体系。
 - Rudin, W. *Principles of Mathematical Analysis*
 - Hartshorne, R. *Algebraic Geometry*
 - Vakil, R. *Foundations of Algebraic Geometry* (FOAG)
-- [Mathlib4 Documentation](https://leanprover-community.github.io/mathlib4_docs/)[需更新]
+- [Mathlib4 Documentation][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 
 ---
 

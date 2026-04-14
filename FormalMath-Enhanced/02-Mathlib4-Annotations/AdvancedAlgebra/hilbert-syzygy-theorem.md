@@ -13,7 +13,7 @@ import Mathlib.RingTheory.Regular.RegularLocalRing
 namespace CommutativeAlgebra
 
 /-- Hilbert合冲定理 -/
-theorem hilbert_syzygy 
+theorem hilbert_syzygy
     {k : Type*} [Field k]
     {n : ℕ} (R := MvPolynomial (Fin n) k) :
     ∀ (M : Type*) [AddCommGroup M] [Module R M]

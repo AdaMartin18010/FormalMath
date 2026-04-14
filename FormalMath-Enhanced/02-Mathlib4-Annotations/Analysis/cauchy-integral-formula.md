@@ -112,7 +112,7 @@ $$|f'(z_0)| = \left|\frac{1}{2\pi i} \oint_{|z-z_0|=R} \frac{f(z)}{(z-z_0)^2} dz
 
 ### 在线资源
 
-- [Mathlib4 文档 - CauchyIntegral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/CauchyIntegral.html)[需更新]
+- [Mathlib4 文档 - CauchyIntegral][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/CauchyIntegral.html](需更新)
 
 ---
 

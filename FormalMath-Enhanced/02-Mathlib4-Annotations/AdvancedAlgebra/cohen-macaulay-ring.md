@@ -126,7 +126,7 @@ $x$ 不是零因子，但在 $R/(x) = k[y,z]/(0)$ 中，任何元素都是零因
 ### 在线资源
 
 - [Cohen-Macaulay Ring Wikipedia](https://en.wikipedia.org/wiki/Cohen%E2%80%93Macaulay_ring)
-- [Stacks Project - Cohen-Macaulay Rings](https://stacks.math.columbia.edu/tag/00N7)[需更新]
+- [Stacks Project - Cohen-Macaulay Rings][https://stacks.math.columbia.edu/tag/00N7](需更新)
 
 ---
 

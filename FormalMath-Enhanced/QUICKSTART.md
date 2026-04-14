@@ -10,6 +10,7 @@ processed_at: '2026-04-05'
 ### 1. 环境准备
 
 确保服务器满足以下条件：
+
 - Ubuntu 20.04+ / CentOS 7+
 - Docker 24.0+
 - Docker Compose 2.0+
@@ -39,6 +40,7 @@ docker-compose -f docker-compose.production.yml up -d
 ## 常用命令速查
 
 ### 服务管理
+
 ```bash
 # 启动
 ./scripts/deploy.sh start
@@ -57,6 +59,7 @@ docker-compose -f docker-compose.production.yml up -d
 ```
 
 ### 数据库管理
+
 ```bash
 # 初始化
 ./scripts/database-migrate.sh init
@@ -69,6 +72,7 @@ docker-compose -f docker-compose.production.yml up -d
 ```
 
 ### SSL证书
+
 ```bash
 # 申请证书
 ./scripts/ssl-renew.sh init -d your-domain.com -e admin@your-domain.com
@@ -81,6 +85,7 @@ docker-compose -f docker-compose.production.yml up -d
 ```
 
 ### 备份管理
+
 ```bash
 # 全量备份
 ./scripts/backup-scheduler.sh full
@@ -93,6 +98,7 @@ docker-compose -f docker-compose.production.yml up -d
 ```
 
 ### 日志管理
+
 ```bash
 # 轮转日志
 ./scripts/log-rotate.sh rotate
@@ -105,6 +111,7 @@ docker-compose -f docker-compose.production.yml up -d
 ```
 
 ### 安全检查
+
 ```bash
 # 完整检查
 ./scripts/security-hardening.sh full
@@ -128,6 +135,7 @@ docker-compose -f docker-compose.production.yml up -d
 ## 故障排查
 
 ### 服务无法启动
+
 ```bash
 # 查看日志
 docker-compose logs -f
@@ -140,6 +148,7 @@ df -h
 ```
 
 ### 数据库问题
+
 ```bash
 # 检查数据库连接
 docker-compose exec backend python -c "from database import check_connection; check_connection()"
@@ -149,6 +158,7 @@ docker-compose exec backend python -c "from database import check_connection; ch
 ```
 
 ### SSL问题
+
 ```bash
 # 检查证书
 openssl x509 -in nginx/ssl/formalmath.crt -text -noout

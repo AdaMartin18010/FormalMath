@@ -79,6 +79,7 @@ end FiveLemma
 ## 形式化表述
 
 给定交换图（行正合）：
+
 ```
 A --f₁--> B --f₂--> C --f₃--> D --f₄--> E
 |α        |β        |γ        |δ        |ε
@@ -87,6 +88,7 @@ A'--g₁--> B'--g₂--> C'--g₃--> D'--g₄--> E'
 ```
 
 **五引理**：
+
 1. **同构版本**：若 $\alpha, \beta, \delta, \varepsilon$ 是同构，则 $\gamma$ 是同构
 2. **单射版本**：若 $\alpha$ 满、$\beta, \delta$ 单、$\varepsilon$ 满，则 $\gamma$ 单
 3. **满射版本**：若 $\alpha$ 满、$\beta, \delta$ 满、$\varepsilon$ 单，则 $\gamma$ 满
@@ -113,6 +115,7 @@ A'--g₁--> B'--g₂--> C'--g₃--> D'--g₄--> E'
 ### 示例 1：同调群比较
 
 设 $f: X \to Y$ 是拓扑空间的映射，诱导：
+
 ```
 Hₙ(A) → Hₙ(X) → Hₙ(X,A) → Hₙ₋₁(A) → Hₙ₋₁(X)
   ↓        ↓        ↓         ↓         ↓
@@ -157,8 +160,8 @@ Hₙ(B) → Hₙ(Y) → Hₙ(Y,B) → Hₙ₋₁(B) → Hₙ₋₁(Y)
 
 ### 在线资源
 
-- [Mathlib4 文档 - Five](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Abelian/Five.html)[需更新]
-- [Stacks Project - 010M](https://stacks.math.columbia.edu/tag/010M)[需更新]
+- [Mathlib4 文档 - Five][https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Abelian/Five.html](需更新)
+- [Stacks Project - 010M][https://stacks.math.columbia.edu/tag/010M](需更新)
 
 ---
 

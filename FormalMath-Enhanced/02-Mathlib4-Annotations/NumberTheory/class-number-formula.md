@@ -48,6 +48,7 @@ end ClassNumberFormula
 $$\lim_{s \to 1} (s-1)\zeta_K(s) = \frac{2^{r_1}(2\pi)^{r_2} R_K h_K}{w_K \sqrt{|D_K|}}$$
 
 其中：
+
 - $r_1, r_2$：实嵌入和复嵌入对数
 - $D_K$：判别式
 - $\zeta_K(s) = \sum_{I \subseteq \mathcal{O}_K} N(I)^{-s}$（Dedekind zeta函数）
@@ -57,15 +58,15 @@ $$\lim_{s \to 1} (s-1)\zeta_K(s) = \frac{2^{r_1}(2\pi)^{r_2} R_K h_K}{w_K \sqrt{
 1. **理想计数**：
    - 数理想按范数计数
    - 几何方法：Minkowski理论
-   
+
 2. **Zeta函数分解**：
    - $\zeta_K(s) = \sum_{[I] \in Cl_K} \zeta_{[I]}(s)$
    - 按理想类分解
-   
+
 3. **Epstein zeta函数**：
    - 每个理想类的zeta可解析延拓
    - $s=1$ 处的极点分析
-   
+
 4. **留数计算**：
    - 几何平均得到体积项
    - 调节子来自对数单位格
@@ -117,7 +118,7 @@ $K = \mathbb{Q}(\sqrt{5})$：$h = 1$，调节子 $R = \log \frac{1+\sqrt{5}}{2}$
 
 ### 在线资源
 
-- [Mathlib4 文档 - ClassNumber](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/ClassNumber.html)[需更新]
+- [Mathlib4 文档 - ClassNumber][https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/NumberField/ClassNumber.html](需更新)
 - [Wikipedia - Class Number Formula](https://en.wikipedia.org/wiki/Class_number_formula)
 
 ---

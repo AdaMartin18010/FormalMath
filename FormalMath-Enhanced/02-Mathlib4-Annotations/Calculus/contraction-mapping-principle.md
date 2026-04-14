@@ -121,7 +121,7 @@ $$d(f(x), f(y)) \leq q \cdot d(x, y), \quad \forall x, y \in X$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Contracting](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Contracting.html)[需更新]
+- [Mathlib4 文档 - Contracting][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/MetricSpace/Contracting.html](需更新)
 
 ---
 

@@ -13,18 +13,18 @@ import Mathlib.AlgebraicTopology.Homotopy.Whitehead
 namespace AlgebraicTopology
 
 /-- Whitehead定理 -/
-theorem whitehead_theorem 
+theorem whitehead_theorem
     {X Y : Type*} [TopologicalSpace X]
     [TopologicalSpace Y] [CWComplex X] [CWComplex Y]
     (f : X → Y) [Continuous f]
-    (hf : ∀ (n : ℕ), 
+    (hf : ∀ (n : ℕ),
       π_n f : π_n X → π_n Y ≃* π_n Y) :
     IsHomotopyEquivalence f := by
   -- 诱导同伦群同构的映射是同伦等价
   sorry
 
 /-- 同调版本的Whitehead定理 -/
-theorem whitehead_homology 
+theorem whitehead_homology
     {X Y : Type*} [TopologicalSpace X]
     [TopologicalSpace Y] [CWComplex X] [CWComplex Y]
     (f : X → Y) [Continuous f]
@@ -53,6 +53,7 @@ Whitehead定理如同一个"识别系统"：通过代数指纹（同伦群）来
 **Whitehead定理**：若 $f_*: \pi_n(X) \to \pi_n(Y)$ 对所有 $n \geq 0$ 是同构，则 $f$ 是同伦等价。
 
 **等价表述**：
+
 - 存在 $g: Y \to X$ 使得 $g \circ f \simeq 1_X$，$f \circ g \simeq 1_Y$
 - $f$ 是弱同伦等价且 $X, Y$ 是CW复形
 
@@ -95,7 +96,7 @@ Whitehead定理说明它们同伦等价当且仅当 $qq' \equiv \pm m^2 \pmod{p}
 ## 应用
 
 - **同伦型分类**：CW复形的代数判定
-- ** surgery理论**：流形改造的同伦条件
+- **surgery理论**：流形改造的同伦条件
 - **有理同伦论**：Quillen和Sullivan理论
 - **模型范畴**：弱等价的公理化
 - **∞-范畴**：同伦理论的现代框架

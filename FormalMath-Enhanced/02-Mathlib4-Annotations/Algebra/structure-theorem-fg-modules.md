@@ -65,6 +65,7 @@ PID上有限生成模结构定理由Frobenius和Stickelberger在1878年对阿贝
 $$M \cong R^r \oplus \bigoplus_{i=1}^k R/(d_i)$$
 
 其中：
+
 - $r \geq 0$ 是自由秩（不变量）
 - $d_1 | d_2 | \cdots | d_k$ 是非零非单位的**不变因子**（唯一确定）
 
@@ -138,8 +139,8 @@ $V$ 成为 $k[x]$-模，$x \cdot v = T(v)$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Module PID](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/PID.html)[需更新]
-- [Keith Conrad - Modules over PIDs](https://kconrad.math.uconn.edu/blurbs/linmultialg/modulesoverpids.pdf)[需更新]
+- [Mathlib4 文档 - Module PID][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/PID.html](需更新)
+- [Keith Conrad - Modules over PIDs][https://kconrad.math.uconn.edu/blurbs/linmultialg/modulesoverpids.pdf](需更新)
 
 ---
 

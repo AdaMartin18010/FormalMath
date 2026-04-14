@@ -135,7 +135,7 @@ $k[x]$（$k$ 域）是Dedekind整环。
 
 ### 在线资源
 
-- [Mathlib4 文档 - DedekindDomain](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/DedekindDomain/Basic.html)[需更新]
+- [Mathlib4 文档 - DedekindDomain][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/DedekindDomain/Basic.html](需更新)
 - [Wikipedia - Dedekind Domain](https://en.wikipedia.org/wiki/Dedekind_domain)
 
 ---

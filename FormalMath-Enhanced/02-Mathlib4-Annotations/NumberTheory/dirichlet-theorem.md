@@ -123,7 +123,7 @@ $$\pi_{a,m}(x) \sim \frac{1}{\varphi(m)} \cdot \frac{x}{\ln x}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - DirichletTheorem](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/DirichletTheorem.html)[需更新]
+- [Mathlib4 文档 - DirichletTheorem][https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/DirichletTheorem.html](需更新)
 
 ---
 

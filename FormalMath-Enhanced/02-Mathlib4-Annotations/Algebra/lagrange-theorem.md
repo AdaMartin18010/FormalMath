@@ -109,8 +109,8 @@ $$|G| = [G:H] \cdot |H|$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Subgroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Subgroup/Basic.html)[需更新]
-- [Groupprops - Lagrange's theorem](https://groupprops.subwiki.org/wiki/Lagrange%27s_theorem)[需更新]
+- [Mathlib4 文档 - Subgroup][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Subgroup/Basic.html](需更新)
+- [Groupprops - Lagrange's theorem][https://groupprops.subwiki.org/wiki/Lagrange%27s_theorem](需更新)
 
 ---
 

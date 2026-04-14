@@ -119,7 +119,7 @@ $$Dg(x) = -\left(\frac{\partial F}{\partial y}\right)^{-1} \frac{\partial F}{\pa
 
 ### 在线资源
 
-- [Mathlib4 文档 - Implicit](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Implicit.html)[需更新]
+- [Mathlib4 文档 - Implicit][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Implicit.html](需更新)
 
 ---
 

@@ -125,7 +125,7 @@ $(R, \mathfrak{m})$ 上有限生成模 $M$ 平坦当且仅当自由。
 ### 在线资源
 
 - [Nakayama's Lemma Wikipedia](https://en.wikipedia.org/wiki/Nakayama%27s_lemma)
-- [Stacks Project - Nakayama's Lemma](https://stacks.math.columbia.edu/tag/00DV)[需更新]
+- [Stacks Project - Nakayama's Lemma][https://stacks.math.columbia.edu/tag/00DV](需更新)
 
 ---
 

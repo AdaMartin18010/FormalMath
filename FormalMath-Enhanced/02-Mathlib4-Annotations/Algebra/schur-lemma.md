@@ -141,8 +141,8 @@ $\text{End}_k(M) \cong k$，Schur引理显然成立。
 
 ### 在线资源
 
-- [Mathlib4 文档 - SimpleModule](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/SimpleModule.html)[需更新]
-- [Groupprops - Schur's lemma](https://groupprops.subwiki.org/wiki/Schur%27s_lemma)[需更新]
+- [Mathlib4 文档 - SimpleModule][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/SimpleModule.html](需更新)
+- [Groupprops - Schur's lemma][https://groupprops.subwiki.org/wiki/Schur%27s_lemma](需更新)
 
 ---
 

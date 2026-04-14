@@ -126,7 +126,7 @@ $$0 \to \ker f \to V \to \text{im } f \to 0$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - FiniteDimensional](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/FiniteDimensional.html)[需更新]
+- [Mathlib4 文档 - FiniteDimensional][https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/FiniteDimensional.html](需更新)
 
 ---
 

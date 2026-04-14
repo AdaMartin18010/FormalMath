@@ -132,8 +132,8 @@ $U, V$ 是各自圆锥，$U \cap V = \{\text{点}\}$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Homology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/HomotopyGroup.html)[需更新]
-- [Hatcher - Homology](https://pi.math.cornell.edu/~hatcher/AT/ATch2.pdf)[需更新]
+- [Mathlib4 文档 - Homology][https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/HomotopyGroup.html](需更新)
+- [Hatcher - Homology][https://pi.math.cornell.edu/~hatcher/AT/ATch2.pdf](需更新)
 
 ---
 

@@ -46,6 +46,7 @@ Arzelà-Ascoli定理告诉我们：**在紧致空间上，一致有界且"同步
 设 $X$ 是紧致度量空间，$Y$ 是完备度量空间，$\mathcal{F} \subset C(X, Y)$ 是连续函数族。
 
 **Arzelà-Ascoli定理**：$\mathcal{F}$ 在一致拓扑下相对紧致当且仅当满足：
+
 1. **逐点紧致性**：对每个 $x \in X$，集合 $\{f(x) : f \in \mathcal{F}\}$ 在 $Y$ 中相对紧致
 2. **等度连续性**：$\mathcal{F}$ 在 $X$ 上等度连续
 
@@ -105,7 +106,7 @@ Arzelà-Ascoli定理告诉我们：**在紧致空间上，一致有界且"同步
 
 ### 在线资源
 
-- [Mathlib4 文档 - Compactness](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactness/Compact.html)[需更新]
+- [Mathlib4 文档 - Compactness][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactness/Compact.html](需更新)
 
 ---
 

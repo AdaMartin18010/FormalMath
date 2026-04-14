@@ -6,6 +6,7 @@ processed_at: '2026-04-05'
 # FormalMath 运维手册
 
 ## 目录
+
 1. [系统概述](#系统概述)
 2. [部署指南](#部署指南)
 3. [日常运维](#日常运维)
@@ -19,6 +20,7 @@ processed_at: '2026-04-05'
 ## 系统概述
 
 ### 架构组件
+
 - **Nginx**: 反向代理和静态文件服务
 - **Backend**: FastAPI后端服务
 - **Frontend**: React前端应用
@@ -27,6 +29,7 @@ processed_at: '2026-04-05'
 - **Prometheus/Grafana**: 监控（可选）
 
 ### 目录结构
+
 ```
 FormalMath-Enhanced/
 ├── api/                    # 后端API代码
@@ -48,6 +51,7 @@ FormalMath-Enhanced/
 ### 环境准备
 
 #### 系统要求
+
 - **OS**: Ubuntu 20.04 LTS 或更高版本
 - **CPU**: 4核心以上
 - **内存**: 8GB以上
@@ -55,6 +59,7 @@ FormalMath-Enhanced/
 - **网络**: 公网IP，开放80/443端口
 
 #### 依赖安装
+
 ```bash
 # 更新系统
 sudo apt update && sudo apt upgrade -y
@@ -73,6 +78,7 @@ sudo apt install -y curl wget jq
 ### 生产部署
 
 #### 1. 克隆代码
+
 ```bash
 cd /opt
 git clone https://github.com/your-org/formalmath-enhanced.git
@@ -80,6 +86,7 @@ cd formalmath-enhanced
 ```
 
 #### 2. 配置环境变量
+
 ```bash
 # 复制环境模板
 cp .env.production.example .env.production
@@ -95,6 +102,7 @@ REDIS_PASSWORD=your-redis-password
 ```
 
 #### 3. 配置SSL证书
+
 ```bash
 # 使用Let's Encrypt（推荐）
 ./scripts/ssl-renew.sh init \
@@ -106,6 +114,7 @@ REDIS_PASSWORD=your-redis-password
 ```
 
 #### 4. 启动服务
+
 ```bash
 # 构建并启动
 ./scripts/deploy.sh start
@@ -115,6 +124,7 @@ REDIS_PASSWORD=your-redis-password
 ```
 
 #### 5. 验证部署
+
 ```bash
 # 健康检查
 ./scripts/health-check.sh
@@ -130,6 +140,7 @@ REDIS_PASSWORD=your-redis-password
 ### 常用命令
 
 #### 服务管理
+
 ```bash
 # 启动服务
 ./scripts/deploy.sh start
@@ -149,6 +160,7 @@ docker-compose logs -f backend
 ```
 
 #### 数据库管理
+
 ```bash
 # 初始化数据库
 ./scripts/database-migrate.sh init
@@ -164,6 +176,7 @@ docker-compose logs -f backend
 ```
 
 #### 日志管理
+
 ```bash
 # 轮转日志
 ./scripts/log-rotate.sh rotate
@@ -181,6 +194,7 @@ docker-compose logs -f backend
 ### 定时任务
 
 已配置的crontab任务：
+
 ```bash
 # 数据库备份 - 每天凌晨2点
 0 2 * * * /opt/formalmath-enhanced/scripts/database-migrate.sh backup
@@ -208,18 +222,21 @@ docker-compose logs -f backend
 ### 监控指标
 
 #### 系统指标
+
 - CPU使用率
 - 内存使用率
 - 磁盘使用率
 - 网络流量
 
 #### 应用指标
+
 - 请求QPS
 - 响应时间
 - 错误率
 - 活跃连接数
 
 #### 业务指标
+
 - 用户数
 - 任务队列长度
 - 缓存命中率
@@ -238,6 +255,7 @@ docker-compose logs -f backend
 | SSL证书过期 | < 3天 | 严重 | 短信+邮件 |
 
 ### 查看监控
+
 ```bash
 # Prometheus
 
@@ -254,6 +272,7 @@ docker-compose logs -f backend
 ### 常见问题
 
 #### 服务无法启动
+
 ```bash
 # 1. 检查日志
 docker-compose logs backend
@@ -269,6 +288,7 @@ df -h
 ```
 
 #### 数据库连接失败
+
 ```bash
 # 1. 检查数据库文件
 ls -la data/formalmath.db
@@ -281,6 +301,7 @@ docker exec formalmath-backend ls -la /app/data/
 ```
 
 #### 内存不足
+
 ```bash
 # 1. 查看内存使用
 free -h
@@ -297,6 +318,7 @@ sudo swapon /swapfile
 ```
 
 #### 高CPU使用率
+
 ```bash
 # 1. 查看进程
 htop
@@ -311,35 +333,38 @@ docker-compose restart backend
 ### 紧急处理流程
 
 1. **服务完全不可用**
+
    ```bash
    # 快速重启
    docker-compose restart
-   
+
    # 如无效，重建容器
    docker-compose down
    docker-compose up -d
    ```
 
 2. **数据损坏**
+
    ```bash
    # 立即停止服务
    docker-compose down
-   
+
    # 恢复最近备份
    ./scripts/database-migrate.sh restore
-   
+
    # 启动服务
    docker-compose up -d
    ```
 
 3. **安全事件**
+
    ```bash
    # 隔离受影响容器
    docker-compose stop backend
-   
+
    # 检查日志
    grep -i "error\|warning\|attack" logs/nginx/access.log
-   
+
    # 运行安全检查
    ./scripts/security-hardening.sh full
    ```
@@ -351,21 +376,25 @@ docker-compose restart backend
 ### 备份策略
 
 #### 全量备份（每周）
+
 - 时间：每周日凌晨1点
 - 内容：数据目录、配置文件、数据库
 - 保留期：30天
 
 #### 增量备份（每天）
+
 - 时间：每天凌晨1点30分
 - 内容：变化的数据文件
 - 保留期：7天
 
 #### 数据库备份（每天）
+
 - 时间：每天凌晨2点
 - 内容：完整数据库导出
 - 保留期：30天
 
 ### 手动备份
+
 ```bash
 # 全量备份
 ./scripts/backup-scheduler.sh full
@@ -378,6 +407,7 @@ docker-compose restart backend
 ```
 
 ### 恢复操作
+
 ```bash
 # 列出可用备份
 ./scripts/backup-scheduler.sh list
@@ -390,6 +420,7 @@ docker-compose restart backend
 ```
 
 ### 云存储同步
+
 ```bash
 # 配置云存储
 # 编辑 .env.production
@@ -409,23 +440,27 @@ S3_SECRET_KEY=your-secret-key
 ### 定期安全任务
 
 #### 每周
+
 - [ ] 检查安全日志
 - [ ] 检查登录失败记录
 - [ ] 验证备份完整性
 
 #### 每月
+
 - [ ] 运行安全检查脚本
 - [ ] 更新系统和依赖
 - [ ] 轮换密钥
 - [ ] 检查SSL证书过期时间
 
 #### 每季度
+
 - [ ] 安全渗透测试
 - [ ] 审查访问日志
 - [ ] 更新防火墙规则
 - [ ] 灾难恢复演练
 
 ### 安全脚本
+
 ```bash
 # 完整安全检查
 ./scripts/security-hardening.sh full
@@ -441,6 +476,7 @@ S3_SECRET_KEY=your-secret-key
 ```
 
 ### 更新升级
+
 ```bash
 # 1. 备份数据
 ./scripts/backup-scheduler.sh full
@@ -468,6 +504,7 @@ git pull origin main
 ## 附录
 
 ### 快捷命令参考
+
 ```bash
 # 快速查看状态
 alias fm-status='cd /opt/formalmath-enhanced && ./scripts/deploy.sh status'
@@ -483,6 +520,7 @@ alias fm-backup='cd /opt/formalmath-enhanced && ./scripts/backup-scheduler.sh fu
 ```
 
 ### 重要文件路径
+
 ```
 配置文件: /opt/formalmath-enhanced/.env.production
 日志目录: /opt/formalmath-enhanced/logs/

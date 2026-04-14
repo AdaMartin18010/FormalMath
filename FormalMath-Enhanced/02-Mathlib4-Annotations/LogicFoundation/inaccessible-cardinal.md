@@ -13,15 +13,15 @@ import Mathlib.SetTheory.Cardinal.Inaccessible
 namespace SetTheory
 
 /-- 不可达基数的定义 -/
-theorem inaccessible_cardinal_def 
+theorem inaccessible_cardinal_def
     {κ : Cardinal} :
-    IsInaccessible κ ↔ 
+    IsInaccessible κ ↔
       IsRegular κ ∧ IsStrongLimit κ := by
   -- 不可达：正则且强极限
   rfl
 
 /-- 不可达基数是ZFC的模型 -/
-theorem inaccessible_yields_zfc_model 
+theorem inaccessible_yields_zfc_model
     {κ : Cardinal} (hκ : IsInaccessible κ) :
     Model ZFC (V_κ) := by
   -- V_κ是ZFC的传递模型
@@ -41,6 +41,7 @@ end SetTheory
 ## 形式化表述
 
 **定义**：不可数基数 $\kappa$ 是**不可达**的，若：
+
 1. **正则**：$\text{cf}(\kappa) = \kappa$（不能表示为少于 $\kappa$ 个较小基数的并）
 2. **强极限**：$\lambda < \kappa \Rightarrow 2^\lambda < \kappa$
 
@@ -83,6 +84,7 @@ $\aleph_\omega$ 不是不可达基数。
 若 $\kappa$ 在 $V$ 中不可达，则在 $L$ 中也不可当（当且仅当）。
 
 这是因为：
+
 - 正则性和强极限性对 $L$ 绝对
 - $L_\kappa = (V_\kappa)^L$
 

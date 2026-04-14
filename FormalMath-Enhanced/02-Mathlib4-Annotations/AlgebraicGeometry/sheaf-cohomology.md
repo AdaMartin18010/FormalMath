@@ -127,7 +127,7 @@ $$H^q(X, \Omega_X^p) = H^{p,q}_{\bar{\partial}}(X)$$
 ### 在线资源
 
 - [Sheaf Cohomology Wikipedia](https://en.wikipedia.org/wiki/Sheaf_cohomology)
-- [Stacks Project - Cohomology of Sheaves](https://stacks.math.columbia.edu/tag/01E2)[需更新]
+- [Stacks Project - Cohomology of Sheaves][https://stacks.math.columbia.edu/tag/01E2](需更新)
 
 ---
 

@@ -131,7 +131,7 @@ $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - SpectralTheorem](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/SpectralTheorem.html)[需更新]
+- [Mathlib4 文档 - SpectralTheorem][https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/SpectralTheorem.html](需更新)
 
 ---
 

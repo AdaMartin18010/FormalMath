@@ -129,7 +129,7 @@ $2^{340} = (2^{10})^{34} \equiv 1^{34} = 1 \pmod{341}$
 
 ### 在线资源
 
-- [Mathlib4 文档 - ZMod](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/Basic.html)[需更新]
+- [Mathlib4 文档 - ZMod][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/ZMod/Basic.html](需更新)
 
 ---
 

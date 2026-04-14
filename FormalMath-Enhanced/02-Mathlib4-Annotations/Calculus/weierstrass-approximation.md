@@ -109,7 +109,7 @@ $f(x) = |x|$ 在 $[-1, 1]$ 上，可用多项式逼近。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Polynomial](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousFunction/Polynomial.html)[需更新]
+- [Mathlib4 文档 - Polynomial][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/ContinuousFunction/Polynomial.html](需更新)
 
 ---
 

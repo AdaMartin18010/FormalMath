@@ -140,7 +140,7 @@ $A$ 中 $f < 1.5$，$B$ 中 $f = 2 > 1.5$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - HahnBanach](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/NormedSpace/HahnBanach/Extension.html)[需更新]
+- [Mathlib4 文档 - HahnBanach][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/NormedSpace/HahnBanach/Extension.html](需更新)
 - [Wikipedia - Hahn-Banach Theorem](https://en.wikipedia.org/wiki/Hahn%E2%80%93Banach_theorem)
 
 ---

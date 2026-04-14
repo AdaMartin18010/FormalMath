@@ -5,7 +5,7 @@ processed_at: '2026-04-05'
 ---
 # MSC2020编码使用教程
 
-**预计阅读时间**: 30分钟  
+**预计阅读时间**: 30分钟
 **目标读者**: 需要为数学论文、文档标注MSC编码的研究者和学生
 
 ---
@@ -140,6 +140,7 @@ XX-XX-XX
 #### Step 1: 分析论文主题
 
 阅读论文摘要和引言，提取：
+
 - **核心主题**: 论文主要研究的数学对象
 - **研究方法**: 使用的技术工具
 - **应用领域**: 结果的应用方向
@@ -149,6 +150,7 @@ XX-XX-XX
 使用以下方法查找编码：
 
 **方法A: 直接搜索**
+
 ```bash
 # 在对应分支索引文件中搜索关键词
 grep -i "测地线" 01-MSC-Coding/04-几何学-MSC索引.md
@@ -156,6 +158,7 @@ grep -i "geodesic" 01-MSC-Coding/04-几何学-MSC索引.md
 ```
 
 **方法B: 按层级查找**
+
 1. 确定顶级分类（如微分几何→53-XX）
 2. 找到二级分类（如整体微分几何→53Cxx）
 3. 选择具体五级编码（如测地线→53C22）
@@ -163,6 +166,7 @@ grep -i "geodesic" 01-MSC-Coding/04-几何学-MSC索引.md
 #### Step 3: 选择主次分类
 
 **规则**:
+
 - **主要分类** (msc_primary): 1个，最核心主题
 - **次要分类** (msc_secondary): 0-5个，相关主题
 
@@ -228,38 +232,38 @@ from typing import Dict, List, Optional
 
 class MSCBatchAnnotator:
     """MSC批量标注器"""
-    
+
     def __init__(self, msc_index_path: str):
         """
         初始化标注器
-        
+
         Args:
             msc_index_path: MSC索引文件目录
         """
         self.msc_index_path = Path(msc_index_path)
         self.msc_database = self._load_msc_database()
-    
+
     def _load_msc_database(self) -> Dict[str, dict]:
         """加载MSC编码数据库"""
         database = {}
         # 这里简化处理，实际应从索引文件解析
         # 返回编码 -> 描述的映射
         return database
-    
+
     def search_msc(self, keyword: str) -> List[dict]:
         """
         搜索MSC编码
-        
+
         Args:
             keyword: 搜索关键词
-            
+
         Returns:
             匹配的编码列表
         """
         results = []
         # 实现搜索逻辑
         return results
-    
+
     def annotate_document(
         self,
         file_path: str,
@@ -269,13 +273,13 @@ class MSCBatchAnnotator:
     ) -> bool:
         """
         为单个文档添加MSC标注
-        
+
         Args:
             file_path: 文档路径
             primary: 主要MSC编码
             secondary: 次要MSC编码列表
             keywords: 关键词列表
-            
+
         Returns:
             是否成功
         """
@@ -283,20 +287,20 @@ class MSCBatchAnnotator:
             # 读取原文件
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
-            
+
             # 构建YAML frontmatter
             frontmatter = {
                 'msc_primary': primary,
                 'msc_secondary': secondary,
                 'keywords': keywords
             }
-            
+
             yaml_content = yaml.dump(
                 frontmatter,
                 allow_unicode=True,
                 sort_keys=False
             )
-            
+
             # 检查是否已有frontmatter
             if content.startswith('---'):
                 # 替换现有frontmatter
@@ -306,17 +310,17 @@ class MSCBatchAnnotator:
             else:
                 # 添加新frontmatter
                 content = f"---\n{yaml_content}---\n\n{content}"
-            
+
             # 写回文件
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(content)
-            
+
             return True
-            
+
         except Exception as e:
             print(f"标注失败 {file_path}: {e}")
             return False
-    
+
     def batch_annotate(
         self,
         documents: List[dict],
@@ -324,11 +328,11 @@ class MSCBatchAnnotator:
     ) -> dict:
         """
         批量标注文档
-        
+
         Args:
             documents: 文档列表，每个文档包含path, primary, secondary, keywords
             dry_run: 是否为试运行（不实际修改文件）
-            
+
         Returns:
             统计结果
         """
@@ -338,7 +342,7 @@ class MSCBatchAnnotator:
             'failed': 0,
             'errors': []
         }
-        
+
         for doc in documents:
             if dry_run:
                 print(f"[DRY RUN] 将标注 {doc['path']}")
@@ -357,14 +361,14 @@ class MSCBatchAnnotator:
                 else:
                     stats['failed'] += 1
                     stats['errors'].append(doc['path'])
-        
+
         return stats
 
 
 # 使用示例
 if __name__ == "__main__":
     annotator = MSCBatchAnnotator("01-MSC-Coding/")
-    
+
     # 定义要标注的文档列表
     documents = [
         {
@@ -380,12 +384,12 @@ if __name__ == "__main__":
             'keywords': ['有限单群', '群表示', '分类定理']
         }
     ]
-    
+
     # 试运行
     print("=" * 60)
     print("试运行 (Dry Run):")
     stats = annotator.batch_annotate(documents, dry_run=True)
-    
+
     # 实际执行
     print("\n" + "=" * 60)
     print("实际执行:")
@@ -406,7 +410,7 @@ search_msc() {
     local keyword="$1"
     echo "搜索关键词: $keyword"
     echo "=================="
-    
+
     for file in "$MSC_INDEX_DIR"/*.md; do
         if grep -qi "$keyword" "$file" 2>/dev/null; then
             echo "在 $(basename "$file") 中找到匹配:"
@@ -424,7 +428,7 @@ validate_msc() {
         echo "正确格式: XX-XX-XX (如 20D05)"
         return 1
     fi
-    
+
     # 检查编码是否存在
     if grep -rq "$code" "$MSC_INDEX_DIR" 2>/dev/null; then
         echo "✓ 编码 $code 有效"
@@ -472,7 +476,7 @@ main "$@"
 
 ### 5.1 论文信息
 
-**标题**: "有限单群的特征标表与Frobenius-Schur指标"  
+**标题**: "有限单群的特征标表与Frobenius-Schur指标"
 **摘要**: 本文研究了有限单群的复特征标表性质，特别关注了Frobenius-Schur指标的计算方法及其在判断群实现性质中的应用。
 
 ### 5.2 分析步骤
@@ -486,21 +490,27 @@ main "$@"
 #### Step 2: 查找编码
 
 **有限单群**:
+
 ```bash
 grep -i "有限单群" 01-MSC-Coding/02-代数结构-MSC索引.md
 ```
+
 结果: `20D05` - 有限单群及其分类
 
 **群表示论**:
+
 ```bash
 grep -i "表示论" 01-MSC-Coding/02-代数结构-MSC索引.md
 ```
+
 结果: `20Cxx` - 群表示论
 
 **特征标理论**:
+
 ```bash
 grep -i "特征标" 01-MSC-Coding/02-代数结构-MSC索引.md
 ```
+
 结果: `20C15` - 普通特征标和特征标
 
 #### Step 3: 确定主次分类
@@ -545,13 +555,15 @@ keywords:
 #### Q1: 我的论文涉及多个领域，如何确定主要分类？
 
 **A**: 选择论文**主要贡献**所在的领域。如果仍然难以确定，考虑：
+
 - 论文发表在哪个领域的期刊
 - 主要定理属于哪个分支
 - 同行会将其归类到哪个领域
 
 #### Q2: 找不到完全匹配的编码怎么办？
 
-**A**: 
+**A**:
+
 1. 使用更通用的上级编码（如用`53Cxx`代替具体的`53C22`）
 2. 参考类似论文的MSC标注
 3. 使用多个次要分类覆盖不同方面
@@ -605,7 +617,7 @@ msc_secondary:
 
 **练习1**: 为以下论文主题选择合适的MSC编码
 
-a) "p-adic数域上的椭圆曲线"  
+a) "p-adic数域上的椭圆曲线"
 **提示**: 涉及代数数论和代数几何
 <details>
 <summary>点击查看答案</summary>
@@ -616,9 +628,10 @@ msc_secondary:
   - "11Sxx"              # 代数数论: p-adic域
   - "14G20"              # 算术代数几何
 ```
+
 </details>
 
-b) "Banach空间上的紧算子谱理论"  
+b) "Banach空间上的紧算子谱理论"
 **提示**: 涉及泛函分析和算子理论
 <details>
 <summary>点击查看答案</summary>
@@ -629,9 +642,10 @@ msc_secondary:
   - "46B25"              # Banach空间经典类型
   - "47A10"              # 算子一般谱理论
 ```
+
 </details>
 
-c) "组合设计中的有限几何方法"  
+c) "组合设计中的有限几何方法"
 **提示**: 涉及组合数学和有限几何
 <details>
 <summary>点击查看答案</summary>
@@ -642,6 +656,7 @@ msc_secondary:
   - "51E05"              # 一般块设计
   - "51E20"              # 组合结构在有限几何中
 ```
+
 </details>
 
 ### 进阶练习
@@ -667,6 +682,7 @@ keywords:
 **问题**: 主次分类之间没有明显关联，次要分类过于分散
 
 **修改建议**:
+
 ```yaml
 msc_primary: "20D05"
 msc_secondary:
@@ -677,6 +693,7 @@ keywords:
   - 群分类
   - 表示论
 ```
+
 </details>
 
 ### 实践练习
@@ -684,6 +701,7 @@ keywords:
 **练习3**: 选择一篇你写的或感兴趣的数学论文，为其标注MSC编码
 
 **步骤**:
+
 1. 阅读论文摘要和引言
 2. 在01-MSC-Coding目录中搜索相关编码
 3. 确定主次分类
@@ -751,6 +769,7 @@ keywords:
 ---
 
 **完成本教程后，你应该能够：**
+
 - ✅ 理解MSC编码体系结构
 - ✅ 为数学论文选择合适的MSC编码
 - ✅ 使用批量标注工具
@@ -760,5 +779,5 @@ keywords:
 
 ---
 
-*最后更新: 2026年4月*  
+*最后更新: 2026年4月*
 *教程版本: v1.0*

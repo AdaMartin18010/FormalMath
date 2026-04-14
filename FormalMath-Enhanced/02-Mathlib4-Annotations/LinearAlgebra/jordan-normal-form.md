@@ -120,7 +120,7 @@ $$A^k = (2I + N)^k = 2^k I + k \cdot 2^{k-1} N = \begin{pmatrix} 2^k & k \cdot 2
 
 ### 在线资源
 
-- [Mathlib4 文档 - JordanNormalForm](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/JordanNormalForm.html)[需更新]
+- [Mathlib4 文档 - JordanNormalForm][https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/JordanNormalForm.html](需更新)
 
 ---
 

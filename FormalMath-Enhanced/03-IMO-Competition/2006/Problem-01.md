@@ -141,8 +141,8 @@ $$MD \cdot MP = MB^2 = MC^2$$
 
 ## 参考
 
-- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)[需更新]
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101488p572820)[需更新]
+- [IMO 2006 Official Solutions][https://www.imo-official.org/problems/IMO2006SL.pdf](需更新)
+- [AoPS讨论贴][https://artofproblemsolving.com/community/c6h101488p572820](需更新)
 - 相关定理：Feuerbach定理、欧拉线性质
 
 ---

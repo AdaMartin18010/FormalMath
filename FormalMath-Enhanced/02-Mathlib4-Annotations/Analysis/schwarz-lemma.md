@@ -138,7 +138,7 @@ $f(z) = \frac{z-a}{1-\bar{a}z}$，其中 $|a| < 1$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - SchwarzLemma](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/SchwarzLemma.html)[需更新]
+- [Mathlib4 文档 - SchwarzLemma][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/SchwarzLemma.html](需更新)
 - [Wikipedia - Schwarz Lemma](https://en.wikipedia.org/wiki/Schwarz_lemma)
 
 ---

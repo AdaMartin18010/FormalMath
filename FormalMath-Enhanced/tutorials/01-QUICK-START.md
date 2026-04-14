@@ -5,7 +5,7 @@ processed_at: '2026-04-05'
 ---
 # FormalMath-Enhanced 快速入门指南
 
-**预计阅读时间**: 15分钟  
+**预计阅读时间**: 15分钟
 **目标读者**: 初次接触FormalMath-Enhanced项目的新用户
 
 ---
@@ -78,6 +78,7 @@ open 00-PROJECT-COMPLETION-REPORT.md
 ```
 
 **关键信息**:
+
 - 总文件数: 70+
 - MSC编码: 1500+
 - 定理注释: 21个
@@ -97,12 +98,14 @@ cat 04-International-Alignment/README.md
 ### 步骤3：查看示例文档（2分钟）
 
 **查看MSC标注示例**:
+
 ```bash
 # 查看MSC标注格式示例
 cat 01-MSC-Coding/99-示例文档-MSC标注格式.md
 ```
 
 **查看定理注释示例**:
+
 ```bash
 # 查看拉格朗日定理注释
 cat 02-Mathlib4-Annotations/Algebra/lagrange-theorem.md
@@ -127,16 +130,17 @@ cat 02-Mathlib4-Annotations/Algebra/lagrange-theorem.md
 在文件中搜索"有限单群"或"Finite simple groups"：
 
 ```markdown
-**编码**: 20D05  
-**英文**: Finite simple groups and their classification  
-**中文**: 有限单群及其分类  
-**上级分类**: 20Dxx - Abstract finite groups  
+**编码**: 20D05
+**英文**: Finite simple groups and their classification
+**中文**: 有限单群及其分类
+**上级分类**: 20Dxx - Abstract finite groups
 **说明**: 包含有限单群分类定理相关研究
 ```
 
 #### Step 3: 确认次要分类
 
 相关编码：
+
 - `20D06` - 单群: 交错群与李型群
 - `20D08` - 单群: 零散群
 - `20C33` - 有限群表示论
@@ -160,10 +164,10 @@ keywords:
 
 ### 3.3 练习
 
-**练习1**: 为一篇关于"黎曼几何中的测地线"的论文查找MSC编码  
+**练习1**: 为一篇关于"黎曼几何中的测地线"的论文查找MSC编码
 **答案**: `53C22` (测地线)
 
-**练习2**: 为一篇关于"p-adic数论"的论文查找MSC编码  
+**练习2**: 为一篇关于"p-adic数论"的论文查找MSC编码
 **答案**: `11Sxx` (p-adic域上的代数数论)
 
 ---
@@ -203,6 +207,7 @@ keywords:
 theorem Subgroup.index_mul_card (H : Subgroup G) :
     H.index * Nat.card H = Nat.card G :=
 ```
+
 ```
 
 #### Step 3: 对比自然语言与形式化代码
@@ -214,7 +219,7 @@ theorem Subgroup.index_mul_card (H : Subgroup G) :
 
 ### 4.3 动手实践
 
-**实践1**: 阅读文件中的完整证明，尝试理解每一步  
+**实践1**: 阅读文件中的完整证明，尝试理解每一步
 **实践2**: 在本地Lean环境中验证该定理
 
 ```bash
@@ -236,7 +241,7 @@ lean test_lagrange.lean
 
 ### 4.4 练习
 
-**练习**: 找到并阅读柯西积分公式的注释  
+**练习**: 找到并阅读柯西积分公式的注释
 **文件**: `02-Mathlib4-Annotations/Analysis/cauchy-integral-formula.md`
 
 ---
@@ -308,7 +313,7 @@ cat 03-IMO-Competition/2006/problem1-solution.md
 
 ### 5.3 练习
 
-**练习1**: 尝试解答IMO 2006第2题（几何）  
+**练习1**: 尝试解答IMO 2006第2题（几何）
 **练习2**: 按照备赛指南的格式整理错题本
 
 ---
@@ -365,6 +370,7 @@ cat 03-IMO-Competition/2006/problem1-solution.md
 ### Q2: 如何选择从哪个模块开始学习？
 
 **A**: 根据你的目标选择：
+
 - **写论文需要MSC编码** → 从01-MSC-Coding开始
 - **学习形式化数学** → 从02-Mathlib4-Annotations开始
 - **准备数学竞赛** → 从03-IMO-Competition开始
@@ -372,7 +378,8 @@ cat 03-IMO-Competition/2006/problem1-solution.md
 
 ### Q3: 项目多久更新一次？
 
-**A**: 
+**A**:
+
 - MSC编码：年度更新（跟随MSC官方更新）
 - Mathlib4注释：季度更新
 - IMO题目：年度更新
@@ -380,7 +387,8 @@ cat 03-IMO-Competition/2006/problem1-solution.md
 
 ### Q4: 如何为项目做贡献？
 
-**A**: 
+**A**:
+
 1. 添加新的MSC编码示例
 2. 撰写定理注释
 3. 补充IMO题目解答
@@ -395,5 +403,5 @@ cat 03-IMO-Competition/2006/problem1-solution.md
 
 ---
 
-*最后更新: 2026年4月*  
+*最后更新: 2026年4月*
 *教程版本: v1.0*

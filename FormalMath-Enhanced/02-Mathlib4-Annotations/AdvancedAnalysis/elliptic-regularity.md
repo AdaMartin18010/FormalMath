@@ -13,7 +13,7 @@ import Mathlib.Analysis.PDE.EllipticRegularity
 namespace Analysis
 
 /-- 椭圆正则性定理 -/
-theorem elliptic_regularity 
+theorem elliptic_regularity
     {n : ℕ} {Ω : Set (EuclideanSpace ℝ (Fin n))}
     (hΩ : IsOpen Ω)
     {L : PartialDifferentialOperator ℝ Ω}
@@ -27,7 +27,7 @@ theorem elliptic_regularity
   sorry
 
 /-- 先验估计 -/
-theorem a_priori_estimate 
+theorem a_priori_estimate
     {n : ℕ} {Ω : Set (EuclideanSpace ℝ (Fin n))}
     (hΩ : IsOpen Ω) (hΩ_bdd : IsBounded Ω)
     {L : PartialDifferentialOperator ℝ Ω}
@@ -67,7 +67,7 @@ $$Lu = -\sum_{i,j} a_{ij}(x) \partial_i \partial_j u + \sum_i b_i(x) \partial_i 
 2. **Campanato空间**：刻画Hölder连续性
 3. **凝固系数法**：将变系数问题转化为常系数
 4. **Schauder估计**：建立先验估计
-5. ** bootstrap论证**：迭代提高正则性
+5. **bootstrap论证**：迭代提高正则性
 
 ## 示例
 

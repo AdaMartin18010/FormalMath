@@ -28,7 +28,7 @@ theorem riemann_zeta_functional_equation {s : ℂ} (hs : s ≠ 1) :
   sorry
 
 /-- 解析延拓与函数方程 -/
-theorem analytic_continuation : 
+theorem analytic_continuation :
     AnalyticOn ℂ (completedL χ) (univ \ {1}) := by
   sorry
 

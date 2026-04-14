@@ -55,6 +55,7 @@ Plancherel定理告诉我们：**信号的总能量在时域和频域相等**。
 $$\hat{f}(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2\pi i x \cdot \xi} dx$$
 
 **Plancherel定理**：
+
 1. **等距性**：$\|\hat{f}\|_{L^2} = \|f\|_{L^2}$（适当归一化）
 2. **内积保持**：$\langle \hat{f}, \hat{g} \rangle = \langle f, g \rangle$
 3. **酉性**：Fourier变换延拓为 $L^2(\mathbb{R}^n)$ 上的酉算子
@@ -66,15 +67,15 @@ $$\hat{f}(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2\pi i x \cdot \xi} dx$$
 1. **Schwartz空间**：
    - 在 $\mathcal{S}(\mathbb{R}^n)$（Schwartz空间）上直接计算
    - 利用Fourier变换的自伴性（差共轭）
-   
+
 2. **稠密性**：
    - $\mathcal{S}(\mathbb{R}^n)$ 在 $L^2(\mathbb{R}^n)$ 中稠密
    - 等距算子可唯一延拓到闭包
-   
+
 3. **卷积论证**：
    - $\int |\hat{f}|^2 = \int \hat{f} \overline{\hat{f}} = \int \hat{f} \widehat{\overline{f(-\cdot)}}$
    - 利用卷积定理和 $\delta$ 函数性质
-   
+
 4. **酉性**：
    - 等距+满射（由反演公式）= 酉算子
 
@@ -135,7 +136,7 @@ $\|f\|_{L^2}^2 = 2a$，$\|\hat{f}\|_{L^2}^2 = 2a$（Parseval等式）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Plancherel](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/Plancherel.html)[需更新]
+- [Mathlib4 文档 - Plancherel][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/Plancherel.html](需更新)
 - [Wikipedia - Plancherel Theorem](https://en.wikipedia.org/wiki/Plancherel_theorem)
 
 ---

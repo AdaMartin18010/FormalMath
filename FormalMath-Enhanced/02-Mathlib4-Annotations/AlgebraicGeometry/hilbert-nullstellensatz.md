@@ -130,8 +130,8 @@ $I \neq (1)$ 但 $V(I) = \emptyset$（在 $\mathbb{R}$ 中）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Nullstellensatz](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Nullstellensatz.html)[需更新]
-- [Stacks Project - 00FV](https://stacks.math.columbia.edu/tag/00FV)[需更新]
+- [Mathlib4 文档 - Nullstellensatz][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Nullstellensatz.html](需更新)
+- [Stacks Project - 00FV][https://stacks.math.columbia.edu/tag/00FV](需更新)
 
 ---
 

@@ -134,7 +134,7 @@ Chebyshev得到：$0.92 < \frac{\pi(x)\log x}{x} < 1.11$（对大 $x$）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - PrimeCounting](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PrimeCounting.html)[需更新]
+- [Mathlib4 文档 - PrimeCounting][https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PrimeCounting.html](需更新)
 - [Wikipedia - Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem)
 
 ---

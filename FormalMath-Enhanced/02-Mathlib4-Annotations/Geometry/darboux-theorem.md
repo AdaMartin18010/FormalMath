@@ -60,11 +60,11 @@ $$\omega|_U = \sum_{i=1}^n dp_i \wedge dq_i$$
 1. **Moser同痕技巧**：
    - 给定两个辛形式 $\omega_0, \omega_1$
    - 构造同痕 $\phi_t$ 使得 $\phi_t^* \omega_t = \omega_0$
-   
+
 2. **线性Darboux**：
    - 先找到切空间上的辛基
    - 用指数映射局部延拓
-   
+
 3. **标准形**：
    - 证明 $\omega$ 与标准形式 $\omega_0 = \sum dp_i \wedge dq_i$ 同痕
    - 由Moser技巧得局部等价
@@ -122,7 +122,7 @@ $S^2$ 有标准辛结构（面积形式）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Symplectic](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Symplectic/Basic.html)[需更新]
+- [Mathlib4 文档 - Symplectic][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Symplectic/Basic.html](需更新)
 - [Wikipedia - Darboux's Theorem](https://en.wikipedia.org/wiki/Darboux%27s_theorem)
 
 ---

@@ -13,19 +13,19 @@ import Mathlib.CategoryTheory.Representable
 namespace CategoryTheory
 
 /-- 可表示函子的定义 -/
-theorem representable_functor 
-    {C : Type*} [Category C] 
+theorem representable_functor
+    {C : Type*} [Category C]
     {F : Cᵒᵖ ⥤ Type*} :
-    F.IsRepresentable ↔ ∃ (X : C), 
+    F.IsRepresentable ↔ ∃ (X : C),
       yoneda.obj X ≅ F := by
   -- 函子可表示当且仅当与Hom函子同构
   rfl
 
 /-- 表示对象的唯一性 -/
-theorem representing_object_unique 
+theorem representing_object_unique
     {C : Type*} [Category C]
     {F : Cᵒᵖ ⥤ Type*}
-    {X Y : C} (hX : yoneda.obj X ≅ F) 
+    {X Y : C} (hX : yoneda.obj X ≅ F)
     (hY : yoneda.obj Y ≅ F) :
     X ≅ Y := by
   -- 由Yoneda嵌入的完全忠实性

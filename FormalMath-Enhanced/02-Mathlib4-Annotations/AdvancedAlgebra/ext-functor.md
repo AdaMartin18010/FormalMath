@@ -125,7 +125,7 @@ $$\text{Ext}^1_R(M, N) \cong \{\text{短正合列 } 0 \to N \to E \to M \to 0\} 
 ### 在线资源
 
 - [Ext Functor Wikipedia](https://en.wikipedia.org/wiki/Ext_functor)
-- [Stacks Project - Ext](https://stacks.math.columbia.edu/tag/00HR)[需更新]
+- [Stacks Project - Ext][https://stacks.math.columbia.edu/tag/00HR](需更新)
 
 ---
 

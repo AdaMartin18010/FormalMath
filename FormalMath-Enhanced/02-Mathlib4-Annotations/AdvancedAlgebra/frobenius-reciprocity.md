@@ -110,7 +110,7 @@ $$\text{Res}_K^G \text{Ind}_H^G W = \bigoplus_{g \in K \backslash G / H} \text{I
 ### 在线资源
 
 - [Frobenius Reciprocity Wikipedia](https://en.wikipedia.org/wiki/Frobenius_reciprocity)
-- [Groupprops - Frobenius reciprocity](https://groupprops.subwiki.org/wiki/Frobenius_reciprocity)[需更新]
+- [Groupprops - Frobenius reciprocity][https://groupprops.subwiki.org/wiki/Frobenius_reciprocity](需更新)
 
 ---
 

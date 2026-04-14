@@ -10,6 +10,7 @@ processed_at: '2026-04-05'
 ### 1. Docker镜像优化 ✅
 
 #### 后端镜像优化
+
 - **文件**: `Dockerfile.backend.optimized`
 - **优化策略**:
   - 多阶段构建减少镜像层
@@ -20,6 +21,7 @@ processed_at: '2026-04-05'
   - 使用Gunicorn + Uvicorn工作进程
 
 #### 前端镜像优化
+
 - **文件**: `Dockerfile.frontend.optimized`
 - **优化策略**:
   - 使用 `node:20-alpine` 构建阶段
@@ -35,9 +37,11 @@ processed_at: '2026-04-05'
 ### 2. 生产环境变量配置 ✅
 
 #### 配置文件
+
 - **文件**: `.env.production`
 
 #### 配置内容
+
 - 应用基础配置（名称、环境、版本）
 - 服务器配置（主机、端口、工作进程）
 - 数据库配置（SQLite/PostgreSQL）
@@ -56,9 +60,11 @@ processed_at: '2026-04-05'
 ### 3. SSL证书自动续期 ✅
 
 #### 配置文件
+
 - **文件**: `scripts/ssl-renew.sh`
 
 #### 功能特性
+
 - Let's Encrypt证书自动申请
 - 证书自动续期检查
 - 证书状态监控
@@ -68,6 +74,7 @@ processed_at: '2026-04-05'
 - 定时任务自动配置
 
 #### 使用方式
+
 ```bash
 # 初始化证书
 ./scripts/ssl-renew.sh init -d example.com,www.example.com -e admin@example.com
@@ -84,9 +91,11 @@ processed_at: '2026-04-05'
 ### 4. 数据库迁移脚本 ✅
 
 #### 配置文件
+
 - **文件**: `scripts/database-migrate.sh`
 
 #### 功能特性
+
 - 数据库初始化
 - 迁移执行和回滚
 - 迁移状态查看
@@ -96,6 +105,7 @@ processed_at: '2026-04-05'
 - 支持SQLite和PostgreSQL
 
 #### 使用方式
+
 ```bash
 # 初始化数据库
 ./scripts/database-migrate.sh init
@@ -115,9 +125,11 @@ processed_at: '2026-04-05'
 ### 5. 日志轮转和清理 ✅
 
 #### 配置文件
+
 - **文件**: `scripts/log-rotate.sh`
 
 #### 功能特性
+
 - 日志文件自动轮转
 - 过期日志自动清理
 - 旧日志归档压缩
@@ -126,6 +138,7 @@ processed_at: '2026-04-05'
 - 支持多种日志类型（Nginx、应用、系统）
 
 #### 使用方式
+
 ```bash
 # 轮转日志
 ./scripts/log-rotate.sh rotate
@@ -145,9 +158,11 @@ processed_at: '2026-04-05'
 ### 6. 备份任务调度 ✅
 
 #### 配置文件
+
 - **文件**: `scripts/backup-scheduler.sh`
 
 #### 功能特性
+
 - 全量备份
 - 增量备份
 - 数据库单独备份
@@ -159,6 +174,7 @@ processed_at: '2026-04-05'
 - 邮件通知
 
 #### 备份策略
+
 | 类型 | 频率 | 保留期 |
 |------|------|--------|
 | 全量备份 | 每周日 | 30天 |
@@ -166,6 +182,7 @@ processed_at: '2026-04-05'
 | 数据库备份 | 每天 | 30天 |
 
 #### 使用方式
+
 ```bash
 # 全量备份
 ./scripts/backup-scheduler.sh full
@@ -185,9 +202,11 @@ processed_at: '2026-04-05'
 ### 7. 安全加固检查 ✅
 
 #### 配置文件
+
 - **文件**: `scripts/security-hardening.sh`
 
 #### 检查项目
+
 - **Docker安全**
   - 容器用户配置
   - 资源限制配置
@@ -225,6 +244,7 @@ processed_at: '2026-04-05'
   - 目录权限
 
 #### 使用方式
+
 ```bash
 # 完整安全检查
 ./scripts/security-hardening.sh full
@@ -241,7 +261,9 @@ processed_at: '2026-04-05'
 ## 输出文档
 
 ### 运维手册 (OPERATIONS_MANUAL.md)
+
 包含以下内容：
+
 - 系统概述
 - 部署指南
 - 日常运维命令
@@ -251,7 +273,9 @@ processed_at: '2026-04-05'
 - 安全维护指南
 
 ### 生产检查清单 (PRODUCTION_CHECKLIST.md)
+
 包含以下检查项：
+
 - 部署前检查
 - 配置检查
 - 部署检查
@@ -267,6 +291,7 @@ processed_at: '2026-04-05'
 ## 优化后的部署流程
 
 ### 1. 初始化部署
+
 ```bash
 # 克隆代码
 git clone https://github.com/your-org/formalmath-enhanced.git
@@ -290,6 +315,7 @@ docker-compose -f docker-compose.production.yml up -d
 ```
 
 ### 2. 设置定时任务
+
 ```bash
 # SSL续期
 ./scripts/ssl-renew.sh init  # 会自动配置crontab
@@ -305,6 +331,7 @@ docker-compose -f docker-compose.production.yml up -d
 ```
 
 ### 3. 日常运维
+
 ```bash
 # 查看状态
 ./scripts/deploy.sh status
@@ -324,6 +351,7 @@ docker-compose logs -f
 ## 文件清单
 
 ### 配置文件
+
 | 文件 | 描述 |
 |------|------|
 | `.env.production` | 生产环境变量配置 |
@@ -332,6 +360,7 @@ docker-compose logs -f
 | `Dockerfile.frontend.optimized` | 优化的前端Dockerfile |
 
 ### 脚本文件
+
 | 文件 | 描述 |
 |------|------|
 | `scripts/ssl-renew.sh` | SSL证书管理脚本 |
@@ -341,6 +370,7 @@ docker-compose logs -f
 | `scripts/security-hardening.sh` | 安全加固检查脚本 |
 
 ### 文档文件
+
 | 文件 | 描述 |
 |------|------|
 | `OPERATIONS_MANUAL.md` | 运维手册 |

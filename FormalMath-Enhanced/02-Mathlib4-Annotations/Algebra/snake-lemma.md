@@ -62,6 +62,7 @@ end SnakeLemma
 ## 形式化表述
 
 给定交换图（行正合）：
+
 ```
 A --f--> B --g--> C --> 0
 |α       |β       |γ
@@ -76,6 +77,7 @@ $$\ker \alpha \to \ker \beta \to \ker \gamma \xrightarrow{\delta} \text{coker } 
 形成正合列。
 
 **构造**：
+
 1. 取 $c \in \ker \gamma$，存在 $b \in B$ 使 $g(b) = c$
 2. $\beta(b) \in \ker g' = \text{im } f'$，故 $\beta(b) = f'(a')$
 3. 定义 $\delta(c) = a' + \text{im } \alpha \in \text{coker } \alpha$
@@ -95,6 +97,7 @@ $$\ker \alpha \to \ker \beta \to \ker \gamma \xrightarrow{\delta} \text{coker } 
 ### 示例 1：阿贝尔群
 
 设 $A = \mathbb{Z}$，$B = \mathbb{Z}^2$，$C = \mathbb{Z}$，映射：
+
 - $f(n) = (n, 0)$，$g(m, n) = n$
 - $A' = \mathbb{Z}_2$，$B' = \mathbb{Z}_2 \times \mathbb{Z}$，$C' = \mathbb{Z}$
 - $\alpha, \beta, \gamma$ 是商映射或投影
@@ -144,8 +147,8 @@ $$\cdots \to H_n(A) \to H_n(B) \to H_n(C) \xrightarrow{\partial} H_{n-1}(A) \to 
 
 ### 在线资源
 
-- [Mathlib4 文档 - Homology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Homology/ShortComplex/Basic.html)[需更新]
-- [Stacks Project - 010J](https://stacks.math.columbia.edu/tag/010J)[需更新]
+- [Mathlib4 文档 - Homology][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Homology/ShortComplex/Basic.html](需更新)
+- [Stacks Project - 010J][https://stacks.math.columbia.edu/tag/010J](需更新)
 
 ---
 

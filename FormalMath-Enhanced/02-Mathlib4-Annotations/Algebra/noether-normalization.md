@@ -50,6 +50,7 @@ end NoetherNormalization
 设 $k$ 是域，$A$ 是有限生成的 $k$-代数。
 
 **诺特正规化引理**：存在代数无关元 $y_1, \ldots, y_n \in A$ 使得：
+
 1. $k[y_1, \ldots, y_n] \subseteq A$ 是多项式子代数
 2. $A$ 在 $k[y_1, \ldots, y_n]$ 上是整扩张
 
@@ -120,8 +121,8 @@ $(y_2 - z)^2 = x y$ 给出 $z$ 的二次整方程。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Algebra Finiteness](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Finiteness.html)[需更新]
-- [Stacks Project - 00OW](https://stacks.math.columbia.edu/tag/00OW)[需更新]
+- [Mathlib4 文档 - Algebra Finiteness][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Finiteness.html](需更新)
+- [Stacks Project - 00OW][https://stacks.math.columbia.edu/tag/00OW](需更新)
 
 ---
 

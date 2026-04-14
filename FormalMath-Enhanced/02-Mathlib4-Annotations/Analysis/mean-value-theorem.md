@@ -120,7 +120,7 @@ $$\frac{\ln(1 + x) - 0}{x - 0} = \frac{1}{1 + c}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - MeanValue](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Calculus/MeanValue.html)[需更新]
+- [Mathlib4 文档 - MeanValue][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Calculus/MeanValue.html](需更新)
 
 ---
 

@@ -51,6 +51,7 @@ end ClassicalStokes
 $$\iint_S (\nabla \times F) \cdot dS = \oint_{\partial S} F \cdot dr$$
 
 其中：
+
 - $\nabla \times F = \left(\frac{\partial F_3}{\partial y} - \frac{\partial F_2}{\partial z}, \frac{\partial F_1}{\partial z} - \frac{\partial F_3}{\partial x}, \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y}\right)$ 是旋度
 - $dS = n\,dA$ 是有向面积元
 
@@ -101,7 +102,7 @@ $\nabla \times F = (0, 0, 2)$，曲面积分 $= 2 \cdot \pi = 2\pi$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Manifold](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html)[需更新]
+- [Mathlib4 文档 - Manifold][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html](需更新)
 
 ---
 

@@ -135,7 +135,7 @@ $U = \{z : 0 < \text{Im } z < \pi\}$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Conformal](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Conformal/Basic.html)[需更新]
+- [Mathlib4 文档 - Conformal][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Conformal/Basic.html](需更新)
 - [Wikipedia - Riemann Mapping Theorem](https://en.wikipedia.org/wiki/Riemann_mapping_theorem)
 
 ---

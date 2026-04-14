@@ -104,7 +104,7 @@ $$\|f(y) - f(x)\| \leq L \|y - x\|$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Mean Value](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/MeanValue.html)[需更新]
+- [Mathlib4 文档 - Mean Value][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/MeanValue.html](需更新)
 
 ---
 

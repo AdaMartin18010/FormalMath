@@ -122,7 +122,7 @@ $$\pi(x) = \text{Li}(x) + O\left(x e^{-c\sqrt{\ln x}}\right)$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - PrimeCounting](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PrimeCounting.html)[需更新]
+- [Mathlib4 文档 - PrimeCounting][https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PrimeCounting.html](需更新)
 
 ---
 

@@ -18,7 +18,7 @@ variable {M : Type*} [SmoothManifoldWithCorners (𝓡 (2n)) M]
 /-- Moser同痕定理：同调辛形式间的同痕 -/
 theorem moser_isotopy {ω₀ ω₁ : SymplecticForm M} (hcohom : ∃ α, d α = ω₁ - ω₀)
     (hcompact : IsCompact M) :
-    ∃ φ : Isotopy (Diffeomorphism M M) 0 1, 
+    ∃ φ : Isotopy (Diffeomorphism M M) 0 1,
       φ 0 = id ∧ ∀ t, (φ t)* ω₀ = (1-t) • ω₀ + t • ω₁ := by
   -- Moser技巧：构造向量场
   sorry

@@ -123,7 +123,7 @@ Arrow-Debreu一般均衡存在性证明使用Brouwer定理：
 
 ### 在线资源
 
-- [Mathlib4 文档 - Fixed Point](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/FixedPoint.html)[需更新]
+- [Mathlib4 文档 - Fixed Point][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/FixedPoint.html](需更新)
 
 ---
 

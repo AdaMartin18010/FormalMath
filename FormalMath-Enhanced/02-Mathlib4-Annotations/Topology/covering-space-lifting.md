@@ -134,8 +134,8 @@ $p: S^1 \to S^1$，$p(z) = z^2$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Covering](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Covering/Basic.html)[需更新]
-- [Hatcher - Covering Spaces](https://pi.math.cornell.edu/~hatcher/AT/ATch1.pdf)[需更新]
+- [Mathlib4 文档 - Covering][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Covering/Basic.html](需更新)
+- [Hatcher - Covering Spaces][https://pi.math.cornell.edu/~hatcher/AT/ATch1.pdf](需更新)
 
 ---
 

@@ -126,7 +126,7 @@ $f: [0, 1] \to [0, 1]$ 连续。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Fixed Point](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/FixedPoint.html)[需更新]
+- [Mathlib4 文档 - Fixed Point][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/FixedPoint.html](需更新)
 
 ---
 

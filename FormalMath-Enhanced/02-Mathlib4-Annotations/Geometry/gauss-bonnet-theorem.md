@@ -143,7 +143,7 @@ $\text{Area}(M) = 2\pi(2g - 2) = -2\pi \chi(M)$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - GaussBonnet](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Curvature/GaussBonnet.html)[需更新]
+- [Mathlib4 文档 - GaussBonnet][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Curvature/GaussBonnet.html](需更新)
 - [Wikipedia - Gauss-Bonnet Theorem](https://en.wikipedia.org/wiki/Gauss%E2%80%93Bonnet_theorem)
 
 ---

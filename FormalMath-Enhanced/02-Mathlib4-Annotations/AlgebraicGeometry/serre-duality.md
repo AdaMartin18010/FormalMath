@@ -13,7 +13,7 @@ import Mathlib.AlgebraicGeometry.SerreDuality
 namespace AlgebraicGeometry
 
 /-- Serre对偶定理 -/
-theorem serre_duality 
+theorem serre_duality
     {X : Type*} [Scheme X] [IsProper X] [IsSmooth X]
     {n : ℕ} (hX : FiniteDimensional X n)
     {ℱ : CoherentSheaf X} :
@@ -22,7 +22,7 @@ theorem serre_duality
   sorry
 
 /-- 对偶层（典则层） -/
-theorem canonical_sheaf 
+theorem canonical_sheaf
     {X : Type*} [Scheme X] [IsSmooth X] :
     ω_X = Λ^n Ω_X := by
   -- 典则层是最高阶微分形式
@@ -47,6 +47,7 @@ Serre对偶如同一个"镜像对称"：$i$ 阶上同调与 $(n-i)$ 阶上同调
 $$H^i(X, \mathcal{F}) \cong H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X)^*$$
 
 其中：
+
 - $\mathcal{F}^\vee = \mathcal{Hom}(\mathcal{F}, \mathcal{O}_X)$ 是对偶层
 - $\omega_X = \Lambda^n \Omega_X^1$ 是典则层（最高阶微分形式）
 - $V^*$ 表示线性对偶
@@ -95,7 +96,7 @@ Euler示性数：$\chi(\mathcal{O}_X) = 1 - q + p_g$，其中 $q = h^1(X, \mathc
 - **Kodaira消失定理**：正线丛的上同调消失
 - **双有理几何**：典范模型和极小模型
 - **模空间理论**：形变和障碍理论
-- ** mirror symmetry**：Hodge数的对称性
+- **mirror symmetry**：Hodge数的对称性
 
 ## 相关概念
 
@@ -120,7 +121,7 @@ Euler示性数：$\chi(\mathcal{O}_X) = 1 - q + p_g$，其中 $q = h^1(X, \mathc
 ### 在线资源
 
 - [Serre Duality Wikipedia](https://en.wikipedia.org/wiki/Serre_duality)
-- [Stacks Project - Duality](https://stacks.math.columbia.edu/tag/0A7B)[需更新]
+- [Stacks Project - Duality][https://stacks.math.columbia.edu/tag/0A7B](需更新)
 
 ---
 

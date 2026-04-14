@@ -116,7 +116,7 @@ $\Gamma(X, -)$ 是左正合的。其右导出函子 $H^n(X, \mathcal{F}) = R^n \
 
 ### 在线资源
 
-- [Stacks Project - Derived Functors](https://stacks.math.columbia.edu/tag/010N)[需更新]
+- [Stacks Project - Derived Functors][https://stacks.math.columbia.edu/tag/010N](需更新)
 - [nLab - Derived Functor](https://ncatlab.org/nlab/show/derived+functor)
 
 ---

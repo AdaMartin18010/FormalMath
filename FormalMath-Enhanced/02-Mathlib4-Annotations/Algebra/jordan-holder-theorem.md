@@ -64,6 +64,7 @@ $$G = G_0 \triangleright G_1 \triangleright G_2 \triangleright \cdots \triangler
 使得每个因子 $G_i/G_{i+1}$ 是单群（称为**合成因子**）。
 
 **Jordan-Hölder定理**：若群 $G$ 有两条合成列，则：
+
 1. 它们长度相同
 2. 合成因子在同构和重排意义下相同
 
@@ -74,7 +75,7 @@ $$G = G_0 \triangleright G_1 \triangleright G_2 \triangleright \cdots \triangler
 1. **Schreier细化定理**：
    - Zassenhaus引理（蝴蝶引理）：比较两个正规子群的交与积
    - 构造两个正规列的公共细化
-   
+
 2. **Jordan-Hölder定理**：
    - 合成列已是极大正规列，不可再细化
    - 由Schreier定理，任意两条合成列等价
@@ -101,6 +102,7 @@ $$S_4 \triangleright A_4 \triangleright V_4 \triangleright \mathbb{Z}_2 \triangl
 ### 示例 3：不同合成列的例子
 
 考虑 $G = \mathbb{Z}_6$：
+
 - 列1：$\mathbb{Z}_6 \triangleright \mathbb{Z}_3 \triangleright \{0\}$，因子：$\mathbb{Z}_2$, $\mathbb{Z}_3$
 - 列2：$\mathbb{Z}_6 \triangleright \mathbb{Z}_2 \triangleright \{0\}$，因子：$\mathbb{Z}_3$, $\mathbb{Z}_2$
 
@@ -135,8 +137,8 @@ $$S_4 \triangleright A_4 \triangleright V_4 \triangleright \mathbb{Z}_2 \triangl
 
 ### 在线资源
 
-- [Mathlib4 文档 - CompositionSeries](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/CompositionSeries.html)[需更新]
-- [Groupprops - Composition series](https://groupprops.subwiki.org/wiki/Composition_series)[需更新]
+- [Mathlib4 文档 - CompositionSeries][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/CompositionSeries.html](需更新)
+- [Groupprops - Composition series][https://groupprops.subwiki.org/wiki/Composition_series](需更新)
 
 ---
 

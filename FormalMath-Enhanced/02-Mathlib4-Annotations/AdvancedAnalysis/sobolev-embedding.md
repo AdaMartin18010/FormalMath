@@ -13,7 +13,7 @@ import Mathlib.Analysis.SobolevSpace
 namespace Analysis
 
 /-- Sobolev嵌入定理 -/
-theorem sobolev_embedding 
+theorem sobolev_embedding
     {n : ℕ} {p : ℝ} (hp : 1 ≤ p) {k : ℕ}
     {Ω : Set (EuclideanSpace ℝ (Fin n))} (hΩ : IsOpen Ω)
     (s : ℕ) (hs : s > n / p) :
@@ -23,9 +23,9 @@ theorem sobolev_embedding
   sorry
 
 /-- Rellich-Kondrachov紧嵌入 -/
-theorem rellich_kondrachov 
+theorem rellich_kondrachov
     {n : ℕ} {p : ℝ} (hp : 1 ≤ p) {k : ℕ}
-    {Ω : Set (EuclideanSpace ℝ (Fin n))} 
+    {Ω : Set (EuclideanSpace ℝ (Fin n))}
     (hΩ : IsOpen Ω) (hΩ_compact : IsCompact (closure Ω))
     (q : ℝ) (hq : 1 ≤ q) (hqp : q < p) :
     IsCompact (SobolevSpace k p Ω →ₗ[ℝ] LpSpace q Ω) := by

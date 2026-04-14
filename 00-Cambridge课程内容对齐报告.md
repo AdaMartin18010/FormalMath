@@ -1238,6 +1238,6 @@ Lent Term:
 
 ---
 
-*最后更新: 2026年4月4日*  
-*更新内容: 深度对齐Cambridge数学Tripos全课程体系，添加18门核心课程详细映射，涵盖Part IA到Part III全部层级*  
+*最后更新: 2026年4月4日*
+*更新内容: 深度对齐Cambridge数学Tripos全课程体系，添加18门核心课程详细映射，涵盖Part IA到Part III全部层级*
 *对齐标准: Cambridge University Mathematical Tripos 2025-2026 Schedules*

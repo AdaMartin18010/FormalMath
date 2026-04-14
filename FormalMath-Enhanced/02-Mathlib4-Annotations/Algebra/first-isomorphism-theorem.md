@@ -112,7 +112,7 @@ $$G / \ker(\varphi) \cong \text{im}(\varphi)$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - QuotientGroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup.html)[需更新]
+- [Mathlib4 文档 - QuotientGroup][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup.html](需更新)
 
 ---
 

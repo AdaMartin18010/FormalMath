@@ -67,6 +67,7 @@ $$\Lambda(f) = \int_X f \, d\mu$$
 对所有 $f \in C_c(X)$ 成立。
 
 **正则性**：
+
 - 内正则：$\mu(A) = \sup\{\mu(K) : K \subseteq A, K \text{ 紧}\}$
 - 外正则：$\mu(A) = \inf\{\mu(U) : A \subseteq U, U \text{ 开}\}$
 
@@ -75,15 +76,15 @@ $$\Lambda(f) = \int_X f \, d\mu$$
 1. **构造外测度**：
    - 对开集 $U$：$\mu^*(U) = \sup\{\Lambda(f) : f \prec U\}$（$f \prec U$ 表示 $0 \leq f \leq 1$，$\text{supp } f \subseteq U$）
    - 延拓到所有集合
-   
+
 2. **Carathéodory延拓**：
    - 证明可测集构成 $\sigma$-代数
    - 包含所有开集，故包含Borel集
-   
+
 3. **正则性验证**：
    - 局部紧性保证紧逼近
    - Urysohn引理构造截断函数
-   
+
 4. **表示等式**：
    - 对示性函数用逼近
    - 线性性扩展到简单函数
@@ -141,7 +142,7 @@ $X = [0,1]$，$\Lambda(f) = \sum_{n=1}^{\infty} 2^{-n} f(q_n)$，其中 $\{q_n\}
 
 ### 在线资源
 
-- [Mathlib4 文档 - RieszRepresentation](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/RieszRepresentation.html)[需更新]
+- [Mathlib4 文档 - RieszRepresentation][https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/RieszRepresentation.html](需更新)
 - [Wikipedia - Riesz Representation Theorem](https://en.wikipedia.org/wiki/Riesz%E2%80%93Markov%E2%80%93Kakutani_representation_theorem)
 
 ---

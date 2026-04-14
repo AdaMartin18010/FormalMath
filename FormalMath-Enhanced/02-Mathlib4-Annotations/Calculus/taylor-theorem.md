@@ -100,7 +100,7 @@ $\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots + R_n(x)$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Taylor](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Taylor.html)[需更新]
+- [Mathlib4 文档 - Taylor][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Taylor.html](需更新)
 
 ---
 

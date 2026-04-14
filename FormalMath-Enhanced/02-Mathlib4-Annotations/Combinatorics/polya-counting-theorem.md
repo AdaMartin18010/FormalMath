@@ -116,7 +116,7 @@ $m$ 红、$n-m$ 蓝的染色数：展开 $Z_{C_n}(r+b, r^2+b^2, ...)$ 的系数
 
 ### 在线资源
 
-- [Mathlib4 文档 - Group Action](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Basic.html)[需更新]
+- [Mathlib4 文档 - Group Action][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Basic.html](需更新)
 
 ---
 

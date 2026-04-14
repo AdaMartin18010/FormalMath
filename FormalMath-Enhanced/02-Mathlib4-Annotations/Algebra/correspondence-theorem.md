@@ -123,8 +123,8 @@ $G/N \cong S_3$。$S_3$ 的子群对应 $S_4$ 中包含 $V_4$ 的子群：
 
 ### 在线资源
 
-- [Mathlib4 文档 - QuotientGroup](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Basic.html)[需更新]
-- [Groupprops - Correspondence theorem](https://groupprops.subwiki.org/wiki/Correspondence_theorem)[需更新]
+- [Mathlib4 文档 - QuotientGroup][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/QuotientGroup/Basic.html](需更新)
+- [Groupprops - Correspondence theorem][https://groupprops.subwiki.org/wiki/Correspondence_theorem](需更新)
 
 ---
 

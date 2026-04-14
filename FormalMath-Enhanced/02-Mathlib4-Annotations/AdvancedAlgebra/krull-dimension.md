@@ -121,7 +121,7 @@ $$(0) \subsetneq (x) \subsetneq (x, y) \subsetneq (x, y, z)$$
 ### 在线资源
 
 - [Krull Dimension Wikipedia](https://en.wikipedia.org/wiki/Krull_dimension)
-- [Stacks Project - Dimension Theory](https://stacks.math.columbia.edu/tag/00KD)[需更新]
+- [Stacks Project - Dimension Theory][https://stacks.math.columbia.edu/tag/00KD](需更新)
 
 ---
 

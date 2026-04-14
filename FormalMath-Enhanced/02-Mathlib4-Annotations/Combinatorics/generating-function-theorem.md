@@ -114,7 +114,7 @@ $$\hat{B}(x) = e^{e^x - 1}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Power Series](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/PowerSeries/Basic.html)[需更新]
+- [Mathlib4 文档 - Power Series][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/PowerSeries/Basic.html](需更新)
 
 ---
 

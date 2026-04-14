@@ -72,6 +72,7 @@ $M \otimes_R N$ 是满足以下泛性质的 $R$-模：
 给定双线性映射 $\varphi: M \times N \to P$，存在唯一的线性映射 $\tilde{\varphi}: M \otimes N \to P$ 使得 $\tilde{\varphi}(m \otimes n) = \varphi(m, n)$。
 
 **基本性质**：
+
 1. **结合律**：$(M \otimes N) \otimes P \cong M \otimes (N \otimes P)$
 2. **交换律**：$M \otimes N \cong N \otimes M$
 3. **分配律**：$(\bigoplus_i M_i) \otimes N \cong \bigoplus_i (M_i \otimes N)$
@@ -137,8 +138,8 @@ $\mathbb{Z}_2 \otimes_\mathbb{Z} \mathbb{Z}_3 = 0$（因为 $a \otimes b = 3(a \
 
 ### 在线资源
 
-- [Mathlib4 文档 - TensorProduct](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/TensorProduct/Basic.html)[需更新]
-- [Keith Conrad - Tensor Products](https://kconrad.math.uconn.edu/blurbs/linmultialg/tensorprod.pdf)[需更新]
+- [Mathlib4 文档 - TensorProduct][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/TensorProduct/Basic.html](需更新)
+- [Keith Conrad - Tensor Products][https://kconrad.math.uconn.edu/blurbs/linmultialg/tensorprod.pdf](需更新)
 
 ---
 

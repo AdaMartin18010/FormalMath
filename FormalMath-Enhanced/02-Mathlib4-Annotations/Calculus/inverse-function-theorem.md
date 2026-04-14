@@ -101,7 +101,7 @@ $f(z) = e^z$，导数 $f'(z) = e^z \neq 0$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Inverse Function](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Inverse.html)[需更新]
+- [Mathlib4 文档 - Inverse Function][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Inverse.html](需更新)
 
 ---
 

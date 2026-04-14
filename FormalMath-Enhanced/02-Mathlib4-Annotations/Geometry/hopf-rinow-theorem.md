@@ -129,7 +129,7 @@ $\mathbb{R}^2 \setminus \{0\}$：不完备（到0的序列不收敛）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - HopfRinow](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/RiemannianManifold/HopfRinow.html)[需更新]
+- [Mathlib4 文档 - HopfRinow][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/RiemannianManifold/HopfRinow.html](需更新)
 - [Wikipedia - Hopf-Rinow Theorem](https://en.wikipedia.org/wiki/Hopf%E2%80%93Rinow_theorem)
 
 ---

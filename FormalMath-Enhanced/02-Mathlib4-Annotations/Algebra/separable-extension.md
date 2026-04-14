@@ -74,6 +74,7 @@ end SeparableExtension
 **可分扩张**：代数扩张 $L/K$ **可分**，如果所有 $\alpha \in L$ 的极小多项式都可分。
 
 **关键性质**：
+
 1. **传递性**：$K \subseteq L \subseteq E$ 可分 $\Rightarrow$ $E/K$ 可分
 2. **本原元定理**：有限可分扩张是单扩张 $L = K(\alpha)$
 3. **完美域**：所有代数扩张都可分的域
@@ -141,8 +142,8 @@ $\alpha = \sqrt[p]{t}$ 满足 $x^p - t = 0$，但 $x^p - t = (x - \alpha)^p$ 有
 
 ### 在线资源
 
-- [Mathlib4 文档 - Separable](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Separable.html)[需更新]
-- [Keith Conrad - Separability](https://kconrad.math.uconn.edu/blurbs/galoistheory/separable.pdf)[需更新]
+- [Mathlib4 文档 - Separable][https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Separable.html](需更新)
+- [Keith Conrad - Separability][https://kconrad.math.uconn.edu/blurbs/galoistheory/separable.pdf](需更新)
 
 ---
 

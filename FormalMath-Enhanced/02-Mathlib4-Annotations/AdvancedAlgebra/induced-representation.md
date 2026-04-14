@@ -13,19 +13,19 @@ import Mathlib.RepresentationTheory.InducedRepresentation
 namespace RepresentationTheory
 
 /-- 诱导表示的构造 -/
-theorem induced_representation 
+theorem induced_representation
     {k G H : Type*} [Field k] [Group G] [Group H]
     (φ : H →* G) (W : Rep k H) :
-    InducedRepresentation φ W = 
+    InducedRepresentation φ W =
       (MonoidAlgebra k G) ⊗[MonoidAlgebra k H] W := by
   -- 诱导表示是张量积构造
   rfl
 
 /-- 诱导表示的泛性质 -/
-theorem induced_representation_universal 
+theorem induced_representation_universal
     {k G H : Type*} [Field k] [Group G] [Group H]
     (φ : H →* G) (W : Rep k H) (V : Rep k G) :
-      (InducedRepresentation φ W ⟶ V) ≃ 
+      (InducedRepresentation φ W ⟶ V) ≃
       (W ⟶ RestrictedRepresentation φ V) := by
   -- Frobenius互反律的同构
   apply frobeniusReciprocity
@@ -116,7 +116,7 @@ $\text{Ind}_H^G \mathbf{1} = k[G] \otimes_{k[H]} k \cong k[X]$，以 $X$ 为基�
 ### 在线资源
 
 - [Induced Representation Wikipedia](https://en.wikipedia.org/wiki/Induced_representation)
-- [Groupprops - Induced Representation](https://groupprops.subwiki.org/wiki/Induced_representation)[需更新]
+- [Groupprops - Induced Representation][https://groupprops.subwiki.org/wiki/Induced_representation](需更新)
 
 ---
 

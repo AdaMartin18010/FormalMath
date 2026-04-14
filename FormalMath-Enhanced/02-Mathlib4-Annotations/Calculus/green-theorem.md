@@ -100,7 +100,7 @@ $P = 0, Q = x$，则 $\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
 
 ### 在线资源
 
-- [Mathlib4 文档 - Complex Cauchy Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/CauchyIntegral.html)[需更新]
+- [Mathlib4 文档 - Complex Cauchy Integral][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/CauchyIntegral.html](需更新)
 
 ---
 

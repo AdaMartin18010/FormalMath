@@ -19,7 +19,7 @@ theorem exists_subgroup_card_pow_prime (k : ℕ) (hk : p ^ k ∣ Nat.card G) :
     ∃ H : Subgroup G, Nat.card H = p ^ k := by
   classical
   have := Fact.mk ‹Fact p.Prime›.out
-  exact exists_subgroup_card_pow_prime_of_le_card k 
+  exact exists_subgroup_card_pow_prime_of_le_card k
     (Nat.le_of_dvd (Nat.card_pos) hk)
 
 /-- 西罗第二定理：所有西罗 $p$-子群共轭 -/
@@ -54,28 +54,35 @@ end Sylow
 设 $G$ 是有限群，$p$ 是素数，$|G| = p^k \cdot m$，其中 $p \nmid m$。
 
 ### 第一定理（存在性）
+
 对任意 $0 \leq i \leq k$，存在阶为 $p^i$ 的子群。
 
 ### 第二定理（共轭性）
+
 所有西罗 $p$-子群（阶为 $p^k$ 的子群）彼此共轭。
 
 ### 第三定理（数量）
+
 设 $n_p$ 是西罗 $p$-子群的个数，则：
+
 - $n_p \equiv 1 \pmod{p}$
 - $n_p \mid m$
 
 ## 证明思路
 
 ### 第一定理的证明要点：
+
 1. 使用群作用在 $p$-子集的集合上
 2. 应用轨道-稳定子定理
 3. 通过计数论证证明存在不动点
 
 ### 第二定理的证明要点：
+
 1. 让西罗 $p$-子群作用在另一西罗 $p$-子群的陪集上
 2. 利用轨道计数证明共轭关系
 
 ### 第三定理的证明要点：
+
 1. 让 $G$ 通过共轭作用在西罗 $p$-子群的集合上
 2. 利用西罗 $p$-子群的正规化子的性质
 3. 轨道计数导出同余条件
@@ -136,7 +143,7 @@ $n_2 = 3$（验证：$3 \equiv 1 \pmod{2}$ 且 $3 \mid 3$）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Sylow](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Sylow.html)[需更新]
+- [Mathlib4 文档 - Sylow][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Sylow.html](需更新)
 
 ---
 

@@ -132,7 +132,7 @@ Mertens第三定理给出了部分乘积的精确渐近。
 
 ### 在线资源
 
-- [Mathlib4 文档 - ArithmeticFunction](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/ArithmeticFunction.html)[需更新]
+- [Mathlib4 文档 - ArithmeticFunction][https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/ArithmeticFunction.html](需更新)
 - [Wikipedia - Mertens' Theorems](https://en.wikipedia.org/wiki/Mertens%27_theorems)
 
 ---

@@ -102,7 +102,7 @@ $\nabla \cdot F = 3$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Vector Calculus](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/FDeriv/Basic.html)[需更新]
+- [Mathlib4 文档 - Vector Calculus][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/FDeriv/Basic.html](需更新)
 
 ---
 

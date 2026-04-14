@@ -124,7 +124,7 @@ Tor项捕捉 $p$-挠的结构。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Homology](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Homology/Homology.html)[需更新]
+- [Mathlib4 文档 - Homology][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Homology/Homology.html](需更新)
 - [Wikipedia - Universal Coefficient Theorem](https://en.wikipedia.org/wiki/Universal_coefficient_theorem)
 
 ---

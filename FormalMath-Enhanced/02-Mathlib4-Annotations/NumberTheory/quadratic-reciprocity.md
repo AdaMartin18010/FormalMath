@@ -129,7 +129,7 @@ $\left(\frac{17}{13}\right) = \left(\frac{4}{13}\right) = \left(\frac{2}{13}\rig
 
 ### 在线资源
 
-- [Mathlib4 文档 - QuadraticReciprocity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.html)[需更新]
+- [Mathlib4 文档 - QuadraticReciprocity][https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LegendreSymbol/QuadraticReciprocity.html](需更新)
 
 ---
 

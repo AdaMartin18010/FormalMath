@@ -107,7 +107,7 @@ $$P = \sum_{k=0}^n (-1)^k \binom{n}{k} \left(1 - \frac{k}{n}\right)^n$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Inclusion Exclusion](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/InclusionExclusion.html)[需更新]
+- [Mathlib4 文档 - Inclusion Exclusion][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/InclusionExclusion.html](需更新)
 
 ---
 

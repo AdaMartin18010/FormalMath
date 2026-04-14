@@ -103,7 +103,7 @@ end PigeonholePrinciple
 
 ### 在线资源
 
-- [Mathlib4 文档 - Pigeonhole](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Pigeonhole.html)[需更新]
+- [Mathlib4 文档 - Pigeonhole][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Pigeonhole.html](需更新)
 
 ---
 

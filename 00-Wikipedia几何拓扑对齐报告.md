@@ -5,8 +5,8 @@ processed_at: '2026-04-05'
 ---
 # Wikipedia几何拓扑概念结构对齐报告
 
-**生成日期**: 2026年4月4日  
-**项目**: FormalMath  
+**生成日期**: 2026年4月4日
+**项目**: FormalMath
 **任务**: 与Wikipedia数学概念结构对齐 - 几何与拓扑分支
 
 ---
@@ -16,6 +16,7 @@ processed_at: '2026-04-05'
 本报告详细分析了Wikipedia几何拓扑相关条目的概念结构，并与FormalMath项目中的`concept_prerequisites.yaml`进行系统性对齐。通过对比分析，我们识别了概念层级关系、前置依赖和知识图谱结构，确保FormalMath的概念体系与国际标准（Wikipedia/MathWorld）保持一致。
 
 ### 对齐范围
+
 - **源数据**: Wikipedia英文版数学条目
 - **目标数据**: `project/concept_prerequisites.yaml` 几何拓扑概念（25个）
 - **分析条目**: Topology, Algebraic Topology, Differential Geometry, Riemannian Geometry, Algebraic Geometry, Manifold, Homology, Cohomology, Homotopy
@@ -27,9 +28,11 @@ processed_at: '2026-04-05'
 ### 2.1 Topology（拓扑学）
 
 #### 2.1.1 定义与核心概念
+
 拓扑学是研究空间在连续变形下保持不变的性质的数学分支。
 
 **核心子领域**（按Wikipedia分类）：
+
 ```
 Topology
 ├── General Topology（点集拓扑）
@@ -52,6 +55,7 @@ Topology
 ```
 
 #### 2.1.2 与FormalMath对齐
+
 | Wikipedia概念 | FormalMath概念ID | 对齐状态 |
 |--------------|------------------|----------|
 | Topological space | topological_space | ✅ 已对齐 |
@@ -66,9 +70,11 @@ Topology
 ### 2.2 Algebraic Topology（代数拓扑）
 
 #### 2.2.1 定义与结构
+
 代数拓扑使用抽象代数的工具来研究拓扑空间，通过代数不变量来分类空间。
 
 **Wikipedia结构层次**：
+
 ```
 Algebraic Topology
 ├── Basic Concepts
@@ -96,6 +102,7 @@ Algebraic Topology
 ```
 
 #### 2.2.2 核心概念映射
+
 | Wikipedia概念 | FormalMath概念ID | 难度等级 | 前置概念 |
 |--------------|------------------|----------|----------|
 | Fundamental group | fundamental_group | L2 | homotopy, group |
@@ -110,9 +117,11 @@ Algebraic Topology
 ### 2.3 Manifold（流形）
 
 #### 2.3.1 Wikipedia定义结构
+
 流形是局部类似于欧几里得空间的拓扑空间。
 
 **概念层次**（Wikipedia）：
+
 ```
 Manifold
 ├── Topological Manifold
@@ -135,6 +144,7 @@ Manifold
 ```
 
 #### 2.3.2 对齐分析
+
 | Wikipedia概念 | FormalMath概念ID | 对齐状态 | 备注 |
 |--------------|------------------|----------|------|
 | Manifold | manifold | ✅ 已对齐 | 核心概念 |
@@ -149,9 +159,11 @@ Manifold
 ### 2.4 Differential Geometry（微分几何）
 
 #### 2.4.1 Wikipedia结构
+
 微分几何使用微积分和代数技术研究几何问题。
 
 **子领域**（Wikipedia）：
+
 ```
 Differential Geometry
 ├── Classical Differential Geometry
@@ -182,6 +194,7 @@ Differential Geometry
 ### 2.5 Riemannian Geometry（黎曼几何）
 
 #### 2.5.1 核心概念（Wikipedia）
+
 ```
 Riemannian Geometry
 ├── Basic Structure
@@ -208,6 +221,7 @@ Riemannian Geometry
 ```
 
 #### 2.5.2 FormalMath对齐状态
+
 | 概念 | 概念ID | 难度 | 前置依赖 | 状态 |
 |------|--------|------|----------|------|
 | 黎曼度量 | riemannian_metric | L3 | manifold, tensor_field | ✅ |
@@ -222,6 +236,7 @@ Riemannian Geometry
 ### 2.6 Algebraic Geometry（代数几何）
 
 #### 2.6.1 Wikipedia概念结构
+
 ```
 Algebraic Geometry
 ├── Classical Algebraic Geometry
@@ -246,6 +261,7 @@ Algebraic Geometry
 ```
 
 #### 2.6.2 对齐分析
+
 | Wikipedia概念 | FormalMath概念ID | 对齐状态 |
 |--------------|------------------|----------|
 | Affine variety | affine_variety | ⚠️ 需在YAML中明确 |
@@ -259,6 +275,7 @@ Algebraic Geometry
 ### 2.7 Homology（同调）
 
 #### 2.7.1 Wikipedia结构
+
 ```
 Homology Theory
 ├── Simplicial Homology
@@ -283,6 +300,7 @@ Homology Theory
 ```
 
 #### 2.7.2 概念映射
+
 | Wikipedia概念 | FormalMath概念ID | 级别 | 前置概念 |
 |--------------|------------------|------|----------|
 | Homology group | homology_group | L2 | homotopy, abelian_group, simplicial_complex |
@@ -296,6 +314,7 @@ Homology Theory
 ### 2.8 Cohomology（上同调）
 
 #### 2.8.1 Wikipedia结构
+
 ```
 Cohomology Theory
 ├── Singular Cohomology
@@ -317,6 +336,7 @@ Cohomology Theory
 ```
 
 #### 2.8.2 对齐分析
+
 | Wikipedia概念 | FormalMath概念ID | 对齐状态 |
 |--------------|------------------|----------|
 | Cohomology | cohomology | ✅ 已对齐 |
@@ -330,6 +350,7 @@ Cohomology Theory
 ### 2.9 Homotopy（同伦）
 
 #### 2.9.1 Wikipedia结构
+
 ```
 Homotopy Theory
 ├── Basic Concepts
@@ -350,6 +371,7 @@ Homotopy Theory
 ```
 
 #### 2.9.2 对齐分析
+
 | Wikipedia概念 | FormalMath概念ID | 级别 | 前置 |
 |--------------|------------------|------|------|
 | Homotopy | homotopy | L2 | continuous_map, topological_space |
@@ -457,6 +479,7 @@ Level 5: 前沿课题
 根据Wikipedia分析，以下概念在FormalMath中缺失或需明确：
 
 #### 高优先级（核心概念）
+
 | 概念ID | 中文名 | 所属领域 | 建议难度 | 前置概念 |
 |--------|--------|----------|----------|----------|
 | homeomorphism | 同胚 | 基础拓扑 | L1 | continuous_map |
@@ -467,6 +490,7 @@ Level 5: 前沿课题
 | tangent_bundle | 切丛 | 微分几何 | L3 | tangent_space |
 
 #### 中优先级（重要概念）
+
 | 概念ID | 中文名 | 所属领域 | 建议难度 |
 |--------|--------|----------|----------|
 | cup_product | 杯积 | 代数拓扑 | L3 |
@@ -477,6 +501,7 @@ Level 5: 前沿课题
 | hopf_fibration | Hopf纤维化 | 同伦论 | L4 |
 
 #### 低优先级（扩展概念）
+
 | 概念ID | 中文名 | 所属领域 |
 |--------|--------|----------|
 | etale_cohomology | 平展上同调 | 代数几何 |
@@ -701,16 +726,19 @@ Level 5: 前沿课题
 ### 8.2 优先级建议
 
 **高优先级**（立即实施）：
+
 1. 添加`homeomorphism`概念
 2. 明确`simplicial_complex`的定义和前置
 3. 添加`vector_bundle`作为`manifold`的后继
 
 **中优先级**（短期实施）：
+
 1. 添加`de_rham_cohomology`概念
 2. 补充`tangent_bundle`和`cotangent_bundle`
 3. 添加`cw_complex`概念
 
 **低优先级**（长期规划）：
+
 1. 扩展辛几何相关概念
 2. 深化代数几何结构（scheme theory）
 3. 添加高阶同伦论内容
@@ -727,6 +755,7 @@ Level 5: 前沿课题
 ## 附录A: 参考资源
 
 ### Wikipedia条目
+
 - [Topology](https://en.wikipedia.org/wiki/Topology)
 - [Algebraic topology](https://en.wikipedia.org/wiki/Algebraic_topology)
 - [Differential geometry](https://en.wikipedia.org/wiki/Differential_geometry)
@@ -738,6 +767,7 @@ Level 5: 前沿课题
 - [Homotopy](https://en.wikipedia.org/wiki/Homotopy)
 
 ### 参考文献
+
 1. Hatcher, A. (2002). Algebraic Topology. Cambridge University Press.
 2. Lee, J. M. (2003). Introduction to Smooth Manifolds. Springer.
 3. Lee, J. M. (1997). Riemannian Manifolds: An Introduction to Curvature. Springer.

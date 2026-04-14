@@ -130,7 +130,7 @@ $y^2 = f(x)$，$\deg(f) = 2g + 1$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - RiemannRoch](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicGeometry/RiemannRoch.html)[需更新]
+- [Mathlib4 文档 - RiemannRoch][https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicGeometry/RiemannRoch.html](需更新)
 - [Wikipedia - Riemann-Roch Theorem](https://en.wikipedia.org/wiki/Riemann%E2%80%93Roch_theorem)
 
 ---

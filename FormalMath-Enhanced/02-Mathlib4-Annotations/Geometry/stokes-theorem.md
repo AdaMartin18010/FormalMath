@@ -57,10 +57,12 @@ Stokes定理告诉我们：**一个"场"的"旋转"或"散度"在区域内的总
 $$\int_M d\omega = \int_{\partial M} \omega$$
 
 其中：
+
 - $d\omega$ 是 $\omega$ 的外微分
 - $\partial M$ 是 $M$ 的边界（诱导定向）
 
 **特例**：
+
 - **微积分基本定理**：$n = 1$，$\int_a^b f'(x)dx = f(b) - f(a)$
 - **格林定理**：$n = 2$，$\iint_D (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})dxdy = \oint_{\partial D} Pdx + Qdy$
 - **散度定理**：$\iiint_V \nabla \cdot F \, dV = \iint_{\partial V} F \cdot dS$
@@ -70,15 +72,15 @@ $$\int_M d\omega = \int_{\partial M} \omega$$
 1. **局部情形**：
    - $M = \mathbb{R}^n_+$（上半空间）
    - 直接计算外微分和积分
-   
+
 2. **坐标卡覆盖**：
    - 用单位分解局部化
    - 在每个坐标卡上应用局部结果
-   
+
 3. **边界项消去**：
    - 内部边界的积分方向相反
    - 相互抵消，只剩外边界
-   
+
 4. **边界定向**：
    - 验证诱导定向的一致性
    - 保证符号正确
@@ -140,7 +142,7 @@ $F = (-y, x, 0)$，$\nabla \times F = (0, 0, 2)$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Manifold](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html)[需更新]
+- [Mathlib4 文档 - Manifold][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html](需更新)
 - [Wikipedia - Stokes' Theorem](https://en.wikipedia.org/wiki/Stokes%27_theorem)
 
 ---

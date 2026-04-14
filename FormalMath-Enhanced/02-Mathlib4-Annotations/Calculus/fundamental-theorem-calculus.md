@@ -98,7 +98,7 @@ $$G'(x) = f(x)$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - IntervalIntegral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/IntervalIntegral.html)[需更新]
+- [Mathlib4 文档 - IntervalIntegral][https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/IntervalIntegral.html](需更新)
 
 ---
 

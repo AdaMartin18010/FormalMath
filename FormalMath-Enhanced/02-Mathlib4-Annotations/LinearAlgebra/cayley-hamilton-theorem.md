@@ -135,7 +135,7 @@ $$A^2 - 5A - 2I = \begin{pmatrix} 7 & 10 \\ 15 & 22 \end{pmatrix} - \begin{pmatr
 
 ### 在线资源
 
-- [Mathlib4 文档 - Charpoly](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Charpoly/Basic.html)[需更新]
+- [Mathlib4 文档 - Charpoly][https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Charpoly/Basic.html](需更新)
 
 ---
 
