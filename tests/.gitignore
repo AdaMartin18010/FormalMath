@@ -27,6 +27,7 @@ build/
 output/
 results/
 snapshots/__snapshots__/
+.test_cache/
 
 # Cypress
 frontend/e2e/screenshots/
