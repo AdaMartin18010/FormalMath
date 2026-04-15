@@ -20,11 +20,11 @@
 
 -/
 
-import FormalMath.Mathlib.Data.Nat.Basic
-import FormalMath.Mathlib.Data.Real.Basic
-import FormalMath.Mathlib.Analysis.SpecialFunctions.Log.Base
-import FormalMath.Mathlib.Probability.ProbabilityMassFunction
-import FormalMath.Mathlib.Combinatorics.Pigeonhole
+import FormalMath.MathlibStub.Data.Nat.Basic
+import FormalMath.MathlibStub.Data.Real.Basic
+import FormalMath.MathlibStub.Analysis.SpecialFunctions.Log.Base
+import FormalMath.MathlibStub.Probability.ProbabilityMassFunction
+import FormalMath.MathlibStub.Combinatorics.Pigeonhole
 
 namespace AlgorithmAnalysis
 

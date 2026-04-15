@@ -36,10 +36,10 @@
 完整证明需要Lyapunov理论和泛函分析工具。
 -/
 
-import FormalMath.Mathlib.Analysis.ODE.PicardLindelof
-import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
-import FormalMath.Mathlib.LinearAlgebra.Matrix.Basic
-import FormalMath.Mathlib.Analysis.Calculus.Laplace
+import FormalMath.MathlibStub.Analysis.ODE.PicardLindelof
+import FormalMath.MathlibStub.Analysis.Calculus.Deriv.Basic
+import FormalMath.MathlibStub.LinearAlgebra.Matrix.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.Laplace
 
 namespace ControlTheory
 

@@ -37,9 +37,9 @@
 完整证明需要非光滑分析和算子理论工具。
 -/
 
-import FormalMath.Mathlib.Analysis.Calculus.Gradient.Basic
-import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
+import FormalMath.MathlibStub.Analysis.Calculus.Gradient.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.FDeriv.Basic
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.PiL2
 
 namespace OptimizationAdvanced
 

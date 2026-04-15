@@ -19,12 +19,12 @@
 
 -/
 
-import FormalMath.Mathlib.Geometry.Manifold.ChartedSpace
-import FormalMath.Mathlib.Geometry.Manifold.SmoothManifoldWithCorners
-import FormalMath.Mathlib.Geometry.Manifold.TangentBundle
-import FormalMath.Mathlib.Geometry.Manifold.MFDeriv
-import FormalMath.Mathlib.Topology.LocalHomeomorph
-import FormalMath.Mathlib.Analysis.Calculus.ContDiff.Defs
+import FormalMath.MathlibStub.Geometry.Manifold.ChartedSpace
+import FormalMath.MathlibStub.Geometry.Manifold.SmoothManifoldWithCorners
+import FormalMath.MathlibStub.Geometry.Manifold.TangentBundle
+import FormalMath.MathlibStub.Geometry.Manifold.MFDeriv
+import FormalMath.MathlibStub.Topology.LocalHomeomorph
+import FormalMath.MathlibStub.Analysis.Calculus.ContDiff.Defs
 
 namespace ManifoldDefinition
 

@@ -29,10 +29,10 @@ Motive（动机）理论是Grothendieck在1960年代提出的宏大构想，
 2000年Voevodsky证明Milnor-Bloch-Kato猜想（获Fields奖）。
 -/ 
 
-import FormalMath.Mathlib.AlgebraicTopology.SimplicialSet
-import FormalMath.Mathlib.CategoryTheory.Abelian.Basic
-import FormalMath.Mathlib.Algebra.Homology.Homology
-import FormalMath.Mathlib.Topology.Homotopy.Equiv
+import FormalMath.MathlibStub.AlgebraicTopology.SimplicialSet
+import FormalMath.MathlibStub.CategoryTheory.Abelian.Basic
+import FormalMath.MathlibStub.Algebra.Homology.Homology
+import FormalMath.MathlibStub.Topology.Homotopy.Equiv
 import Mathlib.AlgebraicGeometry.Scheme
 import Mathlib.Algebra.Category.ModuleCat.Basic
 

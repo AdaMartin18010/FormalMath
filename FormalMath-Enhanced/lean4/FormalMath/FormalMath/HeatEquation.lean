@@ -30,9 +30,9 @@ u = g       在ℝⁿ × {t=0}
 完整证明涉及傅里叶分析和半群理论。
 -/
 
-import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
-import FormalMath.Mathlib.Analysis.Calculus.Laplace
-import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
+import FormalMath.MathlibStub.Analysis.Calculus.Deriv.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.Laplace
+import FormalMath.MathlibStub.MeasureTheory.Function.LpSpace
 
 namespace HeatEquation
 

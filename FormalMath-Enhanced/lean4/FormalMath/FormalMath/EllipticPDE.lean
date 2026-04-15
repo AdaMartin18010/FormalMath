@@ -31,9 +31,9 @@
 完整证明需要Sobolev空间、傅里叶分析等工具。
 -/
 
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
-import FormalMath.Mathlib.Analysis.Calculus.Laplace
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.PiL2
+import FormalMath.MathlibStub.MeasureTheory.Function.LpSpace
+import FormalMath.MathlibStub.Analysis.Calculus.Laplace
 
 namespace EllipticPDE
 

@@ -25,9 +25,9 @@
 Grothendieck在1957年的著名论文Tôhoku中建立了现代导出函子理论。
 -/
 
-import FormalMath.Mathlib.Algebra.Homology.ShortComplex
-import FormalMath.Mathlib.CategoryTheory.Abelian.Basic
-import FormalMath.Mathlib.Algebra.Category.ModuleCat.Basic
+import FormalMath.MathlibStub.Algebra.Homology.ShortComplex
+import FormalMath.MathlibStub.CategoryTheory.Abelian.Basic
+import FormalMath.MathlibStub.Algebra.Category.ModuleCat.Basic
 
 namespace DerivedFunctor
 

@@ -37,9 +37,9 @@ Yang-Mills理论起源于1954年杨振宁和Mills的论文，
 - 标准模型：SU(3)×SU(2)×U(1)
 -/
 
-import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
-import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
-import FormalMath.Mathlib.Analysis.Calculus.DifferentialForms
+import FormalMath.MathlibStub.Geometry.Manifold.VectorBundle.Basic
+import FormalMath.MathlibStub.DifferentialGeometry.Connection.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.DifferentialForms
 
 namespace YangMillsTheory
 

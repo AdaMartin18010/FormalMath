@@ -32,10 +32,10 @@ Sobolev空间是偏微分方程理论中的核心函数空间，
 - 数学物理（量子力学、流体力学）
 -/
 
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
-import FormalMath.Mathlib.MeasureTheory.Measure.Lebesgue
-import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.PiL2
+import FormalMath.MathlibStub.MeasureTheory.Function.LpSpace
+import FormalMath.MathlibStub.MeasureTheory.Measure.Lebesgue
+import FormalMath.MathlibStub.Analysis.Calculus.Deriv.Basic
 
 namespace SobolevSpace
 

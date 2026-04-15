@@ -20,11 +20,11 @@ bₙ = (1/π)∫_{-π}^{π} f(x)sin(nx)dx
 - `Mathlib.MeasureTheory.Function.L2Space`
 -/
 
-import FormalMath.Mathlib.Analysis.Fourier.AddCircle
-import FormalMath.Mathlib.Analysis.Fourier.FourierTransform
-import FormalMath.Mathlib.Analysis.Fourier.RiemannLebesgueLemma
-import FormalMath.Mathlib.MeasureTheory.Function.L2Space
-import FormalMath.Mathlib.Analysis.InnerProductSpace.Basic
+import FormalMath.MathlibStub.Analysis.Fourier.AddCircle
+import FormalMath.MathlibStub.Analysis.Fourier.FourierTransform
+import FormalMath.MathlibStub.Analysis.Fourier.RiemannLebesgueLemma
+import FormalMath.MathlibStub.MeasureTheory.Function.L2Space
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.Basic
 
 namespace FourierSeries
 

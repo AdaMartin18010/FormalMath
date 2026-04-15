@@ -28,9 +28,9 @@ K-理论是研究向量丛（或模）的稳定等价类的代数拓扑工具。
 这些定理需要大量代数拓扑背景，我们提供完整的证明框架和详细注释。
 -/ 
 
-import FormalMath.Mathlib.Topology.VectorBundle.Basic
-import FormalMath.Mathlib.AlgebraicTopology.CechNerve
-import FormalMath.Mathlib.LinearAlgebra.CliffordAlgebra.Basic
+import FormalMath.MathlibStub.Topology.VectorBundle.Basic
+import FormalMath.MathlibStub.AlgebraicTopology.CechNerve
+import FormalMath.MathlibStub.LinearAlgebra.CliffordAlgebra.Basic
 
 namespace KTheory
 

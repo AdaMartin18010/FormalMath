@@ -45,7 +45,7 @@
 
 **证明**：
 1. 令 N = n! + 1
-2. N > 1，所以 N 有素因子 p
+2. N > 1，有素因子 p
 3. **断言**：p > n
 4. **反证**：若 p ≤ n，则 p | n!
 5. 由 p | N 和 p | n!，得 p | (N - n!) = 1
@@ -75,6 +75,10 @@
 3. **黎曼猜想**：黎曼ζ函数的非平凡零点都在 Re(s) = 1/2
 -/
 
+import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Prime.Defs
+import Mathlib.Tactic
+
 namespace InfinitudeOfPrimes
 
 /-- 素数的定义：大于1的自然数，只有1和自身两个正因数 -/
@@ -98,6 +102,44 @@ notation "π" => primeCounting
 def PrimesInfinite : Prop :=
   ∀ n, ∃ p, IsPrime p ∧ p > n
 
+/-- 构造性证明：对于任意n，存在素数p > n 
+
+**证明**：
+1. 令 N = n! + 1
+2. N > 1，有素因子 p
+3. 若 p ≤ n，则 p | n!
+4. p | N 且 p | n! ⇒ p | 1，矛盾
+5. 所以 p > n -/
+theorem exists_prime_gt (n : Nat) : ∃ (p : Nat), IsPrime p ∧ p > n := by
+  let N := n.factorial + 1
+  have hN_gt_one : N > 1 := by
+    have : n.factorial ≥ 1 := Nat.factorial_pos n
+    omega
+  rcases Nat.exists_prime_and_dvd (by linarith) with ⟨p, hp_prime, hp_dvd⟩
+  use p
+  constructor
+  · constructor
+    · exact Nat.Prime.one_lt hp_prime
+    · intro m hm_dvd
+      exact Nat.Prime.eq_one_or_self_of_dvd hp_prime m hm_dvd
+  · by_contra h_le
+    push_neg at h_le
+    have hp_dvd_nfac : p ∣ n.factorial := by
+      apply Nat.dvd_factorial
+      · exact Nat.Prime.pos hp_prime
+      · exact h_le
+    have hp_dvd_one : p ∣ 1 := by
+      have h1 : p ∣ (n.factorial + 1) - n.factorial := by
+        rw [Nat.dvd_iff_mod_eq_zero] at hp_dvd hp_dvd_nfac ⊢
+        have h_eq : (n.factorial + 1) % p = n.factorial % p := by rw [hp_dvd, hp_dvd_nfac]
+        rw [Nat.sub_mod_eq_zero_of_mod_eq h_eq]
+      have h2 : (n.factorial + 1) - n.factorial = 1 := by omega
+      rw [h2] at h1
+      exact h1
+    have hp_gt_one : p > 1 := Nat.Prime.one_lt hp_prime
+    have : p ≤ 1 := by exact Nat.le_of_dvd (by norm_num) hp_dvd_one
+    linarith
+
 /-- 欧几里得证明：素数有无穷多个 
 
 **证明**（反证法）：
@@ -110,26 +152,8 @@ def PrimesInfinite : Prop :=
 
 **结论**：素数有无穷多个。-/
 theorem infinitude_of_primes : PrimesInfinite := by
-  /-
-  欧几里得经典证明：
-  假设素数有限，导出矛盾
-  -/
-  sorry
-
-/-- 构造性证明：对于任意n，存在素数p > n 
-
-**证明**：
-1. 令 N = n! + 1
-2. N > 1，有素因子 p
-3. 若 p ≤ n，则 p | n!
-4. p | N 且 p | n! ⇒ p | 1，矛盾
-5. 所以 p > n -/
-theorem exists_prime_gt (n : Nat) : ∃ (p : Nat), IsPrime p ∧ p > n := by
-  /-
-  构造性证明：
-  考虑 N = n! + 1，取其素因子
-  -/
-  sorry
+  intro n
+  exact exists_prime_gt n
 
 /-- 费马数：F_n = 2^(2^n) + 1 -/
 def fermatNumber (n : Nat) : Nat := 2 ^ (2 ^ n) + 1
@@ -139,14 +163,24 @@ notation "F_" n => fermatNumber n
 /-- 费马数都是奇数 
 
 **证明**：2^(2^n) 是偶数，所以 2^(2^n) + 1 是奇数 -/
-theorem fermat_odd (n : Nat) : F_n % 2 = 1 := by
-  sorry
+theorem fermat_odd (n : Nat) : fermatNumber n % 2 = 1 := by
+  unfold fermatNumber
+  have h2 : 2 ^ (2 ^ n) % 2 = 0 := by
+    rw [Nat.pow_mod]
+    simp
+  omega
 
 /-- 费马数大于2 
 
 **证明**：2^(2^n) ≥ 2，所以 F_n ≥ 3 > 2 -/
-theorem fermat_gt_two (n : Nat) : F_n > 2 := by
-  sorry
+theorem fermat_gt_two (n : Nat) : fermatNumber n > 2 := by
+  unfold fermatNumber
+  have h2 : 2 ^ (2 ^ n) ≥ 2 := by
+    have h1 : 2 ^ n ≥ 1 := by apply Nat.one_le_pow; decide
+    have h2 : 2 ^ (2 ^ n) ≥ 2 ^ 1 := by apply Nat.pow_le_pow_right; decide; exact h1
+    simp at h2
+    exact h2
+  omega
 
 /-- 孪生素数的定义：相差2的素数对 -/
 def IsTwinPrime (p : Nat) : Prop :=
@@ -177,6 +211,21 @@ theorem prime_gaps_unbounded : ∀ (N : Nat), ∃ (p q : Nat),
   对于任意 N，序列 (N+1)!+2, ..., (N+1)!+(N+1) 包含 N 个连续合数
   -/
   intro N
-  sorry
+  have h2 : IsPrime 2 := by
+    constructor
+    · decide
+    · intro m hm
+      have : m ≤ 2 := by exact Nat.le_of_dvd (by decide) hm
+      interval_cases m <;> simp at *
+  rcases exists_prime_gt (N + 2) with ⟨q, hq_prime, hq_gt⟩
+  use 2, q
+  constructor
+  · exact h2
+  constructor
+  · exact hq_prime
+  constructor
+  · have : q > 2 := by linarith
+    exact this
+  · omega
 
 end InfinitudeOfPrimes

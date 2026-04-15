@@ -48,9 +48,9 @@ Z(X, T) = exp(∑_{n=1}^∞ #X(𝔽_{q^n}) · T^n / n)
 - Wikipedia: https://en.wikipedia.org/wiki/Weil_conjectures
 -/
 
-import FormalMath.Mathlib.AlgebraicTopology.CechNerve
-import FormalMath.Mathlib.AlgebraicTopology.SimplicialSet
-import FormalMath.Mathlib.Topology.Covering
+import FormalMath.MathlibStub.AlgebraicTopology.CechNerve
+import FormalMath.MathlibStub.AlgebraicTopology.SimplicialSet
+import FormalMath.MathlibStub.Topology.Covering
 import FormalMath.ArithmeticGeometry
 
 namespace WeilConjectures

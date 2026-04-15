@@ -27,6 +27,7 @@ import Mathlib.SetTheory.Cardinal.Basic
 import Mathlib.SetTheory.ZFC.Basic
 import Mathlib.Data.Set.Basic
 import Mathlib.Order.WellFounded
+import Mathlib.Tactic
 
 universe u v w
 
@@ -107,15 +108,16 @@ theorem powerset_mono {A B : Set α} (h : A ⊆ B) :
   /- 幂集运算保持包含关系 -/
   intro S hS
   simp at hS ⊢
-  exact fun x hx => h (hS x hx)
+  intro x hx
+  exact h (hS hx)
 
 -- 有限集合的幂集大小：若 |A| = n，则 |P(A)| = 2ⁿ
-theorem powerset_card_finite {A : Set α} [Fintype A] :
-    Fintype.card A.powerset = 2 ^ (Fintype.card A) := by
+theorem powerset_card_finite {α : Type u} [Fintype α] :
+    Fintype.card (Set α) = 2 ^ (Fintype.card α) := by
   /- 这是组合数学的经典结果
      证明思路：每个元素有两种选择（在子集中或不在）
      因此n个元素共有2ⁿ个子集 -/
-  simp [Set.powerset]
+  simp
 
 /-
 ## 第三部分：关系与函数
@@ -154,7 +156,7 @@ theorem equiv_classes_disjoint {R : α → α → Prop}
     ext z
     simp [EquivalenceClass]
     intro hzx hzy
-    have : R x y := h_equiv.trans x z y hzx (h_equiv.symm z y hzy)
+    have : R x y := h_equiv.trans x z y hzx (h_equiv.symm y z hzy)
     contradiction
 
 /-
@@ -164,8 +166,8 @@ theorem equiv_classes_disjoint {R : α → α → Prop}
 -/
 
 -- 序数是传递的且元素按∈良序的集合
-structure IsOrdinal (o : Type u) : Prop where
-  transitive : ∀ x ∈ (univ : Set o), ∀ y ∈ x, y ∈ (univ : Set o)
+structure IsOrdinal (o : Type u) [Membership o o] : Prop where
+  transitive : ∀ (x : o), x ∈ (Set.univ : Set o) → ∀ (y : o), y ∈ x → y ∈ (Set.univ : Set o)
   well_ordered : WellFounded ((· ∈ ·) : o → o → Prop)
 
 -- 后继序数
@@ -184,7 +186,25 @@ theorem ordinal_induction {P : Ordinal → Prop}
     (o : Ordinal) : P o := by
   /- 超限归纳法是集合论中最强大的证明工具之一
      证明分三种情况：0、后继序数、极限序数 -/
-  sorry
+  apply WellFoundedLT.induction o
+  intro o h
+  by_cases h0 : o = 0
+  · rw [h0]; exact h_zero
+  by_cases hs : ∃ x, o = x + 1
+  · rcases hs with ⟨x, hx⟩
+    rw [hx]
+    exact h_succ x (h x (by rw [hx]; exact lt_add_one x))
+  · apply h_limit o ⟨h0, _⟩ h
+    intro x hx
+    by_contra h'
+    have h1 : o ≤ x + 1 := by
+      simpa using h'
+    have h2 : x + 1 ≤ o := by
+      rw [add_one_le_iff]
+      exact hx
+    have h3 : o = x + 1 := le_antisymm h1 h2
+    have : ∃ x, o = x + 1 := ⟨x, h3⟩
+    contradiction
 
 /-
 ## 第五部分：基数基础
@@ -197,6 +217,12 @@ theorem cardinal_le_iff_injective {A B : Type u} :
     mk A ≤ mk B ↔ ∃ f : A → B, Function.Injective f := by
   /- 这是基数比较的定义 -/
   rw [Cardinal.le_def]
+  constructor
+  · rintro ⟨f⟩
+    use f
+    exact f.injective
+  · rintro ⟨f, hf⟩
+    exact ⟨⟨f, hf⟩⟩
 
 -- Schröder-Bernstein定理：若 |A| ≤ |B| 且 |B| ≤ |A|，则 |A| = |B|
 theorem schroeder_bernstein {A B : Type u}
@@ -204,15 +230,17 @@ theorem schroeder_bernstein {A B : Type u}
     mk A = mk B := by
   /- Schröder-Bernstein定理是基数理论的核心定理
      证明思路：构造一个双射 A → B -/
-  apply Cardinal.le_antisymm
+  apply le_antisymm
   · exact h1
   · exact h2
 
 -- 无穷基数的性质：ℵ₀是最小的无穷基数
 theorem aleph0_least_infinite {κ : Cardinal} (h : ℵ₀ ≤ κ) :
-    Infinite (κ.out.α) := by
+    Infinite κ.out := by
   /- ℵ₀是所有无穷基数中最小的 -/
-  sorry
+  rw [Cardinal.infinite_iff]
+  rw [Cardinal.mk_out]
+  exact h
 
 /-
 ## 第六部分：选择公理相关
@@ -222,8 +250,8 @@ theorem aleph0_least_infinite {κ : Cardinal} (h : ℵ₀ ≤ κ) :
 
 -- Zorn引理：若偏序集的每个链都有上界，则存在极大元
 axiom zorn_lemma {α : Type u} [PartialOrder α]
-    (h : ∀ c : Set α, IsChain (· ≤ ·) c → ∃ ub, ∀ x ∈ c, x ≤ ub) :
-    ∃ m, ∀ x, m ≤ x → x = m
+    (h : ∀ c : Set α, IsChain (· ≤ ·) c → ∃ ub : α, ∀ x ∈ c, x ≤ ub) :
+    ∃ m : α, ∀ x : α, m ≤ x → x = m
 
 -- 良序定理：每个集合都可以被良序化
 axiom well_ordering_theorem (α : Type u) :
@@ -253,7 +281,7 @@ axiom axiom_of_powerset {α : Type u} (A : Set α) :
 
 -- 无穷公理：存在无穷集合
 axiom axiom_of_infinity :
-    ∃ S : Set ℕ, ∅ ∈ S ∧ ∀ x ∈ S, x ∪ {x} ∈ S
+    ∃ S : Set ℕ, 0 ∈ S ∧ ∀ n ∈ S, n + 1 ∈ S
 
 -- 分离公理模式：对任意性质和集合，可以分离出满足该性质的子集
 axiom axiom_of_separation {α : Type u} (P : α → Prop) (A : Set α) :
@@ -264,11 +292,11 @@ axiom axiom_of_replacement {α β : Type u} (f : α → β) (A : Set α) :
     ∃ B : Set β, ∀ y, y ∈ B ↔ ∃ x ∈ A, f x = y
 
 -- 正则公理：每个非空集合都有∈-极小元
-axiom axiom_of_regularity {α : Type u} (S : Set α) (h : S.Nonempty) :
+axiom axiom_of_regularity {α : Type u} [Membership α α] (S : Set α) (h : S.Nonempty) :
     ∃ x ∈ S, ∀ y ∈ S, y ∉ x
 
 -- 选择公理：每个非空集合族存在选择函数
 axiom axiom_of_choice {α : Type u} (S : Set (Set α)) (h : ∀ A ∈ S, A.Nonempty) :
-    ∃ f : S → α, ∀ A ∈ S, f ⟨A, H⟩ ∈ A
+    ∃ f : S → α, ∀ A (hA : A ∈ S), f ⟨A, hA⟩ ∈ A
 
 end SetTheory

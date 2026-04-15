@@ -22,12 +22,12 @@
 
 -/
 
-import FormalMath.Mathlib.Probability.Independence
-import FormalMath.Mathlib.Probability.IdentDistrib
-import FormalMath.Mathlib.Probability.StrongLaw
-import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
-import FormalMath.Mathlib.MeasureTheory.Function.StronglyMeasurable.Basic
-import FormalMath.Mathlib.Probability.Chebyshev
+import FormalMath.MathlibStub.Probability.Independence
+import FormalMath.MathlibStub.Probability.IdentDistrib
+import FormalMath.MathlibStub.Probability.StrongLaw
+import FormalMath.MathlibStub.MeasureTheory.Integral.Bochner
+import FormalMath.MathlibStub.MeasureTheory.Function.StronglyMeasurable.Basic
+import FormalMath.MathlibStub.Probability.Chebyshev
 
 namespace LawOfLargeNumbers
 

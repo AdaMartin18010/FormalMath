@@ -37,9 +37,9 @@
 本文件建立核心算法的框架，详细说明收敛性证明。
 -/
 
-import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
-import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
-import FormalMath.Mathlib.Analysis.NormedSpace.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.Deriv.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.FDeriv.Basic
+import FormalMath.MathlibStub.Analysis.NormedSpace.Basic
 
 namespace NumericalAnalysis
 

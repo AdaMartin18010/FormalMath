@@ -34,10 +34,10 @@
 - 概率论（随机过程）
 -/
 
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
-import FormalMath.Mathlib.Topology.Algebra.ContinuousMonoidHom
-import FormalMath.Mathlib.Analysis.Calculus.ContDiff.Basic
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.PiL2
+import FormalMath.MathlibStub.MeasureTheory.Function.LpSpace
+import FormalMath.MathlibStub.Topology.Algebra.ContinuousMonoidHom
+import FormalMath.MathlibStub.Analysis.Calculus.ContDiff.Basic
 
 namespace DistributionTheory
 

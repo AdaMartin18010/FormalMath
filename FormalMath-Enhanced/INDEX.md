@@ -15,11 +15,11 @@ FormalMath-Enhanced 是一个综合性的数学知识库，整合了 MSC2020 编
 
 | 指标 | 数值 |
 |------|------|
-| 📁 总文件数 | 72+ |
+| 📁 总文件数 | 307 |
 | 📊 MSC 编码 | 1,500+ |
-| 📝 定理注释 | 21 |
-| 🏆 IMO 题目 | 10/120 |
-| 🎓 国际课程 | 59 门/章 |
+| 📝 定理注释 | 245 |
+| 🏆 IMO 题目 | 120/120 |
+| 🎓 国际课程 | 87+ 门/章 |
 | 🤖 AI 项目 | 5 个 |
 | 🔬 前沿专题 | 6 个 |
 
@@ -30,7 +30,7 @@ FormalMath-Enhanced 是一个综合性的数学知识库，整合了 MSC2020 编
 | 模块 | 描述 | 关键内容 | 入口链接 |
 |------|------|----------|----------|
 | 🔢 **01-MSC-Coding** | MSC2020 数学分类编码 | 1,500+ 五级编码，覆盖 5 大数学分支 | [进入](./01-MSC-Coding/README.md) |
-| 📐 **02-Mathlib4-Annotations** | Mathlib4 定理教育注释 | 21 个核心定理，含 Lean4 代码解析 | [进入](./02-Mathlib4-Annotations/INDEX.md) |
+| 📐 **02-Mathlib4-Annotations** | Mathlib4 定理教育注释 | 245 个核心定理，含 Lean4 代码解析 | [进入](./02-Mathlib4-Annotations/INDEX.md) |
 | 🏆 **03-IMO-Competition** | IMO 竞赛数学 | 2006-2025 年题目，含解答与分析 | [进入](./03-IMO-Competition/README.md) |
 | 🌍 **04-International-Alignment** | 国际课程深度对齐 | MIT/Stanford/Harvard 课程映射 | [进入](./04-International-Alignment/README.md) |
 | 🤖 **05-AI-Formalization** | AI 形式化数学 | KELPS/DeepSeek/LeanAgent/AlphaProof | [进入](./05-AI-Formalization/00-README.md) |
@@ -126,6 +126,6 @@ FormalMath-Enhanced/
 
 ---
 
-*索引最后更新：2026年4月3日*
+*索引最后更新：2026年4月16日*
 *总链接数：50+*
 *导航覆盖率：100%*

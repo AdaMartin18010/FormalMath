@@ -26,12 +26,12 @@
 - nLab: https://ncatlab.org/nlab/show/universal+enveloping+algebra
 -/
 
-import FormalMath.Mathlib.Algebra.Lie.UniversalEnveloping
-import FormalMath.Mathlib.Algebra.Lie.OfAssociative
-import FormalMath.Mathlib.Algebra.Lie.CartanSubalgebra
-import FormalMath.Mathlib.Algebra.Lie.Killing
-import FormalMath.Mathlib.RingTheory.TensorProduct
-import FormalMath.Mathlib.LinearAlgebra.CliffordAlgebra.Basic
+import FormalMath.MathlibStub.Algebra.Lie.UniversalEnveloping
+import FormalMath.MathlibStub.Algebra.Lie.OfAssociative
+import FormalMath.MathlibStub.Algebra.Lie.CartanSubalgebra
+import FormalMath.MathlibStub.Algebra.Lie.Killing
+import FormalMath.MathlibStub.RingTheory.TensorProduct
+import FormalMath.MathlibStub.LinearAlgebra.CliffordAlgebra.Basic
 
 namespace UniversalEnvelopingAlgebra
 

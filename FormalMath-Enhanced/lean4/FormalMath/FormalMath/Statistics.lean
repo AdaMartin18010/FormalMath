@@ -32,10 +32,10 @@
 1933年：Neyman-Pearson假设检验理论
 -/ 
 
-import FormalMath.Mathlib.Probability.Statistics
-import FormalMath.Mathlib.Probability.CentralLimitTheorem
-import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
-import FormalMath.Mathlib.LinearAlgebra.Matrix.PosDef
+import FormalMath.MathlibStub.Probability.Statistics
+import FormalMath.MathlibStub.Probability.CentralLimitTheorem
+import FormalMath.MathlibStub.Analysis.Calculus.FDeriv.Basic
+import FormalMath.MathlibStub.LinearAlgebra.Matrix.PosDef
 
 namespace Statistics
 

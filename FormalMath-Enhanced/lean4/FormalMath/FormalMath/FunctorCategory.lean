@@ -21,14 +21,14 @@
 - Wikipedia: https://en.wikipedia.org/wiki/Functor_category
 -/
 
-import FormalMath.Mathlib.CategoryTheory.Category.Basic
-import FormalMath.Mathlib.CategoryTheory.Functor.Basic
-import FormalMath.Mathlib.CategoryTheory.NatTrans
-import FormalMath.Mathlib.CategoryTheory.Limits.Types
-import FormalMath.Mathlib.CategoryTheory.Limits.Shapes.Products
-import FormalMath.Mathlib.CategoryTheory.Limits.Shapes.Equalizers
-import FormalMath.Mathlib.CategoryTheory.Yoneda
-import FormalMath.Mathlib.Topology.Sheaves.Stalks
+import FormalMath.MathlibStub.CategoryTheory.Category.Basic
+import FormalMath.MathlibStub.CategoryTheory.Functor.Basic
+import FormalMath.MathlibStub.CategoryTheory.NatTrans
+import FormalMath.MathlibStub.CategoryTheory.Limits.Types
+import FormalMath.MathlibStub.CategoryTheory.Limits.Shapes.Products
+import FormalMath.MathlibStub.CategoryTheory.Limits.Shapes.Equalizers
+import FormalMath.MathlibStub.CategoryTheory.Yoneda
+import FormalMath.MathlibStub.Topology.Sheaves.Stalks
 
 namespace FunctorCategory
 

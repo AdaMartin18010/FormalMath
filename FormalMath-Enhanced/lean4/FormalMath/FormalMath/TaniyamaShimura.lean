@@ -37,9 +37,9 @@
 - Wikipedia: https://en.wikipedia.org/wiki/Modularity_theorem
 -/
 
-import FormalMath.Mathlib.Algebra.Module.Basic
-import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
-import FormalMath.Mathlib.Geometry.Manifold.ChartedSpace
+import FormalMath.MathlibStub.Algebra.Module.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.Deriv.Basic
+import FormalMath.MathlibStub.Geometry.Manifold.ChartedSpace
 import FormalMath.ArithmeticGeometry
 import FormalMath.MordellWeil
 

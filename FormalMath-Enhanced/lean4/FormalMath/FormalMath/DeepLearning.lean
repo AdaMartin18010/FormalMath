@@ -20,10 +20,10 @@
 
 -/
 
-import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
-import FormalMath.Mathlib.Analysis.Calculus.ContDiff.Basic
-import FormalMath.Mathlib.Probability.CentralLimitTheorem
-import FormalMath.Mathlib.Topology.MetricSpace.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.FDeriv.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.ContDiff.Basic
+import FormalMath.MathlibStub.Probability.CentralLimitTheorem
+import FormalMath.MathlibStub.Topology.MetricSpace.Basic
 
 namespace DeepLearning
 

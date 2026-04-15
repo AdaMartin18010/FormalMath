@@ -32,8 +32,8 @@
 -/
 
 import FormalMath.CategoryTheory
-import FormalMath.Mathlib.Topology.Homotopy.Basic
-import FormalMath.Mathlib.AlgebraicTopology.SimplicialSet
+import FormalMath.MathlibStub.Topology.Homotopy.Basic
+import FormalMath.MathlibStub.AlgebraicTopology.SimplicialSet
 
 namespace HigherCategoryTheory
 

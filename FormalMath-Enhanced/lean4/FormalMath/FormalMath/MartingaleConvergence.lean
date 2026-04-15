@@ -18,11 +18,11 @@
 
 -/
 
-import FormalMath.Mathlib.Probability.Martingale.Basic
-import FormalMath.Mathlib.Probability.Martingale.Convergence
-import FormalMath.Mathlib.Probability.Martingale.OptionalStopping
-import FormalMath.Mathlib.Probability.Martingale.Centering
-import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
+import FormalMath.MathlibStub.Probability.Martingale.Basic
+import FormalMath.MathlibStub.Probability.Martingale.Convergence
+import FormalMath.MathlibStub.Probability.Martingale.OptionalStopping
+import FormalMath.MathlibStub.Probability.Martingale.Centering
+import FormalMath.MathlibStub.MeasureTheory.Integral.Bochner
 
 namespace MartingaleConvergence
 

@@ -26,10 +26,10 @@
 Lie代数库，补充关键定理的证明框架。
 -/
 
-import FormalMath.Mathlib.Algebra.Lie.Basic
-import FormalMath.Mathlib.Algebra.Lie.Killing
-import FormalMath.Mathlib.Algebra.Lie.CartanSubalgebra
-import FormalMath.Mathlib.LinearAlgebra.Trace
+import FormalMath.MathlibStub.Algebra.Lie.Basic
+import FormalMath.MathlibStub.Algebra.Lie.Killing
+import FormalMath.MathlibStub.Algebra.Lie.CartanSubalgebra
+import FormalMath.MathlibStub.LinearAlgebra.Trace
 
 namespace LieAlgebra
 

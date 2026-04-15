@@ -25,9 +25,9 @@
 目前以详细证明框架+数学注释的形式呈现。
 -/
 
-import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
-import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
-import FormalMath.Mathlib.DifferentialGeometry.MyersSteenrod
+import FormalMath.MathlibStub.Geometry.Manifold.VectorBundle.Basic
+import FormalMath.MathlibStub.DifferentialGeometry.Connection.Basic
+import FormalMath.MathlibStub.DifferentialGeometry.MyersSteenrod
 
 namespace ConnectionTheory
 

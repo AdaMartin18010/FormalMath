@@ -26,10 +26,10 @@ Chern类是复向量丛的最重要示性类，
 - nLab: https://ncatlab.org/nlab/show/Chern+class
 -/
 
-import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
-import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
-import FormalMath.Mathlib.AlgebraicTopology.CechNerve
-import FormalMath.Mathlib.Geometry.Manifold.IntegralCurve
+import FormalMath.MathlibStub.Geometry.Manifold.VectorBundle.Basic
+import FormalMath.MathlibStub.DifferentialGeometry.Connection.Basic
+import FormalMath.MathlibStub.AlgebraicTopology.CechNerve
+import FormalMath.MathlibStub.Geometry.Manifold.IntegralCurve
 
 namespace ChernClass
 

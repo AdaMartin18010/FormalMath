@@ -37,8 +37,8 @@ Hⁿ_et(X_{ℚ̄ₚ}, ℚₚ) ⊗ B_dR ≅ Hⁿ_dR(X/ℚₚ) ⊗ B_dR
 -/
 
 import FormalMath.HodgeTheory
-import FormalMath.Mathlib.NumberTheory.PAdic.Basic
-import FormalMath.Mathlib.Algebra.Ring.GradedAlgebra
+import FormalMath.MathlibStub.NumberTheory.PAdic.Basic
+import FormalMath.MathlibStub.Algebra.Ring.GradedAlgebra
 
 namespace PAdicHodgeTheory
 

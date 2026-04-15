@@ -36,16 +36,17 @@ Radon-Nikodym定理是测度论中最深刻和最重要的定理之一。
 - Folland, "Real Analysis", Section 3.2
 - Billingsley, "Probability and Measure", Section 32
 - 夏道行、吴卓人、严绍宗、舒五昌，《实变函数论与泛函分析》
--/@
+-/
 
-import Mathlib.MeasureTheory.Measure.Lebesgue
-import Mathlib.MeasureTheory.Integral.Bochner
-import Mathlib.MeasureTheory.Function.LpSpace
-import Mathlib.MeasureTheory.Decomposition.Lebesgue
+import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+import Mathlib.MeasureTheory.Integral.Bochner.Basic
+import Mathlib.MeasureTheory.Function.LpSpace.Basic
+import Mathlib.MeasureTheory.Measure.Decomposition.Lebesgue
+import Mathlib.MeasureTheory.Measure.Typeclasses.Probability
 
 namespace RadonNikodym
 
-open MeasureTheory Measure Set Filter ENNReal NNReal Topology
+open MeasureTheory Measure Set Filter ENNReal NNReal Topology ProbabilityTheory
 
 universe u v
 
@@ -71,11 +72,7 @@ variable {α : Type u} [MeasurableSpace α]
 -/
 
 /-- 测度的绝对连续性 -/
-def AbsolutelyContinuous' (ν μ : Measure α) : Prop :=
-  ∀ (s : Set α), MeasurableSet s → μ s = 0 → ν s = 0
-
-/-- 绝对连续性记号 ν ≪ μ -/
-notation ν "≪" μ => AbsolutelyContinuous' ν μ
+-- Use Mathlib's built-in AbsolutelyContinuous and ≪ notation
 
 /-
 ### 绝对连续性的基本性质
@@ -254,21 +251,21 @@ theorem radon_nikodym_unique {μ ν : Measure α} {f g : α → ℝ≥0∞}
 ν(E) = ∫_E (dν/dμ) dμ 的唯一（μ-a.e.）可测函数。
 -/
 noncomputable def radonNikodymDerivative {μ ν : Measure α}
-    [SigmaFinite μ] [SigmaFinite ν] (h_ac : ν ≪ μ) : α → ℝ≥0∞ :=
+    [SigmaFinite μ] [SigmaFinite ν] {h_ac : ν ≪ μ} : α → ℝ≥0∞ :=
   Classical.choose (radon_nikodym_exists h_ac)
 
 /-- 标准记号：dν/dμ -/
-notation "d" ν "/d" μ => radonNikodymDerivative (by assumption)
+notation:max "d" ν:max "/d" μ:max => radonNikodymDerivative
 
 /-- Radon-Nikodym导数的基本性质 -/
 theorem rn_deriv_measurable {μ ν : Measure α} [SigmaFinite μ] [SigmaFinite ν]
-    (h_ac : ν ≪ μ) : Measurable (dν/dμ) := by
+    (h_ac : ν ≪ μ) : Measurable (radonNikodymDerivative) := by
   exact (Classical.choose_spec (radon_nikodym_exists h_ac)).1
 
 /-- Radon-Nikodym导数满足积分表示 -/
 theorem rn_deriv_spec {μ ν : Measure α} [SigmaFinite μ] [SigmaFinite ν]
     (h_ac : ν ≪ μ) (s : Set α) (hs : MeasurableSet s) :
-    ν s = ∫⁻ x in s, (dν/dμ) x ∂μ := by
+    ν s = ∫⁻ x in s, (radonNikodymDerivative) x ∂μ := by
   exact (Classical.choose_spec (radon_nikodym_exists h_ac)).2 s hs
 
 /-
@@ -283,7 +280,8 @@ dλ/dν = (dλ/dμ) · (dμ/dν)   λ-几乎处处
 /-- Radon-Nikodym导数的链式法则 -/
 theorem rn_deriv_chain_rule {μ ν λ : Measure α} [SigmaFinite μ] [SigmaFinite ν]
     [SigmaFinite λ] (h1 : ν ≪ μ) (h2 : λ ≪ ν) :
-    (dλ/dμ) =ᵐ[λ] (dλ/dν) * (dν/dμ) := by
+    (@radonNikodymDerivative α _ _ μ λ (absolutelyContinuous_trans h1 h2)) =ᵐ[λ]
+      (@radonNikodymDerivative α _ _ ν λ h2) * (@radonNikodymDerivative α _ _ μ ν h1) := by
   -- 证明思路：
   -- 对任意可测集 E，验证两边积分相等
   -- ∫_E (dλ/dμ) dμ = λ(E)
@@ -303,19 +301,24 @@ theorem rn_deriv_chain_rule {μ ν λ : Measure α} [SigmaFinite μ] [SigmaFinit
     exact absolutelyContinuous_trans h1 h2
   · /- 验证右边的积分表示 -/
     intro s hs
+    have h3 : λ ≪ μ := absolutelyContinuous_trans h1 h2
     /- 利用积分的变量替换 -/
     /- ∫_E (dλ/dν)(dν/dμ) dμ = ∫_E (dλ/dν) dν = λ(E) -/
     calc
-      ∫⁻ x in s, (dλ/dμ) x ∂μ = ∫⁻ x in s, ((dλ/dν) x * (dν/dμ) x) ∂μ := by
-        apply setLIntegral_congr_ae
-        · exact hs
-        · /- 几乎处处相等 -/
-          sorry
-      _ = ∫⁻ x in s, (dλ/dν) x ∂ν := by
+      ∫⁻ x in s, (radonNikodymDerivative) x ∂μ = λ s := by
+        apply rn_deriv_spec (absolutelyContinuous_trans h1 h2) hs
+      _ = ∫⁻ x in s, (radonNikodymDerivative) x ∂ν := by
+        rw [rn_deriv_spec h2 hs]
+      _ = ∫⁻ x in s, ((radonNikodymDerivative) x * (radonNikodymDerivative) x) ∂μ := by
         /- 变量替换公式 -/
-        sorry
-      _ = λ s := by
-        apply rn_deriv_spec h2 hs
+        rw [← Measure.withDensity_rnDeriv_eq _ _ h1]
+        rw [setLIntegral_withDensity_eq_setLIntegral_mul_non_measurable₀ _ _ _ hs]
+        · congr with x
+          simp only [Pi.mul_apply]
+          rfl
+        · refine ae_restrict_of_ae ?_
+          exact Measure.rnDeriv_lt_top _ _
+        · exact (rn_deriv_measurable h1).aemeasurable
 
 end RadonNikodymTheorem
 
@@ -327,7 +330,7 @@ Radon-Nikodym定理最重要的应用之一是证明条件期望的存在性。
 
 section ConditionalExpectation
 
-variable {Ω : Type*} [MeasurableSpace Ω] [ProbabilitySpace Ω]
+variable {Ω : Type*} [MeasureSpace Ω] [IsProbabilityMeasure volume]
 
 /-
 ### 条件期望的存在性
@@ -372,7 +375,7 @@ end ConditionalExpectation
 
 section DensityFunction
 
-variable {Ω : Type*} [MeasurableSpace Ω] [ProbabilitySpace Ω]
+variable {Ω : Type*} [MeasureSpace Ω] [IsProbabilityMeasure volume]
 
 /-- 概率密度函数的存在性 -/
 theorem pdf_exists {X : Ω → ℝ} (hX : Measurable X) :
@@ -397,7 +400,7 @@ theorem pdf_exists {X : Ω → ℝ} (hX : Measurable X) :
 
 /-- 似然比 (Likelihood Ratio) -/
 def likelihoodRatio {μ ν : Measure α} [SigmaFinite μ] [SigmaFinite ν]
-    (h_ac : ν ≪ μ) : α → ℝ≥0∞ := dν/dμ
+    (h_ac : ν ≪ μ) : α → ℝ≥0∞ := radonNikodymDerivative
 
 end DensityFunction
 

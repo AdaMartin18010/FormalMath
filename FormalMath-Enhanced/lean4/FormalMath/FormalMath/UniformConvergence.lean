@@ -19,11 +19,11 @@
 本文件建立一致收敛的核心定理，包括连续性、积分和微分的极限交换。
 -/
 
-import FormalMath.Mathlib.Topology.UniformSpace.UniformConvergence
-import FormalMath.Mathlib.Topology.Sequences
-import FormalMath.Mathlib.Analysis.NormedSpace.Basic
-import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
-import FormalMath.Mathlib.MeasureTheory.Function.StronglyMeasurable.Basic
+import FormalMath.MathlibStub.Topology.UniformSpace.UniformConvergence
+import FormalMath.MathlibStub.Topology.Sequences
+import FormalMath.MathlibStub.Analysis.NormedSpace.Basic
+import FormalMath.MathlibStub.MeasureTheory.Integral.Bochner
+import FormalMath.MathlibStub.MeasureTheory.Function.StronglyMeasurable.Basic
 
 namespace UniformConvergence
 

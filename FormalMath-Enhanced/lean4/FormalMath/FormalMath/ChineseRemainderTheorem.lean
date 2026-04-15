@@ -82,14 +82,6 @@ import Mathlib.RingTheory.Ideal.Basic
 
 namespace ChineseRemainderTheorem
 
-open Nat ZMod
-
-/-- 同余关系定义：a ≡ b (mod n) 当且仅当 n | (a - b) -/
-def ModEq (a b n : Nat) : Prop :=
-  a % n = b % n
-
-/-- 同余记号 -/
-notation:50 a " ≡ " b " [MOD " n "]" => ModEq a b n
 
 /-- 两元中国剩余定理：当 m 和 n 互素时，同余方程组有解 
 
@@ -107,36 +99,8 @@ x ≡ b (mod n)
 theorem chinese_remainder_two (m n a b : Nat)
     (h_coprime : Nat.gcd m n = 1) :
     ∃ x : Nat, x ≡ a [MOD m] ∧ x ≡ b [MOD n] := by
-  -- 使用Bezout恒等式：存在s,t使得s·m + t·n = 1
-  rcases (Nat.gcd_eq_gcd_ab m n).symm ▸ h_coprime with ⟨s, t, h_bezout⟩
-  -- 构造解：x = b·s·m + a·t·n
-  let x := b * s * m + a * t * n
-  use x
-  constructor
-  · -- 证明 x ≡ a (mod m)
-    show x % m = a % m
-    have h1 : (b * s * m) % m = 0 := by
-      simp [Nat.mul_assoc, Nat.mul_mod]
-    have h2 : (a * t * n) % m = a % m := by
-      have : (t * n) % m = 1 % m := by
-        have h : s * m + t * n = 1 := h_bezout
-        have : t * n = 1 - s * m := by omega
-        rw [this]
-        simp [Nat.sub_mod_eq_mod]
-      simp [Nat.mul_mod, this]
-    simp [Nat.add_mod, h1, h2]
-  · -- 证明 x ≡ b (mod n)
-    show x % n = b % n
-    have h1 : (a * t * n) % n = 0 := by
-      simp [Nat.mul_assoc, Nat.mul_mod]
-    have h2 : (b * s * m) % n = b % n := by
-      have : (s * m) % n = 1 % n := by
-        have h : s * m + t * n = 1 := h_bezout
-        have : s * m = 1 - t * n := by omega
-        rw [this]
-        simp [Nat.sub_mod_eq_mod]
-      simp [Nat.mul_mod, this]
-    simp [Nat.add_mod, h1, h2]
+  use (Nat.chineseRemainder h_coprime a b).val
+  exact (Nat.chineseRemainder h_coprime a b).prop
 
 /-- 中国剩余定理的唯一性 
 
@@ -158,16 +122,7 @@ theorem chinese_remainder_unique (m n a b : Nat)
     rw [hx.2, hy.2]
   -- 由于gcd(m,n)=1，由中国剩余定理的唯一性部分
   -- x ≡ y (mod m) 且 x ≡ y (mod n) 蕴含 x ≡ y (mod mn)
-  have h_mod_mn : m * n ∣ x - y ∨ m * n ∣ y - x := by
-    -- 使用互素的性质：若m|d且n|d且gcd(m,n)=1，则mn|d
-    have h_m_dvd : m ∣ x - y ∨ m ∣ y - x := by
-      omega
-    have h_n_dvd : n ∣ x - y ∨ n ∣ y - x := by
-      omega
-    -- 利用互素性质
-    sorry
-  -- 因此 x % (m*n) = y % (m*n)
-  sorry
+  exact (Nat.modEq_and_modEq_iff_modEq_mul (Nat.coprime_iff_gcd_eq_one.mpr h_coprime)).mp ⟨h_mod_m, h_mod_n⟩
 
 /-- 多元中国剩余定理（归纳形式）
 
@@ -191,15 +146,27 @@ theorem chinese_remainder_multiple (k : Nat) (n : Nat → Nat) (a : Nat → Nat)
     linarith
   | succ k ih =>
     -- 归纳步骤
-    rcases ih (fun i => n i) (fun i => a i) 
-      (fun i j hi hj hne => h_pairwise i j hi hj hne) 
-      (fun i hi => h_nz i hi) with ⟨x₀, hx₀⟩
+    rcases ih (fun i j hi hj hne => h_pairwise i j (by linarith) (by linarith) hne)
+      (fun i hi => h_nz i (by linarith)) with ⟨x₀, hx₀⟩
     -- 令M = n₀·n₁·...·n_{k-1}
-    let M := (List.range k).foldr (fun i acc => n i * acc) 1
+    let M := ∏ i ∈ Finset.range k, n i
     -- M与n_k互素
     have h_coprime : Nat.gcd M (n k) = 1 := by
-      -- 证明M与n_k互素
-      sorry
+      have hM : M = ∏ i ∈ Finset.range k, n i := rfl
+      rw [hM]
+      have h1 : ∀ i < k, (n i).gcd (n k) = 1 := by
+        intro i hi
+        have hne : i ≠ k := by linarith
+        exact h_pairwise i k (by linarith) (by linarith) hne
+      clear hM M
+      induction k with
+      | zero => simp
+      | succ k ih =>
+        rw [Finset.range_succ, Finset.prod_insert Finset.not_mem_range_self]
+        rw [Nat.coprime_mul_iff_left]
+        constructor
+        · exact h1 k (by linarith)
+        · exact ih (fun i hi => h1 i (by linarith))
     -- 解 x ≡ x₀ (mod M)，x ≡ a_k (mod n_k)
     rcases chinese_remainder_two M (n k) x₀ (a k) h_coprime with ⟨x, hx_M, hx_k⟩
     use x
@@ -208,8 +175,15 @@ theorem chinese_remainder_multiple (k : Nat) (n : Nat → Nat) (a : Nat → Nat)
     | inl hi_lt =>
       -- i < k
       have h_x_i : x ≡ a i [MOD n i] := by
-        -- x ≡ x₀ (mod M) 且 M ≡ 0 (mod n_i)
-        sorry
+        have hM_dvd : n i ∣ M := by
+          have hM : M = ∏ i ∈ Finset.range k, n i := rfl
+          rw [hM]
+          apply Finset.dvd_prod_of_mem
+          simp
+          exact hi_lt
+        have h1 : x ≡ x₀ [MOD n i] := Nat.ModEq.of_dvd hM_dvd hx_M
+        have h2 : x₀ ≡ a i [MOD n i] := hx₀ i hi_lt
+        exact Nat.ModEq.trans h1 h2
       exact h_x_i
     | inr hi_eq =>
       -- i = k
@@ -234,18 +208,18 @@ x ≡ 2 (mod 7)
 example : ∃ x : Nat, x ≡ 2 [MOD 3] ∧ x ≡ 3 [MOD 5] ∧ x ≡ 2 [MOD 7] := by
   -- 使用中国剩余定理
   -- 3, 5, 7两两互素
-  have h_coprime_3_5 : Nat.gcd 3 5 = 1 := by norm_num
-  have h_coprime_3_7 : Nat.gcd 3 7 = 1 := by norm_num
-  have h_coprime_5_7 : Nat.gcd 5 7 = 1 := by norm_num
-  
+  have h_coprime_3_5 : Nat.gcd 3 5 = 1 := by rfl
+  have h_coprime_3_7 : Nat.gcd 3 7 = 1 := by rfl
+  have h_coprime_5_7 : Nat.gcd 5 7 = 1 := by rfl
+
   -- 先解前两个方程
   rcases chinese_remainder_two 3 5 2 3 h_coprime_3_5 with ⟨x₁₂, hx₁₂_3, hx₁₂_5⟩
-  
+
   -- 再与第三个方程结合
   -- x ≡ x₁₂ (mod 15)，x ≡ 2 (mod 7)
-  have h_coprime_15_7 : Nat.gcd 15 7 = 1 := by norm_num
+  have h_coprime_15_7 : Nat.gcd 15 7 = 1 := by rfl
   rcases chinese_remainder_two 15 7 x₁₂ 2 h_coprime_15_7 with ⟨x, hx_15, hx_7⟩
-  
+
   use x
   constructor
   · -- x ≡ 2 (mod 3)
@@ -269,17 +243,9 @@ example : ∃ x : Nat, x ≡ 2 [MOD 3] ∧ x ≡ 3 [MOD 5] ∧ x ≡ 2 [MOD 7] :
 
 **参考**: Dummit & Foote, Theorem 7.6.1, Corollary 7.6.2, p. 265-266
 -/
-theorem chinese_remainder_ring_iso (m n : Nat)
+def chinese_remainder_ring_iso (m n : Nat)
     (h_coprime : Nat.gcd m n = 1) :
     ZMod (m * n) ≃+* ZMod m × ZMod n := by
-  -- 构造环同态
-  let f : ZMod (m * n) → ZMod m × ZMod n := fun x => 
-    (ZMod.cast (x.val % m), ZMod.cast (x.val % n))
-  
-  -- 证明这是同构
-  -- 1. 同态性质
-  -- 2. 单射
-  -- 3. 满射
-  sorry
+  exact ZMod.chineseRemainder h_coprime
 
 end ChineseRemainderTheorem

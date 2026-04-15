@@ -20,17 +20,17 @@
 - Awodey, S. "Category Theory"
 -/
 
-import FormalMath.Mathlib.CategoryTheory.Category.Basic
-import FormalMath.Mathlib.CategoryTheory.Functor.Basic
-import FormalMath.Mathlib.CategoryTheory.NatTrans
-import FormalMath.Mathlib.CategoryTheory.Limits.Shapes.Terminal
-import FormalMath.Mathlib.CategoryTheory.Limits.Shapes.Products
-import FormalMath.Mathlib.CategoryTheory.Limits.Shapes.Equalizers
-import FormalMath.Mathlib.CategoryTheory.Adjunction.Basic
-import FormalMath.Mathlib.CategoryTheory.Equivalence
-import FormalMath.Mathlib.CategoryTheory.Yoneda
-import FormalMath.Mathlib.CategoryTheory.Monoidal.Category
-import FormalMath.Mathlib.CategoryTheory.Abelian.Basic
+import FormalMath.MathlibStub.CategoryTheory.Category.Basic
+import FormalMath.MathlibStub.CategoryTheory.Functor.Basic
+import FormalMath.MathlibStub.CategoryTheory.NatTrans
+import FormalMath.MathlibStub.CategoryTheory.Limits.Shapes.Terminal
+import FormalMath.MathlibStub.CategoryTheory.Limits.Shapes.Products
+import FormalMath.MathlibStub.CategoryTheory.Limits.Shapes.Equalizers
+import FormalMath.MathlibStub.CategoryTheory.Adjunction.Basic
+import FormalMath.MathlibStub.CategoryTheory.Equivalence
+import FormalMath.MathlibStub.CategoryTheory.Yoneda
+import FormalMath.MathlibStub.CategoryTheory.Monoidal.Category
+import FormalMath.MathlibStub.CategoryTheory.Abelian.Basic
 
 namespace CategoryTheory
 

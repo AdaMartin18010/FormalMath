@@ -20,10 +20,10 @@
 
 -/
 
-import FormalMath.Mathlib.Probability.MarkovChain
-import FormalMath.Mathlib.Dynamics.Ergodic.Ergodic
-import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
-import FormalMath.Mathlib.Topology.MetricSpace.Basic
+import FormalMath.MathlibStub.Probability.MarkovChain
+import FormalMath.MathlibStub.Dynamics.Ergodic.Ergodic
+import FormalMath.MathlibStub.Analysis.Calculus.FDeriv.Basic
+import FormalMath.MathlibStub.Topology.MetricSpace.Basic
 
 namespace ReinforcementLearning
 

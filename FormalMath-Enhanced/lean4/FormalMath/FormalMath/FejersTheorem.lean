@@ -46,10 +46,10 @@ Fₙ(x) = (1/n) [sin(nx/2) / sin(x/2)]²
 - 程民德、邓东皋，《实分析》
 -/@
 
-import FormalMath.Mathlib.Analysis.Fourier.AddCircle
-import FormalMath.Mathlib.Analysis.Fourier.FourierTransform
-import FormalMath.Mathlib.MeasureTheory.Function.L2Space
-import FormalMath.Mathlib.Analysis.InnerProductSpace.Basic
+import FormalMath.MathlibStub.Analysis.Fourier.AddCircle
+import FormalMath.MathlibStub.Analysis.Fourier.FourierTransform
+import FormalMath.MathlibStub.MeasureTheory.Function.L2Space
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.Basic
 
 namespace FejersTheorem
 

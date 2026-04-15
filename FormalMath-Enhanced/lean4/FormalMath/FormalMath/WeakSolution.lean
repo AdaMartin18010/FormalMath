@@ -30,10 +30,10 @@
 泛函分析等深刻数学，完整形式化需要大量前置工作。
 -/
 
-import FormalMath.Mathlib.SobolevSpace
-import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.MeasureTheory.Function.L2Space
+import FormalMath.MathlibStub.SobolevSpace
+import FormalMath.MathlibStub.MeasureTheory.Function.LpSpace
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.PiL2
+import FormalMath.MathlibStub.MeasureTheory.Function.L2Space
 
 namespace WeakSolution
 

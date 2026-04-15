@@ -44,9 +44,9 @@ Morse函数是所有临界点都非退化的函数。
 这决定了临界点附近的拓扑变化类型。
 -/
 
-import FormalMath.Mathlib.Geometry.Manifold.Morse.Basic
-import FormalMath.Mathlib.AlgebraicTopology.SimplicialSet
-import FormalMath.Mathlib.Analysis.Calculus.CriticalPoints
+import FormalMath.MathlibStub.Geometry.Manifold.Morse.Basic
+import FormalMath.MathlibStub.AlgebraicTopology.SimplicialSet
+import FormalMath.MathlibStub.Analysis.Calculus.CriticalPoints
 
 namespace MorseTheory
 

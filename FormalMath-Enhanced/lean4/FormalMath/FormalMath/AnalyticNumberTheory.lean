@@ -26,9 +26,9 @@ Riemann（1859）的论文开创了现代解析数论，
 Hadamard和de la Vallée Poussin（1896）独立证明素数定理。
 -/ 
 
-import FormalMath.Mathlib.Analysis.SpecialFunctions.Gamma.Basic
-import FormalMath.Mathlib.Analysis.Fourier.FourierTransform
-import FormalMath.Mathlib.Data.Complex.Exponential
+import FormalMath.MathlibStub.Analysis.SpecialFunctions.Gamma.Basic
+import FormalMath.MathlibStub.Analysis.Fourier.FourierTransform
+import FormalMath.MathlibStub.Data.Complex.Exponential
 
 namespace AnalyticNumberTheory
 

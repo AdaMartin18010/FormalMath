@@ -23,10 +23,10 @@
 
 -/
 
-import FormalMath.Mathlib.Geometry.RiemannianMetric.Geodesic
-import FormalMath.Mathlib.Geometry.Manifold.IntegralCurve
-import FormalMath.Mathlib.Analysis.ODE.PicardLindelof
-import FormalMath.Mathlib.Geometry.RiemannianMetric.ExponentialMap
+import FormalMath.MathlibStub.Geometry.RiemannianMetric.Geodesic
+import FormalMath.MathlibStub.Geometry.Manifold.IntegralCurve
+import FormalMath.MathlibStub.Analysis.ODE.PicardLindelof
+import FormalMath.MathlibStub.Geometry.RiemannianMetric.ExponentialMap
 
 namespace GeodesicEquation
 

@@ -31,11 +31,11 @@
 完整的数学框架和证明思路，详细证明需要进一步的Mathlib4开发。
 -/
 
-import FormalMath.Mathlib.Analysis.Calculus.Deriv.Basic
-import FormalMath.Mathlib.Analysis.Calculus.Laplace
-import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
+import FormalMath.MathlibStub.Analysis.Calculus.Deriv.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.Laplace
+import FormalMath.MathlibStub.MeasureTheory.Function.LpSpace
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.PiL2
+import FormalMath.MathlibStub.MeasureTheory.Integral.Bochner
 
 namespace WaveEquation
 

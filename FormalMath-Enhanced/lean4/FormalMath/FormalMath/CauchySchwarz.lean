@@ -41,7 +41,7 @@
 本文件建立柯西-施瓦茨不等式及其应用。
 -/
 
-import FormalMath.Mathlib.Analysis.InnerProductSpace.Basic
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.Basic
 import Mathlib.Analysis.InnerProductSpace.Basic
 import Mathlib.Data.Real.Basic
 import Mathlib.Data.Complex.Basic

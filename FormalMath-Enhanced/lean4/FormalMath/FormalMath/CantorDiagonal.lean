@@ -120,7 +120,12 @@ def Surjective {A : Type u} {B : Type v} (f : A → B) : Prop :=
 - 故假设错误，不存在这样的满射 -/
 theorem cantor_theorem {A : Type u} (f : A → Subset A) :
     ¬Surjective f := by
-  sorry
+  intro h_surj
+  let D : Subset A := fun x => ¬(f x x)
+  rcases h_surj D with ⟨d, hd_eq⟩
+  have h_d_in_D : D d ↔ ¬(f d d) := by simp [D]
+  rw [hd_eq] at h_d_in_D
+  exact iff_not_self (f d d) |>.mp h_d_in_D |>.elim
 
 /-- 单射的定义：f(a₁) = f(a₂) → a₁ = a₂ -/
 def Injective {A : Type u} {B : Type v} (f : A → B) : Prop :=
@@ -136,7 +141,11 @@ def CardLe (A : Type u) (B : Type v) : Prop :=
 即：|A| ≤ |P(A)| 且 |A| ≠ |P(A)| -/
 theorem cardinal_cantor {A : Type u} :
     CardLe A (Subset A) := by
-  sorry
+  use fun x => fun y => y = x
+  intro x₁ x₂ h_eq
+  have : x₁ = x₂ := by
+    simpa using h_eq x₁ rfl
+  exact this
 
 /-- 自然数集 ℕ 是可数无穷的标准例子 -/
 def aleph_0 : Type :=
@@ -153,7 +162,16 @@ def powerset_nat : Type :=
 **证明**：由康托尔定理，|ℕ| < |P(ℕ)| -/
 theorem powerset_nat_uncountable :
     ¬CardLe powerset_nat Nat := by
-  sorry
+  intro h
+  rcases h with ⟨f, hf_inj⟩
+  let g : Nat → Subset Nat := fun n =>
+    if h : ∃ S, f S = n then hf_inj (Classical.choose h) (by simpa using Classical.choose_spec h) else fun _ => False
+  have h_surj : Surjective g := by
+    intro S
+    use f S
+    simp
+    refine ⟨S, rfl⟩
+  exact cantor_theorem g h_surj
 
 /-- 实数不可数（框架）
 
@@ -165,6 +183,83 @@ theorem powerset_nat_uncountable :
 3. 所以 |ℝ| > |ℕ| -/
 theorem real_uncountable :
     ¬CardLe Real Nat := by
-  sorry
+  intro h_real_le_nat
+  have h_subset_le_real : CardLe powerset_nat Real := by
+    let f : powerset_nat → Real := fun S =>
+      ∑' n : Nat, if S n then (2 / 3) * (1 / 3) ^ n else 0
+    use f
+    intro S₁ S₂ h_eq
+    by_contra h_ne
+    let n := Nat.find (show ∃ n, S₁ n ≠ S₂ n by
+      by_contra h
+      push_neg at h
+      have : S₁ = S₂ := by funext n; simp [h]
+      contradiction)
+    have hn : S₁ n ≠ S₂ n := Nat.find_spec (show ∃ n, S₁ n ≠ S₂ n by
+      by_contra h; push_neg at h; have : S₁ = S₂ := by funext n; simp [h]; contradiction)
+    wlog hS1 : S₁ n = true generalizing S₁ S₂
+    · have hS2 : S₂ n = true := by
+        simpa using show ¬(S₁ n = true) → S₂ n = true by
+          have : S₁ n = false ∨ S₁ n = true := by tauto
+          rcases this with h | h
+          · have : S₂ n ≠ false := by intro h'; rw [h] at hn; simp [h'] at hn
+            simpa using this
+          · simp [h] at hn
+      exact this hS2 (by linarith [h_eq]) |>.elim
+    have hS2 : S₂ n = false := by
+      have : S₁ n = true := hS1
+      have : S₂ n ≠ true := by intro h'; rw [hS1, h'] at hn; contradiction
+      simpa using this
+    have h_diff_pos : f S₁ - f S₂ > 0 := by
+      have h1 : f S₁ - f S₂ = ∑' k : Nat, (if S₁ k then (2 / 3) * (1 / 3) ^ k else 0) - (if S₂ k then (2 / 3) * (1 / 3) ^ k else 0) := by
+        simp [f, tsum_sub (summable_of_summable_norm (by simpa using summable_geometric_of_norm_lt_one (by norm_num : ‖(1 / 3 : ℝ)‖ < 1))) (summable_of_summable_norm (by simpa using summable_geometric_of_norm_lt_one (by norm_num : ‖(1 / 3 : ℝ)‖ < 1)))]
+      rw [h1]
+      have h_n : (if S₁ n then (2 / 3) * (1 / 3) ^ n else 0) - (if S₂ n then (2 / 3) * (1 / 3) ^ n else 0) = (2 / 3) * (1 / 3) ^ n := by
+        simp [hS1, hS2]
+      have h_rest : |∑' k : {k // k ≠ n}, (if S₁ k.val then (2 / 3) * (1 / 3) ^ k.val else 0) - (if S₂ k.val then (2 / 3) * (1 / 3) ^ k.val else 0)| < (2 / 3) * (1 / 3) ^ n := by
+        have h_abs : ∀ k : {k // k ≠ n}, |(if S₁ k.val then (2 / 3) * (1 / 3) ^ k.val else 0) - (if S₂ k.val then (2 / 3) * (1 / 3) ^ k.val else 0)| ≤ (2 / 3) * (1 / 3) ^ k.val := by
+          intro k
+          by_cases h1 : S₁ k.val <;> by_cases h2 : S₂ k.val <;> simp [h1, h2] <;> positivity
+        have h_sum : ∑' k : {k // k ≠ n}, (2 / 3) * (1 / 3) ^ k.val = (1 / 3) ^ n := by
+          have : ∑' k : {k // k ≠ n}, (2 / 3) * (1 / 3) ^ k.val = ∑' k : Nat, (2 / 3) * (1 / 3) ^ k - (2 / 3) * (1 / 3) ^ n := by
+            rw [tsum_subtype_eq_tsum_diff_singleton (fun k => (2 / 3) * (1 / 3 : ℝ) ^ k) n]
+            simp
+          rw [this]
+          have : ∑' k : Nat, (2 / 3) * (1 / 3 : ℝ) ^ k = 1 := by
+            rw [tsum_mul_left, tsum_geometric_of_lt_one]
+            all_goals norm_num
+          rw [this]
+          ring_nf
+        have h_le : ∑' k : {k // k ≠ n}, |(if S₁ k.val then (2 / 3) * (1 / 3) ^ k.val else 0) - (if S₂ k.val then (2 / 3) * (1 / 3) ^ k.val else 0)| ≤ (1 / 3) ^ n := by
+          apply tsum_le_of_sum_le
+          · intro k
+            exact h_abs k
+          · rw [h_sum]
+            exact le_rfl
+          · use (1 / 3) ^ n
+            intro s
+            apply Finset.sum_le_sum
+            intro k _
+            exact h_abs k
+        have h_lt : (1 / 3 : ℝ) ^ n < (2 / 3) * (1 / 3) ^ n := by
+          have : (1 / 3 : ℝ) ^ n > 0 := by positivity
+          nlinarith
+        have h_le' : |∑' k : {k // k ≠ n}, (if S₁ k.val then (2 / 3) * (1 / 3) ^ k.val else 0) - (if S₂ k.val then (2 / 3) * (1 / 3) ^ k.val else 0)| ≤ ∑' k : {k // k ≠ n}, |(if S₁ k.val then (2 / 3) * (1 / 3) ^ k.val else 0) - (if S₂ k.val then (2 / 3) * (1 / 3) ^ k.val else 0)| := by
+          apply abs_tsum_le_tsum_abs
+        linarith [h_le', h_le, h_lt]
+      have h_nonneg : 0 ≤ (if S₁ n then (2 / 3) * (1 / 3) ^ n else 0) - (if S₂ n then (2 / 3) * (1 / 3) ^ n else 0) := by
+        rw [h_n]
+        positivity
+      have h_eq' : ∑' k : Nat, (if S₁ k then (2 / 3) * (1 / 3) ^ k else 0) - (if S₂ k then (2 / 3) * (1 / 3) ^ k else 0) = (if S₁ n then (2 / 3) * (1 / 3) ^ n else 0) - (if S₂ n then (2 / 3) * (1 / 3) ^ n else 0) + ∑' k : {k // k ≠ n}, (if S₁ k.val then (2 / 3) * (1 / 3) ^ k.val else 0) - (if S₂ k.val then (2 / 3) * (1 / 3) ^ k.val else 0) := by
+        rw [tsum_eq_add_tsum_ite (fun k => (if S₁ k then (2 / 3) * (1 / 3 : ℝ) ^ k else 0) - (if S₂ k then (2 / 3) * (1 / 3 : ℝ) ^ k else 0)) n]
+        simp
+      rw [h_eq']
+      linarith [h_n, h_nonneg, h_rest]
+    linarith [h_eq, h_diff_pos]
+  have h_subset_le_nat : CardLe powerset_nat Nat := by
+    trans Real
+    · exact h_subset_le_real
+    · exact h_real_le_nat
+  exact powerset_nat_uncountable h_subset_le_nat
 
 end CantorDiagonalTheorem

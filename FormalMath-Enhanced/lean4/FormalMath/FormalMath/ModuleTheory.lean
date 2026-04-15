@@ -25,13 +25,13 @@
 
 -/
 
-import FormalMath.Mathlib.Algebra.Module.LinearMap
-import FormalMath.Mathlib.Algebra.Module.Submodule
-import FormalMath.Mathlib.Algebra.Module.Prod
-import FormalMath.Mathlib.Algebra.Module.Pi
-import FormalMath.Mathlib.Algebra.DirectSum.Module
-import FormalMath.Mathlib.LinearAlgebra.FreeModule.Basic
-import FormalMath.Mathlib.LinearAlgebra.Exact
+import FormalMath.MathlibStub.Algebra.Module.LinearMap
+import FormalMath.MathlibStub.Algebra.Module.Submodule
+import FormalMath.MathlibStub.Algebra.Module.Prod
+import FormalMath.MathlibStub.Algebra.Module.Pi
+import FormalMath.MathlibStub.Algebra.DirectSum.Module
+import FormalMath.MathlibStub.LinearAlgebra.FreeModule.Basic
+import FormalMath.MathlibStub.LinearAlgebra.Exact
 
 namespace ModuleTheory
 
@@ -628,7 +628,7 @@ notation:max M "^*" => DualModule (R := R) M
 这是对偶理论的基本结果。
 -/
 theorem dual_of_free_fg 
-    [IsFreeModule R M] [Module.Finite R M] :
+    [CommRing R] [IsFreeModule R M] [Module.Finite R M] :
     M ≃ₗ[R] (M^*)^* := by
   -- 构造自然同构
   -- 步骤1：定义评估映射 ev : M → M**
@@ -684,9 +684,9 @@ theorem dual_of_free_fg
     -- 验证求和公式给出正确的对偶配对
     rw [Finsupp.sum_fintype]
     · -- 有限和
-      simp
+      rw [← Basis.sum_dual_apply_smul_coord b]
+      simp [← map_sum, mul_comm]
       -- 利用基的坐标函数性质
-      sorry
     · -- 零元处理
       simp
 

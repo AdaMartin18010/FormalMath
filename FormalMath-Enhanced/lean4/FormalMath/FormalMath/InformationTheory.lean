@@ -29,10 +29,10 @@
 完整证明需要大偏差理论和随机编码技术。
 -/
 
-import FormalMath.Mathlib.Probability.Independence
-import FormalMath.Mathlib.Probability.Distributions.Gaussian
-import FormalMath.Mathlib.MeasureTheory.Function.ConvergenceInMeasure
-import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
+import FormalMath.MathlibStub.Probability.Independence
+import FormalMath.MathlibStub.Probability.Distributions.Gaussian
+import FormalMath.MathlibStub.MeasureTheory.Function.ConvergenceInMeasure
+import FormalMath.MathlibStub.Analysis.Calculus.FDeriv.Basic
 
 namespace InformationTheory
 

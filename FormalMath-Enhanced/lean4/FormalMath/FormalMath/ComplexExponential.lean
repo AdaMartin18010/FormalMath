@@ -32,10 +32,12 @@ exp(z) = e^z = e^{x+iy} = e^x (cos y + i sin y)
 本文件建立复指数函数的核心性质。
 -/
 
-import FormalMath.Mathlib.Data.Complex.Exponential
-import FormalMath.Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import FormalMath.MathlibStub.Data.Complex.Exponential
+import FormalMath.MathlibStub.Analysis.SpecialFunctions.ExpDeriv
 import Mathlib.Data.Complex.Basic
 import Mathlib.Analysis.SpecialFunctions.Complex.Log
+import Mathlib.Analysis.Normed.Algebra.Exponential
+import Mathlib.Analysis.Complex.Trigonometric
 
 namespace ComplexExponential
 
@@ -59,7 +61,7 @@ exp(z) = Σ_{n=0}^∞ z^n / n!
 -/
 
 /-- 复指数函数（使用Mathlib内置定义） -/
-def complexExp (z : ℂ) : ℂ := exp z
+noncomputable def complexExp (z : ℂ) : ℂ := exp z
 
 /-- 复指数函数的简写 -/
 notation "ℂexp" => complexExp
@@ -86,10 +88,10 @@ notation "ℂexp" => complexExp
 -/
 theorem euler_formula (θ : ℝ) : exp (I * θ) = Real.cos θ + I * Real.sin θ := by
   -- 这是Mathlib中已证明的基本定理
-  rw [Complex.exp_mul_I]
-  <;> simp [Complex.add_re, Complex.add_im, Complex.ofReal_re, Complex.ofReal_im,
-    Complex.I_re, Complex.I_im]
-  <;> ring
+  have h : I * (θ : ℂ) = θ * I := by ring
+  rw [h, exp_mul_I]
+  simp [cos_ofReal_re, cos_ofReal_im, sin_ofReal_re, sin_ofReal_im]
+  all_goals ring
 
 /-
 ## 欧拉公式的推论：e^{iπ} + 1 = 0
@@ -166,10 +168,10 @@ theorem complex_exp_periodic (z : ℂ) : exp (z + 2 * π * I) = exp z := by
     have h1 : 2 * π * I = I * (2 * Real.pi) := by ring
     rw [h1]
     -- 利用欧拉公式
-    rw [euler_formula (2 * Real.pi)]
+    have h2 : (2 * Real.pi : ℂ) * I = I * (2 * Real.pi) := by ring
+    rw [show I * (2 * Real.pi) = (2 * Real.pi : ℂ) * I by ring, exp_mul_I]
     -- cos(2π) = 1, sin(2π) = 0
     simp [Real.cos_two_pi, Real.sin_two_pi]
-    <;> ring
   rw [h_exp_2pi]
   simp
 
@@ -193,9 +195,7 @@ theorem complex_exp_periodic (z : ℂ) : exp (z + 2 * π * I) = exp z := by
 -/
 theorem complex_exp_abs (z : ℂ) : ‖exp z‖ = Real.exp z.re := by
   -- 使用Mathlib中的定理
-  rw [Complex.abs_exp]
-  -- 化简
-  simp
+  rw [norm_exp]
 
 /-
 ## 复指数函数非零
@@ -251,9 +251,9 @@ theorem complex_exp_I_abs (θ : ℝ) : ‖exp (I * θ)‖ = 1 := by
 - exp 满足初值问题：f' = f, f(0) = 1
 - 这个性质唯一确定了指数函数
 -/
-theorem complex_exp_deriv (z : ℂ) : deriv exp z = exp z := by
+theorem complex_exp_deriv (z : ℂ) : deriv Complex.exp z = Complex.exp z := by
   -- 这是Mathlib中的标准结果
-  rw [Complex.deriv_exp]
+  rw [show deriv Complex.exp = Complex.exp by exact deriv_exp]
 
 /-
 ## 单位圆上的参数化
@@ -267,14 +267,16 @@ theorem complex_exp_deriv (z : ℂ) : deriv exp z = exp z := by
 
 **注意**：这个映射不是单射，因为 e^{iθ} = e^{i(θ+2π)}。
 -/
-theorem unit_circle_parametrization :
-    Function.Surjective (fun θ : ℝ ↦ exp (I * θ)) := by
+theorem unit_circle_parametrization {z : ℂ} (hz : ‖z‖ = 1) :
+    ∃ θ : ℝ, exp (I * θ) = z := by
   -- 证明满射性：对于任意单位圆上的点，存在对应的θ
-  intro z
-  -- 假设 z 在单位圆上，即 |z| = 1
-  intro hz
-  -- 这里需要完整的证明
-  sorry -- 需要使用辐角的存在性定理
+  use z.arg
+  have h : exp (z.arg * I) = z := by
+    have h1 := norm_mul_exp_arg_mul_I z
+    rw [hz, one_mul] at h1
+    exact h1
+  rw [show I * (z.arg : ℂ) = z.arg * I by ring]
+  exact h
 
 /-
 ## 复指数的共轭
@@ -289,9 +291,9 @@ theorem unit_circle_parametrization :
 设 z = x + iy，则 conj(z) = x - iy
 exp(conj(z)) = e^x(cos(-y) + i sin(-y)) = e^x(cos y - i sin y) = conj(exp(z))
 -/
-theorem complex_exp_conj (z : ℂ) : conj (exp z) = exp (conj z) := by
+theorem complex_exp_conj (z : ℂ) : starRingEnd _ (exp z) = exp (starRingEnd _ z) := by
   -- 利用欧拉公式的结构
-  sorry -- 需要利用复指数的级数展开或定义
+  rw [exp_conj]
 
 /-
 ## 复指数的乘法逆元
@@ -312,7 +314,7 @@ theorem complex_exp_inv (z : ℂ) : (exp z)⁻¹ = exp (-z) := by
     rw [← complex_exp_add]
     simp
   -- 因此 exp(-z) 是 exp(z) 的逆元
-  sorry -- 需要利用域的性质
+  exact inv_eq_of_mul_eq_one_right h
 
 /-
 ## 复指数的幂级数表示
@@ -328,6 +330,6 @@ theorem complex_exp_inv (z : ℂ) : (exp z)⁻¹ = exp (-z) := by
 -/
 theorem complex_exp_series (z : ℂ) : exp z = ∑' n : ℕ, z ^ n / n.factorial := by
   -- 这是Mathlib中复指数的定义
-  rw [Complex.exp_eq_tsum_div]
+  rw [Complex.exp_eq_exp_ℂ, NormedSpace.exp_eq_tsum_div]
 
 end ComplexExponential

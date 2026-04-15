@@ -45,9 +45,9 @@ Faltings的证明策略：
 - nLab: https://ncatlab.org/nlab/show/Mordell+conjecture
 -/
 
-import FormalMath.Mathlib.AlgebraicGeometry.Geometry.Manifold.ChartedSpace
-import FormalMath.Mathlib.RingTheory.Noetherian
-import FormalMath.Mathlib.FieldTheory.Galois
+import FormalMath.MathlibStub.AlgebraicGeometry.Geometry.Manifold.ChartedSpace
+import FormalMath.MathlibStub.RingTheory.Noetherian
+import FormalMath.MathlibStub.FieldTheory.Galois
 import FormalMath.ArithmeticGeometry
 import FormalMath.MordellWeil
 

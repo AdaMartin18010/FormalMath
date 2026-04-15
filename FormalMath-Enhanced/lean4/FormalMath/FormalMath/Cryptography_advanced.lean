@@ -34,10 +34,10 @@
 完整证明需要可计算性理论和代数数论工具。
 -/
 
-import FormalMath.Mathlib.Algebra.GCDMonoid.Basic
-import FormalMath.Mathlib.NumberTheory.Basic
-import FormalMath.Mathlib.Probability.Independence
-import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
+import FormalMath.MathlibStub.Algebra.GCDMonoid.Basic
+import FormalMath.MathlibStub.NumberTheory.Basic
+import FormalMath.MathlibStub.Probability.Independence
+import FormalMath.MathlibStub.Analysis.Calculus.FDeriv.Basic
 
 namespace CryptographyAdvanced
 

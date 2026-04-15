@@ -20,9 +20,9 @@
 - Serre, J.P. "Linear Representations of Finite Groups"
 -/
 
-import FormalMath.Mathlib.RepresentationTheory.Character
-import FormalMath.Mathlib.GroupTheory.ClassEquation
-import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
+import FormalMath.MathlibStub.RepresentationTheory.Character
+import FormalMath.MathlibStub.GroupTheory.ClassEquation
+import FormalMath.MathlibStub.MeasureTheory.Integral.Bochner
 
 namespace CharacterTheory
 

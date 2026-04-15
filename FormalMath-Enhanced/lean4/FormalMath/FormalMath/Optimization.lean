@@ -32,10 +32,10 @@
 21世纪：大规模优化在机器学习中广泛应用
 -/ 
 
-import FormalMath.Mathlib.Analysis.Calculus.Gradient.Basic
-import FormalMath.Mathlib.Analysis.Calculus.FDeriv.Basic
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.Analysis.Convex.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.Gradient.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.FDeriv.Basic
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.PiL2
+import FormalMath.MathlibStub.Analysis.Convex.Basic
 
 namespace Optimization
 

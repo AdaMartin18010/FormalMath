@@ -20,10 +20,10 @@ Gamma函数是阶乘函数在实数和复数域上的推广：
 本文件建立Gamma函数的核心性质，展示特殊函数的分析方法。
 -/
 
-import FormalMath.Mathlib.Analysis.SpecialFunctions.Gamma.Basic
-import FormalMath.Mathlib.Analysis.SpecialFunctions.Gamma.BohrMollerup
-import FormalMath.Mathlib.Analysis.SpecialFunctions.Pow.Continuity
-import FormalMath.Mathlib.MeasureTheory.Integral.ImproperIntegral
+import FormalMath.MathlibStub.Analysis.SpecialFunctions.Gamma.Basic
+import FormalMath.MathlibStub.Analysis.SpecialFunctions.Gamma.BohrMollerup
+import FormalMath.MathlibStub.Analysis.SpecialFunctions.Pow.Continuity
+import FormalMath.MathlibStub.MeasureTheory.Integral.ImproperIntegral
 
 namespace GammaFunction
 

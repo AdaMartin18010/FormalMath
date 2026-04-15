@@ -343,11 +343,82 @@ theorem young_inequality_equality_iff {p q : ℝ} (hpq : ConjugateExponents p q)
     intro h_eq
     -- 利用指数函数的严格凸性
     -- 等号在 Jensen 不等式中成立当且仅当变量相等
-    sorry -- 需要严格凸性的精细分析
+    let u := a^p
+    let v := b^q
+    have hu_pos : 0 < u := by positivity
+    have hv_pos : 0 < v := by positivity
+    have h_exp_eq : Real.exp ((1 / p) * Real.log u + (1 / q) * Real.log v) =
+        (1 / p) * Real.exp (Real.log u) + (1 / q) * Real.exp (Real.log v) := by
+      have h1 : a * b = u ^ (1 / p) * v ^ (1 / q) := by
+        have h_u : u ^ (1 / p) = a := by
+          rw [show u = a^p by rfl]
+          rw [← Real.rpow_mul ha_pos]
+          field_simp
+        have h_v : v ^ (1 / q) = b := by
+          rw [show v = b^q by rfl]
+          rw [← Real.rpow_mul hb_pos]
+          field_simp
+        rw [h_u, h_v]
+        ring
+      have h2 : u ^ (1 / p) * v ^ (1 / q) = Real.exp ((1 / p) * Real.log u + (1 / q) * Real.log v) := by
+        rw [Real.exp_add, Real.exp_mul, Real.exp_mul]
+        rw [Real.exp_log (by positivity), Real.exp_log (by positivity)]
+      have h3 : (1 / p) * Real.exp (Real.log u) + (1 / q) * Real.exp (Real.log v) =
+          u ^ (1 / p) * v ^ (1 / q) := by
+        nlinarith [h_eq, h1, h2]
+      nlinarith [h3]
+    by_contra h_ne
+    have h_log_ne : Real.log u ≠ Real.log v := by
+      intro h
+      have : u = v := by
+        apply Real.log_injOn_pos (Set.mem_Ioi.2 hu_pos) (Set.mem_Ioi.2 hv_pos) h
+      simp [u, v] at this
+      have : a^p = b^q := by linarith
+      contradiction
+    have h_strict : Real.exp ((1 / p) * Real.log u + (1 / q) * Real.log v) <
+        (1 / p) * Real.exp (Real.log u) + (1 / q) * Real.exp (Real.log v) := by
+      apply Real.strictConvexOn_exp.2
+      · simp
+      · simp
+      · exact h_log_ne
+      · positivity
+      · positivity
+      · linarith
+    linarith [h_exp_eq, h_strict]
   · -- a^p = b^q ⇒ 等号成立
     intro h_eq
     -- 直接代入验证
-    sorry -- 代数计算
+    have h1 : b = a ^ (p / q) := by
+      have : b ^ q = a ^ p := by
+        nlinarith [h_eq]
+      have : b = (b ^ q) ^ (1 / q : ℝ) := by
+        rw [← Real.rpow_mul hb_pos]
+        field_simp
+      rw [this, show b ^ q = a ^ p by linarith]
+      rw [← Real.rpow_mul ha_pos]
+      have : p * (1 / q : ℝ) = p / q := by field_simp; ring
+      rw [this]
+    have h2 : a * b = a ^ p := by
+      rw [h1]
+      have : a * a ^ (p / q : ℝ) = a ^ (1 + p / q : ℝ) := by
+        rw [← Real.rpow_add ha_pos]
+        congr
+        ring
+      rw [this]
+      have : (1 + p / q : ℝ) = p := by
+        field_simp
+        nlinarith [hpq_eq]
+      rw [this]
+    have h3 : a ^ p / p + b ^ q / q = a ^ p := by
+      have : b ^ q = a ^ p := by nlinarith [h_eq]
+      have : a ^ p / p + b ^ q / q = a ^ p * (1 / p + 1 / q) := by
+        rw [show b ^ q = a ^ p by linarith]
+        ring
+      rw [this]
+      have : (1 / p + 1 / q : ℝ) = 1 := by linarith [hpq_eq]
+      rw [this]
+      ring
+    nlinarith [h2, h3]
 
 /-
 ## 广义杨氏不等式
@@ -368,6 +439,210 @@ theorem young_inequality_general {n : ℕ} {p : Fin n → ℝ} {a : Fin n → �
   -- 对 n 进行归纳
   -- 基础情形 n = 1：trivial
   -- 归纳步骤：利用二元杨氏不等式
-  sorry -- 归纳证明
+  rcases n with _ | _ | m
+  · -- n = 0: 空和为 0，与 hp_sum : 0 = 1 矛盾
+    simp at hp_sum
+  · -- n = 1: p 0 = 1，与 hp 0 : p 0 > 1 矛盾
+    simp [Finset.sum_singleton] at hp_sum
+    have hp0 : p 0 = 1 := by
+      field_simp at hp_sum
+      linarith
+    linarith [hp 0, hp0]
+  · -- n ≥ 2
+    induction m with
+    | zero =>
+      -- n = 2: 二元杨氏不等式
+      simp [Fin.prod_univ_two, Fin.sum_univ_two]
+      let p0 := p 0
+      let p1 := p 1
+      let a0 := a 0
+      let a1 := a 1
+      have hpq : ConjugateExponents p0 p1 := by
+        constructor
+        · exact hp 0
+        constructor
+        · exact hp 1
+        · simpa using hp_sum
+      exact young_inequality hpq (ha 0) (ha 1)
+    | succ m ih =>
+      -- n = m + 3
+      let q : ℝ := 1 / (∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)))
+      have hq_pos : q > 0 := by
+        apply one_div_pos.2
+        apply Finset.sum_pos
+        · intro i _
+          apply one_div_pos.2; linarith [hp (Fin.castSucc i)]
+        · use ⟨0, by simp⟩
+          simp
+      have h_split : ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) + 1 / (p (Fin.last (m + 2)) : ℝ) = 1 := by
+        have h' : ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) + 1 / (p (Fin.last (m + 2)) : ℝ) = ∑ i : Fin (m + 3), (1 / (p i : ℝ)) := by
+          simp [Fin.sum_univ_castSucc]
+        rw [h', hp_sum]
+      have hq1 : q > 1 := by
+        have h1q_pos : 0 < 1 / q := by
+          rw [show 1 / q = ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) by
+            rw [show q = 1 / ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) by rfl]
+            field_simp]
+          apply Finset.sum_pos
+          · intro i _
+            apply one_div_pos.2; linarith [hp (Fin.castSucc i)]
+          · use ⟨0, by simp⟩
+            simp
+        have h1q_lt_1 : 1 / q < 1 := by
+          rw [show 1 / q = ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) by
+            rw [show q = 1 / ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) by rfl]
+            field_simp]
+          have h_sum_lt_1 : ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) < 1 := by
+            have h_eq : ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) = 1 - 1 / (p (Fin.last (m + 2)) : ℝ) := by
+              linarith [h_split]
+            rw [h_eq]
+            have hp_last_pos : 0 < 1 / (p (Fin.last (m + 2)) : ℝ) := by apply one_div_pos.2; linarith [hp (Fin.last (m + 2))]
+            linarith [hp_last_pos]
+          exact h_sum_lt_1
+        have : q > 1 := by
+          have hq_eq : q = 1 / (∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ))) := by rfl
+          rw [hq_eq]
+          have h_S_pos : 0 < ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) := by
+            have h : 1 / q = ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) := by
+              rw [hq_eq]
+              field_simp
+            linarith [h1q_pos, h]
+          nlinarith [h_sum_lt_1, h_S_pos]
+        exact this
+      let p' : Fin (m + 2) → ℝ := fun i => p (Fin.castSucc i) / q
+      let a' : Fin (m + 2) → ℝ := fun i => (a (Fin.castSucc i)) ^ q
+      have hp'_gt_1 : ∀ i : Fin (m + 2), p' i > 1 := by
+        intro i
+        have h1q : 1 / q = ∑ j : Fin (m + 2), (1 / (p (Fin.castSucc j) : ℝ)) := by simp [q]
+        have h1q_gt : 1 / q > 1 / (p (Fin.castSucc i)) := by
+          rw [h1q]
+          have : ∑ j : Fin (m + 2), (1 / (p (Fin.castSucc j) : ℝ)) =
+            1 / (p (Fin.castSucc i)) + ∑ j ∈ Finset.univ \ {i}, (1 / (p (Fin.castSucc j) : ℝ)) := by
+            have h1 : ∑ j : Fin (m + 2), (1 / (p (Fin.castSucc j) : ℝ)) =
+              ∑ j ∈ Finset.univ, (1 / (p (Fin.castSucc j) : ℝ)) := by simp
+            have h2 : Finset.univ = {i} ∪ (Finset.univ \ {i}) := by simp
+            rw [h1, h2]
+            rw [Finset.sum_union (by simp)]
+            simp
+          rw [this]
+          have : ∑ j ∈ Finset.univ \ {i}, (1 / (p (Fin.castSucc j) : ℝ)) > 0 := by
+            apply Finset.sum_pos
+            · intro j hj
+              apply one_div_pos.2; linarith [hp (Fin.castSucc j)]
+            · have : (Finset.univ : Finset (Fin (m + 2))).card = m + 2 := by simp
+              have : m + 2 ≥ 2 := by linarith
+              have : ∃ j, j ≠ i := by
+                by_cases hi : i = 0
+                · use 1
+                  intro h
+                  have h10 : (1 : Fin (m + 2)) = (0 : Fin (m + 2)) := Eq.trans h hi
+                  have : m + 2 = 1 := by simp at h10
+                  nlinarith
+                · use 0
+                  intro h
+                  apply hi
+                  exact h.symm
+              rcases this with ⟨j, hj⟩
+              use j
+              simp [hj]
+          linarith
+        have h2 : p (Fin.castSucc i) > 0 := by linarith [hp (Fin.castSucc i)]
+        have h1q_gt' : q < p (Fin.castSucc i) := by
+          rw [← one_div_lt_one_div h2 hq_pos]
+          linarith [h1q_gt]
+        simp [p']
+        apply (lt_div_iff₀ hq_pos).mpr
+        nlinarith [h1q_gt']
+      have hp'_sum : ∑ i : Fin (m + 2), (1 / (p' i : ℝ)) = 1 := by
+        simp [p']
+        have h1 : ∑ i : Fin (m + 2), (q / (p (Fin.castSucc i) : ℝ)) =
+          q * ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) := by
+          rw [Finset.mul_sum]
+          congr
+          funext i
+          field_simp
+        rw [h1]
+        have h2 : q * ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) = 1 := by
+          have h3 : ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) ≠ 0 := by
+            apply ne_of_gt
+            apply Finset.sum_pos
+            · intro i _
+              apply one_div_pos.2; linarith [hp (Fin.castSucc i)]
+            · use ⟨0, by simp⟩
+              simp
+          rw [show q = 1 / ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) by rfl]
+          field_simp
+        exact h2
+      have ha'_nonneg : ∀ i : Fin (m + 2), 0 ≤ a' i := by
+        intro i
+        simp [a']
+        apply Real.rpow_nonneg
+        exact ha (Fin.castSucc i)
+      have h_ind : ∏ i : Fin (m + 2), a' i ≤ ∑ i : Fin (m + 2), (a' i)^(p' i) / (p' i) := by
+        apply ih (p := p') (a := a') hp'_gt_1 hp'_sum ha'_nonneg
+      have h_prod_split : ∏ i : Fin (m + 3), a i =
+          (∏ i : Fin (m + 2), a (Fin.castSucc i)) * a (Fin.last (m + 2)) := by
+        rw [Fin.prod_univ_castSucc]
+      have h_sum_split2 : ∑ i : Fin (m + 3), (a i)^(p i) / (p i) =
+          (∑ i : Fin (m + 2), (a (Fin.castSucc i))^(p (Fin.castSucc i)) / (p (Fin.castSucc i))) +
+          (a (Fin.last (m + 2)))^(p (Fin.last (m + 2))) / (p (Fin.last (m + 2))) := by
+        simp [Fin.sum_univ_castSucc]
+      have h_ind_left : ∏ i : Fin (m + 2), a' i = (∏ i : Fin (m + 2), a (Fin.castSucc i)) ^ q := by
+        simp [a']
+        have : ∀ (s : Finset (Fin (m + 2))),
+            ∏ i ∈ s, (a i.castSucc) ^ q = (∏ i ∈ s, a i.castSucc) ^ q := by
+          intro s
+          induction s using Finset.induction_on with
+          | empty => simp
+          | @insert i s his ih =>
+            have h_nonneg1 : 0 ≤ a i.castSucc := ha i.castSucc
+            have h_nonneg2 : 0 ≤ ∏ j ∈ s, a j.castSucc := by
+              apply Finset.prod_nonneg
+              intro j _
+              exact ha j.castSucc
+            rw [Finset.prod_insert his, Finset.prod_insert his, ih, ← Real.mul_rpow h_nonneg1 h_nonneg2]
+        exact this Finset.univ
+      have h_ind_right : ∑ i : Fin (m + 2), (a' i)^(p' i) / (p' i) =
+          q * (∑ i : Fin (m + 2), (a (Fin.castSucc i))^(p (Fin.castSucc i)) / (p (Fin.castSucc i))) := by
+        simp [a', p']
+        have : ∑ i : Fin (m + 2), ((a (Fin.castSucc i) : ℝ) ^ q) ^ (p (Fin.castSucc i) / q) / (p (Fin.castSucc i) / q) =
+          ∑ i : Fin (m + 2), (a (Fin.castSucc i))^(p (Fin.castSucc i)) * q / (p (Fin.castSucc i)) := by
+          apply Finset.sum_congr rfl
+          intro i _
+          rw [show ((a (Fin.castSucc i) : ℝ) ^ q) ^ (p (Fin.castSucc i) / q) = (a (Fin.castSucc i))^(p (Fin.castSucc i)) by
+            rw [← Real.rpow_mul]
+            · field_simp
+            · exact ha (Fin.castSucc i)]
+          field_simp
+          all_goals ring
+        rw [this]
+        rw [Finset.mul_sum]
+        congr
+        funext i
+        ring
+      rw [h_prod_split]
+      have h_young : (∏ i : Fin (m + 2), a i.castSucc) * a (Fin.last (m + 2)) ≤
+          (∏ i : Fin (m + 2), a i.castSucc) ^ q / q + a (Fin.last (m + 2)) ^ p (Fin.last (m + 2)) / p (Fin.last (m + 2)) := by
+        have h_conj : 1 / q + 1 / (p (Fin.last (m + 2)) : ℝ) = 1 := by
+          have h1 : 1 / q = ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) := by
+            rw [show q = 1 / ∑ i : Fin (m + 2), (1 / (p (Fin.castSucc i) : ℝ)) by rfl]
+            field_simp
+          rw [h1]
+          linarith [h_split]
+        apply young_inequality (⟨hq1, hp (Fin.last (m + 2)), h_conj⟩)
+        · apply Finset.prod_nonneg
+          intro i _
+          exact ha i.castSucc
+        · exact ha (Fin.last (m + 2))
+      have h_ind' : (∏ i : Fin (m + 2), a (Fin.castSucc i)) ^ q / q ≤
+        ∑ i : Fin (m + 2), (a (Fin.castSucc i))^(p (Fin.castSucc i)) / (p (Fin.castSucc i)) := by
+        have : (∏ i : Fin (m + 2), a (Fin.castSucc i)) ^ q = ∏ i : Fin (m + 2), a' i := by
+          rw [h_ind_left]
+        rw [this]
+        have : ∏ i : Fin (m + 2), a' i ≤ q * (∑ i : Fin (m + 2), (a (Fin.castSucc i))^(p (Fin.castSucc i)) / (p (Fin.castSucc i))) := by
+          linarith [h_ind, h_ind_right]
+        apply (div_le_iff₀ hq_pos).mpr
+        linarith
+      nlinarith [h_young, h_ind', h_sum_split2]
 
 end YoungInequality

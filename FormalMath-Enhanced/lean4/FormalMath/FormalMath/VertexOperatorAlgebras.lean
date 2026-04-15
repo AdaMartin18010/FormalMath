@@ -27,9 +27,9 @@
 证明以详细框架+数学注释呈现。
 -/
 
-import FormalMath.Mathlib.Algebra.Lie.Basic
-import FormalMath.Mathlib.CategoryTheory.Monoidal.Category
-import FormalMath.Mathlib.RepresentationTheory.Basic
+import FormalMath.MathlibStub.Algebra.Lie.Basic
+import FormalMath.MathlibStub.CategoryTheory.Monoidal.Category
+import FormalMath.MathlibStub.RepresentationTheory.Basic
 
 namespace VertexOperatorAlgebras
 

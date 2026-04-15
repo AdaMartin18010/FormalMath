@@ -37,10 +37,10 @@
 实分析、泛函分析基础。本文件建立核心理论框架。
 -/
 
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.MeasureTheory.Function.LpSpace
-import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
-import FormalMath.Mathlib.Analysis.Fourier.FourierTransform
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.PiL2
+import FormalMath.MathlibStub.MeasureTheory.Function.LpSpace
+import FormalMath.MathlibStub.MeasureTheory.Integral.Bochner
+import FormalMath.MathlibStub.Analysis.Fourier.FourierTransform
 
 namespace HarmonicAnalysis
 

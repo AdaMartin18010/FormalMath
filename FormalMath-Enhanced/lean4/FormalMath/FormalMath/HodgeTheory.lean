@@ -31,9 +31,9 @@ Hodge理论由W.V.D. Hodge在1930年代创立，
 - Griffiths & Harris, "Principles of Algebraic Geometry"
 -/
 
-import FormalMath.Mathlib.Geometry.Manifold.DifferentialForm
-import FormalMath.Mathlib.Analysis.InnerProductSpace.PiL2
-import FormalMath.Mathlib.Analysis.Calculus.Laplace
+import FormalMath.MathlibStub.Geometry.Manifold.DifferentialForm
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.PiL2
+import FormalMath.MathlibStub.Analysis.Calculus.Laplace
 
 namespace HodgeTheory
 

@@ -30,9 +30,9 @@
 -/
 
 import FormalMath.SymplecticGeometry
-import FormalMath.Mathlib.Geometry.Manifold.Morse.Basic
-import FormalMath.Mathlib.Topology.Homotopy.Basic
-import FormalMath.Mathlib.CategoryTheory.Abelian.Basic
+import FormalMath.MathlibStub.Geometry.Manifold.Morse.Basic
+import FormalMath.MathlibStub.Topology.Homotopy.Basic
+import FormalMath.MathlibStub.CategoryTheory.Abelian.Basic
 
 namespace SymplecticGeometryAdvanced
 

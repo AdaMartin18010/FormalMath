@@ -26,10 +26,10 @@
 2. 对于复杂定理，提供详细的证明框架
 -/
 
-import FormalMath.Mathlib.RingTheory.Ideal.Basic
-import FormalMath.Mathlib.RingTheory.Localization.Basic
-import FormalMath.Mathlib.RingTheory.IntegralClosure.IntegralClosure
-import FormalMath.Mathlib.RingTheory.Noetherian
+import FormalMath.MathlibStub.RingTheory.Ideal.Basic
+import FormalMath.MathlibStub.RingTheory.Localization.Basic
+import FormalMath.MathlibStub.RingTheory.IntegralClosure.IntegralClosure
+import FormalMath.MathlibStub.RingTheory.Noetherian
 
 namespace CommutativeAlgebra
 

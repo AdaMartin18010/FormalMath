@@ -28,9 +28,9 @@
 -/
 
 import FormalMath.RepresentationTheory
-import FormalMath.Mathlib.AlgebraicTopology.SimplicialSet
-import FormalMath.Mathlib.Topology.Sheaves.Stalks
-import FormalMath.Mathlib.CategoryTheory.Limits.Shapes.Terminal
+import FormalMath.MathlibStub.AlgebraicTopology.SimplicialSet
+import FormalMath.MathlibStub.Topology.Sheaves.Stalks
+import FormalMath.MathlibStub.CategoryTheory.Limits.Shapes.Terminal
 
 namespace GeometricRepresentationTheory
 

@@ -42,8 +42,8 @@ P vs NP问题是理论计算机科学中最著名的开放问题，
 -/
 
 import FormalMath.ComputationalComplexity
-import FormalMath.Mathlib.Computability.TuringMachine
-import FormalMath.Mathlib.SetTheory.Cardinal.Basic
+import FormalMath.MathlibStub.Computability.TuringMachine
+import FormalMath.MathlibStub.SetTheory.Cardinal.Basic
 
 namespace PvsNP
 

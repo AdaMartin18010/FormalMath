@@ -25,11 +25,11 @@
 - Wikipedia: https://en.wikipedia.org/wiki/Principal_bundle
 -/
 
-import FormalMath.Mathlib.Geometry.Manifold.VectorBundle.Basic
-import FormalMath.Mathlib.DifferentialGeometry.Connection.Basic
-import FormalMath.Mathlib.Topology.Homotopy.Basic
-import FormalMath.Mathlib.Algebra.Lie.Basic
-import FormalMath.Mathlib.Algebra.Category.ModuleCat.Basic
+import FormalMath.MathlibStub.Geometry.Manifold.VectorBundle.Basic
+import FormalMath.MathlibStub.DifferentialGeometry.Connection.Basic
+import FormalMath.MathlibStub.Topology.Homotopy.Basic
+import FormalMath.MathlibStub.Algebra.Lie.Basic
+import FormalMath.MathlibStub.Algebra.Category.ModuleCat.Basic
 
 namespace PrincipalBundle
 

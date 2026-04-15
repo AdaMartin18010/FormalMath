@@ -37,10 +37,10 @@
 1970年代：鞅方法在金融学中的应用 (Merton, Black-Scholes)
 -/
 
-import FormalMath.Mathlib.Probability.Martingale.Basic
-import FormalMath.Mathlib.Analysis.Calculus.ContDiff.Basic
-import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
-import FormalMath.Mathlib.Probability.Distributions.Gaussian
+import FormalMath.MathlibStub.Probability.Martingale.Basic
+import FormalMath.MathlibStub.Analysis.Calculus.ContDiff.Basic
+import FormalMath.MathlibStub.MeasureTheory.Integral.Bochner
+import FormalMath.MathlibStub.Probability.Distributions.Gaussian
 
 namespace StochasticProcessesAdvanced
 

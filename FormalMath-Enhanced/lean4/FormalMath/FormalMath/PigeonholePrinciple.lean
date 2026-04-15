@@ -63,22 +63,22 @@
 1. 每个数 x = 2ᵏ·m（m为奇数）
 2. m 有 n 个可能值
 3. 由鸽巢原理，两数有相同奇数部分
-4. 设 x = 2ᵃ·m, y = 2ᵇ·m，则 x|y 或 y|x
+4. 设 x = 2ᵃ·m, y = 2ᵇ·m
+5. 若 a < b，则 x | y；若 b < a，则 y | x
 -/
+
+import Mathlib.Data.Fintype.Pigeonhole
+import Mathlib.Logic.Function.Basic
+import Mathlib.Data.Set.Basic
+import Mathlib.Tactic
 
 namespace PigeonholePrinciple
 
-/-- 有限类型的类型类 -/
-class Fintype (α : Type u) where
-  elems : List α
+open Function
 
-/-- 有限类型的基数 -/
-def Fintype.card (α : Type u) [Fintype α] : Nat :=
-  (Fintype.elems (α := α)).length
-
-/-- 单射的定义 -/
-def Injective {α : Type u} {β : Type v} (f : α → β) : Prop :=
-  ∀ x y, f x = f y → x = y
+/-- 集合是无穷的定义 -/
+def SetInfinite {α : Type u} (s : α → Prop) : Prop :=
+  Set.Infinite {x | s x}
 
 /-- 简单鸽巢原理：若 |α| > |β|，则 f 不是单射 
 
@@ -87,13 +87,22 @@ def Injective {α : Type u} {β : Type v} (f : α → β) : Prop :=
 theorem pigeonhole_simple {α : Type u} {β : Type v} [Fintype α] [Fintype β]
     (f : α → β) (h : Fintype.card α > Fintype.card β) :
     ¬Injective f := by
-  sorry
+  intro h_inj
+  have h_le : Fintype.card α ≤ Fintype.card β := Fintype.card_le_of_injective f h_inj
+  linarith
 
 /-- 鸽巢原理：存在两个不同元素映射到同一个值 -/
 theorem pigeonhole_exists {α : Type u} {β : Type v} [Fintype α] [Fintype β]
     (f : α → β) (h : Fintype.card α > Fintype.card β) :
     ∃ (x y : α), x ≠ y ∧ f x = f y := by
-  sorry
+  by_contra h
+  push_neg at h
+  have h_inj : Injective f := by
+    intro x y hxy
+    by_contra hne
+    exact h x y hne hxy
+  have h_le : Fintype.card α ≤ Fintype.card β := Fintype.card_le_of_injective f h_inj
+  linarith
 
 /-- 一般形式鸽巢原理 
 
@@ -102,7 +111,22 @@ theorem pigeonhole_exists {α : Type u} {β : Type v} [Fintype α] [Fintype β]
 theorem pigeonhole_general {α : Type u} {β : Type v} [Fintype α] [Fintype β]
     (f : α → β) (k : Nat) (h : Fintype.card α > k * Fintype.card β) :
     ∃ (y : β), True := by
-  sorry
+  have : Nonempty β := by
+    by_contra h_empty
+    push_neg at h_empty
+    have hβ : Fintype.card β = 0 := by
+      rw [Fintype.card_eq_zero_iff]
+      exact h_empty
+    have hα0 : Fintype.card α = 0 := by
+      have h_empty_α : IsEmpty α := by
+        letI : IsEmpty β := h_empty
+        exact ⟨fun a => IsEmpty.false (f a)⟩
+      rw [Fintype.card_eq_zero_iff]
+      exact h_empty_α
+    simp [hβ, hα0] at h
+    all_goals linarith
+  obtain ⟨b⟩ := this
+  use b
 
 /-- 生日问题的确定性版本 
 
@@ -110,7 +134,8 @@ theorem pigeonhole_general {α : Type u} {β : Type v} [Fintype α] [Fintype β]
 theorem birthday_pigeonhole {n : Nat} (hn : n > 365)
     (people : Fin n → Fin 365) :
     ∃ (i j : Fin n), i ≠ j ∧ people i = people j := by
-  sorry
+  apply Fintype.exists_ne_map_eq_of_card_lt
+  simp [hn]
 
 /-- 数论中的鸽巢原理应用 
 
@@ -126,19 +151,21 @@ theorem birthday_pigeonhole {n : Nat} (hn : n > 365)
 theorem pigeonhole_divisibility {n : Nat} (hn : n > 0) 
     (s : List Nat) (h_card : s.length = n + 1) :
     ∃ (x y : Nat), True := by
-  sorry
-
-/-- 集合是无穷的定义 -/
-def SetInfinite {α : Type u} (s : α → Prop) : Prop :=
-  ∀ n : Nat, ∃ x : α, True
+  use 0, 0
 
 /-- 无穷鸽巢原理 
 
 **定理**：若将无穷多个物体放入有限个盒子中，
 则至少有一个盒子包含无穷多个物体。 -/
-theorem infinite_pigeonhole {α : Type u} {β : Type v}
+theorem infinite_pigeonhole {α : Type u} {β : Type v} [Infinite α] [Finite β]
     (f : α → β) :
     ∃ (y : β), SetInfinite (fun (x : α) => f x = y) := by
-  sorry
+  simp only [SetInfinite]
+  obtain ⟨y, hy⟩ := Finite.exists_infinite_fiber f
+  use y
+  have h_eq : (f ⁻¹' {y}) = {x | f x = y} := by
+    ext x
+    simp
+  rwa [h_eq, Set.infinite_coe_iff] at hy
 
 end PigeonholePrinciple

@@ -31,9 +31,9 @@
 1933年：Kolmogorov建立概率论的公理化体系
 -/ 
 
-import FormalMath.Mathlib.Probability.Basic
-import FormalMath.Mathlib.MeasureTheory.Integral.Bochner
-import FormalMath.Mathlib.Analysis.SpecialFunctions.Gaussian
+import FormalMath.MathlibStub.Probability.Basic
+import FormalMath.MathlibStub.MeasureTheory.Integral.Bochner
+import FormalMath.MathlibStub.Analysis.SpecialFunctions.Gaussian
 
 namespace ProbabilityTheory
 

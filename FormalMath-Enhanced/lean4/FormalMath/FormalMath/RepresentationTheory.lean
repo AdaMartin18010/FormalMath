@@ -28,11 +28,11 @@ Burnside将其应用于群论，Schur发展了特征标理论。
 它在量子力学（Wigner）和数论（Langlands纲领）中有重要应用。
 -/
 
-import FormalMath.Mathlib.RepresentationTheory.Basic
-import FormalMath.Mathlib.RepresentationTheory.Character
-import FormalMath.Mathlib.RepresentationTheory.Maschke
-import FormalMath.Mathlib.RepresentationTheory.FdRep
-import FormalMath.Mathlib.RepresentationTheory.GroupCohomology.Basic
+import FormalMath.MathlibStub.RepresentationTheory.Basic
+import FormalMath.MathlibStub.RepresentationTheory.Character
+import FormalMath.MathlibStub.RepresentationTheory.Maschke
+import FormalMath.MathlibStub.RepresentationTheory.FdRep
+import FormalMath.MathlibStub.RepresentationTheory.GroupCohomology.Basic
 
 namespace RepresentationTheory
 

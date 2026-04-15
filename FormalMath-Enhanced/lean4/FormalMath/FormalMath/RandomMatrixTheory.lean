@@ -41,9 +41,9 @@
 2010年代：普适性理论的严格证明（Erdős-Yau等）
 -/
 
-import FormalMath.Mathlib.Analysis.InnerProductSpace.Basic
-import FormalMath.Mathlib.LinearAlgebra.Trace
-import FormalMath.Mathlib.Probability.Distributions.Gaussian
+import FormalMath.MathlibStub.Analysis.InnerProductSpace.Basic
+import FormalMath.MathlibStub.LinearAlgebra.Trace
+import FormalMath.MathlibStub.Probability.Distributions.Gaussian
 
 namespace RandomMatrixTheory
 

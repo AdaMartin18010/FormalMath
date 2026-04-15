@@ -22,11 +22,11 @@
 
 -/
 
-import FormalMath.Mathlib.Computability.TuringMachine
-import FormalMath.Mathlib.Computability.Halting
-import FormalMath.Mathlib.Logic.Basic
-import FormalMath.Mathlib.SetTheory.Cardinal.Basic
-import FormalMath.Mathlib.Data.Fintype.Basic
+import FormalMath.MathlibStub.Computability.TuringMachine
+import FormalMath.MathlibStub.Computability.Halting
+import FormalMath.MathlibStub.Logic.Basic
+import FormalMath.MathlibStub.SetTheory.Cardinal.Basic
+import FormalMath.MathlibStub.Data.Fintype.Basic
 
 namespace ComputationalComplexity
 

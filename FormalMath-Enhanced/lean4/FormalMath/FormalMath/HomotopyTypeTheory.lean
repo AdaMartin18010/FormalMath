@@ -32,8 +32,8 @@ Warren等数学家发展的数学基础理论。
 展示类型论与同伦论的深刻联系。
 -/
 
-import FormalMath.Mathlib.Logic.Basic
-import FormalMath.Mathlib.Data.Prod.Basic
+import FormalMath.MathlibStub.Logic.Basic
+import FormalMath.MathlibStub.Data.Prod.Basic
 
 namespace HomotopyTypeTheory
 

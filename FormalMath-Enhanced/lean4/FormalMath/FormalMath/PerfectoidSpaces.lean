@@ -40,7 +40,7 @@
 本文件提供核心数学结构的形式化框架。
 -/
 
-import FormalMath.Mathlib.NumberTheory.PAdic.Basic
+import FormalMath.MathlibStub.NumberTheory.PAdic.Basic
 import FormalMath.p-adicHodgeTheory
 
 namespace PerfectoidTheory

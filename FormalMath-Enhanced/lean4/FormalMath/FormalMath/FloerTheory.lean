@@ -30,8 +30,8 @@ Floer理论是Andreas Floer在1980年代发展的数学工具，
 
 import FormalMath.SymplecticGeometry
 import FormalMath.SymplecticGeometry_advanced
-import FormalMath.Mathlib.Analysis.Calculus.CriticalPoints
-import FormalMath.Mathlib.Topology.Homotopy.Equiv
+import FormalMath.MathlibStub.Analysis.Calculus.CriticalPoints
+import FormalMath.MathlibStub.Topology.Homotopy.Equiv
 
 namespace FloerTheory
 
