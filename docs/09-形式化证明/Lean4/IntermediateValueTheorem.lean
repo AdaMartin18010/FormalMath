@@ -137,17 +137,20 @@ theorem intermediate_value {f : ℝ → ℝ} {a b : ℝ} (hab : a ≤ b)
   · exact hfc
 
 -- 介值定理（标准形式）
-theorem intermediate_value_Icc {f : ℝ → ℝ} {a b : ℝ} (hab : a ≤ b)
+theorem intermediate_value_Icc' {f : ℝ → ℝ} {a b : ℝ} (hab : a ≤ b)
     (hf : ContinuousOn f (Icc a b)) {y : ℝ} (hy : y ∈ Icc (f a) (f b)) :
     ∃ (c : ℝ), c ∈ Icc a b ∧ f c = y := by
-  apply intermediate_value_Icc hf hy
+  rcases hy with ⟨h1, h2⟩
+  exact intermediate_value hab hf (Or.inl ⟨h1, h2⟩)
 
 -- 介值定理（开区间形式）
-theorem intermediate_value_Ioo {f : ℝ → ℝ} {a b : ℝ} (hab : a < b)
-    (hf : ContinuousOn f (Icc a b)) {y : ℝ} 
+theorem intermediate_value_Ioo' {f : ℝ → ℝ} {a b : ℝ} (hab : a < b)
+    (hf : ContinuousOn f (Icc a b)) {y : ℝ}
     (hy : y ∈ Ioo (min (f a) (f b)) (max (f a) (f b))) :
     ∃ (c : ℝ), c ∈ Ioo a b ∧ f c = y := by
-  apply intermediate_value_Ioo hf hy
+  -- 使用前面已证的 intermediate_value 得到 c ∈ [a,b]
+  -- 再说明 c 不可能等于 a 或 b（否则 f(c) 不会在开区间内）
+  sorry
 
 /-
 ## 二分法证明

@@ -6,7 +6,7 @@ msc_primary: 00A99
 
 **数学形式化与数学家理念体系的综合性教育知识库**
 
-[![完成度](https://img.shields.io/badge/完成度-100%25-brightgreen)](./00-FormalMath项目完成状态报告-2026年4月.md)
+[![项目状态](https://img.shields.io/badge/状态-质量基线重建中-orange)](./00-FormalMath项目完成状态报告-2026年4月.md)
 [![文档数](https://img.shields.io/badge/文档-6573%2B-blue)](./docs/00-项目统计总览.md)
 [![数学家](https://img.shields.io/badge/数学家-62位-orange)](./数学家理念体系/)
 [![版本](https://img.shields.io/badge/版本-v1.0--final-9cf)](./README.md)

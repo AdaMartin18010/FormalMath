@@ -114,10 +114,9 @@ axiom consistency_iff_satisfiability {L : Language} {T : L.Theory} :
 -/
 
 theorem nonstandard_models_exist {L : Language} {T : L.Theory}
-    (hT : T.IsSatisfiable)
-    (hinf : ∀ (n : ℕ), ∃ (φ : L.Sentence), T ⊨ᵇ φ ∧ ... ) :
+    (hT : T.IsSatisfiable) :
     True := by
-  /- 紧致性定理保证非标准模型存在 -/
+  /- 紧致性定理保证非标准模型存在（此为占位示例） -/
   trivial
 
 end CompletenessTheorem

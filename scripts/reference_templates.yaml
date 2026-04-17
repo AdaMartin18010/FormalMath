@@ -1,0 +1,174 @@
+# 常用数学教材与数据库 YAML 片段库
+# 说明：为兼容纯 Python 标准库环境，本文件采用 JSON-compatible 语法（亦为 YAML 1.2 子集）
+{
+  "snippets": {
+    "rudin_pma": {
+      "textbooks": [
+        {
+          "id": "rudin_pma",
+          "type": "textbook",
+          "title": "Principles of Mathematical Analysis",
+          "authors": ["Walter Rudin"],
+          "publisher": "McGraw-Hill",
+          "edition": "3rd",
+          "year": 1976,
+          "isbn": "978-0070542358",
+          "msc": "26-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
+    },
+    "hartshorne_ag": {
+      "textbooks": [
+        {
+          "id": "hartshorne_ag",
+          "type": "textbook",
+          "title": "Algebraic Geometry",
+          "authors": ["Robin Hartshorne"],
+          "publisher": "Springer",
+          "edition": "1st",
+          "year": 1977,
+          "isbn": "978-0387902449",
+          "msc": "14-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
+    },
+    "strang_la": {
+      "textbooks": [
+        {
+          "id": "strang_la",
+          "type": "textbook",
+          "title": "Introduction to Linear Algebra",
+          "authors": ["Gilbert Strang"],
+          "publisher": "Wellesley-Cambridge Press",
+          "edition": "5th",
+          "year": 2016,
+          "isbn": "978-0980232776",
+          "msc": "15-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
+    },
+    "munkres_top": {
+      "textbooks": [
+        {
+          "id": "munkres_top",
+          "type": "textbook",
+          "title": "Topology",
+          "authors": ["James R. Munkres"],
+          "publisher": "Pearson",
+          "edition": "2nd",
+          "year": 2000,
+          "isbn": "978-0131816299",
+          "msc": "54-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
+    },
+    "dummit_foote_aa": {
+      "textbooks": [
+        {
+          "id": "dummit_foote_aa",
+          "type": "textbook",
+          "title": "Abstract Algebra",
+          "authors": ["David S. Dummit", "Richard M. Foote"],
+          "publisher": "Wiley",
+          "edition": "3rd",
+          "year": 2003,
+          "isbn": "978-0471433347",
+          "msc": "13-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
+    },
+    "hardy_wright_nt": {
+      "textbooks": [
+        {
+          "id": "hardy_wright_nt",
+          "type": "textbook",
+          "title": "An Introduction to the Theory of Numbers",
+          "authors": ["G. H. Hardy", "E. M. Wright"],
+          "publisher": "Oxford University Press",
+          "edition": "6th",
+          "year": 2008,
+          "isbn": "978-0199219865",
+          "msc": "11-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
+    },
+    "nlab": {
+      "databases": [
+        {
+          "id": "nlab",
+          "type": "database",
+          "name": "nLab",
+          "entry_url": "https://ncatlab.org/nlab/show/{entry}",
+          "consulted_at": "2026-04-17"
+        }
+      ]
+    },
+    "stacks_project": {
+      "databases": [
+        {
+          "id": "stacks_project",
+          "type": "database",
+          "name": "Stacks Project",
+          "entry_url": "https://stacks.math.columbia.edu/tag/{tag}",
+          "consulted_at": "2026-04-17"
+        }
+      ]
+    },
+    "mathworld": {
+      "databases": [
+        {
+          "id": "mathworld",
+          "type": "database",
+          "name": "MathWorld",
+          "entry_url": "https://mathworld.wolfram.com/{entry}.html",
+          "consulted_at": "2026-04-17"
+        }
+      ]
+    },
+    "zbmath": {
+      "databases": [
+        {
+          "id": "zbmath",
+          "type": "database",
+          "name": "zbMATH Open",
+          "entry_url": "https://zbmath.org/?q=an:{zb_id}",
+          "consulted_at": "2026-04-17"
+        }
+      ]
+    },
+    "mathscinet": {
+      "databases": [
+        {
+          "id": "mathscinet",
+          "type": "database",
+          "name": "MathSciNet",
+          "entry_url": "https://mathscinet.ams.org/mathscinet-getitem?mr={mr_number}",
+          "consulted_at": "2026-04-17"
+        }
+      ]
+    },
+    "arxiv": {
+      "databases": [
+        {
+          "id": "arxiv",
+          "type": "database",
+          "name": "arXiv",
+          "entry_url": "https://arxiv.org/abs/{arxiv_id}",
+          "consulted_at": "2026-04-17"
+        }
+      ]
+    }
+  }
+}

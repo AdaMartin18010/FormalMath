@@ -6,6 +6,29 @@ msc_secondary:
 - 46A99
 - 00A99
 processed_at: '2026-04-05'
+references:
+  textbooks:
+    - id: rudin_pma
+      type: textbook
+      title: Principles of Mathematical Analysis
+      authors:
+      - Walter Rudin
+      publisher: McGraw-Hill
+      edition: 3rd
+      year: 1976
+      isbn: 978-0070542358
+      msc: 26-01
+      chapters:
+        - "Chapter 1: The Real and Complex Number Systems"
+        - "Chapter 2: Basic Topology"
+        - "Chapter 11: The Lebesgue Theory"
+      url: ~
+  databases:
+    - id: nlab
+      type: database
+      name: nLab
+      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+      consulted_at: 2026-04-17
 ---
 # Lebesgue积分 - 深度扩展版
 

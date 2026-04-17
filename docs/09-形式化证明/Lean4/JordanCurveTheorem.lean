@@ -198,4 +198,4 @@ Jordan曲线定理的形式化极其困难：
 
 -/ 
 
-print "Jordan Curve Theorem formalization framework complete"
+#eval IO.println "Jordan Curve Theorem formalization framework complete"
