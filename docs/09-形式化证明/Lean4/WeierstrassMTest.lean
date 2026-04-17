@@ -38,6 +38,9 @@ theorem weierstrass_m_test_continuous {α β : Type*} [TopologicalSpace α] [Nor
     (hf : ∀ n, ContinuousOn (f n) E) :
     ContinuousOn (fun x => ∑' n : ℕ, f n x) E := by
   /- 一致收敛的连续函数列的极限函数连续 -/
-  sorry
+  apply TendstoUniformlyOn.continuousOn
+  · exact weierstrass_m_test hM hsum
+  · filter_upwards with n
+    exact hf n
 
 end WeierstrassMTest

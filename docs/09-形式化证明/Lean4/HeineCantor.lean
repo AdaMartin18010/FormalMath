@@ -42,7 +42,13 @@ theorem heine_cantor_Icc {a b : ℝ} (hab : a ≤ b) {f : ℝ → ℝ}
       |x - y| < δ → |f x - f y| < ε := by
   /- 利用闭区间的紧致性和 Heine-Cantor 定理 -/
   have hcomp : IsCompact (Icc a b) := isCompact_Icc
-  /- 将连续延拓到整个空间后应用定理，或直接用局部紧致性 -/
-  sorry  -- 需要利用紧致集上的连续性推导一致连续性
+  have huc : UniformContinuousOn f (Icc a b) := by
+    apply hcomp.uniformContinuousOn_of_continuous hf
+  rw [Metric.uniformContinuousOn_iff] at huc
+  intro ε hε
+  rcases huc ε hε with ⟨δ, hδ, hδ'⟩
+  use δ, hδ
+  intro x y hx hy hdist
+  exact hδ' x hx y hy hdist
 
 end HeineCantorTheorem

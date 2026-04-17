@@ -17,21 +17,21 @@ processed_at: '2026-04-05'
 
 - [36. Langlands纲领最新进展 (2024-2025)](#36-langlands纲领最新进展-2024-2025)
   - [目录](#目录)
-  - 1. 概述
-  - 2. Fargues-Scholze几何化局部Langlands对应
+  - [一、概述](#一概述)
+  - [二、Fargues-Scholze几何化局部Langlands对应](#二fargues-scholze几何化局部langlands对应)
     - [2.1 核心理论框架](#21-核心理论框架)
     - [2.2 Fargues-Fontaine曲线](#22-fargues-fontaine曲线)
     - [2.3 2024-2025年最新进展](#23-2024-2025年最新进展)
-  - 3. 自守形式与Galois表示的新结果
+  - [三、自守形式与Galois表示的新结果](#三自守形式与galois表示的新结果)
     - [3.1 模性提升定理](#31-模性提升定理)
     - [3.2 潜在自守性](#32-潜在自守性)
-  - 4. p-adic Langlands对应进展
+  - [四、p-adic Langlands对应进展](#四p-adic-langlands对应进展)
     - [4.1 范畴化局部Langlands对应](#41-范畴化局部langlands对应)
     - [4.2 Zhu的tame情形证明](#42-zhu的tame情形证明)
-  - 5. 几何表示论的联系
+  - [五、几何表示论的联系](#五几何表示论的联系)
     - [5.1 Gaitsgory的几何Langlands证明](#51-gaitsgory的几何langlands证明)
     - [5.2 量子Langlands对偶性](#52-量子langlands对偶性)
-  - 6. 开放问题与未来方向
+  - [六、开放问题与未来方向](#六开放问题与未来方向)
     - [6.1 核心开放问题](#61-核心开放问题)
     - [6.2 2026-2030年展望](#62-2026-2030年展望)
     - [6.3 与其他领域的联系](#63-与其他领域的联系)
@@ -40,7 +40,7 @@ processed_at: '2026-04-05'
     - [几何Langlands](#几何langlands)
     - [p-adic Langlands与表示论](#p-adic-langlands与表示论)
     - [相关综述](#相关综述)
-  - 8. 参考文献
+  - [八、参考文献](#八参考文献)
     - [经典文献](#经典文献)
     - [2024-2025年最新文献](#2024-2025年最新文献)
     - [综述与教材](#综述与教材)

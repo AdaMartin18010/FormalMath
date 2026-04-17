@@ -18,12 +18,14 @@ msc_secondary: ['00-XX']
 ## 核心内容
 
 ### [01-基础概念](01-基础概念.md)
+
 - 双曲结构与稳定性
 - 稳定与不稳定流形
 - 结构稳定性与 $\Omega$-稳定性
 - 奇怪吸引子
 
 ### [02-核心定理](02-核心定理.md)
+
 - 稳定流形定理
 - Hartman-Grobman定理（光滑版本）
 - Smale马蹄定理
@@ -31,6 +33,7 @@ msc_secondary: ['00-XX']
 - Kupka-Smale定理
 
 ### [03-实战问题](03-实战问题.md)
+
 - 双曲不动点分析
 - Horseshoe构造
 - 吸引子维数估计
@@ -39,12 +42,14 @@ msc_secondary: ['00-XX']
 ## 关键主题
 
 ### 双曲理论 (Hyperbolicity)
+
 - 双曲不动点与周期轨道
 - Anosov系统
 - 公理A系统
 - 一致与非一致双曲
 
 ### 混沌理论 (Chaos Theory)
+
 - Smale马蹄
 - Lorentz吸引子
 - Hénon映射

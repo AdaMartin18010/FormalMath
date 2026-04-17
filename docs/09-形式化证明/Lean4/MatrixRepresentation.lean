@@ -40,7 +40,12 @@ theorem lin_to_matrix_exists (T : V →ₗ[𝕜] W) :
     apply Matrix.ext
     intro i j
     /- 验证唯一性 -/
-    sorry
+    have hM' := hM (B j)
+    simp [toMatrix, Matrix.mulVec, Finsupp.sum_single_index] at hM'
+    intro i' j'
+    have := congr_arg (fun f => f i') hM'
+    simp [Matrix.vecHead, Matrix.vecTail] at this
+    exact this
 
 -- 矩阵到线性变换的映射
 theorem matrix_to_lin_exists

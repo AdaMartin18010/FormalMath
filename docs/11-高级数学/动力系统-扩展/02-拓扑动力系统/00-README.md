@@ -18,12 +18,14 @@ msc_secondary: ['00-XX']
 ## 核心内容
 
 ### [01-基础概念](01-基础概念.md)
+
 - 离散与连续动力系统
 - 极小性与遍历性
 - 拓扑熵与复杂性
 - 符号空间与移位
 
 ### [02-核心定理](02-核心定理.md)
+
 - Birkhoff遍历定理
 - Poincaré回归定理
 - Krylov-Bogolioubov定理
@@ -31,6 +33,7 @@ msc_secondary: ['00-XX']
 - Ornstein同构定理
 
 ### [03-实战问题](03-实战问题.md)
+
 - 符号动力学分析
 - 熵的计算
 - 唯一遍历性证明
@@ -39,12 +42,14 @@ msc_secondary: ['00-XX']
 ## 关键主题
 
 ### 符号动力学 (Symbolic Dynamics)
+
 - 移位空间 $\Sigma_n^+$
 - 有限型子移位 (SFT)
 - Sofic移位
 - 编码应用
 
 ### 遍历理论 (Ergodic Theory)
+
 - 保测变换
 - 遍历性、混合性、弱混合
 - 熵理论 (Kolmogorov-Sinai熵)
