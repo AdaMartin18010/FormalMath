@@ -46,7 +46,7 @@ SHELL_DIRECTORIES = [
 SHELL_THRESHOLD = 200
 
 # 默认忽略的目录（与 gitignore 类似）
-IGNORED_DIRS = {".git", "node_modules", "__pycache__", ".pytest_cache", "dist", "build", "00-归档"}
+IGNORED_DIRS = {".git", "node_modules", "__pycache__", ".pytest_cache", "dist", "build", "00-归档", "_deprecated_empty"}
 
 
 def is_ignored(path: Path) -> bool:
