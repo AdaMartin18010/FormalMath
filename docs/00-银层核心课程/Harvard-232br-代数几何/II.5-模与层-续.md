@@ -59,6 +59,9 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+target_courses: [FormalMath银层核心课程, 代数几何]
+status: completed
+created_at: 2026-04-18
 ---
 
 # Harvard 232br - Hartshorne Chapter II §5 习题解答（续）

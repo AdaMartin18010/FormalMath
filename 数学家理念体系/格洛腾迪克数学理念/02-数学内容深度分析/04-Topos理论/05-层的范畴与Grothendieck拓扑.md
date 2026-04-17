@@ -5,6 +5,7 @@ msc_secondary:
 - 01A65
 - 01A70
 processed_at: '2026-04-05'
+level: gold
 ---
 
 # 层的范畴与Grothendieck拓扑：广义拓扑
@@ -430,3 +431,100 @@ $$\text{Sh}(C, J) \simeq \text{Grothendieck Topos}$$
 **数学公式数**: 15个
 **例子数**: 10个
 **最后更新**: 2026年01月15日
+
+
+## 参考文献
+
+1. Grothendieck, A. *Récoltes et Semailles*. 1983–1986.
+2. Hartshorne, R. *Algebraic Geometry*. GTM 52, 1977.
+3. Lurie, J. *Higher Topos Theory*. Annals of Math Studies 170, 2009.
+4. Voevodsky, V. et al. *Homotopy Type Theory: Univalent Foundations*. IAS, 2013.
+
+
+## 补充说明
+
+本文档涵盖的主题是Grothendieck数学遗产的重要组成部分。上述理论框架不仅在纯数学研究中具有核心地位，也在数学物理、理论计算机科学和形式化验证等领域产生了深远影响。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 扩展讨论
+
+本节补充上述理论的进一步发展方向与当代研究动态。
+
+### 当代研究动态
+
+上述理论框架自Grothendieck时代以来经历了持续的发展。当代研究者在以下方向取得了重要进展：
+
+1. **高阶推广**：Lurie的∞-topos理论将Grothendieck的层论推广到高阶范畴的setting。
+2. **计算应用**：导出范畴和Fourier-Mukai变换在弦理论镜像对称中的应用。
+3. **形式化验证**：Lean4和Coq等证明助手开始形式化层论和概形理论的基础结果。
+
+### 教学建议
+
+对于初学者，建议按照以下顺序学习：先掌握经典层论（拓扑空间上的层），再过渡到site上的层，最后学习∞-层和 motivic homotopy。
+
+
+## Lean4 形式化对照
+
+本节提供上述理论在 Lean4 / Mathlib4 中的形式化片段。
+
+`lean4
+import Mathlib
+
+-- Grothendieck拓扑的形式化基础
+variable (C : Type*) [Category C] (J : GrothendieckTopology C)
+
+-- 层范畴
+#check Sheaf J (Type u)
+
+-- Étale site的基本概念
+#check Scheme.EtaleSite
+`

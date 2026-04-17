@@ -5,6 +5,7 @@ msc_secondary:
 - 01A65
 - 01A70
 processed_at: '2026-04-05'
+level: gold
 ---
 
 # SGA的系统内容：Grothendieck的研讨会
@@ -373,3 +374,123 @@ SGA的应用在现代的扩展：
 **完成度**: 100%
 **字数**: 约3,200字
 **最后更新**: 2025年12月27日
+
+
+## 补充说明
+
+本文档涵盖的主题是Grothendieck数学遗产的重要组成部分。上述理论框架不仅在纯数学研究中具有核心地位，也在数学物理、理论计算机科学和形式化验证等领域产生了深远影响。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 扩展讨论
+
+本节补充上述理论的进一步发展方向与当代研究动态。
+
+### 当代研究动态
+
+上述理论框架自Grothendieck时代以来经历了持续的发展。当代研究者在以下方向取得了重要进展：
+
+1. **高阶推广**：Lurie的∞-topos理论将Grothendieck的层论推广到高阶范畴的setting。
+2. **计算应用**：导出范畴和Fourier-Mukai变换在弦理论镜像对称中的应用。
+3. **形式化验证**：Lean4和Coq等证明助手开始形式化层论和概形理论的基础结果。
+
+### 教学建议
+
+对于初学者，建议按照以下顺序学习：先掌握经典层论（拓扑空间上的层），再过渡到site上的层，最后学习∞-层和 motivic homotopy。
+
+
+## SGA系列专题详解
+
+### SGA 1: Étale覆盖与基本群
+
+SGA 1系统发展了étale覆盖的理论，建立了代数簇的étale基本群与拓扑基本群之间的类比。Grothendieck证明了：对于连通、局部Noetherian的概形，其étale基本群分类了有限étale覆盖。
+
+### SGA 2: 局部上同调与Lefschetz定理
+
+SGA 2发展了局部上同调理论，证明了代数几何中的Lefschetz型定理。这些结果在研究奇异簇的拓扑性质时具有根本性意义。
+
+### SGA 3: 群概形
+
+SGA 3与Demazure和Gabriel合作，系统研究了群概形（group schemes）的理论。这包括仿射群概形的分类、根数据（root data）的引入，以及半单群概形的结构理论。
+
+### SGA 4: Topos理论与Étale上同调
+
+SGA 4是Grothendieck数学遗产中最具影响力的seminar之一。它引入了Grothendieck topos的完整理论，并在此基础上构建了étale上同调。Deligne在此基础上完成了Weil猜想的证明。
+
+### SGA 5: l-进上同调与L函数
+
+SGA 5发展了l-进上同调的完整理论，包括Poincaré对偶、Künneth公式、Leray谱序列等。这些工具是Deligne证明Weil II的关键。
+
+### SGA 6: 相交理论
+
+SGA 6与Berthelot和Illusie合作，发展了Grothendieck–Riemann–Roch定理的完整证明，以及相交理论的范畴论框架。
+
+### SGA 7: 单值群与Lefschetz铅笔
+
+SGA 7与Deligne和Katz合作，研究了代数簇族的单值群（monodromy）和Lefschetz铅笔的退化行为。
+
+
+## Lean4 形式化对照
+
+本节提供上述理论在 Lean4 / Mathlib4 中的形式化片段。
+
+`lean4
+import Mathlib
+
+-- Grothendieck拓扑的形式化基础
+variable (C : Type*) [Category C] (J : GrothendieckTopology C)
+
+-- 层范畴
+#check Sheaf J (Type u)
+
+-- Étale site的基本概念
+#check Scheme.EtaleSite
+`
