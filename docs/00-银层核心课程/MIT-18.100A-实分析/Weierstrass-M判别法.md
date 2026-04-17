@@ -1,4 +1,6 @@
 ---
+course: MIT 18.100A 实分析
+
 title: "Weierstrass M-判别法（Weierstrass M-Test）"
 level: "silver"
 msc_primary: "40-01"

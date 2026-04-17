@@ -1,4 +1,6 @@
 ---
+course: MIT 18.100A 实分析
+
 title: "确界原理与 Archimedean 性质"
 level: "silver"
 msc_primary: "26-01"

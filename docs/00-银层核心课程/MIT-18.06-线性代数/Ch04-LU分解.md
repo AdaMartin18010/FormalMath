@@ -1,7 +1,7 @@
 ---
 title: "Ch.4 LU 分解（LU Decomposition）"
 level: "silver"
-course: "MIT 18.06"
+course: MIT 18.06 线性代数
 chapter: "4"
 msc_primary: "15-01"
 target_courses:
@@ -507,6 +507,87 @@ $A = LU$ 可逆，且 $A^{-1} = (LU)^{-1} = U^{-1}L^{-1}$。$\square$
 - LU 分解：$\frac{2}{3} \times 10^9 + 100 \times 2 \times 10^6 \approx 6.9 \times 10^8 + 2 \times 10^8 = 8.9 \times 10^8$ flops。
 
 LU 分解法快约 **75 倍**。$\square$
+
+---
+
+## Lean4 形式化对照
+
+### 三角矩阵的定义与行列式
+
+在 Lean4 中，下三角矩阵与上三角矩阵可通过元素位置条件直接刻画。单位下三角矩阵的对角元恒为 1，因此其行列式也为 1；上三角矩阵的行列式则等于对角元之积。这些性质是 LU 分解用于快速求行列式的理论基础。
+
+```lean4
+import Mathlib
+
+open Matrix
+
+-- 定义 4.1：下三角矩阵（对角线以上元素全为零）
+def IsLowerTriangular {n : ℕ} (L : Matrix (Fin n) (Fin n) ℝ) : Prop :=
+  ∀ i j : Fin n, i < j → L i j = 0
+
+-- 定义：单位下三角矩阵（对角元为 1 的下三角矩阵）
+def IsUnitLowerTriangular {n : ℕ} (L : Matrix (Fin n) (Fin n) ℝ) : Prop :=
+  IsLowerTriangular L ∧ ∀ i : Fin n, L i i = 1
+
+-- 定义：上三角矩阵（对角线以下元素全为零）
+def IsUpperTriangular {n : ℕ} (U : Matrix (Fin n) (Fin n) ℝ) : Prop :=
+  ∀ i j : Fin n, j < i → U i j = 0
+
+-- 性质：单位下三角矩阵的行列式为 1
+theorem det_unit_lower_triangular {n : ℕ} {L : Matrix (Fin n) (Fin n) ℝ}
+    (h : IsUnitLowerTriangular L) : L.det = 1 := by
+  sorry -- 可用归纳法证明：det(L) = ∏ᵢ Lᵢᵢ = 1
+
+-- 性质：上三角矩阵的行列式等于对角元之积
+theorem det_upper_triangular {n : ℕ} {U : Matrix (Fin n) (Fin n) ℝ}
+    (h : IsUpperTriangular U) :
+    U.det = ∏ i : Fin n, U i i := by
+  sorry -- Mathlib 中 Matrix.det_of_upperTriangular 已提供此结论
+```
+
+### LU 分解的代数表达
+
+Mathlib4 中的矩阵乘法 `L * U` 直接对应 LU 分解的代数等式 $A = LU$。一旦获得 LU 分解，求解 $A\mathbf{x} = \mathbf{b}$ 就化为两次回代：先解 $L\mathbf{c} = \mathbf{b}$（前向代入），再解 $U\mathbf{x} = \mathbf{c}$（后向回代）。
+
+```lean4
+-- 定义 4.2：LU 分解的存在性表述
+def HasLUDecomposition {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ) : Prop :=
+  ∃ L U : Matrix (Fin n) (Fin n) ℝ,
+    IsUnitLowerTriangular L ∧ IsUpperTriangular U ∧ A = L * U
+
+-- 利用 LU 分解求解方程组的前向代入与后向回代骨架
+-- 给定 L, U 和右侧向量 b，先解 Lc = b（前向代入），再解 Ux = c（后向回代）
+example {n : ℕ} (L U : Matrix (Fin n) (Fin n) ℝ)
+    (hL : IsUnitLowerTriangular L) (hU : IsUpperTriangular U)
+    (b : Fin n → ℝ) :
+    ∃ x : Fin n → ℝ, L * U * x = b := by
+  -- 前向代入：由于 L 是单位下三角，c₁ = b₁，依次可解
+  -- 后向代入：由于 U 是上三角，从最后一行回代求解
+  sorry
+```
+
+### PA = LU 分解与置换矩阵
+
+当消元过程中需要行交换时，PA = LU 分解断言存在置换矩阵 $P$ 使得 $PA = LU$。在 Lean4 中，置换矩阵可通过 `Equiv.Perm` 诱导的行/列重排来实现，其逆等于转置，行列式为 $\pm 1$。
+
+```lean4
+open Equiv
+
+-- 置换矩阵的性质：P⁻¹ = Pᵀ，det(P) = ±1
+theorem perm_matrix_inv_eq_transpose {n : ℕ} (σ : Perm (Fin n))
+    (P : Matrix (Fin n) (Fin n) ℝ) (hP : P = Perm.toMatrix σ) :
+    P⁻¹ = Pᵀ := by
+  rw [hP]
+  exact Perm.inv_toMatrix σ
+
+-- PA = LU 的存在性条件（对可逆矩阵）
+theorem pa_lu_for_invertible {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ)
+    (hA : Invertible A) :
+    ∃ P L U : Matrix (Fin n) (Fin n) ℝ,
+      IsUnitLowerTriangular L ∧ IsUpperTriangular U ∧
+      P * A = L * U := by
+  sorry
+```
 
 ---
 

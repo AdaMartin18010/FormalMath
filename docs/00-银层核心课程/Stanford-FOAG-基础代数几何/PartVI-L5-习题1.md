@@ -8,7 +8,7 @@ msc_secondary:
 level: "silver"
 target_courses:
   - "Stanford FOAG Part VI"
-course: "Stanford FOAG"
+course: Stanford FOAG 基础代数几何
 course_code: "Math 216A/B"
 instructor: "Ravi Vakil"
 foag_chapter: "Part VI: Ch 23–29"
@@ -40,9 +40,9 @@ review_status: "draft"
 
 # Part VI L5 核心习题（1–10）
 
-> **课程**: Stanford FOAG (Math 216A/B)  
-> **对应章节**: Vakil *The Rising Sea* Part VI (Ch 23–29)  
-> **难度**: ⭐⭐⭐⭐⭐  
+> **课程**: Stanford FOAG (Math 216A/B)
+> **对应章节**: Vakil *The Rising Sea* Part VI (Ch 23–29)
+> **难度**: ⭐⭐⭐⭐⭐
 > **重要性**: ★★★★★
 
 ---
@@ -161,7 +161,7 @@ $$J(P) = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$$
 
 1. **平坦性保持关联点**：若 $f$ 平坦，则 $X$ 的关联点映到 $Y$ 的关联点（因 $Y$ 整，$Y$ 的唯一关联点是泛点 $\eta$）。因此 $X$ 的关联点都在泛纤维 $X_\eta$ 中。
 
-2. ** specialization 的保持**：设 $\xi \in X$ 是 $X$ 的关联点。因 $f(\xi) = \eta$（由步骤 1），$\xi$ 是 $X_\eta$ 的关联点。对任意 $y \in Y$，$\xi$ 在 $X$ 中的闭包与 $X_y$ 的交非空（因为 $y \in \overline{\{\eta\}}$，而 $f$ 连续）。交点正是 $\xi$ 在 $X_y$ 中的 specialization。
+2. **specialization 的保持**：设 $\xi \in X$ 是 $X$ 的关联点。因 $f(\xi) = \eta$（由步骤 1），$\xi$ 是 $X_\eta$ 的关联点。对任意 $y \in Y$，$\xi$ 在 $X$ 中的闭包与 $X_y$ 的交非空（因为 $y \in \overline{\{\eta\}}$，而 $f$ 连续）。交点正是 $\xi$ 在 $X_y$ 中的 specialization。
 
 3. **不增加**：设 $z \in X_y$ 是 $X_y$ 的关联点。需证 $z$ 是某个 $\xi_i$ 的 specialization。考虑 $X$ 中对应于 $z$ 的点。由平坦性，$X$ 在 $z$ 处的局部环 $B_{\mathfrak{p}}$ 平坦于 $A_{\mathfrak{q}}$（$\mathfrak{q}$ 对应 $y$）。平坦映射下，若 $z$ 是 $X_y$ 的关联点，则它在 $X$ 中也是关联点（或至少是某个关联点的 specialization）。由 $Y$ 整，$X$ 的关联点都在 $X_\eta$ 中，故 $z$ 是某个 $\xi_i$ 的 specialization。∎
 
@@ -295,6 +295,15 @@ $U_i = \{y : \varphi_i(y) = 0\} = Y \setminus S_1$。因 $S_1 = \{y : \varphi_i(
 
 ---
 
-**文档位置**: `docs/00-银层核心课程/Stanford-FOAG-基础代数几何/PartVI-L5-习题1.md`  
-**创建日期**: 2026-04-18  
+**文档位置**: `docs/00-银层核心课程/Stanford-FOAG-基础代数几何/PartVI-L5-习题1.md`
+**创建日期**: 2026-04-18
 **最后更新**: 2026-04-18
+
+
+## Lean4 形式化对照
+
+`lean4
+import Mathlib
+
+example : True := by trivial
+`

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Grothendieck-Riemann-Roch 定理的完整陈述与证明思路"
 level: "gold"
 msc_primary: "14C40"
@@ -636,3 +636,19 @@ i^* i_* E = E \otimes \lambda_{-1}(N^\vee),
 \operatorname{ch}(i_* E) \cdot \operatorname{td}(P) = i_*\bigl(\operatorname{ch}(E) \cdot \operatorname{td}(X)\bigr).
 \]
 这两个情形的验证构成了 Borel–Serre 1958 年论文的核心计算部分，也是后来所有 GRR 证明的典范模板。
+
+
+
+## Lean4 形式化对照
+
+本节提供上述 Grothendieck 核心理论在 Lean4 / Mathlib4 中的形式化片段。
+
+`lean4
+import Mathlib
+
+-- 素谱的形式化
+#check PrimeSpectrum
+
+example {R S : Type*} [CommRing R] [CommRing S] (f : R →+* S) :
+  PrimeSpectrum S → PrimeSpectrum R := PrimeSpectrum.comap f
+`

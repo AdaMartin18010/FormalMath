@@ -1,7 +1,7 @@
 ---
 title: "Ch.11 最小二乘与Gram-Schmidt（Least Squares & Gram-Schmidt）"
 level: "silver"
-course: "MIT 18.06"
+course: MIT 18.06 线性代数
 chapter: "11"
 msc_primary: "15-01"
 target_courses:
@@ -700,6 +700,88 @@ $2C + D + 2E = 5$ ... (3)
 代入 (1): $2C + 2 + 2 = 4 \Rightarrow C = 0$。
 
 **答案**: $z = x + 2y$。$\square$
+
+---
+
+## Lean4 形式化对照
+
+### Gram-Schmidt 正交化
+
+Mathlib4 提供了 `gramSchmidt` 函数，它接收一个内积空间中的向量族，返回一组正交向量。这正是定义 11.6 的算法实现：对每个新向量，减去它在前面所有已正交化方向上的投影分量。
+
+```lean4
+import Mathlib
+
+open InnerProductSpace
+
+-- Gram-Schmidt 正交化过程
+-- 输入：内积空间 E 中的向量族 f : ι → E
+-- 输出：正交向量族 gramSchmidt ℝ f : ι → E
+example (E : Type*) [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+    {ι : Type*} [LinearOrder ι] [LocallyFiniteOrderBot ι]
+    (f : ι → E) (i : ι) :
+    gramSchmidt ℝ f i = f i - ∑ j ∈ Finset.Iio i, orthogonalProjection (𝕜 := ℝ)
+      (span ℝ (gramSchmidt ℝ f '' Finset.Iio i)) (f i) := by
+  rw [gramSchmidt_def]
+```
+
+### QR 分解与正交矩阵
+
+QR 分解将列满秩矩阵 $A$ 分解为列正交矩阵 $Q$ 与上三角矩阵 $R$ 的乘积。正交矩阵在 Mathlib4 中由 $Q^T Q = I$ 刻画，对应 `Matrix` 的矩阵乘法验证。
+
+```lean4
+open Matrix
+
+-- 定义 11.4：正交矩阵（QᵀQ = I）
+def IsOrthogonalMatrix {n : ℕ} (Q : Matrix (Fin n) (Fin n) ℝ) : Prop :=
+  Qᵀ * Q = 1
+
+-- QR 分解的存在性（列满秩情形）
+theorem qr_decomposition {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
+    (hA : LinearMap.ker A.mulVecLinear = ⊥) :
+    ∃ Q : Matrix (Fin m) (Fin n) ℝ,
+    ∃ R : Matrix (Fin n) (Fin n) ℝ,
+      Qᵀ * Q = 1 ∧ (∀ i j : Fin n, j < i → R i j = 0) ∧ A = Q * R := by
+  sorry -- 通过 Gram-Schmidt 构造性证明
+
+-- 正交矩阵保持长度不变
+theorem orthogonal_preserves_norm {n : ℕ} (Q : Matrix (Fin n) (Fin n) ℝ)
+    (hQ : IsOrthogonalMatrix Q) (x : Fin n → ℝ) :
+    ‖Q.mulVec x‖ = ‖x‖ := by
+  sorry -- ‖Qx‖² = (Qx)ᵀ(Qx) = xᵀQᵀQx = xᵀx = ‖x‖²
+```
+
+### 最小二乘解的唯一性
+
+当 $A$ 列满秩时，最小二乘解唯一，且可由正规方程显式给出：$\hat{\mathbf{x}} = (A^T A)^{-1} A^T \mathbf{b}$。QR 分解求解法则通过 $R\hat{\mathbf{x}} = Q^T \mathbf{b}$ 避免直接计算 $(A^T A)^{-1}$。
+
+```lean4
+-- 定理 11.1：列满秩时最小二乘解唯一
+theorem least_squares_unique {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
+    (b : Fin m → ℝ) (hA : LinearMap.ker A.mulVecLinear = ⊥) :
+    ∃! x_hat : Fin n → ℝ, A.transpose * A * x_hat = A.transpose * b := by
+  have hATA : Invertible (A.transpose * A) := by
+    sorry -- AᵀA 正定故可逆
+  use (A.transpose * A)⁻¹ * A.transpose * b
+  constructor
+  · -- 验证它是解
+    simp [mul_assoc]
+  · -- 验证唯一性
+    intro y hy
+    have : A.transpose * A * y = A.transpose * A * ((A.transpose * A)⁻¹ * A.transpose * b) := by
+      rw [hy]
+      simp [mul_assoc]
+    sorry -- 由 AᵀA 可逆，消去得 y = (AᵀA)⁻¹Aᵀb
+
+-- 定理 11.5：QR 分解求解最小二乘
+-- 解上三角方程组 R x̂ = Qᵀb
+theorem qr_solve_least_squares {m n : ℕ} (A Q R : Matrix (Fin m) (Fin n) ℝ)
+    (hA : A = Q * R) (hQ : Qᵀ * Q = 1)
+    (hR : ∀ i j : Fin n, j < i → R i j = 0)
+    (b : Fin m → ℝ) :
+    ∃! x_hat : Fin n → ℝ, R * x_hat = Qᵀ * b := by
+  sorry -- R 可逆（对角元为正），故解唯一
+```
 
 ---
 

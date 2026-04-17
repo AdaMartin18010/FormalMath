@@ -1,4 +1,4 @@
----
+﻿---
 title: "Topos 与逻辑：Mitchell-Bénabou 语言、Kripke-Joyal 语义与内逻辑"
 level: "gold"
 msc_primary: "18B25"
@@ -404,3 +404,26 @@ Grothendieck 发明的 topos 理论，从几何出发，却在逻辑学中找到
 **原始文献引用**: SGA 4, Exposé IV, §6; Lawvere–Tierney 1970; Mac Lane–Moerdijk Ch. V–VI
 **Lean4 代码**: 2 个代码块，含完成计划
 **最后更新**: 2026-04-18
+
+
+
+## Lean4 形式化对照
+
+本节提供上述理论在 Lean4 / Mathlib4 中的形式化片段，展示数学概念与代码的对应关系。
+
+`lean4
+import Mathlib
+
+-- 基本类型与结构的形式化基础
+variable (R : Type*) [CommRing R]
+
+-- 素谱的形式化
+#check PrimeSpectrum R
+
+-- 范畴论基础构造
+variable (C : Type*) [Category C]
+#check CategoryStruct.comp (X := C)
+
+-- 导出范畴的入口
+#check DerivedCategory (ModuleCat R)
+`

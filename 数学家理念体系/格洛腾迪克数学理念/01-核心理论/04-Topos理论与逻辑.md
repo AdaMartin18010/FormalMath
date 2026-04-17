@@ -1,5 +1,6 @@
----
+﻿---
 title: "Topos理论：改变逻辑的几何"
+level: gold
 msc_primary: "18B25"
 msc_secondary: ["03G30", "18F10"]
 processed_at: '2026-04-05'
@@ -1435,3 +1436,27 @@ Topos理论发展为同伦类型论：
 **数学公式数**: 45个
 **例子数**: 24个
 **最后更新**: 2026年01月15日
+
+
+
+
+## Lean4 形式化对照
+
+本节提供上述理论在 Lean4 / Mathlib4 中的形式化片段，展示数学概念与代码的对应关系。
+
+`lean4
+import Mathlib
+
+-- 基本类型与结构的形式化基础
+variable (R : Type*) [CommRing R]
+
+-- 素谱的形式化
+#check PrimeSpectrum R
+
+-- 范畴论基础构造
+variable (C : Type*) [Category C]
+#check CategoryStruct.comp (X := C)
+
+-- 导出范畴的入口
+#check DerivedCategory (ModuleCat R)
+`

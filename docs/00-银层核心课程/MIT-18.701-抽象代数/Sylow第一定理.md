@@ -1,7 +1,7 @@
 ---
 title: "Sylow 第一定理（Sylow's First Theorem）"
 level: "silver"
-course: "MIT 18.701"
+course: MIT 18.701 抽象代数
 msc_primary: "20-02"
 target_courses:
   - "MIT 18.701"

@@ -1,4 +1,6 @@
 ---
+course: MIT 18.100A 实分析
+
 title: "Taylor定理（Taylor's Theorem）"
 level: "silver"
 msc_primary: "26-01"

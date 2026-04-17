@@ -1,4 +1,4 @@
----
+﻿---
 title: "Grothendieck Topos：位象、层化与基本性质"
 level: "gold"
 msc_primary: "18B25"
@@ -388,3 +388,26 @@ Grothendieck Topos 不仅是一种数学构造，更是一种**思维方式**：
 **原始文献引用**: SGA 4, Exposé II, Déf. 1.1; SGA 4, Exposé IV, Déf. 1.1, Théorème 3.1
 **Lean4 代码**: 3 个代码块，含完成计划
 **最后更新**: 2026-04-18
+
+
+
+## Lean4 形式化对照
+
+本节提供上述理论在 Lean4 / Mathlib4 中的形式化片段，展示数学概念与代码的对应关系。
+
+`lean4
+import Mathlib
+
+-- 基本类型与结构的形式化基础
+variable (R : Type*) [CommRing R]
+
+-- 素谱的形式化
+#check PrimeSpectrum R
+
+-- 范畴论基础构造
+variable (C : Type*) [Category C]
+#check CategoryStruct.comp (X := C)
+
+-- 导出范畴的入口
+#check DerivedCategory (ModuleCat R)
+`

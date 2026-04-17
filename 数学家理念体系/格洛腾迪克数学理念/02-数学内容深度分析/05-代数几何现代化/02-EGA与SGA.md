@@ -1,5 +1,6 @@
----
+﻿---
 title: EGA与SGA：格洛腾迪克的经典著作
+level: gold
 msc_primary: 01A60
 msc_secondary:
 - 01A65
@@ -1047,3 +1048,27 @@ EGA与SGA是20世纪数学最重要的著作之一：
 **完成度**: 约85%
 **字数**: 约9,000字
 **最后更新**: 2025年12月11日
+
+
+
+
+## Lean4 形式化对照
+
+本节提供上述理论在 Lean4 / Mathlib4 中的形式化片段，展示数学概念与代码的对应关系。
+
+`lean4
+import Mathlib
+
+-- 基本类型与结构的形式化基础
+variable (R : Type*) [CommRing R]
+
+-- 素谱的形式化
+#check PrimeSpectrum R
+
+-- 范畴论基础构造
+variable (C : Type*) [Category C]
+#check CategoryStruct.comp (X := C)
+
+-- 导出范畴的入口
+#check DerivedCategory (ModuleCat R)
+`

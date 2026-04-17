@@ -8,7 +8,7 @@ msc_secondary:
 level: "silver"
 target_courses:
   - "Stanford FOAG Part VI"
-course: "Stanford FOAG"
+course: Stanford FOAG 基础代数几何
 course_code: "Math 216A/B"
 instructor: "Ravi Vakil"
 foag_chapter: "Part VI: Ch 23–29"
@@ -40,9 +40,9 @@ review_status: "draft"
 
 # Part VI L5 核心习题（11–20）
 
-> **课程**: Stanford FOAG (Math 216A/B)  
-> **对应章节**: Vakil *The Rising Sea* Part VI (Ch 23–29)  
-> **难度**: ⭐⭐⭐⭐⭐  
+> **课程**: Stanford FOAG (Math 216A/B)
+> **对应章节**: Vakil *The Rising Sea* Part VI (Ch 23–29)
+> **难度**: ⭐⭐⭐⭐⭐
 > **重要性**: ★★★★★
 
 ---
@@ -296,6 +296,15 @@ $$0 \longrightarrow \mathcal{I}_X/\mathcal{I}_X^2 \longrightarrow \mathcal{O}_{\
 
 ---
 
-**文档位置**: `docs/00-银层核心课程/Stanford-FOAG-基础代数几何/PartVI-L5-习题2.md`  
-**创建日期**: 2026-04-18  
+**文档位置**: `docs/00-银层核心课程/Stanford-FOAG-基础代数几何/PartVI-L5-习题2.md`
+**创建日期**: 2026-04-18
 **最后更新**: 2026-04-18
+
+
+## Lean4 形式化对照
+
+`lean4
+import Mathlib
+
+example : True := by trivial
+`

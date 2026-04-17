@@ -1,7 +1,7 @@
 ---
 title: "Ch.15 SVD与线性变换（SVD & Linear Transformations）"
 level: "silver"
-course: "MIT 18.06"
+course: MIT 18.06 线性代数
 chapter: "15"
 msc_primary: "15-01"
 target_courses:
@@ -550,6 +550,90 @@ $X^T X$ 与 $C$ 有相同特征向量，特征值相差 $m$ 倍。
 SVD：$X = U\Sigma V^T$，$X^T X = V\Sigma^T\Sigma V^T$。$V$ 的列是 $X^T X$ 的特征向量。
 
 第一主成分 $\mathbf{v}_1$ 使投影方差最大：$\max_{\|\mathbf{v}\|=1} \|X\mathbf{v}\|^2 = \max_{\|\mathbf{v}\|=1} \mathbf{v}^T X^T X \mathbf{v} = \lambda_1(X^T X) = \sigma_1^2$（由 Rayleigh 商）。$\square$
+
+---
+
+## Lean4 形式化对照
+
+### 奇异值与奇异向量
+
+SVD 的核心在于 $A^T A$ 和 $AA^T$ 的特征结构。在 Lean4 中，右奇异向量是 $A^T A$ 的特征向量，奇异值 $\sigma_i = \sqrt{\lambda_i(A^T A)}$ 度量了 $A$ 在各主轴方向上的伸缩强度。
+
+```lean4
+import Mathlib
+
+open Matrix LinearMap Module
+
+-- 定义 15.1：右奇异向量与奇异值的关系
+-- v 是 AᵀA 对应于特征值 σ² 的单位特征向量 ⟹ ‖Av‖ = σ
+theorem right_singular_vectors_eigen_of_ata {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
+    (v : Fin n → ℝ) (σ : ℝ) (hσ : σ > 0)
+    (hv : (A.transpose * A).mulVec v = σ^2 • v) (hvn : ‖v‖ = 1) :
+    ‖A.mulVec v‖ = σ := by
+  calc
+    ‖A.mulVec v‖^2 = Matrix.dotProduct (A.mulVec v) (A.mulVec v) := by
+      simp [norm_sq_eq_dotProduct]
+    _ = Matrix.dotProduct v ((A.transpose * A).mulVec v) := by
+      simp [Matrix.mulVec_transpose, Matrix.dotProduct_mulVec]
+    _ = Matrix.dotProduct v (σ^2 • v) := by rw [hv]
+    _ = σ^2 * Matrix.dotProduct v v := by simp [Matrix.dotProduct_smul_right]
+    _ = σ^2 := by simp [Matrix.dotProduct_self_eq_norm_sq, hvn, sq]
+  have hnonneg : ‖A.mulVec v‖ ≥ 0 := norm_nonneg _
+  have hσnonneg : σ ≥ 0 := by linarith
+  nlinarith [sq_nonneg (‖A.mulVec v‖ - σ)]
+```
+
+### 伪逆与最小二乘
+
+Moore-Penrose 伪逆在 Lean4 中可通过 SVD 构造：$A^+ = V \Sigma^+ U^T$。当 $A$ 列满秩时，伪逆退化为 $(A^T A)^{-1} A^T$，它给出最小范数最小二乘解。
+
+```lean4
+-- 定义 15.3：伪逆（列满秩情形下 A⁺ = (AᵀA)⁻¹Aᵀ）
+def MoorePenroseInverse {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
+    (hA : LinearMap.ker A.mulVecLinear = ⊥) : Matrix (Fin n) (Fin m) ℝ :=
+  (A.transpose * A)⁻¹ * A.transpose
+
+-- 定理 15.2：伪逆解的最小二乘最优性
+theorem pseudoinverse_least_squares {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
+    (b : Fin m → ℝ) (hA : LinearMap.ker A.mulVecLinear = ⊥) :
+    let x_plus := (MoorePenroseInverse A hA).mulVec b
+    ∀ x : Fin n → ℝ, ‖A.mulVec x_plus - b‖ ≤ ‖A.mulVec x - b‖ := by
+  sorry -- x⁺ 使 Ax⁺ 为 b 在 C(A) 上的正交投影
+
+-- 定理 15.2（续）：伪逆解具有最小范数
+theorem pseudoinverse_minimal_norm {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
+    (b : Fin m → ℝ) (hA : LinearMap.ker A.mulVecLinear = ⊥) :
+    let x_plus := (MoorePenroseInverse A hA).mulVec b
+    ∀ x : Fin n → ℝ, A.mulVec x = A.mulVec x_plus → ‖x_plus‖ ≤ ‖x‖ := by
+  sorry -- x⁺ ∈ C(Aᵀ) = N(A)ᗮ，与零空间分量正交
+```
+
+### 线性变换在不同基下的矩阵表示
+
+Lean4 的 `Basis` 类型与 `LinearMap.toMatrix` 函数精确刻画了线性变换在选定基下的坐标矩阵。基变换公式 $[T]_{\mathcal{C}' \leftarrow \mathcal{B}'} = Q [T]_{\mathcal{C} \leftarrow \mathcal{B}} P^{-1}$ 对应矩阵的相似与等价关系。
+
+```lean4
+-- 定义 15.4：线性变换 T 关于基 B, C 的矩阵表示
+-- Mathlib 中：LinearMap.toMatrix B C T
+example (𝕜 : Type*) [Field 𝕜] {V W : Type*} [AddCommGroup V] [Module 𝕜 V]
+    [AddCommGroup W] [Module 𝕜 W] {ιV ιW : Type*} [Fintype ιV] [Fintype ιW]
+    [DecidableEq ιV] [DecidableEq ιW]
+    (B : Basis ιV 𝕜 V) (C : Basis ιW 𝕜 W) (T : V →ₗ[𝕜] W) :
+    Matrix ιW ιV 𝕜 :=
+  LinearMap.toMatrix B C T
+
+-- 定理 15.3：基变换公式
+-- [T]_{C'←B'} = Q * [T]_{C←B} * P⁻¹
+theorem change_of_basis_formula (𝕜 : Type*) [Field 𝕜] {V W : Type*}
+    [AddCommGroup V] [Module 𝕜 V] [AddCommGroup W] [Module 𝕜 W]
+    {ιV ιW : Type*} [Fintype ιV] [Fintype ιW] [DecidableEq ιV] [DecidableEq ιW]
+    (B B' : Basis ιV 𝕜 V) (C C' : Basis ιW 𝕜 W) (T : V →ₗ[𝕜] W) :
+    LinearMap.toMatrix B' C' T =
+      Basis.toMatrix C C' * LinearMap.toMatrix B C T * (Basis.toMatrix B B')⁻¹ := by
+  rw [← LinearMap.toMatrix_comp B C']
+  rw [← LinearMap.toMatrix_comp B' C']
+  simp [Basis.toMatrix_toMatrix]
+```
 
 ---
 

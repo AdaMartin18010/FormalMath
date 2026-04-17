@@ -1,4 +1,4 @@
----
+﻿---
 title: "Riemann-Roch 定理（Grothendieck 推广版）：从 Hirzebruch 到 Weil 猜想"
 level: "gold"
 msc_primary: "14C40"
@@ -462,3 +462,4 @@ GRR 与 Weil 猜想的联系则揭示了这一定理的更大图景：它是 mot
 > **关联形式化文件**：`FormalMath/AlgebraicGeometry/RiemannRoch.lean`（计划中）  
 > **整合素材**：`00-归档-2026年4月/02-数学内容深度分析/06-其他数学贡献/05-Riemann-Roch定理-网络对齐与批判性意见报告.md`  
 > **上游文档**：`金层重构/G3-Grothendieck-Riemann-Roch定理.md`
+

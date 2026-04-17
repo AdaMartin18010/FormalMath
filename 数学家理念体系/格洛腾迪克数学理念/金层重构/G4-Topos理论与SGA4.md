@@ -1,4 +1,4 @@
----
+﻿---
 title: "Topos 理论与 SGA 4"
 level: "gold"
 msc_primary: "18B25"
@@ -582,3 +582,19 @@ Grothendieck 在 SGA 4 中强调，topos 的合适研究对象不是其具体的
 Topos 理论是 Alexander Grothendieck 对现代数学最深刻的发明之一。它不仅为代数几何提供了 étale 上同调、晶体上同调等革命性工具，更为数学基础、逻辑学、类型论与计算机科学开辟了全新的视野。通过 SGA 4 中 site、层、topos 与几何态射的系统建构，Grothendieck 完成了从“空间上的层”到“层作为空间”的范式转换。Giraud 定理、内部逻辑、分类 topos、locale 理论以及 ∞-topos 的发展，都是这一原始构想的自然延伸。
 
 本专题作为 FormalMath 金层重构计划的一部分，通过对 SGA 4 原始文献的深度解读、site 与 topos 等价定义的完整阐述、几何态射与分类 topos 的系统分析、locale 与 sober 空间的关联、topos 上同调与不变量的探讨、étale topos 在 Weil 猜想中的关键角色、与 Leray-Serre-Lawvere 的批判性比较，以及 Lean4 代码的深度嵌入，力求在学术深度、原始文献精确性与形式化可验证性三方面达到研究级标准，为 FormalMath 项目的学术标杆树立一块坚实的基石。
+
+
+
+## Lean4 形式化对照
+
+本节提供上述 Grothendieck 核心理论在 Lean4 / Mathlib4 中的形式化片段。
+
+`lean4
+import Mathlib
+
+-- 素谱的形式化
+#check PrimeSpectrum
+
+example {R S : Type*} [CommRing R] [CommRing S] (f : R →+* S) :
+  PrimeSpectrum S → PrimeSpectrum R := PrimeSpectrum.comap f
+`

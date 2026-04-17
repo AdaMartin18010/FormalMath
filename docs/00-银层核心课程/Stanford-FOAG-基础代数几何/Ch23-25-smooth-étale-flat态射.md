@@ -8,7 +8,7 @@ msc_secondary:
 level: "silver"
 target_courses:
   - "Stanford FOAG Ch.23–25"
-course: "Stanford FOAG"
+course: Stanford FOAG 基础代数几何
 course_code: "Math 216A/B"
 instructor: "Ravi Vakil"
 foag_chapter: "Ch 23, Ch 24, Ch 25"
@@ -53,10 +53,10 @@ review_status: "draft"
 
 # Ch 23–25: Smooth / Étale / Flat 态射深入证明
 
-> **课程**: Stanford FOAG (Math 216A/B)  
-> **对应章节**: Vakil *The Rising Sea* Ch 23–25  
-> **难度**: ⭐⭐⭐⭐⭐  
-> **重要性**: ★★★★★  
+> **课程**: Stanford FOAG (Math 216A/B)
+> **对应章节**: Vakil *The Rising Sea* Ch 23–25
+> **难度**: ⭐⭐⭐⭐⭐
+> **重要性**: ★★★★★
 > **前置知识**: 概形基本理论、层上同调、微分模、Krull 维度理论
 
 ---
@@ -285,7 +285,7 @@ $$\dim(B_{\mathfrak{p}'}/\mathfrak{q}'B_{\mathfrak{p}'}) \leq \dim(B_{\mathfrak{
 
 #### 步骤 4：整基上的常数性
 
-设 $Y$ 是整的，$\eta$ 是泛点。设 $d = \dim(X_\eta)$。对任意 $y \in Y$，由上半连续性，$\dim(X_y) \leq d$ 在一个开邻域内成立。反过来，利用 ** specializing 的维度下界**（即纤维维度在 specialization 下不会减小），有 $\dim(X_y) \geq \dim(X_\eta) = d$。因此 $\dim(X_y) = d$ 对所有 $y$ 成立。∎
+设 $Y$ 是整的，$\eta$ 是泛点。设 $d = \dim(X_\eta)$。对任意 $y \in Y$，由上半连续性，$\dim(X_y) \leq d$ 在一个开邻域内成立。反过来，利用 **specializing 的维度下界**（即纤维维度在 specialization 下不会减小），有 $\dim(X_y) \geq \dim(X_\eta) = d$。因此 $\dim(X_y) = d$ 对所有 $y$ 成立。∎
 
 > **几何直觉**：平坦族的纤维维度恒定性是代数几何中最基本也最深刻的现象之一。直观上，它说明"好的"族（平坦族）不会发生维度突变。一个经典的非平坦例子是：考虑平面上的圆锥曲线族 $xy = t$。当 $t \neq 0$ 时，纤维是光滑的双曲线（维度 1，不可约）；当 $t = 0$ 时，纤维是两条相交直线 $xy = 0$（虽然维度仍是 1，但它有两个不可约分量）。实际上这个族是平坦的，所以维度保持为 1。但如果考虑 $x^2 = ty$ 在 $t = 0$ 时退化为 $x^2 = 0$（一条"二重直线"），这仍然是平坦的。真正的非平坦例子是：考虑一族曲线在一点处突然"断开"或"长出一个新分支"——这种突变恰恰被平坦性排除。
 
@@ -379,7 +379,7 @@ example (hf : IsSmooth f) {x : X} :
   sorry
 
 /-- 平展态射的微分模消失 -/
-example (hf : IsEtale f) : ∀ x : X, 
+example (hf : IsEtale f) : ∀ x : X,
     Module.rank (k x) ( stalk Ω_{X/Y} x ) = 0 := by
   -- 平展态射的相对微分层在每一点的茎为零
   sorry
@@ -536,6 +536,6 @@ $$\chi(X_y, \mathcal{O}) = \sum_{i=0}^{\dim(X_y)} (-1)^i h^i(X_y, \mathcal{O})$$
 
 ---
 
-**文档位置**: `docs/00-银层核心课程/Stanford-FOAG-基础代数几何/Ch23-25-smooth-étale-flat态射.md`  
-**创建日期**: 2026-04-18  
+**文档位置**: `docs/00-银层核心课程/Stanford-FOAG-基础代数几何/Ch23-25-smooth-étale-flat态射.md`
+**创建日期**: 2026-04-18
 **最后更新**: 2026-04-18

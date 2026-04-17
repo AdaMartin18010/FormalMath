@@ -1,7 +1,7 @@
 ---
 title: "Cauchy 定理（群论版 / Cauchy's Theorem for Groups）"
 level: "silver"
-course: "MIT 18.701"
+course: MIT 18.701 抽象代数
 msc_primary: "20-02"
 target_courses:
   - "MIT 18.701"
