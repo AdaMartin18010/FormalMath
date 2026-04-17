@@ -1,17 +1,17 @@
 ---
-title: "IMO真题-代数：数列与不等式"
+title: "IMO真题-不等式：三元不等式"
 level: silver
 course: IMO竞赛数学
-difficulty: L3
-topic: 代数
+difficulty: L4
+topic: 不等式
 source: "IMO 2001 Problem 2"
 target_courses:
-  - MIT 18.100A
+  - MIT 18.02
 status: completed
 created_at: 2026-04-18
 ---
 
-# IMO 2001 Problem 2：数列与不等式
+# IMO 2001 Problem 2：三元不等式
 
 ## 题目
 
@@ -31,13 +31,13 @@ $$\frac{a}{\sqrt{a^2 + 8bc}} + \frac{b}{\sqrt{b^2 + 8ca}} + \frac{c}{\sqrt{c^2 +
 
 由Holder不等式：
 
-$$\left(\sum_{cyc} \frac{a}{\sqrt{a^2 + 8bc}}\right)^2 \left(\sum_{cyc} a(a^2 + 8bc)\right) \geq (a + b + c)^3$$
+$$\left(\sum \frac{a}{\sqrt{a^2 + 8bc}}\right)^2 \left(\sum a(a^2 + 8bc)\right) \geq (a + b + c)^3$$
 
 **步骤3**：证明关键不等式。
 
 只需证明：
 
-$$(a + b + c)^3 \geq \sum_{cyc} a(a^2 + 8bc) = a^3 + b^3 + c^3 + 24abc$$
+$$(a + b + c)^3 \geq \sum a(a^2 + 8bc) = a^3 + b^3 + c^3 + 24abc$$
 
 展开左边：
 
@@ -49,13 +49,7 @@ $$= a^3 + b^3 + c^3 + 3\sum_{sym} a^2b + 6abc$$
 
 $$3\sum_{sym} a^2b + 6abc \geq 24abc$$
 
-即 $\sum_{sym} a^2b \geq 6abc$。
-
-由AM-GM不等式：
-
-$$a^2b + a^2c + b^2a + b^2c + c^2a + c^2b \geq 6\sqrt[6]{a^6b^6c^6} = 6abc$$
-
-等号成立当且仅当 $a = b = c$。$\square$
+即 $\sum_{sym} a^2b \geq 6abc$，由AM-GM不等式成立。$\square$
 
 ## 知识点映射
 

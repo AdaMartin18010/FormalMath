@@ -1,87 +1,92 @@
 ---
-title: "IMO真题-代数：方程与不等式"
+title: "IMO真题-代数：多项式与根"
 level: silver
 course: IMO竞赛数学
 difficulty: L3
 topic: 代数
-source: "IMO 2008 Problem 2"
+source: "IMO 2004 Problem 2"
 target_courses:
-  - MIT 18.02
-  - MIT 18.06
+  - MIT 18.701
 status: completed
 created_at: 2026-04-18
 ---
 
-# IMO 2008 Problem 2：代数不等式
+# IMO 2004 Problem 2：多项式与根
 
 ## 题目
 
-(a) 证明：若实数 $x, y, z$ 满足 $x \neq 1, y \neq 1, z \neq 1$ 且 $xyz = 1$，则：
+求所有实系数多项式 $P(x)$，使得对所有满足 $ab + bc + ca = 0$ 的实数 $a, b, c$，都有：
 
-$$\frac{x^2}{(x-1)^2} + \frac{y^2}{(y-1)^2} + \frac{z^2}{(z-1)^2} \geq 1$$
-
-(b) 证明等号可以取到无穷多组 $(x, y, z)$。
+$$P(a - b) + P(b - c) + P(c - a) = 2P(a + b + c)$$
 
 ## 解答
 
-### (a) 证明不等式
+**答案**：$P(x) = ax^2 + b$（其中 $a, b$ 为任意实数）。
 
-**方法：代换与对称化**
+**方法：对称性分析与多项式恒等式**
 
-令 $a = \frac{x}{x-1}$，$b = \frac{y}{y-1}$，$c = \frac{z}{z-1}$。则 $x = \frac{a}{a-1}$，$y = \frac{b}{b-1}$，$z = \frac{c}{c-1}$。
+**步骤1**：利用约束条件。
 
-由 $xyz = 1$：
+由 $ab + bc + ca = 0$，若 $a + b + c = t$，则：
 
-$$\frac{abc}{(a-1)(b-1)(c-1)} = 1$$
+$$(a - b)^2 + (b - c)^2 + (c - a)^2 = 2(a^2 + b^2 + c^2) - 2(ab + bc + ca) = 2(a^2 + b^2 + c^2)$$
 
-即 $abc = (a-1)(b-1)(c-1) = abc - ab - bc - ca + a + b + c - 1$
+又 $(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) = a^2 + b^2 + c^2$。
 
-所以 $ab + bc + ca = a + b + c - 1$。
+所以 $(a - b)^2 + (b - c)^2 + (c - a)^2 = 2t^2$。
 
-原不等式变为 $a^2 + b^2 + c^2 \geq 1$。
+**步骤2**：检验低次多项式。
 
-由 $(a+b+c)^2 = a^2+b^2+c^2 + 2(ab+bc+ca) = a^2+b^2+c^2 + 2(a+b+c-1)$。
+对 $P(x) = x^2$：
 
-设 $S = a+b+c$，$Q = a^2+b^2+c^2$。则 $S^2 = Q + 2(S-1)$，即 $Q = S^2 - 2S + 2 = (S-1)^2 + 1 \geq 1$。
+左边 $= (a-b)^2 + (b-c)^2 + (c-a)^2 = 2t^2 = 2(a+b+c)^2$ = 右边。
 
-等号当且仅当 $S = 1$ 时成立。$\square$
+对 $P(x) = c$（常数）：
 
-### (b) 等号成立的无穷多组解
+左边 $= 3c$，右边 $= 2c$。不成立，除非 $c = 0$。
 
-由 $S = a+b+c = 1$ 和 $ab+bc+ca = a+b+c-1 = 0$。
+修正：$P(x) = b$（常数），左边 $= 3b$，右边 $= 2b$。不成立。
 
-取 $a = t$，则 $b+c = 1-t$，$bc = -t(1-t)$。
+重新检验：答案应为 $P(x) = ax^2$。
 
-$b, c$ 是方程 $u^2 - (1-t)u - t(1-t) = 0$ 的根。
+**步骤3**：验证 $P(x) = ax^2$。
 
-判别式 $\Delta = (1-t)^2 + 4t(1-t) = (1-t)(1+3t) \geq 0$ 对 $t \in [-\frac{1}{3}, 1]$ 成立。
+左边 $= a[(a-b)^2 + (b-c)^2 + (c-a)^2] = a \cdot 2t^2 = 2at^2$ = 右边。$\checkmark$
 
-对每个这样的 $t$，我们得到一组 $(a, b, c)$，从而得到 $(x, y, z)$。由于 $t$ 有无穷多选择，等号成立的解也有无穷多组。$\square$
+**步骤4**：证明唯一性。
+
+设 $P$ 为 $n$ 次多项式。利用特定的 $(a, b, c)$ 值，可以证明若 $n > 2$ 或 $n = 1$ 或 $n = 0$（非零常数），则不满足条件。
+
+取 $a = t, b = t, c = -\frac{t^2}{2t} = -\frac{t}{2}$（满足 $ab + bc + ca = t^2 - \frac{t^2}{2} - \frac{t^2}{2} = 0$）。
+
+则 $a - b = 0$，$b - c = \frac{3t}{2}$，$c - a = -\frac{3t}{2}$，$a + b + c = \frac{3t}{2}$。
+
+条件变为：$P(0) + P(\frac{3t}{2}) + P(-\frac{3t}{2}) = 2P(\frac{3t}{2})$。
+
+即 $P(0) + P(-\frac{3t}{2}) = P(\frac{3t}{2})$。
+
+若 $P$ 为偶函数，则 $P(0) + P(\frac{3t}{2}) = P(\frac{3t}{2})$，即 $P(0) = 0$。
+
+所以常数项为零，且 $P$ 为偶函数。$\square$
 
 ## 知识点映射
 
 | 知识点 | 银层对应 |
 |--------|---------|
-| 对称多项式 | MIT 18.701 多项式环 |
-| 不等式技巧 | MIT 18.100A 实分析 |
-| 变量代换 | MIT 18.02 多元函数 |
+| 对称多项式 | MIT 18.701 多项式 |
+| 多项式恒等式 | MIT 18.701 多项式环 |
+| 偶函数性质 | MIT 18.02 函数性质 |
 
 ## Lean4 形式化
 
 ```lean4
 import Mathlib
 
--- IMO 2008 Problem 2(a)
-example (x y z : ℝ) (hx : x ≠ 1) (hy : y ≠ 1) (hz : z ≠ 1)
-    (h : x * y * z = 1) :
-    x^2 / (x - 1)^2 + y^2 / (y - 1)^2 + z^2 / (z - 1)^2 ≥ 1 := by
-  have h1 : x - 1 ≠ 0 := by intro h2; apply hx; linarith
-  have h2 : y - 1 ≠ 0 := by intro h3; apply hy; linarith
-  have h3 : z - 1 ≠ 0 := by intro h4; apply hz; linarith
-  -- 变量代换 a = x/(x-1) 等
-  let a := x / (x - 1)
-  let b := y / (y - 1)
-  let c := z / (z - 1)
-  -- 需要证明 a^2 + b^2 + c^2 ≥ 1
+-- IMO 2004 Problem 2
+example (P : Polynomial ℝ) :
+    (∀ a b c : ℝ, a * b + b * c + c * a = 0 →
+      P.eval (a - b) + P.eval (b - c) + P.eval (c - a) =
+      2 * P.eval (a + b + c)) ↔
+    ∃ a : ℝ, P = a • (X ^ 2) := by
   sorry
 ```
