@@ -114,6 +114,7 @@ example (F : EuclideanSpace ℝ (Fin 3) → EuclideanSpace ℝ (Fin 3))
 ### 8.1 电磁学中的Maxwell方程
 
 散度定理和Stokes定理是Maxwell方程的数学基础：
+
 - $\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0}$（高斯定律）
 - $\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$（法拉第定律）
 
