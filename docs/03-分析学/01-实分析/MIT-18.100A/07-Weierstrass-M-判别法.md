@@ -1,14 +1,59 @@
 ---
 title: Weierstrass M-判别法
 course: MIT 18.100A Real Analysis
-level: "silver"
-target_courses: ["MIT 18.100A"]
+level: silver
+target_courses:
+- MIT 18.100A
 difficulty: 核心定理
 importance: 高
-prerequisites: [一致收敛, 级数收敛, 比较判别法, Cauchy一致收敛准则]
-related: [一致收敛保持连续性, 逐项积分, 逐项求导, 幂级数]
-tags: [实分析, 函数项级数, 一致收敛, 核心定理]
+prerequisites:
+- 一致收敛
+- 级数收敛
+- 比较判别法
+- Cauchy一致收敛准则
+related:
+- 一致收敛保持连续性
+- 逐项积分
+- 逐项求导
+- 幂级数
+tags:
+- 实分析
+- 函数项级数
+- 一致收敛
+- 核心定理
 date: 2026-04-17
+references:
+  textbooks:
+  - id: rudin_pma
+    type: textbook
+    title: Principles of Mathematical Analysis
+    authors:
+    - Walter Rudin
+    publisher: McGraw-Hill
+    edition: 3rd
+    year: 1976
+    isbn: 978-0070542358
+    msc: 26-01
+    chapters:
+    - 'Chapter 7: Sequences and Series of Functions'
+    url: null
+    pages: 148-149
+  databases:
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/{entry}
+    consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/{tag}
+    consulted_at: 2026-04-17
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=an:{zb_id}
+    consulted_at: 2026-04-17
 ---
 
 # Weierstrass M-判别法

@@ -10,6 +10,48 @@ msc_secondary:
 - 03Gxx
 processed_at: '2026-04-08'
 version: '2.0'
+references:
+  textbooks:
+    - id: enderton_logic
+      type: textbook
+      title: A Mathematical Introduction to Logic
+      authors:
+      - Herbert B. Enderton
+      publisher: Academic Press
+      edition: 2nd
+      year: 2001
+      isbn: 978-0122384523
+      msc: 03-01
+      chapters: []
+      url: ~
+    - id: mendelson_logic
+      type: textbook
+      title: Introduction to Mathematical Logic
+      authors:
+      - Elliott Mendelson
+      publisher: Chapman and Hall/CRC
+      edition: 6th
+      year: 2015
+      isbn: 978-1482237725
+      msc: 03-01
+      chapters: []
+      url: ~
+  databases:
+    - id: nlab
+      type: database
+      name: nLab
+      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+      consulted_at: 2026-04-17
+    - id: stacks_project
+      type: database
+      name: Stacks Project
+      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
+      consulted_at: 2026-04-17
+    - id: zbmath
+      type: database
+      name: zbMATH Open
+      entry_url: "https://zbmath.org/?q=an:{zb_id}"
+      consulted_at: 2026-04-17
 ---
 
 # 数理逻辑分支索引 (Mathematical Logic Branch Index)

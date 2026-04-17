@@ -3,11 +3,53 @@ title: "模态逻辑与哲学逻辑 (Modal and Philosophical Logic)"
 msc_primary: "03B45"
 msc_secondary: ['03B42', '03B44', '03B48', '03B60']
 processed_at: '2026-04-05'
+references:
+  textbooks:
+    - id: enderton_logic
+      type: textbook
+      title: A Mathematical Introduction to Logic
+      authors:
+      - Herbert B. Enderton
+      publisher: Academic Press
+      edition: 2nd
+      year: 2001
+      isbn: 978-0122384523
+      msc: 03-01
+      chapters: []
+      url: ~
+    - id: mendelson_logic
+      type: textbook
+      title: Introduction to Mathematical Logic
+      authors:
+      - Elliott Mendelson
+      publisher: Chapman and Hall/CRC
+      edition: 6th
+      year: 2015
+      isbn: 978-1482237725
+      msc: 03-01
+      chapters: []
+      url: ~
+  databases:
+    - id: nlab
+      type: database
+      name: nLab
+      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+      consulted_at: 2026-04-17
+    - id: stacks_project
+      type: database
+      name: Stacks Project
+      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
+      consulted_at: 2026-04-17
+    - id: zbmath
+      type: database
+      name: zbMATH Open
+      entry_url: "https://zbmath.org/?q=an:{zb_id}"
+      consulted_at: 2026-04-17
 ---
 
 # 模态逻辑与哲学逻辑 (Modal and Philosophical Logic)
 
-**最后更新**: 2026年4月5日  
+**最后更新**: 2026年4月5日
 **MSC分类**: 03B45 (模态逻辑), 03B42 (认知逻辑), 03B44 (时态逻辑)
 
 ---
@@ -27,11 +69,13 @@ $$\varphi ::= p \mid \neg\varphi \mid \varphi \land \psi \mid \Box\varphi \mid \
 其中 $\Box$ 读作"必然"，$\Diamond$ 读作"可能"。
 
 **定义 2.2** (Kripke模型): Kripke模型是三元组 $\mathcal{M} = (W, R, V)$，其中：
+
 - $W$: 可能世界非空集
 - $R \subseteq W \times W$: 可达关系
 - $V: \text{Prop} \to \mathcal{P}(W)$: 赋值函数
 
 **定义 2.3** (满足关系): $\mathcal{M}, w \models \varphi$ 定义为：
+
 - $\mathcal{M}, w \models p$ iff $w \in V(p)$
 - $\mathcal{M}, w \models \Box\varphi$ iff $\forall v (wRv \Rightarrow \mathcal{M}, v \models \varphi)$
 - $\mathcal{M}, w \models \Diamond\varphi$ iff $\exists v (wRv \land \mathcal{M}, v \models \varphi)$
@@ -43,6 +87,7 @@ $$\varphi ::= p \mid \neg\varphi \mid \varphi \land \psi \mid \Box\varphi \mid \
 ### 2.2 公理系统
 
 **定义 2.4** (系统K): 最小正规模态逻辑K包含：
+
 - 命题重言式的所有代入实例
 - **K公理**: $\Box(p \to q) \to (\Box p \to \Box q)$
 - **必然化规则 (Nec)**: 从 $\varphi$ 推出 $\Box\varphi$
@@ -67,11 +112,13 @@ $$\varphi ::= p \mid \neg\varphi \mid \varphi \land \psi \mid \Box\varphi \mid \
 
 ### 3.1 知识与信念
 
-**定义 3.1** (认知算子): 
+**定义 3.1** (认知算子):
+
 - $K_i\varphi$: 主体 $i$ 知道 $\varphi$
 - $B_i\varphi$: 主体 $i$ 相信 $\varphi$
 
 **定义 3.2** (知识公理系统S5):
+
 - **(K)**: $K(\varphi \to \psi) \to (K\varphi \to K\psi)$ (分配)
 - **(T)**: $K\varphi \to \varphi$ (真实性)
 - **(4)**: $K\varphi \to KK\varphi$ (正自省)
@@ -83,7 +130,8 @@ $$\varphi ::= p \mid \neg\varphi \mid \varphi \land \psi \mid \Box\varphi \mid \
 
 ### 3.2 公共知识
 
-**定义 3.3** (群体知识): 
+**定义 3.3** (群体知识):
+
 - $E_G\varphi$: 群体中每个成员都知道 $\varphi$
 - $C_G\varphi$: $\varphi$ 是群体 $G$ 的公共知识
 
@@ -97,13 +145,15 @@ $$\varphi ::= p \mid \neg\varphi \mid \varphi \land \psi \mid \Box\varphi \mid \
 
 ### 4.1 线性时态逻辑
 
-**定义 4.1** (LTL算子): 
+**定义 4.1** (LTL算子):
+
 - $X\varphi$: 下一时刻 $\varphi$
 - $F\varphi$: 将来某时刻 $\varphi$
 - $G\varphi$: 永远 $\varphi$
 - $\varphi U \psi$: $\varphi$ 一直成立直到 $\psi$ 成立
 
 **定义 4.2** (LTL语义): 在序列 $\pi = s_0, s_1, s_2, \ldots$ 上：
+
 - $\pi \models X\varphi$ iff $\pi^1 \models \varphi$（从 $s_1$ 开始的子序列）
 - $\pi \models F\varphi$ iff $\exists i \geq 0, \pi^i \models \varphi$
 - $\pi \models G\varphi$ iff $\forall i \geq 0, \pi^i \models \varphi$
@@ -114,6 +164,7 @@ $$\varphi ::= p \mid \neg\varphi \mid \varphi \land \psi \mid \Box\varphi \mid \
 ### 4.2 计算树逻辑
 
 **定义 4.3** (CTL路径量词):
+
 - $A\varphi$: 所有路径满足 $\varphi$
 - $E\varphi$: 存在路径满足 $\varphi$
 
@@ -127,7 +178,8 @@ $$\varphi ::= p \mid \neg\varphi \mid \varphi \land \psi \mid \Box\varphi \mid \
 
 ### 5.1 义务与许可
 
-**定义 5.1** (道义算子): 
+**定义 5.1** (道义算子):
+
 - $O\varphi$: 应该 $\varphi$（义务）
 - $P\varphi$: 可以 $\varphi$（许可）
 - $F\varphi$: 禁止 $\varphi$
@@ -139,6 +191,7 @@ $$\varphi ::= p \mid \neg\varphi \mid \varphi \land \psi \mid \Box\varphi \mid \
 ### 5.2 标准道义逻辑
 
 **定义 5.2** (SDL): 标准道义逻辑包含：
+
 - K公理应用于 $O$
 - **(D)**: $O\varphi \to P\varphi$（或 $\neg(O\varphi \land O\neg\varphi)$）
 
@@ -151,6 +204,7 @@ $$\varphi ::= p \mid \neg\varphi \mid \varphi \land \psi \mid \Box\varphi \mid \
 ### 6.1 直觉主义模态逻辑
 
 **定义 6.1** (IK): 直觉主义模态逻辑IK扩展直觉主义命题逻辑，添加：
+
 - $\Box$ 和 $\Diamond$ 对偶性在构造性意义下解释
 - Kripke语义要求相容性和单调性条件
 
@@ -183,9 +237,11 @@ docs/07-数理逻辑/06-模态逻辑与哲学逻辑/
 ## 8. 学习路径
 
 ### 8.1 基础路径
+
 **模态语言** → **Kripke语义** → **完全性定理** → **应用逻辑**
 
 ### 8.2 应用路径
+
 - **程序验证**: 时态逻辑、模型检测
 - **博弈论**: 认知逻辑、公共知识
 - **伦理学**: 道义逻辑
@@ -193,6 +249,6 @@ docs/07-数理逻辑/06-模态逻辑与哲学逻辑/
 
 ---
 
-**最后更新**: 2026年4月5日  
-**维护者**: FormalMath项目组  
+**最后更新**: 2026年4月5日
+**维护者**: FormalMath项目组
 **质量等级**: ⭐⭐⭐⭐⭐ (研究级)

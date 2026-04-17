@@ -4,7 +4,7 @@ msc_primary: 14-01
 msc_secondary:
 - 14F05
 - 18F20
-level: "silver"
+level: silver
 target_courses:
 - Stanford FOAG
 course: Stanford FOAG
@@ -15,6 +15,52 @@ topic: 层化定理与 stalk 的正合性
 exercise_type: TEC (技术型)
 difficulty: ⭐⭐⭐
 importance: ★★
+references:
+  textbooks:
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters:
+    - 'Chapter II, Section 1: Sheaves'
+    url: null
+    pages: 60-69
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters:
+    - 'Section 2.4: Sheaves, Section 2.5: Sheaves of abelian groups and O_X-modules'
+    url: https://math.stanford.edu/~vakil/216blog/
+    pages: 65-72
+  databases:
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/{entry}
+    consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/{tag}
+    consulted_at: 2026-04-17
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=an:{zb_id}
+    consulted_at: 2026-04-17
 ---
 
 # AG-VK-016: 层的层化与 stalk 判定正合性

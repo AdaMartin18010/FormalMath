@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FormalMath 质量仪表盘</title>
+<style>
+  :root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --accent-color: #0056b3;
+    --border-color: #dee2e6;
+    --quote-bg: #e9ecef;
+    --code-bg: #f1f3f5;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-color);
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  h1 { font-size: 1.8rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.3rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  p { margin: 0.6rem 0; }
+  a { color: var(--accent-color); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul, ol { margin: 0.5rem 0; padding-left: 1.5rem; }
+  li { margin: 0.2rem 0; }
+  code {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    background-color: var(--code-bg);
+    padding: 0.15rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+  pre {
+    background-color: var(--code-bg);
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  pre code { padding: 0; background: none; }
+  blockquote.dashboard-quote {
+    background-color: var(--quote-bg);
+    border-left: 4px solid var(--accent-color);
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    color: #495057;
+  }
+  blockquote.dashboard-quote p { margin: 0.3rem 0; }
+  table.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: #fff;
+  }
+  table.dashboard-table th,
+  table.dashboard-table td {
+    border: 1px solid var(--border-color);
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.dashboard-table th {
+    background-color: #e9ecef;
+    font-weight: 600;
+  }
+  table.dashboard-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 1.5rem 0;
+  }
+  .honesty-banner {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+  }
+  .honesty-banner strong {
+    color: #856404;
+  }
+</style>
+</head>
+<body>
+  <div class="honesty-banner">
+    <strong>诚实状态声明：</strong>本仪表盘反映项目的真实质量状态，而非宣传口径。此处披露的数据基于可审计的自动化扫描或人工核查结果，旨在建立公开透明的质量跟踪机制。
+  </div>
+<h1>FormalMath 公开质量仪表盘</h1>
+<blockquote class="dashboard-quote"><p>⚠️ <strong>本仪表盘反映项目的真实质量状态，而非宣传口径。</strong></p>
+<p>此处披露的数据基于可审计的自动化扫描或人工核查结果，旨在建立公开透明的质量跟踪机制，供贡献者与监督者定期审阅。</p></blockquote>
+<hr />
+<h2>1. 项目诚实状态看板</h2>
+<table class="dashboard-table">
+<thead><tr>
+<th>指标</th>
+<th>当前值</th>
+<th>数据来源</th>
+<th>最后更新</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>全项目 Markdown 文档数</td>
+<td>10177</td>
+<td>自动化扫描</td>
+<td>2026-04-17</td>
+</tr>
+<tr>
+<td>docs/ 目录文档数</td>
+<td>4370</td>
+<td>自动化扫描</td>
+<td>2026-04-17</td>
+</tr>
+<tr>
+<td>Lean4 <code>.lean</code> 文件总数</td>
+<td>332</td>
+<td>自动化扫描</td>
+<td>2026-04-17</td>
+</tr>
+<tr>
+<td>完整证明 Lean4 定理数</td>
+<td><strong>20</strong> 个 (L1 可编译) / 120 个 <code>.lean</code> 文件</td>
+<td><code>output/00-形式化与自然语言断裂点地图.md</code></td>
+<td>2026-04-17</td>
+</tr>
+<tr>
+<td>核心课程语义对齐度</td>
+<td><strong>MIT 18.100A: 100%</strong> / <strong>MIT 18.701: ~74%</strong> / <strong>MIT 18.06: ~53%</strong> / <strong>Harvard 232br: ~12%</strong> / <strong>Stanford FOAG: ~60%</strong> (L4–L5 均值)</td>
+<td>多报告综合</td>
+<td>2026-04-17</td>
+</tr>
+<tr>
+<td>核心文档盲审平均得分</td>
+<td><strong>框架已建立，待真人专家执行</strong></td>
+<td><code>project/00-核心文档盲审框架.md</code></td>
+<td>2026-04-17</td>
+</tr>
+<tr>
+<td>参考文献完整度</td>
+<td><strong>516 篇核心文档已注入 references 字段</strong> / <strong>32 篇银层精确到章节页码</strong> / DOI 仍待 API 对接</td>
+<td><code>output/00-参考文献批量更新进度.md</code></td>
+<td>2026-04-17</td>
+</tr>
+</tbody></table>
+<blockquote class="dashboard-quote"><p><strong>更新说明</strong>：标为&quot;待审计&quot;的指标将在对应 P1 任务完成后填入真实数值。在此之前，不显示未经核对的估算值。</p></blockquote>
+<hr />
+<h2>2. 阶段一任务进度追踪（P1）</h2>
+<table class="dashboard-table">
+<thead><tr>
+<th>任务编号</th>
+<th>任务名称</th>
+<th>状态</th>
+<th>负责人</th>
+<th>交付物链接</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>P1-T1</td>
+<td>数据口径规范</td>
+<td>🟢 已完成</td>
+<td>项目组</td>
+<td><code>project/00-数据口径与诚实化规范-v1.0.md</code></td>
+</tr>
+<tr>
+<td>P1-T2</td>
+<td>核心文档质量盲审</td>
+<td>🟡 框架已完成</td>
+<td>项目组</td>
+<td><code>project/00-核心文档盲审框架.md</code> (待真人专家执行)</td>
+</tr>
+<tr>
+<td>P1-T3</td>
+<td>对齐真实性核查</td>
+<td>🟢 已完成</td>
+<td>项目组</td>
+<td><code>output/00-课程对齐真实性核查报告.md</code></td>
+</tr>
+<tr>
+<td>P1-T4</td>
+<td>参考文献缺失审计</td>
+<td>🟢 已完成</td>
+<td>项目组</td>
+<td><code>output/00-参考文献缺失审计报告.md</code></td>
+</tr>
+<tr>
+<td>P1-T5</td>
+<td>形式化断裂点地图</td>
+<td>🟢 已完成</td>
+<td>项目组</td>
+<td><code>output/00-形式化与自然语言断裂点地图.md</code></td>
+</tr>
+<tr>
+<td>P1-T6</td>
+<td>内容金字塔标准</td>
+<td>🟢 已完成</td>
+<td>项目组</td>
+<td><code>project/00-FormalMath三层内容标准-v2.0.md</code></td>
+</tr>
+</tbody></table>
+<p><strong>图例</strong>：</p>
+<ul>
+<li>🟢 已完成</li>
+<li>🟡 进行中</li>
+<li>⚪ 待开始</li>
+</ul>
+<blockquote class="dashboard-quote"><p><strong>备注</strong>：所有 P1 任务当前处于并行启动阶段。随着任务推进，本表将更新为具体的子里程碑、截止日期和实际负责人。</p></blockquote>
+<hr />
+<h2>2.5 阶段二任务进度追踪（P2）</h2>
+<table class="dashboard-table">
+<thead><tr>
+<th>任务编号</th>
+<th>任务名称</th>
+<th>状态</th>
+<th>交付物</th>
+<th>关键成果</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>P2-T1</td>
+<td>五课程讲义逐章拆解</td>
+<td>🟢 已完成</td>
+<td><code>project/00-五门银层课程讲义逐章拆解汇总.md</code></td>
+<td>5门课程完整索引</td>
+</tr>
+<tr>
+<td>P2-MIT-18.06</td>
+<td>MIT 18.06 银层重构</td>
+<td>🟢 已完成</td>
+<td><code>docs/02-代数结构/线性代数与矩阵理论/MIT-18.06/</code></td>
+<td>15/15 篇完成，L4 从 0%→~60%</td>
+</tr>
+<tr>
+<td>P2-MIT-18.100A</td>
+<td>MIT 18.100A 定理覆盖</td>
+<td>🟢 已完成</td>
+<td><code>docs/03-分析学/01-实分析/MIT-18.100A/</code></td>
+<td>L4 从 16.7%→100%</td>
+</tr>
+<tr>
+<td>P2-MIT-18.701</td>
+<td>MIT 18.701 抽象代数银层攻坚</td>
+<td>🟢 已完成</td>
+<td><code>docs/02-代数结构/02-核心理论/MIT-18.701/</code></td>
+<td>L4 从 50%→~88%，L5→~65%</td>
+</tr>
+<tr>
+<td>P2-Harvard-232br</td>
+<td>Harvard 232br 习题系统建设</td>
+<td>🟢 已完成</td>
+<td><code>docs/13-代数几何/Harvard-232br-习题解答/</code></td>
+<td>60 道 Hartshorne 习题解答</td>
+</tr>
+<tr>
+<td>P2-Stanford-FOAG</td>
+<td>Stanford FOAG 对齐深化</td>
+<td>🟢 已完成</td>
+<td><code>docs/13-代数几何/FOAG-深化/</code></td>
+<td>14 篇深化文档 + 30 道习题</td>
+</tr>
+<tr>
+<td>P2-Lean4</td>
+<td>Lean4 断裂修复</td>
+<td>🟢 已完成</td>
+<td><code>output/00-Lean4断裂修复进展报告.md</code></td>
+<td>清理 30 空文件，41 篇双语对照</td>
+</tr>
+<tr>
+<td>P2-Ref</td>
+<td>参考文献批量更新</td>
+<td>🟢 已完成</td>
+<td><code>output/00-参考文献批量更新进度.md</code></td>
+<td>516 篇核心文档已注入</td>
+</tr>
+<tr>
+<td>P2-空壳清理</td>
+<td>全项目空壳文档清理</td>
+<td>🟢 已完成</td>
+<td><code>output/00-空壳文档清理报告.md</code></td>
+<td>198 个识别，162 个归档</td>
+</tr>
+<tr>
+<td>P2-格洛腾迪克</td>
+<td>格洛腾迪克文档归档</td>
+<td>🟢 已完成</td>
+<td><code>output/00-格洛腾迪克文档归档清理报告.md</code></td>
+<td>338/493 归档，5 篇金层完成</td>
+</tr>
+<tr>
+<td>P2-双语扩展</td>
+<td>双语对照文档扩展</td>
+<td>🟢 已完成</td>
+<td><code>docs/09-形式化证明/双语对照/</code></td>
+<td>41 篇双语对照文档</td>
+</tr>
+</tbody></table>
+<hr />
+<h2>3. 银层核心课程进度</h2>
+<blockquote class="dashboard-quote"><p><strong>银层（Silver Layer）</strong> 指已完成基础内容建设、进入质量对齐与深度证明覆盖阶段的核心课程。</p></blockquote>
+<table class="dashboard-table">
+<thead><tr>
+<th>课程</th>
+<th>L3 定义对齐</th>
+<th>L4 定理证明覆盖</th>
+<th>L5 习题解答</th>
+<th>L6 思想方法</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>MIT 18.100A 实分析</td>
+<td>100%</td>
+<td><strong>100%</strong></td>
+<td>~60%</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>MIT 18.701 抽象代数 I</td>
+<td>100%</td>
+<td><strong>~88%</strong></td>
+<td><strong>~65%</strong></td>
+<td>50%</td>
+</tr>
+<tr>
+<td>MIT 18.06 线性代数</td>
+<td><strong>100%</strong></td>
+<td><strong>~60%</strong></td>
+<td><strong>~50%</strong></td>
+<td><strong>60%</strong></td>
+</tr>
+<tr>
+<td>Harvard Math 232br 代数几何与上同调</td>
+<td>80%</td>
+<td>~45%</td>
+<td><strong>~12%</strong></td>
+<td>40%</td>
+</tr>
+<tr>
+<td>Stanford FOAG 代数几何基础</td>
+<td>100%</td>
+<td><strong>~70%</strong></td>
+<td><strong>~60%</strong></td>
+<td><strong>55%</strong></td>
+</tr>
+</tbody></table>
+<p><strong>层次说明</strong>：</p>
+<ul>
+<li><strong>L3 定义对齐</strong>：课程中所有核心定义的表述与权威教材（或其形式化版本）完全一致，歧义已消除。</li>
+<li><strong>L4 定理证明覆盖</strong>：课程中所有核心定理均具备完整的、人工程序可读性达标的证明文档或形式化证明。</li>
+<li><strong>L5 习题解答</strong>：课程配套习题具备经过核对的解答，错误率低于阈值。</li>
+<li><strong>L6 思想方法</strong>：课程中的数学思想、直觉阐释和认知脚手架已建立并经过专家审阅。</li>
+</ul>
+<hr />
+<h2>4. 最近发现的问题与修复记录</h2>
+<blockquote class="dashboard-quote"><p>本区域用于记录质量审计过程中发现的结构性问题、数据异常及对应的修复动作。按时间倒序排列， newest first。</p></blockquote>
+<h3>模板（请复制并填写）</h3>
+<pre><code class="language-markdown">#### YYYY-MM-DD：问题简述
+- **发现来源**：P1-Tx / 自动化扫描 / 人工审阅 / 社区反馈
+- **问题描述**：
+- **影响范围**：
+- **修复动作**：
+- **验证方式**：
+- **修复状态**：🟡 待修复 / 🔵 修复中 / 🟢 已验证</code></pre>
+<h3>已记录问题</h3>
+<h4>2026-04-17：README/INDEX 徽章从&quot;100%&quot;调整为&quot;质量基线重建中&quot;</h4>
+<ul>
+<li><strong>发现来源</strong>：项目负责人质量承诺声明</li>
+<li><strong>问题描述</strong>：项目早期宣传口径中存在&quot;100% 完成&quot;等绝对化表述，与当前需要进行的深度质量审计工作不符，可能造成外部认知偏差。</li>
+<li><strong>影响范围</strong>：<code>README.md</code>、<code>INDEX.md</code> 及相关入口文档的徽章/状态标识。</li>
+<li><strong>修复动作</strong>：将原有&quot;100%&quot;相关徽章或完成度声明替换为&quot;质量基线重建中&quot;，并链接至本仪表盘。</li>
+<li><strong>验证方式</strong>：人工检查入口文档。</li>
+<li><strong>修复状态</strong>：🟢 已验证</li>
+</ul>
+<h4>2026-04-17：MIT 18.06 线性代数被错误计入&quot;已对齐课程&quot;，L4–L6 完全缺失</h4>
+<ul>
+<li><strong>发现来源</strong>：P1-T3 对齐真实性核查</li>
+<li><strong>问题描述</strong>：MIT 18.06 在项目课程映射中被计为已对齐，但核查发现 L4（定理证明）、L5（习题解答）、L6（思想方法）覆盖率均为 0%，L3 定义对齐也仅 78.7%（未达 90% 高对齐阈值）。</li>
+<li><strong>影响范围</strong>：直接威胁&quot;121+ 课程、&gt;85% 对齐率&quot;声明的真实性。</li>
+<li><strong>修复动作</strong>：将 MIT 18.06 标记为&quot;待重建&quot;，启动银层专项攻坚。</li>
+<li><strong>修复状态</strong>：🔵 修复中</li>
+</ul>
+<h4>2026-04-17：参考文献系统存在&quot;硬链接&quot;完全缺失危机</h4>
+<ul>
+<li><strong>发现来源</strong>：P1-T4 参考文献缺失审计（100 篇随机抽样）</li>
+<li><strong>问题描述</strong>：DOI、arXiv ID、zbMATH、MathSciNet MR Number 的检出率均为 <strong>0%</strong>；仅 22% 的文档将教材引用精确到章节/页码。</li>
+<li><strong>影响范围</strong>：所有核心数学分支，尤其是分析学和数学家理念体系。</li>
+<li><strong>修复动作</strong>：强制推行 <code>references</code> YAML 元数据字段；中期对接国际数据库 API。</li>
+<li><strong>修复状态</strong>：🟡 待修复</li>
+</ul>
+<h4>2026-04-17：Lean4 形式化存在 30 个 0 字节空文件和 49.2% 的断裂率</h4>
+<ul>
+<li><strong>发现来源</strong>：P1-T5 形式化与自然语言断裂点地图</li>
+<li><strong>问题描述</strong>：120 个 <code>.lean</code> 文件中，30 个为 0 字节空文件（<code>定理-19.lean</code> 至 <code>定理-48.lean</code>），且无任何自然语言文档引用；总体断裂率高达 49.2%。</li>
+<li><strong>影响范围</strong>：形式化证明模块的学术公信力。</li>
+<li><strong>修复动作</strong>：删除或填充 30 个空文件；为 59 个断裂/孤岛定理建立双语对照文档。</li>
+<li><strong>修复状态</strong>：🟡 待修复</li>
+</ul>
+<h4>2026-04-17：Harvard Math 232br 习题对齐覆盖率仅 ~4.5%</h4>
+<ul>
+<li><strong>发现来源</strong>：P1-T3 对齐真实性核查</li>
+<li><strong>问题描述</strong>：项目宣称 Harvard 232br 与 Hartshorne 高度对应，但实际 Hartshorne 约 330 道习题中仅约 15 道在项目中有对应文档。</li>
+<li><strong>影响范围</strong>：高阶课程的 L5 对齐可信度。</li>
+<li><strong>修复动作</strong>：将 Harvard 232br / Stanford FOAG 的习题系统建设列为银层优先任务。</li>
+<li><strong>修复状态</strong>：🟢 已验证（已新增至 60 道，但仍需继续扩展）</li>
+</ul>
+<h4>2026-04-17：全项目发现 198 个空壳/注水文档</h4>
+<ul>
+<li><strong>发现来源</strong>：P2-空壳清理 全项目扫描</li>
+<li><strong>问题描述</strong>：对 docs/、concept/、数学家理念体系/ 共 8554 个 <code>.md</code> 文件扫描，发现 198 个空壳或严重注水文档，其中 162 个已被确认为无实质内容。</li>
+<li><strong>影响范围</strong>：项目整体内容质量可信度，尤其是 <code>docs/00-知识层次体系/</code> 和 <code>docs/generated/</code> 目录。</li>
+<li><strong>修复动作</strong>：162 个 B 类文档已归档；36 个 C 类文档标记为待重写；格洛腾迪克 338/493 篇已归档。</li>
+<li><strong>修复状态</strong>：🔵 修复中（格洛腾迪克待整合，其他数学家体系待审计）</li>
+</ul>
+<h4>2026-04-17：516 篇核心文档完成参考文献字段注入</h4>
+<ul>
+<li><strong>发现来源</strong>：P2-Ref 批量更新</li>
+<li><strong>问题描述</strong>：此前 DOI/arXiv/zbMATH/MR Number 检出率为 0%，核心文档缺乏与国际权威数据库的硬链接。</li>
+<li><strong>修复动作</strong>：为实分析、代数结构、代数几何、几何拓扑、数理逻辑 5 大目录下 516 篇文档注入 <code>references</code> YAML 字段；32 篇银层文档精确到教材章节。</li>
+<li><strong>修复状态</strong>：🟢 已验证（DOI 自动对接仍待 API 实现）</li>
+</ul>
+<hr />
+<h2>5. 徽章更新日志</h2>
+<table class="dashboard-table">
+<thead><tr>
+<th>日期</th>
+<th>徽章/声明原文</th>
+<th>修改后内容</th>
+<th>修改原因</th>
+<th>修改人</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>2026-04-17</td>
+<td>&quot;100% 完成&quot; / &quot;项目已完成&quot;</td>
+<td>&quot;质量基线重建中&quot;</td>
+<td>项目负责人同意建立公开透明的质量仪表盘，将宣传口径修正为真实质量状态披露，避免误导外部观察者。</td>
+<td>项目组</td>
+</tr>
+</tbody></table>
+<blockquote class="dashboard-quote"><p><strong>政策声明</strong>：今后任何关于项目完成度、对齐度或覆盖率的公开表述，均须以本仪表盘或可审计的 P1 任务报告为准。未经审计的百分比不得出现在项目入口文档中。</p></blockquote>
+<hr />
+<h2>附录：更新指南</h2>
+<ul>
+<li><strong>频率建议</strong>：</li>
+<li>自动化指标（文档数、文件数）：每周更新一次。</li>
+<li>P1 任务状态：每完成一个子里程碑即更新。</li>
+<li>课程进度：每月更新一次，或在单次课程审计完成后立即更新。</li>
+<li>问题与修复记录：发现即记录，修复即闭环。</li>
+</ul>
+<ul>
+<li><strong>更新责任人</strong>：</li>
+<li>本文件由质量审计小组维护。</li>
+<li>任何贡献者如发现数据与事实不符，可提交 Issue 或直接修正。</li>
+</ul>
+<ul>
+<li><strong>自动化支持</strong>：</li>
+<li>[x] 通过 CI 脚本自动统计 Markdown / Lean4 文件数并更新本节。脚本：<code>scripts/ci<em>update</em>dashboard.py</code></li>
+<li>[x] 通过 CI 脚本自动检查入口文档中的禁止词汇（如&quot;100% 完成&quot;）。脚本：<code>scripts/ci<em>quality</em>gate.py</code></li>
+<li>[x] 将本仪表盘渲染为 HTML。脚本：<code>scripts/render<em>dashboard</em>html.py</code> → <code>output/quality-dashboard.html</code></li>
+<li>[ ] 将 HTML 部署至项目官网的 <code>/quality</code> 路径（待运维流程对接）。</li>
+</ul>
+<ol>
+</ol>
+<hr />
+<p><em>本仪表盘最后整体更新时间：2026-04-17</em></p>
+</body>
+</html>

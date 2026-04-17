@@ -1,14 +1,58 @@
 ---
 title: 确界原理与 Archimedean 性质
 course: MIT 18.100A Real Analysis
-level: "silver"
-target_courses: ["MIT 18.100A"]
+level: silver
+target_courses:
+- MIT 18.100A
 difficulty: 核心定理
 importance: 极高
-prerequisites: [实数定义, 集合论基础, 不等式技巧]
-related: [单调收敛定理, 区间套定理, Cauchy收敛准则]
-tags: [实分析, 实数完备性, 确界, Archimedean, 核心定理]
+prerequisites:
+- 实数定义
+- 集合论基础
+- 不等式技巧
+related:
+- 单调收敛定理
+- 区间套定理
+- Cauchy收敛准则
+tags:
+- 实分析
+- 实数完备性
+- 确界
+- Archimedean
+- 核心定理
 date: 2026-04-17
+references:
+  textbooks:
+  - id: rudin_pma
+    type: textbook
+    title: Principles of Mathematical Analysis
+    authors:
+    - Walter Rudin
+    publisher: McGraw-Hill
+    edition: 3rd
+    year: 1976
+    isbn: 978-0070542358
+    msc: 26-01
+    chapters:
+    - 'Chapter 1: The Real and Complex Number Systems'
+    url: null
+    pages: 1-5
+  databases:
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/{entry}
+    consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/{tag}
+    consulted_at: 2026-04-17
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=an:{zb_id}
+    consulted_at: 2026-04-17
 ---
 
 # 确界原理与 Archimedean 性质

@@ -1,0 +1,38 @@
+name: Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run quality gate checks
+        run: |
+          echo "=== Running CI Quality Gate ==="
+          python scripts/ci_quality_gate.py -o quality-gate-report.json -v
+          echo "=== Quality Gate Report ==="
+          cat quality-gate-report.json
+
+      - name: Run dashboard update (dry-run)
+        run: |
+          echo "=== Running Dashboard Update (dry-run) ==="
+          python scripts/ci_update_dashboard.py --dry-run
+
+      - name: Upload quality gate report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-gate-report
+          path: quality-gate-report.json

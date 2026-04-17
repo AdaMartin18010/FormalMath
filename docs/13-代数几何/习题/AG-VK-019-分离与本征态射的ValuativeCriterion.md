@@ -4,7 +4,7 @@ msc_primary: 14-01
 msc_secondary:
 - 14A15
 - 14Dxx
-level: "silver"
+level: silver
 target_courses:
 - Stanford FOAG
 course: Stanford FOAG
@@ -15,6 +15,53 @@ topic: 分离态射、本征态射、Valuative Criterion
 exercise_type: ANA (分析型)
 difficulty: ⭐⭐⭐⭐
 importance: ★★★
+references:
+  textbooks:
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters:
+    - 'Chapter II, Section 4: Separated and Proper Morphisms'
+    url: null
+    pages: 96-105
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters:
+    - 'Section 12.3: Separated morphisms, Section 12.7: The valuative criteria for
+      separatedness and properness'
+    url: https://math.stanford.edu/~vakil/216blog/
+    pages: 335-345
+  databases:
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/{entry}
+    consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/{tag}
+    consulted_at: 2026-04-17
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=an:{zb_id}
+    consulted_at: 2026-04-17
 ---
 
 # AG-VK-019: 分离与本征态射的 Valuative Criterion

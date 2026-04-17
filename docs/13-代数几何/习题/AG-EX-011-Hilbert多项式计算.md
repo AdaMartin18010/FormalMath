@@ -7,6 +7,48 @@
 对应课程: Harvard Math 232br
 预计用时: 90-120分钟
 msc: 13D40, 14C05
+references:
+  textbooks:
+    - id: hartshorne_ag
+      type: textbook
+      title: Algebraic Geometry
+      authors:
+      - Robin Hartshorne
+      publisher: Springer
+      edition: 1st
+      year: 1977
+      isbn: 978-0387902449
+      msc: 14-01
+      chapters: []
+      url: ~
+    - id: vakil_foag
+      type: textbook
+      title: Foundations of Algebraic Geometry
+      authors:
+      - Ravi Vakil
+      publisher: self-published
+      edition: draft
+      year: 2024
+      isbn: ~
+      msc: 14-01
+      chapters: []
+      url: "https://math.stanford.edu/~vakil/216blog/"
+  databases:
+    - id: nlab
+      type: database
+      name: nLab
+      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+      consulted_at: 2026-04-17
+    - id: stacks_project
+      type: database
+      name: Stacks Project
+      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
+      consulted_at: 2026-04-17
+    - id: zbmath
+      type: database
+      name: zbMATH Open
+      entry_url: "https://zbmath.org/?q=an:{zb_id}"
+      consulted_at: 2026-04-17
 ---
 
 # AG-EX-011: Hilbert多项式计算

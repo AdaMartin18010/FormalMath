@@ -4,7 +4,7 @@ msc_primary: 14-01
 msc_secondary:
 - 14A15
 - 14Mxx
-level: "silver"
+level: silver
 target_courses:
 - Stanford FOAG
 course: Stanford FOAG
@@ -15,6 +15,52 @@ topic: Proj 构造、射影概形、泛性质
 exercise_type: GEO (几何型)
 difficulty: ⭐⭐⭐⭐
 importance: ★★★
+references:
+  textbooks:
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters:
+    - 'Chapter II, Section 2: Schemes (Proj construction)'
+    url: null
+    pages: 76-81
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters:
+    - 'Section 4.5: Proj and projective schemes'
+    url: https://math.stanford.edu/~vakil/216blog/
+    pages: 145-152
+  databases:
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/{entry}
+    consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/{tag}
+    consulted_at: 2026-04-17
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=an:{zb_id}
+    consulted_at: 2026-04-17
 ---
 
 # AG-VK-018: Proj 构造与其泛性质

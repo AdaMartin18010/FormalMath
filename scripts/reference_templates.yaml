@@ -169,6 +169,91 @@
           "consulted_at": "2026-04-17"
         }
       ]
+    },
+    "artin_algebra": {
+      "textbooks": [
+        {
+          "id": "artin_algebra",
+          "type": "textbook",
+          "title": "Algebra",
+          "authors": ["Michael Artin"],
+          "publisher": "Pearson",
+          "edition": "2nd",
+          "year": 2011,
+          "isbn": "978-0132413770",
+          "msc": "16-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
+    },
+    "vakil_foag": {
+      "textbooks": [
+        {
+          "id": "vakil_foag",
+          "type": "textbook",
+          "title": "Foundations of Algebraic Geometry",
+          "authors": ["Ravi Vakil"],
+          "publisher": "self-published",
+          "edition": "draft",
+          "year": 2024,
+          "isbn": null,
+          "msc": "14-01",
+          "chapters": [],
+          "url": "https://math.stanford.edu/~vakil/216blog/"
+        }
+      ]
+    },
+    "lee_ism": {
+      "textbooks": [
+        {
+          "id": "lee_ism",
+          "type": "textbook",
+          "title": "Introduction to Smooth Manifolds",
+          "authors": ["John M. Lee"],
+          "publisher": "Springer",
+          "edition": "2nd",
+          "year": 2012,
+          "isbn": "978-1441999818",
+          "msc": "58-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
+    },
+    "enderton_logic": {
+      "textbooks": [
+        {
+          "id": "enderton_logic",
+          "type": "textbook",
+          "title": "A Mathematical Introduction to Logic",
+          "authors": ["Herbert B. Enderton"],
+          "publisher": "Academic Press",
+          "edition": "2nd",
+          "year": 2001,
+          "isbn": "978-0122384523",
+          "msc": "03-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
+    },
+    "mendelson_logic": {
+      "textbooks": [
+        {
+          "id": "mendelson_logic",
+          "type": "textbook",
+          "title": "Introduction to Mathematical Logic",
+          "authors": ["Elliott Mendelson"],
+          "publisher": "Chapman and Hall/CRC",
+          "edition": "6th",
+          "year": 2015,
+          "isbn": "978-1482237725",
+          "msc": "03-01",
+          "chapters": [],
+          "url": null
+        }
+      ]
     }
   }
 }

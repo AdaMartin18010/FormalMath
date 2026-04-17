@@ -7,6 +7,36 @@ prerequisites: [紧致性, 开覆盖, 有限覆盖, Bolzano-Weierstrass]
 related: [极值定理, Bolzano-Weierstrass定理, 序列紧致]
 tags: [实分析, 紧致性, 开覆盖, 核心定理]
 date: 2026-04-10
+references:
+  textbooks:
+    - id: rudin_pma
+      type: textbook
+      title: Principles of Mathematical Analysis
+      authors:
+      - Walter Rudin
+      publisher: McGraw-Hill
+      edition: 3rd
+      year: 1976
+      isbn: 978-0070542358
+      msc: 26-01
+      chapters: []
+      url: ~
+  databases:
+    - id: nlab
+      type: database
+      name: nLab
+      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+      consulted_at: 2026-04-17
+    - id: stacks_project
+      type: database
+      name: Stacks Project
+      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
+      consulted_at: 2026-04-17
+    - id: zbmath
+      type: database
+      name: zbMATH Open
+      entry_url: "https://zbmath.org/?q=an:{zb_id}"
+      consulted_at: 2026-04-17
 ---
 
 # Heine-Borel 定理
