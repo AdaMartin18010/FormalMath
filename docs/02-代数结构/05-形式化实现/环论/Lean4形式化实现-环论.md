@@ -117,7 +117,7 @@ class IsIntegralDomain (R : Type*) [CommRing R] : Prop where
   nontrivial : ∃ a b : R, a ≠ b
 
 -- 整环中的消去律
-theorem integral_domain_cancel {R : Type*} [CommRing R] [IsIntegralDomain R] 
+theorem integral_domain_cancel {R : Type*} [CommRing R] [IsIntegralDomain R]
   {a b c : R} (ha : a ≠ 0) (h : a * b = a * c) : b = c := by
   have : a * (b - c) = 0 := by
     rw [mul_sub, h, sub_self]
@@ -157,7 +157,7 @@ def IsMaximalIdeal {R : Type*} [CommRing R] (M : Ideal R) : Prop :=
   M ≠ ⊤ ∧ ∀ I : Ideal R, M ≤ I → I = M ∨ I = ⊤
 
 -- 极大理想是素理想（在交换环中）
-theorem maximal_is_prime {R : Type*} [CommRing R] (M : Ideal R) 
+theorem maximal_is_prime {R : Type*} [CommRing R] (M : Ideal R)
   (hmax : IsMaximalIdeal M) : IsPrimeIdeal M := by
   constructor
   · exact hmax.1
@@ -330,7 +330,7 @@ theorem int_is_pid : IsPrincipalIdealRing ℤ := by
 
 ```lean
 -- 中国剩余定理
-theorem chinese_remainder_theorem {R : Type*} [CommRing R] 
+theorem chinese_remainder_theorem {R : Type*} [CommRing R]
   (I J : Ideal R) (hcoprime : IsCoprime I J) :
   R ⧸ (I ⊓ J) ≃+* (R ⧸ I) × (R ⧸ J) := by
   apply Ideal.quotientInfRingEquivPiQuotient

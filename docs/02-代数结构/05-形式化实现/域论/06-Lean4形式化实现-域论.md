@@ -64,12 +64,16 @@ references:
 
 ## 目录
 
-- [一、域的基本定义](#一域的基本定义)
-- [二、域扩张](#二域扩张)
-- [三、伽罗瓦理论](#三伽罗瓦理论)
-- [四、有限域](#四有限域)
-- [五、应用案例](#五应用案例)
-- [六、总结](#六总结)
+- [Lean4形式化实现-域论](#lean4形式化实现-域论)
+  - [目录](#目录)
+  - [一、域的基本定义](#一域的基本定义)
+  - [二、域扩张](#二域扩张)
+  - [三、伽罗瓦理论](#三伽罗瓦理论)
+  - [四、有限域](#四有限域)
+  - [五、应用案例](#五应用案例)
+    - [5.1 三次方程的求解](#51-三次方程的求解)
+    - [5.2 尺规作图的不可能性](#52-尺规作图的不可能性)
+  - [六、总结](#六总结)
 
 ---
 
@@ -147,14 +151,14 @@ def IsGaloisExtension (F E : Type*) [Field F] [Field E] [Algebra F E] : Prop :=
   @IsGalois F E _ _ _
 
 -- 伽罗瓦对应的基本定理
-theorem fundamental_theorem_galois_theory {F E : Type*} [Field F] [Field E] 
+theorem fundamental_theorem_galois_theory {F E : Type*} [Field F] [Field E]
   [Algebra F E] [hgal : IsGaloisExtension F E] :
   let G := GaloisGroup F E
   let subfields := {K : Subfield E // F ≤ K}
   let subgroups := {H : Subgroup G // True}
   ∃ order_iso : subfields ≃o subgroupsᵒᵖ,
     ∀ (K : subfields) (H : subgroupsᵒᵖ),
-      order_iso K = H ↔ 
+      order_iso K = H ↔
         (K.1.fixedBy G) = H.unop.carrier := by
   sorry  -- 伽罗瓦基本定理的完整表述
 
@@ -225,7 +229,7 @@ def frobenius {p : ℕ} [Fact p.Prime] (F : Type*) [Field F] [CharP F p] : F →
 
 ```lean
 -- 三次方程的伽罗瓦理论分析
-theorem cubic_galois_group {F : Type*} [Field F] [CharZero F] (p : F[X]) 
+theorem cubic_galois_group {F : Type*} [Field F] [CharZero F] (p : F[X])
   (hp : p.natDegree = 3) (hsep : p.Separable) :
   let G := p.Gal
   G ≃* (⊤ : Subgroup (Equiv.Perm (p.rootSet (AlgebraicClosure F)))) ∨

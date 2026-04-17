@@ -68,13 +68,35 @@ references:
   - [目录](#目录)
   - [概述](#概述)
   - [一、环的基本定义](#一环的基本定义)
+    - [1.1 环的定义](#11-环的定义)
+    - [1.2 交换环](#12-交换环)
+    - [1.3 整环](#13-整环)
   - [二、理想](#二理想)
+    - [2.1 理想的定义](#21-理想的定义)
+    - [2.2 主理想](#22-主理想)
+    - [2.3 素理想与极大理想](#23-素理想与极大理想)
   - [三、商环](#三商环)
+    - [3.1 商环的构造](#31-商环的构造)
+    - [3.2 商环的泛性质](#32-商环的泛性质)
+    - [3.3 同构定理](#33-同构定理)
   - [四、多项式环](#四多项式环)
+    - [4.1 多项式环的定义](#41-多项式环的定义)
+    - [4.2 多项式的性质](#42-多项式的性质)
+    - [4.3 唯一分解性质](#43-唯一分解性质)
   - [五、主理想环与欧几里得环](#五主理想环与欧几里得环)
+    - [5.1 欧几里得环](#51-欧几里得环)
+    - [5.2 主理想环](#52-主理想环)
+    - [5.3 整数环的性质](#53-整数环的性质)
   - [六、域](#六域)
+    - [6.1 域的定义](#61-域的定义)
+    - [6.2 域扩张](#62-域扩张)
   - [七、应用案例](#七应用案例)
+    - [7.1 中国剩余定理的形式化](#71-中国剩余定理的形式化)
+    - [7.2 有限域的性质](#72-有限域的性质)
   - [八、总结](#八总结)
+    - [主要内容](#主要内容)
+    - [技术特色](#技术特色)
+    - [未来工作](#未来工作)
   - [参考文献](#参考文献)
 
 ## 概述
@@ -141,7 +163,7 @@ class IsIntegralDomain (R : Type*) [CommRing R] : Prop where
   nontrivial : ∃ a b : R, a ≠ b
 
 -- 整环性质
-theorem integral_domain_cancel {R : Type*} [CommRing R] [IsIntegralDomain R] 
+theorem integral_domain_cancel {R : Type*} [CommRing R] [IsIntegralDomain R]
   {a b c : R} (ha : a ≠ 0) (h : a * b = a * c) : b = c := by
   have : a * (b - c) = 0 := by
     rw [mul_sub, h, sub_self]
@@ -277,7 +299,7 @@ def IsMaximalIdeal {R : Type*} [CommRing R] (M : Ideal R) : Prop :=
   M ≠ ⊤ ∧ ∀ I : Ideal R, M ≤ I → I = M ∨ I = ⊤
 
 -- 极大理想是素理想
-theorem maximal_is_prime {R : Type*} [CommRing R] (M : Ideal R) 
+theorem maximal_is_prime {R : Type*} [CommRing R] (M : Ideal R)
   (hmax : IsMaximalIdeal M) : IsPrimeIdeal M := by
   constructor
   · exact hmax.1
@@ -311,7 +333,7 @@ def quotient_map : R →+* R ⧸ I :=
   Ideal.Quotient.mk I
 
 -- 商映射的核
-theorem kernel_quotient_map : 
+theorem kernel_quotient_map :
   RingHom.ker (quotient_map I) = I := by
   ext x
   simp [quotient_map, RingHom.ker]
@@ -336,7 +358,7 @@ theorem quotient_universal_property {R S : Type*} [Ring R] [Ring S]
 
 ```lean
 -- 第一同构定理
-theorem first_isomorphism_ring {R S : Type*} [Ring R] [Ring S] 
+theorem first_isomorphism_ring {R S : Type*} [Ring R] [Ring S]
   (f : R →+* S) :
   R ⧸ (RingHom.ker f) ≃+* (RingHom.range f : Subring S) := by
   apply Ideal.quotientKerEquivRange
@@ -524,7 +546,7 @@ def degree_extension (F E : Type*) [Field F] [Field E] [Algebra F E] : Cardinal 
 
 ```lean
 -- 中国剩余定理
-theorem chinese_remainder_theorem {R : Type*} [CommRing R] 
+theorem chinese_remainder_theorem {R : Type*} [CommRing R]
   (I J : Ideal R) (hcoprime : IsCoprime I J) :
   R ⧸ (I ⊓ J) ≃+* (R ⧸ I) × (R ⧸ J) := by
   apply Ideal.quotientInfRingEquivPiQuotient

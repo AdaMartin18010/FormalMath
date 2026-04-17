@@ -64,25 +64,49 @@ references:
 
 ## 目录 / Table of Contents
 
-- [Lean4形式化实现-群论 / Lean4 Formalization of Group Theory](#lean4形式化实现-群论-lean4-formalization-of-group-theory)
-  - [目录 / Table of Contents](#目录-table-of-contents)
+- [Lean4形式化实现-群论 / Lean4 Formalization of Group Theory](#lean4形式化实现-群论--lean4-formalization-of-group-theory)
+  - [目录 / Table of Contents](#目录--table-of-contents)
   - [概述](#概述)
     - [核心目标](#核心目标)
     - [技术特色](#技术特色)
     - [主要内容](#主要内容)
   - [6.1 群论基础形式化](#61-群论基础形式化)
     - [6.1.1 群的定义](#611-群的定义)
+      - [群的基本定义](#群的基本定义)
+      - [群元素的幂](#群元素的幂)
     - [6.1.2 子群与陪集](#612-子群与陪集)
+      - [子群定义](#子群定义)
+      - [陪集定义](#陪集定义)
     - [6.1.3 同态与同构](#613-同态与同构)
+      - [群同态](#群同态)
+      - [群同构](#群同构)
   - [6.2 群论定理证明](#62-群论定理证明)
     - [6.2.1 拉格朗日定理](#621-拉格朗日定理)
     - [6.2.2 同态基本定理](#622-同态基本定理)
     - [6.2.3 西罗定理](#623-西罗定理)
   - [6.3 群论算法实现](#63-群论算法实现)
+    - [6.3.1 群元素生成算法](#631-群元素生成算法)
+    - [6.3.2 子群判定算法](#632-子群判定算法)
+    - [6.3.3 群同构判定算法](#633-群同构判定算法)
   - [6.4 重要群类的形式化](#64-重要群类的形式化)
+    - [6.4.1 循环群](#641-循环群)
+    - [6.4.2 对称群](#642-对称群)
+    - [6.4.3 阿贝尔群结构定理](#643-阿贝尔群结构定理)
   - [6.5 应用案例](#65-应用案例)
+    - [案例1：对称群 S₃ 的形式化](#案例1对称群-s-的形式化)
+    - [案例2：循环群 Z₅ 的形式化](#案例2循环群-z-的形式化)
+    - [案例3：四元数群 Q₈ 的形式化](#案例3四元数群-q-的形式化)
   - [6.6 总结与展望](#66-总结与展望)
+    - [主要成就](#主要成就)
+    - [技术特色](#技术特色-1)
+    - [前沿发展](#前沿发展)
+    - [未来方向](#未来方向)
   - [参考文献](#参考文献)
+    - [Lean4相关](#lean4相关)
+    - [群论教材](#群论教材)
+    - [形式化数学](#形式化数学)
+    - [中文教材](#中文教材)
+    - [现代发展](#现代发展)
 
 ## 概述
 
@@ -124,7 +148,7 @@ import Mathlib
 variable {G : Type*} [Group G]
 
 -- 群的基本性质证明
-theorem mul_eq_one_iff_inv_eq {G : Type*} [Group G] {a b : G} : 
+theorem mul_eq_one_iff_inv_eq {G : Type*} [Group G] {a b : G} :
   a * b = 1 ↔ b = a⁻¹ := by
   constructor
   · intro h
@@ -160,7 +184,7 @@ theorem pow_add_formula {G : Type*} [Group G] (a : G) (m n : ℕ) :
   a ^ (m + n) = a ^ m * a ^ n := by
   rw [pow_add]
 
--- 幂乘法公式  
+-- 幂乘法公式
 theorem pow_mul_formula {G : Type*} [Group G] (a : G) (m n : ℕ) :
   a ^ (m * n) = (a ^ m) ^ n := by
   rw [pow_mul]
@@ -323,7 +347,7 @@ def isomorphic_groups {G H : Type*} [Group G] [Group H] : Prop :=
   ∃ f : G ≃* H, True
 
 -- 同构保持群阶
-theorem iso_preserves_order {G H : Type*} [Group G] [Group H] 
+theorem iso_preserves_order {G H : Type*} [Group G] [Group H]
   (f : G ≃* H) (g : G) :
   orderOf (f g) = orderOf g := by
   apply orderOf_eq_orderOf_iff.2
@@ -383,9 +407,9 @@ theorem pow_card_eq_one {G : Type*} [Group G] [Fintype G] (g : G) :
 
 ```lean
 -- 同态基本定理：G/ker(f) ≅ im(f)
-theorem first_isomorphism_theorem {G H : Type*} [Group G] [Group H] 
+theorem first_isomorphism_theorem {G H : Type*} [Group G] [Group H]
   (f : G →* H) :
-  ∃ φ : (G ⧸ (kernel f)) ≃* (image f), 
+  ∃ φ : (G ⧸ (kernel f)) ≃* (image f),
     ∀ g : G, φ (QuotientGroup.mk g) = f g := by
   use QuotientGroup.quotientKerEquivRange f
   intro g
@@ -408,23 +432,23 @@ theorem kernel_natural_hom {G : Type*} [Group G] (N : Subgroup G) [N.Normal] :
 
 ```lean
 -- 西罗第一定理：对任意素数幂 p^n | |G|，存在阶为 p^n 的子群
-theorem sylow_first_theorem {G : Type*} [Group G] [Fintype G] 
+theorem sylow_first_theorem {G : Type*} [Group G] [Fintype G]
   (p : ℕ) [Fact p.Prime] (n : ℕ) (hpn : p ^ n ∣ Fintype.card G) :
   ∃ H : Subgroup G, Fintype.card H = p ^ n := by
   apply Sylow.exists_subgroup_card_pow_prime
 
 -- 西罗p-子群
-def sylow_p_subgroup {G : Type*} [Group G] [Fintype G] 
+def sylow_p_subgroup {G : Type*} [Group G] [Fintype G]
   (p : ℕ) [Fact p.Prime] := Sylow p G
 
 -- 西罗第二定理：所有西罗p-子群共轭
-theorem sylow_second_theorem {G : Type*} [Group G] [Fintype G] 
+theorem sylow_second_theorem {G : Type*} [Group G] [Fintype G]
   (p : ℕ) [Fact p.Prime] (P Q : Sylow p G) :
   ∃ g : G, Q = (P : Subgroup G).map (MulAut.conj g).toMonoidHom := by
   exact Sylow.isConj P Q
 
 -- 西罗第三定理：西罗p-子群个数 ≡ 1 (mod p)
-theorem sylow_third_theorem {G : Type*} [Group G] [Fintype G] 
+theorem sylow_third_theorem {G : Type*} [Group G] [Fintype G]
   (p : ℕ) [Fact p.Prime] :
   Nat.card (Sylow p G) ≡ 1 [MOD p] := by
   apply Sylow.card_modEq_one
@@ -446,7 +470,7 @@ def generate_subgroup {G : Type*} [Group G] [DecidableEq G] (S : Set G) :
   inv_mem' := Subgroup.inv_mem _
 
 -- 生成子群的成员判定
-theorem mem_generate_subgroup {G : Type*} [Group G] [DecidableEq G] 
+theorem mem_generate_subgroup {G : Type*} [Group G] [DecidableEq G]
   (S : Set G) (g : G) :
   g ∈ generate_subgroup S ↔ g ∈ Subgroup.closure S := by
   rfl
@@ -456,7 +480,7 @@ theorem mem_generate_subgroup {G : Type*} [Group G] [DecidableEq G]
 
 ```lean
 -- 子群判定算法
-def is_subgroup_algorithm {G : Type*} [Group G] [DecidableEq G] 
+def is_subgroup_algorithm {G : Type*} [Group G] [DecidableEq G]
   (H : Set G) : Bool :=
   -- 检查非空性
   if ¬H.Nonempty then false
@@ -469,7 +493,7 @@ def is_subgroup_algorithm {G : Type*} [Group G] [DecidableEq G]
   else true
 
 -- 算法正确性证明
-theorem is_subgroup_algorithm_correct {G : Type*} [Group G] [DecidableEq G] 
+theorem is_subgroup_algorithm_correct {G : Type*} [Group G] [DecidableEq G]
   (H : Set G) :
   is_subgroup_algorithm H = true ↔ IsSubgroup H := by
   constructor
@@ -507,7 +531,7 @@ theorem is_subgroup_algorithm_correct {G : Type*} [Group G] [DecidableEq G]
 
 ```lean
 -- 群同构判定：检查两个群是否同构
-def is_isomorphic_algorithm {G H : Type*} [Group G] [Group H] 
+def is_isomorphic_algorithm {G H : Type*} [Group G] [Group H]
   [Fintype G] [Fintype H] [DecidableEq G] [DecidableEq H] : Bool :=
   -- 首先检查阶是否相同
   if Fintype.card G ≠ Fintype.card H then false
@@ -517,7 +541,7 @@ def is_isomorphic_algorithm {G H : Type*} [Group G] [Group H]
     true  -- 简化实现，实际需要更复杂的算法
 
 -- 寻找同构映射（当群足够小时）
-def find_isomorphism {G H : Type*} [Group G] [Group H] 
+def find_isomorphism {G H : Type*} [Group G] [Group H]
   [Fintype G] [Fintype H] [DecidableEq G] [DecidableEq H]
   (h : Fintype.card G = Fintype.card H) :
   Option (G ≃* H) :=
@@ -541,7 +565,7 @@ def cyclic_generator {G : Type*} [Group G] (g : G) : Prop :=
   ∀ h : G, ∃ n : ℤ, h = g ^ n
 
 -- 循环群是同构于 Z 或 Z/nZ
-theorem cyclic_group_classification {G : Type*} [Group G] 
+theorem cyclic_group_classification {G : Type*} [Group G]
   (hcyc : is_cyclic G) [Fintype G] :
   ∃ n, G ≃* Multiplicative (ZMod n) := by
   rcases hcyc with ⟨g, hg⟩
@@ -552,7 +576,7 @@ theorem cyclic_group_classification {G : Type*} [Group G]
   sorry  -- 简化实现
 
 -- 无限循环群
-theorem infinite_cyclic_iso_Z {G : Type*} [Group G] 
+theorem infinite_cyclic_iso_Z {G : Type*} [Group G]
   (hcyc : is_cyclic G) [Infinite G] :
   G ≃* Multiplicative ℤ := by
   sorry  -- 简化实现
@@ -572,7 +596,7 @@ theorem permutation_cycle_decomposition (σ : Equiv.Perm α) :
   sorry  -- 使用Mathlib的已有结果
 
 -- 置换的符号
-theorem sign_product {α : Type*} [Fintype α] [DecidableEq α] 
+theorem sign_product {α : Type*} [Fintype α] [DecidableEq α]
   (σ τ : Equiv.Perm α) :
   Equiv.Perm.sign (σ * τ) = Equiv.Perm.sign σ * Equiv.Perm.sign τ := by
   exact Equiv.Perm.sign_mul σ τ
@@ -594,11 +618,11 @@ def alternating_group (n : ℕ) : Subgroup (Equiv.Perm (Fin n)) where
 
 ```lean
 -- 有限生成阿贝尔群基本定理
-theorem finitely_generated_abelian_structure {G : Type*} 
+theorem finitely_generated_abelian_structure {G : Type*}
   [CommGroup G] [Group.FG G] :
   ∃ (r : ℕ) (tors : List ℕ),
     (∀ n ∈ tors, 0 < n) ∧
-    G ≃* (Multiplicative ℤ)^r × 
+    G ≃* (Multiplicative ℤ)^r ×
       (List.prod (tors.map (fun n => Multiplicative (ZMod n)))) := by
   sorry  -- 这是结构定理的表述，完整证明较复杂
 ```

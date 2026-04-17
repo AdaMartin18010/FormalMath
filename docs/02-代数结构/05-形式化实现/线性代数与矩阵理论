@@ -73,7 +73,7 @@ def span (s : Set V) : Subspace F V :=
   Submodule.span F s
 
 -- 基
-structure Basis (ι : Type*) (F : Type*) (V : Type*) [Field F] 
+structure Basis (ι : Type*) (F : Type*) (V : Type*) [Field F]
   [AddCommGroup V] [Module F V] where
   repr : V ≃ₗ[F] ι →₀ F
 
@@ -143,13 +143,13 @@ def Matrix' (m n : Type*) [Fintype m] [Fintype n] (α : Type*) :=
   Matrix m n α
 
 -- 矩阵加法
-theorem matrix_add_assoc {m n : Type*} [Fintype m] [Fintype n] {α : Type*} 
+theorem matrix_add_assoc {m n : Type*} [Fintype m] [Fintype n] {α : Type*}
   [AddCommGroup α] (A B C : Matrix m n α) :
   A + B + C = A + (B + C) := by
   rw [add_assoc]
 
 -- 矩阵乘法
-def matrix_mul {m n p : Type*} [Fintype n] [Fintype m] [Fintype p] {α : Type*} 
+def matrix_mul {m n p : Type*} [Fintype n] [Fintype m] [Fintype p] {α : Type*}
   [CommRing α] (A : Matrix m n α) (B : Matrix n p α) : Matrix m p α :=
   A * B
 
@@ -163,17 +163,17 @@ def identity_matrix (n : Type*) [Fintype n] [DecidableEq n] {α : Type*} [Semiri
 
 ```lean
 -- 行列式（使用Mathlib标准定义）
-def determinant {n : Type*} [Fintype n] [DecidableEq n] {α : Type*} [CommRing α] 
+def determinant {n : Type*} [Fintype n] [DecidableEq n] {α : Type*} [CommRing α]
   (A : Matrix n n α) : α :=
   A.det
 
 -- 行列式的乘法性质
-theorem det_mul {n : Type*} [Fintype n] [DecidableEq n] {α : Type*} [CommRing α] 
+theorem det_mul {n : Type*} [Fintype n] [DecidableEq n] {α : Type*} [CommRing α]
   (A B : Matrix n n α) : (A * B).det = A.det * B.det := by
   rw [Matrix.det_mul]
 
 -- 可逆矩阵
-def InvertibleMatrix {n : Type*} [Fintype n] [DecidableEq n] {α : Type*} [CommRing α] 
+def InvertibleMatrix {n : Type*} [Fintype n] [DecidableEq n] {α : Type*} [CommRing α]
   (A : Matrix n n α) : Prop :=
   IsUnit A.det
 ```
@@ -182,7 +182,7 @@ def InvertibleMatrix {n : Type*} [Fintype n] [DecidableEq n] {α : Type*} [CommR
 
 ```lean
 -- 线性映射的矩阵表示
-def toMatrix {V W : Type*} [AddCommGroup V] [AddCommGroup W] 
+def toMatrix {V W : Type*} [AddCommGroup V] [AddCommGroup W]
   [Module F V] [Module F W] [FiniteDimensional F V] [FiniteDimensional F W]
   (bV : Basis (Fin (finrank F V)) F V) (bW : Basis (Fin (finrank F W)) F W)
   (f : V →ₗ[F] W) : Matrix (Fin (finrank F W)) (Fin (finrank F V)) F :=
@@ -234,13 +234,13 @@ theorem eigenvalue_root_charpoly {n : Type*} [Fintype n] [DecidableEq n] {α : T
 -- 可对角化
 def IsDiagonalizable {n : Type*} [Fintype n] [DecidableEq n] {α : Type*} [Field α]
   (A : Matrix n n α) : Prop :=
-  ∃ P D : Matrix n n α, 
-    InvertibleMatrix P ∧ 
+  ∃ P D : Matrix n n α,
+    InvertibleMatrix P ∧
     D = Matrix.diagonal (fun i => D i i) ∧
     A = P * D * P⁻¹
 
 -- 不同特征值对应的特征向量线性无关
-theorem eigenvectors_linear_independent {n : Type*} [Fintype n] [DecidableEq n] 
+theorem eigenvectors_linear_independent {n : Type*} [Fintype n] [DecidableEq n]
   {α : Type*} [Field α] (A : Matrix n n α) (λs : Finset α)
   (hλ : ∀ λ ∈ λs, IsEigenvalue A λ)
   (hne : λs.card = finrank α (n → α)) :

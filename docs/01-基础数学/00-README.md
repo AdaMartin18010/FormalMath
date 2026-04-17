@@ -7,7 +7,7 @@ processed_at: '2026-04-05'
 
 # 基础数学 (Foundational Mathematics)
 
-**最后更新**: 2026年4月5日  
+**最后更新**: 2026年4月5日
 **MSC分类**: 00A05 (一般数学), 03E20 (集合论), 06A05 (序理论)
 
 ---
@@ -42,6 +42,7 @@ $$\mathcal{P}(A) = \{X : X \subseteq A\}$$
 **定义 2.5** (关系): $A$ 上的关系 $R$ 是 $A \times A$ 的子集。
 
 **定义 2.6** (等价关系): 关系 $R$ 是等价关系，当且仅当满足：
+
 1. **自反性**: $\forall a \in A, (a, a) \in R$
 2. **对称性**: $(a, b) \in R \Rightarrow (b, a) \in R$
 3. **传递性**: $(a, b) \in R \land (b, c) \in R \Rightarrow (a, c) \in R$
@@ -57,6 +58,7 @@ $$(h \circ g) \circ f = h \circ (g \circ f)$$
 ### 2.3 序关系
 
 **定义 2.8** (偏序): 集合 $P$ 上的偏序 $\leq$ 满足：
+
 1. **自反性**: $a \leq a$
 2. **反对称性**: $a \leq b \land b \leq a \Rightarrow a = b$
 3. **传递性**: $a \leq b \land b \leq c \Rightarrow a \leq c$
@@ -75,6 +77,7 @@ $$\forall a, b \in P, a \leq b \lor b \leq a$$
 ### 3.1 自然数
 
 **定义 3.1** (Peano公理): 自然数集 $\mathbb{N}$ 满足：
+
 1. $0 \in \mathbb{N}$
 2. 每个 $n \in \mathbb{N}$ 有唯一后继 $S(n) \in \mathbb{N}$
 3. $0$ 不是任何元素的后继
@@ -82,6 +85,7 @@ $$\forall a, b \in P, a \leq b \lor b \leq a$$
 5. **归纳原理**: $P(0) \land (P(n) \Rightarrow P(S(n))) \Rightarrow \forall n P(n)$
 
 **定义 3.2** (加法递归定义):
+
 - $n + 0 = n$
 - $n + S(m) = S(n + m)$
 
@@ -106,6 +110,7 @@ $$\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$$
 ### 3.3 实数构造
 
 **定义 3.5** (Dedekind分割): 实数是有理数集的Dedekind分割 $(A, B)$，其中：
+
 1. $A \cup B = \mathbb{Q}$, $A \cap B = \emptyset$
 2. $A \neq \emptyset$, $B \neq \emptyset$
 3. $\forall a \in A, \forall b \in B, a < b$
@@ -115,6 +120,7 @@ $$\mathbb{Q} = (\mathbb{Z} \times \mathbb{Z}^*) / \sim$$
 $$\text{有上界的非空子集必有上确界}$$
 
 **定理 3.3** (实数完备性等价形式): 以下条件等价：
+
 1. 确界原理
 2. 单调有界定理
 3. 闭区间套定理
@@ -172,13 +178,16 @@ docs/01-基础数学/
 ## 6. 学习路径
 
 ### 6.1 基础路径
+
 **集合运算** → **关系函数** → **数系构造** → **序理论**
 
 ### 6.2 前置知识
+
 - 中学数学基础
 - 逻辑推理能力
 
 ### 6.3 后续发展
+
 - **代数结构**: 群、环、域的抽象理论
 - **数理逻辑**: 形式系统与证明论
 - **集合论**: 大基数、强制法
@@ -194,12 +203,13 @@ $$a \sim b \Leftrightarrow n \mid (a - b)$$
 **示例 7.2** (良序集): 自然数集 $(\mathbb{N}, \leq)$ 是良序集（每个非空子集有最小元），但整数集 $(\mathbb{Z}, \leq)$ 不是。
 
 **示例 7.3** (归纳证明): 证明 $1 + 2 + \cdots + n = \frac{n(n+1)}{2}$
+
 - **基础**: $n=1$ 时，$1 = \frac{1 \cdot 2}{2}$ ✓
 - **归纳**: 假设对 $n$ 成立，则
   $$1 + 2 + \cdots + n + (n+1) = \frac{n(n+1)}{2} + (n+1) = \frac{(n+1)(n+2)}{2}$$ ✓
 
 ---
 
-**最后更新**: 2026年4月5日  
-**维护者**: FormalMath项目组  
+**最后更新**: 2026年4月5日
+**维护者**: FormalMath项目组
 **质量等级**: ⭐⭐⭐⭐⭐ (研究级)

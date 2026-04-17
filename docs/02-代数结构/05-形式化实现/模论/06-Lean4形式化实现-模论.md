@@ -64,14 +64,20 @@ references:
 
 ## 目录
 
-- [一、模的基本定义](#一模的基本定义)
-- [二、模同态](#二模同态)
-- [三、子模与商模](#三子模与商模)
-- [四、直和与直积](#四直和与直积)
-- [五、自由模](#五自由模)
-- [六、正合序列](#六正合序列)
-- [七、张量积](#七张量积)
-- [八、总结](#八总结)
+- [Lean4形式化实现-模论](#lean4形式化实现-模论)
+  - [目录](#目录)
+  - [一、模的基本定义](#一模的基本定义)
+    - [1.1 模的例子](#11-模的例子)
+  - [二、模同态](#二模同态)
+  - [三、子模与商模](#三子模与商模)
+    - [3.1 商模](#31-商模)
+    - [3.2 商模的泛性质](#32-商模的泛性质)
+  - [四、直和与直积](#四直和与直积)
+  - [五、自由模](#五自由模)
+  - [六、正合序列](#六正合序列)
+  - [七、张量积](#七张量积)
+  - [八、总结](#八总结)
+    - [参考文献](#参考文献)
 
 ---
 
@@ -139,17 +145,17 @@ def VectorSpace := Module F V
 
 ```lean
 -- 模同态定义（使用Mathlib标准定义）
-variable {R : Type*} [Ring R] {M N : Type*} [AddCommGroup M] [AddCommGroup N] 
+variable {R : Type*} [Ring R] {M N : Type*} [AddCommGroup M] [AddCommGroup N]
   [Module R M] [Module R N]
 
 def ModuleHom := M →ₗ[R] N
 
 -- 模同态的性质
-theorem hom_smul_comm (f : M →ₗ[R] N) (r : R) (x : M) : 
+theorem hom_smul_comm (f : M →ₗ[R] N) (r : R) (x : M) :
   f (r • x) = r • (f x) := by
   exact map_smul f r x
 
-theorem hom_add_comm (f : M →ₗ[R] N) (x y : M) : 
+theorem hom_add_comm (f : M →ₗ[R] N) (x y : M) :
   f (x + y) = f x + f y := by
   exact map_add f x y
 
@@ -230,7 +236,7 @@ theorem quotient_universal_property {P : Type*} [AddCommGroup P] [Module R P]
 
 ```lean
 -- 直积（使用Mathlib标准定义）
-variable {R : Type*} [Ring R] {ι : Type*} {M : ι → Type*} 
+variable {R : Type*} [Ring R] {ι : Type*} {M : ι → Type*}
   [∀ i, AddCommGroup (M i)] [∀ i, Module R (M i)]
 
 def DirectProduct := Π i, M i
@@ -302,7 +308,7 @@ theorem basis_linear_independent {R : Type*} [Ring R] {ι : Type*} :
 
 ```lean
 -- 正合序列的定义
-variable {R : Type*} [Ring R] {M₁ M₂ M₃ : Type*} 
+variable {R : Type*} [Ring R] {M₁ M₂ M₃ : Type*}
   [AddCommGroup M₁] [AddCommGroup M₂] [AddCommGroup M₃]
   [Module R M₁] [Module R M₂] [Module R M₃]
 
@@ -310,23 +316,23 @@ def ExactAt (f : M₁ →ₗ[R] M₂) (g : M₂ →ₗ[R] M₃) : Prop :=
   LinearMap.range f = LinearMap.ker g
 
 -- 短正合序列
-def ShortExactSequence {M₁ M₂ M₃ : Type*} 
+def ShortExactSequence {M₁ M₂ M₃ : Type*}
   [AddCommGroup M₁] [AddCommGroup M₂] [AddCommGroup M₃]
   [Module R M₁] [Module R M₂] [Module R M₃]
   (f : M₁ →ₗ[R] M₂) (g : M₂ →ₗ[R] M₃) : Prop :=
   Function.Injective f ∧ ExactAt f g ∧ Function.Surjective g
 
 -- 分裂短正合序列
-def SplitShortExactSequence {M₁ M₂ M₃ : Type*} 
+def SplitShortExactSequence {M₁ M₂ M₃ : Type*}
   [AddCommGroup M₁] [AddCommGroup M₂] [AddCommGroup M₃]
   [Module R M₁] [Module R M₂] [Module R M₃]
   (f : M₁ →ₗ[R] M₂) (g : M₂ →ₗ[R] M₃) : Prop :=
-  ShortExactSequence f g ∧ 
+  ShortExactSequence f g ∧
   (∃ s : M₂ →ₗ[R] M₁, s.comp f = LinearMap.id) ∧
   (∃ r : M₃ →ₗ[R] M₂, g.comp r = LinearMap.id)
 
 -- 分裂引理
-theorem splitting_lemma {f : M₁ →ₗ[R] M₂} {g : M₂ →ₗ[R] M₃} 
+theorem splitting_lemma {f : M₁ →ₗ[R] M₂} {g : M₂ →ₗ[R] M₃}
   (h : ShortExactSequence f g) :
   (∃ s : M₂ →ₗ[R] M₁, s.comp f = LinearMap.id) ↔
   (∃ r : M₃ →ₗ[R] M₂, g.comp r = LinearMap.id) := by
@@ -339,7 +345,7 @@ theorem splitting_lemma {f : M₁ →ₗ[R] M₂} {g : M₂ →ₗ[R] M₃}
 
 ```lean
 -- 张量积定义（使用Mathlib标准定义）
-variable {R : Type*} [CommRing R] {M N P : Type*} 
+variable {R : Type*} [CommRing R] {M N P : Type*}
   [AddCommGroup M] [AddCommGroup N] [AddCommGroup P]
   [Module R M] [Module R N] [Module R P]
 
@@ -350,10 +356,10 @@ instance : Module R (TensorProduct R M N) := by
   infer_instance
 
 -- 张量积的泛性质
-theorem tensor_product_universal_property {f : M →ₗ[R] N →ₗ[R] P} 
+theorem tensor_product_universal_property {f : M →ₗ[R] N →ₗ[R] P}
   (hf : ∀ (r : R) (m : M) (n : N), f (r • m) n = r • f m n)
   (hf' : ∀ (r : R) (m : M) (n : N), f m (r • n) = r • f m n) :
-  ∃! g : TensorProduct R M N →ₗ[R] P, 
+  ∃! g : TensorProduct R M N →ₗ[R] P,
     ∀ m n, g (m ⊗ₜ n) = f m n := by
   use TensorProduct.lift f
   constructor
@@ -367,7 +373,7 @@ theorem tensor_product_universal_property {f : M →ₗ[R] N →ₗ[R] P}
 
 -- 张量积的结合律
 theorem tensor_product_assoc {L : Type*} [AddCommGroup L] [Module R L] :
-  (TensorProduct R (TensorProduct R M N) L) ≃ₗ[R] 
+  (TensorProduct R (TensorProduct R M N) L) ≃ₗ[R]
   (TensorProduct R M (TensorProduct R N L)) := by
   exact TensorProduct.assoc R M N L
 

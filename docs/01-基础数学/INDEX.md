@@ -365,6 +365,7 @@ Phase 4: 离散结构
 ## 📚 参考文献
 
 ### 标准教材
+
 1. **Halmos, P.R.** - Naive Set Theory
 2. **Enderton, H.B.** - Elements of Set Theory
 3. **Hrbacek, K. & Jech, T.** - Introduction to Set Theory
@@ -374,6 +375,7 @@ Phase 4: 离散结构
 7. **Rosen, K.H.** - Discrete Mathematics and Its Applications
 
 ### 形式化参考
+
 1. **Avigad, J.** - Mathematical Logic and Model Theory (Lean)
 2. **Moura, L. et al.** - The Lean Theorem Prover
 3. **Theorem Proving in Lean 4** (官方教程)
@@ -393,6 +395,6 @@ Phase 4: 离散结构
 
 ---
 
-**索引版本**: 1.0  
-**最后更新**: 2026年4月8日  
+**索引版本**: 1.0
+**最后更新**: 2026年4月8日
 **维护者**: FormalMath项目组
