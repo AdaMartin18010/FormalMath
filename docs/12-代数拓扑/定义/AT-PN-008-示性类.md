@@ -25,6 +25,7 @@ related_concepts: [Euler类, Thom类, 指标定理]
 ### 向量丛
 
 **定义**：拓扑空间 $B$ 上的**实秩 $n$ 向量丛**（real rank $n$ vector bundle）是映射 $p: E \to B$，使得：
+
 - 每点 $b \in B$ 的纤维 $E_b = p^{-1}(b) \cong \mathbb{R}^n$
 - 局部平凡：$B$ 有开覆盖 $\{U_\alpha\}$，使 $p^{-1}(U_\alpha) \cong U_\alpha \times \mathbb{R}^n$
 
@@ -39,6 +40,7 @@ $$w(\xi) = 1 + w_1(\xi) + w_2(\xi) + \cdots \in H^*(B; \mathbb{Z}/2)$$
 其中 $w_i(\xi) \in H^i(B; \mathbb{Z}/2)$ 是**第 $i$ Stiefel-Whitney类**。
 
 **公理化**：
+
 1. $w_0(\xi) = 1$，$w_i(\xi) = 0$ 对 $i > \text{rank}(\xi)$
 2. **自然性**：$w(f^*\xi) = f^*w(\xi)$
 3. **Whitney和公式**：$w(\xi \oplus \eta) = w(\xi) \smile w(\eta)$
@@ -121,6 +123,7 @@ $$c(\tau) = (1 + \alpha)^{n+1} = \sum_{i=0}^n \binom{n+1}{i} \alpha^i$$
 $$c(\xi) = \prod_{i=1}^n (1 + c_1(\lambda_i))$$
 
 展开可得：
+
 - $c_1(\xi) = \sum c_1(\lambda_i)$
 - $c_2(\xi) = \sum_{i<j} c_1(\lambda_i)c_1(\lambda_j)$
 
@@ -182,6 +185,7 @@ $$H^*(BU(n); \mathbb{Z}) = \mathbb{Z}[c_1, \ldots, c_n]$$
 示性类是向量丛的拓扑不变量，将几何对象（丛）映射到代数对象（上同调类），是连接几何与拓扑的桥梁。
 
 **关键要点**：
+
 1. Stiefel-Whitney类：实丛，系数 $\mathbb{Z}/2$
 2. Chern类：复丛，系数 $\mathbb{Z}$
 3. 公理化定义保证唯一性

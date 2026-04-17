@@ -46,6 +46,7 @@ $$
 ### 收敛
 
 **定义**：谱序列**收敛**到分次群 $H_*$，记作 $E^r \Rightarrow H_*$，如果：
+
 - 对每个 $n$，存在滤过 $0 = F_{-1}H_n \subset F_0H_n \subset \cdots \subset H_n$
 - $E^\infty_{p,q} \cong F_pH_{p+q}/F_{p-1}H_{p+q}$
 
@@ -172,6 +173,7 @@ structure SpectralSequence (R : Type) [CommRing R] where
 谱序列是代数拓扑中最强大的计算工具之一，它将复杂的问题分解为可管理的代数步骤。
 
 **关键要点**：
+
 1. 谱序列是带微分的分次代数系统
 2. 每页是前一页的同调
 3. 收敛到感兴趣的不变量

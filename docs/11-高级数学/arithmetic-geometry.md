@@ -9,30 +9,56 @@ processed_at: '2026-04-05'
 ---
 # 算术几何深度版 / Arithmetic Geometry (Advanced)
 
-**主题编号**: B.11.ADV.02  
-**创建日期**: 2026年4月4日  
-**最后更新**: 2026年4月4日  
+**主题编号**: B.11.ADV.02
+**创建日期**: 2026年4月4日
+**最后更新**: 2026年4月4日
 **版本**: 深度版 (Advanced Version)
 
 ---
 
 ## 目录
 
-- [算术几何深度版 / Arithmetic Geometry (Advanced)](#算术几何深度版-arithmetic-geometry-advanced)
+- [算术几何深度版 / Arithmetic Geometry (Advanced)](#算术几何深度版--arithmetic-geometry-advanced)
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
     - [1.1 算术概形的基础理论](#11-算术概形的基础理论)
-    - 1.2 Weil猜想与étale上同调
+      - [1.1.1 算术概形的定义与性质](#111-算术概形的定义与性质)
+      - [1.1.2 平坦性与光滑性](#112-平坦性与光滑性)
+      - [1.1.3 算术曲面的相交理论](#113-算术曲面的相交理论)
+    - [1.2 Weil猜想与étale上同调](#12-weil猜想与étale上同调)
+      - [1.2.1 Weil猜想的陈述](#121-weil猜想的陈述)
+      - [1.2.2 étale上同调的构造](#122-étale上同调的构造)
+      - [1.2.3 Deligne的证明](#123-deligne的证明)
     - [1.3 L函数的特殊值](#13-l函数的特殊值)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
+      - [1.3.1 Hasse-Weil L函数](#131-hasse-weil-l函数)
+      - [1.3.2 Birch-Swinnerton-Dyer猜想](#132-birch-swinnerton-dyer猜想)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
     - [2.1 动机理论](#21-动机理论)
+      - [2.1.1 纯动机的Grothendieck构造](#211-纯动机的grothendieck构造)
+      - [2.1.2 标准猜想](#212-标准猜想)
+      - [2.1.3 混合动机](#213-混合动机)
     - [2.2 非交换算术几何](#22-非交换算术几何)
+      - [2.2.1 Connes的几何化](#221-connes的几何化)
+      - [2.2.2 导出代数几何](#222-导出代数几何)
     - [2.3 高维算术几何](#23-高维算术几何)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
+      - [2.3.1 高维簇的分类](#231-高维簇的分类)
+      - [2.3.2 异常簇的算术](#232-异常簇的算术)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
     - [3.1 p进Hodge理论的革命](#31-p进hodge理论的革命)
+      - [3.1.1 比较同构的现代形式](#311-比较同构的现代形式)
+      - [3.1.2 相对p进Hodge理论](#312-相对p进hodge理论)
     - [3.2 完美胚空间与刚性几何](#32-完美胚空间与刚性几何)
+      - [3.2.1 完美胚空间的定义](#321-完美胚空间的定义)
+      - [3.2.2 应用：局部类域论的证明](#322-应用局部类域论的证明)
     - [3.3 BSD猜想进展](#33-bsd猜想进展)
-  - [4. 参考文献 / References](#4-参考文献-references)
+      - [3.3.1 解析秩 $\\leq 1$ 的情形](#331-解析秩-leq-1-的情形)
+      - [3.3.2 Skinner-Urban突破](#332-skinner-urban突破)
+      - [3.3.3 平均BSD](#333-平均bsd)
+  - [4. 参考文献 / References](#4-参考文献--references)
+    - [经典文献](#经典文献)
+    - [现代专著](#现代专著)
+    - [前沿研究](#前沿研究)
+    - [综述与讲义](#综述与讲义)
 
 ---
 
@@ -47,6 +73,7 @@ processed_at: '2026-04-05'
 $$f: X \to \text{Spec}(\mathbb{Z})$$
 
 **维度**: 算术概形的**绝对维度**包括：
+
 - 数论维度（在 $\text{Spec}(\mathbb{Z})$ 上的纤维）
 - 几何维度（概形本身的维度）
 
@@ -60,7 +87,7 @@ $$\dim_{\text{Arakelov}} X = \dim_K X + 1$$
 
 **平坦态射**: $f: X \to Y$ 是平坦的，如果对任意 $x \in X$，局部环 $\mathcal{O}_{X,x}$ 是平坦 $\mathcal{O}_{Y,f(x)}$-模。
 
-**关键定理** (概形理论基本定理): 
+**关键定理** (概形理论基本定理):
 设 $f: X \to S$ 是固有平坦态射，则纤维的欧拉示性数 $\chi(X_s, \mathcal{F}_s)$ 是局部常数。
 
 #### 1.1.3 算术曲面的相交理论
@@ -72,6 +99,7 @@ Arakelov理论的**相交配对**:
 $$(D_1, D_2) = (D_1, D_2)_{\text{fin}} + (D_1, D_2)_{\infty}$$
 
 其中：
+
 - $(D_1, D_2)_{\text{fin}}$: 有限部分的相交数
 - $(D_1, D_2)_{\infty}$: 无穷部分的Archimedean贡献
 
@@ -98,12 +126,13 @@ $$H^i_{\text{ét}}(X, \mathcal{F}) := R^i\Gamma(X_{\text{ét}}, \mathcal{F})$$
 其中 $X_{\text{ét}}$ 是étale拓扑。
 
 **比较定理**:
+
 - 对于复代数簇：$H^i_{\text{ét}}(X, \mathbb{Z}/n) \cong H^i_{\text{sing}}(X^{\text{an}}, \mathbb{Z}/n)$
 - 对于 $\mathbb{Q}_\ell$: $H^i_{\text{ét}}(X, \mathbb{Q}_\ell) = \left(\varprojlim H^i_{\text{ét}}(X, \mathbb{Z}/\ell^n)\right) \otimes \mathbb{Q}$
 
 #### 1.2.3 Deligne的证明
 
-**关键定理** (Deligne, 1974): 
+**关键定理** (Deligne, 1974):
 对于光滑射影簇 $X/\mathbb{F}_q$，Frobenius作用的特征值 $\alpha$ 满足：
 
 $$|\alpha| = q^{i/2}$$
@@ -134,7 +163,8 @@ $$\text{ord}_{s=1} L(E, s) = r = \text{rank}(E(\mathbb{Q}))$$
 
 $$\lim_{s \to 1} \frac{L(E, s)}{(s-1)^r} = \frac{\Omega_E \cdot \text{Reg}_E \cdot \#Ш(E) \cdot \prod c_p}{\#E(\mathbb{Q})_{\text{tors}}^2}$$
 
-**当前状态**: 
+**当前状态**:
+
 - $r = 0, 1$ 时，BSD猜想对绝大多数椭圆曲线成立（Gross-Zagier, Kolyvagin）
 - $r \geq 2$ 时仍待证明
 
@@ -150,7 +180,7 @@ $$\lim_{s \to 1} \frac{L(E, s)}{(s-1)^r} = \frac{\Omega_E \cdot \text{Reg}_E \cd
 
 $$\text{Corr}(X, Y) = \{Z \subset X \times Y \mid \text{代数闭链}\}$$
 
-**有效Chow动机**: 
+**有效Chow动机**:
 
 $$\mathcal{M}_{\text{rat}}^{\text{eff}} = (\text{SmProj}_k, \text{Corr}, \otimes, \mathbb{1})$$
 
@@ -187,6 +217,7 @@ $$\text{MMHS} \supset \text{MHS}$$
 **导出概形**: 结构层为微分分次代数的环化空间。
 
 在算术几何中的应用：
+
 - 模空间的紧化
 - 相交理论的精细化
 - 形变理论
@@ -242,7 +273,8 @@ $$\text{Spa}(R[1/p], R^+)$$
 
 其中 $R$ 是**完美胚环**（tilted perfectoid ring）。
 
-**关键性质**: 
+**关键性质**:
+
 - 平坦下降有效
 - 与刚性解析几何联系
 - 完美胚提升定理
@@ -272,7 +304,7 @@ $$r_{\text{an}} = r_{\text{alg}} \pmod{p}$$
 
 #### 3.3.3 平均BSD
 
-**Bhargava-Shankar结果**: 
+**Bhargava-Shankar结果**:
 对于椭圆曲线的族，平均秩有界：
 
 $$\lim_{H \to \infty} \frac{\sum_{\text{ht}(E) \leq H} r(E)}{\#\{E : \text{ht}(E) \leq H\}} \leq \frac{7}{6}$$
@@ -294,35 +326,35 @@ $$\lim_{H \to \infty} \frac{\sum_{\text{ht}(E) \leq H} r(E)}{\#\{E : \text{ht}(E
 
 ### 现代专著
 
-4. **Neukirch, J.** (1999). *Algebraic Number Theory*. Springer.
+1. **Neukirch, J.** (1999). *Algebraic Number Theory*. Springer.
    - 代数数论的系统阐述
 
-5. **Cornell, G. & Silverman, J.H.** (Eds.) (1986). *Arithmetic Geometry*. Springer.
+2. **Cornell, G. & Silverman, J.H.** (Eds.) (1986). *Arithmetic Geometry*. Springer.
    - Storrs会议文集，算术几何的经典文集
 
-6. **Liu, Q.** (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press.
+3. **Liu, Q.** (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press.
    - 算术曲线的现代处理
 
 ### 前沿研究
 
-7. **Scholze, P.** (2012). *Perfectoid Spaces*. Publ. Math. IHÉS 116.
+1. **Scholze, P.** (2012). *Perfectoid Spaces*. Publ. Math. IHÉS 116.
    - 完美胚空间的奠基论文
 
-8. **Scholze, P.** (2013). *p-adic Hodge Theory for Rigid-Analytic Varieties*. Forum Math. Pi.
+2. **Scholze, P.** (2013). *p-adic Hodge Theory for Rigid-Analytic Varieties*. Forum Math. Pi.
    - p进Hodge理论的推广
 
-9. **Bhargava, M. & Shankar, A.** (2015). *Binary Quartic Forms Having Bounded Invariants*. Annals of Math.
+3. **Bhargava, M. & Shankar, A.** (2015). *Binary Quartic Forms Having Bounded Invariants*. Annals of Math.
    - 椭圆曲线平均秩的突破性工作
 
 ### 综述与讲义
 
-10. **Mazur, B.** (1986). *Arithmetic on Curves*. Bulletin AMS 14(2).
+1. **Mazur, B.** (1986). *Arithmetic on Curves*. Bulletin AMS 14(2).
     - 算术曲线的优美综述
 
-11. **Wüstholz, G.** (Ed.) (2002). *A Panorama of Discrepancy Theory*. Springer.
+2. **Wüstholz, G.** (Ed.) (2002). *A Panorama of Discrepancy Theory*. Springer.
     - 数论与几何的联系
 
-12. **Tao, T.** (2007). *Structure and Randomness in the Prime Numbers*. 
+3. **Tao, T.** (2007). *Structure and Randomness in the Prime Numbers*.
     - 素数分布的现代观点
 
 ---

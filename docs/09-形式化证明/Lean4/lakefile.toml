@@ -8,8 +8,6 @@ name = "FormalMathLean4"
 [[require]]
 name = "mathlib"
 scope = "leanprover-community"
-version = "v4.19.0"
+version = "git#v4.19.0"
 
-[[lean_exe]]
-name = "FormalMathLean4"
-root = "Main"
+

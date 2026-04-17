@@ -72,15 +72,15 @@ references:
 
 ### 原题 (ETH 401-3532 Übung 1.1)
 
-> **Aufgabe** (Streng): 
-> Es sei $(X, \mathcal{O}_X)$ ein lokal geringter Raum. 
+> **Aufgabe** (Streng):
+> Es sei $(X, \mathcal{O}_X)$ ein lokal geringter Raum.
 > Man zeige streng, dass die folgenden Aussagen äquivalent sind:
-> 
+>
 > (a) $(X, \mathcal{O}_X)$ ist ein Schema;
-> 
-> (b) Für jeden Punkt $x \in X$ existiert eine offene Umgebung $U \subseteq X$, 
->     so dass $(U, \mathcal{O}_X|_U)$ isomorph zu einem affinen Schema ist;
-> 
+>
+> (b) Für jeden Punkt $x \in X$ existiert eine offene Umgebung $U \subseteq X$,
+> so dass $(U, \mathcal{O}_X|_U)$ isomorph zu einem affinen Schema ist;
+>
 > (c) $X$ besitzt eine offene Überdeckung durch affine Schemata.
 
 ### 中文翻译
@@ -88,12 +88,12 @@ references:
 > **习题** (严格)：
 > 设 $(X, \mathcal{O}_X)$ 为局部环化空间。
 > 严格证明以下陈述等价：
-> 
+>
 > (a) $(X, \mathcal{O}_X)$ 是概形；
-> 
+>
 > (b) 对每一点 $x \in X$，存在开邻域 $U \subseteq X$，
->     使得 $(U, \mathcal{O}_X|_U)$ 同构于某个仿射概形；
-> 
+> 使得 $(U, \mathcal{O}_X|_U)$ 同构于某个仿射概形；
+>
 > (c) $X$ 可被仿射概形开覆盖。
 
 ---
@@ -149,8 +149,8 @@ references:
 
 Nach der **Definition eines Schemas** (Hartshorne II.2, ETH Kapitel 1.1):
 
-> Ein Schema ist ein lokal geringter Raum $(X, \mathcal{O}_X)$, 
-> bei dem jeder Punkt $x \in X$ eine offene Umgebung $U$ besitzt, 
+> Ein Schema ist ein lokal geringter Raum $(X, \mathcal{O}_X)$,
+> bei dem jeder Punkt $x \in X$ eine offene Umgebung $U$ besitzt,
 > so dass $(U, \mathcal{O}_X|_U)$ isomorph zu einem affinen Schema ist.
 
 Das ist genau die Aussage (b). ∎
@@ -172,7 +172,7 @@ Betrachten wir die Familie $\{U_x\}_{x \in X}$:
 
 **(i) Offenheit**: Jedes $U_x$ ist offen in $X$ (nach Konstruktion).
 
-**(ii) Überdeckung**: 
+**(ii) Überdeckung**:
 $$\bigcup_{x \in X} U_x = X$$
 Denn für jedes $y \in X$ gilt $y \in U_y$ (da $U_y$ Umgebung von $y$ ist).
 
@@ -198,12 +198,12 @@ Wir müssen die **Definition eines Schemas** strikt überprüfen.
 
 Sei $x \in X$ beliebig. Da $\{U_i\}$ eine Überdeckung ist, existiert $i \in I$ mit $x \in U_i$.
 
-Da $U_i$ offen ist und $(U_i, \mathcal{O}_X|_{U_i}) \cong \operatorname{Spec}(A_i)$, 
+Da $U_i$ offen ist und $(U_i, \mathcal{O}_X|_{U_i}) \cong \operatorname{Spec}(A_i)$,
 haben wir eine affine offene Umgebung von $x$ gefunden.
 
 **Schritt 3.3**: Schlussfolgerung.
 
-Da jedes $x \in X$ eine affine offene Umgebung besitzt, 
+Da jedes $x \in X$ eine affine offene Umgebung besitzt,
 ist $(X, \mathcal{O}_X)$ nach Definition ein Schema. ∎
 
 ---
@@ -213,7 +213,7 @@ ist $(X, \mathcal{O}_X)$ nach Definition ein Schema. ∎
 ```
 Äquivalenzkette (vollständig bewiesen):
 
-(a) Schema 
+(a) Schema
     ⇓ [Definition]
 (b) Lokale Affinität
     ⇓ [Konstruktion der Überdeckung]
@@ -231,9 +231,11 @@ ist $(X, \mathcal{O}_X)$ nach Definition ein Schema. ∎
 Die Äquivalenz ist **natürlich** in folgendem Sinne:
 
 Für einen Morphismus lokal geringter Räume $f: (X, \mathcal{O}_X) \to (Y, \mathcal{O}_Y)$:
+
 - $X$ ist Schema $\Leftrightarrow$ $Y$ ist Schema (lokal auf der Basis)
 
 Das Diagramm kommutiert:
+
 ```
 X Schema ──────> lokale Affinität
     │                  │
@@ -245,6 +247,7 @@ Y Schema ──────> lokale Affinität
 ### 函子性 (Funktorialität)
 
 Die Äquivalenz respektiert:
+
 - **Restriktion**: Auf offenen Unterschemata bleibt die Eigenschaft erhalten
 - **Basiswechsel**: Unter Basiswechsel bleibt die Schemastruktur erhalten
 
@@ -280,6 +283,7 @@ Die Äquivalenz respektiert:
 ### 变式1: Noether概形的等价刻画
 
 **Aufgabe**: 证明对局部Noether概形，以下条件等价：
+
 - (a) $X$ 是Noether概形
 - (b) $X$ 可被有限个仿射开集覆盖，每个都是Noether环的谱
 
@@ -312,7 +316,7 @@ $U \cap V$ 也是仿射的。
 
 ---
 
-**创建日期**: 2026-04-10  
-**难度**: ⭐⭐⭐  
-**ETH风格**: Strenger Stil (严格)  
+**创建日期**: 2026-04-10
+**难度**: ⭐⭐⭐
+**ETH风格**: Strenger Stil (严格)
 **预计用时**: 60-90分钟

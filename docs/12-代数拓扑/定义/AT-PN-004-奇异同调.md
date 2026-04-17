@@ -65,6 +65,7 @@ $$\partial^2 \sigma = \sum_{j < i} (-1)^{i+j} \sigma \circ \varepsilon_i \circ \
 $$H_n(X) = \frac{\ker \partial_n}{\text{im } \partial_{n+1}} = \frac{Z_n(X)}{B_n(X)}$$
 
 其中：
+
 - $Z_n(X) = \ker \partial_n$ 称为**$n$-闭链群**（cycles）
 - $B_n(X) = \text{im } \partial_{n+1}$ 称为**$n$-边缘链群**（boundaries）
 
@@ -119,6 +120,7 @@ $$H_k(S^n) = \begin{cases} \mathbb{Z} & k = 0, n \\ 0 & \text{其他} \end{cases
 ### 函子性
 
 **定理**：$H_n$ 是从拓扑空间到Abel群的协变函子：
+
 - 对 $f: X \to Y$，诱导 $f_*: H_n(X) \to H_n(Y)$
 - $(f \circ g)_* = f_* \circ g_*$
 - $(\text{id})_* = \text{id}$
@@ -163,7 +165,7 @@ $$\cdots \to H_n(A) \xrightarrow{i_*} H_n(X) \xrightarrow{j_*} H_n(X, A) \xright
 import Mathlib.Algebra.Homology.ChainComplex
 
 -- 链复形的定义
-abbrev ChainComplex (C : Type) [Category C] [Abelian C] := 
+abbrev ChainComplex (C : Type) [Category C] [Abelian C] :=
   ComplexShape.down C
 ```
 
@@ -194,6 +196,7 @@ abbrev ChainComplex (C : Type) [Category C] [Abelian C] :=
 奇异同调是代数拓扑中最基本的同调理论，它通过"代数化"拓扑空间的结构来提取不变量。
 
 **关键要点**：
+
 1. 奇异单形是到拓扑空间的连续映射
 2. 边缘算子满足 $\partial^2 = 0$，保证同调定义良好
 3. 同调是同伦不变量

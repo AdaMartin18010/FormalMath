@@ -122,10 +122,12 @@ $$y^2 z = x^3 + axz^2 + bz^3$$
 $$h^0(E, \mathcal{O}_E(D)) - h^1(E, \mathcal{O}_E(D)) = \deg(D)$$
 
 特别地：
+
 - $\deg(D) < 0$ 时，$h^0 = 0$。
 - $\deg(D) > 0$ 时，$h^0 = \deg(D)$，$h^1 = 0$（由 Serre 对偶，$h^1 = h^0(\mathcal{O}_E(-D)) = 0$）。
 
 **步骤 2：构造坐标函数**。取 $D = nO$：
+
 - $h^0(\mathcal{O}_E(O)) = 1$：只有常数函数。
 - $h^0(\mathcal{O}_E(2O)) = 2$：存在一个亚纯函数 $x$，在 $O$ 处有 2 阶极点。
 - $h^0(\mathcal{O}_E(3O)) = 3$：存在一个亚纯函数 $y$，在 $O$ 处有 3 阶极点，且 $y$ 与 $1, x$ 线性无关。
@@ -183,6 +185,7 @@ $$\phi(P \oplus Q) = \phi(P) + \phi(Q)$$
 **(1)**：由 Bezout 定理，平面三次曲线与一条直线的交点个数（计重数）为 $3 \times 1 = 3$。给定 $P$ 和 $Q$，通过它们的直线 $L$ 已经与 $E$ 有两个交点（计重数），故还剩一个交点 $R$，唯一确定。当 $P = Q$ 时，$L$ 取切线；当 $P, Q, O$ 共线时（即垂直线），$R = O$。
 
 **(2)**：群公理的验证即定理 2 的内容。补充细节：
+
 - **单位元**：$P + O$ 对应通过 $P, O$ 的直线（垂直线），第三交点 $R$ 是 $P$ 关于 $x$-轴的反射点 $-P$。再反射一次得 $P$。故 $P + O = P$。
 - **逆元**：$P + (-P)$ 对应通过 $P, -P$ 的垂直线，第三交点为 $O$。反射 $O$ 关于 $x$-轴仍是 $O$。故 $P + (-P) = O$。
 - **结合律**：用 $\operatorname{Pic}^0(E)$ 的群结构来传递。弦切法则的几何构造 precisely 对应于除子类的加法。
@@ -210,10 +213,12 @@ $$\phi(P \oplus Q) = \phi(P) + \phi(Q)$$
 此即定理 1 证明的详细展开。
 
 **(1)**：由 Riemann-Roch，$h^0(\mathcal{O}_E(nO)) = n$（$n \geq 1$）。故
+
 - $\dim H^0(\mathcal{O}_E(2O)) = 2 > 1$，存在非常数函数 $x$。
 - $\dim H^0(\mathcal{O}_E(3O)) = 3 > 2$，存在与 $1, x$ 线性无关的函数 $y$。
 
 **(2)**：
+
 - $H^0(\mathcal{O}_E(O)) = k \cdot 1$（只有常数函数）。
 - $H^0(\mathcal{O}_E(2O))$ 包含 $H^0(\mathcal{O}_E(O))$，且维数为 2。故若 $x$ 非常数，则 $\{1, x\}$ 是基。
 - 同理，$H^0(\mathcal{O}_E(3O))$ 包含 $H^0(\mathcal{O}_E(2O))$，维数为 3，故 $\{1, x, y\}$ 是基。
@@ -242,7 +247,7 @@ open AlgebraicGeometry
 variable {k : Type*} [Field k] [IsAlgClosed k]
 
 /-- 椭圆曲线的定义：亏格1 + 有理点 -/
-example (E : Scheme) [IsEllipticCurve E] : 
+example (E : Scheme) [IsEllipticCurve E] :
     Genus E = 1 ∧ ∃ O : E, IsRationalPoint O := by
   -- 对应于 FOAG 中椭圆曲线的定义
   sorry
@@ -254,7 +259,7 @@ example (a b : k) (h : 4*a^3 + 27*b^2 ≠ 0) :
   sorry
 
 /-- 弦切群律 -/
-example (E : WeierstrassCurve k) (P Q : E) : 
+example (E : WeierstrassCurve k) (P Q : E) :
     E.add P Q = E.neg (E.thirdIntersectionPoint P Q) := by
   -- 群律的几何定义
   sorry

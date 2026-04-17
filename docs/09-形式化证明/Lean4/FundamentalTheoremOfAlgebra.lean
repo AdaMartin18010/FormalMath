@@ -135,9 +135,8 @@ theorem real_polynomial_complex_roots_pair
     p.map (algebraMap ℝ ℂ).eval (star z) = 0 := by
   -- 验证实多项式在共轭点取值
   have h : (p.map (algebraMap ℝ ℂ).eval (star z)) = star (p.map (algebraMap ℝ ℂ).eval z) := by
-    simp [Polynomial.eval, star_sum, star_mul, star_pow]
-    -- 实系数意味着共轭不变
-    sorry -- 需要更多引理支持
+    rw [Polynomial.eval_map, Polynomial.eval_map]
+    simp [star_sum, star_mul, star_pow, star_algebraMap]
   rw [h, hz]
   simp
 

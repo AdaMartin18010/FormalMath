@@ -346,8 +346,8 @@ theorem classGroup_of_puncturedProjectiveSpace
     (n : ℕ) (k : Type*) [Field k] (Z : TopologicalSpace.Closeds
       (ProjectiveScheme (Fin (n + 1)) k).toTop)
     (hZ : dimension Z.carrier ≤ n - 2) :
-    ClassGroup ((ProjectiveScheme (Fin (n + 1)) k) 
-      
+    ClassGroup ((ProjectiveScheme (Fin (n + 1)) k)
+
       (Z.carrierᶜ : (ProjectiveScheme (Fin (n + 1)) k).Opens)) ≅ Multiplicative ℤ :=
   sorry
 ```

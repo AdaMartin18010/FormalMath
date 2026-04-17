@@ -12,27 +12,66 @@ processed_at: '2026-04-09'
 
 # MathOverflow表示论精华对齐文档
 
-**版本**: v1.0  
-**生成日期**: 2026年4月9日  
-**来源平台**: MathOverflow (mathoverflow.net)  
-**核心领域**: 表示论、李理论  
+**版本**: v1.0
+**生成日期**: 2026年4月9日
+**来源平台**: MathOverflow (mathoverflow.net)
+**核心领域**: 表示论、李理论
 
 ---
 
 ## 目录
 
-- [一、概述与背景](#一概述与背景)
-- [二、MathOverflow表示论主题分布](#二mathoverflow表示论主题分布)
-- [三、经典问答深度解析](#三经典问答深度解析)
-  - [3.1 表示论的统一视角](#31-表示论的统一视角)
-  - [3.2 特征标理论的深刻洞见](#32-特征标理论的深刻洞见)
-  - [3.3 李代数表示的分类](#33-李代数表示的分类)
-  - [3.4 几何表示论入门](#34-几何表示论入门)
-- [四、常见误区与澄清](#四常见误区与澄清)
-- [五、与其他领域的联系](#五与其他领域的联系)
-- [六、思维导图](#六思维导图)
-- [七、与FormalMath概念链接](#七与formalmath概念链接)
-- [八、专家推荐书单](#八专家推荐书单)
+- [MathOverflow表示论精华对齐文档](#mathoverflow表示论精华对齐文档)
+  - [目录](#目录)
+  - [一、概述与背景](#一概述与背景)
+    - [1.1 表示论在MO的地位](#11-表示论在mo的地位)
+    - [1.2 活跃专家与贡献](#12-活跃专家与贡献)
+  - [二、MathOverflow表示论主题分布](#二mathoverflow表示论主题分布)
+    - [2.1 高频讨论主题TOP10](#21-高频讨论主题top10)
+  - [三、经典问答深度解析](#三经典问答深度解析)
+    - [3.1 表示论的统一视角](#31-表示论的统一视角)
+      - [核心洞见](#核心洞见)
+      - [表示论的三种视角](#表示论的三种视角)
+      - [表示论的重要性](#表示论的重要性)
+      - [FormalMath链接](#formalmath链接)
+    - [3.2 特征标理论的深刻洞见](#32-特征标理论的深刻洞见)
+      - [核心洞见](#核心洞见-1)
+      - [特征标表的结构](#特征标表的结构)
+      - [特征标表决定群的什么？](#特征标表决定群的什么)
+      - [经典反例](#经典反例)
+      - [FormalMath链接](#formalmath链接-1)
+    - [3.3 李代数表示的分类](#33-李代数表示的分类)
+      - [核心洞见](#核心洞见-2)
+      - [最高权理论的框架](#最高权理论的框架)
+      - [经典系列的表示](#经典系列的表示)
+      - [Casimir元素与表示性质](#casimir元素与表示性质)
+      - [FormalMath链接](#formalmath链接-2)
+    - [3.4 几何表示论入门](#34-几何表示论入门)
+      - [核心洞见](#核心洞见-3)
+      - [Beilinson-Bernstein对应](#beilinson-bernstein对应)
+      - [几何表示论的支柱](#几何表示论的支柱)
+      - [例子：sl₂的表示](#例子sl的表示)
+      - [FormalMath链接](#formalmath链接-3)
+  - [四、常见误区与澄清](#四常见误区与澄清)
+    - [4.1 表示论学习中的十大误区](#41-表示论学习中的十大误区)
+    - [4.2 技术陷阱](#42-技术陷阱)
+  - [五、与其他领域的联系](#五与其他领域的联系)
+    - [5.1 表示论的交叉网络](#51-表示论的交叉网络)
+    - [5.2 具体联系示例](#52-具体联系示例)
+  - [六、思维导图](#六思维导图)
+    - [6.1 表示论核心问题关系图](#61-表示论核心问题关系图)
+    - [6.2 最高权理论学习路径](#62-最高权理论学习路径)
+  - [七、与FormalMath概念链接](#七与formalmath概念链接)
+    - [7.1 已覆盖概念映射](#71-已覆盖概念映射)
+    - [7.2 建议补充内容](#72-建议补充内容)
+  - [八、专家推荐书单](#八专家推荐书单)
+    - [8.1 入门阶段](#81-入门阶段)
+    - [8.2 进阶阶段](#82-进阶阶段)
+    - [8.3 专题深入](#83-专题深入)
+    - [8.4 在线资源](#84-在线资源)
+  - [附录](#附录)
+    - [A. MathOverflow相关标签](#a-mathoverflow相关标签)
+    - [B. 重要定理速查](#b-重要定理速查)
 
 ---
 
@@ -93,8 +132,8 @@ processed_at: '2026-04-09'
 
 ### 3.1 表示论的统一视角
 
-**原问题**: [Why are (representations of) groups so important in mathematics?](https://mathoverflow.net/q/39488)  
-**提问者**: Amritanshu Prasad  
+**原问题**: [Why are (representations of) groups so important in mathematics?](https://mathoverflow.net/q/39488)
+**提问者**: Amritanshu Prasad
 **最高票回答**: Theo Johnson-Freyd (投票: 287) + 多位专家补充
 
 #### 核心洞见
@@ -145,6 +184,7 @@ Theo Johnson-Freyd阐明表示论的**"对称性线性化"**本质:
 | **代数几何** | 几何不变量 | 代数群作用的商空间 |
 
 #### FormalMath链接
+
 - [群表示](concept/核心概念/群表示.md)
 - [群代数](concept/代数结构/群代数.md)
 - [张量范畴](concept/范畴论/张量范畴.md)
@@ -153,8 +193,8 @@ Theo Johnson-Freyd阐明表示论的**"对称性线性化"**本质:
 
 ### 3.2 特征标理论的深刻洞见
 
-**原问题**: [What is the significance of the character table of a finite group?](https://mathoverflow.net/q/35195)  
-**提问者**: David Roberts  
+**原问题**: [What is the significance of the character table of a finite group?](https://mathoverflow.net/q/35195)
+**提问者**: David Roberts
 **最高票回答**: Ben Webster (投票: 234)
 
 #### 核心洞见
@@ -216,6 +256,7 @@ Q₈ = ⟨i,j | i⁴ = 1, i² = j², ij = ji⁻¹⟩  (四元数群)
 ```
 
 #### FormalMath链接
+
 - [特征标](concept/表示论/特征标.md)
 - [类函数](concept/表示论/类函数.md)
 - [特征标表](concept/表示论/特征标表.md)
@@ -224,8 +265,8 @@ Q₈ = ⟨i,j | i⁴ = 1, i² = j², ij = ji⁻¹⟩  (四元数群)
 
 ### 3.3 李代数表示的分类
 
-**原问题**: [Intuition for the Casimir element?](https://mathoverflow.net/q/27749)  
-**提问者**: Peter Woit  
+**原问题**: [Intuition for the Casimir element?](https://mathoverflow.net/q/27749)
+**提问者**: Peter Woit
 **最高票回答**: David Speyer (投票: 198)
 
 #### 核心洞见
@@ -285,6 +326,7 @@ Casimir元素 C ∈ Z(U(g))
 ```
 
 #### FormalMath链接
+
 - [李代数](concept/核心概念/李代数.md)
 - [最高权](concept/李代数/最高权.md)
 - [Weyl群](concept/李代数/Weyl群.md)
@@ -294,8 +336,8 @@ Casimir元素 C ∈ Z(U(g))
 
 ### 3.4 几何表示论入门
 
-**原问题**: [What is the relation between Geometric Representation Theory and the Langlands program?](https://mathoverflow.net/q/41524)  
-**提问者**: Jan Weidner  
+**原问题**: [What is the relation between Geometric Representation Theory and the Langlands program?](https://mathoverflow.net/q/41524)
+**提问者**: Jan Weidner
 **最高票回答**: David Ben-Zvi (投票: 267)
 
 #### 核心洞见
@@ -356,6 +398,7 @@ D-模对应:
 ```
 
 #### FormalMath链接
+
 - [D-模](concept/代数几何/D-模.md)
 - [旗流形](concept/李群/旗流形.md)
 - [几何表示论](concept/表示论/几何表示论.md)
@@ -457,48 +500,48 @@ graph TB
     RT --> LIE[李理论]
     RT --> GEOM[几何表示论]
     RT --> CATEG[范畴表示论]
-    
+
     FG --> CHAR[特征标理论]
     FG --> IND[诱导表示]
     FG --> MOD[模表示]
-    
+
     CHAR --> ORTHO[正交关系]
     CHAR --> TABLE[特征标表]
     CHAR --> FOURIER[Fourier分析]
-    
+
     IND --> FROB[Frobenius互反]
     IND --> MACKEY[Mackey理论]
-    
+
     LIE --> LIEALG[李代数表示]
     LIE --> LIEGRP[李群表示]
     LIE --> COMPACT[紧群表示]
-    
+
     LIEALG --> WEIGHT[权理论]
     LIEALG --> VERMA[Verma模]
     LIEALG --> CATEGORYO[Category O]
-    
+
     WEIGHT --> DOMINANT[支配权]
     WEIGHT --> WEYL[Weyl群作用]
     WEIGHT --> CHARACTER[Weyl特征标]
-    
+
     COMPACT --> PETER[Peter-Weyl定理]
     COMPACT --> PONTRYAGIN[Pontryagin对偶]
-    
+
     GEOM --> FLAG[旗流形]
     GEOM --> DMOD[D-模]
     GEOM --> PERVERSE[反常层]
     GEOM --> SPRINGER[Springer理论]
-    
+
     FLAG --> BORELWEIL[Borel-Weil]
     FLAG --> BEILINSON[Beilinson-Bernstein]
-    
+
     CATEG --> TENSOR[张量范畴]
     CATEG --> 2REP[2-表示]
     CATEG --> CATEGORIFICATION[范畴化]
-    
+
     TENSOR --> FUSION[融合范畴]
     TENSOR --> BRAIDING[辫结构]
-    
+
     style RT fill:#f9f,stroke:#333,stroke-width:4px
     style FG fill:#bbf,stroke:#333
     style LIE fill:#bfb,stroke:#333
@@ -511,37 +554,37 @@ graph TB
 ```mermaid
 graph LR
     START[学习最高权理论] --> BASICS[基础知识]
-    
+
     BASICS --> SEMISIMPLE[半单李代数]
     BASICS --> ROOT[根系理论]
     BASICS --> CARTAN[Cartan子代数]
-    
+
     SEMISIMPLE --> KILLING[Killing型]
     SEMISIMPLE --> DECOMPOSITION[根空间分解]
-    
+
     ROOT --> WEYLGROUP[Weyl群]
     ROOT --> POSITIVE[正根选择]
     ROOT --> DYNKIN[Dynkin图]
-    
+
     BASICS --> WEIGHT2[权理论]
-    
+
     WEIGHT2 --> FUNDAMENTAL[基本权]
     WEIGHT2 --> DOMINANT2[支配整权]
     WEIGHT2 --> LATTICE[权格]
-    
+
     WEIGHT2 --> REPRESENTATIONS[表示构造]
-    
+
     REPRESENTATIONS --> VERMA2[Verma模]
     REPRESENTATIONS --> IRREDUCIBLE[不可约表示]
     REPRESENTATIONS --> FINITE[有限维性判据]
-    
+
     VERMA2 --> UNIVERSAL[泛性质]
     VERMA2 --> SUBMODULE[子模结构]
-    
+
     IRREDUCIBLE --> QUOTIENT[Verma模的商]
     IRREDUCIBLE --> CHARACTER[特征标公式]
     IRREDUCIBLE --> DIMENSION[维数公式]
-    
+
     style START fill:#f9f,stroke:#333,stroke-width:4px
     style REPRESENTATIONS fill:#bfb,stroke:#333,stroke-width:2px
 ```

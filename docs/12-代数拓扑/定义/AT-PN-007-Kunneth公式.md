@@ -39,6 +39,7 @@ $$H_n(X \times Y) \cong \bigoplus_{i+j=n} H_i(X) \otimes H_j(Y) \oplus \bigoplus
 $$H^*(X \times Y; F) \cong H^*(X; F) \otimes_F H^*(Y; F)$$
 
 作为**分次** $F$-代数，右端配备：
+
 - $(a \otimes b)(c \otimes d) = (-1)^{|b||c|} ac \otimes bd$（分次乘法）
 
 ### 代数Kunneth公式
@@ -72,6 +73,7 @@ $$H_2(T^2) = H_1(S^1) \otimes H_1(S^1) = \mathbb{Z} \otimes \mathbb{Z} = \mathbb
 ### 例3：积空间 $S^2 \times S^3$
 
 **计算**：
+
 - $H_0 = \mathbb{Z}$
 - $H_2 = \mathbb{Z}$（来自 $H_2(S^2) \otimes H_0(S^3)$）
 - $H_3 = \mathbb{Z}$（来自 $H_0(S^2) \otimes H_3(S^3)$）
@@ -164,6 +166,7 @@ variable {C D : ChainComplex (Module R)}
 Kunneth公式提供了计算积空间同调的系统性方法，将复杂的几何问题转化为代数的张量积计算。
 
 **关键要点**：
+
 1. Kunneth公式将 $H_*(X \times Y)$ 与 $H_*(X)$ 和 $H_*(Y)$ 联系起来
 2. 包含张量积项和Tor修正项
 3. 域系数时无Tor项

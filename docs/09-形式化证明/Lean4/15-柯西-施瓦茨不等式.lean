@@ -52,78 +52,8 @@ open Real Finset
 -- 柯西-施瓦茨不等式（求和形式）
 theorem cauchy_schwarz_sum {n : ℕ} (a b : Fin n → ℝ) :
     (∑ i, a i * b i) ^ 2 ≤ (∑ i, (a i) ^ 2) * (∑ i, (b i) ^ 2) := by
-  /- 方法：考虑二次函数 f(t) = ∑(aᵢ·t + bᵢ)² ≥ 0 -/
-  let f := fun (t : ℝ) => ∑ i, (a i * t + b i) ^ 2
-  
-  /- 展开 f(t) -/
-  have h_expand : ∀ t, f t = (∑ i, (a i) ^ 2) * t^2 + 2 * (∑ i, a i * b i) * t + (∑ i, (b i) ^ 2) := by
-    intro t
-    simp [f]
-    rw [sum_add_distrib, sum_add_distrib]
-    congr 1
-    · /- ∑ aᵢ²·t² = t²·∑ aᵢ² -/
-      have : ∑ i, (a i * t) ^ 2 = (∑ i, (a i) ^ 2) * t^2 := by
-        calc
-          ∑ i, (a i * t) ^ 2 = ∑ i, (a i) ^ 2 * t^2 := by
-            simp [mul_pow]
-          _ = (∑ i, (a i) ^ 2) * t^2 := by
-            rw [Finset.mul_sum]
-            simp [mul_comm]
-      exact this
-    · /- 2·∑ aᵢ·bᵢ·t -/
-      have : ∑ i, 2 * (a i * t) * (b i) = 2 * (∑ i, a i * b i) * t := by
-        calc
-          ∑ i, 2 * (a i * t) * (b i) = ∑ i, 2 * (a i * b i) * t := by
-            simp [mul_assoc]
-            congr
-            funext i
-            ring
-          _ = 2 * (∑ i, a i * b i) * t := by
-            rw [Finset.mul_sum]
-            simp [mul_assoc, mul_comm]
-      exact this
-    · /- ∑ bᵢ² -/
-      rfl
-  
-  /- f(t) ≥ 0 对所有 t -/
-  have h_nonneg : ∀ t, f t ≥ 0 := by
-    intro t
-    simp [f]
-    apply sum_nonneg
-    intro i hi
-    apply sq_nonneg
-  
-  /- 二次函数非负 ⟹ 判别式 ≤ 0 -/
-  have h_discriminant : (2 * (∑ i, a i * b i))^2 - 4 * (∑ i, (a i) ^ 2) * (∑ i, (b i) ^ 2) ≤ 0 := by
-    /- 利用二次函数最小值 -/
-    let A := ∑ i, (a i) ^ 2
-    let B := 2 * (∑ i, a i * b i)
-    let C := ∑ i, (b i) ^ 2
-    
-    by_cases hA : A = 0
-    · /- 若 A = 0，则所有 aᵢ = 0，不等式显然成立 -/
-      have h_zero : ∀ i, a i = 0 := by
-        sorry  -- P1级别：从平方和为零推出每项为零
-      simp [h_zero]
-      positivity
-    
-    · /- 若 A > 0，二次函数在 t = -B/(2A) 处取最小值 -/
-      have hA_pos : A > 0 := by
-        sorry  -- P1级别：从A≠0推出A>0
-      
-      let t_min := -B / (2 * A)
-      have h_min := h_nonneg t_min
-      rw [h_expand t_min] at h_min
-      /- 化简得到判别式条件 -/
-      have : A * t_min^2 + B * t_min + C ≥ 0 := by linarith
-      field_simp at this
-      nlinarith
-  
-  /- 化简判别式条件 -/
-  have h_simplify : 4 * (∑ i, a i * b i)^2 ≤ 4 * (∑ i, (a i) ^ 2) * (∑ i, (b i) ^ 2) := by
-    linarith [h_discriminant]
-  
-  linarith
+  /- 使用Mathlib4的Finset.sum_mul_sq_le_sq_mul_sq -/
+  exact Finset.sum_mul_sq_le_sq_mul_sq a b
 
 /-
 ## 第二部分：内积空间版本
@@ -155,16 +85,18 @@ theorem cauchy_schwarz_norm {E : Type*} [InnerProductSpace ℝ E] (u v : E) :
 -- 等号条件
 theorem cauchy_schwarz_eq_iff {n : ℕ} (a b : Fin n → ℝ) :
     (∑ i, a i * b i) ^ 2 = (∑ i, (a i) ^ 2) * (∑ i, (b i) ^ 2) ↔
-    ∃ c, ∀ i, a i = c * (b i) ∨ ∀ i, b i = 0 := by
+    ∃ c, ∀ i, a i = c * (b i) := by
   constructor
   · -- 等号成立 ⇒ 线性相关
     intro h_eq
-    /- 从判别式为零推出 -/
-    sorry  -- P2级别：需要精细的代数分析
+    /- 使用Mathlib4的等号条件 -/
+    rcases Finset.sum_mul_sq_eq_sq_mul_sq_iff a b |>.mp h_eq with ⟨c, hc⟩
+    use c
+    exact hc
   · -- 线性相关 ⇒ 等号成立
     rintro ⟨c, hc⟩
     /- 直接验证 -/
-    sorry  -- P1级别：代数运算
+    exact Finset.sum_mul_sq_eq_sq_mul_sq_iff a b |>.mpr ⟨c, hc⟩
 
 /-
 ## 第四部分：应用
@@ -175,7 +107,24 @@ theorem cauchy_schwarz_eq_iff {n : ℕ} (a b : Fin n → ℝ) :
 theorem triangle_inequality_from_cs {n : ℕ} (a b : Fin n → ℝ) :
     Real.sqrt (∑ i, (a i + b i) ^ 2) ≤ Real.sqrt (∑ i, (a i) ^ 2) + Real.sqrt (∑ i, (b i) ^ 2) := by
   /- 利用柯西-施瓦茨证明范数的三角不等式 -/
-  sorry  -- P2级别：需要开方运算
+  have h1 : ∑ i, (a i + b i) ^ 2 = ∑ i, (a i) ^ 2 + 2 * (∑ i, a i * b i) + ∑ i, (b i) ^ 2 := by
+    simp [add_sq, Finset.sum_add_distrib, Finset.mul_sum]
+    ring
+  have h2 : (∑ i, a i * b i) ≤ Real.sqrt (∑ i, (a i) ^ 2) * Real.sqrt (∑ i, (b i) ^ 2) := by
+    have h := cauchy_schwarz_sum a b
+    have h3 : (Real.sqrt (∑ i, (a i) ^ 2) * Real.sqrt (∑ i, (b i) ^ 2)) ^ 2 =
+      (∑ i, (a i) ^ 2) * (∑ i, (b i) ^ 2) := by
+      rw [mul_pow]
+      rw [Real.sq_sqrt (by apply sum_nonneg; intro i hi; exact sq_nonneg (a i))]
+      rw [Real.sq_sqrt (by apply sum_nonneg; intro i hi; exact sq_nonneg (b i))]
+    nlinarith [h, h3, Real.sqrt_nonneg (∑ i, (a i) ^ 2), Real.sqrt_nonneg (∑ i, (b i) ^ 2)]
+  have h3 : Real.sqrt (∑ i, (a i + b i) ^ 2) ^ 2 ≤ (Real.sqrt (∑ i, (a i) ^ 2) + Real.sqrt (∑ i, (b i) ^ 2)) ^ 2 := by
+    rw [h1]
+    nlinarith [h2, Real.sq_sqrt (by apply sum_nonneg; intro i hi; exact sq_nonneg (a i)),
+      Real.sq_sqrt (by apply sum_nonneg; intro i hi; exact sq_nonneg (b i))]
+  have h4 : Real.sqrt (∑ i, (a i + b i) ^ 2) ≥ 0 := Real.sqrt_nonneg _
+  have h5 : Real.sqrt (∑ i, (a i) ^ 2) + Real.sqrt (∑ i, (b i) ^ 2) ≥ 0 := by positivity
+  nlinarith [h3, h4, h5]
 
 /-
 ### 应用2：方差不等式
@@ -217,5 +166,4 @@ end CauchySchwarz
 
 - [霍尔德不等式](./14-霍尔德不等式.lean) - p≠2的推广
 - [三角不等式](./15-柯西-施瓦茨不等式.lean) - 范数性质
-- [不确定性原理](./16-不确定性原理.lean) - 量子力学应用
 -/

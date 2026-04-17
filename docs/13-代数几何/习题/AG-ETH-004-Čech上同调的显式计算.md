@@ -73,32 +73,32 @@ references:
 ### 原题 (ETH 401-3532 Übung 2.1)
 
 > **Aufgabe** (Explizit und Vollständig):
-> Es sei $X = \mathbb{P}^2_k$ der projektive Raum über einem algebraisch 
+> Es sei $X = \mathbb{P}^2_k$ der projektive Raum über einem algebraisch
 > abgeschlossenen Körper $k$, und $\mathcal{F} = \mathcal{O}_X(n)$ für $n \in \mathbb{Z}$.
-> 
+>
 > Verwenden Sie die Standard-affine Überdeckung $\mathcal{U} = \{U_0, U_1, U_2\}$,
 > wobei $U_i = \{x_i \neq 0\}$.
-> 
+>
 > (a) Berechnen Sie vollständig den Čech-Komplex $\check{C}^\bullet(\mathcal{U}, \mathcal{O}_X(n))$.
-> 
-> (b) Bestimmen Sie explizit $\check{H}^0(\mathcal{U}, \mathcal{O}_X(n))$ 
->     und $\check{H}^2(\mathcal{U}, \mathcal{O}_X(n))$.
-> 
-> (c) Vergleichen Sie mit dem Satz von Serre über die Kohomologie 
->     projektiver Räume.
+>
+> (b) Bestimmen Sie explizit $\check{H}^0(\mathcal{U}, \mathcal{O}_X(n))$
+> und $\check{H}^2(\mathcal{U}, \mathcal{O}_X(n))$.
+>
+> (c) Vergleichen Sie mit dem Satz von Serre über die Kohomologie
+> projektiver Räume.
 
 ### 中文翻译
 
 > **习题** (显式且完整)：
 > 设 $X = \mathbb{P}^2_k$ 为代数闭域 $k$ 上的射影平面，
 > $\mathcal{F} = \mathcal{O}_X(n)$，$n \in \mathbb{Z}$。
-> 
+>
 > 使用标准仿射覆盖 $\mathcal{U} = \{U_0, U_1, U_2\}$，其中 $U_i = \{x_i \neq 0\}$。
-> 
+>
 > (a) 完整计算Čech复形 $\check{C}^\bullet(\mathcal{U}, \mathcal{O}_X(n))$。
-> 
+>
 > (b) 显式确定 $\check{H}^0(\mathcal{U}, \mathcal{O}_X(n))$ 和 $\check{H}^2(\mathcal{U}, \mathcal{O}_X(n))$。
-> 
+>
 > (c) 与Serre关于射影空间上同调的定理比较。
 
 ---
@@ -110,11 +110,13 @@ references:
 **Einrichtung**:
 
 Die Standard-affine Überdeckung von $\mathbb{P}^2$:
+
 - $U_0 = \operatorname{Spec}(k[x_1/x_0, x_2/x_0]) = \operatorname{Spec}(k[u_1, u_2])$
 - $U_1 = \operatorname{Spec}(k[x_0/x_1, x_2/x_1]) = \operatorname{Spec}(k[v_0, v_2])$
 - $U_2 = \operatorname{Spec}(k[x_0/x_2, x_1/x_2]) = \operatorname{Spec}(k[w_0, w_1])$
 
 mit den Relationen:
+
 - Auf $U_0 \cap U_1$: $v_0 = 1/u_1$, $v_2 = u_2/u_1$
 - Auf $U_0 \cap U_2$: $w_0 = 1/u_2$, $w_1 = u_1/u_2$
 - Auf $U_1 \cap U_2$: $w_0 = v_0/v_2$, $w_1 = 1/v_2$
@@ -124,6 +126,7 @@ mit den Relationen:
 $$0 \to C^0 \xrightarrow{d^0} C^1 \xrightarrow{d^1} C^2 \to 0$$
 
 wobei:
+
 - $C^0 = \bigoplus_i \Gamma(U_i, \mathcal{O}_X(n))$
 - $C^1 = \bigoplus_{i<j} \Gamma(U_i \cap U_j, \mathcal{O}_X(n))$
 - $C^2 = \Gamma(U_0 \cap U_1 \cap U_2, \mathcal{O}_X(n))$
@@ -191,7 +194,7 @@ $$= k[x_0, x_1, x_2]_{(x_0 x_1 x_2)} \cdot x_0^n$$
 
 $$= \left\{\frac{f}{x_0^a x_1^b x_2^c} \cdot x_0^n : f \text{ homogen}, \deg(f) = a + b + c\right\}$$
 
-Das ist der Raum der Laurent-Polynome in $x_0, x_1, x_2$ mit homogenen 
+Das ist der Raum der Laurent-Polynome in $x_0, x_1, x_2$ mit homogenen
 Nennern und zusätzlichem Faktor $x_0^n$.
 
 **Bild von $d^1$**:
@@ -200,6 +203,7 @@ Das Differential $d^1: (f_{01}, f_{02}, f_{12}) \mapsto f_{01} - f_{02} + f_{12}
 (auf $U_0 \cap U_1 \cap U_2$).
 
 Die Summanden kommen von den Schnitten auf den Durchschnitten zweier $U_i$:
+
 - $f_{01}$ hat keine Pole entlang $x_2 = 0$
 - $f_{02}$ hat keine Pole entlang $x_1 = 0$
 - $f_{12}$ hat keine Pole entlang $x_0 = 0$
@@ -215,6 +219,7 @@ Das Bild von $d^1$ enthält alle Terme, bei denen mindestens einer der
 Exponenten $n+a$, $b$, oder $c$ nicht-negativ ist.
 
 Der Kokern wird erzeugt von Termen, bei denen:
+
 - $n + a < 0$ (Pole in $x_0$)
 - $b < 0$ (Pole in $x_1$)
 - $c < 0$ (Pole in $x_2$)
@@ -227,7 +232,7 @@ Dann: $a' + b' + c' = -n - 3$.
 
 Falls $-n - 3 < 0$ (d.h. $n > -3$): Keine Lösungen, also Kokern = 0.
 
-Falls $-n - 3 \geq 0$ (d.h. $n \leq -3$): 
+Falls $-n - 3 \geq 0$ (d.h. $n \leq -3$):
 Anzahl der Lösungen = $\binom{(-n-3)+2}{2} = \binom{-n-1}{2}$.
 
 **Ergebnis**:
@@ -267,6 +272,6 @@ Für $\mathbb{P}^r$ und $\mathcal{O}(n)$:
 
 ---
 
-**创建日期**: 2026-04-10  
-**难度**: ⭐⭐⭐  
+**创建日期**: 2026-04-10
+**难度**: ⭐⭐⭐
 **ETH风格**: Explizit + Vollständig

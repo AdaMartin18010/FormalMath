@@ -73,19 +73,19 @@ references:
 ### 原题 (ETH 401-3532 Übung 1.2)
 
 > **Aufgabe** (Vollständig und Explizit):
-> Es sei $X$ ein topologischer Raum und 
+> Es sei $X$ ein topologischer Raum und
 > $$0 \longrightarrow \mathcal{F}' \xrightarrow{\alpha} \mathcal{F} \xrightarrow{\beta} \mathcal{F}'' \longrightarrow 0$$
 > eine Sequenz von $\mathcal{O}_X$-Modulgarben.
-> 
+>
 > Man beweise streng und vollständig:
-> 
-> (a) Die Sequenz ist exakt als Garbensequenz 
->     $\Leftrightarrow$ sie ist exakt auf jeder Halme.
-> 
-> (b) Ist die Sequenz exakt, so ist der globale Schnittfunktor 
->     $\Gamma(X, -)$ linksexakt, d.h.:
->     $$0 \to \Gamma(X, \mathcal{F}') \to \Gamma(X, \mathcal{F}) \to \Gamma(X, \mathcal{F}'')$$
->     ist exakt (als Sequenz abelscher Gruppen).
+>
+> (a) Die Sequenz ist exakt als Garbensequenz
+> $\Leftrightarrow$ sie ist exakt auf jeder Halme.
+>
+> (b) Ist die Sequenz exakt, so ist der globale Schnittfunktor
+> $\Gamma(X, -)$ linksexakt, d.h.:
+> $$0 \to \Gamma(X, \mathcal{F}') \to \Gamma(X, \mathcal{F}) \to \Gamma(X, \mathcal{F}'')$$
+> ist exakt (als Sequenz abelscher Gruppen).
 
 ### 中文翻译
 
@@ -93,14 +93,14 @@ references:
 > 设 $X$ 为拓扑空间，
 > $$0 \longrightarrow \mathcal{F}' \xrightarrow{\alpha} \mathcal{F} \xrightarrow{\beta} \mathcal{F}'' \longrightarrow 0$$
 > 为 $\mathcal{O}_X$-模层的序列。
-> 
+>
 > 严格且完整地证明：
-> 
+>
 > (a) 序列作为层序列正合 $\Leftrightarrow$ 在每个茎上正合。
-> 
+>
 > (b) 若序列正合，则整体截面函子 $\Gamma(X, -)$ 左正合，即：
->     $$0 \to \Gamma(X, \mathcal{F}') \to \Gamma(X, \mathcal{F}) \to \Gamma(X, \mathcal{F}'')$$
->     正合（作为阿贝尔群序列）。
+> $$0 \to \Gamma(X, \mathcal{F}') \to \Gamma(X, \mathcal{F}) \to \Gamma(X, \mathcal{F}'')$$
+> 正合（作为阿贝尔群序列）。
 
 ---
 
@@ -140,6 +140,7 @@ references:
 
 **Theorem**: 设 $\mathcal{F}' \xrightarrow{\alpha} \mathcal{F} \xrightarrow{\beta} \mathcal{F}''$ 为层同态序列。
 则以下等价：
+
 1. $0 \to \mathcal{F}' \to \mathcal{F} \to \mathcal{F}'' \to 0$ 作为层序列正合
 2. 对所有 $x \in X$，$0 \to \mathcal{F}'_x \to \mathcal{F}_x \to \mathcal{F}''_x \to 0$ 作为阿贝尔群序列正合
 
@@ -159,7 +160,7 @@ references:
 
 Sei $s'_x \in \mathcal{F}'_x$ mit $\alpha'_x(s'_x) = 0$ in $\mathcal{F}_x$.
 
-Nach Definition der Halme existiert eine Umgebung $U$ von $x$ und 
+Nach Definition der Halme existiert eine Umgebung $U$ von $x$ und
 $s' \in \mathcal{F}'(U)$, das $s'_x$ repräsentiert.
 
 Die Bedingung $\alpha'_x(s'_x) = 0$ bedeutet:
@@ -225,7 +226,7 @@ Also $s' = 0$ (Garbenaxiom: Element durch Halme bestimmt). $\checkmark$
 
 **Schritt 2**: $\operatorname{Im}(\alpha) = \operatorname{Ker}(\beta)$
 
-*Inklusion $\subseteq$*: 
+*Inklusion $\subseteq$*:
 Für alle $x$: $\beta'_x \circ \alpha'_x = 0$ (Halme-Exaktheit).
 Also $\beta \circ \alpha = 0$, d.h. $\operatorname{Im}(\alpha) \subseteq \operatorname{Ker}(\beta)$. $\checkmark$
 
@@ -265,7 +266,7 @@ $s'$ 在 $\mathcal{F}'$ 中为零。$
 
 **Schritt 2**: $\operatorname{Im}(\alpha_X) = \operatorname{Ker}(\beta_X)$
 
-*Inklusion $\subseteq$*: 
+*Inklusion $\subseteq$*:
 $\beta_X \circ \alpha_X = (\beta \circ \alpha)_X = 0_X = 0$. $\checkmark$
 
 *Inklusion $\supseteq$*:
@@ -288,7 +289,7 @@ $$\Gamma(X, \mathcal{O}_X) = k$$
 $$\Gamma(X, \mathcal{K}_X) = k(X) = k(t)$$
 $$\Gamma(X, \mathcal{K}_X/\mathcal{O}_X) = \bigoplus_{P \in X} \widehat{\mathcal{O}}_{X,P}/\mathcal{O}_{X,P}$$
 
-映射 $\Gamma(X, \mathcal{K}_X) \to \Gamma(X, \mathcal{K}_X/\mathcal{O}_X)$ 的像由 
+映射 $\Gamma(X, \mathcal{K}_X) \to \Gamma(X, \mathcal{K}_X/\mathcal{O}_X)$ 的像由
 **Hauptteile (principal parts)** 组成，不是所有点上的局部数据的直和。
 
 因此 **nicht surjektiv**！
@@ -331,7 +332,7 @@ $$\Gamma(X, \mathcal{K}_X/\mathcal{O}_X) = \bigoplus_{P \in X} \widehat{\mathcal
 
 ---
 
-**创建日期**: 2026-04-10  
-**难度**: ⭐⭐⭐  
-**ETH风格**: Vollständig + Explizit  
+**创建日期**: 2026-04-10
+**难度**: ⭐⭐⭐
+**ETH风格**: Vollständig + Explizit
 **预计用时**: 60-90分钟

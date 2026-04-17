@@ -64,14 +64,16 @@ references:
 ## 习题 II.1.1 — 结构层的层公理与局部环性质
 
 ### 题号与精确引用
+
 **Hartshorne II.1.1**
 
 ### 问题重述
+
 设 $A$ 为环，$X=\operatorname{Spec}A$。对任意开集 $U\subseteq X$，定义
 $$\mathcal{O}(U)=\left\{s:U\to\bigsqcup_{\mathfrak p\in U}A_{\mathfrak p}\;\middle|\;s(\mathfrak p)\in A_{\mathfrak p},\;\text{且 }s\text{ 局部为 }A\text{ 中元素的商}\right\}.$$
-(a) 验证 $\mathcal{O}$ 是环的层。  
-(b) 证明 $(X,\mathcal{O})$ 是局部环化空间。  
-(c) 证明茎 $\mathcal{O}_{\mathfrak p}\cong A_{\mathfrak p}$。  
+(a) 验证 $\mathcal{O}$ 是环的层。
+(b) 证明 $(X,\mathcal{O})$ 是局部环化空间。
+(c) 证明茎 $\mathcal{O}_{\mathfrak p}\cong A_{\mathfrak p}$。
 (d) 证明对任意 $f\in A$，有 $\mathcal{O}(D(f))\cong A_f$。
 
 ### 详细解答
@@ -101,11 +103,13 @@ $$\mathcal{O}(U)=\left\{s:U\to\bigsqcup_{\mathfrak p\in U}A_{\mathfrak p}\;\midd
 满射：设 $s\in\mathcal{O}(D(f))$。因 $D(f)$ 是拟紧的，可用有限个 $D(h_i)\subseteq D(f)$ 覆盖，且于每个 $D(h_i)$ 上 $s=a_i/g_i$（$g_i\notin\mathfrak q$ 于 $D(h_i)$，即 $D(h_i)\subseteq D(g_i)$，于是 $h_i\in\sqrt{(g_i)}$）。不妨设 $h_i=g_i$。则在 $D(g_ig_j)=D(g_i)\cap D(g_j)$ 上 $a_i/g_i=a_j/g_j$，即 $(a_ig_j-a_jg_i)$ 在 $D(g_ig_j)$ 上被零化，故 $(g_ig_j)^{m_{ij}}(a_ig_j-a_jg_i)=0$。取统一的 $m$，将 $a_i,g_i$ 替换为 $a_ig_i^m,g_i^{m+1}$，可设 $a_ig_j=a_jg_i$ 对所有 $i,j$。因 $D(f)=\bigcup D(g_i)$，有 $(g_1,\dots,g_n)\ni f^k$。设 $f^k=\sum b_ig_i$，令 $a=\sum b_ia_i$。则 $ag_j=\sum b_ia_ig_j=\sum b_ig_ia_j=f^ka_j$，故 $a/f^k=a_j/g_j$ 于 $D(g_j)$。于是 $s$ 是 $a/f^k$ 的像。∎
 
 ### 关键概念提示
+
 - **局部为商** 是结构层区别于任意函数层的核心；它保证了截面可由环 $A$ 的代数数据完全决定。
 - **茎同构于局部化** $A_{\mathfrak p}$ 说明结构层在点 $\mathfrak p$ 处的“无穷小信息”恰好就是 $A$ 在该素理想处的局部化。
 - **$\mathcal{O}(D(f))\cong A_f$** 是仿射概形范畴等价的核心一步。
 
 ### 常见错误警示
+
 | 错误 | 纠正 |
 |------|------|
 | 认为 $\mathcal{O}(U)$ 就是所有集合论函数 | 必须满足局部为商的条件。 |
@@ -113,6 +117,7 @@ $$\mathcal{O}(U)=\left\{s:U\to\bigsqcup_{\mathfrak p\in U}A_{\mathfrak p}\;\midd
 | 混淆 $A_{\mathfrak p}$ 与 $A/\mathfrak p$ | 茎是局部化，不是商。 |
 
 ### Lean4 代码占位
+
 ```lean4
 import Mathlib.AlgebraicGeometry.Spec
 
@@ -134,12 +139,14 @@ def sectionsDfIso (A : Type*) [CommRing A] (f : A) :
 ## 习题 II.1.2 — 描述 $\operatorname{Spec}\mathbb{Z}$ 与 $\operatorname{Spec}k[x]$
 
 ### 题号与精确引用
+
 **Hartshorne II.1.2**
 
 ### 问题重述
-描述 $\operatorname{Spec}\mathbb{Z}$ 与 $\operatorname{Spec}k[x]$（$k$ 为代数闭域）。具体说明：  
-(a) 素理想有哪些？  
-(b) 拓扑结构如何？  
+
+描述 $\operatorname{Spec}\mathbb{Z}$ 与 $\operatorname{Spec}k[x]$（$k$ 为代数闭域）。具体说明：
+(a) 素理想有哪些？
+(b) 拓扑结构如何？
 (c) 结构层是什么？
 
 ### 详细解答
@@ -161,17 +168,20 @@ def sectionsDfIso (A : Type*) [CommRing A] (f : A) :
 (c) 结构层的茎：$\mathcal{O}_{(0)}=k(x)$（有理函数域）；$\mathcal{O}_{(x-a)}=k[x]_{(x-a)}$。整体截面为 $k[x]$。对 $f\in k[x]$，$\mathcal{O}(D(f))=k[x]_f$。
 
 ### 关键概念提示
+
 - **一般点**（generic point）$(0)$ 的闭包是整个不可约分支；在整环情形下它是唯一的。
 - $\operatorname{Spec}\mathbb{Z}$ 是概形范畴的**终对象**，这将在 II.2.5 中证明。
 - 代数闭性保证 $k[x]$ 的极大理想与 $k$ 中元素一一对应。
 
 ### 常见错误警示
+
 | 错误 | 纠正 |
 |------|------|
 | 认为 $(0)$ 是闭点 | 在整环的 Spec 中，$(0)$ 永远不会是闭点（除非环是域）。 |
 | 遗漏 $k[x]$ 中的 $(0)$ | $(0)$ 是素理想，必须计入。 |
 
 ### Lean4 代码占位
+
 ```lean4
 import Mathlib.AlgebraicGeometry.Spec
 
@@ -192,11 +202,13 @@ def maxIdealsOfPoly (k : Type*) [Field k] [IsAlgClosed k] :
 ## 习题 II.1.3 — $U=\mathbb{A}^2_k\setminus\{(0,0)\}$ 不是仿射的
 
 ### 题号与精确引用
+
 **Hartshorne II.1.3**
 
 ### 问题重述
-设 $k$ 为域，$X=\mathbb{A}^2_k=\operatorname{Spec}k[x,y]$，$U=X\setminus\{(0,0)\}$。  
-(a) 证明 $U$ 不是仿射概形。  
+
+设 $k$ 为域，$X=\mathbb{A}^2_k=\operatorname{Spec}k[x,y]$，$U=X\setminus\{(0,0)\}$。
+(a) 证明 $U$ 不是仿射概形。
 (b) 计算 $\mathcal{O}_X(U)$。
 
 ### 详细解答
@@ -215,16 +227,19 @@ $$0\longrightarrow\mathcal{O}_X(U)\longrightarrow k[x,y]_x\oplus k[x,y]_y\longri
 设 $(f/x^m,g/y^n)$ 映到 $0$，则 $f/x^m=g/y^n$ 于 $k[x,y]_{xy}$。因 $k[x,y]$ 是 UFD，可写成既约分式。等式意味着存在 $h\in k[x,y]$ 使得 $f/x^m=h$ 且 $g/y^n=h$（因为 $x$ 与 $y$ 互素，分母不能相互抵消）。故 $h\in k[x,y]_x\cap k[x,y]_y=k[x,y]$。因此 $\mathcal{O}_X(U)=k[x,y]$。∎
 
 ### 关键概念提示
+
 - **$k[x,y]$ 是 UFD** 保证了 $k[x,y]_x\cap k[x,y]_y=k[x,y]$；这本质上是二维正则局部环的深度 $2$ 性质（$S_2$）的特例。
 - 本题是“拟仿射但非仿射”的经典例子，说明概形范畴中开子概形不一定仿射。
 
 ### 常见错误警示
+
 | 错误 | 纠正 |
 |------|------|
 | 直接断言 $U$ 不是仿射因为少了点 | 需要代数论证：若仿射则整体截面环决定概形。 |
 | 认为 $1/x\in\mathcal{O}_X(U)$ | $1/x$ 在 $y$ 轴上无定义，不能全局延拓到 $U$。 |
 
 ### Lean4 代码占位
+
 ```lean4
 import Mathlib.AlgebraicGeometry.Spec
 
@@ -243,9 +258,11 @@ theorem sectionsOfPuncturedA2 (k : Type*) [Field k] :
 ## 习题 II.1.4 — $H^1(U,\mathcal{O}_U)\neq 0$
 
 ### 题号与精确引用
+
 **Hartshorne II.1.4**
 
 ### 问题重述
+
 设 $k$ 为代数闭域，$X=\mathbb{A}^2_k=\operatorname{Spec}k[x,y]$，$U=X\setminus\{(0,0)\}$。证明 $H^1(U,\mathcal{O}_U)\neq 0$。
 
 ### 详细解答
@@ -267,17 +284,20 @@ $$x^{m-1}y^{n-1}=f y^n+g x^m$$
 实际上，$H^1$ 作为 $k$-向量空间由 $\{x^{-m}y^{-n}\mid m,n\ge 1\}$ 张成，是无限维的。
 
 ### 关键概念提示
+
 - **Čech 上同调** 对仿射覆盖计算层上同调非常有效；这里覆盖只有两个开集，计算尤为简单。
 - $H^1\neq 0$ 反映了几何事实：$U$ 是“有洞”的（虽然 Zariski 拓扑很粗糙，但层上同调探测到了 codimension $2$ 的缺失）。
 - 这是 **Hartogs 现象** 的反面：在复几何中，codimension $\ge 2$ 的洞不影响全纯函数；但在代数几何中，它影响了高阶上同调。
 
 ### 常见错误警示
+
 | 错误 | 纠正 |
 |------|------|
 | 用 $1/(x+y)$ 等非既约分式作为代表 | 应选择 $x^{-m}y^{-n}$ 这种明确的单项式。 |
 | 认为 $k[x,y]_x+k[x,y]_y=k[x,y]_{xy}$ | 负指数双向均为负的单项式无法被覆盖。 |
 
 ### Lean4 代码占位
+
 ```lean4
 import Mathlib.AlgebraicGeometry.Spec
 
@@ -295,5 +315,5 @@ theorem puncturedA2H1Nonzero (k : Type*) [Field k] :
 
 ---
 
-**文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.1-层的基本性质.md`  
+**文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.1-层的基本性质.md`
 **创建日期**: 2026-04-17

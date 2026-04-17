@@ -25,6 +25,7 @@ related_concepts: [奇异同调, 胞腔映射, 欧拉示性数]
 ### CW复形回顾
 
 **CW复形** $X$ 是通过归纳法构造的空间：
+
 - $X^0$：离散点集（0-骨架）
 - $X^n$ 由 $X^{n-1}$ 粘合 $n$-胞腔 $e_\alpha^n \cong D^n$ 得到（通过附着映射 $\varphi_\alpha: S^{n-1} \to X^{n-1}$）
 - $X = \bigcup_n X^n$

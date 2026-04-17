@@ -47,7 +47,7 @@ $$\pi_1(X, x_0) = \{[\gamma] : \gamma \text{ 是基于 } x_0 \text{ 的环路}\}
 
 **群运算**（道路连接）：对于环路 $\gamma_1, \gamma_2$，定义
 
-$$(\gamma_1 * \gamma_2)(s) = \begin{cases} 
+$$(\gamma_1 * \gamma_2)(s) = \begin{cases}
 \gamma_1(2s) & 0 \leq s \leq 1/2 \\
 \gamma_2(2s-1) & 1/2 \leq s \leq 1
 \end{cases}$$

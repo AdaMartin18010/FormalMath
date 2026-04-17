@@ -142,6 +142,7 @@ $$0 \longrightarrow \pi^* \Omega_Y \longrightarrow \Omega_X \longrightarrow \Ome
 $$\deg(\Omega_X) = \deg(\pi^* \Omega_Y) + \deg(\Omega_{X/Y})$$
 
 **步骤 3：代入已知公式**。我们知道：
+
 - $\deg(\Omega_X) = 2g(X) - 2$（由 Riemann-Roch，$\deg(K_X) = 2g - 2$）
 - $\deg(\pi^* \Omega_Y) = \deg(\pi) \cdot \deg(\Omega_Y) = d(2g(Y) - 2)$
 - $\deg(\Omega_{X/Y}) = \sum (e_p - 1)$（步骤 1）
@@ -161,6 +162,7 @@ $$2g(X) - 2 = d(2g(Y) - 2) + \sum_{p \in X} (e_p - 1)$$
 **题目**（FOAG Ch 17, Exercise 17.4.H）：
 
 设 $X$ 是亏格 $g \geq 2$ 的超椭圆曲线（hyperelliptic curve），即存在 2 次态射 $\pi: X \to \mathbb{P}^1$。证明：
+
 1. $\pi$ 恰有 $2g + 2$ 个分歧点（每个分歧指数 $e_p = 2$）。
 2. $X$ 可以表示为仿射曲线 $y^2 = f(x)$，其中 $f(x)$ 是次数为 $2g+1$ 或 $2g+2$ 的无重根多项式。
 

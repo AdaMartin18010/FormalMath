@@ -97,6 +97,7 @@ $$\{\text{覆叠 } p: \tilde{X} \to X\}/\text{同构} \longleftrightarrow \{\pi_
 对应由 $p \mapsto p_*\pi_1(\tilde{X})$ 给出。
 
 **特殊情况**：
+
 - 万有覆叠 $\leftrightarrow$ 平凡子群
 - 连通覆叠 $\leftrightarrow$ 子群
 - 正规覆叠（Galois覆叠）$\leftrightarrow$ 正规子群
@@ -133,11 +134,11 @@ $$\tilde{X} = \{[\gamma] : \gamma \text{ 是道路，} \gamma(0) = x_0\}/\sim$$
 
 ```lean
 -- 覆叠空间概念框架
-structure CoveringMap {X Y : Type} [TopologicalSpace X] [TopologicalSpace Y] 
+structure CoveringMap {X Y : Type} [TopologicalSpace X] [TopologicalSpace Y]
   (p : X → Y) : Prop where
   continuous : Continuous p
   surjective : Surjective p
-  locally_trivial : ∀ y : Y, ∃ U : Neighborhood y, 
+  locally_trivial : ∀ y : Y, ∃ U : Neighborhood y,
     IsEvenlyCovered p U  -- p⁻¹(U) 是不交开集的并
 ```
 
@@ -168,6 +169,7 @@ structure CoveringMap {X Y : Type} [TopologicalSpace X] [TopologicalSpace Y]
 覆叠空间理论建立了空间的拓扑性质与基本群的代数性质之间的深刻联系。
 
 **关键要点**：
+
 1. 覆叠映射是局部同胚的满射
 2. 提升性质是覆叠空间的核心工具
 3. 覆叠分类 $\leftrightarrow$ 基本群的子群分类（Galois对应）

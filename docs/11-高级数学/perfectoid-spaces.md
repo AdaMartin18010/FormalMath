@@ -6,28 +6,55 @@ processed_at: '2026-04-05'
 ---
 # 完美胚空间深度版 / Perfectoid Spaces (Advanced)
 
-**主题编号**: B.11.ADV.05  
-**创建日期**: 2026年4月4日  
-**最后更新**: 2026年4月4日  
+**主题编号**: B.11.ADV.05
+**创建日期**: 2026年4月4日
+**最后更新**: 2026年4月4日
 **版本**: 深度版 (Advanced Version)
 
 ---
 
 ## 目录
 
-- [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
-  - [1.1 完美胚环](#11-完美胚环)
-  - [1.2 完美胚空间的定义](#12-完美胚空间的定义)
-  - [1.3 tilting等价](#13-tilting等价)
-- [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
-  - [2.1 钻石理论](#21-钻石理论)
-  - [2.2 与adic空间的联系](#22-与adic空间的联系)
-  - [2.3 棱镜上同调](#23-棱镜上同调)
-- [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
-  - [3.1 Fargues-Fontaine曲线](#31-fargues-fontaine曲线)
-  - [3.2 几何Langlands的几何化](#32-几何langlands的几何化)
-  - [3.3 完美胚空间的计算应用](#33-完美胚空间的计算应用)
-- [4. 参考文献 / References](#4-参考文献-references)
+- [完美胚空间深度版 / Perfectoid Spaces (Advanced)](#完美胚空间深度版--perfectoid-spaces-advanced)
+  - [目录](#目录)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+    - [1.1 完美胚环](#11-完美胚环)
+      - [1.1.1 定义与基本性质](#111-定义与基本性质)
+      - [1.1.2 结构层](#112-结构层)
+    - [1.2 完美胚空间的定义](#12-完美胚空间的定义)
+      - [1.2.1 作为adic空间](#121-作为adic空间)
+      - [1.2.2 结构性质](#122-结构性质)
+    - [1.3 tilting等价](#13-tilting等价)
+      - [1.3.1 tilting函子](#131-tilting函子)
+      - [1.3.2 几乎纯性定理](#132-几乎纯性定理)
+      - [1.3.3 应用：Galois群](#133-应用galois群)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+    - [2.1 钻石理论](#21-钻石理论)
+      - [2.1.1 钻石的定义](#211-钻石的定义)
+      - [2.1.2 钻石化的构造](#212-钻石化的构造)
+      - [2.1.3 钻石与簇](#213-钻石与簇)
+    - [2.2 与adic空间的联系](#22-与adic空间的联系)
+      - [2.2.1 回忆：adic空间](#221-回忆adic空间)
+      - [2.2.2 完美胚化](#222-完美胚化)
+    - [2.3 棱镜上同调](#23-棱镜上同调)
+      - [2.3.1 棱镜的动机](#231-棱镜的动机)
+      - [2.3.2 棱镜上同调](#232-棱镜上同调)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+    - [3.1 Fargues-Fontaine曲线](#31-fargues-fontaine曲线)
+      - [3.1.1 构造](#311-构造)
+      - [3.1.2 性质](#312-性质)
+      - [3.1.3 p进Langlands的联系](#313-p进langlands的联系)
+    - [3.2 几何Langlands的几何化](#32-几何langlands的几何化)
+      - [3.2.1 Fargues猜想](#321-fargues猜想)
+      - [3.2.2 当前进展](#322-当前进展)
+    - [3.3 完美胚空间的计算应用](#33-完美胚空间的计算应用)
+      - [3.3.1 p进算法](#331-p进算法)
+      - [3.3.2 密码学应用](#332-密码学应用)
+  - [4. 参考文献 / References](#4-参考文献--references)
+    - [奠基性论文](#奠基性论文)
+    - [现代发展](#现代发展)
+    - [技术参考](#技术参考)
+    - [综述与讲义](#综述与讲义)
 
 ---
 
@@ -45,6 +72,7 @@ processed_at: '2026-04-05'
 $$R^\circ/\varpi \xrightarrow{\sim} R^\circ/\varpi^p$$
 
 **例子**:
+
 - 完美域的特征 $p$ 代数闭域
 - 某些p进完备化
 - 某些Tate代数
@@ -56,6 +84,7 @@ $$R^\circ/\varpi \xrightarrow{\sim} R^\circ/\varpi^p$$
 $$R^\circ = \{x \in R : \{x^n : n \geq 0\} \text{ 有界}\}$$
 
 **性质**:
+
 - $R^\circ$ 是 $R$ 的开子环
 - $R = R^\circ[1/\varpi]$
 - $R^\circ$ 是**完美的**
@@ -66,7 +95,7 @@ $$R^\circ = \{x \in R : \{x^n : n \geq 0\} \text{ 有界}\}$$
 
 **定义**: 一个**完美胚空间**是adic空间 $X$，局部同构于 $\text{Spa}(R, R^+)$，其中 $R$ 是完美胚环。
 
-**范畴**: 
+**范畴**:
 设 $\mathcal{P}erf$ 为完美胚空间的范畴，配备pro-etale拓扑。
 
 #### 1.2.2 结构性质
@@ -94,7 +123,7 @@ $$X^\flat = \varprojlim_{\text{Frob}} X$$
 
 #### 1.3.2 几乎纯性定理
 
-**定理** (Almost Purity): 
+**定理** (Almost Purity):
 设 $R$ 是完美胚环，$R \to S$ 是有限etale扩张，则 $S$ 也是完美胚的，且：
 
 $$S^\circ/R^\circ \text{ 在几乎意义下是有限etale的}$$
@@ -133,7 +162,7 @@ $$Y^\diamond: X \mapsto \{\text{直到 }(X^\sharp, \iota) \text{ with } X^\sharp
 
 #### 2.1.3 钻石与簇
 
-**关键洞察**: 
+**关键洞察**:
 
 $$\{\text{特征0的adic空间}\}/\text{同构} \hookrightarrow \{\text{钻石}\}$$
 
@@ -171,7 +200,7 @@ $$\Delta_{X/A} = R\Gamma_{\text{prism}}(X/A)$$
 
 其中 $A$ 是棱镜。
 
-**关键定理**: 
+**关键定理**:
 棱镜上同调特殊化为各种经典上同调理论。
 
 ---
@@ -198,7 +227,7 @@ $$X_{FF} = \text{Proj}(P_E)$$
 
 #### 3.1.3 p进Langlands的联系
 
-**定理** (Fargues): 
+**定理** (Fargues):
 对于p进群 $G$，存在从Bun$_G$到局部Langlands对应的几何化。
 
 ### 3.2 几何Langlands的几何化
@@ -229,6 +258,7 @@ $$\mathcal{D}(\text{Bun}_G) \simeq \mathcal{D}(\text{LocSys}_{\hat{G}})$$
 #### 3.3.2 密码学应用
 
 虽然主要是纯数学，但完美胚理论提供了：
+
 - 对p进对象的新理解
 - 可能的新的密码学构造
 
@@ -249,33 +279,33 @@ $$\mathcal{D}(\text{Bun}_G) \simeq \mathcal{D}(\text{LocSys}_{\hat{G}})$$
 
 ### 现代发展
 
-4. **Bhatt, B. & Scholze, P.** (2019). *Prisms and prismatic cohomology*. ArXiv.
+1. **Bhatt, B. & Scholze, P.** (2019). *Prisms and prismatic cohomology*. ArXiv.
    - 棱镜上同调理论
 
-5. **Fargues, L.** (2021). *G-torseurs en theorie de Hodge p-adique*. Compositio Math.
+2. **Fargues, L.** (2021). *G-torseurs en theorie de Hodge p-adique*. Compositio Math.
    - p进Hodge理论中的G-挠子
 
-6. **Fargues, L. & Scholze, P.** (2021). *Geometrization of the local Langlands correspondence*. ArXiv.
+3. **Fargues, L. & Scholze, P.** (2021). *Geometrization of the local Langlands correspondence*. ArXiv.
    - 局部Langlands对应的几何化
 
 ### 技术参考
 
-7. **Kedlaya, K.** (2015). *New methods for (phi, Gamma)-modules*. Research in the Mathematical Sciences.
-   
-8. **Caraiani, A. & Scholze, P.** (2017). *On the generic part of the cohomology of compact unitary Shimura varieties*. Annals of Math.
+1. **Kedlaya, K.** (2015). *New methods for (phi, Gamma)-modules*. Research in the Mathematical Sciences.
+
+2. **Caraiani, A. & Scholze, P.** (2017). *On the generic part of the cohomology of compact unitary Shimura varieties*. Annals of Math.
    - 紧致酉Shimura簇的上同调
 
-9. **Anschütz, J.** (2020). *Breuil-Kisin-Fargues modules with complex multiplication*. J. Inst. Math. Jussieu.
+3. **Anschütz, J.** (2020). *Breuil-Kisin-Fargues modules with complex multiplication*. J. Inst. Math. Jussieu.
 
 ### 综述与讲义
 
-10. **Scholze, P.** (2014). *Lectures on Perfectoid Spaces*. (Notes by Jared Weinstein)
+1. **Scholze, P.** (2014). *Lectures on Perfectoid Spaces*. (Notes by Jared Weinstein)
     - 完美胚空间的讲义
 
-11. **Weinstein, J.** (2017). *Gal(Q_p-bar/Q_p) as a geometric fundamental group*. Int. Math. Res. Notices.
+2. **Weinstein, J.** (2017). *Gal(Q_p-bar/Q_p) as a geometric fundamental group*. Int. Math. Res. Notices.
     - Galois群的几何视角
 
-12. **Morrow, M.** (2020). *Notes on the A_inf-cohomology of integral p-adic Hodge theory*. Advanced Lectures in Mathematics.
+3. **Morrow, M.** (2020). *Notes on the A_inf-cohomology of integral p-adic Hodge theory*. Advanced Lectures in Mathematics.
     - 整p进Hodge理论的讲义
 
 ---

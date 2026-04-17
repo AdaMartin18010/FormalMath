@@ -193,6 +193,7 @@ $$\langle P, Q \rangle = \operatorname{Res}\left(\frac{P \cdot Q \, dx_1 \cdots 
 **题目**（FOAG Ch 18, Exercise 18.5.C）：
 
 设 $C$ 是 $k$ 上的光滑射影曲线（亏格 $g$）。证明：
+
 1. $\omega_C = \Omega_{C/k}$ 是 $C$ 上的线丛。
 2. $H^0(C, \omega_C)$ 的维数为 $g$，且 $H^1(C, \omega_C) \cong k$。
 3. 对 $C$ 上的任意线丛 $\mathcal{L}$，有 $h^0(C, \mathcal{L}) - h^1(C, \mathcal{L}) = \deg(\mathcal{L}) + 1 - g$（Riemann-Roch）。

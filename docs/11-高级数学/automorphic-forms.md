@@ -9,28 +9,54 @@ processed_at: '2026-04-05'
 ---
 # 自守形式深度版 / Automorphic Forms (Advanced)
 
-**主题编号**: B.11.ADV.03  
-**创建日期**: 2026年4月4日  
-**最后更新**: 2026年4月4日  
+**主题编号**: B.11.ADV.03
+**创建日期**: 2026年4月4日
+**最后更新**: 2026年4月4日
 **版本**: 深度版 (Advanced Version)
 
 ---
 
 ## 目录
 
-- [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
-  - [1.1 自守形式的解析理论](#11-自守形式的解析理论)
-  - [1.2 表示论视角](#12-表示论视角)
-  - [1.3 Hecke算子与L函数](#13-hecke算子与l函数)
-- [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
-  - [2.1 自守表示的范畴论](#21-自守表示的范畴论)
-  - [2.2 几何自守形式](#22-几何自守形式)
-  - [2.3 p进自守形式](#23-p进自守形式)
-- [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
-  - [3.1 高秩群的自守形式](#31-高秩群的自守形式)
-  - [3.2 自守形式与算术](#32-自守形式与算术)
-  - [3.3 计算自守形式](#33-计算自守形式)
-- [4. 参考文献 / References](#4-参考文献-references)
+- [自守形式深度版 / Automorphic Forms (Advanced)](#自守形式深度版--automorphic-forms-advanced)
+  - [目录](#目录)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+    - [1.1 自守形式的解析理论](#11-自守形式的解析理论)
+      - [1.1.1 经典模形式回顾](#111-经典模形式回顾)
+      - [1.1.2 一般自守形式](#112-一般自守形式)
+      - [1.1.3 Maass形式](#113-maass形式)
+    - [1.2 表示论视角](#12-表示论视角)
+      - [1.2.1 自守表示的定义](#121-自守表示的定义)
+      - [1.2.2 $(\\mathfrak{g}, K)$-模](#122-mathfrakg-k-模)
+      - [1.2.3 离散谱与连续谱](#123-离散谱与连续谱)
+    - [1.3 Hecke算子与L函数](#13-hecke算子与l函数)
+      - [1.3.1 Hecke代数](#131-hecke代数)
+      - [1.3.2 Hecke特征形式](#132-hecke特征形式)
+      - [1.3.3 标准L函数](#133-标准l函数)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+    - [2.1 自守表示的范畴论](#21-自守表示的范畴论)
+      - [2.1.1 自守范畴](#211-自守范畴)
+      - [2.1.2 函子性与自然变换](#212-函子性与自然变换)
+    - [2.2 几何自守形式](#22-几何自守形式)
+      - [2.2.1 几何Langlands中的自守层](#221-几何langlands中的自守层)
+      - [2.2.2 Whittaker层](#222-whittaker层)
+    - [2.3 p进自守形式](#23-p进自守形式)
+      - [2.3.1 p进模形式](#231-p进模形式)
+      - [2.3.2 过收敛模形式](#232-过收敛模形式)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+    - [3.1 高秩群的自守形式](#31-高秩群的自守形式)
+      - [3.1.1 $GL\_n$自守形式](#311-gl_n自守形式)
+      - [3.1.2 例外群的自守形式](#312-例外群的自守形式)
+    - [3.2 自守形式与算术](#32-自守形式与算术)
+      - [3.2.1 Galois表示的构造](#321-galois表示的构造)
+      - [3.2.2 代数性与有理性](#322-代数性与有理性)
+    - [3.3 计算自守形式](#33-计算自守形式)
+      - [3.3.1 计算模形式](#331-计算模形式)
+      - [3.3.2 高维自守形式的计算](#332-高维自守形式的计算)
+  - [4. 参考文献 / References](#4-参考文献--references)
+    - [经典文献](#经典文献)
+    - [现代专著](#现代专著)
+    - [前沿研究](#前沿研究)
 
 ---
 
@@ -68,7 +94,7 @@ $$\Delta f + \lambda f = 0$$
 
 其中 $\Delta = y^2(\partial_x^2 + \partial_y^2)$ 是双曲Laplacian。
 
-**Selberg特征值猜想**: 
+**Selberg特征值猜想**:
 对于同余子群，Maass形式的特征值满足：
 
 $$\lambda \geq \frac{1}{4}$$
@@ -81,7 +107,7 @@ $$\lambda \geq \frac{1}{4}$$
 
 $$\pi \subset L^2(G(\mathbb{Q}) \backslash G(\mathbb{A}))$$
 
-**张量积分解** (Flath定理): 
+**张量积分解** (Flath定理):
 对于不可约容许表示：
 
 $$\pi = \bigotimes_v' \pi_v$$
@@ -103,6 +129,7 @@ $$\pi = \bigotimes_v' \pi_v$$
 $$L^2(G(\mathbb{Q}) \backslash G(\mathbb{A})) = L^2_{\text{cusp}} \oplus L^2_{\text{res}} \oplus L^2_{\text{cont}}$$
 
 其中：
+
 - **$L^2_{\text{cusp}}$**: 尖点形式空间（离散）
 - **$L^2_{\text{res}}$**: 剩余谱
 - **$L^2_{\text{cont}}$**: 连续谱
@@ -121,7 +148,7 @@ $$\mathcal{H}_p \cong \mathbb{C}[X_*(T)]^{W}$$
 
 #### 1.3.2 Hecke特征形式
 
-**Fourier展开**: 
+**Fourier展开**:
 
 $$f(z) = \sum_{n=1}^{\infty} a_n q^n, \quad q = e^{2\pi i z}$$
 
@@ -212,7 +239,8 @@ $$\rho_\pi: G_{\mathbb{Q}} \to GL_n(\overline{\mathbb{Q}}_\ell)$$
 
 #### 3.3.1 计算模形式
 
-**算法**: 
+**算法**:
+
 - Brandt矩阵方法
 - 模符号算法
 - L函数计算
@@ -228,26 +256,26 @@ $$\rho_\pi: G_{\mathbb{Q}} \to GL_n(\overline{\mathbb{Q}}_\ell)$$
 ### 经典文献
 
 1. **Jacquet, H. & Langlands, R.P.** (1970). *Automorphic Forms on GL(2)*. Lecture Notes in Mathematics 114, Springer.
-   
+
 2. **Borel, A. & Jacquet, H.** (1979). *Automorphic Forms and Automorphic Representations*. Proc. Symp. Pure Math. 33.
-   
+
 3. **Bump, D.** (1997). *Automorphic Forms and Representations*. Cambridge University Press.
 
 ### 现代专著
 
-4. **Goldfeld, D. & Hundley, J.** (2011). *Automorphic Representations and L-Functions for the General Linear Group*. Cambridge University Press.
-   
-5. **Gelbart, S.S.** (1984). *An Elementary Introduction to the Langlands Program*. Bulletin AMS 10(2).
-   
-6. **Cogdell, J.W., Kim, H.H. & Murty, M.R.** (2004). *Lectures on Automorphic L-Functions*. AMS.
+1. **Goldfeld, D. & Hundley, J.** (2011). *Automorphic Representations and L-Functions for the General Linear Group*. Cambridge University Press.
+
+2. **Gelbart, S.S.** (1984). *An Elementary Introduction to the Langlands Program*. Bulletin AMS 10(2).
+
+3. **Cogdell, J.W., Kim, H.H. & Murty, M.R.** (2004). *Lectures on Automorphic L-Functions*. AMS.
 
 ### 前沿研究
 
-7. **Harris, M. & Taylor, R.** (2001). *The Geometry and Cohomology of Some Simple Shimura Varieties*. Princeton University Press.
-   
-8. **Shin, S.W.** (2011). *Galois Representations Arising from Some Compact Shimura Varieties*. Annals of Math.
-   
-9. **Calegari, F. & Geraghty, D.** (2018). *Modularity Lifting Beyond the Taylor-Wiles Method*. Inventiones Math.
+1. **Harris, M. & Taylor, R.** (2001). *The Geometry and Cohomology of Some Simple Shimura Varieties*. Princeton University Press.
+
+2. **Shin, S.W.** (2011). *Galois Representations Arising from Some Compact Shimura Varieties*. Annals of Math.
+
+3. **Calegari, F. & Geraghty, D.** (2018). *Modularity Lifting Beyond the Taylor-Wiles Method*. Inventiones Math.
 
 ---
 

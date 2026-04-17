@@ -10,10 +10,10 @@ processed_at: '2026-04-09'
 
 # FormalMath与UC Berkeley数学课程对齐报告
 
-**版本**: v1.0  
-**生成日期**: 2026年4月9日  
-**对应机构**: University of California, Berkeley  
-**课程语言**: 英语  
+**版本**: v1.0
+**生成日期**: 2026年4月9日
+**对应机构**: University of California, Berkeley
+**课程语言**: 英语
 
 ---
 
@@ -27,8 +27,12 @@ processed_at: '2026-04-09'
     - [1.3 本科课程结构](#13-本科课程结构)
   - [二、课程详细对齐分析](#二课程详细对齐分析)
     - [2.1 数学分析 (MATH 104/105 Introduction to Analysis)](#21-数学分析-math-104105-introduction-to-analysis)
+      - [MATH 104: Introduction to Analysis](#math-104-introduction-to-analysis)
+      - [MATH 105: Second Course in Analysis](#math-105-second-course-in-analysis)
     - [2.2 线性代数 (MATH 110 Linear Algebra)](#22-线性代数-math-110-linear-algebra)
     - [2.3 抽象代数 (MATH 113/114 Abstract Algebra)](#23-抽象代数-math-113114-abstract-algebra)
+      - [MATH 113: Introduction to Abstract Algebra](#math-113-introduction-to-abstract-algebra)
+      - [MATH 114: Second Course in Abstract Algebra](#math-114-second-course-in-abstract-algebra)
   - [三、概念映射表](#三概念映射表)
     - [3.1 分析学概念映射](#31-分析学概念映射)
     - [3.2 线性代数概念映射](#32-线性代数概念映射)
@@ -38,6 +42,8 @@ processed_at: '2026-04-09'
     - [4.2 详细覆盖度矩阵](#42-详细覆盖度矩阵)
   - [五、建议学习路径](#五建议学习路径)
   - [六、思维导图](#六思维导图)
+    - [6.1 UC Berkeley数学课程体系思维导图](#61-uc-berkeley数学课程体系思维导图)
+    - [6.2 FormalMath概念映射思维导图](#62-formalmath概念映射思维导图)
   - [七、附录](#七附录)
     - [A. UC Berkeley课程代码索引](#a-uc-berkeley课程代码索引)
     - [B. 参考文献](#b-参考文献)
@@ -105,7 +111,8 @@ UC Berkeley数学本科课程分为多个序列：
 
 **课程概述**: Berkeley的实分析入门课程，是数学专业的核心必修课
 
-**教材**: 
+**教材**:
+
 - MATH 104: Ross, *Elementary Analysis: The Theory of Calculus*
 - MATH 105: 补充材料包括 Rudin 部分章节
 
@@ -152,7 +159,8 @@ UC Berkeley数学本科课程分为多个序列：
 
 **课程概述**: 抽象的线性代数课程，强调向量空间理论
 
-**教材**: 
+**教材**:
+
 - Friedberg, Insel, Spence, *Linear Algebra*
 - Axler, *Linear Algebra Done Right* (参考)
 
@@ -184,7 +192,8 @@ UC Berkeley数学本科课程分为多个序列：
 
 **课程概述**: 群、环、域理论的两学期课程序列
 
-**教材**: 
+**教材**:
+
 - Dummit & Foote, *Abstract Algebra* (Chapters 1-9, 13)
 - Artin, *Algebra* (参考)
 

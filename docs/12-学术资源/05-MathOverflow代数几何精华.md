@@ -11,27 +11,63 @@ processed_at: '2026-04-09'
 
 # MathOverflow代数几何精华对齐文档
 
-**版本**: v1.0  
-**生成日期**: 2026年4月9日  
-**来源平台**: MathOverflow (mathoverflow.net)  
-**核心领域**: 代数几何  
+**版本**: v1.0
+**生成日期**: 2026年4月9日
+**来源平台**: MathOverflow (mathoverflow.net)
+**核心领域**: 代数几何
 
 ---
 
 ## 目录
 
-- [一、概述与背景](#一概述与背景)
-- [二、MathOverflow代数几何主题分布](#二mathoverflow代数几何主题分布)
-- [三、经典问答深度解析](#三经典问答深度解析)
-  - [3.1 概形理论的直觉理解](#31-概形理论的直觉理解)
-  - [3.2 层的几何意义](#32-层的几何意义)
-  - [3.3 上同调的计算技巧](#33-上同调的计算技巧)
-  - [3.4 代数闭包的必要性](#34-代数闭包的必要性)
-- [四、常见误区与澄清](#四常见误区与澄清)
-- [五、与其他领域的联系](#五与其他领域的联系)
-- [六、思维导图](#六思维导图)
-- [七、与FormalMath概念链接](#七与formalmath概念链接)
-- [八、专家推荐书单](#八专家推荐书单)
+- [MathOverflow代数几何精华对齐文档](#mathoverflow代数几何精华对齐文档)
+  - [目录](#目录)
+  - [一、概述与背景](#一概述与背景)
+    - [1.1 MathOverflow简介](#11-mathoverflow简介)
+    - [1.2 代数几何在MO的地位](#12-代数几何在mo的地位)
+  - [二、MathOverflow代数几何主题分布](#二mathoverflow代数几何主题分布)
+    - [2.1 高频讨论主题TOP10](#21-高频讨论主题top10)
+  - [三、经典问答深度解析](#三经典问答深度解析)
+    - [3.1 概形理论的直觉理解](#31-概形理论的直觉理解)
+      - [核心洞见](#核心洞见)
+      - [学习建议（Buzzard路线）](#学习建议buzzard路线)
+      - [关键澄清](#关键澄清)
+      - [FormalMath链接](#formalmath链接)
+    - [3.2 层的几何意义](#32-层的几何意义)
+      - [核心洞见](#核心洞见-1)
+      - [几何-代数对应](#几何-代数对应)
+      - [技术要点](#技术要点)
+      - [FormalMath链接](#formalmath链接-1)
+    - [3.3 上同调的计算技巧](#33-上同调的计算技巧)
+      - [核心洞见](#核心洞见-2)
+      - [上同调计算路线图](#上同调计算路线图)
+      - [关键公式](#关键公式)
+      - [FormalMath链接](#formalmath链接-2)
+    - [3.4 代数闭包的必要性](#34-代数闭包的必要性)
+      - [核心洞见](#核心洞见-3)
+      - [定理陈述与理解](#定理陈述与理解)
+      - [应用示例](#应用示例)
+      - [FormalMath链接](#formalmath链接-3)
+  - [四、常见误区与澄清](#四常见误区与澄清)
+    - [4.1 概形学习中的十大误区](#41-概形学习中的十大误区)
+    - [4.2 技术陷阱](#42-技术陷阱)
+  - [五、与其他领域的联系](#五与其他领域的联系)
+    - [5.1 代数几何的交叉网络](#51-代数几何的交叉网络)
+    - [5.2 具体联系示例](#52-具体联系示例)
+  - [六、思维导图](#六思维导图)
+    - [6.1 代数几何核心问题关系图](#61-代数几何核心问题关系图)
+    - [6.2 学习路径思维导图](#62-学习路径思维导图)
+  - [七、与FormalMath概念链接](#七与formalmath概念链接)
+    - [7.1 已覆盖概念映射](#71-已覆盖概念映射)
+    - [7.2 建议补充内容](#72-建议补充内容)
+  - [八、专家推荐书单](#八专家推荐书单)
+    - [8.1 入门阶段](#81-入门阶段)
+    - [8.2 进阶阶段](#82-进阶阶段)
+    - [8.3 专题深入](#83-专题深入)
+    - [8.4 在线资源](#84-在线资源)
+  - [附录](#附录)
+    - [A. MathOverflow相关标签](#a-mathoverflow相关标签)
+    - [B. 常见问题索引](#b-常见问题索引)
 
 ---
 
@@ -93,8 +129,8 @@ processed_at: '2026-04-09'
 
 ### 3.1 概形理论的直觉理解
 
-**原问题**: [What should be learned in a first serious schemes course?](https://mathoverflow.net/q/28496)  
-**提问者**: David Zureick-Brown  
+**原问题**: [What should be learned in a first serious schemes course?](https://mathoverflow.net/q/28496)
+**提问者**: David Zureick-Brown
 **最高票回答**: Kevin Buzzard (投票: 287)
 
 #### 核心洞见
@@ -133,6 +169,7 @@ Kevin Buzzard指出学习概形理论需要**"重塑直觉"**:
 | 仿射概形=交换环 | Spec(-) 不是忠实的，需要结构层 |
 
 #### FormalMath链接
+
 - [概形定义](concept/核心概念/21-概形.md)
 - [结构层](concept/代数几何/结构层.md)
 - [仿射概形](concept/代数几何/仿射概形.md)
@@ -141,8 +178,8 @@ Kevin Buzzard指出学习概形理论需要**"重塑直觉"**:
 
 ### 3.2 层的几何意义
 
-**原问题**: [How do I make the conceptual transition from vector bundles to sheaves?](https://mathoverflow.net/q/6140)  
-**提问者**: Qiaochu Yuan  
+**原问题**: [How do I make the conceptual transition from vector bundles to sheaves?](https://mathoverflow.net/q/6140)
+**提问者**: Qiaochu Yuan
 **最高票回答**: David Ben-Zvi (投票: 198)
 
 #### 核心洞见
@@ -175,6 +212,7 @@ David Ben-Zvi阐明层是**"空间上数据的连续变化"**:
 | **拉回 (Pullback)** | f^*F | 沿映射"限制" |
 
 #### FormalMath链接
+
 - [层](concept/核心概念/22-层.md)
 - [拟凝聚层](concept/代数几何/拟凝聚层.md)
 - [局部自由层](concept/代数几何/局部自由层.md)
@@ -183,8 +221,8 @@ David Ben-Zvi阐明层是**"空间上数据的连续变化"**:
 
 ### 3.3 上同调的计算技巧
 
-**原问题**: [What is the most useful intuitive / geometric way to think about derived functors and derived categories?](https://mathoverflow.net/q/2945)  
-**提问者**: Kevin Lin  
+**原问题**: [What is the most useful intuitive / geometric way to think about derived functors and derived categories?](https://mathoverflow.net/q/2945)
+**提问者**: Kevin Lin
 **最高票回答**: David Ben-Zvi (投票: 156)
 
 #### 核心洞见
@@ -229,6 +267,7 @@ Ben-Zvi将导出范畴描述为**"线性代数的无穷小版本"**:
 | **Grothendieck对偶** | Ext^i(F,G) ≅ Ext^{n-i}(G,F⊗ω_X)^∨ | 一般概形的对偶定理 |
 
 #### FormalMath链接
+
 - [层上同调](concept/核心概念/26-层上同调.md)
 - [导出范畴](concept/同调代数/导出范畴.md)
 - [Serre对偶](concept/代数几何/Serre对偶.md)
@@ -237,8 +276,8 @@ Ben-Zvi将导出范畴描述为**"线性代数的无穷小版本"**:
 
 ### 3.4 代数闭包的必要性
 
-**原问题**: [Is there an intuitive reason for Zariski's main theorem?](https://mathoverflow.net/q/59071)  
-**提问者**: Akhil Mathew  
+**原问题**: [Is there an intuitive reason for Zariski's main theorem?](https://mathoverflow.net/q/59071)
+**提问者**: Akhil Mathew
 **最高票回答**: Georges Elencwajg (投票: 142)
 
 #### 核心洞见
@@ -271,6 +310,7 @@ Elencwajg给出Zariski主定理的**"有限性直觉"**:
 | 交换代数 | 理解整闭包的几何意义 |
 
 #### FormalMath链接
+
 - [Zariski主定理](concept/代数几何/Zariski主定理.md)
 - [拟有限态射](concept/代数几何/拟有限态射.md)
 - [整闭包](concept/交换代数/整闭包.md)
@@ -360,40 +400,40 @@ graph TB
     AG --> SHE[层论]
     AG --> COH[上同调理论]
     AG --> MOD[模空间]
-    
+
     SCH --> SPEC[仿射概形 Spec]
     SCH --> PROJ[射影概形 Proj]
     SCH --> MORPH[态射性质]
     SCH --> BASE[基变换]
-    
+
     SHE --> STRUCT[结构层 O_X]
     SHE --> QUASI[拟凝聚层]
     SHE --> COHER[凝聚层]
     SHE --> LOC[局部自由层]
-    
+
     COH --> CECH[Čech上同调]
     COH --> DER[导出函子]
     COH --> DUAL[对偶理论]
     COH --> VANISH[消失定理]
-    
+
     MOD --> FINE[精细模空间]
     MOD --> COARSE[粗糙模空间]
     MOD --> STACK[代数栈]
-    
+
     SPEC --> RING[交换环 ↔ 仿射概形]
     PROJ --> GRAD[分次环 ↔ 射影概形]
-    
+
     STRUCT --> LOC2[局部环 O_{X,x}]
     QUASI --> MOD2[模 ↔ 层]
     COHER --> FINITENESS[有限性条件]
-    
+
     CECH --> COVER[开覆盖]
     DER --> RES[内射/平坦分解]
     DUAL --> SERRE[Serre对偶]
     DUAL --> GROTH[Grothendieck对偶]
     VANISH --> KODAIRA[Kodaira消失]
     VANISH --> SERRE2[Serre消失]
-    
+
     style AG fill:#f9f,stroke:#333,stroke-width:4px
     style SCH fill:#bbf,stroke:#333
     style SHE fill:#bfb,stroke:#333
@@ -406,48 +446,48 @@ graph TB
 ```mermaid
 graph LR
     START[开始学习代数几何] --> FOUND[基础准备]
-    
+
     FOUND --> COMM[交换代数]
     FOUND --> CAT[范畴论基础]
     FOUND --> CLASSIC[经典代数几何]
-    
+
     COMM --> RING[环与理想]
     COMM --> MODULE[模论]
     COMM --> LOCAL[局部化]
-    
+
     CAT --> FUNCTOR[函子]
     CAT --> LIMIT[极限与余极限]
     CAT --> ADJ[伴随函子]
-    
+
     CLASSIC --> VARIETY[代数簇]
     CLASSIC --> CURVE[代数曲线]
     CLASSIC --> SURFACE[代数曲面]
-    
+
     FOUND --> SCHEME[概形理论]
-    
+
     SCHEME --> AFFINE[仿射概形]
     SCHEME --> PROJECTIVE[射影概形]
     SCHEME --> MORPH[态射]
     SCHEME --> FIBER[纤维积]
-    
+
     SCHEME --> SHEAF[层论]
-    
+
     SHEAF --> DEF[层定义]
     SHEAF --> OP[层操作]
     SHEAF --> STALK[茎与芽]
-    
+
     SHEAF --> COHOMOLOGY[上同调]
-    
+
     COHOMOLOGY --> CECH2[Čech上同调]
     COHOMOLOGY --> DERIVED[导出函子]
     COHOMOLOGY --> SPECTRAL[谱序列]
-    
+
     COHOMOLOGY --> APPLICATION[应用]
-    
+
     APPLICATION --> RR[Riemann-Roch]
     APPLICATION --> DUALITY[对偶定理]
     APPLICATION --> MODULI[模空间]
-    
+
     style START fill:#f9f,stroke:#333,stroke-width:4px
     style APPLICATION fill:#bfb,stroke:#333,stroke-width:2px
 ```

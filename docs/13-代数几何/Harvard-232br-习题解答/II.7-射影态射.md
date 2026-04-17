@@ -373,6 +373,7 @@ theorem projectiveSpace_over_Z_isProper (n : ℕ) [n.AtLeastTwo] :
 $v_d$ 由完全线性系 $|\mathcal{O}(d)|$ 给出。取 $M_0, \dots, M_N$ 为 $x_0, \dots, x_n$ 的所有次数为 $d$ 的单项式。则 $v_d$ 将点 $P = [a_0 : \dots : a_n]$ 映为 $[M_0(P) : \dots : M_N(P)]$。
 
 要证 $v_d$ 是闭浸入，需证：
+
 1. $v_d$ 是拓扑闭嵌入；
 2. $v_d^\# : \mathcal{O}_{\mathbb{P}^N} \to (v_d)_*\mathcal{O}_{\mathbb{P}^n}$ 是满射。
 

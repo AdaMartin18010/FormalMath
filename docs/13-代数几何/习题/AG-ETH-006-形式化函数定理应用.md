@@ -75,16 +75,16 @@ references:
 > $\mathcal{F}$ eine kohärente Garbe auf $X$, und $y \in Y$ ein Punkt.
 > Bezeichne $X_n = X \times_Y \operatorname{Spec}(\mathcal{O}_{Y,y}/\mathfrak{m}_y^{n+1})$
 > die $n$-te formale Faser.
-> 
+>
 > (a) Formulieren Sie streng den **Formalen Funktionensatz**.
-> 
+>
 > (b) Zeigen Sie: Für die höheren direkten Bilder gilt:
->     $$(R^i f_* \mathcal{F})_y^\wedge \cong \varprojlim_n H^i(X_n, \mathcal{F}_n)$$
->     wobei $\mathcal{F}_n$ die Einschränkung von $\mathcal{F}$ auf $X_n$ ist.
-> 
+> $$(R^i f_* \mathcal{F})_y^\wedge \cong \varprojlim_n H^i(X_n, \mathcal{F}_n)$$
+> wobei $\mathcal{F}_n$ die Einschränkung von $\mathcal{F}$ auf $X_n$ ist.
+>
 > (c) **Anwendung**: Sei $f: X \to Y$ eine eigentliche Flächenfaserung
->     (d.h. $\dim X = 3$, $\dim Y = 1$, generische Faser ist eine Kurve).
->     Zeigen Sie: Die Eulercharakteristik der Fasern ist lokal konstant.
+> (d.h. $\dim X = 3$, $\dim Y = 1$, generische Faser ist eine Kurve).
+> Zeigen Sie: Die Eulercharakteristik der Fasern ist lokal konstant.
 
 ### 中文翻译
 
@@ -93,16 +93,16 @@ references:
 > $\mathcal{F}$ 为 $X$ 上的凝聚层，$y \in Y$ 为一点。
 > 记 $X_n = X \times_Y \operatorname{Spec}(\mathcal{O}_{Y,y}/\mathfrak{m}_y^{n+1})$
 > 为第 $n$ 次形式纤维。
-> 
+>
 > (a) 严格陈述**形式化函数定理**。
-> 
+>
 > (b) 证明：对高阶直像有：
->     $$(R^i f_* \mathcal{F})_y^\wedge \cong \varprojlim_n H^i(X_n, \mathcal{F}_n)$$
->     其中 $\mathcal{F}_n$ 是 $\mathcal{F}$ 在 $X_n$ 上的限制。
-> 
+> $$(R^i f_* \mathcal{F})_y^\wedge \cong \varprojlim_n H^i(X_n, \mathcal{F}_n)$$
+> 其中 $\mathcal{F}_n$ 是 $\mathcal{F}$ 在 $X_n$ 上的限制。
+>
 > (c) **应用**：设 $f: X \to Y$ 为真曲面纤维化
->     （即 $\dim X = 3$，$\dim Y = 1$，一般纤维为曲线）。
->     证明：纤维的Euler示性数是局部常数。
+> （即 $\dim X = 3$，$\dim Y = 1$，一般纤维为曲线）。
+> 证明：纤维的Euler示性数是局部常数。
 
 ---
 
@@ -113,6 +113,7 @@ references:
 **Theorem** (Formaler Funktionensatz / Theorem on Formal Functions):
 
 *Voraussetzungen*:
+
 - $f: X \to Y$ eigentlicher Morphismus Noetherscher Schemata
 - $\mathcal{F}$ kohärente Garbe auf $X$
 - $y \in Y$ ein Punkt mit maximalem Ideal $\mathfrak{m} = \mathfrak{m}_y$
@@ -121,6 +122,7 @@ references:
 $$(R^i f_* \mathcal{F})_y^\wedge \xrightarrow{\sim} \varprojlim_n H^i(X_n, \mathcal{F}_n)$$
 
 wobei:
+
 - $(-)^\wedge$ bezeichnet die $\mathfrak{m}$-adische Vervollständigung
 - $X_n = X \times_Y \operatorname{Spec}(\mathcal{O}_{Y,y}/\mathfrak{m}^{n+1})$
 - $\mathcal{F}_n = \mathcal{F} \otimes_{\mathcal{O}_Y} \mathcal{O}_{Y,y}/\mathfrak{m}^{n+1}$
@@ -203,6 +205,7 @@ Nach dem Formalen Funktionensatz ist dies lokal konstant in $y$. ∎
 ## ETH综合特色
 
 本题综合了ETH 401-3532的多个核心内容：
+
 - 形式化函数定理 (K3.2)
 - 平坦基变换 (K3.1)
 - 半连续性定理 (K3.4)

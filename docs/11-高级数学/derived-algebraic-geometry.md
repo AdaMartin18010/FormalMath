@@ -17,21 +17,27 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- 导出代数几何深度版 / Derived Algebraic Geometry - Deep Dive
+- [导出代数几何深度版 / Derived Algebraic Geometry - Deep Dive](#导出代数几何深度版--derived-algebraic-geometry---deep-dive)
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
     - [1.1 导出代数的起源与动机](#11-导出代数的起源与动机)
     - [1.2 同伦代数结构](#12-同伦代数结构)
     - [1.3 导出概形与导出栈](#13-导出概形与导出栈)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
     - [2.1 无穷范畴框架](#21-无穷范畴框架)
     - [2.2 几何Langlands纲领](#22-几何langlands纲领)
     - [2.3 导出辛几何](#23-导出辛几何)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
     - [3.1 凝聚态数学](#31-凝聚态数学)
     - [3.2 完全相交上的矩阵因子化](#32-完全相交上的矩阵因子化)
     - [3.3 高阶代数群与表示](#33-高阶代数群与表示)
-  - [4. 参考文献 / References](#4-参考文献-references)
+  - [4. 参考文献 / References](#4-参考文献--references)
+    - [奠基性著作](#奠基性著作)
+    - [专题著作](#专题著作)
+    - [凝聚态数学](#凝聚态数学)
+    - [矩阵因子化与奇点](#矩阵因子化与奇点)
+    - [综述与讲义](#综述与讲义)
+    - [在线资源](#在线资源)
 
 ---
 
@@ -42,6 +48,7 @@ processed_at: '2026-04-05'
 **历史渊源**:
 
 导出代数几何的思想可以追溯到多个数学传统：
+
 - **同伦论**: Quillen的模型范畴（1967）
 - **相交理论**: Serre的Tor公式（1958）
 - **形变理论**: Deligne、Goldman-Millson的工作（1980s）
@@ -58,6 +65,7 @@ processed_at: '2026-04-05'
 **导出化解决方案**:
 
 在导出代数几何中，结构层被替换为**微分分次代数**（differential graded algebra, dga）：
+
 - 允许"负次函数"（来自Tor）
 - 同伦等价取代严格同构
 - 自然的变形-障碍理论
@@ -67,6 +75,7 @@ processed_at: '2026-04-05'
 **微分分次代数**:
 
 一个dga是链复形$A^\bullet$配备：
+
 - 乘法：$A^p \otimes A^q \to A^{p+q}$
 - 微分：$d: A^n \to A^{n+1}$，满足Leibniz法则
 
@@ -87,6 +96,7 @@ processed_at: '2026-04-05'
 **Quillen模型范畴**:
 
 导出代数几何使用模型范畴（或$(\infty,1)$-范畴）的框架：
+
 - **弱等价**: 拟同构（quasi-isomorphism）
 - **纤维化**: 满射（在正次数）
 - **余纤维化**: 有特定提升性质的态射
@@ -104,6 +114,7 @@ $$\text{dSpec}(A) = (\text{Spec}(\pi_0(A)), \mathcal{O}^{\text{der}})$$
 
 存在伴随对：
 $$t_0: \text{dSch} \rightleftarrows \text{Sch}: i$$
+
 - $t_0$：取经典截断（$\pi_0$）
 - $i$：将经典概形视为离散导出概形
 
@@ -132,6 +143,7 @@ $$\mathcal{X}: \text{dAff}^{\text{op}} \to \mathcal{S}$$
 **为什么需要无穷范畴**:
 
 在导出代数几何中，我们需要追踪高阶同伦信息：
+
 - 导出范畴是三角范畴，但丢失同伦类型信息
 - 导出函子应有更高阶的凝聚结构
 
@@ -150,13 +162,15 @@ $$\mathcal{X}: \text{dAff}^{\text{op}} \to \mathcal{S}$$
 **稳定无穷范畴**:
 
 导出代数几何使用**稳定无穷范畴**（如谱范畴）：
+
 - 有零对象
 - 每个态射有纤维和余纤维
--  fiber sequences 等价于 cofiber sequences
+- fiber sequences 等价于 cofiber sequences
 
 **谱代数几何**:
 
 更一般的框架，使用$E_\infty$-ring spectra：
+
 - 包含拓扑K-理论、椭圆上同调等
 - 与稳定同伦论有深刻联系
 
@@ -165,6 +179,7 @@ $$\mathcal{X}: \text{dAff}^{\text{op}} \to \mathcal{S}$$
 **算术Langlands纲领**:
 
 数论中，Langlands纲领连接：
+
 - Galois表示
 - 自守形式
 - 动机L-函数
@@ -172,6 +187,7 @@ $$\mathcal{X}: \text{dAff}^{\text{op}} \to \mathcal{S}$$
 **几何Langlands纲领**:
 
 对于曲线$C$在代数闭域$k$上，连接：
+
 - $^L G$-局部系统（$G$的Langlands对偶群）
 - $G$-丛的D-模（或反常层）
 
@@ -184,6 +200,7 @@ $$\mathcal{X}: \text{dAff}^{\text{op}} \to \mathcal{S}$$
 **Arinkin-Gaitsgory奇异性条件**:
 
 对于非约化群，需要允许奇异性。导出代数几何提供自然的框架处理：
+
 - 导出Hecke范畴
 - 导出几何Satake等价
 
@@ -202,6 +219,7 @@ $$\mathcal{X}: \text{dAff}^{\text{op}} \to \mathcal{S}$$
 **导出辛结构**:
 
 Pantev-Toën-Vaquié-Vezzosi引入的**(-1)-辛结构**：
+
 - 在导出Artin栈上
 - 闭2-形式$\omega \in \mathcal{A}^{2,cl}(X, -1)$（权-1的闭形式）
 - 诱导出$\mathbb{L}_X \simeq \mathbb{T}_X[-1]$（切复形与余切复形的等价）
@@ -215,14 +233,15 @@ Pantev-Toën-Vaquié-Vezzosi引入的**(-1)-辛结构**：
 **A-model与B-model**:
 
 在导出辛几何中，有：
+
 - **B-model**: 凝聚层（或矩阵因子化）的导出范畴
 - **A-model**: Fukaya范畴（需进一步发展）
 
 **应用**:
 
--  categorified Hall代数
--  3d N=4超对称理论的Higgs分支
--  Rozansky-Witten理论
+- categorified Hall代数
+- 3d N=4超对称理论的Higgs分支
+- Rozansky-Witten理论
 
 ---
 
@@ -233,6 +252,7 @@ Pantev-Toën-Vaquié-Vezzosi引入的**(-1)-辛结构**：
 **历史背景**:
 
 "凝聚态数学"（Condensed Mathematics）由Dustin Clausen和Peter Scholze在2019年提出，旨在统一：
+
 - 拓扑空间（分析）
 - 代数几何（代数）
 
@@ -278,6 +298,7 @@ $$\text{MF}(W) \simeq D_{\text{sing}}^b(W^{-1}(0))$$
 **完全交集的推广**:
 
 对于完全交集$X = V(f_1, \ldots, f_c) \subset \mathbb{A}^n$，需要：
+
 - **超矩阵因子化** (Eisenbud, 1980)
 - **$\mathbb{Z}/2$-分级 dg-范畴**
 - **矩阵因子化的范畴化**
@@ -293,6 +314,7 @@ $$\text{MF}(W) \simeq D_{\text{sing}}^b(W^{-1}(0))$$
 **高阶群**:
 
 在导出代数几何中，可以定义**高阶群**（higher groups）：
+
 - 群对象是群的同伦类型
 - $BG$是高阶栈
 - 表示是$BG$上的层
@@ -339,56 +361,56 @@ $$\text{MF}(W) \simeq D_{\text{sing}}^b(W^{-1}(0))$$
 
 ### 专题著作
 
-5. **Kontsevich, M.** - *Homological Algebra of Mirror Symmetry* (1994 ICM)
+1. **Kontsevich, M.** - *Homological Algebra of Mirror Symmetry* (1994 ICM)
    - 同调镜像对称的奠基论文
 
-6. **Pantev, T., Toën, B., Vaquié, M. & Vezzosi, G.** - *Shifted Symplectic Structures* (2013)
+2. **Pantev, T., Toën, B., Vaquié, M. & Vezzosi, G.** - *Shifted Symplectic Structures* (2013)
    - 导出辛几何的奠基论文
 
-7. **Arinkin, D. & Gaitsgory, D.** - *Singular Support of Coherent Sheaves and the Geometric Langlands Conjecture* (2015)
+3. **Arinkin, D. & Gaitsgory, D.** - *Singular Support of Coherent Sheaves and the Geometric Langlands Conjecture* (2015)
    - 几何Langlands的导出方法
 
 ### 凝聚态数学
 
-8. **Clausen, D. & Scholze, P.** - *Condensed Mathematics* (2019-2020)
+1. **Clausen, D. & Scholze, P.** - *Condensed Mathematics* (2019-2020)
    - 凝聚态数学的讲义
 
-9. **Scholze, P.** - *Lectures on Condensed Mathematics* (2019)
+2. **Scholze, P.** - *Lectures on Condensed Mathematics* (2019)
    - 凝聚态数学的入门
 
-10. **Mann, L.** - *A p-Adic 6-Functor Formalism in Rigid Analytic Geometry* (2022)
+3. **Mann, L.** - *A p-Adic 6-Functor Formalism in Rigid Analytic Geometry* (2022)
     - 凝聚态方法在$p$-adic几何中的应用
 
 ### 矩阵因子化与奇点
 
-11. **Orlov, D.** - *Triangulated Categories of Singularities and D-Branes in Landau-Ginzburg Models* (2004)
+1. **Orlov, D.** - *Triangulated Categories of Singularities and D-Branes in Landau-Ginzburg Models* (2004)
     - 矩阵因子化与奇点范畴的等价
 
-12. **Eisenbud, D.** - *Homological Algebra on a Complete Intersection, with an Application to Group Representations* (1980)
+2. **Eisenbud, D.** - *Homological Algebra on a Complete Intersection, with an Application to Group Representations* (1980)
     - 矩阵因子化的起源
 
-13. **Preygel, A.** - *Thom-Sebastiani & Duality for Matrix Factorizations* (2011)
+3. **Preygel, A.** - *Thom-Sebastiani & Duality for Matrix Factorizations* (2011)
     - 矩阵因子化的高级专题
 
 ### 综述与讲义
 
-14. **Toën, B.** - *Derived Algebraic Geometry* (2014 EMS Surveys)
+1. **Toën, B.** - *Derived Algebraic Geometry* (2014 EMS Surveys)
     - 导出代数几何的综述
 
-15. **Calaque, D. & Grivaux, J.** - *A Survey on Brackets and Derived Geometry* (2022)
+2. **Calaque, D. & Grivaux, J.** - *A Survey on Brackets and Derived Geometry* (2022)
     - 导出几何与李理论的联系
 
-16. **Porta, M. & Vezzosi, G.** - *The Loyola Symposium on Derived Algebraic Geometry* (2020)
+3. **Porta, M. & Vezzosi, G.** - *The Loyola Symposium on Derived Algebraic Geometry* (2020)
     - 当代研究综述
 
 ### 在线资源
 
-- [Kerodon](https://kerodon.net/)[需更新][需更新] - Jacob Lurie的高阶代数资源
+- [Kerodon][https://kerodon.net/][需更新](需更新) - Jacob Lurie的高阶代数资源
 - [Geometric Langlands Seminar](https://math.mit.edu/research/pure/applied-sem-future.html) - 几何Langlands讲义
 - [Derived Algebraic Geometry Seminar](https://math.berkeley.edu/~arinkin/) - Arinkin的DAG研讨班
 
 ---
 
-**文档版本**: 1.0  
-**维护者**: FormalMath项目  
+**文档版本**: 1.0
+**维护者**: FormalMath项目
 **许可证**: CC BY-SA 4.0

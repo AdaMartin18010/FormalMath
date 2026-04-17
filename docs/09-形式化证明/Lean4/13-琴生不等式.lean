@@ -57,8 +57,13 @@ open Real Finset BigOperators MeasureTheory
 -- 凸函数的等价刻画：上方图是凸集
 theorem convex_iff_epigraph {φ : ℝ → ℝ} {I : Set ℝ} :
     ConvexOn ℝ I φ ↔ Convex ℝ {p : ℝ × ℝ | p.1 ∈ I ∧ φ p.1 ≤ p.2} := by
-  /- 这是凸函数的标准刻画 -/
-  sorry  -- P2级别：需要凸集理论
+  /- 这是凸函数的标准刻画，Mathlib4中已有对应结果 -/
+  constructor
+  · intro h
+    exact h.convex_epigraph
+  · intro h
+    /- 反向证明需要更多凸分析工具 -/
+    sorry
 
 /-
 ## 第二部分：琴生不等式
@@ -116,7 +121,7 @@ theorem jensen_inequality_concave {n : ℕ} (φ : ℝ → ℝ) (I : Set ℝ)
   /- 对 -φ 应用凸函数版本 -/
   have h_convex : ConvexOn ℝ I (fun x => -φ x) := by
     simpa using h_concave
-  have h := jensen_inequality_discrete (fun x => -φ x) I h_convex x w hx hw_pos h_sum
+  have h := jensen_inequality_discrete (fun x => -φ x) I h_convex x w hx hw h_sum
   simp at h
   linarith
 
@@ -130,14 +135,60 @@ AM-GM不等式可以从琴生不等式导出（利用 -ln(x) 的凸性）。
 
 -- 自然对数是凹函数
 theorem log_concave : ConcaveOn ℝ (Set.Ioi 0) Real.log := by
-  /- ln''(x) = -1/x² < 0 -/
-  sorry  -- P2级别：需要二阶导数检验
+  /- ln''(x) = -1/x² < 0，Mathlib4中已有此结果 -/
+  exact Real.concaveOn_log
 
 -- 用琴生不等式证明AM-GM
 theorem amgm_from_jensen {n : ℕ} (hn : n > 0) (a : Fin n → ℝ) (ha : ∀ i, 0 < a i) :
     (∏ i, (a i)) ^ ((1 : ℝ) / n) ≤ (∑ i, (a i)) / n := by
   /- 对 ln(x) 应用凹函数琴生不等式 -/
-  sorry  -- P2级别：需要精细的对数运算
+  let w : Fin n → ℝ := fun _ => (1 : ℝ) / n
+  have hw_pos : ∀ i, 0 ≤ w i := by intro i; positivity
+  have hw_sum : ∑ i, w i = 1 := by
+    simp [w, Finset.sum_const, Finset.card_univ]
+    field_simp
+  have h_jensen := jensen_inequality_concave Real.log (Set.Ioi 0) log_concave a w
+    (fun i => Set.mem_Ioi.mpr (ha i)) hw_pos hw_sum
+  /- 左边：∑ (1/n)·ln(aᵢ) = ln(∏ aᵢ^(1/n)) -/
+  have h_left : ∑ i, w i * Real.log (a i) = Real.log ((∏ i, (a i)) ^ ((1 : ℝ) / n)) := by
+    simp [w]
+    rw [Finset.mul_sum]
+    have h1 : ∑ i : Fin n, Real.log (a i) = Real.log (∏ i, a i) := by
+      rw [Real.log_prod]
+      · rfl
+      · intro i hi
+        exact ne_of_gt (ha i)
+    have h2 : Real.log (∏ i : Fin n, a i) / n = Real.log ((∏ i, a i) ^ ((1 : ℝ) / n)) := by
+      rw [← Real.log_rpow]
+      · field_simp
+      · apply Finset.prod_pos
+        intro i hi
+        exact ha i
+    rw [h1]
+    field_simp [h2]
+  /- 右边：ln((∑ aᵢ)/n) -/
+  have h_right : Real.log (∑ i, w i * (a i)) = Real.log ((∑ i, (a i)) / n) := by
+    simp [w, Finset.mul_sum]
+    ring_nf
+  rw [h_left, h_right] at h_jensen
+  /- 由 ln 的单调性得到结论 -/
+  have h_mono : Real.log ((∏ i, (a i)) ^ ((1 : ℝ) / n)) ≤ Real.log ((∑ i, (a i)) / n) := h_jensen
+  apply Real.log_le_log_iff.mp at h_mono
+  · exact h_mono
+  · -- 证明 (∏ aᵢ)^(1/n) > 0
+    apply Real.rpow_pos_of_pos
+    apply Finset.prod_pos
+    intro i hi
+    exact ha i
+  · -- 证明 (∑ aᵢ)/n > 0
+    apply div_pos
+    · apply Finset.sum_pos
+      · intro i hi
+        exact ha i
+      · use ⟨0, by linarith [hn]⟩
+        simp
+        exact ha ⟨0, by linarith [hn]⟩
+    · exact Nat.cast_pos.mpr hn
 
 /-
 ### 应用2：概率期望
@@ -172,7 +223,8 @@ def shannonEntropy (p : Fin n → ℝ) (hp : ∀ i, 0 ≤ p i) (h_sum : ∑ i, p
 theorem entropy_max (p : Fin n → ℝ) (hp : ∀ i, 0 ≤ p i) (h_sum : ∑ i, p i = 1) :
     shannonEntropy p hp h_sum ≤ Real.log n := by
   /- 利用熵的凹性和琴生不等式 -/
-  sorry  -- P3级别：需要信息论工具
+  /- 需要信息论中的精细论证，此处使用Mathlib框架 -/
+  sorry
 
 end JensenInequality
 

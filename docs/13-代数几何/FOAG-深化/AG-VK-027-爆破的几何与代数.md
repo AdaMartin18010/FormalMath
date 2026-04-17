@@ -152,6 +152,7 @@ $$f^* \left( \bigoplus_{d=0}^\infty \mathcal{I}_Z^d \right) \longrightarrow \big
 **题目**（FOAG Ch 19, Exercise 19.2.C）：
 
 设 $X = \mathbb{A}^2_k = \operatorname{Spec} k[x, y]$，$Z = \{(0, 0)\} = V(x, y)$。证明：
+
 1. $\operatorname{Bl}_Z(X)$ 是 $k[x, y] \times_k \mathbb{P}^1_k$ 的一个闭子概形，由方程 $xu = yv$ 定义（其中 $(x, y)$ 是 $\mathbb{A}^2$ 的坐标，$[u:v]$ 是 $\mathbb{P}^1$ 的齐次坐标）。
 2. 例外除子 $E \cong \mathbb{P}^1_k$。
 3. 爆破映射 $\pi: \operatorname{Bl}_Z(X) \to \mathbb{A}^2$ 在 $\mathbb{A}^2 \setminus \{(0,0)\}$ 上是同构。
@@ -226,7 +227,7 @@ example {Y : Scheme} (f : Y ⟶ X) (hf : IsCartierDivisor (pullback f Z)) :
   sorry
 
 /-- 平面在原点的爆破 -/
-example : blowup (origin 𝔸²) ≅ 
+example : blowup (origin 𝔸²) ≅
   Proj (reesAlgebra (maximalIdeal (k[x,y]))) := by
   sorry
 ```

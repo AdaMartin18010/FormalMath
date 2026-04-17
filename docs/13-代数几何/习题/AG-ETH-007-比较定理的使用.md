@@ -73,18 +73,18 @@ references:
 > **Aufgabe** (Streng und Natürlich):
 > Es sei $X$ ein topologischer Raum, $\mathcal{U} = \{U_i\}$ eine offene Überdeckung,
 > und $\mathcal{F}$ eine abelsche Garbe auf $X$.
-> 
+>
 > (a) Konstruieren Sie streng den kanonischen Homomorphismus:
->     $$\check{H}^i(\mathcal{U}, \mathcal{F}) \longrightarrow H^i(X, \mathcal{F})$$
-> 
+> $$\check{H}^i(\mathcal{U}, \mathcal{F}) \longrightarrow H^i(X, \mathcal{F})$$
+>
 > (b) Beweisen Sie: Ist $\mathcal{U}$ eine **Leray-Überdeckung** für $\mathcal{F}$
->     (d.h. $H^j(U_{i_0} \cap \cdots \cap U_{i_p}, \mathcal{F}) = 0$ für alle $j > 0$ und alle $p$),
->     so ist der Vergleichshomomorphismus ein Isomorphismus.
-> 
+> (d.h. $H^j(U_{i_0} \cap \cdots \cap U_{i_p}, \mathcal{F}) = 0$ für alle $j > 0$ und alle $p$),
+> so ist der Vergleichshomomorphismus ein Isomorphismus.
+>
 > (c) Zeigen Sie die Natürlichkeit: Für einen Morphismus $f: \mathcal{F} \to \mathcal{G}$
->     kommutiert das Diagramm:
->     ```
->     Ĥ^i(U,F) → H^i(X,F)
+> kommutiert das Diagramm:
+> ```
+> Ĥ^i(U,F) → H^i(X,F)
 >         ↓           ↓
 >     Ĥ^i(U,G) → H^i(X,G)
 >     ```
@@ -94,17 +94,17 @@ references:
 > **习题** (严格且自然)：
 > 设 $X$ 为拓扑空间，$\mathcal{U} = \{U_i\}$ 为开覆盖，
 > $\mathcal{F}$ 为 $X$ 上的阿贝尔群层。
-> 
+>
 > (a) 严格构造典范同态：
->     $$\check{H}^i(\mathcal{U}, \mathcal{F}) \longrightarrow H^i(X, \mathcal{F})$$
-> 
+> $$\check{H}^i(\mathcal{U}, \mathcal{F}) \longrightarrow H^i(X, \mathcal{F})$$
+>
 > (b) 证明：若 $\mathcal{U}$ 是 $\mathcal{F}$ 的**Leray覆盖**
->     （即对所有 $j > 0$ 和所有 $p$，$H^j(U_{i_0} \cap \cdots \cap U_{i_p}, \mathcal{F}) = 0$），
->     则比较同态是同构。
-> 
+> （即对所有 $j > 0$ 和所有 $p$，$H^j(U_{i_0} \cap \cdots \cap U_{i_p}, \mathcal{F}) = 0$），
+> 则比较同态是同构。
+>
 > (c) 证明自然性：对态射 $f: \mathcal{F} \to \mathcal{G}$，下图交换：
->     ```
->     Čech^i(U,F) → H^i(X,F)
+> ```
+> Čech^i(U,F) → H^i(X,F)
 >          ↓            ↓
 >     Čech^i(U,G) → H^i(X,G)
 >     ```
@@ -138,6 +138,7 @@ Aber: Sie ist eine Auflösung durch **flasque** Garben, wenn $\mathcal{F}$ flasq
 Betrachte die Identität $\mathcal{F} \to \mathcal{F}$.
 
 Diese induziert einen Morphismus der Auflösungen:
+
 - Von der Čech-Auflösung zur injektiven Auflösung
 
 Dies gibt einen Morphismus auf der Kohomologie:
@@ -181,6 +182,7 @@ $$E_2^{p,0} = \check{H}^p(\mathcal{U}, \mathcal{F}) \cong H^p(X, \mathcal{F})$$ 
 ### Teil (c): 自然性
 
 **Behauptung**: Für $f: \mathcal{F} \to \mathcal{G}$ kommutiert:
+
 ```
 Ĥ^i(U,F) → H^i(X,F)
     ↓f*        ↓f*
@@ -190,6 +192,7 @@ $$E_2^{p,0} = \check{H}^p(\mathcal{U}, \mathcal{F}) \cong H^p(X, \mathcal{F})$$ 
 **Beweis**:
 
 Der Morphismus $f$ induziert:
+
 1. Einen Morphismus der Čech-Komplexe: $\check{C}^\bullet(\mathcal{U}, \mathcal{F}) \to \check{C}^\bullet(\mathcal{U}, \mathcal{G})$
 2. Einen Morphismus der injektiven Auflösungen (bis auf Homotopie eindeutig)
 

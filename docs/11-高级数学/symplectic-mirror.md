@@ -11,32 +11,32 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-- 辛几何与镜像对称深度版 / Symplectic Geometry and Mirror Symity - In Depth
+- [辛几何与镜像对称深度版 / Symplectic Geometry and Mirror Symmetry - In Depth](#辛几何与镜像对称深度版--symplectic-geometry-and-mirror-symmetry---in-depth)
   - [目录](#目录)
-  - [1. 深入概念 / Deep Concepts](#1-深入概念-deep-concepts)
-    - [1.1 辛流形的现代观点 / Modern Perspectives on Symplectic Manifolds](#11-辛流形的现代观点-modern-perspectives-on-symplectic-manifolds)
-    - [1.2 Fukaya范畴的深层结构 / Deep Structure of Fukaya Categories](#12-fukaya范畴的深层结构-deep-structure-of-fukaya-categories)
-    - [1.3 导出范畴与相干性 / Derived Categories and Coherence](#13-导出范畴与相干性-derived-categories-and-coherence)
-    - [1.4 特殊拉格朗日子流形 / Special Lagrangian Submanifolds](#14-特殊拉格朗日子流形-special-lagrangian-submanifolds)
-  - [2. 现代观点 / Modern Perspectives](#2-现代观点-modern-perspectives)
-    - [2.1 同调镜像对称 / Homological Mirror Symmetry](#21-同调镜像对称-homological-mirror-symmetry)
-    - [2.2 SYZ猜想的几何 / Geometry of SYZ Conjecture](#22-syz猜想的几何-geometry-of-syz-conjecture)
-    - [2.3 热带几何与退化的镜 / Tropical Geometry and Degenerating Mirrors](#23-热带几何与退化的镜-tropical-geometry-and-degenerating-mirrors)
-    - [2.4 Landau-Ginzburg模型 / Landau-Ginzburg Models](#24-landau-ginzburg模型-landau-ginzburg-models)
-  - [3. 研究前沿 / Research Frontiers](#3-研究前沿-research-frontiers)
-    - [3.1 一般型流形的镜像 / Mirrors of General Type](#31-一般型流形的镜像-mirrors-of-general-type)
-    - [3.2 非交换几何与矩阵分解 / NC Geometry and Matrix Factorizations](#32-非交换几何与矩阵分解-nc-geometry-and-matrix-factorizations)
-    - [3.3 量子上同调的深层结构 / Deep Structure of Quantum Cohomology](#33-量子上同调的深层结构-deep-structure-of-quantum-cohomology)
-    - [3.4 Floer理论与开弦 / Floer Theory and Open Strings](#34-floer理论与开弦-floer-theory-and-open-strings)
-  - [4. 应用前沿 / Frontier Applications](#4-应用前沿-frontier-applications)
-    - [4.1 弦论与数学物理 / String Theory and Mathematical Physics](#41-弦论与数学物理-string-theory-and-mathematical-physics)
-    - [4.2 计数几何与Gromov-Witten理论 / Enumerative Geometry and GW Theory](#42-计数几何与gromov-witten理论-enumerative-geometry-and-gw-theory)
-    - [4.3 规范理论与低维拓扑 / Gauge Theory and Low-Dimensional Topology](#43-规范理论与低维拓扑-gauge-theory-and-low-dimensional-topology)
-  - [5. 参考文献 / References](#5-参考文献-references)
-    - [5.1 经典与奠基性著作 / Classical and Foundational Works](#51-经典与奠基性著作-classical-and-foundational-works)
-    - [5.2 现代专著 / Modern Monographs](#52-现代专著-modern-monographs)
-    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文-frontier-research-papers)
-    - [5.4 在线资源 / Online Resources](#54-在线资源-online-resources)
+  - [1. 深入概念 / Deep Concepts](#1-深入概念--deep-concepts)
+    - [1.1 辛流形的现代观点 / Modern Perspectives on Symplectic Manifolds](#11-辛流形的现代观点--modern-perspectives-on-symplectic-manifolds)
+    - [1.2 Fukaya范畴的深层结构 / Deep Structure of Fukaya Categories](#12-fukaya范畴的深层结构--deep-structure-of-fukaya-categories)
+    - [1.3 导出范畴与相干性 / Derived Categories and Coherence](#13-导出范畴与相干性--derived-categories-and-coherence)
+    - [1.4 特殊拉格朗日子流形 / Special Lagrangian Submanifolds](#14-特殊拉格朗日子流形--special-lagrangian-submanifolds)
+  - [2. 现代观点 / Modern Perspectives](#2-现代观点--modern-perspectives)
+    - [2.1 同调镜像对称 / Homological Mirror Symmetry](#21-同调镜像对称--homological-mirror-symmetry)
+    - [2.2 SYZ猜想的几何 / Geometry of SYZ Conjecture](#22-syz猜想的几何--geometry-of-syz-conjecture)
+    - [2.3 热带几何与退化的镜 / Tropical Geometry and Degenerating Mirrors](#23-热带几何与退化的镜--tropical-geometry-and-degenerating-mirrors)
+    - [2.4 Landau-Ginzburg模型 / Landau-Ginzburg Models](#24-landau-ginzburg模型--landau-ginzburg-models)
+  - [3. 研究前沿 / Research Frontiers](#3-研究前沿--research-frontiers)
+    - [3.1 一般型流形的镜像 / Mirrors of General Type](#31-一般型流形的镜像--mirrors-of-general-type)
+    - [3.2 非交换几何与矩阵分解 / NC Geometry and Matrix Factorizations](#32-非交换几何与矩阵分解--nc-geometry-and-matrix-factorizations)
+    - [3.3 量子上同调的深层结构 / Deep Structure of Quantum Cohomology](#33-量子上同调的深层结构--deep-structure-of-quantum-cohomology)
+    - [3.4 Floer理论与开弦 / Floer Theory and Open Strings](#34-floer理论与开弦--floer-theory-and-open-strings)
+  - [4. 应用前沿 / Frontier Applications](#4-应用前沿--frontier-applications)
+    - [4.1 弦论与数学物理 / String Theory and Mathematical Physics](#41-弦论与数学物理--string-theory-and-mathematical-physics)
+    - [4.2 计数几何与Gromov-Witten理论 / Enumerative Geometry and GW Theory](#42-计数几何与gromov-witten理论--enumerative-geometry-and-gw-theory)
+    - [4.3 规范理论与低维拓扑 / Gauge Theory and Low-Dimensional Topology](#43-规范理论与低维拓扑--gauge-theory-and-low-dimensional-topology)
+  - [5. 参考文献 / References](#5-参考文献--references)
+    - [5.1 经典与奠基性著作 / Classical and Foundational Works](#51-经典与奠基性著作--classical-and-foundational-works)
+    - [5.2 现代专著 / Modern Monographs](#52-现代专著--modern-monographs)
+    - [5.3 前沿研究论文 / Frontier Research Papers](#53-前沿研究论文--frontier-research-papers)
+    - [5.4 在线资源 / Online Resources](#54-在线资源--online-resources)
 
 ---
 
@@ -71,6 +71,7 @@ $$\forall v \neq 0, \exists w \text{ s.t. } \omega(v,w) \neq 0$$
 **几乎复结构**:
 
 辛流形 $(M, \omega)$ 允许相容的几乎复结构 $J$，满足：
+
 - $\omega(Jv, Jw) = \omega(v, w)$（$J$ 保持 $\omega$）
 - $g(v,w) = \omega(v, Jw)$ 是黎曼度量
 
@@ -79,6 +80,7 @@ $$\forall v \neq 0, \exists w \text{ s.t. } \omega(v,w) \neq 0$$
 **群胚与动量映射**:
 
 李群作用下的辛几何：
+
 - **动量映射** $\mu: M \to \mathfrak{g}^*$: 编码对称性
 - **Marsden-Weinstein约化**: $M/\!\!/G = \mu^{-1}(0)/G$
 
@@ -107,22 +109,26 @@ $$\sum_{i+j=n+1} \sum_{k} (-1)^{\circ} m_i(\ldots, m_j(\ldots), \ldots) = 0$$
 **生成元与分裂生成**:
 
 Fukaya范畴通常是"大"的（真类大小的对象集合）。实践中：
+
 - 寻找**分裂生成集**: 一小部分对象，其扭曲复形生成整个范畴
 - **Thomason定理的辛版本**: 确定何时子范畴生成整个Fukaya范畴
 
 **阻碍理论**:
 
 拉格朗日子流形要成为Fukaya范畴的对象，必须满足：
+
 - **$m_0 = 0$**: 即 $L$ 是有界的（unobstructed）
 - 这涉及计数全纯盘，边界在 $L$ 上
 
 存在两种主要的有界性条件：
+
 - **弱有界性**（来自Cho-Oh的工作）
 - **有界性**（来自FOOO的框架）
 
 **多截面与虚拟基本链**:
 
 构造Fukaya范畴的主要技术挑战：
+
 - 模空间 $\overline{\mathcal{M}}_{k+1}(L; \beta)$ 可能有奇点
 - 需要使用Kuranishi结构或多截面技术
 - FOOO（Fukaya-Oh-Ohta-Ono）理论的复杂构造
@@ -134,26 +140,29 @@ Fukaya范畴通常是"大"的（真类大小的对象集合）。实践中：
 **凝聚层与导出范畴**:
 
 对于光滑射影簇 $X$：
+
 - **凝聚层** $\text{Coh}(X)$: 局部有限 presentation 的 $\mathcal{O}_X$-模
 - **导出范畴** $D^b(X) = D^b(\text{Coh}(X))$: 有界导出范畴
 
 **三角结构与t-结构**:
 
 导出范畴具有：
+
 - **三角结构**: 表达上同调的长正合序列
 - **标准t-结构**:  hearts 是凝聚层范畴
-- ** hearts**: 同调对象
+- **hearts**: 同调对象
 
-** Fourier-Mukai变换 **:
+**Fourier-Mukai变换**:
 
 导出范畴之间的主要函子构造：
 $$\Phi_{\mathcal{E}}: D^b(X) \to D^b(Y), \quad F \mapsto R\pi_{Y*}(\mathcal{E} \otimes^L L\pi_X^* F)$$
 
 其中 $\mathcal{E} \in D^b(X \times Y)$ 是核（kernel）。
 
-** Bridgeland稳定性条件 **:
+**Bridgeland稳定性条件**:
 
 导出范畴上的稳定性条件是镜像对称的重要工具：
+
 - **中心** $Z: K(X) \to \mathbb{C}$
 - **heart of a bounded t-structure** $\mathcal{A} \subset D^b(X)$
 - 对于 $0 \neq E \in \mathcal{A}$，要求 $\text{Im}\, Z(E) > 0$ 且稳定性条件
@@ -161,6 +170,7 @@ $$\Phi_{\mathcal{E}}: D^b(X) \to D^b(Y), \quad F \mapsto R\pi_{Y*}(\mathcal{E} \
 **导出自等价**:
 
 $\text{Auteq}(D^b(X))$ 包含：
+
 - 张量积线丛
 - 自同构拉回
 - 平移函子 $[1]$
@@ -188,12 +198,14 @@ $$\text{Im}(e^{-i\theta}\Omega)|_L = 0$$
 **模空间**:
 
 特殊拉格朗日子流形的形变由第一上同调 $H^1(L; \mathbb{R})$ 控制：
+
 - **局部模空间**: $H^1(L; \mathbb{R})$ 中的开集
 - **整体模空间**: 可能具有奇点结构（墙穿越现象）
 
 **计数与不变量**:
 
 Thomas提出计数特殊拉格朗日子流形定义**Donaldson-Thomas不变量**的辛几何类似物：
+
 - 与物理中的BPS态计数相关
 - 涉及特殊拉格朗日子流形的模空间的紧化
 - 尚未完全解决（主要的开问题之一）
@@ -201,6 +213,7 @@ Thomas提出计数特殊拉格朗日子流形定义**Donaldson-Thomas不变量**
 **在SYZ中的作用**:
 
 SYZ猜想预测：
+
 - 特殊拉格朗日子流形的纤维化的纤维是镜的环面纤维
 - 奇点纤维对应于镜的奇点
 
@@ -224,6 +237,7 @@ $$\text{Fuk}(X) \simeq D^b(X^\vee)$$
 **更精确的版本**:
 
 完整的HMS应包含：
+
 1. 三角等价的范畴
 2. 与Strominger-Yau-Zaslow（SYZ）几何的相容
 3. 与T-对偶的相容
@@ -232,20 +246,23 @@ $$\text{Fuk}(X) \simeq D^b(X^\vee)$$
 **证明策略**:
 
 HMS已在许多例子中得到证明：
+
 - **椭圆曲线**: Polishchuk-Zaslow
 - **Abel簇**: Fukaya
 - **四次曲面**: Seidel
 - **Fano簇**: 大量工作（Auroux, Katzarkov, Orlov等）
 
 证明方法包括：
+
 - 构造明确的生成元和关系
 - 使用T-对偶和SYZ纤维化
--  tropical 退化方法
+- tropical 退化方法
 - 装饰簇（cluster algebras）方法
 
 **推论与应用**:
 
 从HMS可以导出：
+
 - 量子上同调的同构（通过Hochschild同调）
 - 辛拓扑不变量与代数几何不变量的对应
 - 自同构群的对应
@@ -254,6 +271,7 @@ HMS已在许多例子中得到证明：
 **一般Calabi-Yau的HMS**:
 
 对于一般维数的Calabi-Yau流形，HMS仍是猜想：
+
 - 维数 $\geq 3$ 时的主要困难: 高阶修正、奇点处理
 - 近年来Abouzaid, Auroux, Ganatra, Sheridan等的重要进展
 
@@ -264,6 +282,7 @@ SYZ猜想提供了镜像对称的几何直观。
 **基本陈述**:
 
 Strominger, Yau, Zaslow（1996）提出：
+
 - 镜对 $(X, X^\vee)$ 应对偶地具有特殊拉格朗日环面纤维化
 - 镜变换对应于**T-对偶**（纤维的T-对偶）
 
@@ -321,7 +340,7 @@ SYZ为HMS提供几何基础：
 
 **在镜像对称中的作用**:
 
-1. **退化的Calabi-Yau**: 
+1. **退化的Calabi-Yau**:
    - 复杂的几何 → 简单的热带对象
    - 镜像对应对应于热带对偶
 

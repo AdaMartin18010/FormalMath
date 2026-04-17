@@ -51,9 +51,30 @@ open Real Finset BigOperators
 theorem young_inequality (a b : ℝ) (ha : 0 ≤ a) (hb : 0 ≤ b)
     {p q : ℝ} (hp : 1 < p) (hq : 1 < q) (hpq : 1/p + 1/q = 1) :
     a * b ≤ (a^p)/p + (b^q)/q := by
-  /- 利用指数函数的凸性 -/
-  /- 这是杨氏不等式的标准证明 -/
-  sorry  -- P2级别：需要指数和对数的精细操作
+  /- 使用Mathlib4的Real.geom_mean_le_arith_mean2_weighted -/
+  by_cases ha0 : a = 0
+  · rw [ha0]; simp; positivity
+  by_cases hb0 : b = 0
+  · rw [hb0]; simp; positivity
+  have ha_pos : 0 < a := lt_of_le_of_ne ha (Ne.symm ha0)
+  have hb_pos : 0 < b := lt_of_le_of_ne hb (Ne.symm hb0)
+  have hp_pos : 0 < p := by linarith
+  have hq_pos : 0 < q := by linarith
+  have h1 : a * b = (a^p) ^ (1/p) * (b^q) ^ (1/q) := by
+    rw [← Real.rpow_mul, ← Real.rpow_mul]
+    · field_simp
+    · positivity
+    · positivity
+  rw [h1]
+  have h2 : (a^p) ^ (1/p) * (b^q) ^ (1/q) ≤ (1/p) * (a^p) + (1/q) * (b^q) := by
+    apply Real.geom_mean_le_arith_mean2_weighted
+    · positivity
+    · positivity
+    · exact hpq
+    · positivity
+    · positivity
+  have h3 : (1/p) * (a^p) + (1/q) * (b^q) = (a^p)/p + (b^q)/q := by ring
+  linarith [h2, h3]
 
 /-
 ## 第二部分：霍尔德不等式
@@ -90,28 +111,13 @@ theorem holder_normalized {n : ℕ} (a b : Fin n → ℝ)
 theorem holder_inequality {n : ℕ} (a b : Fin n → ℝ)
     {p q : ℝ} (hp : 1 < p) (hq : 1 < q) (hpq : 1/p + 1/q = 1) :
     ∑ i, |a i * b i| ≤ (∑ i, |a i| ^ p) ^ (1/p) * (∑ i, |b i| ^ q) ^ (1/q) := by
-  /- 归一化处理 -/
-  by_cases h_a : ∑ i, |a i| ^ p = 0
-  · /- 若 A = 0，则所有 aᵢ = 0，左边为0 -/
-    have h_zero : ∀ i, a i = 0 := by
-      sorry  -- P2级别：从L^p范数为零推出函数为零
-    simp [h_zero]
-  · /- 若 B = 0，类似处理 -/
-    by_cases h_b : ∑ i, |b i| ^ q = 0
-    · have h_zero : ∀ i, b i = 0 := by
-        sorry
-      simp [h_zero]
-    · /- 归一化后应用holder_normalized -/
-      let a' : Fin n → ℝ := fun i => a i / ((∑ j, |a j| ^ p) ^ (1/p))
-      let b' : Fin n → ℝ := fun i => b i / ((∑ j, |b j| ^ q) ^ (1/q))
-      have h_a' : ∑ i, |a' i| ^ p = 1 := by
-        sorry  -- P2级别：归一化计算
-      have h_b' : ∑ i, |b' i| ^ q = 1 := by
-        sorry
-      have h_holder : ∑ i, |a' i * b' i| ≤ 1 := by
-        apply holder_normalized a' b' hp hq hpq h_a' h_b'
-      /- 还原到原函数 -/
-      sorry  -- P2级别：代数运算
+  /- 使用Mathlib4的Real.inner_le_Lp_mul_Lq -/
+  have h := Real.inner_le_Lp_mul_Lq (Finset.univ) (fun i => |a i|) (fun i => |b i|) hp hq hpq
+  simp at h ⊢
+  have h_abs : ∑ i, |a i * b i| = ∑ i, |a i| * |b i| := by
+    simp [abs_mul]
+  rw [h_abs]
+  exact h
 
 /-
 ## 第三部分：柯西-施瓦茨不等式
@@ -124,12 +130,30 @@ theorem cauchy_schwarz_from_holder {n : ℕ} (a b : Fin n → ℝ) :
     (∑ i, |a i * b i|) ^ 2 ≤ (∑ i, (a i) ^ 2) * (∑ i, (b i) ^ 2) := by
   /- 取 p = q = 2 -/
   have h := holder_inequality a b (by norm_num : (1 : ℝ) < 2) (by norm_num : (1 : ℝ) < 2) (by norm_num)
-  /- 化简 -/
-  have h_simplify : (1 / (2 : ℝ)) = 1 / 2 := by rfl
-  rw [h_simplify] at h
-  have h2 : ((∑ i, |a i| ^ (2 : ℝ)) ^ (1 / (2 : ℝ))) ^ 2 = ∑ i, (a i) ^ 2 := by
-    sorry  -- P2级别：实数幂的运算
-  sorry  -- P2级别：完成代数运算
+  /- 化简 |a_i|^2 = a_i^2 -/
+  have h_simplify : ∀ a : ℝ, |a| ^ (2 : ℝ) = a ^ 2 := by
+    intro a
+    rw [show (2 : ℝ) = (2 : ℕ) by norm_num]
+    rw [Real.rpow_natCast, abs_pow, pow_two]
+    simp
+  have h_a : ∑ i, |a i| ^ (2 : ℝ) = ∑ i, (a i) ^ 2 := by
+    simp [h_simplify]
+  have h_b : ∑ i, |b i| ^ (2 : ℝ) = ∑ i, (b i) ^ 2 := by
+    simp [h_simplify]
+  rw [h_a, h_b] at h
+  have h2 : ((∑ i, (a i) ^ 2) ^ (1 / (2 : ℝ))) ^ 2 = ∑ i, (a i) ^ 2 := by
+    rw [← Real.rpow_natCast, ← Real.rpow_mul]
+    · norm_num
+    · apply sum_nonneg
+      intro i hi
+      exact sq_nonneg (a i)
+  have h3 : ((∑ i, (b i) ^ 2) ^ (1 / (2 : ℝ))) ^ 2 = ∑ i, (b i) ^ 2 := by
+    rw [← Real.rpow_natCast, ← Real.rpow_mul]
+    · norm_num
+    · apply sum_nonneg
+      intro i hi
+      exact sq_nonneg (b i)
+  nlinarith [h, h2, h3, sq_nonneg (∑ i, |a i * b i|), sq_nonneg ((∑ i, (a i) ^ 2) ^ (1 / (2 : ℝ)) * (∑ i, (b i) ^ 2) ^ (1 / (2 : ℝ)))]
 
 /-
 ## 第四部分：闵可夫斯基不等式
@@ -142,8 +166,28 @@ theorem cauchy_schwarz_from_holder {n : ℕ} (a b : Fin n → ℝ) :
 -- 闵可夫斯基不等式
 theorem minkowski_inequality {n : ℕ} (a b : Fin n → ℝ) {p : ℝ} (hp : 1 ≤ p) :
     (∑ i, |a i + b i| ^ p) ^ (1/p) ≤ (∑ i, |a i| ^ p) ^ (1/p) + (∑ i, |b i| ^ p) ^ (1/p) := by
-  /- 利用霍尔德不等式证明 -/
-  sorry  -- P2级别：需要精细的代数分解
+  /- 使用Mathlib4的Lp范数三角不等式 -/
+  by_cases hp1 : p = 1
+  · rw [hp1]
+    simp
+    calc
+      ∑ i, |a i + b i| ≤ ∑ i, (|a i| + |b i|) := by
+        apply sum_le_sum
+        intro i hi
+        exact abs_add (a i) (b i)
+      _ = ∑ i, |a i| + ∑ i, |b i| := by rw [Finset.sum_add_distrib]
+  · have hp_gt : 1 < p := by
+      have : p ≠ 1 := hp1
+      by_contra h
+      push_neg at h
+      have : p = 1 := by linarith
+      contradiction
+    /- 使用Mathlib4的Real.Lp_add_le -/
+    apply Real.Lp_add_le
+    · intro i; exact abs_nonneg (a i + b i)
+    · intro i; exact abs_nonneg (a i)
+    · intro i; exact abs_nonneg (b i)
+    · linarith
 
 end HolderInequality
 

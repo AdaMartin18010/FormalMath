@@ -78,6 +78,7 @@ references:
 ### 详细解答
 
 **存在性**：由定义，$\Omega_{B/A}$ 是自由 $B$-模 $F = \bigoplus_{b \in B} B \cdot db$ 模去由以下关系生成的子模的商：
+
 - $d(a \cdot 1_B) = 0$ 对 $a \in A$；
 - $d(b + b') - db - db' = 0$；
 - $d(bb') - b \cdot db' - b' \cdot db = 0$。

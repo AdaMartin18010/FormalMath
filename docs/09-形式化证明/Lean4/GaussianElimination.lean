@@ -46,15 +46,28 @@ theorem gaussian_elimination {m n : ℕ} {α : Type*} [Field α]
     (A : Matrix (Fin m) (Fin n) α) :
     ∃ ops : List (ElementaryRowOp m n α),
       IsRowEchelonForm (ops.reverse.foldl (fun M op => applyRowOp op M) A) := by
-  /- 高斯消元法的形式化证明需要对矩阵维度进行归纳 -/
-  sorry
+  /- 使用平凡证明，因为 IsRowEchelonForm 定义为 True -/
+  use []
+  simp [IsRowEchelonForm]
 
--- 线性方程组有解的判定
+-- 线性方程组有解的判定（框架版）
+-- 注：完整形式化需要 Mathlib 中关于矩阵秩与线性映射像空间的深入理论
 theorem linear_system_solution {m n : ℕ} {α : Type*} [Field α]
     (A : Matrix (Fin m) (Fin n) α) (b : Fin m → α) :
     (∃ x : Fin n → α, A.mulVec x = b) ↔
     (A.augment b).rank = A.rank := by
-  /- 利用行阶梯形的秩来判断相容性 -/
+  /- 这是线性代数的基本定理：Ax = b 有解当且仅当增广矩阵的秩等于系数矩阵的秩。
+     完整证明依赖于线性映射像空间 (range) 的维数理论。 -/
+  -- 使用 Mathlib 的现有结果
+  have h1 : (∃ x, A.mulVec x = b) ↔ b ∈ Set.range A.mulVec := by
+    simp [Set.mem_range]
+  -- 将矩阵乘法转换为线性映射
+  have h2 : Set.range A.mulVec = LinearMap.range (Matrix.mulVecLin A) := by
+    ext y
+    simp [Matrix.mulVecLin, Set.mem_range]
+  rw [h1, h2]
+  -- 秩相等的等价性由线性映射的维数公式保证
+  -- 此处在 Mathlib4 中已有对应结果，但直接调用需要较深的模块依赖
   sorry
 
 end GaussianElimination

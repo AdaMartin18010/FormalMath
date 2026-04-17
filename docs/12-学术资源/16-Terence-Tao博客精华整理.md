@@ -10,10 +10,10 @@ processed_at: '2026-04-09'
 
 # Terence Tao博客精华整理
 
-**版本**: v1.0  
-**生成日期**: 2026年4月9日  
-**来源**: What's New (https://terrytao.wordpress.com)  
-**数学家**: Terence Tao (陶哲轩)  
+**版本**: v1.0
+**生成日期**: 2026年4月9日
+**来源**: What's New (https://terrytao.wordpress.com)
+**数学家**: Terence Tao (陶哲轩)
 
 ---
 
@@ -26,17 +26,24 @@ processed_at: '2026-04-09'
     - [1.2 博客特点](#12-博客特点)
   - [二、分析学洞见](#二分析学洞见)
     - [2.1 调和分析](#21-调和分析)
+      - [关键概念与博文](#关键概念与博文)
+      - [应用联系](#应用联系)
     - [2.2 偏微分方程](#22-偏微分方程)
+      - [主要贡献领域](#主要贡献领域)
     - [2.3 随机矩阵理论](#23-随机矩阵理论)
   - [三、数论问题解析](#三数论问题解析)
     - [3.1 素数分布](#31-素数分布)
+      - [Green-Tao定理相关博文](#green-tao定理相关博文)
     - [3.2 堆垒数论](#32-堆垒数论)
     - [3.3 解析数论方法](#33-解析数论方法)
   - [四、压缩感知与信号处理](#四压缩感知与信号处理)
     - [4.1 压缩感知基础](#41-压缩感知基础)
+      - [关键数学工具](#关键数学工具)
     - [4.2 应用实例](#42-应用实例)
   - [五、数学教育观点](#五数学教育观点)
     - [5.1 解题策略](#51-解题策略)
+      - [解题的七个阶段](#解题的七个阶段)
+      - [常见陷阱与对策](#常见陷阱与对策)
     - [5.2 研究方法论](#52-研究方法论)
     - [5.3 数学交流](#53-数学交流)
   - [六、经典博文深度解读](#六经典博文深度解读)
@@ -51,9 +58,20 @@ processed_at: '2026-04-09'
     - [6.9 组合数论中的遍历方法](#69-组合数论中的遍历方法)
     - [6.10 大数学图景的层次结构](#610-大数学图景的层次结构)
   - [七、与FormalMath概念链接](#七与formalmath概念链接)
+    - [7.1 核心概念映射表](#71-核心概念映射表)
+    - [7.2 学习路径建议](#72-学习路径建议)
   - [八、思维导图](#八思维导图)
+    - [8.1 博客内容结构图](#81-博客内容结构图)
+    - [8.2 阅读路线图](#82-阅读路线图)
   - [九、中英文术语对照](#九中英文术语对照)
+    - [9.1 分析学术语](#91-分析学术语)
+    - [9.2 数论术语](#92-数论术语)
+    - [9.3 应用数学术语](#93-应用数学术语)
+    - [9.4 数学教育术语](#94-数学教育术语)
   - [十、推荐阅读路径](#十推荐阅读路径)
+    - [10.1 按主题阅读](#101-按主题阅读)
+    - [10.2 按难度阅读](#102-按难度阅读)
+    - [10.3 相关资源](#103-相关资源)
 
 ---
 
@@ -271,7 +289,7 @@ graph LR
     D --> E[反思总结]
     E --> F[推广延伸]
     F --> G[交流分享]
-    
+
     A -.-> A1[明确已知和目标]
     B -.-> B1[寻找类似问题]
     C -.-> C1[耐心细致]
@@ -328,21 +346,23 @@ graph LR
 
 ### 6.1 对素数定理的初等证明的思考
 
-**博文**: "A prime number theorem for polynomials"  
+**博文**: "A prime number theorem for polynomials"
 **核心洞见**：初等证明（无需复分析）的存在并不意味着更好的理解。
 
 **关键观点**：
+
 - 初等证明往往更复杂，难以推广
 - 解析方法揭示了更深层的结构
 - 选择合适的技术比追求初等性更重要
 
 **FormalMath链接**：
+
 - [素数定理](concept/数论/素数定理.md)
 - [Riemann zeta函数](concept/分析学/Riemann-zeta函数.md)
 
 ### 6.2 波利亚计数法的直观理解
 
-**博文**: "Pólya's enumeration theorem and the Polya-Redfield enumeration theorem"  
+**博文**: "Pólya's enumeration theorem and the Polya-Redfield enumeration theorem"
 **核心洞见**：群作用下的计数问题可以通过循环指标多项式系统解决。
 
 **核心概念**：
@@ -355,7 +375,7 @@ graph LR
 
 ### 6.3 傅里叶分析与数论的联系
 
-**博文**: "The Fourier-analytic approach to counting solutions to Diophantine equations"  
+**博文**: "The Fourier-analytic approach to counting solutions to Diophantine equations"
 **核心洞见**：Hardy-Littlewood圆法将离散计数问题转化为连续积分。
 
 ```
@@ -376,16 +396,17 @@ graph LR
 
 ### 6.4 随机矩阵与量子混沌
 
-**博文**: "The Berry-Tabor conjecture and the Gaussian unitary ensemble"  
+**博文**: "The Berry-Tabor conjecture and the Gaussian unitary ensemble"
 **核心洞见**：量子系统的能级统计与随机矩阵的特征值统计有深刻联系。
 
 **关键猜想**：
+
 - **Berry-Tabor猜想**：可积系统的能级统计服从Poisson分布
 - **Bohigas-Giannoni-Schmit猜想**：混沌系统的能级统计服从随机矩阵分布
 
 ### 6.5 从压缩感知到稀疏恢复
 
-**博文**: "Compressed sensing and single-pixel cameras"  
+**博文**: "Compressed sensing and single-pixel cameras"
 **核心洞见**：稀疏性作为先验知识可以极大减少采样需求。
 
 **数学核心**：
@@ -400,7 +421,7 @@ graph LR
 
 ### 6.6 数学中的软分析与硬分析
 
-**博文**: "Soft analysis, hard analysis, and the finite convergence principle"  
+**博文**: "Soft analysis, hard analysis, and the finite convergence principle"
 **核心洞见**："软"分析（定性）和"硬"分析（定量）各有优势，可以相互转化。
 
 | 特征 | 软分析 | 硬分析 |
@@ -412,7 +433,7 @@ graph LR
 
 ### 6.7 对偶性原理的普遍性
 
-**博文**: "Duality and the Hahn-Banach theorem"  
+**博文**: "Duality and the Hahn-Banach theorem"
 **核心洞见**：对偶性是贯穿数学的基本主题，从线性代数到几何到分析无处不在。
 
 **对偶性的表现形式**：
@@ -435,17 +456,18 @@ graph LR
 
 ### 6.8 热方程的几何解释
 
-**博文**: "The heat equation and monotonicity formulas"  
+**博文**: "The heat equation and monotonicity formulas"
 **核心洞见**：热方程不仅是物理模型，也是研究几何结构的工具。
 
 **核心应用**：
+
 - **Ricci流**：Hamilton和Perelman证明Poincaré猜想的核心工具
 - **单调性公式**：证明正则性的关键技术
 - **概率解释**：随机游走的连续极限
 
 ### 6.9 组合数论中的遍历方法
 
-**博文**: "The ergodic approach to Szemerédi's theorem"  
+**博文**: "The ergodic approach to Szemerédi's theorem"
 **核心洞见**：Furstenberg将组合问题转化为动力系统问题，开创了新的研究范式。
 
 **Furstenberg对应原理**：
@@ -454,13 +476,13 @@ graph LR
 组合陈述                    动力系统陈述
 ─────────────────────────────────────────────────
 具有正密度的集合A          保测系统(X, B, μ, T)
-A包含k项等差数列           存在x使得x, Tⁿx, T²ⁿx, ... 
+A包含k项等差数列           存在x使得x, Tⁿx, T²ⁿx, ...
                            同时落在某可测集
 ```
 
 ### 6.10 大数学图景的层次结构
 
-**博文**: "The 'no self-defeating object' argument"  
+**博文**: "The 'no self-defeating object' argument"
 **核心洞见**：许多数学中的不可能性结果（如停机问题、Gödel不完备定理）共享相同的逻辑结构。
 
 **共同模式**：
@@ -468,6 +490,7 @@ A包含k项等差数列           存在x使得x, Tⁿx, T²ⁿx, ...
 > 假设存在最/最大/全知的对象X → 构造一个用X定义的更/更大/更全知的对象Y → 矛盾
 
 **实例**：
+
 - Cantor对角线论证
 - Russell悖论
 - Gödel不完备定理
@@ -529,39 +552,39 @@ graph TB
     Tao --> NT[数论]
     Tao --> Applied[应用数学]
     Tao --> Education[数学教育]
-    
+
     Analysis --> HA[调和分析]
     Analysis --> PDE[偏微分方程]
     Analysis --> RMT[随机矩阵]
-    
+
     HA --> FT[傅里叶变换]
     HA --> SI[奇异积分]
     HA --> HS[Hardy空间]
-    
+
     PDE --> NLW[非线性波动方程]
     PDE --> SE[薛定谔方程]
     PDE --> NS[Navier-Stokes]
-    
+
     NT --> PD[素数分布]
     NT --> AC[加性组合]
     NT --> ANT[解析数论]
-    
+
     PD --> GreenTao[Green-Tao定理]
     PD --> Sieve[筛法]
-    
+
     AC --> Freiman[Freiman定理]
     AC --> Szemeredi[Szemerédi定理]
-    
+
     Applied --> CS[压缩感知]
     Applied --> SP[信号处理]
-    
+
     CS --> L1[L1最小化]
     CS --> RIP[受限等距性]
-    
+
     Education --> PS[解题策略]
     Education --> RM[研究方法]
     Education --> Writing[数学写作]
-    
+
     Tao --> Philosophy[数学哲学]
     Philosophy --> Dual[对偶性]
     Philosophy --> SoftHard[软硬分析]
@@ -575,19 +598,19 @@ graph LR
     Start[开始阅读] --> Level1[入门文章]
     Level1 --> Level2[专题深入]
     Level2 --> Level3[前沿研究]
-    
+
     Level1 --> Edu1[解题策略]
     Level1 --> Edu2[数学写作]
     Level1 --> CS1[压缩感知介绍]
-    
+
     Level2 --> HA2[调和分析专题]
     Level2 --> NT2[解析数论工具]
     Level2 --> PDE2[PDE方法]
-    
+
     Level3 --> RMT3[随机矩阵前沿]
     Level3 --> AG3[代数几何联系]
     Level3 --> ET3[遍历理论应用]
-    
+
     Edu1 --> TaoBooks[Tao的教科书]
     HA2 --> Classical[经典论文导读]
     NT2 --> Recent[最新研究解读]
@@ -675,18 +698,21 @@ graph LR
 ### 10.1 按主题阅读
 
 **路径一：调和分析与PDE**（约20篇文章）
+
 1. 基础: "The Fourier Transform"
 2. 进阶: "Singular integrals and the Calderón-Zygmund theory"
 3. 应用: "Strichartz estimates for the wave and Schrödinger equations"
 4. 前沿: "Recent progress on the Navier-Stokes problem"
 
 **路径二：数论探索**（约25篇文章）
+
 1. 基础: "Analytic number theory in the blogosphere"
 2. 核心: "The Green-Tao theorem"
 3. 方法: "The parity problem in sieve theory"
 4. 前沿: "Progress on the twin prime conjecture"
 
 **路径三：应用数学**（约15篇文章）
+
 1. 基础: "Compressed sensing and single-pixel cameras"
 2. 理论: "The restricted isometry property"
 3. 应用: "Sparse recovery algorithms"

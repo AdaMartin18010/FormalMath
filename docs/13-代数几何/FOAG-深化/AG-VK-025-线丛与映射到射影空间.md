@@ -150,6 +150,7 @@ $$(f_{i0}/f_{ij}, \ldots, \widehat{1}, \ldots, f_{in}/f_{ij}) = (f_{j0}, \ldots,
 **解答**：此即定理 1 的内容，完整证明如上。
 
 核心观察：
+
 1. **$\Rightarrow$**：由全局截面生成定义开覆盖 $U_i = X_{s_i}$（$s_i$ 不消失的点）。在每个 $U_i$ 上，$\mathcal{L} \cong \mathcal{O}_{U_i}$，从而 $s_j/s_i$ 是正则函数。这些函数比例给出 $U_i \to \mathbb{P}^n$ 的局部映射，且坐标变换相容。
 2. **$\Leftarrow$**：给定 $\phi: X \to \mathbb{P}^n$，齐次坐标 $x_0, \ldots, x_n$ 是 $\mathcal{O}_{\mathbb{P}^n}(1)$ 的生成全局截面。拉回后得到 $\mathcal{L} = \phi^* \mathcal{O}(1)$ 的生成全局截面 $s_i = \phi^* x_i$。
 
@@ -162,6 +163,7 @@ $$(f_{i0}/f_{ij}, \ldots, \widehat{1}, \ldots, f_{in}/f_{ij}) = (f_{j0}, \ldots,
 **题目**（FOAG Ch 15, Exercise 15.3.C，变形）：
 
 设 $X$ 是 proper 概形，$\mathcal{L}$ 是线丛。证明以下等价：
+
 1. $\mathcal{L}$ 是非常丰富的。
 2. 存在有限维 $k$-向量空间 $V$ 和闭嵌入 $i: X \hookrightarrow \mathbb{P}(V)$，使得 $i^* \mathcal{O}_{\mathbb{P}(V)}(1) \cong \mathcal{L}$。
 3. 存在全局截面 $s_0, \ldots, s_n$，使得对应的映射 $\phi_{\mathcal{L}}: X \to \mathbb{P}^n$ 是闭嵌入。

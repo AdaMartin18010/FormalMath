@@ -148,9 +148,9 @@ theorem intermediate_value_Ioo' {f : ℝ → ℝ} {a b : ℝ} (hab : a < b)
     (hf : ContinuousOn f (Icc a b)) {y : ℝ}
     (hy : y ∈ Ioo (min (f a) (f b)) (max (f a) (f b))) :
     ∃ (c : ℝ), c ∈ Ioo a b ∧ f c = y := by
-  -- 使用前面已证的 intermediate_value 得到 c ∈ [a,b]
-  -- 再说明 c 不可能等于 a 或 b（否则 f(c) 不会在开区间内）
-  sorry
+  /- 直接使用 Mathlib4 的 intermediate_value_Ioo -/
+  rcases hy with ⟨hymin, hymax⟩
+  exact intermediate_value_Ioo hab hf hymin hymax
 
 /-
 ## 二分法证明

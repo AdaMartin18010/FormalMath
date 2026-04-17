@@ -195,9 +195,8 @@ theorem heine_borel {n : ℕ} {K : Set (EuclideanSpace ℝ (Fin n))} :
     3. 有限积保持紧致性（Tychonoff定理）
     4. 紧致空间的闭子集是紧致的
     -/
-    -- 在Mathlib4中，这由 isCompact_of_isClosed_isBounded 给出
-    -- 或等价地，isCompact_iff_isClosed_bounded 的双向蕴含
-    sorry  -- Mathlib4中已有此结果
+    -- 在Mathlib4中，这由 isCompact_iff_isClosed_bounded 给出
+    exact isCompact_iff_isClosed_bounded.mpr ⟨h_closed, h_bounded⟩
 
 /-
 ## Tychonoff定理

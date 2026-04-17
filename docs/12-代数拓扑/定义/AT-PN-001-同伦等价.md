@@ -85,6 +85,7 @@ $$g \circ f \simeq \text{id}_X \quad \text{且} \quad f \circ g \simeq \text{id}
 ### 同伦不变性
 
 **定理**：同伦等价诱导：
+
 - 基本群的同构：$\pi_1(X) \cong \pi_1(Y)$
 - 同调群的同构：$H_n(X) \cong H_n(Y)$ 对所有 $n$
 - 上同调环的同构：$H^*(X) \cong H^*(Y)$ 作为分次环
@@ -139,7 +140,7 @@ structure HomotopyEquivalence (X Y : Type) [TopologicalSpace X] [TopologicalSpac
 ## Hatcher参考
 
 - **章节**: Chapter 0, "Some Underlying Geometric Notions", p. 3-4
-- **关键习题**: 
+- **关键习题**:
   - Exercise 0.1: 证明 $\mathbb{R}^n \setminus \{0\} \simeq S^{n-1}$
   - Exercise 0.2: 构造同伦等价的例子
 - **延伸阅读**: Chapter 0 还包含关于胞腔复形和单纯复形的基本概念
@@ -151,6 +152,7 @@ structure HomotopyEquivalence (X Y : Type) [TopologicalSpace X] [TopologicalSpac
 同伦等价是代数拓扑中最核心的等价关系，它比同胚弱，但保留了所有代数不变量（基本群、同调群等）。理解同伦等价与形变收缩的区别是学习代数拓扑的第一步。
 
 **关键要点**：
+
 1. 同伦等价 = 存在双向同伦逆
 2. 形变收缩 = 子空间包含的强形式
 3. 同伦等价保持所有代数拓扑不变量

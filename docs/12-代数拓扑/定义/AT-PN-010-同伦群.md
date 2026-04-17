@@ -57,6 +57,7 @@ $$(f + g)(t_1, \ldots, t_n) = \begin{cases} f(2t_1, t_2, \ldots, t_n) & 0 \leq t
 **生成元**：恒等映射 $\text{id}: S^n \to S^n$，度数为1。
 
 **低维结果**：
+
 - $\pi_1(S^1) = \mathbb{Z}$
 - $\pi_k(S^1) = 0$ 对 $k \geq 2$
 - $\pi_k(S^n) = 0$ 对 $k < n$
@@ -99,6 +100,7 @@ $$(f + g)(t_1, \ldots, t_n) = \begin{cases} f(2t_1, t_2, \ldots, t_n) & 0 \leq t
 ### 函子性
 
 **定理**：连续映射 $f: X \to Y$ 诱导同态 $f_*: \pi_n(X) \to \pi_n(Y)$，且：
+
 - $(f \circ g)_* = f_* \circ g_*$
 - $(\text{id})_* = \text{id}$
 
@@ -188,6 +190,7 @@ import Mathlib.AlgebraicTopology.HomotopyGroup
 同伦群是代数拓扑中最精细但也最难计算的不变量。它们比同调群包含更多信息，但计算极其困难。
 
 **关键要点**：
+
 1. $\pi_n(X) = [S^n, X]$（基点保持）
 2. $n \geq 2$ 时是Abel群
 3. 球面同伦群极其复杂，至今未完全了解

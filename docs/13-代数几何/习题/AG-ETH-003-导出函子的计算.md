@@ -75,31 +75,31 @@ references:
 > **Aufgabe** (Explizit und Natürlich):
 > Es sei $\mathcal{A}$ eine abelsche Kategorie mit genügend vielen Injektiven,
 > und $F: \mathcal{A} \to \mathcal{B}$ ein linksexakter Funktor.
-> 
-> (a) Konstruieren Sie streng den rechtsderivierten Funktor $R^iF$ 
->     und zeigen Sie dessen wohlbestimmtheit bis auf kanonische Isomorphie.
-> 
+>
+> (a) Konstruieren Sie streng den rechtsderivierten Funktor $R^iF$
+> und zeigen Sie dessen wohlbestimmtheit bis auf kanonische Isomorphie.
+>
 > (b) Zeigen Sie: Ist $0 \to A \to B \to C \to 0$ eine kurze exakte Sequenz in $\mathcal{A}$,
->     so gibt es eine lange exakte Sequenz derivierter Funktoren:
->     $$0 \to F(A) \to F(B) \to F(C) \to R^1F(A) \to R^1F(B) \to \cdots$$
-> 
+> so gibt es eine lange exakte Sequenz derivierter Funktoren:
+> $$0 \to F(A) \to F(B) \to F(C) \to R^1F(A) \to R^1F(B) \to \cdots$$
+>
 > (c) **Berechnung**: Sei $X = \mathbb{P}^1_k$ und $F = \Gamma(X, -)$.
->     Berechnen Sie explizit $R^1\Gamma(X, \mathcal{O}_X(-2))$.
+> Berechnen Sie explizit $R^1\Gamma(X, \mathcal{O}_X(-2))$.
 
 ### 中文翻译
 
 > **习题** (显式且自然)：
 > 设 $\mathcal{A}$ 为有足够内射对象的阿贝尔范畴，
 > $F: \mathcal{A} \to \mathcal{B}$ 为左正合函子。
-> 
+>
 > (a) 严格构造右导出函子 $R^iF$，并证明其在典范同构意义下良定。
-> 
+>
 > (b) 证明：若 $0 \to A \to B \to C \to 0$ 为 $\mathcal{A}$ 中的短正合列，
->     则存在导出函子的长正合列：
->     $$0 \to F(A) \to F(B) \to F(C) \to R^1F(A) \to R^1F(B) \to \cdots$$
-> 
+> 则存在导出函子的长正合列：
+> $$0 \to F(A) \to F(B) \to F(C) \to R^1F(A) \to R^1F(B) \to \cdots$$
+>
 > (c) **计算**：设 $X = \mathbb{P}^1_k$，$F = \Gamma(X, -)$。
->     显式计算 $R^1\Gamma(X, \mathcal{O}_X(-2))$。
+> 显式计算 $R^1\Gamma(X, \mathcal{O}_X(-2))$。
 
 ---
 
@@ -140,7 +140,8 @@ $$H^i(F(f)): H^i(F(I^\bullet)) \to H^i(F(J^\bullet))$$
 
 **Behauptung**: Dies ist ein Isomorphismus, unabhängig von der Wahl von $f$.
 
-*Beweis*: 
+*Beweis*:
+
 - $f$ ist eindeutig bis auf Homotopie
 - Homotope Abbildungen induzieren dieselbe Kohomologie
 - $H^i(F(f))$ ist kanonisch (da $f$ bis auf Homotopie eindeutig) ∎
@@ -159,6 +160,7 @@ $$0 \to F(A) \to F(B) \to F(C) \xrightarrow{\delta} R^1F(A) \to R^1F(B) \to \cdo
 **Schritt 1**: Injektive Auflösungen wählen
 
 Wähle injektive Auflösungen:
+
 - $0 \to A \to I_A^\bullet$
 - $0 \to C \to I_C^\bullet$
 
@@ -199,7 +201,8 @@ $$\cdots \to R^iF(A) \to R^iF(B) \to R^iF(C) \xrightarrow{\delta} R^{i+1}F(A) \t
 **Schritt 1**: Standard覆盖
 
 Sei $\mathcal{U} = \{U_0, U_1\}$ die Standard-affine Überdeckung von $\mathbb{P}^1$:
-- $U_0 = \operatorname{Spec}(k[x])$ 
+
+- $U_0 = \operatorname{Spec}(k[x])$
 - $U_1 = \operatorname{Spec}(k[y])$ mit $y = 1/x$ auf $U_0 \cap U_1$
 
 **Schritt 2**: Čech-Kohomologie
@@ -237,7 +240,7 @@ $$d(f_0, f_1) = f_0|_{U_0 \cap U_1} - f_1|_{U_0 \cap U_1}$$
 
 **Schritt 5**: Ker und Im berechnen
 
-**Behauptung**: 
+**Behauptung**:
 $$H^1(X, \mathcal{O}_X(-2)) = k$$
 
 *Beweis*:
@@ -246,10 +249,11 @@ Ein Element in $C^1$ hat die Form:
 $$\sum_{n \in \mathbb{Z}} a_n x^{n-2} = \sum_{m \in \mathbb{Z}} a_{m+2} x^m$$
 
 Das Bild von $d$ besteht aus solchen Laurent-Polynomen, die als Differenz von
- einem Element in $x^{-2}k[x]$ und einem Element in $k[y] = k[x^{-1}]$ geschrieben 
+ einem Element in $x^{-2}k[x]$ und einem Element in $k[y] = k[x^{-1}]$ geschrieben
  werden können.
 
 Ein Element $\sum_{m \in \mathbb{Z}} b_m x^m$ liegt im Bild, wenn:
+
 - Alle $b_m$ mit $m \geq -1$ kommen von $k[y]$ (da $y = x^{-1}$)
 - Alle $b_m$ mit $m \leq -2$ kommen von $x^{-2}k[x]$
 
@@ -273,6 +277,6 @@ $$R^1\Gamma(X, \mathcal{O}_X(-2)) = H^1(X, \mathcal{O}_X(-2)) = k$$
 
 ---
 
-**创建日期**: 2026-04-10  
-**难度**: ⭐⭐⭐⭐  
+**创建日期**: 2026-04-10
+**难度**: ⭐⭐⭐⭐
 **ETH风格**: Explizit + Natürlich

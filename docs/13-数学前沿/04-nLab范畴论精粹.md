@@ -14,10 +14,10 @@ processed_at: '2026-04-09'
 
 ---
 
-**文档编号**: FM-NLAB-CT-001  
-**主题**: 范畴论核心概念（基于nLab权威资源）  
-**MSC分类**: 18A05 (Category Theory - General Theory)  
-**创建日期**: 2026年4月9日  
+**文档编号**: FM-NLAB-CT-001
+**主题**: 范畴论核心概念（基于nLab权威资源）
+**MSC分类**: 18A05 (Category Theory - General Theory)
+**创建日期**: 2026年4月9日
 **版本**: 1.0
 
 ---
@@ -28,16 +28,19 @@ processed_at: '2026-04-09'
 
 **nLab标准定义**：
 > 一个**范畴** $\mathcal{C}$ 由以下数据组成：
+>
 > - 对象类 (Class of objects) $Obj(\mathcal{C})$
 > - 对每对对象 $X, Y \in Obj(\mathcal{C})$，一个态射集 $Hom_{\mathcal{C}}(X, Y)$
 > - 复合运算 $\circ: Hom_{\mathcal{C}}(Y,Z) \times Hom_{\mathcal{C}}(X,Y) \to Hom_{\mathcal{C}}(X,Z)$
 > - 单位态射 $id_X \in Hom_{\mathcal{C}}(X,X)$ 对每个对象 $X$
 >
 > 满足：
+>
 > - **结合律**: $(h \circ g) \circ f = h \circ (g \circ f)$
 > - **单位律**: $id_Y \circ f = f = f \circ id_X$
 
 **关键属性**：
+
 | 属性 | 说明 | nLab术语 |
 |------|------|----------|
 | 局部小性 (Locally Small) | $Hom(X,Y)$ 是集合而非真类 | locally small category |
@@ -48,10 +51,12 @@ processed_at: '2026-04-09'
 
 **nLab标准定义**：
 > 函子 $F: \mathcal{C} \to \mathcal{D}$ 是两个范畴之间的结构保持映射：
+>
 > - 对象映射：$X \mapsto F(X)$
 > - 态射映射：$f: X \to Y$ 映射为 $F(f): F(X) \to F(Y)$
 >
 > 满足：
+>
 > - $F(g \circ f) = F(g) \circ F(f)$
 > - $F(id_X) = id_{F(X)}$
 
@@ -82,18 +87,18 @@ graph TD
     A --> C[余极限 Colimit]
     A --> D[伴随 Adjunction]
     A --> E[表示 Representability]
-    
+
     B --> B1[积 Product]
     B --> B2[等化子 Equalizer]
     B --> B3[拉回 Pullback]
-    
+
     C --> C1[余积 Coproduct]
     C --> C2[余等化子 Coequalizer]
     C --> C3[推出 Pushout]
-    
+
     D --> D1[单位-余单位 Unit-Counit]
     D --> D2[Hom-集同构 Hom-set Iso]
-    
+
     E --> E1[米田引理 Yoneda]
     E --> E2[可表函子 Representable]
 ```
@@ -102,10 +107,12 @@ graph TD
 
 **nLab定义**：
 > 伴随是一对函子 $F: \mathcal{C} \leftrightarrows \mathcal{D}: G$，记作 $F \dashv G$，满足以下等价条件之一：
+>
 > 1. **Hom-集同构**: $Hom_{\mathcal{D}}(F(X), Y) \cong Hom_{\mathcal{C}}(X, G(Y))$（自然于 $X, Y$）
 > 2. **单位-余单位**: 自然变换 $\eta: id_{\mathcal{C}} \Rightarrow GF$ 和 $\varepsilon: FG \Rightarrow id_{\mathcal{D}}$ 满足三角恒等式
 
 **关键定理**：
+
 | 定理 | 陈述 | nLab链接 |
 |------|------|----------|
 | 伴随函子定理 | 保持极限的函子有左伴随（在一定条件下） | adjoint functor theorem |
@@ -128,14 +135,17 @@ graph TD
 ### 3.2 特殊范畴
 
 **离散范畴 (Discrete Category)**：
+
 - 只有恒等态射
 - 本质上就是集合
 
 **预序范畴 (Preorder Category)**：
+
 - 对象：预序集的元素
 - 态射：$Hom(a,b)$ 当且仅当 $a \leq b$（最多一个态射）
 
 **群胚 (Groupoid)**：
+
 - 所有态射都是同构
 - 基本群胚 $\Pi_1(X)$ 是同伦论的基础
 
@@ -143,6 +153,7 @@ graph TD
 
 **nLab定义**：
 > 对范畴 $\mathcal{C}, \mathcal{D}$，**函子范畴** $[\mathcal{C}, \mathcal{D}]$ 或 $\mathcal{D}^{\mathcal{C}}$ 以：
+>
 > - 对象：函子 $F: \mathcal{C} \to \mathcal{D}$
 > - 态射：自然变换 $\alpha: F \Rightarrow G$
 
@@ -163,6 +174,7 @@ $$PSh(\mathcal{C}) := [\mathcal{C}^{op}, \mathbf{Set}]$$
 > 这个同构自然于 $C$ 和 $F$。
 
 **推论**：
+
 1. **米田嵌入**：$y: \mathcal{C} \to [\mathcal{C}^{op}, \mathbf{Set}]$，$C \mapsto Hom(-, C)$ 是全忠实函子
 2. **对象由其表示确定**：$C$ 由其"所有关系"完全确定
 
@@ -175,18 +187,18 @@ $$PSh(\mathcal{C}) := [\mathcal{C}^{op}, \mathbf{Set}]$$
 graph LR
     A[范畴 Category] --> B[函子 Functor]
     B --> C[自然变换 Natural Transformation]
-    
+
     C --> D[米田引理 Yoneda Lemma]
     D --> E[可表函子 Representable Functor]
     D --> F[米田嵌入 Yoneda Embedding]
-    
+
     B --> G[伴随 Adjunction]
     G --> H[极限 Limit]
     G --> I[余极限 Colimit]
-    
+
     H --> J[积 Product]
     I --> K[余积 Coproduct]
-    
+
     E --> L[Topos理论]
     F --> L
     G --> L
@@ -340,6 +352,6 @@ mindmap
 
 ---
 
-**文档状态**: ✅ 完成  
-**最后更新**: 2026年4月9日  
+**文档状态**: ✅ 完成
+**最后更新**: 2026年4月9日
 **nLab对齐版本**: 2026年4月

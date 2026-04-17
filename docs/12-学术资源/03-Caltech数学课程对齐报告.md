@@ -10,10 +10,10 @@ processed_at: '2026-04-09'
 
 # FormalMath与Caltech数学课程对齐报告
 
-**版本**: v1.0  
-**生成日期**: 2026年4月9日  
-**对应机构**: California Institute of Technology (Caltech)  
-**课程语言**: 英语  
+**版本**: v1.0
+**生成日期**: 2026年4月9日
+**对应机构**: California Institute of Technology (Caltech)
+**课程语言**: 英语
 
 ---
 
@@ -27,7 +27,13 @@ processed_at: '2026-04-09'
     - [1.3 核心课程体系](#13-核心课程体系)
   - [二、课程详细对齐分析](#二课程详细对齐分析)
     - [2.1 数学分析 (Ma 1abc Freshman Mathematics)](#21-数学分析-ma-1abc-freshman-mathematics)
+      - [Ma 1a: Calculus of One and Several Variables and Linear Algebra](#ma-1a-calculus-of-one-and-several-variables-and-linear-algebra)
+      - [Ma 1b: Linear Algebra and Differential Calculus of Several Variables](#ma-1b-linear-algebra-and-differential-calculus-of-several-variables)
+      - [Ma 1c: Calculus of Several Variables, Linear Algebra, and Differential Equations](#ma-1c-calculus-of-several-variables-linear-algebra-and-differential-equations)
     - [2.2 抽象代数 (Ma 5abc Introduction to Abstract Algebra)](#22-抽象代数-ma-5abc-introduction-to-abstract-algebra)
+      - [Ma 5a: Introduction to Abstract Algebra](#ma-5a-introduction-to-abstract-algebra)
+      - [Ma 5b: Introduction to Abstract Algebra](#ma-5b-introduction-to-abstract-algebra)
+      - [Ma 5c: Introduction to Abstract Algebra](#ma-5c-introduction-to-abstract-algebra)
     - [2.3 微分几何 (Ma 109 Introduction to Geometry and Topology)](#23-微分几何-ma-109-introduction-to-geometry-and-topology)
   - [三、概念映射表](#三概念映射表)
     - [3.1 分析学概念映射](#31-分析学概念映射)
@@ -38,6 +44,8 @@ processed_at: '2026-04-09'
     - [4.2 详细覆盖度矩阵](#42-详细覆盖度矩阵)
   - [五、建议学习路径](#五建议学习路径)
   - [六、思维导图](#六思维导图)
+    - [6.1 Caltech数学课程体系思维导图](#61-caltech数学课程体系思维导图)
+    - [6.2 FormalMath概念映射思维导图](#62-formalmath概念映射思维导图)
   - [七、附录](#七附录)
     - [A. Caltech课程代码索引](#a-caltech课程代码索引)
     - [B. 参考文献](#b-参考文献)
@@ -105,7 +113,8 @@ Caltech的数学课程以其紧凑性和深度著称：
 
 **课程概述**: Caltech最著名的荣誉数学课程，整合微积分与线性代数
 
-**教材**: 
+**教材**:
+
 - Apostol, *Calculus, Vol. 1 & 2*
 - 补充材料: Hubbard & Hubbard, *Vector Calculus, Linear Algebra, and Differential Forms*
 
@@ -164,7 +173,8 @@ Caltech的数学课程以其紧凑性和深度著称：
 
 **课程概述**: 三学期抽象代数课程，涵盖群、环、域、模与Galois理论
 
-**教材**: 
+**教材**:
+
 - Dummit & Foote, *Abstract Algebra*
 - Lang, *Algebra* (研究生水平参考)
 
@@ -223,7 +233,8 @@ Caltech的数学课程以其紧凑性和深度著称：
 
 **课程概述**: 微分几何与拓扑学的综合入门课程
 
-**教材**: 
+**教材**:
+
 - do Carmo, *Differential Geometry of Curves and Surfaces*
 - Munkres, *Topology* (补充)
 

@@ -98,21 +98,11 @@ def vanishingIdeal {n : ℕ} (X : Set (Fin n → k)) : Ideal (Poly n k) :=
 
 -- 理想的根 √I
 def radical {R : Type u} [CommRing R] (I : Ideal R) : Ideal R :=
-  { carrier := { f | ∃ (n : ℕ) (hn : n > 0), f ^ n ∈ I }
-    zero_mem' := ⟨1, by simp, by simp⟩
-    add_mem' := by
-      /- 证明 √I 对加法封闭需要更多工作 -/
-      sorry
-    smul_mem' := by
-      intro c f ⟨n, hn, hfn⟩
-      use n, hn
-      rw [smul_pow]
-      exact Ideal.mul_mem_left I (c ^ n) hfn
-  }
+  I.radical
 
 -- 根理想：满足 √I = I 的理想
 def IsRadical {R : Type u} [CommRing R] (I : Ideal R) : Prop :=
-  radical I = I
+  I.IsRadical
 
 /-
 ## 弱Nullstellensatz
@@ -164,7 +154,12 @@ theorem weak_nullstellensatz' {n : ℕ} (I : Ideal (Poly n k)) :
     intro hI
     rw [hI]
     /- V((1)) = ∅ 因为没有点能使 1 = 0 -/
-    sorry
+    ext x
+    simp [zeroLocus]
+    use 1
+    constructor
+    · simp
+    · simp
 
 /-
 ## 强Nullstellensatz

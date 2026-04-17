@@ -173,6 +173,7 @@ $$\deg: \operatorname{Div}(\mathbb{P}^n_A) \to \mathbb{Z}, \quad \deg(\sum n_Y [
 **解答**：此即定理 2 的内容，完整证明如上。
 
 核心步骤总结：
+
 1. 定义除子的 **次数**：对有效除子 $D = V_+(f)$（$f$ 齐次），$\deg(D) = \deg(f)$。
 2. 证明主除子的次数为零：若 $g = f_1/f_2$ 是有理函数，则 $\operatorname{div}(g) = \operatorname{div}(f_1) - \operatorname{div}(f_2)$，次数为 $\deg(f_1) - \deg(f_2) = 0$。
 3. 证明次数为零的 Weil 除子是主除子：利用 $A[x_0, \ldots, x_n]$ 是 UFD，高度 1 的齐次素理想都是主理想。
@@ -186,6 +187,7 @@ $$\deg: \operatorname{Div}(\mathbb{P}^n_A) \to \mathbb{Z}, \quad \deg(\sum n_Y [
 **题目**（FOAG Ch 14, Exercise 14.2.E，变形）：
 
 设 $X$ 是 Noether 整分离概形。证明：
+
 1. 存在自然单射 $\operatorname{CaCl}(X) \hookrightarrow \operatorname{Cl}(X)$。
 2. 若 $X$ 还是正规的（normal），则该映射是同构。
 

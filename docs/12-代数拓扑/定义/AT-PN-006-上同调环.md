@@ -46,6 +46,7 @@ $$H^n(X; R) = \frac{\ker \delta^n}{\text{im } \delta^{n-1}}$$
 $$(\varphi \smile \psi)(\sigma) = \varphi(\sigma|_{[v_0, \ldots, v_i]}) \cdot \psi(\sigma|_{[v_i, \ldots, v_{i+j}]})$$
 
 对奇异 $(i+j)$-单形 $\sigma: [v_0, \ldots, v_{i+j}] \to X$，其中：
+
 - $\sigma|_{[v_0, \ldots, v_i]}$ 是前 $i+1$ 个顶点张成的面
 - $\sigma|_{[v_i, \ldots, v_{i+j}]}$ 是后 $j+1$ 个顶点张成的面
 
@@ -63,6 +64,7 @@ $$\smile: H^i(X; R) \times H^j(X; R) \to H^{i+j}(X; R)$$
 $$H^*(X; R) = \bigoplus_{n=0}^\infty H^n(X; R)$$
 
 配备：
+
 - 加法：各分次的加法
 - 乘法：杯积 $\smile$
 
@@ -91,6 +93,7 @@ $$[\alpha] \smile [\beta] = (-1)^{ij} [\beta] \smile [\alpha]$$
 **定理**：$H^*(T^2; \mathbb{Z}) \cong \Lambda(a, b)$，外代数，其中 $|a| = |b| = 1$，$a^2 = b^2 = 0$，$ab = -ba$。
 
 具体：
+
 - $H^0 = \mathbb{Z}$
 - $H^1 = \mathbb{Z}a \oplus \mathbb{Z}b$
 - $H^2 = \mathbb{Z}(a \smile b)$
@@ -114,6 +117,7 @@ $$[\alpha] \smile [\beta] = (-1)^{ij} [\beta] \smile [\alpha]$$
 ### 函子性
 
 **定理**：连续映射 $f: X \to Y$ 诱导环同态 $f^*: H^*(Y; R) \to H^*(X; R)$：
+
 - $f^*(\alpha \smile \beta) = f^*\alpha \smile f^*\beta$
 - $(f \circ g)^* = g^* \circ f^*$
 
@@ -155,7 +159,7 @@ structure GradedRing (R : Type) where
   components : ℕ → Type
   add : ∀ n, Add (components n)
   mul : ∀ i j, components i → components j → components (i + j)
-  graded_comm : ∀ i j (a : components i) (b : components j), 
+  graded_comm : ∀ i j (a : components i) (b : components j),
     mul i j a b = (-1)^(i*j) • mul j i b a
 ```
 
@@ -185,6 +189,7 @@ structure GradedRing (R : Type) where
 上同调环是上同调理论的乘法结构，它提供了比同调群更精细的不变量。
 
 **关键要点**：
+
 1. 杯积是上同调的乘法结构
 2. 分次交换性：$\alpha \smile \beta = (-1)^{ij} \beta \smile \alpha$
 3. 上同调环是比同调群更强的不变量

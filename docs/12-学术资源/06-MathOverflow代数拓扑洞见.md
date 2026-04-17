@@ -12,27 +12,67 @@ processed_at: '2026-04-09'
 
 # MathOverflow代数拓扑洞见对齐文档
 
-**版本**: v1.0  
-**生成日期**: 2026年4月9日  
-**来源平台**: MathOverflow (mathoverflow.net)  
-**核心领域**: 代数拓扑、同伦论  
+**版本**: v1.0
+**生成日期**: 2026年4月9日
+**来源平台**: MathOverflow (mathoverflow.net)
+**核心领域**: 代数拓扑、同伦论
 
 ---
 
 ## 目录
 
-- [一、概述与背景](#一概述与背景)
-- [二、MathOverflow代数拓扑主题分布](#二mathoverflow代数拓扑主题分布)
-- [三、经典问答深度解析](#三经典问答深度解析)
-  - [3.1 同伦论的直观理解](#31-同伦论的直观理解)
-  - [3.2 谱序列的计算策略](#32-谱序列的计算策略)
-  - [3.3 无穷环空间与谱](#33-无穷环空间与谱)
-  - [3.4 同伦群的神秘世界](#34-同伦群的神秘世界)
-- [四、常见误区与澄清](#四常见误区与澄清)
-- [五、与其他领域的联系](#五与其他领域的联系)
-- [六、思维导图](#六思维导图)
-- [七、与FormalMath概念链接](#七与formalmath概念链接)
-- [八、专家推荐书单](#八专家推荐书单)
+- [MathOverflow代数拓扑洞见对齐文档](#mathoverflow代数拓扑洞见对齐文档)
+  - [目录](#目录)
+  - [一、概述与背景](#一概述与背景)
+    - [1.1 代数拓扑在MO的地位](#11-代数拓扑在mo的地位)
+    - [1.2 活跃专家与贡献](#12-活跃专家与贡献)
+  - [二、MathOverflow代数拓扑主题分布](#二mathoverflow代数拓扑主题分布)
+    - [2.1 高频讨论主题TOP10](#21-高频讨论主题top10)
+  - [三、经典问答深度解析](#三经典问答深度解析)
+    - [3.1 同伦论的直观理解](#31-同伦论的直观理解)
+      - [核心洞见](#核心洞见)
+      - [同伦群的几何直觉](#同伦群的几何直觉)
+      - [计算难点与突破](#计算难点与突破)
+      - [球面同伦群的神秘模式](#球面同伦群的神秘模式)
+      - [FormalMath链接](#formalmath链接)
+    - [3.2 谱序列的计算策略](#32-谱序列的计算策略)
+      - [核心洞见](#核心洞见-1)
+      - [谱序列的收敛过程](#谱序列的收敛过程)
+      - [常用谱序列速查](#常用谱序列速查)
+      - [谱序列的"电梯"比喻](#谱序列的电梯比喻)
+      - [FormalMath链接](#formalmath链接-1)
+    - [3.3 无穷环空间与谱](#33-无穷环空间与谱)
+      - [核心洞见](#核心洞见-2)
+      - [从空间到谱的过渡](#从空间到谱的过渡)
+      - [谱的现代观点](#谱的现代观点)
+      - [无穷环空间的结构](#无穷环空间的结构)
+      - [FormalMath链接](#formalmath链接-2)
+    - [3.4 同伦群的神秘世界](#34-同伦群的神秘世界)
+      - [核心洞见](#核心洞见-3)
+      - [球面同伦群的重要性](#球面同伦群的重要性)
+      - [Hopf映射家族](#hopf映射家族)
+      - [未解决问题](#未解决问题)
+      - [FormalMath链接](#formalmath链接-3)
+  - [四、常见误区与澄清](#四常见误区与澄清)
+    - [4.1 同伦论学习中的十大误区](#41-同伦论学习中的十大误区)
+    - [4.2 技术陷阱](#42-技术陷阱)
+  - [五、与其他领域的联系](#五与其他领域的联系)
+    - [5.1 代数拓扑的交叉网络](#51-代数拓扑的交叉网络)
+    - [5.2 具体联系示例](#52-具体联系示例)
+  - [六、思维导图](#六思维导图)
+    - [6.1 代数拓扑核心问题关系图](#61-代数拓扑核心问题关系图)
+    - [6.2 同伦群计算思维导图](#62-同伦群计算思维导图)
+  - [七、与FormalMath概念链接](#七与formalmath概念链接)
+    - [7.1 已覆盖概念映射](#71-已覆盖概念映射)
+    - [7.2 建议补充内容](#72-建议补充内容)
+  - [八、专家推荐书单](#八专家推荐书单)
+    - [8.1 入门阶段](#81-入门阶段)
+    - [8.2 进阶阶段](#82-进阶阶段)
+    - [8.3 专题深入](#83-专题深入)
+    - [8.4 在线资源](#84-在线资源)
+  - [附录](#附录)
+    - [A. MathOverflow相关标签](#a-mathoverflow相关标签)
+    - [B. 重要会议与研讨会](#b-重要会议与研讨会)
 
 ---
 
@@ -93,8 +133,8 @@ processed_at: '2026-04-09'
 
 ### 3.1 同伦论的直观理解
 
-**原问题**: [What are the most important results in algebraic topology that don't require the fundamental group?](https://mathoverflow.net/q/25865)  
-**提问者**: Dinakar Muthiah  
+**原问题**: [What are the most important results in algebraic topology that don't require the fundamental group?](https://mathoverflow.net/q/25865)
+**提问者**: Dinakar Muthiah
 **最高票回答**: Tom Goodwillie (投票: 312)
 
 #### 核心洞见
@@ -136,6 +176,7 @@ k  : 0  1  2  3  4  5  6  7  8  ...
 ```
 
 #### FormalMath链接
+
 - [同伦](concept/核心概念/24-同伦.md)
 - [基本群](concept/核心概念/24-同伦.md#基本群)
 - [高阶同伦群](concept/代数拓扑/同伦群.md)
@@ -144,8 +185,8 @@ k  : 0  1  2  3  4  5  6  7  8  ...
 
 ### 3.2 谱序列的计算策略
 
-**原问题**: [Why are spectral sequences called spectral sequences?](https://mathoverflow.net/q/43264)  
-**提问者**: Romeo  
+**原问题**: [Why are spectral sequences called spectral sequences?](https://mathoverflow.net/q/43264)
+**提问者**: Romeo
 **最高票回答**: Denis-Charles Cisinski (投票: 245) + Tom Church补充
 
 #### 核心洞见
@@ -194,6 +235,7 @@ E∞: 完全了解建筑结构（但可能丢失楼层间关系）
 ```
 
 #### FormalMath链接
+
 - [谱序列](concept/代数拓扑/谱序列.md)
 - [Leray谱序列](concept/代数拓扑/Leray谱序列.md)
 - [纤维丛上同调](concept/代数拓扑/纤维丛上同调.md)
@@ -202,8 +244,8 @@ E∞: 完全了解建筑结构（但可能丢失楼层间关系）
 
 ### 3.3 无穷环空间与谱
 
-**原问题**: [What is a spectrum in algebraic topology?](https://mathoverflow.net/q/56330)  
-**提问者**: Zhen Lin  
+**原问题**: [What is a spectrum in algebraic topology?](https://mathoverflow.net/q/56330)
+**提问者**: Zhen Lin
 **最高票回答**: Peter May (投票: 287)
 
 #### 核心洞见
@@ -226,7 +268,7 @@ Peter May（无穷环空间理论的创立者之一）给出权威解释:
 
 悬挂 Σ: Top → Top                   平移 Σ: Spectra → Spectra
 (ΣX = S¹ ∧ X)                       (可逆!)
-                                    
+
 • 悬挂不是可逆的                  • 平移是可逆的
 • 丢失不稳定信息                   • 捕捉稳定现象
 ─────────────────────────────────────────────────────────
@@ -254,13 +296,14 @@ Peter May（无穷环空间理论的创立者之一）给出权威解释:
     • ...
     • E_∞: 全部 coherent 同伦
 
-几何例子: 
+几何例子:
     • BU × Z (复K-理论)
     • BO × Z (实K-理论)
     • Ω^∞S^∞ (球面稳定同伦)
 ```
 
 #### FormalMath链接
+
 - [谱](concept/代数拓扑/谱.md)
 - [广义上同调](concept/代数拓扑/广义上同调.md)
 - [K-理论](concept/代数拓扑/K-理论.md)
@@ -269,8 +312,8 @@ Peter May（无穷环空间理论的创立者之一）给出权威解释:
 
 ### 3.4 同伦群的神秘世界
 
-**原问题**: [What is the significance of non-trivial maps between spheres?](https://mathoverflow.net/q/31008)  
-**提问者**: Daniel Moskovich  
+**原问题**: [What is the significance of non-trivial maps between spheres?](https://mathoverflow.net/q/31008)
+**提问者**: Daniel Moskovich
 **最高票回答**: Tilman (投票: 178) + 多位专家补充
 
 #### 核心洞见
@@ -327,6 +370,7 @@ Tilman揭示了稳定同伦群的深刻结构:
 ```
 
 #### FormalMath链接
+
 - [Hopf纤维化](concept/代数拓扑/Hopf纤维化.md)
 - [稳定同伦论](concept/代数拓扑/稳定同伦论.md)
 - [配边理论](concept/代数拓扑/配边理论.md)
@@ -424,47 +468,47 @@ graph TB
     AT --> HOMOL[同调论]
     AT --> BUNDLE[纤维丛理论]
     AT --> MANIFOLD[流形拓扑]
-    
+
     HOM --> PI[同伦群 πₙ]
     HOM --> SPECTRA[谱与稳定同伦]
     HOM --> LOOP[无穷环空间]
-    
+
     PI --> PI1[基本群 π₁]
     PI --> HIGH[高阶同伦群]
     PI --> STABLE[稳定同伦群 π_*^S]
-    
+
     SPECTRA --> OMEGA[Ω-谱]
     SPECTRA --> SUSPENSION[Σ-谱]
     SPECTRA --> GENERAL[广义上同调]
-    
+
     GENERAL --> KTHEORY[K-理论]
     GENERAL --> COBORDISM[配边理论]
     GENERAL --> BORISMO[形式群律]
-    
+
     HOMOL --> SINGULAR[奇异同调]
     HOMOL --> CELL[胞腔同调]
     HOMOL --> SHEAF[层上同调]
-    
+
     SINGULAR --> CHAIN[链复形]
     SINGULAR --> HOMOLOGY[同调群 Hₙ]
     SINGULAR --> COHOMOLOGY[上同调群 Hⁿ]
-    
+
     BUNDLE --> FIBER[纤维空间]
     BUNDLE --> SS[Spectral Sequences]
     BUNDLE --> CLASS[示性类]
-    
+
     SS --> LERAY[Leray-Serre]
     SS --> ADAMS[Adams谱序列]
     SS --> AH[Atiyah-Hirzebruch]
-    
+
     CLASS --> STIEFEL[Stiefel-Whitney]
     CLASS --> CHERN[Chern类]
     CLASS --> PONTRYAGIN[Pontryagin类]
-    
+
     MANIFOLD --> CLASSIFICATION[流形分类]
     MANIFOLD --> SURGERY[割补术]
     MANIFOLD --> INVARIANT[拓扑不变量]
-    
+
     style AT fill:#f9f,stroke:#333,stroke-width:4px
     style HOM fill:#bbf,stroke:#333
     style HOMOL fill:#bfb,stroke:#333
@@ -477,34 +521,34 @@ graph TB
 ```mermaid
 graph LR
     START[计算同伦群] --> METHOD[选择方法]
-    
+
     METHOD --> FIBER[纤维序列]
     METHOD --> COFIBER[余纤维序列]
     METHOD --> SPECTRAL[谱序列]
     METHOD --> EXACT[正合序列]
-    
+
     FIBER --> LES[长正合同伦序列]
     FIBER --> HOMOTOPY[同伦提升性质]
-    
+
     COFIBER --> COFIN[余纤维诱导]
     COFIBER --> PUPPE[Puppe序列]
-    
+
     SPECTRAL --> SERRE[Serre谱序列]
     SPECTRAL --> ADAMS2[Adams谱序列]
     SPECTRAL --> EHP[EHP谱序列]
-    
+
     EXACT --> RELATIVE[相对同伦]
     EXACT --> PAIR[空间对序列]
-    
+
     LES --> COMPUTE[计算具体群]
     COFIN --> COMPUTE
     SERRE --> COMPUTE
     RELATIVE --> COMPUTE
-    
+
     COMPUTE --> SPHERE[球面同伦]
     COMPUTE --> LIE[Lie群]
     COMPUTE --> THOM[Thom空间]
-    
+
     style START fill:#f9f,stroke:#333,stroke-width:4px
     style COMPUTE fill:#bfb,stroke:#333,stroke-width:2px
 ```
@@ -565,7 +609,7 @@ graph LR
 | **高阶范畴论** | Lurie's "Higher Topos Theory" | 🔥🔥🔥🔥 |
 | **等变同伦论** | Lewis-May-Steinberg "Equivariant Stable Homotopy Theory" | 🔥🔥🔥 |
 | **代数K-理论** | Weibel's K-book | 🔥🔥🔥 |
-| ** motivic同伦论** | Morel-Voevodsky理论 | 🔥🔥🔥🔥 |
+| **motivic同伦论** | Morel-Voevodsky理论 | 🔥🔥🔥🔥 |
 
 ### 8.4 在线资源
 

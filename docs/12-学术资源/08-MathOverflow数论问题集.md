@@ -12,27 +12,67 @@ processed_at: '2026-04-09'
 
 # MathOverflow数论精华对齐文档
 
-**版本**: v1.0  
-**生成日期**: 2026年4月9日  
-**来源平台**: MathOverflow (mathoverflow.net)  
-**核心领域**: 数论、算术几何  
+**版本**: v1.0
+**生成日期**: 2026年4月9日
+**来源平台**: MathOverflow (mathoverflow.net)
+**核心领域**: 数论、算术几何
 
 ---
 
 ## 目录
 
-- [一、概述与背景](#一概述与背景)
-- [二、MathOverflow数论主题分布](#二mathoverflow数论主题分布)
-- [三、经典问答深度解析](#三经典问答深度解析)
-  - [3.1 椭圆曲线的深层结构](#31-椭圆曲线的深层结构)
-  - [3.2 模形式的神秘联系](#32-模形式的神秘联系)
-  - [3.3 Galois表示的力量](#33-galois表示的力量)
-  - [3.4 L-函数的零点分布](#34-l-函数的零点分布)
-- [四、常见误区与澄清](#四常见误区与澄清)
-- [五、与其他领域的联系](#五与其他领域的联系)
-- [六、思维导图](#六思维导图)
-- [七、与FormalMath概念链接](#七与formalmath概念链接)
-- [八、专家推荐书单](#八专家推荐书单)
+- [MathOverflow数论精华对齐文档](#mathoverflow数论精华对齐文档)
+  - [目录](#目录)
+  - [一、概述与背景](#一概述与背景)
+    - [1.1 数论在MO的地位](#11-数论在mo的地位)
+    - [1.2 活跃专家与贡献](#12-活跃专家与贡献)
+  - [二、MathOverflow数论主题分布](#二mathoverflow数论主题分布)
+    - [2.1 高频讨论主题TOP10](#21-高频讨论主题top10)
+  - [三、经典问答深度解析](#三经典问答深度解析)
+    - [3.1 椭圆曲线的深层结构](#31-椭圆曲线的深层结构)
+      - [核心洞见](#核心洞见)
+      - [BSD猜想的精确陈述](#bsd猜想的精确陈述)
+      - [BSD猜想的状态](#bsd猜想的状态)
+      - [专家洞见摘录](#专家洞见摘录)
+      - [FormalMath链接](#formalmath链接)
+    - [3.2 模形式的神秘联系](#32-模形式的神秘联系)
+      - [核心洞见](#核心洞见-1)
+      - [模形式的多重身份](#模形式的多重身份)
+      - [历史里程碑](#历史里程碑)
+      - [Taniyama-Shimura猜想](#taniyama-shimura猜想)
+      - [FormalMath链接](#formalmath链接-1)
+    - [3.3 Galois表示的力量](#33-galois表示的力量)
+      - [核心洞见](#核心洞见-2)
+      - [Galois表示的框架](#galois表示的框架)
+      - [p-进Galois表示的分类](#p-进galois表示的分类)
+      - [p-进Hodge理论的联系](#p-进hodge理论的联系)
+      - [FormalMath链接](#formalmath链接-2)
+    - [3.4 L-函数的零点分布](#34-l-函数的零点分布)
+      - [核心洞见](#核心洞见-3)
+      - [数值验证状态](#数值验证状态)
+      - [L-函数的通用框架](#l-函数的通用框架)
+      - [Langlands纲领中的L-函数](#langlands纲领中的l-函数)
+      - [FormalMath链接](#formalmath链接-3)
+  - [四、常见误区与澄清](#四常见误区与澄清)
+    - [4.1 数论学习中的十大误区](#41-数论学习中的十大误区)
+    - [4.2 技术陷阱](#42-技术陷阱)
+  - [五、与其他领域的联系](#五与其他领域的联系)
+    - [5.1 数论的交叉网络](#51-数论的交叉网络)
+    - [5.2 具体联系示例](#52-具体联系示例)
+  - [六、思维导图](#六思维导图)
+    - [6.1 数论核心问题关系图](#61-数论核心问题关系图)
+    - [6.2 椭圆曲线研究思维导图](#62-椭圆曲线研究思维导图)
+  - [七、与FormalMath概念链接](#七与formalmath概念链接)
+    - [7.1 已覆盖概念映射](#71-已覆盖概念映射)
+    - [7.2 建议补充内容](#72-建议补充内容)
+  - [八、专家推荐书单](#八专家推荐书单)
+    - [8.1 入门阶段](#81-入门阶段)
+    - [8.2 进阶阶段](#82-进阶阶段)
+    - [8.3 专题深入](#83-专题深入)
+    - [8.4 在线资源](#84-在线资源)
+  - [附录](#附录)
+    - [A. MathOverflow相关标签](#a-mathoverflow相关标签)
+    - [B. 重要猜想列表](#b-重要猜想列表)
 
 ---
 
@@ -93,8 +133,8 @@ processed_at: '2026-04-09'
 
 ### 3.1 椭圆曲线的深层结构
 
-**原问题**: [What is the Birch and Swinnerton-Dyer conjecture about?](https://mathoverflow.net/q/74028)  
-**提问者**: Terry Tao  
+**原问题**: [What is the Birch and Swinnerton-Dyer conjecture about?](https://mathoverflow.net/q/74028)
+**提问者**: Terry Tao
 **最高票回答**: Tim Dokchitser (投票: 387)
 
 #### 核心洞见
@@ -159,6 +199,7 @@ John Coates:
 ```
 
 #### FormalMath链接
+
 - [椭圆曲线](concept/数论/椭圆曲线.md)
 - [BSD猜想](concept/数论/BSD猜想.md)
 - [Mordell-Weil定理](concept/数论/Mordell-Weil定理.md)
@@ -168,8 +209,8 @@ John Coates:
 
 ### 3.2 模形式的神秘联系
 
-**原问题**: [Why are modular forms interesting?](https://mathoverflow.net/q/24604)  
-**提问者**: David Hansen  
+**原问题**: [Why are modular forms interesting?](https://mathoverflow.net/q/24604)
+**提问者**: David Hansen
 **最高票回答**: Richard Borcherds (投票: 412)
 
 #### 核心洞见
@@ -242,6 +283,7 @@ Richard Borcherds（模形式专家、Fields奖得主）揭示模形式的**"对
 ```
 
 #### FormalMath链接
+
 - [模形式](concept/数论/模形式.md)
 - [谷山-志村猜想](concept/数论/谷山-志村猜想.md)
 - [Hecke算子](concept/数论/Hecke算子.md)
@@ -251,8 +293,8 @@ Richard Borcherds（模形式专家、Fields奖得主）揭示模形式的**"对
 
 ### 3.3 Galois表示的力量
 
-**原问题**: [What are Galois representations and why are they important?](https://mathoverflow.net/q/11747)  
-**提问者**: Qiaochu Yuan  
+**原问题**: [What are Galois representations and why are they important?](https://mathoverflow.net/q/11747)
+**提问者**: Qiaochu Yuan
 **最高票回答**: Emerton (投票: 298)
 
 #### 核心洞见
@@ -316,6 +358,7 @@ H^i_{dR}(X/K) ⊗_K B_{dR} ≅ H^i_{et}(X_{K̄}, Q_p) ⊗_{Q_p} B_{dR}
 ```
 
 #### FormalMath链接
+
 - [Galois表示](concept/数论/Galois表示.md)
 - [Galois群](concept/伽罗瓦理论/Galois群.md)
 - [p-进Hodge理论](concept/数论/p-进Hodge理论.md)
@@ -325,8 +368,8 @@ H^i_{dR}(X/K) ⊗_K B_{dR} ≅ H^i_{et}(X_{K̄}, Q_p) ⊗_{Q_p} B_{dR}
 
 ### 3.4 L-函数的零点分布
 
-**原问题**: [What is the current status of the Riemann Hypothesis?](https://mathoverflow.net/q/17209)  
-**提问者**: unknown  
+**原问题**: [What is the current status of the Riemann Hypothesis?](https://mathoverflow.net/q/17209)
+**提问者**: unknown
 **最高票回答**: Kiran Kedlaya (投票: 356)
 
 #### 核心洞见
@@ -389,6 +432,7 @@ Langlands对应 (简化版):
 ```
 
 #### FormalMath链接
+
 - [Riemann假设](concept/数论/Riemann假设.md)
 - [L-函数](concept/数论/L-函数.md)
 - [解析延拓](concept/复分析/解析延拓.md)
@@ -493,51 +537,51 @@ graph TB
     NT --> AG[算术几何]
     NT --> ANA[解析数论]
     NT --> TRAN[超越数论]
-    
+
     ANT --> AK[代数数域]
     ANT --> CLASS[类域论]
     ANT --> GALOIS[Galois理论]
-    
+
     AK --> OK[整数环 O_K]
     AK --> IDEAL[理想论]
     AK --> UNIT[单位群]
     AK --> CLASSGROUP[类群]
-    
+
     CLASS --> LOCAL[局部类域论]
     CLASS --> GLOBAL[整体类域论]
     CLASS --> RECIPROCITY[互反律]
-    
+
     GALOIS --> EXTENSION[域扩张]
     GALOIS --> GALOISGROUP[Galois群]
     GALOIS --> REPRESENTATION[Galois表示]
-    
+
     AG --> ELLIPTIC[椭圆曲线]
     AG --> MODULAR[模形式]
     AG --> DIOPHANTINE[Diophantine几何]
     AG --> ARITHMETIC[算术簇]
-    
+
     ELLIPTIC --> MORDELL[Mordell-Weil]
     ELLIPTIC --> BSD[BSD猜想]
     ELLIPTIC --> TORSION[挠子群]
     ELLIPTIC --> RANK[秩问题]
-    
+
     MODULAR --> HECKE[Hecke算子]
     MODULAR --> LFUNCTION[L-函数]
     MODULAR --> TANIYAMA[谷山-志村]
-    
+
     ANA --> PRIME[素数分布]
     ANA --> ZETA[Riemann ζ函数]
     ANA --> SIEVES[筛法]
     ANA --> ADDITIVE[堆垒数论]
-    
+
     ZETA --> RH[Riemann假设]
     ZETA --> PRIMENUMBER[素数定理]
     ZETA --> DIRICHLET[Dirichlet定理]
-    
+
     REPRESENTATION --> PADIC[p-进表示]
     REPRESENTATION --> DEFORMATION[形变理论]
     REPRESENTATION --> LANGLANDS[Langlands纲领]
-    
+
     style NT fill:#f9f,stroke:#333,stroke-width:4px
     style ANT fill:#bbf,stroke:#333
     style AG fill:#bfb,stroke:#333
@@ -552,40 +596,40 @@ graph LR
     EC[椭圆曲线 E/Q] --> ARITH[算术性质]
     EC --> ANALYTIC[解析性质]
     EC --> GEOM[几何性质]
-    
+
     ARITH --> POINTS[有理点 E(Q)]
     ARITH --> TORSION2[挠子群]
     ARITH --> RANK2[秩 rank E]
     ARITH --> TATE[Tate-Shafarevich]
-    
+
     POINTS --> MORDELL2[Mordell-Weil定理]
     POINTS --> COMPUTATION[点计算]
     POINTS --> HEIGHT[高度理论]
-    
+
     ANALYTIC --> LFUNC[L-函数 L(E,s)]
     ANALYTIC --> CONDUCTOR[导子 N_E]
     ANALYTIC --> FOURIER[Fourier系数 a_p]
-    
+
     LFUNC --> ANALYTICCONT[解析延拓]
     LFUNC --> FUNCTIONAL[函数方程]
     LFUNC --> SPECIAL[特殊值]
-    
+
     SPECIAL --> LE1[L(E,1)]
     SPECIAL --> DERIVATIVE[L'(E,1)]
-    
+
     GEOM --> MODULARITY[模性]
     GEOM --> ISOGENY[同源]
     GEOM --> REDUCTION[约化类型]
-    
+
     MODULARITY --> PARAM[模参量化]
     MODULARITY --> GALOIS2[关联Galois表示]
-    
+
     ARITH --> BSD2[Birch-Swinnerton-Dyer]
     ANALYTIC --> BSD2
-    
+
     BSD2 --> WEAKBSD[弱BSD]
     BSD2 --> STRONGBSD[精确公式]
-    
+
     style EC fill:#f9f,stroke:#333,stroke-width:4px
     style BSD2 fill:#bfb,stroke:#333,stroke-width:2px
 ```
