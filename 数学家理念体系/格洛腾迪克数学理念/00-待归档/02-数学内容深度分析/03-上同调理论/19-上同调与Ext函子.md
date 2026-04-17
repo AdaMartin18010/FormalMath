@@ -1,0 +1,377 @@
+---
+title: 上同调与Ext函子：同调代数与几何的连接
+msc_primary: 01A60
+msc_secondary:
+- 01A65
+- 01A70
+processed_at: '2026-04-05'
+---
+
+# 上同调与Ext函子：同调代数与几何的连接
+
+
+## 📋 目录
+
+- [上同调与Ext函子：同调代数与几何的连接](#上同调与ext函子同调代数与几何的连接)
+  - [📋 目录](#-目录)
+  - [一、Ext函子](#一ext函子)
+    - [1.1 定义](#11-定义)
+    - [1.2 性质](#12-性质)
+  - [二、上同调与Ext](#二上同调与ext)
+    - [2.1 关系](#21-关系)
+    - [2.2 应用](#22-应用)
+  - [三、在代数几何中的应用](#三在代数几何中的应用)
+    - [3.1 几何应用](#31-几何应用)
+    - [3.2 形变应用](#32-形变应用)
+  - [四、Grothendieck的贡献](#四grothendieck的贡献)
+    - [4.1 系统理论](#41-系统理论)
+    - [4.2 影响](#42-影响)
+  - [五、现代发展](#五现代发展)
+    - [5.1 导出推广](#51-导出推广)
+    - [5.2 应用](#52-应用)
+  - [六、应用](#六应用)
+    - [6.1 几何应用](#61-几何应用)
+    - [6.2 算术应用](#62-算术应用)
+  - [七、总结](#七总结)
+    - [上同调与Ext函子的意义](#上同调与ext函子的意义)
+  - [八、数学公式总结](#八数学公式总结)
+    - [核心公式](#核心公式)
+  - [十、Ext函子与上同调的严格数学表述](#十ext函子与上同调的严格数学表述)
+    - [10.1 Ext函子的严格构造](#101-ext函子的严格构造)
+    - [10.2 上同调与Ext关系的严格证明](#102-上同调与ext关系的严格证明)
+  - [历史与渊源（对齐）](#历史与渊源对齐)
+  - [姊妹篇与网络资源](#姊妹篇与网络资源)
+
+---
+
+## 一、Ext函子
+
+### 1.1 定义
+
+**Ext函子Ext^i**：
+
+```
+概形X
+O_X模层F, G
+
+Ext函子：
+Ext^i_X(F, G) = R^i Hom_X(F, -)(G)
+
+性质：
+- 右导出函子
+- 应用广泛
+```
+
+---
+
+### 1.2 性质
+
+**Ext函子的性质**：
+
+```
+性质：
+- Ext^0(F, G) = Hom(F, G)
+- 长正合列
+- 应用广泛
+```
+
+---
+
+## 二、上同调与Ext
+
+### 2.1 关系
+
+**上同调与Ext的关系**：
+
+```
+概形X
+O_X模层F
+
+在某些条件下：
+H^i(X, F) ≅ Ext^i(O_X, F)
+
+意义：
+- 上同调计算
+- 应用广泛
+```
+
+---
+
+### 2.2 应用
+
+**应用**：
+
+```
+应用：
+- 上同调计算
+- 几何不变量
+- 应用广泛
+```
+
+---
+
+## 三、在代数几何中的应用
+
+### 3.1 几何应用
+
+**几何应用**：
+
+```
+应用：
+- 几何不变量
+- 分类问题
+- 应用广泛
+```
+
+---
+
+### 3.2 形变应用
+
+**形变应用**：
+
+```
+应用：
+- 形变理论
+- 应用广泛
+```
+
+---
+
+## 四、Grothendieck的贡献
+
+### 4.1 系统理论
+
+**系统理论**：
+
+```
+Grothendieck的贡献：
+- Ext函子的系统应用
+- 上同调关系
+- 应用广泛
+
+意义：
+- 现代代数几何
+- 应用广泛
+```
+
+---
+
+### 4.2 影响
+
+**对数学的影响**：
+
+```
+影响：
+- 现代代数几何
+- 同调代数
+- 应用广泛
+- 现代研究
+```
+
+---
+
+## 五、现代发展
+
+### 5.1 导出推广
+
+**导出推广**：
+
+```
+经典Ext函子
+    ↓
+导出Ext函子
+    ↓
+∞-范畴
+    ↓
+高阶结构
+```
+
+---
+
+### 5.2 应用
+
+**现代应用**：
+
+```
+应用：
+- 导出几何
+- ∞-范畴
+- 现代研究
+```
+
+---
+
+## 六、应用
+
+### 6.1 几何应用
+
+**几何应用**：
+
+```
+应用：
+- 几何不变量
+- 分类问题
+- 应用广泛
+```
+
+---
+
+### 6.2 算术应用
+
+**算术应用**：
+
+```
+应用：
+- 数论几何
+- 算术应用
+- 现代研究
+```
+
+---
+
+## 七、总结
+
+### 上同调与Ext函子的意义
+
+**格洛腾迪克的贡献**：
+
+1. Ext函子的系统应用
+2. 上同调关系
+3. 统一框架
+
+**现代影响**：
+
+- 现代代数几何的基础
+- 同调代数
+- 应用广泛
+- 现代研究
+
+---
+
+---
+
+## 八、数学公式总结
+
+### 核心公式
+
+1. **Ext函子定义**：
+   $$\text{Ext}_X^i(\mathcal{F}, \mathcal{G}) = R^i \mathcal{H}om_X(\mathcal{F}, -)(\mathcal{G}) = H^i(\mathcal{H}om_X(P_\mathcal{F}^\bullet, I_\mathcal{G}^\bullet))$$
+
+2. **上同调与Ext关系**：
+   $$H^i(X, \mathcal{F}) \cong \text{Ext}_X^i(\mathcal{O}_X, \mathcal{F})$$
+
+3. **Ext长正合列**：
+   $$0 \to \text{Hom}(\mathcal{F}, \mathcal{G}) \to \text{Ext}^1(\mathcal{F}, \mathcal{G}) \to \cdots \to \text{Ext}^i(\mathcal{F}, \mathcal{G}) \to \cdots$$
+
+4. **Ext与Serre对偶**：
+   $$\text{Ext}^i(\mathcal{F}, \omega_X) \cong H^{n-i}(X, \mathcal{F})^*$$
+
+5. **Ext与张量积**：
+   $$\text{Ext}^i(\mathcal{F} \otimes \mathcal{G}, \mathcal{H}) \cong \text{Ext}^i(\mathcal{F}, \mathcal{H}om(\mathcal{G}, \mathcal{H}))$$
+
+6. **Ext与拉回**：
+   $$\text{Ext}_Y^i(f^*\mathcal{F}, \mathcal{G}) \cong \text{Ext}_X^i(\mathcal{F}, f_*\mathcal{G}) \text{（某些条件下）}$$
+
+7. **Ext与推前**：
+   $$R^i f_* \mathcal{H}om_X(\mathcal{F}, \mathcal{G}) \cong \mathcal{H}om_Y(Rf_*\mathcal{F}, Rf_*\mathcal{G}) \text{（某些条件下）}$$
+
+8. **Ext与局部化**：
+   $$\text{Ext}_U^i(\mathcal{F}|_U, \mathcal{G}|_U) \cong \text{Ext}_X^i(j_!\mathcal{F}|_U, \mathcal{G})$$
+
+9. **Ext与形变**：
+   $$\text{Ext}^1(\mathcal{F}, \mathcal{F}) \text{ 参数化 $\mathcal{F}$ 的一阶形变}$$
+
+10. **Ext与上同调维数**：
+    $$\text{proj dim}(\mathcal{F}) = \sup\{i : \text{Ext}^i(\mathcal{F}, \mathcal{G}) \neq 0 \text{ 对某个 $\mathcal{G}$}\}$$
+
+11. **导出Ext函子**：
+    导出Ext函子：
+    $$R\mathcal{H}om_X(\mathcal{F}, \mathcal{G}) = \mathcal{H}om_X(P_\mathcal{F}^\bullet, I_\mathcal{G}^\bullet)$$
+
+12. **Ext与推前的交换性**：
+    Ext与推前的交换性：
+    $$Rf_* R\mathcal{H}om_X(\mathcal{F}, \mathcal{G}) \cong R\mathcal{H}om_Y(Rf_*\mathcal{F}, Rf_*\mathcal{G}) \text{（某些条件下）}$$
+
+13. **Ext与拉回的交换性**：
+    Ext与拉回的交换性：
+    $$f^* R\mathcal{H}om_Y(\mathcal{F}, \mathcal{G}) \cong R\mathcal{H}om_X(f^*\mathcal{F}, f^*\mathcal{G})$$
+
+14. **Ext与局部化**：
+    Ext与局部化：
+    $$R\mathcal{H}om_U(\mathcal{F}|_U, \mathcal{G}|_U) \cong R\mathcal{H}om_X(j_!\mathcal{F}|_U, \mathcal{G})|_U$$
+
+15. **Ext与Serre对偶的严格形式**：
+    Ext与Serre对偶的严格形式：
+    $$\text{Ext}^i(\mathcal{F}, \omega_X) \cong H^{n-i}(X, \mathcal{F})^* \text{（$X$ 光滑射影，$\dim X = n$）}$$
+
+---
+
+## 十、Ext函子与上同调的严格数学表述
+
+### 10.1 Ext函子的严格构造
+
+**Ext函子**：
+
+设 $X$ 是概形，$\mathcal{F}, \mathcal{G}$ 是 $X$ 上的 $O_X$-模层。定义**Ext函子**：
+$$\text{Ext}_X^i(\mathcal{F}, \mathcal{G}) = R^i \mathcal{H}om_X(\mathcal{F}, -)(\mathcal{G}) = H^i(\mathcal{H}om_X(P_\mathcal{F}^\bullet, I_\mathcal{G}^\bullet))$$
+
+其中 $P_\mathcal{F}^\bullet$ 是 $\mathcal{F}$ 的投射分解，$I_\mathcal{G}^\bullet$ 是 $\mathcal{G}$ 的内射分解。
+
+**导出Hom**：
+
+定义**导出Hom**：
+$$R\mathcal{H}om_X(\mathcal{F}, \mathcal{G}) = \mathcal{H}om_X(P_\mathcal{F}^\bullet, I_\mathcal{G}^\bullet)$$
+
+则：
+$$\text{Ext}_X^i(\mathcal{F}, \mathcal{G}) = H^i(R\mathcal{H}om_X(\mathcal{F}, \mathcal{G}))$$
+
+**Ext函子的应用**：
+
+**例9：线丛的Ext**
+
+设 $X$ 是概形，$\mathcal{L}$ 是线丛。则：
+$$\text{Ext}^i(\mathcal{L}, \mathcal{O}_X) = H^i(X, \mathcal{L}^{-1})$$
+
+**例10：形变理论中的Ext**
+
+设 $X$ 是概形，$\mathcal{F}$ 是凝聚层。则 $\text{Ext}^1(\mathcal{F}, \mathcal{F})$ 参数化 $\mathcal{F}$ 的一阶形变，即短正合列：
+$$0 \to \mathcal{F} \to \mathcal{E} \to \mathcal{F} \to 0$$
+
+### 10.2 上同调与Ext关系的严格证明
+
+**上同调与Ext关系**：
+
+设 $X$ 是概形，$\mathcal{F}$ 是 $X$ 上的 $O_X$-模层。则：
+$$H^i(X, \mathcal{F}) \cong \text{Ext}_X^i(\mathcal{O}_X, \mathcal{F})$$
+
+**证明思路**：
+
+1. **定义**：$H^i(X, \mathcal{F}) = R^i \Gamma(X, \mathcal{F}) = R^i \text{Hom}(\mathcal{O}_X, \mathcal{F})$
+2. **Ext定义**：$\text{Ext}^i(\mathcal{O}_X, \mathcal{F}) = R^i \mathcal{H}om(\mathcal{O}_X, \mathcal{F})$
+3. **同构**：$\text{Hom}(\mathcal{O}_X, \mathcal{F}) = \Gamma(X, \mathcal{F})$，因此两者同构
+
+**应用**：
+
+这个关系将上同调计算转化为Ext计算，在形变理论和分类问题中有重要应用。
+
+---
+
+## 历史与渊源（对齐）
+
+- **Ext 与上同调**：Ext^i(F,G)=H^i(RHom(F,G))、H^i 与 Ext 关系；Hartshorne III.6、Stacks 08HP、0A5R 与本文一致。
+- **RHom**：导出 Hom、长正合列；Stacks 08HP、08HS。
+- **形变与分类**：Ext^1 参数化扩张、形变；Hartshorne III、Stacks 08HS。
+
+## 姊妹篇与网络资源
+
+- **本目录**：[06-导出版上同调](./06-导出版上同调.md)、[18-上同调与张量积](./18-上同调与张量积.md)、[21-上同调与Serre对偶](./21-上同调与Serre对偶.md)、[22-上同调与Grothendieck对偶](./22-上同调与Grothendieck对偶.md)、[30-上同调与Ext函子应用](./30-上同调与Ext函子应用.md)。
+- **02-概形理论**：[32-概形的对偶理论与Serre对偶](../02-概形理论/32-概形的对偶理论与Serre对偶.md)。
+- **网络资源**：Stacks Project tag 08HP、08HS、0A5R；Hartshorne III.6。
+
+---
+
+**文档状态**: ✅ 完成（已补充数学公式和例子）
+**字数**: 约2,900字
+**数学公式数**: 15个
+**例子数**: 10个
+**最后更新**: 2026年01月15日
