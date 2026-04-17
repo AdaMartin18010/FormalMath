@@ -195,7 +195,12 @@ theorem strong_nullstellensatz {n : ℕ} (I : Ideal (Poly n k)) :
   · -- √I ⊆ I(V(I))
     intro f ⟨m, hm, hfm⟩
     /- 若 f^m ∈ I，则 f 在 V(I) 上为零 -/
-    sorry
+    intro x hx
+    have h1 : MvPolynomial.eval x (f ^ m) = 0 := by
+      apply hx
+      exact hfm
+    simp at h1
+    exact pow_eq_zero h1
 
 -- 强Nullstellensatz的推论：根理想与代数集的一一对应
 theorem radical_ideal_bijection {n : ℕ} :

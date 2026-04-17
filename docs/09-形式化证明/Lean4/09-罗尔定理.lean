@@ -74,13 +74,8 @@ theorem fermat_lemma {f : ℝ → ℝ} {c : ℝ}
     (h_differentiable : DifferentiableAt ℝ f c) :
     deriv f c = 0 := by
   /- 使用Mathlib4的极值点导数定理 -/
-  have h1 :deriv f c = 0 := by
-    apply eq_zero_of_derivWithin_at_eq_zero
-    · -- 证明 c 是局部最大值点
-      sorry  -- 需要连接 nhds 和 local_max
-    · -- 证明导数存在
-      sorry
-  exact h1
+  have h_local_max' : IsLocalMax f c := h_local_max
+  exact h_local_max'.deriv_eq_zero h_differentiable.hasDerivAt
 
 -- 费马引理（最小值版本）
 theorem fermat_lemma_min {f : ℝ → ℝ} {c : ℝ}
@@ -88,7 +83,8 @@ theorem fermat_lemma_min {f : ℝ → ℝ} {c : ℝ}
     (h_differentiable : DifferentiableAt ℝ f c) :
     deriv f c = 0 := by
   /- 对 -f 应用最大值版本的费马引理 -/
-  sorry  -- 通过对称性证明
+  have h_local_min' : IsLocalMin f c := h_local_min
+  exact h_local_min'.deriv_eq_zero h_differentiable.hasDerivAt
 
 /-
 ## 第二部分：罗尔定理

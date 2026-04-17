@@ -203,16 +203,44 @@ theorem series_cauchy_criterion {a : ℕ → ℝ} :
       have h' := this n m hn (by linarith) (by linarith)
       have h_symm : |∑ i in Finset.Ico n m, a i| = |∑ i in Finset.Ico m n, a i| := by
         have : ∑ i in Finset.Ico n m, a i = - ∑ i in Finset.Ico m n, a i := by
-          sorry  -- 需要证明对称性
+          rw [← Finset.sum_neg_distrib]
+          apply Finset.sum_congr
+          · rw [Nat.Ico_union_Ico_eq_Ico (by linarith) (by linarith)]
+            have : Finset.Ico n m ∪ Finset.Ico m n = Finset.Ico (min m n) (max m n) := by
+              rw [Nat.Ico_union_Ico_eq_Ico (by simp; linarith) (by simp; linarith)]
+            have hdisj : Finset.Disjoint (Finset.Ico n m) (Finset.Ico m n) := by
+              apply Finset.disjoint_left.mpr
+              intro k hk
+              simp at hk ⊢
+              omega
+            have h_eq : ∑ i in Finset.Ico n m, a i + ∑ i in Finset.Ico m n, a i =
+                ∑ i in Finset.Ico (min m n) (max m n), a i := by
+              rw [← Finset.sum_union hdisj, this]
+            have h_min : min m n = n := by linarith
+            have h_max : max m n = m := by linarith
+            rw [h_min, h_max] at h_eq
+            linarith
+          · intro i hi
+            rfl
         rw [this]
         simp
-      sorry  -- P3级别：需要更精细的分析
+      have h_dist : dist (∑ i in Finset.range m, a i) (∑ i in Finset.range n, a i) =
+          |∑ i in Finset.Ico n m, a i| := by
+        simp [dist_eq_norm, norm_eq_abs]
+        rw [Finset.sum_range_eq_add_sum_Ico]
+        · ring_nf
+          simp [abs_neg]
+        · linarith
+      linarith [h', h_symm, h_dist]
     have h' := hN m n hm hmn
     have h_sum : dist (∑ i in Finset.range m, a i) (∑ i in Finset.range n, a i) =
         |∑ i in Finset.Ico m n, a i| := by
       simp [dist_eq_norm, norm_eq_abs]
-      sorry  -- P3级别：需要Finset的精细操作
-    sorry
+      rw [Finset.sum_range_eq_add_sum_Ico]
+      · ring_nf
+        simp [abs_neg]
+      · linarith
+    linarith [h', h_sum]
 
 /-
 ## 第六部分：一致收敛的柯西准则
@@ -256,7 +284,36 @@ theorem uniform_cauchy_criterion {f : ℕ → β → ℝ} :
       ))
     use f_lim
     /- 证明一致收敛 -/
-    sorry  -- P3级别：需要更精细的一致收敛论证
+    intro ε hε
+    rcases h (ε / 2) (by linarith) with ⟨N, hN⟩
+    use N
+    intro n hn x
+    have h_tendsto : Tendsto (fun m => f m x) atTop (𝓝 (f_lim x)) := by
+      have h_cauchy : CauchySeq (fun m => f m x) := by
+        apply Metric.cauchySeq_iff.mpr
+        intro ε' hε'
+        rcases h ε' hε' with ⟨N', hN'⟩
+        use N'
+        intro m n hm hn
+        exact hN' m n hm hn x
+      exact cauchySeq_tendsto_of_complete h_cauchy
+    have h_eventually : ∀ᶠ m in atTop, |f m x - f_lim x| < ε / 2 := by
+      have h1 : Tendsto (fun m => f m x) atTop (𝓝 (f_lim x)) := h_tendsto
+      have h2 : ∀ᶠ m in atTop, dist (f m x) (f_lim x) < ε / 2 := by
+        apply h1.eventually_lt_const
+        linarith
+      simp [dist_eq_norm, norm_eq_abs] at h2
+      exact h2
+    rcases h_eventually.exists with ⟨M, hM⟩
+    have h1 : |f (max N M) x - f_lim x| < ε / 2 := hM (le_max_right N M)
+    have h2 : |f n x - f (max N M) x| < ε / 2 := by
+      apply hN n (max N M) hn (le_max_left N M) x
+    calc
+      |f n x - f_lim x| ≤ |f n x - f (max N M) x| + |f (max N M) x - f_lim x| := by
+        rw [show f n x - f_lim x = (f n x - f (max N M) x) + (f (max N M) x - f_lim x) by ring]
+        apply abs_add
+      _ < ε / 2 + ε / 2 := by linarith
+      _ = ε := by ring
 
 end CauchyConvergence
 
@@ -284,8 +341,52 @@ end CauchyConvergence
 
 ```lean
 example : IsCauchySeq (fun n => ∑ i in Finset.Icc 1 n, (1 : ℝ) / i^2) := by
-  /- 使用柯西凝聚判别法或直接估计 -/
-  sorry
+  /- 该级数收敛，所以部分和序列是柯西序列 -/
+  rw [cauchy_convergence_criterion]
+  use Real.pi ^ 2 / 6
+  /- 使用已知结果：∑ 1/n² = π²/6 (Basel问题) -/
+  have h : Tendsto (fun n => ∑ i in Finset.Icc 1 n, (1 : ℝ) / i^2) atTop (𝓝 (Real.pi ^ 2 / 6)) := by
+    have h1 : ∀ n, ∑ i in Finset.Icc 1 n, (1 : ℝ) / i^2 = ∑ i in Finset.range (n + 1), (1 : ℝ) / (i + 1)^2 := by
+      intro n
+      apply Finset.sum_bij (fun i _ => i - 1)
+      · intro i hi
+        simp at hi ⊢
+        omega
+      · intro i j hi hj h_eq
+        simp at h_eq
+        omega
+      · intro j hj
+        use j + 1
+        simp at hj ⊢
+        omega
+      · intro i hi
+        simp
+    have h2 : Tendsto (fun n => ∑ i in Finset.range (n + 1), (1 : ℝ) / (i + 1)^2) atTop (𝓝 (Real.pi ^ 2 / 6)) := by
+      have h3 : ∑' i : ℕ, (1 : ℝ) / (i + 1)^2 = Real.pi ^ 2 / 6 := by
+        have h4 : ∑' i : ℕ, (1 : ℝ) / (i + 1)^2 = ∑' i : ℕ, (1 : ℝ) / (i + 1)^2 := rfl
+        /- 使用Mathlib的已知结果 -/
+        have h5 : ∑' n : ℕ, (1 : ℝ) / (n + 1)^2 = Real.pi ^ 2 / 6 := Real.hasSum_zeta_two.tsum_eq
+        exact h5
+      have h4 : Tendsto (fun n => ∑ i in Finset.range n, (1 : ℝ) / (i + 1)^2) atTop (𝓝 (∑' i : ℕ, (1 : ℝ) / (i + 1)^2)) := by
+        apply Finset.tendsto_sum_tsum
+        apply Summable.of_nonneg_of_le
+        · intro i; positivity
+        · intro i; simp
+        · exact summable_nat_add_iff 1 |>.mp (summable_zeta_two (by norm_num))
+      have h5 : (fun n => ∑ i in Finset.range (n + 1), (1 : ℝ) / (i + 1)^2) = (fun n => (fun m => ∑ i in Finset.range m, (1 : ℝ) / (i + 1)^2) (n + 1)) := by
+        funext n
+        rfl
+      rw [h5, h3]
+      apply Tendsto.comp h4
+      apply tendsto_atTop_atTop_of_monotone
+      · intro m n hmn
+        simp
+        omega
+      · intro n
+        use n
+        omega
+    simpa [h1] using h2
+  exact h
 ```
 
 ### 例2：构造实数
