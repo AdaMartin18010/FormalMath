@@ -4,6 +4,7 @@ category: 代数
 topic: 群论
 concept: 正规子群
 title: 非正规子群的例子（在S₄中找子群）
+msc_primary: 00A99
 difficulty: 中等
 keywords: [正规子群, 对称群, 共轭, 置换群]
 related: [CEX-ALG-005, CEX-ALG-004]

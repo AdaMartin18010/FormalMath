@@ -1,5 +1,7 @@
 ---
-msc_primary: 14D07
+msc_primary: 14
+
+  - 14D07
 exercise_id: AG-072
 title: Kodaira维数的deformation不变性
 difficulty: 4

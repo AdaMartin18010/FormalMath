@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: ε-δ定义 → 极限性质 → 连续性推理树
 processed_at: '2026-04-05'
 ---

@@ -1,5 +1,7 @@
 ---
-msc_primary: 57R67
+msc_primary: 57
+
+  - 57R67
 exercise_id: TOP-136
 title: Wall群与L-群计算
 difficulty: 5

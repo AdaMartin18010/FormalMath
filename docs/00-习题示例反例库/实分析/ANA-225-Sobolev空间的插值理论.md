@@ -1,5 +1,7 @@
 ---
-msc_primary: 46E35
+msc_primary: 46
+
+  - 46E35
 exercise_id: ANA-225
 title: Sobolev空间的插值理论
 difficulty: 3

@@ -1,5 +1,7 @@
 ---
-msc_primary: 18N60
+msc_primary: 18
+msc_secondary:
+  - 18N60
 msc_secondary: [18D05, 55U35]
 title: nLab - ∞-范畴 (∞-category) 中文解读
 nlab_url: https://ncatlab.org/nlab/show/infinity-category

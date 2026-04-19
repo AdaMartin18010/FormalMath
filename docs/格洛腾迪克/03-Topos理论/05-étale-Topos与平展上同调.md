@@ -1,10 +1,11 @@
 ---
 title: Étale Topos与平展上同调
 description: 从Topos理论视角重新审视平展拓扑、平展Topos的构造、几何态射以及平展上同调作为Topos上同调的自然性。
-msc_primary: 14F20
-msc_secondary:
-- 18B25
-- 14L30
+msc_primary: 14
+
+  - 14F20
+  - 18B25
+  - 14L30
 processed_at: '2026-04-16'
 ---
 

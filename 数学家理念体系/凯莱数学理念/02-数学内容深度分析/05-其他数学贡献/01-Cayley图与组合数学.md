@@ -1,11 +1,12 @@
 ---
 title: Cayley图：群的几何表示与组合群论的开端
-msc_primary: 05C25
+msc_primary: 05
 msc_secondary:
-- 00A99
-- 20F65
-- 20E08
-- 68R10
+  - 05C25
+  - 00A99
+  - 20F65
+  - 20E08
+  - 68R10
 processed_at: '2026-04-05'
 ---
 # Cayley图：群的几何表示与组合群论的开端

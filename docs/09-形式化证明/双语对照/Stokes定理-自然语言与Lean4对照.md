@@ -1,5 +1,6 @@
 ---
 title: "Stokes 定理 自然语言与 Lean4 对照"
+msc_primary: 68V20
 level: "silver"
 target_courses:
   - "通用"

@@ -1,6 +1,8 @@
 ---
 title: "forcing方法简介 - 深度版"
-msc_primary: "03E40"
+msc_primary: 03
+
+  - 03E40
 msc_secondary: ["03E35", "03E50", "03E55"]
 processed_at: "2026-04-05"
 ---

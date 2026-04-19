@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A15
+msc_primary: 00
 msc_secondary:
-- 01A99
+  - 00A15
+  - 01A99
 title: 基于原始文献、核心言论和具体数学内容，对三者的哲学立场进行深度论证分析
 processed_at: '2026-04-05'
 ---

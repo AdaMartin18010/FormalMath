@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: ZFC公理体系完整形式化 - 自然数构造详细版
 processed_at: '2026-04-05'
 ---
@@ -17,7 +17,7 @@ processed_at: '2026-04-05'
 
 ---
 msc_primary: "03F30"
-msc_secondary: ['11Axx', '03E30', '03E15']
+msc_secondary: ['03E30', '03E15']
 ---
 
 # ZFC公理体系完整形式化 - 自然数构造详细版

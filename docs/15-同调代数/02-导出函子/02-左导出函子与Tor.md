@@ -1,5 +1,7 @@
 ---
-msc_primary: 18G10
+msc_primary: 18
+
+  - 18G10
 msc_secondary: ['13D07', '16E30', '18G15']
 keywords: ['Tor', '左导出函子', '张量积', '挠群', '平坦性', '同调维数']
 version: 1.0

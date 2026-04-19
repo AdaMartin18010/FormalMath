@@ -1,3 +1,8 @@
+---
+title: "Grigori Perelman传记"
+msc_primary: "01"
+---
+
 # Grigori Perelman 传记
 
 > "我不是数学的英雄。我只是一个做数学的人。"

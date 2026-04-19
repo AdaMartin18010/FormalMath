@@ -1,9 +1,10 @@
 ---
 title: theta函数恒等式：拉马努金的椭圆函数贡献
-msc_primary: 01A55
+msc_primary: 01
 msc_secondary:
-- 01A60
-- 01A70
+  - 01A55
+  - 01A60
+  - 01A70
 processed_at: '2026-04-05'
 ---
 

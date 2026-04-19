@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 03E99
-- 00A99
+msc_primary: 00
+
+  - 00A99
+  - 03E99
+  - 00A99
 title: Zorn 与极大元 - 工作示例
 processed_at: '2026-04-05'
 ---

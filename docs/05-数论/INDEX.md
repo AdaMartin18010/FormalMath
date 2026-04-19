@@ -1,5 +1,5 @@
 ---
-msc_primary: 11-XX
+msc_primary: 11
 title: 数论分支索引 / Number Theory Index
 processed_at: '2026-04-08'
 ---
@@ -7,7 +7,7 @@ processed_at: '2026-04-08'
 # 数论分支索引 / Number Theory Index
 
 > **最后更新**: 2026年4月8日  
-> **MSC主类**: 11-XX (Number theory)  
+> **MSC主类**: 11-00 (Number theory)  
 > **国际对标**: MIT 18.785/18.786, Harvard Math 129/229/259X, Princeton MAT 419/451/455
 
 ---

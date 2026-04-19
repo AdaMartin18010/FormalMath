@@ -1,5 +1,7 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
+
+  - 00A99
 title: FormalMath 用户手册 - PDF 生成指南
 processed_at: '2026-04-05'
 ---

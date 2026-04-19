@@ -1,6 +1,8 @@
 ---
 title: FormalMath项目千禧年大奖难题Lean4形式化完善报告
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # FormalMath项目千禧年大奖难题Lean4形式化完善报告

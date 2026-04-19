@@ -1,8 +1,9 @@
 ---
-msc_primary: 12F99
-msc_secondary:
-- 12F10
-- 12E05
+msc_primary: 12
+
+  - 12F99
+  - 12F10
+  - 12E05
 lang: en
 original: docs/02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md
 translation_status: completed

@@ -1,5 +1,6 @@
 ---
 title: "柯西-施瓦茨不等式（向量形式与矩阵形式对比） 自然语言与 Lean4 对照"
+msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"

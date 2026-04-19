@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: ZFC公理体系到Number Theory完整推导路径Summary
 processed_at: '2026-04-05'
 ---

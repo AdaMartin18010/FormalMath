@@ -4,6 +4,7 @@ references:
     - id: munkres_top
       type: textbook
       title: Topology
+msc_primary: 51A99
       authors:
       - James R. Munkres
       publisher: Pearson
@@ -11,7 +12,7 @@ references:
       year: 2000
       isbn: 978-0131816299
       msc: 54-01
-      chapters: []
+      chapters: 
       url: ~
     - id: lee_ism
       type: textbook
@@ -23,7 +24,7 @@ references:
       year: 2012
       isbn: 978-1441999818
       msc: 58-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -418,4 +419,4 @@ $$R_{ij} = R^k_{\,ikj}, \quad R = g^{ij}R_{ij}$$
 
 ---
 
-*文档编号：21 | MSC2020分类：53Bxx, 53Cxx Riemann几何 | 创建日期：2026年4月*
+*文档编号：21 | MSC2020分类：@, @ Riemann几何 | 创建日期：2026年4月*

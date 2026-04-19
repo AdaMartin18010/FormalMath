@@ -1,3 +1,8 @@
+---
+title: "Lean4入门教程"
+msc_primary: "03"
+---
+
 # Lean4入门教程
 
 ## 概述

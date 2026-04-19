@@ -1,6 +1,6 @@
 ---
 msc_primary: 00A69
-msc_secondary:
+
 - 00A99
 title: FormalMath项目持续改进推进报告 - 量子计算数学应用扩展
 processed_at: '2026-04-05'

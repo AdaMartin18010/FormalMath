@@ -1,5 +1,7 @@
 ---
-msc_primary: 41A58
+msc_primary: 41
+
+  - 41A58
 exercise_id: ANA-035
 title: Taylor展开应用
 difficulty: 3

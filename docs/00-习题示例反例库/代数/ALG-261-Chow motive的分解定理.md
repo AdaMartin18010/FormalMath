@@ -1,5 +1,7 @@
 ---
-msc_primary: 14C15
+msc_primary: 14
+
+  - 14C15
 exercise_id: ALG-261
 title: Chow motive的分解定理
 difficulty: 5

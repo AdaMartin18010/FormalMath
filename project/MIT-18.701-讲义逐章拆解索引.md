@@ -1,5 +1,6 @@
 ---
 title: MIT 18.701 抽象代数 I 讲义逐章拆解索引
+msc_primary: 00A99
 course_code: MIT 18.701
 course_name: Algebra I
 instructor: MIT OCW Fall 2010 / Prof. Michael Artin tradition

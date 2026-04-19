@@ -1,9 +1,10 @@
 ---
-msc_primary: 11T71
-msc_secondary:
-- 94A60
-- 11A41
-- 68P25
+msc_primary: 11
+
+  - 11T71
+  - 94A60
+  - 11A41
+  - 68P25
 title: RSA加密算法：从数论基础到现代密码学实践（深度教学版）
 processed_at: '2026-04-05'
 ---
@@ -412,7 +413,6 @@ class RSA:
     @property
     def private_key(self) -> Tuple[int, int]:
         return (self.N, self.d)
-
 
 # 演示代码
 if __name__ == "__main__":

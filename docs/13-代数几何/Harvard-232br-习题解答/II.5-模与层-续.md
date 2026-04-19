@@ -1,5 +1,6 @@
 ---
 title: Harvard 232br - Hartshorne Chapter II §5 习题解答（续）
+msc_primary: 14A99
 course_code: Harvard Math 232br
 textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
 source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
@@ -38,7 +39,7 @@ references:
     year: 2024
     isbn: null
     msc: 14-01
-    chapters: []
+    chapters: 
     url: https://math.stanford.edu/~vakil/216blog/
   databases:
   - id: nlab

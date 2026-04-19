@@ -1,7 +1,9 @@
 ---
 title: "Topos 理论的范畴观点：从层到几何态射"
 level: "gold"
-msc_primary: "18B25"
+msc_primary: 18
+
+  - 18B25
 nlab_urls:
   - "https://ncatlab.org/nlab/show/topos"
   - "https://ncatlab.org/nlab/show/sheaf+topos"
@@ -32,7 +34,7 @@ references:
       journal: "Proceedings of the National Academy of Sciences"
       year: 1964
       volume: 52
-      pages: "1506–1511"
+      pages: "1506"–1511"
   databases:
     - type: "nLab"
       url: "https://ncatlab.org/nlab/show/topos"

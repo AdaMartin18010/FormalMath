@@ -1,11 +1,12 @@
 ---
 title: 单纯复形与Delta复形 - 深度版
-msc_primary: 55U10
-msc_secondary:
-- 57Q05
-- 55N10
-- 00A99
-- 57M15
+msc_primary: 55
+
+  - 55U10
+  - 57Q05
+  - 55N10
+  - 00A99
+  - 57M15
 processed_at: '2026-04-05'
 mathematicians:
 - 庞加莱
@@ -23,7 +24,7 @@ references:
       year: 2000
       isbn: 978-0131816299
       msc: 54-01
-      chapters: []
+      chapters: 
       url: ~
     - id: lee_ism
       type: textbook
@@ -35,7 +36,7 @@ references:
       year: 2012
       isbn: 978-1441999818
       msc: 58-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

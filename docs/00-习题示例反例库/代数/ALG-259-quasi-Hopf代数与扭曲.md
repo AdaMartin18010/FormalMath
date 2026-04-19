@@ -1,5 +1,7 @@
 ---
-msc_primary: 16T05
+msc_primary: 16
+
+  - 16T05
 exercise_id: ALG-259
 title: quasi-Hopf代数与扭曲
 difficulty: 4

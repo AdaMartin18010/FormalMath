@@ -1,5 +1,7 @@
 ---
-msc_primary: 53C21
+msc_primary: 53
+
+  - 53C21
 exercise_id: GEO-081
 title: Cheeger-Colding理论与极限空间
 difficulty: 4

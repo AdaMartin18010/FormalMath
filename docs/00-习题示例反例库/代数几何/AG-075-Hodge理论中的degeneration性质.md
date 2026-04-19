@@ -1,5 +1,7 @@
 ---
-msc_primary: 14D07
+msc_primary: 14
+
+  - 14D07
 exercise_id: AG-075
 title: Hodge理论中的degeneration性质
 difficulty: 4

@@ -1,5 +1,7 @@
 ---
-msc_primary: 35S05
+msc_primary: 35
+
+  - 35S05
 exercise_id: ANA-220
 title: Pseudodifferential算子的象征演算
 difficulty: 4

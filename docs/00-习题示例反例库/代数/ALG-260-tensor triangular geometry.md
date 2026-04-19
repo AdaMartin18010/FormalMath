@@ -1,5 +1,7 @@
 ---
-msc_primary: 18G80
+msc_primary: 18
+
+  - 18G80
 exercise_id: ALG-260
 title: tensor triangular geometry
 difficulty: 4

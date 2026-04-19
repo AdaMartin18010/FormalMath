@@ -3,7 +3,7 @@ course: MIT 18.100A 实分析
 
 title: "Taylor定理（Taylor's Theorem）"
 level: "silver"
-msc_primary: "26-01"
+msc_primary: 26
 target_courses:
   - "MIT 18.100A Ch.6"
 references:
@@ -531,3 +531,19 @@ $\square$
 
 **文档状态**: 🟡 草稿 | **审校轮次**: 0/2
 **最后更新**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。求 $f(x) = e^x$ 在 $x=0$ 处的三阶 Taylor 多项式，并估计在 $x=1$ 处的余项上界。
+
+*解答*：$f^{(n)}(x) = e^x$，故 $f^{(n)}(0)=1$。
+$$P_3(x) = 1 + x + rac{x^2}{2} + rac{x^3}{6}$$
+余项 $R_3(x) = rac{e^c}{24}x^4$，$c\in(0,1)$，$|R_3(1)| \leq rac{e}{24} pprox 0.113$。$\square$
+
+---
+
+**习题 1.2**。用 Taylor 展开证明 $\lim_{x	o 0}rac{\sin x - x}{x^3} = -rac{1}{6}$。
+
+*解答*：$\sin x = x - rac{x^3}{6} + O(x^5)$，故 $\sin x - x = -rac{x^3}{6} + O(x^5)$。
+$$rac{\sin x - x}{x^3} = -rac{1}{6} + O(x^2) 	o -rac{1}{6}$$$\square$

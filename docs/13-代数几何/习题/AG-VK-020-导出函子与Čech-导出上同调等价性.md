@@ -1,10 +1,9 @@
 ---
 title: 导出函子与 Čech-导出上同调等价性
-msc_primary: 14-01
-msc_secondary:
-- 14F17
-- 14F25
-- 18Gxx
+msc_primary: 14
+  - 14F17
+  - 14F25
+
 level: silver
 target_courses:
 - Stanford FOAG

@@ -1,6 +1,7 @@
 ---
 title: "生物数学与数学建模"
-msc_primary: "92Bxx"
+msc_primary: 92
+
 msc_secondary: ['92B05', '92B10', '92C60', '92D25']
 prerequisites: ['微分方程', '动力系统', '概率论', '线性代数']
 processed_at: '2026-04-08'
@@ -9,7 +10,7 @@ processed_at: '2026-04-08'
 # 生物数学与数学建模 (Mathematical Biology)
 
 **最后更新**: 2026年4月8日  
-**MSC分类**: 92Bxx (生物数学)  
+**MSC分类**: @ (生物数学)  
 **课程对齐**: MIT 18.306, Cambridge Mathematical Biology
 
 ---

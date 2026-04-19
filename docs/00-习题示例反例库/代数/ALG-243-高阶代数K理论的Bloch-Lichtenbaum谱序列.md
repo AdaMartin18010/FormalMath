@@ -1,5 +1,7 @@
 ---
-msc_primary: 19D55
+msc_primary: 19
+
+  - 19D55
 exercise_id: ALG-243
 title: 高阶代数K理论的Bloch-Lichtenbaum谱序列
 difficulty: 5

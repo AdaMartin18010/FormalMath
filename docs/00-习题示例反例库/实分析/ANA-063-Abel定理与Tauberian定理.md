@@ -4,6 +4,7 @@ category: 实分析
 topic: 幂级数
 difficulty: ⭐⭐⭐
 title: Abel定理与Tauberian定理
+msc_primary: 00A99
 keywords: [Abel定理, Tauberian定理, 幂级数, 边界行为, 收敛性]
 prerequisites: [ANA-062, ANA-057]
 source: 经典分析习题

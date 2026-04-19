@@ -1,7 +1,8 @@
 ---
-msc_primary: 58A30
-msc_secondary:
-- 53C12
+msc_primary: 58
+
+  - 58A30
+  - 53C12
 title: Frobenius定理 - 五种表征
 processed_at: '2026-04-05'
 ---

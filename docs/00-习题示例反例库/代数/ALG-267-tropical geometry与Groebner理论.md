@@ -1,5 +1,7 @@
 ---
-msc_primary: 14T10
+msc_primary: 14
+
+  - 14T10
 exercise_id: ALG-267
 title: tropical geometry与Groebner理论
 difficulty: 4

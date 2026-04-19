@@ -4,6 +4,7 @@ category: 拓扑
 topic: 紧致性
 difficulty: ⭐⭐⭐⭐
 title: Tychonoff定理及其应用
+msc_primary: 00A99
 keywords: [Tychonoff定理, 乘积拓扑, 紧致, 选择公理, 超滤子]
 prerequisites: [TOP-011]
 source: 经典拓扑习题

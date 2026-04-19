@@ -1,3 +1,8 @@
+---
+title: "John von Neumann传记"
+msc_primary: "01"
+---
+
 # John von Neumann 传记
 
 > "在数学中，你并不理解事物，你只是习惯它们。"

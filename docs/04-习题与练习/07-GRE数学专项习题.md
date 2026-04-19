@@ -1,3 +1,8 @@
+---
+title: "GRE数学专项习题"
+msc_primary: "00"
+---
+
 # GRE数学专项习题集
 
 > 面向研究生入学考试（GRE Mathematics Subject Test）的专项训练

@@ -1,6 +1,8 @@
 ---
 title: "完美胚空间深度版 / Perfectoid Spaces (Advanced)"
-msc_primary: "14G22"
+msc_primary: 14
+
+  - 14G22
 msc_secondary: ["14F30", "11G25", "14F20"]
 processed_at: '2026-04-05'
 ---

@@ -1,7 +1,8 @@
 ---
-msc_primary: 46A22
-msc_secondary:
-- 46B99
+msc_primary: 46
+
+  - 46A22
+  - 46B99
 title: Hahn-Banach定理 - 五种表征
 processed_at: '2026-04-05'
 ---

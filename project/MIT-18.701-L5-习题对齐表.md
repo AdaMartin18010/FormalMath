@@ -1,5 +1,7 @@
 ---
-msc_primary: 20-01
+msc_primary: 20
+msc_secondary:
+  - 20-01
 title: MIT 18.701 Algebra I L5习题级对齐表
 processed_at: '2026-04-10'
 ---

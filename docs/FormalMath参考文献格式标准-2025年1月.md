@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 97A99
-- 00A99
-- 16A99
+msc_primary: 00
+
+  - 97A99
+  - 00A99
+  - 16A99
 title: FormalMath参考文献格式标准 - 2025年1月
 processed_at: '2026-04-05'
 ---
@@ -120,7 +120,7 @@ Author, A. Title[EB/OL]. [访问日期]. URL.
 #### 4.2 示例
 
 ```text
-Wikipedia contributors. Zermelo–Fraenkel set theory[EB/OL]. [2025-01-XX]. https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory.
+Wikipedia contributors. Zermelo–Fraenkel set theory[EB/OL]. [2025-01-00]. https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory.
 
 ```
 
@@ -136,7 +136,7 @@ University Name. Course Name[EB/OL]. [访问日期]. URL.
 #### 5.2 示例
 
 ```text
-MIT OpenCourseWare. 18.701 Algebra I[EB/OL]. [2025-01-XX]. https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/.
+MIT OpenCourseWare. 18.701 Algebra I[EB/OL]. [2025-01-00]. https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/.
 
 ```
 

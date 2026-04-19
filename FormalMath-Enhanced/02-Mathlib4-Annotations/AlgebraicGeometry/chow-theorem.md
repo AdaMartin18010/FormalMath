@@ -1,5 +1,7 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-15'
 title: Chow 定理 (Chow's Theorem)
 ---

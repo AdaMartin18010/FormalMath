@@ -1,5 +1,7 @@
 ---
-msc_primary: 57M50
+msc_primary: 57
+
+  - 57M50
 exercise_id: TOP-133
 title: 几何化猜想与Thurston理论
 difficulty: 5

@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A15
+msc_primary: 00
 msc_secondary:
-- 01A99
+  - 00A15
+  - 01A99
 title: 数学哲学的辩证四重奏：从克莱因到庞加莱-希尔伯特之争再到格洛腾迪克的终极综合
 processed_at: '2026-04-05'
 ---

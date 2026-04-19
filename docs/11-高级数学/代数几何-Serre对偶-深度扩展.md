@@ -1,14 +1,14 @@
 ---
 title: 代数几何：Serre 对偶 - 深度扩展
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 20A99
-- 22E47
+msc_primary: 00
+
+  - 00A99
+  - 20A99
+  - 22E47
 processed_at: '2026-04-05'
 ---
-msc_primary: "20Cxx"
-msc_secondary: ['13Dxx', '20-XX', '22E47']
+msc_primary: "@"
+msc_secondary: ['20-00', '22E47']
 ---
 
 # 代数几何：Serre 对偶 - 深度扩展

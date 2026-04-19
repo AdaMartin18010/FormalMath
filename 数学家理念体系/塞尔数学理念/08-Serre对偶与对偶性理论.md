@@ -2,7 +2,9 @@
 title: "Serre对偶与对偶性理论：从复几何到代数几何的统一"
 level: gold
 course: Serre数学理念
-msc_primary: "14F17"
+msc_primary: 14
+msc_secondary:
+  - 14F17
 references:
   textbooks:
     - title: "Algebraic Geometry"

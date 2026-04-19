@@ -1,7 +1,8 @@
 ---
-msc_primary: 20D20
-msc_secondary:
-- 20A05
+msc_primary: 20
+
+  - 20D20
+  - 20A05
 title: Sylow定理 - 五种表征
 processed_at: '2026-04-05'
 ---

@@ -1,3 +1,8 @@
+---
+title: "Lean4证明策略实战"
+msc_primary: "03"
+---
+
 # Lean4 证明策略实战
 
 ## 目录

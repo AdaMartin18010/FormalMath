@@ -1,6 +1,8 @@
 ---
 title: "拟阵理论 (Matroid Theory)"
-msc_primary: "05B35"
+msc_primary: 05
+
+  - 05B35
 msc_secondary: ['05C50', '52B40', '52C35', '14T90']
 processed_at: '2026-04-05'
 ---

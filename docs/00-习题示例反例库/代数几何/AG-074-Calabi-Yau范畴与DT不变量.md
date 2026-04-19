@@ -1,5 +1,7 @@
 ---
-msc_primary: 14N35
+msc_primary: 14
+
+  - 14N35
 exercise_id: AG-074
 title: Calabi-Yau范畴与DT不变量
 difficulty: 5

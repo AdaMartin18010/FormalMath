@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A15
+msc_primary: 00
 msc_secondary:
-- 01A99
+  - 00A15
+  - 01A99
 title: 希尔伯特的形式主义：纯粹形式系统的逻辑建构
 processed_at: '2026-04-05'
 ---

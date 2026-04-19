@@ -1,5 +1,7 @@
 ---
-msc_primary: 13F60
+msc_primary: 13
+
+  - 13F60
 exercise_id: ALG-266
 title: cluster代数与突变
 difficulty: 4

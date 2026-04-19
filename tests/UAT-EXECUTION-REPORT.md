@@ -1,5 +1,7 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 version: '1.0'
 date: '2026-04-04'
 status: COMPLETED

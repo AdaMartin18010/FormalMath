@@ -1,6 +1,8 @@
 ---
-msc_primary: 00A99
-msc_secondary: ['97-XX']
+msc_primary: 00
+
+  - 00A99
+msc_secondary: ['97-00']
 category: 内容合并
 title: 'FormalMath项目碎片化内容合并索引'
 processed_at: '2026-04-05'

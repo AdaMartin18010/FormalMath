@@ -1,6 +1,6 @@
 ---
 msc_primary: 00A05
-msc_secondary:
+
 - 01A99
 title: FormalMath项目推进总结报告 - 2025年1月（第五期）
 processed_at: '2026-04-05'

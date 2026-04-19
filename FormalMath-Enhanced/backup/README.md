@@ -1,6 +1,8 @@
 ---
 title: FormalMath 数据备份与恢复系统
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # FormalMath 数据备份与恢复系统

@@ -1,6 +1,6 @@
 ---
 msc_primary: 00A05
-msc_secondary:
+
 - 01A99
 title: FormalMath项目持续改进计划 - 2025年1月
 processed_at: '2026-04-05'

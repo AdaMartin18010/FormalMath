@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B20
+msc_primary: 42
+
+  - 42B20
 exercise_id: ANA-222
 title: 多线性Calderon-Zygmund理论
 difficulty: 4

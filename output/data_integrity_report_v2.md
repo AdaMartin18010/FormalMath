@@ -1,6 +1,8 @@
 ---
 title: FormalMath 数据完整性检查报告
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # FormalMath 数据完整性检查报告

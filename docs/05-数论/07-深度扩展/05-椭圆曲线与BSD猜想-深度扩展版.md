@@ -1,9 +1,10 @@
 ---
-msc_primary: 11G05
-msc_secondary:
-- 11G40
-- 11G07
-- 14H52
+msc_primary: 11
+
+  - 11G05
+  - 11G40
+  - 11G07
+  - 14H52
 title: 椭圆曲线与BSD猜想 - 深度扩展版 / Elliptic Curves and BSD Conjecture - Deep Extension
 processed_at: '2026-04-05'
 ---

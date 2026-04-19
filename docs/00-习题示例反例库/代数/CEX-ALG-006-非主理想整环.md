@@ -1,5 +1,7 @@
 ---
-msc_primary: 13F15
+msc_primary: 13
+
+  - 13F15
 exercise_id: CEX-ALG-006
 title: 非主理想整环的例子
 difficulty: 3

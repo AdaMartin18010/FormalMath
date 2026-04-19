@@ -1,7 +1,8 @@
 ---
-msc_primary: 55M20
-msc_secondary:
-- 54H25
+msc_primary: 55
+
+  - 55M20
+  - 54H25
 title: Brouwer不动点定理 - 五种表征
 processed_at: '2026-04-05'
 ---

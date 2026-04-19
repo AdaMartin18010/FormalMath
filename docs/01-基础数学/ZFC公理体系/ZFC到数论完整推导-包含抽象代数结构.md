@@ -1,6 +1,8 @@
 ---
 title: "ZFC到数论完整推导 - 包含抽象代数结构"
-msc_primary: "03E99"
+msc_primary: 03
+
+  - 03E99
 msc_secondary: ['03E30', '03B30']
 processed_at: '2026-04-05'
 ---

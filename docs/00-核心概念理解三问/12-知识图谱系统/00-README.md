@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A05
-msc_secondary:
-- 01A99
+msc_primary: 00
+
+  - 00A05
+  - 01A99
 title: FormalMath数学知识图谱系统
 processed_at: '2026-04-05'
 ---
@@ -307,7 +308,7 @@ concept:
   name:
     zh: "群"
     en: "Group"
-  msc_codes: ["20-XX"]
+  msc_codes: ["20-00"]
 
   definition:
     formal: |

@@ -1,8 +1,9 @@
 ---
-msc_primary: 14-01
+msc_primary: 14
 msc_secondary:
-- 97A99
-- 14Fxx
+  - 14-01
+  - 97A99
+  - 14Fxx
 title: Harvard Math 232br Algebraic Geometry L6思想方法级对齐
 course_code: Harvard 232br
 course_name: Algebraic Geometry (Coherent Sheaves, Cohomology, Curves and Surfaces)

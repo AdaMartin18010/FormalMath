@@ -1,14 +1,15 @@
 ---
 title: 33-数理逻辑 (Mathematical Logic)
-msc_primary: 03E99
-msc_secondary:
-- 00A99
-- 00A99
-- 00A99
-- 00A99
-- 00A99
-- 00A99
-- 00A99
+msc_primary: 03
+
+  - 03E99
+  - 00A99
+  - 00A99
+  - 00A99
+  - 00A99
+  - 00A99
+  - 00A99
+  - 00A99
 processed_at: '2026-04-05'
 references:
   textbooks:
@@ -22,7 +23,7 @@ references:
       year: 2001
       isbn: 978-0122384523
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
     - id: mendelson_logic
       type: textbook
@@ -34,7 +35,7 @@ references:
       year: 2015
       isbn: 978-1482237725
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

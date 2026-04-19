@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 00A99
-- 97A99
+msc_primary: 00
+
+  - 00A99
+  - 00A99
+  - 97A99
 title: FormalMath交互式学习内容推进报告 - 2025年1月
 processed_at: '2026-04-05'
 ---

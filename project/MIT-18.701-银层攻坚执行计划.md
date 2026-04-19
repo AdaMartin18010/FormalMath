@@ -1,5 +1,6 @@
 ---
 title: "MIT 18.701 银层攻坚执行计划"
+msc_primary: 00A99
 date: "2026-04-17"
 level: "silver"
 target_courses: ["MIT 18.701"]

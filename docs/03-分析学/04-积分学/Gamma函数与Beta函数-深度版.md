@@ -1,6 +1,8 @@
 ---
 title: "Gamma函数与Beta函数 - 深度版"
-msc_primary: "33B15"
+msc_primary: 33
+
+  - 33B15
 msc_secondary: ['33B20', '26A33', '30B10', '11M06']
 processed_at: '2026-04-05'
 ---

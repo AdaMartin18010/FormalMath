@@ -1,10 +1,11 @@
 ---
 title: 自守形式深度版 / Automorphic Forms (Advanced)
-msc_primary: 00A99
-msc_secondary:
-- 22E50
-- 11R39
-- 14D24
+msc_primary: 00
+
+  - 00A99
+  - 22E50
+  - 11R39
+  - 14D24
 processed_at: '2026-04-05'
 ---
 # 自守形式深度版 / Automorphic Forms (Advanced)

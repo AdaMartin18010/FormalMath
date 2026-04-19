@@ -1,10 +1,11 @@
 ---
-msc_primary: 18A05
-msc_secondary:
-- 18A22
-- 18A23
-- 18A30
-- 18F20
+msc_primary: 18
+
+  - 18A05
+  - 18A22
+  - 18A23
+  - 18A30
+  - 18F20
 title: nLab范畴论精粹
 source: nLab (https://ncatlab.org)
 processed_at: '2026-04-09'

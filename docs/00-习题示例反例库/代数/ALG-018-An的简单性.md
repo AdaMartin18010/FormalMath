@@ -1,5 +1,7 @@
 ---
-msc_primary: 20D05
+msc_primary: 20
+
+  - 20D05
 exercise_id: ALG-018
 title: $A_n$ 的简单性
 difficulty: 4

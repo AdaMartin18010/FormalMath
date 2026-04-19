@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 16A99
-- 03B40
+msc_primary: 00
+
+  - 00A99
+  - 16A99
+  - 03B40
 title: 特征多项式与 Cayley–Hamilton - 工作示例
 processed_at: '2026-04-05'
 ---

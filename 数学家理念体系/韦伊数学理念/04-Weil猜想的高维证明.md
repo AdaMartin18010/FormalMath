@@ -2,7 +2,9 @@
 title: "Weil猜想的高维证明：从Grothendieck到Deligne"
 level: gold
 course: Weil数学理念
-msc_primary: "14F20"
+msc_primary: 14
+msc_secondary:
+  - 14F20
 references:
   textbooks:
     - title: "Cohomologie étale"

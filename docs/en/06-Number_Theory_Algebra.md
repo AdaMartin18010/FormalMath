@@ -1,6 +1,8 @@
 ---
 title: Number Theory and Advanced Algebra (数论与高等代数)
-msc_primary: 00A99
+msc_primary: 00
+
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # Number Theory and Advanced Algebra (数论与高等代数)
@@ -11,7 +13,7 @@ This document provides bilingual (English-Chinese) definitions, notations, and e
 
 ## 1. Algebraic Number (代数数)
 
-**MSC Code:** 11Rxx, 11R04
+**MSC Code:** @, 11R04
 
 ### English Definition
 An algebraic number is a complex number $\alpha$ that is a root of a non-zero polynomial with rational coefficients. Equivalently, $\alpha$ is algebraic if $[\mathbb{Q}(\alpha):\mathbb{Q}] < \infty$.
@@ -55,7 +57,7 @@ An algebraic integer is a complex number that is a root of a monic polynomial wi
 
 ## 3. Number Field (数域)
 
-**MSC Code:** 11Rxx
+**MSC Code:** @
 
 ### English Definition
 A number field is a finite field extension $K/\mathbb{Q}$. It has the form $K = \mathbb{Q}(\alpha_1, \ldots, \alpha_n)$ for algebraic numbers $\alpha_i$. The degree $[K:\mathbb{Q}]$ is finite.
@@ -187,7 +189,7 @@ The Dedekind zeta function $\zeta_K(s)$ of a number field $K$ is $\zeta_K(s) = \
 
 ## 9. Local Field (局部域)
 
-**MSC Code:** 11Sxx
+**MSC Code:** @
 
 ### English Definition
 A local field is a locally compact topological field with respect to a non-discrete topology. Examples include $\mathbb{R}$, $\mathbb{C}$ (archimedean) and finite extensions of $\mathbb{Q}_p$ or $\mathbb{F}_q((t))$ (non-archimedean).
@@ -210,7 +212,7 @@ A local field is a locally compact topological field with respect to a non-discr
 
 ## 10. p-adic Number (p进数)
 
-**MSC Code:** 11Sxx
+**MSC Code:** @
 
 ### English Definition
 The field of $p$-adic numbers $\mathbb{Q}_p$ is the completion of $\mathbb{Q}$ with respect to the $p$-adic absolute value $|x|_p = p^{-v_p(x)}$. Elements have expansions $x = \sum_{n \geq N} a_n p^n$ with $a_n \in \{0, \ldots, p-1\}$.
@@ -342,7 +344,7 @@ For an elliptic curve $E$ over a number field $K$, the group $E(K)$ of rational 
 
 ## 16. L-function (L函数)
 
-**MSC Code:** 11Mxx, 11Fxx
+**MSC Code:** @, @
 
 ### English Definition
 An L-function is a Dirichlet series $L(s) = \sum_{n=1}^\infty a_n n^{-s}$ with Euler product, analytic continuation, and functional equation. Examples include Riemann zeta, Dirichlet L-functions, and Hasse-Weil L-functions of varieties.
@@ -364,7 +366,7 @@ L函数是狄利克雷级数$L(s) = \sum_{n=1}^\infty a_n n^{-s}$，具有欧拉
 
 ## 17. Modular Form (模形式)
 
-**MSC Code:** 11F11, 11Fxx
+**MSC Code:** 11F11, @
 
 ### English Definition
 A modular form of weight $k$ for $SL(2, \mathbb{Z})$ is a holomorphic function $f: \mathbb{H} \to \mathbb{C}$ satisfying $f\left(\frac{az+b}{cz+d}\right) = (cz+d)^k f(z)$ for $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in SL(2, \mathbb{Z})$, holomorphic at $\infty$.
@@ -452,7 +454,7 @@ The modularity theorem (Wiles-Taylor et al.) states that every elliptic curve ov
 
 ## 21. Arithmetic Geometry (算术几何)
 
-**MSC Code:** 11Gxx, 14Gxx
+**MSC Code:** @, @
 
 ### English Definition
 Arithmetic geometry studies solutions of polynomial equations over arithmetic fields (number fields, finite fields, $p$-adic fields). It combines algebraic geometry with number theory, using schemes and cohomology.
@@ -474,7 +476,7 @@ Arithmetic geometry studies solutions of polynomial equations over arithmetic fi
 
 ## 22. Diophantine Equation (丢番图方程)
 
-**MSC Code:** 11Dxx
+**MSC Code:** @
 
 ### English Definition
 A Diophantine equation is a polynomial equation $f(x_1, \ldots, x_n) = 0$ where integer or rational solutions are sought. The study includes local-global principles, bounds on solutions, and decidability questions.
@@ -496,7 +498,7 @@ A Diophantine equation is a polynomial equation $f(x_1, \ldots, x_n) = 0$ where 
 
 ## 23. Group Representation (群表示)
 
-**MSC Code:** 20Cxx, 22Exx
+**MSC Code:** @, @
 
 ### English Definition
 A representation of group $G$ is a homomorphism $\rho: G \to GL(V)$ for vector space $V$. It encodes group structure as linear transformations, enabling character theory and harmonic analysis on groups.
@@ -562,7 +564,7 @@ A representation $V$ is irreducible if it has no proper non-zero invariant subsp
 
 ## 26. Lie Group (李群)
 
-**MSC Code:** 22E15, 22Exx
+**MSC Code:** 22E15, @
 
 ### English Definition
 A Lie group is a group that is also a smooth manifold, with group operations (multiplication and inversion) being smooth maps. They are the continuous symmetry groups of geometry and physics.
@@ -585,7 +587,7 @@ A Lie group is a group that is also a smooth manifold, with group operations (mu
 
 ## 27. Lie Algebra (李代数)
 
-**MSC Code:** 17Bxx
+**MSC Code:** @
 
 ### English Definition
 A Lie algebra is a vector space $\mathfrak{g}$ with bilinear bracket $[,]: \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$ satisfying antisymmetry $[X,Y] = -[Y,X]$ and Jacobi identity $[X,[Y,Z]] + [Y,[Z,X]] + [Z,[X,Y]] = 0$.
@@ -696,7 +698,7 @@ For semisimple $\mathfrak{g}$, finite-dimensional irreducible representations ar
 
 ## 32. Category O (O范畴)
 
-**MSC Code:** 17B10, 16Gxx
+**MSC Code:** 17B10, @
 
 ### English Definition
 Category $\mathcal{O}$ is the category of finitely-generated $U(\mathfrak{g})$-modules that are semisimple under $\mathfrak{h}$-action with locally nilpotent $\mathfrak{n}^+$-action and finite-dimensional weight spaces. It contains Verma modules and their quotients.
@@ -718,7 +720,7 @@ Category $\mathcal{O}$ is the category of finitely-generated $U(\mathfrak{g})$-m
 
 ## 33. Homological Algebra (同调代数)
 
-**MSC Code:** 18Gxx
+**MSC Code:** @
 
 ### English Definition
 Homological algebra studies chain complexes, homology, and derived functors in abelian categories. It provides tools like Ext and Tor to measure module extensions and torsion.
@@ -762,7 +764,7 @@ The derived category $D(\mathcal{A})$ of an abelian category $\mathcal{A}$ is ob
 
 ## 35. Spectral Sequence (谱序列)
 
-**MSC Code:** 18G40, 55Txx
+**MSC Code:** 18G40, @
 
 ### English Definition
 A spectral sequence is a sequence of bigraded complexes $(E_r, d_r)$ with $d_r^2 = 0$ and $E_{r+1} = H(E_r, d_r)$. It converges to a graded object associated to a filtration.
@@ -806,7 +808,7 @@ Group cohomology $H^n(G, M)$ for $G$-module $M$ is the right derived functor of 
 
 ## 37. Galois Cohomology (伽罗瓦上同调)
 
-**MSC Code:** 11S25, 12Gxx
+**MSC Code:** 11S25, @
 
 ### English Definition
 Galois cohomology $H^n(G_K, M)$ for Galois group $G_K = \text{Gal}(\overline{K}/K)$ and discrete $G_K$-module $M$ generalizes classical constructions like Hilbert's Theorem 90 and class field theory.
@@ -894,7 +896,7 @@ The quaternion algebra $\left(\frac{a,b}{K}\right)$ over field $K$ is the 4-dime
 
 ## 41. Algebraic K-Theory (代数K理论)
 
-**MSC Code:** 19Dxx, 19Exx
+**MSC Code:** @, @
 
 ### English Definition
 Algebraic K-theory assigns to a ring $R$ groups $K_n(R)$ generalizing linear algebra constructions. $K_0$ classifies projective modules, $K_1$ involves invertible matrices, and higher $K$-groups are defined via Quillen's plus construction or Waldhausen's S-construction.
@@ -940,7 +942,7 @@ Grothendieck's theory of motives aims to unify cohomology theories for algebraic
 
 ## 43. Étale Cohomology (平展上同调)
 
-**MSC Code:** 14F20, 14Fxx
+**MSC Code:** 14F20, @
 
 ### English Definition
 Étale cohomology $H^n_{\acute{e}t}(X, \mathcal{F})$ is a Weil cohomology theory for algebraic varieties in any characteristic, defined using étale topology. It was key to proving the Weil conjectures.
@@ -984,7 +986,7 @@ The Weil conjectures (proved by Deligne) concern the zeta function $Z(X, t)$ of 
 
 ## 45. Perfectoid Space (完美胚空间)
 
-**MSC Code:** 14G22, 11Sxx
+**MSC Code:** 14G22, @
 
 ### English Definition
 Perfectoid spaces, introduced by Scholze, are a class of non-archimedean analytic spaces that tilt to characteristic $p$. They have revolutionized $p$-adic Hodge theory and the Langlands program.
@@ -1006,7 +1008,7 @@ Perfectoid spaces, introduced by Scholze, are a class of non-archimedean analyti
 
 ## 46. Langlands Program (朗兰兹纲领)
 
-**MSC Code:** 11Fxx, 22Exx
+**MSC Code:** @, @
 
 ### English Definition
 The Langlands program is a vast web of conjectures relating number theory, representation theory, and algebraic geometry. It predicts deep correspondences between automorphic representations and Galois representations.
@@ -1028,7 +1030,7 @@ The Langlands program is a vast web of conjectures relating number theory, repre
 
 ## 47. Automorphic Form (自守形式)
 
-**MSC Code:** 11Fxx, 22E50
+**MSC Code:** @, 22E50
 
 ### English Definition
 An automorphic form on reductive group $G$ over number field $F$ is a function on $G(\mathbb{A}_F)$ satisfying transformation properties under $G(F)$, growth conditions, and differential equations (eigenfunction of Casimir).

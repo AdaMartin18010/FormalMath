@@ -233,6 +233,22 @@ axiom poincare_conjecture_all_dimensions (n : ℕ) : PoincareConjecture n
 4. Morgan, J. & Tian, G. *Ricci Flow and the Poincaré Conjecture*
 5. 维基百科：Poincaré Conjecture
 
--/ 
+
+## Mathlib4 形式化路线图
+
+| 依赖理论 | Mathlib4 状态 | 备注 |
+|---------|--------------|------|
+| n维流形 | 🔄 基础 (SmoothManifoldWithCorners) | 一般维数可用 |
+| 同伦群 | 🔄 发展中 | $\pi_1$ 定义存在 |
+| 同调论 | 🔄 发展中 | 奇异同调 |
+| Poincaré对偶 | ❌ 未开始 | 需要同调论 |
+| h-配边定理 | ❌ 未开始 | Smale证明高维情形 |
+
+**高维情形 (n≥5)**: Smale 1961年证明，相对更易形式化（P3级别）。
+**4维情形**: Freedman 1982年证明，涉及拓扑流形的手术理论。
+**当前策略**: 本文件聚焦高维Poincaré猜想的概念框架。
+
+-/
+ 
 
 print "Poincaré Conjecture formalization framework complete"

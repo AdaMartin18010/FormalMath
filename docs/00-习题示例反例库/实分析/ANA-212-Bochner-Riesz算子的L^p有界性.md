@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B15
+msc_primary: 42
+
+  - 42B15
 exercise_id: ANA-212
 title: Bochner-Riesz算子的L^p有界性
 difficulty: 5

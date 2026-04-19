@@ -18,7 +18,8 @@ processed_at: '2026-04-18'
 level: "silver"
 target_courses:
   - "Harvard 232br"
-msc_primary: "14Jxx"
+msc_primary: 14
+
 references:
   textbooks:
     - id: hartshorne_ag
@@ -42,7 +43,7 @@ references:
       edition: 2nd
       year: 1996
       isbn: 978-0521498425
-      msc: 14Jxx
+      msc: @
       chapters: ["II", "III"]
       url: ~
   databases:

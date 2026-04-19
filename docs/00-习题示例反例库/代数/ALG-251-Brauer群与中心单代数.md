@@ -1,5 +1,7 @@
 ---
-msc_primary: 16K20
+msc_primary: 16
+
+  - 16K20
 exercise_id: ALG-251
 title: Brauer群与中心单代数
 difficulty: 3

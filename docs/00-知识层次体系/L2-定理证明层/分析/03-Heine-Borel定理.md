@@ -1,8 +1,9 @@
 ---
-msc_primary: 26B05
-msc_secondary:
-- 54E45
-- 97I40
+msc_primary: 26
+
+  - 26B05
+  - 54E45
+  - 97I40
 title: Heine-Borel 定理
 processed_at: '2026-04-05'
 ---

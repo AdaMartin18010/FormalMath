@@ -1,5 +1,7 @@
 ---
-msc_primary: 18M60
+msc_primary: 18
+
+  - 18M60
 exercise_id: ALG-254
 title: operad与代数结构
 difficulty: 4

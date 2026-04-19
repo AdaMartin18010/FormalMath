@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 49A99
-- 00A99
-- 68V20
+msc_primary: 00
+
+  - 49A99
+  - 00A99
+  - 68V20
 title: Noether定理 - 五种表征
 processed_at: '2026-04-05'
 ---

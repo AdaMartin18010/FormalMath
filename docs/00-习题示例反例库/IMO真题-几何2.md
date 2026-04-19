@@ -1,5 +1,6 @@
 ---
 title: "IMO真题-几何：圆与相似"
+msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L3

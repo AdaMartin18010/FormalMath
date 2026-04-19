@@ -1,7 +1,8 @@
 ---
-msc_primary: 97A99
+msc_primary: 97
 msc_secondary:
-- 00A35
+  - 97A99
+  - 00A35
 title: 古代数学家
 processed_at: '2026-04-05'
 ---

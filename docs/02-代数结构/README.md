@@ -1,6 +1,8 @@
 ---
 title: "代数结构知识梳理与全面分析项目"
-msc_primary: "00A99"
+msc_primary: 00
+
+  - 00A99
 msc_secondary: ["12E99", "22E47", "13C99"]
 processed_at: '2026-04-05'
 references:
@@ -15,7 +17,7 @@ references:
       year: 2011
       isbn: 978-0132413770
       msc: 16-01
-      chapters: []
+      chapters: 
       url: ~
     - id: strang_la
       type: textbook
@@ -27,7 +29,7 @@ references:
       year: 2016
       isbn: 978-0980232776
       msc: 15-01
-      chapters: []
+      chapters: 
       url: ~
     - id: dummit_foote_aa
       type: textbook
@@ -40,7 +42,7 @@ references:
       year: 2003
       isbn: 978-0471433347
       msc: 13-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -60,7 +62,7 @@ references:
       consulted_at: 2026-04-17
 ---
 msc_primary: "00A99"
-msc_secondary: ['12Exx', '22E47', '13Cxx']
+msc_secondary: ['22E47']
 ---
 
 # 代数结构知识梳理与全面分析项目

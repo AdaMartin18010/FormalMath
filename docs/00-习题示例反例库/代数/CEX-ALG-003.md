@@ -4,6 +4,7 @@ category: 代数
 topic: 环论
 concept: 唯一分解整环
 title: 非唯一分解整环（经典例子）
+msc_primary: 00A99
 difficulty: 较难
 keywords: [唯一分解整环, UFD, 不可约元, 素元, 因式分解, 类数]
 related: [CEX-ALG-002]

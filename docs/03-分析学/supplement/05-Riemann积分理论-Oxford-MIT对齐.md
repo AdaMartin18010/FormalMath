@@ -1,3 +1,8 @@
+---
+title: "Riemann积分理论 Oxford MIT对齐"
+msc_primary: "26"
+---
+
 # Riemann积分理论 - Oxford Analysis III / MIT 18.100A 深度对齐
 
 ---

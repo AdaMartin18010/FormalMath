@@ -1,7 +1,8 @@
 ---
-msc_primary: 54D30
-msc_secondary:
-- 54A05
+msc_primary: 54
+
+  - 54D30
+  - 54A05
 title: Tychonoff定理 - 五种表征
 processed_at: '2026-04-05'
 ---

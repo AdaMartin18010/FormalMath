@@ -1,5 +1,7 @@
 ---
-msc_primary: 20-01
+msc_primary: 20
+msc_secondary:
+  - 20-01
 title: MIT 18.701 Algebra I L4定理级对齐表
 processed_at: '2026-04-10'
 course_code: MIT 18.701

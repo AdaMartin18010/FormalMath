@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: Navier-Stokes方程存在性与光滑性 - 思维导图
 processed_at: '2026-04-05'
 ---
@@ -281,10 +281,10 @@ mindmap
         BMO⁻¹
     超临界 vs 次临界
       超临界
-        尺度"大于"NS
+        尺度"大于"NS"
         技术困难
       次临界
-        尺度"小于"NS
+        尺度"小于"NS"
         相对容易处理
       临界
         刚好平衡

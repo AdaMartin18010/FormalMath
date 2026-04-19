@@ -4,6 +4,7 @@ category: 实分析
 topic: 一致收敛应用
 difficulty: ⭐⭐⭐
 title: Stone-Weierstrass逼近定理
+msc_primary: 00A99
 keywords: [Stone-Weierstrass, 多项式逼近, 代数, 分离点, 一致稠密]
 prerequisites: [ANA-058, ANA-034]
 source: 经典分析习题

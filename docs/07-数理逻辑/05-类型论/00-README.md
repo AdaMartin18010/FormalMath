@@ -1,6 +1,8 @@
 ---
 title: "类型论 (Type Theory)"
-msc_primary: "03B15"
+msc_primary: 03
+
+  - 03B15
 msc_secondary: ['03B30', '03B40', '03B70', '68N18']
 processed_at: '2026-04-05'
 references:
@@ -15,7 +17,7 @@ references:
       year: 2001
       isbn: 978-0122384523
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
     - id: mendelson_logic
       type: textbook
@@ -27,7 +29,7 @@ references:
       year: 2015
       isbn: 978-1482237725
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

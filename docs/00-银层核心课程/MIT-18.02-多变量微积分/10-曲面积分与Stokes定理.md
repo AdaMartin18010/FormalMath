@@ -1,5 +1,6 @@
 ---
 title: "曲面积分与Stokes定理：高维推广的巅峰"
+msc_primary: 00A99
 level: silver
 course: MIT 18.02
 target_courses:

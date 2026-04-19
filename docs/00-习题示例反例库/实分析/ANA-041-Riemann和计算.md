@@ -1,5 +1,7 @@
 ---
-msc_primary: 26A42
+msc_primary: 26
+
+  - 26A42
 exercise_id: ANA-041
 title: Riemann和计算
 difficulty: 3

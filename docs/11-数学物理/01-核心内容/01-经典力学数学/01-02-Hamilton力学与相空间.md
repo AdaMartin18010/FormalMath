@@ -1,9 +1,10 @@
 ---
-msc_primary: 70H05
-msc_secondary:
-- 70H15
-- 37J05
-- 53D05
+msc_primary: 70
+
+  - 70H05
+  - 70H15
+  - 37J05
+  - 53D05
 title: Hamilton力学与相空间
 processed_at: '2026-04-05'
 ---

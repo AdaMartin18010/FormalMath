@@ -1,8 +1,9 @@
 ---
-msc_primary: 40A05
-msc_secondary:
-- 54E45
-- 97I30
+msc_primary: 40
+
+  - 40A05
+  - 54E45
+  - 97I30
 title: Bolzano-Weierstrass 定理
 processed_at: '2026-04-05'
 ---

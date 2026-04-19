@@ -1,5 +1,7 @@
 ---
-msc_primary: 14G22
+msc_primary: 14
+
+  - 14G22
 exercise_id: AG-078
 title: p进Hodge理论与perfectoid空间
 difficulty: 5

@@ -1,5 +1,7 @@
 ---
-msc_primary: 14E30
+msc_primary: 14
+
+  - 14E30
 exercise_id: AG-071
 title: abundance猜想与Iitaka纤维化
 difficulty: 5

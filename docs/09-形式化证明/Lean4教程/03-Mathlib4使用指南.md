@@ -1,3 +1,8 @@
+---
+title: "Mathlib4使用指南"
+msc_primary: "03"
+---
+
 # Mathlib4使用指南
 
 ## 导入模块

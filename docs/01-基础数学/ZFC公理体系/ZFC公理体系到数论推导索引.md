@@ -1,6 +1,8 @@
 ---
 title: "ZFC公理体系到数论推导索引"
-msc_primary: "00A15"
+msc_primary: 00
+
+  - 00A15
 msc_secondary: ['00A99', '97A99']
 processed_at: '2026-04-05'
 ---

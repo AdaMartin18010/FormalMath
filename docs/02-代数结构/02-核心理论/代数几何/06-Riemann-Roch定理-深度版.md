@@ -1,11 +1,12 @@
 ---
 title: 13.6 Riemann-Roch定理 - 深度版 / Riemann-Roch Theorem - Deep Version
-msc_primary: 00A99
-msc_secondary:
-- 14C40
-- 14F05
-- 14C17
-- 19E20
+msc_primary: 00
+
+  - 00A99
+  - 14C40
+  - 14F05
+  - 14C17
+  - 19E20
 processed_at: '2026-04-05'
 references:
   textbooks:
@@ -19,7 +20,7 @@ references:
       year: 2011
       isbn: 978-0132413770
       msc: 16-01
-      chapters: []
+      chapters: 
       url: ~
     - id: strang_la
       type: textbook
@@ -31,7 +32,7 @@ references:
       year: 2016
       isbn: 978-0980232776
       msc: 15-01
-      chapters: []
+      chapters: 
       url: ~
     - id: dummit_foote_aa
       type: textbook
@@ -44,7 +45,7 @@ references:
       year: 2003
       isbn: 978-0471433347
       msc: 13-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

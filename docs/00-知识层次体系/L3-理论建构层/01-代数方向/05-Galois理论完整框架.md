@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: Galois理论完整框架
 processed_at: '2026-04-05'
 ---
@@ -11,7 +11,7 @@ processed_at: '2026-04-05'
 
 **文档编号**: FM.L3.ALG.05  
 **理论名称**: Galois理论完整框架  
-**MSC分类**: 12Fxx (域扩张)  
+**MSC分类**: @ (域扩张)  
 **创建日期**: 2026年4月3日  
 **版本**: 1.0
 

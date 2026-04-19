@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Homotopy Equivalence, 同伦型, 形变收缩]
 type: 定义
@@ -6,7 +7,7 @@ level: L3-理论建构层
 difficulty: ⭐⭐
 concept_dependency: [拓扑空间, 连续映射, 同伦]
 prerequisite_concepts: [拓扑空间, 连续映射]
-prerequisite_theorems: []
+prerequisite_theorems: 
 course_context: MAT 365 Topology
 msc2010: [55P10, 55P05]
 related_concepts: [形变收缩, 同伦型, 可缩空间]

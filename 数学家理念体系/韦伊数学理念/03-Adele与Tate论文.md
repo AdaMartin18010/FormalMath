@@ -2,7 +2,9 @@
 title: "Adele与Tate论文：Weil的调和分析革命"
 level: gold
 course: Weil数学理念
-msc_primary: "11R56"
+msc_primary: 11
+msc_secondary:
+  - 11R56
 references:
   textbooks:
     - title: "Basic Number Theory"

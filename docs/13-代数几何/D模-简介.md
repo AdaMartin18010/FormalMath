@@ -1,10 +1,11 @@
 ---
 title: D模简介
 description: 系统介绍微分算子层、D模的定义、导出范畴中的D模、Riemann-Hilbert对应及其在代数几何与表示论中的应用。
-msc_primary: 14F10
-msc_secondary:
-- 32C38
-- 35A27
+msc_primary: 14
+
+  - 14F10
+  - 32C38
+  - 35A27
 processed_at: '2026-04-16'
 references:
   textbooks:
@@ -18,7 +19,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -30,7 +31,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

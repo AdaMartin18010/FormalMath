@@ -1,5 +1,7 @@
 ---
-msc_primary: 14N35
+msc_primary: 14
+
+  - 14N35
 exercise_id: GEO-092
 title: 极化流形的Gromov-Witten不变量
 difficulty: 4

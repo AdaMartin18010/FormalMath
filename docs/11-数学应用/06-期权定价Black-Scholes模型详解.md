@@ -1,3 +1,8 @@
+---
+title: "期权定价Black Scholes模型详解"
+msc_primary: "00"
+---
+
 # 期权定价Black-Scholes模型详解
 
 > Black-Scholes模型是现代金融工程的基石，通过随机微分方程和偏微分方程为欧式期权提供了闭式定价公式，彻底改变了衍生品定价和风险管理的方式。

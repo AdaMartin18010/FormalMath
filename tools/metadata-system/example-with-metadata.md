@@ -2,10 +2,11 @@
 title: 群论基础概念
 created_date: 2025-01-15
 version: 1.2.0
-msc_primary: 00A99
+msc_primary: 00
 msc_secondary:
-- 20A05
-- 20B30
+  - 00A99
+  - 20A05
+  - 20B30
 category: 代数结构
 difficulty: L2
 depth_level: 深度扩展版

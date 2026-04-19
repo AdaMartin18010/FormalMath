@@ -1,5 +1,7 @@
 ---
-msc_primary: 35J50
+msc_primary: 35
+
+  - 35J50
 exercise_id: ANA-227
 title: 变分法中的Euler-Lagrange方程正则性
 difficulty: 4

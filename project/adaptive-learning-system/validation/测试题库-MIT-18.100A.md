@@ -1,5 +1,6 @@
 ---
 title: "MIT 18.100A 实分析课堂验证测试题库"
+msc_primary: 00A99
 date: "2026-04-18"
 version: "1.0"
 course: "MIT 18.100A Real Analysis"

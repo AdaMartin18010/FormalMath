@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A30
-msc_secondary:
-- 01A67
+msc_primary: 00
+
+  - 00A30
+  - 01A67
 title: arXiv各分支最新进展摘要
 processed_at: '2026-04-05'
 ---

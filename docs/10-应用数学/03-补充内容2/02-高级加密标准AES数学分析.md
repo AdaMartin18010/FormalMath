@@ -1,9 +1,10 @@
 ---
-msc_primary: 94A60
-msc_secondary:
-- 12E20
-- 11T71
-- 14G50
+msc_primary: 94
+
+  - 94A60
+  - 12E20
+  - 11T71
+  - 14G50
 title: 高级加密标准AES数学分析
 processed_at: '2026-04-05'
 ---

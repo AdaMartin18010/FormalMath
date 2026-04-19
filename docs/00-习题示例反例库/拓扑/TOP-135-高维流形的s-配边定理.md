@@ -1,5 +1,7 @@
 ---
-msc_primary: 57R80
+msc_primary: 57
+
+  - 57R80
 exercise_id: TOP-135
 title: 高维流形的s-配边定理
 difficulty: 4

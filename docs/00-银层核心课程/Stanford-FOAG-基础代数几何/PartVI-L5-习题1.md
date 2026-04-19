@@ -1,10 +1,9 @@
 ---
 title: "Part VI L5 核心习题（1–10）"
-msc_primary: "14-01"
-msc_secondary:
-  - "14B25"
-  - "14Fxx"
-  - "14C05"
+msc_primary: 14
+  - 14B25
+
+  - 14C05
 level: "silver"
 target_courses:
   - "Stanford FOAG Part VI"
@@ -299,7 +298,6 @@ $U_i = \{y : \varphi_i(y) = 0\} = Y \setminus S_1$。因 $S_1 = \{y : \varphi_i(
 **文档位置**: `docs/00-银层核心课程/Stanford-FOAG-基础代数几何/PartVI-L5-习题1.md`
 **创建日期**: 2026-04-18
 **最后更新**: 2026-04-18
-
 
 ## Lean4 形式化对照
 

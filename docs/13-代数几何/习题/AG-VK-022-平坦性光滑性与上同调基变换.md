@@ -1,9 +1,7 @@
 ---
 title: 平坦性、光滑性与上同调基变换
-msc_primary: 14-01
-msc_secondary:
-- 14Dxx
-- 14F17
+msc_primary: 14
+  - 14F17
 level: silver
 target_courses:
 - Stanford FOAG

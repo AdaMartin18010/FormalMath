@@ -156,7 +156,17 @@ theorem maximal_ideal_exists {R : Type u} [CommRing R] [Nontrivial R]
   
   -- 应用Zorn引理
   have h_max : ∃ (M : Ideal R), M ∈ P ∧ ∀ (J : Ideal R), M ≤ J → J ∈ P → J = M := by
-    /- 验证链条件 -/
+    /- 验证链条件：
+       设 C ⊆ P 是一条链（按包含关系全序的理想族）。
+       令 J* = ⋃ C（C中所有理想的并）。
+       1. J* 是理想：对任意 a, b ∈ J*，存在 I₁, I₂ ∈ C 使 a ∈ I₁, b ∈ I₂。
+          因C是全序，不妨设 I₁ ⊆ I₂，则 a, b ∈ I₂，故 a+b ∈ I₂ ⊆ J*。
+          类似可证对乘法封闭和吸收性。
+       2. J* ≠ ⊤：若 J* = ⊤，则 1 ∈ J*，故存在某个 I ∈ C 使 1 ∈ I，
+          从而 I = ⊤，与 I ∈ P（真理想）矛盾。
+       3. I ≤ J*：显然，因为 I ∈ C，故 I ⊆ ⋃ C = J*。
+       因此 J* ∈ P 是C的上界。链条件满足，可应用Zorn引理。 -/
+    /- 在Mathlib4中，此结论对应 Ideal.IsMaximal.exists_le_maximal -/
     sorry
   
   rcases h_max with ⟨M, hM_in_P, hM_max⟩
@@ -165,6 +175,11 @@ theorem maximal_ideal_exists {R : Type u} [CommRing R] [Nontrivial R]
   use M
   constructor
   · -- M是极大理想
+    /- 由 M ∈ P 知 M ≠ ⊤（真理想）。
+       由极大性：∀ J, M ≤ J → J ∈ P → J = M。
+       即：若 M ⊆ J 且 J ≠ ⊤，则 J = M。
+       这正是极大理想的定义：不存在严格包含M的真理想。
+       在Mathlib4中对应 Ideal.IsMaximal 的定义。 -/
     sorry
   · -- I ≤ M
     exact hM_in_P.2
@@ -174,11 +189,16 @@ theorem basis_exists {K : Type u} {V : Type v} [Field K] [AddCommGroup V]
     [Module K V] (S : Set V) (hS : LinearIndependent K (fun s : S => (s : V))) :
     ∃ (B : Set V), S ⊆ B ∧ IsBasis K B := by
   /- 证明思路:
-     1. 考虑所有包含S的线性无关集的集合P
-     2. P按包含关系偏序
-     3. P中的链的并仍是线性无关的
-     4. 由Zorn引理，P有极大元，即为基
-  -/
+     1. 考虑所有包含S的线性无关集的集合P = {T ⊇ S | T线性无关}。
+     2. P按包含关系偏序，非空（含S）。
+     3. 对P中任意链C，令 T* = ⋃ C。验证T*线性无关：
+        设有限个向量 v₁,...,vₙ ∈ T* 及标量 a₁,...,aₙ 使 Σ aᵢvᵢ = 0。
+        每个 vᵢ 属于某个 Tᵢ ∈ C。因C全序，存在最大的 Tₖ 包含所有 vᵢ。
+        由 Tₖ 线性无关，得所有 aᵢ = 0。
+     4. T* ∈ P 是C的上界。由Zorn引理，P有极大元B。
+     5. B线性无关且极大。若存在 v ∉ span(B)，则 B ∪ {v} 线性无关，
+        与B的极大性矛盾。故 span(B) = V，B是基。
+     在Mathlib4中对应 Basis.exists_basis 或相关存在性定理。 -/
   sorry
 
 /-
@@ -205,7 +225,16 @@ theorem choice_implies_zorn :
     (∀ (α : Type u) [PartialOrder α], Nonempty α → 
       (∀ (C : Set α), IsChain' C → C.Nonempty → (UpperBounds C).Nonempty) →
       ∃ m, IsMaximal m) := by
-  /- Mathlib4中的实现 -/
+  /- Mathlib4中的实现:
+     该等价性在 Mathlib.Order.Zorn 中已建立。
+     核心证明思路（Hartogs数方法）：
+     1. 假设偏序集P满足链条件但没有极大元。
+     2. 由选择公理，定义选择函数 f: P → P，使得 ∀a, a < f(a)。
+     3. 超限递归定义序列：a_0 ∈ P（任取），a_{α+1} = f(a_α)，
+        对极限序数 λ，a_λ = sup{a_β | β < λ}（由链条件保证存在）。
+     4. 该序列严格递增，其长度可超过任何基数（Hartogs数论证）。
+     5. 但P的幂集基数有限，无法容纳如此长的严格递增序列，矛盾。
+     在Mathlib4中可直接引用 zorn_lemma 的实现。 -/
   sorry
 
 -- Zorn引理 ⟹ 良序定理
@@ -214,12 +243,16 @@ theorem zorn_implies_well_ordering :
       (∀ (C : Set α), IsChain' C → C.Nonempty → (UpperBounds C).Nonempty) →
       ∃ m, IsMaximal m) →
     (∀ (α : Type u), WellOrderable α) := by
-  /- 证明思路:
-     1. 考虑α上所有良序的集合
-     2. 按延拓关系偏序
-     3. 应用Zorn引理得到极大良序
-     4. 证明这个良序是全序（覆盖整个α）
-  -/
+  /- 证明思路（Zermelo, 1904）：
+     1. 设 α 为任意集合。考虑所有 (W, ≤_W) 的集合P，其中 W ⊆ α 且 ≤_W 是W上的良序。
+     2. 在P上定义偏序：(W, ≤_W) ≤ (V, ≤_V) 当且仅当 W是V的初始段且≤_W = ≤_V|_W。
+     3. 验证链条件：对P中链C，令 W* = ⋃ C，定义 ≤_* 为各良序的并。
+        验证≤_*是W*上的良序（关键：任何非空子集与某个W ∈ C相交，在该W中有最小元）。
+     4. 由Zorn引理，P有极大元 (M, ≤_M)。
+     5. 断言 M = α。若不然，取 a ∈ α \ M，将a添加到M末尾（对所有m ∈ M, m < a），
+        得到严格更大的良序，与极大性矛盾。
+     6. 故 M = α，≤_M 是α上的良序。
+     在Mathlib4中，此等价性通过 wellOrderingTheorem 实现。 -/
   sorry
 
 /-

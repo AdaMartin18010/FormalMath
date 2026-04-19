@@ -1,6 +1,8 @@
 ---
 title: FormalMath 国际权威对齐差距分析与可持续推进计划
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # FormalMath 国际权威对齐差距分析与可持续推进计划

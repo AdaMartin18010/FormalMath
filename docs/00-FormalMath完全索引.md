@@ -1,3 +1,8 @@
+---
+title: "FormalMath完全索引"
+msc_primary: "00"
+---
+
 # FormalMath 完全索引
 
 > 本文档是 FormalMath 项目的中央导航枢纽，提供所有文档的分类索引、概念快速查找、学习路径推荐和难度分级指南。

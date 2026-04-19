@@ -1,9 +1,8 @@
 ---
 title: 曲线的 Hurwitz 定理
-msc_primary: 14-01
-msc_secondary:
-- 14H30
-- 14H51
+msc_primary: 14
+  - 14H30
+  - 14H51
 level: silver
 target_courses:
 - Stanford FOAG

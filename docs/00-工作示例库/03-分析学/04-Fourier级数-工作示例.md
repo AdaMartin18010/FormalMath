@@ -1,7 +1,8 @@
 ---
-msc_primary: 42A16
-msc_secondary:
-- 42A20
+msc_primary: 42
+
+  - 42A16
+  - 42A20
 title: Fourier级数展开 - 工作示例
 processed_at: '2026-04-08'
 ---

@@ -1,5 +1,7 @@
 ---
-msc_primary: 53C23
+msc_primary: 53
+
+  - 53C23
 exercise_id: GEO-080
 title: Alexandrov空间的曲率维度条件
 difficulty: 4

@@ -1,10 +1,11 @@
 ---
 title: "纯 Motives：代数对应的范畴化与 Grothendieck 的终极愿景"
 level: "gold"
-msc_primary: "14C15"
+msc_primary: 14
 msc_secondary:
-  - "14C25"
-  - "18F99"
+  - 14C15
+  - 14C25
+  - 18F99
 references:
   textbooks:
     - title: "Une introduction aux motifs"

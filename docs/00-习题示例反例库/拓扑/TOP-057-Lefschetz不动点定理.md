@@ -1,4 +1,5 @@
 ---
+msc_primary: 00A99
 习题编号: TOP-057
 学科: 拓扑
 知识点: 代数拓扑-Lefschetz不动点

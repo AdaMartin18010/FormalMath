@@ -1,6 +1,8 @@
 ---
 title: "Laplace变换 - 深度版"
-msc_primary: "44A10"
+msc_primary: 44
+
+  - 44A10
 msc_secondary: ['42A38', '65R10', '34A25', '35L05']
 processed_at: '2026-04-05'
 ---

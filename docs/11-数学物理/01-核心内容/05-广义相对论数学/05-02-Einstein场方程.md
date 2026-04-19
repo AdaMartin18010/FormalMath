@@ -1,9 +1,10 @@
 ---
-msc_primary: 83C05
-msc_secondary:
-- 83C10
-- 83C15
-- 35Q75
+msc_primary: 83
+
+  - 83C05
+  - 83C10
+  - 83C15
+  - 35Q75
 title: Einstein场方程
 processed_at: '2026-04-05'
 ---

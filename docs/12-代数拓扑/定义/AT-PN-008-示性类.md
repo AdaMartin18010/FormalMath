@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Characteristic Classes, Stiefel-Whitney类, Chern类, Pontryagin类]
 type: 定义

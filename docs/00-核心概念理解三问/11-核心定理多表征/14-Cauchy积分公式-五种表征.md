@@ -1,7 +1,8 @@
 ---
-msc_primary: 30B99
-msc_secondary:
-- 30E20
+msc_primary: 30
+
+  - 30B99
+  - 30E20
 title: Cauchy积分公式 - 五种表征
 processed_at: '2026-04-05'
 ---

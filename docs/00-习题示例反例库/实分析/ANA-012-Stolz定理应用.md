@@ -1,5 +1,7 @@
 ---
-msc_primary: 40A05
+msc_primary: 40
+
+  - 40A05
 exercise_id: ANA-012
 title: Stolz定理应用
 difficulty: 3

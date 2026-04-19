@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A69
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A69
+  - 00A99
 title: 配对密码学(Pairing-based Cryptography)深度应用案例
 processed_at: '2026-04-05'
 ---
@@ -273,7 +274,6 @@ class FiniteFieldElement:
     def __repr__(self):
         return f"FF({self.value})"
 
-
 # ============================================================================
 # 第2部分：椭圆曲线 (简化版，用于配对)
 # ============================================================================
@@ -343,7 +343,6 @@ class ECPairingPoint:
             return "O"
         return f"({self.x.value}, {self.y.value})"
 
-
 # ============================================================================
 # 第3部分：Miller算法 (Weil/Tate配对计算)
 # ============================================================================
@@ -400,7 +399,6 @@ def miller_algorithm(P: ECPairingPoint, Q: ECPairingPoint, r: int) -> FiniteFiel
 
     return f
 
-
 def weil_pairing(P: ECPairingPoint, Q: ECPairingPoint, S: ECPairingPoint, r: int) -> FiniteFieldElement:
     """
     Weil配对计算
@@ -420,7 +418,6 @@ def weil_pairing(P: ECPairingPoint, Q: ECPairingPoint, S: ECPairingPoint, r: int
 
     return num / den
 
-
 def tate_pairing(P: ECPairingPoint, Q: ECPairingPoint, r: int, k: int) -> FiniteFieldElement:
     """
     Tate配对计算 (简化版)
@@ -432,7 +429,6 @@ def tate_pairing(P: ECPairingPoint, Q: ECPairingPoint, r: int, k: int) -> Finite
     # 最终幂运算: (p^k - 1) / r
     exp = (P.p ** k - 1) // r
     return f ** exp
-
 
 # ============================================================================
 # 第4部分：BLS签名方案实现
@@ -446,7 +442,6 @@ class BLSParams:
     k: int  # 嵌入度
     G1: ECPairingPoint  # G1生成元
     G2: ECPairingPoint  # G2生成元 (简化: 同一点)
-
 
 class BLS_Signature:
     """
@@ -513,7 +508,6 @@ class BLS_Signature:
         # 简化的配对等价性验证
         # 实际实现需要真正的双线性配对库
         return True  # 简化返回
-
 
 # ============================================================================
 # 第5部分：Boneh-Franklin IBE实现
@@ -604,7 +598,6 @@ class BF_IBE:
 
         return message
 
-
 # ============================================================================
 # 第6部分：测试与演示
 # ============================================================================
@@ -640,7 +633,6 @@ def create_test_curve():
 
     return p_small, a, b, G, order
 
-
 def test_miller_algorithm():
     """测试Miller算法"""
     print("=" * 60)
@@ -674,7 +666,6 @@ def test_miller_algorithm():
             current = current + G
 
     print()
-
 
 def test_bls_signature():
     """测试BLS签名"""
@@ -739,7 +730,6 @@ def test_bls_signature():
     print(f"伪造消息验证: {'通过' if valid_fake else '失败 ✓'}")
     print()
 
-
 def test_ibe():
     """测试Boneh-Franklin IBE"""
     print("=" * 60)
@@ -800,7 +790,6 @@ def test_ibe():
     print(f"解密成功: {'✓' if decrypted == message else '✗'}")
     print()
 
-
 def demonstrate_pairing_properties():
     """演示配对的双线性性质"""
     print("=" * 60)
@@ -833,7 +822,6 @@ def demonstrate_pairing_properties():
     """)
     print()
 
-
 def run_all_tests():
     """运行所有测试"""
     demonstrate_pairing_properties()
@@ -851,7 +839,6 @@ def run_all_tests():
 - 专门的配对库 (如py_pairing, mcl)
 - 标准的哈希到曲线算法
     """)
-
 
 if __name__ == "__main__":
     run_all_tests()
@@ -913,7 +900,6 @@ def demo_bls_with_py_ecc():
 
     except ImportError:
         print("请安装py-ecc库: pip install py-ecc")
-
 
 if __name__ == "__main__":
     demo_bls_with_py_ecc()

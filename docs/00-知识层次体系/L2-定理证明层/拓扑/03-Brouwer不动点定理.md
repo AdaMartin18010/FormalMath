@@ -1,9 +1,10 @@
 ---
-msc_primary: 54H25
-msc_secondary:
-- 47H10
-- 55M20
-- 97I55
+msc_primary: 54
+
+  - 54H25
+  - 47H10
+  - 55M20
+  - 97I55
 title: Brouwer 不动点定理
 processed_at: '2026-04-05'
 ---

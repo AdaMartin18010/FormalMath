@@ -1,5 +1,6 @@
 ---
 title: MIT 18.100A 实分析讲义逐章拆解索引
+msc_primary: 00A99
 course_code: MIT 18.100A
 course_name: Real Analysis
 instructor: Dr. Casey Rodriguez (MIT OCW Fall 2020)

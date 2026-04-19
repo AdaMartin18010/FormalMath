@@ -1,10 +1,5 @@
 ---
-msc_primary: 11-XX
-msc_secondary:
-- 11Gxx
-- 11Rxx
-- 11Fxx
-- 11Mxx
+msc_primary: 11
 generated_at: '2026-04-09'
 title: MathOverflow数论精华对齐文档
 processed_at: '2026-04-09'

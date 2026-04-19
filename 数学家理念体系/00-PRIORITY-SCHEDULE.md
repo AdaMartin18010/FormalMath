@@ -1,6 +1,8 @@
 ---
 title: "数学家理念体系：优先级编排与项目时间表"
-msc_primary: "01A99"
+msc_primary: 01
+msc_secondary:
+  - 01A99
 msc_secondary: []
 processed_at: '2026-04-05'
 ---

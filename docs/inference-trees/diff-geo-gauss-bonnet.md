@@ -1,9 +1,10 @@
 ---
-msc_primary: 53C20
-msc_secondary:
-- 53A05
-- 57R20
-- 58J20
+msc_primary: 53
+
+  - 53C20
+  - 53A05
+  - 57R20
+  - 58J20
 title: Gauss-Bonnet定理推理树
 processed_at: '2026-04-05'
 ---

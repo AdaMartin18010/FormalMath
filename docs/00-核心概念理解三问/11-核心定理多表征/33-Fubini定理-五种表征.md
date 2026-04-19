@@ -1,7 +1,8 @@
 ---
-msc_primary: 28A35
-msc_secondary:
-- 26A42
+msc_primary: 28
+
+  - 28A35
+  - 26A42
 title: Fubini定理 - 五种表征
 processed_at: '2026-04-05'
 ---

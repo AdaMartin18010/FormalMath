@@ -2,7 +2,9 @@
 title: "同伦论与Serre谱序列：从球面到纤维丛"
 level: gold
 course: Serre数学理念
-msc_primary: "55T10"
+msc_primary: 55
+msc_secondary:
+  - 55T10
 references:
   textbooks:
     - title: "Homologie singulière des espaces fibrés"

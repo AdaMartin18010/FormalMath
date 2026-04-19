@@ -1,6 +1,8 @@
 ---
 title: "高级数学 (Advanced Mathematics)"
-msc_primary: "00A05"
+msc_primary: 00
+
+  - 00A05
 msc_secondary: ['37A05', '58J20', '81Q30', '14F43']
 processed_at: '2026-04-05'
 ---
@@ -8,7 +10,7 @@ processed_at: '2026-04-05'
 # 高级数学 (Advanced Mathematics)
 
 **最后更新**: 2026年4月5日  
-**MSC分类**: 37-XX (动力系统), 58-XX (整体分析), 81-XX (量子理论), 14-XX (代数几何)
+**MSC分类**: 37-00 (动力系统), 58-00 (整体分析), 81-00 (量子理论), 14-00 (代数几何)
 
 ---
 

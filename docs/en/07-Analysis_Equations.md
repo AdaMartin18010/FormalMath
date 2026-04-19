@@ -1,6 +1,8 @@
 ---
 title: Analysis and Differential Equations (分析与微分方程)
-msc_primary: 00A99
+msc_primary: 00
+
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # Analysis and Differential Equations (分析与微分方程)
@@ -11,7 +13,7 @@ This document provides bilingual (English-Chinese) definitions, notations, and e
 
 ## 1. Partial Differential Equation (偏微分方程)
 
-**MSC Code:** 35Axx, 35Gxx
+**MSC Code:** @, @
 
 ### English Definition
 A partial differential equation (PDE) is an equation involving partial derivatives of an unknown function $u(x_1, \ldots, x_n)$. Order is the highest derivative; linearity depends on $u$ and its derivatives appearing linearly.
@@ -33,7 +35,7 @@ A partial differential equation (PDE) is an equation involving partial derivativ
 
 ## 2. Laplace Equation (拉普拉斯方程)
 
-**MSC Code:** 35J05, 31Axx
+**MSC Code:** 35J05, @
 
 ### English Definition
 The Laplace equation $\Delta u = 0$ describes harmonic functions. Solutions are infinitely differentiable and satisfy the mean value property. The Dirichlet problem seeks harmonic functions with prescribed boundary values.
@@ -55,7 +57,7 @@ The Laplace equation $\Delta u = 0$ describes harmonic functions. Solutions are 
 
 ## 3. Heat Equation (热方程)
 
-**MSC Code:** 35K05, 35Kxx
+**MSC Code:** 35K05, @
 
 ### English Definition
 The heat equation $u_t = \Delta u$ describes diffusion processes. It is parabolic and smoothing: even discontinuous initial data becomes instantaneously smooth. The fundamental solution is the heat kernel.
@@ -77,7 +79,7 @@ The heat equation $u_t = \Delta u$ describes diffusion processes. It is paraboli
 
 ## 4. Wave Equation (波动方程)
 
-**MSC Code:** 35L05, 35Lxx
+**MSC Code:** 35L05, @
 
 ### English Definition
 The wave equation $u_{tt} = \Delta u$ describes wave propagation. It is hyperbolic with finite speed of propagation. Solutions satisfy Huygens' principle in odd dimensions.
@@ -99,7 +101,7 @@ The wave equation $u_{tt} = \Delta u$ describes wave propagation. It is hyperbol
 
 ## 5. Schrödinger Equation (薛定谔方程)
 
-**MSC Code:** 35Q41, 81Qxx
+**MSC Code:** 35Q41, @
 
 ### English Definition
 The Schrödinger equation $i\hbar\partial_t \psi = \hat{H}\psi$ governs quantum mechanical systems. The Hamiltonian $\hat{H} = -\frac{\hbar^2}{2m}\Delta + V(x)$ combines kinetic and potential energy terms.
@@ -143,7 +145,7 @@ Sobolev space $W^{k,p}(\Omega)$ consists of functions whose weak derivatives up 
 
 ## 7. Distribution (广义函数/分布)
 
-**MSC Code:** 46Fxx
+**MSC Code:** @
 
 ### English Definition
 Distributions generalize functions via duality. A distribution $T$ is a continuous linear functional on test functions $C_c^\infty$. Every locally integrable function defines a distribution, but distributions include objects like Dirac delta.
@@ -166,7 +168,7 @@ Distributions generalize functions via duality. A distribution $T$ is a continuo
 
 ## 8. Weak Solution (弱解)
 
-**MSC Code:** 35D30, 35Dxx
+**MSC Code:** 35D30, @
 
 ### English Definition
 A weak solution satisfies the PDE in the sense of distributions. For $Lu = f$, a weak solution $u \in H^1$ satisfies $\int (Lu)\varphi = \int f\varphi$ for all test functions $\varphi$.
@@ -188,7 +190,7 @@ A weak solution satisfies the PDE in the sense of distributions. For $Lu = f$, a
 
 ## 9. Elliptic Regularity (椭圆正则性)
 
-**MSC Code:** 35B65, 35Jxx
+**MSC Code:** 35B65, @
 
 ### English Definition
 Elliptic regularity states that weak solutions of elliptic PDEs with smooth coefficients and data are actually smooth. Interior regularity: $u \in C^\infty$ inside domain; boundary regularity requires smooth boundary.
@@ -210,7 +212,7 @@ Elliptic regularity states that weak solutions of elliptic PDEs with smooth coef
 
 ## 10. Maximum Principle (极值原理)
 
-**MSC Code:** 35B50, 35Jxx
+**MSC Code:** 35B50, @
 
 ### English Definition
 The maximum principle states that for elliptic (or parabolic) PDEs, extrema of solutions occur on the boundary. Strong maximum principle: if interior maximum, solution is constant.
@@ -232,7 +234,7 @@ The maximum principle states that for elliptic (or parabolic) PDEs, extrema of s
 
 ## 11. Spectral Theory (谱理论)
 
-**MSC Code:** 47A10, 47Axx
+**MSC Code:** 47A10, @
 
 ### English Definition
 Spectral theory studies the spectrum of linear operators. For bounded $T$ on Banach space, spectrum $\sigma(T) = \{\lambda : T - \lambda I \text{ not invertible}\}$. Self-adjoint operators on Hilbert spaces have real spectrum.
@@ -276,7 +278,7 @@ A compact operator $T: X \to Y$ maps bounded sets to relatively compact sets. On
 
 ## 13. Hilbert Space (希尔伯特空间)
 
-**MSC Code:** 46Cxx
+**MSC Code:** @
 
 ### English Definition
 A Hilbert space is a complete inner product space. The inner product $\langle \cdot, \cdot \rangle$ induces norm $\|x\| = \sqrt{\langle x, x \rangle}$. Hilbert spaces generalize Euclidean geometry to infinite dimensions.
@@ -298,7 +300,7 @@ A Hilbert space is a complete inner product space. The inner product $\langle \c
 
 ## 14. Banach Space (巴拿赫空间)
 
-**MSC Code:** 46Bxx
+**MSC Code:** @
 
 ### English Definition
 A Banach space is a complete normed vector space. Every Hilbert space is a Banach space, but not conversely. Key examples include $L^p$ for $p \neq 2$ and spaces of continuous functions.
@@ -320,7 +322,7 @@ A Banach space is a complete normed vector space. Every Hilbert space is a Banac
 
 ## 15. Dual Space (对偶空间)
 
-**MSC Code:** 46B10, 46Bxx
+**MSC Code:** 46B10, @
 
 ### English Definition
 The dual space $X^*$ of normed space $X$ is the space of continuous linear functionals $f: X \to \mathbb{K}$. The double dual $X^{**}$ contains $X$ via evaluation map. Reflexive spaces satisfy $X^{**} = X$.
@@ -386,7 +388,7 @@ A Fredholm operator $T: X \to Y$ has finite-dimensional kernel and cokernel, and
 
 ## 18. Semigroup of Operators (算子半群)
 
-**MSC Code:** 47D03, 47Dxx
+**MSC Code:** 47D03, @
 
 ### English Definition
 A strongly continuous semigroup $T(t) = e^{tA}$ on Banach space solves the Cauchy problem $u'(t) = Au(t)$, $u(0) = u_0$. The generator $A$ is generally unbounded.
@@ -430,7 +432,7 @@ The Fourier transform $\hat{f}(\xi) = \int_{\mathbb{R}^n} f(x)e^{-2\pi ix\cdot\x
 
 ## 20. Sobolev Embedding (索伯列夫嵌入)
 
-**MSC Code:** 46E35, 46Exx
+**MSC Code:** 46E35, @
 
 ### English Definition
 Sobolev embedding theorems relate Sobolev spaces to classical function spaces. If $k > n/p$, then $W^{k,p}(\mathbb{R}^n) \hookrightarrow C^{0,\alpha}$ for appropriate $\alpha$. Critical case $k = n/p$ gives borderline embeddings.
@@ -452,7 +454,7 @@ Sobolev embedding theorems relate Sobolev spaces to classical function spaces. I
 
 ## 21. Harmonic Analysis (调和分析)
 
-**MSC Code:** 42Axx, 42Bxx
+**MSC Code:** @, @
 
 ### English Definition
 Harmonic analysis studies the decomposition of functions and operators into basic waves (Fourier analysis). It includes singular integrals, maximal functions, and Littlewood-Paley theory, with applications to PDEs.
@@ -474,7 +476,7 @@ Harmonic analysis studies the decomposition of functions and operators into basi
 
 ## 22. Singular Integral (奇异积分)
 
-**MSC Code:** 42B20, 42Bxx
+**MSC Code:** 42B20, @
 
 ### English Definition
 Singular integral operators have kernels with singularity on the diagonal. The Calderón-Zygmund theory provides $L^p$ boundedness for operators like the Hilbert transform $Hf(x) = \frac{1}{\pi}\text{p.v.}\int \frac{f(y)}{x-y}dy$.
@@ -563,7 +565,7 @@ Interpolation theory constructs intermediate spaces between Banach spaces. If $T
 
 ## 26. Measure Theory (测度论)
 
-**MSC Code:** 28Axx, 28Cxx
+**MSC Code:** @, @
 
 ### English Definition
 Measure theory generalizes length, area, and volume to abstract spaces. A measure $\mu$ assigns non-negative values to measurable sets, countably additive on disjoint unions. Lebesgue measure extends Jordan measure.
@@ -585,7 +587,7 @@ Measure theory generalizes length, area, and volume to abstract spaces. A measur
 
 ## 27. Lebesgue Integration (勒贝格积分)
 
-**MSC Code:** 28A25, 28Cxx
+**MSC Code:** 28A25, @
 
 ### English Definition
 Lebesgue integration partitions the range rather than the domain. A measurable function is integrable if $\int |f| d\mu < \infty$. The integral is defined via simple functions and extends Riemann integration.
@@ -629,7 +631,7 @@ If $\nu$ is absolutely continuous with respect to $\mu$ ($\nu \ll \mu$), there e
 
 ## 29. Probability Space (概率空间)
 
-**MSC Code:** 60Axx
+**MSC Code:** @
 
 ### English Definition
 A probability space $(\Omega, \mathcal{F}, \mathbb{P})$ consists of sample space $\Omega$, $\sigma$-algebra $\mathcal{F}$ of events, and probability measure $\mathbb{P}$ with $\mathbb{P}(\Omega) = 1$. Random variables are measurable functions $X: \Omega \to \mathbb{R}$.
@@ -673,7 +675,7 @@ A random variable $X$ is a measurable function from probability space to measura
 
 ## 31. Conditional Expectation (条件期望)
 
-**MSC Code:** 60A10, 60Exx
+**MSC Code:** 60A10, @
 
 ### English Definition
 The conditional expectation $\mathbb{E}[X|\mathcal{G}]$ is the unique $\mathcal{G}$-measurable random variable satisfying $\int_G \mathbb{E}[X|\mathcal{G}] d\mathbb{P} = \int_G X d\mathbb{P}$ for all $G \in \mathcal{G}$. It is the best prediction of $X$ given information $\mathcal{G}$.
@@ -695,7 +697,7 @@ The conditional expectation $\mathbb{E}[X|\mathcal{G}]$ is the unique $\mathcal{
 
 ## 32. Stochastic Process (随机过程)
 
-**MSC Code:** 60Gxx
+**MSC Code:** @
 
 ### English Definition
 A stochastic process $(X_t)_{t \in T}$ is a collection of random variables indexed by time. It models random phenomena evolving in time or space. Filtrations represent information flow.
@@ -761,7 +763,7 @@ A martingale $(M_t)$ satisfies $\mathbb{E}[|M_t|] < \infty$ and $\mathbb{E}[M_t|
 
 ## 35. Markov Process (马尔可夫过程)
 
-**MSC Code:** 60Jxx
+**MSC Code:** @
 
 ### English Definition
 A Markov process $(X_t)$ satisfies the Markov property: future depends only on present, not past. Formally, $\mathbb{P}(X_t \in A | \mathcal{F}_s) = \mathbb{P}(X_t \in A | X_s)$ for $s < t$.
@@ -783,7 +785,7 @@ A Markov process $(X_t)$ satisfies the Markov property: future depends only on p
 
 ## 36. Itô Calculus (伊藤微积分)
 
-**MSC Code:** 60H05, 60Hxx
+**MSC Code:** 60H05, @
 
 ### English Definition
 Itô calculus extends calculus to stochastic integrals with respect to Brownian motion. The Itô integral $\int H_s dB_s$ is a martingale. Itô's formula includes an extra second-order term due to non-zero quadratic variation.
@@ -872,7 +874,7 @@ Malliavin calculus provides a differential calculus on Wiener space. It defines 
 
 ## 40. Functional Analysis (泛函分析)
 
-**MSC Code:** 46Axx, 46Bxx, 47Axx
+**MSC Code:** @, @, @
 
 ### English Definition
 Functional analysis studies infinite-dimensional vector spaces (function spaces) and operators between them. Key themes include duality, spectral theory, and fixed point theorems, with applications throughout analysis and PDEs.
@@ -894,7 +896,7 @@ Functional analysis studies infinite-dimensional vector spaces (function spaces)
 
 ## 41. Operator Algebra (算子代数)
 
-**MSC Code:** 46Lxx, 47Lxx
+**MSC Code:** @, @
 
 ### English Definition
 Operator algebras are algebras of bounded operators on Hilbert space. $C^*$-algebras are norm-closed *-algebras; von Neumann algebras are weakly closed. They provide the framework for non-commutative geometry.
@@ -983,7 +985,7 @@ Unbounded operators on Hilbert space have domain a proper subspace. They arise n
 
 ## 45. Variational Method (变分方法)
 
-**MSC Code:** 35A15, 49Jxx
+**MSC Code:** 35A15, @
 
 ### English Definition
 Variational methods find solutions of PDEs as critical points of functionals. The Euler-Lagrange equation gives the PDE. Direct methods in the calculus of variations establish existence via minimization.
@@ -1028,7 +1030,7 @@ Critical point theory finds critical points of functionals beyond global minima.
 
 ## 47. Calculus of Variations (变分法)
 
-**MSC Code:** 49Jxx, 49Kxx
+**MSC Code:** @, @
 
 ### English Definition
 Calculus of variations optimizes functionals over functions. It generalizes finding extrema of functions to infinite-dimensional spaces. Applications include physics (least action), geometry (geodesics), and PDEs.
@@ -1074,7 +1076,7 @@ Optimal control finds control functions minimizing cost functional subject to dy
 
 ## 49. Ergodic Theory (遍历理论)
 
-**MSC Code:** 37Axx, 28Dxx
+**MSC Code:** @, @
 
 ### English Definition
 Ergodic theory studies measure-preserving dynamical systems. Birkhoff's ergodic theorem states time averages equal space averages for ergodic systems. It connects probability, analysis, and dynamical systems.
@@ -1096,7 +1098,7 @@ Ergodic theory studies measure-preserving dynamical systems. Birkhoff's ergodic 
 
 ## 50. Dynamical System (动力系统)
 
-**MSC Code:** 37Axx, 37Bxx, 37Cxx
+**MSC Code:** @, @, @
 
 ### English Definition
 A dynamical system is a map $T: X \to X$ (discrete time) or flow $\phi_t: X \to X$ (continuous time) describing evolution. Orbits, invariant sets, and stability are central concerns.

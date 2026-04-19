@@ -1,9 +1,10 @@
 ---
-msc_primary: 82B20
-msc_secondary:
-- 82B26
-- 82B27
-- 60K35
+msc_primary: 82
+
+  - 82B20
+  - 82B26
+  - 82B27
+  - 60K35
 title: Ising模型与相变
 processed_at: '2026-04-05'
 ---

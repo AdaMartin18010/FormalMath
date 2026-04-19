@@ -1,6 +1,8 @@
 ---
 title: "02 Sobolev空间系统阐述"
-msc_primary: "46E35"
+msc_primary: 46
+
+  - 46E35
 msc_secondary: ['35D30', '35A15', '46B50']
 processed_at: '2026-04-05'
 ---

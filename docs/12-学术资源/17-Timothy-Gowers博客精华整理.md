@@ -1,8 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00B10
-- 97D40
+msc_primary: 00
+
+  - 00A99
+  - 00B10
+  - 97D40
 generated_at: '2026-04-09'
 title: Timothy Gowers博客精华整理
 processed_at: '2026-04-09'

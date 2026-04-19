@@ -1,5 +1,6 @@
 ---
 title: "IMO真题-代数：不等式与最值"
+msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L3

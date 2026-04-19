@@ -4,6 +4,7 @@ category: 代数
 topic: 域扩张与Galois理论
 difficulty: ⭐⭐⭐⭐
 title: Galois理论综合应用：圆规直尺作图
+msc_primary: 00A99
 keywords: [圆规直尺作图, 可构作数, 三等分角, 倍立方, Galois理论应用]
 prerequisites: [ALG-039, ALG-036, ALG-035]
 source: 经典代数习题

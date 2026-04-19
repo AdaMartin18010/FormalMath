@@ -1,5 +1,6 @@
 ---
 title: "知识图谱-021: Langlands纲领关系图"
+msc_primary: 00A99
 description: "展示Langlands纲领中数论、表示论、几何三大领域的深刻联系"
 category: "knowledge-graph"
 tags: ["Langlands纲领", "数论", "表示论", "代数几何", "自守形式", "Galois表示"]

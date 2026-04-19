@@ -1,6 +1,6 @@
 ---
 title: MIT数理逻辑课程对齐报告
-msc_primary: 03-XX
+msc_primary: 03
 processed_at: '2026-04-08'
 references:
   textbooks:
@@ -14,7 +14,7 @@ references:
       year: 2001
       isbn: 978-0122384523
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
     - id: mendelson_logic
       type: textbook
@@ -26,7 +26,7 @@ references:
       year: 2015
       isbn: 978-1482237725
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

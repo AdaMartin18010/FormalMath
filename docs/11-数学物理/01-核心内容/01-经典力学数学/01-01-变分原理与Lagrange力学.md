@@ -1,9 +1,10 @@
 ---
-msc_primary: 70H03
-msc_secondary:
-- 49S05
-- 58E30
-- 37J05
+msc_primary: 70
+
+  - 70H03
+  - 49S05
+  - 58E30
+  - 37J05
 title: 变分原理与Lagrange力学
 processed_at: '2026-04-05'
 ---

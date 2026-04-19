@@ -1,5 +1,7 @@
 ---
-msc_primary: 14C25
+msc_primary: 14
+
+  - 14C25
 exercise_id: ALG-268
 title: higher Chow群与Bloch公式
 difficulty: 5

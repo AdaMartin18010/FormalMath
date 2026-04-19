@@ -1,7 +1,8 @@
 ---
-msc_primary: 18G15
-msc_secondary:
-- 13D07
+msc_primary: 18
+
+  - 18G15
+  - 13D07
 title: Ext与Tor函子计算 - 工作示例
 processed_at: '2026-04-08'
 ---

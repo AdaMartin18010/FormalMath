@@ -1,5 +1,7 @@
 ---
-msc_primary: 53C25
+msc_primary: 53
+
+  - 53C25
 exercise_id: GEO-082
 title: Ricci孤子的分类定理
 difficulty: 4

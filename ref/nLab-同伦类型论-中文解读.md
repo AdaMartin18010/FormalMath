@@ -1,5 +1,7 @@
 ---
-msc_primary: 03B38
+msc_primary: 03
+msc_secondary:
+  - 03B38
 msc_secondary: [03B15, 55U35, 68T15]
 title: nLab - 同伦类型论 (Homotopy Type Theory) 中文解读
 nlab_url: https://ncatlab.org/nlab/show/homotopy+type+theory

@@ -1,4 +1,5 @@
 ---
+msc_primary: 00A99
 习题编号: TOP-075
 学科: 拓扑
 知识点: 同伦论-Leray-Serre谱序列

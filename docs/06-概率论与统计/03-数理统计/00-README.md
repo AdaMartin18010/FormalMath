@@ -1,6 +1,8 @@
 ---
 title: "数理统计 (Mathematical Statistics)"
-msc_primary: "62A01"
+msc_primary: 62
+
+  - 62A01
 msc_secondary: ['62F03', '62F10', '62J05', '62G08']
 processed_at: '2026-04-05'
 ---
@@ -8,7 +10,7 @@ processed_at: '2026-04-05'
 # 数理统计 (Mathematical Statistics)
 
 **最后更新**: 2026年4月5日  
-**MSC分类**: 62-XX (统计学), 涵盖估计、检验、回归等核心主题
+**MSC分类**: 62-00 (统计学), 涵盖估计、检验、回归等核心主题
 
 ---
 

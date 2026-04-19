@@ -1,9 +1,10 @@
 ---
-msc_primary: 81Q05
-msc_secondary:
-- 47D06
-- 47N50
-- 35Q41
+msc_primary: 81
+
+  - 81Q05
+  - 47D06
+  - 47N50
+  - 35Q41
 title: 量子动力学与Schrödinger方程
 processed_at: '2026-04-05'
 ---

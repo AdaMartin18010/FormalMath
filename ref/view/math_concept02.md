@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A15
+msc_primary: 00
 msc_secondary:
-- 01A99
+  - 00A15
+  - 01A99
 title: 克莱因数学哲学的深度论证：正题展开
 processed_at: '2026-04-05'
 ---

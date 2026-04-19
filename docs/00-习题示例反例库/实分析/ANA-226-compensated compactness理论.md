@@ -1,5 +1,7 @@
 ---
-msc_primary: 35L65
+msc_primary: 35
+
+  - 35L65
 exercise_id: ANA-226
 title: compensated compactness理论
 difficulty: 4

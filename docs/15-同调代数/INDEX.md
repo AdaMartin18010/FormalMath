@@ -1,6 +1,6 @@
 ---
-msc_primary: 18Gxx
-msc_secondary: ['13Dxx', '16Exx', '55Uxx', '14Fxx']
+msc_primary: 18
+
 keywords: ['同调代数', '导出函子', '谱序列', '导出范畴', '群上同调']
 version: 1.0
 ---

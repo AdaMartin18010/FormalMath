@@ -1,5 +1,7 @@
 ---
-msc_primary: 53C21
+msc_primary: 53
+
+  - 53C21
 exercise_id: GEO-089
 title: 正质量定理与Schoen-Yau证明
 difficulty: 5

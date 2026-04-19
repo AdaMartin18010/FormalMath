@@ -1,3 +1,8 @@
+---
+title: "FormalMath知识关系网络总图"
+msc_primary: "00"
+---
+
 # FormalMath 知识关系网络总图
 
 ---

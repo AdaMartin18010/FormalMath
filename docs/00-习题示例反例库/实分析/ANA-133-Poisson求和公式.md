@@ -1,4 +1,5 @@
 ---
+msc_primary: 00A99
 习题编号: ANA-133
 学科: 实分析
 知识点: Fourier分析-Poisson求和公式

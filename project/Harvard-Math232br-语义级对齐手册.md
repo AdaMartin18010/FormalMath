@@ -1,5 +1,7 @@
 ---
-msc_primary: 14F25
+msc_primary: 14
+msc_secondary:
+  - 14F25
 title: Harvard Math 232br 代数几何（凝聚层、上同调、曲线与曲面）语义级对齐手册
 course_code: Harvard Math 232br
 course_name: Algebraic Geometry (Coherent Sheaves, Cohomology, Curves and Surfaces)

@@ -1,9 +1,10 @@
 ---
-msc_primary: 54D30
-msc_secondary:
-- 54B10
-- 54A25
-- 97I55
+msc_primary: 54
+
+  - 54D30
+  - 54B10
+  - 54A25
+  - 97I55
 title: Tychonoff 定理
 processed_at: '2026-04-05'
 ---

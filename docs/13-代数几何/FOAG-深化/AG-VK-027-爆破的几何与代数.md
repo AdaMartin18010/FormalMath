@@ -1,9 +1,8 @@
 ---
 title: 爆破的几何与代数
-msc_primary: 14-01
-msc_secondary:
-- 14E15
-- 14B05
+msc_primary: 14
+  - 14E15
+  - 14B05
 level: silver
 target_courses:
 - Stanford FOAG

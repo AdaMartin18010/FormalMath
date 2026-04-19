@@ -1,5 +1,7 @@
 ---
-msc_primary: 58E05
+msc_primary: 58
+
+  - 58E05
 exercise_id: TOP-130
 title: Morse理论与Handle分解
 difficulty: 3

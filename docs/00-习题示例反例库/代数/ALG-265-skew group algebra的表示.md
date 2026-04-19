@@ -1,5 +1,7 @@
 ---
-msc_primary: 16S35
+msc_primary: 16
+
+  - 16S35
 exercise_id: ALG-265
 title: skew group algebra的表示
 difficulty: 3

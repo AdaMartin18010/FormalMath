@@ -1,6 +1,8 @@
 ---
 title: FormalMath Core Concepts - English Translations
-msc_primary: 00A99
+msc_primary: 00
+
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # FormalMath Core Concepts - English Translations

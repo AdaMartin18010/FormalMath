@@ -1,6 +1,8 @@
 ---
 title: "Fuchsian函数理论：庞加莱与克莱因的数学竞赛"
-msc_primary: "30F35"
+msc_primary: 30
+msc_secondary:
+  - 30F35
 msc_secondary: ["32N10"]
 processed_at: '2026-04-05'
 ---

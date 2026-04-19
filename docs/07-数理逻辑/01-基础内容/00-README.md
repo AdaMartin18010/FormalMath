@@ -4,6 +4,7 @@ references:
     - id: enderton_logic
       type: textbook
       title: A Mathematical Introduction to Logic
+msc_primary: 03A99
       authors:
       - Herbert B. Enderton
       publisher: Academic Press
@@ -11,7 +12,7 @@ references:
       year: 2001
       isbn: 978-0122384523
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
     - id: mendelson_logic
       type: textbook
@@ -23,7 +24,7 @@ references:
       year: 2015
       isbn: 978-1482237725
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -47,14 +48,14 @@ title: 逻辑学
 msc_primary: 00A99
 msc_secondary:
 - 03B20
-- 12Exx
+- @
 - 22E47
-processed_at: '2026-04-05'
+processed_at: '2026'-04-05'
 ---
 # 逻辑学 / Logic
 
 **最后更新**: 2026年4月3日
-**MSC 主类**: 03-XX (Mathematical logic and foundations)
+**MSC 主类**: 03-00 (Mathematical logic and foundations)
 **国际对标**: MIT 18.404/6.042J, Harvard CS152, Stanford CS242/CS251, CMU 15-317, ACM/IEEE CS2023, AMS MSC2020
 
 ---
@@ -228,20 +229,20 @@ processed_at: '2026-04-05'
 
 ## 🔢 MSC编码覆盖情况
 
-### 一级分类（03-XX）
+### 一级分类（03-00）
 
 | MSC编码 | 分类名称 | 覆盖文档 | 覆盖度 |
 |---------|----------|----------|--------|
-| **03Bxx** | 一般逻辑 | 全部文档 | ✅ 完整 |
+| **@** | 一般逻辑 | 全部文档 | ✅ 完整 |
 | **03B05** | 经典命题逻辑 | 01-命题逻辑 | ✅ 完整 |
 | **03B10** | 经典一阶逻辑 | 02-谓词逻辑 | ✅ 完整 |
 | **03B20** | 构造性逻辑 | 04-直觉逻辑 | ✅ 完整 |
 | **03B45** | 模态逻辑 | 03-模态逻辑 | ✅ 完整 |
 | **03B50** | 多值逻辑 | 05-多值逻辑 | ✅ 完整 |
 | **03B70** | 逻辑与计算机科学 | 全部文档 | ✅ 完整 |
-| **03Cxx** | 模型论 | 02-谓词逻辑 | ⚠️ 部分 |
-| **03Dxx** | 递归论 | 02-谓词逻辑 | ⚠️ 部分 |
-| **03Fxx** | 证明论与构造数学 | 04-直觉逻辑 | ⚠️ 部分 |
+| **@** | 模型论 | 02-谓词逻辑 | ⚠️ 部分 |
+| **@** | 递归论 | 02-谓词逻辑 | ⚠️ 部分 |
+| **@** | 证明论与构造数学 | 04-直觉逻辑 | ⚠️ 部分 |
 
 ### 核心二级编码
 

@@ -1,5 +1,7 @@
 ---
-msc_primary: 17B37
+msc_primary: 17
+
+  - 17B37
 exercise_id: ALG-247
 title: 量子群的典范基与crystal基
 difficulty: 4

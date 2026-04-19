@@ -1,5 +1,7 @@
 ---
-msc_primary: 17B56
+msc_primary: 17
+
+  - 17B56
 msc_secondary: ['18G99', '17B55']
 keywords: ['Lie代数上同调', 'Chevalley-Eilenberg', '外代数', '中心扩张', 'Whitehead引理']
 version: 1.0

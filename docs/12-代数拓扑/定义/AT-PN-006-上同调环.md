@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Cohomology Ring, 杯积, 分次环]
 type: 定义

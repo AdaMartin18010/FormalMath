@@ -1,12 +1,17 @@
+---
+title: "IMO培训专题"
+msc_primary: "00"
+---
+
 ﻿---
 msc_primary: 97D50
 msc_secondary:
-- 11-XX
-- 51-XX
-- 05-XX
-- 12-XX
+- 11-00
+- 51-00
+- 05-00
+- 12-00
 title: IMO培训专题
-processed_at: '2026-04-05'
+processed_at: '2026'-04-05'
 ---
 # IMO培训专题
 

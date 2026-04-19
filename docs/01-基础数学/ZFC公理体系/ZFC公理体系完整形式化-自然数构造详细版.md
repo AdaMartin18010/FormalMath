@@ -1,6 +1,8 @@
 ---
 title: "ZFC公理体系完整形式化 - 自然数构造详细版"
-msc_primary: "03E99"
+msc_primary: 03
+
+  - 03E99
 msc_secondary: ['03E30', '03B30']
 processed_at: '2026-04-05'
 ---

@@ -1,6 +1,8 @@
 ---
 title: "ZFC公理体系完整形式化 - 第五部分：复数构造"
-msc_primary: "03E20"
+msc_primary: 03
+
+  - 03E20
 msc_secondary: ['08A02', '06A99']
 processed_at: '2026-04-05'
 ---

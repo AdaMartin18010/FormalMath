@@ -4,6 +4,7 @@ category: 代数
 topic: 表示论入门
 difficulty: ⭐⭐⭐
 title: 诱导表示与Frobenius互反
+msc_primary: 00A99
 keywords: [诱导表示, 限制表示, Frobenius互反, 特征标诱导, 子群表示]
 prerequisites: [ALG-052, ALG-051]
 source: 经典表示论习题

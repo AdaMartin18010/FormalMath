@@ -32,6 +32,20 @@ Atiyah和Singer于1963年证明，获2004年Abel奖。
 - 示性类理论
 
 这些在Mathlib4中正在发展中。
+
+## Mathlib4 形式化路线图
+
+| 依赖理论 | Mathlib4 状态 | 预计时间 |
+|---------|--------------|---------|
+| 伪微分算子 | ❌ 未开始 | 2-3年 |
+| 热核方法 | 🔄 部分存在 | 1-2年 |
+| K-理论 (拓扑) | 🔄 基础定义 | 1-2年 |
+| 示性类 (Chern/Â) | 🔄 部分存在 | 1-2年 |
+| 椭圆正则性 | 🔄 发展中 | 1-2年 |
+
+**当前形式化策略**: 使用 xiom 标记核心等式，待依赖理论成熟后逐步替换。
+**参考**: https://leanprover-community.github.io/mathlib4_docs/
+
 -/
 
 import Mathlib.Geometry.Manifold.VectorBundle.Basic

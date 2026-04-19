@@ -1,8 +1,9 @@
 ---
-msc_primary: 03B05
+msc_primary: 03
 msc_secondary:
-- 03B10
-- 03C05
+  - 03B05
+  - 03B10
+  - 03C05
 title: 测试样本 - 命题逻辑
 created: 2026-04-05
 updated: 2026-04-05

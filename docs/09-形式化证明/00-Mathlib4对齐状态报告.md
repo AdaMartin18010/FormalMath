@@ -1,9 +1,10 @@
 ---
-msc_primary: 68V20
-msc_secondary:
-- 03B35
-- 03B70
-- 68A99
+msc_primary: 68
+
+  - 68V20
+  - 03B35
+  - 03B70
+  - 68A99
 title: FormalMath与Mathlib4对齐状态报告
 processed_at: '2026-04-05'
 ---

@@ -1,6 +1,8 @@
 ---
 title: "Abel 奖 2026：Gerd Faltings 与算术几何"
-msc_primary: "11G30"
+msc_primary: 11
+
+  - 11G30
 msc_secondary: ["14G05"]
 processed_at: '2026-04-05'
 ---

@@ -1,6 +1,5 @@
 ---
-msc_primary: 14-XX
-msc_secondary: ['14Fxx', '18Gxx', '32Cxx']
+msc_primary: 14
 references:
   textbooks:
     - id: hartshorne_ag
@@ -13,7 +12,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -25,7 +24,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

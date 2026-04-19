@@ -1,6 +1,8 @@
 ---
 title: Lean4形式化证明习题与练习
-msc_primary: 68V15
+msc_primary: 68
+
+  - 68V15
 ---
 
 # Lean4形式化证明习题与练习

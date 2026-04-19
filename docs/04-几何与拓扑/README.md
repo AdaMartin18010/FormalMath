@@ -1,6 +1,6 @@
 ---
-msc_primary: 51-XX
-msc_secondary: ['53-XX', '54-XX', '55-XX']
+msc_primary: 51
+msc_secondary: ['53-00', '54-00', '55-00']
 references:
   textbooks:
     - id: munkres_top
@@ -13,7 +13,7 @@ references:
       year: 2000
       isbn: 978-0131816299
       msc: 54-01
-      chapters: []
+      chapters: 
       url: ~
     - id: lee_ism
       type: textbook
@@ -25,7 +25,7 @@ references:
       year: 2012
       isbn: 978-1441999818
       msc: 58-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

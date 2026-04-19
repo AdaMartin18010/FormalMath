@@ -1,9 +1,10 @@
 ---
-msc_primary: 54C20
-msc_secondary:
-- 54D15
-- 46E15
-- 97I55
+msc_primary: 54
+
+  - 54C20
+  - 54D15
+  - 46E15
+  - 97I55
 title: Tietze 扩张定理
 processed_at: '2026-04-05'
 ---

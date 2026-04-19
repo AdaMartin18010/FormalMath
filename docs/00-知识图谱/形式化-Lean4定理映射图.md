@@ -1,5 +1,6 @@
 ---
 title: 形式化Lean4定理映射图
+msc_primary: 00A99
 description: 自然语言数学定理与Lean4形式化代码的对应关系可视化
 author: FormalMath Project
 date: 2026-04-10

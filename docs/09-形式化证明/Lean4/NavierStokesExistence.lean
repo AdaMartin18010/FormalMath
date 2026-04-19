@@ -345,6 +345,21 @@ def SingularSet (w : WeakSolution) : Set (ℝ³ × ℝ) :=
 4. Constantin, P. & Foias, C. *Navier-Stokes Equations*
 5. Tao, T. *Why global regularity for Navier-Stokes is hard*
 
--/ 
+
+## Mathlib4 形式化路线图
+
+| 依赖理论 | Mathlib4 状态 | 备注 |
+|---------|--------------|------|
+| Sobolev空间 | 🔄 基础 (SobolevSpace) | 范数、嵌入定理 |
+| 弱解理论 | ❌ 未开始 | Leray-Hopf弱解 |
+| 椭圆/抛物PDE | 🔄 部分 | 热方程存在性 |
+| 能量估计 | ❌ 未开始 | 先验估计 |
+| 紧性方法 | 🔄 部分 | Aubin-Lions引理 |
+
+**千禧年难题状态**: 三维光滑解的存在性仍是开放问题。形式化此问题的陈述（而非证明）已具有价值。
+**当前策略**: 精确定义弱解、光滑解、爆破准则，建立问题框架。
+
+-/
+ 
 
 print "Navier-Stokes Existence and Smoothness framework complete"

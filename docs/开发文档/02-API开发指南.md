@@ -1,5 +1,7 @@
 ---
-msc_primary: 68N99
+msc_primary: 68
+
+  - 68N99
 title: FormalMath API 开发指南
 created_date: 2026-04-04
 version: 1.0.0
@@ -63,7 +65,7 @@ DELETE /api/v1/concepts/{id}     # 删除概念
   "success": true,
   "data": { ... },
   "meta": {
-    "timestamp": "2026-04-04T15:30:00Z",
+    "timestamp": "2026"-04-04T15:30:00Z",
     "request_id": "req_123456"
   }
 }
@@ -235,7 +237,7 @@ Content-Type: application/json
   "target_concepts": ["algebraic_topology"],
   "constraints": {
     "max_daily_hours": 3,
-    "deadline": "2026-06-01"
+    "deadline": "2026"-06-01"
   }
 }
 ```

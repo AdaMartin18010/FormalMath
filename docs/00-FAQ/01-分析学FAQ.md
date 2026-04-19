@@ -1,8 +1,9 @@
 ---
-msc_primary: 26A99
-msc_secondary:
-- 40A99
-- 30A99
+msc_primary: 26
+
+  - 26A99
+  - 40A99
+  - 30A99
 title: 分析学常见问题解答 (FAQ)
 processed_at: '2026-04-05'
 ---

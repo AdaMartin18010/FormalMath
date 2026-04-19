@@ -1,5 +1,7 @@
 ---
-msc_primary: 14C40
+msc_primary: 14
+
+  - 14C40
 msc_secondary: ['14H55', '14C17', '19L10']
 title: Riemann-Roch定理 - 深度版
 processed_at: '2026-04-08'
@@ -15,7 +17,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -27,7 +29,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

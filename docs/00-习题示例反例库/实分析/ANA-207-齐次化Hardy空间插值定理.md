@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B30
+msc_primary: 42
+
+  - 42B30
 exercise_id: ANA-207
 title: 齐次化Hardy空间插值定理
 difficulty: 3

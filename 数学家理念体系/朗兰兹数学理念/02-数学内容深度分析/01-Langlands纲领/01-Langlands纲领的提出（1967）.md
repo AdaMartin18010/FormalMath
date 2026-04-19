@@ -1,9 +1,10 @@
 ---
 title: Langlands纲领的提出（1967）：数学统一的里程碑
-msc_primary: 01A60
+msc_primary: 01
 msc_secondary:
-- 01A65
-- 01A70
+  - 01A60
+  - 01A65
+  - 01A70
 processed_at: '2026-04-05'
 ---
 

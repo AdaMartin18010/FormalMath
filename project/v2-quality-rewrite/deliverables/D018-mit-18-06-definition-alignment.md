@@ -1,6 +1,8 @@
 ---
 title: MIT 18.06 / 18.700 Linear Algebra 定义对齐手册（L3 语义对齐）
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # MIT 18.06 / 18.700 Linear Algebra 定义对齐手册（L3 语义对齐）

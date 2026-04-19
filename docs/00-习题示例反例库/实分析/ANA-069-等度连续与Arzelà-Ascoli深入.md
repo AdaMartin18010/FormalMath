@@ -4,6 +4,7 @@ category: 实分析
 topic: 综合练习
 difficulty: ⭐⭐⭐⭐
 title: 函数空间中的紧致性理论
+msc_primary: 00A99
 keywords: [等度连续, Arzelà-Ascoli, 函数空间, 相对紧致, 相对列紧]
 prerequisites: [ANA-068, ANA-060]
 source: 经典分析习题

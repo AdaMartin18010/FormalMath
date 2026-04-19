@@ -1,7 +1,8 @@
 ---
-msc_primary: 97A99
+msc_primary: 97
 msc_secondary:
-- 00A05
+  - 97A99
+  - 00A05
 title: Princeton University数学课程与FormalMath深度映射分析
 processed_at: '2026-04-05'
 ---

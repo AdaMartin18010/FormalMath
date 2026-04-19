@@ -1,9 +1,10 @@
 ---
 title: 欧几里得数学理念体系
-msc_primary: 51A99
+msc_primary: 51
 msc_secondary:
-- 00A99
-- 01A20
+  - 51A99
+  - 00A99
+  - 01A20
 processed_at: '2026-04-16'
 ---
 # 欧几里得数学理念体系

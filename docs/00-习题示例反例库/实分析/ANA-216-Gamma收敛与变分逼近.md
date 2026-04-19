@@ -1,5 +1,7 @@
 ---
-msc_primary: 49J45
+msc_primary: 49
+
+  - 49J45
 exercise_id: ANA-216
 title: Gamma收敛与变分逼近
 difficulty: 4

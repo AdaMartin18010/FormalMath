@@ -1,10 +1,11 @@
 ---
 title: Étale上同调
 description: 深入介绍平展态射、平展拓扑、平展上同调的定义、比较定理以及它在韦伊猜想证明中的核心作用。
-msc_primary: 14F20
-msc_secondary:
-- 14F30
-- 14G15
+msc_primary: 14
+
+  - 14F20
+  - 14F30
+  - 14G15
 processed_at: '2026-04-16'
 ---
 

@@ -1,10 +1,11 @@
 ---
 title: "形式化验证中的 Grothendieck：Lean4/Mathlib4、Stacks Project 与代数几何的未来"
 level: "gold"
-msc_primary: "68V20"
+msc_primary: 68
 msc_secondary:
-  - "14-04"
-  - "03B35"
+  - 68V20
+  - 14-04
+  - 03B35
 references:
   textbooks:
     - title: "Theorem Proving in Lean 4"

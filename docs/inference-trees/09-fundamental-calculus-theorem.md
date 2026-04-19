@@ -1,12 +1,12 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: 微积分基本定理推导
 processed_at: '2026-04-05'
 ---
 msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_secondary: ['00-00']
 ---
 
 # 微积分基本定理推导

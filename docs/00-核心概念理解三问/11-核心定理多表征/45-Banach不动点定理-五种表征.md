@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 46A99
-- 00A99
-- 00A99
+msc_primary: 00
+
+  - 46A99
+  - 00A99
+  - 00A99
 title: Banach不动点定理 - 五种表征
 processed_at: '2026-04-05'
 ---

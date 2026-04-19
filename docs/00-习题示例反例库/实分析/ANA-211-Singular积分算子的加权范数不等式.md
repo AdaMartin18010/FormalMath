@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B20
+msc_primary: 42
+
+  - 42B20
 exercise_id: ANA-211
 title: Singular积分算子的加权范数不等式
 difficulty: 5

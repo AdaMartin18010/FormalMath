@@ -1,6 +1,6 @@
 ---
-msc_primary: 03Exx
-msc_secondary: ['03Bxx', '05Axx', '18Axx']
+msc_primary: 03
+
 ---
 
 # 01-基础数学

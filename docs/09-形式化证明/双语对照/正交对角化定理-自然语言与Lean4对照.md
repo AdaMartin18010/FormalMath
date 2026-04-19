@@ -1,5 +1,6 @@
 ---
 title: "正交对角化定理（实对称矩阵谱定理） 自然语言与 Lean4 对照"
+msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"

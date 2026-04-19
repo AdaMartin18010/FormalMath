@@ -1,9 +1,10 @@
 ---
-msc_primary: 94A60
-msc_secondary:
-- 68Q15
-- 68P25
-- 81P94
+msc_primary: 94
+
+  - 94A60
+  - 68Q15
+  - 68P25
+  - 81P94
 title: 零知识证明理论推导树
 processed_at: '2026-04-05'
 ---

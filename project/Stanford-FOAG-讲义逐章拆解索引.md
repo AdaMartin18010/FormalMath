@@ -1,5 +1,6 @@
 ---
 title: Stanford FOAG (Ravi Vakil) 代数几何基础讲义逐章拆解索引
+msc_primary: 00A99
 course_code: Stanford FOAG
 course_name: Foundations of Algebraic Geometry
 instructor: Ravi Vakil (Stanford Math 216)

@@ -1,5 +1,7 @@
 ---
-msc_primary: 32S60
+msc_primary: 32
+
+  - 32S60
 exercise_id: ALG-240
 title: perverse sheaves的交错展开
 difficulty: 4

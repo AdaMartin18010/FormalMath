@@ -1,10 +1,11 @@
 ---
 title: 导出代数几何深度版 / Derived Algebraic Geometry - Deep Dive
-msc_primary: 14A20
-msc_secondary:
-- 00A99
-- 00A99
-- 00A99
+msc_primary: 14
+
+  - 14A20
+  - 00A99
+  - 00A99
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # 导出代数几何深度版 / Derived Algebraic Geometry - Deep Dive

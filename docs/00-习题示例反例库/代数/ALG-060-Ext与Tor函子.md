@@ -1,6 +1,7 @@
 ---
 exercise_id: ALG-060
 title: Ext与Tor函子的基本计算
+msc_primary: 00A99
 difficulty: ⭐⭐⭐⭐
 topics: [Ext函子, Tor函子, 导出函子, 投射分解]
 created: 2026-04-10

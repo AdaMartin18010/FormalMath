@@ -1,9 +1,8 @@
 ---
 title: 椭圆曲线的群结构
-msc_primary: 14-01
-msc_secondary:
-- 14H52
-- 14G05
+msc_primary: 14
+  - 14H52
+  - 14G05
 level: silver
 target_courses:
 - Stanford FOAG

@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B20
+msc_primary: 42
+
+  - 42B20
 exercise_id: ANA-221
 title: T(b)定理在非齐次空间的应用
 difficulty: 5

@@ -1,6 +1,8 @@
 ---
 title: "ZFC公理体系完整形式化 - 第一部分：基础公理系统"
-msc_primary: "03E30"
+msc_primary: 03
+
+  - 03E30
 msc_secondary: ['03E15', '03B30', '00A30']
 processed_at: '2026-04-05'
 ---
@@ -98,7 +100,7 @@ $$\forall x \forall y [\forall z(z \in x \leftrightarrow z \in y) \rightarrow x 
 **形式化证明**：
 
 ```text
-定理 2.1.1 (外延公理的等价形式)
+**定理 2.1.1** (外延公理的等价形式)
 ∀x ∀y [x = y ↔ ∀z(z ∈ x ↔ z ∈ y)]
 
 证明：
@@ -117,7 +119,7 @@ $$\exists x \forall y (y \notin x)$$
 **形式化证明**：
 
 ```text
-定理 2.2.1 (空集的唯一性)
+**定理 2.2.1** (空集的唯一性)
 ∃!x ∀y (y ∉ x)
 
 证明：
@@ -139,7 +141,7 @@ $$\forall x \forall y \exists z \forall w(w \in z \leftrightarrow w = x \lor w =
 **形式化证明**：
 
 ```text
-定理 2.3.1 (配对集合的唯一性)
+**定理 2.3.1** (配对集合的唯一性)
 ∀x ∀y ∃!z ∀w(w ∈ z ↔ w = x ∨ w = y)
 
 证明：
@@ -161,7 +163,7 @@ $$\forall F \exists A \forall x(x \in A \leftrightarrow \exists B(B \in F \land 
 **形式化证明**：
 
 ```text
-定理 2.4.1 (并集的唯一性)
+**定理 2.4.1** (并集的唯一性)
 ∀F ∃!A ∀x(x ∈ A ↔ ∃B(B ∈ F ∧ x ∈ B))
 
 证明：
@@ -185,7 +187,7 @@ $$\forall x \exists y \forall z(z \in y \leftrightarrow z \subseteq x)$$
 **形式化证明**：
 
 ```text
-定理 2.5.1 (幂集的唯一性)
+**定理 2.5.1** (幂集的唯一性)
 ∀x ∃!y ∀z(z ∈ y ↔ z ⊆ x)
 
 证明：
@@ -207,7 +209,7 @@ $$\exists x(\emptyset \in x \land \forall y(y \in x \rightarrow y \cup \{y\} \in
 **形式化证明**：
 
 ```text
-定理 2.6.1 (自然数集合的存在性)
+**定理 2.6.1** (自然数集合的存在性)
 存在一个集合包含所有自然数
 
 证明：
@@ -228,7 +230,7 @@ $$\forall w_1 \ldots \forall w_n \forall z \exists y \forall x(x \in y \leftrigh
 **形式化证明**：
 
 ```text
-定理 2.7.1 (分离集合的唯一性)
+**定理 2.7.1** (分离集合的唯一性)
 对于每个公式φ，分离集合是唯一的
 
 证明：
@@ -247,7 +249,7 @@ $$\forall w_1 \ldots \forall w_n \forall A[\forall x \in A \exists!y \phi(x, y, 
 **形式化证明**：
 
 ```text
-定理 2.8.1 (替换集合的唯一性)
+**定理 2.8.1** (替换集合的唯一性)
 对于每个函数公式φ，替换集合是唯一的
 
 证明：
@@ -265,7 +267,7 @@ $$\forall x(x \neq \emptyset \rightarrow \exists y \in x(y \cap x = \emptyset))$
 **形式化证明**：
 
 ```text
-定理 2.9.1 (正则公理的等价形式)
+**定理 2.9.1** (正则公理的等价形式)
 ∀x(x ≠ ∅ → ∃y ∈ x ∀z ∈ x(z ∉ y))
 
 证明：
@@ -284,7 +286,7 @@ $$\forall F(\emptyset \notin F \land \forall x \forall y(x \in F \land y \in F \
 **形式化证明**：
 
 ```text
-定理 2.10.1 (选择公理的等价形式)
+**定理 2.10.1** (选择公理的等价形式)
 每个集合都可以良序化
 
 证明：

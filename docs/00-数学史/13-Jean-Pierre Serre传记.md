@@ -1,3 +1,8 @@
+---
+title: "Jean Pierre Serre传记"
+msc_primary: "01"
+---
+
 # Jean-Pierre Serre 传记
 
 > "数学的主要目的是证明简单的定理，而不仅仅是证明困难的定理。"

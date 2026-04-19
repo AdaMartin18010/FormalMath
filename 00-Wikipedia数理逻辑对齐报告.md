@@ -1,12 +1,13 @@
 ---
-msc_primary: 03E99
+msc_primary: 03
 msc_secondary:
-- 00A99
-- 00A99
-- 00A99
-- 00A99
-- 00A99
-- 00A99
+  - 03E99
+  - 00A99
+  - 00A99
+  - 00A99
+  - 00A99
+  - 00A99
+  - 00A99
 title: Wikipedia数理逻辑对齐报告
 processed_at: '2026-04-05'
 ---

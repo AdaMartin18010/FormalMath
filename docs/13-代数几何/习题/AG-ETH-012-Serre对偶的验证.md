@@ -14,6 +14,7 @@ references:
     - id: hartshorne_ag
       type: textbook
       title: Algebraic Geometry
+msc_primary: 14A99
       authors:
       - Robin Hartshorne
       publisher: Springer
@@ -21,7 +22,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -33,7 +34,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

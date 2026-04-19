@@ -1,12 +1,13 @@
 ---
-msc_primary: 55-01
+msc_primary: 55
 msc_secondary:
-- 55N10
-- 55N20
-- 55N35
-- 55P05
-- 55P10
-- 55P20
+  - 55-01
+  - 55N10
+  - 55N20
+  - 55N35
+  - 55P05
+  - 55P10
+  - 55P20
 title: Princeton MAT 365 (Topology) L3定义级对齐表
 university: Princeton University
 course_code: MAT 365

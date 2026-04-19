@@ -1,5 +1,7 @@
 ---
-msc_primary: 18G40
+msc_primary: 18
+
+  - 18G40
 msc_secondary: ['14F99', '18G10']
 keywords: ['Grothendieck谱序列', '复合函子', '导出函子', '层上同调']
 version: 1.0

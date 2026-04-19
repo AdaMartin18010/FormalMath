@@ -153,12 +153,19 @@ theorem cardinal_comparability {X Y : Type u} :
     Nonempty (X ↪ Y) ∨ Nonempty (Y ↪ X) := by
   /- 证明思路:
      1. 将X和Y都良序化
-     2. 比较它们的序型
-     3. 序型小的可以嵌入到序型大的中
+     2. 比较它们的序型（作为序数）
+     3. 序型小的集合可以保序嵌入到序型大的集合中
+     4. 保序嵌入是单射，故得到基数比较
+
+     在Mathlib4中，此定理对应 Cardinal.trichotomy 或 Ordinal.type_le 的推论。
+     良序化后，X ≅ α, Y ≅ β（α, β为序数）。
+     由序数的三歧性，α ≤ β 或 β ≤ α。
+     若 α ≤ β，则存在保序嵌入 f: α → β，这诱导单射 X ↪ Y。
   -/
   letI := wellOrderingTheorem X
   letI := wellOrderingTheorem Y
-  /- 比较两个良序集的序型 -/
+  /- 比较两个良序集的序型，利用序数可比较性导出嵌入存在性 -/
+  /- 需要引用 Mathlib.SetTheory.Ordinal 中的序数三歧性和初始段嵌入定理 -/
   sorry
 
 -- 超限归纳原理

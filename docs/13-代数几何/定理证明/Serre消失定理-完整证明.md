@@ -1,5 +1,6 @@
 ---
 title: "Serre消失定理 - 完整证明"
+msc_primary: 14A99
 description: "关于射影概形上凝聚层扭变后高阶上同调消失的完整证明"
 course: "Harvard Math 232br"
 topic: "代数几何"
@@ -21,7 +22,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -33,7 +34,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

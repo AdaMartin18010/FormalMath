@@ -1,6 +1,7 @@
 ---
 exercise_id: ALG-067
 title: Yoneda引理与可表函子
+msc_primary: 00A99
 difficulty: ⭐⭐⭐
 topics: [Yoneda引理, 可表函子, 自然同构, 表示]
 created: 2026-04-10

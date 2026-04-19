@@ -1,8 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 26A42
-- 03B40
+msc_primary: 00
+
+  - 00A99
+  - 26A42
+  - 03B40
 title: Riemann 积分与 Darboux 和 - 工作示例
 description: '理解Riemann可积的等价条件，通过Darboux上下和的概念深入理解积分的本质'
 author: 'FormalMath Team'

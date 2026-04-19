@@ -1,5 +1,6 @@
 ---
 title: MIT 18.100A 定理证明覆盖攻坚计划
+msc_primary: 00A99
 task_id: P2-MIT-18.100A
 level: "silver"
 target_courses: ["MIT 18.100A"]

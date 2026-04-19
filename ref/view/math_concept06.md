@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A15
+msc_primary: 00
 msc_secondary:
-- 01A99
+  - 00A15
+  - 01A99
 title: 黎曼数学哲学专题分析：内蕴几何与统一性思想的Genesis
 processed_at: '2026-04-05'
 ---

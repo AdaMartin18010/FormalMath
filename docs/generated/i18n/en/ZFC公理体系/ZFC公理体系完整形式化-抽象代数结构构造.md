@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: ZFC公理体系完整形式化 - 抽象代数结构构造
 processed_at: '2026-04-05'
 ---
@@ -17,7 +17,7 @@ processed_at: '2026-04-05'
 
 ---
 msc_primary: "03E30"
-msc_secondary: ['16-XX', '20-XX', '03E30']
+msc_secondary: ['16-00', '20-00', '03E30']
 ---
 
 # ZFC公理体系完整形式化 - 抽象代数结构构造

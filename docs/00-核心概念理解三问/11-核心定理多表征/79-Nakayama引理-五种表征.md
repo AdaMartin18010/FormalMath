@@ -1,9 +1,9 @@
 ---
-msc_primary: 16A99
-msc_secondary:
-- 16A99
-- 13A99
-- 14A99
+msc_primary: 16
+
+  - 16A99
+  - 13A99
+  - 14A99
 title: Nakayama引理 - 五种表征
 processed_at: '2026-04-05'
 ---

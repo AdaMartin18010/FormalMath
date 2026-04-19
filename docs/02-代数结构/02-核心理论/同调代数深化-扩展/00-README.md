@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 16A99
-- 97A99
-- 00A99
+msc_primary: 00
+
+  - 16A99
+  - 97A99
+  - 00A99
 title: 同调代数
 processed_at: '2026-04-05'
 references:
@@ -18,7 +18,7 @@ references:
       year: 2011
       isbn: 978-0132413770
       msc: 16-01
-      chapters: []
+      chapters: 
       url: ~
     - id: strang_la
       type: textbook
@@ -30,7 +30,7 @@ references:
       year: 2016
       isbn: 978-0980232776
       msc: 15-01
-      chapters: []
+      chapters: 
       url: ~
     - id: dummit_foote_aa
       type: textbook
@@ -43,7 +43,7 @@ references:
       year: 2003
       isbn: 978-0471433347
       msc: 13-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

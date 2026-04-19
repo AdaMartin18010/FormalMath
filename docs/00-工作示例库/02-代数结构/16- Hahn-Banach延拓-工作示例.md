@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 03B35
-- 00A99
+msc_primary: 00
+
+  - 00A99
+  - 03B35
+  - 00A99
 title: Hahn–Banach 延拓 - 工作示例
 processed_at: '2026-04-05'
 ---

@@ -1,9 +1,8 @@
 ---
 title: Weil 除子与 Cartier 除子的等价理论
-msc_primary: 14-01
-msc_secondary:
-- 14C20
-- 14C22
+msc_primary: 14
+  - 14C20
+  - 14C22
 level: silver
 target_courses:
 - Stanford FOAG

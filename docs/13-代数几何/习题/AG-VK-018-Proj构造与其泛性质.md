@@ -1,9 +1,8 @@
 ---
 title: Proj 构造与其泛性质
-msc_primary: 14-01
-msc_secondary:
-- 14A15
-- 14Mxx
+msc_primary: 14
+  - 14A15
+
 level: silver
 target_courses:
 - Stanford FOAG

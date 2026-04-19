@@ -1,7 +1,8 @@
 ---
-msc_primary: 97C30
+msc_primary: 97
 msc_secondary:
-- 91E40
+  - 97C30
+  - 91E40
 title: 认知工具
 processed_at: '2026-04-05'
 ---

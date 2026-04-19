@@ -1,6 +1,8 @@
 ---
 title: "动力系统扩展 (Dynamical Systems Extensions)"
-msc_primary: "37A05"
+msc_primary: 37
+
+  - 37A05
 msc_secondary: ['37B20', '37C20', '37D05', '37J40']
 processed_at: '2026-04-05'
 ---
@@ -8,7 +10,7 @@ processed_at: '2026-04-05'
 # 动力系统扩展 (Dynamical Systems Extensions)
 
 **最后更新**: 2026年4月5日  
-**MSC分类**: 37-XX (动力系统与遍历论)
+**MSC分类**: 37-00 (动力系统与遍历论)
 
 ---
 

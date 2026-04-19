@@ -1,13 +1,6 @@
 ---
 title: 数理逻辑分支索引 (Mathematical Logic Branch Index)
-msc_primary: 03-XX
-msc_secondary:
-- 03Bxx
-- 03Cxx
-- 03Dxx
-- 03Exx
-- 03Fxx
-- 03Gxx
+msc_primary: 03
 processed_at: '2026-04-08'
 version: '2.0'
 references:
@@ -22,7 +15,7 @@ references:
       year: 2001
       isbn: 978-0122384523
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
     - id: mendelson_logic
       type: textbook
@@ -34,7 +27,7 @@ references:
       year: 2015
       isbn: 978-1482237725
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -59,7 +52,7 @@ references:
 > **最后更新**: 2026年4月8日  
 > **版本**: v2.0 - 全面内容建设完成  
 > **文档统计**: 6大领域，48篇文档，12个专题  
-> **MSC分类**: 03-XX (数理逻辑与基础)
+> **MSC分类**: 03-00 (数理逻辑与基础)
 
 ---
 
@@ -98,7 +91,7 @@ docs/07-数理逻辑/
 │   ├── 05-多值逻辑.md                 # 多值/模糊逻辑
 │   ├── 05-多值逻辑-增强版.md           # 多值逻辑深化
 │   └── 练习题.md                      # 综合练习
-├── 01-集合论/                         # 集合论 (MSC 03Exx)
+├── 01-集合论/                         # 集合论 (MSC @)
 │   ├── 00-README.md
 │   ├── 01-基础概念.md                  # ZFC公理、序数、基数
 │   ├── 02-核心定理.md                  # 良序定理、L-S定理
@@ -106,21 +99,21 @@ docs/07-数理逻辑/
 │   ├── 04-选择公理.md                  # AC等价形式
 │   ├── 05-大基数.md                    # 大基数层级
 │   └── 06-形式化实现.md                 # Lean4 ZFC实现
-├── 02-模型论/                         # 模型论 (MSC 03Cxx)
+├── 02-模型论/                         # 模型论 (MSC @)
 │   ├── 00-README.md
 │   ├── 01-基础概念.md                  # 紧致性、量词消去
 │   ├── 02-核心定理.md                  # 完备性、L-S定理
 │   ├── 03-实战问题.md                  # ACF、o-极小性
 │   ├── 04-稳定性理论.md                 # Shelah稳定性
 │   └── 05-代数模型论.md                 # 代数应用
-├── 03-证明论/                         # 证明论 (MSC 03Fxx)
+├── 03-证明论/                         # 证明论 (MSC @)
 │   ├── 00-README.md
 │   ├── 01-基础概念.md                  # 自然演绎、sequent演算
 │   ├── 02-核心定理.md                  # 切消定理、序数分析
 │   ├── 03-实战问题.md                  # Goodstein定理
 │   ├── 04-逆向数学.md                  # 子系统分析
 │   └── 05-证明复杂性.md                 # 证明长度分析
-├── 04-可计算性理论/                    # 可计算性 (MSC 03Dxx)
+├── 04-可计算性理论/                    # 可计算性 (MSC @)
 │   ├── 00-README.md
 │   ├── 01-基础概念.md                  # 图灵机、λ演算
 │   ├── 02-核心定理.md                  # 停机问题、Rice定理

@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Cellular Homology, CW同调, 胞腔链复形]
 type: 定义

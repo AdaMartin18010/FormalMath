@@ -1,9 +1,10 @@
 ---
 title: 加法范畴与Abel范畴：范畴论的基础结构
-msc_primary: 18A99
+msc_primary: 18
 msc_secondary:
-- 00A99
-- 00A99
+  - 18A99
+  - 00A99
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # 加法范畴与Abel范畴：范畴论的基础结构

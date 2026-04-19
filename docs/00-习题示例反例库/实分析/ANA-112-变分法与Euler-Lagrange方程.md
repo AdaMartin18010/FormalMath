@@ -1,4 +1,5 @@
 ---
+msc_primary: 00A99
 习题编号: ANA-112
 学科: 实分析
 知识点: 变分法-Euler-Lagrange方程

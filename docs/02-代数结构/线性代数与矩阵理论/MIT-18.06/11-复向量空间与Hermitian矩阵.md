@@ -1,7 +1,9 @@
 ---
 title: "复向量空间与 Hermitian 矩阵"
 level: "silver"
-msc_primary: "15A57"
+msc_primary: 15
+
+  - 15A57
 target_courses:
   - "MIT 18.06"
 references:
@@ -100,7 +102,7 @@ $$
 \lambda_1 \langle x_1, x_2 \rangle = \langle \lambda_1 x_1, x_2 \rangle = \langle A x_1, x_2 \rangle = x_1^H A^H x_2 = x_1^H A x_2 = \langle x_1, \lambda_2 x_2 \rangle = \bar{\lambda}_2 \langle x_1, x_2 \rangle
 $$
 
-由于 $\lambda_2 \in \mathbb{R}$（定理 2.1），$\bar{\lambda}_2 = \lambda_2$。因此
+由于 $\lambda_2 \in \mathbb{R}$（**定理 2.1**），$\bar{\lambda}_2 = \lambda_2$。因此
 
 $$
 \lambda_1 \langle x_1, x_2 \rangle = \lambda_2 \langle x_1, x_2 \rangle
@@ -142,7 +144,7 @@ $$
 
 **归纳假设**：假设对 $n-1$ 阶 Hermitian 矩阵结论成立。
 
-**归纳步骤**：设 $A$ 是 $n$ 阶 Hermitian 矩阵。由定理 2.1，$A$ 有实特征值 $\lambda_1$ 和单位特征向量 $u_1$（$\|u_1\| = 1$）。将 $u_1$ 扩充为 $\mathbb{C}^n$ 的标准正交基 $\{u_1, v_2, \ldots, v_n\}$，令酉矩阵 $V = [u_1 \mid v_2 \mid \cdots \mid v_n]$。则
+**归纳步骤**：设 $A$ 是 $n$ 阶 Hermitian 矩阵。由**定理 2.1**，$A$ 有实特征值 $\lambda_1$ 和单位特征向量 $u_1$（$\|u_1\| = 1$）。将 $u_1$ 扩充为 $\mathbb{C}^n$ 的标准正交基 $\{u_1, v_2, \ldots, v_n\}$，令酉矩阵 $V = [u_1 \mid v_2 \mid \cdots \mid v_n]$。则
 
 $$
 V^H A V = \begin{pmatrix} \lambda_1 & 0 \\ 0 & B \end{pmatrix}
@@ -254,7 +256,7 @@ $$
 \det(A - \lambda I) = (2 - \lambda)(3 - \lambda) - (i)(-i) = \lambda^2 - 5\lambda + 6 - 1 = \lambda^2 - 5\lambda + 5
 $$
 
-特征值：$\lambda = \frac{5 \pm \sqrt{25 - 20}}{2} = \frac{5 \pm \sqrt{5}}{2}$。均为实数，符合定理 2.1。
+特征值：$\lambda = \frac{5 \pm \sqrt{25 - 20}}{2} = \frac{5 \pm \sqrt{5}}{2}$。均为实数，符合**定理 2.1**。
 
 **Step 3**：求特征向量。
 

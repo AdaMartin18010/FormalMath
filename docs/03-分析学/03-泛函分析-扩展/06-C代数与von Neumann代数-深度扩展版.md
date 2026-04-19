@@ -1,16 +1,17 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 46L05
-- 46L10
-- 46L35
-- 46L87
-- 47L30
+msc_primary: 00
+
+  - 00A99
+  - 46L05
+  - 46L10
+  - 46L35
+  - 46L87
+  - 47L30
 title: '12.06 C*-代数与von Neumann代数深度扩展版 / C*-Algebras and von Neumann Algebras: In-Depth
   Extensions'
 processed_at: '2026-04-05'
 ---
-msc_primary: "46Lxx"
+msc_primary: "@"
 msc_secondary: ['46L05', '46L10', '46L35', '46L87', '47L30']
 ---
 
@@ -310,13 +311,13 @@ $\mathcal{S}'$ 称为 $\mathcal{S}$ 的**交换子**（commutant），$\mathcal{
 
 ## 12.06.8 参考文献 / References
 
-1. **Murphy, G. J.** (1990). *C*-Algebras and Operator Theory*. Academic Press. (MSC: 46Lxx, 47Axx)
+1. **Murphy, G. J.** (1990). *C*-Algebras and Operator Theory*. Academic Press. (MSC: @, @)
 
-2. **Takesaki, M.** (1979, 2003). *Theory of Operator Algebras*, Vol. I, II, III. Springer. (MSC: 46Lxx)
+2. **Takesaki, M.** (1979, 2003). *Theory of Operator Algebras*, Vol. I, II, III. Springer. (MSC: @)
 
-3. **Blackadar, B.** (2006). *Operator Algebras: Theory of C*-Algebras and von Neumann Algebras*. Springer. (MSC: 46Lxx)
+3. **Blackadar, B.** (2006). *Operator Algebras: Theory of C*-Algebras and von Neumann Algebras*. Springer. (MSC: @)
 
-4. **Kadison, R. V. & Ringrose, J. R.** (1983, 1986). *Fundamentals of the Theory of Operator Algebras*, Vol. I, II. Academic Press. (MSC: 46Lxx)
+4. **Kadison, R. V. & Ringrose, J. R.** (1983, 1986). *Fundamentals of the Theory of Operator Algebras*, Vol. I, II. Academic Press. (MSC: @)
 
 5. **Connes, A.** (1994). *Noncommutative Geometry*. Academic Press. (MSC: 46L87, 58B34)
 

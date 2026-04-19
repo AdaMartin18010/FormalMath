@@ -21,7 +21,8 @@ processed_at: '2026-04-18'
 level: "silver"
 target_courses:
   - "Harvard 232br"
-msc_primary: "14Hxx"
+msc_primary: 14
+
 references:
   textbooks:
     - id: hartshorne_ag
@@ -80,7 +81,7 @@ created_at: 2026-04-18
 
 **Step 2: 应用 Riemann-Roch 定理**
 
-由 Riemann-Roch 定理（Hartshorne IV.1.3，定理 1.3）：对任意除子 $D$ 有
+由 Riemann-Roch 定理（Hartshorne IV.1.3，**定理 1.3**）：对任意除子 $D$ 有
 $$\ell(D) - \ell(K - D) = \deg(D) + 1 - g.$$
 
 这里 $\deg(D) = g+2$，故

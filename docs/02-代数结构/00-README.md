@@ -1,6 +1,8 @@
 ---
 title: "代数结构"
-msc_primary: "20A05"
+msc_primary: 20
+
+  - 20A05
 msc_secondary: ['13A99', '16D99', '12F99']
 processed_at: '2026-04-05'
 references:
@@ -15,7 +17,7 @@ references:
       year: 2011
       isbn: 978-0132413770
       msc: 16-01
-      chapters: []
+      chapters: 
       url: ~
     - id: strang_la
       type: textbook
@@ -27,7 +29,7 @@ references:
       year: 2016
       isbn: 978-0980232776
       msc: 15-01
-      chapters: []
+      chapters: 
       url: ~
     - id: dummit_foote_aa
       type: textbook
@@ -40,7 +42,7 @@ references:
       year: 2003
       isbn: 978-0471433347
       msc: 13-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -63,7 +65,7 @@ references:
 # 代数结构 (Algebraic Structures)
 
 **最后更新**: 2026年4月5日  
-**MSC分类**: 20-XX (群论), 13-XX (环论), 16-XX (结合环), 12-XX (域论)
+**MSC分类**: 20-00 (群论), 13-00 (环论), 16-00 (结合环), 12-00 (域论)
 
 ---
 

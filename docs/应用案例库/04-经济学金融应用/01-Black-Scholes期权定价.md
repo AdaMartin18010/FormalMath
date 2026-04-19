@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 35A99
-- 00A99
-- 00A99
+msc_primary: 00
+
+  - 35A99
+  - 00A99
+  - 00A99
 title: Black-Scholes期权定价模型
 processed_at: '2026-04-05'
 ---

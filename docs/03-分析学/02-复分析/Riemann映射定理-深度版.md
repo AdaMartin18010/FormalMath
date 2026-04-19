@@ -1,6 +1,8 @@
 ---
 title: "Riemann映射定理 - 深度版"
-msc_primary: "30C35"
+msc_primary: 30
+
+  - 30C35
 msc_secondary: ['30C20', '30F99', '31A25', '35J25']
 processed_at: '2026-04-05'
 ---

@@ -2,7 +2,9 @@
 title: "Weil猜想与代数几何革命：从数论到上同调"
 level: gold
 course: Weil数学理念
-msc_primary: "14F20"
+msc_primary: 14
+msc_secondary:
+  - 14F20
 references:
   textbooks:
     - title: "Foundations of Algebraic Geometry"

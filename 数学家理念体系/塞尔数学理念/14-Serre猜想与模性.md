@@ -2,7 +2,9 @@
 title: "Serre模性猜想：从数论到表示论的桥梁"
 level: gold
 course: Serre数学理念
-msc_primary: "11F80"
+msc_primary: 11
+msc_secondary:
+  - 11F80
 references:
   textbooks:
     - title: "Modular Forms and Fermat's Last Theorem"

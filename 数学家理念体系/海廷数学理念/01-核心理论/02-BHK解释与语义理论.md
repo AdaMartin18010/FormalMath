@@ -1,8 +1,9 @@
 ---
 title: BHK解释与语义理论：直觉主义逻辑的语义基础
-msc_primary: 01A60
+msc_primary: 01
 msc_secondary:
-- 01A70
+  - 01A60
+  - 01A70
 processed_at: '2026-04-05'
 ---
 

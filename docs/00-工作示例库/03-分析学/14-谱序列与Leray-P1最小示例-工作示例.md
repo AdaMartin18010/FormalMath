@@ -1,9 +1,10 @@
 ---
-msc_primary: 00A05
-msc_secondary:
-- 00A99
-- 00A99
-- 16A99
+msc_primary: 00
+
+  - 00A05
+  - 00A99
+  - 00A99
+  - 16A99
 title: 谱序列与 Leray 谱序列：P^1 最小可运行示例
 processed_at: '2026-04-05'
 ---

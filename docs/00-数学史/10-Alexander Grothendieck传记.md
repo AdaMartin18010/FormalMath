@@ -1,3 +1,8 @@
+---
+title: "Alexander Grothendieck传记"
+msc_primary: "01"
+---
+
 # Alexander Grothendieck 传记
 
 > "数学的主要目的不是发明计算技巧，而是理解数学对象背后的深层结构。"

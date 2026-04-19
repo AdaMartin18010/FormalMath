@@ -67,11 +67,33 @@ structure FormalSystem where
 
 -- 算术系统（Peano Arithmetic抽象）
 def PA : FormalSystem where
-  Formula := sorry -- 一阶算术公式
-  Proof := sorry   -- 形式证明
-  Provable := sorry -- ⊢ φ
-  Neg := sorry     -- ¬φ
-  Consistent := sorry -- ⊥不可证
+  Formula := sorry -- 一阶算术公式（在Mathlib4中可对应 FirstOrder.Language.Formula）
+  Proof := sorry   -- 形式证明（对应 FirstOrder.Proof）
+  Provable := sorry -- ⊢ φ（可证性关系）
+  Neg := sorry     -- ¬φ（否定运算）
+  Consistent := sorry -- ⊥不可证（一致性定义）
+  /-
+  在Mathlib4中，一阶逻辑的形式化正在发展中：
+  - FirstOrder.Language: 一阶语言的定义
+  - FirstOrder.Structure: 语义解释
+  - FirstOrder.Proof: 形式证明系统
+  哥德尔定理的完整形式化需要这些基础理论成熟后构建。
+
+## Mathlib4 形式化路线图
+
+| 依赖理论 | Mathlib4 状态 | 备注 |
+|---------|--------------|------|
+| 一阶逻辑语法 | 🔄 存在 (FirstOrder.Language) | 可表达公式、语言 |
+| 一阶逻辑语义 | 🔄 存在 (FirstOrder.Structure) | 结构、满足关系 |
+| 形式证明系统 | 🔄 发展中 (FirstOrder.Proof) | Hilbert式证明 |
+| 递归函数/可计算性 | 🔄 部分 (Computability) | 原始递归存在 |
+| 哥德尔编码 | ❌ 未开始 | 需要上述基础 |
+| 可表示性理论 | ❌ 未开始 | 核心难点 |
+
+**关键进展**: Mathlib4 已有一阶逻辑的形式化基础，但哥德尔定理的完整证明仍需大量工作。
+**推荐参考**: Flypitch 项目 (Jesse Han, Floris van Doorn) 已在 Lean3 中完成了连续统假设的形式化证明。
+
+  -/
 
 /-
 ## 哥德尔编码

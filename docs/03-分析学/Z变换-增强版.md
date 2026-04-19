@@ -1,6 +1,8 @@
 ---
 title: "Z变换 - 增强版"
-msc_primary: "44A15"
+msc_primary: 44
+
+  - 44A15
 msc_secondary: ['39A06', '93C55', '65T50', '94A12']
 processed_at: '2026-04-05'
 ---

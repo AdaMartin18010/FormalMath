@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A05
-msc_secondary:
-- 01A99
+msc_primary: 00
+
+  - 00A05
+  - 01A99
 title: 核心定理多表征框架
 processed_at: '2026-04-05'
 ---

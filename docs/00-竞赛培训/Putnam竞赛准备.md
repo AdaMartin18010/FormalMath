@@ -1,10 +1,11 @@
 ---
-msc_primary: 97D50
-msc_secondary:
-- 26A99
-- 15A99
-- 11A99
-- 05A99
+msc_primary: 97
+
+  - 97D50
+  - 26A99
+  - 15A99
+  - 11A99
+  - 05A99
 title: Putnam竞赛准备
 processed_at: '2026-04-05'
 ---

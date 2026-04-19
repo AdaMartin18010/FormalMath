@@ -1,5 +1,7 @@
 ---
-msc_primary: 26-01
+msc_primary: 26
+msc_secondary:
+  - 26-01
 title: MIT 18.100A Real Analysis L3定义级对齐表
 processed_at: '2026-04-09'
 course_code: MIT 18.100A

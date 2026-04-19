@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: FormalMath项目100%完成最终确认报告 - 更新版 / FormalMath Project 100% Completion Final Confirmation
   Report - Updated Version
 processed_at: '2026-04-05'

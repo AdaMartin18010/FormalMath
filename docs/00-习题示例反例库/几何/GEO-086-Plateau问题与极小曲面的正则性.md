@@ -1,5 +1,7 @@
 ---
-msc_primary: 49Q05
+msc_primary: 49
+
+  - 49Q05
 exercise_id: GEO-086
 title: Plateau问题与极小曲面的正则性
 difficulty: 4

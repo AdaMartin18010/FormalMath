@@ -2,7 +2,9 @@
 title: "Ch10 Green定理、Stokes定理与散度定理"
 level: silver
 course: MIT 18.02 多元微积分
-msc_primary: "26B20"
+msc_primary: 26
+
+  - 26B20
 target_courses:
   - MIT 18.02
 status: completed
@@ -131,6 +133,29 @@ $$\iint_S \mathbf{v} \cdot d\mathbf{S} = \iiint_E \nabla \cdot \mathbf{v} \, dV$
 散度定理在热方程的推导中起关键作用，将表面积分转化为体积分。
 
 ---
+
+## 习题
+
+**习题 10.1**。用 Green 定理计算 $\oint_C (x^2 - y) \, dx + (y^2 + x) \, dy$，其中 $C$ 为圆周 $x^2 + y^2 = 4$（逆时针）。
+
+*解答*：$P = x^2 - y$，$Q = y^2 + x$。$\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 1 - (-1) = 2$。
+$$\iint_D 2 \, dA = 2 \cdot \pi \cdot 2^2 = 8\pi$$$\square$
+
+---
+
+**习题 10.2**。用 Stokes 定理计算 $\iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}$，其中 $\mathbf{F} = (y, z, x)$，$S$ 为上半球面 $x^2 + y^2 + z^2 = 1$，$z \geq 0$（取上侧）。
+
+*解答*：边界 $\partial S$ 为 $xy$ 平面上的单位圆 $x^2 + y^2 = 1$（逆时针，从上方看）。
+参数化：$\mathbf{r}(t) = (\cos t, \sin t, 0)$。
+$\mathbf{F}(\mathbf{r}(t)) = (\sin t, 0, \cos t)$，$\mathbf{r}'(t) = (-\sin t, \cos t, 0)$。
+$$\oint_{\partial S} \mathbf{F} \cdot d\mathbf{r} = \int_0^{2\pi} (-\sin^2 t) \, dt = -\pi$$$\square$
+
+---
+
+**习题 10.3**。用散度定理计算 $\iint_S \mathbf{F} \cdot d\mathbf{S}$，其中 $\mathbf{F} = (x, y, z)$，$S$ 为球面 $x^2 + y^2 + z^2 = R^2$（外侧）。
+
+*解答*：$\nabla \cdot \mathbf{F} = 1 + 1 + 1 = 3$。
+$$\iiint_B 3 \, dV = 3 \cdot \frac{4}{3}\pi R^3 = 4\pi R^3$$$\square$
 
 **参考文献**
 

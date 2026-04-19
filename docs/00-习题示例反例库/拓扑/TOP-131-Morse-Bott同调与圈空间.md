@@ -1,5 +1,7 @@
 ---
-msc_primary: 58E05
+msc_primary: 58
+
+  - 58E05
 exercise_id: TOP-131
 title: Morse-Bott同调与圈空间
 difficulty: 4

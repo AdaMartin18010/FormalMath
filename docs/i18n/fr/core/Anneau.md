@@ -1,8 +1,9 @@
 ---
-msc_primary: 16A99
-msc_secondary:
-- 16D10
-- 16Z05
+msc_primary: 16
+
+  - 16A99
+  - 16D10
+  - 16Z05
 lang: fr
 original: docs/02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md
 translation_status: completed

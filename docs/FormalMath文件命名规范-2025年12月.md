@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 00A99
-- 03B40
+msc_primary: 00
+
+  - 00A99
+  - 00A99
+  - 03B40
 title: FormalMath项目文件命名规范
 processed_at: '2026-04-05'
 ---

@@ -1,6 +1,8 @@
 ---
 title: "密码学与信息安全"
-msc_primary: "94A60"
+msc_primary: 94
+
+  - 94A60
 msc_secondary: ['11T71', '14G50', '68P25']
 prerequisites: ['数论', '代数', '概率论', '计算复杂性']
 processed_at: '2026-04-08'

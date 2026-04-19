@@ -1,6 +1,7 @@
 ---
 exercise_id: ANA-079
 title: 凸分析基础与不等式应用
+msc_primary: 00A99
 difficulty: ⭐⭐⭐
 topics: [凸函数, Jensen不等式, 次梯度, Legendre变换]
 created: 2026-04-10

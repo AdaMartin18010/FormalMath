@@ -1,6 +1,8 @@
 ---
 title: "13.9 Hodge理论简介 - 增强版 / Introduction to Hodge Theory - Enhanced"
-msc_primary: "14C30"
+msc_primary: 14
+
+  - 14C30
 msc_secondary: ["14D07", "32G20", "32S35", "58A14"]
 processed_at: '2026-04-05'
 references:
@@ -15,7 +17,7 @@ references:
       year: 2011
       isbn: 978-0132413770
       msc: 16-01
-      chapters: []
+      chapters: 
       url: ~
     - id: strang_la
       type: textbook
@@ -27,7 +29,7 @@ references:
       year: 2016
       isbn: 978-0980232776
       msc: 15-01
-      chapters: []
+      chapters: 
       url: ~
     - id: dummit_foote_aa
       type: textbook
@@ -40,7 +42,7 @@ references:
       year: 2003
       isbn: 978-0471433347
       msc: 13-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

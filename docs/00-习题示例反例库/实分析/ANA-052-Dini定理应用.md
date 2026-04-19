@@ -4,6 +4,7 @@ category: 实分析
 topic: 函数序列与级数
 difficulty: ⭐⭐⭐
 title: Dini定理的条件缺一不可
+msc_primary: 00A99
 keywords: [Dini定理, 单调收敛, 紧致性, 连续性]
 prerequisites: [ANA-051, ANA-015]
 source: 经典分析习题

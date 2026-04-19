@@ -1,5 +1,7 @@
 ---
-msc_primary: 14C30
+msc_primary: 14
+
+  - 14C30
 exercise_id: AG-076
 title: mixed Hodge结构的一般构造
 difficulty: 4

@@ -1,3 +1,8 @@
+---
+title: "Vladimir Voevodsky传记"
+msc_primary: "01"
+---
+
 # Vladimir Voevodsky 传记
 
 > "我们需要一个新的数学基础，能够理解现代数学中真正重要的内容。"

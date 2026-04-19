@@ -1,5 +1,7 @@
 ---
-msc_primary: 57N13
+msc_primary: 57
+
+  - 57N13
 exercise_id: TOP-120
 title: 四维流形的Kirby演算
 difficulty: 3

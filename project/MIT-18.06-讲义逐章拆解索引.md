@@ -1,5 +1,6 @@
 ---
 title: MIT 18.06 线性代数讲义逐章拆解索引
+msc_primary: 00A99
 course_code: MIT 18.06
 course_name: Linear Algebra
 instructor: Prof. Gilbert Strang (MIT OCW Spring 2010)

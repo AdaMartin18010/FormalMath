@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B20
+msc_primary: 42
+
+  - 42B20
 exercise_id: ANA-218
 title: 向量值奇异积分的Banach空间性质
 difficulty: 4

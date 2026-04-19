@@ -1,8 +1,9 @@
 ---
-msc_primary: 11M26
-msc_secondary:
-- 11M06
-- 11N05
+msc_primary: 11
+
+  - 11M26
+  - 11M06
+  - 11N05
 title: Riemann假设 / Riemann Hypothesis
 processed_at: '2026-04-08'
 ---

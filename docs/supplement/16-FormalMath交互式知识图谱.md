@@ -1,3 +1,8 @@
+---
+title: "FormalMath交互式知识图谱"
+msc_primary: "00"
+---
+
 # FormalMath 交互式知识图谱
 
 ---

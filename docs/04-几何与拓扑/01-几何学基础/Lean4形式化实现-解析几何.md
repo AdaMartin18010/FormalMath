@@ -1,11 +1,12 @@
 ---
 title: Lean4形式化实现-解析几何
-msc_primary: 51N20
-msc_secondary:
-- 00A99
-- 51A99
-- 00A99
-- 00A99
+msc_primary: 51
+
+  - 51N20
+  - 00A99
+  - 51A99
+  - 00A99
+  - 00A99
 processed_at: '2026-04-05'
 references:
   textbooks:
@@ -19,7 +20,7 @@ references:
       year: 2000
       isbn: 978-0131816299
       msc: 54-01
-      chapters: []
+      chapters: 
       url: ~
     - id: lee_ism
       type: textbook
@@ -31,7 +32,7 @@ references:
       year: 2012
       isbn: 978-1441999818
       msc: 58-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

@@ -189,4 +189,19 @@ S² 上不存在处处非零的连续切向量场。
 - `Mathlib.Analysis.Calculus.DifferentialForm.Basic`: 微分形式基础
 - `Mathlib.AlgebraicTopology`: 欧拉示性数的组合定义
 - 完整的黎曼几何曲率理论与高斯-博内定理仍是前沿目标
+
+## Mathlib4 形式化路线图
+
+| 依赖理论 | Mathlib4 状态 | 备注 |
+|---------|--------------|------|
+| Riemannian度量 | 🔄 基础 (RiemannianMetric) | 度量张量、Levi-Civita联络 |
+| 曲率张量 | 🔄 部分 | 截面曲率、Ricci曲率 |
+| 高斯曲率 | 🔄 部分 | 2维情形 |
+| 示性类 (Euler类) | ❌ 未开始 | 需要向量丛理论 |
+| 微分形式积分 | 🔄 部分 | Stokes定理 |
+
+**相对可行性**: Gauss-Bonnet定理在2维情形的形式化是可达目标（P3级别）。
+**当前策略**: 先完成2维Gauss-Bonnet，再向高维推广。
+
 -/
+

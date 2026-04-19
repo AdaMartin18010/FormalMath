@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Spectral Sequence, Leray-Serre谱序列, Adams谱序列]
 type: 定义

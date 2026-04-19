@@ -1,5 +1,6 @@
 ---
 title: "IMO 竞赛层框架索引"
+msc_primary: 00A99
 level: project
 course: IMO竞赛数学
 status: planning

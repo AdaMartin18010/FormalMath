@@ -1,5 +1,7 @@
 ---
-msc_primary: 58E05
+msc_primary: 58
+
+  - 58E05
 exercise_id: ANA-230
 title: Morse理论在变分问题中的应用
 difficulty: 5

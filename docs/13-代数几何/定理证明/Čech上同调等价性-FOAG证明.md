@@ -1,5 +1,6 @@
 ---
 title: "Čech上同调与导出上同调等价性 - FOAG证明"
+msc_primary: 14A99
 description: "Čech上同调与导出函子上同调等价的完整证明，突出Vakil的几何直观方法"
 course: "Stanford FOAG"
 topic: "代数几何"
@@ -24,7 +25,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -36,7 +37,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

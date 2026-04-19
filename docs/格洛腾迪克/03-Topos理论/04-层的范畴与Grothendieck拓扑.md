@@ -1,10 +1,11 @@
 ---
 title: 层的范畴与Grothendieck拓扑
 description: 系统讲解Grothendieck拓扑的公理化定义、覆盖族、层条件、层化函子以及不同位型上的层范畴之间的联系。
-msc_primary: 18F10
-msc_secondary:
-- 18B25
-- 14F20
+msc_primary: 18
+
+  - 18F10
+  - 18B25
+  - 14F20
 processed_at: '2026-04-16'
 ---
 

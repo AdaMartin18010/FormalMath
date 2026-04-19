@@ -1,5 +1,6 @@
 ---
 title: "MIT 18.06 线性代数银层重构执行计划"
+msc_primary: 00A99
 task_id: "P2-MIT-18.06"
 level: "silver"
 course: "MIT 18.06 Linear Algebra (Spring 2010)"

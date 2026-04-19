@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: 数学×计算机科学：计算复杂性的组合分析
 processed_at: '2026-04-05'
 ---

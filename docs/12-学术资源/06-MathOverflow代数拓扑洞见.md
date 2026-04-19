@@ -1,10 +1,5 @@
 ---
-msc_primary: 55-XX
-msc_secondary:
-- 55Nxx
-- 55Pxx
-- 55Qxx
-- 55Uxx
+msc_primary: 55
 generated_at: '2026-04-09'
 title: MathOverflow代数拓扑精华对齐文档
 processed_at: '2026-04-09'

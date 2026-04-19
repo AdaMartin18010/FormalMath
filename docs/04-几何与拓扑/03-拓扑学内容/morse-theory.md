@@ -1,9 +1,10 @@
 ---
 title: 莫尔斯理论
-msc_primary: 57R70
-msc_secondary:
-- 57A99
-- 58E05
+msc_primary: 57
+
+  - 57R70
+  - 57A99
+  - 58E05
 processed_at: '2026-04-05'
 references:
   textbooks:
@@ -17,7 +18,7 @@ references:
       year: 2000
       isbn: 978-0131816299
       msc: 54-01
-      chapters: []
+      chapters: 
       url: ~
     - id: lee_ism
       type: textbook
@@ -29,7 +30,7 @@ references:
       year: 2012
       isbn: 978-1441999818
       msc: 58-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

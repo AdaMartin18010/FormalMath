@@ -1,10 +1,11 @@
 ---
 title: Abel与Abel群：交换代数的起源
-msc_primary: 20K01
+msc_primary: 20
 msc_secondary:
-- 01A55
-- 00A99
-- 13C99
+  - 20K01
+  - 01A55
+  - 00A99
+  - 13C99
 processed_at: '2026-04-05'
 ---
 # Abel与Abel群：交换代数的起源

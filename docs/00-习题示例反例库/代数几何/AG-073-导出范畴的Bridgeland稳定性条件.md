@@ -1,5 +1,7 @@
 ---
-msc_primary: 14F05
+msc_primary: 14
+
+  - 14F05
 exercise_id: AG-073
 title: 导出范畴的Bridgeland稳定性条件
 difficulty: 5

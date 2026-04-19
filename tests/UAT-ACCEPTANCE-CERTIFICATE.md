@@ -1,5 +1,7 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 certificate_id: FMP-UAT-2026-001
 issue_date: '2026-04-04'
 title: 🏆 FormalMath 项目验收证书

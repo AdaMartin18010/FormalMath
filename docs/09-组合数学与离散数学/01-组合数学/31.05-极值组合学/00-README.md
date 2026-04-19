@@ -1,6 +1,8 @@
 ---
 title: "极值组合学 (Extremal Combinatorics)"
-msc_primary: "05C35"
+msc_primary: 05
+
+  - 05C35
 msc_secondary: ['05D05', '05D10', '05D40', '05C65']
 processed_at: '2026-04-05'
 ---

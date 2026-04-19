@@ -1,5 +1,7 @@
 ---
-msc_primary: 20C33
+msc_primary: 20
+
+  - 20C33
 exercise_id: ALG-250
 title: Deligne-Lusztig特征标的计算
 difficulty: 5

@@ -1,8 +1,9 @@
 ---
-msc_primary: 03F30
-msc_secondary:
-- 11B83
-- 97F40
+msc_primary: 03
+
+  - 03F30
+  - 11B83
+  - 97F40
 level: L1-Formal
 domain: 数论
 concept: Peano公理

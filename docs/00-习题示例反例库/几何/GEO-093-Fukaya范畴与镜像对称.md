@@ -1,5 +1,7 @@
 ---
-msc_primary: 53D37
+msc_primary: 53
+
+  - 53D37
 exercise_id: GEO-093
 title: Fukaya范畴与镜像对称
 difficulty: 5

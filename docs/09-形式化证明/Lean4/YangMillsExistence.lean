@@ -291,6 +291,21 @@ def WilsonAction {G : GaugeGroup} (U : LatticeYangMills G a L) : ℝ :=
 4. Zee, A. *Quantum Field Theory in a Nutshell*
 5. Douglas, M.R. *Report on the status of the Yang-Mills millenium prize problem*
 
--/ 
+
+## Mathlib4 形式化路线图
+
+| 依赖理论 | Mathlib4 状态 | 备注 |
+|---------|--------------|------|
+| 主丛/联络 | 🔄 基础定义 | Mathlib.Geometry.Manifold |
+| 曲率形式 | 🔄 发展中 | 需要更多几何工具 |
+| 杨-Mills泛函 | ❌ 未开始 | 作用量积分 |
+| 瞬子理论 | ❌ 未开始 | 自对偶解 |
+| 规范群 | ❌ 未开始 | 无限维李群 |
+
+**千禧年难题状态**: 4维杨-Mills理论的质量间隙问题开放。
+**当前策略**: 定义杨-Mills方程的数学表述，建立规范场论框架。
+
+-/
+ 
 
 print "Yang-Mills Existence and Mass Gap framework complete"

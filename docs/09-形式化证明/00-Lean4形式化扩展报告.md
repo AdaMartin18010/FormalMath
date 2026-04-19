@@ -1,5 +1,7 @@
 ---
-msc_primary: "03B35"
+msc_primary: 03
+
+  - 03B35
 msc_secondary: ["68V15", "03B15"]
 ---
 

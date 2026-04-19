@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 14A99
-- 00A99
-- 00A99
+msc_primary: 00
+
+  - 14A99
+  - 00A99
+  - 00A99
 title: Serre对偶定理 - 五种表征
 processed_at: '2026-04-05'
 ---

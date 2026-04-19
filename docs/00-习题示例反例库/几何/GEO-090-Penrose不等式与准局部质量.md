@@ -1,5 +1,7 @@
 ---
-msc_primary: 83C57
+msc_primary: 83
+
+  - 83C57
 exercise_id: GEO-090
 title: Penrose不等式与准局部质量
 difficulty: 5

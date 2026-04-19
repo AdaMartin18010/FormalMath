@@ -1,8 +1,9 @@
 ---
-msc_primary: 20D20
-msc_secondary:
-- 20D99
-- 97H40
+msc_primary: 20
+
+  - 20D20
+  - 20D99
+  - 97H40
 title: Sylow 定理
 processed_at: '2026-04-05'
 ---

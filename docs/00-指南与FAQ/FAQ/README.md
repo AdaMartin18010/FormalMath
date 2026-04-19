@@ -1,8 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 97A99
-- 00A07
+msc_primary: 00
+
+  - 00A99
+  - 97A99
+  - 00A07
 title: FormalMath 常见问题解答 (FAQ) 索引
 processed_at: '2026-04-05'
 ---

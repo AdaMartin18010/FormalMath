@@ -1,14 +1,14 @@
 ---
 title: 微分方程 - Lean4形式化实现
-msc_primary: 35A99
-msc_secondary:
-- 00A99
-- 35A99
-- 00A99
+msc_primary: 35
+
+  - 00A99
+  - 35A99
+  - 00A99
 processed_at: '2026-04-05'
 ---
-msc_primary: "35-XX"
-msc_secondary: ['35Bxx', '35-XX', '60Gxx']
+msc_primary: "35-00"
+msc_secondary: ['35-00']
 ---
 
 # 微分方程 - Lean4形式化实现 / Differential Equations - Lean4 Formalization

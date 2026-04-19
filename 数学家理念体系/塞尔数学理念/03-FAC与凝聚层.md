@@ -2,7 +2,9 @@
 title: "FAC与凝聚层：Serre的代数几何奠基之作"
 level: gold
 course: Serre数学理念
-msc_primary: "14F05"
+msc_primary: 14
+msc_secondary:
+  - 14F05
 references:
   textbooks:
     - title: "Faisceaux algébriques cohérents"

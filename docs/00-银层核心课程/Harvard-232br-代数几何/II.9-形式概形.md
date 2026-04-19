@@ -3,6 +3,7 @@ course: Harvard 232br 代数几何
 level: silver
 
 title: Harvard 232br - Hartshorne Chapter II §9 习题解答
+msc_primary: 00A99
 course_code: Harvard Math 232br
 textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
 source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"

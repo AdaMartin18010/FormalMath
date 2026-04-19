@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Singular Homology, 奇异同调群, 拓扑不变量]
 type: 定义

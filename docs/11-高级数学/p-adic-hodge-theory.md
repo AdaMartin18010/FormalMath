@@ -1,6 +1,8 @@
 ---
 title: "p进Hodge理论深度版 / p-adic Hodge Theory (Advanced)"
-msc_primary: "14F30"
+msc_primary: 14
+
+  - 14F30
 msc_secondary: ["14F20", "14G22", "11G25"]
 processed_at: '2026-04-05'
 ---

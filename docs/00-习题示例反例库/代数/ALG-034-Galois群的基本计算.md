@@ -4,6 +4,7 @@ category: 代数
 topic: 域扩张与Galois理论
 difficulty: ⭐⭐⭐
 title: Galois群的基本计算
+msc_primary: 00A99
 keywords: [Galois群, 自同构, 分裂域, 置换, 伽罗瓦对应]
 prerequisites: [ALG-033, ALG-032]
 source: 经典代数习题

@@ -1,6 +1,8 @@
 ---
 title: "拉马努金的Mock Theta函数：百年谜题的解答"
-msc_primary: "11F37"
+msc_primary: 11
+msc_secondary:
+  - 11F37
 msc_secondary: ["11F27", "33D15", "11B65"]
 processed_at: '2026-04-05'
 ---

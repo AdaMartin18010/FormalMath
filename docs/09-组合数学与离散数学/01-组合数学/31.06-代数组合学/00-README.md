@@ -1,9 +1,10 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 05E05
-- 05E10
-- 20C30
+msc_primary: 00
+
+  - 00A99
+  - 05E05
+  - 05E10
+  - 20C30
 title: 31.06-代数组合学
 processed_at: '2026-04-05'
 ---

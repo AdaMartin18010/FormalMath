@@ -2,7 +2,9 @@
 title: "复几何与Stein流形：Serre从代数到分析的桥梁"
 level: gold
 course: Serre数学理念
-msc_primary: "32E10"
+msc_primary: 32
+msc_secondary:
+  - 32E10
 references:
   textbooks:
     - title: "Several Complex Variables with Connections to Algebraic Geometry and Lie Groups"

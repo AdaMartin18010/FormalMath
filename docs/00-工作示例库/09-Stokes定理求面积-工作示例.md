@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 26A42
-- 52A99
+msc_primary: 00
+
+  - 00A99
+  - 26A42
+  - 52A99
 title: Stokes 定理求面积 - 工作示例
 processed_at: '2026-04-05'
 ---
@@ -23,7 +23,7 @@ processed_at: '2026-04-05'
 |------|------|
 | **主题** | 用 Stokes/Green 公式由边界曲线求面积 |
 | **领域** | 几何学 / 向量分析 |
-| **MSC** | 58Axx（微分形式）、26B20（Green） |
+| **MSC** | @（微分形式）、26B20（Green） |
 | **相关概念** | Stokes、Green、曲线积分、面积 |
 
 ---

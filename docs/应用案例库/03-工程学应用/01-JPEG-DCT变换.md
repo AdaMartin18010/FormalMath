@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 22E47
-- 00A99
+msc_primary: 00
+
+  - 00A99
+  - 22E47
+  - 00A99
 title: JPEG图像压缩的DCT变换
 processed_at: '2026-04-05'
 ---

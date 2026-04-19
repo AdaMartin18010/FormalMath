@@ -1,5 +1,7 @@
 ---
-msc_primary: 14F25
+msc_primary: 14
+msc_secondary:
+  - 14F25
 msc_secondary: [18G40, 18G10]
 title: Stacks Tag 01DZ - Čech上同调与导出函子上同调的等价性
 stacks_tags: ["01DZ", "01ED", "03FD"]

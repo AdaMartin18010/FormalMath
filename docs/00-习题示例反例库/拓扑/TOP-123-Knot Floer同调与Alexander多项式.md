@@ -1,5 +1,7 @@
 ---
-msc_primary: 57M27
+msc_primary: 57
+
+  - 57M27
 exercise_id: TOP-123
 title: Knot Floer同调与Alexander多项式
 difficulty: 4

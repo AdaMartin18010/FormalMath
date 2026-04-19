@@ -1,17 +1,22 @@
+---
+title: "README"
+msc_primary: "11"
+---
+
 ﻿---
-msc_primary: 11-XX
+msc_primary: 11-00
 msc_secondary:
-- 11Mxx
-- 11Fxx
-- 11Rxx
-- 11Gxx
+- @
+- @
+- @
+- @
 title: 数论深度扩展 / Number Theory Deep Extensions
-processed_at: '2026-04-05'
+processed_at: '2026'-04-05'
 ---
 # 数论深度扩展 / Number Theory Deep Extensions
 
 **最后更新**: 2026年4月3日
-**MSC 主类**: 11-XX (Number theory)
+**MSC 主类**: 11-00 (Number theory)
 **国际对标**: MIT 18.785, Harvard Math 229, Princeton MAT 419/451
 
 ---

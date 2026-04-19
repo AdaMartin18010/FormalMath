@@ -1,8 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 26A24
-- 03B35
+msc_primary: 00
+
+  - 00A99
+  - 26A24
+  - 03B35
 title: Lagrange 中值定理 - 工作示例
 description: '通过构造辅助函数证明Lagrange中值定理，理解中值定理的几何意义和应用'
 author: 'FormalMath Team'

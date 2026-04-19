@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B20
+msc_primary: 42
+
+  - 42B20
 exercise_id: ANA-209
 title: Calderón-Zygmund算子的T1定理
 difficulty: 5

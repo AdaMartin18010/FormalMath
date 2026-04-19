@@ -1,6 +1,8 @@
 ---
 title: "证明论 (Proof Theory)"
-msc_primary: "03F03"
+msc_primary: 03
+
+  - 03F03
 msc_secondary: ['03F05', '03F30', '03F35', '03F50']
 processed_at: '2026-04-05'
 references:
@@ -15,7 +17,7 @@ references:
       year: 2001
       isbn: 978-0122384523
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
     - id: mendelson_logic
       type: textbook
@@ -27,7 +29,7 @@ references:
       year: 2015
       isbn: 978-1482237725
       msc: 03-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

@@ -1,10 +1,9 @@
 ---
 title: "Ch 23–25: Smooth / Étale / Flat 态射深入证明"
-msc_primary: "14-01"
-msc_secondary:
-  - "14B25"
-  - "14F20"
-  - "14Mxx"
+msc_primary: 14
+  - 14B25
+  - 14F20
+
 level: "silver"
 target_courses:
   - "Stanford FOAG Ch.23–25"

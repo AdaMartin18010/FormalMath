@@ -1,5 +1,7 @@
 ---
-msc_primary: 57R56
+msc_primary: 57
+
+  - 57R56
 exercise_id: TOP-126
 title: Chern-Simons理论与TQFT
 difficulty: 4

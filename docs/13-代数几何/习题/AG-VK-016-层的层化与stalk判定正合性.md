@@ -1,9 +1,8 @@
 ---
 title: 层的层化与 stalk 判定正合性
-msc_primary: 14-01
-msc_secondary:
-- 14F05
-- 18F20
+msc_primary: 14
+  - 14F05
+  - 18F20
 level: silver
 target_courses:
 - Stanford FOAG

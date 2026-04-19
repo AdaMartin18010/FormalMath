@@ -1,5 +1,6 @@
 ---
 title: "Riemann-Roch定理 (曲线情形) - 完整证明"
+msc_primary: 14A99
 description: "代数曲线上的Riemann-Roch定理的完整证明，包括除子版本和层版本"
 course: "Harvard Math 232br"
 topic: "代数几何"
@@ -21,7 +22,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -33,7 +34,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

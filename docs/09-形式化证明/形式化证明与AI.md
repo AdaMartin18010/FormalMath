@@ -1,9 +1,10 @@
 ---
-msc_primary: 68V15
-msc_secondary:
-- 68T07
-- 03B35
-- 03B70
+msc_primary: 68
+
+  - 68V15
+  - 68T07
+  - 03B35
+  - 03B70
 title: 形式化证明与AI / Formal Proof and AI
 processed_at: '2026-04-05'
 ---
@@ -789,7 +790,6 @@ example : {state} := by
 
         return None  # 证明失败
 
-
 # 使用示例
 if __name__ == "__main__":
     prover = NeuralTheoremProver()
@@ -881,7 +881,6 @@ class LeanREPL:
         if self.process:
             self.process.stdin.close()
             self.process.wait()
-
 
 # 使用示例
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 ---
 title: "IMO真题-函数方程：实数域上的函数"
+msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L4

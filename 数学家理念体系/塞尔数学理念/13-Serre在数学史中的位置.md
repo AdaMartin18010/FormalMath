@@ -2,7 +2,9 @@
 title: "Jean-Pierre Serre在数学史中的位置：百科全书式的统一者"
 level: gold
 course: Serre数学理念
-msc_primary: "01A70"
+msc_primary: 01
+msc_secondary:
+  - 01A70
 references:
   textbooks:
     - title: "Oeuvres - Collected Papers I, II, III, IV"

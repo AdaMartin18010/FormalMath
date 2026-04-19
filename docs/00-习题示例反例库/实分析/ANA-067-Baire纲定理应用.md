@@ -4,6 +4,7 @@ category: 实分析
 topic: 综合练习
 difficulty: ⭐⭐⭐
 title: Baire纲定理及其应用
+msc_primary: 00A99
 keywords: [Baire纲定理, 剩余集, 纲, 一致有界原理, 开映射]
 prerequisites: [ANA-066, ANA-033]
 source: 经典分析习题

@@ -2,7 +2,9 @@
 title: "Bourbaki运动与数学统一：Weil的结构主义遗产"
 level: gold
 course: Weil数学理念
-msc_primary: "01A60"
+msc_primary: 01
+msc_secondary:
+  - 01A60
 references:
   textbooks:
     - title: "Bourbaki: A Secret Society of Mathematicians"

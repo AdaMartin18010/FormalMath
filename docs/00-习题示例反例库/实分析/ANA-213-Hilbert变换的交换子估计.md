@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B20
+msc_primary: 42
+
+  - 42B20
 exercise_id: ANA-213
 title: Hilbert变换的交换子估计
 difficulty: 4

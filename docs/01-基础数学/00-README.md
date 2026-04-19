@@ -1,6 +1,8 @@
 ---
 title: "基础数学"
-msc_primary: "00A05"
+msc_primary: 00
+
+  - 00A05
 msc_secondary: ['03E20', '06A05', '11A05']
 processed_at: '2026-04-05'
 ---

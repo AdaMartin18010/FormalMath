@@ -1,5 +1,6 @@
 ---
 title: Taylor 定理（Taylor's Theorem）
+msc_primary: 26A99
 course: MIT 18.100A Real Analysis
 level: silver
 target_courses:
@@ -289,3 +290,16 @@ $$f(x) \neq \sum_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!}x^k = 0$$
 ---
 
 *文档版本: 1.0 | 创建日期: 2026-04-17 | 对应课程: MIT 18.100A*
+
+
+## 习题
+
+**习题 1.1**。写出 $f(x) = \\ln(1+x)$ 在 $x=0$ 处的 Taylor 级数，并确定收敛半径。
+
+*解答*：$\\ln(1+x) = x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\cdots = \\sum_{n=1}^{\\infty} \\frac{(-1)^{n-1}x^n}{n}$。由比值判别法，收敛半径 $R=1$。$\\square$
+
+---
+
+**习题 1.2**。用 Taylor 展开估计 $\\sqrt{e}$ 的误差小于 $0.001$ 所需的最小阶数。
+
+*解答*：$e^x = 1 + x + \\frac{x^2}{2!} + \\cdots$。在 $x=1/2$ 处，余项 $R_n = \\frac{e^c}{(n+1)!}(1/2)^{n+1} \\leq \\frac{e}{(n+1)!2^{n+1}}$。$n=4$ 时 $R_4 < 0.001$。$\\square$

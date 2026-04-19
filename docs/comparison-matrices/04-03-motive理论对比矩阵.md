@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: Motive理论对比矩阵
 processed_at: '2026-04-05'
 ---

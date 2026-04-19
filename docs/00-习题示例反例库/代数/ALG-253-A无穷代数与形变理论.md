@@ -1,5 +1,7 @@
 ---
-msc_primary: 16E40
+msc_primary: 16
+
+  - 16E40
 exercise_id: ALG-253
 title: A无穷代数与形变理论
 difficulty: 4

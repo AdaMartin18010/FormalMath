@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B25
+msc_primary: 42
+
+  - 42B25
 exercise_id: ANA-210
 title: 极大函数在Hardy空间的作用
 difficulty: 4

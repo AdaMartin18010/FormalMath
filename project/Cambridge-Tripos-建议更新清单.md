@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
 msc_secondary:
-- 97A99
+  - 00A99
+  - 97A99
 processed_at: '2026-04-04'
 title: FormalMath与Cambridge Tripos对齐建议更新清单
 ---

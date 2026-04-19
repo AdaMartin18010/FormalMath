@@ -1,5 +1,7 @@
 ---
-msc_primary: 40A05
+msc_primary: 40
+
+  - 40A05
 exercise_id: ANA-017
 title: Telescope求和技巧
 difficulty: 3

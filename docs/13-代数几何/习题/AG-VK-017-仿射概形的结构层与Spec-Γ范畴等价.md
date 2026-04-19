@@ -1,9 +1,8 @@
 ---
 title: 仿射概形的结构层与 Spec-Γ 范畴等价
-msc_primary: 14-01
-msc_secondary:
-- 14A15
-- 14F05
+msc_primary: 14
+  - 14A15
+  - 14F05
 level: silver
 target_courses:
 - Stanford FOAG

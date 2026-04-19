@@ -1,5 +1,7 @@
 ---
-msc_primary: 57M27
+msc_primary: 57
+
+  - 57M27
 exercise_id: TOP-127
 title: Khovanov同调与Jones多项式范畴化
 difficulty: 4

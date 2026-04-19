@@ -1,9 +1,10 @@
 ---
-msc_primary: 20A99
-msc_secondary:
-- 00A99
-- 00A99
-- 03B35
+msc_primary: 20
+
+  - 20A99
+  - 00A99
+  - 00A99
+  - 03B35
 title: Fermat 小定理 - 工作示例
 processed_at: '2026-04-05'
 ---

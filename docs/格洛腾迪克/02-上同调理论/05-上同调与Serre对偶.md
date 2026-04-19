@@ -1,10 +1,11 @@
 ---
 title: 上同调与Serre对偶
 description: 深入介绍Serre对偶定理的陈述、证明思路、推广到Grothendieck对偶，以及在射影概形上的具体计算应用。
-msc_primary: 14F17
-msc_secondary:
-- 14F05
-- 32C35
+msc_primary: 14
+
+  - 14F17
+  - 14F05
+  - 32C35
 processed_at: '2026-04-16'
 ---
 

@@ -1,5 +1,7 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 release_version: v1.0
 email_type: 用户欢迎邮件
 title: FormalMath 用户欢迎邮件模板

@@ -1,6 +1,8 @@
 ---
 title: "Deligne证明Weil猜想：20世纪数学的里程碑"
-msc_primary: "14G10"
+msc_primary: 14
+msc_secondary:
+  - 14G10
 msc_secondary: ["11G25", "14F20", "11M38"]
 processed_at: '2026-04-05'
 ---

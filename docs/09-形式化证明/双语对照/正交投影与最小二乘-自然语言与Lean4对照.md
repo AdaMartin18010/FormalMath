@@ -1,5 +1,6 @@
 ---
 title: "正交投影与最小二乘 自然语言与 Lean4 对照"
+msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"

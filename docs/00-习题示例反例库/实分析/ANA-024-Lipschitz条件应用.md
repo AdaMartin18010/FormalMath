@@ -1,5 +1,7 @@
 ---
-msc_primary: 26A16
+msc_primary: 26
+
+  - 26A16
 exercise_id: ANA-024
 title: Lipschitz条件应用
 difficulty: 3

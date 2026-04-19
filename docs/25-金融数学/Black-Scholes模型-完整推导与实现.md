@@ -1,6 +1,8 @@
 ---
 title: Black-Scholes期权定价模型 - 完整推导与Python实现
-msc_primary: 91G20
+msc_primary: 91
+
+  - 91G20
 ---
 
 # Black-Scholes期权定价模型 - 完整推导与实现

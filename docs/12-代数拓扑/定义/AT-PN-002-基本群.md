@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Fundamental Group, 第一同伦群, Poincaré群]
 type: 定义
@@ -6,7 +7,7 @@ level: L3-理论建构层
 difficulty: ⭐⭐⭐
 concept_dependency: [同伦, 道路, 环路, 拓扑空间]
 prerequisite_concepts: [同伦, 道路连通空间]
-prerequisite_theorems: []
+prerequisite_theorems: 
 course_context: MAT 365 Topology
 msc2010: [55Q05, 55P10]
 related_concepts: [覆叠空间, 同伦群, van Kampen定理]

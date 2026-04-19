@@ -1,7 +1,8 @@
 ---
 title: 分析学分支内容索引
+msc_primary: 26A99
 description: FormalMath项目分析学完整内容索引与导航
-mst_primary: 26-XX, 28-XX, 30-XX, 46-XX
+mst_primary: 26-00, 28-00, 30-00, 46-00
 last_updated: '2026-04-08'
 ---
 

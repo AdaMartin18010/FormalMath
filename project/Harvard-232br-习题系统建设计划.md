@@ -1,5 +1,6 @@
 ---
 title: Harvard 232br 习题系统建设计划
+msc_primary: 00A99
 task_id: P2-Harvard-232br
 course_code: Harvard Math 232br
 textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"

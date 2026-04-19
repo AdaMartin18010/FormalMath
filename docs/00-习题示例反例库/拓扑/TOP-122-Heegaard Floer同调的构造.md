@@ -1,5 +1,7 @@
 ---
-msc_primary: 57R58
+msc_primary: 57
+
+  - 57R58
 exercise_id: TOP-122
 title: Heegaard Floer同调的构造
 difficulty: 5

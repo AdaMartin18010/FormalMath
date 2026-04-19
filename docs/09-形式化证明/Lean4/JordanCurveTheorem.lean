@@ -196,6 +196,20 @@ Jordan曲线定理的形式化极其困难：
 3. Thomassen, C. *The Jordan-Schönflies Theorem and the Classification of Surfaces*
 4. 维基百科：Jordan Curve Theorem
 
--/ 
+
+## Mathlib4 形式化路线图
+
+| 依赖理论 | Mathlib4 状态 | 备注 |
+|---------|--------------|------|
+| 平面拓扑 | 🔄 基础 | 连通性、分离性 |
+| 简单闭曲线 | 🔄 可定义 | 连续单射 ^1 	o \mathbb{R}^2$ |
+| 环绕数 | ❌ 未开始 | 代数拓扑工具 |
+| Alexander对偶 | ❌ 未开始 | 同调论 |
+
+**形式化可行性**: Jordan曲线定理已有多个形式化证明（Hales 2005 in Isabelle, 其他系统）。
+**Mathlib4策略**: 可利用平面拓扑的基础工具，构建组合证明（Tverberg 1980）。
+
+-/
+ 
 
 #eval IO.println "Jordan Curve Theorem formalization framework complete"

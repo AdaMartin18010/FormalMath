@@ -1,4 +1,5 @@
 ---
+msc_primary: 00A99
 习题编号: ANA-200
 学科: 实分析
 知识点: 多复变-Monge-Ampere方程

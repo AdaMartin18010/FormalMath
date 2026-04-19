@@ -1,5 +1,7 @@
 ---
-msc_primary: 15A66
+msc_primary: 15
+
+  - 15A66
 exercise_id: ALG-257
 title: Clifford代数与旋量表示
 difficulty: 3

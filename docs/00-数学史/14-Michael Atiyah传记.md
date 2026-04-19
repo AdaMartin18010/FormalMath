@@ -1,3 +1,8 @@
+---
+title: "Michael Atiyah传记"
+msc_primary: "01"
+---
+
 # Michael Atiyah 传记
 
 > "数学是一门艺术，而不是科学。数学家是被某种内在美驱动的艺术家。"

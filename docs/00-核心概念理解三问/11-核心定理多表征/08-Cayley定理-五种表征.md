@@ -1,7 +1,8 @@
 ---
-msc_primary: 20B99
-msc_secondary:
-- 20A05
+msc_primary: 20
+
+  - 20B99
+  - 20A05
 title: Cayley定理 - 五种表征
 processed_at: '2026-04-05'
 ---

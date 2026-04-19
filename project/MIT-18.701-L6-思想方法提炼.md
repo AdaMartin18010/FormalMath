@@ -1,8 +1,9 @@
 ---
-msc_primary: 20-01
+msc_primary: 20
 msc_secondary:
-- 15-01
-- 16-01
+  - 20-01
+  - 15-01
+  - 16-01
 title: MIT 18.701 Algebra I L6思想方法级对齐
 course_code: MIT 18.701
 course_name: Algebra I

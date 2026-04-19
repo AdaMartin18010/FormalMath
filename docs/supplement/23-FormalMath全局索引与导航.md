@@ -1,3 +1,8 @@
+---
+title: "FormalMath全局索引与导航"
+msc_primary: "00"
+---
+
 # FormalMath 全局索引与导航
 
 ---

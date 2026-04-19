@@ -1,5 +1,7 @@
 ---
-msc_primary: 57M50
+msc_primary: 57
+
+  - 57M50
 exercise_id: TOP-124
 title: sutured manifold理论与分解
 difficulty: 4

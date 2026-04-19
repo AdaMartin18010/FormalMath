@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 22E47
-- 00A99
-- 97A99
+msc_primary: 00
+
+  - 22E47
+  - 00A99
+  - 97A99
 title: FormalMath符号使用规范
 processed_at: '2026-04-05'
 ---

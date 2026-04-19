@@ -1,7 +1,8 @@
 ---
-msc_primary: 01A99
+msc_primary: 01
 msc_secondary:
-- 97A30
+  - 01A99
+  - 97A30
 title: 08-数学历史
 processed_at: '2026-04-05'
 ---

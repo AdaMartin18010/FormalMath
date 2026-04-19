@@ -1,3 +1,8 @@
+---
+title: "Lean4 tactics完全指南"
+msc_primary: "03"
+---
+
 # Lean4 Tactics 完全指南
 
 本文档提供 Lean4 中 60+ 个 tactics 的完整参考，包括分类索引、使用场景和组合技巧。

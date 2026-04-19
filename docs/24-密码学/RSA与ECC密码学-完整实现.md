@@ -1,6 +1,8 @@
 ---
 title: RSA与椭圆曲线密码学完整实现
-msc_primary: 94A60
+msc_primary: 94
+
+  - 94A60
 ---
 
 # RSA与椭圆曲线密码学完整实现

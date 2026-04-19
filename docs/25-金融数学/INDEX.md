@@ -1,6 +1,7 @@
 ---
 title: "金融数学与工程"
-msc_primary: "91Gxx"
+msc_primary: 91
+
 msc_secondary: ['60H10', '60J60', '91B25', '91G20']
 prerequisites: ['随机过程', '微分方程', '概率论', '数值方法']
 processed_at: '2026-04-08'
@@ -9,7 +10,7 @@ processed_at: '2026-04-08'
 # 金融数学与工程 (Mathematical Finance and Engineering)
 
 **最后更新**: 2026年4月8日  
-**MSC分类**: 91Gxx (数理金融)  
+**MSC分类**: @ (数理金融)  
 **课程对齐**: MIT 18.642, Columbia MATH STATS W4291, Stanford MATH 238
 
 ---

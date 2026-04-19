@@ -4,6 +4,7 @@ category: 实分析
 topic: 综合练习
 difficulty: ⭐⭐⭐⭐
 title: Fourier级数的收敛与发散
+msc_primary: 00A99
 keywords: [Fourier级数, Dirichlet核, Fejér核, 逐点收敛, Cesàro和]
 prerequisites: [ANA-067, ANA-053]
 source: 经典分析习题

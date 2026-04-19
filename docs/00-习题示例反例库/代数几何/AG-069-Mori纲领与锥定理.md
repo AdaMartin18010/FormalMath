@@ -1,5 +1,7 @@
 ---
-msc_primary: 14E30
+msc_primary: 14
+
+  - 14E30
 exercise_id: AG-069
 title: Mori纲领与锥定理
 difficulty: 3

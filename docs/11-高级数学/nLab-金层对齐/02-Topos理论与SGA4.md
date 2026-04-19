@@ -1,10 +1,11 @@
 ---
 title: "Topos 理论与 SGA 4"
 level: "gold"
-msc_primary: "18B25"
-msc_secondary:
-- "18F10"
-- "03G30"
+msc_primary: 18
+
+  - 18B25
+  - 18F10
+  - 03G30
 target_courses:
   - "nLab: topos"
   - "nLab: sheaf topos"

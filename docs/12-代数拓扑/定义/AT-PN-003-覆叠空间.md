@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Covering Space, 覆叠映射, 万有覆叠]
 type: 定义

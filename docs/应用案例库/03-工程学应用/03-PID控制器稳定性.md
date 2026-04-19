@@ -1,9 +1,10 @@
 ---
-msc_primary: 16A99
-msc_secondary:
-- 00A99
-- 22E47
-- 00A99
+msc_primary: 16
+
+  - 16A99
+  - 00A99
+  - 22E47
+  - 00A99
 title: PID控制器的稳定性分析
 processed_at: '2026-04-05'
 ---

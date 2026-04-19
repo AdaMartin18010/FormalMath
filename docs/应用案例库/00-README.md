@@ -1,11 +1,16 @@
+---
+title: "README"
+msc_primary: "00"
+---
+
 ﻿---
 msc_primary: 00A99
 msc_secondary:
-- 68Qxx
-- 62Fxx
+- @
+- @
 - 26A42
 title: 数学应用案例库 / Mathematical Applications Library
-processed_at: '2026-04-05'
+processed_at: '2026'-04-05'
 ---
 # 数学应用案例库 / Mathematical Applications Library
 

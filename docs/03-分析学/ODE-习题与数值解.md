@@ -1,6 +1,6 @@
 ---
 title: 常微分方程习题与数值解
-msc_primary: 34-01
+msc_primary: 34
 ---
 
 # 常微分方程习题与数值解

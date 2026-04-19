@@ -4,6 +4,7 @@ references:
     - id: munkres_top
       type: textbook
       title: Topology
+msc_primary: 51A99
       authors:
       - James R. Munkres
       publisher: Pearson
@@ -11,7 +12,7 @@ references:
       year: 2000
       isbn: 978-0131816299
       msc: 54-01
-      chapters: []
+      chapters: 
       url: ~
     - id: lee_ism
       type: textbook
@@ -23,7 +24,7 @@ references:
       year: 2012
       isbn: 978-1441999818
       msc: 58-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -44,15 +45,15 @@ references:
 ---
 ﻿---
 title: "几何学"
-msc_primary: "51-XX"
-msc_secondary: ['51A05', '51M04', '51N15', '52-XX', '53-XX']
-processed_at: '2026-04-05'
+msc_primary: "51-00"
+msc_secondary: ['51A05', '51M04', '51N15', '52-00', '53-00']
+processed_at: '2026'-04-05'
 ---
 
 # 几何学 (Geometry)
 
 **最后更新**: 2026年4月5日  
-**MSC分类**: 51-XX (几何学), 52-XX (凸几何与离散几何), 53-XX (微分几何)
+**MSC分类**: 51-00 (几何学), 52-00 (凸几何与离散几何), 53-00 (微分几何)
 
 ---
 

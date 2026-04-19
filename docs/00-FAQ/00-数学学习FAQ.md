@@ -1,8 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 97A99
-- 00A07
+msc_primary: 00
+
+  - 00A99
+  - 97A99
+  - 00A07
 title: 数学学习常见问题解答 (FAQ)
 processed_at: '2026-04-05'
 ---

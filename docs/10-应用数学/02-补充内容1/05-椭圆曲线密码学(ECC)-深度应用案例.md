@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A69
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A69
+  - 00A99
 title: 椭圆曲线密码学(ECC)深度应用案例
 processed_at: '2026-04-05'
 ---
@@ -201,7 +202,6 @@ class FiniteField:
     def __repr__(self) -> str:
         return f"FF({self.value:#x})"
 
-
 # ============================================================================
 # 第2部分：椭圆曲线点
 # ============================================================================
@@ -331,7 +331,6 @@ class ECPoint:
             y_bytes = self.y.value.to_bytes((self.prime.bit_length() + 7) // 8, 'big')
             return b'\x04' + x_bytes + y_bytes
 
-
 # ============================================================================
 # 第3部分：标准曲线定义
 # ============================================================================
@@ -358,7 +357,6 @@ class CurveParams:
             self.a, self.b, self.p
         )
 
-
 # secp256k1参数 (比特币曲线)
 SECP256K1 = CurveParams(
     name="secp256k1",
@@ -382,7 +380,6 @@ SECP256R1 = CurveParams(
     n=0xFFFFFFFF00000000FFFFFFFFFFFFFFFFBCE6FAADA7179E84F3B9CAC2FC632551,
     h=1
 )
-
 
 # ============================================================================
 # 第4部分：ECDH密钥交换
@@ -435,7 +432,6 @@ class ECDH:
 
         # 使用SHA-256派生最终密钥
         return hashlib.sha256(x_bytes).digest()
-
 
 # ============================================================================
 # 第5部分：ECDSA签名
@@ -557,7 +553,6 @@ class ECDSA:
         # 验证 r ≡ x_R' (mod n)
         return r == (R_prime.x.value % n)
 
-
 # ============================================================================
 # 第6部分：测试与演示
 # ============================================================================
@@ -580,7 +575,6 @@ def test_finite_field():
     print(f"b^(-1) = {b.inverse().value}")
     print(f"验证: b * b^(-1) = {(b * b.inverse()).value}")
     print()
-
 
 def test_ec_point_operations():
     """测试椭圆曲线点运算"""
@@ -618,7 +612,6 @@ def test_ec_point_operations():
     print(f"结合律验证: (P+Q)+S == P+(Q+S): {left == right}")
     print()
 
-
 def test_secp256k1():
     """测试secp256k1曲线"""
     print("=" * 60)
@@ -645,7 +638,6 @@ def test_secp256k1():
     P = k * G
     print(f"k*G = {P}")
     print()
-
 
 def test_ecdh():
     """测试ECDH密钥交换"""
@@ -675,7 +667,6 @@ def test_ecdh():
     print(f"Bob计算的共享密钥: {shared_bob.hex()}")
     print(f"密钥匹配: {shared_alice == shared_bob}")
     print()
-
 
 def test_ecdsa():
     """测试ECDSA签名"""
@@ -711,7 +702,6 @@ def test_ecdsa():
     valid_fake = ecdsa.verify(public_key, fake_message, (r, s))
     print(f"伪造消息验证: {'通过' if valid_fake else '失败 ✓'}")
     print()
-
 
 def test_ecdsa_with_known_k():
     """
@@ -762,7 +752,6 @@ def test_ecdsa_with_known_k():
     print("\n警告: 永远不要重复使用随机数k!")
     print()
 
-
 def run_all_tests():
     """运行所有测试"""
     test_finite_field()
@@ -775,7 +764,6 @@ def run_all_tests():
     print("=" * 60)
     print("所有测试完成!")
     print("=" * 60)
-
 
 if __name__ == "__main__":
     run_all_tests()
@@ -832,7 +820,6 @@ def demo_ecdsa_with_library():
     except ImportError:
         print("请安装ecdsa库: pip install ecdsa")
 
-
 def demo_cryptography_library():
     """使用cryptography库的演示"""
     try:
@@ -877,7 +864,6 @@ def demo_cryptography_library():
 
     except ImportError:
         print("请安装cryptography库: pip install cryptography")
-
 
 if __name__ == "__main__":
     demo_ecdsa_with_library()
@@ -986,7 +972,6 @@ def generate_bitcoin_address(private_key_bytes: bytes) -> str:
     bitcoin_address = base58.b58encode(address_bytes).decode()
 
     return bitcoin_address
-
 
 # 示例
 if __name__ == "__main__":

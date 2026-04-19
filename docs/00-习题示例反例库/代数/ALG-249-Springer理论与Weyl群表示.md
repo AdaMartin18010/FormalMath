@@ -1,5 +1,7 @@
 ---
-msc_primary: 14M15
+msc_primary: 14
+
+  - 14M15
 exercise_id: ALG-249
 title: Springer理论与Weyl群表示
 difficulty: 5

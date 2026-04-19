@@ -1,9 +1,6 @@
 ---
 title: Serre 对偶定理的完整陈述与应用
-msc_primary: 14-01
-msc_secondary:
-- 14Fxx
-- 14Cxx
+msc_primary: 14
 level: silver
 target_courses:
 - Stanford FOAG

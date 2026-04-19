@@ -1,6 +1,8 @@
 ---
 title: Logic and Foundations (逻辑与基础)
-msc_primary: 00A99
+msc_primary: 00
+
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # Logic and Foundations (逻辑与基础)
@@ -11,7 +13,7 @@ This document provides bilingual (English-Chinese) definitions, notations, and e
 
 ## 1. First-Order Logic (一阶逻辑)
 
-**MSC Code:** 03B10, 03Cxx
+**MSC Code:** 03B10, @
 
 ### English Definition
 First-order logic is a formal system with quantifiers $\forall$ and $\exists$ ranging over elements of a domain (not sets of elements). It includes logical connectives ($\neg$, $\wedge$, $\vee$, $\rightarrow$, $\leftrightarrow$), equality, and predicate/relation symbols.
@@ -59,7 +61,7 @@ Propositional logic studies formulas built from atomic propositions using connec
 
 ## 3. Completeness Theorem (完备性定理)
 
-**MSC Code:** 03C35, 03Fxx
+**MSC Code:** 03C35, @
 
 ### English Definition
 Gödel's completeness theorem states that a formula is provable in first-order logic iff it is valid (true in all models). Equivalently, every consistent theory has a model. This connects syntax and semantics.
@@ -103,7 +105,7 @@ Gödel's incompleteness theorems: (1) Any consistent formal system $F$ containin
 
 ## 5. Set Theory (集合论)
 
-**MSC Code:** 03Exx
+**MSC Code:** @
 
 ### English Definition
 Set theory is the foundation of mathematics, studying sets and their properties. Zermelo-Fraenkel set theory with Choice (ZFC) is the standard axiomatization. Key concepts include ordinals, cardinals, and the cumulative hierarchy.
@@ -286,7 +288,7 @@ Large cardinal axioms assert the existence of cardinals with strong properties (
 
 ## 13. Model Theory (模型论)
 
-**MSC Code:** 03Cxx
+**MSC Code:** @
 
 ### English Definition
 Model theory studies the relationship between formal theories and their models (structures satisfying the theory). Key results include the compactness theorem, Löwenheim-Skolem theorems, and Morley's categoricity theorem.
@@ -375,7 +377,7 @@ An ultraproduct is a construction combining structures using an ultrafilter. Ło
 
 ## 17. Proof Theory (证明论)
 
-**MSC Code:** 03Fxx
+**MSC Code:** @
 
 ### English Definition
 Proof theory studies formal proofs as mathematical objects. It analyzes the structure of proofs, proof transformations (cut elimination), and the consistency strength of theories. Ordinal analysis assigns ordinals to theories.
@@ -581,7 +583,7 @@ The Univalence Axiom (Voevodsky) states that equivalent types are equal: $(A =_\
 
 ## 26. Computability Theory (可计算性理论)
 
-**MSC Code:** 03Dxx
+**MSC Code:** @
 
 ### English Definition
 Computability theory studies which functions can be computed algorithmically. Models include Turing machines, lambda calculus, and recursive functions. The Church-Turing thesis asserts these are equivalent.
@@ -648,7 +650,7 @@ The halting problem asks whether a given program halts on given input. Turing pr
 
 ## 29. Computable Function (可计算函数)
 
-**MSC Code:** 03D20, 03Dxx
+**MSC Code:** 03D20, @
 
 ### English Definition
 A computable (recursive) function is one that can be computed by a Turing machine (equivalently: lambda calculus, recursive functions, register machines). The Church-Turing thesis identifies these with algorithmically computable functions.

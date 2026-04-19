@@ -1,9 +1,10 @@
 ---
-msc_primary: 18F20
-msc_secondary:
-- 14F05
-- 18G15
-- 32L10
+msc_primary: 18
+
+  - 18F20
+  - 14F05
+  - 18G15
+  - 32L10
 title: 15.7 层上同调的Godement分解 / Godement Resolution in Sheaf Cohomology
 processed_at: '2026-04-05'
 references:
@@ -18,7 +19,7 @@ references:
       year: 2011
       isbn: 978-0132413770
       msc: 16-01
-      chapters: []
+      chapters: 
       url: ~
     - id: strang_la
       type: textbook
@@ -30,7 +31,7 @@ references:
       year: 2016
       isbn: 978-0980232776
       msc: 15-01
-      chapters: []
+      chapters: 
       url: ~
     - id: dummit_foote_aa
       type: textbook
@@ -43,7 +44,7 @@ references:
       year: 2003
       isbn: 978-0471433347
       msc: 13-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -260,7 +261,7 @@ H^q(X, \mathcal{F}) = H^q(\Gamma(X, C^\bullet(\mathcal{F})))
 $$
 
 **证明**：
-因 $C^\bullet(\mathcal{F})$ 是 $\mathcal{F}$ 的松软消解，而松软层是 $\Gamma(X, -)$-零调的（定理 15.7.1），根据导出函子的基本定理，可用任何零调消解计算导出函子。详见 Weibel [1, Theorem 10.5.6] 或 Godement [2, Théorème 4.4.1]。
+因 $C^\bullet(\mathcal{F})$ 是 $\mathcal{F}$ 的松软消解，而松软层是 $\Gamma(X, -)$-零调的（**定理 15.7.1**），根据导出函子的基本定理，可用任何零调消解计算导出函子。详见 Weibel [1, Theorem 10.5.6] 或 Godement [2, Théorème 4.4.1]。
 
 ### Čech上同调与导出上同调的关系 / Relation with Čech Cohomology
 

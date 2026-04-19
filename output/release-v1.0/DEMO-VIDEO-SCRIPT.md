@@ -1,5 +1,7 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 release_version: v1.0
 video_type: 产品介绍视频
 title: FormalMath v1.0 演示视频脚本

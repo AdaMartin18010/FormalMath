@@ -1,5 +1,7 @@
 ---
-msc_primary: 53C44
+msc_primary: 53
+
+  - 53C44
 exercise_id: TOP-132
 title: Ricci流与Perelman定理
 difficulty: 5

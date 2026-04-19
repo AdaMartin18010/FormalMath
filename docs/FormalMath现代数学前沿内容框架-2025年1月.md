@@ -1,9 +1,10 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 22E47
-- 16A99
-- 57R22
+msc_primary: 00
+
+  - 00A99
+  - 22E47
+  - 16A99
+  - 57R22
 title: FormalMath现代数学前沿内容框架 - 2025年1月
 processed_at: '2026-04-05'
 ---
@@ -48,7 +49,7 @@ processed_at: '2026-04-05'
 
 - Hartshorne, R. Algebraic Geometry[M]. New York: Springer, 1977.
 - Mumford, D. The Red Book of Varieties and Schemes[M]. 2nd Edition. Berlin: Springer, 1999.
-- Vakil, R. The Rising Sea: Foundations of Algebraic Geometry[EB/OL]. [2025-01-XX]. <https://math.stanford.edu/~vakil/216blog/>
+- Vakil, R. The Rising Sea: Foundations of Algebraic Geometry[EB/OL]. [2025-01-00]. <https://math.stanford.edu/~vakil/216blog/>
 
 #### 1.1.2 概形的上同调理论
 
@@ -171,7 +172,7 @@ processed_at: '2026-04-05'
 **参考文献**:
 
 - Lurie, J. Higher Topos Theory[M]. Princeton: Princeton University Press, 2009.
-- Lurie, J. Higher Algebra[EB/OL]. [2025-01-XX]. <https://www.math.ias.edu/~lurie/papers/HA.pdf[需更新[需更新]]>
+- Lurie, J. Higher Algebra[EB/OL]. [2025-01-00]. <https://www.math.ias.edu/~lurie/papers/HA.pdf[需更新[需更新]]>
 
 ### 2.2 形式化实现计划
 
@@ -388,7 +389,7 @@ processed_at: '2026-04-05'
 
 - Hartshorne, R. Algebraic Geometry[M]. New York: Springer, 1977.
 - Mumford, D. The Red Book of Varieties and Schemes[M]. 2nd Edition. Berlin: Springer, 1999.
-- Vakil, R. The Rising Sea: Foundations of Algebraic Geometry[EB/OL]. [2025-01-XX]. <https://math.stanford.edu/~vakil/216blog/>
+- Vakil, R. The Rising Sea: Foundations of Algebraic Geometry[EB/OL]. [2025-01-00]. <https://math.stanford.edu/~vakil/216blog/>
 
 ### 导出范畴理论 / Derived Category Theory
 

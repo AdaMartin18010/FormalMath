@@ -1,9 +1,8 @@
 ---
 title: 有限态射的整体与局部刻画
-msc_primary: 14-01
-msc_secondary:
-- 14A15
-- 14Dxx
+msc_primary: 14
+  - 14A15
+
 level: silver
 target_courses:
 - Stanford FOAG

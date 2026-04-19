@@ -1,10 +1,10 @@
 ---
 title: 谱序列与Leray谱序列
 description: 系统介绍谱序列的基本概念、Leray谱序列的构造与应用、以及它在层上同调和纤维化计算中的核心地位。
-msc_primary: 18Txx
-msc_secondary:
-- 55T05
-- 14Fxx
+msc_primary: 18
+
+  - 55T05
+
 processed_at: '2026-04-16'
 ---
 

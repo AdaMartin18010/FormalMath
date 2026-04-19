@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A05
+msc_primary: 00
 msc_secondary:
-- 97A99
+  - 00A05
+  - 97A99
 title: FormalMath与MIT OpenCourseWare课程内容深度对齐报告
 processed_at: '2026-04-05'
 ---

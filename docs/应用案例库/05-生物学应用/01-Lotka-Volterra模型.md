@@ -1,9 +1,10 @@
 ---
-msc_primary: 20A99
-msc_secondary:
-- 35A99
-- 00A99
-- 00A99
+msc_primary: 20
+
+  - 20A99
+  - 35A99
+  - 00A99
+  - 00A99
 title: Lotka-Volterra捕食者-猎物模型
 processed_at: '2026-04-05'
 ---

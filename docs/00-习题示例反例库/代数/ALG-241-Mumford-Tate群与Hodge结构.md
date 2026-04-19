@@ -1,5 +1,7 @@
 ---
-msc_primary: 14C30
+msc_primary: 14
+
+  - 14C30
 exercise_id: ALG-241
 title: Mumford-Tate群与Hodge结构
 difficulty: 4

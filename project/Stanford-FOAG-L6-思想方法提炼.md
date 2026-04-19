@@ -1,8 +1,9 @@
 ---
-msc_primary: 14-01
+msc_primary: 14
 msc_secondary:
-- 97A99
-- 14Fxx
+  - 14-01
+  - 97A99
+  - 14Fxx
 title: Stanford FOAG L6思想方法级对齐
 course_code: Stanford FOAG
 course_name: Foundations of Algebraic Geometry

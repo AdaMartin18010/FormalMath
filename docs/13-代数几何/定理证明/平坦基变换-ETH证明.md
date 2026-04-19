@@ -1,5 +1,6 @@
 ---
 title: "平坦基变换定理 - ETH证明"
+msc_primary: 14A99
 description: "平坦基变换定理的完整证明，强调与交换代数的深度融合，基于ETH Zurich 401-3532课程讲义"
 course: "ETH Zurich 401-3532-00L"
 topic: "代数几何"
@@ -22,7 +23,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -34,7 +35,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

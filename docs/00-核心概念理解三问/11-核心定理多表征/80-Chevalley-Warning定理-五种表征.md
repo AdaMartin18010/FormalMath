@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 11A07
-- 11A99
-- 00A99
+msc_primary: 00
+
+  - 11A07
+  - 11A99
+  - 00A99
 title: Chevalley-Warning定理 - 五种表征
 processed_at: '2026-04-05'
 ---

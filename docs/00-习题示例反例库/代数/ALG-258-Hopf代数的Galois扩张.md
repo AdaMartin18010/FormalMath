@@ -1,5 +1,7 @@
 ---
-msc_primary: 16T05
+msc_primary: 16
+
+  - 16T05
 exercise_id: ALG-258
 title: Hopf代数的Galois扩张
 difficulty: 4

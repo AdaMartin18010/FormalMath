@@ -1,5 +1,7 @@
 ---
-msc_primary: 20D20
+msc_primary: 20
+
+  - 20D20
 exercise_id: ALG-008
 title: Sylow第一定理的应用
 difficulty: 4

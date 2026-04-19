@@ -1,6 +1,8 @@
 ---
 title: FormalMath Internationalization (i18n)
-msc_primary: 00A99
+msc_primary: 00
+
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # FormalMath Internationalization (i18n)
@@ -90,7 +92,7 @@ python tools/translation_checker.py docs/i18n/
 
 ```yaml
 ---
-msc_primary: 20-XX
+msc_primary: 20-00
 msc_secondary: ['20A05']
 lang: de
 original: docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md

@@ -1,6 +1,6 @@
 ---
 msc_primary: 00A99
-msc_secondary:
+
 - 14A99
 - 03B35
 - 97A99

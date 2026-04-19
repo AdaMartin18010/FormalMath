@@ -1,8 +1,9 @@
 ---
-msc_primary: 26A99
-msc_secondary:
-- 26A03
-- 40A05
+msc_primary: 26
+
+  - 26A99
+  - 26A03
+  - 40A05
 lang: en
 translation_status: completed
 translator: FormalMath i18n System

@@ -1,10 +1,11 @@
 ---
 title: Čech上同调与层上同调
 description: 详细介绍Čech上同调的构造、与层上同调的比较定理、仿射覆盖上的计算技巧，以及它在代数几何计算中的实际应用。
-msc_primary: 14F05
-msc_secondary:
-- 18F20
-- 55N30
+msc_primary: 14
+
+  - 14F05
+  - 18F20
+  - 55N30
 processed_at: '2026-04-16'
 ---
 

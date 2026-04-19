@@ -1,5 +1,7 @@
 ---
-msc_primary: 14F42
+msc_primary: 14
+
+  - 14F42
 exercise_id: ALG-242
 title: motivic上同调的性质
 difficulty: 5

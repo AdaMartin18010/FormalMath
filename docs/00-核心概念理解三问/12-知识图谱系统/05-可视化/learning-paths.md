@@ -1,9 +1,9 @@
 ---
-msc_primary: 20A99
-msc_secondary:
-- 16A99
-- 00A99
-- 20A99
+msc_primary: 20
+
+  - 16A99
+  - 00A99
+  - 20A99
 title: FormalMath学习路径推荐
 processed_at: '2026-04-05'
 ---

@@ -1,6 +1,6 @@
 ---
-msc_primary: 26-XX
-msc_secondary: ['30-XX', '46-XX', '35-XX']
+msc_primary: 26
+msc_secondary: ['30-00', '46-00', '35-00']
 ---
 
 # 03-分析学

@@ -1,7 +1,8 @@
 ---
-msc_primary: 55Q52
-msc_secondary:
-- 55P99
+msc_primary: 55
+
+  - 55Q52
+  - 55P99
 title: Seifert-van Kampen定理 - 五种表征
 processed_at: '2026-04-05'
 ---

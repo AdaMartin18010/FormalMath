@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 03B35
-- 68V20
+msc_primary: 00
+
+  - 00A99
+  - 03B35
+  - 68V20
 mathlib4_version: v4.29.0
 last_updated: '2026-04-03'
 title: 形式化证明

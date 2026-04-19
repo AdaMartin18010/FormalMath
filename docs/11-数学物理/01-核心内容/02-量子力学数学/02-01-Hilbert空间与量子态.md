@@ -1,9 +1,10 @@
 ---
-msc_primary: 81Q10
-msc_secondary:
-- 46C05
-- 47A70
-- 46N50
+msc_primary: 81
+
+  - 81Q10
+  - 46C05
+  - 47A70
+  - 46N50
 title: Hilbert空间与量子态
 processed_at: '2026-04-05'
 ---

@@ -1,5 +1,7 @@
 ---
-msc_primary: 53C55
+msc_primary: 53
+
+  - 53C55
 exercise_id: GEO-091
 title: Calabi-Yau度量的存在性
 difficulty: 4

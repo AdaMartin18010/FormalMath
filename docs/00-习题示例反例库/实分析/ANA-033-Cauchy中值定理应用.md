@@ -1,5 +1,7 @@
 ---
-msc_primary: 26A06
+msc_primary: 26
+
+  - 26A06
 exercise_id: ANA-033
 title: Cauchy中值定理应用
 difficulty: 3

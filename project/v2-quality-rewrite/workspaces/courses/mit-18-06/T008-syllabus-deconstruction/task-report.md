@@ -1,6 +1,8 @@
 ---
 title: 'Task Report: MIT 18.06 / 18.700 Linear Algebra Syllabus Deconstruction'
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # Task Report: MIT 18.06 / 18.700 Linear Algebra Syllabus Deconstruction

@@ -1,5 +1,7 @@
 ---
-msc_primary: 14-01
+msc_primary: 14
+msc_secondary:
+  - 14-01
 title: Stanford FOAG (Foundations of Algebraic Geometry) 语义级对齐手册
 course_code: Stanford Math 216
 course_name: Foundations of Algebraic Geometry

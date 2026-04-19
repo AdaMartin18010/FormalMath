@@ -1,5 +1,7 @@
 ---
-msc_primary: 14-01
+msc_primary: 14
+msc_secondary:
+  - 14-01
 title: Stanford FOAG L3定义级对齐表
 processed_at: '2026-04-10'
 course_code: Stanford FOAG

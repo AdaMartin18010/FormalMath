@@ -1,5 +1,6 @@
 ---
 title: "IMO真题-数论：不定方程"
+msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L4

@@ -1,8 +1,9 @@
 ---
-msc_primary: 94A60
-msc_secondary:
-- 11T71
-- 14G50
+msc_primary: 94
+
+  - 94A60
+  - 11T71
+  - 14G50
 concept_type: 应用可视化
 visualization_type: 流程图、密钥交换
 title: RSA加密算法流程可视化

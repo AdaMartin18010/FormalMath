@@ -1,6 +1,8 @@
 ---
 title: "设计理论 (Design Theory)"
-msc_primary: "05B05"
+msc_primary: 05
+
+  - 05B05
 msc_secondary: ['05B07', '05B10', '05B15', '05B20']
 processed_at: '2026-04-05'
 ---

@@ -1,7 +1,7 @@
 ---
 title: "04-几何与拓扑分支完整索引"
-msc_primary: "51-XX"
-msc_secondary: ["53-XX", "54-XX", "55-XX", "57-XX"]
+msc_primary: 51
+msc_secondary: ["53-00", "54-00", "55-00", "57-00"]
 processed_at: "2026-04-08"
 references:
   textbooks:
@@ -15,7 +15,7 @@ references:
       year: 2000
       isbn: 978-0131816299
       msc: 54-01
-      chapters: []
+      chapters: 
       url: ~
     - id: lee_ism
       type: textbook
@@ -27,7 +27,7 @@ references:
       year: 2012
       isbn: 978-1441999818
       msc: 58-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -59,7 +59,7 @@ references:
 
 ## 📋 核心概念清单
 
-### 一、点集拓扑 (Point-Set Topology) - MSC 54-XX
+### 一、点集拓扑 (Point-Set Topology) - MSC 54-00
 
 | 概念 | 基础文档 | 深度文档 | 状态 | 国际课程对齐 |
 |------|----------|----------|------|--------------|
@@ -87,7 +87,7 @@ references:
 
 ---
 
-### 二、代数拓扑 (Algebraic Topology) - MSC 55-XX
+### 二、代数拓扑 (Algebraic Topology) - MSC 55-00
 
 | 概念 | 基础文档 | 深度文档 | 状态 | 国际课程对齐 |
 |------|----------|----------|------|--------------|
@@ -116,7 +116,7 @@ references:
 
 ---
 
-### 三、微分几何 (Differential Geometry) - MSC 53-XX
+### 三、微分几何 (Differential Geometry) - MSC 53-00
 
 | 概念 | 基础文档 | 深度文档 | 状态 | 国际课程对齐 |
 |------|----------|----------|------|--------------|
@@ -229,7 +229,7 @@ references:
 
 ---
 
-### 十、代数几何基础 (Algebraic Geometry Basics) - MSC 14-XX
+### 十、代数几何基础 (Algebraic Geometry Basics) - MSC 14-00
 
 | 概念 | 基础文档 | 深度文档 | 状态 | 国际课程对齐 |
 |------|----------|----------|------|--------------|

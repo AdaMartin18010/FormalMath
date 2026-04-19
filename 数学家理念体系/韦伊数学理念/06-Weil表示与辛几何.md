@@ -2,7 +2,9 @@
 title: "Weil表示与辛几何：从量子力学到数论"
 level: gold
 course: Weil数学理念
-msc_primary: "11F27"
+msc_primary: 11
+msc_secondary:
+  - 11F27
 references:
   textbooks:
     - title: "Weil Representation I: Intertwining Distributions and Discrete Spectrum"

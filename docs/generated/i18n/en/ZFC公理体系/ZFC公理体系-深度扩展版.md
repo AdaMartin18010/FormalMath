@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: ZFC公理体系-深度扩展版
 processed_at: '2026-04-05'
 ---
@@ -17,7 +17,7 @@ processed_at: '2026-04-05'
 
 ---
 msc_primary: "03E30"
-msc_secondary: ['03E30', '03E10', '03-XX']
+msc_secondary: ['03E30', '03E10', '03-00']
 ---
 
 # ZFC公理体系-深度扩展版

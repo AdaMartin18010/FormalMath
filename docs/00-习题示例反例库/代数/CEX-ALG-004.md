@@ -4,6 +4,7 @@ category: 代数
 topic: 群论
 concept: 群同构
 title: 不同构但同阶的群（Z₄ vs Z₂×Z₂）
+msc_primary: 00A99
 difficulty: 简单
 keywords: [群同构, 循环群, 克莱因四元群, 群阶, 群结构]
 related: [CEX-ALG-001, CEX-ALG-005]

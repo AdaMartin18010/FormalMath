@@ -1,5 +1,6 @@
 ---
 title: Weierstrass M-判别法
+msc_primary: 26A99
 course: MIT 18.100A Real Analysis
 level: silver
 target_courses:
@@ -246,3 +247,16 @@ $$|a_n x^n| \leq |a_n| r^n = |a_n x_0^n| \cdot \left(\frac{r}{x_0}\right)^n \leq
 ---
 
 *文档版本: 1.0 | 创建日期: 2026-04-17 | 对应课程: MIT 18.100A*
+
+
+## 习题
+
+**习题 1.1**。判断 $\\sum_{n=1}^{\\infty} \\frac{\\cos(nx)}{n^2+1}$ 在 $\\mathbb{R}$ 上的一致收敛性。
+
+*解答*：$\\left|\\frac{\\cos(nx)}{n^2+1}\\right| \\leq \\frac{1}{n^2+1} < \\frac{1}{n^2}$。$\\sum \\frac{1}{n^2}$ 收敛，故由 M-判别法一致收敛。$\\square$
+
+---
+
+**习题 1.2**。设 $\\sum M_n$ 收敛且 $|f_n(x)| \\leq M_n$ 对所有 $x$。证明 $\\sum f_n$ 绝对收敛且一致收敛。
+
+*解答*：绝对收敛由比较判别法；一致收敛由 M-判别法（即 Weierstrass M-判别法）。$\\square$

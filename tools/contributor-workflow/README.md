@@ -1,5 +1,7 @@
 ---
-msc_primary: 68N99
+msc_primary: 68
+msc_secondary:
+  - 68N99
 title: FormalMath 贡献者工作流工具
 processed_at: '2026-04-05'
 ---

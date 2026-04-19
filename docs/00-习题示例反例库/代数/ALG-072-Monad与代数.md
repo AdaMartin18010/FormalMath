@@ -1,6 +1,7 @@
 ---
 exercise_id: ALG-072
 title: Monad及其Eilenberg-Moore代数
+msc_primary: 00A99
 difficulty: ⭐⭐⭐⭐
 topics: [Monad, 代数, Kleisli范畴, 伴随分解]
 created: 2026-04-10

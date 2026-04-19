@@ -1,5 +1,6 @@
 ---
 title: "SVD 存在定理 自然语言与 Lean4 对照"
+msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"

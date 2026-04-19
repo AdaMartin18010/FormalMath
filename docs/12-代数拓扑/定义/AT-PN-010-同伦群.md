@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Homotopy Groups, 高阶同伦群, 球面同伦群]
 type: 定义

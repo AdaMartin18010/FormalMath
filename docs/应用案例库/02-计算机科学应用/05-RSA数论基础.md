@@ -1,9 +1,10 @@
 ---
-msc_primary: 00A05
-msc_secondary:
-- 00A99
-- 00A99
-- 00A99
+msc_primary: 00
+
+  - 00A05
+  - 00A99
+  - 00A99
+  - 00A99
 title: RSA加密系统的数论基础
 processed_at: '2026-04-05'
 ---

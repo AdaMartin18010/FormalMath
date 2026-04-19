@@ -1,5 +1,7 @@
 ---
-msc_primary: 57R99
+msc_primary: 57
+
+  - 57R99
 exercise_id: TOP-129
 title: h-principle与Gromov的柔性几何
 difficulty: 4

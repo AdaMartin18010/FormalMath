@@ -1,5 +1,6 @@
 ---
 title: "FormalMath AI形式化流水线设计"
+msc_primary: 00A99
 level: project
 status: planning
 created_at: 2026-04-18

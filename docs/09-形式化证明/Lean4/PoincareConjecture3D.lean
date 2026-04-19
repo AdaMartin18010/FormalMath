@@ -54,6 +54,20 @@ Perelman的证明基于**Hamilton的Ricci流纲领**：
 4. 大量微分几何工具
 
 这些在Mathlib4中尚未建立，本文件提供概念框架。
+
+## Mathlib4 形式化路线图
+
+| 依赖理论 | Mathlib4 状态 | 备注 |
+|---------|--------------|------|
+| Ricci流 (几何分析) | ❌ 未开始 | 需要完整的PDE理论 |
+| 奇点分析 | ❌ 未开始 | 依赖Ricci流 |
+| 几何化猜想 | ❌ 未开始 |  Thurston纲领 |
+| 3-流形拓扑 | 🔄 基础定义 | Manifold API存在 |
+| 同伦论 | 🔄 发展中 | Homotopy 模块 |
+
+**Perelman证明规模估计**: ~1000页数学论文，形式化预计需10+人年。
+**当前策略**: 建立概念框架，定义核心对象（闭3-流形、单连通、同胚）。
+
 -/
 
 import Mathlib.Geometry.Manifold.SmoothManifoldWithCorners

@@ -2,7 +2,9 @@
 title: "Weil与椭圆曲线：从复乘到模性的桥梁"
 level: gold
 course: Weil数学理念
-msc_primary: "14H52"
+msc_primary: 14
+msc_secondary:
+  - 14H52
 references:
   textbooks:
     - title: "Arithmetic of Elliptic Curves"

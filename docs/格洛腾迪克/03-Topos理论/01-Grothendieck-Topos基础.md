@@ -1,10 +1,11 @@
 ---
 title: Grothendieck Topos基础
 description: 系统介绍Grothendieck Topos的定义、子对象分类器、幂对象、内部逻辑以及层范畴的等价刻画，是理解几何与逻辑统一的入口。
-msc_primary: 18B25
-msc_secondary:
-- 03G30
-- 18F10
+msc_primary: 18
+
+  - 18B25
+  - 03G30
+  - 18F10
 processed_at: '2026-04-16'
 ---
 

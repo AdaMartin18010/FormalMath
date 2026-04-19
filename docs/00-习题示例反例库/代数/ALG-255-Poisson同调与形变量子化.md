@@ -1,5 +1,7 @@
 ---
-msc_primary: 53D55
+msc_primary: 53
+
+  - 53D55
 exercise_id: ALG-255
 title: Poisson同调与形变量子化
 difficulty: 4

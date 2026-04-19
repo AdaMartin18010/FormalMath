@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
 msc_secondary:
-- 97A99
+  - 00A99
+  - 97A99
 title: 多伦多大学数学课程概念映射表
 processed_at: '2026-04-05'
 ---

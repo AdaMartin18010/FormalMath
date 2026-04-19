@@ -1,6 +1,8 @@
 ---
 title: FormalMath后端性能优化完成报告（第十二批）
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # FormalMath后端性能优化完成报告（第十二批）

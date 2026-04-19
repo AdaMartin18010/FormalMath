@@ -1,6 +1,8 @@
 ---
 title: FormalMath MSC 编码导航索引
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # FormalMath MSC 编码导航索引

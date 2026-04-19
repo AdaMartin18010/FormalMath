@@ -1,8 +1,9 @@
 ---
-msc_primary: 26A03
-msc_secondary:
-- 26E35
-- 97I30
+msc_primary: 26
+
+  - 26A03
+  - 26E35
+  - 97I30
 level: L1-Formal
 domain: 分析学
 concept: 极限的ε-δ定义

@@ -1,5 +1,6 @@
 ---
 title: 确界原理与 Archimedean 性质
+msc_primary: 26A99
 course: MIT 18.100A Real Analysis
 level: silver
 target_courses:
@@ -341,3 +342,16 @@ $$\max S \text{ 存在} \Rightarrow \max S = \sup S$$
 ---
 
 *文档版本: 1.0 | 创建日期: 2026-04-17 | 对应课程: MIT 18.100A*
+
+
+## 习题
+
+**习题 1.1**。求集合 $S = \\{1/n : n \\in \\mathbb{N}\\}$ 的上确界和下确界。
+
+*解答*：$\\sup S = 1$（最大元），$\\inf S = 0$（0是下界，且对任意 $\\epsilon > 0$，存在 $n$ 使 $1/n < \\epsilon$）。$\\square$
+
+---
+
+**习题 1.2**。用 Archimedean 性质证明 $\\mathbb{Q}$ 在 $\\mathbb{R}$ 中稠密。
+
+*解答*：对任意 $a < b$，需找有理数 $q \\in (a,b)$。由 Archimedean 性质，存在 $n$ 使 $1/n < b-a$。再取 $m = \\lfloor na \\rfloor + 1$，则 $a < m/n < b$。$\\square$

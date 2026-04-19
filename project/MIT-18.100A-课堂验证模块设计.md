@@ -1,5 +1,6 @@
 ---
 title: "MIT 18.100A 课堂验证模块设计"
+msc_primary: 00A99
 level: "silver"
 ---
 

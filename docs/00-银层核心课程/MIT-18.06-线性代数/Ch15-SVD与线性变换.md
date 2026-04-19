@@ -3,7 +3,7 @@ title: "Ch.15 SVD与线性变换（SVD & Linear Transformations）"
 level: "silver"
 course: MIT 18.06 线性代数
 chapter: "15"
-msc_primary: "15-01"
+msc_primary: 15
 target_courses:
   - "MIT 18.06 Ch.15"
 references:
@@ -457,7 +457,7 @@ $A = A \cdot I \cdot I^T = A$。SVD 即为 $A = A I I$。$\square$
 
 $\hat{\mathbf{b}} = A\mathbf{x}^+ = A A^+ \mathbf{b}$。
 
-由定理 15.2 的证明，$AA^+$ 是到 $C(A)$ 的正交投影矩阵。故 $P_{C(A)} = AA^+$。$\square$
+由**定理 15.2** 的证明，$AA^+$ 是到 $C(A)$ 的正交投影矩阵。故 $P_{C(A)} = AA^+$。$\square$
 
 ---
 
@@ -593,14 +593,14 @@ def MoorePenroseInverse {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
     (hA : LinearMap.ker A.mulVecLinear = ⊥) : Matrix (Fin n) (Fin m) ℝ :=
   (A.transpose * A)⁻¹ * A.transpose
 
--- 定理 15.2：伪逆解的最小二乘最优性
+-- **定理 15.2**：伪逆解的最小二乘最优性
 theorem pseudoinverse_least_squares {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
     (b : Fin m → ℝ) (hA : LinearMap.ker A.mulVecLinear = ⊥) :
     let x_plus := (MoorePenroseInverse A hA).mulVec b
     ∀ x : Fin n → ℝ, ‖A.mulVec x_plus - b‖ ≤ ‖A.mulVec x - b‖ := by
   sorry -- x⁺ 使 Ax⁺ 为 b 在 C(A) 上的正交投影
 
--- 定理 15.2（续）：伪逆解具有最小范数
+-- **定理 15.2**（续）：伪逆解具有最小范数
 theorem pseudoinverse_minimal_norm {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
     (b : Fin m → ℝ) (hA : LinearMap.ker A.mulVecLinear = ⊥) :
     let x_plus := (MoorePenroseInverse A hA).mulVec b
@@ -622,7 +622,7 @@ example (𝕜 : Type*) [Field 𝕜] {V W : Type*} [AddCommGroup V] [Module 𝕜 
     Matrix ιW ιV 𝕜 :=
   LinearMap.toMatrix B C T
 
--- 定理 15.3：基变换公式
+-- **定理 15.3**：基变换公式
 -- [T]_{C'←B'} = Q * [T]_{C←B} * P⁻¹
 theorem change_of_basis_formula (𝕜 : Type*) [Field 𝕜] {V W : Type*}
     [AddCommGroup V] [Module 𝕜 V] [AddCommGroup W] [Module 𝕜 W]
@@ -639,3 +639,16 @@ theorem change_of_basis_formula (𝕜 : Type*) [Field 𝕜] {V W : Type*}
 
 **文档状态**: 🟡 草稿 | **审校轮次**: 0/2
 **最后更新**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。求 $A = egin{pmatrix} 3 & 0 \ 0 & -2 \end{pmatrix}$ 的 SVD。
+
+*解答*：$A^TA = egin{pmatrix} 9&0\0&4 \end{pmatrix}$，奇异值 $\sigma_1=3, \sigma_2=2$。$V=I$，$U = egin{pmatrix} 1&0\0&-1 \end{pmatrix}$。$A = U\Sigma V^T$。$\square$
+
+---
+
+**习题 1.2**。证明：任意 $m	imes n$ 矩阵 $A$ 的伪逆 $A^+$ 满足 $AA^+A = A$。
+
+*解答*：由 SVD $A=U\Sigma V^T$，$A^+=V\Sigma^+U^T$。$AA^+A = U\Sigma V^T V\Sigma^+U^T U\Sigma V^T = U\Sigma\Sigma^+\Sigma V^T = U\Sigma V^T = A$。$\square$

@@ -1,6 +1,8 @@
 ---
 title: "集合论基础 - Lean4形式化实现"
-msc_primary: "03B35"
+msc_primary: 03
+
+  - 03B35
 msc_secondary: ['68T15', '03B70']
 processed_at: '2026-04-05'
 ---

@@ -1,7 +1,8 @@
 ---
-msc_primary: 26A42
-msc_secondary:
-- 26A39
+msc_primary: 26
+
+  - 26A42
+  - 26A39
 title: Riemann可积性判定 - 工作示例
 processed_at: '2026-04-08'
 ---

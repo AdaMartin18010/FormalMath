@@ -1,7 +1,8 @@
 ---
-msc_primary: 14-01
+msc_primary: 14
 msc_secondary:
-- 14Fxx
+  - 14-01
+  - 14Fxx
 title: Stanford FOAG L4定理级对齐表
 course_code: Stanford FOAG
 course_name: Foundations of Algebraic Geometry

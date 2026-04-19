@@ -1,9 +1,10 @@
 ---
-msc_primary: 37J35
-msc_secondary:
-- 37J15
-- 70H06
-- 53D20
+msc_primary: 37
+
+  - 37J35
+  - 37J15
+  - 70H06
+  - 53D20
 title: 可积系统与Liouville定理
 processed_at: '2026-04-05'
 ---

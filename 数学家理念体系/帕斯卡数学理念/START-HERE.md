@@ -1,10 +1,11 @@
 ---
 title: 帕斯卡数学理念体系 - 快速入门
-msc_primary: 01A45
+msc_primary: 01
 msc_secondary:
-- 01A40
-- 01A70
-- 00A99
+  - 01A45
+  - 01A40
+  - 01A70
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # 布莱兹·帕斯卡数学理念体系 - 快速入门

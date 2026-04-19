@@ -1,6 +1,6 @@
 ---
-msc_primary: 18Gxx
-msc_secondary: ['13Dxx', '16Exx', '55Uxx']
+msc_primary: 18
+
 ---
 
 # 15-同调代数

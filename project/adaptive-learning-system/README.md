@@ -1,7 +1,8 @@
 ---
-msc_primary: 97C70
+msc_primary: 97
 msc_secondary:
-- 97D40
+  - 97C70
+  - 97D40
 title: FormalMath 自适应学习路径系统 (T3.1)
 processed_at: '2026-04-05'
 ---

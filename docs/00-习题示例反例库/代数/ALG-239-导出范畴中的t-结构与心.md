@@ -1,5 +1,7 @@
 ---
-msc_primary: 18E30
+msc_primary: 18
+
+  - 18E30
 exercise_id: ALG-239
 title: 导出范畴中的t-结构与心
 difficulty: 3

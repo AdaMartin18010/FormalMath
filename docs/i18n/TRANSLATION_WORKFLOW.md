@@ -1,7 +1,14 @@
 ---
+title: "TRANSLATION WORKFLOW"
+msc_primary: "00"
+---
+
+﻿---
 title: FormalMath Translation Workflow
-msc_primary: 00A99
-processed_at: '2026-04-05'
+msc_primary: 00
+msc_secondary:
+  - 00A99
+processed_at: '2026'-04-05'
 ---
 # FormalMath Translation Workflow
 
@@ -48,7 +55,7 @@ processed_at: '2026-04-05'
 
 ```markdown
 ---
-msc_primary: XX-XX
+msc_primary: 00A99
 msc_secondary: ['XX-XXX']
 lang: [语言代码]
 original: [原文档路径]
@@ -240,3 +247,4 @@ A: 暂时链接到中文原文，待翻译完成后再更新。
 
 **Maintainers**: FormalMath i18n Team  
 **Last Updated**: 2026-04-04
+

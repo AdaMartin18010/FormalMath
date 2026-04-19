@@ -1,9 +1,10 @@
 ---
-msc_primary: 54D15
-msc_secondary:
-- 54C30
-- 54E35
-- 97I55
+msc_primary: 54
+
+  - 54D15
+  - 54C30
+  - 54E35
+  - 97I55
 title: Urysohn 引理
 processed_at: '2026-04-05'
 ---

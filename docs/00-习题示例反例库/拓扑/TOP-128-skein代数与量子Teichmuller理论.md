@@ -1,5 +1,7 @@
 ---
-msc_primary: 57M50
+msc_primary: 57
+
+  - 57M50
 exercise_id: TOP-128
 title: skein代数与量子Teichmuller理论
 difficulty: 4

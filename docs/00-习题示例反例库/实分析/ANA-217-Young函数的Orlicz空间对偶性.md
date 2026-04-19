@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B35
+msc_primary: 42
+
+  - 42B35
 exercise_id: ANA-217
 title: Young函数的Orlicz空间对偶性
 difficulty: 3

@@ -1,7 +1,9 @@
 ---
 title: "上同调与 Serre 对偶：从射影簇到相对对偶"
 level: "gold"
-msc_primary: "14F17"
+msc_primary: 14
+msc_secondary:
+  - 14F17
 msc_secondary: ["14F05", "14F20", "32C35"]
 author: "FormalMath Gold Layer Team"
 date: "2026-04-18"

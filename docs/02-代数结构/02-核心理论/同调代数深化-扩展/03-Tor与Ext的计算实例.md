@@ -1,9 +1,10 @@
 ---
-msc_primary: 18G15
-msc_secondary:
-- 16E30
-- 13D07
-- 18G10
+msc_primary: 18
+
+  - 18G15
+  - 16E30
+  - 13D07
+  - 18G10
 title: 15.3 Tor与Ext的计算实例 / Computational Examples of Tor and Ext
 processed_at: '2026-04-05'
 references:
@@ -18,7 +19,7 @@ references:
       year: 2011
       isbn: 978-0132413770
       msc: 16-01
-      chapters: []
+      chapters: 
       url: ~
     - id: strang_la
       type: textbook
@@ -30,7 +31,7 @@ references:
       year: 2016
       isbn: 978-0980232776
       msc: 15-01
-      chapters: []
+      chapters: 
       url: ~
     - id: dummit_foote_aa
       type: textbook
@@ -43,7 +44,7 @@ references:
       year: 2003
       isbn: 978-0471433347
       msc: 13-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

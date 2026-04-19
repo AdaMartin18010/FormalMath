@@ -1,9 +1,8 @@
 ---
 title: 上同调的消失定理
-msc_primary: 14-01
-msc_secondary:
-- 14F17
-- 14F25
+msc_primary: 14
+  - 14F17
+  - 14F25
 course: Stanford FOAG
 course_code: Math 216A/B
 instructor: Ravi Vakil
@@ -24,7 +23,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -36,7 +35,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

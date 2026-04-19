@@ -1,7 +1,8 @@
 ---
-msc_primary: 54C30
-msc_secondary:
-- 54A05
+msc_primary: 54
+
+  - 54C30
+  - 54A05
 title: Urysohn引理 - 五种表征
 processed_at: '2026-04-05'
 ---

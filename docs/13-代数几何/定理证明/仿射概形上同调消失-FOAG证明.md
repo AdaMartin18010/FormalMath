@@ -1,5 +1,6 @@
 ---
 title: "仿射概形上同调消失 - FOAG证明"
+msc_primary: 14A99
 description: "仿射概形上同调消失的完整证明，包含具体计算示例，突出Vakil的"Affineness is cohomological"观点"
 course: "Stanford FOAG"
 topic: "代数几何"
@@ -25,7 +26,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -37,7 +38,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

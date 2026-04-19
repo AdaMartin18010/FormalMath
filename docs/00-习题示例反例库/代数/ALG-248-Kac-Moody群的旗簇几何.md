@@ -1,5 +1,7 @@
 ---
-msc_primary: 14M15
+msc_primary: 14
+
+  - 14M15
 exercise_id: ALG-248
 title: Kac-Moody群的旗簇几何
 difficulty: 4

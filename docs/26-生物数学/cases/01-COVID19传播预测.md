@@ -1,5 +1,6 @@
 ---
 title: "案例：COVID-19传播动力学预测"
+msc_primary: 00A99
 category: "生物数学"
 difficulty: "高级"
 application: "公共卫生政策制定"

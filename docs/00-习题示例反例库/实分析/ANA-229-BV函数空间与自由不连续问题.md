@@ -1,5 +1,7 @@
 ---
-msc_primary: 49J45
+msc_primary: 49
+
+  - 49J45
 exercise_id: ANA-229
 title: BV函数空间与自由不连续问题
 difficulty: 4

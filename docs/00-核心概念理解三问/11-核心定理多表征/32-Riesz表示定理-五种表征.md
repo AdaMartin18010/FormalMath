@@ -1,7 +1,8 @@
 ---
-msc_primary: 46C05
-msc_secondary:
-- 28C05
+msc_primary: 46
+
+  - 46C05
+  - 28C05
 title: Riesz表示定理 - 五种表征
 processed_at: '2026-04-05'
 ---

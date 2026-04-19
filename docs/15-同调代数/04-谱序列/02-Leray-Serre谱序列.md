@@ -1,5 +1,7 @@
 ---
-msc_primary: 55T10
+msc_primary: 55
+
+  - 55T10
 msc_secondary: ['55R20', '18G40']
 keywords: ['Leray-Serre', '纤维丛', '纤维化', '纤维同调', '基空间']
 version: 1.0

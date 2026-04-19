@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: 德国数学传统分析 (German Mathematical Tradition Analysis)
 processed_at: '2026-04-05'
 ---

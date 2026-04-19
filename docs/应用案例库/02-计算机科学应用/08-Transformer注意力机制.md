@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: Transformer注意力机制的数学原理
 processed_at: '2026-04-05'
 ---

@@ -1,10 +1,11 @@
 ---
 title: 无穷范畴深度版 / Infinity-Categories - In Depth
-msc_primary: 18N60
-msc_secondary:
-- 00A99
-- 18G55
-- 00A99
+msc_primary: 18
+
+  - 18N60
+  - 00A99
+  - 18G55
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # 无穷范畴深度版 / Infinity-Categories - In Depth

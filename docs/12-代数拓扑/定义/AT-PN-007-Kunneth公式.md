@@ -1,4 +1,5 @@
 ---
+msc_primary: 55A99
 university: Princeton
 synonym: [Kunneth Formula, Kunneth定理, 积空间同调]
 type: 定义

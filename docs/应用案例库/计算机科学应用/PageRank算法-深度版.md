@@ -1,9 +1,10 @@
 ---
-msc_primary: 15A18
-msc_secondary:
-- 68P10
-- 60J10
-- 05C50
+msc_primary: 15
+
+  - 15A18
+  - 68P10
+  - 60J10
+  - 05C50
 title: PageRank算法：马尔可夫链视角下的网络重要性度量（深度教学版）
 processed_at: '2026-04-05'
 ---
@@ -461,7 +462,6 @@ class PageRank:
 
         return pi
 
-
 def visualize_pagerank(edges: List[Tuple[int, int]], n: int, pagerank: np.ndarray):
     """可视化PageRank结果"""
     G = nx.DiGraph()
@@ -486,7 +486,6 @@ def visualize_pagerank(edges: List[Tuple[int, int]], n: int, pagerank: np.ndarra
     plt.axis('off')
     plt.tight_layout()
     plt.show()
-
 
 # 演示代码
 if __name__ == "__main__":

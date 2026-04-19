@@ -3,7 +3,7 @@ title: "Ch.11 最小二乘与Gram-Schmidt（Least Squares & Gram-Schmidt）"
 level: "silver"
 course: MIT 18.06 线性代数
 chapter: "11"
-msc_primary: "15-01"
+msc_primary: 15
 target_courses:
   - "MIT 18.06 Ch.11"
 references:
@@ -173,7 +173,7 @@ $$\|A\mathbf{x} - \mathbf{b}\|^2 = \|A\hat{\mathbf{x}} - \mathbf{b}\|^2 + \|A\ma
 
 正规方程 $A^T A \mathbf{x} = A^T \mathbf{b}$ 总有解，因为 $A^T \mathbf{b} \in C(A^T) = C(A^T A)$（因为 $C(A^T A) = C(A^T)$，见习题 11.8）。
 
-若 $A$ 列满秩，则 $A^T A$ 可逆（定理 11.2），故解唯一：$\hat{\mathbf{x}} = (A^T A)^{-1} A^T \mathbf{b}$。$\square$
+若 $A$ 列满秩，则 $A^T A$ 可逆（**定理 11.2**），故解唯一：$\hat{\mathbf{x}} = (A^T A)^{-1} A^T \mathbf{b}$。$\square$
 
 > **证明要点提示**: 正规方程的本质是"误差与列空间正交"。第二部分的展开技巧（将任意解与特解之差分离）是处理最小化问题的标准手法，其关键在于交叉项为零。
 
@@ -622,9 +622,9 @@ $$Q = \begin{pmatrix} \frac{3}{5} & -\frac{4}{5} \\ \frac{4}{5} & \frac{3}{5} \e
 
 **解答**:
 
-由定理 11.1，最小二乘解必满足正规方程 $A^T A \mathbf{x} = A^T \mathbf{b}$。
+由**定理 11.1**，最小二乘解必满足正规方程 $A^T A \mathbf{x} = A^T \mathbf{b}$。
 
-因 $A$ 列满秩，$A^T A$ 可逆（定理 11.2），故正规方程有唯一解 $(A^T A)^{-1} A^T \mathbf{b}$。
+因 $A$ 列满秩，$A^T A$ 可逆（**定理 11.2**），故正规方程有唯一解 $(A^T A)^{-1} A^T \mathbf{b}$。
 
 因此 $\hat{\mathbf{x}}_1 = \hat{\mathbf{x}}_2 = (A^T A)^{-1} A^T \mathbf{b}$。$\square$
 
@@ -756,7 +756,7 @@ theorem orthogonal_preserves_norm {n : ℕ} (Q : Matrix (Fin n) (Fin n) ℝ)
 当 $A$ 列满秩时，最小二乘解唯一，且可由正规方程显式给出：$\hat{\mathbf{x}} = (A^T A)^{-1} A^T \mathbf{b}$。QR 分解求解法则通过 $R\hat{\mathbf{x}} = Q^T \mathbf{b}$ 避免直接计算 $(A^T A)^{-1}$。
 
 ```lean4
--- 定理 11.1：列满秩时最小二乘解唯一
+-- **定理 11.1**：列满秩时最小二乘解唯一
 theorem least_squares_unique {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
     (b : Fin m → ℝ) (hA : LinearMap.ker A.mulVecLinear = ⊥) :
     ∃! x_hat : Fin n → ℝ, A.transpose * A * x_hat = A.transpose * b := by
@@ -773,7 +773,7 @@ theorem least_squares_unique {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
       simp [mul_assoc]
     sorry -- 由 AᵀA 可逆，消去得 y = (AᵀA)⁻¹Aᵀb
 
--- 定理 11.5：QR 分解求解最小二乘
+-- **定理 11.5**：QR 分解求解最小二乘
 -- 解上三角方程组 R x̂ = Qᵀb
 theorem qr_solve_least_squares {m n : ℕ} (A Q R : Matrix (Fin m) (Fin n) ℝ)
     (hA : A = Q * R) (hQ : Qᵀ * Q = 1)
@@ -787,3 +787,16 @@ theorem qr_solve_least_squares {m n : ℕ} (A Q R : Matrix (Fin m) (Fin n) ℝ)
 
 **文档状态**: 🟡 草稿 | **审校轮次**: 0/2
 **最后更新**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。求数据点 $(1,2), (2,3), (3,5)$ 的最小二乘拟合直线 $y = ax + b$。
+
+*解答*：$A = egin{pmatrix} 1&1\2&1\3&1 \end{pmatrix}$，$b = egin{pmatrix} 2\3\5 \end{pmatrix}$。解正规方程 $A^TA\hat{x}=A^Tb$ 得 $a=1.5, b=0.33$。$\square$
+
+---
+
+**习题 1.2**。对 $v_1=(1,0,0), v_2=(1,1,0), v_3=(1,1,1)$ 应用 Gram-Schmidt 正交化。
+
+*解答*：$u_1=v_1=(1,0,0)$；$u_2=v_2-rac{v_2\cdot u_1}{u_1\cdot u_1}u_1=(0,1,0)$；$u_3=v_3-rac{v_3\cdot u_1}{u_1\cdot u_1}u_1-rac{v_3\cdot u_2}{u_2\cdot u_2}u_2=(0,0,1)$。$\square$

@@ -1,6 +1,8 @@
 ---
 title: Applied Mathematics (应用数学)
-msc_primary: 00A99
+msc_primary: 00
+
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # Applied Mathematics (应用数学)
@@ -11,7 +13,7 @@ This document provides bilingual (English-Chinese) definitions, notations, and e
 
 ## 1. Numerical Analysis (数值分析)
 
-**MSC Code:** 65-XX
+**MSC Code:** 65-00
 
 ### English Definition
 Numerical analysis designs algorithms for solving mathematical problems approximately, with attention to accuracy, stability, and efficiency. It bridges continuous mathematics with discrete computation.
@@ -214,7 +216,7 @@ Dynamic programming solves optimization problems by breaking them into subproble
 
 ## 10. Optimal Control Theory (最优控制理论)
 
-**MSC Code:** 49-XX, 93-XX
+**MSC Code:** 49-00, 93-00
 
 ### English Definition
 Optimal control finds control inputs that optimize a cost functional while satisfying dynamics. The Pontryagin maximum principle and Hamilton-Jacobi-Bellman equation are key theoretical tools.
@@ -419,7 +421,7 @@ Regularization prevents overfitting by adding penalty terms to the objective or 
 
 ## 19. Monte Carlo Method (蒙特卡洛方法)
 
-**MSC Code:** 65C05, 65Cxx
+**MSC Code:** 65C05, @
 
 ### English Definition
 Monte Carlo methods use random sampling to estimate quantities of interest. They are particularly effective for high-dimensional integration and problems with complex geometry.
@@ -441,7 +443,7 @@ Monte Carlo methods use random sampling to estimate quantities of interest. They
 
 ## 20. Information Theory (信息论)
 
-**MSC Code:** 94A15, 94Axx
+**MSC Code:** 94A15, @
 
 ### English Definition
 Information theory quantifies information content, storage, and transmission. Key concepts include entropy (uncertainty), mutual information (dependence), and channel capacity (maximum reliable transmission rate).

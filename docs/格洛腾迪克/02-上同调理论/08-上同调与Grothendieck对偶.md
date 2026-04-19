@@ -1,10 +1,11 @@
 ---
 title: 上同调与Grothendieck对偶
 description: 介绍Grothendieck对偶理论的一般框架、对偶化复形、残余复形以及在固有态射上的应用，是现代对偶理论的系统总结。
-msc_primary: 14F17
-msc_secondary:
-- 14B15
-- 13D45
+msc_primary: 14
+
+  - 14F17
+  - 14B15
+  - 13D45
 processed_at: '2026-04-16'
 ---
 

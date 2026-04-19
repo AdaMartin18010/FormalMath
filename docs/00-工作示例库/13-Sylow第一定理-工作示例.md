@@ -1,9 +1,10 @@
 ---
-msc_primary: 03E20
-msc_secondary:
-- 00A99
-- 00A99
-- 00A99
+msc_primary: 03
+
+  - 03E20
+  - 00A99
+  - 00A99
+  - 00A99
 title: Sylow 第一定理 - 工作示例
 processed_at: '2026-04-05'
 ---

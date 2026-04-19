@@ -4,6 +4,7 @@ category: 代数
 topic: 群论
 concept: 交换性
 title: 非交换的群（S₃是最小例子）
+msc_primary: 00A99
 difficulty: 简单
 keywords: [非交换群, 对称群, 置换群, 群的可交换性, 最小阶非交换群]
 related: [CEX-ALG-001, CEX-ALG-004]

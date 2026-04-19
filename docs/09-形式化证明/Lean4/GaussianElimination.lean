@@ -67,7 +67,16 @@ theorem linear_system_solution {m n : ℕ} {α : Type*} [Field α]
     simp [Matrix.mulVecLin, Set.mem_range]
   rw [h1, h2]
   -- 秩相等的等价性由线性映射的维数公式保证
-  -- 此处在 Mathlib4 中已有对应结果，但直接调用需要较深的模块依赖
+  -- 在 Mathlib4 中，此结论对应于线性映射像空间的维数定理：
+  -- b ∈ range(A) ↔ rank(A|b) = rank(A)
+  -- 完整证明需要引用 Mathlib.LinearAlgebra.Dimension 中的相关结果
+  /-
+  证明思路补充（待编译验证）：
+  1. 由线性映射基本定理：dim(range(T)) + dim(ker(T)) = dim(domain)
+  2. b ∈ range(A.mulVecLin) ↔ 增广矩阵的列空间不增加维度
+  3. 这等价于 rank(A.augment b) = rank(A)
+  在 Mathlib4 中可尝试使用 Matrix.rank_eq_rank_append 或类似定理。
+  -/
   sorry
 
 end GaussianElimination

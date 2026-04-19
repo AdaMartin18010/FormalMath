@@ -1,9 +1,10 @@
 ---
-msc_primary: 82B03
-msc_secondary:
-- 82B05
-- 60G60
-- 28D20
+msc_primary: 82
+
+  - 82B03
+  - 82B05
+  - 60G60
+  - 28D20
 title: Gibbs测度与统计系综
 processed_at: '2026-04-05'
 ---

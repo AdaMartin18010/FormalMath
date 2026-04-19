@@ -1,5 +1,7 @@
 ---
-msc_primary: 17B56
+msc_primary: 17
+
+  - 17B56
 exercise_id: ALG-256
 title: Lie代数上同调与Kostant定理
 difficulty: 3

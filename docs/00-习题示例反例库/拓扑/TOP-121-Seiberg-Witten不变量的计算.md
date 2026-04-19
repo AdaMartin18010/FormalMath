@@ -1,5 +1,7 @@
 ---
-msc_primary: 57R57
+msc_primary: 57
+
+  - 57R57
 exercise_id: TOP-121
 title: Seiberg-Witten不变量的计算
 difficulty: 4

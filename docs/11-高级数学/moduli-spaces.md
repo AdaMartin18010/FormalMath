@@ -1,10 +1,10 @@
 ---
 title: 模空间深度版 / Moduli Spaces - Deep Dive
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 00A99
-- 00A99
+msc_primary: 00
+
+  - 00A99
+  - 00A99
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # 模空间深度版 / Moduli Spaces - Deep Dive

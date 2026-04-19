@@ -1,5 +1,7 @@
 ---
-msc_primary: 41A58
+msc_primary: 41
+
+  - 41A58
 exercise_id: ANA-040
 title: Taylor余项估计
 difficulty: 4

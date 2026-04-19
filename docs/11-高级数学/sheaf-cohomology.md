@@ -1,10 +1,10 @@
 ---
 title: 层上同调深度版 / Sheaf Cohomology - Deep Dive
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 32C35
-- 55N30
+msc_primary: 00
+
+  - 00A99
+  - 32C35
+  - 55N30
 processed_at: '2026-04-05'
 ---
 # 层上同调深度版 / Sheaf Cohomology - Deep Dive

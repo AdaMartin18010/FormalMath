@@ -1,12 +1,12 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: 🌐 多语言文档导航
 processed_at: '2026-04-05'
 ---
 msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_secondary: ['00-00']
 ---
 
 # 🌐 多语言文档导航
@@ -29,7 +29,6 @@ msc_secondary: ['00-XX']
 ### English
 
 - [English 文档索引](./../index.md)
-
 
 ## 翻译说明
 

@@ -1,10 +1,5 @@
 ---
-msc_primary: 20-XX
-msc_secondary:
-- 20Cxx
-- 20Gxx
-- 17Bxx
-- 22Exx
+msc_primary: 20
 generated_at: '2026-04-09'
 title: MathOverflow表示论精华对齐文档
 processed_at: '2026-04-09'

@@ -4,6 +4,7 @@ category: 实分析
 topic: 函数序列与级数
 difficulty: ⭐⭐
 title: Weierstrass M-判别法的应用
+msc_primary: 00A99
 keywords: [Weierstrass判别法, 函数级数, 一致收敛, 优级数]
 prerequisites: [ANA-018, ANA-052]
 source: 经典分析习题

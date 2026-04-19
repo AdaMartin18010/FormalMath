@@ -1,5 +1,6 @@
 ---
 title: Harvard Math 232br 代数几何与上同调讲义逐章拆解索引
+msc_primary: 00A99
 course_code: Harvard Math 232br
 course_name: Algebraic Geometry II (Cohomology)
 instructor: Aaron Landesman / Man-Wai Cheung / Joe Harris tradition

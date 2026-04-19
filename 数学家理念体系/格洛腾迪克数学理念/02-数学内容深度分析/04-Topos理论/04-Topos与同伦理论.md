@@ -2,7 +2,9 @@
 title: "Topos与同伦理论：从几何到高阶结构的桥梁"
 level: gold
 course: Grothendieck数学理念
-msc_primary: "18F10"
+msc_primary: 18
+msc_secondary:
+  - 18F10
 references:
   textbooks:
     - title: "Séminaire de Géométrie Algébrique du Bois-Marie (SGA 4)"

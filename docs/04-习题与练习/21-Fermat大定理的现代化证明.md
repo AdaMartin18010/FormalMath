@@ -1,3 +1,8 @@
+---
+title: "Fermat大定理的现代化证明"
+msc_primary: "00"
+---
+
 # Fermat大定理的现代化证明
 
 ## 概述

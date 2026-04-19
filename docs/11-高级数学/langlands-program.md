@@ -1,6 +1,8 @@
 ---
 title: "Langlands纲领深度版 / Langlands Program (Advanced)"
-msc_primary: "11R39"
+msc_primary: 11
+
+  - 11R39
 msc_secondary: ["14D24", "22E50", "11F70"]
 processed_at: '2026-04-05'
 ---

@@ -1,5 +1,7 @@
 ---
-msc_primary: 18G15
+msc_primary: 18
+
+  - 18G15
 msc_secondary: ['13D07', '16E30', '18G10']
 keywords: ['Ext', '右导出函子', 'Hom', '扩张', '扩张群', 'Yoneda Ext']
 version: 1.0

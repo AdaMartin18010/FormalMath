@@ -1,7 +1,8 @@
 ---
-msc_primary: 97D50
-msc_secondary:
-- 00A07
+msc_primary: 97
+
+  - 97D50
+  - 00A07
 title: Putnam历年真题精选
 processed_at: '2026-04-05'
 ---

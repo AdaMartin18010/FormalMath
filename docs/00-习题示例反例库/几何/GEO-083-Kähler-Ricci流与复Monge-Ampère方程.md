@@ -1,5 +1,7 @@
 ---
-msc_primary: 53C55
+msc_primary: 53
+
+  - 53C55
 exercise_id: GEO-083
 title: Kähler-Ricci流与复Monge-Ampère方程
 difficulty: 4

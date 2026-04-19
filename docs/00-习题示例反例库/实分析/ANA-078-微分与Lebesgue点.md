@@ -1,6 +1,7 @@
 ---
 exercise_id: ANA-078
 title: Lebesgue微分定理与绝对连续性
+msc_primary: 00A99
 difficulty: ⭐⭐⭐⭐
 topics: [Lebesgue微分定理, Hardy-Littlewood极大函数, 绝对连续函数]
 created: 2026-04-10

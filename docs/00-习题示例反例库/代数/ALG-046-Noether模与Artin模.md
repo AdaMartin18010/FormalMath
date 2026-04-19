@@ -4,6 +4,7 @@ category: 代数
 topic: 模论基础
 difficulty: ⭐⭐⭐
 title: Noether模与Artin模
+msc_primary: 00A99
 keywords: [Noether模, Artin模, ACC, DCC, 有限生成, 有限长度]
 prerequisites: [ALG-045, ALG-044]
 source: 经典代数习题

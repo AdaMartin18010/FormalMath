@@ -3,7 +3,7 @@ title: "Ch.4 LU 分解（LU Decomposition）"
 level: "silver"
 course: MIT 18.06 线性代数
 chapter: "4"
-msc_primary: "15-01"
+msc_primary: 15
 target_courses:
   - "MIT 18.06 Ch.4"
 references:
@@ -162,7 +162,7 @@ ightarrow$ 单位矩阵"这一结论。
 
 由于 $A$ 可逆，$PA$ 也可逆（置换矩阵可逆）。可逆矩阵的行阶梯形有 $n$ 个非零主元，因此消元过程可以顺利完成。
 
-由定理 4.1 的构造，$PA$ 有 LU 分解 $PA = LU$。$\square$
+由**定理 4.1** 的构造，$PA$ 有 LU 分解 $PA = LU$。$\square$
 
 ---
 
@@ -593,3 +593,16 @@ theorem pa_lu_for_invertible {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ)
 
 **文档状态**: 🟡 草稿 | **审校轮次**: 0/2
 **最后更新**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。求 $A = egin{pmatrix} 2 & 1 \ 4 & 3 \end{pmatrix}$ 的 LU 分解（不带行交换）。
+
+*解答*：$l_{21} = 4/2 = 2$。$U = egin{pmatrix} 2 & 1 \ 0 & 1 \end{pmatrix}$，$L = egin{pmatrix} 1 & 0 \ 2 & 1 \end{pmatrix}$。$\square$
+
+---
+
+**习题 1.2**。说明为什么 $A = egin{pmatrix} 0 & 1 \ 1 & 0 \end{pmatrix}$ 没有不带行交换的 LU 分解。
+
+*解答*：$a_{11}=0$，无法作为主元进行消元，必须先进行行交换。$\square$

@@ -1,9 +1,5 @@
 ---
-msc_primary: 14-XX
-msc_secondary:
-- 14Axx
-- 14Fxx
-- 14Hxx
+msc_primary: 14
 generated_at: '2026-04-09'
 title: MathOverflow代数几何精华对齐文档
 processed_at: '2026-04-09'

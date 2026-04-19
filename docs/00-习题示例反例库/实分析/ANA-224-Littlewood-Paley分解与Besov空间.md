@@ -1,5 +1,7 @@
 ---
-msc_primary: 46E35
+msc_primary: 46
+
+  - 46E35
 exercise_id: ANA-224
 title: Littlewood-Paley分解与Besov空间
 difficulty: 3

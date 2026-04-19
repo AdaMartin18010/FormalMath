@@ -4,6 +4,7 @@ category: 代数
 topic: 环论
 concept: 单位元与零因子
 title: 无逆元的环元素（零因子）
+msc_primary: 00A99
 difficulty: 中等
 keywords: [零因子, 单位元, 整环, 可逆元, 环]
 related: [CEX-ALG-003]

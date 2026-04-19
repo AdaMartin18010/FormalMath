@@ -4,6 +4,7 @@ category: 实分析
 topic: 一致收敛应用
 difficulty: ⭐⭐⭐⭐
 title: Arzelà-Ascoli紧致性定理
+msc_primary: 00A99
 keywords: [Arzelà-Ascoli, 等度连续, 一致有界, 紧致性, 子列收敛]
 prerequisites: [ANA-057, ANA-033]
 source: 经典分析习题

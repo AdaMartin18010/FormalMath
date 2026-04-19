@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 00A99
-- 91A22
+msc_primary: 00
+
+  - 00A99
+  - 00A99
+  - 91A22
 title: 生物数学 / Biomathematics
 processed_at: '2026-04-05'
 ---
@@ -25,7 +25,7 @@ processed_at: '2026-04-05'
 |------|------|---------|----------|
 | [01-基础概念](./01-基础概念.md) | 种群动力学、流行病模型、进化博弈论 | 92B05, 92D25, 91A22 | Murray |
 | [02-核心定理](./02-核心定理.md) | Lotka-Volterra稳定性、繁殖者方程 | 34D20, 92D25 | Hofbauer & Sigmund |
-| [03-实战问题](./03-实战问题.md) | 10个生物建模问题 | 92Bxx | Edelstein-Keshet |
+| [03-实战问题](./03-实战问题.md) | 10个生物建模问题 | @ | Edelstein-Keshet |
 
 ---
 

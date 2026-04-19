@@ -2,7 +2,7 @@
 title: "Sylow 第一定理（Sylow's First Theorem）"
 level: "silver"
 course: MIT 18.701 抽象代数
-msc_primary: "20-02"
+msc_primary: 20
 target_courses:
   - "MIT 18.701"
 references:
@@ -392,3 +392,16 @@ $$\{1\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_n = G
 
 **文档状态**: 🟡 草稿 | **审校轮次**: 0/2
 **最后更新**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。求 $S_4$ 的一个 Sylow 2-子群和一个 Sylow 3-子群。
+
+*解答*：$|S_4|=24=2^3\\cdot 3$。Sylow 2-子群阶为8：可取 $D_8$（正方形对称群）嵌入 $S_4$。Sylow 3-子群阶为3：$\\{e,(123),(132)\\}$。$\square$
+
+---
+
+**习题 1.2**。设 $P$ 是 $G$ 的 Sylow $p$-子群，$H$ 是 $G$ 的子群且 $N_G(P)\\subseteq H$。证明 $H = N_G(H)$。
+
+*解答*：显然 $H\\subseteq N_G(H)$。设 $g\\in N_G(H)$，则 $gPg^{-1}\\subseteq H$ 也是 $H$ 的 Sylow $p$-子群。由 Sylow 定理，存在 $h\\in H$ 使 $gPg^{-1}=hPh^{-1}$，故 $h^{-1}g\\in N_G(P)\\subseteq H$，$g\\in H$。$\square$

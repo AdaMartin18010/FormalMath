@@ -1,6 +1,7 @@
 ---
 id: ANA-010
 title: Weierstrass M-判别法应用
+msc_primary: 00A99
 difficulty: ⭐⭐⭐
 type: application
 topic: 实分析

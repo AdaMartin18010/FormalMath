@@ -1,9 +1,10 @@
 ---
-msc_primary: 08A99
-msc_secondary:
-- 00A99
-- 00A99
-- 00A99
+msc_primary: 08
+
+  - 08A99
+  - 00A99
+  - 00A99
+  - 00A99
 title: 导出函子与 Ext 计算（Z-模） - 工作示例
 processed_at: '2026-04-05'
 ---

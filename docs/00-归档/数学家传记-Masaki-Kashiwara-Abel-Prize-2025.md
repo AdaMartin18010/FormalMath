@@ -1,6 +1,6 @@
 ---
 msc_primary: 01A70
-msc_secondary:
+
 - 14F10
 - 17B37
 - 22E46

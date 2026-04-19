@@ -1,8 +1,8 @@
 ---
-msc_primary: 16Txx
-msc_secondary:
-- 16T05
-- 16T10
+msc_primary: 16
+
+  - 16T05
+  - 16T10
 title: 10 Hopf代数
 description: 'Hopf代数的理论与应用，包括双代数结构、量子群、表示论等核心内容'
 author: 'FormalMath Team'
@@ -18,7 +18,7 @@ tags: ['Hopf代数', '量子群', '双代数', '表示论']
 
 **文档编号**: FM.L3.ALG.10  
 **理论名称**: Hopf代数  
-**MSC分类**: 16Txx  
+**MSC分类**: @  
 **创建日期**: 2026年4月3日  
 **版本**: 1.1
 

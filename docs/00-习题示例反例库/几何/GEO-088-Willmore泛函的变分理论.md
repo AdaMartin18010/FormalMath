@@ -1,5 +1,7 @@
 ---
-msc_primary: 53A05
+msc_primary: 53
+
+  - 53A05
 exercise_id: GEO-088
 title: Willmore泛函的变分理论
 difficulty: 3

@@ -1,6 +1,8 @@
 ---
 title: "非交换几何深度版 / Noncommutative Geometry - In Depth"
-msc_primary: "58B34"
+msc_primary: 58
+
+  - 58B34
 msc_secondary: ["46L85", "14A22", "19D55"]
 processed_at: '2026-04-05'
 ---

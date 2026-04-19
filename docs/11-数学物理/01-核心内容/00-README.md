@@ -1,13 +1,14 @@
 ---
-msc_primary: 00A79
-msc_secondary:
-- 70A99
-- 81A99
-- 82A99
-- 83A99
-- 37A99
-- 47A99
-- 53A99
+msc_primary: 00
+
+  - 00A79
+  - 70A99
+  - 81A99
+  - 82A99
+  - 83A99
+  - 37A99
+  - 47A99
+  - 53A99
 title: 数学物理 (Mathematical Physics)
 processed_at: '2026-04-05'
 ---
@@ -41,7 +42,7 @@ processed_at: '2026-04-05'
 - 辛几何：辛流形上的Hamilton动力学
 - 可积系统：Liouville可积性与作用-角变量
 
-**MSC编码**: 70Hxx, 53Dxx, 37Jxx
+**MSC编码**: @, @, @
 
 ---
 
@@ -56,7 +57,7 @@ processed_at: '2026-04-05'
 - 量子动力学：Schrödinger方程与酉演化
 - 测量理论：投影值测度与Born规则
 
-**MSC编码**: 81Qxx, 47Axx, 46N50
+**MSC编码**: @, @, 46N50
 
 ---
 
@@ -71,7 +72,7 @@ processed_at: '2026-04-05'
 - 相变理论：Ising模型与临界现象
 - 热力学极限：无限系统的严格处理
 
-**MSC编码**: 82Bxx, 37Axx, 60K35
+**MSC编码**: @, @, 60K35
 
 ---
 
@@ -86,7 +87,7 @@ processed_at: '2026-04-05'
 - 规范理论：主丛、联络与曲率
 - 算子代数：局部量子场论的代数方法
 
-**MSC编码**: 81Txx, 58Jxx, 22E70
+**MSC编码**: @, @, 22E70
 
 ---
 
@@ -101,7 +102,7 @@ processed_at: '2026-04-05'
 - 黑洞解：Schwarzschild解与Kerr解
 - 引力波：线性化引力与波方程
 
-**MSC编码**: 83Cxx, 53Zxx, 58Zxx
+**MSC编码**: @, @, @
 
 ---
 

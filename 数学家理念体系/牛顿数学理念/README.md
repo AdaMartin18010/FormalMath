@@ -1,9 +1,10 @@
 ---
 title: 牛顿数学理念体系
-msc_primary: 01A45
+msc_primary: 01
 msc_secondary:
-- 00A99
-- 00A99
+  - 01A45
+  - 00A99
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # 牛顿数学理念体系

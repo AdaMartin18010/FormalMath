@@ -1,6 +1,8 @@
 ---
 title: D019 harvard 232br definition alignment
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # D019 harvard 232br definition alignment

@@ -1,9 +1,10 @@
 ---
-msc_primary: 32Q25
-msc_secondary:
-- 14J32
-- 32G05
-- 83E30
+msc_primary: 32
+
+  - 32Q25
+  - 14J32
+  - 32G05
+  - 83E30
 title: Calabi-Yau紧化
 processed_at: '2026-04-05'
 ---

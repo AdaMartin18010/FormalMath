@@ -2,7 +2,9 @@
 title: "导出范畴与Fourier-Mukai变换：Grothendieck范畴遗产的现代发展"
 level: gold
 course: Grothendieck数学理念
-msc_primary: "18E30"
+msc_primary: 18
+msc_secondary:
+  - 18E30
 references:
   textbooks:
     - title: "Triangulated Categories"

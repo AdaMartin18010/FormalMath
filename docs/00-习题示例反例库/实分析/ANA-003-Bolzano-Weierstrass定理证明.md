@@ -1,6 +1,7 @@
 ---
 id: ANA-003
 title: Bolzano-Weierstrass定理证明
+msc_primary: 00A99
 difficulty: ⭐⭐⭐
 type: proof
 topic: 实分析

@@ -2,7 +2,9 @@
 title: "对偶性与Grothendieck对偶定理：从Serre到Verdier的统一之路"
 level: gold
 course: Grothendieck数学理念
-msc_primary: "14F17"
+msc_primary: 14
+msc_secondary:
+  - 14F17
 references:
   textbooks:
     - title: "Residues and Duality"

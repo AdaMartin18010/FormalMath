@@ -2,7 +2,9 @@
 title: "Grothendieck的数学风格与工作方法：结构主义的实践"
 level: gold
 course: Grothendieck数学理念
-msc_primary: "01A70"
+msc_primary: 01
+msc_secondary:
+  - 01A70
 references:
   textbooks:
     - title: "Récoltes et Semailles"

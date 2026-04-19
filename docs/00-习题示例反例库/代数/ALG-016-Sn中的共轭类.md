@@ -1,5 +1,7 @@
 ---
-msc_primary: 20B30
+msc_primary: 20
+
+  - 20B30
 exercise_id: ALG-016
 title: $S_n$ 中的共轭类
 difficulty: 3

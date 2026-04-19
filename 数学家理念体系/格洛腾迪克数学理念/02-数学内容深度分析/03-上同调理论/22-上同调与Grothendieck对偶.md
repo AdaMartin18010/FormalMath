@@ -1,7 +1,9 @@
 ---
 title: "上同调与 Grothendieck 对偶：例外拉回与六函子形式体系"
 level: "gold"
-msc_primary: "14F17"
+msc_primary: 14
+msc_secondary:
+  - 14F17
 msc_secondary: ["14F20", "18G80", "32C37"]
 author: "FormalMath Gold Layer Team"
 date: "2026-04-18"

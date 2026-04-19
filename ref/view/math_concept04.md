@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A15
+msc_primary: 00
 msc_secondary:
-- 01A99
+  - 00A15
+  - 01A99
 title: 格洛腾迪克的结构实在论：抽象作为新直观的认识论革命
 processed_at: '2026-04-05'
 ---

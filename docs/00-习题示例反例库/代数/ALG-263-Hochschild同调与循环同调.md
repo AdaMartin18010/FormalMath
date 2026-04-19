@@ -1,5 +1,7 @@
 ---
-msc_primary: 16E40
+msc_primary: 16
+
+  - 16E40
 exercise_id: ALG-263
 title: Hochschild同调与循环同调
 difficulty: 3

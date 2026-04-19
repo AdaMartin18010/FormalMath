@@ -1,5 +1,7 @@
 ---
-msc_primary: 14-01
+msc_primary: 14
+msc_secondary:
+  - 14-01
 title: Harvard Math 232br Algebraic Geometry L3定义级对齐表
 processed_at: '2026-04-09'
 course_code: Harvard 232br

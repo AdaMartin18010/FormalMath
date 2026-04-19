@@ -1,7 +1,8 @@
 ---
-msc_primary: 53A05
-msc_secondary:
-- 57R20
+msc_primary: 53
+
+  - 53A05
+  - 57R20
 title: Gauss-Bonnet定理 - 五种表征
 processed_at: '2026-04-05'
 ---

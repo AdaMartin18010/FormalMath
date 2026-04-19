@@ -1,7 +1,8 @@
 ---
-msc_primary: 30C45
-msc_secondary:
-- 30A99
+msc_primary: 30
+
+  - 30C45
+  - 30A99
 title: Riemann映射定理 - 五种表征
 processed_at: '2026-04-05'
 ---

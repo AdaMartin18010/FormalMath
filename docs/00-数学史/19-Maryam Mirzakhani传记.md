@@ -1,3 +1,8 @@
+---
+title: "Maryam Mirzakhani传记"
+msc_primary: "01"
+---
+
 # Maryam Mirzakhani 传记
 
 > "数学之美，只有那些坚持的人才能够发现。"

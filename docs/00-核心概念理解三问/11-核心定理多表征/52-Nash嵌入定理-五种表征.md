@@ -1,9 +1,9 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 53B20
-- 00A99
-- 00A99
+msc_primary: 00
+
+  - 53B20
+  - 00A99
+  - 00A99
 title: Nash嵌入定理 - 五种表征
 processed_at: '2026-04-05'
 ---

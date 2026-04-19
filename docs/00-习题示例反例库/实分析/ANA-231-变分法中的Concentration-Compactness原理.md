@@ -1,5 +1,7 @@
 ---
-msc_primary: 35J20
+msc_primary: 35
+
+  - 35J20
 exercise_id: ANA-231
 title: 变分法中的Concentration-Compactness原理
 difficulty: 5

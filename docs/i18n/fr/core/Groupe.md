@@ -1,8 +1,9 @@
 ---
-msc_primary: 20A99
-msc_secondary:
-- 20A05
-- 20B30
+msc_primary: 20
+
+  - 20A99
+  - 20A05
+  - 20B30
 lang: fr
 original: docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md
 translation_status: completed

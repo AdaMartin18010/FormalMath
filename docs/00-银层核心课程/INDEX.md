@@ -1,3 +1,8 @@
+---
+title: "INDEX"
+msc_primary: "00"
+---
+
 # FormalMath 银层 + 金层 核心内容总索引
 
 > 生成时间: 2026-04-18

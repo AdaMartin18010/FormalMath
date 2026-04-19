@@ -1,5 +1,7 @@
 ---
-msc_primary: 26A24
+msc_primary: 26
+
+  - 26A24
 exercise_id: ANA-036
 title: L'Hôpital法则应用
 difficulty: 3

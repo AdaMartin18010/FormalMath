@@ -1,5 +1,7 @@
 ---
-msc_primary: 14A22
+msc_primary: 14
+
+  - 14A22
 exercise_id: AG-077
 title: 非交换Hodge理论与周期性循环同调
 difficulty: 5

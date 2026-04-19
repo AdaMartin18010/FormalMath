@@ -1,5 +1,7 @@
 ---
-msc_primary: 14F10
+msc_primary: 14
+
+  - 14F10
 exercise_id: ALG-262
 title: Beilinson-Bernstein局部化
 difficulty: 5

@@ -2,7 +2,9 @@
 title: "André Weil在数学史中的位置：从统一者到先驱"
 level: gold
 course: Weil数学理念
-msc_primary: "01A70"
+msc_primary: 01
+msc_secondary:
+  - 01A70
 references:
   textbooks:
     - title: "The Apprenticeship of a Mathematician"

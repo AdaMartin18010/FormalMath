@@ -247,6 +247,21 @@ abbrev HodgeRealization (M : Motive X) : Type := sorry
 3. Lewis, J.D. *A survey of the Hodge conjecture*
 4. Voisin, C. *Hodge theory and complex algebraic geometry*
 
--/ 
+
+## Mathlib4 形式化路线图
+
+| 依赖理论 | Mathlib4 状态 | 备注 |
+|---------|--------------|------|
+| Hodge理论 | ❌ 未开始 | 调和形式、分解 |
+| 代数簇/概形 | 🔄 基础 (AlgebraicGeometry) | 概形定义存在 |
+| 复流形 | 🔄 部分 | Kähler流形 |
+| 上同调理论 | 🔄 发展中 | 层上同调 |
+| 代数闭链 | ❌ 未开始 | Chow群 |
+
+**千禧年难题状态**: Hodge猜想是Clay七大千禧年难题之一，形式化陈述本身即重大挑战。
+**当前策略**: 定义Hodge结构、代数闭链、有理等价等核心概念。
+
+-/
+ 
 
 print "Hodge Conjecture framework complete"

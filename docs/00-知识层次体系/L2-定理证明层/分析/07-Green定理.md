@@ -1,9 +1,10 @@
 ---
-msc_primary: 26B20
-msc_secondary:
-- 58C35
-- 53A04
-- 97I55
+msc_primary: 26
+
+  - 26B20
+  - 58C35
+  - 53A04
+  - 97I55
 title: Green 定理
 processed_at: '2026-04-05'
 ---

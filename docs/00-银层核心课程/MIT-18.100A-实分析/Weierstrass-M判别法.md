@@ -3,7 +3,7 @@ course: MIT 18.100A 实分析
 
 title: "Weierstrass M-判别法（Weierstrass M-Test）"
 level: "silver"
-msc_primary: "40-01"
+msc_primary: 40
 target_courses:
   - "MIT 18.100A Ch.6"
 references:
@@ -397,3 +397,16 @@ $$\lim_{n \to \infty} \int_0^1 f_n(x)\, dx = 1 \neq 0 = \int_0^1 \lim_{n \to \in
 
 **文档状态**: 🟡 草稿 | **审校轮次**: 0/2
 **最后更新**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。判断级数 $\sum_{n=1}^{\infty} rac{\sin(nx)}{n^2}$ 在 $\mathbb{R}$ 上是否一致收敛。
+
+*解答*：$\left|rac{\sin(nx)}{n^2}ight| \leq rac{1}{n^2} = M_n$。$\sum M_n$ 收敛（p-级数，p=2>1）。由 Weierstrass M-判别法，原级数在 $\mathbb{R}$ 上一致收敛。$\square$
+
+---
+
+**习题 1.2**。举例说明：$\sum f_n$ 一致收敛不能推出 $\sum |f_n|$ 一致收敛。
+
+*解答*：取 $f_n(x) = rac{(-1)^n}{n}$（常数函数）。$\sum f_n$ 在 $\mathbb{R}$ 上一致收敛（交错级数），但 $\sum |f_n| = \sum rac{1}{n}$ 发散。$\square$

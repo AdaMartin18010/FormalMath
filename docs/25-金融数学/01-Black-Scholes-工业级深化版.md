@@ -1,6 +1,8 @@
 ---
 title: "Black-Scholes模型 - 工业级深化版"
-msc_primary: "91G20"
+msc_primary: 91
+
+  - 91G20
 msc_secondary: ['60H10', '60J70', '35K15', '91G60']
 prerequisites: ['随机过程', '偏微分方程', '数值分析', 'Python编程']
 processed_at: '2026-04-09'

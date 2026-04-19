@@ -1,5 +1,7 @@
 ---
-msc_primary: 14E30
+msc_primary: 14
+
+  - 14E30
 exercise_id: AG-070
 title: flip的存在性与终止性
 difficulty: 4

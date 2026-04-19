@@ -1,6 +1,6 @@
 ---
 title: 概率统计模拟实验与Python实现
-msc_primary: 60-08
+msc_primary: 60
 ---
 
 # 概率统计模拟实验与Python实现

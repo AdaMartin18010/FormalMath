@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B35
+msc_primary: 42
+
+  - 42B35
 exercise_id: ANA-219
 title: Carleson测度与BMO嵌入
 difficulty: 3

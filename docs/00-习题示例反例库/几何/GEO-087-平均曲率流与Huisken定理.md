@@ -1,5 +1,7 @@
 ---
-msc_primary: 53E10
+msc_primary: 53
+
+  - 53E10
 exercise_id: GEO-087
 title: 平均曲率流与Huisken定理
 difficulty: 4

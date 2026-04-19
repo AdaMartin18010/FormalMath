@@ -1,5 +1,6 @@
 ---
 title: Stanford FOAG 对齐深化执行计划
+msc_primary: 00A99
 task_id: P2-Stanford-FOAG- deepen
 course_code: Stanford FOAG
 course_name: Foundations of Algebraic Geometry

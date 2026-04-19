@@ -1,5 +1,7 @@
 ---
-msc_primary: 26-01
+msc_primary: 26
+msc_secondary:
+  - 26-01
 title: MIT 18.100A Real Analysis L6思想方法提炼
 processed_at: '2026-04-10'
 course_code: MIT 18.100A

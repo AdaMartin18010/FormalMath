@@ -249,11 +249,19 @@ theorem p_subgroup_exists {G : Type u} [Group G] [Fintype G] {p : ℕ} [Fact p.P
               exact Nat.Coprime.dvd_of_dvd_mul_right h_coprime h_dvd
             exact Nat.pow_dvd_pow_iff_le_right (Nat.Prime.one_lt Fact.out).le this
           have h_n_le_m : n ≤ m := by
-            /- 由Sylow子群的极大性 -/
+            /- 由Sylow子群的极大性: Sylow子群是极大的p-子群。
+               若 m < n，则 p^m < p^n = |P|，P作为p-群应有更大的p-子群，
+               这与Sylow子群的极大性矛盾。
+               在Mathlib4中，这对应 Sylow.IsPGroup.maximal 的性质。 -/
+            /- 需要使用极大性引理: 不存在严格包含P的p-子群 -/
             sorry
           have h_m_eq_n : m = n := by linarith
           rw [h_m_eq_n] at hm
           exact hm
+        /- 需要更精确的子群构造:
+           已知 |P| = p^n。对 k+1 ≤ n，p-群P中存在阶为 p^(k+1) 的子群。
+           在Mathlib4中，此结论对应 IsPGroup.exists_subgroup_card_pow_prime。
+           具体构造可通过中心非平凡性+归纳法实现。 -/
         sorry  /- 需要更精确的子群构造 -/
       exact this
     exact h_sylow
@@ -341,6 +349,16 @@ theorem group_of_order_pq_cyclic {p q : ℕ} [Fact p.Prime] [Fact q.Prime]
      4. 直积的两个循环群是循环群
   -/
   /- 使用Mathlib的已有结果 -/
+  /- 证明思路详细展开:
+     1. 由Sylow第三定理，n_p | q 且 n_p ≡ 1 (mod p)。因q为素数，n_p ∈ {1, q}。
+        若 n_p = q，则 q ≡ 1 (mod p) ⇒ p | (q-1)，与假设 ¬(p | q-1) 矛盾。
+        故 n_p = 1，Sylow p-子群 P ⊲ G 正规。
+     2. 同理 n_q | p 且 n_q ≡ 1 (mod q)。因 p < q，n_q 不能为 p（否则 p ≡ 1 (mod q)，即 q | p-1 < p，矛盾）。
+        故 n_q = 1，Sylow q-子群 Q ⊲ G 正规。
+     3. P ∩ Q = {1}（因 |P ∩ Q| 整除 gcd(p, q) = 1）。
+     4. |PQ| = |P||Q|/|P ∩ Q| = pq = |G|，故 G = P × Q（内直积）。
+     5. P ≅ ℤ/pℤ, Q ≅ ℤ/qℤ，且 gcd(p,q)=1，故 G ≅ ℤ/pqℤ 为循环群。
+     在Mathlib4中，可使用 IsCyclic.of_card 或相关结构定理。 -/
   apply isCyclic_of_prime_card 
   /- 需要证明 G 的结构是循环群 -/
   sorry  /- 完整证明需要详细展开Sylow定理的应用 -/

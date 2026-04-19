@@ -1,3 +1,8 @@
+---
+title: "FormalMath文档交叉引用索引"
+msc_primary: "00"
+---
+
 # FormalMath 文档交叉引用索引
 
 ---

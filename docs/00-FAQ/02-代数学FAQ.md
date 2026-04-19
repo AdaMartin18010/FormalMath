@@ -1,8 +1,9 @@
 ---
-msc_primary: 20A99
-msc_secondary:
-- 13A99
-- 15A99
+msc_primary: 20
+
+  - 20A99
+  - 13A99
+  - 15A99
 title: 代数学常见问题解答 (FAQ)
 processed_at: '2026-04-05'
 ---

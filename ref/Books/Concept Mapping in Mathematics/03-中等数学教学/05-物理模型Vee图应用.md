@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A15
+msc_primary: 00
 msc_secondary:
-- 01A99
+  - 00A15
+  - 01A99
 title: 使用概念映射和Gowin的Vee理解物理现象的数学模型
 processed_at: '2026-04-05'
 ---

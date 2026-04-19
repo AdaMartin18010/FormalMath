@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A15
+msc_primary: 00
 msc_secondary:
-- 01A99
+  - 00A15
+  - 01A99
 title: 数学中的概念映射：全面梳理与多维表征系统
 processed_at: '2026-04-05'
 ---

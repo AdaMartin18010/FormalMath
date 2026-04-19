@@ -3,7 +3,7 @@ course: MIT 18.100A 实分析
 
 title: "确界原理与 Archimedean 性质"
 level: "silver"
-msc_primary: "26-01"
+msc_primary: 26
 target_courses:
   - "MIT 18.100A"
 references:
@@ -414,3 +414,16 @@ $\square$
 
 **文档状态**: 🟡 草稿 | **审校轮次**: 0/2
 **最后更新**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。求集合 $S = \{x\in\mathbb{Q}: x^2 < 2\}$ 在 $\mathbb{R}$ 中的上确界。
+
+*解答*：$S$ 的上界为 $\sqrt{2}$（在 $\mathbb{R}$ 中）。对任意 $\epsilon > 0$，由有理数的稠密性，存在有理数 $q$ 使 $\sqrt{2}-\epsilon < q < \sqrt{2}$，且 $q^2 < 2$（取足够接近 $\sqrt{2}$ 的有理数）。故 $\sup S = \sqrt{2}$。$\square$
+
+---
+
+**习题 1.2**。用 Archimedean 性质证明：对任意 $x > 0$，存在 $n\in\mathbb{N}$ 使 $rac{1}{n} < x$。
+
+*解答*：由 Archimedean 性质，取 $y = 1$，存在 $n\in\mathbb{N}$ 使 $nx > 1$（因 $x > 0$），即 $rac{1}{n} < x$。$\square$

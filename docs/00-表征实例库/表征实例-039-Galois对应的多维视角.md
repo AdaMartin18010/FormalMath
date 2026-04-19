@@ -1,8 +1,9 @@
 ---
-msc_primary: 11S20
-msc_secondary:
-- 12F10
-- 20J06
+msc_primary: 11
+
+  - 11S20
+  - 12F10
+  - 20J06
 title: Galois对应的多维视角 - 域扩张与子群的思维导图
 processed_at: '2026-04-10'
 ---
@@ -112,7 +113,6 @@ Level 2: Galois对应的核心
       │                  │
    F = L^H  ←───────→   H = Gal(L/F)
    (固定域)            (固定子群)
-
 
    关键性质：
    • [L:F] = |Gal(L/F)|

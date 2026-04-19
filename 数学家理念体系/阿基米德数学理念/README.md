@@ -1,9 +1,10 @@
 ---
 title: 阿基米德数学理念体系
-msc_primary: 01A20
+msc_primary: 01
 msc_secondary:
-- 00A99
-- 00A99
+  - 01A20
+  - 00A99
+  - 00A99
 processed_at: '2026-04-16'
 ---
 # 阿基米德数学理念体系

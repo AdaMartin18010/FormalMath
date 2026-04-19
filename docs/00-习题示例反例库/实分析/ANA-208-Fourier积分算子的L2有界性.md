@@ -1,5 +1,7 @@
 ---
-msc_primary: 42B20
+msc_primary: 42
+
+  - 42B20
 exercise_id: ANA-208
 title: Fourier积分算子的L2有界性
 difficulty: 4

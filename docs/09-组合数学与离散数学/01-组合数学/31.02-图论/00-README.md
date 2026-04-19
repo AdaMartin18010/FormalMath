@@ -1,6 +1,8 @@
 ---
 title: "图论 (Graph Theory)"
-msc_primary: "05C15"
+msc_primary: 05
+
+  - 05C15
 msc_secondary: ['05C10', '05C40', '05C69', '05C90']
 processed_at: '2026-04-05'
 ---

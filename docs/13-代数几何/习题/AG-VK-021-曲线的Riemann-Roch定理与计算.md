@@ -1,9 +1,7 @@
 ---
 title: 曲线的 Riemann-Roch 定理与计算
-msc_primary: 14-01
-msc_secondary:
-- 14Hxx
-- 14F17
+msc_primary: 14
+  - 14F17
 level: silver
 target_courses:
 - Stanford FOAG

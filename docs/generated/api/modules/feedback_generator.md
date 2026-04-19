@@ -1,12 +1,12 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: feedback_generator
 processed_at: '2026-04-05'
 ---
 msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_secondary: ['00-00']
 ---
 
 # feedback_generator

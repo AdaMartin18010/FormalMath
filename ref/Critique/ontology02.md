@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A15
+msc_primary: 00
 msc_secondary:
-- 01A99
+  - 00A15
+  - 01A99
 title: 示例：分子动力学与连续介质耦合
 processed_at: '2026-04-05'
 ---

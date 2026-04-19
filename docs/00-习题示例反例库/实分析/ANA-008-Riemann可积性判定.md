@@ -1,6 +1,7 @@
 ---
 id: ANA-008
 title: Riemann可积性判定
+msc_primary: 00A99
 difficulty: ⭐⭐⭐
 type: proof
 topic: 实分析

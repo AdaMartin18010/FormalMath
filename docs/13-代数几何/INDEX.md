@@ -1,6 +1,5 @@
 ---
-msc_primary: 14-XX
-msc_secondary: ['14Axx', '14Fxx', '14Cxx', '14Dxx', '14Hxx', '14Jxx']
+msc_primary: 14
 title: 13-代数几何索引 / Algebraic Geometry Index
 processed_at: '2026-04-08'
 references:
@@ -15,7 +14,7 @@ references:
       year: 1977
       isbn: 978-0387902449
       msc: 14-01
-      chapters: []
+      chapters: 
       url: ~
     - id: vakil_foag
       type: textbook
@@ -27,7 +26,7 @@ references:
       year: 2024
       isbn: ~
       msc: 14-01
-      chapters: []
+      chapters: 
       url: "https://math.stanford.edu/~vakil/216blog/"
   databases:
     - id: nlab

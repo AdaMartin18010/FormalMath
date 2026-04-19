@@ -1,5 +1,7 @@
 ---
-msc_primary: 26A06
+msc_primary: 26
+
+  - 26A06
 exercise_id: ANA-034
 title: Darboux介值性质
 difficulty: 3

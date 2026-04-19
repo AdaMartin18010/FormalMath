@@ -1,7 +1,9 @@
 ---
 title: "EGA与SGA系统引用框架：原始文献索引与核心命题映射"
 level: "gold"
-msc_primary: "14-01"
+msc_primary: 14
+msc_secondary:
+  - 14-01
 references:
   textbooks:
     - title: "Éléments de Géométrie Algébrique I"

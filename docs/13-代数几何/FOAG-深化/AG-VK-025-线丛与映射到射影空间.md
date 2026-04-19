@@ -1,9 +1,8 @@
 ---
 title: 线丛与映射到射影空间
-msc_primary: 14-01
-msc_secondary:
-- 14C20
-- 14E05
+msc_primary: 14
+  - 14C20
+  - 14E05
 level: silver
 target_courses:
 - Stanford FOAG

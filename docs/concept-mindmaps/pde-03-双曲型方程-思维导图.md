@@ -1,7 +1,7 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: 双曲型方程 - 思维导图
 processed_at: '2026-04-05'
 ---
@@ -353,4 +353,4 @@ graph TD
 *文档版本：1.0*
 *创建时间：2026年4月*
 *分类：偏微分方程 / 双曲型方程 / 思维导图*
-*MSC 2020: 35Lxx*
+*MSC 2020: @*

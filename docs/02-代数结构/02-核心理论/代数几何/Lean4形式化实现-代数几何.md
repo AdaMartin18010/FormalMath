@@ -1,10 +1,11 @@
 ---
 title: Lean4形式化实现-代数几何 / Lean 4 Formalization - Algebraic Geometry
-msc_primary: 00A99
-msc_secondary:
-- 14A15
-- 18F20
-- 14A99
+msc_primary: 00
+
+  - 00A99
+  - 14A15
+  - 18F20
+  - 14A99
 processed_at: '2026-04-05'
 references:
   textbooks:
@@ -18,7 +19,7 @@ references:
       year: 2011
       isbn: 978-0132413770
       msc: 16-01
-      chapters: []
+      chapters: 
       url: ~
     - id: strang_la
       type: textbook
@@ -30,7 +31,7 @@ references:
       year: 2016
       isbn: 978-0980232776
       msc: 15-01
-      chapters: []
+      chapters: 
       url: ~
     - id: dummit_foote_aa
       type: textbook
@@ -43,7 +44,7 @@ references:
       year: 2003
       isbn: 978-0471433347
       msc: 13-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -62,8 +63,8 @@ references:
       entry_url: "https://zbmath.org/?q=an:{zb_id}"
       consulted_at: 2026-04-17
 ---
-msc_primary: "14Hxx"
-msc_secondary: ['14A15', '18F20', '14-XX']
+msc_primary: "@"
+msc_secondary: ['14A15', '18F20', '14-00']
 ---
 
 # Lean4形式化实现-代数几何 / Lean 4 Formalization - Algebraic Geometry

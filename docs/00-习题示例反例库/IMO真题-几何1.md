@@ -1,5 +1,6 @@
 ---
 title: "IMO真题-几何：平面几何证明"
+msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L4

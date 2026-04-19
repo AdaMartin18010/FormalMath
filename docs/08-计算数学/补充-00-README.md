@@ -1,10 +1,10 @@
 ---
 title: 计算数学
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 00A99
-- 00A99
+msc_primary: 00
+
+  - 00A99
+  - 00A99
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # 计算数学 / Computational Mathematics
@@ -23,7 +23,7 @@ processed_at: '2026-04-05'
 
 | 文档 | 内容 | MSC分类 | 参考著作 |
 |------|------|---------|----------|
-| [01-基础概念](./01-基础概念.md) | 数值线性代数、有限元方法、谱方法 | 65Fxx, 65Nxx | Golub & Van Loan |
+| [01-基础概念](./01-基础概念.md) | 数值线性代数、有限元方法、谱方法 | @, @ | Golub & Van Loan |
 | [02-核心定理](./02-核心定理.md) | Lax等价定理、收敛性分析 | 65J10, 65M12 | Trefethen |
 | [03-实战问题](./03-实战问题.md) | 10个数值计算问题 | 65xx | Quarteroni |
 

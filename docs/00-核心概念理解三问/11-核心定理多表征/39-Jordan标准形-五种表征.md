@@ -1,7 +1,8 @@
 ---
-msc_primary: 15A21
-msc_secondary:
-- 15A18
+msc_primary: 15
+
+  - 15A21
+  - 15A18
 title: Jordan标准形 - 五种表征
 processed_at: '2026-04-05'
 ---

@@ -1,9 +1,10 @@
 ---
 title: Pascal三角形与组合数学：从Traité du Triangle Arithmétique到现代组合学
-msc_primary: 60A99
+msc_primary: 60
 msc_secondary:
-- 05A10
-- 51A05
+  - 60A99
+  - 05A10
+  - 51A05
 processed_at: '2026-04-05'
 ---
 # Pascal三角形与组合数学：从Traité du Triangle Arithmétique到现代组合学

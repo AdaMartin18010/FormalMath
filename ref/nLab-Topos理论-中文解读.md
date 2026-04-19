@@ -1,5 +1,7 @@
 ---
-msc_primary: 18B25
+msc_primary: 18
+msc_secondary:
+  - 18B25
 msc_secondary: [18F10, 14F20, 03G30, 03B20]
 title: nLab - Topos理论 (Topos Theory) 中文解读
 nlab_url: https://ncatlab.org/nlab/show/topos

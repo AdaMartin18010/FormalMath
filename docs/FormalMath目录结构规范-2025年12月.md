@@ -1,8 +1,8 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
-- 00A99
+msc_primary: 00
+
+  - 00A99
+  - 00A99
 title: FormalMath项目目录结构规范
 processed_at: '2026-04-05'
 ---

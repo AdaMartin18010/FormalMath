@@ -1,5 +1,7 @@
 ---
-msc_primary: 55P48
+msc_primary: 55
+
+  - 55P48
 exercise_id: TOP-139
 title: operad与无穷loop空间
 difficulty: 4

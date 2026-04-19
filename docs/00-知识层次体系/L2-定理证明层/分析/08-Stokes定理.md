@@ -1,9 +1,10 @@
 ---
-msc_primary: 58C35
-msc_secondary:
-- 26B20
-- 53A45
-- 97I55
+msc_primary: 58
+
+  - 58C35
+  - 26B20
+  - 53A45
+  - 97I55
 title: Stokes 定理
 processed_at: '2026-04-05'
 ---

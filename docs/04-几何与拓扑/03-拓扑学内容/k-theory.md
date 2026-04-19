@@ -1,9 +1,10 @@
 ---
 title: K理论初步
-msc_primary: 00A99
-msc_secondary:
-- 55N15
-- 55R50
+msc_primary: 00
+
+  - 00A99
+  - 55N15
+  - 55R50
 processed_at: '2026-04-05'
 references:
   textbooks:
@@ -17,7 +18,7 @@ references:
       year: 2000
       isbn: 978-0131816299
       msc: 54-01
-      chapters: []
+      chapters: 
       url: ~
     - id: lee_ism
       type: textbook
@@ -29,7 +30,7 @@ references:
       year: 2012
       isbn: 978-1441999818
       msc: 58-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab

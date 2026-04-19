@@ -1,11 +1,12 @@
 ---
-msc_primary: 00A79
-msc_secondary:
-- 70A99
-- 81A99
-- 82A99
-- 37A99
-- 47A99
+msc_primary: 00
+
+  - 00A79
+  - 70A99
+  - 81A99
+  - 82A99
+  - 37A99
+  - 47A99
 title: 数学物理 (Mathematical Physics)
 processed_at: '2026-04-05'
 ---
@@ -36,7 +37,7 @@ processed_at: '2026-04-05'
 - 辛几何：辛流形上的Hamilton动力学
 - 可积系统：Liouville可积性与作用-角变量
 
-**MSC编码**: 70Hxx, 53Dxx, 37Jxx
+**MSC编码**: @, @, @
 
 **关键文献**: Arnold《Mathematical Methods of Classical Mechanics》, Abraham-Marsden《Foundations of Mechanics》
 
@@ -51,7 +52,7 @@ processed_at: '2026-04-05'
 - 量子动力学：Schrödinger方程与酉演化
 - 测量理论：投影值测度与 Born 规则
 
-**MSC编码**: 81Qxx, 47Axx, 46N50
+**MSC编码**: @, @, 46N50
 
 **关键文献**: von Neumann《Mathematical Foundations of Quantum Mechanics》, Reed-Simon《Methods of Modern Mathematical Physics》
 
@@ -66,7 +67,7 @@ processed_at: '2026-04-05'
 - 相变理论：Ising模型与临界现象
 - 热力学极限：无限系统的严格处理
 
-**MSC编码**: 82Bxx, 37Axx, 60K35
+**MSC编码**: @, @, 60K35
 
 **关键文献**: Ruelle《Statistical Mechanics: Rigorous Results》, Georgii《Gibbs Measures and Phase Transitions》
 
@@ -76,9 +77,9 @@ processed_at: '2026-04-05'
 
 | 文档 | 主题 | MSC编码 |
 |------|------|---------|
-| [01-经典力学的数学基础](01-经典力学的数学基础-深度版.md) | Lagrange力学、Hamilton力学、辛几何、可积系统 | 70Hxx, 53Dxx |
-| [02-量子力学的数学基础](02-量子力学的数学基础-深度版.md) | Hilbert空间、算子理论、谱理论、量子动力学 | 81Qxx, 47Axx |
-| [03-统计力学的数学基础](03-统计力学的数学基础-深度版.md) | 遍历理论、Gibbs测度、Ising模型、相变 | 82Bxx, 37Axx |
+| [01-经典力学的数学基础](01-经典力学的数学基础-深度版.md) | Lagrange力学、Hamilton力学、辛几何、可积系统 | @, @ |
+| [02-量子力学的数学基础](02-量子力学的数学基础-深度版.md) | Hilbert空间、算子理论、谱理论、量子动力学 | @, @ |
+| [03-统计力学的数学基础](03-统计力学的数学基础-深度版.md) | 遍历理论、Gibbs测度、Ising模型、相变 | @, @ |
 
 ---
 

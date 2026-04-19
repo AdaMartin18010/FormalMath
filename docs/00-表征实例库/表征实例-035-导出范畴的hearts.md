@@ -1,8 +1,9 @@
 ---
-msc_primary: 18E30
-msc_secondary:
-- 18G80
-- 14F05
+msc_primary: 18
+
+  - 18E30
+  - 18G80
+  - 14F05
 title: 导出范畴的t-结构与hearts - 从三角到Abel
 processed_at: '2026-04-10'
 ---

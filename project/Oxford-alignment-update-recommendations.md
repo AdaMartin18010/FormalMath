@@ -1,7 +1,8 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
 msc_secondary:
-- 97A99
+  - 00A99
+  - 97A99
 date: '2026-04-04'
 version: v1.0
 title: Oxford课程内容对齐更新建议

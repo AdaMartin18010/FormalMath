@@ -1,12 +1,12 @@
 ---
-msc_primary: 00A99
-msc_secondary:
-- 00A99
+msc_primary: 00
+
+  - 00A99
 title: 概率论与随机过程
 processed_at: '2026-04-05'
 ---
 msc_primary: "00A99"
-msc_secondary: ['00-XX']
+msc_secondary: ['00-00']
 ---
 
 # 概率论与随机过程
@@ -67,9 +67,9 @@ msc_primary: 60xx
 
 | 文档 | 内容 | MSC分类 | 参考著作 |
 |------|------|---------|----------|
-| [01-测度论概率基础-深度版](./01-测度论概率基础-深度版.md) | Kolmogorov公理化、随机变量、期望、收敛性 | 60Axx, 60Bxx | Durrett, Billingsley |
-| [02-随机过程基础-深度版](./02-随机过程基础-深度版.md) | 布朗运动、鞅、马尔可夫过程 | 60Gxx, 60Jxx | Karatzas-Shreve, Revuz-Yor |
-| [03-随机微积分-深度版](./03-随机微积分-深度版.md) | Itô积分、SDE、Black-Scholes | 60Hxx, 91Gxx | Øksendal, Shreve |
+| [01-测度论概率基础-深度版](./01-测度论概率基础-深度版.md) | Kolmogorov公理化、随机变量、期望、收敛性 | @, @ | Durrett, Billingsley |
+| [02-随机过程基础-深度版](./02-随机过程基础-深度版.md) | 布朗运动、鞅、马尔可夫过程 | @, @ | Karatzas-Shreve, Revuz-Yor |
+| [03-随机微积分-深度版](./03-随机微积分-深度版.md) | Itô积分、SDE、Black-Scholes | @, @ | Øksendal, Shreve |
 
 ### 核心人物
 

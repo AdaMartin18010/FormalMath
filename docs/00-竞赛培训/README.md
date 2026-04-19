@@ -1,3 +1,8 @@
+---
+title: "README"
+msc_primary: "00"
+---
+
 ﻿---
 msc_primary: 00A07
 msc_secondary:
@@ -5,7 +10,7 @@ msc_secondary:
 - 97D50
 - 97U40
 title: 数学竞赛培训模块
-processed_at: '2026-04-05'
+processed_at: '2026'-04-05'
 ---
 # 数学竞赛培训模块
 

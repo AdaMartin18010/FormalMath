@@ -1,8 +1,9 @@
 ---
 title: 柯西数学理念体系
-msc_primary: 26-03
+msc_primary: 26
 msc_secondary:
-- 01A70
+  - 26-03
+  - 01A70
 processed_at: '2026-04-08'
 ---
 

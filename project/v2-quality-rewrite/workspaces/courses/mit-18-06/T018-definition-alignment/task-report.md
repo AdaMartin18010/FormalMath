@@ -1,6 +1,8 @@
 ---
 title: 'T018: MIT 18.06 / 18.700 定义对齐任务报告'
-msc_primary: 00A99
+msc_primary: 00
+msc_secondary:
+  - 00A99
 processed_at: '2026-04-05'
 ---
 # T018: MIT 18.06 / 18.700 定义对齐任务报告

@@ -1,6 +1,8 @@
 ---
 title: "微分几何深化 (Differential Geometry Advanced)"
-msc_primary: "53C21"
+msc_primary: 53
+
+  - 53C21
 msc_secondary: ['53C05', '57R20', '58E05', '53D05']
 processed_at: '2026-04-05'
 references:
@@ -15,7 +17,7 @@ references:
       year: 2000
       isbn: 978-0131816299
       msc: 54-01
-      chapters: []
+      chapters: 
       url: ~
     - id: lee_ism
       type: textbook
@@ -27,7 +29,7 @@ references:
       year: 2012
       isbn: 978-1441999818
       msc: 58-01
-      chapters: []
+      chapters: 
       url: ~
   databases:
     - id: nlab
@@ -50,7 +52,7 @@ references:
 # 微分几何深化 (Differential Geometry Advanced)
 
 **最后更新**: 2026年4月5日  
-**MSC分类**: 53-XX (微分几何), 57R-XX (微分拓扑), 58E-XX (变分法)
+**MSC分类**: 53-00 (微分几何), 57R-XX (微分拓扑), 58E-XX (变分法)
 
 ---
 

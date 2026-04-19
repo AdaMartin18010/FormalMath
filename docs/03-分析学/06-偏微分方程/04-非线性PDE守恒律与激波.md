@@ -1,6 +1,8 @@
 ---
 title: "04 非线性PDE守恒律与激波"
-msc_primary: "35L65"
+msc_primary: 35
+
+  - 35L65
 msc_secondary: ['35L67', '35L03', '76L05']
 processed_at: '2026-04-05'
 ---

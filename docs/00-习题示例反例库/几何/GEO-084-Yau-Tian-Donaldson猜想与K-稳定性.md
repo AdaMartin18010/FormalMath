@@ -1,5 +1,7 @@
 ---
-msc_primary: 53C55
+msc_primary: 53
+
+  - 53C55
 exercise_id: GEO-084
 title: Yau-Tian-Donaldson猜想与K-稳定性
 difficulty: 5

@@ -1,5 +1,7 @@
 ---
-msc_primary: 53C23
+msc_primary: 53
+
+  - 53C23
 exercise_id: GEO-079
 title: Ricci曲率下界与Gromov-Hausdorff收敛
 difficulty: 3

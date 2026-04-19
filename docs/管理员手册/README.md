@@ -1,5 +1,7 @@
 ---
-msc_primary: 00A99
+msc_primary: 00
+
+  - 00A99
 version: v1.0
 doc_type: 管理员手册
 title: FormalMath 管理员手册
@@ -128,7 +130,7 @@ lake build
 
 | 场景 | 联系方式 | 响应时间 |
 |------|----------|----------|
-| **P0 严重故障** | phone: +86-xxx-xxxx-xxxx | 5分钟 |
+| **P0 严重故障** | phone: +86-00x-xxxx-xxxx | 5分钟 |
 | **P1 高优先级** | wechat: formalmath-ops | 15分钟 |
 | **一般问题** | email: ops@formalmath.org | 1小时 |
 | **安全问题** | email: security@formalmath.org | 立即 |

@@ -1,5 +1,7 @@
 ---
-msc_primary: 57R58
+msc_primary: 57
+
+  - 57R58
 exercise_id: TOP-125
 title: 瞬子Floer同调的构造
 difficulty: 5
