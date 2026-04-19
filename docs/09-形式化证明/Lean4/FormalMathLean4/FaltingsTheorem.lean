@@ -152,5 +152,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Faltings' theorem (Mordell conjecture): not yet in mathlib4
-theorem FaltingsTheorem_formal : True := by sorry
+theorem FaltingsTheorem : True := by sorry
 

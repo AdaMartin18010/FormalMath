@@ -139,5 +139,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Stokes' Theorem: not yet fully formalized in mathlib4
-theorem StokesTheorem_formal : True := by sorry
+theorem StokesTheorem : True := by sorry
 

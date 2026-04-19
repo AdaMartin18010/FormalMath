@@ -15,5 +15,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Yang-Mills existence and mass gap: millennium problem, not in mathlib4
-theorem YangMillsExistence_formal : True := by sorry
+theorem YangMillsExistence : True := by sorry
 

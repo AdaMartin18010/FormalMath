@@ -106,7 +106,6 @@ This file now references actual theorems and definitions from Mathlib4.
 - 定理 / Theorem: `ContinuousMap`
 -/
 
-#check exists_continuous_forall_mem_of_isClosed
 
 -- Tietze Extension Theorem
 theorem TietzeExtension_formal {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]

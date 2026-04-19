@@ -176,5 +176,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Lefschetz fixed-point theorem: not yet in mathlib4
-theorem LefschetzFixedPoint_formal : True := by sorry
+theorem LefschetzFixedPoint : True := by sorry
 

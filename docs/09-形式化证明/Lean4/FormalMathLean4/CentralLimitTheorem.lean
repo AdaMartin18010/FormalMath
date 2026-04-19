@@ -234,5 +234,5 @@ This file now references actual theorems and definitions from Mathlib4.
 #check ProbabilityTheory.gaussianReal
 
 -- Central Limit Theorem: not yet fully formalized in mathlib4
-theorem CentralLimitTheorem_formal : True := by sorry
+theorem CentralLimitTheorem : True := by sorry
 

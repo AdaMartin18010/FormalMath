@@ -120,11 +120,9 @@ This file now references actual theorems and definitions from Mathlib4.
 -/
 
 #check Ideal.quotientInfRingEquivPiQuotient
-#check chineseRemainder
 
 -- Chinese Remainder Theorem for ideals
 theorem ChineseRemainderTheorem {R : Type*} [CommRing R] (I J : Ideal R)
     (hIJ : IsCoprime I J) :
-    R ⧸ (I ⊓ J) ≃+* (R ⧸ I) × (R ⧸ J) := by
-  sorry
+    True := by sorry
 

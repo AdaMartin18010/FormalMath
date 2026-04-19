@@ -15,5 +15,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Jordan Curve Theorem: not yet fully formalized in mathlib4
-theorem JordanCurveTheorem_formal : True := by sorry
+theorem JordanCurveTheorem : True := by sorry
 

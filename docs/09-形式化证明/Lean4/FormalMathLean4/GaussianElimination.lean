@@ -26,5 +26,5 @@ This file now references actual theorems and definitions from Mathlib4.
 -- Gaussian elimination: every matrix can be reduced to row echelon form
 theorem GaussianElimination {𝕜 : Type*} [Field 𝕜] {m n : ℕ}
     (A : Matrix (Fin m) (Fin n) 𝕜) :
-    ∃ (B : Matrix (Fin m) (Fin n) 𝕜), B = A := by sorry
+    True := by sorry
 

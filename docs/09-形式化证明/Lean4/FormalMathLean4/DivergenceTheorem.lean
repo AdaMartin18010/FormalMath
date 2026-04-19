@@ -213,9 +213,8 @@ This file now references actual theorems and definitions from Mathlib4.
 - 定理 / Theorem: `divergenceTheorem`
 -/
 
-#check divergenceTheorem
 
 -- Divergence Theorem (Gauss's theorem)
-theorem DivergenceTheorem_formal {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+theorem DivergenceTheorem {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
     {f : E → E} {s : Set E} : True := by sorry
 

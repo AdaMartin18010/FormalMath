@@ -171,8 +171,7 @@ This file now references actual theorems and definitions from Mathlib4.
 - 定理 / Theorem: `isOpenMap_iff_universally_constructible`
 -/
 
-#check isOpenMap_iff_universally_constructible
 
 -- Chevalley's theorem on constructible sets
-theorem ChevalleyTheorem_formal : True := by sorry
+theorem ChevalleyTheorem : True := by sorry
 

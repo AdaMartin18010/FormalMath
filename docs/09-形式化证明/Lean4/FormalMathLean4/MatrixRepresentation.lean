@@ -28,6 +28,6 @@ This file now references actual theorems and definitions from Mathlib4.
 #check Representation
 
 -- Matrix representation of finite groups
-theorem MatrixRepresentation_formal {G : Type*} [Group G] [Finite G] {𝕜 : Type*} [Field 𝕜] :
+theorem MatrixRepresentation {G : Type*} [Group G] [Finite G] {𝕜 : Type*} [Field 𝕜] :
     True := by sorry
 

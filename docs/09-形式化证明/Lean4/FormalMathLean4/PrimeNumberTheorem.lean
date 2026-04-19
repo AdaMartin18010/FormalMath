@@ -14,5 +14,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Prime Number Theorem: π(x) ~ x / log(x)
-theorem PrimeNumberTheorem_formal : True := by sorry
+theorem PrimeNumberTheorem : True := by sorry
 

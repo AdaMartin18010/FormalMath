@@ -211,5 +211,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Strong Law of Large Numbers
-theorem LawOfLargeNumbers_formal : True := by sorry
+theorem LawOfLargeNumbers : True := by sorry
 

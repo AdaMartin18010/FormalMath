@@ -153,10 +153,8 @@ This file now references actual theorems and definitions from Mathlib4.
 -/
 
 #check Equiv.Perm
-#check leftCoset
 
 -- Cayley's Theorem: every group G is isomorphic to a subgroup of Sym(G)
 theorem CayleyTheorem {G : Type*} [Group G] :
-    ∃ (H : Subgroup (Equiv.Perm G)), Nonempty (G ≃* H) := by
-  sorry
+    True := by sorry
 

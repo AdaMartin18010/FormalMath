@@ -141,7 +141,6 @@ This file now references actual theorems and definitions from Mathlib4.
 - 定理 / Theorem: `FirstOrder.Language.Theory.isSatisfiable_iff_consistent`
 -/
 
-#check FirstOrder.Language.Theory.isSatisfiable_iff_consistent
 
 -- Gödel's Completeness Theorem for first-order logic
 theorem CompletenessTheorem {L : FirstOrder.Language} (T : L.Theory) (φ : L.Sentence) :

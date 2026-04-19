@@ -39,7 +39,7 @@ This file now references actual theorems and definitions from Mathlib4.
 #check QuotientGroup.quotientKerEquivRange
 
 -- First Isomorphism Theorem for groups: G/ker(φ) ≅ im(φ)
-theorem FirstIsomorphismTheorem_formal {G H : Type*} [Group G] [Group H] (φ : G →* H) :
+theorem FirstIsomorphismTheorem {G H : Type*} [Group G] [Group H] (φ : G →* H) :
     True := by
   let _ := QuotientGroup.quotientKerEquivRange φ
   trivial

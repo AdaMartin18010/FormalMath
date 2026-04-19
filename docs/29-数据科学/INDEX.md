@@ -9,8 +9,8 @@ processed_at: '2026-04-08'
 
 # 数据科学与机器学习数学基础 (Data Science and Machine Learning)
 
-**最后更新**: 2026年4月8日  
-**MSC分类**: 62-00 (统计), 68T05 (机器学习)  
+**最后更新**: 2026年4月8日
+**MSC分类**: 62-00 (统计), 68T05 (机器学习)
 **课程对齐**: Stanford CS 229, MIT 6.867, CMU 10-701
 
 ---
@@ -43,16 +43,19 @@ processed_at: '2026-04-08'
 ## 学习路径
 
 ### 基础路径
+
 ```
 线性回归 → 逻辑回归 → 正则化 → 核方法 → 神经网络
 ```
 
 ### 进阶路径
+
 ```
 统计学习理论 → 高维统计 → 优化理论 → 深度学习 → 强化学习
 ```
 
 ### 应用路径
+
 - **数据挖掘**: 特征工程 + 模型选择 + 评估指标
 - **计算机视觉**: CNN + 目标检测 + 分割
 - **自然语言处理**: 序列模型 + Transformer + 预训练
@@ -87,17 +90,19 @@ processed_at: '2026-04-08'
 ## 参考资源
 
 ### 教材
+
 - Hastie, Tibshirani, Friedman, *The Elements of Statistical Learning*
 - Shalev-Shwartz & Ben-David, *Understanding Machine Learning*
 - Goodfellow, Bengio, Courville, *Deep Learning*
 - Sutton & Barto, *Reinforcement Learning*
 
 ### 在线课程
+
 - Stanford CS 229: Machine Learning
 - MIT 6.867: Statistical Learning Theory
 - CMU 10-701: Introduction to Machine Learning
 
 ---
 
-**维护者**: FormalMath应用数学组  
+**维护者**: FormalMath应用数学组
 **质量等级**: ⭐⭐⭐⭐⭐ (研究级)

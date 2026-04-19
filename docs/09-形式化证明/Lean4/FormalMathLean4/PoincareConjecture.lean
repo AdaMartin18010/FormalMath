@@ -15,5 +15,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Poincaré Conjecture (proven by Perelman): not yet in mathlib4
-theorem PoincareConjecture_formal : True := by sorry
+theorem PoincareConjecture : True := by sorry
 

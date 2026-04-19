@@ -15,5 +15,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Gödel's Incompleteness Theorems: not yet fully formalized in mathlib4
-theorem GodelFirstIncompleteness_formal : True := by sorry
+theorem GodelFirstIncompleteness : True := by sorry
 

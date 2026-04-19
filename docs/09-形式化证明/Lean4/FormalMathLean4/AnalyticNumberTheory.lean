@@ -109,5 +109,5 @@ This file now references actual theorems and definitions from Mathlib4.
 #check LSeries
 
 -- Analytic Number Theory: Dirichlet characters and L-series
-theorem AnalyticNumberTheory_formal : True := by sorry
+theorem AnalyticNumberTheory : True := by sorry
 

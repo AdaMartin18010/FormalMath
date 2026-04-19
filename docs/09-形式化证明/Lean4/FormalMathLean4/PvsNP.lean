@@ -16,5 +16,5 @@ This file now references actual theorems and definitions from Mathlib4.
 #check Partrec
 
 -- P vs NP: millennium problem, not in mathlib4
-theorem PvsNP_formal : True := by sorry
+theorem PvsNP : True := by sorry
 

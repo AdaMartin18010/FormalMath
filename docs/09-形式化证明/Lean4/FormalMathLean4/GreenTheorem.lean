@@ -208,5 +208,5 @@ This file now references actual theorems and definitions from Mathlib4.
 #check BoxIntegral.integral
 
 -- Green's theorem: special case of Stokes' theorem in the plane
-theorem GreenTheorem_formal : True := by sorry
+theorem GreenTheorem : True := by sorry
 

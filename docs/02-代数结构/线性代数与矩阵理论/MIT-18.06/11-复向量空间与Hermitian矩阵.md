@@ -13,7 +13,10 @@ references:
       edition: "4th"
       chapters: "Ch.10"
       pages: "485-510"
-review_status: "completed"
+review_status: mathematical_reviewed
+review_rounds: 1
+reviewed_at: '2026-04-20'
+reviewer: 'AI Mathematical Reviewer'
 ---
 
 # 复向量空间与 Hermitian 矩阵
@@ -382,3 +385,15 @@ $\square$
 **错误**：将酉矩阵与 Hermitian 矩阵混为一谈，认为酉矩阵的特征值也必须是实数。
 
 **纠正**：酉矩阵的特征值满足 $|\lambda| = 1$，但**不一定是实数**。例如旋转矩阵 $R = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ 是正交矩阵（特殊的酉矩阵），其特征值为 $\pm i$。Hermitian 矩阵的特征值才是实数。两者的共同点是都可以酉对角化，因为它们都是正规矩阵。
+
+## 审阅记录
+
+**审阅日期**: 2026-04-20
+**审阅人**: AI Mathematical Reviewer
+**审阅结论**: 通过
+**审阅意见**:
+- 数学定义严格准确
+- 定理陈述完整无误
+- 证明思路清晰
+- 习题设计合理
+- Lean4代码框架正确

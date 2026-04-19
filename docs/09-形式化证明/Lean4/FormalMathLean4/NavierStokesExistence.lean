@@ -15,5 +15,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Navier-Stokes existence and smoothness: millennium problem, not in mathlib4
-theorem NavierStokesExistence_formal : True := by sorry
+theorem NavierStokesExistence : True := by sorry
 

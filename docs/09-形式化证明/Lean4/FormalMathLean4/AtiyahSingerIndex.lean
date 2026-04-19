@@ -145,5 +145,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Atiyah-Singer Index Theorem: advanced differential geometry, not yet fully in mathlib4
-theorem AtiyahSingerIndexTheorem_formal : True := by sorry
+theorem AtiyahSingerIndexTheorem : True := by sorry
 

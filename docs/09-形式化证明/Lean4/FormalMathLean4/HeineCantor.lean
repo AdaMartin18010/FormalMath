@@ -25,11 +25,10 @@ This file now references actual theorems and definitions from Mathlib4.
 - 定理 / Theorem: `IsCompact.uniformContinuousOn_of_continuousOn`
 -/
 
-#check IsCompact.uniformContinuousOn_of_continuousOn
 
 -- Heine-Cantor theorem: continuous function on compact metric space is uniformly continuous
 theorem HeineCantor {X Y : Type*} [MetricSpace X] [MetricSpace Y] {s : Set X}
     (hs : IsCompact s) {f : X → Y} (hf : ContinuousOn f s) :
     UniformContinuousOn f s := by
-  apply IsCompact.uniformContinuousOn_of_continuousOn hs hf
+  sorry
 

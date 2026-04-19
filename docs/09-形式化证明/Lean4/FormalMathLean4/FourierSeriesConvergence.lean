@@ -197,5 +197,5 @@ This file now references actual theorems and definitions from Mathlib4.
 #check fourierCoeff
 
 -- Fourier series convergence theorems
-theorem FourierSeriesConvergence_formal : True := by sorry
+theorem FourierSeriesConvergence : True := by sorry
 

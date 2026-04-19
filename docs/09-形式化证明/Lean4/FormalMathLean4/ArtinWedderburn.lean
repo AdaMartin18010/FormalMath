@@ -102,6 +102,6 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Wedderburn-Artin theorem: semisimple ring is product of matrix algebras over division rings
-theorem WedderburnArtinTheorem_formal {R : Type*} [Ring R] :
+theorem WedderburnArtinTheorem {R : Type*} [Ring R] :
     True := by sorry
 

@@ -136,6 +136,6 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Ramsey's Theorem
-theorem RamseyTheorem_formal {s t : ℕ} :
+theorem RamseyTheorem {s t : ℕ} :
     True := by sorry
 

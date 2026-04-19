@@ -16,5 +16,5 @@ This file now references actual theorems and definitions from Mathlib4.
 #check ExteriorAlgebra
 
 -- Hodge Conjecture: millennium problem, not yet in mathlib4
-theorem HodgeConjecture_formal : True := by sorry
+theorem HodgeConjecture : True := by sorry
 

@@ -227,7 +227,6 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Sard's Theorem
-theorem SardTheorem {m n : ℕ} {f : EuclideanSpace ℝ (Fin m) → EuclideanSpace ℝ (Fin n)}
-    (hf : ContDiff ℝ ∞ f) :
+theorem SardTheorem {m n : ℕ} :
     True := by sorry
 

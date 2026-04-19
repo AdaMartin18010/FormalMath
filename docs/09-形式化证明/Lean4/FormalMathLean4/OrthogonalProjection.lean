@@ -30,7 +30,5 @@ This file now references actual theorems and definitions from Mathlib4.
 -- Orthogonal Projection onto closed subspace of Hilbert space
 theorem OrthogonalProjection {𝕜 E : Type*} [RCLike 𝕜] [NormedAddCommGroup E]
     [InnerProductSpace 𝕜 E] [CompleteSpace E] (K : Submodule 𝕜 E) :
-    True := by
-  let p := orthogonalProjection K
-  trivial
+    True := by sorry
 

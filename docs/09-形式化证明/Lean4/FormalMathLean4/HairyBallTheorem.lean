@@ -15,6 +15,6 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Hairy Ball Theorem: there is no nonvanishing continuous tangent vector field on S²ⁿ
-theorem HairyBallTheorem_formal {n : ℕ} :
+theorem HairyBallTheorem {n : ℕ} :
     True := by sorry
 

@@ -278,5 +278,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- 3D Poincaré Conjecture (proven by Perelman): not yet in mathlib4
-theorem PoincareConjecture3D_formal : True := by sorry
+theorem PoincareConjecture3D : True := by sorry
 

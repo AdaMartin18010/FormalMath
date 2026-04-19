@@ -200,7 +200,7 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Hilbert's Nullstellensatz
-theorem Nullstellensatz_formal {𝕜 : Type*} [Field 𝕜] [IsAlgClosed 𝕜] {n : ℕ}
+theorem Nullstellensatz {𝕜 : Type*} [Field 𝕜] [IsAlgClosed 𝕜] {n : ℕ}
     (I : Ideal (MvPolynomial (Fin n) 𝕜)) :
     True := by sorry
 

@@ -153,6 +153,6 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Noether Normalization Lemma
-theorem NoetherNormalization_formal {R : Type*} [CommRing R] [Nontrivial R] [NoetherianRing R] :
+theorem NoetherNormalization_formal {R : Type*} [CommRing R] [Nontrivial R] [IsNoetherianRing R] :
     True := by sorry
 

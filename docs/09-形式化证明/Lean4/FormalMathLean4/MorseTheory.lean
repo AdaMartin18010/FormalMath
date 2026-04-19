@@ -200,5 +200,5 @@ This file now references actual theorems and definitions from Mathlib4.
 
 
 -- Morse theory: not yet fully formalized in mathlib4
-theorem MorseTheory_formal : True := by sorry
+theorem MorseTheory : True := by sorry
 
