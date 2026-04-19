@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 威尔逊定理的形式化证明 / Wilson's Theorem
 
@@ -97,5 +96,21 @@ p 是素数 ⟺ (p-1)! ≡ -1 (mod p)
 - `Nat.prime_of_fac_equiv_neg_one`: 威尔逊定理的逆
 -/
 
--- Framework stub for WilsonTheorem
-theorem WilsonTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.NumberTheory.Wilson`
+- 定理 / Theorem: `ZMod.wilsons_lemma`
+-/
+
+#check ZMod.wilsons_lemma
+
+-- Wilson's Theorem: (p-1)! ≡ -1 (mod p) for prime p
+theorem WilsonTheorem {p : ℕ} [Fact (Nat.Prime p)] :
+    ((p - 1).factorial : ZMod p) = -1 := by
+  exact ZMod.wilsons_lemma p
+

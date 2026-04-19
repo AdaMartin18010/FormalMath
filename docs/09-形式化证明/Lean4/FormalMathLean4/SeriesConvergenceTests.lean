@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 级数收敛判别法 / Series Convergence Tests
 
@@ -13,5 +12,23 @@ import Mathlib
 3. **根值判别法** (Root Test): 若 $\limsup |a_n|^{1/n} < 1$，则 $\sum a_n$ 绝对收敛。
 -/
 
--- Framework stub for SeriesConvergenceTests
-theorem SeriesConvergenceTests_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Analysis.SpecificLimits.Normed`
+- 模块 / Module: `Mathlib.Analysis.PSeries`
+- 定理 / Theorem: `summable_geometric_iff_norm_lt_one`
+- 定理 / Theorem: `Real.summable_nat_rpow`
+-/
+
+#check summable_geometric_iff_norm_lt_one
+#check Real.summable_nat_rpow
+
+-- Series convergence tests
+theorem GeometricSeriesConvergence {r : ℝ} : Summable (λ n : ℕ => r ^ n) ↔ ‖r‖ < 1 := by
+  rw [summable_geometric_iff_norm_lt_one]
+

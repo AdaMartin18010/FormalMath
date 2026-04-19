@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 确界原理与 Archimedean 性质 / Supremum Principle and Archimedean Property
 
@@ -16,5 +15,22 @@ import Mathlib
 Archimedean 性质则保证了实数中没有无穷大或无穷小的元素。
 -/
 
--- Framework stub for SupremumPrinciple
-theorem SupremumPrinciple_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Data.Real.Basic`
+- 模块 / Module: `Mathlib.Order.CompleteLattice`
+- 定理 / Theorem: `Real.exists_isLUB`
+-/
+
+#check Real.exists_isLUB
+
+-- Supremum Principle: every nonempty bounded above set of reals has a supremum
+theorem SupremumPrinciple {S : Set ℝ} (hne : S.Nonempty) (hbdd : BddAbove S) :
+    ∃ x : ℝ, IsLUB S x := by
+  exact Real.exists_isLUB hne hbdd
+

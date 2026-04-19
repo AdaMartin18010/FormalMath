@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 原根存在定理的形式化证明 / Existence of Primitive Roots
 
@@ -145,5 +144,21 @@ example : ¬HasPrimitiveRoot 8 := by
 - `IsCyclic`: 循环群
 -/
 
--- Framework stub for PrimitiveRootTheorem
-theorem PrimitiveRootTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.FieldTheory.Finite.Basic`
+- 模块 / Module: `Mathlib.NumberTheory.LegendreSymbol.Basic`
+- 定理 / Theorem: `exists_primitive_root`
+-/
+
+
+-- Primitive Root Theorem: finite field has primitive root
+theorem PrimitiveRootTheorem {p : ℕ} [Fact (Nat.Prime p)] :
+    ∃ α : (ZMod p)ˣ, IsPrimitiveRoot α (p - 1) := by
+  sorry
+

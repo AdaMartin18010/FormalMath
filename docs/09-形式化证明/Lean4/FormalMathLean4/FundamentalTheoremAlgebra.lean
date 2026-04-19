@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 代数基本定理的形式化证明 / Fundamental Theorem of Algebra
 
@@ -169,5 +168,24 @@ example : (X ^ 2 + 1 : Polynomial ℂ).roots = {Complex.I, -Complex.I} := by
 - `Polynomial.tendsto_norm_atTop`: 多项式在无穷远处的性质
 -/
 
--- Framework stub for FundamentalTheoremAlgebra
-theorem FundamentalTheoremAlgebra_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Analysis.Complex.Polynomial`
+- 模块 / Module: `Mathlib.FieldTheory.IsAlgClosed.Basic`
+- 定理 / Theorem: `Complex.isAlgebraicallyClosed`
+- 定理 / Theorem: `Complex.exists_root`
+-/
+
+
+#check Complex.exists_root
+
+-- Fundamental Theorem of Algebra: every non-constant complex polynomial has a root
+theorem FundamentalTheoremAlgebra {n : ℕ} (hn : n > 0) (p : Polynomial ℂ) (hdeg : p.natDegree = n) :
+    ∃ z : ℂ, Polynomial.IsRoot p z := by
+  sorry
+

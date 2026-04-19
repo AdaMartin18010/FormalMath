@@ -1,0 +1,583 @@
+{
+    "crossRefs":  [
+                      {
+                          "From":  "IMO真题-不等式2",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-不等式2",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-不等式2",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-不等式2",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-不等式2",
+                          "To":  "IMO真题-几何1"
+                      },
+                      {
+                          "From":  "IMO真题-不等式3",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-不等式3",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-不等式3",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-不等式3",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-不等式3",
+                          "To":  "IMO真题-几何1"
+                      },
+                      {
+                          "From":  "IMO真题-代数1",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-代数1",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-代数1",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-代数1",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-代数1",
+                          "To":  "IMO真题-几何1"
+                      },
+                      {
+                          "From":  "IMO真题-代数2",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-代数2",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-代数2",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-代数2",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-代数2",
+                          "To":  "IMO真题-几何1"
+                      },
+                      {
+                          "From":  "IMO真题-代数3",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-代数3",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-代数3",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-代数3",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-代数3",
+                          "To":  "IMO真题-几何1"
+                      },
+                      {
+                          "From":  "IMO真题-几何1",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-几何1",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-几何1",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-几何1",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-几何1",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-几何2",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-几何2",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-几何2",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-几何2",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-几何2",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-几何3",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-几何3",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-几何3",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-几何3",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-几何3",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-几何4",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-几何4",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-几何4",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-几何4",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-几何4",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-几何5",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-几何5",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-几何5",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-几何5",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-几何5",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-函数方程1",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-函数方程1",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-函数方程1",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-函数方程1",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-函数方程1",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-数论1",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-数论1",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-数论1",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-数论1",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-数论1",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-数论2",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-数论2",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-数论2",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-数论2",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-数论2",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-数论3",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-数论3",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-数论3",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-数论3",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-数论3",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-数论4",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-数论4",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-数论4",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-数论4",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-数论4",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-数论5",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-数论5",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-数论5",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-数论5",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-数论5",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-数论6",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-数论6",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-数论6",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-数论6",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-数论6",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-组合1",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-组合1",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-组合1",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-组合1",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-组合1",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-组合2",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-组合2",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-组合2",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-组合2",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-组合2",
+                          "To":  "IMO真题-代数3"
+                      },
+                      {
+                          "From":  "IMO真题-组合3",
+                          "To":  "IMO真题-不等式2"
+                      },
+                      {
+                          "From":  "IMO真题-组合3",
+                          "To":  "IMO真题-不等式3"
+                      },
+                      {
+                          "From":  "IMO真题-组合3",
+                          "To":  "IMO真题-代数1"
+                      },
+                      {
+                          "From":  "IMO真题-组合3",
+                          "To":  "IMO真题-代数2"
+                      },
+                      {
+                          "From":  "IMO真题-组合3",
+                          "To":  "IMO真题-代数3"
+                      }
+                  ],
+    "theorems":  [
+                     {
+                         "Id":  "01-群表示基础-Thm1",
+                         "Title":  "Oxford核心定理。",
+                         "Doc":  "01-群表示基础",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "02-特征标理论-Thm1",
+                         "Title":  "Oxford核心定理。",
+                         "Doc":  "02-特征标理论",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "03-诱导表示-Thm1",
+                         "Title":  "Oxford核心定理。",
+                         "Doc":  "03-诱导表示",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "04-对称群的表示-Thm1",
+                         "Title":  "Oxford核心定理。",
+                         "Doc":  "04-对称群的表示",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "01-复数与解析函数-Thm1",
+                         "Title":  "Princeton核心定理。",
+                         "Doc":  "01-复数与解析函数",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "02-Cauchy积分定理-Thm1",
+                         "Title":  "Princeton核心定理。",
+                         "Doc":  "02-Cauchy积分定理",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "03-Laurent级数-Thm1",
+                         "Title":  "Princeton核心定理。",
+                         "Doc":  "03-Laurent级数",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "04-留数定理-Thm1",
+                         "Title":  "Princeton核心定理。",
+                         "Doc":  "04-留数定理",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "05-共形映射-Thm1",
+                         "Title":  "Princeton核心定理。",
+                         "Doc":  "05-共形映射",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "06-整函数与亚纯函数-Thm1",
+                         "Title":  "Princeton核心定理。",
+                         "Doc":  "06-整函数与亚纯函数",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "07-Riemann面-Thm1",
+                         "Title":  "Princeton核心定理。",
+                         "Doc":  "07-Riemann面",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "01-曲线论-Thm1",
+                         "Title":  "UCLA核心定理。",
+                         "Doc":  "01-曲线论",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "02-曲面论-Thm1",
+                         "Title":  "UCLA核心定理。",
+                         "Doc":  "02-曲面论",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "03-第一基本形式-Thm1",
+                         "Title":  "UCLA核心定理。",
+                         "Doc":  "03-第一基本形式",
+                         "Course":  "unknown"
+                     },
+                     {
+                         "Id":  "04-第二基本形式-Thm1",
+                         "Title":  "UCLA核心定理。",
+                         "Doc":  "04-第二基本形式",
+                         "Course":  "unknown"
+                     }
+                 ],
+    "dependencies":  [
+                         {
+                             "From":  "next_level:",
+                             "To":  "01-集合与元素",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 集合与元素",
+                             "To":  "01-Peano公理",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 有理数构造",
+                             "To":  "07-实数构造",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 二元运算",
+                             "To":  "04-群定义",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 域定义",
+                             "To":  "16-向量空间",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 实数构造",
+                             "To":  "01-极限epsilon-delta定义",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 极限epsilon-delta定义",
+                             "To":  "04-连续性定义",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 极限epsilon-delta定义",
+                             "To":  "06-导数定义",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 集合与元素",
+                             "To":  "01-拓扑空间",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "next_level:",
+                             "To":  "01-命题逻辑",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 实数定义",
+                             "To":  "01-确界原理与Archimedean性质",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 连续性",
+                             "To":  "02-介值定理",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 连续性",
+                             "To":  "03-一致连续性",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 连续性",
+                             "To":  "04-中值定理",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 级数收敛定义",
+                             "To":  "05-比较判别法与比值根值判别法",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 中值定理",
+                             "To":  "06-Taylor定理",
+                             "Type":  "prerequisite"
+                         },
+                         {
+                             "From":  "- 一致收敛",
+                             "To":  "07-Weierstrass-M-判别法",
+                             "Type":  "prerequisite"
+                         }
+                     ]
+}

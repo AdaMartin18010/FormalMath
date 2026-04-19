@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 介值定理的形式化证明 / Intermediate Value Theorem
 
@@ -100,5 +99,22 @@ import Mathlib
 不取得 -1 和 1 之间的所有值（缺少 0 附近的值）。
 -/
 
--- Framework stub for IntermediateValueTheorem
-theorem IntermediateValueTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Topology.Order.IntermediateValue`
+- 定理 / Theorem: `intermediate_value_Icc`
+-/
+
+#check intermediate_value_Icc
+
+-- Intermediate Value Theorem
+theorem IntermediateValueTheorem {f : ℝ → ℝ} {a b : ℝ} (hab : a ≤ b)
+    (hf : ContinuousOn f (Set.Icc a b)) :
+    Set.Icc (f a) (f b) ⊆ f '' Set.Icc a b := by
+  exact intermediate_value_Icc hab hf
+

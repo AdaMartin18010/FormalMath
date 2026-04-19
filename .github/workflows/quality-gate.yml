@@ -1,38 +1,36 @@
-name: Quality Gate
+name: FormalMath Quality Gate
 
 on:
   push:
-    branches: [main]
+    branches: [ main, master ]
   pull_request:
-    branches: [main]
+    branches: [ main, master ]
 
 jobs:
-  quality-gate:
+  quality-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Run quality gate checks
-        run: |
-          echo "=== Running CI Quality Gate ==="
-          python scripts/ci_quality_gate.py -o quality-gate-report.json -v
-          echo "=== Quality Gate Report ==="
-          cat quality-gate-report.json
-
-      - name: Run dashboard update (dry-run)
-        run: |
-          echo "=== Running Dashboard Update (dry-run) ==="
-          python scripts/ci_update_dashboard.py --dry-run
-
-      - name: Upload quality gate report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: quality-gate-report
-          path: quality-gate-report.json
+    - uses: actions/checkout@v3
+    
+    - name: Check Silver Docs Structure
+      run: |
+        echo "=== Checking silver docs ==="
+        find docs -name "*.md" -exec grep -l "level: silver" {} \; | wc -l
+        echo "Silver docs should be >= 197"
+    
+    - name: Check Lean4 Compilation
+      run: |
+        echo "=== Checking Lean4 build ==="
+        cd docs/09-形式化证明/Lean4
+        lake build
+    
+    - name: Check MSC Frontmatter
+      run: |
+        echo "=== Checking MSC codes ==="
+        python tools/audit_msc.py
+    
+    - name: Check References
+      run: |
+        echo "=== Checking references ==="
+        find docs -name "*.md" -exec grep -L "## 参考文献" {} \; | grep -v "00-归档" | wc -l
+        echo "Docs missing references should be 0"

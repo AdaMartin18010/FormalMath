@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 拉格朗日定理的形式化证明 / Formalization of Lagrange's Theorem
 
@@ -21,5 +20,22 @@ import Mathlib
 该定理表明子群的阶总是整除群的阶，这是有限群分类理论的基础。
 -/
 
--- Framework stub for LagrangeTheorem
-theorem LagrangeTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.GroupTheory.Index`
+- 模块 / Module: `Mathlib.GroupTheory.Coset.Card`
+- 定理 / Theorem: `Subgroup.index_mul_card`
+-/
+
+#check Subgroup.index_mul_card
+
+-- Lagrange's Theorem: |G| = [G:H] · |H|
+theorem LagrangeTheorem {G : Type*} [Group G] [Finite G] (H : Subgroup G) :
+    Nat.card G = H.index * Nat.card H := by
+  rw [Subgroup.index_mul_card]
+

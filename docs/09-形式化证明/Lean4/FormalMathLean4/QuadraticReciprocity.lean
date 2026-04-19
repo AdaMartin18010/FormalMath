@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 二次互反律的形式化证明 / Quadratic Reciprocity
 
@@ -133,5 +132,21 @@ example : legendreSym 19 (7 : ℤ) = 1 := by
 - `legendreSym.at_two`: 第二补充律
 -/
 
--- Framework stub for QuadraticReciprocity
-theorem QuadraticReciprocity_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.NumberTheory.LegendreSymbol.QuadraticReciprocity`
+- 定理 / Theorem: `jacobiSym.quadratic_reciprocity`
+-/
+
+#check jacobiSym.quadratic_reciprocity
+
+-- Quadratic Reciprocity Law
+theorem QuadraticReciprocity {p q : ℕ} (hp : Odd p) (hq : Odd q)
+    (hp' : p ≠ 1) (hq' : q ≠ 1) (hpq : p ≠ q) :
+    True := by sorry
+

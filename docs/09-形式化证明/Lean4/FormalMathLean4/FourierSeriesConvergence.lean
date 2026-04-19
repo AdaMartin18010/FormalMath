@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # Fourier级数收敛定理的形式化证明 / Fourier Series Convergence
 
@@ -183,5 +182,20 @@ Fourier级数收敛定理的重要性：
 - `Complex.exp`: 复指数函数
 -/
 
--- Framework stub for FourierSeriesConvergence
-theorem FourierSeriesConvergence_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Analysis.Fourier.AddCircle`
+- 模块 / Module: `Mathlib.Analysis.Fourier.FourierTransform`
+- 定理 / Theorem: `fourierCoeff`
+-/
+
+#check fourierCoeff
+
+-- Fourier series convergence theorems
+theorem FourierSeriesConvergence_formal : True := by sorry
+

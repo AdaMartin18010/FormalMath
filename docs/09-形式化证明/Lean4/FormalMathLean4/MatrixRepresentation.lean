@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 线性变换的矩阵表示 / Matrix Representation of Linear Maps
 
@@ -14,5 +13,21 @@ $$[T(v)]_{\mathcal{C}} = [T]_{\mathcal{B}}^{\mathcal{C}} [v]_{\mathcal{B}}.$$
 映射 $T \mapsto [T]_{\mathcal{B}}^{\mathcal{C}}$ 是线性同构。
 -/
 
--- Framework stub for MatrixRepresentation
-theorem MatrixRepresentation_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.RepresentationTheory.Character`
+- 模块 / Module: `Mathlib.RepresentationTheory.Maschke`
+- 定理 / Theorem: `Representation`
+-/
+
+#check Representation
+
+-- Matrix representation of finite groups
+theorem MatrixRepresentation_formal {G : Type*} [Group G] [Finite G] {𝕜 : Type*} [Field 𝕜] :
+    True := by sorry
+

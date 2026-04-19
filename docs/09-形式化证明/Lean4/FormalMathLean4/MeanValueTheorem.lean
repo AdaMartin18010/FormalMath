@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 中值定理的形式化证明 / Formalization of Mean Value Theorem
 
@@ -24,5 +23,25 @@ import Mathlib
 它是罗尔定理的推广，也是泰勒展开、洛必达法则等的基础。
 -/
 
--- Framework stub for MeanValueTheorem
-theorem MeanValueTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Analysis.Calculus.MeanValue`
+- 定理 / Theorem: `exists_hasDerivAt_eq_slope`
+- 定理 / Theorem: `exists_deriv_eq_slope`
+-/
+
+#check exists_hasDerivAt_eq_slope
+#check exists_deriv_eq_slope
+
+-- Mean Value Theorem
+theorem MeanValueTheorem {f f' : ℝ → ℝ} {a b : ℝ} (hab : a < b)
+    (hfc : ContinuousOn f (Set.Icc a b))
+    (hfd : ∀ x ∈ Set.Ioo a b, HasDerivAt f (f' x) x) :
+    ∃ c ∈ Set.Ioo a b, f' c = (f b - f a) / (b - a) := by
+  apply exists_hasDerivAt_eq_slope f f' hab hfc hfd
+

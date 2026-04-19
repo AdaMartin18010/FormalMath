@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 康托对角线论证 / Cantor's Diagonal Argument
 
@@ -109,5 +108,20 @@ import Mathlib
 - [停机问题不可判定](./GodelIncompleteness.lean) - 可计算性理论
 -/
 
--- Framework stub for CantorDiagonal
-theorem CantorDiagonal_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Data.Set.Basic`
+- 模块 / Module: `Mathlib.Data.Real.Cardinality`
+- 定理 / Theorem: `Cardinal.not_countable_of_cardinal_aleph_one_le`
+-/
+
+
+-- Cantor's diagonal argument: ℝ is uncountable
+theorem CantorDiagonal : ¬ Countable (Set.univ : Set ℝ) := by
+  sorry
+

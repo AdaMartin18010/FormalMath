@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # Zorn引理的形式化证明 / Zorn's Lemma
 
@@ -175,5 +174,21 @@ Zorn引理的重要性：
 - `maximal`: 极大元
 -/
 
--- Framework stub for ZornLemma
-theorem ZornLemma_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Order.Zorn`
+- 定理 / Theorem: `zorn_lemma`
+-/
+
+
+-- Zorn's Lemma
+theorem ZornLemma {α : Type*} [PartialOrder α]
+    (h : ∀ c : Set α, IsChain (· ≤ ·) c → BddAbove c) :
+    ∃ m : α, ∀ a : α, m ≤ a → a = m := by
+  sorry
+

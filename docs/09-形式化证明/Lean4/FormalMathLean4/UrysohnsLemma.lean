@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 乌雷松引理的形式化证明 / Urysohn's Lemma
 
@@ -91,5 +90,23 @@ import Mathlib
 - `NormalSpace`: 正规空间定义
 -/
 
--- Framework stub for UrysohnsLemma
-theorem UrysohnsLemma_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Topology.UrysohnsLemma`
+- 定理 / Theorem: `exists_continuous_zero_one_of_isClosed`
+-/
+
+#check exists_continuous_zero_one_of_isClosed
+
+-- Urysohn's Lemma
+theorem UrysohnsLemma {X : Type*} [TopologicalSpace X] [NormalSpace X]
+    {s t : Set X} (hs : IsClosed s) (ht : IsClosed t) (hst : Disjoint s t) :
+    ∃ f : C(X, ℝ), Set.EqOn (⇑f) 0 s ∧ Set.EqOn (⇑f) 1 t ∧
+      ∀ x, f x ∈ Set.Icc 0 1 := by
+  exact exists_continuous_zero_one_of_isClosed hs ht hst
+

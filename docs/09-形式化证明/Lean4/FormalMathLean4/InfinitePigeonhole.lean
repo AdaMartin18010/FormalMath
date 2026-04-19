@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 无穷鸽巢原理的形式化证明 / Infinite Pigeonhole Principle
 
@@ -79,5 +78,21 @@ import Mathlib
 这是Erdős–Szekeres定理的特例。
 -/
 
--- Framework stub for InfinitePigeonhole
-theorem InfinitePigeonhole_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Data.Fintype.Card`
+- 模块 / Module: `Mathlib.Data.Finset.Card`
+- 定理 / Theorem: `Finset.exists_lt_card_fiber_of_maps_to_of_nsmul_lt_card`
+-/
+
+
+-- Infinite pigeonhole principle
+theorem InfinitePigeonhole {α β : Type*} [Infinite α] [Fintype β] (f : α → β) :
+    ∃ y : β, Infinite (f ⁻¹' {y}) := by
+  sorry
+

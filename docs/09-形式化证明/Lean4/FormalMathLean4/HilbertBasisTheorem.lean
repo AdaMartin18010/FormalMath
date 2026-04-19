@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 希尔伯特基定理的形式化证明 / Hilbert's Basis Theorem
 
@@ -161,5 +160,22 @@ Hilbert基定理在1890年的证明震惊了当时的数学界：
 - `IsNoetherian`: Noetherian模/环
 -/
 
--- Framework stub for HilbertBasisTheorem
-theorem HilbertBasisTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.RingTheory.Polynomial.Noetherian`
+- 模块 / Module: `Mathlib.RingTheory.Noetherian`
+- 定理 / Theorem: `Polynomial.isNoetherianRing`
+-/
+
+#check Polynomial.isNoetherianRing
+
+-- Hilbert Basis Theorem: if R is Noetherian, then R[x] is Noetherian
+theorem HilbertBasisTheorem {R : Type*} [CommRing R] [IsNoetherianRing R] :
+    IsNoetherianRing (Polynomial R) := by
+  exact Polynomial.isNoetherianRing
+

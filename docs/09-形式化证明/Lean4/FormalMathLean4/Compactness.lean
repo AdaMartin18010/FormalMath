@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 紧致性定理的形式化证明 / Formalization of Compactness Theorem
 
@@ -25,5 +24,22 @@ import Mathlib
 是点集拓扑学的基石。
 -/
 
--- Framework stub for Compactness
-theorem Compactness_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.ModelTheory.Satisfiability`
+- 模块 / Module: `Mathlib.ModelTheory.Syntax`
+- 定理 / Theorem: `FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable`
+-/
+
+#check FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable
+
+-- Compactness Theorem for first-order logic
+theorem CompactnessTheorem {L : FirstOrder.Language} (T : L.Theory) :
+    T.IsSatisfiable ↔ T.IsFinitelySatisfiable := by
+  exact FirstOrder.Language.Theory.isSatisfiable_iff_isFinitelySatisfiable
+

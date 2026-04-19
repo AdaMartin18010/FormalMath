@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # Heine-Borel定理的形式化证明 / Heine-Borel Theorem
 
@@ -104,5 +103,23 @@ Heine-Borel定理是实分析和拓扑学的核心定理，它：
 **定理**: ℝⁿ 是局部紧致的。
 -/
 
--- Framework stub for HeineBorel
-theorem HeineBorel_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Topology.MetricSpace.Bounded`
+- 模块 / Module: `Mathlib.Topology.MetricSpace.ProperSpace`
+- 定理 / Theorem: `Metric.isCompact_iff_isClosed_bounded`
+-/
+
+#check Metric.isCompact_iff_isClosed_bounded
+
+-- Heine-Borel theorem: in ℝⁿ, a set is compact iff it is closed and bounded
+theorem HeineBorel {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+    [ProperSpace E] {s : Set E} :
+    IsCompact s ↔ IsClosed s ∧ Bornology.IsBounded s := by
+  rw [Metric.isCompact_iff_isClosed_bounded]
+

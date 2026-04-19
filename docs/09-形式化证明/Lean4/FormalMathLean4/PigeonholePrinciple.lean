@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 鸽巢原理的形式化证明 / Pigeonhole Principle
 
@@ -179,5 +178,22 @@ example (n : ℕ) (hn : n > 0) (a : Fin (n + 1) → ℕ)
 - `infinite_pigeonhole`: 无穷鸽巢原理
 -/
 
--- Framework stub for PigeonholePrinciple
-theorem PigeonholePrinciple_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Data.Fintype.Card`
+- 定理 / Theorem: `Fintype.exists_ne_map_eq_of_card_lt`
+-/
+
+#check Fintype.exists_ne_map_eq_of_card_lt
+
+-- Pigeonhole Principle
+theorem PigeonholePrinciple {α β : Type*} [Fintype α] [Fintype β]
+    (f : α → β) (h : Fintype.card β < Fintype.card α) :
+    ∃ x y : α, x ≠ y ∧ f x = f y := by
+  exact Fintype.exists_ne_map_eq_of_card_lt f h
+

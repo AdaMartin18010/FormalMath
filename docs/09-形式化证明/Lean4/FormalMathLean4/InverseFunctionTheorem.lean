@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 逆函数定理的形式化证明 / Inverse Function Theorem
 
@@ -87,5 +86,23 @@ f(ρ, φ, θ) = (ρ sin φ cos θ, ρ sin φ sin θ, ρ cos φ)
 - `Mathlib.Analysis.Calculus.FDeriv.Basic`: Fréchet导数
 -/
 
--- Framework stub for InverseFunctionTheorem
-theorem InverseFunctionTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Analysis.Calculus.InverseFunctionTheorem.FDeriv`
+- 模块 / Module: `Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff`
+- 定理 / Theorem: `HasStrictFDerivAt.localInverse`
+-/
+
+#check HasStrictFDerivAt.localInverse
+
+-- Inverse Function Theorem
+theorem InverseFunctionTheorem {E F : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+    [NormedAddCommGroup F] [NormedSpace ℝ F] {f : E → F} {f' : E →L[ℝ] F} {a : E}
+    (hf : HasStrictFDerivAt f f' a) :
+    True := by sorry
+

@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 轨道-稳定子定理 / Orbit-Stabilizer Theorem
 
@@ -12,5 +11,22 @@ import Mathlib
 从而 $|G \cdot x| = [G : G_x] = |G| / |G_x|$（当 $G$ 有限时）。
 -/
 
--- Framework stub for OrbitStabilizer
-theorem OrbitStabilizer_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.GroupTheory.GroupAction.Basic`
+- 定理 / Theorem: `MulAction.orbitEquivQuotientStabilizer`
+- 定理 / Theorem: `orbitEquivQuotientStabilizer`
+-/
+
+#check MulAction.orbitEquivQuotientStabilizer
+
+-- Orbit-Stabilizer Theorem
+theorem OrbitStabilizer {G α : Type*} [Group G] [MulAction G α] (x : α) :
+    MulAction.orbit G x ≃ G ⧸ MulAction.stabilizer G x := by
+  exact MulAction.orbitEquivQuotientStabilizer G x
+

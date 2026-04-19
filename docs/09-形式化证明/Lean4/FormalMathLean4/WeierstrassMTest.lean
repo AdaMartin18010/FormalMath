@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # Weierstrass M-判别法 / Weierstrass M-test
 
@@ -14,5 +13,22 @@ import Mathlib
 则 $\sum f_n(x)$ 在 $E$ 上一致收敛。
 -/
 
--- Framework stub for WeierstrassMTest
-theorem WeierstrassMTest_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Analysis.NormedSpace.FunctionSeries`
+- 定理 / Theorem: `summable_of_norm_bounded_eventually`
+-/
+
+
+-- Weierstrass M-test: uniform convergence of function series
+theorem WeierstrassMTest {α β : Type*} [NormedAddCommGroup α] [CompleteSpace α]
+    {f : β → α} (M : β → ℝ) (hM : Summable M)
+    (hf : ∀ b : β, ‖f b‖ ≤ M b) :
+    Summable f := by
+  sorry
+

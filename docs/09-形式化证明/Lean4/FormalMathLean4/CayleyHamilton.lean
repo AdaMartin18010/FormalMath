@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 凯莱-哈密顿定理的形式化证明 / Cayley-Hamilton Theorem
 
@@ -108,5 +107,22 @@ example {R : Type*} [CommRing R] (A : Matrix (Fin 2) (Fin 2) R) :
 - `Matrix.charpoly`: 特征多项式的定义
 -/
 
--- Framework stub for CayleyHamilton
-theorem CayleyHamilton_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.LinearAlgebra.Matrix.Charpoly.Basic`
+- 模块 / Module: `Mathlib.LinearAlgebra.Matrix.Charpoly.LinearMap`
+- 定理 / Theorem: `Matrix.aeval_self_charpoly`
+-/
+
+#check Matrix.aeval_self_charpoly
+
+-- Cayley-Hamilton theorem: every square matrix satisfies its own characteristic polynomial
+theorem CayleyHamilton {R : Type*} [CommRing R] {n : ℕ} (M : Matrix (Fin n) (Fin n) R) :
+    Polynomial.aeval M (charpoly M) = 0 := by
+  exact Matrix.aeval_self_charpoly M
+

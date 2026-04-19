@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 素数无穷多定理的形式化证明 / Infinitude of Primes
 
@@ -206,5 +205,21 @@ example : π 100 = 25 := by native_decide
 - `Nat.Coprime`: 互素的定义
 -/
 
--- Framework stub for InfinitudeOfPrimes
-theorem InfinitudeOfPrimes_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Data.Nat.Prime`
+- 模块 / Module: `Mathlib.NumberTheory.PrimesCongruentOne`
+- 定理 / Theorem: `Nat.infinite_setOf_prime`
+-/
+
+#check Nat.infinite_setOf_prime
+
+-- Euclid's theorem: there are infinitely many primes
+theorem InfinitudeOfPrimes : {p : ℕ | Nat.Prime p}.Infinite := by
+  exact Nat.infinite_setOf_prime
+

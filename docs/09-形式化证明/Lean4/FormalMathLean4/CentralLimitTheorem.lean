@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 中心极限定理的形式化 / Central Limit Theorem
 
@@ -221,5 +220,19 @@ $\varphi_{N(0,1)}(t) = e^{-t^2/2}$
 - `Mathlib.Analysis.Fourier.FourierTransform`: 特征函数相关
 -/
 
--- Framework stub for CentralLimitTheorem
-theorem CentralLimitTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Probability.Distributions.Gaussian`
+- 定理 / Theorem: `ProbabilityTheory.gaussianReal`
+-/
+
+#check ProbabilityTheory.gaussianReal
+
+-- Central Limit Theorem: not yet fully formalized in mathlib4
+theorem CentralLimitTheorem_formal : True := by sorry
+

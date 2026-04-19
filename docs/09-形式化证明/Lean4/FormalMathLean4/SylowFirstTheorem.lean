@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # Sylow第一定理的形式化证明 / Formalization of Sylow's First Theorem
 
@@ -129,5 +128,22 @@ Sylow定理的重要性：
 - `exists_prime_orderOf_dvd_card`: Cauchy定理
 -/
 
--- Framework stub for SylowFirstTheorem
-theorem SylowFirstTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.GroupTheory.Sylow`
+- 定理 / Theorem: `Sylow.exists_subgroup_card_pow_prime`
+-/
+
+#check Sylow.exists_subgroup_card_pow_prime
+
+-- Sylow's First Theorem: existence of Sylow p-subgroups
+theorem SylowFirstTheorem {G : Type*} [Group G] [Finite G] {p : ℕ} [Fact (Nat.Prime p)]
+    (n : ℕ) (hm : p ^ n ∣ Nat.card G) :
+    ∃ H : Subgroup G, Nat.card H = p ^ n := by
+  exact Sylow.exists_subgroup_card_pow_prime p hm
+

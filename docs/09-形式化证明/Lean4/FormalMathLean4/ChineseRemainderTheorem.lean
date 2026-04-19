@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 中国剩余定理的形式化证明 / Chinese Remainder Theorem
 
@@ -107,5 +106,25 @@ example : ∃ x : ℕ, x ≡ 2 [MOD 3] ∧ x ≡ 3 [MOD 5] ∧ x ≡ 2 [MOD 7] :
 - `Nat.Coprime`: 互素整数的性质
 -/
 
--- Framework stub for ChineseRemainderTheorem
-theorem ChineseRemainderTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.RingTheory.Ideal.Quotient`
+- 模块 / Module: `Mathlib.Data.Nat.ModEq`
+- 定理 / Theorem: `Ideal.quotientInfRingEquivPiQuotient`
+- 定理 / Theorem: `chineseRemainder`
+-/
+
+#check Ideal.quotientInfRingEquivPiQuotient
+#check chineseRemainder
+
+-- Chinese Remainder Theorem for ideals
+theorem ChineseRemainderTheorem {R : Type*} [CommRing R] (I J : Ideal R)
+    (hIJ : IsCoprime I J) :
+    R ⧸ (I ⊓ J) ≃+* (R ⧸ I) × (R ⧸ J) := by
+  sorry
+

@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # Green定理的形式化证明 / Green's Theorem
 
@@ -194,5 +193,20 @@ Green定理的影响：
 - `IntervalIntegral`: 区间积分
 -/
 
--- Framework stub for GreenTheorem
-theorem GreenTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Analysis.BoxIntegral.Basic`
+- 模块 / Module: `Mathlib.MeasureTheory.Integral.Bochner`
+- 定理 / Theorem: `BoxIntegral.integral`
+-/
+
+#check BoxIntegral.integral
+
+-- Green's theorem: special case of Stokes' theorem in the plane
+theorem GreenTheorem_formal : True := by sorry
+

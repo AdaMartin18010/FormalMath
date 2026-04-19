@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 费马小定理的形式化证明 / Formalization of Fermat's Little Theorem
 
@@ -109,5 +108,22 @@ import Mathlib
 **正确性**: 由欧拉定理，(m^e)^d = m^(ed) = m^(k·φ(n)+1) = (m^φ(n))^k · m ≡ 1^k · m = m (mod n)
 -/
 
--- Framework stub for FermatLittleTheorem
-theorem FermatLittleTheorem_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.FieldTheory.Finite.Basic`
+- 定理 / Theorem: `ZMod.pow_card`
+-/
+
+#check ZMod.pow_card
+
+-- Fermat's Little Theorem: a^(p-1) ≡ 1 (mod p) for prime p and a not divisible by p
+theorem FermatLittleTheorem {p : ℕ} [Fact (Nat.Prime p)] (a : ZMod p) (ha : a ≠ 0) :
+    a ^ (p - 1) = 1 := by
+  have h := ZMod.pow_card_sub_one_eq_one ha
+  simpa using h
+

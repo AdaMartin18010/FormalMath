@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 欧几里得算法的形式化证明 / Euclidean Algorithm
 
@@ -197,5 +196,23 @@ example : ¬∃ (x y : ℤ), 6 * x + 9 * y = 4 := by
 - `Int.gcdA`, `Int.gcdB`: 贝祖系数计算
 -/
 
--- Framework stub for EuclideanAlgorithm
-theorem EuclideanAlgorithm_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Data.Nat.GCD.Basic`
+- 模块 / Module: `Mathlib.RingTheory.EuclideanDomain`
+- 定理 / Theorem: `Nat.gcd_dvd`
+- 定理 / Theorem: `EuclideanDomain.gcd`
+-/
+
+#check Nat.gcd_dvd
+#check EuclideanDomain.gcd
+
+-- Euclidean algorithm: gcd(a,b) divides both a and b
+theorem EuclideanAlgorithm {a b : ℕ} : Nat.gcd a b ∣ a ∧ Nat.gcd a b ∣ b := by
+  exact ⟨Nat.gcd_dvd_left a b, Nat.gcd_dvd_right a b⟩
+

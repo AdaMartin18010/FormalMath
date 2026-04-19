@@ -1,5 +1,4 @@
 import Mathlib
-
 /-
 # 柯西-施瓦茨不等式的形式化证明 / Cauchy-Schwarz Inequality
 
@@ -96,5 +95,22 @@ import Mathlib
 - `norm_add_sq_real`: 实内积空间的极化恒等式
 -/
 
--- Framework stub for CauchySchwarz
-theorem CauchySchwarz_stub : True := by trivial
+/-
+========================================
+ Mathlib4 实质化引用 / Materialized References
+========================================
+本文件已升级为引用 Mathlib4 中的实际定理和定义。
+This file now references actual theorems and definitions from Mathlib4.
+-
+- 模块 / Module: `Mathlib.Analysis.InnerProductSpace.Basic`
+- 定理 / Theorem: `norm_inner_le_norm`
+-/
+
+#check norm_inner_le_norm
+
+-- Cauchy-Schwarz inequality: |⟪u, v⟫| ≤ ‖u‖ * ‖v‖
+theorem CauchySchwarzInequality {𝕜 E : Type*} [RCLike 𝕜] [SeminormedAddCommGroup E]
+    [InnerProductSpace 𝕜 E] (u v : E) :
+    ‖inner u v‖ ≤ ‖u‖ * ‖v‖ := by
+  exact norm_inner_le_norm u v
+
