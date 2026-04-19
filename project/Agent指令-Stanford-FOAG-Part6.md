@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 ## Agent 任务指令：Stanford FOAG Part VI 深化 + L5习题
 
 **背景**: `E:\_src\FormalMath`

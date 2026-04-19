@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 01V5 - 光滑态射（Smooth Morphisms）
 
 ## 1. 基本信息

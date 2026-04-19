@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # 图标目录
 
 请将以下尺寸的PNG图标放置在此目录：

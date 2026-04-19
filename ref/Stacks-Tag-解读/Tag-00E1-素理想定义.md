@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Tag 00E1 - 素理想定义
 
 ## 1. Tag基本信息

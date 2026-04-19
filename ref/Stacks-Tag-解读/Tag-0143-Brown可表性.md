@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0143 - Brown可表性（Brown representability）
 
 ## 1. Tag基本信息

@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0G2A - 形变理论的现代发展
 
 ## 1. 基本概念与定义

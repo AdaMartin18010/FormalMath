@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 013Z - K-内射复形（K-injective complexes）
 
 ## 1. Tag基本信息

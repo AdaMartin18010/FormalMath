@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # FormalMath项目根目录 .backup 文件清理报告
 
 **执行时间**: 2026-04-05

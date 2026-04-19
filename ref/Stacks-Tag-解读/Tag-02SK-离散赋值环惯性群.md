@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 02SK 解读：离散赋值环惯性群
 
 ## 1. Tag基本信息

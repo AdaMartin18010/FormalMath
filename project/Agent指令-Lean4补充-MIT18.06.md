@@ -1,3 +1,9 @@
+---
+msc_primary: 03B35
+msc_secondary:
+  - 68T15
+---
+
 ## Agent 任务指令：MIT 18.06 Lean4 代码补充（8篇核心文档）
 
 **背景**: `E:\_src\FormalMath`

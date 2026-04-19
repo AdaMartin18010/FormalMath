@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0A5R - 稳定∞-范畴的应用
 
 ## 1. 基本概念与定义

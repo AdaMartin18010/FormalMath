@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 02O3 解读：射影空间上同调计算
 
 ## 1. Tag基本信息

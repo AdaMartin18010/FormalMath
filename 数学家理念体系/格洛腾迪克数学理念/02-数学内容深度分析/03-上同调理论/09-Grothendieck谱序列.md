@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "Grothendieck 谱序列：Tôhoku 论文与复合函子的上同调"
 level: "gold"

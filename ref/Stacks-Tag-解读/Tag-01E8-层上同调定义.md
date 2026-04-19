@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 01E8 解读：层上同调定义
 
 ## 1. Tag基本信息

@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 01XI - 仿射对角线概形上同调消失
 
 ## 1. Tag基本信息

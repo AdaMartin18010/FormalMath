@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # FormalMath 贡献者致谢
 
 ## 核心团队

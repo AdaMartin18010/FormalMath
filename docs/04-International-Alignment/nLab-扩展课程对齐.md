@@ -1,3 +1,9 @@
+---
+msc_primary: 97A99
+msc_secondary:
+  - 00A99
+---
+
 # nLab 对齐映射 - 扩展课程
 
 ## 复分析 ↔ nLab

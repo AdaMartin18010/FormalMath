@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 ## Agent 任务指令：MIT 18.06 银层 Ch.11–15（最后5章）
 
 **背景**: `E:\_src\FormalMath`

@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # FormalMath arXiv前沿跟踪系统
 
 自动化跟踪arXiv数学领域最新论文，提取与FormalMath知识库相关的研究进展。

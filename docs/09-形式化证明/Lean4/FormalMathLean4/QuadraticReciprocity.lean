@@ -7,7 +7,7 @@ import Mathlib
 
 ## Mathlib4对应
 - **模块**: `Mathlib.NumberTheory.LegendreSymbol.QuadraticReciprocity`
-- **核心定理**: `legendreSym.quadratic_reciprocity`
+- **核心定理**: `jacobiSym.quadratic_reciprocity`
 - **相关定义**:
   - `legendreSym`: 勒让德符号
   - `JacobiSym`: 雅可比符号
@@ -125,8 +125,8 @@ example : legendreSym 19 (7 : ℤ) = 1 := by
 
 本文件与Mathlib4的以下模块对齐：
 - `Mathlib.NumberTheory.LegendreSymbol.QuadraticReciprocity`: 二次互反律的核心实现
+- `jacobiSym.quadratic_reciprocity`: 雅可比符号版本的二次互反律
 - `legendreSym.quadratic_reciprocity`: 勒让德符号版本的二次互反律
-- `JacobiSym.quadratic_reciprocity`: 雅可比符号版本的二次互反律
 - `legendreSym.euler_criterion`: 欧拉判别法
 - `legendreSym.at_neg_one`: 第一补充律
 - `legendreSym.at_two`: 第二补充律
@@ -146,7 +146,7 @@ This file now references actual theorems and definitions from Mathlib4.
 #check jacobiSym.quadratic_reciprocity
 
 -- Quadratic Reciprocity Law
-theorem QuadraticReciprocity {p q : ℕ} (hp : Odd p) (hq : Odd q)
-    (hp' : p ≠ 1) (hq' : q ≠ 1) (hpq : p ≠ q) :
-    True := by sorry
-
+-- 二次互反律：设 a, b 为不同的奇自然数，则 jacobiSym a b = (-1)^((a-1)/2 * (b-1)/2) * jacobiSym b a
+theorem QuadraticReciprocity {a b : ℕ} (ha : Odd a) (hb : Odd b) :
+    jacobiSym (↑a) b = (-1) ^ (a / 2 * (b / 2)) * jacobiSym (↑b) a := by
+  exact jacobiSym.quadratic_reciprocity ha hb

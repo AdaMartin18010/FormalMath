@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # FormalMath项目文档质量检查报告
 
 **生成时间**: 2026-04-05 10:55:45

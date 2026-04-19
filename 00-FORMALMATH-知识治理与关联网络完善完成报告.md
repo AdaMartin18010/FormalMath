@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # FormalMath 知识治理与关联网络完善完成报告
 
 **日期**：2026-04-15

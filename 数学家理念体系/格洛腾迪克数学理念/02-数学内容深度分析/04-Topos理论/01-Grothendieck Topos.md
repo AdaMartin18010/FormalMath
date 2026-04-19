@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "Grothendieck Topos：位象、层化与基本性质"
 level: "gold"

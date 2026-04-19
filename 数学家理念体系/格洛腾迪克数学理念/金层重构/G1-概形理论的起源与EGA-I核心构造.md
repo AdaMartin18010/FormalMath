@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "概形理论的起源与 EGA I 的核心构造"
 level: "gold"

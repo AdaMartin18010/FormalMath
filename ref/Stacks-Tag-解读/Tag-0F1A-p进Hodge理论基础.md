@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0F1A - p进Hodge理论基础
 
 ## 1. 基本信息

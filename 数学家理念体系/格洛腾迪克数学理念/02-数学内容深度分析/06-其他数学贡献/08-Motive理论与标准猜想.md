@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: Motive理论与标准猜想：Grothendieck的梦想
 level: gold

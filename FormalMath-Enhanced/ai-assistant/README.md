@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # FormalMath AI学习助手
 
 智能数学学习辅助系统的AI服务模块，集成LLM提供数学概念问答、证明辅助、学习建议等功能。

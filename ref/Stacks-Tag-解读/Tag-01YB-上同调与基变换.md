@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 01YB - 上同调与基变换（Cohomology and base change）
 
 ## 1. Tag基本信息

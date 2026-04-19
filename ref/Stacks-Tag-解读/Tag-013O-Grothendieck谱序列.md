@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 013O - Grothendieck谱序列
 
 ## 1. Tag基本信息

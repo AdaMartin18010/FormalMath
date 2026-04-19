@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # AI Formalizer 示例集
 
 本文件包含 10 个自然语言数学定理描述到 Lean 4 代码的转换示例，

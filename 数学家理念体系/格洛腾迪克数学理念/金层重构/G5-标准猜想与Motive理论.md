@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "标准猜想与 Motive 理论"
 level: "gold"

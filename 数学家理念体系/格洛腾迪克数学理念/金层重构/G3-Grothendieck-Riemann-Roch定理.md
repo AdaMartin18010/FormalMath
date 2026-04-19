@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "Grothendieck-Riemann-Roch 定理的完整陈述与证明思路"
 level: "gold"

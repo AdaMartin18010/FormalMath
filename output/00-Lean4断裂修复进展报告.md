@@ -1,3 +1,9 @@
+---
+msc_primary: 03B35
+msc_secondary:
+  - 68T15
+---
+
 # Lean4 断裂修复进展报告
 
 > 任务编号：P2-Lean4-修复

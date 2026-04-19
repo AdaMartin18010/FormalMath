@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Tag 01F5 - 导出函子复合公式
 
 ## 1. Tag基本信息

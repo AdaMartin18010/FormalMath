@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0E7N - 导出Hilbert概形
 
 ## 1. 基本信息

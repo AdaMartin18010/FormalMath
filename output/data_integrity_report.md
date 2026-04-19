@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # FormalMath 数据完整性检查报告
 
 **检查时间**: 2026-04-05 11:39:46

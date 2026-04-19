@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0BS6 - 棱镜上同调定义
 
 ## 1. 基本信息

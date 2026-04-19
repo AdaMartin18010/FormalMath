@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "Riemann-Roch 定理（Grothendieck 推广版）：从 Hirzebruch 到 Weil 猜想"
 level: "gold"

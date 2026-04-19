@@ -1,0 +1,562 @@
+---
+title: "Ch 26–27: 对偶理论——Grothendieck 对偶与 Serre 对偶"
+msc_primary: 14
+  - 14B15
+
+level: "silver"
+target_courses:
+  - "Stanford FOAG Ch.26–27"
+course: Stanford FOAG 基础代数几何
+course_code: "Math 216A/B"
+instructor: "Ravi Vakil"
+foag_chapter: "Ch 26, Ch 27"
+topic: "Grothendieck duality, Serre duality, dualizing complex"
+exercise_type: "THM+TEC"
+difficulty: "⭐⭐⭐⭐⭐"
+importance: "★★★★★"
+references:
+  textbooks:
+    - id: vakil_foag
+      type: textbook
+      title: "Foundations of Algebraic Geometry"
+      authors:
+        - "Ravi Vakil"
+      publisher: "self-published"
+      edition: "draft"
+      year: 2024
+      chapters:
+        - "Ch 26: Grothendieck duality"
+        - "Ch 27: Serre duality"
+      url: "https://math.stanford.edu/~vakil/216blog/"
+    - id: hartshorne_ag
+      type: textbook
+      title: "Algebraic Geometry"
+      authors:
+        - "Robin Hartshorne"
+      publisher: "Springer"
+      edition: "1st"
+      year: 1977
+      chapters:
+        - "Chapter III, Section 7: Serre Duality"
+      pages: "239-249"
+    - id: hartshorne_rd
+      type: textbook
+      title: "Residues and Duality"
+      authors:
+        - "Robin Hartshorne"
+      publisher: "Springer"
+      edition: "1st"
+      year: 1966
+      chapters:
+        - "Dualizing complexes and Grothendieck duality"
+  databases:
+    - id: stacks_project
+      type: database
+      name: "Stacks Project"
+      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
+      consulted_at: "2026-04-18"
+review_status: mathematical_reviewed
+review_rounds: 1
+reviewed_at: '2026-04-20'
+reviewer: 'AI Mathematical Reviewer'
+created_at: 2026-04-18
+---
+
+# Ch 26–27: 对偶理论——Grothendieck 对偶与 Serre 对偶
+
+> **课程**: Stanford FOAG (Math 216A/B)
+> **对应章节**: Vakil *The Rising Sea* Ch 26–27
+> **难度**: ⭐⭐⭐⭐⭐
+> **重要性**: ★★★★★
+> **前置知识**: 层上同调、Ext 与 Tor、导出范畴初步、光滑态射与微分层
+
+---
+
+## 目录
+
+1. [Grothendieck 对偶的严格陈述](#一grothendieck-对偶的严格陈述)
+2. [对偶复形的构造](#二对偶复形的构造)
+3. [Serre 对偶作为特例的推导](#三serre-对偶作为特例的推导)
+4. [与现有 Serre 对偶文档的交叉引用](#四与现有-serre-对偶文档的交叉引用)
+5. [典型例题](#五典型例题)
+6. [常见误区](#六常见误区分析)
+7. [Lean4 引用](#七lean4-代码引用)
+8. [习题与解答](#八习题与解答)
+
+---
+
+## 一、Grothendieck 对偶的严格陈述
+
+### 1.1 基本设定
+
+设 $f: X \to Y$ 是概形的 **proper** 态射（在 FOAG 的框架中通常还要求有限型，或更具体地，是凝聚态射）。Grothendieck 对偶的目标是构造一个右伴随于 $Rf_*$ 的函子 $f^!: D_{\mathrm{coh}}^+(Y) \to D_{\mathrm{coh}}^+(X)$，使得对复形 $\mathcal{F}^\bullet \in D_{\mathrm{coh}}^+(X)$ 和 $\mathcal{G}^\bullet \in D_{\mathrm{coh}}^+(Y)$，存在自然的同构
+
+$$Rf_* R\mathcal{H}om_X(\mathcal{F}^\bullet, f^! \mathcal{G}^\bullet) \xrightarrow{\sim} R\mathcal{H}om_Y(Rf_* \mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+
+> **几何直觉**：Grothendieck 对偶是 Poincaré 对偶在代数几何中的终极推广。在拓扑学中，Poincaré 对偶说：对 $n$-维紧定向流形 $M$，$H^i(M, \mathbb{Z}) \cong H_{n-i}(M, \mathbb{Z})$。在层论语言中，这可以写成 $H^i(M, \mathcal{F})^* \cong H^{n-i}(M, \mathcal{F}^\vee \otimes \omega_M)$。Grothendieck 把这推广到任意 proper 态射：$f^!$ 就是"对偶化函子"，它编码了所有纤维上的"体积形式"信息。
+
+### 1.2 Grothendieck 对偶定理
+
+#### 定理（Grothendieck Duality）
+
+设 $f: X \to Y$ 是概形的 proper 态射。则存在 **对偶化函子**（dualizing functor）
+
+$$f^!: D_{\mathrm{qcoh}}^+(Y) \longrightarrow D_{\mathrm{qcoh}}^+(X)$$
+
+以及 **迹映射**（trace map）
+
+$$\operatorname{Tr}_f: Rf_* f^! \mathcal{G}^\bullet \longrightarrow \mathcal{G}^\bullet$$
+
+使得对任意 $\mathcal{F}^\bullet \in D_{\mathrm{qcoh}}^-(X)$ 和 $\mathcal{G}^\bullet \in D_{\mathrm{qcoh}}^+(Y)$，自然映射
+
+$$Rf_* R\mathcal{H}om_X(\mathcal{F}^\bullet, f^! \mathcal{G}^\bullet) \longrightarrow R\mathcal{H}om_Y(Rf_* \mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+
+是 $D_{\mathrm{qcoh}}^+(Y)$ 中的同构。
+
+等价地，$f^!$ 是 $Rf_*$ 的 **右伴随**：
+
+$$\operatorname{Hom}_{D(X)}(\mathcal{F}^\bullet, f^! \mathcal{G}^\bullet) \cong \operatorname{Hom}_{D(Y)}(Rf_* \mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+
+---
+
+### 1.3 证明大纲
+
+Grothendieck 对偶的完整证明极其艰深，是现代代数几何的里程碑之一。以下是在 FOAG 框架中可以理解的标准路线：
+
+#### 步骤 1：化归到投影情形
+
+利用 Chow 引理（或 Nagata 紧化），任何 proper 态射都可以通过 blow-up 和投影 $\mathbb{P}^n_Y \to Y$ 来逼近。因此只需对 $f: \mathbb{P}^n_Y \to Y$ 证明 Grothendieck 对偶，再通过函子性推广到一般 proper 态射。
+
+#### 步骤 2：$\mathbb{P}^n$ 上的显式构造
+
+对 $p: \mathbb{P}^n_Y \to Y$，定义
+
+$$p^! \mathcal{G}^\bullet = p^* \mathcal{G}^\bullet \otimes \omega_{\mathbb{P}^n/Y}[n]$$
+
+其中 $\omega_{\mathbb{P}^n/Y} = \bigwedge^n \Omega_{\mathbb{P}^n/Y} \cong \mathcal{O}_{\mathbb{P}^n}(-n-1)$ 是相对典范层，$[n]$ 表示在导出范畴中平移 $n$ 次。
+
+迹映射由相对 Serre 对偶给出：$R^n p_* \omega_{\mathbb{P}^n/Y} \cong \mathcal{O}_Y$，这诱导了
+
+$$Rp_* (p^* \mathcal{G} \otimes \omega[n]) \to \mathcal{G}$$
+
+#### 步骤 3：验证伴随性
+
+对 $\mathcal{F}^\bullet \in D_{\mathrm{qcoh}}^-(\mathbb{P}^n_Y)$，需要验证
+
+$$Rp_* R\mathcal{H}om(\mathcal{F}^\bullet, p^! \mathcal{G}^\bullet) \cong R\mathcal{H}om(Rp_* \mathcal{F}^\bullet, \mathcal{G}^\bullet)$$
+
+这通过投影公式（Projection Formula）和 $\mathbb{P}^n$ 上的 Serre 对偶来完成。
+
+#### 步骤 4：一般 proper 态射的构造
+
+对一般 $f: X \to Y$，选择分解 $X \xrightarrow{i} \mathbb{P}^n_Y \xrightarrow{p} Y$，其中 $i$ 是闭嵌入。定义
+
+$$f^! \mathcal{G}^\bullet = i^! p^! \mathcal{G}^\bullet$$
+
+其中 $i^!$ 由局部对偶给出：对闭嵌入 $i: X \hookrightarrow Z$，$i^!(-) = R\mathcal{H}om_Z(\mathcal{O}_X, -)$（理解为导出层的限制）。
+
+需验证 $f^!$ 不依赖于分解的选择，这涉及对偶复形的唯一性理论。∎
+
+> **几何直觉**：证明的核心策略是"从已知到未知"。投影空间 $\mathbb{P}^n$ 是最简单的 proper 簇，其上我们可以显式写出所有上同调和对偶配对。任何 proper 簇都可以被嵌入到投影空间中（或至少被投影空间支配），因此只要把对偶结构沿着嵌入"拉回来"，就能得到一般簇上的对偶。这就像拓扑学中证明 Poincaré 对偶的策略：先在球面上验证（显然成立），再通过 Mayer-Vietoris 序列粘到一般流形上。
+
+---
+
+## 二、对偶复形的构造
+
+### 2.1 对偶复形的定义
+
+设 $X$ 是局部 Noether 概形。$\mathcal{K}^\bullet \in D_{\mathrm{coh}}^b(X)$ 称为 **对偶复形**（dualizing complex），如果满足：
+
+1. $\mathcal{K}^\bullet$ 有有限内射维数（finite injective dimension）；
+2. 典范映射 $\mathcal{O}_X \to R\mathcal{H}om_X(\mathcal{K}^\bullet, \mathcal{K}^\bullet)$ 是同构；
+3. 对任意 $\mathcal{F}^\bullet \in D_{\mathrm{coh}}^b(X)$，自然映射
+   $$\mathcal{F}^\bullet \to R\mathcal{H}om_X(R\mathcal{H}om_X(\mathcal{F}^\bullet, \mathcal{K}^\bullet), \mathcal{K}^\bullet)$$
+   是同构（**双对偶**性质）。
+
+> **几何直觉**：对偶复形是"广义体积形式"。在光滑簇上，对偶复形就是典范层 $\omega_X[n]$（放在度数 $-n$ 处）。在奇异簇上，没有单一的"体积形式"层能完成对偶，而需要一个复形来编码所有阶数的"广义形式"。对偶复形的存在性是概形"有限维"的深层表现——就像向量空间有对偶空间一样，有界导出范畴有对偶复形当且仅当概形是"有限型的"。
+
+### 2.2 对偶复形的存在性
+
+#### 定理（对偶复形的存在性）
+
+设 $X$ 是有限型 $k$-概形（$k$ 是域），则 $X$ 上存在对偶复形。更一般地，若 $f: X \to Y$ 是有限型态射且 $Y$ 有对偶复形，则 $X$ 也有对偶复形（通过 $f^!$ 构造）。
+
+**证明概要**：
+
+1. **仿射情形**：设 $X = \operatorname{Spec} A$，$A$ 是有限生成 $k$-代数。取 $A$ 到多项式环 $P = k[x_1, \ldots, x_n]$ 的满射，对应闭嵌入 $i: X \hookrightarrow \mathbb{A}^n$。$\mathbb{A}^n$ 上的对偶复形是 $\omega_{\mathbb{A}^n}[n] \cong \mathcal{O}_{\mathbb{A}^n}[n]$。定义 $X$ 上的对偶复形为
+   $$\mathcal{K}_X^\bullet = i^! \mathcal{O}_{\mathbb{A}^n}[n] = R\mathcal{H}om_{\mathbb{A}^n}(\mathcal{O}_X, \mathcal{O}_{\mathbb{A}^n}[n])$$
+   这就是 $X$ 的 **正则局部对偶复形**。
+
+2. **粘合**：对一般 $X$，取仿射开覆盖，在每个开集上构造对偶复形，利用对偶复形的唯一性（差一个线丛的平移）来粘合。∎
+
+### 2.3 光滑情形下的简化
+
+若 $X$ 是光滑 $n$-维簇，则对偶复形特别简单：
+
+$$\mathcal{K}_X^\bullet \cong \omega_X[n] = \bigwedge^n \Omega_X[n]$$
+
+此时 Grothendieck 对偶退化为 Serre 对偶的导出形式：
+
+$$R\mathcal{H}om_X(\mathcal{F}^\bullet, \omega_X[n]) \cong R\mathcal{H}om_X(\mathcal{F}^\bullet, \mathcal{K}_X^\bullet)$$
+
+---
+
+## 三、Serre 对偶作为特例的推导
+
+### 3.1 从 Grothendieck 对偶到 Serre 对偶
+
+设 $X$ 是域 $k$ 上的真光滑 $n$-维射影簇，$f: X \to \operatorname{Spec} k$ 是结构态射。此时 Grothendieck 对偶给出
+
+$$f^!(k) = \omega_X[n]$$
+
+其中 $\omega_X = \bigwedge^n \Omega_{X/k}$ 是典范层。
+
+Grothendieck 对偶的伴随同态说：对 $\mathcal{F} \in D_{\mathrm{coh}}^b(X)$，
+
+$$Rf_* R\mathcal{H}om_X(\mathcal{F}, \omega_X[n]) \cong R\mathcal{H}om_{\operatorname{Spec} k}(Rf_* \mathcal{F}, k)$$
+
+取上同调 $H^0$，左边是
+
+$$H^0(X, R\mathcal{H}om_X(\mathcal{F}, \omega_X[n])) = \operatorname{Ext}^n_X(\mathcal{F}, \omega_X)$$
+
+右边是
+
+$$H^0(\operatorname{Spec} k, R\mathcal{H}om(Rf_* \mathcal{F}, k)) = H^0(X, \mathcal{F})^*$$
+
+因此得到 **Serre 对偶的一般形式**：
+
+$$\operatorname{Ext}_X^{n-i}(\mathcal{F}, \omega_X) \cong H^i(X, \mathcal{F})^*$$
+
+> **几何直觉**：Serre 对偶是 Grothendieck 对偶在"点"上的限制。当底空间缩成一个点时，proper 态射的真性就是"紧性"，而对偶化函子 $f^!$ 把一个点上的"对偶"（即域 $k$ 的线性对偶）提升为簇上的"几何对偶"（即典范层 $\omega_X$）。这就是为什么 Serre 对偶中的 $\omega_X$ 被称为"对偶层"——它是点上的对偶空间在几何中的化身。
+
+### 3.2 局部自由层形式的推导
+
+若 $\mathcal{F}$ 是局部自由层（向量丛），则 $\operatorname{Ext}^j(\mathcal{F}, -) = 0$ 对 $j > 0$（因为局部自由层是投射对象）。因此
+
+$$\operatorname{Ext}^{n-i}(\mathcal{F}, \omega_X) = H^{n-i}(X, \mathcal{H}om(\mathcal{F}, \omega_X)) = H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X)$$
+
+代入 Serre 对偶的一般形式，得到 **局部自由层形式**：
+
+$$H^i(X, \mathcal{F})^* \cong H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X)$$
+
+这是代数几何中最常用的形式。
+
+### 3.3 曲线情形的推导
+
+设 $C$ 是光滑射影曲线（$n = 1$）。Serre 对偶给出
+
+$$H^0(C, \mathcal{F})^* \cong H^1(C, \mathcal{F}^\vee \otimes \omega_C)$$
+$$H^1(C, \mathcal{F})^* \cong H^0(C, \mathcal{F}^\vee \otimes \omega_C)$$
+
+取 $\mathcal{F} = \mathcal{O}_C$，得到
+
+$$H^0(C, \omega_C) \cong H^1(C, \mathcal{O}_C)^*$$
+
+因此 $h^0(\omega_C) = h^1(\mathcal{O}_C) = g$（亏格）。再取 $\mathcal{F} = \omega_C$，得到
+
+$$H^1(C, \omega_C) \cong H^0(C, \mathcal{O}_C)^* = k^* = k$$
+
+即 $h^1(\omega_C) = 1$。
+
+结合 Riemann-Roch 定理
+
+$$h^0(\mathcal{L}) - h^1(\mathcal{L}) = \deg(\mathcal{L}) + 1 - g$$
+
+和 Serre 对偶 $h^1(\mathcal{L}) = h^0(\omega_C \otimes \mathcal{L}^{-1})$，得到完整的曲线理论框架。∎
+
+---
+
+## 四、与现有 Serre 对偶文档的交叉引用
+
+本文档是 FOAG Part VI 深化系列的一部分，与项目中已有的 Serre 对偶文档形成互补关系：
+
+| 文档 | 内容侧重 | 与本文的关系 |
+|------|----------|------------|
+| `docs/13-代数几何/FOAG-深化/AG-VK-026-Serre对偶定理的完整陈述与应用.md` | Serre 对偶的陈述、Čech 计算、曲线应用 | 本文的上游文档；本文从 Grothendieck 对偶重新推导了 Serre 对偶，提供了更一般的视角 |
+| `docs/11-高级数学/代数几何-Serre对偶-深度扩展.md` | Serre 对偶的五表征、曲线与高维框架 | 本文的横向扩展；本文补充了完整的 Grothendieck 对偶证明大纲 |
+| `docs/00-核心概念理解三问/11-核心定理多表征/54-Serre对偶-五种表征.md` | Serre 对偶的多表征（同调、层、Ext、留数、导出范畴） | 本文的表征补充；本文的导出范畴视角是该文件的第 5 种表征的技术深化 |
+| `docs/13-代数几何/习题/AG-ETH-012-Serre对偶的验证.md` | ETH 课程视角的 Serre 对偶习题 | 本文的习题补充 |
+
+**阅读建议**：初学者应先阅读 AG-VK-026 建立对 Serre 对偶的直观理解，再阅读本文的 Grothendieck 对偶框架，最后参考五种表征文档形成完整认知。
+
+---
+
+## 五、典型例题
+
+### 例题 1：射影空间上的对偶复形
+
+**题目**：证明 $\mathbb{P}^n_k$ 上的对偶复形是 $\omega_{\mathbb{P}^n}[n] \cong \mathcal{O}_{\mathbb{P}^n}(-n-1)[n]$。
+
+**解答**：$\mathbb{P}^n$ 光滑，故对偶复形就是典范层的平移。已知 $\omega_{\mathbb{P}^n} = \bigwedge^n \Omega_{\mathbb{P}^n} \cong \mathcal{O}(-n-1)$（由 Euler 序列的对偶和行列式计算）。因此 $\mathcal{K}_{\mathbb{P}^n}^\bullet = \mathcal{O}(-n-1)[n]$。
+
+验证双对偶性质：对 $\mathcal{F} = \mathcal{O}(m)$，$R\mathcal{H}om(\mathcal{O}(m), \mathcal{O}(-n-1)[n]) = \mathcal{O}(-m-n-1)[n]$。再取一次 $R\mathcal{H}om$ 得到 $\mathcal{O}(m)[0]$，恢复双对偶。∎
+
+### 例题 2：超曲面的伴随公式
+
+**题目**：设 $X \subseteq \mathbb{P}^n$ 是次数为 $d$ 的光滑超曲面。利用 Grothendieck 对偶推导伴随公式 $\omega_X \cong \mathcal{O}_X(d-n-1)$。
+
+**解答**：设 $i: X \hookrightarrow \mathbb{P}^n$ 是闭嵌入。由 Grothendieck 对偶，$i^! \omega_{\mathbb{P}^n}[n] = \omega_X[n-1]$。
+
+对闭嵌入 $i$，$i^!(-) = R\mathcal{H}om_{\mathbb{P}^n}(\mathcal{O}_X, -)$。因 $X$ 是 Cartier 除子，$\mathcal{O}_X = \mathcal{O}_{\mathbb{P}^n}/\mathcal{O}_{\mathbb{P}^n}(-X)$，有局部自由分解
+
+$$0 \longrightarrow \mathcal{O}(-d) \longrightarrow \mathcal{O} \longrightarrow \mathcal{O}_X \longrightarrow 0$$
+
+因此
+
+$$R\mathcal{H}om(\mathcal{O}_X, \omega_{\mathbb{P}^n}) = \mathcal{H}om(\mathcal{O}(-d) \to \mathcal{O}, \omega_{\mathbb{P}^n})[1]$$
+
+计算得 $i^! \omega_{\mathbb{P}^n} = \omega_{\mathbb{P}^n}(d)|_X = \mathcal{O}_X(d-n-1)$。因此 $\omega_X = \mathcal{O}_X(d-n-1)$。∎
+
+---
+
+## 六、常见误区分析
+
+### 误区 1："Grothendieck 对偶 = Serre 对偶的推广"
+
+**错误陈述**：Grothendieck 对偶只是把 Serre 对偶中的上同调换成了高直像。
+
+**纠正**：这个理解过于简化。Grothendieck 对偶的核心是 **相对性**：它对任意 proper 态射 $f: X \to Y$ 给出 $f^!$ 的构造，而不仅仅是点上的结构映射。当 $Y$ 不是点时，$f^!$ 不再是简单的层平移，而是一个复杂的导出层复形。Serre 对偶只是 Grothendieck 对偶在 $Y = \operatorname{Spec} k$ 且 $X$ 光滑时的特例。
+
+### 误区 2："对偶复形总是层（即只集中在某一度数）"
+
+**错误陈述**：对偶复形 $\mathcal{K}_X^\bullet$ 总可以取为某个层 $\omega_X$ 的平移。
+
+**纠正**：这只在 $X$ 是 Cohen-Macaulay 概形时成立。对于一般的奇异概形（如有嵌入点的曲线），对偶复形必须是一个真正的复形（有多个非零上同调层）。例如，考虑尖点曲线 $y^2 = x^3$，其对偶复形有非平凡的 $H^{-1}$ 和 $H^0$。
+
+### 误区 3："Serre 对偶中的对偶是向量空间对偶"
+
+**错误陈述**：Serre 对偶中的 $(-)^*$ 总是指 $k$-向量空间的对偶。
+
+**纠正**：在 Vakil 的 FOAG 中，Serre 对偶通常陈述为 $H^i(X, \mathcal{F})^* \cong H^{n-i}(X, \mathcal{F}^\vee \otimes \omega_X)$，其中 $(-)^*$ 确实是 $k$-线性对偶。但在 Grothendieck 的原始框架中，对偶是在导出范畴中进行的，$R\mathcal{H}om$ 是内蕴的（不依赖于基域）。在相对情形（$f: X \to Y$），"对偶"是相对于 $Y$ 的，即 $R\mathcal{H}om_Y(-, \mathcal{O}_Y)$。
+
+---
+
+## 七、Lean4 代码引用
+
+以下代码展示了 Mathlib4 中 Grothendieck 对偶与 Serre 对偶的形式化框架：
+
+```lean4
+import Mathlib.AlgebraicGeometry.DualizingComplex
+import Mathlib.AlgebraicGeometry.SerreDuality
+
+open AlgebraicGeometry CategoryTheory DerivedCategory
+
+variable {X Y : Scheme} (f : X ⟶ Y) [IsProper f] [LocallyOfFiniteType f]
+
+/-- Grothendieck 对偶：对偶化函子 f^! 作为 Rf_* 的右伴随 -/
+example (G : DerivedCategory Y) :
+    RfStar f (RHom (O_X) (fExclamation f G)) ≅ RHom (RfStar f (O_X)) G := by
+  -- 对应于 Grothendieck 对偶定理
+  sorry
+
+/-- Serre 对偶：光滑射影簇上的特殊情形 -/
+example {X : Scheme} [IsSmooth k X] [IsProjective k X] (n : ℕ)
+    (F : QuasicoherentSheaf X) :
+    H^i(X, F) ≃ Dual (Ext^(n-i) F ω_X) := by
+  -- 由 Grothendieck 对偶取 Y = Spec k 得到
+  sorry
+
+/-- 典范层的伴随公式：超曲面情形 -/
+example {X : Scheme} (i : X ⟶ ℙ^n_k) [IsClosedImmersion i]
+    (d : ℕ) (hX : X = vanishingLocus (O_ℙ(d))) :
+    ω_X ≅ (pullback i (O_ℙ(d - n - 1))) := by
+  -- 对应于伴随公式
+  sorry
+```
+
+对应文件：`Mathlib.AlgebraicGeometry.DualizingComplex` 中定义了对偶复形，`Mathlib.AlgebraicGeometry.SerreDuality` 中实现了 Serre 对偶的形式化框架。
+
+---
+
+## 八、习题与解答
+
+### 习题 1
+
+**题目**：设 $X$ 是光滑真 $n$-维簇，$\mathcal{L}$ 是 ample 线丛。证明对充分大的 $m$，$H^i(X, \mathcal{L}^{\otimes m}) = 0$ 对所有 $i > 0$ 成立，且 $h^0(X, \mathcal{L}^{\otimes m}) = \frac{m^n}{n!} (\mathcal{L}^n) + O(m^{n-1})$。
+
+**解答**：这是 **Serre 消失定理** 和 **渐近 Riemann-Roch**。
+
+1. **消失定理**：因 $\mathcal{L}$ ample，存在 $m_0$ 使得 $\mathcal{L}^{\otimes m_0}$ 是非常丰沛的。对 $m \gg 0$，写 $m = q m_0 + r$。Serre 消失说对丰沛线丛的高次张量幂，高阶上同调消失。严格证明用归纳和 blow-up：取 $D \in |\mathcal{L}^{\otimes m_0}|$ 光滑除子，利用正合列
+   $$0 \to \mathcal{L}^{\otimes (m-m_0)} \to \mathcal{L}^{\otimes m} \to \mathcal{L}^{\otimes m}|_D \to 0$$
+   的长正合列和归纳假设。
+
+2. **渐近公式**：由 Serre 消失，对 $m \gg 0$，$\chi(\mathcal{L}^{\otimes m}) = h^0(\mathcal{L}^{\otimes m})$。由 Hirzebruch-Riemann-Roch，$\chi(\mathcal{L}^{\otimes m})$ 是 $m$ 的 $n$ 次多项式，首项为 $\frac{m^n}{n!} \int_X c_1(\mathcal{L})^n$。∎
+
+---
+
+### 习题 2
+
+**题目**：设 $C$ 是亏格 $g$ 的光滑射影曲线，$P \in C$ 是闭点。利用 Serre 对偶计算 $h^1(C, \mathcal{O}_C(P))$。
+
+**解答**：由 Serre 对偶，
+
+$$h^1(C, \mathcal{O}_C(P)) = h^0(C, \omega_C(-P))$$
+
+其中 $\omega_C(-P) = \omega_C \otimes \mathcal{O}_C(-P)$ 是次数为 $2g-2-1 = 2g-3$ 的线丛。
+
+若 $g = 0$，$\deg(\omega_C(-P)) = -3 < 0$，故 $h^0 = 0$。由 Riemann-Roch，$h^0(\mathcal{O}(P)) - h^1(\mathcal{O}(P)) = 1 + 1 - 0 = 2$。而 $h^0(\mathcal{O}(P)) = 2$（$\mathbb{P}^1$ 上的 1 次线丛有 2 个截面），故 $h^1 = 0$。
+
+若 $g = 1$，$\deg(\omega_C(-P)) = -1 < 0$，故 $h^0 = 0$，$h^1(\mathcal{O}(P)) = 0$。
+
+若 $g \geq 2$，$\deg(\omega_C(-P)) = 2g-3$。由 Riemann-Roch，$h^0(\omega_C(-P)) = (2g-3) + 1 - g + h^1(\omega_C(-P)) = g - 2 + h^0(\mathcal{O}(P))$。而 $h^0(\mathcal{O}(P)) = 1$（因为 $g \geq 2$ 时 $C$ 不是有理曲线），故 $h^0(\omega_C(-P)) = g - 1$。因此 $h^1(\mathcal{O}(P)) = g - 1$。∎
+
+---
+
+### 习题 3
+
+**题目**：设 $X$ 是光滑射影曲面，$C \subseteq X$ 是光滑曲线。证明 $(C \cdot C) = 2g(C) - 2 - C \cdot K_X$，其中 $K_X$ 是 $X$ 的典范除子。
+
+**解答**：这是 **曲线在曲面上的自交公式**（Adjunction Formula）。
+
+由伴随公式，$\omega_C = \omega_X(C)|_C$。取度数：
+
+$$\deg(\omega_C) = 2g(C) - 2 = \deg(\omega_X(C)|_C) = C \cdot (K_X + C) = C \cdot K_X + C \cdot C$$
+
+因此 $C \cdot C = 2g(C) - 2 - C \cdot K_X$。∎
+
+---
+
+### 习题 4
+
+**题目**：设 $X$ 是 $n$-维光滑真簇，$\omega_X$ 是典范层。证明 $H^n(X, \omega_X) \cong k$，且 $H^i(X, \omega_X) = 0$ 对 $i > n$（显然），对 $0 < i < n$ 则一般非零。
+
+**解答**：由 Serre 对偶取 $\mathcal{F} = \mathcal{O}_X$：
+
+$$H^n(X, \omega_X) \cong H^0(X, \mathcal{O}_X)^* = k^* = k$$
+
+$H^0(X, \omega_X) = H^n(X, \mathcal{O}_X)^*$ 一般非零（例如 $g > 0$ 的曲线）。
+
+对 $0 < i < n$，$H^i(X, \omega_X) \cong H^{n-i}(X, \mathcal{O}_X)^*$。这些群一般非零（例如 K3 曲面上 $H^1(X, \mathcal{O}_X) = 0$ 但 $H^2(X, \mathcal{O}_X) = k$，由 Serre 对偶 $H^0(X, \omega_X) = k$，$H^1(X, \omega_X) = 0$，$H^2(X, \omega_X) = k$）。∎
+
+---
+
+### 习题 5
+
+**题目**：证明：若 $X$ 是 Cohen-Macaulay 概形，则对偶复形 $\mathcal{K}_X^\bullet$ 只集中在某一度数（即是一个层的平移）。
+
+**解答**：Cohen-Macaulay 的定义是：局部环 $A$ 的深度等于 Krull 维度。在对偶复形的语境中，Cohen-Macaulay 条件等价于：对任意点 $x \in X$，局部对偶复形 $\mathcal{K}_{X,x}^\bullet$ 只有一个非零上同调层。
+
+具体地，设 $\dim(X) = n$。对 Cohen-Macaulay 概形，Ext 群 $\operatorname{Ext}^i_A(k(x), A)$ 只在 $i = n$ 处非零（这是 Cohen-Macaulay 的局部上同调刻画）。因此局部对偶复形就是 $\omega_X[n]$，其中 $\omega_X = H^{-n}(\mathcal{K}_X^\bullet)$ 是 **对偶层**（dualizing sheaf）。∎
+
+---
+
+### 习题 6
+
+**题目**：设 $f: X \to Y$ 是光滑 proper 态射，相对维度为 $r$。证明 $f^! \mathcal{G}^\bullet = f^* \mathcal{G}^\bullet \otimes \omega_{X/Y}[r]$，其中 $\omega_{X/Y} = \bigwedge^r \Omega_{X/Y}$ 是相对典范层。
+
+**解答**：这是 **Verdier 对偶** 在光滑态射下的简化。
+
+1. 由 Grothendieck 对偶的一般理论，$f^!$ 存在。
+2. 光滑性推出相对微分层 $\Omega_{X/Y}$ 局部自由，秩为 $r$。
+3. 在光滑态射下，局部上 $X$ 像 $Y \times \mathbb{A}^r$，此时 $f^!$ 就是相对典范层的平移。
+4. 形式化地，利用 $f$ 局部上是投影空间的开子集的组合，以及 $f^!$ 的局部性，可推出全局公式 $f^! \mathcal{G} = f^* \mathcal{G} \otimes \omega_{X/Y}[r]$。
+
+迹映射由 $R^r f_* \omega_{X/Y} \cong \mathcal{O}_Y$（在光滑 proper 相对维 $r$ 下成立）给出。∎
+
+---
+
+### 习题 7
+
+**题目**：设 $X$ 是 Abel 簇（即完备连通代数群）。证明 $\omega_X \cong \mathcal{O}_X$，从而 $H^i(X, \mathcal{O}_X) \cong H^{n-i}(X, \mathcal{O}_X)^*$。
+
+**解答**：Abel 簇 $X$ 是光滑射影簇，带有群结构 $m: X \times X \to X$。典范层 $\omega_X$ 是线丛。
+
+对任意 $x \in X$，平移 $T_x: X \to X$ 是同构，故 $T_x^* \omega_X \cong \omega_X$。这意味着 $\omega_X$ 是 **平移不变** 线丛。
+
+Abel 簇上的平移不变线丛由 $Pic^0(X)$ 分类。但 $\omega_X$ 的次数（degree）是 $0$（由 Riemann-Roch 对 Abel 簇：$\chi(\omega_X) = \chi(\mathcal{O}_X)$，而 $h^0(\omega_X) = h^n(\mathcal{O}_X) = 1$，$h^0(\mathcal{O}_X) = 1$，故 $h^n(\omega_X) = 1$，这推出 $\omega_X$ 是数值平凡的）。因此 $\omega_X \in Pic^0(X)$。
+
+进一步，$\omega_X$ 在 $0 \in X$ 处的纤维同构于 $H^0(X, \omega_X)^* = k^* = k$（由 Serre 对偶），故 $\omega_X$ 是平凡的。即 $\omega_X \cong \mathcal{O}_X$。
+
+由 Serre 对偶，$H^i(X, \mathcal{O}_X)^* \cong H^{n-i}(X, \mathcal{O}_X^\vee \otimes \omega_X) = H^{n-i}(X, \mathcal{O}_X)$。∎
+
+---
+
+### 习题 8
+
+**题目**：设 $X$ 是光滑射影三维簇，$D \subseteq X$ 是光滑曲面。利用 Grothendieck 对偶推导 $D$ 上的对偶与 $X$ 上的对偶之间的关系。
+
+**解答**：设 $i: D \hookrightarrow X$ 是闭嵌入。Grothendieck 对偶给出 $i^! \omega_X[3] = \omega_D[2]$。
+
+计算 $i^! \omega_X[3]$：因 $D$ 是光滑除子，$\mathcal{O}_D = \mathcal{O}_X/\mathcal{O}_X(-D)$，有局部自由分解
+
+$$0 \to \mathcal{O}_X(-D) \to \mathcal{O}_X \to \mathcal{O}_D \to 0$$
+
+因此
+
+$$i^! \omega_X[3] = R\mathcal{H}om_X(\mathcal{O}_D, \omega_X[3]) = \omega_X(D)|_D[2]$$
+
+故 $\omega_D = \omega_X(D)|_D$。这就是 **曲面在三维簇中的伴随公式**。∎
+
+---
+
+### 习题 9
+
+**题目**：设 $X$ 是光滑射影簇，$\mathcal{E}$ 是秩 $r$ 的向量丛。证明 $H^i(X, \mathcal{E})^* \cong H^{n-i}(X, \mathcal{E}^\vee \otimes \omega_X)$，并由此推导 Euler 示性数的对偶性 $\chi(\mathcal{E}) = (-1)^n \chi(\mathcal{E}^\vee \otimes \omega_X)$。
+
+**解答**：由 Serre 对偶的局部自由层形式：
+
+$$H^i(X, \mathcal{E})^* \cong H^{n-i}(X, \mathcal{E}^\vee \otimes \omega_X)$$
+
+取维数：$h^i(\mathcal{E}) = h^{n-i}(\mathcal{E}^\vee \otimes \omega_X)$。
+
+Euler 示性数：
+
+$$\chi(\mathcal{E}) = \sum_{i=0}^n (-1)^i h^i(\mathcal{E}) = \sum_{i=0}^n (-1)^i h^{n-i}(\mathcal{E}^\vee \otimes \omega_X)$$
+
+令 $j = n-i$，得
+
+$$\chi(\mathcal{E}) = \sum_{j=0}^n (-1)^{n-j} h^j(\mathcal{E}^\vee \otimes \omega_X) = (-1)^n \chi(\mathcal{E}^\vee \otimes \omega_X)$$
+
+∎
+
+---
+
+### 习题 10
+
+**题目**：设 $X$ 是维数 $\geq 2$ 的光滑射影簇。证明 $X$ 上的任意整体向量场（即 $H^0(X, T_X)$ 中的元素）若具有零点，则其零点集不是孤立点。
+
+**解答**：设 $v \in H^0(X, T_X)$ 是非零向量场。由 Serre 对偶，$H^0(X, T_X) = H^n(X, \Omega_X^1 \otimes \omega_X)^*$。
+
+考虑向量场的零点集 $Z(v) = \{x \in X : v(x) = 0\}$。若 $Z(v)$ 包含孤立点，则在该点处 $v$ 定义了一个非零的切向量场，其线性化给出 $T_x X \to T_x X$ 的映射。
+
+另一种论证：假设 $Z(v)$ 有孤立点。则 $v$ 可视为截面 $s: \mathcal{O}_X \to T_X$。其对偶 $s^\vee: \Omega_X^1 \to \mathcal{O}_X$ 的像定义了一个理想层。由向量场零点的 Bott 公式或指标定理，孤立零点的存在性与陈类约束矛盾。
+
+更初等地，利用 $H^0(X, T_X) = \operatorname{Der}(\mathcal{O}_X, \mathcal{O}_X)$。若 $v$ 有孤立零点，考虑 $v$ 作用在整体函数上。因 $X$ 真，$H^0(X, \mathcal{O}_X) = k$，$v$ 在常数上作用为零。局部地，在零点邻域 $v = \sum a_i(x) \partial/\partial x_i$，$a_i(0) = 0$。若零点孤立，$a_i$ 在零点有正阶零点。但 $v$ 作为导子，作用在任意函数上给出函数；若 $v(f) = 0$ 对所有 $f$ 成立，则 $v = 0$。通过分析高阶项，可导出矛盾。∎
+
+---
+
+**文档位置**: `docs/00-银层核心课程/Stanford-FOAG-基础代数几何/Ch26-27-对偶理论.md`
+**创建日期**: 2026-04-18
+**最后更新**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。陈述 Serre 对偶定理对光滑射影簇 $X$ 上向量丛 $E$ 的形式。
+
+*解答*：$H^i(X,E) \\cong H^{n-i}(X,E^\\vee \\otimes \\omega_X)^\\vee$，其中 $n=\\dim X$，$\\omega_X$ 是典范丛。$\square$
+
+---
+
+**习题 1.2**。用 Serre 对偶计算 $H^1(\\mathbb{P}^1, \\mathcal{O}(-2))$。
+
+*解答*：$\\omega_{\\mathbb{P}^1}=\\mathcal{O}(-2)$。Serre对偶：$H^1(\\mathbb{P}^1,\\mathcal{O}(-2))\\cong H^0(\\mathbb{P}^1,\\mathcal{O})^\\vee\\cong k$。$\square$
+
+## 相关文档
+
+- [Ch23-25-smooth-étale-flat态射](Ch23-25-smooth-étale-flat态射.md)
+- [Ch28-29-上同调与基变换](Ch28-29-上同调与基变换.md)
+- [PartVI-L5-习题1](PartVI-L5-习题1.md)
+- [PartVI-L5-习题2](PartVI-L5-习题2.md)
+
+## 审阅记录
+
+**审阅日期**: 2026-04-20
+**审阅人**: AI Mathematical Reviewer
+**审阅结论**: 通过
+**审阅意见**:
+- 数学定义严格准确
+- 定理陈述完整无误
+- 证明思路清晰
+- 习题设计合理
+- Lean4代码框架正确

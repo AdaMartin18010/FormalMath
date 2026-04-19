@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "相交理论与 Chern 类：SGA 6 与 Fulton 的公理化"
 level: "gold"

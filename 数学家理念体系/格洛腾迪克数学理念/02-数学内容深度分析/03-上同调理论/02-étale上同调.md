@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "étale 上同调：SGA 4 与 Weil 猜想的基础"
 level: "gold"

@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0A9A - 椭圆曲线的模空间
 
 ## 1. 基本信息

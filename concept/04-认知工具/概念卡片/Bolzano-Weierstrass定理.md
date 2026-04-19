@@ -1,3 +1,9 @@
+---
+msc_primary: 97Cxx
+msc_secondary:
+  - 97A99
+---
+
 # 概念卡片: Bolzano-Weierstrass定理
 
 | 属性 | 内容 |

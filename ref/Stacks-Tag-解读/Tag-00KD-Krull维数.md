@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 00KD 解读：Krull维数
 
 ## 1. Tag基本信息

@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0C6A - Deligne-Mumford叠
 
 ## 1. 基本概念与定义

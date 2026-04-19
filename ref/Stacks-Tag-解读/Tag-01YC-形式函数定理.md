@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 01YC - 形式函数定理（Theorem on formal functions）
 
 ## 1. Tag基本信息

@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Tag 01XK - 凝聚层性质
 
 ## 1. Tag基本信息

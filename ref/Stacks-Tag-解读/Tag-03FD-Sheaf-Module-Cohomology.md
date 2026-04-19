@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 03FD - 层上同调与模上同调等价
 
 ## 1. Tag基本信息

@@ -1,3 +1,10 @@
+---
+msc_primary: 26-XX
+msc_secondary:
+  - 28-XX
+  - 30-XX
+---
+
 # Princeton 复分析学习诊断手册
 
 ## 常见错误模式

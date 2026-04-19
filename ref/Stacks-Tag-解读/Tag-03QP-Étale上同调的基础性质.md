@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 03QP - Étale上同调的基础性质
 
 ## 1. 基本信息

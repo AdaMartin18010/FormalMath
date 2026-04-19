@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Tag 01R1 - 局部有限型态射
 
 ## 1. Tag基本信息

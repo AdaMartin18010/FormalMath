@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "Grothendieck-Riemann-Roch 定理：从 K-理论到陈类的形式化"
 level: "gold"

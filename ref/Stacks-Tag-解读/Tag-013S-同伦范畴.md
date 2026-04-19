@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 013S - 同伦范畴（Homotopy Category）
 
 > **来源**: [Stacks Project](https://stacks.math.columbia.edu/tag/013S)  

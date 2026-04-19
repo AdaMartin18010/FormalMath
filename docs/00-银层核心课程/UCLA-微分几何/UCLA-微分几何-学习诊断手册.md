@@ -1,3 +1,9 @@
+---
+msc_primary: 97A30
+msc_secondary:
+  - 00A05
+---
+
 # UCLA 微分几何学习诊断手册
 
 ## 常见错误模式

@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "Abel 范畴与同调代数：Tôhoku 论文的公理化革命"
 level: "gold"

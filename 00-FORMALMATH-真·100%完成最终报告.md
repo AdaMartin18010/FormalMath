@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # FormalMath 项目 真·100% 完成最终报告
 
 **日期**: 2026-04-09

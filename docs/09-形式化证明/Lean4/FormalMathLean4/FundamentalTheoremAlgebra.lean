@@ -4,7 +4,7 @@ import Mathlib
 
 ## Mathlib4对应
 - **模块**: `Mathlib.Analysis.Complex.Polynomial`
-- **核心定理**: `Complex.isAlgClosed`
+- **核心定理**: `Complex.exists_root`
 - **相关定义**:
   - `IsAlgClosed`: 代数封闭域
   - `splits`: 多项式完全分裂
@@ -185,6 +185,10 @@ This file now references actual theorems and definitions from Mathlib4.
 #check Complex.exists_root
 
 -- Fundamental Theorem of Algebra: every non-constant complex polynomial has a root
+-- 代数基本定理：每个次数大于0的复系数多项式在复数域中至少有一个根
 theorem FundamentalTheoremAlgebra {n : ℕ} (hn : n > 0) (p : Polynomial ℂ) (hdeg : p.natDegree = n) :
-    True := by sorry
-
+    ∃ z : ℂ, p.IsRoot z := by
+  have hdeg' : 0 < p.degree := by
+    rw [Polynomial.degree_eq_natDegree (by nlinarith)]
+    exact_mod_cast hn
+  exact Complex.exists_root hdeg'

@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0F1E - 算术Riemann-Hilbert对应
 
 ## 1. 基本概念与定义

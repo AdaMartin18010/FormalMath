@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 01W0 - 泛性质与表示可解性
 
 ## 1. 基本概念与定义

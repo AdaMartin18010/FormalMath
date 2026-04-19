@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 05T7 解读：右导出函子定义
 
 ## 1. Tag基本信息

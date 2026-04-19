@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 01W7 - 固有态射（Proper Morphisms）
 
 ## 1. Tag基本信息

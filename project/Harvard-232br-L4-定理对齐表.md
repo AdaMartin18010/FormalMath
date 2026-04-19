@@ -1,3 +1,9 @@
+---
+msc_primary: 97A99
+msc_secondary:
+  - 00A99
+---
+
 # Harvard Math 232br - L4定理级对齐表
 
 ## 课程信息

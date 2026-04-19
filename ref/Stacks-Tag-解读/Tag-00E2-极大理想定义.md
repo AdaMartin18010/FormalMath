@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Tag 00E2 - 极大理想定义
 
 ## 1. Tag基本信息

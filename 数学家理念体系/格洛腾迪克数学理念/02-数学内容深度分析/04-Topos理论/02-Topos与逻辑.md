@@ -1,3 +1,10 @@
+---
+msc_primary: 14Fxx
+msc_secondary:
+  - 18Gxx
+  - 01A70
+---
+
 ﻿---
 title: "Topos 与逻辑：Mitchell-Bénabou 语言、Kripke-Joyal 语义与内逻辑"
 level: "gold"

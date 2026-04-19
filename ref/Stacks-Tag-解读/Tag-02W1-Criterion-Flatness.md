@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 02W1 - 平坦性判别（Criterion of Flatness）
 
 ## 1. Tag基本信息

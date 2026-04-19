@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 01EM - Čech上同调的函子性
 
 > **来源**: [Stacks Project](https://stacks.math.columbia.edu/tag/01EM)  

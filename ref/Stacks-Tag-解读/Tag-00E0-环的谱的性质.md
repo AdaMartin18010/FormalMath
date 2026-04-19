@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 00E0 解读：环的谱的性质
 
 ## 1. Tag基本信息

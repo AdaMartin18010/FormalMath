@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 0B2D - 完美胚与倾斜
 
 ## 1. 基本信息

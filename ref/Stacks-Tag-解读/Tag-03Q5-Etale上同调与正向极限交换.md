@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 03Q5 - Étale上同调与正向极限交换
 
 ## 1. Tag基本信息

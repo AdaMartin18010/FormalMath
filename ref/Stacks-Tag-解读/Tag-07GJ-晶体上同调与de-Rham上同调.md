@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 07GJ - 晶体上同调与de Rham上同调
 
 ## 1. 基本信息

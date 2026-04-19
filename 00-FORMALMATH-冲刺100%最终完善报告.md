@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # FormalMath 冲刺100%最终完善报告
 
 **日期**: 2026-04-09

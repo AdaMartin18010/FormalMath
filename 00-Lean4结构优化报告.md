@@ -1,3 +1,9 @@
+---
+msc_primary: 03B35
+msc_secondary:
+  - 68T15
+---
+
 # FormalMath项目Lean4结构优化报告
 
 **生成日期**: 2026年4月5日

@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 01YU - 上同调与平坦性（Cohomology and flatness）
 
 ## 1. Tag基本信息

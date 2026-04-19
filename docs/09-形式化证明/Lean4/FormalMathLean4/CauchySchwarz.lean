@@ -109,7 +109,8 @@ This file now references actual theorems and definitions from Mathlib4.
 #check norm_inner_le_norm
 
 -- Cauchy-Schwarz inequality: |⟪u, v⟫| ≤ ‖u‖ * ‖v‖
+-- 柯西-施瓦茨不等式：内积空间中任意两个向量内积的绝对值不超过它们范数的乘积
 theorem CauchySchwarzInequality {𝕜 E : Type*} [RCLike 𝕜] [SeminormedAddCommGroup E]
     [InnerProductSpace 𝕜 E] (u v : E) :
-    True := by sorry
-
+    ‖inner u v‖ ≤ ‖u‖ * ‖v‖ := by
+  exact norm_inner_le_norm u v

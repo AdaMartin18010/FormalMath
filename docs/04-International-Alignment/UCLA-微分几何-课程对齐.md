@@ -1,3 +1,9 @@
+---
+msc_primary: 97A99
+msc_secondary:
+  - 00A99
+---
+
 # UCLA 微分几何课程内容对齐
 
 ## 课程结构

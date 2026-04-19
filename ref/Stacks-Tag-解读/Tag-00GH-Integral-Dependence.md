@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 # Stacks Project Tag 00GH - 整依赖（Integral Dependence）
 
 ## 1. Tag基本信息

@@ -1,3 +1,9 @@
+---
+msc_primary: 00A99
+msc_secondary:
+  - 97A99
+---
+
 ## Agent 任务指令：Harvard 232br 习题系统 Chapter III–V
 
 **背景**: `E:\_src\FormalMath`
