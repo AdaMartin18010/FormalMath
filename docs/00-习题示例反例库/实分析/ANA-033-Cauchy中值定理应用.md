@@ -9,7 +9,7 @@ type: APP
 topic: 实分析
 subtopic: 微分中值定理
 source:
-  course: MIT 18.100A
+  course: MIT 18.100A Real Analysis
   chapter: "5.2"
   original: true
 processed_at: '2026-04-09'

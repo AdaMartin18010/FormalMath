@@ -63,6 +63,7 @@ references:
 target_courses: [FormalMath银层核心课程, 代数几何]
 status: completed
 created_at: 2026-04-18
+review_status: completed
 ---
 
 # Harvard 232br - Hartshorne Chapter II §5 习题解答（续）
@@ -356,3 +357,16 @@ theorem rank_constant_on_connectedComponents {X : Scheme}
 **习题 1.2**。描述 $\\mathbb{P}^1$ 上可逆层（线丛）的Picard群 $\\operatorname{Pic}(\\mathbb{P}^1)$。
 
 *解答*：$\\operatorname{Pic}(\\mathbb{P}^1) \\cong \\mathbb{Z}$，由 $\\mathcal{O}(n)$ 生成。任意可逆层同构于某个 $\\mathcal{O}(n)$。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层](II.5-模与层.md)
+## 参考文献
+
+1. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+2. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+3. Liu, Q. (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press. ISBN: 978-0198502845.

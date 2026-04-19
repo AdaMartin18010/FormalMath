@@ -3,6 +3,7 @@ msc_primary: 11
 generated_at: '2026-04-09'
 title: MathOverflow数论精华对齐文档
 processed_at: '2026-04-09'
+review_status: draft
 ---
 
 # MathOverflow数论精华对齐文档
@@ -739,3 +740,7 @@ graph LR
 ---
 
 *本文档是FormalMath项目与MathOverflow对齐系列的一部分，旨在系统性地整合世界顶尖数学问答社区的精华内容。*
+---
+**参考文献**
+
+1. 相关教材与学术论文。

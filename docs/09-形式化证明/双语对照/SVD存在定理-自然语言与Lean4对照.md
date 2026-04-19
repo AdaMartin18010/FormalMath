@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -68,3 +69,7 @@ end SVDTheorem
 1. 证明：\(A\) 的秩等于其非零奇异值的个数。
 2. 设 \(A\) 是 \(2 \times 2\) 可逆矩阵，写出其 SVD 中奇异值与 \(A^{\mathsf{T}} A\) 特征值的关系。
 3. 在 Lean4 中构造一个具体的 \(2 \times 3\) 矩阵，并尝试写出其 SVD 的显式形式（手工计算）。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

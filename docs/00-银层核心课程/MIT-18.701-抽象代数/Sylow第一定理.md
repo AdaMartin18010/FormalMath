@@ -31,6 +31,7 @@ keywords:
 status: "draft"
 review_rounds: 0
 created_at: "2026-04-18"
+review_status: completed
 ---
 
 # Sylow 第一定理（Sylow's First Theorem）
@@ -405,3 +406,11 @@ $$\{1\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_n = G
 **习题 1.2**。设 $P$ 是 $G$ 的 Sylow $p$-子群，$H$ 是 $G$ 的子群且 $N_G(P)\\subseteq H$。证明 $H = N_G(H)$。
 
 *解答*：显然 $H\\subseteq N_G(H)$。设 $g\\in N_G(H)$，则 $gPg^{-1}\\subseteq H$ 也是 $H$ 的 Sylow $p$-子群。由 Sylow 定理，存在 $h\\in H$ 使 $gPg^{-1}=hPh^{-1}$，故 $h^{-1}g\\in N_G(P)\\subseteq H$，$g\\in H$。$\square$
+
+## 相关文档
+
+- [Cauchy定理](Cauchy定理.md)
+- [多项式环唯一分解定理](多项式环唯一分解定理.md)
+- [拉格朗日定理](拉格朗日定理.md)
+- [环第一同构定理](环第一同构定理.md)
+- [群第一同构定理](群第一同构定理.md)

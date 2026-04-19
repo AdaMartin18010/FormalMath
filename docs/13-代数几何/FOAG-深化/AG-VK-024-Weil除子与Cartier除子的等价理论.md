@@ -60,6 +60,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # AG-VK-024: Weil 除子与 Cartier 除子的等价理论
@@ -244,3 +245,16 @@ example {A : Type*} [CommRing A] [IsDomain A] [IsPrincipalIdealRing A] (n : ℕ)
 **习题 1.2**。举例说明：存在Weil除子不是Cartier除子的概形。
 
 *解答*：锥面 $V(xy-z^2) \\subseteq \\mathbb{A}^3$ 在原点处不是UFD，顶点对应的Weil除子不是Cartier除子。$\square$
+
+## 相关文档
+
+- [AG-VK-023-有限态射的整体与局部刻画](AG-VK-023-有限态射的整体与局部刻画.md)
+- [AG-VK-025-线丛与映射到射影空间](AG-VK-025-线丛与映射到射影空间.md)
+- [AG-VK-026-Serre对偶定理的完整陈述与应用](AG-VK-026-Serre对偶定理的完整陈述与应用.md)
+- [AG-VK-027-爆破的几何与代数](AG-VK-027-爆破的几何与代数.md)
+- [AG-VK-028-椭圆曲线的群结构](AG-VK-028-椭圆曲线的群结构.md)
+## 参考文献
+
+1. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+2. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+3. Eisenbud, D., & Harris, J. (2016). *Intersection Theory* (GTM 199). Springer. ISBN: 978-0387977164.

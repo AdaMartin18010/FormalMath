@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06 / 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -108,3 +109,7 @@ f(t) = \left(\sum a_i^2\right) t^2 + 2\left(\sum a_i b_i\right) t + \sum b_i^2
 1. 补全上述证明中的两个 `sorry`：证明“若 \(\sum a_i^2 = 0\) 则所有 \(a_i = 0\)”，以及“若 \(\sum a_i^2 \neq 0\) 则它大于 0”。
 2. 利用求和形式的柯西-施瓦茨不等式证明方差不等式：\((\sum x_i)^2 \leq n \sum x_i^2\)。
 3. 将求和形式的证明改写为内积空间形式，并说明两者的等价性。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

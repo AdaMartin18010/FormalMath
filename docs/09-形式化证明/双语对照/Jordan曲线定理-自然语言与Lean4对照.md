@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A / 拓扑学"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -73,3 +74,7 @@ axiom winding_number_interior (c : JordanCurve) (p : ℝ²) (hp : p ∉ JordanCu
 1. 为什么 Jordan 曲线定理在 \(\mathbb{R}^2\) 中成立，而在 \(\mathbb{R}^3\) 中没有直接类比？
 2. 尝试用环绕数的语言解释：为什么曲线内部的点环绕数为 \(\pm 1\)，而外部为 \(0\)？
 3. 查找 Hales (2005) 的 Mizar 形式化，了解组合证明的大致代码规模。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

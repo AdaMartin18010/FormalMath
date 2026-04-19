@@ -56,7 +56,7 @@ references:
       name: Stacks Project
       entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
       consulted_at: 2026-04-18
-review_status: "draft"
+review_status: "completed"
 created_at: 2026-04-18
 ---
 
@@ -847,3 +847,11 @@ theorem genus5_g13_empty (hg5 : g = 5) (hgen : IsGenericCurve X) :
 **习题 1.2**。证明：曲线 $C$ 的典范映射 $\\phi_K: C \\to \\mathbb{P}^{g-1}$ 是嵌入当且仅当 $C$ 不是超椭圆曲线。
 
 *解答*：若 $C$ 超椭圆，$K$ 由超椭圆映射 $C \\to \\mathbb{P}^1$ 拉回，$\\phi_K$ 分解为此映射与Veronese嵌入的复合，不是嵌入。若非超椭圆，$K$ 是非常丰富的。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层-续](II.5-模与层-续.md)

@@ -60,6 +60,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # AG-VK-029: 曲线的 Hurwitz 定理
@@ -272,3 +273,16 @@ example (h : ∃ π : X ⟶ ℙ¹, degree π = 2) (g : ℕ) (hg : genus X = g) (
 **习题 1.2**。证明：从椭圆曲线到 $\\mathbb{P}^1$ 的任意非恒定映射至少有两个分歧点。
 
 *解答*：$g(C)=1, g(\\mathbb{P}^1)=0$。Hurwitz：$0 = -2d + R$，$R = 2d \\geq 2$（因 $d \\geq 1$）。$\square$
+
+## 相关文档
+
+- [AG-VK-023-有限态射的整体与局部刻画](AG-VK-023-有限态射的整体与局部刻画.md)
+- [AG-VK-024-Weil除子与Cartier除子的等价理论](AG-VK-024-Weil除子与Cartier除子的等价理论.md)
+- [AG-VK-025-线丛与映射到射影空间](AG-VK-025-线丛与映射到射影空间.md)
+- [AG-VK-026-Serre对偶定理的完整陈述与应用](AG-VK-026-Serre对偶定理的完整陈述与应用.md)
+- [AG-VK-027-爆破的几何与代数](AG-VK-027-爆破的几何与代数.md)
+## 参考文献
+
+1. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+2. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+3. Eisenbud, D., & Harris, J. (2016). *Intersection Theory* (GTM 199). Springer. ISBN: 978-0387977164.

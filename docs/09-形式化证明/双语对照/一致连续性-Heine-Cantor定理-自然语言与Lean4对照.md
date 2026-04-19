@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -66,3 +67,7 @@ end HeineCantorTheorem
 1. 证明 $f(x) = 1/x$ 在 $(0, 1]$ 上连续但不一致连续，说明紧致性条件不可去掉。
 2. 证明 $f(x) = \sqrt{x}$ 在 $[0, 1]$ 上一致连续，并尝试在 Lean4 中给出 $\delta$ 关于 $\varepsilon$ 的显式表达式。
 3. 设 $f: \mathbb{R} \to \mathbb{R}$ 连续且周期为 $T$，证明 $f$ 在 $\mathbb{R}$ 上一致连续。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

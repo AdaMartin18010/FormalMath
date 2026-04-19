@@ -28,6 +28,7 @@ keywords:
 status: "draft"
 review_rounds: 0
 created_at: "2026-04-18"
+review_status: completed
 ---
 
 # Ch.11 最小二乘与Gram-Schmidt（Least Squares & Gram-Schmidt）
@@ -800,3 +801,11 @@ theorem qr_solve_least_squares {m n : ℕ} (A Q R : Matrix (Fin m) (Fin n) ℝ)
 **习题 1.2**。对 $v_1=(1,0,0), v_2=(1,1,0), v_3=(1,1,1)$ 应用 Gram-Schmidt 正交化。
 
 *解答*：$u_1=v_1=(1,0,0)$；$u_2=v_2-rac{v_2\cdot u_1}{u_1\cdot u_1}u_1=(0,1,0)$；$u_3=v_3-rac{v_3\cdot u_1}{u_1\cdot u_1}u_1-rac{v_3\cdot u_2}{u_2\cdot u_2}u_2=(0,0,1)$。$\square$
+
+## 相关文档
+
+- [Ch01-线性方程组的几何](Ch01-线性方程组的几何.md)
+- [Ch02-矩阵消元法](Ch02-矩阵消元法.md)
+- [Ch03-矩阵运算与逆矩阵](Ch03-矩阵运算与逆矩阵.md)
+- [Ch04-LU分解](Ch04-LU分解.md)
+- [Ch05-向量空间与子空间](Ch05-向量空间与子空间.md)

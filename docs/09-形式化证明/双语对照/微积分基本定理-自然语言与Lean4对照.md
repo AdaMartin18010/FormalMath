@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -75,3 +76,7 @@ end FundamentalTheoremOfCalculus
 1. 设 $F(x) = \int_0^x e^{t^2}\,dt$，求 $F'(x)$。
 2. 计算 $\int_0^{\pi} \sin(x)\,dx$，并在 Lean4 中验证结果等于 2。
 3. 设 $f$ 在 $[a, b]$ 上连续且 $f(x) \geq 0$，证明若 $\int_a^b f(x)\,dx = 0$，则 $f(x) = 0$ 对所有 $x \in [a, b]$ 成立。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

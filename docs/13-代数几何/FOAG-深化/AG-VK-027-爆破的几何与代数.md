@@ -60,6 +60,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # AG-VK-027: 爆破的几何与代数
@@ -251,3 +252,16 @@ example : blowup (origin 𝔸²) ≅
 **习题 1.2**。证明：曲面的爆破不改变Picard数的变号性（即若 $S$ 的相交形式是不定的，则 $\\operatorname{Bl}_P S$ 也是）。
 
 *解答*：爆破增加一个 $E$ 类，$E^2=-1$。原Picard格与 $\\mathbb{Z}E$ 直和，变号性保持。$\square$
+
+## 相关文档
+
+- [AG-VK-023-有限态射的整体与局部刻画](AG-VK-023-有限态射的整体与局部刻画.md)
+- [AG-VK-024-Weil除子与Cartier除子的等价理论](AG-VK-024-Weil除子与Cartier除子的等价理论.md)
+- [AG-VK-025-线丛与映射到射影空间](AG-VK-025-线丛与映射到射影空间.md)
+- [AG-VK-026-Serre对偶定理的完整陈述与应用](AG-VK-026-Serre对偶定理的完整陈述与应用.md)
+- [AG-VK-028-椭圆曲线的群结构](AG-VK-028-椭圆曲线的群结构.md)
+## 参考文献
+
+1. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+2. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+3. Eisenbud, D., & Harris, J. (2016). *Intersection Theory* (GTM 199). Springer. ISBN: 978-0387977164.

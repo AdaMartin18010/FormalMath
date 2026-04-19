@@ -397,8 +397,21 @@ $$g(a) = f'(a) = 0,\; g'(a) = f''(a) = 0,\; \ldots,\; g^{(k-1)}(a) = f^{(k)}(a) 
 
 ---
 
-## 九、参考文献
+## 九、## 相关文档
+
+- [MIT-18.100A-学习诊断手册](..\MIT-18.100A-学习诊断手册.md)
+- [01-确界原理与Archimedean性质](..\MIT-18.100A\01-确界原理与Archimedean性质.md)
+- [02-介值定理](..\MIT-18.100A\02-介值定理.md)
+- [03-一致连续性](..\MIT-18.100A\03-一致连续性.md)
+- [04-中值定理](..\MIT-18.100A\04-中值定理.md)
+
+参考文献
 
 1. Lebl, J. *Basic Analysis I: Introduction to Real Analysis, Volume 1*. CreateSpace, 2018. §4.2.
 2. Rudin, W. *Principles of Mathematical Analysis*. 3rd ed. McGraw-Hill, 1976. Theorem 5.10.
 3. nLab, "Rolle theorem", https://ncatlab.org/nlab/show/Rolle+theorem.
+## 参考文献
+
+1. Rudin, W. (1976). *Principles of Mathematical Analysis* (3rd ed.). McGraw-Hill. ISBN: 978-0070542358.
+2. Tao, T. (2006). *Analysis I*. Hindustan Book Agency. ISBN: 978-8185931623.
+3. Abbott, S. (2015). *Understanding Analysis* (2nd ed.). Springer. ISBN: 978-1493927111.

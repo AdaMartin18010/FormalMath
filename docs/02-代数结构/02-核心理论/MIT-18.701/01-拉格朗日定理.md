@@ -64,6 +64,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 ## 1. 引言

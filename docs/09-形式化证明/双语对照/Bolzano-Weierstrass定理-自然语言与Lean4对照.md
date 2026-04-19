@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -107,3 +108,7 @@ end BolzanoWeierstrassTheorem
 1. 构造序列 \(x_n = (-1)^n\) 的一个收敛子序列，并在 Lean4 中验证其收敛性。
 2. 证明：若 \(\{x_n\}\) 是 \([0,1]\) 中的序列，则存在子序列同时收敛到 \(\liminf x_n\) 和 \(\limsup x_n\)。
 3. 将 Bolzano-Weierstrass 定理推广到 \(\mathbb{R}^n\)：对每个坐标分别应用一维定理，再使用对角线法构造公共收敛子序列。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

@@ -60,6 +60,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # AG-VK-017: 仿射概形的结构层与 Spec-Γ 范畴等价
@@ -288,3 +289,16 @@ theorem affine_scheme_equivalence :
 **习题 1.2**。证明函子 $\\operatorname{Spec}: \\mathbf{Ring}^{op} \\to \\mathbf{Sch}$ 与 $\\Gamma: \\mathbf{Sch} \\to \\mathbf{Ring}^{op}$ 构成伴随对。
 
 *解答*：$\\operatorname{Hom}_{\\mathbf{Sch}}(X, \\operatorname{Spec} A) \\cong \\operatorname{Hom}_{\\mathbf{Ring}}(A, \\Gamma(X, \\mathcal{O}_X))$。这是仿射概形的泛性质。$\square$
+
+## 相关文档
+
+- [AG-VK-023-有限态射的整体与局部刻画](..\FOAG-深化\AG-VK-023-有限态射的整体与局部刻画.md)
+- [AG-VK-024-Weil除子与Cartier除子的等价理论](..\FOAG-深化\AG-VK-024-Weil除子与Cartier除子的等价理论.md)
+- [AG-VK-025-线丛与映射到射影空间](..\FOAG-深化\AG-VK-025-线丛与映射到射影空间.md)
+- [AG-VK-026-Serre对偶定理的完整陈述与应用](..\FOAG-深化\AG-VK-026-Serre对偶定理的完整陈述与应用.md)
+- [AG-VK-027-爆破的几何与代数](..\FOAG-深化\AG-VK-027-爆破的几何与代数.md)
+## 参考文献
+
+1. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+2. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+3. Eisenbud, D., & Harris, J. (2016). *Intersection Theory* (GTM 199). Springer. ISBN: 978-0387977164.

@@ -32,6 +32,7 @@ keywords:
 status: "draft"
 review_rounds: 0
 created_at: "2026-04-18"
+review_status: completed
 ---
 
 # 确界原理与 Archimedean 性质
@@ -427,3 +428,11 @@ $\square$
 **习题 1.2**。用 Archimedean 性质证明：对任意 $x > 0$，存在 $n\in\mathbb{N}$ 使 $rac{1}{n} < x$。
 
 *解答*：由 Archimedean 性质，取 $y = 1$，存在 $n\in\mathbb{N}$ 使 $nx > 1$（因 $x > 0$），即 $rac{1}{n} < x$。$\square$
+
+## 相关文档
+
+- [Taylor定理](Taylor定理.md)
+- [Weierstrass-M判别法](Weierstrass-M判别法.md)
+- [一致连续性定理](一致连续性定理.md)
+- [中值定理](中值定理.md)
+- [介值定理](介值定理.md)

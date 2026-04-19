@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -86,3 +87,7 @@ end ExtremeValueTheorem
 1. 构造一个在开区间 $(0, 1)$ 上连续但取不到最大值和最小值的函数，说明闭区间条件的重要性。
 2. 证明：若 $f: [a, b] \to \mathbb{R}$ 连续，则 $f([a, b]) = [m, M]$，其中 $m$ 和 $M$ 分别是 $f$ 的最小值和最大值（结合介值定理）。
 3. 在 Lean4 中对 $f(x) = x^3 - 3x$ 在 $[-2, 2]$ 上求最大值和最小值。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

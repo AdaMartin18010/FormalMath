@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -76,3 +77,7 @@ end SylowFirstTheorem
 1. 证明：对任意 \(0 \leq k \leq n\)，\(G\) 中存在阶为 \(p^k\) 的子群。
 2. 设 \(|G| = 15\)，利用 Sylow 定理证明 \(G\) 是循环群。
 3. 在 Lean4 中验证 \(S_3\) 的 Sylow 2-子群阶为 2，Sylow 3-子群阶为 3。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

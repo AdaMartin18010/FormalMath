@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -72,3 +73,7 @@ end HeineBorelTheorem
 1. 证明单位球面 \(S^{n-1} = \{x \in \mathbb{R}^n \mid \|x\| = 1\}\) 是紧致的。
 2. 举例说明：在无穷维赋范空间（如 \(\ell^2\)）中，闭单位球不是紧致的。
 3. 在 Lean4 中证明：紧致集上的连续实值函数必能取到最大值和最小值（提示：使用 `IsCompact.exists_isMaxOn`）。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

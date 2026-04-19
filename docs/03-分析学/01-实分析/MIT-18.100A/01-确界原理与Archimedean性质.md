@@ -54,6 +54,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # 确界原理与 Archimedean 性质
@@ -355,3 +356,16 @@ $$\max S \text{ 存在} \Rightarrow \max S = \sup S$$
 **习题 1.2**。用 Archimedean 性质证明 $\\mathbb{Q}$ 在 $\\mathbb{R}$ 中稠密。
 
 *解答*：对任意 $a < b$，需找有理数 $q \\in (a,b)$。由 Archimedean 性质，存在 $n$ 使 $1/n < b-a$。再取 $m = \\lfloor na \\rfloor + 1$，则 $a < m/n < b$。$\\square$
+
+## 相关文档
+
+- [MIT-18.100A-学习诊断手册](..\MIT-18.100A-学习诊断手册.md)
+- [02-介值定理](02-介值定理.md)
+- [03-一致连续性](03-一致连续性.md)
+- [04-中值定理](04-中值定理.md)
+- [05-比较判别法与比值根值判别法](05-比较判别法与比值根值判别法.md)
+## 参考文献
+
+1. Rudin, W. (1976). *Principles of Mathematical Analysis* (3rd ed.). McGraw-Hill. ISBN: 978-0070542358.
+2. Tao, T. (2006). *Analysis I*. Hindustan Book Agency. ISBN: 978-8185931623.
+3. Abbott, S. (2015). *Understanding Analysis* (2nd ed.). Springer. ISBN: 978-1493927111.

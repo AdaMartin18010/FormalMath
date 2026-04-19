@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -71,3 +72,7 @@ end Integration
 1. 在 Lean4 中写出并证明：\(\lim_{n\to\infty} \frac{1}{n} = 0\)。
 2. 利用中值定理证明：当 \(x > 0\) 时，\(\sin x < x\)。
 3. 写出并证明几何级数求和公式：若 \(|r| < 1\)，则 \(\sum_{n=0}^{\infty} r^n = \frac{1}{1-r}\)。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

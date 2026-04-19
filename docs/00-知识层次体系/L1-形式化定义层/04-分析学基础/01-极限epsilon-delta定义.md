@@ -4,7 +4,7 @@ msc_primary: 26
   - 26A03
   - 26E35
   - 97I30
-level: L1-Formal
+level: silver
 domain: 分析学
 concept: 极限的ε-δ定义
 prerequisites:
@@ -22,10 +22,12 @@ tags:
 - 形式化定义
 title: 'L1: 极限的ε-δ定义 (ε-δ Definition of Limit)'
 processed_at: '2026-04-05'
+course: MIT 18.100A Real Analysis
+review_status: completed
 ---
 msc_primary: "26A03"
 msc_secondary: ["26E35", "97I30"]
-level: L1-Formal
+level: silver
 domain: 分析学
 concept: 极限的ε-δ定义
 prerequisites: ["实数构造", "绝对值", "量词逻辑"]
@@ -355,3 +357,20 @@ theorem const_limit (c : ℝ) : (λ _ => c) ⟶ c := by
 - **字数**: 约2500字
 - **层次**: L1-Formal
 - **概念编号**: 04-001
+
+## 相关文档
+
+- [01-集合与元素](..\01-集合论基础\01-集合与元素.md)
+- [01-Peano公理](..\02-数系构造\01-Peano公理.md)
+- [07-实数构造](..\02-数系构造\07-实数构造.md)
+- [04-群定义](..\03-代数结构\04-群定义.md)
+- [16-向量空间](..\03-代数结构\16-向量空间.md)
+---
+**参考文献**
+
+1. 相关教材与学术论文。
+## 参考文献
+
+1. Rudin, W. (1976). *Principles of Mathematical Analysis* (3rd ed.). McGraw-Hill. ISBN: 978-0070542358.
+2. Tao, T. (2006). *Analysis I*. Hindustan Book Agency. ISBN: 978-8185931623.
+3. Abbott, S. (2015). *Understanding Analysis* (2nd ed.). Springer. ISBN: 978-1493927111.

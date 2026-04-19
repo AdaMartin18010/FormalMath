@@ -18,7 +18,7 @@ target_courses:
   - "Harvard 232br"
 msc_primary: 14
 processed_at: '2026-04-18'
-review_status: "draft"
+review_status: "completed"
 references:
   textbooks:
     - id: hartshorne_ag
@@ -658,3 +658,11 @@ theorem H0FunctorIsoΓ {X : Scheme} :
 **习题 1.2**。设 $X$ 是仿射概形。证明对任意拟凝聚层 $\\mathcal{F}$ 和 $i > 0$，$H^i(X, \\mathcal{F}) = 0$。
 
 *解答*：Serre定理：仿射概形上拟凝聚层的上同调在正阶消失。这是仿射性的上同调刻画。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层-续](II.5-模与层-续.md)

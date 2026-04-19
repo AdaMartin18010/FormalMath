@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -90,3 +91,7 @@ end MatrixRepresentation
 1. 设 $T: \mathbb{R}^2 \to \mathbb{R}^2$ 为逆时针旋转 $90^\circ$，求 $T$ 在标准基下的矩阵表示。
 2. 设 $\mathcal{B} = \{(1,1)^T, (1,-1)^T\}$ 是 $\mathbb{R}^2$ 的另一组基，求同一旋转 $T$ 在基 $\mathcal{B}$ 下的矩阵表示，并验证基变换公式。
 3. 在 Lean4 中验证：对于 $2 \times 2$ 矩阵 $M = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$，有 `toMatrix B C (toLin B C M) = M`。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

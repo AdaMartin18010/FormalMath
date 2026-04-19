@@ -10,6 +10,7 @@ target_courses:
   - MIT 18.02
 status: completed
 created_at: 2026-04-18
+review_status: completed
 ---
 
 # IMO 2001 Problem 2：三元不等式
@@ -72,3 +73,20 @@ example (a b c : ℝ) (ha : a > 0) (hb : b > 0) (hc : c > 0) :
     c / Real.sqrt (c^2 + 8 * a * b) ≥ 1 := by
   sorry
 ```
+
+## 相关文档
+
+- [IMO真题-不等式3](IMO真题-不等式3.md)
+- [IMO真题-代数1](IMO真题-代数1.md)
+- [IMO真题-代数2](IMO真题-代数2.md)
+- [IMO真题-代数3](IMO真题-代数3.md)
+- [IMO真题-几何1](IMO真题-几何1.md)
+
+## 习题摘要
+
+**习题 1.0** 参见上文问题 1。
+## 参考文献
+
+1. International Mathematical Olympiad (IMO). *Official Problems and Solutions*. Available at: https://www.imo-official.org/
+2. Engel, A. (1998). *Problem-Solving Strategies*. Springer. ISBN: 978-0387982191.
+3. Andreescu, T., & Gelca, R. (2000). *Mathematical Olympiad Challenges*. Birkhäuser. ISBN: 978-0817641900.

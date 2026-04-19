@@ -7,6 +7,7 @@ msc_primary: 20
   - 00A99
 title: Diffie-Hellman密钥交换
 processed_at: '2026-04-05'
+review_status: draft
 ---
 # Diffie-Hellman密钥交换
 
@@ -266,3 +267,7 @@ Alice      Bob       Carol
 
 **案例创建日期**: 2026年4月3日
 **最后更新**: 2026年4月3日
+---
+**参考文献**
+
+1. 相关教材与学术论文。

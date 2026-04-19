@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -80,3 +81,7 @@ theorem holder_normalized {n : ℕ} (a b : Fin n → ℝ)
 1. 补全 `young_inequality` 的证明（提示：利用 `exp` 和 `log` 的凸性）。
 2. 从归一化版本推导一般 Hölder 不等式：如何处理 \(\sum |a_i|^p \neq 1\) 的情况？
 3. 取 \(p = q = 2\)，说明 Hölder 不等式如何退化为柯西-施瓦茨不等式。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

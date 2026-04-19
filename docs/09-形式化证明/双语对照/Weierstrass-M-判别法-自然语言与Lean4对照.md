@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -67,3 +68,7 @@ end WeierstrassMTest
 1. 证明级数 $\sum_{n=1}^\infty \frac{\sin(nx)}{n^2}$ 在 $\mathbb{R}$ 上一致收敛，并说明其和函数是连续的。
 2. 设 $f_n(x) = x^n / n!$ 定义在 $[-a, a]$ 上，利用 M-判别法证明 $\sum f_n(x)$ 一致收敛。
 3. 构造一个反例说明：若仅知道 $|f_n(x)| \leq M_n$ 且 $\sum M_n$ 发散，则 $\sum f_n(x)$ 可能不一致收敛。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

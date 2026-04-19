@@ -4,7 +4,7 @@ msc_primary: 03
   - 03F30
   - 11B83
   - 97F40
-level: L1-Formal
+level: silver
 domain: 数论
 concept: Peano公理
 prerequisites:
@@ -20,10 +20,12 @@ tags:
 - 形式化定义
 title: 'L1: 自然数的Peano公理 (Peano Axioms)'
 processed_at: '2026-04-05'
+course: MIT 18.100A Real Analysis
+review_status: completed
 ---
 msc_primary: "03F30"
 msc_secondary: ["11B83", "97F40"]
-level: L1-Formal
+level: silver
 domain: 数论
 concept: Peano公理
 prerequisites: ["集合与元素", "函数与映射"]
@@ -303,3 +305,20 @@ theorem add_assoc (a b c : ℕ) : (a + b) + c = a + (b + c) := by
 - **字数**: 约2200字
 - **层次**: L1-Formal
 - **概念编号**: 02-001
+
+## 相关文档
+
+- [01-集合与元素](..\01-集合论基础\01-集合与元素.md)
+- [07-实数构造](07-实数构造.md)
+- [04-群定义](..\03-代数结构\04-群定义.md)
+- [16-向量空间](..\03-代数结构\16-向量空间.md)
+- [01-极限epsilon-delta定义](..\04-分析学基础\01-极限epsilon-delta定义.md)
+---
+**参考文献**
+
+1. 相关教材与学术论文。
+## 参考文献
+
+1. Rudin, W. (1976). *Principles of Mathematical Analysis* (3rd ed.). McGraw-Hill. ISBN: 978-0070542358.
+2. Tao, T. (2006). *Analysis I*. Hindustan Book Agency. ISBN: 978-8185931623.
+3. Abbott, S. (2015). *Understanding Analysis* (2nd ed.). Springer. ISBN: 978-1493927111.

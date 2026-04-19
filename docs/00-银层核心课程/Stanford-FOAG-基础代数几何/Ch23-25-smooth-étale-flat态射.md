@@ -47,7 +47,7 @@ references:
       name: "Stacks Project"
       entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
       consulted_at: "2026-04-18"
-review_status: "draft"
+review_status: "completed"
 created_at: 2026-04-18
 ---
 
@@ -552,3 +552,10 @@ $$\chi(X_y, \mathcal{O}) = \sum_{i=0}^{\dim(X_y)} (-1)^i h^i(X_y, \mathcal{O})$$
 **习题 1.2**。举例说明：平坦态射不一定是光滑的。
 
 *解答*：$\\operatorname{Spec} k[x,y]/(xy) \\to \\operatorname{Spec} k[x]$ 是平坦的（无挠），但在原点处纤维是结点，不光滑。$\square$
+
+## 相关文档
+
+- [Ch26-27-对偶理论](Ch26-27-对偶理论.md)
+- [Ch28-29-上同调与基变换](Ch28-29-上同调与基变换.md)
+- [PartVI-L5-习题1](PartVI-L5-习题1.md)
+- [PartVI-L5-习题2](PartVI-L5-习题2.md)

@@ -70,6 +70,7 @@ references:
 target_courses: [FormalMath银层核心课程, 代数几何]
 status: completed
 created_at: 2026-04-18
+review_status: completed
 ---
 
 # Harvard 232br - Hartshorne Chapter II §6 习题解答
@@ -689,3 +690,16 @@ theorem duple_pullback {X : Scheme} [IsNoetherian X] [IsIntegral X]
 **习题 1.2**。计算 $\\mathbb{P}^2$ 中直线 $L = V(x)$ 的Weil除子类。
 
 *解答*：$L$ 是素除子（不可约 codimension 1 子簇），其除子类为 $[L] \\in \\operatorname{Cl}(\\mathbb{P}^2) \\cong \\mathbb{Z}$。因 $\\operatorname{Cl}(\\mathbb{P}^2)$ 由超平面类生成，$[L] = 1$。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层-续](II.5-模与层-续.md)
+## 参考文献
+
+1. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+2. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+3. Liu, Q. (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press. ISBN: 978-0198502845.

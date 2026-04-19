@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -79,3 +80,7 @@ end CayleyTheorem
 1. 证明：若 \(|G| = n\)，则 \(G\) 同构于 \(S_n\) 的某个子群，并且 \(n \mid n!\)。
 2. 将 Klein 四元群 \(V_4\) 具体实现为 \(S_4\) 的子群。
 3. 在 Lean4 中验证：循环群 \(C_n\) 可以由 \(n\)-轮换 \((1\,2\,\dots\,n)\) 实现。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

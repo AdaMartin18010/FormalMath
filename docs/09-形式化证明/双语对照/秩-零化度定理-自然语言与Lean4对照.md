@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -65,3 +66,7 @@ example (T : V →ₗ[𝕜] W) : Submodule 𝕜 W := range T
 1. 设 \(A\) 是 \(m \times n\) 矩阵，证明 \(\operatorname{rank}(A) + \operatorname{nullity}(A) = n\)。
 2. 利用秩-零化度定理证明：若 \(T: V \to W\) 是单射且 \(\dim(V) = \dim(W)\)，则 \(T\) 也是满射（从而是同构）。
 3. 在 Lean4 中，对一个具体的 \(3 \times 5\) 实矩阵计算其秩和零化度。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

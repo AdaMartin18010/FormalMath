@@ -60,6 +60,7 @@ references:
 target_courses: [FormalMath银层核心课程, 代数几何]
 status: completed
 created_at: 2026-04-18
+review_status: completed
 ---
 
 # Harvard 232br - Hartshorne Chapter II §5 习题解答
@@ -303,3 +304,16 @@ theorem torsionFree_iff_locallyFreeInCodimOne {X : Scheme}
 **习题 1.2**。举例说明：局部自由层不一定是自由层。
 
 *解答*：$\\mathbb{P}^1$ 上的切丛 $\\mathcal{T}_{\\mathbb{P}^1} \\cong \\mathcal{O}(2)$ 是局部自由的（在仿射覆盖上自由），但整体截面空间维数为3，而秩为1的自由层 $\\mathcal{O}$ 的整体截面维数为1，故 $\\mathcal{O}(2)$ 不是自由层。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层-续](II.5-模与层-续.md)
+## 参考文献
+
+1. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+2. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+3. Liu, Q. (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press. ISBN: 978-0198502845.

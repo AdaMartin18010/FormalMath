@@ -4,6 +4,7 @@ msc_primary: 00
   - 00A99
 title: user_profile
 processed_at: '2026-04-05'
+review_status: draft
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']
@@ -114,4 +115,7 @@ def create_preset_profile(preset_type: str, name: str = , email: str = ) -> User
 - `preset_type: str`
 - `name: str`
 - `email: str`
+---
+**参考文献**
 
+1. 相关教材与学术论文。

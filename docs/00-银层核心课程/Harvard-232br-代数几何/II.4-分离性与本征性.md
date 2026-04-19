@@ -61,6 +61,7 @@ references:
 target_courses: [FormalMath银层核心课程, 代数几何]
 status: completed
 created_at: 2026-04-18
+review_status: completed
 ---
 
 # Harvard 232br - Hartshorne Chapter II §4 习题解答
@@ -351,3 +352,16 @@ theorem proper_over_algClosed_global_sections
 **习题 1.2**。用 Valuative Criterion 证明：若 $X$ 是本征的，则 $X$ 的任何整点 $\\operatorname{Spec} K \\to X$（$K$ 为域）可唯一延拓到 $\\operatorname{Spec} \\mathcal{O}_K \\to X$（$\\mathcal{O}_K$ 为赋值环）。
 
 *解答*：这正是本征性的 Valuative Criterion。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.5-模与层-续](II.5-模与层-续.md)
+- [II.5-模与层](II.5-模与层.md)
+## 参考文献
+
+1. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+2. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+3. Liu, Q. (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press. ISBN: 978-0198502845.

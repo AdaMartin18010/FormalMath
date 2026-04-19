@@ -53,7 +53,7 @@ references:
       name: Stacks Project
       entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
       consulted_at: 2026-04-18
-review_status: "draft"
+review_status: "completed"
 created_at: 2026-04-18
 ---
 
@@ -936,3 +936,11 @@ theorem uniformization (Λ : Submodule ℤ ℂ) (h : IsLattice Λ) :
 **习题 1.2**。计算椭圆曲线 $E: y^2 = x^3 - x$ 的亏格。
 
 *解答*：平面曲线 $y^2 = x^3 - x$ 是光滑三次曲线。由平面曲线亏格公式 $g = (d-1)(d-2)/2 = (3-1)(3-2)/2 = 1$。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层-续](II.5-模与层-续.md)

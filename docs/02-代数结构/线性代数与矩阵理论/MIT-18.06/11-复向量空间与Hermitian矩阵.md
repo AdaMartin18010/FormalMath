@@ -13,7 +13,7 @@ references:
       edition: "4th"
       chapters: "Ch.10"
       pages: "485-510"
-review_status: "draft"
+review_status: "completed"
 ---
 
 # 复向量空间与 Hermitian 矩阵
@@ -202,7 +202,7 @@ import Mathlib.LinearAlgebra.Matrix.Spectrum
 
 /-! MIT 18.06 L32-L33: 复向量空间与 Hermitian 矩阵
     对应文档：docs/02-代数结构/线性代数与矩阵理论/MIT-18.06/11-复向量空间与Hermitian矩阵.md
--/ 
+-/
 
 section HermitianMatrices
 
@@ -292,7 +292,7 @@ $$
 
 **(a)** 设 $U = [u_1 \mid \cdots \mid u_n]$。由 $U^H U = I$，其第 $(i, j)$ 元为 $u_i^H u_j = \delta_{ij}$。这说明列向量两两正交且模为 1，即构成标准正交基。
 
-**(b)** 
+**(b)**
 
 $$
 \|Ux\|^2 = (Ux)^H (Ux) = x^H U^H U x = x^H x = \|x\|^2
@@ -319,7 +319,7 @@ $$
 
 **解答**：
 
-**(a)** 
+**(a)**
 
 $$
 A^H = \begin{pmatrix} \overline{3} & \overline{1-i} \\ \overline{1+i} & \overline{2} \end{pmatrix}^T = \begin{pmatrix} 3 & 1+i \\ 1-i & 2 \end{pmatrix} = A

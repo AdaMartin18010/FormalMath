@@ -61,6 +61,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # AG-VK-019: 分离与本征态射的 Valuative Criterion
@@ -294,3 +295,16 @@ theorem proper_valuative_criterion {X Y : Scheme} (f : X ⟶ Y) :
 **习题 1.2**。举例说明：非分离概形不满足Valuative Criterion的唯一性。
 
 *解答*：含双原点的直线 $\\mathbb{A}^1$：两个原点给出两个不同的 $R$-值点延拓。$\square$
+
+## 相关文档
+
+- [AG-VK-023-有限态射的整体与局部刻画](..\FOAG-深化\AG-VK-023-有限态射的整体与局部刻画.md)
+- [AG-VK-024-Weil除子与Cartier除子的等价理论](..\FOAG-深化\AG-VK-024-Weil除子与Cartier除子的等价理论.md)
+- [AG-VK-025-线丛与映射到射影空间](..\FOAG-深化\AG-VK-025-线丛与映射到射影空间.md)
+- [AG-VK-026-Serre对偶定理的完整陈述与应用](..\FOAG-深化\AG-VK-026-Serre对偶定理的完整陈述与应用.md)
+- [AG-VK-027-爆破的几何与代数](..\FOAG-深化\AG-VK-027-爆破的几何与代数.md)
+## 参考文献
+
+1. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+2. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+3. Eisenbud, D., & Harris, J. (2016). *Intersection Theory* (GTM 199). Springer. ISBN: 978-0387977164.

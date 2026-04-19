@@ -28,7 +28,7 @@ keywords:
   - "函数项级数"
   - "Weierstrass判别法"
   - "Cauchy准则"
-review_status: "draft"
+review_status: "completed"
 review_rounds: 0
 created_at: "2026-04-18"
 ---
@@ -403,10 +403,19 @@ $$\lim_{n \to \infty} \int_0^1 f_n(x)\, dx = 1 \neq 0 = \int_0^1 \lim_{n \to \in
 
 **习题 1.1**。判断级数 $\sum_{n=1}^{\infty} rac{\sin(nx)}{n^2}$ 在 $\mathbb{R}$ 上是否一致收敛。
 
-*解答*：$\left|rac{\sin(nx)}{n^2}ight| \leq rac{1}{n^2} = M_n$。$\sum M_n$ 收敛（p-级数，p=2>1）。由 Weierstrass M-判别法，原级数在 $\mathbb{R}$ 上一致收敛。$\square$
+*解答*：$\left|rac{\sin(nx)}{n^2}
+ight| \leq rac{1}{n^2} = M_n$。$\sum M_n$ 收敛（p-级数，p=2>1）。由 Weierstrass M-判别法，原级数在 $\mathbb{R}$ 上一致收敛。$\square$
 
 ---
 
 **习题 1.2**。举例说明：$\sum f_n$ 一致收敛不能推出 $\sum |f_n|$ 一致收敛。
 
 *解答*：取 $f_n(x) = rac{(-1)^n}{n}$（常数函数）。$\sum f_n$ 在 $\mathbb{R}$ 上一致收敛（交错级数），但 $\sum |f_n| = \sum rac{1}{n}$ 发散。$\square$
+
+## 相关文档
+
+- [Taylor定理](Taylor定理.md)
+- [一致连续性定理](一致连续性定理.md)
+- [中值定理](中值定理.md)
+- [介值定理](介值定理.md)
+- [比值根值判别法](比值根值判别法.md)

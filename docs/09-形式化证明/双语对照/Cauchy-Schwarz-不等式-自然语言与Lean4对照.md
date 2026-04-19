@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06 / 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -69,3 +70,7 @@ theorem cauchy_schwarz_rn {n : ℕ} (x y : Fin n → ℝ) :
 1. 在 Lean4 中证明：若 \(u, v\) 线性相关，则柯西-施瓦茨不等式取等号（提示：使用 `inner_eq_norm_mul_norm_iff`）。
 2. 利用柯西-施瓦茨不等式证明三角不等式：\(\|u + v\| \leq \|u\| + \|v\|\)。
 3. 写出积分形式的柯西-施瓦茨不等式的 Lean4 陈述（使用 `MeasureSpace` 和 `L²` 空间）。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

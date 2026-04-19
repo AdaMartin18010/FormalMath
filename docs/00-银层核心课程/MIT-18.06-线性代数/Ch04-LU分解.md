@@ -27,6 +27,7 @@ keywords:
 status: "draft"
 review_rounds: 0
 created_at: "2026-04-18"
+review_status: completed
 ---
 
 # Ch.4 LU 分解（LU Decomposition）
@@ -606,3 +607,11 @@ theorem pa_lu_for_invertible {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ)
 **习题 1.2**。说明为什么 $A = egin{pmatrix} 0 & 1 \ 1 & 0 \end{pmatrix}$ 没有不带行交换的 LU 分解。
 
 *解答*：$a_{11}=0$，无法作为主元进行消元，必须先进行行交换。$\square$
+
+## 相关文档
+
+- [Ch01-线性方程组的几何](Ch01-线性方程组的几何.md)
+- [Ch02-矩阵消元法](Ch02-矩阵消元法.md)
+- [Ch03-矩阵运算与逆矩阵](Ch03-矩阵运算与逆矩阵.md)
+- [Ch05-向量空间与子空间](Ch05-向量空间与子空间.md)
+- [Ch06-列空间与零空间](Ch06-列空间与零空间.md)

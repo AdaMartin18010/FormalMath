@@ -9,5 +9,3 @@ name = "FormalMathLean4"
 name = "mathlib"
 scope = "leanprover-community"
 version = "git#v4.19.0"
-
-

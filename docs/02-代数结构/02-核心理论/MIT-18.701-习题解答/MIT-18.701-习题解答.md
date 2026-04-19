@@ -59,6 +59,7 @@ references:
       name: zbMATH Open
       entry_url: "https://zbmath.org/?q=an:{zb_id}"
       consulted_at: 2026-04-17
+review_status: completed
 ---
 
 本文件为 MIT 18.701 抽象代数 I 的 Problem Sets 补充至少 15 道习题的详细解答，覆盖群论、同构定理、群作用、环论与唯一分解等核心主题。
@@ -202,3 +203,7 @@ $S_4$ 通过共轭作用于自身。所有对换构成一个轨道。取 $\sigma
 ---
 
 *以上共 15 道习题，覆盖 MIT 18.701 核心内容。*
+
+## 相关文档
+
+- [MIT-18.701-学习诊断手册](..\..\..\00-银层核心课程\MIT-18.701-抽象代数\MIT-18.701-学习诊断手册.md)

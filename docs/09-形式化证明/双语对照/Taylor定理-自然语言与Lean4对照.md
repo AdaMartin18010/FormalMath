@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -80,3 +81,7 @@ end TaylorTheorem
 1. 取 $n = 0$，验证 Taylor 定理退化为中值定理。
 2. 写出 $f(x) = e^x$ 在 $x_0 = 0$ 处的 $n$ 阶 Taylor 展开，并证明对任意固定 $x$，当 $n \to \infty$ 时余项趋于 0。
 3. 在 Lean4 中验证 $\sin(x)$ 在 $x_0 = 0$ 处的 3 阶 Taylor 展开：$\sin(x) = x - x^3/6 + R_4(x)$。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

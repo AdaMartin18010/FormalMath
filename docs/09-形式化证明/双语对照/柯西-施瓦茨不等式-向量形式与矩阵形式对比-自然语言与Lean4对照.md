@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -94,3 +95,7 @@ end CauchySchwarzComparison
 1. 利用柯西-施瓦茨不等式的求和形式证明：对任意实数 \(a_1, \dots, a_n\)，有 \((\sum a_i)^2 \leq n \sum a_i^2\)。
 2. 证明 Frobenius 内积确实满足内积的三个公理（正定性、对称性、双线性）。
 3. 在 Lean4 中完成 `cauchy_schwarz_frobenius` 的证明（提示：将 `Matrix (Fin m) (Fin n) ℝ` 等同于 `Fin n → Fin m → ℝ` 上的标准内积）。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

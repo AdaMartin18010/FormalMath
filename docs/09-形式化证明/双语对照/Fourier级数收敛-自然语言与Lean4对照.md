@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -78,3 +79,7 @@ theorem dirichlet_kernel_closed_form (N : ℕ) (x : ℝ) (hx : x ≠ 0) :
 1. 验证当 \(N = 0\) 时，Dirichlet 核 \(D_0(x) = 1\)。
 2. 写出 Parseval 等式的 Lean4 陈述：\(\sum_{n=-\infty}^{\infty} |c_n|^2 = \frac{1}{2\pi} \int_0^{2\pi} |f(x)|^2 dx\)。
 3. 解释为什么在间断点附近会出现 Gibbs 现象。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

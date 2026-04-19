@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06 / 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -93,3 +94,7 @@ end NumberTheoryExamples
 1. 在 Lean4 中证明 Wilson 定理：若 \(p\) 为素数，则 \((p-1)! \equiv -1 \pmod{p}\)。
 2. 计算 Legendre 符号 \(\left(\frac{7}{11}\right)\) 和 \(\left(\frac{11}{7}\right)\)，并手动验证二次互反律。
 3. 解释为什么 Euler 定理是 Fermat 小定理的推广。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

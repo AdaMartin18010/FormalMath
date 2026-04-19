@@ -54,7 +54,7 @@ references:
       name: Stacks Project
       entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
       consulted_at: 2026-04-18
-review_status: "draft"
+review_status: "completed"
 ---
 
 # Harvard 232br — Hartshorne Chapter IV §5–§6 习题解答

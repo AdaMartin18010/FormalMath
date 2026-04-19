@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -72,3 +73,7 @@ end GaussianElimination
    $$\begin{cases} x + 2y + z = 4 \\ 2x + y - z = 3 \\ x - y + 2z = 1 \end{cases}$$
 2. 证明：初等行变换不改变矩阵的行空间（row space），从而不改变矩阵的秩。
 3. 在 Lean4 中验证：一个 $3 \times 3$ 上三角矩阵的秩等于其对角线非零元的个数。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

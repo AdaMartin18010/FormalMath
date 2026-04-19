@@ -50,6 +50,7 @@ msc_primary: 14A99
       name: zbMATH Open
       entry_url: "https://zbmath.org/?q=an:{zb_id}"
       consulted_at: 2026-04-17
+review_status: draft
 ---
 
 # AG-EX-015: 代数几何与数论

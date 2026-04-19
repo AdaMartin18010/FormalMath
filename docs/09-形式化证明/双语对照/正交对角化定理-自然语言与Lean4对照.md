@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -82,3 +83,7 @@ end SpectralTheoremRealSymmetric
 1. 证明：实对称矩阵不同特征值对应的特征向量必然正交。
 2. 写出一个 \(2 \times 2\) 实对称矩阵 \(A = \begin{pmatrix} a & b \\ b & d \end{pmatrix}\) 的特征值显式公式，并构造正交对角化 \(A = QDQ^{\mathsf{T}}\)。
 3. 在 Lean4 中验证：若 \(A\) 是实对称矩阵且正定，则其所有特征值严格大于 0。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "通用"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -82,3 +83,7 @@ end GreenTheorem
 1. 取 $P = -y/2, Q = x/2$，利用 Green 定理推导平面区域 $D$ 的面积公式 $A = \frac{1}{2} \oint_{\partial D} (x\,dy - y\,dx)$。
 2. 用上述面积公式计算椭圆 $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ 所围区域的面积。
 3. 验证：若 $P\,dx + Q\,dy$ 是闭形式（即 $\partial Q/\partial x = \partial P/\partial y$）且在单连通区域上成立，则它是恰当形式（存在势函数 $F$ 使得 $dF = P\,dx + Q\,dy$）。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

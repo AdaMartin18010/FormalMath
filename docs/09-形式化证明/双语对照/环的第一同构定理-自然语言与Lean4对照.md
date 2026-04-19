@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -66,3 +67,7 @@ example (φ : R →+* S) : Subring S := φ.range
 1. 利用环的第一同构定理证明：\(\mathbb{Z}[x]/(x) \cong \mathbb{Z}\)。
 2. 证明：若 \(I, J\) 是交换环 \(R\) 的理想且 \(I + J = R\)，则 \(R/(I \cap J) \cong R/I \times R/J\)（中国剩余定理的环版本）。
 3. 在 Lean4 中验证：自然投影 \(\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}\) 的核是由 \(n\) 生成的主理想。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

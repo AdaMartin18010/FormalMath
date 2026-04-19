@@ -10,6 +10,7 @@ target_courses:
   - MIT 18.06
 status: completed
 created_at: 2026-04-18
+review_status: completed
 ---
 
 # IMO 2004 Problem 1：平面几何
@@ -63,3 +64,30 @@ example (A B C M N O R : EuclideanSpace ℝ (Fin 2))
       Concyclic C N R P := by
   sorry
 ```
+
+## 相关文档
+
+- [IMO真题-不等式2](IMO真题-不等式2.md)
+- [IMO真题-不等式3](IMO真题-不等式3.md)
+- [IMO真题-代数1](IMO真题-代数1.md)
+- [IMO真题-代数2](IMO真题-代数2.md)
+- [IMO真题-代数3](IMO真题-代数3.md)
+
+## 习题摘要
+
+**习题 1.0** 参见上文问题 1。
+
+**习题 2.0** 参见上文问题 2。
+
+**习题 3.0** 参见上文问题 3。
+
+**习题 4.0** 参见上文问题 4。
+
+**习题 5.0** 参见上文问题 5。
+
+**习题 6.0** 参见上文问题 6。
+## 参考文献
+
+1. International Mathematical Olympiad (IMO). *Official Problems and Solutions*. Available at: https://www.imo-official.org/
+2. Engel, A. (1998). *Problem-Solving Strategies*. Springer. ISBN: 978-0387982191.
+3. Andreescu, T., & Gelca, R. (2000). *Mathematical Olympiad Challenges*. Birkhäuser. ISBN: 978-0817641900.

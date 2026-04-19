@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A / 18.101"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -76,3 +77,7 @@ theorem inverse_function_rn {n : ℕ} {f : (Fin n → ℝ) → (Fin n → ℝ)} 
 1. 说明为什么逆函数定理要求 \(Df(a)\) 可逆，而不仅仅是满秩。
 2. 在 Lean4 中写出极坐标变换 \(f(r, \theta) = (r\cos\theta, r\sin\theta)\) 在非原点处的 Jacobian，并验证其可逆性。
 3. 解释 `HasStrictFDerivAt` 与普通的 `HasFDerivAt` 在数学上的区别。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

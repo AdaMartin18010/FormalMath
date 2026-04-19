@@ -28,6 +28,7 @@ keywords:
 status: "draft"
 review_rounds: 0
 created_at: "2026-04-18"
+review_status: completed
 ---
 
 # Ch.15 SVD与线性变换（SVD & Linear Transformations）
@@ -652,3 +653,11 @@ theorem change_of_basis_formula (𝕜 : Type*) [Field 𝕜] {V W : Type*}
 **习题 1.2**。证明：任意 $m	imes n$ 矩阵 $A$ 的伪逆 $A^+$ 满足 $AA^+A = A$。
 
 *解答*：由 SVD $A=U\Sigma V^T$，$A^+=V\Sigma^+U^T$。$AA^+A = U\Sigma V^T V\Sigma^+U^T U\Sigma V^T = U\Sigma\Sigma^+\Sigma V^T = U\Sigma V^T = A$。$\square$
+
+## 相关文档
+
+- [Ch01-线性方程组的几何](Ch01-线性方程组的几何.md)
+- [Ch02-矩阵消元法](Ch02-矩阵消元法.md)
+- [Ch03-矩阵运算与逆矩阵](Ch03-矩阵运算与逆矩阵.md)
+- [Ch04-LU分解](Ch04-LU分解.md)
+- [Ch05-向量空间与子空间](Ch05-向量空间与子空间.md)

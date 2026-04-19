@@ -34,7 +34,7 @@ references:
       name: "Stacks Project"
       entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
       consulted_at: "2026-04-18"
-review_status: "draft"
+review_status: "completed"
 created_at: 2026-04-18
 ---
 
@@ -319,3 +319,10 @@ example : True := by trivial
 **习题 1.2**。在 $\\mathbb{P}^1$ 上，$\\deg K = -2$。验证 Riemann-Roch 定理对 $D=nP$（$P$ 为点，$n\\geq 0$）成立。
 
 *解答*：$l(nP)=n+1$（$1,x,\\dots,x^n$），$l(K-nP)=0$（因 $\\deg(K-nP)<0$）。$n+1-0=n+1-0+1$，即 $n+1=n+1$。$\square$
+
+## 相关文档
+
+- [Ch23-25-smooth-étale-flat态射](Ch23-25-smooth-étale-flat态射.md)
+- [Ch26-27-对偶理论](Ch26-27-对偶理论.md)
+- [Ch28-29-上同调与基变换](Ch28-29-上同调与基变换.md)
+- [PartVI-L5-习题2](PartVI-L5-习题2.md)

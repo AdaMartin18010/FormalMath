@@ -54,7 +54,7 @@ references:
       name: Stacks Project
       entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
       consulted_at: 2026-04-18
-review_status: "draft"
+review_status: "completed"
 created_at: 2026-04-18
 ---
 
@@ -1002,3 +1002,11 @@ theorem enriques_criterion_kodaira :
 **习题 1.2**。陈述Castelnuovo判别法：何时一个曲面是有理曲面？
 
 *解答*：Castelnuovo：光滑射影曲面 $S$ 是有理曲面当且仅当 $q = P_2 = 0$（其中 $q = h^1(\\mathcal{O}_S)$，$P_2 = h^0(2K_S)$）。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层-续](II.5-模与层-续.md)

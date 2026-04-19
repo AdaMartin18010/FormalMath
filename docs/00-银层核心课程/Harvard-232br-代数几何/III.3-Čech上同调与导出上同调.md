@@ -18,7 +18,7 @@ target_courses:
   - "Harvard 232br"
 msc_primary: 14
 processed_at: '2026-04-18'
-review_status: "draft"
+review_status: "completed"
 references:
   textbooks:
     - id: hartshorne_ag
@@ -637,3 +637,11 @@ theorem serreVanishing {k : Type*} [Field k]
 **习题 1.2**。用Čech上同调计算 $H^1(\\mathbb{P}^1, \\mathcal{O})$。
 
 *解答*：取标准仿射覆盖 $\\mathbb{P}^1 = U_0 \\cup U_1$。Čech复形：$\\check{C}^0 = \\mathcal{O}(U_0) \\oplus \\mathcal{O}(U_1) = k[x] \\oplus k[x^{-1}]$，$\\check{C}^1 = \\mathcal{O}(U_0 \\cap U_1) = k[x, x^{-1}]$。差分映射 $\\delta(f,g) = g - f$。$\\ker\\delta$ 中的元素是同时在 $U_0$ 和 $U_1$ 正则的函数，即常数。$\\operatorname{im}\\delta = k[x] + k[x^{-1}]$。$H^1 = k[x,x^{-1}]/(k[x]+k[x^{-1}]) = 0$（因任何Laurent多项式可分解为正幂和负幂部分）。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层-续](II.5-模与层-续.md)

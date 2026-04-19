@@ -9,6 +9,7 @@ target_courses:
   - MIT 18.02
 status: completed
 created_at: 2026-04-18
+review_status: completed
 ---
 
 # Ch10 Green定理、Stokes定理与散度定理
@@ -157,8 +158,21 @@ $$\oint_{\partial S} \mathbf{F} \cdot d\mathbf{r} = \int_0^{2\pi} (-\sin^2 t) \,
 *解答*：$\nabla \cdot \mathbf{F} = 1 + 1 + 1 = 3$。
 $$\iiint_B 3 \, dV = 3 \cdot \frac{4}{3}\pi R^3 = 4\pi R^3$$$\square$
 
-**参考文献**
+**## 相关文档
+
+- [Ch01-向量与向量运算](Ch01-向量与向量运算.md)
+- [Ch02-点积与叉积](Ch02-点积与叉积.md)
+- [Ch03-空间直线与平面](Ch03-空间直线与平面.md)
+- [Ch04-多元函数与偏导数](Ch04-多元函数与偏导数.md)
+- [Ch05-梯度与方向导数](Ch05-梯度与方向导数.md)
+
+参考文献**
 
 1. Stewart, J. *Multivariable Calculus*. Cengage Learning, 2015.
 2. Marsden, J. E. & Tromba, A. J. *Vector Calculus*. W. H. Freeman, 2011.
 3. Spivak, M. *Calculus on Manifolds*. W. A. Benjamin, 1965.
+## 参考文献
+
+1. Stewart, J. (2015). *Calculus: Early Transcendentals* (8th ed.). Cengage Learning. ISBN: 978-1285741550.
+2. Marsden, J. E., & Tromba, A. (2013). *Vector Calculus* (6th ed.). W. H. Freeman. ISBN: 978-1429215084.
+3. Edwards, C. H., & Penney, D. E. (2002). *Multivariable Calculus* (6th ed.). Prentice Hall. ISBN: 978-0130339676.

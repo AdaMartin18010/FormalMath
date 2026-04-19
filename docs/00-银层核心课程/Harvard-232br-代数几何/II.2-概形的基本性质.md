@@ -62,6 +62,7 @@ references:
 target_courses: [FormalMath银层核心课程, 代数几何]
 status: completed
 created_at: 2026-04-18
+review_status: completed
 ---
 
 # Harvard 232br - Hartshorne Chapter II §2 习题解答
@@ -364,3 +365,16 @@ def specZeroIsInitial : IsInitial (Spec (CommRingCat.of PUnit)) :=
 **习题 1.2**。描述 $\\mathbb{A}^1_\\mathbb{C} = \\operatorname{Spec} \\mathbb{C}[x]$ 的闭点和generic point。
 
 *解答*：闭点对应极大理想 $(x-a)$（$a\\in\\mathbb{C}$），即复平面上的点。Generic point 对应零理想 $(0)$。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层-续](II.5-模与层-续.md)
+- [II.5-模与层](II.5-模与层.md)
+## 参考文献
+
+1. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+2. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+3. Liu, Q. (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press. ISBN: 978-0198502845.

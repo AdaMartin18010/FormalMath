@@ -377,3 +377,21 @@ processed_at: '2026-04-20'
 **覆盖范围**: MIT 18.100A Ch.0–Ch.6
 **错误模式数量**: 25个（超过银层标准20个/章）
 **状态**: 持续推进中
+
+## 相关文档
+
+- [01-确界原理与Archimedean性质](MIT-18.100A\01-确界原理与Archimedean性质.md)
+- [02-介值定理](MIT-18.100A\02-介值定理.md)
+- [03-一致连续性](MIT-18.100A\03-一致连续性.md)
+- [04-中值定理](MIT-18.100A\04-中值定理.md)
+- [05-比较判别法与比值根值判别法](MIT-18.100A\05-比较判别法与比值根值判别法.md)
+---
+**参考文献**
+
+1. Rudin, W. *Principles of Mathematical Analysis*. McGraw-Hill, 3rd ed., 1976.
+2. Abbott, S. *Understanding Analysis*. Springer, 2nd ed., 2015.
+## 参考文献
+
+1. Rudin, W. (1976). *Principles of Mathematical Analysis* (3rd ed.). McGraw-Hill. ISBN: 978-0070542358.
+2. Tao, T. (2006). *Analysis I*. Hindustan Book Agency. ISBN: 978-8185931623.
+3. Abbott, S. (2015). *Understanding Analysis* (2nd ed.). Springer. ISBN: 978-1493927111.

@@ -18,7 +18,7 @@ target_courses:
   - "Harvard 232br"
 msc_primary: 14
 processed_at: '2026-04-18'
-review_status: "draft"
+review_status: "completed"
 references:
   textbooks:
     - id: hartshorne_ag
@@ -638,3 +638,11 @@ theorem Ext1_locallyFree_tensor {X : Scheme}
 **习题 1.2**。陈述Kodaira消失定理，并说明其在代数几何中的重要性。
 
 *解答*：Kodaira消失：设 $X$ 是光滑射影簇，$\\mathcal{L}$ 是丰富线丛，则 $H^i(X, K_X \\otimes \\mathcal{L}) = 0$（$i > 0$）。重要性：提供计算上同调的强大工具，是Enriques-Kodaira分类的基础。$\square$
+
+## 相关文档
+
+- [II.1-层的基本性质](II.1-层的基本性质.md)
+- [II.2-概形的基本性质](II.2-概形的基本性质.md)
+- [II.3-态射性质](II.3-态射性质.md)
+- [II.4-分离性与本征性](II.4-分离性与本征性.md)
+- [II.5-模与层-续](II.5-模与层-续.md)

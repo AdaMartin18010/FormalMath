@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -76,3 +77,7 @@ theorem leftCoset_card_eq_subgroup_card {G : Type u} [Group G] [Fintype G]
 1. 利用拉格朗日定理证明：有限群 \(G\) 中任意元素 \(a\) 的阶整除 \(|G|\)。
 2. 证明：若 \(|G| = p\) 为素数，则 \(G\) 是循环群。
 3. 在 Lean4 中验证：对称群 \(S_3\) 的阶为 \(6\)，其子群 \(A_3\) 的阶为 \(3\)，满足拉格朗日定理。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

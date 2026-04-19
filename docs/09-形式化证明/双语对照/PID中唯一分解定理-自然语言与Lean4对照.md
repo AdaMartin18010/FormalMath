@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -63,3 +64,7 @@ end UniqueFactorizationInPID
 1. 在 Lean4 中验证：多项式环 \(\mathbb{Q}[x]\) 是 UFD。
 2. 证明：在主理想整环中，每个非零素理想都是极大理想。
 3. 解释为什么 \(\mathbb{Z}[\sqrt{-5}]\) 不是 UFD（提示：考虑 \(6 = 2 \cdot 3 = (1+\sqrt{-5})(1-\sqrt{-5})\)）。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

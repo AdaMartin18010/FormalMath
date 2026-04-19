@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -70,3 +71,7 @@ end SeriesConvergenceTests
 1. 判断 $\sum_{n=1}^\infty \frac{n^2}{2^n}$ 的收敛性，并在 Lean4 中尝试用比值判别法验证。
 2. 判断 $\sum_{n=1}^\infty \frac{1}{(\ln n)^n}$（$n \geq 2$）的收敛性，说明为何根值判别法特别有效。
 3. 构造一个级数使得比值判别法失效（$L = 1$）但根值判别法可以判定收敛。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

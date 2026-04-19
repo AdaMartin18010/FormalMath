@@ -55,6 +55,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # Weierstrass M-判别法
@@ -260,3 +261,16 @@ $$|a_n x^n| \leq |a_n| r^n = |a_n x_0^n| \cdot \left(\frac{r}{x_0}\right)^n \leq
 **习题 1.2**。设 $\\sum M_n$ 收敛且 $|f_n(x)| \\leq M_n$ 对所有 $x$。证明 $\\sum f_n$ 绝对收敛且一致收敛。
 
 *解答*：绝对收敛由比较判别法；一致收敛由 M-判别法（即 Weierstrass M-判别法）。$\\square$
+
+## 相关文档
+
+- [MIT-18.100A-学习诊断手册](..\MIT-18.100A-学习诊断手册.md)
+- [01-确界原理与Archimedean性质](01-确界原理与Archimedean性质.md)
+- [02-介值定理](02-介值定理.md)
+- [03-一致连续性](03-一致连续性.md)
+- [04-中值定理](04-中值定理.md)
+## 参考文献
+
+1. Rudin, W. (1976). *Principles of Mathematical Analysis* (3rd ed.). McGraw-Hill. ISBN: 978-0070542358.
+2. Tao, T. (2006). *Analysis I*. Hindustan Book Agency. ISBN: 978-8185931623.
+3. Abbott, S. (2015). *Understanding Analysis* (2nd ed.). Springer. ISBN: 978-1493927111.

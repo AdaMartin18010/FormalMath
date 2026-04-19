@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -79,3 +80,7 @@ end Eigenvalues
 1. 在 Lean4 中证明：对任意 \(2 \times 2\) 矩阵，\(\det(A^T) = \det(A)\)。
 2. 验证旋转矩阵 \(\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}\) 的行列式为 \(1\)。
 3. 利用 `LinearMap.finrank_range_add_finrank_ker` 解释为什么单射线性映射保持维数（当 \(V = W\) 时）。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

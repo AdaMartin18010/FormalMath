@@ -55,6 +55,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # Taylor 定理（Taylor's Theorem）
@@ -303,3 +304,16 @@ $$f(x) \neq \sum_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!}x^k = 0$$
 **习题 1.2**。用 Taylor 展开估计 $\\sqrt{e}$ 的误差小于 $0.001$ 所需的最小阶数。
 
 *解答*：$e^x = 1 + x + \\frac{x^2}{2!} + \\cdots$。在 $x=1/2$ 处，余项 $R_n = \\frac{e^c}{(n+1)!}(1/2)^{n+1} \\leq \\frac{e}{(n+1)!2^{n+1}}$。$n=4$ 时 $R_4 < 0.001$。$\\square$
+
+## 相关文档
+
+- [MIT-18.100A-学习诊断手册](..\MIT-18.100A-学习诊断手册.md)
+- [01-确界原理与Archimedean性质](01-确界原理与Archimedean性质.md)
+- [02-介值定理](02-介值定理.md)
+- [03-一致连续性](03-一致连续性.md)
+- [04-中值定理](04-中值定理.md)
+## 参考文献
+
+1. Rudin, W. (1976). *Principles of Mathematical Analysis* (3rd ed.). McGraw-Hill. ISBN: 978-0070542358.
+2. Tao, T. (2006). *Analysis I*. Hindustan Book Agency. ISBN: 978-8185931623.
+3. Abbott, S. (2015). *Understanding Analysis* (2nd ed.). Springer. ISBN: 978-1493927111.

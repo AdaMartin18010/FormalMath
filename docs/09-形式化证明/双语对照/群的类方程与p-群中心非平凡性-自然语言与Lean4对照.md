@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -76,3 +77,7 @@ end ClassEquationTheorem
 1. 利用类方程证明：每个 \(p^2\) 阶群都是交换群。
 2. 设 \(G\) 是有限群，\(p\) 是整除 \(|G|\) 的最小素因子。证明：若 \(H \leq G\) 且 \([G:H] = p\)，则 \(H \trianglelefteq G\)。
 3. 在 Lean4 中写出轨道-稳定化子定理的陈述（提示：使用 `MulAction.orbit` 与 `MulAction.stabilizer`）。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

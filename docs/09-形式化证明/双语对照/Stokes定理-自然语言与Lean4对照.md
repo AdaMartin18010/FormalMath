@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "通用"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -85,3 +86,7 @@ Stokes 定理深刻之处在于它将**局部的微分信息**（$d\omega$）与
 1. 说明当 $n=1$ 时，Stokes 定理如何退化为微积分基本定理 $\int_a^b f'(x)\,dx = f(b) - f(a)$。
 2. 说明当 $n=2$ 时，Stokes 定理如何给出 Green 定理。
 3. 设 $M$ 是无边界的紧致定向 $n$ 维流形，$\omega$ 是 $(n-1)$-形式，利用 Stokes 定理证明 $\int_M d\omega = 0$。这在 de Rham 上同调中有何意义？
+---
+**参考文献**
+
+1. 相关教材与学术论文。

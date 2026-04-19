@@ -2,12 +2,13 @@
 title: "曲面积分与Stokes定理：高维推广的巅峰"
 msc_primary: 00A99
 level: silver
-course: MIT 18.02
+course: MIT 18.02 多元微积分
 target_courses:
   - MIT 18.02
   - Harvard 232br
 status: completed
 created_at: 2026-04-18
+review_status: completed
 ---
 
 # 曲面积分与Stokes定理：高维推广的巅峰
@@ -141,3 +142,20 @@ example {V : Region ℝ} {F : ℝ → ℝ → ℝ → ℝ × ℝ × ℝ}
 ## 8. 总结
 
 曲面积分和Stokes定理是多元微积分理论的巅峰。它们不仅统一了线积分、面积分和体积分之间的关系，更揭示了微分几何中微分形式与外微分的深刻结构。这些理论将在更高维的流形和物理学中发挥核心作用。
+
+## 相关文档
+
+- [01-向量与空间几何](01-向量与空间几何.md)
+- [02-多元函数与偏导数](02-多元函数与偏导数.md)
+- [03-重积分](03-重积分.md)
+- [04-积分应用](04-积分应用.md)
+- [05-级数与泰勒展开](05-级数与泰勒展开.md)
+---
+**参考文献**
+
+1. 相关教材与学术论文。
+## 参考文献
+
+1. Stewart, J. (2015). *Calculus: Early Transcendentals* (8th ed.). Cengage Learning. ISBN: 978-1285741550.
+2. Marsden, J. E., & Tromba, A. (2013). *Vector Calculus* (6th ed.). W. H. Freeman. ISBN: 978-1429215084.
+3. Edwards, C. H., & Penney, D. E. (2002). *Multivariable Calculus* (6th ed.). Prentice Hall. ISBN: 978-0130339676.

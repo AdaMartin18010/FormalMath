@@ -34,7 +34,7 @@ references:
       name: "Stacks Project"
       entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
       consulted_at: "2026-04-18"
-review_status: "draft"
+review_status: "completed"
 created_at: 2026-04-18
 ---
 
@@ -320,3 +320,10 @@ example : True := by trivial
 **习题 1.2**。计算 $\\mathbb{P}^2$ 上 $\\mathcal{O}(n)$ 的上同调群 $H^i(\\mathbb{P}^2,\\mathcal{O}(n))$ 对所有 $i,n$。
 
 *解答*：$H^0=\\binom{n+2}{2}$（$n\\geq 0$），$H^1=0$（对所有 $n$），$H^2=H^0(\\mathcal{O}(-n-3))^\\vee$。$\square$
+
+## 相关文档
+
+- [Ch23-25-smooth-étale-flat态射](Ch23-25-smooth-étale-flat态射.md)
+- [Ch26-27-对偶理论](Ch26-27-对偶理论.md)
+- [Ch28-29-上同调与基变换](Ch28-29-上同调与基变换.md)
+- [PartVI-L5-习题1](PartVI-L5-习题1.md)

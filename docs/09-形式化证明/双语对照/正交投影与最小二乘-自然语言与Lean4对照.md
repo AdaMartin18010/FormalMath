@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -74,3 +75,7 @@ end OrthogonalProjection
 1. 在 $\mathbb{R}^3$ 中，求向量 $v = (1, 2, 3)^T$ 在平面 $W = \{(x, y, z) : x + y + z = 0\}$ 上的正交投影。
 2. 设 $A = \begin{pmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 3 \end{pmatrix}$，$b = \begin{pmatrix} 1 \\ 2 \\ 2 \end{pmatrix}$，求最小二乘解 $\hat{x}$。
 3. 证明：若 $A$ 列满秩，则 $A^T A$ 是正定矩阵，从而可逆。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

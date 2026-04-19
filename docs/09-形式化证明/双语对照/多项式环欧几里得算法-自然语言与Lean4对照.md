@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -83,3 +84,7 @@ end PolynomialEuclideanAlgorithm
 1. 在 $\mathbb{Q}[x]$ 中，对 $f(x) = x^3 - 2x^2 + x - 2$ 和 $g(x) = x^2 - 1$ 执行带余除法，求 $q(x)$ 和 $r(x)$。
 2. 证明：在域 $k$ 上，$k[x]$ 中的理想都是主理想，从而 $k[x]$ 是主理想整环（PID）。
 3. 设 $f, g \in \mathbb{R}[x]$ 互素，证明存在多项式 $u, v \in \mathbb{R}[x]$ 使得 $u f + v g = 1$。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

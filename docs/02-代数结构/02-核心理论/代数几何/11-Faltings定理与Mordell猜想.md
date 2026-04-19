@@ -60,6 +60,7 @@ references:
       name: zbMATH Open
       entry_url: "https://zbmath.org/?q=an:{zb_id}"
       consulted_at: 2026-04-17
+review_status: draft
 ---
 # 11 Faltings定理与Mordell猜想 / Faltings' Theorem and the Mordell Conjecture
 

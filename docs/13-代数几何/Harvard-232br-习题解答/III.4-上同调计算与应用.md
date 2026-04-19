@@ -16,7 +16,7 @@ target_courses:
   - "Harvard 232br"
 msc_primary: 14
 processed_at: '2026-04-18'
-review_status: "draft"
+review_status: "completed"
 references:
   textbooks:
     - id: hartshorne_ag

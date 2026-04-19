@@ -60,6 +60,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # AG-VK-028: 椭圆曲线的群结构
@@ -284,3 +285,16 @@ example (E : WeierstrassCurve k) (P Q : E) :
 **习题 1.2**。计算椭圆曲线 $E: y^2 = x^3 + 1$ 上的2-挠点（2-torsion points）。
 
 *解答*：2-挠点满足 $P = -P$，即切线在 $P$ 处与 $E$ 交于 $O$。对Weierstrass方程，2-挠点是 $y=0$ 的解：$x^3+1=0$，即 $x=-1, \\omega, \\omega^2$（$\\omega=e^{2\\pi i/3}$），加上 $O$。共4个2-挠点，$E[2] \\cong \\mathbb{Z}/2 \\times \\mathbb{Z}/2$。$\square$
+
+## 相关文档
+
+- [AG-VK-023-有限态射的整体与局部刻画](AG-VK-023-有限态射的整体与局部刻画.md)
+- [AG-VK-024-Weil除子与Cartier除子的等价理论](AG-VK-024-Weil除子与Cartier除子的等价理论.md)
+- [AG-VK-025-线丛与映射到射影空间](AG-VK-025-线丛与映射到射影空间.md)
+- [AG-VK-026-Serre对偶定理的完整陈述与应用](AG-VK-026-Serre对偶定理的完整陈述与应用.md)
+- [AG-VK-027-爆破的几何与代数](AG-VK-027-爆破的几何与代数.md)
+## 参考文献
+
+1. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+2. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+3. Eisenbud, D., & Harris, J. (2016). *Intersection Theory* (GTM 199). Springer. ISBN: 978-0387977164.

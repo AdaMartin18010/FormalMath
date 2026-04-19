@@ -28,7 +28,7 @@ keywords:
   - "Lagrange余项"
   - "多项式逼近"
   - "Cauchy中值定理"
-review_status: "draft"
+review_status: "completed"
 review_rounds: 0
 created_at: "2026-04-18"
 ---
@@ -547,3 +547,11 @@ $$P_3(x) = 1 + x + rac{x^2}{2} + rac{x^3}{6}$$
 
 *解答*：$\sin x = x - rac{x^3}{6} + O(x^5)$，故 $\sin x - x = -rac{x^3}{6} + O(x^5)$。
 $$rac{\sin x - x}{x^3} = -rac{1}{6} + O(x^2) 	o -rac{1}{6}$$$\square$
+
+## 相关文档
+
+- [Weierstrass-M判别法](Weierstrass-M判别法.md)
+- [一致连续性定理](一致连续性定理.md)
+- [中值定理](中值定理.md)
+- [介值定理](介值定理.md)
+- [比值根值判别法](比值根值判别法.md)

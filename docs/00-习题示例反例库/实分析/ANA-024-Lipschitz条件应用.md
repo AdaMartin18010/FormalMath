@@ -9,7 +9,7 @@ type: PRF
 topic: 实分析
 subtopic: 连续性应用
 source:
-  course: MIT 18.100A
+  course: MIT 18.100A Real Analysis
   chapter: "4.3"
   original: true
 processed_at: '2026-04-09'

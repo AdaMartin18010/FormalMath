@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -97,3 +98,7 @@ theorem firstIsomorphism_bijective {G H : Type*} [Group G] [Group H]
 1. 利用第一同构定理证明：\(|G| = |\ker(\varphi)| \cdot |\operatorname{im}(\varphi)|\)。
 2. 证明第二同构定理（对应定理）：若 \(N \trianglelefteq G\)，\(H \leq G\)，则 \(HN/N \cong H/(H \cap N)\)。
 3. 在 Lean4 中，验证同态 \(\det: GL_n(\mathbb{R}) \to \mathbb{R}^*\) 的核为 \(SL_n(\mathbb{R})\)，并由此得到 \(GL_n(\mathbb{R})/SL_n(\mathbb{R}) \cong \mathbb{R}^*\)。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

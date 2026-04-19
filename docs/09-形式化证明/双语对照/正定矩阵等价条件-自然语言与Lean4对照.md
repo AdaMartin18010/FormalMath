@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -72,3 +73,7 @@ end PositiveDefiniteMatrix
 1. 判断矩阵 $A = \begin{pmatrix} 2 & -1 \\ -1 & 2 \end{pmatrix}$ 是否正定，用三种不同方法验证。
 2. 证明：若 $A$ 正定，则 $A^{-1}$ 也正定。
 3. 设 $A$ 是 $n \times n$ 正定矩阵，$x, y \in \mathbb{R}^n$，定义 $\langle x, y \rangle_A = x^T A y$。证明这是 $\mathbb{R}^n$ 上的一个合法内积。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

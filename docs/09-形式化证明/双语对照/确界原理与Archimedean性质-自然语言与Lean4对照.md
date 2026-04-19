@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.100A"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -71,3 +72,7 @@ end SupremumPrinciple
 1. 证明：若 $S = \{1 - 1/n : n \in \mathbb{N}^+\}$，则 $\sup S = 1$ 且 $\inf S = 0$。
 2. 利用 Archimedean 性质证明：对任意 $\varepsilon > 0$，存在 $n \in \mathbb{N}$ 使得 $1/n < \varepsilon$。
 3. 在 Lean4 中证明：集合 $\{q \in \mathbb{Q} : q^2 < 2\}$ 在 $\mathbb{Q}$ 中没有上确界（从而说明确界原理对有理数不成立）。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

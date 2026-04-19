@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.06 / 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -62,3 +63,7 @@ theorem cayley_hamilton_2x2 {R : Type u} [CommRing R] (A : Matrix (Fin 2) (Fin 2
 1. 在 Lean4 中验证矩阵 \(A = \begin{pmatrix}1 & 2 \\ 3 & 4\end{pmatrix}\) 满足其特征方程。
 2. 利用 Cayley-Hamilton 定理证明：若 \(A\) 可逆，则 \(A^{-1}\) 可以表示为 \(A\) 的多项式。
 3. 写出 `Matrix.eval_self_charpoly` 与 `Matrix.aeval_self_charpoly` 在数学意义上的区别。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

@@ -58,6 +58,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # AG-VK-026: Serre 对偶定理的完整陈述与应用
@@ -273,3 +274,16 @@ example {C : Scheme} [IsCurve C] (L : LineBundle C) :
 **习题 1.2**。陈述Serre对偶在光滑射影曲线上的特殊形式。
 
 *解答*：对曲线 $C$ 上的除子 $D$，$H^1(C, \\mathcal{O}(D)) \\cong H^0(C, \\mathcal{O}(K-D))^\\vee$。这就是经典Riemann-Roch定理中的对偶项。$\square$
+
+## 相关文档
+
+- [AG-VK-023-有限态射的整体与局部刻画](AG-VK-023-有限态射的整体与局部刻画.md)
+- [AG-VK-024-Weil除子与Cartier除子的等价理论](AG-VK-024-Weil除子与Cartier除子的等价理论.md)
+- [AG-VK-025-线丛与映射到射影空间](AG-VK-025-线丛与映射到射影空间.md)
+- [AG-VK-027-爆破的几何与代数](AG-VK-027-爆破的几何与代数.md)
+- [AG-VK-028-椭圆曲线的群结构](AG-VK-028-椭圆曲线的群结构.md)
+## 参考文献
+
+1. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+2. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+3. Eisenbud, D., & Harris, J. (2016). *Intersection Theory* (GTM 199). Springer. ISBN: 978-0387977164.

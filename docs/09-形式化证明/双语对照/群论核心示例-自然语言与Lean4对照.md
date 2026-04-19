@@ -5,6 +5,7 @@ level: "silver"
 target_courses:
   - "MIT 18.701"
 date: "2026-04-17"
+review_status: completed
 ---
 
 本文档为 MIT 18.701 抽象代数 I 的群论核心定理提供自然语言与 Lean4 的双语对照，覆盖拉格朗日定理、第一同构定理、Cauchy 定理、轨道-稳定子定理与 Sylow 第一定理。
@@ -316,3 +317,7 @@ end SylowFirstTheorem
 - `Quotient.inductionOn₂'` / `Quotient.liftOn'`：在商群/商环上进行定义和归纳的核心工具。
 - `infer_instance`：让 Lean 自动搜索并应用类型类实例（如群结构、UFD 实例）。
 - `simp` / `group` / `ring`：自动化简化策略，分别用于一般代数简化、群论恒等式、环论恒等式。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

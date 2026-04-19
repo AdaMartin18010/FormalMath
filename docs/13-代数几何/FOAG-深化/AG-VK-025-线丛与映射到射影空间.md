@@ -60,6 +60,7 @@ references:
     name: zbMATH Open
     entry_url: https://zbmath.org/?q=an:{zb_id}
     consulted_at: 2026-04-17
+review_status: completed
 ---
 
 # AG-VK-025: 线丛与映射到射影空间
@@ -253,3 +254,16 @@ example : L.IsVeryAmple ↔
 **习题 1.2**。描述 $\\mathcal{O}(1)$ 在 $\\mathbb{P}^n$ 上的整体截面与超平面的对应关系。
 
 *解答*：$H^0(\\mathbb{P}^n, \\mathcal{O}(1))$ 的基对应齐次坐标 $x_0,\\dots,x_n$。每个截面 $\\sum a_i x_i = 0$ 定义一个超平面。$\square$
+
+## 相关文档
+
+- [AG-VK-023-有限态射的整体与局部刻画](AG-VK-023-有限态射的整体与局部刻画.md)
+- [AG-VK-024-Weil除子与Cartier除子的等价理论](AG-VK-024-Weil除子与Cartier除子的等价理论.md)
+- [AG-VK-026-Serre对偶定理的完整陈述与应用](AG-VK-026-Serre对偶定理的完整陈述与应用.md)
+- [AG-VK-027-爆破的几何与代数](AG-VK-027-爆破的几何与代数.md)
+- [AG-VK-028-椭圆曲线的群结构](AG-VK-028-椭圆曲线的群结构.md)
+## 参考文献
+
+1. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
+2. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
+3. Eisenbud, D., & Harris, J. (2016). *Intersection Theory* (GTM 199). Springer. ISBN: 978-0387977164.

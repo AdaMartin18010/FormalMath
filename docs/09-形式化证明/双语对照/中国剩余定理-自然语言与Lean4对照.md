@@ -4,6 +4,7 @@ msc_primary: 68V20
 level: "silver"
 target_courses:
   - "MIT 18.701"
+review_status: completed
 ---
 
 ## 定理陈述
@@ -89,3 +90,7 @@ end ChineseRemainderTheorem
 1. 求解同余方程组 \(x \equiv 2 \pmod{3}\)，\(x \equiv 3 \pmod{5}\)，\(x \equiv 2 \pmod{7}\)（《孙子算经》“物不知数”问题）。
 2. 证明多元中国剩余定理：若 \(n_1, \dots, n_k\) 两两互素，则对任意 \(a_1, \dots, a_k\)，同余方程组 \(x \equiv a_i \pmod{n_i}\) 在模 \(N = \prod n_i\) 下有唯一解。
 3. 在 Lean4 中，利用环同构证明欧拉函数的乘性：若 \(\gcd(m,n)=1\)，则 \(\varphi(mn) = \varphi(m)\varphi(n)\)。
+---
+**参考文献**
+
+1. 相关教材与学术论文。

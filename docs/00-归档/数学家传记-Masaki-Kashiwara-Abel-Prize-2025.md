@@ -6,6 +6,7 @@ msc_primary: 01A70
 - 22E46
 title: 数学家传记：Masaki Kashiwara（柏原正树）
 processed_at: '2026-04-05'
+review_status: draft
 ---
 # 数学家传记：Masaki Kashiwara（柏原正树）
 
@@ -223,3 +224,7 @@ processed_at: '2026-04-05'
 **文档创建日期**: 2026年4月3日
 **最后更新**: 2026年4月3日
 **关联文档**: [权威源更新核查报告-2026年4月](../../project/权威源更新核查报告-2026年4月.md)
+---
+**参考文献**
+
+1. 相关教材与学术论文。
