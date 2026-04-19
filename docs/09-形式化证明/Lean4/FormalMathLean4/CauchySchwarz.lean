@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 柯西-施瓦茨不等式的形式化证明 / Cauchy-Schwarz Inequality
 
@@ -35,13 +37,6 @@
 由Augustin-Louis Cauchy于1821年对 ℝⁿ 证明，Hermann Schwarz于1885年推广到积分情形，Viktor Bunyakovsky于1859年独立证明积分版本。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -56,27 +51,12 @@ import Mathlib
 |⟨u, v⟩| ≤ ‖u‖ · ‖v‖
 -/
 
-
--- 柯西-施瓦茨不等式：核心形式
-
--- 等号成立条件
-
--- 实内积空间的柯西-施瓦茨不等式（不带绝对值）
-
--- 平方形式的柯西-施瓦茨不等式
-
--- 极化恒等式
-
 /-
 ## 应用：ℝⁿ 中的柯西-施瓦茨不等式
 
 对于向量 x = (x₁, ..., xₙ) 和 y = (y₁, ..., yₙ)：
 (∑ xᵢyᵢ)² ≤ (∑ xᵢ²)(∑ yᵢ²)
 -/
-
-
--- 连续函数空间 L² 中的柯西-施瓦茨不等式（axiom占位）
-
 
 /-
 ## 应用示例
@@ -115,7 +95,6 @@ import Mathlib
 - `inner_eq_norm_mul_norm_iff`: 等号成立条件
 - `norm_add_sq_real`: 实内积空间的极化恒等式
 -/
-
 
 -- Framework stub for CauchySchwarz
 theorem CauchySchwarz_stub : True := by trivial

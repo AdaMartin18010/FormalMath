@@ -1,4 +1,5 @@
 import Mathlib
+
 /-
 # Weierstrass M-判别法 / Weierstrass M-test
 
@@ -12,14 +13,6 @@ import Mathlib
 2. $\sum M_n$ 收敛；
 则 $\sum f_n(x)$ 在 $E$ 上一致收敛。
 -/
-
-
-
-
--- Weierstrass M-判别法
-
--- 推论：M-判别法保证和函数连续
-
 
 -- Framework stub for WeierstrassMTest
 theorem WeierstrassMTest_stub : True := by trivial

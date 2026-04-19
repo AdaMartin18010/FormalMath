@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 拉姆齐定理的形式化目标 / Ramsey's Theorem
 
@@ -42,14 +44,6 @@
 Paul Erdős 和 George Szekeres 在1935年重新发现并推广了该定理。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -66,11 +60,6 @@ import Mathlib
 使得任何 N ≥ R(s, t) 个顶点的图包含 K_s 或大小为 t 的独立集的最小 N。
 -/
 
-
--- 团的定义
-
--- 独立集的定义
-
 /-
 ## 拉姆齐定理
 
@@ -80,12 +69,6 @@ import Mathlib
 此处以 `axiom` 形式声明图论 Ramsey 定理作为形式化目标。
 -/
 
--- 图论 Ramsey 定理：二元染色
-
--- 图论 Ramsey 定理：k 色推广
-
--- 无穷 Ramsey 定理
-
 /-
 ## 已知的 Ramsey 数
 
@@ -93,10 +76,6 @@ R(3, 3) = 6：任何6个顶点的图必含三角形或大小为3的独立集。
 R(4, 4) = 18
 R(5, 5) 未知（介于43和48之间）
 -/
-
--- R(3, 3) = 6 的下界（axiom占位）
-
--- R(3, 3) ≤ 6（axiom占位）
 
 /-
 ## 相关定理：Hales-Jewett 与 Van der Waerden
@@ -107,9 +86,6 @@ Mathlib4 中已实现：
 
 它们是 Ramsey 理论在组合线性和算术结构中的推广。
 -/
-
-
-
 
 /-
 ## 应用示例

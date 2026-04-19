@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # Heine-Borel定理的形式化证明 / Heine-Borel Theorem
 
@@ -27,13 +29,6 @@ Heine-Borel定理是实分析和拓扑学的核心定理，它：
 是实数完备性的重要表现。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -52,10 +47,6 @@ import Mathlib
 集合可以被某个球包含的集合。
 -/
 
--- 有界集的定义（使用bornology）
-
--- 紧致的序列刻画
-
 /-
 ## Heine-Borel定理的主证明
 
@@ -72,27 +63,13 @@ import Mathlib
 4. 闭子集的紧致性
 -/
 
--- Heine-Borel定理：紧致 ⟺ 闭且有界
-
--- 一维Heine-Borel定理
-
 /-
 ## 证明细节：紧致 ⟹ 闭且有界
 -/
 
--- 紧致集是闭的（Hausdorff空间中的一般结果）
-
--- 紧致集是有界的
-
 /-
 ## 证明细节：闭且有界 ⟹ 紧致
 -/
-
--- 闭区间 [a, b] 的紧致性
-
--- 闭球的紧致性（ℝⁿ 中）
-
--- 有界闭集的紧致性
 
 /-
 ## Bolzano-Weierstrass与Heine-Borel的等价性
@@ -103,10 +80,6 @@ import Mathlib
 3. 闭且有界
 -/
 
--- 序列紧致 ⟺ 紧致（度量空间中）
-
--- 序列紧致 ⟺ 闭且有界（ℝⁿ 中）
-
 /-
 ## 应用：连续函数的性质
 
@@ -114,10 +87,6 @@ import Mathlib
 
 **定理**: 紧致集上的连续函数是一致连续的。
 -/
-
--- 极值定理
-
--- 一致连续性定理
 
 /-
 ## 反例：无穷维空间
@@ -127,113 +96,12 @@ import Mathlib
 **例子**: 在 l²(ℕ) 中，闭单位球 {x | ‖x‖ ≤ 1} 不是紧致的。
 -/
 
--- 无穷维空间中闭球不紧致的例子（框架）
-
 /-
 ## 推广：局部紧致空间
 
 **定义**: 空间 X 是局部紧致的，如果每个点都有紧邻域。
 
 **定理**: ℝⁿ 是局部紧致的。
--/
-
--- ℝⁿ 是局部紧致的
-
-
-/-
-## 应用示例
-
-### 示例1：证明集合紧致
-
-```lean
--- 单位球面 S^{n-1} 是紧致的
-example {n : ℕ} : IsCompact {x : Fin n → ℝ | ‖x‖ = 1} := by
-  /- 单位球面是闭且有界的 -/
-  apply closed_bounded_compact
-  · /- 闭集：范数函数的逆像 -/
-    have h_closed : IsClosed {x : Fin n → ℝ | ‖x‖ = 1} := by
-      have : {x : Fin n → ℝ | ‖x‖ = 1} = (fun x => ‖x‖) ⁻¹' {1} := by
-        ext x
-        simp
-      rw [this]
-      apply IsClosed.preimage
-      · apply Continuous.norm
-        exact continuous_id
-      · exact isClosed_singleton
-    exact h_closed
-  · /- 有界：包含在单位球中 -/
-    rw [Bornology.isBounded_iff_forall_norm_lt]
-    intro x hx
-    simp at hx
-    rw [hx]
-    norm_num
-```
-
-### 示例2：极值问题
-
-```lean
--- 在紧致集上最小化函数
-example {n : ℕ} {K : Set (Fin n → ℝ)} (hK : IsCompact K) (hne : K.Nonempty)
-    {f : (Fin n → ℝ) → ℝ} (hf : ContinuousOn f K) :
-    ∃ (x₀ ∈ K), IsMinOn f K x₀ := by
-  have h_max : ∃ (y₀ ∈ K), IsMaxOn (fun x => -f x) K y₀ := by
-    apply IsCompact.exists_isMaxOn hK
-    · apply ContinuousOn.neg hf
-    · exact hne
-  rcases h_max with ⟨y₀, hy₀, hmax⟩
-  use y₀, hy₀
-  intro x hx
-  have : -f y₀ ≥ -f x := hmax hx
-  linarith
-```
-
-## 数学意义
-
-Heine-Borel定理的重要性：
-
-1. **有限维特征**：仅在有限维赋范空间中成立
-2. **分析基础**：极值定理、一致连续性等的基础
-3. **拓扑性质**：连接了拓扑紧致性和分析性质
-4. **计算方法**：优化算法的理论基础
-
-## 与其他定理的关系
-
-| 定理 | 关系 |
-|------|------|
-| Bolzano-Weierstrass | 在ℝⁿ中，紧致 ⟺ 序列紧致 ⟺ 闭且有界 |
-| 极值定理 | 紧致集上连续函数取得极值 |
-| 一致连续性 | 紧致集上连续函数一致连续 |
-| Arzelà-Ascoli | 函数空间中紧致的刻画 |
-
-## 历史发展
-
-- **1872**: Heine证明闭区间上连续函数一致连续
-- **1895**: Borel证明可数覆盖情形
-- **1900s**: Lebesgue和 others 推广到任意覆盖
-- **现代**: 推广到度量空间和拓扑空间
-
-## 局限与推广
-
-### 局限性
-- 仅在有限维空间中成立
-- 需要度量结构（或有界性概念）
-
-### 推广
-- **度量空间**: 完全有界且完备 ⟺ 紧致
-- **拓扑空间**: 紧致性由开覆盖定义，不与有界性等价
-- **局部紧致**: 每个点有紧邻域
-
-## Mathlib4对齐说明
-
-本文件与Mathlib4的以下模块对齐：
-- `Mathlib.Topology.MetricSpace.Compact`: 紧致度量空间理论
-- `Mathlib.Analysis.NormedSpace.FiniteDimension`: 有限维赋范空间
-- `isCompact_iff_isClosed_bounded`: Heine-Borel定理的核心实现
-- `isCompact_Icc`: 闭区间的紧致性
-- `isCompact_closedBall`: 闭球的紧致性
-- `IsCompact.isClosed`: 紧致集是闭的
-- `IsCompact.isBounded`: 紧致集是有界的
-- `LocallyCompactSpace`: 局部紧致空间
 -/
 
 -- Framework stub for HeineBorel

@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # Morse理论基本定理的形式化证明 / Morse Theory
 
@@ -41,13 +43,6 @@ Reeb（1952年）、Milnor（1963年）等人做出了重要贡献。
 Morse理论是现代微分拓扑的基石之一。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -68,18 +63,6 @@ p ∈ M 是 f 的临界点，如果 df_p = 0。
 M^a = f^{-1}((-∞, a]) = {p ∈ M : f(p) ≤ a}
 -/
 
-
--- Hessian矩阵（在临界点附近）\ndef Hessian (f : C^∞⟮M, 𝓡 1⟯) (p : M) : \n    (TangentSpace (𝓡 n) p) →L[ℝ] (TangentSpace (𝓡 n) p) →L[ℝ] ℝ := by\n  -- Hessian矩阵定义\n  refine ⟨fun v => ?_, ?_, ?_⟩\n  · refine ⟨fun w => 0, ?_, ?_⟩; · simp; · simp\n  · simp\n  · simp
-
--- 非退化临界点
-
--- Morse函数
-
--- Morse指标
-  -- Hessian矩阵的负特征值个数
-
--- 水平集
-
 /-
 ## Morse引理
 
@@ -94,7 +77,6 @@ M^a = f^{-1}((-∞, a]) = {p ∈ M : f(p) ≤ a}
 4. 通过适当的坐标变换消去高阶项
 -/
 
-
 /-
 ## 拓扑变化定理
 
@@ -103,8 +85,6 @@ M^a = f^{-1}((-∞, a]) = {p ∈ M : f(p) ≤ a}
 
 这描述了当水平集穿过临界值时拓扑的变化。
 -/
-
-      -- Mc_plus 同伦等价于 Mc_minus 附加 λ 维胞腔
 
 /-
 ## Morse不等式
@@ -122,24 +102,12 @@ C_k ≥ b_k 对所有 k 成立
 ∑(-1)^k C_k = ∑(-1)^k b_k = χ(M)
 -/
 
--- 临界点个数
-
--- Betti数（简化定义）
-  -- k 阶奇异同调群的秩
-
--- 弱Morse不等式
-
--- 强Morse不等式
-
--- Euler示性数公式
-
 /-
 ## Reeb定理
 
 **定理**: 紧致流形 M 同胚于一个CW复形，其中k维胞腔的个数等于
 f 的指标为k的临界点个数。
 -/
-
 
 /-
 ## 极值点与拓扑
@@ -149,9 +117,6 @@ f 的指标为k的临界点个数。
 - f 的最大值点对应指标为n的临界点（M是n维流形）
 - 若 f 只有两个临界点，则 M 同胚于球面 S^n
 -/
-
--- 只有最小值和最大值的Morse函数
-
 
 /-
 ## 应用示例
@@ -221,7 +186,6 @@ Morse理论的重要性：
 - `Mathlib.LinearAlgebra.QuadraticForm`: 二次型（Morse引理）
 - `SmoothManifoldWithCorners`: 带角光滑流形
 -/
-
 
 -- Framework stub for MorseTheory
 theorem MorseTheory_stub : True := by trivial

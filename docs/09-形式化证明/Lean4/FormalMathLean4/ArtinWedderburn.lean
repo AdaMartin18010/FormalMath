@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 阿廷-韦德伯恩定理的形式化证明 / Artin-Wedderburn Theorem
 
@@ -36,13 +38,6 @@
 由Joseph Wedderburn于1907年证明（对有限维代数），Emil Artin于1927年推广到Artinian环。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -56,19 +51,11 @@ import Mathlib
 满足左理想降链条件（DCC）的环。
 -/
 
-
--- 半单环版本：半单Artinian环同构于矩阵环的有限直积
-
--- 单环版本：单Artinian环同构于某个除环上的矩阵环
-
--- 代数版本：半单代数同构于矩阵代数的直积
-
 /-
 ## 推论：有限维单代数
 
 若 𝕜 是代数闭域，则有限维单 𝕜-代数同构于某个矩阵代数 M_n(𝕜)。
 -/
-
 
 /-
 ## 应用：群代数的半单性
@@ -76,8 +63,6 @@ import Mathlib
 Maschke定理：若 G 是有限群，𝕜 是特征不整除 |G| 的域，则群代数 𝕜[G] 是半单的。
 由阿廷-韦德伯恩定理，𝕜[G] 同构于矩阵代数的直积。
 -/
-
-
 
 /-
 ## 数学意义

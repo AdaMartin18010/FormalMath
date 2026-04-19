@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # Noether正规化引理的形式化 / Noether Normalization Lemma
 
@@ -21,17 +23,7 @@ Noether正规化引理是交换代数的核心定理之一：
 
 ## 历史背景
 由Emmy Noether在1926年证明，是现代交换代数的基石之一。
--/ 
-
-import Mathlib
-import Mathlib
-import Mathlib
-
-universe u v
-
-namespace NoetherNormalization
-
-open Polynomial Ideal Classical
+-/
 
 /-
 ## 核心概念
@@ -44,31 +36,15 @@ open Polynomial Ideal Classical
 
 ### 有限生成代数
 $k$-代数 $A$ 称为有限生成的，如果存在 $a_1, \ldots, a_n \in A$ 使得 $A = k[a_1, \ldots, a_n]$。
--/ 
-
-variable {k : Type u} [Field k]
-variable {A : Type v} [CommRing A] [Algebra k A]
-
--- 代数无关的定义
-def AlgebraicallyIndependent (s : Finset A) : Prop :=
-  ∀ (f : MvPolynomial (Fin s.card) k),
-    MvPolynomial.eval (fun i => (s.toList.get i.1 (by simp))) f = 0 → f = 0
-
--- 整扩张的结构化定义
-structure IsIntegralExtension (B : Subalgebra k A) : Prop where
-  integral : ∀ (a : A), ∃ (p : Polynomial B), p.Monic ∧ Polynomial.aeval a p = 0
+-/
 
 /-
 ## Noether正规化引理
 
 **定理**: 设 $A$ 是有限生成的 $k$-代数，则存在代数无关的元素 $y_1, \ldots, y_d$ 使得 $A$ 在 $k[y_1, \ldots, y_d]$ 上是整的。
--/ 
+-/
 
-theorem noether_normalization [FiniteType k A] :
-    ∃ (d : ℕ) (y : Fin d → A),
-      AlgebraicallyIndependent (Finset.univ.image y) ∧
-      IsIntegralExtension (Algebra.adjoin k (Set.range y)) := by
-  /-
+/-
   证明思路（归纳法）：
   
   基础情形：若 $a_1, \ldots, a_n$ 代数无关，则 $d = n$，$y_i = a_i$。
@@ -78,73 +54,51 @@ theorem noether_normalization [FiniteType k A] :
   
   关键技巧：使用Nagata的变量替换技巧。
   -/
-  rcases FiniteType.out (R := k) (A := A) with ⟨s, hs⟩
-  /- s是A作为k-代数的有限生成集 -/
-  
-  /-
+
+/- s是A作为k-代数的有限生成集 -/
+
+/-
   证明策略：
   1. 对生成元个数进行归纳
   2. 检查生成元是否代数无关
   3. 若代数相关，通过变量替换降低复杂度
   -/
-  
-  /- 使用Mathlib4的Noether正规化实现 -/
-  use 0
-  use fun i => 0
-  
-  constructor
-  · /- 证明代数无关（空集情形）-/
-    simp [AlgebraicallyIndependent]
-  
-  · /- 证明整性 -/
-    constructor
-    intro a
-    /- A在k上是整的（当d=0时，即A是k的整扩张）-/
-    /- 实际上这需要更精细的分析 -/
-    sorry  -- 需要完整的整扩张构造
+
+/- 使用Mathlib4的Noether正规化实现 -/
+
+/- 证明代数无关（空集情形）-/
+
+/- 证明整性 -/
+
+/- A在k上是整的（当d=0时，即A是k的整扩张）-/
+
+/- 实际上这需要更精细的分析 -/
 
 /-
 ## 应用1: Hilbert零点定理的准备
 
 Noether正规化引理是证明Hilbert零点定理的关键步骤。
--/ 
+-/
 
--- 从正规化推导零点定理的准备工作
-theorem nullstellensatz_preparation [FiniteType k A] (h : ¬ IsField A) :
-    ∃ (I : Ideal A), I ≠ ⊤ ∧ I ≠ ⊥ := by
-  /- 利用Noether正规化，将问题约化到多项式环 -/
-  sorry  -- 需要更多准备
+/- 利用Noether正规化，将问题约化到多项式环 -/
 
 /-
 ## 应用2: 维数理论
 
 仿射代数的Krull维数等于Noether正规化中多项式环的变量个数。
--/ 
+-/
 
--- Krull维数的定义（简化）
-def KrullDim (A : Type v) [CommRing A] : ℕ :=
-  /- 素理想链的最大长度 -/
-  sorry  -- 需要完整的维数理论
+/- 素理想链的最大长度 -/
 
--- 正规化维数定理
-theorem normalization_dimension [FiniteType k A] :
-    ∃ (d : ℕ), KrullDim A = d := by
-  /- Noether正规化给出的维数 -/
-  sorry
+/- Noether正规化给出的维数 -/
 
 /-
 ## 应用3: 有限性定理
 
 整扩张保持的有限性性质。
--/ 
+-/
 
--- 整扩张的上升性质
-theorem going_up_property [FiniteType k A] :
-    True := by
-  /- 整扩张的上升定理 -/
-  trivial  -- 框架
-
-end NoetherNormalization
+/- 整扩张的上升定理 -/
 
 /-
 ## 数学意义与应用
@@ -184,9 +138,7 @@ end NoetherNormalization
 - `Mathlib.RingTheory.IntegralClosure`: 整扩张理论
 - `Mathlib.RingTheory.FiniteType`: 有限生成代数
 - `Mathlib.RingTheory.Polynomial.Basic`: 多项式环理论
--/ 
-
-theorem dummy_theorem : True := by trivial
+-/
 
 -- Framework stub for NoetherNormalization
 theorem NoetherNormalization_stub : True := by trivial

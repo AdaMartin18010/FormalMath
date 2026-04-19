@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 凯莱-哈密顿定理的形式化证明 / Cayley-Hamilton Theorem
 
@@ -35,14 +37,6 @@ p(A) = 0
 由Arthur Cayley在1858年对2×2矩阵证明，William Rowan Hamilton在1853年对四元数证明了相关结果，一般情形由Ferdinand Frobenius在1878年证明。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -60,23 +54,12 @@ p(A) = a₀I + a₁A + ... + aₙAⁿ
 每个方阵都满足自己的特征多项式：χ_A(A) = 0
 -/
 
-
--- 特征多项式的定义（使用Mathlib4的实现）
-
--- 凯莱-哈密顿定理：p(A) = 0
-
--- 等价表述：矩阵满足自己的特征方程
-
--- 2×2矩阵的凯莱-哈密顿定理（显式计算）
-
 /-
 ## 应用：矩阵的幂
 
 凯莱-哈密顿定理可用于将高次幂的矩阵表示为低次幂的线性组合。
 对于 n×n 矩阵 A，任何 A^k (k ≥ n) 都可以表示为 I, A, ..., A^(n-1) 的线性组合。
 -/
-
--- 若 A 满足 p(A) = 0，则 A^n 可用低次幂表示（axiom占位）
 
 /-
 ## 应用：逆矩阵公式
@@ -86,9 +69,6 @@ p(A) = a₀I + a₁A + ... + aₙAⁿ
 若 A 可逆，则 det(A) = (-1)ⁿc₀ ≠ 0，于是：
 A⁻¹ = -1/c₀ (A^{n-1} + c_{n-1}A^{n-2} + ... + c₁I)
 -/
-
--- 可逆矩阵的逆可用A的幂表示（axiom占位）
-
 
 /-
 ## 应用示例

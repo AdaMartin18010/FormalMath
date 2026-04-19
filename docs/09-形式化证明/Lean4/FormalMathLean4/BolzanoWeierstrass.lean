@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # Bolzano-Weierstrass定理的形式化证明 / Bolzano-Weierstrass Theorem
 
@@ -26,15 +28,6 @@ Karl Weierstrass在1860年代独立证明，
 是实数完备性的重要表现。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -47,10 +40,6 @@ import Mathlib
 ### 聚点 (Accumulation Point/Cluster Point)
 点 L 是集合 S 的聚点，如果 L 的每个邻域都包含 S 的无限多个点。
 -/
-
--- 序列有界的定义
-
--- 收敛子序列的定义
 
 /-
 ## Bolzano-Weierstrass定理的主证明（一维情形）
@@ -66,19 +55,6 @@ import Mathlib
 6. 从每个区间中选一项，得到收敛到 L 的子序列
 -/
 
--- 区间套定理
-  
-  
-  
-  
-  
-
--- Bolzano-Weierstrass定理（一维）- 使用Mathlib4的结果
-  
-  
-  
-  
-
 /-
 ## Bolzano-Weierstrass定理的滤子证明
 
@@ -87,12 +63,6 @@ import Mathlib
 2. 在紧致空间中，每个滤子都有聚点
 3. 因此存在收敛子序列
 -/
-
--- 滤子版本的Bolzano-Weierstrass定理
-
--- 度量空间版本
-  
-  
 
 /-
 ## Bolzano-Weierstrass定理的高维推广
@@ -103,14 +73,6 @@ import Mathlib
 然后使用对角线方法选取公共的收敛子序列。
 -/
 
--- ℝⁿ中的Bolzano-Weierstrass定理
-  
-  
-  
-  
-
--- 使用Mathlib4的紧致性证明
-
 /-
 ## 应用：闭区间的紧致性
 
@@ -120,96 +82,10 @@ import Mathlib
 且极限仍在 [a, b] 中（因为 [a, b] 是闭集）。
 -/
 
--- 闭区间的紧致性
-
 /-
 ## 应用：连续函数的性质
 
 **定理**: 定义在紧致集上的连续函数必取得最大值和最小值。
--/
-
--- 极值定理
-  
-  
-  
-  
-  
-
-
-/-
-## 应用示例
-
-### 示例1：构造收敛子序列
-
-```lean
--- 序列 xₙ = (-1)ⁿ 有收敛子序列
-example : HasConvergentSubseq (fun n => (-1 : ℝ) ^ n) := by
-  /- 取偶数下标子序列：x_{2n} = 1 → 1 -/
-  use fun n => 2 * n
-  constructor
-  · intro m n hmn; simp; linarith
-  · use 1
-    /- 证明收敛 -/
-    simp
-    use 1
-    simp
-```
-
-### 示例2：证明序列紧致性
-
-```lean
--- [0,1] 中的序列都有收敛子序列
-example (x : ℕ → ℝ) (hx : ∀ n, x n ∈ Icc 0 1) :
-    HasConvergentSubseq x := by
-  apply bolzano_weierstrass_1d
-  use 1
-  intro n
-  have : x n ∈ Icc 0 1 := hx n
-  rcases this with ⟨h0, h1⟩
-  have h_dist : |x n - x 0| ≤ 1 := by
-    have h0' : 0 ≤ x n := h0
-    have h1' : x n ≤ 1 := h1
-    have h0'' : 0 ≤ x 0 := (hx 0).1
-    have h1'' : x 0 ≤ 1 := (hx 0).2
-    apply abs_le.mpr
-    constructor
-    · linarith
-    · linarith
-  exact h_dist
-```
-
-## 数学意义
-
-Bolzano-Weierstrass定理的重要性：
-
-1. **完备性的表现**：反映了实数（或ℝⁿ）的完备性
-2. **紧致性等价**：在ℝⁿ中，紧致 ⟺ 闭且有界 ⟺ 序列紧致
-3. **分析基础**：许多分析定理的基础
-4. **存在性证明**：提供了极限存在性的构造性证明
-
-## 与其他定理的关系
-
-| 定理 | 关系 |
-|------|------|
-| Heine-Borel定理 | 在ℝⁿ中，Bolzano-Weierstrass ⟺ Heine-Borel |
-| 单调收敛定理 | 单调有界序列收敛是Bolzano-Weierstrass的特例 |
-| 柯西收敛准则 | 完备性 ⟺ 每个柯西序列收敛 |
-| 极值定理 | 连续函数在紧致集上取得极值 |
-
-## 历史影响
-
-- **1817**: Bolzano首先证明了有界序列有聚点的引理
-- **1860s**: Weierstrass独立发现并推广
-- **现代**: 成为实分析和泛函分析的基础工具
-
-## Mathlib4对齐说明
-
-本文件与Mathlib4的以下模块对齐：
-- `Mathlib.Topology.MetricSpace.Compact`: 紧致度量空间理论
-- `IsCompact.tendsto_subseq`: 紧致空间的序列紧致性
-- `exists_clusterPt_of_compactSpace`: 紧致空间中滤子的聚点存在性
-- `isCompact_Icc`: 闭区间的紧致性
-- `ProperSpace`: proper空间（有界集的闭包紧致）
 -/
 
 -- Framework stub for BolzanoWeierstrass

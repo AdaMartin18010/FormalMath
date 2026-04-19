@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 正定矩阵的等价条件 / Positive Definite Matrix Equivalences
 
@@ -12,23 +14,6 @@
 3. $A$ 的所有顺序主子式都大于 0（Sylvester 判据）；
 4. 存在可逆矩阵 $L$ 使得 $A = L^T L$（Cholesky 分解）。
 -/
-
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
--- 正定矩阵的定义（已内建于 Mathlib4）
-
--- 条件1 → 条件2：正定矩阵的特征值全为正
-
--- 条件2 → 条件1：特征值全为正则矩阵正定
-
--- Sylvester 判据：正定矩阵的各阶顺序主子式为正
-
--- Cholesky 分解：正定矩阵可分解为 L^T L
-
 
 -- Framework stub for PositiveDefiniteMatrix
 theorem PositiveDefiniteMatrix_stub : True := by trivial

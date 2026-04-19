@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 康托对角线论证 / Cantor's Diagonal Argument
 
@@ -31,14 +33,6 @@
 - **主要策略**: 对角线构造 + 反证法
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 第一部分：康托定理
 
@@ -54,13 +48,6 @@ import Mathlib
 5. 因此不存在这样的满射
 -/
 
--- 康托定理：不存在从集合到其幂集的满射
-  
-  
-  
-
--- 康托定理的基数表述
-
 /-
 ## 第二部分：实数不可数
 
@@ -73,11 +60,6 @@ import Mathlib
 4. 得到矛盾
 -/
 
--- 实数不可数（Mathlib4已有结果）
-
--- 实数不可数的证明框架（对角线构造法）
-      -- 这里需要更精确的论证
-
 /-
 ## 第三部分：连续统假设
 
@@ -86,21 +68,12 @@ import Mathlib
 这是希尔伯特第一问题，被证明独立于ZFC公理系统。
 -/
 
--- 连续统假设的表述
-
--- 连续统假设的独立性（公理化）
-
 /-
 ## 第四部分：幂集塔的无限层次
 
 康托定理表明存在一个无限的基数层次：
 |ℕ| < |P(ℕ)| < |P(P(ℕ))| < ...
 -/
-
--- 幂集塔
-
--- 幂集塔严格递增
-
 
 /-
 ## 数学意义
@@ -135,7 +108,6 @@ import Mathlib
 - [哥德尔不完备定理](./GodelIncompleteness.lean) - 自指论证的另一应用
 - [停机问题不可判定](./GodelIncompleteness.lean) - 可计算性理论
 -/
-
 
 -- Framework stub for CantorDiagonal
 theorem CantorDiagonal_stub : True := by trivial

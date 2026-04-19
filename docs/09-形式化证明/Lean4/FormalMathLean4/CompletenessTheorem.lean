@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 一阶逻辑完备性定理的形式化目标 / Gödel's Completeness Theorem
 
@@ -40,14 +42,6 @@
 紧致性定理的拓扑证明由Anatoly Maltsev在1936年给出。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -63,11 +57,6 @@ import Mathlib
 ### 语法一致性 (Syntactic Consistency)
 理论 T 是语法一致的，如果不存在公式 φ 使得 T ⊢ φ 且 T ⊢ ¬φ。
 -/
-
-
--- 紧致性定理：理论可满足 ⟺ 每个有限子集可满足
-
--- 紧致性定理的等价形式：φ 被 T 语义蕴涵 ⟺ 被某个有限子集语义蕴涵
 
 /-
 ## Gödel完备性定理
@@ -86,18 +75,12 @@ import Mathlib
 5. 从而语法一致性 ⟹ 语义可满足性
 -/
 
--- Gödel完备性定理的形式化目标（axiom占位）
-
--- 等价形式：语法一致性 ⟺ 语义可满足性（axiom占位）
-
 /-
 ## 应用：非标准模型
 
 由紧致性定理，若 Peano 算术 PA 有标准模型 ℕ，则 PA 也有非标准模型。
 因为添加所有形如 c > n̄ 的句子（对每个 n ∈ ℕ）后，每个有限子集都可满足。
 -/
-
-
 
 /-
 ## 应用示例

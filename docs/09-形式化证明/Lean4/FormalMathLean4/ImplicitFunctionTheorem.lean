@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 隐函数定理的形式化证明 / Implicit Function Theorem
 
@@ -36,13 +38,6 @@
 由Augustin-Louis Cauchy在1830年代证明单变量版本，Ulisse Dini在1878年给出了现代形式的证明。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -54,18 +49,11 @@ f(x) - f(y) - f'(x - y) = o(‖x - y‖) 当 x, y → a
 由方程 F(x, y) = 0 局部定义的函数 y = g(x)。
 -/
 
-
--- 隐函数定理：核心形式（使用Mathlib4的实现）
-
--- 简化版：ℝⁿ × ℝᵐ → ℝᵐ 的隐函数定理
-
 /-
 ## 应用：水平集的局部参数化
 
 隐函数定理的重要几何解释：非退化的水平集可以局部参数化为函数的图像。
 -/
-
-
 
 /-
 ## 应用示例

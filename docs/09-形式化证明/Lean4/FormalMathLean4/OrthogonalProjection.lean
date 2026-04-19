@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 正交投影与最小二乘 / Orthogonal Projection and Least Squares
 
@@ -13,21 +15,6 @@ $$\|v - w\| = \inf_{w' \in W} \|v - w'\|.$$
 ## 最小二乘法
 对于不相容方程组 $Ax = b$，最小二乘解满足正规方程 $A^T A x = A^T b$。
 -/
-
-import Mathlib
-import Mathlib
-
-
-
--- 正交投影的存在唯一性
-
--- 正交条件：误差与子空间正交
-
--- 最小二乘法的正规方程（矩阵形式，框架版）
--- 注：当 A 列满秩时，A^T A 正定可逆，正规方程有唯一解
-  -- 列满秩保证 A^T A 可逆
-  -- 使用存在唯一性框架
-
 
 -- Framework stub for OrthogonalProjection
 theorem OrthogonalProjection_stub : True := by trivial

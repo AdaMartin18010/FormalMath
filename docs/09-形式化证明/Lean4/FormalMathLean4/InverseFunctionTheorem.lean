@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 逆函数定理的形式化证明 / Inverse Function Theorem
 
@@ -36,14 +38,6 @@
 由Augustin-Louis Cauchy在1829年首次证明（单变量情形），现代多变量的证明归功于Ulisse Dini和 others。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -55,14 +49,6 @@ import Mathlib
 若 f 在 a 有严格Fréchet导数 f'，且 f' 是线性同构，
 则 f 在 a 附近有局部逆，且逆的导数为 f'⁻¹。
 -/
-
-
--- 逆函数定理：核心形式
-
--- 局部左逆的导数
-
--- ℝⁿ 上的逆函数定理（简化形式）
-
 
 /-
 ## 应用示例

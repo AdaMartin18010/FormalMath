@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # Sylow第一定理的形式化证明 / Formalization of Sylow's First Theorem
 
@@ -24,16 +26,6 @@ Sylow定理由挪威数学家Peter Ludwig Mejdell Sylow在1872年证明，
 是有限群分类理论的基础。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -47,10 +39,6 @@ Sylow p-子群是 G 的阶为 pⁿ 的子群。
 ### p-子群 (p-Subgroup)
 阶为 pᵏ (k ≤ n) 的子群。
 -/
-
--- p-群的定义：群的阶是 p 的幂
-
--- Sylow p-子群的定义
 
 /-
 ## Sylow第一定理的主证明
@@ -67,34 +55,11 @@ Sylow p-子群是 G 的阶为 pⁿ 的子群。
 6. 考虑 G/N，由归纳假设有Sylow p-子群，拉回得到 G 的Sylow p-子群
 -/
 
--- Cauchy定理：若 p | |G|，则 G 有 p 阶元素
-
--- Cauchy定理的推论：存在p阶子群
-
--- Sylow第一定理：存在Sylow p-子群
-  
-  
-    
-    
-    
-    
-    
-      
-      
-      
-    
-  
-
--- 简化版：使用Mathlib4的Sylow存在性
-
 /-
 ## p-子群的存在性
 
 **定理**: 对于每个 k ≤ n，存在阶为 pᵏ 的子群。
 -/
-
--- p-子群存在性（对k的归纳）
-    
 
 /-
 ## Sylow p-子群的基本性质
@@ -104,20 +69,11 @@ Sylow p-子群是 G 的阶为 pⁿ 的子群。
 **性质3**: Sylow p-子群的个数 n_p ≡ 1 (mod p) 且 n_p | m（Sylow第三定理）。
 -/
 
--- Sylow p-子群是极大的p-子群
-
--- Sylow p-子群个数的同余条件（Sylow第三定理的一部分）
-
--- Sylow p-子群个数整除m
-
 /-
 ## 应用：低阶群的分类
 
 Sylow定理可用于分类给定阶的群。
 -/
-
--- 阶为pq的群（p, q为素数，p < q，p ∤ (q-1)）是循环群
-
 
 /-
 ## 应用示例

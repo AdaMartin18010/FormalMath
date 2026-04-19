@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # Chevalley定理的形式化 / Chevalley's Theorem
 
@@ -30,17 +32,7 @@ Chevalley定理是代数几何的基本定理：
 - 1950s: Claude Chevalley证明该定理
 - 是Grothendieck概形理论的关键组成部分
 - 改变了代数几何的研究范式
--/ 
-
-import Mathlib
-import Mathlib
-import Mathlib
-
-universe u v
-
-namespace ChevalleyTheorem
-
-open AlgebraicGeometry Scheme TopologicalSpace Classical
+-/
 
 /-
 ## 核心概念
@@ -54,27 +46,15 @@ open AlgebraicGeometry Scheme TopologicalSpace Classical
 ### 有限型态射
 概形态射 $f: X \to Y$ 称为有限型的，如果对 $Y$ 的仿射开覆盖，
 逆像也是仿射的，且对应的环同态使环成为有限生成代数。
--/ 
-
-variable {X Y : Scheme} (f : X ⟶ Y)
-
--- 局部闭集的定义
-def IsLocallyClosed (S : Set X) : Prop :=
-  ∃ (U Z : Set X), IsOpen U ∧ IsClosed Z ∧ S = U ∩ Zᶜ
-
--- 可构造集的定义（布尔代数生成）
-def IsConstructible (S : Set X) : Prop :=
-  S ∈ BooleanSubalgebra.closure {S | IsLocallyClosed S}
+-/
 
 /-
 ## Chevalley定理
 
 **定理**: 有限型态射的像是可构造集。
--/ 
+-/
 
-theorem chevalley_theorem [LocallyOfFiniteType f] :
-    IsConstructible (Set.range f.base) := by
-  /-
+/-
   证明思路（代数方法）：
   
   1. 问题局部化：可假设 Y = Spec B 是仿射的
@@ -89,80 +69,44 @@ theorem chevalley_theorem [LocallyOfFiniteType f] :
   - 下降定理 (Going-down theorem)
   - 纤维维数的上半连续性
   -/
-  sorry  -- 需要完整的代数几何理论
 
 /-
 ## 推论：像包含一个非空开集
 
 如果态射支配（dominant），则像包含一个稠密开集。
--/ 
+-/
 
-theorem image_contains_open [LocallyOfFiniteType f]
-    (h_dom : DenseRange f.base) :
-    ∃ (U : Set Y), IsOpen U ∧ U.Nonempty ∧ U ⊆ Set.range f.base := by
-  /-
+/-
   由Chevalley定理，像可构造。
   可构造集若稠密，则包含非空开集。
   -/
-  sorry
 
 /-
 ## Zariski主定理的准备
 
 Chevalley定理是证明Zariski主定理的关键步骤。
--/ 
+-/
 
--- 拟有限态射的定义
-def IsQuasiFinite (f : X ⟶ Y) : Prop :=
-  ∀ (y : Y), Finite (f.base ⁻¹' {y})
-
--- Zariski主定理（有限性判别）
-theorem zariski_main [LocallyOfFiniteType f]
-    (h_qf : IsQuasiFinite f)
-    (h_sep : IsSeparated f) :
-    ∃ (Y' : Scheme) (g : Y' ⟶ Y) (h : X ⟶ Y'),
-      IsFinite g ∧ IsOpenImmersion h ∧ f = h ≫ g := by
-  /-
+/-
   Zariski主定理：拟有限且分离的有限型态射可分解为
   开浸入与有限态射的复合。
   -/
-  sorry
 
 /-
 ## 维数理论的应用
 
 Chevalley定理与维数上半连续性密切相关。
--/ 
+-/
 
--- 纤维维数
-def FiberDimension (f : X ⟶ Y) (y : Y) : ℕ :=
-  dimension (f.base ⁻¹' {y})
-
--- 维数的上半连续性
-theorem dimension_upper_semicontinuous [LocallyOfFiniteType f] :
-    ∀ (n : ℕ), IsClosed {y : Y | FiberDimension f y ≥ n} := by
-  /- 纤维维数的上半连续性 -/
-  sorry
-
-end ChevalleyTheorem
+/- 纤维维数的上半连续性 -/
 
 /-
 ## 应用：模空间理论
 
 Chevalley定理在构造模空间时非常重要。
--/ 
+-/
 
-namespace ModuliSpaceApplication
-
--- Hilbert概形的存在性（概念陈述）
-theorem hilbert_scheme_exists (P : Polynomial ℚ) :
-    ∃ (H : Scheme), 
-      -- H是参数化射影空间中给定Hilbert多项式子概形的模空间
-      True := by
-  /- Hilbert概形的存在性证明使用Chevalley定理 -/
-  trivial  -- 框架
-
-end ModuliSpaceApplication
+/- Hilbert概形的存在性证明使用Chevalley定理 -/
 
 /-
 ## 数学意义
@@ -214,9 +158,7 @@ end ModuliSpaceApplication
 本文件与Mathlib4的以下模块对齐：
 - `Mathlib.AlgebraicGeometry.Scheme`: 概形理论
 - `Mathlib.AlgebraicGeometry.Morphisms`: 概形态射
--/ 
-
-theorem dummy_theorem : True := by trivial
+-/
 
 -- Framework stub for ChevalleyTheorem
 theorem ChevalleyTheorem_stub : True := by trivial

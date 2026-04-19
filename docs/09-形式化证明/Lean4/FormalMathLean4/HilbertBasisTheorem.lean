@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 希尔伯特基定理的形式化证明 / Hilbert's Basis Theorem
 
@@ -31,14 +33,6 @@
 这是Hilbert对代数做出的最重要贡献之一。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -54,14 +48,6 @@ R[x] 表示系数在 R 中的多项式环。
 ### Hilbert基定理
 R Noetherian ⟹ R[x] Noetherian
 -/
-
--- 理想的升链条件 (ACC)
-
--- 有限生成理想的定义
-
--- Noetherian环的定义：每个理想都是有限生成的
-
--- Noetherian环的升链条件刻画
 
 /-
 ## Hilbert基定理的证明
@@ -91,35 +77,11 @@ R Noetherian ⟹ R[x] Noetherian
 7. 因此 I 是有限生成的。
 -/
 
--- 首项系数的理想（≤ n 次部分的首项系数）
-  -- 严格定义需要更多工作
-
--- 首项系数理想的升链
-
--- Hilbert基定理的主证明
-
--- Hilbert基定理（显式版本）
-  
-  -- Step 1: 定义首项系数理想
-  
-  -- Step 2: 这是升链
-  
-  -- Step 3: 由Noetherian性，升链稳定
-  
-  -- Step 4-6: 构造有限生成集
-  
-  -- 对每个 L_n (n ≤ N)，取有限生成集
-  -- 并提升到 R[x] 中的多项式
-
 /-
 ## 多元多项式环的推广
 
 **推论**: 如果 R 是Noetherian环，则 R[x₁, ..., xₙ] 也是Noetherian环。
 -/
-
--- 二元多项式环的Noetherian性
-
--- 多元多项式环的Noetherian性（归纳版本）
 
 /-
 ## 应用：代数集的理想
@@ -128,10 +90,6 @@ R Noetherian ⟹ R[x] Noetherian
 这保证了代数簇可以被有限个多项式方程描述。
 -/
 
--- 代数集的定义（框架）
-
--- 零点理想的有限生成性（Hilbert基定理的推论）
-
 /-
 ## 逆命题
 
@@ -139,10 +97,6 @@ R Noetherian ⟹ R[x] Noetherian
 
 这是因为 R ≅ R[x]/(x)，商环的Noetherian性蕴含原环的Noetherian性。
 -/
-
-
--- Hilbert基定理的完整版本（双向）
-
 
 /-
 ## 应用示例

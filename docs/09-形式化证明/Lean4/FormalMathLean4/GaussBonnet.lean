@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 高斯-博内定理的形式化目标 / Gauss-Bonnet Theorem
 
@@ -49,12 +51,6 @@
 - Shiing-Shen Chern (1944): 高维推广（内蕴证明）
 -/
 
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -70,10 +66,6 @@ import Mathlib
 ### Pfaffian
 反对称矩阵的不变量，出现在高维高斯-博内公式中。
 -/
-
--- 高斯曲率积分的定义（框架）
-
--- 欧拉示性数（使用Mathlib4的代数拓扑定义）
 
 /-
 ## 高斯-博内定理
@@ -93,14 +85,6 @@ import Mathlib
 - 欧拉示性数与曲率积分的恒等式证明
 -/
 
--- 经典高斯-博内定理（axiom占位）
-
--- 带边高斯-博内定理（axiom占位）
-  -- 0 代表边界测地曲率积分（待形式化）
-
--- 陈-高斯-博内定理（高维推广，axiom占位）
-  -- 0 代表 Pfaffian(Ω) 的积分（待形式化）
-
 /-
 ## 特例验证
 
@@ -115,9 +99,6 @@ K ≡ 0, χ(T²) = 0
 ### 双曲平面商（亏格 g ≥ 2 的曲面）
 ∫ K dA = 4π(1 - g) = 2π(2 - 2g) = 2π χ(Σ_g) ✓
 -/
-
--- 球面的高斯-博内验证（axiom占位）
-
 
 /-
 ## 应用示例
@@ -176,7 +157,6 @@ S² 上不存在处处非零的连续切向量场。
 **当前策略**: 先完成2维Gauss-Bonnet，再向高维推广。
 
 -/
-
 
 -- Framework stub for GaussBonnet
 theorem GaussBonnet_stub : True := by trivial

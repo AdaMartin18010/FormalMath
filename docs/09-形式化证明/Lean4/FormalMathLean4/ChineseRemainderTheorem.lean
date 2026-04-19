@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 中国剩余定理的形式化证明 / Chinese Remainder Theorem
 
@@ -33,19 +35,7 @@
 ## 历史背景
 该定理最早出现在中国《孙子算经》（公元3-5世纪）中的"物不知数"问题。
 完整的证明由秦九韶在《数书九章》（1247年）中给出。
--/ 
-
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-import Mathlib
-
-universe u
-
-namespace ChineseRemainderTheorem
-
-open ZMod Nat BigOperators
+-/
 
 /-
 ## 核心概念
@@ -59,47 +49,6 @@ open ZMod Nat BigOperators
 ### 中国剩余定理
 当模数两两互素时，同余方程组有唯一解。
 -/
-
--- 两元中国剩余定理：当 m 和 n 互素时，同余方程组有解
-  
-  -- 使用Bezout引理，存在 s, t 使得 s·m + t·n = gcd(m,n) = 1
-  
-  -- 构造解
-  
-  -- 验证 x ≡ a (mod m)
-  
-  -- 验证 x ≡ b (mod n)
-  
-
--- 中国剩余定理：环同构版本
-
--- 中国剩余定理的逆：如果同构成立，则 m 和 n 互素
-  -- 使用 Mathlib 的已有结果：若 ZMod(mn) ≅ ZMod(m) × ZMod(n)，则 m 和 n 互素
-  -- 利用单位群的同构：单位群的阶必须相等
-  -- φ(mn) = φ(m)φ(n) 当且仅当 m 和 n 互素
-
--- 多元中国剩余定理
-    -- k = 0：空同余方程组，任意 x 都是解
-    -- k = k' + 1：将前 k' 个方程与第 k' 个方程合并
-    -- 使用前 k 个模数和中国剩余定理得到解
-    -- 应用归纳假设得到前 k 个方程的解
-    -- 令 M = ∏_{i < k} n i，需要将 x_k ≡ a k (mod n k) 与 x_k 的解合并
-    -- 构造新的同余方程组并求解
-
--- 中国剩余定理的唯一性
-  
-  -- x ≡ y (mod m)
-  
-  -- x ≡ y (mod n)
-  
-  -- 由于 m 和 n 互素，所以 x ≡ y (mod mn)
-
--- 中国剩余定理的显式构造（使用扩展欧几里得算法）
-  
-  -- 验证同余条件
-    -- 使用扩展欧几里得算法的性质：gcdA n * m + gcdB n * n = gcd(m,n) = 1
-    -- 类似地证明
-
 
 /-
 ## 应用示例

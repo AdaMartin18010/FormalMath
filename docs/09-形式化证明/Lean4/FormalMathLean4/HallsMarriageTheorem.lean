@@ -1,3 +1,5 @@
+import Mathlib
+
 /-
 # 霍尔婚配定理的形式化证明 / Hall's Marriage Theorem
 
@@ -33,13 +35,6 @@
 由Philip Hall在1935年证明，得名于其经典的婚配解释。
 -/
 
-import Mathlib
-import Mathlib
-import Mathlib
-
-
-
-
 /-
 ## 核心概念
 
@@ -53,13 +48,6 @@ import Mathlib
 覆盖 X 中所有顶点的匹配。
 -/
 
-
--- 霍尔婚配定理：核心形式
-
--- 等价表述：存在匹配 ⟺ Hall 条件
-
--- 霍尔婚配定理的有限版本（使用 relation，axiom占位）
-
 /-
 ## 应用：系统不同代表 (SDR)
 
@@ -69,14 +57,11 @@ import Mathlib
 霍尔定理指出：SDR 存在 ⟺ ∀ J ⊆ I, |⋃_{j∈J} A_j| ≥ |J|
 -/
 
-
 /-
 ## 应用：正则二分图的完美匹配
 
 每个正则二分图都有完美匹配。
 -/
-
-
 
 /-
 ## 应用示例
