@@ -112,5 +112,5 @@ This file now references actual theorems and definitions from Mathlib4.
 -- 柯西-施瓦茨不等式：内积空间中任意两个向量内积的绝对值不超过它们范数的乘积
 theorem CauchySchwarzInequality {𝕜 E : Type*} [RCLike 𝕜] [SeminormedAddCommGroup E]
     [InnerProductSpace 𝕜 E] (u v : E) :
-    ‖@inner 𝕜 E _ _ u v‖ ≤ ‖u‖ * ‖v‖ := by
+    ‖inner (𝕜 := 𝕜) u v‖ ≤ ‖u‖ * ‖v‖ := by
   exact norm_inner_le_norm u v
