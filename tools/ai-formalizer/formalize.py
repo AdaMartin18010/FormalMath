@@ -25,16 +25,14 @@ from core import formalize, formalize_with_doc
 
 THEOREM_BLOCK_PATTERN = re.compile(
     r"```\s*theorem\s*\n"
-    r"(.*?)
-"        # statement
+    r"(.*?)"
     r"```",
     re.DOTALL,
 )
 
 NATURAL_LANG_PATTERN = re.compile(
     r"```\s*natural\s*\n"
-    r"(.*?)
-"
+    r"(.*?)"
     r"```",
     re.DOTALL,
 )

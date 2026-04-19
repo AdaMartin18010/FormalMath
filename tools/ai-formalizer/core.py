@@ -67,6 +67,9 @@ RELATIONS = [
     (r"包含\s*", r" ⊇ "),
     (r"是\s*的子集\s*", r" ⊆ "),
     (r"是\s*的元素\s*", r" ∈ "),
+    (r"([a-zA-Z_][a-zA-Z0-9_]*)\s+不\s+被\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+整除", r"¬(\2 ∣ \1)"),
+    (r"([a-zA-Z_][a-zA-Z0-9_]*)\s+被\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+整除", r"\2 ∣ \1"),
+    (r"整除\s*", r" ∣ "),
 ]
 
 FUNCTIONS = [
@@ -92,6 +95,9 @@ ASSUMPTIONS = [
     (r"设\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+是拓扑空间", r"{\1 : Type*} [TopologicalSpace \1]"),
     (r"设\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+是度量空间", r"{\1 : Type*} [MetricSpace \1]"),
     (r"设\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+是凸集", r"{S : Set (EuclideanSpace ℝ (Fin n))} (hS : Convex ℝ S)"),
+    (r"设\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+是素数", r"{\1 : ℕ} (h\1 : Nat.Prime \1)"),
+    (r"设\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+是整数", r"{\1 : ℤ}"),
+    (r"([a-zA-Z_][a-zA-Z0-9_]*)\s+是\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+的子群", r"{\1 : Subgroup \2}"),
     (r"let\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+be a continuous function", r"{\1 : ℝ → ℝ} (h\1 : Continuous \1)"),
     (r"let\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+be a differentiable function", r"{\1 : ℝ → ℝ} (h\1 : Differentiable ℝ \1)"),
     (r"let\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+be a finite group", r"{\1 : Type*} [Group \1] [Fintype \1]"),
@@ -244,11 +250,6 @@ def _split_assumptions(text: str) -> Tuple[List[str], str]:
     return [], text.strip()
 
 
-    # Fallback: treat the whole thing as conclusion
-    return [], text.strip()
-
-
-
 def _extract_assumptions(assumptions: List[str]) -> Tuple[List[str], List[str]]:
     """
     Given a list of assumption strings, return:
@@ -275,7 +276,16 @@ def _extract_assumptions(assumptions: List[str]) -> Tuple[List[str], List[str]]:
 
 def _translate_expr(expr: str) -> str:
     """Translate a single mathematical expression to Lean syntax."""
-    # Apply function patterns first (they are more specific)
+    # Replace common algebraic / number-theory phrases before symbol translation
+    expr = re.sub(r'([a-zA-Z_][a-zA-Z0-9_]*)\s+的阶', r'Nat.card \1', expr)
+    expr = re.sub(r'模\s+([a-zA-Z_][a-zA-Z0-9_]*)\s+等于', r'≡ [ZMOD \1] ', expr)
+    expr = re.sub(r'模\s+([a-zA-Z_][a-zA-Z0-9_]*)\s*', r'[ZMOD \1] ', expr)
+
+    # Function application: f(x) -> f x (Lean style) — do this early
+    # so that subsequent rules see Lean-style function applications.
+    expr = re.sub(r'([a-zA-Z_][a-zA-Z0-9_]*)\s*\(([^()]+)\)', r'\1 \2', expr)
+
+    # Apply function patterns (continuous, differentiable, etc.)
     for pattern, repl in FUNCTIONS:
         expr = re.sub(pattern, repl, expr, flags=re.IGNORECASE)
 
@@ -302,6 +312,8 @@ def _translate_expr(expr: str) -> str:
     # e.g. (Icc a,b) -> (Icc a b)
     expr = re.sub(r'\(([^()]*?),\s*([^()]*?)\)', r'(\1 \2)', expr)
 
+    # Normalize spaces around binary operators
+    expr = re.sub(r'\s*([→↔∧∨∈∉⊆⊇≥≤≠=<>+\-*/])\s*', r' \1 ', expr)
     expr = re.sub(r"\s+", " ", expr).strip()
 
     return expr

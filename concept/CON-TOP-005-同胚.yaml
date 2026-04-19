@@ -11,7 +11,7 @@ concept:
   name: "同胚"
   english_name: "Homeomorphism"
   aliases: ["同胚", "同相", "Homeomorphism", "Homeomorphie", "位相同型"]
-  
+
   # ========== 分类信息 ==========
   msc_primary: "54C10"
   msc_secondary: ["54A10", "57N99"]
@@ -19,25 +19,25 @@ concept:
   topic: "一般拓扑学"
   difficulty: 2
   importance: 5
-  
+
   # ========== 定义 ==========
   definition:
     formal: |
       **同胚的定义**：设 (X, τₓ) 和 (Y, τᵧ) 是拓扑空间，f: X → Y 是映射。若 f 满足：
-      
+
       1. **双射**：f 是一一对应
       2. **连续**：f 是连续映射
       3. **逆映射连续**：f⁻¹: Y → X 也是连续映射
-      
+
       则称 f 是**同胚映射**（或拓扑同构）。
-      
+
       若存在同胚 f: X → Y，则称 X 和 Y **同胚**，记作 X ≅ Y。
-      
+
       **等价条件**：
       - f 是双射且 f 和 f⁻¹ 都是连续开映射
       - f 是双射且将开集双射地映射到开集
     intuitive: "同胚是拓扑学中的等价关系，类似于代数学中的同构。同胚的空间具有完全相同的拓扑性质——连通性、紧致性、分离性等。拓扑学的基本问题之一就是判断两个空间是否同胚，这也是庞加莱猜想的核心内容。"
-    
+
   # ========== 属性 ==========
   properties:
     - property: "等价关系"
@@ -52,7 +52,7 @@ concept:
     - property: "复合保持"
       notation: "g ∘ f 同胚"
       description: "同胚的复合仍同胚"
-      
+
   # ========== 关系 ==========
   relationships:
     isA:
@@ -74,13 +74,13 @@ concept:
       - "浸入"
       - "形变收缩"
       - "同伦"
-      
+
   # ========== 历史 ==========
   history:
     first_introduced_by: "Henri Poincaré"
     year: 1895
     context: "Poincaré在创立代数拓扑时引入同胚概念，用于研究空间的拓扑分类"
-    
+
   # ========== 参考文献 ==========
   references:
     textbooks:
@@ -102,29 +102,29 @@ concept:
       - "https://ncatlab.org/nlab/show/homeomorphism"
     mathworld:
       - "http://mathworld.wolfram.com/Homeomorphism.html"
-      
+
   # ========== 形式化 ==========
   formalization:
     lean4: |
-      structure Homeomorphism (X Y : Type*) [TopologicalSpace X] 
+      structure Homeomorphism (X Y : Type*) [TopologicalSpace X]
         [TopologicalSpace Y] extends X ≃ Y where
         continuous_toFun : Continuous toFun
         continuous_invFun : Continuous invFun
-      
+
       infixl:25 " ≃ₜ " => Homeomorphism
-      
-      def IsHomeomorph [TopologicalSpace X] [TopologicalSpace Y] 
+
+      def IsHomeomorph [TopologicalSpace X] [TopologicalSpace Y]
         (f : X → Y) : Prop :=
         ∃ h : X ≃ₜ Y, h = f
     isabelle: |
-      definition homeomorphic :: "'a::topological_space set 
+      definition homeomorphic :: "'a::topological_space set
         ⇒ 'b::topological_space set ⇒ bool" (infixr "homeomorphic" 60)
         where "s homeomorphic t ≡ ∃f g. homeomorphism s t f g"
-      
-      definition homeomorphism :: "'a set ⇒ 'b set ⇒ ('a ⇒ 'b) 
+
+      definition homeomorphism :: "'a set ⇒ 'b set ⇒ ('a ⇒ 'b)
         ⇒ ('b ⇒ 'a) ⇒ bool"
-        where "homeomorphism s t f g ≡ (∀x∈s. g(f x) = x) ∧ 
-          (∀y∈t. f(g y) = y) ∧ continuous_on f s ∧ 
+        where "homeomorphism s t f g ≡ (∀x∈s. g(f x) = x) ∧
+          (∀y∈t. f(g y) = y) ∧ continuous_on f s ∧
           f ` s ⊆ t ∧ continuous_on g t ∧ g ` t ⊆ s"
     coq: |
       Definition homeomorphism {X Y : Type}
@@ -134,12 +134,12 @@ concept:
         (forall y, f (g y) = y) /\
         continuous f /\
         continuous g.
-      
+
       Definition homeomorphic {X Y : Type}
         `{TopologicalSpace X} `{TopologicalSpace Y} : Prop :=
         exists f : X -> Y, exists g : Y -> X,
         homeomorphism f g.
-      
+
   # ========== 文档位置 ==========
   documents:
     - "docs/04-几何拓扑/01-点集拓扑/点集拓扑.md"
