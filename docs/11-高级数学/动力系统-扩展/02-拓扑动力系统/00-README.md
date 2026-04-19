@@ -11,72 +11,60 @@ msc_secondary: ['00-00']
 
 # 拓扑动力系统
 
-## 概述
-
 拓扑动力系统研究连续映射或流在拓扑空间上的迭代行为，关注轨道的长期统计性质和拓扑结构。
 
-## 核心内容
+## 1. 基本概念
 
-### [01-基础概念](01-基础概念.md)
+### 1.1 离散与连续系统
 
-- 离散与连续动力系统
-- 极小性与遍历性
-- 拓扑熵与复杂性
-- 符号空间与移位
+**定义 1.1（拓扑动力系统）**. 拓扑动力系统是二元组 $(X, f)$，其中 $X$ 为紧度量空间，$f: X \to X$ 为连续映射。
 
-### [02-核心定理](02-核心定理.md)
+**定义 1.2（流）**. 流是连续映射 $\phi: X \times \mathbb{R} \to X$，满足 $\phi(x, 0) = x$，$\phi(\phi(x, t), s) = \phi(x, t+s)$。
 
-- Birkhoff遍历定理
-- Poincaré回归定理
-- Krylov-Bogolioubov定理
-- 变分原理
-- Ornstein同构定理
+### 1.2 轨道与极限集
 
-### [03-实战问题](03-实战问题.md)
+**定义 1.3（轨道）**. $x$ 的正轨道为 $\mathcal{O}^+(x) = \{f^n(x) : n \geq 0\}$。
 
-- 符号动力学分析
-- 熵的计算
-- 唯一遍历性证明
-- 混合性判定
+**定义 1.4（$\omega$-极限集）**. $\omega(x) = \bigcap_{n \geq 0} \overline{\{f^k(x) : k \geq n\}}$。
 
-## 关键主题
+## 2. 传递性与混合性
 
-### 符号动力学 (Symbolic Dynamics)
+**定义 2.1（拓扑传递）**. $f$ 拓扑传递，若对任意非空开集 $U, V$，存在 $n$ 使 $f^n(U) \cap V \neq \emptyset$。
 
-- 移位空间 $\Sigma_n^+$
-- 有限型子移位 (SFT)
-- Sofic移位
-- 编码应用
+**定义 2.2（拓扑混合）**. $f$ 拓扑混合，若对任意非空开集 $U, V$，存在 $N$ 使 $f^n(U) \cap V \neq \emptyset$ 对所有 $n \geq N$。
 
-### 遍历理论 (Ergodic Theory)
+**定理 2.3**. 拓扑混合 $
+Rightarrow$ 拓扑传递。
 
-- 保测变换
-- 遍历性、混合性、弱混合
-- 熵理论 (Kolmogorov-Sinai熵)
-- 谱理论
+## 3. 熵
 
-## 数学思想
+**定义 3.1（拓扑熵）**.
 
-拓扑动力系统揭示：**混沌可以通过拓扑工具严格定义**。即使系统不可积，统计方法仍能给出确定性结论。
+$$h_{\text{top}}(f) = \lim_{\epsilon \to 0} \limsup_{n \to \infty} \frac{1}{n} \log N(n, \epsilon),$$
 
-## 历史发展
+其中 $N(n, \epsilon)$ 为 $n$-分离集的最大基数。
 
-- **Poincaré**: 回归定理
-- **Birkhoff**: 遍历定理
-- **Kolmogorov & Sinai**: 熵理论 (1958)
-- **Ornstein**:  Bernoulli移位分类 (1970)
-- **Bowen & Ruelle**: 热力学形式化
+## 4. 例子
 
-## 与其他主题的联系
+### 4.1 例子：圆周旋转
 
-- 为光滑动力系统提供拓扑框架
-- 数论中的丢番图逼近
-- 信息论与编码
-- 统计力学
+$f_\alpha: S^1 \to S^1$，$f_\alpha(x) = x + \alpha \pmod{1}$。
 
-## 推荐资源
+若 $\alpha$ 无理，则每个轨道稠密，系统极小。熵为零。
 
-- Walters, "An Introduction to Ergodic Theory"
-- Lind & Marcus, "An Introduction to Symbolic Dynamics and Coding"
-- Brin & Stuck, "Introduction to Dynamical Systems"
-- Katok & Hasselblatt, "Introduction to the Modern Theory of Dynamical Systems"
+### 4.2 例子：符号动力系统
+
+全移位 $(\Sigma_k, \sigma)$，$\Sigma_k = \{1, \dots, k\}^\mathbb{Z}$，$(\sigma x)_n = x_{n+1}$。
+
+拓扑熵 $h_{\text{top}}(\sigma) = \log k$。
+
+## 5. 交叉引用
+
+- [定性理论](docs/11-高级数学/动力系统-扩展/01-常微分方程定性理论/00-README.md) — ODE 定性理论
+- [光滑系统](docs/11-高级数学/动力系统-扩展/03-光滑动力系统/00-README.md) — 光滑动力系统
+- [哈密顿系统](docs/11-高级数学/动力系统-扩展/04-哈密顿系统/00-README.md) — 哈密顿系统
+- [复动力系统](docs/11-高级数学/动力系统-扩展/05-复动力系统/00-README.md) — 复动力系统
+
+---
+
+**适用**：docs/11-高级数学/

@@ -11,72 +11,43 @@ msc_secondary: ['00-00']
 
 # 光滑动力系统
 
-## 概述
-
 光滑动力系统研究流形上光滑映射或流的迭代行为，结合微分拓扑与动力系统理论，揭示混沌现象的深层机制。
 
-## 核心内容
+## 1. 双曲性
 
-### [01-基础概念](01-基础概念.md)
+**定义 1.1（双曲集）**. 紧不变集 $\Lambda$ 双曲，若切丛限制 $T_\Lambda M$ 分裂为 $E^s \oplus E^u$，$Df$ 在 $E^s$ 上压缩、在 $E^u$ 上扩张。
 
-- 双曲结构与稳定性
-- 稳定与不稳定流形
-- 结构稳定性与 $\Omega$-稳定性
-- 奇怪吸引子
+**定义 1.2（Anosov 微分同胚）**. 整个流形 $M$ 为双曲集。
 
-### [02-核心定理](02-核心定理.md)
+## 2. 稳定流形定理
 
-- 稳定流形定理
-- Hartman-Grobman定理（光滑版本）
-- Smale马蹄定理
-- Pugh封闭引理
-- Kupka-Smale定理
+**定理 2.1（稳定流形）**. 双曲集 $\Lambda$ 中每点 $x$ 有局部稳定流形 $W^s_\epsilon(x)$ 和局部不稳定流形 $W^u_\epsilon(x)$，分别为与 $E^s_x$、$E^u_x$ 相切的光滑子流形。
 
-### [03-实战问题](03-实战问题.md)
+## 3. 结构稳定性
 
-- 双曲不动点分析
-- Horseshoe构造
-- 吸引子维数估计
-- Lyapunov指数计算
+**定义 3.1（结构稳定）**. $f$ 结构稳定，若存在邻域使其中每个 $g$ 与 $f$ 拓扑共轭。
 
-## 关键主题
+**定理 3.2（Anosov）**. Anosov 微分同胚结构稳定。
 
-### 双曲理论 (Hyperbolicity)
+## 4. 例子
 
-- 双曲不动点与周期轨道
-- Anosov系统
-- 公理A系统
-- 一致与非一致双曲
+### 4.1 例子：环面双曲自同构
 
-### 混沌理论 (Chaos Theory)
+$A = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix} \in SL(2, \mathbb{Z})$ 诱导 $T^2$ 上的 Anosov 微分同胚。特征值 $\lambda > 1$ 和 $1/\lambda$，对应稳定与不稳定方向。
 
-- Smale马蹄
-- Lorentz吸引子
-- Hénon映射
-- 混沌判据
+### 4.2 例子：Hénon 映射
 
-## 数学思想
+$$H_{a,b}(x,y) = (1 - ax^2 + y, bx)$$
 
-光滑动力系统表明：**混沌不是随机，而是确定性系统的复杂行为**。双曲结构提供了理解混沌的严格框架。
+对适当参数，存在奇怪吸引子。
 
-## 历史发展
+## 5. 交叉引用
 
-- **Poincaré**: 三体问题中的混沌
-- **Smale (1960s)**: 马蹄构造，结构稳定性理论
-- **Anosov (1967)**: 测地流的双曲性
-- **Bowen (1970s)**: 公理A系统的统计理论
-- **Lorenz (1963)**: 奇怪吸引子的数值发现
+- [定性理论](docs/11-高级数学/动力系统-扩展/01-常微分方程定性理论/00-README.md) — ODE 定性理论
+- [拓扑系统](docs/11-高级数学/动力系统-扩展/02-拓扑动力系统/00-README.md) — 拓扑动力系统
+- [哈密顿系统](docs/11-高级数学/动力系统-扩展/04-哈密顿系统/00-README.md) — 哈密顿系统
+- [复动力系统](docs/11-高级数学/动力系统-扩展/05-复动力系统/00-README.md) — 复动力系统
 
-## 与其他主题的联系
+---
 
-- 常微分方程定性理论的深化
-- 拓扑动力系统的光滑实现
-- 哈密顿系统的非可积情形
-- 遍历理论的应用
-
-## 推荐资源
-
-- Palis & de Melo, "Geometric Theory of Dynamical Systems"
-- Katok & Hasselblatt, "Introduction to the Modern Theory of Dynamical Systems"
-- Robinson, "Dynamical Systems: Stability, Symbolic Dynamics, and Chaos"
-- Guckenheimer & Holmes, "Nonlinear Oscillations, Dynamical Systems, and Bifurcations"
+**适用**：docs/11-高级数学/

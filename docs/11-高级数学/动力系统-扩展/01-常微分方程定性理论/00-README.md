@@ -11,55 +11,51 @@ msc_secondary: ['00-00']
 
 # 常微分方程定性理论
 
-## 概述
-
 定性理论研究微分方程解的长期行为，不依赖于显式求解方程，而是通过分析相空间的几何结构来理解系统动力学。
 
-## 核心内容
+## 1. 基础概念
 
-### [01-基础概念](01-基础概念.md)
+### 1.1 平衡点与稳定性
 
-- 自治系统与非自治系统
-- 相空间与相图
-- 平衡点与周期轨道
-- 流与向量场
-- 稳定性概念
+**定义 1.1（平衡点）**. $x^*$ 为系统 $\dot{x} = f(x)$ 的平衡点，若 $f(x^*) = 0$。
 
-### [02-核心定理](02-核心定理.md)
+**定义 1.2（Lyapunov 稳定）**. $x^*$ Lyapunov 稳定，若对任意 $\epsilon > 0$，存在 $\delta > 0$ 使 $\|x(0) - x^*\| < \delta$ 蕴含 $\|x(t) - x^*\| < \epsilon$（$t \geq 0$）。
 
-- 存在唯一性定理
-- Lyapunov稳定性定理
-- Poincaré-Bendixson定理
-- Hartman-Grobman定理
-- 分支理论基本定理
+**定义 1.3（渐近稳定）**. Lyapunov 稳定且 $x(t) \to x^*$（$t \to \infty$）。
 
-### [03-实战问题](03-实战问题.md)
+### 1.2 线性化
 
-- 平衡点分类与稳定性分析
-- 极限环的存在性判定
-- Hopf分支分析
-- 实际应用案例
+**定理 1.4（Hartman-Grobman）**. 若 $Df(x^*)$ 无实部为零的特征值，则系统在 $x^*$ 附近拓扑共轭于其线性化。
 
-## 数学思想
+## 2. Lyapunov 方法
 
-定性理论的核心在于：**几何优先于代数**。通过相空间的拓扑结构，我们可以洞察系统的本质行为。
+**定理 2.1（Lyapunov 直接法）**. 设 $V$ 为 $x^*$ 邻域上的 $C^1$ 函数，$V(x^*) = 0$，$V(x) > 0$（$x \neq x^*$）。若 $\dot{V} = \nabla V \cdot f \leq 0$，则 $x^*$ Lyapunov 稳定；若 $\dot{V} < 0$（$x \neq x^*$），则渐近稳定。
 
-## 历史发展
+## 3. Poincaré-Bendixson 定理
 
-- **Poincaré (1880s)**: 奠基人，引入相空间概念
-- **Lyapunov (1892)**: 稳定性理论的系统发展
-- **Birkhoff (1920s)**: 动力系统一般理论
-- **Andronov & Pontryagin (1937)**: 结构稳定性
+**定理 3.1**. 设 $\Omega \subset \mathbb{R}^2$ 为正不变集，不含平衡点。则 $\Omega$ 中存在周期轨道。
 
-## 与其他主题的联系
+## 4. 例子
 
-- 为拓扑动力系统提供具体例子
-- 光滑动力系统的基础
-- 哈密顿系统的特例
+### 4.1 例子：Van der Pol 振子
 
-## 推荐资源
+$$\ddot{x} - \mu(1-x^2)\dot{x} + x = 0$$
 
-- Poincaré, "Méthodes Nouvelles de la Mécanique Céleste"
-- Hartman, "Ordinary Differential Equations"
-- Perko, "Differential Equations and Dynamical Systems"
-- Strogatz, "Nonlinear Dynamics and Chaos"
+对 $\mu > 0$，存在唯一稳定极限环。
+
+### 4.2 例子：Lorenz 系统
+
+$$\begin{cases} \dot{x} = \sigma(y-x) \\ \dot{y} = x(\rho-z) - y \\ \dot{z} = xy - \beta z \end{cases}$$
+
+对 $\sigma=10, \beta=8/3, \rho=28$，系统呈现混沌行为（奇怪吸引子）。
+
+## 5. 交叉引用
+
+- [ODE](docs/03-分析学/ODE-习题与数值解.md) — 常微分方程基础
+- [动力系统](docs/11-高级数学/动力系统-扩展/02-拓扑动力系统/00-README.md) — 拓扑动力系统
+- [混沌](docs/11-高级数学/动力系统-扩展/05-复动力系统/00-README.md) — 复动力系统
+- [微分几何](docs/04-几何与拓扑/02-微分几何-扩展/01-微分几何基础.md) — 流形上的向量场
+
+---
+
+**适用**：docs/11-高级数学/

@@ -11,72 +11,45 @@ msc_secondary: ['00-00']
 
 # 无穷维动力系统
 
-## 概述
-
 无穷维动力系统研究偏微分方程、时滞方程、格点系统等演化方程的长期行为，将有限维动力系统理论推广到无限维空间。
 
-## 核心内容
+## 1. 半群理论
 
-### [01-基础概念](01-基础概念.md)
+**定义 1.1（$C_0$-半群）**. Banach 空间 $X$ 上的 $C_0$-半群是映射 $S: [0,\infty) \to \mathcal{L}(X)$ 满足 $S(0) = I$，$S(t+s) = S(t)S(s)$，且 $S(t)x \to x$（$t \to 0$）对所有 $x \in X$。
 
-- Banach空间上的半群
-- 吸引子与惯性流形
-- 全局解的存在性
-- 紧性与耗散性
+**定理 1.2（Hille-Yosida）**. 算子 $A$ 生成 $C_0$-半群当且仅当 $A$ 稠定闭且预解式满足适当估计。
 
-### [02-核心定理](02-核心定理.md)
+## 2. 整体吸引子
 
-- Hille-Yosida定理
-- 全局吸引子存在定理
-- 惯性流形定理
-- Smale谱分解定理
-- 空间-时间混沌
+**定义 2.1（吸引子）**. 整体吸引子 $\mathcal{A}$ 是紧不变集，吸引所有有界集：对任意有界 $B$，$\operatorname{dist}(S(t)B, \mathcal{A}) \to 0$（$t \to \infty$）。
 
-### [03-实战问题](03-实战问题.md)
+**定理 2.2**.  dissipative 系统（如 Navier-Stokes 方程在 2D）存在整体吸引子。
 
-- Navier-Stokes方程分析
-- 反应扩散方程动力学
-- 吸引子维数估计
-- Galerkin逼近
+## 3. 惯性流形
 
-## 关键主题
+**定义 3.1（惯性流形）**. 惯性流形是有限维 Lipschitz 不变流形，包含整体吸引子，且指数吸引所有轨道。
 
-### Navier-Stokes方程
+## 4. 例子
 
-- 弱解与强解
-- 吸引子与湍流
-- 正则性问题（千禧年难题）
-- 涡度动力学
+### 4.1 例子：反应扩散方程
 
-### 反应扩散方程
+$$u_t = \Delta u + f(u)$$
 
-- 行波解
-- Turing不稳定性
-- 模式形成
-- 渐近行为
+在适当边界条件下，存在有限维整体吸引子。
 
-## 数学思想
+### 4.2 例子：Kuramoto-Sivashinsky 方程
 
-无穷维动力系统表明：**无穷自由度带来新的复杂性**。有限维技巧（如Hartman-Grobman）往往失效，需要发展新的工具（惯性流形、指数二分性）。
+$$u_t + u_{xxxx} + u_{xx} + \frac{1}{2}(u_x)^2 = 0$$
 
-## 历史发展
+一维情形具有低维混沌吸引子。
 
-- **Hopf (1951)**: 第一个PDE分支例子
-- **Ladyzhenskaya (1970s)**: Navier-Stokes吸引子
-- **Foias, Temam, Sell (1980s)**: 无穷维动力系统框架
-- **Mallet-Paret, Nussbaum**: 时滞方程理论
-- **Hale, Raugel**: 扰动与惯性流形
+## 5. 交叉引用
 
-## 与其他主题的联系
+- [偏微分方程](docs/03-分析学/04-偏微分方程/01-偏微分方程基础.md) — PDE 基础
+- [泛函分析](docs/03-分析学/03-泛函分析/03-泛函分析.md) — Banach 空间与算子理论
+- [拓扑系统](docs/11-高级数学/动力系统-扩展/02-拓扑动力系统/00-README.md) — 拓扑动力系统
+- [光滑系统](docs/11-高级数学/动力系统-扩展/03-光滑动力系统/00-README.md) — 光滑动力系统
 
-- 偏微分方程的定性理论
-- 有限维动力系统的极限
-- 统计物理与湍流
-- 生物学模式形成
+---
 
-## 推荐资源
-
-- Temam, "Infinite-Dimensional Dynamical Systems in Mechanics and Physics"
-- Robinson, "Infinite-Dimensional Dynamical Systems"
-- Ladyzhenskaya, "Attractors for Semigroups and Evolution Equations"
-- Hale, "Asymptotic Behavior of Dissipative Systems"
+**适用**：docs/11-高级数学/
