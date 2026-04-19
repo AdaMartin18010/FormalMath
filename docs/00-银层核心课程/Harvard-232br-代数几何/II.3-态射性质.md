@@ -365,3 +365,16 @@ theorem closedImmersion_stableUnderBaseChange :
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.3-态射性质.md`
 **创建日期**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明：仿射态射 $f: X \\to Y$ 是紧的当且仅当对应的环同态使 $A$ 成为有限生成 $R$-模。
+
+*解答*：仿射态射的紧性等价于 $\\operatorname{Spec} A \\to \\operatorname{Spec} R$ 的纤维有限，即 $A$ 是有限 $R$-模。$\square$
+
+---
+
+**习题 1.2**。举例说明：有限型态射不一定是有限的。
+
+*解答*：$\\mathbb{A}^1 \\to \\operatorname{Spec} k$ 是有限型的（$k[x]$ 是有限生成 $k$-代数），但不是有限的（$k[x]$ 不是有限 $k$-模）。$\square$

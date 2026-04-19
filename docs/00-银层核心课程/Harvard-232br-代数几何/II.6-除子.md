@@ -676,3 +676,16 @@ theorem duple_pullback {X : Scheme} [IsNoetherian X] [IsIntegral X]
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.6-除子.md`
 **创建日期**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。在 $\\mathbb{P}^1$ 上，Weil除子与Cartier除子是否等价？为什么？
+
+*解答*：是。$\\mathbb{P}^1$ 是正则Noetherian整概形（维数1），在这种情形下Weil除子与Cartier除子自然等价。$\square$
+
+---
+
+**习题 1.2**。计算 $\\mathbb{P}^2$ 中直线 $L = V(x)$ 的Weil除子类。
+
+*解答*：$L$ 是素除子（不可约 codimension 1 子簇），其除子类为 $[L] \\in \\operatorname{Cl}(\\mathbb{P}^2) \\cong \\mathbb{Z}$。因 $\\operatorname{Cl}(\\mathbb{P}^2)$ 由超平面类生成，$[L] = 1$。$\square$

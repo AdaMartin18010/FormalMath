@@ -290,3 +290,16 @@ theorem torsionFree_iff_locallyFreeInCodimOne {X : Scheme}
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.5-模与层.md`
 **创建日期**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明：拟凝聚层 $\\mathcal{F}$ 在仿射概形 $\\operatorname{Spec} A$ 上由 $A$-模 $M = \\Gamma(X, \\mathcal{F})$ 完全决定。
+
+*解答*：在仿射情形下，拟凝聚层的定义即为与某个 $A$-模 $M$ 相关联的层 $\\widetilde{M}$。由层的整体截面可恢复模结构，反之亦然。$\square$
+
+---
+
+**习题 1.2**。举例说明：局部自由层不一定是自由层。
+
+*解答*：$\\mathbb{P}^1$ 上的切丛 $\\mathcal{T}_{\\mathbb{P}^1} \\cong \\mathcal{O}(2)$ 是局部自由的（在仿射覆盖上自由），但整体截面空间维数为3，而秩为1的自由层 $\\mathcal{O}$ 的整体截面维数为1，故 $\\mathcal{O}(2)$ 不是自由层。$\square$

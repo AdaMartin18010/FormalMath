@@ -324,3 +324,16 @@ theorem puncturedA2H1Nonzero (k : Type*) [Field k] :
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.1-层的基本性质.md`
 **创建日期**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明：预层 $\\mathcal{F}$ 是层当且仅当对任意开覆盖 $\\{U_i\\}$，序列 $\\mathcal{F}(U) \\to \\prod \\mathcal{F}(U_i) \\rightrightarrows \\prod \\mathcal{F}(U_i\\cap U_j)$ 是等化子。
+
+*解答*：层的定义直接对应此等化子条件：局部一致性推出全局存在性和唯一性。$\square$
+
+---
+
+**习题 1.2**。设 $X$ 是拓扑空间，$\\mathcal{F}$ 是常预层（对所有非空开集赋同一群 $G$）。证明 $\\mathcal{F}$ 的层化是常层 $\\underline{G}$。
+
+*解答*：层化在每点的茎为 $G$，而常层 $\\underline{G}$ 的截面是局部常值函数，满足层的粘合条件。$\square$

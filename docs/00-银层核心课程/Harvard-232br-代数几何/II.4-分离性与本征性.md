@@ -338,3 +338,16 @@ theorem proper_over_algClosed_global_sections
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.4-分离性与本征性.md`
 **创建日期**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明 $\\mathbb{A}^1$ 是分离的，但 $\\mathbb{A}^1$ 到 $\\operatorname{Spec} k$ 不是本征的。
+
+*解答*：分离性：对角嵌入 $\\mathbb{A}^1 \\to \\mathbb{A}^2$ 是闭浸入。非本征：$\\mathbb{A}^1$ 不是紧的（在经典拓扑下同胚于 $\\mathbb{C}$，非紧）。$\square$
+
+---
+
+**习题 1.2**。用 Valuative Criterion 证明：若 $X$ 是本征的，则 $X$ 的任何整点 $\\operatorname{Spec} K \\to X$（$K$ 为域）可唯一延拓到 $\\operatorname{Spec} \\mathcal{O}_K \\to X$（$\\mathcal{O}_K$ 为赋值环）。
+
+*解答*：这正是本征性的 Valuative Criterion。$\square$

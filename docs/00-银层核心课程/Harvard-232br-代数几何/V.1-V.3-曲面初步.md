@@ -989,3 +989,16 @@ theorem enriques_criterion_kodaira :
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/V.1-V.3-曲面初步.md`
 **创建日期**: 2026-04-18
 **覆盖习题**: V.1.1, V.1.2, V.1.3, V.1.4, V.2.1, V.2.2, V.3.1, V.3.2（共 8 题）
+
+
+## 习题
+
+**习题 1.1**。计算 $\\mathbb{P}^2$  blown up at a point 的Picard数和相交形式。
+
+*解答*：$\\operatorname{Pic}(\\operatorname{Bl}_P \\mathbb{P}^2) = \\mathbb{Z}H \\oplus \\mathbb{Z}E$，其中 $H$ 是严格变换的超平面类，$E$ 是例外除子。相交形式：$H^2=1, E^2=-1, H\\cdot E=0$。$\square$
+
+---
+
+**习题 1.2**。陈述Castelnuovo判别法：何时一个曲面是有理曲面？
+
+*解答*：Castelnuovo：光滑射影曲面 $S$ 是有理曲面当且仅当 $q = P_2 = 0$（其中 $q = h^1(\\mathcal{O}_S)$，$P_2 = h^0(2K_S)$）。$\square$

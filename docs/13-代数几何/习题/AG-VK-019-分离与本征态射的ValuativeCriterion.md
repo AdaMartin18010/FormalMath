@@ -281,3 +281,16 @@ theorem proper_valuative_criterion {X Y : Scheme} (f : X ⟶ Y) :
 **文档位置**: `docs/13-代数几何/习题/AG-VK-019-分离与本征态射的ValuativeCriterion.md`  
 **创建日期**: 2026-04-17  
 **最后更新**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。用Valuative Criterion证明 $\\mathbb{P}^1 \\to \\operatorname{Spec} k$ 是本征的。
+
+*解答*：对任意赋值环 $R$ 及其分式域 $K$，映射 $\\operatorname{Spec} K \\to \\mathbb{P}^1$ 对应 $K$-值点 $[a:b]$。因 $R$ 是赋值环，$a/b \\in R$ 或 $b/a \\in R$，故可唯一延拓到 $R$-值点。$\square$
+
+---
+
+**习题 1.2**。举例说明：非分离概形不满足Valuative Criterion的唯一性。
+
+*解答*：含双原点的直线 $\\mathbb{A}^1$：两个原点给出两个不同的 $R$-值点延拓。$\square$

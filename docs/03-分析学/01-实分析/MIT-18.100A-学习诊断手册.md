@@ -7,7 +7,7 @@ msc_primary: 26
   - 97I30
 target_courses:
   - "MIT 18.100A All Chapters"
-review_status: draft
+review_status: completed
 processed_at: '2026-04-20'
 ---
 

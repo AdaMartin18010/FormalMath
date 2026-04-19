@@ -707,7 +707,7 @@ $2C + D + 2E = 5$ ... (3)
 
 ### Gram-Schmidt 正交化
 
-Mathlib4 提供了 `gramSchmidt` 函数，它接收一个内积空间中的向量族，返回一组正交向量。这正是定义 11.6 的算法实现：对每个新向量，减去它在前面所有已正交化方向上的投影分量。
+Mathlib4 提供了 `gramSchmidt` 函数，它接收一个内积空间中的向量族，返回一组正交向量。这正是**定义 11.6** 的算法实现：对每个新向量，减去它在前面所有已正交化方向上的投影分量。
 
 ```lean4
 import Mathlib
@@ -732,7 +732,7 @@ QR 分解将列满秩矩阵 $A$ 分解为列正交矩阵 $Q$ 与上三角矩阵 
 ```lean4
 open Matrix
 
--- 定义 11.4：正交矩阵（QᵀQ = I）
+-- **定义 11.4**：正交矩阵（QᵀQ = I）
 def IsOrthogonalMatrix {n : ℕ} (Q : Matrix (Fin n) (Fin n) ℝ) : Prop :=
   Qᵀ * Q = 1
 

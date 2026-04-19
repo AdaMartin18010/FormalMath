@@ -275,3 +275,16 @@ theorem affine_scheme_equivalence :
 **文档位置**: `docs/13-代数几何/习题/AG-VK-017-仿射概形的结构层与Spec-Γ范畴等价.md`  
 **创建日期**: 2026-04-17  
 **最后更新**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明 $\\Gamma(\\operatorname{Spec} A, \\widetilde{M}) = M$。
+
+*解答*：由 $\\widetilde{M}$ 的定义，在 $D(f)$ 上截面为 $M_f$，整体截面是这些局部截面的相容系统，即 $M$ 本身。$\square$
+
+---
+
+**习题 1.2**。证明函子 $\\operatorname{Spec}: \\mathbf{Ring}^{op} \\to \\mathbf{Sch}$ 与 $\\Gamma: \\mathbf{Sch} \\to \\mathbf{Ring}^{op}$ 构成伴随对。
+
+*解答*：$\\operatorname{Hom}_{\\mathbf{Sch}}(X, \\operatorname{Spec} A) \\cong \\operatorname{Hom}_{\\mathbf{Ring}}(A, \\Gamma(X, \\mathcal{O}_X))$。这是仿射概形的泛性质。$\square$

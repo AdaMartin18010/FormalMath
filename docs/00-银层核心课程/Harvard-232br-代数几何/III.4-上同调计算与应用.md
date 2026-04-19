@@ -625,3 +625,16 @@ theorem Ext1_locallyFree_tensor {X : Scheme}
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/III.4-上同调计算与应用.md`
 **创建日期**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。用Riemann-Roch定理计算 $\\mathbb{P}^1$ 上 $H^0(\\mathbb{P}^1, \\mathcal{O}(n))$ 的维数。
+
+*解答*：$\\mathbb{P}^1$ 亏格 $g=0$，$\\deg \\mathcal{O}(n) = n$。Riemann-Roch：$l(D) - l(K-D) = \\deg D + 1 - g = n + 1$。当 $n \\geq 0$，$K-D$ 次数为 $-2-n < 0$，故 $l(K-D)=0$，$l(D)=n+1$。$\square$
+
+---
+
+**习题 1.2**。陈述Kodaira消失定理，并说明其在代数几何中的重要性。
+
+*解答*：Kodaira消失：设 $X$ 是光滑射影簇，$\\mathcal{L}$ 是丰富线丛，则 $H^i(X, K_X \\otimes \\mathcal{L}) = 0$（$i > 0$）。重要性：提供计算上同调的强大工具，是Enriques-Kodaira分类的基础。$\square$

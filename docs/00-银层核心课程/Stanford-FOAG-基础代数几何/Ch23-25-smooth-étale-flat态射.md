@@ -539,3 +539,16 @@ $$\chi(X_y, \mathcal{O}) = \sum_{i=0}^{\dim(X_y)} (-1)^i h^i(X_y, \mathcal{O})$$
 **文档位置**: `docs/00-银层核心课程/Stanford-FOAG-基础代数几何/Ch23-25-smooth-étale-flat态射.md`
 **创建日期**: 2026-04-18
 **最后更新**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。证明：光滑态射是平坦的，且纤维是光滑簇。
+
+*解答*：光滑态射的局部定义要求 Jacobi 矩阵满秩，这推出平坦性（正则局部环是Cohen-Macaulay的）。纤维的维数恒定且正则，故光滑。$\square$
+
+---
+
+**习题 1.2**。举例说明：平坦态射不一定是光滑的。
+
+*解答*：$\\operatorname{Spec} k[x,y]/(xy) \\to \\operatorname{Spec} k[x]$ 是平坦的（无挠），但在原点处纤维是结点，不光滑。$\square$

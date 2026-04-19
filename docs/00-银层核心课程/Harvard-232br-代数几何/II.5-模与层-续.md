@@ -343,3 +343,16 @@ theorem rank_constant_on_connectedComponents {X : Scheme}
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.5-模与层-续.md`
 **创建日期**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。设 $0 \\to \\mathcal{F}' \\to \\mathcal{F} \\to \\mathcal{F}'' \\to 0$ 是层的短正合列。证明若 $\\mathcal{F}'$ 和 $\\mathcal{F}''$ 拟凝聚，则 $\\mathcal{F}$ 也拟凝聚。
+
+*解答*：拟凝聚性是局部的，且在仿射开集上对应模的正合列。模的扩张保持有限生成性（在Noetherian环上），故 $\\mathcal{F}$ 拟凝聚。$\square$
+
+---
+
+**习题 1.2**。描述 $\\mathbb{P}^1$ 上可逆层（线丛）的Picard群 $\\operatorname{Pic}(\\mathbb{P}^1)$。
+
+*解答*：$\\operatorname{Pic}(\\mathbb{P}^1) \\cong \\mathbb{Z}$，由 $\\mathcal{O}(n)$ 生成。任意可逆层同构于某个 $\\mathcal{O}(n)$。$\square$

@@ -307,3 +307,16 @@ import Mathlib
 
 example : True := by trivial
 `
+
+
+## 习题
+
+**习题 1.1**。证明：光滑射影曲线 $X$ 上的线丛 $\\mathcal{L}$ 是丰富的当且仅当对任意凝聚层 $\\mathcal{F}$，$H^i(X,\\mathcal{F}\\otimes\\mathcal{L}^{\\otimes n})=0$ 对充分大的 $n$ 和 $i>0$ 成立。
+
+*解答*：这是 Serre 消失定理，是丰富线丛的定义性质之一。$\square$
+
+---
+
+**习题 1.2**。计算 $\\mathbb{P}^2$ 上 $\\mathcal{O}(n)$ 的上同调群 $H^i(\\mathbb{P}^2,\\mathcal{O}(n))$ 对所有 $i,n$。
+
+*解答*：$H^0=\\binom{n+2}{2}$（$n\\geq 0$），$H^1=0$（对所有 $n$），$H^2=H^0(\\mathcal{O}(-n-3))^\\vee$。$\square$

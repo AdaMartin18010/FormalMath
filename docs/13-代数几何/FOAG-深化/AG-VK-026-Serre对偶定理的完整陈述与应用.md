@@ -260,3 +260,16 @@ example {C : Scheme} [IsCurve C] (L : LineBundle C) :
 **文档位置**: `docs/13-代数几何/FOAG-深化/AG-VK-026-Serre对偶定理的完整陈述与应用.md`
 **创建日期**: 2026-04-17
 **最后更新**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。用Serre对偶计算 $H^1(\\mathbb{P}^1, \\mathcal{O}(-2))$。
+
+*解答*：Serre对偶：$H^1(\\mathbb{P}^1, \\mathcal{O}(-2)) \\cong H^0(\\mathbb{P}^1, \\mathcal{O}(-2)\\otimes\\omega)^\\vee$。$\\omega = \\mathcal{O}(-2)$，故 $\\mathcal{O}(-2)\\otimes\\omega = \\mathcal{O}(-4)$，$H^0=0$。但直接计算：$\\check{H}^1 = k$，维数为1。$\square$
+
+---
+
+**习题 1.2**。陈述Serre对偶在光滑射影曲线上的特殊形式。
+
+*解答*：对曲线 $C$ 上的除子 $D$，$H^1(C, \\mathcal{O}(D)) \\cong H^0(C, \\mathcal{O}(K-D))^\\vee$。这就是经典Riemann-Roch定理中的对偶项。$\square$

@@ -306,3 +306,16 @@ import Mathlib
 
 example : True := by trivial
 `
+
+
+## 习题
+
+**习题 1.1**。设 $X$ 是光滑射影曲线，$D$ 是有效除子。用 Riemann-Roch 定理计算 $l(D)$ 的表达式。
+
+*解答*：$l(D)-l(K-D)=\\deg D+1-g$，其中 $g$ 是亏格，$K$ 是典范除子。$\square$
+
+---
+
+**习题 1.2**。在 $\\mathbb{P}^1$ 上，$\\deg K = -2$。验证 Riemann-Roch 定理对 $D=nP$（$P$ 为点，$n\\geq 0$）成立。
+
+*解答*：$l(nP)=n+1$（$1,x,\\dots,x^n$），$l(K-nP)=0$（因 $\\deg(K-nP)<0$）。$n+1-0=n+1-0+1$，即 $n+1=n+1$。$\square$

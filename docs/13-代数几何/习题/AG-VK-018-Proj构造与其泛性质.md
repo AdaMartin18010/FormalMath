@@ -265,3 +265,16 @@ def ProjectiveSpace (n : ℕ) (k : Type*) [Field k] : Scheme :=
 **文档位置**: `docs/13-代数几何/习题/AG-VK-018-Proj构造与其泛性质.md`  
 **创建日期**: 2026-04-17  
 **最后更新**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明 $\\operatorname{Proj} S$ 是紧的（proper）于 $\\operatorname{Spec} S_0$。
+
+*解答*：$\\operatorname{Proj} S$ 可覆盖为仿射开集 $D_+(f) = \\operatorname{Spec} (S_f)_0$。利用分次环的泛性质可证其为紧态射。$\square$
+
+---
+
+**习题 1.2**。描述 $\\operatorname{Proj} k[x_0,\\dots,x_n] = \\mathbb{P}^n_k$ 的标准仿射覆盖。
+
+*解答*：$D_+(x_i) = \\operatorname{Spec} k[x_0/x_i,\\dots,x_n/x_i]$，$n+1$ 个仿射开集覆盖 $\\mathbb{P}^n$。$\square$

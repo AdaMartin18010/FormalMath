@@ -91,7 +91,7 @@ $$\phi:\operatorname{Spec}A_f\longrightarrow D(f),\quad\mathfrak q\longmapsto\ma
 
 **步骤 2：结构层的同构**
 
-由 II.1.1(d)，对任意 $g\in A$ 使得 $D(g)\subseteq D(f)$（即 $f\in\sqrt{(g)}$），有 $\mathcal{O}_X(D(g))\cong A_g$。而 $A_g\cong (A_f)_{g/1}$（$g/1$ 在 $A_f$ 中的像）。于是对 $D(f)$ 的基 $\{D(g)\}$，预层 $U\mapsto\mathcal{O}_X(U)$ 与 $\operatorname{Spec}A_f$ 的结构层在该基上的取值相同。由层的唯一性（或命题 2.2(b)），它们诱导出同构的层。∎
+由 II.1.1(d)，对任意 $g\in A$ 使得 $D(g)\subseteq D(f)$（即 $f\in\sqrt{(g)}$），有 $\mathcal{O}_X(D(g))\cong A_g$。而 $A_g\cong (A_f)_{g/1}$（$g/1$ 在 $A_f$ 中的像）。于是对 $D(f)$ 的基 $\{D(g)\}$，预层 $U\mapsto\mathcal{O}_X(U)$ 与 $\operatorname{Spec}A_f$ 的结构层在该基上的取值相同。由层的唯一性（或**命题 2.2**(b)），它们诱导出同构的层。∎
 
 ### 关键概念提示
 
@@ -232,7 +232,7 @@ def reducedSubscheme (X : Scheme) :
 
 **存在性**：取 $X$ 的仿射开覆盖 $\{U_i=\operatorname{Spec}A_i\}$。限制映射给出环同态
 $$\varphi_i:A\xrightarrow{\varphi}\Gamma(X,\mathcal{O}_X)\longrightarrow A_i.$$
-由命题 2.3(b)，每个 $\varphi_i$ 诱导概形态射 $f_i:U_i\to\operatorname{Spec}A$。
+由**命题 2.3**(b)，每个 $\varphi_i$ 诱导概形态射 $f_i:U_i\to\operatorname{Spec}A$。
 
 在 $U_i\cap U_j$ 上，$f_i$ 与 $f_j$ 的连续映射相同：对 $x\in U_i\cap U_j$，$f_i(x)=\varphi_i^{-1}(\mathfrak p_x)=\varphi^{-1}(\mathfrak p_x)=f_j(x)$（这里 $\mathfrak p_x\subseteq A_i$ 是对应于 $x$ 的素理想）。层映射的相容性由限制映射的交换性保证。于是这些局部态射可粘合为整体连续映射 $f:X\to\operatorname{Spec}A$。
 
@@ -351,3 +351,16 @@ def specZeroIsInitial : IsInitial (Spec (CommRingCat.of PUnit)) :=
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.2-概形的基本性质.md`
 **创建日期**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明 $\\operatorname{Spec} \\mathbb{Z}$ 是终对象于概形范畴，即对任意概形 $X$，存在唯一的态射 $X \\to \\operatorname{Spec} \\mathbb{Z}$。
+
+*解答*：由环的泛性质，$\\mathbb{Z}$ 是环范畴的始对象。$\\operatorname{Spec}$ 是反变函子，故 $\\operatorname{Spec}\\mathbb{Z}$ 是终对象。$\square$
+
+---
+
+**习题 1.2**。描述 $\\mathbb{A}^1_\\mathbb{C} = \\operatorname{Spec} \\mathbb{C}[x]$ 的闭点和generic point。
+
+*解答*：闭点对应极大理想 $(x-a)$（$a\\in\\mathbb{C}$），即复平面上的点。Generic point 对应零理想 $(0)$。$\square$

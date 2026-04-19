@@ -213,7 +213,7 @@ $$= \begin{pmatrix} 2 & 1 & 1 \\ 4 & 2+1 & 2+1 \\ 8 & 4+3 & 4+3+2 \end{pmatrix} 
 
 ### 例题 4.2（利用 LU 分解求解方程组）
 
-**题目**: 对例题 4.1 中的矩阵 $A$，利用其 LU 分解求解 $A\mathbf{x} = \mathbf{b}$，其中 $\mathbf{b} = \begin{pmatrix} 4 \\ 10 \\ 26 \end{pmatrix}$。
+**题目**: 对**例题 4.1** 中的矩阵 $A$，利用其 LU 分解求解 $A\mathbf{x} = \mathbf{b}$，其中 $\mathbf{b} = \begin{pmatrix} 4 \\ 10 \\ 26 \end{pmatrix}$。
 
 **解答**:
 
@@ -521,7 +521,7 @@ import Mathlib
 
 open Matrix
 
--- 定义 4.1：下三角矩阵（对角线以上元素全为零）
+-- **定义 4.1**：下三角矩阵（对角线以上元素全为零）
 def IsLowerTriangular {n : ℕ} (L : Matrix (Fin n) (Fin n) ℝ) : Prop :=
   ∀ i j : Fin n, i < j → L i j = 0
 
@@ -550,7 +550,7 @@ theorem det_upper_triangular {n : ℕ} {U : Matrix (Fin n) (Fin n) ℝ}
 Mathlib4 中的矩阵乘法 `L * U` 直接对应 LU 分解的代数等式 $A = LU$。一旦获得 LU 分解，求解 $A\mathbf{x} = \mathbf{b}$ 就化为两次回代：先解 $L\mathbf{c} = \mathbf{b}$（前向代入），再解 $U\mathbf{x} = \mathbf{c}$（后向回代）。
 
 ```lean4
--- 定义 4.2：LU 分解的存在性表述
+-- **定义 4.2**：LU 分解的存在性表述
 def HasLUDecomposition {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ) : Prop :=
   ∃ L U : Matrix (Fin n) (Fin n) ℝ,
     IsUnitLowerTriangular L ∧ IsUpperTriangular U ∧ A = L * U

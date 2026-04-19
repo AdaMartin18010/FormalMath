@@ -624,3 +624,16 @@ theorem serreVanishing {k : Type*} [Field k]
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/III.3-Čech上同调与导出上同调.md`
 **创建日期**: 2026-04-18
+
+
+## 习题
+
+**习题 1.1**。在什么条件下Čech上同调 $\\check{H}^i(\\mathfrak{U}, \\mathcal{F})$ 与导出上同调 $H^i(X, \\mathcal{F})$ 一致？
+
+*解答*：当 $X$ 是仿射概形或覆盖 $\\mathfrak{U}$ 满足 $H^j(U_{i_0\\cap\\cdots\\cap U_{i_p}, \\mathcal{F}) = 0$（$j > 0$）时，Čech上同调与导出上同调一致（Leray定理）。$\square$
+
+---
+
+**习题 1.2**。用Čech上同调计算 $H^1(\\mathbb{P}^1, \\mathcal{O})$。
+
+*解答*：取标准仿射覆盖 $\\mathbb{P}^1 = U_0 \\cup U_1$。Čech复形：$\\check{C}^0 = \\mathcal{O}(U_0) \\oplus \\mathcal{O}(U_1) = k[x] \\oplus k[x^{-1}]$，$\\check{C}^1 = \\mathcal{O}(U_0 \\cap U_1) = k[x, x^{-1}]$。差分映射 $\\delta(f,g) = g - f$。$\\ker\\delta$ 中的元素是同时在 $U_0$ 和 $U_1$ 正则的函数，即常数。$\\operatorname{im}\\delta = k[x] + k[x^{-1}]$。$H^1 = k[x,x^{-1}]/(k[x]+k[x^{-1}]) = 0$（因任何Laurent多项式可分解为正幂和负幂部分）。$\square$

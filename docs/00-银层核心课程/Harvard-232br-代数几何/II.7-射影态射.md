@@ -433,3 +433,16 @@ theorem veronese_isClosedImmersion (n d : ℕ) [n.AtLeastTwo] (hd : 2 ≤ d)
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.7-射影态射.md`
 **创建日期**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明：闭浸入是射影态射。
+
+*解答*：闭浸入 $Z \\hookrightarrow X$ 可看作由 $\\mathcal{O}_X$ 的某个理想层 $\\mathcal{I}$ 确定的相对Proj，即 $Z \\cong \\operatorname{Proj} \\bigoplus \\mathcal{I}^n / \\mathcal{I}^{n+1}$。$\square$
+
+---
+
+**习题 1.2**。说明为什么 $\\mathbb{A}^1 \\to \\operatorname{Spec} k$ 不是射影态射。
+
+*解答*：射影态射要求存在到某个 $\\mathbb{P}^n$ 的闭浸入分解。$\\mathbb{A}^1$ 不是紧的（在经典拓扑下），而射影态射的纤维是紧的（proper），故 $\\mathbb{A}^1 \\to \\operatorname{Spec} k$ 不是射影的。$\square$

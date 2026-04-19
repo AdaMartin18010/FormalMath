@@ -240,3 +240,16 @@ example : L.IsVeryAmple ↔
 **文档位置**: `docs/13-代数几何/FOAG-深化/AG-VK-025-线丛与映射到射影空间.md`
 **创建日期**: 2026-04-17
 **最后更新**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明：线丛 $\\mathcal{L}$ 给出映射到 $\\mathbb{P}^n$ 当且仅当 $\\mathcal{L}$ 是整体生成的（globally generated）。
+
+*解答*：整体生成等价于存在 $n+1$ 个整体截面 $s_0,\\dots,s_n$ 在每点不同时消失，这正定义了到 $\\mathbb{P}^n$ 的映射 $x \\mapsto [s_0(x):\\cdots:s_n(x)]$。$\square$
+
+---
+
+**习题 1.2**。描述 $\\mathcal{O}(1)$ 在 $\\mathbb{P}^n$ 上的整体截面与超平面的对应关系。
+
+*解答*：$H^0(\\mathbb{P}^n, \\mathcal{O}(1))$ 的基对应齐次坐标 $x_0,\\dots,x_n$。每个截面 $\\sum a_i x_i = 0$ 定义一个超平面。$\square$

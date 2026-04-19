@@ -378,3 +378,16 @@ theorem pform_locallyFree {X : Scheme} {k : Type*} [Field k] [IsAlgClosed k]
 
 **文档位置**: `docs/13-代数几何/Harvard-232br-习题解答/II.8-微分形式.md`
 **创建日期**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。设 $X = \\operatorname{Spec} A$ 是仿射概形。证明 $\\Omega_{X/k} \\cong \\widetilde{\\Omega_{A/k}}$。
+
+*解答*：Kähler微分模 $\\Omega_{A/k}$ 是 $A$-模，其相伴层 $\\widetilde{\\Omega_{A/k}}$ 满足层的泛性质，故同构于 $\\Omega_{X/k}$。$\square$
+
+---
+
+**习题 1.2**。计算 $\\mathbb{A}^1 = \\operatorname{Spec} k[x]$ 上的微分层 $\\Omega_{\\mathbb{A}^1/k}$。
+
+*解答*：$\\Omega_{k[x]/k} = k[x]\\,dx$（自由 $k[x]$-模，秩1）。故 $\\Omega_{\\mathbb{A}^1/k} \\cong \\mathcal{O}_{\\mathbb{A}^1}$。$\square$

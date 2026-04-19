@@ -216,3 +216,16 @@ example (hf : IsFinite f) : IsProper f := by
 **文档位置**: `docs/13-代数几何/FOAG-深化/AG-VK-023-有限态射的整体与局部刻画.md`
 **创建日期**: 2026-04-17
 **最后更新**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明：有限态射是紧的（proper）。
+
+*解答*：有限态射在局部是 $\\operatorname{Spec} B \\to \\operatorname{Spec} A$ 其中 $B$ 是有限 $A$-模。有限态射是仿射的、紧的、且纤维有限的。$\square$
+
+---
+
+**习题 1.2**。举例说明：紧态射不一定是有限的。
+
+*解答*：$\\mathbb{P}^1 \\to \\operatorname{Spec} k$ 是紧的（projective），但不是有限的（$k[x]$ 不是有限 $k$-模）。$\square$

@@ -231,3 +231,16 @@ example {A : Type*} [CommRing A] [IsDomain A] [IsPrincipalIdealRing A] (n : ℕ)
 **文档位置**: `docs/13-代数几何/FOAG-深化/AG-VK-024-Weil除子与Cartier除子的等价理论.md`
 **创建日期**: 2026-04-17
 **最后更新**: 2026-04-17
+
+
+## 习题
+
+**习题 1.1**。证明：在局部唯一分解整环（UFD）上，Weil除子与Cartier除子等价。
+
+*解答*：UFD中高度1的素理想是主理想，故每个Weil除子可由局部方程定义，即Cartier除子。$\square$
+
+---
+
+**习题 1.2**。举例说明：存在Weil除子不是Cartier除子的概形。
+
+*解答*：锥面 $V(xy-z^2) \\subseteq \\mathbb{A}^3$ 在原点处不是UFD，顶点对应的Weil除子不是Cartier除子。$\square$

@@ -564,7 +564,7 @@ import Mathlib
 
 open Matrix LinearMap Module
 
--- 定义 15.1：右奇异向量与奇异值的关系
+-- **定义 15.1**：右奇异向量与奇异值的关系
 -- v 是 AᵀA 对应于特征值 σ² 的单位特征向量 ⟹ ‖Av‖ = σ
 theorem right_singular_vectors_eigen_of_ata {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
     (v : Fin n → ℝ) (σ : ℝ) (hσ : σ > 0)
@@ -588,7 +588,7 @@ theorem right_singular_vectors_eigen_of_ata {m n : ℕ} (A : Matrix (Fin m) (Fin
 Moore-Penrose 伪逆在 Lean4 中可通过 SVD 构造：$A^+ = V \Sigma^+ U^T$。当 $A$ 列满秩时，伪逆退化为 $(A^T A)^{-1} A^T$，它给出最小范数最小二乘解。
 
 ```lean4
--- 定义 15.3：伪逆（列满秩情形下 A⁺ = (AᵀA)⁻¹Aᵀ）
+-- **定义 15.3**：伪逆（列满秩情形下 A⁺ = (AᵀA)⁻¹Aᵀ）
 def MoorePenroseInverse {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
     (hA : LinearMap.ker A.mulVecLinear = ⊥) : Matrix (Fin n) (Fin m) ℝ :=
   (A.transpose * A)⁻¹ * A.transpose
@@ -613,7 +613,7 @@ theorem pseudoinverse_minimal_norm {m n : ℕ} (A : Matrix (Fin m) (Fin n) ℝ)
 Lean4 的 `Basis` 类型与 `LinearMap.toMatrix` 函数精确刻画了线性变换在选定基下的坐标矩阵。基变换公式 $[T]_{\mathcal{C}' \leftarrow \mathcal{B}'} = Q [T]_{\mathcal{C} \leftarrow \mathcal{B}} P^{-1}$ 对应矩阵的相似与等价关系。
 
 ```lean4
--- 定义 15.4：线性变换 T 关于基 B, C 的矩阵表示
+-- **定义 15.4**：线性变换 T 关于基 B, C 的矩阵表示
 -- Mathlib 中：LinearMap.toMatrix B C T
 example (𝕜 : Type*) [Field 𝕜] {V W : Type*} [AddCommGroup V] [Module 𝕜 V]
     [AddCommGroup W] [Module 𝕜 W] {ιV ιW : Type*} [Fintype ιV] [Fintype ιW]
