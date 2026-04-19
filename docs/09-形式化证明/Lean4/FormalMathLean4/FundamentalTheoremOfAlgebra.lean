@@ -21,7 +21,12 @@ This file now references actual theorems and definitions from Mathlib4.
 -- Mathlib4 已经完整证明了这个定理，使用Liouville定理的分析证明方法。
 theorem FundamentalTheoremOfAlgebra {n : ℕ} (hn : n > 0) (p : Polynomial ℂ) (hdeg : p.natDegree = n) :
     ∃ z : ℂ, p.IsRoot z := by
+  have hp : p ≠ 0 := by
+    by_contra h
+    rw [h] at hdeg
+    simp at hdeg
+    linarith
   have hdeg' : 0 < p.degree := by
-    rw [Polynomial.degree_eq_natDegree (by nlinarith)]
+    rw [Polynomial.degree_eq_natDegree hp, hdeg]
     exact_mod_cast hn
   exact Complex.exists_root hdeg'

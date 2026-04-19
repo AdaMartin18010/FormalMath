@@ -30,7 +30,7 @@ axiom JordanCurveTheorem :
     ∀ (γ : ℝ → ℂ), Continuous γ → (∀ t₁ t₂ : Set.Icc (0 : ℝ) 1, γ t₁ = γ t₂ → t₁ = t₂ ∨ (t₁ = 0 ∧ t₂ = 1) ∨ (t₁ = 1 ∧ t₂ = 0)) →
     let C := γ '' Set.Icc 0 1
     ∃ U V : Set ℂ, IsOpen U ∧ IsOpen V ∧ U.Nonempty ∧ V.Nonempty ∧ Disjoint U V ∧
-      U ∪ V ∪ C = Set.univ ∧ IsConnected U ∧ IsConnected V ∧ ¬ Bounded U ∧ Bounded V
+      U ∪ V ∪ C = Set.univ ∧ IsConnected U ∧ IsConnected V ∧ ¬ Bornology.IsBounded U ∧ Bornology.IsBounded V
 
 -- 说明：上述 axiom 对应于数学上的 Jordan 曲线定理。完整证明的难点在于：
 -- 1. 证明补集恰好有两个连通分支（内部和外部）。
