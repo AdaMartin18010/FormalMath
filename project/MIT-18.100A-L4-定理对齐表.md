@@ -14,28 +14,150 @@ version: v1.0
 
 # MIT 18.100A Real Analysis L4定理级对齐表
 
-**课程代码**: MIT 18.100A  
-**课程名称**: Real Analysis  
-**授课教师**: Z. Lin (2025-2026学年)  
-**主教材**: Jiri Lebl, "Basic Analysis: Introduction to Real Analysis (Volume I)"  
-**OCW链接**: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/  
-**对齐等级**: L4（定理证明级完整性验证）  
-**版本**: v1.0  
+**课程代码**: MIT 18.100A
+**课程名称**: Real Analysis
+**授课教师**: Z. Lin (2025-2026学年)
+**主教材**: Jiri Lebl, "Basic Analysis: Introduction to Real Analysis (Volume I)"
+**OCW链接**: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+**对齐等级**: L4（定理证明级完整性验证）
+**版本**: v1.0
 
 ---
 
 ## 目录
 
-1. [概述与文档用途](#1-概述与文档用途)
-2. [定理对齐总表](#2-定理对齐总表)
-3. [序列与极限定理详解](#3-序列与极限定理详解)
-4. [连续函数定理详解](#4-连续函数定理详解)
-5. [微分学定理详解](#5-微分学定理详解)
-6. [积分学定理详解](#6-积分学定理详解)
-7. [函数序列定理详解](#7-函数序列定理详解)
-8. [证明技巧总结](#8-证明技巧总结)
-9. [Lean4形式化对应](#9-lean4形式化对应)
-10. [教学建议](#10-教学建议)
+- [MIT 18.100A Real Analysis L4定理级对齐表](#mit-18100a-real-analysis-l4定理级对齐表)
+  - [目录](#目录)
+  - [1. 概述与文档用途](#1-概述与文档用途)
+    - [1.1 文档目标](#11-文档目标)
+    - [1.2 完整性等级说明](#12-完整性等级说明)
+    - [1.3 证明完整性评估维度](#13-证明完整性评估维度)
+    - [1.4 参考文档](#14-参考文档)
+  - [2. 定理对齐总表](#2-定理对齐总表)
+    - [2.1 核心定理对齐汇总](#21-核心定理对齐汇总)
+    - [2.2 对齐统计汇总](#22-对齐统计汇总)
+  - [3. 序列与极限定理详解](#3-序列与极限定理详解)
+    - [3.1 单调收敛定理 (Monotone Convergence Theorem)](#31-单调收敛定理-monotone-convergence-theorem)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文)
+      - [FormalMath对应陈述](#formalmath对应陈述)
+      - [定理陈述对比](#定理陈述对比)
+      - [证明思路对比](#证明思路对比)
+      - [证明步骤详解](#证明步骤详解)
+      - [Lean4形式化对应](#lean4形式化对应)
+      - [教学建议](#教学建议)
+    - [3.2 Bolzano-Weierstrass定理](#32-bolzano-weierstrass定理)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-1)
+      - [FormalMath对应陈述](#formalmath对应陈述-1)
+      - [定理陈述对比](#定理陈述对比-1)
+      - [证明思路对比](#证明思路对比-1)
+      - [证明步骤详解](#证明步骤详解-1)
+      - [Lean4形式化对应](#lean4形式化对应-1)
+      - [教学建议](#教学建议-1)
+    - [3.3 柯西收敛准则](#33-柯西收敛准则)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-2)
+      - [FormalMath对应陈述](#formalmath对应陈述-2)
+      - [定理陈述对比](#定理陈述对比-2)
+      - [证明思路对比](#证明思路对比-2)
+      - [证明步骤详解](#证明步骤详解-2)
+      - [Lean4形式化对应](#lean4形式化对应-2)
+      - [教学建议](#教学建议-2)
+  - [4. 连续函数定理详解](#4-连续函数定理详解)
+    - [4.1 中间值定理 (Intermediate Value Theorem)](#41-中间值定理-intermediate-value-theorem)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-3)
+      - [FormalMath对应陈述](#formalmath对应陈述-3)
+      - [定理陈述对比](#定理陈述对比-3)
+      - [证明思路对比](#证明思路对比-3)
+      - [证明步骤详解](#证明步骤详解-3)
+      - [Lean4形式化对应](#lean4形式化对应-3)
+      - [教学建议](#教学建议-3)
+    - [4.2 极值定理 (Extreme Value Theorem)](#42-极值定理-extreme-value-theorem)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-4)
+      - [FormalMath对应陈述](#formalmath对应陈述-4)
+      - [定理陈述对比](#定理陈述对比-4)
+      - [证明思路对比](#证明思路对比-4)
+      - [证明步骤详解](#证明步骤详解-4)
+      - [Lean4形式化对应](#lean4形式化对应-4)
+      - [教学建议](#教学建议-4)
+    - [4.3 Heine-Borel定理](#43-heine-borel定理)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-5)
+      - [FormalMath对应陈述](#formalmath对应陈述-5)
+      - [定理陈述对比](#定理陈述对比-5)
+      - [证明思路对比](#证明思路对比-5)
+      - [证明步骤详解](#证明步骤详解-5)
+      - [Lean4形式化对应](#lean4形式化对应-5)
+      - [教学建议](#教学建议-5)
+  - [5. 微分学定理详解](#5-微分学定理详解)
+    - [5.1 Rolle定理](#51-rolle定理)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-6)
+      - [FormalMath对应陈述](#formalmath对应陈述-6)
+      - [定理陈述对比](#定理陈述对比-6)
+      - [证明思路对比](#证明思路对比-6)
+      - [证明步骤详解](#证明步骤详解-6)
+      - [Lean4形式化对应](#lean4形式化对应-6)
+      - [教学建议](#教学建议-6)
+    - [5.2 中值定理 (Mean Value Theorem)](#52-中值定理-mean-value-theorem)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-7)
+      - [FormalMath对应陈述](#formalmath对应陈述-7)
+      - [定理陈述对比](#定理陈述对比-7)
+      - [证明思路对比](#证明思路对比-7)
+      - [证明步骤详解](#证明步骤详解-7)
+      - [Lean4形式化对应](#lean4形式化对应-7)
+      - [教学建议](#教学建议-7)
+  - [6. 积分学定理详解](#6-积分学定理详解)
+    - [6.1 微积分基本定理](#61-微积分基本定理)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-8)
+      - [FormalMath对应陈述](#formalmath对应陈述-8)
+      - [定理陈述对比](#定理陈述对比-8)
+      - [证明思路对比](#证明思路对比-8)
+      - [证明步骤详解](#证明步骤详解-8)
+      - [Lean4形式化对应](#lean4形式化对应-8)
+      - [教学建议](#教学建议-8)
+  - [7. 函数序列定理详解](#7-函数序列定理详解)
+    - [7.1 一致收敛连续性定理](#71-一致收敛连续性定理)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-9)
+      - [FormalMath对应陈述](#formalmath对应陈述-9)
+      - [定理陈述对比](#定理陈述对比-9)
+      - [证明思路对比](#证明思路对比-9)
+      - [证明步骤详解](#证明步骤详解-9)
+      - [Lean4形式化对应](#lean4形式化对应-9)
+      - [教学建议](#教学建议-9)
+    - [7.2 一致收敛积分定理](#72-一致收敛积分定理)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-10)
+      - [FormalMath对应陈述](#formalmath对应陈述-10)
+      - [定理陈述对比](#定理陈述对比-10)
+      - [证明思路对比](#证明思路对比-10)
+      - [证明步骤详解](#证明步骤详解-10)
+      - [Lean4形式化对应](#lean4形式化对应-10)
+      - [教学建议](#教学建议-10)
+    - [7.3 Weierstrass M-判别法](#73-weierstrass-m-判别法)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-11)
+      - [FormalMath对应陈述](#formalmath对应陈述-11)
+      - [定理陈述对比](#定理陈述对比-11)
+      - [证明思路对比](#证明思路对比-11)
+      - [证明步骤详解](#证明步骤详解-11)
+      - [Lean4形式化对应](#lean4形式化对应-11)
+      - [教学建议](#教学建议-11)
+  - [8. 证明技巧总结](#8-证明技巧总结)
+    - [8.1 ε-N/ε-δ证明标准流程](#81-ε-nε-δ证明标准流程)
+      - [序列极限（ε-N）](#序列极限ε-n)
+      - [函数极限（ε-δ）](#函数极限ε-δ)
+    - [8.2 紧致性相关证明技巧](#82-紧致性相关证明技巧)
+    - [8.3 辅助函数构造法](#83-辅助函数构造法)
+  - [9. Lean4形式化对应](#9-lean4形式化对应)
+    - [9.1 已完成形式化定理](#91-已完成形式化定理)
+    - [9.2 待建设形式化](#92-待建设形式化)
+    - [9.3 Lean4证明模式示例](#93-lean4证明模式示例)
+  - [10. 教学建议](#10-教学建议)
+    - [10.1 定理学习路径](#101-定理学习路径)
+    - [10.2 常见误区与纠正](#102-常见误区与纠正)
+    - [10.3 证明练习建议](#103-证明练习建议)
+  - [参考文献](#参考文献)
+  - [附录：证明完整性验证清单](#附录证明完整性验证清单)
+    - [序列与极限](#序列与极限)
+    - [连续函数](#连续函数)
+    - [微分学](#微分学)
+    - [积分学](#积分学)
+    - [函数序列](#函数序列)
 
 ---
 
@@ -99,6 +221,7 @@ version: v1.0
 | 待补充 (⏳) | 10 | 83.3% |
 
 **Lean4形式化状态**:
+
 | 状态 | 数量 | 百分比 |
 |------|------|--------|
 | 有形式化 | 3 | 25% |
@@ -139,12 +262,14 @@ version: v1.0
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**:
+
 1. 设$\{x_n\}$递增有界，令$s = \sup\{x_n\}$
 2. 对任意$\varepsilon > 0$，由确界定义，存在$N$使$s - \varepsilon < x_N \leq s$
 3. 由单调性，对所有$n \geq N$，有$s - \varepsilon < x_N \leq x_n \leq s$
 4. 故$|x_n - s| < \varepsilon$，即$x_n \to s$
 
 **FormalMath证明框架**:
+
 - 框架存在，详细步骤待补充
 - 需要明确引用实数完备性公理
 
@@ -179,7 +304,7 @@ import Mathlib
 open Topology Filter Real
 
 -- 单调递增有界数列收敛于其sup
-theorem monotone_convergence_increasing (a : ℕ → ℝ) 
+theorem monotone_convergence_increasing (a : ℕ → ℝ)
     (hmono : Monotone a) (hbdd : BddAbove (Set.range a)) :
     ∃ L, Tendsto a atTop (𝓝 L) ∧ L = sSup (Set.range a) := by
   -- 证明待补充
@@ -227,12 +352,14 @@ theorem monotone_convergence_decreasing (a : ℕ → ℝ)
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**（区间套法）:
+
 1. 设$\{x_n\}$有界，即存在$[a_1, b_1]$包含所有项
-2.  repeatedly bisect: 取包含无限多项的那一半
+2. repeatedly bisect: 取包含无限多项的那一半
 3. 构造区间套$[a_k, b_k]$，长度趋于0
 4. 在每个区间选一项，构成收敛子列
 
 **FormalMath证明框架**:
+
 - 存在两种经典证明：区间套法和确界法
 - 需详细展开其中一种
 
@@ -322,10 +449,12 @@ theorem bolzano_weierstrass (a : ℕ → ℝ) (hbdd : Bornology.IsBounded (Set.r
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**:
+
 - ($\Rightarrow$) 收敛$\Rightarrow$Cauchy：用三角不等式
 - ($\Leftarrow$) Cauchy$\Rightarrow$收敛：先证有界，再用Bolzano-Weierstrass
 
 **FormalMath证明框架**:
+
 - 框架存在，需补充详细步骤
 
 #### 证明步骤详解
@@ -346,10 +475,10 @@ theorem bolzano_weierstrass (a : ℕ → ℝ) (hbdd : Bornology.IsBounded (Set.r
      - 取 $\varepsilon = 1$，存在 $N$ 使 $m, n \geq N$ 时 $|a_m - a_n| < 1$
      - 固定 $n = N$，则 $m \geq N$ 时 $|a_m| < |a_N| + 1$
      - 故 $\{a_n\}$ 有界
-   
+
    - **步骤2**: 应用Bolzano-Weierstrass
      - 存在收敛子列 $a_{n_k} \to L$
-   
+
    - **步骤3**: 证明整个序列收敛于 $L$
      - 对 $\varepsilon > 0$，存在 $N_1$ 使 $m, n \geq N_1$ 时 $|a_m - a_n| < \varepsilon/2$
      - 存在 $K$ 使 $k \geq K$ 时 $|a_{n_k} - L| < \varepsilon/2$
@@ -422,12 +551,14 @@ theorem cauchy_convergence (a : ℕ → ℝ) :
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**（二分法）:
+
 1. 设$f(a) < 0 < f(b)$
 2. 二分区间：取中点，选择函数值异号的那一半
 3. 构造区间套收敛于某点$c$
 4. 由连续性，$f(c) = 0$
 
 **FormalMath证明**:
+
 - 完整证明存在
 - 包含二分法和确界法两种证明
 
@@ -529,6 +660,7 @@ theorem intermediate_value_theorem_general {a b : ℝ} (hab : a ≤ b) {f : ℝ 
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**:
+
 1. 先证有界性（用反证法和区间套）
 2. 设$M = \sup f([a,b])$
 3. 构造序列使$f(x_n) \to M$
@@ -536,6 +668,7 @@ theorem intermediate_value_theorem_general {a b : ℝ} (hab : a ≤ b) {f : ℝ 
 5. 由连续性，$f(c) = M$
 
 **FormalMath证明框架**:
+
 - 证明框架存在
 - 详细步骤待补充
 
@@ -590,7 +723,7 @@ theorem extreme_value_min {a b : ℝ} (hab : a ≤ b) {f : ℝ → ℝ}
 #### 教学建议
 
 1. **核心思想**: 闭区间上的连续函数具有"紧致性"，保证达到极值
-2. **条件的重要性**: 
+2. **条件的重要性**:
    - 开区间：可能不达极值（如$f(x) = x$ on $(0,1)$）
    - 不连续：可能不达极值
 3. **证明技巧**: 结合有界性、Bolzano-Weierstrass、连续性
@@ -625,10 +758,12 @@ $\mathbb{R}^n$ 的子集 $K$ 是紧致的当且仅当 $K$ 是有界闭集。
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**:
+
 - ($\Rightarrow$) 紧致$\Rightarrow$有界闭：用开覆盖定义
 - ($\Leftarrow$) 有界闭$\Rightarrow$紧致：在$\mathbb{R}$中用Bolzano-Weierstrass思想
 
 **FormalMath证明框架**:
+
 - 框架存在，需补充详细步骤
 
 #### 证明步骤详解
@@ -642,7 +777,7 @@ $\mathbb{R}^n$ 的子集 $K$ 是紧致的当且仅当 $K$ 是有界闭集。
    - **有界性**: 设 $K$ 紧致。考虑开覆盖 $\{B(0, n) : n \in \mathbb{N}\}$
      - 由紧致性，存在有限子覆盖
      - 故 $K \subseteq B(0, N)$ 对某个 $N$，即 $K$ 有界
-   
+
    - **闭性**: 设 $x \in K^c$，对每个 $y \in K$，取不交的邻域 $U_y \ni y$ 和 $V_y \ni x$
      - $\{U_y : y \in K\}$ 是 $K$ 的开覆盖
      - 由紧致性，存在有限子覆盖 $\{U_{y_1}, ..., U_{y_n}\}$
@@ -720,11 +855,13 @@ theorem heine_borel (K : Set (EuclideanSpace ℝ (Fin n))) :
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**:
+
 1. 由极值定理，$f$在$[a,b]$上达到最大值和最小值
 2. 若极值点在内部，则导数为0
 3. 若极值点都在端点，由$f(a)=f(b)$，函数为常数
 
 **FormalMath证明框架**:
+
 - 框架存在，需补充完整步骤
 
 #### 证明步骤详解
@@ -806,12 +943,14 @@ $$f'(c) = \frac{f(b) - f(a)}{b - a}$$
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**:
+
 1. 构造辅助函数$g(x) = f(x) - \frac{f(b)-f(a)}{b-a}(x-a)$
 2. 验证$g(a) = g(b) = f(a)$
 3. 应用Rolle定理于$g$
 4. 得到$g'(c) = 0$，即$f'(c) = \frac{f(b)-f(a)}{b-a}$
 
 **FormalMath证明**:
+
 - 完整证明存在
 - Lean4形式化已完成
 
@@ -876,10 +1015,10 @@ theorem mean_value_theorem {a b : ℝ} (hab : a < b) {f : ℝ → ℝ}
 
 #### MIT 18.100A / Lebl教材原文
 
-> **Theorem (Fundamental Theorem of Calculus, Lebl 5.3.1)**: 
-> 
+> **Theorem (Fundamental Theorem of Calculus, Lebl 5.3.1)**:
+>
 > Part I: Let $f: [a, b] \to \mathbb{R}$ be Riemann integrable. Define $F(x) = \int_a^x f(t)\, dt$. Then $F$ is continuous on $[a, b]$. If $f$ is continuous at $c \in [a, b]$, then $F$ is differentiable at $c$ and $F'(c) = f(c)$.
-> 
+>
 > Part II: Let $f: [a, b] \to \mathbb{R}$ be Riemann integrable and let $F$ be an antiderivative of $f$. Then $\int_a^b f(x)\, dx = F(b) - F(a)$.
 
 #### FormalMath对应陈述
@@ -911,16 +1050,19 @@ $$\int_a^b f(x)\, dx = F(b) - F(a)$$
 **MIT/Lebl教材证明策略**:
 
 Part I:
+
 1. 用积分性质证明$F$的连续性
 2. 对$F'(c)$用定义，考虑$\frac{F(x)-F(c)}{x-c}$
 3. 利用$f$的连续性估计
 
 Part II:
+
 1. 用Riemann和逼近积分
 2. 结合微分中值定理
 3. 取极限得结果
 
 **FormalMath证明框架**:
+
 - 框架存在，详细步骤待补充
 
 #### 证明步骤详解
@@ -1018,12 +1160,14 @@ theorem fundamental_theorem_part2 {a b : ℝ} (hab : a ≤ b) {f F : ℝ → ℝ
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**（三$\varepsilon$技巧）:
+
 1. 要证$f$在$x$连续：$|f(x) - f(y)| < \varepsilon$
 2. 分解：$|f(x) - f(y)| \leq |f(x) - f_n(x)| + |f_n(x) - f_n(y)| + |f_n(y) - f(y)|$
 3. 第一项和第三项由一致收敛控制
 4. 第二项由$f_n$的连续性控制
 
 **FormalMath证明框架**:
+
 - 框架存在，需补充详细步骤
 
 #### 证明步骤详解
@@ -1111,11 +1255,13 @@ theorem uniform_limit_continuous {α β : Type*} [TopologicalSpace α] [Topologi
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**:
+
 1. 证$f$可积：用一致收敛控制$f$的振幅
 2. 证积分等式：估计$|\int f_n - \int f| \leq \int |f_n - f|$
 3. 一致收敛使$|f_n - f|$一致小
 
 **FormalMath证明框架**:
+
 - 框架存在，需补充详细步骤
 
 #### 证明步骤详解
@@ -1198,11 +1344,13 @@ theorem uniform_limit_integral {a b : ℝ} (hab : a ≤ b) {f : ℕ → ℝ → 
 #### 证明思路对比
 
 **MIT/Lebl教材证明策略**:
+
 1. 用Cauchy准则证一致收敛
 2. 由$\sum M_n$收敛，其部分和是Cauchy序列
 3. 用$|f_n(x)| \leq M_n$控制$\sum f_n(x)$的尾部
 
 **FormalMath证明框架**:
+
 - 框架存在，需补充详细步骤
 
 #### 证明步骤详解
@@ -1390,14 +1538,17 @@ Week 10-13: 函数序列
 ### 10.3 证明练习建议
 
 **基础练习**:
+
 - 用ε-N语言证明单调收敛定理
 - 用区间套法证明Bolzano-Weierstrass定理
 
 **进阶练习**:
+
 - 尝试用不同方法证明同一定理
 - 构造反例说明条件必要性
 
 **拓展练习**:
+
 - 在Lean4中形式化待建设的定理
 - 探索定理的高维推广
 
@@ -1417,30 +1568,35 @@ Week 10-13: 函数序列
 ## 附录：证明完整性验证清单
 
 ### 序列与极限
+
 - [x] 单调收敛定理 - 陈述对齐，证明待补充
 - [x] Bolzano-Weierstrass定理 - 陈述对齐，证明待补充，Lean4有
 - [x] 柯西收敛准则 - 陈述对齐，证明待补充
 
 ### 连续函数
+
 - [x] 中间值定理 - 陈述对齐，证明完整，Lean4有
 - [x] 极值定理 - 陈述对齐，证明待补充
 - [x] Heine-Borel定理 - 陈述对齐，证明待补充，Lean4有
 
 ### 微分学
+
 - [x] Rolle定理 - 陈述对齐，证明待补充
 - [x] 中值定理 - 陈述对齐，证明完整，Lean4有
 
 ### 积分学
+
 - [x] 微积分基本定理 - 陈述对齐，证明待补充
 
 ### 函数序列
+
 - [x] 一致收敛连续性 - 陈述对齐，证明待补充
 - [x] 一致收敛积分 - 陈述对齐，证明待补充
 - [x] Weierstrass M-判别法 - 陈述对齐，证明待补充
 
 ---
 
-**文档版本**: v1.0  
-**最后更新**: 2026-04-09  
-**对齐负责人**: FormalMath项目  
+**文档版本**: v1.0
+**最后更新**: 2026-04-09
+**对齐负责人**: FormalMath项目
 **下次审查**: 2026-07-09

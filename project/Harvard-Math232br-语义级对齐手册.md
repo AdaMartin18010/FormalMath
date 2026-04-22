@@ -12,11 +12,11 @@ processed_at: '2026-04-09'
 
 # Harvard Math 232br 代数几何语义级对齐手册
 
-**课程代码**: Harvard Math 232br  
-**课程名称**: Algebraic Geometry (Coherent Sheaves, Cohomology, Curves and Surfaces)  
-**学期**: Spring 2026  
-**级别**: 研究生核心课程  
-**项目对应**: 格洛腾迪克数学理念/02-概形理论/03-上同调理论  
+**课程代码**: Harvard Math 232br
+**课程名称**: Algebraic Geometry (Coherent Sheaves, Cohomology, Curves and Surfaces)
+**学期**: Spring 2026
+**级别**: 研究生核心课程
+**项目对应**: 格洛腾迪克数学理念/02-概形理论/03-上同调理论
 **对齐等级**: L3-L6（定义级至思想方法级）
 
 ---
@@ -128,6 +128,7 @@ processed_at: '2026-04-09'
 ### Week 1-2: 概形回顾与拟凝聚层
 
 #### Harvard课程大纲
+
 - 概形定义回顾
 - 态射性质（分离、固有、有限型）
 - 模层与拟凝聚层
@@ -136,13 +137,16 @@ processed_at: '2026-04-09'
 #### FormalMath对应
 
 **基础阅读**:
+
 - `docs/13-代数几何/概形理论-深度版.md`
 - `docs/13-代数几何/02-概形理论/01-仿射概形.md`
 
 **深度扩展**:
+
 - `数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/02-概形理论/`
 
 **Stacks Project Tags**:
+
 - 01LC: 拟凝聚层定义
 - 01LR: 仿射概形上的模
 - 01QG: 射影概形
@@ -152,6 +156,7 @@ processed_at: '2026-04-09'
 ### Week 3-5: 层上同调基础
 
 #### Harvard课程大纲
+
 - 导出函子定义
 - 层上同调的性质
 - Čech上同调
@@ -160,15 +165,18 @@ processed_at: '2026-04-09'
 #### FormalMath对应
 
 **关键文档**:
+
 - `docs/13-代数几何/03-上同调理论/01-层上同调基础.md`
 - `docs/13-代数几何/03-上同调理论/17-Cech上同调与层上同调.md`
 
 **Stacks Project Tags**:
+
 - **01DZ**: Čech上同调=导出函子上同调（⭐核心）
 - **01XI**: 仿射对角线概形上同调消失
 - **01X8**: 仿射概形上同调
 
 **Lean4形式化**:
+
 - 目标: 层上同调基础定义
 - 状态: ⏳ 规划中
 
@@ -177,6 +185,7 @@ processed_at: '2026-04-09'
 ### Week 6-8: 导出范畴与导出函子
 
 #### Harvard课程大纲
+
 - 三角范畴
 - 导出范畴D(A)构造
 - 导出函子RF
@@ -185,15 +194,18 @@ processed_at: '2026-04-09'
 #### FormalMath对应
 
 **关键文档**:
+
 - `docs/15-同调代数/导出范畴-深度扩展版.md`
 - `docs/15-同调代数/谱序列入门.md`
 
 **Stacks Project Tags**:
+
 - **05QI**: 导出范畴（Chapter 13目录）
 - **013O**: Grothendieck谱序列
 - **013M**: Leray非循环性引理
 
 **证明树示例**:
+
 ```
 Grothendieck谱序列
 │
@@ -211,6 +223,7 @@ Grothendieck谱序列
 ### Week 9-11: 凝聚层上同调
 
 #### Harvard课程大纲
+
 - 凝聚层定义
 - 射影概形上的凝聚层
 - Serre消失定理
@@ -219,6 +232,7 @@ Grothendieck谱序列
 #### FormalMath对应
 
 **关键文档**:
+
 - `docs/13-代数几何/03-上同调理论/25-凝聚层上同调.md`
 
 **重要定理**:
@@ -227,7 +241,8 @@ Grothendieck谱序列
 > 设X为射影概形，O_X(1)为极丰富线丛，F为凝聚层。则对足够大的n，有：
 > $$H^i(X, F(n)) = 0, \quad \forall i > 0$$
 
-**应用**: 
+**应用**:
+
 - 射影概形的高阶上同调控制
 - Riemann-Roch定理的证明
 
@@ -236,6 +251,7 @@ Grothendieck谱序列
 ### Week 12-14: Grothendieck对偶
 
 #### Harvard课程大纲
+
 - 对偶化层
 - Grothendieck对偶定理
 - Serre对偶（曲线、曲面情形）
@@ -244,6 +260,7 @@ Grothendieck谱序列
 #### FormalMath对应
 
 **关键文档**:
+
 - `docs/13-代数几何/03-上同调理论/22-Grothendieck对偶.md`
 - `docs/13-代数几何/03-上同调理论/06-Riemann-Roch定理-深度版.md`
 
@@ -318,6 +335,6 @@ $$\chi(O_X(D)) = \deg(D) + 1 - g$$
 
 ---
 
-**对齐负责人**: [待指定]  
-**审核人**: [待指定]  
+**对齐负责人**: [待指定]
+**审核人**: [待指定]
 **最后更新**: 2026年4月9日

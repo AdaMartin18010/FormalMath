@@ -13,25 +13,91 @@ document_type: 思想方法级对齐
 
 # MIT 18.100A Real Analysis L6思想方法提炼
 
-**课程代码**: MIT 18.100A  
-**课程名称**: Real Analysis  
-**授课教师**: Casey Rodriguez  
-**教材**: Jiri Lebl, "Basic Analysis I"  
-**对齐等级**: L6（思想方法级）  
-**版本**: v1.0  
+**课程代码**: MIT 18.100A
+**课程名称**: Real Analysis
+**授课教师**: Casey Rodriguez
+**教材**: Jiri Lebl, "Basic Analysis I"
+**对齐等级**: L6（思想方法级）
+**版本**: v1.0
 **创建日期**: 2026年4月10日
 
 ---
 
 ## 目录
 
-- [1. L6思想方法概述](#1-l6思想方法概述)
-- [2. 核心思想方法清单](#2-核心思想方法清单)
-- [3. 方法详解](#3-方法详解)
-- [4. 教学方法论](#4-教学方法论)
-- [5. 与认知科学的结合](#5-与认知科学的结合)
-- [6. 学习路径设计](#6-学习路径设计)
-- [7. 参考文献](#7-参考文献)
+- [MIT 18.100A Real Analysis L6思想方法提炼](#mit-18100a-real-analysis-l6思想方法提炼)
+  - [目录](#目录)
+  - [1. L6思想方法概述](#1-l6思想方法概述)
+    - [1.1 什么是思想方法级对齐](#11-什么是思想方法级对齐)
+    - [1.2 与L1-L5的本质区别](#12-与l1-l5的本质区别)
+    - [1.3 教学价值](#13-教学价值)
+  - [2. 核心思想方法清单](#2-核心思想方法清单)
+    - [2.1 八大核心思想方法总览](#21-八大核心思想方法总览)
+    - [2.2 方法分类体系](#22-方法分类体系)
+    - [2.3 与MIT 18.100A课程内容的映射](#23-与mit-18100a课程内容的映射)
+  - [3. 方法详解](#3-方法详解)
+    - [3.1 ε-N技巧](#31-ε-n技巧)
+      - [3.1.1 方法描述](#311-方法描述)
+      - [3.1.2 为什么有效（数学原理）](#312-为什么有效数学原理)
+      - [3.1.3 典型例题](#313-典型例题)
+      - [3.1.4 常见错误模式](#314-常见错误模式)
+      - [3.1.5 纠正策略](#315-纠正策略)
+      - [3.1.6 与其他方法的联系](#316-与其他方法的联系)
+    - [3.2 ε-δ技巧](#32-ε-δ技巧)
+      - [3.2.1 方法描述](#321-方法描述)
+      - [3.2.2 为什么有效（数学原理）](#322-为什么有效数学原理)
+      - [3.2.3 典型例题](#323-典型例题)
+      - [3.2.4 常见错误模式](#324-常见错误模式)
+      - [3.2.5 纠正策略](#325-纠正策略)
+    - [3.3 辅助函数法](#33-辅助函数法)
+      - [3.3.1 方法描述](#331-方法描述)
+      - [3.3.2 为什么有效（数学原理）](#332-为什么有效数学原理)
+      - [3.3.3 典型例题](#333-典型例题)
+      - [3.3.4 常见错误模式](#334-常见错误模式)
+      - [3.3.5 与其他方法的联系](#335-与其他方法的联系)
+    - [3.4 紧致性论证](#34-紧致性论证)
+      - [3.4.1 方法描述](#341-方法描述)
+      - [3.4.2 为什么有效（数学原理）](#342-为什么有效数学原理)
+      - [3.4.3 典型例题](#343-典型例题)
+      - [3.4.4 常见错误模式](#344-常见错误模式)
+    - [3.5 一致收敛控制](#35-一致收敛控制)
+      - [3.5.1 方法描述](#351-方法描述)
+      - [3.5.2 为什么有效（数学原理）](#352-为什么有效数学原理)
+      - [3.5.3 典型例题](#353-典型例题)
+      - [3.5.4 常见错误模式](#354-常见错误模式)
+    - [3.6 柯西序列思维](#36-柯西序列思维)
+      - [3.6.1 方法描述](#361-方法描述)
+      - [3.6.2 为什么有效（数学原理）](#362-为什么有效数学原理)
+      - [3.6.3 典型例题](#363-典型例题)
+      - [3.6.4 常见错误模式](#364-常见错误模式)
+    - [3.7 分割与估计](#37-分割与估计)
+      - [3.7.1 方法描述](#371-方法描述)
+      - [3.7.2 典型例题](#372-典型例题)
+    - [3.8 逐项分析](#38-逐项分析)
+      - [3.8.1 方法描述](#381-方法描述)
+      - [3.8.2 典型例题](#382-典型例题)
+  - [4. 教学方法论](#4-教学方法论)
+    - [4.1 从L5提升到L6](#41-从l5提升到l6)
+    - [4.2 诊断学生误区的方法](#42-诊断学生误区的方法)
+    - [4.3 针对性练习设计](#43-针对性练习设计)
+  - [5. 与认知科学的结合](#5-与认知科学的结合)
+    - [5.1 认知负荷理论](#51-认知负荷理论)
+    - [5.2 工作记忆限制](#52-工作记忆限制)
+    - [5.3 组块化学习](#53-组块化学习)
+    - [5.4 元认知与自我监控](#54-元认知与自我监控)
+  - [6. 学习路径设计](#6-学习路径设计)
+    - [6.1 L6能力发展路径](#61-l6能力发展路径)
+    - [6.2 与MIT 18.100A课程的结合](#62-与mit-18100a课程的结合)
+    - [6.3 评估方式](#63-评估方式)
+  - [7. 参考文献](#7-参考文献)
+    - [数学教育](#数学教育)
+    - [认知科学](#认知科学)
+    - [实分析教学](#实分析教学)
+    - [MIT课程资源](#mit课程资源)
+  - [附录A: 教学工具包](#附录a-教学工具包)
+    - [A.1 证明模板卡](#a1-证明模板卡)
+    - [A.2 常见错误速查表](#a2-常见错误速查表)
+    - [A.3 思维诊断问卷](#a3-思维诊断问卷)
 
 ---
 
@@ -166,9 +232,10 @@ document_type: 思想方法级对齐
 - **∀ε > 0**: 挑战者可以提出任意严苛的标准（ε可以任意小）
 - **∃N**: 防守者总能找到一个"分界线"N，使得超过N的所有项都满足要求
 
-**直观理解**: 
+**直观理解**:
 
 想象一场"追赶游戏"。目标是让序列最终进入L的ε-邻域。
+
 - 对手（∀）选择一个精度要求ε
 - 你（∃）需要找到一个时刻N，之后序列就再也不会离开这个精度范围
 
@@ -221,7 +288,7 @@ document_type: 思想方法级对齐
 ```
 目标: ∀ε > 0, 找N使得 n > N ⟹ |r^n| < ε
 
-分析: |r^n| = |r|^n < ε ⟺ n · ln|r| < ln(ε) 
+分析: |r^n| = |r|^n < ε ⟺ n · ln|r| < ln(ε)
                   ⟺ n > ln(ε)/ln|r|
 
 注意 ln|r| < 0（因为 |r| < 1），所以除以负数时不等号反向
@@ -712,7 +779,7 @@ f在K上有界 ⟺ f在每个U_{x_i}上有界
 
 分析: g在[a,b]连续（因为分母永不为零）
       但无上界（因为f可以任意接近M）
-      
+
 矛盾: 紧致集上连续函数必有界，但g无界
 
 因此假设错误，存在c使f(c) = M
@@ -763,7 +830,7 @@ f在K上有界 ⟺ f在每个U_{x_i}上有界
 ```
 点态极限: f(x) = 0 (0 ≤ x < 1), 1 (x = 1)
 
-一致收敛性: 
+一致收敛性:
 sup|x^n - f(x)| = 1 （当x→1时）
 不趋于0，故不一致收敛
 
@@ -880,7 +947,7 @@ sup|x^n - f(x)| = 1 （当x→1时）
 ```
 利用一致连续性: ∀ε>0, ∃δ>0使得|x-y|<δ ⟹ |f(x)-f(y)|<ε/(b-a)
 
-取分割细度<δ: 
+取分割细度<δ:
 U(f,P) - L(f,P) = Σ(M_i-m_i)Δx_i < Σ(ε/(b-a))Δx_i = ε
 ```
 
@@ -1068,7 +1135,7 @@ L6: 会思考
 **组块化过程**:
 
 ```
-初学者视角: 
+初学者视角:
 "∀ε>0, ∃N∈ℕ, ∀n>N: |a_n-L|<ε"
 = 15个独立符号和概念
 
@@ -1166,20 +1233,20 @@ L6: 会思考
 
 ### 认知科学
 
-4. Sweller, J. (1988). Cognitive load during problem solving: Effects on learning.
-5. Chi, M. T. (2000). Self-explaining expository texts: The dual processes of generating inferences and repairing mental models.
-6. Ericsson, K. A. (2006). The influence of experience and deliberate practice on the development of superior expert performance.
+1. Sweller, J. (1988). Cognitive load during problem solving: Effects on learning.
+2. Chi, M. T. (2000). Self-explaining expository texts: The dual processes of generating inferences and repairing mental models.
+3. Ericsson, K. A. (2006). The influence of experience and deliberate practice on the development of superior expert performance.
 
 ### 实分析教学
 
-7. Alcock, L., & Simpson, A. (2004). Convergence of sequences and series: Interactions between visual reasoning and the learner's beliefs about their own role.
-8. Lew, K., et al. (2016). Lectures in advanced mathematics: Why students might not understand what the mathematics professor is trying to convey.
-9. Weber, K. (2001). Student difficulty in constructing proofs: The need for strategic knowledge.
+1. Alcock, L., & Simpson, A. (2004). Convergence of sequences and series: Interactions between visual reasoning and the learner's beliefs about their own role.
+2. Lew, K., et al. (2016). Lectures in advanced mathematics: Why students might not understand what the mathematics professor is trying to convey.
+3. Weber, K. (2001). Student difficulty in constructing proofs: The need for strategic knowledge.
 
 ### MIT课程资源
 
-10. MIT OpenCourseWare. (2020). 18.100A Real Analysis. https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
-11. Lebl, J. (2023). Basic Analysis I: Introduction to Real Analysis. https://www.jirka.org/ra/
+1. MIT OpenCourseWare. (2020). 18.100A Real Analysis. https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+2. Lebl, J. (2023). Basic Analysis I: Introduction to Real Analysis. https://www.jirka.org/ra/
 
 ---
 

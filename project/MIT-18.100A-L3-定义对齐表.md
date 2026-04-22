@@ -14,28 +14,114 @@ version: v1.0
 
 # MIT 18.100A Real Analysis L3定义级对齐表
 
-**课程代码**: MIT 18.100A  
-**课程名称**: Real Analysis  
-**授课教师**: Z. Lin (2025-2026学年)  
-**主教材**: Jiri Lebl, "Basic Analysis: Introduction to Real Analysis (Volume I)"  
-**OCW链接**: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/  
-**对齐等级**: L3（定义级严格等价性验证）  
-**版本**: v1.0  
+**课程代码**: MIT 18.100A
+**课程名称**: Real Analysis
+**授课教师**: Z. Lin (2025-2026学年)
+**主教材**: Jiri Lebl, "Basic Analysis: Introduction to Real Analysis (Volume I)"
+**OCW链接**: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+**对齐等级**: L3（定义级严格等价性验证）
+**版本**: v1.0
 
 ---
 
 ## 目录
 
-1. [概述与文档用途](#1-概述与文档用途)
-2. [定义对齐总表](#2-定义对齐总表)
-3. [序列与极限定义详解](#3-序列与极限定义详解)
-4. [连续性定义详解](#4-连续性定义详解)
-5. [微分学定义详解](#5-微分学定义详解)
-6. [积分学定义详解](#6-积分学定义详解)
-7. [函数序列收敛定义详解](#7-函数序列收敛定义详解)
-8. [教材对比分析](#8-教材对比分析)
-9. [Lean4形式化对应](#9-lean4形式化对应)
-10. [教学建议与常见误区](#10-教学建议与常见误区)
+- [MIT 18.100A Real Analysis L3定义级对齐表](#mit-18100a-real-analysis-l3定义级对齐表)
+  - [目录](#目录)
+  - [1. 概述与文档用途](#1-概述与文档用途)
+    - [1.1 文档目标](#11-文档目标)
+    - [1.2 等价性等级说明](#12-等价性等级说明)
+    - [1.3 参考文档](#13-参考文档)
+  - [2. 定义对齐总表](#2-定义对齐总表)
+    - [2.1 核心定义对齐汇总](#21-核心定义对齐汇总)
+    - [2.2 对齐统计汇总](#22-对齐统计汇总)
+  - [3. 序列与极限定义详解](#3-序列与极限定义详解)
+    - [3.1 序列收敛(ε-N定义)](#31-序列收敛ε-n定义)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文)
+      - [FormalMath对应定义](#formalmath对应定义)
+      - [符号使用对比](#符号使用对比)
+      - [条件等价性证明](#条件等价性证明)
+      - [教学建议](#教学建议)
+    - [3.2 柯西序列](#32-柯西序列)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-1)
+      - [FormalMath对应定义](#formalmath对应定义-1)
+      - [符号使用对比](#符号使用对比-1)
+      - [条件等价性证明](#条件等价性证明-1)
+    - [3.3 子序列收敛](#33-子序列收敛)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-2)
+      - [FormalMath对应定义](#formalmath对应定义-2)
+      - [条件等价性证明](#条件等价性证明-2)
+  - [4. 连续性定义详解](#4-连续性定义详解)
+    - [4.1 函数极限(ε-δ定义)](#41-函数极限ε-δ定义)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-3)
+      - [FormalMath对应定义](#formalmath对应定义-3)
+      - [符号使用对比](#符号使用对比-2)
+      - [关键差异说明](#关键差异说明)
+    - [4.2 点态连续](#42-点态连续)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-4)
+      - [FormalMath对应定义](#formalmath对应定义-4)
+      - [条件等价性证明](#条件等价性证明-3)
+      - [与函数极限的区别](#与函数极限的区别)
+    - [4.3 一致连续](#43-一致连续)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-5)
+      - [FormalMath对应定义](#formalmath对应定义-5)
+      - [点态连续 vs 一致连续对比](#点态连续-vs-一致连续对比)
+      - [经典反例](#经典反例)
+    - [4.4 Lipschitz连续](#44-lipschitz连续)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-6)
+      - [FormalMath对应定义](#formalmath对应定义-6)
+      - [连续性层次蕴含关系](#连续性层次蕴含关系)
+  - [5. 微分学定义详解](#5-微分学定义详解)
+    - [5.1 导数定义](#51-导数定义)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-7)
+      - [FormalMath对应定义](#formalmath对应定义-7)
+      - [符号使用对比](#符号使用对比-3)
+      - [等价形式证明](#等价形式证明)
+    - [5.2 可微性](#52-可微性)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-8)
+      - [FormalMath对应定义](#formalmath对应定义-8)
+      - [可微性与连续性的关系](#可微性与连续性的关系)
+  - [6. 积分学定义详解](#6-积分学定义详解)
+    - [6.1 Riemann可积](#61-riemann可积)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-9)
+      - [FormalMath对应定义](#formalmath对应定义-9)
+      - [Riemann可积的等价刻画](#riemann可积的等价刻画)
+      - [Lebesgue可积性准则](#lebesgue可积性准则)
+  - [7. 函数序列收敛定义详解](#7-函数序列收敛定义详解)
+    - [7.1 点态收敛](#71-点态收敛)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-10)
+      - [FormalMath对应定义](#formalmath对应定义-10)
+      - [关键特征](#关键特征)
+    - [7.2 一致收敛](#72-一致收敛)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-11)
+      - [FormalMath对应定义](#formalmath对应定义-11)
+      - [点态收敛 vs 一致收敛对比](#点态收敛-vs-一致收敛对比)
+      - [一致收敛的重要性](#一致收敛的重要性)
+    - [7.3 一致Cauchy](#73-一致cauchy)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-12)
+      - [FormalMath对应定义](#formalmath对应定义-12)
+      - [等价性](#等价性)
+    - [7.4 绝对收敛与条件收敛](#74-绝对收敛与条件收敛)
+      - [MIT 18.100A / Lebl教材原文](#mit-18100a--lebl教材原文-13)
+      - [FormalMath对应定义](#formalmath对应定义-13)
+      - [关系与性质](#关系与性质)
+  - [8. 教材对比分析](#8-教材对比分析)
+    - [8.1 与Lebl教材的对齐](#81-与lebl教材的对齐)
+    - [8.2 与Rudin教材的对齐](#82-与rudin教材的对齐)
+  - [9. Lean4形式化对应](#9-lean4形式化对应)
+    - [9.1 核心定义的形式化](#91-核心定义的形式化)
+    - [9.2 重要定理的形式化](#92-重要定理的形式化)
+  - [10. 教学建议与常见误区](#10-教学建议与常见误区)
+    - [10.1 ε-N证明的教学策略](#101-ε-n证明的教学策略)
+      - [标准三步法](#标准三步法)
+      - [经典示例](#经典示例)
+    - [10.2 ε-δ证明的教学策略](#102-ε-δ证明的教学策略)
+      - [标准流程](#标准流程)
+      - [常见技巧](#常见技巧)
+    - [10.3 常见误区与纠正](#103-常见误区与纠正)
+    - [10.4 可视化工具建议](#104-可视化工具建议)
+  - [参考文献](#参考文献)
+  - [附录：对齐验证清单](#附录对齐验证清单)
 
 ---
 
@@ -131,6 +217,7 @@ $$\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall n \geq N: |a_n - L|
 $(\Rightarrow)$ 设序列$\{x_n\}$按MIT定义收敛于$L$。对任意$\varepsilon > 0$，存在$N$使得$n \geq N$时$|x_n - L| < \varepsilon$。令$a_n = x_n$，则FormalMath定义条件满足。
 
 $(\Leftarrow)$ 反之亦然。两个定义的逻辑结构完全一致：
+
 - 全称量词$\forall \varepsilon > 0$（对任意正数）
 - 存在量词$\exists N \in \mathbb{N}$（存在正整数）
 - 蕴含条件$|a_n - L| < \varepsilon$（距离小于任意小正数）
@@ -387,7 +474,7 @@ $$f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$$
 
 **定理**: 若$f$在$a$处可微，则$f$在$a$处连续。
 
-**证明**: 
+**证明**:
 $$f(x) - f(a) = \frac{f(x)-f(a)}{x-a} \cdot (x-a) \to f'(a) \cdot 0 = 0$$
 
 故$\lim_{x \to a} f(x) = f(a)$。
@@ -403,11 +490,12 @@ $$f(x) - f(a) = \frac{f(x)-f(a)}{x-a} \cdot (x-a) \to f'(a) \cdot 0 = 0$$
 #### MIT 18.100A / Lebl教材原文
 
 > **Definition (Lebl 5.1.1-5.1.4)**: Let $f: [a,b] \to \mathbb{R}$ be a bounded function. For a partition $P = \{x_0, x_1, ..., x_n\}$, define:
+>
 > - $M_i = \sup_{[x_{i-1},x_i]} f$
 > - $m_i = \inf_{[x_{i-1},x_i]} f$
 > - Upper Darboux sum: $U(f,P) = \sum M_i \Delta x_i$
 > - Lower Darboux sum: $L(f,P) = \sum m_i \Delta x_i$
-> 
+>
 > $f$ is Riemann integrable if $\inf_P U(f,P) = \sup_P L(f,P)$.
 
 #### FormalMath对应定义
@@ -438,6 +526,7 @@ $$\overline{\int_a^b} f = \underline{\int_a^b} f$$
 **定理 (Lebesgue)**: 有界函数$f: [a,b] \to \mathbb{R}$ Riemann可积 ⟺ $f$的不连续点集测度为零。
 
 **应用示例**:
+
 - **可积**: Thomae函数（有理点可数，不连续点集测度为0）
 - **不可积**: Dirichlet函数（处处不连续，不连续点集测度为1）
 
@@ -553,6 +642,7 @@ $(\Leftarrow)$ 一致Cauchy ⟹ 一致收敛：对每个$x$，$\{f_n(x)\}$是Cau
 **蕴含关系**: 绝对收敛 ⟹ 收敛（逆不成立）
 
 **条件收敛的性质**:
+
 - Riemann重排定理：条件收敛级数可通过重排收敛于任意值
 - 经典例子：$\sum (-1)^n/n = \ln 2$（交错调和级数）
 
@@ -587,6 +677,7 @@ Rudin《Principles of Mathematical Analysis》(PMA)是MIT 18.100A的推荐参考
 | Riemann积分 | Definition 6.2: Riemann-Stieltjes integral | Rudin引入Stieltjes积分的一般形式，MIT聚焦Riemann积分 | ≈ 等价（MIT是Rudin的特例） |
 
 **主要差异**:
+
 1. **Rudin更抽象**: 使用度量空间语言，MIT主要聚焦$\mathbb{R}$
 2. **Stieltjes积分**: Rudin在一般框架下介绍，MIT标准课程可能略过
 3. **证明风格**: Rudin更简洁，MIT/Lebl更详细
@@ -640,7 +731,7 @@ def LipschitzContinuous (f : ℝ → ℝ) (L : ℝ) : Prop :=
 -- 7. 导数定义
 -- ============================================
 noncomputable def HasDerivativeAt (f : ℝ → ℝ) (a : ℝ) : Prop :=
-  ∃ L : ℝ, ∀ ε > 0, ∃ δ > 0, ∀ h, 0 < |h| ∧ |h| < δ → 
+  ∃ L : ℝ, ∀ ε > 0, ∃ δ > 0, ∀ h, 0 < |h| ∧ |h| < δ →
     |(f (a + h) - f a) / h - L| < ε
 
 -- ============================================
@@ -674,7 +765,7 @@ theorem uniform_limit_continuous {f : ℕ → ℝ → ℝ} {g : ℝ → ℝ} {D 
   sorry
 
 -- Lipschitz ⟹ 一致连续
-theorem lipschitz_implies_uniform {f : ℝ → ℝ} {L : ℝ} 
+theorem lipschitz_implies_uniform {f : ℝ → ℝ} {L : ℝ}
     (hL : LipschitzContinuous f L) : UniformlyContinuous f := by
   rcases hL with ⟨hL_pos, hL_bound⟩
   intro ε hε
@@ -791,7 +882,7 @@ $$\left|\frac{3n+1}{2n-1} - \frac{3}{2}\right| = \frac{5}{2(2n-1)} < \varepsilon
 
 ---
 
-**文档版本**: v1.0  
-**最后更新**: 2026-04-09  
-**对齐负责人**: FormalMath项目  
+**文档版本**: v1.0
+**最后更新**: 2026-04-09
+**对齐负责人**: FormalMath项目
 **下次审查**: 2026-07-09

@@ -27,7 +27,7 @@ processed_at: '2026-04-05'
   - [目录](#目录)
   - [一、概述与核心发现](#一概述与核心发现)
     - [1.1 项目对齐度总评](#11-项目对齐度总评)
-    - [1.2 🎯 关键发现：Math 232ar/br与格洛腾迪克体系](#关键发现math-232arbr与格洛腾迪克体系)
+    - [1.2 🎯 关键发现：Math 232ar/br与格洛腾迪克体系](#12--关键发现math-232arbr与格洛腾迪克体系)
   - [二、100-level本科课程映射](#二100-level本科课程映射)
     - [2.1 Math 114：实分析（Real Analysis）](#21-math-114实分析real-analysis)
     - [2.2 Math 113：复分析（Complex Analysis）](#22-math-113复分析complex-analysis)
@@ -44,8 +44,8 @@ processed_at: '2026-04-05'
     - [3.6 Math 230a/b：微分几何（研究生级别）](#36-math-230ab微分几何研究生级别)
     - [3.7 Math 231a/b：代数拓扑（研究生级别）](#37-math-231ab代数拓扑研究生级别)
   - [四、Math 232ar/br关键发现详解](#四math-232arbr关键发现详解)
-    - [4.1 🎯 Math 232ar：Curves, Surfaces, and Varieties](#math-232arcurves-surfaces-and-varieties)
-    - [4.2 🎯🎯 Math 232br：Coherent Sheaves and Cohomology](#math-232brcoherent-sheaves-and-cohomology)
+    - [4.1 🎯 Math 232ar：Curves, Surfaces, and Varieties](#41--math-232arcurves-surfaces-and-varieties)
+    - [4.2 🎯🎯 Math 232br：Coherent Sheaves and Cohomology](#42--math-232brcoherent-sheaves-and-cohomology)
   - [五、Harvard特色：说明性论文写作指导](#五harvard特色说明性论文写作指导)
     - [5.1 Harvard的Expository Writing要求](#51-harvard的expository-writing要求)
     - [5.2 FormalMath支持资源](#52-formalmath支持资源)
@@ -53,10 +53,22 @@ processed_at: '2026-04-05'
   - [六、推荐学习路径](#六推荐学习路径)
     - [6.1 Harvard路径完整学习链](#61-harvard路径完整学习链)
     - [6.2 快速参考：课程到文档速查表](#62-快速参考课程到文档速查表)
+  - [七、国际课程对比：Harvard vs ETH Zurich vs Princeton](#七国际课程对比harvard-vs-eth-zurich-vs-princeton)
+    - [四校课程对应总表](#四校课程对应总表)
+    - [Harvard与Princeton对比](#harvard与princeton对比)
+    - [Harvard与ETH课程对应关系](#harvard与eth课程对应关系)
+    - [🎯 关键发现：Harvard 232br = ETH 401-3532 = FormalMath格洛腾迪克体系](#-关键发现harvard-232br--eth-401-3532--formalmath格洛腾迪克体系)
+    - [Harvard与ETH教学特色对比](#harvard与eth教学特色对比)
+    - [三校联合学习路径（Harvard + MIT + ETH）](#三校联合学习路径harvard--mit--eth)
+    - [FormalMath国际四校覆盖度对比](#formalmath国际四校覆盖度对比)
+  - [八、Princeton课程对比参考](#八princeton课程对比参考)
+    - [Princeton MAT 416 (Kollar) 与 Harvard Math 232ar/br 对比](#princeton-mat-416-kollar-与-harvard-math-232arbr-对比)
+    - [四校代数几何课程对比](#四校代数几何课程对比)
   - [附录](#附录)
     - [A. Harvard课程官网链接](#a-harvard课程官网链接)
-    - [B. 相关FormalMath索引](#b-相关formalmath索引)
-    - [C. 版本记录](#c-版本记录)
+    - [B. ETH Zurich课程对比参考](#b-eth-zurich课程对比参考)
+    - [C. 相关FormalMath索引](#c-相关formalmath索引)
+    - [D. 版本记录](#d-版本记录)
 
 ---
 
@@ -693,6 +705,7 @@ Harvard数学系特别重视学生的**说明性数学写作（Expository Writin
 | Riemann-Roch | Riemann-Roch | Riemann-Roch定理 |
 
 **这一发现证明**:
+
 1. FormalMath的格洛腾迪克体系与**国际两大顶尖学府**同步
 2. 凝聚层上同调是现代代数几何的**国际共识核心**
 3. 项目内容具有**最高的学术权威性**
@@ -790,7 +803,8 @@ Harvard数学系特别重视学生的**说明性数学写作（Expository Writin
 | **与FormalMath对应** | 75% | **98%** |
 | **推荐教材** | Hartshorne + Kollár讲义 | Hartshorne + Vakil FOAG |
 
-**学习建议**: 
+**学习建议**:
+
 - 如果追求**最系统的代数几何训练**，选择Harvard 232ar/br路径
 - 如果对**双有理几何**特别感兴趣，选择Princeton MAT 416 (Kollar)
 - 两课程都与FormalMath格洛腾迪克体系高度对应
