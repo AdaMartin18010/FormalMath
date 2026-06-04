@@ -8,13 +8,16 @@ title: IMO 2025 Problem 5
 # IMO 2025 Problem 5
 
 ## 题目
+
 Alice 和 Bazza 在玩 **inekoalaty 游戏**，游戏规则依赖于一个已知的正实数 $\lambda$。第 $n$ 轮（从 $n=1$ 开始）如下：
+
 - 若 $n$ 为奇数，Alice 选取一个非负实数 $x_n$，使得 $x_1+x_2+\dots+x_n\le\lambda n$；
 - 若 $n$ 为偶数，Bazza 选取一个非负实数 $x_n$，使得 $x_1^2+x_2^2+\dots+x_n^2\le n$。
 
 若某位玩家无法选取合适的 $x_n$，则游戏结束，另一位玩家获胜。若游戏永远进行下去，则双方均不胜。求所有使得 Alice 有必胜策略的 $\lambda$，以及所有使得 Bazza 有必胜策略的 $\lambda$。
 
 ## 分类信息
+
 - **领域**: 代数/博弈论
 - **难度**: 6分
 - **涉及概念**: 博弈策略、Cauchy-Schwarz不等式、递推分析、阈值判定
@@ -22,6 +25,7 @@ Alice 和 Bazza 在玩 **inekoalaty 游戏**，游戏规则依赖于一个已知
 ## 解答
 
 ### 答案
+
 - 当 $\lambda>\frac{1}{\sqrt2}$ 时，Alice 有必胜策略；
 - 当 $\lambda<\frac{1}{\sqrt2}$ 时，Bazza 有必胜策略；
 - 当 $\lambda=\frac{1}{\sqrt2}$ 时，双方均无必胜策略（游戏可无限进行）。
@@ -59,12 +63,14 @@ $$\lambda(2k+1)-k\sqrt2>\sqrt{2k+2}.$$
 此时 Alice 的零策略保证她永远不会输（因为 $k\sqrt2\le\frac{1}{\sqrt2}(2k+1)$ 等价于 $2k\le 2k+1$，恒成立）。同时 Bazza 的策略也无法使 $S_{2m}$ 严格超过 Alice 的预算。因此双方都有防守策略使游戏无限进行， neither 能必胜。
 
 ## 关键思路与技巧
-1. ** competing norms**：$\ell_1$ 约束（Alice）与 $\ell_2$ 约束（Bazza）的对抗
+
+1. **competing norms**：$\ell_1$ 约束（Alice）与 $\ell_2$ 约束（Bazza）的对抗
 2. **QM-AM 估计**：利用平方均值不等式估计偶数项和的极值
 3. **零策略**：Alice 选择 0 使自己的预算尽可能宽裕
 4. **阈值现象**：$\lambda=\frac{1}{\sqrt2}$ 是双方优劣的精确临界点
 
 ## 参考
+
 - IMO 2025 Official Solutions
 - AoPS Community
 - Evan Chen''s Solution Notes

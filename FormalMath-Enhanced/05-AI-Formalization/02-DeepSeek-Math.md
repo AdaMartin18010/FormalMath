@@ -607,7 +607,7 @@ if __name__ == "__main__":
 
 - [KELPS](01-KELPS.md) - 基于DeepSeek-Math的形式化框架
 - [DeepSeek-Coder](https://github.com/deepseek-ai/deepseek-coder) - 代码生成模型
-- [OpenWebMath](https://openwebmath.github.io/)[需更新] - 数学预训练数据集
+- [OpenWebMath][https://openwebmath.github.io/](需更新) - 数学预训练数据集
 
 ### API与工具
 

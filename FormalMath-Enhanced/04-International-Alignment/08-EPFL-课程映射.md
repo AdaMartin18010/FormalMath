@@ -5,10 +5,12 @@ msc_secondary:
 ---
 
 ﻿---
+
 msc_primary: 00A99
 processed_at: '2026-04-15'
 title: EPFL 课程映射表
 ---
+
 # EPFL 课程映射表
 
 **版本**: v1.0
@@ -26,25 +28,40 @@ title: EPFL 课程映射表
   - [学位结构与课程架构](#学位结构与课程架构)
   - [课程总览](#课程总览)
   - [一、分析学序列](#一分析学序列)
-    - [MATH-101: Analyse I](#math-101-analyse-i)
+    - [MATH-101: Analyse ](#math-101-analyse-i)
+      - [对照表](#对照表)
     - [MATH-106: Analyse II](#math-106-analyse-ii)
+      - [对照表](#对照表-1)
     - [MATH-105: Analyse III](#math-105-analyse-iii)
+      - [对照表](#对照表-2)
   - [二、代数学序列](#二代数学序列)
-    - [MATH-111: Algebre Lineaire I](#math-111-algebre-lineaire-i)
+    - [MATH-111: Algebre Lineaire ](#math-111-algebre-lineaire-i)
+      - [对照表](#对照表-3)
     - [MATH-115: Algebre Lineaire II](#math-115-algebre-lineaire-ii)
+      - [对照表](#对照表-4)
     - [代数进阶课程 (MATH-310/311/312/313)](#代数进阶课程-math-310311312313)
   - [三、几何学序列](#三几何学序列)
     - [MATH-121: Geometrie](#math-121-geometrie)
-    - [MATH-213: Geometrie Differentielle I](#math-213-geometrie-differentielle-i)
+      - [对照表](#对照表-5)
+    - [MATH-213: Geometrie Differentielle ](#math-213-geometrie-differentielle-i)
+      - [对照表](#对照表-6)
   - [四、概率统计与数值分析](#四概率统计与数值分析)
     - [MATH-232: Probabilites et Statistique](#math-232-probabilites-et-statistique)
+      - [对照表](#对照表-7)
     - [MATH-319/419: Analyse Numerique I-II](#math-319419-analyse-numerique-i-ii)
+      - [对照表 (MATH-319)](#对照表-math-319)
+      - [对照表 (MATH-419)](#对照表-math-419)
   - [五、概念映射表](#五概念映射表)
     - [分析学概念映射](#分析学概念映射)
     - [代数学概念映射](#代数学概念映射)
     - [几何学概念映射](#几何学概念映射)
   - [六、推荐学习路径](#六推荐学习路径)
+    - [面向EPFL学生的FormalMath使用指南](#面向epfl学生的formalmath使用指南)
+    - [按EPFL课程编号索引](#按epfl课程编号索引)
   - [对齐覆盖率统计](#对齐覆盖率统计)
+    - [按学位阶段统计](#按学位阶段统计)
+    - [按学科统计](#按学科统计)
+    - [覆盖缺口分析](#覆盖缺口分析)
 
 ---
 
@@ -55,8 +72,8 @@ title: EPFL 课程映射表
 这一发现证明：
 
 1. FormalMath 的**结构主义知识组织**与 EPFL **Bourbaki 式教学法**完美同步
-2. **法语区数学术语**（如 *corps, anneau, espace vectoriel*）在 FormalMath 中均有标准化对应
-3. 从 BA1 → MA 的**完整学位路径**在 FormalMath 资源库中有系统覆盖
+1. **法语区数学术语**（如 *corps, anneau, espace vectoriel*）在 FormalMath 中均有标准化对应
+2. 从 BA1 → MA 的**完整学位路径**在 FormalMath 资源库中有系统覆盖
 
 ---
 
@@ -507,8 +524,8 @@ BA5-BA6 高年级
 **部分覆盖区域:**
 
 1. **数值PDE求解**: EPFL课程侧重有限元工程应用，FormalMath偏重理论
-2. **统计计算**: EPFL使用专业统计软件，FormalMath侧重理论推导
-3. **双曲几何计算**: EPFL有具体计算练习，FormalMath侧重概念
+1. **统计计算**: EPFL使用专业统计软件，FormalMath侧重理论推导
+2. **双曲几何计算**: EPFL有具体计算练习，FormalMath侧重概念
 
 **建议补充内容:**
 

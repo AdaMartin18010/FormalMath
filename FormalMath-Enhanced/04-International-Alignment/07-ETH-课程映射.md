@@ -5,10 +5,12 @@ msc_secondary:
 ---
 
 ﻿---
+
 msc_primary: 00A99
 processed_at: '2026-04-15'
 title: ETH 课程映射表
 ---
+
 # ETH 课程映射表
 
 **版本**: v1.0
@@ -26,23 +28,41 @@ title: ETH 课程映射表
   - [课程总览](#课程总览)
   - [Stage 1: 分析学序列](#stage-1-分析学序列)
     - [Analysis I (401-1261-07L)](#analysis-i-401-1261-07l)
+      - [对照表](#对照表)
     - [Analysis II](#analysis-ii)
+      - [对照表](#对照表-1)
     - [Analysis III (401-2283-00L)](#analysis-iii-401-2283-00l)
+      - [对照表](#对照表-2)
   - [Stage 2: 线性代数与代数](#stage-2-线性代数与代数)
     - [Lineare Algebra I (401-0131-00L)](#lineare-algebra-i-401-0131-00l)
+      - [对照表](#对照表-3)
     - [Lineare Algebra II](#lineare-algebra-ii)
+      - [对照表](#对照表-4)
     - [Algebra I (401-2003-00L)](#algebra-i-401-2003-00l)
+      - [对照表](#对照表-5)
     - [Algebra II (401-2004-00L)](#algebra-ii-401-2004-00l)
+      - [对照表](#对照表-6)
   - [Stage 3: 拓扑与几何](#stage-3-拓扑与几何)
     - [Topology (点集拓扑)](#topology-点集拓扑)
+      - [对照表](#对照表-7)
     - [Algebraic Topology I (401-3001-61L)](#algebraic-topology-i-401-3001-61l)
+      - [对照表](#对照表-8)
     - [Differential Geometry I-II](#differential-geometry-i-ii)
+      - [对照表 (Differential Geometry I)](#对照表-differential-geometry-i)
+      - [对照表 (Differential Geometry II)](#对照表-differential-geometry-ii)
   - [Stage 4: 概率与数值分析](#stage-4-概率与数值分析)
     - [Probability Theory (401-3601-00L)](#probability-theory-401-3601-00l)
+      - [对照表](#对照表-9)
     - [Numerical Analysis (401-0663-00L / 401-1652-10L)](#numerical-analysis-401-0663-00l--401-1652-10l)
+      - [对照表](#对照表-10)
   - [欧洲大陆数学传统特点](#欧洲大陆数学传统特点)
+    - [1. 德国数学学派传承](#1-德国数学学派传承)
+    - [2. 德语区数学严谨性特点](#2-德语区数学严谨性特点)
+    - [3. ETH独特之处](#3-eth独特之处)
   - [课程依赖关系图](#课程依赖关系图)
   - [对齐覆盖率统计](#对齐覆盖率统计)
+    - [按Stage统计](#按stage统计)
+    - [按学科统计](#按学科统计)
 
 ---
 
@@ -53,8 +73,8 @@ title: ETH 课程映射表
 这一发现证明：
 
 1. FormalMath 的**证明严格性**与 ETH **德语区数学教育标准**完美同步
-2. **从公理出发构建理论**的方法论在双方文档中均占据核心地位
-3. ETH 的 **理论-算法-实现** 完整链条可作为 FormalMath 计算数学模块的扩展参考
+1. **从公理出发构建理论**的方法论在双方文档中均占据核心地位
+2. ETH 的 **理论-算法-实现** 完整链条可作为 FormalMath 计算数学模块的扩展参考
 
 ---
 

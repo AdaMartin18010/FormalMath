@@ -1107,7 +1107,7 @@ export HF_ENDPOINT=https://hf-mirror.com[需更新]
 
 - [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/) - 官方教程
 - [Functional Programming in Lean](https://leanprover.github.io/functional_programming_in_lean/) - 函数式编程
-- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)[需更新] - 数学证明
+- [Mathematics in Lean][https://leanprover-community.github.io/mathematics_in_lean/](需更新) - 数学证明
 
 ### 论文
 

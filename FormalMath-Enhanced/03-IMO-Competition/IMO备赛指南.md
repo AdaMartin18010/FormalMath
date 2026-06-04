@@ -43,6 +43,7 @@ title: IMO 备赛指南
 | 组合 | 1.5题 | 25% |
 
 **每日题目安排：**
+
 - 第一天：代数 + 几何 + 数论/组合
 - 第二天：几何 + 数论 + 组合/代数
 
@@ -61,12 +62,14 @@ title: IMO 备赛指南
 #### 代数（Algebra）
 
 **基础技能**
+
 - [ ] 多项式理论（因式分解、根与系数关系）
 - [ ] 不等式（AM-GM、Cauchy-Schwarz、排序不等式、Jensen）
 - [ ] 函数方程与函数性质
 - [ ] 数列与递推关系
 
 **进阶主题**
+
 - [ ] 对称多项式与Newton恒等式
 - [ ] 复数方法（单位根、几何应用）
 - [ ] 矩阵与线性代数基础
@@ -75,12 +78,14 @@ title: IMO 备赛指南
 #### 几何（Geometry）
 
 **基础技能**
+
 - [ ] 三角形全等与相似
 - [ ] 圆的性质（圆周角、弦切角、幂定理）
 - [ ] 面积方法
 - [ ] 三角法（正弦定理、余弦定理）
 
 **进阶主题**
+
 - [ ] 共点与共线（Ceva、Menelaus、Desargues）
 - [ ] 圆的几何（根轴、根心、Miquel点）
 - [ ] 特殊点（重心、垂心、外心、内心、旁心、九点圆心）
@@ -91,12 +96,14 @@ title: IMO 备赛指南
 #### 数论（Number Theory）
 
 **基础技能**
+
 - [ ] 整除性与同余
 - [ ] 素数与算术基本定理
 - [ ] 欧几里得算法与Bezout恒等式
 - [ ] 模运算与剩余类
 
 **进阶主题**
+
 - [ ] Fermat小定理与Euler定理
 - [ ] 二次剩余与Legendre符号
 - [ ] 中国剩余定理
@@ -108,12 +115,14 @@ title: IMO 备赛指南
 #### 组合（Combinatorics）
 
 **基础技能**
+
 - [ ] 计数原理（加法、乘法原理）
 - [ ] 排列组合
 - [ ] 二项式定理与组合恒等式
 - [ ] 抽屉原理
 
 **进阶主题**
+
 - [ ] 图论基础（路径、圈、树、染色）
 - [ ] 极值组合（Turán定理、Erdős–Ko–Rado）
 - [ ] 组合几何
@@ -203,11 +212,13 @@ title: IMO 备赛指南
 ### 4.1 代数备赛
 
 **核心能力**
+
 - 不等式放缩的直觉
 - 对称性识别与利用
 - 变量替换的技巧
 
 **训练重点**
+
 ```
 第1周-4周：经典不等式
 ├── AM-GM、Cauchy-Schwarz熟练应用
@@ -226,6 +237,7 @@ title: IMO 备赛指南
 ```
 
 **推荐题目来源**
+
 - IMO Shortlist Algebra
 - Vasc的《Algebraic Inequalities》
 - 各国MO代数题
@@ -233,11 +245,13 @@ title: IMO 备赛指南
 ### 4.2 几何备赛
 
 **核心能力**
+
 - 图形直觉与空间想象
 - 辅助线添加的技巧
 - 多种方法的灵活切换
 
 **训练重点**
+
 ```
 第1周-4周：基础几何
 ├── 三角形特殊点性质
@@ -256,6 +270,7 @@ title: IMO 备赛指南
 ```
 
 **推荐题目来源**
+
 - IMO Shortlist Geometry
 - 《几何变换》by 尤承业
 - 《Complex Numbers in Geometry》
@@ -263,11 +278,13 @@ title: IMO 备赛指南
 ### 4.3 数论备赛
 
 **核心能力**
+
 - 同余运算的熟练度
 - 素数分布的直觉
 - 构造性思维
 
 **训练重点**
+
 ```
 第1周-4周：基础数论
 ├── 同余与剩余系
@@ -286,6 +303,7 @@ title: IMO 备赛指南
 ```
 
 **推荐题目来源**
+
 - IMO Shortlist Number Theory
 - 《104 Number Theory Problems》
 - 《An Introduction to the Theory of Numbers》
@@ -293,11 +311,13 @@ title: IMO 备赛指南
 ### 4.4 组合备赛
 
 **核心能力**
+
 - 计数技巧
 - 图论直觉
 - 构造与论证的平衡
 
 **训练重点**
+
 ```
 第1周-4周：基础组合
 ├── 计数方法
@@ -316,6 +336,7 @@ title: IMO 备赛指南
 ```
 
 **推荐题目来源**
+
 - IMO Shortlist Combinatorics
 - 《Combinatorial Problems》by Lovász
 - 《Proofs from THE BOOK》组合章节
@@ -346,12 +367,14 @@ title: IMO 备赛指南
 ### 5.2 解题策略建议
 
 **第1天策略**
+
 1. 快速浏览3题，选择最容易的入手
 2. 建议顺序：1→2→3 或 2→1→3
 3. 确保第1题完全正确（基础分）
 4. 第2题争取完整解答
 
 **第2天策略**
+
 1. 同样先浏览全部题目
 2. 第4题通常与第1题难度相当
 3. 第5、6题需要更多创造性
@@ -386,6 +409,7 @@ title: IMO 备赛指南
 #### 周末模拟（4.5小时 × 2）
 
 完全模拟IMO考试环境：
+
 - 选择一套历年IMO题目
 - 严格按照时间限制
 - 使用正式答题纸
@@ -399,7 +423,7 @@ title: IMO 备赛指南
 
 ```
 周一：代数基础
-周二：几何基础  
+周二：几何基础
 周三：数论基础
 周四：组合基础
 周五：综合练习
@@ -464,6 +488,7 @@ title: IMO 备赛指南
 ### 7.1 教材与参考书
 
 #### 代数
+
 | 书名 | 作者 | 难度 | 推荐指数 |
 |------|------|------|----------|
 | 《不等式的秘密》 | Pham Kim Hung | 中高 | ⭐⭐⭐⭐⭐ |
@@ -471,6 +496,7 @@ title: IMO 备赛指南
 | 《Functional Equations》 | Small | 中 | ⭐⭐⭐⭐ |
 
 #### 几何
+
 | 书名 | 作者 | 难度 | 推荐指数 |
 |------|------|------|----------|
 | 《几何变换》 | 尤承业 | 中高 | ⭐⭐⭐⭐⭐ |
@@ -479,6 +505,7 @@ title: IMO 备赛指南
 | 《几何不等式》 | Bottema | 高 | ⭐⭐⭐⭐ |
 
 #### 数论
+
 | 书名 | 作者 | 难度 | 推荐指数 |
 |------|------|------|----------|
 | 《104 Number Theory Problems》 | Titu Andreescu | 中高 | ⭐⭐⭐⭐⭐ |
@@ -486,6 +513,7 @@ title: IMO 备赛指南
 | 《Number Theory: Structures, Examples, and Problems》 | Titu Andreescu | 高 | ⭐⭐⭐⭐ |
 
 #### 组合
+
 | 书名 | 作者 | 难度 | 推荐指数 |
 |------|------|------|----------|
 | 《Combinatorial Problems》 | Lovász | 中高 | ⭐⭐⭐⭐⭐ |
@@ -495,27 +523,32 @@ title: IMO 备赛指南
 ### 7.2 在线资源
 
 #### 官方网站
-- [IMO Official](https://www.imo-official.org/)[需更新] - 官方题目与结果
-- [IMO Shortlist](https://www.imo-official.org/problems.aspx)[需更新] - 备用题库
+
+- [IMO Official][https://www.imo-official.org/](需更新) - 官方题目与结果
+- [IMO Shortlist][https://www.imo-official.org/problems.aspx](需更新) - 备用题库
 
 #### 论坛与社区
-- [AoPS](https://artofproblemsolving.com/)[需更新] - 最活跃的数学竞赛社区
-- [AoPS IMO Forum](https://artofproblemsolving.com/community/c6_high_school_olympiads)[需更新] - IMO专题讨论
+
+- [AoPS][https://artofproblemsolving.com/](需更新) - 最活跃的数学竞赛社区
+- [AoPS IMO Forum][https://artofproblemsolving.com/community/c6_high_school_olympiads](需更新) - IMO专题讨论
 - [Math StackExchange](https://math.stackexchange.com/) - 数学问答
 
 #### 视频资源
-- [Evan Chen's YouTube](https://www.youtube.com/c/vEnhance)[需更新] - 几何与组合
-- [Brilliant](https://brilliant.org/)[需更新] - 交互式学习
-- [3Blue1Brown](https://www.youtube.com/c/3blue1brown)[需更新] - 直观数学
+
+- [Evan Chen's YouTube][https://www.youtube.com/c/vEnhance](需更新) - 几何与组合
+- [Brilliant][https://brilliant.org/](需更新) - 交互式学习
+- [3Blue1Brown][https://www.youtube.com/c/3blue1brown](需更新) - 直观数学
 
 ### 7.3 备考工具
 
 #### 软件工具
+
 - GeoGebra - 几何作图与探索
 - Asymptote - 竞赛几何图绘制
 - LaTeX - 数学公式排版
 
 #### 时间管理
+
 - Anki - 间隔重复记忆
 - Notion/Obsidian - 笔记管理
 - Forest - 专注计时
@@ -527,6 +560,7 @@ title: IMO 备赛指南
 IMO备赛是一个漫长而艰辛的过程，但同时也是充满乐趣和成就感的数学之旅。
 
 **成功要素：**
+
 1. 🎯 **明确目标**：设定阶段性目标
 2. 📚 **系统学习**：建立完整的知识体系
 3. 💪 **持续练习**：量变引起质变

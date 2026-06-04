@@ -7,10 +7,10 @@ title: Stanford FOAG 章节对照表
 ---
 # Stanford FOAG 章节对照表
 
-**版本**: v1.0  
-**创建日期**: 2026年4月3日  
-**适用教材**: Vakil - Foundations of Algebraic Geometry (Oct 2025版本)  
-**课程对应**: Stanford Math 216A/B/C  
+**版本**: v1.0
+**创建日期**: 2026年4月3日
+**适用教材**: Vakil - Foundations of Algebraic Geometry (Oct 2025版本)
+**课程对应**: Stanford Math 216A/B/C
 **文档类型**: 国际权威课程对齐 · Stanford FOAG专用
 
 ---
@@ -20,6 +20,7 @@ title: Stanford FOAG 章节对照表
 - [Stanford FOAG 章节对照表](#stanford-foag-章节对照表)
   - [目录](#目录)
   - [FOAG概述](#foag概述)
+    - [FOAG三部分结构](#foag三部分结构)
   - [Part I: 预备知识](#part-i-预备知识)
     - [Ch.1-3: 范畴论基础](#ch1-3-范畴论基础)
     - [Ch.4-6: 层与空间](#ch4-6-层与空间)
@@ -33,7 +34,13 @@ title: Stanford FOAG 章节对照表
     - [Ch.24-26: 导出函子](#ch24-26-导出函子)
     - [Ch.27-30: 几何应用](#ch27-30-几何应用)
   - [逐章详细对照](#逐章详细对照)
+    - [Stanford Math 216A (Part I + Part II前半)](#stanford-math-216a-part-i--part-ii前半)
+    - [Stanford Math 216B (Part II后半 + Part III前半)](#stanford-math-216b-part-ii后半--part-iii前半)
+    - [Stanford Math 216C (Part III后半)](#stanford-math-216c-part-iii后半)
   - [对齐覆盖率统计](#对齐覆盖率统计)
+    - [按Part统计](#按part统计)
+    - [按主题统计](#按主题统计)
+    - [Stanford Math 216系列对应](#stanford-math-216系列对应)
 
 ---
 
@@ -221,8 +228,8 @@ title: Stanford FOAG 章节对照表
 
 ---
 
-**文档状态**: v1.0（2026年4月）  
-**FOAG版本**: October 2025  
-**关联文档**: [Stanford-FOAG-mapping-detailed.md](../../project/Stanford-FOAG-mapping-detailed.md)  
-**维护建议**: FOAG版本更新时复核  
+**文档状态**: v1.0（2026年4月）
+**FOAG版本**: October 2025
+**关联文档**: [Stanford-FOAG-mapping-detailed.md](../../project/Stanford-FOAG-mapping-detailed.md)
+**维护建议**: FOAG版本更新时复核
 **下次复核**: 2026年8月

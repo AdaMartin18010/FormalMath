@@ -5,10 +5,12 @@ msc_secondary:
 ---
 
 ﻿---
+
 msc_primary: 00A99
 processed_at: '2026-04-15'
 title: Cambridge 课程映射表
 ---
+
 # Cambridge 课程映射表
 
 **版本**: v1.0
@@ -26,27 +28,46 @@ title: Cambridge 课程映射表
   - [课程总览](#课程总览)
   - [Part IA: 基础课程](#part-ia-基础课程)
     - [Numbers and Sets](#numbers-and-sets)
+      - [对照表](#对照表)
     - [Groups](#groups)
-    - [Analysis I](#analysis-i)
+      - [对照表](#对照表-1)
+    - [Analysis ](#analysis-i)
+      - [对照表](#对照表-2)
     - [Differential Equations](#differential-equations)
+      - [对照表](#对照表-3)
     - [Probability](#probability)
+      - [对照表](#对照表-4)
   - [Part IB: 进阶课程](#part-ib-进阶课程)
     - [Linear Algebra](#linear-algebra)
+      - [对照表](#对照表-5)
     - [Groups, Rings and Modules](#groups-rings-and-modules)
+      - [对照表](#对照表-6)
     - [Analysis and Topology](#analysis-and-topology)
+      - [对照表](#对照表-7)
     - [Complex Analysis](#complex-analysis)
+      - [对照表](#对照表-8)
   - [Part II: 专业深化](#part-ii-专业深化)
     - [Galois Theory](#galois-theory)
+      - [对照表](#对照表-9)
     - [Algebraic Topology](#algebraic-topology)
+      - [对照表](#对照表-10)
     - [Number Fields](#number-fields)
+      - [对照表](#对照表-11)
     - [Algebraic Geometry](#algebraic-geometry)
+      - [对照表](#对照表-12)
     - [Differential Geometry](#differential-geometry)
+      - [对照表](#对照表-13)
   - [Part III: 研究生课程](#part-iii-研究生课程)
     - [Advanced Algebraic Geometry](#advanced-algebraic-geometry)
+      - [对照表](#对照表-14)
     - [Homotopy Theory](#homotopy-theory)
+      - [对照表](#对照表-15)
     - [Elliptic Curves](#elliptic-curves)
+      - [对照表](#对照表-16)
   - [课程依赖关系图](#课程依赖关系图)
   - [对齐覆盖率统计](#对齐覆盖率统计)
+    - [按Tripos级别统计](#按tripos级别统计)
+    - [按学科统计](#按学科统计)
 
 ---
 
@@ -57,8 +78,8 @@ title: Cambridge 课程映射表
 这一发现证明：
 
 1. FormalMath 的**证明严格性**与 Cambridge **Tripos 考试要求**完美同步
-2. **经典教材对应**完整覆盖 Hardy、Davenport、Hatcher 等 Cambridge 标准教材
-3. 从 Part IA → Part III 的**渐进式学习路径**在 FormalMath 中有清晰映射
+1. **经典教材对应**完整覆盖 Hardy、Davenport、Hatcher 等 Cambridge 标准教材
+2. 从 Part IA → Part III 的**渐进式学习路径**在 FormalMath 中有清晰映射
 
 ---
 

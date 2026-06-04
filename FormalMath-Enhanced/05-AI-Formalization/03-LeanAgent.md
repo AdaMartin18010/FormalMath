@@ -623,7 +623,7 @@ if __name__ == "__main__":
 ### 相关项目
 
 - [Mathlib 4](https://github.com/leanprover-community/mathlib4)
-- [LeanDojo](https://leandojo.org/)[需更新] - Lean证明环境交互
+- [LeanDojo][https://leandojo.org/](需更新) - Lean证明环境交互
 - [ReProver](https://github.com/lean-dojo/ReProver) - 检索增强证明器
 
 ### 终身学习资源

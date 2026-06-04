@@ -8,9 +8,11 @@ title: IMO 2025 Problem 2
 # IMO 2025 Problem 2
 
 ## 题目
+
 设 $\Omega$ 与 $\Gamma$ 为两圆，圆心分别为 $M$ 与 $N$，且 $\Omega$ 的半径小于 $\Gamma$ 的半径。设两圆交于两个不同点 $A$ 与 $B$。直线 $MN$ 交 $\Omega$ 于 $C$、交 $\Gamma$ 于 $D$，且 $C,M,N,D$ 依次排列在直线上。设 $P$ 为 $\triangle ACD$ 的外心。直线 $AP$ 再次交 $\Omega$ 于 $E\neq A$，再次交 $\Gamma$ 于 $F\neq A$。设 $H$ 为 $\triangle PMN$ 的垂心。证明：过 $H$ 且平行于 $AP$ 的直线与 $\triangle BEF$ 的外接圆相切。
 
 ## 分类信息
+
 - **领域**: 几何
 - **难度**: 5分
 - **涉及概念**: 外心、垂心、相切、平行线、位似
@@ -18,9 +20,11 @@ title: IMO 2025 Problem 2
 ## 解答
 
 ### 答案
+
 过 $H$ 平行于 $AP$ 的直线与 $\triangle BEF$ 的外接圆相切。
 
 ### 证明
+
 设 $\alpha=\angle DCA=\angle BCD$，$\beta=\angle ADC=\angle CDB$。
 
 **步骤1**：$P$ 是 $\triangle AMN$ 的 $A$-旁心。
@@ -50,6 +54,7 @@ $$\angle EBF=\angle EBA+\angle ABF=\angle ECA+\angle ADF=(\alpha+\beta)+(\alpha+
 另一方面，$T$ 为弧 $EF$ 中点，$TE=TF$。由步骤4，$T$ 在 $ME$ 和 $NF$ 上，可证 $TH\perp EF$。由于 $EF$ 在直线 $AP$ 上，故 $TH\perp AP$。而 $T\in(BEF)$ 且为弧中点，所以过 $T$ 垂直于 $AP$ 的直线就是过 $H$ 平行于 $AP$ 的直线，它必与 $(BEF)$ 相切于 $T$。
 
 ## 关键思路与技巧
+
 1. **旁心识别**：$P$ 是 $\triangle AMN$ 的 $A$-旁心，简化角度计算
 2. **平行四边形 $ACA''D$**：通过 $CE\parallel AD$、$DF\parallel AC$ 构造辅助点 $A''$
 3. **外心 $T$**：$\triangle A''EF$ 的外心 $T$ 同时落在 $(BEF)$ 和 $BA''$ 上
@@ -57,6 +62,7 @@ $$\angle EBF=\angle EBA+\angle ABF=\angle ECA+\angle ADF=(\alpha+\beta)+(\alpha+
 5. **切线判定**：证明 $TH\perp AP$ 且 $T$ 在圆上
 
 ## 参考
+
 - IMO 2025 Official Solutions
 - AoPS Community
 - Evan Chen''s Solution Notes

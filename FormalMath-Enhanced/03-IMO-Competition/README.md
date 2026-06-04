@@ -92,12 +92,14 @@ title: IMO 竞赛数学模块
 ## 分类统计
 
 ### 按领域分类
+
 - 代数（Algebra）：约28题
 - 几何（Geometry）：约40题
 - 数论（Number Theory）：约30题
 - 组合（Combinatorics）：约22题
 
 ### 按难度分类
+
 - 难度1-2分（简单）：约10题
 - 难度3-4分（中等）：约40题
 - 难度5-7分（困难）：约70题
@@ -105,14 +107,17 @@ title: IMO 竞赛数学模块
 ## 相关资源
 
 ### 官方资源
+
 - [IMO官方网站](https://www.imo-official.org/)
 - [IMO题目档案](https://www.imo-official.org/problems.aspx)
 
 ### 社区资源
+
 - [Art of Problem Solving (AoPS)](https://artofproblemsolving.com/)
 - [AoPS IMO论坛](https://artofproblemsolving.com/community/c6_high_school_olympiads)
 
 ### FormalMath链接
+
 - 主项目文档
 - 数学概念体系
 

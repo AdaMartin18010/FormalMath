@@ -388,7 +388,7 @@ Codex (2022)          ████████████████          
 
 - [DeepSeek-Math](02-DeepSeek-Math.md)
 - [Lean 4](https://lean-lang.org/)
-- [Isabelle/HOL](https://isabelle.in.tum.de/)[需更新]
+- [Isabelle/HOL][https://isabelle.in.tum.de/](需更新)
 
 ---
 
