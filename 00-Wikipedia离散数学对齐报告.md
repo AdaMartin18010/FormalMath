@@ -7,31 +7,43 @@ processed_at: '2026-04-05'
 ---
 # Wikipedia离散数学对齐报告
 
-**创建日期**: 2026年4月4日  
-**最后更新**: 2026年4月4日  
-**版本**: v1.0  
+**创建日期**: 2026年4月4日
+**最后更新**: 2026年4月4日
+**版本**: v1.0
 
 ---
 
 ## 📋 目录
 
-- [概述](#概述)
-- [分析范围](#分析范围)
-- [Wikipedia离散数学概念结构](#wikipedia离散数学概念结构)
-  - [1. Combinatorics (组合数学)](#1-combinatorics-组合数学)
-  - [2. Graph Theory (图论)](#2-graph-theory-图论)
-  - [3. Discrete Geometry (离散几何)](#3-discrete-geometry-离散几何)
-  - [4. Coding Theory (编码理论)](#4-coding-theory-编码理论)
-  - [5. Design Theory (设计理论)](#5-design-theory-设计理论)
-  - [6. Matroid (拟阵)](#6-matroid-拟阵)
-  - [7. Algorithm (算法)](#7-algorithm-算法)
-  - [8. Data Structure (数据结构)](#8-data-structure-数据结构)
-- [FormalMath与Wikipedia对齐分析](#formalmath与wikipedia对齐分析)
-  - [概念覆盖度分析](#概念覆盖度分析)
-  - [概念定义对比](#概念定义对比)
-  - [结构关系对比](#结构关系对比)
-- [对齐建议](#对齐建议)
-- [附录：概念结构映射JSON](#附录概念结构映射json)
+- [Wikipedia离散数学对齐报告](#wikipedia离散数学对齐报告)
+  - [📋 目录](#-目录)
+  - [概述](#概述)
+  - [分析范围](#分析范围)
+    - [Wikipedia离散数学条目列表](#wikipedia离散数学条目列表)
+  - [Wikipedia离散数学概念结构](#wikipedia离散数学概念结构)
+    - [1. Combinatorics (组合数学)](#1-combinatorics-组合数学)
+    - [2. Graph Theory (图论)](#2-graph-theory-图论)
+    - [3. Discrete Geometry (离散几何)](#3-discrete-geometry-离散几何)
+    - [4. Coding Theory (编码理论)](#4-coding-theory-编码理论)
+    - [5. Design Theory (设计理论)](#5-design-theory-设计理论)
+    - [6. Matroid (拟阵)](#6-matroid-拟阵)
+    - [7. Algorithm (算法)](#7-algorithm-算法)
+    - [8. Data Structure (数据结构)](#8-data-structure-数据结构)
+  - [FormalMath与Wikipedia对齐分析](#formalmath与wikipedia对齐分析)
+    - [概念覆盖度分析](#概念覆盖度分析)
+    - [概念定义对比](#概念定义对比)
+      - [组合数 (Binomial Coefficient)](#组合数-binomial-coefficient)
+      - [图 (Graph)](#图-graph)
+      - [算法 (Algorithm)](#算法-algorithm)
+    - [结构关系对比](#结构关系对比)
+      - [Wikipedia离散数学分类结构](#wikipedia离散数学分类结构)
+      - [FormalMath离散数学分类结构](#formalmath离散数学分类结构)
+  - [对齐建议](#对齐建议)
+    - [高优先级补充内容](#高优先级补充内容)
+    - [中优先级补充内容](#中优先级补充内容)
+    - [内容优化建议](#内容优化建议)
+  - [附录：概念结构映射JSON](#附录概念结构映射json)
+  - [参考文献](#参考文献)
 
 ---
 
@@ -40,6 +52,7 @@ processed_at: '2026-04-05'
 本报告旨在将FormalMath项目的离散数学内容与Wikipedia的离散数学概念结构进行系统性对齐分析。通过对Wikipedia离散数学主要条目的分析，提取概念定义和结构关系，为FormalMath项目的概念体系提供参考基准。
 
 **对齐目标**:
+
 - 确保FormalMath离散数学概念与Wikipedia权威定义一致
 - 识别概念覆盖差距，指导内容补充
 - 建立概念间的结构映射关系
@@ -71,6 +84,7 @@ processed_at: '2026-04-05'
 **Wikipedia定义**: 组合数学是数学的一个分支，主要研究离散对象的计数、选择、排列和组合。
 
 **核心子概念**:
+
 ```
 Combinatorics
 ├── Enumerative Combinatorics (枚举组合学)
@@ -87,11 +101,12 @@ Combinatorics
 ```
 
 **关键概念定义**:
+
 - **Binomial Coefficient**: $\binom{n}{k} = \frac{n!}{k!(n-k)!}$
 - **Pascal's Identity**: $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$
 - **Binomial Theorem**: $(x+y)^n = \sum_{k=0}^n \binom{n}{k} x^k y^{n-k}$
 
-**Wikipedia链接**: https://en.wikipedia.org/wiki/Combinatorics  
+**Wikipedia链接**: https://en.wikipedia.org/wiki/Combinatorics
 **Wikipedia链接**: https://en.wikipedia.org/wiki/Binomial_coefficient
 
 ---
@@ -101,6 +116,7 @@ Combinatorics
 **Wikipedia定义**: 图论是组合数学的一个分支，研究图的数学结构，图由顶点（节点）和连接顶点的边组成。
 
 **核心子概念**:
+
 ```
 Graph Theory
 ├── Basic Concepts (基本概念)
@@ -129,11 +145,12 @@ Graph Theory
 ```
 
 **关键定理**:
+
 - **Handshaking Lemma**: $\sum_{v \in V} d(v) = 2|E|$
 - **Euler's Formula**: 对于平面图，$V - E + F = 2$
 - **Dirac's Theorem**: 若图G有n个顶点(n≥3)，每个顶点度≥n/2，则G有哈密顿回路
 
-**Wikipedia链接**: https://en.wikipedia.org/wiki/Graph_theory  
+**Wikipedia链接**: https://en.wikipedia.org/wiki/Graph_theory
 **Wikipedia链接**: https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)
 
 ---
@@ -143,6 +160,7 @@ Graph Theory
 **Wikipedia定义**: 离散几何是几何学的一个分支，研究离散几何对象的组合性质和度量性质。
 
 **核心子概念**:
+
 ```
 Discrete Geometry
 ├── Convex Geometry (凸几何)
@@ -160,6 +178,7 @@ Discrete Geometry
 ```
 
 **关键概念**:
+
 - **Convex Hull**: 包含给定点集的最小凸集
 - **Voronoi Diagram**: 空间分割结构
 - **Delaunay Triangulation**: 三角剖分
@@ -173,6 +192,7 @@ Discrete Geometry
 **Wikipedia定义**: 编码理论是研究数据编码方法的数学理论，主要用于错误检测和纠正。
 
 **核心子概念**:
+
 ```
 Coding Theory
 ├── Error-correcting Codes (纠错码)
@@ -196,11 +216,12 @@ Coding Theory
 ```
 
 **关键概念**:
+
 - **Hamming Distance**: 两个码字不同位置的数量
 - **Minimum Distance**: 码的最小汉明距离，决定纠错能力
 - **Linear Code**: 线性码，码字构成向量空间的子空间
 
-**Wikipedia链接**: https://en.wikipedia.org/wiki/Coding_theory  
+**Wikipedia链接**: https://en.wikipedia.org/wiki/Coding_theory
 **Wikipedia链接**: https://en.wikipedia.org/wiki/Hamming_distance
 
 ---
@@ -210,6 +231,7 @@ Coding Theory
 **Wikipedia定义**: 设计理论是组合数学的一个分支，研究组合设计，特别是平衡不完全区组设计(BIBD)。
 
 **核心子概念**:
+
 ```
 Design Theory
 ├── Block Designs (区组设计)
@@ -228,11 +250,12 @@ Design Theory
 ```
 
 **关键概念**:
+
 - **BIBD参数关系**: $vr = bk$, $r(k-1) = \lambda(v-1)$
 - **Hadamard Matrix**: 元素为±1，行互相正交的矩阵
 - **Steiner System S(t,k,n)**: n元集的k元子集族，每个t元子集恰好包含在一个区组中
 
-**Wikipedia链接**: https://en.wikipedia.org/wiki/Design_theory  
+**Wikipedia链接**: https://en.wikipedia.org/wiki/Design_theory
 **Wikipedia链接**: https://en.wikipedia.org/wiki/Block_design
 
 ---
@@ -242,6 +265,7 @@ Design Theory
 **Wikipedia定义**: 拟阵是组合数学中抽象和推广线性无关概念的结构。
 
 **核心子概念**:
+
 ```
 Matroid
 ├── Axioms (公理)
@@ -263,6 +287,7 @@ Matroid
 ```
 
 **关键概念**:
+
 - **Rank Function**: r(S)表示集合S的秩
 - **Basis**: 极大独立集
 - **Circuit**: 极小相关集
@@ -276,6 +301,7 @@ Matroid
 **Wikipedia定义**: 算法是解决特定问题的明确、有限、有效的步骤序列。
 
 **核心子概念**:
+
 ```
 Algorithm
 ├── Algorithm Analysis (算法分析)
@@ -305,11 +331,12 @@ Algorithm
 ```
 
 **关键概念**:
+
 - **Big-O Notation**: 描述算法复杂度的渐近上界
 - **NP-completeness**: NP完全问题的定义和性质
 - **Turing Machine**: 计算的形式化模型
 
-**Wikipedia链接**: https://en.wikipedia.org/wiki/Algorithm  
+**Wikipedia链接**: https://en.wikipedia.org/wiki/Algorithm
 **Wikipedia链接**: https://en.wikipedia.org/wiki/Computational_complexity_theory
 
 ---
@@ -319,6 +346,7 @@ Algorithm
 **Wikipedia定义**: 数据结构是计算机中组织和存储数据的方式，使数据可以高效地访问和修改。
 
 **核心子概念**:
+
 ```
 Data Structure
 ├── Linear Structures (线性结构)
@@ -346,6 +374,7 @@ Data Structure
 ```
 
 **关键概念**:
+
 - **Time/Space Complexity**: 各操作的时间和空间复杂度
 - **Abstract Data Type (ADT)**: 抽象数据类型与具体实现的区别
 
@@ -454,6 +483,7 @@ D7 - 离散数学
 ```
 
 **结构对比分析**:
+
 - ✅ FormalMath已有的概念与Wikipedia结构一致
 - ⚠️ FormalMath缺少离散几何、编码理论、设计理论等分支
 - ⚠️ FormalMath图论和组合数学的细分有待深化
@@ -481,15 +511,15 @@ D7 - 离散数学
 
 ### 中优先级补充内容
 
-4. **设计理论 (Design Theory)**
+1. **设计理论 (Design Theory)**
    - BIBD、拉丁方、Hadamard矩阵
    - MSC分类: 05Bxx
 
-5. **拟阵 (Matroid)**
+2. **拟阵 (Matroid)**
    - 独立集、基、秩函数
    - MSC分类: 05B35
 
-6. **高级图论 (Advanced Graph Theory)**
+3. **高级图论 (Advanced Graph Theory)**
    - 代数图论、极值图论、拓扑图论
    - MSC分类: 05Cxx
 
@@ -508,6 +538,7 @@ D7 - 离散数学
 详见配套文件: `00-Wikipedia离散数学概念结构映射.json`
 
 **JSON文件包含内容**:
+
 - 8个Wikipedia离散数学条目的完整概念结构
 - 概念间的层级关系
 - 与FormalMath文档的映射链接
@@ -529,5 +560,5 @@ D7 - 离散数学
 
 ---
 
-**报告创建**: FormalMath对齐分析任务  
+**报告创建**: FormalMath对齐分析任务
 **最后更新**: 2026年4月4日

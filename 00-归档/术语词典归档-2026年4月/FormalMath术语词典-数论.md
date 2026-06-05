@@ -17,137 +17,137 @@ processed_at: '2026-04-05'
 
 - [FormalMath术语词典 - 数论](#formalmath术语词典---数论)
   - [统一数论术语标准定义](#统一数论术语标准定义)
-  - 📑 目录 / Table of Contents
-  - [📋 词典概述](#词典概述)
-  - 🗺️ 数论核心概念思维导图
-  - [📊 数论核心概念多维知识矩阵](#数论核心概念多维知识矩阵)
-    - 词典统计 / Dictionary Statistics
-    - 词典特色 / Dictionary Features
-  - 🔢 初等数论术语 / Elementary Number Theory Terms
-    - 基本概念 / Basic Concepts
-      - 整除 / Divisibility
-      - 最大公约数 / Greatest Common Divisor
-      - 最小公倍数 / Least Common Multiple
-      - 素数 / Prime Number
-    - 同余理论 / Congruence Theory
-      - 同余 / Congruence
-      - 剩余类 / Residue Class
-      - 欧拉函数 / Euler's Totient Function
-      - 费马小定理 / Fermat's Little Theorem
-      - 欧拉定理 / Euler's Theorem
-  - 🔷 代数数论术语 / Algebraic Number Theory Terms
-    - 基本概念 / Basic Concepts
-      - 代数整数 / Algebraic Integer
-      - 代数数域 / Algebraic Number Field
-      - 理想 / Ideal
-      - 素理想 / Prime Ideal
-  - 📊 解析数论术语 / Analytic Number Theory Terms
-    - 基本概念 / Basic Concepts
-      - 黎曼ζ函数 / Riemann Zeta Function
-      - L函数 / L-Function
-      - 素数定理 / Prime Number Theorem
-  - 📊 术语关系图 / Term Relationship Diagram
-    - 初等数论概念层次关系 / Elementary Number Theory Concept Hierarchy
-    - 代数数论概念层次关系 / Algebraic Number Theory Concept Hierarchy
-    - 解析数论概念层次关系 / Analytic Number Theory Concept Hierarchy
-    - 数论分支关系 / Number Theory Branch Relationships
-  - 📊 术语快速参考表 / Quick Reference Table
-    - 核心术语（⭐⭐⭐⭐⭐） / Core Terms
-    - 重要术语（⭐⭐⭐⭐） / Important Terms
-    - 常用术语（⭐⭐⭐） / Common Terms
-  - 🔤 LaTeX代码快速参考 / LaTeX Code Quick Reference
-    - 初等数论术语LaTeX代码 / Elementary Number Theory Terms LaTeX Code
-    - 代数数论术语LaTeX代码 / Algebraic Number Theory Terms LaTeX Code
-    - 解析数论术语LaTeX代码 / Analytic Number Theory Terms LaTeX Code
-    - 常用LaTeX包推荐 / Recommended LaTeX Packages
-  - 📊 术语索引 / Term Index
-    - 按分类索引 / Index by Category
+  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📋 词典概述](#-词典概述)
+  - [🗺️ 数论核心概念思维导图](#️-数论核心概念思维导图)
+  - [📊 数论核心概念多维知识矩阵](#-数论核心概念多维知识矩阵)
+    - [词典统计 / Dictionary Statistics](#词典统计--dictionary-statistics)
+    - [词典特色 / Dictionary Features](#词典特色--dictionary-features)
+  - [🔢 初等数论术语 / Elementary Number Theory Terms](#-初等数论术语--elementary-number-theory-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts)
+      - [整除 / Divisibility](#整除--divisibility)
+      - [最大公约数 / Greatest Common Divisor](#最大公约数--greatest-common-divisor)
+      - [最小公倍数 / Least Common Multiple](#最小公倍数--least-common-multiple)
+      - [素数 / Prime Number](#素数--prime-number)
+    - [同余理论 / Congruence Theory](#同余理论--congruence-theory)
+      - [同余 / Congruence](#同余--congruence)
+      - [剩余类 / Residue Class](#剩余类--residue-class)
+      - [欧拉函数 / Euler's Totient Function](#欧拉函数--eulers-totient-function)
+      - [费马小定理 / Fermat's Little Theorem](#费马小定理--fermats-little-theorem)
+      - [欧拉定理 / Euler's Theorem](#欧拉定理--eulers-theorem)
+  - [🔷 代数数论术语 / Algebraic Number Theory Terms](#-代数数论术语--algebraic-number-theory-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts-1)
+      - [代数整数 / Algebraic Integer](#代数整数--algebraic-integer)
+      - [代数数域 / Algebraic Number Field](#代数数域--algebraic-number-field)
+      - [理想 / Ideal](#理想--ideal)
+      - [素理想 / Prime Ideal](#素理想--prime-ideal)
+  - [📊 解析数论术语 / Analytic Number Theory Terms](#-解析数论术语--analytic-number-theory-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts-2)
+      - [黎曼ζ函数 / Riemann Zeta Function](#黎曼ζ函数--riemann-zeta-function)
+      - [L函数 / L-Function](#l函数--l-function)
+      - [素数定理 / Prime Number Theorem](#素数定理--prime-number-theorem)
+  - [📊 术语关系图 / Term Relationship Diagram](#-术语关系图--term-relationship-diagram)
+    - [初等数论概念层次关系 / Elementary Number Theory Concept Hierarchy](#初等数论概念层次关系--elementary-number-theory-concept-hierarchy)
+    - [代数数论概念层次关系 / Algebraic Number Theory Concept Hierarchy](#代数数论概念层次关系--algebraic-number-theory-concept-hierarchy)
+    - [解析数论概念层次关系 / Analytic Number Theory Concept Hierarchy](#解析数论概念层次关系--analytic-number-theory-concept-hierarchy)
+    - [数论分支关系 / Number Theory Branch Relationships](#数论分支关系--number-theory-branch-relationships)
+  - [📊 术语快速参考表 / Quick Reference Table](#-术语快速参考表--quick-reference-table)
+    - [核心术语（⭐⭐⭐⭐⭐） / Core Terms](#核心术语--core-terms)
+    - [重要术语（⭐⭐⭐⭐） / Important Terms](#重要术语--important-terms)
+    - [常用术语（⭐⭐⭐） / Common Terms](#常用术语--common-terms)
+  - [🔤 LaTeX代码快速参考 / LaTeX Code Quick Reference](#-latex代码快速参考--latex-code-quick-reference)
+    - [初等数论术语LaTeX代码 / Elementary Number Theory Terms LaTeX Code](#初等数论术语latex代码--elementary-number-theory-terms-latex-code)
+    - [代数数论术语LaTeX代码 / Algebraic Number Theory Terms LaTeX Code](#代数数论术语latex代码--algebraic-number-theory-terms-latex-code)
+    - [解析数论术语LaTeX代码 / Analytic Number Theory Terms LaTeX Code](#解析数论术语latex代码--analytic-number-theory-terms-latex-code)
+    - [常用LaTeX包推荐 / Recommended LaTeX Packages](#常用latex包推荐--recommended-latex-packages)
+  - [📊 术语索引 / Term Index](#-术语索引--term-index)
+    - [按分类索引 / Index by Category](#按分类索引--index-by-category)
       - [初等数论术语](#初等数论术语)
       - [代数数论术语](#代数数论术语)
       - [解析数论术语](#解析数论术语)
-  - 📊 符号对照表 / Symbol Reference Table
-  - ⚠️ 常见错误与注意事项 / Common Errors and Notes
+  - [📊 符号对照表 / Symbol Reference Table](#-符号对照表--symbol-reference-table)
+  - [⚠️ 常见错误与注意事项 / Common Errors and Notes](#️-常见错误与注意事项--common-errors-and-notes)
     - [初等数论常见错误](#初等数论常见错误)
     - [代数数论常见错误](#代数数论常见错误)
     - [解析数论常见错误](#解析数论常见错误)
-  - 📖 应用场景 / Application Scenarios
+  - [📖 应用场景 / Application Scenarios](#-应用场景--application-scenarios)
     - [理论应用](#理论应用)
     - [实际应用](#实际应用)
-  - 🛤️ 学习路径建议 / Learning Path Recommendations
+  - [🛤️ 学习路径建议 / Learning Path Recommendations](#️-学习路径建议--learning-path-recommendations)
     - [初学者路径](#初学者路径)
     - [中级路径](#中级路径)
     - [高级路径](#高级路径)
-  - 🔄 术语变体与别名 / Term Variants and Aliases
-    - 初等数论术语变体 / Elementary Number Theory Term Variants
-      - 最大公约数 / Greatest Common Divisor
-      - 同余 / Congruence
-      - 欧拉函数 / Euler's Totient Function
-    - 代数数论术语变体 / Algebraic Number Theory Term Variants
-      - 代数整数 / Algebraic Integer
-    - 解析数论术语变体 / Analytic Number Theory Term Variants
-      - 黎曼ζ函数 / Riemann Zeta Function
-  - 📖 扩展阅读建议 / Further Reading Recommendations
-    - 初等数论 / Elementary Number Theory
-    - 代数数论 / Algebraic Number Theory
-    - 解析数论 / Analytic Number Theory
-    - 在线资源 / Online Resources
-  - 💡 实践练习与记忆技巧 / Practice Exercises and Memory Tips
-    - 记忆技巧 / Memory Tips
+  - [🔄 术语变体与别名 / Term Variants and Aliases](#-术语变体与别名--term-variants-and-aliases)
+    - [初等数论术语变体 / Elementary Number Theory Term Variants](#初等数论术语变体--elementary-number-theory-term-variants)
+      - [最大公约数 / Greatest Common Divisor](#最大公约数--greatest-common-divisor-1)
+      - [同余 / Congruence](#同余--congruence-1)
+      - [欧拉函数 / Euler's Totient Function](#欧拉函数--eulers-totient-function-1)
+    - [代数数论术语变体 / Algebraic Number Theory Term Variants](#代数数论术语变体--algebraic-number-theory-term-variants)
+      - [代数整数 / Algebraic Integer](#代数整数--algebraic-integer-1)
+    - [解析数论术语变体 / Analytic Number Theory Term Variants](#解析数论术语变体--analytic-number-theory-term-variants)
+      - [黎曼ζ函数 / Riemann Zeta Function](#黎曼ζ函数--riemann-zeta-function-1)
+  - [📖 扩展阅读建议 / Further Reading Recommendations](#-扩展阅读建议--further-reading-recommendations)
+    - [初等数论 / Elementary Number Theory](#初等数论--elementary-number-theory)
+    - [代数数论 / Algebraic Number Theory](#代数数论--algebraic-number-theory)
+    - [解析数论 / Analytic Number Theory](#解析数论--analytic-number-theory)
+    - [在线资源 / Online Resources](#在线资源--online-resources)
+  - [💡 实践练习与记忆技巧 / Practice Exercises and Memory Tips](#-实践练习与记忆技巧--practice-exercises-and-memory-tips)
+    - [记忆技巧 / Memory Tips](#记忆技巧--memory-tips)
       - [初等数论记忆技巧](#初等数论记忆技巧)
       - [代数数论记忆技巧](#代数数论记忆技巧)
       - [解析数论记忆技巧](#解析数论记忆技巧)
-    - 基础练习 / Basic Exercises
+    - [基础练习 / Basic Exercises](#基础练习--basic-exercises)
       - [初等数论基础练习](#初等数论基础练习)
       - [代数数论基础练习](#代数数论基础练习)
       - [解析数论基础练习](#解析数论基础练习)
-    - 进阶练习 / Advanced Exercises
+    - [进阶练习 / Advanced Exercises](#进阶练习--advanced-exercises)
       - [初等数论进阶练习](#初等数论进阶练习)
       - [代数数论进阶练习](#代数数论进阶练习)
       - [解析数论进阶练习](#解析数论进阶练习)
-    - 学习检查点 / Learning Checkpoints
+    - [学习检查点 / Learning Checkpoints](#学习检查点--learning-checkpoints)
       - [初等数论检查点](#初等数论检查点)
       - [代数数论检查点](#代数数论检查点)
       - [解析数论检查点](#解析数论检查点)
-  - 📝 练习题答案与解析 / Exercise Answers and Solutions
-    - 初等数论练习题答案 / Elementary Number Theory Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-    - 代数数论练习题答案 / Algebraic Number Theory Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-    - 解析数论练习题答案 / Analytic Number Theory Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-  - 🎯 术语优先级学习顺序 / Term Priority Learning Order
-    - 优先级阶段 / Priority Stages
+  - [📝 练习题答案与解析 / Exercise Answers and Solutions](#-练习题答案与解析--exercise-answers-and-solutions)
+    - [初等数论练习题答案 / Elementary Number Theory Exercise Answers](#初等数论练习题答案--elementary-number-theory-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers)
+    - [代数数论练习题答案 / Algebraic Number Theory Exercise Answers](#代数数论练习题答案--algebraic-number-theory-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers-1)
+    - [解析数论练习题答案 / Analytic Number Theory Exercise Answers](#解析数论练习题答案--analytic-number-theory-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers-2)
+  - [🎯 术语优先级学习顺序 / Term Priority Learning Order](#-术语优先级学习顺序--term-priority-learning-order)
+    - [优先级阶段 / Priority Stages](#优先级阶段--priority-stages)
       - [第1阶段：初等数论基础（第1-12周）](#第1阶段初等数论基础第1-12周)
       - [第2阶段：初等数论进阶（第13-24周）](#第2阶段初等数论进阶第13-24周)
       - [第3阶段：代数数论基础（第25-36周）](#第3阶段代数数论基础第25-36周)
       - [第4阶段：解析数论基础（第37-48周）](#第4阶段解析数论基础第37-48周)
-    - 学习计划 / Learning Plan
-      - 48周学习计划 / 48-Week Learning Plan
-    - 学习路径 / Learning Paths
+    - [学习计划 / Learning Plan](#学习计划--learning-plan)
+      - [48周学习计划 / 48-Week Learning Plan](#48周学习计划--48-week-learning-plan)
+    - [学习路径 / Learning Paths](#学习路径--learning-paths)
       - [路径1：基础到进阶（循序渐进）](#路径1基础到进阶循序渐进)
       - [路径2：应用导向](#路径2应用导向)
       - [路径3：理论深入](#路径3理论深入)
-  - ⚠️ 常见误解澄清 / Common Misconceptions Clarification
-    - 初等数论常见误解 / Elementary Number Theory Common Misconceptions
+  - [⚠️ 常见误解澄清 / Common Misconceptions Clarification](#️-常见误解澄清--common-misconceptions-clarification)
+    - [初等数论常见误解 / Elementary Number Theory Common Misconceptions](#初等数论常见误解--elementary-number-theory-common-misconceptions)
       - [误解1：整除就是除法](#误解1整除就是除法)
       - [误解2：同余就是相等](#误解2同余就是相等)
       - [误解3：费马小定理对所有整数成立](#误解3费马小定理对所有整数成立)
-    - 代数数论常见误解 / Algebraic Number Theory Common Misconceptions
+    - [代数数论常见误解 / Algebraic Number Theory Common Misconceptions](#代数数论常见误解--algebraic-number-theory-common-misconceptions)
       - [误解1：代数整数就是整数](#误解1代数整数就是整数)
       - [误解2：理想就是子环](#误解2理想就是子环)
-    - 解析数论常见误解 / Analytic Number Theory Common Misconceptions
-      - 误解1：ζ函数只在$\text{Re}(s) \> 1$有定义
+    - [解析数论常见误解 / Analytic Number Theory Common Misconceptions](#解析数论常见误解--analytic-number-theory-common-misconceptions)
+      - [误解1：ζ函数只在$\\text{Re}(s) \> 1$有定义](#误解1ζ函数只在textres--1有定义)
       - [误解2：素数定理是精确公式](#误解2素数定理是精确公式)
-    - 一般数学概念误解 / General Mathematical Concept Misconceptions
+    - [一般数学概念误解 / General Mathematical Concept Misconceptions](#一般数学概念误解--general-mathematical-concept-misconceptions)
       - [误解1：数论就是初等数论](#误解1数论就是初等数论)
       - [误解2：数论没有实际应用](#误解2数论没有实际应用)
-  - 📊 术语对比表 / Term Comparison Table
-    - 整除性概念对比 / Divisibility Concept Comparison
-    - 同余性概念对比 / Congruence Concept Comparison
-    - 数论函数对比 / Number Theory Function Comparison
-    - 数论分支对比 / Number Theory Branch Comparison
-  - 📋 术语速查表 / Term Quick Reference
-    - 按字母顺序速查 / Alphabetical Quick Reference
+  - [📊 术语对比表 / Term Comparison Table](#-术语对比表--term-comparison-table)
+    - [整除性概念对比 / Divisibility Concept Comparison](#整除性概念对比--divisibility-concept-comparison)
+    - [同余性概念对比 / Congruence Concept Comparison](#同余性概念对比--congruence-concept-comparison)
+    - [数论函数对比 / Number Theory Function Comparison](#数论函数对比--number-theory-function-comparison)
+    - [数论分支对比 / Number Theory Branch Comparison](#数论分支对比--number-theory-branch-comparison)
+  - [📋 术语速查表 / Term Quick Reference](#-术语速查表--term-quick-reference)
+    - [按字母顺序速查 / Alphabetical Quick Reference](#按字母顺序速查--alphabetical-quick-reference)
       - [C](#c)
       - [D](#d)
       - [E](#e)
@@ -159,52 +159,52 @@ processed_at: '2026-04-05'
       - [Q](#q)
       - [R](#r)
       - [Z](#z)
-    - 按分支速查 / Quick Reference by Branch
+    - [按分支速查 / Quick Reference by Branch](#按分支速查--quick-reference-by-branch)
       - [初等数论](#初等数论)
       - [代数数论](#代数数论)
       - [解析数论](#解析数论)
-    - 按主题速查 / Quick Reference by Topic
+    - [按主题速查 / Quick Reference by Topic](#按主题速查--quick-reference-by-topic)
       - [整除性](#整除性)
       - [同余性](#同余性)
       - [素数理论](#素数理论)
       - [代数结构](#代数结构)
       - [解析函数](#解析函数)
-  - 📖 术语应用指南 / Term Application Guide
-    - 如何有效使用本词典 / How to Use This Dictionary Effectively
-      - 初学者阶段 / Beginner Stage
-      - 中级阶段 / Intermediate Stage
-      - 高级阶段 / Advanced Stage
-    - 术语查找策略 / Term Lookup Strategies
+  - [📖 术语应用指南 / Term Application Guide](#-术语应用指南--term-application-guide)
+    - [如何有效使用本词典 / How to Use This Dictionary Effectively](#如何有效使用本词典--how-to-use-this-dictionary-effectively)
+      - [初学者阶段 / Beginner Stage](#初学者阶段--beginner-stage)
+      - [中级阶段 / Intermediate Stage](#中级阶段--intermediate-stage)
+      - [高级阶段 / Advanced Stage](#高级阶段--advanced-stage)
+    - [术语查找策略 / Term Lookup Strategies](#术语查找策略--term-lookup-strategies)
       - [策略1：按字母顺序查找](#策略1按字母顺序查找)
       - [策略2：按分支查找](#策略2按分支查找)
       - [策略3：按主题查找](#策略3按主题查找)
       - [策略4：使用对比表](#策略4使用对比表)
-    - 术语学习建议 / Term Learning Recommendations
+    - [术语学习建议 / Term Learning Recommendations](#术语学习建议--term-learning-recommendations)
       - [建议1：循序渐进](#建议1循序渐进)
       - [建议2：理解概念关系](#建议2理解概念关系)
       - [建议3：实践应用](#建议3实践应用)
       - [建议4：避免常见错误](#建议4避免常见错误)
-  - 🕸️ 术语关系网络图 / Term Relationship Network Diagram
-    - 初等数论核心概念网络 / Elementary Number Theory Core Concept Network
-    - 代数数论核心概念网络 / Algebraic Number Theory Core Concept Network
-    - 解析数论核心概念网络 / Analytic Number Theory Core Concept Network
-    - 数论分支关系网络 / Number Theory Branch Relationship Network
-    - 学习路径关系网络 / Learning Path Relationship Network
-    - 应用关系网络 / Application Relationship Network
-  - 📜 历史背景 / Historical Background
-    - 初等数论历史 / Elementary Number Theory History
-    - 代数数论历史 / Algebraic Number Theory History
-    - 解析数论历史 / Analytic Number Theory History
-    - 数论现代发展 / Modern Number Theory Development
-  - 📚 参考文献 / References
+  - [🕸️ 术语关系网络图 / Term Relationship Network Diagram](#️-术语关系网络图--term-relationship-network-diagram)
+    - [初等数论核心概念网络 / Elementary Number Theory Core Concept Network](#初等数论核心概念网络--elementary-number-theory-core-concept-network)
+    - [代数数论核心概念网络 / Algebraic Number Theory Core Concept Network](#代数数论核心概念网络--algebraic-number-theory-core-concept-network)
+    - [解析数论核心概念网络 / Analytic Number Theory Core Concept Network](#解析数论核心概念网络--analytic-number-theory-core-concept-network)
+    - [数论分支关系网络 / Number Theory Branch Relationship Network](#数论分支关系网络--number-theory-branch-relationship-network)
+    - [学习路径关系网络 / Learning Path Relationship Network](#学习路径关系网络--learning-path-relationship-network)
+    - [应用关系网络 / Application Relationship Network](#应用关系网络--application-relationship-network)
+  - [📜 历史背景 / Historical Background](#-历史背景--historical-background)
+    - [初等数论历史 / Elementary Number Theory History](#初等数论历史--elementary-number-theory-history)
+    - [代数数论历史 / Algebraic Number Theory History](#代数数论历史--algebraic-number-theory-history)
+    - [解析数论历史 / Analytic Number Theory History](#解析数论历史--analytic-number-theory-history)
+    - [数论现代发展 / Modern Number Theory Development](#数论现代发展--modern-number-theory-development)
+  - [📚 参考文献 / References](#-参考文献--references)
     - [经典教材](#经典教材)
-  - [📊 术语使用规范](#术语使用规范)
+  - [📊 术语使用规范](#-术语使用规范)
     - [术语定义格式](#术语定义格式)
     - [术语一致性要求](#术语一致性要求)
       - [使用原则](#使用原则)
-  - 🎉 词典完成总结 / Dictionary Completion Summary
-    - 词典建设成就 / Dictionary Construction Achievements
-    - 词典功能清单 / Dictionary Function Checklist
+  - [🎉 词典完成总结 / Dictionary Completion Summary](#-词典完成总结--dictionary-completion-summary)
+    - [词典建设成就 / Dictionary Construction Achievements](#词典建设成就--dictionary-construction-achievements)
+    - [词典功能清单 / Dictionary Function Checklist](#词典功能清单--dictionary-function-checklist)
       - [核心功能模块](#核心功能模块)
       - [关系功能模块](#关系功能模块)
       - [参考功能模块](#参考功能模块)
@@ -212,13 +212,13 @@ processed_at: '2026-04-05'
       - [应用功能模块](#应用功能模块)
       - [对比功能模块](#对比功能模块)
       - [历史与总结模块](#历史与总结模块)
-    - 词典统计数据 / Dictionary Statistics
-    - 词典版本历史 / Dictionary Version History
+    - [词典统计数据 / Dictionary Statistics](#词典统计数据--dictionary-statistics)
+    - [词典版本历史 / Dictionary Version History](#词典版本历史--dictionary-version-history)
       - [v1.0（2025年1月）- 初始版本](#v102025年1月--初始版本)
       - [v1.1（2025年1月）- 功能扩展版本](#v112025年1月--功能扩展版本)
       - [v1.2（2025年1月）- 学习功能版本](#v122025年1月--学习功能版本)
-    - 词典完成度评估 / Dictionary Completion Assessment
-    - 词典维护状态 / Dictionary Maintenance Status
+    - [词典完成度评估 / Dictionary Completion Assessment](#词典完成度评估--dictionary-completion-assessment)
+    - [词典维护状态 / Dictionary Maintenance Status](#词典维护状态--dictionary-maintenance-status)
 
 ---
 

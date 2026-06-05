@@ -5,8 +5,8 @@ processed_at: '2026-04-05'
 ---
 # FormalMath 项目 .gitignore 配置修复报告
 
-**生成日期**: 2026年4月4日  
-**执行人员**: Kimi Code CLI  
+**生成日期**: 2026年4月4日
+**执行人员**: Kimi Code CLI
 **任务状态**: ✅ 已完成
 
 ---

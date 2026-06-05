@@ -23,7 +23,7 @@ concepts:
         name_en: 'Divisibility"
         definition: 'a|b当且仅当存在整数c使得b=ac'
         wiki_ref: 'https://en.wikipedia.org/wiki/Divisibility_rule'
-      
+
       - id: "NT-001-02"
         name: '最大公约数'
         name_en: 'Greatest Common Divisor'
@@ -33,7 +33,7 @@ concepts:
           - 欧几里得算法
           - 扩展欧几里得算法
         wiki_ref: 'https://en.wikipedia.org/wiki/Greatest_common_divisor'
-      
+
       - id: 'NT-001-03"
         name: '同余"
         name_en: 'Congruence'
@@ -41,7 +41,7 @@ concepts:
         definition: 'm|(a-b)'
         wiki_ref: "https://en.wikipedia.org/wiki/Modular_arithmetic'
         formalmath_ref: 'C.CORE.027'
-      
+
       - id: 'NT-001-04"
         name: "素数'
         name_en: 'Prime Number'
@@ -67,19 +67,19 @@ concepts:
         definition: "ζ(s)=Σ(1/n^s)，Re(s)>1"
         wiki_ref: 'https://en.wikipedia.org/wiki/Riemann_zeta_function'
         formalmath_ref: 'C.CORE.028'
-      
+
       - id: "NT-002-02'
         name: '素数定理"
         name_en: 'Prime Number Theorem'
         symbol: 'π(x)~x/ln(x)"
         wiki_ref: 'https://en.wikipedia.org/wiki/Prime_number_theorem"
-      
+
       - id: 'NT-002-03'
         name: '黎曼假设"
         name_en: 'Riemann Hypothesis'
         statement: "ζ(s)的所有非平凡零点都在Re(s)=1/2上'
         wiki_ref: 'https://en.wikipedia.org/wiki/Riemann_hypothesis'
-      
+
       - id: 'NT-002-04"
         name: "Dirichlet L函数'
         name_en: 'Dirichlet L-function'
@@ -102,29 +102,29 @@ concepts:
         name_en: 'Algebraic Integer"
         definition: '首一整数系数多项式的根'
         wiki_ref: 'https://en.wikipedia.org/wiki/Algebraic_integer'
-      
+
       - id: "NT-003-02"
         name: '代数数域'
         name_en: 'Algebraic Number Field'
         definition: "Q的有限扩张'
         wiki_ref: 'https://en.wikipedia.org/wiki/Algebraic_number_field"
-      
+
       - id: 'NT-003-03'
         name: '整数环"
         name_en: 'Ring of Integers"
         symbol: 'O_K'
         wiki_ref: 'https://en.wikipedia.org/wiki/Ring_of_integers"
-      
+
       - id: 'NT-003-04'
         name: "理想类群'
         name_en: 'Ideal Class Group'
         wiki_ref: 'https://en.wikipedia.org/wiki/Ideal_class_group"
-      
+
       - id: "NT-003-05'
         name: '类域论'
         name_en: 'Class Field Theory"
         wiki_ref: 'https://en.wikipedia.org/wiki/Class_field_theory'
-      
+
       - id: "NT-003-06'
         name: 'Dirichlet单位定理'
         name_en: "Dirichlet's Unit Theorem'
@@ -138,13 +138,13 @@ concepts:
         name_en: 'Modular Forms"
         wiki_ref: 'https://en.wikipedia.org/wiki/Modular_form'
         status: 'missing'
-      
+
       - id: "NT-004-02"
         name: '椭圆曲线'
         name_en: 'Elliptic Curves'
         wiki_ref: "https://en.wikipedia.org/wiki/Elliptic_curve'
         status: 'missing"
-      
+
       - id: 'NT-004-03'
         name: 'Pell方程"
         name_en: 'Pell's Equation"
@@ -159,30 +159,30 @@ relationships:
         - "初等数论'
         - '解析数论'
         - '代数数论"
-    
+
     - parent: "解析数论'
       children:
         - '黎曼ζ函数'
         - '素数定理"
         - 'L函数'
-    
+
     - parent: "代数数论'
       children:
         - '代数数域'
         - "类域论'
-  
+
   prerequisites:
     - concept: "黎曼ζ函数'
       requires:
         - '复分析'
         - "级数'
-    
+
     - concept: '代数数论"
       requires:
         - '环论'
         - '域论'
         - "Galois理论"
-    
+
     - concept: '类域论'
       requires:
         - '代数数域'

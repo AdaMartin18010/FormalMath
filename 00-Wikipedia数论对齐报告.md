@@ -7,9 +7,9 @@ processed_at: '2026-04-05'
 ---
 # Wikipedia数论概念结构对齐报告
 
-**报告编号**: WIKI-ALIGN-NT-001  
-**创建日期**: 2026年4月4日  
-**目标**: 将FormalMath数论内容与Wikipedia数学概念结构对齐  
+**报告编号**: WIKI-ALIGN-NT-001
+**创建日期**: 2026年4月4日
+**目标**: 将FormalMath数论内容与Wikipedia数学概念结构对齐
 
 ---
 
@@ -56,6 +56,7 @@ processed_at: '2026-04-05'
 ### 1. Number Theory (数论)
 
 **Wikipedia结构**:
+
 ```
 - History (历史)
   - Origins (起源)
@@ -73,6 +74,7 @@ processed_at: '2026-04-05'
 **FormalMath对应**: `concept/03-主题概念梳理/06-数论概念.md`
 
 **对齐差距**:
+
 - ✅ 已涵盖初等数论、代数数论、解析数论
 - ❌ 缺少丢番图几何独立章节
 - ❌ 历史部分不够详细
@@ -81,6 +83,7 @@ processed_at: '2026-04-05'
 ### 2. Analytic Number Theory (解析数论)
 
 **Wikipedia结构**:
+
 ```
 - History (历史)
 - Branches (分支)
@@ -97,6 +100,7 @@ processed_at: '2026-04-05'
 **FormalMath对应**: 数论概念.md - 解析数论核心概念部分
 
 **对齐差距**:
+
 - ✅ 包含黎曼ζ函数、L函数
 - ⚠️ 缺少乘性/加性数论的明确区分
 - ❌ 缺少具体方法论的系统性整理
@@ -104,6 +108,7 @@ processed_at: '2026-04-05'
 ### 3. Algebraic Number Theory (代数数论)
 
 **Wikipedia结构**:
+
 ```
 - History (历史)
 - Subfields (子领域)
@@ -119,6 +124,7 @@ processed_at: '2026-04-05'
 **FormalMath对应**: 数论概念.md - 代数数论核心概念部分
 
 **对齐差距**:
+
 - ✅ 涵盖代数数域、类域论
 - ⚠️ 缺少Iwasawa理论
 - ⚠️ 局部类域论和整体类域论需更明确区分
@@ -126,6 +132,7 @@ processed_at: '2026-04-05'
 ### 4. Prime Number Theorem (素数定理)
 
 **Wikipedia结构**:
+
 ```
 - Statement of the theorem (定理陈述)
 - History of the asymptotic law (渐近律历史)
@@ -143,6 +150,7 @@ processed_at: '2026-04-05'
 ### 5. Riemann Hypothesis (黎曼假设)
 
 **Wikipedia结构**:
+
 ```
 - Statement (陈述)
 - History (历史)
@@ -162,6 +170,7 @@ processed_at: '2026-04-05'
 ### 6. Modular Forms (模形式)
 
 **Wikipedia结构**:
+
 ```
 - Definition (定义)
   - As functions on lattices (作为格上的函数)
@@ -185,6 +194,7 @@ processed_at: '2026-04-05'
 ### 7. Elliptic Curves (椭圆曲线)
 
 **Wikipedia结构**:
+
 ```
 - Definition (定义)
   - Weierstrass form (Weierstrass形式)
@@ -205,6 +215,7 @@ processed_at: '2026-04-05'
 ### 8. Diophantine Equations (丢番图方程)
 
 **Wikipedia结构**:
+
 ```
 - Examples of Diophantine equations (例子)
   - Linear equations (线性方程)
@@ -258,23 +269,23 @@ graph TD
     NT[Number Theory<br/>数论] --> ENT[Elementary<br/>初等数论]
     NT --> ANT[Analytic<br/>解析数论]
     NT --> AGNT[Algebraic<br/>代数数论]
-    
+
     ENT --> DIV[Divisibility<br/>整除]
     ENT --> CONG[Congruence<br/>同余]
     ENT --> PRIME[Prime Numbers<br/>素数]
-    
+
     ANT --> PNT[Prime Number<br/>Theorem<br/>素数定理]
     ANT --> RZ[Riemann Zeta<br/>Function<br/>黎曼ζ函数]
     ANT --> LF[L-Functions<br/>L函数]
-    
+
     AGNT --> ANF[Algebraic<br/>Number Fields<br/>代数数域]
     AGNT --> CFT[Class Field<br/>Theory<br/>类域论]
-    
+
     RZ --> RH[Riemann<br/>Hypothesis<br/>黎曼假设]
     LF --> GRH[Generalized RH<br/>广义黎曼假设]
-    
+
     PNT --> RH
-    
+
     PRIME --> MF[Modular Forms<br/>模形式]
     MF --> EC[Elliptic Curves<br/>椭圆曲线]
     EC --> DE[Diophantine<br/>Equations<br/>丢番图方程]
@@ -401,6 +412,6 @@ Mathematics
 
 ---
 
-**报告完成日期**: 2026年4月4日  
-**版本**: v1.0  
+**报告完成日期**: 2026年4月4日
+**版本**: v1.0
 **维护状态**: 待审查

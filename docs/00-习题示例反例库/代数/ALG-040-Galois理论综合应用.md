@@ -130,6 +130,7 @@ $[\mathbb{Q}(\zeta_n) : \mathbb{Q}] = \varphi(n)$（Euler函数）。
 $$\varphi(n) = 2^{k-1} \cdot p_1^{e_1-1}(p_1-1) \cdots p_m^{e_m-1}(p_m-1)$$
 
 $\varphi(n)$ 是2的幂当且仅当：
+
 - $e_i = 1$（无重素因子）
 - $p_i - 1$ 是2的幂，即 $p_i$ 是Fermat素数
 

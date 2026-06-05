@@ -121,6 +121,7 @@ $$|G| = |H| \cdot [K^H : F]$$
 **已知：** $G = \text{Gal}(K/\mathbb{Q}) = \{\text{id}, \sigma, \tau, \sigma\tau\} \cong \mathbb{Z}_2 \times \mathbb{Z}_2$
 
 其中：
+
 - $\sigma(\sqrt{2}) = -\sqrt{2}$，$\sigma(\sqrt{3}) = \sqrt{3}$
 - $\tau(\sqrt{2}) = \sqrt{2}$，$\tau(\sqrt{3}) = -\sqrt{3}$
 

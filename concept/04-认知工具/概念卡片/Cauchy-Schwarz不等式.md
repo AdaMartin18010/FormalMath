@@ -17,6 +17,7 @@ $$|\langle x, y \rangle| \leq \|x\| \cdot \|y\|。$$
 **等号条件**：等号成立当且仅当 $x$ 与 $y$ 线性相关（即存在标量 $\lambda$ 使得 $x = \lambda y$ 或 $y = \lambda x$）。
 
 **常见形式**：
+
 - **离散形式（序列）**：$\left|\sum_{i=1}^n x_i \overline{y_i}\right|^2 \leq \left(\sum_{i=1}^n |x_i|^2\right)\left(\sum_{i=1}^n |y_i|^2\right)$；
 - **积分形式（函数）**：$\left|\int f \bar{g}\right|^2 \leq \left(\int |f|^2\right)\left(\int |g|^2\right)$；
 - **概率形式**：$|\mathrm{Cov}(X, Y)|^2 \leq \mathrm{Var}(X) \cdot \mathrm{Var}(Y)$。

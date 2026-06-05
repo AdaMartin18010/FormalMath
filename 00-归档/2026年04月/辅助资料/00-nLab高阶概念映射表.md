@@ -5,8 +5,8 @@ processed_at: '2026-04-05'
 ---
 # nLab高阶概念映射表
 
-**文档编号**: FM-ALIGN-NLAB-MAP-2026-04  
-**创建日期**: 2026年4月4日  
+**文档编号**: FM-ALIGN-NLAB-MAP-2026-04
+**创建日期**: 2026年4月4日
 **版本**: 1.0
 
 ---
@@ -14,6 +14,7 @@ processed_at: '2026-04-05'
 ## 使用说明
 
 本映射表提供nLab与FormalMath之间的概念对应关系，支持多维度查询：
+
 - 按主题分类
 - 按难度级别
 - 按形式化状态
@@ -260,14 +261,14 @@ graph TB
         FUN[Functor 函子]
         NT[Natural Transformation 自然变换]
     end
-    
+
     subgraph L2[核心层 L2]
         LIM[Limit 极限]
         ADJ[Adjunction 伴随]
         YON[Yoneda Lemma 米田引理]
         MON[Monoidal Category 单范畴]
     end
-    
+
     subgraph L3[高级层 L3]
         TOP[Topos 拓扑斯]
         SHE[Sheaf 层]
@@ -276,7 +277,7 @@ graph TB
         HOTT[Homotopy Type Theory 同伦类型论]
         DER[Derived Category 导出范畴]
     end
-    
+
     subgraph L4[前沿层 L4]
         INF[(∞,1)-Category 无穷范畴]
         QCAT[Quasi-category 拟范畴]
@@ -284,18 +285,18 @@ graph TB
         HIAL[Higher Algebra 高阶代数]
         EINF[E-∞ Ring E-无穷环]
     end
-    
+
     CAT --> FUN --> NT --> ADJ
     CAT --> LIM --> YON
     CAT --> MON
-    
+
     ADJ --> TOP
     LIM --> SHE --> TOP
     CAT --> TWO --> BIC --> INF
-    
+
     NT --> HOTT
     MON --> HIAL
-    
+
     INF --> QCAT --> ITOP
     HIAL --> EINF
     HOTT --> ITOP
@@ -325,10 +326,10 @@ graph TB
 -- 拟范畴基础定义（与nLab对齐）
 structure QuasiCategory where
   underlying : SSet
-  inner_horn_filling : ∀ (n : ℕ) (k : Fin n), 
-    0 < k.val → k.val < n → 
-    ∀ (f : Λ[n,k] → underlying), 
-    ∃ (g : Δ[n] → underlying), 
+  inner_horn_filling : ∀ (n : ℕ) (k : Fin n),
+    0 < k.val → k.val < n →
+    ∀ (f : Λ[n,k] → underlying),
+    ∃ (g : Δ[n] → underlying),
     g ∘ hornInclusion n k = f
 
 -- (∞,1)-范畴的同伦范畴
@@ -339,9 +340,9 @@ instance homotopy_category (C : QuasiCategory) : Category where
   comp := λ f g => compose_homotopy_classes C g f
 
 -- Topos结构
-elementary_topos_axioms (C : Category) : Prop := 
-  has_finite_limits C ∧ 
-  has_subobject_classifier C ∧ 
+elementary_topos_axioms (C : Category) : Prop :=
+  has_finite_limits C ∧
+  has_subobject_classifier C ∧
   cartesian_closed C
 
 -- 几何态射
@@ -396,6 +397,6 @@ structure GeometricMorphism (E F : Category) where
 
 ---
 
-**文档状态**: 完成  
-**下次更新**: 2026年7月  
+**文档状态**: 完成
+**下次更新**: 2026年7月
 **维护团队**: FormalMath核心团队

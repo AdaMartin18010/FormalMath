@@ -33,6 +33,7 @@ $\sigma \in \text{Gal}(K/\mathbb{Q})$ 由 $\sigma(\sqrt{2})$ 决定。
 $\sqrt{2}$ 的极小多项式是 $x^2 - 2$，根为 $\pm\sqrt{2}$。
 
 $\sigma(\sqrt{2})$ 必须是另一根，故：
+
 - $\sigma(\sqrt{2}) = \sqrt{2}$：恒等自同构 $\text{id}$
 - $\sigma(\sqrt{2}) = -\sqrt{2}$：自同构 $\sigma: a + b\sqrt{2} \mapsto a - b\sqrt{2}$
 
@@ -73,6 +74,7 @@ $K = \mathbb{Q}(\omega)$，$\omega = e^{2\pi i/3}$，$[K : \mathbb{Q}] = 2$。
 $\omega$ 的极小多项式是 $\Phi_3(x) = x^2 + x + 1$，根为 $\omega, \omega^2$。
 
 $\sigma \in \text{Gal}(K/\mathbb{Q})$：
+
 - $\sigma(\omega) = \omega$：恒等
 - $\sigma(\omega) = \omega^2$：自同构 $\sigma$
 
@@ -101,6 +103,7 @@ $$\text{Gal}(K/\mathbb{Q}) \cong S_3$$
 **具体描述：**
 
 生成元：
+
 - $\sigma: \sqrt[3]{2} \mapsto \omega\sqrt[3]{2}$，$\omega \mapsto \omega$（3-循环）
 - $\tau: \sqrt[3]{2} \mapsto \sqrt[3]{2}$，$\omega \mapsto \omega^2$（对换，复共轭）
 

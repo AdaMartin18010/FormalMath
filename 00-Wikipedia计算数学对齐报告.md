@@ -7,9 +7,9 @@ processed_at: '2026-04-05'
 ---
 # Wikipedia计算数学对齐报告
 
-**报告编号**: ALIGN.CM.001  
-**创建日期**: 2026年4月4日  
-**最后更新**: 2026年4月4日  
+**报告编号**: ALIGN.CM.001
+**创建日期**: 2026年4月4日
+**最后更新**: 2026年4月4日
 **对齐版本**: Wikipedia 2024版 / FormalMath 2026年4月版
 
 ---
@@ -17,7 +17,7 @@ processed_at: '2026-04-05'
 ## 📋 目录
 
 - [Wikipedia计算数学对齐报告](#wikipedia计算数学对齐报告)
-  - [📋 目录](#目录)
+  - [📋 目录](#-目录)
   - [1. 概述](#1-概述)
   - [2. Wikipedia计算数学条目结构分析](#2-wikipedia计算数学条目结构分析)
     - [2.1 Numerical Linear Algebra (数值线性代数)](#21-numerical-linear-algebra-数值线性代数)
@@ -35,8 +35,13 @@ processed_at: '2026-04-05'
   - [4. 对齐分析与建议](#4-对齐分析与建议)
     - [4.1 概念覆盖度分析](#41-概念覆盖度分析)
     - [4.2 对齐建议](#42-对齐建议)
+      - [高优先级 (立即实施)](#高优先级-立即实施)
+      - [中优先级 (3个月内)](#中优先级-3个月内)
+      - [低优先级 (6个月内)](#低优先级-6个月内)
   - [5. 更新后的YAML片段](#5-更新后的yaml片段)
+    - [5.1 计算数学分类YAML](#51-计算数学分类yaml)
   - [附录A: 概念结构映射JSON](#附录a-概念结构映射json)
+    - [JSON结构概览](#json结构概览)
 
 ---
 
@@ -45,6 +50,7 @@ processed_at: '2026-04-05'
 本报告将FormalMath计算数学内容与Wikipedia数学概念结构进行对齐分析，提取Wikipedia计算数学条目的概念定义、属性关系和层级结构，创建映射表和对齐文档。
 
 **对齐目标条目**:
+
 - Numerical Linear Algebra (数值线性代数)
 - Finite Element Method (有限元方法)
 - Numerical Optimization (数值优化)
@@ -55,6 +61,7 @@ processed_at: '2026-04-05'
 - Computational Complexity (计算复杂性)
 
 **数据来源**:
+
 - Wikipedia英文版数学条目 (en.wikipedia.org/wiki/)
 - FormalMath docs/08-计算数学/ 目录
 - FormalMath概念体系核心概念
@@ -66,6 +73,7 @@ processed_at: '2026-04-05'
 ### 2.1 Numerical Linear Algebra (数值线性代数)
 
 **Wikipedia结构**:
+
 ```
 Numerical Linear Algebra
 ├── Basic Problems (基本问题)
@@ -97,6 +105,7 @@ Numerical Linear Algebra
 ```
 
 **FormalMath映射**:
+
 - `docs/08-计算数学/01-数值分析.md` — 基础数值分析
 - `docs/08-计算数学/01-数值分析-增强版.md` — 数值线性代数深入
 - `docs/02-代数结构/06-技术实现参考/数值计算/04-数值线性代数-国际标准版.md`
@@ -104,6 +113,7 @@ Numerical Linear Algebra
 - `docs/00-核心概念理解三问/11-核心定理多表征/64-Gram-Schmidt正交化-五种表征.md`
 
 **MSC编码映射**:
+
 | Wikipedia概念 | MSC 2020 | FormalMath文档 |
 |--------------|----------|---------------|
 | Linear systems | 65F05, 65F10 | 01-数值分析 |
@@ -118,6 +128,7 @@ Numerical Linear Algebra
 ### 2.2 Finite Element Method (有限元方法)
 
 **Wikipedia结构**:
+
 ```
 Finite Element Method
 ├── Basic Concepts (基本概念)
@@ -147,12 +158,14 @@ Finite Element Method
 ```
 
 **FormalMath映射**:
+
 - `docs/03-分析学/06-偏微分方程/02-Sobolev空间系统阐述.md`
 - `docs/03-分析学/06-偏微分方程/07-Sobolev空间与弱解-深度扩展版.md`
 - `docs/08-计算数学/01-数值分析-增强版.md` — 有限元方法章节
 - `docs/12-应用数学/11-物理数学-深化版.md` — 有限元应用
 
 **MSC编码映射**:
+
 | Wikipedia概念 | MSC 2020 | FormalMath文档 |
 |--------------|----------|---------------|
 | FEM basics | 65N30 | 01-数值分析-增强版 |
@@ -165,6 +178,7 @@ Finite Element Method
 ### 2.3 Numerical Optimization (数值优化)
 
 **Wikipedia结构**:
+
 ```
 Numerical Optimization
 ├── Unconstrained Optimization (无约束优化)
@@ -198,12 +212,14 @@ Numerical Optimization
 ```
 
 **FormalMath映射**:
+
 - `docs/08-计算数学/02-优化理论.md` — 优化理论基础
 - `docs/08-计算数学/02-优化理论-增强版.md` — 凸优化与对偶理论
 - `docs/08-计算数学/03-优化算法.md` — 优化算法实现
 - `docs/08-计算数学/03-优化算法-增强版.md` — 进阶优化算法
 
 **MSC编码映射**:
+
 | Wikipedia概念 | MSC 2020 | FormalMath文档 |
 |--------------|----------|---------------|
 | Gradient descent | 90C06 | 03-优化算法 |
@@ -218,6 +234,7 @@ Numerical Optimization
 ### 2.4 Computational Geometry (计算几何)
 
 **Wikipedia结构**:
+
 ```
 Computational Geometry
 ├── Combinatorial Geometry (组合几何)
@@ -247,11 +264,13 @@ Computational Geometry
 ```
 
 **FormalMath映射**:
+
 - `docs/08-计算数学/02-计算几何.md` — 计算几何基础
 - `concept/03-主题概念梳理/08-离散数学概念.md` — 离散几何
 - `docs/12-应用数学/12-计算几何数学-深化版.md` — 应用深化
 
 **MSC编码映射**:
+
 | Wikipedia概念 | MSC 2020 | FormalMath文档 |
 |--------------|----------|---------------|
 | Convex hull | 68U05, 52A10 | 02-计算几何 |
@@ -265,6 +284,7 @@ Computational Geometry
 ### 2.5 Computer Algebra (计算机代数)
 
 **Wikipedia结构**:
+
 ```
 Computer Algebra
 ├── Symbolic Computation (符号计算)
@@ -291,11 +311,13 @@ Computer Algebra
 ```
 
 **FormalMath映射**:
+
 - `docs/08-计算数学/05-符号计算.md` — 符号计算基础
 - `docs/08-计算数学/05-符号计算-增强版.md` — 符号计算深入
 - `docs/09-形式化证明/` — 自动定理证明相关
 
 **MSC编码映射**:
+
 | Wikipedia概念 | MSC 2020 | FormalMath文档 |
 |--------------|----------|---------------|
 | Polynomial GCD | 68W30, 11Y16 | 05-符号计算 |
@@ -308,6 +330,7 @@ Computer Algebra
 ### 2.6 Symbolic Computation (符号计算)
 
 **Wikipedia结构**:
+
 ```
 Symbolic Computation
 ├── Symbolic Manipulation (符号操作)
@@ -337,11 +360,13 @@ Symbolic Computation
 ```
 
 **FormalMath映射**:
+
 - `docs/08-计算数学/05-符号计算.md` — 符号计算
 - `docs/03-分析学/01-实分析.md` — 微积分基础
 - `docs/03-分析学/05-微分方程.md` — 微分方程
 
 **MSC编码映射**:
+
 | Wikipedia概念 | MSC 2020 | FormalMath文档 |
 |--------------|----------|---------------|
 | Symbolic integration | 68W30, 33-04 | 05-符号计算 |
@@ -354,6 +379,7 @@ Symbolic Computation
 ### 2.7 Algorithm (算法)
 
 **Wikipedia结构**:
+
 ```
 Algorithm
 ├── Definition (定义)
@@ -386,12 +412,14 @@ Algorithm
 ```
 
 **FormalMath映射**:
+
 - `concept/核心概念/31-算法.md` — 算法核心概念
 - `concept/核心概念/31-算法-三视角版.md` — 算法三视角分析
 - `docs/07-算法与数据结构/` — 算法与数据结构
 - `docs/00-知识层次体系/L4-前沿研究层/04-逻辑基础前沿/03-P-vs-NP问题.md`
 
 **MSC编码映射**:
+
 | Wikipedia概念 | MSC 2020 | FormalMath文档 |
 |--------------|----------|---------------|
 | Algorithm definition | 68W01, 68Q25 | 31-算法 |
@@ -404,6 +432,7 @@ Algorithm
 ### 2.8 Computational Complexity (计算复杂性)
 
 **Wikipedia结构**:
+
 ```
 Computational Complexity
 ├── Complexity Classes (复杂性类)
@@ -432,11 +461,13 @@ Computational Complexity
 ```
 
 **FormalMath映射**:
+
 - `docs/07-逻辑学/` — 计算理论相关
 - `docs/00-知识层次体系/L4-前沿研究层/04-逻辑基础前沿/03-P-vs-NP问题.md`
 - `concept/03-主题概念梳理/08-离散数学概念.md` — 计算理论
 
 **MSC编码映射**:
+
 | Wikipedia概念 | MSC 2020 | FormalMath文档 |
 |--------------|----------|---------------|
 | Complexity classes | 68Q15, 68Q17 | 07-逻辑学 |
@@ -537,26 +568,26 @@ graph LR
         CM3[计算几何]
         CM4[符号计算]
     end
-    
+
     subgraph 应用领域
         A1[机器学习]
         A2[图形学]
         A3[机器人学]
         A4[金融工程]
     end
-    
+
     subgraph 理论基础
         T1[线性代数]
         T2[分析学]
         T3[离散数学]
         T4[抽象代数]
     end
-    
+
     T1 --> CM1
     T2 --> CM2
     T3 --> CM3
     T4 --> CM4
-    
+
     CM1 --> A1
     CM2 --> A4
     CM3 --> A2
@@ -598,29 +629,29 @@ graph LR
 
 #### 中优先级 (3个月内)
 
-3. **数值线性代数深化**
+1. **数值线性代数深化**
    - 补充并行算法内容
    - 添加随机化数值线性代数
    - 扩展张量分解方法
 
-4. **优化算法更新**
+2. **优化算法更新**
    - 添加随机优化深入内容
    - 补充分布式优化算法
    - 扩展元学习优化器
 
-5. **算法理论扩展**
+3. **算法理论扩展**
    - 添加量子算法基础
    - 补充近似算法内容
    - 扩展在线算法
 
 #### 低优先级 (6个月内)
 
-6. **符号计算完善**
+1. **符号计算完善**
    - 添加自动求和算法
    - 补充符号渐近分析
    - 扩展符号微分方程求解
 
-7. **计算复杂性深化**
+2. **计算复杂性深化**
    - 添加电路复杂度
    - 补充通信复杂度
    - 扩展参数化复杂性
@@ -637,7 +668,7 @@ computational_mathematics:
   alignment:
     wikipedia_version: "2024"
     formalmath_version: "2026.04"
-  
+
   categories:
     - id: CM.01
       name: "数值线性代数"
@@ -647,7 +678,7 @@ computational_mathematics:
       docs:
         - "docs/08-计算数学/01-数值分析.md"
         - "docs/08-计算数学/01-数值分析-增强版.md"
-      
+
     - id: CM.02
       name: "有限元方法"
       wikipedia: "Finite_element_method"
@@ -656,7 +687,7 @@ computational_mathematics:
       docs:
         - "docs/03-分析学/06-偏微分方程/02-Sobolev空间系统阐述.md"
         - "docs/08-计算数学/01-数值分析-增强版.md"
-      
+
     - id: CM.03
       name: "数值优化"
       wikipedia: "Mathematical_optimization"
@@ -666,7 +697,7 @@ computational_mathematics:
         - "docs/08-计算数学/02-优化理论.md"
         - "docs/08-计算数学/02-优化理论-增强版.md"
         - "docs/08-计算数学/03-优化算法.md"
-      
+
     - id: CM.04
       name: "计算几何"
       wikipedia: "Computational_geometry"
@@ -675,7 +706,7 @@ computational_mathematics:
       docs:
         - "docs/08-计算数学/02-计算几何.md"
         - "docs/12-应用数学/12-计算几何数学-深化版.md"
-      
+
     - id: CM.05
       name: "计算机代数"
       wikipedia: "Computer_algebra"
@@ -684,7 +715,7 @@ computational_mathematics:
       docs:
         - "docs/08-计算数学/05-符号计算.md"
         - "docs/08-计算数学/05-符号计算-增强版.md"
-      
+
     - id: CM.06
       name: "算法"
       wikipedia: "Algorithm"
@@ -693,7 +724,7 @@ computational_mathematics:
       docs:
         - "concept/核心概念/31-算法.md"
         - "concept/核心概念/31-算法-三视角版.md"
-      
+
     - id: CM.07
       name: "计算复杂性"
       wikipedia: "Computational_complexity"
@@ -751,6 +782,6 @@ computational_mathematics:
 
 ---
 
-**报告完成日期**: 2026年4月4日  
-**报告状态**: 已完成  
+**报告完成日期**: 2026年4月4日
+**报告状态**: 已完成
 **下次审查**: 2026年10月

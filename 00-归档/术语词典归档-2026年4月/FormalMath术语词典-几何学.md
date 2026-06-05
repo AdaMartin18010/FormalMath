@@ -17,172 +17,172 @@ processed_at: '2026-04-05'
 
 - [FormalMath术语词典 - 几何学](#formalmath术语词典---几何学)
   - [统一几何学术语标准定义](#统一几何学术语标准定义)
-  - 📑 目录 / Table of Contents
-  - [📋 词典概述](#词典概述)
-  - 🗺️ 几何学核心概念思维导图
-  - [📊 几何学核心概念多维知识矩阵](#几何学核心概念多维知识矩阵)
-    - 词典统计 / Dictionary Statistics
-    - 词典特色 / Dictionary Features
-  - 📐 欧几里得几何术语 / Euclidean Geometry Terms
-    - 基本概念 / Basic Concepts
-      - 点 / Point
-      - 直线 / Line
-      - 平面 / Plane
-      - 角 / Angle
-      - 距离 / Distance
-      - 圆 / Circle
-      - 三角形 / Triangle
-    - 图形性质 / Geometric Properties
-      - 平行 / Parallel
-      - 垂直 / Perpendicular
-      - 相似 / Similar
-      - 全等 / Congruent
-  - 🌐 微分几何术语 / Differential Geometry Terms
-    - 基本概念 / Basic Concepts
-      - 流形 / Manifold
-      - 切空间 / Tangent Space
-      - 度规 / Metric
-      - 曲率 / Curvature
-      - 联络 / Connection
-      - 测地线 / Geodesic
-  - 🔷 代数几何术语 / Algebraic Geometry Terms
-    - 基本概念 / Basic Concepts
-      - 代数簇 / Algebraic Variety
-      - 概形 / Scheme
-      - 层 / Sheaf
-      - 上同调 / Cohomology
-      - 除子 / Divisor
-  - 🔺 拓扑几何术语 / Topological Geometry Terms
-    - 基本概念 / Basic Concepts
-      - 拓扑空间 / Topological Space
-      - 连续映射 / Continuous Map
-      - 同胚 / Homeomorphism
-      - 紧性 / Compactness
-      - 连通性 / Connectedness
-  - 📊 术语关系图 / Term Relationship Diagram
-    - 欧几里得几何概念层次关系 / Euclidean Geometry Concept Hierarchy
-    - 微分几何概念层次关系 / Differential Geometry Concept Hierarchy
-    - 代数几何概念层次关系 / Algebraic Geometry Concept Hierarchy
-    - 拓扑几何概念层次关系 / Topological Geometry Concept Hierarchy
-    - 几何学分支关系 / Geometry Branch Relationships
-  - 📊 术语快速参考表 / Quick Reference Table
-    - 核心术语（⭐⭐⭐⭐⭐） / Core Terms
-    - 重要术语（⭐⭐⭐⭐） / Important Terms
-    - 常用术语（⭐⭐⭐） / Common Terms
-  - 🔤 LaTeX代码快速参考 / LaTeX Code Quick Reference
-    - 欧几里得几何术语LaTeX代码 / Euclidean Geometry Terms LaTeX Code
-    - 微分几何术语LaTeX代码 / Differential Geometry Terms LaTeX Code
-    - 代数几何术语LaTeX代码 / Algebraic Geometry Terms LaTeX Code
-    - 拓扑几何术语LaTeX代码 / Topological Geometry Terms LaTeX Code
-    - 常用LaTeX包推荐 / Recommended LaTeX Packages
-  - 📊 术语索引 / Term Index
-    - 按分类索引 / Index by Category
+  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📋 词典概述](#-词典概述)
+  - [🗺️ 几何学核心概念思维导图](#️-几何学核心概念思维导图)
+  - [📊 几何学核心概念多维知识矩阵](#-几何学核心概念多维知识矩阵)
+    - [词典统计 / Dictionary Statistics](#词典统计--dictionary-statistics)
+    - [词典特色 / Dictionary Features](#词典特色--dictionary-features)
+  - [📐 欧几里得几何术语 / Euclidean Geometry Terms](#-欧几里得几何术语--euclidean-geometry-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts)
+      - [点 / Point](#点--point)
+      - [直线 / Line](#直线--line)
+      - [平面 / Plane](#平面--plane)
+      - [角 / Angle](#角--angle)
+      - [距离 / Distance](#距离--distance)
+      - [圆 / Circle](#圆--circle)
+      - [三角形 / Triangle](#三角形--triangle)
+    - [图形性质 / Geometric Properties](#图形性质--geometric-properties)
+      - [平行 / Parallel](#平行--parallel)
+      - [垂直 / Perpendicular](#垂直--perpendicular)
+      - [相似 / Similar](#相似--similar)
+      - [全等 / Congruent](#全等--congruent)
+  - [🌐 微分几何术语 / Differential Geometry Terms](#-微分几何术语--differential-geometry-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts-1)
+      - [流形 / Manifold](#流形--manifold)
+      - [切空间 / Tangent Space](#切空间--tangent-space)
+      - [度规 / Metric](#度规--metric)
+      - [曲率 / Curvature](#曲率--curvature)
+      - [联络 / Connection](#联络--connection)
+      - [测地线 / Geodesic](#测地线--geodesic)
+  - [🔷 代数几何术语 / Algebraic Geometry Terms](#-代数几何术语--algebraic-geometry-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts-2)
+      - [代数簇 / Algebraic Variety](#代数簇--algebraic-variety)
+      - [概形 / Scheme](#概形--scheme)
+      - [层 / Sheaf](#层--sheaf)
+      - [上同调 / Cohomology](#上同调--cohomology)
+      - [除子 / Divisor](#除子--divisor)
+  - [🔺 拓扑几何术语 / Topological Geometry Terms](#-拓扑几何术语--topological-geometry-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts-3)
+      - [拓扑空间 / Topological Space](#拓扑空间--topological-space)
+      - [连续映射 / Continuous Map](#连续映射--continuous-map)
+      - [同胚 / Homeomorphism](#同胚--homeomorphism)
+      - [紧性 / Compactness](#紧性--compactness)
+      - [连通性 / Connectedness](#连通性--connectedness)
+  - [📊 术语关系图 / Term Relationship Diagram](#-术语关系图--term-relationship-diagram)
+    - [欧几里得几何概念层次关系 / Euclidean Geometry Concept Hierarchy](#欧几里得几何概念层次关系--euclidean-geometry-concept-hierarchy)
+    - [微分几何概念层次关系 / Differential Geometry Concept Hierarchy](#微分几何概念层次关系--differential-geometry-concept-hierarchy)
+    - [代数几何概念层次关系 / Algebraic Geometry Concept Hierarchy](#代数几何概念层次关系--algebraic-geometry-concept-hierarchy)
+    - [拓扑几何概念层次关系 / Topological Geometry Concept Hierarchy](#拓扑几何概念层次关系--topological-geometry-concept-hierarchy)
+    - [几何学分支关系 / Geometry Branch Relationships](#几何学分支关系--geometry-branch-relationships)
+  - [📊 术语快速参考表 / Quick Reference Table](#-术语快速参考表--quick-reference-table)
+    - [核心术语（⭐⭐⭐⭐⭐） / Core Terms](#核心术语--core-terms)
+    - [重要术语（⭐⭐⭐⭐） / Important Terms](#重要术语--important-terms)
+    - [常用术语（⭐⭐⭐） / Common Terms](#常用术语--common-terms)
+  - [🔤 LaTeX代码快速参考 / LaTeX Code Quick Reference](#-latex代码快速参考--latex-code-quick-reference)
+    - [欧几里得几何术语LaTeX代码 / Euclidean Geometry Terms LaTeX Code](#欧几里得几何术语latex代码--euclidean-geometry-terms-latex-code)
+    - [微分几何术语LaTeX代码 / Differential Geometry Terms LaTeX Code](#微分几何术语latex代码--differential-geometry-terms-latex-code)
+    - [代数几何术语LaTeX代码 / Algebraic Geometry Terms LaTeX Code](#代数几何术语latex代码--algebraic-geometry-terms-latex-code)
+    - [拓扑几何术语LaTeX代码 / Topological Geometry Terms LaTeX Code](#拓扑几何术语latex代码--topological-geometry-terms-latex-code)
+    - [常用LaTeX包推荐 / Recommended LaTeX Packages](#常用latex包推荐--recommended-latex-packages)
+  - [📊 术语索引 / Term Index](#-术语索引--term-index)
+    - [按分类索引 / Index by Category](#按分类索引--index-by-category)
       - [欧几里得几何术语](#欧几里得几何术语)
       - [微分几何术语](#微分几何术语)
       - [代数几何术语](#代数几何术语)
       - [拓扑几何术语](#拓扑几何术语)
-  - 📊 符号对照表 / Symbol Reference Table
-  - ⚠️ 常见错误与注意事项 / Common Errors and Notes
+  - [📊 符号对照表 / Symbol Reference Table](#-符号对照表--symbol-reference-table)
+  - [⚠️ 常见错误与注意事项 / Common Errors and Notes](#️-常见错误与注意事项--common-errors-and-notes)
     - [欧几里得几何常见错误](#欧几里得几何常见错误)
     - [微分几何常见错误](#微分几何常见错误)
     - [代数几何常见错误](#代数几何常见错误)
-  - 📖 应用场景 / Application Scenarios
+  - [📖 应用场景 / Application Scenarios](#-应用场景--application-scenarios)
     - [理论应用](#理论应用)
     - [实际应用](#实际应用)
-  - 🛤️ 学习路径建议 / Learning Path Recommendations
+  - [🛤️ 学习路径建议 / Learning Path Recommendations](#️-学习路径建议--learning-path-recommendations)
     - [初学者路径](#初学者路径)
     - [中级路径](#中级路径)
     - [高级路径](#高级路径)
-  - 🔄 术语变体与别名 / Term Variants and Aliases
-    - 欧几里得几何术语变体 / Euclidean Geometry Term Variants
-      - 点 / Point
-      - 直线 / Line
-      - 角 / Angle
-    - 微分几何术语变体 / Differential Geometry Term Variants
-      - 流形 / Manifold
-      - 曲率 / Curvature
-    - 代数几何术语变体 / Algebraic Geometry Term Variants
-      - 代数簇 / Algebraic Variety
-      - 概形 / Scheme
-    - 拓扑几何术语变体 / Topological Geometry Term Variants
-      - 拓扑空间 / Topological Space
-      - 同胚 / Homeomorphism
-  - 📖 扩展阅读建议 / Further Reading Recommendations
-    - 欧几里得几何 / Euclidean Geometry
-    - 微分几何 / Differential Geometry
-    - 代数几何 / Algebraic Geometry
-    - 拓扑几何 / Topological Geometry
-    - 在线资源 / Online Resources
-  - 💡 实践练习与记忆技巧 / Practice Exercises and Memory Tips
-    - 记忆技巧 / Memory Tips
+  - [🔄 术语变体与别名 / Term Variants and Aliases](#-术语变体与别名--term-variants-and-aliases)
+    - [欧几里得几何术语变体 / Euclidean Geometry Term Variants](#欧几里得几何术语变体--euclidean-geometry-term-variants)
+      - [点 / Point](#点--point-1)
+      - [直线 / Line](#直线--line-1)
+      - [角 / Angle](#角--angle-1)
+    - [微分几何术语变体 / Differential Geometry Term Variants](#微分几何术语变体--differential-geometry-term-variants)
+      - [流形 / Manifold](#流形--manifold-1)
+      - [曲率 / Curvature](#曲率--curvature-1)
+    - [代数几何术语变体 / Algebraic Geometry Term Variants](#代数几何术语变体--algebraic-geometry-term-variants)
+      - [代数簇 / Algebraic Variety](#代数簇--algebraic-variety-1)
+      - [概形 / Scheme](#概形--scheme-1)
+    - [拓扑几何术语变体 / Topological Geometry Term Variants](#拓扑几何术语变体--topological-geometry-term-variants)
+      - [拓扑空间 / Topological Space](#拓扑空间--topological-space-1)
+      - [同胚 / Homeomorphism](#同胚--homeomorphism-1)
+  - [📖 扩展阅读建议 / Further Reading Recommendations](#-扩展阅读建议--further-reading-recommendations)
+    - [欧几里得几何 / Euclidean Geometry](#欧几里得几何--euclidean-geometry)
+    - [微分几何 / Differential Geometry](#微分几何--differential-geometry)
+    - [代数几何 / Algebraic Geometry](#代数几何--algebraic-geometry)
+    - [拓扑几何 / Topological Geometry](#拓扑几何--topological-geometry)
+    - [在线资源 / Online Resources](#在线资源--online-resources)
+  - [💡 实践练习与记忆技巧 / Practice Exercises and Memory Tips](#-实践练习与记忆技巧--practice-exercises-and-memory-tips)
+    - [记忆技巧 / Memory Tips](#记忆技巧--memory-tips)
       - [欧几里得几何记忆技巧](#欧几里得几何记忆技巧)
       - [微分几何记忆技巧](#微分几何记忆技巧)
       - [代数几何记忆技巧](#代数几何记忆技巧)
       - [拓扑几何记忆技巧](#拓扑几何记忆技巧)
-    - 基础练习 / Basic Exercises
+    - [基础练习 / Basic Exercises](#基础练习--basic-exercises)
       - [欧几里得几何基础练习](#欧几里得几何基础练习)
       - [微分几何基础练习](#微分几何基础练习)
       - [代数几何基础练习](#代数几何基础练习)
       - [拓扑几何基础练习](#拓扑几何基础练习)
-    - 进阶练习 / Advanced Exercises
+    - [进阶练习 / Advanced Exercises](#进阶练习--advanced-exercises)
       - [微分几何进阶练习](#微分几何进阶练习)
       - [代数几何进阶练习](#代数几何进阶练习)
-    - 学习检查点 / Learning Checkpoints
+    - [学习检查点 / Learning Checkpoints](#学习检查点--learning-checkpoints)
       - [欧几里得几何检查点](#欧几里得几何检查点)
       - [微分几何检查点](#微分几何检查点)
       - [代数几何检查点](#代数几何检查点)
       - [拓扑几何检查点](#拓扑几何检查点)
-  - 📝 练习题答案与解析 / Exercise Answers and Solutions
-    - 欧几里得几何练习题答案 / Euclidean Geometry Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-    - 微分几何练习题答案 / Differential Geometry Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-    - 代数几何练习题答案 / Algebraic Geometry Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-    - 拓扑几何练习题答案 / Topological Geometry Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-  - 🎯 术语优先级学习顺序 / Term Priority Learning Order
-    - 优先级阶段 / Priority Stages
+  - [📝 练习题答案与解析 / Exercise Answers and Solutions](#-练习题答案与解析--exercise-answers-and-solutions)
+    - [欧几里得几何练习题答案 / Euclidean Geometry Exercise Answers](#欧几里得几何练习题答案--euclidean-geometry-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers)
+    - [微分几何练习题答案 / Differential Geometry Exercise Answers](#微分几何练习题答案--differential-geometry-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers-1)
+    - [代数几何练习题答案 / Algebraic Geometry Exercise Answers](#代数几何练习题答案--algebraic-geometry-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers-2)
+    - [拓扑几何练习题答案 / Topological Geometry Exercise Answers](#拓扑几何练习题答案--topological-geometry-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers-3)
+  - [🎯 术语优先级学习顺序 / Term Priority Learning Order](#-术语优先级学习顺序--term-priority-learning-order)
+    - [优先级阶段 / Priority Stages](#优先级阶段--priority-stages)
       - [第1阶段：基础概念（第1-4周）](#第1阶段基础概念第1-4周)
       - [第2阶段：图形性质（第5-8周）](#第2阶段图形性质第5-8周)
       - [第3阶段：拓扑基础（第9-12周）](#第3阶段拓扑基础第9-12周)
       - [第4阶段：微分几何基础（第13-20周）](#第4阶段微分几何基础第13-20周)
       - [第5阶段：代数几何基础（第21-28周）](#第5阶段代数几何基础第21-28周)
-    - 学习计划 / Learning Plan
-      - 40周学习计划 / 40-Week Learning Plan
-    - 学习路径 / Learning Paths
+    - [学习计划 / Learning Plan](#学习计划--learning-plan)
+      - [40周学习计划 / 40-Week Learning Plan](#40周学习计划--40-week-learning-plan)
+    - [学习路径 / Learning Paths](#学习路径--learning-paths)
       - [路径1：基础到进阶（循序渐进）](#路径1基础到进阶循序渐进)
       - [路径2：应用导向](#路径2应用导向)
       - [路径3：理论深入](#路径3理论深入)
-  - ⚠️ 常见误解澄清 / Common Misconceptions Clarification
-    - 欧几里得几何常见误解 / Euclidean Geometry Common Misconceptions
+  - [⚠️ 常见误解澄清 / Common Misconceptions Clarification](#️-常见误解澄清--common-misconceptions-clarification)
+    - [欧几里得几何常见误解 / Euclidean Geometry Common Misconceptions](#欧几里得几何常见误解--euclidean-geometry-common-misconceptions)
       - [误解1：点有大小](#误解1点有大小)
       - [误解2：平行线会相交](#误解2平行线会相交)
       - [误解3：相似就是全等](#误解3相似就是全等)
-    - 微分几何常见误解 / Differential Geometry Common Misconceptions
+    - [微分几何常见误解 / Differential Geometry Common Misconceptions](#微分几何常见误解--differential-geometry-common-misconceptions)
       - [误解1：流形就是欧几里得空间](#误解1流形就是欧几里得空间)
       - [误解2：曲率就是弯曲](#误解2曲率就是弯曲)
       - [误解3：测地线就是直线](#误解3测地线就是直线)
-    - 代数几何常见误解 / Algebraic Geometry Common Misconceptions
+    - [代数几何常见误解 / Algebraic Geometry Common Misconceptions](#代数几何常见误解--algebraic-geometry-common-misconceptions)
       - [误解1：代数簇就是曲线](#误解1代数簇就是曲线)
       - [误解2：概形就是代数簇](#误解2概形就是代数簇)
       - [误解3：层就是函数](#误解3层就是函数)
-    - 拓扑几何常见误解 / Topological Geometry Common Misconceptions
+    - [拓扑几何常见误解 / Topological Geometry Common Misconceptions](#拓扑几何常见误解--topological-geometry-common-misconceptions)
       - [误解1：拓扑空间就是度量空间](#误解1拓扑空间就是度量空间)
       - [误解2：连续就是光滑](#误解2连续就是光滑)
       - [误解3：同胚就是等距](#误解3同胚就是等距)
-    - 一般数学概念误解 / General Mathematical Concept Misconceptions
+    - [一般数学概念误解 / General Mathematical Concept Misconceptions](#一般数学概念误解--general-mathematical-concept-misconceptions)
       - [误解1：几何就是图形](#误解1几何就是图形)
       - [误解2：几何就是直观的](#误解2几何就是直观的)
-  - 📊 术语对比表 / Term Comparison Table
-    - 几何对象对比 / Geometric Objects Comparison
-    - 几何关系对比 / Geometric Relations Comparison
-    - 空间类型对比 / Space Types Comparison
-    - 几何结构对比 / Geometric Structures Comparison
-    - 代数几何对象对比 / Algebraic Geometry Objects Comparison
-    - 拓扑性质对比 / Topological Properties Comparison
-  - 📋 术语速查表 / Term Quick Reference
-    - 按字母顺序速查 / Alphabetical Quick Reference
+  - [📊 术语对比表 / Term Comparison Table](#-术语对比表--term-comparison-table)
+    - [几何对象对比 / Geometric Objects Comparison](#几何对象对比--geometric-objects-comparison)
+    - [几何关系对比 / Geometric Relations Comparison](#几何关系对比--geometric-relations-comparison)
+    - [空间类型对比 / Space Types Comparison](#空间类型对比--space-types-comparison)
+    - [几何结构对比 / Geometric Structures Comparison](#几何结构对比--geometric-structures-comparison)
+    - [代数几何对象对比 / Algebraic Geometry Objects Comparison](#代数几何对象对比--algebraic-geometry-objects-comparison)
+    - [拓扑性质对比 / Topological Properties Comparison](#拓扑性质对比--topological-properties-comparison)
+  - [📋 术语速查表 / Term Quick Reference](#-术语速查表--term-quick-reference)
+    - [按字母顺序速查 / Alphabetical Quick Reference](#按字母顺序速查--alphabetical-quick-reference)
       - [A](#a)
       - [C](#c)
       - [D](#d)
@@ -194,85 +194,85 @@ processed_at: '2026-04-05'
       - [S](#s)
       - [T](#t)
       - [X](#x)
-    - 按分支速查 / Quick Reference by Branch
+    - [按分支速查 / Quick Reference by Branch](#按分支速查--quick-reference-by-branch)
       - [欧几里得几何](#欧几里得几何)
       - [微分几何](#微分几何)
       - [代数几何](#代数几何)
       - [拓扑几何](#拓扑几何)
-    - 按主题速查 / Quick Reference by Topic
+    - [按主题速查 / Quick Reference by Topic](#按主题速查--quick-reference-by-topic)
       - [基本几何对象](#基本几何对象)
       - [几何关系](#几何关系)
       - [空间结构](#空间结构)
       - [几何量](#几何量)
       - [拓扑性质](#拓扑性质)
-  - 📖 术语应用指南 / Term Application Guide
-    - 如何有效使用本词典 / How to Use This Dictionary Effectively
-      - 初学者阶段 / Beginner Stage
-      - 中级阶段 / Intermediate Stage
-      - 高级阶段 / Advanced Stage
-    - 术语查找策略 / Term Lookup Strategies
+  - [📖 术语应用指南 / Term Application Guide](#-术语应用指南--term-application-guide)
+    - [如何有效使用本词典 / How to Use This Dictionary Effectively](#如何有效使用本词典--how-to-use-this-dictionary-effectively)
+      - [初学者阶段 / Beginner Stage](#初学者阶段--beginner-stage)
+      - [中级阶段 / Intermediate Stage](#中级阶段--intermediate-stage)
+      - [高级阶段 / Advanced Stage](#高级阶段--advanced-stage)
+    - [术语查找策略 / Term Lookup Strategies](#术语查找策略--term-lookup-strategies)
       - [策略1：按字母顺序查找](#策略1按字母顺序查找)
       - [策略2：按分支查找](#策略2按分支查找)
       - [策略3：按主题查找](#策略3按主题查找)
       - [策略4：使用对比表](#策略4使用对比表)
-    - 术语学习建议 / Term Learning Recommendations
+    - [术语学习建议 / Term Learning Recommendations](#术语学习建议--term-learning-recommendations)
       - [建议1：循序渐进](#建议1循序渐进)
       - [建议2：理解概念关系](#建议2理解概念关系)
       - [建议3：实践应用](#建议3实践应用)
       - [建议4：避免常见错误](#建议4避免常见错误)
-    - 术语使用标准化 / Term Usage Standardization
+    - [术语使用标准化 / Term Usage Standardization](#术语使用标准化--term-usage-standardization)
       - [使用原则](#使用原则)
       - [使用检查清单](#使用检查清单)
-  - 🕸️ 术语关系网络图 / Term Relationship Network Diagram
-    - 欧几里得几何核心概念网络 / Euclidean Geometry Core Concept Network
-    - 微分几何核心概念网络 / Differential Geometry Core Concept Network
-    - 代数几何核心概念网络 / Algebraic Geometry Core Concept Network
-    - 拓扑几何核心概念网络 / Topological Geometry Core Concept Network
-    - 几何学分支关系网络 / Geometry Branch Relationship Network
-    - 学习路径关系网络 / Learning Path Relationship Network
-    - 应用关系网络 / Application Relationship Network
-  - 📜 历史背景 / Historical Background
-    - 欧几里得几何历史 / Euclidean Geometry History
+  - [🕸️ 术语关系网络图 / Term Relationship Network Diagram](#️-术语关系网络图--term-relationship-network-diagram)
+    - [欧几里得几何核心概念网络 / Euclidean Geometry Core Concept Network](#欧几里得几何核心概念网络--euclidean-geometry-core-concept-network)
+    - [微分几何核心概念网络 / Differential Geometry Core Concept Network](#微分几何核心概念网络--differential-geometry-core-concept-network)
+    - [代数几何核心概念网络 / Algebraic Geometry Core Concept Network](#代数几何核心概念网络--algebraic-geometry-core-concept-network)
+    - [拓扑几何核心概念网络 / Topological Geometry Core Concept Network](#拓扑几何核心概念网络--topological-geometry-core-concept-network)
+    - [几何学分支关系网络 / Geometry Branch Relationship Network](#几何学分支关系网络--geometry-branch-relationship-network)
+    - [学习路径关系网络 / Learning Path Relationship Network](#学习路径关系网络--learning-path-relationship-network)
+    - [应用关系网络 / Application Relationship Network](#应用关系网络--application-relationship-network)
+  - [📜 历史背景 / Historical Background](#-历史背景--historical-background)
+    - [欧几里得几何历史 / Euclidean Geometry History](#欧几里得几何历史--euclidean-geometry-history)
       - [古代几何学（公元前3000年-公元500年）](#古代几何学公元前3000年-公元500年)
       - [中世纪和文艺复兴（公元500年-1600年）](#中世纪和文艺复兴公元500年-1600年)
-    - 微分几何历史 / Differential Geometry History
+    - [微分几何历史 / Differential Geometry History](#微分几何历史--differential-geometry-history)
       - [17-18世纪：微积分与曲线理论](#17-18世纪微积分与曲线理论)
       - [19世纪：现代微分几何的建立](#19世纪现代微分几何的建立)
       - [20世纪：现代微分几何的发展](#20世纪现代微分几何的发展)
-    - 代数几何历史 / Algebraic Geometry History
+    - [代数几何历史 / Algebraic Geometry History](#代数几何历史--algebraic-geometry-history)
       - [17-18世纪：代数曲线的研究](#17-18世纪代数曲线的研究)
       - [19世纪：代数几何的建立](#19世纪代数几何的建立)
       - [20世纪：现代代数几何的发展](#20世纪现代代数几何的发展)
-    - 拓扑几何历史 / Topological Geometry History
+    - [拓扑几何历史 / Topological Geometry History](#拓扑几何历史--topological-geometry-history)
       - [19世纪：拓扑学的萌芽](#19世纪拓扑学的萌芽)
       - [20世纪：现代拓扑学的发展](#20世纪现代拓扑学的发展)
-  - 📚 参考文献 / References
+  - [📚 参考文献 / References](#-参考文献--references)
     - [经典教材](#经典教材)
-  - [📊 术语使用规范](#术语使用规范)
+  - [📊 术语使用规范](#-术语使用规范)
     - [术语定义格式](#术语定义格式)
     - [术语一致性要求](#术语一致性要求)
-      - 使用原则
-  - 🎉 词典完成总结 / Dictionary Completion Summary
-    - 词典建设成就 / Dictionary Construction Achievements
-      - 内容建设成就 / Content Construction Achievements
-    - 词典功能清单 / Dictionary Function Checklist
-      - 核心功能 ✅
-      - 学习功能 ✅
-      - 参考功能 ✅
-      - 应用功能 ✅
-      - 历史功能 ✅
-    - 词典统计数据 / Dictionary Statistics
-      - 内容统计 / Content Statistics
-      - 功能统计 / Function Statistics
-    - 词典版本历史 / Dictionary Version History
-      - 版本演进 / Version Evolution
-      - 当前版本 / Current Version
-    - 词典完成度评估 / Dictionary Completion Assessment
-      - 完成度统计 / Completion Statistics
-      - 总体完成度 / Overall Completion
-    - 词典维护状态 / Dictionary Maintenance Status
-      - 当前维护状态 / Current Maintenance Status
-      - 维护计划 / Maintenance Plan
+      - [使用原则](#使用原则-1)
+  - [🎉 词典完成总结 / Dictionary Completion Summary](#-词典完成总结--dictionary-completion-summary)
+    - [词典建设成就 / Dictionary Construction Achievements](#词典建设成就--dictionary-construction-achievements)
+      - [内容建设成就 / Content Construction Achievements](#内容建设成就--content-construction-achievements)
+    - [词典功能清单 / Dictionary Function Checklist](#词典功能清单--dictionary-function-checklist)
+      - [核心功能 ✅](#核心功能-)
+      - [学习功能 ✅](#学习功能-)
+      - [参考功能 ✅](#参考功能-)
+      - [应用功能 ✅](#应用功能-)
+      - [历史功能 ✅](#历史功能-)
+    - [词典统计数据 / Dictionary Statistics](#词典统计数据--dictionary-statistics)
+      - [内容统计 / Content Statistics](#内容统计--content-statistics)
+      - [功能统计 / Function Statistics](#功能统计--function-statistics)
+    - [词典版本历史 / Dictionary Version History](#词典版本历史--dictionary-version-history)
+      - [版本演进 / Version Evolution](#版本演进--version-evolution)
+      - [当前版本 / Current Version](#当前版本--current-version)
+    - [词典完成度评估 / Dictionary Completion Assessment](#词典完成度评估--dictionary-completion-assessment)
+      - [完成度统计 / Completion Statistics](#完成度统计--completion-statistics)
+      - [总体完成度 / Overall Completion](#总体完成度--overall-completion)
+    - [词典维护状态 / Dictionary Maintenance Status](#词典维护状态--dictionary-maintenance-status)
+      - [当前维护状态 / Current Maintenance Status](#当前维护状态--current-maintenance-status)
+      - [维护计划 / Maintenance Plan](#维护计划--maintenance-plan)
 
 ---
 

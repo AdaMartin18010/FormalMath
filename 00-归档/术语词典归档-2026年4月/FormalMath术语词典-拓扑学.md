@@ -17,151 +17,151 @@ processed_at: '2026-04-05'
 
 - [FormalMath术语词典 - 拓扑学](#formalmath术语词典---拓扑学)
   - [统一拓扑学术语标准定义](#统一拓扑学术语标准定义)
-  - 📑 目录 / Table of Contents
-  - [📋 词典概述](#词典概述)
-  - 🗺️ 拓扑学核心概念思维导图
-  - [📊 拓扑学核心概念多维知识矩阵](#拓扑学核心概念多维知识矩阵)
-    - 词典统计 / Dictionary Statistics
-    - 词典特色 / Dictionary Features
-  - 🔷 点集拓扑术语 / Point-Set Topology Terms
-    - 基本概念 / Basic Concepts
-      - 拓扑空间 / Topological Space
-      - 开集 / Open Set
-      - 闭集 / Closed Set
-      - 连续映射 / Continuous Map
-      - 同胚 / Homeomorphism
-    - 拓扑性质 / Topological Properties
-      - 紧性 / Compactness
-      - 连通性 / Connectedness
-      - 分离性 / Separation Axioms
-      - 邻域 / Neighborhood
-      - 闭包 / Closure
-      - 内部 / Interior
-      - 边界 / Boundary
-  - 🔺 代数拓扑术语 / Algebraic Topology Terms
-    - 基本概念 / Basic Concepts
-      - 同调群 / Homology Group
-      - 上同调群 / Cohomology Group
-      - 同伦 / Homotopy
-      - 基本群 / Fundamental Group
-      - 同伦群 / Homotopy Group
-      - 同伦等价 / Homotopy Equivalence
-      - 同伦型 / Homotopy Type
-  - 🌐 微分拓扑术语 / Differential Topology Terms
-    - 基本概念 / Basic Concepts
-      - 光滑流形 / Smooth Manifold
-      - 切丛 / Tangent Bundle
-      - 向量场 / Vector Field
-      - 微分形式 / Differential Form
-      - 外微分 / Exterior Derivative
-      - 德拉姆上同调 / de Rham Cohomology
-  - 📊 术语关系图 / Term Relationship Diagram
-    - 点集拓扑概念层次关系 / Point-Set Topology Concept Hierarchy
-    - 代数拓扑概念层次关系 / Algebraic Topology Concept Hierarchy
-    - 微分拓扑概念层次关系 / Differential Topology Concept Hierarchy
-    - 拓扑学分支关系 / Topology Branch Relationships
-  - 📊 术语快速参考表 / Quick Reference Table
-    - 核心术语（⭐⭐⭐⭐⭐） / Core Terms
-    - 重要术语（⭐⭐⭐⭐） / Important Terms
-    - 常用术语（⭐⭐⭐） / Common Terms
-  - 🔤 LaTeX代码快速参考 / LaTeX Code Quick Reference
-    - 点集拓扑术语LaTeX代码 / Point-Set Topology Terms LaTeX Code
-    - 代数拓扑术语LaTeX代码 / Algebraic Topology Terms LaTeX Code
-    - 微分拓扑术语LaTeX代码 / Differential Topology Terms LaTeX Code
-    - 常用LaTeX包推荐 / Recommended LaTeX Packages
-  - 📊 术语索引 / Term Index
-    - 按分类索引 / Index by Category
+  - [📑 目录 / Table of Contents](#-目录--table-of-contents)
+  - [📋 词典概述](#-词典概述)
+  - [🗺️ 拓扑学核心概念思维导图](#️-拓扑学核心概念思维导图)
+  - [📊 拓扑学核心概念多维知识矩阵](#-拓扑学核心概念多维知识矩阵)
+    - [词典统计 / Dictionary Statistics](#词典统计--dictionary-statistics)
+    - [词典特色 / Dictionary Features](#词典特色--dictionary-features)
+  - [🔷 点集拓扑术语 / Point-Set Topology Terms](#-点集拓扑术语--point-set-topology-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts)
+      - [拓扑空间 / Topological Space](#拓扑空间--topological-space)
+      - [开集 / Open Set](#开集--open-set)
+      - [闭集 / Closed Set](#闭集--closed-set)
+      - [连续映射 / Continuous Map](#连续映射--continuous-map)
+      - [同胚 / Homeomorphism](#同胚--homeomorphism)
+    - [拓扑性质 / Topological Properties](#拓扑性质--topological-properties)
+      - [紧性 / Compactness](#紧性--compactness)
+      - [连通性 / Connectedness](#连通性--connectedness)
+      - [分离性 / Separation Axioms](#分离性--separation-axioms)
+      - [邻域 / Neighborhood](#邻域--neighborhood)
+      - [闭包 / Closure](#闭包--closure)
+      - [内部 / Interior](#内部--interior)
+      - [边界 / Boundary](#边界--boundary)
+  - [🔺 代数拓扑术语 / Algebraic Topology Terms](#-代数拓扑术语--algebraic-topology-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts-1)
+      - [同调群 / Homology Group](#同调群--homology-group)
+      - [上同调群 / Cohomology Group](#上同调群--cohomology-group)
+      - [同伦 / Homotopy](#同伦--homotopy)
+      - [基本群 / Fundamental Group](#基本群--fundamental-group)
+      - [同伦群 / Homotopy Group](#同伦群--homotopy-group)
+      - [同伦等价 / Homotopy Equivalence](#同伦等价--homotopy-equivalence)
+      - [同伦型 / Homotopy Type](#同伦型--homotopy-type)
+  - [🌐 微分拓扑术语 / Differential Topology Terms](#-微分拓扑术语--differential-topology-terms)
+    - [基本概念 / Basic Concepts](#基本概念--basic-concepts-2)
+      - [光滑流形 / Smooth Manifold](#光滑流形--smooth-manifold)
+      - [切丛 / Tangent Bundle](#切丛--tangent-bundle)
+      - [向量场 / Vector Field](#向量场--vector-field)
+      - [微分形式 / Differential Form](#微分形式--differential-form)
+      - [外微分 / Exterior Derivative](#外微分--exterior-derivative)
+      - [德拉姆上同调 / de Rham Cohomology](#德拉姆上同调--de-rham-cohomology)
+  - [📊 术语关系图 / Term Relationship Diagram](#-术语关系图--term-relationship-diagram)
+    - [点集拓扑概念层次关系 / Point-Set Topology Concept Hierarchy](#点集拓扑概念层次关系--point-set-topology-concept-hierarchy)
+    - [代数拓扑概念层次关系 / Algebraic Topology Concept Hierarchy](#代数拓扑概念层次关系--algebraic-topology-concept-hierarchy)
+    - [微分拓扑概念层次关系 / Differential Topology Concept Hierarchy](#微分拓扑概念层次关系--differential-topology-concept-hierarchy)
+    - [拓扑学分支关系 / Topology Branch Relationships](#拓扑学分支关系--topology-branch-relationships)
+  - [📊 术语快速参考表 / Quick Reference Table](#-术语快速参考表--quick-reference-table)
+    - [核心术语（⭐⭐⭐⭐⭐） / Core Terms](#核心术语--core-terms)
+    - [重要术语（⭐⭐⭐⭐） / Important Terms](#重要术语--important-terms)
+    - [常用术语（⭐⭐⭐） / Common Terms](#常用术语--common-terms)
+  - [🔤 LaTeX代码快速参考 / LaTeX Code Quick Reference](#-latex代码快速参考--latex-code-quick-reference)
+    - [点集拓扑术语LaTeX代码 / Point-Set Topology Terms LaTeX Code](#点集拓扑术语latex代码--point-set-topology-terms-latex-code)
+    - [代数拓扑术语LaTeX代码 / Algebraic Topology Terms LaTeX Code](#代数拓扑术语latex代码--algebraic-topology-terms-latex-code)
+    - [微分拓扑术语LaTeX代码 / Differential Topology Terms LaTeX Code](#微分拓扑术语latex代码--differential-topology-terms-latex-code)
+    - [常用LaTeX包推荐 / Recommended LaTeX Packages](#常用latex包推荐--recommended-latex-packages)
+  - [📊 术语索引 / Term Index](#-术语索引--term-index)
+    - [按分类索引 / Index by Category](#按分类索引--index-by-category)
       - [点集拓扑术语](#点集拓扑术语)
       - [代数拓扑术语](#代数拓扑术语)
       - [微分拓扑术语](#微分拓扑术语)
-  - 📊 符号对照表 / Symbol Reference Table
-  - ⚠️ 常见错误与注意事项 / Common Errors and Notes
+  - [📊 符号对照表 / Symbol Reference Table](#-符号对照表--symbol-reference-table)
+  - [⚠️ 常见错误与注意事项 / Common Errors and Notes](#️-常见错误与注意事项--common-errors-and-notes)
     - [点集拓扑常见错误](#点集拓扑常见错误)
     - [代数拓扑常见错误](#代数拓扑常见错误)
     - [微分拓扑常见错误](#微分拓扑常见错误)
-  - 📖 应用场景 / Application Scenarios
+  - [📖 应用场景 / Application Scenarios](#-应用场景--application-scenarios)
     - [理论应用](#理论应用)
     - [实际应用](#实际应用)
-  - 🛤️ 学习路径建议 / Learning Path Recommendations
+  - [🛤️ 学习路径建议 / Learning Path Recommendations](#️-学习路径建议--learning-path-recommendations)
     - [初学者路径](#初学者路径)
     - [中级路径](#中级路径)
     - [高级路径](#高级路径)
-  - 🔄 术语变体与别名 / Term Variants and Aliases
-    - 点集拓扑术语变体 / Point-Set Topology Term Variants
-      - 拓扑空间 / Topological Space
-      - 连续映射 / Continuous Map
-      - 同胚 / Homeomorphism
-    - 代数拓扑术语变体 / Algebraic Topology Term Variants
-      - 同调群 / Homology Group
-      - 基本群 / Fundamental Group
-      - 同伦 / Homotopy
-    - 微分拓扑术语变体 / Differential Topology Term Variants
-      - 光滑流形 / Smooth Manifold
-      - 切丛 / Tangent Bundle
-  - 📖 扩展阅读建议 / Further Reading Recommendations
-    - 点集拓扑 / Point-Set Topology
-    - 代数拓扑 / Algebraic Topology
-    - 微分拓扑 / Differential Topology
-    - 在线资源 / Online Resources
-  - 💡 实践练习与记忆技巧 / Practice Exercises and Memory Tips
-    - 记忆技巧 / Memory Tips
+  - [🔄 术语变体与别名 / Term Variants and Aliases](#-术语变体与别名--term-variants-and-aliases)
+    - [点集拓扑术语变体 / Point-Set Topology Term Variants](#点集拓扑术语变体--point-set-topology-term-variants)
+      - [拓扑空间 / Topological Space](#拓扑空间--topological-space-1)
+      - [连续映射 / Continuous Map](#连续映射--continuous-map-1)
+      - [同胚 / Homeomorphism](#同胚--homeomorphism-1)
+    - [代数拓扑术语变体 / Algebraic Topology Term Variants](#代数拓扑术语变体--algebraic-topology-term-variants)
+      - [同调群 / Homology Group](#同调群--homology-group-1)
+      - [基本群 / Fundamental Group](#基本群--fundamental-group-1)
+      - [同伦 / Homotopy](#同伦--homotopy-1)
+    - [微分拓扑术语变体 / Differential Topology Term Variants](#微分拓扑术语变体--differential-topology-term-variants)
+      - [光滑流形 / Smooth Manifold](#光滑流形--smooth-manifold-1)
+      - [切丛 / Tangent Bundle](#切丛--tangent-bundle-1)
+  - [📖 扩展阅读建议 / Further Reading Recommendations](#-扩展阅读建议--further-reading-recommendations)
+    - [点集拓扑 / Point-Set Topology](#点集拓扑--point-set-topology)
+    - [代数拓扑 / Algebraic Topology](#代数拓扑--algebraic-topology)
+    - [微分拓扑 / Differential Topology](#微分拓扑--differential-topology)
+    - [在线资源 / Online Resources](#在线资源--online-resources)
+  - [💡 实践练习与记忆技巧 / Practice Exercises and Memory Tips](#-实践练习与记忆技巧--practice-exercises-and-memory-tips)
+    - [记忆技巧 / Memory Tips](#记忆技巧--memory-tips)
       - [点集拓扑记忆技巧](#点集拓扑记忆技巧)
       - [代数拓扑记忆技巧](#代数拓扑记忆技巧)
       - [微分拓扑记忆技巧](#微分拓扑记忆技巧)
-    - 基础练习 / Basic Exercises
+    - [基础练习 / Basic Exercises](#基础练习--basic-exercises)
       - [点集拓扑基础练习](#点集拓扑基础练习)
       - [代数拓扑基础练习](#代数拓扑基础练习)
       - [微分拓扑基础练习](#微分拓扑基础练习)
-    - 进阶练习 / Advanced Exercises
+    - [进阶练习 / Advanced Exercises](#进阶练习--advanced-exercises)
       - [点集拓扑进阶练习](#点集拓扑进阶练习)
       - [代数拓扑进阶练习](#代数拓扑进阶练习)
       - [微分拓扑进阶练习](#微分拓扑进阶练习)
-    - 学习检查点 / Learning Checkpoints
+    - [学习检查点 / Learning Checkpoints](#学习检查点--learning-checkpoints)
       - [点集拓扑检查点](#点集拓扑检查点)
       - [代数拓扑检查点](#代数拓扑检查点)
       - [微分拓扑检查点](#微分拓扑检查点)
-  - 📝 练习题答案与解析 / Exercise Answers and Solutions
-    - 点集拓扑练习题答案 / Point-Set Topology Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-    - 代数拓扑练习题答案 / Algebraic Topology Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-    - 微分拓扑练习题答案 / Differential Topology Exercise Answers
-      - 基础练习答案 / Basic Exercise Answers
-  - 🎯 术语优先级学习顺序 / Term Priority Learning Order
-    - 优先级阶段 / Priority Stages
+  - [📝 练习题答案与解析 / Exercise Answers and Solutions](#-练习题答案与解析--exercise-answers-and-solutions)
+    - [点集拓扑练习题答案 / Point-Set Topology Exercise Answers](#点集拓扑练习题答案--point-set-topology-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers)
+    - [代数拓扑练习题答案 / Algebraic Topology Exercise Answers](#代数拓扑练习题答案--algebraic-topology-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers-1)
+    - [微分拓扑练习题答案 / Differential Topology Exercise Answers](#微分拓扑练习题答案--differential-topology-exercise-answers)
+      - [基础练习答案 / Basic Exercise Answers](#基础练习答案--basic-exercise-answers-2)
+  - [🎯 术语优先级学习顺序 / Term Priority Learning Order](#-术语优先级学习顺序--term-priority-learning-order)
+    - [优先级阶段 / Priority Stages](#优先级阶段--priority-stages)
       - [第1阶段：点集拓扑基础（第1-8周）](#第1阶段点集拓扑基础第1-8周)
       - [第2阶段：代数拓扑基础（第9-20周）](#第2阶段代数拓扑基础第9-20周)
       - [第3阶段：微分拓扑基础（第21-32周）](#第3阶段微分拓扑基础第21-32周)
-    - 学习计划 / Learning Plan
-      - 40周学习计划 / 40-Week Learning Plan
-    - 学习路径 / Learning Paths
+    - [学习计划 / Learning Plan](#学习计划--learning-plan)
+      - [40周学习计划 / 40-Week Learning Plan](#40周学习计划--40-week-learning-plan)
+    - [学习路径 / Learning Paths](#学习路径--learning-paths)
       - [路径1：基础到进阶（循序渐进）](#路径1基础到进阶循序渐进)
       - [路径2：应用导向](#路径2应用导向)
       - [路径3：理论深入](#路径3理论深入)
-  - ⚠️ 常见误解澄清 / Common Misconceptions Clarification
-    - 点集拓扑常见误解 / Point-Set Topology Common Misconceptions
+  - [⚠️ 常见误解澄清 / Common Misconceptions Clarification](#️-常见误解澄清--common-misconceptions-clarification)
+    - [点集拓扑常见误解 / Point-Set Topology Common Misconceptions](#点集拓扑常见误解--point-set-topology-common-misconceptions)
       - [误解1：开集和闭集互斥](#误解1开集和闭集互斥)
       - [误解2：紧性就是有限性](#误解2紧性就是有限性)
       - [误解3：连通就是路径连通](#误解3连通就是路径连通)
-    - 代数拓扑常见误解 / Algebraic Topology Common Misconceptions
+    - [代数拓扑常见误解 / Algebraic Topology Common Misconceptions](#代数拓扑常见误解--algebraic-topology-common-misconceptions)
       - [误解1：同调群和上同调群相同](#误解1同调群和上同调群相同)
       - [误解2：同伦就是同胚](#误解2同伦就是同胚)
       - [误解3：基本群就是同伦群](#误解3基本群就是同伦群)
-    - 微分拓扑常见误解 / Differential Topology Common Misconceptions
+    - [微分拓扑常见误解 / Differential Topology Common Misconceptions](#微分拓扑常见误解--differential-topology-common-misconceptions)
       - [误解1：流形就是拓扑空间](#误解1流形就是拓扑空间)
       - [误解2：切丛就是切空间](#误解2切丛就是切空间)
       - [误解3：微分形式就是函数](#误解3微分形式就是函数)
-    - 一般数学概念误解 / General Mathematical Concept Misconceptions
+    - [一般数学概念误解 / General Mathematical Concept Misconceptions](#一般数学概念误解--general-mathematical-concept-misconceptions)
       - [误解1：拓扑就是几何](#误解1拓扑就是几何)
       - [误解2：拓扑就是直观的](#误解2拓扑就是直观的)
-  - 📊 术语对比表 / Term Comparison Table
-    - 拓扑等价性对比 / Topological Equivalence Comparison
-    - 拓扑性质对比 / Topological Properties Comparison
-    - 拓扑不变量对比 / Topological Invariants Comparison
-    - 流形类型对比 / Manifold Types Comparison
-    - 分离性公理对比 / Separation Axioms Comparison
-  - 📋 术语速查表 / Term Quick Reference
-    - 按字母顺序速查 / Alphabetical Quick Reference
+  - [📊 术语对比表 / Term Comparison Table](#-术语对比表--term-comparison-table)
+    - [拓扑等价性对比 / Topological Equivalence Comparison](#拓扑等价性对比--topological-equivalence-comparison)
+    - [拓扑性质对比 / Topological Properties Comparison](#拓扑性质对比--topological-properties-comparison)
+    - [拓扑不变量对比 / Topological Invariants Comparison](#拓扑不变量对比--topological-invariants-comparison)
+    - [流形类型对比 / Manifold Types Comparison](#流形类型对比--manifold-types-comparison)
+    - [分离性公理对比 / Separation Axioms Comparison](#分离性公理对比--separation-axioms-comparison)
+  - [📋 术语速查表 / Term Quick Reference](#-术语速查表--term-quick-reference)
+    - [按字母顺序速查 / Alphabetical Quick Reference](#按字母顺序速查--alphabetical-quick-reference)
       - [B](#b)
       - [C](#c)
       - [D](#d)
@@ -174,53 +174,53 @@ processed_at: '2026-04-05'
       - [T](#t)
       - [V](#v)
       - [W](#w)
-    - 按分支速查 / Quick Reference by Branch
+    - [按分支速查 / Quick Reference by Branch](#按分支速查--quick-reference-by-branch)
       - [点集拓扑](#点集拓扑)
       - [代数拓扑](#代数拓扑)
       - [微分拓扑](#微分拓扑)
-    - 按主题速查 / Quick Reference by Topic
+    - [按主题速查 / Quick Reference by Topic](#按主题速查--quick-reference-by-topic)
       - [拓扑空间](#拓扑空间)
       - [拓扑映射](#拓扑映射)
       - [拓扑性质](#拓扑性质)
       - [拓扑不变量](#拓扑不变量)
       - [流形理论](#流形理论)
       - [微分形式](#微分形式)
-  - 📖 术语应用指南 / Term Application Guide
-    - 如何有效使用本词典 / How to Use This Dictionary Effectively
-      - 初学者阶段 / Beginner Stage
-      - 中级阶段 / Intermediate Stage
-      - 高级阶段 / Advanced Stage
-    - 术语查找策略 / Term Lookup Strategies
+  - [📖 术语应用指南 / Term Application Guide](#-术语应用指南--term-application-guide)
+    - [如何有效使用本词典 / How to Use This Dictionary Effectively](#如何有效使用本词典--how-to-use-this-dictionary-effectively)
+      - [初学者阶段 / Beginner Stage](#初学者阶段--beginner-stage)
+      - [中级阶段 / Intermediate Stage](#中级阶段--intermediate-stage)
+      - [高级阶段 / Advanced Stage](#高级阶段--advanced-stage)
+    - [术语查找策略 / Term Lookup Strategies](#术语查找策略--term-lookup-strategies)
       - [策略1：按字母顺序查找](#策略1按字母顺序查找)
       - [策略2：按分支查找](#策略2按分支查找)
       - [策略3：按主题查找](#策略3按主题查找)
       - [策略4：使用对比表](#策略4使用对比表)
-    - 术语学习建议 / Term Learning Recommendations
+    - [术语学习建议 / Term Learning Recommendations](#术语学习建议--term-learning-recommendations)
       - [建议1：循序渐进](#建议1循序渐进)
       - [建议2：理解概念关系](#建议2理解概念关系)
       - [建议3：实践应用](#建议3实践应用)
       - [建议4：避免常见错误](#建议4避免常见错误)
-  - 🕸️ 术语关系网络图 / Term Relationship Network Diagram
-    - 点集拓扑核心概念网络 / Point-Set Topology Core Concept Network
-    - 代数拓扑核心概念网络 / Algebraic Topology Core Concept Network
-    - 微分拓扑核心概念网络 / Differential Topology Core Concept Network
-    - 拓扑学分支关系网络 / Topology Branch Relationship Network
-    - 学习路径关系网络 / Learning Path Relationship Network
-    - 应用关系网络 / Application Relationship Network
-  - 📜 历史背景 / Historical Background
-    - 点集拓扑历史 / Point-Set Topology History
-    - 代数拓扑历史 / Algebraic Topology History
-    - 微分拓扑历史 / Differential Topology History
-    - 拓扑学现代发展 / Modern Topology Development
-  - 📚 参考文献 / References
+  - [🕸️ 术语关系网络图 / Term Relationship Network Diagram](#️-术语关系网络图--term-relationship-network-diagram)
+    - [点集拓扑核心概念网络 / Point-Set Topology Core Concept Network](#点集拓扑核心概念网络--point-set-topology-core-concept-network)
+    - [代数拓扑核心概念网络 / Algebraic Topology Core Concept Network](#代数拓扑核心概念网络--algebraic-topology-core-concept-network)
+    - [微分拓扑核心概念网络 / Differential Topology Core Concept Network](#微分拓扑核心概念网络--differential-topology-core-concept-network)
+    - [拓扑学分支关系网络 / Topology Branch Relationship Network](#拓扑学分支关系网络--topology-branch-relationship-network)
+    - [学习路径关系网络 / Learning Path Relationship Network](#学习路径关系网络--learning-path-relationship-network)
+    - [应用关系网络 / Application Relationship Network](#应用关系网络--application-relationship-network)
+  - [📜 历史背景 / Historical Background](#-历史背景--historical-background)
+    - [点集拓扑历史 / Point-Set Topology History](#点集拓扑历史--point-set-topology-history)
+    - [代数拓扑历史 / Algebraic Topology History](#代数拓扑历史--algebraic-topology-history)
+    - [微分拓扑历史 / Differential Topology History](#微分拓扑历史--differential-topology-history)
+    - [拓扑学现代发展 / Modern Topology Development](#拓扑学现代发展--modern-topology-development)
+  - [📚 参考文献 / References](#-参考文献--references)
     - [经典教材](#经典教材)
-  - [📊 术语使用规范](#术语使用规范)
+  - [📊 术语使用规范](#-术语使用规范)
     - [术语定义格式](#术语定义格式)
     - [术语一致性要求](#术语一致性要求)
       - [使用原则](#使用原则)
-  - 🎉 词典完成总结 / Dictionary Completion Summary
-    - 词典建设成就 / Dictionary Construction Achievements
-    - 词典功能清单 / Dictionary Function Checklist
+  - [🎉 词典完成总结 / Dictionary Completion Summary](#-词典完成总结--dictionary-completion-summary)
+    - [词典建设成就 / Dictionary Construction Achievements](#词典建设成就--dictionary-construction-achievements)
+    - [词典功能清单 / Dictionary Function Checklist](#词典功能清单--dictionary-function-checklist)
       - [核心功能模块](#核心功能模块)
       - [关系功能模块](#关系功能模块)
       - [参考功能模块](#参考功能模块)
@@ -228,13 +228,13 @@ processed_at: '2026-04-05'
       - [应用功能模块](#应用功能模块)
       - [对比功能模块](#对比功能模块)
       - [历史与总结模块](#历史与总结模块)
-    - 词典统计数据 / Dictionary Statistics
-    - 词典版本历史 / Dictionary Version History
+    - [词典统计数据 / Dictionary Statistics](#词典统计数据--dictionary-statistics)
+    - [词典版本历史 / Dictionary Version History](#词典版本历史--dictionary-version-history)
       - [v1.0（2025年1月）- 初始版本](#v102025年1月--初始版本)
       - [v1.1（2025年1月）- 功能扩展版本](#v112025年1月--功能扩展版本)
       - [v1.2（2025年1月）- 学习功能版本](#v122025年1月--学习功能版本)
-    - 词典完成度评估 / Dictionary Completion Assessment
-    - 词典维护状态 / Dictionary Maintenance Status
+    - [词典完成度评估 / Dictionary Completion Assessment](#词典完成度评估--dictionary-completion-assessment)
+    - [词典维护状态 / Dictionary Maintenance Status](#词典维护状态--dictionary-maintenance-status)
 
 ---
 

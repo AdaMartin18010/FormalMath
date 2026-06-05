@@ -51,11 +51,11 @@ processed_at: '2026-04-05'
     - [**3.6 LIDA数学认知阶段对比矩阵**](#36-lida数学认知阶段对比矩阵)
   - [**四、三层结构在LIDA中的理论对应**](#四三层结构在lida中的理论对应)
     - [**4.1 三层结构与LIDA对应关系思维导图**](#41-三层结构与lida对应关系思维导图)
-    - **4.2 集合论层 ↔ LIDA工作记忆**
+    - [**4.2 集合论层 ↔ LIDA工作记忆**](#42-集合论层--lida工作记忆)
       - [**4.2.1 对应关系说明**](#421-对应关系说明)
-    - **4.3 代数层 ↔ LIDA程序性记忆**
+    - [**4.3 代数层 ↔ LIDA程序性记忆**](#43-代数层--lida程序性记忆)
       - [**4.3.1 对应关系说明**](#431-对应关系说明)
-    - **4.4 范畴论层 ↔ LIDA语义记忆**
+    - [**4.4 范畴论层 ↔ LIDA语义记忆**](#44-范畴论层--lida语义记忆)
       - [**4.4.1 对应关系说明**](#441-对应关系说明)
     - [**4.5 三层结构与LIDA对应关系对比矩阵**](#45-三层结构与lida对应关系对比矩阵)
     - [**4.6 LIDA如何建模数学抽象过程？**](#46-lida如何建模数学抽象过程)
@@ -276,9 +276,9 @@ mindmap
 
 **参考文献**：
 
-- Baars, B. J. (1988). *A Cognitive Theory of Consciousness*. Cambridge University Press. [链接](https://www.cambridge.org/core/books/cognitive-theory-of-consciousness/)[需更新][需更新]
-- Anderson, J. R. (1993). *Rules of the Mind*. Psychology Press. [链接](https://www.routledge.com/Rules-of-the-Mind/Anderson/p/book/9780805813001)[需更新][需更新]
-- Laird, J. E. (2012). *The SOAR Cognitive Architecture*. MIT Press. [链接](https://mitpress.mit.edu/9780262017186/the-soar-cognitive-architecture/)[需更新][需更新]
+- Baars, B. J. (1988). *A Cognitive Theory of Consciousness*. Cambridge University Press. [链接][https://www.cambridge.org/core/books/cognitive-theory-of-consciousness/](需更新)[需更新]
+- Anderson, J. R. (1993). *Rules of the Mind*. Psychology Press. [链接][https://www.routledge.com/Rules-of-the-Mind/Anderson/p/book/9780805813001](需更新)[需更新]
+- Laird, J. E. (2012). *The SOAR Cognitive Architecture*. MIT Press. [链接][https://mitpress.mit.edu/9780262017186/the-soar-cognitive-architecture/](需更新)[需更新]
 - Wikipedia contributors. (2024). *Cognitive architecture*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Cognitive_architecture)
 
 ---
@@ -443,7 +443,7 @@ mindmap
 
 **参考文献**：
 
-- Baars, B. J. (1988). *A Cognitive Theory of Consciousness*. Cambridge University Press. [链接](https://www.cambridge.org/core/books/cognitive-theory-of-consciousness/)[需更新][需更新]
+- Baars, B. J. (1988). *A Cognitive Theory of Consciousness*. Cambridge University Press. [链接][https://www.cambridge.org/core/books/cognitive-theory-of-consciousness/](需更新)[需更新]
 - Wikipedia contributors. (2024). *Attention*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Attention)
 
 ##### **5. 学习模块（Learning）**
@@ -1016,7 +1016,7 @@ graph TD
 
 **参考文献**：
 
-- Anderson, J. R. (1993). *Rules of the Mind*. Psychology Press. [链接](https://www.routledge.com/Rules-of-the-Mind/Anderson/p/book/9780805813001)[需更新][需更新]
+- Anderson, J. R. (1993). *Rules of the Mind*. Psychology Press. [链接][https://www.routledge.com/Rules-of-the-Mind/Anderson/p/book/9780805813001](需更新)[需更新]
 - Delazer, M., Ischebeck, A., Domahs, F., Zamarian, L., Koppelstaetter, F., Siedentopf, C. M., ... & Felber, S. (2005). Learning by strategies and learning by drill—evidence from an fMRI study. *NeuroImage*, 25(3), 838-849. [DOI](https://doi.org/10.1016/j.neuroimage.2005.01.028)
 
 ---
@@ -1331,24 +1331,24 @@ graph LR
 
 ### **LIDA在数学认知中的应用**
 
-6. **Franklin, S., et al. (2014). LIDA: A systems-level architecture for cognition, emotion, and learning**
+1. **Franklin, S., et al. (2014). LIDA: A systems-level architecture for cognition, emotion, and learning**
    - LIDA架构的系统级描述
    - 讨论LIDA如何建模复杂认知过程
    - 包括数学推理的应用
 
-7. **Negatu, A., & Franklin, S. (2010). An action selection mechanism for a cognitive robot**
+2. **Negatu, A., & Franklin, S. (2010). An action selection mechanism for a cognitive robot**
    - LIDA的行动选择机制
    - 讨论如何选择和执行行动
    - 可应用于数学问题解决策略选择
 
 ### **相关认知架构理论**
 
-8. **Anderson, J. R. (1993). *Rules of the Mind***
+1. **Anderson, J. R. (1993). *Rules of the Mind***
    - ACT-R认知架构
    - 与LIDA的比较和联系
    - 程序性记忆和陈述性记忆的区分
 
-9. **Laird, J. E. (2012). *The SOAR Cognitive Architecture***
+2. **Laird, J. E. (2012). *The SOAR Cognitive Architecture***
    - SOAR认知架构
    - 与LIDA的比较
    - 问题解决和学习机制
@@ -1463,23 +1463,23 @@ LIDA认知架构与三层结构理论的关系：
 
 ### **6.2 理论基础文献**
 
-4. Baars, B. J. (1988). *A Cognitive Theory of Consciousness*. Cambridge University Press. [链接](https://www.cambridge.org/core/books/cognitive-theory-of-consciousness/)[需更新][需更新]
+1. Baars, B. J. (1988). *A Cognitive Theory of Consciousness*. Cambridge University Press. [链接][https://www.cambridge.org/core/books/cognitive-theory-of-consciousness/](需更新)[需更新]
 
-5. Anderson, J. R. (1993). *Rules of the Mind*. Psychology Press. [链接](https://www.routledge.com/Rules-of-the-Mind/Anderson/p/book/9780805813001)[需更新][需更新]
+2. Anderson, J. R. (1993). *Rules of the Mind*. Psychology Press. [链接][https://www.routledge.com/Rules-of-the-Mind/Anderson/p/book/9780805813001](需更新)[需更新]
 
-6. Laird, J. E. (2012). *The SOAR Cognitive Architecture*. MIT Press. [链接](https://mitpress.mit.edu/9780262017186/the-soar-cognitive-architecture/)[需更新][需更新]
+3. Laird, J. E. (2012). *The SOAR Cognitive Architecture*. MIT Press. [链接][https://mitpress.mit.edu/9780262017186/the-soar-cognitive-architecture/](需更新)[需更新]
 
-7. Baddeley, A. D. (2000). The episodic buffer: a new component of working memory? *Trends in Cognitive Sciences*, 4(11), 417-423. [DOI](https://doi.org/10.1016/S1364-6613(00)01538-2)
+4. Baddeley, A. D. (2000). The episodic buffer: a new component of working memory? *Trends in Cognitive Sciences*, 4(11), 417-423. [DOI](https://doi.org/10.1016/S1364-6613(00)01538-2)
 
 ### **6.3 权威资源参考**
 
-8. Wikipedia contributors. (2024). *Cognitive architecture*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Cognitive_architecture)
+1. Wikipedia contributors. (2024). *Cognitive architecture*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Cognitive_architecture)
 
-9. Wikipedia contributors. (2024). *Global workspace theory*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Global_workspace_theory)
+2. Wikipedia contributors. (2024). *Global workspace theory*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Global_workspace_theory)
 
-10. Wikipedia contributors. (2024). *Working memory*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Working_memory)
+3. Wikipedia contributors. (2024). *Working memory*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Working_memory)
 
-11. Wikipedia contributors. (2024). *Long-term memory*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Long-term_memory)
+4. Wikipedia contributors. (2024). *Long-term memory*. Wikipedia. [链接](https://en.wikipedia.org/wiki/Long-term_memory)
 
 ### **6.4 相关文档**
 

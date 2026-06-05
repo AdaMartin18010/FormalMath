@@ -7,8 +7,8 @@ processed_at: '2026-04-05'
 ---
 # Wikipedia应用数学概念结构对齐报告
 
-**生成日期**: 2026年4月4日  
-**项目**: FormalMath  
+**生成日期**: 2026年4月4日
+**项目**: FormalMath
 **目标**: 将FormalMath应用数学内容与Wikipedia权威定义对齐
 
 ---
@@ -58,16 +58,19 @@ processed_at: '2026-04-05'
 > Mathematical physics is an interdisciplinary field of academic study in between mathematics and physics, aimed at studying and solving problems inspired by physics within a mathematically rigorous framework.
 
 **核心特征**:
+
 - 强调数学严谨性(mathematical rigor)
 - 与理论物理(theoretical physics)有区别：数学物理更接近数学，理论物理更接近物理
 - 研究主题包括：算子代数、非交换几何、弦理论、群论、统计力学等
 
 **FormalMath对齐状态**:
+
 - ✅ 存在docs/18-数学物理/目录
 - ✅ 概念定义基本对齐
 - ⚠️ 需要加强数学严谨性的强调
 
 **关键概念映射**:
+
 | Wikipedia概念 | FormalMath对应 | 对齐状态 |
 |--------------|---------------|---------|
 | Mathematical rigor | 形式化证明 | 部分对齐 |
@@ -84,16 +87,19 @@ processed_at: '2026-04-05'
 > Mathematical and theoretical biology is a branch of biology which employs theoretical analysis, mathematical models and abstractions of the living organisms to investigate the principles that govern the structure, development and behavior of biological systems.
 
 **核心特征**:
+
 - 使用数学模型研究生物系统
 - 与计算生物学(computational biology)、系统生物学(systems biology)相关
 - 应用包括：种群动力学、流行病模型、系统生态学等
 
 **FormalMath对齐状态**:
+
 - ✅ 存在docs/26-生物数学/目录
 - ✅ docs/12-应用数学/08-生物数学-深化版.md
 - ⚠️ 需要明确区分数学生物学与计算生物学
 
 **关键概念映射**:
+
 | Wikipedia概念 | FormalMath对应 | 对齐状态 |
 |--------------|---------------|---------|
 | Population dynamics | 种群动力学 | ✅ 对齐 |
@@ -110,16 +116,19 @@ processed_at: '2026-04-05'
 > Mathematical finance, also known as quantitative finance, is a field of applied mathematics, concerned with financial markets. Generally, mathematical finance will derive and extend the mathematical or numerical models without necessarily establishing a link to financial theory.
 
 **核心特征**:
+
 - 关注金融市场建模
 - 数学一致性(mathematical consistency)优先于经济理论兼容性
 - 核心问题：资产价格变化、期权定价、套利等
 
 **FormalMath对齐状态**:
+
 - ✅ 存在docs/25-金融数学/目录
 - ✅ docs/12-应用数学/12-金融数学-深化版.md
 - ⚠️ 需要加强Black-Scholes模型等核心内容
 
 **关键概念映射**:
+
 | Wikipedia概念 | FormalMath对应 | 对齐状态 |
 |--------------|---------------|---------|
 | Black-Scholes model | 布莱克-斯科尔斯模型 | ✅ 对齐 |
@@ -136,16 +145,19 @@ processed_at: '2026-04-05'
 > Numerical analysis deals with the study of algorithms for the problems of continuous mathematics. These algorithms are routinely applied to many problems in science and engineering.
 
 **核心特征**:
+
 - 研究连续数学问题的算法
 - 直接方法(direct methods) vs 迭代方法(iterative methods)
 - 应用领域：天气预报、气候模型、分子设计、结构设计等
 
 **FormalMath对齐状态**:
+
 - ✅ 存在docs/27-计算数学/目录
 - ✅ docs/08-计算数学/目录
 - ⚠️ 需要明确区分数值分析与计算数学的边界
 
 **关键概念映射**:
+
 | Wikipedia概念 | FormalMath对应 | 对齐状态 |
 |--------------|---------------|---------|
 | Direct methods | 直接法 | ✅ 对齐 |
@@ -162,16 +174,19 @@ processed_at: '2026-04-05'
 > Operations research (OR) is a discipline that deals with the application of advanced analytical methods to help make better decisions. It is often considered to be a sub-field of applied mathematics.
 
 **核心特征**:
+
 - 应用数学建模、统计分析和数学优化
 - 与管理科学(management science)、决策科学(decision science)相关
 - 起源于二战前的军事研究
 
 **FormalMath对齐状态**:
+
 - ✅ 存在docs/21-最优化/目录
 - ✅ docs/12-应用数学/03-运筹学.md
 - ✅ 包含线性规划、整数规划、排队论等内容
 
 **关键概念映射**:
+
 | Wikipedia概念 | FormalMath对应 | 对齐状态 |
 |--------------|---------------|---------|
 | Linear programming | 线性规划 | ✅ 对齐 |
@@ -188,16 +203,19 @@ processed_at: '2026-04-05'
 > Control theory in control systems engineering is a subfield of mathematics that deals with the control of continuously operating dynamical systems in engineered processes and machines.
 
 **核心特征**:
+
 - 控制连续运行的动态系统
 - 开环控制(open-loop) vs 闭环控制(closed-loop/feedback)
 - 经典控制理论 vs 现代控制理论
 
 **FormalMath对齐状态**:
+
 - ✅ 存在docs/22-控制论/目录
 - ✅ docs/12-应用数学/04-控制论.md（内容完整）
 - ✅ 包含经典控制、现代控制、最优控制等
 
 **关键概念映射**:
+
 | Wikipedia概念 | FormalMath对应 | 对齐状态 |
 |--------------|---------------|---------|
 | Classical control theory | 经典控制理论 | ✅ 对齐 |
@@ -215,16 +233,19 @@ processed_at: '2026-04-05'
 > Information theory studies the quantification, storage, and communication of information. It was originally proposed by Claude E. Shannon in 1948 to find fundamental limits on signal processing and communication operations.
 
 **核心特征**:
+
 - 香农1948年创立
 - 核心度量：熵(entropy)、互信息(mutual information)、信道容量(channel capacity)
 - 应用：数据压缩、信道编码、密码学等
 
 **FormalMath对齐状态**:
+
 - ✅ 存在docs/23-信息论/目录
 - ✅ docs/12-应用数学/10-信息论数学-深化版.md（内容详尽）
 - ✅ 包含香农信息论、量子信息论、编码理论
 
 **关键概念映射**:
+
 | Wikipedia概念 | FormalMath对应 | 对齐状态 |
 |--------------|---------------|---------|
 | Shannon entropy | 香农熵 | ✅ 对齐 |
@@ -242,16 +263,19 @@ processed_at: '2026-04-05'
 > Cryptography is the practice and study of hiding information. Modern cryptography intersects the disciplines of mathematics, computer science, and engineering.
 
 **核心特征**:
+
 - 信息隐藏的研究和实践
 - 对称密钥加密(symmetric-key) vs 公钥加密(public-key)
 - 密码分析(cryptanalysis)作为对立面
 
 **FormalMath对齐状态**:
+
 - ✅ 存在docs/24-密码学/目录
 - ✅ docs/13-应用数学/包含密码学内容
 - ⚠️ 需要加强现代密码学内容
 
 **关键概念映射**:
+
 | Wikipedia概念 | FormalMath对应 | 对齐状态 |
 |--------------|---------------|---------|
 | Symmetric-key cryptography | 对称密码学 | ✅ 对齐 |
@@ -268,16 +292,19 @@ processed_at: '2026-04-05'
 > Computer science is the study of the theoretical foundations of information and computation, and of practical techniques for their implementation and application in computer systems.
 
 **核心特征**:
+
 - 计算理论(theory of computation)包含：可计算性理论、自动机理论、计算复杂性理论
 - 算法研究
 - 与信息论、离散数学密切相关
 
 **FormalMath对齐状态**:
+
 - ✅ docs/08-计算数学/包含算法内容
 - ✅ docs/09-形式化证明/相关
 - ⚠️ 需要明确计算机科学理论专区
 
 **关键概念映射**:
+
 | Wikipedia概念 | FormalMath对应 | 对齐状态 |
 |--------------|---------------|---------|
 | Computability theory | 可计算性理论 | 部分对齐 |
@@ -350,15 +377,15 @@ Computer Science        ↔    docs/08-计算数学/
 
 ### 4.2 中优先级建议
 
-4. **加强密码学现代内容**
+1. **加强密码学现代内容**
    - 补充同态加密、零知识证明等前沿内容
    - 参考docs/13-应用数学/现有内容
 
-5. **完善金融数学随机分析**
+2. **完善金融数学随机分析**
    - 加强Black-Scholes模型、风险中性测度等内容
    - 添加金融衍生品定价实例
 
-6. **扩充数学生物学案例**
+3. **扩充数学生物学案例**
    - 添加更多实际生物模型案例
    - 加强与系统生物学的联系
 

@@ -16,6 +16,7 @@ msc_secondary:
 ## 数据来源
 
 ### 教材与课程
+
 - MIT OpenCourseWare (18.100A, 18.02, 18.06, 18.701)
 - Harvard Mathematics 232br
 - Stanford Mathematics 216 (FOAG)
@@ -24,12 +25,14 @@ msc_secondary:
 - Oxford Mathematics Part B
 
 ### 权威资源
+
 - Stacks Project (https://stacks.math.columbia.edu)
 - nLab (https://ncatlab.org)
 - IMO Official (https://www.imo-official.org)
 - Mathlib4 (https://github.com/leanprover-community/mathlib4)
 
 ### 参考文献
+
 - Abbott, S. *Understanding Analysis*
 - Rudin, W. *Principles of Mathematical Analysis*
 - Strang, G. *Introduction to Linear Algebra*

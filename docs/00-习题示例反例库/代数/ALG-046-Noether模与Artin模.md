@@ -15,6 +15,7 @@ source: 经典代数习题
 设 $R$ 是含幺环，$M$ 是 $R$-模。
 
 **(a)** 定义：$M$ 是**Noether模**（满足ACC），如果子模的升链稳定。证明等价条件：
+
 1. ACC
 2. 任何非空子模集有极大元
 3. 任何子模有限生成
@@ -58,10 +59,12 @@ $N = \bigcup N_i$ 是子模，有限生成：$N = Rx_1 + ... + Rx_k$。
 **定义：** $M$ 是Artin模，如果对任何降链 $N_1 \supset N_2 \supset ...$，存在 $N$ 使 $n \geq N$ 时 $N_n = N_N$。
 
 **例子：**
+
 - $\mathbb{Z}/p^n\mathbb{Z}$ 作为 $\mathbb{Z}$-模是Artin的（子模有限）
 - 有限维向量空间
 
 **非例子：**
+
 - $\mathbb{Z}$ 作为 $\mathbb{Z}$-模：$\mathbb{Z} \supset 2\mathbb{Z} \supset 4\mathbb{Z} \supset ...$ 不稳定性
 - $k[x]$ 作为 $k[x]$-模
 

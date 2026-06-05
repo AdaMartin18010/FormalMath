@@ -7,8 +7,8 @@ processed_at: '2026-04-05'
 ---
 # Wikipedia概率统计概念结构对齐报告
 
-**生成日期**: 2026年4月4日  
-**任务**: 将FormalMath概率统计内容与Wikipedia数学概念结构对齐  
+**生成日期**: 2026年4月4日
+**任务**: 将FormalMath概率统计内容与Wikipedia数学概念结构对齐
 **范围**: Probability Theory, Statistics, Stochastic Process, Markov Chain, Martingale, Brownian Motion, Central Limit Theorem, Bayesian Statistics, Machine Learning
 
 ---
@@ -48,6 +48,7 @@ Probability Theory
 ```
 
 **对应FormalMath概念**:
+
 | Wikipedia概念 | FormalMath ID | 中文名 | 状态 |
 |--------------|---------------|--------|------|
 | Probability Measure | probability_measure | 概率测度 | ✅ 已对齐 |
@@ -98,6 +99,7 @@ Statistics
 ```
 
 **对应FormalMath概念**:
+
 | Wikipedia概念 | FormalMath ID | 中文名 | 状态 |
 |--------------|---------------|--------|------|
 | Statistical Inference | statistical_inference | 统计推断 | ✅ 已对齐 |
@@ -134,6 +136,7 @@ Stochastic Process
 ```
 
 **对应FormalMath概念**:
+
 | Wikipedia概念 | FormalMath ID | 中文名 | 状态 |
 |--------------|---------------|--------|------|
 | Stochastic Process | stochastic_process | 随机过程 | ✅ 已对齐 |
@@ -170,6 +173,7 @@ Markov Chain
 ```
 
 **对应FormalMath概念**:
+
 | Wikipedia概念 | FormalMath ID | 中文名 | 状态 |
 |--------------|---------------|--------|------|
 | Markov Chain | markov_chain | 马尔可夫链 | ✅ 已对齐 |
@@ -200,6 +204,7 @@ Martingale
 ```
 
 **对应FormalMath概念**:
+
 | Wikipedia概念 | FormalMath ID | 中文名 | 状态 |
 |--------------|---------------|--------|------|
 | Martingale | martingale | 鞅 | ✅ 已对齐 |
@@ -233,6 +238,7 @@ Brownian Motion / Wiener Process
 ```
 
 **对应FormalMath概念**:
+
 | Wikipedia概念 | FormalMath ID | 中文名 | 状态 |
 |--------------|---------------|--------|------|
 | Brownian Motion | brownian_motion | 布朗运动 | ✅ 已对齐 |
@@ -263,6 +269,7 @@ Central Limit Theorem
 ```
 
 **对应FormalMath概念**:
+
 | Wikipedia概念 | FormalMath ID | 中文名 | 状态 |
 |--------------|---------------|--------|------|
 | Central Limit Theorem | central_limit_theorem | 中心极限定理 | ✅ 已对齐 |
@@ -299,6 +306,7 @@ Bayesian Statistics
 ```
 
 **对应FormalMath概念**:
+
 | Wikipedia概念 | FormalMath ID | 中文名 | 状态 |
 |--------------|---------------|--------|------|
 | Bayes' Theorem | bayes_theorem | 贝叶斯定理 | ✅ 已对齐 |
@@ -348,6 +356,7 @@ Machine Learning
 ```
 
 **对应FormalMath概念**:
+
 | Wikipedia概念 | FormalMath ID | 中文名 | 状态 |
 |--------------|---------------|--------|------|
 | Linear Regression | linear_regression | 线性回归 | ⚠️ 需扩展 |
@@ -380,7 +389,7 @@ Machine Learning
 ### 3.1 概率论依赖链
 
 ```
-Measure Theory → Probability Measure → Random Variable 
+Measure Theory → Probability Measure → Random Variable
                                             ↓
 Expectation ← Probability Distribution ←——┘
     ↓
@@ -800,6 +809,6 @@ posterior_distribution:
 
 ---
 
-**报告完成**  
-**生成时间**: 2026-04-04 10:16  
+**报告完成**
+**生成时间**: 2026-04-04 10:16
 **报告版本**: v1.0

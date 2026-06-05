@@ -34,7 +34,7 @@ processed_at: '2026-04-05'
 ### 1. SardTheorem.lean (10处已修复)
 
 - ✅ `sard_theorem` - Sard定理主定理
-- ✅ `constant_rank_theorem` - 常秩定理  
+- ✅ `constant_rank_theorem` - 常秩定理
 - ✅ `image_measure_zero_low_dim` - 低维映射像测度零
 - ✅ `sard_euclidean` - 欧氏空间Sard定理
 - ✅ `preimage_regular_value` - 正则值原像定理
@@ -142,17 +142,20 @@ theorem example_cases (n : ℕ) : P n := by
 ## 下一步工作计划
 
 ### 阶段1: 完成DifferentialTopology.lean (5处)
+
 - Thom配边分类定理框架
 - h-配边定理框架
 - 怪球面存在性证明
 
 ### 阶段2: 完成MorseTheory.lean (10处)
+
 - Hessian矩阵完整定义
 - Morse引理证明
 - Morse不等式证明
 - Reeb定理框架
 
 ### 阶段3: 完成GeodesicEquation.lean (18处)
+
 - 测地线方程证明
 - 指数映射理论
 - Hopf-Rinow定理
