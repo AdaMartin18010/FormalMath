@@ -5,10 +5,10 @@ $conceptFiles = Get-ChildItem "g:\_src\FormalMath\concept\核心概念\*.md" -Ex
 
 foreach ($file in $conceptFiles) {
     Write-Host "检查文件: $($file.Name)"
-    
+
     $content = Get-Content $file.FullName -Raw -Encoding UTF8
     $modified = $false
-    
+
     # 修复遗漏编号的其他部分
     if ($content -match '## 👨‍🏫 专家观点与论证' -and $content -notmatch '## 9\.[0-9] 👨‍🏫') {
         $content = $content -replace '## 👨‍🏫 专家观点与论证', '## 9.6 👨‍🏫 专家观点与论证'
@@ -30,7 +30,7 @@ foreach ($file in $conceptFiles) {
         $content = $content -replace '## 🧬 综合整合表征', '## 9.8 🧬 综合整合表征'
         $modified = $true
     }
-    
+
     # 更新目录中的链接（如果有这些部分）
     if ($content -match '## 9\.6 👨‍🏫' -and $content -notmatch '9\.6 \[专家观点与论证\]') {
         # 在目录中添加9.6链接
@@ -46,7 +46,7 @@ foreach ($file in $conceptFiles) {
             $modified = $true
         }
     }
-    
+
     if ($modified) {
         Set-Content -Path $file.FullName -Value $content -Encoding UTF8 -NoNewline
         Write-Host "已修复: $($file.Name)"
