@@ -65,11 +65,13 @@ processed_at: '2026-04-05'
 ### 5. 错题本功能 ✅
 
 文件：
+
 - `src/services/mistakeBookService.ts` - 错题本服务
 - `src/hooks/useExercise.ts` - useMistakeBook Hook
 - `src/components/Exercises/MistakeBook.tsx` - 错题本组件
 
 功能：
+
 - 自动记录错题
 - 7 种错误类型分类
 - 4 级掌握度评估（薄弱/提升中/已掌握/已遗忘）
@@ -80,11 +82,13 @@ processed_at: '2026-04-05'
 ## 核心文件列表
 
 ### 类型定义
+
 ```
 src/types/exercise.ts          (330 行)
 ```
 
 ### 服务层
+
 ```
 src/services/exerciseValidator.ts   (350 行)
 src/services/hintService.ts         (280 行)
@@ -92,11 +96,13 @@ src/services/mistakeBookService.ts  (300 行)
 ```
 
 ### Hooks
+
 ```
 src/hooks/useExercise.ts      (420 行)
 ```
 
 ### 组件层
+
 ```
 src/components/Exercises/
 ├── index.tsx                 (组件导出 + 辅助组件)
@@ -114,6 +120,7 @@ src/components/Exercises/
 ```
 
 ### 页面
+
 ```
 src/pages/Exercise/
 ├── index.tsx                 (练习页面)
@@ -122,6 +129,7 @@ src/pages/Exercise/
 ```
 
 ### 文档
+
 ```
 docs/
 ├── ExerciseSystem.md         (系统文档)
@@ -137,11 +145,11 @@ import { useExercise } from '@hooks/useExercise';
 import { ExerciseComponent, ExerciseFeedback } from '@components/Exercises';
 
 function ExercisePage() {
-  const { 
-    exercise, 
-    userAnswer, 
+  const {
+    exercise,
+    userAnswer,
     validationResult,
-    setAnswer, 
+    setAnswer,
     submitAnswer,
     hints,
     requestHint,
@@ -155,16 +163,16 @@ function ExercisePage() {
         userAnswer={userAnswer}
         onAnswer={setAnswer}
       />
-      
+
       <HintPanel
         hints={hints}
         onRequestHint={requestHint}
       />
-      
+
       {validationResult && (
         <ExerciseFeedback result={validationResult} />
       )}
-      
+
       <button onClick={submitAnswer}>提交答案</button>
     </div>
   );
@@ -183,8 +191,8 @@ function MistakeBookPage() {
   return (
     <div>
       <MistakeOverview {...overview} />
-      <MistakeBook 
-        mistakes={mistakes} 
+      <MistakeBook
+        mistakes={mistakes}
         onReview={(mistake) => {
           // 开始复习
         }}
@@ -197,6 +205,7 @@ function MistakeBookPage() {
 ## 示例数据
 
 提供了 6 道示例练习题，涵盖：
+
 1. 集合论 - 单选题（入门级）
 2. 微积分 - 计算题（进阶级）
 3. 极限理论 - 判断题（入门级）

@@ -29,6 +29,7 @@ npm install
 ```
 
 依赖已包含在 `package.json` 中：
+
 - `react-helmet-async`: 用于管理文档 head 中的 meta 标签
 
 ### 2. 在应用中添加 HelmetProvider
@@ -47,11 +48,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 ### 3. 使用社交组件
 
 ```tsx
-import { 
-  ShareButtons, 
-  OpenGraphMeta, 
+import {
+  ShareButtons,
+  OpenGraphMeta,
   SocialLogin,
-  useSocialMeta 
+  useSocialMeta
 } from './components/SocialFeatures';
 ```
 

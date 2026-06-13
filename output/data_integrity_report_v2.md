@@ -50,6 +50,7 @@ expected <block end>, but found '<scalar>'
   in "<unicode string>", line 8, column 18:
       last_updated: "2026-04-04"
                      ^
+
 - **k8s\02-configmap.yaml**: YAML解析错误: expected a single document in the stream
   in "<unicode string>", line 1, column 1:
     apiVersion: v1
@@ -57,7 +58,9 @@ expected <block end>, but found '<scalar>'
 but found another document
   in "<unicode string>", line 40, column 1:
     ---
+
     ^
+
 - **k8s\03-secret.yaml**: YAML解析错误: expected a single document in the stream
   in "<unicode string>", line 1, column 1:
     apiVersion: v1
@@ -65,7 +68,9 @@ but found another document
 but found another document
   in "<unicode string>", line 31, column 1:
     ---
+
     ^
+
 - **k8s\07-ingress.yaml**: YAML解析错误: expected a single document in the stream
   in "<unicode string>", line 1, column 1:
     apiVersion: networking.k8s.io/v1
@@ -73,6 +78,7 @@ but found another document
 but found another document
   in "<unicode string>", line 70, column 1:
     ---
+
     ^
 - **project\concept_prerequisites_probability_extension.yaml**: YAML解析错误: while parsing a block mapping
   in "<unicode string>", line 6, column 3:
@@ -269,20 +275,23 @@ expected <block end>, but found '<scalar>'
 ## 修复建议
 
 ### JSON格式错误
+
 1. 使用JSON验证器（如 jsonlint.com）检查文件
 2. 修复引号、逗号等语法问题
 
 ### YAML格式错误
+
 1. 检查缩进（使用空格而非Tab）
 2. 确保特殊字符正确转义
 3. 检查冒号后是否有空格
 
 ### 链接错误
+
 1. 更新失效的相对链接指向正确的文件路径
 2. 对于已删除的文件，移除相关链接
 3. 使用绝对路径 `/docs/...` 或正确的相对路径 `./file.md`
 
 ### 文件命名
+
 1. 文件名中的空格替换为中横线 `-` 或下划线 `_`
 2. 避免使用特殊字符
-

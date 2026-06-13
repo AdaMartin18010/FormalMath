@@ -16,6 +16,7 @@ processed_at: '2026-04-05'
 ### 1. 解谜游戏 (Puzzle Game)
 
 #### 支持的谜题类型
+
 - **数学谜题** (math_riddle) - 经典数学逻辑谜题
 - **证明构造** (proof_construct) - 拖拽式数学证明构建
 - **概念连线** (concept_match) - 概念与定义匹配
@@ -24,12 +25,14 @@ processed_at: '2026-04-05'
 - **逻辑推导** (logic_deduction) - 逻辑推理题
 
 #### 难度等级
+
 - 简单 (easy) - 基础概念题
 - 中等 (medium) - 需要一定数学基础
 - 困难 (hard) - 综合性难题
 - 专家 (expert) - 挑战性难题
 
 #### 核心组件
+
 - `PuzzleCard` - 谜题卡片展示
 - `PuzzleSolver` - 谜题解答界面
 - `usePuzzle` Hook - 谜题状态管理
@@ -37,12 +40,14 @@ processed_at: '2026-04-05'
 ### 2. 对战模式 (Battle Mode)
 
 #### 对战类型
+
 - **速度挑战** (speed_challenge) - 限时快速答题
 - **证明竞速** (proof_race) - 抢先完成数学证明
 - **知识问答** (quiz_duel) - 多轮知识PK
 - **团队对战** (team_battle) - 多人团队竞技
 
 #### 核心组件
+
 - `BattleLobby` - 对战大厅
 - `BattleArena` - 对战界面
 - `useBattle` Hook - 对战状态管理
@@ -50,11 +55,13 @@ processed_at: '2026-04-05'
 ### 3. 探索模式 (Exploration Mode)
 
 #### 探索内容
+
 - **数学世界** - 主题化数学领域探索
 - **历史时间线** - 数学发展史时间旅行
 - **概念收集** - 收集解锁数学概念卡片
 
 #### 核心组件
+
 - `WorldMap` - 世界地图
 - `Timeline` - 历史时间线
 - `Collection` - 概念收集册
@@ -63,6 +70,7 @@ processed_at: '2026-04-05'
 ### 4. 成就系统 (Achievement System)
 
 #### 徽章系统
+
 - 学习成就 - 学习里程碑
 - 解谜成就 - 解谜相关成就
 - 对战成就 - 对战相关成就
@@ -71,22 +79,26 @@ processed_at: '2026-04-05'
 - 特殊成就 - 限时/隐藏成就
 
 #### 技能树
+
 - 逻辑推理分支
 - 收集专家分支
 - 快速计算分支
 - 证明大师分支
 
 #### 等级系统
+
 - 1-100级进阶
 - 经验值积累
 - 等级特权解锁
 
 #### 排行榜
+
 - 全球排行榜
 - 周榜/日榜
 - 好友排行榜
 
 #### 核心组件
+
 - `BadgeDisplay` - 徽章展示
 - `SkillTree` - 技能树界面
 - `Leaderboard` - 排行榜
@@ -95,6 +107,7 @@ processed_at: '2026-04-05'
 ### 5. 虚拟导师 (Virtual Tutor)
 
 #### 导师性格
+
 - 鼓励型 (encouraging) - 积极鼓励学习
 - 严格型 (strict) - 严格要求标准
 - 友好型 (friendly) - 亲切友好互动
@@ -102,6 +115,7 @@ processed_at: '2026-04-05'
 - 神秘型 (mysterious) - 引导式启发
 
 #### 指导类型
+
 - 提示 (hint) - 解题提示
 - 解释 (explanation) - 概念解释
 - 反馈 (feedback) - 答题反馈
@@ -109,6 +123,7 @@ processed_at: '2026-04-05'
 - 挑战 (challenge) - 额外挑战
 
 #### 核心组件
+
 - `TutorWidget` - 导师悬浮窗
 - `TutorChat` - 对话界面
 - `useTutor` Hook - 导师状态管理
@@ -116,6 +131,7 @@ processed_at: '2026-04-05'
 ## 技术架构
 
 ### 状态管理
+
 ```typescript
 // 使用 Zustand 进行全局状态管理
 useGameStore
@@ -126,6 +142,7 @@ useGameStore
 ```
 
 ### 自定义 Hooks
+
 ```typescript
 usePuzzle          // 解谜游戏逻辑
 useBattle          // 对战模式逻辑
@@ -135,6 +152,7 @@ useTutor           // 虚拟导师逻辑
 ```
 
 ### 服务层
+
 ```typescript
 gameService
   ├── Puzzle Service      // 谜题相关API
@@ -153,7 +171,7 @@ import { useGameStore } from './stores/gameStore';
 
 function App() {
   const initialize = useGameStore(state => state.initialize);
-  
+
   useEffect(() => {
     initialize();
   }, []);
@@ -166,12 +184,12 @@ function App() {
 import { usePuzzle } from './hooks/game';
 
 function PuzzlePage() {
-  const { 
-    puzzles, 
-    startPuzzle, 
+  const {
+    puzzles,
+    startPuzzle,
     submitAnswer,
     timeSpent,
-    hintsUsed 
+    hintsUsed
   } = usePuzzle();
 
   return (
@@ -186,11 +204,11 @@ function PuzzlePage() {
 import { useBattle } from './hooks/game';
 
 function BattlePage() {
-  const { 
-    createBattle, 
+  const {
+    createBattle,
     joinBattle,
     submitAnswer,
-    battle 
+    battle
   } = useBattle();
 
   return (
@@ -205,11 +223,11 @@ function BattlePage() {
 import { useAchievements } from './hooks/game';
 
 function AchievementPage() {
-  const { 
-    level, 
-    badges, 
+  const {
+    level,
+    badges,
     skillTree,
-    unlockSkill 
+    unlockSkill
   } = useAchievements();
 
   return (
@@ -224,10 +242,10 @@ function AchievementPage() {
 import { useTutor } from './hooks/game';
 
 function GamePage() {
-  const { 
-    isEnabled, 
+  const {
+    isEnabled,
     getHint,
-    getMotivation 
+    getMotivation
   } = useTutor();
 
   return (
@@ -239,21 +257,25 @@ function GamePage() {
 ## 奖励系统
 
 ### 经验值 (XP)
+
 - 解谜成功：基础难度分数
 - 时间奖励：快速解答额外经验
 - 连胜奖励：连续正确经验加成
 
 ### 金币 (Coins)
+
 - 完成谜题奖励
 - 成就解锁奖励
 - 每日登录奖励
 
 ### 徽章 (Badges)
+
 - 里程碑徽章
 - 难度徽章
 - 特殊事件徽章
 
 ### 收集品 (Collection)
+
 - 概念卡片
 - 数学家卡片
 - 定理卡片

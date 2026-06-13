@@ -33,6 +33,7 @@ msc_secondary:
 ### 内容质量
 
 所有15个文档均包含：
+
 - ✅ 定理陈述（完整数学表述）
 - ✅ 证明过程（详细推导）
 - ✅ 示例说明（具体数值/情境）
@@ -51,7 +52,7 @@ msc_secondary:
 | \core.py\ | 15,448 B | 核心引擎（量词/逻辑/集合/函数翻译） |
 | \cli.py\ | 2,992 B | 命令行接口 |
 | \ormalize.py\ | 4,898 B | 批处理形式化 |
-| \	est.py\ | 6,569 B | 单元测试 |
+| \  est.py\ | 6,569 B | 单元测试 |
 | \examples.md\ | 4,044 B | 10个跨领域示例 |
 | \demo_input.md\ | 248 B | 演示输入 |
 | \demo_output.md\ | 363 B | 演示输出 |
@@ -77,7 +78,7 @@ python -c "from core import formalize; print(formalize('你的数学陈述'))"
 
 ## 新增支持材料
 
-- \	ools/generate_project_report.py\ — 项目统计报告生成器
+- \  ools/generate_project_report.py\ — 项目统计报告生成器
 - \project/00-项目路线图-2026.md\ — 2026年季度路线图
 - \ACKNOWLEDGMENTS.md\ — 贡献者致谢
 

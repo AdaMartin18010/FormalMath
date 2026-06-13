@@ -401,6 +401,7 @@ MIT License - See LICENSE for details.
 ---
 
 **Full Changelog**: CHANGELOG.md
+
 ```
 
 ---
@@ -408,11 +409,14 @@ MIT License - See LICENSE for details.
 ## 📧 邮件签名档
 
 ```
+
 ---
+
 🎓 FormalMath - 数学形式化与数学家理念体系的综合性教育知识库
 📚 6,573+篇文档 | 🎓 121+门课程 | 👤 62位数学家 | 💻 20个Lean4定理
 🌐 [网站] | 💻 [GitHub] | 📖 [文档]
 ---
+
 ```
 
 ---
@@ -442,5 +446,5 @@ MIT License - See LICENSE for details.
 
 ---
 
-*社交媒体内容版本: v1.0*  
+*社交媒体内容版本: v1.0*
 *更新日期: 2026年4月4日*

@@ -632,6 +632,7 @@ processed_at: '2026-04-05'
 ## 备份文件
 
 所有被修改的文件都有 `.backup` 备份。如需恢复，请运行：
+
 ```powershell
 Get-ChildItem -Recurse -Filter '*.backup' | ForEach-Object { Move-Item $_.FullName ($_.FullName -replace '\.backup$', '') -Force }
 ```

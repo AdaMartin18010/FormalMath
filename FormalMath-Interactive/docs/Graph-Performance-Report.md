@@ -25,6 +25,7 @@ processed_at: '2026-04-05'
 **问题**: 当节点数量超过 500 时，DOM 元素过多导致渲染性能急剧下降。
 
 **解决方案**:
+
 - 只渲染可见区域内的节点
 - 基于节点重要性优先级排序
 - 选中节点及其邻居优先显示
@@ -49,6 +50,7 @@ const sortedNodes = nodes.sort((a, b) => {
 **问题**: 鼠标交互事件触发频繁的重渲染，导致卡顿。
 
 **解决方案**:
+
 - 使用 `requestAnimationFrame` 节流
 - 防抖处理缩放事件
 - 批量处理节点更新
@@ -72,11 +74,13 @@ const debouncedZoom = useDebounce((transform: d3.ZoomTransform) => {
 **问题**: 固定的物理参数无法适应不同规模的图谱。
 
 **解决方案**:
+
 - 实时可调节的参数面板
 - 自适应参数调整
 - 记忆用户偏好设置
 
 **可调参数**:
+
 | 参数 | 范围 | 默认值 | 说明 |
 |------|------|--------|------|
 | 连接距离 | 50-300px | 120px | 节点间理想距离 |
@@ -90,6 +94,7 @@ const debouncedZoom = useDebounce((transform: d3.ZoomTransform) => {
 **问题**: 大量节点堆叠在一起，难以识别模式和结构。
 
 **解决方案**:
+
 - 按节点类型自动聚类
 - 显示聚类边界和标签
 - 半透明聚类背景
@@ -104,7 +109,7 @@ const clusters = useMemo(() => {
     }
     clusterMap.get(node.type)!.push(node);
   });
-  
+
   return Array.from(clusterMap.entries()).map(([type, nodes]) => ({
     type,
     nodes,
@@ -121,11 +126,13 @@ const clusters = useMemo(() => {
 **问题**: 用户难以在大量节点中找到目标。
 
 **解决方案**:
+
 - 多维度筛选面板
 - 实时搜索高亮
 - 重要性阈值滑块
 
 **筛选维度**:
+
 - 节点类型 (概念、定理、证明等)
 - 关键词搜索 (标签、描述)
 - 重要性范围 (0-1)
@@ -134,6 +141,7 @@ const clusters = useMemo(() => {
 ### 6. 视觉设计优化
 
 **优化内容**:
+
 - 现代 UI 组件 (毛玻璃效果、阴影)
 - 自适应节点标签显示 (根据缩放级别)
 - 选中节点发光效果
@@ -143,6 +151,7 @@ const clusters = useMemo(() => {
 ### 7. FPS 监控和自适应降级
 
 **实现**:
+
 ```typescript
 const fps = useFPSMonitor(true);
 
@@ -161,6 +170,7 @@ useEffect(() => {
 ## 性能测试结果
 
 ### 测试环境
+
 - **浏览器**: Chrome 120
 - **CPU**: Intel Core i7-12700K
 - **内存**: 32 GB
@@ -196,7 +206,7 @@ import { EnhancedD3Graph } from '@visualizations';
 
 function MyGraph() {
   const data = { nodes, edges };
-  
+
   return (
     <EnhancedD3Graph
       data={data}

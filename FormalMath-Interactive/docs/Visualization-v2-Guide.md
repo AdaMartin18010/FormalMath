@@ -341,21 +341,21 @@ npm install d3 framer-motion lucide-react
 
 ```tsx
 // 导入所有组件
-import { 
-  ConceptTimeline, 
-  GraphComparison, 
-  PathAnimation, 
-  ProofTreeViz, 
-  AssociationHeatmap 
+import {
+  ConceptTimeline,
+  GraphComparison,
+  PathAnimation,
+  ProofTreeViz,
+  AssociationHeatmap
 } from '@visualizations';
 
 // 导入类型
-import type { 
-  TimelineEvent, 
+import type {
+  TimelineEvent,
   ConceptStage,
   PathNode,
   ProofNode,
-  AssociationData 
+  AssociationData
 } from '@visualizations';
 ```
 
@@ -366,29 +366,29 @@ function App() {
   return (
     <div className="p-8">
       <h1>知识图谱可视化</h1>
-      
-      <ConceptTimeline 
-        events={events} 
-        width={1000} 
-        height={500} 
+
+      <ConceptTimeline
+        events={events}
+        width={1000}
+        height={500}
       />
-      
-      <GraphComparison 
-        graphA={graphA} 
-        graphB={graphB} 
+
+      <GraphComparison
+        graphA={graphA}
+        graphB={graphB}
       />
-      
-      <PathAnimation 
-        nodes={nodes} 
-        connections={connections} 
+
+      <PathAnimation
+        nodes={nodes}
+        connections={connections}
       />
-      
-      <ProofTreeViz 
-        root={proofRoot} 
+
+      <ProofTreeViz
+        root={proofRoot}
       />
-      
-      <AssociationHeatmap 
-        data={associationData} 
+
+      <AssociationHeatmap
+        data={associationData}
       />
     </div>
   );
@@ -468,7 +468,7 @@ const ResponsiveVisualization = () => {
 npm run dev
 
 # 访问示例页面
-open 
+open
 ```
 
 ---

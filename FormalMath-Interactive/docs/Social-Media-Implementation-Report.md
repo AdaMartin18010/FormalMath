@@ -16,6 +16,7 @@ processed_at: '2026-04-05'
 ### 1. 新增组件
 
 #### 分享组件
+
 | 组件 | 文件 | 功能描述 |
 |------|------|----------|
 | `ShareButtons` | `ShareButtons.tsx` | 多平台分享按钮组，支持 Twitter/Facebook/LinkedIn/微博等 |
@@ -24,6 +25,7 @@ processed_at: '2026-04-05'
 | `SocialShare` | `SocialShare.tsx` | 分享弹窗，支持二维码和嵌入代码 |
 
 #### 元数据组件
+
 | 组件 | 文件 | 功能描述 |
 |------|------|----------|
 | `OpenGraphMeta` | `OpenGraphMeta.tsx` | Open Graph / Twitter Cards 元数据管理 |
@@ -31,12 +33,14 @@ processed_at: '2026-04-05'
 | `useShareCount` | `useShareMeta.ts` | 分享计数 Hook，获取各平台分享数据 |
 
 #### 登录组件
+
 | 组件 | 文件 | 功能描述 |
 |------|------|----------|
 | `SocialLogin` | `SocialLogin.tsx` | 社交账号登录，支持 7 种登录方式 |
 | `SocialLink` | `SocialLogin.tsx` | 社交账号绑定管理 |
 
 #### 嵌入组件
+
 | 组件 | 文件 | 功能描述 |
 |------|------|----------|
 | `ContentEmbed` | `ContentEmbed.tsx` | 内容嵌入配置器，生成 iframe/oEmbed 代码 |
@@ -45,6 +49,7 @@ processed_at: '2026-04-05'
 ### 2. 支持的平台
 
 #### 社交平台分享
+
 - Twitter / X
 - Facebook
 - LinkedIn
@@ -57,6 +62,7 @@ processed_at: '2026-04-05'
 - Email
 
 #### 社交登录
+
 - GitHub
 - Google
 - Twitter / X
@@ -89,6 +95,7 @@ FormalMath-Interactive/
 ### 4. 依赖变更
 
 在 `package.json` 中添加：
+
 ```json
 "react-helmet-async": "^2.0.4"
 ```
@@ -96,6 +103,7 @@ FormalMath-Interactive/
 ### 5. 代码变更
 
 #### App.tsx
+
 ```diff
 + import { HelmetProvider } from 'react-helmet-async';
 
@@ -111,6 +119,7 @@ FormalMath-Interactive/
 ### 6. 使用示例
 
 #### 基础分享
+
 ```tsx
 import { ShareButtons } from './components/SocialFeatures';
 
@@ -124,6 +133,7 @@ import { ShareButtons } from './components/SocialFeatures';
 ```
 
 #### Open Graph 元数据
+
 ```tsx
 import { OpenGraphMeta } from './components/SocialFeatures';
 
@@ -138,6 +148,7 @@ import { OpenGraphMeta } from './components/SocialFeatures';
 ```
 
 #### 社交登录
+
 ```tsx
 import { SocialLogin } from './components/SocialFeatures';
 
@@ -149,6 +160,7 @@ import { SocialLogin } from './components/SocialFeatures';
 ```
 
 #### 内容嵌入
+
 ```tsx
 import { ContentEmbed } from './components/SocialFeatures';
 

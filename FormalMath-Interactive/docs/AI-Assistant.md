@@ -107,8 +107,8 @@ function KnowledgeGraphPage() {
   return (
     <div>
       {/* 页面内容 */}
-      <ChatInterface 
-        position="right" 
+      <ChatInterface
+        position="right"
         context={context}
         onMessageSend={(msg) => console.log('发送:', msg)}
       />
@@ -170,7 +170,7 @@ function MyComponent() {
 
 ```typescript
 interface PageContext {
-  pageType: 'knowledge-graph' | 'reasoning-tree' | 'mind-map' | 
+  pageType: 'knowledge-graph' | 'reasoning-tree' | 'mind-map' |
             'comparison' | 'decision-tree' | 'evolution' | 'general';
   currentConcept?: string;           // 当前概念
   selectedFormulas?: string[];       // 选中的公式
@@ -336,6 +336,7 @@ AI助手期望后端API遵循以下规范：
 ### POST /api/ai/chat
 
 请求体：
+
 ```json
 {
   "message": "用户消息",
@@ -349,6 +350,7 @@ AI助手期望后端API遵循以下规范：
 ```
 
 响应：
+
 ```json
 {
   "message": "AI回复",
@@ -371,6 +373,7 @@ AI助手期望后端API遵循以下规范：
 ### POST /api/ai/chat/stream
 
 SSE流式响应：
+
 ```
 data: {"content": "部分", "messageId": "msg-1"}
 
@@ -406,6 +409,7 @@ data: [DONE]
 ### 公式不渲染
 
 检查是否正确引入了KaTeX CSS：
+
 ```tsx
 import 'katex/dist/katex.min.css';
 ```
@@ -413,6 +417,7 @@ import 'katex/dist/katex.min.css';
 ### 代码不高亮
 
 确保安装了react-syntax-highlighter：
+
 ```bash
 npm install react-syntax-highlighter
 ```
@@ -420,6 +425,7 @@ npm install react-syntax-highlighter
 ### 流式响应不工作
 
 检查后端是否正确实现了SSE接口，响应头应包含：
+
 ```
 Content-Type: text/event-stream
 ```

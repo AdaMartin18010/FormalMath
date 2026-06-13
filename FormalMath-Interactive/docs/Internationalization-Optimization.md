@@ -21,12 +21,13 @@ processed_at: '2026-04-05'
 ### 核心功能
 
 #### useRTL Hook
+
 ```typescript
 import { useRTL } from '@hooks/a11y';
 
 function Component() {
   const { isRTL, direction, mirrorClass, flipClass } = useRTL();
-  
+
   return (
     <div className={mirrorClass}>
       <Icon className={flipClass} />
@@ -36,12 +37,14 @@ function Component() {
 ```
 
 #### RTL样式类
+
 - `.rtl-flip` - 水平翻转元素
 - `.rtl-rotate-arrow-right` - 旋转箭头方向
 - `.rtl-ms-*` / `.rtl-me-*` - 逻辑边距
 - `.rtl-ps-*` / `.rtl-pe-*` - 逻辑内边距
 
 ### 文件结构
+
 ```
 src/
 ├── styles/
@@ -60,6 +63,7 @@ src/
 ### CulturalProvider
 
 提供文化上下文，包括：
+
 - 文化区域检测（东亚、中东、西方）
 - 紧凑模式（东亚语言）
 - 数字格式（西方、阿拉伯-印度、东方阿拉伯）
@@ -90,6 +94,7 @@ function App() {
 ### A级要求
 
 #### 1. 键盘导航
+
 ```typescript
 import { useFocusTrap, useFocusManager } from '@hooks/a11y';
 
@@ -99,12 +104,13 @@ function Modal({ onClose }) {
     enabled: true,
     onEscape: onClose,
   });
-  
+
   return <div ref={containerRef}>...</div>;
 }
 ```
 
 #### 2. 跳过链接
+
 ```tsx
 import { SkipLink } from '@components/Accessibility';
 
@@ -115,12 +121,13 @@ import { SkipLink } from '@components/Accessibility';
 ```
 
 #### 3. 屏幕阅读器通知
+
 ```typescript
 import { useAnnounce } from '@hooks/a11y';
 
 function Component() {
   const { announce, announceSuccess, announceError } = useAnnounce();
-  
+
   const handleAction = async () => {
     announceLoading('保存中...');
     try {
@@ -136,6 +143,7 @@ function Component() {
 ### AA级要求
 
 #### 1. 焦点可见性
+
 ```css
 /* 键盘导航的焦点样式 */
 *:focus-visible {
@@ -145,12 +153,13 @@ function Component() {
 ```
 
 #### 2. 减少动画
+
 ```typescript
 import { useReducedMotion } from '@hooks/a11y';
 
 function AnimatedComponent() {
   const prefersReducedMotion = useReducedMotion();
-  
+
   return (
     <motion.div
       animate={prefersReducedMotion ? {} : { opacity: 1 }}
@@ -160,6 +169,7 @@ function AnimatedComponent() {
 ```
 
 #### 3. 高对比度模式
+
 ```tsx
 import { HighContrastProvider, HighContrastToggle } from '@components/Accessibility';
 
@@ -171,10 +181,12 @@ import { HighContrastProvider, HighContrastToggle } from '@components/Accessibil
 ### AAA级要求
 
 #### 1. 增强对比度
+
 - 文本对比度：7:1
 - 大文本对比度：4.5:1
 
 #### 2. 键盘无陷阱
+
 - 所有功能可通过键盘访问
 - 焦点顺序逻辑合理
 
@@ -227,16 +239,16 @@ import { calculateVirtualRange } from '@utils/performance';
 
 function VirtualList({ items, itemHeight, containerHeight }) {
   const [scrollTop, setScrollTop] = useState(0);
-  
-  const { startIndex, endIndex, startOffset, totalHeight } = 
+
+  const { startIndex, endIndex, startOffset, totalHeight } =
     calculateVirtualRange(scrollTop, items.length, {
       itemHeight,
       containerHeight,
       overscan: 3,
     });
-  
+
   const visibleItems = items.slice(startIndex, endIndex + 1);
-  
+
   return (
     <div style={{ height: containerHeight, overflow: 'auto' }}>
       <div style={{ height: totalHeight }}>
@@ -258,11 +270,11 @@ import { useABTest } from '@utils/ab-testing';
 
 function Homepage() {
   const { variant, config, track, isControl } = useABTest('homepage_layout');
-  
+
   useEffect(() => {
     track('view');
   }, []);
-  
+
   return (
     <div>
       {variant === 'variant_a' && <CardLayout onClick={() => track('click')} />}
@@ -283,7 +295,7 @@ function Button({ children }) {
     variant_green: GreenButton,
     variant_red: RedButton,
   });
-  
+
   return <Component onClick={() => track('click')}>{children}</Component>;
 }
 ```
@@ -358,6 +370,7 @@ function App() {
 ## 8. 测试清单
 
 ### RTL测试
+
 - [ ] 阿拉伯语文本正确显示为RTL
 - [ ] 希伯来语文本正确显示为RTL
 - [ ] 图标在RTL模式下正确翻转
@@ -365,6 +378,7 @@ function App() {
 - [ ] 布局在LTR和RTL间正确切换
 
 ### 无障碍测试
+
 - [ ] 所有功能可通过键盘访问
 - [ ] 焦点顺序逻辑合理
 - [ ] 焦点样式清晰可见
@@ -373,12 +387,14 @@ function App() {
 - [ ] 减少动画偏好被尊重
 
 ### 性能测试
+
 - [ ] 组件懒加载正常工作
 - [ ] 缓存命中率高
 - [ ] 虚拟列表滚动流畅
 - [ ] 首屏加载时间 < 3秒
 
 ### A/B测试
+
 - [ ] 用户正确分配到变体
 - [ ] 事件正确追踪
 - [ ] 实验配置可动态更新

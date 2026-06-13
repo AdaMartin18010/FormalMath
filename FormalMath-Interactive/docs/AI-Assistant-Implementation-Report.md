@@ -46,6 +46,7 @@ processed_at: '2026-04-05'
 | `index.ts` | 服务导出 | 导出AIService和相关函数 |
 
 **核心功能：**
+
 - 发送消息并获取响应
 - 流式响应处理（Server-Sent Events）
 - 对话历史管理
@@ -63,6 +64,7 @@ processed_at: '2026-04-05'
 | `index.ts` | 更新导出所有AI助手类型 |
 
 **核心类型：**
+
 - `ChatMessage` - 聊天消息
 - `ChatSession` - 对话会话
 - `PageContext` - 页面上下文
@@ -81,6 +83,7 @@ processed_at: '2026-04-05'
 | `index.ts` | 更新导出Hook |
 
 **Hook功能：**
+
 - 状态管理（会话、消息、加载状态）
 - 发送消息（流式/非流式）
 - 会话管理（创建、选择、删除）
@@ -92,6 +95,7 @@ processed_at: '2026-04-05'
 ### 5. 主应用集成 (`src/App.tsx`)
 
 更新App.tsx，在所有页面布局中集成ChatInterface组件：
+
 - SimpleLayout - 普通页面（首页、404）
 - VisualizationLayout - 可视化页面（知识图谱、推理树等）
 
@@ -106,6 +110,7 @@ processed_at: '2026-04-05'
 ### 7. 依赖更新 (`package.json`)
 
 新增依赖：
+
 ```json
 {
   "react-markdown": "^9.0.1",
@@ -117,6 +122,7 @@ processed_at: '2026-04-05'
 ```
 
 开发依赖：
+
 ```json
 {
   "@types/react-syntax-highlighter": "^15.5.0"
@@ -260,6 +266,7 @@ const context: PageContext = {
 ### POST /api/ai/chat
 
 请求体：
+
 ```json
 {
   "message": "用户消息",
@@ -275,6 +282,7 @@ const context: PageContext = {
 ### POST /api/ai/chat/stream
 
 SSE流式响应：
+
 ```
 data: {"content": "部分", "messageId": "msg-1"}
 data: {"content": "回复", "messageId": "msg-1"}
@@ -296,6 +304,7 @@ data: [DONE]
 ## 总结
 
 本次任务完成了FormalMath-Interactive项目的AI智能助手集成，包括：
+
 - 完整的React组件实现
 - 服务层和Hook封装
 - 类型定义和文档

@@ -90,7 +90,7 @@ src/
 
 ```typescript
 // 练习题型
-ExerciseType = 'single_choice' | 'multiple_choice' | 'fill_blank' 
+ExerciseType = 'single_choice' | 'multiple_choice' | 'fill_blank'
              | 'calculation' | 'proof' | 'matching' | 'ordering' | 'true_false'
 
 // 难度等级
@@ -148,12 +148,12 @@ import { useExercise } from '@hooks/useExercise';
 import { ExerciseComponent, ExerciseFeedback } from '@components/Exercises';
 
 function ExercisePage() {
-  const { 
-    exercise, 
-    userAnswer, 
+  const {
+    exercise,
+    userAnswer,
     validationResult,
-    setAnswer, 
-    submitAnswer 
+    setAnswer,
+    submitAnswer
   } = useExercise({ userId: 'user-1' });
 
   return (
@@ -185,8 +185,8 @@ function MistakeBookPage() {
   return (
     <div>
       <MistakeOverview {...overview} />
-      <MistakeBook 
-        mistakes={mistakes} 
+      <MistakeBook
+        mistakes={mistakes}
         onReview={(mistake) => {
           // 导航到练习页面复习
         }}

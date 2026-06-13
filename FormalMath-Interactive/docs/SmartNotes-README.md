@@ -14,6 +14,7 @@ processed_at: '2026-04-05'
 ## 功能特性
 
 ### 1. 富文本编辑器 (NoteEditor)
+
 - 支持 Markdown 语法
 - 实时预览和分屏编辑
 - 自动保存功能
@@ -26,6 +27,7 @@ import { NoteEditor } from './components/Notes';
 ```
 
 ### 2. LaTeX公式编辑 (LaTeXToolbar)
+
 - 丰富的数学符号库
 - 常用公式快捷插入
 - 分类浏览（基础、运算符、微积分、希腊字母等）
@@ -34,12 +36,13 @@ import { NoteEditor } from './components/Notes';
 ```tsx
 import { LaTeXToolbar } from './components/Notes';
 
-<LaTeXToolbar 
-  onInsert={(latex) => console.log(latex)} 
+<LaTeXToolbar
+  onInsert={(latex) => console.log(latex)}
 />
 ```
 
 ### 3. 笔记模板系统 (NoteTemplates)
+
 - 7种预设模板：
   - 空白笔记
   - 数学概念
@@ -62,6 +65,7 @@ import { NoteTemplates, defaultTemplates } from './components/Notes';
 ```
 
 ### 4. 笔记搜索功能 (NoteSearch)
+
 - 全文搜索支持
 - 高级筛选（类型、标签、状态、日期）
 - 模糊匹配和高亮显示
@@ -70,12 +74,13 @@ import { NoteTemplates, defaultTemplates } from './components/Notes';
 ```tsx
 import { NoteSearch } from './components/Notes';
 
-<NoteSearch 
-  onSearch={(results) => console.log(results)} 
+<NoteSearch
+  onSearch={(results) => console.log(results)}
 />
 ```
 
 ### 5. AI笔记助手 (NoteAIAssistant)
+
 - 智能总结：自动生成笔记摘要
 - 深度解释：解释选中的内容
 - 内容扩展：丰富和扩展笔记
@@ -90,6 +95,7 @@ import { NoteAIAssistant } from './components/Notes';
 ```
 
 ### 6. 笔记管理界面 (NotesPage)
+
 - 三栏布局：侧边栏、笔记列表、编辑器
 - 多种视图模式：列表、网格、分屏
 - 文件夹和标签管理
@@ -108,16 +114,17 @@ import { NotesPage } from './components/Notes';
 ```tsx
 import { useNoteStore } from './stores/noteStore';
 
-const { 
-  notes, 
-  editor, 
-  addNote, 
+const {
+  notes,
+  editor,
+  addNote,
   updateNote,
-  selectNote 
+  selectNote
 } = useNoteStore();
 ```
 
 ### 主要状态
+
 - `notes`: 笔记列表
 - `folders`: 文件夹列表
 - `tags`: 标签列表
@@ -139,6 +146,7 @@ import {
 ```
 
 ### 主要API
+
 - `fetchNotes()`: 获取笔记列表
 - `createNote(data)`: 创建新笔记
 - `updateNote(id, updates)`: 更新笔记
@@ -149,10 +157,10 @@ import {
 ## 类型定义
 
 ```tsx
-import type { 
-  Note, 
-  NoteType, 
-  NoteStatus, 
+import type {
+  Note,
+  NoteType,
+  NoteStatus,
   NoteTag,
   NoteFolder,
   NoteTemplate,
@@ -164,6 +172,7 @@ import type {
 ## 使用示例
 
 ### 基础使用
+
 ```tsx
 import { BasicExample } from './components/Notes/examples';
 
@@ -173,6 +182,7 @@ function App() {
 ```
 
 ### 仅编辑器
+
 ```tsx
 import { EditorOnlyExample } from './components/Notes/examples';
 
@@ -182,6 +192,7 @@ function App() {
 ```
 
 ### LaTeX公式编辑
+
 ```tsx
 import { LaTeXExample } from './components/Notes/examples';
 
@@ -191,6 +202,7 @@ function App() {
 ```
 
 ### AI助手
+
 ```tsx
 import { AIAssistantExample } from './components/Notes/examples';
 
@@ -200,6 +212,7 @@ function App() {
 ```
 
 ### 完整功能
+
 ```tsx
 import { FullFeatureExample } from './components/Notes/examples';
 
