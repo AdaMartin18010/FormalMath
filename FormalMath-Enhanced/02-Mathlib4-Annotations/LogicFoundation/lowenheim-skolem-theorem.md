@@ -63,12 +63,14 @@ Löwenheim-Skolem 定理告诉我们：**一阶语言是“近视”的——它
 ## 证明思路
 
 **向下 L-S 定理**：
+
 1. **Skolem 函数**：对每个存在公式 $\exists x \phi(x, \bar{y})$，添加一个 Skolem 函数 $f_\phi(\bar{y})$，使得若 $M \vDash \exists x \phi(x, \bar{a})$，则 $M \vDash \phi(f_\phi(\bar{a}), \bar{a})$
 2. **封闭集合**：取包含 $A$ 的最小 Skolem 封闭子集 $N \subseteq M$
 3. **Tarski-Vaught 判别法**：证明 $N$ 满足 Tarski-Vaught 条件，从而 $N \prec M$
 4. **基数控制**：由于 Skolem 函数的数量不超过 $\max(|L|, |A|)$，闭包的大小也不超过此基数
 
 **向上 L-S 定理**：
+
 1. **添加常元**：对目标基数 $\kappa$，向语言中添加 $\kappa$ 个新常元符号 $\{c_\alpha : \alpha < \kappa\}$
 2. **分离公理**：构造理论 $T' = T \cup \{c_\alpha \neq c_\beta : \alpha \neq \beta\}$
 3. **紧致性定理**：由紧致性定理，$T'$ 有模型（因为任何有限子集只涉及有限多个不同常元）

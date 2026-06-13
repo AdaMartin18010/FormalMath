@@ -26,7 +26,7 @@ theorem svd (A : Matrix m n 𝕜) :
   -- SVD 的存在性
   sorry
 
-/-- 紧 SVD（仅非零奇异值）-/ 
+/-- 紧 SVD（仅非零奇异值）-/
 theorem compactSVD {r : ℕ} (hr : A.rank = r) :
     ∃ (U : Matrix m (Fin r) 𝕜) (S : Matrix (Fin r) (Fin r) ℝ)
       (V : Matrix n (Fin r) 𝕜),

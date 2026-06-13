@@ -46,6 +46,7 @@ $$\omega = \sum_{1 \leq i_1 < \cdots < i_k \leq n} f_{i_1 \cdots i_k}(x) \, dx_{
 其中 $f_{i_1 \cdots i_k}$ 是光滑函数。
 
 **定义（外微分）**：外微分 $d: \Omega^k(M) \to \Omega^{k+1}(M)$ 由以下性质唯一确定：
+
 1. $d(f) = df$ 对 $0$-形式（函数）成立；
 2. $d(\omega \wedge \eta) = d\omega \wedge \eta + (-1)^k \omega \wedge d\eta$（Leibniz法则）；
 3. $d^2 = 0$（即 $d(d\omega) = 0$ 对所有 $\omega$）。

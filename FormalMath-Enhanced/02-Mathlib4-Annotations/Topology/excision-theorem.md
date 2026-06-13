@@ -96,6 +96,7 @@ $$0 \to C_*(A) \to C_*(X) \to C_*(X, A) \to 0$$
 $$0 \to C_*^{\mathcal{U}}(A) \to C_*^{\mathcal{U}}(X) \to C_*^{\mathcal{U}}(X, A) \to 0$$
 
 注意到：
+
 - 完全落在 $\text{int}(A)$ 中的单形在商 $C_*^{\mathcal{U}}(X, A)$ 中为零；
 - 完全落在 $X \setminus \overline{U}$ 中的单形自然对应于 $C_*(X \setminus U, A \setminus U)$ 中的元素。
 
