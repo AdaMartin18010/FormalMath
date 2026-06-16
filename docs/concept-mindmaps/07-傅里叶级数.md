@@ -9,6 +9,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Series_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BA%A7%E6%95%B0
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: wikidata

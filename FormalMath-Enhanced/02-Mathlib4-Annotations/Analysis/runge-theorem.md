@@ -99,7 +99,7 @@ Runge 定理要求 $f$ 在 $K$ 的邻域内全纯。Mergelyan 定理进一步证
 
 ### 在线资源
 
-- [Mathlib4 - Runge](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Runge.html)
+- [Mathlib4 - Runge](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

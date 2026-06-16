@@ -99,6 +99,7 @@ external_ids:
   stacks_tag:
     tag: 03QZ
     url: https://stacks.math.columbia.edu/tag/03QZ
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14F20
 ---
 # etale上同调 - 深度版
 

@@ -70,7 +70,7 @@ add_header Strict-Transport-Security "max-age=63072000; includeSubDomains; prelo
 # 生产环境推荐配置
 PRODUCTION_ORIGINS = [
     "https://formalmath.example.com[需更新]",
-    "https://app.formalmath.example.com[需更新]",
+    "#[需更新]",
 ]
 ALLOWED_METHODS = ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
 ALLOWED_HEADERS = [

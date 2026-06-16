@@ -11,6 +11,7 @@ course: MIT 18.100A 实分析
 external_ids:
   ocw_url: https://ocw.mit.edu/
   ocw_ps_url: https://ocw.mit.edu/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
 references:
   textbooks:
   - title: Understanding Analysis

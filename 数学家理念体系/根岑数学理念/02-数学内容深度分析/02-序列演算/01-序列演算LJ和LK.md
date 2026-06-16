@@ -1,10 +1,13 @@
 ---
 title: 序列演算LJ与LK
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A70
+- 01A60
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E5%BA%8F%E5%88%97%E6%BC%94%E7%AE%97LJ%E4%B8%8ELK
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E5%BA%8F%E5%88%97%E6%BC%94%E7%AE%97LJ%E4%B8%8ELK
 ---
 # 序列演算LJ与LK
 

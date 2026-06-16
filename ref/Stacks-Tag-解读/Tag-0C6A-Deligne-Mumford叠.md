@@ -9,6 +9,7 @@ external_ids:
     url: https://stacks.math.columbia.edu/tag/0C6A
   wikipedia_url: https://en.wikipedia.org/wiki/Pierre_Deligne
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

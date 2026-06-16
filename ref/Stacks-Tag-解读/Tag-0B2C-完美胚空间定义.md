@@ -39,6 +39,7 @@ external_ids:
   stacks_tag:
     tag: 0B2C
     url: https://stacks.math.columbia.edu/tag/0B2C
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Stacks Project Tag 0B2C - 完美胚空间定义
 

@@ -27,6 +27,9 @@ references:
     year: 2002
     isbn: '9780199202492'
     mr_number: MR1917232
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=02%2BEGA%E4%B8%8ESGA
+  nlab_search_url: https://ncatlab.org/nlab/search?query=02%2BEGA%E4%B8%8ESGA
 ---
 ﻿---
 title: EGA与SGA：格洛腾迪克的经典著作

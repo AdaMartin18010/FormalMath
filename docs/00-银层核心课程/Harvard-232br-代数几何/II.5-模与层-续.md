@@ -93,6 +93,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=sheaf
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Harvard 232br - Hartshorne Chapter II §5 习题解答（续）
 
@@ -412,3 +414,13 @@ theorem rank_constant_on_connectedComponents {X : Scheme}
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Harvard 232br 代数几何** 的以下内容：
+
+- [Harvard 232br - Hartshorne Chapter II §4 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/II.4-分离性与本征性.md)
+- [Harvard 232br - Hartshorne Chapter III §4 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/III.4-上同调计算与应用.md)
+- [Harvard 232br - Hartshorne Chapter III §4 习题解答](docs/13-代数几何/Harvard-232br-习题解答/III.4-上同调计算与应用.md)

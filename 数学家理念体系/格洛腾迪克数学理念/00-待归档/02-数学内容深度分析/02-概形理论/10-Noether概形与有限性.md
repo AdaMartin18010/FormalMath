@@ -15,7 +15,7 @@ external_ids:
     url: https://stacks.math.columbia.edu/tag/01OV
   stacks_tags: []
   zbmath_url: https://zbmath.org/?q=au:Scheme
-  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/
 references:
   databases:
   - id: stacks_project

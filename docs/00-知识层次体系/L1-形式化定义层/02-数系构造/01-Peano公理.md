@@ -42,6 +42,9 @@ references:
     isbn: '9780387902432'
     mr_number: MR0453490
     doi: 10.1007/978-1-4757-4385-2
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=03F30
 ---
 msc_primary: "03F30"
 msc_secondary: ["11B83", "97F40"]

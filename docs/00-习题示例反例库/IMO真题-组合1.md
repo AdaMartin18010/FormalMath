@@ -39,6 +39,8 @@ references:
     author: Leonhard Euler
     journal: Commentarii Academiae Scientiarum Imperialis Petropolitanae
     year: 1736
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # IMO 2002 Problem 3：组合数学
 

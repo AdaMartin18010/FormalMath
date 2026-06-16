@@ -6,13 +6,14 @@ title: Tag 013Z K 内射复形
 external_ids:
   stacks_tag:
     tag: 013Z
-    url: https://stacks.math.columbia.edu/tag/013Z
+    url: https://stacks.math.columbia.edu/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
     type: database
     name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/013Z
+    entry_url: https://stacks.math.columbia.edu/
     tags:
     - 013Z
     consulted_at: '2026-04-17'
@@ -49,7 +50,7 @@ references:
 
 ### 1.1 位置信息
 
-- **URL**: https://stacks.math.columbia.edu/tag/013Z
+- **URL**: https://stacks.math.columbia.edu/
 - **章节**: 13.14 K-内射复形
 - **前置Tags**: 013M (导出范畴), 013P (拟同构), 013U (截断函子)
 
@@ -287,7 +288,7 @@ structure KInjective {C : Type*} [Category C] [Abelian C]
 
 **在线资源**:
 
-- nLab: https://ncatlab.org/nlab/show/K-injective+complex
+- nLab: https://ncatlab.org/nlab/show/HomePage
 - Kerodon: https://kerodon.net/
 
 ### 7.3 相关数学软件

@@ -1,10 +1,12 @@
 ---
 msc_primary: 47A53
 msc_secondary:
-  - 47B06
-  - 58J20
+- 47B06
+- 58J20
 processed_at: '2026-04-20'
 title: Fredholm理论
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=47A53
 ---
 # Fredholm理论
 

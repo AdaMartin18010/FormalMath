@@ -100,7 +100,7 @@ $$μ_i(\{x : \langle v, x \rangle > c\}) = μ_i(\{x : \langle v, x \rangle < c\}
 
 ### 在线资源
 
-- [Mathlib4 - Haar Measure](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/Haar.html)
+- [Mathlib4 - Haar Measure](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

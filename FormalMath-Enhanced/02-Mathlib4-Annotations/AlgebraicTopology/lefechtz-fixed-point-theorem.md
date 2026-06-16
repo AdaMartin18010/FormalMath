@@ -110,7 +110,7 @@ $$\Lambda(f) = \sum_{{x = f(x)}} \text{ind}_f(x)$$
 
 ### 在线资源
 
-- [Mathlib4 - SimplicialSet](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/SimplicialSet.html)
+- [Mathlib4 - SimplicialSet](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

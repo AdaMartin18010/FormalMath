@@ -78,6 +78,8 @@ chapter: '5'
 external_ids:
   ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
   ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Harvard 232br — Hartshorne Chapter IV §5–§6 习题解答
 
@@ -879,3 +881,13 @@ theorem genus5_g13_empty (hg5 : g = 5) (hgen : IsGenericCurve X) :
 
 - [Ocw Url](https://www.math.harvard.edu/course/mathematics-232br/)
 - [Ocw Ps Url](https://people.math.harvard.edu/~landesman/notes.html)
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Harvard 232br 代数几何** 的以下内容：
+
+- [Harvard 232br - Hartshorne Chapter II §4 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/II.4-分离性与本征性.md)
+- [Harvard 232br - Hartshorne Chapter III §4 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/III.4-上同调计算与应用.md)
+- [Harvard 232br - Hartshorne Chapter III §4 习题解答](docs/13-代数几何/Harvard-232br-习题解答/III.4-上同调计算与应用.md)

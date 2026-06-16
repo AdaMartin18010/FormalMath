@@ -9,6 +9,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/module
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=module
+  mit_ocw_url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   textbooks:
   - title: Introduction to Linear Algebra

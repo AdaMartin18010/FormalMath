@@ -105,7 +105,7 @@ Ramsey 数满足递推关系：$R(s, t) \leq R(s-1, t) + R(s, t-1)$。
 
 ### 在线资源
 
-- [Mathlib4 - Ramsey](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Ramsey.html)
+- [Mathlib4 - Ramsey](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

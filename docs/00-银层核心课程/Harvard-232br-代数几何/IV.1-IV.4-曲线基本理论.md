@@ -78,6 +78,8 @@ external_ids:
   ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
   ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
   harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Harvard 232br — Hartshorne Chapter IV §1–§4 习题解答
 

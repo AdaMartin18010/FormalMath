@@ -11,6 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
   zbmath_url: https://zbmath.org/?q=au:Module
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=91
 references:
   databases:
   - id: zbmath

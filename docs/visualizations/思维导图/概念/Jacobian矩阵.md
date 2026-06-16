@@ -9,6 +9,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Matrix_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Jacobi/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: wikidata

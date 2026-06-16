@@ -80,6 +80,8 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=08A99
 ---
 ## 1. 引言
 
@@ -220,3 +222,13 @@ $$|Z(G)| = |G| - \sum [G : C(g_i)] \equiv 0 \pmod p。$$
 - [Nlab Url](https://ncatlab.org/nlab/show/group)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Group_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BE%A4)
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **MIT 18.701 抽象代数** 的以下内容：
+
+- [群作用轨道-稳定子定理（Orbit-Stabilizer Theorem）](docs/00-银层核心课程/MIT-18.701-抽象代数/轨道稳定子定理.md)
+- [第一同构定理（群论）](docs/02-代数结构/02-核心理论/MIT-18.701/02-第一同构定理-群论.md)
+- [Sylow 第一定理](docs/02-代数结构/02-核心理论/MIT-18.701/03-Sylow第一定理.md)

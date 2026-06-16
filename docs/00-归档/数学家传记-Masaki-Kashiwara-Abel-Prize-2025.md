@@ -195,13 +195,13 @@ review_status: draft
 
 ### 官方资源
 
-- [Abel Prize官网 - 柏原正树](https://abelprize.no/article/2025/japanese-mathematician-masaki-kashiwara-awarded-abel-prize-2025)[需更新][需更新]
-- [京都大学新闻稿](https://www.kyoto-u.ac.jp/)[需更新][需更新]
+- [Abel Prize官网 - 柏原正树][https://abelprize.no/article/2025/japanese-mathematician-masaki-kashiwara-awarded-abel-prize-2025][需更新](需更新)
+- [京都大学新闻稿][https://www.kyoto-u.ac.jp/][需更新](需更新)
 
 ### 科普文章
 
-- Plus Magazine: [Abel Prize 2025: Masaki Kashiwara](https://plus.maths.org/content/abel-prize-2025-0)[需更新][需更新]
-- ICIAM祝贺声明: [祝贺柏原正树获得2025年Abel Prize](https://iciam.org/news/25/4/15/iciam-congratulates-professor-masaki-kashiwara-winner-2025-abel-prize)[需更新][需更新]
+- Plus Magazine: [Abel Prize 2025: Masaki Kashiwara][https://plus.maths.org/content/abel-prize-2025-0][需更新](需更新)
+- ICIAM祝贺声明: [祝贺柏原正树获得2025年Abel Prize][https://iciam.org/news/25/4/15/iciam-congratulates-professor-masaki-kashiwara-winner-2025-abel-prize][需更新](需更新)
 
 ### 学术资源
 
@@ -225,6 +225,7 @@ review_status: draft
 **最后更新**: 2026年4月3日
 **关联文档**: [权威源更新核查报告-2026年4月](../../project/权威源更新核查报告-2026年4月.md)
 ---
+
 **参考文献**
 
 1. 相关教材与学术论文。

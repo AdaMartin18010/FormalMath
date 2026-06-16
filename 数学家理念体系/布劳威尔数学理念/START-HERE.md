@@ -1,10 +1,13 @@
 ---
 title: 从这里开始：10分钟了解布劳威尔
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A70
+- 01A60
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B%EF%BC%9A10%E5%88%86%E9%92%9F%E4%BA%86%E8%A7%A3%E5%B8%83%E5%8A%B3%E5%A8%81%E5%B0%94
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B%EF%BC%9A10%E5%88%86%E9%92%9F%E4%BA%86%E8%A7%A3%E5%B8%83%E5%8A%B3%E5%A8%81%E5%B0%94
 ---
 # 从这里开始：10分钟了解布劳威尔
 

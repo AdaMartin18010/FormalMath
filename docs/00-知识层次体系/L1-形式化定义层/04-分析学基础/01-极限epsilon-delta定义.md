@@ -30,6 +30,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/limit
   wikipedia_url: https://en.wikipedia.org/wiki/Limit_(category_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26A03
 references:
   databases:
   - id: wikidata

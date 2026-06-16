@@ -175,7 +175,7 @@ Hₙ(B) → Hₙ(Y) → Hₙ(Y,B) → Hₙ₋₁(B) → Hₙ₋₁(Y)
 
 ### 在线资源
 
-- [Mathlib4 文档 - Five][https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Abelian/Five.html](需更新)
+- [Mathlib4 文档 - Five][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Stacks Project - 010M][https://stacks.math.columbia.edu/tag/010M](需更新)
 
 ---

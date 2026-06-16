@@ -12,6 +12,7 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Pierre-Simon_Laplace
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Laplace/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=44A10
 ---
 # Laplace变换 - 深度版
 

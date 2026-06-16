@@ -10,6 +10,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Set_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88
   zbmath_url: https://zbmath.org/?q=au:Set
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01A60
 references:
   databases:
   - id: zbmath

@@ -6,6 +6,8 @@ msc_secondary:
 - 55U35
 - 03G30
 title: nLab 扩展课程对齐
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18B99
 ---
 # nLab 深度对齐：范畴论与高等数学
 

@@ -28,6 +28,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Characteristic_class
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A4%BA%E6%80%A7%E7%B1%BB
   nlab_url: https://ncatlab.org/nlab/show/characteristic+class
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Stiefel-Whitney类
 

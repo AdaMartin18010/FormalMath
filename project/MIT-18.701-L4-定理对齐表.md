@@ -1,15 +1,18 @@
 ---
 msc_primary: 20
 msc_secondary:
-  - 20-01
+- 20-01
 title: MIT 18.701 Algebra I L4定理级对齐表
 processed_at: '2026-04-10'
 course_code: MIT 18.701
 course_name: Algebra I
 instructor: Michael Artin (教材)
-textbook: "Michael Artin, Algebra (2nd Edition)"
+textbook: Michael Artin, Algebra (2nd Edition)
 alignment_level: L4 (定理级)
 version: v2.0
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20
 ---
 # MIT 18.701 Algebra I L4定理级对齐表
 

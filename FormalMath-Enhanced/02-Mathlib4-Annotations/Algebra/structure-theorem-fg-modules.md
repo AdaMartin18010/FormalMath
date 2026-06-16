@@ -153,7 +153,7 @@ $V$ 成为 $k[x]$-模，$x \cdot v = T(v)$。
 ### 在线资源
 
 - [Mathlib4 文档 - Module PID][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/PID.html](需更新)
-- [Keith Conrad - Modules over PIDs][https://kconrad.math.uconn.edu/blurbs/linmultialg/modulesoverpids.pdf](需更新)
+- [Keith Conrad - Modules over PIDs][https://kconrad.math.uconn.edu/blurbs/](需更新)
 
 ---
 

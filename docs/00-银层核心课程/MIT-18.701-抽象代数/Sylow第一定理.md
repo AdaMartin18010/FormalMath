@@ -67,6 +67,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
+  mit_ocw_url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20
 ---
 # Sylow 第一定理（Sylow's First Theorem）
 
@@ -483,3 +485,13 @@ $$\{1\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_n = G
 - [Nlab Url](https://ncatlab.org/nlab/show/Sylow+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Sylow_theorems)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Sylow)
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **MIT 18.701 抽象代数** 的以下内容：
+
+- [Sylow 第一定理](docs/02-代数结构/02-核心理论/MIT-18.701/03-Sylow第一定理.md)
+- [Cauchy 定理（群论）](docs/02-代数结构/02-核心理论/MIT-18.701/04-Cauchy定理.md)
+- [轨道-稳定子定理（Orbit-Stabilizer Theorem）](docs/02-代数结构/02-核心理论/MIT-18.701/05-轨道-稳定子定理.md)

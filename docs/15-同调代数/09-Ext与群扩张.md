@@ -39,6 +39,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20J06
 ---
 # Ext与群扩张
 

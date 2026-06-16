@@ -39,6 +39,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Émile_Borel
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Borel/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26B05
 ---
 # Heine-Borel 定理
 

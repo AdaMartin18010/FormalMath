@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Statistics
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BB%9F%E8%AE%A1%E5%AD%A6
   nlab_url: https://ncatlab.org/nlab/show/statistics
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 统计学习理论 - 思维导图
 

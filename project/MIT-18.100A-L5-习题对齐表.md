@@ -1,9 +1,12 @@
 ---
 msc_primary: 26
 msc_secondary:
-  - 26-01
+- 26-01
 title: MIT 18.100A Real Analysis L5习题级对齐表
 processed_at: '2026-04-10'
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26
 ---
 # MIT 18.100A Real Analysis L5习题级对齐表
 

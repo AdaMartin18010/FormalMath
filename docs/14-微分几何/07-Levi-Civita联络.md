@@ -39,6 +39,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/connection
   wikipedia_url: https://en.wikipedia.org/wiki/Connection_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%81%94%E7%BB%9C
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53B20
 ---
 # Levi-Civita联络
 

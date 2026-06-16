@@ -88,6 +88,7 @@ external_ids:
     url: https://stacks.math.columbia.edu/tag/0A9E
   stacks_tags: []
   zbmath_url: https://zbmath.org/?q=au:Functor
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # 上同调与 Grothendieck 对偶：例外拉回与六函子形式体系
 

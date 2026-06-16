@@ -16,6 +16,7 @@ processed_at: '2026-04-10'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Roger_Penrose
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Penrose/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=83C57
 ---
 # GEO-090: Penrose不等式与准局部质量
 

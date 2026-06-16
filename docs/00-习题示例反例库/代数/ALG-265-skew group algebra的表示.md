@@ -1,7 +1,7 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16S35
+  - 16S35'
 exercise_id: ALG-265
 title: skew group algebra的表示
 difficulty: 3
@@ -10,11 +10,12 @@ topic: 代数
 subtopic: 表示论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=16S35
 ---
-
 # ALG-265: skew group algebra的表示
 
 **题号**: ALG-265

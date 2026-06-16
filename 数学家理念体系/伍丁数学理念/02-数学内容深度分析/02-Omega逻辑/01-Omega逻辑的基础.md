@@ -1,11 +1,14 @@
 ---
 title: Omega逻辑的基础
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Omega%E9%80%BB%E8%BE%91%E7%9A%84%E5%9F%BA%E7%A1%80
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Omega%E9%80%BB%E8%BE%91%E7%9A%84%E5%9F%BA%E7%A1%80
 ---
 # Omega逻辑的基础
 

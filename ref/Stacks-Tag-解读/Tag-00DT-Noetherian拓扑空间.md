@@ -10,7 +10,8 @@ external_ids:
   stacks_tag:
     tag: 00DT
     url: https://stacks.math.columbia.edu/tag/00DT
-  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

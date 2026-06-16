@@ -25,6 +25,8 @@ references:
     isbn: '9780387902432'
     mr_number: MR0453490
     doi: 10.1007/978-1-4757-4385-2
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=03E99
 ---
 # ZFC公理体系深化扩展版
 

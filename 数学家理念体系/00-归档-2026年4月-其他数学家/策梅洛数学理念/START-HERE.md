@@ -24,6 +24,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Ernst_Zermelo
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Zermelo/
   wikidata_id: https://www.wikidata.org/entity/Q150654
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01A60
 ---
 # 开始学习：策梅洛数学理念
 

@@ -68,6 +68,8 @@ tags:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/André_Weil
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14C20
 ---
 # AG-VK-024: Weil 除子与 Cartier 除子的等价理论
 

@@ -23,6 +23,8 @@ references:
     mr_number: MR2597943
     author: Lawrence C. Evans
     doi: 10.1090/gsm/019
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=35A01
 ---
 # PDE分类
 

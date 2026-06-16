@@ -1,7 +1,7 @@
 ---
-msc_primary: 58
+msc_primary: '58
 
-  - 58E05
+  - 58E05'
 exercise_id: ANA-230
 title: Morse理论在变分问题中的应用
 difficulty: 5
@@ -10,11 +10,12 @@ topic: 实分析
 subtopic: 非线性分析
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=58E05
 ---
-
 # ANA-230: Morse理论在变分问题中的应用
 
 **题号**: ANA-230

@@ -59,6 +59,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Weil猜想的高维证明：从Grothendieck到Deligne
 

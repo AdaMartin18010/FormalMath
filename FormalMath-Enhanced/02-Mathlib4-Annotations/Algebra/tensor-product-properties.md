@@ -144,7 +144,7 @@ $\mathbb{Z}_2 \otimes_\mathbb{Z} \mathbb{Z}_3 = 0$（因为 $a \otimes b = 3(a \
 
 ### 在线资源
 
-- [Mathlib4 文档 - TensorProduct][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/TensorProduct/Basic.html](需更新)
+- [Mathlib4 文档 - TensorProduct][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Keith Conrad - Tensor Products][https://kconrad.math.uconn.edu/blurbs/linmultialg/tensorprod.pdf](需更新)
 
 ---

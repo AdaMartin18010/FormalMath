@@ -26,6 +26,8 @@ references:
     year: 2010
     isbn: '9780132413770'
     doi: 10.1007/978-1-4613-0041-0
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=12F99
 ---
 # Corps (mathématiques)
 

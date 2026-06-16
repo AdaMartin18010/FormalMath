@@ -76,6 +76,9 @@ external_ids:
   stacks_tag:
     tag: 0B5R
     url: https://stacks.math.columbia.edu/tag/0B5R
+  stacks_tag_url: https://stacks.math.columbia.edu/tag/01YG
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # Serre消失定理 (Serre Vanishing Theorem)
 

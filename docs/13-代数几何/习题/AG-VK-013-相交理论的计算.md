@@ -56,6 +56,8 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Intersection_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9B%B8%E4%BA%A4%E7%90%86%E8%AE%BA
   nlab_url: https://ncatlab.org/nlab/show/intersection+theory
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14C17
 ---
 # AG-VK-013: 相交理论的计算
 

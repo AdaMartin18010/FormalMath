@@ -66,6 +66,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/cohomology
   wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14F25
 ---
 # Čech上同调 - 深度版
 

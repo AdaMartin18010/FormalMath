@@ -31,6 +31,8 @@ references:
     isbn: '9783540036207'
     mr_number: MR0222093
     author: Robin Hartshorne
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18G80
 ---
 # Verdier对偶简介
 

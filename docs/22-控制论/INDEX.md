@@ -1,10 +1,18 @@
 ---
-title: "控制理论与应用"
+title: 控制理论与应用
 msc_primary: 93
-
-msc_secondary: ['93B05', '93B07', '93B36', '93B52']
-prerequisites: ['线性代数', '微分方程', '复分析']
+msc_secondary:
+- 93B05
+- 93B07
+- 93B36
+- 93B52
+prerequisites:
+- 线性代数
+- 微分方程
+- 复分析
 processed_at: '2026-04-08'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=93
 ---
 # 控制理论与应用 (Control Theory and Applications)
 

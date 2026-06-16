@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53A05
+  - 53A05'
 exercise_id: GEO-088
 title: Willmore泛函的变分理论
 difficulty: 3
@@ -10,11 +10,12 @@ topic: 几何
 subtopic: 曲面的共形几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53A05
 ---
-
 # GEO-088: Willmore泛函的变分理论
 
 **题号**: GEO-088

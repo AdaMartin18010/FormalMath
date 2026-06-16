@@ -20,6 +20,8 @@ references:
     publisher: Pearson
     year: 2002
     isbn: '9780201657029'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=70H05
 ---
 # Hamilton力学与相空间
 

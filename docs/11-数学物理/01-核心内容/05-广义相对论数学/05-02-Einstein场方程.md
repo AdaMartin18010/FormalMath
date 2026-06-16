@@ -14,6 +14,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Albert_Einstein
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Einstein/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=83C05
 ---
 # Einstein场方程
 

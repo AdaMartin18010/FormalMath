@@ -10,6 +10,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Hilbert_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Hilbert%E7%A9%BA%E9%97%B4
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=46C05
 references:
   databases:
   - id: wikidata

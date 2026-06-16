@@ -21,6 +21,9 @@ references:
     isbn: '9780387902432'
     mr_number: MR0453490
     doi: 10.1007/978-1-4757-4385-2
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=03B35
 ---
 ## Agent 任务指令：MIT 18.06 Lean4 代码补充（8篇核心文档）
 

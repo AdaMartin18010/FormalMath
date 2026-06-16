@@ -1,7 +1,7 @@
 ---
-msc_primary: 49
+msc_primary: '49
 
-  - 49Q05
+  - 49Q05'
 exercise_id: GEO-086
 title: Plateau问题与极小曲面的正则性
 difficulty: 4
@@ -10,11 +10,12 @@ topic: 几何
 subtopic: 几何测度论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=49Q05
 ---
-
 # GEO-086: Plateau问题与极小曲面的正则性
 
 **题号**: GEO-086

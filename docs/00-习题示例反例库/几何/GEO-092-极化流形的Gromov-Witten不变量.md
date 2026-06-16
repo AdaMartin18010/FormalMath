@@ -18,6 +18,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Manifold
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Witten/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14N35
 references:
   databases:
   - id: wikidata

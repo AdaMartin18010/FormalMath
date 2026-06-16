@@ -16,6 +16,7 @@ processed_at: '2026-04-10'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Shiing-Shen_Chern
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Chern/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=57R56
 ---
 # TOP-126: Chern-Simons理论与TQFT
 

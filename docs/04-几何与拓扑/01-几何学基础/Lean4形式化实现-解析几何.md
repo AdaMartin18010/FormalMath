@@ -48,6 +48,8 @@ references:
     publisher: Dover
     year: 1988
     isbn: '9780486656128'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=51N20
 ---
 # Lean4形式化实现-解析几何 / Lean4 Formal Implementation - Analytic Geometry
 

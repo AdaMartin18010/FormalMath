@@ -20,6 +20,8 @@ references:
     publisher: CRC Press
     year: 2015
     isbn: '9781498702898'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=28A35
 ---
 # Fubini定理 - 五种表征
 

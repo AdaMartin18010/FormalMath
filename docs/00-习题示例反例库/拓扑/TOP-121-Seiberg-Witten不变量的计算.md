@@ -16,6 +16,7 @@ processed_at: '2026-04-10'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Edward_Witten
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Witten/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=57R57
 references:
   papers:
   - title: Monopoles and four-manifolds

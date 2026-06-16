@@ -1,11 +1,14 @@
 ---
 title: Platonism数学哲学：数学对象的实在性
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Platonism%E6%95%B0%E5%AD%A6%E5%93%B2%E5%AD%A6%EF%BC%9A%E6%95%B0%E5%AD%A6%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%AE%9E%E5%9C%A8%E6%80%A7
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Platonism%E6%95%B0%E5%AD%A6%E5%93%B2%E5%AD%A6%EF%BC%9A%E6%95%B0%E5%AD%A6%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%AE%9E%E5%9C%A8%E6%80%A7
 ---
 # Platonism数学哲学：数学对象的实在性
 

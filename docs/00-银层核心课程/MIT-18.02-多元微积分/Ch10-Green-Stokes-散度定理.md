@@ -19,6 +19,8 @@ chapter: '10'
 external_ids:
   ocw_url: https://ocw.mit.edu/
   ocw_ps_url: https://ocw.mit.edu/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26B20
 references:
   textbooks:
   - title: Multivariable Calculus

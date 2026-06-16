@@ -1,11 +1,14 @@
 ---
 title: p进Hodge理论
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=p%E8%BF%9BHodge%E7%90%86%E8%AE%BA
+  nlab_search_url: https://ncatlab.org/nlab/search?query=p%E8%BF%9BHodge%E7%90%86%E8%AE%BA
 ---
 # p进Hodge理论
 

@@ -26,6 +26,8 @@ references:
     publisher: Addison-Wesley
     year: 1994
     isbn: '9780131558362'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=68V20
 ---
 # Lean4基础证明示例 - 工作示例
 
@@ -82,11 +84,13 @@ theorem and_comm (P Q : Prop) : P ∧ Q → Q ∧ P := by
 ```
 
 **证明说明**：
+
 - `intro h`：引入假设 $h : P \land Q$
 - `cases h with`：对合取进行解构
 - `⟨hq, hp⟩`：构造 $Q \land P$ 的证明对
 
 **简化版本**：
+
 ```lean
 theorem and_comm' (P Q : Prop) : P ∧ Q → Q ∧ P := by
   rintro ⟨hp, hq⟩
@@ -109,6 +113,7 @@ theorem add_zero (n : ℕ) : n + 0 = n := by
 ```
 
 **证明说明**：
+
 - `induction n with`：对 $n$ 进行归纳
 - **基例** `zero`：`0 + 0 = 0` 由 `rfl`（自反性）得证
 - **归纳步** `succ n`：
@@ -117,6 +122,7 @@ theorem add_zero (n : ℕ) : n + 0 = n := by
   - `simp` 自动应用归纳假设
 
 **使用Mathlib的简化版本**：
+
 ```lean
 theorem add_zero' (n : ℕ) : n + 0 = n := by
   simp
@@ -132,16 +138,18 @@ theorem square_expand (n m : ℕ) : (n + m) ^ 2 = n ^ 2 + 2 * n * m + m ^ 2 := b
 ```
 
 **证明说明**：
+
 - `ring`：环结构自动证明策略
 - 自动展开 $(n + m)^2$ 并整理为标准形式
 
 **手动证明版本**：
+
 ```lean
 theorem square_expand' (n m : ℕ) : (n + m) ^ 2 = n ^ 2 + 2 * n * m + m ^ 2 := by
   calc
     (n + m) ^ 2 = (n + m) * (n + m) := by rw [pow_two]
     _ = n * n + n * m + m * n + m * m := by rw [mul_add, add_mul, add_mul]
-    _ = n ^ 2 + 2 * n * m + m ^ 2 := by 
+    _ = n ^ 2 + 2 * n * m + m ^ 2 := by
       ring_nf
       <;> simp [pow_two, mul_comm]
       <;> ring

@@ -25,6 +25,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Stefan_Banach
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Banach/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=46A99
 ---
 # Banach不动点定理 - 五种表征
 

@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14E30
+  - 14E30'
 exercise_id: AG-070
 title: flip的存在性与终止性
 difficulty: 4
@@ -10,11 +10,12 @@ topic: 代数几何
 subtopic: 极小模型纲领
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14E30
 ---
-
 # AG-070: flip的存在性与终止性
 
 **题号**: AG-070

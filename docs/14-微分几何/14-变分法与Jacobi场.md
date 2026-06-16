@@ -30,6 +30,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%8F%98%E5%88%86%E6%B3%95
   nlab_url: https://ncatlab.org/nlab/show/calculus+of+variations
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Jacobi/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53C22
 ---
 # 变分法与Jacobi场
 

@@ -24,6 +24,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Joseph-Louis_Lagrange
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20A05
 ---
 # Lagrange定理 - 五种表征
 

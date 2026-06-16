@@ -26,6 +26,8 @@ references:
     publisher: Springer
     year: 1980
     msc: 32-02
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53C05
 ---
 # Hodge理论简介
 

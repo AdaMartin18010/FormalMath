@@ -20,6 +20,8 @@ references:
     publisher: Wiley
     year: 2008
     isbn: '9780470054567'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=35D30
 ---
 # Sobolev空间与弱解 - 深度扩展版
 

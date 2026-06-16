@@ -1,13 +1,16 @@
 ---
 msc_primary: 26
 msc_secondary:
-  - 26-01
+- 26-01
 title: MIT 18.100A Real Analysis 语义级对齐手册
 processed_at: '2026-04-09'
 stacks_tags: []
 course_code: MIT 18.100A
 course_name: Real Analysis
 instructor: Z. Lin (2025-2026)
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26
 ---
 # MIT 18.100A Real Analysis 语义级对齐手册
 

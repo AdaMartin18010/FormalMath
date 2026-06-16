@@ -162,7 +162,7 @@ $$\cdots \to H_n(A) \to H_n(B) \to H_n(C) \xrightarrow{\partial} H_{n-1}(A) \to 
 
 ### 在线资源
 
-- [Mathlib4 文档 - Homology][https://leanprover-community.github.io/mathlib4_docs/ShortComplex/Basic.html](需更新)
+- [Mathlib4 文档 - Homology][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Stacks Project - 010J][https://stacks.math.columbia.edu/tag/010J](需更新)
 
 ---

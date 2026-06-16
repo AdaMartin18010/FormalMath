@@ -17,6 +17,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=41A58
 references:
   databases:
   - id: wikidata

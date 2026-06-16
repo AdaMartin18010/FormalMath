@@ -741,7 +741,7 @@ if __name__ == "__main__":
 
 ### 官方资源
 
-- **DeepMind博客**: [AlphaProof achieves silver medal level in IMO][https://deepmind.google/discover/blog/alphaproof-achieves-silver-medal-level-in-imo/](需更新)
+- **DeepMind博客**: [AlphaProof achieves silver medal level in IMO][https://deepmind.google/](需更新)
 - **技术报告**: Nature论文（预计2025年发表）
 - **演示视频**: IMO 2024问题解决过程可视化
 

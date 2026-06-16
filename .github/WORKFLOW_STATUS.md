@@ -20,6 +20,8 @@ references:
     isbn: '9780521675994'
     mr_number: MR2448845
     doi: 10.1017/CBO9780511811029
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # CI/CD 工作流状态
 
@@ -27,17 +29,17 @@ references:
 
 | 工作流 | 状态 | 说明 |
 |--------|------|------|
-| Build | ![Build](https://github.com/FormalMath/workflows/Build/badge.svg) | 构建流程 |
-| Test | ![Test](https://github.com/FormalMath/workflows/Test/badge.svg) | 测试流程 |
-| Deploy | ![Deploy](https://github.com/FormalMath/workflows/Deploy/badge.svg) | 部署流程 |
-| Release | ![Release](https://github.com/FormalMath/workflows/Release/badge.svg) | 发布流程 |
-| Security | ![Security](https://github.com/FormalMath/workflows/Security/badge.svg) | 安全扫描 |
-| Quality Assurance | ![Quality Assurance](https://github.com/FormalMath/workflows/Quality%20Assurance/badge.svg) | 质量保障 |
+| Build | ![Build](https://github.com/FormalMath) | 构建流程 |
+| Test | ![Test](https://github.com/FormalMath) | 测试流程 |
+| Deploy | ![Deploy](https://github.com/FormalMath) | 部署流程 |
+| Release | ![Release](https://github.com/FormalMath) | 发布流程 |
+| Security | ![Security](https://github.com/FormalMath) | 安全扫描 |
+| Quality Assurance | ![Quality Assurance](https://github.com/FormalMath) | 质量保障 |
 
 ## 代码质量徽章
 
 ![Codecov](https://codecov.io/gh/formalmath/formalmath/branch/main/graph/badge.svg)
-![CodeQL](https://github.com/FormalMath/workflows/CodeQL/badge.svg)
+![CodeQL](https://github.com/FormalMath)
 
 ## 环境状态
 
@@ -59,10 +61,10 @@ references:
 
 ## 快速链接
 
-- [Actions Dashboard](https://github.com/FormalMath/actions)
-- [Deployment History](https://github.com/FormalMath/deployments)
-- [Releases](https://github.com/FormalMath/releases)
-- [Security Advisories](https://github.com/FormalMath/security/advisories)
+- [Actions Dashboard](https://github.com/FormalMath)
+- [Deployment History](https://github.com/FormalMath)
+- [Releases](https://github.com/FormalMath)
+- [Security Advisories](https://github.com/FormalMath)
 
 ## 手动触发命令
 

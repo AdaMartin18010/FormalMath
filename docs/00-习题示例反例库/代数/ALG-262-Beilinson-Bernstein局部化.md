@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14F10
+  - 14F10'
 exercise_id: ALG-262
 title: Beilinson-Bernstein局部化
 difficulty: 5
@@ -10,11 +10,13 @@ topic: 代数
 subtopic: D模理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  stacks_tag_url: https://stacks.math.columbia.edu/tag/00EB
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14F10
 ---
-
 # ALG-262: Beilinson-Bernstein局部化
 
 **题号**: ALG-262

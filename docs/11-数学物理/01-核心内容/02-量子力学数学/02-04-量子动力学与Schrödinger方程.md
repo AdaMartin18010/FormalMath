@@ -23,6 +23,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Erwin_Schrödinger
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Schrodinger/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=81Q05
 ---
 # 量子动力学与Schrödinger方程
 

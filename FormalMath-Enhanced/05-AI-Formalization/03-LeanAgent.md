@@ -587,7 +587,7 @@ class LeanAgentClient:
 # 使用示例
 if __name__ == "__main__":
     client = LeanAgentClient(
-        api_endpoint="https://api.leanagent.example.com/v1[需更新]",
+        api_endpoint="#[需更新]",
         api_key="your-api-key"
     )
 
@@ -616,7 +616,7 @@ if __name__ == "__main__":
 
 ### 代码与资源
 
-- **GitHub**: https://github.com/lean-agent/leanagent（预计开源）
+- **GitHub**: https://github.com/leanprover-community（预计开源）
 - **预训练模型**: HuggingFace模型库
 - **演示视频**: ICLR 2025会议展示
 

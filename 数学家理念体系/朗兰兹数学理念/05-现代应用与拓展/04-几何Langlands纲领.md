@@ -1,11 +1,14 @@
 ---
 title: 几何Langlands纲领：Langlands纲领的几何化
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E5%87%A0%E4%BD%95Langlands%E7%BA%B2%E9%A2%86%EF%BC%9ALanglands%E7%BA%B2%E9%A2%86%E7%9A%84%E5%87%A0%E4%BD%95%E5%8C%96
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E5%87%A0%E4%BD%95Langlands%E7%BA%B2%E9%A2%86%EF%BC%9ALanglands%E7%BA%B2%E9%A2%86%E7%9A%84%E5%87%A0%E4%BD%95%E5%8C%96
 ---
 # 几何Langlands纲领：Langlands纲领的几何化
 

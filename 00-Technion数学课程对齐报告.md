@@ -465,7 +465,7 @@ Technion核心概念关联网络
 | 资源类型 | URL |
 |----------|-----|
 | 数学系主页 | https://math.technion.ac.il/[需更新] |
-| 本科课程 | https://math.technion.ac.il/en/undergraduate-courses/[需更新] |
+| 本科课程 | https://math.technion.ac.il/[需更新] |
 | 研究生课程 | https://math.technion.ac.il/en/admissions-and-program-structure/[需更新] |
 | 广东以色列理工 | https://www.gtiit.edu.cn/viewColleges.aspx?flowNo=1087[需更新] |
 

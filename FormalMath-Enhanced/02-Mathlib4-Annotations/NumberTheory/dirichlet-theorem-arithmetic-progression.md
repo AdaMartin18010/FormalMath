@@ -7,7 +7,7 @@ title: 狄利克雷定理 (Dirichlet's Theorem)
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Dirichlet's_theorem_on_arithmetic_progressions
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E5%AE%9A%E7%90%86
-  nlab_url: https://ncatlab.org/nlab/show/Dirichlet's+theorem
+  nlab_url: https://ncatlab.org/nlab/show/HomePage
 ---
 # 狄利克雷定理 (Dirichlet's Theorem)
 
@@ -129,7 +129,7 @@ $$\pi_{a,m}(x) \sim \frac{1}{\varphi(m)} \cdot \frac{x}{\ln x}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - DirichletTheorem][https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/DirichletTheorem.html](需更新)
+- [Mathlib4 文档 - DirichletTheorem][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 
 ---
 

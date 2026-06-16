@@ -26,6 +26,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
   nlab_url: https://ncatlab.org/nlab/show/algebra
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Jacobi/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01A50
 ---
 # 高维Abel-Jacobi：代数簇的推广
 

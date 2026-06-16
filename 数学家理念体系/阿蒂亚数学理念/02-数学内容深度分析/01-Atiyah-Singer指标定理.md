@@ -11,6 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Michael_Atiyah
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/
   zbmath_url: https://zbmath.org/?q=au:Michael%20Atiyah
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=58
 references:
   papers:
   - title: The Index of Elliptic Operators on Compact Manifolds

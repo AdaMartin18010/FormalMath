@@ -88,6 +88,8 @@ external_ids:
     tag: 01X8
     url: https://stacks.math.columbia.edu/tag/01X8
   stacks_tags: []
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # 仿射概形上同调消失定理
 

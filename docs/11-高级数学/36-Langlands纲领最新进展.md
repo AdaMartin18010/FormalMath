@@ -33,6 +33,8 @@ references:
     isbn: '9780387901633'
     mr_number: MR0434929
     doi: 10.1007/978-1-4757-5579-4
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=11F70
 ---
 # 36. Langlands纲领最新进展 (2024-2025)
 

@@ -13,6 +13,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
   zbmath_url: https://zbmath.org/?q=au:Group
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20
 references:
   databases:
   - id: zbmath

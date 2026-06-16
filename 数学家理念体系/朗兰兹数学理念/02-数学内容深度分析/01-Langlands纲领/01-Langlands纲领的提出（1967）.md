@@ -1,11 +1,14 @@
 ---
 title: Langlands纲领的提出（1967）：数学统一的里程碑
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Langlands%E7%BA%B2%E9%A2%86%E7%9A%84%E6%8F%90%E5%87%BA%EF%BC%881967%EF%BC%89%EF%BC%9A%E6%95%B0%E5%AD%A6%E7%BB%9F%E4%B8%80%E7%9A%84%E9%87%8C%E7%A8%8B%E7%A2%91
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Langlands%E7%BA%B2%E9%A2%86%E7%9A%84%E6%8F%90%E5%87%BA%EF%BC%881967%EF%BC%89%EF%BC%9A%E6%95%B0%E5%AD%A6%E7%BB%9F%E4%B8%80%E7%9A%84%E9%87%8C%E7%A8%8B%E7%A2%91
 ---
 # Langlands纲领的提出（1967）：数学统一的里程碑
 

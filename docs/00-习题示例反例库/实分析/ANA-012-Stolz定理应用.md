@@ -29,6 +29,8 @@ references:
     year: 2015
     isbn: '9781493927111'
     doi: 10.1007/978-1-4939-2712-8
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=40A05
 ---
 # ANA-012: Stolz定理应用
 

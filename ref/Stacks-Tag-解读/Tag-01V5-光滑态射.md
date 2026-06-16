@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01V5
     url: https://stacks.math.columbia.edu/tag/01V5
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -331,7 +332,7 @@ $$g^* R^i f_* \mathcal{F} \cong R^i f'_* (g')^* \mathcal{F}$$
 ### 7.4 在线资源
 
 8. **Stacks Project**: [Tag 01V5](https://stacks.math.columbia.edu/tag/01V5)
-9. **Stacks Project**: [Chapter Morphisms](https://stacks.math.columbia.edu/chapter/01QY)
+9. **Stacks Project**: [Chapter Morphisms](https://stacks.math.columbia.edu/)
 
 ---
 

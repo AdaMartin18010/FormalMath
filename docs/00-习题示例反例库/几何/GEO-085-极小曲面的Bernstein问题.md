@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53A10
+  - 53A10'
 exercise_id: GEO-085
 title: 极小曲面的Bernstein问题
 difficulty: 3
@@ -10,11 +10,12 @@ topic: 几何
 subtopic: 极小曲面
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53A10
 ---
-
 # GEO-085: 极小曲面的Bernstein问题
 
 **题号**: GEO-085

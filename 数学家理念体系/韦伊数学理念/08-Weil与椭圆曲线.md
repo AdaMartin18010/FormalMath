@@ -58,6 +58,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
   zbmath_url: https://zbmath.org/?q=au:Elliptic%20curve
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Weil与椭圆曲线：从复乘到模性的桥梁
 

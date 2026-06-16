@@ -29,6 +29,8 @@ references:
     year: 2002
     isbn: '9780821831786'
     mr_number: MR1885077
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=32S60
 ---
 # ALG-240: Perverse Sheaves 的交错展开
 

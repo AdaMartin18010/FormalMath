@@ -60,6 +60,8 @@ references:
     year: 1995
     isbn: '9780387942858'
     mr_number: MR1307623
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20D10
 ---
 # Burnside定理 - 深度版
 

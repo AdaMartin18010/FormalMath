@@ -4128,7 +4128,7 @@ Lagrange was a very careful writer with a clear and elegant style. At the age of
 
 For more information about Lagrange, visit:
 
-https://mathshistory.st-andrews.ac.uk/\Biographies/Lagrange/[需更新]
+https://mathshistory.st-andrews.ac.uk/Biographies/[需更新]
 
 # 8
 
@@ -4612,7 +4612,7 @@ Among his many honors are: the Association for Computing Machinery A. M. Turing 
 
 Adleman's current position is the Henry Salvatori Distinguished Chair in Computer Science and Professor of Computer Science and Biological Sciences at the University of Southern California, where he has been since 1980.
 
-For more information about Adleman, visit: https://mathshistory.st-andrews.ac.uk/\Biographies/Adleman/[需更新]
+For more information about Adleman, visit: https://mathshistory.st-andrews.ac.uk/Biographies/[需更新]
 
 ![](images/cefbc736e84588f4603e50ffec1227d20b8f1b68f8f933a707efb012993b7ddc.jpg)
 
@@ -11090,7 +11090,7 @@ Courtesy of Jonathan Hall
 
 are classics. His mathematical legacy includes more than 120 research papers on group theory, coding theory, and design theory. His 1943 paper on projective planes ranks among the most cited papers in mathematics. Several fundamental concepts as well as a sporadic simple group are identified with Hall's name. One of Hall's most celebrated results is his solution to the "Burnside Problem" for exponent 6—that is, his proof that a finitely generated group in which the order of every element divides 6 must be finite. Hall influenced both John Thompson and Michael Aschbacher, two of finite group theory's greatest contributors. It was Hall who suggested Thompson's Ph.D. dissertation problem. Hall's Ph.D. students at Caltech included Donald Knuth and Robert McEliece.
 
-For more information on Hall, visit: https://mathshistory.st-andrews.ac.uk/Biographies/Hall.Marshall/[需更新]
+For more information on Hall, visit: https://mathshistory.st-andrews.ac.uk/Biographies/[需更新]
 
 ![](images/a89e04eef6ed0b3f6079985763c38a5ff377d99cdcd854ab606674ad2c1d2a94.jpg)
 

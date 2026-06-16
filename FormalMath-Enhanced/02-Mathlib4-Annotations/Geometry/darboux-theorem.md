@@ -124,7 +124,7 @@ $S^2$ 有标准辛结构（面积形式）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Symplectic][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Symplectic/Basic.html](需更新)
+- [Mathlib4 文档 - Symplectic][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Wikipedia - Darboux's Theorem](https://en.wikipedia.org/wiki/Darboux%27s_theorem)
 
 ---

@@ -100,7 +100,7 @@ $$A = U T U^*$$
 
 ### 在线资源
 
-- [Mathlib4 - Matrix Schur](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Schur.html)
+- [Mathlib4 - Matrix Schur](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

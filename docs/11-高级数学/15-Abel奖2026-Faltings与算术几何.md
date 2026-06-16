@@ -34,6 +34,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Niels_Henrik_Abel
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=11G30
 ---
 # Abel 奖 2026：Gerd Faltings 与算术几何
 

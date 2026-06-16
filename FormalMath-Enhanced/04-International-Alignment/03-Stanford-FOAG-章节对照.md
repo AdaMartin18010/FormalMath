@@ -1,9 +1,11 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Stanford FOAG 章节对照表
+external_ids:
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
 ---
 # Stanford FOAG 章节对照表
 

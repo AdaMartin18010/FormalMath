@@ -1,9 +1,12 @@
 ---
 msc_primary: 20
 msc_secondary:
-  - 20-01
+- 20-01
 title: MIT 18.701 Algebra I L5习题级对齐表
 processed_at: '2026-04-10'
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20
 ---
 # MIT 18.701 Algebra I L5习题级对齐表
 

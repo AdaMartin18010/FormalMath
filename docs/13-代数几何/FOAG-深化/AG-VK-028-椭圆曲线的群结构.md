@@ -80,6 +80,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14H52
 ---
 # AG-VK-028: 椭圆曲线的群结构
 

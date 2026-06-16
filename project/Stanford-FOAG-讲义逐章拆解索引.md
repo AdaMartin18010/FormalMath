@@ -4,8 +4,10 @@ msc_primary: 00A99
 course_code: Stanford FOAG
 course_name: Foundations of Algebraic Geometry
 instructor: Ravi Vakil (Stanford Math 216)
-textbook: "Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry"
+textbook: 'Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry'
 processed_at: '2026-04-17'
+external_ids:
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
 ---
 # Stanford FOAG (Ravi Vakil) 代数几何基础讲义逐章拆解索引
 

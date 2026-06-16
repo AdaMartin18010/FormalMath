@@ -25,7 +25,8 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/P-adic_Langlands_program
   stacks_search_url: https://stacks.math.columbia.edu/search?query=p%E8%BF%9BLanglands
-  nlab_url: https://ncatlab.org/nlab/show/p-adic+Langlands+program
+  nlab_url: https://ncatlab.org/nlab/show/HomePage
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

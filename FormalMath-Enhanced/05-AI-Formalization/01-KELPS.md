@@ -259,7 +259,7 @@ class KELPSClient:
 # 使用示例
 if __name__ == "__main__":
     client = KELPSClient(
-        api_endpoint="https://api.kelps.example.com/v1[需更新]",
+        api_endpoint="#[需更新]",
         api_key="your-api-key"
     )
 
@@ -380,7 +380,7 @@ Codex (2022)          ████████████████          
 
 ### 代码与模型
 
-- **GitHub**: https://github.com/deepseek-ai/kelps（预计开源）
+- **GitHub**: https://github.com/deepseek-ai（预计开源）
 - **HuggingFace**: 模型权重下载
 - **Docker镜像**: 预配置推理环境
 

@@ -33,6 +33,8 @@ references:
     edition: draft
     isbn: ''
     author: Ravi Vakil
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14J26
 ---
 # Castelnuovo有理性判据
 

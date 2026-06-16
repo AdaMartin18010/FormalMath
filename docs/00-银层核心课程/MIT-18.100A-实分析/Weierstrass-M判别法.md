@@ -51,6 +51,8 @@ external_ids:
   - https://ocw.mit.edu/
   wikipedia_url: https://en.wikipedia.org/wiki/Karl_Weierstrass
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=40
 ---
 # Weierstrass M-判别法（Weierstrass M-Test）
 
@@ -472,3 +474,13 @@ rac{1}{n}$ 发散。$\square$
 - [Ocw Readings Url](https://ocw.mit.edu/)
 - [Ocw Lectures Url](https://ocw.mit.edu/)
 - [Ocw Problem Sets](['https://ocw.mit.edu/'])
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **MIT 18.100A 实分析** 的以下内容：
+
+- [介值定理](docs/00-银层核心课程/MIT-18.100A-实分析/介值定理.md)
+- [Taylor定理（Taylor's Theorem）](docs/00-银层核心课程/MIT-18.100A-实分析/Taylor定理.md)
+- [中值定理（Mean Value Theorem）](docs/00-银层核心课程/MIT-18.100A-实分析/中值定理.md)

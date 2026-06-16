@@ -9,6 +9,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   papers:
   - title: Faisceaux algébriques cohérents

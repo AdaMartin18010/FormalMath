@@ -88,6 +88,7 @@ external_ids:
     tag: '0130'
     url: https://stacks.math.columbia.edu/tag/0130
   stacks_tags: []
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # 层上同调基础性质 (Basic Properties of Sheaf Cohomology)
 

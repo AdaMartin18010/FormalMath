@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Mathematical_analysis
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90
   nlab_url: https://ncatlab.org/nlab/show/analysis
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=94A60
 ---
 # 高级加密标准AES数学分析
 

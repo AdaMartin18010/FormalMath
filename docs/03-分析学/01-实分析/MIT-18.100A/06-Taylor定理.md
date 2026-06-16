@@ -87,6 +87,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26A99
 ---
 # Taylor 定理（Taylor's Theorem）
 
@@ -358,3 +360,13 @@ $$f(x) \neq \sum_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!}x^k = 0$$
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **MIT 18.100A Real Analysis** 的以下内容：
+
+- [一致连续性定理（Uniform Continuity Theorem）](docs/03-分析学/01-实分析/MIT-18.100A/03-一致连续性.md)
+- [中值定理（Mean Value Theorem）](docs/03-分析学/01-实分析/MIT-18.100A/04-中值定理.md)
+- [比较判别法与比值/根值判别法](docs/03-分析学/01-实分析/MIT-18.100A/05-比较判别法与比值根值判别法.md)

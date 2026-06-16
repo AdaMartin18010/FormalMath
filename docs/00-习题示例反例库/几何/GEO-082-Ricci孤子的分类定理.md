@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53C25
+  - 53C25'
 exercise_id: GEO-082
 title: Ricci孤子的分类定理
 difficulty: 4
@@ -10,11 +10,12 @@ topic: 几何
 subtopic: Ricci流
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53C25
 ---
-
 # GEO-082: Ricci孤子的分类定理
 
 **题号**: GEO-082

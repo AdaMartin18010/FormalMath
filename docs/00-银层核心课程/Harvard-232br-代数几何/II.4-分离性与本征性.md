@@ -78,6 +78,8 @@ external_ids:
   ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
   ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
   harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Harvard 232br - Hartshorne Chapter II §4 习题解答
 
@@ -391,3 +393,13 @@ theorem proper_over_algClosed_global_sections
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Harvard 232br 代数几何** 的以下内容：
+
+- [Harvard 232br - Hartshorne Chapter II §3 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/II.3-态射性质.md)
+- [Harvard 232br - Hartshorne Chapter III §3 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/III.3-Čech上同调与导出上同调.md)
+- [Harvard 232br - Hartshorne Chapter III §3 习题解答](docs/13-代数几何/Harvard-232br-习题解答/III.3-Čech上同调与导出上同调.md)

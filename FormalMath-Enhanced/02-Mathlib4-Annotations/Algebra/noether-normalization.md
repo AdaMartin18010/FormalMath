@@ -143,7 +143,7 @@ $(y_2 - z)^2 = x y$ 给出 $z$ 的二次整方程。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Algebra Finiteness][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Finiteness.html](需更新)
+- [Mathlib4 文档 - Algebra Finiteness][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Stacks Project - 00OW][https://stacks.math.columbia.edu/tag/00OW](需更新)
 
 ---

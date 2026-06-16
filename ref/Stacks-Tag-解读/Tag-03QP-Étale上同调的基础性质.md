@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 03QP
     url: https://stacks.math.columbia.edu/tag/03QP
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

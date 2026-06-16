@@ -69,6 +69,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
   wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # AG-ETH-010: 谱序列的计算 (*Berechnung mit Spektralsequenzen*)
 

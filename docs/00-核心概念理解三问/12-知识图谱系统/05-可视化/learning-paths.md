@@ -1,11 +1,11 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 16A99
-  - 00A99
-  - 20A99
+  - 16A99 - 00A99 - 20A99'
 title: FormalMath学习路径推荐
 processed_at: '2026-04-05'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=16A99
 ---
 # FormalMath学习路径推荐
 

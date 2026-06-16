@@ -61,6 +61,8 @@ external_ids:
   ocw_url: https://math.stanford.edu/~vakil/216blog/
   ocw_ps_url: https://math.stanford.edu/~vakil/216blog/
   foag_pdf_url: https://math.stanford.edu/~vakil/216blog/
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14B25
 ---
 # Part VI L5 核心习题（11–20）
 

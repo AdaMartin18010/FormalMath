@@ -51,6 +51,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Topos
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
   zbmath_url: https://zbmath.org/?q=au:Topos
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18
 ---
 ## 1. 引言：几何、逻辑与同伦的三重交汇
 

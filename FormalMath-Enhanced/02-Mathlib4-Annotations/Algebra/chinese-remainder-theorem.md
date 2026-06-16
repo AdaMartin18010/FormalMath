@@ -137,7 +137,7 @@ $f = 2 \cdot x + 1 \cdot (-(x-1)) = 2x - x + 1 = x + 1$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Ideal.Quotient](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/Quotient.html)[需更新]
+- [Mathlib4 文档 - Ideal.Quotient](https://leanprover-community.github.io/mathlib4_docs/)[需更新]
 - [Wikipedia - Chinese remainder theorem](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
 
 ---

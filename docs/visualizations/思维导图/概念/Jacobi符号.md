@@ -25,6 +25,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Carl_Gustav_Jacob_Jacobi
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Jacobi/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

@@ -119,7 +119,7 @@ $$e^A = \sum_{k=0}^\infty \frac{A^k}{k!} = I + A + \frac{A^2}{2!} + \frac{A^3}{3
 
 ### 在线资源
 
-- [Mathlib4 - Exponential](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/NormedSpace/Exponential.html)
+- [Mathlib4 - Exponential](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

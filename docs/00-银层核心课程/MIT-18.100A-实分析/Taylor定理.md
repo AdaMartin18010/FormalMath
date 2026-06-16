@@ -74,6 +74,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26
 ---
 # Taylor定理（Taylor's Theorem）
 
@@ -644,3 +646,13 @@ rac{1}{6}$$$\square$
 - [Nlab Url](https://ncatlab.org/nlab/show/Taylor's+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Taylor's_theorem)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Taylor)
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **MIT 18.100A 实分析** 的以下内容：
+
+- [比较判别法](docs/00-银层核心课程/MIT-18.100A-实分析/比较判别法.md)
+- [一致连续性定理（Uniform Continuity Theorem）](docs/00-银层核心课程/MIT-18.100A-实分析/一致连续性定理.md)
+- [介值定理](docs/00-银层核心课程/MIT-18.100A-实分析/介值定理.md)

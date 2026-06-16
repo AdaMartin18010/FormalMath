@@ -16,6 +16,8 @@ external_ids:
     tag: 0028
     url: https://stacks.math.columbia.edu/tag/0028
   stacks_tags: []
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 references:
   databases:
   - id: stacks_project

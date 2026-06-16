@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 07GJ
     url: https://stacks.math.columbia.edu/tag/07GJ
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -288,7 +289,7 @@ $$h^i(X) \in \text{Mot}(k) \leadsto H^i_{\text{cris}}(X) \in \text{F-Isoc}(k)$$
 ### 7.4 在线资源
 
 9. **Stacks Project**: [Tag 07GJ](https://stacks.math.columbia.edu/tag/07GJ)
-10. **Stacks Project**: [Chapter Crystalline](https://stacks.math.columbia.edu/chapter/07GI)
+10. **Stacks Project**: [Chapter Crystalline](https://stacks.math.columbia.edu/)
 
 ---
 

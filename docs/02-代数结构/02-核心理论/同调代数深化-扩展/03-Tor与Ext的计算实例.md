@@ -77,6 +77,7 @@ external_ids:
     tag: 00LY
     url: https://stacks.math.columbia.edu/tag/00LY
   stacks_tags: []
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18G15
 ---
 # 15.3 Tor与Ext的计算实例 / Computational Examples of Tor and Ext
 

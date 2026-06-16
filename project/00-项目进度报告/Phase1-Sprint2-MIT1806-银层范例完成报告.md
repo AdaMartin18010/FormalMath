@@ -4,6 +4,8 @@ level: meta
 msc_primary: 00A99
 processed_at: '2026-06-16'
 review_status: draft
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
 ---
 # Phase 1 Sprint 2 — MIT 18.06 银层标准范例完成报告
 

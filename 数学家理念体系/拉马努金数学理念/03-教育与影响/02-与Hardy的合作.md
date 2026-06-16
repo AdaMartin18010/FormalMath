@@ -1,11 +1,14 @@
 ---
 title: 拉马努金与Hardy的合作
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A55
-  - 01A60
-  - 01A70
+- 01A55
+- 01A60
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E6%8B%89%E9%A9%AC%E5%8A%AA%E9%87%91%E4%B8%8EHardy%E7%9A%84%E5%90%88%E4%BD%9C
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E6%8B%89%E9%A9%AC%E5%8A%AA%E9%87%91%E4%B8%8EHardy%E7%9A%84%E5%90%88%E4%BD%9C
 ---
 # 拉马努金与Hardy的合作
 

@@ -101,7 +101,7 @@ $$M = 0$$
 
 ### 在线资源
 
-- [Mathlib4 - LocalRing](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Ideal/LocalRing.html)
+- [Mathlib4 - LocalRing](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

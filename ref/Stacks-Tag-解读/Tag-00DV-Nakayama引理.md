@@ -7,6 +7,7 @@ external_ids:
   stacks_tag:
     tag: 00DV
     url: https://stacks.math.columbia.edu/tag/00DV
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -313,7 +314,7 @@ end FormalMath.Algebra.Nakayama
 
 - **Stacks Project:** https://stacks.math.columbia.edu/tag/00DV
 - **FormalMath对应:** `concept/交换代数/Nakayama引理.md`
-- **mathlib4文档:** https://leanprover-community.github.io/api/latest/Mathlib-RingTheory-Nakayama.html
+- **mathlib4文档:** https://leanprover-community.github.io/
 
 ---
 

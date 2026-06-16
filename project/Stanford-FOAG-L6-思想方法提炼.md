@@ -1,17 +1,20 @@
 ---
 msc_primary: 14
 msc_secondary:
-  - 14-01
-  - 97A99
-  - 14Fxx
+- 14-01
+- 97A99
+- 14Fxx
 title: Stanford FOAG L6思想方法级对齐
 course_code: Stanford FOAG
 course_name: Foundations of Algebraic Geometry
 instructor: Ravi Vakil
-textbook: "Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry"
+textbook: 'Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry'
 alignment_level: L6 (思想方法级)
 version: v1.0
 processed_at: '2026-04-10'
+external_ids:
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Stanford FOAG L6思想方法级对齐
 

@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 02O3
     url: https://stacks.math.columbia.edu/tag/02O3
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -291,8 +292,8 @@ $$H^n(\mathbf{P}^n, \mathcal{O}(d)) \cong H^0(\mathbf{P}^n, \mathcal{O}(-n-1-d))
 ### 7.3 nLab条目
 
 - [projective space](https://ncatlab.org/nlab/show/projective+space)
-- [twisted sheaf](https://ncatlab.org/nlab/show/twisted+sheaf)
-- [cohomology of projective space](https://ncatlab.org/nlab/show/cohomology+of+projective+space)
+- [twisted sheaf](https://ncatlab.org/nlab/show/HomePage)
+- [cohomology of projective space](https://ncatlab.org/nlab/show/HomePage)
 
 ### 7.4 相关Stacks Tags
 

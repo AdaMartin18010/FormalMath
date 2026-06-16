@@ -98,7 +98,7 @@ $$P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}$$
 
 ### 在线资源
 
-- [Mathlib4 - Variance](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Variance.html)
+- [Mathlib4 - Variance](https://leanprover-community.github.io/mathlib4_docs/)
 - [Wikipedia - Chebyshev's inequality](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality)
 
 ---

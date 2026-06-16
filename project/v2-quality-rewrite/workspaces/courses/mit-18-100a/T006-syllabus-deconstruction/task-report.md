@@ -1,9 +1,11 @@
 ---
 title: 'T006: MIT 18.100A Syllabus Deconstruction — Task Report'
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
 ---
 # T006: MIT 18.100A Syllabus Deconstruction — Task Report
 

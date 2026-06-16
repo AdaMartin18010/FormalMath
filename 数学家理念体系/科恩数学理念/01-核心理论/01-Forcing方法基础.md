@@ -1,11 +1,14 @@
 ---
 title: Forcing方法基础
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Forcing%E6%96%B9%E6%B3%95%E5%9F%BA%E7%A1%80
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Forcing%E6%96%B9%E6%B3%95%E5%9F%BA%E7%A1%80
 ---
 # Forcing方法基础
 

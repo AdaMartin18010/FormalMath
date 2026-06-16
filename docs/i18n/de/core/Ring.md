@@ -27,6 +27,8 @@ references:
     isbn: '9780387953854'
     mr_number: MR1878556
     doi: 10.1007/978-1-4613-0041-0
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=16A99
 ---
 # Ring (Algebra)
 

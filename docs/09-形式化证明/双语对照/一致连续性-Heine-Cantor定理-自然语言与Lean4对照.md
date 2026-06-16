@@ -13,6 +13,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Uniform_continuity
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%80%E8%87%B4%E8%BF%9E%E7%BB%AD
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=68V20
 references:
   databases:
   - id: wikidata

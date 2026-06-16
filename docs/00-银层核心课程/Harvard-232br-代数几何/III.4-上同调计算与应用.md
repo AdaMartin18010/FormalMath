@@ -85,6 +85,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/cohomology
   wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
   stacks_search_url: https://stacks.math.columbia.edu/search?query=cohomology
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Harvard 232br - Hartshorne Chapter III §4 习题解答
 
@@ -705,3 +707,13 @@ theorem Ext1_locallyFree_tensor {X : Scheme}
 - [Nlab Url](https://ncatlab.org/nlab/show/cohomology)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Cohomology)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=cohomology)
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Harvard 232br 代数几何** 的以下内容：
+
+- [Harvard 232br - Hartshorne Chapter II §3 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/II.3-态射性质.md)
+- [Harvard 232br - Hartshorne Chapter III §3 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/III.3-Čech上同调与导出上同调.md)
+- [Harvard 232br - Hartshorne Chapter III §3 习题解答](docs/13-代数几何/Harvard-232br-习题解答/III.3-Čech上同调与导出上同调.md)

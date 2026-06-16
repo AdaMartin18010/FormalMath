@@ -61,6 +61,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/isomorphism
   wikipedia_url: https://en.wikipedia.org/wiki/Isomorphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E6%9E%84
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=03B35
 ---
 # Curry-Howard同构 / Curry-Howard Isomorphism
 

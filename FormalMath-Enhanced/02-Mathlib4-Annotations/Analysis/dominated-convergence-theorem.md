@@ -150,8 +150,8 @@ Lebesgue控制收敛定理由Henri Lebesgue在1910年左右证明，是测度论
 
 ### 在线资源
 
-- [Mathlib4 文档 - Bochner Integral][https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Bochner.html](需更新)
-- [Terry Tao - Dominated Convergence][https://terrytao.wordpress.com/2009/01/11/the-dominated-convergence-theorem/](需更新)
+- [Mathlib4 文档 - Bochner Integral][https://leanprover-community.github.io/mathlib4_docs/](需更新)
+- [Terry Tao - Dominated Convergence][https://terrytao.wordpress.com/](需更新)
 
 ---
 

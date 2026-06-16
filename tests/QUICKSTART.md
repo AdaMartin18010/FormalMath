@@ -193,7 +193,7 @@ import responses
 def test_api():
     responses.add(
         responses.GET,
-        'https://api.example.com/data[需更新]',
+        '#[需更新]',
         json={'result': 'success'}
     )
 ```

@@ -105,7 +105,7 @@ $$\lambda_G(s, t) = \min\{|F| : F \subseteq E(G), \text{ 每个 } s\text{-}t\tex
 
 ### 在线资源
 
-- [Mathlib4 - Connectivity](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Connectivity.html)
+- [Mathlib4 - Connectivity](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

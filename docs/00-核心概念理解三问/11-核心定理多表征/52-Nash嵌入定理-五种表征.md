@@ -25,6 +25,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Nash/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53B20
 ---
 # Nash嵌入定理 - 五种表征
 

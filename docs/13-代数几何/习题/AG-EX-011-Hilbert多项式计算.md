@@ -55,6 +55,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/David_Hilbert
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # AG-EX-011: Hilbert多项式计算
 

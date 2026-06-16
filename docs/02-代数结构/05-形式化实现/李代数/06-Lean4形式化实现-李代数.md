@@ -68,6 +68,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Lie+algebra
   wikipedia_url: https://en.wikipedia.org/wiki/Lie_algebra
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9D%8E%E4%BB%A3%E6%95%B0
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=17B99
 ---
 # Lean4形式化实现-李代数
 

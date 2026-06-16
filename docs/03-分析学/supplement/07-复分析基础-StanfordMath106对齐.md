@@ -1,6 +1,8 @@
 ---
-title: "复分析基础 StanfordMath106对齐"
-msc_primary: "26"
+title: 复分析基础 StanfordMath106对齐
+msc_primary: '26'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26
 ---
 # 复分析基础 - Stanford Math 106 深度对齐
 

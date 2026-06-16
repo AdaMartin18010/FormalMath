@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Statistical_inference
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD
   nlab_url: https://ncatlab.org/nlab/show/statistical+inference
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 数学×经济学：计量经济学的统计推断
 

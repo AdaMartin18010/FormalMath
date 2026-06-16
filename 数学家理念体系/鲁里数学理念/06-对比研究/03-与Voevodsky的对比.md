@@ -1,11 +1,14 @@
 ---
 title: 鲁里与Voevodsky的对比
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E9%B2%81%E9%87%8C%E4%B8%8EVoevodsky%E7%9A%84%E5%AF%B9%E6%AF%94
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E9%B2%81%E9%87%8C%E4%B8%8EVoevodsky%E7%9A%84%E5%AF%B9%E6%AF%94
 ---
 # 鲁里与Voevodsky的对比
 

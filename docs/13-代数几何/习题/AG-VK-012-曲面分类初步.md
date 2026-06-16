@@ -52,6 +52,9 @@ references:
     year: 2002
     isbn: '9780199202492'
     mr_number: MR1917232
+external_ids:
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14J10
 ---
 # AG-VK-012: 曲面分类初步
 

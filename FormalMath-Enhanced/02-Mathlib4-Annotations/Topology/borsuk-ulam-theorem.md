@@ -99,7 +99,7 @@ Kneser 图 KG_{n,k} 的色数恰好为 n - 2k + 2。Lovász 在1978年利用 Bor
 
 ### 在线资源
 
-- [Mathlib4 - Homotopy Group](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/HomotopyGroup.html)
+- [Mathlib4 - Homotopy Group](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

@@ -27,6 +27,9 @@ references:
     year: 2002
     isbn: '9780199202492'
     mr_number: MR1917232
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=08%2BMotive%E7%90%86%E8%AE%BA%E4%B8%8E%E6%A0%87%E5%87%86%E7%8C%9C%E6%83%B3
+  nlab_search_url: https://ncatlab.org/nlab/search?query=08%2BMotive%E7%90%86%E8%AE%BA%E4%B8%8E%E6%A0%87%E5%87%86%E7%8C%9C%E6%83%B3
 ---
 ﻿---
 title: Motive理论与标准猜想：Grothendieck的梦想

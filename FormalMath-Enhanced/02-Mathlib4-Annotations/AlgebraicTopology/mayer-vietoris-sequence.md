@@ -110,7 +110,7 @@ $$H_k(S^n) = \begin{cases} \mathbb{Z} & k = 0, n \\ 0 & \text{其他} \end{cases
 
 ### 在线资源
 
-- [Mathlib4 文档 - AlgebraicTopology][https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology.html]
+- [Mathlib4 文档 - AlgebraicTopology][https://leanprover-community.github.io/mathlib4_docs/]
 - **注意**：Mathlib4 中经典的奇异同调 Mayer-Vietoris 序列目前尚未在核心库中完整形式化，但相关同调代数基础（正合序列、导出范畴）已有大量形式化工作。
 
 ---

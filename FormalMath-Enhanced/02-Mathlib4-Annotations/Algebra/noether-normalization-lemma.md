@@ -6,7 +6,7 @@ processed_at: '2026-04-03'
 title: Noether正规化引理 (Noether Normalization Lemma)
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Emmy_Noether
-  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/
 ---
 # Noether正规化引理 (Noether Normalization Lemma)
 

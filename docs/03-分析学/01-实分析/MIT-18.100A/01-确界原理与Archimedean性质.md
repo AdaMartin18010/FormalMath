@@ -86,6 +86,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/supremum
   wikipedia_url: https://en.wikipedia.org/wiki/Infimum_and_supremum
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26A99
 ---
 # 确界原理与 Archimedean 性质
 
@@ -410,3 +412,11 @@ $$\max S \text{ 存在} \Rightarrow \max S = \sup S$$
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **MIT 18.100A Real Analysis** 的以下内容：
+
+- [MIT 18.100A 实分析 - 学习诊断手册](docs/03-分析学/01-实分析/MIT-18.100A-学习诊断手册.md)

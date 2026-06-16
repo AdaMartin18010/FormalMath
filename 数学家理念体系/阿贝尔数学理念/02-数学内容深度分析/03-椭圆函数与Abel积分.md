@@ -12,6 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
   zbmath_url: https://zbmath.org/?q=au:Function
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=33
 references:
   databases:
   - id: zbmath

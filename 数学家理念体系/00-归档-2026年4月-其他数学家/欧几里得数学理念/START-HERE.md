@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Euclid
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/
   wikidata_id: https://www.wikidata.org/entity/Q8747
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01A99
 ---
 # 欧几里得数学理念体系 - 快速入门
 

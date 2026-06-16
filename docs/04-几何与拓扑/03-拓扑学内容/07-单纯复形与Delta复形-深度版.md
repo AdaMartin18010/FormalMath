@@ -54,6 +54,8 @@ references:
     year: 1999
     isbn: '9780226511832'
     mr_number: MR1702278
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=55U10
 ---
 # 单纯复形与Delta复形 - 深度版
 

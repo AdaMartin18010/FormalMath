@@ -58,10 +58,10 @@ lsof -i :9090
 curl  | jq
 
 # 直接测试端点
-curl http://api:8000/metrics[需更新]
+curl #[需更新]
 
 # 检查网络连通性
-docker exec formalmath-prometheus wget -O- http://api:8000/metrics[需更新]
+docker exec formalmath-prometheus wget -O- #[需更新]
 ```
 
 ### 2. Grafana 问题
@@ -71,7 +71,7 @@ docker exec formalmath-prometheus wget -O- http://api:8000/metrics[需更新]
 **排查：**
 ```bash
 # 从 Grafana 容器测试连接
-docker exec formalmath-grafana wget -O- http://prometheus:9090/api/v1/status/targets[需更新]
+docker exec formalmath-grafana wget -O- #[需更新]
 
 # 检查数据源配置
 docker-compose logs grafana | grep "datasource"

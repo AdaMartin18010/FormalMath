@@ -290,7 +290,7 @@ open
 # 设置测试参数
 # - Number of users: 1000
 # - Spawn rate: 100
-# - Host: http://nginx[需更新]
+# - Host: #[需更新]
 ```
 
 ---

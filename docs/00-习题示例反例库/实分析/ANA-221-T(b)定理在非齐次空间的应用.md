@@ -1,7 +1,7 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42B20
+  - 42B20'
 exercise_id: ANA-221
 title: T(b)定理在非齐次空间的应用
 difficulty: 5
@@ -10,11 +10,12 @@ topic: 实分析
 subtopic: 非齐次分析
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=42B20
 ---
-
 # ANA-221: T(b)定理在非齐次空间的应用
 
 **题号**: ANA-221

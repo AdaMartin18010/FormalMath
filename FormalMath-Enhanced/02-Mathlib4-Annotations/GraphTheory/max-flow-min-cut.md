@@ -95,7 +95,7 @@ $$\max |f| = \min_{{(S, T) \text{{ 割}}}} c(S, T)$$
 
 ### 在线资源
 
-- [Mathlib4 - Flow](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Optimization/Flow.html)
+- [Mathlib4 - Flow](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

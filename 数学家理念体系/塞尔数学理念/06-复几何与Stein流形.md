@@ -48,6 +48,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Manifold
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=32
 ---
 # 复几何与Stein流形：Serre从代数到分析的桥梁
 

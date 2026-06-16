@@ -33,6 +33,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Machine_learning
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0
   nlab_url: https://ncatlab.org/nlab/show/machine+learning
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=62
 ---
 # 数据科学与机器学习数学基础 (Data Science and Machine Learning)
 

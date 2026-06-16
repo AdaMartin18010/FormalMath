@@ -24,6 +24,8 @@ references:
     year: 2014
     isbn: '9781107044241'
     mr_number: MR3307165
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18
 ---
 # 15-同调代数 内容索引
 

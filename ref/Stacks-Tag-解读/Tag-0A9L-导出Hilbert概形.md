@@ -11,6 +11,7 @@ external_ids:
     tag: 0A9L
     url: https://stacks.math.columbia.edu/tag/0A9L
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

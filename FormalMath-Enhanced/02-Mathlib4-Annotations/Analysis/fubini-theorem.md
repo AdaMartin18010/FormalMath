@@ -148,7 +148,7 @@ Fubini定理：$E[XY] = \int\int xy f_X(x)f_Y(y) dx dy = E[X]E[Y]$。
 ### 在线资源
 
 - [Mathlib4 文档 - Prod Integral][https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Prod.html](需更新)
-- [Terry Tao - Fubini][https://terrytao.wordpress.com/2010/01/09/254a-notes-0a-an-alternate-approach-to-the-product-measure-extension-theorem/](需更新)
+- [Terry Tao - Fubini][https://terrytao.wordpress.com/](需更新)
 
 ---
 

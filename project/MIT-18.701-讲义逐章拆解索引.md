@@ -4,8 +4,10 @@ msc_primary: 00A99
 course_code: MIT 18.701
 course_name: Algebra I
 instructor: MIT OCW Fall 2010 / Prof. Michael Artin tradition
-textbook: "Michael Artin, Algebra, 2nd Edition"
+textbook: Michael Artin, Algebra, 2nd Edition
 processed_at: '2026-04-17'
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
 ---
 # MIT 18.701 抽象代数 I 讲义逐章拆解索引
 

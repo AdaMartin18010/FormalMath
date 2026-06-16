@@ -1,6 +1,8 @@
 ---
-title: "凸优化基础 StanfordEE364A对齐"
-msc_primary: "00"
+title: 凸优化基础 StanfordEE364A对齐
+msc_primary: '00'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00
 ---
 # 凸优化基础 - Stanford EE364A 深度对齐
 

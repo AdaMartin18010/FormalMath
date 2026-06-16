@@ -22,6 +22,8 @@ references:
     isbn: '9780691080086'
     mr_number: MR0163331
     doi: 10.1515/9781400881802
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=58A30
 ---
 # Frobenius定理 - 五种表征
 

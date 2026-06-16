@@ -21,6 +21,8 @@ references:
     year: 2004
     isbn: '9780691119663'
     doi: 10.1515/9781400828678
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=97
 ---
 # Plancherel定理 (Plancherel Theorem)
 
@@ -155,7 +157,7 @@ $\|f\|_{L^2}^2 = 2a$，$\|\hat{f}\|_{L^2}^2 = 2a$（Parseval等式）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Plancherel][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/Plancherel.html](需更新)
+- [Mathlib4 文档 - Plancherel][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Wikipedia - Plancherel Theorem](https://en.wikipedia.org/wiki/Plancherel_theorem)
 
 ---

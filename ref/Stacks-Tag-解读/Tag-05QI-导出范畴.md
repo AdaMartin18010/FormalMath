@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 05QI
     url: https://stacks.math.columbia.edu/tag/05QI
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -392,7 +393,7 @@ structure DerivedCategory (A : Type u) [Category.{v} A] [Abelian A] where
 - **Stacks Project Chapter 13:** https://stacks.math.columbia.edu/chapter/13
 - **Tag 05QI:** https://stacks.math.columbia.edu/tag/05QI
 - **nLab - Derived Category:** https://ncatlab.org/nlab/show/derived+category
-- **mathlib4 Homology:** https://leanprover-community.github.io/api/latest/Mathlib-Algebra-Homology.html
+- **mathlib4 Homology:** https://leanprover-community.github.io/
 
 ---
 

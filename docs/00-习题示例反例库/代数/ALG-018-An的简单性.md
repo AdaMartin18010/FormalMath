@@ -30,6 +30,8 @@ references:
     year: 1995
     isbn: '9780387942858'
     mr_number: MR1307623
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20D05
 ---
 # ALG-018: $A_n$ 的简单性
 

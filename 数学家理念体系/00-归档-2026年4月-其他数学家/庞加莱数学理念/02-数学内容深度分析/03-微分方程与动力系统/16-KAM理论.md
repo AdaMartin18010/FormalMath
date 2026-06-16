@@ -27,6 +27,8 @@ references:
     author: Andrey N. Kolmogorov
     journal: Doklady Akademii Nauk SSSR
     year: 1954
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01A50
 ---
 # KAM理论：可积系统的微扰理论
 

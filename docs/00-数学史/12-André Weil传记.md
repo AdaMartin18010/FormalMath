@@ -20,6 +20,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/André_Weil
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01
 ---
 # André Weil 传记
 

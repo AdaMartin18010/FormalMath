@@ -93,6 +93,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/morphism
   wikipedia_url: https://en.wikipedia.org/wiki/Morphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Harvard 232br - Hartshorne Chapter II §3 习题解答
 
@@ -435,3 +437,13 @@ theorem closedImmersion_stableUnderBaseChange :
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Harvard 232br 代数几何** 的以下内容：
+
+- [Harvard 232br - Hartshorne Chapter II §2 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/II.2-概形的基本性质.md)
+- [Harvard 232br - Hartshorne Chapter III §2 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/III.2-导出函子与上同调基本性质.md)
+- [Harvard 232br - Hartshorne Chapter III §2 习题解答](docs/13-代数几何/Harvard-232br-习题解答/III.2-导出函子与上同调基本性质.md)

@@ -47,6 +47,8 @@ external_ids:
   stacks_tag:
     tag: 013M
     url: https://stacks.math.columbia.edu/tag/01DM
+  stacks_tag_url: https://stacks.math.columbia.edu/tag/01FP
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18G40
 ---
 # Leray谱序列
 

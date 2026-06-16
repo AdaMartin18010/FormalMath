@@ -60,6 +60,8 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Karl_Weierstrass
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26A99
 ---
 # Bolzano-Weierstrass 定理
 

@@ -1,11 +1,14 @@
 ---
 title: Motive的构造
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Motive%E7%9A%84%E6%9E%84%E9%80%A0
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Motive%E7%9A%84%E6%9E%84%E9%80%A0
 ---
 # Motive的构造
 

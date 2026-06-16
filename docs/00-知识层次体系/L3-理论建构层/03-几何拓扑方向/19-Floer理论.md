@@ -28,6 +28,8 @@ references:
     journal: Communications in Mathematical Physics
     year: 1988
     doi: 10.1007/BF01223490
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 19 Floer理论
 

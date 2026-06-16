@@ -89,7 +89,7 @@ function DocumentPage({ documentId, roomId, userId, userName }) {
       roomId={roomId}
       userId={userId}
       userName={userName}
-      userAvatar="https://example.com/avatar.jpg[需更新]"
+      userAvatar="#[需更新]"
       initialContent="# 欢迎使用协同编辑"
       showChat={true}
       showPresence={true}
@@ -141,7 +141,7 @@ function Sidebar() {
       roomId="room-123"
       userId="user-456"
       userName="张三"
-      userAvatar="https://example.com/avatar.jpg[需更新]"
+      userAvatar="#[需更新]"
       onClose={() => setShowChat(false)}
     />
   );

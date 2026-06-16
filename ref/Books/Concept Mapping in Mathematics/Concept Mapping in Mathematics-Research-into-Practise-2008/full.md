@@ -3629,7 +3629,7 @@ Hansson, O. (2005). Preservice teachers' view on  $y = x + 5$  and  $y = \pi r^2
 Knuth, E., & Peressini, D. (2001). A theoretical framework for examining discourse in mathematics classrooms. *Focus on Learning Problems in Mathematics*, 23(2 & 3), 5-22.
 Liyanage, S., & Thomas, M. (2002). Characterising secondary school mathematics lessons using teachers' pedagogical concept maps. Proceedings of the 25th annual conference of the Mathematics Education Research Group of Australasia (MERGA-25), July 7–10, 2002 (pp. 425–432). New Zealand: University of Auckland.
 Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (Eds.). (1998). Teaching science for understanding. A human constructivistic view. San Diego, CA, London: Academic Press.
-Moschkovitch, J. (2004). Using two languages when learning mathematics. Retrieved on February 20, 2008 from http://math.arizona.edu/~cemela/spanish/content/workingpapers/UsingTwoLanguages.pdf[需更新]
+Moschkovitch, J. (2004). Using two languages when learning mathematics. Retrieved on February 20, 2008 from https://math.arizona.edu/[需更新]
 
 Novak, J. D. (1985). Metalearning and metaknowledge strategies to help students learn how to learn. In L. H. West & A. L. Pines (Eds.), Cognitive structure and conceptual change (pp. 189-209). Orlando, FL: Academic Press.
 Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Academic Press.

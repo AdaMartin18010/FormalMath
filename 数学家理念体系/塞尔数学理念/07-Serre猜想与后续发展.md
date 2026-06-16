@@ -59,6 +59,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1%E5%BD%A2%E5%BC%8F
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Modular%20form
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=11
 ---
 # Serre猜想与后续发展：从模形式到Langlands纲领
 

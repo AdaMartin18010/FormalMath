@@ -8,7 +8,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
   nlab_url: https://ncatlab.org/nlab/show/algebra
-  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/von-Neumann/
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/
 ---
 # von Neumann代数
 

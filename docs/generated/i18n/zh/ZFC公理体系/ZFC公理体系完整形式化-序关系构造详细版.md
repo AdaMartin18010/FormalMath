@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Relation_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%85%B3%E7%B3%BB
   nlab_url: https://ncatlab.org/nlab/show/relation
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 <div class="language-switcher">
 

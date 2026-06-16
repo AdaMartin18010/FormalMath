@@ -11,6 +11,7 @@ reviewer: AI Mathematical Reviewer
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=68V20
 references:
   databases:
   - id: wikidata

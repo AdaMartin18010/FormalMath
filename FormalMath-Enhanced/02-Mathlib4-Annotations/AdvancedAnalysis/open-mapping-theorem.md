@@ -108,7 +108,7 @@ end Analysis
 
 ### 在线资源
 
-- [Mathlib4 - Banach](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/NormedSpace/Banach.html)
+- [Mathlib4 - Banach](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

@@ -101,7 +101,7 @@ $$Ax = b \text{ 有解 } \iff b \perp \ker(A^T)$$
 
 ### 在线资源
 
-- [Mathlib4 - LinearMap](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra.html)
+- [Mathlib4 - LinearMap](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

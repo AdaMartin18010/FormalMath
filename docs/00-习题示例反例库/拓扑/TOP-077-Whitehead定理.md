@@ -31,6 +31,8 @@ references:
     year: 1999
     isbn: '9780226511832'
     mr_number: MR1702278
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=55P10
 ---
 # Whitehead定理
 

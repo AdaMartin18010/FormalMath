@@ -9,6 +9,7 @@ course: MIT 18.701 抽象代数
 external_ids:
   ocw_url: https://ocw.mit.edu/
   ocw_ps_url: https://ocw.mit.edu/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
 references:
   textbooks:
   - title: Algebra

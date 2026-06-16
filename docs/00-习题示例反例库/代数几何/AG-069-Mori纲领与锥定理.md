@@ -16,6 +16,7 @@ processed_at: '2026-04-10'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Shigefumi_Mori
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Mori/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14E30
 ---
 # AG-069: Mori纲领与锥定理
 

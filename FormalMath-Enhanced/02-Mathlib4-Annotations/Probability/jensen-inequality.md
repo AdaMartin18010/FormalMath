@@ -102,7 +102,7 @@ $$\psi(\mathbb{E}[X]) \geq \mathbb{E}[\psi(X)]$$
 
 ### 在线资源
 
-- [Mathlib4 - Moments](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Moments.html)
+- [Mathlib4 - Moments](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

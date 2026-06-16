@@ -75,6 +75,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/representation+theory
   wikipedia_url: https://en.wikipedia.org/wiki/Representation_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%A1%A8%E7%A4%BA%E8%AE%BA
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20A05
 ---
 # 表示论算法Python实现 - 国际标准版
 

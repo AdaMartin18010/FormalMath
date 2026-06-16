@@ -1,7 +1,7 @@
 ---
-msc_primary: 57
+msc_primary: '57
 
-  - 57M50
+  - 57M50'
 exercise_id: TOP-124
 title: sutured manifold理论与分解
 difficulty: 4
@@ -10,11 +10,12 @@ topic: 拓扑
 subtopic: 三维流形
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=57M50
 ---
-
 # TOP-124: sutured manifold理论与分解
 
 **题号**: TOP-124

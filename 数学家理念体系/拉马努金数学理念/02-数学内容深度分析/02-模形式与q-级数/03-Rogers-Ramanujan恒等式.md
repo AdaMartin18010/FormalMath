@@ -1,11 +1,14 @@
 ---
 title: Rogers-Ramanujan恒等式：组合数学的经典
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A55
-  - 01A60
-  - 01A70
+- 01A55
+- 01A60
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Rogers-Ramanujan%E6%81%92%E7%AD%89%E5%BC%8F%EF%BC%9A%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E7%BB%8F%E5%85%B8
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Rogers-Ramanujan%E6%81%92%E7%AD%89%E5%BC%8F%EF%BC%9A%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E7%9A%84%E7%BB%8F%E5%85%B8
 ---
 # Rogers-Ramanujan恒等式：组合数学的经典
 

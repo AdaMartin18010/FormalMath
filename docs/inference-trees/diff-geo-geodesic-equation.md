@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Geodesic
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%8B%E5%9C%B0%E7%BA%BF
   nlab_url: https://ncatlab.org/nlab/show/geodesic
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

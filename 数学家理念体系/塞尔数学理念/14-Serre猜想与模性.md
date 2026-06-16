@@ -59,6 +59,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Number%20theory
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=11
 ---
 # Serre模性猜想：从数论到表示论的桥梁
 

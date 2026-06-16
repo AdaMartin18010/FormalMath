@@ -1,14 +1,17 @@
 ---
 msc_primary: 20
 msc_secondary:
-  - 20-01
+- 20-01
 title: MIT 18.701 Algebra I 语义级对齐手册
 processed_at: '2026-04-09'
 stacks_tags:
-  - 18.701
+- 18.701
 course_code: MIT 18.701
 course_name: Algebra I
 instructor: Davesh Maulik (2025-2026)
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20
 ---
 # MIT 18.701 Algebra I 语义级对齐手册
 

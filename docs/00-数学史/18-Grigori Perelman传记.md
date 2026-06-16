@@ -20,6 +20,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Grigori_Perelman
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Perelman/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01
 ---
 # Grigori Perelman 传记
 

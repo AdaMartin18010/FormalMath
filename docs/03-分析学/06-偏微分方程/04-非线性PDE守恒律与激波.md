@@ -24,6 +24,8 @@ references:
     publisher: Wiley
     year: 2008
     isbn: '9780470054567'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=35L65
 ---
 # 04 非线性PDE守恒律与激波 / Conservation Laws and Shock Waves in Nonlinear PDE
 

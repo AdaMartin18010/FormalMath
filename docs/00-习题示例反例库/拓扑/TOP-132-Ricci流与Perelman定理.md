@@ -16,6 +16,7 @@ processed_at: '2026-04-10'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Grigori_Perelman
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Perelman/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53C44
 ---
 # TOP-132: Ricci流与Perelman定理
 

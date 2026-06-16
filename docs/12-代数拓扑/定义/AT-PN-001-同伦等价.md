@@ -53,6 +53,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Homotopy
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E4%BC%A6
   nlab_url: https://ncatlab.org/nlab/show/homotopy
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=55A99
 ---
 # AT-PN-001: 同伦等价 (Homotopy Equivalence)
 

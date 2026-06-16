@@ -26,6 +26,8 @@ references:
     publisher: Addison-Wesley
     year: 1994
     isbn: '9780131558362'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=68V15
 ---
 # 形式化证明与AI / Formal Proof and AI
 

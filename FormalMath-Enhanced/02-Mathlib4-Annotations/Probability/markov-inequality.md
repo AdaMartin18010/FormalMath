@@ -96,7 +96,7 @@ $$P(X \geq \varepsilon) \leq \frac{\mathbb{E}[X]}{\varepsilon}$$
 
 ### 在线资源
 
-- [Mathlib4 - Lebesgue Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Lebesgue.html)
+- [Mathlib4 - Lebesgue Integral](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

@@ -94,6 +94,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/differential+form
   wikipedia_url: https://en.wikipedia.org/wiki/Differential_form
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Harvard 232br - Hartshorne Chapter II §8 习题解答
 
@@ -447,3 +449,13 @@ theorem pform_locallyFree {X : Scheme} {k : Type*} [Field k] [IsAlgClosed k]
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Harvard 232br 代数几何** 的以下内容：
+
+- [Harvard 232br - Hartshorne Chapter IV §5–§6 习题解答](docs/13-代数几何/Harvard-232br-习题解答/IV.5-IV.6-曲线深化.md)
+- [Harvard 232br - Hartshorne Chapter II §6 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/II.6-除子.md)
+- [Harvard 232br - Hartshorne Chapter II §7 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/II.7-射影态射.md)

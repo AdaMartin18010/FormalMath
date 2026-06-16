@@ -10,6 +10,7 @@ review_status: draft
 external_ids:
   ocw_url: https://ocw.mit.edu/
   ocw_ps_url: https://ocw.mit.edu/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
 references:
   textbooks:
   - title: Introduction to Linear Algebra

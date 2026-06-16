@@ -351,7 +351,7 @@ lake build FormalMath
 ### B. 相关链接
 
 - [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新]
-- [Lean4 API](https://lean-lang.org/api/)
+- [Lean4 API](https://lean-lang.org/)
 - [Mathlib4 GitHub](https://github.com/leanprover-community/mathlib4)
 
 ---

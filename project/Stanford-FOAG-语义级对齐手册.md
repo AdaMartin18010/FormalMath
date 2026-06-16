@@ -1,13 +1,16 @@
 ---
 msc_primary: 14
 msc_secondary:
-  - 14-01
+- 14-01
 title: Stanford FOAG (Foundations of Algebraic Geometry) 语义级对齐手册
 course_code: Stanford Math 216
 course_name: Foundations of Algebraic Geometry
 instructor: Ravi Vakil
 version: FOAG Oct 2025
 processed_at: '2026-04-09'
+external_ids:
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Stanford FOAG 语义级对齐手册
 

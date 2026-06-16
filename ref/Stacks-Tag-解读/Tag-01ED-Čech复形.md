@@ -7,6 +7,7 @@ external_ids:
   stacks_tag:
     tag: 01ED
     url: https://stacks.math.columbia.edu/tag/01ED
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

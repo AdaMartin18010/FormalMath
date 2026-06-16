@@ -3,6 +3,8 @@ msc_primary: 00A99
 msc_secondary:
 - 97A99
 title: demo input
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 示例文档
 

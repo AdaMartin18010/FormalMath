@@ -22,6 +22,8 @@ references:
     isbn: '9780521675994'
     mr_number: MR2448845
     doi: 10.1017/CBO9780511811029
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=97A99
 ---
 # FormalMath参考文献格式标准 - 2025年1月
 

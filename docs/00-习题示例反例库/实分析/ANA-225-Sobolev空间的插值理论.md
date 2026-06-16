@@ -1,7 +1,7 @@
 ---
-msc_primary: 46
+msc_primary: '46
 
-  - 46E35
+  - 46E35'
 exercise_id: ANA-225
 title: Sobolev空间的插值理论
 difficulty: 3
@@ -10,11 +10,12 @@ topic: 实分析
 subtopic: 插值理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=46E35
 ---
-
 # ANA-225: Sobolev空间的插值理论
 
 **题号**: ANA-225

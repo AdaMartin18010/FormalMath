@@ -45,6 +45,8 @@ references:
     isbn: '9789811017896'
     mr_number: MR3728289
     doi: 10.1007/978-981-10-1789-6
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26A24
 ---
 # ANA-036: L'Hôpital法则应用
 

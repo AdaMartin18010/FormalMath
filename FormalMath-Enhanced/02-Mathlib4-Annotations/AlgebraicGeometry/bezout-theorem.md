@@ -98,7 +98,7 @@ $$\sum_{{p \in C_1 \cap C_2}} m_p(C_1, C_2) = d_1 \cdot d_2$$
 
 ### 在线资源
 
-- [Mathlib4 - Bezout](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicGeometry/Bezout.html)
+- [Mathlib4 - Bezout](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

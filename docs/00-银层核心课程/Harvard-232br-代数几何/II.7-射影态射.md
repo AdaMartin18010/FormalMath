@@ -95,6 +95,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/morphism
   wikipedia_url: https://en.wikipedia.org/wiki/Morphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Harvard 232br - Hartshorne Chapter II §7 习题解答
 
@@ -502,3 +504,13 @@ theorem veronese_isClosedImmersion (n d : ℕ) [n.AtLeastTwo] (hd : 2 ≤ d)
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Harvard 232br 代数几何** 的以下内容：
+
+- [Harvard 232br - Hartshorne Chapter IV §5–§6 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/IV.5-IV.6-曲线深化.md)
+- [Harvard 232br - Hartshorne Chapter IV §5–§6 习题解答](docs/13-代数几何/Harvard-232br-习题解答/IV.5-IV.6-曲线深化.md)
+- [Harvard 232br - Hartshorne Chapter II §6 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/II.6-除子.md)

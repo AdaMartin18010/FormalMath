@@ -7,6 +7,7 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Isaac_Newton
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Newton/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Newton 法求根 - 工作示例
 

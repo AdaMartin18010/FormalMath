@@ -22,7 +22,7 @@ processed_at: '2026-04-05'
 
 ```bash
 # 克隆项目
-git clone https://github.com/FormalMath-enhanced.git
+git clone https://github.com/FormalMath
 cd formalmath-enhanced
 
 # 运行部署前检查

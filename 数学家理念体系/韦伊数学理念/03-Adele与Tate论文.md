@@ -47,6 +47,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%83%E5%92%8C%E5%88%86%E6%9E%90
   nlab_url: https://ncatlab.org/nlab/show/harmonic+analysis
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=11
 ---
 # Adele与Tate论文：Weil的调和分析革命
 

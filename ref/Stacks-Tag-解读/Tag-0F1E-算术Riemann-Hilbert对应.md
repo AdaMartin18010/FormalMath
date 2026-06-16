@@ -9,6 +9,7 @@ external_ids:
   stacks_tag:
     tag: 0F1E
     url: https://stacks.math.columbia.edu/tag/0F1E
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

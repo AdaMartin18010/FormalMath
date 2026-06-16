@@ -1,9 +1,12 @@
 ---
 title: concept文件夹完成确认 - 最终版
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=concept%E6%96%87%E4%BB%B6%E5%A4%B9%E5%AE%8C%E6%88%90%E7%A1%AE%E8%AE%A4%2B-%2B%E6%9C%80%E7%BB%88%E7%89%88
+  nlab_search_url: https://ncatlab.org/nlab/search?query=concept%E6%96%87%E4%BB%B6%E5%A4%B9%E5%AE%8C%E6%88%90%E7%A1%AE%E8%AE%A4%2B-%2B%E6%9C%80%E7%BB%88%E7%89%88
 ---
 ﻿---
 

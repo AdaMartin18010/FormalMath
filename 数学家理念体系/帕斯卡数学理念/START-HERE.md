@@ -1,12 +1,15 @@
 ---
 title: 帕斯卡数学理念体系 - 快速入门
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A45
-  - 01A40
-  - 01A70
-  - 00A99
+- 01A45
+- 01A40
+- 01A70
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E5%B8%95%E6%96%AF%E5%8D%A1%E6%95%B0%E5%AD%A6%E7%90%86%E5%BF%B5%E4%BD%93%E7%B3%BB%2B-%2B%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E5%B8%95%E6%96%AF%E5%8D%A1%E6%95%B0%E5%AD%A6%E7%90%86%E5%BF%B5%E4%BD%93%E7%B3%BB%2B-%2B%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8
 ---
 # 布莱兹·帕斯卡数学理念体系 - 快速入门
 

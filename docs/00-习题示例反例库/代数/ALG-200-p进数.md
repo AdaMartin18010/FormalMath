@@ -28,6 +28,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/P-adic_number
   stacks_search_url: https://stacks.math.columbia.edu/search?query=p%E8%BF%9B%E6%95%B0
   nlab_url: https://ncatlab.org/nlab/show/p-adic+number
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # p-进数
 

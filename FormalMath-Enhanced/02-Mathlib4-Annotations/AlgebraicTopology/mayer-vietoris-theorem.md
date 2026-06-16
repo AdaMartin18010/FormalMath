@@ -110,7 +110,7 @@ $$H_k(S^n) \cong H_{{k-1}}(S^{{n-1}})$$
 
 ### 在线资源
 
-- [Mathlib4 - MayerVietoris](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/MayerVietoris.html)
+- [Mathlib4 - MayerVietoris](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

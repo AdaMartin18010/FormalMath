@@ -217,7 +217,7 @@ manualChunks: {
 **配置**: `index.html`
 
 ```html
-<link rel="preconnect" href="https://fonts.googleapis.com[需更新]">
+<link rel="preconnect" href="https://fonts.google.com/[需更新]">
 <link rel="preload" href="/src/main.tsx" as="script" type="module" />
 ```
 

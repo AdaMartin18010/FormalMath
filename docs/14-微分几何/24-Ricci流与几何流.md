@@ -28,6 +28,8 @@ references:
     publisher: American Mathematical Society
     year: 2007
     msc: 57M40
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53C05
 ---
 # Ricci流与几何流
 

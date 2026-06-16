@@ -5,6 +5,8 @@ msc_secondary:
 - 30C35
 - 30E20
 title: Princeton 复分析 课程对齐
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=30
 ---
 # Princeton 复分析核心内容
 

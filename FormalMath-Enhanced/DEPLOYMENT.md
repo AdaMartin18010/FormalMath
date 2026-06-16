@@ -111,7 +111,7 @@ curl
 curl
 
 # 前端页面
-open http://localhost[需更新]
+open #[需更新]
 ```
 
 ## 🔧 高级配置

@@ -75,6 +75,8 @@ external_ids:
   ocw_ps_url: https://ocw.mit.edu/
   wikipedia_url: https://en.wikipedia.org/wiki/Karl_Weierstrass
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26A99
 ---
 # Weierstrass M-判别法
 
@@ -303,3 +305,13 @@ $$|a_n x^n| \leq |a_n| r^n = |a_n x_0^n| \cdot \left(\frac{r}{x_0}\right)^n \leq
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **MIT 18.100A Real Analysis** 的以下内容：
+
+- [中值定理（Mean Value Theorem）](docs/03-分析学/01-实分析/MIT-18.100A/04-中值定理.md)
+- [比较判别法与比值/根值判别法](docs/03-分析学/01-实分析/MIT-18.100A/05-比较判别法与比值根值判别法.md)
+- [Taylor 定理（Taylor's Theorem）](docs/03-分析学/01-实分析/MIT-18.100A/06-Taylor定理.md)

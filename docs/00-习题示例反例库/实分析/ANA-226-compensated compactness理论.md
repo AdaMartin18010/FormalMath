@@ -1,7 +1,7 @@
 ---
-msc_primary: 35
+msc_primary: '35
 
-  - 35L65
+  - 35L65'
 exercise_id: ANA-226
 title: compensated compactness理论
 difficulty: 4
@@ -10,11 +10,12 @@ topic: 实分析
 subtopic: 非线性双曲方程
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=35L65
 ---
-
 # ANA-226: compensated compactness理论
 
 **题号**: ANA-226

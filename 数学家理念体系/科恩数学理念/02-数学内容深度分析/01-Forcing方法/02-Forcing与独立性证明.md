@@ -1,11 +1,14 @@
 ---
 title: Forcing与独立性证明
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Forcing%E4%B8%8E%E7%8B%AC%E7%AB%8B%E6%80%A7%E8%AF%81%E6%98%8E
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Forcing%E4%B8%8E%E7%8B%AC%E7%AB%8B%E6%80%A7%E8%AF%81%E6%98%8E
 ---
 # Forcing与独立性证明
 

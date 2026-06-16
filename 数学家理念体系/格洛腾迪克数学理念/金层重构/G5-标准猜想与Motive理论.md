@@ -27,6 +27,9 @@ references:
     year: 2002
     isbn: '9780199202492'
     mr_number: MR1917232
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=G5%2B%E6%A0%87%E5%87%86%E7%8C%9C%E6%83%B3%E4%B8%8EMotive%E7%90%86%E8%AE%BA
+  nlab_search_url: https://ncatlab.org/nlab/search?query=G5%2B%E6%A0%87%E5%87%86%E7%8C%9C%E6%83%B3%E4%B8%8EMotive%E7%90%86%E8%AE%BA
 ---
 ﻿---
 title: "标准猜想与 Motive 理论"

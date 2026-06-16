@@ -34,6 +34,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53B25
 ---
 # 高斯方程与Codazzi方程
 

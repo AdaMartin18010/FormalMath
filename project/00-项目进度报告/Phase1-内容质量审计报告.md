@@ -1,7 +1,7 @@
 ---
 title: FormalMath Phase 1 内容质量审计报告
 level: meta
-processed_at: '2026-06-16T16:02:00.740528'
+processed_at: '2026-06-16T17:39:47.109519'
 review_status: draft
 ---
 
@@ -40,7 +40,7 @@ review_status: draft
 | exercise | 209 | 69.7% |
 | solution | 116 | 38.7% |
 | motivation | 121 | 40.3% |
-| prerequisite | 17 | 5.7% |
+| prerequisite | 55 | 18.3% |
 | common_mistake | 80 | 26.7% |
 | references | 240 | 80.0% |
 
@@ -54,11 +54,11 @@ review_status: draft
 | MR | 528 |
 | ZBMATH | 46 |
 | WIKIDATA | 165 |
-| STACKS_TAG | 4 |
-| MACTUTOR | 40 |
+| STACKS_TAG | 5 |
+| MACTUTOR | 38 |
 
 - 平均引用密度：2.22 条精确标识符 / 千字
-- 含外部对齐标识（external_ids）的文档：175 / 300 (58.3%)
+- 含外部对齐标识（external_ids）的文档：245 / 300 (81.7%)
 
 ## 五、Frontmatter 与元数据问题
 
@@ -77,7 +77,7 @@ review_status: draft
 2. **证明覆盖率**: 75.3% 的样本文档包含「证明」，核心课程需大幅提升。
 3. **习题覆盖率**: 69.7% 的样本文档包含「习题」，银层课程需每章配套习题。
 4. **引用密度**: 平均 2.22 条/千字，远低于目标 2~3 条/千字。
-5. **外部对齐**: 仅 58.3% 文档含 external_ids，语义对齐任重道远。
+5. **外部对齐**: 仅 81.7% 文档含 external_ids，语义对齐任重道远。
 6. **空壳文档**: 7 篇样本（2.3%）字数少于 300，建议合并或归档。
 
 ## 八、下一阶段行动

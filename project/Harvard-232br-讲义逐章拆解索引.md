@@ -4,8 +4,10 @@ msc_primary: 00A99
 course_code: Harvard Math 232br
 course_name: Algebraic Geometry II (Cohomology)
 instructor: Aaron Landesman / Man-Wai Cheung / Joe Harris tradition
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
 processed_at: '2026-04-17'
+external_ids:
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
 ---
 # Harvard Math 232br 代数几何与上同调讲义逐章拆解索引
 

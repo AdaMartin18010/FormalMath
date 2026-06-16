@@ -13,6 +13,7 @@ external_ids:
     tag: 00GH
     url: https://stacks.math.columbia.edu/tag/00GH
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=13B22
 references:
   databases:
   - id: stacks_project

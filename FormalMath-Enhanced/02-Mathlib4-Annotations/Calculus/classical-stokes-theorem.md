@@ -104,7 +104,7 @@ $\nabla \times F = (0, 0, 2)$，曲面积分 $= 2 \cdot \pi = 2\pi$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Manifold][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html](需更新)
+- [Mathlib4 文档 - Manifold][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 
 ---
 

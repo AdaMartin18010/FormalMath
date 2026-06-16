@@ -8,6 +8,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20D20
 references:
   databases:
   - id: wikidata

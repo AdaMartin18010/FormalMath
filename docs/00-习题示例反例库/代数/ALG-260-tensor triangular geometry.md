@@ -1,7 +1,7 @@
 ---
-msc_primary: 18
+msc_primary: '18
 
-  - 18G80
+  - 18G80'
 exercise_id: ALG-260
 title: tensor triangular geometry
 difficulty: 4
@@ -10,11 +10,12 @@ topic: 代数
 subtopic: 张量三角几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18G80
 ---
-
 # ALG-260: tensor triangular geometry
 
 **题号**: ALG-260

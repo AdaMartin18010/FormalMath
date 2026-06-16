@@ -1,9 +1,11 @@
 ---
 title: MIT 18.06 / 18.700 Linear Algebra 定义对齐手册（L3 语义对齐）
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
 ---
 # MIT 18.06 / 18.700 Linear Algebra 定义对齐手册（L3 语义对齐）
 

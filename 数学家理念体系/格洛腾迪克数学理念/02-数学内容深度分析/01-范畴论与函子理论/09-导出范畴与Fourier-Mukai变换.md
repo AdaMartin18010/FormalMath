@@ -52,6 +52,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Category
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18
 ---
 ## 1. 引言：从Grothendieck到Mukai的桥梁
 

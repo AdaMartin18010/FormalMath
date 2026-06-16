@@ -36,6 +36,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Algorithm
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E6%B3%95
   nlab_url: https://ncatlab.org/nlab/show/algorithm
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=94A60
 ---
 # RSA加密算法流程可视化
 

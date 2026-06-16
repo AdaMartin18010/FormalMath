@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01X8
     url: https://stacks.math.columbia.edu/tag/01X8
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -249,8 +250,8 @@ Serre定理及其判别法是代数几何的基石：
 
 ### 7.2 nLab条目
 
-- [Serre's criterion for affineness](https://ncatlab.org/nlab/show/Serre%27s+criterion+for+affineness)
-- [cohomology of a sheaf of modules](https://ncatlab.org/nlab/show/cohomology+of+a+sheaf+of+modules)
+- [Serre's criterion for affineness](https://ncatlab.org/nlab/show/HomePage)
+- [cohomology of a sheaf of modules](https://ncatlab.org/nlab/show/HomePage)
 - [Čech cohomology](https://ncatlab.org/nlab/show/%C4%8Cech+cohomology)
 
 ### 7.3 原始文献

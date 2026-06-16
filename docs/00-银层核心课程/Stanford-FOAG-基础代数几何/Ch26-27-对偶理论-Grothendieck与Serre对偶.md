@@ -96,6 +96,8 @@ external_ids:
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Serre%E5%AF%B9%E5%81%B6
   nlab_url: https://ncatlab.org/nlab/show/Serre+duality
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14B15
 ---
 # Ch 26–27: 对偶理论——Grothendieck 对偶与 Serre 对偶
 
@@ -622,3 +624,11 @@ $$\chi(\mathcal{E}) = \sum_{j=0}^n (-1)^{n-j} h^j(\mathcal{E}^\vee \otimes \omeg
 - [Foag Pdf Url](https://math.stanford.edu/~vakil/216blog/)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Alexander_Grothendieck)
 - [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/)
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Stanford FOAG 基础代数几何** 的以下内容：
+
+- [Ch 23–25: Smooth / Étale / Flat 态射深入证明](docs/00-银层核心课程/Stanford-FOAG-基础代数几何/Ch23-25-smooth-etale-flat态射深入证明.md)

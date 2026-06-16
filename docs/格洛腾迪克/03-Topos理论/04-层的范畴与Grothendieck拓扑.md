@@ -13,6 +13,7 @@ external_ids:
   stacks_tag:
     tag: 00VH
     url: https://stacks.math.columbia.edu/tag/00VH
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18F10
 references:
   databases:
   - id: stacks_project

@@ -146,6 +146,7 @@ external_ids:
     tag: 01DX
     url: https://stacks.math.columbia.edu/tag/01DX
   stacks_tags: []
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14F17
 ---
 # 层的上同调与 Čech 上同调
 

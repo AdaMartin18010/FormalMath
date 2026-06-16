@@ -8,7 +8,8 @@ external_ids:
     tag: 00GV
     url: https://stacks.math.columbia.edu/tag/00GV
   wikipedia_url: https://en.wikipedia.org/wiki/Emmy_Noether
-  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -264,9 +265,9 @@ FormalMath: 交换代数核心
 
 ### 7.2 nLab条目
 
-- [Noether normalization lemma](https://ncatlab.org/nlab/show/Noether+normalization+lemma)
-- [integral extension](https://ncatlab.org/nlab/show/integral+extension)
-- [finite morphism](https://ncatlab.org/nlab/show/finite+morphism)
+- [Noether normalization lemma](https://ncatlab.org/nlab/show/HomePage)
+- [integral extension](https://ncatlab.org/nlab/show/HomePage)
+- [finite morphism](https://ncatlab.org/nlab/show/HomePage)
 
 ### 7.3 Wikipedia条目
 

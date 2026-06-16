@@ -54,6 +54,8 @@ references:
     year: 2002
     isbn: '9780199202492'
     mr_number: MR1917232
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # AG-ETH-008: 维数理论的统一视角 (*Einheitliche Sicht der Dimensionstheorie*)
 

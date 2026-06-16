@@ -76,7 +76,7 @@ uvicorn.run("main:app", host="0.0.0.0", port=443, **config)
 
 ```env
 # 生产环境 - 明确指定允许的源
-CORS_ORIGINS=["https://formalmath.example.com[需更新]", "https://app.formalmath.example.com[需更新]"]
+CORS_ORIGINS=["https://formalmath.example.com[需更新]", "#[需更新]"]
 CORS_ALLOW_CREDENTIALS=true
 CORS_ALLOW_METHODS=["GET", "POST", "PUT", "DELETE", "OPTIONS"]
 CORS_ALLOW_HEADERS=["Content-Type", "Authorization", "X-Request-ID"]
@@ -356,7 +356,7 @@ pip install -U package_name
 docker-compose -f docker-compose.security.yml restart
 
 # 3. 验证更新
-curl -s https://api.formalmath.example.com/health[需更新]
+curl -s #[需更新]
 
 # 4. 监控日志
 docker logs -f formalmath_api

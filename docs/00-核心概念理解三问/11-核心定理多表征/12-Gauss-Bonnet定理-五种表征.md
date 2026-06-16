@@ -24,6 +24,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53A05
 ---
 # Gauss-Bonnet定理 - 五种表征
 

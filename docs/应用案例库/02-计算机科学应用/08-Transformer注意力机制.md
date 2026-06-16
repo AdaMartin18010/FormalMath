@@ -29,6 +29,8 @@ references:
     journal: Advances in Neural Information Processing Systems
     year: 2017
     arxiv_id: '1706.03762'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Transformer注意力机制的数学原理
 

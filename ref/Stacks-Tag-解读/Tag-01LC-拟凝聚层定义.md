@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01LC
     url: https://stacks.math.columbia.edu/tag/01LC
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -239,7 +240,7 @@ FormalMath: 层与上同调
 
 - [quasi-coherent sheaf](https://ncatlab.org/nlab/show/quasi-coherent+sheaf)
 - [coherent sheaf](https://ncatlab.org/nlab/show/coherent+sheaf)
-- [module over a ringed space](https://ncatlab.org/nlab/show/module+over+a+ringed+space)
+- [module over a ringed space](https://ncatlab.org/nlab/show/HomePage)
 
 ### 7.3 Wikipedia条目
 

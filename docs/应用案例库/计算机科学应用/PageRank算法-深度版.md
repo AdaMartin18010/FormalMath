@@ -37,6 +37,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Markov_chain
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E9%93%BE
   nlab_url: https://ncatlab.org/nlab/show/Markov+chain
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=15A18
 ---
 # PageRank算法：马尔可夫链视角下的网络重要性度量（深度教学版）
 

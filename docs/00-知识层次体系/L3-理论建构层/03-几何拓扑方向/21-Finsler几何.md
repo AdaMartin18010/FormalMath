@@ -1,9 +1,11 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: 21 Finsler几何
 processed_at: '2026-04-05'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 21 Finsler几何
 

@@ -1,11 +1,14 @@
 ---
 title: 开始学习：伍丁数学理念
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BC%8D%E4%B8%81%E6%95%B0%E5%AD%A6%E7%90%86%E5%BF%B5
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0%EF%BC%9A%E4%BC%8D%E4%B8%81%E6%95%B0%E5%AD%A6%E7%90%86%E5%BF%B5
 ---
 # 开始学习：伍丁数学理念
 

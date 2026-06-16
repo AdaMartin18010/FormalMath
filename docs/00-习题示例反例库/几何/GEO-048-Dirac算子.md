@@ -29,6 +29,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E5%AD%90
   nlab_url: https://ncatlab.org/nlab/show/operator
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Dirac/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Dirac算子与指标
 

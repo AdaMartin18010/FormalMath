@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14D07
+  - 14D07'
 exercise_id: AG-075
 title: Hodge理论中的degeneration性质
 difficulty: 4
@@ -10,11 +10,12 @@ topic: 代数几何
 subtopic: 变化Hodge结构
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14D07
 ---
-
 # AG-075: Hodge理论中的degeneration性质
 
 **题号**: AG-075

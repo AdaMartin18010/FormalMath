@@ -65,6 +65,9 @@ reviewed_at: '2026-04-20'
 reviewer: AI Mathematical Reviewer
 tags:
 - mathematical_reviewed
+external_ids:
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14H30
 ---
 # AG-VK-029: 曲线的 Hurwitz 定理
 

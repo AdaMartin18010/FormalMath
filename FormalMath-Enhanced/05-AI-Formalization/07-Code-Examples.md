@@ -169,7 +169,7 @@ from typing import Optional
 class DeepSeekAPIClient:
     """DeepSeek API客户端"""
 
-    def __init__(self, api_key: str, base_url: str = "https://api.deepseek.com[需更新]"):
+    def __init__(self, api_key: str, base_url: str = "https://platform.deepseek.com/[需更新]"):
         self.api_key = api_key
         self.base_url = base_url
         self.headers = {
@@ -949,7 +949,7 @@ if __name__ == "__main__":
 | Lean 4官网 | https://lean-lang.org/ | 官方文档和下载 |
 | Mathlib 4 | https://github.com/leanprover-community/mathlib4 | 数学库 |
 | Lean Zulip | https://leanprover.zulipchat.com/[需更新] | 社区讨论 |
-| Lean 4 API文档 | https://lean-lang.org/api/lean4/ | API参考 |
+| Lean 4 API文档 | https://lean-lang.org/ | API参考 |
 
 #### AI形式化项目
 

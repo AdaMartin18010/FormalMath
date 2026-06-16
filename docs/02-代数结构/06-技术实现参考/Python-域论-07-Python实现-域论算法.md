@@ -68,6 +68,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/field
   wikipedia_url: https://en.wikipedia.org/wiki/Field_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%9F%9F
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=12F99
 ---
 # Python实现：域论算法 / Python Implementation: Field Theory Algorithms
 

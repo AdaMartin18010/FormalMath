@@ -145,7 +145,7 @@ $\alpha = \sqrt[p]{t}$ 满足 $x^p - t = 0$，但 $x^p - t = (x - \alpha)^p$ 有
 ### 在线资源
 
 - [Mathlib4 文档 - Separable][https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/Separable.html](需更新)
-- [Keith Conrad - Separability][https://kconrad.math.uconn.edu/blurbs/galoistheory/separable.pdf](需更新)
+- [Keith Conrad - Separability][https://kconrad.math.uconn.edu/blurbs/](需更新)
 
 ---
 

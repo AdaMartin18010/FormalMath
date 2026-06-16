@@ -26,6 +26,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%89%B9%E5%BE%81%E6%A0%87
   nlab_url: https://ncatlab.org/nlab/show/character
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weyl/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Weyl特征标公式 - 五种表征
 

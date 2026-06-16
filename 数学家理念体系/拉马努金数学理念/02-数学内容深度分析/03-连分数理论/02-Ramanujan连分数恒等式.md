@@ -1,11 +1,14 @@
 ---
 title: Ramanujan连分数恒等式：拉马努金的经典贡献
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A55
-  - 01A60
-  - 01A70
+- 01A55
+- 01A60
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Ramanujan%E8%BF%9E%E5%88%86%E6%95%B0%E6%81%92%E7%AD%89%E5%BC%8F%EF%BC%9A%E6%8B%89%E9%A9%AC%E5%8A%AA%E9%87%91%E7%9A%84%E7%BB%8F%E5%85%B8%E8%B4%A1%E7%8C%AE
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Ramanujan%E8%BF%9E%E5%88%86%E6%95%B0%E6%81%92%E7%AD%89%E5%BC%8F%EF%BC%9A%E6%8B%89%E9%A9%AC%E5%8A%AA%E9%87%91%E7%9A%84%E7%BB%8F%E5%85%B8%E8%B4%A1%E7%8C%AE
 ---
 # Ramanujan连分数恒等式：拉马努金的经典贡献
 

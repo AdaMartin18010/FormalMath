@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0D5B
     url: https://stacks.math.columbia.edu/tag/0D5B
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

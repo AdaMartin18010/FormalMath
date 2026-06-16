@@ -501,7 +501,7 @@ function OAuthCallback() {
 
 ```tsx
 const { counts, loading, error, refresh } = useShareCount(
-  'https://example.com/page[需更新]',
+  '#[需更新]',
   ['facebook', 'pinterest']
 );
 

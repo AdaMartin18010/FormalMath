@@ -1,20 +1,22 @@
 ---
 msc_primary: 55
 msc_secondary:
-  - 55-01
-  - 55N10
-  - 55N20
-  - 55N35
-  - 55P05
-  - 55P10
-  - 55P20
+- 55-01
+- 55N10
+- 55N20
+- 55N35
+- 55P05
+- 55P10
+- 55P20
 title: Princeton MAT 365 (Topology) L3定义级对齐表
 university: Princeton University
 course_code: MAT 365
 course_name: Topology
-textbook: "Hatcher《Algebraic Topology》"
+textbook: Hatcher《Algebraic Topology》
 level: 本科高阶/研究生初级
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=55
 ---
 # Princeton MAT 365 (Topology) L3定义级对齐表
 

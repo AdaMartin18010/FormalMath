@@ -119,7 +119,7 @@ $$\iiint_V \nabla \cdot \mathbf{F} \, dV = \iint_{\partial V} \mathbf{F} \cdot d
 
 ### 在线资源
 
-- [Mathlib4 文档 - Manifold][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold.html]
+- [Mathlib4 文档 - Manifold][https://leanprover-community.github.io/mathlib4_docs/]
 - **注意**：Mathlib4 中一般 Stokes 定理（高维微分形式版本）目前仍在发展中；一维 FTC 和散度定理已有形式化。
 
 ---

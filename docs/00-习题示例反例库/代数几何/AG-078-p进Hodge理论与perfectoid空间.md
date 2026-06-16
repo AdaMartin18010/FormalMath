@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14G22
+  - 14G22'
 exercise_id: AG-078
 title: p进Hodge理论与perfectoid空间
 difficulty: 5
@@ -10,11 +10,12 @@ topic: 代数几何
 subtopic: p进几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14G22
 ---
-
 # AG-078: p进Hodge理论与perfectoid空间
 
 **题号**: AG-078

@@ -79,6 +79,7 @@ external_ids:
   stacks_tag:
     tag: 01LC
     url: https://stacks.math.columbia.edu/tag/01LC
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # AG-ETH-001: 概形的局部性质 (*Lokale Eigenschaften von Schemata*)
 

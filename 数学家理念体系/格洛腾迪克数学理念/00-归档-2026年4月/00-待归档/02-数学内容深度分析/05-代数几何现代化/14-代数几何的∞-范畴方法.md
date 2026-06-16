@@ -10,6 +10,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
   zbmath_url: https://zbmath.org/?q=au:Category
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01A60
 references:
   databases:
   - id: zbmath

@@ -46,6 +46,8 @@ references:
     year: 2004
     isbn: '9780486434797'
     mr_number: MR2048350
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=54B10
 ---
 # 乘积空间与Tychonoff定理 - 深度版
 

@@ -1,9 +1,11 @@
 ---
 title: 'T017: MIT 18.701 Definition Alignment — Task Report'
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
 ---
 # T017: MIT 18.701 Definition Alignment — Task Report
 

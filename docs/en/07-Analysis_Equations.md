@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Differential_equation
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B
   nlab_url: https://ncatlab.org/nlab/show/differential+equation
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Analysis and Differential Equations (分析与微分方程)
 

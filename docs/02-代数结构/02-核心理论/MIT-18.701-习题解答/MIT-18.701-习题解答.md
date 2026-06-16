@@ -61,6 +61,8 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
   nlab_url: https://ncatlab.org/nlab/show/algebra
+  mit_ocw_url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=08A99
 ---
 本文件为 MIT 18.701 抽象代数 I 的 Problem Sets 补充至少 15 道习题的详细解答，覆盖群论、同构定理、群作用、环论与唯一分解等核心主题。
 

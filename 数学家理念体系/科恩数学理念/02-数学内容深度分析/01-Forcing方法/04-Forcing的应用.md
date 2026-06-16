@@ -1,11 +1,14 @@
 ---
 title: Forcing的应用
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Forcing%E7%9A%84%E5%BA%94%E7%94%A8
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Forcing%E7%9A%84%E5%BA%94%E7%94%A8
 ---
 # Forcing的应用
 

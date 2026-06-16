@@ -33,6 +33,8 @@ references:
     edition: 2nd
     isbn: '9780470054567'
     author: Walter A. Strauss
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=35L05
 ---
 # 波动方程-D'Alembert公式
 

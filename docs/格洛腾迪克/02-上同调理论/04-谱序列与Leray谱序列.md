@@ -12,6 +12,8 @@ external_ids:
   stacks_tag:
     tag: 015J
     url: https://stacks.math.columbia.edu/tag/015J
+  stacks_tag_url: https://stacks.math.columbia.edu/tag/01FP
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=55T05
 references:
   databases:
   - id: stacks_project

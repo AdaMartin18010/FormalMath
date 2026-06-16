@@ -11,6 +11,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/set
   wikipedia_url: https://en.wikipedia.org/wiki/Set_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=03B35
 references:
   databases:
   - id: wikidata

@@ -82,6 +82,8 @@ external_ids:
   stacks_tag:
     tag: 0B9C
     url: https://stacks.math.columbia.edu/tag/0B9C
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # Riemann-Roch定理 (曲线情形)
 

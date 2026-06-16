@@ -59,6 +59,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
   zbmath_url: https://zbmath.org/?q=au:Number%20theory
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=11
 ---
 # Weil表示与辛几何：从量子力学到数论
 

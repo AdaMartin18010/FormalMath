@@ -27,6 +27,8 @@ references:
     isbn: '9780521839402'
     mr_number: MR2978210
     doi: 10.1017/CBO9780511810819
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=15A21
 ---
 # Jordan标准形 - 五种表征
 

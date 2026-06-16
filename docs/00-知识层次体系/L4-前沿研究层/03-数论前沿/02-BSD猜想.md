@@ -31,7 +31,8 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Birch_and_Swinnerton-Dyer_conjecture
   stacks_search_url: https://stacks.math.columbia.edu/search?query=BSD
-  nlab_url: https://ncatlab.org/nlab/show/Birch-Swinnerton-Dyer+conjecture
+  nlab_url: https://ncatlab.org/nlab/show/HomePage
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

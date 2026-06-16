@@ -106,7 +106,7 @@ $P = \sqrt{A^T A}$ 是正定的，$U = A P^{-1}$ 是正交矩阵。验证 $UP = 
 
 ### 在线资源
 
-- [Mathlib4 - Matrix Polar Decomposition](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/PolarDecomposition.html)
+- [Mathlib4 - Matrix Polar Decomposition](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

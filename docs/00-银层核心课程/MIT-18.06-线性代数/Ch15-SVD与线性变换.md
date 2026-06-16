@@ -77,6 +77,8 @@ external_ids:
   - https://ocw.mit.edu/
   ocw_problem_sets:
   - https://ocw.mit.edu/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=15
 prerequisites:
 - docs/00-银层核心课程/MIT-18.06-线性代数/Ch14-*.md
 ---
@@ -736,3 +738,13 @@ theorem change_of_basis_formula (𝕜 : Type*) [Field 𝕜] {V W : Type*}
 ### 习题与考试
 - [Problem Set 10](https://ocw.mit.edu/)
 - [Exam 2](https://ocw.mit.edu/) ([solutions](https://ocw.mit.edu/))
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **MIT 18.06 线性代数** 的以下内容：
+
+- [线性代数在图论中的应用](docs/02-代数结构/线性代数与矩阵理论/MIT-18.06/13-线性代数在图论中的应用.md)
+- [Ch.14 对角化与对称矩阵（Diagonalization & Symmetric Matrices）](docs/00-银层核心课程/MIT-18.06-线性代数/Ch14-对角化与对称矩阵.md)
+- [数值线性代数简介](docs/02-代数结构/线性代数与矩阵理论/MIT-18.06/14-数值线性代数简介.md)

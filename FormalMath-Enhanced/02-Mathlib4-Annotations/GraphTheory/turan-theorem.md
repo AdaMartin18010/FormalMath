@@ -95,7 +95,7 @@ $$|E(G)| \leq \left(1 - \frac{{1}}{{r}}\right) \frac{{n^2}}{{2}}$$
 
 ### 在线资源
 
-- [Mathlib4 - Turán](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Turan.html)
+- [Mathlib4 - Turán](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

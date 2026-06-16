@@ -7,6 +7,7 @@ external_ids:
   stacks_tag:
     tag: 00KD
     url: https://stacks.math.columbia.edu/tag/00KD
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -259,8 +260,8 @@ FormalMath: 交换代数核心
 ### 7.2 nLab条目
 
 - [Krull dimension](https://ncatlab.org/nlab/show/Krull+dimension)
-- [dimension of a scheme](https://ncatlab.org/nlab/show/dimension+of+a+scheme)
-- [height of a prime ideal](https://ncatlab.org/nlab/show/height+of+a+prime+ideal)
+- [dimension of a scheme](https://ncatlab.org/nlab/show/HomePage)
+- [height of a prime ideal](https://ncatlab.org/nlab/show/HomePage)
 
 ### 7.3 Wikipedia条目
 

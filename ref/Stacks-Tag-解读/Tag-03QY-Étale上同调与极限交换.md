@@ -11,6 +11,7 @@ external_ids:
     tag: 03QY
     url: https://stacks.math.columbia.edu/tag/03QY
   stacks_tags: []
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

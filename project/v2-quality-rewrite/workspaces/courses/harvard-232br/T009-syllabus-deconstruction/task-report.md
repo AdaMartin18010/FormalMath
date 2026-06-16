@@ -1,9 +1,11 @@
 ---
 title: 'Task Report: T009 — Harvard Math 232br Syllabus Deconstruction'
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
 ---
 # Task Report: T009 — Harvard Math 232br Syllabus Deconstruction
 

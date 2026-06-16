@@ -17,6 +17,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/convergence
   wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53C23
 references:
   papers:
   - title: Pseudo holomorphic curves in symplectic manifolds

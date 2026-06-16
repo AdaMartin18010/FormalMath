@@ -12,6 +12,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/supremum
   wikipedia_url: https://en.wikipedia.org/wiki/Infimum_and_supremum
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=68V20
 references:
   databases:
   - id: wikidata

@@ -101,7 +101,7 @@ Hilbert 最初证明该定理的动机是解决不变量理论中的问题：设
 
 ### 在线资源
 
-- [Mathlib4 - Noetherian](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Noetherian.html)
+- [Mathlib4 - Noetherian](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

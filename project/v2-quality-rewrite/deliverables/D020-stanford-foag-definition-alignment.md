@@ -1,9 +1,11 @@
 ---
 title: Stanford FOAG 定义对齐手册（L3 语义对齐）
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
 ---
 # Stanford FOAG 定义对齐手册（L3 语义对齐）
 

@@ -1,7 +1,7 @@
 ---
-msc_primary: 31
+msc_primary: '31
 
-  - 31C15
+  - 31C15'
 exercise_id: ANA-214
 title: 非线性位势理论中的Wolff势
 difficulty: 4
@@ -10,9 +10,11 @@ topic: 实分析
 subtopic: 位势理论
 source:
   course: 非线性分析
-  chapter: "14.2"
+  chapter: '14.2'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=31C15
 ---
 # ANA-214: 非线性位势理论中的Wolff势
 

@@ -6,6 +6,8 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
 title: Thom Pontryagin构造
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Thom-Pontryagin 构造
 

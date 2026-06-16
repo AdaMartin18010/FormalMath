@@ -13,6 +13,7 @@ external_ids:
   stacks_tag:
     tag: 00TY
     url: https://stacks.math.columbia.edu/tag/00TY
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18B25
 references:
   databases:
   - id: stacks_project

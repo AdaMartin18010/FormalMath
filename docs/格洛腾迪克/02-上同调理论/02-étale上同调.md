@@ -12,6 +12,7 @@ external_ids:
   stacks_tag:
     tag: 03Q3
     url: https://stacks.math.columbia.edu/tag/03Q3
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14F20
 references:
   databases:
   - id: stacks_project

@@ -144,7 +144,7 @@ $X = [0,1]$，$\Lambda(f) = \sum_{n=1}^{\infty} 2^{-n} f(q_n)$，其中 $\{q_n\}
 
 ### 在线资源
 
-- [Mathlib4 文档 - RieszRepresentation][https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Measure/RieszRepresentation.html](需更新)
+- [Mathlib4 文档 - RieszRepresentation][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Wikipedia - Riesz Representation Theorem](https://en.wikipedia.org/wiki/Riesz%E2%80%93Markov%E2%80%93Kakutani_representation_theorem)
 
 ---

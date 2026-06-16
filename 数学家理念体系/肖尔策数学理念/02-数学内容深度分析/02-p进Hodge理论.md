@@ -31,7 +31,8 @@ references:
     mr_number: MR1917232
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Peter_Scholze
-  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Scholze/
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Scholze与p进Hodge理论的现代发展
 

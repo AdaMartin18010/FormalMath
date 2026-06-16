@@ -139,7 +139,7 @@ $$S_4 \triangleright A_4 \triangleright V_4 \triangleright \mathbb{Z}_2 \triangl
 
 ### 在线资源
 
-- [Mathlib4 文档 - CompositionSeries][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/CompositionSeries.html](需更新)
+- [Mathlib4 文档 - CompositionSeries][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Groupprops - Composition series][https://groupprops.subwiki.org/wiki/Composition_series](需更新)
 
 ---

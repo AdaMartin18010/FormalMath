@@ -1,9 +1,12 @@
 ---
 title: Dubinsky APOS理论整合方案
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Dubinsky%2BAPOS%E7%90%86%E8%AE%BA%E6%95%B4%E5%90%88%E6%96%B9%E6%A1%88
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Dubinsky%2BAPOS%E7%90%86%E8%AE%BA%E6%95%B4%E5%90%88%E6%96%B9%E6%A1%88
 ---
 ---
 

@@ -1,11 +1,14 @@
 ---
 title: 肖尔策数学理念 - 快速入门
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E8%82%96%E5%B0%94%E7%AD%96%E6%95%B0%E5%AD%A6%E7%90%86%E5%BF%B5%2B-%2B%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E8%82%96%E5%B0%94%E7%AD%96%E6%95%B0%E5%AD%A6%E7%90%86%E5%BF%B5%2B-%2B%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8
 ---
 # 肖尔策数学理念 - 快速入门
 

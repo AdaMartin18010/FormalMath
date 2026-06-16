@@ -21,6 +21,9 @@ references:
     isbn: '9780521675994'
     mr_number: MR2448845
     doi: 10.1017/CBO9780511811029
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 ## Agent 任务指令：MIT 18.06 银层 Ch.11–15（最后5章）
 

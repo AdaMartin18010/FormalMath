@@ -1,10 +1,16 @@
 ---
-title: "Z变换 - 增强版"
-msc_primary: 44
+title: Z变换 - 增强版
+msc_primary: '44
 
-  - 44A15
-msc_secondary: ['39A06', '93C55', '65T50', '94A12']
+  - 44A15'
+msc_secondary:
+- 39A06
+- 93C55
+- 65T50
+- 94A12
 processed_at: '2026-04-05'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=44A15
 ---
 # Z变换 - 增强版
 

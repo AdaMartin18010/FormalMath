@@ -57,6 +57,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Sheaf
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # FAC与凝聚层：Serre的代数几何奠基之作
 

@@ -80,6 +80,7 @@ external_ids:
     tag: 0FG6
     url: https://stacks.math.columbia.edu/tag/0FG6
   zbmath_url: https://zbmath.org/?q=au:Category
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # 纯 Motives：代数对应的范畴化与 Grothendieck 的终极愿景
 

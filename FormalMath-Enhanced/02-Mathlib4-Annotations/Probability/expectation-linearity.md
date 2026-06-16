@@ -104,7 +104,7 @@ $$\mathbb{E}\left[\sum_{{i=1}}^n c_i X_i\right] = \sum_{{i=1}}^n c_i \mathbb{E}[
 
 ### 在线资源
 
-- [Mathlib4 - Bochner Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/Bochner.html)
+- [Mathlib4 - Bochner Integral](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

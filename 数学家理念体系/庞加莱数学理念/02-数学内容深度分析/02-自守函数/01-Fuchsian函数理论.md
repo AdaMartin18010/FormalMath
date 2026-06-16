@@ -11,6 +11,7 @@ external_ids:
   zbmath_url: https://zbmath.org/?q=au:Function
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Poincare/
   wikidata_id: https://www.wikidata.org/entity/Q81049
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=30
 references:
   databases:
   - id: zbmath

@@ -1,17 +1,20 @@
 ---
 msc_primary: 14
 msc_secondary:
-  - 14-01
-  - 97A99
-  - 14Fxx
+- 14-01
+- 97A99
+- 14Fxx
 title: Harvard Math 232br Algebraic Geometry L6思想方法级对齐
 course_code: Harvard 232br
 course_name: Algebraic Geometry (Coherent Sheaves, Cohomology, Curves and Surfaces)
 instructor: Joe Harris / Phillip Griffiths tradition
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
 alignment_level: L6 (思想方法级)
 version: v1.0
 processed_at: '2026-04-10'
+external_ids:
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Harvard Math 232br Algebraic Geometry L6思想方法级对齐
 

@@ -28,6 +28,8 @@ references:
     journal: Proceedings of the International Congress of Mathematicians
     year: 1950
     doi: 10.1142/9789814350364_0001
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Hodge猜想 - 思维导图
 

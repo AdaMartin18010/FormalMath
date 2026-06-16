@@ -13,6 +13,7 @@ external_ids:
   stacks_tag:
     tag: 0A6A
     url: https://stacks.math.columbia.edu/tag/0A6A
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14F17
 references:
   papers:
   - title: Faisceaux algébriques cohérents

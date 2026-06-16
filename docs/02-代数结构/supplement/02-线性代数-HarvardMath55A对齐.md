@@ -46,6 +46,8 @@ references:
     mr_number: MR2286236
     author: David S. Dummit and Richard M. Foote
     doi: 10.1002/9781118214413
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=08A99
 ---
 # 线性代数 - Harvard Math 55A 深度对齐
 

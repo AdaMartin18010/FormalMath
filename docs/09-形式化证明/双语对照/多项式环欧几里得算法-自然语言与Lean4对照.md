@@ -13,6 +13,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=68V20
 references:
   databases:
   - id: wikidata

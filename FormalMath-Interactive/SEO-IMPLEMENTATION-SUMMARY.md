@@ -7,7 +7,7 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Mathematical_optimization
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BC%98%E5%8C%96
-  nlab_url: https://ncatlab.org/nlab/show/optimization
+  nlab_url: https://ncatlab.org/nlab/show/HomePage
 ---
 # SEO优化实施完成摘要
 

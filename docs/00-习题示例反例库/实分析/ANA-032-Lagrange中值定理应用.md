@@ -18,6 +18,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Mean_value_theorem
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=26A06
 references:
   databases:
   - id: wikidata

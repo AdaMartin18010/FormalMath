@@ -26,6 +26,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Terence_Tao
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Tao/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Terence Tao博客精华整理
 

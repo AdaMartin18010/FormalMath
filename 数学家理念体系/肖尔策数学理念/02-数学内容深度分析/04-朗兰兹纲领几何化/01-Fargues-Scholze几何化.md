@@ -8,7 +8,7 @@ msc_secondary:
 processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Peter_Scholze
-  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Scholze/
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/
 ---
 # Fargues-Scholze几何化
 

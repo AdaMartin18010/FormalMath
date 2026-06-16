@@ -30,6 +30,8 @@ references:
     isbn: '9780521543590'
     mr_number: MR2039503
     doi: 10.1017/CBO9781139162371
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=42B30
 ---
 # ANA-207: 齐次化Hardy空间插值定理
 

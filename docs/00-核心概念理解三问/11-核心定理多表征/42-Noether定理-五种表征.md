@@ -24,7 +24,8 @@ references:
     doi: 10.1017/CBO9780511811029
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Emmy_Noether
-  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=49A99
 ---
 # Noether定理 - 五种表征
 

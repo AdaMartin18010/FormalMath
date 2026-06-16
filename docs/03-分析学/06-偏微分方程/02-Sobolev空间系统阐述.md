@@ -22,6 +22,8 @@ references:
     publisher: McGraw-Hill
     year: 1991
     isbn: '9780070542365'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=46E35
 ---
 # 02 Sobolev空间系统阐述 / Systematic Exposition of Sobolev Spaces
 

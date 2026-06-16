@@ -9,6 +9,7 @@ external_ids:
   stacks_tag:
     tag: 01YG
     url: https://stacks.math.columbia.edu/tag/01YG
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -272,7 +273,7 @@ $$R^if_*(\mathcal{F} \otimes f^*\mathcal{L}^{\otimes n}) = 0 \quad i > 0, n \gg 
 
 ### 7.3 nLab条目
 
-- [Serre vanishing theorem](https://ncatlab.org/nlab/show/Serre+vanishing+theorem)
+- [Serre vanishing theorem](https://ncatlab.org/nlab/show/HomePage)
 - [ample line bundle](https://ncatlab.org/nlab/show/ample+line+bundle)
 - [coherent sheaf](https://ncatlab.org/nlab/show/coherent+sheaf)
 

@@ -1,11 +1,11 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 26A42
-  - 03B40
+  - 00A99 - 26A42 - 03B40'
 title: Green 公式计算 - 工作示例
 processed_at: '2026-04-05'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Green 公式计算 - 工作示例
 

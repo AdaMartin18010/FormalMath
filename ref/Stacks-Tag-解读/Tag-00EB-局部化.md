@@ -7,6 +7,7 @@ external_ids:
   stacks_tag:
     tag: 00EB
     url: https://stacks.math.columbia.edu/tag/00EB
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

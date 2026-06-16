@@ -187,7 +187,7 @@ open
 # 设置参数：
 # - Number of users: 1000
 # - Spawn rate: 100
-# - Host: http://nginx[需更新]
+# - Host: #[需更新]
 ```
 
 #### 6.3 测试结果检查

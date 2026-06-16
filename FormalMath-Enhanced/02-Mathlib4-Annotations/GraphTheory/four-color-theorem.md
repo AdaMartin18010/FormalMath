@@ -18,7 +18,7 @@ references:
 
 ```lean
 -- 该定理在 FourColor 项目中得到完整形式化证明
--- 来源: https://github.com/leanprover-community/fourcolor
+-- 来源: https://github.com/leanprover-community
 import Mathlib
 
 /-- 四色定理：任何平面地图只需四种颜色即可使得相邻区域颜色不同 -/
@@ -97,7 +97,7 @@ $$\chi(G) \leq 4$$
 
 ### 在线资源
 
-- [Mathlib4 FourColor 项目](https://github.com/leanprover-community/fourcolor)
+- [Mathlib4 FourColor 项目](https://github.com/leanprover-community)
 - [Four Color Theorem - Wikipedia](https://en.wikipedia.org/wiki/Four_color_theorem)
 
 ---

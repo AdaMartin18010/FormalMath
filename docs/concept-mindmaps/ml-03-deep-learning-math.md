@@ -32,6 +32,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Deep_learning
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0
   nlab_url: https://ncatlab.org/nlab/show/deep+learning
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

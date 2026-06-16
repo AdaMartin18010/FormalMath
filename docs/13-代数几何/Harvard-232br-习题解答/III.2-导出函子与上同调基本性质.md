@@ -82,6 +82,8 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/functor
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # Harvard 232br - Hartshorne Chapter III §2 习题解答
 
@@ -698,3 +700,13 @@ theorem H0FunctorIsoΓ {X : Scheme} :
 - [Nlab Url](https://ncatlab.org/nlab/show/functor)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Functor)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90)
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Harvard 232br 代数几何** 的以下内容：
+
+- [Harvard 232br - Hartshorne Chapter V §1–§3 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/V.1-V.3-曲面初步.md)
+- [Harvard 232br - Hartshorne Chapter IV §1–§4 习题解答](docs/13-代数几何/Harvard-232br-习题解答/IV.1-IV.4-曲线基本理论-习题解答.md)
+- [Harvard 232br - Hartshorne Chapter V §1–§3 习题解答](docs/13-代数几何/Harvard-232br-习题解答/V.1-V.3-曲面初步-习题解答.md)

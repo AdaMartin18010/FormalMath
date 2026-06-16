@@ -120,7 +120,7 @@ $$\lim_{{n \to \infty}} P(Z_n \leq z) = \Phi(z) = \frac{{1}}{{\sqrt{{2\pi}}}} \i
 
 ### 在线资源
 
-- [Mathlib4 - Gaussian](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Distributions/Gaussian.html)
+- [Mathlib4 - Gaussian](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

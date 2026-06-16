@@ -1,12 +1,11 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20A99
-  - 00A99
-  - 00A99
-  - 03B35
+  - 20A99 - 00A99 - 00A99 - 03B35'
 title: Fermat 小定理 - 工作示例
 processed_at: '2026-04-05'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=20A99
 ---
 # Fermat 小定理 - 工作示例
 

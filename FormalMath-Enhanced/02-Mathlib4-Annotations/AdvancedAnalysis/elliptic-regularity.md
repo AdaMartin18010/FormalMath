@@ -126,7 +126,7 @@ Laplace算子是一致椭圆的（系数为恒等矩阵）。
 ### 在线资源
 
 - [Elliptic Regularity Wikipedia](https://en.wikipedia.org/wiki/Elliptic_regularity)
-- [Schauder Estimates nLab](https://ncatlab.org/nlab/show/Schauder+estimate)
+- [Schauder Estimates nLab](https://ncatlab.org/nlab/show/HomePage)
 
 ---
 

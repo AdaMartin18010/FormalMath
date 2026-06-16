@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 00EC
     url: https://stacks.math.columbia.edu/tag/00EC
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

@@ -164,8 +164,8 @@ Sitemap: https://formalmath.example.com/sitemap.xml[需更新]
 #### 6.1 预连接优化
 
 ```html
-<link rel="preconnect" href="https://fonts.googleapis.com[需更新]">
-<link rel="preconnect" href="https://fonts.gstatic.com[需更新]" crossorigin>
+<link rel="preconnect" href="https://fonts.google.com/[需更新]">
+<link rel="preconnect" href="https://fonts.google.com/[需更新]" crossorigin>
 ```
 
 #### 6.2 预加载关键资源

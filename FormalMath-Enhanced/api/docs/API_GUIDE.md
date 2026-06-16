@@ -1057,5 +1057,5 @@ const task = await client.learningPaths.create({
 ## 支持和反馈
 
 - **API文档**: https://docs.formalmath.org/api[需更新]
-- **问题反馈**: https://github.com/formalmath/api/issues
+- **问题反馈**: https://github.com/FormalMath
 - **技术支持**: support@formalmath.org

@@ -69,6 +69,8 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
   nlab_url: https://ncatlab.org/nlab/show/algebra
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14E15
 ---
 # AG-VK-027: 爆破的几何与代数
 

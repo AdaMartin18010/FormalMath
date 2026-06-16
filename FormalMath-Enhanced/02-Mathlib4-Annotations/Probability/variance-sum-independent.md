@@ -99,7 +99,7 @@ $$\text{Var}\left(\sum_{{i=1}}^n X_i\right) = \sum_{{i=1}}^n \text{Var}(X_i)$$
 
 ### 在线资源
 
-- [Mathlib4 - Variance](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Probability/Variance.html)
+- [Mathlib4 - Variance](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

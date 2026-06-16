@@ -12,6 +12,7 @@ external_ids:
     tag: 013N
     url: https://stacks.math.columbia.edu/tag/013N
   stacks_tags: []
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project

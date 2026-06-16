@@ -110,7 +110,7 @@ $$a^{{p-1}} \equiv 1 \pmod{p}$$
 
 ### 在线资源
 
-- [Mathlib4 - Totient](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Totient.html)
+- [Mathlib4 - Totient](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

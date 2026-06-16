@@ -4,8 +4,10 @@ msc_primary: 00A99
 course_code: MIT 18.100A
 course_name: Real Analysis
 instructor: Dr. Casey Rodriguez (MIT OCW Fall 2020)
-textbook: "Jiri Lebl, Basic Analysis I: Introduction to Real Analysis, Volume 1"
+textbook: 'Jiri Lebl, Basic Analysis I: Introduction to Real Analysis, Volume 1'
 processed_at: '2026-04-17'
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
 ---
 # MIT 18.100A 实分析讲义逐章拆解索引
 

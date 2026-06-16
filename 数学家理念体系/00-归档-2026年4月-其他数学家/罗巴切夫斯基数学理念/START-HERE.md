@@ -25,6 +25,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Cardinal_number
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%9F%BA%E6%95%B0
   nlab_url: https://ncatlab.org/nlab/show/cardinal
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01A50
 ---
 # 罗巴切夫斯基数学理念体系 - 快速入门
 

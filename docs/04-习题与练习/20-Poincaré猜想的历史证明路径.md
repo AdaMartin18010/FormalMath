@@ -22,6 +22,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Henri_Poincaré
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Poincare/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00
 ---
 # Poincaré猜想的历史证明路径
 

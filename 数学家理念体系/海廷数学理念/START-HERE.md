@@ -1,10 +1,13 @@
 ---
 title: 海廷数学理念 - 从这里开始
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A70
+- 01A60
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E6%B5%B7%E5%BB%B7%E6%95%B0%E5%AD%A6%E7%90%86%E5%BF%B5%2B-%2B%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E6%B5%B7%E5%BB%B7%E6%95%B0%E5%AD%A6%E7%90%86%E5%BF%B5%2B-%2B%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B
 ---
 # 海廷数学理念 - 从这里开始
 

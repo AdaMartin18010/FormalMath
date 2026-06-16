@@ -75,6 +75,8 @@ references:
     year: 2002
     isbn: '9780199202492'
     mr_number: MR1917232
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14C30
 ---
 # 13.9 Hodge理论简介 - 增强版 / Introduction to Hodge Theory - Enhanced
 

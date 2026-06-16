@@ -20,6 +20,8 @@ references:
     journal: Bulletin of the American Mathematical Society
     year: 1982
     doi: 10.1090/S0273-0979-1982-14503-4
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=57M50
 ---
 # TOP-133: 几何化猜想与Thurston理论
 

@@ -149,7 +149,7 @@ sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total
 
 **自定义仪表盘：**
 
-1. 登录 Grafana (http://localhost:3000)
+1. 登录 Grafana (#)
 2. 点击左侧菜单 "+" -> "Dashboard"
 3. 添加面板并选择 Prometheus 数据源
 4. 编写 PromQL 查询

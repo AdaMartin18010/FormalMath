@@ -32,6 +32,8 @@ references:
     publisher: Academic Press
     year: 2003
     msc: 46E35
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=46E35
 ---
 # Sobolev空间-弱导数
 

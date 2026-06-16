@@ -48,6 +48,7 @@ external_ids:
   stacks_tag:
     tag: 013O
     url: https://stacks.math.columbia.edu/tag/013O
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18G40
 ---
 # Grothendieck谱序列
 

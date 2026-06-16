@@ -15,6 +15,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/ring
   wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=13F15
 references:
   databases:
   - id: wikidata

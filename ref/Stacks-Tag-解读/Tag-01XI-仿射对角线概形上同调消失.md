@@ -11,6 +11,7 @@ external_ids:
     tag: 01XB
     url: https://stacks.math.columbia.edu/tag/01XB
   stacks_tags: []
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -358,7 +359,7 @@ theorem Cech_cohomology_iso_sheaf_cohomology
 
 - **Stacks Project Tag 01XI:** https://stacks.math.columbia.edu/tag/01XI
 - **Stacks Project Section 30.2:** https://stacks.math.columbia.edu/tag/01XB
-- **mathlib4 Schemes:** https://leanprover-community.github.io/api/latest/Mathlib-AlgebraicGeometry.html
+- **mathlib4 Schemes:** https://leanprover-community.github.io/
 - **Hartshorne AG:** Chapter III, Theorem 4.5
 
 ---

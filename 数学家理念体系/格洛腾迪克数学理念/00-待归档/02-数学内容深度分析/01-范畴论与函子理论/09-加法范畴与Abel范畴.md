@@ -12,6 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
   zbmath_url: https://zbmath.org/?q=au:Category
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18
 references:
   papers:
   - title: General Theory of Natural Equivalences

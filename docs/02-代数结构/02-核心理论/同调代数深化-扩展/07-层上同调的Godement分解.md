@@ -91,6 +91,7 @@ external_ids:
     tag: 01D9
     url: https://stacks.math.columbia.edu/tag/01D9
   stacks_tags: []
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=18F20
 ---
 # 15.7 层上同调的Godement分解 / Godement Resolution in Sheaf Cohomology
 

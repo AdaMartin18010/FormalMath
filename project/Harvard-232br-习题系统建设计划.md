@@ -3,11 +3,13 @@ title: Harvard 232br 习题系统建设计划
 msc_primary: 00A99
 task_id: P2-Harvard-232br
 course_code: Harvard Math 232br
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
 alignment_level: L5 (习题级)
 processed_at: '2026-04-17'
 status: 已完成 Chapter II 核心习题 60 道
 version: v1.1
+external_ids:
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
 ---
 # Harvard 232br 习题系统建设计划
 

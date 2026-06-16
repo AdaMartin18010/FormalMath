@@ -121,7 +121,7 @@ $$\\partial U_{\\text{int}} = \\partial U_{\\text{ext}} = C$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Homotopy.Sphere][https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/Homotopy/Sphere.html]
+- [Mathlib4 文档 - Homotopy.Sphere][https://leanprover-community.github.io/mathlib4_docs/]
 - [Hales. The Jordan curve theorem, formally and informally. AMM, 2007]
 
 ---

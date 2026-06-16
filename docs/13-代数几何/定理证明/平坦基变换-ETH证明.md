@@ -74,6 +74,8 @@ external_ids:
     tag: 02N6
     url: https://stacks.math.columbia.edu/tag/02N6
   stacks_tags: []
+  stacks_tag_url: https://stacks.math.columbia.edu/tag/01YS
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # 平坦基变换定理 (Flat Base Change)
 

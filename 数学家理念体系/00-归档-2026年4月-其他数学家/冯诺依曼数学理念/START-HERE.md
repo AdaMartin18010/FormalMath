@@ -21,6 +21,8 @@ references:
     publisher: Pearson
     year: 2009
     isbn: '9780321387004'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01A60
 ---
 # 冯·诺依曼数学理念体系 - 快速入门
 

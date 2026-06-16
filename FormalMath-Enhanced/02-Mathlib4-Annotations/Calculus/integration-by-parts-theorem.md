@@ -116,7 +116,7 @@ Legendre 多项式的正交性可以通过反复分部积分证明。
 
 ### 在线资源
 
-- [Mathlib4 - IntervalIntegral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/IntervalIntegral.html)
+- [Mathlib4 - IntervalIntegral](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

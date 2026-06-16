@@ -26,6 +26,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Simon_Donaldson
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Donaldson/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01
 ---
 # Simon Donaldson 传记
 

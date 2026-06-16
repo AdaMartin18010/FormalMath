@@ -29,6 +29,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Cardinal_number
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%9F%BA%E6%95%B0
   nlab_url: https://ncatlab.org/nlab/show/cardinal
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=03B35
 ---
 # Lean 4形式化实现 - 基数序数理论
 

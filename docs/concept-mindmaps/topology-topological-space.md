@@ -8,6 +8,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/topological+space
   wikipedia_url: https://en.wikipedia.org/wiki/Topological_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%8B%93%E6%89%91%E7%A9%BA%E9%97%B4
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: wikidata

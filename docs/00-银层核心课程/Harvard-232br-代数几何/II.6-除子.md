@@ -86,6 +86,8 @@ external_ids:
   ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
   ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
   harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # Harvard 232br - Hartshorne Chapter II §6 习题解答
 
@@ -731,3 +733,13 @@ theorem duple_pullback {X : Scheme} [IsNoetherian X] [IsIntegral X]
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **Harvard 232br 代数几何** 的以下内容：
+
+- [Harvard 232br - Hartshorne Chapter II §5 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/II.5-模与层.md)
+- [Harvard 232br - Hartshorne Chapter IV §5–§6 习题解答](docs/00-银层核心课程/Harvard-232br-代数几何/IV.5-IV.6-曲线深化.md)
+- [Harvard 232br - Hartshorne Chapter IV §5–§6 习题解答](docs/13-代数几何/Harvard-232br-习题解答/IV.5-IV.6-曲线深化.md)

@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Information_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BF%A1%E6%81%AF%E8%AE%BA
   nlab_url: https://ncatlab.org/nlab/show/information+theory
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 数学×语言学：语言学的信息论
 

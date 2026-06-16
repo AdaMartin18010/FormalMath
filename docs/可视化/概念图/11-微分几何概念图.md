@@ -8,6 +8,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/differential+geometry
   wikipedia_url: https://en.wikipedia.org/wiki/Differential_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: wikidata

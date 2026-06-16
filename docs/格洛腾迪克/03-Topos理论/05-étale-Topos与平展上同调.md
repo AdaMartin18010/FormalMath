@@ -12,6 +12,7 @@ external_ids:
   stacks_tag:
     tag: 03PP
     url: https://stacks.math.columbia.edu/tag/03PP
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14F20
 references:
   databases:
   - id: stacks_project

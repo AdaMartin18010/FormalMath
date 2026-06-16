@@ -15,6 +15,8 @@ external_ids:
     tag: '0072'
     url: https://stacks.math.columbia.edu/tag/0072
   stacks_tags: []
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 references:
   databases:
   - id: stacks_project

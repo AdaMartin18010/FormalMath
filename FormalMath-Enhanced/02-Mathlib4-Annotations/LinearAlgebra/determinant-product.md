@@ -101,7 +101,7 @@ $AB = \begin{pmatrix} 4 & 7 \ 8 & 15 \end{pmatrix}$, $\det(AB) = 60 - 56 = 4$。
 
 ### 在线资源
 
-- [Mathlib4 - Matrix Determinant](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/Determinant.html)
+- [Mathlib4 - Matrix Determinant](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

@@ -66,6 +66,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Poincare/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=55N45
 ---
 # 5.6 上同调环与Poincaré对偶 / Cohomology Ring and Poincaré Duality
 

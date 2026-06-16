@@ -144,7 +144,7 @@ $F = (-y, x, 0)$，$\nabla \times F = (0, 0, 2)$。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Manifold][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Basic.html](需更新)
+- [Mathlib4 文档 - Manifold][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Wikipedia - Stokes' Theorem](https://en.wikipedia.org/wiki/Stokes%27_theorem)
 
 ---

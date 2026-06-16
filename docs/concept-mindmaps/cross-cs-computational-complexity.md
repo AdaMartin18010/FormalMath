@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Computational_complexity_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E6%80%A7
   nlab_url: https://ncatlab.org/nlab/show/computational+complexity
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 数学×计算机科学：计算复杂性的组合分析
 

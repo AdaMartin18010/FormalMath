@@ -20,6 +20,8 @@ references:
     journal: Inventiones Mathematicae
     year: 1985
     doi: 10.1007/BF01388788
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=57R99
 ---
 # TOP-129: h-principle与Gromov的柔性几何
 

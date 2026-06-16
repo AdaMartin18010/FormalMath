@@ -101,7 +101,7 @@ $$\mu(n) = \begin{cases} 1 & n = 1 \\ (-1)^k & n \text{ 是 } k \text{ 个不同
 
 ### 在线资源
 
-- [Mathlib4 - Moebius](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Moebius.html)
+- [Mathlib4 - Moebius](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

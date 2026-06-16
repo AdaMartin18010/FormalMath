@@ -8,6 +8,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Motive_(algebraic_geometry)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%20motive
   nlab_url: https://ncatlab.org/nlab/show/motive
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 20 motive理论
 

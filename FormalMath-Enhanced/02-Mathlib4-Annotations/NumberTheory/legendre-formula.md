@@ -101,7 +101,7 @@ $v_5(100!) = \lfloor 100/5 \rfloor + \lfloor 100/25 \rfloor = 20 + 4 = 24$。
 
 ### 在线资源
 
-- [Mathlib4 - padicValNat](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Padics/PadicVal.html)
+- [Mathlib4 - padicValNat](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

@@ -50,6 +50,7 @@ external_ids:
   stacks_tag:
     tag: 01ER
     url: https://stacks.math.columbia.edu/tag/01ER
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14F25
 ---
 # Čech上同调
 

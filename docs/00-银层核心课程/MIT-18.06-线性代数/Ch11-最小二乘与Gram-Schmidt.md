@@ -66,6 +66,8 @@ external_ids:
   ocw_problem_sets:
   - https://ocw.mit.edu/
   - https://ocw.mit.edu/
+  mit_ocw_url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=15
 prerequisites:
 - docs/00-银层核心课程/MIT-18.06-线性代数/Ch10-*.md
 ---
@@ -877,3 +879,13 @@ rac{v_3\cdot u_2}{u_2\cdot u_2}u_2=(0,0,1)$。$\square$
 - [Ocw Ps Url](https://ocw.mit.edu/)
 - [Ocw Lectures](['https://ocw.mit.edu/', 'https://ocw.mit.edu/'])
 - [Ocw Problem Sets](['https://ocw.mit.edu/', 'https://ocw.mit.edu/'])
+
+---
+
+## 前置知识
+
+学习本章前建议先掌握 **MIT 18.06 线性代数** 的以下内容：
+
+- [正定矩阵与二次型](docs/02-代数结构/线性代数与矩阵理论/MIT-18.06/09-正定矩阵与二次型.md)
+- [Ch.10 正交性与投影（Orthogonality & Projections）](docs/00-银层核心课程/MIT-18.06-线性代数/Ch10-正交性与投影.md)
+- [线性变换与矩阵表示](docs/02-代数结构/线性代数与矩阵理论/MIT-18.06/10-线性变换与矩阵表示.md)

@@ -25,7 +25,8 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Mathematical_optimization
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BC%98%E5%8C%96
-  nlab_url: https://ncatlab.org/nlab/show/optimization
+  nlab_url: https://ncatlab.org/nlab/show/HomePage
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

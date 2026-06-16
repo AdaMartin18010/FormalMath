@@ -108,7 +108,7 @@ $$\text{wind}(\gamma) = \frac{1}{2\pi i} \int_\gamma \frac{dz}{z}$$
 
 ### 在线资源
 
-- [Mathlib4 - FundamentalGroupoid](https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/FundamentalGroupoid.html)
+- [Mathlib4 - FundamentalGroupoid](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

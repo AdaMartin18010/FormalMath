@@ -1,10 +1,11 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 03B35
+  - 00A99 - 03B35'
 title: CI 门禁与周报生成说明
 processed_at: '2026-04-05'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00', '03B35']

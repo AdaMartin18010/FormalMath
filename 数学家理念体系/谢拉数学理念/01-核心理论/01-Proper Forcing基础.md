@@ -1,11 +1,14 @@
 ---
 title: Proper Forcing基础
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Proper%2BForcing%E5%9F%BA%E7%A1%80
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Proper%2BForcing%E5%9F%BA%E7%A1%80
 ---
 # Proper Forcing基础
 

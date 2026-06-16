@@ -1,7 +1,7 @@
 ---
-msc_primary: 55
+msc_primary: '55
 
-  - 55P48
+  - 55P48'
 exercise_id: TOP-139
 title: operad与无穷loop空间
 difficulty: 4
@@ -10,11 +10,12 @@ topic: 拓扑
 subtopic: 高阶同伦理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=55P48
 ---
-
 # TOP-139: operad与无穷loop空间
 
 **题号**: TOP-139

@@ -26,6 +26,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Classical_mechanics
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A6
   nlab_url: https://ncatlab.org/nlab/show/classical+mechanics
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 经典力学数学 - 思维导图
 

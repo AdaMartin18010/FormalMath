@@ -12,6 +12,7 @@ external_ids:
   stacks_tag:
     tag: 01X9
     url: https://stacks.math.columbia.edu/tag/01X9
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14F05
 references:
   databases:
   - id: stacks_project

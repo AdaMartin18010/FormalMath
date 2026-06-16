@@ -21,6 +21,9 @@ references:
     isbn: '9780521675994'
     mr_number: MR2448845
     doi: 10.1017/CBO9780511811029
+external_ids:
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 ## Agent 任务指令：Stanford FOAG Part VI 深化 + L5习题
 

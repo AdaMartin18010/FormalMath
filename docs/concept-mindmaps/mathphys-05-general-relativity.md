@@ -37,6 +37,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/General_relativity
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA
   nlab_url: https://ncatlab.org/nlab/show/general+relativity
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 广义相对论数学 - 思维导图
 

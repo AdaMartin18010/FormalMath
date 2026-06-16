@@ -31,6 +31,8 @@ references:
     isbn: '9780521406055'
     mr_number: MR1155402
     doi: 10.1017/CBO9780511813658
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=60
 ---
 # 计算机械Pascaline：机械计算时代的开创者
 

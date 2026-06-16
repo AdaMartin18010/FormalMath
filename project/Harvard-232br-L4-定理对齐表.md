@@ -8,6 +8,8 @@ external_ids:
     tag: 0B5R
     url: https://stacks.math.columbia.edu/tag/0B5R
   stacks_tags: []
+  course_homepage_url: https://people.math.harvard.edu/~phorne/232Br.html
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=97A99
 references:
   databases:
   - id: stacks_project

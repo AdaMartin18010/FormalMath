@@ -30,6 +30,8 @@ references:
     isbn: '9780521367646'
     mr_number: MR0876123
     doi: 10.1017/CBO9781139171762
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=13J10
 ---
 # 完备化与Hensel引理
 

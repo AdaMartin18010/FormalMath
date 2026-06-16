@@ -32,6 +32,8 @@ references:
     publisher: Springer
     year: 2001
     msc: 35-02
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=35J05
 ---
 # Poisson方程-边值问题
 

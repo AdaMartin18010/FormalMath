@@ -16,6 +16,7 @@ processed_at: '2026-04-10'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Simon_Donaldson
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Donaldson/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53C55
 references:
   papers:
   - title: An application of gauge theory to four-dimensional topology

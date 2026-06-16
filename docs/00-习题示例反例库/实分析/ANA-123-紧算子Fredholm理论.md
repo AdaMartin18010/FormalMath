@@ -28,6 +28,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Operator_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E5%AD%90
   nlab_url: https://ncatlab.org/nlab/show/operator
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # 紧算子与Fredholm理论
 

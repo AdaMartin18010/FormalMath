@@ -62,6 +62,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Spectral%20sequence
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=55
 ---
 # 同伦论与Serre谱序列
 

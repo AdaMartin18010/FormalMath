@@ -4,6 +4,7 @@ msc_primary: '01'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01
 references:
   databases:
   - id: wikidata

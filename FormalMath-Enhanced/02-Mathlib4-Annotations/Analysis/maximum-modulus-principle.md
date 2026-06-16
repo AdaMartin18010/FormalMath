@@ -147,7 +147,7 @@ $e^z$ 在全平面全纯，无界，故在紧集上最大值在边界。
 
 ### 在线资源
 
-- [Mathlib4 文档 - MaximumModulus](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/MaximumModulus.html)[需更新]
+- [Mathlib4 文档 - MaximumModulus](https://leanprover-community.github.io/mathlib4_docs/)[需更新]
 - [Wikipedia - Maximum Modulus Principle](https://en.wikipedia.org/wiki/Maximum_modulus_principle)
 
 ---

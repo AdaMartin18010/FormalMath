@@ -152,7 +152,7 @@ $k \times k \times k$ 是交换半单Artin环。
 
 ### 在线资源
 
-- [Mathlib4 文档 - Artinian][https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Artinian.html](需更新)
+- [Mathlib4 文档 - Artinian][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Stacks Project - 0744][https://stacks.math.columbia.edu/tag/0744](需更新)
 
 ---

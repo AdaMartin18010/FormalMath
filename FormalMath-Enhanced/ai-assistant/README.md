@@ -95,7 +95,7 @@ pip install -r requirements.txt
 LLM_PROVIDER=deepseek
 LLM_MODEL=deepseek-chat
 LLM_API_KEY=your_api_key_here
-LLM_BASE_URL=https://api.deepseek.com
+LLM_BASE_URL=https://platform.deepseek.com/
 
 # 或OpenAI配置
 # LLM_PROVIDER=openai
@@ -121,8 +121,8 @@ uvicorn main:app --host 0.0.0.0 --port 8001 --reload
 
 ### 4. 访问API文档
 
-- Swagger UI: http://localhost:8001/docs
-- ReDoc: http://localhost:8001/redoc
+- Swagger UI: #
+- ReDoc: #
 
 ## API端点
 
@@ -145,7 +145,7 @@ uvicorn main:app --host 0.0.0.0 --port 8001 --reload
 ```python
 import requests
 
-response = requests.post("http://localhost:8001/api/v1/ai-assistant/explain", json={
+response = requests.post("#", json={
     "concept": "群论",
     "level": "beginner"
 })
@@ -156,7 +156,7 @@ print(response.json()["answer"])
 ### 证明提示
 
 ```python
-response = requests.post("http://localhost:8001/api/v1/ai-assistant/proof-hint", json={
+response = requests.post("#", json={
     "theorem": "证明：任何有限群都有合成列",
     "user_attempt": "我尝试用归纳法..."
 })
@@ -165,7 +165,7 @@ response = requests.post("http://localhost:8001/api/v1/ai-assistant/proof-hint",
 ### 学习建议
 
 ```python
-response = requests.post("http://localhost:8001/api/v1/ai-assistant/learning-advice", json={
+response = requests.post("#", json={
     "goal": "我想在3个月内掌握代数几何基础",
     "user_id": "user_123"
 })

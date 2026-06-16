@@ -82,6 +82,8 @@ external_ids:
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Serre%E5%AF%B9%E5%81%B6
   nlab_url: https://ncatlab.org/nlab/show/Serre+duality
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 ---
 # AG-VK-026: Serre 对偶定理的完整陈述与应用
 

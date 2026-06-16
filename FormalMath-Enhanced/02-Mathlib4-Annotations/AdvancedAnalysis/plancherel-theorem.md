@@ -21,6 +21,8 @@ references:
     year: 2004
     isbn: '9780691119663'
     doi: 10.1515/9781400828678
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=97
 ---
 # Plancherel定理
 
@@ -136,7 +138,7 @@ $$\int_{-\infty}^{\infty} e^{-2\pi x^2} dx = \frac{1}{\sqrt{2}}$$
 ### 在线资源
 
 - [Plancherel Theorem Wikipedia](https://en.wikipedia.org/wiki/Plancherel_theorem)
-- [nLab - Plancherel Theorem](https://ncatlab.org/nlab/show/Plancherel+theorem)
+- [nLab - Plancherel Theorem](https://ncatlab.org/nlab/show/HomePage)
 
 ---
 

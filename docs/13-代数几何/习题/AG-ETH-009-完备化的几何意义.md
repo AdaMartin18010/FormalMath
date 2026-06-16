@@ -54,6 +54,8 @@ references:
     year: 2002
     isbn: '9780199202492'
     mr_number: MR1917232
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14A99
 ---
 # AG-ETH-009: 完备化的几何意义 (*Geometrische Bedeutung der Komplettierung*)
 

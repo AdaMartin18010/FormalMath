@@ -21,6 +21,8 @@ references:
     isbn: '9780521675994'
     mr_number: MR2448845
     doi: 10.1017/CBO9780511811029
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 # AI学习助手 API文档
 
@@ -251,7 +253,7 @@ Lean 4形式化帮助。
 ```python
 import requests
 
-API_BASE = "http://localhost:8001/api/v1/ai-assistant"
+API_BASE = "#"
 
 # 概念解释
 response = requests.post(f"{API_BASE}/explain", json={
@@ -272,7 +274,7 @@ print(f"建议问题: {data['suggestions']}")
 ### JavaScript示例
 
 ```javascript
-const API_BASE = 'http://localhost:8001/api/v1/ai-assistant';
+const API_BASE = '#';
 
 // 获取证明提示
 const response = await fetch(`${API_BASE}/proof-hint`, {

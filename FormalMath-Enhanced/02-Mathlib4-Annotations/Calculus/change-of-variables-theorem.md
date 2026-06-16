@@ -96,7 +96,7 @@ $$\int_{{\varphi(a)}}^{{\varphi(b)}} f(y) \, dy = \int_a^b f(\varphi(x)) \varphi
 
 ### 在线资源
 
-- [Mathlib4 - Set Integral](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Integral/SetIntegral.html)
+- [Mathlib4 - Set Integral](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

@@ -25,6 +25,8 @@ references:
     publisher: Birkhäuser
     year: 1992
     msc: 53-01
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53C20
 ---
 # 等距与Killing场
 

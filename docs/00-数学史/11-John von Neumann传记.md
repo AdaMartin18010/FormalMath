@@ -19,7 +19,8 @@ references:
     isbn: '9780321387004'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/John_von_Neumann
-  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/von-Neumann/
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=01
 ---
 # John von Neumann 传记
 

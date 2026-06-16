@@ -318,7 +318,7 @@ class Settings(BaseSettings):
 ### B. 参考文档
 - [FastAPI安全文档](https://fastapi.tiangolo.com/tutorial/security/)[需更新]
 - [OWASP API安全Top 10](https://owasp.org/www-project-api-security/)[需更新]
-- [Python性能优化指南](https://docs.python.org/3/howto/performance.html)[需更新]
+- [Python性能优化指南](https://docs.python.org/3/)[需更新]
 
 ### C. 联系方式
 如有问题，请联系后端开发团队。

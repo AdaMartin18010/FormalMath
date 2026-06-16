@@ -147,7 +147,7 @@ $\pi_1(S^2) = 0 *_{\mathbb{Z}} 0 = 0$（平凡群）。
 
 ### 在线资源
 
-- [Mathlib4 文档 - VanKampen][https://leanprover-community.github.io/mathlib4_docs/Mathlib/AlgebraicTopology/FundamentalGroupoid/VanKampen.html](需更新)
+- [Mathlib4 文档 - VanKampen][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Hatcher - Algebraic Topology][https://pi.math.cornell.edu/~hatcher/AT/AT.pdf](需更新)
 
 ---

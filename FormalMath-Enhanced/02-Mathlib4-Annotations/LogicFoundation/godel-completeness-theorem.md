@@ -91,7 +91,7 @@ $$T \models \varphi \quad \Longleftrightarrow \quad T \vdash \varphi$$
 
 ### 在线资源
 
-- [Mathlib4 - Completeness](https://leanprover-community.github.io/mathlib4_docs/Mathlib/ModelTheory/Completeness.html)
+- [Mathlib4 - Completeness](https://leanprover-community.github.io/mathlib4_docs/)
 
 ---
 

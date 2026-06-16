@@ -8,6 +8,7 @@ external_ids:
   stacks_tag:
     tag: 00DV
     url: https://stacks.math.columbia.edu/tag/00DV
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=16A99
 references:
   databases:
   - id: stacks_project

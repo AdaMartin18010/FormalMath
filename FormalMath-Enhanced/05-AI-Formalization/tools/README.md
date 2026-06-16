@@ -100,7 +100,7 @@ print(task.verification_result.is_valid)
 ```bash
 # DeepSeek API
 export DEEPSEEK_API_KEY="your-api-key"
-export DEEPSEEK_BASE_URL="https://api.deepseek.com/v1"
+export DEEPSEEK_BASE_URL="https://platform.deepseek.com/"
 export DEEPSEEK_MODEL="deepseek-math"
 
 # Lean环境

@@ -122,7 +122,7 @@ $n=2$，$p=2$，$k=2$，满足 $k > n/p$（即 $2 > 1$）。
 ### 在线资源
 
 - [Sobolev Inequality Wikipedia](https://en.wikipedia.org/wiki/Sobolev_inequality)
-- [Sobolev Embedding Theorem nLab](https://ncatlab.org/nlab/show/Sobolev+embedding+theorem)
+- [Sobolev Embedding Theorem nLab](https://ncatlab.org/nlab/show/HomePage)
 
 ---
 

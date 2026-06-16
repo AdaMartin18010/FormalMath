@@ -14,6 +14,7 @@ course: Stanford FOAG 基础代数几何
 external_ids:
   ocw_url: https://math.stanford.edu/~vakil/216blog/
   ocw_ps_url: https://math.stanford.edu/~vakil/216blog/
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
 references:
   textbooks:
   - title: 'The Rising Sea: Foundations of Algebraic Geometry'

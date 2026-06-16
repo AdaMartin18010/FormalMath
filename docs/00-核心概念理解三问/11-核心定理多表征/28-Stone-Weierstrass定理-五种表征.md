@@ -21,6 +21,7 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Karl_Weierstrass
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=46E15
 ---
 # Stone-Weierstrass定理 - 五种表征
 

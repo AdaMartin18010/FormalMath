@@ -18,6 +18,7 @@ external_ids:
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
   nlab_url: https://ncatlab.org/nlab/show/algebra
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=16T05
 ---
 # ALG-258: Hopf代数的Galois扩张
 

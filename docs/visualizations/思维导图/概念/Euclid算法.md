@@ -27,6 +27,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E6%B3%95
   nlab_url: https://ncatlab.org/nlab/show/algorithm
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

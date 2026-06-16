@@ -4,8 +4,10 @@ msc_primary: 00A99
 course_code: MIT 18.06
 course_name: Linear Algebra
 instructor: Prof. Gilbert Strang (MIT OCW Spring 2010)
-textbook: "Gilbert Strang, Introduction to Linear Algebra, 4th Edition"
+textbook: Gilbert Strang, Introduction to Linear Algebra, 4th Edition
 processed_at: '2026-04-17'
+external_ids:
+  mit_ocw_url: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
 ---
 # MIT 18.06 线性代数讲义逐章拆解索引
 

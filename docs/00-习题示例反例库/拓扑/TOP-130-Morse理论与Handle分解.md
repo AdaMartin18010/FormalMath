@@ -1,7 +1,7 @@
 ---
-msc_primary: 58
+msc_primary: '58
 
-  - 58E05
+  - 58E05'
 exercise_id: TOP-130
 title: Morse理论与Handle分解
 difficulty: 3
@@ -10,11 +10,12 @@ topic: 拓扑
 subtopic: Morse理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=58E05
 ---
-
 # TOP-130: Morse理论与Handle分解
 
 **题号**: TOP-130

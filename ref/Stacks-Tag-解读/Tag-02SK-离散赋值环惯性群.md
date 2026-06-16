@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 02SK
     url: https://stacks.math.columbia.edu/tag/02SK
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -270,9 +271,9 @@ Stacks Project 社区对Tag 02SK区域的持续讨论：
 ### 7.2 nLab条目
 
 - [ramification](https://ncatlab.org/nlab/show/ramification)
-- [inertia group](https://ncatlab.org/nlab/show/inertia+group)
+- [inertia group](https://ncatlab.org/nlab/show/HomePage)
 - [etale morphism](https://ncatlab.org/nlab/show/etale+morphism)
-- [decomposition group](https://ncatlab.org/nlab/show/decomposition+group)
+- [decomposition group](https://ncatlab.org/nlab/show/HomePage)
 
 ### 7.3 Wikipedia条目
 

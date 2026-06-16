@@ -1,11 +1,14 @@
 ---
 title: Proper Forcing的发展
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=Proper%2BForcing%E7%9A%84%E5%8F%91%E5%B1%95
+  nlab_search_url: https://ncatlab.org/nlab/search?query=Proper%2BForcing%E7%9A%84%E5%8F%91%E5%B1%95
 ---
 # Proper Forcing的发展
 

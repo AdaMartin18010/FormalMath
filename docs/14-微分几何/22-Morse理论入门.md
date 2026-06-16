@@ -32,6 +32,8 @@ references:
     publisher: Springer
     year: 2014
     msc: 57R58
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=53C05
 ---
 # Morse理论入门
 

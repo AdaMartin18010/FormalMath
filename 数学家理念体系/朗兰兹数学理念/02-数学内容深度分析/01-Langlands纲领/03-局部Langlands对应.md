@@ -1,11 +1,14 @@
 ---
 title: 局部Langlands对应：局部理论的核心
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_search_url: https://en.wikipedia.org/wiki/Special:Search?search=%E5%B1%80%E9%83%A8Langlands%E5%AF%B9%E5%BA%94%EF%BC%9A%E5%B1%80%E9%83%A8%E7%90%86%E8%AE%BA%E7%9A%84%E6%A0%B8%E5%BF%83
+  nlab_search_url: https://ncatlab.org/nlab/search?query=%E5%B1%80%E9%83%A8Langlands%E5%AF%B9%E5%BA%94%EF%BC%9A%E5%B1%80%E9%83%A8%E7%90%86%E8%AE%BA%E7%9A%84%E6%A0%B8%E5%BF%83
 ---
 # 局部Langlands对应：局部理论的核心
 

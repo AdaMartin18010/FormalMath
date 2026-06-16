@@ -16,6 +16,8 @@ external_ids:
     tag: 01ED
     url: https://stacks.math.columbia.edu/tag/01ED
   stacks_tags: []
+  course_notes_url: https://math.stanford.edu/~vakil/216blog/
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=14
 references:
   databases:
   - id: stacks_project

@@ -30,6 +30,8 @@ references:
     journal: IEEE Transactions on Information Theory
     year: 1976
     doi: 10.1109/TIT.1976.1055638
+external_ids:
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=94A60
 ---
 # Diffie-Hellman密钥交换可视化
 

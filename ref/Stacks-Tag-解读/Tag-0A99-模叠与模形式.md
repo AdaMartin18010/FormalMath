@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0A99
     url: https://stacks.math.columbia.edu/tag/0A99
+  msc_classification_url: https://mathscinet.ams.org/mathscinet/search/mscdoc.html?code=00A99
 references:
   databases:
   - id: stacks_project
@@ -337,7 +338,7 @@ $$\pi_{2k}(\text{TMF}) \cong \{\text{弱模形式 of weight } k\}$$
 ### 7.4 在线资源
 
 9. **Stacks Project**: [Tag 0A99](https://stacks.math.columbia.edu/tag/0A99)
-10. **Stacks Project**: [Chapter Moduli of Curves](https://stacks.math.columbia.edu/chapter/0E6C)
+10. **Stacks Project**: [Chapter Moduli of Curves](https://stacks.math.columbia.edu/)
 
 ---
 
