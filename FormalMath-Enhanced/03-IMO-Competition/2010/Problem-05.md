@@ -5,7 +5,6 @@ msc_secondary:
 processed_at: '2026-04-03'
 title: IMO 2010 Problem 5
 ---
-
 # IMO 2010 Problem 5
 
 ## 题目

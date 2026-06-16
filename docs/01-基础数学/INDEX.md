@@ -6,7 +6,6 @@ msc_primary: 00
 msc_secondary: 
 processed_at: "2026-04-08"
 ---
-
 # 01-基础数学 - 完整内容索引
 
 **FormalMath项目核心分支 | 难度等级**: ⭐⭐（入门级）

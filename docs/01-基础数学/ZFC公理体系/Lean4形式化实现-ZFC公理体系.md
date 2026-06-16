@@ -6,7 +6,6 @@ msc_primary: 03
 msc_secondary: ['68T15', '03B70']
 processed_at: '2026-04-05'
 ---
-
 # ZFC公理体系 - Lean4形式化实现
 
 **创建日期**: 2025年11月12日

@@ -12,7 +12,6 @@ author: FormalMath Team
 version: 1.0
 created: 2026-04-09
 ---
-
 # ANA-010: Weierstrass M-判别法应用
 
 ## 题目陈述

@@ -529,4 +529,3 @@ $$
 
 **例子 15.3.10**
 设 $R = k[[x, y]]$，$M = R/(x)$。则 $\operatorname{pd}(M) = 1$（由 Koszul 复形 $0 \to R \xrightarrow{x} R \to M \to 0$），$\operatorname{depth}(M) = 1$（因为 $y$ 在 $M$ 上是正则的），而 $\dim(R) = 2$。Auslander-Buchsbaum 公式验证：$1 + 1 = 2$。
-

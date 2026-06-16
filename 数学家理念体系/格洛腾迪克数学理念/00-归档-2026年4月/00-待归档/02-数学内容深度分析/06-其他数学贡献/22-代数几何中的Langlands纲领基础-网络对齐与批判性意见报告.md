@@ -6,7 +6,6 @@ msc_secondary:
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 代数几何中的Langlands纲领基础：网络对齐与批判性意见报告
 
 **关联文档**：[22-代数几何中的Langlands纲领基础](./22-代数几何中的Langlands纲领基础.md) · [22-代数几何中的Langlands纲领基础-思维表征](./22-代数几何中的Langlands纲领基础-思维表征.md)

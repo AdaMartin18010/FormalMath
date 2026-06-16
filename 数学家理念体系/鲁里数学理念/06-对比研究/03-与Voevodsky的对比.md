@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 鲁里与Voevodsky的对比
 
 > **∞-范畴理论与同伦类型论的对比分析**

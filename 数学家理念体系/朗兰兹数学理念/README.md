@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 朗兰兹数学理念体系
 
 > **罗伯特·朗兰兹 (Robert Langlands, 1936-)**

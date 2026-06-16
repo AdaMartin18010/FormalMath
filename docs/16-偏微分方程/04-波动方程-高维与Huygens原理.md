@@ -26,7 +26,6 @@ references:
       year: 1982
       msc: 35-01
 ---
-
 # 波动方程-高维与Huygens原理
 
 **波的传播在空间中 — Kirchhoff公式与维度的奥秘**

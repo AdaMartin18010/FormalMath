@@ -9,7 +9,6 @@ version: v1.0-final
 status: ACCEPTED
 quality_grade: A+
 ---
-
 # FormalMath项目最终验收报告
 
 **项目名称**: FormalMath - 形式化数学知识体系

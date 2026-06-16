@@ -2,7 +2,6 @@
 title: "INDEX"
 msc_primary: "03"
 ---
-
 # FormalMath Lean4定理库索引
 
 ## 概述

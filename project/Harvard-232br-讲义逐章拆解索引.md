@@ -7,7 +7,6 @@ instructor: Aaron Landesman / Man-Wai Cheung / Joe Harris tradition
 textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
 processed_at: '2026-04-17'
 ---
-
 # Harvard Math 232br 代数几何与上同调讲义逐章拆解索引
 
 > **任务编号**：P2-T1

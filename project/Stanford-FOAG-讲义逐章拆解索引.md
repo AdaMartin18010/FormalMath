@@ -7,7 +7,6 @@ instructor: Ravi Vakil (Stanford Math 216)
 textbook: "Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry"
 processed_at: '2026-04-17'
 ---
-
 # Stanford FOAG (Ravi Vakil) 代数几何基础讲义逐章拆解索引
 
 > **任务编号**：P2-T1

@@ -6,7 +6,6 @@ msc_secondary: ['60H10', '60J60', '91B25', '91G20']
 prerequisites: ['随机过程', '微分方程', '概率论', '数值方法']
 processed_at: '2026-04-08'
 ---
-
 # 金融数学与工程 (Mathematical Finance and Engineering)
 
 **最后更新**: 2026年4月8日  

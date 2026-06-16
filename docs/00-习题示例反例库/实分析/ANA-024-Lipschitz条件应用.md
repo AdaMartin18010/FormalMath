@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-09'
 ---
-
 # ANA-024: Lipschitz条件应用
 
 **题号**: ANA-024

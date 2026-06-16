@@ -6,7 +6,6 @@ msc_primary: 03
 msc_secondary: ['03E30', '03B30']
 processed_at: '2026-04-05'
 ---
-
 # ZFC公理体系深化扩展版
 
 ## 目录

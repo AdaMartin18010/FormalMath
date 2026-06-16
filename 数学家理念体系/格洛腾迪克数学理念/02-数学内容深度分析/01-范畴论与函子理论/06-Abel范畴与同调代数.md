@@ -204,7 +204,7 @@ $$0 \to F(A) \to F(B) \to F(C) \xrightarrow{\delta} R^1 F(A) \to \cdots$$
 
 **定理 5.7** (Grothendieck 谱序列, Tôhoku §2.4, Théorème 2.4.1). *设 $\mathcal{A}, \mathcal{B}, \mathcal{C}$ 为 Abel 范畴，$F: \mathcal{A} \to \mathcal{B}$ 和 $G: \mathcal{B} \to \mathcal{C}$ 为左正合函子。假设 $\mathcal{A}$ 和 $\mathcal{B}$ 有足够内射对象，且 $F$ 将内射对象映到 $G$-零调对象（即 $R^q G(F(I)) = 0$ 对 $q > 0$ 和 $I$ 内射）。则对每个 $A \in \mathcal{A}$，存在收敛的谱序列
 $$E_2^{p,q}(A) = R^p G(R^q F(A)) \Longrightarrow R^{p+q}(GF)(A).$$
-*
+
 
 *证明概要.* *这是 Tôhoku 论文的技术巅峰。核心构造是**双复形（double complex）**：*
 
@@ -217,7 +217,7 @@ $$E_2^{p,q}(A) = R^p G(R^q F(A)) \Longrightarrow R^{p+q}(GF)(A).$$
 
 **推论 5.8** (Leray 谱序列). *设 $f: X \to Y$ 为拓扑空间的连续映射，$\mathcal{F}$ 为 $X$ 上的 Abel 群层。则
 $$E_2^{p,q} = H^p(Y, R^q f_* \mathcal{F}) \Longrightarrow H^{p+q}(X, \mathcal{F}).$$
-*
+
 
 *证明.* *取 $F = f_*: \mathbf{Ab}(X) \to \mathbf{Ab}(Y)$，$G = \Gamma(Y, -): \mathbf{Ab}(Y) \to \mathbf{Ab}$。则 $GF = \Gamma(X, -)$。由于 $f_*$ 将内射层映到软层（soft sheaves），而软层在 $\mathbf{Ab}(Y)$ 中是 $\Gamma(Y, -)$-零调的，定理 5.7 的条件满足。* $\square$
 

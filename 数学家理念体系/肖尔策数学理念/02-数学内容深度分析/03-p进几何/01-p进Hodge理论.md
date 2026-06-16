@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # p进Hodge理论
 
 > **经典Hodge理论在p进域的推广**

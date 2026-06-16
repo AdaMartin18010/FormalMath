@@ -5,7 +5,6 @@ msc_secondary:
 processed_at: '2026-04-03'
 title: IMO 2013 Problem 02
 ---
-
 # IMO 2013 Problem 02
 
 ## 题目

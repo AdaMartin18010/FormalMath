@@ -6,7 +6,6 @@ msc_secondary:
   - 68T15
 processed_at: '2026-04-20'
 ---
-
 # Mathlib4 使用指南
 
 ## 引言

@@ -4,7 +4,6 @@ msc_primary: 00A99
 date: 2026年04月08日
 status: 已完成
 ---
-
 # FormalMath项目全项目质量验证报告
 
 **验证日期**: 2026年04月08日

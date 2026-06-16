@@ -17,7 +17,6 @@ reviewer: 'AI Mathematical Reviewer'
 tags:
   - "mathematical_reviewed"
 ---
-
 # IMO 2004 Problem 1：平面几何
 
 ## 题目

@@ -6,7 +6,6 @@ msc_secondary:
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 凯莱数学理念 - 从这里开始
 
 > **Arthur Cayley (1821-1895)**

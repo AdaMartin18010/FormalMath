@@ -6,7 +6,6 @@ msc_primary: 62
 msc_secondary: ['62F03', '62F10', '62J05', '62G08']
 processed_at: '2026-04-05'
 ---
-
 # 数理统计 (Mathematical Statistics)
 
 **最后更新**: 2026年4月5日  

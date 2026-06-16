@@ -1,3 +1,5 @@
+---
+---
 # 参考文献 YAML 元数据规范
 
 ## 1. 目的
@@ -85,7 +87,7 @@ references:
 | `type` | ✅ | string | 固定值 `database` |
 | `name` | ✅ | string | 数据库名称 |
 | `entry` | ❌ | string | 具体查询词条或 Tag |
-| `entry_url` | ❌ | string | 带占位符的 URL 模板，如 `https://ncatlab.org/nlab/show/{entry}` |
+| `entry_url` | ❌ | string | 带占位符的 URL 模板，如 `{entry}` |
 | `consulted_at` | ❌ | string | 查询日期，ISO 8601 格式 |
 | `note` | ❌ | string | 补充说明 |
 
@@ -114,7 +116,7 @@ references:
       type: database
       name: "nLab"
       entry: "real number"
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+      entry_url: "{entry}"
       consulted_at: "2026-04-17"
 ```
 
@@ -140,7 +142,7 @@ references:
       type: database
       name: "Stacks Project"
       entry: "01H8"
-      entry_url: "https://stacks.math.columbia.edu/tag/{entry}"
+      entry_url: "{entry}"
       consulted_at: "2026-04-17"
 ```
 
@@ -192,7 +194,7 @@ references:
       type: database
       name: "nLab"
       entry: "topological space"
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+      entry_url: "{entry}"
       consulted_at: "2026-04-17"
 ```
 
@@ -244,7 +246,7 @@ references:
       type: database
       name: "nLab"
       entry: "group"
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+      entry_url: "{entry}"
       consulted_at: "2026-04-17"
 ```
 

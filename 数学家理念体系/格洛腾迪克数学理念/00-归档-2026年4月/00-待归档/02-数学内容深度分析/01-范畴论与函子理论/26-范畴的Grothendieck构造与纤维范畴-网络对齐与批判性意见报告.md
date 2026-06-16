@@ -6,7 +6,6 @@ msc_secondary:
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 范畴的Grothendieck构造与纤维范畴：网络对齐与批判性意见报告
 
 **关联文档**：[26-范畴的Grothendieck构造与纤维范畴](./26-范畴的Grothendieck构造与纤维范畴.md) · 同名思维表征

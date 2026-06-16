@@ -2,7 +2,6 @@
 title: "Putnam竞赛难题集"
 msc_primary: "00"
 ---
-
 # Putnam竞赛难题集
 
 > 面向William Lowell Putnam数学竞赛的精选难题

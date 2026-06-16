@@ -5,7 +5,6 @@ msc_secondary:
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 对Martin-Löf的影响：类型论的先驱
 
 > **文档状态**: ✅ 完成

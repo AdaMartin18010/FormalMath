@@ -9,7 +9,6 @@ keywords: [Weierstrass判别法, 函数级数, 一致收敛, 优级数]
 prerequisites: [ANA-018, ANA-052]
 source: 经典分析习题
 ---
-
 ## 题目
 
 **(a)** 用Weierstrass M-判别法证明 $\sum_{n=1}^{\infty} \frac{\sin(nx)}{n^2}$ 在 $\mathbb{R}$ 上一致收敛。

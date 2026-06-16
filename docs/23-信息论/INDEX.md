@@ -6,7 +6,6 @@ msc_secondary: ['94A15', '94A17', '94A24']
 prerequisites: ['概率论', '随机过程', '线性代数']
 processed_at: '2026-04-08'
 ---
-
 # 信息论与编码 (Information Theory and Coding)
 
 **最后更新**: 2026年4月8日  

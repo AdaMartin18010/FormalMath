@@ -6,7 +6,6 @@ msc_secondary:
 processed_at: '2026-04-20'
 title: 完备化与Hensel引理
 ---
-
 # 完备化与Hensel引理
 
 ## 1. 引言

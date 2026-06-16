@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # Fargues-Scholze几何化
 
 > **朗兰兹纲领的几何实现**

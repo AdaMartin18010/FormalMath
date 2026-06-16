@@ -17,7 +17,6 @@ reviewer: 'AI Mathematical Reviewer'
 tags:
   - "mathematical_reviewed"
 ---
-
 # IMO 2003 Problem 4：圆与相似
 
 ## 题目

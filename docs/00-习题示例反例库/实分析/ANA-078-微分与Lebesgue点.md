@@ -6,7 +6,6 @@ difficulty: ⭐⭐⭐⭐
 topics: [Lebesgue微分定理, Hardy-Littlewood极大函数, 绝对连续函数]
 created: 2026-04-10
 ---
-
 ## 题目
 
 设 $f \in L^1_{loc}(\mathbb{R}^n)$。

@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-10'
 ---
-
 # ANA-207: 齐次化Hardy空间插值定理
 
 **题号**: ANA-207

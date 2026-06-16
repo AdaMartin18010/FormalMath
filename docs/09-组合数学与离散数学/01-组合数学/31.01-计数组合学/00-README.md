@@ -6,7 +6,6 @@ msc_primary: 05
 msc_secondary: ['05A05', '05A10', '05A16', '05A19']
 processed_at: '2026-04-05'
 ---
-
 # 计数组合学 (Enumerative Combinatorics)
 
 **最后更新**: 2026年4月5日  

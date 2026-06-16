@@ -16,7 +16,6 @@ textbook: "Hatcher《Algebraic Topology》"
 level: 本科高阶/研究生初级
 processed_at: '2026-04-10'
 ---
-
 # Princeton MAT 365 (Topology) L3定义级对齐表
 
 > **文档类型**: 国际权威课程定义对齐 · L3理论建构层

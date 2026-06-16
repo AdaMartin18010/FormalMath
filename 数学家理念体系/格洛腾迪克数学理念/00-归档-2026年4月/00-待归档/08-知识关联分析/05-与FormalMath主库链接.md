@@ -6,7 +6,6 @@ msc_secondary:
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 格洛腾迪克数学理念与 FormalMath 主库链接
 
 **文档类型**：映射表 · 数学家理念体系 ↔ concept/docs  

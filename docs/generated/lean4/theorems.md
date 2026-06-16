@@ -63,4 +63,3 @@ msc_secondary: ['00-00']
 | `green_second_identity` | ⚠️ sorry | - |
 | `carleson_theorem` | ⚠️ sorry | - |
 | `fast_mod_exp_correct` | ⚠️ sorry | - |
-

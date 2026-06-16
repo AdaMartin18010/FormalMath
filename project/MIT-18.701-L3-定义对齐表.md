@@ -5,7 +5,6 @@ msc_secondary:
 title: MIT 18.701 Algebra I L3定义级对齐表
 processed_at: '2026-04-10'
 ---
-
 # MIT 18.701 Algebra I L3定义级对齐表
 
 **课程**: MIT 18.701 Algebra I

@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # Platonism数学哲学：数学对象的实在性
 
 

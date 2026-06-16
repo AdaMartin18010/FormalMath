@@ -6,7 +6,6 @@ msc_secondary:
 processed_at: '2026-04-20'
 title: Yoneda引理
 ---
-
 # Yoneda引理
 
 ## 1. 引言

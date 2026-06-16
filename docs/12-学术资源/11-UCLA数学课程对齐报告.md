@@ -8,7 +8,6 @@ generated_at: '2026-04-09'
 title: FormalMath与UCLA数学课程对齐报告
 processed_at: '2026-04-09'
 ---
-
 # FormalMath与加州大学洛杉矶分校(UCLA)数学课程对齐报告
 
 **版本**: v1.0

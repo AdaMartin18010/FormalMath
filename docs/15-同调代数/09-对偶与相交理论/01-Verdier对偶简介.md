@@ -28,7 +28,6 @@ references:
       year: 1966
       msc: 14-02
 ---
-
 # Verdier对偶简介
 
 **导出范畴中的对偶 — 从Grothendieck到Verdier**

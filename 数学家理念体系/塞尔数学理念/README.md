@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 塞尔数学理念体系
 
 > **让-皮埃尔·塞尔 (Jean-Pierre Serre, 1926-)**

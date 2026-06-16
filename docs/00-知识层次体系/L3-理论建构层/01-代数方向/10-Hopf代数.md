@@ -9,7 +9,6 @@ author: 'FormalMath Team'
 processed_at: '2026-04-05'
 tags: ['Hopf代数', '量子群', '双代数', '表示论']
 ---
-
 # 10 Hopf代数
 
 ﻿# 10-Hopf代数

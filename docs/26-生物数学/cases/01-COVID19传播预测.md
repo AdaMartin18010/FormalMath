@@ -5,7 +5,6 @@ category: "生物数学"
 difficulty: "高级"
 application: "公共卫生政策制定"
 ---
-
 # COVID-19传播动力学预测案例
 
 ## 问题描述

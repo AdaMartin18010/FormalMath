@@ -13,7 +13,6 @@ alignment_level: L6 (思想方法级)
 version: v1.0
 processed_at: '2026-04-10'
 ---
-
 # Harvard Math 232br Algebraic Geometry L6思想方法级对齐
 
 **课程代码**: Harvard Math 232br

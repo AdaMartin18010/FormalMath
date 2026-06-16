@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 德利涅数学理念体系
 
 > **皮埃尔·德利涅 (Pierre Deligne, 1944-)**

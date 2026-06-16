@@ -17,7 +17,6 @@ reviewer: 'AI Mathematical Reviewer'
 tags:
   - "mathematical_reviewed"
 ---
-
 # IMO 2004 Problem 3：棋盘覆盖
 
 ## 题目

@@ -152,7 +152,7 @@ $$E_2^{p,q} = R^p g_* (R^q f_* \mathcal{F}) \Longrightarrow R^{p+q}(gf)_* \mathc
 $$0 = F^{n+1} H^n \subseteq F^n H^n \subseteq \cdots \subseteq F^0 H^n = H^n$$
 使得
 $$E_\infty^{p,q} \cong F^p H^{p+q} / F^{p+1} H^{p+q}.$$
-*
+
 
 ### 4.2 双复形与全复形
 
@@ -179,7 +179,7 @@ $$d^2 = (d_h + (-1)^p d_v)^2 = d_h^2 + (-1)^{p+1} d_h d_v + (-1)^p d_v d_h + d_v
 
 *则对任意 $A \in \mathcal{A}$，存在收敛的谱序列
 $$E_2^{p,q}(A) = R^p G(R^q F(A)) \Longrightarrow R^{p+q}(GF)(A).$$
-*
+
 
 *证明.* *这是 Tôhoku 论文中最深刻的技术性证明之一，核心构造如下：*
 
@@ -216,7 +216,7 @@ $${}_{II} E_2^{p,q} = R^p G(R^q F(A)) \Longrightarrow R^{p+q}(GF)(A).$$
 
 **推论 4.6** (Leray 谱序列). *设 $f: X \to Y$ 和 $g: Y \to Z$ 为拓扑空间的连续映射（或概形态射），$\mathcal{F}$ 为 $X$ 上的层。则
 $$E_2^{p,q} = R^p g_* (R^q f_* \mathcal{F}) \Longrightarrow R^{p+q}(gf)_* \mathcal{F}.$$
-*
+
 
 *证明.* *取 $F = f_*$, $G = g_*$。则 $GF = (gf)_*$。$f_*$ 将内射层映为 $g_*$-零调层（当 $f$ 是局部紧空间的 proper 映射时，$f_*$ 将软层映为软层，软层对 $g_*$ 零调）。因此定理 4.5 的条件满足。* $\square$
 
@@ -228,7 +228,7 @@ $$E_2^{p,q} = \check{H}^p(\mathcal{U}, \mathcal{H}^q(\mathcal{F})) \Longrightarr
 
 **推论 4.8** (Hochschild-Serre 谱序列). *设 $G$ 为群，$H \trianglelefteq G$ 为正规子群，$M$ 为 $G$-模。则
 $$E_2^{p,q} = H^p(G/H, H^q(H, M)) \Longrightarrow H^{p+q}(G, M).$$
-*
+
 
 *证明.* *取 $F = H^0(H, -)$（$H$-不变子模），$G = H^0(G/H, -)$。则 $GF = H^0(G, -)$，且 $R^q F = H^q(H, -)$，$R^p G = H^p(G/H, -)$。* $\square$
 

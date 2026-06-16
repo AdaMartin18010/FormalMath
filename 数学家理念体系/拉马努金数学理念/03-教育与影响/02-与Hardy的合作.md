@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 拉马努金与Hardy的合作
 
 > **文档状态**: ✅ 完成

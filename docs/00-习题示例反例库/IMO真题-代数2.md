@@ -17,7 +17,6 @@ reviewer: 'AI Mathematical Reviewer'
 tags:
   - "mathematical_reviewed"
 ---
-
 # IMO 2001 Problem 2：数列与不等式
 
 ## 题目

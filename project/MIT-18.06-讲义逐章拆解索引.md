@@ -7,7 +7,6 @@ instructor: Prof. Gilbert Strang (MIT OCW Spring 2010)
 textbook: "Gilbert Strang, Introduction to Linear Algebra, 4th Edition"
 processed_at: '2026-04-17'
 ---
-
 # MIT 18.06 线性代数讲义逐章拆解索引
 
 > **任务编号**：P2-T1

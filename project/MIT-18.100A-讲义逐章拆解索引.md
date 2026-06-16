@@ -7,7 +7,6 @@ instructor: Dr. Casey Rodriguez (MIT OCW Fall 2020)
 textbook: "Jiri Lebl, Basic Analysis I: Introduction to Real Analysis, Volume 1"
 processed_at: '2026-04-17'
 ---
-
 # MIT 18.100A 实分析讲义逐章拆解索引
 
 > **任务编号**：P2-T1

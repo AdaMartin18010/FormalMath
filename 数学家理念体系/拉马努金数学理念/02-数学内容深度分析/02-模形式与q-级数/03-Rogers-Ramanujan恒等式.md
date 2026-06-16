@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # Rogers-Ramanujan恒等式：组合数学的经典
 
 > **文档状态**: ✅ 完成

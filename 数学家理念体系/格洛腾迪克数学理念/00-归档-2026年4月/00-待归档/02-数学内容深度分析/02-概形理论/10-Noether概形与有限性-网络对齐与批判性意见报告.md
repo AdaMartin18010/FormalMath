@@ -6,7 +6,6 @@ msc_secondary:
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # Noether概形与有限性：网络对齐与批判性意见报告
 
 **关联文档**：[10-Noether概形与有限性](./10-Noether概形与有限性.md) · 同名思维表征

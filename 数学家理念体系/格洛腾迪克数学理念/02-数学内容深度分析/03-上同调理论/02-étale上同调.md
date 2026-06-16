@@ -173,7 +173,7 @@ $$H^i_{\text{ét}}(X, \mathbb{Q}_\ell) \times H^{2d-i}_{\text{ét}}(X, \mathbb{Q
 
 **定理 4.7** (Grothendieck–Lefschetz 迹公式, SGA 4.5). *设 $X$ 为光滑射影 $\mathbb{F}_q$-概形，$\operatorname{Frob}_q: X \to X$ 为 Frobenius 态射。则
 $$\#X(\mathbb{F}_q) = \sum_{i=0}^{2d} (-1)^i \operatorname{Tr}(\operatorname{Frob}_q^* | H^i_{\text{ét}}(X, \mathbb{Q}_\ell)).$$
-*
+
 
 **推论 4.8** (Weil 猜想的有理性与函数方程). *由迹公式，Zeta 函数可以表示为
 $$Z(X, t) = \prod_{i=0}^{2d} \det(1 - t \cdot \operatorname{Frob}_q^* | H^i_{\text{ét}}(X, \mathbb{Q}_\ell))^{(-1)^{i+1}}.$$

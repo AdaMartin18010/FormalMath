@@ -862,7 +862,7 @@ theorem genus5_g13_empty (hg5 : g = 5) (hgen : IsGenericCurve X) :
 
 ### 数据库与网络资源
 
-- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
 
 ### 课程与外部链接
 

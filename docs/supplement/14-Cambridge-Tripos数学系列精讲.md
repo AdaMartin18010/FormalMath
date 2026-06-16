@@ -2,7 +2,6 @@
 title: "Cambridge Tripos数学系列精讲"
 msc_primary: "00"
 ---
-
 # Cambridge Tripos 数学系列精讲
 
 ---

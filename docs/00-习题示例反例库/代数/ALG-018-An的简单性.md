@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-09'
 ---
-
 # ALG-018: $A_n$ 的简单性
 
 **题号**: ALG-018

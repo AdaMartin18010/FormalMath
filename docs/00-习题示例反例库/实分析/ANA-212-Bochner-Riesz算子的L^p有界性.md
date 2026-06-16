@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-10'
 ---
-
 # ANA-212: Bochner-Riesz算子的L^p有界性
 
 **题号**: ANA-212

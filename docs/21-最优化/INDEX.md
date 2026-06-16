@@ -5,7 +5,6 @@ msc_primary: 90
 msc_secondary: ['90C05', '90C25', '90C27', '90C46']
 processed_at: '2026-04-08'
 ---
-
 # 最优化理论与方法 (Optimization Theory and Methods)
 
 **最后更新**: 2026年4月8日  

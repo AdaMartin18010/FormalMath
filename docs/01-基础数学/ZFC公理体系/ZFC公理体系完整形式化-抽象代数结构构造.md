@@ -6,7 +6,6 @@ msc_primary: 03
 msc_secondary: ['03E15', '03B30', '00A30']
 processed_at: '2026-04-05'
 ---
-
 # ZFC公理体系完整形式化 - 抽象代数结构构造
 
 ## 目录

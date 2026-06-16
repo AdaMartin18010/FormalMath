@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-09'
 ---
-
 # ANA-031: Rolle定理应用
 
 **题号**: ANA-031

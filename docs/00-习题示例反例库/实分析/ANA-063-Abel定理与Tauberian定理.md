@@ -9,7 +9,6 @@ keywords: [Abel定理, Tauberian定理, 幂级数, 边界行为, 收敛性]
 prerequisites: [ANA-062, ANA-057]
 source: 经典分析习题
 ---
-
 ## 题目
 
 **Abel定理：** 若 $\sum_{n=0}^{\infty} a_n = S$ 收敛，则 $\lim_{x \to 1^-} \sum_{n=0}^{\infty} a_n x^n = S$。

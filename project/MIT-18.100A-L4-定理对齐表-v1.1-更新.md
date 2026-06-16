@@ -11,7 +11,6 @@ textbook: "Jiri Lebl, Basic Analysis I"
 alignment_level: L4 (定理级)
 version: v1.1
 ---
-
 # MIT 18.100A Real Analysis L4定理级对齐表 v1.1
 
 > **更新说明**：本表基于 2026-04-20 全面盘点更新，替代 v1.0（2026-04-09）。v1.0 报告 L4 完整性仅 16.7%，该数据反映的是 2026-04-09 之前的快照。此后项目进行了大规模定理证明文档建设，实际状态已显著改善。

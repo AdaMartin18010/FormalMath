@@ -6,7 +6,6 @@ msc_primary: 03
 msc_secondary: ['03E15', '03B30', '00A30']
 processed_at: '2026-04-05'
 ---
-
 # ZFC公理体系-深度扩展版
 
 **主题编号**: B.01.10

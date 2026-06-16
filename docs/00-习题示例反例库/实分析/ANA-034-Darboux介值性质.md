@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-09'
 ---
-
 # ANA-034: Darboux介值性质
 
 **题号**: ANA-034

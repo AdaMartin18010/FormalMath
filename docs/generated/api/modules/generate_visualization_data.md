@@ -89,4 +89,3 @@ def generate_statistics_report(concepts, metadata)
 def main()
 
 ```
-

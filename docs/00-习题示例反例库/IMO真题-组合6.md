@@ -17,7 +17,6 @@ reviewer: 'AI Mathematical Reviewer'
 tags:
   - "mathematical_reviewed"
 ---
-
 # IMO 2003 Problem 2：极端原理
 
 ## 题目

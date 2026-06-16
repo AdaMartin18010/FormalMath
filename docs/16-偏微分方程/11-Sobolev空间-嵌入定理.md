@@ -28,7 +28,6 @@ references:
       year: 2003
       msc: 46E35
 ---
-
 # Sobolev空间-嵌入定理
 
 **从可积性到连续性 — Sobolev嵌入的阶梯**

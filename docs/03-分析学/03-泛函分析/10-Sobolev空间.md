@@ -6,7 +6,6 @@ msc_secondary:
 processed_at: '2026-04-20'
 title: Sobolev空间
 ---
-
 # Sobolev空间
 
 ## 1. 引言

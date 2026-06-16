@@ -59,6 +59,7 @@ IDENTIFIER_PATTERNS = {
     "zbmath": r"zbmath\.org/\?q=(an|au):[^\s\)\]\>\"\'\`]+?",
     "wikidata": r"wikidata\.org/entity/(Q\d+)",
     "stacks_tag": r"stacks\.math\.columbia\.edu/tag/[A-Z0-9]{4}",
+    "mactutor": r"mathshistory\.st-andrews\.ac\.uk/Biographies/[^/\s]+",
 }
 
 

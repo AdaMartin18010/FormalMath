@@ -7,7 +7,6 @@ instructor: MIT OCW Fall 2010 / Prof. Michael Artin tradition
 textbook: "Michael Artin, Algebra, 2nd Edition"
 processed_at: '2026-04-17'
 ---
-
 # MIT 18.701 抽象代数 I 讲义逐章拆解索引
 
 > **任务编号**：P2-T1

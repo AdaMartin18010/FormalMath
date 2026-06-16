@@ -20,7 +20,6 @@ references:
 status: completed
 created_at: 2026-04-18
 ---
-
 # Bourbaki运动与数学统一：Weil的结构主义遗产
 
 ## 1. 引言

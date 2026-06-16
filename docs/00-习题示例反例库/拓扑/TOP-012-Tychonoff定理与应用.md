@@ -9,7 +9,6 @@ keywords: [Tychonoff定理, 乘积拓扑, 紧致, 选择公理, 超滤子]
 prerequisites: [TOP-011]
 source: 经典拓扑习题
 ---
-
 ## 题目
 
 **Tychonoff定理：** 任意一族紧致空间的乘积（乘积拓扑）是紧致的。

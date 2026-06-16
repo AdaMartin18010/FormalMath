@@ -20,7 +20,6 @@ references:
 status: completed
 created_at: 2026-04-18
 ---
-
 # André Weil在数学史中的位置：从统一者到先驱
 
 ## 1. 引言

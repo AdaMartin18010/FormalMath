@@ -21,7 +21,6 @@ references:
 status: completed
 created_at: 2026-04-18
 ---
-
 # Adele与Tate论文：Weil的调和分析革命
 
 ## 1. 引言：从Hecke到Tate

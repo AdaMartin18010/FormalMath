@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-09'
 ---
-
 # ANA-036: L'Hôpital法则应用
 
 **题号**: ANA-036

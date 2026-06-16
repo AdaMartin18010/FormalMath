@@ -5,7 +5,6 @@ msc_secondary:
 processed_at: '2026-04-20'
 title: 形式化证明·Lean 4 练习习题集
 ---
-
 # 形式化证明·Lean 4 练习习题集
 
 > 覆盖基础证明策略、归纳法、`rw`、`linarith`、`ring` 及结构化证明。共 15 题。

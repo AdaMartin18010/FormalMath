@@ -28,7 +28,6 @@ references:
       year: 2014
       msc: 57R58
 ---
-
 # Morse理论入门
 
 **临界点的拓扑学 — 从Morse引理到Morse同调**

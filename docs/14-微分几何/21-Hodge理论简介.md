@@ -27,7 +27,6 @@ references:
       year: 1980
       msc: 32-02
 ---
-
 # Hodge理论简介
 
 **调和形式与上同调 — 从Laplace算子到Hodge分解**

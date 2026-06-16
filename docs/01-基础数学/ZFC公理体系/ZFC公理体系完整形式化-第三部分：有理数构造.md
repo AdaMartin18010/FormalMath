@@ -6,7 +6,6 @@ msc_primary: 03
 msc_secondary: ['08A02', '06A99']
 processed_at: '2026-04-05'
 ---
-
 # ZFC公理体系完整形式化 - 第三部分：有理数构造
 
 ## 目录

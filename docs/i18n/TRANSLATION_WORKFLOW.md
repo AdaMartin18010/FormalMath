@@ -2,7 +2,6 @@
 title: "TRANSLATION WORKFLOW"
 msc_primary: "00"
 ---
-
 ﻿---
 title: FormalMath Translation Workflow
 msc_primary: 00
@@ -247,4 +246,3 @@ A: 暂时链接到中文原文，待翻译完成后再更新。
 
 **Maintainers**: FormalMath i18n Team  
 **Last Updated**: 2026-04-04
-

@@ -6,7 +6,6 @@ msc_primary: 05
 msc_secondary: ['05D05', '05D10', '05D40', '05C65']
 processed_at: '2026-04-05'
 ---
-
 # 极值组合学 (Extremal Combinatorics)
 
 **最后更新**: 2026年4月5日

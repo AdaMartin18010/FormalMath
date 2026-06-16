@@ -449,9 +449,11 @@ $\square$
 
 ---
 
-**习题 1.2**。用 Archimedean 性质证明：对任意 $x > 0$，存在 $n\in\mathbb{N}$ 使 $rac{1}{n} < x$。
+**习题 1.2**。用 Archimedean 性质证明：对任意 $x > 0$，存在 $n\in\mathbb{N}$ 使 $
+rac{1}{n} < x$。
 
-*解答*：由 Archimedean 性质，取 $y = 1$，存在 $n\in\mathbb{N}$ 使 $nx > 1$（因 $x > 0$），即 $rac{1}{n} < x$。$\square$
+*解答*：由 Archimedean 性质，取 $y = 1$，存在 $n\in\mathbb{N}$ 使 $nx > 1$（因 $x > 0$），即 $
+rac{1}{n} < x$。$\square$
 
 ## 相关文档
 

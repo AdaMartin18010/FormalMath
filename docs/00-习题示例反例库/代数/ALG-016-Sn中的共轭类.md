@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-09'
 ---
-
 # ALG-016: $S_n$ 中的共轭类
 
 **题号**: ALG-016

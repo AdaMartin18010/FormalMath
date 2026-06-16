@@ -9,7 +9,7 @@ review_rounds: 1
 reviewed_at: '2026-04-20'
 reviewer: AI Mathematical Reviewer
 external_ids:
-  nlab_url: https://ncatlab.org/nlab/show/Lagrange+theorem
+  nlab_url: https://ncatlab.org/nlab/show/Lagrange%27s+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5
 ---
@@ -105,6 +105,6 @@ theorem leftCoset_card_eq_subgroup_card {G : Type u} [Group G] [Fintype G]
 
 ### 课程与外部链接
 
-- [Nlab Url](https://ncatlab.org/nlab/show/Lagrange+theorem)
+- [Nlab Url](https://ncatlab.org/nlab/show/Lagrange%27s+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5)

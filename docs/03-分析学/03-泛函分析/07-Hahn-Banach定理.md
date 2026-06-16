@@ -6,7 +6,6 @@ msc_secondary:
 processed_at: '2026-04-20'
 title: Hahn-Banach定理
 ---
-
 # Hahn-Banach定理
 
 ## 1. 引言

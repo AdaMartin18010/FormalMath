@@ -6,7 +6,6 @@ msc_primary: 00
 msc_secondary: ['03E20', '06A05', '11A05']
 processed_at: '2026-04-05'
 ---
-
 # 基础数学 (Foundational Mathematics)
 
 **最后更新**: 2026年4月5日

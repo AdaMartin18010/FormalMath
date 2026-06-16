@@ -6,7 +6,6 @@ msc_primary: 00
 msc_secondary: ['37A05', '58J20', '81Q30', '14F43']
 processed_at: '2026-04-05'
 ---
-
 # 高级数学 (Advanced Mathematics)
 
 **最后更新**: 2026年4月5日  

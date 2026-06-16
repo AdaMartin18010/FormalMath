@@ -84,4 +84,3 @@ def export_path_to_json(path: LearningPath, user_profile: UserProfile)
 
 - `path: LearningPath`
 - `user_profile: UserProfile`
-

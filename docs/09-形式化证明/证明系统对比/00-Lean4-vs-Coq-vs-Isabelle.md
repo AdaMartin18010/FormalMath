@@ -2,7 +2,6 @@
 title: "Lean4 vs Coq vs Isabelle"
 msc_primary: "03"
 ---
-
 # 证明助手系统对比
 
 ## 概述

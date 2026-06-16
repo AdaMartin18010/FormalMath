@@ -8,7 +8,6 @@ generated_at: '2026-04-09'
 title: FormalMath与CMU数学课程对齐报告
 processed_at: '2026-04-09'
 ---
-
 # FormalMath与卡内基梅隆大学(CMU)数学课程对齐报告
 
 **版本**: v1.0

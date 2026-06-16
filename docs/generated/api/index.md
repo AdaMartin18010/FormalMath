@@ -518,4 +518,3 @@ Attributes...
 - `should_exclude(filepath)`
 - `fix_symbols_in_file(filepath, backup = True)`
 - `main()`
-

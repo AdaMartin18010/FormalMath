@@ -216,7 +216,7 @@ K = (1/(EG-F²)²) · {
   |E_{vv}/2 + F_{uv} - G_{uu}/2   F_v - G_u/2|
   |E_u/2                           E          F    |
   |F_u - E_v/2                     F          G    |
-  -
+
   |0                               E_v/2      G_u/2|
   |E_v/2                           E          F    |
   |G_u/2                           F          G    |

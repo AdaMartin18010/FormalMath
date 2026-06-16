@@ -9,7 +9,6 @@ completion_status: 100%
 title: FormalMath 项目最终完成确认书
 processed_at: '2026-04-05'
 ---
-
 # FormalMath 项目最终完成确认书
 
 ---

@@ -6,7 +6,6 @@ msc_secondary:
 processed_at: '2026-04-20'
 title: Fredholm理论
 ---
-
 # Fredholm理论
 
 ## 1. 引言

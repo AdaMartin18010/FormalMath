@@ -6,7 +6,6 @@ msc_primary: 00
 msc_secondary: ['00A99', '97A99']
 processed_at: '2026-04-05'
 ---
-
 # ZFC公理体系到数论推导索引
 
 **主题编号**: B.01.11

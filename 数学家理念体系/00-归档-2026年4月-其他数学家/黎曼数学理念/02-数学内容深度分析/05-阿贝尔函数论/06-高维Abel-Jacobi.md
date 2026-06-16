@@ -6,7 +6,6 @@ msc_secondary:
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 高维Abel-Jacobi：代数簇的推广
 
 

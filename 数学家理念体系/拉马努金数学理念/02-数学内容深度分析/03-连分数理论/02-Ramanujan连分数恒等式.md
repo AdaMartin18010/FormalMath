@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # Ramanujan连分数恒等式：拉马努金的经典贡献
 
 > **文档状态**: ✅ 完成

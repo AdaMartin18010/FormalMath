@@ -10,7 +10,6 @@ course_code: MIT 18.701
 course_name: Algebra I
 instructor: Davesh Maulik (2025-2026)
 ---
-
 # MIT 18.701 Algebra I 语义级对齐手册
 
 **课程代码**: MIT 18.701

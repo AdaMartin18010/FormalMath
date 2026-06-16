@@ -73,4 +73,3 @@ def set_quality_thresholds(thresholds)
 **参数**:
 
 - `thresholds`
-

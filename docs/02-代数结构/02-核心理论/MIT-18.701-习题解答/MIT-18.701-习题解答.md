@@ -226,9 +226,9 @@ $S_4$ 通过共轭作用于自身。所有对换构成一个轨道。取 $\sigma
 
 ### 数据库与网络资源
 
-- [nLab](https://ncatlab.org/nlab/show/{entry})
-- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
-- [zbMATH Open](https://zbmath.org/?q=an:{zb_id})
+
+
+
 
 ### 课程与外部链接
 

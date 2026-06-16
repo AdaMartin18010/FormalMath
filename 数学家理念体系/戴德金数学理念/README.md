@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-16'
 ---
-
 # 戴德金数学理念体系
 
 ## 简介

@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # Langlands纲领的提出：数学统一的里程碑
 
 > **文档状态**: ✅ 内容填充完成

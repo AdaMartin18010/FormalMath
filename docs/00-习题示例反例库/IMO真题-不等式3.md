@@ -17,7 +17,6 @@ reviewer: 'AI Mathematical Reviewer'
 tags:
   - "mathematical_reviewed"
 ---
-
 # IMO 2005 Problem 3：分式不等式
 
 ## 题目
@@ -66,7 +65,8 @@ $$\frac{x^5 - x^2}{x^5 + y^2 + z^2} \geq \frac{x^2 - \frac{yz}{x}}{x^5 + y^2 + z
 
 利用 $xyz \geq 1$ 即 $x^2 \geq \frac{1}{yz}$。
 
-经过一系列估计，最终得到和 $\rac{x^5 - x^2}{x^5 + y^2 + z^2} \geq 0$。$\square$
+经过一系列估计，最终得到和 $\
+rac{x^5 - x^2}{x^5 + y^2 + z^2} \geq 0$。$\square$
 
 ## 知识点映射
 

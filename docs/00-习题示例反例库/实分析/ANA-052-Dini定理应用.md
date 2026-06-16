@@ -9,7 +9,6 @@ keywords: [Dini定理, 单调收敛, 紧致性, 连续性]
 prerequisites: [ANA-051, ANA-015]
 source: 经典分析习题
 ---
-
 ## 题目
 
 **Dini定理回顾：** 设 $K$ 是紧致度量空间，$f_n: K \to \mathbb{R}$ 连续。若 $f_n$ 逐点单调收敛到连续函数 $f$，则收敛是一致的。

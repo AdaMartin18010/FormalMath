@@ -648,9 +648,9 @@ theorem Ext1_locallyFree_tensor {X : Scheme}
 
 ### 数据库与网络资源
 
-- [nLab](https://ncatlab.org/nlab/show/{entry})
-- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
-- [zbMATH Open](https://zbmath.org/?q=an:{zb_id})
+
+
+
 
 ### 课程与外部链接
 

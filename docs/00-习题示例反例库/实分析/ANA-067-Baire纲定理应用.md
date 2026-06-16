@@ -9,7 +9,6 @@ keywords: [Baire纲定理, 剩余集, 纲, 一致有界原理, 开映射]
 prerequisites: [ANA-066, ANA-033]
 source: 经典分析习题
 ---
-
 ## 题目
 
 **Baire纲定理：** 完备度量空间是第二纲的（不能表示为可数个无处稠密集的并）。

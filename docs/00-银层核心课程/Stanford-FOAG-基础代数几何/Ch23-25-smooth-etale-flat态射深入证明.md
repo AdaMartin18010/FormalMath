@@ -597,7 +597,7 @@ $$\chi(X_y, \mathcal{O}) = \sum_{i=0}^{\dim(X_y)} (-1)^i h^i(X_y, \mathcal{O})$$
 
 ### 数据库与网络资源
 
-- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
 
 ### 课程与外部链接
 

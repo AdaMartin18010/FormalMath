@@ -9,7 +9,6 @@ keywords: [Stone-Weierstrass, 多项式逼近, 代数, 分离点, 一致稠密]
 prerequisites: [ANA-058, ANA-034]
 source: 经典分析习题
 ---
-
 ## 题目
 
 **Stone-Weierstrass定理（实版本）：** 设 $K$ 是紧致Hausdorff空间，$\mathcal{A} \subset C(K, \mathbb{R})$ 是子代数（对加、乘、数乘封闭），满足：

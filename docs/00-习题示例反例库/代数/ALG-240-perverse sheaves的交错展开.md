@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-10'
 ---
-
 # ALG-240: Perverse Sheaves 的交错展开
 
 **题号**: ALG-240

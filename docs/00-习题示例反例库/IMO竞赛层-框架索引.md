@@ -6,7 +6,6 @@ course: IMO竞赛数学
 status: planning
 created_at: 2026-04-18
 ---
-
 # IMO 竞赛层框架索引
 
 ## 1. 项目概述

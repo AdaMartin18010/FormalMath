@@ -7,7 +7,6 @@ msc_secondary:
 title: ZFC公理
 processed_at: '2026-04-05'
 ---
-
 # ZFC 公理系统
 
 ## 1. 集合论的动因

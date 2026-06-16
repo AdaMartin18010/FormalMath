@@ -359,7 +359,7 @@ example : True := by trivial
 
 ### 数据库与网络资源
 
-- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
 
 ### 课程与外部链接
 

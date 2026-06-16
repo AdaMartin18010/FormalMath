@@ -569,4 +569,3 @@ theorem fast_mod_exp_correct {a p e : ℕ} [Fact p.Prime] (hpa : ¬p ∣ a) :
 ⚠️ **注意**: 此定理使用 `sorry` 占位，证明未完成
 
 ---
-

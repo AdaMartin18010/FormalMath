@@ -7,7 +7,6 @@ msc_secondary:
   - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 肖尔策与Fargues的对比
 
 > **Fargues-Scholze几何化的合作与创新**

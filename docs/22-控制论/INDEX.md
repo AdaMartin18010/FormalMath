@@ -6,7 +6,6 @@ msc_secondary: ['93B05', '93B07', '93B36', '93B52']
 prerequisites: ['线性代数', '微分方程', '复分析']
 processed_at: '2026-04-08'
 ---
-
 # 控制理论与应用 (Control Theory and Applications)
 
 **最后更新**: 2026年4月8日  

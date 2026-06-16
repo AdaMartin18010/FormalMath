@@ -14,7 +14,6 @@ source:
   original: true
 processed_at: '2026-04-10'
 ---
-
 # ANA-209: Calderón-Zygmund算子的T1定理
 
 **题号**: ANA-209

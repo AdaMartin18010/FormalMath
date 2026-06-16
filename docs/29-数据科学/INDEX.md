@@ -6,7 +6,6 @@ msc_secondary: ['68T05', '62H30', '62F15', '68Q32']
 prerequisites: ['线性代数', '概率统计', '优化理论', '数值计算']
 processed_at: '2026-04-08'
 ---
-
 # 数据科学与机器学习数学基础 (Data Science and Machine Learning)
 
 **最后更新**: 2026年4月8日

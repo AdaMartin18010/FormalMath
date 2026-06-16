@@ -6,7 +6,6 @@ msc_primary: 00
 msc_secondary: ['65L05', '76M25', '90C05', '93B05']
 processed_at: '2026-04-05'
 ---
-
 # 应用数学 (Applied Mathematics)
 
 **最后更新**: 2026年4月5日  

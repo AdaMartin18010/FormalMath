@@ -6,7 +6,6 @@ difficulty: ⭐⭐⭐⭐
 topics: [Monad, 代数, Kleisli范畴, 伴随分解]
 created: 2026-04-10
 ---
-
 ## 题目
 
 设 $\mathcal{C}$ 是范畴，$T: \mathcal{C} \to \mathcal{C}$ 是Monad（三元组）。

@@ -11,7 +11,6 @@ textbook: "Michael Artin, Algebra (2nd Edition)"
 alignment_level: L4 (定理级)
 version: v2.0
 ---
-
 # MIT 18.701 Algebra I L4定理级对齐表
 
 **课程代码**: MIT 18.701

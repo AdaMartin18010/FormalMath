@@ -9,7 +9,6 @@ instructor: Ravi Vakil
 version: FOAG Oct 2025
 processed_at: '2026-04-09'
 ---
-
 # Stanford FOAG 语义级对齐手册
 
 **课程代码**: Stanford Math 216

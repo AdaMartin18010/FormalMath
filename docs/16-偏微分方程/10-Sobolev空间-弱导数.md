@@ -28,7 +28,6 @@ references:
       year: 2003
       msc: 46E35
 ---
-
 # Sobolev空间-弱导数
 
 **广义微分 — 从经典解到弱解的函数空间**

@@ -68,7 +68,7 @@ import Mathlib
 $$\angle PBA + \angle PCA = \angle PBC + \angle PCB。$$
 
 证明 $AP \geq AI$，且当且仅当 $P = I$ 时等号成立。
--
+
 
 -- 形式化陈述
 problem imo2006_q1 (A B C : EuclideanSpace ℝ (Fin 2))
@@ -100,7 +100,7 @@ namespace IMO2008
 
 (b) 证明存在无穷多组有理数三元组 $(x, y, z)$，$x, y, z \neq 1$ 且 $xyz = 1$，
 使得上述不等式变为等式。
--
+
 
 -- 子问题(a)的陈述
 lemma imo2008_q2a (x y z : ℝ)

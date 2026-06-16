@@ -178,8 +178,8 @@ processed_at: '2026-04-05'
 部署方式: Docker Compose / Kubernetes
 回滚版本: 
 变更内容:
-  - 
-  - 
+
+
 备注:
 ```
 

@@ -7,7 +7,6 @@ generated_at: '2026-04-09'
 title: FormalMath顶尖大学数学课程对齐文档索引
 processed_at: '2026-04-09'
 ---
-
 # FormalMath顶尖大学数学课程对齐文档索引
 
 **文档版本**: v1.0

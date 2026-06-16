@@ -8,7 +8,6 @@ generated_at: '2026-04-09'
 title: FormalMath与UT Austin数学课程对齐报告
 processed_at: '2026-04-09'
 ---
-
 # FormalMath与德克萨斯大学奥斯汀分校(UT Austin)数学课程对齐报告
 
 **版本**: v1.0

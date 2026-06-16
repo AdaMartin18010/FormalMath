@@ -9,7 +9,6 @@ course_code: MIT 18.100A
 course_name: Real Analysis
 instructor: Z. Lin (2025-2026)
 ---
-
 # MIT 18.100A Real Analysis 语义级对齐手册
 
 **课程代码**: MIT 18.100A

@@ -301,7 +301,7 @@ lemma projective_space_cohomology {A : Type*} [CommRing A] (N : ℕ) (n : ℤ) (
 
 ### 在线资源
 - Stacks Project: [Tag 0B5R](https://stacks.math.columbia.edu/tag/0B5R)
-- nLab: [Serre theorem](https://ncatlab.org/nlab/show/Serre+theorem)
+- nLab: [Serre theorem]()
 
 ---
 

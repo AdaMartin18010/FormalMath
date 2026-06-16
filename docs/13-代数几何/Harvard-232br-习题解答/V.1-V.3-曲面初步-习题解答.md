@@ -1018,7 +1018,7 @@ theorem enriques_criterion_kodaira :
 
 ### 数据库与网络资源
 
-- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
 
 ### 课程与外部链接
 

@@ -5,7 +5,6 @@ level: project
 status: planning
 created_at: 2026-04-18
 ---
-
 # AI形式化流水线设计
 
 ## 1. 目标

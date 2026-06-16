@@ -10,7 +10,6 @@ instructor: Casey Rodriguez
 alignment_level: L6
 document_type: 思想方法级对齐
 ---
-
 # MIT 18.100A Real Analysis L6思想方法提炼
 
 **课程代码**: MIT 18.100A

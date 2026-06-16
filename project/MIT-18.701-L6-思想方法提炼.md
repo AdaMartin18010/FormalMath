@@ -13,7 +13,6 @@ alignment_level: L6 (思想方法级)
 version: v1.0
 processed_at: '2026-04-10'
 ---
-
 # MIT 18.701 Algebra I L6思想方法级对齐
 
 **课程代码**: MIT 18.701

@@ -823,7 +823,10 @@ theorem qr_solve_least_squares {m n : ℕ} (A Q R : Matrix (Fin m) (Fin n) ℝ)
 
 **习题 1.2**。对 $v_1=(1,0,0), v_2=(1,1,0), v_3=(1,1,1)$ 应用 Gram-Schmidt 正交化。
 
-*解答*：$u_1=v_1=(1,0,0)$；$u_2=v_2-rac{v_2\cdot u_1}{u_1\cdot u_1}u_1=(0,1,0)$；$u_3=v_3-rac{v_3\cdot u_1}{u_1\cdot u_1}u_1-rac{v_3\cdot u_2}{u_2\cdot u_2}u_2=(0,0,1)$。$\square$
+*解答*：$u_1=v_1=(1,0,0)$；$u_2=v_2-
+rac{v_2\cdot u_1}{u_1\cdot u_1}u_1=(0,1,0)$；$u_3=v_3-
+rac{v_3\cdot u_1}{u_1\cdot u_1}u_1-
+rac{v_3\cdot u_2}{u_2\cdot u_2}u_2=(0,0,1)$。$\square$
 
 ## 相关文档
 

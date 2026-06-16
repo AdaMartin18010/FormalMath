@@ -59,4 +59,3 @@ Attributes:
     feedback_generator: 反馈生成器
     report_generator: 报告生成器
     sessions: 活跃评估会话
-

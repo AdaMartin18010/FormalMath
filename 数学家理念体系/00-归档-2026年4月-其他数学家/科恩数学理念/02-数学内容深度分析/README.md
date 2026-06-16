@@ -6,7 +6,6 @@ msc_secondary:
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # 科恩数学内容深度分析
 
 本模块深入分析保罗·约瑟夫·科恩（Paul Joseph Cohen, 1934–2007）在力迫法（forcing）、独立性证明和集合论公理等领域的核心数学贡献。科恩是唯一的Fields Medal和Gödel Prize双料得主（注：科恩因证明连续统假设的独立性获得1966年Fields Medal），他的力迫法彻底改变了集合论和数理逻辑的研究范式。

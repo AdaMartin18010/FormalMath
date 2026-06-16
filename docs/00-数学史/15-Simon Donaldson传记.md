@@ -2,7 +2,6 @@
 title: "Simon Donaldson传记"
 msc_primary: "01"
 ---
-
 # Simon Donaldson 传记
 
 > "四维流形的拓扑学揭示了数学中最深刻的结构之一。"

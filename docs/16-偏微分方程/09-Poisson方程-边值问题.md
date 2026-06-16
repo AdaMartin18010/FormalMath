@@ -28,7 +28,6 @@ references:
       year: 2001
       msc: 35-02
 ---
-
 # Poisson方程-边值问题
 
 ## 引言

@@ -28,7 +28,7 @@ references:
   - institution: MIT
     course_code: '18.701'
     lecture: Lecture 14-15
-    url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2020/
+    url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
   assignments:
   - name: Problem Set 4
     url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset4.pdf

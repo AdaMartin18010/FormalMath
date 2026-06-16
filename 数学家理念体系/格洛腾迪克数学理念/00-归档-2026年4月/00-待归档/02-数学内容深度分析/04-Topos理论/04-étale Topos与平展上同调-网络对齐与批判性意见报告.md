@@ -6,7 +6,6 @@ msc_secondary:
 - 01A70
 processed_at: '2026-04-05'
 ---
-
 # étale Topos与平展上同调：网络对齐与批判性意见报告
 
 **关联文档**：[04-étale Topos与平展上同调](../../README.md) · 同名思维表征

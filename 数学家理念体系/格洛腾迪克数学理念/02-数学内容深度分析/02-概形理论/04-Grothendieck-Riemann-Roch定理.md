@@ -198,7 +198,7 @@ SGA 6（1971）在 Berthelot、Illusie 等人的努力下，将 GRR 定理发展
 $$\operatorname{ch}(x) = \operatorname{rank}(x) + c_1(x) + \frac{c_1(x)^2 - 2c_2(x)}{2} + \cdots$$
 形式上，若 $c(x) = \prod_i (1 + x_i)$，则
 $$\operatorname{ch}(x) = \sum_i e^{x_i} = \sum_i \sum_{n=0}^\infty \frac{x_i^n}{n!}.$$
-*
+
 
 **命题 4.7**. *$\operatorname{ch}: K_0(X) \to A(X) \otimes \mathbb{Q}$ 是环同态。*
 
@@ -221,7 +221,7 @@ $$\operatorname{td}(E) = 1 + \frac{c_1}{2} + \frac{c_1^2 + c_2}{12} + \frac{c_1 
 $$\operatorname{ch}(f_!(x)) \cdot \operatorname{td}(T_Y) = f_*(\operatorname{ch}(x) \cdot \operatorname{td}(T_X))$$
 在 $A(Y) \otimes \mathbb{Q}$ 中成立。等价地（利用 $T_f = T_X - f^* T_Y$ 在 $K$-理论中的等式）：
 $$\operatorname{ch}(f_!(x)) = f_*(\operatorname{ch}(x) \cdot \operatorname{td}(T_f)).$$
-*
+
 
 *证明概要.* *Borel-Serre 和 Grothendieck 的证明分为三个关键步骤：*
 
@@ -239,7 +239,7 @@ $$K_0(\mathbb{P}(E)) \cong K_0(Y)[\xi] / (\xi^r - c_1(E) \xi^{r-1} + \cdots \pm 
 
 **推论 4.11** (Hirzebruch-Riemann-Roch). *设 $X$ 为光滑射影簇，$E$ 为向量丛。则
 $$\chi(X, E) = \int_X \operatorname{ch}(E) \cdot \operatorname{td}(T_X).$$
-*
+
 
 *证明.* *取 $Y = \operatorname{Spec}(k)$，$f: X \to \operatorname{Spec}(k)$ 为结构态射。则 $f_!(E) = \sum_i (-1)^i H^i(X, E)$ 在 $K_0(k) \cong \mathbb{Z}$ 中的像为 $\chi(X, E)$。GRR 给出
 $$\operatorname{ch}(f_!(E)) = f_*(\operatorname{ch}(E) \cdot \operatorname{td}(T_X)).$$

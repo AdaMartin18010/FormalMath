@@ -11,7 +11,6 @@ textbook: "Jiri Lebl, Basic Analysis I"
 alignment_level: L4 (定理级)
 version: v1.0
 ---
-
 # MIT 18.100A Real Analysis L4定理级对齐表
 
 **课程代码**: MIT 18.100A

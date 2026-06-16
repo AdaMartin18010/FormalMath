@@ -6,7 +6,6 @@ msc_primary: 00
 title: FormalMath 与威斯康星大学麦迪逊分校数学课程对齐报告
 processed_at: '2026-04-09'
 ---
-
 # FormalMath 与威斯康星大学麦迪逊分校数学课程对齐报告
 
 **文档类型**：国际课程对齐报告

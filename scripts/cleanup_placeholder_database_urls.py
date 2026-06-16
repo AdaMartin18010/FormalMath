@@ -42,18 +42,19 @@ def parse_frontmatter(text: str):
             fm_text = text[3:end].strip()
             body = text[end + 3 :].lstrip("\n")
             try:
-                return yaml.safe_load(fm_text) or {}, body
+                return yaml.safe_load(fm_text) or {}, body, fm_text
             except yaml.YAMLError:
-                return None, body
-    return {}, text
+                return None, body, fm_text
+    return {}, text, ""
 
 
 def clean_doc(doc_path: Path):
     text = doc_path.read_text(encoding="utf-8", errors="ignore")
-    fm, body = parse_frontmatter(text)
+    fm, body, fm_text = parse_frontmatter(text)
     if fm is None:
         return False
-    changed = False
+    fm_changed = False
+    body_changed = False
 
     # 清理 external_ids 中的占位 URL
     ext = fm.get("external_ids") or {}
@@ -61,17 +62,17 @@ def clean_doc(doc_path: Path):
         val = ext[key]
         if isinstance(val, str) and is_placeholder_url(val):
             del ext[key]
-            changed = True
+            fm_changed = True
         elif isinstance(val, list):
             cleaned = [u for u in val if not is_placeholder_url(u)]
             if len(cleaned) != len(val):
                 ext[key] = cleaned
-                changed = True
+                fm_changed = True
     if ext:
         fm["external_ids"] = ext
     elif "external_ids" in fm:
         del fm["external_ids"]
-        changed = True
+        fm_changed = True
 
     # 清理 references.databases
     refs = fm.get("references") or {}
@@ -100,10 +101,10 @@ def clean_doc(doc_path: Path):
             if replacement:
                 db["entry_url"] = replacement
                 new_dbs.append(db)
-                changed = True
+                fm_changed = True
             else:
                 # 无法替换则移除
-                changed = True
+                fm_changed = True
                 continue
         else:
             new_dbs.append(db)
@@ -111,24 +112,63 @@ def clean_doc(doc_path: Path):
         refs["databases"] = new_dbs
     elif "databases" in refs:
         del refs["databases"]
-        changed = True
+        fm_changed = True
     if refs:
         fm["references"] = refs
     elif "references" in fm:
         del fm["references"]
-        changed = True
+        fm_changed = True
 
-    if not changed:
+    # 同时清理正文中残留的模板占位链接与裸占位 URL
+    body, body_changed = clean_body_placeholders(body)
+
+    if not fm_changed and not body_changed:
         return False
 
-    new_text = (
-        "---\n"
-        + yaml.safe_dump(fm, allow_unicode=True, sort_keys=False, default_flow_style=False)
-        + "---\n"
-        + body
-    )
+    if fm_changed:
+        new_fm_text = yaml.safe_dump(fm, allow_unicode=True, sort_keys=False, default_flow_style=False)
+    else:
+        new_fm_text = fm_text if fm_text.endswith("\n") else fm_text + "\n"
+    new_text = "---\n" + new_fm_text + "---\n" + body
     doc_path.write_text(new_text, encoding="utf-8")
     return True
+
+
+# 正文占位链接模式（如 [nLab](https://ncatlab.org/nlab/show/{entry})）
+BODY_LINK_PLACEHOLDER_RE = re.compile(
+    r"!?\[[^\]]*\]\(\s*https?://[^\s(){}]*\{[^}]*\}[^\s(){}]*\s*\)"
+)
+BODY_BARE_PLACEHOLDER_RE = re.compile(
+    r"https?://[^\s<>\"{}\[\]`]*(?:/nlab/show/|/tag/|\?q=an\s*$|\?q=au\s*$|\?query=\s*$)(?=\{|$|\s)"
+)
+
+
+def clean_body_placeholders(body: str):
+    changed = False
+    # 移除带 {placeholder} 的 Markdown 链接
+    new_body = BODY_LINK_PLACEHOLDER_RE.sub("", body)
+    if new_body != body:
+        changed = True
+        body = new_body
+    # 移除裸的占位 URL 前缀（后面紧跟 {xxx} 或行尾）
+    new_body = BODY_BARE_PLACEHOLDER_RE.sub("", body)
+    if new_body != body:
+        changed = True
+        body = new_body
+    # 清理因移除链接产生的空行或仅有空白符号的行
+    lines = body.splitlines()
+    cleaned_lines = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped in ("-", "*", "+") or stripped.startswith("-") and not stripped[1:].strip():
+            # 保留列表符号但无内容时删除整行
+            cleaned_lines.append("")
+        else:
+            cleaned_lines.append(line)
+    new_body = "\n".join(cleaned_lines)
+    if new_body != body:
+        changed = True
+    return new_body, changed
 
 
 def main():

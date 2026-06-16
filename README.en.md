@@ -5,7 +5,6 @@ msc_secondary:
 title: FormalMath Project
 processed_at: '2026-04-08'
 ---
-
 # FormalMath Project
 
 **Comprehensive Educational Knowledge Base for Mathematical Formalization and Mathematician Ideology Systems**

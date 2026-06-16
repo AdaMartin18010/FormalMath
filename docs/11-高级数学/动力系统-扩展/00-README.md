@@ -6,7 +6,6 @@ msc_primary: 37
 msc_secondary: ['37B20', '37C20', '37D05', '37J40']
 processed_at: '2026-04-05'
 ---
-
 # 动力系统扩展 (Dynamical Systems Extensions)
 
 **最后更新**: 2026年4月5日  

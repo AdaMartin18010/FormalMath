@@ -6,7 +6,6 @@ msc_secondary:
 processed_at: '2026-04-20'
 title: Van Kampen定理
 ---
-
 # Van Kampen定理
 
 ## 1. 引言

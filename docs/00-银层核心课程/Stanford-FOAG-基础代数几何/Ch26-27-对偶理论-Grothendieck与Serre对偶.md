@@ -597,7 +597,7 @@ $$\chi(\mathcal{E}) = \sum_{j=0}^n (-1)^{n-j} h^j(\mathcal{E}^\vee \otimes \omeg
 
 ### 数据库与网络资源
 
-- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
 
 ### 课程与外部链接
 

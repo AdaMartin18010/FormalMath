@@ -1,0 +1,890 @@
+{
+  "https://en.wikipedia.org/wiki/Convergence_(mathematics)": [
+    200,
+    "https://en.wikipedia.org/wiki/Convergence_(mathematics)"
+  ],
+  "https://en.wikipedia.org/wiki/Uniform_continuity": [
+    200,
+    "https://en.wikipedia.org/wiki/Uniform_continuity"
+  ],
+  "https://en.wikipedia.org/wiki/Limit_(category_theory)": [
+    200,
+    "https://en.wikipedia.org/wiki/Limit_(category_theory)"
+  ],
+  "https://en.wikipedia.org/wiki/Set_(mathematics)": [
+    200,
+    "https://en.wikipedia.org/wiki/Set_(mathematics)"
+  ],
+  "https://en.wikipedia.org/wiki/Function_(mathematics)": [
+    200,
+    "https://en.wikipedia.org/wiki/Function_(mathematics)"
+  ],
+  "https://en.wikipedia.org/wiki/Mean_value_theorem": [
+    200,
+    "https://en.wikipedia.org/wiki/Mean_value_theorem"
+  ],
+  "https://en.wikipedia.org/wiki/Bernhard_Riemann": [
+    200,
+    "https://en.wikipedia.org/wiki/Bernhard_Riemann"
+  ],
+  "https://en.wikipedia.org/wiki/Group_(mathematics)": [
+    200,
+    "https://en.wikipedia.org/wiki/Group_(mathematics)"
+  ],
+  "https://en.wikipedia.org/wiki/Vector_space": [
+    200,
+    "https://en.wikipedia.org/wiki/Vector_space"
+  ],
+  "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/": [
+    200,
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/"
+  ],
+  "https://ncatlab.org/nlab/show/convergence": [
+    200,
+    "https://ncatlab.org/nlab/show/convergence"
+  ],
+  "https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/": [
+    200,
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/"
+  ],
+  "https://ncatlab.org/nlab/show/mean+value+theorem": [
+    200,
+    "https://ncatlab.org/nlab/show/mean+value+theorem"
+  ],
+  "https://ncatlab.org/nlab/show/limit": [
+    200,
+    "https://ncatlab.org/nlab/show/limit"
+  ],
+  "https://en.wikipedia.org/wiki/Topological_space": [
+    200,
+    "https://en.wikipedia.org/wiki/Topological_space"
+  ],
+  "https://ncatlab.org/nlab/show/set": [
+    200,
+    "https://ncatlab.org/nlab/show/set"
+  ],
+  "https://ncatlab.org/nlab/show/function": [
+    200,
+    "https://ncatlab.org/nlab/show/function"
+  ],
+  "https://www.math.harvard.edu/course/mathematics-232br/": [
+    200,
+    "https://www.math.harvard.edu/course/mathematics-232br/"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88"
+  ],
+  "https://ncatlab.org/nlab/show/group": [
+    200,
+    "https://ncatlab.org/nlab/show/group"
+  ],
+  "https://en.wikipedia.org/wiki/Sheaf_(mathematics)": [
+    200,
+    "https://en.wikipedia.org/wiki/Sheaf_(mathematics)"
+  ],
+  "https://ncatlab.org/nlab/show/vector+space": [
+    200,
+    "https://ncatlab.org/nlab/show/vector+space"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90"
+  ],
+  "http://math.stanford.edu/~vakil/216blog/": [
+    200,
+    "http://math.stanford.edu/~vakil/216blog/"
+  ],
+  "https://en.wikipedia.org/wiki/Scheme_(mathematics)": [
+    200,
+    "https://en.wikipedia.org/wiki/Scheme_(mathematics)"
+  ],
+  "https://math.stanford.edu/~vakil/216blog/": [
+    200,
+    "https://math.stanford.edu/~vakil/216blog/"
+  ],
+  "https://en.wikipedia.org/wiki/Morphism": [
+    200,
+    "https://en.wikipedia.org/wiki/Morphism"
+  ],
+  "https://ncatlab.org/nlab/show/sheaf": [
+    200,
+    "https://ncatlab.org/nlab/show/sheaf"
+  ],
+  "https://ncatlab.org/nlab/show/topological+space": [
+    200,
+    "https://ncatlab.org/nlab/show/topological+space"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E6%8B%93%E6%89%91%E7%A9%BA%E9%97%B4": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E6%8B%93%E6%89%91%E7%A9%BA%E9%97%B4"
+  ],
+  "https://ncatlab.org/nlab/show/uniform+continuity": [
+    200,
+    "https://ncatlab.org/nlab/show/uniformly+continuous+map"
+  ],
+  "https://ncatlab.org/nlab/show/scheme": [
+    200,
+    "https://ncatlab.org/nlab/show/scheme"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86"
+  ],
+  "https://ncatlab.org/nlab/show/morphism": [
+    200,
+    "https://ncatlab.org/nlab/show/morphism"
+  ],
+  "https://people.math.harvard.edu/~landesman/notes.html": [
+    200,
+    "https://people.math.harvard.edu/~landesman/notes.html"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E4%B8%80%E8%87%B4%E8%BF%9E%E7%BB%AD": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E4%B8%80%E8%87%B4%E8%BF%9E%E7%BB%AD"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E5%B1%82": [
+    "_ssl.c:999: The handshake operation timed out",
+    "https://stacks.math.columbia.edu/search?query=%E5%B1%82"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84"
+  ],
+  "https://en.wikipedia.org/wiki/Differential_form": [
+    200,
+    "https://en.wikipedia.org/wiki/Differential_form"
+  ],
+  "https://en.wikipedia.org/wiki/Functor": [
+    200,
+    "https://en.wikipedia.org/wiki/Functor"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E7%BE%A4": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E7%BE%A4"
+  ],
+  "https://ncatlab.org/nlab/show/differential+form": [
+    200,
+    "https://ncatlab.org/nlab/show/differential+form"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F"
+  ],
+  "https://en.wikipedia.org/wiki/Cohomology": [
+    200,
+    "https://en.wikipedia.org/wiki/Cohomology"
+  ],
+  "https://ncatlab.org/nlab/show/functor": [
+    200,
+    "https://ncatlab.org/nlab/show/functor"
+  ],
+  "https://ncatlab.org/nlab/show/cohomology": [
+    200,
+    "https://ncatlab.org/nlab/show/cohomology"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B": [
+    "_ssl.c:999: The handshake operation timed out",
+    "https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam1_s10_sol.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/index.html"
+  ],
+  "https://en.wikipedia.org/wiki/Matrix_(mathematics)": [
+    200,
+    "https://en.wikipedia.org/wiki/Matrix_(mathematics)"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/index.html"
+  ],
+  "https://ncatlab.org/nlab/show/matrix": [
+    200,
+    "https://ncatlab.org/nlab/show/matrix"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam1_s10.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset2.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset2.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset1.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam1_s10_sol.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_exam1_s10_sol.pdf"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset1.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset1.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam1_s10.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_exam1_s10.pdf"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset1.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset1.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-4-factorization-into-a-lu/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-4-factorization-into-a-lu/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset2.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset2.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset3.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset3.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset4.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset4.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-rn/": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-rn/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset3.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset3.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-4-factorization-into-a-lu/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-4-factorization-into-a-lu/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-rn/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-5-transposes-permutations-spaces-rn/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset4.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset4.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-7-solving-ax-0-pivot-variables-special-solutions/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-7-solving-ax-0-pivot-variables-special-solutions/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset6.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset6.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-6-column-space-and-nullspace/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset5.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset5.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset6.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset6.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset7.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset7.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-10-the-four-fundamental-subspaces/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-10-the-four-fundamental-subspaces/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-8-solving-ax-b-row-reduced-form-r/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-8-solving-ax-b-row-reduced-form-r/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset8.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset8.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset5.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset5.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-7-solving-ax-0-pivot-variables-special-solutions/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-7-solving-ax-0-pivot-variables-special-solutions/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset7.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset7.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-15-projections-onto-subspaces/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-15-projections-onto-subspaces/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset8.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset8.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-8-solving-ax-b-row-reduced-form-r/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-8-solving-ax-b-row-reduced-form-r/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-14-orthogonal-vectors-and-subspaces/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-14-orthogonal-vectors-and-subspaces/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-9-independence-basis-and-dimension/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-10-the-four-fundamental-subspaces/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-10-the-four-fundamental-subspaces/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset9.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset9.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset9.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset9.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-14-orthogonal-vectors-and-subspaces/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-14-orthogonal-vectors-and-subspaces/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10_sol.pdf": [
+    "_ssl.c:999: The handshake operation timed out",
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10_sol.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-15-projections-onto-subspaces/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-15-projections-onto-subspaces/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-19-determinant-formulas-and-cofactors/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-19-determinant-formulas-and-cofactors/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-20-cramers-rule-inverse-matrix-and-volume/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-20-cramers-rule-inverse-matrix-and-volume/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-18-properties-of-determinants/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-18-properties-of-determinants/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset10.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_pset10.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/MIT18_06S10_exam2_s10.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-21-eigenvalues-and-eigenvectors/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-21-eigenvalues-and-eigenvectors/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-22-diagonalization-and-powers-of-a/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-22-diagonalization-and-powers-of-a/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-19-determinant-formulas-and-cofactors/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-19-determinant-formulas-and-cofactors/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-28-similar-matrices-and-jordan-form/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-28-similar-matrices-and-jordan-form/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-25-symmetric-matrices-and-positive-definiteness/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-25-symmetric-matrices-and-positive-definiteness/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-20-cramers-rule-inverse-matrix-and-volume/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-20-cramers-rule-inverse-matrix-and-volume/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-18-properties-of-determinants/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-18-properties-of-determinants/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-27-positive-definite-matrices-and-minima/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-27-positive-definite-matrices-and-minima/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-25-symmetric-matrices-and-positive-definiteness/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-25-symmetric-matrices-and-positive-definiteness/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-28-similar-matrices-and-jordan-form/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-28-similar-matrices-and-jordan-form/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/": [
+    200,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/": [
+    200,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-27-positive-definite-matrices-and-minima/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-27-positive-definite-matrices-and-minima/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-21-eigenvalues-and-eigenvectors/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-21-eigenvalues-and-eigenvectors/'/index.html"
+  ],
+  "https://en.wikipedia.org/wiki/Taylor's_theorem": [
+    200,
+    "https://en.wikipedia.org/wiki/Taylor's_theorem"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/": [
+    200,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/": [
+    200,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/lecture-videos/index.html"
+  ],
+  "https://stacks.math.columbia.edu/search?query=Taylor": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=Taylor"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10_sol.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/calendar-and-readings/index.html"
+  ],
+  "https://ncatlab.org/nlab/show/Taylor's+theorem": [
+    200,
+    "https://ncatlab.org/nlab/show/Taylor's+theorem"
+  ],
+  "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-22-diagonalization-and-powers-of-a/'": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-22-diagonalization-and-powers-of-a/'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/": [
+    200,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/lecture-videos/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/assignments/": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/assignments/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset5.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset5.pdf"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/assignments/index.html"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/calendar-and-readings/index.html"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset5.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset5.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset4.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset4.pdf"
+  ],
+  "https://ncatlab.org/nlab/show/intermediate+value+theorem": [
+    200,
+    "https://ncatlab.org/nlab/show/intermediate+value+theorem"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset3.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset3.pdf'/index.html"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E4%BB%8B%E5%80%BC%E5%AE%9A%E7%90%86": [
+    "_ssl.c:999: The handshake operation timed out",
+    "https://stacks.math.columbia.edu/search?query=%E4%BB%8B%E5%80%BC%E5%AE%9A%E7%90%86"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset4.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset4.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset3.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset3.pdf"
+  ],
+  "https://en.wikipedia.org/wiki/Intermediate_value_theorem": [
+    200,
+    "https://en.wikipedia.org/wiki/Intermediate_value_theorem"
+  ],
+  "https://en.wikipedia.org/wiki/Infimum_and_supremum": [
+    200,
+    "https://en.wikipedia.org/wiki/Infimum_and_supremum"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/assignments/": [
+    200,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/assignments/"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset2.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset2.pdf"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset2.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset2.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2020/": [
+    404,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2020/"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/": [
+    200,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset1.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset1.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/lecture-notes/": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/lecture-notes/index.html"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/": [
+    200,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/": [
+    200,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/assignments/"
+  ],
+  "https://en.wikipedia.org/wiki/Sylow_theorems": [
+    200,
+    "https://en.wikipedia.org/wiki/Sylow_theorems"
+  ],
+  "https://ncatlab.org/nlab/show/supremum": [
+    200,
+    "https://ncatlab.org/nlab/show/join"
+  ],
+  "https://stacks.math.columbia.edu/search?query=Sylow": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=Sylow"
+  ],
+  "https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/lecture-notes/": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/lecture-notes/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset3.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset3.pdf'/index.html"
+  ],
+  "https://ncatlab.org/nlab/show/ring": [
+    200,
+    "https://ncatlab.org/nlab/show/ring"
+  ],
+  "https://en.wikipedia.org/wiki/Ring_(mathematics)": [
+    200,
+    "https://en.wikipedia.org/wiki/Ring_(mathematics)"
+  ],
+  "https://ncatlab.org/nlab/show/Sylow+theorem": [
+    200,
+    "https://ncatlab.org/nlab/show/class+equation"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset3.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset3.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset1.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/MIT18_100A_f20_pset1.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset4.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset4.pdf"
+  ],
+  "https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)": [
+    200,
+    "https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E7%8E%AF": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E7%8E%AF"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5"
+  ],
+  "https://ncatlab.org/nlab/show/Lagrange+theorem": [
+    404,
+    "https://ncatlab.org/nlab/show/Lagrange+theorem"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset6.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset6.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset5.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset5.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset4.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset4.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset1.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset1.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset5.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset5.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset6.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset6.pdf'/index.html"
+  ],
+  "https://en.wikipedia.org/wiki/Alexander_Grothendieck": [
+    200,
+    "https://en.wikipedia.org/wiki/Alexander_Grothendieck"
+  ],
+  "https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/": [
+    200,
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset2.pdf'": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset2.pdf'/index.html"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset1.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset1.pdf"
+  ],
+  "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset2.pdf": [
+    301,
+    "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/resources/MIT18_701F10_pset2.pdf"
+  ],
+  "https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)": [
+    200,
+    "https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86"
+  ],
+  "https://en.wikipedia.org/wiki/Integral": [
+    200,
+    "https://en.wikipedia.org/wiki/Integral"
+  ],
+  "https://ncatlab.org/nlab/show/integral": [
+    200,
+    "https://ncatlab.org/nlab/show/integral"
+  ],
+  "https://stacks.math.columbia.edu/search?query=Cauchy": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=Cauchy"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84"
+  ],
+  "https://mathshistory.st-andrews.ac.uk/Biographies/Serre/": [
+    200,
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Serre/"
+  ],
+  "https://ncatlab.org/nlab/show/Cauchy+theorem": [
+    200,
+    "https://ncatlab.org/nlab/show/Cauchy+theorem"
+  ],
+  "https://en.wikipedia.org/wiki/Jean-Pierre_Serre": [
+    200,
+    "https://en.wikipedia.org/wiki/Jean-Pierre_Serre"
+  ],
+  "https://ncatlab.org/nlab/show/Rolle+theorem": [
+    200,
+    "https://ncatlab.org/nlab/show/mean+value+theorem"
+  ],
+  "https://en.wikipedia.org/wiki/Module_(mathematics)": [
+    200,
+    "https://en.wikipedia.org/wiki/Module_(mathematics)"
+  ],
+  "https://ncatlab.org/nlab/show/module": [
+    200,
+    "https://ncatlab.org/nlab/show/module"
+  ],
+  "https://stacks.math.columbia.edu/search?query=%E6%A8%A1": [
+    200,
+    "https://stacks.math.columbia.edu/search?query=%E6%A8%A1"
+  ],
+  "https://ncatlab.org/nlab/show/Serre+theorem": [
+    404,
+    "https://ncatlab.org/nlab/show/Serre+theorem"
+  ],
+  "https://ncatlab.org/nlab/show/%C4%8Cech+cohomology": [
+    200,
+    "https://ncatlab.org/nlab/show/%C4%8Cech+cohomology"
+  ],
+  "https://stacks.math.columbia.edu/tag/0B9C": [
+    200,
+    "https://stacks.math.columbia.edu/tag/0B9C"
+  ],
+  "https://stacks.math.columbia.edu/tag/01ED": [
+    200,
+    "https://stacks.math.columbia.edu/tag/01ED"
+  ],
+  "https://stacks.math.columbia.edu/tag/0B5R": [
+    200,
+    "https://stacks.math.columbia.edu/tag/0B5R"
+  ],
+  "https://ncatlab.org/nlab/show/affine+scheme": [
+    200,
+    "https://ncatlab.org/nlab/show/affine+scheme"
+  ],
+  "https://stacks.math.columbia.edu/tag/01EO": [
+    200,
+    "https://stacks.math.columbia.edu/tag/01EO"
+  ],
+  "https://ncatlab.org/nlab/show/Riemann-Roch+theorem": [
+    200,
+    "https://ncatlab.org/nlab/show/Grothendieck-Riemann-Roch+theorem"
+  ],
+  "https://stacks.math.columbia.edu/tag/01X8": [
+    "_ssl.c:999: The handshake operation timed out",
+    "https://stacks.math.columbia.edu/tag/01X8"
+  ],
+  "https://stacks.math.columbia.edu/tag/01XB": [
+    "_ssl.c:999: The handshake operation timed out",
+    "https://stacks.math.columbia.edu/tag/01XB"
+  ],
+  "https://ncatlab.org/nlab/show/Lagrange%27s+theorem": [
+    200,
+    "https://ncatlab.org/nlab/show/Lagrange%27s+theorem"
+  ]
+}
