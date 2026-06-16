@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 代数拓扑-Künneth公式
 难度: ⭐⭐⭐⭐
 预计时间: 30分钟
+title: Künneth公式
 ---
-
 # Künneth公式
 
 ## 题目

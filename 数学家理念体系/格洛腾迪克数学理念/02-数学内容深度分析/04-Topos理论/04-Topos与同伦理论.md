@@ -1,27 +1,38 @@
 ---
-title: "Topos与同伦理论：从几何到高阶结构的桥梁"
+title: Topos与同伦理论：从几何到高阶结构的桥梁
 level: gold
 course: Grothendieck数学理念
 msc_primary: 18
 msc_secondary:
-  - 18F10
+- 18F10
 references:
   textbooks:
-    - title: "Séminaire de Géométrie Algébrique du Bois-Marie (SGA 4)"
-      author: "M. Artin, A. Grothendieck, J-L. Verdier"
-      edition: "Lecture Notes in Mathematics 269–271"
-      year: "1972–1973"
-    - title: "Higher Topos Theory"
-      author: "J. Lurie"
-      edition: "Annals of Mathematics Studies 170"
-      year: 2009
+  - title: Séminaire de Géométrie Algébrique du Bois-Marie (SGA 4)
+    author: M. Artin, A. Grothendieck, J-L. Verdier
+    edition: Lecture Notes in Mathematics 269–271
+    year: 1972–1973
+  - title: Higher Topos Theory
+    author: J. Lurie
+    edition: Annals of Mathematics Studies 170
+    year: 2009
   papers:
-    - title: "Homotopy theory of simplicial sheaves"
-      author: "J. F. Jardine"
-      year: 1987
+  - title: Homotopy theory of simplicial sheaves
+    author: J. F. Jardine
+    year: 1987
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Topos
+    author: Topos
+    consulted_at: '2026-04-17'
 status: completed
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
+  zbmath_url: https://zbmath.org/?q=au:Topos
 ---
-
 ## 1. 引言：几何、逻辑与同伦的三重交汇
 
 Grothendieck的**Topos理论**最初是为了给代数几何中的层上同调提供一个统一的范畴论语境。然而，随着数学的发展，topos理论逐渐显示出与**同伦理论（homotopy theory）**和**数理逻辑**的深刻联系。从Joyal的simplicial sheaves到Lurie的∞-topos，从Voevodsky的motivic homotopy到HoTT（Homotopy Type Theory），topos理论成为连接几何、逻辑与高阶结构的桥梁。

@@ -1,12 +1,12 @@
 ---
 msc_primary: 18B99
 msc_secondary:
-  - 18A40
-  - 18F10
-  - 55U35
-  - 03G30
+- 18A40
+- 18F10
+- 55U35
+- 03G30
+title: nLab 扩展课程对齐
 ---
-
 # nLab 深度对齐：范畴论与高等数学
 
 nLab 是范畴论与高等数学的协作式 wiki，由 Urs Schreiber 等人维护，涵盖范畴论、高阶范畴、Topos 理论、同伦类型论与 ∞-范畴等前沿领域。本节对齐 nLab 的核心主题与 FormalMath 的内容，并提供严格的数学材料。

@@ -1,63 +1,72 @@
 ---
-title: "仿射概形上同调消失 - FOAG证明"
+title: 仿射概形上同调消失 - FOAG证明
 msc_primary: 14A99
-description: "仿射概形上同调消失的完整证明，包含具体计算示例，突出Vakil的"Affineness is cohomological"观点"
-course: "Stanford FOAG"
-topic: "代数几何"
-subtopic: "层上同调"
-difficulty: "L4-高级"
+description: 仿射概形上同调消失的完整证明，包含具体计算示例，突出Vakil的'Affineness is cohomological'观点
+course: Stanford FOAG
+topic: 代数几何
+subtopic: 层上同调
+difficulty: L4-高级
 vakil_featured: true
-vakil_chapter: "18.1"
-vakil_philosophy: "Affineness is cohomological - 仿射性是上同调性质"
-vakil_key_quote: "仿射概形在层上同调的意义下是'拓扑平凡'的"
-prerequisites: ["层上同调基础", "拟凝聚层", "仿射概形", "注入分解"]
-theorem_id: "AG-AFFINE-VANISHING-001"
-source: "FOAG Ch 18.1 / Hartshorne III.3.5 / Serre 1957"
-date_created: "2026-04-10"
+vakil_chapter: '18.1'
+vakil_philosophy: Affineness is cohomological - 仿射性是上同调性质
+vakil_key_quote: 仿射概形在层上同调的意义下是'拓扑平凡'的
+prerequisites:
+- 层上同调基础
+- 拟凝聚层
+- 仿射概形
+- 注入分解
+theorem_id: AG-AFFINE-VANISHING-001
+source: FOAG Ch 18.1 / Hartshorne III.3.5 / Serre 1957
+date_created: '2026-04-10'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/scheme
+    consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01X8
+    consulted_at: 2026-04-17
+    tags:
+    - 01X8
+    - 01XB
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
+  stacks_tag:
+    tag: 01X8
+    url: https://stacks.math.columbia.edu/tag/01X8
+  stacks_tags: []
 ---
-
 # 仿射概形上同调消失定理
 
 ## 定理陈述

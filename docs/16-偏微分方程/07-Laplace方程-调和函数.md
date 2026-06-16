@@ -2,33 +2,36 @@
 title: Laplace方程-调和函数
 description: 系统介绍Laplace方程与调和函数的定义、基本性质、平均值定理、极值原理、Liouville定理、Harnack不等式与收敛定理，建立椭圆型方程的基础理论。
 msc_primary:
-  - 35J05
+- 35J05
 msc_secondary:
-  - 31A05
-  - 31B05
-  - 35B50
+- 31A05
+- 31B05
+- 35B50
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: evans_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Lawrence C. Evans
-      publisher: American Mathematical Society
-      year: 2010
-      msc: 35-01
-    - id: gilbarg_trudinger
-      type: textbook
-      title: Elliptic Partial Differential Equations of Second Order
-      authors:
-        - David Gilbarg
-        - Neil S. Trudinger
-      publisher: Springer
-      year: 2001
-      msc: 35-02
+  - id: evans_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Lawrence C. Evans
+    publisher: American Mathematical Society
+    year: 2010
+    msc: 35-01
+  - id: gilbarg_trudinger
+    type: textbook
+    title: Elliptic Partial Differential Equations of Second Order
+    authors:
+    - David Gilbarg
+    - Neil S. Trudinger
+    publisher: Springer
+    year: 2001
+    msc: 35-02
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # Laplace方程-调和函数
 
 **稳态的平衡 — 调和函数的优雅理论**

@@ -1,11 +1,14 @@
 ---
 msc_primary: 18-XX
 msc_secondary:
-  - 18Gxx
+- 18Gxx
 processed_at: '2026-04-20'
 title: 同调代数·Ext 与 Tor 习题集
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/homological+algebra
+  wikipedia_url: https://en.wikipedia.org/wiki/Homological_algebra
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0
 ---
-
 # 同调代数·Ext 与 Tor 习题集
 
 > 覆盖导出函子计算、长正合列、Yoneda Ext、同调维数。共 15 题。

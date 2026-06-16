@@ -1,11 +1,15 @@
 ---
 msc_primary: 53-01
 msc_secondary:
-  - 53A04
-  - 53A05
-  - 53C22
+- 53A04
+- 53A05
+- 53C22
+title: UCLA 微分几何 课程对齐
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/differential+geometry
+  wikipedia_url: https://en.wikipedia.org/wiki/Differential_geometry
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95
 ---
-
 # UCLA 微分几何核心内容
 
 UCLA Math 164（微分几何）涵盖曲线与曲面的局部理论、曲率、测地线与 Gauss-Bonnet 定理。本节提供该课程的严格数学内容，包括核心定义、定理证明与典型例子。

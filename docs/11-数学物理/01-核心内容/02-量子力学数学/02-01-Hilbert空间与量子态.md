@@ -1,12 +1,13 @@
 ---
-msc_primary: 81
+msc_primary: '81
 
-  - 81Q10
-  - 46C05
-  - 47A70
-  - 46N50
+  - 81Q10 - 46C05 - 47A70 - 46N50'
 title: Hilbert空间与量子态
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Hilbert+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Hilbert_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Hilbert%E7%A9%BA%E9%97%B4
 ---
 # Hilbert空间与量子态
 

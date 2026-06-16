@@ -1,9 +1,12 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: 欧拉线定理 (Euler Line Theorem)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Leonhard_Euler
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euler/
 ---
 # 欧拉线定理 (Euler Line Theorem)
 

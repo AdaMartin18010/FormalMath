@@ -1,43 +1,49 @@
 ---
-title: "形式化验证中的 Grothendieck：Lean4/Mathlib4、Stacks Project 与代数几何的未来"
-level: "gold"
+title: 形式化验证中的 Grothendieck：Lean4/Mathlib4、Stacks Project 与代数几何的未来
+level: gold
 msc_primary: 68
 msc_secondary:
-  - 68V20
-  - 14-04
-  - 03B35
+- 68V20
+- 14-04
+- 03B35
 references:
   textbooks:
-    - title: "Theorem Proving in Lean 4"
-      author: "J. Avigad, G. Ebner, S. Ullrich, et al."
-      edition: "official documentation"
-      year: 2024
-    - title: "The Stacks Project"
-      author: "A. J. de Jong et al."
-      edition: "online"
-      url: "https://stacks.math.columbia.edu"
+  - title: Theorem Proving in Lean 4
+    author: J. Avigad, G. Ebner, S. Ullrich, et al.
+    edition: official documentation
+    year: 2024
+  - title: The Stacks Project
+    author: A. J. de Jong et al.
+    edition: online
+    url: https://stacks.math.columbia.edu
   papers:
-    - title: "A formalization of the affine line in Lean"
-      author: "K. Buzzard, J. Commelin, P. Massot, et al."
-      journal: "unpublished"
-      year: 2023
-    - title: "Formalising algebraic geometry in Lean"
-      author: "K. Buzzard"
-      journal: "talk slides, ICM 2022"
-      year: 2022
-    - title: "Schemes in Lean"
-      author: "K. Buzzard, C. Hughes, K. Lau, et al."
-      journal: "unpublished"
-      year: 2019
+  - title: A formalization of the affine line in Lean
+    author: K. Buzzard, J. Commelin, P. Massot, et al.
+    journal: unpublished
+    year: 2023
+  - title: Formalising algebraic geometry in Lean
+    author: K. Buzzard
+    journal: talk slides, ICM 2022
+    year: 2022
+  - title: Schemes in Lean
+    author: K. Buzzard, C. Hughes, K. Lau, et al.
+    journal: unpublished
+    year: 2019
   databases:
-    - type: "Mathlib4"
-      url: "https://github.com/leanprover-community/mathlib4"
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu"
-      tag: "formalization"
-review_status: "draft"
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Algebraic%20geometry
+    author: Algebraic geometry
+    consulted_at: '2026-04-17'
+review_status: draft
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/algebraic+geometry
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  zbmath_url: https://zbmath.org/?q=au:Algebraic%20geometry
 ---
-
 # 形式化验证中的 Grothendieck：Lean4/Mathlib4、Stacks Project 与代数几何的未来
 
 ## 1. 引言

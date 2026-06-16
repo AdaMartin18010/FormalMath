@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53C21
+  - 53C21'
 exercise_id: GEO-081
 title: Cheeger-Colding理论与极限空间
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 几何
 subtopic: collapsing理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/limit
+  wikipedia_url: https://en.wikipedia.org/wiki/Limit_(category_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90
 ---
-
 # GEO-081: Cheeger-Colding理论与极限空间
 
 **题号**: GEO-081

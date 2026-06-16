@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 代数拓扑-Poincare对偶
 难度: ⭐⭐⭐⭐⭐
 预计时间: 40分钟
+title: Poincare对偶性
 ---
-
 # Poincaré对偶性
 
 ## 题目

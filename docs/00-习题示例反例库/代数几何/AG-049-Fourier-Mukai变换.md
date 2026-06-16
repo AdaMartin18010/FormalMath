@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 代数几何-Fourier-Mukai
 难度: ⭐⭐⭐⭐⭐
 预计时间: 55分钟
+title: Fourier Mukai变换
 ---
-
 # Fourier-Mukai 变换
 
 ## 题目

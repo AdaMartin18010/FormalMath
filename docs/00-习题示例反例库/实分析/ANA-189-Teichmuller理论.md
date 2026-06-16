@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 复分析-Teichmuller理论
 难度: ⭐⭐⭐⭐⭐
 预计时间: 60分钟
+title: Teichmuller理论
 ---
-
 # Teichmüller 理论
 
 ## 题目

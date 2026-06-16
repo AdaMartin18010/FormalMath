@@ -1,17 +1,40 @@
 ---
 msc_primary: 14
 msc_secondary:
-  - 14-01
+- 14-01
 title: Stanford FOAG L3定义级对齐表
 processed_at: '2026-04-10'
 course_code: Stanford FOAG
 course_name: Foundations of Algebraic Geometry
 instructor: Ravi Vakil
-textbook: "Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry"
+textbook: 'Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry'
 alignment_level: L3 (定义级)
 version: v1.1
+external_ids:
+  stacks_tag:
+    tag: '0017'
+    url: https://stacks.math.columbia.edu/tag/0017
+  stacks_tags: []
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0017
+    tags:
+    - '0017'
+    - 006A
+    - 0090
+    - 01E8
+    - 01HV
+    - 01KU
+    - 01LC
+    - 01M0
+    - 01NT
+    - 01Q9
+    - 01W7
+    consulted_at: '2026-04-17'
 ---
-
 # Stanford FOAG L3定义级对齐表
 
 **课程代码**: Stanford FOAG (Math 216A/B)

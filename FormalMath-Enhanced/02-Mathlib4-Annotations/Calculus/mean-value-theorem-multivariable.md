@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 多变量中值定理 (Multivariable Mean Value Theorem)
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/mean+value+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Mean_value_theorem
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86
 ---
 # 多变量中值定理 (Multivariable Mean Value Theorem)
 

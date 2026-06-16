@@ -1,26 +1,36 @@
 ---
-title: "Grothendieck的数学风格与工作方法：结构主义的实践"
+title: Grothendieck的数学风格与工作方法：结构主义的实践
 level: gold
 course: Grothendieck数学理念
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A70
+- 01A70
 references:
   textbooks:
-    - title: "Récoltes et Semailles"
-      author: "A. Grothendieck"
-      year: "1983–1986"
-    - title: "The Grothendieck Festschrift"
-      author: "P. Cartier et al. (eds.)"
-      edition: "Progress in Mathematics"
-      year: 1990
+  - title: Récoltes et Semailles
+    author: A. Grothendieck
+    year: 1983–1986
+  - title: The Grothendieck Festschrift
+    author: P. Cartier et al. (eds.)
+    edition: Progress in Mathematics
+    year: 1990
   papers:
-    - title: "A mad day's work: from Grothendieck to Connes and Kontsevich"
-      author: "P. Cartier"
-      year: 2001
+  - title: 'A mad day''s work: from Grothendieck to Connes and Kontsevich'
+    author: P. Cartier
+    year: 2001
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
+    author: Alexander Grothendieck
+    consulted_at: '2026-04-17'
 status: completed
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  zbmath_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
 ---
-
 ## 1. 引言：独特的数学存在
 
 Alexander Grothendieck（1928–2014）是20世纪最具影响力的数学家之一。

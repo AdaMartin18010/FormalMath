@@ -2,32 +2,32 @@
 title: Rolle 定理（Rolle's Theorem）
 level: silver
 course: MIT 18.100A Real Analysis
-msc_primary: 26
+msc_primary: '26
 
-  - 26A06
-  - 26A24
-  - 26A27
+  - 26A06 - 26A24 - 26A27'
 target_courses:
-  - "MIT 18.100A Ch.4"
+- MIT 18.100A Ch.4
 references:
   textbooks:
-    - title: "Basic Analysis I: Introduction to Real Analysis, Volume 1"
-      author: "Jiri Lebl"
-      edition: "1st"
-      chapters: ["Ch. 4: The Derivative"]
-      pages: "101-103"
-    - title: "Principles of Mathematical Analysis"
-      author: "Walter Rudin"
-      edition: "3rd"
-      chapters: ["Ch. 5: Differentiation"]
-      pages: "108-109"
-  databases:
-    - type: "nLab"
-      url: "https://ncatlab.org/nlab/show/Rolle+theorem"
+  - title: 'Basic Analysis I: Introduction to Real Analysis, Volume 1'
+    author: Jiri Lebl
+    edition: 1st
+    chapters:
+    - 'Ch. 4: The Derivative'
+    pages: 101-103
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    chapters:
+    - 'Ch. 5: Differentiation'
+    pages: 108-109
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
 review_status: mathematical_reviewed
 processed_at: '2026-04-20'
 ---
-
 # Rolle 定理（Rolle's Theorem）
 
 > **课程**: MIT 18.100A 实分析 | **章节**: Ch.4 — 导数

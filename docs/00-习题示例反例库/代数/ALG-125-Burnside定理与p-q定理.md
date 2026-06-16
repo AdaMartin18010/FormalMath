@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 表示论-Burnside定理
 难度: ⭐⭐⭐⭐
 预计时间: 30分钟
+title: ALG 125 Burnside定理与p q定理
 ---
-
 # Burnside定理与$p^aq^b$定理
 
 ## 题目

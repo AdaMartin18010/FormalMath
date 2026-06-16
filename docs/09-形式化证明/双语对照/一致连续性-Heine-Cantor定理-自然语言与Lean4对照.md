@@ -1,15 +1,18 @@
 ---
-title: "一致连续性与 Heine-Cantor 定理 自然语言与 Lean4 对照"
+title: 一致连续性与 Heine-Cantor 定理 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.100A"
+- MIT 18.100A
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/uniform+continuity
+  wikipedia_url: https://en.wikipedia.org/wiki/Uniform_continuity
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%80%E8%87%B4%E8%BF%9E%E7%BB%AD
 ---
-
 ## 定理陈述
 
 **自然语言**：设 $f: X \to Y$ 是从紧致度量空间 $(X, d_X)$ 到度量空间 $(Y, d_Y)$ 的连续函数，则 $f$ 在 $X$ 上是**一致连续**的。即：对任意 $\varepsilon > 0$，存在 $\delta > 0$，使得对任意 $x, y \in X$，只要 $d_X(x, y) < \delta$，就有 $d_Y(f(x), f(y)) < \varepsilon$。
@@ -86,3 +89,12 @@ end HeineCantorTheorem
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/uniform+continuity)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Uniform_continuity)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E4%B8%80%E8%87%B4%E8%BF%9E%E7%BB%AD)

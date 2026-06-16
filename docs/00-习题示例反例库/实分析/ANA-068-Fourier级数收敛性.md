@@ -1,15 +1,25 @@
 ---
-number: "ANA-068"
+number: ANA-068
 category: 实分析
 topic: 综合练习
 difficulty: ⭐⭐⭐⭐
 title: Fourier级数的收敛与发散
 msc_primary: 00A99
-keywords: [Fourier级数, Dirichlet核, Fejér核, 逐点收敛, Cesàro和]
-prerequisites: [ANA-067, ANA-053]
+keywords:
+- Fourier级数
+- Dirichlet核
+- Fejér核
+- 逐点收敛
+- Cesàro和
+prerequisites:
+- ANA-067
+- ANA-053
 source: 经典分析习题
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/convergence
+  wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
 ---
-
 ## 题目
 
 设 $f \in L^1[-\pi, \pi]$，Fourier系数 $\hat{f}(n) = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x) e^{-inx} dx$。

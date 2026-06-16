@@ -1,10 +1,20 @@
 ---
 title: RSA与椭圆曲线密码学完整实现
-msc_primary: 94
+msc_primary: '94
 
-  - 94A60
+  - 94A60'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/elliptic+curve
+  wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
+references:
+  papers:
+  - title: A method for obtaining digital signatures and public-key cryptosystems
+    author: Ronald L. Rivest, Adi Shamir, Leonard M. Adleman
+    journal: Communications of the ACM
+    year: 1978
+    doi: 10.1145/359340.359342
 ---
-
 # RSA与椭圆曲线密码学完整实现
 
 ## 1. RSA加密算法
@@ -314,3 +324,9 @@ def ecdsa_verify(message, signature, public_key, curve, G, n):
 ---
 
 **适用**：docs/24-密码学/
+
+---
+
+## 经典论文与原始文献
+
+- Ronald L. Rivest, Adi Shamir, Leonard M. Adleman, *A method for obtaining digital signatures and public-key cryptosystems*, Communications of the ACM, 1978 (DOI: 10.1145/359340.359342)

@@ -5,8 +5,11 @@ msc_primary: 00A99
 知识点: 表示论-Borel-Weil-Bott
 难度: ⭐⭐⭐⭐⭐
 预计时间: 60分钟
+title: ALG 212 Borel Weil Bott定理
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Raoul_Bott
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Bott/
 ---
-
 # Borel-Weil-Bott 定理
 
 ## 题目

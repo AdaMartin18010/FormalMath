@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 调和分析-Hardy空间与BMO
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
+title: Hardy空间与BMO
 ---
-
 # Hardy空间与BMO
 
 ## 题目

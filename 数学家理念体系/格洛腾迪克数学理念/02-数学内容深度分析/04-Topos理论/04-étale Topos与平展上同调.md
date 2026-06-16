@@ -1,14 +1,27 @@
 ---
 title: étale Topos与平展上同调：Grothendieck的几何逻辑
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
 level: gold
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  zbmath_url: https://zbmath.org/?q=au:Topos
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Topos
+    author: Topos
+    consulted_at: '2026-04-17'
 ---
-
 # étale Topos与平展上同调：Grothendieck的几何逻辑
 
 

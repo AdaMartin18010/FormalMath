@@ -1,9 +1,27 @@
 ---
 msc_primary: 97A99
 msc_secondary:
-  - 00A99
+- 00A99
+title: Harvard 232br L4 定理对齐表
+external_ids:
+  stacks_tag:
+    tag: 0B5R
+    url: https://stacks.math.columbia.edu/tag/0B5R
+  stacks_tags: []
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0B5R
+    tags:
+    - 0B5R
+    - 0B9C
+    - 0BX2
+    - 0F11
+    - 0FEG
+    consulted_at: '2026-04-17'
 ---
-
 # Harvard Math 232br - L4定理级对齐表
 
 ## 课程信息

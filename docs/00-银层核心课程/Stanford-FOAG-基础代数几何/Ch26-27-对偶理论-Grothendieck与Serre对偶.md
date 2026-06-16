@@ -1,67 +1,86 @@
 ---
-title: "Ch 26–27: 对偶理论——Grothendieck 对偶与 Serre 对偶"
-msc_primary: 14
-  - 14B15
-
-level: "silver"
+title: 'Ch 26–27: 对偶理论——Grothendieck 对偶与 Serre 对偶'
+msc_primary: 14 - 14B15
+level: silver
 target_courses:
-  - "Stanford FOAG Ch.26–27"
+- Stanford FOAG Ch.26–27
 course: Stanford FOAG 基础代数几何
-course_code: "Math 216A/B"
-instructor: "Ravi Vakil"
-foag_chapter: "Ch 26, Ch 27"
-topic: "Grothendieck duality, Serre duality, dualizing complex"
-exercise_type: "THM+TEC"
-difficulty: "⭐⭐⭐⭐⭐"
-importance: "★★★★★"
+course_code: Math 216A/B
+instructor: Ravi Vakil
+foag_chapter: Ch 26, Ch 27
+topic: Grothendieck duality, Serre duality, dualizing complex
+exercise_type: THM+TEC
+difficulty: ⭐⭐⭐⭐⭐
+importance: ★★★★★
 references:
   textbooks:
-    - id: vakil_foag
-      type: textbook
-      title: "Foundations of Algebraic Geometry"
-      authors:
-        - "Ravi Vakil"
-      publisher: "self-published"
-      edition: "draft"
-      year: 2024
-      chapters:
-        - "Ch 26: Grothendieck duality"
-        - "Ch 27: Serre duality"
-      url: "https://math.stanford.edu/~vakil/216blog/"
-    - id: hartshorne_ag
-      type: textbook
-      title: "Algebraic Geometry"
-      authors:
-        - "Robin Hartshorne"
-      publisher: "Springer"
-      edition: "1st"
-      year: 1977
-      chapters:
-        - "Chapter III, Section 7: Serre Duality"
-      pages: "239-249"
-    - id: hartshorne_rd
-      type: textbook
-      title: "Residues and Duality"
-      authors:
-        - "Robin Hartshorne"
-      publisher: "Springer"
-      edition: "1st"
-      year: 1966
-      chapters:
-        - "Dualizing complexes and Grothendieck duality"
-  databases:
-    - id: stacks_project
-      type: database
-      name: "Stacks Project"
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: "2026-04-18"
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    chapters:
+    - 'Ch 26: Grothendieck duality'
+    - 'Ch 27: Serre duality'
+    url: https://math.stanford.edu/~vakil/216blog/
+    isbn: ''
+    author: Ravi Vakil
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    chapters:
+    - 'Chapter III, Section 7: Serre Duality'
+    pages: 239-249
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    author: Robin Hartshorne
+  - id: hartshorne_rd
+    type: textbook
+    title: Residues and Duality
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1966
+    chapters:
+    - Dualizing complexes and Grothendieck duality
+    isbn: '9783540036207'
+    mr_number: MR0222093
+    author: Robin Hartshorne
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+    chapters: Ch 26–27
+  papers:
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 created_at: 2026-04-18
+chapter: '26'
+external_ids:
+  ocw_url: https://math.stanford.edu/~vakil/216blog/
+  ocw_ps_url: https://math.stanford.edu/~vakil/216blog/
+  foag_pdf_url: https://math.stanford.edu/~vakil/216blog/
+  wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
 ---
-
 # Ch 26–27: 对偶理论——Grothendieck 对偶与 Serre 对偶
 
 > **课程**: Stanford FOAG (Math 216A/B)
@@ -555,8 +574,35 @@ $$\chi(\mathcal{E}) = \sum_{j=0}^n (-1)^{n-j} h^j(\mathcal{E}^\vee \otimes \omeg
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 (Chapters: ['Ch 26: Grothendieck duality', 'Ch 27: Serre duality']) [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['Chapter III, Section 7: Serre Duality']; Pages: 239-249; ISBN: 9780387902449; MR: MR0463157)
+- Robin Hartshorne, *Residues and Duality*, 1st ed., Springer, 1966 (Chapters: ['Dualizing complexes and Grothendieck duality']; ISBN: 9783540036207; MR: MR0222093)
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024 (Chapters: Ch 26–27)
+
+### 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)
+
+### 数据库与网络资源
+
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
+### 课程与外部链接
+
+- [Ocw Url](https://math.stanford.edu/~vakil/216blog/)
+- [Ocw Ps Url](https://math.stanford.edu/~vakil/216blog/)
+- [Foag Pdf Url](https://math.stanford.edu/~vakil/216blog/)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Alexander_Grothendieck)
+- [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/)

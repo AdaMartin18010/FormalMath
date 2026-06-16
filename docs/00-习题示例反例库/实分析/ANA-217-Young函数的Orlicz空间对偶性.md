@@ -1,7 +1,7 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42B35
+  - 42B35'
 exercise_id: ANA-217
 title: Young函数的Orlicz空间对偶性
 difficulty: 3
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: Orlicz空间理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # ANA-217: Young函数的Orlicz空间对偶性
 
 **题号**: ANA-217

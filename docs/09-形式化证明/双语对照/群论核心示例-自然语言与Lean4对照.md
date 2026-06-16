@@ -1,16 +1,19 @@
 ---
-title: "群论核心示例 自然语言与 Lean4 对照"
+title: 群论核心示例 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.701"
-date: "2026-04-17"
+- MIT 18.701
+date: '2026-04-17'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 本文档为 MIT 18.701 抽象代数 I 的群论核心定理提供自然语言与 Lean4 的双语对照，覆盖拉格朗日定理、第一同构定理、Cauchy 定理、轨道-稳定子定理与 Sylow 第一定理。
 
 ---
@@ -336,3 +339,12 @@ end SylowFirstTheorem
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/group)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Group_(mathematics))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BE%A4)

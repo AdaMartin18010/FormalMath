@@ -1,29 +1,41 @@
 ---
-title: "FAC与凝聚层：Serre的代数几何奠基之作"
+title: FAC与凝聚层：Serre的代数几何奠基之作
 level: gold
 course: Serre数学理念
 msc_primary: 14
 msc_secondary:
-  - 14F05
+- 14F05
 references:
   textbooks:
-    - title: "Faisceaux algébriques cohérents"
-      author: "J-P. Serre"
-      edition: "Ann. of Math. 61"
-      year: 1955
-      pages: "197–278"
-    - title: "Algebraic Geometry"
-      author: "R. Hartshorne"
-      edition: "Graduate Texts in Mathematics 52"
-      year: 1977
+  - title: Faisceaux algébriques cohérents
+    author: J-P. Serre
+    edition: Ann. of Math. 61
+    year: 1955
+    pages: 197–278
+  - title: Algebraic Geometry
+    author: R. Hartshorne
+    edition: Graduate Texts in Mathematics 52
+    year: 1977
   papers:
-    - title: "Géométrie algébrique et géométrie analytique"
-      author: "J-P. Serre"
-      year: 1956
+  - title: Géométrie algébrique et géométrie analytique
+    author: J-P. Serre
+    year: 1956
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Sheaf
+    author: Sheaf
+    consulted_at: '2026-04-17'
 status: completed
 created_at: 2026-04-18
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  zbmath_url: https://zbmath.org/?q=au:Sheaf
 ---
-
 # FAC与凝聚层：Serre的代数几何奠基之作
 
 ## 1. 引言：从Weil到Serre的范式转换

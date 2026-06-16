@@ -1,68 +1,49 @@
 ---
 title: 代数几何
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 16A99
-  - 97A99
+  - 00A99 - 16A99 - 97A99'
 processed_at: '2026-04-05'
 references:
   textbooks:
-    - id: artin_algebra
-      type: textbook
-      title: Algebra
-      authors:
-      - Michael Artin
-      publisher: Pearson
-      edition: 2nd
-      year: 2011
-      isbn: 978-0132413770
-      msc: 16-01
-      chapters: 
-      url: ~
-    - id: strang_la
-      type: textbook
-      title: Introduction to Linear Algebra
-      authors:
-      - Gilbert Strang
-      publisher: Wellesley-Cambridge Press
-      edition: 5th
-      year: 2016
-      isbn: 978-0980232776
-      msc: 15-01
-      chapters: 
-      url: ~
-    - id: dummit_foote_aa
-      type: textbook
-      title: Abstract Algebra
-      authors:
-      - David S. Dummit
-      - Richard M. Foote
-      publisher: Wiley
-      edition: 3rd
-      year: 2003
-      isbn: 978-0471433347
-      msc: 13-01
-      chapters: 
-      url: ~
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: artin_algebra
+    type: textbook
+    title: Algebra
+    authors:
+    - Michael Artin
+    publisher: Pearson
+    edition: 2nd
+    year: 2011
+    isbn: 978-0132413770
+    msc: 16-01
+    chapters: null
+    url: null
+  - id: strang_la
+    type: textbook
+    title: Introduction to Linear Algebra
+    authors:
+    - Gilbert Strang
+    publisher: Wellesley-Cambridge Press
+    edition: 5th
+    year: 2016
+    isbn: 978-0980232776
+    msc: 15-01
+    chapters: null
+    url: null
+  - id: dummit_foote_aa
+    type: textbook
+    title: Abstract Algebra
+    authors:
+    - David S. Dummit
+    - Richard M. Foote
+    publisher: Wiley
+    edition: 3rd
+    year: 2003
+    isbn: 978-0471433347
+    msc: 13-01
+    chapters: null
+    url: null
 ---
-
 # 代数几何：从代数簇到概形
 
 代数几何研究多项式方程组的解集及其几何性质。从古典的代数曲线与曲面，到 Grothendieck 的概形理论，再到现代的导出代数几何与镜像对称，代数几何已成为数学中最深刻、最活跃的分支之一。

@@ -1,10 +1,10 @@
 ---
-msc_primary: "40A05"
+msc_primary: 40A05
 msc_secondary:
-  - 26A03
-  - 54E45
+- 26A03
+- 54E45
+title: Bolzano Weierstrass定理
 ---
-
 # 概念卡片：Bolzano-Weierstrass定理
 
 ## 严格定义

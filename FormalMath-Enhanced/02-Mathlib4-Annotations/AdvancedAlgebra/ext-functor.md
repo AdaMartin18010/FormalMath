@@ -1,9 +1,25 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Ext函子
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
+  stacks_tag:
+    tag: 00HR
+    url: https://stacks.math.columbia.edu/tag/00HR
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00HR
+    tags:
+    - 00HR
+    consulted_at: '2026-04-17'
 ---
 # Ext函子
 

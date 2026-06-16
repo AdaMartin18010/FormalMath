@@ -1,15 +1,25 @@
 ---
-number: "ANA-058"
+number: ANA-058
 category: 实分析
 topic: 一致收敛应用
 difficulty: ⭐⭐⭐⭐
 title: Arzelà-Ascoli紧致性定理
 msc_primary: 00A99
-keywords: [Arzelà-Ascoli, 等度连续, 一致有界, 紧致性, 子列收敛]
-prerequisites: [ANA-057, ANA-033]
+keywords:
+- Arzelà-Ascoli
+- 等度连续
+- 一致有界
+- 紧致性
+- 子列收敛
+prerequisites:
+- ANA-057
+- ANA-033
 source: 经典分析习题
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/compact+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Compact_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%B4%A7%E8%87%B4
 ---
-
 ## 题目
 
 **Arzelà-Ascoli定理：** 设 $K$ 是紧致度量空间，$\mathcal{F} \subset C(K)$ 满足：

@@ -1,9 +1,14 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 柯西积分公式 (Cauchy's Integral Formula)
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
 ---
 # 柯西积分公式 (Cauchy's Integral Formula)
 

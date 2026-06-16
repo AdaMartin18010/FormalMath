@@ -2,20 +2,29 @@
 title: MIT 18.100A 实分析 - 学习诊断手册
 level: silver
 course: MIT 18.100A Real Analysis
-msc_primary: 26
-  - 97D40
-  - 97I30
+msc_primary: 26 - 97D40 - 97I30
 target_courses:
-  - "MIT 18.100A All Chapters"
+- MIT 18.100A All Chapters
 review_status: mathematical_reviewed
 processed_at: '2026-04-20'
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+references:
+  textbooks:
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+chapter: '0'
 ---
-
 # MIT 18.100A 实分析 - 学习诊断手册
 
 > **用途**: 本手册基于 Math StackExchange 高赞回答、教学经验及项目内部审计结果，系统整理学生在 MIT 18.100A 各章中最常见的错误模式、诊断方法与纠正策略。

@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: 数学×计算机科学：密码学的数论代数
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
 ---
 # 数学×计算机科学：密码学的数论代数
 

@@ -1,18 +1,36 @@
 ---
 msc_primary: 55A99
 university: Princeton
-synonym: [Characteristic Classes, Stiefel-Whitney类, Chern类, Pontryagin类]
+synonym:
+- Characteristic Classes
+- Stiefel-Whitney类
+- Chern类
+- Pontryagin类
 type: 定义
 level: L3-理论建构层
 difficulty: ⭐⭐⭐⭐⭐
-concept_dependency: [向量丛, 上同调环, Grassmann流形]
-prerequisite_concepts: [向量丛, 上同调环, 分类空间]
-prerequisite_theorems: [Gysin序列, Thom同构]
+concept_dependency:
+- 向量丛
+- 上同调环
+- Grassmann流形
+prerequisite_concepts:
+- 向量丛
+- 上同调环
+- 分类空间
+prerequisite_theorems:
+- Gysin序列
+- Thom同构
 course_context: MAT 365 Topology
-msc2010: [57R20, 55R40, 55N20]
-related_concepts: [Euler类, Thom类, 指标定理]
+msc2010:
+- 57R20
+- 55R40
+- 55N20
+related_concepts:
+- Euler类
+- Thom类
+- 指标定理
+title: AT PN 008 示性类
 ---
-
 # AT-PN-008: 示性类 (Characteristic Classes)
 
 > **来源**: Princeton MAT 365 (Topology) | Hatcher Chapter 3, Section 3, p. 225-244

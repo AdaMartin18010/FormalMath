@@ -5,8 +5,11 @@ msc_secondary:
 - 01A55
 - 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
 ---
-
 # 自守形式与Langlands：现代数论的核心
 
 自守形式与Langlands纲领是现代数论的核心，它将自守形式理论与数论联系起来。虽然Langlands纲领的严格形式化是在20世纪完成的，但庞加莱的自守函数理论为自守形式与Langlands纲领奠定了基础。自守形式与Langlands纲领在现代数论、代数几何、表示论等领域有重要应用。

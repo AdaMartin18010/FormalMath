@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 代数几何-p进Hodge
 难度: ⭐⭐⭐⭐⭐
 预计时间: 60分钟
+title: p进Hodge理论
 ---
-
 # p-进 Hodge 理论
 
 ## 题目

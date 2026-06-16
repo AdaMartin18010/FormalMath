@@ -1,15 +1,27 @@
 ---
-number: "ALG-040"
+number: ALG-040
 category: 代数
 topic: 域扩张与Galois理论
 difficulty: ⭐⭐⭐⭐
 title: Galois理论综合应用：圆规直尺作图
 msc_primary: 00A99
-keywords: [圆规直尺作图, 可构作数, 三等分角, 倍立方, Galois理论应用]
-prerequisites: [ALG-039, ALG-036, ALG-035]
+keywords:
+- 圆规直尺作图
+- 可构作数
+- 三等分角
+- 倍立方
+- Galois理论应用
+prerequisites:
+- ALG-039
+- ALG-036
+- ALG-035
 source: 经典代数习题
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Galois+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Galois_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Galois%E7%90%86%E8%AE%BA
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
 ---
-
 ## 题目
 
 **可构作数：** 复数 $z$ 是**可构作的**，如果从 $0, 1$ 出发，用圆规直尺有限步可作出 $z$。

@@ -1,14 +1,27 @@
 ---
 title: 层的范畴与Grothendieck拓扑：广义拓扑
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
 level: gold
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  zbmath_url: https://zbmath.org/?q=au:Sheaf
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Sheaf
+    author: Sheaf
+    consulted_at: '2026-04-17'
 ---
-
 # 层的范畴与Grothendieck拓扑：广义拓扑
 
 

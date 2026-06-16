@@ -1,12 +1,13 @@
 ---
-msc_primary: 08
+msc_primary: '08
 
-  - 08A99
-  - 00A99
-  - 00A99
-  - 00A99
+  - 08A99 - 00A99 - 00A99 - 00A99'
 title: 导出函子与 Ext 计算（Z-模） - 工作示例
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
 ---
 # 导出函子与 Ext 计算（Z-模） - 工作示例
 

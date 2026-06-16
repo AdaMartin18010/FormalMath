@@ -1,9 +1,25 @@
 ---
 msc_primary: 97A30
 msc_secondary:
-  - 00A05
+- 00A05
+level: silver
+course: Oxford 表示论
+chapter: '0'
+references:
+  textbooks:
+  - title: 'Representation Theory: A First Course'
+    author: William Fulton, Joe Harris
+    edition: 1st
+    publisher: Springer
+    year: 1991
+    isbn: '9780387974958'
+    mr_number: MR1153249
+title: Oxford 表示论 学习诊断手册
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/representation+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Representation_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%A1%A8%E7%A4%BA%E8%AE%BA
 ---
-
 # Oxford 表示论学习诊断手册
 
 ## 常见错误模式
@@ -37,3 +53,16 @@ msc_secondary:
 - [相关: ALG-001-群的定义验证](../00-习题示例反例库/代数/ALG-001-群的定义验证.md)
 - [相关: 16-向量空间](../00-知识层次体系/L1-形式化定义层/03-代数结构/16-向量空间.md)
 - [相关: 01-拓扑空间](../00-知识层次体系/L1-形式化定义层/05-拓扑学基础/01-拓扑空间.md)
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- William Fulton, Joe Harris, *Representation Theory: A First Course*, 1st ed., Springer, 1991 (ISBN: 9780387974958; MR: MR1153249)
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/representation+theory)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Representation_theory)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E8%A1%A8%E7%A4%BA%E8%AE%BA)

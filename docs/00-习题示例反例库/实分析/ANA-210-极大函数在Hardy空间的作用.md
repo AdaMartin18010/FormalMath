@@ -1,7 +1,7 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42B25
+  - 42B25'
 exercise_id: ANA-210
 title: 极大函数在Hardy空间的作用
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: 调和分析
 source:
   course: 实分析进阶
-  chapter: "3.4"
+  chapter: '3.4'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # ANA-210: 极大函数在Hardy空间的作用
 
 **题号**: ANA-210

@@ -1,13 +1,44 @@
 ---
 title: 概形的对偶理论与Serre对偶：几何对偶的高级形式
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  stacks_tag:
+    tag: 0A7E
+    url: https://stacks.math.columbia.edu/tag/0A7E
+  stacks_tags: []
+  zbmath_url: https://zbmath.org/?q=au:Scheme
+references:
+  papers:
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A7E
+    tags:
+    - 0A7E
+    - 0B54
+    consulted_at: '2026-04-17'
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Scheme
+    author: Scheme
+    consulted_at: '2026-04-17'
 ---
-
 # 概形的对偶理论与Serre对偶：几何对偶的高级形式
 
 
@@ -300,3 +331,9 @@ Grothendieck的贡献：
 **数学公式数**: 12个
 **例子数**: 8个
 **最后更新**: 2026年01月02日
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)

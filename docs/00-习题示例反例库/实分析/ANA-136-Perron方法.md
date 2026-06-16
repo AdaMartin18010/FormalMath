@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 分布理论-Perron方法
 难度: ⭐⭐⭐⭐
 预计时间: 40分钟
+title: Perron方法
 ---
-
 # Perron方法
 
 ## 题目

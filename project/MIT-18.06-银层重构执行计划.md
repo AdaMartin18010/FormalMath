@@ -1,14 +1,24 @@
 ---
-title: "MIT 18.06 线性代数银层重构执行计划"
+title: MIT 18.06 线性代数银层重构执行计划
 msc_primary: 00A99
-task_id: "P2-MIT-18.06"
-level: "silver"
-course: "MIT 18.06 Linear Algebra (Spring 2010)"
-author: "FormalMath Project"
-date: "2026-04-17"
-review_status: "draft"
+task_id: P2-MIT-18.06
+level: silver
+course: MIT 18.06 Linear Algebra (Spring 2010)
+author: FormalMath Project
+date: '2026-04-17'
+review_status: draft
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+references:
+  textbooks:
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 5th
+    publisher: Wellesley-Cambridge Press
+    year: 2016
+    isbn: '9780980232776'
 ---
-
 # MIT 18.06 线性代数银层重构执行计划
 
 > **任务编号**：P2-MIT-18.06
@@ -309,3 +319,15 @@ review_status: "draft"
 **完成状态更新日期**：2026-04-17
 **下次评审日期**：2026-04-24
 **课程负责人 (Course Owner)**：待定（需项目学术委员会指派）
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016 (ISBN: 9780980232776)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/)

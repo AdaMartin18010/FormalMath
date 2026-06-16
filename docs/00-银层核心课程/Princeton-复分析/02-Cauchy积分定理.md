@@ -1,39 +1,55 @@
 ---
 course: Princeton-复分析
-
-title: "Cauchy积分定理（Cauchy's Integral Theorem）"
-level: "silver"
+title: Cauchy积分定理（Cauchy's Integral Theorem）
+level: silver
 msc_primary: 30
 target_courses:
-  - "Princeton 复分析 Ch.2"
+- Princeton 复分析 Ch.2
 references:
   textbooks:
-    - title: "Complex Analysis"
-      author: "Elias M. Stein & Rami Shakarchi"
-      edition: "1st"
-      chapters: "Ch. 2"
-      pages: "29-58"
-    - title: "Functions of One Complex Variable I"
-      author: "John B. Conway"
-      edition: "2nd"
-      chapters: "Ch. 4"
-      pages: "77-96"
+  - title: Complex Analysis
+    author: Elias M. Stein & Rami Shakarchi
+    edition: 1st
+    chapters: Ch. 2
+    pages: 29-58
+    publisher: Princeton University Press
+    year: 2003
+    isbn: '9780691113852'
+  - title: Functions of One Complex Variable I
+    author: John B. Conway
+    edition: 2nd
+    chapters: Ch. 4
+    pages: 77-96
+    publisher: Springer
+    year: 1995
+    isbn: '9780387944609'
+    mr_number: MR1344449
+  - title: Complex Analysis
+    author: Elias M. Stein, Rami Shakarchi
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2003
+    isbn: '9780691113852'
   lectures:
-    - institution: "Princeton"
-      course_code: "MAT 335"
-      lecture: "Lecture 4-6"
-      url: "https://web.math.princeton.edu/"
+  - institution: Princeton
+    course_code: MAT 335
+    lecture: Lecture 4-6
+    url: https://web.math.princeton.edu/
 keywords:
-  - "围道积分"
-  - "Cauchy积分定理"
-  - "Cauchy积分公式"
-  - "全纯函数"
-  - "Goursat定理"
+- 围道积分
+- Cauchy积分定理
+- Cauchy积分公式
+- 全纯函数
+- Goursat定理
 review_status: mathematical_reviewed
 review_rounds: 0
-created_at: "2026-04-18"
+created_at: '2026-04-18'
+chapter: '02'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
 ---
-
 # Cauchy积分定理（Cauchy's Integral Theorem）
 
 > **课程**: Princeton 复分析 | **章节**: Ch. 2 — 全纯函数的积分理论
@@ -394,8 +410,24 @@ example (c : ℂ) (R : ℝ) (f g : ℂ → ℂ) :
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Elias M. Stein & Rami Shakarchi, *Complex Analysis*, 1st ed., Princeton University Press, 2003 (Chapters: Ch. 2; Pages: 29-58; ISBN: 9780691113852)
+- John B. Conway, *Functions of One Complex Variable I*, 2nd ed., Springer, 1995 (Chapters: Ch. 4; Pages: 77-96; ISBN: 9780387944609; MR: MR1344449)
+- Elias M. Stein, Rami Shakarchi, *Complex Analysis*, 1st ed., Princeton University Press, 2003 (ISBN: 9780691113852)
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/Cauchy+theorem)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Cauchy)

@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Taylor定理 (Taylor's Theorem)
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
 ---
 # Taylor定理 (Taylor's Theorem)
 

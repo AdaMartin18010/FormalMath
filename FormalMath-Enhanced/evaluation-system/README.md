@@ -81,21 +81,25 @@ FormalMath-Enhanced/evaluation-system/
 ## API 端点
 
 ### 评估管理
+
 - `POST /api/evaluation/assess` - 执行评估
 - `GET /api/evaluation/report/{user_id}` - 获取评估报告
 - `GET /api/evaluation/progress/{user_id}` - 获取学习轨迹
 - `POST /api/evaluation/feedback` - 生成反馈
 
 ### 数据查询
+
 - `GET /api/evaluation/records/{user_id}` - 获取用户评估记录
 - `GET /api/evaluation/statistics/{user_id}` - 获取用户统计信息
 - `GET /api/evaluation/dimensions` - 获取评估维度信息
 
 ### 标准管理
+
 - `GET /api/evaluation/standards` - 列评估标准
 - `POST /api/evaluation/standards` - 创建评估标准
 
 ### 系统
+
 - `GET /` - 系统信息
 - `GET /health` - 健康检查
 - `GET /api/docs` - API文档 (Swagger UI)
@@ -124,7 +128,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 # 访问 API 文档
-# 
+#
 ```
 
 ### 前端运行
@@ -144,30 +148,34 @@ npm start
 yarn start
 
 # 访问应用
-# 
+#
 ```
 
 ## 功能特性
 
 ### 评估引擎
+
 - 五维加权评分算法
 - 成长曲线计算
 - 班级对比分析
 - 优势/弱点识别
 
 ### 反馈系统
+
 - 个性化反馈生成
 - 学习建议推荐
 - 学习路径规划
 - 资源推荐
 
 ### 可视化
+
 - 五维雷达图 (Recharts)
 - 学习曲线图
 - 对比分析图
 - 分数分布统计
 
 ### 报告生成
+
 - JSON格式报告
 - PDF格式报告 (可选)
 - 执行摘要
@@ -191,6 +199,7 @@ yarn start
 ## 技术栈
 
 ### 后端
+
 - Python 3.9+
 - FastAPI
 - SQLAlchemy
@@ -198,6 +207,7 @@ yarn start
 - Pydantic
 
 ### 前端
+
 - React 18
 - TypeScript 5
 - Recharts (图表)

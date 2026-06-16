@@ -1,15 +1,17 @@
 ---
-title: "柯西-施瓦茨不等式（求和形式）自然语言与 Lean4 对照"
+title: 柯西-施瓦茨不等式（求和形式）自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.06 / 18.100A"
+- MIT 18.06 / 18.100A
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
 ---
-
 ## 定理陈述
 
 **自然语言**：对于任意实数序列 \(a_1, \dots, a_n\) 和 \(b_1, \dots, b_n\)，有
@@ -128,3 +130,11 @@ f(t) = \left(\sum a_i^2\right) t^2 + 2\left(\sum a_i b_i\right) t + \sum b_i^2
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy)
+- [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/)

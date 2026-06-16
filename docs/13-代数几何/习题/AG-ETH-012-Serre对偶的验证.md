@@ -1,4 +1,6 @@
 ---
+title: AG ETH 012 Serre对偶的验证
+msc_primary: 14A99
 习题编号: AG-ETH-012
 标题: Serre对偶的验证
 type: Technische Verifikation (技术验证型)
@@ -11,49 +13,40 @@ msc: 14F25, 14H99
 eth_style: Streng + Explizit
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-msc_primary: 14A99
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
+  papers:
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
 ---
-
 # AG-ETH-012: Serre对偶的验证 (*Verifikation der Serre-Dualität*)
 
 ## 习题信息
@@ -170,3 +163,9 @@ $$g = \dim H^1(X, \mathcal{O}_X) = \dim H^0(X, \omega_X)$$ ∎
 ---
 
 **创建日期**: 2026-04-10
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)

@@ -6,10 +6,19 @@ concept: 正规子群
 title: 非正规子群的例子（在S₄中找子群）
 msc_primary: 00A99
 difficulty: 中等
-keywords: [正规子群, 对称群, 共轭, 置换群]
-related: [CEX-ALG-005, CEX-ALG-004]
+keywords:
+- 正规子群
+- 对称群
+- 共轭
+- 置换群
+related:
+- CEX-ALG-005
+- CEX-ALG-004
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # CEX-ALG-001: 非正规子群的例子（在S₄中找子群）
 
 ## 反例构造
@@ -17,6 +26,7 @@ related: [CEX-ALG-005, CEX-ALG-004]
 设 $S_4$ 为4元对称群，考虑子群 $H = \{e, (12)\}$，其中 $e$ 是单位元，$(12)$ 是交换1和2的对换。
 
 **验证 $H$ 是子群：**
+
 - 封闭性：$(12) \cdot (12) = e$，封闭
 - 单位元：$e \in H$
 - 逆元：$e^{-1} = e$，$(12)^{-1} = (12)$
@@ -52,6 +62,7 @@ $$g(12)g^{-1} = (13)(12)(13) = (32) = (23)$$
 
 **正规子群的等价刻画**
 > 以下条件等价：
+>
 > 1. $H \trianglelefteq G$
 > 2. $\forall g \in G: gHg^{-1} = H$
 > 3. $\forall g \in G: gHg^{-1} \subseteq H$

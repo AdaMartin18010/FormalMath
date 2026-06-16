@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: Fourier分析-变换性质
 难度: ⭐⭐⭐⭐
 预计时间: 35分钟
+title: Fourier变换性质
 ---
-
 # Fourier变换性质
 
 ## 题目

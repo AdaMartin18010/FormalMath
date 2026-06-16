@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 拓扑-Thom-Pontryagin
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
+title: Thom Pontryagin构造
 ---
-
 # Thom-Pontryagin 构造
 
 ## 题目

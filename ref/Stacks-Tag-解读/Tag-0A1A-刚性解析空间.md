@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0A1A 刚性解析空间
+external_ids:
+  stacks_tag:
+    tag: 0A1A
+    url: https://stacks.math.columbia.edu/tag/0A1A
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A1A
+    tags:
+    - 0A1A
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0A1A - 刚性解析空间
 
 ## 1. 基本概念与定义

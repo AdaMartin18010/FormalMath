@@ -1,56 +1,37 @@
 ---
 title: Motive理论简介
 description: 系统介绍Grothendieck的motive理论愿景、纯motive与混合motive的构造、上同调实现函子以及标准猜想的历史背景与现代意义。
-msc_primary: 14
+msc_primary: '14
 
-  - 14F42
-  - 14C15
-  - 14G10
+  - 14F42 - 14C15 - 14G10'
 processed_at: '2026-04-16'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
 ---
-
 # Motive 理论简介
 
 ## 引言

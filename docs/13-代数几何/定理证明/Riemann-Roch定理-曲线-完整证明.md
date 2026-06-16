@@ -1,59 +1,66 @@
 ---
-title: "Riemann-Roch定理 (曲线情形) - 完整证明"
+title: Riemann-Roch定理 (曲线情形) - 完整证明
 msc_primary: 14A99
-description: "代数曲线上的Riemann-Roch定理的完整证明，包括除子版本和层版本"
-course: "Harvard Math 232br"
-topic: "代数几何"
-subtopic: "代数曲线"
-difficulty: "L3-中级"
-prerequisites: ["层上同调", "除子理论", "Serre对偶", "Serre消失定理"]
-theorem_id: "AG-RR-CURVE-001"
-source: "Hartshorne IV.1.3"
-date_created: "2026-04-10"
+description: 代数曲线上的Riemann-Roch定理的完整证明，包括除子版本和层版本
+course: Harvard Math 232br
+topic: 代数几何
+subtopic: 代数曲线
+difficulty: L3-中级
+prerequisites:
+- 层上同调
+- 除子理论
+- Serre对偶
+- Serre消失定理
+theorem_id: AG-RR-CURVE-001
+source: Hartshorne IV.1.3
+date_created: '2026-04-10'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0B9C
+    consulted_at: 2026-04-17
+    tags:
+    - 0B9C
+  papers:
+  - title: Le théorème de Riemann-Roch
+    author: Armand Borel, Jean-Pierre Serre
+    journal: Bulletin de la Société Mathématique de France
+    year: 1958
+    doi: 10.24033/bsmf.1500
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  stacks_tag:
+    tag: 0B9C
+    url: https://stacks.math.columbia.edu/tag/0B9C
 ---
-
 # Riemann-Roch定理 (曲线情形)
 
 ## 定理陈述
@@ -427,3 +434,9 @@ theorem riemann_roch_divisor (D : WeilDivisor C) :
 *文档版本: v1.0*  
 *最后更新: 2026-04-10*  
 *对应课程: Harvard Math 232br*
+
+---
+
+## 经典论文与原始文献
+
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)

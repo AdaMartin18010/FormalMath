@@ -1,9 +1,9 @@
 ---
 msc_primary: 03B35
 msc_secondary:
-  - 68T15
+- 68T15
+title: 00 Round17 Lean4攻坚与应用扩展报告
 ---
-
 # Round 17 Lean4攻坚与应用扩展报告
 
 **日期**: 2026-04-09

@@ -1,11 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 26A42
-  - 03B40
+  - 00A99 - 26A42 - 03B40'
 title: Taylor 近似 - 工作示例
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
 ---
 # Taylor 近似 - 工作示例
 

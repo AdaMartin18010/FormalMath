@@ -1,16 +1,22 @@
 ---
-msc_primary: 18
+msc_primary: '18
 
-  - 18A05
-  - 18A22
-  - 18A23
-  - 18A30
-  - 18F20
+  - 18A05 - 18A22 - 18A23 - 18A30 - 18F20'
 title: nLab范畴论精粹
 source: nLab (https://ncatlab.org)
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
+references:
+  papers:
+  - title: General Theory of Natural Equivalences
+    author: Samuel Eilenberg, Saunders Mac Lane
+    journal: Transactions of the American Mathematical Society
+    year: 1945
+    doi: 10.2307/2269622
 ---
-
 # nLab范畴论精粹 (nLab Category Theory Essentials)
 
 ---
@@ -356,3 +362,9 @@ mindmap
 **文档状态**: ✅ 完成
 **最后更新**: 2026年4月9日
 **nLab对齐版本**: 2026年4月
+
+---
+
+## 经典论文与原始文献
+
+- Samuel Eilenberg, Saunders Mac Lane, *General Theory of Natural Equivalences*, Transactions of the American Mathematical Society, 1945 (DOI: 10.2307/2269622)

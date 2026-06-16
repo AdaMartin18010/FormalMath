@@ -5,8 +5,22 @@ msc_primary: 00A99
 知识点: 交换代数-素谱
 难度: ⭐⭐⭐
 预计时间: 20分钟
+title: ALG 113 素谱与Zariski拓扑
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectrum
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectrum_(topology)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1
+  stacks_tag:
+    tag: 00E0
+    url: https://stacks.math.columbia.edu/tag/00E0
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00E0
+    consulted_at: '2026-04-17'
 ---
-
 # 素谱与Zariski拓扑
 
 ## 题目

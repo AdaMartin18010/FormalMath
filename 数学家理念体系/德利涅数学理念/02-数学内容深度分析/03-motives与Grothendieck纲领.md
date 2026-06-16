@@ -1,10 +1,23 @@
 ---
-title: "Deligne与Motives：Grothendieck梦想的现实化"
+title: Deligne与Motives：Grothendieck梦想的现实化
 msc_primary: 14
 msc_secondary:
-  - 14C15
-msc_secondary: ["14F42", "19E15", "11G09"]
+- 14F42
+- 19E15
+- 11G09
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  zbmath_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
+    author: Alexander Grothendieck
+    consulted_at: '2026-04-17'
 ---
 # Deligne与Motives：Grothendieck梦想的现实化
 

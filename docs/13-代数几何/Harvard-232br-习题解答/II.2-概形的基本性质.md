@@ -2,62 +2,55 @@
 title: Harvard 232br - Hartshorne Chapter II §2 习题解答
 msc_primary: 14A99
 course_code: Harvard Math 232br
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter II - Schemes, Section 2 - Schemes"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter II - Schemes, Section 2 - Schemes
 source_exercise:
-  - "II.2.1"
-  - "II.2.2"
-  - "II.2.3"
-  - "II.2.4"
-  - "II.2.5"
-  - "II.2.6"
+- II.2.1
+- II.2.2
+- II.2.3
+- II.2.4
+- II.2.5
+- II.2.6
 difficulty: ⭐⭐ to ⭐⭐⭐
 processed_at: '2026-04-17'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/scheme
+    consulted_at: 2026-04-17
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
 ---
-
 # Harvard 232br - Hartshorne Chapter II §2 习题解答
 
 > 本节覆盖概形的基本构造：局部化对应的子概形、开子概形、既约概形、$\operatorname{Spec}$ 与全局截面的伴随关系，以及 $\operatorname{Spec}\mathbb{Z}$ 与 $\operatorname{Spec}0$ 的泛对象性质。

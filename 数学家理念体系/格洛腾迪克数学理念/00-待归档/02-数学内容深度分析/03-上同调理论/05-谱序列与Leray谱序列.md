@@ -1,13 +1,25 @@
 ---
 title: 谱序列与Leray谱序列：上同调的计算工具
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  zbmath_url: https://zbmath.org/?q=au:Spectral%20sequence
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Spectral%20sequence
+    author: Spectral sequence
+    consulted_at: '2026-04-17'
 ---
-
 # 谱序列与Leray谱序列：上同调的计算工具
 
 

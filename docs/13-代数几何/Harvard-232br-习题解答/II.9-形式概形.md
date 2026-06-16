@@ -2,18 +2,21 @@
 title: Harvard 232br - Hartshorne Chapter II §9 习题解答
 msc_primary: 14A99
 course_code: Harvard Math 232br
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter II - Schemes, Section 9 - Formal Schemes"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter II - Schemes, Section 9 - Formal Schemes
 source_exercise:
-  - "II.9.1"
-  - "II.9.2"
-  - "II.9.3"
-  - "II.9.4"
+- II.9.1
+- II.9.2
+- II.9.3
+- II.9.4
 difficulty: ⭐⭐⭐⭐ to ⭐⭐⭐⭐⭐
 processed_at: '2026-04-17'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
 ---
-
 # Harvard 232br - Hartshorne Chapter II §9 习题解答
 
 > 本节覆盖形式概形的基本构造：完备化的局部环化空间结构、仿射完备化、完备化函子的正合性，以及射影概形上整体截面的完备化不变性。

@@ -1,10 +1,22 @@
 ---
-title: "Fuchsian函数理论：庞加莱与克莱因的数学竞赛"
+title: Fuchsian函数理论：庞加莱与克莱因的数学竞赛
 msc_primary: 30
 msc_secondary:
-  - 30F35
-msc_secondary: ["32N10"]
+- 32N10
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
+  zbmath_url: https://zbmath.org/?q=au:Function
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Function
+    author: Function
+    consulted_at: '2026-04-17'
 ---
 # Fuchsian函数理论：庞加莱与克莱因的数学竞赛
 

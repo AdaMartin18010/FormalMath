@@ -1,62 +1,67 @@
 ---
-title: "Harvard 232br - Hartshorne Chapter IV §1–§4 习题解答"
-course_code: "Harvard Math 232br"
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter IV - Curves, Sections 1–4"
+title: Harvard 232br - Hartshorne Chapter IV §1–§4 习题解答
+course_code: Harvard Math 232br
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter IV - Curves, Sections 1–4
 source_exercise:
-  - "IV.1.1"
-  - "IV.1.2"
-  - "IV.1.3"
-  - "IV.2.1"
-  - "IV.2.2"
-  - "IV.3.1"
-  - "IV.3.2"
-  - "IV.4.1"
-  - "IV.4.2"
+- IV.1.1
+- IV.1.2
+- IV.1.3
+- IV.2.1
+- IV.2.2
+- IV.3.1
+- IV.3.2
+- IV.4.1
+- IV.4.2
 difficulty: ⭐⭐⭐ to ⭐⭐⭐⭐
 processed_at: '2026-04-18'
-level: "silver"
+level: silver
 target_courses:
-  - "Harvard 232br"
+- Harvard 232br
 msc_primary: 14
-
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-        - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: ["IV.1", "IV.2", "IV.3", "IV.4"]
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-        - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      msc: 14-01
-      url: "https://math.stanford.edu/~vakil/216blog/"
-  databases:
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-18
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters:
+    - IV.1
+    - IV.2
+    - IV.3
+    - IV.4
+    url: null
+    mr_number: MR0463157
+    author: Robin Hartshorne
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    msc: 14-01
+    url: https://math.stanford.edu/~vakil/216blog/
+    isbn: ''
+    author: Ravi Vakil
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+course: Harvard 232br 代数几何
+chapter: '1'
+external_ids:
+  ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
+  ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
 ---
-
 # Harvard 232br — Hartshorne Chapter IV §1–§4 习题解答
 
 > 本节覆盖 Hartshorne 第四章第 1–4 节的核心习题，涉及曲线的基本理论：次数-亏格关系、Hurwitz 分歧公式、典范嵌入与椭圆曲线的群结构。除非特别说明，$k$ 均表示代数闭域，曲线指 $k$ 上的非奇异射影曲线。
@@ -935,3 +940,20 @@ theorem uniformization (Λ : Submodule ℤ ℂ) (h : IsLattice Λ) :
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['IV.1', 'IV.2', 'IV.3', 'IV.4']; ISBN: 978-0387902449; MR: MR0463157)
+- Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
+
+### 数据库与网络资源
+
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
+### 课程与外部链接
+
+- [Ocw Url](https://www.math.harvard.edu/course/mathematics-232br/)
+- [Ocw Ps Url](https://people.math.harvard.edu/~landesman/notes.html)

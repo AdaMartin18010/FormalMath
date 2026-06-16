@@ -1,12 +1,22 @@
 ---
 msc_primary: 55N10
 msc_secondary:
-  - 55U30
-  - 55Q05
+- 55U30
+- 55Q05
 processed_at: '2026-04-20'
 title: Mayer-Vietoris序列
+external_ids:
+  stacks_tag:
+    tag: 01EO
+    url: https://stacks.math.columbia.edu/tag/01EO
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01EO
+    consulted_at: '2026-04-17'
 ---
-
 # Mayer-Vietoris序列
 
 ## 1. 引言

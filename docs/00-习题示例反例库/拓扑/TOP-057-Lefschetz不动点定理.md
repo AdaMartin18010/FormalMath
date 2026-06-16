@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 代数拓扑-Lefschetz不动点
 难度: ⭐⭐⭐⭐
 预计时间: 35分钟
+title: Lefschetz不动点定理
 ---
-
 # Lefschetz不动点定理
 
 ## 题目

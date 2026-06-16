@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 多复变-Monge-Ampere方程
 难度: ⭐⭐⭐⭐⭐
 预计时间: 60分钟
+title: 复Monge Ampere方程
 ---
-
 # 复 Monge-Ampère 方程
 
 ## 题目

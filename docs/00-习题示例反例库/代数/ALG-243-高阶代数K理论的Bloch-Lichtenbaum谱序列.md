@@ -1,7 +1,7 @@
 ---
-msc_primary: 19
+msc_primary: '19
 
-  - 19D55
+  - 19D55'
 exercise_id: ALG-243
 title: 高阶代数K理论的Bloch-Lichtenbaum谱序列
 difficulty: 5
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 代数K理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
 ---
-
 # ALG-243: 高阶代数K理论的Bloch-Lichtenbaum谱序列
 
 **题号**: ALG-243

@@ -5,8 +5,11 @@ msc_secondary:
 - 01A55
 - 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/homology
+  wikipedia_url: https://en.wikipedia.org/wiki/Homology_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83
 ---
-
 # Mayer-Vietoris序列：同调的计算工具
 
 Mayer-Vietoris序列是计算拓扑空间同调群的重要工具，它通过将空间分解为两个开子集的并集来建立同调群之间的长正合序列。

@@ -1,14 +1,34 @@
 ---
 title: 上同调与Serre对偶
 description: 深入介绍Serre对偶定理的陈述、证明思路、推广到Grothendieck对偶，以及在射影概形上的具体计算应用。
-msc_primary: 14
+msc_primary: '14
 
-  - 14F17
-  - 14F05
-  - 32C35
+  - 14F17 - 14F05 - 32C35'
 processed_at: '2026-04-16'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  stacks_tag:
+    tag: 0A6A
+    url: https://stacks.math.columbia.edu/tag/0A6A
+references:
+  papers:
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A6A
+    tags:
+    - 0A6A
+    consulted_at: '2026-04-17'
 ---
-
 # 上同调与 Serre 对偶
 
 ## 引言
@@ -162,3 +182,9 @@ Grothendieck 对偶在以下领域有重要应用：
 **文档状态**：✅ 完成  
 **字数**：约 2,500 字  
 **最后更新**：2026-04-16
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)

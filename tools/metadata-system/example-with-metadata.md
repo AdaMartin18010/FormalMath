@@ -2,11 +2,11 @@
 title: 群论基础概念
 created_date: 2025-01-15
 version: 1.2.0
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
-  - 20A05
-  - 20B30
+- 00A99
+- 20A05
+- 20B30
 category: 代数结构
 difficulty: L2
 depth_level: 深度扩展版
@@ -74,6 +74,10 @@ quality_checks:
 validated_by: Senior Reviewer
 validated_date: 2025-04-01
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
 # 群论基础概念
 

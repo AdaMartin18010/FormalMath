@@ -1,8 +1,10 @@
 ---
-title: "Alexander Grothendieck传记"
-msc_primary: "01"
+title: Alexander Grothendieck传记
+msc_primary: '01'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
 ---
-
 # Alexander Grothendieck 传记
 
 > "数学的主要目的不是发明计算技巧，而是理解数学对象背后的深层结构。"

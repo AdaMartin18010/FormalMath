@@ -1,7 +1,7 @@
 ---
-msc_primary: 58
+msc_primary: '58
 
-  - 58E05
+  - 58E05'
 exercise_id: TOP-131
 title: Morse-Bott同调与圈空间
 difficulty: 4
@@ -10,11 +10,15 @@ topic: 拓扑
 subtopic: 无穷维Morse理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/homology
+  wikipedia_url: https://en.wikipedia.org/wiki/Homology_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Bott/
 ---
-
 # TOP-131: Morse-Bott同调与圈空间
 
 **题号**: TOP-131

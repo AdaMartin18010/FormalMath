@@ -2,20 +2,29 @@
 title: MIT 18.701 抽象代数 - 学习诊断手册
 level: silver
 course: MIT 18.701
-msc_primary: 20
-  - 97H40
-  - 12-01
+msc_primary: 20 - 97H40 - 12-01
 target_courses:
-  - "MIT 18.701 All Chapters"
+- MIT 18.701 All Chapters
 review_status: mathematical_reviewed
 processed_at: '2026-04-20'
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+chapter: '0'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+references:
+  textbooks:
+  - title: Algebra
+    author: Michael Artin
+    edition: 2nd
+    publisher: Pearson
+    year: 2010
+    isbn: '9780132413770'
 ---
-
 # MIT 18.701 抽象代数 - 学习诊断手册
 
 > **用途**: 本手册基于 Math StackExchange 高赞回答、Artin《Algebra》教材常见习题错误、教学经验及项目内部审计结果，系统整理学生在 MIT 18.701 各章中最常见的错误模式、诊断方法与纠正策略。
@@ -645,12 +654,14 @@ tags:
 1. Artin, M. (2011). *Algebra* (2nd ed.). Pearson. ISBN: 978-0132413770.
 2. Dummit, D. S., & Foote, R. M. (2004). *Abstract Algebra* (3rd ed.). Wiley. ISBN: 978-0471433347.
 3. Aluffi, P. (2009). *Algebra: Chapter 0*. AMS. ISBN: 978-0821847817.
+
 ## 审阅记录
 
 **审阅日期**: 2026-04-20
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰

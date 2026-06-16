@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 00DT Noetherian拓扑空间
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topological+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Topological_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%8B%93%E6%89%91%E7%A9%BA%E9%97%B4
+  stacks_tag:
+    tag: 00DT
+    url: https://stacks.math.columbia.edu/tag/00DT
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00DT
+    tags:
+    - 00DT
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 00DT - Noetherian拓扑空间
 
 > **来源**: [Stacks Project](https://stacks.math.columbia.edu/tag/00DT)  

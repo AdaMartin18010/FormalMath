@@ -1,13 +1,30 @@
 ---
 title: Serre对偶定理
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  zbmath_url: https://zbmath.org/?q=au:Jean-Pierre%20Serre
+references:
+  papers:
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Jean-Pierre%20Serre
+    author: Jean-Pierre Serre
+    consulted_at: '2026-04-17'
 ---
-
 # Serre对偶定理
 
 > **文档状态**: ✅ 内容填充完成
@@ -1040,3 +1057,9 @@ Serre对偶定理在现代数学中仍然重要：
 **完成度**: 约90%
 **字数**: 约20,000字
 **行数**: 约920行
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)

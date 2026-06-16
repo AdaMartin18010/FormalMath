@@ -1,15 +1,18 @@
 ---
-title: "Sylow 第一定理 自然语言与 Lean4 对照"
+title: Sylow 第一定理 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.701"
+- MIT 18.701
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
-
 ## 定理陈述
 
 **自然语言**：设 \(G\) 是有限群，\(p\) 是素数，\(|G| = p^n \cdot m\) 且 \(p \nmid m\)。则 \(G\) 中存在阶为 \(p^n\) 的子群，称为 **Sylow \(p\)-子群**。
@@ -96,3 +99,12 @@ end SylowFirstTheorem
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/Sylow+theorem)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Sylow_theorems)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Sylow)

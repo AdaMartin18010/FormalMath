@@ -1,18 +1,39 @@
 ---
 msc_primary: 55A99
 university: Princeton
-synonym: [Spectral Sequence, Leray-Serre谱序列, Adams谱序列]
+synonym:
+- Spectral Sequence
+- Leray-Serre谱序列
+- Adams谱序列
 type: 定义
 level: L3-理论建构层
 difficulty: ⭐⭐⭐⭐⭐
-concept_dependency: [同调代数, 滤过, 分次模]
-prerequisite_concepts: [同调群, 正合序列, 分次代数]
-prerequisite_theorems: [长正合序列, 双复形]
+concept_dependency:
+- 同调代数
+- 滤过
+- 分次模
+prerequisite_concepts:
+- 同调群
+- 正合序列
+- 分次代数
+prerequisite_theorems:
+- 长正合序列
+- 双复形
 course_context: MAT 365 Topology
-msc2010: [55T05, 55T10, 55T15]
-related_concepts: [纤维化, 滤过, 收敛]
+msc2010:
+- 55T05
+- 55T10
+- 55T15
+related_concepts:
+- 纤维化
+- 滤过
+- 收敛
+title: AT PN 009 谱序列
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
 ---
-
 # AT-PN-009: 谱序列 (Spectral Sequence)
 
 > **来源**: Princeton MAT 365 (Topology) | Hatcher Chapter 5 (Draft)

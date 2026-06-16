@@ -1,13 +1,32 @@
 ---
 title: 函数域上的Riemann-Roch定理
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  zbmath_url: https://zbmath.org/?q=au:Function
+references:
+  papers:
+  - title: Le théorème de Riemann-Roch
+    author: Armand Borel, Jean-Pierre Serre
+    journal: Bulletin de la Société Mathématique de France
+    year: 1958
+    doi: 10.24033/bsmf.1500
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Function
+    author: Function
+    consulted_at: '2026-04-17'
 ---
-
 # 函数域上的Riemann-Roch定理
 
 > **文档状态**: ✅ 内容填充中
@@ -371,3 +390,9 @@ $$\chi(X, \mathcal{O}(D)) = \deg(D) + \chi(X, \mathcal{O}_X)$$
 **完成度**: 约90%
 **字数**: 约13,000字
 **行数**: 约520行
+
+---
+
+## 经典论文与原始文献
+
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)

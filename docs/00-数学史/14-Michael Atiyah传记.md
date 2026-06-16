@@ -1,8 +1,10 @@
 ---
-title: "Michael Atiyah传记"
-msc_primary: "01"
+title: Michael Atiyah传记
+msc_primary: '01'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Michael_Atiyah
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/
 ---
-
 # Michael Atiyah 传记
 
 > "数学是一门艺术，而不是科学。数学家是被某种内在美驱动的艺术家。"

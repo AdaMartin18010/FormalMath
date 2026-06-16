@@ -1,14 +1,27 @@
 ---
 title: Čech上同调与层上同调
 description: 详细介绍Čech上同调的构造、与层上同调的比较定理、仿射覆盖上的计算技巧，以及它在代数几何计算中的实际应用。
-msc_primary: 14
+msc_primary: '14
 
-  - 14F05
-  - 18F20
-  - 55N30
+  - 14F05 - 18F20 - 55N30'
 processed_at: '2026-04-16'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
+  stacks_tag:
+    tag: 01X9
+    url: https://stacks.math.columbia.edu/tag/01X9
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01X9
+    tags:
+    - 01X9
+    consulted_at: '2026-04-17'
 ---
-
 # Čech 上同调与层上同调
 
 ## 引言

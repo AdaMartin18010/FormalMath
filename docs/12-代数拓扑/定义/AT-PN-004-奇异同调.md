@@ -1,18 +1,37 @@
 ---
 msc_primary: 55A99
 university: Princeton
-synonym: [Singular Homology, 奇异同调群, 拓扑不变量]
+synonym:
+- Singular Homology
+- 奇异同调群
+- 拓扑不变量
 type: 定义
 level: L3-理论建构层
 difficulty: ⭐⭐⭐⭐
-concept_dependency: [自由Abel群, 链复形, 边缘算子]
-prerequisite_concepts: [拓扑空间, Abel群, 自由Abel群]
-prerequisite_theorems: [同伦不变性定理]
+concept_dependency:
+- 自由Abel群
+- 链复形
+- 边缘算子
+prerequisite_concepts:
+- 拓扑空间
+- Abel群
+- 自由Abel群
+prerequisite_theorems:
+- 同伦不变性定理
 course_context: MAT 365 Topology
-msc2010: [55N10, 55U10]
-related_concepts: [胞腔同调, 上同调, 长正合序列]
+msc2010:
+- 55N10
+- 55U10
+related_concepts:
+- 胞腔同调
+- 上同调
+- 长正合序列
+title: AT PN 004 奇异同调
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/homology
+  wikipedia_url: https://en.wikipedia.org/wiki/Homology_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83
 ---
-
 # AT-PN-004: 奇异同调 (Singular Homology)
 
 > **来源**: Princeton MAT 365 (Topology) | Hatcher Chapter 2, Section 1, p. 97-106

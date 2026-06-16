@@ -2,36 +2,39 @@
 title: Lie代数上同调
 description: 介绍Lie代数上同调的Chevalley-Eilenberg复形、低维解释，以及它与Lie代数表示理论和形变理论的联系。
 msc_primary:
-  - 17B56
+- 17B56
 msc_secondary:
-  - 17B10
-  - 18G60
+- 17B10
+- 18G60
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: weibel_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Charles A. Weibel
-      publisher: Cambridge University Press
-      year: 1994
-      msc: 18-01
-    - id: knapp_lie
-      type: textbook
-      title: Lie Groups, Lie Algebras, and Cohomology
-      authors:
-        - Anthony W. Knapp
-      publisher: Princeton University Press
-      year: 1988
-      msc: 22-01
+  - id: weibel_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Charles A. Weibel
+    publisher: Cambridge University Press
+    year: 1994
+    msc: 18-01
+  - id: knapp_lie
+    type: textbook
+    title: Lie Groups, Lie Algebras, and Cohomology
+    authors:
+    - Anthony W. Knapp
+    publisher: Princeton University Press
+    year: 1988
+    msc: 22-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/cohomology
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
 ---
-
 # Lie代数上同调
 
 ## 引言

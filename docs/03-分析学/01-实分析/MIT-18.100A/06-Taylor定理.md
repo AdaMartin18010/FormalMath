@@ -22,7 +22,7 @@ tags:
 - 微分学
 - Taylor定理
 - 核心定理
-- "mathematical_reviewed"
+- mathematical_reviewed
 date: 2026-04-17
 references:
   textbooks:
@@ -40,28 +40,32 @@ references:
     - 'Chapter 5: Differentiation'
     url: null
     pages: 110-113
+    mr_number: MR0385023
+    author: Walter Rudin
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
   databases:
   - id: nlab
     type: database
     name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
+    entry_url: https://ncatlab.org/nlab/show/Taylor's+theorem
     consulted_at: 2026-04-17
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+chapter: '06'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+  nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
 ---
-
 # Taylor 定理（Taylor's Theorem）
 
 ## 一、定理陈述

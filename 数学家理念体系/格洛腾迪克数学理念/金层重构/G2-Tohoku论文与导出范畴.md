@@ -1,10 +1,23 @@
 ---
 msc_primary: 14Fxx
 msc_secondary:
-  - 18Gxx
-  - 01A70
+- 18Gxx
+- 01A70
+title: G2 Tohoku论文与导出范畴
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
+  zbmath_url: https://zbmath.org/?q=au:Category
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Category
+    author: Category
+    consulted_at: '2026-04-17'
 ---
-
 ﻿---
 title: "Tôhoku 论文与导出范畴"
 level: "gold"

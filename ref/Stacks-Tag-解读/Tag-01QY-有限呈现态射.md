@@ -1,9 +1,13 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01QY 有限呈现态射
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/morphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Morphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
 ---
-
 # Stacks Tag 01QY - 有限呈现态射
 
 ## 1. Tag基本信息

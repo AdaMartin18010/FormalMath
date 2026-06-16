@@ -1,75 +1,77 @@
 ---
 course: Harvard 232br 代数几何
 level: silver
-
 title: Harvard 232br - Hartshorne Chapter II §2 习题解答
 msc_primary: 00A99
 course_code: Harvard Math 232br
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter II - Schemes, Section 2 - Schemes"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter II - Schemes, Section 2 - Schemes
 source_exercise:
-  - "II.2.1"
-  - "II.2.2"
-  - "II.2.3"
-  - "II.2.4"
-  - "II.2.5"
-  - "II.2.6"
+- II.2.1
+- II.2.2
+- II.2.3
+- II.2.4
+- II.2.5
+- II.2.6
 difficulty: ⭐⭐ to ⭐⭐⭐
 processed_at: '2026-04-17'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: II.2
+    url: null
+    author: Robin Hartshorne
+    pages: 65-70
+    mr_number: MR0463157
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: ''
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
-target_courses: [FormalMath银层核心课程, 代数几何]
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/scheme
+    consulted_at: 2026-04-17
+target_courses:
+- FormalMath银层核心课程
+- 代数几何
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+chapter: '2'
+external_ids:
+  ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
+  ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
+  harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
 ---
-
 # Harvard 232br - Hartshorne Chapter II §2 习题解答
 
 > 本节覆盖概形的基本构造：局部化对应的子概形、开子概形、既约概形、$\operatorname{Spec}$ 与全局截面的伴随关系，以及 $\operatorname{Spec}\mathbb{Z}$ 与 $\operatorname{Spec}0$ 的泛对象性质。
@@ -378,17 +380,20 @@ def specZeroIsInitial : IsInitial (Spec (CommRingCat.of PUnit)) :=
 - [II.4-分离性与本征性](II.4-分离性与本征性.md)
 - [II.5-模与层-续](II.5-模与层-续.md)
 - [II.5-模与层](II.5-模与层.md)
+
 ## 参考文献
 
 1. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
 2. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
 3. Liu, Q. (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press. ISBN: 978-0198502845.
+
 ## 审阅记录
 
 **审阅日期**: 2026-04-20
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰

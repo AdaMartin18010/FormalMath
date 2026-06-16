@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 拓扑-Thom空间
 难度: ⭐⭐⭐⭐
 预计时间: 40分钟
+title: Thom空间
 ---
-
 # Thom 空间
 
 ## 题目

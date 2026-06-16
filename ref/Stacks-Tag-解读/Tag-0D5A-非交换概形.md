@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0D5A 非交换概形
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
+  stacks_tag:
+    tag: 0D5A
+    url: https://stacks.math.columbia.edu/tag/0D5A
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0D5A
+    tags:
+    - 0D5A
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0D5A - 非交换概形
 
 ## 1. 基本概念与定义

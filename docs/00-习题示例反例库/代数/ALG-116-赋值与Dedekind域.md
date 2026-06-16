@@ -5,8 +5,12 @@ msc_primary: 00A99
 知识点: 代数数论-Dedekind域
 难度: ⭐⭐⭐⭐
 预计时间: 30分钟
+title: ALG 116 赋值与Dedekind域
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/field
+  wikipedia_url: https://en.wikipedia.org/wiki/Field_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%9F%9F
 ---
-
 # 赋值与Dedekind域
 
 ## 题目

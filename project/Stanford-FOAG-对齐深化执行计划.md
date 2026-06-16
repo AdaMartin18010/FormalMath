@@ -6,12 +6,23 @@ course_code: Stanford FOAG
 course_name: Foundations of Algebraic Geometry
 level: silver
 target_courses:
-  - Stanford FOAG
+- Stanford FOAG
 version: v2.0
 date_created: '2026-04-17'
 date_updated: '2026-04-17'
+course: Stanford FOAG 基础代数几何
+external_ids:
+  ocw_url: https://math.stanford.edu/~vakil/216blog/
+  ocw_ps_url: https://math.stanford.edu/~vakil/216blog/
+references:
+  textbooks:
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
 ---
-
 # Stanford FOAG 对齐深化执行计划
 
 > **任务编号**：P2-Stanford-FOAG
@@ -246,3 +257,15 @@ docs/13-代数几何/FOAG-深化/
 **第二轮更新日期**：2026-04-17
 **执行负责人**：FormalMath 项目
 **状态**：🎉 两轮深化已全部完成，共 14 篇 Silver 文档 + 30 道习题解答
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+
+### 课程与外部链接
+
+- [Ocw Url](https://math.stanford.edu/~vakil/216blog/)
+- [Ocw Ps Url](https://math.stanford.edu/~vakil/216blog/)

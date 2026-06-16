@@ -1,55 +1,40 @@
 ---
+title: 几何学
+msc_primary: 51-00
+msc_secondary:
+- 51A05
+- 51M04
+- 51N15
+- 52-00
+- 53-00
+processed_at: '2026-04-05'
 references:
   textbooks:
-    - id: munkres_top
-      type: textbook
-      title: Topology
-msc_primary: 51A99
-      authors:
-      - James R. Munkres
-      publisher: Pearson
-      edition: 2nd
-      year: 2000
-      isbn: 978-0131816299
-      msc: 54-01
-      chapters: 
-      url: ~
-    - id: lee_ism
-      type: textbook
-      title: Introduction to Smooth Manifolds
-      authors:
-      - John M. Lee
-      publisher: Springer
-      edition: 2nd
-      year: 2012
-      isbn: 978-1441999818
-      msc: 58-01
-      chapters: 
-      url: ~
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: munkres_top
+    type: textbook
+    title: Topology
+    authors:
+    - James R. Munkres
+    publisher: Pearson
+    edition: 2nd
+    year: 2000
+    isbn: 978-0131816299
+    msc: 54-01
+    chapters: null
+    url: null
+  - id: lee_ism
+    type: textbook
+    title: Introduction to Smooth Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    edition: 2nd
+    year: 2012
+    isbn: 978-1441999818
+    msc: 58-01
+    chapters: null
+    url: null
 ---
-﻿---
-title: "几何学"
-msc_primary: "51-00"
-msc_secondary: ['51A05', '51M04', '51N15', '52-00', '53-00']
-processed_at: '2026'-04-05'
----
-
 # 几何学 (Geometry)
 
 **最后更新**: 2026年4月5日  

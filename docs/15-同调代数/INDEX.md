@@ -1,10 +1,14 @@
 ---
 msc_primary: 18
-
-keywords: ['同调代数', '导出函子', '谱序列', '导出范畴', '群上同调']
+keywords:
+- 同调代数
+- 导出函子
+- 谱序列
+- 导出范畴
+- 群上同调
 version: 1.0
+title: INDEX
 ---
-
 # 15-同调代数 内容索引
 
 **Homological Algebra — 从链复形到导出范畴的完整理论体系**

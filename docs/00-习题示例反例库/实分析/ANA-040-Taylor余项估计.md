@@ -1,7 +1,7 @@
 ---
-msc_primary: 41
+msc_primary: '41
 
-  - 41A58
+  - 41A58'
 exercise_id: ANA-040
 title: Taylor余项估计
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: 微分中值定理
 source:
   course: MIT 18.100A Real Analysis
-  chapter: "5.4"
+  chapter: '5.4'
   original: true
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
 ---
-
 # ANA-040: Taylor余项估计
 
 **题号**: ANA-040

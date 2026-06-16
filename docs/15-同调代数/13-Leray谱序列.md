@@ -2,36 +2,47 @@
 title: Leray谱序列
 description: 详细介绍Leray谱序列的构造、与层上同调的关系，以及它在纤维丛和代数几何中的应用。
 msc_primary:
-  - 18G40
+- 18G40
 msc_secondary:
-  - 14F25
-  - 55R20
+- 14F25
+- 55R20
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: weibel_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Charles A. Weibel
-      publisher: Cambridge University Press
-      year: 1994
-      msc: 18-01
-    - id: godement
-      type: textbook
-      title: Topologie Algébrique et Théorie des Faisceaux
-      authors:
-        - Roger Godement
-      publisher: Hermann
-      year: 1958
-      msc: 55-01
+  - id: weibel_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Charles A. Weibel
+    publisher: Cambridge University Press
+    year: 1994
+    msc: 18-01
+  - id: godement
+    type: textbook
+    title: Topologie Algébrique et Théorie des Faisceaux
+    authors:
+    - Roger Godement
+    publisher: Hermann
+    year: 1958
+    msc: 55-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/spectral+sequence
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/013M
+    consulted_at: '2026-04-17'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  stacks_tag:
+    tag: 013M
+    url: https://stacks.math.columbia.edu/tag/013M
 ---
-
 # Leray谱序列
 
 ## 引言

@@ -1,67 +1,63 @@
 ---
-title: "triangulated范畴 - 深度版"
-msc_primary: 18
+title: triangulated范畴 - 深度版
+msc_primary: '18
 
-  - 18G80
-msc_secondary: ["18E30", "55U35", "14F05"]
+  - 18G80'
+msc_secondary:
+- 18E30
+- 55U35
+- 14F05
 processed_at: '2026-04-05'
 references:
   textbooks:
-    - id: artin_algebra
-      type: textbook
-      title: Algebra
-      authors:
-      - Michael Artin
-      publisher: Pearson
-      edition: 2nd
-      year: 2011
-      isbn: 978-0132413770
-      msc: 16-01
-      chapters: 
-      url: ~
-    - id: strang_la
-      type: textbook
-      title: Introduction to Linear Algebra
-      authors:
-      - Gilbert Strang
-      publisher: Wellesley-Cambridge Press
-      edition: 5th
-      year: 2016
-      isbn: 978-0980232776
-      msc: 15-01
-      chapters: 
-      url: ~
-    - id: dummit_foote_aa
-      type: textbook
-      title: Abstract Algebra
-      authors:
-      - David S. Dummit
-      - Richard M. Foote
-      publisher: Wiley
-      edition: 3rd
-      year: 2003
-      isbn: 978-0471433347
-      msc: 13-01
-      chapters: 
-      url: ~
+  - id: artin_algebra
+    type: textbook
+    title: Algebra
+    authors:
+    - Michael Artin
+    publisher: Pearson
+    edition: 2nd
+    year: 2011
+    isbn: 978-0132413770
+    msc: 16-01
+    chapters: null
+    url: null
+  - id: strang_la
+    type: textbook
+    title: Introduction to Linear Algebra
+    authors:
+    - Gilbert Strang
+    publisher: Wellesley-Cambridge Press
+    edition: 5th
+    year: 2016
+    isbn: 978-0980232776
+    msc: 15-01
+    chapters: null
+    url: null
+  - id: dummit_foote_aa
+    type: textbook
+    title: Abstract Algebra
+    authors:
+    - David S. Dummit
+    - Richard M. Foote
+    publisher: Wiley
+    edition: 3rd
+    year: 2003
+    isbn: 978-0471433347
+    msc: 13-01
+    chapters: null
+    url: null
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/category
+    consulted_at: 2026-04-17
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
 ---
-
 # triangulated范畴 - 深度版
 
 > **"triangulated范畴是导出范畴的公理化基础，它为上同调理论提供了统一的代数框架。"** —— 现代同调代数的基础

@@ -1,15 +1,18 @@
 ---
-title: "逆函数定理 自然语言与 Lean4 对照"
+title: 逆函数定理 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.100A / 18.101"
+- MIT 18.100A / 18.101
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 ## 定理陈述
 
 **自然语言**：设 \(f : \mathbb{R}^n \to \mathbb{R}^n\) 是 \(C^1\) 函数，\(a \in \mathbb{R}^n\)。若 \(f\) 在 \(a\) 处的 Jacobian 矩阵 \(Df(a)\) 可逆，则存在 \(a\) 的邻域 \(U\) 和 \(f(a)\) 的邻域 \(V\)，使得
@@ -96,3 +99,12 @@ theorem inverse_function_rn {n : ℕ} {f : (Fin n → ℝ) → (Fin n → ℝ)} 
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/function)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Function_(mathematics))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0)

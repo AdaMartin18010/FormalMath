@@ -148,7 +148,7 @@ systemctl enable nginx
 
 ```bash
 # 基本状态
-curl 
+curl
 
 # 活跃连接数
 curl -s  | head -1
@@ -184,7 +184,7 @@ rm -rf /var/cache/nginx/*
 
 # 查看 upstream 状态
 # 需要安装 nginx_upstream_check_module
-curl 
+curl
 ```
 
 ## 故障排除
@@ -194,9 +194,10 @@ curl
 **原因**：后端服务不可达
 
 **解决**：
+
 ```bash
 # 检查后端服务状态
-curl 
+curl
 
 # 检查网络连通性
 docker exec formalmath-nginx ping 10.0.1.10
@@ -210,6 +211,7 @@ docker logs formalmath-nginx | grep error
 **原因**：证书配置不正确或过期
 
 **解决**：
+
 ```bash
 # 检查证书
 docker exec formalmath-nginx openssl x509 -in /etc/nginx/ssl/formalmath.crt -text -noout
@@ -226,6 +228,7 @@ docker exec formalmath-nginx nginx -s reload
 **原因**：缓存键配置错误或响应头禁止缓存
 
 **解决**：
+
 ```bash
 # 检查缓存目录权限
 ls -la /var/cache/nginx/
@@ -301,7 +304,7 @@ nginx hard nofile 65535
 
 ### 参考文档
 
-- [Nginx 官方文档](http://nginx.org/en/docs/)[需更新]
-- [Nginx 负载均衡指南](http://nginx.org/en/docs/http/load_balancing.html)[需更新]
-- [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/)[需更新]
-- [Let's Encrypt 文档](https://letsencrypt.org/docs/)[需更新]
+- [Nginx 官方文档][http://nginx.org/en/docs/](需更新)
+- [Nginx 负载均衡指南][http://nginx.org/en/docs/http/load_balancing.html](需更新)
+- [Mozilla SSL Configuration Generator][https://ssl-config.mozilla.org/](需更新)
+- [Let's Encrypt 文档][https://letsencrypt.org/docs/](需更新)

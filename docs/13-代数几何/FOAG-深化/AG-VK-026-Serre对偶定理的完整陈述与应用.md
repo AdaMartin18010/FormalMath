@@ -28,6 +28,8 @@ references:
     - 'Chapter III, Section 7: Serre Duality'
     url: null
     pages: 239-249
+    mr_number: MR0463157
+    author: Robin Hartshorne
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -36,36 +38,29 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters:
     - 'Section 30.1: Serre duality'
     url: https://math.stanford.edu/~vakil/216blog/
     pages: 815-825
-  databases:
-  - id: nlab
-    type: database
-    name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
-    consulted_at: 2026-04-17
+    author: Ravi Vakil
+  papers:
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
 ---
-
 # AG-VK-026: Serre 对偶定理的完整陈述与应用
 
 ## 习题信息
@@ -303,3 +298,9 @@ example {C : Scheme} [IsCurve C] (L : LineBundle C) :
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)

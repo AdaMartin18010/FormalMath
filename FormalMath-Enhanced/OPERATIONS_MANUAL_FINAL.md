@@ -1,9 +1,13 @@
 ---
 title: FormalMath 运维手册 - 生产环境最终版
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
 # FormalMath 运维手册 - 生产环境最终版
 

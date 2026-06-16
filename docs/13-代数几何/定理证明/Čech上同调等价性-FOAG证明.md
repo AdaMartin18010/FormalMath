@@ -1,62 +1,71 @@
 ---
-title: "Čech上同调与导出上同调等价性 - FOAG证明"
+title: Čech上同调与导出上同调等价性 - FOAG证明
 msc_primary: 14A99
-description: "Čech上同调与导出函子上同调等价的完整证明，突出Vakil的几何直观方法"
-course: "Stanford FOAG"
-topic: "代数几何"
-subtopic: "层上同调"
-difficulty: "L4-高级"
+description: Čech上同调与导出函子上同调等价的完整证明，突出Vakil的几何直观方法
+course: Stanford FOAG
+topic: 代数几何
+subtopic: 层上同调
+difficulty: L4-高级
 vakil_featured: true
-vakil_chapter: "18.2"
-vakil_philosophy: "Rising Sea - 从可计算到抽象统一"
-prerequisites: ["层上同调基础", "导出函子", "Čech上同调定义", "Leray谱序列"]
-theorem_id: "AG-CECH-DERIVED-001"
-source: "FOAG Ch 18.2 / Hartshorne III.4.5"
-date_created: "2026-04-10"
+vakil_chapter: '18.2'
+vakil_philosophy: Rising Sea - 从可计算到抽象统一
+prerequisites:
+- 层上同调基础
+- 导出函子
+- Čech上同调定义
+- Leray谱序列
+theorem_id: AG-CECH-DERIVED-001
+source: FOAG Ch 18.2 / Hartshorne III.4.5
+date_created: '2026-04-10'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/cohomology
+    consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01ED
+    consulted_at: 2026-04-17
+    tags:
+    - 01ED
+    - 01EO
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  stacks_tag:
+    tag: 01ED
+    url: https://stacks.math.columbia.edu/tag/01ED
+  stacks_tags: []
 ---
-
 # Čech上同调与导出上同调等价性
 
 ## 定理陈述

@@ -1,11 +1,13 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20D20
-  - 20D99
-  - 97H40
+  - 20D20 - 20D99 - 97H40'
 title: Sylow 定理
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
 # Sylow 定理
 

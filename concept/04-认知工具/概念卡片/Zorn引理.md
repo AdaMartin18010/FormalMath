@@ -1,10 +1,10 @@
 ---
-msc_primary: "03E25"
+msc_primary: 03E25
 msc_secondary:
-  - 06A06
-  - 03E35
+- 06A06
+- 03E35
+title: Zorn引理
 ---
-
 # 概念卡片：Zorn引理
 
 ## 严格定义

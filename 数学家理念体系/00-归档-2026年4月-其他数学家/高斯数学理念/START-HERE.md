@@ -5,8 +5,10 @@ msc_secondary:
 - 01A55
 - 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
 ---
-
 # 高斯数学理念 - 从这里开始
 
 **项目状态**: ✅ 100%完成

@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: 00 arXiv前沿跟踪系统实施报告
 ---
-
 # FormalMath arXiv前沿跟踪系统实施报告
 
 **项目:** FormalMath

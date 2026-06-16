@@ -1,60 +1,72 @@
 ---
-title: "层上同调基础性质 - ETH证明"
+title: 层上同调基础性质 - ETH证明
 msc_primary: 14A99
-description: "层上同调的定义、导出函子构造与基本性质的完整证明，基于ETH Zurich 401-3532课程讲义"
-course: "ETH Zurich 401-3532-00L"
-topic: "代数几何"
-subtopic: "层上同调"
-difficulty: "L4-高级"
-prerequisites: ["层论基础", "导出函子", "同调代数", "交换代数"]
-theorem_id: "ETH-AG-COHOM-001"
-source: "Hartshorne III.1-2, ETH 401-3532 Kapitel 1"
-date_created: "2026-04-10"
-eth_feature: "导出函子严格构造与交换代数联系"
+description: 层上同调的定义、导出函子构造与基本性质的完整证明，基于ETH Zurich 401-3532课程讲义
+course: ETH Zurich 401-3532-00L
+topic: 代数几何
+subtopic: 层上同调
+difficulty: L4-高级
+prerequisites:
+- 层论基础
+- 导出函子
+- 同调代数
+- 交换代数
+theorem_id: ETH-AG-COHOM-001
+source: Hartshorne III.1-2, ETH 401-3532 Kapitel 1
+date_created: '2026-04-10'
+eth_feature: 导出函子严格构造与交换代数联系
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/sheaf
+    consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0130
+    consulted_at: 2026-04-17
+    tags:
+    - '0130'
+    - 01D6
+    - 01D7
+    - 01XB
+    - 0BX2
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
+  stacks_tag:
+    tag: '0130'
+    url: https://stacks.math.columbia.edu/tag/0130
+  stacks_tags: []
 ---
-
 # 层上同调基础性质 (Basic Properties of Sheaf Cohomology)
 
 **ETH Zurich 401-3532-00L | Kapitel 1: Garbenkohomologie**

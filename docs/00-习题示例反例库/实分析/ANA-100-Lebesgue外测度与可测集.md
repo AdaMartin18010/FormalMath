@@ -5,8 +5,12 @@ msc_primary: 00A99
 知识点: 测度论-Lebesgue外测度
 难度: ⭐⭐⭐
 预计时间: 20分钟
+title: Lebesgue外测度与可测集
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/measure
+  wikipedia_url: https://en.wikipedia.org/wiki/Measure_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%8B%E5%BA%A6
 ---
-
 # Lebesgue外测度与可测集
 
 ## 题目

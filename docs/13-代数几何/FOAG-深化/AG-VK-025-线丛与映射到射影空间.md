@@ -1,8 +1,6 @@
 ---
 title: 线丛与映射到射影空间
-msc_primary: 14
-  - 14C20
-  - 14E05
+msc_primary: 14 - 14C20 - 14E05
 level: silver
 target_courses:
 - Stanford FOAG
@@ -30,6 +28,8 @@ references:
     - 'Chapter II, Section 7: Projective Morphisms'
     url: null
     pages: 150-158
+    mr_number: MR0463157
+    author: Robin Hartshorne
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -38,36 +38,30 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters:
     - 'Section 15.1: Line bundles and maps to projective space'
     url: https://math.stanford.edu/~vakil/216blog/
     pages: 405-415
+    author: Ravi Vakil
   databases:
   - id: nlab
     type: database
     name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
+    entry_url: https://ncatlab.org/nlab/show/function
     consulted_at: 2026-04-17
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
 ---
-
 # AG-VK-025: 线丛与映射到射影空间
 
 ## 习题信息

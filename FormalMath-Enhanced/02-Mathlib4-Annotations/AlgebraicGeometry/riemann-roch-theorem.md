@@ -1,9 +1,30 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: Riemann-Roch 定理 (Riemann-Roch Theorem)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  stacks_tag:
+    tag: 0BS8
+    url: https://stacks.math.columbia.edu/tag/0BS8
+references:
+  papers:
+  - title: Le théorème de Riemann-Roch
+    author: Armand Borel, Jean-Pierre Serre
+    journal: Bulletin de la Société Mathématique de France
+    year: 1958
+    doi: 10.24033/bsmf.1500
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0BS8
+    tags:
+    - 0BS8
+    consulted_at: '2026-04-17'
 ---
 # Riemann-Roch 定理 (Riemann-Roch Theorem)
 
@@ -108,3 +129,9 @@ $$\dim H^0(C, \mathcal{O}_C(D)) - \dim H^0(C, \mathcal{O}_C(K_C - D)) = \deg(D) 
 ---
 
 *最后更新：2026-04-15 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)

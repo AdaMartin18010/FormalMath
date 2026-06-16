@@ -1,10 +1,14 @@
 ---
-msc_primary: "26D15"
+msc_primary: 26D15
 msc_secondary:
-  - 46C05
-  - 15A45
+- 46C05
+- 15A45
+title: Cauchy Schwarz不等式
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
 ---
-
 # 概念卡片：Cauchy-Schwarz不等式
 
 ## 严格定义

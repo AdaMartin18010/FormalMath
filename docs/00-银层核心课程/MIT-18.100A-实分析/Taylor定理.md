@@ -1,38 +1,57 @@
 ---
 course: MIT 18.100A 实分析
-
-title: "Taylor定理（Taylor's Theorem）"
-level: "silver"
+title: Taylor定理（Taylor's Theorem）
+level: silver
 msc_primary: 26
 target_courses:
-  - "MIT 18.100A Ch.6"
+- MIT 18.100A Ch.6
 references:
   textbooks:
-    - title: "Understanding Analysis"
-      author: "Stephen Abbott"
-      edition: "2nd"
-      chapters: "Ch. 6"
-      pages: "162-168"
-    - title: "Principles of Mathematical Analysis"
-      author: "Walter Rudin"
-      edition: "3rd"
-      chapters: "Ch. 5"
-      pages: "109-111"
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    chapters: Ch. 6
+    pages: 162-168
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    chapters: Ch. 5
+    pages: 109-111
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
   lectures:
-    - institution: "MIT"
-      course_code: "18.100A"
-      lecture: "Lecture 18-19"
-      url: "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/"
+  - institution: MIT
+    course_code: 18.100A
+    lecture: Lecture 18-19
+    url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  assignments:
+  - name: Problem Set 4
+    url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset4.pdf
 keywords:
-  - "Taylor展开"
-  - "Lagrange余项"
-  - "多项式逼近"
-  - "Cauchy中值定理"
+- Taylor展开
+- Lagrange余项
+- 多项式逼近
+- Cauchy中值定理
 review_status: mathematical_reviewed
 review_rounds: 0
-created_at: "2026-04-18"
+created_at: '2026-04-18'
+chapter: '4'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+  ocw_readings_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/
+  ocw_lectures_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/
+  ocw_problem_sets:
+  - https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset4.pdf
+  nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
 ---
-
 # Taylor定理（Taylor's Theorem）
 
 > **课程**: MIT 18.100A 实分析 | **章节**: Ch. 6 — 微分学的进一步话题
@@ -543,10 +562,10 @@ $$P_3(x) = 1 + x + rac{x^2}{2} + rac{x^3}{6}$$
 
 ---
 
-**习题 1.2**。用 Taylor 展开证明 $\lim_{x	o 0}rac{\sin x - x}{x^3} = -rac{1}{6}$。
+**习题 1.2**。用 Taylor 展开证明 $\lim_{x  o 0}rac{\sin x - x}{x^3} = -rac{1}{6}$。
 
 *解答*：$\sin x = x - rac{x^3}{6} + O(x^5)$，故 $\sin x - x = -rac{x^3}{6} + O(x^5)$。
-$$rac{\sin x - x}{x^3} = -rac{1}{6} + O(x^2) 	o -rac{1}{6}$$$\square$
+$$rac{\sin x - x}{x^3} = -rac{1}{6} + O(x^2)   o -rac{1}{6}$$$\square$
 
 ## 相关文档
 
@@ -562,8 +581,28 @@ $$rac{\sin x - x}{x^3} = -rac{1}{6} + O(x^2) 	o -rac{1}{6}$$$\square$
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015 (Chapters: Ch. 6; Pages: 162-168; ISBN: 9781493927111)
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976 (Chapters: Ch. 5; Pages: 109-111; ISBN: 9780070542358; MR: MR0385023)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)
+- [Ocw Readings Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/)
+- [Ocw Lectures Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/)
+- [Ocw Problem Sets](['https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset4.pdf'])
+- [Nlab Url](https://ncatlab.org/nlab/show/Taylor's+theorem)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Taylor's_theorem)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Taylor)

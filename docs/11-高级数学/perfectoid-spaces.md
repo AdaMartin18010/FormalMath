@@ -1,10 +1,20 @@
 ---
-title: "完美胚空间深度版 / Perfectoid Spaces (Advanced)"
-msc_primary: 14
+title: 完美胚空间深度版 / Perfectoid Spaces (Advanced)
+msc_primary: '14
 
-  - 14G22
-msc_secondary: ["14F30", "11G25", "14F20"]
+  - 14G22'
+msc_secondary:
+- 14F30
+- 11G25
+- 14F20
 processed_at: '2026-04-05'
+references:
+  papers:
+  - title: Perfectoid spaces
+    author: Peter Scholze
+    journal: Publications Mathématiques de l'IHÉS
+    year: 2012
+    doi: 10.1007/s10240-012-0042-x
 ---
 # 完美胚空间深度版 / Perfectoid Spaces (Advanced)
 
@@ -322,3 +332,9 @@ $$\mathcal{D}(\text{Bun}_G) \simeq \mathcal{D}(\text{LocSys}_{\hat{G}})$$
 
 - **Peter Scholze**: 2018年Fields Medal获得者，完美胚空间和棱镜上同调的创始人
 - **Laurent Fargues**: Fargues-Fontaine曲线的共同发现者，局部Langlands几何化的推动者
+
+---
+
+## 经典论文与原始文献
+
+- Peter Scholze, *Perfectoid spaces*, Publications Mathématiques de l'IHÉS, 2012 (DOI: 10.1007/s10240-012-0042-x)

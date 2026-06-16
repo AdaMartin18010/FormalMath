@@ -1,18 +1,39 @@
 ---
 msc_primary: 55A99
 university: Princeton
-synonym: [Homotopy Groups, 高阶同伦群, 球面同伦群]
+synonym:
+- Homotopy Groups
+- 高阶同伦群
+- 球面同伦群
 type: 定义
 level: L3-理论建构层
 difficulty: ⭐⭐⭐⭐⭐
-concept_dependency: [同伦, 球面, 基点]
-prerequisite_concepts: [基本群, 同伦, 拓扑空间]
-prerequisite_theorems: [Hurewicz定理, 纤维化长正合序列]
+concept_dependency:
+- 同伦
+- 球面
+- 基点
+prerequisite_concepts:
+- 基本群
+- 同伦
+- 拓扑空间
+prerequisite_theorems:
+- Hurewicz定理
+- 纤维化长正合序列
 course_context: MAT 365 Topology
-msc2010: [55Q05, 55Q15, 55Q40]
-related_concepts: [纤维化, 障碍理论, 稳定同伦群]
+msc2010:
+- 55Q05
+- 55Q15
+- 55Q40
+related_concepts:
+- 纤维化
+- 障碍理论
+- 稳定同伦群
+title: AT PN 010 同伦群
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # AT-PN-010: 同伦群 (Homotopy Groups)
 
 > **来源**: Princeton MAT 365 (Topology) | Hatcher Chapter 4, Section 1, p. 337-345

@@ -1,16 +1,22 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 26A42
-  - 03B40
+  - 00A99 - 26A42 - 03B40'
 title: Riemann 积分与 Darboux 和 - 工作示例
-description: '理解Riemann可积的等价条件，通过Darboux上下和的概念深入理解积分的本质'
-author: 'FormalMath Team'
+description: 理解Riemann可积的等价条件，通过Darboux上下和的概念深入理解积分的本质
+author: FormalMath Team
 processed_at: '2026-04-05'
-tags: ['实分析', 'Riemann积分', 'Darboux和', '可积性']
+tags:
+- 实分析
+- Riemann积分
+- Darboux和
+- 可积性
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/integral
+  wikipedia_url: https://en.wikipedia.org/wiki/Integral
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
 ---
-
 # Riemann 积分与 Darboux 和 - 工作示例
 
 **类型**: 概念理解  

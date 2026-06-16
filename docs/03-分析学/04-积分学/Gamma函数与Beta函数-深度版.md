@@ -1,12 +1,19 @@
 ---
-title: "Gamma函数与Beta函数 - 深度版"
-msc_primary: 33
+title: Gamma函数与Beta函数 - 深度版
+msc_primary: '33
 
-  - 33B15
-msc_secondary: ['33B20', '26A33', '30B10', '11M06']
+  - 33B15'
+msc_secondary:
+- 33B20
+- 26A33
+- 30B10
+- 11M06
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # Gamma函数与Beta函数 - 深度版
 
 ## 📋 目录

@@ -2,36 +2,30 @@
 title: 等距与Killing场
 description: 系统介绍Riemann流形上的等距映射、Killing向量场、等距群与对称空间的基础理论。
 msc_primary:
-  - 53C20
+- 53C20
 msc_secondary:
-  - 53C35
-  - 53B20
+- 53C35
+- 53B20
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: lee_riemannian
-      type: textbook
-      title: Riemannian Manifolds
-      authors:
-        - John M. Lee
-      publisher: Springer
-      year: 1997
-      msc: 53-01
-    - id: do_carmo_riemannian
-      type: textbook
-      title: Riemannian Geometry
-      authors:
-        - Manfredo P. do Carmo
-      publisher: Birkhäuser
-      year: 1992
-      msc: 53-01
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: lee_riemannian
+    type: textbook
+    title: Riemannian Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    year: 1997
+    msc: 53-01
+  - id: do_carmo_riemannian
+    type: textbook
+    title: Riemannian Geometry
+    authors:
+    - Manfredo P. do Carmo
+    publisher: Birkhäuser
+    year: 1992
+    msc: 53-01
 ---
-
 # 等距与Killing场
 
 ## 引言

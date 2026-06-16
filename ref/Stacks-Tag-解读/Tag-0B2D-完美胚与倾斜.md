@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0B2D 完美胚与倾斜
+external_ids:
+  stacks_tag:
+    tag: 0B2D
+    url: https://stacks.math.columbia.edu/tag/0B2D
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0B2D
+    tags:
+    - 0B2D
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0B2D - 完美胚与倾斜
 
 ## 1. 基本信息

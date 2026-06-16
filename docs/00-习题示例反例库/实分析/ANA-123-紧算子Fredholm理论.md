@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 算子理论-紧算子与Fredholm理论
 难度: ⭐⭐⭐⭐⭐
 预计时间: 50分钟
+title: 紧算子Fredholm理论
 ---
-
 # 紧算子与Fredholm理论
 
 ## 题目

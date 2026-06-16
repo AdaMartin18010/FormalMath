@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 多复变-Cousin问题
 难度: ⭐⭐⭐⭐⭐
 预计时间: 50分钟
+title: Cousin问题
 ---
-
 # Cousin 问题
 
 ## 题目

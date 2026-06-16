@@ -1,11 +1,19 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16A99
-  - 14A99
-  - 30A99
+  - 16A99 - 14A99 - 30A99'
 title: Riemann-Roch定理 - 五种表征
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+references:
+  papers:
+  - title: Le théorème de Riemann-Roch
+    author: Armand Borel, Jean-Pierre Serre
+    journal: Bulletin de la Société Mathématique de France
+    year: 1958
+    doi: 10.24033/bsmf.1500
 ---
 # Riemann-Roch定理 - 五种表征
 
@@ -405,3 +413,9 @@ Riemann-Roch定理是：
 **数学公式数**: 8个
 **例子数**: 6个
 **最后更新**: 2026年01月02日
+
+---
+
+## 经典论文与原始文献
+
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)

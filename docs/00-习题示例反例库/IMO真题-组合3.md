@@ -1,23 +1,26 @@
 ---
-title: "IMO真题-组合：集合划分"
+title: IMO真题-组合：集合划分
 msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L3
 topic: 组合
-source: "IMO 2002 Problem 1"
+source: IMO 2002 Problem 1
 target_courses:
-  - MIT 18.701
+- MIT 18.701
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/set
+  wikipedia_url: https://en.wikipedia.org/wiki/Set_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88
 ---
-
 # IMO 2002 Problem 1：集合划分
 
 ## 题目

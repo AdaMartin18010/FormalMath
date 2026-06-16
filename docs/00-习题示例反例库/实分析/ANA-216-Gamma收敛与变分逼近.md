@@ -1,7 +1,7 @@
 ---
-msc_primary: 49
+msc_primary: '49
 
-  - 49J45
+  - 49J45'
 exercise_id: ANA-216
 title: Gamma收敛与变分逼近
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: 变分法
 source:
   course: 变分学进阶
-  chapter: "7.2"
+  chapter: '7.2'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/convergence
+  wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
 ---
-
 # ANA-216: Gamma收敛与变分逼近
 
 **题号**: ANA-216

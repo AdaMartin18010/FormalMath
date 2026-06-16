@@ -2,36 +2,34 @@
 title: proper与射影态射
 description: 深入探讨proper态射、射影态射的定义与判别准则，包括 valuative 判据、Chow 引理以及它们在紧化与模问题中的应用。
 msc_primary:
-  - 14A15
+- 14A15
 msc_secondary:
-  - 14E05
-  - 14D20
-  - 14A20
+- 14E05
+- 14D20
+- 14A20
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-        - Robin Hartshorne
-      publisher: Springer
-      year: 1977
-      msc: 14-01
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-        - Ravi Vakil
-      publisher: self-published
-      year: 2024
-  databases:
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    year: 1977
+    msc: 14-01
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    year: 2024
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/morphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Morphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
 ---
-
 # proper与射影态射
 
 ## 引言

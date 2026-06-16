@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01W0 泛性质与表示可解性
+external_ids:
+  stacks_tag:
+    tag: 01W0
+    url: https://stacks.math.columbia.edu/tag/01W0
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01W0
+    tags:
+    - 01W0
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 01W0 - 泛性质与表示可解性
 
 ## 1. 基本概念与定义

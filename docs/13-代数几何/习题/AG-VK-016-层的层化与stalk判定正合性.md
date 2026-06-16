@@ -1,8 +1,6 @@
 ---
 title: 层的层化与 stalk 判定正合性
-msc_primary: 14
-  - 14F05
-  - 18F20
+msc_primary: 14 - 14F05 - 18F20
 level: silver
 target_courses:
 - Stanford FOAG
@@ -30,6 +28,8 @@ references:
     - 'Chapter II, Section 1: Sheaves'
     url: null
     pages: 60-69
+    mr_number: MR0463157
+    author: Robin Hartshorne
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -38,36 +38,30 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters:
     - 'Section 2.4: Sheaves, Section 2.5: Sheaves of abelian groups and O_X-modules'
     url: https://math.stanford.edu/~vakil/216blog/
     pages: 65-72
+    author: Ravi Vakil
   databases:
   - id: nlab
     type: database
     name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
+    entry_url: https://ncatlab.org/nlab/show/sheaf
     consulted_at: 2026-04-17
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
 ---
-
 # AG-VK-016: 层的层化与 stalk 判定正合性
 
 ## 习题信息

@@ -1,9 +1,22 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: Chow 定理 (Chow's Theorem)
+external_ids:
+  stacks_tag:
+    tag: 0B5J
+    url: https://stacks.math.columbia.edu/tag/0B5J
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0B5J
+    tags:
+    - 0B5J
+    consulted_at: '2026-04-17'
 ---
 # Chow 定理 (Chow's Theorem)
 

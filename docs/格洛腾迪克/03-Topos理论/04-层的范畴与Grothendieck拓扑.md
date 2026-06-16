@@ -1,14 +1,28 @@
 ---
 title: 层的范畴与Grothendieck拓扑
 description: 系统讲解Grothendieck拓扑的公理化定义、覆盖族、层条件、层化函子以及不同位型上的层范畴之间的联系。
-msc_primary: 18
+msc_primary: '18
 
-  - 18F10
-  - 18B25
-  - 14F20
+  - 18F10 - 18B25 - 14F20'
 processed_at: '2026-04-16'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  stacks_tag:
+    tag: 00VH
+    url: https://stacks.math.columbia.edu/tag/00VH
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00VH
+    tags:
+    - 00VH
+    consulted_at: '2026-04-17'
 ---
-
 # 层的范畴与 Grothendieck 拓扑
 
 ## 引言

@@ -1,7 +1,7 @@
 ---
-msc_primary: 57
+msc_primary: '57
 
-  - 57R80
+  - 57R80'
 exercise_id: TOP-135
 title: 高维流形的s-配边定理
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 拓扑
 subtopic: surgery理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/manifold
+  wikipedia_url: https://en.wikipedia.org/wiki/Manifold
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
 ---
-
 # TOP-135: 高维流形的s-配边定理
 
 **题号**: TOP-135

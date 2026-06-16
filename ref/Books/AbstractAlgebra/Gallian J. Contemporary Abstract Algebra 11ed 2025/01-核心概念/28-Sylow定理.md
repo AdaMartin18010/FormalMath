@@ -1,10 +1,14 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A15
-  - 01A99
+- 00A15
+- 01A99
 title: Sylow定理 (Sylow Theorems)
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
 # Sylow定理 (Sylow Theorems)
 

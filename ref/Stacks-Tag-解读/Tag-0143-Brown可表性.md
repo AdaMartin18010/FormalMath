@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0143 Brown可表性
+external_ids:
+  stacks_tag:
+    tag: '0143'
+    url: https://stacks.math.columbia.edu/tag/0143
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0143
+    tags:
+    - '0143'
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0143 - Brown可表性（Brown representability）
 
 ## 1. Tag基本信息

@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 拓扑-Ricci流
 难度: ⭐⭐⭐⭐⭐
 预计时间: 60分钟
+title: Ricci流
 ---
-
 # Ricci 流
 
 ## 题目

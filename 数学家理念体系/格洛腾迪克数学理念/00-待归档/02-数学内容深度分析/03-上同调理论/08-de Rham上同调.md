@@ -1,13 +1,25 @@
 ---
 title: de Rham上同调：微分形式的上同调
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/differential+form
+  wikipedia_url: https://en.wikipedia.org/wiki/Differential_form
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F
+  zbmath_url: https://zbmath.org/?q=au:Differential%20form
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Differential%20form
+    author: Differential form
+    consulted_at: '2026-04-17'
 ---
-
 # de Rham上同调：微分形式的上同调
 
 

@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53C23
+  - 53C23'
 exercise_id: GEO-079
 title: Ricci曲率下界与Gromov-Hausdorff收敛
 difficulty: 3
@@ -10,11 +10,14 @@ topic: 几何
 subtopic: 度量几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/convergence
+  wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
 ---
-
 # GEO-079: Ricci曲率下界与Gromov-Hausdorff收敛
 
 **题号**: GEO-079

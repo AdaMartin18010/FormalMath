@@ -1,12 +1,20 @@
 ---
-msc_primary: 11
+msc_primary: '11
 
-  - 11T71
-  - 94A60
-  - 11A41
-  - 68P25
+  - 11T71 - 94A60 - 11A41 - 68P25'
 title: RSA加密算法：从数论基础到现代密码学实践（深度教学版）
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
+references:
+  papers:
+  - title: A method for obtaining digital signatures and public-key cryptosystems
+    author: Ronald L. Rivest, Adi Shamir, Leonard M. Adleman
+    journal: Communications of the ACM
+    year: 1978
+    doi: 10.1145/359340.359342
 ---
 # RSA加密算法：从数论基础到现代密码学实践（深度教学版）
 
@@ -604,3 +612,9 @@ $$\text{Shor算法时间复杂度: } O((\log N)^3)$$
 **最后更新**: 2026年4月3日
 **作者**: FormalMath项目组
 **数学学科分类**: 11T71 (Algebraic coding theory; cryptography), 94A60 (Cryptography), 11A41 (Primes)
+
+---
+
+## 经典论文与原始文献
+
+- Ronald L. Rivest, Adi Shamir, Leonard M. Adleman, *A method for obtaining digital signatures and public-key cryptosystems*, Communications of the ACM, 1978 (DOI: 10.1145/359340.359342)

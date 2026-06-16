@@ -1,53 +1,65 @@
 ---
-title: "Topos 理论与 SGA 4"
-level: "gold"
-msc_primary: 18
+title: Topos 理论与 SGA 4
+level: gold
+msc_primary: '18
 
-  - 18B25
-  - 18F10
-  - 03G30
+  - 18B25 - 18F10 - 03G30'
 target_courses:
-  - "nLab: topos"
-  - "nLab: sheaf topos"
+- 'nLab: topos'
+- 'nLab: sheaf topos'
 nlab_urls:
-  - "https://ncatlab.org/nlab/show/topos"
-  - "https://ncatlab.org/nlab/show/sheaf+topos"
-  - "https://ncatlab.org/nlab/show/geometric+morphism"
+- https://ncatlab.org/nlab/show/topos
+- https://ncatlab.org/nlab/show/sheaf+topos
+- https://ncatlab.org/nlab/show/geometric+morphism
 references:
   textbooks:
-    - title: "Théorie des Topos et Cohomologie Étale des Schémas"
-      author: "M. Artin, A. Grothendieck, J.-L. Verdier"
-      edition: "SGA 4, Lecture Notes in Mathematics 269-271"
-      publisher: "Springer"
-      year: 1972
-      chapters: ["Exposé IV: Topos"]
-    - title: "Sheaves in Geometry and Logic"
-      author: "Saunders Mac Lane, Ieke Moerdijk"
-      edition: "Universitext"
-      publisher: "Springer"
-      year: 1992
-      chapters: ["Ch. I: Categories of Functors", "Ch. II: Sheaves of Sets", "Ch. III: Grothendieck Topologies and Sheaves"]
-    - title: "Higher Topos Theory"
-      author: "Jacob Lurie"
-      edition: "Annals of Mathematics Studies 170"
-      publisher: "Princeton University Press"
-      year: 2009
-      chapters: ["Ch. 6: ∞-Topoi"]
+  - title: Théorie des Topos et Cohomologie Étale des Schémas
+    author: M. Artin, A. Grothendieck, J.-L. Verdier
+    edition: SGA 4, Lecture Notes in Mathematics 269-271
+    publisher: Springer
+    year: 1972
+    chapters:
+    - 'Exposé IV: Topos'
+  - title: Sheaves in Geometry and Logic
+    author: Saunders Mac Lane, Ieke Moerdijk
+    edition: Universitext
+    publisher: Springer
+    year: 1992
+    chapters:
+    - 'Ch. I: Categories of Functors'
+    - 'Ch. II: Sheaves of Sets'
+    - 'Ch. III: Grothendieck Topologies and Sheaves'
+  - title: Higher Topos Theory
+    author: Jacob Lurie
+    edition: Annals of Mathematics Studies 170
+    publisher: Princeton University Press
+    year: 2009
+    chapters:
+    - 'Ch. 6: ∞-Topoi'
   papers:
-    - title: "Catégories fibrées et descente"
-      author: "A. Grothendieck"
-      journal: "Séminaire Bourbaki"
-      year: 1959
-      volume: "12"
-      pages: "Exp. No. 190"
+  - title: Catégories fibrées et descente
+    author: A. Grothendieck
+    journal: Séminaire Bourbaki
+    year: 1959
+    volume: '12'
+    pages: Exp. No. 190
   databases:
-    - type: "nLab"
-      url: "https://ncatlab.org/nlab/show/topos"
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/00VH"
-review_status: "mathematical_reviewed"
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00VH
+    tags:
+    - 00VH
+    consulted_at: '2026-04-17'
+review_status: mathematical_reviewed
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
+  stacks_tag:
+    tag: 00VH
+    url: https://stacks.math.columbia.edu/tag/00VH
 ---
-
 # Topos 理论与 SGA 4
 
 > **对标 nLab 页面**：topos, sheaf topos, geometric morphism  

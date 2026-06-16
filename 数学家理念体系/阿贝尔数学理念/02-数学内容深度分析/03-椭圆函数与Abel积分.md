@@ -1,10 +1,24 @@
 ---
-title: "Abel的椭圆函数：复分析的先驱"
+title: Abel的椭圆函数：复分析的先驱
 msc_primary: 33
 msc_secondary:
-  - 33E05
-msc_secondary: ["14H52", "01A55", "30F10"]
+- 14H52
+- 01A55
+- 30F10
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
+  zbmath_url: https://zbmath.org/?q=au:Function
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Function
+    author: Function
+    consulted_at: '2026-04-17'
 ---
 # Abel的椭圆函数：复分析的先驱
 

@@ -5,8 +5,11 @@ msc_secondary:
 - 01A55
 - 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # Kleinian群：高维自守函数
 
 Kleinian群是研究高维自守函数的群，它是Fuchs群在高维的推广。虽然Kleinian群的严格形式化是在20世纪完成的，但庞加莱的自守函数理论为Kleinian群奠定了基础。Kleinian群在现代复分析、双曲几何、动力系统等领域有重要应用。

@@ -7,12 +7,19 @@ type: proof
 topic: 实分析
 course: MIT 18.100A Real Analysis
 source: 经典方法
-keywords: [Riemann积分, Darboux和, 可积性条件, 不连续点, Lebesgue零测集]
+keywords:
+- Riemann积分
+- Darboux和
+- 可积性条件
+- 不连续点
+- Lebesgue零测集
 author: FormalMath Team
 version: 1.0
 created: 2026-04-09
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
 ---
-
 # ANA-008: Riemann可积性判定
 
 ## 题目陈述

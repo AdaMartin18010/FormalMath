@@ -1,14 +1,15 @@
 ---
 title: Topos与构造性数学
 description: 探讨Topos作为构造性数学模型的作用，包括有效Topos、可实现性Topos以及Bishop分析在Topos框架中的实现。
-msc_primary: 03
+msc_primary: '03
 
-  - 03F60
-  - 03G30
-  - 18B25
+  - 03F60 - 03G30 - 18B25'
 processed_at: '2026-04-16'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
 ---
-
 # Topos 与构造性数学
 
 ## 引言

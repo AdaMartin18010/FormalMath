@@ -1,13 +1,16 @@
 ---
 msc_primary: 18
 msc_secondary:
-  - 18N60
-msc_secondary: [18D05, 55U35]
+- 18D05
+- 55U35
 title: nLab - ∞-范畴 (∞-category) 中文解读
 nlab_url: https://ncatlab.org/nlab/show/infinity-category
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
 ---
-
 # nLab - ∞-范畴 (∞-category) 中文解读
 
 **原文链接**: https://ncatlab.org/nlab/show/infinity-category

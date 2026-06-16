@@ -1,15 +1,18 @@
 ---
-title: "线性变换的矩阵表示 自然语言与 Lean4 对照"
+title: 线性变换的矩阵表示 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.06"
+- MIT 18.06
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/matrix
+  wikipedia_url: https://en.wikipedia.org/wiki/Matrix_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
 ---
-
 ## 定理陈述
 
 **自然语言**：设 $T: V \to W$ 是有限维向量空间之间的线性变换。给定 $V$ 的一组有序基 $\mathcal{B} = \{v_1, \dots, v_n\}$ 和 $W$ 的一组有序基 $\mathcal{C} = \{w_1, \dots, w_m\}$，则存在唯一的 $m \times n$ 矩阵 $[T]_{\mathcal{B}}^{\mathcal{C}}$，使得对任意 $v \in V$ 有
@@ -110,3 +113,12 @@ end MatrixRepresentation
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/matrix)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Matrix_(mathematics))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5)

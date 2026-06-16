@@ -1,15 +1,18 @@
 ---
-title: "Fourier 级数收敛定理 自然语言与 Lean4 对照"
+title: Fourier 级数收敛定理 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.100A"
+- MIT 18.100A
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/convergence
+  wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
 ---
-
 ## 定理陈述
 
 **自然语言**：设 \(f : \mathbb{R} \to \mathbb{C}\) 是周期为 \(2\pi\) 的函数。
@@ -98,3 +101,12 @@ theorem dirichlet_kernel_closed_form (N : ℕ) (x : ℝ) (hx : x ≠ 0) :
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/convergence)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Convergence_(mathematics))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B)

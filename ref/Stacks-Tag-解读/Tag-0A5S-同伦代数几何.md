@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0A5S 同伦代数几何
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/algebraic+geometry
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
+  stacks_tag:
+    tag: 0A5S
+    url: https://stacks.math.columbia.edu/tag/0A5S
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A5S
+    tags:
+    - 0A5S
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0A5S - 同伦代数几何
 
 ## 1. 基本概念与定义

@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0C6A Deligne Mumford叠
+external_ids:
+  stacks_tag:
+    tag: 0C6A
+    url: https://stacks.math.columbia.edu/tag/0C6A
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0C6A
+    tags:
+    - 0C6A
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0C6A - Deligne-Mumford叠
 
 ## 1. 基本概念与定义

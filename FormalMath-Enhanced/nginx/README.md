@@ -28,7 +28,7 @@ cd FormalMath-Enhanced/nginx
 docker-compose up -d
 
 # 测试访问
-curl 
+curl
 ```
 
 ## 配置结构

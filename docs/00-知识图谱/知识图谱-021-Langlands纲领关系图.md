@@ -1,14 +1,23 @@
 ---
-title: "知识图谱-021: Langlands纲领关系图"
+title: '知识图谱-021: Langlands纲领关系图'
 msc_primary: 00A99
-description: "展示Langlands纲领中数论、表示论、几何三大领域的深刻联系"
-category: "knowledge-graph"
-tags: ["Langlands纲领", "数论", "表示论", "代数几何", "自守形式", "Galois表示"]
-version: "1.0"
-date: "2026-04-10"
-author: "FormalMath Team"
+description: 展示Langlands纲领中数论、表示论、几何三大领域的深刻联系
+category: knowledge-graph
+tags:
+- Langlands纲领
+- 数论
+- 表示论
+- 代数几何
+- 自守形式
+- Galois表示
+version: '1.0'
+date: '2026-04-10'
+author: FormalMath Team
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectrum
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectrum_(topology)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1
 ---
-
 # Langlands纲领关系图
 
 ## 概述

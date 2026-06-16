@@ -1,8 +1,11 @@
 ---
-title: "PDE与代数几何高级反例"
-msc_primary: "00"
+title: PDE与代数几何高级反例
+msc_primary: '00'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/algebraic+geometry
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
 ---
-
 # PDE与代数几何高级反例
 
 ---

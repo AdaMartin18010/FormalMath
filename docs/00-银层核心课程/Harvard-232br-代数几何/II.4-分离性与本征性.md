@@ -1,74 +1,67 @@
 ---
 course: Harvard 232br 代数几何
 level: silver
-
 title: Harvard 232br - Hartshorne Chapter II §4 习题解答
 msc_primary: 00A99
 course_code: Harvard Math 232br
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter II - Schemes, Section 4 - Separated and Proper Morphisms"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter II - Schemes, Section 4 - Separated and Proper Morphisms
 source_exercise:
-  - "II.4.1"
-  - "II.4.2"
-  - "II.4.3"
-  - "II.4.4"
-  - "II.4.5 (a)(b)(d)"
+- II.4.1
+- II.4.2
+- II.4.3
+- II.4.4
+- II.4.5 (a)(b)(d)
 difficulty: ⭐⭐⭐ to ⭐⭐⭐⭐
 processed_at: '2026-04-17'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
-target_courses: [FormalMath银层核心课程, 代数几何]
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: II.4
+    url: null
+    author: Robin Hartshorne
+    pages: 78-86
+    mr_number: MR0463157
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: ''
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
+target_courses:
+- FormalMath银层核心课程
+- 代数几何
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+chapter: '4'
+external_ids:
+  ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
+  ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
+  harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
 ---
-
 # Harvard 232br - Hartshorne Chapter II §4 习题解答
 
 > 本节覆盖分离性与本征性的核心习题，包括有限态射的固有性、分离性判别（稠密开集上相等的态射必相等）、分离概形中仿射开集的交仍是仿射的，以及赋值判别法的初步应用。

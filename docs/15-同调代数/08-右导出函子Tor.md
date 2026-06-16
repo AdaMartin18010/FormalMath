@@ -2,36 +2,39 @@
 title: 右导出函子Tor
 description: 系统介绍Tor_n函子的定义、基本性质、长正合列，以及与平坦模和张量积正合性的深刻联系。
 msc_primary:
-  - 18G15
+- 18G15
 msc_secondary:
-  - 13D07
-  - 16E30
+- 13D07
+- 16E30
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: weibel_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Charles A. Weibel
-      publisher: Cambridge University Press
-      year: 1994
-      msc: 18-01
-    - id: rotman_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Joseph J. Rotman
-      publisher: Springer
-      year: 2009
-      msc: 18-01
+  - id: weibel_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Charles A. Weibel
+    publisher: Cambridge University Press
+    year: 1994
+    msc: 18-01
+  - id: rotman_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Joseph J. Rotman
+    publisher: Springer
+    year: 2009
+    msc: 18-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/functor
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
 ---
-
 # Tor函子
 
 ## 引言

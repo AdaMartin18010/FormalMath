@@ -2,22 +2,29 @@
 title: MIT 18.06 线性代数 - 学习诊断手册
 level: silver
 course: MIT 18.06
-msc_primary: 15
-  - 15A03
-  - 15A06
-  - 15A18
-  - 15A23
+msc_primary: 15 - 15A03 - 15A06 - 15A18 - 15A23
 target_courses:
-  - "MIT 18.06 All Lectures"
+- MIT 18.06 All Lectures
 review_status: mathematical_reviewed
 processed_at: '2026-04-20'
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+chapter: '0'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+references:
+  textbooks:
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 5th
+    publisher: Wellesley-Cambridge Press
+    year: 2016
+    isbn: '9780980232776'
 ---
-
 # MIT 18.06 线性代数 - 学习诊断手册
 
 > **用途**: 本手册基于 Gilbert Strang 教学经验、Math StackExchange 高赞回答及项目内部审计结果，系统整理学生在 MIT 18.06 各章中最常见的错误模式、诊断方法与纠正策略。
@@ -529,12 +536,14 @@ tags:
 1. Strang, G. (2016). *Introduction to Linear Algebra* (5th ed.). Wellesley-Cambridge Press. ISBN: 978-0980232776.
 2. Lay, D. C. (2016). *Linear Algebra and Its Applications* (5th ed.). Pearson. ISBN: 978-0321982384.
 3. Axler, S. (2015). *Linear Algebra Done Right* (3rd ed.). Springer. ISBN: 978-3319110790.
+
 ## 审阅记录
 
 **审阅日期**: 2026-04-20
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰

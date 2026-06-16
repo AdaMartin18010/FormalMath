@@ -1,9 +1,23 @@
 ---
-title: "MIT 18.06 课堂验证模块设计"
+title: MIT 18.06 课堂验证模块设计
 msc_primary: 00A99
-level: "silver"
+level: silver
+course: MIT 18.06 线性代数
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
+references:
+  textbooks:
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 5th
+    publisher: Wellesley-Cambridge Press
+    year: 2016
+    isbn: '9780980232776'
 ---
-
 # MIT 18.06 课堂验证模块设计
 
 ## 1. 模块概述
@@ -58,3 +72,18 @@ $$A = \begin{pmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 3 \end{pmatrix}, \quad b = \begin{pm
 2. SVD 的几何直觉解释是否清晰？（1-5 分）
 3. 你能否独立阅读并理解 Lean4 线性代数代码中的关键 tactic？（是/部分/否）
 4. 你最希望补充的线性代数主题是什么？（开放题）
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016 (ISBN: 9780980232776)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/)
+- [Nlab Url](https://ncatlab.org/nlab/show/module)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Module_(mathematics))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%A8%A1)

@@ -1,12 +1,15 @@
 ---
 msc_primary: 46B05
 msc_secondary:
-  - 46B20
-  - 46B25
+- 46B20
+- 46B25
 processed_at: '2026-04-20'
 title: Banach空间基础
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Banach+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Banach_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Banach%E7%A9%BA%E9%97%B4
 ---
-
 # Banach空间基础
 
 ## 1. 引言

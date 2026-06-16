@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53D55
+  - 53D55'
 exercise_id: ALG-255
 title: Poisson同调与形变量子化
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 形变理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/homology
+  wikipedia_url: https://en.wikipedia.org/wiki/Homology_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83
 ---
-
 # ALG-255: Poisson同调与形变量子化
 
 **题号**: ALG-255

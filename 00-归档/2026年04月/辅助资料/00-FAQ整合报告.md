@@ -1,8 +1,9 @@
 ---
-msc_primary: "00A99"
-msc_secondary: ["97U99"]
+msc_primary: 00A99
+msc_secondary:
+- 97U99
+title: 00 FAQ整合报告
 ---
-
 # FormalMath FAQ与辅助文档整合报告
 
 **报告编号**: INTEGRATION-2026-04-05

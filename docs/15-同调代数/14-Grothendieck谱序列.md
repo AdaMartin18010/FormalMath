@@ -2,36 +2,48 @@
 title: Grothendieck谱序列
 description: 介绍Grothendieck谱序列的构造、导出函子复合的谱序列理论，以及它在层上同调和群上同调中的应用。
 msc_primary:
-  - 18G40
+- 18G40
 msc_secondary:
-  - 18G10
-  - 18G15
+- 18G10
+- 18G15
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: weibel_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Charles A. Weibel
-      publisher: Cambridge University Press
-      year: 1994
-      msc: 18-01
-    - id: rotman_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Joseph J. Rotman
-      publisher: Springer
-      year: 2009
-      msc: 18-01
+  - id: weibel_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Charles A. Weibel
+    publisher: Cambridge University Press
+    year: 1994
+    msc: 18-01
+  - id: rotman_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Joseph J. Rotman
+    publisher: Springer
+    year: 2009
+    msc: 18-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/spectral+sequence
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/013O
+    consulted_at: '2026-04-17'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  stacks_tag:
+    tag: 013O
+    url: https://stacks.math.columbia.edu/tag/013O
 ---
-
 # Grothendieck谱序列
 
 ## 引言

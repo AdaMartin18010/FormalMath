@@ -1,9 +1,19 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: Riemann-Roch定理概述推理树
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+references:
+  papers:
+  - title: Le théorème de Riemann-Roch
+    author: Armand Borel, Jean-Pierre Serre
+    journal: Bulletin de la Société Mathématique de France
+    year: 1958
+    doi: 10.24033/bsmf.1500
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']
@@ -149,3 +159,9 @@ ch(f_! E) td(Y) = f_*(ch(E) td(X))
 ---
 *生成时间: 2026年4月*
 *领域: 代数几何 / 经典定理*
+
+---
+
+## 经典论文与原始文献
+
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)

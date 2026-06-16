@@ -1,13 +1,19 @@
 ---
 msc_primary: 14
 msc_secondary:
-  - 14F25
-msc_secondary: [18G40, 18G10]
+- 18G40
+- 18G10
 title: Stacks Tag 01DZ - Čech上同调与导出函子上同调的等价性
-stacks_tags: ["01DZ", "01ED", "03FD"]
+stacks_tags:
+- 01DZ
+- 01ED
+- 03FD
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
 ---
-
 # Stacks Tag 01DZ - Čech上同调与导出函子上同调的等价性
 
 **Tag编号**: 01DZ

@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 单调收敛定理 (Monotone Convergence Theorem)
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/convergence
+  wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
 ---
 # 单调收敛定理 (Monotone Convergence Theorem)
 

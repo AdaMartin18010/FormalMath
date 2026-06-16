@@ -1,14 +1,27 @@
 ---
 title: Étale Topos与平展上同调
 description: 从Topos理论视角重新审视平展拓扑、平展Topos的构造、几何态射以及平展上同调作为Topos上同调的自然性。
-msc_primary: 14
+msc_primary: '14
 
-  - 14F20
-  - 18B25
-  - 14L30
+  - 14F20 - 18B25 - 14L30'
 processed_at: '2026-04-16'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
+  stacks_tag:
+    tag: 03PP
+    url: https://stacks.math.columbia.edu/tag/03PP
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/03PP
+    tags:
+    - 03PP
+    consulted_at: '2026-04-17'
 ---
-
 # Étale Topos 与平展上同调
 
 ## 引言

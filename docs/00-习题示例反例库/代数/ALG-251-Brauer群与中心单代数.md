@@ -1,7 +1,7 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16K20
+  - 16K20'
 exercise_id: ALG-251
 title: Brauer群与中心单代数
 difficulty: 3
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 环论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # ALG-251: Brauer群与中心单代数
 
 **题号**: ALG-251

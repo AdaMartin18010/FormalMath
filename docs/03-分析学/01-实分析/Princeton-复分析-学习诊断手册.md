@@ -1,10 +1,10 @@
 ---
 msc_primary: 26-XX
 msc_secondary:
-  - 28-XX
-  - 30-XX
+- 28-XX
+- 30-XX
+title: Princeton 复分析 学习诊断手册
 ---
-
 # Princeton 复分析：核心定理与深度习题
 
 复分析（complex analysis）研究复可微函数（全纯函数）的理论，是分析学中最优美、最完善的数学分支之一。从 Cauchy 的积分理论到 Riemann 映射定理，复分析的工具在数论、代数几何、流体力学与量子场论中都有不可替代的作用。

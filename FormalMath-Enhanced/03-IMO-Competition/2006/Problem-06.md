@@ -112,8 +112,8 @@ $$(a+b-c)^p + (b+c-a)^p + (c+a-b)^p \leq a^p + b^p + c^p$$
 
 ## 参考
 
-- [IMO 2006 Official Solutions](https://www.imo-official.org/problems/IMO2006SL.pdf)[需更新]
-- [AoPS讨论贴](https://artofproblemsolving.com/community/c6h101493p572827)[需更新]
+- [IMO 2006 Official Solutions][https://www.imo-official.org/problems/IMO2006SL.pdf](需更新)
+- [AoPS讨论贴][https://artofproblemsolving.com/community/c6h101493p572827](需更新)
 - 相关技巧：Ravi代换、三角形边长不等式
 
 ---

@@ -6,10 +6,19 @@ concept: 单位元与零因子
 title: 无逆元的环元素（零因子）
 msc_primary: 00A99
 difficulty: 中等
-keywords: [零因子, 单位元, 整环, 可逆元, 环]
-related: [CEX-ALG-003]
+keywords:
+- 零因子
+- 单位元
+- 整环
+- 可逆元
+- 环
+related:
+- CEX-ALG-003
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
-
 # CEX-ALG-002: 无逆元的环元素（零因子）
 
 ## 反例构造
@@ -17,6 +26,7 @@ related: [CEX-ALG-003]
 考虑环 $R = \mathbb{Z}/6\mathbb{Z} = \{0, 1, 2, 3, 4, 5\}$（模6剩余类环），乘法为模6乘法。
 
 考察元素 $\bar{2} \in R$：
+
 - 存在 $\bar{3} \in R$ 使得 $\bar{2} \cdot \bar{3} = \bar{6} = \bar{0}$
 - 但 $\bar{2} \neq \bar{0}$ 且 $\bar{3} \neq \bar{0}$
 
@@ -43,6 +53,7 @@ $$\bar{3} = \bar{2}^{-1} \cdot \bar{2} \cdot \bar{3} = \bar{2}^{-1} \cdot \bar{0
 **零因子的本质：** 在 $\mathbb{Z}/6\mathbb{Z}$ 中，数字2和3都不是"零"，但它们相乘却得到"零"。这就像两个非零的数"合作"消灭了对方。
 
 **钟表类比：** 想象一个6小时制的钟表。
+
 - 从0开始，每次+2，经过3次回到0（$2+2+2=6\equiv 0$）
 - 从0开始，每次+3，经过2次回到0（$3+3=6\equiv 0$）
 

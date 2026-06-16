@@ -1,14 +1,15 @@
 ---
 title: 分类Topos与几何点
 description: 深入讲解分类Topos的泛性质、几何点的分类、局部环分类子以及代数几何中常见的分类Topos例子。
-msc_primary: 18
+msc_primary: '18
 
-  - 18B25
-  - 03C35
-  - 14D23
+  - 18B25 - 03C35 - 14D23'
 processed_at: '2026-04-16'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
 ---
-
 # 分类 Topos 与几何点
 
 ## 引言

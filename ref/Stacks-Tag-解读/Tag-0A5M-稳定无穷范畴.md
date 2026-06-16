@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0A5M 稳定无穷范畴
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
+  stacks_tag:
+    tag: 0A5M
+    url: https://stacks.math.columbia.edu/tag/0A5M
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A5M
+    tags:
+    - 0A5M
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0A5M - 稳定∞-范畴
 
 ## 1. 基本信息

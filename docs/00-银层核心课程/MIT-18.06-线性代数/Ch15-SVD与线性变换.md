@@ -1,36 +1,70 @@
 ---
-title: "Ch.15 SVD与线性变换（SVD & Linear Transformations）"
-level: "silver"
+title: Ch.15 SVD与线性变换（SVD & Linear Transformations）
+level: silver
 course: MIT 18.06 线性代数
-chapter: "15"
+chapter: '15'
 msc_primary: 15
 target_courses:
-  - "MIT 18.06 Ch.15"
+- MIT 18.06 Ch.15
 references:
   textbooks:
-    - title: "Introduction to Linear Algebra"
-      author: "Gilbert Strang"
-      edition: "5th"
-      chapters: "Chapter 7"
-      pages: "363-390"
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 5th
+    chapters: Chapter 15, Sections 7.1-7.3, 8.1
+    pages: 363-390
+    isbn: '9780980232776'
+    publisher: Wellesley-Cambridge Press
+    year: 2016
   lectures:
-    - institution: "MIT"
-      course_code: "18.06"
-      lecture: "L29-L31"
-      url: "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/"
+  - institution: MIT
+    course_code: '18.06'
+    lecture: L29
+    title: Singular value decomposition
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/
+  - institution: MIT
+    course_code: '18.06'
+    lecture: L30
+    title: Linear transformations and their matrices
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/
+  - institution: MIT
+    course_code: '18.06'
+    lecture: L31
+    title: Change of basis image compression
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/
+  - institution: MIT
+    course_code: '18.06'
+    lecture: L33
+    title: Left and right inverses pseudoinverse
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/
+  exams:
+  - name: Exam 2
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10.pdf
+    solution_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10_sol.pdf
 keywords:
-  - "SVD"
-  - "singular value"
-  - "pseudo-inverse"
-  - "PCA"
-  - "linear transformation"
-  - "change of basis"
-status: "draft"
+- SVD
+- singular value
+- pseudo-inverse
+- PCA
+- linear transformation
+- change of basis
+status: draft
 review_rounds: 0
-created_at: "2026-04-18"
+created_at: '2026-04-18'
 review_status: mathematical_reviewed
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  ocw_lectures:
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/
+  ocw_problem_sets:
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf
+prerequisites:
+- docs/00-银层核心课程/MIT-18.06-线性代数/Ch14-*.md
 ---
-
 # Ch.15 SVD与线性变换（SVD & Linear Transformations）
 
 > **课程**: MIT 18.06 Linear Algebra | **章节**: Chapter 15
@@ -650,7 +684,7 @@ theorem change_of_basis_formula (𝕜 : Type*) [Field 𝕜] {V W : Type*}
 
 ---
 
-**习题 1.2**。证明：任意 $m	imes n$ 矩阵 $A$ 的伪逆 $A^+$ 满足 $AA^+A = A$。
+**习题 1.2**。证明：任意 $m  imes n$ 矩阵 $A$ 的伪逆 $A^+$ 满足 $AA^+A = A$。
 
 *解答*：由 SVD $A=U\Sigma V^T$，$A^+=V\Sigma^+U^T$。$AA^+A = U\Sigma V^T V\Sigma^+U^T U\Sigma V^T = U\Sigma\Sigma^+\Sigma V^T = U\Sigma V^T = A$。$\square$
 
@@ -668,8 +702,22 @@ theorem change_of_basis_formula (𝕜 : Type*) [Field 𝕜] {V W : Type*}
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+## 参考与延伸阅读
+### 教材
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016. ISBN: 9780980232776. 本章对应 Sections 7.1-7.3, 8.1.
+### MIT OCW 讲座
+- Lecture 29: [Singular value decomposition](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/)
+- Lecture 30: [Linear transformations and their matrices](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/)
+- Lecture 31: [Change of basis image compression](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/)
+- Lecture 33: [Left and right inverses pseudoinverse](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/)
+### 习题与考试
+- [Problem Set 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf)
+- [Exam 2](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10.pdf) ([solutions](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10_sol.pdf))

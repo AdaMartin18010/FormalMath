@@ -2,11 +2,24 @@
 title: Abel与Abel群：交换代数的起源
 msc_primary: 20
 msc_secondary:
-  - 20K01
-  - 01A55
-  - 00A99
-  - 13C99
+- 20K01
+- 01A55
+- 00A99
+- 13C99
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  zbmath_url: https://zbmath.org/?q=au:Group
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Group
+    author: Group
+    consulted_at: '2026-04-17'
 ---
 # Abel与Abel群：交换代数的起源
 

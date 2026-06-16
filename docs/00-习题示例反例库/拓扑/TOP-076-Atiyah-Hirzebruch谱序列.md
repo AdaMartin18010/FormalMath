@@ -5,8 +5,13 @@ msc_primary: 00A99
 知识点: 同伦论-广义上同调谱序列
 难度: ⭐⭐⭐⭐⭐
 预计时间: 55分钟
+title: Atiyah Hirzebruch谱序列
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/
 ---
-
 # Atiyah-Hirzebruch谱序列
 
 ## 题目

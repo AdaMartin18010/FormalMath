@@ -1,26 +1,38 @@
 ---
-title: "Serre猜想与后续发展：从模形式到Langlands纲领"
+title: Serre猜想与后续发展：从模形式到Langlands纲领
 level: gold
 course: Serre数学理念
 msc_primary: 11
 msc_secondary:
-  - 11F80
+- 11F80
 references:
   textbooks:
-    - title: "Modular Forms and Fermat's Last Theorem"
-      author: "G. Cornell, J. Silverman, G. Stevens"
-      year: 1997
+  - title: Modular Forms and Fermat's Last Theorem
+    author: G. Cornell, J. Silverman, G. Stevens
+    year: 1997
   papers:
-    - title: "Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)"
-      author: "J-P. Serre"
-      year: 1987
-    - title: "Serre's conjecture over F_9"
-      author: "C. Khare & J-P. Wintenberger"
-      year: 2004
+  - title: Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)
+    author: J-P. Serre
+    year: 1987
+  - title: Serre's conjecture over F_9
+    author: C. Khare & J-P. Wintenberger
+    year: 2004
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Modular%20form
+    author: Modular form
+    consulted_at: '2026-04-17'
 status: completed
 created_at: 2026-04-18
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/modular+form
+  wikipedia_url: https://en.wikipedia.org/wiki/Modular_form
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1%E5%BD%A2%E5%BC%8F
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  zbmath_url: https://zbmath.org/?q=au:Modular%20form
 ---
-
 # Serre猜想与后续发展：从模形式到Langlands纲领
 
 ## 1. 引言：一个改变数论的猜想

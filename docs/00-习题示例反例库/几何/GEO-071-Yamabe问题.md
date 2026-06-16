@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 几何-Yamabe问题
 难度: ⭐⭐⭐⭐
 预计时间: 50分钟
+title: Yamabe问题
 ---
-
 # Yamabe 问题
 
 ## 题目

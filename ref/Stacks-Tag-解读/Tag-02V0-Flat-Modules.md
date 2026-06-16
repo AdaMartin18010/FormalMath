@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 02V0 Flat Modules
 ---
-
 # Stacks Project Tag 02V0 - 平坦模（Flat Modules）
 
 ## 1. Tag基本信息

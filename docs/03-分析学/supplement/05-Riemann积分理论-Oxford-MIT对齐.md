@@ -1,8 +1,12 @@
 ---
-title: "Riemann积分理论 Oxford MIT对齐"
-msc_primary: "26"
+title: Riemann积分理论 Oxford MIT对齐
+msc_primary: '26'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/integral
+  wikipedia_url: https://en.wikipedia.org/wiki/Integral
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
 ---
-
 # Riemann积分理论 - Oxford Analysis III / MIT 18.100A 深度对齐
 
 ---

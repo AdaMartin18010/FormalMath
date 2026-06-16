@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: 00 Round13 冲刺进展报告
 ---
-
 # Round 13 冲刺进展报告
 
 **日期**: 2026-04-09

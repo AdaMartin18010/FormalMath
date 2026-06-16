@@ -1,38 +1,54 @@
 ---
 course: MIT 18.100A 实分析
-
-title: "Weierstrass M-判别法（Weierstrass M-Test）"
-level: "silver"
+title: Weierstrass M-判别法（Weierstrass M-Test）
+level: silver
 msc_primary: 40
 target_courses:
-  - "MIT 18.100A Ch.6"
+- MIT 18.100A Ch.6
 references:
   textbooks:
-    - title: "Understanding Analysis"
-      author: "Stephen Abbott"
-      edition: "2nd"
-      chapters: "Ch. 6"
-      pages: "170-173"
-    - title: "Principles of Mathematical Analysis"
-      author: "Walter Rudin"
-      edition: "3rd"
-      chapters: "Ch. 7"
-      pages: "148-149"
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    chapters: Ch. 6
+    pages: 170-173
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    chapters: Ch. 7
+    pages: 148-149
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
   lectures:
-    - institution: "MIT"
-      course_code: "18.100A"
-      lecture: "Lecture 20"
-      url: "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/"
+  - institution: MIT
+    course_code: 18.100A
+    lecture: Lecture 20
+    url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  assignments:
+  - name: Problem Set 5
+    url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset5.pdf
 keywords:
-  - "一致收敛"
-  - "函数项级数"
-  - "Weierstrass判别法"
-  - "Cauchy准则"
+- 一致收敛
+- 函数项级数
+- Weierstrass判别法
+- Cauchy准则
 review_status: mathematical_reviewed
 review_rounds: 0
-created_at: "2026-04-18"
+created_at: '2026-04-18'
+chapter: '5'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+  ocw_readings_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/
+  ocw_lectures_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/
+  ocw_problem_sets:
+  - https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset5.pdf
 ---
-
 # Weierstrass M-判别法（Weierstrass M-Test）
 
 > **课程**: MIT 18.100A 实分析 | **章节**: Ch. 6 — 函数项级数与一致收敛
@@ -426,8 +442,25 @@ ight| \leq rac{1}{n^2} = M_n$。$\sum M_n$ 收敛（p-级数，p=2>1）。由 W
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015 (Chapters: Ch. 6; Pages: 170-173; ISBN: 9781493927111)
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976 (Chapters: Ch. 7; Pages: 148-149; ISBN: 9780070542358; MR: MR0385023)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)
+- [Ocw Readings Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/)
+- [Ocw Lectures Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/)
+- [Ocw Problem Sets](['https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset5.pdf'])

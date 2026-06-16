@@ -1,8 +1,11 @@
 ---
-title: "FormalMath交互式知识图谱"
-msc_primary: "00"
+title: FormalMath交互式知识图谱
+msc_primary: '00'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectrum
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectrum_(topology)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1
 ---
-
 # FormalMath 交互式知识图谱
 
 ---

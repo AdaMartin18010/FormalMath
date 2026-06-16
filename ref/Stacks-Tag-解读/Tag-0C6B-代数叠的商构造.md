@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0C6B 代数叠的商构造
+external_ids:
+  stacks_tag:
+    tag: 0C6B
+    url: https://stacks.math.columbia.edu/tag/0C6B
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0C6B
+    tags:
+    - 0C6B
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0C6B - 代数叠的商构造
 
 ## 1. 基本概念与定义

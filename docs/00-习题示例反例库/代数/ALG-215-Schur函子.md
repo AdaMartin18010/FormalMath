@@ -5,8 +5,12 @@ msc_primary: 00A99
 知识点: 表示论-Schur函子
 难度: ⭐⭐⭐⭐⭐
 预计时间: 50分钟
+title: ALG 215 Schur函子
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
 ---
-
 # Schur 函子
 
 ## 题目

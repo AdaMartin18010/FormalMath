@@ -1,75 +1,77 @@
 ---
 course: Harvard 232br 代数几何
 level: silver
-
 title: Harvard 232br - Hartshorne Chapter II §3 习题解答
 msc_primary: 00A99
 course_code: Harvard Math 232br
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter II - Schemes, Section 3 - First Properties of Schemes"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter II - Schemes, Section 3 - First Properties of Schemes
 source_exercise:
-  - "II.3.1"
-  - "II.3.2"
-  - "II.3.3"
-  - "II.3.4"
-  - "II.3.5"
-  - "II.3.6"
+- II.3.1
+- II.3.2
+- II.3.3
+- II.3.4
+- II.3.5
+- II.3.6
 difficulty: ⭐⭐ to ⭐⭐⭐
 processed_at: '2026-04-17'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: II.3
+    url: null
+    author: Robin Hartshorne
+    pages: 70-78
+    mr_number: MR0463157
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: ''
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
-target_courses: [FormalMath银层核心课程, 代数几何]
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/morphism
+    consulted_at: 2026-04-17
+target_courses:
+- FormalMath银层核心课程
+- 代数几何
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+chapter: '3'
+external_ids:
+  ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
+  ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
+  harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
+  nlab_url: https://ncatlab.org/nlab/show/morphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Morphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
 ---
-
 # Harvard 232br - Hartshorne Chapter II §3 习题解答
 
 > 本节覆盖概形态射的有限性条件：局部有限型、拟紧、有限型、有限态射，以及浸入在基变换下的稳定性。这些习题是 **Affine Communication Lemma** 的主要应用场域。
@@ -392,17 +394,20 @@ theorem closedImmersion_stableUnderBaseChange :
 - [II.4-分离性与本征性](II.4-分离性与本征性.md)
 - [II.5-模与层-续](II.5-模与层-续.md)
 - [II.5-模与层](II.5-模与层.md)
+
 ## 参考文献
 
 1. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
 2. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
 3. Liu, Q. (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press. ISBN: 978-0198502845.
+
 ## 审阅记录
 
 **审阅日期**: 2026-04-20
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰

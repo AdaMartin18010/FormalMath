@@ -1,11 +1,13 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20D20
-  - 20D15
-  - 20B05
+  - 20D20 - 20D15 - 20B05'
 title: Sylow定理完整证明树
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
 # Sylow定理完整证明树
 

@@ -1,9 +1,22 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 五引理 (Five Lemma)
+external_ids:
+  stacks_tag:
+    tag: 010M
+    url: https://stacks.math.columbia.edu/tag/010M
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/010M
+    tags:
+    - 010M
+    consulted_at: '2026-04-17'
 ---
 # 五引理 (Five Lemma)
 

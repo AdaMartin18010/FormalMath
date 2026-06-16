@@ -40,26 +40,19 @@ references:
     year: 2024
     isbn: null
     msc: 14-01
-    chapters: 
+    chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
   databases:
   - id: nlab
     type: database
     name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
+    entry_url: https://ncatlab.org/nlab/show/differential+form
     consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
-    consulted_at: 2026-04-17
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/differential+form
+  wikipedia_url: https://en.wikipedia.org/wiki/Differential_form
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F
 ---
-
 # Harvard 232br - Hartshorne Chapter II §8 习题解答
 
 > 本节覆盖 Kähler 微分模的泛性质、光滑性与微分形式秩的关系、正则局部环的切空间，以及外幂与微分形式的计算。

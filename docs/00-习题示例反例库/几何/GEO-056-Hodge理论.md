@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 几何-Hodge理论
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
+title: Hodge理论
 ---
-
 # Hodge 理论深入
 
 ## 题目

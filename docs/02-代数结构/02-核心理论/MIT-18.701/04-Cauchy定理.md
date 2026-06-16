@@ -21,6 +21,7 @@ references:
     - 'Chapter 7: More Group Theory, Section 7.2'
     url: null
     pages: 185-190
+    author: Michael Artin
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -31,8 +32,9 @@ references:
     year: 2016
     isbn: 978-0980232776
     msc: 15-01
-    chapters: 
+    chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -48,30 +50,29 @@ references:
     - 'Chapter 4: Group Actions, Section 4.1 (Cauchy''s Theorem)'
     url: null
     pages: 93-96
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
   databases:
   - id: nlab
     type: database
     name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
+    entry_url: https://ncatlab.org/nlab/show/group
     consulted_at: 2026-04-17
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+course: MIT 18.701 抽象代数
+chapter: '04'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 ## 1. 引言
 
 Cauchy 定理是有限群论中关于 $p$-阶元素存在性的基本结果，它是证明 Sylow 第一定理的关键工具。
@@ -189,3 +190,26 @@ $$|Z(G)| = |G| - \sum [G : C(g_i)] \equiv 0 \pmod p。$$
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011 (Chapters: ['Chapter 7: More Group Theory, Section 7.2']; Pages: 185-190; ISBN: 978-0132413770)
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016 (ISBN: 978-0980232776)
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003 (Chapters: ["Chapter 4: Group Actions, Section 4.1 (Cauchy's Theorem)"]; Pages: 93-96; ISBN: 978-0471433347; MR: MR2286236)
+
+### 数据库与网络资源
+
+- [nLab](https://ncatlab.org/nlab/show/{entry})
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+- [zbMATH Open](https://zbmath.org/?q=an:{zb_id})
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)
+- [Nlab Url](https://ncatlab.org/nlab/show/group)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Group_(mathematics))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BE%A4)

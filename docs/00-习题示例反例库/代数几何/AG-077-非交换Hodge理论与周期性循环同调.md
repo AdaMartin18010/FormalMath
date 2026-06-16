@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14A22
+  - 14A22'
 exercise_id: AG-077
 title: 非交换Hodge理论与周期性循环同调
 difficulty: 5
@@ -10,11 +10,14 @@ topic: 代数几何
 subtopic: 非交换几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
-
 # AG-077: 非交换Hodge理论与周期性循环同调
 
 **题号**: AG-077

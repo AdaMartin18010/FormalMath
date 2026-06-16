@@ -1,7 +1,7 @@
 ---
-msc_primary: 57
+msc_primary: '57
 
-  - 57R67
+  - 57R67'
 exercise_id: TOP-136
 title: Wall群与L-群计算
 difficulty: 5
@@ -10,11 +10,14 @@ topic: 拓扑
 subtopic: 代数surgery
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # TOP-136: Wall群与L-群计算
 
 **题号**: TOP-136

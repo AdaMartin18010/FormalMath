@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 04E4 上同调与交截理论
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  stacks_tag:
+    tag: 04E4
+    url: https://stacks.math.columbia.edu/tag/04E4
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/04E4
+    tags:
+    - 04E4
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 04E4 - 上同调与交截理论
 
 ## 1. 基本概念与定义

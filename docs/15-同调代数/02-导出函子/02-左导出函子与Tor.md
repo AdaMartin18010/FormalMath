@@ -1,12 +1,25 @@
 ---
-msc_primary: 18
+msc_primary: '18
 
-  - 18G10
-msc_secondary: ['13D07', '16E30', '18G15']
-keywords: ['Tor', '左导出函子', '张量积', '挠群', '平坦性', '同调维数']
+  - 18G10'
+msc_secondary:
+- 13D07
+- 16E30
+- 18G15
+keywords:
+- Tor
+- 左导出函子
+- 张量积
+- 挠群
+- 平坦性
+- 同调维数
 version: 1.0
+title: 02 左导出函子与Tor
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
 ---
-
 # 左导出函子与Tor
 
 **张量积的派生 — 从正合性到挠理论**

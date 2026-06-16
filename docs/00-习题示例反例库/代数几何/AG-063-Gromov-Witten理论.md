@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 代数几何-GW理论
 难度: ⭐⭐⭐⭐⭐
 预计时间: 55分钟
+title: Gromov Witten理论
 ---
-
 # Gromov-Witten 理论
 
 ## 题目

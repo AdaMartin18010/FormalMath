@@ -1,10 +1,23 @@
 ---
 msc_primary: 14Fxx
 msc_secondary:
-  - 18Gxx
-  - 01A70
+- 18Gxx
+- 01A70
+title: 02 Topos与逻辑
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
+  zbmath_url: https://zbmath.org/?q=au:Topos
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Topos
+    author: Topos
+    consulted_at: '2026-04-17'
 ---
-
 ﻿---
 title: "Topos 与逻辑：Mitchell-Bénabou 语言、Kripke-Joyal 语义与内逻辑"
 level: "gold"

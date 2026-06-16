@@ -1,11 +1,20 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16A99
-  - 13A99
-  - 14A99
+  - 16A99 - 13A99 - 14A99'
 title: Nakayama引理 - 五种表征
 processed_at: '2026-04-05'
+external_ids:
+  stacks_tag:
+    tag: 00DV
+    url: https://stacks.math.columbia.edu/tag/00DV
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00DV
+    consulted_at: '2026-04-17'
 ---
 # Nakayama引理 - 五种表征
 

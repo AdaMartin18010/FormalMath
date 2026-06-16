@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0E7P 导出几何应用
+external_ids:
+  stacks_tag:
+    tag: 0E7P
+    url: https://stacks.math.columbia.edu/tag/0E7P
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0E7P
+    tags:
+    - 0E7P
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0E7P - 导出几何应用
 
 ## 1. 基本信息

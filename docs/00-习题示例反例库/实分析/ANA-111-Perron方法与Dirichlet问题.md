@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 位势论-Perron方法
 难度: ⭐⭐⭐⭐
 预计时间: 35分钟
+title: Perron方法与Dirichlet问题
 ---
-
 # Perron方法与Dirichlet问题
 
 ## 题目

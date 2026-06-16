@@ -1,26 +1,36 @@
 ---
-title: "Jean-Pierre Serre在数学史中的位置：百科全书式的统一者"
+title: Jean-Pierre Serre在数学史中的位置：百科全书式的统一者
 level: gold
 course: Serre数学理念
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A70
+- 01A70
 references:
   textbooks:
-    - title: "Oeuvres - Collected Papers I, II, III, IV"
-      author: "J-P. Serre"
-      year: 1986-2000
-    - title: "A Course in Arithmetic"
-      author: "J-P. Serre"
-      year: 1973
+  - title: Oeuvres - Collected Papers I, II, III, IV
+    author: J-P. Serre
+    year: 1986-2000
+  - title: A Course in Arithmetic
+    author: J-P. Serre
+    year: 1973
   papers:
-    - title: "Interview with Jean-Pierre Serre"
-      author: "M. Raussen & C. Skau"
-      year: 2004
+  - title: Interview with Jean-Pierre Serre
+    author: M. Raussen & C. Skau
+    year: 2004
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Jean-Pierre%20Serre
+    author: Jean-Pierre Serre
+    consulted_at: '2026-04-17'
 status: completed
 created_at: 2026-04-18
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  zbmath_url: https://zbmath.org/?q=au:Jean-Pierre%20Serre
 ---
-
 # Jean-Pierre Serre在数学史中的位置：百科全书式的统一者
 
 ## 1. 引言

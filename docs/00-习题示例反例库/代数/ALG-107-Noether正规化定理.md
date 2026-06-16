@@ -5,8 +5,19 @@ msc_primary: 00A99
 知识点: 交换代数-Noether正规化
 难度: ⭐⭐⭐⭐
 预计时间: 30分钟
+title: ALG 107 Noether正规化定理
+external_ids:
+  stacks_tag:
+    tag: 00GV
+    url: https://stacks.math.columbia.edu/tag/00GV
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00GV
+    consulted_at: '2026-04-17'
 ---
-
 # Noether正规化定理
 
 ## 题目

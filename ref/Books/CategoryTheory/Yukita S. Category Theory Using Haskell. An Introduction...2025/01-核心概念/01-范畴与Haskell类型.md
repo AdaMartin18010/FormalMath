@@ -1,10 +1,14 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A15
-  - 01A99
+- 00A15
+- 01A99
 title: 范畴与Haskell类型
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
 ---
 # 范畴与Haskell类型
 

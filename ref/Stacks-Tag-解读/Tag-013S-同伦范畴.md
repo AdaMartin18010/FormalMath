@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 013S 同伦范畴
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
+  stacks_tag:
+    tag: 013S
+    url: https://stacks.math.columbia.edu/tag/013S
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/013S
+    tags:
+    - 013S
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 013S - 同伦范畴（Homotopy Category）
 
 > **来源**: [Stacks Project](https://stacks.math.columbia.edu/tag/013S)  

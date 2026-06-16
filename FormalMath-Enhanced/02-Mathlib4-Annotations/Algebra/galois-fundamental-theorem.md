@@ -1,9 +1,14 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 伽罗瓦理论基本定理 (Galois Correspondence)
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Galois+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Galois_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BC%BD%E7%BD%97%E7%93%A6%E7%90%86%E8%AE%BA
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
 ---
 # 伽罗瓦理论基本定理 (Galois Correspondence)
 

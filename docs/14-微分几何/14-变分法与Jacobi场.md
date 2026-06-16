@@ -2,36 +2,30 @@
 title: 变分法与Jacobi场
 description: 介绍测地线变分法、第一和第二变分公式、Jacobi场、共轭点与测地线的稳定性理论。
 msc_primary:
-  - 53C22
+- 53C22
 msc_secondary:
-  - 53B20
-  - 58E10
+- 53B20
+- 58E10
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: lee_riemannian
-      type: textbook
-      title: Riemannian Manifolds
-      authors:
-        - John M. Lee
-      publisher: Springer
-      year: 1997
-      msc: 53-01
-    - id: do_carmo_riemannian
-      type: textbook
-      title: Riemannian Geometry
-      authors:
-        - Manfredo P. do Carmo
-      publisher: Birkhäuser
-      year: 1992
-      msc: 53-01
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: lee_riemannian
+    type: textbook
+    title: Riemannian Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    year: 1997
+    msc: 53-01
+  - id: do_carmo_riemannian
+    type: textbook
+    title: Riemannian Geometry
+    authors:
+    - Manfredo P. do Carmo
+    publisher: Birkhäuser
+    year: 1992
+    msc: 53-01
 ---
-
 # 变分法与Jacobi场
 
 ## 引言

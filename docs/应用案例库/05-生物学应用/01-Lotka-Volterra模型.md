@@ -1,12 +1,13 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20A99
-  - 35A99
-  - 00A99
-  - 00A99
+  - 20A99 - 35A99 - 00A99 - 00A99'
 title: Lotka-Volterra捕食者-猎物模型
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
 # Lotka-Volterra捕食者-猎物模型
 

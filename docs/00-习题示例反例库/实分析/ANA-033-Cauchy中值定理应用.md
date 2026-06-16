@@ -1,7 +1,7 @@
 ---
-msc_primary: 26
+msc_primary: '26
 
-  - 26A06
+  - 26A06'
 exercise_id: ANA-033
 title: Cauchy中值定理应用
 difficulty: 3
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: 微分中值定理
 source:
   course: MIT 18.100A Real Analysis
-  chapter: "5.2"
+  chapter: '5.2'
   original: true
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
 ---
-
 # ANA-033: Cauchy中值定理应用
 
 **题号**: ANA-033

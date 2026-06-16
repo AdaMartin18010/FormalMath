@@ -1,66 +1,72 @@
 ---
 course: Harvard 232br 代数几何
-
-title: "Harvard 232br - Hartshorne Chapter V §1–§3 习题解答"
-course_code: "Harvard Math 232br"
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter V - Surfaces, Sections 1–3"
+title: Harvard 232br - Hartshorne Chapter V §1–§3 习题解答
+course_code: Harvard Math 232br
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter V - Surfaces, Sections 1–3
 source_exercise:
-  - "V.1.1"
-  - "V.1.2"
-  - "V.1.3"
-  - "V.1.4"
-  - "V.2.1"
-  - "V.2.2"
-  - "V.3.1"
-  - "V.3.2"
+- V.1.1
+- V.1.2
+- V.1.3
+- V.1.4
+- V.2.1
+- V.2.2
+- V.3.1
+- V.3.2
 difficulty: ⭐⭐⭐ to ⭐⭐⭐⭐
 processed_at: '2026-04-18'
-level: "silver"
+level: silver
 target_courses:
-  - "Harvard 232br"
+- Harvard 232br
 msc_primary: 14
-
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-        - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: ["V.1", "V.2", "V.3"]
-      url: ~
-    - id: beauville_surfaces
-      type: textbook
-      title: Complex Algebraic Surfaces
-      authors:
-        - Arnaud Beauville
-      publisher: Cambridge University Press
-      edition: 2nd
-      year: 1996
-      isbn: 978-0521498425
-      msc: @
-      chapters: ["II", "III"]
-      url: ~
-  databases:
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-18
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters:
+    - V.1
+    - V.2
+    - V.3
+    url: null
+    author: Robin Hartshorne
+    pages: 360-400
+    mr_number: MR0463157
+  - id: beauville_surfaces
+    type: textbook
+    title: Complex Algebraic Surfaces
+    authors:
+    - Arnaud Beauville
+    publisher: Cambridge University Press
+    edition: 2nd
+    year: 1996
+    isbn: 978-0521498425
+    msc: ''
+    chapters:
+    - II
+    - III
+    url: null
+    mr_number: MR1406314
+    author: Arnaud Beauville
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 created_at: 2026-04-18
+chapter: '1'
+external_ids:
+  ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
+  ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
+  harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
 ---
-
 # Harvard 232br — Hartshorne Chapter V §1–§3 习题解答
 
 > 本节覆盖 Hartshorne 第五章第 1–3 节的核心习题，涉及曲面上的相交理论、直纹面的结构与有理性判据。曲面上的相交理论是代数几何从曲线到高维的第一个实质性障碍；直纹面则是理解曲面分类的基石。除非特别说明，$X$ 表示代数闭域 $k$ 上的非奇异射影曲面。
@@ -1025,3 +1031,21 @@ theorem enriques_criterion_kodaira :
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['V.1', 'V.2', 'V.3']; Pages: 360-400; ISBN: 978-0387902449; MR: MR0463157)
+- Arnaud Beauville, *Complex Algebraic Surfaces*, 2nd ed., Cambridge University Press, 1996 (Chapters: ['II', 'III']; ISBN: 978-0521498425; MR: MR1406314)
+
+### 数据库与网络资源
+
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
+### 课程与外部链接
+
+- [Ocw Url](https://www.math.harvard.edu/course/mathematics-232br/)
+- [Ocw Ps Url](https://people.math.harvard.edu/~landesman/notes.html)
+- [Harvard Notes Url](https://people.math.harvard.edu/~landesman/notes.html)

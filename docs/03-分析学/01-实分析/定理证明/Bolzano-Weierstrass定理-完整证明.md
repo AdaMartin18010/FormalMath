@@ -4,42 +4,35 @@ msc_primary: 26A99
 course: MIT 18.100A Real Analysis
 difficulty: 核心定理
 importance: 极高
-prerequisites: [区间套定理, 单调收敛定理, 子列概念]
-related: [单调收敛定理, 紧致性, 序列紧致]
-tags: [实分析, 子列, 收敛性, 核心定理]
+prerequisites:
+- 区间套定理
+- 单调收敛定理
+- 子列概念
+related:
+- 单调收敛定理
+- 紧致性
+- 序列紧致
+tags:
+- 实分析
+- 子列
+- 收敛性
+- 核心定理
 date: 2026-04-10
 references:
   textbooks:
-    - id: rudin_pma
-      type: textbook
-      title: Principles of Mathematical Analysis
-      authors:
-      - Walter Rudin
-      publisher: McGraw-Hill
-      edition: 3rd
-      year: 1976
-      isbn: 978-0070542358
-      msc: 26-01
-      chapters: 
-      url: ~
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: rudin_pma
+    type: textbook
+    title: Principles of Mathematical Analysis
+    authors:
+    - Walter Rudin
+    publisher: McGraw-Hill
+    edition: 3rd
+    year: 1976
+    isbn: 978-0070542358
+    msc: 26-01
+    chapters: null
+    url: null
 ---
-
 # Bolzano-Weierstrass 定理
 
 ## 定理陈述

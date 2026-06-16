@@ -1,8 +1,11 @@
 ---
-title: "流行病学SIR模型族"
-msc_primary: "00"
+title: 流行病学SIR模型族
+msc_primary: '00'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
-
 # 流行病学SIR模型族
 
 > SIR模型是传染病动力学的经典数学框架，通过将人群划分为不同仓室来描述疾病传播动态，为公共卫生决策提供定量依据。

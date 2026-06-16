@@ -1,12 +1,13 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20A99
-  - 35A99
-  - 00A99
-  - 00A99
+  - 20A99 - 35A99 - 00A99 - 00A99'
 title: SIR传染病模型的传播动力学
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
 # SIR传染病模型的传播动力学
 

@@ -1,7 +1,7 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42B20
+  - 42B20'
 exercise_id: ANA-208
 title: Fourier积分算子的L2有界性
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: 现代调和分析
 source:
   course: 微局部分析
-  chapter: "6.2"
+  chapter: '6.2'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/integral
+  wikipedia_url: https://en.wikipedia.org/wiki/Integral
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
 ---
-
 # ANA-208: Fourier积分算子的L^2有界性
 
 **题号**: ANA-208

@@ -5,8 +5,12 @@ msc_primary: 00A99
 知识点: 几何-Einstein流形
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
+title: 齐性Einstein流形
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/manifold
+  wikipedia_url: https://en.wikipedia.org/wiki/Manifold
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
 ---
-
 # 齐性 Einstein 流形
 
 ## 题目

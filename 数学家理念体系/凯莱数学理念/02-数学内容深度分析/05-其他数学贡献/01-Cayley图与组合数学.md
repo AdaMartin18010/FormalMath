@@ -1,13 +1,26 @@
 ---
 title: Cayley图：群的几何表示与组合群论的开端
-msc_primary: 05
+msc_primary: 5
 msc_secondary:
-  - 05C25
-  - 00A99
-  - 20F65
-  - 20E08
-  - 68R10
+- 05C25
+- 00A99
+- 20F65
+- 20E08
+- 68R10
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  zbmath_url: https://zbmath.org/?q=au:Group
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Group
+    author: Group
+    consulted_at: '2026-04-17'
 ---
 # Cayley图：群的几何表示与组合群论的开端
 

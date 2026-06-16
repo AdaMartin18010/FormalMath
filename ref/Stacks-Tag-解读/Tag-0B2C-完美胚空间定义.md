@@ -1,9 +1,28 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0B2C 完美胚空间定义
+references:
+  papers:
+  - title: Perfectoid spaces
+    author: Peter Scholze
+    journal: Publications Mathématiques de l'IHÉS
+    year: 2012
+    doi: 10.1007/s10240-012-0042-x
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0B2C
+    tags:
+    - 0B2C
+    consulted_at: '2026-04-17'
+external_ids:
+  stacks_tag:
+    tag: 0B2C
+    url: https://stacks.math.columbia.edu/tag/0B2C
 ---
-
 # Stacks Project Tag 0B2C - 完美胚空间定义
 
 ## 1. 基本信息
@@ -350,3 +369,9 @@ $$\text{Prism} = \text{Algebraic perfectoid} + \text{Additional structure}$$
 ---
 
 *本文档由FormalMath项目生成，最后更新：2026-04-10*
+
+---
+
+## 经典论文与原始文献
+
+- Peter Scholze, *Perfectoid spaces*, Publications Mathématiques de l'IHÉS, 2012 (DOI: 10.1007/s10240-012-0042-x)

@@ -1,8 +1,11 @@
 ---
 title: 概率统计模拟实验与Python实现
 msc_primary: 60
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
-
 # 概率统计模拟实验与Python实现
 
 ## 实验1：大数定律的模拟验证

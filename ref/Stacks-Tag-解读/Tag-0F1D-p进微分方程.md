@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0F1D p进微分方程
+external_ids:
+  stacks_tag:
+    tag: 0F1D
+    url: https://stacks.math.columbia.edu/tag/0F1D
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0F1D
+    tags:
+    - 0F1D
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0F1D - p进微分方程
 
 ## 1. 基本概念与定义

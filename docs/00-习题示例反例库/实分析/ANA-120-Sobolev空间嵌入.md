@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 分布理论-Sobolev空间嵌入
 难度: ⭐⭐⭐⭐
 预计时间: 40分钟
+title: Sobolev空间嵌入
 ---
-
 # Sobolev空间嵌入定理
 
 ## 题目

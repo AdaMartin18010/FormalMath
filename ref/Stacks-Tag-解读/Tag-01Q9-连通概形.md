@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01Q9 连通概形
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/connected+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Connected_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%BF%9E%E9%80%9A
+  stacks_tag:
+    tag: 01Q9
+    url: https://stacks.math.columbia.edu/tag/01Q9
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01Q9
+    tags:
+    - 01Q9
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 01Q9 - 连通概形（Connected Schemes）
 
 > **来源**: [Stacks Project](https://stacks.math.columbia.edu/tag/01Q9)  

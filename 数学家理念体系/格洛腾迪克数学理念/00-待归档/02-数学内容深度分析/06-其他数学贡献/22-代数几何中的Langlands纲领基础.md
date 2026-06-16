@@ -1,13 +1,25 @@
 ---
 title: 代数几何中的Langlands纲领基础：格洛腾迪克的贡献
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/algebraic+geometry
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
+  zbmath_url: https://zbmath.org/?q=au:Algebraic%20geometry
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Algebraic%20geometry
+    author: Algebraic geometry
+    consulted_at: '2026-04-17'
 ---
-
 # 代数几何中的Langlands纲领基础：格洛腾迪克的贡献
 
 > **文档状态**: ✅ 内容填充完成

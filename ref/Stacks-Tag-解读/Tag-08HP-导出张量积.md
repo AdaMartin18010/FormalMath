@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 08HP 导出张量积
+external_ids:
+  stacks_tag:
+    tag: 08HP
+    url: https://stacks.math.columbia.edu/tag/08HP
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/08HP
+    tags:
+    - 08HP
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 08HP - 导出张量积（Derived tensor product）
 
 ## 1. Tag基本信息

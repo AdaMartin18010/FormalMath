@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 遍历理论-Birkhoff遍历定理
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
+title: 遍历理论 Birkhoff定理
 ---
-
 # Birkhoff遍历定理
 
 ## 题目

@@ -1,13 +1,26 @@
 ---
 title: 算术研究Disquisitiones Arithmeticae：高斯的数论奠基
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A50
-  - 01A55
-  - 01A70
+- 01A50
+- 01A55
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
+  zbmath_url: https://zbmath.org/?q=au:Number%20theory
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Number%20theory
+    author: Number theory
+    consulted_at: '2026-04-17'
 ---
-
 # 算术研究Disquisitiones Arithmeticae：高斯的数论奠基
 
 > **文档状态**: ✅ 完成

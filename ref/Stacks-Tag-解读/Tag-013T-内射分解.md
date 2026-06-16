@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 013T 内射分解
+external_ids:
+  stacks_tag:
+    tag: 013T
+    url: https://stacks.math.columbia.edu/tag/013T
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/013T
+    tags:
+    - 013T
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Tag 013T - 内射分解
 
 ## 1. Tag基本信息

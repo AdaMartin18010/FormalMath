@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0A99 模叠与模形式
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/modular+form
+  wikipedia_url: https://en.wikipedia.org/wiki/Modular_form
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1%E5%BD%A2%E5%BC%8F
+  stacks_tag:
+    tag: 0A99
+    url: https://stacks.math.columbia.edu/tag/0A99
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A99
+    tags:
+    - 0A99
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0A99 - 模叠与模形式
 
 ## 1. 基本信息

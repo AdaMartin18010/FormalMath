@@ -1,26 +1,39 @@
 ---
-title: "复几何与Stein流形：Serre从代数到分析的桥梁"
+title: 复几何与Stein流形：Serre从代数到分析的桥梁
 level: gold
 course: Serre数学理念
 msc_primary: 32
 msc_secondary:
-  - 32E10
+- 32E10
 references:
   textbooks:
-    - title: "Several Complex Variables with Connections to Algebraic Geometry and Lie Groups"
-      author: "J. Taylor"
-      year: 2002
-    - title: "From Holomorphic Functions to Complex Manifolds"
-      author: "K. Fritzsche & H. Grauert"
-      year: 2002
+  - title: Several Complex Variables with Connections to Algebraic Geometry and Lie
+      Groups
+    author: J. Taylor
+    year: 2002
+  - title: From Holomorphic Functions to Complex Manifolds
+    author: K. Fritzsche & H. Grauert
+    year: 2002
   papers:
-    - title: "Quelques problèmes de cohomologie en géométrie algébrique complexe"
-      author: "J-P. Serre"
-      year: 1954
+  - title: Quelques problèmes de cohomologie en géométrie algébrique complexe
+    author: J-P. Serre
+    year: 1954
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Manifold
+    author: Manifold
+    consulted_at: '2026-04-17'
 status: completed
 created_at: 2026-04-18
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/manifold
+  wikipedia_url: https://en.wikipedia.org/wiki/Manifold
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  zbmath_url: https://zbmath.org/?q=au:Manifold
 ---
-
 # 复几何与Stein流形：Serre从代数到分析的桥梁
 
 ## 1. 引言：代数与分析的交汇

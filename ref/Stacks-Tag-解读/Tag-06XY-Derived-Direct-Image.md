@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 06XY Derived Direct Image
 ---
-
 # Stacks Project Tag 06XY - 导出范畴中的Rf_*（直接像函子）
 
 ## 1. Tag基本信息

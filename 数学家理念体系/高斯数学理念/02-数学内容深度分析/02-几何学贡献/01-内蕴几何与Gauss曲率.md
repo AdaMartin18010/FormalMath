@@ -1,13 +1,25 @@
 ---
 title: 内蕴几何与Gauss曲率：几何学的革命
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A50
-  - 01A55
-  - 01A70
+- 01A50
+- 01A55
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/curvature
+  wikipedia_url: https://en.wikipedia.org/wiki/Curvature
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9B%B2%E7%8E%87
+  zbmath_url: https://zbmath.org/?q=au:Curvature
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Curvature
+    author: Curvature
+    consulted_at: '2026-04-17'
 ---
-
 # 内蕴几何与Gauss曲率：几何学的革命
 
 ## 📋 目录

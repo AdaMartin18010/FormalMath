@@ -1,9 +1,24 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 诺特正规化引理 (Noether Normalization Lemma)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Emmy_Noether
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
+  stacks_tag:
+    tag: 00OW
+    url: https://stacks.math.columbia.edu/tag/00OW
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00OW
+    tags:
+    - 00OW
+    consulted_at: '2026-04-17'
 ---
 # 诺特正规化引理 (Noether Normalization Lemma)
 

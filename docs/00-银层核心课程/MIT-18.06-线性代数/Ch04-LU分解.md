@@ -1,35 +1,51 @@
 ---
-title: "Ch.4 LU 分解（LU Decomposition）"
-level: "silver"
+title: Ch.4 LU 分解（LU Decomposition）
+level: silver
 course: MIT 18.06 线性代数
-chapter: "4"
+chapter: '4'
 msc_primary: 15
 target_courses:
-  - "MIT 18.06 Ch.4"
+- MIT 18.06 Ch.4
 references:
   textbooks:
-    - title: "Introduction to Linear Algebra"
-      author: "Gilbert Strang"
-      edition: "5th"
-      chapters: "Chapter 2"
-      pages: "72-90"
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 5th
+    chapters: Chapter 4, Sections 2.6
+    pages: 72-90
+    isbn: '9780980232776'
+    publisher: Wellesley-Cambridge Press
+    year: 2016
   lectures:
-    - institution: "MIT"
-      course_code: "18.06"
-      lecture: "L4"
-      url: "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/"
+  - institution: MIT
+    course_code: '18.06'
+    lecture: L4
+    title: Factorization into A = LU
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-4-factorization-into-a-lu/
+  exams:
+  - name: Exam 1
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam1_s10.pdf
+    solution_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam1_s10_sol.pdf
 keywords:
-  - "LU decomposition"
-  - "lower triangular matrix"
-  - "upper triangular matrix"
-  - "permutation matrix"
-  - "Gaussian elimination"
-status: "draft"
+- LU decomposition
+- lower triangular matrix
+- upper triangular matrix
+- permutation matrix
+- Gaussian elimination
+status: draft
 review_rounds: 0
-created_at: "2026-04-18"
+created_at: '2026-04-18'
 review_status: mathematical_reviewed
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  ocw_lectures:
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-4-factorization-into-a-lu/
+  ocw_problem_sets:
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset4.pdf
+prerequisites:
+- docs/00-银层核心课程/MIT-18.06-线性代数/Ch03-*.md
 ---
-
 # Ch.4 LU 分解（LU Decomposition）
 
 > **课程**: MIT 18.06 Linear Algebra | **章节**: Chapter 4
@@ -622,8 +638,23 @@ theorem pa_lu_for_invertible {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ)
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016 (Chapters: Chapter 4, Sections 2.6; Pages: 72-90; ISBN: 9780980232776)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/)
+- [Ocw Lectures](['https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-4-factorization-into-a-lu/'])
+- [Ocw Problem Sets](['https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset4.pdf'])

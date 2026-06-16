@@ -3,10 +3,17 @@ exercise_id: ANA-079
 title: 凸分析基础与不等式应用
 msc_primary: 00A99
 difficulty: ⭐⭐⭐
-topics: [凸函数, Jensen不等式, 次梯度, Legendre变换]
+topics:
+- 凸函数
+- Jensen不等式
+- 次梯度
+- Legendre变换
 created: 2026-04-10
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 ## 题目
 
 设 $\varphi: \mathbb{R} \to \mathbb{R}$ 是凸函数，$(X, \mathcal{M}, \mu)$ 是概率测度空间（$\mu(X) = 1$）。

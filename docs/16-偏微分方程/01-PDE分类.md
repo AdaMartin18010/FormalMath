@@ -2,37 +2,31 @@
 title: PDE分类
 description: 系统介绍偏微分方程的分类体系，包括椭圆型、抛物型、双曲型方程的定义、典型例子及其数学特征。
 msc_primary:
-  - 35A01
+- 35A01
 msc_secondary:
-  - 35Jxx
-  - 35Kxx
-  - 35Lxx
+- 35Jxx
+- 35Kxx
+- 35Lxx
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: evans_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Lawrence C. Evans
-      publisher: American Mathematical Society
-      year: 2010
-      msc: 35-01
-    - id: john_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Fritz John
-      publisher: Springer
-      year: 1982
-      msc: 35-01
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: evans_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Lawrence C. Evans
+    publisher: American Mathematical Society
+    year: 2010
+    msc: 35-01
+  - id: john_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Fritz John
+    publisher: Springer
+    year: 1982
+    msc: 35-01
 ---
-
 # PDE分类
 
 ## 引言

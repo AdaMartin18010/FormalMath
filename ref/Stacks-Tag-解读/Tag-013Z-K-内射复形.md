@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 013Z K 内射复形
+external_ids:
+  stacks_tag:
+    tag: 013Z
+    url: https://stacks.math.columbia.edu/tag/013Z
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/013Z
+    tags:
+    - 013Z
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 013Z - K-内射复形（K-injective complexes）
 
 ## 1. Tag基本信息

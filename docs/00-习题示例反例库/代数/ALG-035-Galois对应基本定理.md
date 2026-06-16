@@ -1,15 +1,24 @@
 ---
-number: "ALG-035"
+number: ALG-035
 category: 代数
 topic: 域扩张与Galois理论
 difficulty: ⭐⭐⭐
 title: Galois对应（伽罗瓦对应）基本定理
 msc_primary: 00A99
-keywords: [Galois对应, 子群, 中间域, 固定域, 基本定理]
-prerequisites: [ALG-034, ALG-033]
+keywords:
+- Galois对应
+- 子群
+- 中间域
+- 固定域
+- 基本定理
+prerequisites:
+- ALG-034
+- ALG-033
 source: 经典代数习题
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Evariste_Galois
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
 ---
-
 ## 题目
 
 设 $K/F$ 是有限Galois扩张，$G = \text{Gal}(K/F)$。

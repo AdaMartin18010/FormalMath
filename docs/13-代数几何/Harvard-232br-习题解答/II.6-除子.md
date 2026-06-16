@@ -46,26 +46,9 @@ references:
     year: 2024
     isbn: null
     msc: 14-01
-    chapters: 
+    chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
-  databases:
-  - id: nlab
-    type: database
-    name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
-    consulted_at: 2026-04-17
 ---
-
 # Harvard 232br - Hartshorne Chapter II §6 习题解答
 
 > 本节覆盖 Weil 除子、Cartier 除子、Picard 群、类群，以及 Grothendieck 群 $K(X)$ 的计算与性质。

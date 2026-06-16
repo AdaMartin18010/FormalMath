@@ -1,11 +1,13 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16A99
-  - 13A99
-  - 00A99
+  - 16A99 - 13A99 - 00A99'
 title: Krull主理想定理 - 五种表征
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ideal
+  wikipedia_url: https://en.wikipedia.org/wiki/Ideal_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%90%86%E6%83%B3
 ---
 # Krull主理想定理 - 五种表征
 

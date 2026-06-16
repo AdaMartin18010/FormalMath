@@ -2,36 +2,39 @@
 title: Ext与模扩张
 description: 详细介绍Ext^1(A,B)与模的短正合列扩张之间的Baer和理论，以及Yoneda Ext的构造。
 msc_primary:
-  - 18G15
+- 18G15
 msc_secondary:
-  - 16E30
-  - 13D07
+- 16E30
+- 13D07
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: weibel_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Charles A. Weibel
-      publisher: Cambridge University Press
-      year: 1994
-      msc: 18-01
-    - id: rotman_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Joseph J. Rotman
-      publisher: Springer
-      year: 2009
-      msc: 18-01
+  - id: weibel_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Charles A. Weibel
+    publisher: Cambridge University Press
+    year: 1994
+    msc: 18-01
+  - id: rotman_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Joseph J. Rotman
+    publisher: Springer
+    year: 2009
+    msc: 18-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/module
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
-
 # Ext与模扩张
 
 ## 引言

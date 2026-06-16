@@ -1,12 +1,24 @@
 ---
-msc_primary: 55
+msc_primary: '55
 
-  - 55T10
-msc_secondary: ['55R20', '18G40']
-keywords: ['Leray-Serre', '纤维丛', '纤维化', '纤维同调', '基空间']
+  - 55T10'
+msc_secondary:
+- 55R20
+- 18G40
+keywords:
+- Leray-Serre
+- 纤维丛
+- 纤维化
+- 纤维同调
+- 基空间
 version: 1.0
+title: 02 Leray Serre谱序列
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
 ---
-
 # Leray-Serre谱序列
 
 **纤维丛的同调计算 — 从整体到局部的分解**

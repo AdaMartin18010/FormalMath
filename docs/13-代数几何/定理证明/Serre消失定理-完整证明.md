@@ -1,59 +1,60 @@
 ---
-title: "Serre消失定理 - 完整证明"
+title: Serre消失定理 - 完整证明
 msc_primary: 14A99
-description: "关于射影概形上凝聚层扭变后高阶上同调消失的完整证明"
-course: "Harvard Math 232br"
-topic: "代数几何"
-subtopic: "层上同调"
-difficulty: "L4-高级"
-prerequisites: ["层上同调基础", "射影概形", "凝聚层", "Čech上同调"]
-theorem_id: "AG-SERRE-VANISHING-001"
-source: "Hartshorne III.5.2"
-date_created: "2026-04-10"
+description: 关于射影概形上凝聚层扭变后高阶上同调消失的完整证明
+course: Harvard Math 232br
+topic: 代数几何
+subtopic: 层上同调
+difficulty: L4-高级
+prerequisites:
+- 层上同调基础
+- 射影概形
+- 凝聚层
+- Čech上同调
+theorem_id: AG-SERRE-VANISHING-001
+source: Hartshorne III.5.2
+date_created: '2026-04-10'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0B5R
+    consulted_at: 2026-04-17
+    tags:
+    - 0B5R
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  stacks_tag:
+    tag: 0B5R
+    url: https://stacks.math.columbia.edu/tag/0B5R
 ---
-
 # Serre消失定理 (Serre Vanishing Theorem)
 
 ## 定理陈述

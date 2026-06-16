@@ -2,36 +2,40 @@
 title: 完备Riemann流形
 description: 详细介绍Hopf-Rinow定理的完整证明，建立完备性、测地完备性和紧致性之间的等价关系。
 msc_primary:
-  - 53C20
+- 53C20
 msc_secondary:
-  - 53C22
-  - 53B20
+- 53C22
+- 53B20
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: lee_riemannian
-      type: textbook
-      title: Riemannian Manifolds
-      authors:
-        - John M. Lee
-      publisher: Springer
-      year: 1997
-      msc: 53-01
-    - id: do_carmo_riemannian
-      type: textbook
-      title: Riemannian Geometry
-      authors:
-        - Manfredo P. do Carmo
-      publisher: Birkhäuser
-      year: 1992
-      msc: 53-01
+  - id: lee_riemannian
+    type: textbook
+    title: Riemannian Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    year: 1997
+    msc: 53-01
+  - id: do_carmo_riemannian
+    type: textbook
+    title: Riemannian Geometry
+    authors:
+    - Manfredo P. do Carmo
+    publisher: Birkhäuser
+    year: 1992
+    msc: 53-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/manifold
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/manifold
+  wikipedia_url: https://en.wikipedia.org/wiki/Manifold
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
 ---
-
 # 完备Riemann流形
 
 ## 引言

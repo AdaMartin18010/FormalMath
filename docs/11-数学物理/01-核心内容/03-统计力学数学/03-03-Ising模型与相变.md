@@ -1,12 +1,13 @@
 ---
-msc_primary: 82
+msc_primary: '82
 
-  - 82B20
-  - 82B26
-  - 82B27
-  - 60K35
+  - 82B20 - 82B26 - 82B27 - 60K35'
 title: Ising模型与相变
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
 # Ising模型与相变
 

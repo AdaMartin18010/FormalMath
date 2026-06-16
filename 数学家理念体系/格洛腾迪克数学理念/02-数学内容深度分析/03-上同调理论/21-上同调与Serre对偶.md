@@ -1,41 +1,59 @@
 ---
-title: "上同调与 Serre 对偶：从射影簇到相对对偶"
-level: "gold"
+title: 上同调与 Serre 对偶：从射影簇到相对对偶
+level: gold
 msc_primary: 14
 msc_secondary:
-  - 14F17
-msc_secondary: ["14F05", "14F20", "32C35"]
-author: "FormalMath Gold Layer Team"
-date: "2026-04-18"
+- 14F05
+- 14F20
+- 32C35
+author: FormalMath Gold Layer Team
+date: '2026-04-18'
 references:
   textbooks:
-    - title: "Faisceaux algébriques cohérents"
-      author: "J.-P. Serre"
-      journal: "Ann. of Math. (2)"
-      year: 1955
-      pages: "197–278"
-      doi: "10.2307/1969915"
-    - title: "Algebraic Geometry"
-      author: "R. Hartshorne"
-      edition: "Graduate Texts in Mathematics 52"
-      chapters: "Ch. III.7"
-      pages: "239–252"
-    - title: "Éléments de Géométrie Algébrique III"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 11"
-      chapters: "Chap. III, §6"
-      pages: "102–130"
+  - title: Faisceaux algébriques cohérents
+    author: J.-P. Serre
+    journal: Ann. of Math. (2)
+    year: 1955
+    pages: 197–278
+    doi: 10.2307/1969915
+  - title: Algebraic Geometry
+    author: R. Hartshorne
+    edition: Graduate Texts in Mathematics 52
+    chapters: Ch. III.7
+    pages: 239–252
+  - title: Éléments de Géométrie Algébrique III
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 11
+    chapters: Chap. III, §6
+    pages: 102–130
   papers:
-    - title: "Un théorème de dualité"
-      author: "J.-P. Serre"
-      journal: "Comment. Math. Helv."
-      year: 1955
-      volume: "29"
-      pages: "9–26"
-      doi: "10.1007/BF02564268"
-review_status: "published"
+  - title: Un théorème de dualité
+    author: J.-P. Serre
+    journal: Comment. Math. Helv.
+    year: 1955
+    volume: '29'
+    pages: 9–26
+    doi: 10.1007/BF02564268
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Cohomology
+    author: Cohomology
+    consulted_at: '2026-04-17'
+review_status: published
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  zbmath_url: https://zbmath.org/?q=au:Cohomology
 ---
-
 # 上同调与 Serre 对偶：从射影簇到相对对偶
 
 > **目标读者**：已掌握层上同调基础与概形理论的研究生。本文系统阐述 Serre 对偶的历史起源、技术陈述、Grothendieck 的相对化推广，以及其在现代代数几何中的核心地位。
@@ -278,3 +296,9 @@ variable (C : Type*) [Category C]
 -- 导出范畴的入口
 #check DerivedCategory (ModuleCat R)
 `
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)

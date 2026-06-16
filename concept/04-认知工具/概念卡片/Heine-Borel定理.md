@@ -1,10 +1,10 @@
 ---
-msc_primary: "54D30"
+msc_primary: 54D30
 msc_secondary:
-  - 26A42
-  - 46B50
+- 26A42
+- 46B50
+title: Heine Borel定理
 ---
-
 # 概念卡片：Heine-Borel定理
 
 ## 严格定义

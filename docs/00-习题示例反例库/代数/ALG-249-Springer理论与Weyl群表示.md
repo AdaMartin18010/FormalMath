@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14M15
+  - 14M15'
 exercise_id: ALG-249
 title: Springer理论与Weyl群表示
 difficulty: 5
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 几何表示论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # ALG-249: Springer理论与Weyl群表示
 
 **题号**: ALG-249

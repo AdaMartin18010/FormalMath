@@ -5,8 +5,11 @@ msc_primary: 00A99
 知识点: 代数数论-Galois表示
 难度: ⭐⭐⭐⭐⭐
 预计时间: 55分钟
+title: ALG 221 Galois表示
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Evariste_Galois
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
 ---
-
 # Galois 表示
 
 ## 题目

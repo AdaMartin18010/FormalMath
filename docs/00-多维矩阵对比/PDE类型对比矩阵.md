@@ -1,13 +1,16 @@
 ---
 msc_primary: 35-XX
 msc_secondary:
-  - 35Jxx
-  - 35Kxx
-  - 35Lxx
+- 35Jxx
+- 35Kxx
+- 35Lxx
 processed_at: '2026-04-20'
 title: PDE类型对比矩阵
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/matrix
+  wikipedia_url: https://en.wikipedia.org/wiki/Matrix_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
 ---
-
 # 偏微分方程类型对比矩阵
 
 > 系统对比椭圆型、抛物型、双曲型与混合型 PDE 的理论特征、解法与典型例子。

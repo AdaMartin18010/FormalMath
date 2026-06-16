@@ -1,10 +1,24 @@
 ---
-title: "Langlands纲领：数论与表示论的大统一"
+title: Langlands纲领：数论与表示论的大统一
 msc_primary: 11
 msc_secondary:
-  - 11R39
-msc_secondary: ["22E55", "14D24", "11F70"]
+- 22E55
+- 14D24
+- 11F70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
+  zbmath_url: https://zbmath.org/?q=au:Number%20theory
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Number%20theory
+    author: Number theory
+    consulted_at: '2026-04-17'
 ---
 # Langlands纲领：数论与表示论的大统一
 

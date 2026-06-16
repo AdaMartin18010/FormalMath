@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 指标定理-Dirac算子
 难度: ⭐⭐⭐⭐⭐
 预计时间: 55分钟
+title: Dirac算子
 ---
-
 # Dirac算子与指标
 
 ## 题目

@@ -1,9 +1,7 @@
 ---
-msc_primary: 26
+msc_primary: '26
 
-  - 26A03
-  - 26E35
-  - 97I30
+  - 26A03 - 26E35 - 97I30'
 level: silver
 domain: 分析学
 concept: 极限的ε-δ定义
@@ -20,14 +18,18 @@ tags:
 - 极限
 - epsilon-delta
 - 形式化定义
-- "mathematical_reviewed"
+- mathematical_reviewed
 title: 'L1: 极限的ε-δ定义 (ε-δ Definition of Limit)'
 processed_at: '2026-04-05'
 course: MIT 18.100A Real Analysis
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/limit
+  wikipedia_url: https://en.wikipedia.org/wiki/Limit_(category_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90
 ---
 msc_primary: "26A03"
 msc_secondary: ["26E35", "97I30"]

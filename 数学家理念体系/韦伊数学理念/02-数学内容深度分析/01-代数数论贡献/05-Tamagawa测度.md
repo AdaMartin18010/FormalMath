@@ -1,13 +1,25 @@
 ---
 title: Tamagawa测度理论
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/measure
+  wikipedia_url: https://en.wikipedia.org/wiki/Measure_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%8B%E5%BA%A6
+  zbmath_url: https://zbmath.org/?q=au:Measure
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Measure
+    author: Measure
+    consulted_at: '2026-04-17'
 ---
-
 # Tamagawa测度理论
 
 > **文档状态**: ✅ 内容填充中

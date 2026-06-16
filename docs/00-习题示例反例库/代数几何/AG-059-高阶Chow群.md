@@ -5,8 +5,12 @@ msc_primary: 00A99
 知识点: 代数几何-高阶Chow群
 难度: ⭐⭐⭐⭐⭐
 预计时间: 55分钟
+title: 高阶Chow群
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # 高阶 Chow 群
 
 ## 题目

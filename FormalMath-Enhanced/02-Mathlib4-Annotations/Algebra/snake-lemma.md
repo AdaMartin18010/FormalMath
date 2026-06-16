@@ -1,9 +1,22 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 蛇引理 (Snake Lemma)
+external_ids:
+  stacks_tag:
+    tag: 010J
+    url: https://stacks.math.columbia.edu/tag/010J
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/010J
+    tags:
+    - 010J
+    consulted_at: '2026-04-17'
 ---
 # 蛇引理 (Snake Lemma)
 

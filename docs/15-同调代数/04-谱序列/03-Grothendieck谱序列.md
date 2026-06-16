@@ -1,12 +1,23 @@
 ---
-msc_primary: 18
+msc_primary: '18
 
-  - 18G40
-msc_secondary: ['14F99', '18G10']
-keywords: ['Grothendieck谱序列', '复合函子', '导出函子', '层上同调']
+  - 18G40'
+msc_secondary:
+- 14F99
+- 18G10
+keywords:
+- Grothendieck谱序列
+- 复合函子
+- 导出函子
+- 层上同调
 version: 1.0
+title: 03 Grothendieck谱序列
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
 ---
-
 # Grothendieck谱序列
 
 **复合函子的导出 — 从函子组合到谱序列的桥梁**

@@ -1,15 +1,18 @@
 ---
-title: "拉格朗日定理 自然语言与 Lean4 对照"
+title: 拉格朗日定理 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.701"
+- MIT 18.701
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Lagrange+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5
 ---
-
 ## 定理陈述
 
 **自然语言**：设 \(G\) 是有限群，\(H\) 是 \(G\) 的子群，则 \(|H|\) 整除 \(|G|\)，且 \(|G| = [G:H] \cdot |H|\)。其中 \([G:H]\) 是子群 \(H\) 在 \(G\) 中的指数，等于不同左陪集的个数。
@@ -96,3 +99,12 @@ theorem leftCoset_card_eq_subgroup_card {G : Type u} [Group G] [Fintype G]
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/Lagrange+theorem)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5)

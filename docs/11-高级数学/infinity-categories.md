@@ -1,12 +1,13 @@
 ---
 title: 无穷范畴深度版 / Infinity-Categories - In Depth
-msc_primary: 18
+msc_primary: '18
 
-  - 18N60
-  - 00A99
-  - 18G55
-  - 00A99
+  - 18N60 - 00A99 - 18G55 - 00A99'
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
 ---
 # 无穷范畴深度版 / Infinity-Categories - In Depth
 

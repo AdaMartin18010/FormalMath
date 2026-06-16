@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01QC 不可约概形
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
+  stacks_tag:
+    tag: 01QC
+    url: https://stacks.math.columbia.edu/tag/01QC
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01QC
+    tags:
+    - 01QC
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 01QC - 不可约概形（Irreducible Schemes）
 
 > **来源**: [Stacks Project](https://stacks.math.columbia.edu/tag/01QC)  

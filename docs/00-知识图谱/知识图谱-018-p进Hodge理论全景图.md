@@ -1,15 +1,24 @@
 ---
-title: "p进Hodge理论全景图"
+title: p进Hodge理论全景图
 msc_primary: 00A99
-description: "展示p进比较定理、周期环、各类上同调理论之间的关系，呈现p进Hodge理论的完整架构"
-category: "p-adic-geometry"
-tags: ["p进Hodge理论", "p进比较定理", "周期环", "etale上同调", "晶体上同调", "de Rham上同调"]
-level: "advanced"
-author: "FormalMath Project"
-date: "2026-04-10"
-version: "1.0"
+description: 展示p进比较定理、周期环、各类上同调理论之间的关系，呈现p进Hodge理论的完整架构
+category: p-adic-geometry
+tags:
+- p进Hodge理论
+- p进比较定理
+- 周期环
+- etale上同调
+- 晶体上同调
+- de Rham上同调
+level: advanced
+author: FormalMath Project
+date: '2026-04-10'
+version: '1.0'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectrum
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectrum_(topology)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1
 ---
-
 # p进Hodge理论全景图
 
 ## 图谱概述

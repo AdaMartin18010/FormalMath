@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 拉格朗日定理 (Lagrange's Theorem)
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Lagrange+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5
 ---
 # 拉格朗日定理 (Lagrange's Theorem)
 

@@ -1,12 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A05
-  - 00A99
-  - 00A99
-  - 16A99
+  - 00A05 - 00A99 - 00A99 - 16A99'
 title: 谱序列与 Leray 谱序列：P^1 最小可运行示例
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
 ---
 # 谱序列与 Leray 谱序列：P^1 最小可运行示例
 

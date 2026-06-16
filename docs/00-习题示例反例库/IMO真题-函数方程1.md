@@ -1,23 +1,26 @@
 ---
-title: "IMO真题-函数方程：实数域上的函数"
+title: IMO真题-函数方程：实数域上的函数
 msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L4
 topic: 函数方程
-source: "IMO 2008 Problem 4"
+source: IMO 2008 Problem 4
 target_courses:
-  - MIT 18.100A
+- MIT 18.100A
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # IMO 2008 Problem 4：函数方程
 
 ## 题目

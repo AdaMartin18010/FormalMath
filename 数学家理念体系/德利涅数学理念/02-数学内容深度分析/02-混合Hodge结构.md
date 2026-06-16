@@ -1,10 +1,24 @@
 ---
-title: "Deligne的混合Hodge理论：复代数簇的上同调"
+title: Deligne的混合Hodge理论：复代数簇的上同调
 msc_primary: 14
 msc_secondary:
-  - 14C30
-msc_secondary: ["32S35", "14D07", "32G20"]
+- 32S35
+- 14D07
+- 32G20
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  zbmath_url: https://zbmath.org/?q=au:Cohomology
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Cohomology
+    author: Cohomology
+    consulted_at: '2026-04-17'
 ---
 # Deligne的混合Hodge理论：复代数簇的上同调
 

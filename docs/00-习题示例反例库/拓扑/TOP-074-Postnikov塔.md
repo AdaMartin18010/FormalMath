@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 同伦论-Postnikov塔
 难度: ⭐⭐⭐⭐⭐
 预计时间: 50分钟
+title: Postnikov塔
 ---
-
 # Postnikov塔
 
 ## 题目

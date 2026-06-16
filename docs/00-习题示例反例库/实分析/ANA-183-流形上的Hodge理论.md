@@ -6,8 +6,12 @@ msc_primary: 58
 难度: ⭐⭐⭐⭐⭐
 预计时间: 90分钟
 processed_at: '2026-04-20'
+title: 流形上的Hodge理论
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/manifold
+  wikipedia_url: https://en.wikipedia.org/wiki/Manifold
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
 ---
-
 # 流形上的 Hodge 理论
 
 ## 题目

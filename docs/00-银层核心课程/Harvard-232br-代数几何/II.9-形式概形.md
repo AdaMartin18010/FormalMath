@@ -1,31 +1,50 @@
 ---
 course: Harvard 232br 代数几何
 level: silver
-
 title: Harvard 232br - Hartshorne Chapter II §9 习题解答
 msc_primary: 00A99
 course_code: Harvard Math 232br
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter II - Schemes, Section 9 - Formal Schemes"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter II - Schemes, Section 9 - Formal Schemes
 source_exercise:
-  - "II.9.1"
-  - "II.9.2"
-  - "II.9.3"
-  - "II.9.4"
+- II.9.1
+- II.9.2
+- II.9.3
+- II.9.4
 difficulty: ⭐⭐⭐⭐ to ⭐⭐⭐⭐⭐
 processed_at: '2026-04-17'
-target_courses: [FormalMath银层核心课程, 代数几何]
+target_courses:
+- FormalMath银层核心课程
+- 代数几何
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+chapter: '9'
+external_ids:
+  ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
+  ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
+  harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
+references:
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    chapters: II.9
+    pages: 190-198
+    mr_number: MR0463157
 ---
-
 # Harvard 232br - Hartshorne Chapter II §9 习题解答
 
 > 本节覆盖形式概形的基本构造：完备化的局部环化空间结构、仿射完备化、完备化函子的正合性，以及射影概形上整体截面的完备化不变性。
@@ -284,21 +303,25 @@ theorem formalFunctionsTheorem {X : Scheme} {k : Type*} [Field k]
 - [II.3-态射性质](II.3-态射性质.md)
 - [II.4-分离性与本征性](II.4-分离性与本征性.md)
 - [II.5-模与层-续](II.5-模与层-续.md)
+
 ---
 **参考文献**
 
 1. 相关教材与学术论文。
+
 ## 参考文献
 
 1. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
 2. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
 3. Liu, Q. (2002). *Algebraic Geometry and Arithmetic Curves*. Oxford University Press. ISBN: 978-0198502845.
+
 ## 审阅记录
 
 **审阅日期**: 2026-04-20
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰

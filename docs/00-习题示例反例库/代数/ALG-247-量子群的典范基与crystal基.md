@@ -1,7 +1,7 @@
 ---
-msc_primary: 17
+msc_primary: '17
 
-  - 17B37
+  - 17B37'
 exercise_id: ALG-247
 title: 量子群的典范基与crystal基
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 量子群
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # ALG-247: 量子群的典范基与crystal基
 
 **题号**: ALG-247

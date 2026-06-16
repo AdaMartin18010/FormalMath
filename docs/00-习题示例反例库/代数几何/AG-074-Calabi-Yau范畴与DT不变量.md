@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14N35
+  - 14N35'
 exercise_id: AG-074
 title: Calabi-Yau范畴与DT不变量
 difficulty: 5
@@ -10,11 +10,14 @@ topic: 代数几何
 subtopic: 计数几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
 ---
-
 # AG-074: Calabi-Yau范畴与DT不变量
 
 **题号**: AG-074

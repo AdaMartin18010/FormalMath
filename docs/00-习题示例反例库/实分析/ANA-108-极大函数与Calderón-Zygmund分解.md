@@ -5,8 +5,12 @@ msc_primary: 00A99
 知识点: 调和分析-极大函数
 难度: ⭐⭐⭐⭐⭐
 预计时间: 40分钟
+title: 极大函数与Calderón Zygmund分解
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # 极大函数与Calderón-Zygmund分解
 
 ## 题目

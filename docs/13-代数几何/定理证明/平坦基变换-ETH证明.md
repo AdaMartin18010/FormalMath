@@ -1,60 +1,63 @@
 ---
-title: "平坦基变换定理 - ETH证明"
+title: 平坦基变换定理 - ETH证明
 msc_primary: 14A99
-description: "平坦基变换定理的完整证明，强调与交换代数的深度融合，基于ETH Zurich 401-3532课程讲义"
-course: "ETH Zurich 401-3532-00L"
-topic: "代数几何"
-subtopic: "上同调与基变换"
-difficulty: "L4-高级"
-prerequisites: ["层上同调基础", "平坦性理论", "Tor函子", "谱序列基础"]
-theorem_id: "ETH-AG-FLATBC-001"
-source: "Hartshorne III.9-12, ETH 401-3532 Kapitel 3"
-date_created: "2026-04-10"
-eth_feature: "交换代数深度融合与平坦性条件分析"
+description: 平坦基变换定理的完整证明，强调与交换代数的深度融合，基于ETH Zurich 401-3532课程讲义
+course: ETH Zurich 401-3532-00L
+topic: 代数几何
+subtopic: 上同调与基变换
+difficulty: L4-高级
+prerequisites:
+- 层上同调基础
+- 平坦性理论
+- Tor函子
+- 谱序列基础
+theorem_id: ETH-AG-FLATBC-001
+source: Hartshorne III.9-12, ETH 401-3532 Kapitel 3
+date_created: '2026-04-10'
+eth_feature: 交换代数深度融合与平坦性条件分析
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/02N6
+    consulted_at: 2026-04-17
+    tags:
+    - 02N6
+    - 0B8U
+    - 0B91
+    - 0BD4
+external_ids:
+  stacks_tag:
+    tag: 02N6
+    url: https://stacks.math.columbia.edu/tag/02N6
+  stacks_tags: []
 ---
-
 # 平坦基变换定理 (Flat Base Change)
 
 **ETH Zurich 401-3532-00L | Kapitel 3: Flache Basiswechsel**

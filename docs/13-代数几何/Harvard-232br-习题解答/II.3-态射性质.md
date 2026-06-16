@@ -2,62 +2,55 @@
 title: Harvard 232br - Hartshorne Chapter II §3 习题解答
 msc_primary: 14A99
 course_code: Harvard Math 232br
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter II - Schemes, Section 3 - First Properties of Schemes"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter II - Schemes, Section 3 - First Properties of Schemes
 source_exercise:
-  - "II.3.1"
-  - "II.3.2"
-  - "II.3.3"
-  - "II.3.4"
-  - "II.3.5"
-  - "II.3.6"
+- II.3.1
+- II.3.2
+- II.3.3
+- II.3.4
+- II.3.5
+- II.3.6
 difficulty: ⭐⭐ to ⭐⭐⭐
 processed_at: '2026-04-17'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-      - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-      - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: null
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/morphism
+    consulted_at: 2026-04-17
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/morphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Morphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
 ---
-
 # Harvard 232br - Hartshorne Chapter II §3 习题解答
 
 > 本节覆盖概形态射的有限性条件：局部有限型、拟紧、有限型、有限态射，以及浸入在基变换下的稳定性。这些习题是 **Affine Communication Lemma** 的主要应用场域。

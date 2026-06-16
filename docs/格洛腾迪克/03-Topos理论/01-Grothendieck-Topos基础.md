@@ -1,14 +1,28 @@
 ---
 title: Grothendieck Topos基础
 description: 系统介绍Grothendieck Topos的定义、子对象分类器、幂对象、内部逻辑以及层范畴的等价刻画，是理解几何与逻辑统一的入口。
-msc_primary: 18
+msc_primary: '18
 
-  - 18B25
-  - 03G30
-  - 18F10
+  - 18B25 - 03G30 - 18F10'
 processed_at: '2026-04-16'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  stacks_tag:
+    tag: 00TY
+    url: https://stacks.math.columbia.edu/tag/00TY
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00TY
+    tags:
+    - 00TY
+    consulted_at: '2026-04-17'
 ---
-
 # Grothendieck Topos 基础
 
 ## 引言

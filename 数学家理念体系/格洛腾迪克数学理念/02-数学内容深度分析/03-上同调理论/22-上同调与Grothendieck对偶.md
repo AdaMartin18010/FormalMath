@@ -1,46 +1,64 @@
 ---
-title: "上同调与 Grothendieck 对偶：例外拉回与六函子形式体系"
-level: "gold"
+title: 上同调与 Grothendieck 对偶：例外拉回与六函子形式体系
+level: gold
 msc_primary: 14
 msc_secondary:
-  - 14F17
-msc_secondary: ["14F20", "18G80", "32C37"]
-author: "FormalMath Gold Layer Team"
-date: "2026-04-18"
+- 14F20
+- 18G80
+- 32C37
+author: FormalMath Gold Layer Team
+date: '2026-04-18'
 references:
   textbooks:
-    - title: "Residues and Duality"
-      author: "R. Hartshorne"
-      edition: "Lecture Notes in Math. 20"
-      chapters: "Ch. III, §5–§11"
-      pages: "145–210"
-    - title: "Éléments de Géométrie Algébrique III"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 11"
-      chapters: "Chap. III, §8–§11"
-      pages: "130–180"
-    - title: "Triangulated Categories of Mixed Motives"
-      author: "D.-C. Cisinski & F. Déglise"
-      edition: "Springer Monographs in Math."
-      chapters: "Ch. A–B"
-      pages: "1–60"
+  - title: Residues and Duality
+    author: R. Hartshorne
+    edition: Lecture Notes in Math. 20
+    chapters: Ch. III, §5–§11
+    pages: 145–210
+  - title: Éléments de Géométrie Algébrique III
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 11
+    chapters: Chap. III, §8–§11
+    pages: 130–180
+  - title: Triangulated Categories of Mixed Motives
+    author: D.-C. Cisinski & F. Déglise
+    edition: Springer Monographs in Math.
+    chapters: Ch. A–B
+    pages: 1–60
   papers:
-    - title: "The Grothendieck duality theorem via Bousfield’s techniques and Brown representability"
-      author: "A. Neeman"
-      journal: "J. Amer. Math. Soc."
-      year: 1996
-      volume: "9"
-      pages: "205–236"
+  - title: The Grothendieck duality theorem via Bousfield’s techniques and Brown representability
+    author: A. Neeman
+    journal: J. Amer. Math. Soc.
+    year: 1996
+    volume: '9'
+    pages: 205–236
   databases:
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/0A9E"
-      tag: "0A9E"
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/0AU3"
-      tag: "0AU3"
-review_status: "published"
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A9E
+    tags:
+    - 0A9E
+    - 0AU3
+    consulted_at: '2026-04-17'
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Functor
+    author: Functor
+    consulted_at: '2026-04-17'
+review_status: published
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  stacks_tag:
+    tag: 0A9E
+    url: https://stacks.math.columbia.edu/tag/0A9E
+  stacks_tags: []
+  zbmath_url: https://zbmath.org/?q=au:Functor
 ---
-
 # 上同调与 Grothendieck 对偶：例外拉回与六函子形式体系
 
 > **目标读者**：已掌握 Serre 对偶与导出范畴基础的研究生。本文深入阐述 Grothendieck 对偶理论的完整框架，包括例外拉回 $f^!$、对偶复形、以及六函子形式体系（six-functor formalism），追溯其从 Hartshorne 的 *Residues and Duality* 到现代完善化的历史脉络。

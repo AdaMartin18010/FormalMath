@@ -1,9 +1,20 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: ∞-范畴论：Mathlib4形式化状态
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
+references:
+  papers:
+  - title: General Theory of Natural Equivalences
+    author: Samuel Eilenberg, Saunders Mac Lane
+    journal: Transactions of the American Mathematical Society
+    year: 1945
+    doi: 10.2307/2269622
 ---
 # ∞-范畴论：Mathlib4形式化状态
 
@@ -469,3 +480,9 @@ AlgebraicGeometry/
 ---
 
 *最后更新: 2026年4月 | FormalMath项目*
+
+---
+
+## 经典论文与原始文献
+
+- Samuel Eilenberg, Saunders Mac Lane, *General Theory of Natural Equivalences*, Transactions of the American Mathematical Society, 1945 (DOI: 10.2307/2269622)

@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: Fourier分析-Fejer核
 难度: ⭐⭐⭐
 预计时间: 25分钟
+title: Fejer核与Cesaro求和
 ---
-
 # Fejér核与Cesàro求和
 
 ## 题目

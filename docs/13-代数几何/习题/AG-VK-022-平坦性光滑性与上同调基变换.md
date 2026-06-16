@@ -1,7 +1,6 @@
 ---
 title: 平坦性、光滑性与上同调基变换
-msc_primary: 14
-  - 14F17
+msc_primary: 14 - 14F17
 level: silver
 target_courses:
 - Stanford FOAG
@@ -29,6 +28,8 @@ references:
     - 'Chapter III, Section 9: Flat Morphisms; Chapter III, Section 10: Smooth Morphisms'
     url: null
     pages: 253-269
+    mr_number: MR0463157
+    author: Robin Hartshorne
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -37,37 +38,31 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters:
     - 'Section 24.6: Flatness, Section 25.2: Smooth morphisms, Section 28.1: Base
       change theorems'
     url: https://math.stanford.edu/~vakil/216blog/
     pages: 655-675
+    author: Ravi Vakil
   databases:
   - id: nlab
     type: database
     name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
+    entry_url: https://ncatlab.org/nlab/show/cohomology
     consulted_at: 2026-04-17
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
 ---
-
 # AG-VK-022: 平坦性、光滑性与上同调基变换
 
 ## 习题信息

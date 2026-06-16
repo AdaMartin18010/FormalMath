@@ -1,17 +1,36 @@
 ---
 msc_primary: 14
 msc_secondary:
-  - 14-01
+- 14-01
 title: Harvard Math 232br Algebraic Geometry L5习题级对齐表
 processed_at: '2026-04-10'
 course_code: Harvard 232br
 course_name: Algebraic Geometry
 instructor: Joe Harris / Phillip Griffiths tradition
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
 alignment_level: L5 (习题级)
 version: v1.0
+external_ids:
+  stacks_tag:
+    tag: 01DZ
+    url: https://stacks.math.columbia.edu/tag/01DZ
+  stacks_tags: []
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01DZ
+    tags:
+    - 01DZ
+    - 01LC
+    - 0B5R
+    - 0B9C
+    - 0BX2
+    - 0F11
+    - 0FEG
+    consulted_at: '2026-04-17'
 ---
-
 # Harvard Math 232br Algebraic Geometry L5习题级对齐表
 
 **课程代码**: Harvard 232br

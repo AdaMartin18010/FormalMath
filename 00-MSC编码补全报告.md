@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: 00 MSC编码补全报告
 ---
-
 # FormalMath项目MSC编码补全报告
 
 **生成日期**: 2026-04-08

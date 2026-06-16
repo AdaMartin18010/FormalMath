@@ -1,12 +1,25 @@
 ---
-msc_primary: 18
+msc_primary: '18
 
-  - 18G15
-msc_secondary: ['13D07', '16E30', '18G10']
-keywords: ['Ext', '右导出函子', 'Hom', '扩张', '扩张群', 'Yoneda Ext']
+  - 18G15'
+msc_secondary:
+- 13D07
+- 16E30
+- 18G10
+keywords:
+- Ext
+- 右导出函子
+- Hom
+- 扩张
+- 扩张群
+- Yoneda Ext
 version: 1.0
+title: 03 右导出函子与Ext
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
 ---
-
 # 右导出函子与Ext
 
 **Hom函子的派生 — 从映射到扩张理论**

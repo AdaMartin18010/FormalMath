@@ -1,12 +1,20 @@
 ---
-title: "Riemann映射定理 - 深度版"
-msc_primary: 30
+title: Riemann映射定理 - 深度版
+msc_primary: '30
 
-  - 30C35
-msc_secondary: ['30C20', '30F99', '31A25', '35J25']
+  - 30C35'
+msc_secondary:
+- 30C20
+- 30F99
+- 31A25
+- 35J25
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
 ---
-
 # Riemann映射定理 - 深度版
 
 ## 📋 目录

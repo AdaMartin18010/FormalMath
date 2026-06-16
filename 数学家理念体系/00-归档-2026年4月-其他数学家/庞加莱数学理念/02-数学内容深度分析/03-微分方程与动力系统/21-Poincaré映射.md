@@ -5,8 +5,11 @@ msc_secondary:
 - 01A55
 - 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
 ---
-
 # Poincaré映射：周期轨道的横截截面
 
 Poincaré映射是庞加莱在研究三体问题时引入的重要工具，它将连续时间动力系统转化为离散时间系统，通过研究轨道与横截截面的交点序列来分析周期轨道和系统的稳定性。

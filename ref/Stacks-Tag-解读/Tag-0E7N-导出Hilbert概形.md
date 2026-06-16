@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0E7N 导出Hilbert概形
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
+  stacks_tag:
+    tag: 0E7N
+    url: https://stacks.math.columbia.edu/tag/0E7N
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0E7N
+    tags:
+    - 0E7N
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0E7N - 导出Hilbert概形
 
 ## 1. 基本信息

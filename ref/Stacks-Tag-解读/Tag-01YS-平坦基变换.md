@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01YS 平坦基变换
+external_ids:
+  stacks_tag:
+    tag: 01YS
+    url: https://stacks.math.columbia.edu/tag/01YS
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01YS
+    tags:
+    - 01YS
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 01YS - 平坦基变换（Flat base change）
 
 ## 1. Tag基本信息

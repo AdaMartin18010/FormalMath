@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 表示论-Weyl公式
 难度: ⭐⭐⭐⭐⭐
 预计时间: 60分钟
+title: ALG 210 Weyl特征标公式
 ---
-
 # Weyl 特征标公式
 
 ## 题目

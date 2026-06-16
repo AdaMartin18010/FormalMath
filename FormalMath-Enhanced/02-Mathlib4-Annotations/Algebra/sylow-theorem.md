@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 西罗定理 (Sylow's Theorems)
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
 # 西罗定理 (Sylow's Theorems)
 

@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14M15
+  - 14M15'
 exercise_id: ALG-248
 title: Kac-Moody群的旗簇几何
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 代数群
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # ALG-248: Kac-Moody群的旗簇几何
 
 **题号**: ALG-248

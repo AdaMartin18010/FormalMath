@@ -1,9 +1,9 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
+title: README
 ---
-
 # FormalMath 文档中心
 
 **数学形式化与数学家理念体系的综合性教育知识库 — 文档主索引**

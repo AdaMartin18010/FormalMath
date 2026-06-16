@@ -1,10 +1,35 @@
 ---
 msc_primary: 14Fxx
 msc_secondary:
-  - 18Gxx
-  - 01A70
+- 18Gxx
+- 01A70
+title: 03 Étale Topos与几何
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
+  stacks_tag:
+    tag: 03FN
+    url: https://stacks.math.columbia.edu/tag/03FN
+  stacks_tags: []
+  zbmath_url: https://zbmath.org/?q=au:Topos
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/03FN
+    tags:
+    - 03FN
+    - 03PU
+    consulted_at: '2026-04-17'
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Topos
+    author: Topos
+    consulted_at: '2026-04-17'
 ---
-
 ﻿---
 title: "Étale Topos 与几何：从 Site 到概形上同调"
 level: "gold"

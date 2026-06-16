@@ -1,18 +1,38 @@
 ---
 msc_primary: 55A99
 university: Princeton
-synonym: [Cohomology Ring, 杯积, 分次环]
+synonym:
+- Cohomology Ring
+- 杯积
+- 分次环
 type: 定义
 level: L3-理论建构层
 difficulty: ⭐⭐⭐⭐⭐
-concept_dependency: [上同调, 杯积, 分次代数]
-prerequisite_concepts: [奇异同调, 对偶, 张量积]
-prerequisite_theorems: [万有系数定理]
+concept_dependency:
+- 上同调
+- 杯积
+- 分次代数
+prerequisite_concepts:
+- 奇异同调
+- 对偶
+- 张量积
+prerequisite_theorems:
+- 万有系数定理
 course_context: MAT 365 Topology
-msc2010: [55N10, 55U15, 57T10]
-related_concepts: [上同调运算, Steenrod平方, Poincaré对偶]
+msc2010:
+- 55N10
+- 55U15
+- 57T10
+related_concepts:
+- 上同调运算
+- Steenrod平方
+- Poincaré对偶
+title: AT PN 006 上同调环
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
-
 # AT-PN-006: 上同调环 (Cohomology Ring)
 
 > **来源**: Princeton MAT 365 (Topology) | Hatcher Chapter 3, Section 2, p. 206-213

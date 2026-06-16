@@ -1,9 +1,9 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
+title: INDEX.en
 ---
-
 # FormalMath Project Document Index and Navigation System
 
 **Comprehensive Educational Knowledge Base for Mathematical Formalization and Mathematician Ideology Systems**

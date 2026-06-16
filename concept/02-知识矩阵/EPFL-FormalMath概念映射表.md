@@ -1,12 +1,16 @@
 ---
 msc_primary: 97
 msc_secondary:
-  - 97B40
-  - 00A99
-  - 97D30
+- 97B40
+- 00A99
+- 97D30
 generated_at: '2026-04-04'
 title: EPFL-FormalMath 概念映射表
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
 ---
 # EPFL-FormalMath 概念映射表
 

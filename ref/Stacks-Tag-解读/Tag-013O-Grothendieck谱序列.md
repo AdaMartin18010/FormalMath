@@ -1,9 +1,28 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 013O Grothendieck谱序列
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  stacks_tag:
+    tag: 013N
+    url: https://stacks.math.columbia.edu/tag/013N
+  stacks_tags: []
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/013N
+    tags:
+    - 013N
+    - 013O
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 013O - Grothendieck谱序列
 
 ## 1. Tag基本信息

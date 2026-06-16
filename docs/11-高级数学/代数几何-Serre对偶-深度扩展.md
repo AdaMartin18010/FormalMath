@@ -1,11 +1,21 @@
 ---
 title: 代数几何：Serre 对偶 - 深度扩展
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 20A99
-  - 22E47
+  - 00A99 - 20A99 - 22E47'
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/algebraic+geometry
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+references:
+  papers:
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
 ---
 msc_primary: "@"
 msc_secondary: ['20-00', '22E47']
@@ -122,3 +132,9 @@ H^i(X, F)∨ ≅ Ext^{n−i}(F, ω_X)。
 - Griffiths & Harris, Principles of Algebraic Geometry.
 - Mumford, Abelian Varieties; Curves on an Algebraic Surface.
 - Grothendieck, Residues and Duality.
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)

@@ -1,13 +1,14 @@
 ---
-msc_primary: 11
+msc_primary: '11
 
-  - 11G05
-  - 11G40
-  - 11G07
-  - 14H52
+  - 11G05 - 11G40 - 11G07 - 14H52'
 title: 椭圆曲线与BSD猜想 - 深度扩展版 / Elliptic Curves and BSD Conjecture - Deep Extension
 processed_at: '2026-04-05'
 review_status: draft
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/elliptic+curve
+  wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
 ---
 # 椭圆曲线与BSD猜想 - 深度扩展版 / Elliptic Curves and BSD Conjecture - Deep Extension
 

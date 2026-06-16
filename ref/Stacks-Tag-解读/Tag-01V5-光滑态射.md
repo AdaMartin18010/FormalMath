@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01V5 光滑态射
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/morphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Morphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
+  stacks_tag:
+    tag: 01V5
+    url: https://stacks.math.columbia.edu/tag/01V5
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01V5
+    tags:
+    - 01V5
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 01V5 - 光滑态射（Smooth Morphisms）
 
 ## 1. 基本信息

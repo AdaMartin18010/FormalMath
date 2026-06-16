@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: 00 FormalMath三层内容标准 v2.0
 ---
-
 # FormalMath 三层内容标准 v2.0
 
 > **任务编号**：P1-T6

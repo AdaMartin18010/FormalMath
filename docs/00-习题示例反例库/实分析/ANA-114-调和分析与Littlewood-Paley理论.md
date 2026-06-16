@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 调和分析-Littlewood-Paley分解
 难度: ⭐⭐⭐⭐⭐
 预计时间: 45分钟
+title: 调和分析与Littlewood Paley理论
 ---
-
 # 调和分析与Littlewood-Paley理论
 
 ## 题目

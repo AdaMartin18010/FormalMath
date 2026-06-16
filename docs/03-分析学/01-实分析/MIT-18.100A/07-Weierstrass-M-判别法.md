@@ -22,7 +22,7 @@ tags:
 - 函数项级数
 - 一致收敛
 - 核心定理
-- "mathematical_reviewed"
+- mathematical_reviewed
 date: 2026-04-17
 references:
   textbooks:
@@ -40,28 +40,23 @@ references:
     - 'Chapter 7: Sequences and Series of Functions'
     url: null
     pages: 148-149
-  databases:
-  - id: nlab
-    type: database
-    name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
-    consulted_at: 2026-04-17
+    mr_number: MR0385023
+    author: Walter Rudin
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+chapter: '07'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
 ---
-
 # Weierstrass M-判别法
 
 ## 一、背景：点态收敛 vs 一致收敛

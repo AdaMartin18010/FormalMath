@@ -1,27 +1,39 @@
 ---
-title: "导出范畴与Fourier-Mukai变换：Grothendieck范畴遗产的现代发展"
+title: 导出范畴与Fourier-Mukai变换：Grothendieck范畴遗产的现代发展
 level: gold
 course: Grothendieck数学理念
 msc_primary: 18
 msc_secondary:
-  - 18E30
+- 18E30
 references:
   textbooks:
-    - title: "Triangulated Categories"
-      author: "A. Neeman"
-      edition: "Annals of Mathematics Studies 148"
-      year: 2001
-    - title: "Fourier-Mukai Transforms in Algebraic Geometry"
-      author: "D. Huybrechts"
-      edition: "Oxford Mathematical Monographs"
-      year: 2006
+  - title: Triangulated Categories
+    author: A. Neeman
+    edition: Annals of Mathematics Studies 148
+    year: 2001
+  - title: Fourier-Mukai Transforms in Algebraic Geometry
+    author: D. Huybrechts
+    edition: Oxford Mathematical Monographs
+    year: 2006
   papers:
-    - title: "Duality for projective morphisms"
-      author: "S. Mukai"
-      year: 1981
+  - title: Duality for projective morphisms
+    author: S. Mukai
+    year: 1981
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Category
+    author: Category
+    consulted_at: '2026-04-17'
 status: completed
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  zbmath_url: https://zbmath.org/?q=au:Category
 ---
-
 ## 1. 引言：从Grothendieck到Mukai的桥梁
 
 Grothendieck在**SGA 6**和**Tohoku论文**中奠定了**同调代数**的现代基础，特别是**导出范畴（derived category）**的引入彻底改变了数学家处理复形和同调的方式。导出范畴不仅是一个技术工具，更是一种全新的数学思维方式：它将同调不变量从具体的复形中解放出来，使得**拟同构（quasi-isomorphism）**成为新的等价关系。

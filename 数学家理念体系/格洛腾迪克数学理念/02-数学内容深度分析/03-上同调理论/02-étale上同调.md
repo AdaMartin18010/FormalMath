@@ -1,10 +1,33 @@
 ---
 msc_primary: 14Fxx
 msc_secondary:
-  - 18Gxx
-  - 01A70
+- 18Gxx
+- 01A70
+title: 02 étale上同调
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  stacks_tag:
+    tag: 03Q3
+    url: https://stacks.math.columbia.edu/tag/03Q3
+  zbmath_url: https://zbmath.org/?q=au:Cohomology
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/03Q3
+    tags:
+    - 03Q3
+    consulted_at: '2026-04-17'
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Cohomology
+    author: Cohomology
+    consulted_at: '2026-04-17'
 ---
-
 ﻿---
 title: "étale 上同调：SGA 4 与 Weil 猜想的基础"
 level: "gold"
@@ -270,4 +293,3 @@ Grothendieck 在 1966 年证明了：对特征 0 上的光滑簇，代数 de Rha
 > **文档状态**: `draft`（待审校）
 > **原始文献引用密度**: ~4.2 / 1000 字
 > **字数**: 约 10,500 字
-

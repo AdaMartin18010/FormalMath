@@ -1,13 +1,25 @@
 ---
 msc_primary: 91
 msc_secondary:
-  - 91B06
-  - 03A05
-  - 91A35
+- 91B06
+- 03A05
+- 91A35
 processed_at: '2026-04-20'
 title: 帕斯卡-wager的数学建模
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
+  zbmath_url: https://zbmath.org/?q=au:Module
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Module
+    author: Module
+    consulted_at: '2026-04-17'
 ---
-
 # 帕斯卡-wager的数学建模
 
 **msc_primary**: 91B06

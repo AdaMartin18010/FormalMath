@@ -1,13 +1,25 @@
 ---
 title: 随机分析与随机PDE：Hilbert空间的概率扩展
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A50
-  - 01A55
-  - 01A70
+- 01A50
+- 01A55
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Hilbert+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Hilbert_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Hilbert%E7%A9%BA%E9%97%B4
+  zbmath_url: https://zbmath.org/?q=au:Hilbert%20space
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Hilbert%20space
+    author: Hilbert space
+    consulted_at: '2026-04-17'
 ---
-
 # 随机分析与随机PDE：Hilbert空间的概率扩展
 
 

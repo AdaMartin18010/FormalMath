@@ -1,7 +1,7 @@
 ---
-msc_primary: 57
+msc_primary: '57
 
-  - 57R58
+  - 57R58'
 exercise_id: TOP-122
 title: Heegaard Floer同调的构造
 difficulty: 5
@@ -10,11 +10,14 @@ topic: 拓扑
 subtopic: Floer同调
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/homology
+  wikipedia_url: https://en.wikipedia.org/wiki/Homology_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83
 ---
-
 # TOP-122: Heegaard Floer同调的构造
 
 **题号**: TOP-122

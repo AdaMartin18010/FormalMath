@@ -1,9 +1,27 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 03QY Étale上同调与极限交换
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/limit
+  wikipedia_url: https://en.wikipedia.org/wiki/Limit_(category_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90
+  stacks_tag:
+    tag: 03QY
+    url: https://stacks.math.columbia.edu/tag/03QY
+  stacks_tags: []
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/03QY
+    tags:
+    - 03QY
+    - 0A07
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 03QY - Étale上同调与极限交换
 
 ## 1. 基本信息

@@ -1,17 +1,38 @@
 ---
 msc_primary: 14
 msc_secondary:
-  - 14-01
+- 14-01
 title: Harvard Math 232br Algebraic Geometry L3定义级对齐表
 processed_at: '2026-04-09'
 course_code: Harvard 232br
 course_name: Algebraic Geometry
 instructor: Joe Harris / Phillip Griffiths tradition
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
 alignment_level: L3 (定义级)
 version: v1.0
+external_ids:
+  stacks_tag:
+    tag: '0072'
+    url: https://stacks.math.columbia.edu/tag/0072
+  stacks_tags: []
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0072
+    tags:
+    - '0072'
+    - 00E0
+    - 01DZ
+    - 01E8
+    - 01LC
+    - 01LD
+    - 01LH
+    - 01NT
+    - 05T7
+    consulted_at: '2026-04-17'
 ---
-
 # Harvard Math 232br Algebraic Geometry L3定义级对齐表
 
 **课程代码**: Harvard 232br

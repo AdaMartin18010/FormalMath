@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: 切空间思维导图
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/tangent+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Tangent_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%88%87%E7%A9%BA%E9%97%B4
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

@@ -1,54 +1,41 @@
 ---
-title: "类型论 (Type Theory)"
-msc_primary: 03
+title: 类型论 (Type Theory)
+msc_primary: '03
 
-  - 03B15
-msc_secondary: ['03B30', '03B40', '03B70', '68N18']
+  - 03B15'
+msc_secondary:
+- 03B30
+- 03B40
+- 03B70
+- 68N18
 processed_at: '2026-04-05'
 references:
   textbooks:
-    - id: enderton_logic
-      type: textbook
-      title: A Mathematical Introduction to Logic
-      authors:
-      - Herbert B. Enderton
-      publisher: Academic Press
-      edition: 2nd
-      year: 2001
-      isbn: 978-0122384523
-      msc: 03-01
-      chapters: 
-      url: ~
-    - id: mendelson_logic
-      type: textbook
-      title: Introduction to Mathematical Logic
-      authors:
-      - Elliott Mendelson
-      publisher: Chapman and Hall/CRC
-      edition: 6th
-      year: 2015
-      isbn: 978-1482237725
-      msc: 03-01
-      chapters: 
-      url: ~
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: enderton_logic
+    type: textbook
+    title: A Mathematical Introduction to Logic
+    authors:
+    - Herbert B. Enderton
+    publisher: Academic Press
+    edition: 2nd
+    year: 2001
+    isbn: 978-0122384523
+    msc: 03-01
+    chapters: null
+    url: null
+  - id: mendelson_logic
+    type: textbook
+    title: Introduction to Mathematical Logic
+    authors:
+    - Elliott Mendelson
+    publisher: Chapman and Hall/CRC
+    edition: 6th
+    year: 2015
+    isbn: 978-1482237725
+    msc: 03-01
+    chapters: null
+    url: null
 ---
-
 # 类型论 (Type Theory)
 
 **最后更新**: 2026年4月5日  

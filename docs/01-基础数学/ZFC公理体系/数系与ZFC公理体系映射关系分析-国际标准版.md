@@ -1,12 +1,17 @@
 ---
-title: "数系与ZFC公理体系映射关系分析 - 国际标准版"
-msc_primary: 00
+title: 数系与ZFC公理体系映射关系分析 - 国际标准版
+msc_primary: '00
 
-  - 00A99
-msc_secondary: ['00A05', '97A99']
+  - 00A99'
+msc_secondary:
+- 00A05
+- 97A99
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
 ---
-
 # 数系与ZFC公理体系映射关系分析 - 国际标准版
 
 ## 目录

@@ -1,9 +1,27 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01XI 仿射对角线概形上同调消失
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
+  stacks_tag:
+    tag: 01XB
+    url: https://stacks.math.columbia.edu/tag/01XB
+  stacks_tags: []
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01XB
+    tags:
+    - 01XB
+    - 01XI
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 01XI - 仿射对角线概形上同调消失
 
 ## 1. Tag基本信息

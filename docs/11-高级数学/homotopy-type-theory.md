@@ -1,11 +1,13 @@
 ---
 title: 同伦类型论深度版 / Homotopy Type Theory - In Depth
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 18G55
-  - 00A99
+  - 00A99 - 18G55 - 00A99'
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/homotopy+type+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Homotopy_type_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E4%BC%A6%E7%B1%BB%E5%9E%8B%E8%AE%BA
 ---
 # 同伦类型论深度版 / Homotopy Type Theory - In Depth
 

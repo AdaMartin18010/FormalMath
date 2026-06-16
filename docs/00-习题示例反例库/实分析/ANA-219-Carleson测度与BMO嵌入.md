@@ -1,7 +1,7 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42B35
+  - 42B35'
 exercise_id: ANA-219
 title: Carleson测度与BMO嵌入
 difficulty: 3
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: Carleson测度理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/measure
+  wikipedia_url: https://en.wikipedia.org/wiki/Measure_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%8B%E5%BA%A6
 ---
-
 # ANA-219: Carleson测度与BMO嵌入
 
 **题号**: ANA-219

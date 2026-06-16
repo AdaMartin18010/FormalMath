@@ -1,9 +1,16 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: RSA安全性推导链
 processed_at: '2026-04-05'
+references:
+  papers:
+  - title: A method for obtaining digital signatures and public-key cryptosystems
+    author: Ronald L. Rivest, Adi Shamir, Leonard M. Adleman
+    journal: Communications of the ACM
+    year: 1978
+    doi: 10.1145/359340.359342
 ---
 # RSA安全性推导链
 
@@ -256,3 +263,9 @@ IND-CCA2安全
 ---
 
 *生成时间：2026年4月*
+
+---
+
+## 经典论文与原始文献
+
+- Ronald L. Rivest, Adi Shamir, Leonard M. Adleman, *A method for obtaining digital signatures and public-key cryptosystems*, Communications of the ACM, 1978 (DOI: 10.1145/359340.359342)

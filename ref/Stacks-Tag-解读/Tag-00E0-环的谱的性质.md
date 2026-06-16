@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 00E0 环的谱的性质
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
+  stacks_tag:
+    tag: 00E0
+    url: https://stacks.math.columbia.edu/tag/00E0
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00E0
+    tags:
+    - 00E0
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 00E0 解读：环的谱的性质
 
 ## 1. Tag基本信息

@@ -1,8 +1,7 @@
 ---
-msc_primary: 03
-
+msc_primary: 3
+title: README
 ---
-
 # 01-基础数学
 
 **现代数学的基石 — 集合论、逻辑与数学基础**

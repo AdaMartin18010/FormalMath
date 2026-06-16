@@ -1,15 +1,19 @@
 ---
-title: "柯西-施瓦茨不等式（向量形式与矩阵形式对比） 自然语言与 Lean4 对照"
+title: 柯西-施瓦茨不等式（向量形式与矩阵形式对比） 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.06"
+- MIT 18.06
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/matrix
+  wikipedia_url: https://en.wikipedia.org/wiki/Matrix_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
 ---
-
 ## 定理陈述
 
 **自然语言**：
@@ -114,3 +118,13 @@ end CauchySchwarzComparison
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/matrix)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Matrix_(mathematics))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5)
+- [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/)

@@ -1,7 +1,7 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42B20
+  - 42B20'
 exercise_id: ANA-218
 title: 向量值奇异积分的Banach空间性质
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: 向量值调和分析
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Banach+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Banach_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Banach%E7%A9%BA%E9%97%B4
 ---
-
 # ANA-218: 向量值奇异积分的Banach空间性质
 
 **题号**: ANA-218

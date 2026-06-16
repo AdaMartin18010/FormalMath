@@ -5,8 +5,11 @@ msc_secondary:
 - 01A55
 - 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # Dirichlet级数：数论函数的生成函数
 
 Dirichlet级数是数论函数的生成函数，它将算术函数与解析函数联系起来。虽然Dirichlet级数的严格形式化是在19世纪完成的，但庞加莱的数论工作为理解Dirichlet级数奠定了基础。Dirichlet级数在解析数论、L函数理论、素数分布等领域有重要应用。

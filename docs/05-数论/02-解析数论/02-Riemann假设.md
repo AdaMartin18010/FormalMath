@@ -1,13 +1,13 @@
 ---
-msc_primary: 11
+msc_primary: '11
 
-  - 11M26
-  - 11M06
-  - 11N05
+  - 11M26 - 11M06 - 11N05'
 title: Riemann假设 / Riemann Hypothesis
 processed_at: '2026-04-08'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
 ---
-
 # Riemann假设 / Riemann Hypothesis
 
 > **教学深度**：研究生高阶 / 研究前沿  

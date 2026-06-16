@@ -1,7 +1,7 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16T05
+  - 16T05'
 exercise_id: ALG-258
 title: Hopf代数的Galois扩张
 difficulty: 4
@@ -10,11 +10,13 @@ topic: 代数
 subtopic: Hopf代数
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Evariste_Galois
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
 ---
-
 # ALG-258: Hopf代数的Galois扩张
 
 **题号**: ALG-258

@@ -1,12 +1,17 @@
 ---
-title: "集合论基础 - Lean4形式化实现"
-msc_primary: 03
+title: 集合论基础 - Lean4形式化实现
+msc_primary: '03
 
-  - 03B35
-msc_secondary: ['68T15', '03B70']
+  - 03B35'
+msc_secondary:
+- 68T15
+- 03B70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/set
+  wikipedia_url: https://en.wikipedia.org/wiki/Set_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88
 ---
-
 # 集合论基础 - Lean4形式化实现 / Set Theory Foundation - Lean4 Formal Implementation
 
 ## 目录

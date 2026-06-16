@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14N35
+  - 14N35'
 exercise_id: GEO-092
 title: 极化流形的Gromov-Witten不变量
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 几何
 subtopic: 辛几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/manifold
+  wikipedia_url: https://en.wikipedia.org/wiki/Manifold
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
 ---
-
 # GEO-092: 极化流形的Gromov-Witten不变量
 
 **题号**: GEO-092

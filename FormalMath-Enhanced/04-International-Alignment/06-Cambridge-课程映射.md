@@ -1,10 +1,14 @@
 ---
 msc_primary: 97A99
 msc_secondary:
-  - 00A99
+- 00A99
+title: 06 Cambridge 课程映射
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
 ---
-
-﻿---
+---
 
 msc_primary: 00A99
 processed_at: '2026-04-15'
@@ -31,7 +35,7 @@ title: Cambridge 课程映射表
       - [对照表](#对照表)
     - [Groups](#groups)
       - [对照表](#对照表-1)
-    - [Analysis ](#analysis-i)
+    - [Analysis I](#analysis-i)
       - [对照表](#对照表-2)
     - [Differential Equations](#differential-equations)
       - [对照表](#对照表-3)
@@ -78,8 +82,8 @@ title: Cambridge 课程映射表
 这一发现证明：
 
 1. FormalMath 的**证明严格性**与 Cambridge **Tripos 考试要求**完美同步
-1. **经典教材对应**完整覆盖 Hardy、Davenport、Hatcher 等 Cambridge 标准教材
-2. 从 Part IA → Part III 的**渐进式学习路径**在 FormalMath 中有清晰映射
+2. **经典教材对应**完整覆盖 Hardy、Davenport、Hatcher 等 Cambridge 标准教材
+3. 从 Part IA → Part III 的**渐进式学习路径**在 FormalMath 中有清晰映射
 
 ---
 

@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: Fourier分析-Plancherel定理
 难度: ⭐⭐⭐
 预计时间: 25分钟
+title: Plancherel定理应用
 ---
-
 # Plancherel定理应用
 
 ## 题目

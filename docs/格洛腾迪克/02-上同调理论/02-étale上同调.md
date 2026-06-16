@@ -1,14 +1,27 @@
 ---
 title: Étale上同调
 description: 深入介绍平展态射、平展拓扑、平展上同调的定义、比较定理以及它在韦伊猜想证明中的核心作用。
-msc_primary: 14
+msc_primary: '14
 
-  - 14F20
-  - 14F30
-  - 14G15
+  - 14F20 - 14F30 - 14G15'
 processed_at: '2026-04-16'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  stacks_tag:
+    tag: 03Q3
+    url: https://stacks.math.columbia.edu/tag/03Q3
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/03Q3
+    tags:
+    - 03Q3
+    consulted_at: '2026-04-17'
 ---
-
 # Étale 上同调
 
 ## 引言

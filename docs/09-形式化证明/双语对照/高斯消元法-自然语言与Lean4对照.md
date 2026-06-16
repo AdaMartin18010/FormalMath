@@ -1,15 +1,17 @@
 ---
-title: "高斯消元法 自然语言与 Lean4 对照"
+title: 高斯消元法 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.06"
+- MIT 18.06
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
 ---
-
 ## 定理陈述
 
 **自然语言**：高斯消元法（Gaussian Elimination）是求解线性方程组、计算矩阵秩、求逆矩阵的核心算法。其基本定理表述为：任何域上的 $m \times n$ 矩阵 $A$ 都可以通过有限次**初等行变换**化为**行阶梯形**（row echelon form）。进而，线性方程组 $Ax = b$ 有解当且仅当增广矩阵 $[A \mid b]$ 的行阶梯形中不存在形如 $[0 \; 0 \; \cdots \; 0 \mid c]$（$c \neq 0$）的矛盾行。
@@ -92,3 +94,11 @@ end GaussianElimination
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss)
+- [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/)

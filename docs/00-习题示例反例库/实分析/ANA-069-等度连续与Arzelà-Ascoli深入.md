@@ -1,15 +1,25 @@
 ---
-number: "ANA-069"
+number: ANA-069
 category: 实分析
 topic: 综合练习
 difficulty: ⭐⭐⭐⭐
 title: 函数空间中的紧致性理论
 msc_primary: 00A99
-keywords: [等度连续, Arzelà-Ascoli, 函数空间, 相对紧致, 相对列紧]
-prerequisites: [ANA-068, ANA-060]
+keywords:
+- 等度连续
+- Arzelà-Ascoli
+- 函数空间
+- 相对紧致
+- 相对列紧
+prerequisites:
+- ANA-068
+- ANA-060
 source: 经典分析习题
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 ## 题目
 
 设 $(X, d)$ 是紧致度量空间，$C(X)$ 是连续函数空间，赋予上确界范数。

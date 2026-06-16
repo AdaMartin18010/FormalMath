@@ -1,7 +1,7 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42B20
+  - 42B20'
 exercise_id: ANA-211
 title: Singular积分算子的加权范数不等式
 difficulty: 5
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: 加权范数
 source:
   course: 调和分析前沿
-  chapter: "9.2"
+  chapter: '9.2'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/integral
+  wikipedia_url: https://en.wikipedia.org/wiki/Integral
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
 ---
-
 # ANA-211: Singular积分算子的加权范数不等式
 
 **题号**: ANA-211

@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0A1B 刚性几何与形式几何
+external_ids:
+  stacks_tag:
+    tag: 0A1B
+    url: https://stacks.math.columbia.edu/tag/0A1B
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A1B
+    tags:
+    - 0A1B
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0A1B - 刚性几何与形式几何
 
 ## 1. 基本概念与定义

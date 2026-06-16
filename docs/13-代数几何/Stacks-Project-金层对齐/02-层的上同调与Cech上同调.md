@@ -1,126 +1,132 @@
 ---
-title: "层的上同调与 Čech 上同调"
-level: "gold"
-msc_primary: 14
+title: 层的上同调与 Čech 上同调
+level: gold
+msc_primary: '14
 
-  - 14F17
+  - 14F17'
 stacks_tags:
-  - "01DX"
-  - "01DY"
-  - "01DZ"
-  - "01E0"
-  - "01E1"
-  - "01E2"
-  - "01E3"
-  - "01E4"
-  - "01E5"
-  - "01E6"
-  - "01E7"
-  - "01E8"
-  - "01E9"
-  - "01EA"
-  - "01EB"
-  - "01EC"
-  - "01ED"
-  - "01EE"
-  - "01EF"
-  - "01EG"
-  - "01EH"
-  - "01EI"
-  - "01EJ"
-  - "01EK"
-  - "01EL"
-  - "01EM"
-  - "01EN"
-  - "01EO"
-  - "01EP"
-  - "01EQ"
-  - "01ER"
-  - "01ES"
-  - "01ET"
-  - "01EU"
-  - "01EV"
-  - "01EW"
-  - "01EX"
-  - "01EY"
-  - "01EZ"
-  - "01F0"
-  - "01F1"
-  - "01F2"
-  - "01F3"
-  - "01F4"
-  - "01F5"
-  - "01F6"
-  - "01F7"
-  - "01F8"
-  - "01F9"
-  - "01FA"
-  - "01FB"
-  - "01FC"
-  - "01FD"
-  - "01FE"
-  - "01FF"
-  - "01FG"
-  - "01FH"
-  - "01FI"
-  - "01FJ"
-  - "01FK"
-  - "01FL"
-  - "01FM"
-  - "01FN"
-  - "01FO"
-  - "01FP"
-  - "01FQ"
+- 01DX
+- 01DY
+- 01DZ
+- 01E0
+- 01E1
+- 01E2
+- 01E3
+- 01E4
+- 01E5
+- 01E6
+- 01E7
+- 01E8
+- 01E9
+- 01EA
+- 01EB
+- 01EC
+- 01ED
+- 01EE
+- 01EF
+- 01EG
+- 01EH
+- 01EI
+- 01EJ
+- 01EK
+- 01EL
+- 01EM
+- 01EN
+- 01EO
+- 01EP
+- 01EQ
+- 01ER
+- 01ES
+- 01ET
+- 01EU
+- 01EV
+- 01EW
+- 01EX
+- 01EY
+- 01EZ
+- 01F0
+- 01F1
+- 01F2
+- 01F3
+- 01F4
+- 01F5
+- 01F6
+- 01F7
+- 01F8
+- 01F9
+- 01FA
+- 01FB
+- 01FC
+- 01FD
+- 01FE
+- 01FF
+- 01FG
+- 01FH
+- 01FI
+- 01FJ
+- 01FK
+- 01FL
+- 01FM
+- 01FN
+- 01FO
+- 01FP
+- 01FQ
 target_courses:
-  - "Stanford FOAG Ch.18-19"
-  - "Harvard Math 232br Ch.8"
+- Stanford FOAG Ch.18-19
+- Harvard Math 232br Ch.8
 references:
   textbooks:
-    - title: "Topologie Algébrique et Théorie des Faisceaux"
-      author: "R. Godement"
-      edition: "Hermann, 1958"
-      chapters: "Chapitre II, III, IV"
-      pages: "125-280"
-    - title: "Algebraic Geometry"
-      author: "R. Hartshorne"
-      edition: "Springer GTM 52, 1977"
-      chapters: "Chapter III, §1-4"
-      pages: "201-240"
-    - title: "Sheaf Theory"
-      author: "G. E. Bredon"
-      edition: "Springer GTM 170, 1997"
-      chapters: "Chapter III"
+  - title: Topologie Algébrique et Théorie des Faisceaux
+    author: R. Godement
+    edition: Hermann, 1958
+    chapters: Chapitre II, III, IV
+    pages: 125-280
+  - title: Algebraic Geometry
+    author: R. Hartshorne
+    edition: Springer GTM 52, 1977
+    chapters: Chapter III, §1-4
+    pages: 201-240
+  - title: Sheaf Theory
+    author: G. E. Bredon
+    edition: Springer GTM 170, 1997
+    chapters: Chapter III
   papers:
-    - title: "Faisceaux algébriques cohérents"
-      author: "J-P. Serre"
-      journal: "Annals of Mathematics"
-      year: 1955
-      volume: "61"
-      pages: "197-278"
-      zbmath: "Zbl 0067.16201"
-    - title: "Sur quelques points d'algèbre homologique"
-      author: "A. Grothendieck"
-      journal: "Tôhoku Mathematical Journal"
-      year: 1957
-      volume: "9"
-      pages: "119-221"
-      zbmath: "Zbl 0118.26104"
+  - title: Faisceaux algébriques cohérents
+    author: J-P. Serre
+    journal: Annals of Mathematics
+    year: 1955
+    volume: '61'
+    pages: 197-278
+    zbmath: Zbl 0067.16201
+  - title: Sur quelques points d'algèbre homologique
+    author: A. Grothendieck
+    journal: Tôhoku Mathematical Journal
+    year: 1957
+    volume: '9'
+    pages: 119-221
+    zbmath: Zbl 0118.26104
   databases:
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/01DX"
-      tag: "01DX"
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/01FA"
-      tag: "01FA"
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/01FE"
-      tag: "01FE"
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/01FF"
-      tag: "01FF"
-review_status: "draft"
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01DX
+    consulted_at: '2026-04-17'
+    tags:
+    - 01DX
+    - 01FA
+    - 01FE
+    - 01FF
+    - 09ZQ
+review_status: draft
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
+  stacks_tag:
+    tag: 01DX
+    url: https://stacks.math.columbia.edu/tag/01DX
+  stacks_tags: []
 ---
-
 # 层的上同调与 Čech 上同调
 
 ## 引言

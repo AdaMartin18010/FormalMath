@@ -1,7 +1,7 @@
 ---
-msc_primary: 26
+msc_primary: '26
 
-  - 26A42
+  - 26A42'
 exercise_id: ANA-041
 title: Riemann和计算
 difficulty: 3
@@ -10,11 +10,13 @@ topic: 实分析
 subtopic: Riemann积分
 source:
   course: MIT 18.100A Real Analysis
-  chapter: "6.1"
+  chapter: '6.1'
   original: true
 processed_at: '2026-04-09'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
 ---
-
 # ANA-041: Riemann和计算
 
 **题号**: ANA-041

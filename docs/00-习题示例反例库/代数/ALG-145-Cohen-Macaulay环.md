@@ -5,8 +5,12 @@ msc_primary: 00A99
 知识点: 交换代数-Cohen-Macaulay环
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
+title: ALG 145 Cohen Macaulay环
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
-
 # Cohen-Macaulay环
 
 ## 题目

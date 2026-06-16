@@ -1,18 +1,34 @@
 ---
 msc_primary: 55A99
 university: Princeton
-synonym: [Covering Space, 覆叠映射, 万有覆叠]
+synonym:
+- Covering Space
+- 覆叠映射
+- 万有覆叠
 type: 定义
 level: L3-理论建构层
 difficulty: ⭐⭐⭐⭐
-concept_dependency: [拓扑空间, 连续映射, 基本群]
-prerequisite_concepts: [基本群, 道路连通, 局部道路连通]
-prerequisite_theorems: [同伦提升性质]
+concept_dependency:
+- 拓扑空间
+- 连续映射
+- 基本群
+prerequisite_concepts:
+- 基本群
+- 道路连通
+- 局部道路连通
+prerequisite_theorems:
+- 同伦提升性质
 course_context: MAT 365 Topology
-msc2010: [57M10, 55R05, 55Q05]
-related_concepts: [覆叠变换, 万有覆叠, 单值化定理]
+msc2010:
+- 57M10
+- 55R05
+- 55Q05
+related_concepts:
+- 覆叠变换
+- 万有覆叠
+- 单值化定理
+title: AT PN 003 覆叠空间
 ---
-
 # AT-PN-003: 覆叠空间 (Covering Space)
 
 > **来源**: Princeton MAT 365 (Topology) | Hatcher Chapter 1, Section 3, p. 56-63

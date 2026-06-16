@@ -1,13 +1,16 @@
 ---
 msc_primary: 35-XX
 msc_secondary:
-  - 35J05
-  - 35K05
-  - 35L05
+- 35J05
+- 35K05
+- 35L05
 processed_at: '2026-04-20'
 title: 偏微分方程·波动、热与Laplace方程习题集
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/partial+differential+equation
+  wikipedia_url: https://en.wikipedia.org/wiki/Partial_differential_equation
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B
 ---
-
 # 偏微分方程·波动、热与Laplace方程习题集
 
 > 覆盖 D'Alembert 公式、分离变量法、能量方法、Green 函数与最大值原理。共 20 题。

@@ -1,12 +1,13 @@
 ---
 title: 导出代数几何深度版 / Derived Algebraic Geometry - Deep Dive
-msc_primary: 14
+msc_primary: '14
 
-  - 14A20
-  - 00A99
-  - 00A99
-  - 00A99
+  - 14A20 - 00A99 - 00A99 - 00A99'
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/algebraic+geometry
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
 ---
 # 导出代数几何深度版 / Derived Algebraic Geometry - Deep Dive
 

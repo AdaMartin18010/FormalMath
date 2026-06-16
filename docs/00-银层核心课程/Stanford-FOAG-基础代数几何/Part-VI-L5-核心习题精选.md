@@ -1,46 +1,52 @@
 ---
-title: "Part VI L5 核心习题（1–10）"
-msc_primary: 14
-  - 14B25
+title: Part VI L5 核心习题（1–10）
+msc_primary: '14 - 14B25
 
-  - 14C05
-level: "silver"
+  - 14C05'
+level: silver
 target_courses:
-  - "Stanford FOAG Part VI"
+- Stanford FOAG Part VI
 course: Stanford FOAG 基础代数几何
-course_code: "Math 216A/B"
-instructor: "Ravi Vakil"
-foag_chapter: "Part VI: Ch 23–29"
-topic: "Smooth, étale, flat morphisms; duality; cohomology and base change"
-exercise_type: "L5"
-difficulty: "⭐⭐⭐⭐⭐"
-importance: "★★★★★"
+course_code: Math 216A/B
+instructor: Ravi Vakil
+foag_chapter: 'Part VI: Ch 23–29'
+topic: Smooth, étale, flat morphisms; duality; cohomology and base change
+exercise_type: L5
+difficulty: ⭐⭐⭐⭐⭐
+importance: ★★★★★
 references:
   textbooks:
-    - id: vakil_foag
-      type: textbook
-      title: "Foundations of Algebraic Geometry"
-      authors:
-        - "Ravi Vakil"
-      publisher: "self-published"
-      edition: "draft"
-      year: 2024
-      chapters:
-        - "Part VI: Ch 23–29"
-      url: "https://math.stanford.edu/~vakil/216blog/"
-  databases:
-    - id: stacks_project
-      type: database
-      name: "Stacks Project"
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: "2026-04-18"
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    chapters:
+    - 'Part VI: Ch 23–29'
+    url: https://math.stanford.edu/~vakil/216blog/
+    isbn: ''
+    author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+    chapters: Part VI
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 created_at: 2026-04-18
+chapter: VI
+external_ids:
+  ocw_url: https://math.stanford.edu/~vakil/216blog/
+  ocw_ps_url: https://math.stanford.edu/~vakil/216blog/
+  foag_pdf_url: https://math.stanford.edu/~vakil/216blog/
 ---
-
 # Part VI L5 核心习题（1–10）
 
 > **课程**: Stanford FOAG (Math 216A/B)
@@ -336,8 +342,27 @@ example : True := by trivial
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 (Chapters: ['Part VI: Ch 23–29']) [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024 (Chapters: Part VI)
+
+### 数据库与网络资源
+
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
+### 课程与外部链接
+
+- [Ocw Url](https://math.stanford.edu/~vakil/216blog/)
+- [Ocw Ps Url](https://math.stanford.edu/~vakil/216blog/)
+- [Foag Pdf Url](https://math.stanford.edu/~vakil/216blog/)

@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 表示论-Frobenius互反性
 难度: ⭐⭐⭐⭐
 预计时间: 25分钟
+title: ALG 123 Frobenius互反性
 ---
-
 # Frobenius互反性
 
 ## 题目

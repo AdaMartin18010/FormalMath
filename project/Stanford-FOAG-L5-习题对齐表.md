@@ -1,18 +1,40 @@
 ---
 msc_primary: 14
 msc_secondary:
-  - 14-01
-  - 14Fxx
+- 14-01
+- 14Fxx
 title: Stanford FOAG L5习题级对齐表
 course_code: Stanford FOAG
 course_name: Foundations of Algebraic Geometry
 instructor: Ravi Vakil
-textbook: "Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry"
+textbook: 'Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry'
 alignment_level: L5 (习题级)
 version: v1.0
 date_created: '2026-04-10'
+external_ids:
+  stacks_tag:
+    tag: 0028
+    url: https://stacks.math.columbia.edu/tag/0028
+  stacks_tags: []
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0028
+    tags:
+    - 0028
+    - 006K
+    - 00MB
+    - '0136'
+    - 01J8
+    - 01KU
+    - 01OA
+    - 01XB
+    - 0B1Q
+    - 0B5S
+    consulted_at: '2026-04-17'
 ---
-
 # Stanford FOAG L5习题级对齐表
 
 **课程代码**: Stanford FOAG (Math 216A/B)  

@@ -1,12 +1,15 @@
 ---
 msc_primary: 46C05
 msc_secondary:
-  - 46C07
-  - 46C15
+- 46C07
+- 46C15
 processed_at: '2026-04-20'
 title: Hilbert空间基础
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Hilbert+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Hilbert_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Hilbert%E7%A9%BA%E9%97%B4
 ---
-
 # Hilbert空间基础
 
 ## 1. 引言

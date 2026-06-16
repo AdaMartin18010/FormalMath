@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 表示论-Mackey理论
 难度: ⭐⭐⭐⭐
 预计时间: 35分钟
+title: ALG 127 诱导表示与Mackey理论
 ---
-
 # 诱导表示与Mackey理论
 
 ## 题目

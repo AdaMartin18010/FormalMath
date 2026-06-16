@@ -2,36 +2,33 @@
 title: 高斯方程与Codazzi方程
 description: 详细介绍子流形几何中的Gauss-Codazzi-Mainardi方程组，包括它们的推导、几何意义以及在等距嵌入中的应用。
 msc_primary:
-  - 53B25
+- 53B25
 msc_secondary:
-  - 53A07
-  - 53C42
+- 53A07
+- 53C42
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: lee_riemannian
-      type: textbook
-      title: Riemannian Manifolds
-      authors:
-        - John M. Lee
-      publisher: Springer
-      year: 1997
-      msc: 53-01
-    - id: do_carmo_riemannian
-      type: textbook
-      title: Riemannian Geometry
-      authors:
-        - Manfredo P. do Carmo
-      publisher: Birkhäuser
-      year: 1992
-      msc: 53-01
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: lee_riemannian
+    type: textbook
+    title: Riemannian Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    year: 1997
+    msc: 53-01
+  - id: do_carmo_riemannian
+    type: textbook
+    title: Riemannian Geometry
+    authors:
+    - Manfredo P. do Carmo
+    publisher: Birkhäuser
+    year: 1992
+    msc: 53-01
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
 ---
-
 # 高斯方程与Codazzi方程
 
 ## 引言

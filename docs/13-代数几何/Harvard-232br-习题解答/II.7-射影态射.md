@@ -41,26 +41,19 @@ references:
     year: 2024
     isbn: null
     msc: 14-01
-    chapters: 
+    chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
   databases:
   - id: nlab
     type: database
     name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
+    entry_url: https://ncatlab.org/nlab/show/morphism
     consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
-    consulted_at: 2026-04-17
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/morphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Morphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
 ---
-
 # Harvard 232br - Hartshorne Chapter II §7 习题解答
 
 > 本节覆盖射影态射的判别、分次环的整截面、射影空间自同构、以及 Veronese 嵌入与 Segre 嵌入的性质。

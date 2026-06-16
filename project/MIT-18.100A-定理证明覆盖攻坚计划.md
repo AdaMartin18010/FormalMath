@@ -2,12 +2,24 @@
 title: MIT 18.100A 定理证明覆盖攻坚计划
 msc_primary: 00A99
 task_id: P2-MIT-18.100A
-level: "silver"
-target_courses: ["MIT 18.100A"]
+level: silver
+target_courses:
+- MIT 18.100A
 date: 2026-04-17
 status: in-progress
+course: MIT 18.100A 实分析
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+references:
+  textbooks:
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
 ---
-
 # MIT 18.100A 定理证明覆盖攻坚计划
 
 ## 一、任务背景
@@ -124,3 +136,15 @@ docs/03-分析学/01-实分析/定理证明/
 ---
 
 *计划版本: 1.0 | 创建日期: 2026-04-17 | 任务编号: P2-MIT-18.100A*
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015 (ISBN: 9781493927111)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)

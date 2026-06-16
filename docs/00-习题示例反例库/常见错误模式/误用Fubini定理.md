@@ -1,10 +1,10 @@
 ---
 msc_primary: 00A07
 msc_secondary:
-  - 00A99
-  - 28A35
+- 00A99
+- 28A35
+title: 误用Fubini定理
 ---
-
 # 常见错误: 误用Fubini定理
 
 ## 所属领域

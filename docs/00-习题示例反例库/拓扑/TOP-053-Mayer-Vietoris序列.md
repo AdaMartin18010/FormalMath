@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 代数拓扑-Mayer-Vietoris
 难度: ⭐⭐⭐
 预计时间: 25分钟
+title: Mayer Vietoris序列
 ---
-
 # Mayer-Vietoris序列
 
 ## 题目

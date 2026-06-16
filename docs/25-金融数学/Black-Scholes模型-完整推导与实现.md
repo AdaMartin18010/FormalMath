@@ -1,10 +1,13 @@
 ---
 title: Black-Scholes期权定价模型 - 完整推导与Python实现
-msc_primary: 91
+msc_primary: '91
 
-  - 91G20
+  - 91G20'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
-
 # Black-Scholes期权定价模型 - 完整推导与实现
 
 ## 模型假设

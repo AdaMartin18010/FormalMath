@@ -1,26 +1,37 @@
 ---
-title: "Weil与椭圆曲线：从复乘到模性的桥梁"
+title: Weil与椭圆曲线：从复乘到模性的桥梁
 level: gold
 course: Weil数学理念
 msc_primary: 14
 msc_secondary:
-  - 14H52
+- 14H52
 references:
   textbooks:
-    - title: "Arithmetic of Elliptic Curves"
-      author: "J. H. Silverman"
-      year: 1986
-    - title: "Advanced Topics in the Arithmetic of Elliptic Curves"
-      author: "J. H. Silverman"
-      year: 1994
+  - title: Arithmetic of Elliptic Curves
+    author: J. H. Silverman
+    year: 1986
+  - title: Advanced Topics in the Arithmetic of Elliptic Curves
+    author: J. H. Silverman
+    year: 1994
   papers:
-    - title: "Jacobi sums as 'Grössencharaktere'"
-      author: "A. Weil"
-      year: 1952
+  - title: Jacobi sums as 'Grössencharaktere'
+    author: A. Weil
+    year: 1952
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Elliptic%20curve
+    author: Elliptic curve
+    consulted_at: '2026-04-17'
 status: completed
 created_at: 2026-04-18
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/elliptic+curve
+  wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
+  zbmath_url: https://zbmath.org/?q=au:Elliptic%20curve
 ---
-
 # Weil与椭圆曲线：从复乘到模性的桥梁
 
 ## 1. 引言

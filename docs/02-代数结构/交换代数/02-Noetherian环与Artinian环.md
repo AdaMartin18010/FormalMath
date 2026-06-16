@@ -1,12 +1,15 @@
 ---
 msc_primary: 13E05
 msc_secondary:
-  - 13E10
-  - 13F20
+- 13E10
+- 13F20
 processed_at: '2026-04-20'
 title: Noetherian环与Artinian环
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
-
 # Noetherian环与Artinian环
 
 ## 1. 引言

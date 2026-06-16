@@ -1,67 +1,69 @@
 ---
-title: "范畴论算法Python实现"
-msc_primary: 18
+title: 范畴论算法Python实现
+msc_primary: '18
 
-  - 18A99
-msc_secondary: ["18B99", "18G99", "18N99"]
+  - 18A99'
+msc_secondary:
+- 18B99
+- 18G99
+- 18N99
 processed_at: '2026-04-05'
 references:
   textbooks:
-    - id: artin_algebra
-      type: textbook
-      title: Algebra
-      authors:
-      - Michael Artin
-      publisher: Pearson
-      edition: 2nd
-      year: 2011
-      isbn: 978-0132413770
-      msc: 16-01
-      chapters: 
-      url: ~
-    - id: strang_la
-      type: textbook
-      title: Introduction to Linear Algebra
-      authors:
-      - Gilbert Strang
-      publisher: Wellesley-Cambridge Press
-      edition: 5th
-      year: 2016
-      isbn: 978-0980232776
-      msc: 15-01
-      chapters: 
-      url: ~
-    - id: dummit_foote_aa
-      type: textbook
-      title: Abstract Algebra
-      authors:
-      - David S. Dummit
-      - Richard M. Foote
-      publisher: Wiley
-      edition: 3rd
-      year: 2003
-      isbn: 978-0471433347
-      msc: 13-01
-      chapters: 
-      url: ~
+  - id: artin_algebra
+    type: textbook
+    title: Algebra
+    authors:
+    - Michael Artin
+    publisher: Pearson
+    edition: 2nd
+    year: 2011
+    isbn: 978-0132413770
+    msc: 16-01
+    chapters: null
+    url: null
+  - id: strang_la
+    type: textbook
+    title: Introduction to Linear Algebra
+    authors:
+    - Gilbert Strang
+    publisher: Wellesley-Cambridge Press
+    edition: 5th
+    year: 2016
+    isbn: 978-0980232776
+    msc: 15-01
+    chapters: null
+    url: null
+  - id: dummit_foote_aa
+    type: textbook
+    title: Abstract Algebra
+    authors:
+    - David S. Dummit
+    - Richard M. Foote
+    publisher: Wiley
+    edition: 3rd
+    year: 2003
+    isbn: 978-0471433347
+    msc: 13-01
+    chapters: null
+    url: null
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/category
+    consulted_at: 2026-04-17
+  papers:
+  - title: General Theory of Natural Equivalences
+    author: Samuel Eilenberg, Saunders Mac Lane
+    journal: Transactions of the American Mathematical Society
+    year: 1945
+    doi: 10.2307/2269622
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
 ---
-
 # 范畴论算法Python实现 - 国际标准版
 
 ## 概述
@@ -1196,3 +1198,9 @@ class CategoryTheoryCalculator:
 5. Borceux, F. (1994). Handbook of categorical algebra. Cambridge University Press.
 6. Barr, M., & Wells, C. (1990). Category theory for computing science. Prentice Hall.
 7. Adámek, J., Herrlich, H., & Strecker, G. E. (2009). Abstract and concrete categories. Dover Publications.
+
+---
+
+## 经典论文与原始文献
+
+- Samuel Eilenberg, Saunders Mac Lane, *General Theory of Natural Equivalences*, Transactions of the American Mathematical Society, 1945 (DOI: 10.2307/2269622)

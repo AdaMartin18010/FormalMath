@@ -1,15 +1,16 @@
 ---
-title: "Green 定理 自然语言与 Lean4 对照"
+title: Green 定理 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "通用"
+- 通用
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+course: 向量微积分
+chapter: '10'
 ---
-
 ## 定理陈述
 
 **自然语言**：设 $D \subseteq \mathbb{R}^2$ 是有界闭区域，其边界 $\partial D$ 是分段光滑的简单闭曲线（取逆时针正向）。若 $P(x, y)$ 和 $Q(x, y)$ 在包含 $D$ 的某个开集上连续可微，则

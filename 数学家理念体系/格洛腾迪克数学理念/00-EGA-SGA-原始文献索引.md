@@ -1,84 +1,85 @@
 ---
-title: "EGA与SGA系统引用框架：原始文献索引与核心命题映射"
-level: "gold"
+title: EGA与SGA系统引用框架：原始文献索引与核心命题映射
+level: gold
 msc_primary: 14
 msc_secondary:
-  - 14-01
+- 14-01
 references:
   textbooks:
-    - title: "Éléments de Géométrie Algébrique I"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 4"
-      year: 1960
-      pages: "5–228"
-    - title: "Éléments de Géométrie Algébrique II"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 8"
-      year: 1961
-      pages: "5–222"
-    - title: "Éléments de Géométrie Algébrique III (1re partie)"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 11"
-      year: 1961
-      pages: "5–167"
-    - title: "Éléments de Géométrie Algébrique III (2e partie)"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 17"
-      year: 1963
-      pages: "5–91"
-    - title: "Éléments de Géométrie Algébrique IV (1re partie)"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 20"
-      year: 1964
-      pages: "5–259"
-    - title: "Éléments de Géométrie Algébrique IV (2e partie)"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 24"
-      year: 1965
-      pages: "5–231"
-    - title: "Éléments de Géométrie Algébrique IV (3e partie)"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 28"
-      year: 1966
-      pages: "5–255"
-    - title: "Éléments de Géométrie Algébrique IV (4e partie)"
-      author: "A. Grothendieck & J. Dieudonné"
-      edition: "Publ. Math. IHÉS 32"
-      year: 1967
-      pages: "5–361"
-    - title: "Séminaire de Géométrie Algébrique du Bois Marie 1"
-      author: "A. Grothendieck et al."
-      edition: "Lect. Notes in Math. 224"
-      year: 1971
-    - title: "Séminaire de Géométrie Algébrique du Bois Marie 4 (Tome 1)"
-      author: "M. Artin, A. Grothendieck, J.-L. Verdier"
-      edition: "Lect. Notes in Math. 269"
-      year: 1972
-    - title: "Séminaire de Géométrie Algébrique du Bois Marie 4 (Tome 2)"
-      author: "M. Artin, A. Grothendieck, J.-L. Verdier"
-      edition: "Lect. Notes in Math. 270"
-      year: 1972
-    - title: "Séminaire de Géométrie Algébrique du Bois Marie 4 (Tome 3)"
-      author: "M. Artin, A. Grothendieck, J.-L. Verdier"
-      edition: "Lect. Notes in Math. 305"
-      year: 1973
-    - title: "Séminaire de Géométrie Algébrique du Bois Marie 6"
-      author: "P. Berthelot, A. Grothendieck, L. Illusie"
-      edition: "Lect. Notes in Math. 225"
-      year: 1971
+  - title: Éléments de Géométrie Algébrique I
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 4
+    year: 1960
+    pages: 5–228
+  - title: Éléments de Géométrie Algébrique II
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 8
+    year: 1961
+    pages: 5–222
+  - title: Éléments de Géométrie Algébrique III (1re partie)
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 11
+    year: 1961
+    pages: 5–167
+  - title: Éléments de Géométrie Algébrique III (2e partie)
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 17
+    year: 1963
+    pages: 5–91
+  - title: Éléments de Géométrie Algébrique IV (1re partie)
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 20
+    year: 1964
+    pages: 5–259
+  - title: Éléments de Géométrie Algébrique IV (2e partie)
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 24
+    year: 1965
+    pages: 5–231
+  - title: Éléments de Géométrie Algébrique IV (3e partie)
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 28
+    year: 1966
+    pages: 5–255
+  - title: Éléments de Géométrie Algébrique IV (4e partie)
+    author: A. Grothendieck & J. Dieudonné
+    edition: Publ. Math. IHÉS 32
+    year: 1967
+    pages: 5–361
+  - title: Séminaire de Géométrie Algébrique du Bois Marie 1
+    author: A. Grothendieck et al.
+    edition: Lect. Notes in Math. 224
+    year: 1971
+  - title: Séminaire de Géométrie Algébrique du Bois Marie 4 (Tome 1)
+    author: M. Artin, A. Grothendieck, J.-L. Verdier
+    edition: Lect. Notes in Math. 269
+    year: 1972
+  - title: Séminaire de Géométrie Algébrique du Bois Marie 4 (Tome 2)
+    author: M. Artin, A. Grothendieck, J.-L. Verdier
+    edition: Lect. Notes in Math. 270
+    year: 1972
+  - title: Séminaire de Géométrie Algébrique du Bois Marie 4 (Tome 3)
+    author: M. Artin, A. Grothendieck, J.-L. Verdier
+    edition: Lect. Notes in Math. 305
+    year: 1973
+  - title: Séminaire de Géométrie Algébrique du Bois Marie 6
+    author: P. Berthelot, A. Grothendieck, L. Illusie
+    edition: Lect. Notes in Math. 225
+    year: 1971
   databases:
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/01H8"
-      tag: "01H8"
-    - type: "Numdam"
-      url: "https://www.numdam.org/actas/PMIHES"
-      tag: "PMIHES"
-    - type: "Kerodon"
-      url: "https://kerodon.net"
-      tag: "0001"
-review_status: "draft"
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01H8
+    tags:
+    - 01H8
+    consulted_at: '2026-04-17'
+review_status: draft
+external_ids:
+  stacks_tag:
+    tag: 01H8
+    url: https://stacks.math.columbia.edu/tag/01H8
 ---
-
 # EGA与SGA系统引用框架：原始文献索引与核心命题映射
 
 ## 1. 引言

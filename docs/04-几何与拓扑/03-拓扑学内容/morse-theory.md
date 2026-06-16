@@ -1,53 +1,42 @@
 ---
 title: 莫尔斯理论
-msc_primary: 57
+msc_primary: '57
 
-  - 57R70
-  - 57A99
-  - 58E05
+  - 57R70 - 57A99 - 58E05'
 processed_at: '2026-04-05'
 references:
   textbooks:
-    - id: munkres_top
-      type: textbook
-      title: Topology
-      authors:
-      - James R. Munkres
-      publisher: Pearson
-      edition: 2nd
-      year: 2000
-      isbn: 978-0131816299
-      msc: 54-01
-      chapters: 
-      url: ~
-    - id: lee_ism
-      type: textbook
-      title: Introduction to Smooth Manifolds
-      authors:
-      - John M. Lee
-      publisher: Springer
-      edition: 2nd
-      year: 2012
-      isbn: 978-1441999818
-      msc: 58-01
-      chapters: 
-      url: ~
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: munkres_top
+    type: textbook
+    title: Topology
+    authors:
+    - James R. Munkres
+    publisher: Pearson
+    edition: 2nd
+    year: 2000
+    isbn: 978-0131816299
+    msc: 54-01
+    chapters: null
+    url: null
+  - id: lee_ism
+    type: textbook
+    title: Introduction to Smooth Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    edition: 2nd
+    year: 2012
+    isbn: 978-1441999818
+    msc: 58-01
+    chapters: null
+    url: null
+  papers:
+  - title: Relations between the critical points of a real function of n independent
+      variables
+    author: Marston Morse
+    journal: Transactions of the American Mathematical Society
+    year: 1925
+    doi: 10.2307/1989176
 ---
 # 莫尔斯理论 / Morse Theory
 
@@ -355,3 +344,9 @@ Morse-Bott 理论将 Morse 理论推广到具有对称性的情况，如环路�
 **文档状态**: 莫尔斯理论文档创建完成
 **内容范围**: 基础概念、核心定理、实战问题
 **难度级别**: 研究生中级
+
+---
+
+## 经典论文与原始文献
+
+- Marston Morse, *Relations between the critical points of a real function of n independent variables*, Transactions of the American Mathematical Society, 1925 (DOI: 10.2307/1989176)

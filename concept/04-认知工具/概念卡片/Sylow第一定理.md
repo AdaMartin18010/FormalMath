@@ -1,10 +1,14 @@
 ---
-msc_primary: "20D20"
+msc_primary: 20D20
 msc_secondary:
-  - 20D15
-  - 20E28
+- 20D15
+- 20E28
+title: Sylow第一定理
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
-
 # 概念卡片：Sylow第一定理
 
 ## 严格定义

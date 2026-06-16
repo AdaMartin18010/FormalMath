@@ -1,10 +1,18 @@
 ---
-title: "Deligne证明Weil猜想：20世纪数学的里程碑"
+title: Deligne证明Weil猜想：20世纪数学的里程碑
 msc_primary: 14
 msc_secondary:
-  - 14G10
-msc_secondary: ["11G25", "14F20", "11M38"]
+- 11G25
+- 14F20
+- 11M38
 processed_at: '2026-04-05'
+references:
+  papers:
+  - title: La conjecture de Weil. I
+    author: Pierre Deligne
+    journal: Publications Mathématiques de l'IHÉS
+    year: 1974
+    doi: 10.1007/BF02684673
 ---
 # Deligne证明Weil猜想：20世纪数学的里程碑
 
@@ -375,3 +383,9 @@ $H^{n-1}(X_t)$ 分解为不变部分和vanishing cycle生成的子空间。
 **MSC分类**: 14G10 (Primary), 11G25, 14F20, 11M38 (Secondary)
 **难度级别**: 研究生/高级本科生
 **最后更新**: 2026年4月3日
+
+---
+
+## 经典论文与原始文献
+
+- Pierre Deligne, *La conjecture de Weil. I*, Publications Mathématiques de l'IHÉS, 1974 (DOI: 10.1007/BF02684673)

@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 04E2 Cup积
+external_ids:
+  stacks_tag:
+    tag: 04E2
+    url: https://stacks.math.columbia.edu/tag/04E2
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/04E2
+    tags:
+    - 04E2
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 04E2 - 上同调运算（Cup Product）
 
 ## 1. 基本概念与定义

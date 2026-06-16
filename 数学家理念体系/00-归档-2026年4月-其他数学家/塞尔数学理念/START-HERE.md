@@ -5,8 +5,10 @@ msc_secondary:
 - 01A65
 - 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
 ---
-
 # 10分钟了解让-皮埃尔·塞尔
 
 > **让-皮埃尔·塞尔 (Jean-Pierre Serre, 1926-)**

@@ -1,13 +1,15 @@
 ---
-msc_primary: 11
+msc_primary: '11
 
-  - 11S20
-  - 12F10
-  - 20J06
+  - 11S20 - 12F10 - 20J06'
 title: Galois对应的多维视角 - 域扩张与子群的思维导图
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
 ---
-
 # Galois对应的多维视角
 
 **创建日期**: 2026年4月10日  

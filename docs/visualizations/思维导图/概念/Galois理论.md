@@ -1,9 +1,14 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: Galois理论 思维导图
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Galois+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Galois_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Galois%E7%90%86%E8%AE%BA
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

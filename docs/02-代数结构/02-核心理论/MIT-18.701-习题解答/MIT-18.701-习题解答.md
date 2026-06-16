@@ -1,70 +1,62 @@
 ---
-title: "MIT 18.701 抽象代数 I — 习题详细解答"
+title: MIT 18.701 抽象代数 I — 习题详细解答
 msc_primary: 08A99
-level: "silver"
-target_courses: ["MIT 18.701"]
-date: "2026-04-17"
+level: silver
+target_courses:
+- MIT 18.701
+date: '2026-04-17'
 references:
   textbooks:
-    - id: artin_algebra
-      type: textbook
-      title: Algebra
-      authors:
-      - Michael Artin
-      publisher: Pearson
-      edition: 2nd
-      year: 2011
-      isbn: 978-0132413770
-      msc: 16-01
-      chapters: 
-      url: ~
-    - id: strang_la
-      type: textbook
-      title: Introduction to Linear Algebra
-      authors:
-      - Gilbert Strang
-      publisher: Wellesley-Cambridge Press
-      edition: 5th
-      year: 2016
-      isbn: 978-0980232776
-      msc: 15-01
-      chapters: 
-      url: ~
-    - id: dummit_foote_aa
-      type: textbook
-      title: Abstract Algebra
-      authors:
-      - David S. Dummit
-      - Richard M. Foote
-      publisher: Wiley
-      edition: 3rd
-      year: 2003
-      isbn: 978-0471433347
-      msc: 13-01
-      chapters: 
-      url: ~
-  databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: artin_algebra
+    type: textbook
+    title: Algebra
+    authors:
+    - Michael Artin
+    publisher: Pearson
+    edition: 2nd
+    year: 2011
+    isbn: 978-0132413770
+    msc: 16-01
+    chapters: null
+    url: null
+    author: Michael Artin
+  - id: strang_la
+    type: textbook
+    title: Introduction to Linear Algebra
+    authors:
+    - Gilbert Strang
+    publisher: Wellesley-Cambridge Press
+    edition: 5th
+    year: 2016
+    isbn: 978-0980232776
+    msc: 15-01
+    chapters: null
+    url: null
+    author: Gilbert Strang
+  - id: dummit_foote_aa
+    type: textbook
+    title: Abstract Algebra
+    authors:
+    - David S. Dummit
+    - Richard M. Foote
+    publisher: Wiley
+    edition: 3rd
+    year: 2003
+    isbn: 978-0471433347
+    msc: 13-01
+    chapters: null
+    url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+course: MIT 18.701 抽象代数
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
 ---
-
 本文件为 MIT 18.701 抽象代数 I 的 Problem Sets 补充至少 15 道习题的详细解答，覆盖群论、同构定理、群作用、环论与唯一分解等核心主题。
 
 ---
@@ -222,3 +214,23 @@ $S_4$ 通过共轭作用于自身。所有对换构成一个轨道。取 $\sigma
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011 (ISBN: 978-0132413770)
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016 (ISBN: 978-0980232776)
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003 (ISBN: 978-0471433347; MR: MR2286236)
+
+### 数据库与网络资源
+
+- [nLab](https://ncatlab.org/nlab/show/{entry})
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+- [zbMATH Open](https://zbmath.org/?q=an:{zb_id})
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)

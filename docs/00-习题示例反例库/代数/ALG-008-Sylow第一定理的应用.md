@@ -1,7 +1,7 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20D20
+  - 20D20'
 exercise_id: ALG-008
 title: Sylow第一定理的应用
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 群论进阶
 source:
   course: MIT 18.701 Algebra I
-  chapter: "5.4"
+  chapter: '5.4'
   original: true
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
-
 # ALG-008: Sylow第一定理的应用
 
 **题号**: ALG-008

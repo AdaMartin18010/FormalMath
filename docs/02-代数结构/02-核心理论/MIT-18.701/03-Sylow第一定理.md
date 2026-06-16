@@ -21,6 +21,7 @@ references:
     - 'Chapter 7: More Group Theory, Section 7.7'
     url: null
     pages: 205-210
+    author: Michael Artin
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -31,8 +32,9 @@ references:
     year: 2016
     isbn: 978-0980232776
     msc: 15-01
-    chapters: 
+    chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -48,30 +50,29 @@ references:
     - 'Chapter 5: Group Actions, Section 5.4 (Sylow Theorems)'
     url: null
     pages: 139-146
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
   databases:
   - id: nlab
     type: database
     name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
+    entry_url: https://ncatlab.org/nlab/show/Sylow+theorem
     consulted_at: 2026-04-17
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+course: MIT 18.701 抽象代数
+chapter: '03'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
-
 ## 1. 引言
 
 Sylow 定理是有限群论的基石，提供了 $p$-子群存在性、共轭性与计数条件的完整描述。本节聚焦 Sylow 第一定理。
@@ -233,3 +234,26 @@ $|S_4| = 24 = 2^3 \cdot 3$。Sylow $3$-子群的阶为 $3$。设个数为 $n_3$�
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011 (Chapters: ['Chapter 7: More Group Theory, Section 7.7']; Pages: 205-210; ISBN: 978-0132413770)
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016 (ISBN: 978-0980232776)
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003 (Chapters: ['Chapter 5: Group Actions, Section 5.4 (Sylow Theorems)']; Pages: 139-146; ISBN: 978-0471433347; MR: MR2286236)
+
+### 数据库与网络资源
+
+- [nLab](https://ncatlab.org/nlab/show/{entry})
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+- [zbMATH Open](https://zbmath.org/?q=an:{zb_id})
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)
+- [Nlab Url](https://ncatlab.org/nlab/show/Sylow+theorem)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Sylow_theorems)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Sylow)

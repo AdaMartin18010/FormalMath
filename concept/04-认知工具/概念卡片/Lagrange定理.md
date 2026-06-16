@@ -1,10 +1,10 @@
 ---
-msc_primary: "20Dxx"
+msc_primary: 20Dxx
 msc_secondary:
-  - 20F16
-  - 20E07
+- 20F16
+- 20E07
+title: Lagrange定理
 ---
-
 # 概念卡片：Lagrange定理
 
 ## 严格定义

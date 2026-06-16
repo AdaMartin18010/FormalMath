@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 013U 投影分解
 ---
-
 # Stacks Tag 013U - 投影分解
 
 ## 1. Tag基本信息

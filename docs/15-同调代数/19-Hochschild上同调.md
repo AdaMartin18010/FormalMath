@@ -2,36 +2,39 @@
 title: Hochschild上同调
 description: 介绍Hochschild上同调的定义、与代数形变的关系、Gerstenhaber代数结构，以及在非交换几何中的应用。
 msc_primary:
-  - 16E40
+- 16E40
 msc_secondary:
-  - 16S80
-  - 18G60
+- 16S80
+- 18G60
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: weibel_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Charles A. Weibel
-      publisher: Cambridge University Press
-      year: 1994
-      msc: 18-01
-    - id: gerstenhaber
-      type: textbook
-      title: Deformation Theory
-      authors:
-        - Robin Hartshorne
-      publisher: Springer
-      year: 2010
-      msc: 14-01
+  - id: weibel_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Charles A. Weibel
+    publisher: Cambridge University Press
+    year: 1994
+    msc: 18-01
+  - id: gerstenhaber
+    type: textbook
+    title: Deformation Theory
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    year: 2010
+    msc: 14-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/cohomology
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
 ---
-
 # Hochschild上同调
 
 ## 引言

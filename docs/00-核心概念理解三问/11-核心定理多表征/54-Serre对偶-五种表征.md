@@ -1,11 +1,19 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 14A99
-  - 00A99
-  - 00A99
+  - 14A99 - 00A99 - 00A99'
 title: Serre对偶定理 - 五种表征
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+references:
+  papers:
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
 ---
 # Serre对偶定理 - 五种表征
 
@@ -402,3 +410,9 @@ Serre对偶定理是：
 **数学公式数**: 8个
 **例子数**: 6个
 **最后更新**: 2026年01月02日
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)

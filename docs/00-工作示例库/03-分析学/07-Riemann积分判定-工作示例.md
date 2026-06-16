@@ -1,10 +1,14 @@
 ---
-msc_primary: 26
+msc_primary: '26
 
-  - 26A42
-  - 26A39
+  - 26A42 - 26A39'
 title: Riemann可积性判定 - 工作示例
 processed_at: '2026-04-08'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/integral
+  wikipedia_url: https://en.wikipedia.org/wiki/Integral
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
 ---
 # Riemann可积性判定 - 工作示例
 

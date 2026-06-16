@@ -1,10 +1,21 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A15
-  - 01A99
+- 00A15
+- 01A99
 title: Haskell范畴论例题
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
+references:
+  papers:
+  - title: General Theory of Natural Equivalences
+    author: Samuel Eilenberg, Saunders Mac Lane
+    journal: Transactions of the American Mathematical Society
+    year: 1945
+    doi: 10.2307/2269622
 ---
 # Haskell范畴论例题
 
@@ -386,3 +397,9 @@ h (Right y) = g y
 **最后更新**: 2025年12月11日
 **参考章节**: 全书
 **参考资源**: Wikipedia, Haskell Wiki, MIT 18.701, Stanford CS242
+
+---
+
+## 经典论文与原始文献
+
+- Samuel Eilenberg, Saunders Mac Lane, *General Theory of Natural Equivalences*, Transactions of the American Mathematical Society, 1945 (DOI: 10.2307/2269622)

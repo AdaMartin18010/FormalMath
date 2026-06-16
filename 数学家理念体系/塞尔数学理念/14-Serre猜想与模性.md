@@ -1,26 +1,38 @@
 ---
-title: "Serre模性猜想：从数论到表示论的桥梁"
+title: Serre模性猜想：从数论到表示论的桥梁
 level: gold
 course: Serre数学理念
 msc_primary: 11
 msc_secondary:
-  - 11F80
+- 11F80
 references:
   textbooks:
-    - title: "Modular Forms and Fermat's Last Theorem"
-      author: "G. Cornell, J. H. Silverman & G. Stevens"
-      year: 1997
+  - title: Modular Forms and Fermat's Last Theorem
+    author: G. Cornell, J. H. Silverman & G. Stevens
+    year: 1997
   papers:
-    - title: "Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)"
-      author: "J-P. Serre"
-      year: 1987
-    - title: "Serre's modularity conjecture (I)"
-      author: "C. Khare & J-P. Wintenberger"
-      year: 2009
+  - title: Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)
+    author: J-P. Serre
+    year: 1987
+  - title: Serre's modularity conjecture (I)
+    author: C. Khare & J-P. Wintenberger
+    year: 2009
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Number%20theory
+    author: Number theory
+    consulted_at: '2026-04-17'
 status: completed
 created_at: 2026-04-18
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  zbmath_url: https://zbmath.org/?q=au:Number%20theory
 ---
-
 # Serre模性猜想：从数论到表示论的桥梁
 
 ## 1. 引言

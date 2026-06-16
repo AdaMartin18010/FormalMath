@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01E8 层上同调定义
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
+  stacks_tag:
+    tag: 01E8
+    url: https://stacks.math.columbia.edu/tag/01E8
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01E8
+    tags:
+    - 01E8
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 01E8 解读：层上同调定义
 
 ## 1. Tag基本信息

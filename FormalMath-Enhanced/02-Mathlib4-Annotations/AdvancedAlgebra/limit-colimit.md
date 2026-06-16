@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 极限与余极限
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/limit
+  wikipedia_url: https://en.wikipedia.org/wiki/Limit_(category_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90
 ---
 # 极限与余极限
 

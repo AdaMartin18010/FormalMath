@@ -1,39 +1,58 @@
 ---
-title: "Sylow 第一定理（Sylow's First Theorem）"
-level: "silver"
+title: Sylow 第一定理（Sylow's First Theorem）
+level: silver
 course: MIT 18.701 抽象代数
 msc_primary: 20
 target_courses:
-  - "MIT 18.701"
+- MIT 18.701
 references:
   textbooks:
-    - title: "Algebra"
-      author: "Michael Artin"
-      edition: "2nd"
-      chapters: "Chapter 6, Section 4"
-      pages: "205-208"
-    - title: "Abstract Algebra"
-      author: "David S. Dummit and Richard M. Foote"
-      edition: "3rd"
-      chapters: "Chapter 4, Section 5"
-      pages: "139-143"
+  - title: Algebra
+    author: Michael Artin
+    edition: 2nd
+    chapters: Chapter 6, Section 4
+    pages: 205-208
+    publisher: Pearson
+    year: 2010
+    isbn: '9780132413770'
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    chapters: Chapter 4, Section 5
+    pages: 139-143
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
   lectures:
-    - institution: "MIT"
-      course_code: "18.701"
-      lecture: "Lecture 14-15"
-      url: "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2020/"
+  - institution: MIT
+    course_code: '18.701'
+    lecture: Lecture 14-15
+    url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2020/
+  assignments:
+  - name: Problem Set 4
+    url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset4.pdf
 keywords:
-  - "Sylow's First Theorem"
-  - "p-group"
-  - "Sylow p-subgroup"
-  - "group action"
-  - "finite group"
-status: "draft"
+- Sylow's First Theorem
+- p-group
+- Sylow p-subgroup
+- group action
+- finite group
+status: draft
 review_rounds: 0
-created_at: "2026-04-18"
+created_at: '2026-04-18'
 review_status: mathematical_reviewed
+chapter: '6'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+  ocw_lecture_notes_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/lecture-notes/
+  ocw_problem_sets:
+  - https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset4.pdf
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
-
 # Sylow 第一定理（Sylow's First Theorem）
 
 > **课程**: MIT 18.701 抽象代数 I | **主题**: 有限群的 p-子群存在性
@@ -421,8 +440,27 @@ $$\{1\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_n = G
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2010 (Chapters: Chapter 6, Section 4; Pages: 205-208; ISBN: 9780132413770)
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003 (Chapters: Chapter 4, Section 5; Pages: 139-143; ISBN: 9780471433347; MR: MR2286236)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)
+- [Ocw Lecture Notes Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/lecture-notes/)
+- [Ocw Problem Sets](['https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset4.pdf'])
+- [Nlab Url](https://ncatlab.org/nlab/show/Sylow+theorem)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Sylow_theorems)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Sylow)

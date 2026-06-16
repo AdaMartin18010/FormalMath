@@ -1,12 +1,13 @@
 ---
-msc_primary: 82
+msc_primary: '82
 
-  - 82B03
-  - 82B05
-  - 60G60
-  - 28D20
+  - 82B03 - 82B05 - 60G60 - 28D20'
 title: Gibbs测度与统计系综
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/measure
+  wikipedia_url: https://en.wikipedia.org/wiki/Measure_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%8B%E5%BA%A6
 ---
 # Gibbs测度与统计系综
 

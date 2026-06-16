@@ -2,36 +2,39 @@
 title: Ricci曲率与标量曲率
 description: 详细介绍Ricci曲率和标量曲率的定义、几何意义、缩并过程，以及Einstein流形和Einstein场方程的数学基础。
 msc_primary:
-  - 53B20
+- 53B20
 msc_secondary:
-  - 53C25
-  - 83C05
+- 53C25
+- 83C05
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: lee_riemannian
-      type: textbook
-      title: Riemannian Manifolds
-      authors:
-        - John M. Lee
-      publisher: Springer
-      year: 1997
-      msc: 53-01
-    - id: do_carmo_riemannian
-      type: textbook
-      title: Riemannian Geometry
-      authors:
-        - Manfredo P. do Carmo
-      publisher: Birkhäuser
-      year: 1992
-      msc: 53-01
+  - id: lee_riemannian
+    type: textbook
+    title: Riemannian Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    year: 1997
+    msc: 53-01
+  - id: do_carmo_riemannian
+    type: textbook
+    title: Riemannian Geometry
+    authors:
+    - Manfredo P. do Carmo
+    publisher: Birkhäuser
+    year: 1992
+    msc: 53-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/curvature
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/curvature
+  wikipedia_url: https://en.wikipedia.org/wiki/Curvature
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9B%B2%E7%8E%87
 ---
-
 # Ricci曲率与标量曲率
 
 ## 引言

@@ -1,10 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A15
-  - 01A99
+- 00A15
+- 01A99
 title: 黎曼数学哲学专题分析：内蕴几何与统一性思想的Genesis
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
 ---
 # 黎曼数学哲学专题分析：内蕴几何与统一性思想的Genesis
 

@@ -1,12 +1,12 @@
 ---
-msc_primary: 12
+msc_primary: '12
 
-  - 12F10
-  - 12F05
-  - 20B25
-  - 97H40
+  - 12F10 - 12F05 - 20B25 - 97H40'
 title: Galois 基本定理
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Evariste_Galois
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
 ---
 # Galois 基本定理
 

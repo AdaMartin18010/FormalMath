@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01R1 局部有限型态射
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/morphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Morphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
+  stacks_tag:
+    tag: 01R1
+    url: https://stacks.math.columbia.edu/tag/01R1
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01R1
+    tags:
+    - 01R1
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Tag 01R1 - 局部有限型态射
 
 ## 1. Tag基本信息

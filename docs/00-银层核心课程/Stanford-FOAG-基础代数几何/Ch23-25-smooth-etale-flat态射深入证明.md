@@ -1,59 +1,69 @@
 ---
-title: "Ch 23–25: Smooth / Étale / Flat 态射深入证明"
-msc_primary: 14
-  - 14B25
-  - 14F20
-
-level: "silver"
+title: 'Ch 23–25: Smooth / Étale / Flat 态射深入证明'
+msc_primary: 14 - 14B25 - 14F20
+level: silver
 target_courses:
-  - "Stanford FOAG Ch.23–25"
+- Stanford FOAG Ch.23–25
 course: Stanford FOAG 基础代数几何
-course_code: "Math 216A/B"
-instructor: "Ravi Vakil"
-foag_chapter: "Ch 23, Ch 24, Ch 25"
-topic: "Smooth, étale and flat morphisms; Jacobian criterion; fiber dimension"
-exercise_type: "THM+TEC"
-difficulty: "⭐⭐⭐⭐⭐"
-importance: "★★★★★"
+course_code: Math 216A/B
+instructor: Ravi Vakil
+foag_chapter: Ch 23, Ch 24, Ch 25
+topic: Smooth, étale and flat morphisms; Jacobian criterion; fiber dimension
+exercise_type: THM+TEC
+difficulty: ⭐⭐⭐⭐⭐
+importance: ★★★★★
 references:
   textbooks:
-    - id: vakil_foag
-      type: textbook
-      title: "Foundations of Algebraic Geometry"
-      authors:
-        - "Ravi Vakil"
-      publisher: "self-published"
-      edition: "draft"
-      year: 2024
-      chapters:
-        - "Ch 23: Smooth morphisms"
-        - "Ch 24: Étale morphisms"
-        - "Ch 25: Flat morphisms"
-      url: "https://math.stanford.edu/~vakil/216blog/"
-    - id: hartshorne_ag
-      type: textbook
-      title: "Algebraic Geometry"
-      authors:
-        - "Robin Hartshorne"
-      publisher: "Springer"
-      edition: "1st"
-      year: 1977
-      chapters:
-        - "Chapter III, Section 10: Smooth Morphisms"
-      pages: "268-290"
-  databases:
-    - id: stacks_project
-      type: database
-      name: "Stacks Project"
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: "2026-04-18"
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    chapters:
+    - 'Ch 23: Smooth morphisms'
+    - 'Ch 24: Étale morphisms'
+    - 'Ch 25: Flat morphisms'
+    url: https://math.stanford.edu/~vakil/216blog/
+    isbn: ''
+    author: Ravi Vakil
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    chapters:
+    - 'Chapter III, Section 10: Smooth Morphisms'
+    pages: 268-290
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    author: Robin Hartshorne
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+    chapters: Ch 23–25
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 created_at: 2026-04-18
+chapter: '23'
+external_ids:
+  ocw_url: https://math.stanford.edu/~vakil/216blog/
+  ocw_ps_url: https://math.stanford.edu/~vakil/216blog/
+  foag_pdf_url: https://math.stanford.edu/~vakil/216blog/
+  nlab_url: https://ncatlab.org/nlab/show/morphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Morphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
 ---
-
 # Ch 23–25: Smooth / Étale / Flat 态射深入证明
 
 > **课程**: Stanford FOAG (Math 216A/B)
@@ -569,8 +579,31 @@ $$\chi(X_y, \mathcal{O}) = \sum_{i=0}^{\dim(X_y)} (-1)^i h^i(X_y, \mathcal{O})$$
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 (Chapters: ['Ch 23: Smooth morphisms', 'Ch 24: Étale morphisms', 'Ch 25: Flat morphisms']) [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['Chapter III, Section 10: Smooth Morphisms']; Pages: 268-290; ISBN: 9780387902449; MR: MR0463157)
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024 (Chapters: Ch 23–25)
+
+### 数据库与网络资源
+
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
+### 课程与外部链接
+
+- [Ocw Url](https://math.stanford.edu/~vakil/216blog/)
+- [Ocw Ps Url](https://math.stanford.edu/~vakil/216blog/)
+- [Foag Pdf Url](https://math.stanford.edu/~vakil/216blog/)
+- [Nlab Url](https://ncatlab.org/nlab/show/morphism)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Morphism)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84)

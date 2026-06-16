@@ -3,10 +3,17 @@ exercise_id: ALG-060
 title: Ext与Tor函子的基本计算
 msc_primary: 00A99
 difficulty: ⭐⭐⭐⭐
-topics: [Ext函子, Tor函子, 导出函子, 投射分解]
+topics:
+- Ext函子
+- Tor函子
+- 导出函子
+- 投射分解
 created: 2026-04-10
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
 ---
-
 ## 题目
 
 设 $R$ 是含幺环，$M, N$ 是 $R$-模。

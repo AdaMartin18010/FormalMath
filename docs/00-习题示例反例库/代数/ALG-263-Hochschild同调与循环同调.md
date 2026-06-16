@@ -1,7 +1,7 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16E40
+  - 16E40'
 exercise_id: ALG-263
 title: Hochschild同调与循环同调
 difficulty: 3
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 非交换几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
-
 # ALG-263: Hochschild同调与循环同调
 
 **题号**: ALG-263

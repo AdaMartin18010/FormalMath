@@ -1,10 +1,13 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42A16
-  - 42A20
+  - 42A16 - 42A20'
 title: Fourier级数展开 - 工作示例
 processed_at: '2026-04-08'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/series
+  wikipedia_url: https://en.wikipedia.org/wiki/Series_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BA%A7%E6%95%B0
 ---
 # Fourier级数展开 - 工作示例
 

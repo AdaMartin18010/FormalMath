@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0F1C 算术D 模
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
+  stacks_tag:
+    tag: 0F1C
+    url: https://stacks.math.columbia.edu/tag/0F1C
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0F1C
+    tags:
+    - 0F1C
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0F1C - 算术D-模
 
 ## 1. 基本概念与定义

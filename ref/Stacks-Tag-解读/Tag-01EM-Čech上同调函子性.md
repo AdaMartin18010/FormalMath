@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01EM Čech上同调函子性
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
+  stacks_tag:
+    tag: 01EM
+    url: https://stacks.math.columbia.edu/tag/01EM
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01EM
+    tags:
+    - 01EM
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 01EM - Čech上同调的函子性
 
 > **来源**: [Stacks Project](https://stacks.math.columbia.edu/tag/01EM)  

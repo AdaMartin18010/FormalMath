@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 同构定理 (Isomorphism Theorems)
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/isomorphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Isomorphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E6%9E%84
 ---
 # 同构定理 (Isomorphism Theorems)
 

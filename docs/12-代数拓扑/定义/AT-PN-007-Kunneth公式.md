@@ -1,18 +1,36 @@
 ---
 msc_primary: 55A99
 university: Princeton
-synonym: [Kunneth Formula, Kunneth定理, 积空间同调]
+synonym:
+- Kunneth Formula
+- Kunneth定理
+- 积空间同调
 type: 定义
 level: L3-理论建构层
 difficulty: ⭐⭐⭐⭐⭐
-concept_dependency: [张量积, Tor函子, 同调群]
-prerequisite_concepts: [同调群, 张量积, Ext函子, Tor函子]
-prerequisite_theorems: [万有系数定理, 代数Kunneth公式]
+concept_dependency:
+- 张量积
+- Tor函子
+- 同调群
+prerequisite_concepts:
+- 同调群
+- 张量积
+- Ext函子
+- Tor函子
+prerequisite_theorems:
+- 万有系数定理
+- 代数Kunneth公式
 course_context: MAT 365 Topology
-msc2010: [55N10, 55U25, 18G15]
-related_concepts: [万有系数定理, 上同调的Kunneth公式, 纤维丛]
+msc2010:
+- 55N10
+- 55U25
+- 18G15
+related_concepts:
+- 万有系数定理
+- 上同调的Kunneth公式
+- 纤维丛
+title: AT PN 007 Kunneth公式
 ---
-
 # AT-PN-007: Kunneth公式 (Kunneth Formula)
 
 > **来源**: Princeton MAT 365 (Topology) | Hatcher Chapter 3, Section B, p. 274-275

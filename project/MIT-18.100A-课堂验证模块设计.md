@@ -1,9 +1,23 @@
 ---
-title: "MIT 18.100A 课堂验证模块设计"
+title: MIT 18.100A 课堂验证模块设计
 msc_primary: 00A99
-level: "silver"
+level: silver
+course: MIT 18.100A 实分析
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
+references:
+  textbooks:
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
 ---
-
 # MIT 18.100A 课堂验证模块设计
 
 ## 1. 模块概述
@@ -59,3 +73,18 @@ level: "silver"
 3. 你在阅读过程中遇到的最大困难是什么？（开放题）
 4. 你是否愿意在后续课程中继续使用此类文档？（是/否/不确定）
 5. 请对本模块的文档质量提出改进建议。（开放题）
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015 (ISBN: 9781493927111)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)
+- [Nlab Url](https://ncatlab.org/nlab/show/module)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Module_(mathematics))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%A8%A1)

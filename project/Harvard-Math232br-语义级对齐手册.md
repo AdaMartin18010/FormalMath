@@ -1,15 +1,18 @@
 ---
 msc_primary: 14
 msc_secondary:
-  - 14F25
+- 14F25
 title: Harvard Math 232br 代数几何（凝聚层、上同调、曲线与曲面）语义级对齐手册
 course_code: Harvard Math 232br
 course_name: Algebraic Geometry (Coherent Sheaves, Cohomology, Curves and Surfaces)
 instructor: 2025-2026学年
 semester: Spring 2026
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
 ---
-
 # Harvard Math 232br 代数几何语义级对齐手册
 
 **课程代码**: Harvard Math 232br

@@ -1,13 +1,14 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14F30
-  - 14F40
-  - 11G25
+  - 14F30 - 14F40 - 11G25'
 title: p进Hodge理论的比较同构 - de Rham、étale与晶体上同调的联系
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/isomorphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Isomorphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E6%9E%84
 ---
-
 # p进Hodge理论的比较同构
 
 **创建日期**: 2026年4月10日  

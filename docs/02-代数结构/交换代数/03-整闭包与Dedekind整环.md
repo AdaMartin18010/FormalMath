@@ -1,12 +1,25 @@
 ---
 msc_primary: 13B22
 msc_secondary:
-  - 13F05
-  - 13G05
+- 13F05
+- 13G05
 processed_at: '2026-04-20'
 title: 整闭包与Dedekind整环
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
+  stacks_tag:
+    tag: 00GH
+    url: https://stacks.math.columbia.edu/tag/00GH
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00GH
+    consulted_at: '2026-04-17'
 ---
-
 # 整闭包与Dedekind整环
 
 ## 1. 引言

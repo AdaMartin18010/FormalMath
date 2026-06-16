@@ -1,9 +1,25 @@
 ---
 msc_primary: 97A30
 msc_secondary:
-  - 00A05
+- 00A05
+level: silver
+course: UCLA 微分几何
+chapter: '0'
+references:
+  textbooks:
+  - title: Differential Geometry of Curves and Surfaces
+    author: Manfredo P. do Carmo
+    edition: 1st
+    publisher: Prentice-Hall
+    year: 1976
+    isbn: '9780132125895'
+    mr_number: MR0394451
+title: UCLA 微分几何 学习诊断手册
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/differential+geometry
+  wikipedia_url: https://en.wikipedia.org/wiki/Differential_geometry
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95
 ---
-
 # UCLA 微分几何学习诊断手册
 
 ## 常见错误模式
@@ -38,3 +54,16 @@ msc_secondary:
 - [相关: Ch01-向量与向量运算](../00-银层核心课程/MIT-18.02-多元微积分/Ch01-向量与向量运算.md)
 - [相关: ANA-001-序列极限四则运算](../00-习题示例反例库/实分析/ANA-001-序列极限四则运算.md)
 - [相关: 01-拓扑空间](../00-知识层次体系/L1-形式化定义层/05-拓扑学基础/01-拓扑空间.md)
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Manfredo P. do Carmo, *Differential Geometry of Curves and Surfaces*, 1st ed., Prentice-Hall, 1976 (ISBN: 9780132125895; MR: MR0394451)
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/differential+geometry)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Differential_geometry)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95)

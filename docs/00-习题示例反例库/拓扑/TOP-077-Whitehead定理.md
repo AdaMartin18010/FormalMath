@@ -6,8 +6,8 @@ msc_secondary: 55Q05, 57N65
 知识点: 同伦论-Whitehead定理
 难度: ⭐⭐⭐⭐
 预计时间: 40分钟
+title: Whitehead定理
 ---
-
 # Whitehead定理
 
 ## 题目

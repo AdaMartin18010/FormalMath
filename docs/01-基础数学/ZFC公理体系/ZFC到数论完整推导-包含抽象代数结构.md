@@ -1,12 +1,17 @@
 ---
-title: "ZFC到数论完整推导 - 包含抽象代数结构"
-msc_primary: 03
+title: ZFC到数论完整推导 - 包含抽象代数结构
+msc_primary: '03
 
-  - 03E99
-msc_secondary: ['03E30', '03B30']
+  - 03E99'
+msc_secondary:
+- 03E30
+- 03B30
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
 ---
-
 # ZFC到数论完整推导 - 包含抽象代数结构
 
 **创建日期**: 2025年11月12日

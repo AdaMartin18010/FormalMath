@@ -1,7 +1,7 @@
 ---
-msc_primary: 57
+msc_primary: '57
 
-  - 57M27
+  - 57M27'
 exercise_id: TOP-127
 title: Khovanov同调与Jones多项式范畴化
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 拓扑
 subtopic: 纽结同调
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
 ---
-
 # TOP-127: Khovanov同调与Jones多项式范畴化
 
 **题号**: TOP-127

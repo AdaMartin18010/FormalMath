@@ -1,18 +1,36 @@
 ---
 msc_primary: 55A99
 university: Princeton
-synonym: [Fundamental Group, 第一同伦群, Poincaré群]
+synonym:
+- Fundamental Group
+- 第一同伦群
+- Poincaré群
 type: 定义
 level: L3-理论建构层
 difficulty: ⭐⭐⭐
-concept_dependency: [同伦, 道路, 环路, 拓扑空间]
-prerequisite_concepts: [同伦, 道路连通空间]
-prerequisite_theorems: 
+concept_dependency:
+- 同伦
+- 道路
+- 环路
+- 拓扑空间
+prerequisite_concepts:
+- 同伦
+- 道路连通空间
+prerequisite_theorems: null
 course_context: MAT 365 Topology
-msc2010: [55Q05, 55P10]
-related_concepts: [覆叠空间, 同伦群, van Kampen定理]
+msc2010:
+- 55Q05
+- 55P10
+related_concepts:
+- 覆叠空间
+- 同伦群
+- van Kampen定理
+title: AT PN 002 基本群
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # AT-PN-002: 基本群 (Fundamental Group)
 
 > **来源**: Princeton MAT 365 (Topology) | Hatcher Chapter 1, Section 1, p. 25-30

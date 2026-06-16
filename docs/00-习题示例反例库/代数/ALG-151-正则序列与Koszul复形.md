@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 交换代数-Koszul复形
 难度: ⭐⭐⭐⭐
 预计时间: 40分钟
+title: ALG 151 正则序列与Koszul复形
 ---
-
 # 正则序列与Koszul复形
 
 ## 题目

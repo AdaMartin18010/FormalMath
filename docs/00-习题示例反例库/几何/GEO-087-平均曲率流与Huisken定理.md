@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53E10
+  - 53E10'
 exercise_id: GEO-087
 title: 平均曲率流与Huisken定理
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 几何
 subtopic: 几何流
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/curvature
+  wikipedia_url: https://en.wikipedia.org/wiki/Curvature
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9B%B2%E7%8E%87
 ---
-
 # GEO-087: 平均曲率流与Huisken定理
 
 **题号**: GEO-087

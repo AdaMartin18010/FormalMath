@@ -1,10 +1,38 @@
 ---
 msc_primary: 14Fxx
 msc_secondary:
-  - 18Gxx
-  - 01A70
+- 18Gxx
+- 01A70
+title: 04 Grothendieck Riemann Roch定理
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  stacks_tag:
+    tag: 02UK
+    url: https://stacks.math.columbia.edu/tag/02UK
+  zbmath_url: https://zbmath.org/?q=au:Bernhard%20Riemann
+references:
+  papers:
+  - title: Le théorème de Riemann-Roch
+    author: Armand Borel, Jean-Pierre Serre
+    journal: Bulletin de la Société Mathématique de France
+    year: 1958
+    doi: 10.24033/bsmf.1500
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/02UK
+    tags:
+    - 02UK
+    consulted_at: '2026-04-17'
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Bernhard%20Riemann
+    author: Bernhard Riemann
+    consulted_at: '2026-04-17'
 ---
-
 ﻿---
 title: "Grothendieck-Riemann-Roch 定理：从 K-理论到陈类的形式化"
 level: "gold"
@@ -422,3 +450,9 @@ GRR 定理的完整形式化是极其困难的，原因包括：
 ---
 
 > **审校状态**：草稿（draft）。GRR 的完整形式化需要 Chow 环和 K-理论的系统开发，目前 Mathlib4 中尚未就绪。
+
+---
+
+## 经典论文与原始文献
+
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)

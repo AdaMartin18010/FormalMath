@@ -1,11 +1,14 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A69
-  - 00A99
+  - 00A69 - 00A99'
 title: 椭圆曲线密码学(ECC)深度应用案例
 processed_at: '2026-04-05'
 review_status: draft
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/elliptic+curve
+  wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
 ---
 # 椭圆曲线密码学(ECC)深度应用案例
 

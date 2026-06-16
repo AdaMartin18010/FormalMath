@@ -1,9 +1,28 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: Hodge 指标定理 (Hodge Index Theorem)
+references:
+  papers:
+  - title: The Index of Elliptic Operators on Compact Manifolds
+    author: Michael F. Atiyah, Isadore M. Singer
+    journal: Annals of Mathematics
+    year: 1963
+    doi: 10.2307/1970715
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0BEL
+    tags:
+    - 0BEL
+    consulted_at: '2026-04-17'
+external_ids:
+  stacks_tag:
+    tag: 0BEL
+    url: https://stacks.math.columbia.edu/tag/0BEL
 ---
 # Hodge 指标定理 (Hodge Index Theorem)
 
@@ -107,3 +126,9 @@ $$\text{NS}(S) \times \text{NS}(S) \to \mathbb{Z}, \quad (D_1, D_2) \mapsto D_1 
 ---
 
 *最后更新：2026-04-15 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- Michael F. Atiyah, Isadore M. Singer, *The Index of Elliptic Operators on Compact Manifolds*, Annals of Mathematics, 1963 (DOI: 10.2307/1970715)

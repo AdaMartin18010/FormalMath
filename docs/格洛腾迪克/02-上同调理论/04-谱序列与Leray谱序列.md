@@ -1,13 +1,27 @@
 ---
 title: 谱序列与Leray谱序列
 description: 系统介绍谱序列的基本概念、Leray谱序列的构造与应用、以及它在层上同调和纤维化计算中的核心地位。
-msc_primary: 18
+msc_primary: '18
 
-  - 55T05
-
+  - 55T05'
 processed_at: '2026-04-16'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  stacks_tag:
+    tag: 015J
+    url: https://stacks.math.columbia.edu/tag/015J
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/015J
+    tags:
+    - 015J
+    consulted_at: '2026-04-17'
 ---
-
 # 谱序列与 Leray 谱序列
 
 ## 引言

@@ -2,31 +2,30 @@
 title: 波动方程-D'Alembert公式
 description: 系统介绍一维波动方程的D'Alembert公式推导、初值问题的求解、行波解的叠加、半直线与有界弦问题、能量守恒与唯一性，建立波动方程的基本理论。
 msc_primary:
-  - 35L05
+- 35L05
 msc_secondary:
-  - 35C05
-  - 35L10
+- 35C05
+- 35L10
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: evans_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Lawrence C. Evans
-      publisher: American Mathematical Society
-      year: 2010
-      msc: 35-01
-    - id: strauss_pde
-      type: textbook
-      title: Partial Differential Equations: An Introduction
-      authors:
-        - Walter A. Strauss
-      publisher: Wiley
-      year: 2008
-      msc: 35-01
+  - id: evans_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Lawrence C. Evans
+    publisher: American Mathematical Society
+    year: 2010
+    msc: 35-01
+  - id: strauss_pde
+    type: textbook
+    title: 'Partial Differential Equations: An Introduction'
+    authors:
+    - Walter A. Strauss
+    publisher: Wiley
+    year: 2008
+    msc: 35-01
 ---
-
 # 波动方程-D'Alembert公式
 
 **振动与波的精确解 — 行波的叠加与因果性**

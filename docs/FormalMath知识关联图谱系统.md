@@ -1,11 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 22E47
-  - 16A99
+  - 00A99 - 22E47 - 16A99'
 title: FormalMath知识关联图谱系统
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectrum
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectrum_(topology)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1
 ---
 msc_primary: "00A99"
 msc_secondary: ['22E47', '16-00']

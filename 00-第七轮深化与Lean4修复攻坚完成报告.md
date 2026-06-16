@@ -1,9 +1,9 @@
 ---
 msc_primary: 03B35
 msc_secondary:
-  - 68T15
+- 68T15
+title: 00 第七轮深化与Lean4修复攻坚完成报告
 ---
-
 # FormalMath项目第七轮深化与Lean4修复攻坚完成报告
 
 ---

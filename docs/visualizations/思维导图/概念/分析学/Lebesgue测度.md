@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: Lebesgue测度 (Lebesgue Measure)
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/measure
+  wikipedia_url: https://en.wikipedia.org/wiki/Measure_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%8B%E5%BA%A6
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

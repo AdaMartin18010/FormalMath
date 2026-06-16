@@ -1,68 +1,73 @@
 ---
 course: Harvard 232br 代数几何
-
-title: "Harvard 232br - Hartshorne Chapter IV §5–§6 习题解答"
-course_code: "Harvard Math 232br"
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter IV - Curves, Sections 5–6"
+title: Harvard 232br - Hartshorne Chapter IV §5–§6 习题解答
+course_code: Harvard Math 232br
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter IV - Curves, Sections 5–6
 source_exercise:
-  - "IV.5.1"
-  - "IV.5.2"
-  - "IV.5.3"
-  - "IV.5.4"
-  - "IV.6.1"
-  - "IV.6.2"
-  - "IV.6.3"
+- IV.5.1
+- IV.5.2
+- IV.5.3
+- IV.5.4
+- IV.6.1
+- IV.6.2
+- IV.6.3
 difficulty: ⭐⭐⭐ to ⭐⭐⭐⭐⭐
 processed_at: '2026-04-18'
-level: "silver"
+level: silver
 target_courses:
-  - "Harvard 232br"
+- Harvard 232br
 msc_primary: 14
-
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-        - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: ["IV.5", "IV.6"]
-      url: ~
-    - id: acgh
-      type: textbook
-      title: "Geometry of Algebraic Curves, Vol. I"
-      authors:
-        - Enrico Arbarello
-        - Maurizio Cornalba
-        - Phillip Griffiths
-        - Joe Harris
-      publisher: Springer
-      edition: 1st
-      year: 1985
-      isbn: 978-0387909974
-      msc: @
-      chapters: ["I", "III"]
-      url: ~
-  databases:
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-18
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters:
+    - IV.5
+    - IV.6
+    url: null
+    author: Robin Hartshorne
+    pages: 340-368
+    mr_number: MR0463157
+  - id: acgh
+    type: textbook
+    title: Geometry of Algebraic Curves, Vol. I
+    authors:
+    - Enrico Arbarello
+    - Maurizio Cornalba
+    - Phillip Griffiths
+    - Joe Harris
+    publisher: Springer
+    edition: 1st
+    year: 1985
+    isbn: 978-0387909974
+    msc: ''
+    chapters:
+    - I
+    - III
+    url: null
+    mr_number: MR0770932
+    author: Enrico Arbarello, Maurizio Cornalba, Phillip Griffiths, Joe Harris
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 created_at: 2026-04-18
+chapter: '5'
+external_ids:
+  ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
+  ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
+  harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
 ---
-
 # Harvard 232br — Hartshorne Chapter IV §5–§6 习题解答
 
 > 本节覆盖 Hartshorne 第四章第 5–6 节的核心习题，涉及 Clifford 定理、典范嵌入的精细结构、Riemann-Roch 的应用以及特殊线性系的 Brill-Noether 理论。除非特别说明，$k$ 为代数闭域，$X$ 为 $k$ 上的非奇异射影曲线。
@@ -870,3 +875,21 @@ theorem genus5_g13_empty (hg5 : g = 5) (hgen : IsGenericCurve X) :
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['IV.5', 'IV.6']; Pages: 340-368; ISBN: 978-0387902449; MR: MR0463157)
+- Enrico Arbarello, Maurizio Cornalba, Phillip Griffiths, Joe Harris, *Geometry of Algebraic Curves, Vol. I*, 1st ed., Springer, 1985 (Chapters: ['I', 'III']; ISBN: 978-0387909974; MR: MR0770932)
+
+### 数据库与网络资源
+
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+
+### 课程与外部链接
+
+- [Ocw Url](https://www.math.harvard.edu/course/mathematics-232br/)
+- [Ocw Ps Url](https://people.math.harvard.edu/~landesman/notes.html)
+- [Harvard Notes Url](https://people.math.harvard.edu/~landesman/notes.html)

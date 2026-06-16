@@ -1,10 +1,33 @@
 ---
 msc_primary: 14Fxx
 msc_secondary:
-  - 18Gxx
-  - 01A70
+- 18Gxx
+- 01A70
+title: 06 Abel范畴与同调代数
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
+  stacks_tag:
+    tag: 05NM
+    url: https://stacks.math.columbia.edu/tag/05NM
+  zbmath_url: https://zbmath.org/?q=au:Category
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/05NM
+    tags:
+    - 05NM
+    consulted_at: '2026-04-17'
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Category
+    author: Category
+    consulted_at: '2026-04-17'
 ---
-
 ﻿---
 title: "Abel 范畴与同调代数：Tôhoku 论文的公理化革命"
 level: "gold"
@@ -319,4 +342,3 @@ Tôhoku 论文通过 Abel 范畴的公理化，将同调代数从模范畴的囚
 > **文档状态**: `draft`（待审校）
 > **原始文献引用密度**: ~3.8 / 1000 字
 > **字数**: 约 10,800 字
-

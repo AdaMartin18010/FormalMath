@@ -1,10 +1,11 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-msc_secondary: ["97U99"]
+  - 00A99'
+msc_secondary:
+- 97U99
+title: README
 ---
-
 # FormalMath 贡献者指南索引
 
 **版本**: v1.0  

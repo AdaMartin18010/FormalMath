@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 00EB 局部化
+external_ids:
+  stacks_tag:
+    tag: 00EB
+    url: https://stacks.math.columbia.edu/tag/00EB
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00EB
+    tags:
+    - 00EB
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 00EB - 局部化（Localization）
 
 ## 1. Tag基本信息

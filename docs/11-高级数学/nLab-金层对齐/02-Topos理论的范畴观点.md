@@ -1,53 +1,46 @@
 ---
-title: "Topos 理论的范畴观点：从层到几何态射"
-level: "gold"
+title: Topos 理论的范畴观点：从层到几何态射
+level: gold
 msc_primary: 18
-
-  - 18B25
+msc_secondary:
+- 18B25
 nlab_urls:
-  - "https://ncatlab.org/nlab/show/topos"
-  - "https://ncatlab.org/nlab/show/sheaf+topos"
-  - "https://ncatlab.org/nlab/show/geometric+morphism"
+- https://ncatlab.org/nlab/show/topos
+- https://ncatlab.org/nlab/show/sheaf+topos
+- https://ncatlab.org/nlab/show/geometric+morphism
 references:
   textbooks:
-    - title: "Sheaves in Geometry and Logic"
-      author: "Saunders Mac Lane, Ieke Moerdijk"
-      edition: "Universitext"
-      publisher: "Springer"
-      year: 1992
-      chapters: "Ch. I–VII"
-    - title: "Sketches of an Elephant"
-      author: "Peter T. Johnstone"
-      edition: "Oxford Logic Guides 43, 44"
-      publisher: "Oxford University Press"
-      year: 2002
-      chapters: "Vol. 1, Ch. A2–A4; Vol. 2, Ch. C1–C3"
+  - title: Sheaves in Geometry and Logic
+    author: Saunders Mac Lane, Ieke Moerdijk
+    edition: Universitext
+    publisher: Springer
+    year: 1992
+    chapters: Ch. I–VII
+  - title: Sketches of an Elephant
+    author: Peter T. Johnstone
+    edition: Oxford Logic Guides 43, 44
+    publisher: Oxford University Press
+    year: 2002
+    chapters: Vol. 1, Ch. A2–A4; Vol. 2, Ch. C1–C3
   papers:
-    - title: "Théorie des topos et cohomologie étale des schémas (SGA 4)"
-      author: "Michael Artin, Alexander Grothendieck, Jean-Louis Verdier"
-      journal: "Lecture Notes in Mathematics"
-      year: 1972
-      volume: "269, 270, 305"
-      pages: "Exposé II, IV"
-    - title: "An elementary theory of the category of sets"
-      author: "F. William Lawvere"
-      journal: "Proceedings of the National Academy of Sciences"
-      year: 1964
-      volume: 52
-      pages: "1506"–1511"
-  databases:
-    - type: "nLab"
-      url: "https://ncatlab.org/nlab/show/topos"
-      tag: "topos"
-    - type: "nLab"
-      url: "https://ncatlab.org/nlab/show/sheaf+topos"
-      tag: "sheaf-topos"
-    - type: "nLab"
-      url: "https://ncatlab.org/nlab/show/geometric+morphism"
-      tag: "geometric-morphism"
-review_status: "draft"
+  - title: Théorie des topos et cohomologie étale des schémas (SGA 4)
+    author: Michael Artin, Alexander Grothendieck, Jean-Louis Verdier
+    journal: Lecture Notes in Mathematics
+    year: 1972
+    volume: 269, 270, 305
+    pages: Exposé II, IV
+  - title: An elementary theory of the category of sets
+    author: F. William Lawvere
+    journal: Proceedings of the National Academy of Sciences
+    year: 1964
+    volume: 52
+    pages: 1506'–1511
+review_status: draft
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/sheaf
+  wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
 ---
-
 # Topos 理论的范畴观点：从层到几何态射
 
 ## 1. 引言

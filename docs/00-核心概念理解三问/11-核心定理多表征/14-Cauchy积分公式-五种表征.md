@@ -1,10 +1,13 @@
 ---
-msc_primary: 30
+msc_primary: '30
 
-  - 30B99
-  - 30E20
+  - 30B99 - 30E20'
 title: Cauchy积分公式 - 五种表征
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
 ---
 # Cauchy积分公式 - 五种表征
 

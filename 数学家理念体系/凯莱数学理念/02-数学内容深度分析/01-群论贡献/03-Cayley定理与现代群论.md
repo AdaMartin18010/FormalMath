@@ -1,12 +1,25 @@
 ---
 title: Cayley定理：群作为置换群的表示
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 20B05
-  - 00A99
-  - 20C05
-  - 20E22
+- 20B05
+- 00A99
+- 20C05
+- 20E22
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  zbmath_url: https://zbmath.org/?q=au:Group
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Group
+    author: Group
+    consulted_at: '2026-04-17'
 ---
 # Cayley定理：群作为置换群的表示
 

@@ -1,15 +1,18 @@
 ---
-title: "多项式环的欧几里得算法 自然语言与 Lean4 对照"
+title: 多项式环的欧几里得算法 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.701"
+- MIT 18.701
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
-
 ## 定理陈述
 
 **自然语言**：设 $k$ 是一个域，则一元多项式环 $k[x]$ 是**欧几里得整环**。具体地，对任意两个多项式 $f, g \in k[x]$（$g \neq 0$），存在唯一的商式 $q$ 和余式 $r$ 使得
@@ -103,3 +106,12 @@ end PolynomialEuclideanAlgorithm
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 课程与外部链接
+
+- [Nlab Url](https://ncatlab.org/nlab/show/ring)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Ring_(mathematics))
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%8E%AF)

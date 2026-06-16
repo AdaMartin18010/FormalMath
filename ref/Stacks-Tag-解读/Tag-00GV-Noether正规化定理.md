@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 00GV Noether正规化定理
+external_ids:
+  stacks_tag:
+    tag: 00GV
+    url: https://stacks.math.columbia.edu/tag/00GV
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00GV
+    tags:
+    - 00GV
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 00GV 解读：Noether正规化定理
 
 ## 1. Tag基本信息

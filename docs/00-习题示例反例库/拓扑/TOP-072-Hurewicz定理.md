@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 同伦论-Hurewicz定理
 难度: ⭐⭐⭐⭐
 预计时间: 40分钟
+title: Hurewicz定理
 ---
-
 # Hurewicz定理
 
 ## 题目

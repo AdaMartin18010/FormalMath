@@ -2,33 +2,36 @@
 title: Laplace方程-Green函数
 description: 系统介绍Green函数的定义与性质、对称性与正性、球与半空间上的显式公式、Dirichlet问题的表示公式，以及Neumann-Green函数与边界积分方程。
 msc_primary:
-  - 35J05
+- 35J05
 msc_secondary:
-  - 31B10
-  - 31B25
-  - 35A08
+- 31B10
+- 31B25
+- 35A08
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: evans_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Lawrence C. Evans
-      publisher: American Mathematical Society
-      year: 2010
-      msc: 35-01
-    - id: gilbarg_trudinger
-      type: textbook
-      title: Elliptic Partial Differential Equations of Second Order
-      authors:
-        - David Gilbarg
-        - Neil S. Trudinger
-      publisher: Springer
-      year: 2001
-      msc: 35-02
+  - id: evans_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Lawrence C. Evans
+    publisher: American Mathematical Society
+    year: 2010
+    msc: 35-01
+  - id: gilbarg_trudinger
+    type: textbook
+    title: Elliptic Partial Differential Equations of Second Order
+    authors:
+    - David Gilbarg
+    - Neil S. Trudinger
+    publisher: Springer
+    year: 2001
+    msc: 35-02
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # Laplace方程-Green函数
 
 ## 引言

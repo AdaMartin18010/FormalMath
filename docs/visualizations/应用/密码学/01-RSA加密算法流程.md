@@ -1,15 +1,21 @@
 ---
 msc_primary: 94A60
 msc_secondary:
-  - 11T71
-  - 14G50
-  - 11A05
+- 11T71
+- 14G50
+- 11A05
 concept_type: 应用可视化
 visualization_type: 流程图、密钥交换
 title: RSA加密算法流程可视化
 processed_at: '2026-04-05'
+references:
+  papers:
+  - title: A method for obtaining digital signatures and public-key cryptosystems
+    author: Ronald L. Rivest, Adi Shamir, Leonard M. Adleman
+    journal: Communications of the ACM
+    year: 1978
+    doi: 10.1145/359340.359342
 ---
-
 # RSA加密算法流程可视化
 
 ## 1. 数论基础
@@ -113,3 +119,9 @@ graph TB
 1. Rivest, R. L., Shamir, A., & Adleman, L. (1978). A Method for Obtaining Digital Signatures and Public-Key Cryptosystems. *Communications of the ACM*, 21(2), 120–126.
 2. Boneh, D. (1999). Twenty Years of Attacks on the RSA Cryptosystem. *Notices of the AMS*, 46(2), 203–213.
 3. Katz, J., & Lindell, Y. (2014). *Introduction to Modern Cryptography* (2nd ed.). CRC Press.
+
+---
+
+## 经典论文与原始文献
+
+- Ronald L. Rivest, Adi Shamir, Leonard M. Adleman, *A method for obtaining digital signatures and public-key cryptosystems*, Communications of the ACM, 1978 (DOI: 10.1145/359340.359342)

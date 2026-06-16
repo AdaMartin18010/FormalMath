@@ -1,13 +1,14 @@
 ---
-msc_primary: 18
+msc_primary: '18
 
-  - 18E30
-  - 18G80
-  - 14F05
+  - 18E30 - 18G80 - 14F05'
 title: 导出范畴的t-结构与hearts - 从三角到Abel
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
 ---
-
 # 导出范畴的t-结构与hearts
 
 **创建日期**: 2026年4月10日  

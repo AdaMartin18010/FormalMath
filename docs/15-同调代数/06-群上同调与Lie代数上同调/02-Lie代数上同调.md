@@ -1,12 +1,23 @@
 ---
-msc_primary: 17
+msc_primary: '17
 
-  - 17B56
-msc_secondary: ['18G99', '17B55']
-keywords: ['Lie代数上同调', 'Chevalley-Eilenberg', '外代数', '中心扩张', 'Whitehead引理']
+  - 17B56'
+msc_secondary:
+- 18G99
+- 17B55
+keywords:
+- Lie代数上同调
+- Chevalley-Eilenberg
+- 外代数
+- 中心扩张
+- Whitehead引理
 version: 1.0
+title: 02 Lie代数上同调
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
 ---
-
 # Lie代数上同调
 
 **Lie代数的同调理论 — 从Chevalley-Eilenberg到表示论**

@@ -1,15 +1,26 @@
 ---
-number: "ALG-046"
+number: ALG-046
 category: 代数
 topic: 模论基础
 difficulty: ⭐⭐⭐
 title: Noether模与Artin模
 msc_primary: 00A99
-keywords: [Noether模, Artin模, ACC, DCC, 有限生成, 有限长度]
-prerequisites: [ALG-045, ALG-044]
+keywords:
+- Noether模
+- Artin模
+- ACC
+- DCC
+- 有限生成
+- 有限长度
+prerequisites:
+- ALG-045
+- ALG-044
 source: 经典代数习题
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
-
 ## 题目
 
 设 $R$ 是含幺环，$M$ 是 $R$-模。

@@ -1,28 +1,38 @@
 ---
-title: "对偶性与Grothendieck对偶定理：从Serre到Verdier的统一之路"
+title: 对偶性与Grothendieck对偶定理：从Serre到Verdier的统一之路
 level: gold
 course: Grothendieck数学理念
 msc_primary: 14
 msc_secondary:
-  - 14F17
+- 14F17
 references:
   textbooks:
-    - title: "Residues and Duality"
-      author: "R. Hartshorne"
-      edition: "Lecture Notes in Mathematics 20"
-      year: 1966
-    - title: "Algebraic Geometry"
-      author: "R. Hartshorne"
-      edition: "Graduate Texts in Mathematics 52"
-      chapters: "Ch. III, §7"
-      pages: "239–252"
+  - title: Residues and Duality
+    author: R. Hartshorne
+    edition: Lecture Notes in Mathematics 20
+    year: 1966
+  - title: Algebraic Geometry
+    author: R. Hartshorne
+    edition: Graduate Texts in Mathematics 52
+    chapters: Ch. III, §7
+    pages: 239–252
   papers:
-    - title: "Dualité et cohomologie dans les topos"
-      author: "J-L. Verdier"
-      year: 1965
+  - title: Dualité et cohomologie dans les topos
+    author: J-L. Verdier
+    year: 1965
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
+    author: Alexander Grothendieck
+    consulted_at: '2026-04-17'
 status: completed
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  zbmath_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
 ---
-
 ## 1. 引言：对偶性的代数几何化
 
 **对偶性（duality）**是数学中最深刻、最普遍的主题之一。从线性代数的对偶空间到Poincaré对偶，从Serre对偶到Grothendieck对偶，对偶性原理在不同数学领域中反复出现，却始终缺乏统一的框架。Grothendieck以其特有的结构主义眼光，洞察到这些表面上不同的对偶性定理背后隐藏着统一的结构——**相对对偶（relative duality）**。

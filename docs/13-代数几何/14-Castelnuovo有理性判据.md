@@ -2,36 +2,30 @@
 title: Castelnuovo有理性判据
 description: 详细阐述Castelnuovo有理性判据的完整证明、历史背景、相关不变量以及在有理曲面和三维簇上的推广。
 msc_primary:
-  - 14J26
+- 14J26
 msc_secondary:
-  - 14E08
-  - 14Jxx
-  - 14C20
+- 14E08
+- 14Jxx
+- 14C20
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-        - Robin Hartshorne
-      publisher: Springer
-      year: 1977
-      msc: 14-01
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-        - Ravi Vakil
-      publisher: self-published
-      year: 2024
-  databases:
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    year: 1977
+    msc: 14-01
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    year: 2024
 ---
-
 # Castelnuovo有理性判据
 
 ## 引言

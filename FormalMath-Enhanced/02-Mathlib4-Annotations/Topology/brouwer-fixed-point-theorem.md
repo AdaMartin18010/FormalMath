@@ -1,9 +1,16 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 布劳威尔不动点定理 (Brouwer Fixed-Point Theorem)
+references:
+  papers:
+  - title: Über Abbildung von Mannigfaltigkeiten
+    author: L. E. J. Brouwer
+    journal: Mathematische Annalen
+    year: 1912
+    doi: 10.1007/BF01444152
 ---
 # 布劳威尔不动点定理 (Brouwer Fixed-Point Theorem)
 
@@ -133,3 +140,9 @@ $f: [0, 1] \to [0, 1]$ 连续。
 ---
 
 *最后更新：2026-04-03 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- L. E. J. Brouwer, *Über Abbildung von Mannigfaltigkeiten*, Mathematische Annalen, 1912 (DOI: 10.1007/BF01444152)

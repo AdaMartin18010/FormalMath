@@ -21,7 +21,7 @@ tags:
 - 确界
 - Archimedean
 - 核心定理
-- "mathematical_reviewed"
+- mathematical_reviewed
 date: 2026-04-17
 references:
   textbooks:
@@ -39,28 +39,32 @@ references:
     - 'Chapter 1: The Real and Complex Number Systems'
     url: null
     pages: 1-5
+    mr_number: MR0385023
+    author: Walter Rudin
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
   databases:
   - id: nlab
     type: database
     name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
+    entry_url: https://ncatlab.org/nlab/show/supremum
     consulted_at: 2026-04-17
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+chapter: '01'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+  nlab_url: https://ncatlab.org/nlab/show/supremum
+  wikipedia_url: https://en.wikipedia.org/wiki/Infimum_and_supremum
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C
 ---
-
 # 确界原理与 Archimedean 性质
 
 ## 一、确界原理

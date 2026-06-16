@@ -1,9 +1,22 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 08H4 导出Hom
+external_ids:
+  stacks_tag:
+    tag: 08H4
+    url: https://stacks.math.columbia.edu/tag/08H4
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/08H4
+    tags:
+    - 08H4
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 08H4 - 导出Hom（RHom）
 
 ## 1. Tag基本信息

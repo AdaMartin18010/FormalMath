@@ -1,56 +1,46 @@
 ---
 title: Curry-Howard同构 (Curry-Howard Isomorphism)
-msc_primary: 03
+msc_primary: '03
 
-  - 03B35
-  - 03B15
-  - 68N18
-  - 68Q60
+  - 03B35 - 03B15 - 68N18 - 68Q60'
 processed_at: '2026-04-08'
 references:
   textbooks:
-    - id: enderton_logic
-      type: textbook
-      title: A Mathematical Introduction to Logic
-      authors:
-      - Herbert B. Enderton
-      publisher: Academic Press
-      edition: 2nd
-      year: 2001
-      isbn: 978-0122384523
-      msc: 03-01
-      chapters: 
-      url: ~
-    - id: mendelson_logic
-      type: textbook
-      title: Introduction to Mathematical Logic
-      authors:
-      - Elliott Mendelson
-      publisher: Chapman and Hall/CRC
-      edition: 6th
-      year: 2015
-      isbn: 978-1482237725
-      msc: 03-01
-      chapters: 
-      url: ~
+  - id: enderton_logic
+    type: textbook
+    title: A Mathematical Introduction to Logic
+    authors:
+    - Herbert B. Enderton
+    publisher: Academic Press
+    edition: 2nd
+    year: 2001
+    isbn: 978-0122384523
+    msc: 03-01
+    chapters: null
+    url: null
+  - id: mendelson_logic
+    type: textbook
+    title: Introduction to Mathematical Logic
+    authors:
+    - Elliott Mendelson
+    publisher: Chapman and Hall/CRC
+    edition: 6th
+    year: 2015
+    isbn: 978-1482237725
+    msc: 03-01
+    chapters: null
+    url: null
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-17
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-17
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-17
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/isomorphism
+    consulted_at: 2026-04-17
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/isomorphism
+  wikipedia_url: https://en.wikipedia.org/wiki/Isomorphism
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E6%9E%84
 ---
-
 # Curry-Howard同构 / Curry-Howard Isomorphism
 
 > **前置知识**: [05-类型论/01-基础概念](01-基础概念.md)、[05-类型论/04-依赖类型](04-依赖类型.md)  

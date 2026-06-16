@@ -1,12 +1,17 @@
 ---
-title: "ZFC公理体系完整形式化 - 第六部分：数论基础构造"
-msc_primary: 03
+title: ZFC公理体系完整形式化 - 第六部分：数论基础构造
+msc_primary: '03
 
-  - 03E99
-msc_secondary: ['03E30', '03B30']
+  - 03E99'
+msc_secondary:
+- 03E30
+- 03B30
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
 ---
-
 # ZFC公理体系完整形式化 - 第六部分：数论基础构造
 
 ## 目录

@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 0A9A 椭圆曲线模空间
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/elliptic+curve
+  wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
+  stacks_tag:
+    tag: 0A9A
+    url: https://stacks.math.columbia.edu/tag/0A9A
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A9A
+    tags:
+    - 0A9A
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 0A9A - 椭圆曲线的模空间
 
 ## 1. 基本信息

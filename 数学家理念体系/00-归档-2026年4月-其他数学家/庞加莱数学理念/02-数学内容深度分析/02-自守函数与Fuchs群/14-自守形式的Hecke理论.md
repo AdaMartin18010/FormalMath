@@ -5,8 +5,11 @@ msc_secondary:
 - 01A55
 - 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # 自守形式的Hecke理论：算子与L函数
 
 自守形式的Hecke理论是研究Hecke算子与L函数的理论，它是现代自守形式理论的核心。虽然Hecke理论的严格形式化是在20世纪完成的，但庞加莱的自守函数理论为Hecke理论奠定了基础。Hecke理论在现代数论、Langlands纲领、椭圆曲线等领域有重要应用。

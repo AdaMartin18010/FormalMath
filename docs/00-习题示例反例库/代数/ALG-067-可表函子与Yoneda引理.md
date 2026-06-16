@@ -3,10 +3,17 @@ exercise_id: ALG-067
 title: Yoneda引理与可表函子
 msc_primary: 00A99
 difficulty: ⭐⭐⭐
-topics: [Yoneda引理, 可表函子, 自然同构, 表示]
+topics:
+- Yoneda引理
+- 可表函子
+- 自然同构
+- 表示
 created: 2026-04-10
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/functor
+  wikipedia_url: https://en.wikipedia.org/wiki/Functor
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
 ---
-
 ## 题目
 
 设 $\mathcal{C}$ 是局部小范畴（态射形成集合），$F: \mathcal{C}^{op} \to \mathbf{Set}$ 是反变函子。

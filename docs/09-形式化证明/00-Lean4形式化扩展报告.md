@@ -1,10 +1,12 @@
 ---
-msc_primary: 03
+msc_primary: '03
 
-  - 03B35
-msc_secondary: ["68V15", "03B15"]
+  - 03B35'
+msc_secondary:
+- 68V15
+- 03B15
+title: 00 Lean4形式化扩展报告
 ---
-
 # Lean4形式化证明扩展报告
 
 **生成日期**: 2026-04-08

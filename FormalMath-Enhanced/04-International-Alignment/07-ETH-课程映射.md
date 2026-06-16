@@ -1,10 +1,14 @@
 ---
 msc_primary: 97A99
 msc_secondary:
-  - 00A99
+- 00A99
+title: 07 ETH 课程映射
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
 ---
-
-﻿---
+---
 
 msc_primary: 00A99
 processed_at: '2026-04-15'
@@ -73,8 +77,8 @@ title: ETH 课程映射表
 这一发现证明：
 
 1. FormalMath 的**证明严格性**与 ETH **德语区数学教育标准**完美同步
-1. **从公理出发构建理论**的方法论在双方文档中均占据核心地位
-2. ETH 的 **理论-算法-实现** 完整链条可作为 FormalMath 计算数学模块的扩展参考
+2. **从公理出发构建理论**的方法论在双方文档中均占据核心地位
+3. ETH 的 **理论-算法-实现** 完整链条可作为 FormalMath 计算数学模块的扩展参考
 
 ---
 

@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: 00 全面推进里程碑报告 Round1
 ---
-
 # FormalMath 全面推进里程碑报告 - Round 1
 
 **报告时间**：2026-04-17

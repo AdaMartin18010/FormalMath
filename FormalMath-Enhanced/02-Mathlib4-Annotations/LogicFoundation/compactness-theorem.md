@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: 紧致性定理 (Compactness Theorem)
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/compact+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Compact_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%B4%A7%E8%87%B4
 ---
 # 紧致性定理 (Compactness Theorem)
 

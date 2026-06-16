@@ -1,11 +1,15 @@
 ---
 msc_primary: 20C99
 msc_secondary:
-  - 20G05
-  - 17B10
-  - 22E47
+- 20G05
+- 17B10
+- 22E47
+title: Oxford 表示论 课程对齐
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/representation+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Representation_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%A1%A8%E7%A4%BA%E8%AE%BA
 ---
-
 # Oxford 表示论课程深度内容
 
 Oxford 数学系 Part B 的表示论课程涵盖有限群表示、特征标理论、Lie 代数表示与代数群表示等核心主题。本节从课程框架出发，提供严格的数学内容，包括核心定义、定理证明与典型例子。

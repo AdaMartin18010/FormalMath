@@ -1,8 +1,6 @@
 ---
 title: Weil 除子与 Cartier 除子的等价理论
-msc_primary: 14
-  - 14C20
-  - 14C22
+msc_primary: 14 - 14C20 - 14C22
 level: silver
 target_courses:
 - Stanford FOAG
@@ -30,6 +28,8 @@ references:
     - 'Chapter II, Section 6: Divisors'
     url: null
     pages: 129-138
+    mr_number: MR0463157
+    author: Robin Hartshorne
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -38,36 +38,20 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters:
     - 'Section 14.2: Weil divisors and Cartier divisors'
     url: https://math.stanford.edu/~vakil/216blog/
     pages: 385-392
-  databases:
-  - id: nlab
-    type: database
-    name: nLab
-    entry_url: https://ncatlab.org/nlab/show/{entry}
-    consulted_at: 2026-04-17
-  - id: stacks_project
-    type: database
-    name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/{tag}
-    consulted_at: 2026-04-17
-  - id: zbmath
-    type: database
-    name: zbMATH Open
-    entry_url: https://zbmath.org/?q=an:{zb_id}
-    consulted_at: 2026-04-17
+    author: Ravi Vakil
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
 ---
-
 # AG-VK-024: Weil 除子与 Cartier 除子的等价理论
 
 ## 习题信息

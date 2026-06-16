@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 04E3 上同调环结构
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
+  stacks_tag:
+    tag: 04E3
+    url: https://stacks.math.columbia.edu/tag/04E3
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/04E3
+    tags:
+    - 04E3
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 04E3 - 上同调环结构
 
 ## 1. 基本概念与定义

@@ -1,7 +1,7 @@
 ---
-msc_primary: 17
+msc_primary: '17
 
-  - 17B56
+  - 17B56'
 exercise_id: ALG-256
 title: Lie代数上同调与Kostant定理
 difficulty: 3
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: Lie代数
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
 ---
-
 # ALG-256: Lie代数上同调与Kostant定理
 
 **题号**: ALG-256

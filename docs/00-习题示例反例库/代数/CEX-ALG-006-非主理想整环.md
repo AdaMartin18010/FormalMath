@@ -1,7 +1,7 @@
 ---
-msc_primary: 13
+msc_primary: '13
 
-  - 13F15
+  - 13F15'
 exercise_id: CEX-ALG-006
 title: 非主理想整环的例子
 difficulty: 3
@@ -11,13 +11,16 @@ subtopic: 环论
 source:
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
-
 # CEX-ALG-006: 非主理想整环的例子
 
-**反例编号**: CEX-ALG-006  
-**难度**: ⭐⭐⭐ (Level 3)  
-**类型**: 构造型 (CST)  
+**反例编号**: CEX-ALG-006
+**难度**: ⭐⭐⭐ (Level 3)
+**类型**: 构造型 (CST)
 **主题**: 理想理论
 
 ---
@@ -33,16 +36,19 @@ processed_at: '2026-04-10'
 **假设**: $I = (f(x))$ 对某个 $f(x) \in \mathbb{Z}[x]$
 
 **推导**:
+
 1. 由于 $2 \in I$，有 $f(x) \mid 2$
 2. 由于 $x \in I$，有 $f(x) \mid x$
 
 **分析**:
+
 - $f(x) \mid 2$ 意味着 $f(x) = \pm 1$ 或 $\pm 2$
 - $f(x) \mid x$ 意味着 $f(x) = \pm 1$ 或 $\pm x$
 
 **同时满足**: $f(x) = \pm 1$
 
-**矛盾**: 
+**矛盾**:
+
 - 若 $I = (1) = \mathbb{Z}[x]$，则 $1 \in I$
 - 但 $I = \{2p(x) + xq(x) : p, q \in \mathbb{Z}[x]\}$ 中，常数项必为偶数
 - 所以 $1 \notin I$
@@ -68,6 +74,7 @@ processed_at: '2026-04-10'
 > 在PID中，每个理想都是主理想。
 
 **例子**:
+
 - $\mathbb{Z}$ 是PID
 - $\mathbb{Q}[x]$ 是PID
 - $\mathbb{Z}[x]$ **不是** PID
@@ -90,5 +97,5 @@ processed_at: '2026-04-10'
 
 ---
 
-**反例设计**: AI Assistant  
+**反例设计**: AI Assistant
 **最后更新**: 2026年4月10日

@@ -266,9 +266,9 @@ groups:
 
 - [详细使用文档](docs/README.md)
 - [故障排查指南](docs/TROUBLESHOOTING.md)
-- [Prometheus 文档](https://prometheus.io/docs/)[需更新]
-- [Grafana 文档](https://grafana.com/docs/)[需更新]
-- [ELK Stack 文档](https://www.elastic.co/guide/index.html)[需更新]
+- [Prometheus 文档][https://prometheus.io/docs/](需更新)
+- [Grafana 文档][https://grafana.com/docs/](需更新)
+- [ELK Stack 文档][https://www.elastic.co/guide/index.html](需更新)
 
 ## ⚠️ 注意事项
 

@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: 数学×物理学：量子场论的代数拓扑
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/algebraic+topology
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_topology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E6%8B%93%E6%89%91
 ---
 # 数学×物理学：量子场论的代数拓扑
 

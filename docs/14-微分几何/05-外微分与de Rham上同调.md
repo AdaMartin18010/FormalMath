@@ -2,37 +2,40 @@
 title: 外微分与de Rham上同调
 description: 介绍外微分运算、Poincaré引理、de Rham定理的陈述与证明思路，建立微分形式同调理论与拓扑上同调的联系。
 msc_primary:
-  - 58A12
+- 58A12
 msc_secondary:
-  - 55N05
-  - 53Cxx
+- 55N05
+- 53Cxx
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: lee_sm
-      type: textbook
-      title: Introduction to Smooth Manifolds
-      authors:
-        - John M. Lee
-      publisher: Springer
-      year: 2013
-      msc: 53-01
-    - id: bott_tu
-      type: textbook
-      title: Differential Forms in Algebraic Topology
-      authors:
-        - Raoul Bott
-        - Loring W. Tu
-      publisher: Springer
-      year: 1982
-      msc: 55-01
+  - id: lee_sm
+    type: textbook
+    title: Introduction to Smooth Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    year: 2013
+    msc: 53-01
+  - id: bott_tu
+    type: textbook
+    title: Differential Forms in Algebraic Topology
+    authors:
+    - Raoul Bott
+    - Loring W. Tu
+    publisher: Springer
+    year: 1982
+    msc: 55-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/cohomology
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
 ---
-
 # 外微分与de Rham上同调
 
 ## 引言

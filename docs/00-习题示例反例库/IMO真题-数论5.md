@@ -1,23 +1,26 @@
 ---
-title: "IMO真题-数论：整除序列"
+title: IMO真题-数论：整除序列
 msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L4
 topic: 数论
-source: "IMO 2005 Problem 2"
+source: IMO 2005 Problem 2
 target_courses:
-  - MIT 18.701
+- MIT 18.701
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
 ---
-
 # IMO 2005 Problem 2：整除序列
 
 ## 题目

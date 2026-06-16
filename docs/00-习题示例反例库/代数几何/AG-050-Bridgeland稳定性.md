@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 代数几何-Bridgeland稳定性
 难度: ⭐⭐⭐⭐⭐
 预计时间: 60分钟
+title: Bridgeland稳定性
 ---
-
 # Bridgeland 稳定性
 
 ## 题目

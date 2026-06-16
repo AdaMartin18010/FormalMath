@@ -1,21 +1,35 @@
 ---
-title: "曲面积分与Stokes定理：高维推广的巅峰"
+title: 曲面积分与Stokes定理：高维推广的巅峰
 msc_primary: 00A99
 level: silver
 course: MIT 18.02 多元微积分
 target_courses:
-  - MIT 18.02
-  - Harvard 232br
+- MIT 18.02
+- Harvard 232br
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+chapter: '10'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/pages/problem-sets-and-exams/
+  nlab_url: https://ncatlab.org/nlab/show/integral
+  wikipedia_url: https://en.wikipedia.org/wiki/Integral
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
+references:
+  textbooks:
+  - title: Multivariable Calculus
+    author: Jerrold E. Marsden, Anthony J. Tromba
+    edition: 6th
+    publisher: W. H. Freeman
+    year: 2011
+    isbn: '9781429215084'
 ---
-
 # 曲面积分与Stokes定理：高维推广的巅峰
 
 ## 1. 引言
@@ -155,21 +169,25 @@ example {V : Region ℝ} {F : ℝ → ℝ → ℝ → ℝ × ℝ × ℝ}
 - [03-重积分](03-重积分.md)
 - [04-积分应用](04-积分应用.md)
 - [05-级数与泰勒展开](05-级数与泰勒展开.md)
+
 ---
 **参考文献**
 
 1. 相关教材与学术论文。
+
 ## 参考文献
 
 1. Stewart, J. (2015). *Calculus: Early Transcendentals* (8th ed.). Cengage Learning. ISBN: 978-1285741550.
 2. Marsden, J. E., & Tromba, A. (2013). *Vector Calculus* (6th ed.). W. H. Freeman. ISBN: 978-1429215084.
 3. Edwards, C. H., & Penney, D. E. (2002). *Multivariable Calculus* (6th ed.). Prentice Hall. ISBN: 978-0130339676.
+
 ## 审阅记录
 
 **审阅日期**: 2026-04-20
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰

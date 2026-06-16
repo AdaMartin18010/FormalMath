@@ -2,36 +2,42 @@
 title: Čech上同调
 description: 介绍Čech上同调的理论框架，包括Čech复形的构造、与层上同调的关系、具体计算方法，以及在代数几何中的典型应用。
 msc_primary:
-  - 14F25
+- 14F25
 msc_secondary:
-  - 14F05
-  - 18G40
-  - 32C35
+- 14F05
+- 18G40
+- 32C35
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-        - Robin Hartshorne
-      publisher: Springer
-      year: 1977
-      msc: 14-01
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-        - Ravi Vakil
-      publisher: self-published
-      year: 2024
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    year: 1977
+    msc: 14-01
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    year: 2024
   databases:
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/01ER
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  stacks_tag:
+    tag: 01ER
+    url: https://stacks.math.columbia.edu/tag/01ER
 ---
-
 # Čech上同调
 
 ## 引言

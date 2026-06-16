@@ -1,10 +1,13 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20D20
-  - 20A05
+  - 20D20 - 20A05'
 title: Sylow定理应用 - 工作示例
 processed_at: '2026-04-08'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
 ---
 # Sylow定理应用 - 工作示例
 

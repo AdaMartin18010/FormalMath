@@ -1,11 +1,13 @@
 ---
 title: 概形理论深度版 / Scheme Theory - Deep Dive
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 00A99
-  - 00A99
+  - 00A99 - 00A99 - 00A99'
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
 ---
 # 概形理论深度版 / Scheme Theory - Deep Dive
 

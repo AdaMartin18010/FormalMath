@@ -1,13 +1,25 @@
 ---
 title: 复分析的Cauchy-Goursat定理基础：复分析的奠基
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A50
-  - 01A55
-  - 01A70
+- 01A50
+- 01A55
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
+  wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
+  zbmath_url: https://zbmath.org/?q=au:Cauchy%27s%20theorem
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Cauchy%27s%20theorem
+    author: Cauchy's theorem
+    consulted_at: '2026-04-17'
 ---
-
 # 复分析的Cauchy-Goursat定理基础：复分析的奠基
 
 > **文档状态**: ✅ 内容填充完成

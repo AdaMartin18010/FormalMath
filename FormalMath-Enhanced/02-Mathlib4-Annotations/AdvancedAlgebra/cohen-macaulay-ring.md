@@ -1,9 +1,25 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Cohen-Macaulay环
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
+  stacks_tag:
+    tag: 00N7
+    url: https://stacks.math.columbia.edu/tag/00N7
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00N7
+    tags:
+    - 00N7
+    consulted_at: '2026-04-17'
 ---
 # Cohen-Macaulay环
 

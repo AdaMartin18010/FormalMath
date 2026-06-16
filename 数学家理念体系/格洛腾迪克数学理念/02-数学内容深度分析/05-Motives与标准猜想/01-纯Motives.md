@@ -1,45 +1,60 @@
 ---
-title: "纯 Motives：代数对应的范畴化与 Grothendieck 的终极愿景"
-level: "gold"
+title: 纯 Motives：代数对应的范畴化与 Grothendieck 的终极愿景
+level: gold
 msc_primary: 14
 msc_secondary:
-  - 14C15
-  - 14C25
-  - 18F99
+- 14C15
+- 14C25
+- 18F99
 references:
   textbooks:
-    - title: "Une introduction aux motifs"
-      author: "Y. André"
-      edition: "Panoramas et Synthèses 17, SMF"
-      chapters: "Ch. 1–3"
-      pages: "1–120"
-    - title: "Algebraic Cycles and the Weil Conjectures"
-      author: "S. L. Kleiman"
-      edition: "Dix exposés sur la cohomologie des schémas"
-      chapters: "Exposé"
-      pages: "359–386"
+  - title: Une introduction aux motifs
+    author: Y. André
+    edition: Panoramas et Synthèses 17, SMF
+    chapters: Ch. 1–3
+    pages: 1–120
+  - title: Algebraic Cycles and the Weil Conjectures
+    author: S. L. Kleiman
+    edition: Dix exposés sur la cohomologie des schémas
+    chapters: Exposé
+    pages: 359–386
   papers:
-    - title: "Standard conjectures on algebraic cycles"
-      author: "A. Grothendieck"
-      journal: "Algebraic Geometry (Bombay Colloq. 1968)"
-      year: 1969
-      pages: "193–199"
-    - title: "Motives, numerical equivalence, and semi-simplicity"
-      author: "U. Jannsen"
-      journal: "Invent. Math."
-      year: 1992
-      volume: "107"
-      pages: "447–452"
+  - title: Standard conjectures on algebraic cycles
+    author: A. Grothendieck
+    journal: Algebraic Geometry (Bombay Colloq. 1968)
+    year: 1969
+    pages: 193–199
+  - title: Motives, numerical equivalence, and semi-simplicity
+    author: U. Jannsen
+    journal: Invent. Math.
+    year: 1992
+    volume: '107'
+    pages: 447–452
   databases:
-    - type: "nLab"
-      url: "https://ncatlab.org/nlab/show/motive"
-      tag: "motive"
-    - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/0FG6"
-      tag: "0FG6"
-review_status: "draft"
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0FG6
+    tags:
+    - 0FG6
+    consulted_at: '2026-04-17'
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Category
+    author: Category
+    consulted_at: '2026-04-17'
+review_status: draft
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/category
+  wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  stacks_tag:
+    tag: 0FG6
+    url: https://stacks.math.columbia.edu/tag/0FG6
+  zbmath_url: https://zbmath.org/?q=au:Category
 ---
-
 # 纯 Motives：代数对应的范畴化与 Grothendieck 的终极愿景
 
 ## 1. 引言

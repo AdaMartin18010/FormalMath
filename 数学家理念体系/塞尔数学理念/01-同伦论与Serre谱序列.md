@@ -1,29 +1,41 @@
 ---
-title: "同伦论与Serre谱序列：从球面到纤维丛"
+title: 同伦论与Serre谱序列：从球面到纤维丛
 level: gold
 course: Serre数学理念
 msc_primary: 55
 msc_secondary:
-  - 55T10
+- 55T10
 references:
   textbooks:
-    - title: "Homologie singulière des espaces fibrés"
-      author: "J-P. Serre"
-      edition: "Ann. of Math. 54"
-      year: 1951
-      pages: "425–505"
-    - title: "A User's Guide to Spectral Sequences"
-      author: "J. McCleary"
-      edition: "2nd ed., Cambridge Studies in Advanced Mathematics 58"
-      year: 2001
+  - title: Homologie singulière des espaces fibrés
+    author: J-P. Serre
+    edition: Ann. of Math. 54
+    year: 1951
+    pages: 425–505
+  - title: A User's Guide to Spectral Sequences
+    author: J. McCleary
+    edition: 2nd ed., Cambridge Studies in Advanced Mathematics 58
+    year: 2001
   papers:
-    - title: "Cohomologie modulo 2 des complexes d'Eilenberg-MacLane"
-      author: "J-P. Serre"
-      year: 1953
+  - title: Cohomologie modulo 2 des complexes d'Eilenberg-MacLane
+    author: J-P. Serre
+    year: 1953
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Spectral%20sequence
+    author: Spectral sequence
+    consulted_at: '2026-04-17'
 status: completed
 created_at: 2026-04-18
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
+  wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  zbmath_url: https://zbmath.org/?q=au:Spectral%20sequence
 ---
-
 # 同伦论与Serre谱序列
 
 ## 1. 引言：Serre的革命性论文

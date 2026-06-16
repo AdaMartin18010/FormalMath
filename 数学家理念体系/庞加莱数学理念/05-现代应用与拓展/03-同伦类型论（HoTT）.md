@@ -1,13 +1,25 @@
 ---
 title: 同伦类型论（HoTT）：庞加莱直觉的现代实现
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A50
-  - 01A55
-  - 01A70
+- 01A50
+- 01A55
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/homotopy+type+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Homotopy_type_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E4%BC%A6%E7%B1%BB%E5%9E%8B%E8%AE%BA
+  zbmath_url: https://zbmath.org/?q=au:Homotopy%20type%20theory
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Homotopy%20type%20theory
+    author: Homotopy type theory
+    consulted_at: '2026-04-17'
 ---
-
 # 同伦类型论（HoTT）：庞加莱直觉的现代实现
 
 

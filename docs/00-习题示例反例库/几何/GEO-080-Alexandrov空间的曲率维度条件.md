@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53C23
+  - 53C23'
 exercise_id: GEO-080
 title: Alexandrov空间的曲率维度条件
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 几何
 subtopic: Alexandrov几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/curvature
+  wikipedia_url: https://en.wikipedia.org/wiki/Curvature
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9B%B2%E7%8E%87
 ---
-
 # GEO-080: Alexandrov空间的曲率维度条件
 
 **题号**: GEO-080

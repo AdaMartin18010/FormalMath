@@ -2,36 +2,39 @@
 title: Levi-Civita联络
 description: 阐述Levi-Civita联络的基本定理，包括存在唯一性证明、Koszul公式及其在Riemann几何中的核心地位。
 msc_primary:
-  - 53B20
+- 53B20
 msc_secondary:
-  - 53B21
-  - 53C05
+- 53B21
+- 53C05
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: lee_riemannian
-      type: textbook
-      title: Riemannian Manifolds
-      authors:
-        - John M. Lee
-      publisher: Springer
-      year: 1997
-      msc: 53-01
-    - id: do_carmo_riemannian
-      type: textbook
-      title: Riemannian Geometry
-      authors:
-        - Manfredo P. do Carmo
-      publisher: Birkhäuser
-      year: 1992
-      msc: 53-01
+  - id: lee_riemannian
+    type: textbook
+    title: Riemannian Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    year: 1997
+    msc: 53-01
+  - id: do_carmo_riemannian
+    type: textbook
+    title: Riemannian Geometry
+    authors:
+    - Manfredo P. do Carmo
+    publisher: Birkhäuser
+    year: 1992
+    msc: 53-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/connection
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/connection
+  wikipedia_url: https://en.wikipedia.org/wiki/Connection_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%81%94%E7%BB%9C
 ---
-
 # Levi-Civita联络
 
 ## 引言

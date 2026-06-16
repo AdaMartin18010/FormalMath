@@ -1,9 +1,22 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Nakayama引理
+external_ids:
+  stacks_tag:
+    tag: 00DV
+    url: https://stacks.math.columbia.edu/tag/00DV
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00DV
+    tags:
+    - 00DV
+    consulted_at: '2026-04-17'
 ---
 # Nakayama引理
 

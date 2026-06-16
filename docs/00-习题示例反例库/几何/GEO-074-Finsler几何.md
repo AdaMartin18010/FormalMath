@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 几何-Finsler几何
 难度: ⭐⭐⭐⭐
 预计时间: 40分钟
+title: Finsler几何
 ---
-
 # Finsler 几何
 
 ## 题目

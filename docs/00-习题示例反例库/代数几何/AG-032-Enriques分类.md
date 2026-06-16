@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 曲面理论-Enriques分类
 难度: ⭐⭐⭐⭐⭐
 预计时间: 55分钟
+title: Enriques分类
 ---
-
 # Enriques曲面分类
 
 ## 题目

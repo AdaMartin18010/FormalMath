@@ -5,8 +5,12 @@ msc_primary: 00A99
 知识点: 代数几何-Hilbert概形
 难度: ⭐⭐⭐⭐⭐
 预计时间: 50分钟
+title: Hilbert概形
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/scheme
+  wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
 ---
-
 # Hilbert 概形深入
 
 ## 题目

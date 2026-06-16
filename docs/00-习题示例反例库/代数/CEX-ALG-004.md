@@ -6,10 +6,20 @@ concept: 群同构
 title: 不同构但同阶的群（Z₄ vs Z₂×Z₂）
 msc_primary: 00A99
 difficulty: 简单
-keywords: [群同构, 循环群, 克莱因四元群, 群阶, 群结构]
-related: [CEX-ALG-001, CEX-ALG-005]
+keywords:
+- 群同构
+- 循环群
+- 克莱因四元群
+- 群阶
+- 群结构
+related:
+- CEX-ALG-001
+- CEX-ALG-005
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # CEX-ALG-004: 不同构但同阶的群（Z₄ vs Z₂×Z₂）
 
 ## 反例构造
@@ -17,12 +27,14 @@ related: [CEX-ALG-001, CEX-ALG-005]
 考虑两个4阶群：
 
 **$\mathbb{Z}_4$（4阶循环群）：**
+
 - 元素：$\{0, 1, 2, 3\}$（模4加法）
 - 单位元：0
 - 生成元：1 或 3
 - 运算：$a + b \pmod{4}$
 
 **$\mathbb{Z}_2 \times \mathbb{Z}_2$（克莱因四元群 $V_4$）：**
+
 - 元素：$\{(0,0), (0,1), (1,0), (1,1)\}$
 - 单位元：$(0,0)$
 - 运算：分量模2加法

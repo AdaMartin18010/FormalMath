@@ -1,11 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 35A99
-  - 00A99
-  - 00A99
+  - 35A99 - 00A99 - 00A99'
 title: Black-Scholes期权定价模型
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
 # Black-Scholes期权定价模型
 

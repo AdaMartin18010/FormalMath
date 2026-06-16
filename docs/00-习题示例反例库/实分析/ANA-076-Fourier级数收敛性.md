@@ -3,10 +3,17 @@ exercise_id: ANA-076
 title: Fourier级数的点态收敛与一致收敛
 msc_primary: 00A99
 difficulty: ⭐⭐⭐⭐
-topics: [Fourier级数, Dirichlet核, Fejér核, 收敛性]
+topics:
+- Fourier级数
+- Dirichlet核
+- Fejér核
+- 收敛性
 created: 2026-04-10
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/convergence
+  wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
 ---
-
 ## 题目
 
 设 $f$ 是 $\mathbb{R}$ 上的 $2\pi$-周期连续函数，其Fourier级数为：

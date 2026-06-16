@@ -1,10 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A15
-  - 01A99
+- 00A15
+- 01A99
 title: 数学哲学的辩证四重奏：从克莱因到庞加莱-希尔伯特之争再到格洛腾迪克的终极综合
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/David_Hilbert
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
 ---
 # 数学哲学的辩证四重奏：从克莱因到庞加莱-希尔伯特之争再到格洛腾迪克的终极综合
 

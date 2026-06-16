@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 几何-Calabi-Yau
 难度: ⭐⭐⭐⭐⭐
 预计时间: 55分钟
+title: Calabi Yau
 ---
-
 # Calabi-Yau 流形
 
 ## 题目

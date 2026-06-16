@@ -1,11 +1,23 @@
 ---
-title: "MIT 18.701 银层攻坚执行计划"
+title: MIT 18.701 银层攻坚执行计划
 msc_primary: 00A99
-date: "2026-04-17"
-level: "silver"
-target_courses: ["MIT 18.701"]
+date: '2026-04-17'
+level: silver
+target_courses:
+- MIT 18.701
+course: MIT 18.701 抽象代数
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+references:
+  textbooks:
+  - title: Algebra
+    author: Michael Artin
+    edition: 2nd
+    publisher: Pearson
+    year: 2010
+    isbn: '9780132413770'
 ---
-
 # MIT 18.701 银层攻坚执行计划
 
 ## 1. 背景与目标
@@ -106,3 +118,15 @@ MIT 18.701 的核心主题包括：
 - [ ] L5 覆盖率复核（目标 ≥ 60%）
 
 **完成时间**：2026-04-17（立即执行）
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2010 (ISBN: 9780132413770)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)

@@ -1,10 +1,17 @@
 ---
-title: "随机矩阵理论深度版 / Random Matrix Theory - In Depth"
-msc_primary: 60
+title: 随机矩阵理论深度版 / Random Matrix Theory - In Depth
+msc_primary: '60
 
-  - 60B20
-msc_secondary: ["15B52", "82B44", "15A18"]
+  - 60B20'
+msc_secondary:
+- 15B52
+- 82B44
+- 15A18
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/matrix
+  wikipedia_url: https://en.wikipedia.org/wiki/Matrix_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
 ---
 # 随机矩阵理论深度版 / Random Matrix Theory - In Depth
 

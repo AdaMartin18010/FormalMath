@@ -1,13 +1,24 @@
 ---
-title: "Black-Scholes模型 - 工业级深化版"
-msc_primary: 91
+title: Black-Scholes模型 - 工业级深化版
+msc_primary: '91
 
-  - 91G20
-msc_secondary: ['60H10', '60J70', '35K15', '91G60']
-prerequisites: ['随机过程', '偏微分方程', '数值分析', 'Python编程']
+  - 91G20'
+msc_secondary:
+- 60H10
+- 60J70
+- 35K15
+- 91G60
+prerequisites:
+- 随机过程
+- 偏微分方程
+- 数值分析
+- Python编程
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/module
+  wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
 ---
-
 # Black-Scholes模型 - 工业级深化版
 
 **MSC分类**: 91G20, 91G60  

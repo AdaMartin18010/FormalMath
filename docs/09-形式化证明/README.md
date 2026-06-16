@@ -1,9 +1,10 @@
 ---
 msc_primary: 68
-
-msc_secondary: ['03B35', '68T15']
+msc_secondary:
+- 03B35
+- 68T15
+title: README
 ---
-
 # 09-形式化证明
 
 **数学的机械化 — 从定理证明器到形式化数学**

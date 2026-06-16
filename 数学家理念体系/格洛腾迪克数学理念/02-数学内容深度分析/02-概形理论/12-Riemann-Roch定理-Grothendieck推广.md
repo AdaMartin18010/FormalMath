@@ -1,10 +1,38 @@
 ---
 msc_primary: 14Fxx
 msc_secondary:
-  - 18Gxx
-  - 01A70
+- 18Gxx
+- 01A70
+title: 12 Riemann Roch定理 Grothendieck推广
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  stacks_tag:
+    tag: 02P8
+    url: https://stacks.math.columbia.edu/tag/02P8
+  zbmath_url: https://zbmath.org/?q=au:Bernhard%20Riemann
+references:
+  papers:
+  - title: Le théorème de Riemann-Roch
+    author: Armand Borel, Jean-Pierre Serre
+    journal: Bulletin de la Société Mathématique de France
+    year: 1958
+    doi: 10.24033/bsmf.1500
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/02P8
+    tags:
+    - 02P8
+    consulted_at: '2026-04-17'
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Bernhard%20Riemann
+    author: Bernhard Riemann
+    consulted_at: '2026-04-17'
 ---
-
 ﻿---
 title: "Riemann-Roch 定理（Grothendieck 推广版）：从 Hirzebruch 到 Weil 猜想"
 level: "gold"
@@ -470,3 +498,8 @@ GRR 与 Weil 猜想的联系则揭示了这一定理的更大图景：它是 mot
 > **整合素材**：`00-归档-2026年4月/02-数学内容深度分析/06-其他数学贡献/05-Riemann-Roch定理-网络对齐与批判性意见报告.md`  
 > **上游文档**：`金层重构/G3-Grothendieck-Riemann-Roch定理.md`
 
+---
+
+## 经典论文与原始文献
+
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)

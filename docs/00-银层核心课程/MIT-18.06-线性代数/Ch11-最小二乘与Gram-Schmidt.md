@@ -1,36 +1,59 @@
 ---
-title: "Ch.11 最小二乘与Gram-Schmidt（Least Squares & Gram-Schmidt）"
-level: "silver"
+title: Ch.11 最小二乘与Gram-Schmidt（Least Squares & Gram-Schmidt）
+level: silver
 course: MIT 18.06 线性代数
-chapter: "11"
+chapter: '11'
 msc_primary: 15
 target_courses:
-  - "MIT 18.06 Ch.11"
+- MIT 18.06 Ch.11
 references:
   textbooks:
-    - title: "Introduction to Linear Algebra"
-      author: "Gilbert Strang"
-      edition: "5th"
-      chapters: "Chapter 4"
-      pages: "219-245"
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 5th
+    chapters: Chapter 11, Sections 4.3-4.4
+    pages: 219-245
+    isbn: '9780980232776'
+    publisher: Wellesley-Cambridge Press
+    year: 2016
   lectures:
-    - institution: "MIT"
-      course_code: "18.06"
-      lecture: "L14-L16"
-      url: "https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/"
+  - institution: MIT
+    course_code: '18.06'
+    lecture: L16
+    title: Projection matrices and least squares
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/
+  - institution: MIT
+    course_code: '18.06'
+    lecture: L17
+    title: Orthogonal matrices and Gram-Schmidt
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/
+  exams:
+  - name: Exam 2
+    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10.pdf
+    solution_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10_sol.pdf
 keywords:
-  - "least squares"
-  - "normal equation"
-  - "QR decomposition"
-  - "orthogonal matrix"
-  - "projection matrix"
-  - "Gram-Schmidt"
-status: "draft"
+- least squares
+- normal equation
+- QR decomposition
+- orthogonal matrix
+- projection matrix
+- Gram-Schmidt
+status: draft
 review_rounds: 0
-created_at: "2026-04-18"
+created_at: '2026-04-18'
 review_status: mathematical_reviewed
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  ocw_lectures:
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/
+  ocw_problem_sets:
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset9.pdf
+  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf
+prerequisites:
+- docs/00-银层核心课程/MIT-18.06-线性代数/Ch10-*.md
 ---
-
 # Ch.11 最小二乘与Gram-Schmidt（Least Squares & Gram-Schmidt）
 
 > **课程**: MIT 18.06 Linear Algebra | **章节**: Chapter 11
@@ -816,8 +839,23 @@ theorem qr_solve_least_squares {m n : ℕ} (A Q R : Matrix (Fin m) (Fin n) ℝ)
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016 (Chapters: Chapter 11, Sections 4.3-4.4; Pages: 219-245; ISBN: 9780980232776)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/)
+- [Ocw Lectures](['https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/', 'https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/'])
+- [Ocw Problem Sets](['https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset9.pdf', 'https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf'])

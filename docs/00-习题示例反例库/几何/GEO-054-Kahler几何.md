@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 几何-Kahler几何
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
+title: Kahler几何
 ---
-
 # Kähler 几何基础
 
 ## 题目

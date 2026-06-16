@@ -2,34 +2,33 @@
 title: Ricci流与几何流
 description: 系统介绍Ricci流方程的推导、短时间存在性、球面定理、Hamilton与Perelman的工作概述，以及几何流在拓扑与几何中的应用。
 msc_primary:
-  - 53C05
+- 53C05
 msc_secondary:
-  - 53C44
-  - 53C21
-  - 57M40
+- 53C44
+- 53C21
+- 57M40
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: chow_knopf
-      type: textbook
-      title: The Ricci Flow: An Introduction
-      authors:
-        - Bennett Chow
-        - Dan Knopf
-      publisher: American Mathematical Society
-      year: 2004
-      msc: 53C44
-    - id: morgan_tian
-      type: textbook
-      title: Ricci Flow and the Poincaré Conjecture
-      authors:
-        - John Morgan
-        - Gang Tian
-      publisher: American Mathematical Society
-      year: 2007
-      msc: 57M40
+  - id: chow_knopf
+    type: textbook
+    title: 'The Ricci Flow: An Introduction'
+    authors:
+    - Bennett Chow
+    - Dan Knopf
+    publisher: American Mathematical Society
+    year: 2004
+    msc: 53C44
+  - id: morgan_tian
+    type: textbook
+    title: Ricci Flow and the Poincaré Conjecture
+    authors:
+    - John Morgan
+    - Gang Tian
+    publisher: American Mathematical Society
+    year: 2007
+    msc: 57M40
 ---
-
 # Ricci流与几何流
 
 ** evolving metrics — 用抛物方程驯服几何**

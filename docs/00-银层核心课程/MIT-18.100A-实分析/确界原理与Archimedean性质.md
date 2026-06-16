@@ -1,40 +1,64 @@
 ---
 course: MIT 18.100A 实分析
-
-title: "确界原理与 Archimedean 性质"
-level: "silver"
+title: 确界原理与 Archimedean 性质
+level: silver
 msc_primary: 26
 target_courses:
-  - "MIT 18.100A"
+- MIT 18.100A
 references:
   textbooks:
-    - title: "Introduction to Analysis"
-      author: "Arthur Mattuck"
-      edition: "1st"
-      chapters: "Ch. 2–3"
-      pages: "25–45"
-    - title: "Principles of Mathematical Analysis"
-      author: "Walter Rudin"
-      edition: "3rd"
-      chapters: "Ch. 1"
-      pages: "3–11"
+  - title: Introduction to Analysis
+    author: Arthur Mattuck
+    edition: 1st
+    chapters: Ch. 2–3
+    pages: 25–45
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    chapters: Ch. 1
+    pages: 3–11
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+    chapters: Ch. 1
+    pages: 10-18
   lectures:
-    - institution: "MIT"
-      course_code: "18.100A"
-      lecture: "Lecture 3–4"
-      url: "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/"
+  - institution: MIT
+    course_code: 18.100A
+    lecture: Lecture 3–4
+    url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+  assignments:
+  - name: Problem Set 1
+    url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset1.pdf
 keywords:
-  - "确界原理"
-  - "上确界"
-  - "下确界"
-  - "Archimedean 性质"
-  - "实数完备性"
-status: "draft"
+- 确界原理
+- 上确界
+- 下确界
+- Archimedean 性质
+- 实数完备性
+status: draft
 review_rounds: 0
-created_at: "2026-04-18"
+created_at: '2026-04-18'
 review_status: mathematical_reviewed
+chapter: '1'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+  ocw_readings_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/
+  ocw_lectures_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/
+  ocw_problem_sets:
+  - https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset1.pdf
+  nlab_url: https://ncatlab.org/nlab/show/supremum
+  wikipedia_url: https://en.wikipedia.org/wiki/Infimum_and_supremum
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C
 ---
-
 # 确界原理与 Archimedean 性质
 
 > **课程**: MIT 18.100A Real Analysis | **章节**: Ch. 2–3
@@ -443,8 +467,29 @@ $\square$
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Arthur Mattuck, *Introduction to Analysis*, 1st ed. (Chapters: Ch. 2–3; Pages: 25–45)
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976 (Chapters: Ch. 1; Pages: 3–11; ISBN: 9780070542358; MR: MR0385023)
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015 (Chapters: Ch. 1; Pages: 10-18; ISBN: 9781493927111)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)
+- [Ocw Readings Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/)
+- [Ocw Lectures Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/)
+- [Ocw Problem Sets](['https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset1.pdf'])
+- [Nlab Url](https://ncatlab.org/nlab/show/supremum)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Infimum_and_supremum)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C)

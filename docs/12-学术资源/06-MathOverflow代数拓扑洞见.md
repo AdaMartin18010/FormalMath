@@ -3,8 +3,11 @@ msc_primary: 55
 generated_at: '2026-04-09'
 title: MathOverflow代数拓扑精华对齐文档
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/algebraic+topology
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_topology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E6%8B%93%E6%89%91
 ---
-
 # MathOverflow代数拓扑洞见对齐文档
 
 **版本**: v1.0

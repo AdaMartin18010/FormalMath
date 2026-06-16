@@ -1,26 +1,37 @@
 ---
-title: "Weil表示与辛几何：从量子力学到数论"
+title: Weil表示与辛几何：从量子力学到数论
 level: gold
 course: Weil数学理念
 msc_primary: 11
 msc_secondary:
-  - 11F27
+- 11F27
 references:
   textbooks:
-    - title: "Weil Representation I: Intertwining Distributions and Discrete Spectrum"
-      author: "S. Kudla"
-      year: 1996
-    - title: "The Weil Representation, Maslov Index and Theta Series"
-      author: "G. Lion & M. Vergne"
-      year: 1980
+  - title: 'Weil Representation I: Intertwining Distributions and Discrete Spectrum'
+    author: S. Kudla
+    year: 1996
+  - title: The Weil Representation, Maslov Index and Theta Series
+    author: G. Lion & M. Vergne
+    year: 1980
   papers:
-    - title: "Sur certains groupes d'opérateurs unitaires"
-      author: "A. Weil"
-      year: 1964
+  - title: Sur certains groupes d'opérateurs unitaires
+    author: A. Weil
+    year: 1964
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Number%20theory
+    author: Number theory
+    consulted_at: '2026-04-17'
 status: completed
 created_at: 2026-04-18
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/number+theory
+  wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
+  zbmath_url: https://zbmath.org/?q=au:Number%20theory
 ---
-
 # Weil表示与辛几何：从量子力学到数论
 
 ## 1. 引言

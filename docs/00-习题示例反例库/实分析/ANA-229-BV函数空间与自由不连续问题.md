@@ -1,7 +1,7 @@
 ---
-msc_primary: 49
+msc_primary: '49
 
-  - 49J45
+  - 49J45'
 exercise_id: ANA-229
 title: BV函数空间与自由不连续问题
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: 自由边界问题
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
 ---
-
 # ANA-229: BV函数空间与自由不连续问题
 
 **题号**: ANA-229

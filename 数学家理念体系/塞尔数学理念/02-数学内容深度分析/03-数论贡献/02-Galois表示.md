@@ -1,13 +1,24 @@
 ---
 title: 塞尔的Galois表示理论
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Evariste_Galois
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
+  zbmath_url: https://zbmath.org/?q=au:Evariste%20Galois
+references:
+  databases:
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Evariste%20Galois
+    author: Evariste Galois
+    consulted_at: '2026-04-17'
 ---
-
 # 塞尔的Galois表示理论
 
 > **文档状态**: ✅ 内容填充完成

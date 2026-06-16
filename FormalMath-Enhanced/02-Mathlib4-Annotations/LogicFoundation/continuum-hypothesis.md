@@ -1,9 +1,16 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 连续统假设
+references:
+  papers:
+  - title: The independence of the continuum hypothesis
+    author: Paul J. Cohen
+    journal: Proceedings of the National Academy of Sciences
+    year: 1963
+    doi: 10.1073/pnas.50.6.1143
 ---
 # 连续统假设
 
@@ -127,3 +134,9 @@ Cohen力迫：$\mathbb{P} = \text{Fn}(\aleph_2 \times \omega, 2)$。
 ---
 
 *最后更新：2026-04-03 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- Paul J. Cohen, *The independence of the continuum hypothesis*, Proceedings of the National Academy of Sciences, 1963 (DOI: 10.1073/pnas.50.6.1143)

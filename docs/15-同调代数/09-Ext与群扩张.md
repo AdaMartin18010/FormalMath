@@ -2,36 +2,39 @@
 title: Ext与群扩张
 description: 深入探讨Ext^1与群扩张分类之间的精确对应，建立群上同调与群论结构的桥梁。
 msc_primary:
-  - 20J06
+- 20J06
 msc_secondary:
-  - 18G15
-  - 20E22
+- 18G15
+- 20E22
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: weibel_ha
-      type: textbook
-      title: An Introduction to Homological Algebra
-      authors:
-        - Charles A. Weibel
-      publisher: Cambridge University Press
-      year: 1994
-      msc: 18-01
-    - id: brown_cohomology
-      type: textbook
-      title: Cohomology of Groups
-      authors:
-        - Kenneth S. Brown
-      publisher: Springer
-      year: 1982
-      msc: 20-01
+  - id: weibel_ha
+    type: textbook
+    title: An Introduction to Homological Algebra
+    authors:
+    - Charles A. Weibel
+    publisher: Cambridge University Press
+    year: 1994
+    msc: 18-01
+  - id: brown_cohomology
+    type: textbook
+    title: Cohomology of Groups
+    authors:
+    - Kenneth S. Brown
+    publisher: Springer
+    year: 1982
+    msc: 20-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/group
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # Ext与群扩张
 
 ## 引言

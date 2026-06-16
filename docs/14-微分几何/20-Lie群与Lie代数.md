@@ -2,37 +2,40 @@
 title: Lie群与Lie代数
 description: 系统介绍Lie群与Lie代数的基本理论，包括矩阵Lie群、指数映射、Lie对应定理，以及伴随表示。
 msc_primary:
-  - 22E15
+- 22E15
 msc_secondary:
-  - 22E60
-  - 17Bxx
-  - 53C30
+- 22E60
+- 17Bxx
+- 53C30
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: hall_lie
-      type: textbook
-      title: Lie Groups, Lie Algebras, and Representations
-      authors:
-        - Brian C. Hall
-      publisher: Springer
-      year: 2015
-      msc: 22-01
-    - id: lee_sm
-      type: textbook
-      title: Introduction to Smooth Manifolds
-      authors:
-        - John M. Lee
-      publisher: Springer
-      year: 2013
-      msc: 53-01
+  - id: hall_lie
+    type: textbook
+    title: Lie Groups, Lie Algebras, and Representations
+    authors:
+    - Brian C. Hall
+    publisher: Springer
+    year: 2015
+    msc: 22-01
+  - id: lee_sm
+    type: textbook
+    title: Introduction to Smooth Manifolds
+    authors:
+    - John M. Lee
+    publisher: Springer
+    year: 2013
+    msc: 53-01
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/group
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
 ---
-
 # Lie群与Lie代数
 
 ## 引言

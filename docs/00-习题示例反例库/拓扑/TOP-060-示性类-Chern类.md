@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 示性类-Chern类
 难度: ⭐⭐⭐⭐⭐
 预计时间: 40分钟
+title: 示性类 Chern类
 ---
-
 # Chern类
 
 ## 题目

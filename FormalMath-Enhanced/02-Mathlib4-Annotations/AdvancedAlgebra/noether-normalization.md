@@ -1,9 +1,22 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Noether正规化定理
+external_ids:
+  stacks_tag:
+    tag: 00OW
+    url: https://stacks.math.columbia.edu/tag/00OW
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00OW
+    tags:
+    - 00OW
+    consulted_at: '2026-04-17'
 ---
 # Noether正规化定理
 

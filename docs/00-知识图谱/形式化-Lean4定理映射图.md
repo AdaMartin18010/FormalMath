@@ -6,9 +6,18 @@ author: FormalMath Project
 date: 2026-04-10
 category: 知识图谱
 subcategory: 形式化数学
-tags: [Lean4, 形式化数学, 定理证明, 定理映射, 数学形式化, 依赖关系]
+tags:
+- Lean4
+- 形式化数学
+- 定理证明
+- 定理映射
+- 数学形式化
+- 依赖关系
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/function
+  wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
 ---
-
 # 形式化 Lean4 定理映射图
 
 ## 图谱说明

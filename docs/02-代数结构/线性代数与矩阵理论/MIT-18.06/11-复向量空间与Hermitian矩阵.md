@@ -1,24 +1,34 @@
 ---
-title: "复向量空间与 Hermitian 矩阵"
-level: "silver"
-msc_primary: 15
+title: 复向量空间与 Hermitian 矩阵
+level: silver
+msc_primary: '15
 
-  - 15A57
+  - 15A57'
 target_courses:
-  - "MIT 18.06"
+- MIT 18.06
 references:
   textbooks:
-    - title: "Introduction to Linear Algebra"
-      author: "Gilbert Strang"
-      edition: "4th"
-      chapters: "Ch.10"
-      pages: "485-510"
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 4th
+    chapters: Ch.10
+    pages: 485-510
+    publisher: Wellesley-Cambridge Press
+    year: 2016
+    isbn: '9780980232776'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+course: MIT 18.06 线性代数
+chapter: '11'
+external_ids:
+  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
+  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  nlab_url: https://ncatlab.org/nlab/show/vector+space
+  wikipedia_url: https://en.wikipedia.org/wiki/Vector_space
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4
 ---
-
 # 复向量空间与 Hermitian 矩阵
 
 > **对应课程**：MIT 18.06 Linear Algebra, Spring 2010 — Lecture 32–33
@@ -397,3 +407,18 @@ $\square$
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Gilbert Strang, *Introduction to Linear Algebra*, 4th ed., Wellesley-Cambridge Press, 2016 (Chapters: Ch.10; Pages: 485-510; ISBN: 9780980232776)
+
+### 课程与外部链接
+
+- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
+- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/)
+- [Nlab Url](https://ncatlab.org/nlab/show/vector+space)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Vector_space)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4)

@@ -6,10 +6,20 @@ concept: 唯一分解整环
 title: 非唯一分解整环（经典例子）
 msc_primary: 00A99
 difficulty: 较难
-keywords: [唯一分解整环, UFD, 不可约元, 素元, 因式分解, 类数]
-related: [CEX-ALG-002]
+keywords:
+- 唯一分解整环
+- UFD
+- 不可约元
+- 素元
+- 因式分解
+- 类数
+related:
+- CEX-ALG-002
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/ring
+  wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
 ---
-
 # CEX-ALG-003: 非唯一分解整环（经典例子）
 
 ## 反例构造

@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: 数学×物理学：广义相对论的微分几何
 processed_at: '2026-04-05'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/differential+geometry
+  wikipedia_url: https://en.wikipedia.org/wiki/Differential_geometry
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95
 ---
 # 数学×物理学：广义相对论的微分几何
 

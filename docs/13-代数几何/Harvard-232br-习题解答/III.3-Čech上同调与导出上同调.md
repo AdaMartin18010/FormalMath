@@ -1,69 +1,70 @@
 ---
 title: Harvard 232br - Hartshorne Chapter III §3 习题解答
 course_code: Harvard Math 232br
-textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_textbook: "Robin Hartshorne, Algebraic Geometry (GTM 52)"
-source_chapter: "Chapter III - Cohomology, Section 3 - Cohomology of a Noetherian Affine Scheme"
+textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
+source_chapter: Chapter III - Cohomology, Section 3 - Cohomology of a Noetherian Affine
+  Scheme
 source_exercise:
-  - "III.3.1"
-  - "III.3.2"
-  - "III.3.3"
-  - "III.3.4"
-  - "III.3.5"
+- III.3.1
+- III.3.2
+- III.3.3
+- III.3.4
+- III.3.5
 difficulty: ⭐⭐⭐ to ⭐⭐⭐⭐⭐
-level: "silver"
+level: silver
 target_courses:
-  - "Harvard 232br"
+- Harvard 232br
 msc_primary: 14
 processed_at: '2026-04-18'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 references:
   textbooks:
-    - id: hartshorne_ag
-      type: textbook
-      title: Algebraic Geometry
-      authors:
-        - Robin Hartshorne
-      publisher: Springer
-      edition: 1st
-      year: 1977
-      isbn: 978-0387902449
-      msc: 14-01
-      chapters: 
-      url: ~
-    - id: vakil_foag
-      type: textbook
-      title: Foundations of Algebraic Geometry
-      authors:
-        - Ravi Vakil
-      publisher: self-published
-      edition: draft
-      year: 2024
-      isbn: ~
-      msc: 14-01
-      chapters: 
-      url: "https://math.stanford.edu/~vakil/216blog/"
+  - id: hartshorne_ag
+    type: textbook
+    title: Algebraic Geometry
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    edition: 1st
+    year: 1977
+    isbn: 978-0387902449
+    msc: 14-01
+    chapters: null
+    url: null
+    mr_number: MR0463157
+    author: Robin Hartshorne
+  - id: vakil_foag
+    type: textbook
+    title: Foundations of Algebraic Geometry
+    authors:
+    - Ravi Vakil
+    publisher: self-published
+    edition: draft
+    year: 2024
+    isbn: ''
+    msc: 14-01
+    chapters: null
+    url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
   databases:
-    - id: nlab
-      type: database
-      name: nLab
-      entry_url: "https://ncatlab.org/nlab/show/{entry}"
-      consulted_at: 2026-04-18
-    - id: stacks_project
-      type: database
-      name: Stacks Project
-      entry_url: "https://stacks.math.columbia.edu/tag/{tag}"
-      consulted_at: 2026-04-18
-    - id: zbmath
-      type: database
-      name: zbMATH Open
-      entry_url: "https://zbmath.org/?q=an:{zb_id}"
-      consulted_at: 2026-04-18
+  - id: nlab
+    type: database
+    name: nLab
+    entry_url: https://ncatlab.org/nlab/show/cohomology
+    consulted_at: 2026-04-18
+course: Harvard 232br 代数几何
+chapter: '3'
+external_ids:
+  ocw_url: https://www.math.harvard.edu/course/mathematics-232br/
+  ocw_ps_url: https://people.math.harvard.edu/~landesman/notes.html
+  nlab_url: https://ncatlab.org/nlab/show/cohomology
+  wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
 ---
-
 # Harvard 232br - Hartshorne Chapter III §3 习题解答
 
 > 本节覆盖 Hartshorne 第三章第 3–4 节（Čech 上同调与仿射概形上同调消失）的 5 道核心习题。这些习题建立了 Čech 上同调与导出上同调之间的联系，证明了仿射概形上拟凝聚层的高阶上同调消失（Serre 定理），并提供了射影空间上同调的具体计算方法。这是层上同调理论从抽象到具体计算的转折点。
@@ -636,3 +637,25 @@ theorem serreVanishing {k : Type*} [Field k]
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+---
+
+## 参考与延伸阅读
+
+### 教材
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (ISBN: 978-0387902449; MR: MR0463157)
+- Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
+
+### 数据库与网络资源
+
+- [nLab](https://ncatlab.org/nlab/show/{entry})
+- [Stacks Project](https://stacks.math.columbia.edu/tag/{tag})
+- [zbMATH Open](https://zbmath.org/?q=an:{zb_id})
+
+### 课程与外部链接
+
+- [Ocw Url](https://www.math.harvard.edu/course/mathematics-232br/)
+- [Ocw Ps Url](https://people.math.harvard.edu/~landesman/notes.html)
+- [Nlab Url](https://ncatlab.org/nlab/show/cohomology)
+- [Wikipedia Url](https://en.wikipedia.org/wiki/Cohomology)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83)

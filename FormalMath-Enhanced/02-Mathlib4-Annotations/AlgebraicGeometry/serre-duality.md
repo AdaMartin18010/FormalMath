@@ -1,9 +1,30 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Serre对偶定理
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  stacks_tag:
+    tag: 0A7B
+    url: https://stacks.math.columbia.edu/tag/0A7B
+references:
+  papers:
+  - title: Faisceaux algébriques cohérents
+    author: Jean-Pierre Serre
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970375
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/0A7B
+    tags:
+    - 0A7B
+    consulted_at: '2026-04-17'
 ---
 # Serre对偶定理
 
@@ -128,3 +149,9 @@ Euler示性数：$\chi(\mathcal{O}_X) = 1 - q + p_g$，其中 $q = h^1(X, \mathc
 ---
 
 *最后更新：2026-04-03 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)

@@ -1,9 +1,9 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 01R0 Finite Type Morphisms
 ---
-
 # Stacks Project Tag 01R0 - 有限型态射（Finite Type Morphisms）
 
 ## 1. Tag基本信息

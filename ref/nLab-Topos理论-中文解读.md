@@ -1,14 +1,19 @@
 ---
 msc_primary: 18
 msc_secondary:
-  - 18B25
-msc_secondary: [18F10, 14F20, 03G30, 03B20]
+- 18F10
+- 14F20
+- 03G30
+- 03B20
 title: nLab - Topos理论 (Topos Theory) 中文解读
 nlab_url: https://ncatlab.org/nlab/show/topos
 topos_theory_url: https://ncatlab.org/nlab/show/topos+theory
 processed_at: '2026-04-09'
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
 ---
-
 # nLab - Topos理论 (Topos Theory) 中文解读
 
 **原文链接**: https://ncatlab.org/nlab/show/topos  

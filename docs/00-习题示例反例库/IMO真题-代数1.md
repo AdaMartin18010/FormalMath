@@ -1,23 +1,23 @@
 ---
-title: "IMO真题-代数：多项式与根"
+title: IMO真题-代数：多项式与根
 msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L3
 topic: 代数
-source: "IMO 2004 Problem 2"
+source: IMO 2004 Problem 2
 target_courses:
-  - MIT 18.701
+- MIT 18.701
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+chapter: '1'
 ---
-
 # IMO 2004 Problem 2：多项式与根
 
 ## 题目

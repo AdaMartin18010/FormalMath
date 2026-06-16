@@ -1,10 +1,36 @@
 ---
 msc_primary: 14Fxx
 msc_secondary:
-  - 18Gxx
-  - 01A70
+- 18Gxx
+- 01A70
+title: 01 Grothendieck Topos
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/topos
+  wikipedia_url: https://en.wikipedia.org/wiki/Topos
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  stacks_tag:
+    tag: 00VG
+    url: https://stacks.math.columbia.edu/tag/00VG
+  stacks_tags: []
+  zbmath_url: https://zbmath.org/?q=au:Topos
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/00VG
+    tags:
+    - 00VG
+    - 00ZC
+    consulted_at: '2026-04-17'
+  - id: zbmath
+    type: database
+    name: zbMATH Open
+    entry_url: https://zbmath.org/?q=au:Topos
+    author: Topos
+    consulted_at: '2026-04-17'
 ---
-
 ﻿---
 title: "Grothendieck Topos：位象、层化与基本性质"
 level: "gold"

@@ -5,8 +5,8 @@ msc_primary: 00A99
 知识点: 算子理论-变分法
 难度: ⭐⭐⭐
 预计时间: 30分钟
+title: 变分法与Euler Lagrange方程
 ---
-
 # 变分法与Euler-Lagrange方程
 
 ## 题目

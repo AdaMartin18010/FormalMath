@@ -1,9 +1,25 @@
 ---
 msc_primary: 00A99
 msc_secondary:
-  - 97A99
+- 97A99
+title: Tag 02SK 离散赋值环惯性群
+external_ids:
+  nlab_url: https://ncatlab.org/nlab/show/group
+  wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  stacks_tag:
+    tag: 02SK
+    url: https://stacks.math.columbia.edu/tag/02SK
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/02SK
+    tags:
+    - 02SK
+    consulted_at: '2026-04-17'
 ---
-
 # Stacks Project Tag 02SK 解读：离散赋值环惯性群
 
 ## 1. Tag基本信息

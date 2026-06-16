@@ -1,10 +1,23 @@
 ---
 msc_primary: 14Fxx
 msc_secondary:
-  - 18Gxx
-  - 01A70
+- 18Gxx
+- 01A70
+title: 10 相交理论与Chern类
+external_ids:
+  stacks_tag:
+    tag: 02RF
+    url: https://stacks.math.columbia.edu/tag/02RF
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/02RF
+    tags:
+    - 02RF
+    consulted_at: '2026-04-17'
 ---
-
 ﻿---
 title: "相交理论与 Chern 类：SGA 6 与 Fulton 的公理化"
 level: "gold"
